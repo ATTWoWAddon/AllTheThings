@@ -514,12 +514,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(131864, {	-- Armstead Bindings
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(54975, {	-- Armstead Bracers
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(54978, {	-- Merchant's Chestguard
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(54975),	-- Armstead Bracers
+								i(54978),	-- Merchant's Chestguard
 							},
 						}),
 						q(14265, {	-- Your Instructor

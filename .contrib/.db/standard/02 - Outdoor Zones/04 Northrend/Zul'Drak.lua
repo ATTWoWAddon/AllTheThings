@@ -127,7 +127,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31934, {	-- Gutretch
 								["sourceAchievement"] = 6605,	-- Taming Northrend
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -745,8 +744,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28284,	-- Specialist Cogwheel
 						["coord"] = { 58.2, 72.0, ZULDRAK },
 					}),
-					q(12793, {	-- Smoke on the Horizon	-- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
-					}),
+					q(12793),	-- Smoke on the Horizon	-- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 					q(12669, {	-- So Far, So Bad
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 						["qg"] = 28518,	-- Stefan Vadu

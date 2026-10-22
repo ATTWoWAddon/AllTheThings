@@ -617,19 +617,15 @@ root(ROOTS.Zones, {
 						["requireSkill"] = COOKING,
 						["groups"] = {
 							crit(5702, {	-- Revenge is Tasty
-								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11377 },
 							}),
 							crit(5703, {	-- Super Hot Stew
-								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11379 },
 							}),
 							crit(5704, {	-- Manalicious
-								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11380 },
 							}),
 							crit(5705, {	-- Soup for the Soul
-								["timeline"] = { ADDED_3_0_2 },
 								["_quests"] = { 11381 },
 							}),
 						},
@@ -690,7 +686,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31925, {	-- Morulu The Elder
 								["sourceAchievement"] = 6604,	-- Taming Outland
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -1679,9 +1674,7 @@ root(ROOTS.Zones, {
 								i(265848, {	-- Communal Warpforged Pouch
 									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 									["groups"] = {
-										i(265847, {	-- Communal Warpforged Key
-											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
-										}),
+										i(265847),	-- Communal Warpforged Key
 									},
 								}),
 								-- #endif
@@ -2368,9 +2361,7 @@ root(ROOTS.Zones, {
 								i(265846, {	-- Communal Auchenai Pouch
 									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 									["groups"] = {
-										i(265845, {	-- Communal Auchenai Key
-											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
-										}),
+										i(265845),	-- Communal Auchenai Key
 									},
 								}),
 								-- #endif

@@ -166,7 +166,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31871, {	-- Traitor Gluk
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -264,12 +263,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
-						i(11858, {	-- Battlehard Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11859, {	-- Jademoon Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11858),	-- Battlehard Cape
+						i(11859),	-- Jademoon Orb
 					},
 				}),
 				q(4266, {	-- A Hero's Welcome
@@ -280,12 +275,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(11856, {	-- Ceremonial Elven Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11857, {	-- Sanctimonial Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11856),	-- Ceremonial Elven Blade
+						i(11857),	-- Sanctimonial Rod
 					},
 				}),
 				q(25361, {	-- A New Cloak's Sheen (when does this pop up?)
@@ -526,12 +517,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						-- #endif
-						i(54921, {	-- Dark Crystal Waistband
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54922, {	-- Bracers of the Captured Heart
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54921),	-- Dark Crystal Waistband
+						i(54922),	-- Bracers of the Captured Heart
 						i(131417, {	-- Captured Heart Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -560,12 +547,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						-- #endif
-						i(9665, {	-- Wingcrest Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9666, {	-- Stronghorn Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9665),	-- Wingcrest Gloves
+						i(9666),	-- Stronghorn Girdle
 					},
 				}),
 				q(2871, {	-- Delivering the Relic
@@ -579,12 +562,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9663, {	-- Dawnrider's Chestpiece
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9664, {	-- Sentinel's Guard
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9663),	-- Dawnrider's Chestpiece
+						i(9664),	-- Sentinel's Guard
 					},
 				}),
 				q(2970, {	-- Doling Justice (1/2)
@@ -616,12 +595,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
-						i(10705, {	-- Firwillow Wristbands
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10706, {	-- Nightscale Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10705),	-- Firwillow Wristbands
+						i(10706),	-- Nightscale Girdle
 					},
 				}),
 				q(25402, {	-- Estulan's Examination
@@ -722,18 +697,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(54885, {	-- Power of the Hippogryph
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54886, {	-- Power of the Mountain Giant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54887, {	-- Power of the Faerie Dragon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54888, {	-- Power of the Treant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54885),	-- Power of the Hippogryph
+						i(54886),	-- Power of the Mountain Giant
+						i(54887),	-- Power of the Faerie Dragon
+						i(54888),	-- Power of the Treant
 					},
 				}),
 				q(25410, {	-- Forces of Nature: Treants
@@ -840,16 +807,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = { { "i", 9466, 1 } },	-- Orwin's Shovel
 						}),
-						i(9658, {	-- Boots of the Maharishi
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9660, {	-- Stargazer Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9658),	-- Boots of the Maharishi
+						i(9660),	-- Stargazer Cloak
 						o(144064, {	-- Gordunni Dirt Mound
-							i(15794, {	-- Ripped Ogre Loincloth
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(15794),	-- Ripped Ogre Loincloth
 						}),
 					},
 				}),
@@ -925,9 +886,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								39896,	-- Feral Scar Yeti
 							},
 						}),
-						i(54967, {	-- Pratt's Handcrafted Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54967),	-- Pratt's Handcrafted Vest
 						i(131862, {	-- Pratt's Handmade Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -950,9 +909,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5296,	-- Rage Scar Yeti
 							},
 						}),
-						i(19041, {	-- Pratt's Handcrafted Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19041),	-- Pratt's Handcrafted Tunic
 					},
 				}),
 				q(25453, {	-- Improved Quality [H]
@@ -971,9 +928,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								39896,	-- Feral Scar Yeti
 							},
 						}),
-						i(54968, {	-- Jangdor's Handcrafted Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54968),	-- Jangdor's Handcrafted Vest
 						i(131863, {	-- Jangdor's Handmade Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -996,9 +951,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5296,	-- Rage Scar Yeti
 							},
 						}),
-						i(19042, {	-- Jangdor's Handcrafted Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19042),	-- Jangdor's Handcrafted Tunic
 					},
 				}),
 				q(2939, {	-- In Search of Knowledge
@@ -1066,9 +1019,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 200,
 					["lvl"] = 30,
 					["groups"] = {
-						i(8408, {	-- Pattern: Wild Leather Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8408),	-- Pattern: Wild Leather Cloak
 					},
 				},
 				q(25333, {	-- Might of the Sentinels
@@ -1081,15 +1032,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(54936, {	-- Sermon-Halter Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54937, {	-- Sentinel's Headpiece
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54935, {	-- Shadowleaf Bow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54936),	-- Sermon-Halter Gloves
+						i(54937),	-- Sentinel's Headpiece
+						i(54935),	-- Shadowleaf Bow
 						i(131416, {	-- Sentinel's Headgear
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1102,15 +1047,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54939, {	-- Sermon-Halter Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54940, {	-- Ogre's Coif
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54938, {	-- Stonemaul Slinger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54939),	-- Sermon-Halter Gloves
+						i(54940),	-- Ogre's Coif
+						i(54938),	-- Stonemaul Slinger
 						i(131415, {	-- Ogre's Visage
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1126,24 +1065,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/10 Noxious Whelp slain
 							["provider"] = { "n", 39384 },	-- Noxious Whelp
 						}),
-						i(54910, {	-- Emerald Veil
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54911, {	-- Green Whelp Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54910),	-- Emerald Veil
+						i(54911),	-- Green Whelp Shoulderguard
 						i(131421, {	-- Green Whelp Spaulders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(54912, {	-- Telaron's Platemail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54912),	-- Telaron's Platemail
 						i(156984, {	-- Windflight Knife
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(54909, {	-- Windflight Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54909),	-- Windflight Staff
 					},
 				}),
 				q(25230, {	-- More than Illness [H]
@@ -1156,24 +1087,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/10 Noxious Whelp slain
 							["provider"] = { "n", 39384 },	-- Noxious Whelp
 						}),
-						i(54914, {	-- Emerald Veil
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54915, {	-- Green Whelp Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54914),	-- Emerald Veil
+						i(54915),	-- Green Whelp Shoulderguard
 						i(131411, {-- Green Whelp Spaulders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(54916, {	-- Konu's Platemail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54916),	-- Konu's Platemail
 						i(156983, {	-- Runetotem Slicer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(54913, {	-- Runetotem Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54913),	-- Runetotem Staff
 					},
 				}),
 				q(3792, {	-- Morrowgrain to Feathermoon Stronghold
@@ -1280,18 +1203,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(54927, {	-- Soulstealer's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54929, {	-- Shoulder of the Ogre-Nabber
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54930, {	-- Abductor's Coverings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54928, {	-- Modified Spell Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54927),	-- Soulstealer's Bracers
+						i(54929),	-- Shoulder of the Ogre-Nabber
+						i(54930),	-- Abductor's Coverings
+						i(54928),	-- Modified Spell Shield
 						i(131423, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1309,18 +1224,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54931, {	-- Soulstealer's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54933, {	-- Shoulder of the Ogre-Nabber
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54934, {	-- Abductor's Coverings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54932, {	-- Modified Spell Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54931),	-- Soulstealer's Bracers
+						i(54933),	-- Shoulder of the Ogre-Nabber
+						i(54934),	-- Abductor's Coverings
+						i(54932),	-- Modified Spell Shield
 						i(131418, {	-- Spaulders of the Ogre-Nabber
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1503,15 +1410,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Bigfist slain
 							["provider"] = { "n", 39958 },	-- Bigfist
 						}),
-						i(54943, {	-- Yeti Hide Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54944, {	-- Big Footwear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54945, {	-- Shadebough Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54943),	-- Yeti Hide Britches
+						i(54944),	-- Big Footwear
+						i(54945),	-- Shadebough Cloak
 						i(131424, {	-- Yeti Hide Padded Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1527,15 +1428,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Bigfist slain
 							["provider"] = { "n", 39958 },	-- Bigfist
 						}),
-						i(54946, {	-- Yeti Hide Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54947, {	-- Big Footwear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54948, {	-- Mojache Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54946),	-- Yeti Hide Britches
+						i(54947),	-- Big Footwear
+						i(54948),	-- Mojache Cloak
 						i(131420, {	-- Yeti Hide Padded Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1552,12 +1447,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(54917, {	-- Dream Bough Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54918, {	-- Belt of Natural Essence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54917),	-- Dream Bough Robes
+						i(54918),	-- Belt of Natural Essence
 						i(131422, {	-- Chain of Natural Essence
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1574,12 +1465,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54919, {	-- Dream Bough Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54920, {	-- Belt of Natural Essence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54919),	-- Dream Bough Robes
+						i(54920),	-- Belt of Natural Essence
 						i(131412, {	-- Chain of Natural Essence
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1650,9 +1537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								14640,	-- Zapped Cliff Giant
 							},
 						}),
-						i(54966, {	-- Zorbin's Mega-Chopper
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54966),	-- Zorbin's Mega-Chopper
 					},
 				}),
 				q(25431, {	-- Stinglasher [A]
@@ -1665,9 +1550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Stinglasher slain
 							["provider"] = { "n", 14661 },	-- Stinglasher
 						}),
-						i(54941, {	-- Secretion-Coated Carapace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54941),	-- Secretion-Coated Carapace
 					},
 				}),
 				q(25369, {	-- Stinglasher [H]
@@ -1681,9 +1564,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 18962 },	-- Stinglasher's Glands
 							["cr"] = 14661,	-- Stinglasher
 						}),
-						i(54942, {	-- Secretion-Coated Carapace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54942),	-- Secretion-Coated Carapace
 					},
 				}),
 				q(7731, {	-- Stinglasher
@@ -1826,12 +1707,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54949, {	-- Hadoken Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54950, {	-- Swiftstride Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54949),	-- Hadoken Band
+						i(54950),	-- Swiftstride Boots
 						--
 						i(9266),	-- Woodpaw Battle Plans (QI!)
 					},
@@ -1847,12 +1724,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
-						i(9661, {	-- Earthclasp Barrier
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9662, {	-- Rushridge Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9661),	-- Earthclasp Barrier
+						i(9662),	-- Rushridge Boots
 					},
 				}),
 				q(25422, {	-- The Darkmist Legacy
@@ -2171,12 +2044,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
-						i(9654, {	-- Cairnstone Sliver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9655, {	-- Seedtime Hoop
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9654),	-- Cairnstone Sliver
+						i(9655),	-- Seedtime Hoop
 					},
 				}),
 				q(3791, {	-- The Mystery of Morrowgrain
@@ -2191,12 +2060,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
-						i(11888, {	-- Quintis' Research Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11889, {	-- Bark Iron Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11888),	-- Quintis' Research Gloves
+						i(11889),	-- Bark Iron Pauldrons
 					},
 				}),
 				q(25448, {	-- The Northspring Menace
@@ -2441,21 +2306,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Verinias the Twisted slain
 							["provider"] = { "n", 40136 },	-- Verinias the Twisted
 						}),
-						i(54924, {	-- Twisted Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54925, {	-- Luring Footpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54924),	-- Twisted Leggings
+						i(54925),	-- Luring Footpads
 						i(131419, {	-- Luring Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(54926, {	-- Condensed Essence Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54923, {	-- Sensiria's Shroud
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54926),	-- Condensed Essence Bracers
+						i(54923),	-- Sensiria's Shroud
 					},
 				}),
 				q(2845, {	-- Wandering Shay
@@ -2477,12 +2334,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 42.4, 22.0, FERALAS },
 							["cr"] = 7765,	-- Rockbiter
 						}),
-						i(9656, {	-- Granite Grips
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9657, {	-- Vinehedge Cinch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9656),	-- Granite Grips
+						i(9657),	-- Vinehedge Cinch
 					},
 				}),
 				q(25426, {	-- War on the Woodpaw [A]
@@ -2560,21 +2413,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54971, {	-- Power of the Faerie Dragon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54971),	-- Power of the Faerie Dragon
 						i(157023, {	-- Power of the Forest
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(54969, {	-- Power of the Hippogryph
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54970, {	-- Power of the Mountain Giant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54972, {	-- Power of the Treant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54969),	-- Power of the Hippogryph
+						i(54970),	-- Power of the Mountain Giant
+						i(54972),	-- Power of the Treant
 					},
 				}),
 				q(3129, {	-- Weapons of Spirit
@@ -2588,18 +2433,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9684, {	-- Force of the Hippogryph
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9686, {	-- Spirit of the Faerie Dragon
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9683, {	-- Strength of the Treant
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10652, {	-- Will of the Mountain Giant
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9684),	-- Force of the Hippogryph
+						i(9686),	-- Spirit of the Faerie Dragon
+						i(9683),	-- Strength of the Treant
+						i(10652),	-- Will of the Mountain Giant
 					},
 				}),
 				{	-- Wild Leather Armor
@@ -2638,9 +2475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8406, {	-- Pattern: Wild Leather Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8406),	-- Pattern: Wild Leather Boots
 					},
 				},
 				{	-- Wild Leather Helmet
@@ -2664,9 +2499,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8405, {	-- Pattern: Wild Leather Helmet (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8405),	-- Pattern: Wild Leather Helmet (RECIPE!)
 					},
 				},
 				{	-- Wild Leather Leggings
@@ -2690,9 +2523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8407, {	-- Pattern: Wild Leather Leggings (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8407),	-- Pattern: Wild Leather Leggings (RECIPE!)
 					},
 				},
 				{	-- Wild Leather Shoulders
@@ -2715,9 +2546,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8403, {	-- Pattern: Wild Leather Shoulders (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8403),	-- Pattern: Wild Leather Shoulders (RECIPE!)
 					},
 				},
 				{	-- Wild Leather Vest
@@ -2741,9 +2570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(8404, {	-- Pattern: Wild Leather Vest (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8404),	-- Pattern: Wild Leather Vest (RECIPE!)
 					},
 				},
 				-- #if SEASON_OF_DISCOVERY
@@ -2828,15 +2655,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(54951, {	-- Chain of Emeriss
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54953, {	-- Chain of Lethon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54952, {	-- Chain of Taerar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54951),	-- Chain of Emeriss
+						i(54953),	-- Chain of Lethon
+						i(54952),	-- Chain of Taerar
 					},
 				}),
 				q(25383, {	-- Ysondre's Farewell [H]
@@ -2846,15 +2667,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(54954, {	-- Chain of Emeriss
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54956, {	-- Chain of Lethon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(54955, {	-- Chain of Taerar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(54954),	-- Chain of Emeriss
+						i(54956),	-- Chain of Lethon
+						i(54955),	-- Chain of Taerar
 					},
 				}),
 				q(7003, {	-- Zapped Giants
@@ -2874,9 +2689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								5361,	-- Wave Strider
 							},
 						}),
-						i(19040, {	-- Zorbin's Mega-Slicer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19040),	-- Zorbin's Mega-Slicer
 					},
 				}),
 				q(25429, {	-- Zukk'ash Infestation [A]
@@ -2953,12 +2766,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
-						i(19038, {	-- Ring of Subtlety
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19037, {	-- Emerald Peak Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19038),	-- Ring of Subtlety
+						i(19037),	-- Emerald Peak Spaulders
 					},
 				}),
 			}),

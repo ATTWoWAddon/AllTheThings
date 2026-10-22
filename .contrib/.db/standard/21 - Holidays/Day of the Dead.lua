@@ -44,7 +44,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 		n(ACHIEVEMENTS, {
 			ach(3456, {	-- Dead Man's Party
 				["provider"] = { "n", 34383 },	-- Catrina
-				["timeline"] = { ADDED_3_2_2 },
 				["coords"] = {
 					{ 47.8, 55.9, AZUREMYST_ISLE },
 					-- #if AFTER 7.0.1
@@ -80,7 +79,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 		}),
 		-- #endif
 		n(QUESTS, bubbleDown({
-			["timeline"] = { ADDED_3_2_2 },
 			["cost"] = {
 				{ "i", 46861, 1 },	-- Bouquet of Orange Marigolds
 				{ "i", 46718, 1 },	-- Orange Marigold
@@ -88,9 +86,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 			},
 			["isYearly"] = true,
 			["groups"] = {
-				i(46831, {	-- Macabre Marionette (PET!)
-					["timeline"] = { ADDED_3_2_2 },
-				}),
+				i(46831),	-- Macabre Marionette (PET!)
 			},
 		}, {
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
@@ -196,7 +192,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					{ 39.9, 21.8, TEROKKAR_FOREST },
 					{ 62.2, 67.4, TIRISFAL_GLADES },
 				},
-				["timeline"] = { ADDED_3_2_2 },
 				["groups"] = {
 					i(116856, {	-- "Blooming Rose" Contender's Costume (TOY!)
 						["timeline"] = { ADDED_6_0_2 },
@@ -213,12 +208,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(116891, {	-- "Snowy Owl" Contender's Costume (TOY!)
 						["timeline"] = { ADDED_6_0_2 },
 					}),
-					i(46861, {	-- Bouquet of Orange Marigolds
-						["timeline"] = { ADDED_3_2_2 },
-					}),
-					i(46690, {	-- Candy Skull
-						["timeline"] = { ADDED_3_2_2 },
-					}),
+					i(46861),	-- Bouquet of Orange Marigolds
+					i(46690),	-- Candy Skull
 					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },
 						["cost"] = 500000000,	-- 50k
@@ -253,9 +244,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(246154, {	-- Marigold Remembrance Veil
 						["timeline"] = { ADDED_11_2_5 },
 					}),
-					i(46718, {	-- Orange Marigold
-						["timeline"] = { ADDED_3_2_2 },
-					}),
+					i(46718),	-- Orange Marigold
 					i(246185, {	-- Orchid Crown of the Dead
 						["timeline"] = { ADDED_11_2_5 },
 					}),
@@ -265,12 +254,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(246157, {	-- Orchid Remembrance Veil
 						["timeline"] = { ADDED_11_2_5 },
 					}),
-					i(46710, {	-- Recipe: Bread of the Dead (RECIPE!)
-						["timeline"] = { ADDED_3_2_2 },
-					}),
-					i(46711, {	-- Spirit Candle
-						["timeline"] = { ADDED_3_2_2 },
-					}),
+					i(46710),	-- Recipe: Bread of the Dead (RECIPE!)
+					i(46711),	-- Spirit Candle
 					i(246187, {	-- Starflower Crown of the Dead
 						["timeline"] = { ADDED_11_2_5 },
 					}),
@@ -281,7 +266,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { ADDED_11_2_5 },
 					}),
 					i(46860, {	-- Whimsical Skull Mask (Cosmetic)
-						["timeline"] = { ADDED_3_2_2 },
 						-- #if BEFORE LEGION
 						-- #if NOT COMMON_QUALITY_TRANSMOGS
 						-- NOTE: This is an event item that disappears after the end of the event. After Legion this item no longer requires any event and is upgraded from common to uncommon quality.

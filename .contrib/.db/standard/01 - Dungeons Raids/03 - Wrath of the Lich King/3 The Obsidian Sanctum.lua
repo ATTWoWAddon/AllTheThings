@@ -163,9 +163,7 @@ local SARTH_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_
 		ach(456, {	-- Realm First! Obsidian Slayer
 			["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
 			["groups"] = {
-				title(106, {	-- Obsidian Slayer <Name>
-					["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
-				}),
+				title(106),	-- Obsidian Slayer <Name>
 			},
 		}),
 	}),

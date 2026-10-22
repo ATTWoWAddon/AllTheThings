@@ -1851,9 +1851,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/12 Bladewing Bloodletter slain
 								["provider"] = { "n", 21033 },	-- Bladewing Bloodletter
 							}),
-							i(32481, {	-- Charm of Swift Flight
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
+							i(32481),	-- Charm of Swift Flight
 						},
 					})),
 					q(10912, {	-- The Hound-Master
@@ -2308,9 +2306,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Doomcryer slain
 								["provider"] = { "n", 19963 },	-- Doomcryer
 							}),
-							i(32602, {	-- Crystalforged Darkrune
-								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
-							}),
+							i(32602),	-- Crystalforged Darkrune
 						},
 					})),
 				}),
@@ -2420,12 +2416,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
 						["groups"] = {
-							i(32941, {	-- Corruptor's Signet
-								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
-							}),
-							i(32942, {	-- Ring of the Overseer
-								["timeline"] = { ADDED_2_1_0, REMOVED_4_1_0 },
-							}),
+							i(32941),	-- Corruptor's Signet
+							i(32942),	-- Ring of the Overseer
 						},
 					})),
 					n(18693, {	-- Speaker Mar'grom

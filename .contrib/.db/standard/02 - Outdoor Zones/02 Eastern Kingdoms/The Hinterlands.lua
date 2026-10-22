@@ -157,7 +157,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31910, {	-- David Kosse
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -314,18 +313,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 204102 },	-- Shadraspawn Egg
 							},
 						}),
-						i(59260, {	-- Shadraspawn Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59262, {	-- Cloudcaller Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59263, {	-- Belt of the Scattering Wind
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59264, {	-- Legguards of Caution
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59260),	-- Shadraspawn Mantle
+						i(59262),	-- Cloudcaller Leggings
+						i(59263),	-- Belt of the Scattering Wind
+						i(59264),	-- Legguards of Caution
 						i(131570, {	-- Cloudcaller Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -346,18 +337,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 204102 },	-- Shadraspawn Egg
 							},
 						}),
-						i(59298, {	-- Surlis' Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59299, {	-- Apothecary Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59300, {	-- Shadraspawn Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59301, {	-- Legguards of Caution
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59298),	-- Surlis' Mantle
+						i(59299),	-- Apothecary Leggings
+						i(59300),	-- Shadraspawn Belt
+						i(59301),	-- Legguards of Caution
 						i(131519, {	-- Apothecary Chain Pants
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -405,9 +388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, THE_HINTERLANDS },
 						}),
-						i(19118, {	-- Nature's Breath
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
+						i(19118),	-- Nature's Breath
 					},
 				}),
 				q(26524, {	-- Dark Vessels (A)
@@ -423,20 +404,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 179922 },	-- Vessel of Tainted Blood
 							},
 						}),
-						i(59252, {	-- Sandals of Tainted Blood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59252),	-- Sandals of Tainted Blood
 						i(59253, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_4_0_3 },
 							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
-						i(59254, {	-- Spider Venom Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59255, {	-- Dark Vessel Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59254),	-- Spider Venom Leggings
+						i(59255),	-- Dark Vessel Breastplate
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
@@ -460,20 +434,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 179922 },	-- Vessel of Tainted Blood
 							},
 						}),
-						i(59294, {	-- Sandals of Tainted Blood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59294),	-- Sandals of Tainted Blood
 						i(59295, {	-- Sandrene's Invisible Vest
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { ADDED_4_0_3 },
 							["collectible"] = false,	-- Can't be collected, not even with the source tracking we use for fishing poles and stuff
 						}),
-						i(59296, {	-- Spider Venom Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59297, {	-- Dark Vessel Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59296),	-- Spider Venom Leggings
+						i(59297),	-- Dark Vessel Breastplate
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
 							["timeline"] = { ADDED_7_0_3 },
@@ -538,15 +505,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(59249, {	-- Vile Branch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59250, {	-- Necklace of Evil Faces
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59251, {	-- Jintha'Alor Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59249),	-- Vile Branch
+						i(59250),	-- Necklace of Evil Faces
+						i(59251),	-- Jintha'Alor Bracers
 					},
 				}),
 				q(26357, {	-- Faces of Evil (H)
@@ -555,15 +516,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(59288, {	-- Vile Branch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59290, {	-- Jintha'Alor Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59289, {	-- Necklace of Evil Faces
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59288),	-- Vile Branch
+						i(59290),	-- Jintha'Alor Axe
+						i(59289),	-- Necklace of Evil Faces
 					},
 				}),
 				q(9469, {	-- Featherbeard's Endorsement
@@ -622,15 +577,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 19023 },	-- Katoom's Best Lure
 							["cr"] = 7977,	-- Gammerita
 						}),
-						i(59274, {	-- Katoom's Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59275, {	-- Stomachache Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59276, {	-- Snapjaw Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59274),	-- Katoom's Mask
+						i(59275),	-- Stomachache Belt
+						i(59276),	-- Snapjaw Bracers
 						i(131495, {	-- Stomachache Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -645,18 +594,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Gan'dranda slain
 							["provider"] = { "n", 42609 },	-- Gan'dranda
 						}),
-						i(59242, {	-- Ironsight Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59243, {	-- Theresa's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59244, {	-- Stormfeather Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59245, {	-- Head Kickers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59242),	-- Ironsight Crossbow
+						i(59243),	-- Theresa's Bracers
+						i(59244),	-- Stormfeather Boots
+						i(59245),	-- Head Kickers
 						i(131536, {	-- Stormfeather Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -717,18 +658,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58241 },	-- Tablet of Shadra
 							["cr"] = 42877,	-- Morta'gya the Keeper
 						}),
-						i(59256, {	-- Unkeeper Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59257, {	-- Leggings of Secret Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59258, {	-- Gloves of Strange Words
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59259, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59256),	-- Unkeeper Blade
+						i(59257),	-- Leggings of Secret Rituals
+						i(59258),	-- Gloves of Strange Words
+						i(59259),	-- Tablet-Bearer's Pauldrons
 						i(131546, {	-- Gauntlets of Strange Words
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -748,18 +681,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58241 },	-- Tablet of Shadra
 							["cr"] = 42877,	-- Morta'gya the Keeper
 						}),
-						i(59284, {	-- Unkeeper Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59285, {	-- Leggings of Secret Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59286, {	-- Gloves of Strange Words
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59287, {	-- Tablet-Bearer's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59284),	-- Unkeeper Blade
+						i(59285),	-- Leggings of Secret Rituals
+						i(59286),	-- Gloves of Strange Words
+						i(59287),	-- Tablet-Bearer's Pauldrons
 						i(131518, {	-- Gauntlets of Strange Words
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -825,15 +750,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
 							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
 						}),
-						i(59246, {	-- Blood Drinker Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59248, {	-- Steelwing Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59247, {	-- Soul Eater Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59246),	-- Blood Drinker Staff
+						i(59248),	-- Steelwing Pendant
+						i(59247),	-- Soul Eater Shoulderguard
 						i(131542, {	-- Soul Eater Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -852,15 +771,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
 							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
 						}),
-						i(59291, {	-- Blood Drinker Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59293, {	-- Torntusk Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59292, {	-- Soul Eater Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59291),	-- Blood Drinker Staff
+						i(59293),	-- Torntusk Pendant
+						i(59292),	-- Soul Eater Shoulderguard
 						i(131509, {	-- Soul Eater Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1020,15 +933,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58082 },	-- Direglob Sample
 							["cr"] = 42592,	-- The Direglob
 						}),
-						i(59239, {	-- Wand of Oomph
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59240, {	-- Blastbrew Hat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59241, {	-- Direglob-Slimed Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59239),	-- Wand of Oomph
+						i(59240),	-- Blastbrew Hat
+						i(59241),	-- Direglob-Slimed Belt
 						i(131537, {	-- Blastbrew Headgear
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1051,15 +958,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58082 },	-- Direglob Sample
 							["cr"] = 42592,	-- The Direglob
 						}),
-						i(59277, {	-- Research Assistant's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59278, {	-- Slime Hunter Headguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59279, {	-- Skulk Rock Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59277),	-- Research Assistant's Wand
+						i(59278),	-- Slime Hunter Headguard
+						i(59279),	-- Skulk Rock Belt
 						i(131501, {	-- Slime Hunter Headgear
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1099,21 +1000,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58935 },	-- Gryphon Chow
 							["cr"] = 2657,	-- Trained Razorbeak
 						}),
-						i(59236, {	-- Gryphon-Down Scarf
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59237, {	-- Gryphon Master's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59238, {	-- Talon Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59236),	-- Gryphon-Down Scarf
+						i(59237),	-- Gryphon Master's Belt
+						i(59238),	-- Talon Axe
 						i(131553, {	-- Gryphon Master's Chain
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(59235, {	-- Razorbeak Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59235),	-- Razorbeak Amulet
 					},
 				}),
 				q(9475, {	-- Reclaiming the Eggs
@@ -1175,12 +1068,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
 					["groups"] = {
-						i(19114, {	-- Highland Bow
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
-						i(19115, {	-- Flask of Forest Mojo
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
+						i(19114),	-- Highland Bow
+						i(19115),	-- Flask of Forest Mojo
 					},
 				}),
 				q(1451, {	-- Rhapsody Shindigger
@@ -1300,12 +1189,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 7995,	-- Vile Priestess Hexx
 						}),
 						-- #endif
-						i(9651, {	-- Gryphon Rider's Stormhammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9652, {	-- Gryphon Rider's Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9651),	-- Gryphon Rider's Stormhammer
+						i(9652),	-- Gryphon Rider's Leggings
 					},
 				}),
 				q(7849, {	-- Separation Anxiety
@@ -1329,12 +1214,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 62.2, 75.5, THE_HINTERLANDS },
 						}),
-						i(19117, {	-- Laquered Wooden Plate Legplates
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
-						i(19116, {	-- Greenleaf Handwraps
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
+						i(19117),	-- Laquered Wooden Plate Legplates
+						i(19116),	-- Greenleaf Handwraps
 					},
 				}),
 				q(26532, {	-- Shadra the Venom Queen (A)
@@ -1347,18 +1228,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Shadra slain
 							["provider"] = { "n", 43007 },	-- Shadra
 						}),
-						i(59269, {	-- Veil of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59270, {	-- Headguard of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59271, {	-- Headcover of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59272, {	-- Helm of Aerie Peak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59269),	-- Veil of Aerie Peak
+						i(59270),	-- Headguard of Aerie Peak
+						i(59271),	-- Headcover of Aerie Peak
+						i(59272),	-- Helm of Aerie Peak
 						i(131549, {	-- Aerie Headgear
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1377,18 +1250,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Shadra slain
 							["provider"] = { "n", 43007 },	-- Shadra
 						}),
-						i(59306, {	-- Darkcleric's Veil
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59307, {	-- Virulent Headguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59308, {	-- Venomous Headcover
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59309, {	-- Poisoner's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59306),	-- Darkcleric's Veil
+						i(59307),	-- Virulent Headguard
+						i(59308),	-- Venomous Headcover
+						i(59309),	-- Poisoner's Helm
 						i(131526, {	-- Virulent Headpiece
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1488,9 +1353,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58867 },	-- Snapjaw Gizzard
 							["cr"] = 2505,	-- Saltwater Snapjaw
 						}),
-						i(19022, {	-- Nat Pagle's Extreme Angler FC-5000
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 				}),
 				q(7815, {	-- Snapjaws, Mon!
@@ -1504,9 +1367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/(15 / 10 (Wrath)) Saltwater Snapjaw slain
 							["provider"] = { "n", 2505 },	-- Saltwater Snapjaw
 						}),
-						i(19022, {	-- Nat Pagle's Extreme Angler FC-5000
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
+						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 					-- #endif
 				}),
@@ -1519,9 +1380,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Saltwater Snapjaw slain
 							["provider"] = { "n", 2505 },	-- Saltwater Snapjaw
 						}),
-						i(19022, {	-- Nat Pagle's Extreme Angler FC-5000
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 				}),
 				q(7828, {	-- Stalking the Stalkers
@@ -1755,9 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 19036 },	-- Final Message to the Wildhammer
 							["coord"] = { 14.0, 48.0, THE_HINTERLANDS },
 						}),
-						i(19119, {	-- Owlbeast Hide Gloves
-							["timeline"] = { ADDED_1_5_0, REMOVED_4_0_3 },
-						}),
+						i(19119),	-- Owlbeast Hide Gloves
 					},
 				}),
 				q(27626, {	-- The Highvale Documents
@@ -1793,18 +1650,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58779 },	-- Shell of Shadra
 							["cr"] = 42919,	-- Qiaga the Keeper
 						}),
-						i(59265, {	-- Gown of the Last Priestess
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59266, {	-- Gwenyth's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59267, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59268, {	-- Greathammer of the Hinterlands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59265),	-- Gown of the Last Priestess
+						i(59266),	-- Gwenyth's Bracers
+						i(59267),	-- Gloves of Fanatical Zealotry
+						i(59268),	-- Greathammer of the Hinterlands
 						i(131547, {	-- Gwenyth's Wristguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1824,18 +1673,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58779 },	-- Shell of Shadra
 							["cr"] = 42919,	-- Qiaga the Keeper
 						}),
-						i(59302, {	-- Gown of the Last Priestess
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59303, {	-- Gwenyth's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59304, {	-- Gloves of Fanatical Zealotry
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59305, {	-- Greataxe of the Hinterlands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59302),	-- Gown of the Last Priestess
+						i(59303),	-- Gwenyth's Bracers
+						i(59304),	-- Gloves of Fanatical Zealotry
+						i(59305),	-- Greataxe of the Hinterlands
 						i(131524, {	-- Gwenyth's Wristguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1867,18 +1708,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Thornar Thunderclash slain
 							["provider"] = { "n", 42610 },	-- Thornar Thunderclash
 						}),
-						i(59280, {	-- Voice Stealer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59281, {	-- Elder's Wristwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59282, {	-- Encroaching Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59283, {	-- Revantusk Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59280),	-- Voice Stealer
+						i(59281),	-- Elder's Wristwraps
+						i(59282),	-- Encroaching Treads
+						i(59283),	-- Revantusk Boots
 						i(131498, {	-- Encroaching Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1945,15 +1778,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9649, {	-- Royal Highmark Vestments
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9650, {	-- Honorguard Chestpiece
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10686, {	-- Aegis of Battle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9649),	-- Royal Highmark Vestments
+						i(9650),	-- Honorguard Chestpiece
+						i(10686),	-- Aegis of Battle
 					},
 				}),
 				q(26525, {	-- Venomous Secrets (A)
@@ -2222,7 +2049,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["groups"] = {
 						i(220165, {	-- Rune of Wrath
-							["timeline"] = { ADDED_1_15_1 },
 							["classes"] = { PALADIN },
 							["groups"] = {
 								recipe(429249),	-- Engrave Helm - Wrath

@@ -44,9 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 					["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
 					["groups"] = {
-						title(289, {		-- <Name> of the Iron Vanguard
-							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
-						}),
+						title(289),	-- <Name> of the Iron Vanguard
 					},
 				}),
 			}),

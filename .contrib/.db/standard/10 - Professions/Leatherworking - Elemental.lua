@@ -17,14 +17,12 @@ profession(LEATHERWORKING, {
 						-- #if BEFORE CATA
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Primalstorm Breastplate",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 36077,
 							["requireSkill"] = 10658,
 						}),
 						-- #endif
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Primalstrike Vest",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35589,
 							["requireSkill"] = 10658,
 						}),
@@ -36,7 +34,6 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Primalstrike Bracers",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35591,
 							["requireSkill"] = 10658,
 						}),
@@ -48,7 +45,6 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Primalstrike Belt",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35590,
 							["requireSkill"] = 10658,
 						}),

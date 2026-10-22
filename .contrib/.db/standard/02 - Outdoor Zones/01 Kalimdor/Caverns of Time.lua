@@ -180,9 +180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(265850, {	-- Communal Time Pouch
 								["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 								["groups"] = {
-									i(265849, {	-- Communal Key of Time
-										["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
-									}),
+									i(265849),	-- Communal Key of Time
 								},
 							}),
 							-- #endif
@@ -215,11 +213,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_2_0 },
 					["groups"] = {
 						i(170739, {	-- Sunswarmed Sand
-							["timeline"] = { ADDED_8_2_0 },
 							["cost"] = { { "c", TIMEWARPED_BADGE, 10 } },
 						}),
 						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
-							["timeline"] = { ADDED_8_2_0 },
 							["cost"] = { { "c", TIMEWARPED_BADGE, 1000 } },
 						}),
 					},

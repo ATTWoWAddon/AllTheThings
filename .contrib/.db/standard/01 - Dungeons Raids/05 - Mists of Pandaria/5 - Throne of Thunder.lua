@@ -785,9 +785,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 								["timeline"] = { ADDED_10_2_5 },
 								["groups"] = {
 									o(420873, {	-- Ritual Book
-										i(212750, {	-- Grimoire of the Ancient Observer (CI!)
-											["timeline"] = { ADDED_10_2_5 },
-										}),
+										i(212750),	-- Grimoire of the Ancient Observer (CI!)
 									}),
 								},
 							}),

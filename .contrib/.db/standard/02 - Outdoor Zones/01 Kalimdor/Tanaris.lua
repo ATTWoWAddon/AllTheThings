@@ -1114,18 +1114,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Goblins rescued
 							["provider"] = { "n", 39081 },	-- Hazzali Cocoon
 						}),
-						i(56855, {	-- Dangerous Machinery Piece
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56856, {	-- Bughunter Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56857, {	-- Loaner Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56858, {	-- Goblin Treat Tin
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56855),	-- Dangerous Machinery Piece
+						i(56856),	-- Bughunter Belt
+						i(56857),	-- Loaner Bracers
+						i(56858),	-- Goblin Treat Tin
 					},
 				}),
 				q(2748, {	-- A Fine Egg
@@ -1153,9 +1145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9980, {	-- Ornate Mithril Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						recipe(9980),	-- Ornate Mithril Helm
 					},
 				}),
 				q(24951, {	-- A Great Idea
@@ -1211,15 +1201,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/6 Sandstone Golem slain
 							["provider"] = { "n", 38914 },	-- Sandstone Golem
 						}),
-						i(56903, {	-- Gatewatcher Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56904, {	-- Decomissioner's Monnions
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56905, {	-- Sandstone Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56903),	-- Gatewatcher Belt
+						i(56904),	-- Decomissioner's Monnions
+						i(56905),	-- Sandstone Pauldrons
 					},
 				}),
 				q(25017, {	-- Ancient Obstacles (H)
@@ -1235,15 +1219,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/6 Sandstone Golem slain
 							["provider"] = { "n", 38914 },	-- Sandstone Golem
 						}),
-						i(56906, {	-- Gatewatcher Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56907, {	-- Examiner's Monnions
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56908, {	-- Sandstone Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56906),	-- Gatewatcher Belt
+						i(56907),	-- Examiner's Monnions
+						i(56908),	-- Sandstone Pauldrons
 					},
 				}),
 				q(25018, {	-- Andoren Will Know
@@ -1265,9 +1243,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 38,
 					["groups"] = {
-						i(8524, {	-- Model 4711-FTZ Power Source
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8524),	-- Model 4711-FTZ Power Source
 					},
 				}),
 				q(25115, {	-- Blisterpaw Butchery
@@ -1375,18 +1351,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Captain Dreadbeard slain
 							["provider"] = { "n", 38749 },	-- Captain Dreadbeard
 						}),
-						i(56867, {	-- Pretty Please Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56868, {	-- Dreadbeard Strangler Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56869, {	-- Investigator's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56870, {	-- Impatient Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56867),	-- Pretty Please Robes
+						i(56868),	-- Dreadbeard Strangler Gloves
+						i(56869),	-- Investigator's Belt
+						i(56870),	-- Impatient Boots
 					},
 				}),
 				q(24950, {	-- Captain Dreadbeard (H)
@@ -1403,18 +1371,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Captain Dreadbeard slain
 							["provider"] = { "n", 38749 },	-- Captain Dreadbeard
 						}),
-						i(56871, {	-- Flirtation Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56872, {	-- Dreadbeard Strangler Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56873, {	-- Investigator's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56874, {	-- Impatient Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56871),	-- Flirtation Robes
+						i(56872),	-- Dreadbeard Strangler Gloves
+						i(56873),	-- Investigator's Belt
+						i(56874),	-- Impatient Boots
 					},
 				}),
 				q(24933, {	-- Chicken of the Desert
@@ -1517,14 +1477,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(9265, {	-- Cuergo's Hidden Treasure
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(9360, {	-- Cuergo's Gold
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(9361, {	-- Cuergo's Gold with Worm
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(9360),	-- Cuergo's Gold
+								i(9361),	-- Cuergo's Gold with Worm
 								i(9359),	-- Wirt's Third Leg (Patch 9.1.5: Renamed to 'Southsea Lamp')
 							},
 						}),
@@ -1582,18 +1537,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 7858},	-- Southsea Swashbuckler
 							},
 						}),
-						i(56875, {	-- Southsea Hood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56876, {	-- Golly Gosh Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56877, {	-- Nose Thumber Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56878, {	-- Cleaned-Up Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56875),	-- Southsea Hood
+						i(56876),	-- Golly Gosh Leggings
+						i(56877),	-- Nose Thumber Gloves
+						i(56878),	-- Cleaned-Up Pauldrons
 					},
 				}),
 				q(24927, {	-- Dead Man's Chest (H)
@@ -1611,18 +1558,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 7858},	-- Southsea Swashbuckler
 							},
 						}),
-						i(56879, {	-- Southsea Hood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56880, {	-- Dellot's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56881, {	-- Branded Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56882, {	-- Cleaned-Up Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56879),	-- Southsea Hood
+						i(56880),	-- Dellot's Leggings
+						i(56881),	-- Branded Gloves
+						i(56882),	-- Cleaned-Up Pauldrons
 					},
 				}),
 				q(25060, {	-- Define "Crazy"
@@ -1653,12 +1592,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 40,
 					["groups"] = {
-						i(9636, {	-- Swashbuckler Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9637, {	-- Shinkicker Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9636),	-- Swashbuckler Sash
+						i(9637),	-- Shinkicker Boots
 					},
 				}),
 				q(3321, {	-- Did You Lose This?
@@ -1674,9 +1609,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						i(10418, {	-- Glimmering Mithril Insignia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10418),	-- Glimmering Mithril Insignia
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1801,15 +1734,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 140971 },	-- Gahz'ridian
 							},
 						}),
-						i(9978, {	-- Gahz'ridian Detector
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10827, {	-- Surveyor's Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10826, {	-- Staff of Lore
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9978),	-- Gahz'ridian Detector
+						i(10827),	-- Surveyor's Tunic
+						i(10826),	-- Staff of Lore
 					},
 				}),
 				q(25522, {	-- Gargantapid
@@ -1822,15 +1749,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 54855 },	-- Gargantapid's Poison Gland
 							["cr"] = 40581,	-- Gargantapid
 						}),
-						i(56847, {	-- Chelsea's Nightmare
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56848, {	-- Rustflutter Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56849, {	-- Gus' First Aid Kit
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56847),	-- Chelsea's Nightmare
+						i(56848),	-- Rustflutter Boots
+						i(56849),	-- Gus' First Aid Kit
 					},
 				}),
 				q(24931, {	-- Gazer Tag
@@ -1906,9 +1827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["groups"] = {
-						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { ADDED_8_1_5 },
-						}),
+						i(165845),	-- Feathers (PET!)
 					},
 				}),
 				heroscall(q(28507, {	-- Hero's Call: Tanaris!
@@ -2089,18 +2008,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(56851, {	-- Pendant of the Gaping Chasm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56852, {	-- Mostly-Amazing Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56853, {	-- Bootscuff Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56854, {	-- Bootlegger Legplates
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56851),	-- Pendant of the Gaping Chasm
+						i(56852),	-- Mostly-Amazing Gloves
+						i(56853),	-- Bootscuff Boots
+						i(56854),	-- Bootlegger Legplates
 					},
 				}),
 				q(25061, {	-- Land's End
@@ -2366,15 +2277,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
-						i(11502, {	-- Loreskin Shoulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9635, {	-- Master Apothecary Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9634, {	-- Skilled Handling Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11502),	-- Loreskin Shoulders
+						i(9635),	-- Master Apothecary Cape
+						i(9634),	-- Skilled Handling Gloves
 					},
 				}),
 				q(53819, {	-- Return to the Nest
@@ -2415,18 +2320,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(56859, {	-- Nasmira's Soup Stirrer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56860, {	-- Dud Bomb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56861, {	-- Salvaged Steamwheedle Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56862, {	-- Failed Liferocket Prototype
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56859),	-- Nasmira's Soup Stirrer
+						i(56860),	-- Dud Bomb
+						i(56861),	-- Salvaged Steamwheedle Helm
+						i(56862),	-- Failed Liferocket Prototype
 					},
 				}),
 				q(24910, {	-- Rocket Rescue (H)
@@ -2439,18 +2336,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(56863, {	-- Nasmira's Soup Stirrer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56864, {	-- Dud Bomb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56865, {	-- Salvaged Steamwheedle Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56866, {	-- Failed Liferocket Prototype
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56863),	-- Nasmira's Soup Stirrer
+						i(56864),	-- Dud Bomb
+						i(56865),	-- Salvaged Steamwheedle Helm
+						i(56866),	-- Failed Liferocket Prototype
 					},
 				}),
 				q(25001, {	-- Sandscraper
@@ -2463,18 +2352,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Sandscraper slain
 							["provider"] = { "n", 38880 },	-- Sandscraper
 						}),
-						i(56887, {	-- Knuckle Down
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56888, {	-- Sandscraper Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56889, {	-- Business Finisher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56890, {	-- Bilgewater Brooch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56887),	-- Knuckle Down
+						i(56888),	-- Sandscraper Bracers
+						i(56889),	-- Business Finisher
+						i(56890),	-- Bilgewater Brooch
 						i(157014, {	-- Dunemaul Skullcracker
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -2503,15 +2384,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 52069 },	-- Sealed Sang'thraze
 							["cr"] = 40648,	-- Zakkaru
 						}),
-						i(56844, {	-- Bone Valley Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56845, {	-- Blood Speaker Tunic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56846, {	-- Bloodcraver Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56844),	-- Bone Valley Mace
+						i(56845),	-- Blood Speaker Tunic
+						i(56846),	-- Bloodcraver Pauldrons
 						i(157024, {	-- Sandfury Hatchet
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -2585,18 +2460,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 39.1, 34.9, TANARIS },
 						}),
-						i(56840, {	-- Oasis Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56841, {	-- Half Truth Handlers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56842, {	-- Mazoga's Discarded Coif
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56843, {	-- Lighthammer Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56840),	-- Oasis Mantle
+						i(56841),	-- Half Truth Handlers
+						i(56842),	-- Mazoga's Discarded Coif
+						i(56843),	-- Lighthammer Pauldrons
 					},
 				}),
 				q(53820, {	-- She's in a Happier Place
@@ -2606,9 +2473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { ADDED_8_1_5 },
-						}),
+						i(165845),	-- Feathers (PET!)
 					},
 				}),
 				q(2876, {	-- Ship Schedules
@@ -2643,9 +2508,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
-						i(8524, {	-- Model 4711-FTZ Power Source
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8524),	-- Model 4711-FTZ Power Source
 					},
 				}),
 				q(53816, {	-- Some Reassembly Required
@@ -2687,12 +2550,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/10 Southsea Swashbuckler slain
 							["provider"] = { "n", 7858 },	-- Southsea Swashbuckler
 						}),
-						i(20640, {	-- Southsea Head Bucket
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20641, {	-- Southsea Mojo Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20640),	-- Southsea Head Bucket
+						i(20641),	-- Southsea Mojo Boots
 					},
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
@@ -2862,12 +2721,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/1 Gor'marok the Ravager slain
 							["provider"] = { "n", 12046 },	-- Gor'marok the Ravager
 						}),
-						i(16738, {	-- Witherseed Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(16739, {	-- Rugwood Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16738),	-- Witherseed Gloves
+						i(16739),	-- Rugwood Mantle
 					},
 				}),
 				q(25421, {	-- The Grand Tablet (A)
@@ -2879,15 +2734,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(56897, {	-- Hieroglyphic Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56898, {	-- Translation Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56899, {	-- Rosy Tablet Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56897),	-- Hieroglyphic Helm
+						i(56898),	-- Translation Boots
+						i(56899),	-- Rosy Tablet Belt
 					},
 				}),
 				q(25107, {	-- The Grand Tablet (H)
@@ -2899,15 +2748,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(56900, {	-- Hieroglyphic Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56901, {	-- Translation Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56902, {	-- Rosy Tablet Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56900),	-- Hieroglyphic Helm
+						i(56901),	-- Translation Boots
+						i(56902),	-- Rosy Tablet Belt
 					},
 				}),
 				q(2773, {	-- The Mithril Kid
@@ -2923,9 +2766,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9972, {	-- Ornate Mithril Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						recipe(9972),	-- Ornate Mithril Breastplate
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3038,18 +2879,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8647, {	-- Egg Crate
 							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
-								i(8646, {	-- Bad Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8644, {	-- Fine Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8645, {	-- Ordinary Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
+								i(8646),	-- Bad Egg
+								i(8643),	-- Extraordinary Egg
+								i(8644),	-- Fine Egg
+								i(8645),	-- Ordinary Egg
 							},
 						}),
 					},
@@ -3066,18 +2899,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(8647, {	-- Egg Crate
 							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
-								i(8646, {	-- Bad Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8644, {	-- Fine Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
-								i(8645, {	-- Ordinary Egg
-									["timeline"] = { DELETED_4_0_3 },
-								}),
+								i(8646),	-- Bad Egg
+								i(8643),	-- Extraordinary Egg
+								i(8644),	-- Fine Egg
+								i(8645),	-- Ordinary Egg
 							},
 						}),
 					},
@@ -3140,9 +2965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(9979, {	-- Ornate Mithril Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						recipe(9979),	-- Ornate Mithril Boots
 					},
 				}),
 				q(3362, {	-- Thistleshrub Valley
@@ -3169,15 +2992,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(56894, {	-- Thunderdrome Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56895, {	-- Kelsey's Necklace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56896, {	-- Dreadshredder Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56894),	-- Thunderdrome Ring
+						i(56895),	-- Kelsey's Necklace
+						i(56896),	-- Dreadshredder Cloak
 					},
 				}),
 				q(25513, {	-- Thunderdrome: Grudge Match! (H)
@@ -3190,15 +3007,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(56891, {	-- Thunderdrome Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56892, {	-- Kelsey's Necklace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56893, {	-- Dreadshredder Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56891),	-- Thunderdrome Ring
+						i(56892),	-- Kelsey's Necklace
+						i(56893),	-- Dreadshredder Cloak
 					},
 				}),
 				q(25095, {	-- Thunderdrome: Sarinexx!
@@ -3248,12 +3059,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 6015 },	-- Torta
 							["coord"] = { 66.6, 25.6, TANARIS },
 						}),
-						i(9638, {	-- Chelonian Cuffs
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9642, {	-- Band of the Great Tortoise
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9638),	-- Chelonian Cuffs
+						i(9642),	-- Band of the Great Tortoise
 					},
 				}),
 				q(2864, {	-- Tran'rek
@@ -3418,18 +3225,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 52281 },	-- Meatface's Locked Chest
 							["cr"] = 39061,	-- Meatface
 						}),
-						i(56883, {	-- Meatface Pummeler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56884, {	-- "Smart Bracers"
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56885, {	-- Dagger of the Ides
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(56886, {	-- Gnomeregan Medallion of Merit
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(56883),	-- Meatface Pummeler
+						i(56884),	-- "Smart Bracers"
+						i(56885),	-- Dagger of the Ides
+						i(56886),	-- Gnomeregan Medallion of Merit
 						i(157015, {	-- Meatface's Tenderizer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -3791,15 +3590,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(37915, {	-- Pattern: Dress Shoes (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
 							["isLimited"] = true,
 						}),
-						i(38327, {	-- Pattern: Haliscan Jacket (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(38328, {	-- Pattern: Haliscan Pantaloons (RECIPE!)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(38327),	-- Pattern: Haliscan Jacket (RECIPE!)
+						i(38328),	-- Pattern: Haliscan Pantaloons (RECIPE!)
 					},
 				}),
 				-- #if AFTER TBC

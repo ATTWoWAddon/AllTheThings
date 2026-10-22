@@ -134,21 +134,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(53560, {	-- Moonshadow Staff
 							["timeline"] = { CREATED_4_0_3 },
 						}),
-						i(22458, {	-- Moonshadow Stave
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22458),	-- Moonshadow Stave
 						i(53561, {	-- Thicket's Embrace
 							["timeline"] = { CREATED_4_0_3 },
 						}),
-						i(22272, {	-- Forest's Embrace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22272),	-- Forest's Embrace
 						i(53562, {	-- Grizzled Hide
 							["timeline"] = { CREATED_4_0_3 },
 						}),
-						i(22274, {	-- Grizzled Pelt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22274),	-- Grizzled Pelt
 					},
 				})),
 				q(10593, {	-- An Ancient Evil
@@ -180,15 +174,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20025 },	-- Blood of Morphaz
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19990, {	-- Blessed Prayer Beads
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20006, {	-- Circle of Hope
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20082, {	-- Woestave
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19990),	-- Blessed Prayer Beads
+						i(20006),	-- Circle of Hope
+						i(20082),	-- Woestave
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8413, {	-- Da Voodoo
@@ -211,15 +199,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20369, {	-- Azurite Fists
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20503, {	-- Enamored Water Spirit
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20556, {	-- Wildstaff
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20369),	-- Azurite Fists
+						i(20503),	-- Enamored Water Spirit
+						i(20556),	-- Wildstaff
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8253, {	-- Destroy Morphaz
@@ -234,15 +216,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20085 },	-- Arcane Shard
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(20035, {	-- Glacial Spike
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20036, {	-- Fire Ruby
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20037, {	-- Arcane Crystal Pendant
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20035),	-- Glacial Spike
+						i(20036),	-- Fire Ruby
+						i(20037),	-- Arcane Crystal Pendant
 					},
 				})),
 				q(27605, {	-- Eranikus
@@ -254,9 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Shade of Eranikus slain
 							["provider"] = { "n", 5709 },	-- Shade of Eranikus
 						}),
-						i(65931, {	-- Essence of Eranikus' Shade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65931),	-- Essence of Eranikus' Shade
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8418, {	-- Forging the Mightstone
@@ -277,18 +251,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20504, {	-- Lightforged Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20505, {	-- Chivalrous Signet
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20512, {	-- Sanctified Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20620, {	-- Holy Mightstone
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20504),	-- Lightforged Blade
+						i(20505),	-- Chivalrous Signet
+						i(20512),	-- Sanctified Orb
+						i(20620),	-- Holy Mightstone
 					},
 				})),
 				q(4143, {	-- Haze of Evil
@@ -343,9 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 							["description"] = "Scattered around the inside and outside of the instance.",
 						}),
-						i(1490, {	-- Guardian Talisman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1490),	-- Guardian Talisman
 					},
 				}),
 				q(1446, {	-- Jammal'an the Prophet
@@ -357,12 +321,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Head of Jammal'an
 							["provider"] = { "i", 6212 },	-- Head of Jammal'an
 						}),
-						i(11124, {	-- Helm of Exile
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11123, {	-- Rainstrider Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11124),	-- Helm of Exile
+						i(11123),	-- Rainstrider Leggings
 					},
 				}),
 				q(27604, {	-- Jammal'an the Prophet
@@ -388,15 +348,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20022 },	-- Azure Key
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19982, {	-- Duskbat Drape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19984, {	-- Ebon Mask
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20255, {	-- Whisperwalk Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19982),	-- Duskbat Drape
+						i(19984),	-- Ebon Mask
+						i(20255),	-- Whisperwalk Boots
 					},
 				})),
 				q(27633, {	-- The Blood God Hakkar
@@ -422,9 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 					["groups"] = {
-						i(10455, {	-- Chained Essence of Eranikus
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10455),	-- Chained Essence of Eranikus
 					},
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
@@ -455,15 +407,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "i", 10663, 1 },	-- Essence of Hakkar
 							},
 						}),
-						i(10749, {	-- Avenguard Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10750, {	-- Lifeforce Dirk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10751, {	-- Gemburst Circlet
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10749),	-- Avenguard Helm
+						i(10750),	-- Lifeforce Dirk
+						i(10751),	-- Gemburst Circlet
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8232, {	-- The Green Drake
@@ -478,15 +424,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 20019 },	-- Tooth of Morphaz
 							["cr"] = 5719,	-- Morphaz
 						}),
-						i(19991, {	-- Devilsaur Eye
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19992, {	-- Devilsaur Tooth
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20083, {	-- Hunting Spear
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19991),	-- Devilsaur Eye
+						i(19992),	-- Devilsaur Tooth
+						i(20083),	-- Hunting Spear
 					},
 				})),
 				q(1445, {	-- The Temple of Atal'Hakkar
@@ -500,9 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/20 Fetish of Hakkar
 							["provider"] = { "i", 6181 },	-- Fetish of Hakkar
 						}),
-						i(1490, {	-- Guardian Talisman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1490),	-- Guardian Talisman
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8422, {	-- Trolls of a Feather
@@ -522,15 +460,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20534, {	-- Abyss Shard
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20530, {	-- Robes of Servitude
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20536, {	-- Soul Harvester
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20534),	-- Abyss Shard
+						i(20530),	-- Robes of Servitude
+						i(20536),	-- Soul Harvester
 					},
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8425, {	-- Voodoo Feathers
@@ -550,15 +482,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(3, {	-- 0/2 Green Voodoo Feather
 							["provider"] = { "i", 20608 },	-- Green Voodoo Feather
 						}),
-						i(20130, {	-- Diamond Flask
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20517, {	-- Razorsteel Shoulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20521, {	-- Fury Visor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20130),	-- Diamond Flask
+						i(20517),	-- Razorsteel Shoulders
+						i(20521),	-- Fury Visor
 					},
 				})),
 				q(4146, {	-- Zapper Fuel
@@ -607,12 +533,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(5708, {	-- Spawn of Hakkar
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					i(10801, {	-- Slitherscale Boots
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10802, {	-- Wingveil Cloak
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(10801),	-- Slitherscale Boots
+					i(10802),	-- Wingveil Cloak
 				},
 			}),
 			o(148832, {	-- Atal'ai Statue
@@ -626,41 +548,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 148838 },	-- Idol of Hakkar
 						},
 						["coord"] = { 52.6, 45.8, TANARIS },
-						["timeline"] = { REMOVED_4_0_3 },
 						["lvl"] = 46,
 						["groups"] = {
 							i(10773, {	-- Hakkari Urn
-								["timeline"] = { REMOVED_4_0_3 },
 								["groups"] = {
-									i(10781, {	-- Hakkari Breastplate
-										["timeline"] = { REMOVED_4_0_3 },
-									}),
-									i(10782, {	-- Hakkari Shroud
-										["timeline"] = { REMOVED_4_0_3 },
-									}),
-									i(10780, {	-- Mark of Hakkar
-										["timeline"] = { REMOVED_4_0_3 },
-									}),
+									i(10781),	-- Hakkari Breastplate
+									i(10782),	-- Hakkari Shroud
+									i(10780),	-- Mark of Hakkar
 								},
 							}),
 						},
 					}),
 					n(8580, {	-- Atal'alarion
 						["description"] = "Summoned by activating the Atal'ai Statues in the proper order.",
-						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
-							i(22444, {	-- Putrid Vine
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(10799, {	-- Headspike
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(10800, {	-- Darkwater Bracers
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(10798, {	-- Atal'alarion Tusk Ring
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(22444),	-- Putrid Vine
+							i(10799),	-- Headspike
+							i(10800),	-- Darkwater Bracers
+							i(10798),	-- Atal'alarion Tusk Ring
 						},
 					}),
 				},
@@ -676,24 +581,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					i(10783, {	-- Atal'ai Spaulders
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10787, {	-- Atal'ai Gloves
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10784, {	-- Atal'ai Breastplate
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10788, {	-- Atal'ai Girdle
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10785, {	-- Atal'ai Leggings
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(10786, {	-- Atal'ai Boots
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(10783),	-- Atal'ai Spaulders
+					i(10787),	-- Atal'ai Gloves
+					i(10784),	-- Atal'ai Breastplate
+					i(10788),	-- Atal'ai Girdle
+					i(10785),	-- Atal'ai Leggings
+					i(10786),	-- Atal'ai Boots
 				},
 			}),
 			e(457, {	-- Avatar of Hakkar

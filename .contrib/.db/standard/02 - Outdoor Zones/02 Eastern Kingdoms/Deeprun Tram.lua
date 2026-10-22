@@ -41,7 +41,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_8_1_5 },
 					["groups"] = {
 						i(166805, {	-- Blood-Soaked Invitation
-							["timeline"] = { ADDED_8_1_5 },
 							["cost"] = { { "g", 1000000 } },	-- 100g
 						}),
 					},

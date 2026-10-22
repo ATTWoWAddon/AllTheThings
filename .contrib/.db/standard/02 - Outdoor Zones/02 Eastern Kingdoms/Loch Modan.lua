@@ -221,12 +221,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
-						i(2907, {	-- Dwarven Tree Chopper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2908, {	-- Thornblade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2907),	-- Dwarven Tree Chopper
+						i(2908),	-- Thornblade
 					},
 				}),
 				q(26148, {	-- A Decisive Strike
@@ -239,15 +235,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Grawmug slain
 							["provider"] = { "n", 42230 },	-- Grawmug
 						}),
-						i(58989, {	-- Belt of the Valley of Kings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58990, {	-- Rugelfuss Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58988, {	-- Unbound Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58989),	-- Belt of the Valley of Kings
+						i(58990),	-- Rugelfuss Bracers
+						i(58988),	-- Unbound Leggings
 						i(131492, {	-- Waistguard of the Valley of Kings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -266,12 +256,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59004, {	-- Daryl's Bow
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
-						i(2903, {	-- Daryl's Hunting Bow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2904, {	-- Daryl's Hunting Rifle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2903),	-- Daryl's Hunting Bow
+						i(2904),	-- Daryl's Hunting Rifle
 						i(59003, {	-- Daryl's Rifle
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
@@ -291,12 +277,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59000, {	-- Daryl's Axe
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
-						i(3572, {	-- Daryl's Shortsword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(859, {	-- Fine Cloth Shirt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3572),	-- Daryl's Shortsword
+						i(859),	-- Fine Cloth Shirt
 						i(59001, {	-- Ill-Worn Belt
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
@@ -366,9 +348,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["description"] = "Can be found in the outdoor section of Uldaman.",
 						}),
-						i(4980, {	-- Prospector Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4980),	-- Prospector Gloves
 					},
 				}),
 				q(27115, {	-- Ando's Call
@@ -447,9 +427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7870, {	-- Thaumaturgy Vessel Lockbox
 							i(7866),	-- Empty Thaumaturgy Vessel
 						}),
-						r(11452, {	-- Restorative Potion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						r(11452),	-- Restorative Potion
 					},
 				}),
 				q(26147, {	-- Bigger and Uglier
@@ -465,18 +443,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/8 Stonesplinter Bonesnapper slain
 							["provider"] = { "n", 1164 },	-- Stonesplinter Bonesnapper
 						}),
-						i(58995, {	-- Bonesnapper Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58995),	-- Bonesnapper Bracers
 						i(131491, {	-- Bonesnapper Cuffs
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58996, {	-- Mountaineer's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58994, {	-- Trogg-Slayer Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58996),	-- Mountaineer's Belt
+						i(58994),	-- Trogg-Slayer Boots
 					},
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
@@ -515,9 +487,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 54.3, 26.5, LOCH_MODAN },
 						}),
-						i(12522, {	-- Bingles' Flying Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12522),	-- Bingles' Flying Gloves
 						i(58975, {	-- Gnomish All-Purpose Ray Gun
 							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
@@ -593,9 +563,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3678),	-- Recipe: Crocolisk Steak (RECIPE!)
-						i(2240, {	-- Rugged Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2240),	-- Rugged Cape
 						i(59007, {	-- Croc-Scale Gloves
 							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
@@ -693,15 +661,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 271 },	-- Miners' League Crates
 							},
 						}),
-						i(3160, {	-- Ironplate Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3166, {	-- Ironheart Chain
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3161, {	-- Robe of the Keeper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3160),	-- Ironplate Buckler
+						i(3166),	-- Ironheart Chain
+						i(3161),	-- Robe of the Keeper
 					},
 				}),
 				q(26863, {	-- Filthy Paws
@@ -717,15 +679,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 271 },	-- Miners' League Crates
 							},
 						}),
-						i(58978, {	-- Filthy Paw
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58980, {	-- Ironheart Chain Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58979, {	-- Silver Stream Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58978),	-- Filthy Paw
+						i(58980),	-- Ironheart Chain Cloak
+						i(58979),	-- Silver Stream Shield
 					},
 				}),
 				q(738, {	-- Find Agmond
@@ -736,9 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(4982, {	-- Ripped Prospector Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4982),	-- Ripped Prospector Belt
 						-- #if BEFORE 4.0.3
 						i(2776),	-- Gold Ore
 						i(1529),	-- Jade
@@ -779,15 +733,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1165,	-- Stonesplinter Geomancer
 							},
 						}),
-						i(5241, {	-- Dwarven Flamestick
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6186, {	-- Trogg Slicer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3154, {	-- Thelsamar Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5241),	-- Dwarven Flamestick
+						i(6186),	-- Trogg Slicer
+						i(3154),	-- Thelsamar Axe
 					},
 				}),
 				q(26961, {	-- Gathering Idols
@@ -804,15 +752,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1393,	-- Berserk Trogg
 							},
 						}),
-						i(58997, {	-- Carved Stone Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58999, {	-- Thelsamar Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58998, {	-- Trogg Kickers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58997),	-- Carved Stone Mace
+						i(58999),	-- Thelsamar Breastplate
+						i(58998),	-- Trogg Kickers
 						i(131628, {	-- Trogg Stompers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -847,18 +789,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(58993, {	-- Old Dwarven Hammer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58991, {	-- Star Shooter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58993),	-- Old Dwarven Hammer
+						i(58991),	-- Star Shooter
 						i(156932, {	-- Surveyor's Staff
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(58992, {	-- Uncovered Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58992),	-- Uncovered Breastplate
 						i(131300, {	-- Uncovered Chestguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -976,15 +912,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1207 },	-- Brawler
 							["coord"] = { 34.2, 91.6, LOCH_MODAN },
 						}),
-						i(1436, {	-- Frontier Britches
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6187, {	-- Dwarven Defender
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1832, {	-- Lucky Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1436),	-- Frontier Britches
+						i(6187),	-- Dwarven Defender
+						i(1832),	-- Lucky Trousers
 					},
 				}),
 				q(26146, {	-- In Defense of the King's Lands
@@ -1002,15 +932,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131490, {	-- Greaves of Uncanny Courage
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58985, {	-- Leggings of Uncanny Courage
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58986, {	-- Stone Stompers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58984, {	-- Stonesplinter Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58985),	-- Leggings of Uncanny Courage
+						i(58986),	-- Stone Stompers
+						i(58984),	-- Stonesplinter Staff
 					},
 				}),
 				q(436, {	-- Ironband's Excavation
@@ -1208,12 +1132,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(58976, {	-- Rat Ear Cloak
 							["timeline"] = { ADDED_4_0_3, REMOVED_4_0_3 },
 						}),
-						i(3158, {	-- Burnt Hide Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(860, {	-- Cavalier's Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3158),	-- Burnt Hide Bracers
+						i(860),	-- Cavalier's Boots
 					},
 				}),
 				q(26131, {	-- Reinforcements for Loch Modan
@@ -1528,12 +1448,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
-						i(3574, {	-- Hunting Ammo Sack
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3573, {	-- Hunting Quiver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3574),	-- Hunting Ammo Sack
+						i(3573),	-- Hunting Quiver
 					},
 				}),
 				q(27036, {	-- Vyrin's Revenge (1/2)
@@ -1556,15 +1472,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(59010, {	-- Swiftwind Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59008, {	-- Unsanitary Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59009, {	-- Vyrin's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59010),	-- Swiftwind Blade
+						i(59008),	-- Unsanitary Gloves
+						i(59009),	-- Vyrin's Belt
 						i(131633, {	-- Vyrin's Waistband
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1588,15 +1498,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59026, {	-- Bounty Hunter's Bracers
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
-						i(6189, {	-- Durable Chain Shoulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6191, {	-- Kimbra Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1449, {	-- Minor Channeling Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6189),	-- Durable Chain Shoulders
+						i(6191),	-- Kimbra Boots
+						i(1449),	-- Minor Channeling Ring
 						i(59027, {	-- Thelsamar Chainmail
 							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),

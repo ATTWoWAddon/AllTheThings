@@ -90,7 +90,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						objective(1, {	-- 0/1 The Saga of Terokk
 							["provider"] = { "i", 27634 },	-- The Saga of Terokk
 							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
-							["timeline"] = { REMOVED_4_3_0 },
 						}),
 						objective(2, {	-- 0/1 Terokk's Mask
 							["provider"] = { "i", 27633 },	-- Terokk's Mask
@@ -135,16 +134,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						ach(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
-							["timeline"] = { REMOVED_4_0_1 },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
 						}),
 						-- #if BEFORE 4.0.1
 						recipe(40120),	-- Swift Flight Form
 						-- #endif
-						i(32387, {	-- Idol of the Raven Goddess
-							["timeline"] = { REMOVED_4_0_1 },
-						}),
+						i(32387),	-- Idol of the Raven Goddess
 						i(32462, {	-- Morthis' Materials
 							i(32454),	-- Arthorn's Research
 							i(32449),	-- Essence-Infused Moonstone

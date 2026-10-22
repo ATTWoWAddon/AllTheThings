@@ -18,7 +18,6 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 53343,	-- Rune of Razorice
-			["timeline"] = { ADDED_3_0_2 },
 		},
 		{
 			["recipeID"] = 326805,	-- Rune of Sanguination
@@ -50,7 +49,6 @@ applyclassicphase(WRATH_PHASE_ONE, profession(RUNEFORGING, {
 		},
 		{
 			["recipeID"] = 53344,	-- Rune of the Fallen Crusader
-			["timeline"] = { ADDED_3_0_2 },
 		},
 		{
 			["recipeID"] = 70164,	-- Rune of the Nerubian Carapace

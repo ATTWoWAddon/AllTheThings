@@ -352,9 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(20, 20, 1),
 					["groups"] = {
-						i(25464, {	-- Blood-Tempered Ranseur
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(25464),	-- Blood-Tempered Ranseur
 					},
 				}),
 				q(9678, {	-- The First Trial

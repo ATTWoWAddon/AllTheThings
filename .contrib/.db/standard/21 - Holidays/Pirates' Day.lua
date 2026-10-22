@@ -59,9 +59,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["groups"] = {
 					i(138411),	-- Razor-Sharp Shark Tooth (QI!)
 					--
-					i(138414, {	-- Emergency Pirate Outfit
-						["timeline"] = { ADDED_7_0_3 },
-					}),
+					i(138414),	-- Emergency Pirate Outfit
 				},
 			}),
 		}),
@@ -70,9 +68,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["coord"] = { 37.8, 66.2, THE_CAPE_OF_STRANGLETHORN },
 				["timeline"] = { ADDED_7_0_3 },
 				["groups"] = {
-					i(138415, {	-- Slightly-Chewed Insult Book (TOY!)
-						["timeline"] = { ADDED_7_0_3 },
-					}),
+					i(138415),	-- Slightly-Chewed Insult Book (TOY!)
 				},
 			}),
 		}),
@@ -117,7 +113,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PIRATES_DAY, n(PIRATES_DAY_HEADER, {
 				["groups"] = {
 					i(150547, {	-- Jolly Roger (TOY!)
 						["description"] = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
-						["timeline"] = { ADDED_7_2_5 },
 					}),
 				},
 			}),

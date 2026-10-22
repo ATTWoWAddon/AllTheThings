@@ -904,21 +904,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63919, {	-- Corruption-Seeking Chestguard
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63918, {	-- Detective's Shoulderplates
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63920, {	-- Treads of Revelation
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63921, {	-- Truth-Seeker Belt
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63917, {	-- Truthbreaker Shield
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
+						i(63919),	-- Corruption-Seeking Chestguard
+						i(63918),	-- Detective's Shoulderplates
+						i(63920),	-- Treads of Revelation
+						i(63921),	-- Truth-Seeker Belt
+						i(63917),	-- Truthbreaker Shield
 					},
 				}),
 				q(1638, {	-- A Warrior's Training
@@ -1014,9 +1004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["groups"] = {
-						i(2933, {	-- Seal of Wrynn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2933),	-- Seal of Wrynn
 					},
 				}),
 				q(58496, {	-- An Unwelcome Advisor
@@ -1049,7 +1037,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(7645, {	-- Ancient Equine Spirit
 							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
 							["coord"] = { 52.0, 55.6, HILLSBRAD_FOOTHILLS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
 								{ "g", 500000 },	-- 50g
@@ -1131,12 +1118,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["groups"] = {
-						i(9516, {	-- Astral Knot Blouse
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7511, {	-- Astral Knot Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9516),	-- Astral Knot Blouse
+						i(7511),	-- Astral Knot Robe
 					},
 				}),
 				q(1639, {	-- Bartleby the Drunk
@@ -1304,9 +1287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 209242 },	-- Windswept Balloon
 							},
 						}),
-						i(72042, {	-- Alliance Balloon (PET!)
-							["timeline"] = { ADDED_4_2_0 },
-						}),
+						i(72042),	-- Alliance Balloon (PET!)
 					},
 				}),
 				q(344, {	-- Brother Paxton
@@ -1472,9 +1453,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(122661, {	-- S.E.L.F.I.E. Lens Upgrade Kit
 							["timeline"] = { ADDED_6_1_0 },
 							["groups"] = {
-								i(122674, {	-- S.E.L.F.I.E. Camera MkII
-									["timeline"] = { ADDED_6_1_0 },
-								}),
+								i(122674),	-- S.E.L.F.I.E. Camera MkII
 							},
 						}),
 					},
@@ -1487,9 +1466,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
 					["groups"] = {
-						i(128959, {	-- Seal of House Wrynn
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(128959),	-- Seal of House Wrynn
 					},
 				}),
 				q(40593, {	-- Demons Among Us
@@ -1499,15 +1476,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(128959, {	-- Seal of House Wrynn
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(138774, {	-- Accolade of House Wrynn
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(138773, {	-- Favor of House Wrynn
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(128959),	-- Seal of House Wrynn
+						i(138774),	-- Accolade of House Wrynn
+						i(138773),	-- Favor of House Wrynn
 					},
 				}),
 				q(5634, {	-- Desperate Prayer
@@ -1849,9 +1820,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["groups"] = {
-						i(6972, {	-- Fire Hardened Hauberk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6972),	-- Fire Hardened Hauberk
 					},
 				}),
 				q(1685, {	-- Gakin's Summons (Voidwalker)
@@ -1963,30 +1932,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(139914, {	-- 7th Legion Battlemage Amice
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(121760, {	-- 7th Legion Battlemage Wraps
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(139950, {	-- Gryphon Rider's Shoulderpads
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(139955, {	-- Gryphon Rider's Cuffs
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(139976, {	-- Skyfire Engineer's Mantle
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(121762, {	-- Skyfire Engineer's Wristguards
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(121753, {	-- Skyfire Marine's Pauldrons
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(121761, {	-- Skyfire Marine's Vambraces
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(139914),	-- 7th Legion Battlemage Amice
+						i(121760),	-- 7th Legion Battlemage Wraps
+						i(139950),	-- Gryphon Rider's Shoulderpads
+						i(139955),	-- Gryphon Rider's Cuffs
+						i(139976),	-- Skyfire Engineer's Mantle
+						i(121762),	-- Skyfire Engineer's Wristguards
+						i(121753),	-- Skyfire Marine's Pauldrons
+						i(121761),	-- Skyfire Marine's Vambraces
 					},
 				}),
 				q(1700, {	-- Grimand Elmore
@@ -2021,9 +1974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["groups"] = {
-						i(6971, {	-- Fire Hardened Coif
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6971),	-- Fire Hardened Coif
 					},
 				}),
 				q(7648, {	-- Grimand's Finest Work
@@ -2049,9 +2000,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(191865, {	-- Bottle of Briny Seawater (QI!)
-							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
-						}),
+						i(191865),	-- Bottle of Briny Seawater (QI!)
 					},
 				}),
 				q(333, {	-- Harlan Needs a Resupply
@@ -2562,12 +2511,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								766,	-- Tangled Horror
 							},
 						}),
-						i(10747, {	-- Teacher's Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10748, {	-- Wanderlust Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10747),	-- Teacher's Sash
+						i(10748),	-- Wanderlust Boots
 					},
 				}),
 				q(1861, {	-- Mirror Lake
@@ -2621,15 +2566,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63927, {	-- Machine-Linker Girdle
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63926, {	-- Reconstructing Hauberk
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
-						i(63925, {	-- Scavenger Bracers
-							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
-						}),
+						i(63927),	-- Machine-Linker Girdle
+						i(63926),	-- Reconstructing Hauberk
+						i(63925),	-- Scavenger Bracers
 					},
 				}),
 				q(60965, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
@@ -2703,15 +2642,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 							},
 						}),
-						i(16996, {	-- Gorewood Bow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(16997, {	-- Stormrager
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(16998, {	-- Sacred Protector
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16996),	-- Gorewood Bow
+						i(16997),	-- Stormrager
+						i(16998),	-- Sacred Protector
 					},
 				}),
 				q(26192, {	-- Orphans Like Cookies Too!
@@ -3054,9 +2987,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.2, 87.6, ELWYNN_FOREST },
 							["cr"] = 6846,	-- Defias Dockmaster
 						}),
-						i(7298, {	-- Blade of Cunning
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3139,12 +3070,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
-						i(3899, {	-- Legends of the Gurubashi, Volume 3
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2154, {	-- The Story of Morgan Ladimore
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3899),	-- Legends of the Gurubashi, Volume 3
+						i(2154),	-- The Story of Morgan Ladimore
 					},
 				}),
 				q(50371, {	-- Summons to Stormwind
@@ -3270,9 +3197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(713),	-- Summon Incubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				-- #endif
@@ -3298,9 +3223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(712),	-- Summon Succubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				q(1689, {	-- The Binding (Voidwalker) [Stormwind City]
@@ -3617,7 +3540,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 48,
 					["groups"] = {
 						i(228238, {	-- Testament of Divine Steed
-							["timeline"] = { ADDED_1_15_3 },
 							["spellID"] = 461607,	-- Divine Steed
 							["f"] = RECIPES,
 						}),
@@ -3684,7 +3606,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(217274, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
-							["timeline"] = { ADDED_1_15_1 },
 						}),
 					},
 				})),
@@ -3878,7 +3799,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 39.8, 30.8, STORMWIND_CITY },
 								-- #endif
 							},
-							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Symbol of Life
@@ -4056,9 +3976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(5502),	-- Sense Undead
 						-- #endif
-						i(9607, {	-- Bastion of Stormwind
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9607),	-- Bastion of Stormwind
 					},
 				}),
 				q(2607, {	-- The Touch of Zanzil (1/3)
@@ -4143,9 +4061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 							},
 						}),
-						i(8432, {	-- Eau de Mixilpixil
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8432),	-- Eau de Mixilpixil
 					},
 				}),
 				q(26997, {	-- The Usual Suspects
@@ -4200,9 +4116,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(138450, {	-- Signet of Stormwind
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(138450),	-- Signet of Stormwind
 					},
 				}),
 				q(7639, {	-- To Show Due Judgment
@@ -4416,9 +4330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARLOCK },
 					["lvl"] = 25,
 					["groups"] = {
-						i(3556, {	-- Dread Mage Hat
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3556),	-- Dread Mage Hat
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -5030,9 +4942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["cost"] = { { "g", 1900000 } },	-- 190g
 								["timeline"] = { ADDED_11_2_7 },
 							}),
-							i(67531, {	-- Stormwind Satchel
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(67531),	-- Stormwind Satchel
 							i(248620, {	-- Stormwind Trellis and Basin (DECOR!)
 								["cost"] = { { "g", 1900000 } },	-- 190g
 								["timeline"] = { ADDED_11_2_7 },
@@ -5307,9 +5217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(104324, {	-- Foot Ball (TOY!)
 							["timeline"] = { ADDED_5_4_0 },
 						}),
-						applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon Toy (TOY!)
-							["timeline"] = { ADDED_4_1_0 },
-						})),
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69895)),	-- Green Balloon Toy (TOY!)
 						i(48601, {	-- Red Rider Air Rifle Ammo
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -5331,9 +5239,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(45057, {	-- Wind-Up Train Wrecker Toy (TOY!)
 							["timeline"] = { ADDED_3_1_0 },
 						}),
-						applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon Toy (TOY!)
-							["timeline"] = { ADDED_4_1_0 },
-						})),
+						applyevent(EVENTS.CHILDRENS_WEEK, i(69896)),	-- Yellow Balloon Toy (TOY!)
 						i(44481),	-- Grindgear Toy Gorilla
 						i(44601),	-- Heavy Copper Racer
 						i(34498),	-- Paper Zeppelin Kit (3.0.2.8962)
@@ -5377,30 +5283,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(67396, {	-- "Carriage - Christina" Precious Metal Bag
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67389, {	-- "Carriage - Exclusive" Enchanting Evening Purse
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67392, {	-- "Carriage - Exclusive" Gem Studded Clutch
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67393, {	-- "Carriage - Going Green" Herb Tote Bag
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67390, {	-- "Carriage - Maddy" High Tech Bag
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67395, {	-- "Carriage - Meeya" Leather Bag
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67394, {	-- "Carriage - Xandera" Student's Satchel
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(67387, {	-- "Carriage" Signature Bag
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(67396),	-- "Carriage - Christina" Precious Metal Bag
+						i(67389),	-- "Carriage - Exclusive" Enchanting Evening Purse
+						i(67392),	-- "Carriage - Exclusive" Gem Studded Clutch
+						i(67393),	-- "Carriage - Going Green" Herb Tote Bag
+						i(67390),	-- "Carriage - Maddy" High Tech Bag
+						i(67395),	-- "Carriage - Meeya" Leather Bag
+						i(67394),	-- "Carriage - Xandera" Student's Satchel
+						i(67387),	-- "Carriage" Signature Bag
 					},
 				}),
 				n(1314, {	-- Duncan Cullen <Light Armor Merchant>
@@ -6668,7 +6558,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(38579, {	-- Venomous Tome
-							["timeline"] = { ADDED_3_0_2 },
 							["isLimited"] = true,
 						}),
 					},
@@ -6803,99 +6692,75 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(87795, {	-- Black Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91008, {	-- Black Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87796, {	-- Blue Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91009, {	-- Blue Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87797, {	-- Brown Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91005, {	-- Brown Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87802, {	-- Great Black Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91011, {	-- Great Black Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87803, {	-- Great Blue Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91013, {	-- Great Blue Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87804, {	-- Great Brown Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91014, {	-- Great Brown Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87801, {	-- Great Green Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91012, {	-- Great Green Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87805, {	-- Great Purple Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91015, {	-- Great Purple Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(82811, {	-- Great Red Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91010, {	-- Great Red Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(82765, {	-- Green Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91004, {	-- Green Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87799, {	-- Purple Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91006, {	-- Purple Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87800, {	-- Red Dragon Turtle (MOUNT!) (NON-P)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 						}),
 						i(91007, {	-- Red Dragon Turtle (MOUNT!) (PANDA)
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 					},
@@ -7267,7 +7132,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(226500),	-- Chipped Drakefire Amulet
 						i(228222, {	-- Handbook of Valor of Azeroth
-							["timeline"] = { ADDED_1_15_3 },
 							["spellID"] = 461475,	-- Valor of Azeroth
 							["f"] = RECIPES,
 						}),

@@ -114,12 +114,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
-					i(15858, {	-- Freewind Gloves
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15859, {	-- Seapost Girdle
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15858),	-- Freewind Gloves
+					i(15859),	-- Seapost Girdle
 				},
 			}),
 			q(7761, {	-- Blackhand's Command
@@ -166,9 +162,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Blood of the Black Dragon Champion
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
-					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(16309),	-- Drakefire Amulet
 				},
 			}),
 			q(5068, {	-- Breastplate of Bloodthirst
@@ -187,9 +181,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["repeatable"] = true,
 				["lvl"] = 57,
 				["groups"] = {
-					i(12757, {	-- Breastplate of Bloodthirst
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12757),	-- Breastplate of Bloodthirst
 				},
 			}),
 			q(5166, {	-- Breastplate of the Chromatic Flight
@@ -206,9 +198,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["lvl"] = 57,
 				["groups"] = {
-					i(12895, {	-- Breastplate of the Chromatic Flight
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12895),	-- Breastplate of the Chromatic Flight
 				},
 			}),
 			q(5063, {	-- Cap of the Scarlet Savant
@@ -227,9 +217,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["repeatable"] = true,
 				["lvl"] = 57,
 				["groups"] = {
-					i(12752, {	-- Cap of the Scarlet Savant
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12752),	-- Cap of the Scarlet Savant
 				},
 			}),
 			q(5164, {	-- Catalogue of the Wayward
@@ -246,12 +234,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["timeline"] = { REMOVED_4_0_3 },
 				["lvl"] = 40,
 				["groups"] = {
-					i(20218, {	-- Faded Hakkari Cloak
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(20219, {	-- Tattered Hakkari Cape
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(20218),	-- Faded Hakkari Cloak
+					i(20219),	-- Tattered Hakkari Cape
 				},
 			}),
 			q(4765, {	-- Delivery to Ridgewell
@@ -263,12 +247,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 57,
 				["groups"] = {
-					i(15860, {	-- Blinkstrike Armguards
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15861, {	-- Swiftfoot Treads
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15860),	-- Blinkstrike Armguards
+					i(15861),	-- Swiftfoot Treads
 				},
 			}),
 			q(4764, {	-- Doomrigger's Clasp
@@ -305,9 +285,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Blood of the Black Dragon Champion
 						["provider"] = { "i", 16663 },	-- Blood of the Black Dragon Champion
 					}),
-					i(16309, {	-- Drakefire Amulet
-						["timeline"] = { REMOVED_3_0_2 },
-					}),
+					i(16309),	-- Drakefire Amulet
 				},
 			}),
 			q(4735, {	-- Egg Collection
@@ -346,7 +324,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if BEFORE 4.0.3
 						["description"] = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
 						-- #endif
-						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -375,9 +352,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["races"] = HORDE_ONLY,
 				["lvl"] = 55,
 				["groups"] = {
-					i(16787, {	-- Amulet of Draconic Subversion
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(16787),	-- Amulet of Draconic Subversion
 				},
 			}),
 			q(4862, {	-- En-Ay-Es-Tee-Why
@@ -393,9 +368,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 						["description"] = "Interacting with a spider egg may spawn baby spiders, beware!",
 					}),
-					i(12529, {	-- Smolderweb Hatchling (PET!)
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12529),	-- Smolderweb Hatchling (PET!)
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -430,12 +403,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
-					i(227909, {	-- Plans: Fiery Plate Gauntlets of the Hidden Technique (RECIPE!)
-						["timeline"] = { ADDED_1_15_3 },
-					}),
-					i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
-						["timeline"] = { ADDED_1_15_3 },
-					}),
+					i(227909),	-- Plans: Fiery Plate Gauntlets of the Hidden Technique (RECIPE!)
+					i(227865),	-- Fiery Plate Gauntlets of the Hidden Technique
 				},
 			})),
 			-- #endif
@@ -464,24 +433,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				["lvl"] = 55,
 				["groups"] = {
-					i(12699, {	-- Plans: Fiery Plate Gauntlets (RECIPE!)
-						["timeline"] = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
-							REMOVED_4_0_3,
-							-- #endif
-						},
-					}),
-					i(12631, {	-- Fiery Plate Gauntlets
-						["timeline"] = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
-							REMOVED_4_0_3,
-							-- #endif
-						},
-					}),
+					i(12699),	-- Plans: Fiery Plate Gauntlets (RECIPE!)
+					i(12631),	-- Fiery Plate Gauntlets
 				},
 			}),
 			q(4974, {	-- For The Horde!
@@ -495,15 +448,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Head of Rend Blackhand
 						["provider"] = { "i", 12630 },	-- Head of Rend Blackhand
 					}),
-					i(13965, {	-- Blackhand's Breadth
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13968, {	-- Eye of the Beast
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13966, {	-- Mark of Tyranny
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(13965),	-- Blackhand's Breadth
+					i(13968),	-- Eye of the Beast
+					i(13966),	-- Mark of Tyranny
 				},
 			}),
 			q(27469, {	-- Friends on The Other Side [NOTE: Also available to Alliance, despite being in the Horde camp!]
@@ -530,15 +477,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 General Drakkisath slain
 						["provider"] = { "n", 10363 },	-- General Drakkisath
 					}),
-					i(13965, {	-- Blackhand's Breadth
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13968, {	-- Eye of the Beast
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13966, {	-- Mark of Tyranny
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(13965),	-- Blackhand's Breadth
+					i(13968),	-- Eye of the Beast
+					i(13966),	-- Mark of Tyranny
 				},
 			}),
 			q(27445, {	-- General Drakkisath, Hand of Nefarian
@@ -554,18 +495,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 General Drakkisath slain
 						["provider"] = { "n", 10363 },	-- General Drakkisath
 					}),
-					i(66001, {	-- Aeyla's Staff
-						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					}),
-					i(65934, {	-- Staff of the Second Orb
-						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					}),
-					i(65982, {	-- Sword of Nefarian's Hand
-						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					}),
-					i(65958, {	-- Vaelan's Claw
-						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					}),
+					i(66001),	-- Aeyla's Staff
+					i(65934),	-- Staff of the Second Orb
+					i(65982),	-- Sword of Nefarian's Hand
+					i(65958),	-- Vaelan's Claw
 				},
 			}),
 			q(5103, {	-- Hot Fiery Death
@@ -582,7 +515,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["groups"] = {
 					i(12812, {	-- Unfired Plate Gauntlets
 						["provider"] = { "o", 176089 },	-- Unfired Plate Gauntlets
-						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -617,9 +549,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["repeatable"] = true,
 				["lvl"] = 57,
 				["groups"] = {
-					i(12756, {	-- Leggings of Arcana
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12756),	-- Leggings of Arcana
 				},
 			}),
 			q(5167, {	-- Legplates of the Chromatic Defier
@@ -636,12 +566,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				["lvl"] = 57,
 				["groups"] = {
-					i(12903, {	-- Legguards of the Chromatic Defier
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(12945, {	-- Legplates of the Chromatic Defier
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12903),	-- Legguards of the Chromatic Defier
+					i(12945),	-- Legplates of the Chromatic Defier
 				},
 			}),
 			q(5126, {	-- Lorax's Tale
@@ -671,21 +597,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
-					i(13961, {	-- Halycon's Muzzle
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13958, {	-- Wyrmthalak's Shackles
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13963, {	-- Voone's Vice Grips
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13959, {	-- Omokk's Girth Restrainer
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13962, {	-- Vosh'gajin's Strand
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(13961),	-- Halycon's Muzzle
+					i(13958),	-- Wyrmthalak's Shackles
+					i(13963),	-- Voone's Vice Grips
+					i(13959),	-- Omokk's Girth Restrainer
+					i(13962),	-- Vosh'gajin's Strand
 				},
 			}),
 			q(4766, {	-- Mayara Brightwing
@@ -719,9 +635,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- Milked
 						["provider"] = { "n", 10596 },	-- Mother Smolderweb
 					}),
-					i(15873, {	-- Ragged John's Neverending Cup
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15873),	-- Ragged John's Neverending Cup
 				},
 			}),
 			q(6569, {	-- Oculus Illusions
@@ -765,15 +679,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Halycon slain
 						["provider"] = { "n", 10220 },	-- Halycon
 					}),
-					i(15824, {	-- Astoria Robes
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15827, {	-- Jadescale Breastplate
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15825, {	-- Traphook Jerkin
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15824),	-- Astoria Robes
+					i(15827),	-- Jadescale Breastplate
+					i(15825),	-- Traphook Jerkin
 				},
 			}),
 			q(4742, {	-- Seal of Ascension (1/2)
@@ -820,7 +728,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #if BEFORE 3.0.8
 						["description"] = "This item must be in your bags to open the door to UBRS.",
 						-- #endif
-						["timeline"] = { REMOVED_4_0_3 },
 					}),
 				},
 			}),
@@ -846,12 +753,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							{ "i",  12358 },	-- Darkstone Tablet
 						},
 					}),
-					i(15860, {	-- Blinkstrike Armguards
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15861, {	-- Swiftfoot Treads
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15860),	-- Blinkstrike Armguards
+					i(15861),	-- Swiftfoot Treads
 					o(175385, {	-- Darkstone Tablet
 						-- #if BEFORE 4.0.3
 						["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
@@ -884,13 +787,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(2, {	-- 0/1 Unforged Rune Covered Breastplate
 						["provider"] = { "i", 12806 },	-- Unforged Rune Covered Breastplate
 					}),
-					i(12696, {	-- Plans: Demon Forged Breastplate (RECIPE!)
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12696),	-- Plans: Demon Forged Breastplate (RECIPE!)
 					i(9224),	-- Elixir of Demonslaying
-					i(12849, {	-- Demon Kissed Sack
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(12849),	-- Demon Kissed Sack
 				},
 			}),
 			q(27444, {	-- The False Warchief
@@ -998,15 +897,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Halycon slain
 						["provider"] = { "n", 10220 },	-- Halycon
 					}),
-					i(15824, {	-- Astoria Robes
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15827, {	-- Jadescale Breastplate
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(15825, {	-- Traphook Jerkin
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15824),	-- Astoria Robes
+					i(15827),	-- Jadescale Breastplate
+					i(15825),	-- Traphook Jerkin
 				},
 			}),
 			q(6585, {	-- The Test of Skulls, Axtroz
@@ -1145,18 +1038,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(3, {	-- 0/1 Overlord Wyrmthalak slain
 						["provider"] = { "n", 9568 },	-- Overlord Wyrmthalak
 					}),
-					i(66000, {	-- Band of the Spire
-						["timeline"] = { ADDED_4_0_3 },
-					}),
-					i(65933, {	-- Highlord's Chestpiece
-						["timeline"] = { ADDED_4_0_3 },
-					}),
-					i(65957, {	-- Overlord's Legplates
-						["timeline"] = { ADDED_4_0_3 },
-					}),
-					i(65981, {	-- War Master's Pauldrons
-						["timeline"] = { ADDED_4_0_3 },
-					}),
+					i(66000),	-- Band of the Spire
+					i(65933),	-- Highlord's Chestpiece
+					i(65957),	-- Overlord's Legplates
+					i(65981),	-- War Master's Pauldrons
 				},
 			}),
 			q(4867, {	-- Urok Doomhowl
@@ -1168,9 +1053,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Warosh's Mojo
 						["provider"] = { "i", 12712 },	-- Warosh's Mojo
 					}),
-					i(15867, {	-- Prismcharm
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(15867),	-- Prismcharm
 				},
 			}),
 			q(4769, {	-- Vivian Lagrave and the Darkstone Tablet
@@ -1208,21 +1091,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						},
 						["description"] = "On the ground next to Overlord Wyrmthalak.",
 					}),
-					i(13961, {	-- Halycon's Muzzle
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13958, {	-- Wyrmthalak's Shackles
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13963, {	-- Voone's Vice Grips
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13959, {	-- Omokk's Girth Restrainer
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(13962, {	-- Vosh'gajin's Strand
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(13961),	-- Halycon's Muzzle
+					i(13958),	-- Wyrmthalak's Shackles
+					i(13963),	-- Voone's Vice Grips
+					i(13959),	-- Omokk's Girth Restrainer
+					i(13962),	-- Vosh'gajin's Strand
 				},
 			}),
 			q(6566, {	-- What the Wind Carries
@@ -2351,9 +2224,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12905, {	-- Wildfire Cape
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12905),	-- Wildfire Cape
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228583, {	-- Truestrike Shoulders
 							["timeline"] = { ADDED_1_15_3 },
@@ -2382,9 +2253,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12926, {	-- Flaming Band
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12926),	-- Flaming Band
 						applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
@@ -2408,9 +2277,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						i(18657, {	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(18657),	-- Schematic: Hyper-Radiant Flame Reflector (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(226741, {	-- Devout Mantle
 							["timeline"] = { ADDED_1_15_3 },
@@ -2425,12 +2292,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12603, {	-- Nightbrace Tunic
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(12609, {	-- Polychromatic Visionwrap
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12603),	-- Nightbrace Tunic
+						i(12609),	-- Polychromatic Visionwrap
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228579, {	-- Crystallized Girdle
 							["timeline"] = { ADDED_1_15_3 },
@@ -2469,9 +2332,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						i(12605, {	-- Serpentine Skuller
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12605),	-- Serpentine Skuller
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228566, {	-- Starfire Tiara
 							["timeline"] = { ADDED_1_15_3 },
@@ -2486,9 +2347,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12930, {	-- Briarwood Reed
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12930),	-- Briarwood Reed
 					},
 				}),
 				n(10899, {	-- Goraluk Anvilcrack
@@ -2504,23 +2363,15 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["provider"] = { "o", 175970 },	-- Unforged Runic Breastplate
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12834),	-- Plans: Arcanite Champion (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
 							["timeline"] = { ADDED_1_15_3 },
 						})),
 						-- #endif
-						i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(18048, {	-- Mastersmith's Hammer
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
+						i(12837),	-- Plans: Masterwork Stormhammer (RECIPE!)
+						i(18048),	-- Mastersmith's Hammer
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228672, {	-- Handcrafted Mastersmith Girdle
 							["timeline"] = { ADDED_1_15_3 },
@@ -2535,9 +2386,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(13498, {	-- Handcrafted Mastersmith Leggings
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(13498),	-- Handcrafted Mastersmith Leggings
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228602, {	-- Flame Walkers
 							["timeline"] = { ADDED_1_15_3 },
@@ -2560,21 +2409,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(13522, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },
 						}),
-						i(12871, {	-- Chromatic Carapace
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(12953, {	-- Dragoneye Coif
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						applyclassicphase(PHASE_FIVE, i(22225, {	-- Dragonskin Cowl
-							["timeline"] = { REMOVED_6_0_2 },
-						})),
-						i(12952, {	-- Gyth's Skull
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(12960, {	-- Tribal War Feathers
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12871),	-- Chromatic Carapace
+						i(12953),	-- Dragoneye Coif
+						applyclassicphase(PHASE_FIVE, i(22225)),	-- Dragonskin Cowl
+						i(12952),	-- Gyth's Skull
+						i(12960),	-- Tribal War Feathers
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(226753, {	-- Pauldrons of Elements
 							["timeline"] = { ADDED_1_15_3 },
@@ -2748,12 +2587,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(18102, {	-- Dragonrider Boots
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						applyclassicphase(PHASE_FIVE, i(22247, {	-- Faith Healer's Boots
-							["timeline"] = { REMOVED_6_0_2 },
-						})),
+						i(18102),	-- Dragonrider Boots
+						applyclassicphase(PHASE_FIVE, i(22247)),	-- Faith Healer's Boots
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228675, {	-- Band of Rumination
 							["timeline"] = { ADDED_1_15_3 },
@@ -2781,9 +2616,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["rank"] = 5,
 							-- #endif
 						})),
-						i(12709, {	-- Pip's Skinner
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12709),	-- Pip's Skinner
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228666, {	-- Seeping Willow
 							["timeline"] = { ADDED_1_15_3 },
@@ -2868,9 +2701,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12965, {	-- Spiritshroud Leggings
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(12965),	-- Spiritshroud Leggings
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228661, {	-- Tristam Legguards
 							["timeline"] = { ADDED_1_15_3 },
@@ -2911,9 +2742,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							},
 							-- #endif
 							["groups"] = {
-								i(12731, {	-- Pristine Hide of the Beast
-									["timeline"] = { REMOVED_6_0_2 },
-								}),
+								i(12731),	-- Pristine Hide of the Beast
 							},
 						}),
 					},
@@ -2987,18 +2816,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10363, {	-- General Drakkisath
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						ach(1307, {	-- Upper Blackrock Spire
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						ach(1307),	-- Upper Blackrock Spire
 						i(16663, {	-- Blood of the Black Dragon Champion
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(15730, {	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(13519, {	-- Recipe: Flask of the Titans (RECIPE!)
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(15730),	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
+						i(13519),	-- Recipe: Flask of the Titans (RECIPE!)
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228606, {	-- Blackblade of Shahram
 							["timeline"] = { ADDED_1_15_3 },
@@ -3013,12 +2836,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						i(12602, {	-- Draconian Deflector
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						applyclassicphase(PHASE_FIVE, i(22253, {	-- Tome of the Lost
-							["timeline"] = { REMOVED_6_0_2 },
-						})),
+						i(12602),	-- Draconian Deflector
+						applyclassicphase(PHASE_FIVE, i(22253)),	-- Tome of the Lost
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228677, {	-- Spellweaver's Turban
 							["timeline"] = { ADDED_1_15_3 },
@@ -3173,9 +2992,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 								-- #endif
 							},
 						}),
-						applyclassicphase(PHASE_FIVE, i(22269, {	-- Shadow Prowler's Cloak
-							["timeline"] = { REMOVED_6_0_2 },
-						})),
+						applyclassicphase(PHASE_FIVE, i(22269)),	-- Shadow Prowler's Cloak
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228670, {	-- Brigam Girdle
 							["timeline"] = { ADDED_1_15_3 },

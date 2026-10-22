@@ -3463,7 +3463,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			q(83936, {	-- A Lesson in Violence
 				["qg"] = 227673,	-- <Player>'s Squire (Rank 1)
 				["sourceQuest"] = 84416,	-- Inspiration Rank One HQT
-				["timeline"] = { ADDED_1_15_3 },
 				["classes"] = { PALADIN },
 				["lvl"] = 50,
 				["groups"] = {
@@ -3490,7 +3489,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			q(84008, {	-- A Lesson in Grace
 				["qg"] = 227464,	-- <Player>'s Squire (Rank 2)
 				["sourceQuest"] = 84417,	-- Inspiration Rank Two HQT
-				["timeline"] = { ADDED_1_15_3 },
 				["classes"] = { PALADIN },
 				["lvl"] = 50,
 				["groups"] = {
@@ -3500,7 +3498,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 			q(84017, {	-- A Time to Kill
 				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
 				["sourceQuest"] = 84008,	-- A Lesson in Grace
-				["timeline"] = { ADDED_1_15_3 },
 				["maps"] = { EASTERN_PLAGUELANDS },
 				["classes"] = { PALADIN },
 				["lvl"] = 50,
@@ -3515,7 +3512,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
 				["sourceQuest"] = 84017,	-- A Time to Kill
 				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				["timeline"] = { ADDED_1_15_3 },
 				["classes"] = { PALADIN },
 				["lvl"] = 50,
 				["groups"] = {
@@ -3533,7 +3529,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, bubbleDown({ ["ti
 				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
 				["sourceQuest"] = 84125,	-- Close Enough To Touch
 				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
-				["timeline"] = { ADDED_1_15_3 },
 				["classes"] = { PALADIN },
 				["lvl"] = 50,
 				["groups"] = {

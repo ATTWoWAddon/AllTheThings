@@ -194,9 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 21268,	-- Netherstrand Longbow
 						["groups"] = {
-							i(30319, {	-- Nether Spike
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
+							i(30319),	-- Nether Spike
 						},
 					}),
 					legendary(30317, 21270),	-- Cosmic Infuser

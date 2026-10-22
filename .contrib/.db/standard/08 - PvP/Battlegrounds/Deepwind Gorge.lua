@@ -26,9 +26,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					}},
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 					["groups"] = {
-						title(229, {	-- Gorgeous
-							["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
-						}),
+						title(229),	-- Gorgeous
 					},
 				}),
 				ach(14175, {	-- Master of Deepwind Gorge
@@ -75,7 +73,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["description"] = "Post-rework, this is only obtainable in the Deepwind Dunk brawl.",
 					-- #endif
 					["maps"] = { 935 },	-- Deepwind Dunk
-					["timeline"] = { ADDED_5_3_0 },
 				}),
 				ach(8355, {		-- Weighed Down
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },

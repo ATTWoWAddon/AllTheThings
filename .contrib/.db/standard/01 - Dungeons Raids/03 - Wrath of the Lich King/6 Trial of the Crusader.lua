@@ -129,9 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				ach(4078, {	-- Realm First! Grand Crusader
 					["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
 					["groups"] = {
-						title(135, {	-- Grand Crusader <Name>
-							["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
-						}),
+						title(135),	-- Grand Crusader <Name>
 					},
 				}),
 			}),

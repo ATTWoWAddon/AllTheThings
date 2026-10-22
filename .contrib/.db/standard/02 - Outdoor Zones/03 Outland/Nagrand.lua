@@ -242,7 +242,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31924, {	-- Narrok
 								["sourceAchievement"] = 6604,	-- Taming Outland
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -2069,26 +2068,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.6, 22.1, NAGRAND },
 						["groups"] = {
 							i(136934, {	-- Raging Elemental Stone (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(136935, {	-- Tadpole Cloudseeder (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(141059, {	-- Technique: Glyph of Flickering (RECIPE!)
-								["timeline"] = { ADDED_7_0_3 },
 								["requireSkill"] = INSCRIPTION,
 							}),
-							i(136938, {	-- Tome of Hex: Compy (CI!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
+							i(136938),	-- Tome of Hex: Compy (CI!)
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(138490, {	-- Waterspeaker's Totem (TOY!)
-								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 						},

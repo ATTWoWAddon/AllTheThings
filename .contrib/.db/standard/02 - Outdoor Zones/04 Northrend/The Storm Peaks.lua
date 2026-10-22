@@ -350,7 +350,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(44767, {	-- A Celestial Invitation
 								["provider"] = { "i", 142210 },	-- Celestial Invitation
-								["timeline"] = { ADDED_7_1_0 },
 								["groups"] = {
 									i(142100),	-- Stardust (PET!)
 								},

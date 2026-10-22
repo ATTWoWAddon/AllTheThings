@@ -169,9 +169,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 46.4, 84.6, SILVERPINE_FOREST },
 							["cr"] = 2332,	-- Valdred Moray
 						}),
-						i(3235, {	-- Ring of Scorn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3235),	-- Ring of Scorn
 					},
 				}),
 				q(447, {	-- A Recipe For Death (1/3)
@@ -252,12 +250,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1768,	-- Vile Fin Tidehunter
 							},
 						}),
-						i(3451, {	-- Nightglow Concoction
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3582, {	-- Acidproof Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3451),	-- Nightglow Concoction
+						i(3582),	-- Acidproof Cloak
 						-- #if BEFORE 4.0.3
 						i(2458),	-- Elixir of Minor Fortitude
 						i(2459),	-- Swiftness Potion
@@ -279,15 +273,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Inconspicuous Bear slain
 							["provider"] = { "n", 45750 },	-- Inconspicuous Bear
 						}),
-						i(62885, {	-- Unmistakable Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62883, {	-- Inconspicuous Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62884, {	-- "Bear" Hide Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62885),	-- Unmistakable Gloves
+						i(62883),	-- Inconspicuous Pantaloons
+						i(62884),	-- "Bear" Hide Boots
 						i(131678, {	-- Inconspicuous Footguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -401,15 +389,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1891,	-- Pyrewood Watcher
 							},
 						}),
-						i(3586, {	-- Logsplitter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3570, {	-- Bonegrinding Pestle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5242, {	-- Cinder Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3586),	-- Logsplitter
+						i(3570),	-- Bonegrinding Pestle
+						i(5242),	-- Cinder Wand
 					},
 				}),
 				q(442, {	-- Assault on Fenris Isle
@@ -425,12 +407,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 65.6, 24.6, SILVERPINE_FOREST },
 							["cr"] = 1947,	-- Thule Ravenclaw
 						}),
-						i(3461, {	-- High Robe of the Adjudicator
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3462, {	-- Talonstrike
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3461),	-- High Robe of the Adjudicator
+						i(3462),	-- Talonstrike
 					},
 				}),
 				q(27056, {	-- Belmont's Report
@@ -453,9 +431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/6 Ravenclaw Guardian slain
 							["provider"] = { "n", 1973 },	-- Ravenclaw Guardian
 						}),
-						i(5252, {	-- Wand of Decay
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5252),	-- Wand of Decay
 					},
 				}),
 				q(477, {	-- Border Crossings
@@ -490,18 +466,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62897, {	-- Bracers of the Most Trusted
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62897),	-- Bracers of the Most Trusted
 						i(131680, {	-- Belt of Absolute Allegiance
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62896, {	-- Belt of Beginnings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62895, {	-- Slippers of Unturned Loyalties
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62896),	-- Belt of Beginnings
+						i(62895),	-- Slippers of Unturned Loyalties
 					},
 				}),
 				q(27194, {	-- Cornered and Crushed!
@@ -558,18 +528,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Skitterweb Matriarch slain
 							["provider"] = { "n", 44906 },	-- Skitterweb Matriarch
 						}),
-						i(62850, {	-- Drunken Style Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62850),	-- Drunken Style Bracers
 						i(131640, {	-- Rear Guard Bands
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62851, {	-- Rear Guard Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62849, {	-- Skitterweb Glovelettes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62851),	-- Rear Guard Britches
+						i(62849),	-- Skitterweb Glovelettes
 					},
 				}),
 				q(27746, {	-- Empire of Dirt
@@ -586,9 +550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(3455, {	-- Deathstalker Shortsword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3455),	-- Deathstalker Shortsword
 					},
 				}),
 				q(27181, {	-- Excising the Taint
@@ -626,15 +588,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131679, {	-- Better, Stronger, Faster Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62887, {	-- Bracers of the Million Gold Man
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62888, {	-- Leg Bone Covers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62886, {	-- Vest of Forsaken Necromancy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62887),	-- Bracers of the Million Gold Man
+						i(62888),	-- Leg Bone Covers
+						i(62886),	-- Vest of Forsaken Necromancy
 					},
 				}),
 				q(27073, {	-- Give 'em Hell!
@@ -678,18 +634,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/8 Orc Sea Dog roused
 							["provider"] = { "n", 45196 },	-- Orc Sea Dog
 						}),
-						i(62846, {	-- Ale-Soaked Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62846),	-- Ale-Soaked Robes
 						i(131660, {	-- Cord of the Sepulcher
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62847, {	-- Sea Dog Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62848, {	-- Treads of the Sepulcher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62847),	-- Sea Dog Belt
+						i(62848),	-- Treads of the Sepulcher
 					},
 				}),
 				q(27180, {	-- Honor the Dead
@@ -731,15 +681,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131629, {	-- Maggot-Ridden Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62835, {	-- Maggot-Ridden Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62836, {	-- Muckdweller Spear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62834, {	-- T'veen's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62835),	-- Maggot-Ridden Leggings
+						i(62836),	-- Muckdweller Spear
+						i(62834),	-- T'veen's Cloak
 					},
 				}),
 				q(27088, {	-- It's Only Poisonous if You Ingest It
@@ -752,15 +696,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Forest Ettin slain
 							["provider"] = { "n", 44367 },	-- Forest Ettin
 						}),
-						i(62843, {	-- Bush Chicken Remote Injector
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62845, {	-- Chicken Stuffers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62844, {	-- Suppository Preventors
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62843),	-- Bush Chicken Remote Injector
+						i(62845),	-- Chicken Stuffers
+						i(62844),	-- Suppository Preventors
 					},
 				}),
 				q(425, {	-- Ivar the Foul
@@ -776,12 +714,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 51.8, 13.8, SILVERPINE_FOREST },
 							["cr"] = 1971,	-- Ivar the Foul
 						}),
-						i(3453, {	-- Quilted Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3583, {	-- Weathered Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3453),	-- Quilted Bracers
+						i(3583),	-- Weathered Belt
 					},
 				}),
 				q(493, {	-- Journey to Hillsbrad Foothills
@@ -860,15 +794,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62858, {	-- Flesh and Bone
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62857, {	-- Staff of the Formidable Opponent
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62859, {	-- Sword of Insurgence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62858),	-- Flesh and Bone
+						i(62857),	-- Staff of the Formidable Opponent
+						i(62859),	-- Sword of Insurgence
 					},
 				}),
 				q(27195, {	-- Nowhere to Run
@@ -878,18 +806,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62855, {	-- Britches of Desperate Measures
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62854, {	-- Mace of Calculated Loss
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62855),	-- Britches of Desperate Measures
+						i(62854),	-- Mace of Calculated Loss
 						i(131652, {	-- Trousers of Desperate Measures
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62856, {	-- Underestimated Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62856),	-- Underestimated Crossbow
 					},
 				}),
 				q(27547, {	-- Of No Consequence
@@ -914,15 +836,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62894, {	-- Favor of the Dark Lady
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62893, {	-- Lorna's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62892, {	-- Windrunner Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62894),	-- Favor of the Dark Lady
+						i(62893),	-- Lorna's Signet
+						i(62892),	-- Windrunner Band
 					},
 				}),
 				q(27484, {	-- Only One May Enter
@@ -978,18 +894,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 45734},	-- Relios the Relic Keeper
 							},
 						}),
-						i(62880, {	-- Axe of Practical Vengeance
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62881, {	-- Dawnweaver's Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62882, {	-- Edge of Unlifted Burdens
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62879, {	-- Psychopathic Hatchet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62880),	-- Axe of Practical Vengeance
+						i(62881),	-- Dawnweaver's Dagger
+						i(62882),	-- Edge of Unlifted Burdens
+						i(62879),	-- Psychopathic Hatchet
 					},
 				}),
 				q(421, {	-- Prove Your Worth
@@ -1011,15 +919,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
-						i(3450, {	-- Faerleia's Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2818, {	-- Stretched Leather Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3449, {	-- Mystic Shawl
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3450),	-- Faerleia's Shield
+						i(2818),	-- Stretched Leather Trousers
+						i(3449),	-- Mystic Shawl
 					},
 				}),
 				q(27550, {	-- Pyrewood's Fall
@@ -1065,18 +967,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 61312 },	-- Dalaran Archmage's Signet Ring
 							["cr"] = 45734,	-- Relios the Relic Keeper
 						}),
-						i(62875, {	-- Betrayal's Sting
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62878, {	-- Codex Breaker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62877, {	-- Forsaken Ball
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62876, {	-- Relios's Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62875),	-- Betrayal's Sting
+						i(62878),	-- Codex Breaker
+						i(62877),	-- Forsaken Ball
+						i(62876),	-- Relios's Mace
 					},
 				}),
 				q(448, {	-- Report to Hadrec
@@ -1240,15 +1134,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62841, {	-- Bloodfang Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62840, {	-- Sober Pup Wristbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62842, {	-- Steel Thunder Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62841),	-- Bloodfang Vest
+						i(62840),	-- Sober Pup Wristbands
+						i(62842),	-- Steel Thunder Belt
 						i(131636, {	-- Steel Thunder Chestbrace
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1282,9 +1170,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 45.8, 20.4, SILVERPINE_FOREST },
 							["cr"] = 1983,	-- Nightlash
 						}),
-						i(3454, {	-- Reconnaissance Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3454),	-- Reconnaissance Boots
 					},
 				}),
 				q(449, {	-- The Deathstalkers' Report
@@ -1323,15 +1209,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Worgen Renegade slain
 							["provider"] = { "n", 44793 },	-- Worgen Renegade
 						}),
-						i(62839, {	-- Nubly Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62837, {	-- Nubish Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62838, {	-- Nub's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62839),	-- Nubly Bracers
+						i(62837),	-- Nubish Cloak
+						i(62838),	-- Nub's Wand
 					},
 				}),
 				q(461, {	-- The Hidden Niche
@@ -1372,12 +1252,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/50 Hillsbrad Worgen slain
 							["provider"] = { "n", 45270 },	-- Hillsbrad Worgen
 						}),
-						i(62853, {	-- Blood Offering Platter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62852, {	-- Sabots of Red Waters
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62853),	-- Blood Offering Platter
+						i(62852),	-- Sabots of Red Waters
 						i(131661, {	-- Treads of Red Waters
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1401,12 +1277,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 63.6, 64.0, SILVERPINE_FOREST },
 							["cr"] = 2120,	-- Archmage Ataeric
 						}),
-						i(3452, {	-- Ceranium Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3585, {	-- Camouflaged Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3452),	-- Ceranium Rod
+						i(3585),	-- Camouflaged Tunic
 					},
 				}),
 				q(446, {	-- Thule Ravenclaw
@@ -1418,9 +1290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(3251, {	-- Bethor's Potion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3251),	-- Bethor's Potion
 					},
 				}),
 				q(27290, {	-- To Forsaken Forward Command
@@ -1472,15 +1342,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62890, {	-- Ataeric's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62889, {	-- Transdimensional Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62891, {	-- Vessel of the Dark Lady
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62890),	-- Ataeric's Gloves
+						i(62889),	-- Transdimensional Cloak
+						i(62891),	-- Vessel of the Dark Lady
 					},
 				}),
 				q(27475, {	-- Unyielding Servitors
@@ -1506,18 +1370,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62833, {	-- Cloak of Courage
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62833),	-- Cloak of Courage
 						i(131634, {	-- Grasps of the Survivor
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62831, {	-- Treads of the Survivor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62832, {	-- Yorick's Bequest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62831),	-- Treads of the Survivor
+						i(62832),	-- Yorick's Bequest
 					},
 				}),
 				q(491, {	-- Wand to Bethor
@@ -1532,15 +1390,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
-						i(3457, {	-- Stamped Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3458, {	-- Rugged Mail Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3581, {	-- Serrated Knife
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3457),	-- Stamped Trousers
+						i(3458),	-- Rugged Mail Gloves
+						i(3581),	-- Serrated Knife
 					},
 				}),
 				q(26964, {	-- Warchief's Command: Silverpine Forest!
@@ -1572,11 +1424,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 							["description"] = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(4596, {	-- Discolored Healing Potion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4596),	-- Discolored Healing Potion
 					},
 				}),
 				q(1359, {	-- Zinge's Delivery
@@ -1642,11 +1491,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(4437, {	-- Channeler's Staff
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(4436, {	-- Jewel-encrusted Sash
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1799,12 +1646,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(4439, {	-- Bruiser Club
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5975, {	-- Ruffian Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4439),	-- Bruiser Club
+						i(5975),	-- Ruffian Belt
 					},
 				}),
 				-- #endif

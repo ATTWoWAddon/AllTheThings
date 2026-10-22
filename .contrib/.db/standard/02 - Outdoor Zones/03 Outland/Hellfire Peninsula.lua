@@ -286,7 +286,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31922, {	-- Nicki Tinytech
 								["sourceAchievement"] = 6604,	-- Taming Outland
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -3357,7 +3356,6 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										i(265830, {	-- Communal Flamewrought Key
-											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 											["races"] = ALLIANCE_ONLY,
 										}),
 									},
@@ -3456,7 +3454,6 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 									["groups"] = {
 										i(265826, {	-- Communal Flamewrought Key
-											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 											["races"] = HORDE_ONLY,
 										}),
 									},

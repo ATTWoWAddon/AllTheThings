@@ -176,9 +176,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2743,	-- Shadowforge Warrior
 							},
 						}),
-						i(4978, {	-- Ryedol's Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4978),	-- Ryedol's Hammer
 					},
 				}),
 				q(27823, {	-- A Dwarf's Got Needs
@@ -219,21 +217,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 65.0, 38.3, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63159, {	-- Parcel Bearer's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63158, {	-- Boots of Delivery
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63157, {	-- Lethlor Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63156, {	-- Alluring Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63205, {	-- Safety Goggles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63159),	-- Parcel Bearer's Breastplate
+						i(63158),	-- Boots of Delivery
+						i(63157),	-- Lethlor Armbands
+						i(63156),	-- Alluring Leggings
+						i(63205),	-- Safety Goggles
 					},
 				}),
 				q(27792, {	-- All's Fair in Love, War, and Archaeology
@@ -259,18 +247,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 62488 },	-- Trogg Tool
 							["cr"] = 46772,	-- Reliquary Excavator <The Reliquary>
 						}),
-						i(63186, {	-- Upstart's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63185, {	-- Counterfeit Chainmail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63184, {	-- Excavation Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63183, {	-- Hooligan's Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63186),	-- Upstart's Breastplate
+						i(63185),	-- Counterfeit Chainmail
+						i(63184),	-- Excavation Bracers
+						i(63183),	-- Hooligan's Pantaloons
 					},
 				}),
 				q(27891, {	-- Amakkar, Jack of All Trades
@@ -309,9 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.1, 28.9, BADLANDS },
 							["qg"] = 2745,	-- Ambassador Infernus
 						}),
-						i(4987, {	-- Dwarf Captain's Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4987),	-- Dwarf Captain's Sword
 					},
 				}),
 				q(27793, {	-- Ancient Protectors (A)
@@ -411,9 +389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(7870, {	-- Thaumaturgy Vessel Lockbox
 							i(7866),	-- Empty Thaumaturgy Vessel
 						}),
-						r(11452, {	-- Restorative Potion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						r(11452),	-- Restorative Potion
 					},
 				}),
 				q(27834, {	-- Baelog, the Glass Cannon
@@ -467,18 +443,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/1 Chains of Hematus
 							["provider"] = { "i", 4645 },	-- Chains of Hematus
 						}),
-						i(11193, {	-- Blazewind Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11196, {	-- Mindburst Medallion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11194, {	-- Prismscale Hauberk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11195, {	-- Warforged Chestplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11193),	-- Blazewind Breastplate
+						i(11196),	-- Mindburst Medallion
+						i(11194),	-- Prismscale Hauberk
+						i(11195),	-- Warforged Chestplate
 					},
 				}),
 				q(713, {	-- Coolant Heads Prevail
@@ -580,7 +548,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if BEFORE 4.0.3
 							["description"] = "Save this for an heirloom weapon in Wrath!",
 							-- #endif
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -626,9 +593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
-						i(4984, {	-- Skull of Impending Doom
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4984),	-- Skull of Impending Doom
 					},
 				}),
 				q(27878, {	-- Forcible Acquisition
@@ -643,21 +608,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 206388 },	-- Angor's Coffer
 							},
 						}),
-						i(63173, {	-- Ironhew Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63172, {	-- Angor Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63171, {	-- Dustwind Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63170, {	-- Dust Bowl Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63169, {	-- Sunglow Cowl
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63173),	-- Ironhew Cloak
+						i(63172),	-- Angor Pauldrons
+						i(63171),	-- Dustwind Vest
+						i(63170),	-- Dust Bowl Shield
+						i(63169),	-- Sunglow Cowl
 					},
 				}),
 				q(27762, {	-- Fuselight, Ho!
@@ -698,21 +653,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 14.8, 65.4, BADLANDS },
 						}),
-						i(63199, {	-- Storm's Bow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63198, {	-- Half-Ton Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63197, {	-- Dustbelcher Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63196, {	-- Holdout Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63195, {	-- Cloak of Passion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63199),	-- Storm's Bow
+						i(63198),	-- Half-Ton Pauldrons
+						i(63197),	-- Dustbelcher Boots
+						i(63196),	-- Holdout Gloves
+						i(63195),	-- Cloak of Passion
 					},
 				}),
 				q(27880, {	-- Half-Ton Holdouts
@@ -728,21 +673,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 14.8, 65.4, BADLANDS },
 						}),
-						i(63204, {	-- Bow of Kargath
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63203, {	-- Half-Ton Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63202, {	-- Dustbelcher Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63201, {	-- Holdout Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63200, {	-- Gorn's Discarded Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63204),	-- Bow of Kargath
+						i(63203),	-- Half-Ton Pauldrons
+						i(63202),	-- Dustbelcher Boots
+						i(63201),	-- Holdout Gloves
+						i(63200),	-- Gorn's Discarded Cloak
 					},
 				}),
 				heroscall(q(28579, {	-- Hero's Call: Badlands!
@@ -819,18 +754,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 62597 },	-- Trogg Tool
 							["cr"] = 46773,	-- Explorers' League Excavator <The Explorers' League>
 						}),
-						i(63190, {	-- Upstart's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63189, {	-- Counterfeit Chainmail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63188, {	-- Excavation Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63187, {	-- Hooligan's Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63190),	-- Upstart's Breastplate
+						i(63189),	-- Counterfeit Chainmail
+						i(63188),	-- Excavation Bracers
+						i(63187),	-- Hooligan's Pantaloons
 					},
 				}),
 				q(27892, {	-- Jurrix the Striker
@@ -870,12 +797,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 35,
 					["groups"] = {
-						i(4624, {	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4623, {	-- Lesser Stoneshield Potion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4624),	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
+						i(4623),	-- Lesser Stoneshield Potion
 					},
 				}),
 				q(718, {	-- Mirages
@@ -908,9 +831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/12 Stonevault Bonesnapper slain
 							["provider"] = { "n", 2893 },	-- Stonevault Bonesnapper
 						}),
-						i(4983, {	-- Rock Pulverizer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4983),	-- Rock Pulverizer
 					},
 				}),
 				q(27889, {	-- New Kargath
@@ -929,12 +850,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { THOUSAND_NEEDLES },
 					["lvl"] = 28,
 					["groups"] = {
-						i(6729, {	-- Fizzle's Zippy Lighter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6732, {	-- Gnomish Mechanic's Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6729),	-- Fizzle's Zippy Lighter
+						i(6732),	-- Gnomish Mechanic's Gloves
 					},
 				}),
 				q(27835, {	-- Olaf, the Big Fella'
@@ -969,12 +886,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 4611, 9 } },	-- Blue Pearl
 					["lvl"] = 30,
 					["groups"] = {
-						i(4086, {	-- Flash Rifle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5248, {	-- Flash Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4086),	-- Flash Rifle
+						i(5248),	-- Flash Wand
 						-- #if BEFORE 4.0.3
 						i(4852),	-- Flash Bomb
 						-- #endif
@@ -1015,15 +928,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								7091,	-- Shadowforge Ambusher
 							},
 						}),
-						i(9522, {	-- Energized Stone Circle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10358, {	-- Duracin Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10359, {	-- Everlast Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9522),	-- Energized Stone Circle
+						i(10358),	-- Duracin Bracers
+						i(10359),	-- Everlast Boots
 					},
 				}),
 				q(723, {	-- Prospect of Faith (1/2)
@@ -1098,15 +1005,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63176, {	-- Well Cushioned Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63175, {	-- Hieronymus' Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63174, {	-- Watcher's Spear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63176),	-- Well Cushioned Boots
+						i(63175),	-- Hieronymus' Belt
+						i(63174),	-- Watcher's Spear
 						i(157008, {	-- Blam-Hatchet
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1122,15 +1023,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63179, {	-- Well Cushioned Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63178, {	-- Hieronymus' Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63177, {	-- Watcher's Spear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63179),	-- Well Cushioned Boots
+						i(63178),	-- Hieronymus' Belt
+						i(63177),	-- Watcher's Spear
 					},
 				}),
 				q(27769, {	-- Rhea Revealed
@@ -1175,12 +1070,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2716,	-- Dustbelcher Wyrmhunter
 							},
 						}),
-						i(4652, {	-- Salbac Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4653, {	-- Ironheel Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4652),	-- Salbac Shield
+						i(4653),	-- Ironheel Boots
 					},
 				}),
 				{
@@ -1242,9 +1133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 39.3, 18.8, BADLANDS },
 						}),
-						i(4746, {	-- Doomsayer's Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4746),	-- Doomsayer's Robe
 					},
 				}),
 				q(716, {	-- Stone Is Better than Cloth
@@ -1258,9 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
 					["lvl"] = 35,
 					["groups"] = {
-						i(4979, {	-- Enchanted Stonecloth Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4979),	-- Enchanted Stonecloth Bracers
 					},
 				}),
 				q(710, {	-- Study of the Elements: Rock (1/3)
@@ -1379,15 +1266,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 47126 },	-- Blood Elf Admirer
 							},
 						}),
-						i(63193, {	-- Theldurin's Fist
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63192, {	-- Tosselwrench's Shrinker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63191, {	-- Martek's Knife
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63193),	-- Theldurin's Fist
+						i(63192),	-- Tosselwrench's Shrinker
+						i(63191),	-- Martek's Knife
 						i(156961, {	-- Martek's Stick of Truthiness
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1402,9 +1283,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 18.0, 30.5, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63194, {	-- Rhea's Last Egg
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63194),	-- Rhea's Last Egg
 					},
 				}),
 				q(27824, {	-- The Good Stuff
@@ -1421,21 +1300,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 40.1, 25.1, BADLANDS },
 						}),
-						i(63168, {	-- Ironhew Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63167, {	-- Angor Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63166, {	-- Walloper's Chestpiece
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63165, {	-- Dust Bowl Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63164, {	-- Dustwind Cowl
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63168),	-- Ironhew Cloak
+						i(63167),	-- Angor Pauldrons
+						i(63166),	-- Walloper's Chestpiece
+						i(63165),	-- Dust Bowl Shield
+						i(63164),	-- Dustwind Cowl
 					},
 				}),
 				q(27832, {	-- The Hidden Clutch (A)
@@ -1731,18 +1600,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 66.0, 56.7, BADLANDS },
 						}),
-						i(63163, {	-- Strong Arm Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63162, {	-- Coercive Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63161, {	-- Vest of Restraint
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63160, {	-- Boots of Duress
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63163),	-- Strong Arm Mace
+						i(63162),	-- Coercive Pauldrons
+						i(63161),	-- Vest of Restraint
+						i(63160),	-- Boots of Duress
 					},
 				}),
 				q(734, {	-- This Is Going to Be Hard (1/3)
@@ -1775,9 +1636,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 26.0, 46.6, BADLANDS },
 							["cr"] = 2919,	-- Fam'retor Guardian
 						}),
-						i(2820, {	-- Nifty Stopwatch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2820),	-- Nifty Stopwatch
 					},
 				}),
 				q(27763, {	-- To Fuselight Proper
@@ -1844,18 +1703,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/1 Chains of Hematus
 							["provider"] = { "i", 4645 },	-- Chains of Hematus
 						}),
-						i(11193, {	-- Blazewind Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11194, {	-- Prismscale Hauberk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11195, {	-- Warforged Chestplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11196, {	-- Mindburst Medallion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11193),	-- Blazewind Breastplate
+						i(11194),	-- Prismscale Hauberk
+						i(11195),	-- Warforged Chestplate
+						i(11196),	-- Mindburst Medallion
 					},
 				}),
 				q(27789, {	-- Troggish Troubles
@@ -1864,15 +1715,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.8, 56.5, BADLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63182, {	-- Anti-Trogg Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63181, {	-- Shrug of Disappointment
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63180, {	-- Blam Blam Gun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63182),	-- Anti-Trogg Shield
+						i(63181),	-- Shrug of Disappointment
+						i(63180),	-- Blam Blam Gun
 					},
 				}),
 				q(2202, {	-- Uldaman Reagent Run
@@ -1935,21 +1780,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.6, 26.0, BADLANDS },
 							["cr"] = 46693,	-- Dustbelcher Instructor
 						}),
-						i(63155, {	-- Goat Horn Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63154, {	-- Fuselight Chainmail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63153, {	-- Goat Hide Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63152, {	-- Goat Skin Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63151, {	-- Wooly Goat Punchers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63155),	-- Goat Horn Band
+						i(63154),	-- Fuselight Chainmail
+						i(63153),	-- Goat Hide Boots
+						i(63152),	-- Goat Skin Mask
+						i(63151),	-- Wooly Goat Punchers
 					},
 				}),
 			}),

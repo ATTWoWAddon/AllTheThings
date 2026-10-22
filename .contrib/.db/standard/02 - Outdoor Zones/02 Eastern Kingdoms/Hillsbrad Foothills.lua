@@ -404,9 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2249,	-- Ferocious Yeti
 							},
 						}),
-						i(2805, {	-- Yeti Fur Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2805),	-- Yeti Fur Cloak
 					},
 				}),
 				q(28733, {	-- Basic Botany
@@ -554,18 +552,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
-						i(3761, {	-- Deadskull Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3822, {	-- Runic Darkblade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6282, {	-- Sacred Burial Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3760, {	-- Band of the Undercity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3761),	-- Deadskull Shield
+						i(3822),	-- Runic Darkblade
+						i(6282),	-- Sacred Burial Trousers
+						i(3760),	-- Band of the Undercity
 					},
 				}),
 				q(14351, {	-- Battle of Hillsbrad (7/7)
@@ -660,15 +650,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 64471 },	-- Goblin Pocket-Nuke
 							["coord"] = { 39.0, 48.0, HILLSBRAD_FOOTHILLS },
 						}),
-						i(65721, {	-- Corrahn's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65703, {	-- Gavin's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65683, {	-- Sofera's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65721),	-- Corrahn's Cloak
+						i(65703),	-- Gavin's Pauldrons
+						i(65683),	-- Sofera's Belt
 						i(131699, {	-- Headland Belt
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -732,12 +716,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/10 Hulking Mountain Lion slain
 							["provider"] = { "n", 2407 },	-- Hulking Mountain Lion
 						}),
-						i(3753, {	-- Shepherd's Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3754, {	-- Shepherd's Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3753),	-- Shepherd's Girdle
+						i(3754),	-- Shepherd's Gloves
 						i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },	-- Moved to Trainers
 						}),
@@ -777,12 +757,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Crushridge Warmonger
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
 						}),
-						i(5249, {	-- Burning Sliver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3763, {	-- Lunar Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5249),	-- Burning Sliver
+						i(3763),	-- Lunar Buckler
 					},
 				}),
 				-- #endif
@@ -834,7 +810,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 1791,	-- The Windwatcher
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 4479, 8 },	-- Burning Charm
 								{ "i", 4481, 8 },	-- Cresting Charm
@@ -893,18 +868,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2451 },	-- Farmer Kalaba
 							["coord"] = { 35.8, 46.2, HILLSBRAD_FOOTHILLS },
 						}),
-						i(3742, {	-- Bow of Plunder
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3743, {	-- Sentry Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5250, {	-- Charred Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3732, {	-- Hooded Cowl
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3742),	-- Bow of Plunder
+						i(3743),	-- Sentry Buckler
+						i(5250),	-- Charred Wand
+						i(3732),	-- Hooded Cowl
 					},
 				}),
 				-- #if AFTER CATA
@@ -939,18 +906,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 64583 },	-- Water Barrel
 							},
 						}),
-						i(65729, {	-- Band of Premeditated Murder
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65722, {	-- Lilith's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65704, {	-- Vest of the Phantom
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65684, {	-- Poisoned Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65729),	-- Band of Premeditated Murder
+						i(65722),	-- Lilith's Wand
+						i(65704),	-- Vest of the Phantom
+						i(65684),	-- Poisoned Bracers
 						i(131700, {	-- Phantom Chain Tunic
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -997,15 +956,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 47789 },	-- Clerk Horrace Whitesteed
 							["coord"] = { 38.0, 63.0, HILLSBRAD_FOOTHILLS },
 						}),
-						i(65694, {	-- Clerk Whitesteed's Cloak
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(65672, {	-- Crossbow of the Twice-Slain
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(65712, {	-- Citizen Wilkes' Ring
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(65694),	-- Clerk Whitesteed's Cloak
+						i(65672),	-- Crossbow of the Twice-Slain
+						i(65712),	-- Citizen Wilkes' Ring
 					},
 				}),
 				q(28231, {	-- Do it for Twinkles
@@ -1019,15 +972,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 47792 },	-- Blacksmith Verringtan
 							["coord"] = { 38.2, 56.4, HILLSBRAD_FOOTHILLS },
 						}),
-						i(65714, {	-- "Jenny's" Gloves
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(65696, {	-- Awesome Boots
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(65674, {	-- Star Pony Leggings
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(65714),	-- "Jenny's" Gloves
+						i(65696),	-- Awesome Boots
+						i(65674),	-- Star Pony Leggings
 						i(131693, {	-- Amazing Chain Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1046,9 +993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 63150 },	-- Shovel
 							},
 						}),
-						i(65667, {	-- Shovel of Mercy
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(65667),	-- Shovel of Mercy
 					},
 				}),
 				q(28605, {	-- Domination
@@ -1198,12 +1143,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2377,	-- Torn Fin Tidehunter
 							},
 						}),
-						i(3749, {	-- High Apothecary Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3747, {	-- Meditative Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3749),	-- High Apothecary Cloak
+						i(3747),	-- Meditative Sash
 					},
 				}),
 				q(517, {	-- Elixir of Agony (4/5)
@@ -1254,18 +1195,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2384,	-- Starving Mountain Lion
 							},
 						}),
-						i(2230, {	-- Gloves of Brawn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3741, {	-- Stomping Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6482, {	-- Firewalker Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3735, {	-- Recipe: Hot Lion Chops (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2230),	-- Gloves of Brawn
+						i(3741),	-- Stomping Boots
+						i(6482),	-- Firewalker Boots
+						i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 					},
 				}),
 				q(502, {	-- Elixir of Pain (2/2)
@@ -1439,12 +1372,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 63281 },	-- Lydon's Cage Key
 							["cr"] = 48017,	-- Infected Sludge Guard
 						}),
-						i(65713, {	-- Monstrous Shield
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(65673, {	-- Aberrant Vest
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(65713),	-- Monstrous Shield
+						i(65673),	-- Aberrant Vest
 						i(131692, {	-- Sludge Guard Mail Vest
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1660,9 +1589,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(2842, {	-- Poisons
 							["timeline"] = { REMOVED_3_0_2 },
 						}),
-						i(8095, {	-- Hinott's Oil
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8095),	-- Hinott's Oil
 					},
 				}),
 				q(28138, {	-- Human Infestation
@@ -1739,12 +1666,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								14275,	-- Tamra Stormpike
 							},
 						}),
-						i(3750, {	-- Ribbed Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3751, {	-- Mercenary Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3750),	-- Ribbed Breastplate
+						i(3751),	-- Mercenary Leggings
 					},
 				}),
 				-- #if AFTER CATA
@@ -2224,15 +2147,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 						objective(1, {	-- 0/10 Dun Garok Spirit slain
 							["provider"] = { "n", 49269 },	-- Dun Garok Spirit
 						}),
-						i(65724, {	-- Grasps of the Unyielding
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65706, {	-- Mr. Hider's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65686, {	-- Mantle of Haunting
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65724),	-- Grasps of the Unyielding
+						i(65706),	-- Mr. Hider's Bracers
+						i(65686),	-- Mantle of Haunting
 						i(131703, {	-- Foreboding Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2263,9 +2180,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					},
 					["lvl"] = 28,
 					["groups"] = {
-						i(3737, {	-- Recipe: Soothing Turtle Bisque (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3737),	-- Recipe: Soothing Turtle Bisque (RECIPE!)
 						i(3729),	-- Soothing Turtle Bisque
 					},
 				},
@@ -2313,9 +2228,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 								2261,	-- Syndicate Watchman
 							},
 						}),
-						i(3739, {	-- Skull Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3739),	-- Skull Ring
 					},
 				}),
 				-- #if AFTER CATA
@@ -2361,9 +2274,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 							["provider"] = { "i", 64410 },	-- Juicy Stag Meat
 							["cr"] = 48184,	-- Hill Stag
 						}),
-						i(65681, {	-- Stagwich Slicer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65681),	-- Stagwich Slicer
 					},
 				}),
 				q(556, {	-- Stone Tokens
@@ -2396,15 +2307,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65723, {	-- Cloak of Treason
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65705, {	-- Pocket-Nuke Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65685, {	-- Broken Fingers of Hillsbrad
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65723),	-- Cloak of Treason
+						i(65705),	-- Pocket-Nuke Belt
+						i(65685),	-- Broken Fingers of Hillsbrad
 						i(131702, {	-- Nuke Resistant Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2442,9 +2347,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						objective(2, {	-- 0/10 Daggerspine Siren slain
 							["provider"] = { "n", 2371 },	-- Daggerspine Siren
 						}),
-						i(3755, {	-- Fish Gutter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3755),	-- Fish Gutter
 					},
 				}),
 				q(28324, {	-- Studies in Lethality
@@ -2474,12 +2377,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 						objective(2, {	-- 0/8 Syndicate Thief slain
 							["provider"] = { "n", 2241 },	-- Syndicate Thief
 						}),
-						i(3758, {	-- Crusader Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3759, {	-- Insulated Sage Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3758),	-- Crusader Belt
+						i(3759),	-- Insulated Sage Gloves
 					},
 				}),
 				q(6701, {	-- Syndicate Emblems (Alterac Mountains)
@@ -2502,12 +2401,8 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
-						i(3765, {	-- Brigand's Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3764, {	-- Mantis Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3765),	-- Brigand's Pauldrons
+						i(3764),	-- Mantis Boots
 					},
 				}),
 				-- #endif
@@ -2624,9 +2519,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
-						i(4430, {	-- Ethereal Talisman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4430),	-- Ethereal Talisman
 					},
 				}),
 				-- #endif
@@ -2654,15 +2547,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 							["provider"] = { "n", 49268 },	-- D-1000
 							["coord"] = { 70.2, 61.2, HILLSBRAD_FOOTHILLS },
 						}),
-						i(65687, {	-- Axe of the Judgment Day
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65707, {	-- Discontinuer's Hammer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65725, {	-- D-1000 Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65687),	-- Axe of the Judgment Day
+						i(65707),	-- Discontinuer's Hammer
+						i(65725),	-- D-1000 Ring
 					},
 				}),
 				q(28646, {	-- The Durnholde Challenge: Infernus
@@ -2729,15 +2616,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 								48628,	-- Ferocious Yeti
 							},
 						}),
-						i(65720, {	-- Tell-Tale Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65702, {	-- Supple Yeti Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65682, {	-- Bel'varil's Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65720),	-- Tell-Tale Bracers
+						i(65702),	-- Supple Yeti Leggings
+						i(65682),	-- Bel'varil's Armbands
 						i(131698, {	-- Bel'varil's Chain Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2788,15 +2669,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 							},
 							["cr"] = 2428,	-- Jailor Marlgen
 						}),
-						i(3752, {	-- Grunt Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3733, {	-- Orcish War Chain
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3752),	-- Grunt Vest
+						i(3733),	-- Orcish War Chain
+						i(3734),	-- Recipe: Big Bear Steak (RECIPE!)
 					},
 				}),
 				q(28375, {	-- The Road to Purgation
@@ -2943,9 +2818,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
-						i(2231, {	-- Inferno Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2231),	-- Inferno Robe
 					},
 				}),
 				-- #endif
@@ -3038,15 +2911,9 @@ Click Leave vehicle and repeat steps 3-8"]],
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
 					["groups"] = {
-						i(6975, {	-- Whirlwind Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6977, {	-- Whirlwind Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6976, {	-- Whirlwind Warhammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6975),	-- Whirlwind Axe
+						i(6977),	-- Whirlwind Sword
+						i(6976),	-- Whirlwind Warhammer
 					},
 				}),
 				-- #endif
@@ -3537,9 +3404,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				n(2684, {	-- Rizz Loosebolt <Engineering Supplies> (Alterac Mountains)
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13308),	-- Schematic: Ice Deflector (RECIPE!)
 					},
 				}),
 				-- #endif

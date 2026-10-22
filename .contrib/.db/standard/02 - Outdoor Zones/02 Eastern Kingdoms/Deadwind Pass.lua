@@ -56,7 +56,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31916, {	-- Grand Master Lydia Accoste
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["isDaily"] = true,
 							["groups"] = {
 								i(89125),	-- Sack of Pet Supplies

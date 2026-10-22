@@ -403,7 +403,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["groups"] = {
 						q(78912, {
 							["name"] = "When donating to the Gala (daily)",
-							["timeline"] = { ADDED_10_2_5 },
 							["collectible"] = false,
 							["isDaily"] = true,
 						}),
@@ -432,9 +431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["provider"] = { "i", 116648 },	-- Manufactured Love Prism
 					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
-						i(116651, {	-- True Love Prism (TOY!)
-							["timeline"] = { ADDED_6_0_2 },
-						}),
+						i(116651),	-- True Love Prism (TOY!)
 					},
 				}),
 				ach(9393, {	-- Beacon of Love (25)
@@ -3230,30 +3227,18 @@ for i,o in ipairs({
 			}),
 			ach(4627, {	-- X-45 Heartbreaker
 				["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
-				["timeline"] = { ADDED_3_3_0 },
 				["filterID"] = MOUNTS,
 			}),
-			i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-				["timeline"] = { ADDED_3_3_0 },
-			}),
-			i(49715, {	-- Forever-Lovely Rose
-				["timeline"] = { ADDED_3_3_0 },
-			}),
-			i(50446, {	-- Toxic Wasteling (PET!)
-				["timeline"] = { ADDED_3_3_0 },
-			}),
-			i(50741, {	-- Vile Fumigator's Mask
-				["timeline"] = { ADDED_3_3_0 },
-			}),
-			i(50471, {	-- The Heartbreaker (TOY!)
-				["timeline"] = { ADDED_3_3_0 },
-			}),
+			i(50250),	-- X-45 Heartbreaker (MOUNT!)
+			i(49715),	-- Forever-Lovely Rose
+			i(50446),	-- Toxic Wasteling (PET!)
+			i(50741),	-- Vile Fumigator's Mask
+			i(50471),	-- The Heartbreaker (TOY!)
 			-- #else
 			i(54537, {	-- Heart-Shaped Box
 				-- #if BEFORE 10.0.5
 				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 				-- #endif
-				["timeline"] = { ADDED_3_3_0 },
 				-- Minimum level this box drops (not 100% sure)
 				["lvl"] =
 					-- #if AFTER 9.0.1
@@ -3268,7 +3253,6 @@ for i,o in ipairs({
 				["groups"] = {
 					ach(4627, {	-- X-45 Heartbreaker
 						["provider"] = { "i", 50250 },	-- X-45 Heartbreaker
-						["timeline"] = { ADDED_3_3_0 },
 						["filterID"] = MOUNTS,
 					}),
 					hqt(74957, {    -- X-45 Heartbreaker Attempt (Daily Accountwide)
@@ -3277,9 +3261,7 @@ for i,o in ipairs({
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 						["groups"] = {
-							i(211413, {    -- X-45 Heartbreaker (MOUNT!)
-								["timeline"] = { ADDED_10_0_5 },
-							}),
+							i(211413),	-- X-45 Heartbreaker (MOUNT!)
 						},
 					}),
 					hqt(86172, {    -- Love Witch's Sweeper Attempt (Daily Accountwide)
@@ -3288,9 +3270,7 @@ for i,o in ipairs({
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 						["groups"] = {
-							i(236043, {    -- Love Witch's Sweeper (MOUNT!)
-								["timeline"] = { ADDED_11_0_7 },
-							}),
+							i(236043),	-- Love Witch's Sweeper (MOUNT!)
 						},
 					}),
 					hqt(79104, {    -- Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)
@@ -3299,9 +3279,7 @@ for i,o in ipairs({
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 						["groups"] = {
-							i(211438, {    -- Renewed Proto-Drake: Love Armor (Item)
-								["timeline"] = { ADDED_10_2_5 },
-							}),
+							i(211438),	-- Renewed Proto-Drake: Love Armor (Item)
 						},
 					}),
 					hqt(93466, {    -- Spring Butterfly Attempt (Daily Accountwide)
@@ -3310,26 +3288,14 @@ for i,o in ipairs({
 						["isDaily"] = true,
 						["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 						["groups"] = {
-							i(256312, {    -- Spring Butterfly (MOUNT!)
-								["timeline"] = { ADDED_12_0_0 },
-							}),
+							i(256312),	-- Spring Butterfly (MOUNT!)
 						},
 					}),
-					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-						["timeline"] = { ADDED_3_3_0 },
-					}),
-					i(49715, {	-- Forever-Lovely Rose
-						["timeline"] = { ADDED_3_3_0 },
-					}),
-					i(50446, {	-- Toxic Wasteling (PET!)
-						["timeline"] = { ADDED_3_3_0 },
-					}),
-					i(50741, {	-- Vile Fumigator's Mask
-						["timeline"] = { ADDED_3_3_0 },
-					}),
-					i(50471, {	-- The Heartbreaker (TOY!)
-						["timeline"] = { ADDED_3_3_0 },
-					}),
+					i(50250),	-- X-45 Heartbreaker (MOUNT!)
+					i(49715),	-- Forever-Lovely Rose
+					i(50446),	-- Toxic Wasteling (PET!)
+					i(50741),	-- Vile Fumigator's Mask
+					i(50471),	-- The Heartbreaker (TOY!)
 					i(211812, {	-- Renewed Proto-Drake: Love Armor (MM!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),

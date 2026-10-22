@@ -202,18 +202,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(59194, {	-- Sandals of Satisfaction
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59195, {	-- Bracers of Sensations
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59196, {	-- Alina's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59197, {	-- Lordaeron-Made Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59194),	-- Sandals of Satisfaction
+						i(59195),	-- Bracers of Sensations
+						i(59196),	-- Alina's Gloves
+						i(59197),	-- Lordaeron-Made Breastplate
 						i(131479, {	-- Cuffs of Feeling
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -312,21 +304,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 11.1, 70.0, ARATHI_HIGHLANDS },
 						}),
-						i(59159, {	-- Highland Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59160, {	-- Trelane's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59161, {	-- Belt of Refuge
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59162, {	-- Lightstep Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59163, {	-- Craig's Steel
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59159),	-- Highland Mace
+						i(59160),	-- Trelane's Leggings
+						i(59161),	-- Belt of Refuge
+						i(59162),	-- Lightstep Boots
+						i(59163),	-- Craig's Steel
 						i(131470, {	-- Refuge Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -409,12 +391,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/10 Boulderfist Lord slain
 							["provider"] = { "n", 2571 },	-- Boulderfist Lord
 						}),
-						i(9520, {	-- Silent Hunter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9521, {	-- Skullsplitter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9520),	-- Silent Hunter
+						i(9521),	-- Skullsplitter
 					},
 				}),
 				q(26027, {	-- Call to Arms
@@ -430,18 +408,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/3 Boulderfist Lord slain
 							["provider"] = { "n", 2571 },	-- Boulderfist Lord
 						}),
-						i(59178, {	-- Ramshackle Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59179, {	-- Extra Credit Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59180, {	-- Lurking Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59181, {	-- Belt of Gutted Rain
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59178),	-- Ramshackle Bracers
+						i(59179),	-- Extra Credit Boots
+						i(59180),	-- Lurking Belt
+						i(59181),	-- Belt of Gutted Rain
 						i(131467, {	-- Gold Star Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -505,12 +475,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2775 },    -- Daggerspine Marauder
 							},
 						}),
-						i(4550, {	-- Coldwater Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4549, {	-- Seafire Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4550),	-- Coldwater Ring
+						i(4549),	-- Seafire Band
 					},
 				}),
 				q(26628, {	-- Death From Below
@@ -525,18 +491,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 2775 },    -- Daggerspine Marauder
 							},
 						}),
-						i(59212, {	-- O'Breen's Dress Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59213, {	-- Faldir's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59214, {	-- Armguards of the Good Captain
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59215, {	-- Legguards of the Promising Hero
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59212),	-- O'Breen's Dress Robes
+						i(59213),	-- Faldir's Leggings
+						i(59214),	-- Armguards of the Good Captain
+						i(59215),	-- Legguards of the Promising Hero
 						i(131565, {	-- Seafarer's Chain Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -580,9 +538,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 20.7, 85.1, ARATHI_HIGHLANDS },
 						}),
-						i(4511, {	-- Black Water Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4511),	-- Black Water Hammer
 					},
 				}),
 				q(664, {	-- Drowned Sorrows
@@ -597,9 +553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/3 Daggerspine Sorceress
 							["provider"] = { "n", 2596 },	-- Daggerspine Sorceress
 						}),
-						i(4509, {	-- Seawolf Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4509),	-- Seawolf Gloves
 					},
 				}),
 				q(26055, {	-- Drowned Sorrows
@@ -613,15 +567,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/3 Daggerspine Sorceress
 							["provider"] = { "n", 2596 },	-- Daggerspine Sorceress
 						}),
-						i(59205, {	-- Folly's Spar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59206, {	-- Steelgut Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59207, {	-- Maiden's Tattered Sail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59205),	-- Folly's Spar
+						i(59206),	-- Steelgut Vest
+						i(59207),	-- Maiden's Tattered Sail
 						i(131475, {	-- Steelgut's Undermail
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -654,15 +602,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(59168, {	-- Stromgarde Surcoat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59169, {	-- Stromgarde Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59170, {	-- Stromgarde Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59168),	-- Stromgarde Surcoat
+						i(59169),	-- Stromgarde Leggings
+						i(59170),	-- Stromgarde Bracers
 						i(131487, {	-- Stromgarde Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -698,12 +640,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 29.0, 64.0, ARATHI_HIGHLANDS },
 							["cr"] = 2783,	-- Marez Cowl
 						}),
-						i(4543, {	-- White Drakeskin Cap
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4545, {	-- Radiant Silver Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4543),	-- White Drakeskin Cap
+						i(4545),	-- Radiant Silver Bracers
 					},
 				}),
 				q(26050, {	-- Goggle Boggle
@@ -742,9 +680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
-						i(4546, {	-- Call of the Raptor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4546),	-- Call of the Raptor
 					},
 				}),
 				q(26108, {	-- Guile of the Raptor
@@ -758,12 +694,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 4513 },	-- Raptor Heart
 							["cr"] = 2561,	-- Highland Fleshstalker
 						}),
-						i(59203, {	-- Hammerfall Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59204, {	-- Hammerfall Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59203),	-- Hammerfall Gloves
+						i(59204),	-- Hammerfall Mace
 						i(131485, {	-- Hammerfaul Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -854,12 +786,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(15455, {	-- Dustfall Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15456, {	-- Lightstep Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15455),	-- Dustfall Robes
+						i(15456),	-- Lightstep Leggings
 					},
 				}),
 				q(6623, {	-- Horde Trauma
@@ -963,12 +891,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(4975, {	-- Vigilant Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15104, {	-- Wingborne Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4975),	-- Vigilant Buckler
+						i(15104),	-- Wingborne Boots
 					},
 				}),
 				{	-- Myzrael's Allies [A & H]
@@ -1379,9 +1303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2588,	-- Syndicate Prowler
 							},
 						}),
-						i(4741, {	-- Stromgarde Cavalry Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4741),	-- Stromgarde Cavalry Leggings
 					},
 				}),
 				q(26095, {	-- Stromgarde Badges
@@ -1399,18 +1321,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2588,	-- Syndicate Prowler
 							},
 						}),
-						i(59190, {	-- Slippers of Sorrowful Tidings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59191, {	-- Yellow Ribbon Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59192, {	-- Griefstricken Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59193, {	-- Heartsick Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59190),	-- Slippers of Sorrowful Tidings
+						i(59191),	-- Yellow Ribbon Armbands
+						i(59192),	-- Griefstricken Gloves
+						i(59193),	-- Heartsick Breastplate
 						i(131481, {	-- Bindings of Longing
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1446,9 +1360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 62.6, 34.6, ARATHI_HIGHLANDS },
 							["cr"] = 2755,	-- Myzrael
 						}),
-						i(4743, {	-- Pulsating Crystalline Shard
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4743),	-- Pulsating Crystalline Shard
 					},
 				}),
 				q(665, {	-- Sunken Treasure (1/5)
@@ -1476,15 +1388,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 23.6, 87.4, ARATHI_HIGHLANDS },
 						}),
-						i(4547, {	-- Gnomish Zapper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4548, {	-- Servomechanic Sledgehammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4491, {	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4547),	-- Gnomish Zapper
+						i(4548),	-- Servomechanic Sledgehammer
+						i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 					},
 				}),
 				q(668, {	-- Sunken Treasure (3/5)
@@ -1525,21 +1431,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 16.1, 91.5, ARATHI_HIGHLANDS },
 						}),
-						i(59199, {	-- Bottom Waders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59200, {	-- Decalcified Elven Spear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59199),	-- Bottom Waders
+						i(59200),	-- Decalcified Elven Spear
 						i(131474, {	-- Chain Weighted Shoes
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156948, {	-- Waterlogged Elven Spear
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(4491, {	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1657,18 +1557,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.6, 34.6, ARATHI_HIGHLANDS },
 							["cr"] = 2755,	-- Myzrael
 						}),
-						i(59208, {	-- Wrap of Open Menace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59209, {	-- Eldritch Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59210, {	-- Earthbound Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59211, {	-- Shackling Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59208),	-- Wrap of Open Menace
+						i(59209),	-- Eldritch Gloves
+						i(59210),	-- Earthbound Mantle
+						i(59211),	-- Shackling Gloves
 						i(131473, {	-- Mantle of the Bound
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1687,12 +1579,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 20.8, 65.6, ARATHI_HIGHLANDS },
 							["cr"] = 2773,	-- Or'Kalar
 						}),
-						i(4976, {	-- Mistspray Kilt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4977, {	-- Sword of Hammerfall
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4976),	-- Mistspray Kilt
+						i(4977),	-- Sword of Hammerfall
 					},
 				}),
 				q(26029, {	-- The Real Threat
@@ -1707,18 +1595,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 14.4, 67.6, ARATHI_HIGHLANDS },
 							["cr"] = 2773,	-- Or'Kalar
 						}),
-						i(59186, {	-- Skullslasher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59187, {	-- Silent Huntress
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59188, {	-- Belt of Affront
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59189, {	-- Mistspray Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59186),	-- Skullslasher
+						i(59187),	-- Silent Huntress
+						i(59188),	-- Belt of Affront
+						i(59189),	-- Mistspray Vest
 						i(131469, {	-- Seabreeze Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1750,15 +1630,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 23.4, 64.4, ARATHI_HIGHLANDS },
 							["cr"] = 2783,	-- Marez Cowl
 						}),
-						i(59171, {	-- Bloodstone-Studded Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59172, {	-- Drakeskin Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59173, {	-- Radiant Silver Armguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59171),	-- Bloodstone-Studded Cloak
+						i(59172),	-- Drakeskin Leggings
+						i(59173),	-- Radiant Silver Armguards
 						i(131466, {	-- Highland Chain Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1816,21 +1690,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 50.8, 39.6, ARATHI_HIGHLANDS },
 							["cr"] = 4479,	-- Fardel Dabyrie
 						}),
-						i(59158, {	-- Craig's Steel
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59164, {	-- Grim Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59165, {	-- Genavie's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59166, {	-- Adulterous Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59167, {	-- Treads of Unforgotten Pain
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59158),	-- Craig's Steel
+						i(59164),	-- Grim Mace
+						i(59165),	-- Genavie's Leggings
+						i(59166),	-- Adulterous Belt
+						i(59167),	-- Treads of Unforgotten Pain
 						i(131528, {	-- Cheater's Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1930,12 +1794,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 					["groups"] = {
-						i(4508, {	-- Blood-tinged Armor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4507, {	-- Pit Fighter's Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4508),	-- Blood-tinged Armor
+						i(4507),	-- Pit Fighter's Shield
 					},
 				}),
 				q(26033, {	-- Trol'kalar
@@ -2004,9 +1864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 29.0, 64.0, ARATHI_HIGHLANDS },
 							["cr"] = 2783,	-- Marez Cowl
 						}),
-						i(4744, {	-- Arcane Runed Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4744),	-- Arcane Runed Bracers
 					},
 				}),
 				q(26024, {	-- Wanted! Marez Cowl
@@ -2020,18 +1878,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 23.3, 64.8, ARATHI_HIGHLANDS },
 							["cr"] = 2783,	-- Marez Cowl
 						}),
-						i(59182, {	-- Syndicate Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59183, {	-- Silenced Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59184, {	-- Demon-Trafficker's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59185, {	-- Vest of Dark Rumors
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59182),	-- Syndicate Dagger
+						i(59183),	-- Silenced Rifle
+						i(59184),	-- Demon-Trafficker's Belt
+						i(59185),	-- Vest of Dark Rumors
 						i(131465, {	-- Hauberk of Dire Tidings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2054,12 +1904,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 26.0, 65.6, ARATHI_HIGHLANDS },
 							["cr"] = 2597,	-- Lord Falconcrest <Syndicate Leader>
 						}),
-						i(5247, {	-- Rod of Sorrow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4745, {	-- War Rider Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5247),	-- Rod of Sorrow
+						i(4745),	-- War Rider Bracers
 					},
 				}),
 				q(26079, {	-- Wanted! Otto and Falconcrest
@@ -2078,18 +1924,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 19.4, 66.4, ARATHI_HIGHLANDS },
 							["cr"] = 2597,	-- Lord Falconcrest <Syndicate Leader>
 						}),
-						i(59174, {	-- Dustfall Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59175, {	-- Sandals of Sorrow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59176, {	-- War Rider Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59177, {	-- Captain Nials' Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59174),	-- Dustfall Bracers
+						i(59175),	-- Sandals of Sorrow
+						i(59176),	-- War Rider Belt
+						i(59177),	-- Captain Nials' Belt
 						i(131477, {	-- Boots of the Refuge Captain
 							["timeline"] = { ADDED_7_0_3 },
 						}),

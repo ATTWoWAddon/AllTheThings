@@ -344,7 +344,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						["qg"] = 63996,	-- Elder Liao
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					["timeline"] = { ADDED_5_4_0 },
 					["cost"] = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
 					["repeatable"] = true,
 					["groups"] = {

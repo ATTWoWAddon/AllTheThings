@@ -41,12 +41,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					objective(1, {	-- 0/4 Miners' Union Card
 						["provider"] = { "i", 1894 },	-- Miners' Union Card
 					}),
-					i(2036, {	-- Dusty Mining Gloves
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(2037, {	-- Tunneler's Boots
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(2036),	-- Dusty Mining Gloves
+					i(2037),	-- Tunneler's Boots
 				},
 			}),
 			q(44930, {	-- Deadmines: Sea'in Red
@@ -59,7 +55,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						["provider"] = { "i", 142349 },	-- Bloodied Defias Bandana
 					}),
 					iensemble(142273, {	-- Ensemble: Blackened Defias Armor
-						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
 						["_IgnoreSharedEnsembleByQuestID"] = true,	-- some NYI mage ensemble shared questID
 					}),
@@ -107,9 +102,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					objective(1, {	-- 0/1 Thistlenettle's Badge
 						["provider"] = { "i", 1875 },	-- Thistlenettle's Badge
 					}),
-					i(1893, {	-- Miner's Revenge
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(1893),	-- Miner's Revenge
 				},
 			}),
 			q(27842, {	-- Only the Beginning
@@ -145,15 +138,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 							594,	-- Defias Henchman
 						},
 					}),
-					i(6094, {	-- Piercing Axe
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(2089, {	-- Scrimshaw Dagger
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(2074, {	-- Solid Shortblade
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(6094),	-- Piercing Axe
+					i(2089),	-- Scrimshaw Dagger
+					i(2074),	-- Solid Shortblade
 				},
 			}),
 			q(27785, {	-- The Admiral
@@ -191,15 +178,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					objective(1, {	-- 0/1 Head of VanCleef
 						["provider"] = { "i", 3637 },	-- Head of VanCleef
 					}),
-					i(6087, {	-- Chausses of Westfall
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(2042, {	-- Staff of Westfall
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(2041, {	-- Tunic of Westfall
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(6087),	-- Chausses of Westfall
+					i(2042),	-- Staff of Westfall
+					i(2041),	-- Tunic of Westfall
 				},
 			}),
 			q(27790, {	-- The Defias Kingpin [Alliance]
@@ -305,12 +286,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					objective(1, {	-- 0/1 Gnoam Sprecklesprocket
 						["provider"] = { "i", 7365 },	-- Gnoam Sprecklesprocket
 					}),
-					i(7607, {	-- Sable Wand
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(7606, {	-- Polar Gauntlets
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(7607),	-- Sable Wand
+					i(7606),	-- Polar Gauntlets
 				},
 			}),
 		}),
@@ -621,12 +598,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			n(643, {	-- Sneed
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					i(5194, {	-- Taskmaster Axe
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
-					i(5195, {	-- Gold-flecked Gloves
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(5194),	-- Taskmaster Axe
+					i(5195),	-- Gold-flecked Gloves
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(210178)),	-- Schematic: Shredder Autosalvage Unit (RECIPE!)
 					-- #endif
@@ -644,9 +617,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			n(646, {	-- Mr. Smite <The Ship's First Mate>
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					i(7230, {	-- Smite's Mighty Hammer
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(7230),	-- Smite's Mighty Hammer
 					-- #if BEFORE 4.0.3
 					i(5196),	-- Smite's Reaver
 					i(5192),	-- Thief's Blade
@@ -660,9 +631,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5201),	-- Emberstone Staff
 					i(5200),	-- Impaling Harpoon
 					-- #endif
-					i(10403, {	-- Blackened Defias Belt
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(10403),	-- Blackened Defias Belt
 				},
 			}),
 			n(639, {	-- Edwin VanCleef <Defias Kingpin>
@@ -684,9 +653,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5193),	-- Cape of the Brotherhood
 					i(5202),	-- Corsair's Overshirt
 					-- #endif
-					i(10399, {	-- Blackened Defias Armor
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(10399),	-- Blackened Defias Armor
 				},
 			}),
 			n(645, {	-- Cookie <The Ship's Cook>

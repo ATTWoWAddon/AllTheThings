@@ -546,19 +546,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(64889, {	-- Mantle of Exodar
 							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64890, {	-- Cape of Exodar
 							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64891, {	-- Shroud of Exodar
 							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67527, {	-- Exodar Satchel
 							["minReputation"] = { FACTION_EXODAR, REVERED },	-- Exodar, Revered.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

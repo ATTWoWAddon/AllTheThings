@@ -10,9 +10,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				ach(13779, {		-- Phenomenal Cosmic Power
 					["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 },
 					["groups"] = {
-						title(407, {		-- <Name>, Azeroth's Champion
-							["timeline"] = { ADDED_8_2_0, REMOVED_9_0_1 },
-						}),
+						title(407),	-- <Name>, Azeroth's Champion
 					},
 				}),
 			}),

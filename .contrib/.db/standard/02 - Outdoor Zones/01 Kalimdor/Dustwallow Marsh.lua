@@ -202,7 +202,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31905, {	-- Grazzle the Great
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -358,9 +357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 186301 },	-- Blackhoof Armaments
 							},
 						}),
-						i(57837, {	-- Biting Greataxe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57837),	-- Biting Greataxe
 						i(33268, {	-- Bone Dirk
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -383,9 +380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 186301 },	-- Blackhoof Armaments
 							},
 						}),
-						i(33272, {	-- Biting Axe
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33272),	-- Biting Axe
 						i(33268, {	-- Bone Dirk
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -553,12 +548,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { MAGE },
 					["lvl"] = 35,
 					["groups"] = {
-						i(7515, {	-- Celestial Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9517, {	-- Celestial Stave
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7515),	-- Celestial Orb
+						i(9517),	-- Celestial Stave
 					},
 				}),
 				q(27418, {	-- Challenge Overlord Mok'Morokk
@@ -568,15 +559,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(57846, {	-- Overlord's Trophy Shoulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57847, {	-- Mok'Morokk's Beat Stick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57850, {	-- Dustwallow Impaler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57846),	-- Overlord's Trophy Shoulders
+						i(57847),	-- Mok'Morokk's Beat Stick
+						i(57850),	-- Dustwallow Impaler
 						i(131675, {	-- Overlord's Trophy Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -593,12 +578,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
-						i(10704, {	-- Chillnail Splinter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10703, {	-- Fiendish Skiv
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10704),	-- Chillnail Splinter
+						i(10703),	-- Fiendish Skiv
 					},
 				}),
 				q(27411, {	-- Challenge to the Black Dragonflight
@@ -615,9 +596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33231, {	-- Oversized Stonemaul Hood
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(57828, {	-- Brogg's Better Battle Harness
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57828),	-- Brogg's Better Battle Harness
 						i(33256, {	-- Refitted Bruiser Gauntlets
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -638,9 +617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33231, {	-- Oversized Stonemaul Hood
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(33237, {	-- Brogg's Battle Harness
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33237),	-- Brogg's Battle Harness
 						i(33256, {	-- Refitted Bruiser Gauntlets
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -745,9 +722,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33255, {	-- Rustproof Waistguard
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(57840, {	-- Corroded Helmet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57840),	-- Corroded Helmet
 						i(131666, {	-- Marshwarden's Vest
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -881,15 +856,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131664, {	-- Grimtotem Earthbinder's Vest
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57831, {	-- Direhorn Cinch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57831),	-- Direhorn Cinch
 						i(33261, {	-- Destroyer's Cloak
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(57827, {	-- Morlann's Other Seal
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57827),	-- Morlann's Other Seal
 					},
 				}),
 				q(11156, {	-- Direhorn Raiders
@@ -910,9 +881,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33261, {	-- Destroyer's Cloak
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(33262, {	-- Morlann's Seal
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33262),	-- Morlann's Seal
 					},
 				}),
 				q(27212, {	-- Discrediting the Deserters
@@ -1034,9 +1003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4107,	-- Highperch Wyvern
 							},
 						}),
-						i(6719, {	-- Windborne Belt
-							["timeline"] = { REMOVED_2_3_0 },
-						}),
+						i(6719),	-- Windborne Belt
 					},
 				}),
 				-- #endif
@@ -1108,15 +1075,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4324,	-- Searing Whelp
 							},
 						}),
-						i(57833, {	-- Brooding Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57838, {	-- Searing Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57839, {	-- Whelp Slaying Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57833),	-- Brooding Mask
+						i(57838),	-- Searing Dagger
+						i(57839),	-- Whelp Slaying Axe
 						i(131673, {	-- Brooding Collar
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1143,12 +1104,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4324,	-- Searing Whelp
 							},
 						}),
-						i(9703, {	-- Scorched Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9704, {	-- Rustler Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9703),	-- Scorched Cape
+						i(9704),	-- Rustler Gloves
 					},
 				}),
 				q(27249, {	-- Inspecting the Ruins [A]
@@ -1265,9 +1222,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 33110 },	-- Razorspine's Sword
 							["cr"] = 23841,	-- Razorspine
 						}),
-						i(57835, {	-- "Swamp Eye" Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57835),	-- "Swamp Eye" Belt
 						i(131649, {	-- "Swamp Eye" Chain Sash
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1393,9 +1348,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33271, {	-- Battlecaster's Edge
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(57829, {	-- Steel-Backed Hauberk
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57829),	-- Steel-Backed Hauberk
 						i(156976, {	-- Staff of Memory
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1409,15 +1362,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
-						i(33230, {	-- Leggings of the Long Road
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33243, {	-- Skirmisher's Cover
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33251, {	-- Steel-banded Hauberk
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33230),	-- Leggings of the Long Road
+						i(33243),	-- Skirmisher's Cover
+						i(33251),	-- Steel-banded Hauberk
 					},
 				}),
 				q(27430, {	-- Justice for the Hyals
@@ -1492,15 +1439,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { MAGE },
 					["lvl"] = 30,
 					["groups"] = {
-						i(7514, {	-- Icefury Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11263, {	-- Nether Force Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7513, {	-- Ragefire Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7514),	-- Icefury Wand
+						i(11263),	-- Nether Force Wand
+						i(7513),	-- Ragefire Wand
 					},
 				}),
 				q(1957, {	-- Mana Surges
@@ -1550,12 +1491,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 33202 },	-- Marsh Frog Leg
 							["cr"] = 23979,	-- Giant Marsh Frog
 						}),
-						i(57834, {	-- Frog Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57845, {	-- Swamp Splints
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57834),	-- Frog Boots
+						i(57845),	-- Swamp Splints
 						i(131648, {	-- Frog Stompers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1607,9 +1544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 186301 },	-- Blackhoof Armaments
 							},
 						}),
-						i(57852, {	-- Grimtotem Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57852),	-- Grimtotem Cloak
 					},
 				}),
 				q(11200, {	-- More than Coincidence
@@ -1626,9 +1561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 186301 },	-- Blackhoof Armaments
 							},
 						}),
-						i(33272, {	-- Biting Axe
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33272),	-- Biting Axe
 						i(33268, {	-- Bone Dirk
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -1717,9 +1650,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						end
 					end]],
 					["groups"] = {
-						i(45858, {	-- Nat's Lucky Fishing Pole
-							["timeline"] = { ADDED_3_1_0 },
-						}),
+						i(45858),	-- Nat's Lucky Fishing Pole
 					},
 				}),
 				q(6607, {	-- Nat Pagle, Angler Extreme
@@ -1812,12 +1743,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 19906 },	-- Mok'Morokk's Strongbox
 							},
 						}),
-						i(57848, {	-- Mok'Morokk's Grog Bottle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57854, {	-- Stonemaul Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57848),	-- Mok'Morokk's Grog Bottle
+						i(57854),	-- Stonemaul Gloves
 						i(131676, {	-- Stonemaul Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1863,9 +1790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33271, {	-- Battlecaster's Edge
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(57829, {	-- Steel-Backed Hauberk
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57829),	-- Steel-Backed Hauberk
 						i(156976, {	-- Staff of Memory
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1887,15 +1812,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 63.7, 42.9, DUSTWALLOW_MARSH },
 							["cr"] = 23768,	-- Lynn Hyal
 						}),
-						i(33230, {	-- Leggings of the Long Road
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33243, {	-- Skirmisher's Cover
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33251, {	-- Steel-banded Hauberk
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33230),	-- Leggings of the Long Road
+						i(33243),	-- Skirmisher's Cover
+						i(33251),	-- Steel-banded Hauberk
 					},
 				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
@@ -2125,9 +2044,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33267, {	-- Fleshripper
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(33270, {	-- Mariner's Sword
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33270),	-- Mariner's Sword
 						i(33259, {	-- Crimson Barbut
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -2208,9 +2125,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33267, {	-- Fleshripper
 							["timeline"] = { ADDED_2_3_0 },
 						}),
-						i(33270, {	-- Mariner's Sword
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33270),	-- Mariner's Sword
 						i(33259, {	-- Crimson Barbut
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -2329,12 +2244,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(18585, {	-- Band of Allegiance
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18586, {	-- Lonetree's Circle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18585),	-- Band of Allegiance
+						i(18586),	-- Lonetree's Circle
 					},
 				}),
 				q(11186, {	-- Signs of Treachery?
@@ -2409,9 +2320,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57851, {	-- Swamp Gas Gauntlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57851),	-- Swamp Gas Gauntlets
 						i(33250, {	-- Archer's Wristguard
 							["timeline"] = { ADDED_2_0_1 },
 						}),
@@ -2493,18 +2402,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57842, {	-- Tower of Theramore
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57842),	-- Tower of Theramore
 						i(33247, {	-- Swift Wind Spaulders
 							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(131659, {	-- Swift Wind Shoulders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57849, {	-- Seamonster Harpoon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57849),	-- Seamonster Harpoon
 					},
 				}),
 				q(11198, {	-- Take Down Tethyr!
@@ -2518,12 +2423,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Defend Theramore Docks from Tethyr
 							["provider"] = { "n", 23899 },	-- Tethyr
 						}),
-						i(33228, {	-- Crimson Tunic
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33253, {	-- Golden Helm
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33228),	-- Crimson Tunic
+						i(33253),	-- Golden Helm
 						i(33247, {	-- Swift Wind Spaulders
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -2739,12 +2640,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/5 Egg of Onyxia destroyed
 							["provider"] = { "o", 20359 },	-- Egg of Onyxia
 						}),
-						i(57836, {	-- Encarmine Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57841, {	-- Wyrmbog Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57836),	-- Encarmine Spaulders
+						i(57841),	-- Wyrmbog Amulet
 						i(131674, {	-- Encarmine Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2777,12 +2674,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/5 Egg of Onyxia destroyed
 							["provider"] = { "o", 20359 },	-- Egg of Onyxia
 						}),
-						i(10700, {	-- Encarmine Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10701, {	-- Boots of Zua'tec
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10700),	-- Encarmine Boots
+						i(10701),	-- Boots of Zua'tec
 					},
 				}),
 				q(27287, {	-- The Deserters (1/2)
@@ -2822,15 +2715,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(57832, {	-- Journeyman's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57832),	-- Journeyman's Helm
 						i(131657, {	-- Journeyman's Headguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57853, {	-- Proudmoore Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57853),	-- Proudmoore Cloak
 						i(33249, {	-- Boots of the Skirmisher
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -2851,12 +2740,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 23941 },	-- Gavis Greyshield
 							["coord"] = { 76.4, 56.8, DUSTWALLOW_MARSH },
 						}),
-						i(33274, {	-- Mercenary's Crossbow
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
-						i(33232, {	-- Journeyman's Cowl
-							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
-						}),
+						i(33274),	-- Mercenary's Crossbow
+						i(33232),	-- Journeyman's Cowl
 						i(33249, {	-- Boots of the Skirmisher
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -3041,9 +2926,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
-						i(6757, {	-- Jaina's Signet Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6757),	-- Jaina's Signet Ring
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -3358,9 +3241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(33252, {	-- Gleaming Scale Breastplate
 							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
-						i(33250, {	-- Archer's Wristguard
-							["timeline"] = { ADDED_2_3_0 },
-						}),
+						i(33250),	-- Archer's Wristguard
 						i(57851, {	-- Swamp Gas Gauntlets
 							["timeline"] = { ADDED_4_0_3 },
 						}),

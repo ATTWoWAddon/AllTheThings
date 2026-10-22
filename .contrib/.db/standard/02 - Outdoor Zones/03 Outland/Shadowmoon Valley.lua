@@ -134,7 +134,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31926, {	-- Grand Master Antari
 								["sourceAchievement"] = 6604,	-- Taming Outland
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies

@@ -104,18 +104,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
 					-- #endif
-					i(42511, {	-- Savage Gladiator's Baton of Light
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-					i(42448, {	-- Savage Gladiator's Touch of Defeat
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-					i(42517, {	-- Savage Gladiator's Piercing Touch
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-					i(42214, {	-- Savage Gladiator's Waraxe
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					i(42511),	-- Savage Gladiator's Baton of Light
+					i(42448),	-- Savage Gladiator's Touch of Defeat
+					i(42517),	-- Savage Gladiator's Piercing Touch
+					i(42214),	-- Savage Gladiator's Waraxe
 					-- Other Savage Gladiator weapons have never been implemented
 					i(42557, {	-- Savage Gladiator's Barrier
 						["timeline"] = { CREATED_3_0_2, ADDED_7_2_0 },
@@ -374,7 +366,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						-- #endif
 						moh(5, i(42512, {	-- Hateful Gladiator's Baton of Light
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP
@@ -398,7 +389,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						-- #endif
 						moh(5, i(42518, {	-- Hateful Gladiator's Piercing Touch
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP
@@ -419,7 +409,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 						-- #endif
 						moh(5, i(42501, {	-- Hateful Gladiator's Touch of Defeat
 							-- #if ANYCLASSIC
-							["timeline"] = { ADDED_3_0_2 },
 							-- #endif
 						})),
 						-- #if AFTER MOP

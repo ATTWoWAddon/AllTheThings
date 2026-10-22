@@ -493,12 +493,10 @@ profession(BLACKSMITHING, {
 					-- #endif
 					applyclassicphase(WRATH_PHASE_ONE, {
 						["name"] = "Corroded Saronite Edge",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55183,
 					}),
 					applyclassicphase(WRATH_PHASE_ONE, {
 						["name"] = "Corroded Saronite Woundbringer",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 55184,
 					}),
 					-- #if BEFORE 7.1.5
@@ -511,13 +509,11 @@ profession(BLACKSMITHING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Emberforged Hammer",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36128,
 						["requireSkill"] = 9787,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Light Skyforged Axe",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36126,
 						["requireSkill"] = 9787,
 					}),
@@ -538,13 +534,11 @@ profession(BLACKSMITHING, {
 					-- #if BEFORE TBC
 					{
 						["name"] = "The Shatterer",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 10003,
 						["requireSkill"] = 9787,
 					},
 					{
 						["name"] = "Truesilver Champion",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 10015,
 						["requireSkill"] = 9787,
 					},

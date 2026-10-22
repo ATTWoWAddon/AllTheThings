@@ -63,9 +63,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(93669, {	-- Gusting Grimoire (PET!)
 				["timeline"] = { ADDED_5_2_0 },
 			}),
-			i(23713, {	-- Hippogryph Hatchling (PET!)
-				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
-			}),
+			i(23713),	-- Hippogryph Hatchling (PET!)
 			i(68840, {	-- Landro's Lichling (PET!)
 				["timeline"] = { ADDED_4_1_0 },
 			}),
@@ -177,9 +175,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 			i(49284, {	-- Swift Spectral Tiger (MOUNT!) [BoE]
 				["timeline"] = { ADDED_3_2_0 },
 			}),
-			i(23720, {	-- Riding Turtle (MOUNT!)
-				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
-			}),
+			i(23720),	-- Riding Turtle (MOUNT!)
 			i(69228, {	-- Savage Raptor (MOUNT!)
 				["timeline"] = { ADDED_4_1_0 },
 			}),
@@ -208,21 +204,15 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		filter(SHIRTS, {
 			["timeline"] = { ADDED_3_1_0 },
 			["groups"] = {
-				i(45037, {	-- Epic Purple Shirt
-					["timeline"] = { ADDED_3_1_0 },
-				}),
+				i(45037),	-- Epic Purple Shirt
 			}
 		}),
 		filter(TABARDS, {
 			i(38312, {	-- Tabard of Brilliance
 				["timeline"] = { ADDED_2_4_3 },
 			}),
-			i(23705, {	-- Tabard of Flame
-				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
-			}),
-			i(23709, {	-- Tabard of Frost
-				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
-			}),
+			i(23705),	-- Tabard of Flame
+			i(23709),	-- Tabard of Frost
 			i(38313, {	-- Tabard of Fury
 				["timeline"] = { ADDED_2_4_3 },
 			}),

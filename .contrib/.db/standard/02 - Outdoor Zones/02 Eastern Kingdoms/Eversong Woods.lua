@@ -1084,7 +1084,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				fp(82, {	-- Silvermoon City [Horde]
 					["cr"] = 16192,	-- Skymistress Gloaming <Dragonhawk Master>
 					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
-					["timeline"] = { ADDED_2_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1207,9 +1206,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
-						i(24136, {	-- Farstrider's Bow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(24136),	-- Farstrider's Bow
 						-- #if BEFORE CATA
 						recipe(6991),	-- Feed Pet
 						recipe(982),	-- Revive Pet
@@ -1247,9 +1244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/6 Eversong Ranger Blessed
 							["provider"] = { "n", 15938 },	-- Eversong Ranger
 						}),
-						i(23924, {	-- Robes of Silvermoon
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(23924),	-- Robes of Silvermoon
 					},
 				}),
 				q(8350, {	-- Completing the Delivery
@@ -2166,19 +2161,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(64915, {	-- Cape of Silvermoon
 							["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64916, {	-- Mantle of Silvermoon
 							["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64914, {	-- Shroud of Silvermoon
 							["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67535, {	-- Silvermoon Satchel
 							["minReputation"] = { FACTION_SILVERMOON_CITY, REVERED },	-- Silvermoon City, Revered.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

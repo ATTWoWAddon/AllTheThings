@@ -245,7 +245,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31909, {	-- Grand Master Trixxy
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["isDaily"] = true,
 							["groups"] = {
 								i(89125),	-- Sack of Pet Supplies
@@ -325,21 +324,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Hell-Hoot slain
 							["provider"] = { "n", 50044 },	-- Hell-Hoot
 						}),
-						i(67168, {	-- Gloves of the Infernal Nocturnal
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67185, {	-- Hell-Hoot Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67202, {	-- Vest of the Smoking Pit
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67225, {	-- Hoot-Hunter's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67218, {	-- Legend Eater Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67168),	-- Gloves of the Infernal Nocturnal
+						i(67185),	-- Hell-Hoot Mantle
+						i(67202),	-- Vest of the Smoking Pit
+						i(67225),	-- Hoot-Hunter's Leggings
+						i(67218),	-- Legend Eater Boots
 					},
 				}),
 				q(29035, {	-- A Cub's Cravings
@@ -402,7 +391,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 55,
 					["groups"] = {
 						r(26011, {	-- Tranquil Mechanical Yeti
-							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = ENGINEERING,
 						}),
 					},
@@ -512,18 +500,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Grolnar the Berserk slain
 							["provider"] = { "n", 49178 },	-- Grolnar the Berserk
 						}),
-						i(67216, {	-- Firewater Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67166, {	-- Belt of Bloating
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67183, {	-- Bearzerker's Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67200, {	-- Burndl's Bundled Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67216),	-- Firewater Amulet
+						i(67166),	-- Belt of Bloating
+						i(67183),	-- Bearzerker's Spaulders
+						i(67200),	-- Burndl's Bundled Boots
 					},
 				}),
 				q(44952, {	-- Blackrock Depths: Jewel of the Depths
@@ -532,9 +512,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["groups"] = {
-						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { ADDED_7_1_5 },
-						}),
+						i(142357),	-- Plans: Dawn's Edge (RECIPE!)
 						i(142351),	-- Blackrock Ruby (QI!)
 						i(142352),	-- Core of Bael'Gar (QI!)
 						i(142353),	-- Core of Roccor (QI!)
@@ -571,9 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
-						i(12384, {	-- Cache of Mau'ari
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12384),	-- Cache of Mau'ari
 					},
 				}),
 				q(4804, {	-- Chillwind E'ko
@@ -585,9 +561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12457, {	-- Juju Chill
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12457),	-- Juju Chill
 					},
 				}),
 				q(28830, {	-- Chips off the Old Block
@@ -611,18 +585,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 64587 },	-- Fresh-Cut Frostwood
 							["cr"] = 48952,	-- Frostleaf Treant
 						}),
-						i(67213, {	-- Frostleaf Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67163, {	-- Chop Chop Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67180, {	-- Treant-Bark Shoes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67197, {	-- Rocksnitch Helmet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67213),	-- Frostleaf Band
+						i(67163),	-- Chop Chop Boots
+						i(67180),	-- Treant-Bark Shoes
+						i(67197),	-- Rocksnitch Helmet
 					},
 				}),
 				q(5307, {	-- Corruption
@@ -653,9 +619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 13350 },	-- Insignia of the Black Guard
 							["cr"] = 11121,	-- Black Guard Swordsmith
 						}),
-						i(12825, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12825),	-- Plans: Blazing Rapier (RECIPE!)
 					},
 				}),
 				q(29040, {	-- Cub's First Toy
@@ -703,18 +667,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Frostilicus slain
 							["provider"] = { "n", 50251 },	-- Frostilicus
 						}),
-						i(67172, {	-- Cowl of Whistling Winds
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67189, {	-- Frostilicus's Hide
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67206, {	-- Owl Wing Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67221, {	-- Breastplate of the Poetic Orc
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67172),	-- Cowl of Whistling Winds
+						i(67189),	-- Frostilicus's Hide
+						i(67206),	-- Owl Wing Belt
+						i(67221),	-- Breastplate of the Poetic Orc
 						-- #if BEFORE MOP
 						i(67228, {	-- Jadrag's Slicers
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -743,18 +699,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 64465 },	-- Rimepelt's Heart
 							["cr"] = 48765,	-- Rimepelt
 						}),
-						i(67162, {	-- E'ko Gatherer's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67179, {	-- Heart Grippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67212, {	-- Bear Hunter's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67196, {	-- Witch Doctor's Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67162),	-- E'ko Gatherer's Belt
+						i(67179),	-- Heart Grippers
+						i(67212),	-- Bear Hunter's Belt
+						i(67196),	-- Witch Doctor's Spaulders
 					},
 				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
@@ -879,9 +827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12460, {	-- Juju Might
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12460),	-- Juju Might
 					},
 				}),
 				q(4801, {	-- Frostsaber E'ko
@@ -893,9 +839,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12450, {	-- Juju Flurry
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12450),	-- Juju Flurry
 					},
 				}),
 				q(4970, {	-- Frostsaber Provisions
@@ -973,18 +917,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 High Chief Winterfall slain
 							["provider"] = { "n", 10738 },	-- High Chief Winterfall
 						}),
-						i(67210, {	-- Wand of Sudden Changes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67159, {	-- Furbolg Fur Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67176, {	-- Princess Zoe's Old Hunting Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67193, {	-- Ambush Armguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67210),	-- Wand of Sudden Changes
+						i(67159),	-- Furbolg Fur Bracers
+						i(67176),	-- Princess Zoe's Old Hunting Gloves
+						i(67193),	-- Ambush Armguards
 					},
 				}),
 				q(5121, {	-- High Chief Winterfall
@@ -998,15 +934,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 10738 },	-- High Chief Winterfall
 							["coord"] = { 69.6, 38.2, WINTERSPRING },
 						}),
-						i(15784, {	-- Crystal Breeze Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15786, {	-- Fernpulse Jerkin
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15787, {	-- Willow Band Hauberk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15784),	-- Crystal Breeze Mantle
+						i(15786),	-- Fernpulse Jerkin
+						i(15787),	-- Willow Band Hauberk
 					},
 				}),
 				q(29038, {	-- Hunting Practice
@@ -1030,18 +960,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(64665),	-- Instant Ice Block (PQI!)
 						--
-						i(67181, {	-- Kilram's Killer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67164, {	-- Lilith the Lithe's Little Hammer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67214, {	-- Scourgebane's Slicer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67198, {	-- Scourgebane's Sword
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67181),	-- Kilram's Killer
+						i(67164),	-- Lilith the Lithe's Little Hammer
+						i(67214),	-- Scourgebane's Slicer
+						i(67198),	-- Scourgebane's Sword
 					},
 				}),
 				q(4805, {	-- Ice Thistle E'ko
@@ -1200,21 +1122,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 48665},	-- Wretched Spectre
 							},
 						}),
-						i(67161, {	-- Dagger of Wretched Spectres
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67195, {	-- Mace of the Sin'dorei Spirit
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67178, {	-- Blade of Wretched Spirits
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67161),	-- Dagger of Wretched Spectres
+						i(67195),	-- Mace of the Sin'dorei Spirit
+						i(67178),	-- Blade of Wretched Spirits
 						i(157021, {	-- Staff of Haunted Memory
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(67211, {	-- Orb of Kel'theril
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67211),	-- Orb of Kel'theril
 					},
 				}),
 				q(5057, {	-- Past Endeavors
@@ -1227,9 +1141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["lvl"] = 53,
 					["groups"] = {
-						i(15704, {	-- Hunter's Insignia Medal
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15704),	-- Hunter's Insignia Medal
 					},
 				}),
 				q(28641, {	-- Pride of the Dinner Table
@@ -1258,15 +1170,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 7524},	-- Anguished Highborne
 							},
 						}),
-						i(67177, {	-- Amulet of the Kaldorei Spirit
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67160, {	-- Dagger of Suffering
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67194, {	-- Zin-Malor Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67177),	-- Amulet of the Kaldorei Spirit
+						i(67160),	-- Dagger of Suffering
+						i(67194),	-- Zin-Malor Ring
 					},
 				}),
 				q(5981, {	-- Rampaging Giants
@@ -1319,12 +1225,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { BURNING_STEPPES },
 					["lvl"] = 50,
 					["groups"] = {
-						i(15862, {	-- Blitzcleaver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15863, {	-- Grave Scepter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15862),	-- Blitzcleaver
+						i(15863),	-- Grave Scepter
 					},
 				}),
 				q(28610, {	-- Rubble Trouble
@@ -1380,9 +1282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12455, {	-- Juju Ember
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12455),	-- Juju Ember
 					},
 				}),
 				q(28742, {	-- Shy-Rotam
@@ -1394,21 +1294,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Shy-Rotam slain
 							["provider"] = { "n", 10737 },	-- Shy-Rotam
 						}),
-						i(67169, {	-- Shy Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67186, {	-- Shy Shrug
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67219, {	-- Breastplate of the Fifth Hunter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67203, {	-- Frostsaber Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67226, {	-- Corpse Dragger's Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67169),	-- Shy Breastplate
+						i(67186),	-- Shy Shrug
+						i(67219),	-- Breastplate of the Fifth Hunter
+						i(67203),	-- Frostsaber Helm
+						i(67226),	-- Corpse Dragger's Shield
 					},
 				}),
 				q(5056, {	-- Shy-Rotam
@@ -1440,12 +1330,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						-- #endif
-						i(15783, {	-- Beasthunter Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15782, {	-- Beaststalker Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15783),	-- Beasthunter Dagger
+						i(15782),	-- Beaststalker Blade
 					},
 				}),
 				q(5601, {	-- Sister Pamela
@@ -1486,9 +1372,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 13352 },	-- Vosh'gajin's Snakestone
 							["cr"] = 9236,	-- Shadow Hunter Vosh'gajin
 						}),
-						i(12821, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12821),	-- Plans: Dawn's Edge (RECIPE!)
 					},
 				}),
 				q(28707, {	-- Spray it Again
@@ -1512,15 +1396,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(64677),	-- Box of Bugkill Fumigators (PQI!)
 						--
-						i(67205, {	-- Ring of Pesticide
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67171, {	-- Curtainfire Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67188, {	-- Fumigator's Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67205),	-- Ring of Pesticide
+						i(67171),	-- Curtainfire Mantle
+						i(67188),	-- Fumigator's Legguards
 					},
 				}),
 				q(5250, {	-- Starfall
@@ -1575,9 +1453,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
-						i(15789, {	-- Deep River Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15789),	-- Deep River Cloak
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1608,9 +1484,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 13351 },	-- Crimson Hammersmith's Apron
 							["cr"] = 11120,	-- Crimson Hammersmith
 						}),
-						i(228311, {	-- Plans: Finely-Enchanted Battlehammer (RECIPE!)
-							["timeline"] = { ADDED_1_15_3 },
-						}),
+						i(228311),	-- Plans: Finely-Enchanted Battlehammer (RECIPE!)
 					},
 				})),
 				-- #endif
@@ -1647,15 +1521,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 13351 },	-- Crimson Hammersmith's Apron
 							["cr"] = 11120,	-- Crimson Hammersmith
 						}),
-						i(12824, {	-- Plans: Enchanted Battlehammer (RECIPE!)
-							["timeline"] = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
-								REMOVED_4_0_3,
-								-- #endif
-							},
-						}),
+						i(12824),	-- Plans: Enchanted Battlehammer (RECIPE!)
 					},
 				}),
 				q(28841, {	-- The Arcane Storm Within
@@ -1675,15 +1541,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
 					["groups"] = {
-						i(15791, {	-- Turquoise Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15792, {	-- Plow Wood Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15795, {	-- Emerald Mist Gauntlets
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15791),	-- Turquoise Sash
+						i(15792),	-- Plow Wood Spaulders
+						i(15795),	-- Emerald Mist Gauntlets
 					},
 				}),
 				q(28536, {	-- The Curse of Zin-Malor
@@ -1822,18 +1682,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 10916 },	-- Winterfall Runner
 							},
 						}),
-						i(67158, {	-- Donova's Fuzzy Robe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67175, {	-- Hot Spring Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67192, {	-- Snowden Legwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67209, {	-- Winterfall Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67158),	-- Donova's Fuzzy Robe
+						i(67175),	-- Hot Spring Sandals
+						i(67192),	-- Snowden Legwraps
+						i(67209),	-- Winterfall Belt
 					},
 				}),
 				q(5082, {	-- Threat of the Winterfall
@@ -1957,18 +1809,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						--
 						i(66061),	-- Bluescale Sigil (PQI!)
 						--
-						i(67222, {	-- Umbranse's Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67174, {	-- Bracers of Mazthoril
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67191, {	-- Dreamcatcher Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67208, {	-- Nam's Gauntlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67222),	-- Umbranse's Staff
+						i(67174),	-- Bracers of Mazthoril
+						i(67191),	-- Dreamcatcher Helm
+						i(67208),	-- Nam's Gauntlets
 					},
 				}),
 				q(28639, {	-- Ursius
@@ -1980,21 +1824,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Ursius slain
 							["provider"] = { "n", 10806 },	-- Ursius
 						}),
-						i(67167, {	-- Shardtooth Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67184, {	-- Ursius's Cap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67217, {	-- Bracers of Considerable Influence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67201, {	-- Bear Oiled Chainmail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67224, {	-- Morcott's Bow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67167),	-- Shardtooth Gloves
+						i(67184),	-- Ursius's Cap
+						i(67217),	-- Bracers of Considerable Influence
+						i(67201),	-- Bear Oiled Chainmail
+						i(67224),	-- Morcott's Bow
 					},
 				}),
 				q(5054, {	-- Ursius of the Shardtooth
@@ -2037,9 +1871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12458, {	-- Juju Guile
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12458),	-- Juju Guile
 					},
 				}),
 				q(4802, {	-- Winterfall E'ko
@@ -2051,9 +1883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 55,
 					["groups"] = {
-						i(12451, {	-- Juju Power
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12451),	-- Juju Power
 					},
 				}),
 				q(5083, {	-- Winterfall Firewater
@@ -2118,15 +1948,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								50251,	-- Frostilicus
 							},
 						}),
-						i(67173, {	-- Haleh's Warm Legwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67190, {	-- Ice Avatar Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67207, {	-- Winterwater Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67173),	-- Haleh's Warm Legwraps
+						i(67190),	-- Ice Avatar Legguards
+						i(67207),	-- Winterwater Cloak
 					},
 				}),
 				q(28472, {	-- Words of the High Chief
@@ -2176,21 +2000,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 12928 },	-- Umi's Mechanical Yeti
 							},
 						}),
-						i(67223, {	-- Umi's Masterful Shooter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67165, {	-- Everlook Snow Shoes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67182, {	-- Helm of Yetiphobia
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67199, {	-- Prankster's Fingers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67215, {	-- Amusing Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67223),	-- Umi's Masterful Shooter
+						i(67165),	-- Everlook Snow Shoes
+						i(67182),	-- Helm of Yetiphobia
+						i(67199),	-- Prankster's Fingers
+						i(67215),	-- Amusing Pauldrons
 						i(15778),	-- Mechanical Yeti
 					},
 				}),
@@ -2205,21 +2019,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 207293 },	-- Chillwind Eggs
 							},
 						}),
-						i(67220, {	-- Goodgrub Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67170, {	-- Gourmand's Sash
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67187, {	-- Snow Nest Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67204, {	-- Chillwind Scale Armguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(67227, {	-- Chimaera Heart Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(67220),	-- Goodgrub Cloak
+						i(67170),	-- Gourmand's Sash
+						i(67187),	-- Snow Nest Bracers
+						i(67204),	-- Chillwind Scale Armguards
+						i(67227),	-- Chimaera Heart Pendant
 					},
 				}),
 			}),
@@ -2401,9 +2205,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.0, 73.9, WINTERSPRING },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
-						i(122224, {	-- Music Roll: Mountains
-							["timeline"] = { ADDED_6_1_0 },
-						}),
+						i(122224),	-- Music Roll: Mountains
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2485,9 +2287,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.8, 51.6, WINTERSPRING },
 					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
-						i(69239, {	-- Winterspring Cub (PET!)
-							["timeline"] = { ADDED_4_1_0 },
-						}),
+						i(69239),	-- Winterspring Cub (PET!)
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY

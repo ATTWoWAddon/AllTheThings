@@ -153,7 +153,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(32434, {	-- Burning Pandaren Spirit
 								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-								["timeline"] = { ADDED_5_1_0 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(93146, {	-- Pandaren Spirit Pet Supplies
@@ -177,7 +176,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31991, {	-- Grand Master Zusshi
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -1913,8 +1911,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{"sub","common_vendor",65172}},	-- Len at Arms <Adventuring Supplies>
 					}),
 				}),
-				n(ZONE_DROPS, {
-				}),
+				n(ZONE_DROPS),
 			},
 		}),
 	}),

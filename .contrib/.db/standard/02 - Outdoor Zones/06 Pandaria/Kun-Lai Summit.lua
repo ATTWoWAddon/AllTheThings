@@ -210,12 +210,10 @@ root(ROOTS.Zones, {
 				petbattles({
 					n(66738, {	-- Courageous Yon <Grand Master Pet Tamer>
 						["coord"] = { 35.8, 73.6, KUN_LAI_SUMMIT },
-						["timeline"] = { ADDED_5_0_4 },
 						["petBattleLvl"] = 25,
 						["groups"] = {
 							q(31956, {	-- Grand Master Yon
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -242,7 +240,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(32441, {	-- Thundering Pandaren Spirit
 								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-								["timeline"] = { ADDED_5_1_0 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(93149, {	-- Pandaren Spirit Pet Supplies
@@ -3274,9 +3271,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_6_0_2 },
 						["groups"] = {
-							elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-								["timeline"] = { ADDED_6_0_2 },
-							})),
+							elitepvp(i(120286)),	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							n(WEAPONS, {
 								moh(80, iensemble(144250, {	-- Arsenal: Prideful Gladiator's Weapons (H)
 									["timeline"] = { ADDED_7_1_5 },

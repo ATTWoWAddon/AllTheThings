@@ -405,12 +405,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["lvl"] = 20,
 					["groups"] = {
-						i(9536, {	-- Fairywing Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9535, {	-- Fire-welded Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9536),	-- Fairywing Mantle
+						i(9535),	-- Fire-welded Bracers
 					},
 				}),
 				q(2931, {	-- Castpipe's Task
@@ -443,12 +439,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Prismatic Punch Card
 							["provider"] = { "i", 9316 },	-- Prismatic Punch Card
 						}),
-						i(9604, {	-- Mechanic's Pipehammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9605, {	-- Repairman's Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9604),	-- Mechanic's Pipehammer
+						i(9605),	-- Repairman's Cape
 					},
 				}),
 				q(2924, {	-- Essential Artificials
@@ -545,12 +537,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/24 Robo-mechanical Guts
 							["provider"] = { "i", 9309 },	-- Robo-mechanical Guts
 						}),
-						i(9608, {	-- Shoni's Disarming Tool
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9609, {	-- Shilly Mitts
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9608),	-- Shoni's Disarming Tool
+						i(9609),	-- Shilly Mitts
 					},
 				}),
 				q(26943, {	-- Home Sweet Gnome
@@ -630,15 +618,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 9299 },	-- Thermaplugg's Safe Combination
 							["cr"] = 7800,	-- Mekgineer Thermaplugg
 						}),
-						i(9623, {	-- Civinad Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9625, {	-- Dual Reinforced Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9624, {	-- Triprunner Dungarees
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9623),	-- Civinad Robes
+						i(9625),	-- Dual Reinforced Leggings
+						i(9624),	-- Triprunner Dungarees
 					},
 				}),
 				q(2922, {	-- Save Techbot's Brain!
@@ -672,15 +654,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Mekgineer Thermaplugg
 							["provider"] = { "n", 7800 },	-- Mekgineer Thermaplugg
 						}),
-						i(9623, {	-- Civinad Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9625, {	-- Dual Reinforced Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9624, {	-- Triprunner Dungarees
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9623),	-- Civinad Robes
+						i(9625),	-- Dual Reinforced Leggings
+						i(9624),	-- Triprunner Dungarees
 					},
 				}),
 				q(26939, {	-- The G-Team (1/3) [Alliance]
@@ -837,9 +813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9277),	-- Techbot's Memory Core
 					-- #if BEFORE 10.1.7
-					i(9444, {	-- Techbot CPU Shell
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					i(9444),	-- Techbot CPU Shell
 					-- #endif
 				},
 			}),

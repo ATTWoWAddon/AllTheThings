@@ -59,7 +59,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31908, {	-- Elena Flutterfly
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -99,9 +98,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						recipe(1066),	-- Aquatic Form
 						-- #endif
-						i(16608, {	-- Aquarius Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16608),	-- Aquarius Belt
 					},
 				},
 				q(5931, {	-- Back to Darnassus
@@ -348,7 +345,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isYearly"] = true,
 					["groups"] = {
 						title(358, {	-- <Name>, Adventuring Instructor
-							["timeline"] = { ADDED_7_2_5 },
 							["collectible"] = false,
 						}),
 					},
@@ -439,12 +435,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63469 },	-- Breath of Cenarius
 							["cr"] = 9024,	-- Pyromancer Loregrain
 						}),
-						i(65638, {	-- Headdress of the Green Circle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65617, {	-- Headdress of the Verdant Circle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65638),	-- Headdress of the Green Circle
+						i(65617),	-- Headdress of the Verdant Circle
 					},
 				}),
 				q(1015, {	-- The New Frontier [Stormwind City]
@@ -647,12 +639,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18400, {	-- Ring of Living Stone
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18402, {	-- Glowing Crystal Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18400),	-- Ring of Living Stone
+						i(18402),	-- Glowing Crystal Ring
 					},
 				}),
 				q(1185, {	-- Under the Chitin Was...

@@ -111,7 +111,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31914, {	-- Durin Darkhammer
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -224,9 +223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								9697,	-- Giant Ember Worg
 							},
 						}),
-						i(64503, {	-- Ember Worg Eye
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64503),	-- Ember Worg Eye
 					},
 				}),
 				q(28420, {	-- A Future Project (H)
@@ -729,18 +726,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 48118 },	-- Smolderthorn Shaman
 							},
 						}),
-						i(64510, {	-- Oreknuckle Gun
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64509, {	-- Unburdened Pauldrons
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64508, {	-- Black Tooth Helm
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64507, {	-- Vest of Welcome
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64510),	-- Oreknuckle Gun
+						i(64509),	-- Unburdened Pauldrons
+						i(64508),	-- Black Tooth Helm
+						i(64507),	-- Vest of Welcome
 					},
 				}),
 				q(28426, {	-- Chiselgrip, the Heart of the Steppes (H)
@@ -825,15 +814,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 47822 },	-- Fettered Bronze Whelpling
 							},
 						}),
-						i(64496, {	-- Hatchlings' Protector
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64495, {	-- Whelp Keeper's Staff
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64497, {	-- Flamestar Amulet
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64496),	-- Hatchlings' Protector
+						i(64495),	-- Whelp Keeper's Staff
+						i(64497),	-- Flamestar Amulet
 					},
 				}),
 				q(28417, {	-- Done Nothing Wrong (H)
@@ -867,15 +850,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 47822 },	-- Fettered Bronze Whelpling
 							},
 						}),
-						i(64500, {	-- Flamestar Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64499, {	-- Hatchlings' Protector
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64498, {	-- Whelp Keeper's Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64500),	-- Flamestar Amulet
+						i(64499),	-- Hatchlings' Protector
+						i(64498),	-- Whelp Keeper's Staff
 						i(156964, {	-- Clutch Rearrangement Tool
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -930,21 +907,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64537, {	-- Breastplate of the Mobile Batallion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64536, {	-- Gauntlents of Completion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64535, {	-- Belt of Preparation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64534, {	-- Kubit's Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64533, {	-- Stratagem Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64537),	-- Breastplate of the Mobile Batallion
+						i(64536),	-- Gauntlents of Completion
+						i(64535),	-- Belt of Preparation
+						i(64534),	-- Kubit's Dagger
+						i(64533),	-- Stratagem Band
 					},
 				}),
 				q(28441, {	-- Enough Damage For One Day (H)
@@ -954,21 +921,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64542, {	-- Worn Argent Crusader's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64541, {	-- Blackrock Shaman's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64540, {	-- Belt of Preparation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64539, {	-- Kubit's Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64538, {	-- Stratagem Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64542),	-- Worn Argent Crusader's Breastplate
+						i(64541),	-- Blackrock Shaman's Gloves
+						i(64540),	-- Belt of Preparation
+						i(64539),	-- Kubit's Dagger
+						i(64538),	-- Stratagem Band
 					},
 				}),
 				q(3823, {	-- Extinguish the Firegut
@@ -1087,18 +1044,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/4 Chiseled Golems trained
 							["provider"] = { "n", 48037 },	-- Chiseled Golem <Thorium Brotherhood>
 						}),
-						i(64524, {	-- Chiselgrip Shield
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64523, {	-- Combat Training Vest
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64522, {	-- Bracers of Friendly Favors
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64521, {	-- Tutor's Cloak
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64524),	-- Chiselgrip Shield
+						i(64523),	-- Combat Training Vest
+						i(64522),	-- Bracers of Friendly Favors
+						i(64521),	-- Tutor's Cloak
 					},
 				}),
 				q(3824, {	-- Gor'tesh the Brute Lord
@@ -1208,9 +1157,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 11058 },	-- Sha'ni's Nose-Ring
 							["cr"] = 8977,	-- Krom'Grul
 						}),
-						i(11869, {	-- Sha'ni's Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11869),	-- Sha'ni's Ring
 					},
 				}),
 				{	-- Latent Demons of the Land
@@ -1250,9 +1197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11642, {	-- Lesser Arcanum of Constitution
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11642),	-- Lesser Arcanum of Constitution
 					},
 				}),
 				q(4483, {	-- Libram of Resilience
@@ -1269,9 +1214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11644, {	-- Lesser Arcanum of Resilience
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11644),	-- Lesser Arcanum of Resilience
 					},
 				}),
 				q(4463, {	-- Libram of Rumination
@@ -1288,9 +1231,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11622, {	-- Lesser Arcanum of Rumination
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11622),	-- Lesser Arcanum of Rumination
 					},
 				}),
 				q(4482, {	-- Libram of Tenacity
@@ -1307,9 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11643, {	-- Lesser Arcanum of Tenacity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11643),	-- Lesser Arcanum of Tenacity
 					},
 				}),
 				q(4484, {	-- Libram of Voracity
@@ -1326,21 +1265,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11647, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11648, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11649, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11645, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11646, {	-- Lesser Arcanum of Voracity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11647),	-- Lesser Arcanum of Voracity
+						i(11648),	-- Lesser Arcanum of Voracity
+						i(11649),	-- Lesser Arcanum of Voracity
+						i(11645),	-- Lesser Arcanum of Voracity
+						i(11646),	-- Lesser Arcanum of Voracity
 					},
 				}),
 				q(28327, {	-- Locked and Loaded (A)
@@ -1352,21 +1281,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64563, {	-- Bracers of Misbehavior
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64562, {	-- Mischievous Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64561, {	-- Sly Slider Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64560, {	-- Faux Warlock Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64559, {	-- Glassy Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64563),	-- Bracers of Misbehavior
+						i(64562),	-- Mischievous Spaulders
+						i(64561),	-- Sly Slider Gloves
+						i(64560),	-- Faux Warlock Slippers
+						i(64559),	-- Glassy Band
 					},
 				}),
 				q(28453, {	-- Locked and Loaded (H)
@@ -1380,21 +1299,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64568, {	-- Bracers of Misbehavior
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64567, {	-- Mischievous Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64566, {	-- Sly Slider Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64565, {	-- Faux Warlock Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64564, {	-- Glassy Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64568),	-- Bracers of Misbehavior
+						i(64567),	-- Mischievous Spaulders
+						i(64566),	-- Sly Slider Gloves
+						i(64565),	-- Faux Warlock Slippers
+						i(64564),	-- Glassy Band
 					},
 				}),
 				q(7623, {	-- Lord Banehollow
@@ -1459,9 +1368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 16.7, 42.7, BURNING_STEPPES },
 						}),
-						i(64505, {	-- Obsidian-Flecked Cowl
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64505),	-- Obsidian-Flecked Cowl
 					},
 				}),
 				q(28421, {	-- Mud Hunter (H)
@@ -1478,9 +1385,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 16.7, 42.7, BURNING_STEPPES },
 						}),
-						i(64506, {	-- Obsidian-Flecked Cowl
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64506),	-- Obsidian-Flecked Cowl
 					},
 				}),
 				q(28491, {	-- Not Fireflies, Flameflies
@@ -1496,23 +1401,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 64409 },	-- Flamefly
 							},
 						}),
-						i(64558, {	-- Lava Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64557, {	-- Flamefly Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64556, {	-- Petting Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64558),	-- Lava Boots
+						i(64557),	-- Flamefly Spaulders
+						i(64556),	-- Petting Gloves
 						-- #if BEFORE MOP
 						i(64555, {	-- Kibler's Fetch Toy
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						-- #endif
-						i(66080, {	-- Tiny Flamefly (PET!)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(66080),	-- Tiny Flamefly (PET!)
 					},
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
@@ -1530,12 +1427,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 81.0, 46.0, BURNING_STEPPES },
 						}),
-						i(11867, {	-- Maddening Gauntlets
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11868, {	-- Choking Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11867),	-- Maddening Gauntlets
+						i(11868),	-- Choking Band
 					},
 				}),
 				q(28326, {	-- Placing the Pawns (A)
@@ -1549,18 +1442,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64546, {	-- Breastplate of the Undercover Thorium Brother
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64545, {	-- Subversive Steps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64544, {	-- Bracers of Vigil
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64543, {	-- Pawn's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64546),	-- Breastplate of the Undercover Thorium Brother
+						i(64545),	-- Subversive Steps
+						i(64544),	-- Bracers of Vigil
+						i(64543),	-- Pawn's Bracers
 					},
 				}),
 				q(28449, {	-- Placing the Pawns (H)
@@ -1574,18 +1459,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64550, {	-- Breastplate of the Undercover Thorium Brother
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64549, {	-- Subversive Steps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64548, {	-- Flame Crest Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64547, {	-- Pawn's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64550),	-- Breastplate of the Undercover Thorium Brother
+						i(64549),	-- Subversive Steps
+						i(64548),	-- Flame Crest Bracers
+						i(64547),	-- Pawn's Bracers
 					},
 				}),
 				q(28225, {	-- Prove Yer Allegiance
@@ -1679,23 +1556,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 64409 },	-- Flamefly
 							},
 						}),
-						i(64554, {	-- Gor'Tesh's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64553, {	-- Flamefly Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64552, {	-- Belly Rubbers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64554),	-- Gor'Tesh's Boots
+						i(64553),	-- Flamefly Spaulders
+						i(64552),	-- Belly Rubbers
 						-- #if BEFORE MOP
 						i(64551, {	-- Winky's Star
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 						-- #endif
-						i(66080, {	-- Tiny Flamefly (PET!)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(66080),	-- Tiny Flamefly (PET!)
 					},
 				}),
 				{	-- Shadow Boxing
@@ -1725,9 +1594,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 63135 },	-- Razor-Sharp Scorpid Barb
 							["cr"] = 9691,	-- Venomtip Scorpid
 						}),
-						i(64501, {	-- Sharp Scorpid Barb
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64501),	-- Sharp Scorpid Barb
 						i(156965, {	-- Enchanted Scorpid Tail
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1747,9 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 63135 },	-- Razor-Sharp Scorpid Barb
 							["cr"] = 9691,	-- Venomtip Scorpid
 						}),
-						i(64502, {	-- Sharp Scorpid Barb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64502),	-- Sharp Scorpid Barb
 						i(156965, {	-- Enchanted Scorpid Tail
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1817,15 +1682,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64517, {	-- Helm of Serendipity
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64516, {	-- Improvised Breastplate
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64515, {	-- Leggings of the Steppes
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64517),	-- Helm of Serendipity
+						i(64516),	-- Improvised Breastplate
+						i(64515),	-- Leggings of the Steppes
 					},
 				}),
 				q(28436, {	-- Taking the Horn For Ourselves (H)
@@ -1839,15 +1698,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64520, {	-- Helm of Serendipity
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64519, {	-- Improvised Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64518, {	-- Leggings of the Steppes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64520),	-- Helm of Serendipity
+						i(64519),	-- Improvised Breastplate
+						i(64518),	-- Leggings of the Steppes
 					},
 				}),
 				{	-- The Kodocaller's Horn
@@ -1901,24 +1754,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64574, {	-- Golem-Smasher's Grips
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64573, {	-- Razor-Sharp Scorpid Belt
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64572, {	-- Ember Worg Boots
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64571, {	-- Xi'lun's Signet
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64569, {	-- Obsidian-Flecked Cape
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(64570, {	-- Cracked Orb of Dominion
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(64574),	-- Golem-Smasher's Grips
+						i(64573),	-- Razor-Sharp Scorpid Belt
+						i(64572),	-- Ember Worg Boots
+						i(64571),	-- Xi'lun's Signet
+						i(64569),	-- Obsidian-Flecked Cape
+						i(64570),	-- Cracked Orb of Dominion
 					},
 				}),
 				q(28456, {	-- The Spoils of War (H)
@@ -1931,24 +1772,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64580, {	-- Golem-Smasher's Grips
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64579, {	-- Razor-Sharp Scorpid Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64578, {	-- Ember Worg Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64577, {	-- Xi'lun's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64575, {	-- Obsidian-Flecked Cape
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64576, {	-- Cracked Orb of Dominion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64580),	-- Golem-Smasher's Grips
+						i(64579),	-- Razor-Sharp Scorpid Belt
+						i(64578),	-- Ember Worg Boots
+						i(64577),	-- Xi'lun's Signet
+						i(64575),	-- Obsidian-Flecked Cape
+						i(64576),	-- Cracked Orb of Dominion
 					},
 				}),
 				q(28266, {	-- Trial by Magma (A)
@@ -1961,15 +1790,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Magma Lord Kolob slain
 							["provider"] = { "n", 48156 },	-- Magma Lord Kolob
 						}),
-						i(64527, {	-- Bracers of Gladiatorial Combat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64526, {	-- Poorly Styled Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64525, {	-- Magma Lord Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64527),	-- Bracers of Gladiatorial Combat
+						i(64526),	-- Poorly Styled Gloves
+						i(64525),	-- Magma Lord Cloak
 					},
 				}),
 				q(28438, {	-- Trial by Magma (H)
@@ -1982,18 +1805,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Magma Lord Kolob slain
 							["provider"] = { "n", 48156 },	-- Magma Lord Kolob
 						}),
-						i(64532, {	-- Thorg'izog's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64531, {	-- Bracers of Gladiatorial Combat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64530, {	-- Poorly Styled Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64529, {	-- Magma Lord Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64532),	-- Thorg'izog's Band
+						i(64531),	-- Bracers of Gladiatorial Combat
+						i(64530),	-- Poorly Styled Gloves
+						i(64529),	-- Magma Lord Cloak
 					},
 				}),
 				warchiefscommand(q(28667, {	-- Warchief's Command: Burning Steppes!
@@ -2074,9 +1889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								48120,	-- Firegut Reaver
 							},
 						}),
-						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
-							["timeline"] = { ADDED_7_1_5 },
-						}),
+						i(142346),	-- Plans: Bleakwood Hew (RECIPE!)
 					},
 				}),
 			}),
@@ -2321,9 +2134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.9, 44.6, BURNING_STEPPES },
 					["timeline"] = { ADDED_7_1_5 },
 					["groups"] = {
-						i(142346, {	-- Plans: Bleakwood Hew (RECIPE!)
-							["timeline"] = { ADDED_7_1_5 },
-						}),
+						i(142346),	-- Plans: Bleakwood Hew (RECIPE!)
 						i(256331, {	-- Shadowforge Lamppost (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),

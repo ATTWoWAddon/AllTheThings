@@ -158,15 +158,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cost"] = { { "i", 11231, 1 } },	-- Altered Black Dragonflight Molt
 							["cr"] = 9016,	-- Bael'Gar
 						}),
-						i(12066, {	-- Shaleskin Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12082, {	-- Wyrmhide Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12083, {	-- Valconian Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12066),	-- Shaleskin Cape
+						i(12082),	-- Wyrmhide Spaulders
+						i(12083),	-- Valconian Sash
 					},
 				}),
 				q(4242, {	-- Abandoned Hope
@@ -175,15 +169,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(12018, {	-- Conservator Helm
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
-						i(12021, {	-- Shieldplate Sabatons
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
-						i(12041, {	-- Windshear Leggings
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
+						i(12018),	-- Conservator Helm
+						i(12021),	-- Shieldplate Sabatons
+						i(12041),	-- Windshear Leggings
 					},
 				}),
 				q(3981, {	-- Commander Gor'shak
@@ -249,18 +237,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(2, {	-- 0/1 Tablet of Kurniya
 							["provider"] = { "i", 11126 },	-- Tablet of Kurniya
 						}),
-						i(12112, {	-- Crypt Demon Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12114, {	-- Nightfall Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12115, {	-- Stalwart Clutch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12113, {	-- Sunborne Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12112),	-- Crypt Demon Bracers
+						i(12114),	-- Nightfall Gloves
+						i(12115),	-- Stalwart Clutch
+						i(12113),	-- Sunborne Cape
 					},
 				}),
 				q(4182, {	-- Dragonkin Menace
@@ -294,12 +274,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 48,
 					["groups"] = {
-						i(221316, {	-- Premo's Poise-Demanding Uniform
-							["timeline"] = { REMOVED_2_0_1 },
-						}),
-						i(221315, {	-- Rainbow Generator
-							["timeline"] = { REMOVED_2_0_1 },
-						}),
+						i(221316),	-- Premo's Poise-Demanding Uniform
+						i(221315),	-- Rainbow Generator
 					},
 				})),
 				-- #endif
@@ -358,12 +334,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Lost Thunderbrew Recipe
 							["provider"] = { "i", 11312 },	-- Lost Thunderbrew Recipe
 						}),
-						i(12000, {	-- Limb Cleaver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11964, {	-- Swiftstrike Cudgel
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12000),	-- Limb Cleaver
+						i(11964),	-- Swiftstrike Cudgel
 						i(12003),	-- Dark Dwarven Lager
 					},
 				}),
@@ -378,18 +350,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Lord Incendius slain
 							["provider"] = { "n", 9017 },	-- Lord Incendius
 						}),
-						i(12112, {	-- Crypt Demon Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12114, {	-- Nightfall Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12115, {	-- Stalwart Clutch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12113, {	-- Sunborne Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12112),	-- Crypt Demon Bracers
+						i(12114),	-- Nightfall Gloves
+						i(12115),	-- Stalwart Clutch
+						i(12113),	-- Sunborne Cape
 					},
 				}),
 				q(4322, {	-- Jail Break!
@@ -399,15 +363,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
-						i(12061, {	-- Blade of Reckoning
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
-						i(12062, {	-- Skilled Fighting Blade
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
-						i(12065, {	-- Ward of the Elements
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
+						i(12061),	-- Blade of Reckoning
+						i(12062),	-- Skilled Fighting Blade
+						i(12065),	-- Ward of the Elements
 					},
 				}),
 				q(4341, {	-- Kharan Mighthammer
@@ -473,12 +431,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Lost Thunderbrew Recipe
 							["provider"] = { "i", 11312 },	-- Lost Thunderbrew Recipe
 						}),
-						i(12000, {	-- Limb Cleaver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11964, {	-- Swiftstrike Cudgel
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12000),	-- Limb Cleaver
+						i(11964),	-- Swiftstrike Cudgel
 					},
 				}),
 				q(4241, {	-- Marshal Windsor
@@ -1009,9 +963,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 General Angerforge slain
 							["provider"] = { "n", 9033 },	-- General Angerforge
 						}),
-						i(12059, {	-- Conqueror's Medallion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12059),	-- Conqueror's Medallion
 					},
 				}),
 				q(4262, {	-- Overmaster Pyron
@@ -1062,15 +1014,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Ribbly's Head
 							["provider"] = { "i", 11313 },	-- Ribbly's Head
 						}),
-						i(11963, {	-- Penance Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12049, {	-- Splintsteel Armor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11865, {	-- Rancor Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11963),	-- Penance Spaulders
+						i(12049),	-- Splintsteel Armor
+						i(11865),	-- Rancor Boots
 					},
 				}),
 				q(4295, {	-- Rocknot's Ale
@@ -1098,12 +1044,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65640, {	-- Mask of the Farseer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65622, {	-- Headcover of the Farseer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65640),	-- Mask of the Farseer
+						i(65622),	-- Headcover of the Farseer
 					},
 				}),
 				q(28465, {	-- Slaves of the Firelord (H)
@@ -1127,12 +1069,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["qi"] = 64312,	-- Totem of Freedom (QI!)
 					["groups"] = {
-						i(65643, {	-- Mask of the Speaker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65630, {	-- Headcover of the Speaker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65643),	-- Mask of the Speaker
+						i(65630),	-- Headcover of the Speaker
 					},
 				}),
 				q(28399, {	-- Stones of Binding (A)
@@ -1155,9 +1093,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["groups"] = {
-						i(65621, {	-- Horns of Justified Sins
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65621),	-- Horns of Justified Sins
 					},
 				}),
 				q(28459, {	-- Stones of Binding (H)
@@ -1180,9 +1116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65627, {	-- Horns of the Left Hand Path
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65627),	-- Horns of the Left Hand Path
 					},
 				}),
 				q(6402, {	-- Stormwind Rendezvous
@@ -1220,9 +1154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["groups"] = {
-						i(65624, {	-- SI:7 Special Issue Facemask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65624),	-- SI:7 Special Issue Facemask
 					},
 				}),
 				q(28463, {	-- The Dark Iron Army (H)
@@ -1245,9 +1177,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65629, {	-- Facemask of the Shattered Hand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65629),	-- Facemask of the Shattered Hand
 					},
 				}),
 				q(6501, {	-- The Dragon's Eye
@@ -1314,9 +1244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65619, {	-- Helm of the Crown
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65619),	-- Helm of the Crown
 					},
 				}),
 				q(28461, {	-- The Golem Lord's Creations (H)
@@ -1339,9 +1267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65628, {	-- Helm of the Great Hunter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65628),	-- Helm of the Great Hunter
 					},
 				}),
 				q(4286, {	-- The Good Stuff
@@ -1354,9 +1280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/20 Dark Iron Fanny Pack
 							["provider"] = { "i", 11468 },	-- Dark Iron Fanny Pack
 						}),
-						i(11883, {	-- A Dingy Fanny Pack
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11883),	-- A Dingy Fanny Pack
 					},
 				}),
 				q(4123, {	-- The Heart of the Mountain
@@ -1381,9 +1305,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/10 Essence of the Elements
 							["provider"] = { "i", 11129 },	-- Essence of the Elements
 						}),
-						i(12038, {	-- Lagrave's Seal
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12038),	-- Lagrave's Seal
 					},
 				}),
 				q(4201, {	-- The Love Potion
@@ -1409,12 +1331,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cost"] = { { "i", 11412, 1 } },	-- Nagmara's Vial
 							["coord"] = { 31.0, 49.0, UNGORO_CRATER },
 						}),
-						i(11962, {	-- Manacle Cuffs
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11866, {	-- Nagmara's Whipping Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11962),	-- Manacle Cuffs
+						i(11866),	-- Nagmara's Whipping Belt
 					},
 				}),
 				q(4004, {	-- The Princess Saved?
@@ -1425,12 +1343,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(12545, {	-- Eye of Orgrimmar
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12544, {	-- Thrall's Resolve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12545),	-- Eye of Orgrimmar
+						i(12544),	-- Thrall's Resolve
 					},
 				}),
 				q(4363, {	-- The Princess's Surprise
@@ -1441,12 +1355,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
-						i(12548, {	-- Magni's Will
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12543, {	-- Songstone of Ironforge
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12548),	-- Magni's Will
+						i(12543),	-- Songstone of Ironforge
 					},
 				}),
 				q(28398, {	-- The Pyromancer's Grimoire (A)
@@ -1469,9 +1379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["groups"] = {
-						i(65620, {	-- Hood of the Royal Wizard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65620),	-- Hood of the Royal Wizard
 					},
 				}),
 				q(28458, {	-- The Pyromancer's Grimoire (H)
@@ -1494,9 +1402,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65626, {	-- Hood of the Arcane Path
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65626),	-- Hood of the Arcane Path
 					},
 				}),
 				q(4061, {	-- The Rise of the Machines (1/3)
@@ -1540,18 +1446,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(2, {	-- 0/10 Intact Elemental Core
 							["provider"] = { "i", 11269 },	-- Intact Elemental Core
 						}),
-						i(12110, {	-- Raincaster Drape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12109, {	-- Azure Moon Amice
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12111, {	-- Lavaplate Gauntlets
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12108, {	-- Basaltscale Armor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12110),	-- Raincaster Drape
+						i(12109),	-- Azure Moon Amice
+						i(12111),	-- Lavaplate Gauntlets
+						i(12108),	-- Basaltscale Armor
 					},
 				}),
 				q(4003, {	-- The Royal Rescue
@@ -1586,9 +1484,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/12 Information Recovered
 							["provider"] = { "o", 153556 },	-- Thaurissan Relic
 						}),
-						i(12102, {	-- Ring of the Aristocrat
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12102),	-- Ring of the Aristocrat
 					},
 				}),
 				q(4083, {	-- The Spectral Chalice
@@ -1696,15 +1592,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65623, {	-- Helm of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65641, {	-- Faceguard of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65646, {	-- Headguard of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65623),	-- Helm of the Order
+						i(65641),	-- Faceguard of the Order
+						i(65646),	-- Headguard of the Order
 					},
 				}),
 				q(28466, {	-- Weapons of Darkness (Tauren)
@@ -1715,15 +1605,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { PALADIN },
 					["races"] = { TAUREN },
 					["groups"] = {
-						i(65631, {	-- Helm of the Sunwalker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65644, {	-- Faceguard of the Sunwalker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65647, {	-- Headguard of the Sunwalker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65631),	-- Helm of the Sunwalker
+						i(65644),	-- Faceguard of the Sunwalker
+						i(65647),	-- Headguard of the Sunwalker
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
@@ -1752,15 +1636,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
 					["groups"] = {
-						i(65632, {	-- Helm of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65645, {	-- Faceguard of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65648, {	-- Headguard of the Order
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65632),	-- Helm of the Order
+						i(65645),	-- Faceguard of the Order
+						i(65648),	-- Headguard of the Order
 						i(25549),	-- Blood Knight Tabard
 					},
 				}),
@@ -1811,12 +1689,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
-						i(65618, {	-- Faceguard of the Crown
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65639, {	-- Headguard of the Crown
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65618),	-- Faceguard of the Crown
+						i(65639),	-- Headguard of the Crown
 					},
 				}),
 				q(28457, {	-- A Dangerous Alliance [H]
@@ -1828,12 +1702,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
-						i(65625, {	-- Faceguard of the Horde
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65642, {	-- Headguard of the Horde
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65625),	-- Faceguard of the Horde
+						i(65642),	-- Headguard of the Horde
 					},
 				}),
 				-- #if AFTER SL
@@ -2188,9 +2058,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65616, {	-- Crown of the Hallowed
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65616),	-- Crown of the Hallowed
 						-- you are supposed to get these when doing the quest, but i completed it on 2 characters and haven't received them :) possible unknown race requirement?
 						-- Crieve note: The following items are still sourceless on WoWHead, so it's quite possible the intent was to make versions for Allied Races, but Blizzard realized that'd be dumb and smacked the intern that was doing the dumb.
 						-- i(141979),	-- Crown of the Hallowed

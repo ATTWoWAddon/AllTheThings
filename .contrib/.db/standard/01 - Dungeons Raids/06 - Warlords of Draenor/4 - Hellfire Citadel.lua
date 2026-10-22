@@ -108,12 +108,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 			}),
 			d(DIFFICULTY.RAID.MULTI.ALL, {
-				cr(90284, e(1425, {	-- Iron Reaver
-				})),
-				cr(90378, e(1396, {	-- Kilrogg Deadeye
-				})),
-				cr(90316, e(1433, {	-- Shadow-Lord Iskar
-				})),
+				cr(90284, e(1425)),	-- Iron Reaver
+				cr(90378, e(1396)),	-- Kilrogg Deadeye
+				cr(90316, e(1433)),	-- Shadow-Lord Iskar
 				cr(91331, e(1438, {	-- Archimonde
 					i(212780, {	-- Grimoire of the Felbrute Tyrant (CI!)
 						["timeline"] = { ADDED_10_2_5 },
@@ -937,9 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["timeline"] = { REMOVED_7_0_3 },
 						["lvl"] = 100,
 						["groups"] = {
-							i(128422, {	-- Grove Warden (MOUNT!)
-								["timeline"] = { REMOVED_7_0_3 },
-							}),
+							i(128422),	-- Grove Warden (MOUNT!)
 						},
 					}),
 					q(40904, {	-- Shadow of the Defiler

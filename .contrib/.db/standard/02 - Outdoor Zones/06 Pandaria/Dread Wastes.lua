@@ -203,7 +203,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(32439, {	-- Flowing Pandaren Spirit
 								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-								["timeline"] = { ADDED_5_1_0 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(93147, {	-- Pandaren Spirit Pet Supplies
@@ -227,7 +226,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31957, {	-- Grand Master Shu
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies

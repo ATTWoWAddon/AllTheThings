@@ -48,7 +48,6 @@ root(ROOTS.Holidays, applyclassicphase(WRATH_PHASE_ONE, applyevent(EVENTS.KALUAK
 			q(24806, {	-- Better Luck Next Time
 				["qg"] = 38294,	-- Elder Clearwater <Honored Fisher>
 				["coord"] = { 52.6, 65.6, NORTHREND_DALARAN },
-				["timeline"] = { ADDED_3_3_0, REMOVED_5_0_4 },
 				["cost"] = { { "i", 50289, 1 } },	-- Blacktip Shark
 				["repeatable"] = true,
 				["groups"] = {
@@ -58,7 +57,6 @@ root(ROOTS.Holidays, applyclassicphase(WRATH_PHASE_ONE, applyevent(EVENTS.KALUAK
 			q(24803, {	-- Kalu'ak Fishing Derby
 				["qg"] = 38294,	-- Elder Clearwater <Honored Fisher>
 				["coord"] = { 52.6, 65.6, NORTHREND_DALARAN },
-				["timeline"] = { ADDED_3_3_0, REMOVED_5_0_4 },
 				["cost"] = { { "i", 50289, 1 } },	-- Blacktip Shark
 				["isWeekly"] = true,
 				["groups"] = {

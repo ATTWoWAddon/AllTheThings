@@ -544,7 +544,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
-					["timeline"] = { ADDED_3_1_0 },
 					-- #if BEFORE 10.0.5
 					-- #if NOT COMMON_QUALITY_TRANSMOGS
 					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
@@ -556,9 +555,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
 				}),
-				i(45067, {	-- Egg Basket
-					["timeline"] = { ADDED_3_1_0 },
-				}),
+				i(45067),	-- Egg Basket
 			},
 		}),
 		q(13503, {	-- A Tisket, a Tasket, a Noblegarden Basket (H)
@@ -593,7 +590,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					["cost"] = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
-					["timeline"] = { ADDED_3_1_0 },
 					-- #if BEFORE 10.0.5
 					-- #if NOT COMMON_QUALITY_TRANSMOGS
 					-- NOTE: This is an event item that disappears after the end of the event. After common quality transmog, this no longer requires any event.
@@ -605,9 +601,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(188698, {	-- Eagger Basket (TOY!)
 					["timeline"] = { ADDED_9_1_5 },
 				}),
-				i(45067, {	-- Egg Basket
-					["timeline"] = { ADDED_3_1_0 },
-				}),
+				i(45067),	-- Egg Basket
 			},
 		}),
 		q(13484, {	-- Spring Gathers (A)
@@ -717,9 +711,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				objective(1, {	-- 0/20 Brightly Colored Shell Fragment
 					["provider"] = { "i", 44806 },	-- Brightly Colored Shell Fragment
 				}),
-				i(44792, {	-- Blossoming Branch
-					["timeline"] = { ADDED_3_1_0 },
-				}),
+				i(44792),	-- Blossoming Branch
 			},
 		}),
 		q(13479, {	-- The Great Egg Hunt (H)
@@ -758,9 +750,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				objective(1, {	-- 0/20 Brightly Colored Shell Fragment
 					["provider"] = { "i", 44806 },	-- Brightly Colored Shell Fragment
 				}),
-				i(44792, {	-- Blossoming Branch
-					["timeline"] = { ADDED_3_1_0 },
-				}),
+				i(44792),	-- Blossoming Branch
 			},
 		}),
 	}),

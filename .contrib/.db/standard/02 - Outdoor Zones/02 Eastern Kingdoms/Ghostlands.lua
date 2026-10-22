@@ -709,14 +709,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							["description"] = "Use your lockpicking skill to open the Burial Chests.",
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						i(23921, {	-- Bulging Sack of Silver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(23717, {	-- Pitted Gold Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(23921),	-- Bulging Sack of Silver
+						i(23717),	-- Pitted Gold Band
 					},
 				}),
 				q(9145, {	-- Help Ranger Valanna!
@@ -1135,12 +1130,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
 							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
 						}),
-						i(30504, {	-- Leafblade-dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(30505, {	-- Ghostclaw Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(30504),	-- Leafblade-dagger
+						i(30505),	-- Ghostclaw Tunic
 					},
 				}),
 				q(9151, {	-- The Sanctum of the Sun

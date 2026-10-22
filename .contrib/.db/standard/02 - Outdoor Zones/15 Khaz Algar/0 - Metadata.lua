@@ -11,7 +11,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["icon"] = 5901551,
 			["lore"] = "The Capital City of the earthen dwarves of Khaz Algar, located in the center of the Isle of Dorn. It was named in honor of the titanic watchers Dornic and Galan and has been isolated within Khaz Algar for a long while, which resulted in the city's earthen developing their own manners and customs.",
 			["isRaid"] = true,
-			["timeline"] = { ADDED_11_0_2 },
 		}),
 		m(AZJ_KAHET, {
 			["icon"] = 5770809,
@@ -21,18 +20,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 				NERUBAR,
 				NERUBAR_LOWER,
 			},
-			["timeline"] = { ADDED_11_0_2 },
 		}),
 		m(HALLOWFALL, {
 			["icon"] = 5770810,
 			["lore"] = "Hallowfall, situated below the Ringing Deeps and above Azj-Kahet, is an enormous cavern bordered by an endless underground sea. Light, warmth, and growth for vegetation are provided by Beledar, a massive crystal sun embedded in the cavern ceiling, creating a bright and lush environment reminiscent of the surface world.",
 			["maps"] = { 2300 },	-- The Sinkhole
-			["timeline"] = { ADDED_11_0_2 }
 		}),
 		m(ISLE_OF_DORN, {
 			["icon"] = 5770811,
 			["lore"] = "Located on the surface of Khaz Algar, the Isle of Dorn is a lush and verdant paradise with sweeping vistas, cascading waterfalls, and majestic mountains. It is also the ancestral home to the titan-forged Earthen—a race made of living stone imbued with the essence of Azeroth's worldsoul.",
-			["timeline"] = { ADDED_11_0_2 },
 		}),
 		m(KARESH, {
 			["icon"] = 6921878,
@@ -53,7 +49,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 			["icon"] = 5770812,
 			["lore"] = "This gigantic cavern serves as the home of the Machine Speakers, Earthen who maintain the gigantic Titan machines of old.",
 			["maps"] = { 2385 },	-- The Coreway (Ringing Deeps)
-			["timeline"] = { ADDED_11_0_2 },
 		}),
 		m(UNDERMINE, {
 			["icon"] = 6392630,

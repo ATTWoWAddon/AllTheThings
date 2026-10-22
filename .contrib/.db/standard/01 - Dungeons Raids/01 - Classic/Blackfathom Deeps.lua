@@ -69,12 +69,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Lorgus Jett slain
 							["provider"] = { "n", 12902 },	-- Lorgus Jett
 						}),
-						i(17695, {	-- Chestnut Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(17694, {	-- Band of the Fist
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(17695),	-- Chestnut Mantle
+						i(17694),	-- Band of the Fist
 					},
 				}),
 				q(26891, {	-- Amongst the Ruins
@@ -122,12 +118,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
-						i(16886, {	-- Outlaw Sabre
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
-						i(16887, {	-- Witch's Finger
-							["timeline"] = { REMOVED_6_0_2 },
-						}),
+						i(16886),	-- Outlaw Sabre
+						i(16887),	-- Witch's Finger
 					},
 				}),
 				q(26894, {	-- Blackfathom Deeps (H)
@@ -166,12 +158,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5881 },	-- Head of Kelris
 							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
-						i(7002, {	-- Arctic Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7001, {	-- Gravestone Scepter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7002),	-- Arctic Buckler
+						i(7001),	-- Gravestone Scepter
 					},
 				}),
 				q(26882, {	-- Blackfathom Villainy (A) [CATA]
@@ -204,12 +192,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 5881 },	-- Head of Kelris
 							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
-						i(7002, {	-- Arctic Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7001, {	-- Gravestone Scepter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7002),	-- Arctic Buckler
+						i(7001),	-- Gravestone Scepter
 					},
 				}),
 				q(26892, {	-- Deep in the Deeps
@@ -283,15 +267,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 							["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
 						}),
-						i(56660, {	-- Dusk-Stained Cloak
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56658, {	-- Eventide Bow
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56659, {	-- Gloaming Band
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
+						i(56660),	-- Dusk-Stained Cloak
+						i(56658),	-- Eventide Bow
+						i(56659),	-- Gloaming Band
 						i(6743, {	-- Sustaining Ring
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
@@ -336,12 +314,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								4831,	-- Lady Sarevess
 							},
 						}),
-						i(7003, {	-- Beetle Clasps
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7004, {	-- Prelacy Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7003),	-- Beetle Clasps
+						i(7004),	-- Prelacy Cape
 					},
 				}),
 				q(26884, {	-- Researching the Corruption [CATA]
@@ -354,18 +328,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/8 Corrupted Brain Stem
 							["provider"] = { "i", 5952 },	-- Corrupted Brain Stem
 						}),
-						i(56682, {	-- Band of the Skull Crusher
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56679, {	-- Dissector
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56681, {	-- Searching Wand
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56680, {	-- Shadestar Mace
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
+						i(56682),	-- Band of the Skull Crusher
+						i(56679),	-- Dissector
+						i(56681),	-- Searching Wand
+						i(56680),	-- Shadestar Mace
 					},
 				}),
 				-- #if NOT SEASON_OF_DISCOVERY
@@ -478,12 +444,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								4813,	-- Twilight Shadowmage
 							},
 						}),
-						i(7000, {	-- Heartwood Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6998, {	-- Nimbus Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7000),	-- Heartwood Girdle
+						i(6998),	-- Nimbus Boots
 					},
 				}),
 				q(26883, {	-- Twilight Falls [CATA]
@@ -495,21 +457,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/10 Twilight Pendant
 							["provider"] = { "i", 5879 },	-- Twilight Pendant
 						}),
-						i(56697, {	-- Blackfathom Mace
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56698, {	-- Gift of the Enigmatic Tree
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(56699, {	-- Aluwyn's Legguards
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(7000, {	-- Heartwood Girdle
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
-						i(6998, {	-- Nimbus Boots
-							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-						}),
+						i(56697),	-- Blackfathom Mace
+						i(56698),	-- Gift of the Enigmatic Tree
+						i(56699),	-- Aluwyn's Legguards
+						i(7000),	-- Heartwood Girdle
+						i(6998),	-- Nimbus Boots
 					},
 				}),
 			}),
@@ -551,16 +503,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_6_0_2 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(16762, {	-- Fathom Core
-						["timeline"] = { REMOVED_6_0_2 },
-					}),
+					i(16762),	-- Fathom Core
 					n(12876, {	-- Baron Aquanis
 						["description"] = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
-						["timeline"] = { REMOVED_6_0_2 },
 						["groups"] = {
-							i(16782, {	-- Strange Water Globe
-								["timeline"] = { REMOVED_6_0_2 },
-							}),
+							i(16782),	-- Strange Water Globe
 						},
 					}),
 				},
@@ -656,15 +603,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 74505,
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
-					i(120164, {	-- Thruk's Heavy Duty Fishing Pole
-						["timeline"] = { ADDED_6_0_2 },
-					}),
-					i(120165, {	-- Thruk's Fillet Knife
-						["timeline"] = { ADDED_6_0_2 },
-					}),
-					i(120163, {	-- Thruk's Fishing Rod
-						["timeline"] = { ADDED_6_0_2 },
-					}),
+					i(120164),	-- Thruk's Heavy Duty Fishing Pole
+					i(120165),	-- Thruk's Fillet Knife
+					i(120163),	-- Thruk's Fishing Rod
 					i(151437, {	-- Hook Charm Necklace
 						["timeline"] = { ADDED_7_3_0 },
 					}),
@@ -689,12 +630,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 74988,
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
-					i(120167, {	-- Bloody Twilight Cloak
-						["timeline"] = { ADDED_6_0_2 },
-					}),
-					i(120166, {	-- Gorestained Garb
-						["timeline"] = { ADDED_6_0_2 },
-					}),
+					i(120167),	-- Bloody Twilight Cloak
+					i(120166),	-- Gorestained Garb
 				},
 			}),
 			e(437, {	-- Twilight Lord Bathiel
@@ -719,9 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					ach(632),	-- Blackfathom Deeps
-					ach(5041, {	-- Blackfathom Deeps Guild Run
-						["timeline"] = { ADDED_6_0_2 },
-					}),
+					ach(5041),	-- Blackfathom Deeps Guild Run
 					i(6909),	-- Strike of the Hydra
 					i(6911),	-- Moss Cinch
 					i(132553, {	-- Algae-Twined Waistcord

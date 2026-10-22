@@ -256,9 +256,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 			ach(42801, {	-- Journey's End (Season 3)
 				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
 				["groups"] = {
-					title(638, {	-- <Name> the Delver Within
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_1_LAUNCH },
-					}),
+					title(638),	-- <Name> the Delver Within
 				},
 			}),
 			mapped(ach(42799)),	-- Let Her Solo Me
@@ -2600,7 +2598,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ ["timeline"] = { ADDE
 						},
 						["groups"] = {
 							title(641, {	-- <Name> Bronzebeard
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["collectible"] = false,
 							}),
 						},

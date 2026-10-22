@@ -10,27 +10,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, {
 					["provider"] = { "i", 225772 },	-- Artisan's Consortium Advertisement
 					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 					["groups"] = {
-						i(210233, {	-- Forged Gladiator's Heraldry
-							["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
-						}),
+						i(210233),	-- Forged Gladiator's Heraldry
 					},
 				}),
 				q(84925, {	-- Rallying All Rapscallions!
 					["provider"] = { "i", 229401 },	-- Artisan's Consortium Pamphlet
 					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 					["groups"] = {
-						i(229390, {	-- Prized Gladiator's Heraldry
-							["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
-						}),
+						i(229390),	-- Prized Gladiator's Heraldry
 					},
 				}),
 				q(85229, {	-- Rallying All Rapscallions!
 					["provider"] = { "i", 230284 },	-- Artisan's Consortium Pamphlet
 					["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
 					["groups"] = {
-						i(230287, {	-- Astral Gladiator's Heraldry x9
-							["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_1_LAUNCH },
-						}),
+						i(230287),	-- Astral Gladiator's Heraldry x9
 					},
 				}),
 				q(83711, {	-- Weapons of Conquest

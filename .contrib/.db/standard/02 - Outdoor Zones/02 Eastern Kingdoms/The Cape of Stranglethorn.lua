@@ -115,7 +115,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31851, {	-- Bill Buckler
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -169,9 +168,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 49.7, 81.5, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(4130, {	-- Smotts' Compass
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(4130),	-- Smotts' Compass
 					},
 				}),
 				q(26600, {	-- A Giant's Feast
@@ -210,9 +207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 4029 },	-- Akiris Reed
 							["cr"] = 1907,	-- Naga Explorer
 						}),
-						i(4117, {	-- Scorching Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4117),	-- Scorching Sash
 					},
 				}),
 				q(623, {	-- Akiris by the Bundle (2/2)
@@ -351,15 +346,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- Spy on Zanzil the Outcast
 							["provider"] = { "n", 43245 },	-- Zanzil the Outcast
 						}),
-						i(61531, {	-- Veil of the Silent Listener
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61532, {	-- Monnion of the Bat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61533, {	-- Small Pouch of Incense
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61531),	-- Veil of the Silent Listener
+						i(61532),	-- Monnion of the Bat
+						i(61533),	-- Small Pouch of Incense
 						i(131606, {	-- Spaulders of the Bat
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -382,15 +371,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- Spy on Zanzil the Outcast
 							["provider"] = { "n", 43245 },	-- Zanzil the Outcast
 						}),
-						i(61534, {	-- Veil of the Silent Listener
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61535, {	-- Monnion of the Bat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61536, {	-- Small Pouch of Incense
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61534),	-- Veil of the Silent Listener
+						i(61535),	-- Monnion of the Bat
+						i(61536),	-- Small Pouch of Incense
 						i(131554, {	-- Spaulders of the Bat
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -410,21 +393,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 							["coord"] = { 35.8, 66.6, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(61626, {	-- Booty Bay Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61630, {	-- Booty Bay Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61632, {	-- Booty Bay Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61626),	-- Booty Bay Pendant
+						i(61630),	-- Booty Bay Pantaloons
+						i(61632),	-- Booty Bay Helm
 						i(131586, {	-- Booty Bay Trousers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61628, {	-- Star of Stranglethorn
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61628),	-- Star of Stranglethorn
 					},
 				}),
 				q(26610, {	-- Bloodsail Treachery
@@ -498,7 +473,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(11324, {	-- Explorer's Knapsack
 							["coord"] = { 80.8, 46.8, THE_HINTERLANDS },
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -520,9 +494,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								709,	-- Mosh'Ogg Warmonger
 							},
 						}),
-						i(4129, {	-- Collection Plate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4129),	-- Collection Plate
 					},
 				}),
 				q(26826, {	-- Dask "The Flask" Gobfizzle
@@ -569,18 +541,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 40.7, 82.3, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(61570, {	-- Informant's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61572, {	-- Belt of Supremacy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61574, {	-- Sea Baron's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61576, {	-- Pirate's Musket
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61570),	-- Informant's Gloves
+						i(61572),	-- Belt of Supremacy
+						i(61574),	-- Sea Baron's Breastplate
+						i(61576),	-- Pirate's Musket
 						i(131563, {	-- Cord of Supremecy
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -663,18 +627,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/75 Venture Co. Oil Worker slain
 							["provider"] = { "n", 43596 },	-- Venture Co. Oil Worker
 						}),
-						i(61592, {	-- Black Gold Buckler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61594, {	-- Venture Blaster
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61596, {	-- Slippery Glovelettes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61598, {	-- Ironpatch Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61592),	-- Black Gold Buckler
+						i(61594),	-- Venture Blaster
+						i(61596),	-- Slippery Glovelettes
+						i(61598),	-- Ironpatch Shoulderguards
 						i(131573, {	-- Ironpatch Handguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -723,9 +679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 4105 },	-- Elder Crocolisk Skin
 							["cr"] = 2635,	-- Elder Saltwater Crocolisk
 						}),
-						i(4109, {	-- Excelsior Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4109),	-- Excelsior Boots
 					},
 				}),
 				q(8554, {	-- Facing Negolash
@@ -747,7 +701,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #if AFTER CATA
 							["coord"] = { 49.7, 81.2, STRANGLETHORN_VALE },
 							-- #endif
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
 								{ "i", 4595, 5 },	-- Junglevine Wine
@@ -794,9 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 31,
 					["groups"] = {
-						i(12293, {	-- Fine Gold Thread
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12293),	-- Fine Gold Thread
 					},
 				}),
 				q(26624, {	-- Getting In With the Bloodsail
@@ -817,15 +768,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1551 },	-- Ironjaw Basilisk
 							},
 						}),
-						i(61525, {	-- Goris' Medallion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61526, {	-- Staff of First Occurrences
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61527, {	-- Slither-Dog Headguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61525),	-- Goris' Medallion
+						i(61526),	-- Staff of First Occurrences
+						i(61527),	-- Slither-Dog Headguard
 						i(131611, {	-- Slither-Dog Helm
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -951,15 +896,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61549, {	-- Maywiki's Favorite Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61550, {	-- Boots of the Foolhardy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61551, {	-- Cloak of Great Endeavors
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61549),	-- Maywiki's Favorite Ring
+						i(61550),	-- Boots of the Foolhardy
+						i(61551),	-- Cloak of Great Endeavors
 						i(131607, {	-- Treads of the Foolhardy
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -982,15 +921,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 84.0, 36.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61552, {	-- Chabal's Favorite Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61553, {	-- Boots of the Foolhardy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61554, {	-- Cloak of Great Endeavors
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61552),	-- Chabal's Favorite Ring
+						i(61553),	-- Boots of the Foolhardy
+						i(61554),	-- Cloak of Great Endeavors
 						i(131555, {	-- Treads of the Foolhardy
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1006,9 +939,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 4106 },	-- Tumbled Crystal
 							["cr"] = 1096,	-- Venture Co. Geologist
 						}),
-						i(4121, {	-- Gemmed Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4121),	-- Gemmed Gloves
 					},
 				}),
 				q(26435, {	-- I'm A Huge Liar and a Fraud	-- TODO:  part of loremaster?
@@ -1038,12 +969,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 39.1, 46.2, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(61521, {	-- Amulet of Brilliant Talent
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61522, {	-- Helm of Secrets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61521),	-- Amulet of Brilliant Talent
+						i(61522),	-- Helm of Secrets
 					},
 				}),
 				q(26450, {	-- If They're Just Going to Leave Them Lying Around... (H)
@@ -1060,18 +987,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 39.1, 46.2, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(61517, {	-- Sassy Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61518, {	-- Iconic Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61519, {	-- Wandering Hands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61520, {	-- Corpsepump Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61517),	-- Sassy Pantaloons
+						i(61518),	-- Iconic Vest
+						i(61519),	-- Wandering Hands
+						i(61520),	-- Corpsepump Belt
 						i(131530, {	-- Iconic Breastplate
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1187,15 +1106,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 56.8, 52.4, THE_CAPE_OF_STRANGLETHORN },
 							["cr"] = 43377,	-- Ephram "Midriff" Moonfall
 						}),
-						i(61538, {	-- Nice Shorts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61540, {	-- Phase Three Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61542, {	-- Forceful Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61538),	-- Nice Shorts
+						i(61540),	-- Phase Three Bracers
+						i(61542),	-- Forceful Shield
 						i(131558, {	-- Phase Three Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1249,15 +1162,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/9 Bloodsail Corsair slain
 							["provider"] = { "n", 43636 },	-- Bloodsail Corsair
 						}),
-						i(61614, {	-- Supposed Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61616, {	-- Accusing Finger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61618, {	-- Mutineer's Noose
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61614),	-- Supposed Mace
+						i(61616),	-- Accusing Finger
+						i(61618),	-- Mutineer's Noose
 					},
 				}),
 				q(26808, {	-- Maywiki
@@ -1300,9 +1207,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 40.8, 83.2, STRANGLETHORN_VALE },
 							["cr"] = 1559,	-- King Mukla
 						}),
-						i(4118, {	-- Poobah's Nose Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4118),	-- Poobah's Nose Ring
 					},
 				}),
 				q(26603, {	-- Message in a Bottle
@@ -1334,18 +1239,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1493 },	-- Mok'rash the Cleaver
 							["coord"] = { 35.0, 65.4, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						i(61562, {	-- Smott's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61564, {	-- Sea Song Epaulets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61566, {	-- Landlubber Headband
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61568, {	-- Sea Legs
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61562),	-- Smott's Signet
+						i(61564),	-- Sea Song Epaulets
+						i(61566),	-- Landlubber Headband
+						i(61568),	-- Sea Legs
 						i(131561, {	-- Landlubber Helm
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1362,15 +1259,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 63.9, 83.8, THE_CAPE_OF_STRANGLETHORN },
 							["cr"] = 1559,	-- King Mukla
 						}),
-						i(61586, {	-- Princess Poobah's Dress
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61588, {	-- Princess Poobah's Bracelets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61589, {	-- Princess Poobah's Tiara
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61586),	-- Princess Poobah's Dress
+						i(61588),	-- Princess Poobah's Bracelets
+						i(61589),	-- Princess Poobah's Tiara
 						i(131562, {	-- Princess Poobah's Bangles
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1397,18 +1288,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Ninja slain
 							["provider"] = { "n", 43553 },	-- Ninja
 						}),
-						i(61600, {	-- Mortal Naginata
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61600),	-- Mortal Naginata
 						i(61602, {	-- Ninja Star
 							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
-						i(61604, {	-- Other-Eye Patch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61606, {	-- Pauldrons of the Eternal Battle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61604),	-- Other-Eye Patch
+						i(61606),	-- Pauldrons of the Eternal Battle
 						i(131572, {	-- One-Eye Patch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1470,24 +1355,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58813 },	-- Velvety Panther Fur
 							["cr"] = 1713,	-- Elder Shadowmaw Panther
 						}),
-						i(61513, {	-- Fuzzy Legwarmers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61516, {	-- Hambone's Spare Collar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61515, {	-- Supple Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61513),	-- Fuzzy Legwarmers
+						i(61516),	-- Hambone's Spare Collar
+						i(61515),	-- Supple Gloves
 						i(131609, {	-- Supple Support Harness
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131610, {	-- Velvet-Lined Chain Gloves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61514, {	-- Velvety Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61514),	-- Velvety Vest
 					},
 				}),
 				q(26695, {	-- Prepare for Takeoff
@@ -1520,15 +1397,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58813 },	-- Velvety Panther Fur
 							["cr"] = 1713,	-- Elder Shadowmaw Panther
 						}),
-						i(61528, {	-- Velvet Choker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61529, {	-- Hideaway Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61530, {	-- Not-Scratchy Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61528),	-- Velvet Choker
+						i(61529),	-- Hideaway Staff
+						i(61530),	-- Not-Scratchy Helm
 						i(131529, {	-- Not-Scratchy Faceguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1556,15 +1427,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 58901 },	-- Zanzil's Formulation
 							["cr"] = 1490,	-- Zanzil Witch Doctor
 						}),
-						i(61543, {	-- Dask's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61544, {	-- Leggings with Mysterious Stains
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61545, {	-- Glass Encrusted Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61543),	-- Dask's Cloak
+						i(61544),	-- Leggings with Mysterious Stains
+						i(61545),	-- Glass Encrusted Boots
 						i(131608, {	-- Pantaloons with Myserious Stains
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1581,15 +1446,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 58901 },	-- Zanzil's Formulation
 							["cr"] = 1490,	-- Zanzil Witch Doctor
 						}),
-						i(61546, {	-- Formulaic Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61547, {	-- Mixmaster's Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61548, {	-- Boots of Explosive Dancing
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61546),	-- Formulaic Cloak
+						i(61547),	-- Mixmaster's Britches
+						i(61548),	-- Boots of Explosive Dancing
 						i(131551, {	-- Mixmaster's Trousers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1660,7 +1519,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["altQuests"] = { 26629 },	-- Seeing Where Your Loyalties Lie
 							["qg"] = 2487,	-- Fleet Master Seahorn
 							["coord"] = { 41.0, 73.2, THE_CAPE_OF_STRANGLETHORN },
-							["timeline"] = { ADDED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- Return both items to Fleet Master Seahorn
@@ -1806,9 +1664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						i(4113, {	-- Medicine Blanket
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4113),	-- Medicine Blanket
 					},
 				}),
 				q(26597, {	-- Stranglethorn Fever
@@ -1819,7 +1675,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(26598, {	-- The Heart of Mokk
 							["qg"] = 1449,	-- Witch Doctor Unbagwa
 							["coord"] = { 54.1, 46.5, THE_CAPE_OF_STRANGLETHORN },
-							["timeline"] = { ADDED_4_0_3 },
 							["cost"] = { { "i", 2799, 1 } },	-- Gorilla Fang
 							["repeatable"] = true,
 							["groups"] = {
@@ -1831,15 +1686,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						i(61556, {	-- Feverish Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61558, {	-- Savage Handwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61560, {	-- Chestpiece of Returning Strength
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61556),	-- Feverish Bracers
+						i(61558),	-- Savage Handwraps
+						i(61560),	-- Chestpiece of Returning Strength
 						i(131560, {	-- Savage Handguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1878,18 +1727,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["description"] = "You can pay \"Pretty Boy\" Duncan (just outside the door from the lower decks) 1g to swab the decks for you if you don't want to do the minigame.",
 						}),
-						i(61578, {	-- Cleaning Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61580, {	-- Swabbie's Booties
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61582, {	-- Riptide Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61584, {	-- Keelhaul Shackles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61578),	-- Cleaning Britches
+						i(61580),	-- Swabbie's Booties
+						i(61582),	-- Riptide Vest
+						i(61584),	-- Keelhaul Shackles
 						i(131567, {	-- Riptide Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1990,9 +1831,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 							["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
 						}),
-						i(4138, {	-- Blackwater Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4138),	-- Blackwater Tunic
 					},
 				}),
 				q(26609, {	-- The Bloodsail Buccaneers
@@ -2068,9 +1907,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 53.6, 67.8, THE_CAPE_OF_STRANGLETHORN },
 							["cr"] = 1492,	-- Gorlash
 						}),
-						i(11469, {	-- Bloodband Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(11469),	-- Bloodband Bracers
 					},
 				}),
 				q(8553, {	-- The Captain's Cutlass
@@ -2105,9 +1942,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 25.0, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
 						}),
-						i(4120, {	-- Robe of Crystal Waters
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4120),	-- Robe of Crystal Waters
 					},
 				}),
 				q(26700, {	-- The Damsel's (Bad) Luck
@@ -2142,15 +1977,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/6  slain
 							["provider"] = { "n", 43790 },	-- Brashtide Attack Boat
 						}),
-						i(61608, {	-- Mongrel Shooter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61610, {	-- Flight Master's Gift
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61612, {	-- Baron's Baton
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61608),	-- Mongrel Shooter
+						i(61610),	-- Flight Master's Gift
+						i(61612),	-- Baron's Baton
 						i(157000, {	-- Fuse-Cutter Knife
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -2270,12 +2099,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1551,	-- Ironjaw Basilisk
 							},
 						}),
-						i(61523, {	-- Basilisk Scale Necklace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61524, {	-- Helm of Secrets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61523),	-- Basilisk Scale Necklace
+						i(61524),	-- Helm of Secrets
 					},
 				}),
 				q(26811, {	-- Through the Troll Hole (A)
@@ -2336,15 +2161,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/10 Brashtide Raider slain
 							["provider"] = { "n", 43716 },	-- Brashtide Raider <The Brashtide Crew>
 						}),
-						i(61620, {	-- Revilgaz's Cutlass
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61622, {	-- Bruised Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61624, {	-- Brash Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61620),	-- Revilgaz's Cutlass
+						i(61622),	-- Bruised Vest
+						i(61624),	-- Brash Cloak
 						i(131585, {	-- Revilgaz's Tunic
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2433,12 +2252,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								14492,	-- Verifonix <The Surveyor>
 							},
 						}),
-						i(5253, {	-- Goblin Igniter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4128, {	-- Silver Spade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5253),	-- Goblin Igniter
+						i(4128),	-- Silver Spade
 					},
 				}),
 				q(609, {	-- Voodoo Dues
@@ -2541,9 +2356,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1488,	-- Zanzil Zombie
 							},
 						}),
-						i(4131, {	-- Belt of Corruption
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4131),	-- Belt of Corruption
 					},
 				}),
 				q(26815, {	-- Zanzil's Secret (A)

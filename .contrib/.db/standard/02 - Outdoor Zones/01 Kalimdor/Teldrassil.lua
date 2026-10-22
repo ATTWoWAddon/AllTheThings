@@ -239,9 +239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										-- #endif
 									},
 								}),
-								i(46753, {	-- Melithar's Supply Bag
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(46753),	-- Melithar's Supply Bag
 							},
 						}),
 						q(2159, {	-- Dolanaar Delivery
@@ -1449,9 +1447,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 12429 },	-- Sentinel Shaya
 							["coord"] = { 57.4, 63.6, TELDRASSIL },
 						}),
-						i(16604, {	-- Moon Robes of Elune
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16604),	-- Moon Robes of Elune
 					},
 				}),
 				q(476, {	-- Gnarlpine Corruption
@@ -1592,9 +1588,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(5482, {	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5482),	-- Recipe: Kaldorei Spider Kabob (RECIPE!)
 					},
 				}),
 				q(922, {	-- Rellian Greenspyre
@@ -2147,18 +2141,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131821, {	-- Uncorrupted Gloves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(49546, {	-- Revitalizing Wristguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(49449, {	-- Britches of Turning Fortune
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(49448, {	-- Uncorrupted Hands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(49562, {	-- Durable Drape
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(49546),	-- Revitalizing Wristguards
+						i(49449),	-- Britches of Turning Fortune
+						i(49448),	-- Uncorrupted Hands
+						i(49562),	-- Durable Drape
 						i(131822, {	-- Trousers of Turning Fortune
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2366,12 +2352,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
-						i(16622, {	-- Thornflinger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(16623, {	-- Opaline Medallion
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16622),	-- Thornflinger
+						i(16623),	-- Opaline Medallion
 					},
 				}),
 				q(488, {	-- Zenn's Bidding

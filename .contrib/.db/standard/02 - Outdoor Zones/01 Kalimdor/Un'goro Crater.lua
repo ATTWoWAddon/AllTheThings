@@ -124,15 +124,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.0, 49.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(53566, {	-- Woodland Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53567, {	-- Clayridge Headpiece
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53568, {	-- Jeweled Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53566),	-- Woodland Leggings
+						i(53567),	-- Clayridge Headpiece
+						i(53568),	-- Jeweled Legguards
 					},
 				}),
 				q(4491, {	-- A Little Help From My Friends
@@ -142,15 +136,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
-						i(11910, {	-- Bejeweled Legguards
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11911, {	-- Treetop Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11913, {	-- Clayridge Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11910),	-- Bejeweled Legguards
+						i(11911),	-- Treetop Leggings
+						i(11913),	-- Clayridge Helm
 					},
 				}),
 				q(24709, {	-- A Tale of Two Shovels
@@ -163,15 +151,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 50410 },	-- Durrin's Archaeological Findings
 							["cr"] = 38329,	-- Durrin Direshovel
 						}),
-						i(53600, {	-- Careful Coverings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53601, {	-- Nilminer's Notes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53602, {	-- Excavated Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53600),	-- Careful Coverings
+						i(53601),	-- Nilminer's Notes
+						i(53602),	-- Excavated Bracers
 					},
 				}),
 				q(45055, {	-- A Taste of Their Own Medicine
@@ -213,12 +195,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 38506 },	-- Illusory Bloodpetal
 							},
 						}),
-						i(53569, {	-- Confiscated Poacher's Gun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53570, {	-- Bloodpetal Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53569),	-- Confiscated Poacher's Gun
+						i(53570),	-- Bloodpetal Cloak
 					},
 				}),
 				q(24698, {	-- Adventures in Archaeology
@@ -275,12 +253,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 9167 },	-- Frenzied Pterrordax
 						}),
 						-- #endif
-						i(11918, {	-- Grotslab Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11919, {	-- Cragplate Greaves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11918),	-- Grotslab Gloves
+						i(11919),	-- Cragplate Greaves
 					},
 				}),
 				q(24690, {	-- Blazerunner
@@ -292,15 +266,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Blazerunner slain
 							["provider"] = { "n", 9376 },	-- Blazerunner
 						}),
-						i(53574, {	-- Blazerunner Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53575, {	-- Marshal Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53576, {	-- Fire Plume Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53574),	-- Blazerunner Leggings
+						i(53575),	-- Marshal Bracers
+						i(53576),	-- Fire Plume Breastplate
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9052, {	-- Bloodpetal Poison
@@ -435,15 +403,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9684,	-- Lar'korwi
 							},
 						}),
-						i(53557, {	-- White Bone Pummeler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53558, {	-- White Bone Circle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53559, {	-- White Bone Rod
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53557),	-- White Bone Pummeler
+						i(53558),	-- White Bone Circle
+						i(53559),	-- White Bone Rod
 					},
 				}),
 				q(24725, {	-- Crystal Charge
@@ -721,15 +683,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/1 Pterrordax Observation
 							["provider"] = { "o", 202195 },	-- Pterrordax Observation Lever
 						}),
-						i(53594, {	-- Amulet of Newfound Knowledge
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53595, {	-- Cloak of Repose
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53596, {	-- Un'Goro Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53594),	-- Amulet of Newfound Knowledge
+						i(53595),	-- Cloak of Repose
+						i(53596),	-- Un'Goro Mantle
 					},
 				}),
 				q(24854, {	-- Finding Stormclaw
@@ -792,9 +748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								6555,	-- Gorishi Tunneler
 							},
 						}),
-						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { ADDED_3_2_0 },
-						}),
+						i(47196),	-- Venomhide Baby Tooth
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -834,12 +788,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 50374 },	-- Unbelievably Sticky Tar
 							["cr"] = 38307,	-- Gormashh the Glutinous
 						}),
-						i(53592, {	-- Tarred Robe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53593, {	-- Sticky Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53592),	-- Tarred Robe
+						i(53593),	-- Sticky Bracers
 					},
 				}),
 				q(24700, {	-- Hard to Harvest
@@ -890,15 +840,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9164,	-- Elder Diemetradon
 							},
 						}),
-						i(53563, {	-- Stegodon Tusk Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53564, {	-- Osteoderm Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53565, {
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53563),	-- Stegodon Tusk Mace
+						i(53564),	-- Osteoderm Belt
+						i(53565),
 						i(156996, {	-- Tailspike Pike
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -925,9 +869,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9167,	-- Frenzied Pterrordax
 							},
 						}),
-						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { ADDED_3_2_0 },
-						}),
+						i(47196),	-- Venomhide Baby Tooth
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -1025,15 +967,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 50.2, 50.0, UNGORO_CRATER },
 						}),
-						i(11905, {	-- Linken's Boomerang
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11902, {	-- Linken's Sword of Mastery
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11904, {	-- Spirit of Aquementas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11905),	-- Linken's Boomerang
+						i(11902),	-- Linken's Sword of Mastery
+						i(11904),	-- Spirit of Aquementas
 					},
 				}),
 				q(4145, {	-- Larion and Muigin
@@ -1123,15 +1059,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 202160 },	-- Discarded Supplies
 							},
 						}),
-						i(53580, {	-- Doreen's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53581, {	-- Abandoned Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53582, {	-- Discarded Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53580),	-- Doreen's Wand
+						i(53581),	-- Abandoned Leggings
+						i(53582),	-- Discarded Bracers
 					},
 				}),
 				q(4147, {	-- Marvon's Workshop
@@ -1212,9 +1142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195037 },	-- Silithid Egg
 							},
 						}),
-						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { ADDED_3_2_0 },
-						}),
+						i(47196),	-- Venomhide Baby Tooth
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -1282,12 +1210,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9164,	-- Elder Diemetradon
 							},
 						}),
-						i(53585, {	-- Archaeologist's Utility Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53586, {	-- Excavator's Quarry Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53585),	-- Archaeologist's Utility Boots
+						i(53586),	-- Excavator's Quarry Belt
 					},
 				}),
 				q(3882, {	-- Roll the Bones
@@ -1310,12 +1234,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								6504,	-- Thunderstomp Stegodon
 							},
 						}),
-						i(11908, {	-- Archaeologist's Quarry Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11909, {	-- Excavator's Utility Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11908),	-- Archaeologist's Quarry Boots
+						i(11909),	-- Excavator's Utility Belt
 					},
 				}),
 				q(45057, {	-- Saving My Head
@@ -1344,9 +1264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 46381 },	-- Searing Roc Plumage
 							["cr"] = 5430,	-- Searing Roc
 						}),
-						i(47196, {	-- Venomhide Baby Tooth
-							["timeline"] = { ADDED_3_2_0 },
-						}),
+						i(47196),	-- Venomhide Baby Tooth
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -1376,15 +1294,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(53571, {	-- Karna's Poncho
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53572, {	-- Remtravel Thinking Cap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53573, {	-- Artificial Gorilla Chest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53571),	-- Karna's Poncho
+						i(53572),	-- Remtravel Thinking Cap
+						i(53573),	-- Artificial Gorilla Chest
 					},
 				}),
 				q(24736, {	-- Shizzle's Flyer
@@ -1401,15 +1313,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9167,	-- Frenzied Pterrordax
 							},
 						}),
-						i(53589, {	-- Shizzle's Nozzle Cleaner
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53590, {	-- Shizzle's Muzzle Cover
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53591, {	-- Shizzle's Drizzle Stopper
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53589),	-- Shizzle's Nozzle Cleaner
+						i(53590),	-- Shizzle's Muzzle Cover
+						i(53591),	-- Shizzle's Drizzle Stopper
 					},
 				}),
 				q(4503, {	-- Shizzle's Flyer
@@ -1434,15 +1340,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								9167,	-- Frenzied Pterrordax
 							},
 						}),
-						i(11915, {	-- Shizzle's Drizzle Blocker
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11916, {	-- Shizzle's Muzzle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11917, {	-- Shizzle's Nozzle Wiper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11915),	-- Shizzle's Drizzle Blocker
+						i(11916),	-- Shizzle's Muzzle
+						i(11917),	-- Shizzle's Nozzle Wiper
 					},
 				}),
 				q(24794, {	-- Speak With Spraggle
@@ -1527,12 +1427,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 70.2, 40.8, UNGORO_CRATER },
 							["cr"] = 9684,	-- Lar'korwi
 						}),
-						i(53587, {	-- Plainstalker Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53588, {	-- Outrider Chainmail
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53587),	-- Plainstalker Vest
+						i(53588),	-- Outrider Chainmail
 					},
 				}),
 				q(4292, {	-- The Bait for Lar'korwi
@@ -1552,12 +1448,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 79.9, 49.9, UNGORO_CRATER },
 							["cr"] = 9684,	-- Lar'korwi
 						}),
-						i(11876, {	-- Plainstalker Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11882, {	-- Outrider Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11876),	-- Plainstalker Tunic
+						i(11882),	-- Outrider Leggings
 					},
 				}),
 				q(24707, {	-- The Ballad of Maximillian
@@ -1572,15 +1464,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Un'Goro's Broodmother slain
 							["provider"] = { "n", 38708 },	-- Devilsaur Queen
 						}),
-						i(53597, {	-- Toy Windmill
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53598, {	-- Maximillian's Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53599, {	-- Sword of Northshire
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53597),	-- Toy Windmill
+						i(53598),	-- Maximillian's Shield
+						i(53599),	-- Sword of Northshire
 					},
 				}),
 				q(24721, {	-- The Eastern Pylon
@@ -1681,15 +1567,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Gorishi Fledgling Colossus slain
 							["provider"] = { "n", 38305 },	-- Gorishi Fledgling Colossus
 						}),
-						i(53577, {	-- Bud-Nipping Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53578, {	-- Colossal Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53579, {	-- Silithid Scale Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53577),	-- Bud-Nipping Bracers
+						i(53578),	-- Colossal Treads
+						i(53579),	-- Silithid Scale Gloves
 					},
 				}),
 				q(24708, {	-- The Fossil-Finder 3000
@@ -1719,12 +1599,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 11476 },	-- U'cha's Pelt
 							["cr"] = 9622,	-- U'cha
 						}),
-						i(53583, {	-- Beast Clobberer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53584, {	-- Beastkiller
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53583),	-- Beast Clobberer
+						i(53584),	-- Beastkiller
 						i(156995, {	-- Beastflayer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1742,12 +1618,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 68.6, 14.6, UNGORO_CRATER },
 							["cr"] = 9622,	-- U'cha
 						}),
-						i(11906, {	-- Beastsmasher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11907, {	-- Beastslayer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11906),	-- Beastsmasher
+						i(11907),	-- Beastslayer
 					},
 				}),
 				q(980, {	-- The New Springs
@@ -1848,7 +1720,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 45.1, 25.6, FERALAS },
 								{ 44.0, 11.0, FERALAS },
 							},
-							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 Videre Elixir
@@ -1894,12 +1765,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
-							["timeline"] = { ADDED_3_2_0 },
 							["races"] = HORDE_ONLY,
 							["f"] = MOUNTS,
 						}),
 						i(46102, {	-- Venomhide Ravasaur (MOUNT!)
-							["timeline"] = { ADDED_3_2_0 },
 							["races"] = HORDE_ONLY,
 						}),
 					},
@@ -2129,9 +1998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["timeline"] = { ADDED_3_2_0 },
 					["groups"] = {
-						i(48122, {	-- Ravasaur Hatchling (PET!)
-							["timeline"] = { ADDED_3_2_0 },
-						}),
+						i(48122),	-- Ravasaur Hatchling (PET!)
 					},
 				}),
 				n(6585, {	-- Uhk'loc

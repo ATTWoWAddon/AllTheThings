@@ -32,12 +32,10 @@ root(ROOTS.Promotions, {
 			-- "Pre" Season
 			mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
-				["timeline"] = { ADDED_10_0_0 },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 15, 2023.",
-				["timeline"] = { ADDED_10_0_0 },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(34493, {	-- Dragon Kite (PET!)

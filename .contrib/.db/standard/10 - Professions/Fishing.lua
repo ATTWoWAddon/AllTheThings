@@ -749,9 +749,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				139406,	-- Sea Dog Boots
 			}},
 			["groups"] = {
-				i(7188, {	-- Stormwind Guard Shield
-					["timeline"] = { ADDED_8_2_0 },
-				}),
+				i(7188),	-- Stormwind Guard Shield
 			},
 		}),
 	})),

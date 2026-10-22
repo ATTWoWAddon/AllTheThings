@@ -183,7 +183,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31958, {	-- Grand Master Aki
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_1_0 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -272,9 +271,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 68566 },	-- Skitterer Xi'a
 								["coord"] = { 36.2, 37.2, KRASARANG_WILDS },
 							}),
-							i(94025, {	-- Red Panda (PET!)
-								["timeline"] = { ADDED_5_2_0 },
-							}),
+							i(94025),	-- Red Panda (PET!)
 						},
 					}),
 					q(32604, {	-- Beasts of Fable Book I

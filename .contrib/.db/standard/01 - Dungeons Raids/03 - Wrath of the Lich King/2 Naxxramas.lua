@@ -68,9 +68,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 			ach(2187, {	-- The Undying
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					title(109, {	-- The Undying
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					title(109),	-- The Undying
 				},
 			}),
 		}),
@@ -626,9 +624,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 			ach(2186, {	-- The Immortal
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
-					title(108, {	-- The Immortal
-						["timeline"] = { REMOVED_4_0_3 },
-					}),
+					title(108),	-- The Immortal
 				},
 			}),
 		}),
@@ -861,9 +857,7 @@ local NAXX_25MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER25_N
 					applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
 						["timeline"] = { REMOVED_4_0_3 },
 						["groups"] = {
-							title(90, {	-- <Name>, Conqueror of Naxxramas
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							title(90),	-- <Name>, Conqueror of Naxxramas
 						},
 					})),
 					ach(575),	-- Kel'Thuzad's Defeat (25 player)

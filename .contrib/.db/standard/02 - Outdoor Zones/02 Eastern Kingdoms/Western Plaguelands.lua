@@ -130,9 +130,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
 					["groups"] = {
-						i(139623, {	-- Timolain's Phylactery
-							["timeline"] = { ADDED_7_0_3 },
-						}),
+						i(139623),	-- Timolain's Phylactery
 					},
 				}),
 				i(139624, {	-- Shard of Darkness
@@ -321,15 +319,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60747 },	-- Redpine Stave
 							["cr"] = 44479,	-- Redpine Shaman
 						}),
-						i(62177, {	-- Kelly's Booties
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62176, {	-- Redpine Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62175, {	-- Lumberjack's Hatchet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62177),	-- Kelly's Booties
+						i(62176),	-- Redpine Cloak
+						i(62175),	-- Lumberjack's Hatchet
 					},
 				}),
 				q(4971, {	-- A Matter of Time
@@ -344,12 +336,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 12627 },	-- Temporal Displacer
 							},
 						}),
-						i(15812, {	-- Orchid Amice
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15813, {	-- Gold Link Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15812),	-- Orchid Amice
+						i(15813),	-- Gold Link Belt
 					},
 				}),
 				q(27167, {	-- A Mighty Hunger
@@ -362,18 +350,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60851 },	-- Side of Bear Meat
 							["cr"] = 44473,	-- Shaggy Black Bear
 						}),
-						i(62159, {	-- Bear Hunter's Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62158, {	-- Homestead Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62157, {	-- Farmer's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62156, {	-- Grant's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62159),	-- Bear Hunter's Rifle
+						i(62158),	-- Homestead Helm
+						i(62157),	-- Farmer's Vest
+						i(62156),	-- Grant's Signet
 						i(131646, {	-- Leather Stitched Chain Tunic
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -401,15 +381,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60763 },	-- Diseased Wolf Sample
 							["cr"] = 1817,	-- Diseased Wolf
 						}),
-						i(62174, {	-- Bracers of the Returning Wild
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62173, {	-- Boots of the Flowering Earth
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62172, {	-- Forest Green Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62174),	-- Bracers of the Returning Wild
+						i(62173),	-- Boots of the Flowering Earth
+						i(62172),	-- Forest Green Cloak
 						i(131630, {	-- Treads of Renewed Growth
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -514,18 +488,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(3, {	-- Hunt Thassarian
 							["provider"] = { "n", 44453 },	-- Thassarian
 						}),
-						i(62217, {	-- Minuteman Pike
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62216, {	-- Lurid Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62215, {	-- Shoulderwraps of the Enthralled
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62214, {	-- Ring of Aces
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62217),	-- Minuteman Pike
+						i(62216),	-- Lurid Bracers
+						i(62215),	-- Shoulderwraps of the Enthralled
+						i(62214),	-- Ring of Aces
 						i(131639, {	-- Forsaken Trooper Armguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -553,9 +519,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 							["cr"] = 1852,	-- Araj the Summoner
 						}),
-						i(17759, {	-- Mark of Resolution
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(17759),	-- Mark of Resolution
 					},
 				},
 				q(27206, {	-- Alas, Andorhal
@@ -565,21 +529,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(62222, {	-- Chillwind Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62221, {	-- Chillwind Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62220, {	-- Chillwind Tunic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62219, {	-- Chillwind Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62218, {	-- Chillwind Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62222),	-- Chillwind Pauldrons
+						i(62221),	-- Chillwind Legguards
+						i(62220),	-- Chillwind Tunic
+						i(62219),	-- Chillwind Staff
+						i(62218),	-- Chillwind Dagger
 						i(131656, {	-- Chillwind Breeches
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -638,18 +592,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1784,	-- Skeletal Sorcerer
 							},
 						}),
-						i(62167, {	-- Cloak of the Unrestful
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62166, {	-- Spiritual Barrier
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62165, {	-- Cryptkeeper's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62164, {	-- Valorfist Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62167),	-- Cloak of the Unrestful
+						i(62166),	-- Spiritual Barrier
+						i(62165),	-- Cryptkeeper's Belt
+						i(62164),	-- Valorfist Band
 					},
 				}),
 				q(27002, {	-- An Audience with the Highlord
@@ -717,9 +663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
-						i(12846, {	-- Argent Dawn Commission
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12846),	-- Argent Dawn Commission
 					},
 				},
 				q(27199, {	-- Ashes to Ashes (A)
@@ -814,18 +758,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 45243 },	-- Forsaken Trooper
 							},
 						}),
-						i(62213, {	-- Minuteman Pike
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62212, {	-- Quelling Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62211, {	-- Shoulderwraps of the Enthralled
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62210, {	-- Pack Leader's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62213),	-- Minuteman Pike
+						i(62212),	-- Quelling Bracers
+						i(62211),	-- Shoulderwraps of the Enthralled
+						i(62210),	-- Pack Leader's Band
 						i(131655, {	-- Bracer of Grievance
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -989,18 +925,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 45212 },	-- Gory
 							["coord"] = { 54.0, 65.8, WESTERN_PLAGUELANDS },
 						}),
-						i(62184, {	-- Abominable Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62183, {	-- Gory Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62182, {	-- Training Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62181, {	-- Zombie Shotgun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62184),	-- Abominable Shoulderguards
+						i(62183),	-- Gory Gloves
+						i(62182),	-- Training Leggings
+						i(62181),	-- Zombie Shotgun
 						i(131647, {	-- Faded Mail Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1025,18 +953,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 45098 },	-- Opengut Behemoth
 							["coord"] = { 38.8, 55.2, WESTERN_PLAGUELANDS },
 						}),
-						i(62188, {	-- Abominable Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62187, {	-- Charming Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62186, {	-- Ravensun Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62185, {	-- Zombie Shotgun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62188),	-- Abominable Shoulderguards
+						i(62187),	-- Charming Gloves
+						i(62186),	-- Ravensun Britches
+						i(62185),	-- Zombie Shotgun
 						i(131623, {	-- Ravensun Gloves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1056,9 +976,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12844),	-- Argent Dawn Valor Token
 					},
 				},
 				q(4972, {	-- Counting Out Time (1/2)
@@ -1075,9 +993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 41.3, 69.8, WESTERN_PLAGUELANDS },
 						}),
-						i(12650, {	-- Attuned Dampener
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12650),	-- Attuned Dampener
 					},
 				}),
 				q(4973, {	-- Counting Out Time (2/2)
@@ -1095,9 +1011,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 41.3, 69.8, WESTERN_PLAGUELANDS },
 						}),
-						i(12650, {	-- Attuned Dampener
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12650),	-- Attuned Dampener
 					},
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
@@ -1224,21 +1138,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(3, {	-- 0/4 Whitetail Fox slain
 							["provider"] = { "n", 44474 },	-- Whitetail Fox
 						}),
-						i(62161, {	-- Bullmastiff Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62163, {	-- Fox Hunter's Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62162, {	-- Territorial Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62161),	-- Bullmastiff Vest
+						i(62163),	-- Fox Hunter's Rifle
+						i(62162),	-- Territorial Helm
 						i(131622, {	-- Whitetail Fox Tunic
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62160, {	-- Vandis' Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62160),	-- Vandis' Band
 					},
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
@@ -1291,9 +1197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
 					["groups"] = {
-						i(15804, {	-- Cerise Drape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15804),	-- Cerise Drape
 					},
 				},
 				q(27166, {	-- Go Fletch!
@@ -1417,9 +1321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12844),	-- Argent Dawn Valor Token
 					},
 				},
 				q(27156, {	-- It's About Time!
@@ -1513,12 +1415,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
-						i(13474, {	-- Farmer Dalson's Shotgun
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(13475, {	-- Dalson Family Wedding Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13474),	-- Farmer Dalson's Shotgun
+						i(13475),	-- Dalson Family Wedding Ring
 					},
 				}),
 				q(26936, {	-- Lower the Boom
@@ -1567,18 +1465,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 64.9, 59.5, WESTERN_PLAGUELANDS },
 						}),
-						i(62198, {	-- Andrea's Locket
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62197, {	-- Gahrron's Shoulderguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62196, {	-- Gloria's Work Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62195, {	-- Footfalls of Memories
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62198),	-- Andrea's Locket
+						i(62197),	-- Gahrron's Shoulderguard
+						i(62196),	-- Gloria's Work Vest
+						i(62195),	-- Footfalls of Memories
 						i(131631, {	-- Del's Discarded Shoulderguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1601,9 +1491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 					["groups"] = {
-						i(12844, {	-- Argent Dawn Valor Token
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12844),	-- Argent Dawn Valor Token
 					},
 				},
 				{	-- Mission Accomplished!
@@ -1620,15 +1508,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 					["groups"] = {
-						i(15801, {	-- Valiant Shortsword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15800, {	-- Intrepid Shortsword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15799, {	-- Heroic Commendation Medal
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15801),	-- Valiant Shortsword
+						i(15800),	-- Intrepid Shortsword
+						i(15799),	-- Heroic Commendation Medal
 					},
 				},
 				q(5058, {	-- Mrs. Dalson's Diary
@@ -1782,18 +1664,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 44323 },	-- Darkmaster Gandling <Cult of the Damned>
 							["coord"] = { 45.2, 72.6, WESTERN_PLAGUELANDS },
 						}),
-						i(62151, {	-- Belt of Lingering Corruption
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62150, {	-- Elimination Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62149, {	-- Burden of Time
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62148, {	-- Gandling's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62151),	-- Belt of Lingering Corruption
+						i(62150),	-- Elimination Bracers
+						i(62149),	-- Burden of Time
+						i(62148),	-- Gandling's Gloves
 						i(131644, {	-- Armguards of Binding
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1816,18 +1690,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 44323 },	-- Darkmaster Gandling <Cult of the Damned>
 							["coord"] = { 45.2, 72.6, WESTERN_PLAGUELANDS },
 						}),
-						i(62155, {	-- Belt of Lingering Corruption
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62154, {	-- Elimination Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62153, {	-- Burden of Time
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62152, {	-- Gandling's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62155),	-- Belt of Lingering Corruption
+						i(62154),	-- Elimination Bracers
+						i(62153),	-- Burden of Time
+						i(62152),	-- Gandling's Gloves
 						i(131620, {	-- Armguards of Binding
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1905,15 +1771,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(4, {	-- 0/4 Unholy Corpuscle slain
 							["provider"] = { "n", 44486 },	-- Unholy Corpuscle
 						}),
-						i(62201, {	-- Kaartish's Sword
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62200, {	-- Field Agent's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62199, {	-- Malicia's Scepter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62201),	-- Kaartish's Sword
+						i(62200),	-- Field Agent's Belt
+						i(62199),	-- Malicia's Scepter
 						i(131635, {	-- Plague-Free Disciple Belt
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1929,18 +1789,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Andorhal Deathguard slain
 							["provider"] = { "n", 44447 },	-- Andorhal Deathguard
 						}),
-						i(62205, {	-- Defender's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62204, {	-- Gloves of the Able
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62203, {	-- Belt of the Unafraid
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62202, {	-- Bracers of Envy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62205),	-- Defender's Band
+						i(62204),	-- Gloves of the Able
+						i(62203),	-- Belt of the Unafraid
+						i(62202),	-- Bracers of Envy
 						i(131653, {	-- Gloves of Approaching Victory
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1959,18 +1811,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/15 Andorhal Defender slain
 							["provider"] = { "n", 44448 },	-- Andorhal Defender
 						}),
-						i(62209, {	-- Deathguard Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62208, {	-- Gloves of the Able
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62207, {	-- Belt of the Unafraid
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62206, {	-- Bracers of Envy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62209),	-- Deathguard Band
+						i(62208),	-- Gloves of the Able
+						i(62207),	-- Belt of the Unafraid
+						i(62206),	-- Bracers of Envy
 						i(131637, {	-- Gloves of Approaching Victory
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2369,21 +2213,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(62227, {	-- Pauldrons of Andorhal
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62226, {	-- Andorhal Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62225, {	-- Andorhal Tunic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62224, {	-- Staff of Andorhal
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62223, {	-- Dagger of Andorhal
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62227),	-- Pauldrons of Andorhal
+						i(62226),	-- Andorhal Legguards
+						i(62225),	-- Andorhal Tunic
+						i(62224),	-- Staff of Andorhal
+						i(62223),	-- Dagger of Andorhal
 						i(131641, {	-- Andorhal Chain Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2474,15 +2308,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 44836 },	-- Hearthglen Mustang
 							},
 						}),
-						i(62180, {	-- Band of the Arachnid Wrangler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62179, {	-- Spider Frier
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62178, {	-- Spider Splatter Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62180),	-- Band of the Arachnid Wrangler
+						i(62179),	-- Spider Frier
+						i(62178),	-- Spider Splatter Mace
 					},
 				}),
 				q(27168, {	-- Those That Couldn't Let Go
@@ -2542,15 +2370,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(62191, {	-- Highlord's Favor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62190, {	-- Light-Imbued Lantern
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62189, {	-- Argent Medallion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62191),	-- Highlord's Favor
+						i(62190),	-- Light-Imbued Lantern
+						i(62189),	-- Argent Medallion
 					},
 				}),
 				q(5051, {	-- Two Halves Become One
@@ -2567,9 +2389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm
 							},
 						}),
-						i(13473, {	-- Felstone Good Luck Charm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13473),	-- Felstone Good Luck Charm
 					},
 				}),
 				q(6004, {	-- Unfinished Business (1/3)
@@ -2688,18 +2508,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/6 Opengut Behemoth slain
 							["provider"] = { "n", 44562 },	-- Opengut Behemoth
 						}),
-						i(62143, {	-- Gut Opener Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62142, {	-- Behemoth Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62141, {	-- Belt of the Laconic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62140, {	-- Dried-Up Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62143),	-- Gut Opener Gloves
+						i(62142),	-- Behemoth Boots
+						i(62141),	-- Belt of the Laconic
+						i(62140),	-- Dried-Up Bracers
 						i(131642, {	-- Putrid Mail Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2717,18 +2529,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/6 Opengut Behemoth slain
 							["provider"] = { "n", 44562 },	-- Opengut Behemoth
 						}),
-						i(62147, {	-- Gut Opener Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62146, {	-- Behemoth Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62145, {	-- Belt of the Blathering Fool
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62144, {	-- Bracers of Favorable Chance
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62147),	-- Gut Opener Gloves
+						i(62146),	-- Behemoth Boots
+						i(62145),	-- Belt of the Blathering Fool
+						i(62144),	-- Bracers of Favorable Chance
 						i(131618, {	-- Putrid Mail Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2783,18 +2587,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60753 },	-- Dithers' Plague Drums
 							["coord"] = { 38.60, 55.20, WESTERN_PLAGUELANDS },
 						}),
-						i(62171, {	-- Cloak of the Salted Earth
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62169, {	-- Dithering Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62170, {	-- Plague Cauldron Lid
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62168, {	-- Glimmering Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62171),	-- Cloak of the Salted Earth
+						i(62169),	-- Dithering Belt
+						i(62170),	-- Plague Cauldron Lid
+						i(62168),	-- Glimmering Ring
 					},
 				}),
 				q(10592, {	-- Wisdom of the Banshee Queen
@@ -2854,18 +2650,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 205158 },	-- Cultist Cage
 							},
 						}),
-						i(62194, {	-- Breastplate of the Patient
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(62193, {	-- Leggings of the Slipper Shifter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62194),	-- Breastplate of the Patient
+						i(62193),	-- Leggings of the Slipper Shifter
 						i(131627, {	-- Scaled Pants of Patience
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(62192, {	-- Zen'Kiki's Thanks
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(62192),	-- Zen'Kiki's Thanks
 					},
 				}),
 			}),

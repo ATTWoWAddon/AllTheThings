@@ -77,12 +77,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Divino-matic Rod
 							["provider"] = { "i", 8548 },	-- Divino-matic Rod
 						}),
-						i(9534, {	-- Engineer's Guild Headpiece
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9533, {	-- Masons Fraternity Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9534),	-- Engineer's Guild Headpiece
+						i(9533),	-- Masons Fraternity Ring
 					},
 				}),
 				q(2770, {	-- Gahz'rilla
@@ -104,7 +100,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								"Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",
 								-- #endif
 							-- #endif
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(9653, {	-- Speedy Racer Goggles
 							["timeline"] = { REMOVED_1_9_3 },
@@ -232,12 +227,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Tiara of the Deep
 							["provider"] = { "i", 9234 },	-- Tiara of the Deep
 						}),
-						i(9527, {	-- Spellshifter Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9531, {	-- Gemshale Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9527),	-- Spellshifter Rod
+						i(9531),	-- Gemshale Pauldrons
 					},
 				}),
 				q(3042, {	-- Troll Temper

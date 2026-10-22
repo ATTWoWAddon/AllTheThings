@@ -208,12 +208,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 61.8, 31.0, WETLANDS },
 							},
 						}),
-						i(2916, {	-- Gold Lion Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2917, {	-- Tranquil Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2916),	-- Gold Lion Shield
+						i(2917),	-- Tranquil Ring
 					},
 				}),
 				q(25820, {	-- A Mother's Worries
@@ -249,12 +245,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3348 },	-- Giant Crocolisk Skin
 							["cr"] = 2089,	-- Giant Wetlands Crocolisk
 						}),
-						i(2545, {	-- Malleable Chain Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3561, {	-- Resilient Poncho
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2545),	-- Malleable Chain Leggings
+						i(3561),	-- Resilient Poncho
 						i(3681),	-- Recipe: Crocolisk Gumbo (RECIPE!)
 					},
 				}),
@@ -268,15 +260,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Horghast Flarecrazed slain
 							["provider"] = { "n", 41273 },	-- Horghast Flarecrazed
 						}),
-						i(59078, {	-- Flarecrazed Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59077, {	-- Stoutfist Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59076, {	-- Wand of Infectious Dementia
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59078),	-- Flarecrazed Cloak
+						i(59077),	-- Stoutfist Breastplate
+						i(59076),	-- Wand of Infectious Dementia
 						i(131441, {	-- Stoutfist Chainmail
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -296,15 +282,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/12 Fen Creeper slain
 							["provider"] = { "n", 1040 },	-- Fen Creeper
 						}),
-						i(3558, {	-- Fen Keeper Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1273, {	-- Forest Chain
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2263, {	-- Phytoblade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3558),	-- Fen Keeper Robe
+						i(1273),	-- Forest Chain
+						i(2263),	-- Phytoblade
 					},
 				}),
 				q(279, {	-- Claws from the Deep
@@ -344,18 +324,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3618 },	-- Gobbler's Head
 							["cr"] = 1259,	-- Gobbler
 						}),
-						i(59082, {	-- Merchant Marine Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59081, {	-- Merchant Marine Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59080, {	-- Merchant Marine Waders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59079, {	-- Merchant Marine Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59082),	-- Merchant Marine Pauldrons
+						i(59081),	-- Merchant Marine Boots
+						i(59080),	-- Merchant Marine Waders
+						i(59079),	-- Merchant Marine Sandals
 						i(131442, {	-- Merchant Marine Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -388,9 +360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 					["groups"] = {
-						i(2943, {	-- Eye of Paleth
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2943),	-- Eye of Paleth
 					},
 				}),
 				q(25856, {	-- Crocolisk Hides
@@ -445,12 +415,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 54.2, 54.2, WETLANDS },
 							["cr"] = 2091,	-- Chieftain Nek'rosh
 						}),
-						i(3209, {	-- Ancient War Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6194, {	-- Barreling Reaper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3209),	-- Ancient War Sword
+						i(6194),	-- Barreling Reaper
 					},
 				}),
 				q(470, {	-- Digging Through the Ooze
@@ -468,9 +434,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1033,	-- Monstrous Ooze
 							},
 						}),
-						i(3352, {	-- Ooze-covered Bag
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3352),	-- Ooze-covered Bag
 					},
 				}),
 				q(25864, {	-- Dinosaur Crisis
@@ -486,15 +450,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 41401 },	-- Highland Scytheclaw
 							},
 						}),
-						i(59095, {	-- Swiftgear Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59094, {	-- Highland Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59093, {	-- Shilah's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59095),	-- Swiftgear Belt
+						i(59094),	-- Highland Shoulderguards
+						i(59093),	-- Shilah's Bracers
 						i(131451, {	-- Highland Chain Shoulders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -526,15 +484,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 55988 },	-- Glowerglare's Beard
 							["cr"] = 41151,	-- Drungeld Glowerglare
 						}),
-						i(59072, {	-- Addled Blotter Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59071, {	-- Bad Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59070, {	-- Surveyor's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59072),	-- Addled Blotter Bracers
+						i(59071),	-- Bad Belt
+						i(59070),	-- Surveyor's Leggings
 						i(131438, {	-- Bad Waistguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -606,18 +558,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/7 Fires Extinguished
 							["provider"] = { "i", 56134 },	-- Blessed Floodlily
 						}),
-						i(59109, {	-- Marsh Fire Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59108, {	-- Deep Moss Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59107, {	-- Soothing Hands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59106, {	-- Floodily Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59109),	-- Marsh Fire Legguards
+						i(59108),	-- Deep Moss Bracers
+						i(59107),	-- Soothing Hands
+						i(59106),	-- Floodily Robes
 						i(131460, {	-- Deep Moss Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -817,9 +761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(2702, {	-- Lightforge Ingot
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2702),	-- Lightforge Ingot
 					},
 				}),
 				q(526, {	-- Lightforge Ingots
@@ -943,15 +885,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 33.0, 51.4, WETLANDS },
 							["cr"] = 1353,	-- Sarltooth
 						}),
-						i(3493, {	-- Raptor's End
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3566, {	-- Raptorbane Armor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5246, {	-- Excavation Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3493),	-- Raptor's End
+						i(3566),	-- Raptorbane Armor
+						i(5246),	-- Excavation Rod
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 					},
 				}),
@@ -1002,12 +938,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(2950, {	-- Icicle Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2949, {	-- Mariner Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2950),	-- Icicle Rod
+						i(2949),	-- Mariner Boots
 					},
 				}),
 				q(25805, {	-- Return the Statuette
@@ -1017,15 +949,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(59085, {	-- Breastplate of the Lost Paladin
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59084, {	-- Boran's Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59083, {	-- Sash of the Blind Princess
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59085),	-- Breastplate of the Lost Paladin
+						i(59084),	-- Boran's Shoulderguards
+						i(59083),	-- Sash of the Blind Princess
 						i(131444, {	-- Boran's Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1058,15 +984,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203179 },	-- Sediment Deposit
 							},
 						}),
-						i(59075, {	-- Drunkard's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59074, {	-- Topsoil Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59073, {	-- Discolored Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59075),	-- Drunkard's Belt
+						i(59074),	-- Topsoil Bracers
+						i(59073),	-- Discolored Bracers
 						i(131437, {	-- Topsoil Binders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1137,12 +1057,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.8, 52.2, WETLANDS },
 						}),
-						i(5627, {	-- Relic Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5626, {	-- Skullchipper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5627),	-- Relic Blade
+						i(5626),	-- Skullchipper
 					},
 				}),
 				q(26189, {	-- The Angerfang Menace
@@ -1176,18 +1092,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Calamoth Ashbeard slain
 							["provider"] = { "n", 41522 },	-- Calamoth Ashbeard
 						}),
-						i(59113, {	-- Khaz Modan Pauldrons (Plate)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59112, {	-- Khaz Modan Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59111, {	-- Khaz Modan Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59110, {	-- Khaz Modan Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59113),	-- Khaz Modan Pauldrons (Plate)
+						i(59112),	-- Khaz Modan Spaulders
+						i(59111),	-- Khaz Modan Shoulderguards
+						i(59110),	-- Khaz Modan Mantle
 						i(131488, {	-- Khaz Modan Monnions
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1205,15 +1113,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/12 Dragonmaw Whelpstealer slain
 							["provider"] = { "n", 42041 },	-- Dragonmaw Whelpstealer
 						}),
-						i(59116, {	-- Ring of Bravery
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59115, {	-- Greenwarden's Gift
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59114, {	-- Iczelia's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59116),	-- Ring of Bravery
+						i(59115),	-- Greenwarden's Gift
+						i(59114),	-- Iczelia's Band
 					},
 				}),
 				q(289, {	-- The Cursed Crew
@@ -1250,18 +1152,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Cursed Marine slain
 							["provider"] = { "n", 41427 },	-- Cursed Marine
 						}),
-						i(59089, {	-- Curse Lifter's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59088, {	-- Snellig's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59087, {	-- Gloves of Anguished Cries
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59086, {	-- Third Fleet Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59089),	-- Curse Lifter's Gloves
+						i(59088),	-- Snellig's Vest
+						i(59087),	-- Gloves of Anguished Cries
+						i(59086),	-- Third Fleet Cloak
 						i(131445, {	-- Snellig's Chain Shirt
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1307,15 +1201,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2944),	-- Cursed Eye of Paleth
-						i(59092, {	-- Haunted Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59091, {	-- Fitzsimmons' Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59090, {	-- Steelbrow's Old Robe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59092),	-- Haunted Pauldrons
+						i(59091),	-- Fitzsimmons' Belt
+						i(59090),	-- Steelbrow's Old Robe
 						i(131446, {	-- Fitzsimmon's Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1329,15 +1217,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 41167,	-- Torrention
 					["groups"] = {
-						i(59069, {	-- Slabchisel Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59068, {	-- Waterproof Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59067, {	-- Floodsurge Coat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59069),	-- Slabchisel Boots
+						i(59068),	-- Waterproof Leggings
+						i(59067),	-- Floodsurge Coat
 						i(131440, {	-- Waterproof Britches
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1412,15 +1294,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								44150,	-- Slowly Decaying Mosshide Mystic
 							},
 						}),
-						i(59098, {	-- Ingot-Handler Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59097, {	-- Royal Treasury Courier's Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59096, {	-- Accountant's Lantern
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59098),	-- Ingot-Handler Gloves
+						i(59097),	-- Royal Treasury Courier's Shield
+						i(59096),	-- Accountant's Lantern
 						i(131452, {	-- Ingot-Handler Grips
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1491,12 +1367,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "o", 2704 },	-- Cache of Explosives
 							["coord"] = { 48.8, 88.2, ARATHI_HIGHLANDS },
 						}),
-						i(4504, {	-- Dwarven Guard Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4505, {	-- Swampland Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4504),	-- Dwarven Guard Cloak
+						i(4505),	-- Swampland Trousers
 					},
 				}),
 				q(288, {	-- The Third Fleet
@@ -1575,18 +1447,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203283 },	-- Archaeologist's Tools
 							},
 						}),
-						i(59105, {	-- Antique Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59104, {	-- Unbared Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59103, {	-- Rockweaver Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60338, {	-- Reconstructed Sword
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59105),	-- Antique Breastplate
+						i(59104),	-- Unbared Leggings
+						i(59103),	-- Rockweaver Leggings
+						i(60338),	-- Reconstructed Sword
 						i(131450, {	-- Unbared Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1645,9 +1509,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 331 },	-- Loose Soil
 							},
 						}),
-						i(2913, {	-- Silk Mantle of Gamn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2913),	-- Silk Mantle of Gamn
 					},
 				}),
 				q(464, {	-- War Banners
@@ -1735,18 +1597,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Yorla Darksnare slain
 							["provider"] = { "n", 41416 },	-- Yorla Darksnare
 						}),
-						i(59102, {	-- Old Guard's Hammer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59101, {	-- Shilah's Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59100, {	-- Old Guard's Greataxe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59099, {	-- Darksnare Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59102),	-- Old Guard's Hammer
+						i(59101),	-- Shilah's Blade
+						i(59100),	-- Old Guard's Greataxe
+						i(59099),	-- Darksnare Dagger
 						i(157004, {	-- Old Guard's Poleaxe
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1988,9 +1842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_3_3_0 },
 					["groups"] = {
-						i(48124, {	-- Razormaw Hatchling (PET!)
-							["timeline"] = { ADDED_3_3_0 },
-						}),
+						i(48124),	-- Razormaw Hatchling (PET!)
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2108,7 +1960,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 						i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)

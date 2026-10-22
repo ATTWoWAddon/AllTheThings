@@ -388,7 +388,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["qg"] = 39865,	-- Emissary Windsong
 					["coord"] = { 45.4, 44.6, MOONGLADE },
-					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(27874, {	-- Aviana's Legacy
@@ -975,7 +974,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				heroscall(q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 80,
@@ -2014,7 +2012,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				warchiefscommand(q(27721, {	-- Warchief's Command: Mount Hyjal!
-					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
@@ -2075,7 +2072,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31972, {	-- Brok
 							["sourceAchievement"] = 7525,	-- Taming Cataclysm
-							["timeline"] = { ADDED_5_0_4 },
 							["isDaily"] = true,
 						}),
 					},

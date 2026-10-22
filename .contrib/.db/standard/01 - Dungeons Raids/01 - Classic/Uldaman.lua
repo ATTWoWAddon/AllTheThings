@@ -246,9 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
-						i(7888, {	-- Jarkal's Enhancing Necklace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7888),	-- Jarkal's Enhancing Necklace
 					},
 				}),
 				q(2963, {	-- Portents of Uldum [Alliance]
@@ -317,9 +315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
 					["groups"] = {
-						i(7673, {	-- Talvash's Enhancing Necklace
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7673),	-- Talvash's Enhancing Necklace
 					},
 				}),
 				q(2977, {	-- Return to Ironforge
@@ -393,12 +389,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
-						i(9626, {	-- Dwarven Charge
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9627, {	-- Explorers' League Lodestar
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9626),	-- Dwarven Charge
+						i(9627),	-- Explorers' League Lodestar
 					},
 				}),
 				q(2398, {	-- The Lost Dwarves
@@ -420,9 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Tablet of Will
 							["provider"] = { "i", 5824 },	-- Tablet of Will
 						}),
-						i(6723, {	-- Medal of Courage
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6723),	-- Medal of Courage
 					},
 				}),
 				q(2278, {	-- The Platinum Discs (1/3)
@@ -469,9 +459,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9587, {	-- Thawpelt Sack
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9587),	-- Thawpelt Sack
 					},
 				}),
 				q(2440, {	-- The Platinum Discs (3/3) [Horde]
@@ -483,9 +471,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(9587, {	-- Thawpelt Sack
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9587),	-- Thawpelt Sack
 					},
 				}),
 				q(2198, {	-- The Shattered Necklace
@@ -600,15 +586,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
-						i(9378, {	-- Shovelphlange's Mining Axe
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(9375, {	-- Expert Goldminer's Helmet
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(9382, {	-- Tromping Miner's Boots
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(9378),	-- Shovelphlange's Mining Axe
+						i(9375),	-- Expert Goldminer's Helmet
+						i(9382),	-- Tromping Miner's Boots
 					},
 				}),
 			}),

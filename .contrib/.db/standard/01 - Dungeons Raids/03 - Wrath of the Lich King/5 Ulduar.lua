@@ -87,19 +87,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39267, {	-- Flame Leviathan
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33113 },
 						}),
 						crit(39268, {	-- Razorscale
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33186 },
 						}),
 						crit(39270, {	-- Ignis the Furnace Master
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33118 },
 						}),
 						crit(39269, {	-- XT-002 Deconstructor
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33293 },
 						}),
 					},
@@ -108,15 +104,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39285, {	-- Assembly of Iron
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32867 },
 						}),
 						crit(39287, {	-- Kologarn
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32930 },
 						}),
 						crit(39286, {	-- Auriaya
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33515 },
 						}),
 					},
@@ -125,19 +118,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39289, {	-- Hodir
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32845 },
 						}),
 						crit(39291, {	-- Thorim
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32865 },
 						}),
 						crit(39292, {	-- Freya
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 32906 },
 						}),
 						crit(39293, {	-- Mimiron
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33350 },
 						}),
 					},
@@ -146,11 +135,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					["timeline"] = { ADDED_7_3_5 },
 					["groups"] = {
 						crit(39294, {	-- General Vezax
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33271 },
 						}),
 						crit(39295, {	-- Yogg-Saron
-							["timeline"] = { ADDED_7_3_5 },
 							["_npcs"] = { 33288 },
 						}),
 					},
@@ -208,7 +195,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
@@ -298,7 +284,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2892),	-- The Descent into Madness (10 player)
 						revampAch(2890),	-- The Keepers of Ulduar (10 player)
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
@@ -317,7 +302,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2957, {	-- Glory of the Ulduar Raider (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3056,	-- Orbit-uary (10 player)
@@ -342,7 +326,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							title(127),	-- <Name>, Champion of Ulduar
 						})),
 						ach(2894, {	-- The Secrets of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2886,	-- The Siege of Ulduar (10 player)
@@ -352,7 +335,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2888, {	-- The Antechamber of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(10580, {	-- Assembly of Iron
 									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -366,7 +348,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2892, {	-- The Descent into Madness (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(9948, {	-- General Vezax
 									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -377,7 +358,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2890, {	-- The Keepers of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(10560, {	-- Hodir
 									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -394,7 +374,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2886, {	-- The Siege of Ulduar (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(9968, {	-- Flame Leviathan
 									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL },
@@ -411,7 +390,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(3097, {	-- Dwarfageddon (10 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["crs"] = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
@@ -424,7 +402,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32914 },	-- Elder Stonebark
 							},
 							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 					}),
 					n(QUESTS, {
@@ -1012,7 +989,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					-- #if AFTER 7.3.5.25727
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
@@ -1101,7 +1077,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						revampAch(2893),	-- The Descent into Madness (25 player)
 						revampAch(2891),	-- The Keepers of Ulduar (25 player)
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
@@ -1119,24 +1094,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
-								title(125, {	-- <Name> the Celestial Defender
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(125),	-- <Name> the Celestial Defender
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
-								title(124, {	-- <Name>, Death's Demise
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(124),	-- <Name>, Death's Demise
 							},
 						}),
 					}),
 					-- #else
 					n(ACHIEVEMENTS, {
 						ach(2958, {	-- Glory of the Ulduar Raider (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								3057,	-- Orbit-uary (25 player)
@@ -1161,7 +1131,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							title(126),	-- <Name>, Conqueror of Ulduar
 						})),
 						ach(2895, {	-- The Secrets of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							-- Meta Achievement
 							["sym"] = {{"meta_achievement",
 								2887,	-- The Siege of Ulduar (25 player)
@@ -1171,7 +1140,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							}},
 						}),
 						ach(2889, {	-- The Antechamber of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(10581, {	-- Assembly of Iron
 									["_encounter"] = { 1641, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1185,7 +1153,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2893, {	-- The Descent into Madness (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(9964, {	-- General Vezax
 									["_encounter"] = { 1648, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1196,7 +1163,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2891, {	-- The Keepers of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(10562, {	-- Hodir
 									["_encounter"] = { 1644, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1213,7 +1179,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(2887, {	-- The Siege of Ulduar (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["groups"] = {
 								crit(9969, {	-- Flame Leviathan
 									["_encounter"] = { 1637, DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL },
@@ -1230,7 +1195,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						ach(3098, {	-- Dwarfageddon (25 player)
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 							["crs"] = {
 								33236,	-- Steelforged Defender
 								33572,	-- Steelforged Defender
@@ -1243,22 +1207,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								{ "n", 32914 },	-- Elder Stonebark
 							},
 							["description"] = "Must be killed before killing Freya or they will despawn.",
-							["timeline"] = { ADDED_3_1_0, REMOVED_7_3_5 },
 						}),
 						ach(3259, {	-- Realm First! Celestial Defender
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
-								title(125, {	-- <Name> the Celestial Defender
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(125),	-- <Name> the Celestial Defender
 							},
 						}),
 						ach(3117, {	-- Realm First! Death's Demise
 							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
 							["groups"] = {
-								title(124, {	-- <Name>, Death's Demise
-									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
-								}),
+								title(124),	-- <Name>, Death's Demise
 							},
 						}),
 					}),

@@ -119,7 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31913, {	-- Everessa
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -216,21 +215,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/6 Stonard Defender slain
 							["provider"] = { "n", 46870 },	-- Stonard Defender
 						}),
-						i(64623, {	-- Surgical Striker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64595, {	-- Robes of the Honorable
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64605, {	-- Leggings of the Final Assault
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64614, {	-- Chestguard of Bravery
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64621, {	-- Blueheart's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64623),	-- Surgical Striker
+						i(64595),	-- Robes of the Honorable
+						i(64605),	-- Leggings of the Final Assault
+						i(64614),	-- Chestguard of Bravery
+						i(64621),	-- Blueheart's Helm
 					},
 				}),
 				q(27740, {	-- Baba Bogbrew
@@ -246,15 +235,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
-						i(64596, {	-- Dream Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64606, {	-- Dream Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64615, {	-- Dream Medallion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64596),	-- Dream Pendant
+						i(64606),	-- Dream Amulet
+						i(64615),	-- Dream Medallion
 					},
 				}),
 				q(27904, {	-- Breath of Mist
@@ -283,18 +266,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 61923 },	-- Steamwheedle Ditty Bag
 							["cr"] = 46014,	-- Deceased Bogpaddle Privateer
 						}),
-						i(64590, {	-- Crazy Cap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64600, {	-- Looter's Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64609, {	-- Tragic Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64617, {	-- Larry's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64590),	-- Crazy Cap
+						i(64600),	-- Looter's Shoulderguards
+						i(64609),	-- Tragic Legguards
+						i(64617),	-- Larry's Boots
 					},
 				}),
 				q(1428, {	-- Continued Threat
@@ -422,21 +397,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 61356 },	-- Stolen Silversnap Ice
 							["cr"] = 922,	-- Silt Crawler
 						}),
-						i(64622, {	-- Silversnap Bottle Opener
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64588, {	-- Beach Party Thong
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64598, {	-- Promotional Cap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64607, {	-- Groovey Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64616, {	-- Brand-Name Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64622),	-- Silversnap Bottle Opener
+						i(64588),	-- Beach Party Thong
+						i(64598),	-- Promotional Cap
+						i(64607),	-- Groovey Legguards
+						i(64616),	-- Brand-Name Breastplate
 						i(157012, {	-- Broken Silversnap Bottle
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -486,12 +451,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 6184 },	-- Monstrous Crawler Leg
 							["cr"] = 1088,	-- Monstrous Crawler
 						}),
-						i(9681, {	-- Grilled King Crawler Legs
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9682, {	-- Leather Chef's Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9681),	-- Grilled King Crawler Legs
+						i(9682),	-- Leather Chef's Belt
 					},
 				}),
 				q(1393, {	-- Galen's Escape
@@ -506,9 +467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
-						i(6828, {	-- Visionary Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6828),	-- Visionary Buckler
 					},
 				}),
 				q(9609, {	-- Help Watcher Biggs
@@ -546,9 +505,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
-						i(10659, {	-- Shard of the Splithooves  / Shard of Afrasa [Original]
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10659),	-- Shard of the Splithooves  / Shard of Afrasa [Original]
 					},
 				}),
 				q(27600, {	-- In With a Bang
@@ -581,18 +538,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 55.8, 78.0, SWAMP_OF_SORROWS },
 						}),
-						i(64591, {	-- Almost New Shoulderpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64601, {	-- Expensive Tunic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64610, {	-- Imported Helmet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64618, {	-- High-Grade Greaves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64591),	-- Almost New Shoulderpads
+						i(64601),	-- Expensive Tunic
+						i(64610),	-- Imported Helmet
+						i(64618),	-- High-Grade Greaves
 					},
 				}),
 				q(27598, {	-- Kill Gil
@@ -700,15 +649,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/5 Stonard Peon slain
 							["provider"] = { "n", 46486 },	-- Stonard Peon
 						}),
-						i(64593, {	-- Helm of the Gatherer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64603, {	-- Merciless Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64612, {	-- Balanced Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64593),	-- Helm of the Gatherer
+						i(64603),	-- Merciless Breastplate
+						i(64612),	-- Balanced Pauldrons
 					},
 				}),
 				q(27853, {	-- Lumbering Oafs (H)
@@ -720,15 +663,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/5 Marshtide Peasant slain
 							["provider"] = { "n", 46487 },	-- Marshtide Peasant
 						}),
-						i(64624, {	-- Helm of the Gatherer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64628, {	-- Merciliess Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64631, {	-- Balanced Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64624),	-- Helm of the Gatherer
+						i(64628),	-- Merciliess Breastplate
+						i(64631),	-- Balanced Pauldrons
 					},
 				}),
 				q(27587, {	-- Maliciously Delicious
@@ -820,15 +757,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 78.6, 22.5, SWAMP_OF_SORROWS },
 						}),
-						i(64589, {	-- Bogpaddle Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64599, {	-- Sloppy Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64608, {	-- Armed Gauntlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64589),	-- Bogpaddle Leggings
+						i(64599),	-- Sloppy Spaulders
+						i(64608),	-- Armed Gauntlets
 					},
 				}),
 				q(1418, {	-- Neeka Bloodscar
@@ -1018,9 +949,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64597, {	-- Light's Embrace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64597),	-- Light's Embrace
 					},
 				}),
 				q(1444, {	-- Return to Fel'Zerul
@@ -1157,18 +1086,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 46371 },	-- Hr'nglth the Lost
 							["coord"] = { 63.2, 86.8, SWAMP_OF_SORROWS },
 						}),
-						i(64592, {	-- Baba's Leg Warmers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64602, {	-- Frenzy Call Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64611, {	-- Swamp Skull Cap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64619, {	-- Sinister Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64592),	-- Baba's Leg Warmers
+						i(64602),	-- Frenzy Call Vest
+						i(64611),	-- Swamp Skull Cap
+						i(64619),	-- Sinister Belt
 					},
 				}),
 				q(2744, {	-- The Demon Hunter
@@ -1260,9 +1181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 30,
 					["groups"] = {
-						i(6827, {	-- Box of Supplies
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6827),	-- Box of Supplies
 					},
 				}),
 				q(2622, {	-- The Missing Orders
@@ -1400,15 +1319,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
-						i(9680, {	-- Tok'kar's Murloc Shanker
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9678, {	-- Tok'kar's Murloc Basher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9679, {	-- Tok'kar's Murloc Chopper
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9680),	-- Tok'kar's Murloc Shanker
+						i(9678),	-- Tok'kar's Murloc Basher
+						i(9679),	-- Tok'kar's Murloc Chopper
 					},
 				}),
 				q(27795, {	-- Tides of Darkness (A)
@@ -1424,18 +1337,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/6 Stonard Ogre slain
 							["provider"] = { "n", 46765 },	-- Stonard Ogre
 						}),
-						i(64594, {	-- Ogre Trapper
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64620, {	-- Bloodmire Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64613, {	-- Ogre Mage Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64604, {	-- Sword of Marshtide Watch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64594),	-- Ogre Trapper
+						i(64620),	-- Bloodmire Crossbow
+						i(64613),	-- Ogre Mage Staff
+						i(64604),	-- Sword of Marshtide Watch
 						i(157013, {	-- Ogre Mage Club
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1454,18 +1359,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/6 Marshtide Knight slain
 							["provider"] = { "n", 46414 },	-- Marshtide Knight
 						}),
-						i(64625, {	-- Knight Tapper
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64634, {	-- Bloodmire Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64632, {	-- Ogre Mage Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64629, {	-- Greataxe of Stonard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64625),	-- Knight Tapper
+						i(64634),	-- Bloodmire Crossbow
+						i(64632),	-- Ogre Mage Staff
+						i(64629),	-- Greataxe of Stonard
 						i(157013, {	-- Ogre Mage Club
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1572,21 +1469,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/12 Marshtide Invader slain
 							["provider"] = { "n", 46869 },	-- Marshtide Invader
 						}),
-						i(64636, {	-- Defender's Thrust
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64626, {	-- Robes of the Honorable
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64630, {	-- Leggings of the Final Stand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64633, {	-- Chestguard of Bravery
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(64635, {	-- Ruag's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64636),	-- Defender's Thrust
+						i(64626),	-- Robes of the Honorable
+						i(64630),	-- Leggings of the Final Stand
+						i(64633),	-- Chestguard of Bravery
+						i(64635),	-- Ruag's Helm
 					},
 				}),
 				q(27911, {	-- With Dying Breath
@@ -1599,9 +1486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64627, {	-- Dying Breath
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(64627),	-- Dying Breath
 					},
 				}),
 			}),

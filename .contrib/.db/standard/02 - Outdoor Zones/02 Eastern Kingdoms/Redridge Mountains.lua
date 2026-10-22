@@ -124,7 +124,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31781, {	-- Lindsay
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -207,18 +206,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131588, {	-- Bravo Company Amice
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60722, {	-- Bravo Company Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60723, {	-- Bravo Company Monnions
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60725, {	-- Bravo Company Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60724, {	-- Bravo Company Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60722),	-- Bravo Company Mantle
+						i(60723),	-- Bravo Company Monnions
+						i(60725),	-- Bravo Company Pauldrons
+						i(60724),	-- Bravo Company Shoulderguards
 						i(131589, {	-- Bravo Company Spaulders
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -239,7 +230,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(7907, {	-- Certificate of Thievery
 							["description"] = "This item has no function, but if you get caught, just hand them this like you're Ron Swanson.",
-							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -380,18 +370,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.0, 51.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 43532,	-- Muckdweller
 						}),
-						i(60717, {	-- Everstill Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60716, {	-- Muckdweller Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60717),	-- Everstill Breastplate
+						i(60716),	-- Muckdweller Gloves
 						i(131569, {	-- Muckdweller Handguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60715, {	-- Vial of Chloroform
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60715),	-- Vial of Chloroform
 					},
 				}),
 				q(26587, {	-- Breaking Out is Hard to Do
@@ -463,24 +447,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60712, {	-- Exterminator's Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60712),	-- Exterminator's Armbands
 						i(131576, {	-- Exterminator's Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156953, {	-- 'Liberated' Greataxe
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(60714, {	-- Massive Firearm of Death
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60711, {	-- Messner's Cuffs
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60713, {	-- Redridge Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60714),	-- Massive Firearm of Death
+						i(60711),	-- Messner's Cuffs
+						i(60713),	-- Redridge Legguards
 					},
 				}),
 				q(116, {	-- Dry Times
@@ -502,12 +478,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["groups"] = {
-						i(1270, {	-- Finely Woven Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10456, {	-- A Bulging Coin Purse
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1270),	-- Finely Woven Cloak
+						i(10456),	-- A Bulging Coin Purse
 					},
 				}),
 				q(244, {	-- Encroaching Gnolls
@@ -586,21 +558,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(14, 14, 11),
 					["groups"] = {
-						i(60689, {	-- Belt of Unsolvable Problems
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60690, {	-- Doody Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60689),	-- Belt of Unsolvable Problems
+						i(60690),	-- Doody Boots
 						i(131517, {	-- Doody Shoes
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60688, {	-- Parker's Yardstick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60691, {	-- Unfortunate Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60688),	-- Parker's Yardstick
+						i(60691),	-- Unfortunate Treads
 					},
 				}),
 				heroscall(q(28563, {	-- Hero's Call: Redridge Mountains!
@@ -613,21 +577,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = { 14, 18 },
 					-- #endif
 					["groups"] = {
-						i(60689, {	-- Belt of Unsolvable Problems
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60690, {	-- Doody Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60689),	-- Belt of Unsolvable Problems
+						i(60690),	-- Doody Boots
 						i(131517, {	-- Doody Shoes
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60688, {	-- Parker's Yardstick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60691, {	-- Unfortunate Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60688),	-- Parker's Yardstick
+						i(60691),	-- Unfortunate Treads
 					},
 				})),
 				q(3741, {	-- Hilary's Necklace
@@ -674,12 +630,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131557, {	-- Hauberk of the Changing Heart
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60710, {	-- Troteman's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60709, {	-- Vest of the Changing Heart
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60710),	-- Troteman's Bracers
+						i(60709),	-- Vest of the Changing Heart
 					},
 				}),
 				q(2358, {	-- Horns of Nez'ra
@@ -717,12 +669,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 28.8, 23.2, REDRIDGE_MOUNTAINS },
 							["cr"] = 518,	-- Yowler
 						}),
-						i(1319, {	-- Ring of Iron Will
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2910, {	-- Gold Militia Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1319),	-- Ring of Iron Will
+						i(2910),	-- Gold Militia Boots
 					},
 				}),
 				q(26638, {	-- Hunting the Hunters
@@ -809,24 +757,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 37.6, 44.2, REDRIDGE_MOUNTAINS },
 						}),
-						i(60699, {	-- Bailiff's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60698, {	-- Belt of Recurring Raids
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60699),	-- Bailiff's Gloves
+						i(60698),	-- Belt of Recurring Raids
 						i(131539, {	-- Chain of Recurring Raids
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(157001, {	-- Everstill Hewer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(60697, {	-- Indiscriminate Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60696, {	-- Shield of the Lesson
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60697),	-- Indiscriminate Wand
+						i(60696),	-- Shield of the Lesson
 					},
 				}),
 				q(26513, {	-- Like a Fart in the Wind
@@ -843,21 +783,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 22.7, 36.5, REDRIDGE_MOUNTAINS },
 						}),
-						i(60692, {	-- Breadwinner's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60695, {	-- Cloak of Insomnia
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60692),	-- Breadwinner's Gloves
+						i(60695),	-- Cloak of Insomnia
 						i(131540, {	-- Starvation Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60694, {	-- Starvation Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60693, {	-- Ventillated Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60694),	-- Starvation Vest
+						i(60693),	-- Ventillated Leggings
 						i(131541, {	-- Ventillated Vest
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -935,15 +867,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
 					["groups"] = {
-						i(3555, {	-- Robe of Solomon
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1275, {	-- Deputy Chain Coat
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3431, {	-- Bone-studded Leather
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3555),	-- Robe of Solomon
+						i(1275),	-- Deputy Chain Coat
+						i(3431),	-- Bone-studded Leather
 					},
 				}),
 				q(249, {	-- Morganth
@@ -965,9 +891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 80.0, 49.0, REDRIDGE_MOUNTAINS },
 							["cr"] = 397,	-- Morganth
 						}),
-						i(5274, {	-- Rose Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5274),	-- Rose Mantle
 					},
 				}),
 				q(150, {	-- Murloc Poachers
@@ -978,9 +902,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(3567, {	-- Dwarven Fishing Pole
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3567),	-- Dwarven Fishing Pole
 					},
 				}),
 				q(26508, {	-- Nida's Necklace
@@ -1128,18 +1050,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["cr"] = 43094,	-- Canyon Ettin
 						}),
-						i(60701, {	-- Leverage Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60701),	-- Leverage Bracers
 						i(131543, {		-- Leverage Wriststraps
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60700, {	-- Solomon's Gavel
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60702, {	-- Sword of the Falling Sky
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60700),	-- Solomon's Gavel
+						i(60702),	-- Sword of the Falling Sky
 					},
 				}),
 				q(127, {	-- Selling Fish
@@ -1162,9 +1078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(3663),	-- Murloc Fin Soup
-						i(1322, {	-- Fishliver Oil
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1322),	-- Fishliver Oil
 						i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 					},
 				}),
@@ -1201,12 +1115,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 70.2, 42.0, REDRIDGE_MOUNTAINS },
 						}),
-						i(60719, {	-- Danforth's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60718, {	-- Shadowhide Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60719),	-- Danforth's Breastplate
+						i(60718),	-- Shadowhide Boots
 						i(131583, {	-- Shadowhide Footguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1283,21 +1193,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 30.6, 62.7, REDRIDGE_MOUNTAINS },
 						}),
-						i(60687, {	-- Belt of the Sons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60686, {	-- Boots of the Prolific Sire
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60687),	-- Belt of the Sons
+						i(60686),	-- Boots of the Prolific Sire
 						i(131538, {	-- Striders of the Prolific Sire
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60685, {	-- Yowling Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60731, {	-- Message Carrier
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60685),	-- Yowling Cloak
+						i(60731),	-- Message Carrier
 					},
 				}),
 				q(26569, {	-- Surveying Equipment
@@ -1315,18 +1217,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.0, 17.6, REDRIDGE_MOUNTAINS },
 							["cr"] = 615,	-- Blackrock Tracker
 						}),
-						i(60708, {	-- Blackrock Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60707, {	-- Lakeshire Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60708),	-- Blackrock Shield
+						i(60707),	-- Lakeshire Gloves
 						i(131556, {	-- Lakeshire Handwraps
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60706, {	-- Sandals of the Neverending Bridge
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60706),	-- Sandals of the Neverending Bridge
 					},
 				}),
 				q(19, {	-- Tharil'zun
@@ -1341,12 +1237,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 68.4, 58.8, REDRIDGE_MOUNTAINS },
 							["cr"] = 486,	-- Tharil'zun
 						}),
-						i(1276, {	-- Fire Hardened Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6093, {	-- Orc Crusher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1276),	-- Fire Hardened Buckler
+						i(6093),	-- Orc Crusher
 					},
 				}),
 				q(26693, {	-- The Dark Tower
@@ -1390,15 +1282,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								14271,	-- Ribchaser
 							},
 						}),
-						i(1310, {	-- Smith's Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1303, {	-- Bridgeworker's Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1304, {	-- Riding Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1310),	-- Smith's Trousers
+						i(1303),	-- Bridgeworker's Gloves
+						i(1304),	-- Riding Gloves
 					},
 				}),
 				q(26694, {	-- The Grand Magus Doane
@@ -1414,15 +1300,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 397 },	-- Grand Magus Doane
 							["coord"] = { 71.3, 45.4, REDRIDGE_MOUNTAINS },
 						}),
-						i(60721, {	-- Shalewind Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60721),	-- Shalewind Belt
 						i(131584, {	-- Treacherous Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60720, {	-- Treacherous Treads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60720),	-- Treacherous Treads
 					},
 				}),
 				q(125, {	-- The Lost Tools
@@ -1476,9 +1358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(6970, {	-- Furen's Favor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6970),	-- Furen's Favor
 					},
 				}),
 				q(178, {	-- Theocritus' Retrieval
@@ -1553,18 +1433,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60734, {	-- Keeshan's Bandana
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60727, {	-- Keeshan's Bow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60726, {	-- Keeshan's Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60730, {	-- Bravo Company Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60734),	-- Keeshan's Bandana
+						i(60727),	-- Keeshan's Bow
+						i(60726),	-- Keeshan's Dagger
+						i(60730),	-- Bravo Company Signet
 					},
 				}),
 				q(26512, {	-- Tuning the Gnomecorder
@@ -1589,12 +1461,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								441,	-- Black Dragon Whelp
 							},
 						}),
-						i(6092, {	-- Black Whelp Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1302, {	-- Black Whelp Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6092),	-- Black Whelp Boots
+						i(1302),	-- Black Whelp Gloves
 					},
 				}),
 				q(26640, {	-- Unspeakable Atrocities
@@ -1662,15 +1530,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 32.3, 60.7, REDRIDGE_MOUNTAINS },
 							},
 						}),
-						i(60684, {	-- Royal Guard Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60683, {	-- Tower Watch Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60682, {	-- Watch Captain's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60684),	-- Royal Guard Breastplate
+						i(60683),	-- Tower Watch Bracers
+						i(60682),	-- Watch Captain's Cloak
 					},
 				}),
 				q(26510, {	-- We Must Prepare!
@@ -1746,18 +1608,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- Blackrock Invasion Plans
 							["provider"] = { "i", 58937 },	-- Blackrock Invasion Plans (QI!)
 						}),
-						i(60703, {	-- Escalation Britchers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60705, {	-- Legguards of Invasion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60703),	-- Escalation Britchers
+						i(60705),	-- Legguards of Invasion
 						i(131552, {	-- Mongrel Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60704, {	-- Mongrel Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60704),	-- Mongrel Leggings
 					},
 				}),
 			}),
@@ -1812,7 +1668,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211488, {	-- Rune of the Avenger
-							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["groups"] = {
 								recipe(410008),	-- Engrave Pants - Avenger's Shield
@@ -1856,7 +1711,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211477, {	-- Rune of Incinerate
-							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416015),	-- Engrave Pants - Incinerate

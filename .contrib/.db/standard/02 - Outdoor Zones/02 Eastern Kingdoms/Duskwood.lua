@@ -98,7 +98,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31850, {	-- Eric Davidson
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -165,9 +164,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
-						i(2000, {	-- Archeus
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2000),	-- Archeus
 					},
 				}),
 				q(26797, {	-- A Daughter's Love
@@ -187,9 +184,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(156954, {	-- Refurbished Archeus
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(60937, {	-- Restored Archeus
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60937),	-- Restored Archeus
 					},
 				}),
 				q(26707, {	-- A Deadly Vine
@@ -205,24 +200,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								45785,	-- Carved One
 							},
 						}),
-						i(60927, {	-- Cloak of Sanity
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60927),	-- Cloak of Sanity
 						i(157003, {	-- Corpseweed Hewer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(60924, {	-- Corpseweed Sickle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60924),	-- Corpseweed Sickle
 						i(131587, {	-- Fess' Chain Apron
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60925, {	-- Festering Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60926, {	-- Potioner's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60925),	-- Festering Bracers
+						i(60926),	-- Potioner's Vest
 					},
 				}),
 				q(337, {	-- An Old History Book
@@ -241,12 +228,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
-						i(5817, {	-- Lunaris Bow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5818, {	-- Moonbeam Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5817),	-- Lunaris Bow
+						i(5818),	-- Moonbeam Wand
 					},
 				}),
 				q(325, {	-- Armed and Ready
@@ -257,9 +240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(7297, {	-- Morbent's Bane
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7297),	-- Morbent's Bane
 					},
 				}),
 				q(26787, {	-- Bear In Mind
@@ -273,18 +254,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60334 },	-- Black Bear Brain
 							["cr"] = 44016,	-- Coalpelt Bear
 						}),
-						i(60936, {	-- Jittering Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60934, {	-- John's Stylish Robe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60936),	-- Jittering Band
+						i(60934),	-- John's Stylish Robe
 						i(131604, {	-- Raven Hill Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60935, {	-- Raven Hill Sands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60935),	-- Raven Hill Sands
 					},
 				}),
 				q(322, {	-- Blessed Arm
@@ -315,15 +290,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131581, {	-- Night Watcher's Mail
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60941, {	-- Shoulderwraps of Honor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60943, {	-- Signet of the Night Watch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60942, {	-- Watch Master's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60941),	-- Shoulderwraps of Honor
+						i(60943),	-- Signet of the Night Watch
+						i(60942),	-- Watch Master's Breastplate
 					},
 				}),
 				q(253, {	-- Bride of the Embalmer
@@ -337,7 +306,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(254, {	-- Digging Through the Dirt
 							["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
 							["coord"] = { 28.8, 30.8, DUSKWOOD },
-							["timeline"] = { REMOVED_4_0_3 },
 							["repeatable"] = true,
 							["groups"] = {
 								objective(1, {	-- 0/1 The Embalmer's Heart
@@ -347,12 +315,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						i(3560, {	-- Mantle of Honor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6223, {	-- Crest of Darkshire
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3560),	-- Mantle of Honor
+						i(6223),	-- Crest of Darkshire
 					},
 				}),
 				q(26722, {	-- Buried Below
@@ -377,18 +341,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 37.6, 84.2, DUSKWOOD },
 							["cr"] = 300,	-- Zzarc' Vul
 						}),
-						i(60909, {	-- Astronomer's Handwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60909),	-- Astronomer's Handwraps
 						i(131580, {	-- Cosmologist's Grips
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60908, {	-- Stargazer's Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60910, {	-- Starry Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60908),	-- Stargazer's Pantaloons
+						i(60910),	-- Starry Band
 					},
 				}),
 				q(26672, {	-- Clawing at the Truth
@@ -410,18 +368,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43950 },	-- Lurking Worgen
 							["coord"] = { 18.6, 57.6, DUSKWOOD },
 						}),
-						i(60928, {	-- Consecrated Scepter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60928),	-- Consecrated Scepter
 						i(131597, {	-- Curse Breaker's Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60929, {	-- Moon Shriek Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60930, {	-- Shield of Darkshire
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60929),	-- Moon Shriek Bracers
+						i(60930),	-- Shield of Darkshire
 						i(245624, {	-- Waning Wood Fence (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
@@ -444,21 +396,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60900, {	-- Beggar's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60901, {	-- Dirty Rotten Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60899, {	-- Doublet of Deception
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60900),	-- Beggar's Belt
+						i(60901),	-- Dirty Rotten Gloves
+						i(60899),	-- Doublet of Deception
 						i(131574, {	-- Drifter's Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60898, {	-- Ghost Hair Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60898),	-- Ghost Hair Band
 					},
 				}),
 				q(164, {	-- Deliveries to Sven
@@ -521,9 +465,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 13.0, 70.6, DUSKWOOD },
 							},
 						}),
-						i(3559, {	-- Night Watch Gauntlets
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3559),	-- Night Watch Gauntlets
 					},
 				}),
 				q(453, {	-- Finding the Shadowy Figure
@@ -693,18 +635,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60902, {	-- Abercrombie's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60903, {	-- Old Man's Legwarmers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60902),	-- Abercrombie's Gloves
+						i(60903),	-- Old Man's Legwarmers
 						i(131579, {	-- Retired Linked Pants
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60904, {	-- Ring of the Fool
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60904),	-- Ring of the Fool
 					},
 				}),
 				q(174, {	-- Look To The Stars (1/4)
@@ -751,12 +687,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 37.0, 82.4, DUSKWOOD },
 							["cr"] = 300,	-- Zzarc' Vul
 						}),
-						i(7107, {	-- Belt of the Stars
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7106, {	-- Zodiac Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7107),	-- Belt of the Stars
+						i(7106),	-- Zodiac Gloves
 					},
 				}),
 				q(26683, {	-- Look To The Stars
@@ -780,21 +712,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 77.4, 36.2, DUSKWOOD },
 						}),
-						i(60919, {	-- Bracers of Forlorn Spirits
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60920, {	-- Burden of Shame
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60919),	-- Bracers of Forlorn Spirits
+						i(60920),	-- Burden of Shame
 						i(131578, {	-- Despondent Spirit Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60918, {	-- Slippers of the Crescent Moon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60917, {	-- Stalvan's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60918),	-- Slippers of the Crescent Moon
+						i(60917),	-- Stalvan's Cloak
 					},
 				}),
 				q(228, {	-- Mor'Ladim
@@ -839,18 +763,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 17.4, 33.6, DUSKWOOD },
 							["cr"] = 1200,	-- Morbent Fel
 						}),
-						i(2954, {	-- Night Watch Pantaloons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1282, {	-- Sparkmetal Coif
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7344, {	-- Torch of Holy Flame
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2953, {	-- Watch Master's Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2954),	-- Night Watch Pantaloons
+						i(1282),	-- Sparkmetal Coif
+						i(7344),	-- Torch of Holy Flame
+						i(2953),	-- Watch Master's Cloak
 					},
 				}),
 				q(26754, {	-- Morbent's Bane
@@ -867,18 +783,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 60212 },	-- Morbent's Bane
 							},
 						}),
-						i(60939, {	-- Ashen Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60940, {	-- Felbane Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60939),	-- Ashen Gloves
+						i(60940),	-- Felbane Belt
 						i(256905, {	-- Small Gilnean Table (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
-						i(60938, {	-- Yorgen's Boon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60938),	-- Yorgen's Boon
 						i(131596, {	-- Yorgen's Mitts
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -953,12 +863,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								4687,	-- Deepstrider Searcher
 							},
 						}),
-						i(6832, {	-- Cloak of Blight
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11265, {	-- Cragwood Maul
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6832),	-- Cloak of Blight
+						i(11265),	-- Cragwood Maul
 					},
 				}),
 				q(1388, {	-- Nothing But The Truth (3/4)
@@ -1096,21 +1002,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 73.7, 79.1, DUSKWOOD },
 						}),
-						i(60915, {	-- Daltry's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60915),	-- Daltry's Belt
 						i(156975, {	-- Exorcist's Dagger
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157002, {	-- Exorcist's Crossbow
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(60914, {	-- Exorcist's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60916, {	-- Roland's Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60914),	-- Exorcist's Wand
+						i(60916),	-- Roland's Legguards
 						i(131577, {	-- The Clerk's Chain
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1238,18 +1138,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 948 },	-- Rotted One
 							},
 						}),
-						i(60922, {	-- Aegis of Faith
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60923, {	-- Ghoul-Hunter Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60922),	-- Aegis of Faith
+						i(60923),	-- Ghoul-Hunter Leggings
 						i(131600, {	-- Ghoul-Slayer Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60921, {	-- Sister Elsington's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60921),	-- Sister Elsington's Belt
 					},
 				}),
 				q(229, {	-- The Daughter Who Lived
@@ -1285,18 +1179,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Stitches slain
 							["provider"] = { "n", 43862 },	-- Stitches <Gift from the Embalmer>
 						}),
-						i(60905, {	-- Ello's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60907, {	-- Sparkmetal Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60905),	-- Ello's Band
+						i(60907),	-- Sparkmetal Bracers
 						i(3360, {	-- Stitches' Femur
 							["timeline"] = { ADDED_10_1_7 },
 						}),
-						i(60906, {	-- Stitches' Stitchings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60906),	-- Stitches' Stitchings
 					},
 				}),
 				q(26723, {	-- The Fate of Morbent Fel
@@ -1513,12 +1401,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 77.6, 34.8, DUSKWOOD },
 							["cr"] = 315,	-- Stalvan Mistmantle
 						}),
-						i(2044, {	-- Crescent of Forlorn Spirits
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2043, {	-- Ring of Forlorn Spirits
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2044),	-- Crescent of Forlorn Spirits
+						i(2043),	-- Ring of Forlorn Spirits
 					},
 				}),
 				q(26666, {	-- The Legend of Stalvan
@@ -1576,15 +1460,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/20 Plague Spreader slain
 							["provider"] = { "n", 604 },	-- Plague Spreader
 						}),
-						i(3604, {	-- Bandolier of the Night Watch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1729, {	-- Gunnysack of the Night Watch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3605, {	-- Quiver of the Night Watch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3604),	-- Bandolier of the Night Watch
+						i(1729),	-- Gunnysack of the Night Watch
+						i(3605),	-- Quiver of the Night Watch
 					},
 				}),
 				q(26645, {	-- The Night Watch
@@ -1657,9 +1535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 61.22, 40.51, DUSKWOOD },
 						}),
-						i(60911, {	-- Archivist's Lighter
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60911),	-- Archivist's Lighter
 						i(156973, {	-- Archivist's Staff
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1669,12 +1545,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131575, {	-- Brightwood Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(60912, {	-- Cragwood Clutches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60913, {	-- Librarian's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60912),	-- Cragwood Clutches
+						i(60913),	-- Librarian's Cloak
 					},
 				}),
 				q(101, {	-- The Totem of Infliction
@@ -1718,9 +1590,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								48,		-- Skeletal Warrior
 							},
 						}),
-						i(1131, {	-- Totem of Infliction
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1131),	-- Totem of Infliction
 					},
 				}),
 				q(225, {	-- The Weathered Grave
@@ -1857,15 +1727,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/12 Dire Wolf slain
 							["provider"] = { "n", 43704 },	-- Dire Wolf
 						}),
-						i(60895, {	-- Ebonlocke Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60896, {	-- Night Watch Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60897, {	-- Night Watch Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60895),	-- Ebonlocke Band
+						i(60896),	-- Night Watch Vest
+						i(60897),	-- Night Watch Boots
 						i(131564, {	-- Night Watch Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1922,15 +1786,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
-						i(2902, {	-- Cloak of the Faith
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1547, {	-- Shield of the Faith
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5244, {	-- Consecrated Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2902),	-- Cloak of the Faith
+						i(1547),	-- Shield of the Faith
+						i(5244),	-- Consecrated Wand
 					},
 				}),
 				q(26688, {	-- Worgen in the Woods (1/2)
@@ -1952,15 +1810,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60931, {	-- Vigilante's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60932, {	-- Cold Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(60933, {	-- Carevin's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(60931),	-- Vigilante's Gloves
+						i(60932),	-- Cold Boots
+						i(60933),	-- Carevin's Breastplate
 						i(131582, {	-- Callous Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2031,12 +1883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
-						i(4465, {	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(4464, {	-- Trouncing Boots
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(4465),	-- Bonefist Gauntlets [Classic] / Felstrom's Gauntlets [Wrath+]
+						i(4464),	-- Trouncing Boots
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2088,9 +1936,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 23.7, 36.3, DUSKWOOD },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
-						i(122223, {	-- Music Roll: Ghost
-							["timeline"] = { ADDED_6_1_0 },
-						}),
+						i(122223),	-- Music Roll: Ghost
 					},
 				}),
 				n(503, {	-- Lord Malathrom
@@ -2111,12 +1957,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
-						i(4462, {	-- Cloak of Rot
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
-						i(1187, {	-- Spiked Collar
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(4462),	-- Cloak of Rot
+						i(1187),	-- Spiked Collar
 					},
 				}),
 				n(521, {	-- Lupos

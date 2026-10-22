@@ -51,7 +51,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(23437),	-- Talasite
 						},
 						sharedData({
-							["timeline"] = { ADDED_2_1_0 },
 						}, {
 							-- Epic quality (purple) gems:
 							i(32227),	-- Crimson Spinel

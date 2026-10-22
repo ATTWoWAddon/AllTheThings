@@ -11,13 +11,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuest"] = 27380,	-- Nightmare
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				achWithRep(4886, FACTION_DRAGONMAW_CLAN, {	-- Dragonmaw Clan
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(15952, {	-- High Shaman MacKilligan slain
@@ -49,11 +47,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				ach(4866, {	-- Explore Twilight Highlands
-					["timeline"] = { ADDED_4_0_3 },
-				}),
+				ach(4866),	-- Explore Twilight Highlands
 				ach(4873, {	-- Fading into Twilight (Alliance)
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
@@ -75,7 +70,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 7.3.5
 					["_doautomation"] = true,
@@ -92,14 +86,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				ach(4960, {	-- Round Three. Fight!
-					["timeline"] = { ADDED_4_0_3 },
-				}),
+				ach(4960),	-- Round Three. Fight!
 				achWithRep(4885, FACTION_WILDHAMMER_CLAN, {	-- Wildhammer Clan
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(15948, {	-- Warlord Halthar slain
@@ -328,7 +319,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31974, {	-- Goz Banefury
 							["sourceAchievement"] = 7525,	-- Taming Cataclysm
-							["timeline"] = { ADDED_5_0_4 },
 							["isDaily"] = true,
 						}),
 					},
@@ -1453,7 +1443,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				heroscall(q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 84,
@@ -2677,9 +2666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 46935,	-- Gurgthock
 					["coord"] = { 50.6, 58.3, TWILIGHT_HIGHLANDS },
 					["groups"] = {
-						ach(4960, {	-- Round Three. Fight!
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						ach(4960),	-- Round Three. Fight!
 						i(63790),	-- Gurgthock's Garish Gorebat
 						i(63792),	-- Laquered Lung-Leak Longknife
 						i(63788),	-- Calder's Coated Carrion Carver
@@ -2956,14 +2943,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						107574,	-- Anduin Wrynn
 					},
 					["coord"] = { 85.9, 32.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28832, {	-- Twilight Shores (2/2)
 					["sourceQuest"] = 28238,	-- Twilight Shores (1/2)
 					["qg"] = 44806,	-- Fargo Flintlocke
 					["coord"] = { 26.2, 47.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27662, {	-- Unbinding

@@ -40,11 +40,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["groups"] = {
 						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							["timeline"] = { REMOVED_3_0_2 },
 						}),
-						title(39, {	-- Hand of A'dal
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
+						title(39),	-- Hand of A'dal
 						i(32649),	-- Medallion of Karabor
 					},
 				}),

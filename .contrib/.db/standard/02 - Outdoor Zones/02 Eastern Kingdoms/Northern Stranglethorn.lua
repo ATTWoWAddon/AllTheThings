@@ -129,7 +129,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31852, {	-- Steven Lisbane
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -210,15 +209,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 25.0, 18.4, NORTHERN_STRANGLETHORN },
 							["cr"] = 1061,	-- Gan'zulah <Bloodscalp Chief>
 						}),
-						i(61064, {	-- Electrostatic Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61063, {	-- Discarded Troll Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61062, {	-- Juju Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61064),	-- Electrostatic Legguards
+						i(61063),	-- Discarded Troll Leggings
+						i(61062),	-- Juju Belt
 						i(131595, {	-- Discarded Troll Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -286,12 +279,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 44.5, 9.8, STRANGLETHORN_VALE },
 						}),
-						i(4126, {	-- Guerrilla Cleaver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4140, {	-- Palm Frond Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4126),	-- Guerrilla Cleaver
+						i(4140),	-- Palm Frond Mantle
 					},
 				}),
 				q(26732, {	-- Bad Medicine
@@ -309,15 +298,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								937,	-- Kurzen Jungle Fighter
 							},
 						}),
-						i(61054, {	-- Nimetz's Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61053, {	-- Cord of the Ascetic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61052, {	-- Missionary's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61054),	-- Nimetz's Pauldrons
+						i(61053),	-- Cord of the Ascetic
+						i(61052),	-- Missionary's Leggings
 						i(131591, {	-- Cinch of the Ascetic
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -346,18 +329,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42884 },	-- Shade of the Hexxer
 							["coord"] = { 73.4, 32.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61080, {	-- Band of Raptor Teeth
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61079, {	-- Belt of the High Shaman
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61078, {	-- Thaalia's Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61077, {	-- Jingle Spirits' Embrace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61080),	-- Band of Raptor Teeth
+						i(61079),	-- Belt of the High Shaman
+						i(61078),	-- Thaalia's Slippers
+						i(61077),	-- Jingle Spirits' Embrace
 						i(131599, {	-- Waistguard of the High Shaman
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -386,18 +361,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42884 },	-- Shade of the Hexxer
 							["coord"] = { 73.4, 32.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61123, {	-- Band of Raptor Teeth
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61122, {	-- Belt of the High Shaman
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61121, {	-- Hu'rula's Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61120, {	-- Jungle Spirits' Embrace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61123),	-- Band of Raptor Teeth
+						i(61122),	-- Belt of the High Shaman
+						i(61121),	-- Hu'rula's Slippers
+						i(61120),	-- Jungle Spirits' Embrace
 						i(131515, {	-- Waistguard of the High Shaman
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -517,9 +484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								660,	-- Bloodscalp Witch Doctor
 							},
 						}),
-						i(4598, {	-- Goblin Fishing Pole
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4598),	-- Goblin Fishing Pole
 					},
 				}),
 				q(26742, {	-- Bloodscalp Insight (A)
@@ -588,9 +553,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								660,	-- Bloodscalp Witch Doctor
 							},
 						}),
-						i(4135, {	-- Bloodbone Band
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4135),	-- Bloodbone Band
 					},
 				}),
 				q(200, {	-- Bookie Herod
@@ -613,9 +576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(2756, {	-- Green Hills of Stranglethorn - Chapter I
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2756),	-- Green Hills of Stranglethorn - Chapter I
 					},
 				}),
 				q(340, {	-- Chapter II
@@ -630,9 +591,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(2757, {	-- Green Hills of Stranglethorn - Chapter II
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2757),	-- Green Hills of Stranglethorn - Chapter II
 					},
 				}),
 				q(341, {	-- Chapter III
@@ -647,9 +606,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(2758, {	-- Green Hills of Stranglethorn - Chapter III
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2758),	-- Green Hills of Stranglethorn - Chapter III
 					},
 				}),
 				q(342, {	-- Chapter IV
@@ -663,9 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 30,
 					["groups"] = {
-						i(2759, {	-- Green Hills of Stranglethorn - Chapter IV
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2759),	-- Green Hills of Stranglethorn - Chapter IV
 					},
 				}),
 				q(26302, {	-- Chasing Yenniku's Fate
@@ -694,9 +649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 49.6, 4.0, STRANGLETHORN_VALE },
 							["cr"] = 813,	-- Colonel Kurzen
 						}),
-						i(4127, {	-- Shrapnel Blaster
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4127),	-- Shrapnel Blaster
 					},
 				}),
 				q(26733, {	-- Control Sample
@@ -752,15 +705,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 33.7, 36.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61066, {	-- Well Crafted Leather Britches
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61065, {	-- Soft Cotton Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61067, {	-- Rebel Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61066),	-- Well Crafted Leather Britches
+						i(61065),	-- Soft Cotton Armbands
+						i(61067),	-- Rebel Breastplate
 						i(131594, {	-- Well Crafted Chain Britches
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -773,15 +720,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
-						i(10697, {	-- Enchanted Azsharite Felbane Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10698, {	-- Enchanted Azsharite Felbane Staff
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10696, {	-- Enchanted Azsharite Felbane Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10697),	-- Enchanted Azsharite Felbane Dagger
+						i(10698),	-- Enchanted Azsharite Felbane Staff
+						i(10696),	-- Enchanted Azsharite Felbane Sword
 					},
 				}),
 				q(2765, {	-- Expert Blacksmith!
@@ -797,10 +738,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(8703,	{	-- Signet of Expertise
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
 								i(8708, {	-- Hammer of Expertise
-									["timeline"] = { REMOVED_4_0_3 },
 									["collectible"] = false,
 								}),
 							},
@@ -820,9 +759,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131892, {	-- Excelsior Footwear
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61106, {	-- Excelsior Waders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61106),	-- Excelsior Waders
 					},
 				}),
 				q(26745, {	-- Favored Skull (A)
@@ -901,12 +838,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 1532 },	-- Shrunken Head
 							["cr"] = 671,	-- Bloodscalp Headhunter
 						}),
-						i(4133, {	-- Darkspear Cuffs
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4132, {	-- Darkspear Armsplints
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4133),	-- Darkspear Cuffs
+						i(4132),	-- Darkspear Armsplints
 					},
 				}),
 				q(26299, {	-- Headhunting
@@ -924,21 +857,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								660,	-- Bloodscalp Witch Doctor
 							},
 						}),
-						i(61090, {	-- Head Inspector's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61089, {	-- Palm Frond Shoulderpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61088, {	-- Junglestrider Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61090),	-- Head Inspector's Gloves
+						i(61089),	-- Palm Frond Shoulderpads
+						i(61088),	-- Junglestrider Sandals
 						i(131506, {	-- Palm Frond Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61087, {	-- Ring of Six Hundred Years
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61087),	-- Ring of Six Hundred Years
 					},
 				}),
 				heroscall(q(28699, {	-- Hero's Call: Northern Stranglethorn!
@@ -1125,9 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3616 },	-- Mind's Eye
 							["cr"] = 818,	-- Mai'Zoth
 						}),
-						i(4125, {	-- Tranquil Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4125),	-- Tranquil Orb
 					},
 				}),
 				q(26774, {	-- Mind Control (A)
@@ -1252,9 +1175,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
 						}),
-						i(4112, {	-- Choker of the High Shaman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4112),	-- Choker of the High Shaman
 					},
 				}),
 				q(26407, {	-- Mosh'Ogg Handiwork
@@ -1577,12 +1498,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(4123, {	-- Frost Metal Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4139, {	-- Junglewalker Sandals
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4123),	-- Frost Metal Pauldrons
+						i(4139),	-- Junglewalker Sandals
 					},
 				}),
 				q(622, {	-- Return to Corporal Kaleb
@@ -1637,21 +1554,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 60272 },	-- Icon of Pogeyan
 							["cr"] = 702,	-- Bloodscalp Scavenger
 						}),
-						i(61058, {	-- Tsul'kalu's Strikers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61057, {	-- Mahamba's Caress
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61056, {	-- Bloodscalp Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61058),	-- Tsul'kalu's Strikers
+						i(61057),	-- Mahamba's Caress
+						i(61056),	-- Bloodscalp Sandals
 						i(131593, {	-- Mahamba's Pauldrons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61055, {	-- Wildhammer Scribe's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61055),	-- Wildhammer Scribe's Band
 					},
 				}),
 				q(592, {	-- Saving Yenniku
@@ -1674,12 +1583,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
-						i(4134, {	-- Nimboya's Mystical Staff
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6723, {	-- Medal of Courage
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4134),	-- Nimboya's Mystical Staff
+						i(6723),	-- Medal of Courage
 					},
 				}),
 				q(26305, {	-- Saving Yenniku
@@ -1697,15 +1602,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.4, 75.2, NORTHERN_STRANGLETHORN },
 							["cr"] = 2530,	-- Yenniku <Darkspear Hostage>
 						}),
-						i(61102, {	-- Nimboya's Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61101, {	-- Weavers of the Unending Tale
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61100, {	-- Stone Etcher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61102),	-- Nimboya's Legguards
+						i(61101),	-- Weavers of the Unending Tale
+						i(61100),	-- Stone Etcher
 						i(131508, {	-- Linkers of the Unending Tale
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1758,9 +1657,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						i(7983, {	-- Plans: Ornate Mithril Pants (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7983),	-- Plans: Ornate Mithril Pants (RECIPE!)
 					},
 				}),
 				q(26344, {	-- Some Assembly Required
@@ -1869,15 +1766,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 54.0, 61.7, NORTHERN_STRANGLETHORN },
 						}),
-						i(61099, {	-- Slaver's Plate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61098, {	-- Balia'mah Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61097, {	-- Ziata'jai Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61099),	-- Slaver's Plate
+						i(61098),	-- Balia'mah Leggings
+						i(61097),	-- Ziata'jai Bracers
 						i(131507, {	-- Balia'mah Chain Pants
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1929,12 +1820,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								670,	-- Skullsplitter Witch Doctor
 							},
 						}),
-						i(4137, {	-- Darkspear Shoes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4136, {	-- Darkspear Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4137),	-- Darkspear Shoes
+						i(4136),	-- Darkspear Boots
 					},
 				}),
 				q(26737, {	-- Stopping Kurzen's Legacy
@@ -1960,15 +1847,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43912 },	-- Chief Esquivel <Kurzen Special Forces>
 							["coord"] = { 65.8, 11.8, NORTHERN_STRANGLETHORN },
 						}),
-						i(61049, {	-- Ring of Forgotten Causes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61051, {	-- Guerilla Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61050, {	-- Expedition Scouting Gear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61049),	-- Ring of Forgotten Causes
+						i(61051),	-- Guerilla Breastplate
+						i(61050),	-- Expedition Scouting Gear
 						i(131592, {	-- Expedition Scout's Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2009,15 +1890,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 19.2, 40.6, NORTHERN_STRANGLETHORN },
 							["cr"] = 17207,	-- Naias
 						}),
-						i(61061, {	-- Junglewalker Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61060, {	-- Salt-Cured Monnions
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61059, {	-- Emerine's Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61061),	-- Junglewalker Boots
+						i(61060),	-- Salt-Cured Monnions
+						i(61059),	-- Emerine's Blade
 						i(131590, {	-- Salt-Cured Mantle
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2036,9 +1911,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						i(7985, {	-- Plans: Ornate Mithril Shoulder (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7985),	-- Plans: Ornate Mithril Shoulder (RECIPE!)
 					},
 				}),
 				q(568, {	-- The Defense of Grom'gol (1/2)
@@ -2067,9 +1940,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Mosh'Ogg Witch Doctor slain
 							["provider"] = { "n", 1144 },	-- Mosh'Ogg Witch Doctor
 						}),
-						i(4115, {	-- Grom'gol Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4115),	-- Grom'gol Buckler
 					},
 				}),
 				q(26280, {	-- The Defense of Grom'gol: Murloc Menace
@@ -2103,18 +1974,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/4 Mosh'Ogg Witch Doctor slain
 							["provider"] = { "n", 1144 },	-- Mosh'Ogg Witch Doctor
 						}),
-						i(61083, {	-- Smashing Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61082, {	-- Mizjah Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61083),	-- Smashing Breastplate
+						i(61082),	-- Mizjah Vest
 						i(131499, {	-- Mizjah Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(61081, {	-- Ring of Cooperation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61081),	-- Ring of Cooperation
 					},
 				}),
 				q(26278, {	-- The Defense of Grom'gol: Raptor Risk
@@ -2150,15 +2015,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 34.5, 35.2, NORTHERN_STRANGLETHORN },
 						}),
-						i(61086, {	-- Pitiless Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61085, {	-- Bal'lal Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61084, {	-- Unforgiving Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61086),	-- Pitiless Pauldrons
+						i(61085),	-- Bal'lal Belt
+						i(61084),	-- Unforgiving Pantaloons
 						i(131500, {	-- Bal'lal Waistguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2214,9 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["learnedAt"] = 210,
 					["lvl"] = 40,
 					["groups"] = {
-						i(7984, {	-- Plans: Ornate Mithril Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7984),	-- Plans: Ornate Mithril Gloves (RECIPE!)
 					},
 				}),
 				q(338, {	-- The Green Hills of Stranglethorn
@@ -2235,9 +2092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4116, {	-- Olmann Sewar
 							["timeline"] = { REMOVED_1_2_0 },
 						}),
-						i(17688, {	-- Jungle Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(17688),	-- Jungle Boots
 						-- #if BEFORE 4.0.3
 						i(3928),	-- Superior Healing Potion
 						i(8173),	-- Thick Armor Kit
@@ -2461,9 +2316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(4122, {	-- Bookmaker's Scepter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4122),	-- Bookmaker's Scepter
 					},
 				}),
 				q(26340, {	-- The Hunt
@@ -2499,15 +2352,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 70.6, 48.6, NORTHERN_STRANGLETHORN },
 							["cr"] = 818,	-- Mai'Zoth
 						}),
-						i(61070, {	-- Fort Livingston Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61069, {	-- Eye-Plucker Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61068, {	-- Wand of Imagination
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61070),	-- Fort Livingston Legguards
+						i(61069),	-- Eye-Plucker Gloves
+						i(61068),	-- Wand of Imagination
 						i(131603, {	-- Eye-Plucker Grips
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2796,15 +2643,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								4260,	-- Venture Co. Shredder
 							},
 						}),
-						i(61073, {	-- Spare Metal Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61072, {	-- Bartered Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61071, {	-- Krazek's Oven Mitts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61073),	-- Spare Metal Pauldrons
+						i(61072),	-- Bartered Bracers
+						i(61071),	-- Krazek's Oven Mitts
 						i(131598, {	-- Bartered Wristguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2830,15 +2671,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								4260,	-- Venture Co. Shredder
 							},
 						}),
-						i(61105, {	-- Scrap Metal Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61104, {	-- Skeezy Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61103, {	-- Junglepicker Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61105),	-- Scrap Metal Pauldrons
+						i(61104),	-- Skeezy Bracers
+						i(61103),	-- Junglepicker Gloves
 						i(131521, {	-- Skeezy Wraps
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2908,15 +2743,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 25.0, 18.4, NORTHERN_STRANGLETHORN },
 							["cr"] = 1061,	-- Gan'zulah <Bloodscalp Chief>
 						}),
-						i(61096, {	-- Electrostatic Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61095, {	-- Discarded Troll Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61094, {	-- Juju Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61096),	-- Electrostatic Legguards
+						i(61095),	-- Discarded Troll Leggings
+						i(61094),	-- Juju Belt
 						i(131513, {	-- Discarded Troll Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2966,15 +2795,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42858},	-- Braddok
 							},
 						}),
-						i(61076, {	-- Pauldrons of the Wayward Tribe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61075, {	-- Breastplate of Zul'Mamwe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61074, {	-- Irradiated Faux Croc' Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61076),	-- Pauldrons of the Wayward Tribe
+						i(61075),	-- Breastplate of Zul'Mamwe
+						i(61074),	-- Irradiated Faux Croc' Bracers
 						i(131601, {	-- Hauberk of Zul'Mamwe
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -3004,15 +2827,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42858},	-- Braddok
 							},
 						}),
-						i(61119, {	-- Pauldrons of the Wayward Tribe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61118, {	-- Breastplate of Zul'Mamwe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(61117, {	-- Irradiated Faux Croc' Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(61119),	-- Pauldrons of the Wayward Tribe
+						i(61118),	-- Breastplate of Zul'Mamwe
+						i(61117),	-- Irradiated Faux Croc' Bracers
 						i(131522, {	-- Hauberk of Zul'Mamwe
 							["timeline"] = { ADDED_7_0_3 },
 						}),

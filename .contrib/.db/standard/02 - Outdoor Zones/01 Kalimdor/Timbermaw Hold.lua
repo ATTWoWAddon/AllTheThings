@@ -166,18 +166,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						--
-						i(65343, {	-- Timbermaw Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65294, {	-- Timbermaw Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65313, {	-- Timbermaw Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65332, {	-- Timbermaw Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65343),	-- Timbermaw Breastplate
+						i(65294),	-- Timbermaw Bracers
+						i(65313),	-- Timbermaw Leggings
+						i(65332),	-- Timbermaw Boots
 					},
 				}),
 				q(8466, {	-- Feathers for Grazle
@@ -333,15 +325,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63695 },	-- Drizle's Key
 							["cr"] = 9462,	-- Chieftain Bloodmaw
 						}),
-						i(65293, {	-- Leggings of Mischief
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65312, {	-- Vest of Sobbing
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65331, {	-- Bloodmaw's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65293),	-- Leggings of Mischief
+						i(65312),	-- Vest of Sobbing
+						i(65331),	-- Bloodmaw's Belt
 					},
 				}),
 				q(8481, {	-- The Root of All Evil
@@ -382,12 +368,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/6 Deadwood Gardener slain
 							["provider"] = { "n", 7154 },	-- Deadwood Gardener
 						}),
-						i(21311, {	-- Earth Warder's Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21312, {	-- Belt of the Den Watcher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21311),	-- Earth Warder's Vest
+						i(21312),	-- Belt of the Den Watcher
 					},
 				}),
 				q(28373, {	-- Timbermaw Hold

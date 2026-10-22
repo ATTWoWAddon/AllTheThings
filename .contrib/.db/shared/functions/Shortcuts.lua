@@ -708,8 +708,7 @@ applyDataSelf = function(data, t)
 		return t
 	end
 	if not t then
-		error("applyDataSelf: No Source 't'",StringifyTable(t,","))
-		return t
+		t = {};
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);
@@ -963,8 +962,7 @@ bubbleDownSelf = function(data, t)
 		return t
 	end
 	if not t then
-		error("bubbleDownSelf: No Source 't'",StringifyTable(t,","))
-		return t
+		t = {};
 	end
 	-- if this is an array, convert to .g container first to prevent merge confusion
 	t = togroups(t);

@@ -200,9 +200,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(7130, {	-- Brutal Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7130),	-- Brutal Helm
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -339,9 +337,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						-- #endif
-						i(6720, {	-- Spirit Hunter Headdress
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6720),	-- Spirit Hunter Headdress
 					},
 				}),
 				q(768, {	-- Gathering Leather
@@ -527,9 +523,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
-						i(46978, {	-- Totem of the Earthen Ring
-							["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
-						}),
+						i(46978),	-- Totem of the Earthen Ring
 					},
 				}),
 				q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
@@ -793,12 +787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 42.0, 35.0, THOUSAND_NEEDLES },
 						}),
-						i(6739, {	-- Cliffrunner's Aim
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6740, {	-- Azure Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6739),	-- Cliffrunner's Aim
+						i(6740),	-- Azure Sash
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -867,18 +857,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
-						i(57241, {	-- Dreamwalking Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57230, {	-- Kodo Mallet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57214, {	-- Stunted Tree Root
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57239, {	-- Sunwalker's Stunner
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57241),	-- Dreamwalking Staff
+						i(57230),	-- Kodo Mallet
+						i(57214),	-- Stunted Tree Root
+						i(57239),	-- Sunwalker's Stunner
 						i(156986, {	-- Kodo Gavel
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -924,19 +906,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}, {	-- Friendly
 						}, {	-- Honored
 						}, {	-- Revered
-							i(67534, {	-- Thunder Bluff Satchel
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(67534),	-- Thunder Bluff Satchel
 						}, {	-- Exalted
-							i(64917, {	-- Cape of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64918, {	-- Mantle of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64919, {	-- Shroud of Thunder Bluff
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(64917),	-- Cape of Thunder Bluff
+							i(64918),	-- Mantle of Thunder Bluff
+							i(64919),	-- Shroud of Thunder Bluff
 						},
 					}),
 				}),

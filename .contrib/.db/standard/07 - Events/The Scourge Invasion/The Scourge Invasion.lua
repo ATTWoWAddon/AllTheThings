@@ -168,18 +168,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					i(236738),	-- Handguards of Undead Warding
 					i(236747),	-- Gauntlets of Undead Warding
 					-- #ELSE
-					i(23084, {	-- Gloves of Undead Cleansing
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23081, {	-- Handwraps of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23082, {	-- Handguards of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
-					i(23078, {	-- Gauntlets of Undead Slaying
-						["timeline"] = { REMOVED_WITH_NAXX_RELEASE_OR_SOD },
-					}),
+					i(23084),	-- Gloves of Undead Cleansing
+					i(23081),	-- Handwraps of Undead Slaying
+					i(23082),	-- Handguards of Undead Slaying
+					i(23078),	-- Gauntlets of Undead Slaying
 					-- #ENDIF
 				},
 			}),
@@ -222,9 +214,7 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["maps"] = { KARAZHAN },
 				["lvl"] = 70,
 				["groups"] = {
-					i(40354, {	-- Monster Slayer's Kit
-						["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
-					}),
+					i(40354),	-- Monster Slayer's Kit
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -946,20 +936,17 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 					-- #if BEFORE WRATH
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_3_0_2 },
 					-- #else
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 					-- #endif
 				}),
 				i(38658, {	-- Vampiric Batling (PET!)
 					-- #if ANYCLASSIC
 					["description"] = "Drops for everyone in the raid. Get one on all of your alts!",
 					-- #endif
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
 				i(39769, {	-- Arcanite Ripper
 					-- #if ANYCLASSIC
 					["description"] = "Only ONE of these drops per raid. Help your friends get one on their account by bringing your alts! Highly recommend 6-8 manning the boss for this item and hard reserving it for one person per raid group.",
 					-- #endif
-					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				}),
 			},
 		}),

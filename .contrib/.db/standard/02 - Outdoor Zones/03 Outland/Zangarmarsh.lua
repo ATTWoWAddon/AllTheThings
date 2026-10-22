@@ -221,7 +221,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31923, {	-- Ras'an
 								["sourceAchievement"] = 6604,	-- Taming Outland
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -1963,9 +1962,7 @@ root(ROOTS.Zones, {
 								i(265844, {	-- Communal Reservoir Pouch
 									["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
 									["groups"] = {
-										i(265843, {	-- Communal Reservoir Key
-											["timeline"] = { ADDED_2_5_5, REMOVED_4_2_0 },
-										}),
+										i(265843),	-- Communal Reservoir Key
 									},
 								}),
 								-- #endif

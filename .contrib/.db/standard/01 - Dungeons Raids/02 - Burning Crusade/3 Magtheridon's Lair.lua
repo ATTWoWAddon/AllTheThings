@@ -58,11 +58,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						ach(432, {	-- Champion of the Naaru (Achievement)
 							["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
-							["timeline"] = { REMOVED_3_0_2 },
 						}),
-						title(36, {	-- Champion of the Naaru
-							["timeline"] = { REMOVED_3_0_2 },
-						}),
+						title(36),	-- Champion of the Naaru
 					},
 				}),
 				q(13430, {	-- Trial of the Naaru: Magtheridon

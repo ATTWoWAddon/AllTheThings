@@ -75,12 +75,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				["races"] = ALLIANCE_ONLY,
 				-- #endif
 				["groups"] = {
-					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
-						["timeline"] = { ADDED_3_2_2 },
-					}),
-					i(44810, {	-- Plump Turkey (PET!)
-						["timeline"] = { ADDED_3_2_2 },
-					}),
+					title(133),	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
+					i(44810),	-- Plump Turkey (PET!)
 				},
 			}),
 			ach(3656, {	-- Pilgrim
@@ -642,15 +638,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				i(116404, {	-- Pilgrim's Bounty
 					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
-						i(116401, {	-- Fine Pilgrim's Hat
-							["timeline"] = { ADDED_6_0_2 },
-						}),
-						i(116403, {	-- Bush Chicken (PET!)
-							["timeline"] = { ADDED_6_0_2 },
-						}),
-						i(116400, {	-- Silver-Plated Turkey Shooter (TOY!)
-							["timeline"] = { ADDED_6_0_2 },
-						}),
+						i(116401),	-- Fine Pilgrim's Hat
+						i(116403),	-- Bush Chicken (PET!)
+						i(116400),	-- Silver-Plated Turkey Shooter (TOY!)
 						i(248716, {	-- Green Bountiful Backpack
 							["timeline"] = { ADDED_11_2_5 },
 						}),

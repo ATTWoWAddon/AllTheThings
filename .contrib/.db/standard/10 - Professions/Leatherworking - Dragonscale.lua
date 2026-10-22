@@ -16,7 +16,6 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Ebon Netherscale Breastplate",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35575,
 							["requireSkill"] = 10656,
 						}),
@@ -29,7 +28,6 @@ profession(LEATHERWORKING, {
 						-- #endif
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Netherstrike Breastplate",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35580,
 							["requireSkill"] = 10656,
 						}),
@@ -41,13 +39,11 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Ebon Netherscale Bracers",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35577,
 							["requireSkill"] = 10656,
 						}),
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Netherstrike Bracers",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35584,
 							["requireSkill"] = 10656,
 						}),
@@ -59,13 +55,11 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Ebon Netherscale Belt",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35576,
 							["requireSkill"] = 10656,
 						}),
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Netherstrike Belt",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35582,
 							["requireSkill"] = 10656,
 						}),

@@ -113,7 +113,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31906, {	-- Kela Grimtotem
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -179,18 +178,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 40432},	-- Southsea Parrot Handler
 							},
 						}),
-						i(63574, {	-- Paper Roll Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63575, {	-- Drag Master's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63576, {	-- Outhouse Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63577, {	-- Payback Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63574),	-- Paper Roll Bracers
+						i(63575),	-- Drag Master's Boots
+						i(63576),	-- Outhouse Boots
+						i(63577),	-- Payback Band
 					},
 				}),
 				q(25589, {	-- A Little Payback [H]
@@ -206,18 +197,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 40432},	-- Southsea Parrot Handler
 							},
 						}),
-						i(63578, {	-- Paper Roll Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63579, {	-- Rugfizzle's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63580, {	-- Outhouse Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63581, {	-- Payback Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63578),	-- Paper Roll Bracers
+						i(63579),	-- Rugfizzle's Boots
+						i(63580),	-- Outhouse Boots
+						i(63581),	-- Payback Band
 					},
 				}),
 				q(3842, {	-- A Short Incubation
@@ -266,15 +249,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 37.7, 56.1, THOUSAND_NEEDLES },
 							["cr"] = 10882,	-- Arikara <Vengeance>
 						}),
-						i(15464, {	-- Brute Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15465, {	-- Stingshot Wand
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15466, {	-- Clink Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15464),	-- Brute Hammer
+						i(15465),	-- Stingshot Wand
+						i(15466),	-- Clink Shield
 					},
 				}),
 				q(4881, {	-- Assassination Plot
@@ -302,18 +279,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63566, {	-- Suspicious Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63567, {	-- Swindler's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63568, {	-- Belt of the Unfooled
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63569, {	-- Uncompromising Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63566),	-- Suspicious Slippers
+						i(63567),	-- Swindler's Vest
+						i(63568),	-- Belt of the Unfooled
+						i(63569),	-- Uncompromising Helm
 					},
 				}),
 				q(25791, {	-- Back to Riznek
@@ -323,18 +292,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63570, {	-- Suspicious Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63571, {	-- Swindler's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63572, {	-- Belt of the Unfooled
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63573, {	-- Uncompromising Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63570),	-- Suspicious Slippers
+						i(63571),	-- Swindler's Vest
+						i(63572),	-- Belt of the Unfooled
+						i(63573),	-- Uncompromising Helm
 					},
 				}),
 				q(25517, {	-- Bar Fight! [A]
@@ -369,18 +330,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/1 Elementalist Starion assassinated
 							["provider"] = { "n", 47619 },	-- Elementalist Starion
 						}),
-						i(63659, {	-- Starion's Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63660, {	-- Codemaster's Cuffs
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63661, {	-- Fastfuse Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63662, {	-- Bulwark of Leaders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63659),	-- Starion's Slippers
+						i(63660),	-- Codemaster's Cuffs
+						i(63661),	-- Fastfuse Gloves
+						i(63662),	-- Bulwark of Leaders
 					},
 				}),
 				q(28127, {	-- Break Them Out
@@ -430,18 +383,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63550, {	-- Speedbarge Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63551, {	-- Smooching Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63552, {	-- Pirate Sinker's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63553, {	-- Dignified Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63550),	-- Speedbarge Leggings
+						i(63551),	-- Smooching Gloves
+						i(63552),	-- Pirate Sinker's Bracers
+						i(63553),	-- Dignified Pauldrons
 						i(131434, {	-- Lovely Gloves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -466,18 +411,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63554, {	-- Speedbarge Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63555, {	-- Pirate Sinker's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63556, {	-- Bear Hug Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63557, {	-- Manly Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63554),	-- Speedbarge Leggings
+						i(63555),	-- Pirate Sinker's Gloves
+						i(63556),	-- Bear Hug Bracers
+						i(63557),	-- Manly Pauldrons
 						i(131435, {	-- Pirate Sinker's Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -525,18 +462,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 45385},	-- Grimtotem Reaver
 							},
 						}),
-						i(63595, {	-- Amulet of Spilling Blood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63592, {	-- Blood Waders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63593, {	-- Goddess-Blessed Wristlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63594, {	-- Grimtotem Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63595),	-- Amulet of Spilling Blood
+						i(63592),	-- Blood Waders
+						i(63593),	-- Goddess-Blessed Wristlets
+						i(63594),	-- Grimtotem Spaulders
 					},
 				}),
 				q(27313, {	-- Darkcloud Grimtotem [H]
@@ -553,18 +482,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 45385},	-- Grimtotem Reaver
 							},
 						}),
-						i(63599, {	-- Reaper's Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63596, {	-- Blood Waders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63597, {	-- Bracers of Reluctant Violence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63598, {	-- Pauldrons of the Teachings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63599),	-- Reaper's Amulet
+						i(63596),	-- Blood Waders
+						i(63597),	-- Bracers of Reluctant Violence
+						i(63598),	-- Pauldrons of the Teachings
 					},
 				}),
 				q(28087, {	-- Death to all Trappers!
@@ -577,18 +498,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 62924 },	-- Trapper Net
 							["cr"] = 47479,	-- Twilight Trapper
 						}),
-						i(63648, {	-- Swift Mountain Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63649, {	-- Trapper's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63650, {	-- Pao'ka's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63651, {	-- Trapper Punchers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63648),	-- Swift Mountain Boots
+						i(63649),	-- Trapper's Helm
+						i(63650),	-- Pao'ka's Belt
+						i(63651),	-- Trapper Punchers
 					},
 				}),
 				q(25798, {	-- Defend the Drill [A]
@@ -614,15 +527,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63611, {	-- Send-Off Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63612, {	-- Speedbarge Bailer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63613, {	-- Fizzle's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63611),	-- Send-Off Belt
+						i(63612),	-- Speedbarge Bailer
+						i(63613),	-- Fizzle's Vest
 					},
 				}),
 				q(25826, {	-- Deliver the Goods [H]
@@ -632,15 +539,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63614, {	-- Send-Off Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63615, {	-- Speedbarge Bailer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63616, {	-- Pozzik's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63614),	-- Send-Off Belt
+						i(63615),	-- Speedbarge Bailer
+						i(63616),	-- Pozzik's Vest
 					},
 				}),
 				q(1114, {	-- Delivery to the Gnomes
@@ -684,18 +585,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 202961 },	-- Rocket Car Parts
 							},
 						}),
-						i(63542, {	-- Twizzlefixxit's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63543, {	-- Driver's Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63544, {	-- Wet Suit Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63545, {	-- Raceway Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63542),	-- Twizzlefixxit's Vest
+						i(63543),	-- Driver's Armbands
+						i(63544),	-- Wet Suit Leggings
+						i(63545),	-- Raceway Boots
 						i(131432, {	-- Driver's Chain Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -719,18 +612,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 202961 },	-- Rocket Car Parts
 							},
 						}),
-						i(63546, {	-- Razzeric's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63547, {	-- Driver's Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63548, {	-- Wet Suit Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63549, {	-- Raceway Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63546),	-- Razzeric's Vest
+						i(63547),	-- Driver's Armbands
+						i(63548),	-- Wet Suit Leggings
+						i(63549),	-- Raceway Boots
 						i(131433, {	-- Driver's Chain Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -825,12 +710,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
-						i(6804, {	-- Windstorm Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6806, {	-- Dancing Flame
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6804),	-- Windstorm Hammer
+						i(6806),	-- Dancing Flame
 					},
 				}),
 				q(25774, {	-- Fool's Gold [A]
@@ -906,12 +787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
-						i(15469, {	-- Windsong Cinch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15468, {	-- Windsong Drape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15469),	-- Windsong Cinch
+						i(15468),	-- Windsong Drape
 					},
 				}),
 				q(25835, {	-- Free Freewind Post [A]
@@ -1116,18 +993,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Elder Stormhoof slain
 							["provider"] = { "n", 45410 },	-- Elder Stormhoof
 						}),
-						i(63600, {	-- Hands of the Chosen
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63601, {	-- Darkcloud Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63602, {	-- Spaulders of the Disciple
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63603, {	-- Legguards of the Pinnacle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63600),	-- Hands of the Chosen
+						i(63601),	-- Darkcloud Mask
+						i(63602),	-- Spaulders of the Disciple
+						i(63603),	-- Legguards of the Pinnacle
 					},
 				}),
 				q(27319, {	-- Grimtotem Chiefs: Elder Stormhoof [H]
@@ -1140,18 +1009,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Elder Stormhoof slain
 							["provider"] = { "n", 45410 },	-- Elder Stormhoof
 						}),
-						i(63604, {	-- Hands of the Chosen
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63605, {	-- Darkcloud Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63606, {	-- Freewind Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63607, {	-- Legguards of the Pinnacle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63604),	-- Hands of the Chosen
+						i(63605),	-- Darkcloud Mask
+						i(63606),	-- Freewind Spaulders
+						i(63607),	-- Legguards of the Pinnacle
 					},
 				}),
 				q(27323, {	-- Grimtotem Chiefs: Grundig Darkcloud [A]
@@ -1209,15 +1070,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Arnak Grimtotem slain
 							["provider"] = { "n", 45438 },	-- Arnak Grimtotem
 						}),
-						i(63634, {	-- Lasting Peace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63635, {	-- Hood of Disgrace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63636, {	-- Legguards of Disfavor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63634),	-- Lasting Peace
+						i(63635),	-- Hood of Disgrace
+						i(63636),	-- Legguards of Disfavor
 					},
 				}),
 				q(27328, {	-- Grimtotem Chiefs: The Chief of Chiefs [H]
@@ -1230,15 +1085,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Arnak Grimtotem slain
 							["provider"] = { "n", 45438 },	-- Arnak Grimtotem
 						}),
-						i(63637, {	-- Lasting Peace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63638, {	-- Hood of Disgrace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63639, {	-- Legguards of Disfavor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63637),	-- Lasting Peace
+						i(63638),	-- Hood of Disgrace
+						i(63639),	-- Legguards of Disfavor
 					},
 				}),
 				q(25869, {	-- Grimtotem in the Post [A]
@@ -1294,15 +1143,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 39.0, 41.0, THOUSAND_NEEDLES },
 						}),
-						i(15457, {	-- Desert Shoulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15458, {	-- Tundra Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15459, {	-- Grimtoll Wristguards
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15457),	-- Desert Shoulders
+						i(15458),	-- Tundra Boots
+						i(15459),	-- Grimtoll Wristguards
 					},
 				}),
 				q(1105, {	-- Hardened Shells
@@ -1372,9 +1215,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 56139 },	-- Longhorn's Horn
 							["cr"] = 41458,	-- Cliffwatcher Longhorn
 						}),
-						i(63632, {	-- Horn of the Traitor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63632),	-- Horn of the Traitor
 					},
 				}),
 				q(25874, {	-- Horn of the Traitor [H]
@@ -1388,9 +1229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 56139 },	-- Longhorn's Horn
 							["cr"] = 41458,	-- Cliffwatcher Longhorn
 						}),
-						i(63633, {	-- Horn of the Traitor
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63633),	-- Horn of the Traitor
 					},
 				}),
 				q(5151, {	-- Hypercapacitor Gizmo
@@ -1405,9 +1244,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 22.8, 24.4, THOUSAND_NEEDLES },
 							["cr"] = 10992,	-- Enraged Panther
 						}),
-						i(15467, {	-- Inventor's League Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15467),	-- Inventor's League Ring
 					},
 				}),
 				q(25524, {	-- In the Outhouse [A]
@@ -1461,21 +1298,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Arikara defeated
 							["provider"] = { "n", 45447 },	-- Arikara
 						}),
-						i(63640, {	-- Windsong Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63641, {	-- Mantle of Invocation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63642, {	-- Wind Serpent Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63640),	-- Windsong Rifle
+						i(63641),	-- Mantle of Invocation
+						i(63642),	-- Wind Serpent Bracers
 						i(157025, {	-- Windserpent Fang
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(63643, {	-- Ring of the Subduer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63643),	-- Ring of the Subduer
 						--
 						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
@@ -1490,18 +1319,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Arikara defeated
 							["provider"] = { "n", 45447 },	-- Arikara
 						}),
-						i(63644, {	-- Windsong Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63645, {	-- Mantle of Invocation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63646, {	-- Wind Serpent Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63647, {	-- Ring of the Subduer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63644),	-- Windsong Rifle
+						i(63645),	-- Mantle of Invocation
+						i(63646),	-- Wind Serpent Bracers
+						i(63647),	-- Ring of the Subduer
 						--
 						i(61043),	-- Shu'halo Artifacts (QI!)
 					},
@@ -1652,12 +1473,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 					["groups"] = {
-						i(6737, {	-- Dryleaf Pants
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6738, {	-- Bleeding Crescent
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6737),	-- Dryleaf Pants
+						i(6738),	-- Bleeding Crescent
 					},
 				}),
 				q(25532, {	-- Pirate Accuracy Increasing [A]
@@ -1690,15 +1507,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 					["groups"] = {
-						i(15461, {	-- Lightheel Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15462, {	-- Loamflake Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15463, {	-- Palestrider Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15461),	-- Lightheel Boots
+						i(15462),	-- Loamflake Bracers
+						i(15463),	-- Palestrider Gloves
 					},
 				}),
 				q(25585, {	-- Quiet the Cannons [A]
@@ -1833,12 +1644,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 29,
 					["groups"] = {
-						i(6726, {	-- Razzeric's Customized Seatbelt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6727, {	-- Razzeric's Racing Grips
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6726),	-- Razzeric's Customized Seatbelt
+						i(6727),	-- Razzeric's Racing Grips
 					},
 				}),
 				q(1104, {	-- Salt Flat Venom
@@ -1891,15 +1698,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								47630,	-- Twilight Jailer
 							},
 						}),
-						i(63656, {	-- Lakota's Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63657, {	-- Well Hammered Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63658, {	-- Bloodstained Twilight Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63656),	-- Lakota's Mace
+						i(63657),	-- Well Hammered Shield
+						i(63658),	-- Bloodstained Twilight Belt
 						i(157019, {	-- Lakota's Gavel
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1926,24 +1727,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63667, {	-- Robe of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63668, {	-- Leggings of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63669, {	-- Vest of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63670, {	-- Chestguard of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63671, {	-- Pauldrons of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63672, {	-- Helm of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63667),	-- Robe of the Thousand Needles
+						i(63668),	-- Leggings of the Thousand Needles
+						i(63669),	-- Vest of the Thousand Needles
+						i(63670),	-- Chestguard of the Thousand Needles
+						i(63671),	-- Pauldrons of the Thousand Needles
+						i(63672),	-- Helm of the Thousand Needles
 					},
 				}),
 				q(28161, {	-- Spread the Word [H]
@@ -1953,24 +1742,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63673, {	-- Robe of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63674, {	-- Leggings of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63675, {	-- Vest of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63676, {	-- Chestguard of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63677, {	-- Pauldrons of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63678, {	-- Helm of the Thousand Needles
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63673),	-- Robe of the Thousand Needles
+						i(63674),	-- Leggings of the Thousand Needles
+						i(63675),	-- Vest of the Thousand Needles
+						i(63676),	-- Chestguard of the Thousand Needles
+						i(63677),	-- Pauldrons of the Thousand Needles
+						i(63678),	-- Helm of the Thousand Needles
 					},
 				}),
 				q(25609, {	-- Sunken Treasure [A]
@@ -2126,15 +1903,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Hive Controller slain
 							["provider"] = { "n", 47389 },	-- Hive Controller
 						}),
-						i(63621, {	-- Ice Cream Churner
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63622, {	-- Hive Controller Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63623, {	-- Really Cold Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63621),	-- Ice Cream Churner
+						i(63622),	-- Hive Controller Mantle
+						i(63623),	-- Really Cold Bracers
 					},
 				}),
 				q(25762, {	-- The Ancient Brazier
@@ -2157,15 +1928,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 55979 },	-- The Sacred Flame
 							["cr"] = 41236,	-- Aquarian
 						}),
-						i(63608, {	-- Shroud of Contempt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63609, {	-- Belt of False Promises
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63610, {	-- Greaves of the Sacred Flame
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63608),	-- Shroud of Contempt
+						i(63609),	-- Belt of False Promises
+						i(63610),	-- Greaves of the Sacred Flame
 					},
 				}),
 				q(1179, {	-- The Brassbolts Brothers
@@ -2221,18 +1986,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63096 },	-- The Doomstone
 							["cr"] = 47777,	-- Animus
 						}),
-						i(63663, {	-- Bracers of Safe Keeping
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63664, {	-- Withering Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63665, {	-- Dirty Work Greaves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63666, {	-- Dupe's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63663),	-- Bracers of Safe Keeping
+						i(63664),	-- Withering Mask
+						i(63665),	-- Dirty Work Greaves
+						i(63666),	-- Dupe's Bracers
 					},
 				}),
 				q(27325, {	-- The Drums of War [A]
@@ -2347,21 +2104,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 41131 },	-- Mad Magus Tirth
 							["coord"] = { 85.2, 91.6, THOUSAND_NEEDLES },
 						}),
-						i(63588, {	-- Magus Tirth's Robe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63589, {	-- Holdfast Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63590, {	-- Ghostcaller's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63591, {	-- Alimony
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63587, {	-- Discarded Wedding Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63588),	-- Magus Tirth's Robe
+						i(63589),	-- Holdfast Belt
+						i(63590),	-- Ghostcaller's Leggings
+						i(63591),	-- Alimony
+						i(63587),	-- Discarded Wedding Band
 						--
 						i(55230),	-- Soul Stick (QI!)
 					},
@@ -2448,18 +2195,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 12.8, 34.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63652, {	-- Prideling Down Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63653, {-- Heartrazor's Gift
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63654, {	-- Skymaster's Pants
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63655, {	-- Pridekeeper's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63652),	-- Prideling Down Leggings
+						i(63653),	-- Heartrazor's Gift
+						i(63654),	-- Skymaster's Pants
+						i(63655),	-- Pridekeeper's Breastplate
 					},
 				}),
 				q(27320, {	-- The Writ of History [A]
@@ -2578,18 +2317,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(63558, {	-- Mirage Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63561, {	-- Bracers of Desperate Need
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63560, {	-- Floating Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63559, {	-- Maloof's Spare Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63558),	-- Mirage Amulet
+						i(63561),	-- Bracers of Desperate Need
+						i(63560),	-- Floating Belt
+						i(63559),	-- Maloof's Spare Boots
 						i(131430, {	-- Maloof's Spare Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2602,18 +2333,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63562, {	-- Mirage Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63563, {	-- Maloof's Spare Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63564, {	-- Floating Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63565, {	-- Bracers of Desperate Need
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63562),	-- Mirage Amulet
+						i(63563),	-- Maloof's Spare Boots
+						i(63564),	-- Floating Belt
+						i(63565),	-- Bracers of Desperate Need
 						i(131431, {	-- Maloof's Spare Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2630,18 +2353,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 55160 },	-- Rusted Cage Key
 							["cr"] = 40958,	-- Tony Two-Tusk
 						}),
-						i(63624, {	-- Buoyant Shoulderpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63625, {	-- Wizzle's Wristbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63626, {	-- Den Whomper Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63627, {	-- Drinker's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63624),	-- Buoyant Shoulderpads
+						i(63625),	-- Wizzle's Wristbands
+						i(63626),	-- Den Whomper Boots
+						i(63627),	-- Drinker's Bracers
 						--
 						i(55158),	-- Fake Treasure (QI!)
 					},
@@ -2657,18 +2372,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 55160 },	-- Rusted Cage Key
 							["cr"] = 40958,	-- Tony Two-Tusk
 						}),
-						i(63628, {	-- Buoyant Shoulderpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63629, {	-- Synge's Wristbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63630, {	-- Den Whomper Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63631, {	-- Drinker's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63628),	-- Buoyant Shoulderpads
+						i(63629),	-- Synge's Wristbands
+						i(63630),	-- Den Whomper Boots
+						i(63631),	-- Drinker's Bracers
 						--
 						i(55158),	-- Fake Treasure (QI!)
 					},
@@ -2699,12 +2406,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 38.2, 27.0, THOUSAND_NEEDLES },
 							["cr"] = 10896,	-- Arnak Grimtotem
 						}),
-						i(15471, {	-- Brawnhide Armor
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15470, {	-- Plainsguard Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15471),	-- Brawnhide Armor
+						i(15470),	-- Plainsguard Leggings
 					},
 				}),
 				warchiefscommand(q(28504, {	-- Warchief's Command: Thousand Needles!
@@ -2729,21 +2432,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/10 Dead Employees hooked
 							["provider"] = { "n", 47446 },	-- Dead Employee
 						}),
-						i(63582, {	-- Brivelthwerp's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63583, {	-- Belt of Feigned Joy
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63584, {	-- Ice Cream Mitts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63585, {	-- Breastplate of Contained Sorrow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63586, {	-- Cryocannon
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63582),	-- Brivelthwerp's Signet
+						i(63583),	-- Belt of Feigned Joy
+						i(63584),	-- Ice Cream Mitts
+						i(63585),	-- Breastplate of Contained Sorrow
+						i(63586),	-- Cryocannon
 						i(157017, {	-- Deep-Sea Retrieval Hook
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -2824,18 +2517,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 55199 },	-- Lilly Landlubber's Liver
 							["cr"] = 41082,	-- Lilly Landlubber
 						}),
-						i(63617, {	-- Evil Dolly's Cuffs
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63618, {	-- Lilly's Bandana
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63619, {	-- Fajardo's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63620, {	-- Hard Headed Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63617),	-- Evil Dolly's Cuffs
+						i(63618),	-- Lilly's Bandana
+						i(63619),	-- Fajardo's Bracers
+						i(63620),	-- Hard Headed Helm
 					},
 				}),
 				q(1191, {	-- Zamek's Distraction
@@ -3073,12 +2758,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(7560, {	-- Schematic: Gnomish Universal Remote (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 						-- #endif
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},

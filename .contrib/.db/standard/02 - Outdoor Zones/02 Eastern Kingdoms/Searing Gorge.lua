@@ -316,7 +316,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31912, {	-- Kortas Darkhammer
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -362,15 +361,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 63.6, 59.0, SEARING_GORGE },
 							["cr"] = 47270,	-- Gravius Grimesilt
 						}),
-						i(63218, {	-- Rockhead Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63217, {	-- Oilfist Globe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63216, {	-- Jack's Lucky Charm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63218),	-- Rockhead Helm
+						i(63217),	-- Oilfist Globe
+						i(63216),	-- Jack's Lucky Charm
 					},
 				}),
 				q(27958, {	-- A Proper Antivenom
@@ -383,15 +376,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 62809 },	-- Glassweb Venom
 							["cr"] = 5856,	-- Glassweb Spider
 						}),
-						i(63211, {	-- Medical Officer Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63210, {	-- Snakeoil Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63209, {	-- Glassweb Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63211),	-- Medical Officer Legguards
+						i(63210),	-- Snakeoil Helm
+						i(63209),	-- Glassweb Robes
 						-- #if BEFORE MOP
 						i(63208, {	-- Glassweb Spider Fangs
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -409,9 +396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
-						i(5396, {	-- Key to Searing Gorge
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5396),	-- Key to Searing Gorge
 					},
 				}),
 				q(4449, {	-- Caught!
@@ -435,9 +420,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/20 Heavy War Golem
 							["provider"] = { "n", 5854 },	-- Heavy War Golem
 						}),
-						i(19126, {	-- Slagplate Gauntlets
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19126),	-- Slagplate Gauntlets
 					},
 				}),
 				q(27976, {	-- Curse These Fat Fingers
@@ -449,18 +432,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/12 Heavy War Golem
 							["provider"] = { "n", 5854 },	-- Heavy War Golem
 						}),
-						i(63226, {	-- Fat Finger Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63225, {	-- Pounding Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63224, {	-- Heavyhands' Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63223, {	-- Gretel's Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63226),	-- Fat Finger Gloves
+						i(63225),	-- Pounding Leggings
+						i(63224),	-- Heavyhands' Gloves
+						i(63223),	-- Gretel's Pendant
 					},
 				}),
 				q(27979, {	-- Dark Ministry
@@ -549,9 +524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/20 Greater Lava Spider
 							["provider"] = { "n", 5858 },	-- Greater Lava Spider
 						}),
-						i(19125, {	-- Seared Mail Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19125),	-- Seared Mail Girdle
 					},
 				}),
 				q(3443, {	-- Forging the Shaft
@@ -702,9 +675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/20 Incendosaur
 							["provider"] = { "n", 9318 },	-- Incendosaur
 						}),
-						i(19141, {	-- Luffa
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19141),	-- Luffa
 					},
 				}),
 				q(7729, {	-- JOB OPPORTUNITY: Culling the Competition
@@ -734,9 +705,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["cr"] = 14635,	-- Sleepy Dark Iron Worker
 						}),
-						i(19129, {	-- Everglowing Robe
-							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
-						}),
+						i(19129),	-- Everglowing Robe
 					},
 				}),
 				q(28057, {	-- Kill 'em With Sleep Deprivation
@@ -794,12 +763,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 92.6, 65.6, SWAMP_OF_SORROWS },
 							},
 						}),
-						i(11860, {	-- Charged Lightning Rod
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11861, {	-- Girdle of Reprisal
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11860),	-- Charged Lightning Rod
+						i(11861),	-- Girdle of Reprisal
 					},
 				}),
 				q(7704, {	-- Look at the Size of It!
@@ -842,9 +807,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.9, 26.0, SEARING_GORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63245, {	-- Lunk's Special Gear
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63245),	-- Lunk's Special Gear
 					},
 				}),
 				q(27957, {	-- Lunk No Kill
@@ -947,15 +910,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Secure entrance into the Slag Pit
 							["provider"] = { "n", 47467 },	-- Brotherhood Flying Machine
 						}),
-						i(63236, {	-- Mountain-Lord's Legguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63235, {	-- Slag Pit Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63234, {	-- Dancer's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63236),	-- Mountain-Lord's Legguards
+						i(63235),	-- Slag Pit Bracers
+						i(63234),	-- Dancer's Belt
 					},
 				}),
 				q(27961, {	-- Out of Place
@@ -968,18 +925,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 62934 },	-- Ash Chicken
 							["cr"] = 47278,	-- Ash Chicken
 						}),
-						i(63215, {	-- Coalpart's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63214, {	-- Mercy Killing Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63213, {	-- Fuzzy Headcover
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63212, {	-- Ash Feather Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63215),	-- Coalpart's Bracers
+						i(63214),	-- Mercy Killing Helm
+						i(63213),	-- Fuzzy Headcover
+						i(63212),	-- Ash Feather Cloak
 					},
 				}),
 				q(3377, {	-- Prayer to Elune (1/2)
@@ -1007,12 +956,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8419,	-- Twilight Idolater
 							},
 						}),
-						i(10745, {	-- Kaylari Shoulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10746, {	-- Runesteel Vambraces
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10745),	-- Kaylari Shoulders
+						i(10746),	-- Runesteel Vambraces
 					},
 				}),
 				q(27985, {	-- Prayer to Elune
@@ -1067,18 +1012,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 18960 },	-- Lookout's Spyglass
 							["cr"] = 8566,	-- Dark Iron Lookout
 						}),
-						i(63222, {	-- Steamsmith Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63221, {	-- Taskmaster's Loop
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63220, {	-- Essential Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63219, {	-- Mantle of the White Sheep
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63222),	-- Steamsmith Helm
+						i(63221),	-- Taskmaster's Loop
+						i(63220),	-- Essential Pantaloons
+						i(63219),	-- Mantle of the White Sheep
 					},
 				}),
 				q(3372, {	-- Release Them
@@ -1164,15 +1101,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.6, 27.0, SEARING_GORGE },
 							["cr"] = 8400,	-- Obsidion
 						}),
-						i(10740, {	-- Centurion Legplates
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10741, {	-- Lordrec Helmet
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10739, {	-- Ring of Fortitude
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10740),	-- Centurion Legplates
+						i(10741),	-- Lordrec Helmet
+						i(10739),	-- Ring of Fortitude
 					},
 				}),
 				q(28056, {	-- Rise, Obsidion
@@ -1189,18 +1120,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 8391 },	-- Lathoric the Black
 							["coord"] = { 41.2, 25.6, SEARING_GORGE },
 						}),
-						i(63240, {	-- Dark Iron Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63239, {	-- Belt of Turning Tides
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63238, {	-- Suntara Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63237, {	-- Sootsmoke Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63240),	-- Dark Iron Axe
+						i(63239),	-- Belt of Turning Tides
+						i(63238),	-- Suntara Spaulders
+						i(63237),	-- Sootsmoke Wand
 						i(156936, {	-- Dark Iron Pike
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1241,15 +1164,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 33.0, 54.0, SEARING_GORGE },
 						}),
-						i(10742, {	-- Dragonflight Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10743, {	-- Drakefire Headguard
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10744, {	-- Axe of the Ebon Drake
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10742),	-- Dragonflight Leggings
+						i(10743),	-- Drakefire Headguard
+						i(10744),	-- Axe of the Ebon Drake
 					},
 				}),
 				q(28029, {	-- Set Them Ablaze!
@@ -1298,9 +1215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/5 Shadowsilk Poacher slain
 							["provider"] = { "n", 8442 },	-- Shadowsilk Poacher <The Undermarket>
 						}),
-						i(10461, {	-- Shadowy Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10461),	-- Shadowy Bracers
 					},
 				}),
 				q(28028, {	-- Siege!
@@ -1350,12 +1265,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 18960 },	-- Lookout's Spyglass
 							["cr"] = 8566,	-- Dark Iron Lookout
 						}),
-						i(19124, {	-- Slagplate Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19123, {	-- Everwarm Handwraps
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19124),	-- Slagplate Leggings
+						i(19123),	-- Everwarm Handwraps
 					},
 				}),
 				q(3367, {	-- Suntara Stones (1/2)
@@ -1490,18 +1401,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 62914 },	-- Fire-Bizzard
 							["cr"] = 9318,	-- Incendosaur
 						}),
-						i(63233, {	-- Iron Summit Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63232, {	-- Incendosaur Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63231, {	-- Lizard Skin Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63230, {	-- Fire-Gizzard Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63233),	-- Iron Summit Belt
+						i(63232),	-- Incendosaur Gloves
+						i(63231),	-- Lizard Skin Boots
+						i(63230),	-- Fire-Gizzard Robes
 					},
 				}),
 				q(27980, {	-- The Spiders Have to Go
@@ -1556,12 +1459,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 35.8, 52.6, SEARING_GORGE },
 							["cr"] = 8444,	-- Trade Master Kovic <The Undermarket>
 						}),
-						i(10479, {	-- Kovic's Trading Satchel
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10462, {	-- Shadowy Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10479),	-- Kovic's Trading Satchel
+						i(10462),	-- Shadowy Belt
 					},
 				}),
 				q(3402, {	-- The Undermarket (2/2)
@@ -1572,9 +1471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = TAILORING,
 					["lvl"] = 40,
 					["groups"] = {
-						i(10463, {	-- Pattern: Shadoweave Mask (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10463),	-- Pattern: Shadoweave Mask (RECIPE!)
 					},
 				}),
 				q(28030, {	-- They Build a Better Bullet
@@ -1593,15 +1490,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								8566,	-- Dark Iron Lookout
 							},
 						}),
-						i(63229, {	-- K'Vlar Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63228, {	-- Rendan's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63227, {	-- Dark Iron Gun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63229),	-- K'Vlar Vest
+						i(63228),	-- Rendan's Signet
+						i(63227),	-- Dark Iron Gun
 						i(156937, {	-- Dark Iron Blackjack
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -1632,9 +1523,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
-						i(10575, {	-- Black Dragonflight Molt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10575),	-- Black Dragonflight Molt
 					},
 				}),
 				q(27982, {	-- Twilight Collars
@@ -1687,12 +1576,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 41.8, 35.4, SEARING_GORGE },
 							["cr"] = 14621,	-- Overseer Maltorius
 						}),
-						i(19128, {	-- Seared Mail Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(19127, {	-- Charred Leather Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19128),	-- Seared Mail Vest
+						i(19127),	-- Charred Leather Tunic
 					},
 				}),
 				warchiefscommand(q(28581, {	-- Warchief's Command: Searing Gorge!
@@ -1711,15 +1596,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.2, 27.0, SEARING_GORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(63244, {	-- Pauldrons of the Thorium Brotherhood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63243, {	-- Hammer of the Thorium Brotherhood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63242, {	-- Amulet of the Thorium Brotherhood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63244),	-- Pauldrons of the Thorium Brotherhood
+						i(63243),	-- Hammer of the Thorium Brotherhood
+						i(63242),	-- Amulet of the Thorium Brotherhood
 						i(246409, {	-- Shadowforge Grinding Wheel (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
@@ -1932,9 +1811,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
 					["groups"] = {
-						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { ADDED_7_1_5 },
-						}),
+						i(142358),	-- Plans: Blazing Rapier (RECIPE!)
 					},
 				}),
 			}),

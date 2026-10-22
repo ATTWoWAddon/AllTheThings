@@ -290,9 +290,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(3270),	-- Flax Vest
 								i(3273),	-- Rugged Mail Vest / Rugged Plate Vest [7.0.3+]
 								i(3272),	-- Zombie Skin Leggings
-								i(57139, {	-- Night Web Crossbow
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57139),	-- Night Web Crossbow
 								i(131387, {	-- Abandoned Miner's Pants
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -1237,18 +1235,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(57169, {	-- Darrington's Dirk
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57170, {	-- Lilian's Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57171, {	-- Executor's Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57791, {	-- Headsman's Bag
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57169),	-- Darrington's Dirk
+						i(57170),	-- Lilian's Staff
+						i(57171),	-- Executor's Breastplate
+						i(57791),	-- Headsman's Bag
 					},
 				}),
 				q(25010, {	-- A Deadly New Ally
@@ -1279,15 +1269,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 2872 },	-- Vicious Night Web Spider Venom
 							["cr"] = 1555,	-- Vicious Night Web Spider
 						}),
-						i(57167, {	-- Night Web Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57166, {	-- Advanced Night Web Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57168, {	-- Reaper's Buckler
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57167),	-- Night Web Gloves
+						i(57166),	-- Advanced Night Web Crossbow
+						i(57168),	-- Reaper's Buckler
 					},
 				}),
 				q(367, {	-- A New Plague (1/4)
@@ -1342,9 +1326,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 2872 },	-- Vicious Night Web Spider Venom
 							["cr"] = 1555,	-- Vicious Night Web Spider
 						}),
-						i(3442, {	-- Apprentice Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3442),	-- Apprentice Sash
 					},
 				}),
 				q(492, {	-- A New Plague (4/4)
@@ -1558,12 +1540,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/2 Scarlet Bodyguard slain
 							["provider"] = { "n", 1660 },	-- Scarlet Bodyguard
 						}),
-						i(3445, {	-- Ceremonial Knife
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3071, {	-- Striking Hatchet
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3445),	-- Ceremonial Knife
+						i(3071),	-- Striking Hatchet
 					},
 				}),
 				q(25009, {	-- At War With The Scarlet Crusade
@@ -1796,9 +1774,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 12428 },	-- Deathguard Kel
 							["coord"] = { 59.2, 46.4, TIRISFAL_GLADES },
 						}),
-						i(16607, {	-- Acolyte's Sacrificial Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16607),	-- Acolyte's Sacrificial Robes
 					},
 				}),
 				q(24991, {	-- Garren's Haunt
@@ -1937,18 +1913,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["groups"] = {
-						i(7115, {	-- Heirloom Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7117, {	-- Heirloom Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7116, {	-- Heirloom Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(7118, {	-- Heirloom Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7115),	-- Heirloom Axe
+						i(7117),	-- Heirloom Hammer
+						i(7116),	-- Heirloom Dagger
+						i(7118),	-- Heirloom Sword
 					},
 				}),
 				q(24996, {	-- Holland's Experiment
@@ -1958,15 +1926,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(57143, {	-- Mountaineer's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57143),	-- Mountaineer's Belt
 						i(131390, {	-- Mountaineer's Waistguard
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57144, {	-- Gallow's End Gauntlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57144),	-- Gallow's End Gauntlets
 					},
 				}),
 				q(24977, {	-- Johaan's Experiment
@@ -2023,15 +1987,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3635 },	-- Maggot Eye's Paw
 							["cr"] = 1753,	-- Maggot Eye
 						}),
-						i(57158, {	-- Foul Gnoll Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57159, {	-- Belt of Brill
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57160, {	-- Garren's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57158),	-- Foul Gnoll Belt
+						i(57159),	-- Belt of Brill
+						i(57160),	-- Garren's Leggings
 						i(131392, {	-- Waistguard of Brill
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2053,12 +2011,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1545,	-- Vile Fin Muckdweller
 							},
 						}),
-						i(57149, {	-- Cauldron Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57150, {	-- Vile Fin Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57149),	-- Cauldron Gloves
+						i(57150),	-- Vile Fin Belt
 						i(3434),	-- Slumber Sand
 					},
 				}),
@@ -2097,15 +2051,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1537,	-- Scarlet Zealot
 							},
 						}),
-						i(3435, {	-- Zombie Skin Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3437, {	-- Clasped Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12299, {	-- Netted Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3435),	-- Zombie Skin Bracers
+						i(3437),	-- Clasped Belt
+						i(12299),	-- Netted Gloves
 					},
 				}),
 				q(409, {	-- Proving Allegiance
@@ -2119,7 +2067,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(431, {	-- Candles of Beckoning
 							["provider"] = { "o", 1586 },	-- Crate of Candles
 							["coord"] = { 68.1, 42.0, TIRISFAL_GLADES },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 5,
@@ -2133,7 +2080,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 1557 },	-- Lillith's Dinner Table
 							},
 							["coord"] = { 66.6, 44.8, TIRISFAL_GLADES },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 5,
@@ -2160,18 +2106,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 1936},	-- Farmer Solliden
 							},
 						}),
-						i(57146, {	-- Scythe Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57146),	-- Scythe Blade
 						i(156938, {	-- Simmer's Cudgel
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(133700, {	-- Simmer's Dirk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57145, {	-- Simmer's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57145),	-- Simmer's Bracers
 					},
 				}),
 				q(356, {	-- Rear Guard Patrol
@@ -2290,12 +2232,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1554,	-- Vampiric Duskbat
 							},
 						}),
-						i(3833, {	-- Adept's Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5939, {	-- Sewing Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3833),	-- Adept's Cloak
+						i(5939),	-- Sewing Gloves
 					},
 				}),
 				q(24988, {	-- The Chill of Death
@@ -2312,15 +2250,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1554,	-- Vampiric Duskbat
 							},
 						}),
-						i(57151, {	-- Gretchen's Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57152, {	-- Duskbat Pants
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57153, {	-- Death's Watch Bracer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57151),	-- Gretchen's Slippers
+						i(57152),	-- Duskbat Pants
+						i(57153),	-- Death's Watch Bracer
 						i(131389, {	-- Duskbat Mail Leggings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2364,15 +2296,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Rotting Ancestor slain
 							["provider"] = { "n", 1530 },	-- Rotting Ancestor
 						}),
-						i(57161, {	-- Agamand Family Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57162, {	-- Agamand Family Bracelet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57163, {	-- Agamand Family Riding Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57161),	-- Agamand Family Leggings
+						i(57162),	-- Agamand Family Bracelet
+						i(57163),	-- Agamand Family Riding Boots
 						i(131393, {	-- Agamand Family Bracer
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2385,12 +2311,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(57164, {	-- Devlin's Shirt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57165, {	-- Boots of Brill
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57164),	-- Devlin's Shirt
+						i(57165),	-- Boots of Brill
 						i(131394, {	-- Treads of Brill
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2451,12 +2373,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 3163 },	-- Blackened Skull
 							["cr"] = 1522,	-- Darkeye Bonecaster
 						}),
-						i(3447, {	-- Cryptwalker Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3834, {	-- Sturdy Cloth Trousers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3447),	-- Cryptwalker Boots
+						i(3834),	-- Sturdy Cloth Trousers
 					},
 				}),
 				q(25004, {	-- The Mills Overrun
@@ -2503,9 +2421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["groups"] = {
-						i(5940, {	-- Bone Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5940),	-- Bone Buckler
 					},
 				}),
 				q(24980, {	-- The Scarlet Palisade
@@ -2560,12 +2476,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 52068 },	-- Briny Sea Cucumber
 							["cr"] = 38933,	-- Briny Sea Cucumber
 						}),
-						i(57147, {	-- Xavren's Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57148, {	-- Marrowpetal Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57147),	-- Xavren's Gloves
+						i(57148),	-- Marrowpetal Boots
 						i(131388, {	-- Xavren's Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2583,12 +2495,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 58.6, 31.6, TIRISFAL_GLADES },
 							["cr"] = 1753,	-- Maggot Eye
 						}),
-						i(5941, {	-- Brass Scale Pants
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3444, {	-- Tiller's Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5941),	-- Brass Scale Pants
+						i(3444),	-- Tiller's Vest
 					},
 				}),
 			}),
@@ -2659,9 +2567,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 17.6, 67.6, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
-						i(122234, {	-- Music Roll: Faerie Dragon
-							["timeline"] = { ADDED_6_1_0 },
-						}),
+						i(122234),	-- Music Roll: Faerie Dragon
 					},
 				}),
 				n(1936, {	-- Farmer Solliden
@@ -2791,12 +2697,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.1, 42.4, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_10_1_7 },
 					["groups"] = {
-						i(4439, {	-- Bruiser Club
-							["timeline"] = { ADDED_10_1_7 },
-						}),
-						i(5975, {	-- Ruffian Belt
-							["timeline"] = { ADDED_10_1_7 },
-						}),
+						i(4439),	-- Bruiser Club
+						i(5975),	-- Ruffian Belt
 					},
 				}),
 				n(50763, {	-- Shadowstalker

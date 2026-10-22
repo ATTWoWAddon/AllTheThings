@@ -50,9 +50,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Blackrock Worg slain
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57255),	-- Worg Handler's Gloves
 							},
 						}),
 						q(29078, {	-- Beating Them Back!
@@ -129,9 +127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Blackrock Worg slain
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
-								i(57255, {	-- Worg Handler's Gloves
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57255),	-- Worg Handler's Gloves
 							},
 						}),
 						q(28763, {	-- Beating Them Back!
@@ -151,9 +147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Blackrock Worg slain
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57253),	-- Northshire Abbot's Cinch
 							},
 						}),
 						q(28764, {	-- Beating Them Back!
@@ -198,9 +192,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Blackrock Worg slain
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57253),	-- Northshire Abbot's Cinch
 							},
 						}),
 						q(28765, {	-- Beating Them Back!
@@ -220,9 +212,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Blackrock Worg slain
 									["provider"] = { "n", 49871 },	-- Blackrock Worg
 								}),
-								i(57253, {	-- Northshire Abbot's Cinch
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57253),	-- Northshire Abbot's Cinch
 							},
 						}),
 						q(31139, {	-- Beating Them Back!
@@ -311,15 +301,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["coord"] = { 57.4, 48.6, ELWYNN_FOREST },
 									["cr"] = 103,	-- Garrick Padfoot
 								}),
-								i(6076, {	-- Tapered Pants
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(60, {	-- Layered Tunic
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(3070, {	-- Ensign Cloak
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(6076),	-- Tapered Pants
+								i(60),	-- Layered Tunic
+								i(3070),	-- Ensign Cloak
 							},
 						}),
 						q(18, {	-- Brotherhood of Thieves
@@ -343,9 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									-- CRIEVE NOTE: Not sure at which patch, but the shortsword was lost forever.
 								}),
 								i(5579),	-- Militia Warhammer
-								i(1159, {	-- Militia Quarterstaff
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(1159),	-- Militia Quarterstaff
 							},
 						}),
 						q(31141, {	-- Calligraphed Letter
@@ -439,9 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/1 Kurtok the Slayer slain
 									["provider"] = { "n", 42938 },	-- Kurtok the Slayer
 								}),
-								i(57393, {	-- Abbey Defender's Crossbow
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57393),	-- Abbey Defender's Crossbow
 								-- #if AFTER 5.0.4
 								-- CRIEVE NOTE: Not sure at which patch, but these were moved from Blackrock Invasion.
 								-- They ended up replacing the Mitts + Wand.
@@ -511,9 +491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Vineyard Fire Extinguished
 									["provider"] = { "i", 58362 },	-- Milly's Fire Extinguisher (PQI!)
 								}),
-								i(57247, {	-- Grape-Picking Sack
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57247),	-- Grape-Picking Sack
 								i(11475),	-- Wine-stained Cloak
 							},
 						}),
@@ -538,9 +516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57257, {	-- Borderlands Bracers
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57257),	-- Borderlands Bracers
 							},
 						}),
 						q(28812, {	-- Fear No Evil
@@ -564,9 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57256),	-- Northshire Abbot's Shoes
 							},
 						}),
 						q(28810, {	-- Fear No Evil
@@ -590,9 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57256),	-- Northshire Abbot's Shoes
 							},
 						}),
 						q(28813, {	-- Fear No Evil
@@ -616,9 +588,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57258),	-- Wolf Hunter's Vest
 							},
 						}),
 						q(28806, {	-- Fear No Evil
@@ -668,9 +638,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57256, {	-- Northshire Abbot's Shoes
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57256),	-- Northshire Abbot's Shoes
 							},
 						}),
 						q(28809, {	-- Fear No Evil
@@ -694,9 +662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 50047 },	-- Injured Stormwind Infantry
 									},
 								}),
-								i(57258, {	-- Wolf Hunter's Vest
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57258),	-- Wolf Hunter's Vest
 							},
 						}),
 						q(29082, {	-- Fear No Evil
@@ -791,9 +757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 							["groups"] = {
-								i(2690, {	-- Latched Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(2690),	-- Latched Belt
 								i(11475),	-- Wine-stained Cloak
 							},
 						}),
@@ -1042,9 +1006,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57386),	-- Northshire Abbot's Robe
 							},
 						}),
 						q(28772, {	-- Lions for Lambs
@@ -1065,9 +1027,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57387),	-- Spymaster's Legs
 							},
 						}),
 						q(28773, {	-- Lions for Lambs
@@ -1088,9 +1048,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57386),	-- Northshire Abbot's Robe
 							},
 						}),
 						q(28774, {	-- Lions for Lambs
@@ -1111,9 +1069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57388),	-- Stormwind Infantry Belt
 							},
 						}),
 						q(28759, {	-- Lions for Lambs
@@ -1181,9 +1137,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57387, {	-- Spymaster's Legs
-									["timeline"] = { ADDED_5_0_4 },
-								}),
+								i(57387),	-- Spymaster's Legs
 							},
 						}),
 						q(28769, {	-- Lions for Lambs
@@ -1204,9 +1158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57386, {	-- Northshire Abbot's Robe
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57386),	-- Northshire Abbot's Robe
 							},
 						}),
 						q(28770, {	-- Lions for Lambs
@@ -1227,9 +1179,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/8 Blackrock Spy slain
 									["provider"] = { "n", 49874 },	-- Blackrock Spy
 								}),
-								i(57388, {	-- Stormwind Infantry Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57388),	-- Stormwind Infantry Belt
 							},
 						}),
 						q(26916, {	-- Mastering the Arcane (Human)
@@ -1436,9 +1386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 							["groups"] = {
-								i(6095, {	-- Wandering Boots
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(6095),	-- Wandering Boots
 							},
 						}),
 						q(3100, {	-- Simple Letter
@@ -1972,12 +1920,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										69,	-- Timber Wolf
 									},
 								}),
-								i(80, {	-- Soft Fur-lined Shoes
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(6070, {	-- Wolfskin Bracers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(80),	-- Soft Fur-lined Shoes
+								i(6070),	-- Wolfskin Bracers
 							},
 						}),
 					}),
@@ -1987,9 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 31.6, 16.7, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_4_0_3 },
 							["groups"] = {
-								i(56147, {	-- Fatcandle Bag
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(56147),	-- Fatcandle Bag
 								i(2055, {	-- Small Wooden Hammer
 									["timeline"] = { ADDED_10_1_7 },
 								}),
@@ -2175,7 +2117,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31693, {	-- Julia Stevens
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -2454,18 +2395,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 89.2, 80.6, ELWYNN_FOREST },
 							["cr"] = 6093,	-- Dead-Tooth Jack
 						}),
-						i(6979, {	-- Haggard's Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6980, {	-- Haggard's Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6983, {	-- Haggard's Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6985, {	-- Haggard's Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6979),	-- Haggard's Axe
+						i(6980),	-- Haggard's Dagger
+						i(6983),	-- Haggard's Hammer
+						i(6985),	-- Haggard's Sword
 					},
 				}),
 				q(39, {	-- Deliver Thomas' Report
@@ -2582,9 +2515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
 					["groups"] = {
-						i(16605, {	-- Friar's Robes of the Light
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16605),	-- Friar's Robes of the Light
 					},
 				}),
 				q(16, {	-- Give Gerard a Drink

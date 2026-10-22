@@ -558,9 +558,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
 					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
-						i(117373, {	-- Frostscythe of Lord Ahune
-							["timeline"] = { ADDED_6_0_2 },
-						}),
+						i(117373),	-- Frostscythe of Lord Ahune
 						i(53641, {	-- Frigid Frostling (PET!)
 							["timeline"] = { ADDED_3_3_3 },
 						}),
@@ -573,9 +571,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							["timeline"] = { ADDED_10_2_7 },
 							["isDaily"] = true,
 							["groups"] = {
-								i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
-									["timeline"] = { ADDED_10_2_7 },
-								}),
+								i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
 								i(244356, {	-- Crown of the Frost Lord (COSMETIC!)
 									["timeline"] = { ADDED_11_1_7 },
 								}),
@@ -599,9 +595,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 							["isDaily"] = true,
 							["description"] = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
 							["groups"] = {
-								i(275464, {	-- Sun Festival's Painted Roc (MOUNT!)
-									["timeline"] = { ADDED_12_0_7 },
-								}),
+								i(275464),	-- Sun Festival's Painted Roc (MOUNT!)
 							},
 						}),
 						hqt(97116, {	-- Has rolled for Ahune Special Loot (2026) (Daily Accountwide)
@@ -665,7 +659,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				}),
 				i(35723, {	-- Shards of Ahune
 					["description"] = "This item can be looted and completed once per character.",
-					["timeline"] = { ADDED_2_4_0 },
 				}),
 				i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
 					["timeline"] = { ADDED_7_0_3 },
@@ -2130,9 +2123,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					["coord"] = { 30.6, 43.2, WINTERSPRING },
 				}),
 				-- #endif
-				i(23379, {	-- Cinder Bracers
-					["timeline"] = { ADDED_1_11_0, REMOVED_2_4_0 },
-				}),
+				i(23379),	-- Cinder Bracers
 				-- #if BEFORE TBC
 				i(BURNING_BLOSSOM),
 				-- #endif
@@ -3500,7 +3491,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29036, {	-- Honor the Flame — Deepholm
 					["qg"] = 51698,	-- Deepholm Flame Guardian
 					["coord"] = { 49.4, 51.4, DEEPHOLM },
-					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(32497, {	-- Honor the Flame — Dread Wastes
 					["qg"] = 69522,	-- Dread Wastes Flame Guardian
@@ -3520,7 +3510,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29030, {	-- Honor the Flame — Hyjal
 					["qg"] = 51682,	-- Hyjal Flame Guardian
 					["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(32498, {	-- Honor the Flame — Jade Forest
 					["qg"] = 69529,	-- Jade Forest Flame Guardian
@@ -3600,7 +3589,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				honortheflame(29031, {	-- Honor the Flame — Vashj'ir
 					["qg"] = 51697,	-- Vashj'ir Flame Guardian
 					["coord"] = { 49.4, 42.0, VASHJIR_SHIMMERING_EXPANSE },
-					["timeline"] = { ADDED_4_0_1 },
 				}),
 				honortheflame(75650, {	-- Honor the Flame — Zaralek Cavern
 					["qg"] = 204417,	-- Zaralek Cavern Flame Guardian
@@ -3721,8 +3709,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.MID, {
 		applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE_FESTIVAL_HEADER, {
-			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } }, {
-			})),
+			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_12_0_7 } })),
 		})),
 	}),
 });

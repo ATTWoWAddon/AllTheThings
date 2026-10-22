@@ -276,23 +276,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["groups"] = {
 					i(284554, {	-- Confessor's Anima Jar (DECOR!)
 						["cost"] = { { "c", ANIMA, 200 } },
-						["timeline"] = { ADDED_12_1_5 },
 					}),
 					i(284556, {	-- Sinfall Arched Bookcase (DECOR!)
 						["cost"] = { { "c", ANIMA, 500 } },
-						["timeline"] = { ADDED_12_1_5 },
 					}),
 					i(284568, {	-- Sinfall Dining Table (DECOR!)
 						["cost"] = { { "c", ANIMA, 300 } },
-						["timeline"] = { ADDED_12_1_5 },
 					}),
 					i(284564, {	-- Venthyr Fence (DECOR!)
 						["cost"] = { { "c", ANIMA, 300 } },
-						["timeline"] = { ADDED_12_1_5 },
 					}),
 					i(284566, {	-- Venthyr Fencepost (DECOR!)
 						["cost"] = { { "c", ANIMA, 300 } },
-						["timeline"] = { ADDED_12_1_5 },
 					}),
 				},
 			}),

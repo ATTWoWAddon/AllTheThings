@@ -272,15 +272,11 @@ root(ROOTS.WorldDrops, {
 			i(43575, {	-- Reinforced Junkbox
 				["timeline"] = { ADDED_3_0_2 },
 				["groups"] = {
-					i(43611, {	-- Krol Cleaver
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					i(43611),	-- Krol Cleaver
 					i(43612, {	-- Spineslicer
 						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					}),
-					i(43613, {	-- The Dusk Blade
-						["timeline"] = { ADDED_3_0_2 },
-					}),
+					i(43613),	-- The Dusk Blade
 					i(2892, {	-- Empty Poison Vial
 						["timeline"] = { ADDED_5_0_4 },
 					}),

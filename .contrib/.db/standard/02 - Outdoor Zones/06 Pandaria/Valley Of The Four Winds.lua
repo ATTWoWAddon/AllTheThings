@@ -120,7 +120,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31955, {	-- Grand Master Nishi
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -1376,9 +1375,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_6_2_3 },
 						["questID"] = 37246,
 						["groups"] = {
-							i(110505, {	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
-								["timeline"] = { ADDED_6_2_3 },
-							}),
+							i(110505),	-- Mesmerizing Fruit Hat [Not a toy, but should be.]
 						},
 					}),
 					o(213413, {	-- Pandaren Fighting Tactics

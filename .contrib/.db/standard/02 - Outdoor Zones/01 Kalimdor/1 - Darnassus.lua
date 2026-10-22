@@ -321,15 +321,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
-						i(11870, {	-- Oblivion Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11871, {	-- Snarkshaw Spaulders
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11872, {	-- Eschewal Greaves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11870),	-- Oblivion Orb
+						i(11871),	-- Snarkshaw Spaulders
+						i(11872),	-- Eschewal Greaves
 					},
 				}),
 				q(5640, {	-- Desperate Prayer
@@ -372,9 +366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 37.6, 22.2, TELDRASSIL },
 							["cr"] = 6909,	-- Sethir the Ancient
 						}),
-						i(7298, {	-- Blade of Cunning
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				q(5672, {	-- Elune's Grace [Darnassus]
@@ -510,9 +502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(6973, {	-- Fire hardened Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6973),	-- Fire hardened Leggings
 					},
 				}),
 				q(1582, {	-- Moonglow Vest
@@ -669,12 +659,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- Offer the sacrifice at the fountain
 							["provider"] = { "i", 8155 },	-- Sathrah's Sacrifice
 						}),
-						i(9600, {	-- Lace Pants
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9601, {	-- Cushioned Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(9600),	-- Lace Pants
+						i(9601),	-- Cushioned Boots
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1063,18 +1049,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(6966, {	-- Elunite Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6967, {	-- Elunite Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6968, {	-- Elunite Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6969, {	-- Elunite Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6966),	-- Elunite Axe
+						i(6967),	-- Elunite Sword
+						i(6968),	-- Elunite Hammer
+						i(6969),	-- Elunite Dagger
 					},
 				}),
 			}),
@@ -1108,9 +1086,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.0, 75.8, DARNASSUS },
 					["timeline"] = { ADDED_6_1_0 },
 					["groups"] = {
-						i(122239, {	-- Music Roll: Shalandis Isle
-							["timeline"] = { ADDED_6_1_0 },
-						}),
+						i(122239),	-- Music Roll: Shalandis Isle
 					},
 				}),
 			}),
@@ -1194,12 +1170,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(73838, {	-- Mountain Horse (MOUNT!)
-							["timeline"] = { ADDED_4_3_0 },
-						}),
-						i(73839, {	-- Swift Mountain Horse (MOUNT!)
-							["timeline"] = { ADDED_4_3_0 },
-						}),
+						i(73838),	-- Mountain Horse (MOUNT!)
+						i(73839),	-- Swift Mountain Horse (MOUNT!)
 					},
 				}),
 				n(4240, {	-- Caynrus
@@ -1572,9 +1544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["cost"] = 1500000,	-- 150g
 							}),
 						}, {	-- Friendly
-							i(64882, {	-- Gilneas Tabard
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(64882),	-- Gilneas Tabard
 						}, {	-- Honored
 							i(245605, {	-- Gilnean Stone Wall (DECOR!)
 								["timeline"] = { ADDED_11_2_7 },
@@ -1585,19 +1555,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_11_2_7 },
 								["cost"] = 3500000,	-- 350g
 							}),
-							i(67532, {	-- Gilnean Satchel
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(67532),	-- Gilnean Satchel
 						}, {	-- Exalted
-							i(64893, {	-- Cape of Gilneas
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64892, {	-- Mantle of Gilneas
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							i(64894, {	-- Shroud of Gilneas
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(64893),	-- Cape of Gilneas
+							i(64892),	-- Mantle of Gilneas
+							i(64894),	-- Shroud of Gilneas
 						},
 					}),
 				}),
@@ -1694,19 +1656,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(64887, {	-- Cape of Darnassus
 							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
 							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
 							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
 							["minReputation"] = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
-							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
 				}),

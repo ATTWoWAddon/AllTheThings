@@ -17,7 +17,6 @@ root(ROOTS.Instances, {
 			n(VENDORS, {
 				n(197711, {	-- Lindormi <Mythic Keystones>
 					["coord"] = { 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
-					["timeline"] = { ADDED_12_0_1 },
 					["groups"] = {
 						filter(MOUNTS, bubbleDownFiltered({
 							["cost"] = { { "i", 275436, 1 } },	-- Timelost Saddle

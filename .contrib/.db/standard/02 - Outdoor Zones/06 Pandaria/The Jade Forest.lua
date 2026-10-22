@@ -251,7 +251,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31953, {	-- Grand Master Hyuna
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -266,7 +265,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(32440, {	-- Whispering Pandaren Spirit
 								["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
-								["timeline"] = { ADDED_5_1_0 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(93148, {	-- Pandaren Spirit Pet Supplies

@@ -155,7 +155,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
 									["description"] = "You must keep this in your bags forever.",
-									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -916,9 +915,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
-						i(24138, {	-- Silver Crossbow
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(24138),	-- Silver Crossbow
 						-- #if BEFORE CATA
 						recipe(6991),	-- Feed Pet
 						recipe(982),	-- Revive Pet
@@ -1167,9 +1164,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 56.2, 48.9, AZUREMYST_ISLE },
 							["cr"] = 17551,	-- Tavara
 						}),
-						i(23931, {	-- Azure Watch Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(23931),	-- Azure Watch Robes
 					},
 				}),
 				q(9530, {	-- I've Got a Plant

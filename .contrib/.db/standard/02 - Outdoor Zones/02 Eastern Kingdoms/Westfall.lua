@@ -118,7 +118,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						q(31780, {	-- Old MacDonald
 							["sourceAchievement"] = 6603,	-- Taming Eastern Kingdoms
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -188,9 +187,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 46.3, 59.0, WESTFALL },
 						["timeline"] = { ADDED_4_1_0 },
 						["groups"] = {
-							i(68797, {	-- Stendel's Wedding Band
-								["timeline"] = { ADDED_4_1_0 },
-							}),
+							i(68797),	-- Stendel's Wedding Band
 						},
 					}),
 				}),
@@ -248,15 +245,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(58926, {	-- Gryan's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58924, {	-- Legwork Trousers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58925, {	-- Troublesome Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58926),	-- Gryan's Boots
+						i(58924),	-- Legwork Trousers
+						i(58925),	-- Troublesome Gloves
 						i(131504, {	-- Troublesome Grips
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -443,18 +434,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "i", 58118 },	-- Red Bandana (QI!)
 							["cr"] = 42677,	-- Moonbrook Thug
 						}),
-						i(58921, {	-- Evidence Collection Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58923, {	-- Gregorky's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58921),	-- Evidence Collection Gloves
+						i(58923),	-- Gregorky's Bracers
 						i(131505, {	-- Worn Defias Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58922, {	-- Worn Defias Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58922),	-- Worn Defias Bracers
 					},
 				}),
 				q(26230, {	-- Feast or Famine
@@ -643,18 +628,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								452,	-- Riverpaw Bandit
 							},
 						}),
-						i(58914, {	-- Sentinel Hill Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58914),	-- Sentinel Hill Breastplate
 						i(131502, {	-- Sentinel Hill Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58912, {	-- Sentinel Hill Surcoat
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58913, {	-- Sentinel Hill Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58912),	-- Sentinel Hill Surcoat
+						i(58913),	-- Sentinel Hill Vest
 					},
 				}),
 				q(26229, {	-- "I TAKE Candle!"
@@ -670,21 +649,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(248797, {	-- City Wanderer's Candleholder (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
-						i(58905, {	-- Kobold Basher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58903, {	-- Kobold Candle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58902, {	-- Kobold Sticker
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58905),	-- Kobold Basher
+						i(58903),	-- Kobold Candle
+						i(58902),	-- Kobold Sticker
 						i(156935, {	-- Kobold Torch
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(58904, {	-- Wax Catcher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58904),	-- Wax Catcher
 					},
 				}),
 				q(26257, {	-- It's Alive!
@@ -705,18 +676,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42342 },	-- Energized Harvest Reaper
 							["coord"] = { 45.0, 35.4, WESTFALL },
 						}),
-						i(58916, {	-- Chewed Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58916),	-- Chewed Belt
 						i(131497, {	-- Chewed Chain Cord
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58915, {	-- Harvester Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58917, {	-- Saldean's Working Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58915),	-- Harvester Boots
+						i(58917),	-- Saldean's Working Gloves
 					},
 				}),
 				q(26288, {	-- Jango Spothide
@@ -738,15 +703,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42653 },	-- Jango Spothide
 							["coord"] = { 62.2, 76.4, WESTFALL },
 						}),
-						i(58920, {	-- Dust Plains Greaves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58918, {	-- Mystic Riverpaw Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58919, {	-- Spothide Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58920),	-- Dust Plains Greaves
+						i(58918),	-- Mystic Riverpaw Wand
+						i(58919),	-- Spothide Leggings
 						i(131503, {	-- Spothide Legguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -887,15 +846,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 42383 },	-- Transient
 							},
 						}),
-						i(58907, {	-- Crime Scene Tape
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58906, {	-- Equicide Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58908, {	-- Scene Investigator's Wrap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58907),	-- Crime Scene Tape
+						i(58906),	-- Equicide Cloak
+						i(58908),	-- Scene Investigator's Wrap
 					},
 				}),
 				q(102, {	-- Patrolling Westfall
@@ -922,12 +875,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								506,	-- Sergeant Brashclaw
 							},
 						}),
-						i(1154, {	-- Belt of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(710, {	-- Bracers of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1154),	-- Belt of the People's Militia
+						i(710),	-- Bracers of the People's Militia
 					},
 				}),
 				q(151, {	-- Poor Old Blanchy
@@ -943,12 +892,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 2724 },	-- Sack of Oats
 							},
 						}),
-						i(2165, {	-- Old Blanchy's Blanket
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1537, {	-- Old Blanchy's Feed Pouch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2165),	-- Old Blanchy's Blanket
+						i(1537),	-- Old Blanchy's Feed Pouch
 					},
 				}),
 				q(26295, {	-- Propaganda
@@ -1022,15 +967,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								594,	-- Defias Henchman
 							},
 						}),
-						i(3511, {	-- Cloak of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(5944, {	-- Greaves of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12295, {	-- Leggings of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3511),	-- Cloak of the People's Militia
+						i(5944),	-- Greaves of the People's Militia
+						i(12295),	-- Leggings of the People's Militia
 					},
 				}),
 				q(109, {	-- Report to Gryan Stoutmantle
@@ -1082,24 +1021,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(58931, {	-- House Wrynn Claymore
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58929, {	-- House Wrynn Crossbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58927, {	-- House Wrynn Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58931),	-- House Wrynn Claymore
+						i(58929),	-- House Wrynn Crossbow
+						i(58927),	-- House Wrynn Dagger
 						i(156934, {	-- House Wrynn Gavel
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(58928, {	-- House Wrynn Halberd
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58930, {	-- House Wrynn Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58928),	-- House Wrynn Halberd
+						i(58930),	-- House Wrynn Staff
 					},
 				}),
 				q(26290, {	-- Secrets of the Tower
@@ -1220,9 +1149,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 54.6, 50.7, SEARING_GORGE },
 						}),
-						i(744, {	-- Thunderbrew's Boot Flask
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(744),	-- Thunderbrew's Boot Flask
 					},
 				}),
 				q(152, {	-- The Coast Isn't Clear
@@ -1393,12 +1320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/20 Harvest Watcher
 							["provider"] = { "n", 114 },	-- Harvest Watcher
 						}),
-						i(3578, {	-- Harvester's Pants
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1561, {	-- Harvester's Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3578),	-- Harvester's Pants
+						i(1561),	-- Harvester's Robe
 					},
 				}),
 				q(26371, {	-- The Legend of Captain Grayson
@@ -1456,15 +1379,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(3, {	-- 0/15 Defias Knuckleduster
 							["provider"] = { "n", 449 },	-- Defias Knuckleduster
 						}),
-						i(1566, {	-- Edge of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1480, {	-- Fist of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(12296, {	-- Spark of the People's Militia
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1566),	-- Edge of the People's Militia
+						i(1480),	-- Fist of the People's Militia
+						i(12296),	-- Spark of the People's Militia
 					},
 				}),
 				q(26287, {	-- The Westfall Brigade
@@ -1501,9 +1418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
-						i(1262, {	-- Keg of Thunderbrew
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1262),	-- Keg of Thunderbrew
 					},
 				}),
 				q(26237, {	-- Times are Tough
@@ -1550,12 +1465,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(728),	-- Recipe: Westfall Stew (RECIPE!)
 						i(733),	-- Westfall Stew
-						i(1479, {	-- Salma's Oven Mitts
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2225, {	-- Sharp Kitchen Knife
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(1479),	-- Salma's Oven Mitts
+						i(2225),	-- Sharp Kitchen Knife
 					},
 				}),
 				q(26241, {	-- Westfall Stew
@@ -1590,18 +1501,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								154,	-- Greater Fleshripper
 							},
 						}),
-						i(58910, {	-- Boiled Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58910),	-- Boiled Boots
 						i(131496, {	-- Boiled Chain Footpads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(58909, {	-- Golden Sunshine Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58911, {	-- Tightly Cinched Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58909),	-- Golden Sunshine Cloak
+						i(58911),	-- Tightly Cinched Belt
 					},
 				}),
 				q(26270, {	-- You Have Our Thanks

@@ -228,7 +228,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31933, {	-- Okrut Dragonwaste
 								["sourceAchievement"] = 6605,	-- Taming Northrend
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},
@@ -2104,27 +2103,13 @@ root(ROOTS.Zones, {
 						["maps"] = { STORMWIND_CITY, UNDERCITY },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(44597, {	-- Medallion of Heroism
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44591, {	-- Wrynn's Leggings of Foresight
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44592, {	-- Wrynn's Leggings of Valor
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44593, {	-- Wrynn's Leggings of Wisdom
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44594, {	-- Wrynn's Legguards of Brutality
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44595, {	-- Wrynn's Legguards of Heroism
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44596, {	-- Wrynn's Legplates of Carnage
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(44597),	-- Medallion of Heroism
+							i(44591),	-- Wrynn's Leggings of Foresight
+							i(44592),	-- Wrynn's Leggings of Valor
+							i(44593),	-- Wrynn's Leggings of Wisdom
+							i(44594),	-- Wrynn's Legguards of Brutality
+							i(44595),	-- Wrynn's Legguards of Heroism
+							i(44596),	-- Wrynn's Legplates of Carnage
 						},
 					}),
 					q(13267, {	-- The Battle for the Undercity (H)
@@ -2135,27 +2120,13 @@ root(ROOTS.Zones, {
 						["maps"] = { ORGRIMMAR, UNDERCITY },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(44579, {	-- Medallion of Heroism
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44590, {	-- Warchief's Leggings of Foresight
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44348, {	-- Warchief's Leggings of Valor
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44346, {	-- Warchief's Leggings of Wisdom
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44583, {	-- Warchief's Legguards of Brutality
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44347, {	-- Warchief's Legguards of Heroism
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(44349, {	-- Warchief's Legplates of Carnage
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(44579),	-- Medallion of Heroism
+							i(44590),	-- Warchief's Leggings of Foresight
+							i(44348),	-- Warchief's Leggings of Valor
+							i(44346),	-- Warchief's Leggings of Wisdom
+							i(44583),	-- Warchief's Legguards of Brutality
+							i(44347),	-- Warchief's Legguards of Heroism
+							i(44349),	-- Warchief's Legplates of Carnage
 						},
 					}),
 					q(12263, {	-- The Best of Intentions

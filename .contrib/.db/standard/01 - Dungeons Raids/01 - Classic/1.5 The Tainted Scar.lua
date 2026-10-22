@@ -35,36 +35,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_1_15_3 },
 				["modelScale"] = 6.0,
 				["groups"] = {
-					i(17113, {	-- Amberseal Keeper
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(17112, {	-- Empyrean Demolisher
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18546, {	-- Infernal Headcage
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(17111, {	-- Blazefury Medallion
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18204, {	-- Eskhandar's Pelt
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(19135, {	-- Blacklight Bracer
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18544, {	-- Doomhide Gauntlets
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(19134, {	-- Flayed Doomguard Belt
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(19133, {	-- Fel-Infused Leggings
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18543, {	-- Ring of Entropy
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
+					i(17113),	-- Amberseal Keeper
+					i(17112),	-- Empyrean Demolisher
+					i(18546),	-- Infernal Headcage
+					i(17111),	-- Blazefury Medallion
+					i(18204),	-- Eskhandar's Pelt
+					i(19135),	-- Blacklight Bracer
+					i(18544),	-- Doomhide Gauntlets
+					i(19134),	-- Flayed Doomguard Belt
+					i(19133),	-- Fel-Infused Leggings
+					i(18543),	-- Ring of Entropy
 				},
 			}),
 		},

@@ -4183,7 +4183,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 								["groups"] = {
 									i(164933, {	-- Sen'jin Beakblade Longrifle
 										["description"] = "This Horde item will be automatically learned after buying the Alliance version.",
-										["timeline"] = { ADDED_8_1_0 },
 									}),
 								},
 							})),

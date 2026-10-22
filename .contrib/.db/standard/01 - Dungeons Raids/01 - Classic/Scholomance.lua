@@ -58,9 +58,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			["races"] = HORDE_ONLY,
 			["lvl"] = 55,
 			["groups"] = {
-				i(20134, {	-- Skyfury Helm
-					["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
-				}),
+				i(20134),	-- Skyfury Helm
 			},
 		})),
 		q(7666,	{ -- Again Into the Great Ossuary [A]
@@ -209,9 +207,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					},
 					["description"] = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
 				}),
-				i(65923, {	-- Barov Servant Caller
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
+				i(65923),	-- Barov Servant Caller
 			},
 		}),
 		q(5531, {	-- Betina Bigglezink
@@ -244,12 +240,8 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					["provider"] = { "i", 12368 },	-- Dawn's Gambit
 					["description"] = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
 				}),
-				i(15854, {	-- Dancing Sliver
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(15853, {	-- Windreaper
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
+				i(15854),	-- Dancing Sliver
+				i(15853),	-- Windreaper
 			},
 		}),
 		q(5382, {	-- Doctor Theolen Krastinov, the Butcher
@@ -509,18 +501,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				objective(1, {	-- 0/1 Darkmaster Gandling slain
 					["provider"] = { "n", 1853 },	-- Darkmaster Gandling
 				}),
-				i(65974, {	-- Discipline Rod
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65925, {	-- Lucien's Boots
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65950, {	-- Shackles of Punishment
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
-				i(65995, {	-- Signet of the Darkmaster
-					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
-				}),
+				i(65974),	-- Discipline Rod
+				i(65925),	-- Lucien's Boots
+				i(65950),	-- Shackles of Punishment
+				i(65995),	-- Signet of the Darkmaster
 			},
 		}),
 		{	-- Skeletal Fragments
@@ -572,9 +556,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
 					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
-				i(18807, {	-- Helm of Latent Power
-					["timeline"] = { REMOVED_1_7_0 },
-				}),
+				i(18807),	-- Helm of Latent Power
 			},
 		}),
 		applyclassicphase(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
@@ -593,9 +575,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
 					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
-				i(20134, {	-- Skyfury Helm
-					["timeline"] = { ADDED_1_7_0, REMOVED_4_0_3 },
-				}),
+				i(20134),	-- Skyfury Helm
 			},
 		})),
 		q(5462, {	-- The Dying, Ras Frostwhisper
@@ -661,9 +641,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					["coord"] = { 83.0, 71.6, TIRISFAL_GLADES },
 					["cr"] = 11022,	-- Alexi Barov <House of Barov>
 				}),
-				i(14023, {	-- Barov Peasant Caller
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
+				i(14023),	-- Barov Peasant Caller
 			},
 		}),
 		q(5342, {	-- The Last Barov [Horde]
@@ -680,9 +658,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 					["coord"] = { 43.4, 83.6, WESTERN_PLAGUELANDS },
 					["cr"] = 11023,	-- Weldon Barov <House of Barov>
 				}),
-				i(14022, {	-- Barov Peasant Caller
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
+				i(14022),	-- Barov Peasant Caller
 			},
 		}),
 		q(5466, {	-- The Lich, Ras Frostwhisper
@@ -696,18 +672,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 				objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
 					["provider"] = { "i", 13626 },	-- Human Head of Ras Frostwhisper
 				}),
-				i(14002, {	-- Darrowshire Strongguard
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(13984, {	-- Darrowspike
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(13982, {	-- Warblade of Caer Darrow
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(13986, {	-- Crown of Caer Darrow
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
+				i(14002),	-- Darrowshire Strongguard
+				i(13984),	-- Darrowspike
+				i(13982),	-- Warblade of Caer Darrow
+				i(13986),	-- Crown of Caer Darrow
 			},
 		}),
 		q(27142, {	-- The Lich, Ras Frostwhisper [CATA]
@@ -2055,7 +2023,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 		})),
 		-- #endif
 		n(59613, {	-- Professor Slate <Potions Master>
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = bubbleDown({["ignoreBonus"] = true},{
 				i(85580, {	-- Empty Polyformic Acid Vial
 					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
@@ -2069,12 +2036,9 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 		}),
 		e(684, {	-- Darkmaster Gandling
 			["creatureID"] = 59080,	-- Darkmaster Gandling
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(645),	-- Scholomance
-				ach(5054, {	-- Scholomance Guild Run
-					["timeline"] = { ADDED_5_0_4 },
-				}),
+				ach(5054),	-- Scholomance Guild Run
 			},
 		}),
 	},
@@ -2203,7 +2167,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(6715, {	-- Polyformic Acid Science
-				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = sharedData({
 					["cost"] = {
 						{ "i", 85589, 1 },	-- Nearly Full Vial of Polyformic Acid
@@ -2259,7 +2222,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				58633,	-- Instructor Chillheart
 				58664,	-- Instructor Chillheart's Phylactery
 			},
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144201, {	-- Gravetouch Greatsword
 					["timeline"] = { ADDED_7_1_5 },
@@ -2296,7 +2258,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 		e(663, {	-- Jandice Barov
 			["creatureID"] = 59184,	-- Jandice Barov
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6531),	-- Attention to Detail
 				i(144207, {	-- Metanoia Shield
@@ -2334,7 +2295,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 		e(665, {	-- Rattlegore
 			["creatureID"] = 59153,	-- Rattlegore
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6394),	-- Rattle No More
 				i(144011, {	-- Bone Golem Boots
@@ -2375,16 +2335,12 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 		n(59369, {	-- Doctor Theolen Krastinov
 			["description"] = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
-				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
-					["timeline"] = { ADDED_5_0_4 },
-				}),
+				i(88566),	-- Krastinov's Bag of Horrors (TOY!)
 			},
 		}),
 		e(666, {	-- Lilian Voss
 			["creatureID"] = 58722,	-- Lilian Voss
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144030, {	-- Soulburner Crown
 					["timeline"] = { ADDED_7_1_5 },
@@ -2421,7 +2377,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 		}),
 		e(684, {	-- Darkmaster Gandling
 			["creatureID"] = 59080,	-- Darkmaster Gandling
-			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6762),	-- Heroic: Scholomance
 				ach(6771),	-- Heroic: Scholomance Guild Run

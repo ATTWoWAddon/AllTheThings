@@ -213,9 +213,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = { { "i", 20515, 1 } },	-- Abyssal Scepter
 					["lvl"] = 58,
 					["groups"] = {
-						i(22725, {	-- Band of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22725),	-- Band of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
@@ -249,17 +247,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20694),	-- Glowing Black Orb
+								i(20693),	-- Weighted Cloak
+								i(20692),	-- Multicolored Band
 							},
 						}),
 					},
@@ -274,17 +265,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 60,
 					["groups"] = {
 						i(20603, {	-- Bag of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20694, {	-- Glowing Black Orb
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20693, {	-- Weighted Cloak
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20692, {	-- Multicolored Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20694),	-- Glowing Black Orb
+								i(20693),	-- Weighted Cloak
+								i(20692),	-- Multicolored Band
 							},
 						}),
 					},
@@ -300,17 +284,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20721, {	-- Band of the Cultist
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20721),	-- Band of the Cultist
+								i(20722),	-- Crystal Slugthrower
+								i(20720),	-- Dark Whisper Blade
 							},
 						}),
 					},
@@ -326,20 +303,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20695),	-- Abyssal War Beads
+								i(20696),	-- Crystal Spiked Maul
+								i(20697),	-- Crystalline Threaded Cape
+								i(20698),	-- Elemental Attuned Blade
 							},
 						}),
 					},
@@ -365,12 +333,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20699, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20710, {	-- Crystal Encrusted Greaves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20699),	-- Cenarion Reservist's Legplates
+						i(20710),	-- Crystal Encrusted Greaves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
@@ -381,12 +345,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { MAGE, WARLOCK },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20705, {	-- Cenarion Reservist's Pants
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20716, {	-- Sandworm Skin Gloves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20705),	-- Cenarion Reservist's Pants
+						i(20716),	-- Sandworm Skin Gloves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
@@ -397,12 +357,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20707, {	-- Cenarion Reservist's Pants
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20717, {	-- Desert Bloom Gloves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20707),	-- Cenarion Reservist's Pants
+						i(20717),	-- Desert Bloom Gloves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
@@ -413,12 +369,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20703, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20715, {	-- Dunestalker's Boots
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20703),	-- Cenarion Reservist's Leggings
+						i(20715),	-- Dunestalker's Boots
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
@@ -429,12 +381,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20704, {	-- Cenarion Reservist's Leggings
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20714, {	-- Sandstorm Boots
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20704),	-- Cenarion Reservist's Leggings
+						i(20714),	-- Sandstorm Boots
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
@@ -445,12 +393,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20702, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20713, {	-- Desertstalkers's Gauntlets
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20702),	-- Cenarion Reservist's Legguards
+						i(20713),	-- Desertstalkers's Gauntlets
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
@@ -461,12 +405,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20700, {	-- Cenarion Reservist's Legplates
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20711, {	-- Crystal Lined Greaves
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20700),	-- Cenarion Reservist's Legplates
+						i(20711),	-- Crystal Lined Greaves
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
@@ -477,12 +417,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["groups"] = {
-						i(20701, {	-- Cenarion Reservist's Legguards
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
-						i(20712, {	-- Wastewalker's Gauntlets
-							["timeline"] = { REMOVED_4_1_0 },
-						}),
+						i(20701),	-- Cenarion Reservist's Legguards
+						i(20712),	-- Wastewalker's Gauntlets
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8780, {	-- Armor Kits for the Field (A)
@@ -739,15 +675,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21188, {	-- Fist of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21190, {	-- Wrath of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21180, {	-- Earthstrike
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21188),	-- Fist of Cenarius
+						i(21190),	-- Wrath of Cenarius
+						i(21180),	-- Earthstrike
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8537, {	-- Crimson Templar
@@ -893,9 +823,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 54,
 					["groups"] = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8536, {	-- Earthen Templar
@@ -967,7 +895,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(8508, {	-- Field Duty Papers (A)
 							["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
 							["coord"] = { 33.2, 52.1, SILITHUS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["groups"] = {
@@ -981,9 +908,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
-						i(20808, {	-- Combat Assignment
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_A,
 						TACTICAL_ASSIGNMENT,
 					},
@@ -999,7 +924,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
 							["qg"] = 15612,	-- Krug Skullsplit
 							["coord"] = { 52.2, 68.4, SILITHUS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
 							["lvl"] = 54,
@@ -1014,9 +938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						})),
-						i(20808, {	-- Combat Assignment
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20808),	-- Combat Assignment
 						LOGISTICS_ASSIGNMENT_H,
 						TACTICAL_ASSIGNMENT,
 					},
@@ -1243,9 +1165,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["lvl"] = 54,
 					["groups"] = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				})),
 				q(8333, {	-- Medallion of Station
@@ -1260,9 +1180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(20422, {	-- Twilight Cultist Medallion of Station
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
@@ -1357,17 +1275,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20602, {	-- Chest of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20721, {	-- Band of the Cultist
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20722, {	-- Crystal Slugthrower
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20720, {	-- Dark Whisper Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20721),	-- Band of the Cultist
+								i(20722),	-- Crystal Slugthrower
+								i(20720),	-- Dark Whisper Blade
 							},
 						}),
 					},
@@ -1515,20 +1426,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 					["groups"] = {
 						i(20601, {	-- Sack of Spoils
-							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20695, {	-- Abyssal War Beads
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20696, {	-- Crystal Spiked Maul
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20697, {	-- Crystalline Threaded Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20698, {	-- Elemental Attuned Blade
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20695),	-- Abyssal War Beads
+								i(20696),	-- Crystal Spiked Maul
+								i(20697),	-- Crystalline Threaded Cape
+								i(20698),	-- Elemental Attuned Blade
 							},
 						}),
 					},
@@ -1548,18 +1450,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21184, {	-- Deeprock Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21185, {	-- Earthcalm Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21186, {	-- Rockfury Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21189, {	-- Might of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21184),	-- Deeprock Bracers
+						i(21185),	-- Earthcalm Orb
+						i(21186),	-- Rockfury Bracers
+						i(21189),	-- Might of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
@@ -1808,9 +1702,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/1 The Duke of Shards slain
 							["provider"] = { "n", 15208 },	-- The Duke of Shards <Abyssal Council>
 						}),
-						i(21508, {	-- Mark of Cenarius
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21508),	-- Mark of Cenarius
 					},
 				})),
 				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8778, {	-- The Ironforge Brigade Needs Explosives!
@@ -1880,24 +1772,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
 							["provider"] = { "i", 22217 },	-- Kurinnaxx's Venom Sac
 						}),
-						i(22378, {	-- Ravenholdt Slicer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22379, {	-- Shivsprocket's Shiv
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22377, {	-- The Thunderwood Poker
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22348, {	-- Doomulus Prime
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22347, {	-- Fahrad's Reloading Repeater
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(22380, {	-- Simone's Cultivating Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22378),	-- Ravenholdt Slicer
+						i(22379),	-- Shivsprocket's Shiv
+						i(22377),	-- The Thunderwood Poker
+						i(22348),	-- Doomulus Prime
+						i(22347),	-- Fahrad's Reloading Repeater
+						i(22380),	-- Simone's Cultivating Hammer
 					},
 				})),
 				-- #endif
@@ -1983,9 +1863,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						i(21515, {	-- Mark of Remulos
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21515),	-- Mark of Remulos
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
@@ -2060,9 +1938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20451),	-- Twilight Cultist Ring of Lordship
 					},
 				})),
 				q(6844, {	-- Umber, Archivist
@@ -2134,15 +2010,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21181, {	-- Grace of Earth
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21182, {	-- Band of Earthen Might
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21183, {	-- Earthpower Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21181),	-- Grace of Earth
+						i(21182),	-- Band of Earthen Might
+						i(21183),	-- Earthpower Vest
 					},
 				})),
 				applyclassicphase(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
@@ -2159,15 +2029,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 54,
 					["groups"] = {
-						i(21178, {	-- Gloves of Earthen Power
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21179, {	-- Band of Earthen Wrath
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(21187, {	-- Earthweave Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(21178),	-- Gloves of Earthen Power
+						i(21179),	-- Band of Earthen Wrath
+						i(21187),	-- Earthweave Cloak
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile
@@ -2269,60 +2133,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = { { "i", 20420, 1 } },	-- Crest of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20654, {	-- Amethyst War Staff
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20652, {	-- Abyssal Cloth Slippers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20653, {	-- Abyssal Plate Gauntlets
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20654),	-- Amethyst War Staff
+								i(20652),	-- Abyssal Cloth Slippers
+								i(20653),	-- Abyssal Plate Gauntlets
 							},
 						}),
 						n(15209, {	-- Crimson Templar <Abyssal Council>
 							["cost"] = { { "i", 20416, 1 } },	-- Crest of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20657, {	-- Crystal Tipped Stiletto
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20655, {	-- Abyssal Cloth Handwraps
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20656, {	-- Abyssal Mail Sabatons
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20657),	-- Crystal Tipped Stiletto
+								i(20655),	-- Abyssal Cloth Handwraps
+								i(20656),	-- Abyssal Mail Sabatons
 							},
 						}),
 						n(15307, {	-- Earthen Templar <Abyssal Council>
 							["cost"] = { { "i", 20419, 1 } },	-- Crest of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20663, {	-- Deep Strike Bow
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20661, {	-- Abyssal Leather Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20662, {	-- Abyssal Plate Greaves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20663),	-- Deep Strike Bow
+								i(20661),	-- Abyssal Leather Gloves
+								i(20662),	-- Abyssal Plate Greaves
 							},
 						}),
 						n(15212, {	-- Hoary Templar <Abyssal Council>
 							["cost"] = { { "i", 20418, 1 } },	-- Crest of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20660, {	-- Stonecutting Glaive
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20658, {	-- Abyssal Leather Boots
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20659, {	-- Abyssal Mail Handguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20660),	-- Stonecutting Glaive
+								i(20658),	-- Abyssal Leather Boots
+								i(20659),	-- Abyssal Mail Handguards
 							},
 						}),
 					},
@@ -2365,63 +2205,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = { { "i", 20432, 1 } },	-- Signet of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989, {	-- Cinder of Cynders
-									["timeline"] = { REMOVED_4_0_3 },
-								})),
-								i(20666, {	-- Hardened Steel Warhammer
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20664, {	-- Abyssal Cloth Sash
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20665, {	-- Abyssal Leather Leggings
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989)),	-- Cinder of Cynders
+								i(20666),	-- Hardened Steel Warhammer
+								i(20664),	-- Abyssal Cloth Sash
+								i(20665),	-- Abyssal Leather Leggings
 							},
 						}),
 						n(15207, {	-- The Duke of Fathoms <Abyssal Council>
 							["cost"] = { { "i", 20436, 1 } },	-- Signet of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20669, {	-- Darkstone Claymore
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20667, {	-- Abyssal Leather Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20668, {	-- Abyssal Mail Legguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20669),	-- Darkstone Claymore
+								i(20667),	-- Abyssal Leather Belt
+								i(20668),	-- Abyssal Mail Legguards
 							},
 						}),
 						n(15208, {	-- The Duke of Shards <Abyssal Council>
 							["cost"] = { { "i", 20435, 1 } },	-- Signet of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20672, {	-- Sparkling Crystal Wand
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20670, {	-- Abyssal Mail Clutch
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20671, {	-- Abyssal Plate Legplates
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20672),	-- Sparkling Crystal Wand
+								i(20670),	-- Abyssal Mail Clutch
+								i(20671),	-- Abyssal Plate Legplates
 							},
 						}),
 						n(15220, {	-- The Duke of Zephyrs <Abyssal Council>
 							["cost"] = { { "i", 20433, 1 } },	-- Signet of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20675, {	-- Soulrender
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20674, {	-- Abyssal Cloth Pants
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20673, {	-- Abyssal Plate Girdle
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20675),	-- Soulrender
+								i(20674),	-- Abyssal Cloth Pants
+								i(20673),	-- Abyssal Plate Girdle
 							},
 						}),
 					},
@@ -2465,60 +2279,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = { { "i", 20449, 1 } },	-- Scepter of Beckoning: Stone
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20688, {	-- Earthen Guard
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20686, {	-- Abyssal Cloth Amice
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20687, {	-- Abyssal Plate Vambraces
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20688),	-- Earthen Guard
+								i(20686),	-- Abyssal Cloth Amice
+								i(20687),	-- Abyssal Plate Vambraces
 							},
 						}),
 						n(15204, {	-- High Marshal Whirlaxis <Abyssal High Council>
 							["cost"] = { { "i", 20448, 1 } },	-- Scepter of Beckoning: Thunder
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20691, {	-- Windshear Cape
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20690, {	-- Abyssal Cloth Wristbands
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20689, {	-- Abyssal Leather Shoulders
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20691),	-- Windshear Cape
+								i(20690),	-- Abyssal Cloth Wristbands
+								i(20689),	-- Abyssal Leather Shoulders
 							},
 						}),
 						n(15305, {	-- Lord Skwol <Abyssal High Council>
 							["cost"] = { { "i", 20450, 1 } },	-- Scepter of Beckoning: Water
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20685, {	-- Wavefront Necklace
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20684, {	-- Abyssal Mail Armguards
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20683, {	-- Abyssal Plate Epaulets
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20685),	-- Wavefront Necklace
+								i(20684),	-- Abyssal Mail Armguards
+								i(20683),	-- Abyssal Plate Epaulets
 							},
 						}),
 						n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 							["cost"] = { { "i", 20447, 1 } },	-- Scepter of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								i(20682, {	-- Elemental Focus Band
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20681, {	-- Abyssal Leather Bracers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(20680, {	-- Abyssal Mail Pauldrons
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(20682),	-- Elemental Focus Band
+								i(20681),	-- Abyssal Leather Bracers
+								i(20680),	-- Abyssal Mail Pauldrons
 							},
 						}),
 					},

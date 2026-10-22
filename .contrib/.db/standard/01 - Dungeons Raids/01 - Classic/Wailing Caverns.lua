@@ -78,15 +78,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							objective(4, {	-- 0/7 Deviate Dreadfang slain
 								["provider"] = { "n", 5056 },	-- Deviate Dreadfang
 							}),
-							i(6476, {	-- Pattern: Deviate Scale Belt (RECIPE!)
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(8071, {	-- Sizzle Stick
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(6481, {	-- Dagmire Gauntlets
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(6476),	-- Pattern: Deviate Scale Belt (RECIPE!)
+							i(8071),	-- Sizzle Stick
+							i(6481),	-- Dagmire Gauntlets
 						},
 					}),
 					q(1486, {	-- Deviate Hides
@@ -98,12 +92,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							objective(1, {	-- 0/20 Deviate Hide
 								["provider"] = { "i", 6443 },	-- Deviate Hide
 							}),
-							i(6480, {	-- Slick Deviate Leggings
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(918, {	-- Deviate Hide Pack
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(6480),	-- Slick Deviate Leggings
+							i(918),	-- Deviate Hide Pack
 						},
 					}),
 					q(26872, {	-- Deviate Hides
@@ -137,12 +127,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
 							}),
-							i(10657, {	-- Talbar Mantle
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(10658, {	-- Quagmire Galoshes
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(10657),	-- Talbar Mantle
+							i(10658),	-- Quagmire Galoshes
 						},
 					}),
 					q(3369, {	-- In Nightmares [H]
@@ -157,12 +143,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							objective(1, {
 								["provider"] = { "i", 10649 },	-- Nightmare Shard
 							}),
-							i(10657, {	-- Talbar Mantle
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(10658, {	-- Quagmire Galoshes
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(10657),	-- Talbar Mantle
+							i(10658),	-- Quagmire Galoshes
 						},
 					}),
 					q(914, {	-- Leaders of the Fang
@@ -185,12 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							objective(4, {	-- 0/1 Gem of Serpentis
 								["provider"] = { "i", 9741 },	-- Gem of Serpentis
 							}),
-							i(6505, {	-- Crescent Staff
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
-							i(6504, {	-- Wingblade
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(6505),	-- Crescent Staff
+							i(6504),	-- Wingblade
 						},
 					}),
 					q(1490, {	-- Nara Wildmane
@@ -227,9 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									{ "o", 13891 },	-- Serpentbloom
 								},
 							}),
-							i(10919, {	-- Apothecary Gloves
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(10919),	-- Apothecary Gloves
 						},
 					}),
 					q(1491, {	-- Smart Drinks
@@ -272,12 +248,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(6474, {	-- Pattern: Deviate Scale Cloak (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6475, {	-- Pattern: Deviate Scale Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6474),	-- Pattern: Deviate Scale Cloak (RECIPE!)
+						i(6475),	-- Pattern: Deviate Scale Gloves (RECIPE!)
 					},
 				}),
 			}),

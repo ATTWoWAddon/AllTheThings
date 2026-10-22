@@ -320,12 +320,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								{ "i", 18501, 1 },	-- Felvine Shard
 							},
 						}),
-						i(18535, {	-- Milli's Shield
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18536, {	-- Milli's Lexicon
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18535),	-- Milli's Shield
+						i(18536),	-- Milli's Lexicon
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -339,9 +335,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { WARRIOR },
 					["lvl"] = 54,
 					["groups"] = {
-						i(228465, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { ADDED_1_15_3 },
-						}),
+						i(228465),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				-- #endif
@@ -378,7 +372,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["groups"] = {
 						ach(2357, {	-- Dreadsteed of Xoroth
 							["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
-							["timeline"] = { REMOVED_4_0_3 },
 							["classes"] = { WARLOCK },
 						}),
 						mount(23161, {	-- Dreadsteed (MOUNT!)
@@ -437,9 +430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						9788,	-- Armorsmith
 						-- #endif
 					["groups"] = {
-						i(12727, {	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12727),	-- Plans: Enchanted Thorium Breastplate (RECIPE!)
 					},
 				})),
 				applyclassicphase(PHASE_THREE_RECIPES, q(7650, {	-- Enchanted Thorium Platemail: Volume II
@@ -466,9 +457,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
-						i(12726, {	-- Plans: Enchanted Thorium Leggings (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12726),	-- Plans: Enchanted Thorium Leggings (RECIPE!)
 					},
 				})),
 				applyclassicphase(PHASE_THREE_RECIPES, q(7651, {	-- Enchanted Thorium Platemail: Volume III
@@ -501,9 +490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 					["lvl"] = 50,
 					["groups"] = {
-						i(12725, {	-- Plans: Enchanted Thorium Helm (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(12725),	-- Plans: Enchanted Thorium Helm (RECIPE!)
 					},
 				})),
 				q(7494, {	-- Feathermoon Stronghold
@@ -559,9 +546,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { SHAMAN },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18471, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18471),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -575,9 +560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { ROGUE },
 					["lvl"] = 54,
 					["groups"] = {
-						i(228464, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { ADDED_1_15_3 },
-						}),
+						i(228464),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				-- #endif
@@ -612,9 +595,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { WARLOCK },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18467, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18467),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				q(7504, {	-- Holy Bologna: What the Light Won't Tell You
@@ -627,9 +608,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { PRIEST },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18469, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18469),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				q(27125, {	-- King of the Gordok [Alliance]
@@ -677,9 +656,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						objective(1, {	-- 0/1 Lethtendris's Web
 							["provider"] = { "i", 18426 },	-- Lethtendris's Web
 						}),
-						i(18491, {	-- Lorespinner
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18491),	-- Lorespinner
 					},
 				}),
 				q(7489, {	-- Lethtendris's Web [Horde]
@@ -694,9 +671,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						objective(1, {	-- 0/1 Lethtendris's Web
 							["provider"] = { "i", 18426 },	-- Lethtendris's Web
 						}),
-						i(18491, {	-- Lorespinner
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18491),	-- Lorespinner
 					},
 				}),
 				q(27108, {	-- Lethtendris's Web
@@ -728,9 +703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
-						i(18330, {	-- Arcanum of Focus
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18330),	-- Arcanum of Focus
 					},
 				}),
 				q(7485, {	-- Libram of Protection
@@ -751,9 +724,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
-						i(18331, {	-- Arcanum of Protection
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18331),	-- Arcanum of Protection
 					},
 				}),
 				q(7483, {	-- Libram of Rapidity
@@ -774,9 +745,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
-						i(18329, {	-- Arcanum of Rapidity
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18329),	-- Arcanum of Rapidity
 					},
 				}),
 				q(7441, {	-- Pusillin and the Elder Azj'Tordin
@@ -789,12 +758,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						objective(1, {	-- 0/1 Book of Incantations
 							["provider"] = { "i", 18261 },	-- Book of Incantations
 						}),
-						i(18410, {	-- Sprinter's Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18411, {	-- Spry Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18410),	-- Sprinter's Sword
+						i(18411),	-- Spry Boots
 					},
 				}),
 				q(27107, {	-- Pusillin The Thief
@@ -910,9 +875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { DRUID },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18470, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18470),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				q(5518, {	-- The Gordok Ogre Suit
@@ -928,11 +891,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 56,
 					["groups"] = {
 						r(22813, {	-- Gordok Ogre Suit
-							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = TAILORING,
 						}),
 						r(22815, {	-- Gordok Ogre Suit
-							["timeline"] = { REMOVED_4_0_3 },
 							["requireSkill"] = LEATHERWORKING,
 						}),
 						i(18258, {	-- Gordok Ogre Suit
@@ -1012,9 +973,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["classes"] = { HUNTER },
 					["lvl"] = 54,
 					["groups"] = {
-						i(18473, {	-- Royal Seal of Eldre'Thalas
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18473),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
 				q(27131, {	-- The Highborne [A]
@@ -1113,15 +1072,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 57,
 					["groups"] = {
-						i(18421, {	-- Backwood Helm
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18420, {	-- Bonecrusher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(18424, {	-- Sedge Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18421),	-- Backwood Helm
+						i(18420),	-- Bonecrusher
+						i(18424),	-- Sedge Boots
 					},
 				}),
 				q(27111, {	-- The Treasure of the Shen'dralar

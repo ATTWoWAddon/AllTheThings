@@ -144,7 +144,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31907, {	-- Zoltan
 							["sourceAchievement"] = 6602,	-- Taming Kalimdor
-							["timeline"] = { ADDED_5_0_4 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 						}),
@@ -196,15 +195,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 38.8, 46.8, FELWOOD },
 							["cr"] = 9517,	-- Shadow Lord Fel'dan
 						}),
-						i(15707, {	-- Brantwood Sash
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15708, {	-- Blight Leather Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15709, {	-- Gearforge Girdle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15707),	-- Brantwood Sash
+						i(15708),	-- Blight Leather Gloves
+						i(15709),	-- Gearforge Girdle
 					},
 				}),
 				q(28334, {	-- A Flare Fight
@@ -338,12 +331,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
-						i(11873, {	-- Ethereal Mist Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11874, {	-- Clouddrift Mantle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11873),	-- Ethereal Mist Cape
+						i(11874),	-- Clouddrift Mantle
 					},
 				}),
 				q(4005, {	-- Aquementas
@@ -358,13 +347,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 11522 },	-- Silver Totem of Aquementas
 						}),
 						i(11617, {	-- Eridan's Supplies
-							i(11169, {	-- Book of Aquor
-								["timeline"] = { REMOVED_4_0_3 },
-							}),
+							i(11169),	-- Book of Aquor
 						}),
 						i(11522, {	-- Silver Totem of Aquementas
 							["providers"] = { "i", 11169 },	-- Book of Aquor
-							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 70.0, 49.0, TANARIS },
 							["cr"] = 9453,	-- Aquementas
 						}),
@@ -409,18 +395,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 207105 },	-- Irontree Explosive
 							},
 						}),
-						i(65342, {	-- Irontree Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65291, {	-- Oilfoot Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65310, {	-- Alton's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65329, {	-- Breastplate of Protest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65342),	-- Irontree Cloak
+						i(65291),	-- Oilfoot Slippers
+						i(65310),	-- Alton's Leggings
+						i(65329),	-- Breastplate of Protest
 					},
 				}),
 				q(28113, {	-- Break the Unbreakable
@@ -432,18 +410,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Xavathras slain
 							["provider"] = { "n", 9454 },	-- Xavathras
 						}),
-						i(65277, {	-- Delaris' Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65297, {	-- Glovelettes of Opening
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65316, {	-- Spellbreaker's Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65335, {	-- Demon Smasher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65277),	-- Delaris' Gloves
+						i(65297),	-- Glovelettes of Opening
+						i(65316),	-- Spellbreaker's Helm
+						i(65335),	-- Demon Smasher
 					},
 				}),
 				q(28387, {	-- Burnout
@@ -847,18 +817,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								8959,	-- Felpaw Wolf
 							},
 						}),
-						i(65275, {	-- Angerclaw Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65295, {	-- Felpaw Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65314, {	-- Belt of the Sanctuary
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65333, {	-- Redfeather Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65275),	-- Angerclaw Leggings
+						i(65295),	-- Felpaw Boots
+						i(65314),	-- Belt of the Sanctuary
+						i(65333),	-- Redfeather Band
 					},
 				}),
 				q(27995, {	-- Dance for Ruumbo!
@@ -870,18 +832,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 83.7, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(65279, {	-- Grazle's Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65299, {	-- Allen's Abandoned Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65318, {	-- Ruumbo's Arm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65336, {	-- Pulled Wool
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65279),	-- Grazle's Sandals
+						i(65299),	-- Allen's Abandoned Belt
+						i(65318),	-- Ruumbo's Arm
+						i(65336),	-- Pulled Wool
 					},
 				}),
 				q(28261, {	-- Deceivers In Our Midst
@@ -957,18 +911,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "o", 176161 },	-- Brazier of Hatred
 							["coord"] = { 37.2, 54.9, FELWOOD },
 						}),
-						i(65281, {	-- Belt of the Lost Barrow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65301, {	-- Jade Green Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65320, {	-- Sanctuary Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65337, {	-- Emerald Orb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65281),	-- Belt of the Lost Barrow
+						i(65301),	-- Jade Green Spaulders
+						i(65320),	-- Sanctuary Pauldrons
+						i(65337),	-- Emerald Orb
 						--
 						i(12906),	-- Purified Moonwell Water (QI!)
 					},
@@ -1020,18 +966,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Irontree Chopper slain
 							["provider"] = { "n", 48453 },	-- Irontree Chopper
 						}),
-						i(65341, {	-- Bloodwater Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65290, {	-- Packrunner's Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65309, {	-- Deaf Ear Helm
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65328, {	-- Talon Branch
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65341),	-- Bloodwater Shield
+						i(65290),	-- Packrunner's Spaulders
+						i(65309),	-- Deaf Ear Helm
+						i(65328),	-- Talon Branch
 					},
 				}),
 				q(28396, {	-- Feathers for Grazle
@@ -1096,15 +1034,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Grolvitar the Everburning slain
 							["provider"] = { "n", 48352 },	-- Grolvitar the Everburning
 						}),
-						i(65346, {	-- Gauntlets of Raw Strength
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65349, {	-- Everburning Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65352, {	-- Drilldozer Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65346),	-- Gauntlets of Raw Strength
+						i(65349),	-- Everburning Cloak
+						i(65352),	-- Drilldozer Band
 					},
 				}),
 				q(7602, {	-- Flawless Fel Essence
@@ -1211,9 +1143,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/1 Xavaric slain
 							["provider"] = { "n", 10648 },	-- Xavaric
 						}),
-						i(11875, {	-- Breezecloud Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11875),	-- Breezecloud Bracers
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1243,12 +1173,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
-						i(15796, {	-- Seaspray Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15797, {	-- Shining Armplates
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15796),	-- Seaspray Bracers
+						i(15797),	-- Shining Armplates
 					},
 				}),
 				q(28213, {	-- Hazzard Disposal
@@ -1260,18 +1186,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Winna Hazzard slain
 							["provider"] = { "n", 47679 },	-- Winna Hazzard
 						}),
-						i(65283, {	-- Flowery Mantle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65303, {	-- Leafsong Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65322, {	-- Mr. Tauren's Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65338, {	-- Belt of Regret
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65283),	-- Flowery Mantle
+						i(65303),	-- Leafsong Vest
+						i(65322),	-- Mr. Tauren's Boots
+						i(65338),	-- Belt of Regret
 					},
 				}),
 				heroscall(q(28543, {	-- Hero's Call: Felwood!
@@ -1335,18 +1253,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(65344, {	-- Overworked Shoulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65347, {	-- Shredder Operator's Helmet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65350, {	-- Efficiency Spell Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65353, {	-- Oil Bailer's Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65344),	-- Overworked Shoulders
+						i(65347),	-- Shredder Operator's Helmet
+						i(65350),	-- Efficiency Spell Mace
+						i(65353),	-- Oil Bailer's Shield
 					},
 				}),
 				q(28152, {	-- Jaedenar Awaits
@@ -1375,9 +1285,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE 4.0.3
 						recipe(1122),	-- Inferno / Summon Infernal
 						-- #endif
-						i(18762, {	-- Shard of the Green Flame
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18762),	-- Shard of the Green Flame
 					},
 				}),
 				q(28155, {	-- Lord Banehollow
@@ -1389,12 +1297,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Lord Banehollow slain
 							["provider"] = { "n", 9516 },	-- Lord Banehollow
 						}),
-						i(65282, {	-- Cleansed Shadow Council Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65302, {	-- Farlus' Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65282),	-- Cleansed Shadow Council Belt
+						i(65302),	-- Farlus' Staff
 						-- #if BEFORE MOP
 						i(65321, {	-- Stars of Felwood
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
@@ -1480,15 +1384,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Arch Druid Navarax slain
 							["provider"] = { "n", 47842 },	-- Arch Druid Navarax
 						}),
-						i(65285, {	-- Selura's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65305, {	-- Demon Heart Pendant
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65324, {	-- Navarax's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65285),	-- Selura's Cloak
+						i(65305),	-- Demon Heart Pendant
+						i(65324),	-- Navarax's Signet
 					},
 				}),
 				q(28385, {	-- Oil and Irony
@@ -1508,15 +1406,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63395 },	-- Delaris's Prism
 							["cr"] = 47369,	-- Jadefire Imp
 						}),
-						i(65278, {	-- Gold Pot Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65298, {	-- Cheerful Shoulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65317, {	-- Rainbow Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65278),	-- Gold Pot Gloves
+						i(65298),	-- Cheerful Shoulders
+						i(65317),	-- Rainbow Band
 						i(65357, {	-- Rainbow Generator
 							["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 						}),
@@ -1569,15 +1461,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.7, 25.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(65287, {	-- Gifted Bough
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65306, {	-- Amulet of Living Wood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65325, {	-- Tree Ring Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65287),	-- Gifted Bough
+						i(65306),	-- Amulet of Living Wood
+						i(65325),	-- Tree Ring Band
 					},
 				}),
 				q(28389, {	-- Report to the Denmother
@@ -1590,15 +1476,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(65292, {	-- Fists of the Pack
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65311, {	-- Denmother's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65330, {	-- Token of the Bond
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65292),	-- Fists of the Pack
+						i(65311),	-- Denmother's Cloak
+						i(65330),	-- Token of the Bond
 					},
 				}),
 				q(5203, {	-- Rescue From Jaedenar
@@ -1664,9 +1544,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4107, {	-- Salve via Disenchanting (2/2)
@@ -1681,9 +1559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5891, {	-- Salve via Disenchanting (1/2)
@@ -1697,9 +1573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4112, {	-- Salve via Disenchanting (2/2)
@@ -1714,9 +1588,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5884, {	-- Salve via Gathering (1/2)
@@ -1730,9 +1602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4105, {	-- Salve via Gathering (2/2)
@@ -1747,9 +1617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5889, {	-- Salve via Gathering (1/2)
@@ -1763,9 +1631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4110, {	-- Salve via Gathering (2/2)
@@ -1780,9 +1646,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5882, {	-- Salve via Hunting (1/2)
@@ -1794,9 +1658,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4103, {	-- Salve via Hunting (2/2)
@@ -1809,9 +1671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5887, {	-- Salve via Hunting (1/2)
@@ -1823,9 +1683,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4108, {	-- Salve via Hunting (2/2)
@@ -1838,9 +1696,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5883, {	-- Salve via Mining (1/2)
@@ -1854,9 +1710,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4104, {	-- Salve via Mining (2/2)
@@ -1871,9 +1725,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5888, {	-- Salve via Mining (1/2)
@@ -1887,9 +1739,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4109, {	-- Salve via Mining (2/2)
@@ -1904,9 +1754,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5885, {	-- Salve via Skinning (1/2)
@@ -1920,9 +1768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4106, {	-- Salve via Skinning (2/2)
@@ -1937,9 +1783,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5890, {	-- Salve via Skinning (1/2)
@@ -1953,9 +1797,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4111, {	-- Salve via Skinning (2/2)
@@ -1970,9 +1812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 48,
 					["groups"] = {
-						i(11516, {	-- Cenarion Plant Salve
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(28049, {	-- See the Invisible
@@ -1985,18 +1825,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 62918 },	-- Cursed Ooze
 							["cr"] = 7086,	-- Cursed Ooze
 						}),
-						i(65276, {	-- Gloves of Constellas
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65296, {	-- Oozing Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65315, {	-- Impish Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65334, {	-- Impsy's Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65276),	-- Gloves of Constellas
+						i(65296),	-- Oozing Vest
+						i(65315),	-- Impish Boots
+						i(65334),	-- Impsy's Wand
 					},
 				}),
 				q(28220, {	-- Seeking Soil
@@ -2004,9 +1836,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 25.1, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(65286, {	-- Ancient Seed Casing
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65286),	-- Ancient Seed Casing
 					},
 				}),
 				q(5158, {	-- Seeking Spiritual Aid
@@ -2080,18 +1910,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/7 Panicking Worker slapped
 							["provider"] = { "n", 48331 },	-- Panicking Worker
 						}),
-						i(65345, {	-- Oilfoot Slippers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65348, {	-- Oil Grush Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65351, {	-- Workforce Chestguard
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65354, {	-- Cloak of Sleep Deprivation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65345),	-- Oilfoot Slippers
+						i(65348),	-- Oil Grush Leggings
+						i(65351),	-- Workforce Chestguard
+						i(65354),	-- Cloak of Sleep Deprivation
 					},
 				}),
 				q(28361, {	-- Squirrely Clean
@@ -2129,18 +1951,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 63687 },	-- Kroshius' Infernal Core
 							["cr"] = 48344,	-- Kroshius
 						}),
-						i(65288, {	-- Shadow Curse Hood
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65307, {	-- Whisperwind Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65326, {	-- Infernal Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65339, {	-- Warlockbane Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65288),	-- Shadow Curse Hood
+						i(65307),	-- Whisperwind Armbands
+						i(65326),	-- Infernal Breastplate
+						i(65339),	-- Warlockbane Shield
 					},
 				}),
 				q(27997, {	-- The Corruption of the Jadefire
@@ -2218,15 +2032,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
-						i(65284, {	-- Imposter's Mask
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65304, {	-- Sindweller's Armguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65323, {	-- Pauldrons of Thankless Deeds
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65284),	-- Imposter's Mask
+						i(65304),	-- Sindweller's Armguards
+						i(65323),	-- Pauldrons of Thankless Deeds
 					},
 				}),
 				q(28305, {	-- The Fate of Bloodvenom Post
@@ -2258,15 +2066,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 9862},	-- Jaedenar Legionnaire
 							},
 						}),
-						i(65280, {	-- Shadow Hold Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65300, {	-- Moonbow
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65319, {	-- Purified Jaedenar Amulet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65280),	-- Shadow Hold Mace
+						i(65300),	-- Moonbow
+						i(65319),	-- Purified Jaedenar Amulet
 						i(156982, {	-- Shadow Hold Dagger
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -2307,12 +2109,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 49,
 					["groups"] = {
-						i(15706, {	-- Hunt Tracker Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15705, {	-- Tidecrest Blade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15706),	-- Hunt Tracker Blade
+						i(15705),	-- Tidecrest Blade
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2587,18 +2385,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/7 Whisperwind Lashers checked
 							["provider"] = { "n", 47747 },	-- Whisperwind Lasher
 						}),
-						i(65289, {	-- Floral Pantaloons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65308, {	-- Puregrove Spaulders
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65327, {	-- Weed Puller's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65340, {	-- Thornward Greaves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65289),	-- Floral Pantaloons
+						i(65308),	-- Puregrove Spaulders
+						i(65327),	-- Weed Puller's Bracers
+						i(65340),	-- Thornward Greaves
 					},
 				}),
 				q(4505, {	-- Well of Corruption
@@ -3039,7 +2829,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(18687, {	-- Xorothian Stardust
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = 1500000,	-- 150g
 						}),
 					},

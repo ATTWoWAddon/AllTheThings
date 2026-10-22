@@ -57,15 +57,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(2, {	-- 0/6 Burly Rockjaw Trogg
 									["provider"] = { "n", 724 },	-- Burly Rockjaw Trogg
 								}),
-								i(6185, {	-- Bear Shawl
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(2172, {	-- Rustic Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(6173, {	-- Snow Boots
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(6185),	-- Bear Shawl
+								i(2172),	-- Rustic Belt
+								i(6173),	-- Snow Boots
 							},
 						}),
 						q(3361, {	-- A Refugee's Quandary
@@ -343,15 +337,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										704,	-- Ragged Timber Wolf
 									},
 								}),
-								i(719, {	-- Rabbit Handler Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(6171, {	-- Wolf Handler Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(2547, {	-- Boar Handler Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(719),	-- Rabbit Handler Gloves
+								i(6171),	-- Wolf Handler Gloves
+								i(2547),	-- Boar Handler Gloves
 							},
 						}),
 						q(31150, {	-- Elegant Rune
@@ -561,15 +549,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/3 Rockjaw Goon slain
 									["provider"] = { "n", 37073 },	-- Rockjaw Goon
 								}),
-								i(66930, {	-- Boots of the Blameless
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(66929, {	-- Big Trogg Armbands
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(66928, {	-- Belt of So-Called Leaders
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(66930),	-- Boots of the Blameless
+								i(66929),	-- Big Trogg Armbands
+								i(66928),	-- Belt of So-Called Leaders
 								i(131896, {	-- Big Trogg Bracers
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -636,15 +618,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Rockjaw Invader slain
 									["provider"] = { "n", 37070 },	-- Rockjaw Invader
 								}),
-								i(66922, {	-- Perimeter Britches
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(66923, {	-- Lent Hands
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(66926, {	-- Trogg Repeller Platemail
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(66922),	-- Perimeter Britches
+								i(66923),	-- Lent Hands
+								i(66926),	-- Trogg Repeller Platemail
 								i(131895, {	-- Ironstock's Iron Grips
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -760,15 +736,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "i", 49751 },	-- Priceless Rockjaw Artifact (QI!)
 									["cr"] = 37105,	-- Rockjaw Scavenger
 								}),
-								i(57530, {	-- Explorer's Robe
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57531, {	-- Winter Jacket
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57532, {	-- Rockjaw Breastplate
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57530),	-- Explorer's Robe
+								i(57531),	-- Winter Jacket
+								i(57532),	-- Rockjaw Breastplate
 								i(131890, {	-- Plundered Rockjaw Chestguard
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -849,14 +819,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(57540, {	-- Coldridge Mountaineer's Pouch
-									["timeline"] = { ADDED_4_0_3 },
 									["groups"] = {
-										i(57542, {	-- Coldridge Mountaineer's Pouch
-											["timeline"] = { ADDED_4_0_3 },
-										}),
-										i(57541, {	-- Ragged Wolf Hide Cloak
-											["timeline"] = { ADDED_4_0_3 },
-										}),
+										i(57542),	-- Coldridge Mountaineer's Pouch
+										i(57541),	-- Ragged Wolf Hide Cloak
 									},
 								}),
 							},
@@ -1130,12 +1095,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/12 Small Crag Boars slain
 									["provider"] = { "n", 708 },	-- Small Crag Boar
 								}),
-								i(79, {	-- Dwarven Cloth Britches
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(61, {	-- Dwarven Leather Pants
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(79),	-- Dwarven Cloth Britches
+								i(61),	-- Dwarven Leather Pants
 							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
@@ -1569,16 +1530,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_7_3_0 },
 							["groups"] = {
 								q(47895, {	-- Bert's Bots
-									["timeline"] = { ADDED_7_3_0 },
 									["isDaily"] = true,
 									-- CRIEVE NOTE: Not sure if there's a source achievement or quest required to do first.
 									["groups"] = {
 										i(151638, {	-- Leprous Sack of Pet Supplies
-											["timeline"] = { ADDED_7_3_0 },
 											["groups"] = {
-												i(151645, {	-- Dibbler (PET!)
-													["timeline"] = { ADDED_7_3_0 },
-												}),
+												i(151645),	-- Dibbler (PET!)
 											},
 										}),
 									},
@@ -1658,12 +1615,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "n", 43089 },	-- Living Contamination
 									},
 								}),
-								i(59038, {	-- Fallout Cover
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(59053, {	-- Airfield Courier Bag
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59038),	-- Fallout Cover
+								i(59053),	-- Airfield Courier Bag
 							},
 						}),
 						q(27635, {	-- Decontamination
@@ -1704,17 +1657,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59052, {	-- Belt of Static Equilibrium
-									["timeline"] = { ADDED_4_0_3 },
 									-- #if BEFORE 7.0.3
 									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
 									-- #endif
 								}),
-								i(59051, {	-- Bracers of Angular Momentum
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(59050, {	-- Gloves of Potential Energy
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59051),	-- Bracers of Angular Momentum
+								i(59050),	-- Gloves of Potential Energy
 								i(131516, {	-- Angular Momentum Wristguards
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -1757,17 +1705,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59046, {	-- Friction Gloves
-									["timeline"] = { ADDED_4_0_3 },
 									-- #if BEFORE 7.0.3
 									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
 									-- #endif
 								}),
-								i(59045, {	-- Acceleration Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(59044, {	-- Velocity Bracers
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59045),	-- Acceleration Belt
+								i(59044),	-- Velocity Bracers
 								i(131512, {	-- Quickening Cinch
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -1929,17 +1872,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									},
 								}),
 								i(59049, {	-- Inertial Bracers
-									["timeline"] = { ADDED_4_0_3 },
 									-- #if BEFORE 7.0.3
 									["classes"] = { WARRIOR },	-- They changed this from PLATE to MAIL when GNOME HUNTERS came out
 									-- #endif
 								}),
-								i(59048, {	-- Torque-Applying Gloves
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(59047, {	-- Free Body Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59048),	-- Torque-Applying Gloves
+								i(59047),	-- Free Body Belt
 								i(131514, {	-- Torque-Applying Grips
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -2277,9 +2215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 							-- #if AFTER 7.0.3
 							["groups"] = {
-								i(59042, {	-- Electro-Staff
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59042),	-- Electro-Staff
 							},
 							-- #endif
 						}),
@@ -2298,9 +2234,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 							-- #if AFTER 7.0.3
 							["groups"] = {
-								i(59040, {	-- Staff of the Force
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59040),	-- Staff of the Force
 							},
 							-- #endif
 						}),
@@ -2319,9 +2253,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 							-- #if AFTER 7.0.3
 							["groups"] = {
-								i(59041, {	-- Vibro Knife
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59041),	-- Vibro Knife
 							},
 							-- #endif
 						}),
@@ -2340,9 +2272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 							-- #if AFTER 7.0.3
 							["groups"] = {
-								i(59039, {	-- Very Light Sabre
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59039),	-- Very Light Sabre
 							},
 							-- #endif
 						}),
@@ -2361,12 +2291,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 							-- #if AFTER 7.0.3
 							["groups"] = {
-								i(59043, {	-- Death Star
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(59041, {	-- Vibro Knife
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(59043),	-- Death Star
+								i(59041),	-- Vibro Knife
 							},
 							-- #endif
 						}),
@@ -2392,9 +2318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { GNOME, MECHAGNOME },
 							["classes"] = { HUNTER },
 							["groups"] = {
-								i(134123, {	-- "Reliable" Boom-O-Tronic
-									["timeline"] = { ADDED_7_0_3 },
-								}),
+								i(134123),	-- "Reliable" Boom-O-Tronic
 							},
 						}),
 						q(27674, {	-- To the Surface
@@ -2731,12 +2655,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 78.34, 37.74, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
-						i(2218, {	-- Craftsman's Dagger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(1009, {	-- Compact Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2218),	-- Craftsman's Dagger
+						i(1009),	-- Compact Hammer
 					},
 				}),
 				q(26855, {	-- A Pilot's Revenge
@@ -2755,18 +2675,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 87.4, 49.2, DUN_MOROGH },
 							["cr"] = 1961,	-- Mangeclaw
 						}),
-						i(57560, {	-- Mangy Claw Mitts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57566, {	-- Siege Engineer's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57562, {	-- Hammerfoot's Plate Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57563, {	-- South Gate Blunderbuss
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57560),	-- Mangy Claw Mitts
+						i(57566),	-- Siege Engineer's Belt
+						i(57562),	-- Hammerfoot's Plate Leggings
+						i(57563),	-- South Gate Blunderbuss
 						i(131612, {	-- Siege Engineer's Waistband
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2831,7 +2743,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(308, {	-- Distracting Jarven
 							["qg"] = 1373,	-- Jarven Thunderbrew
 							["coord"] = { 47.6, 52.6, DUN_MOROGH },
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
@@ -2843,7 +2754,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										{ "i", 2666 },	-- Barrel of Thunder Ale (QI!)
 									},
 									["coord"] = { 47.7, 52.7, DUN_MOROGH },
-									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 2,
 								}),
@@ -2852,7 +2762,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(403, {	-- Guarded Thunderbrew Barrel
 							["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
 							["coord"] = { 47.7, 52.7, DUN_MOROGH },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 						}),
@@ -2916,15 +2825,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 85.2, 60.6, DUN_MOROGH },
 							["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
 						}),
-						i(57575, {	-- Belt of Dark Schemes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57576, {	-- Dark Iron Infiltrator's Bracer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57578, {	-- Dark Iron Hobplate Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57575),	-- Belt of Dark Schemes
+						i(57576),	-- Dark Iron Infiltrator's Bracer
+						i(57578),	-- Dark Iron Hobplate Boots
 						i(131462, {	-- Dark Iron Spy-Bands
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2987,12 +2890,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Frostmane Warrior slain
 							["provider"] = { "n", 41258 },	-- Frostmane Warrior
 						}),
-						i(57554, {	-- Frostmane Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57555, {	-- Battok's Bloody Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57554),	-- Frostmane Belt
+						i(57555),	-- Battok's Bloody Boots
 						i(131448, {	-- Frostmane Chain Links
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -3116,9 +3015,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/5 Frostmane Headhunter
 							["provider"] = { "n", 1123 },	-- Frostmane Headhunter
 						}),
-						i(3216, {	-- Warm Winter Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3216),	-- Warm Winter Robe
 						-- #if BEFORE 4.0.3
 						i(2900),	-- Stone Buckler
 						-- #endif
@@ -3143,9 +3040,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 12427 },	-- Mountaineer Dolf
 							["coord"] = { 45.8, 54.4, DUN_MOROGH },
 						}),
-						i(16605, {	-- Friar's Robes of the Light
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(16605),	-- Friar's Robes of the Light
 					},
 				}),
 				q(25998, {	-- Get to the Airfield
@@ -3166,18 +3061,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42010 },	-- General Grimaxe
 							["coord"] = { 78.4, 34.9, DUN_MOROGH },
 						}),
-						i(57579, {	-- Airfield Defender's Garb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57580, {	-- Tunic of Dark Leather
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57581, {	-- Grimaxe's Black Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57582, {	-- Stonebreaker's Gauntlets
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57579),	-- Airfield Defender's Garb
+						i(57580),	-- Tunic of Dark Leather
+						i(57581),	-- Grimaxe's Black Breastplate
+						i(57582),	-- Stonebreaker's Gauntlets
 						i(131483, {	-- Vest of Dark Chainmail
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -3252,15 +3139,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 41603 },	-- Frostmane Raider
 							["coord"] = { 70.4, 49.2, DUN_MOROGH },
 						}),
-						i(57558, {	-- Robes of Endless Raiding
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57559, {	-- Boots of the Weary Raider
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57556, {	-- Bracer of the Nightly Raid
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57558),	-- Robes of Endless Raiding
+						i(57559),	-- Boots of the Weary Raider
+						i(57556),	-- Bracer of the Nightly Raid
 						i(131458, {	-- Well-Worn Raider Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -3364,9 +3245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["groups"] = {
-						i(7298, {	-- Blade of Cunning
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				q(412, {	-- Operation Recombobulation
@@ -3440,12 +3319,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 48.9, 46.8, DUN_MOROGH },
 						}),
-						i(57550, {	-- Grizzled Den Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57551, {	-- Wendigo Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57550),	-- Grizzled Den Boots
+						i(57551),	-- Wendigo Leggings
 						i(131436, {	-- Wendigo Pantaloons
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -3465,21 +3340,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 76.5, 58.0, DUN_MOROGH },
 						}),
-						i(57571, {	-- Archaeologist's Pants
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57572, {	-- Dun Morogh Hiking Pants
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57574, {	-- Museum Guard's Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57571),	-- Archaeologist's Pants
+						i(57572),	-- Dun Morogh Hiking Pants
+						i(57574),	-- Museum Guard's Bracers
 						i(131459, {	-- Museum Guard's Warboots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57549, {	-- Prospector's Bag
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57549),	-- Prospector's Bag
 					},
 				}),
 				q(314, {	-- Protecting the Herd
@@ -3650,9 +3517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(3565, {	-- Beerstained Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3565),	-- Beerstained Gloves
 					},
 				}),
 				q(413, {	-- Shimmer Stout
@@ -3884,9 +3749,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["groups"] = {
-						i(3151, {	-- Siege Brigade Vest
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3151),	-- Siege Brigade Vest
 					},
 				}),
 				q(26854, {	-- The Lost Pilot
@@ -3899,15 +3762,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(58970, {	-- Mori's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58971, {	-- Mori's Compass
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(58972, {	-- Mori's Gear Stick
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(58970),	-- Mori's Cloak
+						i(58971),	-- Mori's Compass
+						i(58972),	-- Mori's Gear Stick
 						i(156933, {	-- Mori's Pocketknife
 							["timeline"] = { ADDED_7_3_5 },
 						}),
@@ -4051,7 +3908,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						q(1655, {	-- Bailor's Ore Shipment
 							["qg"] = 6241,	-- Bailor Stonehand
 							["coord"] = { 36.0, 45.0, LOCH_MODAN },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["repeatable"] = true,
@@ -4074,7 +3930,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 							["qg"] = 3649,	-- Thundris Windweaver
 							["coord"] = { 37.4, 40.2, DARKSHORE },
-							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["repeatable"] = true,
@@ -4108,9 +3963,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["groups"] = {
-						i(6953, {	-- Verigan's Fist
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6953),	-- Verigan's Fist
 					},
 				}),
 				q(25839, {	-- The Ultrasafe Personnel Launcher
@@ -4227,12 +4080,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 38.5, 53.93, DUN_MOROGH },
 						}),
-						i(6177, {	-- Ironwrought Bracers
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10550, {	-- Wooly Mittens
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6177),	-- Ironwrought Bracers
+						i(10550),	-- Wooly Mittens
 					},
 				}),
 				q(7676, {	-- White Mechanostrider Replacement
@@ -4425,9 +4274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["groups"] = {
-						i(2899, {	-- Wengido Collar
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						i(2899),	-- Wengido Collar
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY

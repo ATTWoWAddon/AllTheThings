@@ -303,9 +303,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21737, {	-- Schematic: Cluster Launcher (RECIPE!)
-					["timeline"] = { REMOVED_3_0_8 },
-				}),
+				i(21737),	-- Schematic: Cluster Launcher (RECIPE!)
 			},
 		}),
 		q(8880, {	-- Cluster Rockets
@@ -354,9 +352,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 					["coord"] = { 61.7, 40.0, THE_HINTERLANDS },
 				}),
-				i(170205, {	-- Crown of Boundless Courage
-					["timeline"] = { ADDED_8_3_0 },
-				}),
+				i(170205),	-- Crown of Boundless Courage
 			},
 		}),
 		q(56905, {	-- Crown of Dark Blossoms
@@ -387,9 +383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 					["coord"] = { 56.7, 32.9, SILVERPINE_FOREST },
 				}),
-				i(170207, {	-- Crown of Eternal Memorial
-					["timeline"] = { ADDED_8_3_0 },
-				}),
+				i(170207),	-- Crown of Eternal Memorial
 			},
 		}),
 		q(56906, {	-- Crown of Good Fortune
@@ -420,9 +414,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 					["coord"] = { 57.5, 32.5, WINTERSPRING },
 				}),
-				i(169208, {	-- Crown of Everlasting Fortune
-					["timeline"] = { ADDED_8_3_0 },
-				}),
+				i(169208),	-- Crown of Everlasting Fortune
 			},
 		}),
 		q(56904, {	-- Crown of Prosperity
@@ -453,9 +445,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					},
 					["coord"] = { 66.6, 28.6, UNGORO_CRATER },
 				}),
-				i(170206, {	-- Crown of Infinite Prosperity
-					["timeline"] = { ADDED_8_3_0 },
-				}),
+				i(170206),	-- Crown of Infinite Prosperity
 			},
 		}),
 		q(8868, {	-- Elune's Blessing
@@ -541,12 +531,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21722, {	-- Pattern: Festival Dress (RECIPE!)
-					["timeline"] = { REMOVED_3_0_8 },
-				}),
-				i(21723, {	-- Pattern: Festival Suit (RECIPE!)
-					["timeline"] = { REMOVED_3_0_8 },
-				}),
+				i(21722),	-- Pattern: Festival Dress (RECIPE!)
+				i(21723),	-- Pattern: Festival Suit (RECIPE!)
 			},
 		}),
 		q(8877, {	-- Firework Launcher
@@ -560,9 +546,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				-- #if BEFORE 3.0.8.9464
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
-				i(21738, {	-- Schematic: Firework Launcher (RECIPE!)
-					["timeline"] = { REMOVED_3_0_8 },
-				}),
+				i(21738),	-- Schematic: Firework Launcher (RECIPE!)
 			},
 		}),
 		q(8881, {	-- Large Cluster Rockets

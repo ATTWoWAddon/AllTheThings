@@ -136,12 +136,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12845, 1 } },	-- Medallion of Faith
 					["groups"] = {
-						i(17044, {	-- Will of the Martyr
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(17045, {	-- Blood of the Martyr
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(17044),	-- Will of the Martyr
+						i(17045),	-- Blood of the Martyr
 					},
 				}),
 				q(27185, {	-- Cutting the Competition
@@ -172,12 +168,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cost"] = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 					["lvl"] = 55,
 					["groups"] = {
-						i(13216, {	-- Crown of the Penitent
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(13217, {	-- Band of the Penitent
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13216),	-- Crown of the Penitent
+						i(13217),	-- Band of the Penitent
 						-- #if BEFORE 4.0.3
 						i(6149),	-- Greater Mana Potion
 						i(3928),	-- Superior Healing Potion
@@ -191,21 +183,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 52,
 					["groups"] = {
-						i(15418, {	-- Shimmering Platinum Warhammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15411, {	-- Mark of Fordring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15421, {	-- Shroud of the Exile
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15413, {	-- Ornate Adamantium Breastplate
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(16058, {	-- Fordring's Seal
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15418),	-- Shimmering Platinum Warhammer
+						i(15411),	-- Mark of Fordring
+						i(15421),	-- Shroud of the Exile
+						i(15413),	-- Ornate Adamantium Breastplate
+						i(16058),	-- Fordring's Seal
 					},
 				}),
 				q(27352, {	-- Liquid Gold
@@ -325,12 +307,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 15880 },	-- Head of Ramstein the Gorger
 							["cr"] = 10439,	-- Ramstein the Gorger
 						}),
-						i(18022, {	-- Royal Seal of Alexis
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(17001, {	-- Elemental Circle
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18022),	-- Royal Seal of Alexis
+						i(17001),	-- Elemental Circle
 					},
 				}),
 				q(5742, {	-- Redemption
@@ -378,12 +356,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								{ "o", 176249 },	-- Scourge Data
 							},
 						}),
-						i(19812, {	-- Rune of the Dawn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(13209, {	-- Seal of the Dawn
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(19812),	-- Rune of the Dawn
+						i(13209),	-- Seal of the Dawn
 					},
 				}),
 				q(5251, {	-- The Archivist
@@ -410,15 +384,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
 					["groups"] = {
-						i(13246, {	-- Argent Avenger
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(13249, {	-- Argent Crusader
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(13243, {	-- Argent Defender
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13246),	-- Argent Avenger
+						i(13249),	-- Argent Crusader
+						i(13243),	-- Argent Defender
 					},
 				}),
 				q(27208, {	-- The Dreadlord Balnazzar
@@ -429,18 +397,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						objective(1, {	-- 0/1 Balnazzar slain
 							["provider"] = { "n", 10813 },	-- Balnazzar
 						}),
-						i(65998, {	-- Balnazzar's Hide
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65977, {	-- Balnazzar's Horn
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65953, {	-- Dathrohan's Mace
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(65928, {	-- Leggings of Stratholme
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(65998),	-- Balnazzar's Hide
+						i(65977),	-- Balnazzar's Horn
+						i(65953),	-- Dathrohan's Mace
+						i(65928),	-- Leggings of Stratholme
 					},
 				}),
 				q(5212, {	-- The Flesh Does Not Lie
@@ -478,9 +438,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 13172 },	-- Grimm's Premium Tobacco
 							["cr"] = 11058,	-- Ezra Grimm
 						}),
-						i(13171, {	-- Smokey's Lighter
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13171),	-- Smokey's Lighter
 					},
 				}),
 				q(5122, {	-- The Medallion of Faith
@@ -510,9 +468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								11122,	-- Restless Soul
 							},
 						}),
-						i(13315, {	-- Testament of Hope
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(13315),	-- Testament of Hope
 					},
 				}),
 				q(5262, {	-- The Truth Comes Crashing Down
@@ -1434,7 +1390,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #if BEFORE 3.0.2
 								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
 								-- #endif
-								["timeline"] = { REMOVED_3_0_2 },
 								["collectible"] = false,
 							}),
 						},

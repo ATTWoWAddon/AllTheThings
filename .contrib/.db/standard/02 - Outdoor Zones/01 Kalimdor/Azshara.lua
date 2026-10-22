@@ -387,15 +387,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Talrendis Ancient slain
 							["provider"] = { "n", 35198 },	-- Talrendis Ancient
 						}),
-						i(53452, {	-- Woodchipper Dagger
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53407, {	-- Chopped Off Ancient Limb
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53400, {	-- Arborcide Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53452),	-- Woodchipper Dagger
+						i(53407),	-- Chopped Off Ancient Limb
+						i(53400),	-- Arborcide Axe
 					},
 				}),
 				q(14429, {	-- Arcane De-Construction
@@ -552,12 +546,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
-						i(10709, {	-- Pyrestone Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(11120, {	-- Belgrom's Hammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10709),	-- Pyrestone Orb
+						i(11120),	-- Belgrom's Hammer
 					},
 				}),
 				q(24430, {	-- Blacken the Skies
@@ -707,15 +697,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Clubnik's Dozer Exorcised
 							["provider"] = { "n", 35526 },	-- Clubnik's Dozer
 						}),
-						i(53447, {	-- Standard Issue Airborne Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53405, {	-- Bulldozer Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53427, {	-- Margene Repair Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53447),	-- Standard Issue Airborne Belt
+						i(53405),	-- Bulldozer Vest
+						i(53427),	-- Margene Repair Gloves
 						i(131357, {	-- Heavy Mechanic's Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -750,12 +734,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 36873},	-- High Priestess Silthera
 							},
 						}),
-						i(53453, {	-- Wrenchmen Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53418, {	-- Honorary Gob Squad Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53453),	-- Wrenchmen Belt
+						i(53418),	-- Honorary Gob Squad Shield
 						--
 						i(49629),	-- Gob Squad Flare (QI!)
 					},
@@ -773,12 +753,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(2, {	-- 0/1 Malicion slain
 							["provider"] = { "n", 36649 },	-- Malicion
 						}),
-						i(53402, {	-- Blue Hide Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53423, {	-- Kalecgos' Gift
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53402),	-- Blue Hide Vest
+						i(53423),	-- Kalecgos' Gift
 						i(131367, {	-- Azure Scale Hauberk
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -795,9 +771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53057, {	-- Faded Wizard Hat (TOY!)
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53057),	-- Faded Wizard Hat (TOY!)
 					},
 				}),
 				q(24448, {	-- Field Promotion
@@ -830,15 +804,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 6193},	-- Spitelash Screamer
 							},
 						}),
-						i(53422, {	-- Kaboom Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53430, {	-- Mortar-Slinger Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53437, {	-- Salvoblast Tunic
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53422),	-- Kaboom Leggings
+						i(53430),	-- Mortar-Slinger Belt
+						i(53437),	-- Salvoblast Tunic
 						i(131361, {	-- Belt of Explosive Potential
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -887,12 +855,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 49174 },	-- Globe of Boiling Water
 							["cr"] = 36130,	-- Scalding Water Lord
 						}),
-						i(53445, {	-- Spongy Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53438, {	-- Scalding Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53445),	-- Spongy Vest
+						i(53438),	-- Scalding Gloves
 						i(131346, {	-- Ergll's Body Sieve
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -926,12 +890,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53426, {	-- Mage Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53414, {	-- Hacker's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53426),	-- Mage Bracers
+						i(53414),	-- Hacker's Leggings
 						i(131358, {	-- Leggings of the Hack "Mage"
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -947,12 +907,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Wounded Soldier rescued
 							["provider"] = { "n", 36922 },	-- Wounded Soldier
 						}),
-						i(53410, {	-- Disposable Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53419, {	-- Hort's Axe
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53410),	-- Disposable Cloak
+						i(53419),	-- Hort's Axe
 						i(156943, {	-- Hort's Motivator
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -989,12 +945,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 199332 },	-- Highborne Tablet
 							},
 						}),
-						i(53411, {	-- Eldarath Staff
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53433, {	-- Quick Buck Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53411),	-- Eldarath Staff
+						i(53433),	-- Quick Buck Leggings
 						i(131362, {	-- Profit Boon Legguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1099,9 +1051,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 153123 },	-- Kim'jael's Equipment
 							},
 						}),
-						i(10830, {	-- M73 Frag Grenade
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10830),	-- M73 Frag Grenade
 					},
 				}),
 				q(5534, {	-- Kim'jael's "Missing" Equipment
@@ -1147,12 +1097,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 49540 },	-- Grunwald's Head
 							["cr"] = 36680,	-- Captain Grunwald
 						}),
-						i(53425, {	-- Low-Altitude Parachute
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53412, {	-- Gloves of Unmitigated Badassery
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53425),	-- Low-Altitude Parachute
+						i(53412),	-- Gloves of Unmitigated Badassery
 						i(131360, {	-- Grips of the Lightning Fast Assasin
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1349,12 +1295,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 195513 },	-- Ancient Stone Cask
 							},
 						}),
-						i(53404, {	-- Bottom-Wader Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53435, {	-- Restored Mennaran Plate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53404),	-- Bottom-Wader Boots
+						i(53435),	-- Restored Mennaran Plate
 						i(131334, {	-- Weighted Chain Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1482,12 +1424,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53429, {	-- Molotov Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53432, {	-- Pricey Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53429),	-- Molotov Gloves
+						i(53432),	-- Pricey Bracers
 						i(131365, {	-- Fine-Link Gauntlets
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1513,15 +1451,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53408, {	-- Detonation Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53424, {	-- Kroum's Signet
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53444, {	-- Sniper's Band
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53408),	-- Detonation Ring
+						i(53424),	-- Kroum's Signet
+						i(53444),	-- Sniper's Band
 					},
 				}),
 				q(24455, {	-- Rapid Deployment
@@ -1574,12 +1506,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Mountainfoot Miner Destoned
 							["provider"] = { "n", 35375 },	-- Mountainfoot Miner Destoned Counter
 						}),
-						i(53449, {	-- Stonifying Gun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53434, {	-- Refleshified Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53449),	-- Stonifying Gun
+						i(53434),	-- Refleshified Bracers
 					},
 				}),
 				q(14250, {	-- Renewable Resource
@@ -1684,15 +1612,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								6377,	-- Thunderhead Stagwing
 							},
 						}),
-						i(53439, {	-- Scissor Blade
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53413, {	-- Glued Feather Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53436, {	-- Robotronic Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53439),	-- Scissor Blade
+						i(53413),	-- Glued Feather Boots
+						i(53436),	-- Robotronic Vest
 						i(131336, {	-- Inter-Feather-Linked Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1711,18 +1633,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53403, {	-- Bedlam Gun
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53428, {	-- Merger Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53399, {	-- Acquisition Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53415, {	-- Heart Wrapper
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53403),	-- Bedlam Gun
+						i(53428),	-- Merger Boots
+						i(53399),	-- Acquisition Bracers
+						i(53415),	-- Heart Wrapper
 						i(131364, {	-- Deal Makers Bindings
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1741,12 +1655,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(2, {	-- 0/1 Lady Vesthra slain
 							["provider"] = { "n", 35881 },	-- Lady Vesthra
 						}),
-						i(53440, {	-- Sea Sister Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53441, {	-- Serpent-Crusher Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53440),	-- Sea Sister Vest
+						i(53441),	-- Serpent-Crusher Gloves
 						i(131339, {	-- Scaled Gloves of the Serpent
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1765,18 +1675,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "o", 204091 },	-- Induction Samophlange
 							},
 						}),
-						i(63876, {	-- Smoot-Smacking Shoulderpads
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63875, {	-- Waistguard of Calibrated Caliphracts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63874, {	-- Legguards of Samophlangination
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(63877, {	-- Smoot's Shredded Smock
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(63876),	-- Smoot-Smacking Shoulderpads
+						i(63875),	-- Waistguard of Calibrated Caliphracts
+						i(63874),	-- Legguards of Samophlangination
+						i(63877),	-- Smoot's Shredded Smock
 					},
 				}),
 				q(5535, {	-- Spiritual Unrest
@@ -1896,15 +1798,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/4 Blackmaw Shaman slain
 							["provider"] = { "n", 36012 },	-- Blackmaw Shaman
 						}),
-						i(53450, {	-- Treaty Breaker Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53409, {	-- Diplomatic Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53431, {	-- Negotiation Stompers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53450),	-- Treaty Breaker Gloves
+						i(53409),	-- Diplomatic Belt
+						i(53431),	-- Negotiation Stompers
 						i(131359, {	-- Accomodating Cinch
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1947,15 +1843,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 49674 },	-- The Head of Jarrodenus
 							["cr"] = 36884,	-- Commander Jarrodenus
 						}),
-						i(53443, {	-- Shield of Talrendis Point
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(53451, {	-- Wind Rider Wand
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(53442, {	-- Shield of Azsharan Conquest
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(53443),	-- Shield of Talrendis Point
+						i(53451),	-- Wind Rider Wand
+						i(53442),	-- Shield of Azsharan Conquest
 					},
 				}),
 				q(14117, {	-- The Eyes of Ashenvale
@@ -1967,12 +1857,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/8 Talrendis Scout slain
 							["provider"] = { "n", 35095 },	-- Talrendis Scout
 						}),
-						i(53416, {	-- Hill's Eye Wand
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53448, {	-- Stolen Talrendis Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53416),	-- Hill's Eye Wand
+						i(53448),	-- Stolen Talrendis Boots
 						i(131333, {	-- Hill Ranger Treads
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2141,12 +2027,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(3, {	-- 0/6 Zapper Gnome slain
 							["provider"] = { "n", 36384 },	-- Zapper Gnome
 						}),
-						i(53417, {	-- Hobart's Spare Hubcap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(53446, {	-- Spring Gadget
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(53417),	-- Hobart's Spare Hubcap
+						i(53446),	-- Spring Gadget
 					},
 				}),
 				q(14300, {	-- The Trial of Fire
@@ -2241,15 +2123,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(63870, {	-- Hull-Shatter Shoulders
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(63869, {	-- Bracers of the Lost Leader
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(63868, {	-- Skyfallen Plate Belt
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(63870),	-- Hull-Shatter Shoulders
+						i(63869),	-- Bracers of the Lost Leader
+						i(63868),	-- Skyfallen Plate Belt
 					},
 				}),
 				q(14135, {	-- Up a Tree
@@ -2340,12 +2216,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53406, {	-- Charged Robes
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(53421, {	-- Juicy Bracers
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(53406),	-- Charged Robes
+						i(53421),	-- Juicy Bracers
 						i(131340, {	-- Capacitance Bands
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2402,12 +2274,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(53420, {	-- Joanna's Sash
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-						i(53401, {	-- Asylum Shoes
-							["timeline"] = { ADDED_4_0_1 },
-						}),
+						i(53420),	-- Joanna's Sash
+						i(53401),	-- Asylum Shoes
 						i(131341, {	-- Asylum Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2606,12 +2474,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
-						i(15751, {	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15729, {	-- Pattern: Chimeric Gloves (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15751),	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)
+						i(15729),	-- Pattern: Chimeric Gloves (RECIPE!)
 					},
 				}),
 				n(14301, {	-- Brinna Valanaar <Bowyer>

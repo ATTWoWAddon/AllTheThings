@@ -69,7 +69,6 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["groups"] = {
 						ach(416, {	-- Scarab Lord (Achievement)
 							["sourceQuest"] = 8743,	-- Bang a Gong!
-							["timeline"] = { ADDED_1_9_0, REMOVED_4_0_3 },
 						}),
 						title(33, {	-- Scarab Lord Crieve
 							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch

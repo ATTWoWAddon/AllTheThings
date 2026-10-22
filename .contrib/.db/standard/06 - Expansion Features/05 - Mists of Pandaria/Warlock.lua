@@ -124,9 +124,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						ach(9016, {		-- Breaker of the Black Harvest
 							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
 							["groups"] = {
-								title(256, {	-- <Name> of the Black Harvest
-									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
-								}),
+								title(256),	-- <Name> of the Black Harvest
 							},
 						}),
 					},

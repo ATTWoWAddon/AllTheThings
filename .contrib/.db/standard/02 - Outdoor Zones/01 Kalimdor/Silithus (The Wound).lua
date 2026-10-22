@@ -789,12 +789,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.2, 44.2, SILITHUS },
-							["timeline"] = { ADDED_8_0_1 },
 							["groups"] = {
 								i(159671),	-- Silithus Portal Stone (QI!)
-								i(158075, {	-- Heart of Azeroth
-									["timeline"] = { ADDED_8_0_1 },
-								}),
+								i(158075),	-- Heart of Azeroth
 							},
 						}),
 						q(50973, {	-- The Heart's Power (first HoA upgrade)
@@ -1343,9 +1340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 133388,	-- Magni Bronzebeard
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["groups"] = {
-						ach(12071, {	-- Crucible's Promise
-							["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
-						}),
+						ach(12071),	-- Crucible's Promise
 					},
 				}),
 				q(50048, {	-- The Seething Shore (A)

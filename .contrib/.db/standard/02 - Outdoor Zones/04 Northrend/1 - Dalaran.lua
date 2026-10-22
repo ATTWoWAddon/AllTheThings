@@ -880,18 +880,10 @@ root(ROOTS.Zones, {
 								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
 								["timeline"] = { ADDED_7_0_3 },
 								["groups"] = {
-									i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-										["timeline"] = { ADDED_7_0_3 },
-									}),
-									i(136927, {	-- Scarlet Confessional Book (TOY!)
-										["timeline"] = { ADDED_7_0_3 },
-									}),
-									i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-										["timeline"] = { ADDED_7_0_3 },
-									}),
-									i(136972, {	-- Tome of Hex: Cockroach (CI!)
-										["timeline"] = { ADDED_7_0_3 },
-									}),
+									i(136803),	-- Dirty Tricks, Vol 1: Detection (CI!)
+									i(136927),	-- Scarlet Confessional Book (TOY!)
+									i(141056),	-- Technique: Glyph of Burnout (RECIPE!)
+									i(136972),	-- Tome of Hex: Cockroach (CI!)
 								},
 							}),
 							n(29537, {	-- Darahir <Reagents & Magical Goods>
@@ -1294,51 +1286,39 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							crit(7309, {	-- Proof of Demise: Anub'arak
 								["_quests"] = { 13254 },	-- Proof of Demise: Anub'arak
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7311, {	-- Proof of Demise: Cyanigosa
 								["_quests"] = { 13256 },	-- Proof of Demise: Cyanigosa
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7305, {	-- Proof of Demise: Gal'darah
 								["_quests"] = { 13250 },	-- Proof of Demise: Gal'darah
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7310, {	-- Proof of Demise: Herald Volazj
 								["_quests"] = { 13255 },	-- Proof of Demise: Herald Volazj
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7300, {	-- Proof of Demise: Ingvar the Plunderer
 								["_quests"] = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7301, {	-- Proof of Demise: Keristrasza
 								["_quests"] = { 13246 },	-- Proof of Demise: Keristrasza
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7303, {	-- Proof of Demise: King Ymiron
 								["_quests"] = { 13248 },	-- Proof of Demise: King Ymiron
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7302, {	-- Proof of Demise: Ley-Guardian Eregos
 								["_quests"] = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7308, {	-- Proof of Demise: Loken
 								["_quests"] = { 13253 },	-- Proof of Demise: Loken
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7306, {	-- Proof of Demise: Mal'Ganis
 								["_quests"] = { 13251 },	-- Proof of Demise: Mal'Ganis
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7307, {	-- Proof of Demise: Sjonnir The Ironshaper
 								["_quests"] = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7304, {	-- Proof of Demise: The Prophet Tharon'ja
 								["_quests"] = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1369,19 +1349,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
 								["_quests"] = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7298, {	-- Timear Foresees Infinite Agents in your Future!
 								["_quests"] = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7299, {	-- Timear Foresees Titanium Vanguards in your Future!
 								["_quests"] = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7297, {	-- Timear Foresees Ymirjar Berserkers in your Future!
 								["_quests"] = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
-								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),

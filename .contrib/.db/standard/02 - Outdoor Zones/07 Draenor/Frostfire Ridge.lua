@@ -197,7 +197,6 @@ root(ROOTS.Zones, {
 						["petBattleLvl"] = 25,
 						["groups"] = {
 							q(37205, {	-- Gargra
-								["timeline"] = { ADDED_6_0_2 },
 								["isDaily"] = true,
 								["_drop"] = { "g" },	-- Drops Polished Pet Charm
 								["groups"] = {

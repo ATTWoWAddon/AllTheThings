@@ -1725,32 +1725,26 @@ profession(LEATHERWORKING, {
 			},
 			{
 				["name"] = "Fel Leather Cuff",
-				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196457,
 			},
 			{
 				["name"] = "Fel Leather Strap",
-				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196395,
 			},
 			{
 				["name"] = "Felhide Bracers",
-				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196456,
 			},
 			{
 				["name"] = "Shaved Felhide",
-				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196387,
 			},
 			{
 				["name"] = "Tanned Fel Leather",
-				["timeline"] = { ADDED_7_0_3 },
 				["recipeID"] = 196388,
 			},
 			{
 				["name"] = "Material Preparation",
-				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 484,
 				["groups"] = {
 					{
@@ -1760,19 +1754,16 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stonehide Leather Strip",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 208615,
 					},
 					{
 						["name"] = "Stonehide Leather Strip",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196385,
 					},
 				},
 			},
 			{
 				["name"] = "Tanning",
-				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 485,
 				["groups"] = {
 					{
@@ -1782,14 +1773,12 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Tanned Stonehide Pelt",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 208596,
 					},
 				},
 			},
 			{
 				["name"] = "Shaping",
-				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 486,
 				["groups"] = {
 					{
@@ -1799,39 +1788,32 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stonehide Boot Exterior",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196384,
 					},
 					{
 						["name"] = "Stonehide Caparison",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196469,
 					},
 					{
 						["name"] = "Stonehide Champron",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196467,
 					},
 					{
 						["name"] = "Stonehide Crinet",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196468,
 					},
 					{
 						["name"] = "Stonehide Leather Lining",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196382,
 					},
 					{
 						["name"] = "Stonehide Leather Vamp",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196383,
 					},
 				},
 			},
 			{
 				["name"] = "Stitching",
-				["timeline"] = { ADDED_7_0_3 },
 				["categoryID"] = 487,
 				["groups"] = {
 					{
@@ -1841,17 +1823,14 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stonehide Leather Barding",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196397,
 					},
 					{
 						["name"] = "Stonehide Leather Bed",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196442,
 					},
 					{
 						["name"] = "Sturdy Stonehide Boots",
-						["timeline"] = { ADDED_7_0_3 },
 						["recipeID"] = 196427,
 					},
 				},

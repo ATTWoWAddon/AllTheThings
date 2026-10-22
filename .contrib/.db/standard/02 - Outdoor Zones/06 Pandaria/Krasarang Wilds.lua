@@ -148,7 +148,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31954, {	-- Grand Master Mo'ruk
 								["sourceAchievement"] = 6606,	-- Taming Pandaria
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 								["groups"] = {
 									i(89125),	-- Sack of Pet Supplies
@@ -1304,8 +1303,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
 					}),
 				}),
-				n(ZONE_DROPS, {
-				}),
+				n(ZONE_DROPS),
 			},
 		}),
 	}),

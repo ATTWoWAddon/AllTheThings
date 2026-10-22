@@ -111,12 +111,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["coord"] = { 64.6, 77.8, MULGORE },
 									["cr"] = 8554,	-- Chief Sharptusk Thornmantle
 								}),
-								i(10635, {	-- Painted Chain Leggings
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(10636, {	-- Nomadic Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(10635),	-- Painted Chain Leggings
+								i(10636),	-- Nomadic Gloves
 							},
 						}),
 						q(1519, {	-- Call of Earth (1/3)
@@ -160,7 +156,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								recipe(8071),	-- Stoneskin Totem
 								i(5175, {	-- Earth Totem
 									["description"] = "You must keep this in your bags forever.",
-									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 							-- #endif
@@ -330,15 +325,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(57198, {	-- Red Cloud Gloves
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57198),	-- Red Cloud Gloves
 								i(131867, {	-- Red Cloud Handwraps
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(57215, {	-- Quill Impaled Boots
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57215),	-- Quill Impaled Boots
 							},
 						}),
 						q(27027, {	-- Primal Strike (Tauren)
@@ -397,18 +388,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								i(49535),	-- Stolen Rifle (QI!)
 								--
-								i(57201, {	-- Robes of the Sun
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57218, {	-- Rabbit Chaser's Leggings
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57201),	-- Robes of the Sun
+								i(57218),	-- Rabbit Chaser's Leggings
 								i(131871, {	-- Rabbit Chaser's Greaves
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(57224, {	-- Longstalker's Rifle
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57224),	-- Longstalker's Rifle
 							},
 						}),
 						q(14460, {	-- Rite of Honor
@@ -429,18 +414,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								i(50473),	-- Mane of Thornmantle (QI!)
 								--
-								i(57203, {	-- Slippers of High Honor
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57220, {	-- Sunwalker's Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57203),	-- Slippers of High Honor
+								i(57220),	-- Sunwalker's Belt
 								i(131872, {	-- Sunwalker's Waistcord
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(57792, {	-- Bag of Thorns
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57792),	-- Bag of Thorns
 							},
 						}),
 						q(14452, {	-- Rite of Strength
@@ -456,18 +435,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(57199, {	-- Sun Bleached Bracer
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57199),	-- Sun Bleached Bracer
 								i(131868, {	-- Sun Bleached Armbands
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(57216, {	-- Mud Splattering Hammer
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57231, {	-- Red Ceremonial Dagger
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57216),	-- Mud Splattering Hammer
+								i(57231),	-- Red Ceremonial Dagger
 							},
 						}),
 						q(757, {	-- Rite of Strength
@@ -487,21 +460,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(12448, {	-- Light Hunting Rifle
 									["timeline"] = { REMOVED_1_7_0 },
 								}),
-								i(1382, {	-- Rock Mace
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(1383, {	-- Stone Tomahawk
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(2137, {	-- Whittling Knife
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(5776, {	-- Elder's Cane
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(5777, {	-- Brave's Axe
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(1382),	-- Rock Mace
+								i(1383),	-- Stone Tomahawk
+								i(2137),	-- Whittling Knife
+								i(5776),	-- Elder's Cane
+								i(5777),	-- Brave's Axe
 							},
 						}),
 						q(24215, {	-- Rite of the Winds
@@ -593,15 +556,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(57232, {	-- Thorn-Proof Wristguard
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57200, {	-- Thorncaller Trousers
-									["timeline"] = { ADDED_4_0_3 },
-								}),
-								i(57217, {	-- Thorned Cinch
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57232),	-- Thorn-Proof Wristguard
+								i(57200),	-- Thorncaller Trousers
+								i(57217),	-- Thorned Cinch
 								i(131870, {	-- Thorned Links
 									["timeline"] = { ADDED_7_0_3 },
 								}),
@@ -623,15 +580,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								i(57202, {	-- Scarred Battleboar Chest
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57202),	-- Scarred Battleboar Chest
 								i(131869, {	-- Scarred Battleboar Breastplate
 									["timeline"] = { ADDED_7_0_3 },
 								}),
-								i(57219, {	-- Braided Boarskin Belt
-									["timeline"] = { ADDED_4_0_3 },
-								}),
+								i(57219),	-- Braided Boarskin Belt
 							},
 						}),
 						q(780, {	-- The Battleboars
@@ -655,9 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										2954,	-- Bristleback Battleboar
 									},
 								}),
-								i(6059, {	-- Nomadic Vest
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(6059),	-- Nomadic Vest
 							},
 						}),
 						q(27020, {	-- The First Lesson (Tauren)
@@ -696,12 +647,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["provider"] = { "i", 4740 },	-- Plainstrider Feather
 									["cr"] = 2955,	-- Plainstrider
 								}),
-								i(4954, {	-- Nomadic Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(4910, {	-- Painted Chain Gloves
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(4954),	-- Nomadic Belt
+								i(4910),	-- Painted Chain Gloves
 							},
 						}),
 						q(750, {	-- The Hunt Continues
@@ -715,12 +662,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 									["provider"] = { "i", 4742 },	-- Mountain Cougar Pelt
 									["cr"] = 2961,	-- Mountain Cougar
 								}),
-								i(4908, {	-- Nomadic Bracers
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
-								i(4913, {	-- Painted Chain Belt
-									["timeline"] = { REMOVED_4_0_3 },
-								}),
+								i(4908),	-- Nomadic Bracers
+								i(4913),	-- Painted Chain Belt
 							},
 						}),
 						q(27021, {	-- The Hunter's Path (Tauren)
@@ -974,12 +917,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(131213, {	-- Chain Kodo-Rider's Pants
 							["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3 },
 						}),
-						i(4969, {	-- Fortified Bindings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4970, {	-- Rough-hewn Kodo Leggings
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4969),	-- Fortified Bindings
+						i(4970),	-- Rough-hewn Kodo Leggings
 					},
 				}),
 				-- #if NOT ANYCLASSIC
@@ -1105,18 +1044,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 4805 },	-- Flatland Cougar Femur
 							["cr"] = 3035,	-- Flatland Cougar
 						}),
-						i(57209, {	-- Belt of the Prairie Wolf
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(66616, {	-- Cougar Pelt Wristwraps
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57209),	-- Belt of the Prairie Wolf
+						i(66616),	-- Cougar Pelt Wristwraps
 						i(131494, {	-- Prairie Wolf Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57234, {	-- Swoopskin Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57234),	-- Swoopskin Gloves
 					},
 				}),
 				q(766, {	-- Mazzranache
@@ -1154,12 +1087,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2969,	-- Wiry Swoop
 							},
 						}),
-						i(4972, {	-- Cliff Runner Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4973, {	-- Plains Hunter Wristguards
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4972),	-- Cliff Runner Boots
+						i(4973),	-- Plains Hunter Wristguards
 					},
 				}),
 				q(24459, {	-- Morin Cloudstalker
@@ -1310,15 +1239,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Water of Vision consumed
 							["provider"] = { "i", 49651 },	-- Water of Vision
 						}),
-						i(57206, {	-- Earthmother's Vest
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57206),	-- Earthmother's Vest
 						i(131363, {	-- Earthmother's Garb
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57222, {	-- Rainwalker's Bracer
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57222),	-- Rainwalker's Bracer
 					},
 				}),
 				q(767, {	-- Rite of Vision (1/3)
@@ -1360,12 +1285,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 					["groups"] = {
-						i(4906, {	-- Rainwalker Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4958, {	-- Sun-beaten Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4906),	-- Rainwalker Boots
+						i(4958),	-- Sun-beaten Cloak
 					},
 				}),
 				q(773, {	-- Rite of Wisdom
@@ -1500,12 +1421,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 64.8, 43.4, MULGORE },
 							["cr"] = 3051,	-- Supervisor Fizsprocket
 						}),
-						i(57242, {	-- Goblin Masher
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57208, {	-- Trackless Sandals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57242),	-- Goblin Masher
+						i(57208),	-- Trackless Sandals
 						i(131493, {	-- Trackless Boots
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1524,12 +1441,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 64.8, 43.4, MULGORE },
 							["cr"] = 3051,	-- Supervisor Fizsprocket
 						}),
-						i(4974, {	-- Compact Fighting Knife
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4964, {	-- Goblin Smasher
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4974),	-- Compact Fighting Knife
+						i(4964),	-- Goblin Smasher
 					},
 				}),
 				q(761, {	-- Swoop Hunting
@@ -1706,15 +1619,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 49647 },	-- Drum of the Soothed Earth
 							["cr"] = 36845,	-- Agitated Earth Spirit
 						}),
-						i(57223, {	-- Chestguard of the Beating Drum
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57207, {	-- Restless Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57233, {	-- Worn Ceremonial Tomahawk
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57223),	-- Chestguard of the Beating Drum
+						i(57207),	-- Restless Gloves
+						i(57233),	-- Worn Ceremonial Tomahawk
 					},
 				}),
 				q(26179, {	-- The Venture Co.
@@ -1753,15 +1660,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(5415),	-- Thunderhorn Cleansing Totem (QI!)
-						i(57235, {	-- Bloodhoof War Shield
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57226, {	-- Touch of Dawn
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57210, {	-- Thunderhorn Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57235),	-- Bloodhoof War Shield
+						i(57226),	-- Touch of Dawn
+						i(57210),	-- Thunderhorn Gloves
 						i(131366, {	-- Thunderhorn Handguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1779,9 +1680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 5415 },	-- Thunderhorn Cleansing Totem
 							["coord"] = { 44.0, 45.0, MULGORE },
 						}),
-						i(4963, {	-- Thunderhorn Cloak
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4963),	-- Thunderhorn Cloak
 					},
 				}),
 				q(24441, {	-- Thunderhorn Totem
@@ -1866,21 +1765,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(5416),	-- Wildmane Cleansing Totem (QI!)
-						i(57238, {	-- Cliff Running Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57229, {	-- Duskwatcher's Leggings
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57238),	-- Cliff Running Boots
+						i(57229),	-- Duskwatcher's Leggings
 						i(131373, {	-- Duskwatcher's Legguards
 							["timeline"] = { ADDED_7_0_3 },
 						}),
-						i(57240, {	-- Hawkeye Rifle
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57213, {	-- Waterbearer's Robes
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57240),	-- Hawkeye Rifle
+						i(57213),	-- Waterbearer's Robes
 					},
 				}),
 				q(760, {	-- Wildmane Cleansing
@@ -1895,12 +1786,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "i", 5416 },	-- Wildmane Cleansing Totem
 							["coord"] = { 43.0, 14.0, MULGORE },
 						}),
-						i(3443, {	-- Ceremonial Tomahawk
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(4961, {	-- Dreamwatcher Staff
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3443),	-- Ceremonial Tomahawk
+						i(4961),	-- Dreamwatcher Staff
 					},
 				}),
 				q(24523, {	-- Wildmane Totem
@@ -1938,12 +1825,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(5411),	-- Winterhoof Cleansing Totem (QI!)
-						i(57221, {	-- Legs of the Long Day
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(57205, {	-- Plains Hunter Guards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(57221),	-- Legs of the Long Day
+						i(57205),	-- Plains Hunter Guards
 					},
 				}),
 				q(754, {	-- Winterhoof Cleansing

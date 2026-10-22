@@ -115,15 +115,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
 							["cr"] = 5992,	-- Ashmane Boar
 						}),
-						i(59384, {	-- Ashmane Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59386, {	-- Boots of the Blasted Lands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59385, {	-- Stained Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59384),	-- Ashmane Bracers
+						i(59386),	-- Boots of the Blasted Lands
+						i(59385),	-- Stained Shoulderguards
 					},
 				}),
 				q(25690, {	-- A Bloodmage's Gotta Eat Too (H)
@@ -138,15 +132,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 51.6, 29.8, BLASTED_LANDS },
 							["cr"] = 5992,	-- Ashmane Boar
 						}),
-						i(59422, {	-- Ashmane Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59424, {	-- Boots of the Blasted Lands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59423, {	-- Stained Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59422),	-- Ashmane Bracers
+						i(59424),	-- Boots of the Blasted Lands
+						i(59423),	-- Stained Shoulderguards
 					},
 				}),
 				q(2583, {	-- A Boar's Vitality
@@ -160,9 +148,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 45,
 					["groups"] = {
-						i(8411, {	-- Lung Juice Cocktail
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8411),	-- Lung Juice Cocktail
 					},
 				}),
 				q(25715, {	-- A Closer Look
@@ -278,18 +264,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								42296,	-- Shadowsworn Spellblade
 							},
 						}),
-						i(59378, {	-- Belt of Occult Horrors
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59376, {	-- Sandals of the Shadowsworn
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59379, {	-- Mahar's Gift
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59377, {	-- Spell Focus Shoulderguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59378),	-- Belt of Occult Horrors
+						i(59376),	-- Sandals of the Shadowsworn
+						i(59379),	-- Mahar's Gift
+						i(59377),	-- Spell Focus Shoulderguards
 					},
 				}),
 				q(25709, {	-- Curtail the Darktail
@@ -305,18 +283,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i", 57119 },	-- Enohar's Explosive Arrows
 							},
 						}),
-						i(59371, {	-- Bonepicker Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59369, {	-- Darktail Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59370, {	-- Enohar's Old Hunter Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59368, {	-- Gloves of Compassion
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59371),	-- Bonepicker Bracers
+						i(59369),	-- Darktail Belt
+						i(59370),	-- Enohar's Old Hunter Boots
+						i(59368),	-- Gloves of Compassion
 					},
 				}),
 				q(26186, {	-- Demoniac Vessel (A)
@@ -362,18 +332,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 42359 },	-- Okril'lon Infantry
 							["coord"] = { 53.0, 14.2, BLASTED_LANDS },
 						}),
-						i(59373, {	-- Nethergarde Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59374, {	-- Nethergarde Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59372, {	-- Nethergarde Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59375, {	-- Nethergarde Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59373),	-- Nethergarde Belt
+						i(59374),	-- Nethergarde Boots
+						i(59372),	-- Nethergarde Bracers
+						i(59375),	-- Nethergarde Gloves
 					},
 				}),
 				q(3501, {	-- Everything Counts In Large Amounts
@@ -479,9 +441,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
-						i(8423, {	-- Cerebral Cortex Compound
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8423),	-- Cerebral Cortex Compound
 					},
 				}),
 				q(25679, {	-- Into the Mountain
@@ -578,18 +538,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(59414, {	-- Boots of Attrition
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59416, {	-- Okrilla's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59415, {	-- Reporter's Shouldguards
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59417, {	-- Rockard Greaves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59414),	-- Boots of Attrition
+						i(59416),	-- Okrilla's Belt
+						i(59415),	-- Reporter's Shouldguards
+						i(59417),	-- Rockard Greaves
 					},
 				}),
 				q(25706, {	-- Neptool's Revenge
@@ -610,15 +562,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(4, {	-- 0/4 Bloodwash Idolater slain
 							["provider"] = { "n", 41405 },	-- Bloodwash Idolater
 						}),
-						i(59405, {	-- Bloodwash Ring
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59403, {	-- Gambler's Wrap
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59404, {	-- Rockpool Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59405),	-- Bloodwash Ring
+						i(59403),	-- Gambler's Wrap
+						i(59404),	-- Rockpool Belt
 					},
 				}),
 				q(28867, {	-- Nethergarde Needs You!
@@ -690,18 +636,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/5 Dreadmaul Warlock slain
 							["provider"] = { "n", 5978 },	-- Dreadmaul Warlock
 						}),
-						i(59407, {	-- Aitokk's Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59408, {	-- Boots of Intimidation
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59409, {	-- Dreadmaul Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59406, {	-- Gloves of Purchased Time
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59407),	-- Aitokk's Belt
+						i(59408),	-- Boots of Intimidation
+						i(59409),	-- Dreadmaul Bracers
+						i(59406),	-- Gloves of Purchased Time
 					},
 				}),
 				q(3502, {	-- One Draenei's Junk...
@@ -775,18 +713,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 41171 },	-- Reassuring Nethergarde Foreman
 							},
 						}),
-						i(59411, {	-- Belt of Cheapened Lives
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59412, {	-- Boots of Financial Victory
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59413, {	-- Business Handlers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59410, {	-- Rofilian's Armbands
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59411),	-- Belt of Cheapened Lives
+						i(59412),	-- Boots of Financial Victory
+						i(59413),	-- Business Handlers
+						i(59410),	-- Rofilian's Armbands
 					},
 				}),
 				{	-- Protecting Our Rear
@@ -827,9 +757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
-						i(8410, {	-- R.O.I.D.S.
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8410),	-- R.O.I.D.S.
 					},
 				}),
 				q(25713, {	-- Remove Their Arms
@@ -870,9 +798,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
-						i(8412, {	-- Ground Scorpok Assay
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8412),	-- Ground Scorpok Assay
 					},
 				}),
 				q(2581, {	-- Snickerfang Jowls
@@ -886,9 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 45,
 					["groups"] = {
-						i(8410, {	-- R.O.I.D.S.
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8410),	-- R.O.I.D.S.
 					},
 				}),
 				q(25681, {	-- Some People Just Need Killing
@@ -918,9 +842,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
-						i(8411, {	-- Lung Juice Cocktail
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8411),	-- Lung Juice Cocktail
 					},
 				}),
 				q(2604, {	-- Spiritual Domination
@@ -934,9 +856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["groups"] = {
-						i(8424, {	-- Gizzard Gum
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8424),	-- Gizzard Gum
 					},
 				}),
 				q(7583, {	-- Suppression
@@ -964,9 +884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						},
 						-- #endif
-						i(18602, {	-- Tome of Sacrifice
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(18602),	-- Tome of Sacrifice
 					},
 				}),
 				q(26175, {	-- Surwich
@@ -1005,21 +923,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 37.0, 28.6, BLASTED_LANDS },
 						}),
-						i(59390, {	-- Boots of Completed Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59387, {	-- Boots of Demonic Resurrection
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59389, {	-- Bracres of the Demonic Altar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59391, {	-- Helm of Storms
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59388, {	-- Loramus' Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59390),	-- Boots of Completed Rituals
+						i(59387),	-- Boots of Demonic Resurrection
+						i(59389),	-- Bracres of the Demonic Altar
+						i(59391),	-- Helm of Storms
+						i(59388),	-- Loramus' Gloves
 					},
 				}),
 				q(25688, {	-- The Altar of Storms (H)
@@ -1036,21 +944,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 37.0, 28.6, BLASTED_LANDS },
 						}),
-						i(59428, {	-- Boots of Completed Rituals
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59425, {	-- Boots of Demonic Resurrection
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59427, {	-- Bracers of the Demonic Altar
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59429, {	-- Helm of Storms
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59426, {	-- Loramus' Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59428),	-- Boots of Completed Rituals
+						i(59425),	-- Boots of Demonic Resurrection
+						i(59427),	-- Bracers of the Demonic Altar
+						i(59429),	-- Helm of Storms
+						i(59426),	-- Loramus' Gloves
 					},
 				}),
 				{	-- The Amulet of Allistarj
@@ -1091,18 +989,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
-						i(59381, {	-- Ogre-Hunter Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59382, {	-- Serpent Coils
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59380, {	-- Shattershore Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59383, {	-- Strengthening Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59381),	-- Ogre-Hunter Boots
+						i(59382),	-- Serpent Coils
+						i(59380),	-- Shattershore Cloak
+						i(59383),	-- Strengthening Belt
 					},
 				}),
 				q(25699, {	-- The Amulet of Grol (H)
@@ -1121,18 +1011,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
-						i(59419, {	-- Ogre-Hunter Boots
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59420, {	-- Serpent Coils
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59418, {	-- Shattershore Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59421, {	-- Strengthening Belt
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59419),	-- Ogre-Hunter Boots
+						i(59420),	-- Serpent Coils
+						i(59418),	-- Shattershore Cloak
+						i(59421),	-- Strengthening Belt
 					},
 				}),
 				{	-- The Amulet of Sevine
@@ -1165,9 +1047,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 45,
 					["groups"] = {
-						i(8423, {	-- Cerebral Cortex Compound
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8423),	-- Cerebral Cortex Compound
 					},
 				}),
 				{	-- The Charred Granite of the Dark Portal
@@ -1211,9 +1091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 45,
 					["groups"] = {
-						i(8412, {	-- Ground Scorpok Assay
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8412),	-- Ground Scorpok Assay
 					},
 				}),
 				q(25717, {	-- The Demons and the Druid
@@ -1260,21 +1138,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 34.9, 67.8, BLASTED_LANDS },
 						}),
-						i(59400, {	-- Shoulderguards of Tarnished Healing
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59402, {	-- Surwich Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59401, {	-- Surwich Pauldrons
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59400),	-- Shoulderguards of Tarnished Healing
+						i(59402),	-- Surwich Breastplate
+						i(59401),	-- Surwich Pauldrons
 						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
-						i(59399, {	-- Wormthorn Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59399),	-- Wormthorn Gloves
 					},
 				}),
 				q(25720, {	-- The Downfall of Marl Wormthorn (H)
@@ -1291,21 +1161,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 34.9, 67.8, BLASTED_LANDS },
 						}),
-						i(59439, {	-- Pauldrons of the Trove
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59438, {	-- Shoulderguards of Tarnished Healing
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59440, {	-- Sunveil Breastplate
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59439),	-- Pauldrons of the Trove
+						i(59438),	-- Shoulderguards of Tarnished Healing
+						i(59440),	-- Sunveil Breastplate
 						i(244777, {	-- Surwich Peddler's Wagon (DECOR!)
 							["timeline"] = { ADDED_11_2_7 },
 						}),
-						i(59437, {	-- Wormthorn Gloves
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59437),	-- Wormthorn Gloves
 					},
 				}),
 				q(25683, {	-- The Dreadmaul Furnace
@@ -1454,9 +1316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 45,
 					["groups"] = {
-						i(8424, {	-- Gizzard Gum
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(8424),	-- Gizzard Gum
 					},
 				}),
 				warchiefscommand(q(28671, {	-- Warchief's Command: Blasted Lands!
@@ -1497,15 +1357,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "o", 203225 },	-- Horde Plans
 							["coord"] = { 53.0, 49.0, BLASTED_LANDS },
 						}),
-						i(59394, {	-- Gloves of Foolish Innocence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59393, {	-- Harmless Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59395, {	-- Netherwane Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59394),	-- Gloves of Foolish Innocence
+						i(59393),	-- Harmless Bracers
+						i(59395),	-- Netherwane Cloak
 						i(59392, {	-- Rogue Star
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
@@ -1522,15 +1376,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "o", 203226 },	-- Alliance Plans
 							["coord"] = { 54.02, 50.16, BLASTED_LANDS },
 						}),
-						i(59433, {	-- Dar'toon's Cloak
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59432, {	-- Gloves of Foolish Innocence
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59431, {	-- Harmless Bracers
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59433),	-- Dar'toon's Cloak
+						i(59432),	-- Gloves of Foolish Innocence
+						i(59431),	-- Harmless Bracers
 						i(59430, {	-- Rogue Star
 							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
@@ -1573,15 +1421,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 47.6, 30.0, BLASTED_LANDS },
 							["cr"] = 7664,	-- Razelikh the Defiler
 						}),
-						i(10778, {	-- Necklace of Sanctuary
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10779, {	-- Demon's Blood
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10959, {	-- Demon Hide Sack
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10778),	-- Necklace of Sanctuary
+						i(10779),	-- Demon's Blood
+						i(10959),	-- Demon Hide Sack
 					},
 				}),
 				q(26171, {	-- You Are Rakh'likh, Demon (A)
@@ -1602,15 +1444,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
 						}),
-						i(59398, {	-- Band of Noble Deeds
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59397, {	-- Band of Sacrifice
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59396, {	-- Band of Selfless Acts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59398),	-- Band of Noble Deeds
+						i(59397),	-- Band of Sacrifice
+						i(59396),	-- Band of Selfless Acts
 					},
 				}),
 				q(25701, {	-- You Are Rakh'likh, Demon (H)
@@ -1631,15 +1467,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 44.8, 26.6, BLASTED_LANDS },
 						}),
-						i(59436, {	-- Band of Noble Deeds
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59435, {	-- Band of Sacrifice
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-						i(59434, {	-- Band of Selfless Acts
-							["timeline"] = { ADDED_4_0_3 },
-						}),
+						i(59436),	-- Band of Noble Deeds
+						i(59435),	-- Band of Sacrifice
+						i(59434),	-- Band of Selfless Acts
 					},
 				}),
 			}),

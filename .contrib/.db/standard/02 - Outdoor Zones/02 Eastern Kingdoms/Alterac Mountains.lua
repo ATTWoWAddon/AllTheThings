@@ -227,12 +227,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 2287 },	-- Crushridge Warmonger
 							["coord"] = { 38.0, 54.6, ALTERAC_MOUNTAINS },
 						}),
-						i(5249, {	-- Burning Sliver
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3763, {	-- Lunar Buckler
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(5249),	-- Burning Sliver
+						i(3763),	-- Lunar Buckler
 					},
 				}),
 				q(1712, {	-- Cyclonian
@@ -266,7 +262,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 1791,	-- The Windwatcher
 							["qg"] = 6176,	-- Bath'rah the Windwatcher
 							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-							["timeline"] = { REMOVED_4_0_3 },
 							["cost"] = {
 								{ "i", 4479, 8 },	-- Burning Charm
 								{ "i", 4481, 8 },	-- Cresting Charm
@@ -594,12 +589,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(2, {	-- 0/8 Syndicate Thief slain
 							["provider"] = { "n", 2241 },	-- Syndicate Thief
 						}),
-						i(3758, {	-- Crusader Belt
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3759, {	-- Insulated Sage Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3758),	-- Crusader Belt
+						i(3759),	-- Insulated Sage Gloves
 					},
 				}),
 				q(6701, {	-- Syndicate Emblems
@@ -622,12 +613,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["groups"] = {
-						i(3765, {	-- Brigand's Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(3764, {	-- Mantis Boots
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(3765),	-- Brigand's Pauldrons
+						i(3764),	-- Mantis Boots
 					},
 				}),
 				q(495, {	-- The Crown of Will (1/5)
@@ -706,9 +693,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 34,
 					["groups"] = {
-						i(4430, {	-- Ethereal Talisman
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4430),	-- Ethereal Talisman
 					},
 				}),
 				q(551, {	-- The Ensorcelled Parchment
@@ -792,9 +777,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
 							["cr"] = 2306,	-- Baron Vardus
 						}),
-						i(2231, {	-- Inferno Robe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(2231),	-- Inferno Robe
 					},
 				}),
 				q(1792, {	-- Whirlwind Weapon
@@ -805,15 +788,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["lvl"] = 30,
 					["groups"] = {
-						i(6975, {	-- Whirlwind Axe
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6977, {	-- Whirlwind Sword
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(6976, {	-- Whirlwind Warhammer
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(6975),	-- Whirlwind Axe
+						i(6977),	-- Whirlwind Sword
+						i(6976),	-- Whirlwind Warhammer
 					},
 				}),
 			}),
@@ -913,7 +890,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
 						i(13308, {	-- Schematic: Ice Deflector (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},

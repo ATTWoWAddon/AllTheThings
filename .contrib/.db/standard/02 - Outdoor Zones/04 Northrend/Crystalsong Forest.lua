@@ -59,7 +59,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							q(31932, {	-- Nearly Headless Jacob
 								["sourceAchievement"] = 6605,	-- Taming Northrend
-								["timeline"] = { ADDED_5_0_4 },
 								["isDaily"] = true,
 							}),
 						},

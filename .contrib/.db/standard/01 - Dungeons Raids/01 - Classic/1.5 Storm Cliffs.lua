@@ -32,36 +32,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_1_15_3 },
 				["modelScale"] = 6.0,
 				["groups"] = {
-					i(19130, {	-- Cold Snap
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18202, {	-- Eskhandar's Left Claw
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(17070, {	-- Fang of the Mystics
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18542, {	-- Typhoon
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(19132, {	-- Crystal Adorned Crown
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18208, {	-- Drape of Benediction
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18541, {	-- Puissant Cape
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18547, {	-- Unmelting Ice Girdle
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(18545, {	-- Leggings of Arcane Supremacy
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
-					i(19131, {	-- Snowblind Shoes
-						["timeline"] = { REMOVED_1_15_3 },
-					}),
+					i(19130),	-- Cold Snap
+					i(18202),	-- Eskhandar's Left Claw
+					i(17070),	-- Fang of the Mystics
+					i(18542),	-- Typhoon
+					i(19132),	-- Crystal Adorned Crown
+					i(18208),	-- Drape of Benediction
+					i(18541),	-- Puissant Cape
+					i(18547),	-- Unmelting Ice Girdle
+					i(18545),	-- Leggings of Arcane Supremacy
+					i(19131),	-- Snowblind Shoes
 				},
 			}),
 		},

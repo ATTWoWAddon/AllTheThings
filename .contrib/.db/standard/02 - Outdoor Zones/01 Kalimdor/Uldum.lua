@@ -196,7 +196,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						q(31971, {	-- Grand Master Obalis
 							["sourceAchievement"] = 7525,	-- Taming Cataclysm
-							["timeline"] = { ADDED_5_0_4 },
 							["isDaily"] = true,
 							["groups"] = {
 								i(89125),	-- Sack of Pet Supplies
@@ -591,7 +590,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["qg"] = 44833,	-- Adarrah
 					["coord"] = { 30.4, 65.5, TANARIS },
-					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(28132, {	-- Efficient Excavations
 					["sourceQuest"] = 27669,	-- Do the Honors
@@ -740,7 +738,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				heroscall(q(28558, {	-- Hero's Call: Uldum!
-					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 83,
@@ -1533,7 +1530,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				warchiefscommand(q(28557, {	-- Warchief's Command: Uldum!
-					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5

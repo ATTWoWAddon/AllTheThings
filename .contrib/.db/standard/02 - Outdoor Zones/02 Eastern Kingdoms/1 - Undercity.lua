@@ -262,9 +262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						i(7132, {	-- Brutal Legguards
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7132),	-- Brutal Legguards
 					},
 				}),
 				q(38395, {	-- Completionism
@@ -739,12 +737,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								9621,	-- Gargantuan Ooze
 							},
 						}),
-						i(15702, {	-- Chemist's Ring
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(15703, {	-- Chemist's Smock
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(15702),	-- Chemist's Ring
+						i(15703),	-- Chemist's Smock
 					},
 				}),
 				q(1885, {	-- Mennet Carkad
@@ -806,12 +800,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
-						i(20643, {	-- Undercity Reservist's Cap
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(20642, {	-- Antiquated Nobleman's Tunic
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(20643),	-- Undercity Reservist's Cap
+						i(20642),	-- Antiquated Nobleman's Tunic
 					},
 				}),
 				q(1959, {	-- Report to Anastasia
@@ -868,12 +858,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						i(10637, {	-- Brewer's Gloves
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(10638, {	-- Long Draping Cape
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(10637),	-- Brewer's Gloves
+						i(10638),	-- Long Draping Cape
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -1027,9 +1013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { MAGE },
 					["lvl"] = 15,
 					["groups"] = {
-						i(7510, {	-- Lesser Spellfire Robes
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7510),	-- Lesser Spellfire Robes
 					},
 				}),
 				q(29319, {	-- Tadpole Terror
@@ -1063,12 +1047,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["coord"] = { 77.4, 62.1, TIRISFAL_GLADES },
 						}),
-						i(7507, {	-- Arcane Orb
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(9514, {	-- Arcane Staff
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(7507),	-- Arcane Orb
+						i(9514),	-- Arcane Staff
 					},
 				}),
 				-- #if ANYCLASSIC
@@ -1089,9 +1069,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(713),	-- Summon Incubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				-- #endif
@@ -1112,9 +1090,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if BEFORE 4.0.3
 						recipe(712),	-- Summon Succubus
 						-- #endif
-						i(22243, {	-- Small Soul Pouch
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				q(1471, {	-- The Binding (Voidwalker) [Undercity]
@@ -1312,12 +1288,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 55.0, 40.0, ARATHI_HIGHLANDS },
 							["cr"] = 4479,	-- Fardel Dabyrie
 						}),
-						i(4443, {	-- Grim Pauldrons
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
-						i(2032, {	-- Gallan Cuffs
-							["timeline"] = { REMOVED_4_0_3 },
-						}),
+						i(4443),	-- Grim Pauldrons
+						i(2032),	-- Gallan Cuffs
 					},
 				}),
 				q(1999, {	-- Tools of the Trade
@@ -1455,9 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["modelScale"] = 1.3,
 					["icon"] = 1041430,
 					["groups"] = {
-						i(122233, {	-- Music Roll: Lament of the Highborne
-							["timeline"] = { ADDED_6_1_0 },
-						}),
+						i(122233),	-- Music Roll: Lament of the Highborne
 					},
 				}),
 			}),
@@ -1536,9 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}, {	-- Friendly
 						}, {	-- Honored
 						}, {	-- Revered
-							i(67529, {	-- Undercity Satchel
-								["timeline"] = { ADDED_4_0_3 },
-							}),
+							i(67529),	-- Undercity Satchel
 						}, {	-- Exalted
 							i(64921, {	-- Cape of Undercity
 								["timeline"] = { ADDED_4_0_1 },
@@ -1660,18 +1628,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						}),
 						n(HEIRLOOMS, {
-							gold(500, i(122338, {	-- Ancient Heirloom Armor Casing
-								["timeline"] = { ADDED_6_1_0 },
-							})),
-							gold(750, i(122339, {	-- Ancient Heirloom Scabbard
-								["timeline"] = { ADDED_6_1_0 },
-							})),
-							gold(1000, i(122340, {	-- Timeworn Heirloom Armor Casing
-								["timeline"] = { ADDED_6_1_0 },
-							})),
-							gold(1500, i(122341, {	-- Timeworn Heirloom Scabbard
-								["timeline"] = { ADDED_6_1_0 },
-							})),
+							gold(500, i(122338)),	-- Ancient Heirloom Armor Casing
+							gold(750, i(122339)),	-- Ancient Heirloom Scabbard
+							gold(1000, i(122340)),	-- Timeworn Heirloom Armor Casing
+							gold(1500, i(122341)),	-- Timeworn Heirloom Scabbard
 							gold(2000, i(151614, {	-- Weathered Heirloom Armor Casing
 								["timeline"] = { ADDED_7_2_5 },
 							})),

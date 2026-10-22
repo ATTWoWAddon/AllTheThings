@@ -23,7 +23,6 @@ profession(LEATHERWORKING, {
 						-- #endif
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Windhawk Hauberk",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35585,
 							["requireSkill"] = 10660,
 						}),
@@ -35,7 +34,6 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Windhawk Bracers",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35588,
 							["requireSkill"] = 10660,
 						}),
@@ -47,7 +45,6 @@ profession(LEATHERWORKING, {
 					["groups"] = {
 						applyclassicphase(TBC_PHASE_ONE, {
 							["name"] = "Windhawk Belt",
-							["timeline"] = { REMOVED_4_0_1 },
 							["recipeID"] = 35587
 						}),
 					},
