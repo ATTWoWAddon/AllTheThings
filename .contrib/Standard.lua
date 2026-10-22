@@ -8,26 +8,26 @@ Some examples
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
+root(ROOTS.Zones, m(SHADOWLANDS, {
 	m(ARDENWEALD, {
 	}),
-})));
+}))
 
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = TIMELINE_10_0_2_LAUNCH }, {
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1201, {	-- Algeth'ar Academy
 	}),
-})));
+}))
 
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 	n(ALLIED_RACES, {
 	}),
-})));
+}))
 
 There could of course be an exception to this, and you could put the bubbleDownSelf on the next header like this.
 -----------------------------------------------
