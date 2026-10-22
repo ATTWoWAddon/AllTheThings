@@ -2,6 +2,25 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local BJARNGRIM = 597;
+local VOLKHAN = 598;
+local IONAR = 599;
+local LOKEN = 600;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[BJARNGRIM] = { 28586 },	-- General Bjarngrim
+	[VOLKHAN] = { 28587 },	-- Volkhan
+	[IONAR] = { 28546 },	-- Ionar
+	[LOKEN] = { 28923 },	-- Loken
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(275, {	-- Halls of Lightning
 		["lore"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",
@@ -12,82 +31,97 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(486, {	-- Halls of Lightning
+					-- #if AFTER 7.3.5
 					crit(5455, {	-- General Bjarngrim
-						["_encounter"] = { 597, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { BJARNGRIM, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5456, {	-- Ionar
-						["_encounter"] = { 599, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { IONAR, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
 					}),
 					crit(5457, {	-- Volkhan
-						["_encounter"] = { 598, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { VOLKHAN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					crit(5458, {	-- Loken
+						["_encounter"] = { LOKEN, DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC },
+					}),
+					-- #else
+					crit(5455, {	-- General Bjarngrim
+						["_encounter"] = { BJARNGRIM, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5456, {	-- Ionar
+						["_encounter"] = { IONAR, DIFFICULTY.DUNGEON.NORMAL },
+					}),
+					crit(5457, {	-- Volkhan
+						["_encounter"] = { VOLKHAN, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
 					crit(5629, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { LOKEN, DIFFICULTY.DUNGEON.NORMAL },
 					}),
 					-- #else
 					crit(5458, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.NORMAL },
+						["_encounter"] = { LOKEN, DIFFICULTY.DUNGEON.NORMAL },
 					}),
+					-- #endif
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17299, {	-- Defense Protocol Alpha: Halls of Lightning
 					crit(57761, {	-- General Bjarngrim
-						["_encounter"] = { 597, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { BJARNGRIM, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57759, {	-- Volkhan
-						["_encounter"] = { 598, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { VOLKHAN, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57760, {	-- Ionar
-						["_encounter"] = { 599, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { IONAR, DEFENSE_PROTOCOL_ALPHA },
 					}),
 					crit(57756, {	-- Loken
-						["_encounter"] = { 600, DEFENSE_PROTOCOL_ALPHA },
+						["_encounter"] = { LOKEN, DEFENSE_PROTOCOL_ALPHA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18598, {	-- Defense Protocol Beta: Halls of Lightning
 					crit(60604, {	-- General Bjarngrim
-						["_encounter"] = { 597, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { BJARNGRIM, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60602, {	-- Volkhan
-						["_encounter"] = { 598, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { VOLKHAN, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60603, {	-- Ionar
-						["_encounter"] = { 599, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { IONAR, DEFENSE_PROTOCOL_BETA },
 					}),
 					crit(60601, {	-- Loken
-						["_encounter"] = { 600, DEFENSE_PROTOCOL_BETA },
+						["_encounter"] = { LOKEN, DEFENSE_PROTOCOL_BETA },
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19435, {	-- Defense Protocol Gamma: Halls of Lightning
 					crit(63353, {	-- General Bjarngrim
-						["_encounter"] = { 597, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { BJARNGRIM, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63349, {	-- Volkhan
-						["_encounter"] = { 598, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { VOLKHAN, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63350, {	-- Ionar
-						["_encounter"] = { 599, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { IONAR, DEFENSE_PROTOCOL_GAMMA },
 					}),
 					crit(63348, {	-- Loken
-						["_encounter"] = { 600, DEFENSE_PROTOCOL_GAMMA },
+						["_encounter"] = { LOKEN, DEFENSE_PROTOCOL_GAMMA },
 					}),
 				})),
 				-- #endif
 				ach(497, {	-- Heroic: Halls of Lightning
 					crit(6831, {	-- General Bjarngrim
-						["_encounter"] = { 597, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { BJARNGRIM, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6832, {	-- Ionar
-						["_encounter"] = { 599, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { IONAR, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(6833, {	-- Volkhan
-						["_encounter"] = { 598, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { VOLKHAN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 					crit(5616, {	-- Loken
-						["_encounter"] = { 600, DIFFICULTY.DUNGEON.HEROIC },
+						["_encounter"] = { LOKEN, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}),
 			}),
@@ -180,269 +214,206 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(42780),	-- Relics of Ulduar
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(37858),	-- Awakened Handguards
+					i(36999),	-- Boots of the Terrestrial Guardian
+					i(37857),	-- Helm of the Lightning Halls
+					i(37856),	-- Librarian's Paper Cutter
+					i(42780),	-- Relics of Ulduar
+					i(36997),	-- Sash of the Hardened Watcher
+					i(37000),	-- Storming Vortex Bracers
+				}),
+				BossOnly(BJARNGRIM, {
+					i(36979),	-- Bjarngrim Family Signet
+					i(36980),	-- Hewn Sparring Quarterstaff
+					i(37814),	-- Iron Dwarf Smith Pauldrons
+					i(36982),	-- Mantle of Electrical Charges
+					i(37818),	-- Patroller's War-Kilt
+					i(157580, { ["timeline"] = { ADDED_7_3_5 } }),	-- Spark of the Forge
+					i(37826),	-- The General's Steel Girdle
+					i(37825),	-- Traditionally Dyed Handguards
+				}),
+				BossOnly(VOLKHAN, {
+					i(37842),	-- Belt of Vivacity
+					i(36983),	-- Cape of Seething Steam
+					i(36984),	-- Eternally Folded Blade
+					i(37843),	-- Giant-Hair Woven Gloves
+					i(36986),	-- Kilt of Molten Golems
+					i(37840),	-- Shroud of Reverberation
+					i(37841),	-- Slag Footguards
+					i(157579, { ["timeline"] = { ADDED_7_3_5 } }),	-- Slag-Stained Legplates
+					i(36985),	-- Volkhan's Hood
+				}),
+				BossOnly(IONAR, {
+					i(37846),	-- Charged-Bolt Grips
+					i(37845),	-- Cord of Swirling Winds
+					i(39535),	-- Ionar's Girdle
+					i(39534),	-- Pauldrons of the Lightning Revenant
+					i(37847),	-- Skywall Striders
+					i(39536),	-- Thundercloud Grasps
+					i(39657),	-- Tornado Cuffs
+					i(37844),	-- Winged Talisman
+				}),
+				BossOnly(LOKEN, {
+					i(37853),	-- Advanced Tooled-Leather Bands
+					i(36989),	-- Ancient Measuring Rod
+					i(36988),	-- Chaotic Spiral Amulet
+					i(37852),	-- Colossal Skull-Clad Cleaver
+					i(41799),	-- Design: Eternal Earthsiege Diamond (RECIPE!)
+					i(36995),	-- Fists of Loken
+					i(37850),	-- Flowing Sash of Order
+					i(36996),	-- Hood of the Furtive Assassin
+					i(36992),	-- Leather-Braced Chain Leggins
+					i(37848),	-- Lightning Giant Staff
+					i(37855),	-- Mail Girdle of the Audient Earth
+					i(122237, { ["timeline"] = { ADDED_6_1_0 } }),	-- Music Roll: Mountains of Thunder
+					i(37851),	-- Ornate Woolen Stola
+					i(37849),	-- Planetary Helm
+					i(36994),	-- Projectile Activator
+					i(36991),	-- Raiments of the Titans
+					i(36993),	-- Seal of the Pantheon
+					i(37854),	-- Woven Bracae Leggings
+				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(BJARNGRIM, {
+					i(36981, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Hardened Vrykul Throwing Axe
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(BJARNGRIM, {
+					ach(1834),	-- Lightning Struck
+				}),
+				BossOnly(VOLKHAN, {
+					ach(2042),	-- Shatter Resistant
+				}),
+				BossOnly(IONAR),
+				BossOnly(LOKEN, {
+					i(43724, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Celestial Ruby Ring (QI!)
+					--
+					ach(5103, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Halls of Lightning Guild Run
+					ach(1867),	-- Timely Death
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(42780),	-- Relics of Ulduar
+				}),
+				BossOnly(LOKEN, {
+					i(41799),	-- Design: Eternal Earthsiege Diamond (RECIPE!)
+					i(122237, { ["timeline"] = { ADDED_6_1_0 } }),	-- Music Roll: Mountains of Thunder
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
 				n(ZONE_DROPS, {
 					i(36999),	-- Boots of the Terrestrial Guardian
 					i(36997),	-- Sash of the Hardened Watcher
 					i(37000),	-- Storming Vortex Bracers
 				}),
-				e(597, {	-- General Bjarngrim
-					["creatureID"] = 28586,	-- General Bjarngrim
-					["groups"] = {
-						i(36980),	-- Hewn Sparring Quarterstaff
-						i(157580, {	-- Spark of the Forge
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						-- #if AFTER 7.3.5
-						i(37814),	-- Iron Dwarf Smith Pauldrons (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36982),	-- Mantle of Electrical Charges
-						-- #if AFTER 7.3.5
-						i(37825),	-- Traditionally Dyed Handguards (7.3.5 - Used to be only Heroic Mode)
-						i(37826),	-- The General's Steel Girdle (7.3.5 - Used to be only Heroic Mode)
-						i(37818),	-- Patroller's War-Kilt (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36979),	-- Bjarngrim Family Signet
-						i(36981, {	-- Hardened Vrykul Throwing Axe
-							["timeline"] = { REMOVED_5_0_4 },
-						}),
-					},
+				BossOnly(BJARNGRIM, {
+					i(36979),	-- Bjarngrim Family Signet
+					i(36981, { ["timeline"] = { REMOVED_5_0_4 } }),	-- Hardened Vrykul Throwing Axe
+					i(36980),	-- Hewn Sparring Quarterstaff
+					i(36982),	-- Mantle of Electrical Charges
 				}),
-				e(598, {	-- Volkhan
-					["creatureID"] = 28587,	-- Volkhan
-					["groups"] = {
-						i(36984),	-- Eternally Folded Blade
-						i(36985),	-- Volkhan's Hood
-						i(36983),	-- Cape of Seething Steam
-						-- #if AFTER 7.3.5
-						i(37840),	-- Shroud of Reverberation (7.3.5 - Used to be only Heroic Mode)
-						i(37843),	-- Giant-Hair Woven Gloves (7.3.5 - Used to be only Heroic Mode)
-						i(37842),	-- Belt of Vivacity (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36986),	-- Kilt of Molten Golems
-						-- #if AFTER 7.3.5
-						i(157579, {	-- Slag-Stained Legplates
-							["timeline"] = { ADDED_7_3_5 },
-						}),
-						i(37841),	-- Slag Footguards (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(VOLKHAN, {
+					i(36983),	-- Cape of Seething Steam
+					i(36984),	-- Eternally Folded Blade
+					i(36986),	-- Kilt of Molten Golems
+					i(36985),	-- Volkhan's Hood
 				}),
-				e(599, {	-- Ionar
-					["creatureID"] = 28546,	-- Ionar
-					["groups"] = {
-						i(39534),	-- Pauldrons of the Lightning Revenant
-						i(39657),	-- Tornado Cuffs
-						-- #if AFTER 7.3.5
-						i(37846),	-- Charged-Bolt Grips (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(39536),	-- Thundercloud Grasps
-						-- #if AFTER 7.3.5
-						i(37845),	-- Cord of Swirling Winds (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(39535),	-- Ionar's Girdle
-						-- #if AFTER 7.3.5
-						i(37847),	-- Skywall Striders (7.3.5 - Used to be only Heroic Mode)
-						i(37844),	-- Winged Talisman (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-					},
+				BossOnly(IONAR, {
+					i(39535),	-- Ionar's Girdle
+					i(39534),	-- Pauldrons of the Lightning Revenant
+					i(39536),	-- Thundercloud Grasps
+					i(39657),	-- Tornado Cuffs
 				}),
-				e(600, {	-- Loken
-					["creatureID"] = 28923,	-- Loken
-					["groups"] = {
-						i(41799),	-- Design: Eternal Earthsiege Diamond (RECIPE!)
-						-- #if AFTER 7.3.5
-						i(37848),	-- Lightning Giant Staff (7.3.5 - Used to be only Heroic Mode)
-						i(37852),	-- Colossal Skull-Clad Cleaver (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36989),	-- Ancient Measuring Rod
-						i(36994),	-- Projectile Activator
-						-- #if AFTER 7.3.5
-						i(37849),	-- Planetary Helm (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36988),	-- Chaotic Spiral Amulet
-						i(36996),	-- Hood of the Furtive Assassin
-						i(36991),	-- Raiments of the Titans
-						-- #if AFTER 7.3.5
-						i(37851),	-- Ornate Woolen Stola (7.3.5 - Used to be only Heroic Mode)
-						i(37853),	-- Advanced Tooled-Leather Bands (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36995),	-- Fists of Loken
-						-- #if AFTER 7.3.5
-						i(37850),	-- Flowing Sash of Order (7.3.5 - Used to be only Heroic Mode)
-						i(37855),	-- Mail Girdle of the Audient Earth (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36992),	-- Leather-Braced Chain Leggins
-						-- #if AFTER 7.3.5
-						i(37854),	-- Woven Bracae Leggings (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(36993),	-- Seal of the Pantheon
-						i(122237, {	-- Music Roll: Mountains of Thunder
-							["timeline"] = { ADDED_6_1_0 },
-						}),
-					},
+				BossOnly(LOKEN, {
+					i(36989),	-- Ancient Measuring Rod
+					i(36988),	-- Chaotic Spiral Amulet
+					i(36995),	-- Fists of Loken
+					i(36996),	-- Hood of the Furtive Assassin
+					i(36992),	-- Leather-Braced Chain Leggins
+					i(36994),	-- Projectile Activator
+					i(36991),	-- Raiments of the Titans
+					i(36993),	-- Seal of the Pantheon
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				["lvl"] = lvlsquish(80, 80, 30),
-				["groups"] = {
-					n(ZONE_DROPS, {
-						i(37858),	-- Awakened Handguards
-						i(37857),	-- Helm of the Lightning Halls
-						i(37856),	-- Librarian's Paper Cutter
-					}),
-					-- #if BEFORE CATA
-					n(COMMON_BOSS_DROPS, {
-						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
-						}),
-					}),
-					-- #endif
-					e(597, {	-- General Bjarngrim
-						["creatureID"] = 28586,	-- General Bjarngrim
-						["groups"] = {
-							ach(1834),	-- Lightning Struck
-							-- #if AFTER 7.3.5
-							i(36980),	-- Hewn Sparring Quarterstaff (7.3.5 - Used to be only Normal Mode)
-							i(157580, {	-- Spark of the Forge
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							-- #endif
-							i(37814),	-- Iron Dwarf Smith Pauldrons
-							-- #if AFTER 7.3.5
-							i(36982),	-- Mantle of Electrical Charges (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37825),	-- Traditionally Dyed Handguards
-							i(37826),	-- The General's Steel Girdle
-							i(37818),	-- Patroller's War-Kilt
-							-- #if AFTER 7.3.5
-							i(36979),	-- Bjarngrim Family Signet (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-						},
-					}),
-					e(598, {	-- Volkhan
-						["creatureID"] = 28587,	-- Volkhan
-						["groups"] = {
-							ach(2042),	-- Shatter Resistant
-							-- #if AFTER 7.3.5
-							i(36984),	-- Eternally Folded Blade (7.3.5 - Used to be only Normal Mode)
-							i(36985),	-- Volkhan's Hood (7.3.5 - Used to be only Normal Mode)
-							i(36983),	-- Cape of Seething Steam (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37840),	-- Shroud of Reverberation
-							i(37843),	-- Giant-Hair Woven Gloves
-							i(37842),	-- Belt of Vivacity
-							-- #if AFTER 7.3.5
-							i(36986),	-- Kilt of Molten Golems (7.3.5 - Used to be only Normal Mode)
-							i(157579, {	-- Slag-Stained Legplates
-								["timeline"] = { ADDED_7_3_5 },
-							}),
-							-- #endif
-							i(37841),	-- Slag Footguards
-						},
-					}),
-					e(599, {	-- Ionar
-						["creatureID"] = 28546,	-- Ionar
-						["groups"] = {
-							-- #if AFTER 7.3.5
-							i(39534),	-- Pauldrons of the Lightning Revenant (7.3.5 - Used to be only Normal Mode)
-							i(39657),	-- Tornado Cuffs (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37846),	-- Charged-Bolt Grips
-							-- #if AFTER 7.3.5
-							i(39536),	-- Thundercloud Grasps (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37845),	-- Cord of Swirling Winds
-							-- #if AFTER 7.3.5
-							i(39535),	-- Ionar's Girdle (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37847),	-- Skywall Striders
-							i(37844),	-- Winged Talisman
-						},
-					}),
-					e(600, {	-- Loken
-						["creatureID"] = 28923,	-- Loken
-						["groups"] = {
-							ach(5103, {	-- Heroic: Halls of Lightning Guild Run
-								["timeline"] = { ADDED_4_0_3 },
-							}),
-							ach(1867),	-- Timely Death
-							i(41799),	-- Design: Eternal Earthsiege Diamond (RECIPE!)
-							i(37848),	-- Lightning Giant Staff
-							i(37852),	-- Colossal Skull-Clad Cleaver
-							-- #if AFTER 7.3.5
-							i(36989),	-- Ancient Measuring Rod (7.3.5 - Used to be only Normal Mode)
-							i(36994),	-- Projectile Activator (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37849),	-- Planetary Helm
-							-- #if AFTER 7.3.5
-							i(36988),	-- Chaotic Spiral Amulet (7.3.5 - Used to be only Normal Mode)
-							i(36996),	-- Hood of the Furtive Assassin (7.3.5 - Used to be only Normal Mode)
-							i(36991),	-- Raiments of the Titans (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37851),	-- Ornate Woolen Stola
-							i(37853),	-- Advanced Tooled-Leather Bands
-							-- #if AFTER 7.3.5
-							i(36995),	-- Fists of Loken (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37850),	-- Flowing Sash of Order
-							i(37855),	-- Mail Girdle of the Audient Earth
-							-- #if AFTER 7.3.5
-							i(36992),	-- Leather-Braced Chain Leggins (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(37854),	-- Woven Bracae Leggings
-							-- #if AFTER 7.3.5
-							i(36993),	-- Seal of the Pantheon (7.3.5 - Used to be only Normal Mode)
-							-- #endif
-							i(122237, {	-- Music Roll: Mountains of Thunder
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-							-- #if BEFORE 4.0.1
-							i(43724),	-- Celestial Ruby Ring
-							-- #endif
-						},
-					}),
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { ["lvl"] = lvlsquish(80, 80, 30) }).AddGroups({
+				n(ZONE_DROPS, {
+					i(37858),	-- Awakened Handguards
+					i(37857),	-- Helm of the Lightning Halls
+					i(37856),	-- Librarian's Paper Cutter
+				}),
+				CommonBossDrops({
+					currency(101, { ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Emblem of Heroism
+				}),
+				BossOnly(BJARNGRIM, {
+					ach(1834),	-- Lightning Struck
+					i(37814),	-- Iron Dwarf Smith Pauldrons
+					i(37818),	-- Patroller's War-Kilt
+					i(37826),	-- The General's Steel Girdle
+					i(37825),	-- Traditionally Dyed Handguards
+				}),
+				BossOnly(VOLKHAN, {
+					ach(2042),	-- Shatter Resistant
+					i(37842),	-- Belt of Vivacity
+					i(37843),	-- Giant-Hair Woven Gloves
+					i(37840),	-- Shroud of Reverberation
+					i(37841),	-- Slag Footguards
+				}),
+				BossOnly(IONAR, {
+					i(37846),	-- Charged-Bolt Grips
+					i(37845),	-- Cord of Swirling Winds
+					i(37847),	-- Skywall Striders
+					i(37844),	-- Winged Talisman
+				}),
+				BossOnly(LOKEN, {
+					i(43724, { ["timeline"] = { REMOVED_4_0_1 } }),	-- Celestial Ruby Ring (QI!)
+					--
+					ach(5103, { ["timeline"] = { ADDED_4_0_3 } }),	-- Heroic: Halls of Lightning Guild Run
+					ach(1867),	-- Timely Death
+					i(37853),	-- Advanced Tooled-Leather Bands
+					i(37852),	-- Colossal Skull-Clad Cleaver
+					i(37850),	-- Flowing Sash of Order
+					i(37848),	-- Lightning Giant Staff
+					i(37855),	-- Mail Girdle of the Audient Earth
+					i(37851),	-- Ornate Woolen Stola
+					i(37849),	-- Planetary Helm
+					i(37854),	-- Woven Bracae Leggings
+				}),
 			}),
+			-- #endif
 			-- #if ANYCLASSIC
 			applyclassicphase(WRATH_PHASE_TWO, n(DEFENSE_PROTOCOL_ALPHA, {
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(394441, 413078, 424205),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(597, {	-- General Bjarngrim
-						["creatureID"] = 28586,	-- General Bjarngrim
-						["groups"] = {
-							i(39189),	-- Boots of Persistence
-							i(39192),	-- Gloves of Dark Gestures
-							i(39141),	-- Deflection Band
-						},
+					BossOnly(BJARNGRIM, {
+						i(39189),	-- Boots of Persistence
+						i(39141),	-- Deflection Band
+						i(39192),	-- Gloves of Dark Gestures
 					}),
-					e(598, {	-- Volkhan
-						["creatureID"] = 28587,	-- Volkhan
-						["groups"] = {
-							i(39188),	-- Chivalric Chestguard
-							i(39140),	-- Knife of Incision
-							i(39191),	-- Splint-Bound Leggings
-						},
+					BossOnly(VOLKHAN, {
+						i(39188),	-- Chivalric Chestguard
+						i(39140),	-- Knife of Incision
+						i(39191),	-- Splint-Bound Leggings
 					}),
-					e(599, {	-- Ionar
-						["creatureID"] = 28546,	-- Ionar
-						["groups"] = {
-							i(39139),	-- Ravaging Sabatons
-							i(39190),	-- Agonal Sash
-							i(39146),	-- Collar of Dissolution
-						},
+					BossOnly(IONAR, {
+						i(39190),	-- Agonal Sash
+						i(39146),	-- Collar of Dissolution
+						i(39139),	-- Ravaging Sabatons
 					}),
-					e(600, {	-- Loken
-						["creatureID"] = 28923,	-- Loken
-						["groups"] = {
-							i(40526),	-- Gown of the Spell-Weaver
-							i(40426),	-- Signet of the Accord
-							i(40488),	-- Ice Spire Scepter
-						},
+					BossOnly(LOKEN, {
+						i(40526),	-- Gown of the Spell-Weaver
+						i(40488),	-- Ice Spire Scepter
+						i(40426),	-- Signet of the Accord
 					}),
 				},
 			})),
@@ -450,34 +421,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(413078, 424205),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(597, {	-- General Bjarngrim
-						["creatureID"] = 28586,	-- General Bjarngrim
-						["groups"] = {
-							i(46347),	-- Cloak of the Dormant Blaze
-							i(46341),	-- Drape of the Spellweaver
-						},
+					BossOnly(BJARNGRIM, {
+						i(46347),	-- Cloak of the Dormant Blaze
+						i(46341),	-- Drape of the Spellweaver
 					}),
-					e(598, {	-- Volkhan
-						["creatureID"] = 28587,	-- Volkhan
-						["groups"] = {
-							i(46342),	-- Golemheart Longbow
-							i(46343),	-- Fervor of the Protectorate
-						},
+					BossOnly(VOLKHAN, {
+						i(46343),	-- Fervor of the Protectorate
+						i(46342),	-- Golemheart Longbow
 					}),
-					e(599, {	-- Ionar
-						["creatureID"] = 28546,	-- Ionar
-						["groups"] = {
-							i(46344),	-- Iceshear Mantle
-							i(45677),	-- Treacherous Shoulderpads
-						},
+					BossOnly(IONAR, {
+						i(46344),	-- Iceshear Mantle
+						i(45677),	-- Treacherous Shoulderpads
 					}),
-					e(600, {	-- Loken
-						["creatureID"] = 28923,	-- Loken
-						["groups"] = {
-							i(45680),	-- Armbands of the Construct
-							i(45676),	-- Chestplate of Vicious Potency
-							i(46350),	-- Pillar of Fortitude
-						},
+					BossOnly(LOKEN, {
+						i(45680),	-- Armbands of the Construct
+						i(45676),	-- Chestplate of Vicious Potency
+						i(46350),	-- Pillar of Fortitude
 					}),
 				},
 			})),
@@ -485,30 +444,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(424205),
 				["lvl"] = lvlsquish(80, 80, 30),
 				["groups"] = {
-					e(597, {	-- General Bjarngrim
-						["creatureID"] = 28586,	-- General Bjarngrim
-						["groups"] = {
-
-						},
-					}),
-					e(598, {	-- Volkhan
-						["creatureID"] = 28587,	-- Volkhan
-						["groups"] = {
-
-						},
-					}),
-					e(599, {	-- Ionar
-						["creatureID"] = 28546,	-- Ionar
-						["groups"] = {
-
-						},
-					}),
-					e(600, {	-- Loken
-						["creatureID"] = 28923,	-- Loken
-						["groups"] = {
-
-						},
-					}),
+					BossOnly(BJARNGRIM),
+					BossOnly(VOLKHAN),
+					BossOnly(IONAR),
+					BossOnly(LOKEN),
 				},
 			})),
 			-- #endif

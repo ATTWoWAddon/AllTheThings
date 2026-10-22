@@ -3683,20 +3683,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(95827, {	-- Blighted Bloom Bites
 			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
-			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["qg"] = 262791,	-- Nomi
+			["coord"] = { 43.6, 68.6, FELWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
-			["qi"] = 271052,	-- Blighted Bloom (QI!)
 			["groups"] = {
+				o(644614, {	-- Blighted Bloom
+					i(271052),	-- Blighted Bloom (QI!)
+				}),
+				--
 				i(TRICKY_TREAT),
 				i(FELWOOD_FUDGE),
 			},
 		}),
 		q(95828, {	-- Felroot Crunch
 			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
-			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["qg"] = 262791,	-- Nomi
+			["coord"] = { 43.6, 68.6, FELWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["qi"] = 258217,	-- Honey Drops (QI!)
@@ -3707,8 +3710,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(95829, {	-- Rotleaf Wafers
 			["sourceQuest"] = 95826,	-- Sugar Run (Felwood)
-			["qg"] = 251989,	-- Nomi
-			--["coord"] = { x, y, MAP },
+			["qg"] = 262791,	-- Nomi
+			["coord"] = { 43.6, 68.6, FELWOOD },
 			["isDaily"] = true,
 			["timeline"] = { ADDED_12_1_5 },
 			["groups"] = {

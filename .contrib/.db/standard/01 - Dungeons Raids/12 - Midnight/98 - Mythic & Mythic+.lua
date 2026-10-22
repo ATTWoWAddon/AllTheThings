@@ -235,7 +235,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 			}),
 			ach(62445),	-- Midnight Keystone Explorer: Season 2
-			ach(62446),	-- Midnight Keystone Conqueror: Season 2
+			ach(62446, {	-- Midnight Keystone Conqueror: Season 2
+				title(663),	-- <Name> the Venomous
+			}),
 			ach(62447, {	-- Midnight Keystone Master: Season 2
 				i(276881),	-- Breath of Blight (MOUNT!)
 			}),
@@ -246,7 +248,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			ach(63690, bubbleDownSelf({ ["timeline"] = { ADDED_12_1_5, REMOVED_12_2_0 } }, {	-- Midnight Keystone Myth: Season 2
 				title(795),	-- <Name> the Venomous Contender
 			})),
-			ach(62436),	-- Venomous Hero: Midnight Season 2
+			ach(62436, {	-- Venomous Hero: Midnight Season 2
+				title(662),	-- <Name> the Venomous Hero
+			}),
 			-- Check the comment on previous season
 			ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
 				["_noautomation"] = true,

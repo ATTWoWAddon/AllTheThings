@@ -229,6 +229,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						-- This fight is was Alliance-only. We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						-- #if BEFORE 11.1.0
 						["races"] = ALLIANCE_ONLY,
+						-- #else if AFTER MID
+						["races"] = ALLIANCE_ONLY,
+						-- #else
 						-- #endif
 						["crs"] = { 128650 },	-- Chopper Redhook
 						["groups"] = {
@@ -242,7 +245,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(162541),	-- Band of the Roving Scalawag
 						},
 					}),
-					e(2133, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_11_0_2 } }, {	-- Sergeant Bainbridge [1st Encounter - Horde]
+					e(2133, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_11_0_2, ADDED_12_0_1_LAUNCH } }, {	-- Sergeant Bainbridge [1st Encounter - Horde]
 						-- This boss was removed in TWW season 1 and did not return when the season ended
 						-- This fight is Horde-only. We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = HORDE_ONLY,

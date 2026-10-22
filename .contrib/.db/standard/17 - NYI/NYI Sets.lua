@@ -11544,7 +11544,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 					}),
@@ -11578,9 +11577,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 					}),
 					cl(MONK, {
 						i(212042),	-- Gatecrasher's Mantle
@@ -11656,7 +11653,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 					}),
@@ -11690,9 +11686,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 					}),
 					cl(MONK, {
 						i(212042),	-- Gatecrasher's Mantle
@@ -11769,7 +11763,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 					}),
@@ -11803,9 +11796,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 					}),
 					cl(MONK, {
 						i(212042),	-- Gatecrasher's Mantle
@@ -11882,7 +11873,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 					}),
@@ -11916,9 +11906,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 					}),
 					cl(MONK, {
 						i(212042),	-- Gatecrasher's Mantle
@@ -12016,7 +12004,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 
@@ -12134,9 +12121,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 
 						-- Entire PvP set is also copied with this bonusID and same appearance
 						i(218476),	-- Forged Gladiator's Cloak
@@ -12402,7 +12387,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212060),	-- Drape of the Hypogeal Nemesis
 						i(212061),	-- Armguards of the Hypogeal Nemesis
 						i(212064),	-- Pantaloons of the Hypogeal Nemesis
-						i(212066),	-- Claws of the Hypogeal Nemesis
 						i(212067),	-- Talons of the Hypogeal Nemesis
 						i(212068),	-- Chestguard of the Hypogeal Nemesis
 
@@ -12520,9 +12504,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(212087),	-- Ward of Violet Rebirth
 						i(212088),	-- Bracelets of Violet Rebirth
 						i(212091),	-- Coattails of Violet Rebirth
-						i(212093),	-- Jeweled Gauntlets of Violet Rebirth
 						i(212094),	-- Slippers of Violet Rebirth
-						i(212095),	-- Runecoat of Violet Rebirth
 
 						-- Entire PvP set is also copied with this bonusID and same appearance
 						i(218476),	-- Forged Gladiator's Cloak

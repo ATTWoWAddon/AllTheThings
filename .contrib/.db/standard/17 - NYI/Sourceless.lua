@@ -30,10 +30,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(131848),	-- Beast Tracker's Bracers
 				i(131854),	-- Rockbitten Gloves
 			})),
-			-- 7.2.5
-			expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
-				i(150472),	-- Grips of Silent Justice
-			})),
 		}),
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
@@ -288,14 +284,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 	}),
 	n(WEAPONS, {
-		expansion(EXPANSION.MOP, {
-			-- 5.1.0
-			expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {
-				i(91498),	-- Malevolent Gladiator's Heavy Crossbow
-				i(91496),	-- Malevolent Gladiator's Touch of Defeat
-				i(91755),	-- Malevolent Gladiator's Baton of Light
-			})),
-		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
 			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
@@ -303,7 +291,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(107644),	-- Napmaster's Sleep Mask
 			})),
 		}),
-		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
+		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkaldd
 			-- 8.0.1
 			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- Drustvar items = Nazmir quest rewards
