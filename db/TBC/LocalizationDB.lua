@@ -4951,7 +4951,7 @@ local phases = {
 		description = "|cFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Zul'Aman.|r",
 		minimumBuildVersion = 20501,
-		buildVersion = 20508,
+		buildVersion = 20506,
 		state = 2,
 	},
 	[21] = {

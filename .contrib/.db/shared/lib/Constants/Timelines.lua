@@ -307,9 +307,12 @@ REMOVED_2_5_5_PHASE_2 = "removed 2.5.5.67511";			-- The Burning Crusade Classic 
 CREATED_2_5_6 = "created 2.5.6.68502";					-- The Burning Crusade Classic 2.5.6 launch on July 7th, 2026
 ADDED_2_5_6 = "added 2.5.6.68502";						-- The Burning Crusade Classic 2.5.6 launch on July 7th, 2026
 REMOVED_2_5_6 = "removed 2.5.6.68502";					-- The Burning Crusade Classic 2.5.6 launch on July 7th, 2026
-CREATED_2_5_6_PHASE_3 = "created 2.5.6.69110";			-- The Burning Crusade Classic 2.5.5 phase 3 launch on August 27th, 2026
-ADDED_2_5_6_PHASE_3 = "added 2.5.6.69110";				-- The Burning Crusade Classic 2.5.5 phase 3 launch on August 27th, 2026
-REMOVED_2_5_6_PHASE_3 = "removed 2.5.6.69110";			-- The Burning Crusade Classic 2.5.5 phase 3 launch on August 27th, 2026
+CREATED_2_5_6_PHASE_3 = "created 2.5.6.69110";			-- The Burning Crusade Classic 2.5.6 phase 3 launch on August 27th, 2026
+ADDED_2_5_6_PHASE_3 = "added 2.5.6.69110";				-- The Burning Crusade Classic 2.5.6 phase 3 launch on August 27th, 2026
+REMOVED_2_5_6_PHASE_3 = "removed 2.5.6.69110";			-- The Burning Crusade Classic 2.5.6 phase 3 launch on August 27th, 2026
+CREATED_2_5_6_PHASE_4 = "created 2.5.6.70006";			-- The Burning Crusade Classic 2.5.6 phase 4 launch on October 22nd, 2026
+ADDED_2_5_6_PHASE_4 = "added 2.5.6.70006";				-- The Burning Crusade Classic 2.5.6 phase 4 launch on October 22nd, 2026
+REMOVED_2_5_6_PHASE_4 = "removed 2.5.6.70006";			-- The Burning Crusade Classic 2.5.6 phase 4 launch on October 22nd, 2026
 --- DYNAMIC CLASSIC TIMELINES ---
 REMOVED_TBC_PHASE_TWO = REMOVED_2_5_5_PHASE_2;
 

@@ -89,7 +89,8 @@ mnt(41516,{b=1,itemID=32860,lvl=70,q=4})}}),
 q(11018,{cost={{"i",32464,40}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=186,sourceQuests={11014}}),
 q(11017,{cost={{"i",32468,40}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=182,sourceQuests={11014}}),
 q(11016,{cost={{"i",32470,35}},isDaily=1,maxReputation={1015,42000},qgs={23140},requireSkill=393,sourceQuests={11014}}),
-q(11015,{cost={{"i",32427,30}},isDaily=1,maxReputation={1015,42000},qgs={23140},sourceQuests={11014}}),
+q(11015,{isDaily=1,maxReputation={1015,42000},qgs={23140},sourceQuests={11014},g={
+qo(1,{cost={{"i",32427,30}}})}}),
 q(11111,{coords={
 [1955]={{67.6,18.4}}},minReputation={1015,42000},qgs={23463},sourceQuests={11107},g={
 mnt(41513,{b=1,itemID=32857,lvl=70,q=4})}}),
@@ -130,7 +131,8 @@ q(11097,{coords={
 [1948]={{56.6,58.6}}},isDaily=1,maxReputation={1015,42000},minReputation={934,0},qgs={23434},sourceQuests={11095}}),
 q(11081,{description="The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines. You must be at least Friendly with Netherwing to loot them.",minReputation={1015,3000},qss={32726}}),
 q(11049,{coords={
-[1948]={{65.9,86.4}}},cost={{"i",32506,1}},qgs={23141},sourceQuests={11019}}),
+[1948]={{65.9,86.4}}},qgs={23141},sourceQuests={11019},g={
+qo(1,{cost={{"i",32506,1}}})}}),
 q(11075,{coords={
 [1948]={{66,86.4}}},minReputation={1015,3000},qgs={23140},sourceQuests={11053}}),
 q(11035,{coords={
