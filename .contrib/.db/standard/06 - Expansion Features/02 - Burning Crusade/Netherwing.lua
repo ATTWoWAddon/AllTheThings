@@ -301,8 +301,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					sourceQuest = 11014,	-- Enter the Taskmaster
 					qg = 23140,	-- Taskmaster Varkule Dragonbreath
 					maxReputation = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
-					cost = { { "i", 32427, 30 } },	-- Netherwing Crystals
 					isDaily = true,
+					groups = {
+						objective(1, {	-- 0/30 Netherwing Crystals
+							cost = { { "i", 32427, 30 } },	-- Netherwing Crystals
+						}),
+					},
 				}),
 				q(11111, {	-- Onyxien the Onyx Netherwing Drake
 					sourceQuest = 11107,	-- Bow to the Highlord
