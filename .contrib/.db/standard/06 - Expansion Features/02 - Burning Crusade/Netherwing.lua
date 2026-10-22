@@ -443,7 +443,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					sourceQuest = 11019,	-- Your Friend on the Inside
 					qg = 23141,	-- Yarzill the Merc
 					coord = { 65.9, 86.4, SHADOWMOON_VALLEY },
-					cost = { { "i", 32506, 1 } },	-- Netherwing Egg
+					groups = {
+						objective(1, {	-- 0/1 Netherwing Egg
+							cost = { { "i", 32506, 1 } },	-- Netherwing Egg
+						}),
+					},
 				}),
 				q(11075, {	-- The Netherwing Mines
 					sourceQuest = 11053,	-- Rise, Overseer!
