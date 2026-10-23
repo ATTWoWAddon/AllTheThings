@@ -14067,14 +14067,15 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.","[DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.",,64186,-1,-1,0,15522,0,5,1179648,37,136243,0,235115,0,0,0,0
 "Logged in during the 2026 BlizzCon celebration period.","BlizzCon 2026","Decor Reward: BlizzCon Doormat",63685,-1,-1,0,15274,0,0,134144,100,8198905,0,232154,0,0,0,0
 "Attain a Mythic+ Rating of at least 3600 during Midnight Season 2.","Midnight Keystone Myth: Season 2","Title: The Venomous Contender & Item: Timelost Saddle",63690,-1,-1,62449,15272,0,0,395264,250,648753,0,232362,0,0,0,0
-"Loot 50 Mislaid Treasures within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
 "Loot 10 Mislaid Treasures within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
-,"<Hidden> War Campaign Auto-Launch - Chapter 05",,13072,-1,-1,0,15284,0,0,1048576,104,136243,0,68750,0,0,0,0
-,"<Hidden> War Campaign Auto-Launch - Chapter 03",,13070,-1,-1,0,15284,0,0,1048576,102,136243,0,68744,0,0,0,0
+"Loot 50 Mislaid Treasures within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
 ,"<Hidden> War Campaign Auto-Launch - Chapter 04",,13071,-1,-1,0,15284,0,0,1048576,103,136243,0,68747,0,0,0,0
+,"<Hidden> War Campaign Auto-Launch - Chapter 03",,13070,-1,-1,0,15284,0,0,1048576,102,136243,0,68744,0,0,0,0
+,"<Hidden> War Campaign Auto-Launch - Chapter 05",,13072,-1,-1,0,15284,0,0,1048576,104,136243,0,68750,0,0,0,0
 ,"<Hidden> War Campaign Auto-Launch - Foothold 2",,13065,-1,-1,0,15284,0,0,1048576,97,136243,0,68733,0,0,0,0
 ,"<Hidden> War Campaign Auto-Launch - Chapter 02",,13069,-1,-1,0,15284,0,0,1048576,101,136243,0,68741,0,0,0,0
 "[DNT] Potatoad Egg Secret","[DNT] Potatoad Egg Secret",,64373,-1,-1,0,15541,0,0,1179652,40,6100921,251903,236760,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,61,6025441,0,170277,0,0,0,0
 "Complete a Tier 6 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 6 (Season 2)","Unlock: Tier 7 delves in The War Within",41198,-1,-1,41192,15531,0,0,133120,51,6025441,0,170267,0,0,0,0
 "Ask Brann to change his hat ten times after recovering it from the Underpin during the War Within Season 2.","The Hataclysm",,41531,-1,-1,0,15531,0,0,133120,37,5221397,0,206454,0,0,0,0
 "Complete the Delver's Journey before The War Within: Season 2 ends.","The War Within: Journey's End (Season 2)",,41709,-1,-1,0,15531,0,0,133120,33,6025441,0,207593,0,0,0,0
@@ -14086,7 +14087,6 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete a Tier 8 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 8 (Season 3)","Unlock: Tier 9 delves in The War Within",42200,-1,-1,42199,15531,0,0,133120,54,6025441,0,210486,0,0,0,0
 "Complete a Tier 9 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 9 (Season 3)","Unlock: Tier 10 delves in The War Within",42201,-1,-1,42200,15531,0,0,133120,56,6025441,0,210484,0,0,0,0
 "Complete a Tier 10 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 10 (Season 3)","Unlock: Tier 11 delves in The War Within",42202,-1,-1,42201,15531,0,0,133120,58,6025441,0,210482,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,60,6025441,0,210480,0,0,0,0
 "Purchase enough Titan Discs to unlock all of the skills in the Overcharged Titan Console.","Titan Console Overcharged","Mount: OC91 Chariot",42212,-1,-1,0,15531,0,0,133120,64,2000853,246237,210543,0,0,0,0
 "Complete the Delver's Journey before The War Within: Season 3 ends.","The War Within: Journey's End (Season 3)",,42801,-1,-1,0,15531,0,0,133120,34,6025441,0,212703,0,0,0,0
 "Remove credit and rewards for exploiting Hard Mode Delve Boss","Hotfix 99733 Tracking",,61343,-1,-1,0,15531,0,0,1048580,32,136243,0,0,0,0,0,0
@@ -14121,7 +14121,6 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete 3 chambers of Kindo'jan's Labyrinth on Tier 1.","The Labyrinth of Kindo'jan: Tier 1","Unlock: Tier 2 delves in Midnight Season 2",63863,-1,-1,0,15531,0,0,1181696,81,6025441,0,233716,0,0,0,0
 "Complete 3 chambers of Kindo'jan's Labyrinth on Tier 2.","The Labyrinth of Kindo'jan: Tier 2","Unlock: Tier 3 delves in Midnight Season 2",63864,-1,-1,0,15531,0,0,1181696,82,6025441,0,233720,0,0,0,0
 "Complete 3 chambers of Kindo'jan's Labyrinth on Tier 3.","The Labyrinth of Kindo'jan: Tier 3","Unlock: Tier 4 delves in Midnight Season 2",63865,-1,-1,0,15531,0,0,1181696,83,6025441,0,233718,0,0,0,0
-"Defeat Kindo'jan in his Labyrinth on Tier 11 without any other players in your party, before the first reset following his introduction.","Fabled Let Me Solo Him: Kindo'jan","Title: Fabled Vanquisher of The First Hash'ey",64039,-1,-1,0,15531,0,0,145408,31,1398085,0,234379,0,0,0,0
 "Defeat Kindo'jan in his Labyrinth without losing any lives on Tier 11 after completing all 9 chambers without any other players in your party during Midnight Season 2.","The Labyrinth of Kindo'jan: One-Champion Army","Title: Lone Raider",64118,-1,-1,0,15531,0,0,145408,27,8393517,0,234551,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy)","Reward: Loa-Blessed Wayfarer",64380,-1,-1,0,15531,0,0,1179652,25,8269989,283363,236817,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)","Reward: Loa-Blessed Wayfarer",64384,-1,-1,0,15531,0,0,1179652,26,8269989,280820,236819,0,0,0,0
@@ -14140,5 +14139,6 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete a Tier 7 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 7 (Season 2)","Unlock: Tier 7 delves in The War Within",41193,-1,-1,41198,15531,0,0,133120,53,6025441,0,170269,0,0,0,0
 "Complete a Tier 8 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 8 (Season 2)","Unlock: Tier 9 delves in The War Within",41194,-1,-1,41193,15531,0,0,133120,55,6025441,0,170271,0,0,0,0
 "Complete a Tier 9 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 9 (Season 2)","Unlock: Tier 10 delves in The War Within",41195,-1,-1,41194,15531,0,0,133120,57,6025441,0,170273,0,0,0,0
+"Complete a Tier 11 delve with lives remaining during The War Within Season 3.","War Within Delves: Tier 11 (Season 3)","Title: High Explorer",42203,-1,-1,42202,15531,0,0,133120,60,6025441,0,210480,0,0,0,0
 "Complete a Tier 10 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 10 (Season 2)","Unlock: Tier 11 delves in The War Within",41196,-1,-1,41195,15531,0,0,133120,59,6025441,0,170275,0,0,0,0
-"Complete a Tier 11 delve with lives remaining during The War Within Season 2.","War Within Delves: Tier 11 (Season 2)","Title: High Explorer",41197,-1,-1,41196,15531,0,0,133120,61,6025441,0,170277,0,0,0,0
+"Defeat Kindo'jan in his Labyrinth on Tier 11 without any other players in your party, before the second reset following his introduction.","Fabled Let Me Solo Him: Kindo'jan","Title: Fabled Vanquisher of The First Hash'ey",64039,-1,-1,0,15531,0,0,145408,31,1398085,0,234379,0,0,0,0

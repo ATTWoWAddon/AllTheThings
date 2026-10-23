@@ -1,7 +1,7 @@
 @echo off
 
 @REM Download Mists of Pandaria Classic database
-SET BUILD=5.5.4.70531
+SET BUILD=5.5.4.70579
 call :downloadlocalized HolidayNames
 exit /b
 

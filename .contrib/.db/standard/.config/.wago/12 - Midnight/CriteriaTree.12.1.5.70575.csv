@@ -113786,7 +113786,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223751,"gained reputation with Niffen",223750,1000,0,112763,0,1
 223753,,222664,1,0,112765,1,1
 223754,,222749,0,0,112766,1,0
-223755,"Complete Nebulous Voidcore Spent Tracking Quest",0,0,4,0,0,4096
 223756,,223755,0,0,112767,0,0
 223757,,215938,10,0,112768,8,0
 223768,"Eversong Woods",222112,0,0,112779,0,0
@@ -120037,7 +120036,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8923,"Complete the cooking achievements listed below.",0,0,4,0,0,0
 7572,"Defeat the bosses in the Trial of the Champion on Heroic Difficulty.",0,0,4,0,0,0
 35949,"Explore Shadowmoon Valley, revealing the covered areas of the world map.",0,0,4,0,0,0
-89605,"Evade the Tarragrue",0,0,4,0,0,2
 10705,"Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",0,0,4,0,0,0
 7516,"Fight Thorim with Sif involved.",0,0,4,0,0,0
 7510,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
@@ -120096,7 +120094,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18479,"Win 75 rated battlegrounds.",0,0,4,0,0,0
 20145,"Earn a battleground rating of 1100.",0,0,4,0,0,0
 16822,"Earn a battleground rating of 1500.",0,0,4,0,0,0
-40233,"Earned Gold Reward - Alliance",0,0,4,0,0,4096
 18290,"Win a Twin Peaks battle after being behind by a score of 0 to 2.",0,0,4,0,0,0
 20564,"Win 25 battles for Tol Barad.",0,0,4,0,0,0
 19607,"Earn exalted reputation with the classic battlegrounds listed below.",0,0,4,0,0,0
@@ -120156,11 +120153,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 162971,"High Seas Scenario - Bonus Objectives (Horde)",0,0,4,0,0,0
 83675,"Master of Deepwind Gorge",0,0,4,0,0,0
 33509,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 14",0,1,8,0,0,0
+38942,"Earn a Conqueror's Tribute",0,0,4,0,0,4096
 33528,"Successfully complete any of the Basic (Silver) trials at the Proving Grounds.",0,1,8,0,0,0
 33926,"Seat and serve as many customers as you can in 5 minutes",0,0,4,0,0,0
 157389,"Seat and serve as many customers as you can in 5 minutes",0,0,4,0,0,0
 33883,"Win 100 Arena (3v3) or 40 Rated Battlegrounds in Season 15",0,1,8,0,0,0
-89601,"Evade the Tarragrue",0,0,4,0,0,2
 33918,"(H) End PvP season 14 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
 157385,"Get a score of at least 30,000",0,0,4,0,0,0
 34564,"Obtain Legendary Cloak 5.0 (Hidden Tracking)",0,0,4,0,0,0
@@ -120229,11 +120226,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 41373,"Collect a Jewelcrafting Work Order",0,1,8,0,0,4096
 41376,"Collect a Leatherworking Work Order",0,1,8,0,0,4096
 41379,"Collect a Tailoring Work Order",0,1,8,0,0,4096
-38942,"Earn a Conqueror's Tribute",0,0,4,0,0,4096
 39168,"Nemesis selected",0,1,8,0,0,4096
 39849,"Achievement - Draenor Quest - Garrison Campaign - Alliance",0,0,4,0,0,0
 39832,"Achievement - Draenor Quest - Garrison Campaign - Horde",0,0,4,0,0,0
 39420,"Recruit Garrison Follower while in own Garrison - Horde",0,0,4,0,0,4096
+40233,"Earned Gold Reward - Alliance",0,0,4,0,0,4096
 40235,"Earn Gold Invasion - Horde",0,0,4,0,0,4096
 41531,"Defeat Remaining Shadowmoon Forces",0,0,4,0,0,0
 42563,"Complete The Real Big Race within 30 tolls.",0,1,8,0,0,0
@@ -120803,6 +120800,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89589,"Evade the Tarragrue",0,0,4,0,0,2
 89593,"Evade the Tarragrue",0,0,4,0,0,2
 89597,"Evade the Tarragrue",0,0,4,0,0,2
+89601,"Evade the Tarragrue",0,0,4,0,0,2
+89605,"Evade the Tarragrue",0,0,4,0,0,2
 89609,"Evade the Tarragrue",0,0,4,0,0,2
 89613,"Evade the Tarragrue",0,0,4,0,0,2
 89617,"Evade the Tarragrue",0,0,4,0,0,2
@@ -120949,7 +120948,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85425,"Complete the Terrors in Tirna Scithe World Quest or the Mists of Tirna Scithe Dungeon.",0,1,8,0,0,4096
 85431,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85434,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
-90864,"Jailer's forces defeated",0,300,9,0,0,1
 85437,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85443,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85446,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
@@ -121018,6 +121016,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90854,"Jailer's forces defeated",0,300,9,0,0,1
 90856,"Jailer's forces defeated",0,300,9,0,0,1
 90858,"Jailer's forces defeated",0,300,9,0,0,1
+90864,"Jailer's forces defeated",0,300,9,0,0,1
 90893,"Jailer's forces defeated",0,300,9,0,0,1
 90933,"Jailer's forces defeated",0,300,9,0,0,1
 90941,"Jailer's forces defeated",0,300,9,0,0,1
@@ -121296,7 +121295,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 152027,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152029,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152033,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
-168204,"Earthen Unlockable",0,1,4,0,0,0
 152035,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152037,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
 152039,"10.2 Dream - Complete Chp 1 - Profession Unlock - (POC)",0,0,4,0,0,4096
@@ -121362,6 +121360,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 219834,"Run Deephaul Ravine",0,0,4,0,0,4096
 162408,"Rare Creatures in Khaz Algar slain",0,4,5,0,0,4096
 168194,"Earthen Unlockable",0,1,4,0,0,0
+168204,"Earthen Unlockable",0,1,4,0,0,0
 163395,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 169774,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
 206223,"Bonus Event Weekend - Timewalking (Classic)",0,5,5,0,0,4096
@@ -121687,33 +121686,33 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234340,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234628,"Deposit Candy at your Neighborhood",0,0,4,0,0,4096
 234630,"Deposit Candy at your Neighborhood",0,0,4,0,0,4096
-235209,"12.1.5 Labyrinth - Intermission to End (No Boss) - TSH",0,0,4,0,0,0
 235210,"Speak to Kinduru to end your run",235209,1,0,118299,0,0
+235209,"12.1.5 Labyrinth - Intermission to End (No Boss) - TSH",0,0,4,0,0,0
 232360,"Rating Requirement",232359,3600,0,116981,0,2
 234285,"Mislaid Treasure looted.",0,1,5,0,0,8193
 233084,,233083,10,0,117213,0,0
 225236,,225233,4,0,113639,3,0
 225237,,225233,2,0,113638,2,0
-225561,"Vilebranch Necromancer defeated",225560,1,0,119154,0,0
 233106,"12.1.5 Labyrinth - Chamber 3a - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233105,"Undead Trollbunal slain",233104,1,0,119149,0,0
 233104,"12.1.5 Labyrinth - Chamber 2c - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233103,"Undead Trollbunal slain",233102,1,0,119149,0,0
 233102,"12.1.5 Labyrinth - Chamber 2b - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
-233101,"Undead Trollbunal slain",233100,1,0,119149,0,0
-233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233099,"Undead Trollbunal slain",233098,1,0,119149,0,0
 233098,"12.1.5 Labyrinth - Chamber 1a - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233101,"Undead Trollbunal slain",233100,1,0,119149,0,0
+233100,"12.1.5 Labyrinth - Chamber 2a - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233107,"Undead Trollbunal slain",233106,1,0,119149,0,0
+233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
+233109,"Undead Trollbunal slain",233108,1,0,119149,0,0
 233110,"12.1.5 Labyrinth - Chamber 3c - Scenario H - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233111,"Undead Trollbunal slain",233110,1,0,119149,0,0
 233112,"12.1.5 Labyrinth - Chamber 3d - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233113,"Undead Trollbunal slain",233112,1,0,119149,0,0
-233107,"Undead Trollbunal slain",233106,1,0,119149,0,0
-233108,"12.1.5 Labyrinth - Chamber 3b - Scenario J - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
-233109,"Undead Trollbunal slain",233108,1,0,119149,0,0
 233114,"12.1.5 Labyrinth - Chamber 3e - Scenario I - Spirit Bar Fill Boss - TSH",0,1,4,0,0,0
 233115,"Undead Trollbunal slain",233114,1,0,119149,0,0
-232954,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
+232953,"Sullied Revenant slain",232952,1,0,117044,0,0
+232949,"Sullied Revenant slain",232948,1,0,117044,0,0
 232436,"12.1.5 Labyrinth - Chamber 3a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
 232437,"Sullied Revenant slain",232436,1,0,117044,0,0
 232935,"12.1.5 Labyrinth - Chamber 1a - Scenario F - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
@@ -121721,11 +121720,10 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232944,"12.1.5 Labyrinth - Chamber 2a - Scenario C - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
 232945,"Sullied Revenant slain",232944,1,0,117044,0,0
 232948,"12.1.5 Labyrinth - Chamber 2b - Scenario A - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
-232949,"Sullied Revenant slain",232948,1,0,117044,0,0
 232950,"12.1.5 Labyrinth - Chamber 2c - Scenario A - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
 232951,"Sullied Revenant slain",232950,1,0,117044,0,0
 232952,"12.1.5 Labyrinth - Chamber 3a - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
-232953,"Sullied Revenant slain",232952,1,0,117044,0,0
+232954,"12.1.5 Labyrinth - Chamber 3b - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
 232955,"Sullied Revenant slain",232954,1,0,117044,0,0
 232956,"12.1.5 Labyrinth - Chamber 3c - Scenario C - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
 232957,"Sullied Revenant slain",232956,1,0,117044,0,0
@@ -121733,8 +121731,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232959,"Sullied Revenant slain",232958,1,0,117044,0,0
 232960,"12.1.5 Labyrinth - Chamber 3e - Scenario D - Vilebranch Bar Fill Boss - TSH",0,1,4,0,0,0
 232961,"Sullied Revenant Slain",232960,1,0,117044,0,0
-232685,"12.1.5 Labyrinth - Chamber 1a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
 232686,"Grukk slain",232685,1,0,119150,0,0
+232701,"12.1.5 Labyrinth - Chamber 3e - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
+232685,"12.1.5 Labyrinth - Chamber 1a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
 232687,"12.1.5 Labyrinth - Chamber 2a - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
 232688,"Grukk slain",232687,1,0,119150,0,0
 232689,"12.1.5 Labyrinth - Chamber 2b - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
@@ -121749,32 +121748,28 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232698,"Grukk slain",232697,1,0,119150,0,0
 232699,"12.1.5 Labyrinth - Chamber 3d - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
 232700,"Grukk slain",232699,1,0,119150,0,0
-232701,"12.1.5 Labyrinth - Chamber 3e - Spirits - Kill Boss - Generic Activity 07 (BAK)",0,1,4,0,0,0
 232702,"Grukk slain",232701,1,0,119150,0,0
+233477,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C -3a",0,1,4,0,0,0
+233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,4,0,0,0
 232424,"12.1.5 Labyrinth - Chamber 2a - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
 225291,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C",0,1,4,0,0,0
 224986,"12.1.5 Labyrinth - Chamber 3b - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-233477,"12.1.5 - Labyrinth Event- Kill Boss - 3D - Scenario C -3a",0,1,4,0,0,0
-233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,4,0,0,0
-232448,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-232449,"Jun'ala slain",232448,1,0,119154,0,0
-234561,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 04 - TSH",0,1,4,0,0,0
-234562,"Jun'ala slain",234561,1,0,119154,0,0
 225560,"12.1.5 Labyrinth - Chamber 1a - Scenario X - Restless Dead - Step 4",0,1,4,0,0,0
-232445,"Cynthra Buttonsmasher slain",232444,1,0,119152,0,0
+234562,"Jun'ala slain",234561,1,0,119154,0,0
+234561,"12.1.5 Labyrinth - Chamber 1a - Scenario M - Intro Quest Scenario - Step 04 - TSH",0,1,4,0,0,0
+232449,"Jun'ala slain",232448,1,0,119154,0,0
+232448,"12.1.5 Labyrinth - Chamber 3e - Vilebranch - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+225561,"Vilebranch Necromancer defeated",225560,1,0,119154,0,0
 232444,"12.1.5 Labyrinth - Chamber 3d - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-232441,"Cynthra Buttonsmasher slain",232440,1,0,119152,0,0
+232445,"Cynthra Buttonsmasher slain",232444,1,0,119152,0,0
 232440,"12.1.5 Labyrinth - Chamber 3c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-232433,"Cynthra Buttonsmasher slain",232432,1,0,119152,0,0
-232432,"12.1.5 Labyrinth - Chamber 2c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
 232429,"Cynthra Buttonsmasher slain",232428,1,0,119152,0,0
 232428,"12.1.5 Labyrinth - Chamber 2b - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-232421,"Cynthra Buttonsmasher slain",232420,1,0,119152,0,0
+232432,"12.1.5 Labyrinth - Chamber 2c - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
+232433,"Cynthra Buttonsmasher slain",232432,1,0,119152,0,0
 232420,"12.1.5 Labyrinth - Chamber 1a - Looters - Kill Boss - Generic Activity 01 (BAK)",0,1,4,0,0,0
-233039,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
-229068,"Chamber 2b - Scenario B - Defeat the Looter Excavator",0,1,4,0,0,0
-229069,"Drill Sergeant slain",229068,1,0,114817,0,0
-233040,"Drill Sergeant slain",233039,1,0,114817,0,0
+232441,"Cynthra Buttonsmasher slain",232440,1,0,119152,0,0
+232421,"Cynthra Buttonsmasher slain",232420,1,0,119152,0,0
 233045,"12.1.5 Labyrinth - Chamber 2b - Scenario D - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
 233046,"Drill Sergeant slain",233045,1,0,114817,0,0
 233048,"Drill Sergeant slain",233047,1,0,114817,0,0
@@ -121787,35 +121782,41 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233067,"12.1.5 Labyrinth - Chamber 3c - Scenario D - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
 233068,"Drill Sergeant slain",233067,1,0,114817,0,0
 233069,"12.1.5 Labyrinth - Chamber 3d - Scenario F - Looter Bar Fill Boss - TSH",0,0,4,0,0,0
+233070,"Drill Sergeant slain",233069,1,0,114817,0,0
 233071,"12.1.5 Labyrinth - Chamber 3e - Scenario E - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
 233072,"Drill Sergeant slain",233071,1,0,114817,0,0
-233070,"Drill Sergeant slain",233069,1,0,114817,0,0
-232253,"Defeat the King of Souls 3b-I",0,1,4,0,0,0
-232249,"Defeat the King of Souls 2c-G",0,1,4,0,0,0
-232258,"King of Souls defeated",232257,1,0,119156,0,0
-232254,"King of Souls defeated",232253,1,0,119156,0,0
+229068,"Chamber 2b - Scenario B - Defeat the Looter Excavator",0,1,4,0,0,0
+229069,"Drill Sergeant slain",229068,1,0,114817,0,0
+233039,"12.1.5 Labyrinth - Chamber 1a - Scenario G - Looter Bar Fill Boss - TSH",0,1,4,0,0,0
+233040,"Drill Sergeant slain",233039,1,0,114817,0,0
 232257,"Defeat the King of Souls 3c-G",0,1,4,0,0,0
-232238,"King of Souls defeated",232237,1,0,119156,0,0
-232241,"Defeat the King of Souls 2a-G",0,1,4,0,0,0
-232242,"King of Souls defeated",232241,1,0,119156,0,0
-232245,"Defeat the King of Souls 2b-G",0,1,4,0,0,0
-232246,"King of Souls defeated",232245,1,0,119156,0,0
-232266,"King of Souls defeated",232265,1,0,119156,0,0
-232265,"Defeat the King of Souls 3e-H",0,1,4,0,0,0
-232262,"King of Souls defeated",232261,1,0,119156,0,0
+232258,"King of Souls defeated",232257,1,0,119156,0,0
 232261,"Defeat the King of Souls 3d-I",0,1,4,0,0,0
+232262,"King of Souls defeated",232261,1,0,119156,0,0
+232265,"Defeat the King of Souls 3e-H",0,1,4,0,0,0
+232266,"King of Souls defeated",232265,1,0,119156,0,0
+232253,"Defeat the King of Souls 3b-I",0,1,4,0,0,0
+232254,"King of Souls defeated",232253,1,0,119156,0,0
+232249,"Defeat the King of Souls 2c-G",0,1,4,0,0,0
 232250,"King of Souls defeated",232249,1,0,119156,0,0
+232238,"King of Souls defeated",232237,1,0,119156,0,0
+232246,"King of Souls defeated",232245,1,0,119156,0,0
+232245,"Defeat the King of Souls 2b-G",0,1,4,0,0,0
+232242,"King of Souls defeated",232241,1,0,119156,0,0
+232241,"Defeat the King of Souls 2a-G",0,1,4,0,0,0
 232237,"Defeat the King of Souls 1a-I",0,1,4,0,0,0
 230847,"King of Souls defeated",230846,1,0,119156,0,0
 230846,"Defeat the King of Souls",0,1,4,0,0,0
-236760,"Player has quest 92518 flagged but doesn't have Potatoad Egg Toy unlock or in bag or bank",0,0,4,0,0,0
 236761,,236760,0,0,119334,0,0
-225292,"Sha'Kuro slain",225291,1,0,119153,0,0
+236760,"Player has quest 92518 flagged but doesn't have Potatoad Egg Toy unlock or in bag or bank",0,0,4,0,0,0
 224987,"Sha'Kuro slain",224986,1,0,119153,0,0
 232425,"Sha'Kuro slain",232424,1,0,119153,0,0
 233433,"Sha'Kuro slain",233432,1,0,119153,0,0
 233478,"Sha'Kuro slain",233477,1,0,119153,0,0
-236818,,236817,1,0,119348,0,2
-236817,"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
+225292,"Sha'Kuro slain",225291,1,0,119153,0,0
 236820,,236819,1,0,119349,0,2
 236819,"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
+236817,"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
+236818,,236817,1,0,119348,0,2
+236825,,223755,0,0,119352,1,0
+223755,"Complete Nebulous Voidcore Spent Tracking Quest",0,1,8,0,0,4096
