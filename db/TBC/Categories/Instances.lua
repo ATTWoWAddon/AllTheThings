@@ -924,7 +924,7 @@ i(19384,{b=1,f=52,lvl=60,q=4})}})}),
 h(-56,{
 o(180667,{awp=10900,coords={
 [287]={{32,42.9}}},description="Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",phase=15,rwp=40003,g={
-i(21109,{awp=10600,b=1,q=4})}})}),
+i(21109,{b=1,q=4})}})}),
 h(-63,{
 i(18562,{crs={13996,14401},q=4}),
 i(19434,{b=1,crs={12457,12459,12461},f=52,lvl=60,q=4}),
@@ -2629,20 +2629,20 @@ i(23037,{b=1,f=52,lvl=60,q=4}),
 i(23042,{b=1,f=53,lvl=60,q=4})})}}),
 h(-80,{icon=136225,g={
 n(16365,{awp=11101,lore="Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",g={
-i(22719,{awp=11100,b=1,description="Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",lvl=60,minReputation={529,21000},q=1}),
-r(28208,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=197}),
-r(28205,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=197}),
-r(28207,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=197}),
-r(28209,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=197}),
-r(28244,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=164}),
-r(28242,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=164}),
-r(28243,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=164}),
-r(28224,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=165}),
-r(28222,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=165}),
-r(28223,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=165}),
-r(28221,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=165}),
-r(28220,{awp=11100,learnedAt=300,minReputation={529,21000},requireSkill=165}),
-r(28219,{awp=11100,learnedAt=300,minReputation={529,42000},requireSkill=165})}}),
+i(22719,{b=1,description="Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",lvl=60,minReputation={529,21000},q=1}),
+r(28208,{learnedAt=300,minReputation={529,42000},requireSkill=197}),
+r(28205,{learnedAt=300,minReputation={529,21000},requireSkill=197}),
+r(28207,{learnedAt=300,minReputation={529,42000},requireSkill=197}),
+r(28209,{learnedAt=300,minReputation={529,21000},requireSkill=197}),
+r(28244,{learnedAt=300,minReputation={529,21000},requireSkill=164}),
+r(28242,{learnedAt=300,minReputation={529,42000},requireSkill=164}),
+r(28243,{learnedAt=300,minReputation={529,21000},requireSkill=164}),
+r(28224,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
+r(28222,{learnedAt=300,minReputation={529,42000},requireSkill=165}),
+r(28223,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
+r(28221,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
+r(28220,{learnedAt=300,minReputation={529,21000},requireSkill=165}),
+r(28219,{learnedAt=300,minReputation={529,42000},requireSkill=165})}}),
 n(16061,{
 s(133413,23014,{b=1,f=25,lvl=60,q=4}),
 s(133408,23009,{b=1,f=27,lvl=60,q=4}),
@@ -3774,7 +3774,7 @@ qo(1,{coords={
 [1451]={{63.2,55.4}}},providers={{"i",22201},{"o",179565}}})}}),
 q(5526,{coords={
 [1450]={{51.7,45.1}}},lvl=56,qgs={11801},rwp=40003,sourceQuests={5527},g={
-qo(1,{awp=10200,cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}}}),
+qo(1,{cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}}}),
 s(129480,18535,{b=1,f=8,q=3}),
 s(129481,18536,{b=1,f=1,q=3})}}),
 q(7499,{c={1},lvl=54,maps={236,237,238},providers={{"n",14383}},qss={18357},rwp=40003,g={
@@ -3782,7 +3782,7 @@ i(18466,{b=1,c={1},f=53,q=3})}}),
 q(7631,{c={9},coords={
 [1428]={{12.6,31.6}}},lvl=60,maps={236,237,238},qgs={14436},qis={18818},rwp=40003,sourceQuests={7629},g={
 ach(2357,{c={9},sourceQuests={7631}}),
-mnt(23161,{awp=10200,c={9},providers={{"n",14502},{"n",14504}}})}}),
+mnt(23161,{c={9},providers={{"n",14502},{"n",14504}}})}}),
 q(7482,{coords={
 [1444]={{31.2,43.9}}},lvl=54,maps={236,237,238},qgs={14374},r=2,rwp=40003,g={
 qo(1,{providers={{"o",179544}}})}}),
@@ -3811,11 +3811,11 @@ q(7504,{c={5},lvl=54,maps={236,237,238},providers={{"n",14381}},qss={18362},rwp=
 i(18469,{b=1,c={5},f=53,q=3})}}),
 q(7488,{coords={
 [1444]={{30.4,46.2}}},lvl=54,maps={239},qgs={7877},r=2,rwp=40003,sourceQuests={7494},g={
-qo(1,{awp=10200,providers={{"i",18426}}}),
+qo(1,{providers={{"i",18426}}}),
 s(129436,18491,{b=1,f=20,q=3})}}),
 q(7489,{coords={
 [1444]={{76.2,43.8}}},lvl=54,maps={239},qgs={7776},r=1,rwp=40003,sourceQuests={7492},g={
-qo(1,{awp=10200,providers={{"i",18426}}}),
+qo(1,{providers={{"i",18426}}}),
 s(129436,18491,{b=1,f=20,q=3})}}),
 q(7484,{cost={{"i",12753,2},{"i",14344,4},{"i",18335,1},{"i",18333,1}},lvl=57,maps={236,237,238},maxReputation={809,42000},qgs={14368},repeatable=1,rwp=40003,sourceQuests={7481,7482},g={
 i(18330,{b=1,q=2})}}),
@@ -3825,7 +3825,7 @@ q(7483,{cost={{"i",12938,2},{"i",14344,2},{"i",18335,1},{"i",18332,1}},lvl=57,ma
 i(18329,{b=1,q=2})}}),
 q(7441,{coords={
 [1444]={{76.7,37.2}}},lvl=54,maps={239},qgs={14355},rwp=40003,g={
-qo(1,{awp=10200,providers={{"i",18261}}}),
+qo(1,{providers={{"i",18261}}}),
 s(129358,18410,{b=1,f=26,q=2}),
 s(129359,18411,{b=1,f=5,loc=47,q=2})}}),
 q(7500,{c={8},lvl=54,maps={236,237,238},providers={{"n",14383}},qss={18358},rwp=40003,g={
@@ -3835,7 +3835,7 @@ i(18470,{b=1,c={11},f=53,q=3})}}),
 q(5518,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,maps={235},qgs={14338},rwp=40003,g={
 r(22813,{learnedAt=285,requireSkill=197}),
 r(22815,{learnedAt=285,requireSkill=165}),
-i(18258,{awp=10200,description="Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",lvl=55,q=2})}}),
+i(18258,{description="Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",lvl=55,q=2})}}),
 q(5519,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,maps={235},maxReputation={169,42000},qgs={14338},repeatable=1,rwp=40003,sourceQuests={5518},g={
 i(18258,{lvl=55,q=2})}}),
 q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=56,maps={235},qgs={14322},rwp=40003,g={
@@ -3919,12 +3919,12 @@ s(129261,18313,{b=1,f=7,loc=40,lvl=53,q=3}),
 s(129254,18306,{b=1,f=4,loc=44,lvl=53,q=2})}}),
 n(11491,{description="Talk to him for him to break down the door."}),
 n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",phase=15,providers={{"i",22057}},rwp=40003,g={
-qo(2,{awp=10200,providers={{"i",21984}},questID=8967}),
-qo(2,{awp=10200,providers={{"i",22046}},questID=8990}),
-s(132714,22315,{awp=10200,b=1,f=23,lvl=56,q=3}),
-s(132713,22314,{awp=10200,b=1,f=29,lvl=56,q=3}),
-s(132703,22304,{awp=10200,b=1,c={5,8,9},f=4,loc=44,lvl=56,q=3}),
-s(132871,22472,{awp=10200,b=1,f=5,loc=47,lvl=56,q=3}),
+qo(2,{providers={{"i",21984}},questID=8967}),
+qo(2,{providers={{"i",22046}},questID=8990}),
+s(132714,22315,{b=1,f=23,lvl=56,q=3}),
+s(132713,22314,{b=1,f=29,lvl=56,q=3}),
+s(132703,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=56,q=3}),
+s(132871,22472,{b=1,f=5,loc=47,lvl=56,q=3}),
 i(22401,{b=1,f=54,lvl=57,q=3}),
 i(22345,{b=1,f=54,lvl=57,q=3})}}),
 e(405,{npcID=11492,g={
@@ -4088,7 +4088,7 @@ s(129660,18756,{b=1,f=8,lvl=57,q=3}),
 s(129658,18754,{b=1,f=7,loc=43,lvl=57,q=3})}}),
 n(16032,{description="Found in the Dire Maul Library.",g={
 h(-55,{awp=11101,description="Available if a specific Quest (9015) has been completed.",rwp=40003,sourceQuests={9015},u_sqs=1,g={
-i(21986,{awp=10200,b=1,q=1})}})}}),
+i(21986,{b=1,q=1})}})}}),
 e(410,{npcID=11486,g={
 i(18336,{description="In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",providers={{"o",179545}},q=1}),
 s(129340,18392,{b=1,f=20,lvl=57,q=3}),
@@ -4736,44 +4736,44 @@ i(18746,{q=1})}}),
 q(5803,{coords={
 [1422]={{42.7,83.8}}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5801},g={
 qo(1,{coords={
-[1422]={{45.6,69.2}}},crs={1852},providers={{"i",14610},{"o",177241}},rwp=50004})}}),
+[1422]={{45.6,69.2}}},crs={1852},providers={{"i",14610},{"o",177241}}})}}),
 q(5804,{coords={
 [1420]={{83.3,69.2}}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={5802},g={
 qo(1,{coords={
-[1422]={{45.6,69.2}}},crs={1852},providers={{"i",14610},{"o",177241}},rwp=50004})}}),
+[1422]={{45.6,69.2}}},crs={1852},providers={{"i",14610},{"o",177241}}})}}),
 q(5343,{coords={
 [1422]={{43.5,83.7}}},lvl=52,qgs={11023},r=2,rwp=40003,g={
-qo(1,{description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}},rwp=50004}),
-qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}},rwp=50004}),
-qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}},rwp=50004}),
-qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},rwp=50004})}}),
+qo(1,{description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}}}),
+qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}}}),
+qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}}}),
+qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}}})}}),
 q(5341,{coords={
 [1420]={{83.06,71.6}}},lvl=52,maps={1422},qgs={11022},r=1,rwp=40003,g={
-qo(1,{description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}},rwp=50004}),
-qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}},rwp=50004}),
-qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}},rwp=50004}),
-qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}},rwp=50004})}}),
+qo(1,{description="Can be found along the wall in Ras Frostwhisper's room.",providers={{"i",13471},{"o",176484}}}),
+qo(2,{description="Can be found right next to Alexi Barov.",providers={{"i",13448},{"o",176485}}}),
+qo(3,{description="Can be found in the very back of the first room hidden behind some bookshelves.",providers={{"i",13450},{"o",176486}}}),
+qo(4,{description="Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",providers={{"i",13451},{"o",176487}}})}}),
 q(5531,{coords={
 [1423]={{81.73,57.83}}},lvl=57,qgs={11036},qis={13761},rwp=40003,sourceQuests={5522}}),
 q(4771,{coords={
 [1423]={{81.5,59.7}}},description="After completing this quest, you can return to Betina to have her give you another Gambit.",lvl=57,qgs={11035},rwp=40003,sourceQuests={5531},g={
-qo(1,{awp=10300,providers={{"n",10432}},rwp=50004}),
-qo(2,{awp=10300,description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}},rwp=50004}),
+qo(1,{providers={{"n",10432}}}),
+qo(2,{description="This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",providers={{"i",12368}}}),
 s(127745,15854,{b=1,f=28,q=3}),
 s(127744,15853,{b=1,f=21,q=3})}}),
 q(5382,{coords={
 [1422]={{70.2,73.7}}},description="Talk to Eva until she offers the quest.",lvl=55,qgs={11216},rwp=40003,g={
-qo(1,{providers={{"n",11261}},rwp=50004}),
-qo(2,{providers={{"o",176544}},rwp=50004}),
-qo(3,{providers={{"o",176545}},rwp=50004})}}),
+qo(1,{providers={{"n",11261}}}),
+qo(2,{providers={{"o",176544}}}),
+qo(3,{providers={{"o",176545}}})}}),
 q(5801,{coords={
 [1446]={{51.5,28.8}}},lvl=55,maps={1449},qgs={5411},r=2,rwp=40003,sourceQuests={5538},g={
 qo(1,{coords={
-[1449]={{49.6,47.6}}},cost={{"i",12359,2},{"i",14644,1}},providers={{"i",14645}},rwp=50004})}}),
+[1449]={{49.6,47.6}}},cost={{"i",12359,2},{"i",14644,1}},providers={{"i",14645}}})}}),
 q(5802,{coords={
 [1446]={{51.5,28.8}}},lvl=55,maps={1449},qgs={5411},r=1,rwp=40003,sourceQuests={5514},g={
 qo(1,{coords={
-[1449]={{49.6,47.6}}},cost={{"i",12359,2},{"i",14644,1}},providers={{"i",14645}},rwp=50004})}}),
+[1449]={{49.6,47.6}}},cost={{"i",12359,2},{"i",14644,1}},providers={{"i",14645}}})}}),
 q(5582,{lvl=55,maxReputation={529,42000},qss={13920},repeatable=1,rwp=40003,sourceQuests={5529}}),
 q(5384,{coords={
 [1422]={{70.2,73.7}}},lvl=55,qgs={11216},rwp=40003,sourceQuests={5515},g={
@@ -4783,7 +4783,7 @@ s(127716,15805,{b=1,f=1,q=3}),
 i(13544,{b=1,f=53,q=2})}}),
 q(5515,{coords={
 [1422]={{70.2,73.7}}},lvl=55,qgs={11216},rwp=40003,sourceQuests={5382},g={
-qo(1,{providers={{"i",13725}},rwp=50004})}}),
+qo(1,{providers={{"i",13725}}})}}),
 q(7647,{c={2},coords={
 [1453]={{37.6,32.6}}},lvl=60,qgs={928},qis={18804},r=2,rwp=40003,sourceQuests={7646},g={
 qo(1,{cost={{"i",18749,1}},crs={14516,14568},providers={{"i",18799}}}),
@@ -4803,33 +4803,33 @@ q(5514,{coords={
 [1420]={{83.3,69.2}}},cost={{"i",14628,1},{"g",150000}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={964}}),
 q(5529,{coords={
 [1423]={{81.47,59.66}}},lvl=55,qgs={11035},rwp=40003,g={
-qo(1,{providers={{"n",10678}},rwp=50004})}}),
+qo(1,{providers={{"n",10678}}})}}),
 q(5533,{coords={
 [1422]={{42.7,84}}},lvl=55,qgs={10838},r=2,rwp=40003,sourceQuests={5097}}),
 q(838,{coords={
 [1420]={{83.1,68.9}}},lvl=55,qgs={10837},r=1,rwp=40003,sourceQuests={5098}}),
 q(5537,{coords={
 [1422]={{42.66,83.77}}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5533},g={
-qo(1,{crs={1783,1784,1785,1787,1788,1789},providers={{"i",14619}},rwp=50004})}}),
+qo(1,{crs={1783,1784,1785,1787,1788,1789},providers={{"i",14619}}})}}),
 q(964,{coords={
 [1420]={{83.3,69.2}}},lvl=55,maps={1422},qgs={11057},r=1,rwp=40003,sourceQuests={838},g={
-qo(1,{crs={1783,1784,1785,1787,1788,1789},providers={{"i",14619}},rwp=50004})}}),
+qo(1,{crs={1783,1784,1785,1787,1788,1789},providers={{"i",14619}}})}}),
 q(5465,{coords={
 [1423]={{81.7,57.8}}},lvl=57,qgs={11036},qis={13624},rwp=40003,sourceQuests={5464}}),
 q(7668,{c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},r=1,rwp=10700,sourceQuests={7667},u=2,g={
-qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
+qo(1,{crs={14516},providers={{"i",18880}},u=2}),
 s(129711,18807,{b=1,f=6,loc=40,q=3,u=2})}}),
 q(8258,{altQuests={7668},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7667},g={
-qo(1,{awp=10300,crs={14516},providers={{"i",18880}},rwp=50004}),
+qo(1,{crs={14516},providers={{"i",18880}}}),
 s(130748,20134,{b=1,f=6,loc=40,q=4})}}),
 q(5462,{coords={
 [1422]={{70.6,74.1}}},lvl=57,qgs={11286},qis={13544,13585},rwp=40003,sourceQuests={5461}}),
 q(5461,{coords={
 [1422]={{70.6,74.1}}},lvl=57,maps={1417},qgs={11286},qis={13544},rwp=40003,sourceQuests={5384},g={
 qo(1,{coords={
-[1417]={{17.9,69.4}}},providers={{"i",13585},{"o",176630}},rwp=50004})}}),
+[1417]={{17.9,69.4}}},providers={{"i",13585},{"o",176630}}})}}),
 q(5505,{coords={
 [1422]={{42.6,83.8}}},lvl=55,qgs={11056},r=2,rwp=40003,sourceQuests={5803},g={
 i(13704,{q=1})}}),
@@ -4838,17 +4838,17 @@ q(5511,{coords={
 i(13704,{q=1})}}),
 q(5344,{coords={
 [1422]={{43.5,83.7}}},lvl=52,maps={1420},qgs={11023},r=2,rwp=40003,sourceQuests={5343},g={
-qo(1,{awp=10300,coords={
-[1420]={{83,71.6}}},crs={11022},providers={{"i",13470}},rwp=50004}),
+qo(1,{coords={
+[1420]={{83,71.6}}},crs={11022},providers={{"i",13470}}}),
 i(14023,{b=1,f=53,q=3})}}),
 q(5342,{coords={
 [1420]={{83.06,71.6}}},lvl=52,maps={1422},qgs={11022},r=1,rwp=40003,sourceQuests={5341},g={
-qo(1,{awp=10300,coords={
-[1422]={{43.4,83.6}}},crs={11023},providers={{"i",13469}},rwp=50004}),
+qo(1,{coords={
+[1422]={{43.4,83.6}}},crs={11023},providers={{"i",13469}}}),
 i(14022,{b=1,f=53,q=3})}}),
 q(5466,{coords={
 [1422]={{70.6,74.1}}},lvl=57,qgs={11286},qis={13544},rwp=40003,sourceQuests={5465},g={
-qo(1,{awp=10300,providers={{"i",13626}},rwp=50004}),
+qo(1,{providers={{"i",13626}}}),
 s(126129,14002,{b=1,f=8,q=3}),
 s(126126,13984,{b=1,f=20,q=3}),
 s(126124,13982,{b=1,f=26,q=3}),
@@ -4948,11 +4948,11 @@ s(126516,14502,{b=1,f=5,loc=45,lvl=57,q=3}),
 s(126527,14522,{b=1,f=6,loc=46,lvl=57,q=3}),
 s(129598,18694,{b=1,f=6,loc=47,lvl=57,q=3})}}),
 n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",phase=15,providers={{"i",22057}},rwp=40003,g={
-s(132731,22332,{awp=10300,b=1,f=25,lvl=57,q=3}),
-s(132732,22333,{awp=10300,b=1,f=24,lvl=57,q=3}),
+s(132731,22332,{b=1,f=25,lvl=57,q=3}),
+s(132732,22333,{b=1,f=24,lvl=57,q=3}),
 s(132702,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=57,q=3}),
-i(22326,{awp=10300,b=1,f=52,lvl=58,q=3}),
-i(22331,{awp=10300,b=1,f=52,lvl=57,q=3})}}),
+i(22326,{b=1,f=52,lvl=58,q=3}),
+i(22331,{b=1,f=52,lvl=57,q=3})}}),
 h(-19,{awp=10300,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",rwp=50004,g={
 s(129584,18680,{b=1,f=32,lvl=56,q=3}),
 s(129587,18683,{b=1,f=23,lvl=56,q=3}),
@@ -6525,9 +6525,9 @@ i(28790,{b=1,f=52,q=4}),
 i(28791,{b=1,f=52,q=4})}}),
 q(10888,{coords={
 [1955]={{54.2,44.4}}},qgs={18481},rwp=30002,sourceQuests={10884,10885,10886},g={
-qo(1,{awp=20003,providers={{"n",17257}}}),
-i(31746,{awp=20003,b=1,f=52,q=4}),
-i(31704,{awp=20003,b=1,q=1}),
+qo(1,{providers={{"n",17257}}}),
+i(31746,{b=1,f=52,q=4}),
+i(31704,{b=1,q=1}),
 ach(432,{sourceQuests={10888}}),
 title(36)}})}),
 e(1566,{npcID=17257,g={
@@ -6551,18 +6551,18 @@ s(139125,28779,{b=1,f=7,loc=45,lvl=70,q=4}),
 s(139124,28778,{b=1,f=6,loc=45,lvl=70,q=4}),
 i(28789,{b=1,f=53,lvl=70,q=4}),
 i(34846,{awp=20400,description="The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",q=2,g={
-i(32227,{awp=20003,q=4}),
-i(32228,{awp=20003,q=4}),
-i(32229,{awp=20003,q=4}),
-i(32231,{awp=20003,q=4}),
-i(32230,{awp=20003,q=4}),
-i(32249,{awp=20003,q=4}),
-i(23440,{awp=20003,q=3}),
-i(23436,{awp=20003,q=3}),
-i(23441,{awp=20003,q=3}),
-i(23439,{awp=20003,q=3}),
-i(23438,{awp=20003,q=3}),
-i(23437,{awp=20003,q=3})}})}})}}),
+i(32227,{q=4}),
+i(32228,{q=4}),
+i(32229,{q=4}),
+i(32231,{q=4}),
+i(32230,{q=4}),
+i(32249,{q=4}),
+i(23440,{q=3}),
+i(23436,{q=3}),
+i(23441,{q=3}),
+i(23439,{q=3}),
+i(23438,{q=3}),
+i(23437,{q=3})}})}})}}),
 inst(748,{coords={
 [1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,phase=18,savedInstanceID=548,sourceQuests={10901},zoneTextAreaID=3607,g={
 h(-45,{
@@ -6687,7 +6687,7 @@ i(30007,{b=1,f=51,q=4}),
 i(30015,{b=1,f=51,q=4})}}),
 q(10946,{awp=20100,coords={
 [1948]={{58,48.2}}},qgs={21700},sourceQuests={10944},g={
-qo(1,{awp=20003,crs={19514},providers={{"i",31946}}})}})}),
+qo(1,{crs={19514},providers={{"i",31946}}})}})}),
 h(-63,{
 r(36315,{b=1,itemID=30280,learnedAt=375,q=4,requireSkill=197}),
 r(36351,{b=1,itemID=30302,learnedAt=375,q=4,requireSkill=165}),
@@ -6794,12 +6794,12 @@ h(-31,{
 faction(990,{maps={75}})}),
 ah(2575,{type="s",g={
 o(185557,{awp=20100,learnedAt=375,maps={329},requireSkill=186,g={
-i(23440,{awp=20003,q=3,requireSkill=186}),
-i(23436,{awp=20003,q=3,requireSkill=186}),
-i(23441,{awp=20003,q=3,requireSkill=186}),
-i(23439,{awp=20003,q=3,requireSkill=186}),
-i(23438,{awp=20003,q=3,requireSkill=186}),
-i(23437,{awp=20003,q=3,requireSkill=186}),
+i(23440,{q=3,requireSkill=186}),
+i(23436,{q=3,requireSkill=186}),
+i(23441,{q=3,requireSkill=186}),
+i(23439,{q=3,requireSkill=186}),
+i(23438,{q=3,requireSkill=186}),
+i(23437,{q=3,requireSkill=186}),
 i(32227,{q=4,requireSkill=186}),
 i(32228,{q=4,requireSkill=186}),
 i(32229,{q=4,requireSkill=186}),
@@ -7104,7 +7104,7 @@ q(10985,{coords={
 [1948]={{65.2,44}}},lvl=70,qgs={18528},rwp=30002,sourceQuests={10949},g={
 ach(431,{sourceQuests={10985}}),
 title(39),
-i(32649,{awp=20100,b=1,f=51,q=4})}}),
+i(32649,{b=1,f=51,q=4})}}),
 q(10949,{coords={
 [1955]={{54.3,44.3}}},lvl=70,qgs={18481},sourceQuests={10948}}),
 q(10957,{coords={
@@ -8136,18 +8136,18 @@ i(32449,{b=1,q=1})}}),
 q(10098,{coords={
 [1952]={{44.1,65}}},cost={{"i",32888,1}},qgs={18933},rwp=40300,sourceQuests={10180},g={
 qo(1,{description="Found on the floor in the center of the room before Talon King Ikiss.",providers={{"i",27634}}}),
-qo(2,{awp=20003,providers={{"i",27633}}}),
-qo(3,{awp=20003,providers={{"i",27632}}}),
-s(139676,29330,{awp=20003,b=1,f=1,q=3}),
-s(139678,29332,{awp=20003,b=1,f=5,loc=40,q=3}),
-s(139675,29329,{awp=20003,b=1,f=29,q=3})}}),
+qo(2,{providers={{"i",27633}}}),
+qo(3,{providers={{"i",27632}}}),
+s(139676,29330,{b=1,f=1,q=3}),
+s(139678,29332,{b=1,f=5,loc=40,q=3}),
+s(139675,29329,{b=1,f=29,q=3})}}),
 q(11001,{c={11},coords={
 [1946]={{80.2,65.2}}},lvl=70,phase=18,qgs={22832},rwp=40001,sourceQuests={10994},g={
-qo(1,{awp=20003,crs={23035},providers={{"i",32449}}}),
+qo(1,{crs={23035},providers={{"i",32449}}}),
 ach(2359,{c={11},sourceQuests={11001}}),
-r(40120,{awp=20003}),
+r(40120),
 i(32387,{b=1,f=54,q=3}),
-i(32462,{awp=20003,q=1,g={
+i(32462,{q=1,g={
 i(32454,{b=1,q=1}),
 i(32449,{b=1,q=1})}})}})}),
 h(-19,{

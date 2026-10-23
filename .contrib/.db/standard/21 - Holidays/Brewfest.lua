@@ -1005,25 +1005,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 
 				-- Burning Crusade
 				-- #if CLASSIC_ANNIVERSARY
-				i(281893, {	-- Balebrew Charm [Level 70, 178 GS]
+				i(281893, {	-- Balebrew Charm [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281895, {	-- Brightbrew Charm [Level 70, 178 GS]
+				i(281895, {	-- Brightbrew Charm [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281743, {	-- Coren's Lucky Coin [Level 70, 178 GS]
+				i(281743, {	-- Coren's Lucky Coin [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281735, {	-- Dark Iron Smoking Pipe [Level 70, 178 GS]
+				i(281735, {	-- Dark Iron Smoking Pipe [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281748, {	-- Direbrew Hops [Level 70, 178 GS]
+				i(281748, {	-- Direbrew Hops [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281903, {	-- Direbrew's Shanker [Level 70, 178 GS]
+				i(281903, {	-- Direbrew's Shanker [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
-				i(281739, {	-- Empty Mug of Direbrew [Level 70, 178 GS]
+				i(281739, {	-- Empty Mug of Direbrew [Level 70, 100 GS]
 					timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
 				}),
 				-- #else

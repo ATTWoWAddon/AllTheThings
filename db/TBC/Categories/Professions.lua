@@ -244,13 +244,13 @@ i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, y
 r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
 r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
 r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}}),
-prof(129,{rwp=80001,g={
-x(1,{awp=10100,requireSkill=129,g={
+prof(129,{
+x(1,{awp=10001,requireSkill=129,rwp=80001,g={
 ach(131,{requireSkill=129}),
 ach(132,{requireSkill=129}),
 ach(133,{requireSkill=129})}}),
-x(2,{awp=20003,phase=17,requireSkill=129,g={
-ach(134,{awp=20005,requireSkill=129})}})}}),
+x(2,{awp=20005,phase=17,requireSkill=129,rwp=80001,g={
+ach(134,{requireSkill=129})}})}),
 prof(356,{
 h(-12,{awp=20300,requireSkill=356,g={
 ach(1243,{providers={{"s",43308}},requireSkill=356,spellID=43308})}}),

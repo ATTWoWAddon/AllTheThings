@@ -235,7 +235,7 @@ local CANDY_BUCKET_OBJECT_DATA = {
 		en = "Candy Bucket",
 		de = "Eimer mit Süßigkeiten",
 		es = "Cubo de caramelos",
-		-- TODO: mx = "",
+		mx = "Cubo de caramelos",
 		fr = "Seau de bonbons",
 		it = "Secchio delle Caramelle",
 		ko = "사탕 바구니",
@@ -1035,11 +1035,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			i(49123, { timeline = { ADDED_3_0_2, REMOVED_3_3_0 } }),	-- The Horseman's Signet
 			i(49124, { timeline = { ADDED_3_0_2, REMOVED_3_3_0 } }),	-- Wicked Witch's Band
 			-- Burning Crusade
+			-- #if CLASSIC_ANNIVERSARY
+			--i(281893, {	-- The Horseman's Blade [Level 70, 100 GS] TODO: Missing ID blizz added multiples ids
+			--	timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+			--}),
+			--i(281895, {	-- The Horseman's Helm [Level 70, 100 GS] TODO: Missing ID blizz added multiples ids
+			--	timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+			--}),
+			i(281907, {	-- Ring of Ghoulish Delight [Level 70, 100 GS]
+				timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+			}),
+			i(281911, {	-- The Horseman's Signet Ring [Level 70, 100 GS]
+				timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+			}),
+			i(281915, {	-- Witches Band [Level 70, 100 GS]
+				timeline = { ADDED_2_5_6_PHASE_3, REMOVED_3_0_2 },
+			}),
+			-- #else
 			i(38175, { timeline = { ADDED_2_2_2, REMOVED_3_0_2 } }),	-- The Horseman's Blade
 			i(33808, { timeline = { ADDED_2_2_2, REMOVED_3_0_2 } }),	-- The Horseman's Helm
 			i(34075, { timeline = { ADDED_2_2_2, REMOVED_3_0_2 } }),	-- Ring of Ghoulish Delight
 			i(34073, { timeline = { ADDED_2_2_2, REMOVED_3_0_2 } }),	-- The Horseman's Signet Ring
 			i(34074, { timeline = { ADDED_2_2_2, REMOVED_3_0_2 } }),	-- Witches Band
+			-- #endif
 			-- #if BEFORE WRATH
 			i(33154, { timeline = { ADDED_2_2_2 } }),	-- Sinister Squashling (PET!)
 			i(33292, { timeline = { ADDED_2_2_2 } }),	-- Hallowed Helm

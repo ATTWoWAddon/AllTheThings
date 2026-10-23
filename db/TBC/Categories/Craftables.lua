@@ -1741,8 +1741,8 @@ i(14342,{coords={
 [1457]={{43.1,80.27}},
 [1942]={{13.13,26.23}},
 [1952]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}}),
-x(2,{awp=20003,phase=17,g={
-prof(171,{awp=20005,g={
+x(2,{awp=20003,g={
+prof(171,{awp=20005,phase=17,g={
 h(-26,{
 r(41458,{awp=20100,learnedAt=360,requireSkill=171}),
 r(41500,{awp=20100,learnedAt=360,requireSkill=171}),
@@ -1832,7 +1832,7 @@ i(35748,{awp=20400,b=1,f=53,phase=21,q=4,requireSkill=171}),
 i(35750,{awp=20400,b=1,f=53,phase=21,q=4,requireSkill=171}),
 i(35749,{awp=20400,b=1,f=53,phase=21,q=4,requireSkill=171}),
 i(31080,{q=2})}})}}),
-prof(164,{awp=20005,g={
+prof(164,{awp=20005,phase=17,g={
 prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",g={
 s(138829,28483,{awp=20100,b=1,f=7,loc=42,lvl=70,q=4,requireSkill=9788,rwp=40003}),
 s(138830,28484,{b=1,f=7,loc=42,lvl=70,q=4,requireSkill=9788,rwp=40003}),
@@ -1973,7 +1973,7 @@ s(143198,32854,{awp=20300,f=24,lvl=70,q=4}),
 s(133952,23556,{f=23,lvl=70,q=4}),
 s(133937,23541,{f=26,lvl=70,q=4}),
 s(133940,23544,{f=23,lvl=70,q=4})})}}),
-prof(185,{awp=20005,g={
+prof(185,{awp=20005,phase=17,g={
 i(27657,{f=55,lvl=55,q=1}),
 i(27663,{f=55,lvl=55,q=1}),
 i(27661,{f=55,lvl=55,q=1}),
@@ -1999,7 +1999,7 @@ i(33048,{awp=20102,f=55,lvl=65,phase=18,q=1}),
 i(33866,{awp=20300,f=55,lvl=55,q=1}),
 i(27660,{f=55,lvl=55,q=1}),
 i(27659,{f=55,lvl=55,q=1})}}),
-prof(333,{awp=20005,g={
+prof(333,{awp=20005,phase=17,g={
 ah(13262,{type="s",g={
 i(22445,{description="Obtained from disenchanting uncommon (green) quality TBC garments, amulets, rings, shields and off-hand frills within the ilvl bracket 87-120.",q=1}),
 i(22446,{description="Obtained from disenchanting uncommon (green) quality TBC weapons within the ilvl bracket 102-120, except shields and off-hand frills.",q=2}),
@@ -2016,7 +2016,7 @@ flt(57,{rwp=50004,g={
 i(22462,{b=1,q=2,requireSkill=333}),
 i(22463,{b=1,q=3,requireSkill=333}),
 i(22461,{b=1,q=1})}})}}),
-prof(202,{awp=20005,g={
+prof(202,{awp=20005,phase=17,g={
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 h(-88,{
 s(134216,23829,{b=1,f=5,learnedAt=375,loc=40,q=4,requireSkill=20219}),
@@ -2113,16 +2113,16 @@ n(17408,{maps={1953},requireSkill=202}),
 n(17407,{maps={1948},requireSkill=202}),
 n(17378,{maps={1946},requireSkill=202}),
 n(24222,{awp=20300,maps={1951},requireSkill=202})}})}}),
-prof(129,{awp=20005,g={
+prof(129,{awp=20005,phase=17,g={
 i(21991,{f=55,q=1,requireSkill=129}),
 i(21990,{f=55,q=1,requireSkill=129})}}),
-prof(356,{awp=20005,g={
+prof(356,{awp=20005,phase=17,g={
 i(27422,{maps_disp={1430,1946,1951,1952},q=1}),
 i(34865,{awp=20400,maps_disp={1952},q=1}),
 i(35313,{awp=20400,b=1,maps_disp={1946},q=1,g={
-i(34866,{awp=20005,q=1})}}),
+i(34866,{q=1})}}),
 i(35286,{awp=20400,maps_disp={1957},phase=21,q=1,g={
-i(35287,{awp=20005,f=55,lvl=55,q=1})}}),
+i(35287,{f=55,lvl=55,q=1})}}),
 i(33823,{awp=20300,maps_disp={1430},phase=20,q=1}),
 i(33824,{awp=20300,maps_disp={1430},phase=20,q=1}),
 i(27513,{maps_disp={1946,1951,1952},providers={{"o",182951},{"o",182952},{"o",182953},{"o",182954},{"o",182956},{"o",182957},{"o",182958},{"o",182959}},q=1}),
@@ -2157,7 +2157,7 @@ o(182953,{maps={1946}}),
 o(182952,{maps={1946}}),
 flt(200,{
 r(43308,{awp=20300,b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})})}}),
-prof(182,{awp=20005,g={
+prof(182,{awp=20005,phase=17,g={
 ah(2366,{type="s",g={
 o(181278,{learnedAt=340,maps={256,258,260,262,263,265,272},requireSkill=182}),
 o(181271,{description="Found near edges and highly uneven terrain.",learnedAt=315,maps={1948,1949,1951,1952,1953},requireSkill=182}),
@@ -2192,7 +2192,7 @@ i(22789,{coords={
 [1948]={{36.5,32.5},{43.4,55.8}},
 [1949]={{29.2,81.3}}},description="Found near the base of trees.",maps_disp={1952},providers={{"o",181277}},q=1}),
 i(24401,{maps_disp={1946},q=1})}})}}),
-prof(755,{awp=20005,g={
+prof(755,{awp=20005,phase=17,g={
 ah(31252,{type="s",g={
 i(23117,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={{"i",23424},{"i",23425}},q=2}),
 i(23077,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={{"i",23424},{"i",23425}},q=2}),
@@ -2213,13 +2213,13 @@ s(134500,24122,{f=4,loc=40,lvl=70,q=4}),
 s(143120,32776,{awp=20100,f=4,loc=40,lvl=70,phase=18,q=3})}),
 flt(61,{
 h(-55,{awp=20200,g={
-i(33140,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33131,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33133,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33135,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33144,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33134,{awp=20005,b=1,q=4,requireSkill=755}),
-i(33143,{awp=20005,b=1,q=4,requireSkill=755})}}),
+i(33140,{b=1,q=4,requireSkill=755}),
+i(33131,{b=1,q=4,requireSkill=755}),
+i(33133,{b=1,q=4,requireSkill=755}),
+i(33135,{b=1,q=4,requireSkill=755}),
+i(33144,{b=1,q=4,requireSkill=755}),
+i(33134,{b=1,q=4,requireSkill=755}),
+i(33143,{b=1,q=4,requireSkill=755})}}),
 h(-227,{
 i(31862,{awp=20200,phase=1801,q=2,rwp=40003}),
 i(23095,{q=2}),
@@ -2310,44 +2310,44 @@ i(31867,{awp=20100,q=3}),
 i(31868,{awp=20100,q=3})}),
 h(-217,{awp=20100,phase=19,g={
 i(32213,{q=4,rwp=40003}),
-i(32193,{awp=20005,q=4}),
+i(32193,{q=4}),
 i(32197,{q=4,rwp=40003}),
 i(32204,{q=4,rwp=40003}),
-i(32225,{awp=20005,q=4}),
-i(32194,{awp=20005,q=4}),
-i(32223,{awp=20005,q=4}),
-i(32199,{awp=20005,q=4}),
+i(32225,{q=4}),
+i(32194,{q=4}),
+i(32223,{q=4}),
+i(32199,{q=4}),
 i(35759,{awp=20400,phase=21,q=4}),
 i(32207,{q=4,rwp=40003}),
-i(32220,{awp=20005,q=4}),
-i(32215,{awp=20005,q=4}),
+i(32220,{q=4}),
+i(32215,{q=4}),
 i(32210,{q=4,rwp=40003}),
 i(32214,{q=4,rwp=40003}),
-i(32217,{awp=20005,q=4}),
-i(32226,{awp=20005,q=4}),
+i(32217,{q=4}),
+i(32226,{q=4}),
 i(32219,{q=4,rwp=40003}),
 i(32202,{q=4,rwp=40003}),
-i(32209,{awp=20005,q=4}),
-i(32218,{awp=20005,q=4}),
+i(32209,{q=4}),
+i(32218,{q=4}),
 i(37503,{awp=20402,phase=21,q=4,rwp=40003}),
 i(35761,{awp=20400,phase=21,q=4}),
-i(32224,{awp=20005,q=4}),
+i(32224,{q=4}),
 i(35760,{awp=20400,phase=21,q=4}),
-i(32206,{awp=20005,q=4}),
+i(32206,{q=4}),
 i(32216,{q=4,rwp=40003}),
-i(32196,{awp=20005,q=4}),
-i(32212,{awp=20005,q=4}),
-i(32205,{awp=20005,q=4}),
-i(32200,{awp=20005,q=4}),
-i(32211,{awp=20005,q=4}),
-i(32201,{awp=20005,q=4}),
+i(32196,{q=4}),
+i(32212,{q=4}),
+i(32205,{q=4}),
+i(32200,{q=4}),
+i(32211,{q=4}),
+i(32201,{q=4}),
 i(35758,{awp=20400,phase=21,q=4}),
-i(32203,{awp=20005,q=4}),
-i(32198,{awp=20005,q=4}),
+i(32203,{q=4}),
+i(32198,{q=4}),
 i(32195,{q=4,rwp=40003}),
 i(32208,{q=4,rwp=40003}),
-i(32221,{awp=20005,q=4}),
-i(32222,{awp=20005,q=4})}})}),
+i(32221,{q=4}),
+i(32222,{q=4})}})}),
 flt(52,{
 i(24086,{f=52,lvl=70,q=3}),
 i(24076,{f=52,lvl=63,q=2}),
@@ -2403,7 +2403,7 @@ i(24128,{b=1,f=53,lvl=70,q=3,requireSkill=755}),
 i(35703,{awp=20400,b=1,f=53,lvl=70,phase=21,q=4,requireSkill=755}),
 i(35702,{awp=20400,b=1,f=53,lvl=70,phase=21,q=4,requireSkill=755}),
 i(24127,{b=1,f=53,lvl=70,q=3,requireSkill=755})})}}),
-prof(165,{awp=20005,g={
+prof(165,{awp=20005,phase=17,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.",g={
 s(140317,29971,{b=1,f=6,loc=46,lvl=45,q=3,requireSkill=10656}),
 s(139862,29516,{b=1,f=6,loc=45,lvl=70,q=4,requireSkill=10656,rwp=40003}),
@@ -2556,7 +2556,7 @@ i(29483,{lvl=65,q=2,rwp=50004}),
 i(25651,{lvl=55,q=1})}),
 flt(53,{
 i(25653,{f=53,lvl=69,q=3})})}}),
-prof(186,{awp=20005,g={
+prof(186,{awp=20005,phase=17,g={
 ah(2575,{type="s",g={
 o(181556,{learnedAt=325,maps={1946,1948,1949,1951,1952,1953,1957},requireSkill=186}),
 o(181555,{learnedAt=300,maps={1944,1946,1948,1949,1951,1952,1953},requireSkill=186}),
@@ -2576,13 +2576,13 @@ i(23448,{cost={{"i",23447,2},{"i",23445,3}},q=2}),
 i(23573,{cost={{"i",23446,10}},q=1}),
 i(35128,{awp=20400,cost={{"i",23573,1},{"i",23449,3}},phase=21,q=2}),
 i(23449,{cost={{"i",23426,2}},q=2})}})}}),
-prof(40,{awp=20005,c={4},rwp=30002,g={
+prof(40,{awp=20005,c={4},phase=17,rwp=30002,g={
 i(21835,{c={4},f=55,lvl=68,q=1}),
 i(22053,{c={4},f=55,lvl=62,q=1}),
 i(22054,{c={4},f=55,lvl=70,q=1}),
 i(21927,{c={4},f=55,lvl=68,q=1}),
 i(22055,{c={4},f=55,lvl=64,q=1})}}),
-prof(393,{awp=20005,description="The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",g={
+prof(393,{awp=20005,description="The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",phase=17,g={
 i(29539,{coords={
 [1948]={{45.5,13},{45.8,28.6},{53.05,25.55},{65.25,22.5},{66.1,30},{71.8,30}},
 [1951]={{11.4,39.3},{19.4,34.6}}},crs={19784,23020,23026},q=1}),
@@ -2617,7 +2617,7 @@ i(29547,{coords={
 [1948]={{47,64.5}},
 [1949]={{66,52.6},{68.5,70.55},{71.5,30.1}},
 [1953]={{56.4,60},{66.3,61.8}}},crs={20502,20673,20749,21123},q=1})}}),
-prof(197,{awp=20005,g={
+prof(197,{awp=20005,phase=17,g={
 prof(26798,{description="These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",g={
 s(132276,21873,{b=1,f=4,loc=45,lvl=70,q=4,requireSkill=26798}),
 s(132278,21875,{b=1,f=4,loc=42,lvl=70,q=4,requireSkill=26798}),
