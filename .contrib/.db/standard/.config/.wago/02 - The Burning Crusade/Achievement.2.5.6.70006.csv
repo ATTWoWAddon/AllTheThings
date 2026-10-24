@@ -1,0 +1,44 @@
+Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Category,Minimum_criteria,Points,Flags,Ui_order,IconFileID,Criteria_tree,Shares_criteria
+"Achieved Merciless Gladiator title.","Merciless Gladiator","Title Reward: Merciless Gladiator",418,-1,-1,0,15452,0,0,1048576,19,0,0,0
+"Achieved Vengeful Gladiator title.","Vengeful Gladiator","Title Reward: Vengeful Gladiator",419,-1,-1,0,15452,0,0,1048576,20,0,0,0
+"Achieved Brutal Gladiator title.","Brutal Gladiator","Title Reward: Brutal Gladiator",420,-1,-1,0,15452,0,0,1048576,21,0,0,0
+"Visit your class trainer when you are at least level 40 and activate your Dual Talent Specialization.","Dual Talent Specialization",,2716,-1,-1,0,81,0,0,0,1,236544,128587,0
+"Achieved Infernal Gladiator title.","Infernal Gladiator","Title Reward: Infernal Gladiator",15018,-1,-1,0,15452,0,0,1048576,13,136219,0,0
+"End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 1).","Gladiator: Season 1","Title Reward: Gladiator",15019,-1,-1,0,15452,0,0,1048576,14,136219,0,0
+"End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 1).","Duelist: Season 1","Title Reward: Duelist",15020,-1,-1,0,15452,0,0,1048576,15,136219,0,0
+"End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 1).","Rival: Season 1","Title Reward: Rival",15021,-1,-1,0,15452,0,0,1048576,16,136219,0,0
+"End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 1).","Challenger: Season 1","Title Reward: Challenger",15022,-1,-1,0,15452,0,0,1048576,17,136219,0,0
+,"[DNT] BCC Arena Tournament - Vanquisher Title",,15198,-1,-1,0,15452,0,0,2048,18,136243,0,0
+"End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 2).","Gladiator: Season 2","Title Reward: Gladiator",15199,-1,-1,0,15452,0,0,1048576,9,132249,0,0
+"End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 4).","Gladiator: Season 4","Title Reward: Gladiator",15200,-1,-1,0,15452,0,0,1048576,1,132249,0,0
+"End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 4).","Duelist: Season 4","Title Reward: Duelist",15201,-1,-1,0,15452,0,0,1048576,2,132249,0,0
+"End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 4).","Rival: Season 4","Title Reward: Rival",15202,-1,-1,0,15452,0,0,1048576,3,132249,0,0
+"End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 4).","Challenger: Season 4","Title Reward: Challenger",15203,-1,-1,0,15452,0,0,1048576,4,136219,0,0
+"End a PvP season in the top 0.5% of the arena ladder (requires 50 games won in Season 3).","Gladiator: Season 3","Title Reward: Gladiator",15204,-1,-1,0,15452,0,0,1048576,5,132249,0,0
+"End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 3).","Duelist: Season 3","Title Reward: Duelist",15205,-1,-1,0,15452,0,0,1048576,6,132249,0,0
+"End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 3).","Rival: Season 3","Title Reward: Rival",15206,-1,-1,0,15452,0,0,1048576,7,132249,0,0
+"End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 3).","Challenger: Season 3","Title Reward: Challenger",15207,-1,-1,0,15452,0,0,1048576,8,136219,0,0
+"End a PvP season in the top 3% of the arena ladder (requires 50 games won in Season 2).","Duelist: Season 2","Title Reward: Duelist",15208,-1,-1,0,15452,0,0,1048576,10,132249,0,0
+"End a PvP season in the top 10% of the arena ladder (requires 50 games won in Season 2).","Rival: Season 2","Title Reward: Rival",15209,-1,-1,0,15452,0,0,1048576,11,132249,0,0
+"End a PvP season in the top 35% of the arena ladder (requires 50 games won in Season 2).","Challenger: Season 2","Title Reward: Challenger",15210,-1,-1,0,15452,0,0,1048576,12,136219,0,0
+,"Has Died",,15329,-1,-1,0,15452,0,0,1050624,23,136243,94296,0
+,Survivor,,15332,-1,-1,0,15452,0,0,1050624,24,136243,94307,0
+,"<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys",,15853,-1,-1,0,15452,0,0,1048580,22,136243,136185,0
+,"Unbroken Self-Found Soul",,19563,-1,-1,0,15452,0,0,1050624,25,136243,153864,0
+,"[DNT] Self-Found Soul (Level 1)",,20133,-1,-1,0,15452,0,0,1050628,26,136243,156298,0
+,"[DNT] Self-Found Soul (Level 10)",,20134,-1,-1,0,15452,0,0,1050628,27,136243,156301,0
+,"[DNT] Self-Found Soul (Level 20)",,20135,-1,-1,0,15452,0,0,1050628,28,136243,156304,0
+,"[DNT] Self-Found Soul (Level 30)",,20136,-1,-1,0,15452,0,0,1050628,29,136243,156307,0
+,"[DNT] Self-Found Soul (Level 40)",,20137,-1,-1,0,15452,0,0,1050628,30,136243,156310,0
+,"[DNT] Self-Found Soul (Level 50)",,20138,-1,-1,0,15452,0,0,1050628,31,136243,156313,0
+,"[DNT] Self-Found Soul (Level 60)",,20139,-1,-1,0,15452,0,0,1050628,32,136243,156316,0
+,"[DNT] Self-Found Soul (Removed Self-Found)",,20193,-1,-1,0,15452,0,0,1050628,33,136243,156405,0
+,"[DNT] Raid Attunement Achieved - Karazhan",,62036,-1,-1,0,81,0,0,1179652,2,136243,221539,0
+,"[DNT] Raid Attunement Achieved - Coilfang: Serpentshrine Cavern",,62037,-1,-1,0,81,0,0,1179652,3,136243,221541,0
+,"[DNT] Raid Attunement Achieved - Tempest Keep",,62038,-1,-1,0,81,0,0,1179652,4,136243,221543,0
+,"[DNT] Raid Attunement Achieved - The Battle for Mount Hyjal",,62039,-1,-1,0,81,0,0,1179652,5,136243,221545,0
+,"[DNT] [DEPRECATED] Raid Attunement Achieved - Black Temple",,62040,-1,-1,0,81,0,0,1179652,6,136243,221547,0
+,"[DNT] TBC Mount Skill Clawback - 113274",,62503,-1,-1,0,15452,0,0,1050628,34,136243,224894,0
+,"[DNT] TBC Mount Skill Clawback - 113275",,62504,-1,-1,0,15452,0,0,1050628,35,136243,224896,0
+,"[DNT] TBC Mount Skill Clawback - 113286",,62505,-1,-1,0,15452,0,0,1050628,36,136243,224892,0
+,"[DNT] Raid Attunement Achieved - Black Temple v2 - FIX FOR FRESH-614",,64142,-1,-1,0,81,0,0,1179652,7,136243,234608,0

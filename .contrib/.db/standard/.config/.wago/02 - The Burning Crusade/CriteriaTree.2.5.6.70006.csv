@@ -1,0 +1,387 @@
+ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
+2,server-only,0,0,4,0,0,2
+22,server-only,0,0,4,0,0,2
+146,server-only,0,0,4,0,0,2
+152,server-only,0,1,8,0,0,2
+189,"Achieved Vengeful Gladiator title.",0,0,4,0,0,0
+190,"Vengeful Gladiator",189,1,0,5599,1,2
+195,server-only,0,1,5,0,0,2
+210,server-only,0,0,4,0,0,2
+248,server-only,0,1,8,0,0,2
+253,server-only,0,0,4,0,0,2
+257,server-only,0,0,4,0,0,2
+261,server-only,0,0,4,0,0,2
+264,server-only,0,0,4,0,0,2
+273,server-only,0,0,4,0,0,2
+276,server-only,0,0,4,0,0,2
+285,server-only,0,0,5,0,0,2
+398,server-only,0,0,5,0,0,2
+425,server-only,0,0,4,0,0,2
+458,server-only,0,0,4,0,0,2
+467,server-only,0,0,4,0,0,2
+529,server-only,0,0,4,0,0,2
+532,server-only,0,0,5,0,0,2
+539,server-only,0,0,5,0,0,2
+552,server-only,0,1,8,0,0,2
+579,server-only,0,1,8,0,0,2
+648,server-only,0,1,8,0,0,2
+758,server-only,0,0,5,0,0,2
+762,server-only,0,0,5,0,0,2
+774,server-only,0,0,4,0,0,2
+777,server-only,0,0,4,0,0,2
+802,server-only,0,0,4,0,0,2
+805,server-only,0,0,4,0,0,2
+808,server-only,0,0,5,0,0,2
+811,server-only,0,1,8,0,0,2
+817,server-only,0,1,8,0,0,2
+822,server-only,0,1,8,0,0,2
+828,server-only,0,0,4,0,0,2
+831,server-only,0,1,8,0,0,2
+836,server-only,0,0,5,0,0,2
+884,server-only,0,0,4,0,0,2
+893,server-only,0,0,4,0,0,2
+921,server-only,0,0,5,0,0,2
+936,server-only,0,1,8,0,0,2
+945,server-only,0,0,5,0,0,2
+957,server-only,0,1,8,0,0,2
+962,server-only,0,0,4,0,0,2
+973,server-only,0,0,5,0,0,2
+983,server-only,0,0,5,0,0,2
+1035,server-only,0,1,8,0,0,2
+1040,server-only,0,0,4,0,0,2
+1070,server-only,0,0,4,0,0,2
+1073,server-only,0,0,4,0,0,2
+1123,server-only,0,0,4,0,0,2
+1148,server-only,0,1,8,0,0,2
+1159,server-only,0,0,5,0,0,2
+1163,server-only,0,1,7,0,0,2
+1176,server-only,0,375,8,0,0,2
+1189,server-only,0,0,4,0,0,2
+1222,server-only,0,0,4,0,0,2
+1225,server-only,0,1,8,0,0,2
+1229,server-only,0,1,8,0,0,2
+1233,server-only,0,1,8,0,0,2
+1238,server-only,0,1,8,0,0,2
+1272,server-only,0,0,4,0,0,2
+1278,server-only,0,0,4,0,0,2
+1285,server-only,0,0,4,0,0,2
+1455,server-only,0,0,4,0,0,2
+1489,server-only,0,1,8,0,0,2
+1521,server-only,0,1,8,0,0,2
+1559,server-only,0,0,4,0,0,2
+1592,server-only,0,0,5,0,0,2
+1716,server-only,0,0,4,0,0,2
+1722,server-only,0,0,4,0,0,2
+1725,server-only,0,1,8,0,0,2
+1857,server-only,0,0,4,0,0,2
+1860,server-only,0,0,7,0,0,2
+1875,server-only,0,0,4,0,0,2
+1930,server-only,0,1,5,0,0,2
+1962,server-only,0,0,5,0,0,2
+2068,server-only,0,0,4,0,0,2
+2083,server-only,0,0,4,0,0,2
+2086,server-only,0,1,8,0,0,2
+2141,server-only,0,0,4,0,0,2
+2144,server-only,0,0,4,0,0,2
+2147,server-only,0,0,4,0,0,2
+2156,server-only,0,0,4,0,0,2
+2235,server-only,0,1,8,0,0,2
+2274,server-only,0,0,4,0,0,2
+2339,server-only,0,0,4,0,0,2
+2370,server-only,0,0,4,0,0,2
+2373,server-only,0,1,8,0,0,2
+2429,server-only,0,0,4,0,0,2
+2442,server-only,0,0,4,0,0,2
+2445,server-only,0,0,5,0,0,2
+2474,server-only,0,0,4,0,0,2
+2491,server-only,0,0,4,0,0,2
+2494,server-only,0,1,8,0,0,2
+2498,server-only,0,1,8,0,0,2
+2503,server-only,0,0,4,0,0,2
+2513,server-only,0,0,5,0,0,2
+2527,,0,0,4,0,0,0
+2555,server-only,0,1,8,0,0,2
+2559,server-only,0,0,4,0,0,2
+2561,server-only,0,1,8,0,0,2
+2598,server-only,0,1,8,0,0,2
+2632,server-only,0,1,8,0,0,2
+2686,server-only,0,1,8,0,0,2
+2703,server-only,0,1,8,0,0,2
+2738,server-only,0,0,4,0,0,2
+2744,server-only,0,0,5,0,0,2
+2750,server-only,0,0,4,0,0,2
+2753,server-only,0,0,4,0,0,2
+2768,server-only,0,0,4,0,0,2
+2771,server-only,0,0,4,0,0,2
+2813,server-only,0,0,4,0,0,2
+2829,server-only,0,0,5,0,0,2
+2838,server-only,0,0,5,0,0,2
+2848,server-only,0,0,5,0,0,2
+2887,server-only,0,0,5,0,0,2
+2919,server-only,0,0,5,0,0,2
+2926,server-only,0,0,5,0,0,2
+2936,"Achieved Merciless Gladiator title.",0,0,4,0,0,0
+2937,"Merciless Gladiator",2936,1,0,5597,1,2
+2939,server-only,0,0,4,0,0,2
+2942,server-only,0,0,4,0,0,2
+2945,server-only,0,0,4,0,0,2
+3056,server-only,0,1,8,0,0,2
+3062,server-only,0,1,8,0,0,2
+3068,server-only,0,0,4,0,0,2
+3074,server-only,0,0,5,0,0,2
+3218,server-only,0,0,4,0,0,2
+3226,server-only,0,0,4,0,0,2
+3382,server-only,0,1,8,0,0,2
+3385,server-only,0,1,8,0,0,2
+3391,server-only,0,0,4,0,0,2
+3400,server-only,0,0,4,0,0,2
+3403,server-only,0,0,4,0,0,2
+3419,server-only,0,0,4,0,0,2
+3432,server-only,0,0,4,0,0,2
+3477,server-only,0,0,5,0,0,2
+3564,server-only,0,0,4,0,0,2
+3592,server-only,0,1,8,0,0,2
+3705,server-only,0,1,8,0,0,2
+3809,server-only,0,1,8,0,0,2
+3812,server-only,0,1,8,0,0,2
+3820,server-only,0,0,4,0,0,2
+3865,server-only,0,0,4,0,0,2
+3886,server-only,0,0,5,0,0,2
+3990,server-only,0,0,4,0,0,2
+4004,server-only,0,0,4,0,0,2
+4007,server-only,0,1,4,0,0,2
+4040,server-only,0,0,4,0,0,2
+4043,server-only,0,0,4,0,0,2
+4106,server-only,0,1,8,0,0,2
+4194,server-only,0,1,8,0,0,2
+4217,"Achieved Brutal Gladiator title.",0,0,4,0,0,0
+4218,"Brutal Gladiator",4217,1,0,5600,1,2
+4220,server-only,0,1,8,0,0,2
+4230,server-only,0,0,4,0,0,2
+4236,server-only,0,0,4,0,0,2
+4318,server-only,0,1,8,0,0,2
+4322,server-only,0,1,8,0,0,2
+4327,server-only,0,1,8,0,0,2
+4438,server-only,0,0,4,0,0,2
+4519,server-only,0,0,4,0,0,2
+4686,server-only,0,0,6,0,0,2
+4712,server-only,0,0,4,0,0,2
+4975,server-only,0,0,4,0,0,2
+4978,server-only,0,0,4,0,0,2
+5199,server-only,0,0,5,0,0,2
+5224,server-only,0,0,4,0,0,2
+5227,server-only,0,0,4,0,0,2
+5249,server-only,0,1,5,0,0,2
+5290,server-only,0,1,8,0,0,2
+5492,server-only,0,0,4,0,0,2
+5504,server-only,0,0,4,0,0,2
+5507,server-only,0,0,4,0,0,2
+5510,server-only,0,0,4,0,0,2
+5520,server-only,0,0,4,0,0,2
+5612,server-only,0,1,8,0,0,2
+5652,server-only,0,0,4,0,0,2
+5655,server-only,0,0,4,0,0,2
+5729,server-only,0,0,5,0,0,2
+5766,server-only,0,0,4,0,0,2
+5803,server-only,0,0,4,0,0,2
+5829,server-only,0,0,4,0,0,2
+5849,server-only,0,0,4,0,0,2
+5873,server-only,0,0,4,0,0,2
+5876,server-only,0,0,5,0,0,2
+5879,server-only,0,0,4,0,0,2
+5882,server-only,0,1,5,0,0,2
+5924,server-only,0,0,5,0,0,2
+6137,server-only,0,0,5,0,0,2
+6144,server-only,0,0,5,0,0,2
+6151,server-only,0,0,5,0,0,2
+6158,server-only,0,0,5,0,0,2
+6166,server-only,0,0,4,0,0,2
+6183,server-only,0,0,4,0,0,2
+6195,server-only,0,1,8,0,0,2
+6207,server-only,0,0,4,0,0,2
+6213,server-only,0,0,4,0,0,2
+6321,server-only,0,1,8,0,0,2
+6534,server-only,0,0,4,0,0,2
+6547,server-only,0,1,5,0,0,2
+6646,server-only,0,0,4,0,0,2
+6732,server-only,0,0,4,0,0,2
+6946,server-only,0,0,4,0,0,2
+7021,server-only,0,0,4,0,0,2
+7357,server-only,0,1,8,0,0,2
+7684,server-only,0,1,8,0,0,2
+7715,server-only,0,0,5,0,0,2
+7723,server-only,0,0,4,0,0,2
+7726,server-only,0,0,4,0,0,2
+7729,server-only,0,0,4,0,0,2
+7732,server-only,0,0,4,0,0,2
+7739,server-only,0,0,5,0,0,2
+7766,server-only,0,375,8,0,0,2
+7774,server-only,0,0,5,0,0,2
+8029,server-only,0,0,4,0,0,2
+8034,server-only,0,0,5,0,0,2
+8084,server-only,0,0,5,0,0,2
+8133,server-only,0,0,4,0,0,2
+8155,server-only,0,0,4,0,0,2
+8188,server-only,0,1,8,0,0,2
+8204,server-only,0,0,4,0,0,2
+8210,server-only,0,0,4,0,0,2
+8288,server-only,0,0,4,0,0,2
+8349,server-only,0,0,4,0,0,2
+8421,server-only,0,0,4,0,0,2
+8431,server-only,0,0,4,0,0,2
+8898,server-only,0,0,4,0,0,2
+8901,server-only,0,1,5,0,0,2
+9109,server-only,0,0,4,0,0,2
+9121,server-only,0,0,4,0,0,2
+9677,server-only,0,0,4,0,0,2
+9846,server-only,0,0,4,0,0,2
+9921,server-only,0,0,4,0,0,2
+9924,server-only,0,0,4,0,0,2
+9942,server-only,0,0,4,0,0,2
+9948,server-only,0,0,4,0,0,2
+10050,server-only,0,0,4,0,0,2
+10112,server-only,0,0,4,0,0,2
+10139,server-only,0,0,4,0,0,2
+10142,server-only,0,0,4,0,0,2
+10145,server-only,0,0,4,0,0,2
+10180,server-only,0,0,4,0,0,2
+10377,server-only,0,0,6,0,0,2
+10405,server-only,0,0,4,0,0,2
+10413,server-only,0,0,4,0,0,2
+10416,server-only,0,0,4,0,0,2
+10543,server-only,0,0,4,0,0,2
+10623,server-only,0,0,4,0,0,2
+10681,server-only,0,0,4,0,0,2
+11269,server-only,0,0,4,0,0,2
+12347,server-only,0,0,4,0,0,2
+12411,server-only,0,0,4,0,0,2
+13719,server-only,0,0,4,0,0,2
+13773,server-only,0,0,4,0,0,2
+14188,server-only,0,0,5,0,0,2
+14242,server-only,0,0,4,0,0,2
+14287,server-only,0,1,5,0,0,2
+14324,server-only,0,0,4,0,0,2
+14647,server-only,0,0,4,0,0,2
+14914,server-only,0,0,5,0,0,2
+14965,server-only,0,0,4,0,0,2
+14995,server-only,0,0,4,0,0,2
+15133,server-only,0,0,4,0,0,2
+15889,server-only,0,0,4,0,0,2
+15892,server-only,0,0,5,0,0,2
+15895,server-only,0,0,4,0,0,2
+15898,server-only,0,0,4,0,0,2
+15901,server-only,0,1,5,0,0,2
+17882,server-only,0,0,4,0,0,2
+18064,,0,0,4,0,0,0
+18070,,0,0,4,0,0,0
+18143,,0,0,4,0,0,0
+18659,,0,0,4,0,0,0
+19395,server-only,0,0,4,0,0,2
+19398,server-only,0,0,4,0,0,2
+19401,server-only,0,0,4,0,0,2
+19408,server-only,0,0,4,0,0,2
+19411,server-only,0,0,4,0,0,2
+19414,server-only,0,0,4,0,0,2
+19492,server-only,0,0,4,0,0,2
+19670,server-only,0,0,4,0,0,2
+19673,server-only,0,0,4,0,0,2
+19676,server-only,0,0,4,0,0,2
+19752,server-only,0,0,4,0,0,2
+22423,server-only,0,0,4,0,0,2
+24789,server-only,0,1,6,0,0,2
+24827,server-only,0,1,7,0,0,2
+24874,server-only,0,1,6,0,0,2
+24922,server-only,0,1,7,0,0,2
+24974,server-only,0,1,6,0,0,2
+25016,server-only,0,1,7,0,0,2
+25075,server-only,0,1,6,0,0,2
+25204,server-only,0,1,7,0,0,2
+25345,server-only,0,0,6,0,0,2
+25393,server-only,0,1,7,0,0,2
+25451,server-only,0,1,6,0,0,2
+25673,server-only,0,1,7,0,0,2
+25909,server-only,0,1,7,0,0,2
+26423,server-only,0,1,6,0,0,2
+36198,server-only,0,0,4,0,0,2
+38346,server-only,0,0,5,0,0,2
+45147,server-only,0,0,5,0,0,2
+45148,server-only,0,0,5,0,0,2
+45149,server-only,0,0,5,0,0,2
+45150,server-only,0,0,5,0,0,2
+82060,server-only,0,0,4,0,0,2
+82062,server-only,0,0,4,0,0,2
+88343,server-only,0,0,5,0,0,2
+88346,server-only,0,0,5,0,0,2
+91199,"Open the Survival Kit",0,1,8,0,0,4112
+91201,"Equip a Weapon",0,1,8,0,0,4112
+91213,"Learn a Spell/Talent",0,1,8,0,0,4096
+91296,"Open the Survival Kit",0,1,8,0,0,4112
+91298,"Equip a Weapon",0,1,8,0,0,4112
+91302,"Open the Survival Kit",0,1,8,0,0,4112
+91304,"Equip a Weapon",0,1,8,0,0,4112
+91328,"Learn a Talent",0,1,8,0,0,4096
+91356,"Learn a Talent",0,1,8,0,0,4096
+91399,"Achieved Infernal Gladiator title.",0,0,4,0,0,0
+91419,"Train a Spell",0,1,8,0,0,4096
+91447,"Learn a Spell (Horde)",0,1,8,0,0,4096
+91475,"Train a Spell (Horde, Thunder Bluff)",0,1,8,0,0,4096
+91542,server-only,0,0,4,0,0,2
+91544,server-only,0,0,4,0,0,2
+91546,server-only,0,1,5,0,0,2
+91548,server-only,0,1,5,0,0,2
+91550,server-only,0,1,5,0,0,2
+91552,server-only,0,0,4,0,0,2
+91554,server-only,0,0,4,0,0,2
+91719,server-only,0,0,5,0,0,2
+91763,"Talent Points Spent",0,1,4,0,0,4096
+91868,"5 Talent Points Allocated",0,1,4,0,0,4096
+91869,,91868,5,0,52217,0,0
+91870,"5 Talent Points Allocated",0,10,4,0,0,4096
+91871,,91870,5,0,52218,0,0
+91872,"5 Talent Points Allocated",0,1,4,0,0,4096
+91873,,91872,5,0,52219,0,0
+91902,server-only,0,0,5,0,0,2
+92175,,91296,1,0,52398,1,0
+92176,,91302,1,0,52399,1,0
+92177,,91199,1,0,52400,1,0
+94296,"Has Died",0,0,4,0,0,0
+94297,,94296,1,0,52885,0,0
+94307,Survivor,0,0,4,0,0,0
+94308,,94307,60,0,52891,0,0
+128587,"Learn a Second Talent Specilization AND Reach level 40",0,0,4,0,0,0
+128588,"Level up to 40.",128587,40,0,52891,1,2
+128589,"Learn a Second Talent Specialization.",128587,1,0,9619,0,2
+136185,"<Hidden> Joyous Journeys - Reach Level 70 with buff Joyous Journeys",0,0,4,0,0,2
+136186,,136185,70,0,53848,0,2
+153864,"Unbroken Self-Found Soul",0,0,4,0,0,0
+153865,,153864,1,0,64808,0,0
+156298,"[DNT] Create a Self-Found Character",0,0,4,0,0,0
+156301,"[DNT] Reach Level 10 on Self-Found Character",0,0,4,0,0,0
+156304,"[DNT] Reach Level 20 on Self-Found Character",0,0,4,0,0,0
+156307,"[DNT] Reach Level 30 on Self-Found Character",0,0,4,0,0,0
+156310,"[DNT] Reach Level 40 on Self-Found Character",0,0,4,0,0,0
+156313,"[DNT] Reach Level 50 on Self-Found Character",0,0,4,0,0,0
+156316,"[DNT] Reach Level 60 on Self-Found Character",0,0,4,0,0,0
+156405,"[DNT] Remove Self-Found Aura",0,0,4,0,0,0
+156407,,156405,1,0,66299,1,0
+221539,"Player Completed Quest: The Violet Eye",0,0,4,0,0,0
+221540,,221539,1,0,111546,0,0
+221541,"Player Completed Quest: The Cudgel of Kar'desh",0,0,4,0,0,0
+221542,,221541,1,0,111547,0,0
+221543,"Player Completed Quest: Trial of the Naaru: Magtheridon (QUEST FLAG)",0,0,4,0,0,0
+221544,,221543,1,0,111548,0,0
+221545,"Player Completed Quest: The Vials of Eternity",0,0,4,0,0,0
+221546,,221545,1,0,111549,0,0
+221547,"Player Completed Quest: A Distraction for Akama",0,0,4,0,0,0
+221548,,221547,1,0,111550,0,0
+221553,"Player Has Account Achievement Raid Attunement Achieved - Karazhan",0,0,4,0,0,0
+221554,,221553,1,0,111552,0,0
+224892,"Has Criteria 113286",0,0,4,0,0,0
+224893,"Has Criteria 113286",224892,1,0,113286,0,0
+224894,"Has Criteria 113274",0,0,4,0,0,0
+224895,"Has Criteria 113274",224894,1,0,113274,0,0
+224896,"Has Criteria 113275",0,0,4,0,0,0
+224897,"Has Criteria 113275",224896,1,0,113275,0,0
+234608,"Player Completed Quest: Entry Into the Black Temple AND A Distraction for Akama",0,0,4,0,0,0
+234609,,234608,1,0,117936,0,0
+234610,,234608,1,0,111550,1,0
