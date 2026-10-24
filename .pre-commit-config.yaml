@@ -1,4 +1,20 @@
+minimum_pre_commit_version: '3.2.0'
+
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        # Preserve Markdown hard breaks, harvested names, and raw Wago localization values.
+        exclude: '^(?:\.config/\.exports/|\.contrib/(?:Harvesters|Debugging)/|\.contrib/\.db/standard/\.config/\.wago/.*\.csv$|(?:AGENTS|README)\.md$)'
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: check-merge-conflict
+        args: [--assume-in-merge]
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+
   - repo: https://github.com/pycqa/isort
     rev: 5.12.0
     hooks:
@@ -28,3 +44,11 @@ repos:
       - id: mypy
         args: [--strict]
         additional_dependencies: [aiohttp, types-beautifulsoup4]
+
+  - repo: local
+    hooks:
+      - id: file-hygiene
+        name: Check canonical repository text
+        entry: python .contrib/file-hygiene/check_file_hygiene.py
+        language: python
+        types: [file]
