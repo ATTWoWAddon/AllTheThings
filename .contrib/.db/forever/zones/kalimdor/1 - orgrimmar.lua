@@ -4,6 +4,10 @@
 
 maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 	lore = "Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",
+	zoneTextAreaIDs = {
+		1637,	-- Orgrimmar
+		2917,	--  Hall of Legends
+	},
 	icon = 255142,
 	isRaid = true,
 	groups = {
