@@ -10,6 +10,7 @@ from packaging.version import Version
 from typing import Optional
 from collections.abc import Iterable
 from QuestNames import get_quest_names
+from TextOutput import text_output
 from ThingTypes import (
     DATAS_FOLDER,
     FOREVER_FOLDER,
@@ -77,7 +78,7 @@ def create_dict_from_raw_retail(file_name: str, n: int) -> dict[str, list[str]]:
     """This function creates a dict of raw files"""
     raw_path = Path("Raw", file_name)
     item_dict: dict[str, list[str]] = {}
-    with open(raw_path, "r+") as raw_file:
+    with open(raw_path, "r+", encoding="utf-8-sig") as raw_file:
         lines = raw_file.readlines()
         for line in lines:
             try:
@@ -97,7 +98,7 @@ def create_dict_from_raw_forever(file_name: str, n: int) -> dict[str, list[str]]
     """This function creates a dict of raw files"""
     raw_path = Path("Raw - Forever", file_name)
     item_dict: dict[str, list[str]] = {}
-    with open(raw_path, "r+") as raw_file:
+    with open(raw_path, "r+", encoding="utf-8-sig") as raw_file:
         lines = raw_file.readlines()
         for line in lines:
             try:
@@ -228,7 +229,7 @@ def get_difference(patch_data: dict[str, list[dict[str, Optional[str]]]], raw_id
 def extract_nth_column(csv_path: Path, n: int) -> list[str]:
     """Extract nth column from CSV file."""
     csv_list: list[str] = []
-    with open(csv_path) as csv_file:
+    with open(csv_path, encoding="utf-8-sig") as csv_file:
         for line in csv_file:
             try:
                 element: str = line.split(DELIMITER)[n].strip() + "\n"
@@ -258,7 +259,7 @@ def get_other_skilllines(flavor: str) -> list[str]:
         exclusion_path = Path("Exclusion - Forever", "SkillLineOther.txt")
     else:
         exclusion_path = Path("Exclusion", "SkillLineOther.txt")
-    with open(exclusion_path) as skilllineother_file:
+    with open(exclusion_path, encoding="utf-8-sig") as skilllineother_file:
         for line in skilllineother_file:
             skillline_id = remove_non_digits(line.split(DELIMITER)[0])
             other_skilllines.append(skillline_id)
@@ -285,7 +286,7 @@ def build_profession_dict(flavor: str) -> dict[str, list[str]]:
 
 
 def read_file_in_order(file_path: str) -> list[str]:
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding="utf-8-sig") as file:
         return [line.strip() for line in file.readlines()]
 
 
@@ -308,7 +309,7 @@ def check_build_difference() -> None:
     in_builds_not_in_dropdown = [item for item in builds_options if item not in dropdown_options]
 
     # Write the results to a new file
-    with open(output_file_path, 'w') as output_file:
+    with text_output(output_file_path) as output_file:
         output_file.write("Items in dropdown-options.txt but not in Builds.txt:\n")
         for item in in_dropdown_not_in_builds:
             output_file.write(f"{item}\n")
@@ -330,7 +331,7 @@ def get_thing_table(thing: type[Thing], build: str) -> list[str]:
 def add_latest_build(build: str) -> list[str]:
     """Append the latest build to Builds.txt"""
     next_builds: list[str] = []
-    with open("Builds.txt", "r") as build_list:
+    with open("Builds.txt", "r", encoding="utf-8-sig") as build_list:
         build_lines: list[str] = build_list.readlines()
         for n, build_line in enumerate(build_lines):
             if version.parse(build) < version.parse(build_line):
@@ -340,7 +341,7 @@ def add_latest_build(build: str) -> list[str]:
         if version.parse(build) > version.parse(build_lines[-1]):
             build_lines.append(build + "\n")
             next_builds.append(build + "\n")
-    with open("Builds.txt", "w") as build_list:
+    with text_output("Builds.txt") as build_list:
         build_list.writelines(build_lines)
     return next_builds
 
@@ -377,12 +378,12 @@ def sort_raw_file_recipes(flavor: str) -> None:
             profession: Path("Raw", "Professions", f"{profession}.txt")
             for profession in profession_dict
     }
-    with open(recipe_path) as raw_file:
+    with open(recipe_path, encoding="utf-8-sig") as raw_file:
         raw_lines = raw_file.readlines()
         for profession in profession_dict:
             print(profession)
             recipe_list = list[str]()
-            with open(raw_path_dict[profession], "r+") as sorted_file:
+            with text_output(raw_path_dict[profession], "r+") as sorted_file:
                 for line in raw_lines:
                     if DELIMITER not in line:
                         recipe_list.append(line)
@@ -410,7 +411,7 @@ def get_itemdb_difference(profession: str, flavor: str) -> list[str]:
             f"{profession}.lua",
         )
     try:
-        with open(itemdb_path) as itemdb_file:
+        with open(itemdb_path, encoding="utf-8-sig") as itemdb_file:
             for line in itemdb_file:
                 try:
                     line = line.split(";")[0].split(",")[1]
@@ -457,7 +458,7 @@ def write_missing_file(
     filtered_patch_data = get_difference(patch_data, raw_ids, existing_ids, excluded_ids)
     filtered_patch_data_db = get_difference(patch_data, raw_ids, db_ids, excluded_ids) if db_ids else {}
 
-    with open(output_path, "w", encoding="utf-8") as missing_file:
+    with text_output(output_path) as missing_file:
         for patch, entries in filtered_patch_data.items():
             missing_file.write(f"{patch.strip()}\n")
             for entry in entries:
@@ -571,7 +572,7 @@ def post_process_recipes(flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path_dict[profession], "w") as missing_file:
+        with text_output(missing_path_dict[profession]) as missing_file:
             missing_file.writelines(missing_lines)
     return
 
@@ -624,7 +625,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Followers:
@@ -660,7 +661,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                         missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                     else:
                         missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Illusions:
@@ -675,7 +676,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Quests:
@@ -694,7 +695,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Toys:
@@ -709,7 +710,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
     elif thing == Transmog:
@@ -726,7 +727,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
                     missing_lines[index] += " " + " \\\\ ".join(name_list) + "\n"
                 else:
                     missing_lines[index] += "\n"
-        with open(missing_path, "w") as missing_file:
+        with text_output(missing_path) as missing_file:
             missing_file.writelines(missing_lines)
         return
 
@@ -768,10 +769,10 @@ def add_latest_data(build: str) -> None:
                 print("Nothing New")
             before_list.extend(after_list)
             before_list = list(dict.fromkeys(before_list))
-        with open(raw_path, "w", encoding="utf-8") as raw_file:
+        with text_output(raw_path) as raw_file:
             raw_file.writelines(before_list)
         if difference and thing == Items:
-            with open("FastItem.txt", "w", encoding="utf-8") as item_file:
+            with text_output("FastItem.txt") as item_file:
                 for index, name_line in enumerate(difference):
                     id: str = re.sub("[^\\d^.]", "", name_line.split(DELIMITER)[0].strip())
                     try:
