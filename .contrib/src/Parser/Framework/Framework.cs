@@ -3749,8 +3749,8 @@ setmetatable(_.HeaderConstants, {
                 Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
                 foreach (KeyValuePair<string, ConcurrentDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
                 {
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"),
-                        ToJSON(new SortedDictionary<decimal, IDictionary<string, object>>(dbKeyDatas.Value)), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"),
+                        ToJSON(new SortedDictionary<decimal, IDictionary<string, object>>(dbKeyDatas.Value)));
                 }
                 Thread.CurrentThread.CurrentCulture = culture;
 
@@ -3807,7 +3807,7 @@ setmetatable(_.HeaderConstants, {
                         builder.AppendLine("\t},");
                     }
                     builder.AppendLine("})").AppendLine("do CategoryDB[categoryID] = categoryData; end");
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
                 }
 
                 // Export the Custom Headers file.
@@ -4010,7 +4010,7 @@ setmetatable(_.HeaderConstants, {
                         builder.AppendLine("\t},");
                     }
                     builder.AppendLine("})").AppendLine("do FilterDB[key] = value; end");
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "FilterDB.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "FilterDB.lua"), builder.ToString());
                 }
 
                 // Export the Flight Paths DB file.
@@ -4047,7 +4047,7 @@ setmetatable(_.HeaderConstants, {
                         builder.AppendLine("\t},");
                     }
                     builder.AppendLine("})").AppendLine("do FlightPathDB[key] = value end");
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "FlightPathDB.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "FlightPathDB.lua"), builder.ToString());
                 }
 
                 // Export the Object DB file.
@@ -4146,8 +4146,8 @@ setmetatable(_.HeaderConstants, {
                     }
                     dbbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData end");
                     dynamicbuilder.AppendLine("})").AppendLine("do ObjectDB[objectID] = objectData end");
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), dbbuilder.ToString(), Encoding.UTF8);
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB (Dynamic).lua"), dynamicbuilder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), dbbuilder.ToString());
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB (Dynamic).lua"), dynamicbuilder.ToString());
                 }
 
                 // Export the Phases file.
@@ -4258,7 +4258,7 @@ setmetatable(_.HeaderConstants, {
                         }
                     }
                     builder.AppendLine("})").AppendLine("do Phases[phaseID] = phaseData end");
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "Phases.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "Phases.lua"), builder.ToString());
                 }
 
                 // Export the Mount DB file.
@@ -4289,7 +4289,7 @@ setmetatable(_.HeaderConstants, {
                             }
                         }
                     }
-                    File.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(debugFolder.FullName, "RawMountDB.lua"), builder.ToString());
                 }
             }
         }
@@ -4326,55 +4326,20 @@ setmetatable(_.HeaderConstants, {
 
         public static void WriteIfDifferent(string filename, string content)
         {
-            content = NormalizeNewlines(content);
-            if (!File.Exists(filename))
-            {
-                File.WriteAllText(filename, content, Encoding.UTF8);
-            }
-            else
-            {
-                var currentFile = File.ReadAllText(filename, Encoding.UTF8);
-
-                if (string.CompareOrdinal(currentFile, content) != 0)
-                {
-                    // Can use this to debug if getting weird diffs again
-                    //var diff = FindFirstDifferenceWithContext(currentFile, content);
-
-                    //if (diff.Index >= 0)
-                    //{
-                    //	Log($"Difference at index {diff.Index}");
-
-                    //	Log($"currentFile char: '{diff.A}' (U+{(diff.A.HasValue ? ((int)diff.A.Value).ToString("X4") : "----")})");
-                    //	Log($"content     char: '{diff.B}' (U+{(diff.B.HasValue ? ((int)diff.B.Value).ToString("X4") : "----")})");
-
-                    //	Log("Context around mismatch:");
-                    //	Log($"currentFile: \"{diff.ContextA}\"");
-                    //	Log($"content:     \"{diff.ContextB}\"");
-                    //}
-                    //else
-                    //{
-                    //	Log("Strings are identical.");
-                    //}
-
-                    File.WriteAllText(filename, content, Encoding.UTF8);
-                }
-            }
+            ATT.TextFile.WriteIfDifferent(filename, NormalizeNewlines(content));
         }
 
         public static string NormalizeNewlines(string s)
         {
-            if (s == null)
-                return null;
+            if (string.IsNullOrEmpty(s))
+                return s;
 
-            s = (s.Trim() + Environment.NewLine).Replace("\r\n", "\n");
+            s = (s.Trim() + "\n").Replace("\r\n", "\n");
 
             s = s.Replace("\r", "\n");
 
             while (s.Contains("\n\n"))
                 s = s.Replace("\n\n", "\n");
-
-            if (Environment.NewLine != "\n")
-                s = s.Replace("\n", Environment.NewLine);
 
             return s;
         }

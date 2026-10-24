@@ -140,7 +140,7 @@ namespace Profession_Automator
                                         }
                                         var builder2 = new StringBuilder();
                                         Print(builder2, AllTheThingsDebugData);
-                                        File.WriteAllText("output.txt", builder2.ToString());
+                                        ATT.TextFile.WriteAllText("output.txt", builder2.ToString());
 
                                         foreach(var o in AllTheThingsDebugData)
                                         {
@@ -159,7 +159,7 @@ namespace Profession_Automator
 
                                                 var filename = Path.Combine("../../../../.contrib/.db/standard/11 - Professions", name, "Recipes/_ Automation.lua");
                                                 Directory.CreateDirectory(Path.GetDirectoryName(filename));
-                                                File.WriteAllText(filename, builder3.ToString());
+                                                ATT.TextFile.WriteAllText(filename, builder3.ToString());
                                             }
                                         }
                                     }

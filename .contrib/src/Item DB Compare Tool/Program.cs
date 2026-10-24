@@ -143,8 +143,8 @@ namespace ATT
                         string missFile = fileName.Replace(DBSuffix, MissSuffix + DBSuffix);
                         List<Dictionary<string, object>> diffObjs = ConvertDBtoList(diffMiss.Item1, objectKey);
                         List<Dictionary<string, object>> missObjs = ConvertDBtoList(diffMiss.Item2, objectKey);
-                        File.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
-                        File.WriteAllText(missFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, missObjs } }));
+                        ATT.TextFile.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
+                        ATT.TextFile.WriteAllText(missFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, missObjs } }));
                     }
                     catch (Exception ex)
                     {
@@ -156,7 +156,7 @@ namespace ATT
 
             // save the cumulative set of things
             List<Dictionary<string, object>> fullObjs = ConvertDBtoList(source, objectKey);
-            File.WriteAllText(dbFilter + FullSuffix + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
+            ATT.TextFile.WriteAllText(dbFilter + FullSuffix + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
 
             // report all the per-ID/per-DB differences
             Console.WriteLine();

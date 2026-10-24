@@ -86,4 +86,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Compile Include="..\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>

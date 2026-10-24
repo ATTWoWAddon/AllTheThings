@@ -218,7 +218,7 @@ namespace Classic_Item_Detector
             int i = 36000;
             var MaxItemIDFileName = "MaxClassicItemID.txt";
             if (File.Exists(MaxItemIDFileName)) i = int.Parse(File.ReadAllText(MaxItemIDFileName));
-            else File.WriteAllText(MaxItemIDFileName, i.ToString());
+            else ATT.TextFile.WriteAllText(MaxItemIDFileName, i.ToString());
             var APIKeyFileName = "API.key";
             if (File.Exists(APIKeyFileName)) API_KEY = File.ReadAllText(APIKeyFileName);
             else
@@ -253,7 +253,7 @@ namespace Classic_Item_Detector
                             else
                             {
                                 Console.WriteLine(data);
-                                File.WriteAllText(filename, data);
+                                ATT.TextFile.WriteAllText(filename, data);
                             }
                             break;
                         }
@@ -341,13 +341,13 @@ namespace Classic_Item_Detector
                 }
             }
             Console.WriteLine("Done parsing the raw data.");
-            File.WriteAllText("RAW_classicItemDB.json", MiniJSON.Json.Serialize(rawClassicData));
+            ATT.TextFile.WriteAllText("RAW_classicItemDB.json", MiniJSON.Json.Serialize(rawClassicData));
             Console.WriteLine("Done exporting the raw data.");
 
             // Convert the data into a more meaningful format structure.
             var keys = rawClassicData.Keys.ToList();
             keys.Sort();
-            File.WriteAllText("classicItemIDs.json", MiniJSON.Json.Serialize(keys));
+            ATT.TextFile.WriteAllText("classicItemIDs.json", MiniJSON.Json.Serialize(keys));
             Console.WriteLine("Done exporting the data.");
             var itemData = new Dictionary<int, Dictionary<string, object>>();
             foreach (var itemID in keys)
@@ -543,7 +543,7 @@ namespace Classic_Item_Detector
                     if (retailData.TryGetValue("spellID", out r)) data["spellID"] = r;
                 }
             }
-            File.WriteAllText("classicItemDB.json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", itemData.Values.ToList() }}));
+            ATT.TextFile.WriteAllText("classicItemDB.json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", itemData.Values.ToList() }}));
         }
     }
 }

@@ -240,10 +240,10 @@ namespace ATT
                 }
 
                 // Export all of the Items to the Item DB folder.
-                File.WriteAllText(Path.Combine(directory, "AllItemFiltersByID.lua"), filterBuilder.AppendLine().Append("}").ToString(), Encoding.UTF8);
-                File.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString(), Encoding.UTF8);
-                File.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString(), Encoding.UTF8);
-                File.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString(), Encoding.UTF8);
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "AllItemFiltersByID.lua"), filterBuilder.AppendLine().Append("}").ToString());
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "AllItemsByID.lua"), builder2.ToString());
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "AllItems.lua"), ATT.Export.ExportRawLua(allItems).ToString());
+                ATT.TextFile.WriteAllText(Path.Combine(directory, "ItemsMissingData.lua"), ATT.Export.ExportRawLua(itemsMissingData).ToString());
 
                 // Export all items into their respective filter locations
                 var filtersFolder = Path.Combine(directory, "Filters/");
@@ -264,7 +264,7 @@ namespace ATT
                             builder.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString());
                 }
 
                 // Export all recipes into their respective recipe locations
@@ -322,7 +322,7 @@ namespace ATT
                                 builder.AppendLine(");");
                             }
                         }
-                        File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString(), Encoding.UTF8);
+                        ATT.TextFile.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());
                     }
                 }
             }

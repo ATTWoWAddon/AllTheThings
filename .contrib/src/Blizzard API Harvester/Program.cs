@@ -281,7 +281,7 @@ namespace ATT
                 MinItemID = itemIDs[0];
                 MaxItemID = itemIDs[1];
             }
-            else File.WriteAllText(ItemIDsFileName, $"{MinItemID},{MaxItemID}");
+            else ATT.TextFile.WriteAllText(ItemIDsFileName, $"{MinItemID},{MaxItemID}");
             UseFastThrottle = MaxItemID - MinItemID < 36000;
             RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
         }
@@ -300,7 +300,7 @@ namespace ATT
                 MinQuestID = questIDs[0];
                 MaxQuestID = questIDs[1];
             }
-            else File.WriteAllText(QuestIDsFileName, $"{MinItemID},{MaxItemID}");
+            else ATT.TextFile.WriteAllText(QuestIDsFileName, $"{MinItemID},{MaxItemID}");
             UseFastThrottle = MaxQuestID - MinQuestID < 36000;
             RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
         }
@@ -501,6 +501,7 @@ namespace ATT
         private static void SaveFiles()
         {
             WaitForData = true;
+            var normalizedFiles = new HashSet<string>();
             while (WaitForData || DataResults.Count > 0)
             {
                 string[] dataToStore = new string[DataResults.Count];
@@ -511,9 +512,15 @@ namespace ATT
                     DataResults.TryDequeue(out var s);
                     dataToStore[i++] = s;
                 }
-                string rawStorage = string.Join(Environment.NewLine, dataToStore);
+                string rawStorage = string.Join("\n", dataToStore);
                 if (!string.IsNullOrEmpty(rawStorage))
-                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), rawStorage + Environment.NewLine);
+                {
+                    string filename = string.Format(RawDirectoryFormat, "DATA");
+                    // Canonicalize an older cache once before appending LF records.
+                    if (normalizedFiles.Add(filename) && File.Exists(filename))
+                        ATT.TextFile.WriteAllText(filename, File.ReadAllText(filename));
+                    File.AppendAllText(filename, ATT.TextFile.Normalize(rawStorage), ATT.TextFile.Utf8);
+                }
 
                 // wait for more data to show up
                 Thread.Sleep(10000);
@@ -573,7 +580,7 @@ namespace ATT
                 return expectedMax;
 
             var contents = File.ReadAllText(string.Format(RawDirectoryFormat, "DATA"));
-            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string[] individualDatas = contents.Split(new string[] { "\r\n", "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
             long minIdFound = expectedMax;
             foreach (string data in individualDatas)
             {
@@ -887,7 +894,7 @@ namespace ATT
         private static void EnqueueFileContents(FileInfo fileInfo)
         {
             var contents = File.ReadAllText(fileInfo.FullName);
-            string[] individualDatas = contents.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            string[] individualDatas = contents.Split(new string[] { "\r\n", "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
             if (individualDatas.Length > 500)
             {
                 individualDatas.AsParallel().ForAll(ParseDatas.Enqueue);
@@ -1573,9 +1580,9 @@ namespace ATT
             }
 
             if (ProcessObjects[ObjType.item])
-                File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+                ATT.TextFile.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
             if (ProcessObjects[ObjType.quest])
-                File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+                ATT.TextFile.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
 
             Console.WriteLine("Done exporting the data.");
             WaitForParsingData = false;
