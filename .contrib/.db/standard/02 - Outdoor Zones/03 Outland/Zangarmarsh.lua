@@ -1656,6 +1656,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					qi = 31953,	-- Ward of Waking (Provided)
 					coord = { 80.2, 65.2, ZANGARMARSH },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						MOONGLADE,
+					},
 					timeline = { REMOVED_4_0_1 },
 					classes = { DRUID },
 					lvl = 70,

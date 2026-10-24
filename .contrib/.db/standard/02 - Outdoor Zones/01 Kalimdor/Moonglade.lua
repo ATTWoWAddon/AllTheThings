@@ -367,9 +367,15 @@ maproot(KALIMDOR, MOONGLADE, {
 				sourceQuest = 10964,	-- Waking the Sleeper
 				qg = 22834,	-- Clintar Dreamwalker
 				coord = { 75.5, 67.0, MOONGLADE },
+				maps = { AUCHINDOUN_SETHEKK_HALLS },
 				timeline = { REMOVED_4_0_1 },
 				classes = { DRUID },
 				lvl = 70,
+				groups = {
+						objective(1, {	-- 0/1 Assist Clintar in gathering the relics
+							provider = { "n", 22916 },	-- Clintar Dreamwalker's Spirit
+						}),
+					},
 			})),
 			{	-- Power over Poison
 				allianceQuestData = q(6125, {	-- Power over Poison [A]
