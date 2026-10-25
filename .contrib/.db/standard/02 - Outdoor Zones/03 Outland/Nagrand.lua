@@ -1462,15 +1462,28 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10988, {	-- The Raven Stones
 					sourceQuest = 10987,	-- To Catch A Sparrowhawk
 					qg = 22981,	-- Watcher Elaira
+					qis = {
+						32315,	-- Cenarion Sparrowhawk Whistle (PQI!)
+						32313,	-- Raven Stone
+					},
 					coord = { 20.6, 35.7, NAGRAND },
-					timeline = { REMOVED_4_0_1 },
-					maps = { TEROKKAR_FOREST },
-					cost = {
-						{ "i", 32315, 1 },	-- Cenarion Sparrowhawk Whistle (Provided)
-						{ "i", 32313, 8 },	-- Raven Stone
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					maps = {
+					AUCHINDOUN_SETHEKK_HALLS,
+					BLADES_EDGE_MOUNTAINS,
+					TEROKKAR_FOREST,
 					},
 					classes = { DRUID },
 					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/8 Raven Stone
+							providers = {
+								{ "i", 32315},	-- Cenarion Sparrowhawk Whistle (PQI!)
+								{ "i", 32313},	-- Raven Stone
+								{ "o", 185541},	-- Raven Stone Fragment
+							},
+						}),
+					},
 				})),
 				q(9962, {	-- The Ring of Blood: Brokentoe
 					qg = 18471,	-- Gurgthock
@@ -1682,14 +1695,21 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10987, {	-- To Catch A Sparrowhawk
 					sourceQuest = 10986,	-- Eyes in the Sky
 					qg = 22981,	-- Watcher Elaira
-					coord = { 20.6, 35.7, NAGRAND },
-					timeline = { REMOVED_4_0_1 },
-					cost = {
-						{ "i", 32321, 1 },	-- Sparrowhawk Net (Provided)
-						{ "i", 32320, 1 },	-- Captive Sparrowhawk
+					qis = {
+						32320,	-- Captive Sparrowhawk
+						32321,	-- Sparrowhawk Net (PQI!)
 					},
+					coord = { 20.6, 35.7, NAGRAND },
+					maps = { AUCHINDOUN_SETHEKK_HALLS },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					classes = { DRUID },
 					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/1 Captive Sparrowhawk
+							provider = { "i", 32320 },	-- Captive Sparrowhawk
+							cr = 22979,	-- Wild Sparrowhawk
+						}),
+					},
 				})),
 				q(10081, {	-- To Meet Mother Kashur
 					sourceQuest = 10045,	-- Material Components

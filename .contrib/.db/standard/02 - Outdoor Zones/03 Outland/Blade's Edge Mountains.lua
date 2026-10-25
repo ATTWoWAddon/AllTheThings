@@ -639,8 +639,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10980,	-- The Book of the Raven
 					qg = 22924,	-- Arthorn Windsong
 					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					maps = { NAGRAND },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						NAGRAND,
+					},
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					classes = { DRUID },
 					lvl = 70,
 				})),
@@ -1755,11 +1758,25 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10980, {	-- The Book of the Raven
 					sourceQuest = 10979,	-- To the Evergrove
 					qg = 22924,	-- Arthorn Windsong
+					qis = {
+						32244,	-- Seer's Stone (PQI!)
+						32567,	-- Aether Ray Eye
+					},
 					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					cost = { { "i", 32244, 1 } },	-- Seer's Stone (Provided)
+					maps = { AUCHINDOUN_SETHEKK_HALLS },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					classes = { DRUID },
 					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/1 	Learn about the Book of the Raven
+							providers = {
+								{ "n", 22932 },	-- Sai'kkal the Elder
+								{ "i", 32244 },	-- Seer's Stone (PQI!)
+							},
+							cost = { { "i", 32567, 1 } },	-- Aether Ray Eye
+							cr = 22181,	-- Aether Ray
+						}),
+					},
 				})),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11025, {	-- The Crystals
 					qg = 23233,	-- Chu'a'lor

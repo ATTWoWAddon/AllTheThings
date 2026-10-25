@@ -368,7 +368,7 @@ maproot(KALIMDOR, MOONGLADE, {
 				qg = 22834,	-- Clintar Dreamwalker
 				coord = { 75.5, 67.0, MOONGLADE },
 				maps = { AUCHINDOUN_SETHEKK_HALLS },
-				timeline = { REMOVED_4_0_1 },
+				timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 				classes = { DRUID },
 				lvl = 70,
 				groups = {
@@ -422,7 +422,11 @@ maproot(KALIMDOR, MOONGLADE, {
 				qg = 22837,	-- Dreamwarden Lurosa
 				qi = 32074,	-- Relics of Aviana
 				coord = { 72.5, 63.3, MOONGLADE },
-				timeline = { REMOVED_4_0_1 },
+				maps = {
+					AUCHINDOUN_SETHEKK_HALLS,
+					ZANGARMARSH,
+				},
+				timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 				maps = { ZANGARMARSH },
 				classes = { DRUID },
 				lvl = 70,

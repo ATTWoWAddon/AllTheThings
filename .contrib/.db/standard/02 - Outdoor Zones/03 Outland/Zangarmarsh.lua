@@ -500,7 +500,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10993,	-- Return to Cenarion Refuge
 					qg = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					coord = { 80.2, 65.2, ZANGARMARSH },
-					timeline = { REMOVED_4_0_1 },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					maps = { AZSHARA },
 					classes = { DRUID },
 					lvl = 70,
@@ -1576,8 +1576,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10978,	-- Return to Morthis Whisperwing
 					qg = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					coord = { 80.2, 65.2, ZANGARMARSH },
-					timeline = { REMOVED_4_0_1 },
-					maps = { BLADES_EDGE_MOUNTAINS },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						BLADES_EDGE_MOUNTAINS,
+					},
 					classes = { DRUID },
 					lvl = 70,
 				})),
@@ -1660,7 +1663,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						AUCHINDOUN_SETHEKK_HALLS,
 						MOONGLADE,
 					},
-					timeline = { REMOVED_4_0_1 },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					classes = { DRUID },
 					lvl = 70,
 				})),
