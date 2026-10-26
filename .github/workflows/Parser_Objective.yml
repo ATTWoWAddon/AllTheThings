@@ -19,52 +19,65 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Build Parser from source
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: |
+          $vswhere = "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe"
+          $msbuild = & $vswhere -latest -products '*' -requires Microsoft.Component.MSBuild -find 'MSBuild\**\Bin\MSBuild.exe' | Select-Object -First 1
+          if (-not $msbuild) { throw 'MSBuild was not found' }
+          $output = "$env:GITHUB_WORKSPACE\.contrib\.builds\parser\"
+          $intermediate = "$env:GITHUB_WORKSPACE\.contrib\.builds\parser-obj\"
+          & $msbuild '.contrib/src/Parser/Parser.csproj' /nologo /m /p:Configuration=Release /p:Platform=x64 /p:OutputType=Exe "/p:OutputPath=$output" "/p:BaseIntermediateOutputPath=$intermediate" "/p:IntermediateOutputPath=$intermediate"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          "ATT_PARSER=${output}Parser.exe" >> $env:GITHUB_ENV
+
       - name: Database Parser for Retail with objective
         timeout-minutes: 5
         run: |
-          "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/retail/objectives.config"
+          "%ATT_PARSER%" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/retail/objectives.config"
         shell: cmd
 
       - name: Database Parser for Classic Era
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
         shell: cmd
 
       - name: Database Parser for Season of Discovery
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
         shell: cmd
 
       - name: Database Parser for The Burning Crusade
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
         shell: cmd
 
       - name: Database Parser for Wrath of the Lich King
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
         shell: cmd
 
       - name: Database Parser for Cataclysm
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
         shell: cmd
 
       - name: Database Parser for Mists of Pandaria
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
       - name: Database Parser for Forever
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
         shell: cmd
 
       - uses: actions/upload-artifact@v7

@@ -8,6 +8,7 @@
   <PropertyGroup>
     <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputType>Exe</OutputType>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <StartupObject>ATT.Program</StartupObject>
   </PropertyGroup>
@@ -28,7 +29,7 @@
   <ItemGroup>
     <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
+      <HintPath>..\..\.tools\Csv.dll</HintPath>
     </Reference>
     <Reference Include="KeraLua, Version=1.2.13.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -151,4 +152,7 @@
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
     <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
   </Target>
+  <ItemGroup>
+    <Compile Include="..\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>

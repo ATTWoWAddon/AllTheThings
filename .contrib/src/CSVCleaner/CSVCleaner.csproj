@@ -30,4 +30,7 @@
   <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
     <Error Condition="'$(Platform)' != 'x64'" Text="CSVCleaner supports only the x64 platform in this revision." />
   </Target>
+  <ItemGroup>
+    <Compile Include="..\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>

@@ -27,7 +27,7 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("classic/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "01 - Classic.lua"), sb.ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "01 - Classic.lua"), sb.ToString());
 
 // TBC Profession Data
 sb.Clear().AppendLine("-- #if AFTER 2.0.0").AppendLine(commonHeader);
@@ -45,7 +45,7 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("tbc/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "02 - TBC.lua"), sb.Append("-- #endif").ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "02 - TBC.lua"), sb.Append("-- #endif").ToString());
 
 // Wrath Profession Data
 sb.Clear().AppendLine("-- #if AFTER 3.0.0").AppendLine(commonHeader);
@@ -63,7 +63,7 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("wotlk/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "03 - Wrath.lua"), sb.Append("-- #endif").ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "03 - Wrath.lua"), sb.Append("-- #endif").ToString());
 
 // Cataclysm Profession Data
 sb.Clear().AppendLine("-- #if AFTER 4.0.0").AppendLine(commonHeader);
@@ -81,7 +81,7 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("cata/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "04 - Cataclysm.lua"), sb.Append("-- #endif").ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "04 - Cataclysm.lua"), sb.Append("-- #endif").ToString());
 
 // Mists of Pandaria Profession Data
 sb.Clear().AppendLine("-- #if AFTER 5.0.0").AppendLine(commonHeader);
@@ -99,7 +99,7 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("cata/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "05 - Mists of Pandaria.lua"), sb.Append("-- #endif").ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "05 - Mists of Pandaria.lua"), sb.Append("-- #endif").ToString());
 
 
 
@@ -119,4 +119,4 @@ foreach (string profession in new string[] { "Archaeology", "Cooking", "Fishing"
     Console.Write("retail/");
     Helper.Parse(pageString, sb, profession);
 }
-File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "11 - The War Within.lua"), sb.Append("-- #endif").ToString());
+ATT.TextFile.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "11 - The War Within.lua"), sb.Append("-- #endif").ToString());

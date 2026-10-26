@@ -54,7 +54,7 @@ foreach (var file in Directory.EnumerateFiles("../..", "*.*", SearchOption.AllDi
             while (startIndex >= 0);
             if (updatedContents != contents)
             {
-                File.WriteAllText(file, updatedContents);
+                ATT.TextFile.WriteAllText(file, updatedContents);
                 Console.WriteLine("Replaced the contents of the files!");
             }
         }
@@ -83,7 +83,7 @@ static string[] LoadFromDatabase()
         var data = DownloadCSVFromWAGO();
         if (string.IsNullOrEmpty(data)) throw new Exception("Failed to download data from WAGO.");
         Directory.CreateDirectory(Path.GetDirectoryName(fileName));
-        File.WriteAllText(fileName, data, Encoding.UTF8);
+        ATT.TextFile.WriteAllText(fileName, data);
     }
     Console.Write("Loading: ");
     Console.WriteLine(fileName);
