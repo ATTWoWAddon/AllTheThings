@@ -1,0 +1,1009 @@
+ATT file normalization audit
+Base: 9d46ba4c66d95b62e8bbd6c71bf4309ac1ca59c8
+Worktree: /Users/hongjunqi/.codex/worktrees/text-normalization/AllTheThings
+
+Git configuration (no values are required):
+core.autocrlf: (unset)
+core.eol: (unset)
+core.safecrlf: (unset)
+
+EOL counts:
+{
+  "i": {
+    "i/lf": 5040,
+    "i/none": 81,
+    "i/-text": 331
+  },
+  "w": {
+    "w/lf": 820,
+    "w/crlf": 4220,
+    "w/none": 81,
+    "w/-text": 331
+  }
+}
+Tracked text files: 5121
+Tracked binary files: 331
+
+i_crlf (0)
+
+i_mixed (0)
+
+w_mixed (0)
+
+missing_final_newline (207)
+.contrib/.db/build - all.bat
+.contrib/.db/build - classic - 01 - era.bat
+.contrib/.db/build - classic - 01 - sod.bat
+.contrib/.db/build - classic - 02 - tbc.bat
+.contrib/.db/build - classic - 03 - wrath.bat
+.contrib/.db/build - classic - 04 - cata.bat
+.contrib/.db/build - classic - 05 - mop.bat
+.contrib/.db/build - classic - all.bat
+.contrib/.db/build - forever.bat
+.contrib/.db/build - retail + objectives.bat
+.contrib/.db/build - retail + simplify.bat
+.contrib/.db/build - retail - beta.bat
+.contrib/.db/build - retail - ptr.bat
+.contrib/.db/build - retail.bat
+.contrib/.db/forever/.config/exports/ExplorationAreaPositionDB.lua
+.contrib/.db/forever/.config/structures/alchemy.lua
+.contrib/.db/forever/.config/structures/engineering.lua
+.contrib/.db/forever/crafted items/05 - Added With Ahn'Qiraj.lua
+.contrib/.db/forever/dungeons & raids/0.6 - world bosses.lua
+.contrib/.db/forever/dungeons & raids/1.0 - molten core.lua
+.contrib/.db/forever/dungeons & raids/gnomeregan.lua
+.contrib/.db/forever/dungeons & raids/the deadmines.lua
+.contrib/.db/forever/expansion features/black market auction house.lua
+.contrib/.db/forever/profession db/alchemy.lua
+.contrib/.db/forever/profession db/enchanting.lua
+.contrib/.db/forever/pvp/.metadata.lua
+.contrib/.db/forever/zzOLD/10 - Professions/Alchemy.lua
+.contrib/.db/forever/zzOLD/10 - Professions/Enchanting.lua
+.contrib/.db/forever/zzOLD/10 - Professions/Engineering.lua
+.contrib/.db/shared/constants/raceIDs.lua
+.contrib/.db/shared/lib/Constants/Phases.lua
+.contrib/.db/shared/lib/Headers/Character/Character.lua
+.contrib/.db/shared/lib/Headers/Dungeons & Raids/Dungeon Finder.lua
+.contrib/.db/shared/lib/Headers/Dungeons & Raids/Dungeons & Raids.lua
+.contrib/.db/shared/lib/Headers/Dungeons & Raids/Dungeons.lua
+.contrib/.db/shared/lib/Headers/Events/World Events.lua
+.contrib/.db/shared/lib/Headers/Expansion Features/Expansion Features.lua
+.contrib/.db/shared/lib/Headers/Promotions/Promotions.lua
+.contrib/.db/shared/lib/Structures/Currencies/Badge of Justice.lua
+.contrib/.db/shared/objects/Dynamic/Crieve debugger objects.lua
+.contrib/.db/shared/objects/Dynamic/Restored player object names.lua
+.contrib/.db/standard/.config/.wago/01 - Classic/.update.bat
+.contrib/.db/standard/.config/.wago/01 - Classic/Localized/Criteria.3.4.0.43746.csv
+.contrib/.db/standard/.config/.wago/01 - Classic/Localized/CriteriaTree.3.4.0.43746.csv
+.contrib/.db/standard/.config/.wago/02 - The Burning Crusade/.update.bat
+.contrib/.db/standard/.config/.wago/02 - The Burning Crusade/Localized/CriteriaTree.3.4.0.43746.csv
+.contrib/.db/standard/.config/.wago/03 - Wrath of the Lich King/.update.bat
+.contrib/.db/standard/.config/.wago/03 - Wrath of the Lich King/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/04 - Cataclysm/.update.bat
+.contrib/.db/standard/.config/.wago/04 - Cataclysm/Item.4.4.2.60895.csv
+.contrib/.db/standard/.config/.wago/04 - Cataclysm/ItemModifiedAppearance.4.4.2.60895.csv
+.contrib/.db/standard/.config/.wago/04 - Cataclysm/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/05 - Mists of Pandaria/.update.bat
+.contrib/.db/standard/.config/.wago/06 - Warlords of Draenor/.update.bat
+.contrib/.db/standard/.config/.wago/06 - Warlords of Draenor/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/07 - Legion/.update.bat
+.contrib/.db/standard/.config/.wago/07 - Legion/ContentTuning.7.3.5.26972.csv
+.contrib/.db/standard/.config/.wago/07 - Legion/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/07 - Legion/UiMap.7.3.5.26972.csv
+.contrib/.db/standard/.config/.wago/07 - Legion/UiMapAssignment.7.3.5.26972.csv
+.contrib/.db/standard/.config/.wago/08 - Battle for Azeroth/.update.bat
+.contrib/.db/standard/.config/.wago/08 - Battle for Azeroth/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/09 - Shadowlands/.update.bat
+.contrib/.db/standard/.config/.wago/09 - Shadowlands/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/10 - Dragonflight/.update.bat
+.contrib/.db/standard/.config/.wago/10 - Dragonflight/Localized/.update.bat
+.contrib/.db/standard/.config/.wago/11 - The War Within/.update.bat
+.contrib/.db/standard/.config/.wago/PTR/.update.bat
+.contrib/.db/standard/.config/classic/06 - Warlords of Draenor.config
+.contrib/.db/standard/.config/classic/07 - Legion.config
+.contrib/.db/standard/.config/classic/08 - Battle for Azeroth.config
+.contrib/.db/standard/.config/classic/09 - Shadowlands.config
+.contrib/.db/standard/.config/classic/10 - Dragonflight.config
+.contrib/.db/standard/.config/classic/11 - The War Within.config
+.contrib/.db/standard/.config/options/objectives.config
+.contrib/.db/standard/00 - DB/Parser Setup Data/MAPID_MERGE_REPLACEMENTS.lua
+.contrib/.db/standard/00 - Item DB/itemDB.json
+.contrib/.db/standard/00 - Item DB/questDB.json
+.contrib/.db/standard/06 - Expansion Features/09 - Shadowlands/01 Covenants/Covenant - Necrolord/Color - Necrolord Green.txt
+.contrib/.db/standard/06 - Expansion Features/09 - Shadowlands/01 Covenants/Covenant - Night Fae/Color - Night Fae Purple.txt
+.contrib/.db/standard/06 - Expansion Features/09 - Shadowlands/01 Covenants/Covenant - Venthyr/Color - Venthyr Red.txt
+.contrib/.db/standard/11 - Character/Heirlooms.lua
+.contrib/.db/standard/11 - Character/Legendaries.lua
+.contrib/.raw/ItemDB/1.15.7 Classic - ItemDB.lua
+.contrib/.raw/ItemDB/1.60.1 Forever - ItemDB.lua
+.contrib/.raw/ItemDB/2.5.1 Burning Crusade - ItemDB.lua
+.contrib/.raw/ItemDB/3.4.0 Wrath of the Lich King - ItemDB.lua
+.contrib/.raw/ItemDB/4.4.2 Cataclysm - ItemDB.lua
+.contrib/.raw/ItemDB/READ ME.txt
+.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj
+.contrib/.source/ATT Sync Tool/App.config
+.contrib/.source/ATT Sync Tool/MainForm.resx
+.contrib/.source/ATT Sync Tool/Properties/Resources.resx
+.contrib/.source/ATT Sync Tool/Tracer.cs
+.contrib/.source/ATT Sync Tool/packages.config
+.contrib/.source/AssetDB Builder/MiniJSON.cs
+.contrib/.source/Database/Database.csproj
+.contrib/.source/Database/MiniJSON.cs
+.contrib/.source/Database/app.config
+.contrib/.source/Database/packages.config
+.contrib/.source/IconID Converter/Program.cs
+.contrib/.source/Item Database Consolidator/App.config
+.contrib/.source/Item Database Consolidator/Item Database Consolidator.csproj
+.contrib/.source/Item Database Consolidator/bin/Debug/Item DB Compiler.exe.config
+.contrib/.source/packages/KeraLua.1.2.13/LICENSE
+.contrib/.source/packages/KeraLua.1.2.13/build/net46/KeraLua.targets
+.contrib/.source/packages/NLua.1.5.7/LICENSE
+.contrib/.tools/ATT Sync Tool.exe.config
+.contrib/.tools/AssetDB Builder.deps.json
+.contrib/.tools/AssetDB Builder.runtimeconfig.json
+.contrib/.tools/CSVCleaner.deps.json
+.contrib/.tools/CSVCleaner.runtimeconfig.json
+.contrib/.tools/Database.dll.config
+.contrib/.tools/GameObjectCache-to-ObjectDB.ps1
+.contrib/.tools/IconID Converter.deps.json
+.contrib/.tools/IconID Converter.runtimeconfig.json
+.contrib/.tools/Item Database Consolidator.exe.config
+.contrib/.tools/ItemBonus.regex
+.contrib/.tools/Skill Level Requirements.deps.json
+.contrib/.tools/Skill Level Requirements.runtimeconfig.json
+.contrib/.tools/TOOLS_ROADMAP.md
+.contrib/Harvesters/DBs/Compare_itemDB.bat
+.contrib/Harvesters/DBs/Compare_questDB.bat
+.contrib/Harvesters/Database Harvester/Deprecated Functions.py
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Campsites.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Decors.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Followers.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Illusions.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/SkillLineOther.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Achievements.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Mounts.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Alchemy.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Arcana Manipulation.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Archaeology.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Ascension Crafting.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Blacksmithing.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Cooking.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Engineering.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/First Aid.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Herbalism.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Inscription.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Jewelcrafting.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Leatherworking.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Mining.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Other.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Poisons.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Skinning.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Soul Cyphering.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Professions/Tailoring.txt
+.contrib/Harvesters/Database Harvester/Exclusion/SkillLineOther.txt
+.contrib/Harvesters/Database Harvester/Exclusion/SkillLines.txt
+.contrib/Harvesters/Database Harvester/Exclusion/Titles.txt
+.contrib/Harvesters/Database Harvester/readme.txt
+.contrib/Harvesters/Harvest_ALL.bat
+.contrib/Harvesters/Harvest_ITEM.bat
+.contrib/Harvesters/Harvest_QUEST.bat
+.contrib/Harvesters/MaxClassicItemID.txt
+.contrib/Harvesters/RAW_classicItemDB.json
+.contrib/Harvesters/WoWHead Harvester/ATT-WoWHeadQuestHarvester.js
+.contrib/Harvesters/classicItemDB.json
+.contrib/Harvesters/classicItemIDs.json
+.contrib/Source Code/Blizzard API Harvester/Blizzard API Harvester.csproj
+.contrib/Source Code/Blizzard API Harvester/Extensions.cs
+.contrib/Source Code/Blizzard API Harvester/lib/MiniJSON.cs
+.contrib/Source Code/Blizzard API Harvester/packages.config
+.contrib/Source Code/Blizzard API Harvester/packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.xml
+.contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/tools/install.ps1
+.contrib/Source Code/Classic Item Detector/Classic Item Detector.csproj
+.contrib/Source Code/Classic Item Detector/lib/MiniJSON.cs
+.contrib/Source Code/Item DB Compare Tool/Extensions.cs
+.contrib/Source Code/Item DB Compare Tool/Item DB Compare Tool.csproj
+.contrib/Source Code/Item DB Compare Tool/lib/MiniJSON.cs
+.contrib/Source Code/Parser/CollectedStatus.cs
+.contrib/Source Code/Parser/DB/Attributes/ExportableDataAttribute.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoChild.cs
+.contrib/Source Code/Parser/FieldTypes/IExportableField.cs
+.contrib/Source Code/Parser/Parser.csproj
+.contrib/Source Code/Parser/packages.config
+.contrib/Source Code/Profession Automator/Profession Automator.csproj
+.contrib/Source Code/Profession Automator/bin/output.txt
+.contrib/Source Code/Profession Automator/lib/MiniJSON.cs
+.github/ISSUE_TEMPLATE/Data_Discrepancy.yaml
+.github/ISSUE_TEMPLATE/bug_report.yaml
+.github/ISSUE_TEMPLATE/feature_requset.yaml
+.github/workflows/Parser_Objective.yml
+.vscode/launch.json
+_config.yml
+lib/Colors.lua
+src/Classes/Achievement Data.lua
+src/Classes/Classic/Mounts & Battle Pets.lua
+src/Classes/Dynamic Categories.lua
+src/Classes/Ensemble.lua
+src/Classes/Expansion.lua
+src/Classes/Filter Types.lua
+src/Classes/Guild Achievements.lua
+src/Modules/CustomCollect.lua
+src/Settings/Pages/About.lua
+src/Settings/Pages/Features - Audio.lua
+src/Settings/Pages/Features - Blacklist.lua
+src/Settings/Pages/Features - Reporting.lua
+src/Settings/Pages/General - Unobtainables.lua
+src/UI/Windows/Attunements.lua
+src/UI/Windows/Factions.lua
+src/UI/Windows/Heirlooms.lua
+src/UI/Windows/Mounts.lua
+src/UI/Windows/Titles.lua
+src/UI/Windows/Toys.lua
+
+multiple_final_newlines (14)
+.contrib/.db/forever/zzOLD/01 - Dungeons Raids/01 - Classic/Blackrock Depths.lua
+.contrib/.db/forever/zzOLD/01 - Dungeons Raids/01 - Classic/Zul'Farrak.lua
+.contrib/.db/forever/zzOLD/10 - Professions/First Aid.lua
+.contrib/.db/shared/lib/Structures/Professions/Leatherworking.lua
+.contrib/.db/standard/00 - Profession DB/Junkyard Tinkering.lua
+.contrib/.db/standard/02 - Outdoor Zones/16 Quel'Thalas/Zul'Aman/Amani Tribe.lua
+.contrib/.db/standard/06 - Expansion Features/12 - Midnight/Showdown/Zone Rewards.lua
+.contrib/.db/standard/07 - Events/Remix Legion/Infinite Bazaar.lua
+.contrib/.source/ATT Sync Tool/MainForm.Designer.cs
+lib/Table.lua
+src/Classes/Decor.lua
+src/Classes/Toys.lua
+src/Modules/FactionData.lua
+src/Modules/Model.lua
+
+utf8_bom (444)
+.contrib/.db/forever/.config/exports/ItemDB.lua
+.contrib/.db/shared/constants/headerIDs.lua
+.contrib/.db/shared/objects/Dynamic/Keystone (Uldaman).lua
+.contrib/.db/shared/objects/Dynamic/Kindo'jan TEMP.lua
+.contrib/.db/shared/objects/Dynamic/__Missing objects on wowhead.lua
+.contrib/.db/shared/objects/ObjectDB.lua
+.contrib/.db/standard/00 - DB/AssetDB/TBC.lua
+.contrib/.db/standard/00 - Item DB/.dynamic/05 - Mists of Pandaria.lua
+.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj
+.contrib/.source/ATT Sync Tool/App.config
+.contrib/.source/ATT Sync Tool/MainForm.Designer.cs
+.contrib/.source/ATT Sync Tool/MainForm.cs
+.contrib/.source/ATT Sync Tool/MainForm.resx
+.contrib/.source/ATT Sync Tool/Program.cs
+.contrib/.source/ATT Sync Tool/Properties/AssemblyInfo.cs
+.contrib/.source/ATT Sync Tool/Properties/Resources.Designer.cs
+.contrib/.source/ATT Sync Tool/Properties/Resources.resx
+.contrib/.source/ATT Sync Tool/Properties/Settings.Designer.cs
+.contrib/.source/ATT Sync Tool/Properties/Settings.settings
+.contrib/.source/ATT Sync Tool/Tracer.cs
+.contrib/.source/ATT Sync Tool/packages.config
+.contrib/.source/All The Tools.sln
+.contrib/.source/AssetDB Builder/AssetDB Builder.csproj
+.contrib/.source/AssetDB Builder/MiniJSON.cs
+.contrib/.source/AssetDB Builder/Program.cs
+.contrib/.source/Database/ATTAccountWideData.cs
+.contrib/.source/Database/ATTCharacterData.cs
+.contrib/.source/Database/CollectionState.cs
+.contrib/.source/Database/Container.cs
+.contrib/.source/Database/Database.cs
+.contrib/.source/Database/Database.csproj
+.contrib/.source/Database/IBinaryDataFormatter.cs
+.contrib/.source/Database/MiniJSON.cs
+.contrib/.source/Database/Properties/AssemblyInfo.cs
+.contrib/.source/Database/PropertyChanged.cs
+.contrib/.source/Database/SavedVariableAttribute.cs
+.contrib/.source/Database/SharedCollectionData.cs
+.contrib/.source/Database/app.config
+.contrib/.source/Database/packages.config
+.contrib/.source/IconID Converter/IconID Converter.csproj
+.contrib/.source/IconID Converter/Program.cs
+.contrib/.source/Item Database Consolidator/App.config
+.contrib/.source/Item Database Consolidator/Item Database Consolidator.csproj
+.contrib/.source/Item Database Consolidator/Program.cs
+.contrib/.source/Item Database Consolidator/Properties/AssemblyInfo.cs
+.contrib/.source/Item Database Consolidator/bin/Debug/Item DB Compiler.exe.config
+.contrib/.source/Skill Level Requirements/Helper.cs
+.contrib/.source/Skill Level Requirements/Program.cs
+.contrib/.tools/ATT Sync Tool.exe.config
+.contrib/.tools/Database.dll.config
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Campsites.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Decors.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Followers.txt
+.contrib/Harvesters/Database Harvester/Exclusion - Forever/Illusions.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Achievements.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Creatures.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Explorations.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Factions.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/FlightPaths.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Items.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Mounts.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Pets.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Alchemy.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Blacksmithing.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Cooking.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Enchanting.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Engineering.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/First Aid.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Fishing.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Herbalism.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Leatherworking.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Mining.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Other.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Poisons.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Skinning.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Professions/Tailoring.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Quests.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Recipes.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/SkillLines.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/SpellItems.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/SpellNames.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Titles.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Toys.txt
+.contrib/Harvesters/Database Harvester/Raw - Forever/Transmog.txt
+.contrib/Harvesters/Database Harvester/Raw/Achievements.txt
+.contrib/Harvesters/Database Harvester/Raw/Campsites.txt
+.contrib/Harvesters/Database Harvester/Raw/Creatures.txt
+.contrib/Harvesters/Database Harvester/Raw/Decors.txt
+.contrib/Harvesters/Database Harvester/Raw/Explorations.txt
+.contrib/Harvesters/Database Harvester/Raw/Factions.txt
+.contrib/Harvesters/Database Harvester/Raw/FlightPaths.txt
+.contrib/Harvesters/Database Harvester/Raw/Followers.txt
+.contrib/Harvesters/Database Harvester/Raw/Illusions.txt
+.contrib/Harvesters/Database Harvester/Raw/Items.txt
+.contrib/Harvesters/Database Harvester/Raw/Mounts.txt
+.contrib/Harvesters/Database Harvester/Raw/Pets.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Alchemy.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Blacksmithing.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Cooking.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Enchanting.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Engineering.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/First Aid.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Fishing.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Herbalism.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Leatherworking.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Mining.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Poisons.txt
+.contrib/Harvesters/Database Harvester/Raw/Professions/Tailoring.txt
+.contrib/Harvesters/Database Harvester/Raw/Quests.txt
+.contrib/Harvesters/Database Harvester/Raw/Recipes.txt
+.contrib/Harvesters/Database Harvester/Raw/SkillLines.txt
+.contrib/Harvesters/Database Harvester/Raw/SpellItems.txt
+.contrib/Harvesters/Database Harvester/Raw/SpellNames.txt
+.contrib/Harvesters/Database Harvester/Raw/Titles.txt
+.contrib/Harvesters/Database Harvester/Raw/Toys.txt
+.contrib/Harvesters/Database Harvester/Raw/Transmog.txt
+.contrib/Source Code/Blizzard API Harvester/Blizzard API Harvester.csproj
+.contrib/Source Code/Blizzard API Harvester/Blizzard API Harvester.sln
+.contrib/Source Code/Blizzard API Harvester/Extensions.cs
+.contrib/Source Code/Blizzard API Harvester/Properties/AssemblyInfo.cs
+.contrib/Source Code/Blizzard API Harvester/lib/MiniJSON.cs
+.contrib/Source Code/Blizzard API Harvester/packages.config
+.contrib/Source Code/Blizzard API Harvester/packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/net45/System.Net.Http.Formatting.xml
+.contrib/Source Code/CSVCleaner/CSVCleaner.csproj
+.contrib/Source Code/CSVCleaner/Program.cs
+.contrib/Source Code/Classic Item Detector/Classic Item Detector.csproj
+.contrib/Source Code/Classic Item Detector/Program.cs
+.contrib/Source Code/Classic Item Detector/Properties/AssemblyInfo.cs
+.contrib/Source Code/Classic Item Detector/lib/MiniJSON.cs
+.contrib/Source Code/Item DB Compare Tool/Extensions.cs
+.contrib/Source Code/Item DB Compare Tool/Item DB Compare Tool.csproj
+.contrib/Source Code/Item DB Compare Tool/Program.cs
+.contrib/Source Code/Item DB Compare Tool/Properties/AssemblyInfo.cs
+.contrib/Source Code/Item DB Compare Tool/lib/MiniJSON.cs
+.contrib/Source Code/Parser/CollectedStatus.cs
+.contrib/Source Code/Parser/CustomConfiguration.cs
+.contrib/Source Code/Parser/DB/Attributes/DataModuleAttribute.cs
+.contrib/Source Code/Parser/DB/Attributes/ExportableDataAttribute.cs
+.contrib/Source Code/Parser/DB/Attributes/LocalizeAttribute.cs
+.contrib/Source Code/Parser/DB/Interfaces/IDBType.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoAreaID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoChild.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoHolidayNameID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoItemID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoItemModifiedAppearanceID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoQuestID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoSpellID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoTransmogSetID.cs
+.contrib/Source Code/Parser/DB/Interfaces/IWagoUiMapID.cs
+.contrib/Source Code/Parser/DB/Types/Achievement.cs
+.contrib/Source Code/Parser/DB/Types/AchievementCategory.cs
+.contrib/Source Code/Parser/DB/Types/AreaTable.cs
+.contrib/Source Code/Parser/DB/Types/ArtifactAppearance.cs
+.contrib/Source Code/Parser/DB/Types/BattlePetSpecies.cs
+.contrib/Source Code/Parser/DB/Types/ClassTypeFlags.cs
+.contrib/Source Code/Parser/DB/Types/ContentTuning.cs
+.contrib/Source Code/Parser/DB/Types/Criteria.cs
+.contrib/Source Code/Parser/DB/Types/CriteriaTree.cs
+.contrib/Source Code/Parser/DB/Types/GlyphProperties.cs
+.contrib/Source Code/Parser/DB/Types/Holiday.cs
+.contrib/Source Code/Parser/DB/Types/HolidayNames.cs
+.contrib/Source Code/Parser/DB/Types/HouseDecor.cs
+.contrib/Source Code/Parser/DB/Types/Item.cs
+.contrib/Source Code/Parser/DB/Types/ItemBonus.cs
+.contrib/Source Code/Parser/DB/Types/ItemEffect.cs
+.contrib/Source Code/Parser/DB/Types/ItemModifiedAppearance.cs
+.contrib/Source Code/Parser/DB/Types/ItemSearchName.cs
+.contrib/Source Code/Parser/DB/Types/ItemXItemEffect.cs
+.contrib/Source Code/Parser/DB/Types/ModifierTree.cs
+.contrib/Source Code/Parser/DB/Types/RaceTypeBitIndexes.cs
+.contrib/Source Code/Parser/DB/Types/SkillLineAbility.cs
+.contrib/Source Code/Parser/DB/Types/SpellEffect.cs
+.contrib/Source Code/Parser/DB/Types/TaxiNodes.cs
+.contrib/Source Code/Parser/DB/Types/TransmogSet.cs
+.contrib/Source Code/Parser/DB/Types/TransmogSetItem.cs
+.contrib/Source Code/Parser/DB/Types/TransmogSourceTypeFlags.cs
+.contrib/Source Code/Parser/DB/Types/TypeFlags.cs
+.contrib/Source Code/Parser/DB/Types/UiMap.cs
+.contrib/Source Code/Parser/DB/Types/UiMapAssignment.cs
+.contrib/Source Code/Parser/DB/Types/WorldMapOverlay.cs
+.contrib/Source Code/Parser/DB/WagoData.cs
+.contrib/Source Code/Parser/DataValidator.cs
+.contrib/Source Code/Parser/Export/Export (Compressed Lua).cs
+.contrib/Source Code/Parser/Export/Export (Pure Lua).cs
+.contrib/Source Code/Parser/Export/Export (Raw Lua).cs
+.contrib/Source Code/Parser/Export/Export (Shortcuts).cs
+.contrib/Source Code/Parser/Export/Export (Structures).cs
+.contrib/Source Code/Parser/Export/Export.cs
+.contrib/Source Code/Parser/Export/Exporter.cs
+.contrib/Source Code/Parser/Export/Object Data/AchievementData.cs
+.contrib/Source Code/Parser/Export/Object Data/CriteriaData.cs
+.contrib/Source Code/Parser/Export/Object Data/HeaderData.cs
+.contrib/Source Code/Parser/Export/Object Data/ItemData.cs
+.contrib/Source Code/Parser/Export/Object Data/ItemSourceData.cs
+.contrib/Source Code/Parser/Export/Object Data/MapData.cs
+.contrib/Source Code/Parser/Export/Object Data/MountData.cs
+.contrib/Source Code/Parser/Export/Object Data/ObjectData.cs
+.contrib/Source Code/Parser/Export/Object Data/QuestData.cs
+.contrib/Source Code/Parser/Export/Object Data/RecipeData.cs
+.contrib/Source Code/Parser/Extensions.cs
+.contrib/Source Code/Parser/FieldTypes/Coords.cs
+.contrib/Source Code/Parser/FieldTypes/Cost.cs
+.contrib/Source Code/Parser/FieldTypes/IExportableField.cs
+.contrib/Source Code/Parser/FieldTypes/IMergeField.cs
+.contrib/Source Code/Parser/FieldTypes/IProcessedField.cs
+.contrib/Source Code/Parser/FieldTypes/LockCriteria.cs
+.contrib/Source Code/Parser/FieldTypes/Providers.cs
+.contrib/Source Code/Parser/FieldTypes/Timeline.cs
+.contrib/Source Code/Parser/FieldTypes/TimelineEntry.cs
+.contrib/Source Code/Parser/Framework/ConcurrentDataList.cs
+.contrib/Source Code/Parser/Framework/ConcurrentHashSet.cs
+.contrib/Source Code/Parser/Framework/Framework.Items.cs
+.contrib/Source Code/Parser/Framework/Framework.Logging.cs
+.contrib/Source Code/Parser/Framework/Framework.Merge.cs
+.contrib/Source Code/Parser/Framework/Framework.Objects.cs
+.contrib/Source Code/Parser/Framework/Handler.cs
+.contrib/Source Code/Parser/Framework/HierarchicalFieldAdjustments.cs
+.contrib/Source Code/Parser/Framework/ParseStage.cs
+.contrib/Source Code/Parser/Framework/ReplacementTree.cs
+.contrib/Source Code/Parser/Framework/Structs.cs
+.contrib/Source Code/Parser/Harvesters/ObjectHarvester.cs
+.contrib/Source Code/Parser/MiniJSON.cs
+.contrib/Source Code/Parser/Parser.csproj
+.contrib/Source Code/Parser/Parser.sln
+.contrib/Source Code/Parser/Program.cs
+.contrib/Source Code/Parser/Properties/AssemblyInfo.cs
+.contrib/Source Code/Parser/Tracer.cs
+.contrib/Source Code/Parser/packages.config
+.contrib/Source Code/Profession Automator/Profession Automator.csproj
+.contrib/Source Code/Profession Automator/Profession Automator.sln
+.contrib/Source Code/Profession Automator/Program.cs
+.contrib/Source Code/Profession Automator/Properties/AssemblyInfo.cs
+.contrib/Source Code/Profession Automator/lib/MiniJSON.cs
+db/.beta/Categories/BlackMarket.lua
+db/.beta/Categories/Character.lua
+db/.beta/Categories/Craftables.lua
+db/.beta/Categories/Delves.lua
+db/.beta/Categories/ExpansionFeatures.lua
+db/.beta/Categories/GroupFinder.lua
+db/.beta/Categories/HiddenAchievementTriggers.lua
+db/.beta/Categories/HiddenCurrencyTriggers.lua
+db/.beta/Categories/HiddenQuestTriggers.lua
+db/.beta/Categories/Holidays.lua
+db/.beta/Categories/Housing.lua
+db/.beta/Categories/InGameShop.lua
+db/.beta/Categories/Instances.lua
+db/.beta/Categories/NeverImplemented.lua
+db/.beta/Categories/PVP.lua
+db/.beta/Categories/Professions.lua
+db/.beta/Categories/Promotions.lua
+db/.beta/Categories/Secrets.lua
+db/.beta/Categories/Sourceless.lua
+db/.beta/Categories/TradingPost.lua
+db/.beta/Categories/Unsorted.lua
+db/.beta/Categories/WorldDrops.lua
+db/.beta/Categories/WorldEvents.lua
+db/.beta/Categories/Zones.lua
+db/.beta/Database.xml
+db/.beta/LocalizationDB.lua
+db/.beta/ReferenceDB.lua
+db/.ptr/Categories/BlackMarket.lua
+db/.ptr/Categories/Character.lua
+db/.ptr/Categories/Craftables.lua
+db/.ptr/Categories/Delves.lua
+db/.ptr/Categories/ExpansionFeatures.lua
+db/.ptr/Categories/GroupFinder.lua
+db/.ptr/Categories/HiddenAchievementTriggers.lua
+db/.ptr/Categories/HiddenCurrencyTriggers.lua
+db/.ptr/Categories/HiddenQuestTriggers.lua
+db/.ptr/Categories/Holidays.lua
+db/.ptr/Categories/Housing.lua
+db/.ptr/Categories/InGameShop.lua
+db/.ptr/Categories/Instances.lua
+db/.ptr/Categories/NeverImplemented.lua
+db/.ptr/Categories/PVP.lua
+db/.ptr/Categories/Professions.lua
+db/.ptr/Categories/Promotions.lua
+db/.ptr/Categories/Secrets.lua
+db/.ptr/Categories/Sourceless.lua
+db/.ptr/Categories/TradingPost.lua
+db/.ptr/Categories/Unsorted.lua
+db/.ptr/Categories/WorldDrops.lua
+db/.ptr/Categories/WorldEvents.lua
+db/.ptr/Categories/Zones.lua
+db/.ptr/Database.xml
+db/.ptr/LocalizationDB.lua
+db/.ptr/ReferenceDB.lua
+db/Camelot/Categories/Character.lua
+db/Camelot/Categories/Craftables.lua
+db/Camelot/Categories/ExpansionFeatures.lua
+db/Camelot/Categories/HiddenQuestTriggers.lua
+db/Camelot/Categories/Holidays.lua
+db/Camelot/Categories/Instances.lua
+db/Camelot/Categories/NeverImplemented.lua
+db/Camelot/Categories/PVP.lua
+db/Camelot/Categories/Professions.lua
+db/Camelot/Categories/WorldDrops.lua
+db/Camelot/Categories/Zones.lua
+db/Camelot/Database.xml
+db/Camelot/LocalizationDB.lua
+db/Camelot/ReferenceDB.lua
+db/Cata/Categories/Character.lua
+db/Cata/Categories/Craftables.lua
+db/Cata/Categories/ExpansionFeatures.lua
+db/Cata/Categories/GroupFinder.lua
+db/Cata/Categories/HiddenAchievementTriggers.lua
+db/Cata/Categories/HiddenQuestTriggers.lua
+db/Cata/Categories/Holidays.lua
+db/Cata/Categories/InGameShop.lua
+db/Cata/Categories/Instances.lua
+db/Cata/Categories/NeverImplemented.lua
+db/Cata/Categories/PVP.lua
+db/Cata/Categories/Professions.lua
+db/Cata/Categories/Promotions.lua
+db/Cata/Categories/Unsorted.lua
+db/Cata/Categories/WorldDrops.lua
+db/Cata/Categories/WorldEvents.lua
+db/Cata/Categories/Zones.lua
+db/Cata/Database.xml
+db/Cata/LocalizationDB.lua
+db/Cata/ReferenceDB.lua
+db/Mists/Categories/BlackMarket.lua
+db/Mists/Categories/Character.lua
+db/Mists/Categories/Craftables.lua
+db/Mists/Categories/ExpansionFeatures.lua
+db/Mists/Categories/GroupFinder.lua
+db/Mists/Categories/HiddenAchievementTriggers.lua
+db/Mists/Categories/HiddenQuestTriggers.lua
+db/Mists/Categories/Holidays.lua
+db/Mists/Categories/InGameShop.lua
+db/Mists/Categories/Instances.lua
+db/Mists/Categories/NeverImplemented.lua
+db/Mists/Categories/PVP.lua
+db/Mists/Categories/Professions.lua
+db/Mists/Categories/Promotions.lua
+db/Mists/Categories/Secrets.lua
+db/Mists/Categories/Unsorted.lua
+db/Mists/Categories/WorldDrops.lua
+db/Mists/Categories/WorldEvents.lua
+db/Mists/Categories/Zones.lua
+db/Mists/Database.xml
+db/Mists/LocalizationDB.lua
+db/Mists/ReferenceDB.lua
+db/Standard/Categories/BlackMarket.lua
+db/Standard/Categories/Character.lua
+db/Standard/Categories/Craftables.lua
+db/Standard/Categories/Delves.lua
+db/Standard/Categories/ExpansionFeatures.lua
+db/Standard/Categories/GroupFinder.lua
+db/Standard/Categories/HiddenAchievementTriggers.lua
+db/Standard/Categories/HiddenCurrencyTriggers.lua
+db/Standard/Categories/HiddenQuestTriggers.lua
+db/Standard/Categories/Holidays.lua
+db/Standard/Categories/Housing.lua
+db/Standard/Categories/InGameShop.lua
+db/Standard/Categories/Instances.lua
+db/Standard/Categories/NeverImplemented.lua
+db/Standard/Categories/PVP.lua
+db/Standard/Categories/Professions.lua
+db/Standard/Categories/Promotions.lua
+db/Standard/Categories/Secrets.lua
+db/Standard/Categories/Sourceless.lua
+db/Standard/Categories/TradingPost.lua
+db/Standard/Categories/Unsorted.lua
+db/Standard/Categories/WorldDrops.lua
+db/Standard/Categories/WorldEvents.lua
+db/Standard/Categories/Zones.lua
+db/Standard/Database.xml
+db/Standard/LocalizationDB.lua
+db/Standard/ReferenceDB.lua
+db/TBC/Categories/Character.lua
+db/TBC/Categories/Craftables.lua
+db/TBC/Categories/ExpansionFeatures.lua
+db/TBC/Categories/HiddenAchievementTriggers.lua
+db/TBC/Categories/HiddenQuestTriggers.lua
+db/TBC/Categories/Holidays.lua
+db/TBC/Categories/InGameShop.lua
+db/TBC/Categories/Instances.lua
+db/TBC/Categories/NeverImplemented.lua
+db/TBC/Categories/PVP.lua
+db/TBC/Categories/Professions.lua
+db/TBC/Categories/Promotions.lua
+db/TBC/Categories/Unsorted.lua
+db/TBC/Categories/WorldDrops.lua
+db/TBC/Categories/WorldEvents.lua
+db/TBC/Categories/Zones.lua
+db/TBC/Database.xml
+db/TBC/LocalizationDB.lua
+db/TBC/ReferenceDB.lua
+db/Vanilla/Categories/Character.lua
+db/Vanilla/Categories/Craftables.lua
+db/Vanilla/Categories/HiddenAchievementTriggers.lua
+db/Vanilla/Categories/HiddenQuestTriggers.lua
+db/Vanilla/Categories/Holidays.lua
+db/Vanilla/Categories/Instances.lua
+db/Vanilla/Categories/NeverImplemented.lua
+db/Vanilla/Categories/PVP.lua
+db/Vanilla/Categories/Professions.lua
+db/Vanilla/Categories/Promotions.lua
+db/Vanilla/Categories/Unsorted.lua
+db/Vanilla/Categories/WorldDrops.lua
+db/Vanilla/Categories/WorldEvents.lua
+db/Vanilla/Categories/Zones.lua
+db/Vanilla/Database.xml
+db/Vanilla/LocalizationDB.lua
+db/Vanilla/ReferenceDB.lua
+db/VanillaSOD/Categories/Character.lua
+db/VanillaSOD/Categories/Craftables.lua
+db/VanillaSOD/Categories/HiddenAchievementTriggers.lua
+db/VanillaSOD/Categories/HiddenQuestTriggers.lua
+db/VanillaSOD/Categories/Holidays.lua
+db/VanillaSOD/Categories/Instances.lua
+db/VanillaSOD/Categories/NeverImplemented.lua
+db/VanillaSOD/Categories/PVP.lua
+db/VanillaSOD/Categories/Professions.lua
+db/VanillaSOD/Categories/Promotions.lua
+db/VanillaSOD/Categories/SeasonOfDiscovery.lua
+db/VanillaSOD/Categories/Unsorted.lua
+db/VanillaSOD/Categories/WorldDrops.lua
+db/VanillaSOD/Categories/WorldEvents.lua
+db/VanillaSOD/Categories/Zones.lua
+db/VanillaSOD/Database.xml
+db/VanillaSOD/LocalizationDB.lua
+db/VanillaSOD/ReferenceDB.lua
+db/Wrath/Categories/Character.lua
+db/Wrath/Categories/Craftables.lua
+db/Wrath/Categories/ExpansionFeatures.lua
+db/Wrath/Categories/GroupFinder.lua
+db/Wrath/Categories/HiddenAchievementTriggers.lua
+db/Wrath/Categories/HiddenQuestTriggers.lua
+db/Wrath/Categories/Holidays.lua
+db/Wrath/Categories/InGameShop.lua
+db/Wrath/Categories/Instances.lua
+db/Wrath/Categories/NeverImplemented.lua
+db/Wrath/Categories/PVP.lua
+db/Wrath/Categories/Professions.lua
+db/Wrath/Categories/Promotions.lua
+db/Wrath/Categories/Unsorted.lua
+db/Wrath/Categories/WorldDrops.lua
+db/Wrath/Categories/WorldEvents.lua
+db/Wrath/Categories/Zones.lua
+db/Wrath/Database.xml
+db/Wrath/LocalizationDB.lua
+db/Wrath/ReferenceDB.lua
+
+utf16 (0)
+
+invalid_utf8 (0)
+
+dos_eof (0)
+
+bare_cr (0)
+
+Trailing whitespace (138 files; 2610 lines):
+1 lines: .coderabbit.yaml
+1 lines: .contrib/.db/forever/.config/structures/alchemy.lua
+1 lines: .contrib/.db/forever/.config/structures/blacksmithing.lua
+11 lines: .contrib/.db/forever/.config/structures/engineering.lua
+2 lines: .contrib/.db/forever/crafted items/01 - Base Release.lua
+1 lines: .contrib/.db/forever/crafted items/05 - Added With Ahn'Qiraj.lua
+32 lines: .contrib/.db/forever/dungeons & raids/city of dalaran.lua
+2 lines: .contrib/.db/forever/expansion features/black market auction house.lua
+1 lines: .contrib/.db/forever/profession db/enchanting.lua
+1 lines: .contrib/.db/forever/zones/eastern kingdoms/dun morogh.lua
+1 lines: .contrib/.db/forever/zones/eastern kingdoms/loch modan.lua
+2 lines: .contrib/.db/forever/zones/eastern kingdoms/riverglades.lua
+1 lines: .contrib/.db/forever/zones/eastern kingdoms/stranglethorn vale.lua
+1 lines: .contrib/.db/forever/zones/kalimdor/durotar.lua
+1 lines: .contrib/.db/forever/zones/kalimdor/mulgore.lua
+1 lines: .contrib/.db/forever/zones/kalimdor/teldrassil.lua
+1 lines: .contrib/.db/forever/zones/zephras isle.lua
+3 lines: .contrib/.db/forever/zzOLD/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua
+1 lines: .contrib/.db/forever/zzOLD/02 - Outdoor Zones/02 Eastern Kingdoms/Tirisfal Glades.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Alchemy.lua
+18 lines: .contrib/.db/forever/zzOLD/10 - Professions/Beast Training.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Cooking.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Enchanting.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Fishing.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Herbalism.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Mining.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Skinning.lua
+1 lines: .contrib/.db/forever/zzOLD/10 - Professions/Tailoring.lua
+1 lines: .contrib/.db/shared/lib/Constants/Phases.lua
+1 lines: .contrib/.db/shared/lib/Headers/Common/Remote Zones.lua
+1 lines: .contrib/.db/shared/lib/Headers/Expansion Features/10 - Dragonflight/Primal Storms.lua
+1 lines: .contrib/.db/shared/lib/Headers/PvP/Honor Titles.lua
+1 lines: .contrib/.db/standard/.config/.wago/10 - Dragonflight/BattlePetSpecies.10.2.7.55664.csv
+1 lines: .contrib/.db/standard/.config/.wago/11 - The War Within/BattlePetSpecies.11.2.7.65299.csv
+1 lines: .contrib/.db/standard/.config/.wago/12 - Midnight/Achievement.12.1.0.69933.csv
+1 lines: .contrib/.db/standard/.config/.wago/12 - Midnight/BattlePetSpecies.12.1.0.69933.csv
+1 lines: .contrib/.db/standard/.config/.wago/PTR/Achievement.csv
+1 lines: .contrib/.db/standard/.config/.wago/PTR/BattlePetSpecies.csv
+1 lines: .contrib/.db/standard/00 - DB/PetTypeDB.lua
+1 lines: .contrib/.db/standard/00 - Item DB/ItemAppearanceModifierIDs.lua
+35 lines: .contrib/.db/standard/00 - Missing DB/06 - Cataclysm/MissingItems.txt
+1 lines: .contrib/.db/standard/00 - Missing DB/99 - Midnight/MissingCurrencies.txt
+70 lines: .contrib/.db/standard/00 - Missing DB/99 - Midnight/MissingItems.txt
+3 lines: .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua
+2 lines: .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Demon Fall Canyon.lua
+1 lines: .contrib/.db/standard/01 - Dungeons Raids/07 - Legion/0 - Metadata.lua
+1 lines: .contrib/.db/standard/02 - Outdoor Zones/06 Pandaria/Kun-Lai Summit.lua
+1 lines: .contrib/.db/standard/02 - Outdoor Zones/08 Broken Isles/2 - Argus/Antoran Wastes/Battle Pet.lua
+1 lines: .contrib/.db/standard/02 - Outdoor Zones/14 Dragon Isles/Emerald Dream/Season3 Revival Catalyst Console.lua
+1 lines: .contrib/.db/standard/02 - Outdoor Zones/14 Dragon Isles/Thaldraszus/Battle Pets.lua
+5 lines: .contrib/.db/standard/03 - World Drops/01 Rooted/4 - Cataclysm.lua
+2 lines: .contrib/.db/standard/06 - Expansion Features/04 - Cataclysm/Protocol Twilight.lua
+1 lines: .contrib/.db/standard/06 - Expansion Features/10 - Dragonflight/Bonus Story - A New Beginning.lua
+1 lines: .contrib/.db/standard/06 - Expansion Features/12 - Midnight/Aqir Invasions/Aqir Invasions.lua
+18 lines: .contrib/.db/standard/10 - Professions/Beast Training.lua
+1 lines: .contrib/.db/standard/10 - Secrets/08 - Battle For Azeroth/Wicker Pup.lua
+1 lines: .contrib/.db/standard/10 - Secrets/10 - Dragonflight/Mote of Nasz'uro.lua
+1 lines: .contrib/.db/standard/12 - Promotions/Amazon Prime Gaming.lua
+1 lines: .contrib/.db/standard/21 - Holidays/Hallow's End.lua
+1 lines: .contrib/.raw/ItemDB/2.5.1 Burning Crusade - ItemDB.lua
+1 lines: .contrib/.raw/ItemDB/3.4.0 Wrath of the Lich King - ItemDB.lua
+1 lines: .contrib/.raw/ItemDB/4.4.2 Cataclysm - ItemDB.lua
+1 lines: .contrib/.source/ATT Sync Tool/App.config
+24 lines: .contrib/.source/ATT Sync Tool/MainForm.Designer.cs
+3 lines: .contrib/.source/ATT Sync Tool/MainForm.cs
+27 lines: .contrib/.source/ATT Sync Tool/MainForm.resx
+7 lines: .contrib/.source/ATT Sync Tool/Properties/Resources.Designer.cs
+27 lines: .contrib/.source/ATT Sync Tool/Properties/Resources.resx
+4 lines: .contrib/.source/ATT Sync Tool/Properties/Settings.Designer.cs
+1 lines: .contrib/.source/Database/ATTAccountWideData.cs
+1 lines: .contrib/.source/Database/Container.cs
+1 lines: .contrib/.source/Item Database Consolidator/App.config
+1 lines: .contrib/.source/Item Database Consolidator/Program.cs
+1 lines: .contrib/.source/Item Database Consolidator/bin/Debug/Item DB Compiler.exe.config
+4 lines: .contrib/.source/packages/KeraLua.1.2.13/build/net46/KeraLua.targets
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/MonoAndroid/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/net46/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/net5.0/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/netcoreapp3.1/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/uap10.0/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/xamarinios/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/xamarinmac/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/xamarintvos/KeraLua.xml
+131 lines: .contrib/.source/packages/KeraLua.1.2.13/lib/xamarinwatchos/KeraLua.xml
+1 lines: .contrib/.tools/ATT Sync Tool.exe.config
+8 lines: .contrib/.tools/Csv.xml
+2 lines: .contrib/.tools/Database.xml
+131 lines: .contrib/.tools/KeraLua.xml
+1 lines: .contrib/.tools/Parser.exe.config
+1 lines: .contrib/Harvesters/DBs/Item DB Compare Tool.exe.config
+1 lines: .contrib/Harvesters/Database Harvester/Exclusion - Forever/SkillLines.txt
+6 lines: .contrib/Harvesters/Database Harvester/Harvester.py
+3 lines: .contrib/Harvesters/Database Harvester/Raw - Forever/Explorations.txt
+1 lines: .contrib/Harvesters/Database Harvester/Raw - Forever/Factions.txt
+2 lines: .contrib/Harvesters/Database Harvester/Raw - Forever/SpellNames.txt
+2 lines: .contrib/Harvesters/Database Harvester/Raw/Decors.txt
+4 lines: .contrib/Harvesters/Database Harvester/Raw/Explorations.txt
+1 lines: .contrib/Harvesters/Database Harvester/Raw/Factions.txt
+7 lines: .contrib/Harvesters/Database Harvester/Raw/FlightPaths.txt
+10 lines: .contrib/Harvesters/Database Harvester/Raw/SpellItems.txt
+31 lines: .contrib/Harvesters/Database Harvester/Raw/SpellNames.txt
+1 lines: .contrib/Harvesters/Database Harvester/ThingTypes.py
+3 lines: .contrib/Harvesters/Exploration Mapping/ExplorationMapping.txt
+1 lines: .contrib/Source Code/Blizzard API Harvester/App.config
+1 lines: .contrib/Source Code/Blizzard API Harvester/Blizzard API Harvester.csproj
+5 lines: .contrib/Source Code/Blizzard API Harvester/Properties/AssemblyInfo.cs
+85 lines: .contrib/Source Code/Blizzard API Harvester/packages/Microsoft.AspNet.WebApi.Client.5.2.3/lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml
+207 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/net20/Newtonsoft.Json.xml
+32 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/net35/Newtonsoft.Json.xml
+32 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/net40/Newtonsoft.Json.xml
+32 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/net45/Newtonsoft.Json.xml
+26 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/netcore45/Newtonsoft.Json.xml
+26 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml
+26 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml
+1 lines: .contrib/Source Code/Blizzard API Harvester/packages/Newtonsoft.Json.6.0.4/tools/install.ps1
+1 lines: .contrib/Source Code/Classic Item Detector/App.config
+1 lines: .contrib/Source Code/Item DB Compare Tool/App.config
+1 lines: .contrib/Source Code/Parser/App.config
+173 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/net20/Newtonsoft.Json.xml
+20 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/net35/Newtonsoft.Json.xml
+20 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/net40/Newtonsoft.Json.xml
+24 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/net45/Newtonsoft.Json.xml
+29 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/netstandard1.0/Newtonsoft.Json.xml
+29 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/netstandard1.3/Newtonsoft.Json.xml
+24 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/netstandard2.0/Newtonsoft.Json.xml
+20 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml
+29 lines: .contrib/Source Code/Parser/packages/Newtonsoft.Json.12.0.2/lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml
+1 lines: .contrib/Source Code/Profession Automator/App.config
+2 lines: .contrib/Source Code/Profession Automator/Program.cs
+1 lines: .contrib/Source Code/Profession Automator/bin/Profession Automator.exe.config
+1 lines: src/Classes/Achievement Data.lua
+1 lines: src/Classes/Dynamic Categories.lua
+1 lines: src/Settings/Pages/Interface - Information.lua
+4 lines: src/UI/Windows/Debugger.lua
+1 lines: src/UI/Windows/Professions.lua
+1 lines: src/UI/Windows/Titles.lua
+1 lines: src/WoW API Wrappers.lua
+1 lines: src/base.lua
+
+Whitespace decisions:
+Preserve .config/.exports/**, .contrib/Harvesters/**, .contrib/Debugging/**; Harvesters has 73 trailing-whitespace lines across 14 files, including raw names. The other original exceptions are currently empty/ignored and remain supported.
+Add .contrib/.db/standard/.config/.wago/**/*.csv: 6 files contain meaningful trailing spaces inside multiline quoted localized CSV fields. Preserve these 6 lines to avoid changing imported localization.
+Trim remaining 118 files (2531 lines); inspected Lua trailing whitespace is outside quoted string values, in code/comments/blank lines.
+
+Executable bits:
+Existing four 100755 files all have valid shebangs: .contrib/db-sync/sync-db.sh, .contrib/db-sync/sync_db.py, .githooks/post-checkout, .githooks/run-db-sync.
+Link ATT to WoW.sh has #!/bin/zsh and top-level invocation, but mode 100644; mark executable for direct invocation.
+Other Python/PowerShell/batch scripts keep their current modes.
+
+Case-insensitive path collisions: none.
+
+Binary extensions (verified by Git classification):
+{
+  ".ico": 10,
+  ".exe": 12,
+  ".pdb": 14,
+  ".dll": 65,
+  ".p7s": 4,
+  ".nupkg": 5,
+  ".pri": 2,
+  ".so": 3,
+  ".dylib": 3,
+  ".blp": 195,
+  ".ogg": 17,
+  ".wav": 1
+}
+Mark .blp, .dll, .exe, .ogg, .ico, .pdb, .nupkg, .so and .dylib binary. All currently tracked files in these extensions are binary.
+
+Encoding decisions:
+All text decodes as UTF-8 after an optional UTF-8 BOM. No UTF-16, invalid UTF-8, legacy encoding or DOS EOF marker was found. No compatibility-dependent BOM requirement was found; remove UTF-8 BOMs mechanically without changing localization values.
+
+
+
+# Generator audit (before repository edits)
+
+Scope: tracked C#, Python, PowerShell, Lua and shell/batch tooling; repository `agent.md` read. No repository edits performed during audit. Exact C# output call inventory: `/tmp/att-csharp-generator-sites.txt`; other output call inventory: `/tmp/att-other-generator-sites.txt`.
+
+## Parser (primary tracked output)
+
+- `.contrib/Source Code/Parser/Framework/Framework.cs:4313` `WriteIfDifferent` is shared by emitted `db/*/Categories/*.lua`, LocalizationDB.lua, ReferenceDB.lua, dynamic header assignments, Database.xml and automatic locale output. It calls `NormalizeNewlines` then `File.WriteAllText(..., Encoding.UTF8)` (4318,4345).
+- `NormalizeNewlines` at 4349–4365 appends `Environment.NewLine` and ultimately replaces LF with the host newline. Therefore Windows output is CRLF. Existing behavior also strips overall whitespace and collapses consecutive newlines; preserving that existing behavior for its existing callers avoids unrelated generated-content changes.
+- Explicit `Encoding.UTF8` under .NET Framework emits UTF-8 BOM. Use `new UTF8Encoding(false)` at text-write boundaries.
+- Direct writes bypassing canonical normalization exist in Framework.cs (3738,3796,3999,4036,4135–4136,4247,4278), Framework.Items.cs (243–246,267,325), Framework.Objects.cs (1202,1205,1251,1282,1285,1471), Harvesters/ObjectHarvester.cs (295–297). These emit debug DB JSON/Lua, filters, recipes, categories, object cache Lua. Some target tracked `.contrib/.db/**/.config/.exports/**`; canonical boundary normalization is required without trimming intentional trailing spaces inside lines.
+- Program.cs ATT-ERROR-FILE.txt writes use BOM; output is ignored diagnostic data, lower priority than tracked output. Tracer.cs is log-only and ignored.
+- Internal builder sites use StringBuilder.AppendLine and Environment.NewLine in Export (Structures).cs:27, Export (Compressed Lua).cs:113,161,402, Export.cs:164,177 and dynamic headers Framework.cs:2277. Canonical normalization immediately before actual file writes solves host-specific separators while keeping structural-replacement tokens consistent. Do not replace only one side of token insertion/removal.
+
+## Other C# generators
+
+- `.contrib/.source/AssetDB Builder/Program.cs:32`: generated AssetDB Lua, AppendLine OS-dependent, explicit Encoding.UTF8 BOM.
+- `.contrib/.source/Item Database Consolidator/Program.cs:47`: generated ItemDB Lua, same concerns.
+- `.contrib/.source/Skill Level Requirements/Program.cs:30,48,66,84,102,122`: generates tracked profession Lua from Wowhead; mixed literal LF header + OS AppendLine on Windows, and most `-- #endif` outputs lack final newline. Helper.cs:126 writes cached profession JSON without final newline.
+- `.contrib/.source/IconID Converter/Program.cs:57`: rewrites existing tracked Lua/JS/C#; preserve file body, normalize output LF and EOF. Program.cs:86 stores downloaded CSV using Encoding.UTF8; can inherit remote EOL.
+- `.contrib/Source Code/CSVCleaner/Program.cs:50`: rewrites Wago CSV from StringBuilder.AppendLine, host-specific EOL.
+- `.contrib/Source Code/Profession Automator/Program.cs:143,162`: generated output.txt and profession Lua built with AppendLine / possibly missing final newline.
+- `.contrib/Source Code/Item DB Compare Tool/Program.cs:146–147,159`: compact JSON output missing final newline.
+- `.contrib/Source Code/Classic Item Detector/Program.cs:221,256,344,350,546`: tracked MaxClassicItemID.txt control cache, downloaded raw API data and generated JSON; missing EOF and potentially remote EOL.
+- `.contrib/Source Code/Blizzard API Harvester/Program.cs:514–516`: raw records joined/appended with Environment.NewLine; read-side split at 576/890 also uses Environment.NewLine and must remain capable of reading old CRLF after changing writes to LF. JSON DB output at 1576/1578 lacks EOF. ItemIDs.txt and QuestIDs.txt control caches at 284/303 are tracked and require canonical EOF; int.Parse consumers tolerate the final LF. Preserve their existing numeric values. API.key is local ignored credential data; do not alter auth token semantics.
+- `.contrib/.source/Database/*`: Container.cs:74, SharedCollectionData.cs:84/93, Database.cs:115 export user-selected CSV with AppendLine and often missing EOF; SavedVariables.cs:147 rewrites player SavedVariables Lua. These are external/user outputs rather than tracked repo generation. No need to change user-facing export contracts for tracked normalization unless explicit canonical policy is extended to these tools.
+- `.contrib/.source/ATT Sync Tool/Tracer.cs` and MainForm.cs host newlines are logs/UI text only.
+
+## Python generators
+
+- `.contrib/.tools/Localization/object_localization.py:314,392`: UTF-8 output already explicit, but default `open` newline translates LF to Windows CRLF. Add explicit `newline="\n"`; writing `"".join(lines)` through an EOF-normalizing boundary preserves localization text and interior blank lines.
+- `.contrib/Harvesters/Database Harvester/Harvester.py`: multiple `w`, `r+` and `writelines` outputs (full inventory attached); defaults also depend on locale encoding. Raw tracked text, Builds.txt, recipe files and report outputs need UTF-8 + newline LF. Reports at 477 deliberately have no final LF; add newline. Existing empty output should remain empty.
+- QuestNames.py:173 appends raw quest names and 187 rewrites missing reports. Set UTF-8 and LF explicitly; ensure append retains separator / single final EOF.
+- Deprecated Functions.py active legacy report generators have same default encoding/EOL problems and no final LF at 194,199,228,243.
+- `.contrib/Harvesters/Exploration Mapping/ExplorationMapping.py:168`: explicit UTF-8 but newline default; add LF. An empty result ends at header summary with two LF; canonical final boundary should remove extra EOF newline only.
+- `.contrib/.db/standard/00 - Item DB/Conduits/conduits.py:33`: default encoding/newline; output lines already end LF logically.
+- `.contrib/db-sync/sync_db.py:409`: writes JSON stamp under Git metadata, UTF-8 and final LF already explicit; newline host dependent, but no tracked output generated here. Downloads/extraction are binary transfer of CI DB artifacts and should remain untouched.
+- ConvertItemNamesToItemObjects.py, class_info.py, localize_all_objects.py and sync_objects.py do not independently write text (the localization wrappers call shared object_localization routines).
+
+## PowerShell / Lua / shell
+
+- `.contrib/.tools/GameObjectCache-to-ObjectDB.ps1:122` is already canonical: join with literal LF, append exactly one LF, UTF8Encoding(false). No change needed.
+- No additional tracked Lua code uses direct file I/O to emit repository files. WoW runtime exports go to game SavedVariables/UI and are outside checkout formatting.
+- Shell and batch wrappers invoke generators/link addon folders; no identified ordinary tracked text file output that requires changing newline APIs.
+
+## Toolchains / verification
+
+- `dotnet` available, SDK 8.0.425 and 10.0.401. `python3` available. No Mono/csc/PowerShell (`pwsh`) in PATH.
+- net8 tools: CSVCleaner, AssetDB Builder, Skill Level Requirements, IconID Converter; build and deterministic local fixture runs possible without live network for CSV/asset outputs.
+- Parser targets .NET Framework 4.8, x64, uses NLua/KeraLua and native Windows lua54.dll. Full Parser execution needs Windows/.NET Framework/native DLL; do not claim a full clean regeneration on this macOS host. After implementation, the original Parser.csproj successfully compiled against official .NET Framework 4.8 reference assemblies here; runtime execution is still unverified.
+- Legacy tools target .NET Framework 4.7.2/4.8. Most harvesters depend on network/Wowhead/Wago/API credentials and must not be run against live DB during normalization.
+- No tracked standalone generator unit tests were found (src/__test.lua is runtime addon test script).
+- Meaningful validation: build supported net8 tools, compile/exercise any shared canonical writer on fixtures containing CRLF/bare CR/LF/BOM/empty/multiple EOF/Unicode/intentional trailing spaces, test localization without network using fixture input, check repeat output writes yield byte-identical files and clean Git state.
+
+# ATT executable / case / whitespace exceptions / validation audit
+
+Audit only. Worktree: `/Users/hongjunqi/.codex/worktrees/text-normalization/AllTheThings`; branch based on `master`. No repository files modified for this report.
+
+## Executable modes
+
+5,452 tracked paths checked using `git ls-files --stage -z` and file contents.
+
+| Mode | File | Shebang |
+| --- | --- | --- |
+| 100755 | `.contrib/db-sync/sync-db.sh` | `#!/bin/sh` |
+| 100755 | `.contrib/db-sync/sync_db.py` | `#!/usr/bin/env python3` |
+| 100755 | `.githooks/post-checkout` | `#!/bin/sh` |
+| 100755 | `.githooks/run-db-sync` | `#!/bin/sh` |
+| 100644 | `Link ATT to WoW.sh` | `#!/bin/zsh` |
+
+All four existing executable files have shebangs. `Link ATT to WoW.sh` is the sole shebang/nonexecutable anomaly and sole nonexecutable `.sh`. It defines shell functions and runs `link_wowfolder "/Applications/World of Warcraft"` and `report_taskcomplete` at top level. No in-repository invocation documentation was found. This is a standalone runnable macOS helper, so making it mode 100755 is appropriate; no script execution is necessary to validate it because it modifies the WoW AddOns folder. Ordinary Python/PowerShell/batch files must retain their modes. The existing executable `sync_db.py` should remain executable.
+
+## Filename case
+
+No tracked-path casefold conflicts were found. Directory components also need checking in the new validator, so a future `dir/file` versus `DIR/other` conflict is rejected even when complete filenames differ. Worktree-independent validation should use the Git index path list; Windows/macOS filesystems can conceal full-path collisions during checkout.
+
+## Trailing-whitespace exceptions
+
+Preserve all three existing exceptions exactly:
+
+- `.config/.exports/**`: zero tracked files currently. It replaced the old Parser Missing DB export path in commit `848f2bdd6ae` (`[Misc] Some editor settings adjusted based on new paths`, 2026-10-01).
+- `.contrib/Harvesters/**`: 195 tracked UTF-8 text files, 14 files containing 73 lines with trailing ASCII spaces/tabs. The exception broadened from `.contrib/Harvesters/Database Harvester/**` to all Harvesters in the same commit. Many affected lines hold external names, e.g. raw SpellNames line 31561 is `7235@@@Shadow Protection `, raw FlightPaths line 296 is `103@@@Nagrand - PvP - Attack Run Start 1 `, and Exclusion - Forever/SkillLines line 123 is `2980@@@Skyborne `. Removing those spaces would modify harvested values. Other affected files include raw Explo­rations, Decors, Factions, SpellItems, ThingTypes.py, and Harvester.py. Preserve the broad exemption even where current whitespace is cosmetic because it is an established explicit policy.
+- `.contrib/Debugging/**`: zero tracked files; the entire directory is ignored and emitted by Parser debug export code. Keep its editor policy for generated/locally inspected files.
+
+The root audit additionally found six `.contrib/.db/standard/.config/.wago/**/*.csv` files with trailing spaces inside multiline quoted localization values (examples: BattlePetSpecies `"All dogs go to Bastion. `, Achievement `"Disrupt both ... active. `). Add a documented narrow trailing-whitespace exemption for these raw Wago CSV imports because trimming would change localization/data values, which the user expressly forbids. Scope the exception to `.csv` under that directory rather than all `.wago` files. The existing 118 non-exempt whitespace files inspected by the root agent contain safely removable Lua comment/code/blank-line indentation whitespace.
+
+Both the pre-commit trailing-whitespace hook and validator must use the three preserved prefixes plus the raw Wago CSV scope as their exclusion: `^(?:\.config/\.exports/|\.contrib/(?:Harvesters|Debugging)/|\.contrib/\.db/standard/\.config/\.wago/.*\.csv$)`. The exemption applies only to trailing whitespace, not UTF-8, EOL, BOM, EOF or conflict marker validation.
+
+## Existing CI
+
+There are four tracked workflows: Parser.yml, Parser_with_new_CD.yml, Parser_Objective.yml, Release.yml. Parser workflows execute the Windows-only Parser.exe; Release builds on Windows then publishes from Linux. None performs full repository text hygiene. Existing checkout steps use `actions/checkout@v7`, so the new hygiene workflow can follow that established version rather than changing unrelated CI.
+
+An audit scan of Git-classified nonbinary tracked contents found no merge markers matching standard conflict forms. Approximate tracked text size is 835,036,498 bytes, so avoid spawning Git once per file or collecting all contents in memory; stream `git cat-file --batch` for index checking and read worktree files sequentially. Attribute lookup should batch NUL-terminated names through `git check-attr -z --stdin`.
+
+## Official pre-commit compatibility verification
+
+The current upstream releases page identifies v6.0.0 as latest, and upstream README uses `rev: v6.0.0`:
+
+- [Releases](https://github.com/pre-commit/pre-commit-hooks/releases)
+- [README and available hooks](https://github.com/pre-commit/pre-commit-hooks/tree/v6.0.0)
+- [Upstream package configuration](https://github.com/pre-commit/pre-commit-hooks/blob/v6.0.0/setup.cfg): Python >=3.10.
+- [Hook manifest](https://github.com/pre-commit/pre-commit-hooks/blob/v6.0.0/.pre-commit-hooks.yaml): several recommended hooks require pre-commit >=3.2.0.
+
+Add the plan's seven recommended hooks pinned at v6.0.0. Set `minimum_pre_commit_version: '3.2.0'` in local config and retain existing Python hooks unchanged. `trailing-whitespace` gets the three established path exclusions and the documented raw Wago CSV exclusion. Give `check-merge-conflict` `args: [--assume-in-merge]`; [upstream code](https://github.com/pre-commit/pre-commit-hooks/blob/v6.0.0/pre_commit_hooks/check_merge_conflict.py) otherwise returns success outside an active merge, which would not satisfy CI rejection of committed markers.
+
+The [upstream EOF fixer](https://github.com/pre-commit/pre-commit-hooks/blob/v6.0.0/pre_commit_hooks/end_of_file_fixer.py) preserves an already correct LF or CRLF final newline; when a newline is missing it appends LF. Therefore use a separate validator for canonical extension-specific EOL after hooks, particularly `.bat`/`.cmd`. `mixed-line-ending --fix=no` can detect mixtures but neither that hook nor the seven hooks enforce LF by default, UTF-8 validity, legacy encoding rejection, DOS EOF rejection, or normalized LF blobs.
+
+## Recommended nonmutating validator
+
+Add `.contrib/file-hygiene/check_file_hygiene.py`, callable by Python 3.10+ without third-party dependencies. It should:
+
+1. Enumerate Git tracked index files (NUL-safe `git ls-files --stage -z`) and validate path component case conflicts and Git executable modes.
+2. Resolve text/binary/eol attributes in one batch. Explicit `-text` is binary; default text=auto must honor Git binary detection rather than assume every file under the default is text. Known text that contains invalid UTF-8 must be rejected, not silently skipped. UTF-16 BOMs must not disappear into the NUL/binary heuristic.
+3. Check worktree bytes: UTF-8 without BOM, no `0x1A`, LF for normal files, strictly CRLF for .bat/.cmd, exactly one final newline for nonempty files, no trailing spaces/tabs except the three prefixes and raw Wago CSV scope, no conflict marker lines, and shebang versus executable mode. Intentionally empty files remain valid.
+4. Check index blobs are canonical LF, with the same UTF-8, BOM, DOS EOF, final-newline, trailing-whitespace and conflict-marker checks. Use `git cat-file --batch`, not one Git process per tracked path. Index checking should be optional in the pre-commit phase if automatically fixed files have not been restaged; CI runs full index + worktree checks.
+5. Report concise path-specific errors and never rewrite files or change index/config.
+6. Support a file list for pre-commit efficiency; path collision checking should still use all tracked index paths. A local pre-commit hook can call this checker after standard fixers.
+
+Meaningful regression tests should create tiny temporary Git repos with `.gitattributes` so they can verify the checker rejects LF .cmd, CRLF .ps1, mixed EOL, missing/multiple EOF newlines, UTF-8/UTF-16 BOM, invalid UTF-8, DOS EOF, nonexecutable shebang, executable text without shebang, and merge markers; accepts empty files, valid non-ASCII/localization strings, correct binary files and exact whitespace exceptions; checks mode using the index even when filesystem modes are unavailable; and catches a deliberately nonnormalized index blob plus full-path and directory-case conflicts. Verify checker leaves worktree/index unchanged.
+
+## CI validation and limits
+
+Add a separate `File Hygiene.yml` with a matrix of `ubuntu-latest`/`windows-latest` and `core.autocrlf` `false`/`true`/`input`. Make a fresh checkout under each requested setting rather than changing configuration on an already materialized checkout. `actions/checkout` followed by setting config and `git checkout-index --force --all` is acceptable if it really overwrites all files from the index; disable hooks to avoid post-checkout database sync side effects. Do not require contributors to change global Git settings. Set each test's Git configuration locally or with command-level `-c`, not globally.
+
+Run nonmutating checker + checker tests and generator canonical-writing tests; assert tracked `git status --porcelain` remains empty afterward. New generated code should be tested using small representative outputs, including Unicode, trailing newlines, and host newline independence. Actual full Parser generation requires Windows and the existing built Parser.exe; rebuilt source will need execution on Windows when available. Source changes alone do not prove the committed binary emits new canonical output, so the delivery must state whether Parser was rebuilt/executed.
