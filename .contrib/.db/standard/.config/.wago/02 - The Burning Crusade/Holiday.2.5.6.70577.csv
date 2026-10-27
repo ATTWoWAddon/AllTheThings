@@ -1,0 +1,7 @@
+ID,Region,Looping,HolidayNameID,HolidayDescriptionID,Priority,CalendarFilterType,Flags,WorldStateExpressionID,Duration_0,Duration_1,Duration_2,Duration_3,Duration_4,Duration_5,Duration_6,Duration_7,Duration_8,Duration_9,Date_0,Date_1,Date_2,Date_3,Date_4,Date_5,Date_6,Date_7,Date_8,Date_9,Date_10,Date_11,Date_12,Date_13,Date_14,Date_15,Date_16,Date_17,Date_18,Date_19,Date_20,Date_21,Date_22,Date_23,Date_24,Date_25,CalendarFlags_0,CalendarFlags_1,CalendarFlags_2,CalendarFlags_3,CalendarFlags_4,CalendarFlags_5,CalendarFlags_6,CalendarFlags_7,CalendarFlags_8,CalendarFlags_9,TextureFileDataID_0,TextureFileDataID_1,TextureFileDataID_2
+1193,528,0,0,0,0,0,14,0,72,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1223,784,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1318,2017,0,0,0,0,0,15,0,1517,0,0,0,0,0,0,0,0,0,375798400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1320,24,0,0,0,0,0,15,0,1517,0,0,0,0,0,0,0,0,0,375814208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1321,4,0,0,0,0,0,15,0,1517,0,0,0,0,0,0,0,0,0,375798976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1322,2,0,0,0,0,0,15,0,1517,0,0,0,0,0,0,0,0,0,375814272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

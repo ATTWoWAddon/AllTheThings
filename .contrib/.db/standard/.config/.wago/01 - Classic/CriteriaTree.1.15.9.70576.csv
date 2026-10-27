@@ -139,16 +139,30 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 8903,"""Captain"" Cookie",8901,1,0,18522,0,2
 9942,"General Drakkisath kills (Blackrock Spire)",0,0,4,0,0,0
 14324,"Emperor Dagran Thaurissan kills (Blackrock Depths)",0,0,4,0,0,0
+18064,,0,0,4,0,0,0
 18065,,18064,0,0,16881,1,2
+18070,,0,0,4,0,0,0
 18071,,18070,0,0,16882,1,2
+18143,,0,0,4,0,0,0
 18144,,18143,0,0,16883,1,2
+18659,,0,0,4,0,0,0
 18660,,18659,0,0,17386,1,2
+19395,,0,0,4,0,0,0
+19398,,0,0,4,0,0,0
+19401,,0,0,4,0,0,0
+19408,,0,0,4,0,0,0
+19411,,0,0,4,0,0,0
+19492,,0,0,4,0,0,0
+19670,,0,0,4,0,0,0
+19673,,0,0,4,0,0,0
+19752,,0,0,4,0,0,0
 22423,"Statistic - High Inquisitor Whitemane",0,0,4,0,0,0
 26937,"Scarlet Halls (Flameweaver Koegler)",0,0,4,0,0,0
 26938,"Flameweaver Koegler",26937,1,0,19269,0,2
 37090,"Kill General Drakkisath",0,0,4,0,0,0
 38168,"Statistic - General Drakkisath",0,0,4,0,0,0
 82060,server-only,0,0,4,0,0,2
+82062,server-only,0,0,4,0,0,2
 91539,,1559,1,0,3275,0,0
 91540,,8133,1,0,51995,0,0
 91541,,648,1,0,3271,13,0
@@ -231,9 +245,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 157567,,157566,40,0,66857,0,2
 157661,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 157662,,157661,1,0,66905,0,0
+157663,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 157664,,157663,1,0,66906,0,0
+161332,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161333,,161332,1,0,66939,0,0
+161334,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161335,,161334,1,0,66940,0,0
+161336,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 161337,,161336,1,0,66941,0,0
 161345,"S03 - Cast Murky Sapta Sight (Fire)",0,0,4,0,0,4096
 161346,,161345,1,0,66946,0,0
@@ -254,6 +272,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 166786,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
 166788,"S03 - 60 - Steppes Warrior Victory",0,0,4,0,0,4096
 166789,,166788,1,0,69419,0,0
+166809,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166811,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166813,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166816,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166818,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166820,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166822,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166868,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
+166926,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
 166927,,166926,1,0,69502,0,0
 168117,"S03 - P5 - Speak With Fallen Syndicate Member",0,0,4,0,0,4096
 168118,,168117,1,0,69926,0,0
@@ -326,36 +353,9 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 170680,"Nefarius's Corruption",552,1,0,71474,25,2
 208319,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
 208320,,208319,1,0,103943,0,0
+208324,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
 208325,,208324,1,0,103947,0,0
 210009,"S03 - Scarlet Enclave - Boss - Balnazzar - Achievement Credit",0,0,4,0,0,0
 210010,,210009,1,0,104998,0,0
 210320,"S03 - Scarlet Enclave - Boss - Balnazzar - Backup Achievement Credit",0,0,4,0,0,0
 210321,,210320,1,0,104998,0,0
-18064,,0,0,4,0,0,0
-18070,,0,0,4,0,0,0
-18143,,0,0,4,0,0,0
-18659,,0,0,4,0,0,0
-19395,,0,0,4,0,0,0
-19398,,0,0,4,0,0,0
-19401,,0,0,4,0,0,0
-19408,,0,0,4,0,0,0
-19411,,0,0,4,0,0,0
-19492,,0,0,4,0,0,0
-19670,,0,0,4,0,0,0
-19673,,0,0,4,0,0,0
-19752,,0,0,4,0,0,0
-82062,server-only,0,0,4,0,0,2
-157663,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161332,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161334,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-161336,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-166926,"S03 - Cast Murky Sapta Sight (Air)",0,0,4,0,0,4096
-166809,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166811,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166813,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166816,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166818,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166820,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166822,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-166868,"S03 - 60 - Arena Victory",0,0,4,0,0,4096
-208324,"Get Hit by Shadow Fissure with Hilt of Ashbringer Equipped",0,0,4,0,0,4096
