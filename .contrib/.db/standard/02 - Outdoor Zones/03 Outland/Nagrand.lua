@@ -1477,6 +1477,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						objective(1, {	-- 0/8 Raven Stone
 							providers = {
+								{ "n", 22972},	-- Cenarion Sparrowhawk
 								{ "i", 32315},	-- Cenarion Sparrowhawk Whistle (PQI!)
 								{ "i", 32313},	-- Raven Stone
 								{ "o", 185541},	-- Raven Stone Fragment
@@ -1705,8 +1706,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					lvl = 70,
 					groups = {
 						objective(1, {	-- 0/1 Captive Sparrowhawk
-							provider = { "i", 32320 },	-- Captive Sparrowhawk
-							cr = 22979,	-- Wild Sparrowhawk
+							providers = {
+								{ "i", 32320 },	-- Captive Sparrowhawk
+								{ "i", 32321 },	-- Sparrowhawk Net (PQI!)
+								{ "n", 22979 },	-- Wild Sparrowhawk
+							},
 						}),
 					},
 				})),

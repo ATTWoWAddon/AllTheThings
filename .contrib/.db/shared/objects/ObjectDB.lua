@@ -33085,7 +33085,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 202595,
 		text = {
 			en = "Raven Stone Fragment",
+			es = "Trozo de la piedra del cuervo",
+			mx = "Trozo de la piedra del cuervo",
+			de = "Rabensteinfragment",
+			fr = "Fragment de pierre du Corbeau",
 			ru = "Фрагмент Вороньего камня",
+			ko = "까마귀석 조각",
 		},
 	},
 	[185547] = {
