@@ -1816,8 +1816,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					lvl = 70,
 					groups = {
 						objective(1, {	-- 0/1 Essence of the Eagle
-							provider = { "i", 32355 },	-- Essence of the Eagle
-							provider = { "o", 185547 },	-- Shrine of the Eagle
+							providers = {
+								{ "i", 32355 },	-- Essence of the Eagle
+								{ "o", 185547 },	-- Shrine of the Eagle
+							},
 							cr = 22993,	-- Guardian of the Eagle
 						}),
 					},
