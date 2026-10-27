@@ -1123,6 +1123,27 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10991, {	-- The Falcon's Essence
+					sourceQuest = 10990,	-- The Eagle's Essence
+					qg = 23338,	-- Arthorn's Sparrowhawk
+					qis = {
+						32657,	-- Arthorn's Sparrowhawk Whistle (PQI!)
+						32357,	-- Essence of the Falcon
+					},
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					maps = { AUCHINDOUN_SETHEKK_HALLS },
+					classes = { DRUID },
+					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/1 Essence of the Falcon
+							providers = {
+								{ "i", 32357 },	-- Essence of the Falcon
+								{ "o", 185553 },	-- Shrine of the Falcon
+							},
+							cr = 22994,	-- Guardian of the Falcon
+						}),
+					},
+				})),
 				q(10915, {	-- The Fallen Exarch
 					sourceQuest = 10914,	-- A Hero Is Needed
 					qg = 22446,	-- Commander Ra'vaj

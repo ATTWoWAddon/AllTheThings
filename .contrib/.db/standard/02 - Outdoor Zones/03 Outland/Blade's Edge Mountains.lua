@@ -1858,25 +1858,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10991, {	-- The Falcon's Essence
-					sourceQuest = 10990,	-- The Eagle's Essence
-					qg = 22924,	-- Arthorn Windsong
-					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					maps = { TEROKKAR_FOREST },
-					cost = {
-						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
-						{ "i", 32357, 1 },	-- Essence of the Falcon
-					},
-					classes = { DRUID },
-					lvl = 70,
-					groups = {
-						objective(1, {	-- 0/1 Essence of the Falcon
-							provider = { "i", 32357 },	-- Essence of the Falcon
-							cr = 22994,	-- Guardian of the Falcon
-						}),
-					},
-				})),
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
 					sourceQuest = 10991,	-- The Falcon's Essence
 					qg = 22924,	-- Arthorn Windsong

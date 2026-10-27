@@ -33147,6 +33147,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Shrine of the Falcon",
 			es = "Santuario del falcón",
+			mx = "Santuario del falcón",
 			de = "Schrein des Falken",
 			fr = "Sanctuaire de l'Epervier",
 			it = "Santuario del Falcone",
@@ -33154,6 +33155,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Святилище Сокола",
 			ko = "수리매 제단",
 			cn = "猎鹰神殿",
+			tw = "獵隼石龕",
 		},
 	},
 	[185554] = {
