@@ -300,7 +300,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					{ "i", 68646 },	-- Winterspring Cub
 					{ "n", 51677 },	-- Winterspring Cub
 				},
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isDaily = true,
@@ -335,7 +335,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					{ "i", 68646 },	-- Winterspring Cub
 					{ "n", 51677 },	-- Winterspring Cub
 				},
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isDaily = true,
@@ -626,7 +626,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					{ "i", 68646 },	-- Winterspring Cub
 					{ "n", 51677 },	-- Winterspring Cub
 				},
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isDaily = true,
@@ -844,8 +844,8 @@ maproot(KALIMDOR, WINTERSPRING, {
 			q(4970, {	-- Frostsaber Provisions
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },	-- Wintersaber Trainers, Neutral.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -943,7 +943,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					{ "i", 68646 },	-- Winterspring Cub
 					{ "n", 51677 },	-- Winterspring Cub
 				},
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				isDaily = true,
@@ -1177,8 +1177,8 @@ maproot(KALIMDOR, WINTERSPRING, {
 			q(5981, {	-- Rampaging Giants
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, HONORED },	-- Wintersaber Trainers, Honored.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, HONORED },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -1893,8 +1893,8 @@ maproot(KALIMDOR, WINTERSPRING, {
 			q(5201, {	-- Winterfall Intrusion
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },	-- Wintersaber Trainers, Neutral + 1500.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -2330,7 +2330,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				},
 			}),
 			n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
-				minReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				coords = {
 					-- #if AFTER CATA
 					{ 46.6, 17.6, WINTERSPRING },

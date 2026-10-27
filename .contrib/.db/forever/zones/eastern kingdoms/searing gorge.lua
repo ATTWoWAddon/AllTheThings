@@ -144,10 +144,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
 				minReputation = {
-					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,	-- Thorium Brotherhood, Friendly.
+					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,
 				},
 				maxReputation = {
-					FACTION_THORIUM_BROTHERHOOD, HONORED,	-- Thorium Brotherhood, Honored.
+					FACTION_THORIUM_BROTHERHOOD, HONORED,
 				},
 				cost = {
 					{ "i", 18945, 4 },	-- Dark Iron Residue
@@ -273,8 +273,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale
 					{ "i", 4234, 10 },	-- Heavy Leather
@@ -287,8 +287,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale
 					{ "i", 3575, 4 },	-- Iron Bar
@@ -301,8 +301,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale
 					{ "i", 3356, 4 },	-- Kingsblood

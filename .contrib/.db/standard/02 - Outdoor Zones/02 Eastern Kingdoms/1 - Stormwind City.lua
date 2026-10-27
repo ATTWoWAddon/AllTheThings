@@ -957,7 +957,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					{ 44.2, 73.6, STORMWIND_CITY },
 					-- #endif
 				},
-				maxReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				maxReputation = { FACTION_STORMWIND, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
@@ -4480,7 +4480,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(92071, {	-- Tushui Satchel
-						minReputation = { FACTION_TUSHUI_PANDAREN, REVERED },	-- Tushui Pandaren, Revered.
+						minReputation = { FACTION_TUSHUI_PANDAREN, REVERED },
 						timeline = { ADDED_5_1_0 },
 					}),
 					i(83079, {	-- Tushui Tabard
@@ -4646,7 +4646,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 				coord = { 52.4, 8.2, STORMWIND_CITY },
 				-- Available to Worgen without faction requirements.
-				minReputation = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
+				minReputation = { FACTION_GILNEAS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. WORGEN .. [[ then
 						t.minReputation = nil;
@@ -5786,7 +5786,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			n(43694, {	-- Katie Stokx <Horse Breeder>
 				coord = { 77.0, 67.8, STORMWIND_CITY },
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;
@@ -5968,7 +5968,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			n(4730, {	-- Lelanai <Saber Handler>
 				coord = { 55.0, 12.6, STORMWIND_CITY },
 				-- Available to Night Elves without faction requirements.
-				minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				minReputation = { FACTION_DARNASSUS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 						t.minReputation = nil;
@@ -6574,23 +6574,21 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				-- Moon Priestess Lasara can only be found in Darnassus after 10.2.5: Reclamation of Gilneas.
 				timeline = { ADDED_8_0_1, REMOVED_10_2_5 },
 				groups = {
-					i(45579, {	-- Darnassus Tabard
-						timeline = { ADDED_3_1_0 },
-					}),
 					i(64887, {	-- Cape of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(64888, {	-- Mantle of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-						timeline = { ADDED_4_0_3 },
-					}),
-					i(64886, {	-- Shroud of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+						minReputation = { FACTION_DARNASSUS, EXALTED },
 						timeline = { ADDED_4_0_3 },
 					}),
 					i(67526, {	-- Darnassian Satchel
-						minReputation = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
+						minReputation = { FACTION_DARNASSUS, REVERED },
+						timeline = { ADDED_4_0_3 },
+					}),
+					i(45579, { timeline = { ADDED_3_1_0 } }),	-- Darnassus Tabard
+					i(64888, {	-- Mantle of Darnassus
+						minReputation = { FACTION_DARNASSUS, EXALTED },
+						timeline = { ADDED_4_0_3 },
+					}),
+					i(64886, {	-- Shroud of Darnassus
+						minReputation = { FACTION_DARNASSUS, EXALTED },
 						timeline = { ADDED_4_0_3 },
 					}),
 				},
@@ -6686,7 +6684,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 				coord = { 67.8, 18.4, STORMWIND_CITY },
 				-- Available to Tushui Pandaren without faction requirements.
-				minReputation = { FACTION_TUSHUI_PANDAREN, EXALTED },	-- Tushui Pandaren, Exalted.
+				minReputation = { FACTION_TUSHUI_PANDAREN, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. PANDAREN_ALLIANCE .. [[ then
 						t.minReputation = nil;
@@ -7233,14 +7231,10 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				groups = { i(33042) },	-- Black Coffee
 			}),
 			n(261231, {	-- Tuuran <Promotional Decor Resupply>
+				description = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
 				coord = { 48.5, 58.8, STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				timeline = { ADDED_12_0_0 },
-				groups = {
-					i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
-						cost = 14000000,	-- 1400g
-					}),
-				},
 			}),
 			n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 				coords = {

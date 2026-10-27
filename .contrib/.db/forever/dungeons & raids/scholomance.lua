@@ -186,7 +186,7 @@ root(ROOTS.Instances, {
 				q(5582, {	-- Healthy Dragon Scale
 					sourceQuest = 5529,	-- Plagued Hatchlings
 					provider = { "i", 13920 },	-- Healthy Dragon Scale
-					maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+					maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 					repeatable = true,
 					lvl = 55,
 				}),

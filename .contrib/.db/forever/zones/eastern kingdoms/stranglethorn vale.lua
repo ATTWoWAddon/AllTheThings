@@ -275,7 +275,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 1036,	-- Avast Ye, Scallywag
 				qg = 2546,	-- Fleet Master Firallon
 				coord = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				lvl = 55,
 				groups = {
 					i(12185),	-- Bloodsail Admiral's Hat
@@ -284,7 +284,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(1036, {	-- Avast Ye, Scallywag
 				qg = 2545,	-- "Pretty Boy" Duncan
 				coord = { 27.4, 69.4, MAP.STRANGLETHORN_VALE },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				isBreadcrumb = true,
 				lvl = 55,
 			}),
@@ -575,7 +575,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(9272, {	-- Dressing the Part
 				qg = 2546,	-- Fleet Master Firallon
 				coord = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },
 				lvl = 49,
 				groups = {
 					i(22746, {	-- Buccaneer's Uniform
@@ -2240,7 +2240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = bubbleDownClassicRep(FACTION_BOOTY_BAY, {
 					{	-- Neutral
-						
+
 					}, {	-- Friendly
 						i(274745),	-- Deckswabber's Mitts
 						i(274746),	-- Sea Giant's Toe Ring

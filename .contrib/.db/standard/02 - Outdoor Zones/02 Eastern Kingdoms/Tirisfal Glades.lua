@@ -2744,7 +2744,7 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				races = { ORC, TROLL, UNDEAD },
 
 				-- Available to Undead without faction requirements.
-				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				minReputation = { FACTION_UNDERCITY, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. UNDEAD .. [[ then
 						t.minReputation = nil;
@@ -2913,7 +2913,7 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 					-- #endif
 				},
 				-- Available to Undead without faction requirements.
-				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				minReputation = { FACTION_UNDERCITY, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. UNDEAD .. [[ then
 						t.minReputation = nil;

@@ -22,7 +22,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93062, {	-- Bone Burying
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
@@ -37,7 +37,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 92873,	-- Proof of Concept
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -55,7 +55,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/4 Bristleback Nomad slain
@@ -82,7 +82,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					{ 58.4, 88.6, MAP.DESOLACE },
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
 				-- TODO: Wowhead doesn't list this quest's objectives yet (investigate centaur points of interest).
@@ -94,7 +94,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -125,7 +125,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					{ 58.4, 88.6, MAP.DESOLACE },
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Accursed Skull
@@ -139,7 +139,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93125, {	-- Going Home
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				-- TODO: Escort Rokren out of the Outcast Hideaway; Wowhead has no IDs for the escort yet.
 			}),
@@ -147,7 +147,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 93066,	-- Bristleback Retreat
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/2 Outcast Scout slain
@@ -168,7 +168,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 92841,	-- Valley of Bones (Magram)
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -184,7 +184,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 92873,	-- Proof of Concept
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -198,7 +198,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 92841,	-- Valley of Bones (Magram)
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -215,7 +215,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					{ 58.4, 88.6, MAP.DESOLACE },
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Necromantic Garb
@@ -229,7 +229,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 92847,	-- Corrupting Tears
 				qg = 253136,	-- Orgrul
 				coord = { 35.6, 12.0, MAP.SHENDRALAS },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 				groups = {
@@ -252,7 +252,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					{ 58.4, 88.6, MAP.DESOLACE },
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/6 Undead Ravager slain
@@ -268,13 +268,13 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 			}),
 			q(93058, {	-- Saving Our Own
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
@@ -287,7 +287,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 93066,	-- Bristleback Retreat
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/6 Stolen Supplies
@@ -299,14 +299,14 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				sourceQuest = 1373,	-- Ongeku
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 			}),
 			q(92841, {	-- Valley of Bones (Magram)
 				sourceQuest = 92743,	-- A Conqueror's Crown
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 			}),

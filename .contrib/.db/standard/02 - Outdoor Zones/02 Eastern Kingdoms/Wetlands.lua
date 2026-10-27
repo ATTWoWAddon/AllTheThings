@@ -2100,7 +2100,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					-- #endif
 				},
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

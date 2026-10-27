@@ -336,7 +336,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						{ 68.4, 74.0, TEROKKAR_FOREST },
 						{ 75.0, 86.2, TEROKKAR_FOREST },
 					},
-					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
+					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },
 					isDaily = true,
 				})),
 				applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
@@ -344,7 +344,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23048,	-- Sky Sergeant Doryn
 					timeline = { ADDED_2_1_0 },
 					coord = { 64.5, 66.7, TEROKKAR_FOREST },
-					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
+					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/20 Monstrous Kaliri Egg Destroyed
@@ -395,7 +395,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23042,	-- Severin <Skyguard Medic>
 					timeline = { ADDED_2_1_0 },
 					coord = { 64.1, 66.9, TEROKKAR_FOREST },
-					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
+					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },
 					cost = { { "i", 32388, 6 } },	-- Shadow Dust
 					repeatable = true,
 					groups = {
@@ -424,7 +424,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23306,	-- Hazzik
 					timeline = { ADDED_2_1_0 },
 					coord = { 64.2, 66.9, TEROKKAR_FOREST },
-					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
+					maxReputation = { FACTION_SHATARI_SKYGUARD, EXALTED },
 					cost = {
 						{ "i", 32715, 1 },	-- Akkarai's Talons
 						{ "i", 32716, 1 },	-- Gezzarak's Claws
@@ -1763,7 +1763,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(20986, {	-- Dealer Tariq
 					coord = { 39.4, 70.0, TEROKKAR_FOREST },
-					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
+					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },
 					groups = {
 						i(29393),	-- Diamond Berries
 						i(29395),	-- Ethermead
@@ -1828,7 +1828,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19718, {	-- Provisioner Tsaalt
 					coord = { 39.7, 70.1, TEROKKAR_FOREST },
-					minReputation = { FACTION_LOWER_CITY, FRIENDLY },	-- Lower City, Friendly.
+					minReputation = { FACTION_LOWER_CITY, FRIENDLY },
 					groups = {
 						i(27857),	-- Garadar Sharp
 						i(29448),	-- Mag'har Mild Cheese

@@ -1936,7 +1936,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				altQuests = { 26115 },	-- To Be Horde...
 				qg = 41023,	-- Overlord Krom'gar
 				coord = { 66.1, 63.7, STONETALON_MOUNTAINS },
-				maxReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted
+				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				isDaily = true,

@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(DRUID, bubbleDown({ classes = { DRUID } }, {
 					q(8667, {	-- Genesis Helm
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8669, {	-- Genesis Shoulderpads
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8666, {	-- Genesis Vest
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8668, {	-- Genesis Trousers
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20882, 2 },	-- Idol of War
@@ -126,7 +126,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8665, {	-- Genesis Boots
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -142,7 +142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(HUNTER, bubbleDown({ classes = { HUNTER } }, {
 					q(8657, {	-- Striker's Diadem
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8659, {	-- Striker's Pauldrons
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20882, 2 },	-- Idol of War
@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8656, {	-- Striker's Hauberk
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -184,7 +184,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8658, {	-- Striker's Leggings
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20874, 2 },	-- Idol of the Sun
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8626, {	-- Striker's Footguards
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -214,7 +214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(MAGE, bubbleDown({ classes = { MAGE } }, {
 					q(8632, {	-- Enigma Circlet
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20875, 2 },	-- Idol of Night
@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8625, {	-- Enigma Shoulderpads
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20876, 2 },	-- Idol of Death
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8633, {	-- Enigma Robes
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20874, 2 },	-- Idol of the Sun
@@ -256,7 +256,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8631, {	-- Enigma Leggings
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -270,7 +270,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8634, {	-- Enigma Boots
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20874, 2 },	-- Idol of the Sun
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PALADIN, bubbleDown({ classes = { PALADIN } }, {
 					q(8628, {	-- Avenger's Crown
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -300,7 +300,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8630, {	-- Avenger's Pauldrons
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -314,7 +314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8627, {	-- Avenger's Breastplate
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8629, {	-- Avenger's Legguards
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8655, {	-- Avenger's Greaves
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -358,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PRIEST, bubbleDown({ classes = { PRIEST } }, {
 					q(8592, {	-- Tiara of the Oracle
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8594, {	-- Mantle of the Oracle
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -386,7 +386,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8603, {	-- Vestments of the Oracle
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20876, 2 },	-- Idol of Death
@@ -400,7 +400,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8593, {	-- Trousers of the Oracle
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -414,7 +414,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8596, {	-- Footwraps of the Oracle
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20876, 2 },	-- Idol of Death
@@ -430,7 +430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(ROGUE, bubbleDown({ classes = { ROGUE } }, {
 					q(8639, {	-- Deathdealer's Helm
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20882, 2 },	-- Idol of War
@@ -444,7 +444,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8641, {	-- Deathdealer's Spaulders
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20874, 2 },	-- Idol of the Sun
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8638, {	-- Deathdealer's Vest
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -472,7 +472,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8640, {	-- Deathdealer's Leggings
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20875, 2 },	-- Idol of Night
@@ -486,7 +486,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8637, {	-- Deathdealer's Boots
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -502,7 +502,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(SHAMAN, bubbleDown({ classes = { SHAMAN } }, {
 					q(8623, {	-- Stormcaller's Diadem
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20930, 1 },	-- Vek'lor's Diadem
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -516,7 +516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8602, {	-- Stormcaller's Pauldrons
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20879, 2 },	-- Idol of Life
@@ -530,7 +530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8622, {	-- Stormcaller's Hauberk
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -544,7 +544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8624, {	-- Stormcaller's Leggings
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20881, 2 },	-- Idol of Strife
@@ -558,7 +558,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8621, {	-- Stormcaller's Footguards
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -574,7 +574,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARLOCK, bubbleDown({ classes = { WARLOCK } }, {
 					q(8662, {	-- Doomcaller's Circlet
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20876, 2 },	-- Idol of Death
@@ -588,7 +588,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8664, {	-- Doomcaller's Mantle
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20877, 2 },	-- Idol of the Sage
@@ -602,7 +602,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8661, {	-- Doomcaller's Robes
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20933, 1 },	-- Husk of the Old God
 							{ "i", 20875, 2 },	-- Idol of Night
@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8663, {	-- Doomcaller's Trousers
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
 							{ "i", 20878, 2 },	-- Idol of Rebirth
@@ -630,7 +630,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8660, {	-- Doomcaller's Footwraps
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
 							{ "i", 20875, 2 },	-- Idol of Night
@@ -646,7 +646,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARRIOR, bubbleDown({ classes = { WARRIOR } }, {
 					q(8561, {	-- Conqueror's Crown
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
 							{ "i", 20874, 2 },	-- Idol of the Sun
@@ -660,7 +660,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8544, {	-- Conqueror's Spaulders
 						qg = 15502,	-- Andorgos
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20875, 2 },	-- Idol of Night
@@ -674,7 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8562, {	-- Conqueror's Breastplate
 						qg = 15504,	-- Vethsera
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 						cost = {
 							{ "i", 20929, 1 },	-- Carapace of the Old God
 							{ "i", 20882, 2 },	-- Idol of War
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8560, {	-- Conqueror's Legguards
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 						cost = {
 							{ "i", 20927, 1 },	-- Ouro's Intact Hide
 							{ "i", 20876, 2 },	-- Idol of Death
@@ -702,7 +702,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8559, {	-- Conqueror's Greaves
 						qg = 15503,	-- Kandrostrasz
-						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 						cost = {
 							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
 							{ "i", 20882, 2 },	-- Idol of War
@@ -756,13 +756,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				q(8595, {	-- Mortal Champions
 					sourceQuest = 8579,	-- Mortal Champions
 					qg = 15503,	-- Kandrostrasz
-					maxReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					maxReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					cost = { { "i", 21229, 1 } },	-- Qiraji Lord's Insignia
 					repeatable = true,
 				}),
 				q(8784, {	-- Secrets of the Qiraji
 					qg = 15503,	-- Kandrostrasz
-					maxReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					maxReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					cost = { { "i", 21230, 1 } },	-- Ancient Qiraji Artifact
 					repeatable = true,
 				}),
@@ -770,7 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					sourceQuest = 8756,	-- The Qiraji Conqueror
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					cost = {
 						{ "i", 20864, 15 },	-- Bone Scarab
 						{ "i", 20865, 15 },	-- Ivory Scarab
@@ -790,7 +790,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					sourceQuest = 8761,	-- The Grand Invoker
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					cost = {
 						{ "i", 20861, 15 },	-- Bronze Scarab
 						{ "i", 20862, 15 },	-- Crystal Scarab
@@ -810,7 +810,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					sourceQuest = 8751,	-- The Protector of Kalimdor
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					cost = {
 						{ "i", 20858, 15 },	-- Stone Scarab
 						{ "i", 20859, 15 },	-- Gold Scarab
@@ -834,7 +834,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -850,7 +850,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 					groups = {
 						i(21201),	-- Signet Ring of the Bronze Dragonflight
@@ -864,7 +864,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -881,7 +881,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -898,7 +898,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -914,7 +914,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 					groups = {
 						i(21206),	-- Signet Ring of the Bronze Dragonflight
@@ -928,7 +928,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -945,7 +945,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -962,7 +962,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -978,7 +978,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 					groups = {
 						i(21196),	-- Signet Ring of the Bronze Dragonflight
@@ -992,7 +992,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1009,7 +1009,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1026,7 +1026,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1043,7 +1043,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1060,7 +1060,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 					qg = 15192,	-- Anachronos
 					coord = ANACHRONOS_COORD,
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 					lvl = 60,
 					groups = {
 						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
@@ -1748,160 +1748,160 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						groups = {
 							-- NEUTRAL
 							i(234016, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234017, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234018, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234019, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234020, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234440, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	--
 								classes = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 							}),
 							i(234968, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 								-- cost = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 								classes = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 							}),
 
 							-- FRIENDLY
 							i(234021, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234022, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234023, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234024, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234025, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234439, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	--
 								classes = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 							}),
 							i(234967, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },
 								-- cost = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 								classes = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 							}),
 
 							-- HONORED
 							i(234026, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234027, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234028, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234029, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234030, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234438, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	--
 								classes = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 							}),
 							i(234966, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, HONORED },
 								-- cost = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 								classes = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 							}),
 
 							-- REVERED
 							i(234031, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234032, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234033, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234034, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234035, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234437, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	--
 								classes = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 							}),
 							i(234965, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, REVERED },
 								-- cost = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 								classes = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 							}),
 
 							-- Exalted
 							i(234198, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234199, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234200, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234201, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234202, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 							}),
 							i(234436, {	-- Signet Ring of the Bronze Dragonflight
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	--
 								classes = { DRUID, PRIEST, WARLOCK },	-- Usable by Druids, Priests, and Warlocks.
 							}),
 							i(234964, {	-- Signet Ring of the Bronze Dragonflight SHAMAN/WARLOCK TANK
-								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
+								minReputation = { FACTION_BROOD_OF_NOZDORMU, EXALTED },
 								-- cost = { { "i", 00000, 1 } },	-- Replace with the actual cost if needed
 								classes = { SHAMAN, WARLOCK },	-- Usable by Shamans and Warlocks.
 							}),

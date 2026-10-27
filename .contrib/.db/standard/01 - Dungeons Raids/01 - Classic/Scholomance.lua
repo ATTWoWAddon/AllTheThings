@@ -45,7 +45,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 				sourceQuest = 27464,	-- Argent Call: The Trial of the Crypt
 				qg = 49856,	-- Lord Raymond George
 				coord = { 76.2, 50.9, EASTERN_PLAGUELANDS },
-				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				repeatable = true,
 				lvl = lvlsquish(40, 40, 15),
@@ -312,7 +312,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			q(5582, {	-- Healthy Dragon Scale
 				sourceQuest = 5529,	-- Plagued Hatchlings
 				provider = { "i", 13920 },	-- Healthy Dragon Scale
-				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				repeatable = true,
 				lvl = 55,
@@ -2109,7 +2109,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			sourceQuest = 27464,	-- Argent Call: The Trial of the Crypt
 			qg = 49856,	-- Lord Raymond George
 			coord = { 76.1, 50.9, EASTERN_PLAGUELANDS },
-			maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+			maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 			timeline = { ADDED_4_0_3 },
 			repeatable = true,
 			lvl = lvlsquish(40, 40, 15),

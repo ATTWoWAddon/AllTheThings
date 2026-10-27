@@ -338,7 +338,7 @@ maproot(KALIMDOR, FERALAS, {
 				sourceQuest = 7003,	-- Zapped Giants
 				qg = 14637,	-- Zorbin Fandazzle
 				coord = { 44.8, 43.4, FERALAS },
-				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				repeatable = true,
 				lvl = 45,
@@ -1299,7 +1299,7 @@ maproot(KALIMDOR, FERALAS, {
 				sourceQuest = 7721,	-- Fuel for the Zapping
 				qg = 14637,	-- Zorbin Fandazzle
 				coord = { 44.8, 43.4, FERALAS },
-				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				repeatable = true,
 				lvl = 45,

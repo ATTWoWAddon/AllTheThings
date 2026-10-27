@@ -40,7 +40,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8305,	-- Long Forgotten Memories
 					provider = { "o", 180633 },	-- Crystalline Tear
 					coord = { 28.7, 89.1, SILITHUS },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8303, {	-- Anachronos
@@ -48,7 +48,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					qg = 15180,	-- Baristolth of the Shifting Sands
 					qi = 20415,	-- The War of the Shifting Sands
 					coord = { 49.5, 36.4, SILITHUS },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger
@@ -132,7 +132,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8303,	-- Anachronos
 					qg = 15192,	-- Anachronos
 					coord = { 65.0, 50.0, TANARIS },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8599, {	-- Love Song for Narain
@@ -224,14 +224,14 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					qg = 11832,	-- Keeper Remulos
 					qi = 21139,	-- Green Scepter Shard
 					coord = { 36.18, 41.79, MOONGLADE },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
 					sourceQuest = 8519,	-- A Pawn on the Eternal Board
 					qg = 15192,	-- Anachronos
 					coord = { 65.0, 50.0, TANARIS },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8728, {	-- The Good News and The Bad News
@@ -254,7 +254,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8301,	-- The Path of the Righteous
 					qg = 15180,	-- Baristolth of the Shifting Sands
 					coord = { 49.5, 36.4, SILITHUS },
-					maxReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					maxReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					cost = { { "i", 20384, 200 } },	-- Silithid Carapace Fragment
 					repeatable = true,
 					lvl = 60,
@@ -295,7 +295,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8735,	-- The Nightmare's Corruption
 					qg = 11832,	-- Keeper Remulos
 					coord = { 36.18, 41.79, MOONGLADE },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 					groups = {
 						i(21531),	-- Drake Tooth Necklace
@@ -306,7 +306,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8734,	-- Tyrande and Remulos
 					qg = 11832,	-- Keeper Remulos
 					coord = { 36.18, 41.79, MOONGLADE },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					maps = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
 					lvl = 60,
 					groups = {
@@ -440,7 +440,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					sourceQuest = 8733,	-- Eranikus, Tyrant of the Dream
 					qg = 15624,	-- Forest Wisp
 					coord = { 37.5, 47.9, TELDRASSIL },
-					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					minReputation = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },
 					lvl = 60,
 				}),
 				q(8286, {	-- What Tomorrow Brings

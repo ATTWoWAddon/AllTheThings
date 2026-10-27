@@ -315,7 +315,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43805,	-- Felsen the Enduring
 				coord = { 56.1, 14.4, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -672,7 +672,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43805,	-- Felsen the Enduring
 				coord = { 56.1, 14.4, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -764,7 +764,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43804,	-- Gorsik the Tumultuous
 				coord = { 57.8, 13.0, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -792,7 +792,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				},
 				qg = 44973,	-- Ruberick
 				coord = { 59.4, 14.0, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -927,7 +927,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 44945,	-- Pyrite Stonetender
 				coord = { 55.4, 14.0, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -990,7 +990,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43805,	-- Felsen the Enduring
 				coord = { 56.1, 14.4, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -1266,7 +1266,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43804,	-- Gorsik the Tumultuous
 				coord = { 57.8, 13.0, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -1534,8 +1534,8 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 43806,	-- Terrath the Steady
 				coord = { 56.6, 14.0, DEEPHOLM },
-				minReputation = { FACTION_THERAZANE, REVERED },	-- Therazane, Revered.
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				minReputation = { FACTION_THERAZANE, REVERED },
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {
@@ -1719,7 +1719,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 44973,	-- Ruberick
 				coord = { 59.4, 14.0, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 			}),
@@ -1795,7 +1795,7 @@ maproot(THE_MAELSTROM, DEEPHOLM, {
 				sourceQuest = 26709,	-- The Stone Throne
 				qg = 44968,	-- Ricket
 				coord = { 61.2, 26.2, DEEPHOLM },
-				maxReputation = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
+				maxReputation = { FACTION_THERAZANE, EXALTED },
 				isDaily = true,
 				lvl = 82,
 				groups = {

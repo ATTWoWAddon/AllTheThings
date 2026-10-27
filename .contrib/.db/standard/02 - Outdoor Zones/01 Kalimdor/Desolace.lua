@@ -315,7 +315,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1385,	-- Brutal Politics
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,	-- TODO: Double check that this is only Alliance Only
 				lvl = 30,
@@ -464,7 +464,7 @@ maproot(KALIMDOR, DESOLACE, {
 				},
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {
@@ -984,7 +984,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1369,	-- Broken Tears
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 				lvl = 30,
@@ -1184,7 +1184,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1374,	-- Khan Jehn
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {
@@ -1202,7 +1202,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1375,	-- Khan Shaka
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {
@@ -1220,7 +1220,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1373,	-- Ongeku
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {
@@ -1235,7 +1235,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1371,	-- Gizmo for Warug
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {
@@ -1392,7 +1392,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1370,	-- Stealing Supplies
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				maps = { SWAMP_OF_SORROWS },
 				lvl = 30,
@@ -1874,7 +1874,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuest = 1384,	-- Raid on the Kolkar
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 30,
 				groups = {

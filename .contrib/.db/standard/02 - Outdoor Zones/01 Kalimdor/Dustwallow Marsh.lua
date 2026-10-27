@@ -3641,9 +3641,8 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 			}),
 			n(4885, {	-- Gregor MacVince <Horse Breeder>
 				coord = { 65.2, 51.4, DUSTWALLOW_MARSH },
-
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

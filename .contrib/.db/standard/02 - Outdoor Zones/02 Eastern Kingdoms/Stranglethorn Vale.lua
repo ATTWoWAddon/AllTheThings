@@ -429,7 +429,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					{ 30.6, 90.6, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				lvl = lvlsquish(55, 55, 10),
 				groups = {
 					i(12185),	-- Bloodsail Admiral's Hat
@@ -444,7 +444,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					{ 27.4, 69.4, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				isBreadcrumb = true,
 				lvl = lvlsquish(55, 55, 10),
 			}),
@@ -812,7 +812,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					{ 30.6, 90.6, STRANGLETHORN_VALE },
 					-- #endif
 				},
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },
 				lvl = lvlsquish(49, 49, 10),
 				groups = {
 					i(22746, {	-- Buccaneer's Uniform

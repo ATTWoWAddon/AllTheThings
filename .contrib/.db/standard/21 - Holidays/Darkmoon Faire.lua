@@ -400,7 +400,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						q(64783, {	-- Dance Dance Darkmoon
 							qg = 181097,	-- Simon Sezdans <Dance Master>
 							coord = { 51.2, 74.0, DARKMOON_ISLAND },
-							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 							isDaily = true,
 							groups = {
 								DARKMOON_GAME_PRIZE,
@@ -423,7 +423,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						q(36481, {	-- Firebird's Challenge
 							qg = 85546,	-- Ziggie Sparks
 							coord = { 48.3, 71.3, DARKMOON_ISLAND },
-							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -446,7 +446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						q(29438, {	-- He Shoots, He Scores!
 							qg = 14841,	-- Rinling
 							coord = { 49.6, 60.8, DARKMOON_ISLAND },
-							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -476,7 +476,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						q(29463, {	-- It's Hammer Time
 							qg = 54601,	-- Mola <Whack-a-Gnoll>
 							coord = { 53.2, 54.3, DARKMOON_ISLAND },
-							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+							maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 							isDaily = true,
 							groups = {
 								-- #if AFTER 5.2.0
@@ -895,7 +895,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -908,7 +908,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -918,7 +918,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29506, {	-- A Fizzy Fusion
 				qg = 14844,	-- Sylvannia
 				coord = { 50.5, 69.5, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = ALCHEMY,
 				isMonthly = true,
@@ -967,7 +967,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -980,7 +980,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14829 },	-- Yebb Neblegear
 				},
 				coord = { 51.1, 82.0, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -993,7 +993,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14822 },	-- Sayge
 				},
 				coord = { 53.6, 75.6, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -1025,7 +1025,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29508, {	-- Baby Needs Two Pair of Shoes
 				qg = 14829,	-- Yebb Neblegear
 				coord = { 51.1, 82.0, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = BLACKSMITHING,
 				isMonthly = true,
@@ -1053,7 +1053,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29520, {	-- Banners, Banners Everywhere!
 				qg = 10445,	-- Selina Dourman
 				coord = { 55.4, 54.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				cost = {
 					{ "i", 2320, 1 },	-- Coarse Thread
@@ -1814,7 +1814,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14829 },	-- Yebb Neblegear
 				},
 				coord = { 51.6, 81.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_5_4_0 },
 				isMonthly = true,
 				groups = {
@@ -1846,7 +1846,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29517, {	-- Eyes on the Prizes
 				qg = 14841,	-- Rinling
 				coord = { 49.6, 60.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				cost = {
 					{ "i", 6529, 10 },	-- Shiny Bauble
@@ -1877,7 +1877,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					30481,	-- Darkmoon Fortune Teller
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				cost = { { "c", 393, 15 } },	-- Fossil Archaeology Fragments
 				requireSkill = ARCHAEOLOGY,
@@ -2001,7 +2001,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29514, {	-- Herbs for Healing
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coord = { 55.0, 70.6, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = HERBALISM,
 				isMonthly = true,
@@ -2024,7 +2024,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29516, {	-- Keeping the Faire Sparkling
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coord = { 55.0, 70.6, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = JEWELCRAFTING,
 				isMonthly = true,
@@ -2216,7 +2216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29512, {	-- Putting the Carnies Back Together Again
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coord = { 55.0, 71.6, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0, REMOVED_8_0_1 },
 				requireSkill = FIRST_AID,
 				isMonthly = true,
@@ -2236,7 +2236,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29509, {	-- Putting the Crunch in the Frog
 				qg = 14845,	-- Stamp Thunderhorn
 				coord = { 52.8, 67.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = COOKING,
 				isMonthly = true,
@@ -2255,7 +2255,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29510, {	-- Putting Trash to Good Use
 				qg = 14822,	-- Sayge
 				coord = { 53.2, 75.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = ENCHANTING,
 				isMonthly = true,
@@ -2279,7 +2279,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29518, {	-- Rearm, Reuse, Recycle
 				qg = 14841,	-- Rinling
 				coord = { 49.6, 60.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = MINING,
 				isMonthly = true,
@@ -2455,7 +2455,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29513, {	-- Spoilin' for Salty Sea Dogs
 				qg = 14845,	-- Stamp Thunderhorn
 				coord = { 52.8, 67.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = FISHING,
 				isMonthly = true,
@@ -2490,7 +2490,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29511, {	-- Talkin' Tonks
 				qg = 14841,	-- Rinling
 				coord = { 49.6, 60.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = ENGINEERING,
 				isMonthly = true,
@@ -2513,7 +2513,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29519, {	-- Tan My Hide
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coord = { 55.0, 70.6, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = SKINNING,
 				isMonthly = true,
@@ -2551,7 +2551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -2629,7 +2629,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -2642,7 +2642,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -2699,7 +2699,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
 				},
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				isMonthly = true,
 				groups = {
@@ -2821,7 +2821,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			q(29515, {	-- Writing the Future
 				qg = 14822,	-- Sayge
 				coord = { 53.2, 75.8, DARKMOON_ISLAND },
-				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },	-- Darkmoon Faire, Exalted.
+				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
 				requireSkill = INSCRIPTION,
 				isMonthly = true,

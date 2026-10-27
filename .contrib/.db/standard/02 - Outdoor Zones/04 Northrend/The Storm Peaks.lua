@@ -362,14 +362,14 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(13559, {	-- Hodir's Tribute
 					qg = 32540,	-- Lillehoff
 					coord = { 66.1, 61.4, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					cost = { { "i", 42780, 10 } },	-- 10x Relic of Ulduar
 					repeatable = true,
 				}),
 				q(13011, {	-- Culling Jorcuttar
 					qg = 30105,	-- King Jokkum
 					coord = { 65.3, 60.1, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },
 					groups = {
 						objective(1, {	-- 0/1 Jorcuttar slain
 							provider = { "n", 30340 },	-- Jorcuttar
@@ -389,18 +389,18 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12987,	-- Placing Hodir's Helm
 					provider = { "o", 192080 },	-- Hodir's Helm
 					coord = { 64.2, 59.6, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 				q(13420, {	-- Everfrost
 					provider = { "i", 44725 },	-- Everfrost Chip
-					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },
 				}),
 				q(13421, {	-- Remember Everfrost!
 					sourceQuest = 13420,	-- Everfrost
 					qg = 32594,	-- Calder <Blacksmithing Supplies>
 					coord = { 67.0, 60.8, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					cost = { { "i", 44724, 1 } },	-- Everfrost Chip
 					repeatable = true,
 				}),
@@ -408,36 +408,36 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12976,	-- A Monument to the Fallen
 					provider = { "o", 192078 },	-- Hodir's Horn
 					coord = { 64.1, 64.7, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 				q(13046, {	-- Feeding Arngrim
 					provider = { "o", 192524 },	-- Arngrim the Insatiable
 					coord = { 67.5, 60.0, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, REVERED },	-- The Sons of Hodir, Revered.
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, REVERED },
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 				q(12981, {	-- Hot and Cold
 					sourceQuest = 12967,	-- Battling the Elements
 					provider = { "o", 192071 },	-- Fjorn's Anvil
 					coord = { 63.2, 63.0, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 				q(12994, {	-- Spy Hunter
 					qg = 30294,	-- Frostworg Denmother
 					coord = { 63.5, 59.7, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 				q(13003, {	-- How to Slay Your Dragon
 					sourceQuest = 13001,	-- Raising Hodir's Spear
 					provider = { "o", 192079 },	-- Hodir's Spear
 					coord = { 65.0, 60.9, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					isDaily = true,
 				}),
 
@@ -497,7 +497,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12922,	-- The Refiner's Fire
 					provider = { "o", 192060 },	-- Fjorn's Anvil
 					coord = { 77.1, 62.9, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 				}),
 				q(12925, {	-- Aberrations
 					sourceQuest = 12841,	-- The Crone's Bargain
@@ -767,7 +767,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12967,	-- Battling the Elements
 					qg = 30127,	-- Njormeld
 					coord = { 63.2, 63.2, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },
 					groups = {
 						objective(1, {	-- 0/8 Stormforged Eye
 							providers = {
@@ -801,7 +801,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(13001, {	-- Raising Hodir's Spear
 					qg = 30252,	-- Lorekeeper Randvir
 					coord = { 64.8, 59.1, THE_STORM_PEAKS },
-					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, HONORED },
 					groups = {
 						objective(1, {	-- 0/3 Everfrost Shard
 							providers = {
@@ -982,7 +982,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13064,	-- Sibling Rivalry
 					qg = 29445,	-- Thorim
 					coord = { 33.4, 58.0, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
+					maxReputation = { FACTION_THE_SONS_OF_HODIR, EXALTED },
 					groups = {
 						o_repeated({	-- Granite Boulder
 							i(41506),	-- Granite Boulder (QI!)
@@ -1112,7 +1112,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12869, {	-- Pushed Too Far
 					qg = 29732,	-- Fjorlin Frostbrow
 					coord = { 29.8, 75.7, THE_STORM_PEAKS },
-					maxReputation = { FACTION_THE_FROSTBORN, EXALTED },	-- The Frostborn, Exalted.
+					maxReputation = { FACTION_THE_FROSTBORN, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 					-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone. i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in. some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
@@ -1666,7 +1666,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						{ 70.4, 59.8, THE_STORM_PEAKS },	-- Frostfield Lake
 					},
 					description = "Everfrost Chip spawns can be hard to find due to their scarcity. They can spawn anywhere between Brunnhildar Village and Thunderfall.\n\nAlthough you can open these while being hated with The Sons of Hodir, you will NOT get any Everfrost Chips!",
-					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly. Probably? Does only provide grey powder when hated.
+					minReputation = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- Probably? Does only provide grey powder when hated.
 					groups = {
 						i(44724),	-- Everfrost Chip (for repeating quests)
 						i(44725),	-- Everfrost Chip (for initial quest)

@@ -280,7 +280,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "Complete Troll Patrol within 20 minutes to access.",
 					qg = 28039,	-- Commander Kunz
 					coord = { 40.2, 66.6, ZULDRAK },
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					isDaily = true,
 					groups = {
 						i(43556, {	-- Patroller's Pack
@@ -1007,7 +1007,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12596,	-- Pa'Troll
 					qg = 28039,	-- Commander Kunz
 					coord = { 40.2, 66.6, ZULDRAK },
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					isDaily = true,
 					-- confirmed available 14.October.2019 by Pr3vention
 				}),
@@ -1015,7 +1015,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12596,	-- Pa'Troll
 					qg = 28039,	-- Commander Kunz
 					coord = { 40.2, 66.6, ZULDRAK },
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					isDaily = true,
 					-- confirmed available 26.June.2021 by Darkal
 				}),
@@ -1023,7 +1023,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12596,	-- Pa'Troll
 					qg = 28039,	-- Commander Kunz
 					coord = { 40.2, 66.6, ZULDRAK },
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					isDaily = true,
 					-- almost certainly the removed version, will check in Wrath Classic
 					-- confirmed available 2023-7-30 [70/Human/Paladin/Revered]

@@ -1420,7 +1420,7 @@ applyclassicphase(PHASE_SIX,
 							sourceQuest = 9233,	-- Omarion's Handbook
 							qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							cost = {
 								{ "i", 22682, 5 },	-- Frozen Rune
 								{ "i",  7080, 2 },	-- Essence of Water
@@ -1460,7 +1460,7 @@ applyclassicphase(PHASE_SIX,
 							sourceQuest = 9233,	-- Omarion's Handbook
 							qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							cost = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 6 },	-- Essence of Water
@@ -1521,7 +1521,7 @@ applyclassicphase(PHASE_SIX,
 							sourceQuest = 9233,	-- Omarion's Handbook
 							qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							cost = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i", 7080, 4 },	-- Essence of Water
@@ -1582,7 +1582,7 @@ applyclassicphase(PHASE_SIX,
 							sourceQuest = 9233,	-- Omarion's Handbook
 							qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							cost = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 7 },	-- Essence of Water
@@ -1622,7 +1622,7 @@ applyclassicphase(PHASE_SIX,
 						q(9233, {	-- Omarion's Handbook
 							description = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 							provider = { "i", 22719 },	-- Omarion's Handbook
-							minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+							minReputation = { FACTION_ARGENT_DAWN, REVERED },
 							lvl = 60,
 							-- #if BEFORE WRATH
 							OnUpdate = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
@@ -1672,7 +1672,7 @@ applyclassicphase(PHASE_SIX,
 							sourceQuest = 9233,	-- Omarion's Handbook
 							qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							cost = {
 								{ "i", 22682, 8 },	-- Frozen Rune
 								{ "i",  7080, 5 },	-- Essence of Water
@@ -1711,7 +1711,7 @@ applyclassicphase(PHASE_SIX,
 							},
 							qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn, Honored.
+							minReputation = { FACTION_ARGENT_DAWN, HONORED },
 							cost = {
 								{ "i", 12363, 5 },	-- Arcane Crystal
 								{ "i", 14344, 2 },	-- Large Brilliant Shard
@@ -1729,7 +1729,7 @@ applyclassicphase(PHASE_SIX,
 							},
 							qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+							minReputation = { FACTION_ARGENT_DAWN, REVERED },
 							cost = {
 								{ "i", 12363, 2 },	-- Arcane Crystal
 								{ "i", 20725, 1 },	-- Nexus Crystal
@@ -1745,7 +1745,7 @@ applyclassicphase(PHASE_SIX,
 							},
 							qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							lvl = 60,
 						}),
 						q(9120, {	-- The Fall of Kel'Thuzad
@@ -2016,58 +2016,58 @@ applyclassicphase(PHASE_SIX,
 								groups = {
 									i(22719, {	-- Omarion's Handbook
 										description = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 									}),
 									r(28208, {	-- Glacial Cloak (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 										requireSkill = TAILORING,
 									}),
 									r(28205, {	-- Glacial Gloves (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = TAILORING,
 									}),
 									r(28207, {	-- Glacial Vest (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 										requireSkill = TAILORING,
 									}),
 									r(28209, {	-- Glacial Wrists (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = TAILORING,
 									}),
 									r(28244, {	-- Icebane Bracers (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = BLACKSMITHING,
 									}),
 									r(28242, {	-- Icebane Breastplate (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+										minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 										requireSkill = BLACKSMITHING,
 									}),
 									r(28243, {	-- Icebane Gauntlets (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = BLACKSMITHING,
 									}),
 									r(28224, {	-- Icy Scale Bracers (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = LEATHERWORKING,
 									}),
 									r(28222, {	-- Icy Scale Breastplate (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 										requireSkill = LEATHERWORKING,
 									}),
 									r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = LEATHERWORKING,
 									}),
 									r(28221, {	-- Polar Bracers (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = LEATHERWORKING,
 									}),
 									r(28220, {	-- Polar Gloves (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, REVERED },
 										requireSkill = LEATHERWORKING,
 									}),
 									r(28219, {	-- Polar Tunic (RECIPE!)
-										minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+										minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 										requireSkill = LEATHERWORKING,
 									}),
 								},
@@ -3589,7 +3589,7 @@ applyclassicphase(PHASE_SIX,
 									sourceQuest = 9233,	-- Omarion's Handbook
 									qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 									coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									cost = {
 										{ "i", 236656, 5 },	-- Frozen Rune
 										{ "i",  7080, 2 },	-- Essence of Water
@@ -3623,7 +3623,7 @@ applyclassicphase(PHASE_SIX,
 									sourceQuest = 9233,	-- Omarion's Handbook
 									qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 									coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									cost = {
 										{ "i", 236656, 8 },	-- Frozen Rune
 										{ "i",  7080, 6 },	-- Essence of Water
@@ -3675,7 +3675,7 @@ applyclassicphase(PHASE_SIX,
 									sourceQuest = 9233,	-- Omarion's Handbook
 									qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 									coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									cost = {
 										{ "i", 236656, 8 },	-- Frozen Rune
 										{ "i", 7080, 4 },	-- Essence of Water
@@ -3727,7 +3727,7 @@ applyclassicphase(PHASE_SIX,
 									sourceQuest = 9233,	-- Omarion's Handbook
 									qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 									coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									cost = {
 										{ "i", 236656, 8 },	-- Frozen Rune
 										{ "i",  7080, 7 },	-- Essence of Water
@@ -3761,7 +3761,7 @@ applyclassicphase(PHASE_SIX,
 								q(9233, {	-- Omarion's Handbook
 									description = "You must not have a profession above 270 skill for you to get this item from Omarion.",
 									provider = { "i", 22719 },	-- Omarion's Handbook
-									minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+									minReputation = { FACTION_ARGENT_DAWN, REVERED },
 									lvl = 60,
 									-- #if BEFORE WRATH
 									OnUpdate = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
@@ -3805,7 +3805,7 @@ applyclassicphase(PHASE_SIX,
 									sourceQuest = 9233,	-- Omarion's Handbook
 									qg = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 									coord = { 81.0, 59.6, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									cost = {
 										{ "i", 236656, 8 },	-- Frozen Rune
 										{ "i",  7080, 5 },	-- Essence of Water
@@ -3841,7 +3841,7 @@ applyclassicphase(PHASE_SIX,
 									},
 									qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 									coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn, Honored.
+									minReputation = { FACTION_ARGENT_DAWN, HONORED },
 									cost = {
 										{ "i", 12363, 5 },	-- Arcane Crystal
 										{ "i", 14344, 2 },	-- Large Brilliant Shard
@@ -3859,7 +3859,7 @@ applyclassicphase(PHASE_SIX,
 									},
 									qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 									coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+									minReputation = { FACTION_ARGENT_DAWN, REVERED },
 									cost = {
 										{ "i", 12363, 2 },	-- Arcane Crystal
 										{ "i", 20725, 1 },	-- Nexus Crystal
@@ -3875,7 +3875,7 @@ applyclassicphase(PHASE_SIX,
 									},
 									qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 									coord = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-									minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+									minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 									lvl = 60,
 								}),
 								q(9120, {	-- The Fall of Kel'Thuzad
@@ -4356,58 +4356,58 @@ applyclassicphase(PHASE_SIX,
 										groups = {
 											i(22719, {	-- Omarion's Handbook
 												description = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 											}),
 											r(28208, {	-- Glacial Cloak (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 												requireSkill = TAILORING,
 											}),
 											r(28205, {	-- Glacial Gloves (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = TAILORING,
 											}),
 											r(28207, {	-- Glacial Vest (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 												requireSkill = TAILORING,
 											}),
 											r(28209, {	-- Glacial Wrists (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = TAILORING,
 											}),
 											r(28244, {	-- Icebane Bracers (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = BLACKSMITHING,
 											}),
 											r(28242, {	-- Icebane Breastplate (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+												minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 												requireSkill = BLACKSMITHING,
 											}),
 											r(28243, {	-- Icebane Gauntlets (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = BLACKSMITHING,
 											}),
 											r(28224, {	-- Icy Scale Bracers (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = LEATHERWORKING,
 											}),
 											r(28222, {	-- Icy Scale Breastplate (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 												requireSkill = LEATHERWORKING,
 											}),
 											r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = LEATHERWORKING,
 											}),
 											r(28221, {	-- Polar Bracers (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = LEATHERWORKING,
 											}),
 											r(28220, {	-- Polar Gloves (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, REVERED },
 												requireSkill = LEATHERWORKING,
 											}),
 											r(28219, {	-- Polar Tunic (RECIPE!)
-												minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
+												minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 												requireSkill = LEATHERWORKING,
 											}),
 										},

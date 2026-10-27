@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					sourceQuest = 6822,	-- The Molten Core
 					qg = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, AZSHARA },
-					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },
 					timeline = { REMOVED_3_0_8 },
 					lvl = 55,
 				}),
@@ -433,13 +433,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(17333, {	-- Aqual Quintessence
 					description = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
 					sourceQuest = 6824,	-- Hands of the Enemy
-					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },
 					timeline = { REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
 					description = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
 					sourceQuest = 6824,	-- Hands of the Enemy
-					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
+					minReputation = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },
 					timeline = { REMOVED_3_0_8 },
 				})),
 			}),

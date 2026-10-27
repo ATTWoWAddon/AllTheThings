@@ -197,11 +197,11 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					collectible = false,
 				}),
 				faction(FACTION_FRENZYHEART_TRIBE, {	-- Frenzyheart Tribe
-					maxReputation = { FACTION_THE_ORACLES, NEUTRAL },	-- The Oracles, Neutral.
+					maxReputation = { FACTION_THE_ORACLES, NEUTRAL },
 					OnTooltip = [[_.OnTooltipDB.ForFrenzyheart]],
 				}),
 				faction(FACTION_THE_ORACLES, {	-- The Oracles
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, NEUTRAL },
 					OnTooltip = [[_.OnTooltipDB.ForOracles]],
 				}),
 			}),
@@ -228,16 +228,16 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29043,	-- Rejek
 					coord = { 55.7, 69.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12702, {	-- Chicken Party!
 					sourceQuest = 12692,	-- Return of the Lich Hunter
 					qg = 28138,	-- Elder Harkek
 					coord = { 55.5, 69.6, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12582, {	-- Frenzyheart Champion
@@ -250,8 +250,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12692,	-- Return of the Lich Hunter
 					qg = 29146,	-- Vekgar
 					coord = { 55.5, 68.6, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12734, {	-- Rejek: First Blood
@@ -264,8 +264,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29043,	-- Rejek
 					coord = { 55.7, 69.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12692, {	-- Return of the Lich Hunter
@@ -277,8 +277,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12692,	-- Return of the Lich Hunter
 					qg = 29146,	-- Vekgar
 					coord = { 55.5, 68.6, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12741, {	-- Strength of the Tempest
@@ -291,8 +291,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29043,	-- Rejek
 					coord = { 55.7, 69.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12732, {	-- The Heartblood's Strength
@@ -305,16 +305,16 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29043,	-- Rejek
 					coord = { 55.7, 69.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 				q(12759, {	-- Tools of War
 					sourceQuest = 12692,	-- Return of the Lich Hunter
 					qg = 29146,	-- Vekgar
 					coord = { 55.5, 68.6, SHOLAZAR_BASIN },
-					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
-					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+					minReputation = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },
+					maxReputation = { FACTION_FRENZYHEART_TRIBE, EXALTED },
 					isDaily = true,
 				}),
 
@@ -329,8 +329,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29006,	-- Oracle Soo-nee
 					coord = { 53.3, 56.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 				}),
 				q(12704, {	-- Appeasing the Great Rain Stone
@@ -338,8 +338,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 28027,	-- High-Oracle Soo-say
 					qi = 38622,	-- Lafoo's Bug Bag
 					coord = { 54.6, 56.3, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/6 Shiny Treasures
@@ -364,8 +364,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12695,	-- Return of the Friendly Dryskin
 					qg = 29149,	-- Oracle Soo-dow
 					coord = { 54.2, 53.8, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/50 Frenzyheart Attacker slain
@@ -383,8 +383,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12695,	-- Return of the Friendly Dryskin
 					qg = 29149,	-- Oracle Soo-dow
 					coord = { 54.2, 53.8, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 				}),
 				q(12695, {	-- Return of the Friendly Dryskin
@@ -402,8 +402,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29006,	-- Oracle Soo-nee
 					coord = { 53.3, 56.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/8 Song of Fedundity played
@@ -424,8 +424,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29006,	-- Oracle Soo-nee
 					coord = { 53.3, 56.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 				}),
 				q(12726, {	-- Song of Wind and Water
@@ -438,16 +438,16 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					qg = 29006,	-- Oracle Soo-nee
 					coord = { 53.3, 56.4, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 				}),
 				q(12705, {	-- Will of the Titans
 					sourceQuest = 12695,	-- Return of the Friendly Dryskin
 					qg = 29149,	-- Oracle Soo-dow
 					coord = { 54.2, 53.8, SHOLAZAR_BASIN },
-					minReputation = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
-					maxReputation = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+					minReputation = { FACTION_THE_ORACLES, FRIENDLY },
+					maxReputation = { FACTION_THE_ORACLES, EXALTED },
 					isDaily = true,
 				}),
 

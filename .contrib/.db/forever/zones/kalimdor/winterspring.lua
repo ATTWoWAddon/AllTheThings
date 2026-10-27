@@ -300,8 +300,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(4970, {	-- Frostsaber Provisions
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, MAP.WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },	-- Wintersaber Trainers, Neutral.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 58,
@@ -423,8 +423,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(5981, {	-- Rampaging Giants
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, MAP.WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, HONORED },	-- Wintersaber Trainers, Honored.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, HONORED },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 58,
@@ -728,8 +728,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(5201, {	-- Winterfall Intrusion
 				qg = 10618,	-- Rivern Frostwind
 				coord = { 49.8, 9.8, MAP.WINTERSPRING },
-				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },	-- Wintersaber Trainers, Neutral + 1500.
-				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },
+				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 58,
@@ -874,7 +874,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				},
 			}),
 			n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
-				minReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },	-- Wintersaber Trainers, Exalted.
+				minReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				coord = { 49.8, 9.8, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
 				groups = {

@@ -243,8 +243,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9919,	-- Sporeggar
 					qg = 17924,	-- Msshi'fn
 					coord = { 19.7, 52.1, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
-					maxReputation = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
+					minReputation = { FACTION_SPOREGGAR, NEUTRAL },
+					maxReputation = { FACTION_SPOREGGAR, FRIENDLY },
 					timeline = { ADDED_7_3_5 },
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
@@ -259,8 +259,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					qg = 17923,	-- Fahssn
 					coord = { 19.0, 63.4, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, UNFRIENDLY },	-- Sporeggar, Unfriendly.
-					maxReputation = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
+					minReputation = { FACTION_SPOREGGAR, UNFRIENDLY },
+					maxReputation = { FACTION_SPOREGGAR, NEUTRAL },
 					timeline = { ADDED_7_3_5 },
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral
@@ -303,7 +303,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9792, {	-- A Message to Telaar
 					qg = 18008,	-- Ikuti
-					minReputation = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
+					minReputation = { FACTION_KURENAI, NEUTRAL },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(64, 64, 10),
 				}),
@@ -517,7 +517,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9766, {	-- Coilfang Armaments
 					sourceQuest = 9765,	-- Preparing for War
 					qg = 17841,	-- Ysiel Windsinger
-					maxReputation = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
+					maxReputation = { FACTION_CENARION_EXPEDITION, EXALTED },
 					timeline = { REMOVED_4_3_0 },
 					maps = { COILFANG_RESERVOIR_STEAMVAULT },
 					cost = { { "i", 24368, 1 } },	-- Coilfang Armaments
@@ -625,7 +625,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9806, {	-- Fertile Spores
 					qg = 17925,	-- Gshaff
 					coord = { 19.1, 49.4, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
+					minReputation = { FACTION_SPOREGGAR, NEUTRAL },
 					groups = {
 						objective(1, {	-- 0/6	Fertile Spores
 							provider = { "i", 24449 },	-- Fertile Spores
@@ -639,9 +639,9 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 19.8, 50.8, ZANGARMARSH },
 					minReputation = {	-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
 						-- #if AFTER CATA
-						FACTION_SPOREGGAR, FRIENDLY,	-- Sporeggar, Friendly.
+						FACTION_SPOREGGAR, FRIENDLY,
 						-- #else
-						FACTION_SPOREGGAR,  EXALTED,	-- Sporeggar, Exalted.
+						FACTION_SPOREGGAR,  EXALTED,
 						-- #endif
 					},
 					lvl = lvlsquish(63, 63, 10),
@@ -696,8 +696,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9808, {	-- Glowcap Mushrooms
 					qg = 17924,	-- Msshi'fn
 					coord = { 19.7, 52.1, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
-					maxReputation = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
+					minReputation = { FACTION_SPOREGGAR, NEUTRAL },
+					maxReputation = { FACTION_SPOREGGAR, FRIENDLY },
 					cost = { { "i", 24245, 10 } },	-- Glowcap
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
@@ -729,7 +729,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9802,	-- Plants of Zangarmarsh
 					qg = 17909,	-- Lauranna Thar'well
 					coord = { 80.3, 64.2, ZANGARMARSH },
-					maxReputation = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
+					maxReputation = { FACTION_CENARION_EXPEDITION, HONORED },
 					cost = { { "i", 24401, 10 } },	-- Unidentified Plant Parts
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 942.6 },	-- Cenarion Expedition, Honored
@@ -831,7 +831,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9833, {	-- Lines of Communication
 					qg = 18009,	-- Puluu
 					coord = { 40.8, 28.6, ZANGARMARSH },
-					minReputation = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
+					minReputation = { FACTION_KURENAI, NEUTRAL },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(62, 62, 10),
 					groups = {
@@ -926,8 +926,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9806,	-- Fertile Spores
 					qg = 17925,	-- Gshaff
 					coord = { 19.1, 49.4, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-					maxReputation = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+					minReputation = { FACTION_SPOREGGAR, FRIENDLY },
+					maxReputation = { FACTION_SPOREGGAR, EXALTED },
 					cost = { { "i", 24449, 6 } },	-- Fertile Spore
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
@@ -974,7 +974,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9834, {	-- Natural Armor
 					qg = 18010,	-- Maktu
 					coord = { 41.6, 27.4, ZANGARMARSH },
-					minReputation = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
+					minReputation = { FACTION_KURENAI, NEUTRAL },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(62, 62, 10),
 					groups = {
@@ -1055,8 +1055,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9726,	-- Now That We're Friends...
 					qg = 17856,	-- Gzhun'tt
 					coord = { 19.5, 50.0, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
-					maxReputation = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+					minReputation = { FACTION_SPOREGGAR, FRIENDLY },
+					maxReputation = { FACTION_SPOREGGAR, EXALTED },
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
 					-- #endif
@@ -1249,7 +1249,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 17923,	-- Fahssn
 					qi = 25491,	-- Salvaged Spore Sacs
 					coord = { 19.0, 63.4, ZANGARMARSH },
-					minReputation = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
+					minReputation = { FACTION_SPOREGGAR, NEUTRAL },
 					lvl = lvlsquish(60, 60, 10),
 				}),
 				q(9709, {	-- Stealing Back the Mushrooms
@@ -1282,7 +1282,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9830, {	-- Stinger Venom
 					qg = 18009,	-- Puluu
 					coord = { 40.8, 28.6, ZANGARMARSH },
-					minReputation = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
+					minReputation = { FACTION_KURENAI, NEUTRAL },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(62, 62, 10),
 					groups = {
@@ -1441,7 +1441,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9902, {	-- The Terror of Marshlight Lake
 					qg = 18009,	-- Puluu
 					coord = { 40.8, 28.6, ZANGARMARSH },
-					minReputation = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
+					minReputation = { FACTION_KURENAI, NEUTRAL },
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(62, 62, 10),
 					groups = {
@@ -2116,7 +2116,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(23373, {	-- Mortog Steamhead
 					description = "Will only serve players who are Exalted with Cenarion Expedition.",
-					minReputation = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
+					minReputation = { FACTION_CENARION_EXPEDITION, EXALTED },
 					timeline = { ADDED_2_1_0 },
 				}),
 				n(18382, {	-- Mycah <Sporeggar Quartermaster>

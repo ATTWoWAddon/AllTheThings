@@ -43,7 +43,7 @@ battleground(MAP.ARATHI_BASIN, {
 			q(8262, {	-- Arathor Advanced Care Package
 				qg = 15127,	-- Samuel Hawke
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 				groups = {
@@ -53,7 +53,7 @@ battleground(MAP.ARATHI_BASIN, {
 			q(8260, {	-- Arathor Basic Care Package
 				qg = 15127,	-- Samuel Hawke
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -63,7 +63,7 @@ battleground(MAP.ARATHI_BASIN, {
 			q(8261, {	-- Arathor Standard Care Package
 				qg = 15127,	-- Samuel Hawke
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -454,7 +454,7 @@ battleground(MAP.ARATHI_BASIN, {
 				sourceQuest = 8114,	-- Control Four Bases (Alliance)
 				qg = 14983,	-- Field Marshal Oslight
 				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				groups = {
@@ -470,14 +470,14 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 14983,	-- Field Marshal Oslight
 				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 			}),
 			q(8265, {	-- Defiler's Advanced Care Package
 				qg = 15126,	-- Rutherford Twing
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = 45,
 				groups = {
@@ -487,7 +487,7 @@ battleground(MAP.ARATHI_BASIN, {
 			q(8263, {	-- Defiler's Basic Care Package
 				qg = 15126,	-- Rutherford Twing
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -497,7 +497,7 @@ battleground(MAP.ARATHI_BASIN, {
 			q(8264, {	-- Defiler's Standard Care Package
 				qg = 15126,	-- Rutherford Twing
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -508,7 +508,7 @@ battleground(MAP.ARATHI_BASIN, {
 				sourceQuest = 8121,	-- Take Four Bases (Horde)
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+				minReputation = { FACTION_THE_DEFILERS, EXALTED },
 				races = HORDE_ONLY,
 				lvl = 60,
 				groups = {
@@ -524,7 +524,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = 60,
 			}),

@@ -116,7 +116,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 		}),
 		n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 			coord = { 61.4, 63.8, REVENDRETH },
-			minReputation = { FACTION_COURT_OF_HARVESTERS, FRIENDLY },	-- Court of Harvesters, Friendly
+			minReputation = { FACTION_COURT_OF_HARVESTERS, FRIENDLY },
 			groups = bubbleDownClassicRep(FACTION_COURT_OF_HARVESTERS, {
 				{		-- Neutral
 					i(190644, {	-- Vessel of Profound Possibilities (CI!)

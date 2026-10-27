@@ -1711,9 +1711,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(4732, {	-- Randal Hunter <Horse Riding Instructor>
 				coord = { 84.2, 65.0, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;
@@ -1833,7 +1832,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(384, {	-- Katie Hunter <Horse Breeder>
 				coord = { 84.0, 65.4, MAP.ELWYNN_FOREST },
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

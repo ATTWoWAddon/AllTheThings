@@ -14,7 +14,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			}),
 			battlepets({
 				description = "The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",
-				minReputation = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },	-- Order of the Cloud Serpent, Exalted.
+				minReputation = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 				groups = {
 					pet(819),	-- Wild Crimson Hatchling (PET!)
 					pet(818),	-- Wild Golden Hatchling (PET!)

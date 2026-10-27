@@ -159,7 +159,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				sourceQuest = 7823,	-- A Donation of Runecloth
 				qg = 14728,	-- Rumstag Proudstrider
 				coord = { 43.2, 42.8, THUNDER_BLUFF },
-				maxReputation = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
+				maxReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,

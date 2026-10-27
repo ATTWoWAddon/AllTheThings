@@ -763,7 +763,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 11526,	-- The Missing Magistrix
 					qg = 24937,	-- Magistrix Seyla
 					coord = { 58.2, 17.6, HELLFIRE_PENINSULA },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
 					groups = {
@@ -781,7 +781,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 11526,	-- The Missing Magistrix
 					qg = 24937,	-- Magistrix Seyla
 					coord = { 58.2, 17.6, HELLFIRE_PENINSULA },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
 					groups = appendGroups(BLOOD_FOR_BLOOD_GROUPS, {

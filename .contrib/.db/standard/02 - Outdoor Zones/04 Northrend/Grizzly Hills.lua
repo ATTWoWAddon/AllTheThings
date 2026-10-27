@@ -336,7 +336,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12170, {	-- Blackriver Brawl
 					qg = 27120,	-- Raider Captain Kronn
 					coord = { 26.4, 65.8, GRIZZLY_HILLS },
-					maxReputation = { FACTION_HORDE_EXPEDITION, EXALTED },	-- Horde Expedition, Exalted.
+					maxReputation = { FACTION_HORDE_EXPEDITION, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 					-- #if BEFORE CATA
@@ -348,7 +348,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12444, {	-- Blackriver Skirmish
 					qg = 27783,	-- Scout Captain Carter
 					coord = { 29.9, 59.7, GRIZZLY_HILLS },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 					-- #if BEFORE CATA
@@ -781,7 +781,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12284, {	-- Keep 'Em on Their Heels
 					qg = 27451,	-- Commander Bargok
 					coord = { 34.4, 33.0, GRIZZLY_HILLS },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				})),
@@ -810,7 +810,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12289, {	-- Kick 'Em While They're Down
 					qg = 27468,	-- Sergeant Hartsman
 					coord = { 39.3, 43.8, GRIZZLY_HILLS },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				})),
@@ -822,7 +822,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12296, {	-- Life or Death
 					qg = 27484,	-- Rheanna
 					coord = { 40.4, 42.6, GRIZZLY_HILLS },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				})),
@@ -871,7 +871,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12280, {	-- Making Repairs
 					qg = 27422,	-- Lurz
 					coord = { 34.4, 32.6, GRIZZLY_HILLS },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				})),
@@ -972,7 +972,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12288, {	-- Overwhelmed!
 					qg = 27464,	-- Aumana
 					coord = { 33.8, 32.8, GRIZZLY_HILLS },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				})),
@@ -1222,7 +1222,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				pvp(q(12270, {	-- Shred the Alliance
 					qg = 27423,	-- Grekk
 					coord = { 34.4, 32.6, GRIZZLY_HILLS },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				})),

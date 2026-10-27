@@ -384,7 +384,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				sourceQuest = 7805,	-- A Donation of Runecloth
 				qg = 14723,	-- Mistina Steelshield
 				coord = { 43.2, 31.9, IRONFORGE },
-				maxReputation = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
+				maxReputation = { FACTION_IRONFORGE, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
@@ -395,7 +395,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				sourceQuest = 7811,	-- A Donation of Runecloth
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, IRONFORGE },
-				maxReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
+				maxReputation = { FACTION_GNOMEREGAN, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = ALLIANCE_ONLY,
@@ -1657,23 +1657,23 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 						cost = 12000000,	-- 1,200g
 					}),
 					i(246491, {	-- Ironforge Fence (DECOR!)
-						minReputation = { FACTION_IRONFORGE, FRIENDLY },	-- Ironforge, Friendly
+						minReputation = { FACTION_IRONFORGE, FRIENDLY },
 						cost = 1500000,	-- 150g
 					}),
 					i(246490, {	-- Ironforge Fencepost (DECOR!)
-						minReputation = { FACTION_IRONFORGE, FRIENDLY },	-- Ironforge, Friendly
+						minReputation = { FACTION_IRONFORGE, FRIENDLY },
 						cost = 2500000,	-- 250g
 					}),
 					i(256333, {	-- Ornate Dwarven Wardrobe (DECOR!)
-						minReputation = { FACTION_IRONFORGE, REVERED },	-- Ironforge, Revered
+						minReputation = { FACTION_IRONFORGE, REVERED },
 						cost = 10000000,	-- 1,000g
 					}),
 					i(252010, {	-- Ornate Ironforge Bench (DECOR!)
-						minReputation = { FACTION_IRONFORGE, HONORED },	-- Ironforge, Honored
+						minReputation = { FACTION_IRONFORGE, HONORED },
 						cost = 4500000,	-- 450g
 					}),
 					i(246426, {	-- Ornate Ironforge Table (DECOR!)
-						minReputation = { FACTION_IRONFORGE, HONORED },	-- Ironforge, Honored
+						minReputation = { FACTION_IRONFORGE, HONORED },
 						cost = 6000000,	-- 600g
 					}),
 					i(256425, {	-- Shadowforge Stone Chair (DECOR!)
@@ -2148,21 +2148,11 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(45578, {	-- Gnomeregan Tabard
-						timeline = { ADDED_3_1_0 },
-					}),
-					i(64896, {	-- Cape of Gnomeregan
-						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-					}),
-					i(64895, {	-- Mantle of Gnomeregan
-						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-					}),
-					i(64897, {	-- Shroud of Gnomeregan
-						minReputation = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
-					}),
-					i(67530, {	-- Gnomeregan Satchel
-						minReputation = { FACTION_GNOMEREGAN, REVERED },	-- Gnomeregan Exiles, Revered.
-					}),
+					i(64896, { minReputation = { FACTION_GNOMEREGAN, EXALTED } }),	-- Cape of Gnomeregan
+					i(67530, { minReputation = { FACTION_GNOMEREGAN, REVERED } }),	-- Gnomeregan Satchel
+					i(45578, { timeline = { ADDED_3_1_0 } }),	-- Gnomeregan Tabard
+					i(64895, { minReputation = { FACTION_GNOMEREGAN, EXALTED } }),	-- Mantle of Gnomeregan
+					i(64897, { minReputation = { FACTION_GNOMEREGAN, EXALTED } }),	-- Shroud of Gnomeregan
 				},
 			}),
 			n(5107, {	-- Mangorn Flinthammer

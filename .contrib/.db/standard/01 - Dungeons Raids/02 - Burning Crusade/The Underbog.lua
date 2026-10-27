@@ -41,7 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					sourceQuest = 9715,	-- Bring Me A Shrubbery!
 					qg = 17856,	-- Gzhun'tt
 					coord = { 19.4, 50.0, ZANGARMARSH },
-					maxReputation = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+					maxReputation = { FACTION_SPOREGGAR, EXALTED },
 					timeline = { REMOVED_4_3_0 },
 					cost = { { "i", 24246, 5 } },	-- Sanguine Hibiscus
 					repeatable = true,
@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29692, {	-- Bring Me Another Shrubbery!
 					sourceQuest = 29691,	-- Bring Me A Shrubbery!
 					qg = 54674,	-- T'shu
-					maxReputation = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+					maxReputation = { FACTION_SPOREGGAR, EXALTED },
 					timeline = { ADDED_4_3_0 },
 					cost = { { "i", 24246, 5 } },	-- Sanguine Hibiscus
 					repeatable = true,

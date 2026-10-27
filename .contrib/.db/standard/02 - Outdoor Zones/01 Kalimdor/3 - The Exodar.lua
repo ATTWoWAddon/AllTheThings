@@ -109,7 +109,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10357,	-- A Donation of Runecloth
 					qg = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					coord = { 63.5, 67.7, THE_EXODAR },
-					maxReputation = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
+					maxReputation = { FACTION_EXODAR, EXALTED },
 					timeline = { REMOVED_4_0_3},
 					cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 					races = ALLIANCE_ONLY,
@@ -538,21 +538,11 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					timeline = { ADDED_4_0_3 },
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(45580, {	-- Exodar Tabard
-							timeline = { ADDED_3_1_0 },
-						}),
-						i(64889, {	-- Mantle of Exodar
-							minReputation = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-						}),
-						i(64890, {	-- Cape of Exodar
-							minReputation = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-						}),
-						i(64891, {	-- Shroud of Exodar
-							minReputation = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
-						}),
-						i(67527, {	-- Exodar Satchel
-							minReputation = { FACTION_EXODAR, REVERED },	-- Exodar, Revered.
-						}),
+						i(64890, { minReputation = { FACTION_EXODAR, EXALTED } }),	-- Cape of Exodar
+						i(67527, { minReputation = { FACTION_EXODAR, REVERED } }),	-- Exodar Satchel
+						i(45580, { timeline = { ADDED_3_1_0 } }),	-- Exodar Tabard
+						i(64889, { minReputation = { FACTION_EXODAR, EXALTED } }),	-- Mantle of Exodar
+						i(64891, { minReputation = { FACTION_EXODAR, EXALTED } }),	-- Shroud of Exodar
 					},
 				}),
 				n(16747, {	-- Mahri
@@ -653,7 +643,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 					coord = { 81.5, 51.4, THE_EXODAR },
 					-- Available to Draenei without faction requirements.
-					minReputation = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
+					minReputation = { FACTION_EXODAR, EXALTED },
 					OnInit = [[function(t)
 						if _.RaceIndex == ]] .. DRAENEI .. [[ then
 							t.minReputation = nil;

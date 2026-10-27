@@ -78,7 +78,7 @@ root(ROOTS.Promotions, {
 			ach(62387, {	-- It's Nearly Midnight
 				description = "Obtained by logging in to an account with an active subscription before the release of Midnight on March 2nd, 2026.",
 				timeline = { "removed 12.0.1.66198" },
-				groups = { i(260785) },	-- The Dark Portal (DECOR!)
+				groups = { i(260785) },	-- Miniature Replica Dark Portal (DECOR!)
 			}),
 			i(264396, {	-- Naturally Elegant Doormat (DECOR!)
 				description = "Visit |cFFFFD700zillow.com/warcraft|r\n\nFind the Doormat on the page\n\nClick on 'Claim Loot!' and authorize the Account connection.",

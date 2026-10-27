@@ -690,7 +690,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12435,	-- Report to Lord Afrasastrasz
 					qg = 27575,	-- Lord Afrasastrasz
 					coord = { 59.2, 54.3, DRAGONBLIGHT },
-					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
+					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/3 Azure Dragon slain
@@ -1501,7 +1501,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(11960, {	-- Planning for the Future
 					qg = 26228,	-- Trapper Mau'i
 					coord = { 48.2, 74.3, DRAGONBLIGHT },
-					maxReputation = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
+					maxReputation = { FACTION_THE_KALUAK, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/12 Snowfall Glade Pup

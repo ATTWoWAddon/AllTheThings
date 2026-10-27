@@ -105,13 +105,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 					cr = 19581,	-- Maddix <Flight Master>
 					coord = { 63.2, 30.4, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					altQuests = { 10553 },	-- Voren'thal the Seer
 				}),
 				fp(159, {	-- Sanctum of the Stars, Shadowmoon Valley
 					cr = 21766,	-- Alieshor <Flight Master>
 					coord = { 56.2, 57.8, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					altQuests = { 10554 },	-- Ishanah
 				}),
 				fp(123, {	-- Shadowmoon Village, Shadowmoon Valley
@@ -261,7 +261,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10587,	-- Karabor Training Grounds
 					qg = 21860,	-- Exarch Onaala
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- Azaloth Freed
@@ -281,7 +281,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10687,	-- Karabor Training Grounds
 					qg = 21954,	-- Larissa Sunstrike
 					coord = { 55.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- Azaloth Freed
@@ -361,7 +361,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10637,	-- A Necessary Distraction
 					qg = 21860,	-- Exarch Onaala
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					maps = { NAGRAND },
 					lvl = lvlsquish(68, 68, 25),
 				}),
@@ -369,7 +369,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10688,	-- A Necessary Distraction
 					qg = 21954,	-- Larissa Sunstrike
 					coord = { 55.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					maps = { NAGRAND },
 					lvl = lvlsquish(68, 68, 25),
 				}),
@@ -989,7 +989,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 21860,	-- Exarch Onaala
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/8 Sunfury Glaive
@@ -1005,7 +1005,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 21954,	-- Larissa Sunstrike
 					coord = { 55.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/8 Sunfury Glaive
@@ -1086,7 +1086,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 22214,	-- Harbinger Saronen
 					coord = { 62.2, 29.8, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					lvl = lvlsquish(68, 68, 25),
 				}),
@@ -1115,8 +1115,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 					qg = 22214,	-- Harbinger Saronen
 					coord = { 62.2, 29.8, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, EXALTED },
 					cost = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					repeatable = true,
 					lvl = lvlsquish(68, 68, 25),
@@ -1125,8 +1125,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 					qg = 22211,	-- Battlemage Vyara
 					coord = { 56.2, 58.7, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, EXALTED },
 					cost = { { "i", 30810, 10 } },	-- Sunfury Signet
 					repeatable = true,
 					lvl = lvlsquish(68, 68, 25),
@@ -1190,7 +1190,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10568,	-- Tablets of Baa'ri (The Aldor)
 					qg = 21402,	-- Anchorite Ceyla
 					coord = { 62.6, 28.4, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Orders From Akama
@@ -1204,7 +1204,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10683,	-- Tablets of Baa'ri (The Scryers)
 					qg = 21955,	-- Arcanist Thelis
 					coord = { 56.2, 59.6, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Orders From Akama
@@ -1267,7 +1267,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10619,	-- The Ashtongue Tribe
 					qg = 21822,	-- Vindicator Aluumen
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/8 Shadowmoon Slayer slain
@@ -1324,8 +1324,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 					qg = 22214,	-- Harbinger Saronen
 					coord = { 62.2, 29.8, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, EXALTED },
 					cost = { { "i", 30809, 1 } },	-- Mark of Sargeras
 					repeatable = true,
 					lvl = lvlsquish(68, 68, 25),
@@ -1334,8 +1334,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 					qg = 22211,	-- Battlemage Vyara
 					coord = { 56.2, 58.7, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, EXALTED },
 					cost = { { "i", 30810, 1 } },	-- Sunfury Signet
 					repeatable = true,
 					lvl = lvlsquish(68, 68, 25),
@@ -1388,7 +1388,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 22211,	-- Battlemage Vyara
 					coord = { 56.2, 58.7, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 30810, 10 } },	-- Sunfury Signet
 					lvl = lvlsquish(68, 68, 25),
 				}),
@@ -1424,7 +1424,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 21402,	-- Anchorite Ceyla
 					coord = { 62.6, 28.4, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/12 Baa'ri Tablet Fragment
@@ -1441,7 +1441,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 21955,	-- Arcanist Thelis
 					coord = { 56.2, 59.6, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/12 Baa'ri Tablet Fragment
@@ -1540,7 +1540,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 21953,	-- Varen the Reclaimer
 					coord = { 54.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/3 Ashtongue Handler slain
@@ -1558,7 +1558,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10571,	-- Oronu the Elder
 					qg = 21402,	-- Anchorite Ceyla
 					coord = { 62.6, 28.4, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Eykenen's Medallion Fragment
@@ -1587,7 +1587,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10684,	-- Oronu the Elder
 					qg = 21955,	-- Arcanist Thelis
 					coord = { 56.2, 59.6, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Eykenen's Medallion Fragment
@@ -1616,7 +1616,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 21822,	-- Vindicator Aluumen
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/3 Ashtongue Handler slain
@@ -1843,7 +1843,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10807,	-- The Ashtongue Broken
 					qg = 21953,	-- Varen the Reclaimer
 					coord = { 54.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/8 Shadowmoon Slayer slain
@@ -2060,14 +2060,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10574,	-- The Ashtongue Corruptors
 					qg = 21402,	-- Anchorite Ceyla
 					coord = { 62.6, 28.4, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 				}),
 				q(10686, {	-- The Warden's Cage (The Scryers)
 					sourceQuest = 10685,	-- The Ashtongue Corruptors
 					qg = 21955,	-- Arcanist Thelis
 					coord = { 56.2, 59.6, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 				}),
 				q(10808, {	-- Thwart the Dark Conclave
@@ -2144,7 +2144,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10650,	-- Return to the Aldor
 					qg = 21860,	-- Exarch Onaala
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Varedis slain
@@ -2178,7 +2178,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10691,	-- Return to the Scryers
 					qg = 21954,	-- Larissa Sunstrike
 					coord = { 55.7, 58.1, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					lvl = lvlsquish(68, 68, 25),
 					groups = {
 						objective(1, {	-- 0/1 Varedis slain
@@ -2415,7 +2415,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
 					coord = { 55.8, 58.2, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					groups = {
 						i(21900, {	-- Pattern: Imbued Netherweave Robe (RECIPE!)
 							isLimited = true,
@@ -2465,7 +2465,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19526, {	-- Dunaman <Weapons Vendor>
 					coord = { 63.2, 30.6, SHADOWMOON_VALLEY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					sym = {{"select","itemID",
 						30754,	-- Ancient Bone Mace
 						30749,	-- Draenic Sparring Blade

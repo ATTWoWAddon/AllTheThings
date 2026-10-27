@@ -193,7 +193,7 @@ maproot(KALIMDOR, DARNASSUS, {
 				sourceQuest = 7800,	-- A Donation of Runecloth
 				qg = 14725,	-- Raedon Duskstriker
 				coord = { 64.0, 23.0, DARNASSUS },
-				maxReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				maxReputation = { FACTION_DARNASSUS, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
@@ -1062,7 +1062,7 @@ maproot(KALIMDOR, DARNASSUS, {
 				races = ALLIANCE_ONLY,
 
 				-- Available to Night Elves without faction requirements.
-				minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				minReputation = { FACTION_DARNASSUS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 						t.minReputation = nil;
@@ -1159,7 +1159,7 @@ maproot(KALIMDOR, DARNASSUS, {
 			n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 				coord = { 48.2, 21.8, DARNASSUS },
 				-- Available to Worgen without faction requirements.
-				minReputation = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
+				minReputation = { FACTION_GILNEAS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. WORGEN .. [[ then
 						t.minReputation = nil;
@@ -1504,7 +1504,7 @@ maproot(KALIMDOR, DARNASSUS, {
 					-- #endif
 				},
 				-- Available to Night Elves without faction requirements.
-				minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
+				minReputation = { FACTION_DARNASSUS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 						t.minReputation = nil;
@@ -1660,21 +1660,11 @@ maproot(KALIMDOR, DARNASSUS, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(45579, {	-- Darnassus Tabard
-						timeline = { ADDED_3_1_0 },
-					}),
-					i(64887, {	-- Cape of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-					}),
-					i(64888, {	-- Mantle of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-					}),
-					i(64886, {	-- Shroud of Darnassus
-						minReputation = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
-					}),
-					i(67526, {	-- Darnassian Satchel
-						minReputation = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
-					}),
+					i(64887, { minReputation = { FACTION_DARNASSUS, EXALTED } }),	-- Cape of Darnassus
+					i(67526, { minReputation = { FACTION_DARNASSUS, REVERED } }),	-- Darnassian Satchel
+					i(45579, { timeline = { ADDED_3_1_0 } }),	-- Darnassus Tabard
+					i(64888, { minReputation = { FACTION_DARNASSUS, EXALTED } }),	-- Mantle of Darnassus
+					i(64886, { minReputation = { FACTION_DARNASSUS, EXALTED } }),	-- Shroud of Darnassus
 				},
 			}),
 			n(4233, {	-- Mythidan

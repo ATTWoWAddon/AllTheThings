@@ -1862,9 +1862,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(4773, {	-- Velma Warnam <Undead Horse Riding Instructor>
 				coord = { 60.0, 52.6, MAP.TIRISFAL_GLADES },
 				races = { ORC, TROLL, UNDEAD },
-
 				-- Available to Undead without faction requirements.
-				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				minReputation = { FACTION_UNDERCITY, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. UNDEAD .. [[ then
 						t.minReputation = nil;
@@ -1959,7 +1958,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(4731, {	-- Zachariah Post <Undead Horse Merchant>
 				coord = { 59.8, 52.6, MAP.TIRISFAL_GLADES },
 				-- Available to Undead without faction requirements.
-				minReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				minReputation = { FACTION_UNDERCITY, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. UNDEAD .. [[ then
 						t.minReputation = nil;

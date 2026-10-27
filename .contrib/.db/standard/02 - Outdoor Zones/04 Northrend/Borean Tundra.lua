@@ -403,7 +403,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13413,	-- Aces High!
 					qg = 32548,	-- Corastrasza
 					coord = { 29.4, 24.8, BOREAN_TUNDRA },
-					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
+					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/5 Scalesworn Elites Slain
@@ -774,7 +774,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 11919,	-- Drake Hunt
 					qg = 26117,	-- Raelorasz
 					coord = { 33.3, 34.5, BOREAN_TUNDRA },
-					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
+					maxReputation = { FACTION_THE_WYRMREST_ACCORD, EXALTED },
 					isDaily = true,
 				}),
 				q(11866, {	-- Ears of Our Enemies
@@ -1833,7 +1833,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(11945, {	-- Preparing for the Worst
 					qg = 26213,	-- Utaik
 					coord = { 64.0, 45.7, BOREAN_TUNDRA },
-					maxReputation = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
+					maxReputation = { FACTION_THE_KALUAK, EXALTED },
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/8 Kaskala Supplies

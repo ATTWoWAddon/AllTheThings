@@ -7,7 +7,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 	groups = {
 		n(EMISSARY_QUESTS, {
 			q(64012, {	-- Supplies from Death's Advance
-				minReputation = { FACTION_DEATHS_ADVANCE, EXALTED },	-- Death's Advance, Exalted
+				minReputation = { FACTION_DEATHS_ADVANCE, EXALTED },
 				repeatable = true,
 				groups = {
 					i(186650, {	-- Death's Advance Supplies

@@ -722,7 +722,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 16213,	-- Ranger Lethvalin
 					coord = { 45.4, 32.4, GHOSTLANDS },
 					-- #if BEFORE BFA
-					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
+					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },
 					isBreadcrumb = true,
 					-- #endif
 					races = HORDE_ONLY,
@@ -823,7 +823,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 16231,	-- Dame Auriferous
 					coord = { 44.8, 32.5, GHOSTLANDS },
 					-- #IF BEFORE BFA
-					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
+					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },
 					-- #ENDIF
 					races = HORDE_ONLY,
 					lvl = lvlsquish(11, 11, 1),
@@ -973,7 +973,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9138,	-- Suncrown Village
 					qg = 16199,	-- Magister Darenis
 					coord = { 46.0, 31.9, GHOSTLANDS },
-					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
+					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(10, 10, 1),
 					groups = {
@@ -1272,7 +1272,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9138,	-- Suncrown Village
 					qg = 16251,	-- Deathstalker Maltendis
 					coord = { 44.7, 32.2, GHOSTLANDS },
-					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
+					minReputation = { FACTION_TRANQUILLIEN, FRIENDLY },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(11, 11, 1),
 					groups = {

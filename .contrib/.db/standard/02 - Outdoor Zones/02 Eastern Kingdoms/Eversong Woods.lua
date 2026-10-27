@@ -2159,24 +2159,16 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(45585, {	-- Silvermoon City Tabard
 							timeline = { ADDED_3_1_0 },
 						}),
-						i(64915, {	-- Cape of Silvermoon
-							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-						}),
-						i(64916, {	-- Mantle of Silvermoon
-							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-						}),
-						i(64914, {	-- Shroud of Silvermoon
-							minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
-						}),
-						i(67535, {	-- Silvermoon Satchel
-							minReputation = { FACTION_SILVERMOON_CITY, REVERED },	-- Silvermoon City, Revered.
-						}),
+						i(64915, { minReputation = { FACTION_SILVERMOON_CITY, EXALTED } }),	-- Cape of Silvermoon
+						i(64916, { minReputation = { FACTION_SILVERMOON_CITY, EXALTED } }),	-- Mantle of Silvermoon
+						i(64914, { minReputation = { FACTION_SILVERMOON_CITY, EXALTED } }),	-- Shroud of Silvermoon
+						i(67535, { minReputation = { FACTION_SILVERMOON_CITY, REVERED } }),	-- Silvermoon Satchel
 					},
 				}),
 				n(16264, {	-- Winaestra <Hawkstrider Breeder>
 					coord = { 61.0, 54.6, EVERSONG_WOODS },
 					-- Available to Blood Elves without faction requirements.
-					minReputation = { FACTION_SILVERMOON_CITY, EXALTED },	-- Silvermoon City, Exalted.
+					minReputation = { FACTION_SILVERMOON_CITY, EXALTED },
 					OnInit = [[function(t)
 						if _.RaceIndex == ]] .. BLOODELF .. [[ then
 							t.minReputation = nil;

@@ -1071,9 +1071,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			n(2357, {	-- Merideth Carlson <Horse Breeder>
 				coord = { 52.2, 55.4, MAP.HILLSBRAD_FOOTHILLS },
-
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

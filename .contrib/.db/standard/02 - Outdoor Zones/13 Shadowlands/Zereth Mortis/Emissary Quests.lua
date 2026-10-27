@@ -9,7 +9,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			q(64867, {	-- Supplies from The Enlightened
 				provider = { "n", 182257 },	-- Vilo
 				coord = { 34.8, 64.1, ZERETH_MORTIS },
-				minReputation = { FACTION_THE_ENLIGHTENED, EXALTED },	-- The Enlightened, Exalted
+				minReputation = { FACTION_THE_ENLIGHTENED, EXALTED },
 				repeatable = true,
 				groups = {
 					i(187780, {	-- Enlightened Broker Supplies

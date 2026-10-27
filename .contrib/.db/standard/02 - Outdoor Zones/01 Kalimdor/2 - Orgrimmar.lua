@@ -810,7 +810,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				sourceQuest = 7824,	-- A Donation of Runecloth
 				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 				coord = { 63.4, 51.0, ORGRIMMAR },
-				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
+				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
@@ -821,7 +821,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				sourceQuest = 7836,	-- A Donation of Runecloth
 				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
 				coord = { 37.8, 87.6, ORGRIMMAR },
-				maxReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
@@ -2443,7 +2443,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 
 				-- Available to Orcs without faction requirements.
-				minReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				minReputation = { FACTION_ORGRIMMAR, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. ORC .. [[ then
 						t.minReputation = nil;
@@ -2703,21 +2703,11 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
-					i(45582, {	-- Darkspear Tabard
-						timeline = { ADDED_3_1_0 },
-					}),
-					i(64912, {	-- Darkspear Cape
-						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-					}),
-					i(64911, {	-- Darkspear Mantle
-						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-					}),
-					i(64913, {	-- Darkspear Shroud
-						minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
-					}),
-					i(67536, {	-- Darkspear Satchel
-						minReputation = { FACTION_DARKSPEAR_TROLLS, REVERED },	-- Darkspear Trolls, Revered.
-					}),
+					i(64912, { minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED } }),	-- Darkspear Cape
+					i(64911, { minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED } }),	-- Darkspear Mantle
+					i(67536, { minReputation = { FACTION_DARKSPEAR_TROLLS, REVERED } }),	-- Darkspear Satchel
+					i(64913, { minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED } }),	-- Darkspear Shroud
+					i(45582, { timeline = { ADDED_3_1_0 } }),	-- Darkspear Tabard
 				},
 			}),
 			n(69333, {	-- Disciple Jusi <Huojin Quartermaster>
@@ -2729,7 +2719,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 						timeline = { ADDED_5_0_4 },
 					}),
 					i(92070, {	-- Huojin Satchel
-						minReputation = { FACTION_HUOJIN_PANDAREN, REVERED },	-- Huojin Pandaren, Revered.
+						minReputation = { FACTION_HUOJIN_PANDAREN, REVERED },
 						timeline = { ADDED_5_1_0 },
 					}),
 				},
@@ -2836,31 +2826,18 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 				groups = {
+					i(64906, { minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED } }),	-- Bilgewater Cape
 					i(64884),	-- Bilgewater Cartel Tabard
-					i(64906, {	-- Bilgewater Cape
-						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-					}),
-					i(64905, {	-- Bilgewater Shroud
-						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-					}),
-					i(64907, {	-- Bilgewater Mantle
-						minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
-					}),
-					i(67525, {	-- Bilgewater Satchel
-						minReputation = { FACTION_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel, Revered.
-					}),
+					i(64907, { minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED } }),	-- Bilgewater Mantle
+					i(67525, { minReputation = { FACTION_BILGEWATER_CARTEL, REVERED } }),	-- Bilgewater Satchel
+					i(64905, { minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED } }),	-- Bilgewater Shroud
 				},
 			}),
 			n(261262, {	-- Gabbi <Promotional Decor Resupply>
+				description = "This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",
 				coord = { 48.4, 81.0, ORGRIMMAR },
 				races = HORDE_ONLY,
 				timeline = { ADDED_12_0_0 },
-				groups = {
-					i(260785, {	-- Miniature Replica Dark Portal (DECOR!)
-						sourceAchievement = 62387,	-- It's Nearly Midnight
-						cost = 14000000,	-- 1400g
-					}),
-				},
 			}),
 			n(52036, pvp({	-- Galra <Honor Heirlooms>
 				coord = { 38.0, 70.8, ORGRIMMAR },
@@ -3305,7 +3282,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 			n(48510, {	-- Kall Worthaton <Trike Dealer>
 				coord = { 36.2, 86.6, ORGRIMMAR },
 				-- Available to Goblins without faction requirements.
-				minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
+				minReputation = { FACTION_BILGEWATER_CARTEL, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. GOBLIN .. [[ then
 						t.minReputation = nil;
@@ -4327,7 +4304,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					-- #endif
 				},
 				-- Available to Orcs without faction requirements.
-				minReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				minReputation = { FACTION_ORGRIMMAR, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. ORC .. [[ then
 						t.minReputation = nil;
@@ -5160,7 +5137,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 			n(66022, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 				coord = { 69.8, 41.0, ORGRIMMAR },
 				-- Available to Huojin Pandaren without faction requirements.
-				minReputation = { FACTION_HUOJIN_PANDAREN, EXALTED },	-- Huojin Pandaren, Exalted.
+				minReputation = { FACTION_HUOJIN_PANDAREN, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. PANDAREN_HORDE .. [[ then
 						t.minReputation = nil;

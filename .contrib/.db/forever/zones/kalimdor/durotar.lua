@@ -1678,9 +1678,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			n(7953, {	-- Xar'Ti <Raptor Riding Trainer>
 				coord = { 55.3, 75.5, MAP.DUROTAR },
 				races = { ORC, TROLL, UNDEAD },
-
 				-- Available to Trolls without faction requirements.
-				minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
+				minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TROLL .. [[ then
 						t.minReputation = nil;
@@ -1723,7 +1722,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			n(7952, {	-- Zjolnir <Raptor Handler>
 				coord = { 55.2, 75.6, MAP.DUROTAR },
 				-- Available to Trolls without faction requirements.
-				minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
+				minReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TROLL .. [[ then
 						t.minReputation = nil;

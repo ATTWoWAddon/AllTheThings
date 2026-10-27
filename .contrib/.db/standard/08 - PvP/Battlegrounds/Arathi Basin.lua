@@ -168,7 +168,7 @@ battleground(ARATHI_BASIN, {
 					{ 46.0, 45.2, ARATHI_HIGHLANDS },
 					-- #endif
 				},
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144065 },	-- Samuel Hawke (Invasion Phase)
@@ -190,7 +190,7 @@ battleground(ARATHI_BASIN, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144065 },	-- Samuel Hawke (Invasion Phase)
@@ -212,7 +212,7 @@ battleground(ARATHI_BASIN, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144065 },	-- Samuel Hawke (Invasion Phase)
@@ -772,7 +772,7 @@ battleground(ARATHI_BASIN, {
 					{ 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
 				},
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },
 				timeline = { REMOVED_5_0_4 },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
@@ -799,7 +799,7 @@ battleground(ARATHI_BASIN, {
 					{ 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
 				},
-				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },	-- The League of Arathor, Friendly.
+				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				timeline = { REMOVED_5_0_4 },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
@@ -813,7 +813,7 @@ battleground(ARATHI_BASIN, {
 					{ 73.4, 29.8, ARATHI_HIGHLANDS },
 					-- #endif
 				},
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144064 },	-- Rutherford Twing (Invasion Phase)
@@ -835,7 +835,7 @@ battleground(ARATHI_BASIN, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144064 },	-- Rutherford Twing (Invasion Phase)
@@ -857,7 +857,7 @@ battleground(ARATHI_BASIN, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
 				-- #if AFTER 8.0.1.26812
 				crs = { 144064 },	-- Rutherford Twing (Invasion Phase)
@@ -871,7 +871,7 @@ battleground(ARATHI_BASIN, {
 			applyclassicphase(SOD_PHASE_TWO, q(79990, {	-- Stranglethorn Lumber (A)
 				qg = 14984,	-- Sergeant Maclear
 				coord = { 45.8, 45.4, ARATHI_HIGHLANDS },
-				maxReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },	-- The League of Arathor, Exalted.
+				maxReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },
 				cost = { { "i", 216491, 1 } },	-- 1x Shipment of Stranglethorn Lumber
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -880,7 +880,7 @@ battleground(ARATHI_BASIN, {
 			applyclassicphase(SOD_PHASE_TWO, q(79991, {	-- Stranglethorn Lumber (H)
 				qg = 15022,	-- Deathstalker Mortis
 				coord = { 73.6, 29.8, ARATHI_HIGHLANDS },
-				maxReputation = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+				maxReputation = { FACTION_THE_DEFILERS, EXALTED },
 				cost = { { "i", 216491, 1 } },	-- 1x Shipment of Stranglethorn Lumber
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -891,7 +891,7 @@ battleground(ARATHI_BASIN, {
 				sourceQuest = 8121,	-- Take Four Bases (Horde)
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
+				minReputation = { FACTION_THE_DEFILERS, EXALTED },
 				timeline = { REMOVED_5_0_4 },
 				races = HORDE_ONLY,
 				lvl = 60,
@@ -912,7 +912,7 @@ battleground(ARATHI_BASIN, {
 				-- #endif
 				qg = 15021,	-- Deathmaster Dwire
 				coord = { 73.3, 29.7, ARATHI_HIGHLANDS },
-				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
+				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				timeline = { REMOVED_5_0_4 },
 				races = HORDE_ONLY,
 				lvl = 60,

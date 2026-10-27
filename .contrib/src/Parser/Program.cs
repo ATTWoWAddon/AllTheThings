@@ -652,7 +652,8 @@ namespace ATT
                 }
 
                 // Early testing
-                //ObjectHarvester.UpdateInformationFromWoWHead(33, new Dictionary<string, object>());
+                //ObjectHarvester.UpdateInformationFromWoWHead(649924, new Dictionary<string, object>());
+                //ObjectHarvester.GetJSONDocumentFromWoWHead(649924);
 
                 // Merge Wago data prior to merging contributor data
                 Framework.CurrentParseStage = ParseStage.WagoDBMerge;

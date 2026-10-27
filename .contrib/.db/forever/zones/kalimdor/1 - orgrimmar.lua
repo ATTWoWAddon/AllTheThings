@@ -709,7 +709,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				sourceQuest = 7824,	-- A Donation of Runecloth
 				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
+				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -747,7 +747,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				sourceQuest = 7836,	-- A Donation of Runecloth
 				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
 				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				maxReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -897,7 +897,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 
 				-- Available to Orcs without faction requirements.
-				minReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				minReputation = { FACTION_ORGRIMMAR, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. ORC .. [[ then
 						t.minReputation = nil;
@@ -1686,7 +1686,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
 				-- Available to Orcs without faction requirements.
-				minReputation = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
+				minReputation = { FACTION_ORGRIMMAR, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. ORC .. [[ then
 						t.minReputation = nil;

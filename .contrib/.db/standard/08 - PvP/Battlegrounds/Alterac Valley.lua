@@ -255,7 +255,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7385, {	-- A Gallon of Blood
 				qg = 13236,	-- Primalist Thurloga
 				coord = { 50.1, 85.1, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17306, 5 } },	-- Stormpike Soldier's Blood
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -315,7 +315,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6825, {	-- Call of Air - Guse's Fleet
 				qg = 13179,	-- Wing Commander Guse
 				coord = { 50.0, 32.0, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17326, 1 } },	-- Stormpike Soldier's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -323,7 +323,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6943, {	-- Call of Air - Ichman's Fleet
 				qg = 13437,	-- Wing Commander Ichman
 				coord = { 48.3, 84.3, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17504, 1 } },	-- Frostwolf Commander's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -331,7 +331,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6826, {	-- Call of Air - Jeztor's Fleet
 				qg = 13180,	-- Wing Commander Jeztor
 				coord = { 54.2, 25.4, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17327, 1 } },	-- Stormpike Lieutenant's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -339,7 +339,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6827, {	-- Call of Air - Mulverick's Fleet
 				qg = 13181,	-- Wing Commander Mulverick
 				coord = { 45.1, 14.0, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17328, 1 } },	-- Stormpike Commander's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -347,7 +347,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6942, {	-- Call of Air - Slidore's Fleet
 				qg = 13438,	-- Wing Commander Slidore
 				coord = { 50.6, 65.8, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17502, 1 } },	-- Frostwolf Soldier's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -355,7 +355,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6941, {	-- Call of Air - Vipore's Fleet
 				qg = 13439,	-- Wing Commander Vipore
 				coord = { 50.3, 81.6, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17503, 1 } },	-- Frostwolf Lieutenant's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -392,7 +392,7 @@ battleground(ALTERAC_VALLEY, {
 				sourceQuest = 7121,	-- The Quartermaster
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17542, 10 } },	-- Coldtooth Supplies
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -400,7 +400,7 @@ battleground(ALTERAC_VALLEY, {
 			q(5893, {	-- Coldtooth Supplies (Horde)
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17542, 10 } },	-- Coldtooth Supplies
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -408,7 +408,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7386, {	-- Crystal Cluster
 				qg = 13442,	-- Arch Druid Renferal
 				coord = { 43.9, 12.6, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17423, 5 } },	-- Storm Crystal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -438,7 +438,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_STORMPIKE_GUARD, REVERED },	-- Stormpike Guard, Revered
+				minReputation = { FACTION_STORMPIKE_GUARD, REVERED },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Insignia Rank 3
@@ -457,7 +457,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_FROSTWOLF_CLAN, REVERED },	-- Frostwolf Clan, Revered
+				minReputation = { FACTION_FROSTWOLF_CLAN, REVERED },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Insignia Rank 3
@@ -469,7 +469,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7027, {	-- Empty Stables (Alliance)
 				qg = 13617,	-- Stormpike Stable Master <Stable Master>
 				coord = { 42.6, 16.8, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -482,7 +482,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7001, {	-- Empty Stables (Horde)
 				qg = 13616,	-- Frostwolf Stable Master <Stable Master>
 				coord = { 57.2, 82.4, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				races = HORDE_ONLY,
 				repeatable = true,
 				groups = {
@@ -568,7 +568,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_FROSTWOLF_CLAN, HONORED },	-- Frostwolf Clan, Honored
+				minReputation = { FACTION_FROSTWOLF_CLAN, HONORED },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Insignia Rank 2
@@ -587,7 +587,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_STORMPIKE_GUARD, HONORED },	-- Stormpike Guard, Honored
+				minReputation = { FACTION_STORMPIKE_GUARD, HONORED },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Insignia Rank 2
@@ -618,7 +618,7 @@ battleground(ALTERAC_VALLEY, {
 			q(8387, {	-- Invaders of Alterac Valley
 				sourceQuest = 8369,	-- Invaders of Alterac Valley
 				qg = 15350,	-- Horde Warbringer
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				timeline = { REMOVED_2_0_1 },
 				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				races = HORDE_ONLY,
@@ -628,7 +628,7 @@ battleground(ALTERAC_VALLEY, {
 				sourceQuest = 7121,	-- The Quartermaster
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17522, 10 } },	-- Irondeep Supplies
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -636,7 +636,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6985, {	-- Irondeep Supplies (Horde)
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17522, 10 } },	-- Irondeep Supplies
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -644,7 +644,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6881, {	-- Ivus the Forest Lord
 				qg = 13442,	-- Arch Druid Renferal
 				coord = { 43.9, 12.6, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17423, 1 } },	-- Storm Crystal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -680,7 +680,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted
+				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Insignia Rank 4
@@ -699,7 +699,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted
+				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Insignia Rank 4
@@ -711,7 +711,7 @@ battleground(ALTERAC_VALLEY, {
 			q(6801, {	-- Lokholar the Ice Lord
 				qg = 13236,	-- Primalist Thurloga
 				coord = { 50.1, 85.1, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17306, 1 } },	-- Stormpike Soldier's Blood
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -730,7 +730,7 @@ battleground(ALTERAC_VALLEY, {
 				sourceQuest = 7223,	-- Armor Scraps
 				qg = 13257,	-- Murgot Deepforge
 				coord = { 43.5, 15.5, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17422, 20 } },	-- Armor Scraps
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -739,7 +739,7 @@ battleground(ALTERAC_VALLEY, {
 				sourceQuest = 7224,	-- Enemy Booty
 				qg = 13176,	-- Smith Regzar
 				coord = { 49.5, 82.7, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17422, 20 } },	-- Armor Scraps
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -793,7 +793,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7002, {	-- Ram Hide Harnesses
 				qg = 13441,	-- Frostwolf Wolf Rider Commander
 				coord = { 57.0, 82.8, ALTERAC_VALLEY },
-				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
+				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				cost = { { "i", 17642, 1 } },	-- Alterac Ram Hide
 				races = HORDE_ONLY,
 				repeatable = true,
@@ -801,7 +801,7 @@ battleground(ALTERAC_VALLEY, {
 			q(7026, {	-- Ram Riding Harnesses
 				qg = 13577,	-- Stormpike Ram Rider Commander
 				coord = { 42.1, 17.2, ALTERAC_VALLEY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				cost = { { "i", 17643, 1 } },	-- Frostwolf Hide
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -817,7 +817,7 @@ battleground(ALTERAC_VALLEY, {
 				sourceQuest = 8375,	-- Remember Alterac Valley!
 				qg = 15351,	-- Alliance Brigadier General
 				coord = { 79.4, 18.2, STORMWIND_CITY },
-				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
+				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				timeline = { REMOVED_2_0_1 },
 				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 				races = ALLIANCE_ONLY,
@@ -833,7 +833,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_STORMPIKE_GUARD, FRIENDLY },	-- Stormpike Guard, Friendly
+				minReputation = { FACTION_STORMPIKE_GUARD, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Insignia Rank 1
@@ -852,7 +852,7 @@ battleground(ALTERAC_VALLEY, {
 					{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				minReputation = { FACTION_FROSTWOLF_CLAN, FRIENDLY },	-- Frostwolf Clan, Friendly
+				minReputation = { FACTION_FROSTWOLF_CLAN, FRIENDLY },
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Insignia Rank 1
@@ -924,9 +924,9 @@ battleground(ALTERAC_VALLEY, {
 				qg = 13841,	-- Lieutenant Haggerdin
 				coord = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 				-- #if AFTER SL
-				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted
+				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				-- #else
-				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },	-- Stormpike Guard, 999/1000 Exalted
+				minReputation = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },	-- 999/1000 Exalted
 				-- #endif
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -941,9 +941,9 @@ battleground(ALTERAC_VALLEY, {
 				qg = 13840,	-- Warmaster Laggrond
 				coord = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 				-- #if AFTER SL
-				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted
+				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
 				-- #else
-				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },	-- Frostwolf Clan, 999/1000 Exalted
+				minReputation = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },	-- 999/1000 Exalted
 				-- #endif
 				races = HORDE_ONLY,
 				groups = {

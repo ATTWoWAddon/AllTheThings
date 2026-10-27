@@ -231,7 +231,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11060, {	-- A Crystalforged Darkrune
 					qg = 23300,	-- Gahk
 					coord = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
-					minReputation = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
+					minReputation = { FACTION_OGRILA, HONORED },
 					timeline = { ADDED_2_1_0, REMOVED_4_1_0 },
 					cost = { { "i", 32643, 1 } },	-- Darkrune
 					isDaily = true,
@@ -321,7 +321,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23233,	-- Chu'a'lor
 					coord = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, FRIENDLY },	-- Ogri'la, Friendly.
+					minReputation = { FACTION_OGRILA, FRIENDLY },
 					lvl = lvlsquish(70, 70, 20),
 				})),
 				q(10682, {	-- A Time for Negotiation...
@@ -357,7 +357,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23253,	-- Kronk
 					coord = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
+					minReputation = { FACTION_OGRILA, HONORED },
 					cost = { { "i", 32696, 1 } },	-- Banishing Crystal
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 20),
@@ -370,7 +370,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 23253,	-- Kronk
 					coord = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
+					minReputation = { FACTION_OGRILA, HONORED },
 					cost = { { "i", 32696, 1 } },	-- Banishing Crystal
 					lvl = lvlsquish(70, 70, 20),
 					groups = {
@@ -2339,7 +2339,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 11060,	-- A Crystalforged Darkrune
 					qg = 23300,	-- Gahk
 					coord = { 28.4, 58.0, BLADES_EDGE_MOUNTAINS },
-					minReputation = { FACTION_OGRILA, HONORED },	-- Ogri'la, Honored.
+					minReputation = { FACTION_OGRILA, HONORED },
 					timeline = { ADDED_2_1_0, REMOVED_4_1_0 },
 					cost = { { "i", 32643, 1 } },	-- Darkrune
 					isDaily = true,
@@ -2694,7 +2694,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 					coord = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
+					minReputation = { FACTION_OGRILA, NEUTRAL },
 					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32686),	-- Mingo's Fortune Giblets
 						i(32685),	-- Ogri'la Chicken Fingers
@@ -2705,7 +2705,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23110, {	-- Ogri'la Keg King
 					coord = { 27.9, 57.6, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
+					minReputation = { FACTION_OGRILA, NEUTRAL },
 					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32667),	-- Bash Ale
 						i(32668),	-- Dos Ogris
@@ -2714,7 +2714,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22270, {	-- Ogri'la Merchant
 					coord = { 27.8, 58.5, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
-					minReputation = { FACTION_OGRILA, NEUTRAL },	-- Ogri'la, Neutral.
+					minReputation = { FACTION_OGRILA, NEUTRAL },
 					groups = sharedData({ timeline = { ADDED_2_1_0 } }, {
 						i(32758),	-- Brute Cologne
 					}),

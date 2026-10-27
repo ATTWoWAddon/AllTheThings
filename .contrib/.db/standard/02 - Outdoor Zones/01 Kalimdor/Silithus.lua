@@ -209,7 +209,7 @@ maproot(KALIMDOR, SILITHUS, {
 			applyclassicphase(PHASE_FIVE_CATCH_UP, q(9248, {	-- A Humble Offering
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+				minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 20515, 1 } },	-- Abyssal Scepter
 				lvl = 58,
@@ -274,7 +274,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8352,	-- Scepter of the Council
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 20515, 3 } },	-- Abyssal Scepter
 				repeatable = true,
@@ -291,7 +291,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8348,	-- Signet of the Dukes
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 20514, 3 } },	-- Abyssal Signet
 				repeatable = true,
@@ -308,7 +308,7 @@ maproot(KALIMDOR, SILITHUS, {
 			applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(9338, {	-- Allegiance to Cenarion Circle
 				qg = 15540,	-- Windcaller Kaldon
 				coord = { 50.0, 36.4, SILITHUS },
-				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 20802, 1 },	-- Cenarion Combat Badge
@@ -471,7 +471,7 @@ maproot(KALIMDOR, SILITHUS, {
 			q(8331, {	-- Aurel Goldleaf
 				qg = 15270,	-- Huum Wildmane
 				coord = { 48.7, 37.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				isBreadcrumb = true,
 				lvl = 54,
@@ -549,7 +549,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8332,	-- Dukes of the Council
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				isBreadcrumb = true,
 				lvl = 54,
@@ -558,7 +558,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8341,	-- Lords of the Council
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 54,
 			})),
@@ -657,7 +657,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8800,	-- Cenarion Battlegear
 				qg = 15176,	-- Vargus
 				coord = { 51.2, 38.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+				minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 20802, 15 },	-- Cenarion Combat Badge
@@ -808,7 +808,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8331,	-- Aurel Goldleaf
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 14344, 1 },	-- Large Brilliant Shard
@@ -842,7 +842,7 @@ maproot(KALIMDOR, SILITHUS, {
 					{ 48.6, 37.8, SILITHUS },
 					-- #endif
 				},
-				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
 				repeatable = true,
 				lvl = lvlsquish(57, 57, 15),
@@ -985,7 +985,7 @@ maproot(KALIMDOR, SILITHUS, {
 			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8343, {	-- Goldleaf's Discovery
 				qg = 15270,	-- Huum Wildmane
 				coord = { 48.6, 37.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				isBreadcrumb = true,
 				lvl = 54,
@@ -1150,7 +1150,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8343,	-- Goldleaf's Discovery
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 14344, 5 },	-- Large Brilliant Shard
@@ -1262,7 +1262,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8351,	-- Bor Wishes to Speak
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 20515, 1 } },	-- Abyssal Scepter
 				lvl = 54,
@@ -1411,7 +1411,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8349,	-- Bor Wildmane
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 20514, 1 } },	-- Abyssal Signet
 				lvl = 54,
@@ -1428,7 +1428,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8800,	-- Cenarion Battlegear
 				qg = 15176,	-- Vargus
 				coord = { 51.2, 38.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 20802, 15 },	-- Cenarion Combat Badge
@@ -1918,7 +1918,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8341,	-- Lords of the Council
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 14344, 5 },	-- Large Brilliant Shard
@@ -1989,7 +1989,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8800,	-- Cenarion Battlegear
 				qg = 15176,	-- Vargus
 				coord = { 51.2, 38.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+				minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 20802, 7 },	-- Cenarion Combat Badge
@@ -2008,7 +2008,7 @@ maproot(KALIMDOR, SILITHUS, {
 				sourceQuest = 8800,	-- Cenarion Battlegear
 				qg = 15176,	-- Vargus
 				coord = { 51.2, 38.9, SILITHUS },
-				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
+				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 20802, 5 },	-- Cenarion Combat Badge

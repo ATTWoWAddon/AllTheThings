@@ -51,7 +51,7 @@ root(ROOTS.Instances, {
 					q(8700, {	-- Band of Unending Life
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20873, 2 },	-- Alabaster Idol
@@ -66,7 +66,7 @@ root(ROOTS.Instances, {
 					q(8692, {	-- Cloak of Unending Life
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20872, 2 },	-- Vermillion Idol
@@ -81,7 +81,7 @@ root(ROOTS.Instances, {
 					q(8708, {	-- Mace of Unending Life
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20870, 2 },	-- Jasper Idol
@@ -98,7 +98,7 @@ root(ROOTS.Instances, {
 					q(8704, {	-- Signet of the Unseen Path
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20869, 2 },	-- Amber Idol
@@ -113,7 +113,7 @@ root(ROOTS.Instances, {
 					q(8696, {	-- Cloak of the Unseen Path
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20868, 2 },	-- Lambent Idol
@@ -128,7 +128,7 @@ root(ROOTS.Instances, {
 					q(8712, {	-- Scythe of the Unseen Path
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20866, 2 },	-- Azure Idol
@@ -145,7 +145,7 @@ root(ROOTS.Instances, {
 					q(8699, {	-- Band of Vaulted Secrets
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20866, 2 },	-- Azure Idol
@@ -160,7 +160,7 @@ root(ROOTS.Instances, {
 					q(8691, {	-- Drape of Vaulted Secrets
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20873, 2 },	-- Alabaster Idol
@@ -175,7 +175,7 @@ root(ROOTS.Instances, {
 					q(8707, {	-- Blade of Vaulted Secrets
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20871, 2 },	-- Obsidian Idol
@@ -192,7 +192,7 @@ root(ROOTS.Instances, {
 					q(8703, {	-- Ring of Eternal Justice
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20872, 2 },	-- Vermillion Idol
@@ -207,7 +207,7 @@ root(ROOTS.Instances, {
 					q(8695, {	-- Cape of Eternal Justice
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20871, 2 },	-- Obsidian Idol
@@ -222,7 +222,7 @@ root(ROOTS.Instances, {
 					q(8711, {	-- Blade of Eternal Justice
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20869, 2 },	-- Amber Idol
@@ -239,7 +239,7 @@ root(ROOTS.Instances, {
 					q(8697, {	-- Ring of Infinite Wisdom
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20871, 2 },	-- Obsidian Idol
@@ -254,7 +254,7 @@ root(ROOTS.Instances, {
 					q(8689, {	-- Shroud of Infinite Wisdom
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20870, 2 },	-- Jasper Idol
@@ -269,7 +269,7 @@ root(ROOTS.Instances, {
 					q(8705, {	-- Gavel of Infinite Wisdom
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20868, 2 },	-- Lambent Idol
@@ -286,7 +286,7 @@ root(ROOTS.Instances, {
 					q(8701, {	-- Band of Veiled Shadows
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20867, 2 },	-- Onyx Idol
@@ -301,7 +301,7 @@ root(ROOTS.Instances, {
 					q(8693, {	-- Cloak of Veiled Shadows
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20866, 2 },	-- Azure Idol
@@ -316,7 +316,7 @@ root(ROOTS.Instances, {
 					q(8709, {	-- Dagger of Veiled Shadows
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20872, 2 },	-- Vermillion Idol
@@ -333,7 +333,7 @@ root(ROOTS.Instances, {
 					q(8698, {	-- Ring of the Gathering Storm
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20872, 2 },	-- Vermillion Idol
@@ -348,7 +348,7 @@ root(ROOTS.Instances, {
 					q(8690, {	-- Cloak of the Gathering Storm
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20871, 2 },	-- Obsidian Idol
@@ -363,7 +363,7 @@ root(ROOTS.Instances, {
 					q(8706, {	-- Hammer of the Gathering Storm
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20869, 2 },	-- Amber Idol
@@ -380,7 +380,7 @@ root(ROOTS.Instances, {
 					q(8702, {	-- Ring of Unspoken Names
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
 							{ "i", 20870, 2 },	-- Jasper Idol
@@ -395,7 +395,7 @@ root(ROOTS.Instances, {
 					q(8694, {	-- Shroud of Unspoken Names
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
 							{ "i", 20869, 2 },	-- Amber Idol
@@ -410,7 +410,7 @@ root(ROOTS.Instances, {
 					q(8710, {	-- Kris of Unspoken Names
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle.
 						cost = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
 							{ "i", 20867, 2 },	-- Onyx Idol
@@ -427,7 +427,7 @@ root(ROOTS.Instances, {
 					q(8556, {	-- Signet of Unyielding Strength
 						qg = 15498,	-- Windcaller Yessendra
 						coord = WINDCALLER_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
+						minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 						cost = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
 							{ "i", 20868, 2 },	-- Lambent Idol
@@ -442,7 +442,7 @@ root(ROOTS.Instances, {
 					q(8557, {	-- Drape of Unyielding Strength
 						qg = 15500,	-- Keyl Swiftclaw
 						coord = KEYL_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
+						minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 						cost = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
 							{ "i", 20867, 2 },	-- Onyx Idol
@@ -457,7 +457,7 @@ root(ROOTS.Instances, {
 					q(8558, {	-- Sickle of Unyielding Strength
 						qg = 15499,	-- Warden Haro
 						coord = WARDEN_LOCATION,
-						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
+						minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 						cost = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
 							{ "i", 20873, 2 },	-- Alabaster Idol

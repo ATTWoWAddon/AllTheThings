@@ -856,15 +856,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9914, {	-- A Head Full of Ivory
 					qg = 18333,	-- Shadrek
 					coord = { 31.8, 56.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
-					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },
+					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
 					lockCriteria = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 				}),
 				q(9886, {	-- Membership Benefits
 					qg = 18265,	-- Gezhe <The Consortium>
 					coord = { 31.4, 57.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
-					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },
+					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
 					lockCriteria = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					isMonthly = true,
 					groups = {
@@ -874,8 +874,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9884, {	-- Membership Benefits
 					qg = 18265,	-- Gezhe <The Consortium>
 					coord = { 31.4, 57.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-					maxReputation = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
+					minReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
+					maxReputation = { FACTION_THE_CONSORTIUM, HONORED },
 					lockCriteria = { 1, "factionID", 933.6 },	-- Consortium, Honored
 					isMonthly = true,
 					groups = {
@@ -895,7 +895,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10476,	-- Fierce Enemies
 					qg = 18408,	-- Warden Moi'bff Jill
 					coord = { 54.8, 70.8, NAGRAND },
-					maxReputation = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
+					maxReputation = { FACTION_KURENAI, EXALTED },
 					cost = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 					races = ALLIANCE_ONLY,
 					lockCriteria = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
@@ -904,8 +904,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(9885, {	-- Membership Benefits
 					qg = 18265,	-- Gezhe <The Consortium>
 					coord = { 31.4, 57.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
-					maxReputation = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
+					minReputation = { FACTION_THE_CONSORTIUM, HONORED },
+					maxReputation = { FACTION_THE_CONSORTIUM, REVERED },
 					lockCriteria = { 1, "factionID", 933.7 },	-- Consortium, Revered
 					isMonthly = true,
 					groups = {
@@ -925,8 +925,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9882,	-- Stealing from Thieves
 					qg = 18265,	-- Gezhe <The Consortium>
 					coord = { 31.4, 57.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
-					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },
+					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
 					lockCriteria = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					repeatable = true,
 				}),
@@ -934,8 +934,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9914,	-- A Head Full of Ivory
 					qg = 18333,	-- Shadrek
 					coord = { 31.8, 56.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
-					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+					minReputation = { FACTION_THE_CONSORTIUM, NEUTRAL },
+					maxReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
 					lockCriteria = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					repeatable = true,
 				}),
@@ -943,8 +943,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 9893,	-- Obsidian Warbeads
 					qg = 18265,	-- Gezhe <The Consortium>
 					coord = { 31.4, 57.8, NAGRAND },
-					minReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
-					maxReputation = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
+					minReputation = { FACTION_THE_CONSORTIUM, FRIENDLY },
+					maxReputation = { FACTION_THE_CONSORTIUM, EXALTED },
 					cost = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 					lockCriteria = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
 					repeatable = true,
@@ -953,7 +953,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10479,	-- Proving Your Strength
 					qg = 18407,	-- Warden Bullrok
 					coord = { 55.8, 37.8, NAGRAND },
-					maxReputation = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
+					maxReputation = { FACTION_THE_MAGHAR, EXALTED },
 					cost = { { "i", 25433, 10 } },	-- Obsidian Warbeads
 					races = HORDE_ONLY,
 					lockCriteria = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
@@ -1100,7 +1100,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					description = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 					qg = 18068,	-- Farseer Margadesh <The Lightning Sons>
 					coord = { 54.6, 39.8, NAGRAND },
-					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
+					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },
 					races = HORDE_ONLY,
 					groups = {
 						objective(1, {	-- 0/1 Head of Ortor of Murkblood
@@ -1231,7 +1231,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(10650, {	-- Return to the Aldor
 					sourceQuest = 10649,	-- The Book of Fel Names
 					qg = 18417,	-- Altruis the Sufferer
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 				q(10170, {	-- Return to the Greatmother
 					sourceQuest = 10168,	-- What the Soul Sees
@@ -1243,7 +1243,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10649,	-- The Book of Fel Names
 					qg = 18417,	-- Altruis
 					coord = { 27.3, 43.0, NAGRAND },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				q(9931, {	-- Returning the Favor
 					sourceQuests = {
@@ -1415,7 +1415,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					description = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 					qg = 18067,	-- Farseer Corhuk <The Lightning Sons>
 					coord = { 54.8, 39.8, NAGRAND },
-					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
+					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },
 					races = HORDE_ONLY,
 				}),
 				q(10113, {	-- The Nesingwary Safari (A)
@@ -1712,7 +1712,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					description = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
 					qg = 18066,	-- Farseer Kurkush <The Lightning Sons>
 					coord = { 54.8, 39.4, NAGRAND },
-					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
+					minReputation = { FACTION_THE_MAGHAR, NEUTRAL },
 					races = HORDE_ONLY,
 					groups = {
 						objective(1, {	-- 0/10 Murkblood Idol

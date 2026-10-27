@@ -313,7 +313,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13341,	-- Joining the Assault
 					qg = 31808,	-- Ground Commander Koup
 					coord = { 62.5, 51.3, ICECROWN },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -321,7 +321,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13340,	-- Joining the Assault
 					qg = 31834,	-- Ground Commander Xutjja
 					coord = { 58.3, 45.9, ICECROWN },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -329,7 +329,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13341,	-- Joining the Assault
 					qg = 31737,	-- Skybreaker Squad Leader
 					coord = { 62.5, 51.1, ICECROWN },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -337,7 +337,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13340,	-- Joining the Assault
 					qg = 31833,	-- Kor'kron Squad Leader
 					coord = { 58.3, 46.1, ICECROWN },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -456,7 +456,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On the Skybreaker.",
 					sourceQuest = 13225,	-- The Skybreaker
 					qg = 32302,	-- Knight-Captain Drosche
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -464,7 +464,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On Orgrim's Hammer.",
 					sourceQuest = 13224,	-- Orgrim's Hammer
 					qg = 32301,	-- Warbringer Davos Rioht
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -530,7 +530,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On the Skybreaker.",
 					sourceQuest = 13314,	-- Get the Message
 					qg = 29799,	-- Thassarian
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -772,7 +772,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12807,	-- The Story Thus Far...
 					qg = 29396,	-- Setaal Darkmender
 					coord = { 19.6, 48.3, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				q(13171, {	-- From Whence They Came
@@ -940,7 +940,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12807,	-- The Story Thus Far...
 					qg = 29456,	-- Aurochs Grimbane
 					coord = { 20.0, 47.9, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				q(13139, {	-- Into The Frozen Heart Of Northrend
@@ -1013,7 +1013,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On Orgrim's Hammer.",
 					sourceQuest = 13313,	-- Blinding the Eyes in the Sky
 					qg = 30824,	-- Sky-Reaver Korm Blackscar
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -1040,7 +1040,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13296,	-- Get to Ymirheim!
 					qg = 30345,	-- Chief Engineer Boltwrench
 					coord = { 62.8, 50.5, ICECROWN },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -1048,7 +1048,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 13293,	-- Get to Ymirheim!
 					qg = 31781,	-- Blast Thunderbomb
 					coord = { 51.9, 57.5, ICECROWN },
-					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
+					maxReputation = { FACTION_WARSONG_OFFENSIVE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -1073,7 +1073,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12951,	-- Let the Baron Know
 					qg = 29343,	-- Baron Sliver
 					coord = { 42.8, 25.0, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				q(12951, {	-- Let the Baron Know
@@ -1175,7 +1175,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12814,	-- You'll Need a Gryphon
 					qg = 29405,	-- Uzo Deathcaller
 					coord = { 19.6, 47.7, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				pvp(q(13233, {	-- No Mercy!
@@ -1561,7 +1561,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12982,	-- Ebon Blade Prisoners
 					qg = 30074,	-- The Leaper
 					coord = { 43.5, 25.1, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				q(13397, {	-- Sindragosa's Fall
@@ -1581,7 +1581,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On the Skybreaker.",
 					sourceQuest = 13225,	-- The Skybreaker
 					qg = 31259,	-- Absalan the Pious
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 				}),
@@ -1589,7 +1589,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "On Orgrim's Hammer.",
 					sourceQuest = 13224,	-- Orgrim's Hammer
 					qg = 31261,	-- Brother Keltan
-					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
+					maxReputation = { FACTION_ARGENT_CRUSADE, EXALTED },
 					races = HORDE_ONLY,
 					isDaily = true,
 				}),
@@ -2157,7 +2157,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12992,	-- Crush Dem Vrykuls!
 					qg = 30216,	-- Vile
 					coord = { 42.9, 25.5, ICECROWN },
-					maxReputation = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+					maxReputation = { FACTION_EBON_BLADE, EXALTED },
 					isDaily = true,
 				}),
 				q(13239, {	-- Volatility

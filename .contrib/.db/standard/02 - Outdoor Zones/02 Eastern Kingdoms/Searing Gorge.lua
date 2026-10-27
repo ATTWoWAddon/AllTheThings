@@ -58,7 +58,7 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 			timeline = { ADDED_1_15_3 },
 			groups = {
 				n(QUESTS, sharedData({
-						maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
+						maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
 						isDaily = true,
 						lvl = 53,
 				}, {
@@ -579,16 +579,16 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				coord = { 38.8, 28.5, SEARING_GORGE },
 				minReputation = {
 					-- #if AFTER CATA
-					FACTION_THORIUM_BROTHERHOOD, REVERED,	-- Thorium Brotherhood, Revered.
+					FACTION_THORIUM_BROTHERHOOD, REVERED,
 					-- #else
-					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,	-- Thorium Brotherhood, Friendly.
+					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,
 					-- #endif
 				},
 				maxReputation = {
 					-- #if AFTER CATA
-					FACTION_THORIUM_BROTHERHOOD, EXALTED,	-- Thorium Brotherhood, Exalted.
+					FACTION_THORIUM_BROTHERHOOD, EXALTED,
 					-- #else
-					FACTION_THORIUM_BROTHERHOOD, HONORED,	-- Thorium Brotherhood, Honored.
+					FACTION_THORIUM_BROTHERHOOD, HONORED,
 					-- #endif
 				},
 				timeline = { ADDED_3_3_0 },
@@ -608,16 +608,16 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				coord = { 38.8, 28.5, SEARING_GORGE },
 				minReputation = {
 					-- #if AFTER CATA
-					FACTION_THORIUM_BROTHERHOOD, REVERED,	-- Thorium Brotherhood, Revered.
+					FACTION_THORIUM_BROTHERHOOD, REVERED,
 					-- #else
-					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,	-- Thorium Brotherhood, Friendly.
+					FACTION_THORIUM_BROTHERHOOD, FRIENDLY,
 					-- #endif
 				},
 				maxReputation = {
 					-- #if AFTER CATA
-					FACTION_THORIUM_BROTHERHOOD, EXALTED,	-- Thorium Brotherhood, Exalted.
+					FACTION_THORIUM_BROTHERHOOD, EXALTED,
 					-- #else
-					FACTION_THORIUM_BROTHERHOOD, HONORED,	-- Thorium Brotherhood, Honored.
+					FACTION_THORIUM_BROTHERHOOD, HONORED,
 					-- #endif
 				},
 				cost = {
@@ -1043,8 +1043,8 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale
@@ -1058,8 +1058,8 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale
@@ -1073,8 +1073,8 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				sourceQuest = 7722,	-- What the Flux?
 				qg = 14624,	-- Master Smith Burninate
 				coord = { 38.8, 28.5, SEARING_GORGE },
-				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 18944, 2 },	-- Incendosaur Scale

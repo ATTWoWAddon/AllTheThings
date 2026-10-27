@@ -69,7 +69,7 @@ maproot(MAP.KALIMDOR, {
 					sourceQuest = 8464,	-- Winterfall Activity
 					qg = 11556,	-- Salfa
 					coord = { 27.8, 34.6, MAP.WINTERSPRING },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					repeatable = true,
 					lvl = 50,
@@ -85,7 +85,7 @@ maproot(MAP.KALIMDOR, {
 				}),
 				q(8470, {	-- Deadwood Ritual Totem
 					qi = 20741,	-- Deadwood Ritual Totem
-					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
+					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },
 					crs = {
 						7157,	-- Deadwood Avenger
 						7156,	-- Deadwood Den Watcher
@@ -97,7 +97,7 @@ maproot(MAP.KALIMDOR, {
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 11554,	-- Grazle
 					coord = { 50.9, 85.0, MAP.FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
 					lvl = 45,
@@ -106,7 +106,7 @@ maproot(MAP.KALIMDOR, {
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 15395,	-- Nafien
 					coord = { 64.8, 8.2, MAP.FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
 					lvl = 45,
@@ -114,7 +114,7 @@ maproot(MAP.KALIMDOR, {
 				q(6031, {	-- Runecloth
 					qg = 11557,	-- Meilosh
 					coord = { 65.6, 2.8, MAP.FELWOOD },
-					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },
 					cost = { { "i", 14047, 30 } },	-- Runecloth
 					lvl = 40,
 					groups = {
@@ -125,7 +125,7 @@ maproot(MAP.KALIMDOR, {
 				q(6032, {	-- Sacred Cloth
 					qg = 11557,	-- Meilosh
 					coord = { 65.6, 2.8, MAP.FELWOOD },
-					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },
 					cost = { { "i", 14342, 2 } },	-- Mooncloth
 					requireSkill = TAILORING,
 					lvl = 40,
@@ -157,13 +157,13 @@ maproot(MAP.KALIMDOR, {
 						{ "i", 21155 },	-- Timbermaw Offering of Peace
 					},
 					coord = { 65.2, 2.6, MAP.FELWOOD },
-					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					lvl = 45,
 				},
 				q(8481, {	-- The Root of All Evil
 					qg = 11555,	-- Gorn One Eye
 					coord = { 65.2, 2.6, MAP.FELWOOD },
-					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					maps = { MAP.WINTERSPRING },
 					lvl = 45,
 					groups = {
@@ -233,7 +233,7 @@ maproot(MAP.KALIMDOR, {
 			n(VENDORS, {
 				n(11555, {	-- Gorn One Eye
 					coord = { 65.2, 2.6, MAP.FELWOOD },
-					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },	-- Timbermaw Hold, Honored.
+					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },
 					groups = {
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem

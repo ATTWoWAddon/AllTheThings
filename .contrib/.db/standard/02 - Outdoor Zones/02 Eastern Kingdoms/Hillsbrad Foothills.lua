@@ -149,8 +149,8 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 			}),
 			faction(FACTION_SYNDICATE, {	-- Syndicate
 				description = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
-				minReputation = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
-				maxReputation = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
+				minReputation = { FACTION_SYNDICATE, NEUTRAL - 1 },
+				maxReputation = { FACTION_SYNDICATE, NEUTRAL },
 			}),
 		}),
 		-- #endif
@@ -1735,7 +1735,7 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 					{ 84.4, 80.3, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				maxReputation = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
+				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
 				cost = { { "i", 16885, 5 } },	-- Heavy Junkbox
 				repeatable = true,
 				lvl = lvlsquish(50, 50, 20),
@@ -2386,7 +2386,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				sourceQuest = 6681,	-- The Manor, Ravenholdt
 				qg = 6766,	-- Ravenholdt Guard <Assassin's League>
 				coord = { 85.2, 79.4, ALTERAC_MOUNTAINS },
-				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
+				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 17124, 1 } },	-- Syndicate Emblem
 				classes = { ROGUE },
@@ -3304,7 +3304,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 				coord = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
 
 				-- Available to Humans without faction requirements.
-				minReputation = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
+				minReputation = { FACTION_STORMWIND, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. HUMAN .. [[ then
 						t.minReputation = nil;

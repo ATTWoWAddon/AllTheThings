@@ -99,7 +99,7 @@ maproot(KALIMDOR, {
 					sourceQuest = 8464,	-- Winterfall Activity
 					qg = 11556,	-- Salfa
 					coord = { 27.8, 34.6, WINTERSPRING },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					cost = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					repeatable = true,
@@ -137,7 +137,7 @@ maproot(KALIMDOR, {
 				}),
 				q(8470, {	-- Deadwood Ritual Totem
 					provider = { "i", 20741 },	-- Deadwood Ritual Totem
-					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
+					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },
 					crs = {
 						7157,	-- Deadwood Avenger
 						7156,	-- Deadwood Den Watcher
@@ -149,7 +149,7 @@ maproot(KALIMDOR, {
 				q(28524, {	-- Delivery for Donova
 					qg = 11556,	-- Salfa
 					coord = { 21.0, 46.1, WINTERSPRING },
-					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold, Neutral.
+					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },
 					timeline = { ADDED_4_0_3 },
 					isBreadcrumb = true,
 				}),
@@ -176,7 +176,7 @@ maproot(KALIMDOR, {
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 11554,	-- Grazle
 					coord = { 50.9, 85.0, FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
@@ -189,7 +189,7 @@ maproot(KALIMDOR, {
 					},
 					qg = 15395,	-- Nafien
 					coord = { 64.0, 10.3, FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { ADDED_4_0_3 },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
@@ -199,7 +199,7 @@ maproot(KALIMDOR, {
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 15395,	-- Nafien
 					coord = { 64.8, 8.2, FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { ADDED_1_15_3 },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
@@ -210,7 +210,7 @@ maproot(KALIMDOR, {
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 15395,	-- Nafien
 					coord = { 64.8, 8.2, FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = {
 						-- #if SEASON_OF_DISCOVERY
 						REMOVED_1_15_3,
@@ -226,7 +226,7 @@ maproot(KALIMDOR, {
 					sourceQuest = 28522,	-- Winterfall Activity
 					qg = 11556,	-- Salfa
 					coord = { 21.0, 46.1, WINTERSPRING },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { ADDED_4_0_3 },
 					cost = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
 					repeatable = true,
@@ -240,7 +240,7 @@ maproot(KALIMDOR, {
 						{ 65.6, 2.8, FELWOOD },
 						-- #endif
 					},
-					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },
 					cost = { { "i", 14047, 30 } },	-- Runecloth
 					lvl = lvlsquish(40, 40, 15),
 					groups = {
@@ -257,7 +257,7 @@ maproot(KALIMDOR, {
 						{ 65.6, 2.8, FELWOOD },
 						-- #endif
 					},
-					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },	-- Timbermaw Hold, Friendly.
+					minReputation = { FACTION_TIMBERMAW_HOLD, FRIENDLY },
 					cost = { { "i", 14342, 2 } },	-- Mooncloth
 					requireSkill = TAILORING,
 					lvl = lvlsquish(40, 40, 15),
@@ -311,7 +311,7 @@ maproot(KALIMDOR, {
 						{ 65.2, 2.6, FELWOOD },
 						-- #endif
 					},
-					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					lvl = 45,
 				},
@@ -339,7 +339,7 @@ maproot(KALIMDOR, {
 						{ 65.2, 2.6, FELWOOD },
 						-- #endif
 					},
-					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					maps = { WINTERSPRING },
 					lvl = lvlsquish(45, 45, 15),
 					groups = {
@@ -447,7 +447,7 @@ maproot(KALIMDOR, {
 						{ 65.2, 2.6, FELWOOD },
 						-- #endif
 					},
-					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },	-- Timbermaw Hold, Honored.
+					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },
 					groups = {
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem

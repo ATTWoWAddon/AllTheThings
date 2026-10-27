@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					sourceQuest = 27464,	-- Argent Call: The Trial of the Crypt
 					qg = 49856,	-- Lord Raymond George
 					coord = { 76.2, 50.9, EASTERN_PLAGUELANDS },
-					maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
+					maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 					timeline = { ADDED_4_0_3 },
 					maps = { STRATHOLME },
 					repeatable = true,

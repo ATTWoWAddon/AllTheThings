@@ -528,7 +528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 					sourceQuest = 5525,	-- Free Knot!
 					qg = 14338,	-- Knot Thimblejack
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					maps = GORDOK_COMMONS_MAPS,
 					repeatable = true,
@@ -692,7 +692,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
@@ -713,7 +713,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
@@ -734,7 +734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						7482,	-- Elven Legends
 					},
 					qg = 14368,	-- Lorekeeper Lydros
-					maxReputation = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
+					maxReputation = { FACTION_SHENDRALAR, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					maps = CAPITAL_GARDENS_MAPS,
 					cost = {
@@ -905,7 +905,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5519, {	-- The Gordok Ogre Suit
 					sourceQuest = 5518,	-- The Gordok Ogre Suit
 					qg = 14338,	-- Knot Thimblejack
-					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
+					maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 					timeline = { REMOVED_4_0_3 },
 					maps = GORDOK_COMMONS_MAPS,
 					cost = {
@@ -916,9 +916,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 					repeatable = true,
 					lvl = 56,
-					groups = {
-						i(18258),	-- Gordok Ogre Suit
-					},
+					groups = { i(18258) },	-- Gordok Ogre Suit
 				}),
 				q(27119, {	-- The Gordok Ogre Suit
 					qg = 14338,	-- Knot Thimblejack

@@ -456,7 +456,7 @@ battleground(WARSONG_GULCH, {
 					{ 46.6, 8.4, THE_BARRENS },
 					-- #endif
 				},
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = lvlsquish(45, 45, 10),
 				groups = {
@@ -475,7 +475,7 @@ battleground(WARSONG_GULCH, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -494,7 +494,7 @@ battleground(WARSONG_GULCH, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+				minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 				races = HORDE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -510,7 +510,7 @@ battleground(WARSONG_GULCH, {
 					{ 61.6, 83.8, ASHENVALE },
 					-- #endif
 				},
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = lvlsquish(45, 45, 10),
 				groups = {
@@ -529,7 +529,7 @@ battleground(WARSONG_GULCH, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 25, 34 },
 				groups = {
@@ -548,7 +548,7 @@ battleground(WARSONG_GULCH, {
 				-- #IF ANYCLASSIC
 				timeline = { REMOVED_2_5_1 },
 				-- #endif
-				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
 				lvl = { 35, 44 },
 				groups = {
@@ -574,7 +574,7 @@ battleground(WARSONG_GULCH, {
 				groups = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(211499, {	-- Trainee's Outrider Wolf
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -585,7 +585,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19569)),	-- Advisor's Gnarled Staff
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212584, {	-- Advisor's Gnarled Staff
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },	-- Warsong Outriders, Revered.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -596,7 +596,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19553)),	-- Legionnaire's Sword
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212586, {	-- Legionnaire's Sword
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },	-- Warsong Outriders, Revered.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -607,7 +607,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19561)),	-- Outrider's Bow
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212585, {	-- Outrider's Bow
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },	-- Warsong Outriders, Revered.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -618,22 +618,22 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19545)),	-- Scout's Blade
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212587, {	-- Scout's Blade
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },	-- Warsong Outriders, Revered.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
 					moh(3, i(20441)),	-- Scout's Blade
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },	-- Warsong Outriders, Friendly.
+						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -703,7 +703,7 @@ battleground(WARSONG_GULCH, {
 				groups = {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(211498, {	-- Trainee's Sentinel Nightsaber
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -714,7 +714,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19573)),	-- Lorekeeper's Staff
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212580, {	-- Lorekeeper's Staff
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },	-- Silverwing Sentinels, Revered.
+						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -725,7 +725,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19565)),	-- Outrunner's Bow
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212581, {	-- Outrunner's Bow
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },	-- Silverwing Sentinels, Revered.
+						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -736,7 +736,7 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19557)),	-- Protector's Sword
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212582, {	-- Protector's Sword
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },	-- Silverwing Sentinels, Revered.
+						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
@@ -747,22 +747,22 @@ battleground(WARSONG_GULCH, {
 					moh(3, i(19548)),	-- Sentinel's Blade
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(212583, {	-- Sentinel's Blade
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },	-- Silverwing Sentinels, Revered.
+						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif
 					moh(3, i(19549)),	-- Sentinel's Blade
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 						timeline = { REMOVED_2_0_1 },
 					})),
 					-- #endif

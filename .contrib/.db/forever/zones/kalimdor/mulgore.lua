@@ -1565,7 +1565,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 47.6, 58.4, MAP.MULGORE },
 				races = HORDE_ONLY,
 				-- Available to Tauren without faction requirements.
-				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
+				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TAUREN .. [[ then
 						t.minReputation = nil;
@@ -1584,7 +1584,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 				coord = { 47.6, 58.4, MAP.MULGORE },
 				-- Available to Tauren without faction requirements.
-				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
+				minReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				OnInit = [[function(t)
 					if _.RaceIndex == ]] .. TAUREN .. [[ then
 						t.minReputation = nil;

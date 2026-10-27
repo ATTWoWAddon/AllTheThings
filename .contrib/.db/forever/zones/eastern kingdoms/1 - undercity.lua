@@ -769,7 +769,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sourceQuest = 7818,	-- A Donation of Runecloth
 				qg = 14729,	-- Ralston Farnsley
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				maxReputation = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
+				maxReputation = { FACTION_UNDERCITY, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = HORDE_ONLY,
 				repeatable = true,

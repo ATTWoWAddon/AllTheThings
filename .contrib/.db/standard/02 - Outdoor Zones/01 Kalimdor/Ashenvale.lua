@@ -261,7 +261,7 @@ maproot(KALIMDOR, ASHENVALE, {
 						{ 22.0, 38.6, ASHENVALE },
 						{ 69.6, 63.6, ASHENVALE },
 					},
-					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
+					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
 				},
 				hqd = {
 					crs = {
@@ -274,7 +274,7 @@ maproot(KALIMDOR, ASHENVALE, {
 						{ 74.0, 74.0, ASHENVALE },
 						{ 28.6, 28.8, ASHENVALE },
 					},
-					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
+					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
 				},
 				timeline = { REMOVED_2_0_1 },
 				repeatable = true,
@@ -307,12 +307,12 @@ maproot(KALIMDOR, ASHENVALE, {
 				aqd = {
 					cr = 212969,	-- Kazragore <Far Seer>
 					coord = { 42.0, 67.0, ASHENVALE },
-					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
+					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
 				},
 				hqd = {
 					cr = 212970,	-- Felore Moonray <Priestess of the Moon>
 					coord = { 50.5, 72.0, ASHENVALE },
-					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
+					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
 				},
 				timeline = { REMOVED_2_0_1 },
 				repeatable = true,
@@ -758,7 +758,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					{ "n", 212969 },	-- Kazragore <Far Seer>
 				},
 				coord = { 42.0, 67.0, ASHENVALE },
-				maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
+				maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
 				timeline = { REMOVED_2_0_1 },
 				races = HORDE_ONLY,
 				-- #if AFTER 1.15.2
@@ -2290,7 +2290,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
 				},
 				coord = { 50.5, 72.0, ASHENVALE },
-				maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
+				maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
 				timeline = { REMOVED_2_0_1 },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 1.15.2

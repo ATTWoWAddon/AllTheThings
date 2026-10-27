@@ -223,7 +223,7 @@ namespace ATT
         /// <param name="locale">The locale.</param>
         /// <param name="flavor">The game flavor.</param>
         /// <returns></returns>
-        private static IDictionary<string, object> GetJSONDocumentFromWoWHead(long objectID, string locale = "en", string flavor = "retail")
+        public static IDictionary<string, object> GetJSONDocumentFromWoWHead(long objectID, string locale = "en", string flavor = "retail")
         {
             // Wowhead Cloudfront CDN shadowbans your IP after about 30 requests within a minute or so
             if (WowheadShadowban) return null;
@@ -548,6 +548,16 @@ namespace ATT
                             {
                                 gameFlavor = flavor;
                             }
+                            else
+                            {
+                                // fallback to JSON name retrieval... won't be able to get the model for now
+                                var objectInfo_en = GetJSONDocumentFromWoWHead(objectID, "en", flavor);
+                                if (objectInfo_en != null && objectInfo_en.TryGetValue("name", out string nameStr))
+                                {
+                                    name = nameStr;
+                                    gameFlavor = flavor;
+                                }
+                            }
                             break;
                     }
                 }
@@ -559,7 +569,7 @@ namespace ATT
                 }
 
                 // If we didn't find a document, let's print an error message and return.
-                if (englishDocument == string.Empty)
+                if (englishDocument == string.Empty && name == string.Empty)
                 {
                     Trace.Write("Unable to find English localization for object #");
                     Trace.WriteLine(objectID);

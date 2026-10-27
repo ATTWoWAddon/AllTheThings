@@ -126,11 +126,11 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(252396, {	-- Admiralty's Copper Lantern (DECOR!)
-						minReputation = { FACTION_STORMS_WAKE, FRIENDLY },	-- Storm's Wake, Friendly
+						minReputation = { FACTION_STORMS_WAKE, FRIENDLY },
 						cost = { { "c", WAR_RESOURCES, 125 } },
 					}),
 					i(252394, {	-- Bowhull Bookcase (DECOR!)
-						minReputation = { FACTION_STORMS_WAKE, REVERED },	-- Storm's Wake, Revered
+						minReputation = { FACTION_STORMS_WAKE, REVERED },
 						cost = { { "c", WAR_RESOURCES, 550 } },
 					}),
 					i(252395, {	-- Brennadam Coop (DECOR!)
@@ -138,7 +138,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 						cost = { { "c", WAR_RESOURCES, 450 } },
 					}),
 					i(252652, {	-- Copper Stormsong Well (DECOR!)
-						minReputation = { FACTION_STORMS_WAKE, REVERED },	-- Storm's Wake, Revered
+						minReputation = { FACTION_STORMS_WAKE, REVERED },
 						cost = { { "c", WAR_RESOURCES, 800 } },
 					}),
 					i(252655, {	-- Copper Tidesage's Sconce (DECOR!)
@@ -150,7 +150,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 						cost = { { "c", WAR_RESOURCES, 350 } },
 					}),
 					i(252398, {	-- Stormsong Water Pump (DECOR!)
-						minReputation = { FACTION_STORMS_WAKE, HONORED },	-- Storm's Wake, Honored
+						minReputation = { FACTION_STORMS_WAKE, HONORED },
 						cost = { { "c", WAR_RESOURCES, 200 } },
 					}),
 				},

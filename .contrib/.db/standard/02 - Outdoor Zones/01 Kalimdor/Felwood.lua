@@ -975,7 +975,7 @@ maproot(KALIMDOR, FELWOOD, {
 				sourceQuest = 27995,	-- Dance for Ruumbo!
 				qg = 11554,	-- Grazle
 				coord = { 51.4, 80.4, FELWOOD },
-				maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
+				maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 				timeline = { ADDED_4_0_3 },
 				cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 				repeatable = true,

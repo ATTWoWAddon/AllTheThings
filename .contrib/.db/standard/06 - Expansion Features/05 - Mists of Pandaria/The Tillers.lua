@@ -480,7 +480,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					sourceQuest = 30529,	-- Growing the Farm III: The Mossy Boulder
 					provider = { "o", 215705 },	-- Tillers Shrine
 					coord = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
-					minReputation = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
+					minReputation = { FACTION_THE_TILLERS, EXALTED },
 					groups = {
 						objective(1, {	-- Hired a farm hand
 							providers = {
@@ -846,7 +846,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					sourceQuest = 30529,	-- Growing the Farm III: The Mossy Boulder
 					qg = 64597,	-- Nana Mudclaw
 					coord = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-					minReputation = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
+					minReputation = { FACTION_THE_TILLERS, EXALTED },
 				}),
 				q(31313, {	-- Just A Folk Story
 					sourceQuest = 31312,	-- The Old Map
@@ -1288,7 +1288,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				sourceQuest = 30257,	-- Learn and Grow V: Halfhill Market
 				qg = 58646,	-- Farmer Yoon
 				coord = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-				maxReputation = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
+				maxReputation = { FACTION_THE_TILLERS, EXALTED },
 				isDaily = true,
 			}, {
 				q(31672, {	-- A Pumpkin-y Perfume

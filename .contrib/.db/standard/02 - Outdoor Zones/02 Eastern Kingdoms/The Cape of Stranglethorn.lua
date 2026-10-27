@@ -308,7 +308,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 				sourceQuest = 1036,	-- Avast Ye, Scallywag
 				qg = 2546,	-- Fleet Master Firallon
 				coord = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				lvl = lvlsquish(55, 55, 10),
 				groups = {
 					objective(1, {	-- 0/1 Baron Revilgaz slain
@@ -323,7 +323,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 			q(1036, {	-- Avast Ye, Scallywag
 				qg = 43454,	-- "Good-Boy" Bruce
 				coord = { 41.6, 61.2, THE_CAPE_OF_STRANGLETHORN },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
 				isBreadcrumb = true,
 				lvl = lvlsquish(55, 55, 10),
 			}),
@@ -605,7 +605,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 			q(9272, {	-- Dressing the Part
 				qg = 2546,	-- Fleet Master Firallon
 				coord = { 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
-				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },
 				lvl = lvlsquish(49, 49, 10),
 				groups = {
 					i(22746, {	-- Buccaneer's Uniform

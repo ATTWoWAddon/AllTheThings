@@ -39,8 +39,8 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 			}),
 			faction(FACTION_SYNDICATE, {	-- Syndicate
 				description = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
-				minReputation = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
-				maxReputation = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
+				minReputation = { FACTION_SYNDICATE, NEUTRAL - 1 },
+				maxReputation = { FACTION_SYNDICATE, NEUTRAL },
 			}),
 		}),
 		-- #if BEFORE CATA
@@ -446,7 +446,7 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 					{ 84.4, 80.3, ALTERAC_MOUNTAINS },
 					-- #endif
 				},
-				maxReputation = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
+				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
 				cost = { { "i", 16885, 5 } },	-- Heavy Junkbox
 				repeatable = true,
 				lvl = lvlsquish(50, 50, 20),
@@ -457,9 +457,7 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 							REMOVED_2_0_1
 						},
 					}),
-					i(25878, {	-- Dusksteel Throwing Knife [TBC]
-						timeline = { ADDED_2_1_0, REMOVED_5_0_4 },
-					}),
+					i(25878, { timeline = { ADDED_2_1_0, REMOVED_5_0_4 } }),	-- Dusksteel Throwing Knife [TBC]
 				},
 			}),
 			q(514, {	-- Letter to Stormpike
@@ -596,7 +594,7 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 				sourceQuest = 6681,	-- The Manor, Ravenholdt
 				qg = 6766,	-- Ravenholdt Guard <Assassin's League>
 				coord = { 85.2, 79.4, ALTERAC_MOUNTAINS },
-				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
+				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 17124, 1 } },	-- Syndicate Emblem
 				classes = { ROGUE },

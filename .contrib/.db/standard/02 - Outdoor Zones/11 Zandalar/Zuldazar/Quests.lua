@@ -1811,7 +1811,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 				},
 				provider = { "n", 141555 },	-- Baine Bloodhoof
 				coord = { 41.4, 72.2, HALL_OF_CHRONICLERS },
-				minReputation = { FACTION_ZANDALARI_EMPIRE, EXALTED },	-- Zandalari Empire, Exalted.
+				minReputation = { FACTION_ZANDALARI_EMPIRE, EXALTED },
 				races = HORDE_ONLY,
 				groups = { i(164944) },	-- The Bloodied Glaive of Vol'jin (QI!)
 			}),

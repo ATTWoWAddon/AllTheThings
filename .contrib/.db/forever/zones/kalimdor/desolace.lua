@@ -65,7 +65,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93044, {	-- A Cleansing Cry
 				sourceQuest = 93041,	-- Facing the Truth
 				-- TODO: Wowhead doesn't list the quest giver yet.
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
@@ -83,7 +83,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1369,	-- Broken Tears
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {
@@ -99,7 +99,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(92754, {	-- A New Need for Shadow Protection
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Mirda in Magram Village.
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 13459, 3 } },	-- Greater Shadow Protection Potion
@@ -158,7 +158,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1385,	-- Brutal Politics
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				races = ALLIANCE_ONLY,	-- TODO: Double check that this is only Alliance Only
 				lvl = 30,
 				groups = {
@@ -197,7 +197,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92818, {	-- Big, No, MASSIVE Iron Axes
 				qg = 253163,	-- Grolkar
 				coord = { 69.6, 78.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -255,7 +255,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/3 Broken Tears
@@ -288,7 +288,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93227, {	-- Buying Friendship: Gelkis [A]
 				qg = 5396,	-- Captain Pentigast
 				coord = { 66.4, 10.8, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },	-- Gelkis Clan Centaur, Neutral.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -303,7 +303,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(94873, {	-- Buying Friendship: Gelkis [H]
 				qg = 5412,	-- Gurda Wildmane
 				coord = { 56.2, 59.4, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },	-- Gelkis Clan Centaur, Neutral.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
@@ -317,7 +317,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(93226, {	-- Buying Friendship: Magram [A]
 				-- TODO: Wowhead doesn't list the quest giver yet.
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },	-- Magram Clan Centaur, Neutral.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -332,7 +332,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(94872, {	-- Buying Friendship: Magram [H]
 				qg = 5412,	-- Gurda Wildmane
 				coord = { 56.2, 59.4, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },	-- Magram Clan Centaur, Neutral.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
@@ -572,7 +572,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1369,	-- Broken Tears
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				cost = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 				lvl = 30,
 				groups = {
@@ -637,7 +637,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(92814, {	-- I Need a Tailor
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Molkar in Gelkis Village.
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 10008, 1 } },	-- White Bandit Mask
@@ -666,7 +666,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1374,	-- Khan Jehn
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -683,7 +683,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1375,	-- Khan Shaka
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -719,7 +719,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1373,	-- Ongeku
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn's Head
@@ -736,7 +736,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 58.4, 88.6, MAP.DESOLACE },
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
@@ -754,7 +754,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93196, {	-- Khan Jehn (Magram)
 				sourceQuest = 93188,	-- Return to Orgrul
 				-- TODO: Wowhead doesn't list the quest giver yet.
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, Honored.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 35,
 				groups = {
@@ -771,7 +771,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1371,	-- Gizmo for Warug
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
-				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Shaka's Head
@@ -801,7 +801,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(92817, {	-- Leather Technique
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Talra in Gelkis Village.
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 5739, 1 } },	-- Barbaric Harness
@@ -818,7 +818,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(92755, {	-- Mysterious Mysticism
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Halea in Gelkis Village.
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -847,7 +847,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1370,	-- Stealing Supplies
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				lvl = 30,
 				groups = {
@@ -1082,7 +1082,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1384,	-- Raid on the Kolkar
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/6 Crudely Dried Meat
@@ -1106,7 +1106,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93045, {	-- Test Your Theory
 				sourceQuest = 93044,	-- A Cleansing Cry
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, Honored.
+				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,

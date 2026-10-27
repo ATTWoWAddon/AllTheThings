@@ -286,7 +286,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					}),
 					n(155176, {	-- Honeyback Hivemother
 						i(169862, {	-- Alluring Bloom
-							minReputation = { FACTION_HONEYBACK_HIVE, FRIENDLY },	-- Honeyback Hive, Friendly
+							minReputation = { FACTION_HONEYBACK_HIVE, FRIENDLY },
 							cost = { { "i", 168822, 35 } },	-- Thin Jelly x35
 						}),
 						i(172383, {	-- Collected Tidebloom Honey (QS!)

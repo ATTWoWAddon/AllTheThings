@@ -3231,14 +3231,14 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 						cost = { { "g", 10000000 } },	-- 1,000g
 					}),
 					i(246108, {	-- Embellished Dwarven Tome (DECOR!)
-						minReputation = { FACTION_WILDHAMMER_CLAN, HONORED },	-- Wildhammer Clan, Honored
+						minReputation = { FACTION_WILDHAMMER_CLAN, HONORED },
 						cost = { { "g", 20000000 } },	-- 2,000g
 					}),
 					i(246428, {	-- Overgrown Wildhammer Fountain (DECOR!)
 						cost = { { "g", 15000000 } },	-- 1,500g
 					}),
 					i(246425, {	-- Round Dwarven Table (DECOR!)
-						minReputation = { FACTION_WILDHAMMER_CLAN, FRIENDLY },	-- Wildhammer Clan, Friendly
+						minReputation = { FACTION_WILDHAMMER_CLAN, FRIENDLY },
 						cost = { { "g", 4000000 } },	-- 400g
 					}),
 				},

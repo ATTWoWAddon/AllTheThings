@@ -662,10 +662,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				faction(FACTION_THE_ALDOR, {	-- The Aldor
-					maxReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					maxReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				faction(FACTION_THE_SCRYERS, {	-- The Scryers
-					maxReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					maxReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 				faction(FACTION_THE_SHATAR, {	-- The Sha'tar
 					maps = { TEMPEST_KEEP_ARCATRAZ, TEMPEST_KEEP_BOTANICA, TEMPEST_KEEP_MECHANAR },
@@ -714,14 +714,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18538,	-- Ishanah
 					coord = { 24.2, 29.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 29740, 1 } },	-- Fel Armament
 				}),
 				q(10020, {	-- A Cure for Zahlia
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18597,	-- Sha'nir
 					coord = { 64.2, 15.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					groups = {
 						objective(1, {	-- 0/1 Stonegazer's Blood
 							provider = { "i", 25815 },	-- Stonegazer's Blood
@@ -748,8 +748,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10416,	-- Synthesis of Power
 					qg = 18530,	-- Voren'thal the Seer
 					coord = { 42.6, 91.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, EXALTED },
 					cost = { { "i", 29739, 1 } },	-- Arcane Tome
 					repeatable = true,
 				}),
@@ -776,13 +776,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.6, 34.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					isBreadcrumb = true,
 				})),
 				applyclassicphase(TBC_PHASE_FIVE, q(11482, {	-- Duty Calls
 					qg = 18594,	-- Dathris Sunstriker
 					coord = { 54.6, 80.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					isBreadcrumb = true,
 					lvl = 70,
 				})),
@@ -817,8 +817,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10420,	-- A Cleansing Light
 					qg = 18538,	-- Ishanah
 					coord = { 24.2, 29.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, EXALTED },
 					cost = { { "i", 29740, 1 } },	-- Fel Armament
 					repeatable = true,
 				}),
@@ -826,13 +826,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 29426, 10 } },	-- Firewing Signet
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, q(11875, {	-- Gaining the Advantage
 					description = "This daily quest is only available to characters with Herbalism, Mining, or Skinning.",
 					qg = 19202,	-- Emissary Mordin
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					maps = { BLADES_EDGE_MOUNTAINS, HELLFIRE_PENINSULA, ISLE_OF_QUELDANAS, NAGRAND, NETHERSTORM, SHADOWMOON_VALLEY, TEROKKAR_FOREST, ZANGARMARSH },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
@@ -846,7 +846,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 11517,	-- Report to Nasuun
 					qg = 24932,	-- Exarch Nasuun
 					coord = { 49.8, 42.6, SHATTRATH_CITY },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					timeline = { REMOVED_3_0_2 },
 					maps = { BLADES_EDGE_MOUNTAINS },
 					isDaily = true,
@@ -876,7 +876,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18166,	-- Archmage Khadgar
 					coord = { 54.7, 44.3, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 				q(10169, {	-- Losing Gracefully
 					qg = 19485,	-- Magister Falris
@@ -887,7 +887,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 11534,	-- Report to Nasuun
 					qg = 24932,	-- Exarch Nasuun
 					coord = { 49.8, 42.6, SHATTRATH_CITY },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					maps = { BLADES_EDGE_MOUNTAINS },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
@@ -929,14 +929,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
 				}),
 				q(10653, {	-- Marks of Sargeras
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 30809, 10 } },	-- Mark of Sargeras
 				}),
 				q(10025, {	-- More Basilisk Eyes
@@ -944,7 +944,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10024,	-- Voren'thal's Visions
 					qg = 18596,	-- Arcanist Adyria
 					coord = { 54.8, 22.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
 					repeatable = true,
 				}),
@@ -952,7 +952,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10917,	-- The Outcast's Plight
 					qg = 22429,	-- Vekax
 					coord = { 47.7, 18.8, SHATTRATH_CITY },
-					maxReputation = { FACTION_LOWER_CITY, HONORED },	-- Lower City, Honored.
+					maxReputation = { FACTION_LOWER_CITY, HONORED },
 					cost = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 1011.6 },	-- Lower City, Honored
@@ -966,8 +966,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10412,	-- Firewing Signets
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, HONORED },
 					cost = { { "i", 29426, 10 } },	-- Firewing Signet
 					repeatable = true,
 				}),
@@ -975,8 +975,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10325,	-- Marks of Kil'jaeden
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, HONORED },
 					cost = { { "i", 29425, 10 } },	-- Mark of Kil'jaeden
 					repeatable = true,
 				}),
@@ -984,8 +984,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, EXALTED },
 					cost = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					repeatable = true,
 				}),
@@ -993,8 +993,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, EXALTED },
 					cost = { { "i", 30810, 10 } },	-- Sunfury Signet
 					repeatable = true,
 				}),
@@ -1003,14 +1003,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10017,	-- Strained Supplies
 					qg = 18597,	-- Sha'nir
 					coord = { 64.2, 15.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 					repeatable = true,
 				}),
 				q(57581, {	-- Plucking Plumes
 					qg = 22429,	-- Vekax
 					coord = { 47.7, 18.8, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, EXALTED },	-- Lower City, Exalted.
+					minReputation = { FACTION_LOWER_CITY, EXALTED },
 					timeline = { ADDED_8_2_5 },
 					cost = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 					repeatable = true,
@@ -1035,7 +1035,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10551,	-- Allegiance to the Aldor
 					qg = 18538,	-- Ishanah
 					coord = { 24.2, 29.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					maps = { TEROKKAR_FOREST },
 					groups = {
 						objective(1, {	-- 0/1 Northern Altar Cleansed
@@ -1087,8 +1087,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10412,	-- Firewing Signets
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, HONORED },	-- The Scryers, Honored.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, HONORED },
 					cost = { { "i", 29426, 1 } },	-- Firewing Signet
 					repeatable = true,
 				}),
@@ -1096,8 +1096,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10325,	-- Marks of Kil'jaeden
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, HONORED },	-- The Aldor, Honored.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, HONORED },
 					cost = { { "i", 29425, 1 } },	-- Mark of Kil'jaeden
 					repeatable = true,
 				}),
@@ -1105,8 +1105,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 					qg = 18537,	-- Adyen the Lightwarden
 					coord = { 30.7, 34.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-					maxReputation = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
+					maxReputation = { FACTION_THE_ALDOR, EXALTED },
 					cost = { { "i", 30809, 1 } },	-- Mark of Sargeras
 					repeatable = true,
 				}),
@@ -1114,8 +1114,8 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuests = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-					maxReputation = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
+					maxReputation = { FACTION_THE_SCRYERS, EXALTED },
 					cost = { { "i", 30810, 1 } },	-- Sunfury Signet
 					repeatable = true,
 				}),
@@ -1143,13 +1143,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					description = "If you want to switch from Scryers to Aldor, use this quest to regain lost Aldor reputation.",
 					qg = 18597,	-- Sha'nir
 					coord = { 64.2, 15.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 25802, 8 } },	-- Dreadfang Venom Sac
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, q(11877, {	-- Sunfury Attack Plans
 					qg = 25140,	-- Lord Torvos
 					coord = { 62.6, 36.0, SHATTRATH_CITY },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					maps = { NETHERSTORM },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
@@ -1182,7 +1182,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 18531,	-- Magistrix Fyalenn
 					coord = { 45.1, 81.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 30810, 10 } },	-- Sunfury Signet
 				}),
 				q(11379, {	-- Super Hot Stew
@@ -1211,7 +1211,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 18530,	-- Voren'thal the Seer
 					coord = { 42.6, 91.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					cost = { { "i", 29739, 1 } },	-- Arcane Tome
 				}),
 				q(10251, {	-- The Master's Grand Design?
@@ -1223,7 +1223,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_FIVE, q(11880, {	-- The Multiphase Survey
 					qg = 19475,	-- Harbinger Haronem
 					coord = { 61.4, 52.2, SHATTRATH_CITY },
-					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					maxReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },
 					maps = { NAGRAND },
 					isDaily = true,
 					lvl = lvlsquish(70, 70, 25),
@@ -1251,13 +1251,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					sourceQuest = 10552,	-- Allegiance to the Scryers
 					qg = 18166,	-- Archmage Khadgar
 					coord = { 54.7, 44.3, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				q(10024, {	-- Voren'thal's Visions
 					description = "If you want to switch from Aldor to Scryers, use this quest to regain lost Scryers reputation.",
 					qg = 18596,	-- Arcanist Adyria
 					coord = { 54.8, 22.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					cost = { { "i", 25744, 8 } },	-- Dampscale Basilisk Eye
 				}),
 				q(11369, {	-- WANTED: A Black Stalker Egg
@@ -1607,7 +1607,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 			n(VENDORS, {
 				n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
 					coord = { 64.0, 71.8, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(23591, {	-- Plans: Adamantite Cleaver (RECIPE!)
 							isLimited = true,
@@ -1637,7 +1637,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19043, {	-- Ahemen <Staff Vendor>
 					coord = { 34.2, 20.0, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					sym = {{"select", "itemID",
 						2527,	-- Battle Staff
 						2535,	-- War Staff
@@ -1735,7 +1735,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(22212, {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
 					coord = { 66.6, 68.6, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(21915),	-- Pattern: Ebon Shadowbag (RECIPE!)
 						i(21914),	-- Pattern: Frozen Shadoweave Boots (RECIPE!)
@@ -1746,7 +1746,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				applyclassicphase(TBC_PHASE_FIVE, n(27667, {	-- Anwehu <Weapons & Armorsmith>
 					coord = { 48.8, 42.8, SHATTRATH_CITY },
-					minReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, NEUTRAL },	-- Shattered Sun Offensive, Neutral.
+					minReputation = { FACTION_SHATTERED_SUN_OFFENSIVE, NEUTRAL },
 					groups = {
 						i(34925),	-- Adorned Supernal Legwraps
 						i(34935),	-- Aftershock Waistguard
@@ -1809,7 +1809,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				})),
 				n(23483, {	-- Arcanist Xorith
 					coord = { 60.6, 63.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					groups = {
 						i(35717, {	-- Shattrath Flask of Blinding Light
 							cost = { { "i", 32897, 1 } },	-- 1x Mark of the Illidari
@@ -1834,7 +1834,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE CATA
 				n(25196, {	-- Archer Delvinar <Specialty Ammunition Vendor>
 					coord = { 41.4, 63.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					groups = {
 						i(32883, {	-- Felbane Slugs
 							timeline = { REMOVED_4_0_1 },
@@ -1864,17 +1864,17 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				n(20613, {	-- Arodis Sunblade <Keeper of Sha'tari Artifacts>
 					coord = { 42.6, 90.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					groups = TIER_FOUR_GROUPS,
 				}),
 				n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
 					coord = { 23.6, 32.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					groups = TIER_FOUR_GROUPS,
 				}),
 				n(23263, {	-- Brendan Turner <Meat Vendor>
 					coord = { 60.5, 69.3, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(29451),	-- Clefthoof Ribs
 						i(27854),	-- Smoked Talbuk Venison
@@ -1882,7 +1882,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19196, {	-- Cro Threadstrong <Leatherworking Supplies>
 					coord = { 67.2, 67.6, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(25720, {	-- Pattern: Heavy Knothide Leather
 							timeline = { REMOVED_3_2_0},
@@ -1894,7 +1894,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 					coord = { 66.2, 68.8, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave (RECIPE!)
 						i(21893),	-- Pattern: Imbued Netherweave Bag (RECIPE!)
@@ -1904,7 +1904,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
 					coord = { 56.2, 74.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					timeline = { ADDED_3_1_0 },
 				}),
 				n(19678, {	-- Fantei <Reagents>
@@ -1915,7 +1915,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(18525, {	-- G'eras
 					coord = { 50.8, 42.4, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SHATAR, NEUTRAL },	-- The Sha'tar, Neutral.
+					minReputation = { FACTION_THE_SHATAR, NEUTRAL },
 					groups = {
 						applyclassicphase(TBC_PHASE_FOUR, i(33585)),	-- Achromic Trousers of the Naaru
 						applyclassicphase(TBC_PHASE_FOUR, i(33810)),	-- Amani Mask of Death
@@ -2082,7 +2082,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>
 					coord = { 66.6, 68.6, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(24316),	-- Pattern: Spellcloth (RECIPE!)
 						i(21911),	-- Pattern: Spellfire Bag (RECIPE!)
@@ -2093,7 +2093,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19223, {	-- Granny Smith <Fruit Seller>
 					coord = { 64.0, 68.8, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(27856),	-- Skethyl Berries
 						i(29450),	-- Telaari Grapes
@@ -2125,7 +2125,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(23484, {	-- Haldor the Compulsive
 					coord = { 48.0, 26.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					groups = {
 						i(35717, {	-- Shattrath Flask of Blinding Light
 							cost = { { "i", 32897, 1 } },	-- Mark of the Illidari
@@ -2189,7 +2189,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19065, {	-- Inessera <Jewelcrafting Supplies Vendor>
 					coord = { 35.6, 19.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					-- #if AFTER WRATH
 					sym = {
 						{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
@@ -2198,7 +2198,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19195, {	-- Jim Saltit <Cooking Supplies>
 					coord = { 63.4, 68.6, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -2214,7 +2214,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(21906, {	-- Kelara <Keeper of Sha'tari Heirlooms>
 					coord = { 24.8, 27.0, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					groups = TIER_FIVE_GROUPS,
 				}),
 				n(23699, {	-- Kevin Browning <Coffee Aficionado>
@@ -2226,7 +2226,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 					coord = { 58.6, 75.2, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					timeline = { ADDED_3_1_0 },
 					sym = {
 						{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
@@ -2289,13 +2289,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19663, {	-- Madame Ruby <Enchanting Supplies>
 					coord = { 63.6, 70.0, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = MADAME_RUBY_GROUPS,
 				}),
 				-- #if BEFORE CATA
 				n(25195, {	-- Marksman Bova <Specialty Ammunition Vendor>
 					coord = { 37.6, 27.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					groups = {
 						i(32883, {	-- Felbane Slugs
 							timeline = { REMOVED_4_0_1 },
@@ -2335,7 +2335,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19664, {	-- Muffin Man Moser <Bread Merchant>
 					coord = { 61.4, 69.2, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(29449),	-- Bladespire Bagel
 						i(27855),	-- Mag'har Grainbread
@@ -2414,7 +2414,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(22208, {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
 					coord = { 66.4, 69.0, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(21895),	-- Pattern: Primal Mooncloth (RECIPE!)
 						i(21919),	-- Pattern: Primal Mooncloth Bag (RECIPE!)
@@ -2425,7 +2425,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(33680, {	-- Nemiha <Jewelcrafting Trainer>
 					coord = { 36.2, 47.0, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 					timeline = { ADDED_3_1_0 },
 					sym = {
 						{"sub", "common_recipes_vendor", 28701},	-- Timothy Jones <Jewelcrafting Trainer>
@@ -2433,7 +2433,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19045, {	-- Oloraak <Fish Merchant>
 					coord = { 58.0, 15.2, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(27858),	-- Sunspring Carp
 						i(29452),	-- Zangar Trout
@@ -2551,12 +2551,12 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				n(33679, {	-- Recorder Lidio <Inscription Trainer>
 					coord = { 55.9, 74.34, SHATTRATH_CITY },
 					timeline = { ADDED_3_1_0 },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 				n(33638, {	-- Scribe Lanloer <Inscription Trainer>
 					coord = { 36.4, 44.6, SHATTRATH_CITY },
 					timeline = { ADDED_3_1_0 },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 					coord = { 48.6, 26.6, SHATTRATH_CITY },
@@ -2641,7 +2641,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19182, {	-- Shaarubo <Bartender>
 					coord = { 75.2, 33.9, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(28399),	-- Filtered Draenic Water
 						i(27860),	-- Purified Draenic Water
@@ -2649,7 +2649,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19074, {	-- Skreah <Alchemy Supplies>
 					coord = { 45.8, 20.8, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(23574, {	-- Recipe: Transmute Primal Might (RECIPE!)
 							isLimited = true,
@@ -2658,14 +2658,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19244, {	-- Trader Endernor <Trade Goods>
 					coord = { 44.6, 96.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				n(27711, {	-- Technician Halmaha <Engineering Supplies>
 					coord = { 27.93, 47.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 				n(19238, {	-- Urumir Stavebright <Staff Vendor>
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					coord = { 49.6, 79.0, SHATTRATH_CITY },
 					sym = {{"select", "itemID",
 						2527,	-- Battle Staff
@@ -2684,7 +2684,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19661, {	-- Viggz Shinesparked <Engineering Supplies>
 					coord = { 64.8, 69.6, SHATTRATH_CITY },
-					minReputation = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
+					minReputation = { FACTION_LOWER_CITY, NEUTRAL },
 					groups = {
 						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 							isLimited = true,
@@ -2697,7 +2697,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(21905, {	-- Veynna Dawnstar <Keeper of Sha'tari Heirlooms>
 					coord = {44.8, 91.6, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 					groups = TIER_FIVE_GROUPS,
 				}),
 				n(18484, {	-- Wind Trader Lathrai
@@ -2717,12 +2717,12 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
 					coord = { 44.6, 96.8, SHATTRATH_CITY },
-					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
+					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
 				}),
 				n(33676, {	-- Zurii <Enchanting Trainer>
 					coord = { 36.4, 44.6, SHATTRATH_CITY },
 					timeline = { ADDED_3_1_0 },
-					minReputation = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
+					minReputation = { FACTION_THE_ALDOR, NEUTRAL },
 				}),
 			}),
 		},

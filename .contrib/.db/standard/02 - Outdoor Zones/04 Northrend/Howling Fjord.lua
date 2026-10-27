@@ -501,7 +501,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(11153, {	-- Break the Blockade
 					qg = 23895,	-- Bombardier Petrov
 					coord = { 28.9, 41.9, HOWLING_FJORD },
-					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
+					maxReputation = { FACTION_VALIANCE_EXPEDITION, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 					groups = {
@@ -1949,7 +1949,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 11390,	-- I've Got a Flying Machine!
 					qg = 24399,	-- Steel Gate Chief Archaeologist
 					coord = { 30.8, 28.5, HOWLING_FJORD },
-					maxReputation = { FACTION_EXPLORERS_LEAGUE, EXALTED },	-- Explorer's League, Exalted.
+					maxReputation = { FACTION_EXPLORERS_LEAGUE, EXALTED },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
 					groups = {
@@ -2591,7 +2591,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 11469,	-- Swabbin' Soap
 					qg = 24810,	-- Anuniaq
 					coord = { 24.6, 58.8, HOWLING_FJORD },
-					maxReputation = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
+					maxReputation = { FACTION_THE_KALUAK, EXALTED },
 					isDaily = true,
 				}),
 				q(11229, {	-- The Windrunner Fleet
