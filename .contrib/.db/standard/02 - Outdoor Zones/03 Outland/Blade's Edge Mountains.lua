@@ -1799,6 +1799,29 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(31423),	-- Wolf Hewer's Axe
 					},
 				}),
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10990, {	-- The Eagle's Essence
+					sourceQuest = 10988,	-- The Raven Stones
+					qg = 22924,	-- Arthorn Windsong
+					qis = {
+						32657,	-- Arthorn's Sparrowhawk Whistle (PQI!)
+						32355,	-- Essence of the Eagle
+					},
+					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						TEROKKAR_FOREST,
+					},
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					classes = { DRUID },
+					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/1 Essence of the Eagle
+							provider = { "i", 32355 },	-- Essence of the Eagle
+							provider = { "o", 185547 },	-- Shrine of the Eagle
+							cr = 22993,	-- Guardian of the Eagle
+						}),
+					},
+				})),
 				q(10455, {	-- The Encroaching Wilderness (A)
 					sourceQuests = {
 						-- #if AFTER 6.2.0.19953

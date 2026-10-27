@@ -1374,18 +1374,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					isBreadcrumb = true,
 				}),
-				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10990, {	-- The Eagle's Essence
-					sourceQuest = 10988,	-- The Raven Stones
-					qg = 22924,	-- Arthorn Windsong
-					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					cost = {
-						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
-						{ "i", 32355, 1 },	-- Essence of the Eagle
-					},
-					classes = { DRUID },
-					lvl = 70,
-				})),
 				q(9861, {	-- The Howling Wind
 					provider = { "i", 24504 },	-- Howling Wind
 					crs = {
@@ -1468,9 +1456,9 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 20.6, 35.7, NAGRAND },
 					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					maps = {
-					AUCHINDOUN_SETHEKK_HALLS,
-					BLADES_EDGE_MOUNTAINS,
-					TEROKKAR_FOREST,
+						AUCHINDOUN_SETHEKK_HALLS,
+						BLADES_EDGE_MOUNTAINS,
+						TEROKKAR_FOREST,
 					},
 					classes = { DRUID },
 					lvl = 70,
