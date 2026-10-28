@@ -1218,7 +1218,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						32356,	-- Essence of the Hawk
 					},
 					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
-					maps = { AUCHINDOUN_SETHEKK_HALLS },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						BLADES_EDGE_MOUNTAINS,
+					},
 					classes = { DRUID },
 					lvl = 70,
 					groups = {
