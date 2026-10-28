@@ -1382,10 +1382,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10993, {	-- Return to Cenarion Refuge
 					sourceQuest = 10992,	-- The Hawk's Essence
 					qg = 22924,	-- Arthorn Windsong
+					qi = 32359,	-- Arthorn's Package (PQI!)
 					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					maps = { ZANGARMARSH },
-					cost = { { "i", 32359, 1 } },	-- Arthorn's Package (Provided)
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						ZANGARMARSH,
+					},
 					classes = { DRUID },
 					lvl = 70,
 				})),
