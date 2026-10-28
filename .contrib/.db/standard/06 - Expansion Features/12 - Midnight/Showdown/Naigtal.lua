@@ -84,7 +84,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							coord = { 48.1, 81.1, NAIGTAL },
 						}),
 						q(97256, {	-- Knocking Off the Top (Heroic!)
-							sourceQuest = 96052,	-- Through the Mana Rift
+							sourceQuests = {
+								96052,	-- Through the Mana Rift (Naigtal)
+								96051,	-- Through the Cold Rift (Val)
+							},
+							sqreq = 1,	-- either one is enough
 							qgs = {
 								264879,	-- Decimus
 								265303,	-- Decimus
