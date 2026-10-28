@@ -69,7 +69,64 @@
 ---@alias ATTTimelineEvent string Patch change string using created, added, removed, or deleted plus a patch version.
 ---@alias ATTPatchVersion string Patch version string, such as `5.0.4`.
 ---@alias ATTLuaExpression string Lua source expression embedded in generated output.
----@alias ATTSymCommand table Symbolic command table beginning with a command name and optional arguments.
+--- Value matched or assigned to a symbolic field; its type depends on the field.
+---@alias ATTSymFieldValue any
+--- Symbolic subroutines currently registered by ATT.
+---@alias ATTSymSubroutineName
+---| "pvp_gear_base" # Selects a PvP season header and optional set header; accepts an ignored legacy tier.
+---| "pvp_gear_faction_base" # Selects PvP season, faction, and set headers; accepts an ignored legacy tier.
+---| "pvp_set_ensemble" # Extracts PvP set appearances by season, set, and class; accepts an ignored legacy tier.
+---| "pvp_set_faction_ensemble" # Extracts PvP set appearances by season, faction, set, and class; accepts an ignored legacy tier.
+---| "pvp_weapons_ensemble" # Extracts PvP weapons by season and set; accepts an ignored legacy tier.
+---| "pvp_weapons_faction_ensemble" # Extracts PvP weapons by season, faction, and set; accepts an ignored legacy tier.
+---| "common_recipes_vendor" # Selects a vendor by NPC ID and excludes vendor-specific recipes.
+---| "common_vendor" # Selects a vendor by NPC ID and returns its children.
+---| "tw_instance" # Selects a Timewalking instance by ID and adds the Infinite Timereaver common drop.
+---| "instance_tier" # Selects instance tier items by instance ID and optional difficulty and class IDs.
+---| "legion_relinquished_base" # Collects the base set of Legion relinquished item candidates.
+---| "legion_relinquished" # Filters Legion relinquished candidates by an inventory-type list and optional filter IDs.
+---| "legion_relinquished_relic" # Filters Legion relinquished candidates by optional relic types.
+---| "korthian_armaments" # Selects Korthian armaments for an inventory type.
+---| "common_wod_dungeon_drop" # Selects common Warlords dungeon drops for a difficulty and header ID.
+---| "common_wod_dungeon_drop_tw" # Selects Timewalking Warlords dungeon drops for a difficulty and header ID.
+---| "bfa_azerite_armor_chest_dungeons" # Selects Azerite armor from dungeon rewards.
+---| "bfa_azerite_armor_chest_warfront" # Selects Azerite armor from Warfront rewards.
+---| "bfa_azerite_armor_chest_zonedrops" # Selects Azerite armor from world-quest rewards.
+---| "bfa_azerite_armor_chest" # Selects Azerite armor sources according to the owner modifier ID.
+---| "common_island_expedition_salvage" # Selects common island expedition salvage using filter IDs.
+---| "catalyst_select_proper_tier_item" # Selects a catalyst tier item using catalyst, track, class, slot, and base item.
+--- A recognized symbolic command and its known leading arguments.
+--- Some commands accept additional arguments after the documented prefix.
+---@alias ATTSymCommand
+---| { [1]: "select", [2]: string, [3]?: number } # Selects a field and zero or more numeric IDs.
+---| { [1]: "selectparent", [2]?: integer } # Selects an ancestor; the default level is one.
+---| { [1]: "fill" } # Adds content from matching source objects.
+---| { [1]: "finalize" } # Moves current results into the finalized set.
+---| { [1]: "merge" } # Merges finalized results back into the current set.
+---| { [1]: "pop" } # Expands the current results to their children.
+---| { [1]: "myModID" } # Applies the owner modifier ID to finalized items.
+---| { [1]: "usemyModID" } # Uses the owner modifier ID as the offset for subsequent selection.
+---| { [1]: "whereMyModID" } # Filters by the owner modifier ID when one is set.
+---| { [1]: "push", [2]: string, [3]: ATTSymFieldValue } # Wraps results in an object with the specified field and value.
+---| { [1]: "where", [2]: string, [3]: ATTSymFieldValue } # Keeps results whose truthy field equals the supplied value.
+---| { [1]: "whereany", [2]: string, [3]: ATTSymFieldValue } # Keeps results whose truthy field matches any supplied value.
+---| { [1]: "not", [2]: string, [3]: ATTSymFieldValue } # Excludes results whose truthy field matches a supplied value.
+---| { [1]: "contains", [2]: string, [3]: ATTSymFieldValue } # Keeps results whose field contains a supplied value.
+---| { [1]: "exclude", [2]: string, [3]: number } # Excludes results matching supplied numeric IDs.
+---| { [1]: "extract", [2]: string } # Extracts nested results containing the named field.
+---| { [1]: "is", [2]: string } # Keeps results with a truthy named field.
+---| { [1]: "isnt", [2]: string } # Keeps results without a truthy named field.
+---| { [1]: "find", [2]: string, [3]: ATTSymFieldValue } # Finds nested results matching a field value.
+---| { [1]: "index", [2]: integer } # Selects the indexed child from each current result group.
+---| { [1]: "invtype", [2]: string } # Filters by one or more inventory types.
+---| { [1]: "meta_achievement", [2]: AchievementID } # Selects and merges achievements, then prunes their groups.
+---| { [1]: "partial_achievement", [2]: AchievementID } # Resolves partial criteria for an achievement.
+---| { [1]: "prune", [2]?: string } # Prunes named fields from finalized results; defaults to groups.
+---| { [1]: "modID", [2]: ModID } # Assigns a modifier ID to resolved items.
+---| { [1]: "usemodID", [2]: ModID } # Uses a modifier ID for subsequent selection.
+---| { [1]: "groupfill", [2]?: boolean } # Fills cloned current results when true, or finalized results otherwise.
+---| { [1]: "relictype", [2]: string } # Filters by one or more relic types.
+---| { [1]: "sub", [2]: ATTSymSubroutineName } # Runs a named symbolic subroutine with its arguments.
 ---@alias ATTSym ATTSymCommand[] Ordered symbolic commands used to resolve referenced objects.
 --- Tagged item, NPC, object, or spell provider reference.
 ---@alias ATTProvider
