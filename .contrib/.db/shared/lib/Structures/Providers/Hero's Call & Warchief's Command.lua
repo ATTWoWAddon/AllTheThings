@@ -1,5 +1,9 @@
 -- #if BEFORE 4.0.1
 if true then
+--- Adds the Cataclysm timeline to a quest when absent.
+---@generic T: ATTObject
+---@param t T # Quest object to update.
+---@return T # The same quest object.
 local helper = function(t)
 	if not t.timeline then t.timeline = { ADDED_4_0_1 }; end
 	return t;
@@ -16,6 +20,16 @@ else
 -- The helper function will link the respective providers to the quests in their respective zones.
 -- I don't want a root header for this, instead, use the objectID to look it up.
 ----------------------------------------------------------------------------------------------
+--- Board aggregation expects a coordinate tuple when a single coordinate is present.
+---@class ATTWarBoardObject: ATTObject
+---@field coord? Coord # Single coordinate tuple accepted by board aggregation.
+---@field coords? Coord[] # Coordinate tuples accepted by board aggregation.
+
+--- Adds board providers to a quest according to its maps.
+---@generic T: ATTWarBoardObject
+---@param boards table<UiMapID, ATTWarBoardObject> # Board provider data indexed by map ID.
+---@param t T Quest object with a questID.
+---@return T # The same quest object after provider aggregation.
 local helper = function(boards, t)	-- Assigns board provider data based on the maps assigned to the object.
 	-- #if BEFORE 4.0.1
 	-- Pre-Cata, ignore all war board information.
@@ -439,6 +453,10 @@ local HEROS_CALL_BOARDS = {
 	}),
 	-- #endif
 };
+--- Adds Hero's Call board providers for the quest maps.
+---@generic T: ATTWarBoardObject
+---@param t T Quest object with a questID.
+---@return T # The same quest object after provider aggregation.
 heroscall = function(t)	-- Assigns Hero's Call Board provider data based on the maps assigned to the object.
 	return helper(HEROS_CALL_BOARDS, t);
 end
@@ -619,6 +637,10 @@ local WARCHIEFS_COMMAND_BOARDS = {
 	}),
 	-- #endif
 };
+--- Adds Warchief's Command board providers for the quest maps.
+---@generic T: ATTWarBoardObject
+---@param t T Quest object with a questID.
+---@return T # The same quest object after provider aggregation.
 warchiefscommand = function(t)	-- Assigns Warchief's Command Board provider data based on the maps assigned to the object.
 	return helper(WARCHIEFS_COMMAND_BOARDS, t);
 end
