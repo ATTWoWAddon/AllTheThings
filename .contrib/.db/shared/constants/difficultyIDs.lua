@@ -39,6 +39,10 @@ DIFFICULTY = {
 
 -- Helper Functions
 local multiDifficulties,uniqueDifficultyID = {}, 100;
+--- Returns a unique ID and the corresponding list, caching lists by identity.
+---@param ids DifficultyID|DifficultyID[] # Single difficulty ID or list to register by table identity.
+---@return DifficultyID difficultyID # Existing or newly assigned difficulty ID.
+---@return DifficultyID[]|nil difficulties Original list for array input, or the cached list for an ID.
 function GetOrCreateMultiDifficulty(ids)
 	if type(ids) == "table" then
 		-- Returns a unique DifficultyID and the original ids table as the second argument.
