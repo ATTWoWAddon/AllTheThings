@@ -28,6 +28,7 @@
 		"duplicate-index",
 		"undefined-global"
 	],
+	"hover.expandAlias": false,
 	"diagnostics.globals": [],
 	"diagnostics.enable": false,
 	"diagnostics.ignoredFiles": "Disable",
