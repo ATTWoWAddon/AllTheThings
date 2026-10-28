@@ -1858,25 +1858,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
-					sourceQuest = 10991,	-- The Falcon's Essence
-					qg = 22924,	-- Arthorn Windsong
-					coord = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					timeline = { REMOVED_4_0_1 },
-					maps = { TEROKKAR_FOREST },
-					cost = {
-						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
-						{ "i", 32356, 1 },	-- Essence of the Hawk
-					},
-					classes = { DRUID },
-					lvl = 70,
-					groups = {
-						objective(1, {	-- 0/12 Bladewing Bloodletter slain
-							provider = { "n", 21033 },	-- Bladewing Bloodletter
-						}),
-						i(32481),	-- Charm of Swift Flight
-					},
-				})),
 				q(10912, {	-- The Hound-Master
 					description = "Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",
 					sourceQuest = 10911,	-- Fire At Will!

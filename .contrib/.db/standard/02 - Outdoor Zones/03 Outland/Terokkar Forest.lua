@@ -1210,7 +1210,29 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				q(10896, {	-- The Infested Protectors	-- aa
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
+					sourceQuest = 10991,	-- The Falcon's Essence
+					qg = 23338,	-- Arthorn's Sparrowhawk
+					qis = {
+						32657,	-- Arthorn's Sparrowhawk Whistle (PQI!)
+						32356,	-- Essence of the Hawk
+					},
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
+					maps = { AUCHINDOUN_SETHEKK_HALLS },
+					classes = { DRUID },
+					lvl = 70,
+					groups = {
+						objective(1, {	-- 0/1 Essence of the Hawk
+							providers = {
+								{ "i", 32356 },	-- Essence of the Hawk
+								{ "o", 185551 },	-- Shrine of the Hawk
+							},
+							cr = 22992,	-- Guardian of the Hawk
+						}),
+						i(32481),	-- Charm of Swift Flight
+					},
+				})),
+				q(10896, {	-- The Infested Protectors
 					qg = 22420,	-- Lakotae
 					coord = { 37.9, 51.7, TEROKKAR_FOREST },
 					groups = {

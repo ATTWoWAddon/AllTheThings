@@ -33134,11 +33134,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Shrine of the Hawk",
 			es = "Santuario del halcón",
+			mx = "Santuario del halcón",
 			de = "Schrein des Habichts",
 			fr = "Sanctuaire du Faucon",
 			it = "Santuario del Falco",
 			pt = "Altar do Gavião",
 			ru = "Святилище Ястреба",
+			ko = "참매 제단",
 		},
 	},
 	[185553] = {
