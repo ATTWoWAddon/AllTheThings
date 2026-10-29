@@ -9,6 +9,7 @@
     <TargetFramework>net48</TargetFramework>
     <Prefer32Bit>true</Prefer32Bit>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateSupportedRuntime>false</GenerateSupportedRuntime>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
     <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>

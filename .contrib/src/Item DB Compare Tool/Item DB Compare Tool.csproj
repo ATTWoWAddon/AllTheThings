@@ -8,6 +8,7 @@
     <AssemblyName>Item DB Compare Tool</AssemblyName>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateSupportedRuntime>false</GenerateSupportedRuntime>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
     <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
