@@ -161,7 +161,7 @@ instanceroot(230, {	-- Dire Maul
 				repeatable = true,
 				lvl = 56,
 			}),
-			q(27118, {	-- A Broken Trap
+			q(27118, {	-- A Broken Trap (TODO: verify quest name)
 				description = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 				provider = { "o", 179485 },	-- Broken Trap
 				maps = GORDOK_COMMONS_MAPS,

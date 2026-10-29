@@ -1614,7 +1614,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(98294, {	-- Forced Disarmament? (Triggered shortly after I picked up the Dragonmaw Armaments)
+	q(98294, {	-- Forced Disarmament? (Triggered shortly after I picked up the Dragonmaw Armaments) (TODO: verify quest name)
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
 });

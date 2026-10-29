@@ -799,7 +799,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 				},
 			}),
-			q(9439, {	-- Unclaimed Baggage
+			q(9439, {	-- Unclaimed Baggage (TODO: verify quest name)
 				qg = 17097,	-- Advisor Sarophas
 				coord = { 5.8, 48.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
