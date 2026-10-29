@@ -158,7 +158,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					i(23323),	-- Crown of the Fire Festival
 				},
 			}),
-			q(9389, {	-- Flickering Flames in Eastern Kingdoms
+			q(9389, {	-- Flickering Flames in the Eastern Kingdoms
 				icon = 134467,
 				qgs = {
 					FESTIVAL_LOREMASTER_ID,

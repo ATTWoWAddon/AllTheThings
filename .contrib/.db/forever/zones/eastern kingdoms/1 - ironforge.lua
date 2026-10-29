@@ -143,10 +143,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(4535),	-- Ironforge Memorial Ring
 				},
 			}),
-			q(5641, {	-- A Lack of Fear
+			q(5641, {	-- Chastise
 				altQuests = {
-					5647,	-- A Lack of Fear [Darnassus]
-					5645,	-- A Lack of Fear [Stormwind City]
+					5647,	-- Chastise [Darnassus]
+					5645,	-- Chastise [Stormwind City]
 				},
 				qg = 11406,	-- High Priest Rohan <Priest Trainer>
 				coord = { 25.0, 8.2, MAP.IRONFORGE },
@@ -495,7 +495,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			q(95041, {	-- Data Hoaders
+			q(95041, {	-- Data Hoarders
 				qg = 11028,	-- Jemma Quikswitch
 				coord = { 67.7, 44.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
@@ -783,7 +783,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(5633, {	-- Returning Home [Ironforge]
 				altQuests = {
-					5627,	-- Returning Home [Darnassus]
+					5627,	-- Stars of Elune [Darnassus]
 					5628,	-- Returning Home [Elwynn Forest]
 					5629,	-- Returning Home [Teldrassil]
 					5630,	-- Returning Home [Dun Morogh]
@@ -891,7 +891,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(2997, {	-- The Tome of Divinity [Dun Morogh]
+			q(2997, {	-- Tome of Divinity [Dun Morogh]
 				qg = 1232,	-- Azar Stronghammer <Paladin Trainer>
 				coord = { 47.6, 52.0, MAP.DUN_MOROGH },
 				races = { DWARF },
@@ -899,7 +899,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				isBreadcrumb = true,
 				lvl = 12,
 			}),
-			q(2999, {	-- The Tome of Divinity [Ironforge]
+			q(2999, {	-- Tome of Divinity [Ironforge]
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 				coord = { 23.4, 6.2, MAP.IRONFORGE },
 				races = { DWARF },
@@ -907,7 +907,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				isBreadcrumb = true,
 				lvl = 12,
 			}),
-			q(3000, {	-- The Tome of Divinity [Stormwind City]
+			q(3000, {	-- Tome of Divinity [Stormwind City]
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				races = { DWARF },
@@ -917,9 +917,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(1645, {	-- The Tome of Divinity (1a/8)
 				sourceQuests = {
-					2997,	-- The Tome of Divinity [Dun Morogh]
-					2999,	-- The Tome of Divinity [Ironforge]
-					3000,	-- The Tome of Divinity [Stormwind City]
+					2997,	-- Tome of Divinity [Dun Morogh]
+					2999,	-- Tome of Divinity [Ironforge]
+					3000,	-- Tome of Divinity [Stormwind City]
 				},
 				altQuests = { 1646 },	-- The Tome of Divinity (2/8)
 				qg = 6179,	-- Tiza Battleforge
