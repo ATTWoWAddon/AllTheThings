@@ -208,9 +208,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(90, {	-- Seasoned Wolf Kabobs
 				qg = 272,	-- Chef Grual
 				coord = { 73.8, 43.5, MAP.DUSKWOOD },
-				cost = {
-					{ "i", 1015, 10 },	-- Lean Wolf Flank
-				},
+				cost = { { "i", 1015, 10 } },	-- Lean Wolf Flank
 				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {

@@ -202,9 +202,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Doomrigger's Clasp
-						providers = {
-							{ "i",  12352 },	-- Doomrigger's Clasp
-						},
+						providers = { { "i", 12352 } },	-- Doomrigger's Clasp
 					}),
 					o(175382, {	-- Doomrigger's Coffer
 						description = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
@@ -579,9 +577,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Darkstone Tablet
-						providers = {
-							{ "i",  12358 },	-- Darkstone Tablet
-						},
+						providers = { { "i", 12358 } },	-- Darkstone Tablet
 					}),
 					i(15860),	-- Blinkstrike Armguards
 					i(15861),	-- Swiftfoot Treads
