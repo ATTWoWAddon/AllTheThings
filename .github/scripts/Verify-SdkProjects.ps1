@@ -45,6 +45,21 @@ foreach ($tree in $baseline, $root) {
         if ($ref.Count -ne 1 -or $ref[0].Version -ne $packages[$name]) { throw "Unexpected $name package in $tree" }
     }
 }
+# Check that each existing solution configuration can still be selected.
+$solutions = @(
+    @{ Name='Parser'; Path='.contrib/src/Parser/Parser.sln'; Platform='x64'; Configs=@('Debug','Release') },
+    @{ Name='Harvesters'; Path='.contrib/src/Blizzard API Harvester/Blizzard API Harvester.sln'; Platform='Any CPU'; Configs=@('Debug','Release','Test') }
+)
+foreach ($side in 'baseline','candidate') {
+    $tree = if ($side -eq 'baseline') { $baseline } else { $root }
+    foreach ($solution in $solutions) {
+        foreach ($config in $solution.Configs) {
+            $log = Join-Path $evidence "$side-$($solution.Name)-$config.solution.log"
+            & msbuild (Join-Path $tree $solution.Path) -nologo '-t:ValidateSolutionConfiguration' "-p:Configuration=$config" "-p:Platform=$($solution.Platform)" *> $log
+            if ($LASTEXITCODE -ne 0) { Get-Content $log | Write-Host; throw "$side $($solution.Name) $config solution configuration failed" }
+        }
+    }
+}
 $parserPath = Join-Path $root '.contrib/src/Parser/Parser.csproj'
 $defaultParser = & msbuild $parserPath -nologo '-getProperty:Platform,OutputType' '-p:Configuration=Release'
 if ($LASTEXITCODE -ne 0) { throw 'Parser default property evaluation failed' }
@@ -69,6 +84,12 @@ foreach ($project in $projects) {
             $evaluation = & msbuild $path -nologo "-getProperty:$propertyNames" "-p:Configuration=$config" "-p:Platform=$($project.Platform)"
             if ($LASTEXITCODE -ne 0) { throw "$side $($project.Name) $config property evaluation failed" }
             [IO.File]::WriteAllText((Join-Path $evidence "$side-$($project.Name)-$config.properties.json"), ($evaluation -join "`n"), [Text.UTF8Encoding]::new($false))
+            $itemEvaluation = & msbuild $path -nologo '-getItem:Compile' "-p:Configuration=$config" "-p:Platform=$($project.Platform)"
+            if ($LASTEXITCODE -ne 0) { throw "$side $($project.Name) $config compile item evaluation failed" }
+            $items = ($itemEvaluation -join "`n" | ConvertFrom-Json).Items.Compile
+            $projectDir = Split-Path -Parent $path
+            $compileFiles = @($items | ForEach-Object { [IO.Path]::GetRelativePath($projectDir, $_.FullPath).Replace('\', '/') })
+            [IO.File]::WriteAllLines((Join-Path $evidence "$side-$($project.Name)-$config.compile.txt"), [string[]]$compileFiles, [Text.UTF8Encoding]::new($false))
             $exe = Join-Path $output $project.Exe
             if (-not (Test-Path -LiteralPath $exe -PathType Leaf)) { throw "Missing executable: $exe" }
             & (Join-Path $root '.github/scripts/Get-SdkBinaryMetadata.ps1') -Path $exe -Output (Join-Path $evidence "$side-$($project.Name)-$config.metadata.json")
@@ -80,9 +101,20 @@ foreach ($project in $projects) {
         [IO.File]::WriteAllLines((Join-Path $evidence "baseline-$($project.Name)-$config.files.sha256"), $a)
         [IO.File]::WriteAllLines((Join-Path $evidence "candidate-$($project.Name)-$config.files.sha256"), $b)
         Check-Same $a $b "$($project.Name) $config runtime closure differs"
+        $baselineCompile = @(Get-Content -LiteralPath (Join-Path $evidence "baseline-$($project.Name)-$config.compile.txt"))
+        $candidateCompile = @(Get-Content -LiteralPath (Join-Path $evidence "candidate-$($project.Name)-$config.compile.txt"))
+        if ($baselineCompile.Count -eq 0 -or $baselineCompile.Count -ne $candidateCompile.Count) { throw "$($project.Name) $config compile item count differs" }
+        for ($i = 0; $i -lt $baselineCompile.Count; $i++) {
+            if ($baselineCompile[$i] -cne $candidateCompile[$i]) { throw "$($project.Name) $config compile item order differs at index $i" }
+        }
         $leftProps = (Get-Content -Raw (Join-Path $evidence "baseline-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
         $rightProps = (Get-Content -Raw (Join-Path $evidence "candidate-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
         foreach ($key in 'OutputType','Platform','PlatformTarget','Prefer32Bit','DefineConstants','LangVersion','DebugType','OutputPath','TargetFrameworkVersion') {
+            # x64 ignores Prefer32Bit; the PE machine and flags are checked below.
+            if ($key -eq 'Prefer32Bit' -and $project.Name -eq 'Parser') {
+                Write-Host "Parser $config Prefer32Bit baseline=$($leftProps.$key) candidate=$($rightProps.$key)"
+                continue
+            }
             if ($leftProps.$key -ne $rightProps.$key) { throw "$($project.Name) $config property $key differs: $($leftProps.$key) vs $($rightProps.$key)" }
         }
         foreach ($key in 'Optimize','Deterministic') {
@@ -104,7 +136,7 @@ foreach ($project in $projects) {
         $leftContract = $left.contract | ConvertTo-Json -Depth 30 -Compress
         $rightContract = $right.contract | ConvertTo-Json -Depth 30 -Compress
         $sameContract = $leftContract -ceq $rightContract
-        $result.comparisons += @{ project=$project.Name; configuration=$config; baselineSha256=$left.sha256; candidateSha256=$right.sha256; rawHashEqual=($left.sha256 -eq $right.sha256); contractEqual=$sameContract }
+        $result.comparisons += @{ project=$project.Name; configuration=$config; baselineSha256=$left.sha256; candidateSha256=$right.sha256; rawHashEqual=($left.sha256 -eq $right.sha256); contractEqual=$sameContract; baselinePrefer32Bit=$leftProps.Prefer32Bit; candidatePrefer32Bit=$rightProps.Prefer32Bit }
         if (-not $sameContract) { throw "$($project.Name) $config PE contract or raw method IL differs; inspect metadata reports" }
     }
 }
