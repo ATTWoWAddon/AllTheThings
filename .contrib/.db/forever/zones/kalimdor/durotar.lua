@@ -1731,12 +1731,12 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				end]],
 				races = HORDE_ONLY,
 				groups = {
-					i(8588),	-- Emerald Raptor (MOUNT!)
+					i(8588),	-- Whistle of the Emerald Raptor (MOUNT!)
 					i(18788),	-- Swift Blue Raptor (MOUNT!)
 					i(18789),	-- Swift Olive Raptor (MOUNT!)
 					i(18790),	-- Swift Orange Raptor (MOUNT!)
-					i(8591),	-- Turquoise Raptor (MOUNT!)
-					i(8592),	-- Violet Raptor (MOUNT!)
+					i(8591),	-- Whistle of the Turquoise Raptor (MOUNT!)
+					i(8592),	-- Whistle of the Violet Raptor (MOUNT!)
 				},
 			}),
 		}),

@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						cr = 5682,	-- Dalin Forgewright
 					}),
 					objective(2, {	-- 0/1 Comar's Heart
-						provider = { "i", 6313 },	-- Comar's Heart
+						provider = { "i", 6313 },	-- Corma's Heart
 						coord = { 50.6, 12.6, MAP.WETLANDS },
 						cr = 5683,	-- Comar Villard
 					}),

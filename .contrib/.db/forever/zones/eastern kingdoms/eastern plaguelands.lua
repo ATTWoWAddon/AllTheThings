@@ -540,7 +540,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			q(5509, {	-- Invader's Scourgestones
 				qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
-				cost = { { "i", 12841, 10 } },	-- Invader's Scourgestones
+				cost = { { "i", 12841, 10 } },	-- Invader's Scourgestone
 				repeatable = true,
 				lvl = 50,
 				groups = {

@@ -1471,7 +1471,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			i(5773, {	-- Pattern: Robes of Arcana (RECIPE!)
 				cr = 910,	-- Defias Enchanter
 			}),
-			i(6211, {	-- Recipe: Elixir of Ogre Strength (RECIPE!)
+			i(6211, {	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 				crs = {
 					1251,	-- Splinter Fist Firemonger
 					891,	-- Splinter Fist Fire Weaver

@@ -154,7 +154,7 @@ instanceroot(229, {	-- Blackrock Spire
 				cost = {
 					{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 					{ "i", 12735, 5 },	-- Frayed Abomination Stitching
-					{ "i", 12363, 8 },	-- Arcanite Crystal
+					{ "i", 12363, 8 },	-- Arcane Crystal
 					{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
 					{ "g", 500000 },	-- 50 Gold
 				},
@@ -626,7 +626,7 @@ instanceroot(229, {	-- Blackrock Spire
 						provider = { "i", 12806 },	-- Unforged Rune Covered Breastplate
 					}),
 					i(12696),	-- Plans: Demon Forged Breastplate (RECIPE!)
-					i(9224),	-- Potion of Demonslaying
+					i(9224),	-- Potion of Demon Slaying
 					i(12849),	-- Demon Kissed Sack
 				},
 			}),

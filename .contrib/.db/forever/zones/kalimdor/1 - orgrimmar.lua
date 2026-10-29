@@ -1100,8 +1100,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 40.8, 49.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(3024),	-- Bkp 2700 Enforcer
-					i(3025),	-- Bkp 42 Ultra
+					i(3024),	-- BKP 2700 "Enforcer"
+					i(3025),	-- BKP 42 "Ultra"
 					i(3027),	-- Heavy Recurve Bow
 					i(2511),	-- Hunter's Boomstick
 					i(3023),	-- Large Bore Blunderbuss
@@ -1862,12 +1862,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 76.0, 37.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(15905),	-- Brass Knuckles
+					i(15905),	-- Right-Handed Brass Knuckles
 					i(2520),	-- Broadsword
 					i(1198),	-- Claymore
 					i(851),	-- Cutlass
 					i(922),	-- Dacian Falx
-					i(15904),	-- Deadly Fist Blades
+					i(15904),	-- Right-Handed Blades
 					i(2024),	-- Espadon
 					i(2528),	-- Falchion
 					i(2207),	-- Jambiya
@@ -1877,10 +1877,10 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(15907),	-- Left-Handed Claw
 					i(923),	-- Longsword
 					i(2526),	-- Main Gauche
-					i(2208),	-- Poniad
+					i(2208),	-- Poniard
 					i(2534),	-- Rondel
 					i(2027),	-- Scimitar
-					i(15903),	-- Slicing Claw
+					i(15903),	-- Right-Handed Claw
 				},
 			}),
 			n(3413, {	-- Sovik <Engineering Supplies>
@@ -1928,7 +1928,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(2145),	-- Cuirboulli Gloves
 					i(2146),	-- Cuirboulli Pants
 					i(2141),	-- Cuirboulli Vest
-					i(2613),	-- Double Stitched Robes
+					i(2613),	-- Double-Stitched Robes
 					i(2435),	-- Embroidered Armor
 					i(3587),	-- Embroidered Belt
 					i(2438),	-- Embroidered Boots
@@ -1953,7 +1953,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(2475),	-- Reinforced Leather Gloves
 					i(2472),	-- Reinforced Leather Pants
 					i(2470),	-- Reinforced Leather Vest
-					i(2614),	-- Robe Of Apprenticeship
+					i(2614),	-- Robe of Apprenticeship
 					i(3593),	-- Russet Belt
 					i(2432),	-- Russet Boots
 					i(3594),	-- Russet Bracers
@@ -2032,7 +2032,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(1197),	-- Giant Mace
 					i(2134),	-- Hand Axe
 					i(2488),	-- Gladius
-					i(853),	-- Hatched
+					i(853),	-- Hatchet
 					i(2491),	-- Large Axe
 					i(2480),	-- Large Club
 					i(852),	-- Mace

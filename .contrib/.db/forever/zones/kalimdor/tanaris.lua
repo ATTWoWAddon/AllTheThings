@@ -143,7 +143,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				cost = {
 					{ "i", 7931, 2 },	-- Mithril Coif
-					{ "i", 7928, 1 },	-- Ornate Mithril Shoulder
+					{ "i", 7928, 1 },	-- Ornate Mithril Shoulders
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -376,7 +376,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				learnedAt = 265,
 				lvl = 50,
 				groups = {
-					i(12690),	-- Plans: Imperial Plate Bracer (RECIPE!)
+					i(12690),	-- Plans: Imperial Plate Bracers (RECIPE!)
 				},
 			}),
 			q(7656, {	-- Imperial Plate Chest
@@ -802,7 +802,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Nixx's Pledge of Secrecy
-						provider = { "i", 11270 },	-- Nixx's Pledge of Secrecy
+						provider = { "i", 11270 },	-- Nixx's Signed Pledge
 						cost = { { "i", 10792, 1 } },	-- Nixx's Pledge of Secrecy
 					}),
 				},

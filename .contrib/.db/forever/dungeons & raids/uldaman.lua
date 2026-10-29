@@ -533,8 +533,8 @@ instanceroot(239, {	-- Uldaman
 			creatureID = 4854,
 			groups = {
 				i(7670),	-- Shattered Necklace Sapphire
-				i(9416),	-- Grimlock's Charge
-				i(9415),	-- Grimlock's Tribal Vestments
+				i(9416),	-- Grimlok's Charge
+				i(9415),	-- Grimlok's Tribal Vestments
 				i(9414),	-- Oilskin Leggings
 			},
 		}),

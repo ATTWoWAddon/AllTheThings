@@ -621,7 +621,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 				repeatable = true,
 				lvl = 57,
 			}),
@@ -1029,7 +1029,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8318, {	-- Secret Communication
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, MAP.SILITHUS },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 				lvl = 57,
 			}),
 			q(8280, {	-- Securing the Supply Lines

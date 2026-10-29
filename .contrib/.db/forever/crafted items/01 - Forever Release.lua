@@ -65,8 +65,8 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250936),	-- Superior Spellblasting Potion
 			i(250942),	-- Superior Frenzy Potion
 			i(246948),	-- Distilled Firewater
-			i(250955),	-- Potion of Beast Culling
-			i(250954),	-- Potion of Elemental Siphoning
+			i(250955),	-- Potion of Beast Slaying
+			i(250954),	-- Potion of Elemental Purging
 		}),
 		filter(MISC, {
 			i(279990),	-- Alchemy Laboratory
@@ -74,7 +74,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(279956),	-- Mana Well
 		}),
 		filter(REAGENTS, {
-			i(249409),	-- Cerulean Dyel
+			i(249409),	-- Cerulean Dye
 			i(251290),	-- Legionite Bar
 			i(249430),	-- Magenta Dye
 			i(249410),	-- Sulfuric Acid
@@ -355,7 +355,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(249398),	-- Polished Driftwood Icon
 			i(249441),	-- Talons of Wrath
 			i(249397),	-- Tenets of the Silver Hand
-			i(249443),	-- Totem of Ancestral Protectio
+			i(249443),	-- Totem of Ancestral Protection
 			i(228176),	-- Totem of Thunder
 			-- Unknown
 			i(279250),	-- Idol of Swiftness
@@ -423,7 +423,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(274048),	-- 9-60 Battery Pack
 			i(279989),	-- Anarchist's Workbench
 			i(260807),	-- Compact Critter Carrier
-			i(260823),	-- Dimensional Transporter - Mt.
+			i(260823),	-- Dimensional Transporter - Mt. Hyjal
 			i(260811),	-- Gnomish Army Knife
 			i(269902),	-- Hoof-Shaped Foot Pedal
 			i(260812),	-- Loot-A-Rang
@@ -642,7 +642,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252472),	-- Mender's Leather Boots
 				i(252543),	-- Mender's Leather Bracers
 				i(252530),	-- Mender's Leather Gloves
-				i(252538),	-- Mender's Leather Shoulder
+				i(252538),	-- Mender's Leather Shoulders
 				i(252477),	-- Mender's Leather Waistguard
 				i(252427),	-- Moonglow Boots
 				i(252426),	-- Murloc Scale Shoes
@@ -650,7 +650,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252468),	-- Prowler's Leather Boots
 				i(252539),	-- Prowler's Leather Bracers
 				i(252524),	-- Prowler's Leather Gloves
-				i(252534),	-- Prowler's Leather Shoulder
+				i(252534),	-- Prowler's Leather Shoulders
 				i(252473),	-- Prowler's Leather Waistguard
 				i(252461),	-- Skirmisher's Leather Belt
 				i(252528),	-- Skirmisher's Leather Gloves
@@ -664,7 +664,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252471),	-- Skycaller's Leather Boots
 				i(252542),	-- Skycaller's Leather Bracers
 				i(252529),	-- Skycaller's Leather Gloves
-				i(252537),	-- Skycaller's Leather Shoulder
+				i(252537),	-- Skycaller's Leather Shoulders
 				i(252476),	-- Skycaller's Leather Waistguard
 				i(252521),	-- Stalker's Leather Belt
 				i(252526),	-- Stalker's Leather Gloves
@@ -697,7 +697,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252470),	-- Warden's Leather Boots
 				i(252541),	-- Warden's Leather Bracers
 				i(252527),	-- Warden's Leather Gloves
-				i(252536),	-- Warden's Leather Shoulder
+				i(252536),	-- Warden's Leather Shoulders
 				i(252475),	-- Warden's Leather Waistguard
 				i(252493),	-- Wisdom's Leather Armor
 				i(252433),	-- Wisdom's Leather Belt
@@ -718,7 +718,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252482),	-- Blue Suede Hat
 				i(252478),	-- Blue Suede Pants
 				i(252467),	-- Blue Suede Shoes
-				i(252554),	-- Blue Suede Shoulder
+				i(252554),	-- Blue Suede Shoulders
 				i(252494),	-- Brawler's Leather Gloves
 				i(252483),	-- Dawn Armor
 				i(252496),	-- Defender's Leather Gloves
@@ -753,26 +753,26 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252549),	-- Warden's Leather Gauntlets
 				i(252466),	-- Warden's Leather Shoes
 				i(252479),	-- Wicked Leather Boots
-				i(252556),	-- Wicked Leather Shoulder
+				i(252556),	-- Wicked Leather Shoulders
 				i(252499),	-- Wisdom's Leather Gloves
 			}),
 			filter(MAIL, {
 				i(252591),	-- Mender's Mail Belt
 				i(252573),	-- Mender's Mail Bracers
 				i(252579),	-- Mender's Mail Sabatons
-				i(252569),	-- Mender's Mail Shoulder
+				i(252569),	-- Mender's Mail Shoulders
 				i(252590),	-- Skirmisher's Mail Belt
 				i(252572),	-- Skirmisher's Mail Bracers
 				i(252578),	-- Skirmisher's Mail Sabatons
-				i(252568),	-- Skirmisher's Mail Shoulder
+				i(252568),	-- Skirmisher's Mail Shoulders
 				i(252589),	-- Skycaller's Mail Belt
 				i(252571),	-- Skycaller's Mail Bracers
 				i(252577),	-- Skycaller's Mail Sabatons
-				i(252567),	-- Skycaller's Mail Shoulder
+				i(252567),	-- Skycaller's Mail Shoulders
 				i(252588),	-- Stalker's Mail Belt
 				i(252570),	-- Stalker's Mail Bracers
 				i(252576),	-- Stalker's Mail Sabatons
-				i(252566),	-- Stalker's Mail Shoulder
+				i(252566),	-- Stalker's Mail Shoulders
 				-- Unknown
 				i(252605),	-- Black Dragonscale Helm
 				i(252604),	-- Blue Dragonscale Helm
@@ -785,7 +785,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252596),	-- Charged Scorpid Gauntlets
 				i(252581),	-- Charged Scorpid Helm
 				i(252600),	-- Charged Scorpid Leggings
-				i(252583),	-- Charged Scorpid Shoulder
+				i(252583),	-- Charged Scorpid Shoulders
 				i(252598),	-- Charged Scorpid Vest
 				i(279255),	-- Eternity Pauldrons
 				i(252594),	-- Heavy Scorpid Boots
@@ -809,7 +809,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252597),	-- Supple Scorpid Helm
 				i(252580),	-- Supple Scorpid Leggings
 				i(252601),	-- Supple Scorpid Sabatons
-				i(252592),	-- Supple Scorpid Shoulder
+				i(252592),	-- Supple Scorpid Shoulders
 				i(252599),	-- Supple Scorpid Vest
 				i(279256),	-- Tranquil Wristguards
 			}),

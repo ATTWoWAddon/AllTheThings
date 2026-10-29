@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures, {
 				},
 			}),
 			q(79092, {	-- Archmage Theocritus' Research Journal
-				provider = { "i", 203755 },	-- Archmage Theocritus's Research Journal
+				provider = { "i", 203755 },	-- Archmage Theocritus' Research Journal
 				maps = { ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {

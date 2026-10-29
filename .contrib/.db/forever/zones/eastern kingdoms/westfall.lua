@@ -75,7 +75,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				lvl = 14,
 				groups = {
 					i(2459),	-- Swiftness Potion
-					i(3388),	-- Strong Troll's Blood Potion
+					i(3388),	-- Lesser Troll's Blood Elixir
 				},
 			}),
 			q(6181, {	-- A Swift Message
@@ -95,7 +95,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(136, {	-- Captain Sander's Hidden Treasure (1/4)
-				qs = 1357,	-- Captain Sanders' Treasure Map (QS!)
+				qs = 1357,	-- Captain Sander's Treasure Map (QS!)
 				lvl = 10,
 			}),
 			q(138, {	-- Captain Sander's Hidden Treasure (2/4)
@@ -118,7 +118,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ "o", 34 },	-- Old Jug
 					{ "o", 33 },	-- Locked Chest
 				},
-				qi = 1362,	-- Final Clue to Sanders' Treasure (PQI!)
+				qi = 1362,	-- Final Clue to Sander's Treasure (PQI!)
 				coords = {
 					{ 40.62, 17.01, MAP.WESTFALL },
 					{ 25.97, 16.90, MAP.WESTFALL },
@@ -131,11 +131,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 							i(270001),	-- Rusty Cutlass
 							i(276694),	-- Captain Sander's Lucky Shooter
 							i(270002),	-- Midshipman's Worn Boots
-							i(3343),	-- Captain Sanders' Booty Bag
+							i(3343),	-- Captain Sander's Booty Bag
 						},
 					}),
-					i(3344),	-- Captain Sanders' Sash
-					i(3342),	-- Captain Sanders' Shirt
+					i(3344),	-- Captain Sander's Sash
+					i(3342),	-- Captain Sander's Shirt
 					i(2842),	-- Silver Bar
 				},
 			}),
@@ -156,7 +156,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
-					i(11110, {	-- Westfall Chicken (PET!)
+					i(11110, {	-- Chicken Egg (PET!)
 						description = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
 					}),
 				},
@@ -1006,7 +1006,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				cr = 124,	-- Riverpaw Brute
 			}),
-			i(1357, {	-- Captain Sanders' Treasure Map (QS!)
+			i(1357, {	-- Captain Sander's Treasure Map (QS!)
 				crs = {
 					126,	-- Murloc Coastrunner
 					458,	-- Murloc Hunter

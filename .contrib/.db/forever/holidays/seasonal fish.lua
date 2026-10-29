@@ -70,7 +70,7 @@ root(ROOTS.Holidays, {
 			MAP.STRANGLETHORN_VALE,
 		},
 		groups = {
-			i(13755, {	-- Winter Squid
+			i(13755, {	-- Raw Winter Squid
 				description = "Can be caught in open sea water in Azshara, Tanaris, The Hinterlands, Feralas, and STV from 23nd September to 20th March.",
 			}),
 		},

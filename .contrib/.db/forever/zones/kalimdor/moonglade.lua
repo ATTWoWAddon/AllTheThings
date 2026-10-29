@@ -540,9 +540,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				classes = { DRUID },
 				lvl = 14,
 				groups = {
-					objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
-						provider = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
-						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
+					objective(1, {	-- 0/1 Filled Dreadmist Peak Sampler
+						provider = { "i", 15843 },	-- Filled Dreadmist Peak Sampler
+						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Peak Sampler
 						coord = { 47.0, 18.0, MAP.THE_BARRENS },
 					}),
 				},

@@ -719,7 +719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				coord = { 45.4, 57.0, MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
 				groups = {
-					i(9300, {	-- Recipe: Potion of Demonslaying (RECIPE!)
+					i(9300, {	-- Recipe: Potion of Demon Slaying (RECIPE!)
 						isLimited = true,
 					}),
 				},

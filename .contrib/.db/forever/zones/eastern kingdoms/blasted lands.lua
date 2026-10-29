@@ -395,7 +395,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				coord = { 66.8, 18.6, MAP.BLASTED_LANDS },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(9300, {	-- Recipe: Potion of Demonslaying (RECIPE!)
+					i(9300, {	-- Recipe: Potion of Demon Slaying (RECIPE!)
 						isLimited = true,
 					}),
 				},

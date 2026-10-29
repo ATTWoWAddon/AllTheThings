@@ -486,7 +486,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					qg = 10839,	-- Argent Officer Garush
 					coord = { 83.2, 68.4, MAP.TIRISFAL_GLADES },
 				}),
-				cost = { { "i", 12841, 10 } },	-- Invader's Scourgestones
+				cost = { { "i", 12841, 10 } },	-- Invader's Scourgestone
 				repeatable = true,
 				lvl = 50,
 				groups = {

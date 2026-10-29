@@ -1288,7 +1288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					2266,	-- Hillsbrad Farmer
 				},
 			}),
-			i(6211, {	-- Recipe: Elixir of Ogre Strength (RECIPE!)
+			i(6211, {	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 				cr = 2373,	-- Mudsnout Shaman
 			}),
 			i(249881, {	-- Recipe: Root Tea (RECIPE!)

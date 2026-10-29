@@ -708,7 +708,7 @@ instanceroot(230, {	-- Dire Maul
 		o(179547, {	-- A Dusty Tome
 			maps = ALL_DIREMAUL_MAPS,
 			groups = {
-				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Extreme' Anglin."
 					lore = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
 					description = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
 				}),

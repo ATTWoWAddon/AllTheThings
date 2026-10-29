@@ -588,7 +588,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			},
 			q(5123, {	-- The Final Piece
 				sourceQuest = 5087,	-- Winterfall Runners
-				qi = 12842,	-- Crudely-Written Log
+				qi = 12842,	-- Crudely-written Log
 				coord = { 69.6, 38.2, MAP.WINTERSPRING },
 				cr = 10738,	-- High Chief Winterfall
 				lvl = 52,
