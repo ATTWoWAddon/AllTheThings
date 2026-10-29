@@ -216,38 +216,32 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(QUESTS, {
 			q(82539, {	-- Radiant Echoes
-				maps = { LEGION_DALARAN, 629 },
-				isBreadcrumb = true,
+				maps = { LEGION_DALARAN, AEGWYNNS_GALLERY },
+				isBreadcrumb = true
 			}),
 			q(82540, {	-- Memories of Adventures Past
-				sourceQuests = { 82539 },	-- Radiant Echoes
+				sourceQuest = 82539,	-- Radiant Echoes
 				-- sourceQuests = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
 				provider = { "n", 213627 },	-- Archmage Khadgar
-				coord = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
+				coord = { 42.9, 59.7, AEGWYNNS_GALLERY },	-- Legion Dalaran, Aegwynn's Gallery
 			}),
 			q(82689, {	-- Only Darkness
 				provider = { "n", 224373 },	-- Echo of the Silver Hand
 				coord = { 59.5, 52.0, DRAGONBLIGHT },
 				isDaily = true,
-				groups = {
-					currency(RESIDUAL_MEMORIES),
-				},
+				groups = { currency(RESIDUAL_MEMORIES) },
 			}),
 			q(78938, {	-- Champion of the Waterlords
 				provider = { "n", 214399 },	-- Memory of a Duke
 				coord = { 43.6, 67.3, SEARING_GORGE },
 				isDaily = true,
-				groups = {
-					currency(RESIDUAL_MEMORIES),
-				},
+				groups = { currency(RESIDUAL_MEMORIES) },
 			}),
 			q(82676, {	-- Broken Masquerade
 				provider = { "n", 224367 },	-- Forgotten Hero
 				coord = { 45.5, 57.7, DUSTWALLOW_MARSH },
 				isDaily = true,
-				groups = {
-					currency(RESIDUAL_MEMORIES),
-				},
+				groups = { currency(RESIDUAL_MEMORIES) },
 			}),
 		}),
 		n(SPECIAL, {
@@ -271,255 +265,105 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		}),
 		n(VENDORS, {
 			n(223710, {	-- Rememberance Amuul
-				coord = { 33.3, 84.6, 629 },	-- Legion Dalaran, Aegwynn's Gallery
+				coord = { 33.3, 84.6, AEGWYNNS_GALLERY },	-- Legion Dalaran, Aegwynn's Gallery
 				groups = {
 					filter(MISC, {
-						i(218033, {	-- Defender's Hefty Satchel
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(223647, {	-- Lifeless Stone Ring
-							cost = { { "c", RESIDUAL_MEMORIES, 25 } },
-						}),
-						i(219243, {	-- Recruit's Reagent Bag
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(218033, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Defender's Hefty Satchel
+						i(223647, { cost = { { "c", RESIDUAL_MEMORIES, 25 } } }),	-- Lifeless Stone Ring
+						i(219243, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Recruit's Reagent Bag
 					}),
 					filter(MOUNTS, {
-						i(217985, {	-- Remembered Golden Gryphon [A] (MOUNT!)
-							cost = { { "c", RESIDUAL_MEMORIES, 20000 } },
-							races = ALLIANCE_ONLY,
-						}),
-						i(217987, {	-- Remembered Wind Rider [H] (MOUNT!)
-							cost = { { "c", RESIDUAL_MEMORIES, 20000 } },
-							races = HORDE_ONLY,
-						}),
+						i(217985, { cost = { { "c", RESIDUAL_MEMORIES, 20000 } }, races = ALLIANCE_ONLY }),	-- Remembered Golden Gryphon [A] (MOUNT!)
+						i(217987, { cost = { { "c", RESIDUAL_MEMORIES, 20000 } }, races = HORDE_ONLY }),	-- Remembered Wind Rider [H] (MOUNT!)
 					}),
 					filter(BATTLE_PETS, {
-						i(218245, {	-- Remembered Construct (PET!)
-							cost = { { "c", RESIDUAL_MEMORIES, 10000 } },
-						}),
-						i(218086, {	-- Remembered Riverpaw (PET!)
-							cost = { { "c", RESIDUAL_MEMORIES, 10000 } },
-						}),
-						i(218246, {	-- Remembered Spawn (PET!)
-							cost = { { "c", RESIDUAL_MEMORIES, 10000 } },
-						}),
+						i(218245, { cost = { { "c", RESIDUAL_MEMORIES, 10000 } } }),	-- Remembered Construct (PET!)
+						i(218086, { cost = { { "c", RESIDUAL_MEMORIES, 10000 } } }),	-- Remembered Riverpaw (PET!)
+						i(218246, { cost = { { "c", RESIDUAL_MEMORIES, 10000 } } }),	-- Remembered Spawn (PET!)
 					}),
 					filter(BACK_F, {
-						i(218078, {	-- Dalaran Defender's Cape
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218080, {	-- Dalaran Defender's Cloak
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218081, {	-- Dalaran Defender's Drape
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218079, {	-- Dalaran Defender's Shawl
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(218078, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Cape
+						i(218080, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Cloak
+						i(218081, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Drape
+						i(218079, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Shawl
 					}),
 					filter(CLOTH, {
-						i(218053, {	-- Dalaran Defender's Clasps
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218050, {	-- Dalaran Defender's Coronet
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218052, {	-- Dalaran Defender's Greatbelt
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218051, {	-- Dalaran Defender's Leggings
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218048, {	-- Dalaran Defender's Loafers
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218054, {	-- Dalaran Defender's Mantle
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218049, {	-- Dalaran Defender's Mitts
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218047, {	-- Dalaran Defender's Robes
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
+						i(218053, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Clasps
+						i(218050, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Coronet
+						i(218052, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Greatbelt
+						i(218051, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Leggings
+						i(218048, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Loafers
+						i(218054, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Mantle
+						i(218049, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Mitts
+						i(218047, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Robes
 					}),
 					filter(FINGER_F, {
-						i(223635, {	-- Dalaran Defender's Favor
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(223634, {	-- Ring of Returning Memories
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(223635, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Favor
+						i(223634, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Ring of Returning Memories
 					}),
 					filter(LEATHER, {
-						i(218059, {	-- Dalaran Defender's Buckle
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218056, {	-- Dalaran Defender's Grips
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218057, {	-- Dalaran Defender's Mask
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218058, {	-- Dalaran Defender's Pants
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218062, {	-- Dalaran Defender's Shoulderblades
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218055, {	-- Dalaran Defender's Treads
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218061, {	-- Dalaran Defender's Tunic
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218060, {	-- Dalaran Defender's Wraps
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(218059, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Buckle
+						i(218056, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Grips
+						i(218057, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Mask
+						i(218058, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Pants
+						i(218062, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Shoulderblades
+						i(218055, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Treads
+						i(218061, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Tunic
+						i(218060, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Wraps
 					}),
 					filter(MAIL, {
-						i(218077, {	-- Dalaran Defender's Armguards
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218076, {	-- Dalaran Defender's Cinch
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218070, {	-- Dalaran Defender's Chainmail
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218075, {	-- Dalaran Defender's Epaulets
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218072, {	-- Dalaran Defender's Grips
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218073, {	-- Dalaran Defender's Helmet
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218074, {	-- Dalaran Defender's Legguards
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218071, {	-- Dalaran Defender's Stompers
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
+						i(218077, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Armguards
+						i(218076, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Cinch
+						i(218070, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Chainmail
+						i(218075, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Epaulets
+						i(218072, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Grips
+						i(218073, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Helmet
+						i(218074, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Legguards
+						i(218071, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Stompers
 					}),
 					filter(NECK_F, {
-						i(223637, {	-- Pendant of the Mage City
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(223636, {	-- Remembrancer's Radiant Jewels
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(223637, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Pendant of the Mage City
+						i(223636, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Remembrancer's Radiant Jewels
 					}),
 					filter(PLATE, {
-						i(218065, {	-- Dalaran Defender's Boots
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218069, {	-- Dalaran Defender's Bracers
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(218064, {	-- Dalaran Defender's Breastplate
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218068, {	-- Dalaran Defender's Clasp
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218066, {	-- Dalaran Defender's Gauntlets
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
-						i(218006, {	-- Dalaran Defender's Greaves
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218063, {	-- Dalaran Defender's Helm
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(218067, {	-- Dalaran Defender's Spaulders
-							cost = { { "c", RESIDUAL_MEMORIES, 3500 } },
-						}),
+						i(218065, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Boots
+						i(218069, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Dalaran Defender's Bracers
+						i(218064, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Breastplate
+						i(218068, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Clasp
+						i(218066, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Gauntlets
+						i(218006, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Greaves
+						i(218063, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Helm
+						i(218067, { cost = { { "c", RESIDUAL_MEMORIES, 3500 } } }),	-- Dalaran Defender's Spaulders
 					}),
 					filter(TRINKET_F, {
-						i(223513, {	-- Faded Ebony Scale
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(223509, {	-- Shriveled Ancient Tentacle
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
-						i(220304, {	-- Weathered Northrend Sigil
-							cost = { { "c", RESIDUAL_MEMORIES, 2000 } },
-						}),
+						i(223513, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Faded Ebony Scale
+						i(223509, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Shriveled Ancient Tentacle
+						i(220304, { cost = { { "c", RESIDUAL_MEMORIES, 2000 } } }),	-- Weathered Northrend Sigil
 					}),
 					n(WEAPONS, {
-						i(219244, {	-- Dalaran Defender's Aegis
-							cost = { { "c", RESIDUAL_MEMORIES, 3000 } },
-						}),
-						i(219229, {	-- Dalaran Defender's Battleaxe
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219238, {	-- Dalaran Defender's Battlestaff
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219235, {	-- Dalaran Defender's Blade
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219232, {	-- Dalaran Defender's Bolter
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219240, {	-- Dalaran Defender's Broadsword
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219231, {	-- Dalaran Defender's Carver
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219241, {	-- Dalaran Defender's Club
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219236, {	-- Dalaran Defender's Conduit
-							cost = { { "c", RESIDUAL_MEMORIES, 3000 } },
-						}),
-						i(219249, {	-- Dalaran Defender's Crusher
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219252, {	-- Dalaran Defender's Dagger
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(219253, {	-- Dalaran Defender's Dirk
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219239, {	-- Dalaran Defender's Greatsword
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219242, {	-- Dalaran Defender's Hammer
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219230, {	-- Dalaran Defender's Hatchet
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(219245, {	-- Dalaran Defender's Impaler
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219248, {	-- Dalaran Defender's Mace
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219251, {	-- Dalaran Defender's Sabre
-							cost = { { "c", RESIDUAL_MEMORIES, 4000 } },
-						}),
-						i(219250, {	-- Dalaran Defender's Scepter
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(219246, {	-- Dalaran Defender's Spear
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219234, {	-- Dalaran Defender's Spellblade
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
-						i(219237, {	-- Dalaran Defender's Spire
-							cost = { { "c", RESIDUAL_MEMORIES, 8000 } },
-						}),
-						i(219247, {	-- Dalaran Defender's Wand
-							cost = { { "c", RESIDUAL_MEMORIES, 5000 } },
-						}),
+						i(219244, { cost = { { "c", RESIDUAL_MEMORIES, 3000 } } }),	-- Dalaran Defender's Aegis
+						i(219229, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Battleaxe
+						i(219238, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Battlestaff
+						i(219235, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Blade
+						i(219232, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Bolter
+						i(219240, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Broadsword
+						i(219231, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Carver
+						i(219241, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Club
+						i(219236, { cost = { { "c", RESIDUAL_MEMORIES, 3000 } } }),	-- Dalaran Defender's Conduit
+						i(219249, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Crusher
+						i(219252, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Dagger
+						i(219253, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Dirk
+						i(219239, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Greatsword
+						i(219242, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Hammer
+						i(219230, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Hatchet
+						i(219245, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Impaler
+						i(219248, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Mace
+						i(219251, { cost = { { "c", RESIDUAL_MEMORIES, 4000 } } }),	-- Dalaran Defender's Sabre
+						i(219250, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Scepter
+						i(219246, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Spear
+						i(219234, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Spellblade
+						i(219237, { cost = { { "c", RESIDUAL_MEMORIES, 8000 } } }),	-- Dalaran Defender's Spire
+						i(219247, { cost = { { "c", RESIDUAL_MEMORIES, 5000 } } }),	-- Dalaran Defender's Wand
 					}),
 				},
 			}),

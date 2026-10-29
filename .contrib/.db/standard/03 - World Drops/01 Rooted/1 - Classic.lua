@@ -4079,7 +4079,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
 				-- #if BEFORE 6.0.1
-				LBRS_TAZZALOR,
+				BLACKROCK_SPIRE,
 				-- #endif
 				SILITHUS,
 				STRATHOLME,
@@ -5998,7 +5998,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			description = "Can drop from trolls.",
 			maps = {
-				LBRS_TAZZALOR,
+				BLACKROCK_SPIRE,
 				ZULGURUB,
 			},
 		}),

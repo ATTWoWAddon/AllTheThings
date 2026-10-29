@@ -600,11 +600,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							sourceQuests = { 41449 },	-- Join the Dreamer
 							provider = { "n", 104349 },	-- Naralex
 							coord = { 39.6, 18.2, VALSHARAH },	-- technically Dreamgrove, but inside the barrow den the mapID changes
+							qi = 135506,	-- Cup of Moonwater (QI!)
 							groups = {
-								i(135506),	-- Cup of Moonwater (PQI!)
-								--
 								o(248098, {	-- G'Hanir
-									coord = { 45.5, 50.5, 747 },	-- The Dreamgrove
+									coord = { 45.5, 50.5, THE_DREAMGROVE },	-- The Dreamgrove
 									groups = { i(135582) },	-- Corrupted G'Hanir, the Mother Tree
 								}),
 							},

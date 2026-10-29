@@ -359,7 +359,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				o(441108, {	-- Unbound Spoils
 					description = "Spawns ONCE per rotation in the matching zone determined by the zone where the Shadowlands PvP World Quest is active. The spawn can occur at any moment while that quest is up.\nArdenweald -> Isle of Dorn\nMaldraxxus -> Hallowfall\nRevendreth -> Azj-Kahet\nBastion -> The Ringing Deeps.\nThe box can be looted by many players of both factions within a few minutes after being opened. There's really no reason to fight about it. :)",
 					coords = {
-						{ 44.6, 85.3, 2213 },	-- Azj-Kahet (City of Threads)
+						{ 44.6, 85.3, NERUBAR },	-- Azj-Kahet (City of Threads)
 						{ 38.5, 35.0, HALLOWFALL },
 						{ 66.7, 48.8, THE_RINGING_DEEPS },	-- (pre-11.1 shift)
 						{ 62.3, 20.3, ISLE_OF_DORN },

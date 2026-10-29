@@ -232,7 +232,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				groups = {
 					i(64596),	-- Dream Pendant
 					i(64606),	-- Dream Amulet
@@ -613,7 +613,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 			}),
 			q(9440, {	-- Little Morsels
 				qg = 17109,	-- Cersei Dusksinger
@@ -874,7 +874,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				groups = {
 					objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
 						providers = {
@@ -1003,7 +1003,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				groups = {
 					objective(1, {	-- 0/1 Priestess Udum'bra slain
 						provider = { "n", 46424 },	-- Priestess Udum'bra
@@ -1016,7 +1016,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				groups = {
 					objective(1, {	-- 0/1 Jammal'an the Prophet slain
 						provider = { "n", 46656 },	-- Jammal'an the Prophet
@@ -1029,7 +1029,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				groups = {
 					objective(1, {	-- 0/1 Gomora the Bloodletter slain
 						provider = { "n", 46623 },	-- Gomora the Bloodletter
@@ -1135,7 +1135,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				isBreadcrumb = true,
 			}),
 			q(1421, {	-- The Lost Caravan
@@ -1372,7 +1372,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
@@ -1381,7 +1381,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				qg = 46071,	-- Lord Itharius
 				coord = { 69.4, 54.5, SWAMP_OF_SORROWS },
 				timeline = { ADDED_4_0_3 },
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),

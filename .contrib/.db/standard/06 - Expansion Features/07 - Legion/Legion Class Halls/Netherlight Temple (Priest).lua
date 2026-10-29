@@ -93,8 +93,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									-- #endif
 								},
 								coords = {
-									{ 77.0, 56.0, SCARLET_MONASTERY_ENTRANCE },	-- Scarlet Halls entrance
-									{ 35.7, 14.2, 432 },	-- The Annals of Light and Shadow - Volume VII
+									{ 77.0, 56.0, SCARLET_MONASTERY_ENTRANCE },
+									{ 35.7, 14.2, SCARLET_HALLS_ATHENAEUM },	-- The Annals of Light and Shadow - Volume VII
 									-- #if AFTER 11.2.5
 									-- #if BEFORE 12.0.0
 									{ 45.8, 68.5, BROKEN_ISLES },	-- Infinite Bazaar, around the Pile of Chronoqueries [REMIX ONLY]

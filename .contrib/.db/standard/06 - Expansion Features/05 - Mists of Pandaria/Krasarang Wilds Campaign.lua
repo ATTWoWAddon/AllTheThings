@@ -459,9 +459,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						},
 					}),
 					q(32426, {	-- Stirred, not Shaken
-						sourceQuests = { 32381 },	-- To Catch a Spy
+						sourceQuest = 32381,	-- To Catch a Spy
 						qg = 68526,	-- Barkeep Townsley
-						coord = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
+						coord = { 67.4, 47.1, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },	-- Bizmo's Brawlpub
 					}),
 					q(32150, {	-- Supply Block
 						sourceQuests = { 32109 },	-- Lion's Landing
@@ -608,9 +608,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						},
 					}),
 					q(32381, {	-- To Catch a Spy
-						sourceQuests = { 32380 },	-- The Best Around
+						sourceQuest = 32380,	-- The Best Around
 						qg = 68526,	-- Barkeep Townsley
-						coord = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
+						coord = { 67.4, 47.1, DEEPRUN_TRAM_BIZMOS_BRAWLPUB },	-- Bizmo's Brawlpub
 					}),
 					q(32193, {	-- To Mogujia
 						sourceQuests = { 32331 },	-- The Kirin Tor

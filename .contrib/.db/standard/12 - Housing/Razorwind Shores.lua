@@ -6,15 +6,15 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 	timeline = { ADDED_11_2_7 },
 	groups = {
 		n(EXPLORATION, {
-			visit_exploration(16226,{coord={58.6,49.3,2351}}),	-- Cragthorn Highlands
-			visit_exploration(16687,{coord={63.7,47.7,2351}}),	-- Four Sisters
-			visit_exploration(16688,{coord={53.7,71.2,2351}}),	-- Ragewater Springs
-			map_exploration(15524,{coord={54.0,50.0,2351}}),	-- Razorwind Shores
-			visit_exploration(16228,{coord={45.9,54.7,2351}}),	-- Runetotem's Bounty
-			visit_exploration(16229,{coord={41.1,69.7,2351}}),	-- Saltfang Shoals
-			visit_exploration(16690,{coord={41.0,75.6,2351}}),	-- Scorchsong Isle
-			visit_exploration(16589,{coord={55.6,56.2,2351}}),	-- The Common
-			visit_exploration(16753,{coord={62.2,76.9,2351}}),	-- The Bloom
+			visit_exploration(16226, { coord = { 58.6, 49.3, RAZORWIND_SHORES } }),	-- Cragthorn Highlands
+			visit_exploration(16687, { coord = { 63.7, 47.7, RAZORWIND_SHORES } }),	-- Four Sisters
+			visit_exploration(16688, { coord = { 53.7, 71.2, RAZORWIND_SHORES } }),	-- Ragewater Springs
+			map_exploration(15524, { coord = { 54.0, 50.0, RAZORWIND_SHORES } }),	-- Razorwind Shores
+			visit_exploration(16228, { coord = { 45.9, 54.7, RAZORWIND_SHORES } }),	-- Runetotem's Bounty
+			visit_exploration(16229, { coord = { 41.1, 69.7, RAZORWIND_SHORES } }),	-- Saltfang Shoals
+			visit_exploration(16690, { coord = { 41.0, 75.6, RAZORWIND_SHORES } }),	-- Scorchsong Isle
+			visit_exploration(16589, { coord = { 55.6, 56.2, RAZORWIND_SHORES } }),	-- The Common
+			visit_exploration(16753, { coord = { 62.2, 76.9, RAZORWIND_SHORES } }),	-- The Bloom
 		}),
 		n(FLIGHT_PATHS, {
 			fp(2978, {	-- Cragthorn Highlands, Razorwind Shores

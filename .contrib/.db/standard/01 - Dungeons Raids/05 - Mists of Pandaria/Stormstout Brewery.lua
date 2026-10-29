@@ -31,12 +31,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				q(31324, {	-- Family Secrets
 					sourceQuest = 30085,	-- Into the Brewery
 					qg = 59822,	-- Auntie Stormstout
-					coord = { 76.2, 36.4, 439 },
+					coord = { 76.2, 36.4, STORMSTOUT_BREWERY_GRAIN_CELLAR },
 					groups = {
 						objective(1, {	-- 0/1 Stormstout Secrets
 							providers = {
 								{ "o", 213795 },	-- Stormstout Secrets
-								{ "i",  86431 },	-- Stormstout Secrets
+								{ "i", 86431 },	-- Stormstout Secrets
 							},
 						}),
 						i(87312),	-- Auntie's Cooking Apron
@@ -55,7 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				q(31327, {	-- Trouble Brewing
 					sourceQuest = 30085,	-- Into the Brewery
 					qg = 59704,	-- Chen Stormstout
-					coord = { 76.6, 36.8, 439 },
+					coord = { 76.6, 36.8, STORMSTOUT_BREWERY_GRAIN_CELLAR },
 					groups = {
 						objective(1, {	-- 0/1 Yan-Zhu the Uncasked slain
 							provider = { "n", 59479 },	-- Yan-Zhu the Uncasked

@@ -246,22 +246,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 		}),
 		inst(311, {	-- Scarlet Halls
 			coord = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
-			maps = { 431, 432 },
+			maps = { SCARLET_HALLS_TRAINING_GROUNDS, SCARLET_HALLS_ATHENAEUM },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
 					e(656, {	-- Flameweaver Koegler
 						crs = { 59150 },	-- Flameweaver Koegler
-						groups = {
-							ach(19906),	-- Scarlet Halls
-						},
+						groups = { ach(19906) },	-- Scarlet Halls
 					}),
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
 					e(656, {	-- Flameweaver Koegler
 						crs = { 59150 },	-- Flameweaver Koegler
-						groups = {
-							ach(19907),	-- Heroic: Scarlet Halls
-						},
+						groups = { ach(19907) },	-- Heroic: Scarlet Halls
 					}),
 				}),
 			},

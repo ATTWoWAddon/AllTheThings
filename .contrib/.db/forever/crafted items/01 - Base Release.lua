@@ -3571,7 +3571,7 @@ root(ROOTS.Craftables, {
 			i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 			i(15412, {	-- Green Dragonscale
 				description = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
-				maps_disp = { MAP.TEMPLE_OF_ATALHAKKAR },
+				maps_disp = { MAP.SUNKEN_TEMPLE },
 			}),
 			i(15408, {	-- Heavy Scorpid Scale
 				description = "Can be skinned from scorpids in the level bracket 50-60.",
@@ -3596,7 +3596,7 @@ root(ROOTS.Craftables, {
 			}),
 			i(8165, {	-- Worn Dragonscale
 				description = "Can be skinned from elite creatures of any Dragonflights around the world.",
-				maps_disp = { MAP.TEMPLE_OF_ATALHAKKAR },
+				maps_disp = { MAP.SUNKEN_TEMPLE },
 			}),
 		}),
 	}),

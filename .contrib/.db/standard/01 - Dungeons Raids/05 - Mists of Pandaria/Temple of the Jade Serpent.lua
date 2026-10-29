@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(QUESTS, {
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					qg = 64399,	-- Master Windstrong
-					coord = { 35.4, 44.4, 429 },
+					coord = { 35.4, 44.4, TEMPLE_OF_THE_JADE_SERPENT },
 					groups = {
 						objective(1, {	-- 0/1 Sha of Doubt slain
 							provider = { "n", 56439 },	-- Sha of Doubt
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				q(31355, {	-- Restoring Jade's Purity
 					qg = 60578,	-- Priestess Summerpetal
-					coord = { 35.4, 44.4, 429 },
+					coord = { 35.4, 44.4, TEMPLE_OF_THE_JADE_SERPENT },
 					groups = {
 						objective(1, {	-- 0/1 Wise Mari assisted
 							provider = { "n", 56448 },	-- Wise Mari

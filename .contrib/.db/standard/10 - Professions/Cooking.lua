@@ -264,9 +264,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 					q(31820, {	-- A Present for Teacher
 						qg = 64337,	-- Nomi (Child)
 						minReputation = { 1357, 6 },	-- Nomi, Expert (Best Friend).
-						groups = {
-							i(86468),	-- Apron
-						},
+						groups = { i(86468) },	-- Apron
 					}),
 					q(31337, {	-- A Token of Appreciation
 						qg = 64337,	-- Nomi (Child)
@@ -339,103 +337,91 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 			q(31281, {	-- So You Want to Be a Chef...
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 86057, 5 }},	-- 5x Sliced Peaches
+				cost = { { "i", 86057, 5 } },	-- 5x Sliced Peaches
 			}),
 			q(31302, {	-- Ready for Greatness
-				sourceQuests = { 31281 },	-- So You Want to be a Chef...
+				sourceQuest = 31281,	-- So You Want to be a Chef...
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 86069, 5 }},	-- 5x Rice Pudding
+				cost = { { "i", 86069, 5 } },	-- 5x Rice Pudding
 			}),
 			q(31479, {	-- Way of the Brew
-				sourceQuests = { 31302 },	-- Ready for Greatness
+				sourceQuest = 31302,	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74845, 1 }},	-- 1x Ginseng
-				groups = {
-					r(125589),	-- Way of the Brew
-				},
+				cost = { { "i", 74845, 1 } },	-- 1x Ginseng
+				groups = { r(125589) },	-- Way of the Brew
 			}),
 			q(31480, {	-- Have a Drink
-				sourceQuests = { 31479 },	-- Way of the Brew
+				sourceQuest = 31479,	-- Way of the Brew
 				provider = { "n", 58717 },	-- Bobo Ironpaw
 				coord = { 53.2, 52.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 75026, 1 }},	-- 1x Ginseng Tea
+				cost = { { "i", 75026, 1 } },	-- 1x Ginseng Tea
 			}),
 			q(31311, {	-- Way of the Grill
 				sourceQuests = { 31302 },	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				cost = {{ "i", 74833, 5 }},	-- 5x Raw Tiger Steak
-				groups = {
-					r(124694),	-- Way of the Grill
-				},
+				groups = { r(124694) },	-- Way of the Grill
 			}),
 			q(31467, {	-- Strong as a Tiger
-				sourceQuests = { 31311 },	-- Way of the Grill
+				sourceQuest = 31311,	-- Way of the Grill
 				provider = { "n", 58712 },	-- Kol Ironpaw
 				coord = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74642, 5 }},	-- 5x Charbroiled Tiger Steak
+				cost = { { "i", 74642, 5 } },	-- 5x Charbroiled Tiger Steak
 			}),
 			q(31478, {	-- Way of the Oven
-				sourceQuests = { 31302 },	-- Ready for Greatness
+				sourceQuest = 31302,	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74839, 5 }},	-- 5x Wildfowl Breast
-				groups = {
-					r(125588),	-- Way of the Oven
-				},
+				cost = { { "i", 74839, 5 } },	-- 5x Wildfowl Breast
+				groups = { r(125588) },	-- Way of the Oven
 			}),
 			q(31477, {	-- Endurance
-				sourceQuests = { 31478 },	-- Way of the Oven
+				sourceQuest = 31478,	-- Way of the Oven
 				provider = { "n", 58716 },	-- Jian Ironpaw
 				coord = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74654, 5 }},	-- 5x Wildfowl Roast
+				cost = { { "i", 74654, 5 } },	-- 5x Wildfowl Roast
 			}),
 			q(31472, {	-- Way of the Pot
 				sourceQuests = { 31302 },	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				cost = {{ "i", 74856, 5 }},	-- 5x Jade Lungfish
-				groups = {
-					r(125586),	-- Way of the Pot
-				},
+				groups = { r(125586) },	-- Way of the Pot
 			}),
 			q(31474, {	-- The Soup of Contemplation
-				sourceQuests = { 31472 },	-- Way of the Pot
+				sourceQuest = 31472,	-- Way of the Pot
 				provider = { "n", 58714 },	-- Mei Mei Ironpaw
 				coord = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74644, 5 }},	-- 5x Swirling Mist Soup
+				cost = { { "i", 74644, 5 } },	-- 5x Swirling Mist Soup
 			}),
 			q(31475, {	-- Way of the Steamer
-				sourceQuests = { 31302 },	-- Ready for Greatness
+				sourceQuest = 31302,	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74857, 5 }},	-- 5x Giant Mantis Shrimp
-				groups = {
-					r(125587),	-- Way of the Steamer
-				},
+				cost = { { "i", 74857, 5 } },	-- 5x Giant Mantis Shrimp
+				groups = { r(125587) },	-- Way of the Steamer
 			}),
 			q(31476, {	-- The Spirit of Cooking
-				sourceQuests = { 31475 },	-- Way of the Steamer
+				sourceQuest = 31475,	-- Way of the Steamer
 				provider = { "n", 58715 },	-- Yan Ironpaw
 				coord = { 52.5, 51.7, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74651, 5 }},	-- 5x Shrimp Dumplings
+				cost = { { "i", 74651, 5 } },	-- 5x Shrimp Dumplings
 			}),
 			q(31470, {	-- Way of the Wok
-				sourceQuests = { 31302 },	-- Ready for Greatness
+				sourceQuest = 31302,	-- Ready for Greatness
 				provider = { "n", 64231 },	-- Sungshin Ironpaw
 				coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74841, 5 }},	-- 5x Juicycrunch Carrot
-				groups = {
-					r(125584),	-- Way of the Wok
-				},
+				cost = { { "i", 74841, 5 } },	-- 5x Juicycrunch Carrot
+				groups = { r(125584) },	-- Way of the Wok
 			}),
 			q(31471, {	-- Agile as a Tiger
-				sourceQuests = { 31470 },	-- Way of the Wok
+				sourceQuest = 31470,	-- Way of the Wok
 				provider = { "n", 58713 },	-- Anthea Ironpaw
 				coord = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 74643, 5 }},	-- 5x Sauteed Carrots
+				cost = { { "i", 74643, 5 } },	-- 5x Sauteed Carrots
 			}),
 			q(31536, {	-- Preserving Freshness
 				sourceQuests = {
@@ -448,7 +434,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 				},
 				provider = { "n", 64395 },	-- Nam Ironpaw
 				coord = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-				cost = {{ "i", 87658, 1 }},	-- 1x Empty Raw Tiger Steak Container
+				cost = { { "i", 87658, 1 } },	-- 1x Empty Raw Tiger Steak Container
 			}),
 			header(HEADERS.Spell, 145062, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {
 				timeline = { ADDED_5_4_0 },
@@ -466,54 +452,48 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 						coord = { 52.1, 46.5, TIMELESS_ISLE },
 					}),
 					q(33020, {	-- The Lost Secret of the Secret Ingredient
-						sourceQuests = { 33018 },	-- Noodle Secrets Long Forgotten
+						sourceQuest = 33018,	-- Noodle Secrets Long Forgotten
 						provider = { "n", 72426 },	-- Lin Chao-Wei
 						coord = { 41.2, 73.4, TIMELESS_ISLE },
-						maps = { 429, 430 },	-- Temple of the Jade Serpent
+						maps = { TEMPLE_OF_THE_JADE_SERPENT, TEMPLE_OF_THE_JADE_SERPENT_THE_SCROLLKEEPERS_SANCTUM },	-- Temple of the Jade Serpent
 					}),
 					q(33107, {	-- Bad Feeling, Worse Result
-						sourceQuests = { 33020 },	-- The Lost Secret of the Secret Ingredient
+						sourceQuest = 33020,	-- The Lost Secret of the Secret Ingredient
 						provider = { "o", 221413 },	-- Lin Family Scroll
-						coord = { 68.8, 58.4, 429 },	-- Temple of the Jade Serpent
-						maps = { 430 },	-- Temple of the Jade Serpent
+						coord = { 68.8, 58.4, TEMPLE_OF_THE_JADE_SERPENT },	-- Temple of the Jade Serpent
+						maps = { TEMPLE_OF_THE_JADE_SERPENT_THE_SCROLLKEEPERS_SANCTUM },	-- Temple of the Jade Serpent
 						modelScale = 2,
 					}),
 					q(33021, {	-- Secrets Lost, Forever?
-						sourceQuests = { 33107 },	-- Bad Feeling, Worse Result
+						sourceQuest = 33107,	-- Bad Feeling, Worse Result
 						provider = { "n", 64231 },	-- Sungshin Ironpaw
 						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(33022, {	-- Catch and Carry
-						sourceQuests = { 33021 },	-- Secrets Lost, Forever?
+						sourceQuest = 33021,	-- Secrets Lost, Forever?
 						provider = { "n", 64231 },	-- Sungshin Ironpaw
 						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						groups = {
-							r(145038),	-- Noodle Cart Kit
-						},
+						groups = { r(145038) },	-- Noodle Cart Kit
 					}),
 					q(33024, {	-- Is That A Real Measurement?
-						sourceQuests = { 33022 },	-- Catch and Carry
+						sourceQuest = 33022,	-- Catch and Carry
 						provider = { "n", 64231 },	-- Sungshin Ironpaw
 						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						maps = { 439, 440, 441, 442 },	-- Stormstout Brewery
-						cost = {{ "i", 101661, 1 }},	-- 1x Noodle Cart Kit
-						groups = {
-							r(145061),	-- Deluxe Noodle Cart Kit
-						},
+						maps = { STORMSTOUT_BREWERY_GRAIN_CELLAR, STORMSTOUT_BREWERY_STORMSTOUT_BREWHALL, STORMSTOUT_BREWERY_THE_GREAT_WHEEL, STORMSTOUT_BREWERY_THE_TASTING_ROOM },	-- Stormstout Brewery
+						cost = { { "i", 101661, 1 } },	-- 1x Noodle Cart Kit
+						groups = { r(145061) },	-- Deluxe Noodle Cart Kit
 					}),
 					q(33026, {	-- These Aren't Your Fatty Goatsteaks
-						sourceQuests = { 33024 },	-- Is That a Real Measurement?
+						sourceQuest = 33024,	-- Is That a Real Measurement?
 						provider = { "n", 64231 },	-- Sungshin Ironpaw
 						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						cost = {{ "i", 101661, 1 }},	-- 1x Deluxe Noodle Cart Kit
+						cost = { { "i", 101661, 1 } },	-- 1x Deluxe Noodle Cart Kit
 					}),
 					q(33027, {	-- The Secret Ingredient Is...
 						sourceQuests = { 33026 },	-- These Aren't Your Fatty Goatsteaks
 						provider = { "n", 64231 },	-- Sungshin Ironpaw
 						coord = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-						groups = {
-							r(145062),	-- Pandaren Treasure Noodle Cart Kit
-						},
+						groups = { r(145062) },	-- Pandaren Treasure Noodle Cart Kit
 					}),
 				},
 			})),

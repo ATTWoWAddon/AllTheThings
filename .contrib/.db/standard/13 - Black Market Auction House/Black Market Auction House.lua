@@ -541,16 +541,16 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 	n(VENDORS, bubbleDown({
 		sym = {
 			SymSelector.select("BMAH"),	-- Select BMAH header
-			{"pop"},							-- Pop the header
-			{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
+			{ "pop" },	-- Pop the header
+			{ "exclude", "headerID", VENDORS },	-- Not the Vendor Header
 		},
-	},{
+	}, {
 		-- #if BEFORE WOD
 		n(62943, { coord = { 63.8, 75.8, THE_VEILED_STAIR } }),	-- Madam Goya [Veiled Stair]
 		-- #elseif BEFORE LEGION
 		n(83867, { coord = { 53.8, 15.0, DRAENOR_NAGRAND } }),	-- Madam Goya [Nagrand]
 		-- #elseif BEFORE BFA
-		n(103791, { coord = { 57.91, 46.28, 626 } }),	-- Madam Gosu [Rogue Class Hall]
+		n(103791, { coord = { 57.91, 46.28, THE_HALL_OF_SHADOWS } }),	-- Madam Gosu [Rogue Class Hall]
 		n(100986, { coord = { 71.37, 17.93, LEGION_THE_UNDERBELLY } }),	-- Madam Goya [Underbelly]
 		-- #elseif BEFORE SL
 		n(142062, { coord = { 56.71, 46.32, BORALUS } }),	-- Madam Gosu [Boralus - Alliance]

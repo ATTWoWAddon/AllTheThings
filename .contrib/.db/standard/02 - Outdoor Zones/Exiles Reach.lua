@@ -1517,7 +1517,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			},
 		}, {
 			n(167213, {	-- Provisioner Jin'hake
-				coord = { 52.4, 55.6, 1409 },
+				coord = { 52.4, 55.6, EXILES_REACH },
 				races = HORDE_ONLY,
 				groups = {
 					i(178120, {	-- Horde Tabard
@@ -1526,7 +1526,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				},
 			}),
 			n(156800, {	-- Quartermaster Richter <Supplies>
-				coord = { 52.2, 55.2, 1409 },
+				coord = { 52.2, 55.2, EXILES_REACH },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(168100, {	-- Alliance Tabard

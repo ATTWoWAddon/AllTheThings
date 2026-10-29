@@ -1707,19 +1707,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							54183,	-- Dead Reckoning
 						},
 						provider = { "n", 150101 },	-- Lady Jaina Proudmoore
-						coord = { 40.2, 55.2, 1355 },	-- Nazjatar
+						coord = { 40.2, 55.2, NAZJATAR },	-- Nazjatar
 						timeline = { ADDED_8_2_0 },
 						races = ALLIANCE_ONLY,
 						lvl = 120,
 					}),
 					q(55783, {	-- Stay of Execution
-						sourceQuests = { 55784 },	-- Payment in Kind
+						sourceQuest = 55784,	-- Payment in Kind
 						provider = { "n", 107574 },	-- Anduin Wrynn
 						coord = { 85.7, 31.7, STORMWIND_CITY },
 						timeline = { ADDED_8_2_0 },
-						maps = {
-							1479,	-- Baine Rescue (Scenario)
-						},
+						maps = { 1479 },	-- Baine Rescue (Scenario)
 						races = ALLIANCE_ONLY,
 						lvl = 120,
 					}),

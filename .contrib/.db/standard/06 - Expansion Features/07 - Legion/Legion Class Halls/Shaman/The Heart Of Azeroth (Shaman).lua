@@ -126,19 +126,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								},
 							}),
 							q(43338, {	-- The Codex of Ra
-								sourceQuests = { 43334 },	-- The Coming Storm
+								sourceQuest = 43334,	-- The Coming Storm
 								provider = { "n", 60968 },	-- Xuen
 								coord = { 66.9, 56.2, KUN_LAI_SUMMIT },
-								groups = {
-									i(139432),	-- The Edict of Fire (QI!)
-									i(139433),	-- The Edict of Stone (QI!)
-									i(139434),	-- The Edict of the Storm (QI!)
+								qis = {
+									139432,	-- The Edict of Fire (QI!)
+									139433,	-- The Edict of Stone (QI!)
+									139434,	-- The Edict of the Storm (QI!)
 								},
 							}),
 							q(39771, {	-- The Voice of Thunder
-								sourceQuests = { 43338 },	-- The Codex of Ra
+								sourceQuest = 43338,	-- The Codex of Ra
 								provider = { "n", 96541 },	-- Rehgar Earthfury
-								coord = { 47.0, 83.0, 395 },	-- Guo-Lai Halls, Vale of Eternal Blossom
+								coord = { 47.0, 83.0, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
 								groups = {
 									artifact(113),	-- The Fist of Ra-den
 									artifact(113),	-- The Highkeeper's Ward

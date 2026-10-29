@@ -127,7 +127,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 			},
 		}),
 		n(263456, {	-- Szarith The Fanged
-			coord = { 38.0, 17.5, 2613 },	-- The Underbelly, Vaults of Atal'Utek
+			coord = { 38.0, 17.5, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
 			questID = 96030,
 			groups = {
 				i(280698),	-- Szarith's Underbelly Slicer

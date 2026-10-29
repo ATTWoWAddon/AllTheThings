@@ -413,7 +413,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					maps = {
 						236,	-- Capital Gardens
 						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
 						LBRS_HORDEMAR_CITY,
 						LBRS_HALL_OF_BLACKHAND,
@@ -471,7 +470,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					timeline = { REMOVED_4_0_3 },
 					maps = merge(CAPITAL_GARDENS_MAPS, {
 						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
 						LBRS_HORDEMAR_CITY,
 						LBRS_HALL_OF_BLACKHAND,

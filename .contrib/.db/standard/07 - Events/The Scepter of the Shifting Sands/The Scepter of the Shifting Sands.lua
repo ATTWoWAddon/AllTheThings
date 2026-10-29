@@ -125,7 +125,7 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 				q(8733, {	-- Eranikus, Tyrant of the Dream
 					sourceQuest = 8555,	-- The Charge of the Dragonflights
 					qg = 15362,	-- Malfurion Stormrage
-					maps = { TEMPLE_OF_ATALHAKKAR },
+					maps = { SUNKEN_TEMPLE },
 					lvl = 60,
 				}),
 				q(8305, {	-- Long Forgotten Memories

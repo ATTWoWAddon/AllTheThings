@@ -1143,7 +1143,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 			n(FACTIONS, {
 				faction(2641, {	-- Emerald Wardens
 					OnTooltip = OnTooltip_EMERALD_WARDENS,
-					maps = { ASHENVALE, DUSKWOOD, FERALAS, TEMPLE_OF_ATALHAKKAR, THE_HINTERLANDS },
+					maps = { ASHENVALE, DUSKWOOD, FERALAS, SUNKEN_TEMPLE, THE_HINTERLANDS },
 				}),
 			}),
 			n(QUESTS, {

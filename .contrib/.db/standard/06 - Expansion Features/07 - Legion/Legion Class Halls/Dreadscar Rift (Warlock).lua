@@ -524,7 +524,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(41769, {	-- Mad Ernie the Alchemist
 							sourceQuests = { 41768 },	-- Soul Beacon
 							provider = { "n", 105102 },	-- Ritssyn Flamescowl
-							coord = { 54.0, 36.2, 717 },
+							coord = { 54.0, 36.2, DREADSCAR_RIFT },
 						}),
 						q(41781, {	-- Herding Goats
 							sourceQuest = 41769,	-- Mad Ernie the Alchemist
