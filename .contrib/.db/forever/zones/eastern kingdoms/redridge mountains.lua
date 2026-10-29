@@ -174,7 +174,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Stolen Supplies
 						providers = {
-							{ "i", 280839 },	-- Stolen Supplies (QI!)
+							{ "i", 280839 },	-- Blackrock Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
 							{ "o", 673385 },	-- Grain Sack
 							{ "o", 673399 },	-- Meat Haunch
@@ -601,7 +601,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(118, {	-- The Price of Shoes
 				qg = 415,	-- Verner Osgood
-				qi = 1283,	-- Verner's Notes
+				qi = 1283,	-- Verner's Note
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -1212,7 +1212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 81.0, 70.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
-			i(250188, {	-- Recipe: Breakfast Omelet (RECIPE!)
+			i(250188, {	-- Recipe: Breakfast Omelette (RECIPE!)
 				coords = {
 					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside
 					{ 56.4, 75.6, MAP.REDRIDGE_MOUNTAINS },	-- Southside

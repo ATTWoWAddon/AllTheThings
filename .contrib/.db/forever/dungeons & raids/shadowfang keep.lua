@@ -50,7 +50,7 @@ instanceroot(64, {	-- Shadowfang Keep
 						},
 						description = "Can be found on a bookshelf in the circular room with Fenrus.",
 					}),
-					i(4534),	-- Steel-Clasped Bracers
+					i(4534),	-- Steel-clasped Bracers
 					i(6335),	-- Grizzled Boots
 					i(270030, {	-- Tattered Mittens
 						timeline = { TIMELINE.ADDED_1_60_1 },

@@ -207,7 +207,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					i(6973),	-- Fire hardened Leggings
+					i(6973),	-- Fire Hardened Leggings
 				},
 			}),
 			q(1582, {	-- Moonglow Vest
@@ -865,12 +865,12 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				end]],
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(8632),	-- Spotted Frostsaber (MOUNT!)
-					i(8629),	-- Striped Nightsaber (MOUNT!)
-					i(8631),	-- Striped Frostsaber (MOUNT!)
-					i(18766),	-- Swift Frostsaber (MOUNT!)
-					i(18767),	-- Swift Mistsaber (MOUNT!)
-					i(18902),	-- Swift Stormsaber (MOUNT!)
+					i(8632),	-- Reins of the Spotted Frostsaber (MOUNT!)
+					i(8629),	-- Reins of the Striped Nightsaber (MOUNT!)
+					i(8631),	-- Reins of the Striped Frostsaber (MOUNT!)
+					i(18766),	-- Reins of the Swift Frostsaber (MOUNT!)
+					i(18767),	-- Reins of the Swift Mistsaber (MOUNT!)
+					i(18902),	-- Reins of the Swift Stormsaber (MOUNT!)
 				},
 			}),
 			n(4177, {	-- Melea

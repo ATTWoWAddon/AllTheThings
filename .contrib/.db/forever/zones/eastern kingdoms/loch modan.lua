@@ -391,7 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironband's Progress Report
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
@@ -649,7 +649,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
 				qg = 1105,	-- Jern Hornhelm
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironband's Progress Report
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,

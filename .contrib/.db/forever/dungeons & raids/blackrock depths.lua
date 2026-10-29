@@ -844,7 +844,7 @@ instanceroot(228, {	-- Blackrock Depths
 			i(16048, {	-- Schematic: Dark Iron Rifle (RECIPE!)
 				cr = 8897,	-- Doomforge Craftsman
 			}),
-			i(18654, {	-- Schematic: Gnomish Alarm-o-Bot (RECIPE!)
+			i(18654, {	-- Schematic: Gnomish Alarm-O-Bot (RECIPE!)
 				cr = 8920,	-- Weapon Technician
 			}),
 			i(16053, {	-- Schematic: Master Engineer's Goggles (RECIPE!)

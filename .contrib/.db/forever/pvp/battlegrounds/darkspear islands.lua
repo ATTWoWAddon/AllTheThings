@@ -312,9 +312,9 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 					i(271932),	-- Insurgent's Manifesto
 					i(271933),	-- Insurgent's Manifesto
 					i(271934),	-- Insurgent's Manifesto
-					i(271936),	-- Guerilla's Jagged Mace
-					i(271937),	-- Guerilla's Jagged Mace
-					i(271938),	-- Guerilla's Jagged Mace
+					i(271936),	-- Guerrilla's Jagged Mace
+					i(271937),	-- Guerrilla's Jagged Mace
+					i(271938),	-- Guerrilla's Jagged Mace
 					i(271940),	-- Theramore Gauntlets
 					i(271941),	-- Theramore Gauntlets
 					i(271945),	-- Theramore Handwraps

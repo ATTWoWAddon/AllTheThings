@@ -123,7 +123,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92485, {	-- A Student of Nature
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282420,	-- Folder Parchment (PQI!)
+				qi = 282420,	-- Folded Parchment (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
 				lvl = 2,
@@ -701,7 +701,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						cr = 254588,	-- Windsong Crawler
 						coord = { 64.1, 61.5, MAP.ZEPHRAS_ISLE },
 					}),
-					i(263513),	-- Recipe Pincer Bites (RECIPE!)
+					i(263513),	-- Recipe: Pincer Bites (RECIPE!)
 					i(263512),	-- Pincer Bites
 				},
 			}),
@@ -782,7 +782,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- Receive Instructions from Randal Emerson
-						provider = { "i", 285356 },	-- Advison Emerson's Instructions (QI!)
+						provider = { "i", 285356 },	-- Advisor Emerson's Instructions (QI!)
 						cr = 275491,	-- Randal Emerson
 						coords = {
 							{ 79.0, 44.8, MAP.STORMWIND_CITY },
@@ -888,7 +888,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				groups = {
-					i(263309),	-- Freedom Walker's
+					i(263309),	-- Freedom Walkers
 					i(263310),	-- Sorrowsong Gloves
 					i(263311),	-- Scuffed Cuffs
 				},
@@ -935,7 +935,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					i(263424),	-- Wolfhide Belt
 					i(263425),	-- Elegant Cuffs
-					i(263426),	-- Ex Commander's Gauntlets
+					i(263426),	-- Ex-Commander's Gauntlets
 				},
 			}),
 			q(92516, {	-- Hippogryph Harassment
@@ -1019,8 +1019,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				races = HORDE_ONLY,
 				lvl = 4,
 				groups = {
-					i(263411),	-- Windcharged Leaf
-					i(263412),	-- Windcarved Effigy
+					i(263411),	-- Idol of Shifting Tides
+					i(263412),	-- Totem of Charged Flames
 				},
 			}),
 			q(93165, {	-- Mercy Falls on Deaf Ears
@@ -1028,7 +1028,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
-				qi = 258771,	-- Al'Alketh Cultist's Ear (QI!)
+				qi = 258771,	-- Al'Aketh Cultist's Ear (QI!)
 				groups = {
 					i(263306),	-- Nightclaw Gloves
 					i(263307),	-- Shadowgale Pants
@@ -1041,7 +1041,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				repeatable = true,
 				lvl = 8,
-				qi = 258771,	-- Al'Alketh Cultist's Ear (QI!)
+				qi = 258771,	-- Al'Aketh Cultist's Ear (QI!)
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders
 				sourceQuest = 92679,	-- Blood Tithe
@@ -1055,8 +1055,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						coord = { 53.3, 72.2, MAP.ZEPHRAS_ISLE },
 					}),
 					i(257340),	-- Farmer's Field Boots
-					i(257331),	-- Brass Banded Bracers
-					i(257334),	-- Well Worn Pants
+					i(257331),	-- Brass-Banded Bracers
+					i(257334),	-- Well-Worn Pants
 					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
@@ -1094,7 +1094,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
-					i(263511),	-- Recipe Skywall Souffle (RECIPE!)
+					i(263511),	-- Recipe: Skywall Souffle (RECIPE!)
 					i(263509),	-- Skywall Souffle
 				},
 			}),
@@ -1279,7 +1279,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 					i(263408),	-- Exterminator's Vest
 					i(263409),	-- Gardening Pants
-					i(263410),	-- Watchers Mail Chest
+					i(263410),	-- Watcher's Mail Chest
 				},
 			}),
 			q(92517, {	-- The Criminal Element
@@ -1868,76 +1868,76 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			n(272045, {	-- Brother Zendraas
 				coord = { 57.8, 52.0, MAP.ZEPHRAS_ISLE },
 				groups = {
-					i(277069, {	-- Al'aketh Armguards
+					i(277069, {	-- Al'Aketh Armguards
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277065, {	-- Al'aketh Belt
+					i(277065, {	-- Al'Aketh Belt
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277067, {	-- Al'aketh Boots
+					i(277067, {	-- Al'Aketh Boots
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277063, {	-- Al'aketh Bracers
+					i(277063, {	-- Al'Aketh Bracers
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277059, {	-- Al'aketh Chain
+					i(277059, {	-- Al'Aketh Chain
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277056, {	-- Al'aketh Chainmail
+					i(277056, {	-- Al'Aketh Chainmail
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277077, {	-- Al'aketh Cord
+					i(277077, {	-- Al'Aketh Cord
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277075, {	-- Al'aketh Cuffs
+					i(277075, {	-- Al'Aketh Cuffs
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277073, {	-- Al'aketh Footwraps
+					i(277073, {	-- Al'Aketh Footwraps
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277058, {	-- Al'aketh Gauntlets
+					i(277058, {	-- Al'Aketh Gauntlets
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277064, {	-- Al'aketh Gloves
+					i(277064, {	-- Al'Aketh Gloves
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277061, {	-- Al'aketh Greaves
+					i(277061, {	-- Al'Aketh Greaves
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277076, {	-- Al'aketh Handwraps
+					i(277076, {	-- Al'Aketh Handwraps
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277062, {	-- Al'aketh Harness
+					i(277062, {	-- Al'Aketh Harness
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277068, {	-- Al'aketh Jerkin
+					i(277068, {	-- Al'Aketh Jerkin
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277078, {	-- Al'aketh Leggings
+					i(277078, {	-- Al'Aketh Leggings
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277060, {	-- Al'aketh Legguards
+					i(277060, {	-- Al'Aketh Legguards
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277070, {	-- Al'aketh Mitts
+					i(277070, {	-- Al'Aketh Mitts
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277072, {	-- Al'aketh Pants
+					i(277072, {	-- Al'Aketh Pants
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277079, {	-- Al'aketh Shoes
+					i(277079, {	-- Al'Aketh Shoes
 						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
 					}),
-					i(277071, {	-- Al'aketh Strap
+					i(277071, {	-- Al'Aketh Strap
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
-					i(277066, {	-- Al'aketh Trousers
+					i(277066, {	-- Al'Aketh Trousers
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277074, {	-- Al'aketh Vestments
+					i(277074, {	-- Al'Aketh Vestments
 						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
 					}),
-					i(277057, {	-- Al'aketh Wristguards
+					i(277057, {	-- Al'Aketh Wristguards
 						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
 					}),
 				},
