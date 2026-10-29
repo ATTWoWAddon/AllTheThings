@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(BLACKSMITHING);
 -------------------
 -- BLACKSMITHING --
 -------------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 2018);			-- Blacksmithing (Apprentice)
 i(0, 3100);			-- Blacksmithing (Journeyman)
 i(0, 3538);			-- Blacksmithing (Expert)
@@ -91,13 +91,13 @@ i(0, 19668);		-- Truesilver Skeleton Key
 i(0, 1252247);		-- Veteran's Chain Helm
 i(0, 1252242);		-- Veteran's Chain Leggings
 i(0, 1252237);		-- Veteran's Chain Shirt
---- QUEST ---
+-- - QUEST ---
 i(0, 9957);			-- Orcish War Leggings
 i(0, 9979);			-- Ornate Mithril Boots
 i(0, 9972);			-- Ornate Mithril Breastplate
 i(0, 9980);			-- Ornate Mithril Helm
 i(0, 1230171);		-- Sharpening Wheel
---- ITEM ---
+-- - ITEM ---
 i(251358, 1252255);	-- Acolyte's Boots
 i(251368, 1252265);	-- Acolyte's Chain Belt
 i(251363, 1252260);	-- Acolyte's Gloves
@@ -287,7 +287,7 @@ i(251415, 1252312);	-- Warder's Sabatons
 i(251425, 1252322);	-- Warder's Waistguard
 i(251435, 1252332);	-- Warder's Wristguards
 i(8029, 9997);		-- Wicked Mithril Blade
---- UNKNOWN ---
+-- - UNKNOWN ---
 --[[
 r(1252353),	-- Iron Fists
 i(251456),	-- Plans: Iron Fists
@@ -453,7 +453,7 @@ i(0, 28244);		-- Icebane Bracers
 i(0, 28242);		-- Icebane Breastplate
 i(0, 28243);		-- Icebane Gauntlets
 --]]
---- ARMORSMITH ---
+-- - ARMORSMITH ---
 i(0, ARMORSMITH, nil, ARMORSMITH);	-- Armorsmith
 i(0, 9974, nil, ARMORSMITH);		-- Truesilver Breastplate
 i(0, 9954, nil, ARMORSMITH);		-- Truesilver Gauntlets
@@ -482,7 +482,7 @@ i(20040, 24399, nil, ARMORSMITH);	-- Dark Iron Boots
 -- WD P4
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
 --]]
---- WEAPONSMITH ---
+-- - WEAPONSMITH ---
 i(0, WEAPONSMITH, nil, WEAPONSMITH);	-- Weaponsmith
 i(0, 10011, nil, WEAPONSMITH);		-- Blight
 i(0, 10007, nil, WEAPONSMITH);		-- Phantom Blade
@@ -497,7 +497,7 @@ i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 i(19208, 23638, nil, WEAPONSMITH);	-- Black Amnesty
 i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 --]]
---- AXESMITH ---
+-- - AXESMITH ---
 i(0, MASTER_AXESMITH, nil, MASTER_AXESMITH);	-- Master Axesmith
 i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
 i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reape
@@ -510,7 +510,7 @@ i(17060, 20897, nil, MASTER_AXESMITH);	-- Dark Iron Destroyer
 -- BRD P3
 i(19212, 23653, nil, MASTER_AXESMITH);	-- Nightfall
 --]]
---- HAMMERSMITH ---
+-- - HAMMERSMITH ---
 i(0, MASTER_HAMMERSMITH, nil, MASTER_HAMMERSMITH);	-- Master Hammersmith
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer
 i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
@@ -523,7 +523,7 @@ i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 -- WD P4
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 --]]
---- SWORDSMITH ---
+-- - SWORDSMITH ---
 i(0, MASTER_SWORDSMITH, nil, MASTER_SWORDSMITH);		-- Master Swordsmith
 i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcani
 i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier

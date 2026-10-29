@@ -704,7 +704,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(654, {	-- Tanaris Field Sampling
 				sourceQuests = {
 					379,	-- Slake That Thirst
-					-- 841,	-- Another Power Source?	-- Not required in 30403
+					--841,	-- Another Power Source?	-- Not required in 30403
 				},
 				providers = {
 					{ "i", 8524 },	-- Model 4711-FTZ Power Source

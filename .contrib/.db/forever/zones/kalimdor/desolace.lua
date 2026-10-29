@@ -1137,7 +1137,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 							4664,	-- Burning Blade Reaver
 						},
 					}),
-					-- i(6766),	-- Flayed Demon Skin (old2) [TODO: Double check that this actually is given... strange name.]
+					--i(6766),	-- Flayed Demon Skin (old2) [TODO: Double check that this actually is given... strange name.]
 				},
 			}),
 			q(1480, {	-- The Corrupter (1/5)

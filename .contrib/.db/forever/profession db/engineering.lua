@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(ENGINEERING);
 -----------------
 -- ENGINEERING --
 -----------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 4036);			-- Engineering (Apprentice)
 i(0, 4037);			-- Engineering (Journeyman)
 i(0, 4038);			-- Engineering (Expert)
@@ -66,10 +66,10 @@ i(0, 3978);			-- Standard Scope
 i(0, 3932);			-- Target Dummy
 i(0, 12591);		-- Unstable Trigger
 i(0, 3942);			-- Whirring Bronze Gizmo
---- QUEST ---
+-- - QUEST ---
 i(0, 1230656);		-- Reagent Bot
 i(0, 26011);		-- Tranquil Mechanical Yeti
---- ITEM ---
+-- - ITEM ---
 i(13310, 3979);		-- Accurate Scope
 i(16055, 19831);	-- Arcane Bomb
 i(16054, 19830);	-- Arcanite Dragonling
@@ -204,9 +204,9 @@ i(0, 12758, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Helmet
 i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
 i(11828, 15628, nil, GOBLIN_ENGINEERING);	-- Pet Bombling
 i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
---- UNSURE ---
+-- - UNSURE ---
 i(22729, 28327);	-- Steam Tonk Controller
---- UNKNOWN ---
+-- - UNKNOWN ---
 --[[
 r(1293088),	-- 9-60 Battery Pack
 i(274049),	-- Schematic: 9-60 Battery Pack
