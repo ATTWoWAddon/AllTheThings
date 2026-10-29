@@ -491,6 +491,6 @@ i(0, 28207);		-- Glacial Vest
 i(0, 28209);		-- Glacial Wrists
 -- ZG
 i(19766, 24093);	-- Bloodvine Boots
-i(19765, 24092);	-- Bloodvine Leggings 
+i(19765, 24092);	-- Bloodvine Leggings
 i(19764, 24091);	-- Bloodvine Vest
 --]]
