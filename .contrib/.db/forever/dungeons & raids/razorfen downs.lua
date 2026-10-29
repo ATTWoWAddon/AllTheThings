@@ -112,12 +112,12 @@ instanceroot(233, {	-- Razorfen Downs
 			i(10578),	-- Thoughtcast Boots
 		}),
 		n(7895, {	-- Ambassador Bloodrage
+			description = "This is a rare that is not always present.",
 			coords = {
 				{ 46.2, 87.4, MAP.THE_BARRENS },
 				{ 48.0, 90.4, MAP.THE_BARRENS },
 				{ 48.6, 95.6, MAP.THE_BARRENS },
 			},
-			description = "This is a rare that is not always present.",
 			groups = {
 				i(286639, {	-- Ambassador's Bloodrobes
 					timeline = { TIMELINE.ADDED_1_60_1 },

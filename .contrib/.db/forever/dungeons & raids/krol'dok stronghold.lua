@@ -6,10 +6,10 @@ instanceroot(78792, {	-- Krol'dok Stronghold
 	-- Blizzard lists it for levels 40-45.
 	--lore = "",
 	icon = 409547,
+	lvl = 40,
 	--zoneTextAreaID = ,	-- Krol'dok Stronghold
 	--coord = { 42.0, 21.5, MAP.BADLANDS },	-- Estimated from the Krol'dok Stronghold exploration area (17780, Riverglades); verify the entrance.
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	lvl = 40,
 	groups = {
 		n(QUESTS, {
 			

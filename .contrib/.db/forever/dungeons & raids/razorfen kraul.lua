@@ -85,12 +85,12 @@ instanceroot(234, {	-- Razorfen Kraul
 				},
 			}),
 			q(1100, {	-- Lonebrow's Journal
-				provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
 				qs = 5791,	-- Henrig Lonebrow's Journal (QS!)
-				qi = 5790,	-- Lonebrow's Journal (PQI!)
+				provider = { "o", 19861 },	-- Henrig Lonebrow's Journal
 				coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 				races = ALLIANCE_ONLY,
 				lvl = 29,
+				qi = 5790,	-- Lonebrow's Journal (PQI!)
 			}),
 			q(1142, {	-- Mortality Wanes
 				qg = 4510,	-- Heralath Fallowbrook

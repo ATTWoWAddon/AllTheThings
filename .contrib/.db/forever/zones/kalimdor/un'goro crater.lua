@@ -46,9 +46,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3913, {	-- A Grave Situation
 				sourceQuest = 3912,	-- Meet at the Grave
 				qg = 9299,	-- Gaeriyan
-				qi = 11136,	-- Linken's Tempered Sword
 				coord = { 54.0, 23.4, MAP.TANARIS },
 				lvl = 47,
+				qi = 11136,	-- Linken's Tempered Sword
 			}),
 			q(4491, {	-- A Little Help From My Friends
 				sourceQuest = 4492,	-- Lost!
@@ -64,11 +64,11 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4142, {	-- A Visit to Gregan
 				sourceQuest = 4141,	-- Muigin and Larion
 				qg = 9119,	-- Muigin
-				qi = 11316,	-- Bloodpetal
 				coord = { 42.9, 9.6, MAP.UNGORO_CRATER },
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 47,
+				qi = 11316,	-- Bloodpetal
 			}),
 			q(3883, {	-- Alien Ecology
 				qg = 9271,	-- Hol'anyee Marshal
@@ -179,8 +179,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11566),	-- Crystal Charge
 				},
@@ -193,8 +193,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11185, 10 },	-- Green Power Crystal
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11563),	-- Crystal Force
 				},
@@ -207,8 +207,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 					{ "i", 11185, 10 },	-- Green Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11562),	-- Crystal Restore
 				},
@@ -221,8 +221,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11567),	-- Crystal Spire
 				},
@@ -235,8 +235,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11185, 10 },	-- Green Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11564),	-- Crystal Ward
 				},
@@ -249,8 +249,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11565),	-- Crystal Yield
 				},
@@ -268,11 +268,11 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			q(5150, {	-- Dadanga is Hungry!
 				qg = 9274,	-- Dadanga
-				qi = 15699,	-- Small Brown-wrapped Package
 				coord = { 43.6, 7.2, MAP.UNGORO_CRATER },
 				cost = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
+				qi = 15699,	-- Small Brown-wrapped Package
 				groups = {
 					i(13481),	-- Recipe: Elixir of Brute Force (RECIPE!)
 				},
@@ -342,10 +342,10 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3908, {	-- It's a Secret to Everybody (3/3)
 				sourceQuest = 3845,	-- It's a Secret to Everybody (2/3)
 				qg = 8737,	-- Linken
-				qi = 11133,	-- Linken's Training Sword
 				coord = { 44.6, 8.2, MAP.UNGORO_CRATER },
 				maps = { MAP.WINTERSPRING },
 				lvl = 47,
+				qi = 11133,	-- Linken's Training Sword
 			}),
 			q(3962, {	-- It's Dangerous to Go Alone
 				sourceQuest = 3961,	-- Linken's Adventure
@@ -396,9 +396,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3961, {	-- Linken's Adventure
 				sourceQuest = 4005,	-- Aquementas
 				qg = 9117,	-- J.D. Collie
-				qi = 11522,	-- Silver Totem of Aquementas
 				coord = { 41.8, 2.6, MAP.UNGORO_CRATER },
 				lvl = 47,
+				qi = 11522,	-- Silver Totem of Aquementas
 			}),
 			q(3942, {	-- Linken's Memory
 				sourceQuest = 3941,	-- A Gnome's Assistance
@@ -409,9 +409,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			q(4492, {	-- Lost!
 				qg = 9997,	-- Spraggle Frock
-				qi = 15722,	-- Spraggle's Canteen
 				coord = { 43.6, 8.5, MAP.UNGORO_CRATER },
 				lvl = 50,
+				qi = 15722,	-- Spraggle's Canteen
 			}),
 			q(4321, {	-- Making Sense of It
 				sourceQuests = {
@@ -437,10 +437,10 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3912, {	-- Meet at the Grave
 				sourceQuest = 3909,	-- The Videre Elixir
 				qg = 9298,	-- Donova Snowden
-				qi = 11136,	-- Linken's Tempered Sword
 				coord = { 31.2, 45.2, MAP.WINTERSPRING },
 				cost = { { "i", 11243, 1 } },	-- Videre Elixir
 				lvl = 47,
+				qi = 11136,	-- Linken's Tempered Sword
 			}),
 			q(4141, {	-- Muigin and Larion
 				qg = 9119,	-- Muigin
@@ -530,9 +530,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4292, {	-- The Bait for Lar'korwi
 				sourceQuest = 4291,	-- The Scent of Lar'korwi
 				qg = 9619,	-- Torwa Pathfinder
-				qi = 11568,	-- Torwa's Pouch
 				coord = { 71.6, 76.0, MAP.UNGORO_CRATER },
 				lvl = 48,
+				qi = 11568,	-- Torwa's Pouch
 				groups = {
 					objective(1, {	-- 0/1 Lar'korwi's Head
 						providers = {
@@ -701,8 +701,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				},
 			}),
 			q(3884, {	-- Williden's Journal
-				qi = 11116,	-- A Mangled Journal
 				lvl = 48,
+				qi = 11116,	-- A Mangled Journal
 			}),
 		}),
 		n(RARES, {

@@ -54,11 +54,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3201, {	-- At Last!
 				sourceQuest = 3182,	-- Proof of Deed
 				qg = 8256,	-- Curator Thorius
-				qi = 10022,	-- Proof of Deed
 				coord = { 71.4, 16.2, MAP.IRONFORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 10022,	-- Proof of Deed
 				groups = {
 					i(5396),	-- Key to Searing Gorge
 				},
@@ -152,8 +152,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				cost = {
 					{ "i", 18945, 4 },	-- Dark Iron Residue
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
 				qg = 14627,	-- Hansel Heavyhands
@@ -245,10 +245,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3182, {	-- Proof of Deed
 				sourceQuest = 3181,	-- The Horn of the Beast
 				qg = 3836,	-- Mountaineer Pebblebitty
-				qi = 10005,	-- Margol's Gigantic Horn
 				coord = { 18.2, 84.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 10005,	-- Margol's Gigantic Horn
 			}),
 			q(3372, {	-- Release Them
 				sourceQuest = 3371,	-- Dwarven Justice
@@ -280,8 +280,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ "i", 4234, 10 },	-- Heavy Leather
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(8241, {	-- Restoring Fiery Flux Supplies via Iron
 				sourceQuest = 7722,	-- What the Flux?
@@ -294,8 +294,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ "i", 3575, 4 },	-- Iron Bar
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(7736, {	-- Restoring Fiery Flux Supplies via Kingsblood
 				sourceQuest = 7722,	-- What the Flux?
@@ -308,8 +308,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ "i", 3356, 4 },	-- Kingsblood
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(3566, {	-- Rise, Obsidion!
 				sourceQuest = 3372,	-- Release Them
@@ -474,8 +474,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				coord = { 73.0, 77.2, MAP.SEARING_GORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				cr = 5833,	-- Margol the Rager
 				lvl = 40,
+				cr = 5833,	-- Margol the Rager
 			}),
 			q(4451, {	-- The Key to Freedom
 				providers = {

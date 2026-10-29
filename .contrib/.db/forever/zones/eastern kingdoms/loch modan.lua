@@ -50,19 +50,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(161, {	-- A Dark Threat Looms (3/7)
 				sourceQuest = 199,	-- A Dark Threat Looms (2/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2563,	-- Strange Smelling Powder
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2563,	-- Strange Smelling Powder
 			}),
 			q(274, {	-- A Dark Threat Looms (4/7)
 				sourceQuest = 161,	-- A Dark Threat Looms (3/7)
 				qg = 1073,	-- Ashlan Stonesmirk
-				qi = 2609,	-- Disarming Colloid
 				coord = { 50.0, 18.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2609,	-- Disarming Colloid
 			}),
 			q(278, {	-- A Dark Threat Looms (5/7)
 				sourceQuest = 274,	-- A Dark Threat Looms (4/7)
@@ -103,10 +103,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(280, {	-- A Dark Threat Looms (6/7)
 				sourceQuest = 278,	-- A Dark Threat Looms (5/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII
-				qi = 2610,	-- Disarming Mixture
 				coord = { 46.0, 13.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				qi = 2610,	-- Disarming Mixture
 			}),
 			q(283, {	-- A Dark Threat Looms (7/7)
 				sourceQuest = 280,	-- A Dark Threat Looms (6/7)
@@ -385,16 +385,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				sourceQuest = 79974,	-- Wet Job
 				provider = { "o", 424007 },	-- Carved Figurine
 				coord = { 49.5, 12.8, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
-				qi = 2637,	-- Ironband's Progress Report
 				coord = { 65.9, 65.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 2637,	-- Ironband's Progress Report
 			}),
 			q(86613, {	-- Excavation Tools
 				qs = 278049,	-- Excavation Tools (QS!)
@@ -407,10 +407,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					{ 71.1, 68.3, MAP.LOCH_MODAN },
 					{ 72.4, 61.7, MAP.LOCH_MODAN },
 				},
-				-- Turned in to Prospector Ironband (1344).
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				-- Turned in to Prospector Ironband (1344).
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Excavation Tools
 						providers = {
@@ -483,10 +483,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(6387, {	-- Honor Students
 				qg = 1681,	-- Brock Stoneseeker <Mining Trainer>
-				qi = 16310,	-- Brock's List (PQI!)
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
 				lvl = 10,
+				qi = 16310,	-- Brock's List (PQI!)
 			}),
 			q(224, {	-- In Defense of the King's Lands (1/4)
 				qg = 1089,	-- Mountaineer Cobbleflint
@@ -567,11 +567,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				-- CRIEVE NOTE: This might be a mining exclusive quest
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				cost = {{ "i", 2841, 10 }},	-- 10x Bronze Bar
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(3576),	-- Tin Bar
 				},
@@ -580,8 +580,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 13,
+				isBreadcrumb = true,
 			}),
 			q(255, {	-- Mercenaries
 				qg = 1139,	-- Magistrate Bluntnose
@@ -604,8 +604,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 9,
+				isBreadcrumb = true,
 			}),
 			q(302, {	-- Powder to Ironband
 				sourceQuest = 301,	-- Report to Ironforge
@@ -649,17 +649,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
 				qg = 1105,	-- Jern Hornhelm <Explorers' League>
-				qi = 2637,	-- Ironband's Progress Report
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 2637,	-- Ironband's Progress Report
 			}),
 			q(468, {	-- Report to Mountaineer Rockgar
 				qg = 1340,	-- Mountaineer Kadrell
 				coord = { 34.8, 47.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 19,
+				isBreadcrumb = true,
 			}),
 			q(273, {	-- Resupplying the Excavation
 				sourceQuest = 302,	-- Powder to Ironband
@@ -671,10 +671,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(6391, {	-- Ride to Ironforge
 				sourceQuest = 6387,	-- Honor Students
 				qg = 1572,	-- Thorgrum Borrelson <Gryphon Master>
-				qi = 16310,	-- Brock's List
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
 				lvl = 10,
+				qi = 16310,	-- Brock's List
 			}),
 			q(86614, {	-- Silver of the Waves
 				provider = { "o", 665289 },	-- Discarded Fishing Toolbox
@@ -688,9 +688,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86667, {	-- Snowbound
 				qg = 49808,	-- Grenhild Darktalon
 				coord = { 36.4, 48.2, LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Jar of Snow
 						providers = {
@@ -704,11 +704,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(1338, {	-- Stormpike's Order
 				sourceQuest = 1339,	-- Mountaineer Stormpike's Task
 				qg = 1343,	-- Mountaineer Stormpike
-				qi = 5998,	-- Stormpike's Request
 				coord = { 24.7, 18.3, MAP.LOCH_MODAN },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				qi = 5998,	-- Stormpike's Request
 			}),
 			q(455, {	-- The Algaz Gauntlet
 				sourceQuest = 468,	-- Report to Mountaineer Rockgar
@@ -765,9 +765,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(86758, {	-- Twisting the Knife
 				qg = 1154,	-- Marek Ironheart
 				coord = { 81.8, 61.8, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Marek's Croc-Hunting Knife
 						provider = { "i", 279591 },	-- Marek's Croc-Hunting Knife
@@ -810,10 +810,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(531, {	-- Vyrin's Revenge (2/2)
 				sourceQuest = 271,	-- Vyrin's Revenge (1/2)
 				qg = 1187,	-- Daryl the Youngling
-				qi = 2713,	-- Ol' Sooty's Head
 				coord = { 83.4, 65.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 2713,	-- Ol' Sooty's Head
 				groups = {
 					i(3574),	-- Hunting Ammo Sack
 					i(3573),	-- Hunting Quiver
@@ -844,10 +844,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			q(94616, {	-- Water Sapta
 				qg = 258043,	-- Norric Lochthane
 				coord = { 41.8, 19.0, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(6637),	-- Water Sapta
 				},
@@ -931,16 +931,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 		n(TREASURES, {
 			o(408014, {	-- Gnomish Tome
 				coord = { 35.5, 48.3, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(208860),	-- Rumi of Gnomeregan: The Collected Works
 				},
 			}),
 			o(409731, {	-- Scrolls
 				coord = { 77.4, 14.0, MAP.LOCH_MODAN },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(209850),	-- Runes of the Sorcerer-Kings
 				},

@@ -83,11 +83,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 		n(QUESTS, {
 			q(96785, {	-- Ain't No Telling
 				qg = 266847,	-- Anastasia Miller
-				qi = 275706,	-- Syndicate Uniform (PQI!)
 				coord = { 26.8, 64.4, MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 275706,	-- Syndicate Uniform (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Stolen Funds
 						providers = {
@@ -101,10 +101,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(695, {	-- An Apprentice's Enchantment
 				sourceQuest = 694,	-- Trelane's Defenses
 				qg = 2788,	-- Apprentice Kryten
-				qi = 4529,	-- Enchanted Agate
 				coord = { 46.2, 47.8, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 4529,	-- Enchanted Agate
 			}),
 			q(696, {	-- Attack on the Tower
 				sourceQuest = 695,	-- An Apprentice's Enchantment
@@ -274,21 +274,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(92872, {	-- Dutiful Steps
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Caretaker Alaric (2782) in the Stromgarde Keep crypt.
-				qi = 278543,	-- Pouch of Tomb Dust (PQI!)
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Caretaker Alaric (2782) in the Stromgarde Keep crypt.
+				qi = 278543,	-- Pouch of Tomb Dust (PQI!)
 			}),
 			q(96264, {	-- Elemental Aid
 				sourceQuest = 94789,	-- Call of Air
 				qg = 259023,	-- Veyric Thunderhame
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.RAZORFEN_KRAUL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Tattered Note
 						provider = { "i", 274463 },	-- Tattered Note
@@ -329,9 +329,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(92867, {	-- Ground to Keep
+				lvl = 32,
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Groundskeeper Lomar (219) in Stromgarde Keep.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/5 Boulderfist Mauler slain
 						provider = { "n", 2569 },	-- Boulderfist Mauler
@@ -369,10 +369,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(702, {	-- Guile of the Raptor (2/3)
 				sourceQuest = 701,	-- Guile of the Raptor (1/3)
 				qg = 2706,	-- Tor'gan
-				qi = 4528,	-- Tor'gan's Orb
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 4528,	-- Tor'gan's Orb
 			}),
 			q(847, {	-- Guile of the Raptor (3/3)
 				sourceQuest = 702,	-- Guile of the Raptor (2/3)
@@ -393,13 +393,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(96135, {	-- Heed My Call
 				sourceQuest = 79358,	-- Storm, Earth, and Fire
 				qg = 259023,	-- Veyric Thunderhame
-				qi = 268582,	-- Corrupted Totems (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 268582,	-- Corrupted Totems (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Eye of the Tempest
 						provider = { "i", 212792 },	-- Eye of the Tempest
@@ -461,8 +461,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				requireSkill = FIRST_AID,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(663, {	-- Land Ho!
 				qg = 2766,	-- Lolo the Lookout <Blackwater Raiders>
@@ -471,27 +471,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(647, {	-- MacKreel's Moonshine
 				qg = 2696,	-- Foggy MacKreel
-				qi = 4441,	-- MacKreel's Moonshine
 				coord = { 43.2, 92.6, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				qi = 4441,	-- MacKreel's Moonshine
 			}),
 			q(690, {	-- Malin's Request (1/2)
 				qg = 2708,	-- Archmage Malin
 				coord = { 50.6, 87.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(697, {	-- Malin's Request (2/2)
 				sourceQuest = 696,	-- Attack on the Tower
 				qg = 2789,	-- Skuerto
-				qi = 4533,	-- Sealed Letter to Archmage Malin
 				coord = { 46.6, 47.0, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 4533,	-- Sealed Letter to Archmage Malin
 				groups = {
 					i(4975),	-- Vigilant Buckler
 					i(15104),	-- Wingborne Boots
@@ -500,11 +500,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(96784, {	-- Master of Disguise
 				sourceQuest = 96783,	-- A Way In
 				provider = { "o", 656157 },	-- Syndicate Footlocker
-				qi = 275706,	-- Syndicate Uniform (PQI!)
 				coord = { 32.2, 26.4, MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 275706,	-- Syndicate Uniform (PQI!)
 			}),
 			q(653, {	-- Myzrael's Allies [A]
 				sourceQuest = 652,	-- Breaking the Keystone
@@ -553,10 +553,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(674, {	-- Raising Spirits (2/3)
 				sourceQuest = 672,	-- Raising Spirits (1/3)
 				qg = 2706,	-- Tor'gan
-				qi = 4526,	-- Raptor Talon Amulet
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 4526,	-- Raptor Talon Amulet
 			}),
 			q(675, {	-- Raising Spirits (3/3)
 				sourceQuest = 674,	-- Raising Spirits (2/3)
@@ -599,10 +599,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(641, {	-- Sigil of Thoradin
 				sourceQuest = 640,	-- The Broken Sigil
 				qg = 2706,	-- Tor'gan
-				qi = 4453,	-- Sigil of Thoradin
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 32,
+				qi = 4453,	-- Sigil of Thoradin
 			}),
 			q(644, {	-- Sigil of Trollbane
 				sourceQuest = 643,	-- Sigil of Arathor
@@ -620,9 +620,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(97539, {	-- Silky Sutures
 				qg = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
 				coord = { 73.4, 36.4, MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Surgical Spidersilk
 						provider = { "i", 278225 },	-- Surgical Spidersilk
@@ -665,13 +665,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(79358, {	-- Storm, Earth, and Fire
 				sourceQuest = 96264,	-- Elemental Aid
 				qg = 259023,	-- Veyric Thunderhame
-				qi = 274483,	-- The Walks of Shaman (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.BADLANDS, MAP.SWAMP_OF_SORROWS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 274483,	-- The Walks of Shaman (PQI!)
 				groups = {
 					objective(1, {	-- 0/5 Twisted Fire Totem
 						provider = { "i", 274044 },	-- Twisted Fire Totem
@@ -795,24 +795,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(668, {	-- Sunken Treasure (3/5)
 				sourceQuest = 666,	-- Sunken Treasure (2/5)
 				qg = 2774,	-- Doctor Draxlegauge <Blackwater Raiders>
-				qi = 4493,	-- Elven Gems
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
+				qi = 4493,	-- Elven Gems
 			}),
 			q(669, {	-- Sunken Treasure (4/5)
 				sourceQuest = 668,	-- Sunken Treasure (3/5)
 				qg = 2610,	-- Shakes O'Breen <Blackwater Raiders>
-				qi = 4502,	-- Sample Elven Gem
 				coord = { 32.2, 81.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
+				qi = 4502,	-- Sample Elven Gem
 			}),
 			q(670, {	-- Sunken Treasure (5/5)
 				sourceQuest = 669,	-- Sunken Treasure (4/5)
 				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
-				qi = 4494,	-- Seahorn's Sealed Letter
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
 				lvl = 35,
+				qi = 4494,	-- Seahorn's Sealed Letter
 			}),
 			q(640, {	-- The Broken Sigil
 				sourceQuest = 639,	-- Sigil of Strom
@@ -833,10 +833,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(92707, {	-- The Giant in the Den
 				qs = 253711,	-- Goliath's Wristguards (QS!)
-				-- Turned in to Drum Fel (2771) in Hammerfall.
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				-- Turned in to Drum Fel (2771) in Hammerfall.
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(676, {	-- The Hammer May Fall
 				altQuests = { 677 },	-- Call to Arms (1/3)
@@ -893,9 +893,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 266847,	-- Anastasia Miller
 				coord = { 26.8, 64.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Intercepted Shipment
 						provider = { "i", 275882 },	-- Intercepted Shipment
@@ -908,13 +908,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(96016, {	-- The Tempest's Weapons
 				sourceQuest = 96135,	-- Heed My Call
 				qg = 259023,	-- Veyric Thunderhame
-				qi = 212792,	-- Eye of the Tempest (PQI!)
 				coord = { 59.8, 27.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 212792,	-- Eye of the Tempest (PQI!)
 				groups = {
 					i(280696),	-- Elementalist's Guard
 					i(280607),	-- Lightning's Grasp
@@ -943,8 +943,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					{ "o", 424006 },	-- Hastily Rolled-Up Satchel
 				},
 				coord = { 22.5, 24.2, ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(211527),	-- Cozy Sleeping Bag
 					i(216619),	-- Student Fodder
@@ -954,9 +954,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 693,	-- Wand over Fist
 				qg = 2789,	-- Skuerto
 				coord = { 46.6, 47.0, MAP.ARATHI_HIGHLANDS },
-				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { REMOVED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/1 Azure Agate
 						provider = { "i", 4527 },	-- Azure Agate
@@ -1016,8 +1016,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2497,	-- Nimboya
 				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 32,
+				isBreadcrumb = true,
 			}),
 			q(693, {	-- Wand over Fist
 				sourceQuest = 691,	-- Worth Its Weight in Gold
@@ -1080,9 +1080,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 97539,	-- Silky Sutures
 				qg = 12920,	-- Doctor Gregory Victor <Trauma Surgeon>
 				coord = { 73.4, 36.4, MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Packaged Tonics
 						provider = { "i", 278462 },	-- Packaged Tonics
@@ -1358,9 +1358,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			i(253711, {	-- Goliath's Wristguards (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 218032,	-- Witherbark Goliath
 				coord = { 67.8, 79.4, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2623, {	-- Holy Diadem
 				crs = {
@@ -1372,9 +1372,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 2589,	-- Syndicate Mercenary
 				coord = { 32.4, 30.8, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1993, {	-- Ogremind Ring
 				crs = {

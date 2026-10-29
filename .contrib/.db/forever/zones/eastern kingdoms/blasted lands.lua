@@ -57,8 +57,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					{ "i", 8394, 10 },	-- Basilisk Brain
 					{ "i", 8396, 2 },	-- Vulture Gizzard
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(8423),	-- Cerebral Cortex Compound
 				},
@@ -68,8 +68,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
 				cost = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(10752),	-- Emerald Encrusted Chest
 				},
@@ -79,8 +79,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
 				cost = { { "i", 10593, 1 } },	-- Imperfect Draenethyst Fragment
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(12122),	-- Kum'isha's Junk
 				},
@@ -101,8 +101,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					{ "i", 8392, 2 },	-- Blasted Boar Lung
 					{ "i", 8393, 1 },	-- Scorpok Pincer
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(8410),	-- R.O.I.D.S.
 				},
@@ -124,8 +124,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					{ "i", 8396, 2 },	-- Vulture Gizzard
 					{ "i", 8392, 1 },	-- Blasted Boar Lung
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(8412),	-- Ground Scorpok Assay
 				},
@@ -152,8 +152,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					{ "i", 8393, 2 },	-- Scorpok Pincer
 					{ "i", 8394, 1 },	-- Basilisk Brain
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(8411),	-- Lung Juice Cocktail
 				},
@@ -165,8 +165,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					{ "i", 8396, 10 },	-- Vulture Gizzard
 					{ "i", 8391, 2 },	-- Snickerfang Jowl
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					i(8424),	-- Gizzard Gum
 				},

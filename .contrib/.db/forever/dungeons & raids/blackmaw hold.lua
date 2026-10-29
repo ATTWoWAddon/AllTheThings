@@ -6,10 +6,10 @@ instanceroot(78794, {	-- Blackmaw Hold
 	-- Blizzard lists it for levels 55-60.
 	--lore = "",
 	icon = 409547,
+	lvl = 55,
 	--zoneTextAreaID = ,	-- Blackmaw Hold
 	--coord = { 37.2, 33.3, MAP.AZSHARA },	-- Blackmaw Hold (area 1216); verify the entrance.
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	lvl = 55,
 	groups = {
 		n(QUESTS, {
 			

@@ -64,21 +64,21 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				sourceQuest = 98251,	-- Never Coming Back
 				qg = 267214,	-- Va'xug Firefure
 				coord = { 40.4, 61.4, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- Objective: guide Va'xug's Eye of Kilrogg (271181) back to the main Ashenvale road; it's tracked by a hidden credit NPC.
 			}),
 			q(78089, {	-- Advice From Stormwind
 				sourceQuest = 78088,	-- A Strange Artifact
 				qg = 3663,	-- Delgren the Purifier
-				qi = 209748,	-- Althalaxx Orb (PQI!)
 				coord = { 26.2, 38.6, MAP.ASHENVALE },
 				maps = { MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 209748,	-- Althalaxx Orb (PQI!)
 			}),
 			q(1025, {	-- An Aggressive Defense
 				sourceQuest = 1023,	-- Raene's Cleansing (2/11)
@@ -240,11 +240,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 			q(98027, {	-- Gleaming Crescent Necklace
 				provider = { "o", 669176 },	-- Gleaming Crescent Pendant
-				qi = 279274,	-- Gleaming Crescent Necklace (PQI!)
 				coord = { 63.0, 71.6, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279274,	-- Gleaming Crescent Necklace (PQI!)
 				groups = {
 					i(281290),	-- Replica Crescent Necklace
 				},
@@ -280,12 +280,12 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(824, {	-- Je'neu of the Earthen Ring
 				sourceQuest = 1918,	-- The Befouled Element
 				qg = 12737,	-- Mastok Wrilehiss
-				qi = 16408,	-- Befouled Water Globe
 				coords = {
 					{ 73.6, 60.0, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
 				lvl = 23,
+				qi = 16408,	-- Befouled Water Globe
 				groups = {
 					i(16659),	-- Deftkin Belt
 					i(16660),	-- Driftmire Shield
@@ -297,15 +297,15 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 35.6, 49.2, MAP.ASHENVALE },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 18,
+				isBreadcrumb = true,
 			}),
 			q(4581, {	-- Kayneth Stillwind
 				qg = 3845,	-- Shindrell Swiftfire
-				qi = 12060,	-- Shindrell's Note
 				coord = { 34.7, 48.9, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				qi = 12060,	-- Shindrell's Note
 			}),
 			q(6621, {	-- King of the Foulweald
 				sourceQuests = {
@@ -375,9 +375,9 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(98251, {	-- Never Coming Back
 				qg = 267214,	-- Va'xug Firefure
 				coord = { 40.4, 61.4, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Shadowhorn Stag slain
 						provider = { "n", 3817 },	-- Shadowhorn Stag
@@ -392,10 +392,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(1020, {	-- Orendil's Cure
 				sourceQuest = 1010,	-- Bathran's Hair
 				qg = 3847,	-- Orendil Broadleaf
-				qi = 5460,	-- Orendil's Cure
 				coord = { 26.4, 38.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 5460,	-- Orendil's Cure
 			}),
 			q(1134, {	-- Pridewings of Stonetalon
 				sourceQuest = 1008,	-- The Zoram Strand
@@ -427,10 +427,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(1023, {	-- Raene's Cleansing (2/11) [Vanilla] / The Lost Gem [CATA]
 				sourceQuest = 991,	-- Raene's Cleansing (1/11)
 				qg = 3891,	-- Teronis' Corpse
-				qi = 5505,	-- Teronis' Journal
 				coord = { 20.2, 42.2, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5505,	-- Teronis' Journal
 				groups = {
 					objective(1, {	-- 0/1 Glowing Gem
 						provider = { "i", 5463 },	-- Glowing Gem
@@ -446,10 +446,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(1024, {	-- Raene's Cleansing (3/11) [Vanilla] / Dryad Delivery [CATA]
 				sourceQuest = 1023,	-- Raene's Cleansing (2/11)
 				qg = 3691,	-- Raene Wolfrunner
-				qi = 5463,	-- Glowing Gem
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5463,	-- Glowing Gem
 			}),
 			q(1026, {	-- Raene's Cleansing (4/11) [Vanilla] / Search the Bole [CATA]
 				sourceQuest = 1024,	-- Raene's Cleansing (3/11)
@@ -492,10 +492,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(1028, {	-- Raene's Cleansing (6/11)
 				sourceQuest = 1027,	-- Raene's Cleansing (5/11)
 				qg = 3916,	-- Shael'dryn
-				qi = 5547,	-- Reconstructed Rod
 				coord = { 53.5, 46.3, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5547,	-- Reconstructed Rod
 				groups = {
 					i(5462),	-- Dartol's Rod of Transformation
 				},
@@ -510,26 +510,26 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(1029, {	-- Raene's Cleansing (8/11) [Vanilla] / Return to Raene [CATA]
 				sourceQuest = 1055,	-- Raene's Cleansing (7/11)
 				qg = 3916,	-- Shael'dryn
-				qi = 5462,	-- Dartol's Rod of Transformation
 				coord = { 53.5, 46.3, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5462,	-- Dartol's Rod of Transformation
 			}),
 			q(1030, {	-- Raene's Cleansing (9/11) [Vanilla] / Dartol's Rod [CATA]
 				sourceQuest = 1029,	-- Raene's Cleansing (8/11)
 				qg = 3691,	-- Raene Wolfrunner
-				qi = 5462,	-- Dartol's Rod of Transformation
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5462,	-- Dartol's Rod of Transformation
 			}),
 			q(1045, {	-- Raene's Cleansing (10/11) [Vanilla] / A New Adornment [CATA]
 				sourceQuest = 1030,	-- Raene's Cleansing (9/11)
 				qg = 3897,	-- Krolg
-				qi = 5462,	-- Dartol's Rod of Transformation
 				coord = { 50.8, 75.0, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 5462,	-- Dartol's Rod of Transformation
 				groups = {
 					objective(1, {	-- 0/1 Ran Bloodtooth
 						provider = { "i", 5388 },	-- Ran Bloodtooth's Skull
@@ -566,12 +566,12 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(78093, {	-- Return to Delgren
 				sourceQuest = 78092,	-- It Must Be Destroyed
 				provider = { "o", 409315 },	-- Shattered Orb
-				qi = 209800,	-- Orb Fragments (PQI!)
 				coord = { 89.4, 77.0, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 209800,	-- Orb Fragments (PQI!)
 				groups = {
 					i(277205),	-- Cloak of the Divine Storm
 				},
@@ -666,27 +666,27 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				qg = 3970,	-- Llana <Reagent Supplies>
 				coord = { 35.0, 48.4, MAP.ASHENVALE },
 				maps = { MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(24, {		-- Shadumbra's Head
 				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16304,	-- Shadumbra's Head
 				coords = {
 					{ 59.8, 54.6, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
-				cr = 12677,	-- Shadumbra
 				lvl = 20,
+				cr = 12677,	-- Shadumbra
+				qi = 16304,	-- Shadumbra's Head
 			}),
 			q(98418, {	-- Shared Fury
 				sourceQuest = 98417,	-- Vengeful Trail
 				qg = 221269,	-- Maseara Autumnmoon
 				coord = { 86.2, 45.8, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Xavian Betrayer slain
 						provider = { "n", 3754 },	-- Xavian Betrayer
@@ -708,20 +708,20 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 			q(2, {		-- Sharptalon's Claw
 				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16305,	-- Sharptalon's Claw
 				coords = {
 					{ 75.8, 69.6, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
-				cr = 12676,	-- Sharptalon
 				lvl = 20,
+				cr = 12676,	-- Sharptalon
+				qi = 16305,	-- Sharptalon's Claw
 			}),
 			q(86757, {	-- Slowing the Orc Advance
 				qg = 3955,	-- Shandrina <Trade Goods>
 				coord = { 49.4, 67.0, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 27,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Jagged Orcish Sword
 						provider = { "i", 279505 },	-- Jagged Orcish Sword
@@ -776,22 +776,22 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				qg = 10880,	-- Warcaller Gorlach
 				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(6382, {	-- The Ashenvale Hunt (1/2) [The Barrens]
 				qg = 3387,	-- Jorn Skyseer
 				coord = { 44.86, 59.13, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(742, {	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
 				qg = 10881,	-- Bluff Runner Windstrider
 				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(6383, {	-- The Ashenvale Hunt (2/2)
 				sourceQuests = {
@@ -806,11 +806,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 			q(1918, {	-- The Befouled Element
 				sourceQuest = 25,	-- Stonetalon Standstill / Simmer Down Now [CATA]
-				qi = 16408,	-- Befouled Water Globe
 				coord = { 50.8, 71.6, MAP.ASHENVALE },
 				races = HORDE_ONLY,
-				cr = 12759,	-- Tideress
 				lvl = 23,
+				cr = 12759,	-- Tideress
+				qi = 16408,	-- Befouled Water Globe
 			}),
 			q(1031, {	-- The Branch of Cenarius
 				sourceQuest = 1021,	-- Vile Satyr! Dryads in Danger!
@@ -973,16 +973,16 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					6542,	-- Report to Kadrak (Stonetalon)
 				},
 				qg = 8582,	-- Kadrak
-				qi = 16783,	-- Bundle of Reports
 				coord = { 48.12, 5.42, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 17,
+				qi = 16783,	-- Bundle of Reports
 				groups = {
 					q(6546, {	-- Warsong Outrider Update
 						qg = 12864,	-- Warsong Outrider
-						qi = 16746,	-- Warsong Report
 						coord = { 83.6, 51.4, MAP.ASHENVALE },
 						repeatable = true,
+						qi = 16746,	-- Warsong Report
 						groups = {
 							objective(3, {	-- 0/1 Warsong Outrider Update
 								questID = 6543,	-- The Warsong Reports
@@ -992,9 +992,9 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 					q(6545, {	-- Warsong Runner Update
 						qg = 12863,	-- Warsong Runner
-						qi = 16746,	-- Warsong Report
 						coord = { 12.2, 34.2, MAP.ASHENVALE },
 						repeatable = true,
+						qi = 16746,	-- Warsong Report
 						groups = {
 							objective(2, {	-- 0/1 Warsong Runner Update
 								questID = 6543,	-- The Warsong Reports
@@ -1004,9 +1004,9 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 					q(6547, {	-- Warsong Scout Update
 						qg = 12862,	-- Warsong Scout
-						qi = 16746,	-- Warsong Report
 						coord = { 71.04, 68.22, MAP.ASHENVALE },
 						repeatable = true,
+						qi = 16746,	-- Warsong Report
 						groups = {
 							objective(1, {	-- 0/1 Warsong Scout Update
 								questID = 6543,	-- The Warsong Reports
@@ -1066,13 +1066,13 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 			q(23, {		-- Ursangous's Paw
 				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16303,	-- Ursangous's Paw
 				coords = {
 					{ 41.6, 66.6, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
-				cr = 12678,	-- Ursangous
 				lvl = 20,
+				cr = 12678,	-- Ursangous
+				qi = 16303,	-- Ursangous's Paw
 			}),
 			q(1037, {	-- Velinde Starsong
 				sourceQuest = 1022,	-- The Howling Vale
@@ -1084,9 +1084,9 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			q(98417, {	-- Vengeful Trail
 				qg = 221269,	-- Maseara Autumnmoon
 				coord = { 86.2, 45.8, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Vine-Wrapped Scroll
 						providers = {
@@ -1131,8 +1131,8 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						coord = { 73.0, 61.4, MAP.ASHENVALE },
 						cost = { { "i", 4369, 1 } },	-- Deadly Blunderbuss
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 22,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Warsong Saw Blades
 								questID = 6571,	-- Warsong Supplies
@@ -1389,8 +1389,8 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				},
 			}),
 			i(250182, {	-- Recipe: Bear Brisket (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 3809,	-- Ashenvale Bear
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

@@ -39,8 +39,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLACKROCK_MOUNTAIN, {
 		}),
 		n(SPECIAL, {
 			n(16033, {	-- Bodley
-				coord = { 63.1, 44.4, MAP.BLACKROCK_MOUNTAIN },
 				provider = { "i", 22115 },	-- Extra-Dimensional Ghost Revealer
+				coord = { 63.1, 44.4, MAP.BLACKROCK_MOUNTAIN },
 				groups = {
 					n(SPECIAL, {
 						description = "Available if a specific Quest (8996) has been completed.",

@@ -29,14 +29,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			fp(63, {	-- Nighthaven, Moonglade
 				cr = 11800,	-- Silva Fil'naveth <Darnassus Flight Master>
 				coord = { 44.2, 45.2, MAP.MOONGLADE },
-				classes = { DRUID },
 				races = ALLIANCE_ONLY,
+				classes = { DRUID },
 			}),
 			fp(62, {	-- Nighthaven, Moonglade
 				cr = 11798,	-- Bunthen Plainswind <Thunder Bluff Flight Master>
 				coord = { 44.4, 45.6, MAP.MOONGLADE },
-				classes = { DRUID },
 				races = HORDE_ONLY,
+				classes = { DRUID },
 			}),
 		}),
 		n(QUESTS, {
@@ -108,10 +108,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				sourceQuest = 98404,	-- The Great Windborne Cat Spirit
 				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
 				coord = { 44.0, 73.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(6001, {	-- Body and Heart [A]
 				sourceQuest = 5931,	-- Back to Darnassus
@@ -124,8 +124,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
-						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust
 						coord = { 43.0, 45.0, MAP.DARKSHORE },
+						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -157,8 +157,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
-						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust
 						coord = { 42.0, 60.0, MAP.THE_BARRENS },
+						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -196,48 +196,48 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				coord = { 34.8, 7.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5928, {	-- Heeding the Call [Mulgore]
 				qg = 3064,	-- Gennia Runetotem <Druid Trainer>
 				coord = { 48.4, 59.6, MAP.MULGORE },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5927, {	-- Heeding the Call [Orgrimmar]
 				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5924, {	-- Heeding the Call [Stormwind City]
 				qg = 5505,	-- Theridran <Druid Trainer>
 				coord = { 36.2, 64.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5925, {	-- Heeding the Call [Teldrassil]
 				qg = 3602,	-- Kal <Druid Trainer>
 				coord = { 56.0, 61.6, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5926, {	-- Heeding the Call [Thunder Bluff]
 				qg = 6746,	-- Innkeeper Pala <Innkeeper>
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(6121, {	-- Lessons Anew [A]
 				sourceQuests = {
@@ -271,10 +271,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.4, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				classes = { DRUID },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(94914, {	-- Moonglade
 				sourceQuests = {
@@ -284,10 +284,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 				qg = 5504,	-- Sheldras Moontree <Druid Trainer>
 				coord = { 21.0, 55.4, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5921, {	-- Moonglade [A]
 				sourceQuests = {
@@ -349,10 +349,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(98340, {	-- The Great Cat Spirit
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TAUREN },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98342, {	-- The Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
@@ -421,10 +421,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				sourceQuest = 98340,	-- The Great Cat Spirit
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98404, {	-- The Great Windborne Cat Spirit
 				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
@@ -526,8 +526,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
 						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
-						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
 						coord = { 54.9, 33.3, MAP.DARKSHORE },
+						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
 					}),
 				},
 			}),
@@ -542,8 +542,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Dreadmist Peak Sampler
 						provider = { "i", 15843 },	-- Filled Dreadmist Peak Sampler
-						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Peak Sampler
 						coord = { 47.0, 18.0, MAP.THE_BARRENS },
+						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Peak Sampler
 					}),
 				},
 			}),
@@ -641,9 +641,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					6762,	-- Rabine Saturna [A]
 				},
 				qg = 11801,	-- Rabine Saturna
-				qi = 17355,	-- Rabine's Letter
 				coord = { 51.7, 45.1, MAP.MOONGLADE },
 				lvl = 54,
+				qi = 17355,	-- Rabine's Letter
 			}),
 		}),
 		n(VENDORS, {

@@ -65,10 +65,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 91859,	-- A Curious Pair
 				qg = 259611,	-- Deathguard Baldren
 				coord = { 45.6, 41.8, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(530, {	-- A Husband's Revenge
 				sourceQuest = 441,	-- Raleigh and the Undercity
@@ -90,10 +90,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				qg = 259620,	-- Lumina Windsinger
 				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
 				maps = { MAP.ASHENVALE, MAP.BLACKFATHOM_DEEPS, MAP.DEADMINES, MAP.SHADOWFANG_KEEP },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Trevan's Weapon Notes
 						provider = { "i", 267454 },	-- Trevan's Weapon Notes
@@ -114,10 +114,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					q(95042, {	-- Seeking the Kor Gem
 						qg = 259649,	-- Ulric Frostveil
 						coord = { 11.8, 34.4, MAP.ASHENVALE },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 20,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
 								provider = { "i", 6995 },	-- Corrupted Kor Gem
@@ -323,9 +323,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 99,	-- Arugal's Folly (4/5)
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.81, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Worgen Bits
 						provider = { "i", 280375 },	-- Worgen Bits
@@ -393,10 +393,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(481, {	-- Dalar's Analysis
 				sourceQuest = 478,	-- Maps and Runes
 				qg = 2121,	-- Shadow Priest Allister
-				qi = 3353,	-- Rune-inscribed Pendant
 				coord = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3353,	-- Rune-inscribed Pendant
 			}),
 			q(482, {	-- Dalaran's Intentions
 				sourceQuest = 481,	-- Dalar's Analysis
@@ -418,10 +418,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 91860,	-- A Grim Fate
 				provider = { "o", 566037 },	-- Charred Remains
 				coord = { 65.0, 34.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(425, {	-- Ivar the Foul
 				sourceQuest = 91921,	-- Return to Quinn (Again)
@@ -441,17 +441,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(493, {	-- Journey to Hillsbrad Foothills
 				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
-				qi = 3468,	-- Renferrel's Findings
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 19,
+				qi = 3468,	-- Renferrel's Findings
 			}),
 			q(428, {	-- Lost Deathstalkers
 				qg = 1952,	-- High Executor Hadrec
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(91862, {	-- Lumina Windsinger
 				qg = 248755,	-- Lumina Windsinger
@@ -485,10 +485,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(95140, {	-- Old Fire-Eye
 				qg = 259620,	-- Lumina Windsinger
 				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Old Fire-Eye slain
 						provider = { "n", 259897 },	-- Old Fire-Eye
@@ -525,11 +525,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(441, {	-- Raleigh and the Undercity
 				sourceQuest = 440,	-- The Engraved Ring
 				qg = 1499,	-- Magistrate Sevren
-				qi = 3234,	-- Deliah's Ring
 				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3234,	-- Deliah's Ring
 			}),
 			q(448, {	-- Report to Hadrec
 				sourceQuest = 446,	-- Thule Ravenclaw
@@ -555,10 +555,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(430, {	-- Return to Quinn
 				sourceQuest = 429,	-- Wild Hearts
 				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
-				qi = 3165,	-- Quinn's Potion
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3165,	-- Quinn's Potion
 			}),
 			q(91921, {	-- Return to Quinn (Again)
 				sourceQuests = { 91920 },	-- Wild Eyes
@@ -572,10 +572,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(6323, {	-- Ride to the Undercity
 				sourceQuest = 6321,	-- Supplying the Sepulcher / Supplying Brill [CATA+]
 				qg = 2226,	-- Karos Razok <Bat Handler>
-				qi = 16209,	-- Podrig's Order
 				coord = { 45.6, 42.4, MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16209,	-- Podrig's Order
 			}),
 			q(439, {	-- Rot Hide Clues
 				sourceQuest = 438,	-- The Decrepit Ferry
@@ -609,10 +609,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(444, {	-- Rot Hide Origins
 				sourceQuest = 443,	-- Rot Hide Ichor
 				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
-				qi = 3237,	-- Sample Ichor
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3237,	-- Sample Ichor
 			}),
 			q(3221, {	-- Speak with Renferrel
 				sourceQuest = 449,	-- The Deathstalkers' Report
@@ -639,10 +639,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(6321, {	-- Supplying the Sepulcher / Supplying Brill [CATA+]
 				qg = 6389,	-- Deathguard Podrig
-				qi = 16209,	-- Podrig's Order
 				coord = { 43.4, 41.6, MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16209,	-- Podrig's Order
 			}),
 			q(437, {	-- The Dead Fields
 				qg = 1952,	-- High Executor Hadrec
@@ -661,18 +661,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(449, {	-- The Deathstalkers' Report
 				sourceQuest = 435,	-- Escorting Erland
 				qg = 1950,	-- Rane Yorick <Deathstalker>
-				qi = 3252,	-- Deathstalker Report
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3252,	-- Deathstalker Report
 			}),
 			q(95034, {	-- The Debt
 				qg = 259620,	-- Lumina Windsinger
 				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Speak with Lumina Windsinger
 						cr = 259620,	-- Lumina Windsinger
@@ -690,17 +690,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(440, {	-- The Engraved Ring
 				sourceQuest = 439,	-- Rot Hide Clues
 				qg = 1952,	-- High Executor Hadrec
-				qi = 3234,	-- Deliah's Ring
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				maps = { MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3234,	-- Deliah's Ring
 			}),
 			q(78699, {	-- The Eye of Bhossca
-				-- TODO: Wowhead doesn't list how this quest starts. Turned in at the Dead Drop (410369) in Silverpine Forest.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 25,
+				-- TODO: Wowhead doesn't list how this quest starts. Turned in at the Dead Drop (410369) in Silverpine Forest.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(277246),	-- Ruby-Adorned Blade
 				},
@@ -719,8 +719,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				provider = { "o", 410369 },	-- Dead Drop
 				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
 				maps = { MAP.SHADOWFANG_KEEP, MAP.STONETALON_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Horn of Xelthos
 						providers = {
@@ -738,8 +738,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 78261,	-- The Horn of Xelthos (1/2)
 				provider = { "o", 410369 },	-- Dead Drop
 				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(277210),	-- Pyrewood Signet Ring
 				},
@@ -747,11 +747,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(95885, {	-- The Offering of Blood
 				sourceQuest = 95883,	-- The Tortured Soul
 				provider = { "o", 645153 },	-- Offering Stone
-				qi = 210713,	-- Tortured Soul (PQI!)
 				coord = { 58.1, 69.8, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 210713,	-- Tortured Soul (PQI!)
 				groups = {
 					objective(1, {	-- Willingly offer blood
 						provider = { "o", 645153 },	-- Offering Stone
@@ -787,9 +787,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 95884,	-- The Offering Stone
 				provider = { "o", 645153 },	-- Offering Stone
 				coord = { 58.1, 69.8, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Tortured Soul
 						provider = { "i", 271350 },	-- Tortured Soul
@@ -825,19 +825,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 91862,	-- Lumina Windsinger
 				qg = 248755,	-- Lumina Windsinger
 				coord = { 65.4, 32.8, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- TODO: Escort Lumina Windsinger out of Fenris Keep; Wowhead has no IDs for the escort yet.
 			}),
 			q(446, {	-- Thule Ravenclaw
 				sourceQuest = 444,	-- Rot Hide Origins
 				qg = 1498,	-- Bethor Iceshard
-				qi = 3250,	-- Bethor's Scroll
 				coord = { 84.2, 17.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 3250,	-- Bethor's Scroll
 				groups = {
 					i(3251),	-- Bethor's Potion
 				},
@@ -908,11 +908,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			q(1359, {	-- Zinge's Delivery
 				sourceQuest = 3221,	-- Speak with Renferrel
 				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
-				qi = 6016,	-- Wolf Heart Sample
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 6016,	-- Wolf Heart Sample
 			}),
 		}),
 		n(RARES, {
@@ -987,8 +987,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 		n(TREASURES, {
 			o(410299, {	-- Arcane Secrets
 				coord = { 43.4, 41.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(210177),	-- Ataeric: On Arcane Curiosities
 				},

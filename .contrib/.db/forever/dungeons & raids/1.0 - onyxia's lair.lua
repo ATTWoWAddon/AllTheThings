@@ -9,9 +9,9 @@ instanceroot(760, {	-- Onyxia's Lair
 		6502,	-- Alliance Attunement Quest
 		6602,	-- Horde Attunement Quest
 	},
-	cost = {{ "i", 16309, 1 }},	-- 1x Drakefire Amulet
 	mapID = MAP.ONYXIAS_LAIR,
 	coord = { 52.3, 76.2, MAP.DUSTWALLOW_MARSH },
+	cost = {{ "i", 16309, 1 }},	-- 1x Drakefire Amulet
 	isRaid = true,
 	lvl = 60,
 	groups = {

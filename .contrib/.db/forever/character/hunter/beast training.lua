@@ -222,9 +222,9 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		},
 		{
 			recipeID = 26179,	-- Charge [Rank 4]
-			timeline = { CREATED_1_0_1 },
 			rank = 4,
 			lvl = 36,
+			timeline = { CREATED_1_0_1 },
 		},
 		{
 			recipeID = 26201,	-- Charge [Rank 5]
@@ -703,9 +703,9 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		
 		{
 			recipeID = 24844,	-- Lightning Breath [Rank 1]
-			timeline = { CREATED_1_0_1, ADDED_2_0_1 },	-- No known training sources. :(
 			rank = 1,
 			lvl = 10,
+			timeline = { CREATED_1_0_1, ADDED_2_0_1 },	-- No known training sources. :(
 		},
 		{
 			recipeID = 25008,	-- Lightning Breath [Rank 2]

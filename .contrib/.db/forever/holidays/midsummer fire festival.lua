@@ -97,8 +97,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.STRATHOLME,
 					MAP.SCHOLOMANCE,
 				},
-				isYearly = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 				lvl = 50,
+				isYearly = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 				groups = {
 					objective(1),	-- Flame of Dire Maul
 					objective(2),	-- Flame of Blackrock Spire
@@ -118,8 +118,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.STRATHOLME,
 					MAP.SCHOLOMANCE,
 				},
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					objective(1),	-- Flame of Dire Maul
 					objective(2),	-- Flame of Blackrock Spire
@@ -137,8 +137,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				qg = FESTIVAL_LOREMASTER_ID,
 				coords = FESTIVAL_LOREMASTER_COORDS,
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					i(23323),	-- Crown of the Fire Festival
 				},
@@ -152,8 +152,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				qg = FESTIVAL_TALESPINNER_ID,
 				coords = FESTIVAL_TALESPINNER_COORDS,
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					i(23323),	-- Crown of the Fire Festival
 				},
@@ -230,8 +230,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				coord = { 56.6, 92.3, MAP.TELDRASSIL },
 				maps = { MAP.DARNASSUS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9331, {	-- Stealing Ironforge's Flame
@@ -241,8 +241,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 64.6, 24.8, MAP.IRONFORGE },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9324, {	-- Stealing Orgrimmar's Flame
@@ -252,8 +252,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 46.9, 38.7, MAP.ORGRIMMAR },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9330, {	-- Stealing Stormwind's Flame
@@ -263,8 +263,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 38.9, 62.3, MAP.STORMWIND_CITY },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9326, {	-- Stealing the Undercity's Flame
@@ -274,8 +274,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 62.6, 66.9, MAP.UNDERCITY },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9325, {	-- Stealing Thunder Bluff's Flame
@@ -285,8 +285,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 21.1, 25.6, MAP.THUNDER_BLUFF },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9367, {	-- The Festival of Fire (A)

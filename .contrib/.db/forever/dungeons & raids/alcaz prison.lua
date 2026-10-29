@@ -6,10 +6,10 @@ instanceroot(78793, {	-- Alcaz Prison
 	-- Blizzard lists it for levels 48-53.
 	--lore = "",
 	icon = 409547,
+	lvl = 48,
 	--zoneTextAreaID = ,	-- Alcaz Prison
 	--coord = { 75.6, 17.6, MAP.DUSTWALLOW_MARSH },	-- Alcaz Island; verify the entrance.
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	lvl = 48,
 	groups = {
 		n(QUESTS, {
 			

@@ -1466,12 +1466,13 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(142143, {	-- Blindweed
-				maps = { MAP.SWAMP_OF_SORROWS },
-				learnedAt = 235,
 				description = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+				learnedAt = 235,
+				maps = { MAP.SWAMP_OF_SORROWS },
 			}),
 			o(1621, {	-- Briarthorn
 				learnedAt = 70,
+				description = "Usually found near trees.",
 				maps = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
@@ -1482,7 +1483,6 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.SILVERPINE_FOREST,
 				},
-				description = "Usually found near trees.",
 			}),
 			o(3729, {	-- Briarthorn (The Barrens)
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
@@ -1493,6 +1493,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1622, {	-- Bruiseweed
 				learnedAt = 100,
+				description = "Usually found near hillsides, buildings and structures.",
 				maps = {
 					MAP.ASHENVALE,
 					MAP.DUSKWOOD,
@@ -1502,7 +1503,6 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				description = "Usually found near hillsides, buildings and structures.",
 			}),
 			o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
@@ -1517,6 +1517,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(176584, {	-- Dreamfoil
 				learnedAt = 270,
+				description = "Can usually be found on flat open spaces.",
 				maps = {
 					MAP.BURNING_STEPPES,
 					MAP.SILITHUS,
@@ -1525,7 +1526,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				description = "Can usually be found on flat open spaces.",
 			}),
 			o(176693, {	-- Dreamfoil (Felwood)
 				learnedAt = 270,
@@ -1533,6 +1533,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1619, {	-- Earthroot
 				learnedAt = 15,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -1545,7 +1546,6 @@ root(ROOTS.Craftables, {
 					MAP.DARKSHORE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(3726, {	-- Earthroot (The Barrens)
 				-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
@@ -1554,35 +1554,36 @@ root(ROOTS.Craftables, {
 			}),
 			o(2042, {	-- Fadeleaf
 				learnedAt = 160,
+				description = "Can be found in fertile terrain and fields.",
 				maps = {
 					MAP.ALTERAC_MOUNTAINS,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				description = "Can be found in fertile terrain and fields.",
 			}),
 			o(2866, {	-- Firebloom
 				learnedAt = 205,
+				description = "Can be found on hot deserts.",
 				maps = {
 					MAP.BADLANDS,
 					MAP.SEARING_GORGE,
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				description = "Can be found on hot deserts.",
 			}),
 			o(142144, {	-- Ghost Mushroom
+				description = "Can be found inside caves.",
 				coords = {
 					{ 58.0, 41.2, MAP.THE_HINTERLANDS },
 					{ 55.8, 68.1, MAP.THE_HINTERLANDS },
 					{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 				},
-				description = "Can be found inside caves.",
 				learnedAt = 245,
 			}),
 			o(176583, {	-- Golden Sansam
 				learnedAt = 260,
+				description = "Can be found by trees and other natural structures.",
 				maps = {
 					MAP.SILITHUS,
 					MAP.UNGORO_CRATER,
@@ -1592,7 +1593,6 @@ root(ROOTS.Craftables, {
 					MAP.FERALAS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found by trees and other natural structures.",
 			}),
 			o(176638, {	-- Golden Sansam (Felwood)
 				learnedAt = 260,
@@ -1600,6 +1600,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2046, {	-- Goldthorn
 				learnedAt = 170,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1609,24 +1610,23 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(1628, {	-- Grave Moss
+				description = "Can be found on graves.",
 				coords = {
 					{ 20.0, 40.0, MAP.DUSKWOOD },	-- Raven Hill Cemetery
 					{ 50.0, 58.0, MAP.DESOLACE },
 					{ 80.0, 71.0, MAP.DUSKWOOD },
 				},
-				description = "Can be found on graves.",
 				learnedAt = 120,
 			}),
 			o(142145, {	-- Gromsblood
+				description = "Found in locations corrupted by the Burning Legion.",
 				coords = {
 					{ 84.1, 71.65, MAP.ASHENVALE },	-- Felfire Hill
 					{ 53.5, 46.5, MAP.BLASTED_LANDS },
 					{ 50.0, 80.0, MAP.DESOLACE },
 				},
-				description = "Found in locations corrupted by the Burning Legion.",
 				learnedAt = 250,
 			}),
 			o(176637, {	-- Gromsblood (Felwood)
@@ -1639,6 +1639,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2043, {	-- Khadgar's Whisker
 				learnedAt = 185,
+				description = "Can be found near trees.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1649,10 +1650,10 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found near trees.",
 			}),
 			o(1624, {	-- Kingsblood
 				learnedAt = 125,
+				description = "Can be found in the woods.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSKWOOD,
@@ -1668,10 +1669,10 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				description = "Can be found in the woods.",
 			}),
 			o(2041, {	-- Liferoot
 				learnedAt = 150,
+				description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1685,7 +1686,6 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 			}),
 			o(1620, {	-- Mageroyal
 				learnedAt = 50,
@@ -1709,6 +1709,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(176586, {	-- Mountain Silversage
 				learnedAt = 280,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.AZSHARA,
 					MAP.BURNING_STEPPES,
@@ -1717,7 +1718,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(176640, {	-- Mountain Silversage (Felwood)
 				learnedAt = 280,
@@ -1744,6 +1744,7 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(142140, {	-- Purple Lotus
+				description = "Can be found in elven or troll ruins.",
 				maps = {
 					MAP.AZSHARA,
 					MAP.FERALAS,
@@ -1751,7 +1752,6 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found in elven or troll ruins.",
 				learnedAt = 210,
 			}),
 			o(1617, {	-- Silverleaf
@@ -1787,6 +1787,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2045, {	-- Stranglekelp
 				learnedAt = 85,
+				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 				maps = {
 					MAP.ASHENVALE,
 					MAP.DARKSHORE,
@@ -1802,7 +1803,6 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 			}),
 			o(142142, {	-- Sungrass
 				learnedAt = 230,
@@ -1822,6 +1822,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1623, {	-- Wild Steelbloom
 				learnedAt = 115,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THOUSAND_NEEDLES,
@@ -1829,7 +1830,6 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 		}),
 		{	-- Herbs:

@@ -152,26 +152,26 @@ instanceroot(230, {	-- Dire Maul
 		n(QUESTS, {
 			q(1193, {	-- A Broken Trap
 				description = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
+				provider = { "o", 179485 },	-- Broken Trap
+				maps = GORDOK_COMMONS_MAPS,
 				cost = {
 					{ "i", 3829, 1 },	-- 1x Frost Oil
 					{ "i", 15994, 1 },	-- 1x Thorium Widget
 				},
-				provider = { "o", 179485 },	-- Broken Trap
-				maps = GORDOK_COMMONS_MAPS,
-				repeatable = true,
 				lvl = 56,
+				repeatable = true,
 			}),
 			q(27118, {	-- A Broken Trap (TODO: verify quest name)
 				description = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
 				provider = { "o", 179485 },	-- Broken Trap
 				maps = GORDOK_COMMONS_MAPS,
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 			}),
 			q(5527, {	-- A Reliquary of Purity
+				description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 				qg = 11801,	-- Rabine Saturna
 				coord = { 51.7, 45.1, MAP.MOONGLADE },
-				description = "The character must first visit Dire Maul, so that the Moonglade NPC will offer a conversation that unlocks the quest.",
 				maps = { MAP.SILITHUS },
 				lvl = 56,
 				groups = {
@@ -209,8 +209,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 				maps = { MAP.FERALAS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(7499, {	-- Codex of Defense
 				providers = {
@@ -331,25 +331,25 @@ instanceroot(230, {	-- Dire Maul
 				},
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(5525, {	-- Free Knot!
 				description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 				qg = 14338,	-- Knot Thimblejack
-				cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 				maps = GORDOK_COMMONS_MAPS,
+				cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 				lvl = 54,
 			}),
 			q(7429, {	-- Free Knot! (Repeatable)
 				description = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 				sourceQuest = 5525,	-- Free Knot!
 				qg = 14338,	-- Knot Thimblejack
-				cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
-				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
 				maps = GORDOK_COMMONS_MAPS,
-				repeatable = true,
+				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
+				cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 				lvl = 54,
+				repeatable = true,
 			}),
 			q(7505, {	-- Frost Shock and You
 				providers = {
@@ -441,8 +441,8 @@ instanceroot(230, {	-- Dire Maul
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 					{ "i", 12753, 2 },	-- 2x Skin of Shadow
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(18330),	-- Arcanum of Focus
 				},
@@ -461,8 +461,8 @@ instanceroot(230, {	-- Dire Maul
 					{ "i", 18334, 1 },	-- 1x Libram of Protection
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(18331),	-- Arcanum of Protection
 				},
@@ -481,8 +481,8 @@ instanceroot(230, {	-- Dire Maul
 					{ "i", 18332, 1 },	-- 1x Libram of Rapidity
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(18329),	-- Arcanum of Rapidity
 				},
@@ -576,8 +576,8 @@ instanceroot(230, {	-- Dire Maul
 					{ "i", 8170, 8 },	-- 8x Rugged Leather
 					{ "i", 14341, 2 },	-- 2x Rune Thread
 				},
-				repeatable = true,
 				lvl = 56,
+				repeatable = true,
 				groups = {
 					i(18258),	-- Gordok Ogre Suit
 				},
@@ -817,8 +817,8 @@ instanceroot(230, {	-- Dire Maul
 				}),
 				n(16097, {	-- Isalien
 					description = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
-					cost = {{ "i", 22050, 1 }},	-- 1x Brazier of Beckoning [Isalien]
 					provider = { "i", 22057 },	-- Brazier of Invocation
+					cost = {{ "i", 22050, 1 }},	-- 1x Brazier of Beckoning [Isalien]
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]

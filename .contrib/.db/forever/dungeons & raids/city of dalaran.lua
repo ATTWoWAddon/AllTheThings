@@ -26,9 +26,9 @@ instanceroot(2959, {	-- City of Dalaran
 			q(92456, {	-- A Green Sample
 				qg = 5502,	-- Shylamiir <Herbalism Trainer>
 				coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Fel Infused Blossom
 						provider = { "i", 251983 },	-- Fel Infused Blossom
@@ -40,10 +40,10 @@ instanceroot(2959, {	-- City of Dalaran
 			q(92432, {	-- An Alarming Request
 				qg = 247264,	-- Emissary Jacques <Kirin Tor>
 				coord = { 48.3, 60.1, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(92434, {	-- Blood in the Streets
 				sourceQuests = {
@@ -51,35 +51,35 @@ instanceroot(2959, {	-- City of Dalaran
 					93680,	-- Key to the City
 				},
 				qg = 2410,	-- Magus Wordeen Voidglare
-				qi = 279469,	-- Grimy Key
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279469,	-- Grimy Key
 			}),
 			q(92459, {	-- Friend of the Kirin Tor
 				sourceQuest = 92458,	-- Heart of Disruption [Alliance]
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 251961,	-- Arcane Mote
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 251961,	-- Arcane Mote
 			}),
 			q(93689, {	-- Friend of the Kirin Tor
+				lvl = 24,
 				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Archmage Celindra in the City of Dalaran.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 24,
 			}),
 			q(92458, {	-- Heart of Disruption [Alliance]
 				sourceQuest = 92432,	-- An Alarming Request
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 277507,	-- Dalaran Sewer Key
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
 						provider = { "i", 251961 },	-- Arcane Mote
@@ -93,11 +93,11 @@ instanceroot(2959, {	-- City of Dalaran
 			q(96984, {	-- Heart of Disruption [Horde]
 				sourceQuest = 92434,	-- Blood in the Streets
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 277507,	-- Dalaran Sewer Key
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
 						provider = { "i", 251961 },	-- Arcane Mote
@@ -111,10 +111,10 @@ instanceroot(2959, {	-- City of Dalaran
 			q(93680, {	-- Key to the City
 				qg = 2410,	-- Magus Wordeen Voidglare
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Grimy Key
 						provider = { "i", 279469 },	-- Grimy Key
@@ -123,9 +123,9 @@ instanceroot(2959, {	-- City of Dalaran
 			}),
 			q(96987, {	-- Opportunistic Education
 				qg = 268743,	-- Rexxie Copperclutch
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The Founding of Dalaran
 						provider = { "i", 275996 },	-- The Founding of Dalaran
@@ -150,18 +150,18 @@ instanceroot(2959, {	-- City of Dalaran
 			q(97287, {	-- Shrewd Negotiations
 				sourceQuest = 96984,	-- Heart of Disruption [Horde]
 				qg = 2410,	-- Magus Wordeen Voidglare
-				qi = 251961,	-- Arcane Mote
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 251961,	-- Arcane Mote
 			}),
 			q(96988, {	-- Source of Power
 				qg = 11044,	-- Doctor Martin Felben <Journeyman Alchemist Trainer>
 				coord = { 46.6, 74.4, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Cracked Sentry Core
 						provider = { "i", 275997 },	-- Cracked Sentry Core
@@ -175,9 +175,9 @@ instanceroot(2959, {	-- City of Dalaran
 				sourceQuest = 92432,	-- An Alarming Request
 				qg = 269127,	-- Image of Archmage Modera
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Seeking Remnant slain
 						provider = { "n", 247003 },	-- Seeking Remnant
@@ -195,9 +195,9 @@ instanceroot(2959, {	-- City of Dalaran
 			q(96986, {	-- The Grave Knight
 				qg = 2278,	-- Melisara
 				coord = { 62.6, 20.6, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Atrexis the Grave Knight slain
 						provider = { "n", 247126 },	-- Atrexis the Grave Knight
