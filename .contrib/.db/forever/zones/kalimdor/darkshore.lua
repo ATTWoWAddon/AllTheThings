@@ -779,10 +779,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 						},
 						coord = { 52.5, 33.5, MAP.DARKSHORE },
 						cost = {
-							{ "i", 12347, 1 },	-- 1x Filled Cleansing Bowl
 							{ "i", 12341, 1 },	-- 1x Blackwood Fruit Sample
 							{ "i", 12342, 1 },	-- 1x Blackwood Grain Sample
 							{ "i", 12343, 1 },	-- 1x Blackwood Nut Sample
+							{ "i", 12347, 1 },	-- 1x Filled Cleansing Bowl
 						},
 						cr = 10373,	-- Xabraxxis
 					}),

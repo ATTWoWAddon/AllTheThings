@@ -415,9 +415,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 343,	-- Chef Breanna
 				coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
 				cost = {
+					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
 					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout
 					{ "i", 1080, 5 },	-- 5x Tough Condor Meat
-					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 15,

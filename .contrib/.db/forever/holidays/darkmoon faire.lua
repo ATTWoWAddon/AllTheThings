@@ -743,49 +743,49 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19228, {	-- Beasts Deck
 				cost = {
 					{ "i", 19227, 1 },	-- 1x Ace of Beasts
-					{ "i", 19230, 1 },	-- 1x Two of Beasts
-					{ "i", 19231, 1 },	-- 1x Three of Beasts
-					{ "i", 19232, 1 },	-- 1x Four of Beasts
-					{ "i", 19233, 1 },	-- 1x Five of Beasts
-					{ "i", 19234, 1 },	-- 1x Six of Beasts
-					{ "i", 19235, 1 },	-- 1x Seven of Beasts
 					{ "i", 19236, 1 },	-- 1x Eight of Beasts
+					{ "i", 19233, 1 },	-- 1x Five of Beasts
+					{ "i", 19232, 1 },	-- 1x Four of Beasts
+					{ "i", 19235, 1 },	-- 1x Seven of Beasts
+					{ "i", 19234, 1 },	-- 1x Six of Beasts
+					{ "i", 19231, 1 },	-- 1x Three of Beasts
+					{ "i", 19230, 1 },	-- 1x Two of Beasts
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19267, {	-- Elementals Deck
 				cost = {
 					{ "i", 19268, 1 },	-- 1x Ace of Elementals
-					{ "i", 19269, 1 },	-- 1x Two of Elementals
-					{ "i", 19270, 1 },	-- 1x Three of Elementals
-					{ "i", 19271, 1 },	-- 1x Four of Elementals
-					{ "i", 19272, 1 },	-- 1x Five of Elementals
-					{ "i", 19273, 1 },	-- 1x Six of Elementals
-					{ "i", 19274, 1 },	-- 1x Seven of Elementals
 					{ "i", 19275, 1 },	-- 1x Eight of Elementals
+					{ "i", 19272, 1 },	-- 1x Five of Elementals
+					{ "i", 19271, 1 },	-- 1x Four of Elementals
+					{ "i", 19274, 1 },	-- 1x Seven of Elementals
+					{ "i", 19273, 1 },	-- 1x Six of Elementals
+					{ "i", 19270, 1 },	-- 1x Three of Elementals
+					{ "i", 19269, 1 },	-- 1x Two of Elementals
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19277, {	-- Portals Deck
 				cost = {
 					{ "i", 19276, 1 },	-- 1x Ace of Portals
-					{ "i", 19278, 1 },	-- 1x Two of Portals
-					{ "i", 19279, 1 },	-- 1x Three of Portals
-					{ "i", 19280, 1 },	-- 1x Four of Portals
-					{ "i", 19281, 1 },	-- 1x Five of Portals
-					{ "i", 19282, 1 },	-- 1x Six of Portals
-					{ "i", 19283, 1 },	-- 1x Seven of Portals
 					{ "i", 19284, 1 },	-- 1x Eight of Portals
+					{ "i", 19281, 1 },	-- 1x Five of Portals
+					{ "i", 19280, 1 },	-- 1x Four of Portals
+					{ "i", 19283, 1 },	-- 1x Seven of Portals
+					{ "i", 19282, 1 },	-- 1x Six of Portals
+					{ "i", 19279, 1 },	-- 1x Three of Portals
+					{ "i", 19278, 1 },	-- 1x Two of Portals
 				},
 			})),
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19257, {	-- Warlords Deck
 				cost = {
 					{ "i", 19258, 1 },	-- 1x Ace of Warlords
-					{ "i", 19259, 1 },	-- 1x Two of Warlords
-					{ "i", 19260, 1 },	-- 1x Three of Warlords
-					{ "i", 19261, 1 },	-- 1x Four of Warlords
-					{ "i", 19262, 1 },	-- 1x Five of Warlords
-					{ "i", 19263, 1 },	-- 1x Six of Warlords
-					{ "i", 19264, 1 },	-- 1x Seven of Warlords
 					{ "i", 19265, 1 },	-- 1x Eight of Warlords
+					{ "i", 19262, 1 },	-- 1x Five of Warlords
+					{ "i", 19261, 1 },	-- 1x Four of Warlords
+					{ "i", 19264, 1 },	-- 1x Seven of Warlords
+					{ "i", 19263, 1 },	-- 1x Six of Warlords
+					{ "i", 19260, 1 },	-- 1x Three of Warlords
+					{ "i", 19259, 1 },	-- 1x Two of Warlords
 				},
 			})),
 		}),

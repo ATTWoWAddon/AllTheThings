@@ -295,8 +295,8 @@ instanceroot(231, {	-- Gnomeregan
 				coord = { 36.2, 3.8, MAP.IRONFORGE },
 				cost = {
 					{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
-					{ "i", 2842, 1 },	-- 1x Silver Bar
 					{ "i", 1206, 1 },	-- 1x Moss Agate
+					{ "i", 2842, 1 },	-- 1x Silver Bar
 					{ "g", 3000 },	-- 30s
 				},
 				races = ALLIANCE_ONLY,
@@ -354,8 +354,8 @@ instanceroot(231, {	-- Gnomeregan
 				coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 				cost = {
 					{ "i", 9362, 1 },	-- 1x Brilliant Gold Ring
-					{ "i", 2842, 1 },	-- 1x Silver Bar
 					{ "i", 1206, 1 },	-- 1x Moss Agate
+					{ "i", 2842, 1 },	-- 1x Silver Bar
 					{ "g", 3000 },	-- 30s
 				},
 				races = HORDE_ONLY,
