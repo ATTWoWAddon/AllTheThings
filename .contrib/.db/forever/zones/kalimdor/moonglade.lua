@@ -651,14 +651,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				coord = { 51.6, 33.2, MAP.MOONGLADE },
 				groups = {
 					i(14488, {	-- Pattern: Runecloth Boots (RECIPE!)
-						isLimited = true
+						isLimited = true,
 					}),
 					i(14472, {	-- Pattern: Runecloth Cloak (RECIPE!)
-						isLimited = true
+						isLimited = true,
 						-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 					}),
 					i(14469, {	-- Pattern: Runecloth Robe (RECIPE!)
-						isLimited = true
+						isLimited = true,
 						-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 					}),
 				},
