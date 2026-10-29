@@ -506,7 +506,7 @@ instanceroot(229, {	-- Blackrock Spire
 				},
 				maps = { MAP.WINTERSPRING },
 				cr = 10430,	-- The Beast
-				lvl = 57
+				lvl = 57,
 			}),
 			q(4701, {	-- Put Her Down
 				qg = 9562,	-- Helendis Riverhorn
