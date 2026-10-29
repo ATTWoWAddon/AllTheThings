@@ -63,7 +63,7 @@ instanceroot(760, {	-- Onyxia's Lair
 					i(18406),	-- Onyxia Blood Talisman
 				},
 			}),
-			q(7507, {	-- Nostro's Compendium
+			q(7507, {	-- Foror's Compendium
 				description = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 				provider = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 				maps = { MAP.DIRE_MAUL },
@@ -139,7 +139,7 @@ instanceroot(760, {	-- Onyxia's Lair
 				},
 			}),
 			q(7508, {	-- The Forging of Quel'Serrar
-				sourceQuest = 7507,	-- Nostro's Compendium
+				sourceQuest = 7507,	-- Foror's Compendium
 				providers = {
 					{ "n", 14368 },	-- Lorekeeper Lydros
 					{ "i", 18513 },	-- A Dull and Flat Elven Blade

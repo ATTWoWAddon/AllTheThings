@@ -59,10 +59,10 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(5647, {	-- A Lack of Fear
+			q(5647, {	-- Chastise
 				altQuests = {
-					5641,	-- A Lack of Fear [Ironforge]
-					5645,	-- A Lack of Fear [Stormwind City]
+					5641,	-- Chastise [Ironforge]
+					5645,	-- Chastise [Stormwind City]
 				},
 				qg = 11401,	-- Priestess Alathea <Priest Trainer>
 				coord = { 39.2, 81.0, MAP.DARNASSUS },
