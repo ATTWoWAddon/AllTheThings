@@ -25,8 +25,11 @@ local function AutoTableMetaFunc(t, key)
 	end
 end
 --- Wraps a table so missing string keys automatically create nested tables.
----@param t table # Table to wrap with automatic nested-table creation.
----@return table
+---@generic T: table
+---@overload fun(): table
+---@param t? T # Table to wrap; defaults to a new table.
+---@param metafunc? fun(t: table, key: any): any # Custom missing-key handler.
+---@return T # The supplied table, or a new table when omitted.
 function SelfAutoTable(t, metafunc)
 	return setmetatable(t or {}, { __index = metafunc or AutoTableMetaFunc })
 end

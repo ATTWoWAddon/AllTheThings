@@ -586,6 +586,7 @@ end
 --- Deep-clones parser data into an optional destination table.
 --- Existing keys in `c` are preserved; table values copied from `t` are
 --- recursively cloned so the resulting parser object can be mutated safely.
+---@overload fun<T>(t: T): T
 ---@param t any # Source value to deep-clone; non-table values are returned unchanged.
 ---@param c? table # Destination table whose existing keys are preserved.
 ---@return any # Deep-cloned value, or the original value when it is not a table.
@@ -702,9 +703,10 @@ appendGroups = function(...)
 end
 -- Appends together multiple arrays of groups (into the first provided group). This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
 --- Appends multiple group arrays into the first destination array.
----@param g? ATTObjectArray # Destination array, created from nil when additional arrays are supplied.
----@param ... ATTObjectArray|nil # Child arrays to append in order; nil arguments are skipped.
----@return ATTObjectArray|nil
+---@overload fun<T>(g: T[]): T[]
+---@param g? any[] # Destination array, created from nil when additional arrays are supplied.
+---@param ... any[]|nil # Child arrays to append in order; nil arguments are skipped.
+---@return any[]|nil # Destination array with appended values, or nil when no array is created.
 appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
