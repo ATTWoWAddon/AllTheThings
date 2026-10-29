@@ -153,14 +153,14 @@
 ---@field readable? string # Human-readable parser label.
 ---@field icon? string|FileID # Icon path/file ID.
 ---@field model? FileID # Model file data ID.
----@field displayID? integer # Display ID.
+---@field displayID? CreatureDisplayID # Display ID.
 ---@field sourceID? SourceID # Appearance/source ID.
 ---@field achievementCategoryID? AchievementCategoryID # Achievement category ID.
 ---@field artifactID? ArtifactID # Artifact weapon appearance ID.
 ---@field azeriteessenceID? AzeriteEssenceID # Azerite essence ID.
 ---@field buildingID? GarrisonBuildingID # Garrison building ID.
----@field campsiteID? integer # Warband campsite scene ID.
----@field categoryID? integer # ATT category ID used for localized names and icons.
+---@field campsiteID? CampsiteID # Warband campsite scene ID.
+---@field categoryID? ATTCategoryID # ATT category ID used for localized names and icons.
 ---@field classID? number # Class ID, optionally specialization-encoded as a decimal.
 ---@field decorID? DecorID # Housing decor entry ID.
 ---@field expansionID? number # Expansion ID, optionally patch-encoded as a decimal.
@@ -169,12 +169,12 @@
 ---@field objectiveID? ObjectiveID # Objective index within the parent quest.
 ---@field petAbilityID? BattlePetAbilityID # Battle pet ability ID.
 ---@field petTypeID? BattlePetTypeID # Battle pet family/type ID.
----@field professionnodeID? integer # Profession specialization path/node ID.
----@field pvpRankID? integer # Classic PvP rank ID.
+---@field professionnodeID? ProfessionNodeID # Profession specialization path/node ID.
+---@field pvpRankID? PVPRankID # Classic PvP rank ID.
 ---@field raceID? RaceID # Character race ID represented by this object.
----@field setID? integer # Transmog gear set ID.
----@field setHeaderID? integer # Gear set ID used to display its shared label as a header.
----@field setSubHeaderID? integer # Gear set ID used to display its description as a subheader.
+---@field setID? TransmogSetID # Transmog gear set ID.
+---@field setHeaderID? TransmogSetID # Gear set ID used to display its shared label as a header.
+---@field setSubHeaderID? TransmogSetID # Gear set ID used to display its description as a subheader.
 ---@field talentID? GarrisonTalentID # Garrison or order hall research talent ID.
 ---@field itemID? ItemID # General item ID.
 ---@field qs? ItemID # item grants or starts a quest.
@@ -226,8 +226,8 @@
 ---@field crs? CreatureID[] # Creatures associated with the object.
 ---@field qg? NPCID # Single NPC quest giver.
 ---@field qgs? NPCID[] # NPC quest givers.
----@field coord? Coord|ATTIgnoredValue # Single map-coordinate tuple.
----@field coords? Coord[] # Map-coordinate tuples.
+---@field coord? ATTRawCoordinates|ATTIgnoredValue # Authored coordinate input or the ignored-value sentinel.
+---@field coords? ATTRawCoordinates # Authored coordinate input.
 ---@field provider? ATTProvider|ATTIgnoredValue # Single typed reference providing this content.
 ---@field providers? ATTProvider[] # Typed references providing this content.
 ---@field cost? number|ATTCost[] # Copper amount or a list of cost entries.
@@ -613,8 +613,8 @@ isarray = function(t)
 	return t and type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 --- Checks whether a phase ID is a Release Phase (belongs in `phase`) rather than an Unobtainable Filter (belongs in `u`).
----@param phaseID? integer # Phase ID to check.
----@return boolean
+---@param phaseID? ATTPhaseID # Phase ID to check.
+---@return boolean # Whether the phase ID denotes a release phase.
 isreleasephase = function(phaseID)
 	---@diagnostic disable-next-line: undefined-global
 	local phase = phaseID and Phases and Phases[phaseID];
@@ -830,8 +830,8 @@ applyFunc = function(func, t)
 	return t
 end
 --- Splits a timeline event string into its textual and numeric components.
----@param epoch string # Timeline event string to split into its action and patch components.
----@return (string|number)[]
+---@param epoch ATTTimelineEvent # Timeline event string to split into its action and patch components.
+---@return (string|number)[] # Textual and numeric components of the timeline event.
 splitTimelineEvent = function(epoch)
 	local words = {};
 	for word in epoch:gmatch("%S+") do table.insert(words, word) end
@@ -840,7 +840,7 @@ splitTimelineEvent = function(epoch)
 end
 -- Applies the timeline event (epoch) to the object.
 --- Adds a timeline event to an object while preserving timeline ordering and avoiding duplicates.
----@param epoch? string # Timeline event to insert in order, unless already present.
+---@param epoch? ATTTimelineEvent # Timeline event to insert in order, unless already present.
 ---@param t? ATTObject # Object whose timeline receives the event.
 applyTimelineEvent = function(epoch, t)
 	if epoch and t then
@@ -1393,9 +1393,9 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 end
 --- Builds the symbolic selector for a PvP weapons arsenal.
 ---@param TIER integer # Legacy tier argument retained in the symbolic command; ignored by the current resolver.
----@param SEASON integer # Season header ID selected by the weapons ensemble resolver.
----@param PVPSET integer # PvP set header ID searched beneath the season header.
----@return ATTSym
+---@param SEASON ATTHeaderID # Season header ID selected by the weapons ensemble resolver.
+---@param PVPSET ATTHeaderID # PvP set header ID searched beneath the season header.
+---@return ATTSym # Symbolic commands selecting the PvP weapons arsenal.
 Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
 	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
 end
@@ -1868,7 +1868,7 @@ azewrongItem = function(id, t)							-- Create an Item which is marked as having
 	return t;
 end
 --- Create a CAMPSITE Object.
----@param id integer # Warband campsite scene ID.
+---@param id CampsiteID # Warband campsite scene ID.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 campsite = function(id, t)								-- Create a CAMPSITE Object
@@ -1901,7 +1901,7 @@ battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
 end
 bpt = battlepettype;									-- Create a BATTLE PET TYPE Object (alternative shortcut)
 --- Create a CATEGORY Object.
----@param id integer # ATT category ID used for localized names and icons.
+---@param id ATTCategoryID # ATT category ID used for localized names and icons.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 category = function(id, t)								-- Create a CATEGORY Object.
@@ -2252,21 +2252,21 @@ gt = function(id, t)									-- Create an GARRISON TALENT Object (Alternative)
 	return struct("talentID", id, t);
 end
 --- Create a GEAR SET Object (IE: "Vestments of Prophecy").
----@param id integer # Transmog gear set ID.
+---@param id TransmogSetID # Transmog gear set ID.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
 	return struct("setID", id, t);
 end
 --- Create a GEAR SET HEADER Object (IE: "Season 1").
----@param id integer # Gear set ID whose shared label is used as the header name.
+---@param id TransmogSetID # Gear set ID whose shared label is used as the header name.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
 	return struct("setHeaderID", id, t);
 end
 --- Create a GEAR SET SUB HEADER Object (IE: "Gladiator").
----@param id integer # Gear set ID whose description is used as the subheader name.
+---@param id TransmogSetID # Gear set ID whose description is used as the subheader name.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
@@ -2659,7 +2659,7 @@ prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end
 --- Create a PROFESSION NODE Object.
----@param id integer # Profession specialization path/node ID.
+---@param id ProfessionNodeID # Profession specialization path/node ID.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 professionnode = function(id, t)						-- Create a PROFESSION NODE Object
@@ -2673,7 +2673,7 @@ pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ pvp = true }, t);
 end
 --- Create a PVP Rank Object.
----@param id integer # Classic PvP rank ID.
+---@param id PVPRankID # Classic PvP rank ID.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
 ---@return ATTObject
 pvprank = function(id, t)								-- Create a PVP Rank Object.
@@ -3074,7 +3074,7 @@ h = function(t) -- Flag as Horde Only
 end
 --- Assigns a display ID to an object.
 ---@generic T: ATTObject
----@param displayID integer # Creature display ID to assign for the object's model.
+---@param displayID CreatureDisplayID # Creature display ID to assign for the object's model.
 ---@param t T # Object whose `displayID` is assigned.
 ---@return T
 model = function(displayID, t)

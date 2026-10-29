@@ -194,10 +194,26 @@ ExportDB = CreateDatabaseContainer("Exports", {__index = autotable__index})
 end
 
 do	-- WoW API Function Templates
+--- Builds a Lua expression for the exported WoW API call.
+---@param itemID ItemID|ATTLuaExpression # Item ID or Lua expression identifying the item.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemCount = function(itemID) return "_.WOWAPI.GetItemCount(" .. itemID .. ", true)"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param spellID SpellID|ATTLuaExpression # Spell ID or Lua expression identifying the spell.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param spellID SpellID|ATTLuaExpression # Spell ID or Lua expression identifying the spell.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetSpellName = function(spellID) return "_.WOWAPI.GetSpellName(" .. spellID .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param a ItemClassID|ATTLuaExpression # Item class ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemClassInfo = function(a) return "_.WOWAPI.GetItemClassInfo(" .. a .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param a ItemClassID|ATTLuaExpression # Item class ID or Lua expression.
+---@param b? ItemSubclassID|ATTLuaExpression # Item subclass ID or Lua expression; omitted for the one-argument form.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemSubClassInfo = function(a,b)
 	if a and b then
 		return "_.WOWAPI.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
@@ -205,9 +221,15 @@ WOWAPI_GetItemSubClassInfo = function(a,b)
 		return "_.WOWAPI.GetItemSubClassInfo(" .. a .. ")";
 	end
 end
+--- Builds a Lua expression for the exported WoW API call.
+---@param achievementID AchievementID|ATTLuaExpression # Achievement ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetAchievementName = function(achievementID)
 	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
 end
+--- Builds a Lua expression for the exported WoW API call.
+---@param categoryID AchievementCategoryID|ATTLuaExpression # Category ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetCategoryName = function(categoryID)
 	return "select(1,GetCategoryInfo(" .. categoryID .. "))";
 end
