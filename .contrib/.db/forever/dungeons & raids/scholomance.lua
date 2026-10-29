@@ -67,7 +67,7 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 Araj's Scarab
 						providers = {
-							{ "i",  14610 },	-- Araj's Scarab
+							{ "i", 14610 },	-- Araj's Scarab
 							{ "o", 177241 },	-- Araj's Phylactery
 						},
 						coord = { 45.6, 69.2, MAP.WESTERN_PLAGUELANDS },
@@ -89,28 +89,28 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 The Deed to Brill
 						providers = {
-							{ "i",  13471 },	-- The Deed to Brill
+							{ "i", 13471 },	-- The Deed to Brill
 							{ "o", 176484 },	-- The Deed to Brill
 						},
 						description = "Can be found along the wall in Ras Frostwhisper's room.",
 					}),
 					objective(2, {	-- 0/1 The Deed to Caer Darrow
 						providers = {
-							{ "i",  13448 },	-- The Deed to Caer Darrow
+							{ "i", 13448 },	-- The Deed to Caer Darrow
 							{ "o", 176485 },	-- The Deed to Caer Darrow
 						},
 						description = "Can be found right next to Alexi Barov.",
 					}),
 					objective(3, {	-- 0/1 The Deed to Southshore
 						providers = {
-							{ "i",  13450 },	-- The Deed to Southshore
+							{ "i", 13450 },	-- The Deed to Southshore
 							{ "o", 176486 },	-- The Deed to Southshore
 						},
 						description = "Can be found in the very back of the first room hidden behind some bookshelves.",
 					}),
 					objective(4, {	-- 0/1 The Deed to Tarren Mill
 						providers = {
-							{ "i",  13451 },	-- The Deed to Tarren Mill
+							{ "i", 13451 },	-- The Deed to Tarren Mill
 							{ "o", 176487 },	-- The Deed to Tarren Mill
 						},
 						description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
@@ -415,7 +415,7 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 Keepsake of Remembrance
 						providers = {
-							{ "i",  13585 },	-- Keepsake of Remembrance
+							{ "i", 13585 },	-- Keepsake of Remembrance
 							{ "o", 176630 },	-- Keepsake of Remembrance
 						},
 						coord = { 17.9, 69.4, MAP.ARATHI_HIGHLANDS },
@@ -578,7 +578,7 @@ instanceroot(246, {	-- Scholomance
 			description = "Can only be summoned if someone in your group has the Blood of Innocents.",
 			providers = {
 				{ "o", 175564 },	-- Brazier of the Herald
-				{ "i",  13523 },	-- Blood of Innocents
+				{ "i", 13523 },	-- Blood of Innocents
 			},
 			groups = {
 				i(14024),	-- Frightalon

@@ -614,7 +614,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7945, {	-- Your Fortune Awaits You... [Mulgore]
 				providers = {
-					{ "i",  19452 },	-- Sayge's Fortune #27
+					{ "i", 19452 },	-- Sayge's Fortune #27
 					{ "o", 180056 },	-- Mysterious Tree Stump
 				},
 				coord = { 35.0, 61.5, MAP.MULGORE },
@@ -626,7 +626,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 			q(7944, {	-- Your Fortune Awaits You... [Wailing Caverns]
 				providers = {
-					{ "i",  19443 },	-- Sayge's Fortune #25
+					{ "i", 19443 },	-- Sayge's Fortune #25
 					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				},
 				maps = { MAP.WAILING_CAVERNS },

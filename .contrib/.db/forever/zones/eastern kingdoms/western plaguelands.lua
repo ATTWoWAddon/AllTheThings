@@ -11,10 +11,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			ach(770),	-- Explore Western Plaguelands
 		}),
 		explorationHeader({
-			visit_exploration(2298,{ coord={ 67.5,73.4,MAP.WESTERN_PLAGUELANDS } }),	-- Caer Darrow
+			visit_exploration(2298, { coord={ 67.5, 73.4, MAP.WESTERN_PLAGUELANDS } }),	-- Caer Darrow
 			exploration(200),	-- Dalson's Tears / Dalson's Farm [CATA+]
 			exploration(2297),	-- Darrowmere Lake
-			visit_exploration(2625,{ coord={ 43.4,19.3,MAP.WESTERN_PLAGUELANDS } }),	-- Eastwall Gate
+			visit_exploration(2625, { coord={ 43.4, 19.3, MAP.WESTERN_PLAGUELANDS } }),	-- Eastwall Gate
 			exploration(199),	-- Felstone Field
 			exploration(201),	-- Gahrron's Withering
 			exploration(190),	-- Hearthglen
@@ -105,8 +105,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/100 Plagueland Termites
 						providers = {
-							{ "i",  15043 },	-- Plagueland Termites
-							{ "i",  15042 },	-- Empty Termite Jar
+							{ "i", 15043 },	-- Plagueland Termites
+							{ "i", 15042 },	-- Empty Termite Jar
 							{ "o", 177464 },	-- Large Termite Mound
 						},
 						coord = { 42.0, 38.0, MAP.EASTERN_PLAGUELANDS },
@@ -117,8 +117,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				allianceQuestData = q(5904, {	-- A Plague Upon Thee (2/3) [A]
 					sourceQuest = 5903,	-- A Plague Upon Thee (1/3)
 					providers = {
-						{ "n",  11616 },	-- Nathaniel Dumah
-						{ "i",  15044 },	-- Barrel of Plagueland Termites
+						{ "n", 11616 },	-- Nathaniel Dumah
+						{ "i", 15044 },	-- Barrel of Plagueland Termites
 						{ "o", 177491 },	-- Termite Barrel
 						{ "o", 177490 },	-- Northridge Lumber Mill Crate
 					},
@@ -127,8 +127,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				hordeQuestData = q(5902, {	-- A Plague Upon Thee (2/3) [H]
 					sourceQuest = 5901,	-- A Plague Upon Thee (1/3)
 					providers = {
-						{ "n",  11615 },	-- Mickey Levine
-						{ "i",  15044 },	-- Barrel of Plagueland Termites
+						{ "n", 11615 },	-- Mickey Levine
+						{ "i", 15044 },	-- Barrel of Plagueland Termites
 						{ "o", 177491 },	-- Termite Barrel
 						{ "o", 177490 },	-- Northridge Lumber Mill Crate
 					},
@@ -145,7 +145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 177491 },	-- Termite Barrel
-					{ "i",  15044 },	-- Barrel of Plagueland Termites
+					{ "i", 15044 },	-- Barrel of Plagueland Termites
 				},
 				coord = { 48.4, 31.9, MAP.WESTERN_PLAGUELANDS },
 				lvl = 48,
@@ -158,7 +158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Joseph's Wedding Ring
 						providers = {
-							{ "i",  12894 },	-- Joseph's Wedding Ring
+							{ "i", 12894 },	-- Joseph's Wedding Ring
 							{ "o", 176145 },	-- Joseph Redpath's Monument
 						},
 						coord = { 49.6, 76.8, MAP.WESTERN_PLAGUELANDS },
@@ -180,7 +180,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Araj's Phylactery Shard
 						providers = {
-							{ "i",  17114 },	-- Araj's Phylactery Shard
+							{ "i", 17114 },	-- Araj's Phylactery Shard
 							{ "o", 177241 },	-- Araj's Phylactery
 						},
 						coord = { 45.6, 69.2, MAP.WESTERN_PLAGUELANDS },
@@ -236,7 +236,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			},
 			q(5021, {	-- Better Late Than Never (1/2)
 				providers = {
-					{ "n",  10778 },	-- Janice Felstone
+					{ "n", 10778 },	-- Janice Felstone
 					{ "o", 175894 },	-- Janice's Parcel
 				},
 				coord = { 38.4, 54.0, MAP.WESTERN_PLAGUELANDS },
@@ -251,7 +251,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 175894 },	-- Janice's Parcel
-					{ "i",  12724 },	-- Janice's Parcel
+					{ "i", 12724 },	-- Janice's Parcel
 				},
 				sourceQuest = 5021,	-- Better Late Than Never (1/2)
 				coord = { 38.8, 55.2, MAP.WESTERN_PLAGUELANDS },
@@ -344,7 +344,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/5 Andorhal Watch
 						providers = {
-							{ "i",  12638 },	-- Andorhal Watch
+							{ "i", 12638 },	-- Andorhal Watch
 							{ "o", 175802 },	-- Small Lockbox
 						},
 						coord = { 41.3, 69.8, MAP.WESTERN_PLAGUELANDS },
@@ -361,7 +361,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/5 Andorhal Watch
 						providers = {
-							{ "i",  12638 },	-- Andorhal Watch
+							{ "i", 12638 },	-- Andorhal Watch
 							{ "o", 175802 },	-- Small Lockbox
 						},
 						coord = { 41.3, 69.8, MAP.WESTERN_PLAGUELANDS },
@@ -503,7 +503,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5059, {	-- Locked Away
 				providers = {
 					{ "o", 175925 },	-- Outhouse
-					{ "i",  12738 },	-- Dalson Outhouse Key
+					{ "i", 12738 },	-- Dalson Outhouse Key
 				},
 				coord = { 48.2, 49.6, MAP.WESTERN_PLAGUELANDS },
 				lvl = 52,
@@ -518,7 +518,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5060, {	-- Locked Away
 				providers = {
 					{ "o", 175924 },	-- Locked Cabinet
-					{ "i",  12739 },	-- Dalson Cabinet Key
+					{ "i", 12739 },	-- Dalson Cabinet Key
 				},
 				coord = { 47.4, 49.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 52,
@@ -588,7 +588,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 177289 },	-- Scourge Cauldron
-					{ "i",  13191 },	-- Filled Dalson's Tears Bottle
+					{ "i", 13191 },	-- Filled Dalson's Tears Bottle
 				},
 				coord = { 46.2, 52.0, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -602,7 +602,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176361 },	-- Scourge Cauldron
-					{ "i",  13190 },	-- Filled Felstone Field Bottle
+					{ "i", 13190 },	-- Filled Felstone Field Bottle
 				},
 				coord = { 37.2, 56.9, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -616,7 +616,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176392 },	-- Scourge Cauldron
-					{ "i",  13193 },	-- Filled Gahrron's Withering Bottle
+					{ "i", 13193 },	-- Filled Gahrron's Withering Bottle
 				},
 				coord = { 62.5, 58.6, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -630,7 +630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176393 },	-- Scourge Cauldron
-					{ "i",  13192 },	-- Filled Writhing Haunt Bottle
+					{ "i", 13192 },	-- Filled Writhing Haunt Bottle
 				},
 				coord = { 53.0, 65.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -648,8 +648,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- Destroy the command tent and plant the Scourge banner in the camp
 						providers = {
-							{ "i",  12807 },	-- Scourge Banner
-							{ "i",  12814 },	-- Flame in a Bottle
+							{ "i", 12807 },	-- Scourge Banner
+							{ "i", 12814 },	-- Flame in a Bottle
 							{ "o", 176092 },	-- Box of Incendiaries
 							{ "o", 176210 },	-- Command Tent
 						},
@@ -760,7 +760,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Annals of Darrowshire
 						providers = {
-							{ "i",  12900 },	-- Annals of Darrowshire
+							{ "i", 12900 },	-- Annals of Darrowshire
 							{ "o", 176150 },	-- Musty Tome
 						},
 						description = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
@@ -786,21 +786,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 SI:7 Insignia (Rutger)
 						providers = {
-							{ "i",  16003 },	-- SI:7 Insignia (Rutger)
+							{ "i", 16003 },	-- SI:7 Insignia (Rutger)
 							{ "o", 177806 },	-- Mangled Human Remains
 						},
 						coord = { 28.8, 79.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 SI:7 Insignia (Fredo)
 						providers = {
-							{ "i",  16001 },	-- SI:7 Insignia (Fredo)
+							{ "i", 16001 },	-- SI:7 Insignia (Fredo)
 							{ "o", 177804 },	-- Mangled Human Remains
 						},
 						coord = { 27.3, 75.0, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(3, {	-- 0/1 SI:7 Insignia (Turyen)
 						providers = {
-							{ "i",  16002 },	-- SI:7 Insignia (Turyen)
+							{ "i", 16002 },	-- SI:7 Insignia (Turyen)
 							{ "o", 177805 },	-- Mangled Human Remains
 						},
 						coord = { 28.8, 74.9, MAP.EASTERN_PLAGUELANDS },
@@ -1189,7 +1189,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					12387,	-- Large Vile Slime
 					1806,	-- Vile Slime
 				},
-				sym = { { "select","itemID", 20769 } },	-- Disgusting Oozeling (PET!)
+				sym = { { "select", "itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(13357, {	-- Osseous Agitator
 				description = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",

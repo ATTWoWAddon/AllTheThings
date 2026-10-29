@@ -152,7 +152,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175233 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones
 				},
 				coord = { 42.0, 31.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -162,7 +162,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175226 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones
 				},
 				coord = { 36.0, 70.8, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -172,7 +172,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175227 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones
 				},
 				coord = { 32.7, 80.9, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -182,7 +182,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175230 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones
 				},
 				coord = { 31.2, 87.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -192,7 +192,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176190 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains
 				},
 				coord = { 37.2, 62.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -202,7 +202,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176197 },	-- Beached Sea Turtle
-					{ "i",  12292 },	-- Strangely Marked Box
+					{ "i", 12292 },	-- Strangely Marked Box
 				},
 				coord = { 44.2, 20.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -212,7 +212,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176196 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains
 				},
 				coord = { 53.1, 18.1, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -222,7 +222,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176198 },	-- Beached Sea Turtle
-					{ "i",  12292 },	-- Strangely Marked Box
+					{ "i", 12292 },	-- Strangely Marked Box
 				},
 				coord = { 31.7, 83.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -232,7 +232,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176191 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains
 				},
 				coord = { 31.2, 85.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -368,14 +368,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Silver Dawning's Lockbox
 						providers = {
-							{ "i",  12191 },	-- Silver Dawning's Lockbox
+							{ "i", 12191 },	-- Silver Dawning's Lockbox
 							{ "o", 175165 },	-- Silver Dawning's Lockbox
 						},
 						coord = { 38.3, 28.8, MAP.DARKSHORE },
 					}),
 					objective(2, {	-- 0/1 Mist Veil's Lockbox
 						providers = {
-							{ "i",  12192 },	-- Mist Veil's Lockbox
+							{ "i", 12192 },	-- Mist Veil's Lockbox
 							{ "o", 175166 },	-- Mist Veil's Lockbox
 						},
 						coord = { 39.7, 27.4, MAP.DARKSHORE },
@@ -504,7 +504,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(2, {	-- 0/12 Lunar Fungus
 						providers = {
-							{ "i",  15851 },	-- Lunar Fungus
+							{ "i", 15851 },	-- Lunar Fungus
 							{ "o", 177750 },	-- Lunar Fungal Bloom
 						},
 					}),
@@ -774,7 +774,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- Talisman of Corruption
 						providers = {
-							{ "i",  12355 },	-- Talisman of Corruption
+							{ "i", 12355 },	-- Talisman of Corruption
 							{ "o", 177624 },	-- Xabraxxis' Demon Bag
 						},
 						coord = { 52.5, 33.5, MAP.DARKSHORE },
@@ -895,7 +895,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- Escort Kerlonian Evershade to Maestra's Post
 						providers = {
-							{ "i",  13536 },	-- Horn of Awakening
+							{ "i", 13536 },	-- Horn of Awakening
 							{ "o", 176634 },	-- Kerlonian's Chest
 						},
 						coord = { 44.4, 76.4, MAP.DARKSHORE },
@@ -1051,7 +1051,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Sea Creature Bones
 						providers = {
-							{ "i",  12242 },	-- Sea Creature Bones
+							{ "i", 12242 },	-- Sea Creature Bones
 							{ "o", 175207 },	-- Beached Sea Creature
 						},
 						coord = { 36.4, 50.9, MAP.DARKSHORE },
@@ -1067,7 +1067,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Sea Turtle Remains
 						providers = {
-							{ "i",  12289 },	-- Sea Turtle Remains
+							{ "i", 12289 },	-- Sea Turtle Remains
 							{ "o", 176189 },	-- Skeletal Sea Turtle
 						},
 						coord = { 31.9, 46.3, MAP.DARKSHORE },

@@ -107,7 +107,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/20 Crystallized Azsharite
-						provider = { "i",  10714 },	-- Crystallized Azsharite
+						provider = { "i", 10714 },	-- Crystallized Azsharite
 					}),
 					i(10834, {	-- Felhound Tracker Kit
 						i(10832),	-- Fel Tracker Owner's Manual
@@ -146,7 +146,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Head of Magus Rimtori
 						providers = {
-							{ "i",  10597 },	-- Head of Magus Rimtori
+							{ "i", 10597 },	-- Head of Magus Rimtori
 							{ "o", 150140 },	-- Arcane Focusing Crystal
 						},
 						coord = { 59.6, 31.4, MAP.AZSHARA },
@@ -270,25 +270,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Kim'Jael's Compass
 						providers = {
-							{ "i",  10717 },	-- Kim'Jael's Compass
+							{ "i", 10717 },	-- Kim'Jael's Compass
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(2, {	-- 0/1 Kim'Jael's Scope
 						providers = {
-							{ "i",  10715 },	-- Kim'Jael's Scope
+							{ "i", 10715 },	-- Kim'Jael's Scope
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(3, {	-- 0/1 Kim'Jael's Stuffed Chicken
 						providers = {
-							{ "i",  10722 },	-- Kim'Jael's Stuffed Chicken
+							{ "i", 10722 },	-- Kim'Jael's Stuffed Chicken
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(4, {	-- 0/1 Kim'Jael's Wizzlegoober
 						providers = {
-							{ "i",  10718 },	-- Kim'Jael's Wizzlegoober
+							{ "i", 10718 },	-- Kim'Jael's Wizzlegoober
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
@@ -424,25 +424,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Beth'Amara
 						providers = {
-							{ "i",  10538 },	-- Tablet of Beth'Amara
+							{ "i", 10538 },	-- Tablet of Beth'Amara
 							{ "o", 148516 },	-- Tablet of Beth'Amara
 						},
 					}),
 					objective(2, {	-- 0/1 Tablet of Jin'yael
 						providers = {
-							{ "i",  10539 },	-- Tablet of Jin'yael
+							{ "i", 10539 },	-- Tablet of Jin'yael
 							{ "o", 148513 },	-- Tablet of Jin'yael
 						},
 					}),
 					objective(3, {	-- 0/1 Tablet of Markri
 						providers = {
-							{ "i",  10540 },	-- Tablet of Markri
+							{ "i", 10540 },	-- Tablet of Markri
 							{ "o", 148514 },	-- Tablet of Markri
 						},
 					}),
 					objective(4, {	-- 0/1 Tablet of Sael'hai
 						providers = {
-							{ "i",  10541 },	-- Tablet of Sael'hai
+							{ "i", 10541 },	-- Tablet of Sael'hai
 							{ "o", 148515 },	-- Tablet of Sael'hai
 						},
 					}),

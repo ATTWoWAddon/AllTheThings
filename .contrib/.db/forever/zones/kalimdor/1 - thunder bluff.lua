@@ -394,7 +394,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8359, {	-- Ahanu <Leather Armor Merchant>
 				coord = { 45.6, 55.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					236,	-- Cured Leather Armor
 					1849,	-- Cured Leather Belt
 					238,	-- Cured Leather Boots
@@ -412,7 +412,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 				coord = { 53.8, 57.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2523,	-- Bullova
@@ -435,7 +435,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8360, {	-- Elki <Mail Armor Merchant>
 				coord = { 45.2, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
@@ -457,7 +457,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3020, {	-- Etu Ragetotem <Mace & Staff Merchant>
 				coord = { 58.2, 52.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -484,7 +484,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3093, {	-- Grod <Leather Armor Merchant>
 				coord = { 42.4, 43.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2371,	-- Battered Leather Belt
 					2373,	-- Battered Leather Boots
 					2374,	-- Battered Leather Bracers
@@ -521,7 +521,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8358, {	-- Hewa <Cloth Armor Merchant>
 				coord = { 45.6, 56.7, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -542,7 +542,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 				coord = { 55.6, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3024,	-- Bkp 2700 Enforcer
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
@@ -555,7 +555,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 				coord = { 41.6, 62.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2025,	-- Bearded Axe
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
@@ -595,7 +595,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3021, {	-- Kard Ragetotem <Sword and Dagger Merchant>
 				coord = { 53.6, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2520,	-- Broadsword
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -626,7 +626,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 				coord = { 46.8, 45.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -654,7 +654,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8362, {	-- Kuruk <General Goods Vendor>
 				coord = { 39.0, 64.4, MAP.THUNDER_BLUFF },	-- Wayfarer's Rest
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					4498,	-- Brown Leather Satchel
 					4497,	-- Heavy Brown Bag
 					4499,	-- Huge Brown Sack
@@ -728,7 +728,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 				coord = { 44.9, 37.7, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -764,7 +764,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 				coord = { 53.6, 56.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2523,	-- Bullova
 					2531,	-- Great Axe
 					2521,	-- Flamberge
@@ -799,7 +799,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 				coord = { 49.6, 49.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
 				}},
@@ -807,7 +807,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3023, {	-- Sura Wildmane <War Harness Vendor>
 				coord = { 51.8, 54.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					6526,	-- Battle Harness
 					6523,	-- Buckled Harness
 					6525,	-- Grunt's Harness
@@ -817,7 +817,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3092, {	-- Tagain <Cloth Armor Merchant>
 				coord = { 43.4, 43.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -870,7 +870,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3016, {	-- Tand <Basket Weaver>
 				coord = { 49.1, 34.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					4498,	-- Brown Leather Satchel
 					4497,	-- Heavy Brown Bag
 					4496,	-- Small Brown Pouch

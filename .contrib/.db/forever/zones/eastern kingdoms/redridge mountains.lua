@@ -278,7 +278,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 Hilary's Necklace
 						providers = {
-							{ "i",  10958 },	-- Hilary's Necklace (QI!)
+							{ "i", 10958 },	-- Hilary's Necklace (QI!)
 							{ "o", 154357 },	-- Glinting Mud
 						},
 						coords = {
@@ -308,8 +308,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(248, {	-- Looking Further
 				sourceQuest = 94,	-- A Watchful Eye
 				providers = {
-					{ "o",   31 },	-- Old Lion Statue
-					{ "o",   76 },	-- An Empty Jar
+					{ "o", 31 },	-- Old Lion Statue
+					{ "o", 76 },	-- An Empty Jar
 				},
 				coord = { 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -377,7 +377,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(249, {	-- Morganth
 				sourceQuest = 248,	-- Looking Further
 				providers = {
-					{ "o",  31 },	-- Old Lion Statue
+					{ "o", 31 },	-- Old Lion Statue
 					{ "n", 313 },	-- Theocritus <Mage of Tower Azora>
 				},
 				coords = {
@@ -592,7 +592,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					objective(1, {	-- 0/1 Oslow's Toolbox
 						providers = {
 							{ "i", 1309 },	-- Oslow's Toolbox (QI!)
-							{ "o",   32 },	-- Sunken Chest
+							{ "o", 32 },	-- Sunken Chest
 						},
 						coord = { 36.5, 54.68, MAP.REDRIDGE_MOUNTAINS },
 					}),
@@ -749,8 +749,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(584, {	-- Kazon
 				coords = {
-					{ 33.0,  6.6, MAP.REDRIDGE_MOUNTAINS },
-					{ 36.0,  8.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 33.0, 6.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 36.0, 8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 36.6, 11.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 38.4, 13.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 42.4, 15.4, MAP.REDRIDGE_MOUNTAINS },
@@ -1097,7 +1097,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			i(1445, {	-- Blackrock Pauldrons
 				coords = {
 					{ 39.4, 14.8, MAP.REDRIDGE_MOUNTAINS },
-					{ 35.4,  8.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 35.4, 8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.6, 14.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 				crs = {

@@ -632,7 +632,7 @@ instanceroot(230, {	-- Dire Maul
 			q(7877, {	-- The Treasure of the Shen'dralar
 				sourceQuest = 7461,	-- The Madness Within
 				providers = {
-					{ "n",  14358 },	-- Shen'dralar Ancient
+					{ "n", 14358 },	-- Shen'dralar Ancient
 					{ "o", 179517 },	-- Treasure of the Shen'dralar
 				},
 				maps = CAPITAL_GARDENS_MAPS,

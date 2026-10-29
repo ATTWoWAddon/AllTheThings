@@ -27,7 +27,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			exploration(501),	-- Beezil's Wreck
 			exploration(512),	-- Blackhoof Village
 			exploration(498),	-- Bloodfen Burrow
-			visit_exploration(507,{ coord={ 42.2,23.4,MAP.DUSTWALLOW_MARSH } }),	-- Bluefen
+			visit_exploration(507, { coord={ 42.2, 23.4, MAP.DUSTWALLOW_MARSH } }),	-- Bluefen
 			exploration(496),	-- Brackenwall Village
 			exploration(499),	-- Darkmist Cavern
 			exploration(518),	-- Dreadmurk Shore

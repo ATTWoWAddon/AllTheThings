@@ -191,7 +191,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				groups = {
 					objective(1, {	-- 0/20 Sapphire of Aku'Mai
 						providers = {
-							{ "i",  16784 },	-- Sapphire of Aku'Mai
+							{ "i", 16784 },	-- Sapphire of Aku'Mai
 							{ "o", 178184 },	-- Sapphire of Aku'Mai
 							{ "o", 178185 },	-- Sapphire of Aku'Mai
 							{ "o", 178186 },	-- Sapphire of Aku'Mai

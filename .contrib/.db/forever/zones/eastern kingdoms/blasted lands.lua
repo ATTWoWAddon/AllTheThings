@@ -183,7 +183,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Imprisoned Doomguard
 						providers = {
-							{ "i",  18605 },	-- Imprisoned Doomguard
+							{ "i", 18605 },	-- Imprisoned Doomguard
 							{ "o", 179644 },	-- Imprisoned Doomguard
 						},
 						cost = { { "i", 18601, 1 } },	-- Glowing Crystal Prison
@@ -293,8 +293,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				groups = {
 					objective(1, {	-- Severed Horn of the Defiler
 						providers = {
-							{ "i",  10759 },	-- Severed Horn of the Defiler
-							{ "i",  10757 },	-- Ward of the Defiler
+							{ "i", 10759 },	-- Severed Horn of the Defiler
+							{ "i", 10757 },	-- Ward of the Defiler
 							{ "o", 153205 },	-- Altar of the Defiler
 						},
 						coord = { 47.6, 30.0, MAP.BLASTED_LANDS },

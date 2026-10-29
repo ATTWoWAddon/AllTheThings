@@ -137,7 +137,7 @@ instanceroot(228, {	-- Blackrock Depths
 			q(3802, {	-- Dark Iron Legacy (2/2)
 				sourceQuest = 3801,	-- Dark Iron Legacy (1/2)
 				providers = {
-					{ "n",   8888 },	-- Franclorn Forgewright
+					{ "n", 8888 },	-- Franclorn Forgewright
 					{ "o", 164689 },	-- Monument of Franclorn Forgewright
 				},
 				maps = { MAP.BLACKROCK_MOUNTAIN },

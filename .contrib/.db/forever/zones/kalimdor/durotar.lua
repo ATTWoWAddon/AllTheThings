@@ -140,7 +140,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						groups = {
 							objective(1, {	-- 0/10 Cactus Apple
 								providers = {
-									{ "i",  11583 },	-- Cactus Apple
+									{ "i", 11583 },	-- Cactus Apple
 									{ "o", 171938 },	-- Cactus Apple
 								},
 							}),
@@ -301,7 +301,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						groups = {
 							objective(1, {	-- 0/1 Thazz'ril's Pick
 								providers = {
-									{ "i",  16332 },	-- Thazz'ril's Pick
+									{ "i", 16332 },	-- Thazz'ril's Pick
 									{ "o", 178087 },	-- Thazz'ril's Pick
 								},
 								coord = { 43.8, 53.8, MAP.DUROTAR },
