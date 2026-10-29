@@ -1,8 +1,13 @@
 local AllowedNilGlobals = {
 	CurrentSubFileName = 1,
 }
---- Rejects undeclared globals except the allowed current-subfile name.
-_G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end})
+_G = setmetatable(_G, {
+	--- Rejects undeclared globals except the allowed current-subfile name.
+	---@param t table Global table receiving the lookup.
+	---@param key any Missing global key being looked up.
+	---@return nil # Allowed missing globals return nil; other missing keys raise an error.
+	__index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end
+})
 AllTheThings = {};
 _ = AllTheThings;
 

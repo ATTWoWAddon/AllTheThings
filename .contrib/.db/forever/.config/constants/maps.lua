@@ -1,5 +1,9 @@
 -- Map Constants
 local mapMetatable = {
+	--- Resolves a missing map key from an existing global and caches it.
+	---@param t table Table receiving the resolved global value.
+	---@param mapKey string|number Global key to resolve; unknown keys raise an error.
+	---@return any # Existing truthy global value for the requested key.
 	__index = function(t, mapKey)
 		local globalMapID = _G[mapKey];
 		if globalMapID then

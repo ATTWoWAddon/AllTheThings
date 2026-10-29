@@ -1401,8 +1401,8 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 end
 --- Builds the symbolic selector for a PvP weapons arsenal.
 ---@param TIER integer Legacy tier argument retained in the symbolic command; ignored by the current resolver.
----@param SEASON integer Season header ID selected by the weapons ensemble resolver.
----@param PVPSET integer PvP set header ID searched beneath the season header.
+---@param SEASON ATTHeaderID Season header ID selected by the weapons ensemble resolver.
+---@param PVPSET ATTHeaderID PvP set header ID searched beneath the season header.
 ---@return ATTSym # Symbolic commands selecting the PvP weapons arsenal.
 Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
 	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
@@ -3493,6 +3493,9 @@ end
 battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
 	root(ROOTS.PVP, n(BATTLEGROUNDS, { m(mapID, g) }));
 end
+--- Registers an instance under the Instances root.
+---@param instID JournalInstanceID Encounter Journal instance ID to register.
+---@param g? ATTObject|ATTObjectArray Optional instance metadata or child objects.
 instanceroot = function(instID, g)
 	root(ROOTS.Instances, inst(instID, g));
 end
