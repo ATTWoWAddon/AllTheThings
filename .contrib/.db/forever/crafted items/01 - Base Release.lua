@@ -2221,8 +2221,8 @@ root(ROOTS.Craftables, {
 		filter(MISC, {
 			i(11020, {	-- Evergreen Pouch
 				cost = {
-					{ "i", 11018, 2 },	-- Un'Goro Soil
-					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+					{ "i", 11018, 2 },	-- 2x Un'Goro Soil
+					{ "i", 11022, 1 },	-- 1x Packet of Tharlendris Seeds
 				},
 				groups = {
 					i(11024, {	-- Evergreen Herb Casing
@@ -3335,43 +3335,43 @@ root(ROOTS.Craftables, {
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(2841, {	-- Bronze Bar
 				cost = ClassicCost({
-					{ "i", 2840, 1 },	-- Copper Bar
-					{ "i", 3576, 1 },	-- Tin Bar
+					{ "i", 2840, 1 },	-- 1x Copper Bar
+					{ "i", 3576, 1 },	-- 1x Tin Bar
 				}),
 			}),
 			i(2840, {	-- Copper Bar
-				cost = ClassicCost({ { "i", 2770, 1 } }),	-- Copper Ore
+				cost = ClassicCost({ { "i", 2770, 1 } }),	-- 1x Copper Ore
 			}),
 			i(11371, {	-- Dark Iron Bar
-				cost = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
+				cost = ClassicCost({ { "i", 11370, 8 } }),	-- 8x Dark Iron Ore
 				description = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 			}),
 			i(3577, {	-- Gold Bar
-				cost = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
+				cost = ClassicCost({ { "i", 2776, 1 } }),	-- 1x Gold Ore
 			}),
 			i(3575, {	-- Iron Bar
-				cost = ClassicCost({ { "i", 2772, 1 } }),	-- Iron Ore
+				cost = ClassicCost({ { "i", 2772, 1 } }),	-- 1x Iron Ore
 			}),
 			i(3860, {	-- Mithril Bar
-				cost = ClassicCost({ { "i", 3858, 1 } }),	-- Mithril Ore
+				cost = ClassicCost({ { "i", 3858, 1 } }),	-- 1x Mithril Ore
 			}),
 			i(2842, {	-- Silver Bar
-				cost = ClassicCost({ { "i", 2775, 1 } }),	-- Silver Ore
+				cost = ClassicCost({ { "i", 2775, 1 } }),	-- 1x Silver Ore
 			}),
 			i(3859, {	-- Steel Bar
 				cost = ClassicCost({
-					{ "i", 3575, 1 },	-- Iron Bar
-					{ "i", 3857, 1 },	-- Coal
+					{ "i", 3575, 1 },	-- 1x Iron Bar
+					{ "i", 3857, 1 },	-- 1x Coal
 				}),
 			}),
 			i(12359, {	-- Thorium Bar
-				cost = ClassicCost({ { "i", 10620, 1 } }),	-- Thorium Ore
+				cost = ClassicCost({ { "i", 10620, 1 } }),	-- 1x Thorium Ore
 			}),
 			i(3576, {	-- Tin Bar
-				cost = ClassicCost({ { "i", 2771, 1 } }),	-- Tin Ore
+				cost = ClassicCost({ { "i", 2771, 1 } }),	-- 1x Tin Ore
 			}),
 			i(6037, {	-- Truesilver Bar
-				cost = ClassicCost({ { "i", 7911, 1 } }),	-- Truesilver Ore
+				cost = ClassicCost({ { "i", 7911, 1 } }),	-- 1x Truesilver Ore
 			}),
 		}),
 	}),

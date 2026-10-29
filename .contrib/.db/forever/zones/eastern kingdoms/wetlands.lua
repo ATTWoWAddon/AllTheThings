@@ -997,7 +997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Flagon of Dwarven Honeymead
-						cost = { { "i", 2594, 1 } },	-- Flagon of Dwarven Honeymead
+						cost = { { "i", 2594, 1 } },	-- 1x Flagon of Dwarven Honeymead
 						coord = { 10.6, 60.8, MAP.WETLANDS },
 						cr = 1464,	-- Innkeeper Helbrek <Innkeeper>
 					}),

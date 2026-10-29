@@ -9,7 +9,7 @@ instanceroot(760, {	-- Onyxia's Lair
 		6502,	-- Alliance Attunement Quest
 		6602,	-- Horde Attunement Quest
 	},
-	cost = {{ "i", 16309, 1 }},	-- Drakefire Amulet
+	cost = {{ "i", 16309, 1 }},	-- 1x Drakefire Amulet
 	mapID = MAP.ONYXIAS_LAIR,
 	coord = { 52.3, 76.2, MAP.DUSTWALLOW_MARSH },
 	isRaid = true,
@@ -20,7 +20,7 @@ instanceroot(760, {	-- Onyxia's Lair
 				--sourceQuest = 7633,	-- An Introduction (requires Molten Core)
 				qg = 14525,	-- Stoma the Ancient
 				coord = { 47.0, 24.48, MAP.FELWOOD },
-				cost = {{ "i", 18705, 1 }},	-- Mature Black Dragon Sinew
+				cost = {{ "i", 18705, 1 }},	-- 1x Mature Black Dragon Sinew
 				classes = { HUNTER },
 				lvl = 60,
 				groups = {
@@ -32,7 +32,7 @@ instanceroot(760, {	-- Onyxia's Lair
 				qg = 14526,	-- Hastat the Ancient
 				coord = { 47.0, 24.48, MAP.FELWOOD },
 				maps = { MAP.WINTERSPRING },
-				cost = {{ "i", 18704, 1 }},	-- Mature Blue Dragon Sinew
+				cost = {{ "i", 18704, 1 }},	-- 1x Mature Blue Dragon Sinew
 				classes = { HUNTER },
 				lvl = 60,
 				groups = {
@@ -122,7 +122,7 @@ instanceroot(760, {	-- Onyxia's Lair
 						},
 					}),
 					i(18707, {	-- Ancient Rune Etched Stave
-						cost = {{ "i", 18724, 1 }},	-- Enchanted Black Dragon Sinew
+						cost = {{ "i", 18724, 1 }},	-- 1x Enchanted Black Dragon Sinew
 						groups = {
 							i(18713),	-- Rhok'delar, Longbow of the Ancient Keepers
 						},
@@ -159,12 +159,12 @@ instanceroot(760, {	-- Onyxia's Lair
 						provider = { "i", 18492 },	-- Treated Ancient Blade
 						description = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
 						cr = 10184,	-- Onyxia
-						cost = {{ "i", 18488, 1 }},	-- Heated Ancient Blade
+						cost = {{ "i", 18488, 1 }},	-- 1x Heated Ancient Blade
 					}),
 					i(18488, {	-- Heated Ancient Blade
 						provider = { "o", 179562 },	-- Ancient Heated Blade
 						description = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-						cost = {{ "i", 18489, 1 }},	-- Unfired Ancient Blade
+						cost = {{ "i", 18489, 1 }},	-- 1x Unfired Ancient Blade
 					}),
 					i(18489, {	-- Unfired Ancient Blade
 						description = "Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",

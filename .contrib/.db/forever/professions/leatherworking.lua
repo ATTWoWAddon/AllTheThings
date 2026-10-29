@@ -25,9 +25,9 @@ profession(LEATHERWORKING, {
 			qg = 7866,	-- Peter Galen
 			coord = { 37.4, 65.4, MAP.AZSHARA },
 			cost = {
-				{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
-				{ "i", 8204, 2 },	-- Tough Scorpid Gloves
-				{ "i", 8165, 10 },	-- Worn Dragonscale
+				{ "i", 8203, 2 },	-- 2x Tough Scorpid Breastplate
+				{ "i", 8204, 2 },	-- 2x Tough Scorpid Gloves
+				{ "i", 8165, 10 },	-- 10x Worn Dragonscale
 			},
 			races = ALLIANCE_ONLY,
 		}),
@@ -39,9 +39,9 @@ profession(LEATHERWORKING, {
 			qg = 7867,	-- Thorkaf Dragoneye
 			coord = { 62.6, 57.4, MAP.BADLANDS },
 			cost = {
-				{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
-				{ "i", 8204, 2 },	-- Tough Scorpid Gloves
-				{ "i", 8165, 10 },	-- Worn Dragonscale
+				{ "i", 8203, 2 },	-- 2x Tough Scorpid Breastplate
+				{ "i", 8204, 2 },	-- 2x Tough Scorpid Gloves
+				{ "i", 8165, 10 },	-- 10x Worn Dragonscale
 			},
 			races = HORDE_ONLY,
 		}),
@@ -53,10 +53,10 @@ profession(LEATHERWORKING, {
 			qg = 7868,	-- Sarah Tanner
 			coord = { 63.6, 76.0, MAP.SEARING_GORGE },
 			cost = {
-				{ "i", 7081, 2 },	-- Breath of Wind
-				{ "i", 7075, 2 },	-- Core of Earth
-				{ "i", 7079, 2 },	-- Globe of Water
-				{ "i", 7077, 2 },	-- Heart of Fire
+				{ "i", 7081, 2 },	-- 2x Breath of Wind
+				{ "i", 7075, 2 },	-- 2x Core of Earth
+				{ "i", 7079, 2 },	-- 2x Globe of Water
+				{ "i", 7077, 2 },	-- 2x Heart of Fire
 			},
 			races = ALLIANCE_ONLY,
 		}),
@@ -68,10 +68,10 @@ profession(LEATHERWORKING, {
 			qg = 7869,	-- Brumn Winterhoof
 			coord = { 28.2, 45.0, MAP.ARATHI_HIGHLANDS },
 			cost = {
-				{ "i", 7081, 2 },	-- Breath of Wind
-				{ "i", 7075, 2 },	-- Core of Earth
-				{ "i", 7079, 2 },	-- Globe of Water
-				{ "i", 7077, 2 },	-- Heart of Fire
+				{ "i", 7081, 2 },	-- 2x Breath of Wind
+				{ "i", 7075, 2 },	-- 2x Core of Earth
+				{ "i", 7079, 2 },	-- 2x Globe of Water
+				{ "i", 7077, 2 },	-- 2x Heart of Fire
 			},
 			races = HORDE_ONLY,
 		}),
@@ -84,8 +84,8 @@ profession(LEATHERWORKING, {
 			qg = 7870,	-- Caryssia Moonhunter
 			coord = { 89.4, 46.5, MAP.FERALAS },
 			cost = {
-				{ "i", 8214, 1 },	-- Wild Leather Helmet
-				{ "i", 8211, 1 },	-- Wild Leather Vest
+				{ "i", 8214, 1 },	-- 1x Wild Leather Helmet
+				{ "i", 8211, 1 },	-- 1x Wild Leather Vest
 			},
 			races = ALLIANCE_ONLY,
 		}),
@@ -98,8 +98,8 @@ profession(LEATHERWORKING, {
 			qg = 7871,	-- Se'Jib
 			coord = { 36.6, 34.2, MAP.STRANGLETHORN_VALE },
 			cost = {
-				{ "i", 8214, 1 },	-- Wild Leather Helmet
-				{ "i", 8211, 1 },	-- Wild Leather Vest
+				{ "i", 8214, 1 },	-- 1x Wild Leather Helmet
+				{ "i", 8211, 1 },	-- 1x Wild Leather Vest
 			},
 			races = HORDE_ONLY,
 		}),

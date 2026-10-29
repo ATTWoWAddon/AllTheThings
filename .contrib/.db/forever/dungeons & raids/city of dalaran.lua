@@ -245,7 +245,7 @@ instanceroot(2959, {	-- City of Dalaran
 			},
 		}),
 		e(3310, {	-- Lyn the Ignored TODO: Source the steps to unlock the attunement https://www.wowhead.com/forever/es/news/how-to-find-the-secret-boss-in-the-city-of-dalaran-dungeon-in-wow-forever-383366
-			cost = { { "i", 275989, 1 } },	-- Tome of Dalaran
+			cost = { { "i", 275989, 1 } },	-- 1x Tome of Dalaran
 			creatureID = 247032,	-- Lyn the Ignored
 			groups = {
 				i(273053),	-- Tendonscraper Dagger
