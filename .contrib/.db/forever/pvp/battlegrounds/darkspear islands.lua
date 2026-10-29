@@ -35,7 +35,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			q(98888, {	-- Conflict at Darkspear Islands [Level 30]
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -63,7 +63,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			q(98895, {	-- Darkspear Islands Clash [Level 30]
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),

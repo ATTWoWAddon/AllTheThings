@@ -516,7 +516,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 91736,	-- Applejack Still
 				qg = 955,	-- Sergeant De Vries <Morale Officer>
 				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
-				cost = { { "i", 247824, 1 } },	-- Thunder Applejack
+				cost = { { "i", 247824, 1 } },	-- 1x Thunder Applejack
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -531,7 +531,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
-						cost = {{ "i", 247883, 3 }},	-- Crude Wax Effigy
+						cost = {{ "i", 247883, 3 }},	-- 3x Crude Wax Effigy
 					}),
 				},
 			}),
@@ -572,7 +572,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91736, {	-- Applejack Still
 				provider = { "o", 562131 },	-- Applejack Still
 				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
-				cost = { { "i", 4536, 4 } },	-- Shiny Red Apple
+				cost = { { "i", 4536, 4 } },	-- 4x Shiny Red Apple
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				repeatable = true,
 				races = ALLIANCE_ONLY,
@@ -1000,7 +1000,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ "i",  6782 },	-- Marshal Haggard's Badge (QI!)
 							{ "o", 85563 },	-- Dead-tooth's Strongbox
 						},
-						cost = { { "i", 6783, 1 } },	-- Dead-tooth's Key
+						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key
 						coord = { 89.2, 80.6, MAP.ELWYNN_FOREST },
 						cr = 6093,	-- Dead-Tooth Jack
 					}),
@@ -1158,7 +1158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(16, {	-- Give Gerard a Drink
 				qg = 255,	-- Gerard Tiller
 				coord = { 43.0, 85.6, MAP.ELWYNN_FOREST },
-				cost = { { "i", 159, 1 } },	-- Refreshing Spring Water
+				cost = { { "i", 159, 1 } },	-- 1x Refreshing Spring Water
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {

@@ -27,7 +27,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			q(8194, {	-- Apprentice Angler
 				qg = 15078,	-- Jang <Fishmaster Apprentice>
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 19807, 5 } },	-- Speckled Tastyfish
+				cost = { { "i", 19807, 5 } },	-- 5x Speckled Tastyfish
 				requireSkill = FISHING,
 				repeatable = true,
 			}),
@@ -56,7 +56,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			q(8193, {	-- Master Angler / Grand Prize (after 5.1.0)
 				qg = 15077,	-- Riggle Bassbait <Fishmaster>
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 19807, 40 } },	-- Speckled Tastyfish
+				cost = { { "i", 19807, 40 } },	-- 40x Speckled Tastyfish
 				_drop = { "g" },	-- API lists all quest rewards despite not being available in classic
 				requireSkill = FISHING,
 				repeatable = true,
@@ -68,7 +68,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
 				qg = 15079,	-- Fishbot 5000
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
+				cost = { { "i", 19803, 1 } },	-- 1x Brownell's Blue Striped Racer
 				requireSkill = FISHING,
 				repeatable = true,
 				groups = {
@@ -78,7 +78,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			q(8224, {	-- Rare Fish - Dezian Angelfish
 				qg = 15079,	-- Fishbot 5000
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 19806, 1 } },	-- Dezian Angelfish
+				cost = { { "i", 19806, 1 } },	-- 1x Dezian Angelfish
 				requireSkill = FISHING,
 				repeatable = true,
 				groups = {
@@ -88,7 +88,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 			q(8221, {	-- Rare Fish - Keefer's Angelfish
 				qg = 15079,	-- Fishbot 5000
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 19805, 1 } },	-- Keefer's Angelfish
+				cost = { { "i", 19805, 1 } },	-- 1x Keefer's Angelfish
 				requireSkill = FISHING,
 				repeatable = true,
 				groups = {

@@ -167,7 +167,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
 						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- Empty Thaumaturgy Vessel
+						cost = {{ "i", 7866, 1 }},	-- 1x Empty Thaumaturgy Vessel
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -179,7 +179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(703, {	-- Barbecued Buzzard Wings
 				qg = 2817,	-- Rigglefuzz
 				coord = { 42.39, 52.93, MAP.BADLANDS },
-				cost = { { "i", 3404, 4 } },	-- Buzzard Wing
+				cost = { { "i", 3404, 4 } },	-- 4x Buzzard Wing
 				lvl = 33,
 				groups = {
 					i(4457),	-- Barbecued Buzzard Wing
@@ -219,7 +219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			q(713, {	-- Coolant Heads Prevail
 				qg = 2921,	-- Lotwil Veriatus
 				coord = { 26.0, 44.9, MAP.BADLANDS },
-				cost = {{ "i", 3829, 1 }},	-- Frost Oil
+				cost = {{ "i", 3829, 1 }},	-- 1x Frost Oil
 				lvl = 35,
 			}),
 			q(1419, {	-- Coyote Thieves
@@ -293,7 +293,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				sourceQuest = 713,	-- Coolant Heads Prevail
 				qg = 2921,	-- Lotwil Veriatus
 				coord = { 26.0, 44.9, MAP.BADLANDS },
-				cost = { { "i", 4389, 1 } },	-- Gyrochronatom
+				cost = { { "i", 4389, 1 } },	-- 1x Gyrochronatom
 				lvl = 35,
 			}),
 			q(1108, {	-- Indurium
@@ -321,8 +321,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.2, MAP.BADLANDS },
 				cost = {
-					{ "i", 929, 1 },	-- Healing Potion
-					{ "i", 3823, 1 },	-- Lesser Invisibility Potion
+					{ "i", 929, 1 },	-- 1x Healing Potion
+					{ "i", 3823, 1 },	-- 1x Lesser Invisibility Potion
 				},
 				lvl = 35,
 				groups = {
@@ -391,7 +391,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qg = 2817,	-- Rigglefuzz
 				coord = { 42.39, 52.93, MAP.BADLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				cost = {{ "i", 4611, 9 }},	-- Blue Pearl
+				cost = {{ "i", 4611, 9 }},	-- 9x Blue Pearl
 				lvl = 30,
 				groups = {
 					i(4086),	-- Flash Rifle
@@ -593,7 +593,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.4, MAP.BADLANDS },
-				cost = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
+				cost = { { "i", 2868, 1 } },	-- 1x Patterned Bronze Bracers
 				lvl = 35,
 				groups = {
 					i(4979),	-- Enchanted Stonecloth Bracers
@@ -670,7 +670,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					objective(2, {	-- 0/1 Hand of Dagun
 						provider = { "i", 4641 },	-- Hand of Dagun
 						coord = { 60.4, 12.2, MAP.DUSTWALLOW_MARSH },
-						cost = { { "i", 4639, 1 } },	-- Enchanted Sea Kelp
+						cost = { { "i", 4639, 1 } },	-- 1x Enchanted Sea Kelp
 						cr = 2937,	-- Dagun the Ravenous
 					}),
 					objective(3, {	-- 0/1 The Legacy Heart
@@ -696,7 +696,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					objective(2, {	-- 0/1 Hand of Dagun
 						provider = { "i", 4641 },	-- Hand of Dagun
 						coord = { 60.4, 12.2, MAP.DUSTWALLOW_MARSH },
-						cost = { { "i", 4639, 1 } },	-- Enchanted Sea Kelp
+						cost = { { "i", 4639, 1 } },	-- 1x Enchanted Sea Kelp
 						cr = 2937,	-- Dagun the Ravenous
 					}),
 					objective(3, {	-- 0/1 The Legacy Heart
@@ -901,21 +901,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 		}),
 		n(TREASURES, {
 			o(2842, {	-- Pillar of Diamond
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = {{ "i", 4640, 1 }},	-- 1x Sign of the Earth
 				coord = { 83.5, 32.9, MAP.BADLANDS },
 				groups = {
 					i(4845),	-- Diamond Runestone
 				},
 			}),
 			o(2848, {	-- Pillar of Opal
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = {{ "i", 4640, 1 }},	-- 1x Sign of the Earth
 				coord = { 72.38, 66.94, MAP.BADLANDS },
 				groups = {
 					i(4844),	-- Opal Runestone
 				},
 			}),
 			o(2858, {	-- Pillar of Amethyst
-				cost = {{ "i", 4640, 1 }},	-- Sign of the Earth
+				cost = {{ "i", 4640, 1 }},	-- 1x Sign of the Earth
 				coord = { 81.27, 64.29, MAP.BADLANDS },
 				groups = {
 					i(4843),	-- Amethyst Runestone

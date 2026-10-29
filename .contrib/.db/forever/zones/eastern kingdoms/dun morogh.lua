@@ -563,8 +563,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1267,	-- Ragnar Thunderbrew
 				coord = { 46.8, 52.4, MAP.DUN_MOROGH },
 				cost = {
-					{ "i", 2894, 1 },	-- Rhapsody Malt
-					{ "i", 2886, 6 },	-- Crag Boar Rib
+					{ "i", 2894, 1 },	-- 1x Rhapsody Malt
+					{ "i", 2886, 6 },	-- 6x Crag Boar Rib
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 5,
@@ -596,7 +596,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(308, {	-- Distracting Jarven
 						qg = 1373,	-- Jarven Thunderbrew
 						coord = { 47.6, 52.6, MAP.DUN_MOROGH },
-						cost = {{ "i", 2686, 1 }},	-- Thunder Ale
+						cost = {{ "i", 2686, 1 }},	-- 1x Thunder Ale
 						races = ALLIANCE_ONLY,
 						repeatable = true,
 						groups = {
@@ -1181,7 +1181,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1377,	-- Pilot Stonegear
 				coord = { 49.6, 48.4, MAP.DUN_MOROGH },
 				maps = { WETLANDS },
-				cost = {{ "i", 3340, 6 }},	-- Incendicite Ore
+				cost = {{ "i", 3340, 6 }},	-- 6x Incendicite Ore
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
@@ -1238,7 +1238,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(317, {	-- Stocking Jetsteam
 				qg = 1378,	-- Pilot Bellowfiz
 				coord = { 49.4, 48.4, MAP.DUN_MOROGH },
-				cost = {{ "i", 769, 4 }},	-- Chunk of Boar Meat
+				cost = {{ "i", 769, 4 }},	-- 4x Chunk of Boar Meat
 				races = ALLIANCE_ONLY,
 				lvl = 2,
 				groups = {

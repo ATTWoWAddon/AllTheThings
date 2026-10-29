@@ -201,7 +201,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qi = 6929,	-- Bath'rah's Parchment
 				coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 3357, 8 } },	-- Liferoot
+				cost = { { "i", 3357, 8 } },	-- 8x Liferoot
 				classes = { WARRIOR },
 				lvl = 30,
 				groups = {
@@ -226,9 +226,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						qg = 6176,	-- Bath'rah the Windwatcher
 						coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 						cost = {
-							{ "i", 4479, 8 },	-- Burning Charm
-							{ "i", 4481, 8 },	-- Cresting Charm
-							{ "i", 4480, 8 },	-- Thundering Charm
+							{ "i", 4479, 8 },	-- 8x Burning Charm
+							{ "i", 4481, 8 },	-- 8x Cresting Charm
+							{ "i", 4480, 8 },	-- 8x Thundering Charm
 						},
 						classes = { WARRIOR },
 						repeatable = true,
@@ -270,10 +270,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 				races = HORDE_SHAMANS,
 				cost = {
-					{ "i", 7067, 1 },	-- Elemental Earth
-					{ "i", 7068, 1 },	-- Elemental Fire
-					{ "i", 7069, 1 },	-- Elemental Air
-					{ "i", 7070, 1 },	-- Elemental Water
+					{ "i", 7067, 1 },	-- 1x Elemental Earth
+					{ "i", 7068, 1 },	-- 1x Elemental Fire
+					{ "i", 7069, 1 },	-- 1x Elemental Air
+					{ "i", 7070, 1 },	-- 1x Elemental Water
 				},
 				classes = { SHAMAN },
 				lvl = 50,
@@ -359,7 +359,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 6707,	-- Fahrad <Grand Master Rogue>
 				coord = { 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
-				cost = {{ "i", 16885, 5 }},	-- Heavy Junkbox
+				cost = {{ "i", 16885, 5 }},	-- 5x Heavy Junkbox
 				repeatable = true,
 				lvl = 50,
 				groups = {
@@ -516,7 +516,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 6766,	-- Ravenholdt Guard <Assassin's League>
 				coord = { 85.2, 79.4, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
-				cost = {{ "i", 17124, 1 }},	-- Syndicate Emblem
+				cost = {{ "i", 17124, 1 }},	-- 1x Syndicate Emblem
 				classes = { ROGUE },
 				repeatable = true,
 				lvl = 24,
@@ -658,7 +658,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				altQuests = { 533 },	-- Infiltration (Can only be completed while on this quest)
 				qg = 2333,	-- Henchman Valik
 				coord = { 57.15, 69.50, MAP.ALTERAC_MOUNTAINS },
-				cost = { { "i", 3703, 1 } },	-- Southshore Stout
+				cost = { { "i", 3703, 1 } },	-- 1x Southshore Stout
 				races = HORDE_ONLY,
 				lvl = 29,
 				groups = {

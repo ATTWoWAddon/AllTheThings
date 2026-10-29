@@ -162,28 +162,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(7794, {	-- A Donation of Mageweave
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				cost = {{ "i", 4338, 60 }},	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7795, {	-- A Donation of Runecloth
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				cost = {{ "i", 14047, 60 }},	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7793, {	-- A Donation of Silk
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
+				cost = {{ "i", 4306, 60 }},	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7791, {	-- A Donation of Wool
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
-				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
+				cost = {{ "i", 2592, 60 }},	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
@@ -192,7 +192,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
 				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = { { "i", 4358, 10 } },	-- Rough Dynamite
+				cost = { { "i", 4358, 10 } },	-- 10x Rough Dynamite
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
@@ -288,7 +288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 				coord = { 53.9, 81.7, MAP.STORMWIND_CITY },
 				maxReputation = { FACTION_STORMWIND, EXALTED },
-				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				cost = {{ "i", 14047, 20 }},	-- 20x Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 50,
@@ -321,7 +321,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						qg = 2357,	-- Merideth Carlson <Horse Breeder>
 						coord = { 52.0, 55.6, MAP.HILLSBRAD_FOOTHILLS },
 						cost = {
-							{ "i", 13724, 20 },	-- Enriched Manna Biscuit
+							{ "i", 13724, 20 },	-- 20x Enriched Manna Biscuit
 							{ "g", 500000 },	-- 50g
 						},
 						repeatable = true,
@@ -478,10 +478,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
 				maps = { MAP.STRATHOLME },
 				cost = {
-					{ "i", 13180, 5 },	-- Stratholme Holy Water
-					{ "i", 8836, 10 },	-- Arthas' Tears
-					{ "i", 14047, 40 },	-- Runecloth
-					{ "i", 12360, 6 },	-- Arcanite Bar
+					{ "i", 13180, 5 },	-- 5x Stratholme Holy Water
+					{ "i", 8836, 10 },	-- 10x Arthas' Tears
+					{ "i", 14047, 40 },	-- 40x Runecloth
+					{ "i", 12360, 6 },	-- 6x Arcanite Bar
 					{ "g", 1500000 },	-- 150g
 				},
 				classes = { PALADIN },
@@ -808,8 +808,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 26.2, 47.0, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = {
-					{ "i", 6529, 1 },	-- Shiny Bauble
-					{ "i", 6530, 3 },	-- Nightcrawlers
+					{ "i", 6529, 1 },	-- 1x Shiny Bauble
+					{ "i", 6530, 3 },	-- 3x Nightcrawlers
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
@@ -904,7 +904,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 5497,	-- Jennea Cannon <Mage Trainer>
 				coord = { 49.5, 85.8, MAP.STORMWIND_CITY },
 				maps = { MAP.LOCH_MODAN },
-				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				cost = {{ "i", 2589, 10 }},	-- 10x Linen Cloth
 				races = { HUMAN, GNOME },
 				classes = { MAGE },
 				lvl = 15,
@@ -1093,7 +1093,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 7766,	-- Tyrion
 				coord = { 73.2, 35.7, MAP.STORMWIND_CITY },
 				maps = { MAP.ELWYNN_FOREST },
-				cost = {{ "i", 4306, 3 }},	-- Silk Cloth
+				cost = {{ "i", 4306, 3 }},	-- 3x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 				groups = {
@@ -1483,7 +1483,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190186, 1 } },	-- Wooden Figurine
+						cost = { { "i", 190186, 1 } },	-- 1x Wooden Figurine
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -1499,7 +1499,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6913, 1 } },	-- Heartswood Core
+						cost = { { "i", 6913, 1 } },	-- 1x Heartswood Core
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -1515,7 +1515,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 6928, 1 } },	-- Bloodstone Choker
+						cost = { { "i", 6928, 1 } },	-- 1x Bloodstone Choker
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -1533,8 +1533,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				cost = {
-					{ "i", 12800, 1 },	-- Azerothian Diamond
-					{ "i", 18335, 1 },	-- Pristine Black Diamond
+					{ "i", 12800, 1 },	-- 1x Azerothian Diamond
+					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
 				},
 				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
@@ -1640,7 +1640,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(2758, {	-- The Origins of Smithing
 				qg = 7798,	-- Hank the Hammer
 				coord = { 63.0, 36.4, MAP.STORMWIND_CITY },
-				cost = {{ "i", 6040, 6 }},	-- Golden Scale Bracers
+				cost = {{ "i", 6040, 6 }},	-- 6x Golden Scale Bracers
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				races = ALLIANCE_ONLY,
@@ -1720,7 +1720,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sourceQuest = 1643,	-- The Tome of Divinity (4/10)
 				qg = 6174,	-- Stephanie Turner
 				coord = { 63.8, 72.2, MAP.STORMWIND_CITY },
-				cost = {{ "i", 2589, 10 }},	-- Linen Cloth
+				cost = {{ "i", 2589, 10 }},	-- 10x Linen Cloth
 				races = { HUMAN },
 				classes = { PALADIN },
 				lvl = 12,
@@ -1900,8 +1900,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 7207,	-- Doc Mixilpixil
 				coord = { 80.1, 69.9, MAP.STORMWIND_CITY },
 				cost = {
-					{ "i", 3372, 1 },	-- Leaded Vial
-					{ "i", 4371, 1 },	-- Bronze Tube
+					{ "i", 3372, 1 },	-- 1x Leaded Vial
+					{ "i", 4371, 1 },	-- 1x Bronze Tube
 				},
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -2000,7 +2000,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 							}) },
 						},
 						coord = { 26.0, 22.0, MAP.ASHENVALE },
-						cost = {{ "i", 190308, 1 }},	-- Burning Torch
+						cost = {{ "i", 190308, 1 }},	-- 1x Burning Torch
 					}),
 					i(190308, {	-- 0/1 Burning Torch
 						description = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
@@ -2215,90 +2215,90 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = pvp({
 					i(272738, {	-- Premier Plate Helm
 						cost = {
-							{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
-							{ "c", 1792, 6000 },	-- x6000 Honor Points
+							{ "i", 20560, 15 },	-- 15x Alterac Valley Mark of Honor
+							{ "c", 1792, 6000 },	-- 6000x Honor Points
 						},
 					}),
 					i(272741, {	-- Premier Plate Pauldrons
 						cost = {
-							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
-							{ "c", 1792, 4250 },	-- x4250 Honor Points
+							{ "i", 20559, 10 },	-- 10x Arathi Basin Mark of Honor
+							{ "c", 1792, 4250 },	-- 4250x Honor Points
 						},
 					}),
 					i(273325, {	-- Premier Plate Girdle
 						cost = {
-							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
-							{ "c", 1792, 4000 },	-- x4000 Honor Points
+							{ "i", 20559, 10 },	-- 10x Arathi Basin Mark of Honor
+							{ "c", 1792, 4000 },	-- 4000x Honor Points
 						},
 					}),
 					i(272740, {	-- Premier Plate Leggings
 						cost = {
-							{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
-							{ "c", 1792, 6000 },	-- x6000 Honor Points
+							{ "i", 20558, 15 },	-- 15x Warsong Gulch Mark of Honor
+							{ "c", 1792, 6000 },	-- 6000x Honor Points
 						},
 					}),
 					i(272716, {	-- Premier Plate Boots
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 5000 },	-- x5000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 5000 },	-- 5000x Honor Points
 						},
 					}),
 					i(272828, {	-- Premier Plate Wristguards
 						cost = {
-							{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
-							{ "c", 1792, 3000 },	-- x3000 Honor Points
+							{ "i", 20558, 10 },	-- 10x Warsong Gulch Mark of Honor
+							{ "c", 1792, 3000 },	-- 3000x Honor Points
 						},
 					}),
 					i(272717, {	-- Premier Plate Gauntlets
 						cost = {
-							{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
-							{ "c", 1792, 5000 },	-- x5000 Honor Points
+							{ "i", 20558, 10 },	-- 10x Warsong Gulch Mark of Honor
+							{ "c", 1792, 5000 },	-- 5000x Honor Points
 						},
 					}),
 					i(272739, {	-- Premier Plate Chestguard
 						cost = {
-							{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
-							{ "c", 1792, 6250 },	-- x6250 Honor Points
+							{ "i", 20559, 15 },	-- 15x Arathi Basin Mark of Honor
+							{ "c", 1792, 6250 },	-- 6250x Honor Points
 						},
 					}),
 					i(275240, {	-- Premier Emboldened Wrist Seal
 						cost = {
-							{ "c", 1792, 750 },	-- x750 Honor Points
+							{ "c", 1792, 750 },	-- 750x Honor Points
 						},
 					}),
 					i(275244, {	-- Premier Emboldened Belt Seal
 						cost = {
-							{ "c", 1792, 1000 },	-- x1000 Honor Points
+							{ "c", 1792, 1000 },	-- 1000x Honor Points
 						},
 					}),
 					i(275243, {	-- Premier Emboldened Feet Seal
 						cost = {
-							{ "c", 1792, 1000 },	-- x1000 Honor Points
+							{ "c", 1792, 1000 },	-- 1000x Honor Points
 						},
 					}),
 					i(275239, {	-- Premier Emboldened Hands Seal
 						cost = {
-							{ "c", 1792, 1500 },	-- x1500 Honor Points
+							{ "c", 1792, 1500 },	-- 1500x Honor Points
 						},
 					}),
 					i(275242, {	-- Premier Emboldened Legs Seal
 						cost = {
-							{ "c", 1792, 2000 },	-- x2000 Honor Points
+							{ "c", 1792, 2000 },	-- 2000x Honor Points
 						},
 					}),
 					i(275229, {	-- Premier Emboldened Shoulder Seal
 						cost = {
-							{ "c", 1792, 1500 },	-- x1500 Honor Points
+							{ "c", 1792, 1500 },	-- 1500x Honor Points
 						},
 					}),
 					i(275241, {	-- Premier Emboldened Head Seal
 						cost = {
-							{ "c", 1792, 2000 },	-- x2000 Honor Points
+							{ "c", 1792, 2000 },	-- 2000x Honor Points
 						},
 					}),
 					i(275238, {	-- Premier Emboldened Chest Seal
 						cost = {
-							{ "c", 1792, 1750 },	-- x1750 Honor Points
+							{ "c", 1792, 1750 },	-- 1750x Honor Points
 						},
 					}),
 				}),
@@ -2314,134 +2314,134 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = pvp({
 					i(272858, {	-- Premier Grand Marshal's Demolisher
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272849, {	-- Premier Grand Marshal's Glaive
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272848, {	-- Premier Grand Marshal's Battle Hammer
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272850, {	-- Premier Grand Marshal's Stave
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272840, {	-- Premier Grand Marshal's Sunderer
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272851, {	-- Premier Grand Marshal's Claymore
 						cost = {
-							{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
-							{ "c", 1792, 15000 },	-- x15000 Honor Points
+							{ "i", 20560, 20 },	-- 20x Alterac Valley Mark of Honor
+							{ "c", 1792, 15000 },	-- 15000x Honor Points
 						},
 					}),
 					i(272846, {	-- Premier Grand Marshal's Hand Cannon
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272859, {	-- Premier Grand Marshal's Swiftblade
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272856, {	-- Premier Grand Marshal's Mageblade
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272839, {	-- Premier Grand Marshal's Handaxe
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272857, {	-- Premier Grand Marshal's Warhammer
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272693, {	-- Premier Grand Marshal's Longsword
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272847, {	-- Premier Grand Marshal's Punisher
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272843, {	-- Premier Grand Marshal's Dirk
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272844, {	-- Premier Grand Marshal's Right Hand Blade
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272845, {	-- Premier Grand Marshal's Left Hand Blade
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272841, {	-- Premier Grand Marshal's Bullseye
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272842, {	-- Premier Grand Marshal's Repeater
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 8000 },	-- x8000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 8000 },	-- 8000x Honor Points
 						},
 					}),
 					i(272838, {	-- Premier Grand Marshal's Aegis
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 7000 },	-- x7000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 },	-- 7000x Honor Points
 						},
 					}),
 					i(278158, {	-- Premier Grand Marshal's Tome of Power
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 7000 },	-- x7000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 },	-- 7000x Honor Points
 						},
 					}),
 					i(278157, {	-- Premier Grand Marshal's Tome of Restoration
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 7000 },	-- x7000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 },	-- 7000x Honor Points
 						},
 					}),
 					i(278468, {	-- Premier Grand Marshal's Barricade
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 7000 },	-- x7000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 7000 },	-- 7000x Honor Points
 						},
 					}),
 				}),
@@ -2893,25 +2893,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(272694),	-- Private's Tabard
 					i(274445, {	-- Greater Insignia of the Alliance
 						cost = {
-							{ "c", 1792, 3500 },	-- x3500 Honor Points
+							{ "c", 1792, 3500 },	-- 3500x Honor Points
 						},
 					}),
 					i(272699, {	-- Premier Sergeant's Cape
 						cost = {
-							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
-							{ "c", 1792, 3000 },	-- x3000 Honor Points
+							{ "i", 20559, 10 },	-- 10x Arathi Basin Mark of Honor
+							{ "c", 1792, 3000 },	-- 3000x Honor Points
 						},
 					}),
 					i(272698, {	-- Premier Sergeant's Cloak
 						cost = {
-							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
-							{ "c", 1792, 3000 },	-- x3000 Honor Points
+							{ "i", 20559, 10 },	-- 10x Arathi Basin Mark of Honor
+							{ "c", 1792, 3000 },	-- 3000x Honor Points
 						},
 					}),
 					i(274969, {	-- Premier Master Sergeant's Insignia
 						cost = {
-							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
-							{ "c", 1792, 5000 },	-- x5000 Honor Points
+							{ "i", 274895, 10 },	-- 10x Darkspear Islands Mark of Honor
+							{ "c", 1792, 5000 },	-- 5000x Honor Points
 						},
 					}),
 					i(272695),	-- Knight's Colors

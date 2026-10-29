@@ -248,7 +248,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 7810,	-- Arena Master
 				qg = 14508,	-- Short John Mithril
 				coord = { 29.6, 47.4, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 18706, 12 } },	-- Arena Master (trinket)
+				cost = { { "i", 18706, 12 } },	-- 12x Arena Master (trinket)
 				repeatable = true,
 				groups = {
 					i(19024),	-- Arena Grand Master
@@ -291,7 +291,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(204, {	-- Bad Medicine
 				qg = 733,	-- Sergeant Yohwa
 				coord = { 38.0, 3.3, MAP.STRANGLETHORN_VALE },
-				cost = { { "i", 2633, 7 } },	-- Jungle Remedy
+				cost = { { "i", 2633, 7 } },	-- 7x Jungle Remedy
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
@@ -411,10 +411,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 2725, 1 },	-- Green Hills of Stranglethorn - Page 1
-					{ "i", 2728, 1 },	-- Green Hills of Stranglethorn - Page 4
-					{ "i", 2730, 1 },	-- Green Hills of Stranglethorn - Page 6
-					{ "i", 2732, 1 },	-- Green Hills of Stranglethorn - Page 8
+					{ "i", 2725, 1 },	-- 1x Green Hills of Stranglethorn - Page 1
+					{ "i", 2728, 1 },	-- 1x Green Hills of Stranglethorn - Page 4
+					{ "i", 2730, 1 },	-- 1x Green Hills of Stranglethorn - Page 6
+					{ "i", 2732, 1 },	-- 1x Green Hills of Stranglethorn - Page 8
 				},
 				lvl = 30,
 				groups = {
@@ -425,10 +425,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 2734, 1 },	-- Green Hills of Stranglethorn - Page 10
-					{ "i", 2735, 1 },	-- Green Hills of Stranglethorn - Page 11
-					{ "i", 2738, 1 },	-- Green Hills of Stranglethorn - Page 14
-					{ "i", 2740, 1 },	-- Green Hills of Stranglethorn - Page 16
+					{ "i", 2734, 1 },	-- 1x Green Hills of Stranglethorn - Page 10
+					{ "i", 2735, 1 },	-- 1x Green Hills of Stranglethorn - Page 11
+					{ "i", 2738, 1 },	-- 1x Green Hills of Stranglethorn - Page 14
+					{ "i", 2740, 1 },	-- 1x Green Hills of Stranglethorn - Page 16
 				},
 				lvl = 30,
 				groups = {
@@ -439,10 +439,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 2742, 1 },	-- Green Hills of Stranglethorn - Page 18
-					{ "i", 2744, 1 },	-- Green Hills of Stranglethorn - Page 20
-					{ "i", 2745, 1 },	-- Green Hills of Stranglethorn - Page 21
-					{ "i", 2748, 1 },	-- Green Hills of Stranglethorn - Page 24
+					{ "i", 2742, 1 },	-- 1x Green Hills of Stranglethorn - Page 18
+					{ "i", 2744, 1 },	-- 1x Green Hills of Stranglethorn - Page 20
+					{ "i", 2745, 1 },	-- 1x Green Hills of Stranglethorn - Page 21
+					{ "i", 2748, 1 },	-- 1x Green Hills of Stranglethorn - Page 24
 				},
 				lvl = 30,
 				groups = {
@@ -453,9 +453,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 2749, 1 },	-- Green Hills of Stranglethorn - Page 25
-					{ "i", 2750, 1 },	-- Green Hills of Stranglethorn - Page 26
-					{ "i", 2751, 1 },	-- Green Hills of Stranglethorn - Page 27
+					{ "i", 2749, 1 },	-- 1x Green Hills of Stranglethorn - Page 25
+					{ "i", 2750, 1 },	-- 1x Green Hills of Stranglethorn - Page 26
+					{ "i", 2751, 1 },	-- 1x Green Hills of Stranglethorn - Page 27
 				},
 				lvl = 30,
 				groups = {
@@ -655,8 +655,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						description = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 						provider = { "o", 2289 },	-- Ruined Lifeboat
 						cost = {
-							{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
-							{ "i", 4595, 5 },	-- Junglevine Wine
+							{ "i", 4457, 10 },	-- 10x Barbecued Buzzard Wing
+							{ "i", 4595, 5 },	-- 5x Junglevine Wine
 						},
 						repeatable = true,
 						groups = {
@@ -676,7 +676,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.ARATHI_HIGHLANDS },
-				cost = { { "i", 4278, 4 } },	-- Lesser Bloodstone Ore
+				cost = { { "i", 4278, 4 } },	-- 4x Lesser Bloodstone Ore
 				races = ALLIANCE_ONLY,
 				lvl = 32,
 			}),
@@ -713,8 +713,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						provider = { "i", 9319 },	-- Nimboya's Laden Pike
 						coord = { 32.0, 58.0, MAP.THE_HINTERLANDS },
 						cost = {
-							{ "i", 15002, 1 },	-- Nimboya's Pike
-							{ "i", 9320, 20 },	-- Witherbark Skull x20
+							{ "i", 15002, 1 },	-- 1x Nimboya's Pike
+							{ "i", 9320, 20 },	-- 20x Witherbark Skull
 						},
 					}),
 					i(9320, {	-- Witherbark Skull
@@ -1203,7 +1203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					q(593, {	-- Filling the Soul Gem
 						qg = 2530,	-- Yenniku <Darkspear Hostage>
 						coord = { 39.0, 58.2, MAP.STRANGLETHORN_VALE },
-						cost = { { "i", 3912, 1 } },	-- Soul Gem
+						cost = { { "i", 3912, 1 } },	-- 1x Soul Gem
 						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Filled Soul Gem
@@ -1233,9 +1233,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 4392, 2 },	-- Advanced Target Dummy
-					{ "i", 4407, 1 },	-- Accurate Scope
-					{ "i", 10559, 6 },	-- Mithril Tube
+					{ "i", 4392, 2 },	-- 2x Advanced Target Dummy
+					{ "i", 4407, 1 },	-- 1x Accurate Scope
+					{ "i", 10559, 6 },	-- 6x Mithril Tube
 				},
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
@@ -1291,8 +1291,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7802,	-- Galvan the Ancient
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 3575, 40 },	-- Iron Bar
-					{ "i", 3860, 40 },	-- Mithril Bar
+					{ "i", 3575, 40 },	-- 40x Iron Bar
+					{ "i", 3860, 40 },	-- 40x Mithril Bar
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -1421,7 +1421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					q(349, {	-- Stranglethorn Fever
 						qg = 1449,	-- Witch Doctor Unbagwa
 						coord = { 35.2, 60.4, MAP.STRANGLETHORN_VALE },
-						cost = { { "i", 2799, 10 } },	-- Gorilla Fang
+						cost = { { "i", 2799, 10 } },	-- 10x Gorilla Fang
 						repeatable = true,
 						lvl = 32,
 						groups = {
@@ -1485,8 +1485,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7802,	-- Galvan the Ancient
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 3860, 40 },	-- Iron Bar
-					{ "i", 3864, 4 },	-- Citrine
+					{ "i", 3860, 40 },	-- 40x Iron Bar
+					{ "i", 3864, 4 },	-- 4x Citrine
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -1677,8 +1677,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 7802,	-- Galvan the Ancient
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 3860, 40 },	-- Iron Bar
-					{ "i", 6037, 5 },	-- Truesilver Bar
+					{ "i", 3860, 40 },	-- 40x Iron Bar
+					{ "i", 6037, 5 },	-- 5x Truesilver Bar
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -1692,10 +1692,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
 				cost = {
-					{ "i", 2756, 1 },	-- Green Hills of Stranglethorn - Chapter I
-					{ "i", 2757, 1 },	-- Green Hills of Stranglethorn - Chapter II
-					{ "i", 2758, 1 },	-- Green Hills of Stranglethorn - Chapter III
-					{ "i", 2759, 1 },	-- Green Hills of Stranglethorn - Chapter IV
+					{ "i", 2756, 1 },	-- 1x Green Hills of Stranglethorn - Chapter I
+					{ "i", 2757, 1 },	-- 1x Green Hills of Stranglethorn - Chapter II
+					{ "i", 2758, 1 },	-- 1x Green Hills of Stranglethorn - Chapter III
+					{ "i", 2759, 1 },	-- 1x Green Hills of Stranglethorn - Chapter IV
 				},
 				lvl = 30,
 				groups = {
@@ -1905,8 +1905,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				coord = { 31.8, 70.9, MAP.STRANGLETHORN_VALE },
 				maxReputation = { FACTION_BOOTY_BAY, NEUTRAL },	-- Booty Bay, must be less than Neutral
 				cost = {
-					{ "i", 4306, 40 },	-- Silk Cloth
-					{ "i", 2604, 4 },	-- Red Dye
+					{ "i", 4306, 40 },	-- 40x Silk Cloth
+					{ "i", 2604, 4 },	-- 4x Red Dye
 				},
 				repeatable = true,
 				lvl = 30,
@@ -2388,7 +2388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				groups = {
 					i(272151, { -- Damaged Undermine Supply Crate
 						cost = {
-							{ "c", 3469, 5 },	-- x5 Tarnished Undermine Real
+							{ "c", 3469, 5 },	-- 5x Tarnished Undermine Real
 						},
 					}),
 					i(272393, {	-- Magician's Cord
@@ -2438,7 +2438,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(272403, { -- Valiant's Waistguard
 						cost = {
-							{ "c", 3469, 100 },	-- x100 Tarnished Undermine Real
+							{ "c", 3469, 100 },	-- 100x Tarnished Undermine Real
 						},
 					}),
 					i(272404, {	-- Vindicator's Belt
@@ -2453,22 +2453,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(272406, { -- Channeler's Ring
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272407, { -- Blessed Band of Light
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272408, { -- Cutthroat's Signet
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272409, { -- Ring of Awareness
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272410, {	-- Windseeker's Belt
@@ -2478,92 +2478,92 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(272411, { -- Arcanoweave Cloak
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272413, { -- Drape of Recovery
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272414, { -- Howler's Furs
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272415, { -- Stalwart Cloak
 						cost = {
-							{ "c", 3469, 75 },	-- x75 Tarnished Undermine Real
+							{ "c", 3469, 75 },	-- 75x Tarnished Undermine Real
 						},
 					}),
 					i(272427, { -- Howling Idol
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272428, { -- Enraged Idol
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272429, { -- Idol of Synthesis
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272430, { -- Swarming Idol
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272431, { -- Tidal Totem
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272432, { -- Totem of the Storm
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272433, { -- Burning Totem
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272434, { -- Sentinel's Libram
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272435, { -- Libram of Law
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272436, { -- Libram of Economy
 						cost = {
-							{ "c", 3469, 50 },	-- x50 Tarnished Undermine Real
+							{ "c", 3469, 50 },	-- 50x Tarnished Undermine Real
 						},
 					}),
 					i(272437, { -- Adaptive Combat Assistant
 						cost = {
-							{ "c", 3469, 125 },	-- x125 Tarnished Undermine Real
+							{ "c", 3469, 125 },	-- 125x Tarnished Undermine Real
 						},
 					}),
 					i(272438, { -- Weakness Analyzer
 						cost = {
-							{ "c", 3469, 125 },	-- x125 Tarnished Undermine Real
+							{ "c", 3469, 125 },	-- 125x Tarnished Undermine Real
 						},
 					}),
 					i(272439, { -- Serenity Field
 						cost = {
-							{ "c", 3469, 125 },	-- x125 Tarnished Undermine Real
+							{ "c", 3469, 125 },	-- 125x Tarnished Undermine Real
 						},
 					}),
 					i(272440, { -- Defender's Grip Stabilizer
 						cost = {
-							{ "c", 3469, 125 },	-- x125 Tarnished Undermine Real
+							{ "c", 3469, 125 },	-- 125x Tarnished Undermine Real
 						},
 					}),
 				},
