@@ -109,14 +109,15 @@ foreach ($project in $projects) {
         }
         $leftProps = (Get-Content -Raw (Join-Path $evidence "baseline-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
         $rightProps = (Get-Content -Raw (Join-Path $evidence "candidate-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
-        foreach ($key in 'OutputType','Platform','PlatformTarget','Prefer32Bit','DefineConstants','LangVersion','DebugType','OutputPath','TargetFrameworkVersion') {
-            # x64 ignores Prefer32Bit; the PE machine and flags are checked below.
-            if ($key -eq 'Prefer32Bit' -and $project.Name -eq 'Parser') {
-                Write-Host "Parser $config Prefer32Bit baseline=$($leftProps.$key) candidate=$($rightProps.$key)"
-                continue
-            }
+        foreach ($key in 'OutputType','Platform','PlatformTarget','DefineConstants','LangVersion','DebugType','OutputPath','TargetFrameworkVersion') {
             if ($leftProps.$key -ne $rightProps.$key) { throw "$($project.Name) $config property $key differs: $($leftProps.$key) vs $($rightProps.$key)" }
         }
+        $expectedPlatformDifference = $project.Name -eq 'Classic' -or ($project.Name -eq 'Harvester' -and $config -eq 'Test')
+        $expectedBaselinePreference = if ($project.Name -eq 'Parser' -or $expectedPlatformDifference) { 'true' } else { 'false' }
+        if ($leftProps.Prefer32Bit -ne $expectedBaselinePreference -or $rightProps.Prefer32Bit -ne 'false') {
+            throw "$($project.Name) $config unexpected Prefer32Bit: baseline=$($leftProps.Prefer32Bit), candidate=$($rightProps.Prefer32Bit)"
+        }
+        Write-Host "$($project.Name) $config Prefer32Bit baseline=$($leftProps.Prefer32Bit) candidate=$($rightProps.Prefer32Bit)"
         foreach ($key in 'Optimize','Deterministic') {
             $baselineEnabled = $leftProps.$key -eq 'true'
             $candidateEnabled = $rightProps.$key -eq 'true'
@@ -130,29 +131,46 @@ foreach ($project in $projects) {
         if ($left.contract.machine -ne $expectedMachine -or $left.contract.peMagic -ne $expectedMagic -or
             $left.contract.assemblyVersion -ne '1.0.0.0' -or $left.contract.fileVersion -ne '1.0.0.0' -or
             $left.contract.assemblyName -ne [IO.Path]::GetFileNameWithoutExtension($project.Exe)) { throw "Unexpected baseline platform or assembly identity: $($project.Name) $config" }
-        $preferred = (($left.contract.corFlags -band 0x20000) -ne 0)
-        $expectedPreferred = $project.Name -eq 'Classic' -or ($project.Name -eq 'Harvester' -and $config -eq 'Test')
-        if ($preferred -ne $expectedPreferred) { throw "Unexpected 32-bit preference: $($project.Name) $config" }
+        $baselineFlags = [int]$left.contract.corFlags
+        $candidateFlags = [int]$right.contract.corFlags
+        $expectedBaselineFlags = if ($expectedPlatformDifference) { 0x20003 } else { 0x1 }
+        if ($baselineFlags -ne $expectedBaselineFlags -or $candidateFlags -ne 0x1) {
+            throw "$($project.Name) $config unexpected CLR flags: baseline=$baselineFlags, candidate=$candidateFlags"
+        }
         $leftContract = $left.contract | ConvertTo-Json -Depth 30 -Compress
         $rightContract = $right.contract | ConvertTo-Json -Depth 30 -Compress
+        $rawContractEqual = $leftContract -ceq $rightContract
+        if ($expectedPlatformDifference) {
+            # Only the verified Prefer32Bit CLR flags are intentionally different.
+            $left.contract.PSObject.Properties.Remove('corFlags')
+            $right.contract.PSObject.Properties.Remove('corFlags')
+            $leftContract = $left.contract | ConvertTo-Json -Depth 30 -Compress
+            $rightContract = $right.contract | ConvertTo-Json -Depth 30 -Compress
+        }
         $sameContract = $leftContract -ceq $rightContract
-        $result.comparisons += @{ project=$project.Name; configuration=$config; baselineSha256=$left.sha256; candidateSha256=$right.sha256; rawHashEqual=($left.sha256 -eq $right.sha256); contractEqual=$sameContract; baselinePrefer32Bit=$leftProps.Prefer32Bit; candidatePrefer32Bit=$rightProps.Prefer32Bit }
+        $result.comparisons += @{ project=$project.Name; configuration=$config; baselineSha256=$left.sha256; candidateSha256=$right.sha256; rawHashEqual=($left.sha256 -eq $right.sha256); rawContractEqual=$rawContractEqual; expectedPlatformDifference=$expectedPlatformDifference; contractEqual=$sameContract; baselineCorFlags=$baselineFlags; candidateCorFlags=$candidateFlags; baselinePrefer32Bit=$leftProps.Prefer32Bit; candidatePrefer32Bit=$rightProps.Prefer32Bit }
         if (-not $sameContract) { throw "$($project.Name) $config PE contract or raw method IL differs; inspect metadata reports" }
     }
 }
+$fixtureScenarios = @(
+    @{ Name='harvester'; Project=$projects[1]; Configuration='Release'; Mode='harvester'; BaselineBits=64; CandidateBits=64 },
+    @{ Name='harvester-test'; Project=$projects[1]; Configuration='Test'; Mode='harvester'; BaselineBits=32; CandidateBits=64 },
+    @{ Name='classic'; Project=$projects[2]; Configuration='Release'; Mode='classic'; BaselineBits=32; CandidateBits=64 }
+)
 foreach ($side in 'baseline','candidate') {
-    foreach ($mode in 'harvester','classic') {
-        $project = if ($mode -eq 'harvester') { $projects[1] } else { $projects[2] }
-        $exe = Join-Path $evidence "$side/$($project.Name)/Release/$($project.Exe)"
-        $dir = Join-Path $evidence "fixtures/$side/$mode"
+    foreach ($scenario in $fixtureScenarios) {
+        $project = $scenario.Project
+        $exe = Join-Path $evidence "$side/$($project.Name)/$($scenario.Configuration)/$($project.Exe)"
+        $dir = Join-Path $evidence "fixtures/$side/$($scenario.Name)"
         New-Item -ItemType Directory -Path $dir -Force | Out-Null
         $fixture = Join-Path $root '.github/scripts/Invoke-SdkFixture.ps1'
-        $args = '-NoProfile -NonInteractive -File "{0}" -Mode {1} -Executable "{2}" -Directory "{3}"' -f $fixture, $mode, $exe, $dir
-        $hostExe = if ($mode -eq 'classic') { Join-Path $env:WINDIR 'SysWOW64/WindowsPowerShell/v1.0/powershell.exe' } else { Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe' }
-        Run-Process $hostExe $args $dir "$side-$mode"
-        $hostLog = Get-Content -Raw (Join-Path $evidence "$side-$mode.stdout.log")
-        $expectedHostBits = if ($mode -eq 'classic') { 32 } else { 64 }
-        if ($hostLog -notmatch "Fixture host architecture: $expectedHostBits-bit") { throw "Unexpected $side $mode fixture host architecture" }
+        $args = '-NoProfile -NonInteractive -File "{0}" -Mode {1} -Executable "{2}" -Directory "{3}"' -f $fixture, $scenario.Mode, $exe, $dir
+        $expectedHostBits = if ($side -eq 'baseline') { $scenario.BaselineBits } else { $scenario.CandidateBits }
+        $hostExe = if ($expectedHostBits -eq 32) { Join-Path $env:WINDIR 'SysWOW64/WindowsPowerShell/v1.0/powershell.exe' } else { Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe' }
+        $label = "$side-$($scenario.Name)"
+        Run-Process $hostExe $args $dir $label
+        $hostLog = Get-Content -Raw (Join-Path $evidence "$label.stdout.log")
+        if ($hostLog -notmatch "Fixture host architecture: $expectedHostBits-bit") { throw "Unexpected $label fixture host architecture" }
         $result.processes[-1].hostArchitecture = "$expectedHostBits-bit"
     }
     $dir = Join-Path $evidence "fixtures/$side/compare"
@@ -170,7 +188,7 @@ foreach ($side in 'baseline','candidate') {
         if (Compare-Object $entry[1] $actual) { throw "Unexpected IDs in $file" }
     }
 }
-foreach ($fixture in @(@('harvester',@('roundtrip.json')), @('classic',@('RAW_classicItemDB.json','classicItemIDs.json','classicItemDB.json')), @('compare',@('itemDB-02-DIFF.json','itemDB-02-MISS.json','itemDB-FULL.json')))) {
+foreach ($fixture in @(@('harvester',@('roundtrip.json')), @('harvester-test',@('roundtrip.json')), @('classic',@('RAW_classicItemDB.json','classicItemIDs.json','classicItemDB.json')), @('compare',@('itemDB-02-DIFF.json','itemDB-02-MISS.json','itemDB-FULL.json')))) {
     foreach ($file in $fixture[1]) {
         $a = Join-Path $evidence "fixtures/baseline/$($fixture[0])/$file"
         $b = Join-Path $evidence "fixtures/candidate/$($fixture[0])/$file"
