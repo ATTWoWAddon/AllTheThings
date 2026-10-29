@@ -8,6 +8,14 @@
 -- These annotations are documentation-only and do not change runtime data.
 
 ---@alias FileID integer # WoW file data ID for an asset.
+---@alias CreatureDisplayID integer # Creature display ID for an object model.
+---@alias CampsiteID integer # Warband campsite scene ID.
+---@alias ATTCategoryID integer # ATT category ID used for names and icons.
+---@alias TransmogSetID integer # Transmog gear set ID.
+---@alias ProfessionNodeID integer # Profession specialization node ID.
+---@alias PVPRankID integer # Classic PvP rank ID.
+---@alias ItemClassID integer # Item class ID.
+---@alias ItemSubclassID integer # Item subclass ID.
 ---@alias ExpansionID integer # Expansion identifier.
 ---@alias ObjectID integer # Interactable world object ID, such as a chest.
 ---@alias ItemID integer # Base item ID.
@@ -59,6 +67,8 @@
 ---@alias ATTIgnoredValue string # Parser sentinel value assigned via `IGNORED_VALUE`.
 ---@alias Region "US"|"EU"|"KR"|"TW"|"CN" # WoW portal region code.
 ---@alias ATTTimelineEvent string # Patch change string using created, added, removed, or deleted plus a patch version.
+---@alias ATTPatchVersion string # Patch version string, such as `5.0.4`.
+---@alias ATTLuaExpression string # Lua source expression embedded in generated output.
 ---@alias ATTSymFieldValue any # Field-dependent value matched or assigned by a symbolic command.
 ---@alias ATTSymSubroutineName # Registered symbolic subroutine names.
 ---| "pvp_gear_base" # Selects a PvP season header and optional set header; accepts an ignored legacy tier.
@@ -399,6 +409,21 @@
 ---@field [2] y_axis # Vertical map position expressed as a percentage.
 ---@field [3] UiMapID # UI map ID on which the position is located.
 
+--- Horizontal and vertical map positions; the surrounding map key supplies the UI map ID.
+---@class ATTCoordinatePair
+---@field [1] x_axis # Horizontal map position expressed as a percentage.
+---@field [2] y_axis # Vertical map position expressed as a percentage.
+
+--- Nested lists of coordinate tuples accepted by the Parser.
+---@class ATTCoordinateList
+---@field [integer] Coord|ATTCoordinateList # Coordinate tuple or nested tuple list.
+
+--- Normalized exported coordinates by UI map ID, also accepted as top-level Parser input.
+---@alias ATTCoordinatesByMapID table<UiMapID, ATTCoordinatePair[]>
+
+--- Coordinate source forms accepted before Parser normalization.
+---@alias ATTRawCoordinates Coord|ATTCoordinateList|ATTCoordinatesByMapID
+
 --- Localized text or programmatic tokens indexed by ATT locale keys.
 ---@class ATTLocalizationStringTable
 ---@field en string # Default English text or programmatic localization token.
@@ -500,6 +525,7 @@
 ---@field SeasonOfDiscovery string # Root-category key for Season of Discovery content.
 ---@field Secrets string # Root-category key for secret content.
 ---@field Sourceless string # Root-category key for existing content whose source is unknown.
+---@field Talebound string # Root-category key for Talebound content.
 ---@field TradingPost string # Root-category key for Trading Post content.
 ---@field Uncollectible string # Root-category key for uncollectible item content.
 ---@field Unsorted string # Root-category key for content awaiting categorization.
