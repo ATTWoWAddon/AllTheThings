@@ -128,7 +128,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(522, {	-- Assassin's Contract
-				provider = { "i", 3668 },	-- Assassin's Contract
+				provider = { "i", 3668 },	-- Assassin's Contract (QS!)
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
@@ -643,7 +643,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(551, {	-- The Ensorcelled Parchment
 				providers = {
-					{ "i", 3706 },	-- Ensorcelled Parchment
+					{ "i", 3706 },	-- Ensorcelled Parchment (QS!)
 					{ "o", 1765 },	-- Worn Wooden Chest
 				},
 				coord = { 39.2, 14.8, MAP.ALTERAC_MOUNTAINS },
@@ -655,7 +655,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				providers = {
 					{ "i", 17125 },	-- Seal of Ravenholdt (QI!)
-					{ "i", 17126 },	-- Elegant Letter
+					{ "i", 17126 },	-- Elegant Letter (QS!)
 				},
 				classes = { ROGUE },
 				lvl = 24,

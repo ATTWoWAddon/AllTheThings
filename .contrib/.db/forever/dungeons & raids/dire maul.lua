@@ -214,7 +214,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7499, {	-- Codex of Defense
 				providers = {
-					{ "i", 18357 },	-- Codex of Defense
+					{ "i", 18357 },	-- Codex of Defense (QS!)
 					{ "n", 14383 },	-- Lorekeeper Kildrath
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -353,7 +353,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7505, {	-- Frost Shock and You
 				providers = {
-					{ "i", 18363 },	-- Frost Shock and You
+					{ "i", 18363 },	-- Frost Shock and You (QS!)
 					{ "n", 14381 },	-- Lorekeeper Javon
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -365,7 +365,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7498, {	-- Garona: A Study on Stealth and Treachery
 				providers = {
-					{ "i", 18356 },	-- Garona: A Study on Stealth and Treachery
+					{ "i", 18356 },	-- Garona: A Study on Stealth and Treachery (QS!)
 					{ "n", 14383 },	-- Lorekeeper Kildrath
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -377,7 +377,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7502, {	-- Harnessing Shadows
 				providers = {
-					{ "i", 18360 },	-- Harnessing Shadows
+					{ "i", 18360 },	-- Harnessing Shadows (QS!)
 					{ "n", 14382 },	-- Lorekeeper Mykos
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -389,7 +389,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7504, {	-- Holy Bologna: What the Light Won't Tell You
 				providers = {
-					{ "i", 18362 },	-- Holy Bologna: What the Light Won't Tell You
+					{ "i", 18362 },	-- Holy Bologna: What the Light Won't Tell You (QS!)
 					{ "n", 14381 },	-- Lorekeeper Javon
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -519,7 +519,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7500, {	-- The Arcanist's Cookbook
 				providers = {
-					{ "i", 18358 },	-- The Arcanist's Cookbook
+					{ "i", 18358 },	-- The Arcanist's Cookbook (QS!)
 					{ "n", 14383 },	-- Lorekeeper Kildrath
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -531,7 +531,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7506, {	-- The Emerald Dream...
 				providers = {
-					{ "i", 18364 },	-- The Emerald Dream
+					{ "i", 18364 },	-- The Emerald Dream (QS!)
 					{ "n", 14381 },	-- Lorekeeper Javon
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -594,7 +594,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7503, {	-- The Greatest Race of Hunters
 				providers = {
-					{ "i", 18361 },	-- The Greatest Race of Hunters
+					{ "i", 18361 },	-- The Greatest Race of Hunters (QS!)
 					{ "n", 14382 },	-- Lorekeeper Mykos
 				},
 				maps = CAPITAL_GARDENS_MAPS,
@@ -606,7 +606,7 @@ instanceroot(230, {	-- Dire Maul
 			}),
 			q(7501, {	-- The Light and How To Swing It
 				providers = {
-					{ "i", 18359 },	-- The Light and How to Swing It
+					{ "i", 18359 },	-- The Light and How to Swing It (QS!)
 					{ "n", 14382 },	-- Lorekeeper Mykos
 				},
 				maps = CAPITAL_GARDENS_MAPS,

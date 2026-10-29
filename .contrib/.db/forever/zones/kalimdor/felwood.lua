@@ -98,7 +98,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					14522,	-- Ur'dan
 				},
 				lvl = 49,
-				qi = 13140,	-- Blood Red Key
+				qi = 13140,	-- Blood Red Key (QS!)
 			}),
 			q(8419, {	-- An Imp's Request
 				altQuests = { 8420 },	-- Hot and Itchy
@@ -528,7 +528,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				sourceQuest = 4906,	-- Further Corruption
 				races = ALLIANCE_ONLY,
 				lvl = 49,
-				qi = 11668,	-- Flute of Xavaric
+				qi = 11668,	-- Flute of Xavaric (QS!)
 				groups = {
 					objective(1, {	-- 0/5 Jadefire Felbind
 						provider = { "i", 11674 },	-- Jadefire Felbind (QI!)

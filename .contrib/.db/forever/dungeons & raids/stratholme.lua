@@ -299,7 +299,7 @@ instanceroot(236, {	-- Stratholme
 			}),
 			q(5262, {	-- The Truth Comes Crashing Down
 				sourceQuest = 5251,	-- The Archivist
-				provider = { "i", 13250 },	-- Head of Balnazzar
+				provider = { "i", 13250 },	-- Head of Balnazzar (QS!)
 				lvl = 55,
 			}),
 		}),

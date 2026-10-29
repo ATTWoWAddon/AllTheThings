@@ -164,7 +164,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(485, {	-- Find OOX-09/HL!
 				description = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
 				lvl = 43,
-				qi = 8704,	-- OOX-09/HL Distress Beacon
+				qi = 8704,	-- OOX-09/HL Distress Beacon (QS!)
 			}),
 			q(4297, {	-- Food for Baby
 				sourceQuest = 3843,	-- The Newest Member of the Family

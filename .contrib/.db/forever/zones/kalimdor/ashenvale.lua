@@ -678,7 +678,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				races = HORDE_ONLY,
 				lvl = 20,
 				cr = 12677,	-- Shadumbra
-				qi = 16304,	-- Shadumbra's Head
+				qi = 16304,	-- Shadumbra's Head (QS!)
 			}),
 			q(98418, {	-- Shared Fury
 				sourceQuest = 98417,	-- Vengeful Trail
@@ -714,7 +714,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				races = HORDE_ONLY,
 				lvl = 20,
 				cr = 12676,	-- Sharptalon
-				qi = 16305,	-- Sharptalon's Claw
+				qi = 16305,	-- Sharptalon's Claw (QS!)
 			}),
 			q(86757, {	-- Slowing the Orc Advance
 				qg = 3955,	-- Shandrina <Trade Goods>
@@ -810,7 +810,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				races = HORDE_ONLY,
 				lvl = 23,
 				cr = 12759,	-- Tideress
-				qi = 16408,	-- Befouled Water Globe
+				qi = 16408,	-- Befouled Water Globe (QS!)
 			}),
 			q(1031, {	-- The Branch of Cenarius
 				sourceQuest = 1021,	-- Vile Satyr! Dryads in Danger!
@@ -1072,7 +1072,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				races = HORDE_ONLY,
 				lvl = 20,
 				cr = 12678,	-- Ursangous
-				qi = 16303,	-- Ursangous's Paw
+				qi = 16303,	-- Ursangous's Paw (QS!)
 			}),
 			q(1037, {	-- Velinde Starsong
 				sourceQuest = 1022,	-- The Howling Vale

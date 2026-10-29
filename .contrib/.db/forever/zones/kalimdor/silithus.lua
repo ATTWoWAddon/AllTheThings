@@ -279,7 +279,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21263,	-- Logistics Task Briefing VII (A)
+				qi = 21263,	-- Logistics Task Briefing VII (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -293,7 +293,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21264,	-- Logistics Task Briefing VII (H)
+				qi = 21264,	-- Logistics Task Briefing VII (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -304,7 +304,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21260,	-- Logistics Task Briefing VI (A)
+				qi = 21260,	-- Logistics Task Briefing VI (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -315,7 +315,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21261,	-- Logistics Task Briefing VI (H)
+				qi = 21261,	-- Logistics Task Briefing VI (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -331,7 +331,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8737, {	-- Azure Templar
 				lvl = 60,
 				repeatable = true,
-				qi = 21245,	-- Tactical Task Briefing I
+				qi = 21245,	-- Tactical Task Briefing I (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Azure Templar slain
 						provider = { "n", 15211 },	-- Azure Templar <Abyssal Council>
@@ -349,7 +349,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 20806,	-- Logistics Task Briefing X (A)
+				qi = 20806,	-- Logistics Task Briefing X (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -364,7 +364,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21385,	-- Logistics Task Briefing X (H)
+				qi = 21385,	-- Logistics Task Briefing X (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -375,7 +375,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 20939,	-- Logistics Task Briefing II (A)
+				qi = 20939,	-- Logistics Task Briefing II (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
@@ -386,7 +386,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21379,	-- Logistics Task Briefing II (H)
+				qi = 21379,	-- Logistics Task Briefing II (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -428,7 +428,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					11725,	-- Hive'Zora Waywatcher
 				},
 				lvl = 58,
-				qi = 20461,	-- Brann Bronzebeard's Lost Letter
+				qi = 20461,	-- Brann Bronzebeard's Lost Letter (QS!)
 				groups = {
 					i(20723),	-- Brann's Trusty Pick
 				},
@@ -500,7 +500,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8537, {	-- Crimson Templar
 				lvl = 60,
 				repeatable = true,
-				qi = 20945,	-- Tactical Task Briefing II
+				qi = 20945,	-- Tactical Task Briefing II (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Crimson Templar slain
 						provider = { "n", 15209 },	-- Crimson Templar <Abyssal Council>
@@ -555,7 +555,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 20807,	-- Logistics Task Briefing I (A)
+				qi = 20807,	-- Logistics Task Briefing I (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
@@ -584,7 +584,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 55,
 				repeatable = true,
-				qi = 21378,	-- Logistics Task Briefing I (H)
+				qi = 21378,	-- Logistics Task Briefing I (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -607,7 +607,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8536, {	-- Earthen Templar
 				lvl = 60,
 				repeatable = true,
-				qi = 21751,	-- Tactical Task Briefing III
+				qi = 21751,	-- Tactical Task Briefing III (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Earthen Templar slain
 						provider = { "n", 15307 },	-- Earthen Templar <Abyssal Council>
@@ -633,7 +633,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21265,	-- Logistics Task Briefing IX (A)
+				qi = 21265,	-- Logistics Task Briefing IX (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
@@ -647,7 +647,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21381,	-- Logistics Task Briefing IX (H)
+				qi = 21381,	-- Logistics Task Briefing IX (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -755,7 +755,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 20940,	-- Logistics Task Briefing III (A)
+				qi = 20940,	-- Logistics Task Briefing III (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
@@ -769,7 +769,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21380,	-- Logistics Task Briefing III (H)
+				qi = 21380,	-- Logistics Task Briefing III (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -795,7 +795,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8739, {	-- Hive'Ashi Scout Report
 				lvl = 60,
 				repeatable = true,
-				qi = 21167,	-- Tactical Task Briefing VIII
+				qi = 21167,	-- Tactical Task Briefing VIII (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Hive'Ashi Scout Report
 						provider = { "i", 21161 },	-- Hive'Ashi Scout Report
@@ -809,7 +809,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8738, {	-- Hive'Regal Scout Report
 				lvl = 60,
 				repeatable = true,
-				qi = 21166,	-- Tactical Task Briefing VII
+				qi = 21166,	-- Tactical Task Briefing VII (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Hive'Regal Scout Report
 						provider = { "i", 21160 },	-- Hive'Regal Scout Report
@@ -823,7 +823,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8534, {	-- Hive'Zora Scout Report
 				lvl = 60,
 				repeatable = true,
-				qi = 21165,	-- Tactical Task Briefing VI
+				qi = 21165,	-- Tactical Task Briefing VI (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Hive'Zora Scout Report
 						provider = { "i", 21158 },	-- Hive'Zora Scout Report
@@ -837,7 +837,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8535, {	-- Hoary Templar
 				lvl = 60,
 				repeatable = true,
-				qi = 20947,	-- Tactical Task Briefing IV
+				qi = 20947,	-- Tactical Task Briefing IV (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Hoary Templar slain
 						provider = { "n", 15212 },	-- Hoary Templar <Abyssal Council>
@@ -1006,7 +1006,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21259,	-- Logistics Task Briefing V (A)
+				qi = 21259,	-- Logistics Task Briefing V (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -1020,7 +1020,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21382,	-- Logistics Task Briefing V (H)
+				qi = 21382,	-- Logistics Task Briefing V (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -1134,7 +1134,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8770, {	-- Target: Hive'Ashi Defenders
 				lvl = 60,
 				repeatable = true,
-				qi = 21749,	-- Combat Task Briefing I
+				qi = 21749,	-- Combat Task Briefing I (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Defender slain
 						provider = { "n", 11722 },	-- Hive'Ashi Defender
@@ -1145,7 +1145,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8771, {	-- Target: Hive'Ashi Sandstalkers
 				lvl = 60,
 				repeatable = true,
-				qi = 21750,	-- Combat Task Briefing II
+				qi = 21750,	-- Combat Task Briefing II (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Sandstalker slain
 						provider = { "n", 11723 },	-- Hive'Ashi Sandstalker
@@ -1156,7 +1156,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8501, {	-- Target: Hive'Ashi Stingers
 				lvl = 60,
 				repeatable = true,
-				qi = 20941,	-- Combat Task Briefing XII
+				qi = 20941,	-- Combat Task Briefing XII (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Stinger slain
 						provider = { "n", 11698 },	-- Hive'Ashi Stinger
@@ -1167,7 +1167,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8502, {	-- Target: Hive'Ashi Workers
 				lvl = 60,
 				repeatable = true,
-				qi = 20942,	-- Combat Task Briefing III
+				qi = 20942,	-- Combat Task Briefing III (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Worker slain
 						provider = { "n", 11721 },	-- Hive'Ashi Worker
@@ -1178,7 +1178,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8774, {	-- Target: Hive'Regal Ambushers
 				lvl = 60,
 				repeatable = true,
-				qi = 21252,	-- Combat Task Briefing VIII
+				qi = 21252,	-- Combat Task Briefing VIII (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Ambusher slain
 						provider = { "n", 11730 },	-- Hive'Regal Ambusher
@@ -1189,7 +1189,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8777, {	-- Target: Hive'Regal Burrowers
 				lvl = 60,
 				repeatable = true,
-				qi = 21256,	-- Combat Task Briefing XI
+				qi = 21256,	-- Combat Task Briefing XI (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Burrower slain
 						provider = { "n", 11731 },	-- Hive'Regal Burrower
@@ -1200,7 +1200,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8776, {	-- Target: Hive'Regal Slavemakers
 				lvl = 60,
 				repeatable = true,
-				qi = 21255,	-- Combat Task Briefing X
+				qi = 21255,	-- Combat Task Briefing X (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Slavemaker slain
 						provider = { "n", 11733 },	-- Hive'Regal Slavemaker
@@ -1211,7 +1211,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8775, {	-- Target: Hive'Regal Spitfires
 				lvl = 60,
 				repeatable = true,
-				qi = 21253,	-- Combat Task Briefing IX
+				qi = 21253,	-- Combat Task Briefing IX (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Spitfire slain
 						provider = { "n", 11732 },	-- Hive'Regal Spitfire
@@ -1222,7 +1222,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8539, {	-- Target: Hive'Zora Hive Sisters
 				lvl = 60,
 				repeatable = true,
-				qi = 21249,	-- Combat Task Briefing V
+				qi = 21249,	-- Combat Task Briefing V (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Hive Sister slain
 						provider = { "n", 11729 },	-- Hive'Zora Hive Sister
@@ -1233,7 +1233,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8773, {	-- Target: Hive'Zora Reavers
 				lvl = 60,
 				repeatable = true,
-				qi = 21248,	-- Combat Task Briefing IV
+				qi = 21248,	-- Combat Task Briefing IV (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Reaver slain
 						provider = { "n", 11728 },	-- Hive'Zora Reaver
@@ -1244,7 +1244,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8687, {	-- Target: Hive'Zora Tunnelers
 				lvl = 60,
 				repeatable = true,
-				qi = 21251,	-- Combat Task Briefing VII
+				qi = 21251,	-- Combat Task Briefing VII (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Tunneler slain
 						provider = { "n", 11726 },	-- Hive'Zora Tunneler
@@ -1255,7 +1255,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8772, {	-- Target: Hive'Zora Waywatchers
 				lvl = 60,
 				repeatable = true,
-				qi = 21250,	-- Combat Task Briefing VI
+				qi = 21250,	-- Combat Task Briefing VI (QS!)
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Waywatcher slain
 						provider = { "n", 11725 },	-- Hive'Zora Waywatcher
@@ -1289,7 +1289,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8538, {	-- The Four Dukes
 				lvl = 60,
 				repeatable = true,
-				qi = 20948,	-- Tactical Task Briefing V
+				qi = 20948,	-- Tactical Task Briefing V (QS!)
 				groups = {
 					objective(1, {	-- 0/1 The Duke of Cynders slain
 						provider = { "n", 15206 },	-- The Duke of Cynders <Abyssal Council>
@@ -1315,7 +1315,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21257,	-- Logistics Task Briefing IV (A)
+				qi = 21257,	-- Logistics Task Briefing IV (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -1330,7 +1330,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				races = HORDE_ONLY,
 				lvl = 60,
 				repeatable = true,
-				qi = 21258,	-- Logistics Task Briefing IV (H)
+				qi = 21258,	-- Logistics Task Briefing IV (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -1416,7 +1416,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21514,	-- Logistics Task Briefing XI
+				qi = 21514,	-- Logistics Task Briefing XI (QS!)
 				groups = {
 					i(21515),	-- Mark of Remulos
 				},
@@ -1431,7 +1431,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8498, {	-- Twilight Battle Orders
 				lvl = 60,
 				repeatable = true,
-				qi = 20943,	-- Tactical Task Briefing X
+				qi = 20943,	-- Tactical Task Briefing X (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Twilight Battle Orders
 						provider = { "i", 20803 },	-- Twilight Battle Orders (QI!)
@@ -1454,7 +1454,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8740, {	-- Twilight Marauders
 				lvl = 60,
 				repeatable = true,
-				qi = 20944,	-- Tactical Task Briefing IX
+				qi = 20944,	-- Tactical Task Briefing IX (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Twilight Marauder Morna slain
 						provider = { "n", 15541 },	-- Twilight Marauder Morna <Twilight's Hammer>
@@ -1497,7 +1497,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21262,	-- Logistics Task Briefing VIII (A)
+				qi = 21262,	-- Logistics Task Briefing VIII (A) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
@@ -1511,7 +1511,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 				lvl = 60,
 				repeatable = true,
-				qi = 21384,	-- Logistics Task Briefing VIII (H)
+				qi = 21384,	-- Logistics Task Briefing VIII (H) (QS!)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,

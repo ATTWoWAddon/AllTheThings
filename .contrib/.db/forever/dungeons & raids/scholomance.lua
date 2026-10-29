@@ -183,7 +183,7 @@ instanceroot(246, {	-- Scholomance
 			},
 			q(5582, {	-- Healthy Dragon Scale
 				sourceQuest = 5529,	-- Plagued Hatchlings
-				provider = { "i", 13920 },	-- Healthy Dragon Scale
+				provider = { "i", 13920 },	-- Healthy Dragon Scale (QS!)
 				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
 				lvl = 55,
 				repeatable = true,

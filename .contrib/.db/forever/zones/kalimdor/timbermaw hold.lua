@@ -92,7 +92,7 @@ maproot(MAP.KALIMDOR, {
 						7158,	-- Deadwood Shaman
 					},
 					lvl = 45,
-					qi = 20741,	-- Deadwood Ritual Totem
+					qi = 20741,	-- Deadwood Ritual Totem (QS!)
 				}),
 				q(8466, {	-- Feathers for Grazle
 					sourceQuest = 8460,	-- Timbermaw Ally
@@ -228,7 +228,7 @@ maproot(MAP.KALIMDOR, {
 						7438,	-- Winterfall Ursa
 					},
 					lvl = 50,
-					qi = 20742,	-- Winterfall Ritual Totem
+					qi = 20742,	-- Winterfall Ritual Totem (QS!)
 				}),
 			}),
 			n(VENDORS, {

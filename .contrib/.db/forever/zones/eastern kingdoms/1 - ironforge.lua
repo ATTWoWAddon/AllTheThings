@@ -909,7 +909,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(1646, {	-- The Tome of Divinity (1b/8)
 				sourceQuest = 1645,	-- The Tome of Divinity (1a/8)
-				provider = { "i", 6916 },	-- Tome of Divinity
+				provider = { "i", 6916 },	-- Tome of Divinity (QS!)
 				races = { DWARF },
 				classes = { PALADIN },
 				lvl = 12,

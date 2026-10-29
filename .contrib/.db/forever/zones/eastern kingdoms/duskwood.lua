@@ -55,7 +55,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2794,	-- An Old History Book
+				qi = 2794,	-- An Old History Book (QS!)
 			}),
 			q(98372, {	-- An Unfortunate End
 				qg = 271866,	-- Night Watch Guard <The Night Watch>

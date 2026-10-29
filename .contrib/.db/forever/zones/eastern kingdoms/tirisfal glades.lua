@@ -540,7 +540,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(361, {	-- A Letter Undelivered
 				providers = {
-					{ "i", 2839 },	-- A Letter to Yvette
+					{ "i", 2839 },	-- A Letter to Yvette (QS!)
 					{ "i", 2837 },	-- Thurman's Letter (QI!)
 				},
 				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },

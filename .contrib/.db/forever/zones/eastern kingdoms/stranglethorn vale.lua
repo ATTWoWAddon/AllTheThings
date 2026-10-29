@@ -267,7 +267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			})),
 			pvp(q(7810, {	-- Arena Master
-				provider = { "i", 18706 },	-- Arena Master (trinket)
+				provider = { "i", 18706 },	-- Arena Master (trinket) (QS!)
 				coord = { 30.5, 47.8, MAP.STRANGLETHORN_VALE },
 			})),
 			q(4621, {	-- Avast Ye, Admiral!
@@ -491,7 +491,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(624, {	-- Cortello's Riddle (1/3)
 				providers = {
-					{ "i", 4056 },	-- Cortello's Riddle
+					{ "i", 4056 },	-- Cortello's Riddle (QS!)
 					{ "o", 2554 },	-- Cortello's Riddle
 				},
 				coords = {
@@ -913,7 +913,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(594, {	-- Message in a Bottle (1/2)
-				provider = { "i", 4098 },	-- Carefully Folded Note
+				provider = { "i", 4098 },	-- Carefully Folded Note (QS!)
 				lvl = 45,
 			}),
 			q(630, {	-- Message in a Bottle (2/2)
@@ -1769,7 +1769,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(8552, {	-- The Monogrammed Sash
 				altQuests = { 620 },	-- The Monogrammed Sash [Old]
-				provider = { "i", 3985 },	-- Monogrammed Sash
+				provider = { "i", 3985 },	-- Monogrammed Sash (QS!)
 				lvl = 35,
 			}),
 			q(3642, {	-- The Pledge of Secrecy

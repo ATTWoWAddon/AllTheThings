@@ -75,7 +75,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						qi = 9567,	-- Etched Sigil (QI!)
 					}),
 					q(97236, {	-- Fang of Githyiss
-						provider = { "i", 277190 },	-- Fang of Githyiss
+						provider = { "i", 277190 },	-- Fang of Githyiss (QS!)
 						races = ALLIANCE_ONLY,
 						cr = 1994,	-- Githyiss the Vile
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1328,7 +1328,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(927, {	-- The Moss-twined Heart
-				provider = { "i", 5179 },	-- Moss-twined Heart
+				provider = { "i", 5179 },	-- Moss-twined Heart (QS!)
 				coord = { 52.0, 63.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 5,

@@ -241,7 +241,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				description = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
 				sourceQuest = 3373,	-- The Essence of Eranikus
 				qg = 5353,	-- Itharius
-				provider = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
+				provider = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight (QS!)
 				coord = { 13.7, 71.7, MAP.SWAMP_OF_SORROWS },
 				cost = { { "i", 10455, 1 } },	-- Chained Essence of Eranikus
 				lvl = 48,

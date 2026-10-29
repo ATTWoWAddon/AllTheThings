@@ -337,7 +337,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				maps = { MAP.FELWOOD },
 				races = HORDE_ONLY,
 				lvl = 52,
-				qi = 12558,	-- Blue-feathered Necklace
+				qi = 12558,	-- Blue-feathered Necklace (QS!)
 			}),
 			q(5121, {	-- High Chief Winterfall
 				sourceQuest = 5087,	-- Winterfall Runners
@@ -591,7 +591,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				coord = { 69.6, 38.2, MAP.WINTERSPRING },
 				cr = 10738,	-- High Chief Winterfall
 				lvl = 52,
-				qi = 12842,	-- Crudely-written Log
+				qi = 12842,	-- Crudely-written Log (QS!)
 			}),
 			q(5244, {	-- The Ruins of Kel'Theril
 				sourceQuests = {
@@ -723,7 +723,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			q(5083, {	-- Winterfall Firewater
 				lvl = 52,
-				qi = 12771,	-- Empty Firewater Flask
+				qi = 12771,	-- Empty Firewater Flask (QS!)
 			}),
 			q(5201, {	-- Winterfall Intrusion
 				qg = 10618,	-- Rivern Frostwind

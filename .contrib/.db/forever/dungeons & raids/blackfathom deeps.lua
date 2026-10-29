@@ -27,7 +27,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 			q(6564, {	-- Allegiance to the Old Gods (1/2)
 				description = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
 				sourceQuest = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
-				provider = { "i", 16790 },	-- Damp Note
+				provider = { "i", 16790 },	-- Damp Note (QS!)
 				races = HORDE_ONLY,
 				lvl = 17,
 				cr = 4802,	-- Blackfathom Tide Priestess
@@ -69,7 +69,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				},
 			}),
 			q(6922, {	-- Baron Aquanis
-				provider = { "i", 16782 },	-- Strange Water Globe
+				provider = { "i", 16782 },	-- Strange Water Globe (QS!)
 				maps = { MAP.ASHENVALE },
 				races = HORDE_ONLY,
 				lvl = 21,

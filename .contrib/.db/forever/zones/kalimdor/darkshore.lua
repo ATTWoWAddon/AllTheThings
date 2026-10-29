@@ -876,7 +876,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 12,
 			}),
 			q(968, {	-- The Powers Below
-				provider = { "i", 5352 },	-- Book: The Powers Below
+				provider = { "i", 5352 },	-- Book: The Powers Below (QS!)
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 10,

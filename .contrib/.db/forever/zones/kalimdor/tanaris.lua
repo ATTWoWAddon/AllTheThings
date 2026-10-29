@@ -237,7 +237,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2882, {	-- Cuergo's Gold
 				providers = {
-					{ "i", 9254 },	-- Cuergo's Treasure Map
+					{ "i", 9254 },	-- Cuergo's Treasure Map (QS!)
 					{ "o", 142189 },	-- Inconspicuous Landmark
 				},
 				coord = { 55.4, 92.2, MAP.TANARIS },
@@ -303,7 +303,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(351, {	-- Find OOX-17/TN!
 				description = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 				lvl = 43,
-				qi = 8623,	-- OOX-17/TN Distress Beacon
+				qi = 8623,	-- OOX-17/TN Distress Beacon (QS!)
 			}),
 			q(992, {	-- Gadgetzan Water Survey
 				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
@@ -596,7 +596,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2876, {	-- Ship Schedules
 				lvl = 40,
-				qi = 9250,	-- Ship Schedule
+				qi = 9250,	-- Ship Schedule (QS!)
 			}),
 			q(3639, {	-- Show Your Work
 				sourceQuest = 3638,	-- The Pledge of Secrecy
@@ -707,7 +707,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					--841,	-- Another Power Source?	-- Not required in 30403
 				},
 				providers = {
-					{ "i", 8524 },	-- Model 4711-FTZ Power Source
+					{ "i", 8524 },	-- Model 4711-FTZ Power Source (QS!)
 					{ "i", 8523 },	-- Field Testing Kit (QI!)
 				},
 				coord = { 52.4, 28.4, MAP.TANARIS },

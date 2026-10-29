@@ -329,7 +329,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(1392, {	-- Noboru the Cudgel
 				cr = 5477,	-- Noboru the Cudgel
 				lvl = 29,
-				qi = 6196,	-- Noboru's Cudgel
+				qi = 6196,	-- Noboru's Cudgel (QS!)
 			}),
 			q(1424, {	-- Pool of Tears (H)
 				qg = 1443,	-- Fel'zerul
@@ -413,7 +413,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			}),
 			q(1423, {	-- The Lost Supplies
 				providers = {
-					{ "i", 6172 },	-- Lost Supplies
+					{ "i", 6172 },	-- Lost Supplies (QS!)
 					{ "o", 28604 },	-- Scattered Crate
 				},
 				races = ALLIANCE_ONLY,

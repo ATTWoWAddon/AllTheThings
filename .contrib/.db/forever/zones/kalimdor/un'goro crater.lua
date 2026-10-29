@@ -702,7 +702,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			q(3884, {	-- Williden's Journal
 				lvl = 48,
-				qi = 11116,	-- A Mangled Journal
+				qi = 11116,	-- A Mangled Journal (QS!)
 			}),
 		}),
 		n(RARES, {

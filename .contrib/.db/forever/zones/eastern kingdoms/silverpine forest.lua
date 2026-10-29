@@ -545,7 +545,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(460, {	-- Resting in Pieces
 				providers = {
-					{ "i", 3317 },	-- A Talking Head
+					{ "i", 3317 },	-- A Talking Head (QS!)
 					{ "o", 1599 },	-- Shallow Grave
 				},
 				coord = { 65.2, 32.8, MAP.SILVERPINE_FOREST },

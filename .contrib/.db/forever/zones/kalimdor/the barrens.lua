@@ -600,7 +600,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(819, {	-- Chen's Empty Keg (1/3)
 				providers = {
 					{ "o", 3238 },	-- Chen's Empty Keg
-					{ "i", 4926 },	-- Chen's Empty Keg
+					{ "i", 4926 },	-- Chen's Empty Keg (QS!)
 				},
 				coords = {
 					{ 37.9, 16.1, MAP.THE_BARRENS },
@@ -1428,7 +1428,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(883, {	-- Lakota'mani
-				provider = { "i", 5099 },	-- Hoof of Lakota'mani
+				provider = { "i", 5099 },	-- Hoof of Lakota'mani (QS!)
 				coord = { 47.6, 51.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -1648,7 +1648,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 20,
 			}),
 			q(884, {	-- Owatanka
-				provider = { "i", 5102 },	-- Owatanka's Tailspike
+				provider = { "i", 5102 },	-- Owatanka's Tailspike (QS!)
 				coord = { 49.6, 59.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -2441,7 +2441,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(897, {	-- The Harvester
-				provider = { "i", 5138 },	-- Harvester's Head
+				provider = { "i", 5138 },	-- Harvester's Head (QS!)
 				races = HORDE_ONLY,
 				lvl = 10,
 			}),
@@ -2494,7 +2494,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 5080,	-- Gazlowe's Ledger (QI!)
 			}),
 			q(3513, {	-- The Runed Scroll
-				provider = { "i", 10621 },	-- Runed Scroll
+				provider = { "i", 10621 },	-- Runed Scroll (QS!)
 				races = HORDE_ONLY,
 				lvl = 15,
 			}),
@@ -2808,7 +2808,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(885, {	-- Washte Pawne
-				provider = { "i", 5103 },	-- Washte Pawne's Feather
+				provider = { "i", 5103 },	-- Washte Pawne's Feather (QS!)
 				coord = { 44.8, 78.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,

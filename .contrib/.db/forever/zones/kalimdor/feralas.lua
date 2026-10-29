@@ -352,7 +352,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(2766, {	-- Find OOX-22/FE!
 				lvl = 40,
-				qi = 8705,	-- OOX-22/FE Distress Beacon
+				qi = 8705,	-- OOX-22/FE Distress Beacon (QS!)
 			}),
 			q(4265, {	-- Freed from the Hive
 				sourceQuest = 4135,	-- The Writhing Deep
@@ -629,7 +629,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					5296,	-- Rage Scar Yeti
 				},
 				repeatable = true,
-				qi = 18972,	-- Perfect Yeti Hide
+				qi = 18972,	-- Perfect Yeti Hide (QS!)
 			}),
 			q(98155, {	-- Pristine Pesterhide Pelts
 				qg = 11826,	-- Kristy Grant
@@ -654,7 +654,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					5296,	-- Rage Scar Yeti
 				},
 				repeatable = true,
-				qi = 18969,	-- Pristine Yeti Hide
+				qi = 18969,	-- Pristine Yeti Hide (QS!)
 			}),
 			q(4130, {	-- Psychometric Reading
 				sourceQuest = 4129,	-- The Knife Revealed
@@ -749,7 +749,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 73.3, 56.3, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
-				qi = 11463,	-- Undelivered Parcel
+				qi = 11463,	-- Undelivered Parcel (QS!)
 			}),
 			q(2903, {	-- The Battle Plans
 				sourceQuest = 2902,	-- Woodpaw Investigation
@@ -782,7 +782,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(2978, {	-- The Gordunni Scroll
 				providers = {
-					{ "i", 9370 },	-- Gordunni Scroll
+					{ "i", 9370 },	-- Gordunni Scroll (QS!)
 					{ "o", 143980 },	-- Gordunni Scroll
 				},
 				coords = {

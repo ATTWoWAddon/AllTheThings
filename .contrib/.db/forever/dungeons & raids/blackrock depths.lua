@@ -53,7 +53,7 @@ instanceroot(228, {	-- Blackrock Depths
 			q(4264, {	-- A Crumpled Up Note
 				description = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
 				sourceQuest = 4242,	-- Abandoned Hope
-				provider = { "i", 11446 },	-- A Crumpled Up Note
+				provider = { "i", 11446 },	-- A Crumpled Up Note (QS!)
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),

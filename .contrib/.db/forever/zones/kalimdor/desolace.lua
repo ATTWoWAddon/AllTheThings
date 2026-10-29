@@ -1153,7 +1153,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					4667,	-- Burning Blade Shadowmage
 					4668,	-- Burning Blade Summoner
 				},
-				qi = 20310,	-- Flayed Demon Skin
+				qi = 20310,	-- Flayed Demon Skin (QS!)
 			}),
 			q(1481, {	-- The Corrupter (2/5)
 				sourceQuest = 1480,	-- The Corrupter (1/5)

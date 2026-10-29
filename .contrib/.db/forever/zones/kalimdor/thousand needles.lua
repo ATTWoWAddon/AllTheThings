@@ -105,7 +105,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				races = HORDE_ONLY,
 				lvl = 23,
 				cr = 10617,	-- Galak Messenger
-				qi = 12564,	-- Assassination Note
+				qi = 12564,	-- Assassination Note (QS!)
 			}),
 			q(1118, {	-- Back to Booty Bay
 				sourceQuest = 1117,	-- Rumors for Kravel
@@ -490,7 +490,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					4131,	-- Silithid Invader
 					4132,	-- Silithid Ravager
 				},
-				qi = 5877,	-- Cracked Silithid Carapace
+				qi = 5877,	-- Cracked Silithid Carapace (QS!)
 				groups = {
 					objective(1, {	-- 0/1 Silithid Heart
 						provider = { "i", 5855 },	-- Silithid Heart (QI!)

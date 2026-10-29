@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(635, {	-- Crystal in the Mountains
 				description = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
-				provider = { "i", 4614 },	-- Pendant of Myzrael
+				provider = { "i", 4614 },	-- Pendant of Myzrael (QS!)
 				lvl = 30,
 			}),
 			q(667, {	-- Death From Below
@@ -738,7 +738,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 			q(637, {	-- Sully Balloo's Letter
 				providers = {
-					{ "i", 4433 },	-- Waterlogged Envelope
+					{ "i", 4433 },	-- Waterlogged Envelope (QS!)
 					{ "o", 2656 },	-- Waterlogged Letter
 					{ "i", 4432 },	-- Sully Balloo's Letter (QI!)
 				},

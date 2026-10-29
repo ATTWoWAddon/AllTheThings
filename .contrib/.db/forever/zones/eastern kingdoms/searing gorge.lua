@@ -466,7 +466,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			}),
 			q(3181, {	-- The Horn of the Beast
 				providers = {
-					{ "i", 10000 },	-- Margol's Horn
+					{ "i", 10000 },	-- Margol's Horn (QS!)
 					{ "i", 10005 },	-- Margol's Gigantic Horn (QI!)
 				},
 				coord = { 73.0, 77.2, MAP.SEARING_GORGE },
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			}),
 			q(4451, {	-- The Key to Freedom
 				providers = {
-					{ "i", 11818 },	-- Grimesilt Outhouse Key
+					{ "i", 11818 },	-- Grimesilt Outhouse Key (QS!)
 					{ "o", 173265 },	-- Wooden Outhouse
 				},
 				coord = { 65.6, 62.5, MAP.SEARING_GORGE },

@@ -28,7 +28,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				},
 			}),
 			q(6522, {	-- An Unholy Alliance (1/2)
-				provider = { "i", 17008 },	-- Small Scroll
+				provider = { "i", 17008 },	-- Small Scroll (QS!)
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 28,
