@@ -968,7 +968,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						providers = {
 							{ "i", 280413 },	-- Flintfire's Shipment
-							{ "o", 672508 },	-- Flintfire's Shipments
+							{ "o", 672508 },	-- Flintfire's Shipment
 						},
 					}),
 				},
@@ -1650,14 +1650,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					objective(1, {	-- 0/1 Stoneavil's Rifle
 						providers = {
 							{ "i", 286360 },	-- Stoneanvil's Rifle
-							{ "o", 695277 },	-- Stoneavil's Rifle
+							{ "o", 695277 },	-- Stoneanvil's Rifle
 						},
 						coord = { 53.1, 58.8, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Sunhammers's Rifle
 						providers = {
 							{ "i", 286359 },	-- Sunhammer's Rifle
-							{ "o", 695223 },	-- Sunhammers's Rifle
+							{ "o", 695223 },	-- Sunhammer's Rifle
 						},
 						coord = { 59.9, 50.1, MAP.DUN_MOROGH },
 					}),

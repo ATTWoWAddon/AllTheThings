@@ -943,11 +943,11 @@ root(ROOTS.Craftables, {
 					MAP.WETLANDS,
 				},
 				providers = {
-					{ "o", 180901 },	-- Bloodsail Wreckage
+					{ "o", 180901 },	-- Floating Wreckage
 					{ "o", 180683 },	-- Firefin Snapper School
-					{ "o", 180683 },	-- Greater Sagefish School
+					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180682 },	-- Oily Blackmouth School
-					{ "o", 180685 },	-- Waterlogged Wreckage
+					{ "o", 180685 },	-- Floating Wreckage
 				},
 				--[[groups = {
 					i(4339),	-- Bolt of Mageweave
@@ -1026,16 +1026,16 @@ root(ROOTS.Craftables, {
 			-- Consumables:
 			i(21151, {	-- Rumsey Rum Black Label
 				providers = {
-					{ "o", 180901 },	-- Bloodsail Wreckage
+					{ "o", 180901 },	-- Floating Wreckage
 					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180655 },	-- Floating Debris
 					{ "o", 180751 },	-- Floating Wreckage
-					{ "o", 180683 },	-- Greater Sagefish School
+					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180682 },	-- Oily Blackmouth School
 					{ "o", 180658 },	-- School of Deviate Fish
 					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 					{ "o", 180712 },	-- Stonescale Eel Swarm
-					{ "o", 180685 },	-- Waterlogged Wreckage
+					{ "o", 180685 },	-- Floating Wreckage
 					{ "o", 180663 },	-- Sagefish School
 					{ "o", 180656 },	-- Sagefish School
 				},
@@ -1396,7 +1396,7 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		-- Wreckages:
-		o(180901, {	-- Bloodsail Wreckage
+		o(180901, {	-- Floating Wreckage
 			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.STRANGLETHORN_VALE,
@@ -2658,7 +2658,7 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 						},
 					}),
-					o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
+					o(105569, {	-- Silver Vein (The Barrens/Hillsbrad Foothills - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
 						coords = {
 							{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine

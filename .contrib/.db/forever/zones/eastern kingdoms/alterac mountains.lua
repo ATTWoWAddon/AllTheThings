@@ -70,7 +70,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 		}),
 		n(PROFESSIONS, {
 			prof(FISHING, {
-				o(180685),	-- Waterlogged Wreckage
+				o(180685),	-- Floating Wreckage
 			}),
 		}),
 		n(QUESTS, {
