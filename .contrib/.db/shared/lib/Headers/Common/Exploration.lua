@@ -17,6 +17,10 @@ EXPLORATION = createHeader({
 		-- tw = "探索",
 	},
 });
+--- Wraps exploration content in the exploration header.
+---@param g? ATTObject|ATTObjectArray # Optional header fields or child groups.
+---@return ATTObject|nil # Exploration header, or nil if its ID is unavailable.
+---@return ATTObject|nil ... additional # Additional unpacked values from the legacy nil-header-ID path.
 explorationHeader = function(g)
 	return n(EXPLORATION, g);
 end

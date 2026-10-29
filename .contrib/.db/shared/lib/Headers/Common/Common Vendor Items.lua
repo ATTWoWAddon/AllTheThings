@@ -24,6 +24,10 @@ COMMON_VENDOR_ITEMS = createHeader({
 });
 
 -- Expects a table with 'crs' (Vendor NPCIDs) and 'groups' (Common Vendor Items)
+--- Builds a header from an object containing vendor `crs` and groups.
+---@param t ATTObject # Vendor group containing creature IDs and child groups.
+---@return ATTObject|nil # Common vendor header, or nil if the header is unavailable.
+---@return ATTObject|nil ... additional # Additional unpacked values from the legacy nil-header-ID path.
 n_CommonVendorItems = function(t)
 	if not t.crs then
 		error("n_CommonVendors: No NPCs specified in 'crs'");

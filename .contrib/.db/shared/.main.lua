@@ -1,7 +1,13 @@
 local AllowedNilGlobals = {
 	CurrentSubFileName = 1,
 }
-_G = setmetatable(_G, { __index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end})
+_G = setmetatable(_G, {
+	--- Rejects undeclared globals except the allowed current-subfile name.
+	---@param t table Global table receiving the lookup.
+	---@param key any Missing global key being looked up.
+	---@return nil # Allowed missing globals return nil; other missing keys raise an error.
+	__index = function(t,key) if not AllowedNilGlobals[key] then error("NON-EXISTENT-GLOBAL:",key) end end
+})
 AllTheThings = {};
 _ = AllTheThings;
 
@@ -15,7 +21,7 @@ do
 --- Metatable index function which automatically creates nested tables for string keys.
 ---@param t table Table receiving the automatically created nested table.
 ---@param key any Missing key being looked up; string keys create nested tables.
----@return table|nil
+---@return table|nil # A new nested table for string keys, otherwise nil.
 local function AutoTableMetaFunc(t, key)
 	-- only auto-key string keys
 	if type(key) == "string" then
@@ -25,8 +31,11 @@ local function AutoTableMetaFunc(t, key)
 	end
 end
 --- Wraps a table so missing string keys automatically create nested tables.
----@param t table Table to wrap with automatic nested-table creation.
----@return table
+---@generic T: table
+---@overload fun(): table
+---@param t? T Table to wrap; defaults to a new table.
+---@param metafunc? fun(t: table, key: any): any Custom missing-key handler.
+---@return T # The supplied table, or a new table when omitted.
 function SelfAutoTable(t, metafunc)
 	return setmetatable(t or {}, { __index = metafunc or AutoTableMetaFunc })
 end
@@ -46,6 +55,14 @@ do
 -- Some containers have constant, export, description, lore, model.
 -- Refer to the invidual containers for more info.
 -- Database Container injections contain a bunch of small modifications / additions, but since we're using it everywhere, it is losing the data due to what is known as "data chomping" with how we are using it. To combat this, the tables are designed to persist their structures despite the root being freed every time a new file is loaded and processed.
+--- Options for merging data into a persistent container.
+---@class ATTDatabaseContainerOptions
+---@field IgnoreValueConflicts? boolean Suppress warnings when scalar values differ.
+--- Recursively merges source entries into the destination.
+---@param t table Source data.
+---@param c table Destination data.
+---@param path? string Current path for diagnostics.
+---@param options? ATTDatabaseContainerOptions # Controls scalar-conflict warnings.
 local function RecursivelyMergeData(t, c, path, options)
     path = path or ""  -- used for error reporting
 
@@ -91,6 +108,10 @@ local function RecursivelyMergeData(t, c, path, options)
     end
 end
 local dataEntryMeta = {
+	--- Creates a localized-text table on first access.
+	---@param t table # Entry receiving the text table.
+	---@param key any # Missing entry key.
+	---@return table|nil # The new text table, or nil for another key.
 	__index = function(t, key)
 		if key == "text" then
 			local text = {};
@@ -100,6 +121,10 @@ local dataEntryMeta = {
 	end,
 };
 local backingTableMeta = {
+	--- Creates an entry with lazy localized text.
+	---@param t table # Backing table receiving the entry.
+	---@param key any # Numeric or numeric-string entry key.
+	---@return table # The newly created entry.
 	__index = function(t, key)
 		local o = setmetatable({}, dataEntryMeta);
 		rawset(t, tonumber(key), o);
@@ -107,6 +132,10 @@ local backingTableMeta = {
 	end,
 };
 local backingTableMetaNoSubMeta = {
+	--- Creates a plain backing entry.
+	---@param t table # Backing table receiving the entry.
+	---@param key any # Numeric or numeric-string entry key.
+	---@return table # The newly created entry.
 	__index = function(t, key)
 		local o = {};
 		rawset(t, tonumber(key), o);
@@ -114,14 +143,27 @@ local backingTableMetaNoSubMeta = {
 	end,
 };
 GlobalDBs = {}
+--- Creates a persistent, merge-on-assignment database container.
+---@param name string Container name used for registration and diagnostics.
+---@param noSubMeta? boolean|table A table supplies a backing metatable; non-tables use plain entries.
+---@param options? ATTDatabaseContainerOptions # Controls scalar-conflict warnings during merges.
+---@return table # Container that merges assigned tables into persistent backing data.
 CreateDatabaseContainer = function(name, noSubMeta, options)
 	local backingTable = setmetatable({}, (noSubMeta and type(noSubMeta) == "table" and noSubMeta or backingTableMetaNoSubMeta) or backingTableMeta);
 	local db = setmetatable({
 		__Options = options or {}
 	},{
+		--- Retrieves an entry from the backing table.
+		---@param t table # Container being indexed.
+		---@param key any # Entry key.
+		---@return any # The backing entry for the requested key.
 		__index = function(t, key)
 			return backingTable[key];
 		end,
+		--- Merges table assignments into the backing entry.
+		---@param t table # Container holding merge options.
+		---@param key any # Destination entry key.
+		---@param value any # Assigned value; non-table values are ignored with a warning.
 		__newindex = function(t, key, value)
 			if value and type(value) == "table" then
 				local o = backingTable[key];
@@ -143,6 +185,10 @@ CategoryDB = CreateDatabaseContainer("CategoryDB");
 FilterDB = CreateDatabaseContainer("FilterDB");
 -- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
 ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
+	--- Creates a conditional item entry for a numeric key.
+	---@param t table # Backing table receiving the item.
+	---@param key number|string Numeric key or a string convertible to one.
+	---@return table # New item entry containing the numeric item ID.
 	__index = function(t, key)
 		key = tonumber(key);
 		local item = { itemID = key };
@@ -180,12 +226,18 @@ end
 
 do	-- Database Exports
 local SetAutoTable
+--- Creates a nested export table for a missing key.
+---@param t table # Table receiving the nested entry.
+---@param key any # Missing key; nil produces no entry.
+---@return table|nil # The new nested table, or nil for a nil key.
 local autotable__index = function(t, key)
 	if key == nil then return end
 	local val = SetAutoTable()
 	rawset(t, key, val)
 	return val
  end
+--- Creates an automatically nested export table.
+---@return table # New table with automatic nested entries.
 SetAutoTable = function()
 	return setmetatable({}, {__index = autotable__index})
 end
@@ -194,10 +246,26 @@ ExportDB = CreateDatabaseContainer("Exports", {__index = autotable__index})
 end
 
 do	-- WoW API Function Templates
+--- Builds a Lua expression for the exported WoW API call.
+---@param itemID ItemID|ATTLuaExpression # Item ID or Lua expression identifying the item.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemCount = function(itemID) return "_.WOWAPI.GetItemCount(" .. itemID .. ", true)"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param spellID SpellID|ATTLuaExpression # Spell ID or Lua expression identifying the spell.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param spellID SpellID|ATTLuaExpression # Spell ID or Lua expression identifying the spell.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetSpellName = function(spellID) return "_.WOWAPI.GetSpellName(" .. spellID .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param a ItemClassID|ATTLuaExpression # Item class ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemClassInfo = function(a) return "_.WOWAPI.GetItemClassInfo(" .. a .. ")"; end
+--- Builds a Lua expression for the exported WoW API call.
+---@param a ItemClassID|ATTLuaExpression # Item class ID or Lua expression.
+---@param b? ItemSubclassID|ATTLuaExpression # Item subclass ID or Lua expression; omitted for the one-argument form.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetItemSubClassInfo = function(a,b)
 	if a and b then
 		return "_.WOWAPI.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
@@ -205,9 +273,15 @@ WOWAPI_GetItemSubClassInfo = function(a,b)
 		return "_.WOWAPI.GetItemSubClassInfo(" .. a .. ")";
 	end
 end
+--- Builds a Lua expression for the exported WoW API call.
+---@param achievementID AchievementID|ATTLuaExpression # Achievement ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetAchievementName = function(achievementID)
 	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
 end
+--- Builds a Lua expression for the exported WoW API call.
+---@param categoryID AchievementCategoryID|ATTLuaExpression # Category ID or Lua expression.
+---@return ATTLuaExpression # Lua source expression for the requested API value.
 WOWAPI_GetCategoryName = function(categoryID)
 	return "select(1,GetCategoryInfo(" .. categoryID .. "))";
 end
