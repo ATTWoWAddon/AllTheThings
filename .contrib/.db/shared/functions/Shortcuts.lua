@@ -3489,6 +3489,9 @@ end
 battleground = function(mapID, g)						-- Create a BATTLEGROUND in the PvP header.
 	root(ROOTS.PVP, n(BATTLEGROUNDS, { m(mapID, g) }));
 end
+--- Registers an instance under the Instances root.
+---@param instID JournalInstanceID # Encounter Journal instance ID to register.
+---@param g? ATTObject|ATTObjectArray # Optional instance metadata or child objects.
 instanceroot = function(instID, g)
 	root(ROOTS.Instances, inst(instID, g));
 end
