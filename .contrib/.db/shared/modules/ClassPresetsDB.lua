@@ -212,6 +212,10 @@ CommonNonTransmogFilterTypes[#CommonNonTransmogFilterTypes + 1] = RELICS_F;	-- A
 -- #endif
 -- TODO: Once NORPG is done with annotations, we're moving the shortcuts into the shared database
 -- Remove this once that process is done.
+--- Checks whether an array contains a value.
+---@param arr any[] # Array to search.
+---@param value any # Value to compare with each element.
+---@return true|nil # True when found, otherwise nil.
 local function contains(arr, value)
 	for i,value2 in ipairs(arr) do
 		if value2 == value then return true; end

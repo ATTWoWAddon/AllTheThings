@@ -1,3 +1,17 @@
+--- Generators and literal snippets used by parser export data.
+---@class ATTFunctionTemplateOnInit
+---@field GenerateCompareOtherKey fun(itemID: ItemID): ATTLuaExpression # Registers an initializer comparing the current and another item count.
+---@field ClassORRaceRequirements string # Literal initializer treating class and race as alternatives while retaining display metadata.
+---@field CELESTIAL_DUNGEON_DIFFICULTY_BUFFS? string # Generated initializer for the active Celestial Dungeon buff.
+--- Registry of generated parser export snippets.
+---@class ATTFunctionTemplates
+---@field OnInit ATTFunctionTemplateOnInit # Initializer templates and generators.
+---@field GenerateOnTooltipSpellOnCooldown fun(spellID: SpellID): ATTLuaExpression # Registers a tooltip for the specified spell cooldown.
+---@field GenerateOnUpdateIsOnQuestVisibleOverride fun(questID: QuestID): ATTLuaExpression # Registers a visibility override based on an active quest.
+---@field GenerateOnUpdateRemovedWithPhase fun(phaseID: ATTPhaseID, rwp: integer): ATTLuaExpression # Registers removal filtering based on a phase and removal build.
+---@field GenerateOnUpdateForRepeatableQuestClassicReputationWithCost fun(repPerTurnIn: number, count?: number): ATTLuaExpression # Registers turn-in cost updates for standard reputation.
+---@field GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost fun(repPerTurnIn: number, count?: number): ATTLuaExpression # Registers turn-in cost updates for friendship reputation.
+---@type ATTFunctionTemplates
 FUNCTION_TEMPLATES = {
 	OnInit = {
 		GenerateShouldExcludeFromTooltipForBuffs = function(...)
@@ -31,6 +45,9 @@ FUNCTION_TEMPLATES = {
 			end
 			return t;
 		end]],
+		--- Registers an OnInit snippet comparing another item count.
+		---@param itemID ItemID # Other item whose count is included.
+		---@return ATTLuaExpression reference # Programmatic reference to the registered OnInit snippet.
 		GenerateCompareOtherKey = function(itemID)
 			local OnInitName = "GenerateCompareOtherKey_" .. itemID;
 			ExportDB.OnInitDB[OnInitName] = [[~function(t)
@@ -45,6 +62,9 @@ FUNCTION_TEMPLATES = {
 	},
 	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a
 	-- custom SpellID
+	--- Registers a tooltip snippet for a spell cooldown.
+	---@param spellID SpellID # Spell whose cooldown is displayed.
+	---@return ATTLuaExpression reference # Programmatic reference to the registered tooltip snippet.
 	GenerateOnTooltipSpellOnCooldown = function(spellID)
 		local OnTooltipName = "IsSpellOnCooldown_"..spellID
 		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
@@ -62,6 +82,9 @@ FUNCTION_TEMPLATES = {
 	-- Generates an OnUpdate function into ExportDB.OnUpdateDB to assign the 'visible' field of the group to true based
 	-- on whether the player is currently on the related QuestID
 	-- Note: This is bad, don't use this! It overrides Filter logic.
+	--- Registers an update that hides content while its quest is not active.
+	---@param questID QuestID # Quest checked by the generated update function.
+	---@return ATTLuaExpression reference # Programmatic reference to the registered update snippet.
 	GenerateOnUpdateIsOnQuestVisibleOverride = function(questID)
 		local OnUpdateName = "IsOnQuestVisibleOverride"..questID
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
@@ -69,6 +92,10 @@ FUNCTION_TEMPLATES = {
 	end,
 	-- Generates an OnUpdate function into ExportDB.OnUpdateDB which marks the group as Removed From Game while the
 	-- Unobtainable Filter for the provided phaseID is active, otherwise clears 'u' and assigns the provided 'rwp'
+	--- Registers a phase-based removal update.
+	---@param phaseID ATTPhaseID # Phase controlling the unobtainable filter.
+	---@param rwp integer # Removal build.
+	---@return ATTLuaExpression reference # Programmatic reference to the registered update snippet.
 	GenerateOnUpdateRemovedWithPhase = function(phaseID, rwp)
 		local OnUpdateName = "RemovedWithPhase"..phaseID.."_"..rwp
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
@@ -82,6 +109,10 @@ FUNCTION_TEMPLATES = {
 		end]];
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
 	end,
+	--- Registers repeatable-quest cost updates for standard reputation.
+	---@param repPerTurnIn number # Reputation gained per turn-in.
+	---@param count? number # Item cost per turn-in; defaults to one.
+	---@return ATTLuaExpression reference # Programmatic reference to the registered update snippet.
 	GenerateOnUpdateForRepeatableQuestClassicReputationWithCost = function(repPerTurnIn, count)
 		local OnUpdateName = "OnUpdateRRQCR"..repPerTurnIn
 		if count then
@@ -104,6 +135,10 @@ FUNCTION_TEMPLATES = {
 		end
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
 	end,
+	--- Registers repeatable-quest cost updates for friendship reputation.
+	---@param repPerTurnIn number # Friendship reputation gained per turn-in.
+	---@param count? number # Item cost per turn-in; defaults to one.
+	---@return ATTLuaExpression reference # Programmatic reference to the registered update snippet.
 	GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost = function(repPerTurnIn, count)
 		local OnUpdateName = "OnUpdateRRQBR"..repPerTurnIn
 		if count then

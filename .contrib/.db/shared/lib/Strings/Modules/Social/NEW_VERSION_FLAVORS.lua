@@ -1,5 +1,8 @@
 -- Build a list of all of the Version Flavors and provide localization for each line.
+---@type table<string, string>
 local textData = {};
+--- Appends a localized line to the version-flavor collection.
+---@param localeData table<string, string> # Flavor text keyed by locale.
 local function addVersionFlavor(localeData)
 	for locale,data in pairs(localeData) do
 		local str = "\"" .. data .. "\"";
