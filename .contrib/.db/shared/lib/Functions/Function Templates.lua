@@ -1,5 +1,6 @@
 --- Generators and literal snippets used by parser export data.
 ---@class ATTFunctionTemplateOnInit
+---@field GenerateShouldExcludeFromTooltipForBuffs fun(first: SpellID, ...: SpellID): ATTLuaExpression # Registers a buff-based tooltip exclusion initializer.
 ---@field GenerateCompareOtherKey fun(itemID: ItemID): ATTLuaExpression # Registers an initializer comparing the current and another item count.
 ---@field ClassORRaceRequirements string # Literal initializer treating class and race as alternatives while retaining display metadata.
 ---@field CELESTIAL_DUNGEON_DIFFICULTY_BUFFS? string # Generated initializer for the active Celestial Dungeon buff.
@@ -14,6 +15,9 @@
 ---@type ATTFunctionTemplates
 FUNCTION_TEMPLATES = {
 	OnInit = {
+		--- Registers an OnInit snippet which filters objects by buff IDs.
+		---@param ... SpellID # Nonempty dense sequence of IDs; nil gaps are unsupported.
+		---@return ATTLuaExpression reference # Programmatic reference to the registered OnInit snippet.
 		GenerateShouldExcludeFromTooltipForBuffs = function(...)
 			local buffs = {...};
 			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")

@@ -133,8 +133,8 @@
 --- Tagged gold, item, or currency cost entry.
 ---@alias ATTCost
 ---| { [1]: "g", [2]: number } # Gold
----| { [1]: "i", [2]: ItemID|ModItemID, [3]: number } # Item
----| { [1]: "c", [2]: CurrencyID, [3]: number } # Currency
+---| { [1]: "i", [2]: ItemID|ModItemID, [3]: number, [4]?: ATTPhaseID } # Item
+---| { [1]: "c", [2]: CurrencyID, [3]: number, [4]?: ATTPhaseID } # Currency
 ---@alias x_axis number # Horizontal map coordinate, expressed as a percentage.
 ---@alias y_axis number # Vertical map coordinate, expressed as a percentage.
 ---@alias ATTObjectArray ATTObject[] # Ordered list of parser objects.
@@ -1328,9 +1328,9 @@ applyevent = function(eventID, data)
 end
 -- #if ANYCLASSIC
 --- Applies a Classic release phase to the provided data for Classic builds.
----@param phase ATTPhaseID # Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
----@param data ATTObject|ATTObjectArray # Object tree receiving the Classic phase, or returned unchanged in other builds.
----@return ATTObject|ATTObjectArray
+---@param phase? ATTPhaseID # Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
+---@param t ATTObject|ATTObjectArray # Object tree receiving the Classic phase, or returned unchanged in other builds.
+---@return ATTObject|ATTObjectArray # Input object or groups after the applicable Classic phase is applied.
 applyclassicphase = function(phase, t)
 	if t then
 		local data = { phase = phase };
@@ -1356,7 +1356,7 @@ ifclassic = function(classicValue, value)
 end
 -- #else
 --- Applies a Classic release phase to the provided data for Classic builds.
----@param phase ATTPhaseID # Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
+---@param phase? ATTPhaseID # Classic release phase to assign to the `phase` field; ignored in non-Classic builds.
 ---@param data ATTObject|ATTObjectArray # Object tree receiving the Classic phase, or returned unchanged in other builds.
 ---@return ATTObject|ATTObjectArray # Input object or groups after the applicable Classic phase is applied.
 applyclassicphase = function(phase, data)
@@ -2144,10 +2144,9 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 end
 --- Create an EXPANSION Object with a specified Timeline (for use as a Header)
 ---@param id ExpansionID # Expansion ID.
----@param patch number # Patch component encoded into the expansion ID in the three-argument form.
----@param t ATTObject|ATTObjectArray # Object fields or child objects for the expansion or patch header.
----@return ATTObject
----@overload fun(id: ExpansionID, t?: ATTObject|ATTObjectArray): ATTObject
+---@param timeline? ATTTimelineEvent[]|ATTIgnoredValue # Timeline to assign, or the ignore sentinel.
+---@param t? ATTObject|ATTObjectArray # Optional object fields or child objects.
+---@return ATTObject # Expansion header with the supplied timeline when valid.
 expansionHeader = function(id, timeline, t)
 	t = expansion(id, t)
 	if timeline == IGNORED_VALUE then
@@ -2552,7 +2551,7 @@ end
 --- Creates an NPC/header object. With a nil `id`, this preserves the legacy behavior of returning `unpack(t)`.
 ---@param id? ATTHeaderID|NPCID|CreatureID # Positive NPC/creature ID or negative custom header ID; nil returns unpacked `t`.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or child objects; unpacked directly when `id` is nil.
----@return ATTNPCObject|ATTHeaderObject|ATTObject|nil first
+---@return ATTNPCObject|ATTHeaderObject|ATTObject|nil first # First NPC or header object, or the first unpacked legacy value when the ID is nil.
 ---@return ATTObject|nil ... # additional Values returned only by the legacy `id == nil` + array form.
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
@@ -2627,7 +2626,7 @@ o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
 --- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS.
 ---@param t ATTObject|ATTObjectArray # Shared-content container or child array for the repeated world objects.
 ---@param o? ATTObjectArray # Optional additional object groups appended when `t` is a child array.
----@return ATTObject|nil
+---@return ATTObject|nil # Shared-content group, or nil when it has no child group container.
 o_repeated = function(t, o)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
 	if t[1] then
 		-- move the raw array of objects into a .g group
@@ -3118,7 +3117,7 @@ end
 ---@param type? string # Supported `HEADERS` type used to resolve the automatic name.
 ---@param id? integer # ID of the source whose name should be used.
 ---@param t? ATTObject|ATTObjectArray # Object or child objects to normalize and assign automatic-name metadata.
----@return ATTObject|ATTObjectArray|nil
+---@return ATTObject|ATTObjectArray|nil # Object with automatic-name metadata, or the original input when the type or ID is missing.
 name = function(type, id, t)
 	if not type or not id then return t end
 	t = togroups(t or {})
