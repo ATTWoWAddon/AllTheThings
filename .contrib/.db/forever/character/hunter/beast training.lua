@@ -167,7 +167,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 8,
 			lvl = 56,
 			crs = {
-				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
+				9696,	-- Bloodaxe Worg <Scarshield Legion> (Wolf, 56-57, Blackrock Spire)
 			},
 		},
 
@@ -470,10 +470,10 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				2681,	-- Vilebranch Raiding Wolf (Wolf, 50-51, The Hinterlands)
 				8303,	-- Grunter (Boar, 50, Blasted Lands)
 				8300,	-- Ravage (Hyena, 51, Blasted Lands)
-				9416,	-- Scarshield Worg (Wolf, 53-54, Blackrock Spire)
+				9416,	-- Scarshield Worg <Scarshield Legion> (Wolf, 53-54, Blackrock Spire)
 				7055,	-- Blackrock Worg (Wolf, 54-55, Burning Steppes)
-				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
-				10200,	-- Rak'Shiri (Cat, 57, Winterspring)
+				9696,	-- Bloodaxe Worg <Scarshield Legion> (Wolf, 56-57, Blackrock Spire)
+				10200,	-- Rak'shiri (Cat, 57, Winterspring)
 				7433,	-- Frostsaber Huntress (Cat, 58-59, Winterspring)
 				7432,	-- Frostsaber Stalker (Cat, 59-60, Winterspring)
 				11365,	-- Zulian Panther (Cat, 60, Zul'Gurub)
@@ -610,7 +610,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 4,
 			lvl = 56,
 			crs = {
-				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
+				9696,	-- Bloodaxe Worg <Scarshield Legion> (Wolf, 56-57, Blackrock Spire)
 			},
 		},
 

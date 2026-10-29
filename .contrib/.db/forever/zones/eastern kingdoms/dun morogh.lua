@@ -95,7 +95,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					q(3365, {	-- Bring Back the Mug
 						sourceQuest = 3364,	-- Scalding Mornbrew Delivery
-						qg = 836,	-- Durnan Furcutter
+						qg = 836,	-- Durnan Furcutter <Cloth & Leather Armor Merchant>
 						qi = 10440,	-- Nori's Mug
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				}),
 				n(VENDORS, {
-					n(836, {	-- Durnan Furcutter
+					n(836, {	-- Durnan Furcutter <Cloth & Leather Armor Merchant>
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
@@ -422,7 +422,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 							2379,	-- Tarnished Chain Vest
 						}},
 					}),
-					n(945, {	-- Rybrad Coldbank
+					n(945, {	-- Rybrad Coldbank <Weaponsmith>
 						coord = { 28.7, 67.7, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
@@ -541,7 +541,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(5541, {	-- Ammo for Rumbleshot
-				qg = 1694,	-- Loslor Rudge
+				qg = 1694,	-- Loslor Rudge <Engineering Supplies>
 				coord = { 50.0, 49.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
@@ -918,7 +918,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(99159, {	-- Finding Warmth
 				sourceQuest = 99158,	-- Dawn in the Mountains
-				qg = 1253,	-- Father Gavin
+				qg = 1253,	-- Father Gavin <The Argent Dawn>
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1040,7 +1040,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(2239, {	-- Onin's Report
 				sourceQuest = 2238,	-- Simple Subterfugin'
-				qg = 6886,	-- Onin MacHammer
+				qg = 6886,	-- Onin MacHammar
 				qi = 7715,	-- Onin's Report (PQI!)
 				coord = { 25.2, 44.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -1142,7 +1142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(99160, {	-- Rime's Wrath (1/2)
 				sourceQuest = 99159,	-- Finding Warmth
-				qg = 1253,	-- Father Gavin
+				qg = 1253,	-- Father Gavin <The Argent Dawn>
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1155,7 +1155,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(99161, {	-- Rime's Wrath (2/2)
 				sourceQuest = 99160,	-- Rime's Wrath (1/2)
-				qg = 1253,	-- Father Gavin
+				qg = 1253,	-- Father Gavin <The Argent Dawn>
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1170,7 +1170,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(2218, {	-- Road to Salvation
-				qg = 1234,	-- Hogral Bakkan
+				qg = 1234,	-- Hogral Bakkan <Rogue Trainer>
 				coord = { 47.6, 52.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -1286,7 +1286,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(467, {	-- Stonegear's Search
 				qgs = {
 					1340,	-- Mountaineer Kadrell
-					2092,	-- Pilot Longbeard
+					2092,	-- Pilot Longbeard <Ironforge Siege Brigade>
 				},
 				coords = {
 					{ 34.8, 47.0, MAP.LOCH_MODAN },
@@ -1456,7 +1456,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(95217, {	-- The Quarry's Smith
-				qg = 1698,	-- Frast Dokner
+				qg = 1698,	-- Frast Dokner <Apprentice Weaponsmith>
 				coord = { 68.8, 55.8, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { WARRIOR, PALADIN, SHAMAN },
@@ -1600,7 +1600,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(432, {	-- Those Blasted Troggs!
-				qg = 1254,	-- Foreman Stonebrow
+				qg = 1254,	-- Foreman Stonebrow <Miners' League>
 				coord = { 69.0, 56.2, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
@@ -1612,7 +1612,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(2299, {	-- To Hulfdan!
 				sourceQuest = 2218,	-- Road to Salvation
-				qg = 1234,	-- Hogral Bakkan
+				qg = 1234,	-- Hogral Bakkan <Rogue Trainer>
 				coord = { 47.6, 52.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -1641,7 +1641,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 			q(99162, {	-- Treacherous Cold
 				sourceQuest = 99159,	-- Finding Warmth
-				qg = 1253,	-- Father Gavin
+				qg = 1253,	-- Father Gavin <The Argent Dawn>
 				coord = { 57.7, 44.9, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1813,7 +1813,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 		}),
 		n(VENDORS, {
-			n(1240, {	-- Boran Ironclink
+			n(1240, {	-- Boran Ironclink <Armorer>
 				coord = { 45.2, 51.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -1825,7 +1825,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(2394),	-- Light Mail Leggings
 				},
 			}),
-			n(1238, {	-- Gamili Frosthide
+			n(1238, {	-- Gamili Frosthide <Cloth & Leather Armor Merchant>
 				coord = { 45.2, 51.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1855,7 +1855,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					2117,	-- Thin Cloth Shoes
 				}},
 			}),
-			n(1273, {	-- Grawn Thromwyn
+			n(1273, {	-- Grawn Thromwyn <Weaponsmith>
 				coord = { 45.3, 52.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",

@@ -127,7 +127,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				OnTooltip = OnTooltipForBloodsail,
 				OnUpdate = OnUpdateForBloodsail,
 				maps = { MAP.BADLANDS },
-				crs = { 9179 },	-- Jazzrik
+				crs = { 9179 },	-- Jazzrik <Blacksmithing Supplies>
 			}),
 			faction(FACTION_BOOTY_BAY, {	-- Booty Bay
 				icon = 133784,
@@ -179,7 +179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 		n(QUESTS, {
 			q(610, {	-- "Pretty Boy" Duncan
 				sourceQuest = 603,	-- Ansirem's Key
-				qg = 2542,	-- Catelyn the Blade
+				qg = 2542,	-- Catelyn the Blade <Blackwater Raiders>
 				coord = { 27.3, 77.5, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
@@ -230,7 +230,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					836,	-- Rescue OOX-09/HL! (Hinterlands)
 					2767,	-- Rescue OOX-22/FE! (Feralas)
 				},
-				qg = 7406,	-- Oglethorpe Obnoticus
+				qg = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
 				groups = {
@@ -239,7 +239,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(603, {	-- Ansirem's Key
 				sourceQuest = 602,	-- Magical Analysis
-				qg = 2543,	-- Archmage Ansirem Runeweaver
+				qg = 2543,	-- Archmage Ansirem Runeweaver <Kirin Tor>
 				coord = { 18.8, 78.5, MAP.ALTERAC_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
@@ -588,7 +588,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(3625, {	-- Enchanted Azsharite Fel Weaponry
 				sourceQuest = 3621,	-- The Formation of Felbane
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				lvl = 45,
 				groups = {
@@ -632,7 +632,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2762,	-- The Great Silver Deceiver
 					2763,	-- The Art of the Imbue
 				},
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				requireSkill = BLACKSMITHING,
 				lvl = 40,
@@ -696,7 +696,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2762,	-- The Great Silver Deceiver
 					2763,	-- The Art of the Imbue
 				},
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -794,7 +794,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(576, {	-- Keep An Eye Out
 				sourceQuest = 595,	-- The Bloodsail Buccaneers (1/5)
-				qg = 2493,	-- Dizzy One-Eye
+				qg = 2493,	-- Dizzy One-Eye <Blackwater Raiders>
 				coord = { 28.6, 75.9, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 				groups = {
@@ -1171,14 +1171,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(607, {	-- Return to MacKinley
 				sourceQuest = 606,	-- Scaring Shaky
-				qg = 2502,	-- \"Shaky\" Phillipe
+				qg = 2502,	-- "Shaky" Phillipe
 				qi = 3922,	-- Shaky's Payment
 				coord = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
 			}),
 			q(3626, {	-- Return to the Blasted Lands
 				sourceQuest = 3625,	-- Enchanted Azsharite Fel Weaponry
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.SWAMP_OF_SORROWS },
 				lvl = 45,
@@ -1288,7 +1288,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(2761, {	-- Smelt On, Smelt Off
 				sourceQuest = 2760,	-- The Mithril Order
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
 					{ "i", 3575, 40 },	-- 40x Iron Bar
@@ -1414,7 +1414,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(348, {	-- Stranglethorn Fever
-				qg = 2486,	-- Fin Fizracket
+				qg = 2486,	-- Fin Fizracket <Blackwater Raiders>
 				coord = { 27.6, 76.7, MAP.STRANGLETHORN_VALE },
 				lvl = 40,
 				groups = {
@@ -1482,7 +1482,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(2763, {	-- The Art of the Imbue
 				sourceQuest = 2760,	-- The Mithril Order
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
 					{ "i", 3860, 40 },	-- 40x Mithril Bar
@@ -1496,7 +1496,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(595, {	-- The Bloodsail Buccaneers (1/5)
-				qg = 2490,	-- First Mate Crazz
+				qg = 2490,	-- First Mate Crazz <Blackwater Raiders>
 				coord = { 28.1, 76.2, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 			}),
@@ -1508,13 +1508,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(599, {	-- The Bloodsail Buccaneers (3/5)
 				sourceQuest = 597,	-- The Bloodsail Buccaneers (2/5)
-				qg = 2490,	-- First Mate Crazz
+				qg = 2490,	-- First Mate Crazz <Blackwater Raiders>
 				coord = { 28.1, 76.2, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 			}),
 			q(604, {	-- The Bloodsail Buccaneers (4/5)
 				sourceQuest = 599,	-- The Bloodsail Buccaneers (3/5)
-				qg = 2487,	-- Fleet Master Seahorn
+				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 				groups = {
@@ -1545,7 +1545,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(608, {	-- The Bloodsail Buccaneers (5/5)
 				sourceQuest = 604,	-- The Bloodsail Buccaneers (4/5)
-				qg = 2487,	-- Fleet Master Seahorn
+				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 				groups = {
@@ -1618,7 +1618,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(611, {	-- The Curse of the Tides
 				sourceQuest = 610,	-- "Pretty Boy" Duncan
-				qg = 2542,	-- Catelyn the Blade
+				qg = 2542,	-- Catelyn the Blade <Blackwater Raiders>
 				coord = { 27.3, 77.5, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
@@ -1674,7 +1674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(2762, {	-- The Great Silver Deceiver
 				sourceQuest = 2760,	-- The Mithril Order
-				qg = 7802,	-- Galvan the Ancient
+				qg = 7802,	-- Galvan the Ancient <Artisan Blacksmith of the Mithril Order>
 				coord = { 50.6, 20.4, MAP.STRANGLETHORN_VALE },
 				cost = {
 					{ "i", 3860, 40 },	-- 40x Mithril Bar
@@ -1760,7 +1760,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2757,	-- Booty Bay or Bust!
 					2759,	-- In Search of Galvan
 				},
-				qg = 7794,	-- McGavan
+				qg = 7794,	-- McGavan <The Mithril Order>
 				qi = 8686,	-- Mithril Pendant
 				coord = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
 				requireSkill = BLACKSMITHING,
@@ -1929,7 +1929,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(587, {	-- Up to Snuff
 				sourceQuest = 597,	-- The Bloodsail Buccaneers (2/5)
-				qg = 2488,	-- Deeg
+				qg = 2488,	-- Deeg <Blackwater Raiders>
 				coord = { 26.9, 77.3, MAP.STRANGLETHORN_VALE },
 				lvl = 37,
 				groups = {
@@ -2036,7 +2036,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(580, {	-- Whiskey Slim's Lost Grog
-				qg = 2491,	-- Whiskey Slim
+				qg = 2491,	-- Whiskey Slim <Blackwater Raiders>
 				coord = { 27.1, 77.5, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.THE_HINTERLANDS },
 				lvl = 40,
@@ -2368,7 +2368,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 				},
 			}),
-			n(2832, {	-- Nixxrax Fillamug <Food & Drink>
+			n(2832, {	-- Nixxrax Fillamug <Food and Drink>
 				coord = { 40.8, 73.6, MAP.STRANGLETHORN_VALE },
 				groups = {
 					i(4595),	-- Junglevine Wine
@@ -2568,7 +2568,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
-			n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
+			n(2849, {	-- Qixdi Goodstitch <Cloth Armor and Accessories>
 				coord = { 28.2, 77.6, MAP.STRANGLETHORN_VALE },
 				sym = {{ "select", "itemID",
 					2435,	-- Embroidered Armor

@@ -322,7 +322,7 @@ battleground(MAP.WARSONG_GULCH, {
 				},
 			}),
 			q(7865, {	-- Sentinel Advanced Care Package
-				qg = 14753,	-- Illiyana Moonblaze
+				qg = 14753,	-- Illiyana Moonblaze <Silverwing Supply Officer>
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
 				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
@@ -332,7 +332,7 @@ battleground(MAP.WARSONG_GULCH, {
 				},
 			}),
 			q(7863, {	-- Sentinel Basic Care Package
-				qg = 14753,	-- Illiyana Moonblaze
+				qg = 14753,	-- Illiyana Moonblaze <Silverwing Supply Officer>
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
 				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,
@@ -342,7 +342,7 @@ battleground(MAP.WARSONG_GULCH, {
 				},
 			}),
 			q(7864, {	-- Sentinel Standard Care Package
-				qg = 14753,	-- Illiyana Moonblaze
+				qg = 14753,	-- Illiyana Moonblaze <Silverwing Supply Officer>
 				coord = { 61.6, 83.8, MAP.ASHENVALE },
 				minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
 				races = ALLIANCE_ONLY,

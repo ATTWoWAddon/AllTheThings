@@ -740,7 +740,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(4782, {	-- Components for the Enchanted Gold Bloodrobe (3/5)
 				sourceQuest = 4781,	-- Components for the Enchanted Gold Bloodrobe (2/5)
-				qg = 2670,	-- Xizk Goodstitch
+				qg = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
 				coord = { 28.6, 76.8, MAP.STRANGLETHORN_VALE },
 				classes = { WARLOCK },
 				lvl = 31,
@@ -921,7 +921,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(6385, {	-- Doras the Wind Rider Master
 				sourceQuest = 6384,	-- Ride to Orgrimmar
-				qg = 6929,	-- Innkeeper Gryshka
+				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				qi = 16307,	-- Gryshka's Letter
 				coord = { 54.09, 68.43, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
@@ -1249,7 +1249,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(4736, {	-- In Search of Menara Voidrender (Ironforge)
-				qg = 5172,	-- Briarthorn
+				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
@@ -1257,7 +1257,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 31,
 			}),
 			q(4737, {	-- In Search of Menara Voidrender (Orgrimmar)
-				qg = 3326,	-- Zevrost
+				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -1265,7 +1265,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 31,
 			}),
 			q(4738, {	-- In Search of Menara Voidrender (Stormwind)
-				qg = 461,	-- Demisette Cloyce
+				qg = 461,	-- Demisette Cloyce <Warlock Trainer>
 				coord = { 39.6, 84.6, MAP.STORMWIND_CITY },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
@@ -1273,7 +1273,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 31,
 			}),
 			q(4739, {	-- In Search of Menara Voidrender (Undercity)
-				qg = 4563,	-- Kaal Soulreaper
+				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -1350,7 +1350,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 9,
 			}),
 			q(4967, {	-- Knowledge of the Orb of Orahil [Orgrimmar]
-				qg = 3326,	-- Zevrost
+				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -1358,7 +1358,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 35,
 			}),
 			q(4965, {	-- Knowledge of the Orb of Orahil [Ironforge]
-				qg = 5172,	-- Briarthorn
+				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
@@ -1366,7 +1366,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 35,
 			}),
 			q(4968, {	-- Knowledge of the Orb of Orahil [Stormwind]
-				qg = 461,	-- Demisette Cloyce
+				qg = 461,	-- Demisette Cloyce <Warlock Trainer>
 				coord = { 39.6, 84.6, MAP.STORMWIND_CITY },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
@@ -1374,7 +1374,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 35,
 			}),
 			q(4969, {	-- Knowledge of the Orb of Orahil [Undercity]
-				qg = 4563,	-- Kaal Soulreaper
+				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -1478,7 +1478,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 9,
 			}),
 			q(6365, {	-- Meats to Orgrimmar
-				qg = 3489,	-- Zargh
+				qg = 3489,	-- Zargh <Butcher>
 				qi = 16306,	-- Zargh's Meats
 				coord = { 52.62, 29.84, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
@@ -1486,7 +1486,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(3646, {	-- Membership Card Renewal
 				sourceQuest = 3639,	-- Show Your Work
-				qg = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
+				qg = 8738,	-- Vazario Linkgrease <Master Goblin Engineer>
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				cost = { { "g", 20000 } },	-- 2g
 				requireSkill = ENGINEERING,
@@ -1767,7 +1767,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(6386, {	-- Return to the Crossroads.
 				sourceQuest = 6385,	-- Doras the Wind Rider Master
-				qg = 3310,	-- Doras
+				qg = 3310,	-- Doras <Wind Rider Master>
 				qi = 16307,	-- Gryshka's Letter
 				coord = { 45.21, 63.58, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
@@ -1833,7 +1833,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(6384, {	-- Ride to Orgrimmar
 				sourceQuest = 6365,	-- Meats to Orgrimmar
-				qg = 3615,	-- Devrak
+				qg = 3615,	-- Devrak <Wind Rider Master>
 				qi = 16306,	-- Zargh's Meats
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
@@ -1870,7 +1870,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(894, {	-- Samophlange (1/4)
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				qi = 5088,	-- Control Console Operating Manual
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				lvl = 10,
@@ -2066,8 +2066,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(1823, {	-- Speak with Ruga
 				qgs = {
-					3354,	-- Sorek
-					3041,	-- Torm Ragetotem
+					3354,	-- Sorek <Warrior Trainer>
+					3041,	-- Torm Ragetotem <Warrior Trainer>
 					4595,	-- Baltus Fowler <Warrior Trainer>
 				},
 				coords = {
@@ -2164,7 +2164,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			q(4487, {	-- Summon Felsteed (1/2) (Ironforge)
-				qg = 5172,	-- Briarthorn
+				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
@@ -2172,7 +2172,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 40,
 			}),
 			q(3631, {	-- Summon Felsteed (1/2) (Orgrimmar)
-				qg = 3326,	-- Zevrost
+				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -2188,7 +2188,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 40,
 			}),
 			q(4489, {	-- Summon Felsteed (1/2) (Undercity)
-				qg = 4563,	-- Kaal Soulreaper
+				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
@@ -2227,7 +2227,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(1719, {	-- The Affray
 				sourceQuest = 1718,	-- The Islander
-				qg = 6236,	-- Klannoc Macleod
+				qg = 6236,	-- Klannoc Macleod <The Islander>
 				coord = { 68.6, 49.0, MAP.THE_BARRENS },
 				classes = { WARRIOR },
 				lvl = 30,
@@ -2482,7 +2482,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(1791, {	-- The Windwatcher
 				sourceQuest = 1719,	-- The Affray
-				qg = 6236,	-- Klannoc Macleod
+				qg = 6236,	-- Klannoc Macleod <The Islander>
 				coord = { 68.6, 49.0, MAP.THE_BARRENS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				classes = { WARRIOR },
@@ -2740,8 +2740,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				altQuests = { 1502, 1819 },	-- Thun'grim Firegaze / Ulag the Cleaver
 				qgs = {
 					3170,	-- Tarshaw Jaggedscar
-					3354,	-- Sorek
-					3063,	-- Krang Stonehoof
+					3354,	-- Sorek <Warrior Trainer>
+					3063,	-- Krang Stonehoof <Warrior Trainer>
 				},
 				coords = {
 					{ 54.18, 42.47, MAP.DUROTAR },
@@ -2847,7 +2847,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(3921, {	-- Wenikee Boltbucket
 				sourceQuest = 902,	-- Samophlange (4/4)
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				qi = 11142,	-- Broken Samophlange
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
@@ -3264,7 +3264,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
-			n(248199, {	-- Beneris <Enchanting>
+			n(248199, {	-- Beneris <Enchanter>
 				coord = { 49.6, 29.8, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,

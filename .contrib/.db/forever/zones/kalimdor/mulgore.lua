@@ -328,7 +328,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		n(QUESTS, {
 			q(96294, {	-- A Darker Truth
 				provider = { "i", 273658 },	-- Bloody Parchment (quest starter)
-				qg = 259118,	-- Muln Earthfury (quest recipient)
+				qg = 259118,	-- Muln Earthfury <Earthen Ring> (quest recipient)
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -346,7 +346,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 26,
 			}),
 			q(99196, {	-- A Donation of Wool
-				qg = 276171,	-- Oura Stormspinner
+				qg = 276171,	-- Oura Stormspinner <Windshapers Cloth Quartermaster>
 				coord = { 34.2, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -670,7 +670,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96259, {	-- Defending the Dead
-				qg = 259118,	-- Muln Earthfury
+				qg = 259118,	-- Muln Earthfury <Earthen Ring>
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -762,7 +762,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 3,
 			}),
 			q(99411, {	-- Kyle's Gone Missing!
-				qg = 277182,	-- Ahab Wheathoof
+				qg = 277182,	-- Ahab Wheathoof <The Old Rancher>
 				coord = { 47.2, 57.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -965,7 +965,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(76160, {	-- Stalk With The Earthmother
 				sourceQuest = 76156,	-- Stalk With The Earthmother
-				qg = 205729,	-- Boarton Shadetotem
+				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 				qi = 206176,	-- Mortar and Pestle
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -999,7 +999,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96260, {	-- Stronger than Steel
-				qg = 264072,	-- Yorn Grimtotem
+				qg = 264072,	-- Yorn Grimtotem <Earthen Ring>
 				coord = { 32.4, 20.0, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -1046,7 +1046,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96241, {	-- Talkin' bout Toxins, Mon
-				qg = 264074,	-- Mazu'kon
+				qg = 264074,	-- Mazu'kon <Earthen Ring>
 				qi = 273015,	-- Toxin Extractor
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1116,7 +1116,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96261, {	-- The Broodmother
-				qg = 259118,	-- Muln Earthfury
+				qg = 259118,	-- Muln Earthfury <Earthen Ring>
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -1198,13 +1198,13 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(98430, {	-- The Longwalkers
-				qg = 272203,	-- Perith Stormhoof
+				qg = 272203,	-- Perith Stormhoof <Longwalker>
 				coord = { 33.0, 65.8, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { UNDEAD, TAUREN },
 				groups = {
 					objective(1, {	-- Escort Perith Stormhoof out of Palemane Rock
-						provider = { "n", 272203 },	-- Perith Stormhoof
+						provider = { "n", 272203 },	-- Perith Stormhoof <Longwalker>
 					}),
 				},
 			}),
@@ -1354,7 +1354,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(96130, {	-- Chakuyak
-				qg = 3065,	-- Yaw Sharpmane
+				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>
 				coord = { 46.9, 59.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -1449,7 +1449,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(99108, {	-- Sparring Match
-				qg = 3063,	-- Krang Stonehoof
+				qg = 3063,	-- Krang Stonehoof <Warrior Trainer>
 				coord = { 49.4, 60.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
