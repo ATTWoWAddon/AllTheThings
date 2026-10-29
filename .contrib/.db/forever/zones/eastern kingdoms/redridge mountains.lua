@@ -848,7 +848,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					236,	-- Cured Leather Armor
 					1849,	-- Cured Leather Belt
 					238,	-- Cured Leather Boots
@@ -948,7 +948,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3088, {	-- Henry Chapal <Gunsmith>
 				coord = { 18.8, 41.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
 				}},
@@ -967,7 +967,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(793, {	-- Kara Adams <Shield Crafter>
 				coord = { 25.5, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2445,	-- Large Metal Shield
 					17188,	-- Ringed Buckler
 				}},

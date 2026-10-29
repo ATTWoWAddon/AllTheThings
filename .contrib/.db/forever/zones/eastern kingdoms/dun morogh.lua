@@ -397,7 +397,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(836, {	-- Durnan Furcutter <Cloth & Leather Armor Merchant>
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
@@ -415,7 +415,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(1104, {	-- Grundel Harkin <Armorer>
 						coord = { 28.8, 67.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -429,7 +429,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					n(945, {	-- Rybrad Coldbank <Weaponsmith>
 						coord = { 28.7, 67.7, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club
@@ -590,7 +590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					q(308, {	-- Distracting Jarven
 						qg = 1373,	-- Jarven Thunderbrew
 						coord = { 47.6, 52.6, MAP.DUN_MOROGH },
-						cost = {{ "i", 2686, 1 }},	-- 1x Thunder Ale
+						cost = { { "i", 2686, 1 } },	-- 1x Thunder Ale
 						races = ALLIANCE_ONLY,
 						repeatable = true,
 						groups = {
@@ -1207,7 +1207,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qg = 1377,	-- Pilot Stonegear
 				coord = { 49.6, 48.4, MAP.DUN_MOROGH },
 				maps = { WETLANDS },
-				cost = {{ "i", 3340, 6 }},	-- 6x Incendicite Ore
+				cost = { { "i", 3340, 6 } },	-- 6x Incendicite Ore
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
@@ -1815,7 +1815,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1238, {	-- Gamili Frosthide <Cloth & Leather Armor Merchant>
 				coord = { 45.2, 51.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2122,	-- Cracked Leather Belt
 					2123,	-- Cracked Leather Boots
 					2124,	-- Cracked Leather Bracers
@@ -1845,7 +1845,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1273, {	-- Grawn Thromwyn <Weaponsmith>
 				coord = { 45.3, 52.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2492,	-- Cudgel
 					2488,	-- Gladius
 					2491,	-- Large Axe
@@ -1866,7 +1866,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1243, {	-- Hegnar Rumbleshot <Gunsmith>
 				coord = { 40.7, 65.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
 				}},

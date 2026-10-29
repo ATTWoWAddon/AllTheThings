@@ -360,7 +360,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				n(VENDORS, {
 					n(190, {	-- Dermot Johns <Cloth & Leather Armor Merchant>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
@@ -377,7 +377,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					n(1213, {	-- Godric Rothgar <Armorer & Shieldcrafter>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					n(78, {	-- Janos Hammerknuckle <Weaponsmith>
 						coord = { 47.2, 41.8, MAP.ELWYNN_FOREST },
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club
@@ -425,17 +425,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 		}),
 		explorationHeader({
 			exploration(62),	-- Brackwell Pumpkin Patch
-			visit_exploration(18, {coord={47.4, 62.2, MAP.ELWYNN_FOREST}}),	-- Crystal Lake
+			visit_exploration(18, { coord={ 47.4, 62.2, MAP.ELWYNN_FOREST } }),	-- Crystal Lake
 			exploration(88),	-- Eastvale Logging Camp
 			exploration(57),	-- Fargodeep Mine
 			exploration(60),	-- Forest's Edge
 			exploration(87),	-- Goldshire
-			visit_exploration(56, {coord={74.5, 54.0, MAP.ELWYNN_FOREST}}),	-- Heroes' Vigil
+			visit_exploration(56, { coord={ 74.5, 54.0, MAP.ELWYNN_FOREST } }),	-- Heroes' Vigil
 			exploration(54),	-- Jasperlode Mine
 			exploration(797),	-- Jerod's Landing
-			visit_exploration(92, {coord={32.1, 58.2, MAP.ELWYNN_FOREST}}),	-- Mirror Lake
-			visit_exploration(89, {coord={31.6, 64.8, MAP.ELWYNN_FOREST}}),	-- Mirror Lake Orchard
-			visit_exploration(9,   {coord={45.5, 48.7, MAP.ELWYNN_FOREST}}),	-- Northshire Valley
+			visit_exploration(92, { coord={ 32.1, 58.2, MAP.ELWYNN_FOREST } }),	-- Mirror Lake
+			visit_exploration(89, { coord={ 31.6, 64.8, MAP.ELWYNN_FOREST } }),	-- Mirror Lake Orchard
+			visit_exploration(9,   { coord={ 45.5, 48.7, MAP.ELWYNN_FOREST } }),	-- Northshire Valley
 			exploration(798),	-- Ridgepoint Tower
 			exploration(86),	-- Stone Cairn Lake
 			exploration(1519),	-- Stormwind City
@@ -531,7 +531,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
-						cost = {{ "i", 247883, 3 }},	-- 3x Crude Wax Effigy
+						cost = { { "i", 247883, 3 } },	-- 3x Crude Wax Effigy
 					}),
 				},
 			}),
@@ -1740,7 +1740,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(2046, {	-- Andrew Krighton <Armorer & Shieldcrafter>
 				coord = { 41.7, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1201,	-- Dull Heater Shield
 					2392,	-- Light Mail Armor
 					2393,	-- Light Mail Belt
@@ -1799,7 +1799,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(54, {	-- Corina Steele <Weaponsmith>
 				coord = { 41.4, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2492,	-- Cudgel
 					2488,	-- Gladius
 					2491,	-- Large Axe
@@ -1852,7 +1852,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(74, {	-- Kurran Steele <Cloth & Leather Armor Merchant>
 				coord = { 41.4, 65.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					3602,	-- Knitted Belt
 					3603,	-- Knitted Bracers
 					793,	-- Knitted Gloves
@@ -1870,7 +1870,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(959, {	-- Morley Eberlein <Clothier>
 				coord = { 64.7, 69.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					3602,	-- Knitted Belt
 					3603,	-- Knitted Bracers
 					793,	-- Knitted Gloves
@@ -1882,7 +1882,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(268238, {	-- Nordun Steadysight <Traveling Ranged Weapon Salesman>
 				coord = { 42.1, 66.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2506,	-- Hornwood Recurve Bow
 					2509,	-- Ornate Blunderbuss
 					2505,	-- Polished Shortbow

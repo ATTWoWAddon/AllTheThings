@@ -1225,7 +1225,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			n(4183, {	-- Naram Longclaw <Weaponsmith>
 				coord = { 37.6, 40.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					851,	-- Cutlass
 					852,	-- Mace
 					853,	-- Hatchet

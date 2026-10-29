@@ -1878,76 +1878,76 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 57.8, 52.0, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(277069, {	-- Al'Aketh Armguards
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277065, {	-- Al'Aketh Belt
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277067, {	-- Al'Aketh Boots
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277063, {	-- Al'Aketh Bracers
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277059, {	-- Al'Aketh Chain
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277056, {	-- Al'Aketh Chainmail
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277077, {	-- Al'Aketh Cord
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277075, {	-- Al'Aketh Cuffs
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277073, {	-- Al'Aketh Footwraps
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277058, {	-- Al'Aketh Gauntlets
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277064, {	-- Al'Aketh Gloves
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277061, {	-- Al'Aketh Greaves
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277076, {	-- Al'Aketh Handwraps
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277062, {	-- Al'Aketh Harness
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277068, {	-- Al'Aketh Jerkin
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277078, {	-- Al'Aketh Leggings
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277060, {	-- Al'Aketh Legguards
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277070, {	-- Al'Aketh Mitts
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277072, {	-- Al'Aketh Pants
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277079, {	-- Al'Aketh Shoes
-						cost = {{ "i", 255663, 8 }},	-- 8x Windstone
+						cost = { { "i", 255663, 8 } },	-- 8x Windstone
 					}),
 					i(277071, {	-- Al'Aketh Strap
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 					i(277066, {	-- Al'Aketh Trousers
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277074, {	-- Al'Aketh Vestments
-						cost = {{ "i", 255663, 15 }},	-- 15x Windstone
+						cost = { { "i", 255663, 15 } },	-- 15x Windstone
 					}),
 					i(277057, {	-- Al'Aketh Wristguards
-						cost = {{ "i", 255663, 5 }},	-- 5x Windstone
+						cost = { { "i", 255663, 5 } },	-- 5x Windstone
 					}),
 				},
 			}),
@@ -1961,7 +1961,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251364, {	-- Destin Thriceforged <Weapon Merchant>
 				coord = { 43.5, 23.6, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
 					2130,	-- Club
@@ -2023,7 +2023,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251965, {	-- Fevrath Skyhammer <Armorer & Shieldcrafter>
 				coord = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2129,	-- Large Round Shield
 					17184,	-- Small Shield
 					2380,	-- Tarnished Chain Belt
@@ -2047,7 +2047,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251365, {	-- Jolee Brightmeadows <Cloth & Leather Armor>
 				coord = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2122,	-- Cracked Leather Belt
 					2123,	-- Cracked Leather Boots
 					2124,	-- Cracked Leather Bracers
@@ -2076,7 +2076,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257422, {	-- Railee Thriceforged <Weapon Merchant>
 				coord = { 59.0, 75.5, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2488,	-- Gladius
 					2489,	-- Two-handed Sword
 					2490,	-- Tomahawk
@@ -2116,7 +2116,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257421, {	-- Tephri Thriceforged <Weapon Merchant>
 				coord = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2131,	-- Shortsword
 					1194,	-- Bastard Sword
 					2134,	-- Hand Axe

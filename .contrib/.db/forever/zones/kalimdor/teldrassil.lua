@@ -327,7 +327,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				n(VENDORS, {
 					n(3592, {	-- Andiss <Armorer & Shieldcrafter>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -340,7 +340,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					n(3591, {	-- Freja Nightwing <Leather Armor Merchant>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
@@ -351,7 +351,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					n(3590, {	-- Janna Brightmoon <Clothier>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2121,	-- Thin Cloth Armor
 							3599,	-- Thin Cloth Belt
 							3600,	-- Thin Cloth Bracers
@@ -362,14 +362,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					n(3589, {	-- Keina <Bowyer>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2506,	-- Hornwood Recurve Bow
 							2507,	-- Laminated Recurve Bow
 						}},
 					}),
 					n(3588, {	-- Khardan Proudblade <Weaponsmith>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club

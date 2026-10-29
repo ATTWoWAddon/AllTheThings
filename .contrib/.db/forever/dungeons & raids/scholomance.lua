@@ -11,7 +11,7 @@ instanceroot(246, {	-- Scholomance
 	},
 	mapID = MAP.SCHOLOMANCE,
 	coord = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
-	cost = {{"i", 13704, 1}},	-- Skeleton Key
+	cost = { { "i", 13704, 1 } },	-- Skeleton Key
 	lvl = 55,
 	groups = {
 		n(QUESTS, {
@@ -627,7 +627,7 @@ instanceroot(246, {	-- Scholomance
 			i(16711),	-- Shadowcraft Boots
 		}),
 		n(14516, {	-- Death Knight Darkreaver
-			cost = {{"i", 18746, 1}},	-- Divination Scryer
+			cost = { { "i", 18746, 1 } },	-- Divination Scryer
 			groups = {
 				i(18749),	-- Charger's Lost Soul
 				i(18880),	-- Darkreaver's Head
@@ -648,7 +648,7 @@ instanceroot(246, {	-- Scholomance
 		n(10508, {	-- Ras Frostwhisper
 			i(13626, {	-- Human Head of Ras Frostwhisper
 				description = "Use the Keepsake on him before he dies to turn him back into a human.",
-				cost = {{"i", 13752, 1}},	-- Soulbound Keepsake
+				cost = { { "i", 13752, 1 } },	-- Soulbound Keepsake
 			}),
 			i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
 			i(14487),	-- Bonechill Hammer
@@ -668,7 +668,7 @@ instanceroot(246, {	-- Scholomance
 		n(16118, {	-- Kormok
 			description = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",
 			provider = { "i", 22057 },	-- Brazier of Invocation
-			cost = {{"i", 22052, 1}},	-- Brazier of Beckoning [Kormok]
+			cost = { { "i", 22052, 1 } },	-- Brazier of Beckoning [Kormok]
 			groups = {
 				i(22332),	-- Blade of Necromancy
 				i(22333),	-- Hammer of Divine Might

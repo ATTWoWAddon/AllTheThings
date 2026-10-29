@@ -255,7 +255,7 @@ instanceroot(232, {	-- Maraudon
 		}),
 		n(MARAUDON_PORTAL, {
 			sourceQuest = 7046,	-- The Scepter of Celebras
-			cost = {{"i", 17191, 1}},	-- Scepter of Celebras
+			cost = { { "i", 17191, 1 } },	-- Scepter of Celebras
 			groups = {
 				e(428, {	-- Celebras the Cursed
 					creatureID = 12225,

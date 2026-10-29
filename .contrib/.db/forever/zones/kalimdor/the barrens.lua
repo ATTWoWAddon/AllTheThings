@@ -103,7 +103,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(7968, {	-- Southsea Treasure
 						description = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
-						cost = {{ "i", 7970, 1 }},	-- 1x E.C.A.C.
+						cost = { { "i", 7970, 1 } },	-- 1x E.C.A.C.
 						cr = 7168,	-- Polly
 					}),
 				},
@@ -2277,7 +2277,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 6238 },	-- Big Will
 						coord = { 68.6, 48.6, MAP.THE_BARRENS },
 					}),
-					recipe(2458, { _drop = { "requireSkill" }}),	-- Berserker Stance
+					recipe(2458, { _drop = { "requireSkill" } }),	-- Berserker Stance
 					--recipe(20252, { _drop = { "requireSkill" }}),	-- Intercept (Rank 1)
 				},
 			}),
@@ -3341,7 +3341,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3486, {	-- Halija Whitestrider <Clothier>
 				coord = { 52.2, 31.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -3378,7 +3378,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3491, {	-- Ironzar <Weaponsmith>
 				coord = { 62.2, 37.4, MAP.THE_BARRENS },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
 					2024,	-- Espadon
@@ -3529,7 +3529,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					200,	-- Thick Cloth Vest
 					3597,	-- Thick Cloth Belt
 					201,	-- Thick Cloth Pants

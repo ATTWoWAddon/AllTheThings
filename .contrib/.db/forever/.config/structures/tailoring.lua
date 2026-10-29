@@ -145,210 +145,210 @@ TAILORING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_ALLIANCE = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
 		{	-- Neutral
 			i(253894, {	-- Pattern: Flame Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253954, {	-- Pattern: Flame Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253918, {	-- Pattern: Flame Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253966, {	-- Pattern: Flame Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253992, {	-- Pattern: Flame Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253930, {	-- Pattern: Flame Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253898, {	-- Pattern: Pearly Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253958, {	-- Pattern: Pearly Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253922, {	-- Pattern: Pearly Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253970, {	-- Pattern: Pearly Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253996, {	-- Pattern: Pearly Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253934, {	-- Pattern: Pearly Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253890, {	-- Pattern: Pristine Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253950, {	-- Pattern: Pristine Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253914, {	-- Pattern: Pristine Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253962, {	-- Pattern: Pristine Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253988, {	-- Pattern: Pristine Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253926, {	-- Pattern: Pristine Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253896, {	-- Pattern: Shadow Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253956, {	-- Pattern: Shadow Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253920, {	-- Pattern: Shadow Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253968, {	-- Pattern: Shadow Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253994, {	-- Pattern: Shadow Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253932, {	-- Pattern: Shadow Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253900, {	-- Pattern: Shining Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253960, {	-- Pattern: Shining Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253924, {	-- Pattern: Shining Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253972, {	-- Pattern: Shining Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253998, {	-- Pattern: Shining Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253936, {	-- Pattern: Shining Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253892, {	-- Pattern: Silky Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253952, {	-- Pattern: Silky Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253916, {	-- Pattern: Silky Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253964, {	-- Pattern: Silky Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253990, {	-- Pattern: Silky Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253928, {	-- Pattern: Silky Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(271627, {	-- Tailoring Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 		}, {	-- Friendly
 			i(254028, {	-- Pattern: Black Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254088, {	-- Pattern: Black Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254026, {	-- Pattern: Fiery Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254086, {	-- Pattern: Fiery Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254024, {	-- Pattern: Frothing Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254084, {	-- Pattern: Frothing Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254082, {	-- Pattern: Gilded Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254030, {	-- Pattern: Golden Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254090, {	-- Pattern: Golden Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254036, {	-- Pattern: Mageweave Reagent Bag (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254066, {	-- Pattern: Netherflame Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254054, {	-- Pattern: Netherflame Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254062, {	-- Pattern: Nethergeld Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254050, {	-- Pattern: Nethergeld Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254072, {	-- Pattern: Netherlight Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254060, {	-- Pattern: Netherlight Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254064, {	-- Pattern: Netherfroth Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254052, {	-- Pattern: Netherfroth Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254068, {	-- Pattern: Netherpearl Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254056, {	-- Pattern: Netherpearl Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254070, {	-- Pattern: Nethershine Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254058, {	-- Pattern: Nethershine Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254032, {	-- Pattern: Radiant Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254092, {	-- Pattern: Radiant Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254080, {	-- Pattern: Runecloth Reagent Bag (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(254114, {	-- Pattern: Black Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254112, {	-- Pattern: Fiery Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254110, {	-- Pattern: Frothing Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254108, {	-- Pattern: Gilded Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254116, {	-- Pattern: Golden Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254118, {	-- Pattern: Radiant Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted
@@ -357,210 +357,210 @@ TAILORING_RECIPES = {
 	MERCHANTS_FAVOR_RECIPES_HORDE = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
 		{	-- Neutral
 			i(253894, {	-- Pattern: Flame Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253954, {	-- Pattern: Flame Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253918, {	-- Pattern: Flame Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253966, {	-- Pattern: Flame Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253992, {	-- Pattern: Flame Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253930, {	-- Pattern: Flame Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253898, {	-- Pattern: Pearly Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253958, {	-- Pattern: Pearly Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253922, {	-- Pattern: Pearly Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253970, {	-- Pattern: Pearly Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253996, {	-- Pattern: Pearly Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253934, {	-- Pattern: Pearly Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253890, {	-- Pattern: Pristine Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253950, {	-- Pattern: Pristine Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253914, {	-- Pattern: Pristine Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253962, {	-- Pattern: Pristine Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253988, {	-- Pattern: Pristine Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253926, {	-- Pattern: Pristine Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253896, {	-- Pattern: Shadow Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253956, {	-- Pattern: Shadow Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253920, {	-- Pattern: Shadow Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253968, {	-- Pattern: Shadow Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253994, {	-- Pattern: Shadow Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253932, {	-- Pattern: Shadow Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253900, {	-- Pattern: Shining Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253960, {	-- Pattern: Shining Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253924, {	-- Pattern: Shining Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253972, {	-- Pattern: Shining Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253998, {	-- Pattern: Shining Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253936, {	-- Pattern: Shining Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253892, {	-- Pattern: Silky Boots (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253952, {	-- Pattern: Silky Circlet (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253916, {	-- Pattern: Silky Gloves (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253964, {	-- Pattern: Silky Gown (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253990, {	-- Pattern: Silky Leggings (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(253928, {	-- Pattern: Silky Sash (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+				cost = { { "c", MERCHANTS_FAVOR, 30 } },
 			}),
 			i(271627, {	-- Tailoring Certification
-				cost = {{ "c", MERCHANTS_FAVOR, 1000 }},
+				cost = { { "c", MERCHANTS_FAVOR, 1000 } },
 			}),
 		}, {	-- Friendly
 			i(254028, {	-- Pattern: Black Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254088, {	-- Pattern: Black Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254026, {	-- Pattern: Fiery Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254086, {	-- Pattern: Fiery Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254024, {	-- Pattern: Frothing Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254084, {	-- Pattern: Frothing Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254082, {	-- Pattern: Gilded Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254030, {	-- Pattern: Golden Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254090, {	-- Pattern: Golden Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254036, {	-- Pattern: Mageweave Reagent Bag (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254066, {	-- Pattern: Netherflame Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254054, {	-- Pattern: Netherflame Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254062, {	-- Pattern: Nethergeld Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254050, {	-- Pattern: Nethergeld Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254072, {	-- Pattern: Netherlight Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254060, {	-- Pattern: Netherlight Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254064, {	-- Pattern: Netherfroth Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254052, {	-- Pattern: Netherfroth Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254068, {	-- Pattern: Netherpearl Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254056, {	-- Pattern: Netherpearl Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254070, {	-- Pattern: Nethershine Cuffs (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254058, {	-- Pattern: Nethershine Shoulders (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254032, {	-- Pattern: Radiant Handwraps (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254092, {	-- Pattern: Radiant Waistcord (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 			i(254080, {	-- Pattern: Runecloth Reagent Bag (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
+				cost = { { "c", MERCHANTS_FAVOR, 60 } },
 			}),
 		}, {	-- Honored
 			i(254114, {	-- Pattern: Black Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254112, {	-- Pattern: Fiery Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254110, {	-- Pattern: Frothing Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254108, {	-- Pattern: Gilded Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254116, {	-- Pattern: Golden Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 			i(254118, {	-- Pattern: Radiant Sandals (RECIPE!)
-				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+				cost = { { "c", MERCHANTS_FAVOR, 90 } },
 			}),
 		}, {	-- Revered
 		}, {	-- Exalted

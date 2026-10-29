@@ -23,7 +23,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 		explorationHeader({
 			exploration(1939),	-- Abyssal Sands
 			exploration(1938),	-- Broken Pillar
-			visit_exploration(1941,{coord={62.8,50.9,MAP.TANARIS}}),	-- Caverns of Time
+			visit_exploration(1941,{ coord={ 62.8,50.9,MAP.TANARIS } }),	-- Caverns of Time
 			exploration(2300),	-- Caverns of Time
 			exploration(983),	-- Dunemaul Compound
 			exploration(984),	-- Eastmoon Ruins
@@ -32,9 +32,9 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			exploration(1336),	-- Lost Rigger Cove
 			exploration(1937),	-- Noonshade Ruins
 			exploration(979),	-- Sandsorrow Watch
-			visit_exploration(1940,{coord={62.3,58.9,MAP.TANARIS}}),	-- Southbreak Shore
+			visit_exploration(1940,{ coord={ 62.3,58.9,MAP.TANARIS } }),	-- Southbreak Shore
 			exploration(992),	-- Southmoon Ruins
-			visit_exploration(977,{coord={64.9,21.8,MAP.TANARIS}}),	-- Steamwheedle Port
+			visit_exploration(977,{ coord={ 64.9,21.8,MAP.TANARIS } }),	-- Steamwheedle Port
 			exploration(981),	-- The Gaping Chasm
 			exploration(982),	-- The Noxious Lair
 			exploration(980),	-- Thistleshrub Valley

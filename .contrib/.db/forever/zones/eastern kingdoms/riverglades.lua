@@ -75,7 +75,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(255897, {	-- Friz Frazzlespark <Specialty Goods>
 				coord = { 77.1, 52.9, MAP.RIVERGLADES },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					-- Weapons
 					2520,	-- Broadsword
 					2521,	-- Flamberge
@@ -107,7 +107,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(272435, {	-- Goren Grayfellow <Armorer>
 				coord = { 37.7, 76.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2417,	-- Augmented Chain Vest
 					2419,	-- Augmented Chain Belt
 					2418,	-- Augmented Chain Leggings
@@ -212,7 +212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(259861, {	-- Paige Armstrong <Weaponsmith & Armorcrafter>
 				coord = { 64.3, 82.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2429,	-- Russet Vest
 					3593,	-- Russet Belt
 					2431,	-- Russet Pants

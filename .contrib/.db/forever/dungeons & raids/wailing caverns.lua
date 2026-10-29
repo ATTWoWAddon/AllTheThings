@@ -180,7 +180,7 @@ instanceroot(240, {	-- Wailing Caverns
 		n(VENDORS, {
 			n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 				coord = { 45.9, 35.7, MAP.THE_BARRENS },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1849,	-- Cured Leather Belt
 					1850,	-- Cured Leather Bracers
 					236,	-- Cured Leather Armor
