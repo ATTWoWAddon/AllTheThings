@@ -164,7 +164,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					FESTIVAL_LOREMASTER_ID,
 					FESTIVAL_TALESPINNER_ID,
 				},
-				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, { })),
 				maps = {
 					MAP.ASHENVALE,
 					MAP.THE_BARRENS,
@@ -196,7 +196,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					FESTIVAL_LOREMASTER_ID,
 					FESTIVAL_TALESPINNER_ID,
 				},
-				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, { })),
 				maps = {
 					MAP.HILLSBRAD_FOOTHILLS,
 					MAP.SILVERPINE_FOREST,

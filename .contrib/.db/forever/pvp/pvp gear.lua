@@ -218,12 +218,12 @@ root(ROOTS.PVP, {
 			i(18442),	-- Master Sergeant's Insignia (30)
 
 			-- Trinkets
-			i(18863, { classes = { DRUID }   }),	-- Insignia of the Alliance
-			i(18856, { classes = { HUNTER }  }),	-- Insignia of the Alliance
-			i(18859, { classes = { MAGE }    }),	-- Insignia of the Alliance
+			i(18863, { classes = { DRUID } }),	-- Insignia of the Alliance
+			i(18856, { classes = { HUNTER } }),	-- Insignia of the Alliance
+			i(18859, { classes = { MAGE } }),	-- Insignia of the Alliance
 			i(18864, { classes = { PALADIN } }),	-- Insignia of the Alliance
-			i(18862, { classes = { PRIEST }  }),	-- Insignia of the Alliance
-			i(18857, { classes = { ROGUE }   }),	-- Insignia of the Alliance
+			i(18862, { classes = { PRIEST } }),	-- Insignia of the Alliance
+			i(18857, { classes = { ROGUE } }),	-- Insignia of the Alliance
 			i(18858, { classes = { WARLOCK } }),	-- Insignia of the Alliance
 			i(18854, { classes = { WARRIOR } }),	-- Insignia of the Alliance
 		},
@@ -406,16 +406,16 @@ root(ROOTS.PVP, {
 			i(18427),	-- Sergeant's Cloak (30)
 
 			-- Wrist
-			i(18434, { classes = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (58)
-			i(18436, { classes = { DRUID }					}),	-- First Sergeant's Dragonhide Armguards (45)
-			i(16497, { classes = { ROGUE }					}),	-- First Sergeant's Leather Armguards (58)
-			i(18435, { classes = { ROGUE }					}),	-- First Sergeant's Leather Armguards (45)
-			i(16532, { classes = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (58)
-			i(18432, { classes = { HUNTER, SHAMAN }			}),	-- First Sergeant's Mail Wristguards (45)
-			i(18429, { classes = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (58)
-			i(18430, { classes = { PALADIN, WARRIOR }		}),	-- First Sergeant's Plate Bracers (45)
-			i(16486, { classes = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (58)
-			i(18437, { classes = { MAGE, PRIEST, WARLOCK }	}),	-- First Sergeant's Silk Cuffs (45)
+			i(18434, { classes = { DRUID } }),	-- First Sergeant's Dragonhide Armguards (58)
+			i(18436, { classes = { DRUID } }),	-- First Sergeant's Dragonhide Armguards (45)
+			i(16497, { classes = { ROGUE } }),	-- First Sergeant's Leather Armguards (58)
+			i(18435, { classes = { ROGUE } }),	-- First Sergeant's Leather Armguards (45)
+			i(16532, { classes = { HUNTER, SHAMAN } }),	-- First Sergeant's Mail Wristguards (58)
+			i(18432, { classes = { HUNTER, SHAMAN } }),	-- First Sergeant's Mail Wristguards (45)
+			i(18429, { classes = { PALADIN, WARRIOR } }),	-- First Sergeant's Plate Bracers (58)
+			i(18430, { classes = { PALADIN, WARRIOR } }),	-- First Sergeant's Plate Bracers (45)
+			i(16486, { classes = { MAGE, PRIEST, WARLOCK } }),	-- First Sergeant's Silk Cuffs (58)
+			i(18437, { classes = { MAGE, PRIEST, WARLOCK } }),	-- First Sergeant's Silk Cuffs (45)
 
 			-- Necks
 			i(16335),	-- Senior Sergeant's Insignia (58)
@@ -423,14 +423,14 @@ root(ROOTS.PVP, {
 			i(15200),	-- Senior Sergeant's Insignia (30)
 
 			-- Trinkets
-			i(18853, { classes = { DRUID }	}),	-- Insignia of the Horde
-			i(18846, { classes = { HUNTER }	}),	-- Insignia of the Horde
-			i(18850, { classes = { MAGE }	}),	-- Insignia of the Horde
-			i(18851, { classes = { PRIEST }	}),	-- Insignia of the Horde
-			i(18849, { classes = { ROGUE }	}),	-- Insignia of the Horde
-			i(18845, { classes = { SHAMAN }	}),	-- Insignia of the Horde
-			i(18852, { classes = { WARLOCK }	}),	-- Insignia of the Horde
-			i(18834, { classes = { WARRIOR }	}),	-- Insignia of the Horde
+			i(18853, { classes = { DRUID } }),	-- Insignia of the Horde
+			i(18846, { classes = { HUNTER } }),	-- Insignia of the Horde
+			i(18850, { classes = { MAGE } }),	-- Insignia of the Horde
+			i(18851, { classes = { PRIEST } }),	-- Insignia of the Horde
+			i(18849, { classes = { ROGUE } }),	-- Insignia of the Horde
+			i(18845, { classes = { SHAMAN } }),	-- Insignia of the Horde
+			i(18852, { classes = { WARLOCK } }),	-- Insignia of the Horde
+			i(18834, { classes = { WARRIOR } }),	-- Insignia of the Horde
 		},
 	}),
 });

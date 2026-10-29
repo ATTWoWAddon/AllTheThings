@@ -576,7 +576,7 @@ instanceroot(236, {	-- Stratholme
 						{ "i", 22057 },	-- Brazier of Invocation
 						{ "o", 181083 },	-- Sothos and Jarien's Heirlooms
 					},
-					cost = {{ "i", 22051, 1 }},	-- Brazier of Beckoning [Jarien & Sothos]
+					cost = { { "i", 22051, 1 } },	-- Brazier of Beckoning [Jarien & Sothos]
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]

@@ -890,10 +890,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4604, {	-- Abigail Sawyer <Bow Merchant>
 				coord = { 54.8, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11303, {	-- Fine Shortbow
 						isLimited = true,
@@ -921,7 +921,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4602, {	-- Benijah Fenner
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -931,7 +931,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					924,	-- Maul
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
-				}},
+				} },
 				groups = {
 					i(15808),	-- Fine Light Crossbow
 					i(15809),	-- Heavy Crossbow
@@ -950,7 +950,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4569, {	-- Charles Seaton <Blade Merchant>
 				coord = { 77.0, 50.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					-- added all
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -961,7 +961,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					923,	-- Longsword
 					2208,	-- Poniad
 					2027,	-- Scimitar
-				}},
+				} },
 			}),
 			n(4561, {	-- Daniel Bartlett <General Trade Supplier>
 				coord = { 64.0, 37.4, MAP.UNDERCITY },
@@ -987,14 +987,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4601, {	-- Francis Eliot
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
 					927,	-- Double Axe
 					853,	-- Hatchet
 					1196,	-- Tabar
-				}},
+				} },
 				groups = {
 					i(15811),	-- Heavy Spear
 					i(15810),	-- Short Spear
@@ -1003,7 +1003,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4600, {	-- Geoffrey Hartwell
 				coord = { 58.4, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2520,	-- Broadsword
 					2523,	-- Bullova
 					2528,	-- Falchion
@@ -1014,12 +1014,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2525,	-- War Hammer
 					2533,	-- War Maul
 					2529,	-- Zweihander
-				}},
+				} },
 			}),
 			n(5820, {	-- Gillian Moore
 				coord = { 70.6, 59.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -1052,7 +1052,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					844,	-- Tanned Leather Gloves
 					846,	-- Tanned Leather Jerkin
 					845,	-- Tanned Leather Pants
-				}},
+				} },
 				groups = {
 					i(1839),	-- Rough Leather Belt
 					i(796),	-- Rough Leather Boots
@@ -1065,7 +1065,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4556, {	-- Gordon Wendham
 				coord = { 61.4, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
 					2130,	-- Club
@@ -1082,7 +1082,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2489,	-- Two-Handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
-				}},
+				} },
 			}),
 			n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 				coord = { 67.6, 44.1, MAP.UNDERCITY },
@@ -1100,7 +1100,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4589, {	-- Joseph Moore <Leatherworking Supplies>
 				coord = { 70.1, 58.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+				sym = { { "sub", "common_vendor", 5565 } },	-- Jillian Tanner <Leatherworking Supplies>
 				groups = {
 					i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 						isLimited = true,
@@ -1117,12 +1117,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(22250, {	-- Herb Pouch
 						description = "Only select Herbalism Suppliers sells this pouch.",
 						providers = {
-							{ "n", 4216},	-- Chardryn <Herbalism Supplies>
-							{ "n", 5503},	-- Eldraeith <Herbalism Supplier>
-							{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplier>
-							{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplier>
-							{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+							{ "n", 4216 },	-- Chardryn <Herbalism Supplies>
+							{ "n", 5503 },	-- Eldraeith <Herbalism Supplier>
+							{ "n", 5138 },	-- Gwina Stonebranch <Herbalism Supplier>
+							{ "n", 4615 },	-- Katrina Alliestar <Herbalism Supplier>
+							{ "n", 3548 },	-- Selina Weston <Alchemy & Herbalism Supplies>
+							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplies>
 						},
 					}),
 				},
@@ -1130,7 +1130,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 				coord = { 64.0, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2371,	-- Battered Leather Belt
 					2373,	-- Battered Leather Boots
 					2374,	-- Battered Leather Bracers
@@ -1158,7 +1158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2369,	-- Woven Gloves
 					2366,	-- Woven Pants
 					2364,	-- Woven Vest
-				}},
+				} },
 				groups = {
 					i(1835),	-- Dirty Leather Belt
 					i(210),	-- Dirty Leather Boots
@@ -1187,7 +1187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4557, {	-- Louis Warren
 				coord = { 62.0, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2025,	-- Bearded Axe
 					1198,	-- Claymore
 					2029,	-- Cleaver
@@ -1204,12 +1204,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
 					1196,	-- Tabar
-				}},
+				} },
 			}),
 			n(4580, {	-- Lucille Castleton
 				coord = { 71.4, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -1217,10 +1217,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2614,	-- Robe Of Apprenticeship
 					2616,	-- Shimmering Silk Robes
 					2618,	-- Silver Dress Robes
-				}},
+				} },
 			}),
 			n(5190, {	-- Merill Pleasance <Tabard Vendor>
-				sym = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
+				sym = { { "sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 				coord = { 69.3, 44.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 			}),
@@ -1240,7 +1240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5819, {	-- Mirelle Tremayne
 				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1291,29 +1291,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					1852,	-- Scalemail Bracers
 					718,	-- Scalemail Gloves
 					286,	-- Scalemail Pants
-				}},
+				} },
 			}),
 			n(4592, {	-- Nathaniel Steenwick
 				coord = { 77.2, 50.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					3027,	-- Heavy Recurve Bow
 					2506,	-- Hornwood Recurve Bow
 					2507,	-- Laminated Recurve Bow
 					2505,	-- Polished Shortbow
 					3026,	-- Reinforced Bow
 					2504,	-- Worn Shortbow
-				}},
+				} },
 			}),
 			n(4603, {	-- Nicholas Atwood
 				coord = { 62.2, 27.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					3024,	-- BKP 2700 "Enforcer"
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
-				}},
+				} },
 			}),
 			n(4553, {	-- Ronald Burch <Cooking Supplier>
 				coord = { 62.3, 43.1, MAP.UNDERCITY },
@@ -1339,7 +1339,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 				coord = { 70.6, 28.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -1378,7 +1378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					201,	-- Thick Cloth Pants
 					202,	-- Thick Cloth Shoes
 					200,	-- Thick Cloth Vest
-				}},
+				} },
 				groups = {
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui
@@ -1388,10 +1388,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4570, {	-- Sydney Upton <Staff Merchant>
 				coord = { 69.8, 27.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
-				}},
+				} },
 			}),
 			n(4554, {	-- Tawny Grisette <Mushroom Vendor>
 				description = "Walks around the Trade Quarter, upper level.",
@@ -1409,25 +1409,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 				coord = { 62.0, 60.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
+				sym = { { "select","itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				} },
 			}),
 			n(4559, {	-- Timothy Weldon
 				coord = { 63.6, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					17187,	-- Banded Buckler
 					17183,	-- Dented Buckler
 					1200,	-- Large Wooden Shield
 					17185,	-- Round Buckler
 					1202,	-- Wall Shield
 					2376,	-- Worn Heater Shield
-				}},
+				} },
 				groups = {
 					i(2398),	-- Light Chain Armor
 					i(2399),	-- Light Chain Belt
@@ -1446,7 +1446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4560, {	-- Walter Ellingson
 				coord = { 62.8, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					17187,	-- Banded Buckler
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
@@ -1455,12 +1455,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					850,	-- Chainmail Gloves
 					848,	-- Chainmail Pants
 					1202,	-- Wall Shield
-				}},
+				} },
 			}),
 			n(5754, {	-- Zane Bradford
 				coord = { 70.0, 27.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select", "itemID",
+				sym = { { "select", "itemID",
 					5239,	-- Blackbone Wand
 					5210,	-- Burning Wand
 					5236,	-- Combustible Wand
@@ -1469,7 +1469,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5347,	-- Pestilent Wand
 					5238,	-- Pitchwood Wand
 					5208,	-- Smoldering Wand
-				}},
+				} },
 			}),
 		}),
 	},

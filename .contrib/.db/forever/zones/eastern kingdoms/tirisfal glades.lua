@@ -1906,7 +1906,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 				coord = { 83.2, 68.2, MAP.TIRISFAL_GLADES },
-				sym = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
+				sym = { { "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 			}),
 			n(2116, {	-- Blacksmith Rand <Apprentice Armorer>
 				coord = { 32.4, 66.2, MAP.TIRISFAL_GLADES },

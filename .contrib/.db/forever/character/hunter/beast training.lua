@@ -1017,4 +1017,4 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			},
 		},
 	}),
-})})});
+}) }) });

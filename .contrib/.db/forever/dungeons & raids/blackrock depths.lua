@@ -77,7 +77,7 @@ instanceroot(228, {	-- Blackrock Depths
 				altQuests = { 4023 },	-- A Taste of Flame
 				qg = 9459,	-- Cyrus Therepentous
 				coord = { 95.09, 31.56, MAP.BURNING_STEPPES },
-				cost = {{ "i", 10575, 1 }},	-- 1x Black Dragonflight Molt
+				cost = { { "i", 10575, 1 } },	-- 1x Black Dragonflight Molt
 				lvl = 52,
 			}),
 			q(4023, {	-- A Taste of Flame (1/2) (B)
@@ -205,35 +205,35 @@ instanceroot(228, {	-- Blackrock Depths
 			q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 				qg = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
-				cost = {{ "i", 11382, 1 }},	-- 1x Blood of the Mountain
+				cost = { { "i", 11382, 1 } },	-- 1x Blood of the Mountain
 				lvl = 60,
 				repeatable = true,
 			}),
 			q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
 				qg = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
-				cost = {{ "i", 17012, 2 }},	-- 2x Core Leather
+				cost = { { "i", 17012, 2 } },	-- 2x Core Leather
 				lvl = 60,
 				repeatable = true,
 			}),
 			q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
 				qg = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
-				cost = {{ "i", 11370, 10 }},	-- 10x Dark Iron Ore
+				cost = { { "i", 11370, 10 } },	-- 10x Dark Iron Ore
 				lvl = 60,
 				repeatable = true,
 			}),
 			q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
 				qg = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
-				cost = {{ "i", 17010, 1 }},	-- 1x Fiery Core
+				cost = { { "i", 17010, 1 } },	-- 1x Fiery Core
 				lvl = 60,
 				repeatable = true,
 			}),
 			q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
 				qg = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
-				cost = {{ "i", 17011, 1 }},	-- 1x Lava Core
+				cost = { { "i", 17011, 1 } },	-- 1x Lava Core
 				lvl = 60,
 				repeatable = true,
 			}),
@@ -1062,7 +1062,7 @@ instanceroot(228, {	-- Blackrock Depths
 				groups = {
 					o(160845, {	-- Dark Coffer
 						sharedDescription = "Is used to turn in Librams.",
-						cost = {{ "i", 11197, 1 }},	-- 1x Dark Keeper Key
+						cost = { { "i", 11197, 1 } },	-- 1x Dark Keeper Key
 						groups = {
 							i(11752),	-- Black Blood of the Tormented
 							i(11751),	-- Burning Essence

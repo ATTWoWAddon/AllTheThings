@@ -1002,7 +1002,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 47.6, 75.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {
-					{"select", "itemID",
+					{ "select", "itemID",
 					19031,	-- Frostwolf Battle Tabard
 					15197,	-- Scout's Tabard
 					15199,	-- Stone Guard's Herald
@@ -1016,7 +1016,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3358, {	-- Gorina <Mining Supplies>
 				coord = { 73.2, 26.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
+				sym = { { "sub", "common_vendor", 4599 } },	-- Sarah Killan <Mining Supplies>
 			}),
 			n(3335, {	-- Hagrus <Reagents>
 				coord = { 46.2, 46.6, MAP.ORGRIMMAR },
@@ -1033,7 +1033,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 				coord = { 62.8, 44.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -1074,7 +1074,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2469,	-- Studded Gloves
 					3890,	-- Studded Hat
 					2465,	-- Studded Pants
-				}},
+				} },
 				groups = {
 					i(12256, {	-- Cindercloth Leggings
 						isLimited = true,
@@ -1112,7 +1112,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3331, {	-- Kareth
 				coord = { 46.8, 63.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2520,	-- Broadsword
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -1126,7 +1126,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2208,	-- Poniad
 					2534,	-- Rondel
 					2027,	-- Scimitar
-				}},
+				} },
 			}),
 			n(5816, {	-- Katis
 				coord = { 45.8, 57.6, MAP.ORGRIMMAR },
@@ -1190,13 +1190,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3360, {	-- Koru
 				coord = { 76.2, 37.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
 					928,	-- Long Staff
 					852,	-- Mace
 					854,	-- Quarter Staff
-				}},
+				} },
 				groups = {
 					i(925),	-- Flail
 					i(2028),	-- Hammer
@@ -2018,11 +2018,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3314, {	-- Urtharo <Weapon Merchant>
 				coord = { 47.4, 68.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					1198,	-- Claymore
 					851,	-- Cutlass
 					2207,	-- Jambiya
-				}},
+				} },
 				groups = {
 					i(1194),	-- Bastard Sword
 					i(2479),	-- Broad Axe
@@ -2078,14 +2078,14 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3409, {	-- Zendo'jian <Weapon Vendor>
 				coord = { 75.0, 36.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					853,	-- Hatchet
 					2507,	-- Laminated Recurve Bow
 					854,	-- Quarter Staff
 					3026,	-- Reinforced Bow
 					1196,	-- Tabar
 					2495,	-- Walking Stick
-				}},
+				} },
 				groups = {
 					i(926),	-- Battle Axe
 					i(2025),	-- Bearded Axe

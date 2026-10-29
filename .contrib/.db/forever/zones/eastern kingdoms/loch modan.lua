@@ -226,7 +226,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				groups = {
 					objective(1, {	-- 0/3 Vessel of Dragon's Blood
 						provider = { "i", 7867 },	-- Vessel of Dragon's Blood
-						cost = {{ "i", 7866, 1 }},	-- 1x Empty Thaumaturgy Vessel
+						cost = { { "i", 7866, 1 } },	-- 1x Empty Thaumaturgy Vessel
 						cr = 2726,	-- Scorched Guardian
 					}),
 					i(7870, {	-- Thaumaturgy Vessel Lockbox
@@ -363,7 +363,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Crocolisk Meat
-						cost = {{ "i", 2924, 5 }},	-- 5x Crocolisk Meat
+						cost = { { "i", 2924, 5 } },	-- 5x Crocolisk Meat
 						crs = {
 							5053,	-- Deviate Crocolisk
 							2476,	-- Large Loch Crocolisk
@@ -568,7 +568,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
 				maps = { ARATHI_HIGHLANDS },
-				cost = {{ "i", 2841, 10 }},	-- 10x Bronze Bar
+				cost = { { "i", 2841, 10 } },	-- 10x Bronze Bar
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -950,7 +950,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1214, {	-- Aldren Cordon <Clothier>
 				coord = { 64.8, 66.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -960,7 +960,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					839,	-- Heavy Weave Gloves
 					838,	-- Heavy Weave Pants
 					840,	-- Heavy Weave Shoes
-				}},
+				} },
 				groups = {
 					i(4782, {	-- Solstice Robe
 						isLimited = true,
@@ -976,10 +976,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1687, {	-- Cliff Hadin <Bowyer>
 				coord = { 83.0, 63.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2507,	-- Laminated Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11304, {	-- Fine Longbow
 						isLimited = true,
@@ -996,22 +996,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1686, {	-- Irene Sureshot <Gunsmith>
 				coord = { 83.2, 63.5, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
-				}},
+				} },
 			}),
 			n(954, {	-- Kat Sampson <Leather Armor Merchant>
 				coord = { 82.6, 64.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1843,	-- Tanned Leather Belt
 					843,	-- Tanned Leather Boots
 					1844,	-- Tanned Leather Bracers
 					844,	-- Tanned Leather Gloves
 					846,	-- Tanned Leather Jerkin
 					845,	-- Tanned Leather Pants
-				}},
+				} },
 				groups = {
 					i(4788, {	-- Agile Boots
 						isLimited = true,
@@ -1033,26 +1033,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1362, {	-- Gothor Brumn <Armorer>
 				coord = { 24.1, 18.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
 					849,	-- Chainmail Boots
 					1846,	-- Chainmail Bracers
 					850,	-- Chainmail Gloves
 					848,	-- Chainmail Pants
-				}},
+				} },
 			}),
 			n(167, {	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
 					849,	-- Chainmail Boots
 					1846,	-- Chainmail Bracers
 					850,	-- Chainmail Gloves
 					848,	-- Chainmail Pants
-				}},
+				} },
 				groups = {
 					i(4765, {	-- Enamelled Broadsword
 						isLimited = true,
@@ -1065,12 +1065,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(222, {	-- Nillen Andemar <Macecrafter>
 				coord = { 43.0, 10.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2492,	-- Cudgel
 					1197,	-- Giant Mace
 					852,	-- Mace
 					2493,	-- Wooden Mallet
-				}},
+				} },
 				groups = {
 					i(4778, {	-- Heavy Spiked Mace
 						isLimited = true,
@@ -1095,10 +1095,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1469, {	-- Vrok Blunderblast <Gunsmith>
 				coord = { 25.3, 42.5, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					2509,	-- Ornate Blunderbuss
-				}},
+				} },
 			}),
 			n(1685, {	-- Xandar Goodbeard <General Supplies>
 				coord = { 82.6, 63.2, MAP.LOCH_MODAN },
