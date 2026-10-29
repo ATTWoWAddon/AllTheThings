@@ -45,27 +45,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 		n(QUESTS, {
 			q(232, {	-- Errand for Apothecary Zinge (1/2)
 				qg = 5204,	-- Apothecary Zinge
-				qi = 8525,	-- Zinge's Purchase Order
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8525,	-- Zinge's Purchase Order
 			}),
 			q(238, {	-- Errand for Apothecary Zinge (2/2)
 				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
 				qg = 7683,	-- Alessandro Luca
-				qi = 8523,	-- Field Testing Kit
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8523,	-- Field Testing Kit
 			}),
 			q(243, {	-- Into the Field
 				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
 				qg = 5204,	-- Apothecary Zinge
-				qi = 8523,	-- Field Testing Kit
 				coord = { 50.1, 68.0, MAP.UNDERCITY },
 				maps = { MAP.TANARIS },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8523,	-- Field Testing Kit
 			}),
 			q(1164, {	-- To Steal From Thieves
 				qg = 4486,	-- Genavie Callow
@@ -96,11 +96,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1358, {	-- Sample for Helbrim
 				sourceQuest = 1359,	-- Zinge's Delivery
 				qg = 5204,	-- Apothecary Zinge
-				qi = 6016,	-- Wolf Heart Sample
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 6016,	-- Wolf Heart Sample
 				groups = {
 					i(10637),	-- Brewer's Gloves
 					i(10638),	-- Long Draping Cape
@@ -111,8 +111,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
@@ -128,8 +128,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1473, {	-- Creature of the Void [Undercity]
 				sourceQuest = 1478,	-- Halgar's Summons
@@ -152,8 +152,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
@@ -172,8 +172,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5693,	-- Godrick Farsan
 				coord = { 85.0, 14.8, MAP.UNDERCITY },
 				maps = { MAP.SILVERPINE_FOREST, MAP.WETLANDS },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Dalin's Heart
@@ -201,15 +201,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5875,	-- Dan'rul Bloodeye
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1841, {	-- Velora Nitely and the Brutal Legguards
 				sourceQuest = 1838,	-- Brutal Armor
 				qg = 5878,	-- Thun'grim Firegaze
 				coord = { 57.2, 30.2, MAP.THE_BARRENS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 			}),
 			q(1846, {	-- Dragonmaw Shinbones
@@ -217,8 +217,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 6411,	-- Velora Nitely
 				coord = { 62.4, 39.2, MAP.UNDERCITY },
 				maps = { MAP.WETLANDS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
@@ -240,8 +240,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sourceQuest = 1846,	-- Dragonmaw Shinbones
 				qg = 6411,	-- Velora Nitely
 				coord = { 62.4, 39.2, MAP.UNDERCITY },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(7132),	-- Brutal Legguards
@@ -253,8 +253,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 61.8, 52.4, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD, TROLL },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1882, {	-- The Balnir Farmstead
 				sourceQuests = {
@@ -284,8 +284,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1886, {	-- The Deathstalkers (1/4)
 				sourceQuest = 1885,	-- Mennet Carkad
@@ -311,11 +311,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1898, {	-- The Deathstalkers (2/4)
 				sourceQuest = 1886,	-- The Deathstalkers (1/4)
 				qg = 6467,	-- Mennet Carkad
-				qi = 7231,	-- Astor's Letter of Introduction
 				coord = { 83.2, 69.0, MAP.UNDERCITY },
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
+				qi = 7231,	-- Astor's Letter of Introduction
 			}),
 			q(1899, {	-- The Deathstalkers (3/4)
 				sourceQuest = 1898,	-- The Deathstalkers (2/4)
@@ -342,8 +342,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 				races = HORDE_ONLY,
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 15,
+				isBreadcrumb = true,
 			}),
 			q(1960, {	-- Investigate the Alchemist Shop
 				sourceQuest = 1959,	-- Report to Anastasia
@@ -419,11 +419,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1978, {	-- The Deathstalkers (4/4)
 				sourceQuest = 1899,	-- The Deathstalkers (3/4)
 				qg = 6467,	-- Mennet Carkad
-				qi = 7294,	-- Andron's Ledger
 				coord = { 83.2, 69.0, MAP.UNDERCITY },
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
+				qi = 7294,	-- Andron's Ledger
 				groups = {
 					i(7298),	-- Blade of Cunning
 				},
@@ -488,12 +488,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 75.6, 74.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines
 			}),
 			q(3568, {	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
@@ -504,23 +504,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Vial Labeled #1
 						provider = { "i", 10691 },	-- Filled Vial Labeled #1
-						cost = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
 						coord = { 48.0, 60.0, MAP.AZSHARA },
+						cost = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
 					}),
 					objective(2, {	-- 0/1 Filled Vial Labeled #2
 						provider = { "i", 10692 },	-- Filled Vial Labeled #2
-						cost = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
 						coord = { 47.0, 51.0, MAP.AZSHARA },
+						cost = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
 					}),
 					objective(3, {	-- 0/1 Filled Vial Labeled #3
 						provider = { "i", 10693 },	-- Filled Vial Labeled #3
-						cost = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
 						coord = { 48.0, 48.0, MAP.AZSHARA },
+						cost = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
 					}),
 					objective(4, {	-- 0/1 Filled Vial Labeled #4
 						provider = { "i", 10694 },	-- Filled Vial Labeled #4
-						cost = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
 						coord = { 47.0, 46.0, MAP.AZSHARA },
+						cost = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
 					}),
 					i(10695, {	-- Box of Empty Vials
 						i(10687),	-- Empty Vial Labeled #1
@@ -533,10 +533,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(3569, {	-- Seeping Corruption (2/3)
 				sourceQuest = 3568,	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
-				qi = 10712,	-- Cuely's Elixir
 				coord = { 47.6, 73.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10712,	-- Cuely's Elixir
 			}),
 			q(3570, {	-- Seeping Corruption (3/3)
 				sourceQuest = 3569,	-- Seeping Corruption (2/3)
@@ -558,12 +558,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 75.6, 74.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines
 			}),
 			q(4293, {	-- A Sample of Slime...
 				qg = 10136,	-- Chemist Fuely
@@ -577,8 +577,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
 						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 48,
+						repeatable = true,
 						groups = {
 							i(15103, {	-- Corrupt Tested Sample
 								description = "Might contain nothing. Bring way more slime samples than you need.",
@@ -613,8 +613,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
 						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 48,
+						repeatable = true,
 						groups = {
 							i(15102, {	-- Un'Goro Tested Sample
 								description = "Might contain nothing. Bring way more slime samples than you need.",
@@ -681,8 +681,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 35.6, 87.6, MAP.ORGRIMMAR },
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 				},
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -706,8 +706,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 35.6, 87.6, MAP.ORGRIMMAR },
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 				},
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					{
@@ -719,16 +719,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(6322, {	-- Michael Garrett
 				sourceQuest = 6323,	-- Ride to the Undercity
 				qg = 4556,	-- Gordon Wendham
-				qi = 16210,	-- Gordon's Crate
 				coord = { 61.6, 41.8, MAP.UNDERCITY },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16210,	-- Gordon's Crate
 			}),
 			q(6324, {	-- Return to Podrig
 				sourceQuest = 6322,	-- Michael Garrett
 				qg = 4551,	-- Michael Garrett
-				qi = 16210,	-- Gordon's Crate
 				coords = {
 					{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
 					{ 63.4, 48.6, MAP.UNDERCITY },
@@ -736,6 +735,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16210,	-- Gordon's Crate
 			}),
 			q(7813, {	-- A Donation of Wool
 				qg = 14729,	-- Ralston Farnsley
@@ -772,8 +772,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maxReputation = { FACTION_UNDERCITY, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(8273, {	-- Oran's Gratitude
 				sourceQuest = 2782,	-- Rin'ji's Secret
@@ -792,8 +792,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
 				maps = { MAP.THE_BARRENS, MAP.SILVERPINE_FOREST },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Avelina's Heart
@@ -813,8 +813,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
@@ -835,28 +835,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 74.6, 23.2, MAP.UNDERCITY },
 					{ 53.2, 29.4, MAP.UNDERCITY },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = { { "i", 278265, 1 } },	-- Nutritious Slime Sludge
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(275682),	-- Excitable Slime
 				},
 			}),
 			q(97891, {	-- Prompt Potion Runner
 				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
-				qi = 279020,	-- Unstable Potion (PQI!)
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279020,	-- Unstable Potion (PQI!)
 			}),
 			q(97985, {	-- Thundering Hearts
 				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
 				coord = { 48.4, 70.8, MAP.UNDERCITY },
 				maps = { MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
 						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
@@ -1394,8 +1394,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				}},
 			}),
 			n(4554, {	-- Tawny Grisette <Mushroom Vendor>
-				coord = { 69.7, 44.8, MAP.UNDERCITY },
 				description = "Walks around the Trade Quarter, upper level.",
+				coord = { 69.7, 44.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				groups = {
 					i(4607),	-- Delicious Cave Mold

@@ -56,11 +56,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { DRUID },
 			cost = {
 				{ "i", 16714, 1 },	-- 1x Wildheart Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = { i(22108) },	-- Feralheart Bracers
 		},
@@ -74,12 +74,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
 				{ "i", 16715, 1 },	-- 1x Wildheart Boots
 				{ "i", 16719, 1 },	-- 1x Wildheart Kilt
 				{ "i", 16718, 1 },	-- 1x Wildheart Spaulders
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22107),	-- Feralheart Boots
@@ -103,11 +103,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
 				{ "i", 16716, 1 },	-- 1x Wildheart Belt
 				{ "i", 16717, 1 },	-- 1x Wildheart Gloves
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22106),	-- Feralheart Belt
@@ -129,11 +129,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
 				{ "i", 16720, 1 },	-- 1x Wildheart Cowl
 				{ "i", 16706, 1 },	-- 1x Wildheart Vest
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22109),	-- Feralheart Cowl
@@ -170,11 +170,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { HUNTER },
 			cost = {
 				{ "i", 16681, 1 },	-- 1x Beaststalker's Bindings
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = { i(22011) },	-- Beastmaster's Bindings
 		},
@@ -188,12 +188,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
 				{ "i", 16675, 1 },	-- 1x Beaststalker's Boots
 				{ "i", 16679, 1 },	-- 1x Beaststalker's Mantle
 				{ "i", 16678, 1 },	-- 1x Beaststalker's Pants
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22061),	-- Beastmaster's Boots
@@ -215,11 +215,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
 				{ "i", 16680, 1 },	-- 1x Beaststalker's Belt
 				{ "i", 16676, 1 },	-- 1x Beaststalker's Gloves
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22010),	-- Beastmaster's Belt
@@ -241,11 +241,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
 				{ "i", 16677, 1 },	-- 1x Beaststalker's Cap
 				{ "i", 16674, 1 },	-- 1x Beaststalker's Tunic
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22013),	-- Beastmaster's Cap
@@ -282,11 +282,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { MAGE },
 			cost = {
 				{ "i", 16683, 1 },	-- 1x Magister's Bindings
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = { i(22063) },	-- Sorcerer's Bindings
 		},
@@ -297,12 +297,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { MAGE },
 			cost = {
 				{ "i", 16682, 1 },	-- 1x Magister's Boots
 				{ "i", 16687, 1 },	-- 1x Magister's Leggings
 				{ "i", 16689, 1 },	-- 1x Magister's Mantle
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22064),	-- Sorcerer's Boots
@@ -326,11 +326,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { MAGE },
 			cost = {
 				{ "i", 16685, 1 },	-- 1x Magister's Belt
 				{ "i", 16684, 1 },	-- 1x Magister's Gloves
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22062),	-- Sorcerer's Belt
@@ -352,11 +352,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { MAGE },
 			cost = {
 				{ "i", 16686, 1 },	-- 1x Magister's Crown
 				{ "i", 16688, 1 },	-- 1x Magister's Robes
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22065),	-- Sorcerer's Crown
@@ -393,11 +393,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { PALADIN },
 			cost = {
 				{ "i", 16722, 1 },	-- 1x Lightforge Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = { i(22088) },	-- Soulforge Bracers
 		},
@@ -411,12 +411,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PALADIN },
 			cost = {
 				{ "i", 16725, 1 },	-- 1x Lightforge Boots
 				{ "i", 16728, 1 },	-- 1x Lightforge Legplates
 				{ "i", 16729, 1 },	-- 1x Lightforge Spaulders
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22087),	-- Soulforge Boots
@@ -436,11 +436,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			}),
 			maps = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
-			classes = { PALADIN },
 			cost = {
 				{ "i", 16723, 1 },	-- 1x Lightforge Belt
 				{ "i", 16724, 1 },	-- 1x Lightforge Gauntlets
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22086),	-- Soulforge Belt
@@ -462,11 +462,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PALADIN },
 			cost = {
 				{ "i", 16726, 1 },	-- 1x Lightforge Breastplate
 				{ "i", 16727, 1 },	-- 1x Lightforge Helm
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22091),	-- Soulforge Helm
@@ -503,11 +503,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { PRIEST },
 			cost = {
 				{ "i", 16697, 1 },	-- 1x Devout Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = { i(22079) },	-- Virtuous Bracers
 		},
@@ -522,12 +522,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
 				{ "i", 16695, 1 },	-- 1x Devout Mantle
 				{ "i", 16691, 1 },	-- 1x Devout Sandals
 				{ "i", 16694, 1 },	-- 1x Devout Skirt
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22084),	-- Virtuous Sandals
@@ -550,11 +550,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
 				{ "i", 16696, 1 },	-- 1x Devout Belt
 				{ "i", 16692, 1 },	-- 1x Devout Gloves
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22078),	-- Virtuous Belt
@@ -576,11 +576,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
 				{ "i", 16693, 1 },	-- 1x Devout Crown
 				{ "i", 16690, 1 },	-- 1x Devout Robe
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22080),	-- Virtuous Crown
@@ -617,11 +617,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { ROGUE },
 			cost = {
 				{ "i", 16710, 1 },	-- 1x Shadowcraft Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = { i(22004) },	-- Darkmantle Bracers
 		},
@@ -632,12 +632,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { ROGUE },
 			cost = {
 				{ "i", 16711, 1 },	-- 1x Shadowcraft Boots
 				{ "i", 16709, 1 },	-- 1x Shadowcraft Pants
 				{ "i", 16708, 1 },	-- 1x Shadowcraft Spaulders
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22003),	-- Darkmantle Boots
@@ -659,11 +659,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { ROGUE },
 			cost = {
 				{ "i", 16713, 1 },	-- 1x Shadowcraft Belt
 				{ "i", 16712, 1 },	-- 1x Shadowcraft Gloves
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22006),	-- Darkmantle Gloves
@@ -685,11 +685,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { ROGUE },
 			cost = {
 				{ "i", 16707, 1 },	-- 1x Shadowcraft Cap
 				{ "i", 16721, 1 },	-- 1x Shadowcraft Tunic
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22005),	-- Darkmantle Cap
@@ -726,11 +726,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { SHAMAN },
 			cost = {
 				{ "i", 16671, 1 },	-- 1x Bindings of Elements
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = { i(22095) },	-- Bindings of The Five Thunders
 		},
@@ -744,12 +744,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
 				{ "i", 16670, 1 },	-- 1x Boots of Elements
 				{ "i", 16668, 1 },	-- 1x Kilt of Elements
 				{ "i", 16669, 1 },	-- 1x Pauldrons of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22096),	-- Boots of The Five Thunders
@@ -771,11 +771,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
 				{ "i", 16673, 1 },	-- 1x Cord of Elements
 				{ "i", 16672, 1 },	-- 1x Gauntlets of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22098),	-- Cord of The Five Thunders
@@ -797,11 +797,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
 				{ "i", 16667, 1 },	-- 1x Coif of Elements
 				{ "i", 16666, 1 },	-- 1x Vest of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22097),	-- Coif of The Five Thunders
@@ -838,11 +838,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { WARLOCK },
 			cost = {
 				{ "i", 16703, 1 },	-- 1x Dreadmist Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = { i(22071) },	-- Deathmist Bracers
 		},
@@ -853,12 +853,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { WARLOCK },
 			cost = {
 				{ "i", 16699, 1 },	-- 1x Dreadmist Leggings
 				{ "i", 16701, 1 },	-- 1x Dreadmist Mantle
 				{ "i", 16704, 1 },	-- 1x Dreadmist Sandals
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22076),	-- Deathmist Sandals
@@ -878,11 +878,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			}),
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { WARLOCK },
 			cost = {
 				{ "i", 16702, 1 },	-- 1x Dreadmist Belt
 				{ "i", 16705, 1 },	-- 1x Dreadmist Wraps
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22070),	-- Deathmist Belt
@@ -904,11 +904,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARLOCK },
 			cost = {
 				{ "i", 16698, 1 },	-- 1x Dreadmist Mask
 				{ "i", 16700, 1 },	-- 1x Dreadmist Robe
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22074),	-- Deathmist Mask
@@ -945,11 +945,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { WARRIOR },
 			cost = {
 				{ "i", 16735, 1 },	-- 1x Bracers of Valor
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = { i(21996) },	-- Bracers of Heroism
 		},
@@ -964,12 +964,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARRIOR },
 			cost = {
 				{ "i", 16734, 1 },	-- 1x Boots of Valor
 				{ "i", 16732, 1 },	-- 1x Legplates of Valor
 				{ "i", 16733, 1 },	-- 1x Spaulders of Valor
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = {
 				i(21995),	-- Boots of Heroism
@@ -992,11 +992,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARRIOR },
 			cost = {
 				{ "i", 16736, 1 },	-- 1x Belt of Valor
 				{ "i", 16737, 1 },	-- 1x Gauntlets of Valor
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = {
 				i(21994),	-- Belt of Heroism
@@ -1069,8 +1069,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8912,	-- An Earnest Proposition [WARRIOR]
 				},
 				qg = 16013,	-- Deliana
-				qi = 21985,	-- Sealed Blood Container
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
+				qi = 21985,	-- Sealed Blood Container
 			}),
 			hordeQuestData = q(8923, {	-- A Supernatural Device [H]
 				sourceQuests = {
@@ -1087,8 +1087,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8920,	-- An Earnest Proposition [WARRIOR]
 				},
 				qg = 16012,	-- Mokvar
-				qi = 22382,	-- Sealed Venom Container
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
+				qi = 22382,	-- Sealed Venom Container
 			}),
 			maps = { MAP.TANARIS },
 			lvl = 58,
@@ -1096,7 +1096,6 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 		q(8948, {	-- Anthion's Old Friend
 			sourceQuest = 8947,	-- Anthion's Strange Request
 			qg = 16016,	-- Anthion Harmon
-			qi = 21983,	-- Incomplete Banner of Provocation
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = {
 				MAP.DIRE_MAUL,
@@ -1106,6 +1105,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				238,	-- Prison of Immol'Thar
 			},
 			lvl = 58,
+			qi = 21983,	-- Incomplete Banner of Provocation
 		}),
 		q(8947, {	-- Anthion's Strange Request
 			sourceQuest = 8946,	-- Proof of Life

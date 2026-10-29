@@ -82,8 +82,8 @@ instanceroot(241, {	-- Zul'Farrak
 						{ 85.0, 10.2, MAP.UNDERCITY },
 					},
 				},
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(4787, {	-- The Ancient Egg
 				sourceQuest = 3527,	-- The Prophecy of Mosh'aru
@@ -105,8 +105,8 @@ instanceroot(241, {	-- Zul'Farrak
 				qg = 6169,	-- Klockmort Spannerspan
 				coord = { 68.2, 46.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(3527, {	-- The Prophecy of Mosh'aru
 				sourceQuest = 3520,	-- Screecher Spirits

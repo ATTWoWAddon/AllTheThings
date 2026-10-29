@@ -75,10 +75,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 		}),
 		n(QUESTS, {
 			q(99192, {	-- A Donation of Silk
-				-- Not yet available in game.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 26,
+				-- Not yet available in game.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(8233, {	-- A Simple Request
 				allianceQuestData = {
@@ -104,16 +104,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					},
 				},
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(96783, {	-- A Way In
 				qg = 13085,	-- Myrokos Silentform
 				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(522, {	-- Assassin's Contract
 				provider = { "i", 3668 },	-- Assassin's Contract
@@ -145,9 +145,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				sourceQuest = 96781,	-- What's the Big Idea?
 				qg = 13085,	-- Myrokos Silentform
 				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Blade of House Perenolde
 						provider = { "i", 275635 },	-- Blade of House Perenolde
@@ -198,12 +198,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(1712, {	-- Cyclonian
 				sourceQuest = 1791,	-- The Windwatcher
 				qg = 6176,	-- Bath'rah the Windwatcher
-				qi = 6929,	-- Bath'rah's Parchment
 				coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.ARATHI_HIGHLANDS, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 3357, 8 } },	-- 8x Liferoot
 				classes = { WARRIOR },
 				lvl = 30,
+				qi = 6929,	-- Bath'rah's Parchment
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
 						provider = { "i", 3901 },	-- Bloodscalp Tusk
@@ -231,8 +231,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 							{ "i", 4480, 8 },	-- 8x Thundering Charm
 						},
 						classes = { WARRIOR },
-						repeatable = true,
 						lvl = 30,
+						repeatable = true,
 						groups = {
 							objective(3, {	-- 0/1 Essence of the Exile
 								questID = 1712,	-- Cyclonian
@@ -268,13 +268,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 38.0, 37.8, MAP.ORGRIMMAR },	-- Searn Firewarder
 					{ 22.8, 19.4, MAP.THUNDER_BLUFF },	-- Beram Skychaser
 				},
-				races = HORDE_SHAMANS,
 				cost = {
 					{ "i", 7069, 1 },	-- 1x Elemental Air
 					{ "i", 7067, 1 },	-- 1x Elemental Earth
 					{ "i", 7068, 1 },	-- 1x Elemental Fire
 					{ "i", 7070, 1 },	-- 1x Elemental Water
 				},
+				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 50,
 			}),
@@ -318,11 +318,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(525, {	-- Further Mysteries
 				sourceQuest = 514,	-- Letter to Stormpike
 				qg = 1356,	-- Prospector Stormpike
-				qi = 3518,	-- Decrypted Letter
 				coord = { 74.4, 12.0, MAP.IRONFORGE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 3518,	-- Decrypted Letter
 			}),
 			q(503, {	-- Gol'dir
 				sourceQuest = 533,	-- Infiltration
@@ -360,8 +360,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 84.4, 80.3, MAP.ALTERAC_MOUNTAINS },
 				maxReputation = { FACTION_RAVENHOLDT, EXALTED },
 				cost = {{ "i", 16885, 5 }},	-- 5x Heavy Junkbox
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(20086),	-- Dusksteel Throwing Knife
 				},
@@ -369,10 +369,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(514, {	-- Letter to Stormpike
 				sourceQuest = 511,	-- Encrypted Letter
 				qg = 2277,	-- Loremaster Dibbs
-				qi = 3521,	-- Cleverly Encrypted Letter
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 3521,	-- Cleverly Encrypted Letter
 			}),
 			q(507, {	-- Lord Aliden Perenolde
 				sourceQuest = 506,	-- Blackmoore's Legacy
@@ -388,11 +388,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			q(98471, {	-- Message from the Supreme Magister
-				-- TODO: Wowhead doesn't list the quest giver yet. Meet Elaadrin Evengale at the cliffs overlooking The Uplands.
-				qi = 281330,	-- Message from the Supreme Magister (PQI!)
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				-- TODO: Wowhead doesn't list the quest giver yet. Meet Elaadrin Evengale at the cliffs overlooking The Uplands.
+				qi = 281330,	-- Message from the Supreme Magister (PQI!)
 			}),
 			q(512, {	-- Noble Deaths
 				sourceQuest = 510,	-- Foreboding Plans
@@ -419,9 +419,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 264265,	-- Magus Olvek
 				coord = { 9.4, 62.6, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.SCARLET_MONASTERY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The Lost Magic of the Runemasters
 						providers = {
@@ -479,18 +479,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(554, {	-- Stormpike's Deciphering
 				sourceQuest = 551,	-- The Ensorcelled Parchment
 				qg = 2277,	-- Loremaster Dibbs
-				qi = 3706,	-- Ensorcelled Parchment
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				qi = 3706,	-- Ensorcelled Parchment
 			}),
 			q(95534, {	-- Strahnbrad Mystery
 				qs = 213421,	-- Singed Note (QS!)
 				-- Turned in to Kundric Zanden (Alliance) or Shara Blazen (Horde) in Hillsbrad.
 				coord = { 59.4, 46.4, MAP.ALTERAC_MOUNTAINS },	-- Strahnbrad
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(277206),	-- Brilliant Cloak
 				},
@@ -518,16 +518,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				maxReputation = { FACTION_RAVENHOLDT, FRIENDLY },
 				cost = {{ "i", 17124, 1 }},	-- 1x Syndicate Emblem
 				classes = { ROGUE },
-				repeatable = true,
 				lvl = 24,
+				repeatable = true,
 			}),
 			q(96779, {	-- Syndicate Sabotage
 				qg = 13085,	-- Myrokos Silentform
 				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Lord Tomas slain
 						provider = { "n", 266216 },	-- Lord Tomas
@@ -538,10 +538,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(508, {	-- Taretha's Gift
 				sourceQuest = 507,	-- Lord Aliden Perenolde
 				qg = 2317,	-- Elysa
-				qi = 3498,	-- Taretha's Necklace
 				coord = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 3498,	-- Taretha's Necklace
 				groups = {
 					i(3765),	-- Brigand's Pauldrons
 					i(3764),	-- Mantis Boots
@@ -552,8 +552,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 57.60, 93.84, MAP.UNDERCITY },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 34,
+				isBreadcrumb = true,
 			}),
 			q(518, {	-- The Crown of Will (2/5)
 				sourceQuest = 495,	-- The Crown of Will (1/5)
@@ -613,10 +613,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(521, {	-- The Crown of Will (5/5)
 				sourceQuest = 520,	-- The Crown of Will (4/5)
 				qg = 2278,	-- Melisara
-				qi = 3554,	-- Crown of Will
 				coord = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 34,
+				qi = 3554,	-- Crown of Will
 				groups = {
 					i(4430),	-- Ethereal Talisman
 				},
@@ -683,9 +683,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(96781, {	-- What's the Big Idea?
 				qg = 13085,	-- Myrokos Silentform
 				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { ROGUE },
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Barton's Scouting Report
 						provider = { "i", 275482 },	-- Barton's Scouting Report
@@ -715,9 +715,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(99191, {	-- A Donation of Wool
 				qg = 276170,	-- Belanaa Windveil <High Order Cloth Quartermaster>
 				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/60 Wool Cloth
 						provider = { "i", 2592 },	-- Wool Cloth
@@ -844,8 +844,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			n(32337, {	-- Christi Stockton <Wine Vendor>
 				coord = { 20.0, 67.2, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(260631),	-- Arcane Wine
 					i(285362),	-- Red Wine Glass
@@ -869,8 +869,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			n(256372, {	-- Windle Sparkshine
 				coord = { 14.4, 66.4, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(285104),	-- Windle's Lighter
 				},
@@ -925,11 +925,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			i(213421, {	-- Singed Note (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					2318,	-- Argus Shadow Mage
 					2319,	-- Syndicate Wizard
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3703, {	-- Southshore Stout
 				cr = 2440,	-- Drunken Footpad

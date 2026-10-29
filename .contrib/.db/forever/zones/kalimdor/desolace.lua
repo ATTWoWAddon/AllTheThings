@@ -66,9 +66,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93041,	-- Facing the Truth
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(2, {	-- 0/3 Tear of Theradras
 						providers = {
@@ -84,8 +84,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Conqueror's Helm
 						providers = {
@@ -100,18 +100,18 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92754, {	-- A New Need for Shadow Protection
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Mirda in Magram Village.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				cost = { { "i", 13459, 3 } },	-- Greater Shadow Protection Potion
+				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(250979),	-- Recipe: Greater Spellblasting Potion
 					i(250985),	-- Recipe: Greater Frenzy Potion
 				},
 			}),
 			q(93678, {	-- Abridged Notes on Draenethyst
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Magtoor at the Harborage in Swamp of Sorrows.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Azore's Transcription
 						provider = { "i", 260518 },	-- Azore's Transcription
@@ -198,10 +198,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253163,	-- Grolkar
 				coord = { 69.6, 78.0, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = { { "i", 3855, 2 } },	-- Massive Iron Axe
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				cost = { { "i", 3855, 2 } },	-- Massive Iron Axe
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(251390),	-- Plans: Hard Gold Gauntlet
 					i(251458),	-- Plans: Iron Morningstar
@@ -275,8 +275,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 12336,	-- Brother Crowley
 				coord = { 42.4, 24.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 34,
+				isBreadcrumb = true,
 			}),
 			q(1385, {	-- Brutal Politics
 				description = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
@@ -289,9 +289,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5396,	-- Captain Pentigast
 				coord = { 66.4, 10.8, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Molkar
 						provider = { "i", 257685 },	-- Totem Tote
@@ -304,9 +304,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5412,	-- Gurda Wildmane
 				coord = { 56.2, 59.4, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, NEUTRAL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Molkar
 						provider = { "i", 257685 },	-- Totem Tote
@@ -318,9 +318,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93226, {	-- Buying Friendship: Magram [A]
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
 						provider = { "i", 257685 },	-- Totem Tote
@@ -333,9 +333,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5412,	-- Gurda Wildmane
 				coord = { 56.2, 59.4, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
 						provider = { "i", 257685 },	-- Totem Tote
@@ -347,9 +347,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93224, {	-- Carved Centaur Totems [A]
 				qg = 5396,	-- Captain Pentigast
 				coord = { 66.4, 10.8, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Carved Centaur Totem
 						provider = { "i", 254432 },	-- Carved Centaur Totem
@@ -359,9 +359,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93225, {	-- Carved Centaur Totems [H]
 				qg = 5412,	-- Gurda Wildmane
 				coord = { 56.2, 59.4, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Carved Centaur Totem
 						provider = { "i", 254432 },	-- Carved Centaur Totem
@@ -491,11 +491,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(1052, {	-- Down the Scarlet Path (2/2)
 				sourceQuest = 261,	-- Down the Scarlet Path (1/2)
 				qg = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
-				qi = 5539,	-- Letter of Commendation
 				coord = { 66.5, 7.9, MAP.DESOLACE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 34,
+				qi = 5539,	-- Letter of Commendation
 			}),
 			q(92812, {	-- Economic Warfare (Gelkis)
 				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
@@ -506,19 +506,19 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92811, {	-- Economic Warfare (Magram)
 				qg = 253139,	-- Gorhak <Magram Clan Quartermaster>
 				coord = { 66.2, 79.4, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- TODO: Wowhead doesn't list this quest's objectives yet.
 			}),
 			q(5421, {	-- Fish in a Bucket
 				description =
 					"You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",
-				cost = { { "i", 13545, 5 } },	-- Shellfish
-				repeatable = true,
 				qg = 11317,	-- Jinar'Zillen
 				coord = { 22.4, 73.0, MAP.DESOLACE },
+				cost = { { "i", 13545, 5 } },	-- Shellfish
 				races = HORDE_ONLY,
 				lvl = 25,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Shellfish
 						providers = {
@@ -604,9 +604,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(97265, {	-- Hate the Hatefury
 				qg = 268705,	-- Aka'rai
 				coord = { 25.2, 67.2, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 28,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/2 Hatefury Rogue slain
 						provider = { "n", 4670 },	-- Hatefury Rogue
@@ -629,18 +629,18 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(5763, {	-- Hunting in Stranglethorn
 				qg = 11877,	-- Roon Wildmane
-				qi = 14546,	-- Roon's Kodo Horn
 				coord = { 25.0, 72.2, MAP.DESOLACE },
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
 				lvl = 28,
+				qi = 14546,	-- Roon's Kodo Horn
 			}),
 			q(92814, {	-- I Need a Tailor
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Molkar in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				cost = { { "i", 10008, 1 } },	-- White Bandit Mask
+				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(254682),	-- Pattern: Stormcloth Gloves
 					i(253974),	-- Pattern: Silk Reagent Bag
@@ -671,8 +671,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
 						provider = { "i", 6077 },	-- Maraudine Key Fragment
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						coord = { 29.8, 52.8, MAP.DESOLACE },
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(6773),	-- Gelkis Marauder Chain
@@ -688,8 +688,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
 						provider = { "i", 6077 },	-- Maraudine Key Fragment
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						coord = { 29.8, 52.8, MAP.DESOLACE },
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(6788),	-- Magram Hunter's Belt
@@ -699,13 +699,13 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(96222, {	-- Khan Hratha (Umarak)
 				qg = 253066,	-- Umarak <Kolkar Clan>
 				coord = { 43.4, 78.6, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 35,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
 						provider = { "i", 6077 },	-- Maraudine Key Fragment
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						coord = { 29.6, 50.6, MAP.DESOLACE },
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(254432),	-- Carved Centaur Totem (x10)
@@ -737,9 +737,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn slain
 						provider = { "n", 5601 },	-- Khan Jehn
@@ -755,8 +755,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93188,	-- Return to Orgrul
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 35,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn resurrected
 						provider = { "i", 257517 },	-- Ultimate Necromancy Staff
@@ -802,9 +802,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92817, {	-- Leather Technique
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Talra in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				cost = { { "i", 5739, 1 } },	-- Barbaric Harness
+				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(252833),	-- Pattern: Mystic Thick Armor Kit
 					i(252883),	-- Pattern: Blue Suede Armor
@@ -819,10 +819,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(92755, {	-- Mysterious Mysticism
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Halea in Gelkis Village.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				cost = { { "i", 11135, 3 } },	-- Greater Mystic Essence
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				cost = { { "i", 11135, 3 } },	-- Greater Mystic Essence
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(249486),	-- Formula: Enchant Bracer - Lesser Agility
 					i(249489),	-- Formula: Enchant Bracer - Lesser Healing Power
@@ -832,9 +832,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93464,	-- The Visiting Mage
 				qg = 11863,	-- Azore Aldamort <The Argent Dawn>
 				coord = { 38.8, 27.2, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Gimashi's Findings
 						provider = { "i", 258774 },	-- Gimashi's Findings
@@ -1009,10 +1009,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(1467, {	-- Reagents for Reclaimers Inc. (4/4)
 				sourceQuest = 1466,	-- Reagents for Reclaimers Inc. (3/4)
 				qg = 5638,	-- Kreldig Ungor
-				qi = 6253,	-- Leftwitch's Package
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 6253,	-- Leftwitch's Package
 				groups = {
 					i(6793),	-- Auric Bracers
 					i(6794),	-- Stormfire Gauntlets / Tawny Gloves [LEGION+]
@@ -1022,8 +1022,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5637,	-- Roetten Stonehammer
 				coord = { 69.6, 21.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(1361, {	-- Regthar Deathgate
 				qgs = {
@@ -1036,8 +1036,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(1440, {	-- Return to Vahlarriel
 				sourceQuest = 1439,	-- Search for Tyranis
@@ -1107,9 +1107,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93044,	-- A Cleansing Cry
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Dispel the Accursed Skull
 						provider = { "i", 256057 },	-- Draenethyst Crystal
@@ -1141,8 +1141,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(1480, {	-- The Corrupter (1/5)
-				qi = 20310,	-- Flayed Demon Skin
 				races = HORDE_ONLY,
+				lvl = 25,
 				crs = {
 					4665,	-- Burning Blade Adept
 					4663,	-- Burning Blade Augur
@@ -1153,7 +1153,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					4667,	-- Burning Blade Shadowmage
 					4668,	-- Burning Blade Summoner
 				},
-				lvl = 25,
+				qi = 20310,	-- Flayed Demon Skin
 			}),
 			q(1481, {	-- The Corrupter (2/5)
 				sourceQuest = 1480,	-- The Corrupter (1/5)
@@ -1243,11 +1243,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(1457, {	-- The Karnitol Shipwreck (4/4)
 				sourceQuest = 1456,	-- The Karnitol Shipwreck (3/4)
 				qg = 5638,	-- Kreldig Ungor
-				qi = 6245,	-- Karnitol's Satchel
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 6245,	-- Karnitol's Satchel
 				groups = {
 					i(6791),	-- Hellion Boots
 					i(6792),	-- Sanguine Pauldrons
@@ -1286,9 +1286,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(97284, {	-- Vahlarriel's Vengeance
 				qg = 5642,	-- Vahlarriel Demonslayer
 				coord = { 66.4, 11.4, MAP.DESOLACE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/4 Burning Blade Augur slain
 						provider = { "n", 4663 },	-- Burning Blade Augur

@@ -89,8 +89,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7763,	-- Curgle Cranklehop
 				coord = { 52.2, 26.8, MAP.TANARIS },
 				cost = { { "i", 8646, 1 } },	-- Bad Egg
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 			}),
 			q(7652, {	-- A Blue Light Bargain
 				qg = 14567,	-- Derotain Mudsipper
@@ -104,8 +104,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7763,	-- Curgle Cranklehop
 				coord = { 52.2, 26.8, MAP.TANARIS },
 				cost = { { "i", 8644, 1 } },	-- Fine Egg
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 				groups = {
 					i(9540),	-- Box of Spells
 				},
@@ -130,8 +130,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7763,	-- Curgle Cranklehop
 				coord = { 52.2, 26.8, MAP.TANARIS },
 				cost = { { "i", 8643, 1 } },	-- Extraordinary Egg
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 				groups = {
 					i(9541),	-- Box of Goodies
 				},
@@ -141,8 +141,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7763,	-- Curgle Cranklehop
 				coord = { 52.2, 26.8, MAP.TANARIS },
 				cost = { { "i", 8645, 1 } },	-- Ordinary Egg
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 				groups = {
 					i(9539),	-- Box of Rations
 				},
@@ -152,8 +152,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				cost = { { "i", 8483, 10 } },	-- Wastewander Water Pouch
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 38,
+				repeatable = true,
 				groups = {
 					i(8524),	-- Model 4711-FTZ Power Source
 				},
@@ -235,8 +235,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					{ "i", 9253, 1 },	-- Middle Map Fragment
 					{ "i", 9252, 1 },	-- Lower Map Fragment
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/1 Cuergo's Key
 						provider = { "i", 9275 },	-- Cuergo's Key
@@ -258,16 +258,16 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(2661, {	-- Delivery for Marin
 				sourceQuest = 2641,	-- Sprinkle's Secret Ingredient
 				qg = 7583,	-- Sprinkle
-				qi = 8528,	-- Violet Powder
 				coord = { 51.0, 26.8, MAP.TANARIS },
 				lvl = 44,
+				qi = 8528,	-- Violet Powder
 			}),
 			q(2874, {	-- Deliver to MacKinley
 				sourceQuest = 2873,	-- Stoley's Shipment
 				qg = 7881,	-- Stoley
-				qi = 9245,	-- Stoley's Bottle
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 40,
+				qi = 9245,	-- Stoley's Bottle
 				groups = {
 					i(9636),	-- Swashbuckler Sash
 					i(9637),	-- Shinkicker Boots
@@ -290,8 +290,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(351, {	-- Find OOX-17/TN!
 				description = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
-				qi = 8623,	-- OOX-17/TN Distress Beacon
 				lvl = 43,
+				qi = 8623,	-- OOX-17/TN Distress Beacon
 			}),
 			q(992, {	-- Gadgetzan Water Survey
 				qg = 7724,	-- Senior Surveyor Fizzledowser
@@ -325,11 +325,11 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(3022, {	-- Handle With Care
 				qg = 7763,	-- Curgle Cranklehop
-				qi = 9507,	-- A Carefully-packed Crate
 				coord = { 52.2, 26.8, MAP.TANARIS },
 				maps = { MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 42,
+				qi = 9507,	-- A Carefully-packed Crate
 			}),
 			q(7653, {	-- Imperial Plate Belt
 				sourceQuest = 7652,	-- A Blue Light Bargain
@@ -418,9 +418,9 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(2606, {	-- In Good Taste
 				sourceQuest = 2605,	-- The Thirsty Goblin
 				qg = 7564,	-- Marin Noggenfogger
-				qi = 8603,	-- Thistleshrub Dew
 				coord = { 51.8, 28.6, MAP.TANARIS },
 				lvl = 44,
+				qi = 8603,	-- Thistleshrub Dew
 			}),
 			q(110, {	-- Insect Part Analysis (1/2)
 				sourceQuest = 10,	-- The Scrimshank Redemption
@@ -431,9 +431,9 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(113, {	-- Insect Part Analysis (2/2)
 				sourceQuest = 110,	-- Insect Part Analysis (1/2)
 				qg = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
-				qi = 8594,	-- Insect Analysis Report
 				coord = { 50.9, 27.0, MAP.TANARIS },
 				lvl = 39,
+				qi = 8594,	-- Insect Analysis Report
 			}),
 			q(3914, {	-- Linken's Sword
 				sourceQuest = 3913,	-- A Grave Situation
@@ -452,8 +452,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				cost = { { "g", 20000 } },	-- 2g
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				repeatable = true,
 				lvl = 30,
+				repeatable = true,
 				groups = {
 					i(10791),	-- Goblin Engineer Membership Card
 				},
@@ -553,11 +553,11 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(864, {	-- Return to Apothecary Zinge
 				sourceQuest = 654,	-- Tanaris Field Sampling
 				qg = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
-				qi = 8527,	-- Sealed Field Testing Kit
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8527,	-- Sealed Field Testing Kit
 				groups = {
 					i(11502),	-- Loreskin Shoulders
 					i(9635),	-- Master Apothecary Cape
@@ -595,8 +595,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(2876, {	-- Ship Schedules
-				qi = 9250,	-- Ship Schedule
 				lvl = 40,
+				qi = 9250,	-- Ship Schedule
 			}),
 			q(3639, {	-- Show Your Work
 				sourceQuest = 3638,	-- The Pledge of Secrecy
@@ -666,8 +666,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(2872, {	-- Stoley's Debt
 				qg = 2501,	-- "Sea Wolf" MacKinley
 				coord = { 27.8, 77.0, MAP.STRANGLETHORN_VALE },
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(2873, {	-- Stoley's Shipment
 				sourceQuest = 2872,	-- Stoley's Debt
@@ -874,8 +874,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				provider = { "o", 142071 },	-- Egg-O-Matic
 				maps = { MAP.FERALAS },
 				cost = { { "i", 8564, 1 } },	-- Hippogryph Egg
-				repeatable = true,
 				lvl = 42,
+				repeatable = true,
 				groups = {
 					i(8647, {	-- Egg Crate
 						groups = {
@@ -960,8 +960,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			q(2864, {	-- Tran'rek
 				qg = 773,	-- Krazek
 				coord = { 51.6, 26.8, MAP.STRANGLETHORN_VALE },
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(2875, {	-- WANTED: Andre Firebeard
 				providers = {
@@ -1011,8 +1011,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					{ "i", 4338, 40 },	-- Mageweave Cloth
 					{ "i", 3466, 4 },	-- Strong Flux
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(1690, {	-- Wastewander Justice
 				qg = 7407,	-- Chief Engineer Bilgewhizzle
@@ -1041,8 +1041,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7408,	-- Spigot Operator Luglunket
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				cost = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 				groups = {
 					i(8484),	-- Gadgetzan Water Co. Care Package
 				},

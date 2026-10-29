@@ -181,8 +181,8 @@ instanceroot(239, {	-- Uldaman
 					{ "i", 1708, 1 },	-- Sweet Nectar
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 37,
+				repeatable = true,
 				groups = {
 					i(7667),	-- Talvash's Phial of Scrying
 				},
@@ -264,8 +264,8 @@ instanceroot(239, {	-- Uldaman
 				qg = 1356,	-- Prospector Stormpike
 				coord = { 74.6, 11.7, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(1139, {	-- The Lost Tablets of Will
 				sourceQuest = 762,	-- An Ambassador of Evil

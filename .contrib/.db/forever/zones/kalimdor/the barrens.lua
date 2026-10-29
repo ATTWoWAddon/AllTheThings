@@ -124,9 +124,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 46.4, 73.9, THE_BARRENS },
 					{ 37.5, 50.8, WESTFALL },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(2459),	-- Swiftness Potion
 					i(3388),	-- Lesser Troll's Blood Elixir
@@ -157,8 +157,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(5042, {	-- Agamaggan's Strength
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
@@ -166,8 +166,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(880, {	-- Altered Beings
 				sourceQuest = 877,	-- The Stagnant Oasis
@@ -185,11 +185,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(853, {	-- Apothecary Zamah
 				sourceQuest = 848,	-- Fungal Spores
 				qg = 3390,	-- Apothecary Helbrim
-				qi = 5027,	-- Rendered Spores
 				coord = { 51.44, 30.15, MAP.THE_BARRENS },
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 5027,	-- Rendered Spores
 				groups = {
 					i(2458),	-- Elixir of Minor Fortitude
 					i(2457),	-- Elixir of Minor Agility
@@ -225,10 +225,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(906, {	-- Betrayal from Within (2/2)
 				sourceQuest = 879,	-- Betrayal from Within (1/2)
 				qg = 3430,	-- Mangletooth
-				qi = 5072,	-- Lok's Skull
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 17,
+				qi = 5072,	-- Lok's Skull
 				groups = {
 					i(5316),	-- Barkshell Tunic
 					i(5317),	-- Dry Moss Tunic
@@ -245,13 +245,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1838, {	-- Brutal Armor
 				sourceQuest = 1825,	-- Speak with Thun'grim
 				qg = 5878,	-- Thun'grim Firegaze
-				qi = 7587,	-- Thun'grim's Instructions
 				coord = { 57.23, 30.34, MAP.THE_BARRENS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS, MAP.RAZORFEN_KRAUL, MAP.STONETALON_MOUNTAINS },
 				cost = { { "i", 3575, 10 } },	-- 10x Iron Bar
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
+				qi = 7587,	-- Thun'grim's Instructions
 				groups = {
 					objective(1, {	-- 0/15 Smoky Iron Ingot
 						provider = { "i", 7126 },	-- Smoky Iron Ingot
@@ -278,8 +278,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 1838,	-- Brutal Armor
 				qg = 5878,	-- Thun'grim Firegaze
 				coord = { 57.23, 30.34, MAP.THE_BARRENS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(7133),	-- Brutal Hauberk
@@ -288,34 +288,34 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1522, {	-- Call of Fire (1/5) [Orgrimmar]
 				qg = 5892,	-- Searn Firewarder
 				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1523, {	-- Call of Fire (1/5) [Thunder Bluff]
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(2983, {	-- Call of Fire (1/5) [Durotar]
 				qg = 3173,	-- Swart <Shaman Trainer>
 				coord = { 54.4, 42.6, MAP.DUROTAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(2984, {	-- Call of Fire (1/5) [Mulgore]
 				qg = 3066,	-- Narm Skychaser <Shaman Trainer>
 				coord = { 48.4, 59.2, MAP.MULGORE },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1524, {	-- Call of Fire (2/5)
 				sourceQuests = {
@@ -360,11 +360,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1526, {	-- Call of Fire (4/5)
 				sourceQuest = 1525,	-- Call of Fire (3/5)
 				qg = 5900,	-- Telf Joolam
-				qi = 6653,	-- Torch of the Dormant Flame
 				coord = { 38.6, 58.8, MAP.DUROTAR },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
+				qi = 6653,	-- Torch of the Dormant Flame
 				groups = {
 					objective(1, {	-- 0/1 Glowing Ember
 						providers = {
@@ -394,34 +394,34 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(2985, {	-- Call of Water (1/9) [Durotar]
 				qg = 3173,	-- Swart <Shaman Trainer>
 				coord = { 54.4, 42.6, MAP.DUROTAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(2986, {	-- Call of Water (1/9) [Mulgore]
 				qg = 3066,	-- Narm Skychaser <Shaman Trainer>
 				coord = { 48.4, 59.2, MAP.MULGORE },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1528, {	-- Call of Water (1/9) [Orgrimmar]
 				qg = 5892,	-- Searn Firewarder
 				coord = { 38.0, 37.7, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1529, {	-- Call of Water (1/9) [Thunder Bluff]
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 20.5, MAP.THUNDER_BLUFF },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1530, {	-- Call of Water (2/9)
 				sourceQuests = {
@@ -432,16 +432,16 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 			}),
 			q(1535, {	-- Call of Water (3/9)
 				sourceQuest = 1530,	-- Call of Water (2/9)
 				qg = 5899,	-- Brine
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Brown Waterskin
@@ -458,8 +458,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5899,	-- Brine
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Red Waterskin
@@ -476,8 +476,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5899,	-- Brine
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
 				maps = { MAP.ASHENVALE },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Blue Waterskin
@@ -492,11 +492,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(220, {	-- Call of Water (6/9)
 				sourceQuest = 1534,	-- Call of Water (5/9)
 				qg = 5899,	-- Brine
-				qi = 7810,	-- Vial of Purest Water
 				coord = { 43.4, 77.4, MAP.THE_BARRENS },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
+				qi = 7810,	-- Vial of Purest Water
 				groups = {
 					i(6637),	-- Water Sapta
 				},
@@ -506,8 +506,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
 				maps = { MAP.SILVERPINE_FOREST },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Corrupt Manifestation's Bracers
@@ -524,18 +524,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuests = { 63 },	-- Call of Water (7/9)
 				provider = { "o", 113791 },	-- Brazier of Everfount
 				coord = { 38.3, 44.6, MAP.SILVERPINE_FOREST },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
 			}),
 			q(96, {	-- Call of Water (9/9)
 				sourceQuest = 100,	-- Call of Water (8/9)
 				qg = 5895,	-- Minor Manifestation of Water
-				qi = 7813,	-- Shard of Water
 				coord = { 38.6, 44.6, MAP.SILVERPINE_FOREST },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 20,
+				qi = 7813,	-- Shard of Water
 				groups = {
 					recipe(5394),	-- Healing Stream Totem
 					i(5177, {	-- Water Totem
@@ -547,10 +547,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 100,	-- Call of Water (8/9)
 				qg = 7007,	-- Tiev Mordune
 				coord = { 37.3, 44.1, MAP.SILVERPINE_FOREST },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				repeatable = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				repeatable = true,
 				groups = {
 					i(6637),	-- Water Sapta
 				},
@@ -645,8 +645,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3292,	-- Brewmaster Drohn
 				coord = { 62.27, 38.39, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 11,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Lightning Gland
 						provider = { "i", 4898 },	-- Lightning Gland
@@ -672,9 +672,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(97005, {	-- Chol'aruk the Ravener (A)
 				qg = 267309,	-- Bainham
 				coord = { 61.8, 39.4, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Chol'aruk's Head
 						provider = { "i", 276070 },	-- Chol'aruk's Head
@@ -690,9 +690,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(97003, {	-- Chol'aruk the Ravener (H)
 				qg = 267310,	-- Gur'ak
 				coord = { 52.6, 29.0, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Chol'aruk's Head
 						provider = { "i", 276070 },	-- Chol'aruk's Head
@@ -876,8 +876,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				races = { HUMAN, GNOME },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(862, {	-- Dig Rat Stew
 				qg = 3443,	-- Grub
@@ -913,19 +913,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1515, {	-- Dogran's Captivity
 				sourceQuest = 1511,	-- Ken'zigla's Draught
 				qg = 5911,	-- Grunt Logmar
-				qi = 6624,	-- Ken'zigla's Draught
 				coord = { 44.6, 59.2, MAP.THE_BARRENS },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				lvl = 20,
+				qi = 6624,	-- Ken'zigla's Draught
 			}),
 			q(6385, {	-- Doras the Wind Rider Master
 				sourceQuest = 6384,	-- Ride to Orgrimmar
 				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
-				qi = 16307,	-- Gryshka's Letter
 				coord = { 54.09, 68.43, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
 				lvl = 10,
+				qi = 16307,	-- Gryshka's Letter
 			}),
 			q(881, {	-- Echeyakee
 				sourceQuest = 903,	-- Prowlers of the Barrens
@@ -980,9 +980,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(98093, {	-- Field to Clear
 				qg = 14242,	-- Sulhasa
 				coord = { 47.9, 77.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Hecklefang Stalker slain
 						provider = { "n", 4128 },	-- Hecklefang Stalker
@@ -1114,12 +1114,12 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = ALLIANCE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines
 			}),
 			q(3637, {	-- Gnome Engineering [H]
 				altQuests = {
@@ -1134,12 +1134,12 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines
 			}),
 			q(3633, {	-- Goblin Engineering [H]
 				altQuests = {
@@ -1154,12 +1154,12 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 3494,	-- Tinkerwiz <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 62.6, 36.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines
 			}),
 			q(875, {	-- Harpy Lieutenants
 				sourceQuest = 867,	-- Harpy Raiders
@@ -1251,34 +1251,34 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(4736, {	-- In Search of Menara Voidrender (Ironforge)
 				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 31,
+				isBreadcrumb = true,
 			}),
 			q(4737, {	-- In Search of Menara Voidrender (Orgrimmar)
 				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 31,
+				isBreadcrumb = true,
 			}),
 			q(4738, {	-- In Search of Menara Voidrender (Stormwind)
 				qg = 461,	-- Demisette Cloyce <Warlock Trainer>
 				coord = { 39.6, 84.6, MAP.STORMWIND_CITY },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 31,
+				isBreadcrumb = true,
 			}),
 			q(4739, {	-- In Search of Menara Voidrender (Undercity)
 				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 31,
+				isBreadcrumb = true,
 			}),
 			q(858, {	-- Ignition
 				qg = 3439,	-- Wizzlecrank's Shredder
@@ -1346,40 +1346,40 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3418,	-- Kirge Sternhorn
 				coord = { 44.8, 58.6, MAP.THE_BARRENS },
 				races = { TAUREN },
-				isBreadcrumb = true,
 				lvl = 9,
+				isBreadcrumb = true,
 			}),
 			q(4967, {	-- Knowledge of the Orb of Orahil [Orgrimmar]
 				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(4965, {	-- Knowledge of the Orb of Orahil [Ironforge]
 				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(4968, {	-- Knowledge of the Orb of Orahil [Stormwind]
 				qg = 461,	-- Demisette Cloyce <Warlock Trainer>
 				coord = { 39.6, 84.6, MAP.STORMWIND_CITY },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(4969, {	-- Knowledge of the Orb of Orahil [Undercity]
 				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(850, {	-- Kolkar Leaders
 				qg = 3389,	-- Regthar Deathgate
@@ -1398,8 +1398,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				provider = { "i", 5099 },	-- Hoof of Lakota'mani
 				coord = { 47.6, 51.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				cr = 3474,	-- Lakota'mani
 				lvl = 10,
+				cr = 3474,	-- Lakota'mani
 			}),
 			q(96339, {	-- Legacy Reward: Replica Ironforge Air Rifle
 				description = "Requires you to earn a total of 15 Legacy Points.",
@@ -1444,10 +1444,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1060, {	-- Letter to Jin'Zil
 				sourceQuest = 876,	-- Serena Bloodfeather
 				qg = 3449,	-- Darsok Swiftdagger
-				qi = 5594,	-- Letter to Jin'Zil
 				coord = { 51.62, 30.90, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 15,
+				qi = 5594,	-- Letter to Jin'Zil
 			}),
 			q(4921, {	-- Lost in Battle
 				qg = 3432,	-- Mankrik
@@ -1464,11 +1464,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(1512, {	-- Love's Gift
 				sourceQuest = 1515,	-- Dogran's Captivity
 				qg = 5908,	-- Grunt Dogran
-				qi = 6625,	-- Dirt-caked Pendant
 				coord = { 43.2, 47.8, MAP.THE_BARRENS },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				lvl = 20,
+				qi = 6625,	-- Dirt-caked Pendant
 			}),
 			q(874, {	-- Mahren Skyseer
 				sourceQuest = 913,	-- Cry of the Thunderhawk
@@ -1479,10 +1479,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(6365, {	-- Meats to Orgrimmar
 				qg = 3489,	-- Zargh <Butcher>
-				qi = 16306,	-- Zargh's Meats
 				coord = { 52.62, 29.84, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
 				lvl = 10,
+				qi = 16306,	-- Zargh's Meats
 			}),
 			q(3646, {	-- Membership Card Renewal
 				sourceQuest = 3639,	-- Show Your Work
@@ -1491,8 +1491,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				cost = { { "g", 20000 } },	-- 2g
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				repeatable = true,
 				lvl = 30,
+				repeatable = true,
 				groups = {
 					i(10791),	-- Goblin Engineer Membership Card
 				},
@@ -1500,13 +1500,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(9267, {	-- Mending Old Wounds
 				qg = 16418,	-- Mupsi Shacklefridd
 				coord = { 61.22, 37.86, MAP.THE_BARRENS },
-				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 				cost = {
 					{ "i", 3371, 4 },	-- 4x Empty Vial
 					{ "i", 2589, 40 },	-- 40x Linen Cloth
 				},
-				repeatable = true,
 				lvl = 10,
+				repeatable = true,
+				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 			}),
 			q(896, {	-- Miner's Fortune
 				qg = 3453,	-- Wharfmaster Dizzywig
@@ -1531,8 +1531,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 2458,	-- Deep Cover
 				qg = 7233,	-- Taskmaster Fizzule
 				coord = { 55.4, 5.6, MAP.THE_BARRENS },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/2 Mutated Venture Co. Drone slain
@@ -1586,8 +1586,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 1509,	-- News of Dogran (1/2)
 				qg = 3464,	-- Gazrog
 				coord = { 51.8, 30.2, MAP.THE_BARRENS },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
 			}),
 			q(3922, {	-- Nugget Slugs
@@ -1618,14 +1618,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				provider = { "i", 5102 },	-- Owatanka's Tailspike
 				coord = { 49.6, 59.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				cr = 3473,	-- Owatanka
 				lvl = 10,
+				cr = 3473,	-- Owatanka
 			}),
 			q(97253, {	-- Parts and Pieces
 				qg = 7161,	-- Wrenix the Wretched
 				coord = { 63.0, 36.4, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Handful of Complicated Parts
 						providers = {
@@ -1748,38 +1748,38 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(6541, {	-- Report to Kadrak (The Barrens)
 				qg = 3429,	-- Thork
 				coord = { 51.50, 30.86, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(6542, {	-- Report to Kadrak (Stonetalon Mountains)
 				qg = 11821,	-- Darn Talongrip
 				coord = { 73.23, 94.91, MAP.STONETALON_MOUNTAINS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(6386, {	-- Return to the Crossroads.
 				sourceQuest = 6385,	-- Doras the Wind Rider Master
 				qg = 3310,	-- Doras <Wind Rider Master>
-				qi = 16307,	-- Gryshka's Letter
 				coord = { 45.21, 63.58, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
 				lvl = 10,
+				qi = 16307,	-- Gryshka's Letter
 			}),
 			q(4976, {	-- Returning the Cleansed Orb
 				sourceQuest = 4961,	-- Cleansing of the Orb of Orahil
 				qg = 6546,	-- Tabetha
-				qi = 12642,	-- Cleansed Infernal Orb
 				coord = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 				classes = { WARLOCK },
 				lvl = 35,
+				qi = 12642,	-- Cleansed Infernal Orb
 			}),
 			q(846, {	-- Revenge of Gann (1/2)
 				sourceQuest = 843,	-- Gann's Reclamation
@@ -1834,18 +1834,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(6384, {	-- Ride to Orgrimmar
 				sourceQuest = 6365,	-- Meats to Orgrimmar
 				qg = 3615,	-- Devrak <Wind Rider Master>
-				qi = 16306,	-- Zargh's Meats
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
 				lvl = 10,
+				qi = 16306,	-- Zargh's Meats
 			}),
 			q(3923, {	-- Rilli Greasygob
 				sourceQuest = 3922,	-- Nugget Slugs
 				qg = 9316,	-- Wenikee Boltbucket
-				qi = 11146,	-- Broken and Battered Samophlange
 				coord = { 49.05, 11.17, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 11146,	-- Broken and Battered Samophlange
 			}),
 			q(5045, {	-- Rising Spirit
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
@@ -1853,8 +1853,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(866, {	-- Root Samples
 				qg = 3446,	-- Mebok Mizzyrix
@@ -1871,9 +1871,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(894, {	-- Samophlange (1/4)
 				qg = 3442,	-- Sputtervalve <Tinkers' Union>
-				qi = 5088,	-- Control Console Operating Manual
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				lvl = 10,
+				qi = 5088,	-- Control Console Operating Manual
 			}),
 			q(900, {	-- Samophlange (2/4)
 				sourceQuest = 894,	-- Samophlange (1/4)
@@ -1954,24 +1954,24 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(1798, {	-- Seeking Strahad (Stormwind)
 				qg = 6122,	-- Gakin the Darkbinder
 				coord = { 39.2, 85.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(3001, {	-- Seeking Strahad (Undercity)
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(876, {	-- Serena Bloodfeather
 				sourceQuests = { 875 },	-- Harpy Lieutenants
@@ -1995,8 +1995,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3441,	-- Melor Stonehoof
 				coord = { 61.52, 80.91, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(4962, {	-- Shard of a Felhound
 				altQuests = { 4963 },	-- Shard of an Infernal
@@ -2042,9 +2042,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			q(95819, {	-- Sign Me Up!
 				qs = 270887,	-- Advertising License Application (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- Turned in to Jornah <Contract Coordinator> (256388).
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
 						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
@@ -2093,8 +2093,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 10 } },	-- 10x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(79192, {	-- Stepping Stones
 				sourceQuests = {
@@ -2109,9 +2109,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 46.4, 73.8, THE_BARRENS },
 					{ 37.5, 50.8, WESTFALL },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { STONETALON_MOUNTAINS },
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(3334),	-- Farmer's Shovel
 					i(221498),	-- Old Toolbox
@@ -2166,34 +2166,34 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(4487, {	-- Summon Felsteed (1/2) (Ironforge)
 				qg = 5172,	-- Briarthorn <Warlock Trainer>
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(3631, {	-- Summon Felsteed (1/2) (Orgrimmar)
 				qg = 3326,	-- Zevrost <Warlock Trainer>
 				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(4488, {	-- Summon Felsteed (1/2) (Stormwind)
 				qg = 461,	-- Demisette Cloyce <Warlock Trainer>
 				coord = { 39.6, 84.6, MAP.STORMWIND_CITY },
-				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(4489, {	-- Summon Felsteed (1/2) (Undercity)
 				qg = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 				coord = { 86.0, 15.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { WARLOCK },
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(4490, {	-- Summon Felsteed (2/2)
 				sourceQuests = {
@@ -2268,8 +2268,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 5769,	-- Arch Druid Hamuul Runetotem
 				coord = { 78.63, 28.56, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1795, {	-- The Binding (Felhunter)
 				allianceQuestData = {
@@ -2299,8 +2299,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 6266,	-- Menara Voidrender
 				coord = { 62.4, 35.4, MAP.THE_BARRENS },
 				classes = { WARLOCK },
-				lockCriteria = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 				lvl = 35,
+				lockCriteria = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 				groups = {
 					i(15108),	-- Orb of Dar'Orahil
 					i(15106),	-- Staff of Dar'Orahil
@@ -2314,8 +2314,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 6266,	-- Menara Voidrender
 				coord = { 62.4, 35.4, MAP.THE_BARRENS },
 				classes = { WARLOCK },
-				lockCriteria = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 				lvl = 35,
+				lockCriteria = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 				groups = {
 					i(15107),	-- Orb of Noh'Orahil
 					i(15105),	-- Staff of Noh'Orahil
@@ -2433,16 +2433,16 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(890, {	-- The Missing Shipment (1/2)
 				sourceQuest = 887,	-- Southsea Freebooters
 				qg = 3391,	-- Gazlowe
-				qi = 5080,	-- Gazlowe's Ledger
 				coord = { 62.68, 36.24, MAP.THE_BARRENS },
 				lvl = 9,
+				qi = 5080,	-- Gazlowe's Ledger
 			}),
 			q(892, {	-- The Missing Shipment (2/2)
 				sourceQuest = 890,	-- The Missing Shipment (1/2)
 				qg = 3453,	-- Wharfmaster Dizzywig
-				qi = 5080,	-- Gazlowe's Ledger
 				coord = { 63.35, 38.45, MAP.THE_BARRENS },
 				lvl = 9,
+				qi = 5080,	-- Gazlowe's Ledger
 			}),
 			q(3513, {	-- The Runed Scroll
 				provider = { "i", 10621 },	-- Runed Scroll
@@ -2486,8 +2486,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 68.6, 49.0, MAP.THE_BARRENS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(845, {	-- The Zhevra
 				sourceQuest = 844,	-- Plainstrider Menace
@@ -2566,14 +2566,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				allianceQuestData = q(1804, {	-- Tome of the Cabal (3/3) (A)
 					sourceQuest = 1802,	-- Tome of the Cabal (2/3) (A)
 					qg = 6294,	-- Krom Stoutarm
-					qi = 7006,	-- Reconstructed Tome
 					coord = { 74.4, 9.4, MAP.IRONFORGE },
+					qi = 7006,	-- Reconstructed Tome
 				}),
 				hordeQuestData = q(1805, {	-- Tome of the Cabal (3/3) (H)
 					sourceQuest = 1803,	-- Tome of the Cabal (2/3) (H)
 					qg = 6293,	-- Jorah Annison
-					qi = 7006,	-- Reconstructed Tome
 					coord = { 76.6, 36.8, MAP.UNDERCITY },
+					qi = 7006,	-- Reconstructed Tome
 				}),
 				maps = { MAP.WETLANDS },
 				classes = { WARLOCK },
@@ -2712,9 +2712,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(95508, {	-- Unwelcome Guests
 				qg = 261366,	-- Walton <Tanner>
 				coord = { 42.0, 11.4, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- Objective: help Walton survive the encounter with Terry Longdrink and the Kul Tiras marines.
 				groups = {
 					i(269716),	-- Keen Skinning Knife
@@ -2797,8 +2797,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(92706, {	-- WANTED: Bruuz
 				provider = { "o", 3972 },	-- WANTED
 				coord = { 62.59, 37.47, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Bruuz's Dorsal Fin
 						provider = { "i", 253710 },	-- Bruuz's Dorsal Fin
@@ -2811,17 +2811,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				provider = { "i", 5103 },	-- Washte Pawne's Feather
 				coord = { 44.8, 78.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				cr = 3472,	-- Washte Pawne
 				lvl = 10,
+				cr = 3472,	-- Washte Pawne
 			}),
 			q(972, {	-- Water Sapta [The Barrens]
 				sourceQuest = 220,	-- Call of Water (6/9)
 				qg = 5901,	-- Islen Waterseer
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				repeatable = true,
+				classes = { SHAMAN },
 				lvl = 20,
+				repeatable = true,
 				groups = {
 					i(6637),	-- Water Sapta
 				},
@@ -2848,17 +2848,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(3921, {	-- Wenikee Boltbucket
 				sourceQuest = 902,	-- Samophlange (4/4)
 				qg = 3442,	-- Sputtervalve <Tinkers' Union>
-				qi = 11142,	-- Broken Samophlange
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 11142,	-- Broken Samophlange
 			}),
 			q(1492, {	-- Wharfmaster Dizzywig
 				qg = 3390,	-- Apothecary Helbrim
-				qi = 6462,	-- Secure Crate
 				coord = { 51.44, 30.15, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 9,
+				qi = 6462,	-- Secure Crate
 			}),
 			q(5044, {	-- Wisdom of Agamaggan
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
@@ -2866,8 +2866,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 14,
+				repeatable = true,
 			}),
 			q(97250, {	-- Wrongly Blamed, Justly Corrected
 				qg = 5911,	-- Grunt Logmar
@@ -2942,8 +2942,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			n(3672, {	-- Boahn <Druid of the Fang>
-				coord = { 49.1, 33.9, MAP.THE_BARRENS },
 				description = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
+				coord = { 49.1, 33.9, MAP.THE_BARRENS },
 				groups = {
 					i(5423),	-- Boahn's Fang
 					i(5422),	-- Brambleweed Leggings
@@ -3260,20 +3260,20 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 		n(VENDORS, {
 			n(248196, {	-- Apothecary Durelle <Alchemist>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(248199, {	-- Beneris <Enchanter>
 				coord = { 49.6, 29.8, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(248200, {	-- Fizzlefuse <Opportunist Engineer>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
@@ -3286,8 +3286,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(256384, {	-- Gishah <Supply Officer>
 				coord = { 49.4, 29.4, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(270887, {	-- Advertising License Application (QS!)
 						minReputation = { 2587, HONORED },	-- Durotar Supply and Logistics, Honored.
@@ -3305,8 +3305,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(248197, {	-- Gor'mak <Blacksmith>
 				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
@@ -3391,8 +3391,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(248202, {	-- Jim'bek <Tailor>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3683, {	-- Kiknikle <Stylish Clothier>
@@ -3427,11 +3427,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 			}),
 			n(3658, {	-- Lizzarik <Weapon Dealer>
+				description = "Travels on the road between Ratchet and The Crossroads.",
 				coords = {
 					{ 52.4, 30.6, MAP.THE_BARRENS },
 					{ 61.8, 38.2, MAP.THE_BARRENS },
 				},
-				description = "Travels on the road between Ratchet and The Crossroads.",
 				groups = {
 					i(4765, {	-- Enamelled Broadsword
 						isLimited = true,
@@ -3461,8 +3461,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(256400, {	-- Okamache <Kodo Handler>
 				coord = { 49.6, 28.8, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(262766, {	-- Reins of the Pack Kodo (MOUNT!)
 						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
@@ -3472,8 +3472,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(248201, {	-- Pawani <Leatherworker>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3684, {	-- Pizznukle <Leather Armor Merchant>
@@ -3710,8 +3710,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			i(250187, {	-- Recipe: Tasty Raptor Bites (RECIPE!)
 				coord = { 56.2, 37.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 3255,	-- Sunscale Screecher
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(5165, {	-- Sunscale Feather
 				crs = {

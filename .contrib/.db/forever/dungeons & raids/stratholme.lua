@@ -572,11 +572,11 @@ instanceroot(236, {	-- Stratholme
 				n(16102, {	-- Sothos
 					creatureID = 16101,	-- Jarien
 					description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
-					cost = {{ "i", 22051, 1 }},	-- Brazier of Beckoning [Jarien & Sothos]
 					providers = {
 						{ "i", 22057 },	-- Brazier of Invocation
 						{ "o", 181083 },	-- Sothos and Jarien's Heirlooms
 					},
+					cost = {{ "i", 22051, 1 }},	-- Brazier of Beckoning [Jarien & Sothos]
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]

@@ -70,21 +70,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98190, {	-- A Friend of the Family (1/2)
 				sourceQuest = 98189,	-- Return the Statuette (2/2)
 				qg = 2104,	-- Captain Stoutfist
-				qi = 279595,	-- Menethil Statuette
 				coord = { 9.8, 57.4, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279595,	-- Menethil Statuette
 			}),
 			q(98191, {	-- A Friend of the Family (2/2)
 				sourceQuest = 98190,	-- A Friend of the Family (1/2)
 				qg = 1748,	-- Highlord Bolvar Fordragon
-				qi = 279598,	-- Menethil Statuette (PQI!)
 				coord = { 80.0, 38.6, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279598,	-- Menethil Statuette (PQI!)
 				groups = {
 					i(281296),	-- Knight's Lance
 					i(281297),	-- Royal Dagger
@@ -124,9 +124,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuest = 87318,	-- Hearts of the Lost
 				qg = 271322,	-- Essene Villard
 				coord = { 51.4, 9.0, MAP.WETLANDS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Essene's Necklace
 						providers = {
@@ -154,9 +154,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98282, {	-- Alchemical Hazards
 				qg = 1480,	-- Caitlin Grassman
 				coord = { 11.9, 58.8, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Unruptured Stalker Gland
 						provider = { "i", 280319 },	-- Unruptured Stalker Gland
@@ -203,8 +203,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98208, {	-- Bloom of the Heavens (1/2)
 				qg = 270844,	-- Sylessa Duskwhisper
 				coord = { 8.0, 55.9, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Nord'el
 						providers = {
@@ -219,18 +219,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98209, {	-- Bloom of the Heavens (2/2)
 				sourceQuest = 98208,	-- Bloom of the Heavens (1/2)
 				qg = 270844,	-- Sylessa Duskwhisper
-				qi = 279924,	-- Nord'el
 				coord = { 8.0, 55.9, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279924,	-- Nord'el
 			}),
 			q(88756, {	-- Bring Back a Bang
 				qg = 1073,	-- Ashlan Stonesmirk
 				coord = { 50.0, 18.2, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 27,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/3 Stolen Explosives
 						providers = {
@@ -302,9 +302,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuest = 275,	-- Blisters on The Land
 				qg = 1244,	-- Rethiel the Greenwarden
 				coord = { 56.2, 40.4, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Malignant Rotclaw Flesh
 						provider = { "i", 280331 },	-- Malignant Rotclaw Flesh
@@ -351,18 +351,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 98072 },	-- Crocs of the Sky
 				qg = 2094,	-- James Halloran
 				coord = { 8.6, 55.6, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 19,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 280099,	-- Crimson Crate (QI!)
 			}),
 			q(98072, {	-- Crocs of the Sky
 				sourceQuest = 471,	-- Apprentice's Duties
 				qg = 2094,	-- James Halloran
 				coord = { 8.5, 55.7, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 19,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Pristine Crimson Scale
 						provider = { "i", 279385 },	-- Pristine Crimson Scale
@@ -382,17 +382,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(469, {	-- Daily Delivery
 				qg = 2093,	-- Einar Stonegrip
-				qi = 3347,	-- Bundle of Crocolisk Skins
 				coord = { 49.8, 39.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 3347,	-- Bundle of Crocolisk Skins
 			}),
 			q(98291, {	-- Death to the Dragonmaw
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Dragonmaw Reclaimer slain
 						provider = { "n", 271351 },	-- Dragonmaw Reclaimer
@@ -474,19 +474,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98313, {	-- For Further Study
 				sourceQuest = 98310,	-- Gleaning Our Future
 				qg = 1077,	-- Prospector Whelgar <Explorers' League>
-				qi = 280403,	-- Whelgar Relic Package (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280403,	-- Whelgar Relic Package (PQI!)
 			}),
 			q(98293, {	-- Forced Disarmament
 				provider = { "o", 672330 },	-- Dragonmaw Armaments
 				coord = { 58.8, 45.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/30 Dragonmaw Armaments
 						providers = {
@@ -502,9 +502,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98221, {	-- From the Ashes
 				qg = 2104,	-- Captain Stoutfist
 				coord = { 9.9, 57.4, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Attack Plan: Menethil Harbor destroyed
 						provider = { "o", 671481 },
@@ -527,11 +527,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98310, {	-- Gleaning Our Future
 				sourceQuest = 98216,	-- Understanding Our Present
 				qg = 1077,	-- Prospector Whelgar <Explorers' League>
-				qi = 280394,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280394,	-- Goaz Stone (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Heart of Ados
 						provider = { "i", 280395 },	-- Heart of Ados
@@ -561,9 +561,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(87318, {	-- Hearts of the Lost
 				qg = 5683,	-- Corma Villard
 				coord = { 49.4, 11.4, MAP.WETLANDS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(305, {	-- In Search of the Excavation Team (1/2)
 				qg = 2096,	-- Tarrel Rockweaver
@@ -574,10 +574,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(306, {	-- In Search of the Excavation Team (2/2)
 				sourceQuest = 305,	-- In Search of the Excavation Team (1/2)
 				qg = 1076,	-- Merrin Rockweaver <Explorers' League>
-				qi = 2639,	-- Merrin's Letter
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 21,
+				qi = 2639,	-- Merrin's Letter
 			}),
 			q(290, {	-- Lifting the Curse
 				sourceQuest = 289,	-- The Cursed Crew
@@ -620,18 +620,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(465, {	-- Nek'rosh's Gambit
 				sourceQuest = 464,	-- War Banners
 				qg = 2104,	-- Captain Stoutfist
-				qi = 3339,	-- Dwarven Tinder
 				coord = { 9.8, 57.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				qi = 3339,	-- Dwarven Tinder
 			}),
 			q(98223, {	-- Old Habits
 				provider = { "o", 671518 },	-- Tattered Spellbook
-				qi = 280042,	-- Tattered Spellbook (PQI!)
 				coord = { 53.5, 54.5, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280042,	-- Tattered Spellbook (PQI!)
 				groups = {
 					i(281306),	-- Flamescarred Spellbook
 					i(281307),	-- Dragonmaw Buckler
@@ -698,9 +698,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuests = { 98240 },	-- Crimson Crate Delivery
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 21,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Razormaw Incisor
 						provider = { "i", 280103 },	-- Razormaw Incisor
@@ -724,16 +724,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				qg = 2086,	-- Valstag Ironjaw
 				coord = { 10.1, 56.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 23,
+				isBreadcrumb = true,
 			}),
 			q(286, {	-- Return the Statuette (1/2)
 				sourceQuest = 285,	-- Search More Hovels
 				provider = { "o", 259 },	-- Half-buried Barrel
-				qi = 2625,	-- Menethil Statuette
 				coord = { 14.0, 34.8, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2625,	-- Menethil Statuette
 				groups = {
 					i(2950),	-- Icicle Rod
 					i(2949),	-- Mariner Boots
@@ -742,11 +742,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98189, {	-- Return the Statuette (2/2)
 				sourceQuest = 286,	-- Return the Statuette (1/2)
 				qg = 1242,	-- Karl Boran
-				qi = 279589,	-- Menethil Statuette
 				coord = { 8.4, 58.6, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279589,	-- Menethil Statuette
 			}),
 			q(285, {	-- Search More Hovels
 				sourceQuest = 284,	-- The Search Continues
@@ -758,11 +758,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(88758, {	-- Sentiments of the Lost
 				sourceQuest = 88757,	-- Accessories of the Lost
 				qg = 271322,	-- Essene Villard
-				qi = 284151,	-- Essene's Note (PQI!)
 				coord = { 51.4, 9.0, MAP.WETLANDS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				timeline = { TIMELINE.CREATED_1_60_1 },
+				qi = 284151,	-- Essene's Note (PQI!)
 				groups = {
 					i(281258),	-- Essene's Hope
 				},
@@ -770,16 +770,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(87491, {	-- Spark of Freedom
 				qg = 271481,	-- Captive Fire Elemental
 				coord = { 45.7, 16.6, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 27,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98197, {	-- Spoils of War
 				qg = 2086,	-- Valstag Ironjaw
 				coord = { 10.1, 56.8, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Khaz Modan Timber
 						providers = {
@@ -801,9 +801,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuest = 98291,	-- Death to the Dragonmaw
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Subdued Dragonspawn slain
 						provider = { "n", 271373 },	-- Subdued Dragonspawn
@@ -898,8 +898,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				qg = 1239,	-- First Mate Fitzsimmons
 				coord = { 10.9, 59.6, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(324, {	-- The Lost Ingots
 				sourceQuest = 321,	-- Lightforge Iron
@@ -953,10 +953,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuest = 98191,	-- A Friend of the Family (2/2)
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(631, {	-- The Thandol Span (1/3)
 				qg = 1075,	-- Rhag Garmason
@@ -997,8 +997,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Flagon of Dwarven Honeymead
-						cost = { { "i", 2594, 1 } },	-- 1x Flagon of Dwarven Honeymead
 						coord = { 10.6, 60.8, MAP.WETLANDS },
+						cost = { { "i", 2594, 1 } },	-- 1x Flagon of Dwarven Honeymead
 						cr = 1464,	-- Innkeeper Helbrek <Innkeeper>
 					}),
 				},
@@ -1007,9 +1007,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				sourceQuest = 474,	-- Defeat Nek'rosh
 				qg = 2104,	-- Captain Stoutfist
 				coord = { 9.8, 57.4, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(276, {	-- Tramping Paws
 				sourceQuest = 463,	-- The Greenwarden
@@ -1029,9 +1029,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98246, {	-- Trying Times
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 21,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Perfect Razormaw Egg
 						providers = {
@@ -1080,11 +1080,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98216, {	-- Understanding Our Present
 				sourceQuest = 299,	-- Uncovering the Past
 				qg = 1077,	-- Prospector Whelgar <Explorers' League>
-				qi = 279996,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279996,	-- Goaz Stone (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Ados Fragment
 						provider = { "i", 279993 },	-- Titanic Keystone
@@ -1127,12 +1127,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98300, {	-- Word to Ironforge
 				sourceQuest = 98297,	-- Stopping the Cycle
 				qg = 270637,	-- Howin Kindfeather
-				qi = 280392,	-- Howin's Missive (PQI!)
 				coord = { 49.3, 42.1, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 280392,	-- Howin's Missive (PQI!)
 			}),
 			q(484, {	-- Young Crocolisk Skins
 				qg = 2094,	-- James Halloran
@@ -1230,8 +1230,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 		n(VENDORS, {
 			n(265346, {	-- Aurian Highgrove <Bartender>
 				coord = { 52.8, 80.2, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(275892, {	-- Short Stout
 						isLimited = true,
@@ -1240,8 +1240,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			n(265347, {	-- Bhalir Firebrew <Chef>
 				coord = { 52.8, 80.0, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(278119),	-- Bread with Butter
 					i(278122),	-- Carrot Salad
@@ -1531,12 +1531,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			i(250187, {	-- Recipe: Tasty Raptor Bites (RECIPE!)
 				coord = { 27.8, 44.6, MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 1020,	-- Mottled Raptor
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(279537, {	-- Rotheap Innards
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 270589,	-- Nightveiled Rotheap
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(282283, {	-- Malignant Root
 						description = "Bring the Rotheap Innards to Rethiel the Greenwarden and choose the extra dialogue option to trade them for this ring. No quest or reputation is required.",

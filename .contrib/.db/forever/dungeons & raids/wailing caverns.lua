@@ -56,10 +56,10 @@ instanceroot(240, {	-- Wailing Caverns
 				q(1489, {	-- Hamuul Runetotem
 					sourceQuest = 880,	-- Altered Beings
 					qg = 3448,	-- Tonga Runetotem
-					qi = 10414,	-- Sample Snapjaw Shell
 					coord = { 52.3, 31.9, MAP.THE_BARRENS },
 					races = HORDE_ONLY,
 					lvl = 10,
+					qi = 10414,	-- Sample Snapjaw Shell
 				}),
 				q(3370, {	-- In Nightmares [A]
 					description = "She lives in a house on top of the mountain.",

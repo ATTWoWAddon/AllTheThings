@@ -122,8 +122,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12753, 5 },	-- Skin of Shadow
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12757),	-- Breastplate of Bloodthirst
 				},
@@ -156,8 +156,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12752),	-- Cap of the Scarlet Savant
 				},
@@ -392,8 +392,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12736, 5 },	-- Frostwhisper's Embalming Fluid
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12756),	-- Leggings of Arcana
 				},
@@ -789,8 +789,8 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 4810,	-- Return to Tinkee
 				qg = 10468,	-- Felnok Steelspring
 				coord = { 61.6, 38.6, MAP.WINTERSPRING },
-				isBreadcrumb = true,
 				lvl = 57,
+				isBreadcrumb = true,
 			}),
 			q(4867, {	-- Urok Doomhowl
 				providers = {
@@ -809,8 +809,8 @@ instanceroot(229, {	-- Blackrock Spire
 				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				coord = { 49.8, 68.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 57,
+				isBreadcrumb = true,
 			}),
 			q(4903, {	-- Warlord's Command
 				description = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
@@ -1028,8 +1028,8 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 			n(16080, {	-- Mor Grayhoof
 				description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
-				cost = {{ "i", 22049, 1 }},	-- Brazier of Beckoning [Mor Grayhoof]
 				provider = { "i", 22057 },	-- Brazier of Invocation
+				cost = {{ "i", 22049, 1 }},	-- Brazier of Beckoning [Mor Grayhoof]
 				groups = {
 					objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 						questID = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
@@ -1270,8 +1270,8 @@ instanceroot(229, {	-- Blackrock Spire
 				}),
 				n(16042, {	-- Lord Valthalak
 					description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
-					cost = {{ "i", 22056, 1 }},	-- Brazier of Beckoning [Lord Valthalak]
 					provider = { "i", 22057 },	-- Brazier of Invocation
+					cost = {{ "i", 22056, 1 }},	-- Brazier of Beckoning [Lord Valthalak]
 					groups = {
 						i(22336),	-- Draconian Aegis of the Legion
 						i(22335),	-- Lord Valthalak's Staff of Command

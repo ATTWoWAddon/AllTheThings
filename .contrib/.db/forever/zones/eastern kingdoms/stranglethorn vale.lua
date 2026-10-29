@@ -206,18 +206,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(623, {	-- Akiris by the Bundle (2/2)
 				sourceQuest = 617,	-- Akiris by the Bundle (1/2)
 				qg = 2494,	-- Privateer Bloads
-				qi = 4028,	-- Bundle of Akiris Reeds
 				coord = { 27.4, 76.8, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 4028,	-- Bundle of Akiris Reeds
 			}),
 			q(95786, {	-- An Acquaintance in Southshore
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Loremaster Dibbs in Southshore.
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Savage Coast Report Bundle
 						provider = { "i", 270340 },	-- Savage Coast Report Bundle
@@ -261,9 +261,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(97328, {	-- Anything of Value
 				provider = { "o", 661516 },	-- Thoroughly Scavenged Supplies
 				coord = { 31.4, 12.8, MAP.STRANGLETHORN_VALE },
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the turn-in NPC yet (someone in Booty Bay).
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/8 Stolen Shipment
 						provider = { "i", 277953 },	-- Stolen Shipment
@@ -285,8 +285,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2545,	-- "Pretty Boy" Duncan
 				coord = { 27.4, 69.4, MAP.STRANGLETHORN_VALE },
 				minReputation = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },
-				isBreadcrumb = true,
 				lvl = 55,
+				isBreadcrumb = true,
 			}),
 			q(204, {	-- Bad Medicine
 				qg = 733,	-- Sergeant Yohwa
@@ -601,10 +601,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95773, {	-- Enemies in the Water
-				-- TODO: Wowhead doesn't list the quest giver yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Brinescale Trident
 						provider = { "i", 270305 },	-- Brinescale Trident
@@ -684,8 +684,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2670,	-- Xizk Goodstitch <Tailoring Supplies>
 				coord = { 28.6, 76.8, MAP.STRANGLETHORN_VALE },
 				classes = { WARLOCK },
-				repeatable = true,
 				lvl = 31,
+				repeatable = true,
 				groups = {
 					i(12293),	-- Fine Gold Thread
 				},
@@ -823,10 +823,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(210, {	-- Krazek's Cookery
 				qg = 770,	-- Corporal Kaleb
-				qi = 4085,	-- Krazek's Crock Pot
 				coord = { 37.7, 3.3, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				qi = 4085,	-- Krazek's Crock Pot
 			}),
 			q(207, {	-- Kurzen's Mystery
 				qg = 739,	-- Brother Nimetz
@@ -868,18 +868,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95770, {	-- Locating the Lost City
-				-- TODO: Wowhead doesn't list the quest giver yet. Explore the Vile Reef and find the cavern entrance; Wowhead has no objective IDs yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				-- TODO: Wowhead doesn't list the quest giver yet. Explore the Vile Reef and find the cavern entrance; Wowhead has no objective IDs yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(602, {	-- Magical Analysis
 				sourceQuest = 601,	-- Water Elementals
 				qg = 2496,	-- Baron Revilgaz
-				qi = 3960,	-- Bag of Water Elemental Bracers
 				coord = { 27.2, 76.8, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				qi = 3960,	-- Bag of Water Elemental Bracers
 			}),
 			q(206, {	-- Mai'Zoth
 				sourceQuests = {
@@ -902,12 +902,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sourceQuest = 3643,	-- Show Your Work
 				qg = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-				races = HORDE_ONLY,
 				cost = { { "g", 20000 } },	-- 2g
+				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
 				repeatable = true,
-				lvl = 30,
 				groups = {
 					i(10790),	-- Gnome Engineer Membership Card
 				},
@@ -999,8 +999,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 215643,	-- Tokal
 				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.ARATHI_HIGHLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Found Illari Duskfeather
 						cr = 215655,	-- Illari Duskfeather
@@ -1069,9 +1069,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95384, {	-- Partial Mystical Notes
+				lvl = 32,
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Dudd Fizzlescroll in Booty Bay.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Partial Mystical Notes
 						provider = { "i", 213127 },	-- Partial Mystical Notes
@@ -1135,10 +1135,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(97420, {	-- Reduce, Reuse, Reconcile
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Knaz Blunderflame.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 31,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Knaz Blunderflame.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Drum of Crude Oil
 						provider = { "i", 277986 },	-- Drum of Crude Oil
@@ -1161,10 +1161,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(622, {	-- Return to Corporal Kaleb
 				sourceQuest = 627,	-- Favor for Krazek
 				qg = 773,	-- Krazek
-				qi = 1987,	-- Krazek's Fixed Pot
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				qi = 1987,	-- Krazek's Fixed Pot
 				groups = {
 					i(4124),	-- Cap of Harmony
 				},
@@ -1172,9 +1172,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(607, {	-- Return to MacKinley
 				sourceQuest = 606,	-- Scaring Shaky
 				qg = 2502,	-- "Shaky" Phillipe
-				qi = 3922,	-- Shaky's Payment
 				coord = { 26.9, 73.6, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
+				qi = 3922,	-- Shaky's Payment
 			}),
 			q(3626, {	-- Return to the Blasted Lands
 				sourceQuest = 3625,	-- Enchanted Azsharite Fel Weaponry
@@ -1184,9 +1184,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 45,
 			}),
 			q(97048, {	-- Returning to Port
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Captain Aransas in Booty Bay.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				groups = {
 					i(277224),	-- Kurzen Headshrinker's Cinch
 					i(277232),	-- Jailer's Discarded Chain
@@ -1422,8 +1422,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						qg = 1449,	-- Witch Doctor Unbagwa
 						coord = { 35.2, 60.4, MAP.STRANGLETHORN_VALE },
 						cost = { { "i", 2799, 10 } },	-- 10x Gorilla Fang
-						repeatable = true,
 						lvl = 32,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Heart of Mokk
 								questID = 348,	-- Stranglethorn Fever
@@ -1438,10 +1438,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(198, {	-- Supplies to Private Thorsen
 				qg = 773,	-- Krazek
-				qi = 2252,	-- Miscellaneous Goblin Supplies
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 2252,	-- Miscellaneous Goblin Supplies
 			}),
 			q(575, {	-- Supply and Demand
 				qg = 2495,	-- Drizzlik
@@ -1458,18 +1458,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 2366,	-- Barkeep Kelly <Bartender>
 				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(78830, {	-- Terror of the Desert Skies
 				qg = 715,	-- Hemet Nesingwary
-				qi = 211272,	-- Empty Bait Cage (PQI!)
 				coord = { 35.6, 10.8, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.BADLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { HUNTER },
 				lvl = 26,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 211272,	-- Empty Bait Cage (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Crimson Trophy Quill
 						provider = { "i", 211293 },	-- Crimson Trophy Quill
@@ -1595,9 +1595,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(97047, {	-- The Cook in the Cage
 				qg = 218230,	-- Wendel Mathers
 				coord = { 44.2, 8.0, MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Compound Cage Key
 						provider = { "i", 216616 },	-- Compound Cage Key
@@ -1710,9 +1710,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(95748, {	-- The Gurubashi Legends of Old
 				qg = 2519,	-- Kin'weelay
 				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The Third Troll Legend
 						providers = {
@@ -1761,11 +1761,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2759,	-- In Search of Galvan
 				},
 				qg = 7794,	-- McGavan <The Mithril Order>
-				qi = 8686,	-- Mithril Pendant
 				coord = { 28.8, 75.4, MAP.STRANGLETHORN_VALE },
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				lvl = 40,
+				qi = 8686,	-- Mithril Pendant
 			}),
 			q(8552, {	-- The Monogrammed Sash
 				altQuests = { 620 },	-- The Monogrammed Sash [Old]
@@ -1830,10 +1830,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(578, {	-- The Stone of the Tides
 				sourceQuest = 616,	-- The Haunted Isle
 				qg = 2496,	-- Baron Revilgaz
-				qi = 3898,	-- Library Scrip
 				coord = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				qi = 3898,	-- Library Scrip
 			}),
 			q(629, {	-- The Vile Reef
 				qg = 2519,	-- Kin'weelay
@@ -1908,8 +1908,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					{ "i", 2604, 4 },	-- 4x Red Dye
 					{ "i", 4306, 40 },	-- 40x Silk Cloth
 				},
-				repeatable = true,
 				lvl = 30,
+				repeatable = true,
 			}),
 			q(205, {	-- Troll Witchery
 				sourceQuest = 207,	-- Kurzen's Mystery
@@ -2018,9 +2018,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 			}),
 			q(97329, {	-- Where's the Key?
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Zimmix Sputterspark.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Primitive Key
 						provider = { "i", 277957 },	-- Primitive Key
@@ -2081,9 +2081,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(97331, {	-- Zimmix's Great Escape
 				sourceQuest = 97329,	-- Where's the Key?
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the quest giver yet. Escort Zimmix Sputterspark, then report to Wharfmaster Lozgil in Booty Bay; Wowhead has no escort IDs yet.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 			}),
 		}),
 		n(RARES, {
@@ -2186,8 +2186,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			o(674124, {	-- Traveler's Cache
-				coord = { 14.4, 27.2, MAP.STRANGLETHORN_VALE },
 				description = "Opened with the Brittle Key from the Hidden Stash in Stonetalon Mountains. The key expires after an hour, so travel here quickly.",
+				coord = { 14.4, 27.2, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 221324, 1 } },	-- Brittle Key
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {

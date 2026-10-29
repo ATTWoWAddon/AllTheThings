@@ -68,10 +68,10 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					1104,	-- Salt Flat Venom
 				},
 				qg = 4454,	-- Fizzle Brassbolts
-				qi = 5827,	-- Fizzle Brassbolts' Letter
 				coord = { 78.1, 77.1, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.BADLANDS },
 				lvl = 26,
+				qi = 5827,	-- Fizzle Brassbolts' Letter
 			}),
 			q(1107, {	-- Encrusted Tail Fins
 				sourceQuest = 1105,	-- Hardened Shells
@@ -107,24 +107,24 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(1111, {	-- Wharfmaster Dizzywig
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5799,	-- Kravel's Parts Order
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				lvl = 30,
+				qi = 5799,	-- Kravel's Parts Order
 			}),
 			q(1112, {	-- Parts for Kravel
 				sourceQuest = 1111,	-- Wharfmaster Dizzywig
 				qg = 3453,	-- Wharfmaster Dizzywig
-				qi = 5800,	-- Kravel's Parts
 				coord = { 63.35, 38.45, MAP.THE_BARRENS },
 				lvl = 30,
+				qi = 5800,	-- Kravel's Parts
 			}),
 			q(1114, {	-- Delivery to the Gnomes
 				sourceQuest = 1112,	-- Parts for Kravel
 				qg = 4452,	-- Kravel Koalbeard
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5802,	-- Delicate Car Parts
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				lvl = 30,
+				qi = 5802,	-- Delicate Car Parts
 			}),
 			q(1115, {	-- The Rumormonger
 				qg = 4452,	-- Kravel Koalbeard
@@ -135,40 +135,40 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1117, {	-- Rumors for Kravel
 				sourceQuest = 1116,	-- Dream Dust in the Swamp
 				qg = 773,	-- Krazek
-				qi = 5804,	-- Goblin Rumors
 				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
 				lvl = 30,
+				qi = 5804,	-- Goblin Rumors
 			}),
 			q(1118, {	-- Back to Booty Bay
 				sourceQuest = 1117,	-- Rumors for Kravel
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5826,	-- Kravel's Scheme
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
+				qi = 5826,	-- Kravel's Scheme
 			}),
 			q(1119, {	-- Zanzil's Mixture and a Fool's Stout
 				sourceQuest = 1118,	-- Back to Booty Bay
 				qg = 2498,	-- Crank Fizzlebub
-				qi = 5806,	-- Fool's Stout
 				coord = { 27.1, 77.2, MAP.STRANGLETHORN_VALE },
 				lvl = 35,
+				qi = 5806,	-- Fool's Stout
 			}),
 			q(1120, {	-- Get the Gnomes Drunk
 				sourceQuest = 1119,	-- Zanzil's Mixture and a Fool's Stout
 				altQuests = { 1121 },	-- Get the Goblins Drunk
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5806,	-- Fool's Stout
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				lvl = 35,
+				qi = 5806,	-- Fool's Stout
 			}),
 			q(1121, {	-- Get the Goblins Drunk
 				sourceQuest = 1119,	-- Zanzil's Mixture and a Fool's Stout
 				altQuests = { 1120 },	-- Get the Gnomes Drunk
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5806,	-- Fool's Stout
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				lvl = 35,
+				qi = 5806,	-- Fool's Stout
 			}),
 			q(1122, {	-- Report Back to Fizzlebub
 				sourceQuests = {
@@ -176,26 +176,26 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					1121,	-- Get the Goblins Drunk
 				},
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 5807,	-- Fool's Stout Report
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
+				qi = 5807,	-- Fool's Stout Report
 			}),
 			q(1145, {	-- The Swarm Grows (1/3)
 				qg = 3428,	-- Korran
-				qi = 5846,	-- Korran's Sealed Note
 				coord = { 51.07, 29.62, MAP.THE_BARRENS },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 5846,	-- Korran's Sealed Note
 			}),
 			q(1146, {	-- The Swarm Grows (2/3)
 				sourceQuest = 1145,	-- The Swarm Grows (1/3)
 				qg = 4485,	-- Belgrom Rockmaul
-				qi = 5850,	-- Belgrom's Sealed Note
 				coord = { 75.0, 34.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 29,
+				qi = 5850,	-- Belgrom's Sealed Note
 			}),
 			q(1147, {	-- The Swarm Grows (3/3)
 				sourceQuest = 1146,	-- The Swarm Grows (2/3)
@@ -216,16 +216,16 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				},
 			}),
 			q(1148, {	-- Parts of the Swarm (1/2)
-				qi = 5877,	-- Cracked Silithid Carapace
 				coord = { 70.2, 87.0, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
+				lvl = 28,
 				crs = {
 					4133,	-- Silithid Hive Drone
 					4130,	-- Silithid Searcher
 					4131,	-- Silithid Invader
 					4132,	-- Silithid Ravager
 				},
-				lvl = 28,
+				qi = 5877,	-- Cracked Silithid Carapace
 				groups = {
 					objective(1, {	-- 0/1 Silithid Heart
 						provider = { "i", 5855 },	-- Silithid Heart
@@ -347,10 +347,10 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(1179, {	-- The Brassbolts Brothers
 				qg = 2092,	-- Pilot Longbeard
-				qi = 5849,	-- Crate of Crash Helmets
 				coord = { 72.4, 93.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				qi = 5849,	-- Crate of Crash Helmets
 			}),
 			q(1180, {	-- Goblin Sponsorship (2/5)
 				sourceQuest = 1178,	-- Goblin Sponsorship (1/5)
@@ -388,9 +388,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1183, {	-- Goblin Sponsorship (5/5)
 				sourceQuest = 1182,	-- Goblin Sponsorship (4/5)
 				qg = 2496,	-- Baron Revilgaz
-				qi = 5852,	-- Fuel Regulator Blueprints
 				coord = { 27.2, 76.9, MAP.STRANGLETHORN_VALE },
 				lvl = 29,
+				qi = 5852,	-- Fuel Regulator Blueprints
 			}),
 			q(1184, {	-- Parts of the Swarm (2/2)
 				sourceQuest = 1148,	-- Parts of the Swarm (1/2)
@@ -429,17 +429,17 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1188, {	-- Safety First (1/2)
 				sourceQuest = 1187,	-- Razzeric's Tweaking
 				qg = 4706,	-- Razzeric
-				qi = 5862,	-- Seaforium Booster
 				coord = { 80.3, 76.1, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.TANARIS },
 				lvl = 29,
+				qi = 5862,	-- Seaforium Booster
 			}),
 			q(1189, {	-- Safety First (2/2)
 				sourceQuest = 1188,	-- Safety First (1/2)
 				qg = 4708,	-- Shreev
-				qi = 5865,	-- Modified Seaforium Booster
 				coord = { 50.9, 27.0, MAP.TANARIS },
 				lvl = 29,
+				qi = 5865,	-- Modified Seaforium Booster
 				groups = {
 					i(6726),	-- Razzeric's Customized Seatbelt
 					i(6727),	-- Razzeric's Racing Grips
@@ -456,16 +456,16 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				altQuests = { 1190 },	-- Keeping Pace
 				qg = 4709,	-- Zamek
 				coord = { 79.8, 77.0, MAP.THOUSAND_NEEDLES },
-				repeatable = true,
 				lvl = 29,
+				repeatable = true,
 			}),
 			q(1192, {	-- Indurium Ore
 				sourceQuest = 1194,	-- Rizzle's Schematics
 				qg = 4630,	-- Pozzik
 				coord = { 80.0, 75.8, MAP.THOUSAND_NEEDLES },
 				cost = { { "i", 5833, 4 } },	-- Indurium Ore
-				repeatable = true,
 				lvl = 29,
+				repeatable = true,
 			}),
 			q(1194, {	-- Rizzle's Schematics
 				sourceQuest = 1190,	-- Keeping Pace
@@ -490,8 +490,8 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1531, {	-- Call of Air [Orgrimmar]
 				qg = 5892,	-- Searn Firewarder
 				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 30,
 				groups = {
 					i(5178, {	-- Air Totem
@@ -502,8 +502,8 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1532, {	-- Call of Air [Thunder Bluff]
 				qg = 5906,	-- Xanis Flameweaver
 				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 30,
 				groups = {
 					i(5178, {	-- Air Totem
@@ -536,19 +536,19 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(3843, {	-- The Newest Member of the Family
 				sourceQuest = 3842,	-- A Short Incubation
 				qg = 9238,	-- Quentin
-				qi = 11471,	-- Fragile Sprite Darter Egg
 				coord = { 78.4, 74.7, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 11471,	-- Fragile Sprite Darter Egg
 			}),
 			q(4542, {	-- Message to Freewind Post
 				qg = 10079,	-- Brave Moonhorn
-				qi = 11886,	-- Urgent Message
 				coord = { 32.23, 22.17, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 23,
+				isBreadcrumb = true,
+				qi = 11886,	-- Urgent Message
 			}),
 			q(4767, {	-- Wind Rider
 				qg = 10377,	-- Elu
@@ -618,11 +618,11 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(4881, {	-- Assassination Plot
 				description = "The item that starts this quest is dropped by Galak Messengers.",
-				qi = 12564,	-- Assassination Note
 				coord = { 21.2, 32.0, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
-				cr = 10617,	-- Galak Messenger
 				lvl = 23,
+				cr = 10617,	-- Galak Messenger
+				qi = 12564,	-- Assassination Note
 			}),
 			q(4904, {	-- Free at Last
 				qg = 10646,	-- Lakota Windsong
@@ -752,18 +752,18 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(5361, {	-- Family Tree
 				qg = 10537,	-- Cliffwatcher Longhorn
-				qi = 13507,	-- Cliffwatcher Longhorn Report
 				coord = { 45.65, 50.80, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.DESOLACE },
 				races = HORDE_ONLY,
 				lvl = 32,
+				qi = 13507,	-- Cliffwatcher Longhorn Report
 			}),
 			q(5762, {	-- Hemet Nesingwary
 				qg = 4452,	-- Kravel Koalbeard
-				qi = 14542,	-- Kravel's Crate
 				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 28,
+				qi = 14542,	-- Kravel's Crate
 			}),
 			q(6627, {	-- Test of Lore (3/6)
 				sourceQuest = 1154,	-- Test of Lore (2/6)
@@ -798,10 +798,10 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				qg = 4722,	-- Rau Cliffrunner
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.RAZORFEN_KRAUL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Tattered Note
 						provider = { "i", 274463 },	-- Tattered Note
@@ -812,13 +812,13 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(79361, {	-- Storm, Earth, and Fire
 				sourceQuest = 79364,	-- Eyes on the Sky
 				qg = 5905,	-- Prate Cloudseer
-				qi = 274483,	-- The Walks of Shaman (PQI!)
 				coord = { 53.6, 42.8, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.BADLANDS, MAP.SWAMP_OF_SORROWS, MAP.DESOLACE, MAP.DUSTWALLOW_MARSH },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 274483,	-- The Walks of Shaman (PQI!)
 				groups = {
 					objective(1, {	-- 0/5 Twisted Fire Totem
 						provider = { "i", 274044 },	-- Twisted Fire Totem
@@ -863,20 +863,20 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				sourceQuest = 79360,	-- Elemental Aid
 				qg = 4722,	-- Rau Cliffrunner
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(79366, {	-- Heed My Call
 				sourceQuest = 79361,	-- Storm, Earth, and Fire
 				qg = 4722,	-- Rau Cliffrunner
-				qi = 268582,	-- Corrupted Totems (PQI!)
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 268582,	-- Corrupted Totems (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Eye of the Tempest
 						provider = { "i", 212792 },	-- Eye of the Tempest
@@ -888,13 +888,13 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(79442, {	-- The Tempest's Weapons
 				sourceQuest = 79366,	-- Heed My Call
 				qg = 4722,	-- Rau Cliffrunner
-				qi = 212792,	-- Eye of the Tempest (PQI!)
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 212792,	-- Eye of the Tempest (PQI!)
 				groups = {
 					i(280607),	-- Lightning's Grasp
 					i(280604),	-- Rage of the Storm
@@ -902,11 +902,11 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				},
 			}),
 			q(96136, {	-- Call of Air
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Prate Cloudseer (5905) in Thousand Needles.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
 				lvl = 30,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Prate Cloudseer (5905) in Thousand Needles.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(5178, {	-- Air Totem
 						description = "You must keep this in your bags forever.",
@@ -916,9 +916,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(98069, {	-- Stolen Freewind Supplies
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Stolen Freewind Supplies
 						provider = { "i", 279383 },	-- Stolen Freewind Supplies
@@ -928,9 +928,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(98070, {	-- Stop the Screeching
 				qg = 4877,	-- Jandia
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Screeching Harpy slain
 						provider = { "n", 4100 },	-- Screeching Harpy

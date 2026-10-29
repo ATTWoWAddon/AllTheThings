@@ -9,9 +9,9 @@ instanceroot(246, {	-- Scholomance
 		5505,	-- The Key to Scholomance [Alliance]
 		5511,	-- The Key to Scholomance [Horde]
 	},
-	cost = {{"i", 13704, 1}},	-- Skeleton Key
 	mapID = MAP.SCHOLOMANCE,
 	coord = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
+	cost = {{"i", 13704, 1}},	-- Skeleton Key
 	lvl = 55,
 	groups = {
 		n(QUESTS, {
@@ -20,33 +20,33 @@ instanceroot(246, {	-- Scholomance
 				altQuests = { 8258 },	-- The Darkreaver Menace (New)
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 38.7, 35.9, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 55,
 				groups = {
 					i(20134),	-- Skyfury Helm
 				},
 			}),
 			q(7666, {	-- Again Into the Great Ossuary [A]
-				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				sourceQuest = 7647,	-- Judgment and Redemption
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
-				repeatable = true,
+				classes = { PALADIN },
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					i(18746),	-- Divination Scryer
 				},
 			}),
 			q(7669, {	-- Again Into the Great Ossuary [H]
-				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				sourceQuest = 8258,	-- The Darkreaver Menace
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 38.7, 35.9, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
-				repeatable = true,
+				classes = { SHAMAN },
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					i(18746),	-- Divination Scryer
 				},
@@ -185,12 +185,12 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 5529,	-- Plagued Hatchlings
 				provider = { "i", 13920 },	-- Healthy Dragon Scale
 				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 			}),
 			q(5384, {	-- Kirtonos the Herald
-				qg = 11216,	-- Eva Sarkhoff
 				sourceQuest = 5515,	-- Krastinov's Bag of Horrors
+				qg = 11216,	-- Eva Sarkhoff
 				coord = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 55,
 				groups = {
@@ -214,14 +214,14 @@ instanceroot(246, {	-- Scholomance
 				},
 			}),
 			q(7647, {	-- Judgment and Redemption
+				sourceQuest = 7646,	-- The Divination Scryer
 				providers = {
 					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					{ "i", 18804 },	-- Lord Grayson's Satchel
 				},
-				sourceQuest = 7646,	-- The Divination Scryer
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Charger's Redeemed Soul
@@ -236,8 +236,8 @@ instanceroot(246, {	-- Scholomance
 						provider = { "i", 18792 },	-- Blessed Arcanite Barding
 					}),
 					mount(23214, {	-- Charger (MOUNT!)
-						classes = { PALADIN },
 						races = ALLIANCE_ONLY,
+						classes = { PALADIN },
 						lvl = 60,
 					}),
 				},
@@ -258,8 +258,8 @@ instanceroot(246, {	-- Scholomance
 					{ "i", 12800, 1 },	-- Azerothian Diamond
 					{ "i", 18335, 1 },	-- Pristine Black Diamond
 				},
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 58,
 			}),
 			q(5463, {	-- Menethil's Gift (1/2)
@@ -364,8 +364,8 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 7667,	-- Material Assistance
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 38.7, 35.9, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Darkreaver's Head
@@ -382,8 +382,8 @@ instanceroot(246, {	-- Scholomance
 				},
 				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 38.7, 35.9, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
 				races = HORDE_SHAMANS,
+				classes = { SHAMAN },
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Darkreaver's Head
@@ -667,8 +667,8 @@ instanceroot(246, {	-- Scholomance
 		}),
 		n(16118, {	-- Kormok
 			description = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",
-			cost = {{"i", 22052, 1}},	-- Brazier of Beckoning [Kormok]
 			provider = { "i", 22057 },	-- Brazier of Invocation
+			cost = {{"i", 22052, 1}},	-- Brazier of Beckoning [Kormok]
 			groups = {
 				i(22332),	-- Blade of Necromancy
 				i(22333),	-- Hammer of Divine Might

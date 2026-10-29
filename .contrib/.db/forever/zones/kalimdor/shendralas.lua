@@ -20,11 +20,11 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 		}),
 		n(QUESTS, {
 			q(93062, {	-- Bone Burying
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Haggard Bones laid to rest
 						provider = { "i", 258661 },	-- Uthek's Draenethyst Staff
@@ -137,18 +137,18 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93125, {	-- Going Home
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				-- TODO: Escort Rokren out of the Outcast Hideaway; Wowhead has no IDs for the escort yet.
 			}),
 			q(93072, {	-- Long-Term Solutions
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/2 Outcast Scout slain
 						provider = { "n", 254283 },	-- Outcast Scout
@@ -266,17 +266,17 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					93072,	-- Long-Term Solutions
 					93129,	-- Threat of Starvation
 				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(93058, {	-- Saving Our Own
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Gelkis Captive rescued
 						provider = { "n", 254825 },	-- Gelkis Captive
@@ -285,10 +285,10 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Stolen Supplies
 						provider = { "i", 256892 },	-- Stolen Supplies

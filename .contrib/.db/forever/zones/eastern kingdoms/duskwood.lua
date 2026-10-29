@@ -120,10 +120,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(68, {	-- The Legend of Stalvan (3/13)
 				sourceQuest = 67,	-- The Legend of Stalvan (2/13)
 				provider = { "o", 3643 },	-- Old Footlocker
-				qi = 889,	-- A Dusty Unsent Letter
 				coord = { 41.5, 66.7, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				qi = 889,	-- A Dusty Unsent Letter
 			}),
 			q(69, {	-- The Legend of Stalvan (4/13)
 				sourceQuest = 68,	-- The Legend of Stalvan (3/13)
@@ -159,11 +159,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(74, {	-- The Legend of Stalvan (7/13)
 				sourceQuest = 72,	-- The Legend of Stalvan (6/13)
 				provider = { "o", 1561 },	-- Sealed Crate
-				qi = 916,	-- A Torn Journal Page
 				coord = { 42.6, 72.2, MAP.STORMWIND_CITY },
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				qi = 916,	-- A Torn Journal Page
 			}),
 			q(75, {	-- The Legend of Stalvan (8/13)
 				sourceQuest = 74,	-- The Legend of Stalvan (7/13)
@@ -184,26 +184,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(78, {	-- The Legend of Stalvan (9/13)
 				sourceQuest = 75,	-- The Legend of Stalvan (8/13)
 				qg = 294,	-- Marshal Haggard
-				qi = 921,	-- A Faded Journal Page
 				coord = { 84.6, 69.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				qi = 921,	-- A Faded Journal Page
 			}),
 			q(79, {	-- The Legend of Stalvan (10/13)
 				sourceQuest = 78,	-- The Legend of Stalvan (9/13)
 				qg = 273,	-- Tavernkeep Smitts
-				qi = 938,	-- Muddy Journal Pages
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				qi = 938,	-- Muddy Journal Pages
 			}),
 			q(80, {	-- The Legend of Stalvan (11/13)
 				sourceQuest = 79,	-- The Legend of Stalvan (10/13)
 				qg = 264,	-- Commander Althea Ebonlocke
-				qi = 939,	-- A Bloodstained Journal Page
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
+				qi = 939,	-- A Bloodstained Journal Page
 			}),
 			q(90, {	-- Seasoned Wolf Kabobs
 				qg = 272,	-- Chef Grual
@@ -350,18 +350,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(149, {	-- Ghost Hair Thread
 				sourceQuest = 148,	-- Supplies from Darkshire
 				qg = 265,	-- Madame Eva
-				qi = 1453,	-- Spectral Comb
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1453,	-- Spectral Comb
 			}),
 			q(154, {	-- Return the Comb
 				sourceQuest = 149,	-- Ghost Hair Thread
 				qg = 302,	-- Blind Mary
-				qi = 1518,	-- Ghost Hair Comb
 				coord = { 81.9, 59.1, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1518,	-- Ghost Hair Comb
 			}),
 			q(156, {	-- Gather Rot Blossoms
 				sourceQuest = 158,	-- Zombie Juice
@@ -382,10 +382,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(157, {	-- Deliver the Thread
 				sourceQuest = 154,	-- Return the Comb
 				qg = 265,	-- Madame Eva
-				qi = 1596,	-- Ghost Hair Thread
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1596,	-- Ghost Hair Thread
 			}),
 			q(158, {	-- Zombie Juice
 				sourceQuest = 157,	-- Deliver the Thread
@@ -397,40 +397,40 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(159, {	-- Juice Delivery
 				sourceQuest = 156,	-- Gather Rot Blossoms
 				qg = 273,	-- Tavernkeep Smitts
-				qi = 1451,	-- Bottle of Zombie Juice
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1451,	-- Bottle of Zombie Juice
 			}),
 			q(160, {	-- Note to the Mayor
 				sourceQuest = 134,	-- Ogre Thieves
 				qg = 289,	-- Abercrombie
-				qi = 1637,	-- Letter to Ello
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1637,	-- Letter to Ello
 			}),
 			q(163, {	-- Raven Hill
 				qg = 633,	-- Elaine Carevin
 				coord = { 75.3, 48.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(164, {	-- Deliveries to Sven
 				qg = 633,	-- Elaine Carevin
-				qi = 1922,	-- Supplies for Sven
 				coord = { 75.3, 48.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
+				qi = 1922,	-- Supplies for Sven
 			}),
 			q(165, {	-- The Hermit
 				qg = 633,	-- Elaine Carevin
 				coord = { 75.3, 48.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(173, {	-- Worgen in the Woods (1/4)
 				qg = 663,	-- Calor
@@ -517,10 +517,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(223, {	-- Worgen in the Woods (4/4)
 				sourceQuest = 222,	-- Worgen in the Woods (3/4)
 				qg = 663,	-- Calor
-				qi = 2113,	-- Calor's Note
 				coord = { 75.3, 48.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				qi = 2113,	-- Calor's Note
 				groups = {
 					i(2902),	-- Cloak of the Faith
 					i(1547),	-- Shield of the Faith
@@ -609,10 +609,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(240, {	-- Return to Jitters
 				sourceQuest = 93,	-- Dusky Crab Cakes
 				qg = 272,	-- Chef Grual
-				qi = 2250,	-- Dusky Crab Cakes
 				coord = { 73.8, 43.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 2250,	-- Dusky Crab Cakes
 			}),
 			q(245, {	-- Eight-Legged Menaces
 				qg = 888,	-- Watcher Dodds
@@ -637,18 +637,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(251, {	-- Translate Abercrombie's Note
 				sourceQuest = 160,	-- Note to the Mayor
 				qg = 263,	-- Lord Ello Ebonlocke
-				qi = 1637,	-- Letter to Ello
 				coord = { 71.9, 46.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1637,	-- Letter to Ello
 			}),
 			q(252, {	-- Translation to Ello
 				sourceQuest = 401,	-- Wait for Sirra to Finish
 				qg = 268,	-- Sirra Von'Indi
-				qi = 1656,	-- Translated Letter
 				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1656,	-- Translated Letter
 				groups = {
 					i(3248),	-- Translated Letter from The Embalmer
 				},
@@ -682,42 +682,42 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(262, {	-- The Shadowy Figure
 				sourceQuest = 230,	-- Sven's Camp
 				qg = 311,	-- Sven Yorgen
-				qi = 2161,	-- Book from Sven's Farm
 				coord = { 7.8, 34.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2161,	-- Book from Sven's Farm
 			}),
 			q(265, {	-- The Shadowy Search Continues
 				sourceQuest = 262,	-- The Shadowy Figure
 				qg = 265,	-- Madame Eva
-				qi = 2161,	-- Book from Sven's Farm
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2161,	-- Book from Sven's Farm
 			}),
 			q(266, {	-- Inquire at the Inn
 				sourceQuest = 265,	-- The Shadowy Search Continues
 				qg = 267,	-- Clerk Daltry
-				qi = 2161,	-- Book from Sven's Farm
 				coord = { 72.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2161,	-- Book from Sven's Farm
 			}),
 			q(268, {	-- Return to Sven
 				sourceQuest = 453,	-- Finding the Shadowy Figure
 				qg = 288,	-- Jitters
-				qi = 2560,	-- Jitters' Completed Journal
 				coord = { 18.2, 56.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2560,	-- Jitters' Completed Journal
 			}),
 			q(269, {	-- Seeking Wisdom
 				sourceQuest = 323,	-- Proving Your Worth
 				qg = 311,	-- Sven Yorgen
-				qi = 2560,	-- Jitters' Completed Journal
 				coord = { 7.8, 34.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2560,	-- Jitters' Completed Journal
 			}),
 			q(270, {	-- The Doomed Fleet
 				sourceQuest = 269,	-- Seeking Wisdom
@@ -732,10 +732,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					324,	-- The Lost Ingots
 				},
 				qg = 1217,	-- Glorin Steelbrow
-				qi = 2712,	-- Crate of Lightforge Ingots
 				coord = { 10.6, 60.5, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2712,	-- Crate of Lightforge Ingots
 			}),
 			q(323, {	-- Proving Your Worth
 				sourceQuest = 268,	-- Return to Sven
@@ -766,10 +766,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(337, {	-- An Old History Book
-				qi = 2794,	-- An Old History Book
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2794,	-- An Old History Book
 			}),
 			q(401, {	-- Wait for Sirra to Finish
 				sourceQuest = 251,	-- Translate Abercrombie's Note
@@ -781,10 +781,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(453, {	-- Finding the Shadowy Figure
 				sourceQuest = 266,	-- Inquire at the Inn
 				qg = 273,	-- Tavernkeep Smitts
-				qi = 2161,	-- Book from Sven's Farm
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 2161,	-- Book from Sven's Farm
 			}),
 			q(1042, {	-- The Carevin Family
 				sourceQuest = 1041,	-- The Caravan Road
@@ -854,34 +854,34 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(1388, {	-- Nothing But The Truth (3/4)
 				sourceQuest = 1383,	-- Nothing But The Truth (2/4)
 				qg = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
-				qi = 6086,	-- Faustin's Truth Serum
 				coord = { 87.4, 35.4, MAP.DUSKWOOD },
 				races = HORDE_ONLY,
 				lvl = 37,
+				qi = 6086,	-- Faustin's Truth Serum
 			}),
 			q(1391, {	-- Nothing But The Truth (4/4)
 				sourceQuest = 1388,	-- Nothing But The Truth (3/4)
 				qg = 5418,	-- Deathstalker Zraedus
-				qi = 6089,	-- Zraedus's Brew
 				coord = { 87.6, 35.6, MAP.DUSKWOOD },
 				races = HORDE_ONLY,
 				lvl = 37,
+				qi = 6089,	-- Zraedus's Brew
 			}),
 			q(1395, {	-- Supplies for Nethergarde
 				sourceQuest = 1477,	-- Vital Supplies
 				qg = 5464,	-- Watchmaster Sorigal
-				qi = 6091,	-- Crate of Power Stones
 				coord = { 75.8, 46.2, MAP.DUSKWOOD },
 				maps = { MAP.BLASTED_LANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 6091,	-- Crate of Power Stones
 			}),
 			q(1477,	{	-- Vital Supplies
 				qg = 5694,	-- High Sorcerer Andromath
 				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 40,
+				isBreadcrumb = true,
 			}),
 			q(79362, {	-- Grant's Shield
 				aqd = {
@@ -893,8 +893,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				},
 				qs = 281147,	-- Grant's Shield (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Grant's Mace
 						provider = { "i", 281146 },	-- Grant's Mace
@@ -916,8 +916,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				},
 				qs = 281145,	-- Silvia's Sword (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Defias Night Blade slain
 						provider = { "n", 909 },	-- Defias Night Blade
@@ -937,8 +937,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				},
 				qs = 281143,	-- Ira's Dagger (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Young Black Ravager slain
 						provider = { "n", 923 },	-- Young Black Ravager
@@ -958,8 +958,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
 				},
 				qs = 281142,	-- Merrick's Bow (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Splinter Fist Warrior slain
 						provider = { "n", 212 },	-- Splinter Fist Warrior
@@ -972,9 +972,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(96139, {	-- The Valor Family (1/2)
 				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Raven Hill Tome
 						providers = {
@@ -1011,9 +1011,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Raven Hill investigated
 						provider = { "n", 272450 },	-- Ol' Sandy
@@ -1031,8 +1031,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 66.0, 33.8, MAP.DUSKWOOD },
 					{ 68.8, 69.6, MAP.DUSKWOOD },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				repeatable = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(280612),	-- Night Watchman's Torch
 				},
@@ -1347,8 +1347,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 80.3, 57.8, MAP.DUSKWOOD },
 					{ 78.3, 71.5, MAP.DUSKWOOD },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 272291,	-- Lost Knight
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2021, {	-- Green Carapace Shield
 				coords = {
@@ -1400,8 +1400,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 10.0, 37.0, MAP.DUSKWOOD },
 					{ 67.9, 31.1, MAP.DUSKWOOD },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 272260,	-- Lost Stalker
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(911, {	-- Ironwood Treebranch
 				coords = {
@@ -1428,12 +1428,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				cr = 206,	-- Nightbane Vile Fang
 			}),
 			i(255724, {	-- Manual: Clever Poultice (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 910,	-- Defias Enchanter
 				coords = {
 					{ 21.8, 71.8, MAP.DUSKWOOD },
 					{ 50.2, 77.2, MAP.DUSKWOOD },
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(281142, {	-- Merrick's Bow
 				coords = {
@@ -1445,8 +1445,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 62.8, 65.4, MAP.DUSKWOOD },
 					{ 76.0, 22.8, MAP.DUSKWOOD },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 272273,	-- Lost Watcher
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2234, {	-- Nightwalker Armor
 				coords = {
@@ -1490,8 +1490,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					{ 74.0, 51.8, MAP.DUSKWOOD },
 					{ 50.2, 74.2, MAP.DUSKWOOD },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 272284,	-- Lost Defender
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2018, {	-- Skeletal Longsword
 				coords = {

@@ -107,9 +107,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			q(4808, {	-- Felnok Steelspring
 				sourceQuest = 4726,	-- Broodling Essence
 				qg = 10267,	-- Tinkee Steamboil
-				qi = 12438,	-- Tinkee's Letter
 				coord = { 65.2, 23.8, MAP.BURNING_STEPPES },
 				lvl = 50,
+				qi = 12438,	-- Tinkee's Letter
 			}),
 			q(4283, {	-- FIFTY! YEP!
 				qg = 9177,	-- Oralius
@@ -154,11 +154,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					7630,	-- Arcanite
 				},
 				qg = 14437,	-- Gorzeeki Wildeyes
-				qi = 18688,	-- Imp in a Jar
 				coord = { 12.4, 31.6, MAP.BURNING_STEPPES },
 				maps = { MAP.SCHOLOMANCE },
 				classes = { WARLOCK },
 				lvl = 60,
+				qi = 18688,	-- Imp in a Jar
 			}),
 			q(3822, {	-- Krom'Grul
 				sourceQuest = 3821,	-- Dreadmaul Rock
@@ -184,8 +184,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11952, 4 },	-- Night Dragon's Breath
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(11642),	-- Lesser Arcanum of Constitution
 				},
@@ -200,8 +200,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11736, 1 },	-- Libram of Resilience
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(11644),	-- Lesser Arcanum of Resilience
 				},
@@ -216,8 +216,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11732, 1 },	-- Libram of Rumination
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(11622),	-- Lesser Arcanum of Rumination
 				},
@@ -232,8 +232,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11753, 1 },	-- Eye of Kajal
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(11643),	-- Lesser Arcanum of Tenacity
 				},
@@ -248,8 +248,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11563, 4 },	-- Crystal Force
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(11647),	-- Lesser Arcanum of Voracity
 					i(11648),	-- Lesser Arcanum of Voracity
@@ -290,8 +290,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					},
 				},
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 60,
+				isBreadcrumb = true,
 			}),
 			q(3825, {	-- Ogre Head On A Stick = Party
 				sourceQuest = 3824,	-- Gor'tesh the Brute Lord
@@ -359,10 +359,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			q(7564, {	-- Wildeyes
 				sourceQuest = 7563,	-- Rage of Blood
 				qg = 14436,	-- Mor'zul Bloodbringer
-				qi = 18591,	-- Case of Blood
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
 				classes = { WARLOCK },
 				lvl = 60,
+				qi = 18591,	-- Case of Blood
 			}),
 		}),
 		n(RARES, {

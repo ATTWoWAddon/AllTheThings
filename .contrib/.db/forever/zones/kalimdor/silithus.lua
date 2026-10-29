@@ -92,9 +92,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8287, {	-- A Terrible Purpose
 				sourceQuest = 8279,	-- The Twilight Lexicon
 				qg = 15194,	-- Hermit Ortell
-				qi = 20405,	-- Decoded Tablet Transcription
 				coord = { 67.0, 69.6, MAP.SILITHUS },
 				lvl = 40,
+				qi = 20405,	-- Decoded Tablet Transcription
 				groups = {
 					i(20645, {	-- Nature's Whisper
 						description =
@@ -122,8 +122,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				cost = { { "i", 20513, 3 } },	-- Abyssal Crest
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					i(20603, {	-- Bag of Spoils
 						groups = {
@@ -140,8 +140,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				cost = { { "i", 20515, 3 } },	-- Abyssal Scepter
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(20602, {	-- Chest of Spoils
 						groups = {
@@ -158,8 +158,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				cost = { { "i", 20514, 3 } },	-- Abyssal Signet
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(20601, {	-- Sack of Spoils
 						groups = {
@@ -180,8 +180,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 20800, 1 },	-- Cenarion Logistics Badge
 					{ "i", 20801, 1 },	-- Cenarion Tactical Badge
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 			}),
 			q(8316, {	-- Armaments of War [WARRIOR]
 				sourceQuest = 8315,	-- The Calling
@@ -272,50 +272,50 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8780, {	-- Armor Kits for the Field (A)
-				qi = 21263,	-- Logistics Task Briefing VII (A)
 				cost = {
 					{ "i", 15564, 8 },	-- Rugged Armor Kit
 					{ "i", 4265, 8 },	-- Heavy Armor Kit
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21263,	-- Logistics Task Briefing VII (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8787, {	-- Armor Kits for the Field (H)
-				qi = 21264,	-- Logistics Task Briefing VII (H)
 				cost = {
 					{ "i", 15564, 8 },	-- Rugged Armor Kit
 					{ "i", 4265, 8 },	-- Heavy Armor Kit
 				},
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21264,	-- Logistics Task Briefing VII (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 				},
 			}),
 			q(8781, {	-- Arms for the Field (A)
-				qi = 21260,	-- Logistics Task Briefing VI (A)
 				cost = { { "i", 3853, 2 } },	-- Moonsteel Broadsword
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21260,	-- Logistics Task Briefing VI (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8786, {	-- Arms for the Field (H)
-				qi = 21261,	-- Logistics Task Briefing VI (H)
 				cost = { { "i", 3855, 3 } },	-- Massive Iron Axe
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21261,	-- Logistics Task Briefing VI (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -325,13 +325,13 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15270,	-- Huum Wildmane
 				coord = { 48.7, 37.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(8737, {	-- Azure Templar
-				qi = 21245,	-- Tactical Task Briefing I
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21245,	-- Tactical Task Briefing I
 				groups = {
 					objective(1, {	-- 0/1 Azure Templar slain
 						provider = { "n", 15211 },	-- Azure Templar <Abyssal Council>
@@ -341,52 +341,52 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8496, {	-- Bandages for the Field (A)
-				qi = 20806,	-- Logistics Task Briefing X (A)
 				cost = {
 					{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 					{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
 					{ "i", 6451, 30 },	-- Heavy Silk Bandage
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20806,	-- Logistics Task Briefing X (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8810, {	-- Bandages for the Field (H)
-				qi = 21385,	-- Logistics Task Briefing X (H)
 				cost = {
 					{ "i", 14530, 30 },	-- Heavy Runecloth Bandage
 					{ "i", 8545, 30 },	-- Heavy Mageweave Bandage
 					{ "i", 6451, 30 },	-- Heavy Silk Bandage
 				},
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21385,	-- Logistics Task Briefing X (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 				},
 			}),
 			q(8540, {	-- Boots for the Guard (A)
-				qi = 20939,	-- Logistics Task Briefing II (A)
 				cost = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20939,	-- Logistics Task Briefing II (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8805, {	-- Boots for the Guard (H)
-				qi = 21379,	-- Logistics Task Briefing II (H)
 				cost = { { "i", 7936, 3 } },	-- Ornate Mithril Boots
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21379,	-- Logistics Task Briefing II (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -397,8 +397,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15282,	-- Aurel Goldleaf
 				coord = { 52.0, 38.2, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(8351, {	-- Bor Wishes to Speak
 				sourceQuest = 8341,	-- Lords of the Council
@@ -408,7 +408,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 			}),
 			q(8308, {	-- Brann Bronzebeard's Lost Letter
-				qi = 20461,	-- Brann Bronzebeard's Lost Letter
 				crs = {
 					13301,	-- Hive'Ashi Ambusher
 					11722,	-- Hive'Ashi Defender
@@ -429,6 +428,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					11725,	-- Hive'Zora Waywatcher
 				},
 				lvl = 58,
+				qi = 20461,	-- Brann Bronzebeard's Lost Letter
 				groups = {
 					i(20723),	-- Brann's Trusty Pick
 				},
@@ -489,8 +489,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 20801, 20 },	-- Cenarion Tactical Badge
 					{ "i", 21508, 1 },	-- Mark of Cenarius
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(21188),	-- Fist of Cenarius
 					i(21190),	-- Wrath of Cenarius
@@ -498,9 +498,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8537, {	-- Crimson Templar
-				qi = 20945,	-- Tactical Task Briefing II
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20945,	-- Tactical Task Briefing II
 				groups = {
 					objective(1, {	-- 0/1 Crimson Templar slain
 						provider = { "n", 15209 },	-- Crimson Templar <Abyssal Council>
@@ -547,44 +547,44 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 			}),
 			q(8497, {	-- Desert Survival Kits (A)
-				qi = 20807,	-- Logistics Task Briefing I (A)
 				cost = {
 					{ "i", 7079, 4 },	-- Globe of Water
 					{ "i", 19440, 4 },	-- Powerful Anti-Venom
 					{ "i", 20452, 4 },	-- Smoked Desert Dumplings
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20807,	-- Logistics Task Briefing I (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8804, {	-- Desert Survival Kits (H)
-				qi = 21378,	-- Logistics Task Briefing I (H)
 				cost = {
 					{ "i", 7079, 4 },	-- Globe of Water
 					{ "i", 19440, 4 },	-- Powerful Anti-Venom
 					{ "i", 20452, 4 },	-- Smoked Desert Dumplings
 				},
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
+				qi = 21378,	-- Logistics Task Briefing I (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
 				},
 			}),
 			q(8856, {	-- Desert Survival Kits (A)
-				qi = 20807,	-- Logistics Task Briefing I (A)
 				cost = {
 					{ "i", 7079, 4 },	-- Globe of Water
 					{ "i", 19440, 4 },	-- Powerful Anti-Venom
 					{ "i", 20452, 4 },	-- Smoked Desert Dumplings
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20807,	-- Logistics Task Briefing I (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
@@ -605,9 +605,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8536, {	-- Earthen Templar
-				qi = 21751,	-- Tactical Task Briefing III
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21751,	-- Tactical Task Briefing III
 				groups = {
 					objective(1, {	-- 0/1 Earthen Templar slain
 						provider = { "n", 15307 },	-- Earthen Templar <Abyssal Council>
@@ -622,32 +622,32 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 			}),
 			q(8783, {	-- Extraordinary Materials (A)
-				qi = 21265,	-- Logistics Task Briefing IX (A)
 				cost = {
 					{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 					{ "i", 12810, 2 },	-- Enchanted Leather
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21265,	-- Logistics Task Briefing IX (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8809, {	-- Extraordinary Materials (H)
-				qi = 21381,	-- Logistics Task Briefing IX (H)
 				cost = {
 					{ "i", 12655, 2 },	-- Enchanted Thorium Bar
 					{ "i", 12810, 2 },	-- Enchanted Leather
 				},
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21381,	-- Logistics Task Briefing IX (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -657,8 +657,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15540,	-- Windcaller Kaldon
 				coord = { 50.0, 36.4, MAP.SILITHUS },
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					q(8508, {	-- Field Duty Papers (A)
 						qg = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
@@ -685,15 +685,15 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15540,	-- Windcaller Kaldon
 				coord = { 50.0, 36.4, MAP.SILITHUS },
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					q(8732, {	-- Field Duty Papers (H)
 						qg = 15612,	-- Krug Skullsplit
 						coord = { 52.2, 68.4, MAP.SILITHUS },
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 54,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Signed Field Duty Papers
 								questID = 8731,	-- Field Duty (H)
@@ -713,9 +713,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8309, {	-- Glyph Chasing
 				sourceQuest = 8304,	-- Dearest Natalia
 				qg = 15170,	-- Rutgar Glyphshaper
-				qi = 20453,	-- Geologist's Transcription Kit
 				coord = { 41.2, 88.4, MAP.SILITHUS },
 				lvl = 58,
+				qi = 20453,	-- Geologist's Transcription Kit
 				groups = {
 					objective(1, {	-- 0/1 Hive'Ashi Rubbing
 						providers = {
@@ -744,32 +744,32 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15270,	-- Huum Wildmane
 				coord = { 48.6, 37.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(8541, {	-- Grinding Stones for the Guard (A)
-				qi = 20940,	-- Logistics Task Briefing III (A)
 				cost = {
 					{ "i", 12644, 10 },	-- Dense Grinding Stone
 					{ "i", 7966, 10 },	-- Solid Grinding Stone
 					{ "i", 3486, 10 },	-- Heavy Grinding Stone
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20940,	-- Logistics Task Briefing III (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8806, {	-- Grinding Stones for the Guard (H)
-				qi = 21380,	-- Logistics Task Briefing III (H)
 				cost = {
 					{ "i", 12644, 10 },	-- Dense Grinding Stone
 					{ "i", 7966, 10 },	-- Solid Grinding Stone
 					{ "i", 3486, 10 },	-- Heavy Grinding Stone
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21380,	-- Logistics Task Briefing III (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -793,9 +793,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8739, {	-- Hive'Ashi Scout Report
-				qi = 21167,	-- Tactical Task Briefing VIII
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21167,	-- Tactical Task Briefing VIII
 				groups = {
 					objective(1, {	-- 0/1 Hive'Ashi Scout Report
 						provider = { "i", 21161 },	-- Hive'Ashi Scout Report
@@ -807,9 +807,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8738, {	-- Hive'Regal Scout Report
-				qi = 21166,	-- Tactical Task Briefing VII
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21166,	-- Tactical Task Briefing VII
 				groups = {
 					objective(1, {	-- 0/1 Hive'Regal Scout Report
 						provider = { "i", 21160 },	-- Hive'Regal Scout Report
@@ -821,9 +821,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8534, {	-- Hive'Zora Scout Report
-				qi = 21165,	-- Tactical Task Briefing VI
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21165,	-- Tactical Task Briefing VI
 				groups = {
 					objective(1, {	-- 0/1 Hive'Zora Scout Report
 						provider = { "i", 21158 },	-- Hive'Zora Scout Report
@@ -835,9 +835,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8535, {	-- Hoary Templar
-				qi = 20947,	-- Tactical Task Briefing IV
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20947,	-- Tactical Task Briefing IV
 				groups = {
 					objective(1, {	-- 0/1 Hoary Templar slain
 						provider = { "n", 15212 },	-- Hoary Templar <Abyssal Council>
@@ -890,8 +890,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 14344, 1 },	-- Large Brilliant Shard
 					{ "i", 20513, 3 },	-- Abyssal Crest
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(20422),	-- Twilight Cultist Medallion of Station
 				},
@@ -937,15 +937,15 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 17081,	-- Scout Bloodfist
 				coord = { 49.0, 36.7, MAP.SILITHUS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 53,
+				isBreadcrumb = true,
 			}),
 			q(9415, {	-- Report to Marshal Bluewall
 				qg = 17082,	-- Rifleman Torrig
 				coord = { 50.7, 34.7, MAP.SILITHUS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 53,
+				isBreadcrumb = true,
 			}),
 			q(8352, {	-- Scepter of the Council
 				sourceQuest = 8351,	-- Bor Wishes to Speak
@@ -999,28 +999,28 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8779, {	-- Scrying Materials (A)
-				qi = 21259,	-- Logistics Task Briefing V (A)
 				cost = {
 					{ "i", 12364, 1 },	-- Huge Emerald
 					{ "i", 14344, 1 },	-- Large Brilliant Shard
 					{ "i", 11178, 1 },	-- Large Radiant Shard
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21259,	-- Logistics Task Briefing V (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8807, {	-- Scrying Materials (H)
-				qi = 21382,	-- Logistics Task Briefing V (H)
 				cost = {
 					{ "i", 12364, 1 },	-- Huge Emerald
 					{ "i", 14344, 1 },	-- Large Brilliant Shard
 					{ "i", 11178, 1 },	-- Large Radiant Shard
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21382,	-- Logistics Task Briefing V (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -1089,8 +1089,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 20801, 17 },	-- Cenarion Tactical Badge
 					{ "i", 21515, 1 },	-- Mark of Remulos
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(21184),	-- Deeprock Bracers
 					i(21185),	-- Earthcalm Orb
@@ -1114,27 +1114,27 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15194,	-- Hermit Ortell
 				coord = { 67.0, 69.6, MAP.SILITHUS },
 				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 			}),
 			q(8275, {	-- Taking Back Silithus (A)
 				qg = 15187,	-- Cenarion Emissary Jademoon
 				coord = { 58.5, 47.3, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(8276, {	-- Taking Back Silithus (H)
 				qg = 15188,	-- Cenarion Emissary Blackhoof
 				coord = { 47.6, 65.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 54,
+				isBreadcrumb = true,
 			}),
 			q(8770, {	-- Target: Hive'Ashi Defenders
-				qi = 21749,	-- Combat Task Briefing I
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21749,	-- Combat Task Briefing I
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Defender slain
 						provider = { "n", 11722 },	-- Hive'Ashi Defender
@@ -1143,9 +1143,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8771, {	-- Target: Hive'Ashi Sandstalkers
-				qi = 21750,	-- Combat Task Briefing II
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21750,	-- Combat Task Briefing II
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Sandstalker slain
 						provider = { "n", 11723 },	-- Hive'Ashi Sandstalker
@@ -1154,9 +1154,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8501, {	-- Target: Hive'Ashi Stingers
-				qi = 20941,	-- Combat Task Briefing XII
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20941,	-- Combat Task Briefing XII
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Stinger slain
 						provider = { "n", 11698 },	-- Hive'Ashi Stinger
@@ -1165,9 +1165,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8502, {	-- Target: Hive'Ashi Workers
-				qi = 20942,	-- Combat Task Briefing III
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20942,	-- Combat Task Briefing III
 				groups = {
 					objective(1, {	-- 0/30 Hive'Ashi Worker slain
 						provider = { "n", 11721 },	-- Hive'Ashi Worker
@@ -1176,9 +1176,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8774, {	-- Target: Hive'Regal Ambushers
-				qi = 21252,	-- Combat Task Briefing VIII
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21252,	-- Combat Task Briefing VIII
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Ambusher slain
 						provider = { "n", 11730 },	-- Hive'Regal Ambusher
@@ -1187,9 +1187,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8777, {	-- Target: Hive'Regal Burrowers
-				qi = 21256,	-- Combat Task Briefing XI
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21256,	-- Combat Task Briefing XI
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Burrower slain
 						provider = { "n", 11731 },	-- Hive'Regal Burrower
@@ -1198,9 +1198,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8776, {	-- Target: Hive'Regal Slavemakers
-				qi = 21255,	-- Combat Task Briefing X
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21255,	-- Combat Task Briefing X
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Slavemaker slain
 						provider = { "n", 11733 },	-- Hive'Regal Slavemaker
@@ -1209,9 +1209,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8775, {	-- Target: Hive'Regal Spitfires
-				qi = 21253,	-- Combat Task Briefing IX
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21253,	-- Combat Task Briefing IX
 				groups = {
 					objective(1, {	-- 0/30 Hive'Regal Spitfire slain
 						provider = { "n", 11732 },	-- Hive'Regal Spitfire
@@ -1220,9 +1220,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8539, {	-- Target: Hive'Zora Hive Sisters
-				qi = 21249,	-- Combat Task Briefing V
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21249,	-- Combat Task Briefing V
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Hive Sister slain
 						provider = { "n", 11729 },	-- Hive'Zora Hive Sister
@@ -1231,9 +1231,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8773, {	-- Target: Hive'Zora Reavers
-				qi = 21248,	-- Combat Task Briefing IV
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21248,	-- Combat Task Briefing IV
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Reaver slain
 						provider = { "n", 11728 },	-- Hive'Zora Reaver
@@ -1242,9 +1242,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8687, {	-- Target: Hive'Zora Tunnelers
-				qi = 21251,	-- Combat Task Briefing VII
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21251,	-- Combat Task Briefing VII
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Tunneler slain
 						provider = { "n", 11726 },	-- Hive'Zora Tunneler
@@ -1253,9 +1253,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8772, {	-- Target: Hive'Zora Waywatchers
-				qi = 21250,	-- Combat Task Briefing VI
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21250,	-- Combat Task Briefing VI
 				groups = {
 					objective(1, {	-- 0/30 Hive'Zora Waywatcher slain
 						provider = { "n", 11725 },	-- Hive'Zora Waywatcher
@@ -1282,14 +1282,14 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8285, {	-- The Deserter
 				sourceQuest = 8284,	-- The Twilight Mystery
 				qg = 15183,	-- Geologist Larksbane
-				qi = 20401,	-- Restored Twilight Tablet
 				coord = { 49.7, 37.5, MAP.SILITHUS },
 				lvl = 54,
+				qi = 20401,	-- Restored Twilight Tablet
 			}),
 			q(8538, {	-- The Four Dukes
-				qi = 20948,	-- Tactical Task Briefing V
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20948,	-- Tactical Task Briefing V
 				groups = {
 					objective(1, {	-- 0/1 The Duke of Cynders slain
 						provider = { "n", 15206 },	-- The Duke of Cynders <Abyssal Council>
@@ -1307,30 +1307,30 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8778, {	-- The Ironforge Brigade Needs Explosives!
-				qi = 21257,	-- Logistics Task Briefing IV (A)
 				cost = {
 					{ "i", 15992, 10 },	-- Dense Blasting Powder
 					{ "i", 9061, 5 },	-- Goblin Rocket Fuel
 					{ "i", 8956, 6 },	-- Oil of Immolation
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21257,	-- Logistics Task Briefing IV (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8785, {	-- The Orgrimmar Legion Needs Mojo!
-				qi = 21258,	-- Logistics Task Briefing IV (H)
 				cost = {
 					{ "i", 8152, 6 },	-- Flask of Big Mojo
 					{ "i", 8956, 8 },	-- Oil of Immolation
 					{ "i", 12804, 6 },	-- Powerful Mojo
 				},
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21258,	-- Logistics Task Briefing IV (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
@@ -1409,14 +1409,14 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8829, {	-- The Ultimate Deception
-				qi = 21514,	-- Logistics Task Briefing XI
 				cost = {
 					{ "i", 12735, 3 },	-- Frayed Abomination Stitching
 					{ "i", 12753, 1 },	-- Skin of Shadow
 					{ "i", 20407, 1 },	-- Twilight Cultist Robe
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21514,	-- Logistics Task Briefing XI
 				groups = {
 					i(21515),	-- Mark of Remulos
 				},
@@ -1429,9 +1429,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 			}),
 			q(8498, {	-- Twilight Battle Orders
-				qi = 20943,	-- Tactical Task Briefing X
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20943,	-- Tactical Task Briefing X
 				groups = {
 					objective(1, {	-- 0/1 Twilight Battle Orders
 						provider = { "i", 20803 },	-- Twilight Battle Orders
@@ -1452,9 +1452,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				},
 			}),
 			q(8740, {	-- Twilight Marauders
-				qi = 20944,	-- Tactical Task Briefing IX
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 20944,	-- Tactical Task Briefing IX
 				groups = {
 					objective(1, {	-- 0/1 Twilight Marauder Morna slain
 						provider = { "n", 15541 },	-- Twilight Marauder Morna <Twilight's Hammer>
@@ -1475,8 +1475,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 14344, 5 },	-- Large Brilliant Shard
 					{ "i", 20514, 3 },	-- Abyssal Signet
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(20451),	-- Twilight Cultist Ring of Lordship
 				},
@@ -1484,34 +1484,34 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(6844, {	-- Umber, Archivist
 				sourceQuest = 1126,	-- Hive in the Tower
 				qg = 13220,	-- Layo Starstrike
-				qi = 17346,	-- Encrusted Silithid Object
 				coord = { 81.8, 18.8, MAP.SILITHUS },
 				maps = { MAP.MOONGLADE },
 				lvl = 54,
+				qi = 17346,	-- Encrusted Silithid Object
 			}),
 			q(8782, {	-- Uniform Supplies (A)
-				qi = 21262,	-- Logistics Task Briefing VIII (A)
 				cost = {
 					{ "i", 14048, 2 },	-- Bolt of Runecloth
 					{ "i", 14227, 1 },	-- Ironweb Spider Silk
 					{ "i", 14342, 1 },	-- Mooncloth
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21262,	-- Logistics Task Briefing VIII (A)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8808, {	-- Uniform Supplies (H)
-				qi = 21384,	-- Logistics Task Briefing VIII (H)
 				cost = {
 					{ "i", 14048, 2 },	-- Bolt of Runecloth
 					{ "i", 14227, 1 },	-- Ironweb Spider Silk
 					{ "i", 14342, 1 },	-- Mooncloth
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
+				qi = 21384,	-- Logistics Task Briefing VIII (H)
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
@@ -1523,9 +1523,9 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					8309,	-- Glyph Chasing
 				},
 				qg = 15170,	-- Rutgar Glyphshaper
-				qi = 20463,	-- Glyphed Crystal Prism
 				coord = { 41.2, 88.4, MAP.SILITHUS },
 				lvl = 58,
+				qi = 20463,	-- Glyphed Crystal Prism
 			}),
 			q(8572, {	-- Veteran's Battlegear
 				sourceQuest = 8800,	-- Cenarion Battlegear
@@ -1537,8 +1537,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 20800, 4 },	-- Cenarion Logistics Badge
 					{ "i", 20801, 4 },	-- Cenarion Tactical Badge
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(21181),	-- Grace of Earth
 					i(21182),	-- Band of Earthen Might
@@ -1555,8 +1555,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ "i", 20800, 3 },	-- Cenarion Logistics Badge
 					{ "i", 20801, 7 },	-- Cenarion Tactical Badge
 				},
-				repeatable = true,
 				lvl = 54,
+				repeatable = true,
 				groups = {
 					i(21178),	-- Gloves of Earthen Power
 					i(21179),	-- Band of Earthen Wrath
@@ -1597,11 +1597,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			o(180456, {	-- Lesser Wind Stone
 				description =
 					"Summons one of 4 Abyssal Templars. The ritual requires a Twilight Trappings set. To guarantee that a specific Templar is summoned, a Crest of Beckoning can be used.",
-				cost = {
-					{ "i", 20408, 1 },	-- Twilight Cultist Cowl
-					{ "i", 20406, 1 },	-- Twilight Cultist Mantle
-					{ "i", 20407, 1 },	-- Twilight Cultist Robe
-				},
 				coords = {
 					{ 20.5, 86.2, MAP.SILITHUS },
 					{ 18.2, 81.1, MAP.SILITHUS },
@@ -1609,6 +1604,11 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ 38.3, 46.5, MAP.SILITHUS },
 					{ 27.9, 30.6, MAP.SILITHUS },
 					{ 24.4, 36.0, MAP.SILITHUS },
+				},
+				cost = {
+					{ "i", 20408, 1 },	-- Twilight Cultist Cowl
+					{ "i", 20406, 1 },	-- Twilight Cultist Mantle
+					{ "i", 20407, 1 },	-- Twilight Cultist Robe
 				},
 				groups = {
 					i(20513, {	-- Abyssal Crest
@@ -1656,16 +1656,16 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			o(180461, {	-- Wind Stone
 				description =
 					"Summons one of 4 Abyssal Dukes. The ritual requires a Twilight Trappings set and a medallion of station. To guarantee that a specific Duke is summoned, a Signet of Beckoning can be used.",
+				coords = {
+					{ 17.2, 84.8, MAP.SILITHUS },
+					{ 37.6, 44.8, MAP.SILITHUS },
+					{ 24.7, 32.7, MAP.SILITHUS },
+				},
 				cost = {
 					{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
 					{ "i", 20408, 1 },	-- Twilight Cultist Cowl
 					{ "i", 20406, 1 },	-- Twilight Cultist Mantle
 					{ "i", 20407, 1 },	-- Twilight Cultist Robe
-				},
-				coords = {
-					{ 17.2, 84.8, MAP.SILITHUS },
-					{ 37.6, 44.8, MAP.SILITHUS },
-					{ 24.7, 32.7, MAP.SILITHUS },
 				},
 				groups = {
 					i(20514, {	-- Abyssal Signet
@@ -1714,17 +1714,17 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			o(180466, {	-- Greater Wind Stone
 				description =
 					"Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
+				coords = {
+					{ 18.6, 83.5, MAP.SILITHUS },
+					{ 39.6, 45.1, MAP.SILITHUS },
+					{ 25.6, 34.0, MAP.SILITHUS },
+				},
 				cost = {
 					{ "i", 20451, 1 },	-- Twilight Cultist Ring of Lordship
 					{ "i", 20422, 1 },	-- Twilight Cultist Medallion of Station
 					{ "i", 20408, 1 },	-- Twilight Cultist Cowl
 					{ "i", 20406, 1 },	-- Twilight Cultist Mantle
 					{ "i", 20407, 1 },	-- Twilight Cultist Robe
-				},
-				coords = {
-					{ 18.6, 83.5, MAP.SILITHUS },
-					{ 39.6, 45.1, MAP.SILITHUS },
-					{ 25.6, 34.0, MAP.SILITHUS },
 				},
 				groups = {
 					i(20515, {	-- Abyssal Scepter

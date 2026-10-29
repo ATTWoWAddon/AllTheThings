@@ -163,8 +163,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			}),
 			q(485, {	-- Find OOX-09/HL!
 				description = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
-				qi = 8704,	-- OOX-09/HL Distress Beacon
 				lvl = 43,
+				qi = 8704,	-- OOX-09/HL Distress Beacon
 			}),
 			q(4297, {	-- Food for Baby
 				sourceQuest = 3843,	-- The Newest Member of the Family
@@ -358,10 +358,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(1469, {	-- Rhapsody's Tale
 				sourceQuest = 1452,	-- Rhapsody's Kalimdor Kocktail
 				qg = 5634,	-- Rhapsody Shindigger
-				qi = 6287,	-- Atal'ai Tablet Fragment
 				coord = { 26.8, 48.4, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 6287,	-- Atal'ai Tablet Fragment
 			}),
 			q(2742, {	-- Rin'ji is Trapped!
 				qg = 7780,	-- Rin'ji <Witherbark Troll>
@@ -382,10 +382,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(81, {		-- Ripple Delivery
 				sourceQuest = 77,	-- A Sticky Situation
 				qg = 7801,	-- Gilveradin Sunchaser
-				qi = 8685,	-- Dran's Ripple Delivery
 				coord = { 26.6, 48.4, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 42,
+				qi = 8685,	-- Dran's Ripple Delivery
 			}),
 			q(649, {	-- Ripple Recovery (1/2)
 				qg = 6986,	-- Dran Droffers
@@ -508,10 +508,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(2990, {	-- Thadius Grimshade
 				sourceQuest = 2989,	-- The Altar of Zul
 				qg = 5636,	-- Gryphon Master Talonaxe
-				qi = 9468,	-- Sharpbeak's Feather
 				coord = { 9.8, 44.5, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 9468,	-- Sharpbeak's Feather
 			}),
 			q(2989, {	-- The Altar of Zul
 				sourceQuest = 2988,	-- Witherbark Cages
@@ -550,8 +550,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				},
 				cost = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(2934, {	-- Undamaged Venom Sac
 				sourceQuest = 2933,	-- Venom Bottles
@@ -580,11 +580,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(2938, {	-- Venom to the Undercity
 				sourceQuest = 2937,	-- Summoning Shadra
 				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
-				qi = 9436,	-- Faranell's Parcel
 				coord = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 40,
+				qi = 9436,	-- Faranell's Parcel
 				groups = {
 					i(9649),	-- Royal Highmark Vestments
 					i(9650),	-- Honorguard Chestpiece
