@@ -446,7 +446,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Brown Waterskin
 						providers = {
-							{ "i", 7766 },	-- Filled Brown Waterskin
+							{ "i", 7769 },	-- Filled Brown Waterskin
 							{ "i", 7766 },	-- Empty Brown Waterskin
 						},
 						coord = { 44.0, 77.0, MAP.THE_BARRENS },
