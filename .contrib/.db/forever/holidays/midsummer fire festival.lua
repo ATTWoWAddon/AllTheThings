@@ -158,38 +158,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					i(23323),	-- Crown of the Fire Festival
 				},
 			}),
-			q(9389, {	-- Flickering Flames in the Eastern Kingdoms
-				icon = 134467,
-				qgs = {
-					FESTIVAL_LOREMASTER_ID,
-					FESTIVAL_TALESPINNER_ID,
-				},
-				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
-				maps = {
-					MAP.HILLSBRAD_FOOTHILLS,
-					MAP.SILVERPINE_FOREST,
-					MAP.WESTFALL,
-					MAP.WETLANDS,
-				},
-				groups = {
-					objective(1, {	-- Flame of Hillsbrad
-						coord = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
-					}),
-					objective(2, {	-- Flame of Silverpine
-						coord = { 54.3, 69.6, MAP.SILVERPINE_FOREST },
-					}),
-					objective(3, {	-- Flame of Westfall
-						coord = { 33.2, 80.4, MAP.WESTFALL },
-					}),
-					objective(4, {	-- Flame of the Wetlands
-						coord = { 51.1, 17.2, MAP.WETLANDS },
-					}),
-					i(23211),	-- Toasted Smorc
-					i(23326),	-- Midsummer Sausage
-					i(23327),	-- Fire-toasted Bun
-					i(23435),	-- Elderberry Pie
-				},
-			}),
 			q(9388, {	-- Flickering Flames in Kalimdor
 				icon = 134467,
 				qgs = {
@@ -215,6 +183,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					}),
 					objective(4, {	-- Flame of Stonetalon
 						coord = { 59.6, 70.0, MAP.STONETALON_MOUNTAINS },
+					}),
+					i(23211),	-- Toasted Smorc
+					i(23326),	-- Midsummer Sausage
+					i(23327),	-- Fire-toasted Bun
+					i(23435),	-- Elderberry Pie
+				},
+			}),
+			q(9389, {	-- Flickering Flames in the Eastern Kingdoms
+				icon = 134467,
+				qgs = {
+					FESTIVAL_LOREMASTER_ID,
+					FESTIVAL_TALESPINNER_ID,
+				},
+				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+				maps = {
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
+				},
+				groups = {
+					objective(1, {	-- Flame of Hillsbrad
+						coord = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+					objective(2, {	-- Flame of Silverpine
+						coord = { 54.3, 69.6, MAP.SILVERPINE_FOREST },
+					}),
+					objective(3, {	-- Flame of Westfall
+						coord = { 33.2, 80.4, MAP.WESTFALL },
+					}),
+					objective(4, {	-- Flame of the Wetlands
+						coord = { 51.1, 17.2, MAP.WETLANDS },
 					}),
 					i(23211),	-- Toasted Smorc
 					i(23326),	-- Midsummer Sausage
