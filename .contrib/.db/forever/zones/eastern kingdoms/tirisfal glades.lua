@@ -30,7 +30,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						qg = 1568,	-- Undertaker Mordo
 						coord = { 30.2, 71.6, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
-						isBreadcrumb = true
+						isBreadcrumb = true,
 					}),
 					q(364, {	-- The Mindless Ones
 						sourceQuest = 363,	-- Rude Awakening
