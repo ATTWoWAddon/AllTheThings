@@ -15,10 +15,10 @@ instanceroot(3109, {	-- Manor Mistmantle
 		--[[
 		-- TODO: Encounter IDs aren't in DungeonEncounter yet. Known bosses:
 		--   None found yet.
-		e(, {	-- 
-			creatureID = ,	-- 
+		e(, {	--
+			creatureID = ,	--
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
 		]]--

@@ -17,12 +17,12 @@ instanceroot(78789, {	-- Hyjal Summit
 			
 		}),
 		--[[
-		e(, {	-- 
-			creatureID = ,	-- 
+		e(, {	--
+			creatureID = ,	--
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
-		]]-- 
+		]]--
 	},
 });
