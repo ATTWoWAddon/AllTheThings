@@ -128,7 +128,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Taelan's Hammer
 						providers = {
-							{ "i",  14613 },	-- Taelan's Hammer
+							{ "i", 14613 },	-- Taelan's Hammer
 							{ "o", 177240 },	-- Loose Dirt Mound
 						},
 						coord = { 29.8, 85.6, MAP.EASTERN_PLAGUELANDS },
@@ -144,7 +144,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Symbol of Lost Honor
 						providers = {
-							{ "i",  14625 },	-- Symbol of Lost Honor
+							{ "i", 14625 },	-- Symbol of Lost Honor
 							{ "o", 177264 },	-- Symbol of Lost Honor
 						},
 						coord = { 71.3, 33.9, MAP.EASTERN_PLAGUELANDS },
@@ -165,7 +165,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Of Love and Family
 						providers = {
-							{ "i",  14679 },	-- Of Love and Family
+							{ "i", 14679 },	-- Of Love and Family
 							{ "o", 177287 },	-- Unfinished Painting
 						},
 					}),
@@ -213,7 +213,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Scourge Data
 						providers = {
-							{ "i",  13176 },	-- Scourge Data
+							{ "i", 13176 },	-- Scourge Data
 							{ "o", 176249 },	-- Scourge Data
 						},
 					}),
@@ -237,7 +237,7 @@ instanceroot(236, {	-- Stratholme
 			q(5265, {	-- The Argent Hold
 				sourceQuest = 5264,	-- Lord Maxwell Tyrosus
 				providers = {
-					{ "n",  11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
+					{ "n", 11034 },	-- Lord Maxwell Tyrosus <The Argent Dawn>
 					{ "o", 176317 },	-- The Argent Hold
 				},
 				coord = { 81.6, 58.0, MAP.EASTERN_PLAGUELANDS },

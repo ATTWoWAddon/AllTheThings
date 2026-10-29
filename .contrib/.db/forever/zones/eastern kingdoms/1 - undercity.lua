@@ -270,7 +270,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Balnir Snapdragons
 						providers = {
-							{ "i",   7227 },	-- Balnir Snapdragons
+							{ "i", 7227 },	-- Balnir Snapdragons
 							{ "o", 102985 },	-- Balnir Snapdragons
 						},
 						coord = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
@@ -355,24 +355,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
 						providers = {
-							{ "i",   7292 },	-- Filled Containment Coffer
+							{ "i", 7292 },	-- Filled Containment Coffer
 							{ "o", 103574 },	-- Filled Containment Coffer
-							{ "i",   7247 },	-- Chest of Containment Coffers
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7247 },	-- Chest of Containment Coffers
+							{ "i", 7308 },	-- Cantation of Manifestation
 						},
 						coord = { 53.9, 73.2, MAP.UNDERCITY },
 						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
 						providers = {
-							{ "i",   7247 },	-- Chest of Containment Coffers
+							{ "i", 7247 },	-- Chest of Containment Coffers
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
 						providers = {
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7308 },	-- Cantation of Manifestation
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
@@ -890,7 +890,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4604, {	-- Abigail Sawyer <Bow Merchant>
 				coord = { 54.8, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				} },
@@ -921,7 +921,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4602, {	-- Benijah Fenner
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -950,7 +950,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4569, {	-- Charles Seaton <Blade Merchant>
 				coord = { 77.0, 50.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					-- added all
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -987,7 +987,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4601, {	-- Francis Eliot
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
@@ -1003,7 +1003,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4600, {	-- Geoffrey Hartwell
 				coord = { 58.4, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2520,	-- Broadsword
 					2523,	-- Bullova
 					2528,	-- Falchion
@@ -1019,7 +1019,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5820, {	-- Gillian Moore
 				coord = { 70.6, 59.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -1065,7 +1065,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4556, {	-- Gordon Wendham
 				coord = { 61.4, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
 					2130,	-- Club
@@ -1130,7 +1130,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 				coord = { 64.0, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2371,	-- Battered Leather Belt
 					2373,	-- Battered Leather Boots
 					2374,	-- Battered Leather Bracers
@@ -1187,7 +1187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4557, {	-- Louis Warren
 				coord = { 62.0, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2025,	-- Bearded Axe
 					1198,	-- Claymore
 					2029,	-- Cleaver
@@ -1209,7 +1209,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4580, {	-- Lucille Castleton
 				coord = { 71.4, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -1240,7 +1240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5819, {	-- Mirelle Tremayne
 				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1296,7 +1296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4592, {	-- Nathaniel Steenwick
 				coord = { 77.2, 50.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					2506,	-- Hornwood Recurve Bow
 					2507,	-- Laminated Recurve Bow
@@ -1308,7 +1308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4603, {	-- Nicholas Atwood
 				coord = { 62.2, 27.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
@@ -1339,7 +1339,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 				coord = { 70.6, 28.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -1388,7 +1388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4570, {	-- Sydney Upton <Staff Merchant>
 				coord = { 69.8, 27.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
 				} },
@@ -1409,7 +1409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 				coord = { 62.0, 60.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -1420,7 +1420,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4559, {	-- Timothy Weldon
 				coord = { 63.6, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					17183,	-- Dented Buckler
 					1200,	-- Large Wooden Shield
@@ -1446,7 +1446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4560, {	-- Walter Ellingson
 				coord = { 62.8, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt

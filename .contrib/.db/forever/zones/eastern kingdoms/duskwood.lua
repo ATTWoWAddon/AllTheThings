@@ -332,7 +332,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					objective(1, {	-- 0/1 Abercrombie's Crate
 						providers = {
 							{ "i", 1349 },	-- Abercrombie's Crate
-							{ "o",  119 },	-- Abercrombie's Crate
+							{ "o", 119 },	-- Abercrombie's Crate
 						},
 						coord = { 33.5, 76.5, MAP.DUSKWOOD },
 					}),
@@ -874,7 +874,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 40,
 				qi = 6091,	-- Crate of Power Stones
 			}),
-			q(1477,	{	-- Vital Supplies
+			q(1477, {	-- Vital Supplies
 				qg = 5694,	-- High Sorcerer Andromath
 				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -1110,7 +1110,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(228, {	-- Avette Fellwood <Bowyer>
 				coord = { 73.2, 44.8, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				} },
@@ -1145,7 +1145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(225, {	-- Gavin Gnarltree <Weaponsmith>
 				coord = { 73.6, 49.8, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					929,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
@@ -1216,7 +1216,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(226, {	-- Morg Gnarltree <Armorer>
 				coord = { 73.8, 48.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2446,	-- Kite Shield
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots

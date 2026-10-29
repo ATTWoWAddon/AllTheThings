@@ -76,7 +76,7 @@ instanceroot(233, {	-- Razorfen Downs
 			q(3525, {	-- Extinguishing the Idol
 				sourceQuest = 3523,	-- Scourge of the Downs
 				providers = {
-					{ "n",   8516 },	-- Belnistrasz
+					{ "n", 8516 },	-- Belnistrasz
 					{ "o", 152097 },	-- Belnistrasz's Brazier
 				},
 				lvl = 32,

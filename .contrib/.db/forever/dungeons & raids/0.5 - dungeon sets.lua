@@ -1349,7 +1349,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = {
 				objective(1, {	-- 0/20 Bloodkelp
 					providers = {
-						{ "i",  22094 },	-- Bloodkelp
+						{ "i", 22094 },	-- Bloodkelp
 						{ "o", 181053 },	-- Basket of Bloodkelp
 					},
 					crs = {
@@ -1572,7 +1572,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = {
 				objective(4, {	-- 0/25 Volcanic Ash
 					providers = {
-						{ "i",  22338 },	-- Volcanic Ash
+						{ "i", 22338 },	-- Volcanic Ash
 						{ "o", 181098 },	-- Volcanic Ash
 					},
 					cr = 10078,	-- Terrorspark

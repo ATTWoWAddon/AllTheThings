@@ -23,7 +23,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 		explorationHeader({
 			exploration(1939),	-- Abyssal Sands
 			exploration(1938),	-- Broken Pillar
-			visit_exploration(1941,{ coord={ 62.8,50.9,MAP.TANARIS } }),	-- Caverns of Time
+			visit_exploration(1941, { coord={ 62.8, 50.9, MAP.TANARIS } }),	-- Caverns of Time
 			exploration(2300),	-- Caverns of Time
 			exploration(983),	-- Dunemaul Compound
 			exploration(984),	-- Eastmoon Ruins
@@ -32,9 +32,9 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			exploration(1336),	-- Lost Rigger Cove
 			exploration(1937),	-- Noonshade Ruins
 			exploration(979),	-- Sandsorrow Watch
-			visit_exploration(1940,{ coord={ 62.3,58.9,MAP.TANARIS } }),	-- Southbreak Shore
+			visit_exploration(1940, { coord={ 62.3, 58.9, MAP.TANARIS } }),	-- Southbreak Shore
 			exploration(992),	-- Southmoon Ruins
-			visit_exploration(977,{ coord={ 64.9,21.8,MAP.TANARIS } }),	-- Steamwheedle Port
+			visit_exploration(977, { coord={ 64.9, 21.8, MAP.TANARIS } }),	-- Steamwheedle Port
 			exploration(981),	-- The Gaping Chasm
 			exploration(982),	-- The Noxious Lair
 			exploration(980),	-- Thistleshrub Valley
@@ -225,7 +225,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2882, {	-- Cuergo's Gold
 				providers = {
-					{ "i",   9254 },	-- Cuergo's Treasure Map
+					{ "i", 9254 },	-- Cuergo's Treasure Map
 					{ "o", 142189 },	-- Inconspicuous Landmark
 				},
 				coord = { 55.4, 92.2, MAP.TANARIS },
@@ -314,7 +314,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/30 Gahz'ridian Ornament
 						providers = {
-							{ "i",   8443 },	-- Gahz'ridian Ornament
+							{ "i", 8443 },	-- Gahz'ridian Ornament
 							{ "o", 140971 },	-- Gahz'ridian
 						},
 					}),
@@ -439,7 +439,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				sourceQuest = 3913,	-- A Grave Situation
 				providers = {
 					{ "o", 148504 },	-- A Conspicuous Gravestone
-					{ "i",  11162 },	-- Linken's Superior Sword
+					{ "i", 11162 },	-- Linken's Superior Sword
 				},
 				coord = { 53.9, 29.0, MAP.TANARIS },
 				maps = { MAP.UNGORO_CRATER },
@@ -512,8 +512,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Gorishi Queen Brain
 						providers = {
-							{ "i",  11835 },	-- Gorishi Queen Brain
-							{ "i",  11833 },	-- Gorishi Queen Lure
+							{ "i", 11835 },	-- Gorishi Queen Brain
+							{ "i", 11833 },	-- Gorishi Queen Lure
 							{ "o", 174792 },	-- Gorishi Silithid Crystal
 						},
 						coord = { 44.6, 81.6, MAP.UNGORO_CRATER },
@@ -656,7 +656,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Violet Tragan
 						providers = {
-							{ "i",   8526 },	-- Violet Tragan
+							{ "i", 8526 },	-- Violet Tragan
 							{ "o", 141853 },	-- Violet Tragan
 						},
 						coord = { 40.0, 59.0, MAP.THE_HINTERLANDS },
@@ -677,7 +677,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Stoley's Shipment
 						providers = {
-							{ "i",   9244 },	-- Stoley's Shipment
+							{ "i", 9244 },	-- Stoley's Shipment
 							{ "o", 142181 },	-- Stolen Cargo
 						},
 						coord = { 72.2, 46.7, MAP.TANARIS },
@@ -815,7 +815,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Scrimshank's Surveying Gear
 						providers = {
-							{ "i",   8593 },	-- Scrimshank's Surveying Gear
+							{ "i", 8593 },	-- Scrimshank's Surveying Gear
 							{ "o", 144053 },	-- Scrimshank's Surveying Gear
 						},
 						coord = { 56.0, 71.0, MAP.TANARIS },
@@ -834,7 +834,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Stone Circle
 						providers = {
-							{ "i",  10556 },	-- Stone Circle
+							{ "i", 10556 },	-- Stone Circle
 							{ "o", 149036 },	-- Marvon's Chest
 						},
 						coord = { 62.5, 38.5, MAP.THE_BARRENS },

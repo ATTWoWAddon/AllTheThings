@@ -173,8 +173,8 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			q(3446, {	-- Into the Depths
 				sourceQuest = 3444,	-- The Stone Circle
 				providers = {
-					{ "n",  7771 },	-- Marvon Rivetseeker
-					{ "i",  10466 },	-- Atal'ai Stone Circle
+					{ "n", 7771 },	-- Marvon Rivetseeker
+					{ "i", 10466 },	-- Atal'ai Stone Circle
 					{ "o", 148836 },	-- Altar of Hakkar
 				},
 				coord = { 52.6, 45.8, MAP.TANARIS },
@@ -229,7 +229,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			q(3373, {	-- The Essence of Eranikus
 				description = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 				providers = {
-					{ "i",  10454 },	-- Essence of Eranikus
+					{ "i", 10454 },	-- Essence of Eranikus
 					{ "o", 148512 },	-- Essence Font
 				},
 				lvl = 48,
@@ -411,7 +411,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				q(3447, {	-- Secret of the Circle
 					sourceQuest = 3444,	-- The Stone Circle
 					providers = {
-						{ "n",   7771 },	-- Marvon Rivetseeker
+						{ "n", 7771 },	-- Marvon Rivetseeker
 						{ "o", 148838 },	-- Idol of Hakkar
 					},
 					coord = { 52.6, 45.8, MAP.TANARIS },

@@ -494,21 +494,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Sack of Barley
 						providers = {
-							{ "i",   738 },	-- Sack of Barley (QI!)
+							{ "i", 738 },	-- Sack of Barley (QI!)
 							{ "o", 50936 },	-- Sack of Barley
 						},
 						coord = { 62.5, 23.3, MAP.SWAMP_OF_SORROWS },
 					}),
 					objective(2, {	-- 0/1 Sack of Corn
 						providers = {
-							{ "i",   739 },	-- Sack of Corn (QI!)
+							{ "i", 739 },	-- Sack of Corn (QI!)
 							{ "o", 50935 },	-- Sack of Corn
 						},
 						coord = { 65.8, 36.7, MAP.TANARIS },
 					}),
 					objective(3, {	-- 0/1 Sack of Rye
 						providers = {
-							{ "i",   740 },	-- Sack of Rye (QI!)
+							{ "i", 740 },	-- Sack of Rye (QI!)
 							{ "o", 50937 },	-- Sack of Rye
 						},
 						coord = { 39.9, 66.2, MAP.THE_HINTERLANDS },
@@ -548,7 +548,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Bundle of Charred Oak
 						providers = {
-							{ "i",   743 },	-- Bundle of Charred Oak (QI!)
+							{ "i", 743 },	-- Bundle of Charred Oak (QI!)
 							{ "o", 50982 },	-- The Charred Oak
 						},
 						coord = { 54.6, 50.7, MAP.SEARING_GORGE },

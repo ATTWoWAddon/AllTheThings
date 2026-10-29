@@ -11,14 +11,14 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			ach(848),	-- Explore Desolace
 		}),
 		explorationHeader({
-			visit_exploration(2405,{ coord={ 41.6,29.8,MAP.DESOLACE } }),	-- Ethel Rethor
+			visit_exploration(2405, { coord={ 41.6, 29.8, MAP.DESOLACE } }),	-- Ethel Rethor
 			exploration(606),	-- Gelkis Village
 			exploration(596),	-- Kodo Graveyard
 			exploration(609),	-- Kolkar Village
 			exploration(2407),	-- Kormek's Hut
 			exploration(604),	-- Magram Village / Shok'Thokar [CATA+]
 			exploration(602),	-- Mannoroc Coven
-			visit_exploration(2100,{ coord={ 29.4,62.3,MAP.DESOLACE } }),	-- Maraudon
+			visit_exploration(2100, { coord={ 29.4, 62.3, MAP.DESOLACE } }),	-- Maraudon
 			exploration(608),	-- Nijel's Point
 			exploration(2406),	-- Ranazjar Isle
 			exploration(603),	-- Sargeron
@@ -222,7 +222,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Kodo Bone
 						providers = {
-							{ "i",  13703 },	-- Kodo Bone
+							{ "i", 13703 },	-- Kodo Bone
 							{ "o", 176751 },	-- Kodo Bones
 						},
 					}),
@@ -237,7 +237,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Book of the Ancients
 						providers = {
-							{ "i",  15803 },	-- Book of the Ancients
+							{ "i", 15803 },	-- Book of the Ancients
 							{ "o", 177673 },	-- Serpent Statue
 						},
 						coord = { 28.2, 6.4, MAP.DESOLACE },
@@ -260,7 +260,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/3 Broken Tears
 						providers = {
-							{ "i",  6083 },	-- Broken Tears
+							{ "i", 6083 },	-- Broken Tears
 							{ "o", 22246 },	-- Tear of Theradras
 						},
 						crs = {
@@ -465,8 +465,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Soft-shelled Clam Meat
 						providers = {
-							{ "i",  15924 },	-- Soft-shelled Clam Meat
-							{ "i",  15874 },	-- Soft-shelled Clam
+							{ "i", 15924 },	-- Soft-shelled Clam Meat
+							{ "i", 15874 },	-- Soft-shelled Clam
 							{ "o", 177784 },	-- Giant Softshell Clam
 						},
 						cr = 12347,	-- Enraged Reef Crawler
@@ -592,8 +592,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Demon Box
 						providers = {
-							{ "i",  13542 },	-- Demon Box
-							{ "i",  14523 },	-- Demon Pick
+							{ "i", 13542 },	-- Demon Box
+							{ "i", 14523 },	-- Demon Pick
 							{ "o", 176581 },	-- Hand of Iruxos Crystal
 						},
 						coord = { 55.0, 26.4, MAP.DESOLACE },
@@ -888,7 +888,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/6 Portals Banished
 						providers = {
-							{ "i",  14547 },	-- Hand of Iruxos
+							{ "i", 14547 },	-- Hand of Iruxos
 							{ "o", 177243 },	-- Demon Portal
 						},
 						cr = 11937,	-- Demon Portal Guardian

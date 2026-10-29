@@ -244,7 +244,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(2701, {	-- Heroes of Old (2/2)
 				sourceQuest = 2702,	-- Heroes of Old (1/2)
 				providers = {
-					{ "n",   7750 },	-- Corporal Thund Splithoof
+					{ "n", 7750 },	-- Corporal Thund Splithoof
 					{ "o", 141980 },	-- Spectral Lockbox
 				},
 				coord = { 33.5, 66.0, MAP.SWAMP_OF_SORROWS },
@@ -439,7 +439,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				groups = {
 					objective(1, {	-- 0/9 Servant of Razelikh slain
 						providers = {
-							{ "n",   7668 },	-- Servant of Razelikh
+							{ "n", 7668 },	-- Servant of Razelikh
 							{ "o", 141812 },	-- Stone of Binding
 						},
 						coords = {
@@ -450,7 +450,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 					objective(2, {	-- 0/3 Servant of Grol slain
 						providers = {
-							{ "n",   7669 },	-- Servant of Grol
+							{ "n", 7669 },	-- Servant of Grol
 							{ "o", 141857 },	-- Stone of Binding
 						},
 						coords = {
@@ -460,7 +460,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 					objective(3, {	-- 0/3 Servant of Allistarj slain
 						providers = {
-							{ "n",   7670 },	-- Servant of Allistarj
+							{ "n", 7670 },	-- Servant of Allistarj
 							{ "o", 141858 },	-- Stone of Binding
 						},
 						coords = {
@@ -471,7 +471,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 					objective(4, {	-- 0/3 Servant of Sevine slain
 						providers = {
-							{ "n",   7671 },	-- Servant of Sevine
+							{ "n", 7671 },	-- Servant of Sevine
 							{ "o", 141859 },	-- Stone of Binding
 						},
 						coords = {
