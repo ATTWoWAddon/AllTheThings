@@ -218,7 +218,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						groups = {
 							objective(1, {	-- 0/6 Scavenged Goods
 								providers = {
-									{ "i",  11127 },	-- Scavenged Goods
+									{ "i", 11127 },	-- Scavenged Goods
 									{ "o", 164662 },	-- Equipment Boxes
 								},
 							}),
@@ -243,7 +243,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						groups = {
 							objective(1, {	-- Samuel's Remains Buried
 								providers = {
-									{ "i",  16333 },	-- Samuel's Remains
+									{ "i", 16333 },	-- Samuel's Remains
 									{ "o", 178090 },	-- Marla's Grave
 								},
 								coords = {
@@ -907,28 +907,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					objective(1, {	-- 0/1 Agamand Family Axe
 						providers = {
-							{ "i",   7567 },	-- Agamand Family Axe
+							{ "i", 7567 },	-- Agamand Family Axe
 							{ "o", 105170 },	-- Agamand Weapon Rack
 						},
 						coord = { 51.7, 25.7, MAP.TIRISFAL_GLADES },
 					}),
 					objective(2, {	-- 0/1 Agamand Family Dagger
 						providers = {
-							{ "i",   7568 },	-- Agamand Family Dagger
+							{ "i", 7568 },	-- Agamand Family Dagger
 							{ "o", 105172 },	-- Agamand Weapon Rack
 						},
 						coord = { 52.6, 26.9, MAP.TIRISFAL_GLADES },
 					}),
 					objective(3, {	-- 0/1 Agamand Family Mace
 						providers = {
-							{ "i",   7569 },	-- Agamand Family Mace
+							{ "i", 7569 },	-- Agamand Family Mace
 							{ "o", 105171 },	-- Agamand Weapon Rack
 						},
 						coord = { 51.9, 27.1, MAP.TIRISFAL_GLADES },
 					}),
 					objective(4, {	-- 0/1 Agamand Family Sword
 						providers = {
-							{ "i",   7566 },	-- Agamand Family Sword
+							{ "i", 7566 },	-- Agamand Family Sword
 							{ "o", 105169 },	-- Agamand Weapon Rack
 						},
 						coord = { 52.6, 25.9, MAP.TIRISFAL_GLADES },
@@ -957,7 +957,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					objective(1, {	-- 0/3 Gloom Weed
 						providers = {
-							{ "i",  12737 },	-- Gloom Weed
+							{ "i", 12737 },	-- Gloom Weed
 							{ "o", 175566 },	-- Gloom Weed
 						},
 						coords = {

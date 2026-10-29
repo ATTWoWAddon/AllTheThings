@@ -572,7 +572,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Gaea Seed
 						providers = {
-							{ "i",  16205 },	-- Gaea Seed
+							{ "i", 16205 },	-- Gaea Seed
 							{ "o", 177926 },	-- Gaea Seed
 						},
 						coord = { 48.0, 39.8, MAP.STONETALON_MOUNTAINS },
@@ -588,7 +588,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Gaea seed planted
 						providers = {
-							{ "i",  16208 },	-- Enchanted Gaea Seeds
+							{ "i", 16208 },	-- Enchanted Gaea Seeds
 							{ "o", 177929 },	-- Gaea Dirt Mound
 						},
 						coord = { 31.0, 61.0, MAP.STONETALON_MOUNTAINS },
@@ -628,7 +628,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Resonite Crystal
 						providers = {
-							{ "i",  16581 },	-- Resonite Crystal
+							{ "i", 16581 },	-- Resonite Crystal
 							{ "o", 178104 },	-- Resonite Crystal
 						},
 						coord = { 60.0, 90.1, MAP.STONETALON_MOUNTAINS },
@@ -658,9 +658,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 Goggeroc slain
 						providers = {
-							{ "n",  11920 },	-- Goggeroc
+							{ "n", 11920 },	-- Goggeroc
 							{ "o", 178145 },	-- Resonite Cask
-							{ "i",  16603 },	-- Enchanted Resonite Crystal
+							{ "i", 16603 },	-- Enchanted Resonite Crystal
 						},
 						coord = { 57.4, 89.4, MAP.STONETALON_MOUNTAINS },
 					}),

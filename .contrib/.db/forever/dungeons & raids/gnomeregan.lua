@@ -333,7 +333,7 @@ instanceroot(231, {	-- Gnomeregan
 				groups = {
 					objective(1, {	-- 0/12 Essential Artificial
 						providers = {
-							{ "i",   9278 },	-- Essential Artificial
+							{ "i", 9278 },	-- Essential Artificial
 							{ "o", 142344 },	-- Artificial Extrapolator
 						},
 						description = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
@@ -458,7 +458,7 @@ instanceroot(231, {	-- Gnomeregan
 				groups = {
 					objective(1, {	-- 0/1 Rig Blueprints
 						providers = {
-							{ "i",   9153 },	-- Rig Blueprints
+							{ "i", 9153 },	-- Rig Blueprints
 							{ "o", 142477 },	-- Thermaplugg's Safe
 						},
 					}),

@@ -57,7 +57,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Bijou's Belongings
 						providers = {
-							{ "i",  12345 },	-- Bijou's Belongings
+							{ "i", 12345 },	-- Bijou's Belongings
 							{ "o", 175334 },	-- Bijou's Belongings
 						},
 					}),
@@ -79,8 +79,8 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 			q(7761, {	-- Blackhand's Command
 				providers = {
-					{ "n",   9046 },	-- Scarshield Quartermaster <Scarshield Legion>
-					{ "i",  18987 },	-- Blackhand's Command
+					{ "n", 9046 },	-- Scarshield Quartermaster <Scarshield Legion>
+					{ "i", 18987 },	-- Blackhand's Command
 					{ "o", 179880 },	-- Drakkisath's Brand
 				},
 				coord = { 34.9, 27.9, MAP.BURNING_STEPPES },
@@ -231,7 +231,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/8 Collected Dragon Egg
 						providers = {
-							{ "i",  12241 },	-- Collected Dragon Egg
+							{ "i", 12241 },	-- Collected Dragon Egg
 							{ "o", 175124 },	-- Rookery Egg
 						},
 						cost = {
@@ -249,7 +249,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- Test the Eggscilliscope Prototype
 						providers = {
-							{ "i",  12286 },	-- Eggscilloscope Prototype
+							{ "i", 12286 },	-- Eggscilloscope Prototype
 							{ "o", 175124 },	-- Rookery Egg
 						},
 					}),
@@ -293,7 +293,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/15 Spire Spider Egg
 						providers = {
-							{ "i",  12530 },	-- Spire Spider Egg
+							{ "i", 12530 },	-- Spire Spider Egg
 							{ "o", 175606 },	-- Spire Spider Egg
 						},
 						description = "Interacting with a spider egg may spawn baby spiders, beware!",
@@ -616,13 +616,13 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Fifth Mosh'aru Tablet
 						providers = {
-							{ "i",  12740 },	-- Fifth Mosh'aru Tablet
+							{ "i", 12740 },	-- Fifth Mosh'aru Tablet
 							{ "o", 175949 },	-- Fifth Mosh'aru Tablet
 						},
 					}),
 					objective(2, {	-- 0/1 Sixth Mosh'aru Tablet
 						providers = {
-							{ "i",  12741 },	-- Sixth Mosh'aru Tablet
+							{ "i", 12741 },	-- Sixth Mosh'aru Tablet
 							{ "o", 175950 },	-- Sixth Mosh'aru Tablet
 						},
 					}),
@@ -643,14 +643,14 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Third Mosh'aru Tablet
 						providers = {
-							{ "i",  12411 },	-- Third Mosh'aru Tablet
+							{ "i", 12411 },	-- Third Mosh'aru Tablet
 							{ "o", 175487 },	-- Third Mosh'aru Tablet
 						},
 						coord = { 72.4, 13.0, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Fourth Mosh'aru Tablet
 						providers = {
-							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
+							{ "i", 12412 },	-- Fourth Mosh'aru Tablet
 							{ "o", 175488 },	-- Fourth Mosh'aru Tablet
 						},
 						coord = { 72.7, 15.7, MAP.EASTERN_PLAGUELANDS },
@@ -829,7 +829,7 @@ instanceroot(229, {	-- Blackrock Spire
 					}),
 					objective(4, {	-- 0/1 Important Blackrock Documents
 						providers = {
-							{ "i",  12562 },	-- Important Blackrock Documents
+							{ "i", 12562 },	-- Important Blackrock Documents
 							{ "o", 175785 },	-- Inconspicuous Documents
 						},
 						description = "On the ground next to Overlord Wyrmthalak.",

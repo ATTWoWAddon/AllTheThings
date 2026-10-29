@@ -783,8 +783,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Encrusted Silithid Object
 						providers = {
-							{ "i",  17346 },	-- Encrusted Silithid Object
-							{ "i",  17345 },	-- Silithid Goo
+							{ "i", 17346 },	-- Encrusted Silithid Object
+							{ "i", 17345 },	-- Silithid Goo
 							{ "o", 178553 },	-- Hive'Ashi Pod
 						},
 						coord = { 60.3, 52.6, MAP.SILITHUS },
@@ -924,7 +924,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Noggle's Satchel
 						providers = {
-							{ "i",  20379 },	-- Noggle's Satchel
+							{ "i", 20379 },	-- Noggle's Satchel
 							{ "o", 180435 },	-- Noggle's Satchel
 						},
 						coord = { 44.7, 91.5, MAP.SILITHUS },
@@ -1050,7 +1050,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				sourceQuest = 8307,	-- Desert Recipe
 				providers = {
 					{ "o", 180503 },	-- Sandy Cookbook
-					{ "i",  20467 },	-- Torn Recipe Page
+					{ "i", 20467 },	-- Torn Recipe Page
 				},
 				coord = { 37.9, 45.3, MAP.SILITHUS },
 				requireSkill = COOKING,
@@ -1400,7 +1400,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/8 Twilight Tablet Fragment
 						providers = {
-							{ "i",  20378 },	-- Twilight Tablet Fragment
+							{ "i", 20378 },	-- Twilight Tablet Fragment
 							{ "o", 180436 },	-- Twilight Tablet Fragment
 							{ "o", 180501 },	-- Twilight Tablet Fragment
 						},
@@ -2077,7 +2077,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			n(15419, {	-- Kania <Enchanting Supplies>
 				coord = { 52.0, 39.7, MAP.SILITHUS },
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)

@@ -265,33 +265,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Rubbing: Rune of Beth'Amara
 						providers = {
-							{ "i",  10563 },	-- Rubbing: Rune of Beth'Amara
+							{ "i", 10563 },	-- Rubbing: Rune of Beth'Amara
 							{ "o", 149481 },	-- Rune of Beth'Amara
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i", 10445 },	-- Drawing Kit
 						},
 						coord = { 36.0, 53.0, MAP.AZSHARA },
 					}),
 					objective(2, {	-- 0/1 Rubbing: Rune of Jin'yael
 						providers = {
-							{ "i",  10564 },	-- Rubbing: Rune of Jin'yael
+							{ "i", 10564 },	-- Rubbing: Rune of Jin'yael
 							{ "o", 149480 },	-- Rune of Jin'yael
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i", 10445 },	-- Drawing Kit
 						},
 						coord = { 39.0, 50.0, MAP.AZSHARA },
 					}),
 					objective(3, {	-- 0/1 Rubbing: Rune of Markri
 						providers = {
-							{ "i",  10565 },	-- Rubbing: Rune of Markri
+							{ "i", 10565 },	-- Rubbing: Rune of Markri
 							{ "o", 149482 },	-- Rune of Markri
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i", 10445 },	-- Drawing Kit
 						},
 						coord = { 39.0, 55.0, MAP.AZSHARA },
 					}),
 					objective(4, {	-- 0/1 Rubbing: Rune of Sael'hai
 						providers = {
-							{ "i",  10566 },	-- Rubbing: Rune of Sael'hai
+							{ "i", 10566 },	-- Rubbing: Rune of Sael'hai
 							{ "o", 149483 },	-- Rune of Sael'hai
-							{ "i",  10445 },	-- Drawing Kit
+							{ "i", 10445 },	-- Drawing Kit
 						},
 						coord = { 42.0, 64.0, MAP.AZSHARA },
 					}),
@@ -731,7 +731,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Mage-tastic Gizmonitor
 						providers = {
-							{ "i",   7226 },	-- Mage-tastic Gizmonitor
+							{ "i", 7226 },	-- Mage-tastic Gizmonitor
 							{ "o", 102984 },	-- Bink's Toolbox
 						},
 						coord = { 27.7, 36.4, MAP.DUN_MOROGH },

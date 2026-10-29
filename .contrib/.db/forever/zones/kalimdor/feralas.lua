@@ -399,7 +399,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				groups = {
 					objective(1, {	-- 0/12 Gordunni Cobalt
 						providers = {
-							{ "i",   9463 },	-- Gordunni Cobalt
+							{ "i", 9463 },	-- Gordunni Cobalt
 							{ "o", 144064 },	-- Gordunni Dirt Mound
 						},
 						cost = { { "i", 9466, 1 } },	-- Orwin's Shovel
@@ -755,7 +755,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				sourceQuest = 2902,	-- Woodpaw Investigation
 				providers = {
 					{ "o", 142195 },	-- Woodpaw Battle Map
-					{ "i",   9266 },	-- Woodpaw Battle Plans
+					{ "i", 9266 },	-- Woodpaw Battle Plans
 				},
 				coord = { 71.6, 55.9, MAP.FERALAS },
 				races = HORDE_ONLY,
@@ -782,7 +782,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(2978, {	-- The Gordunni Scroll
 				providers = {
-					{ "i",   9370 },	-- Gordunni Scroll
+					{ "i", 9370 },	-- Gordunni Scroll
 					{ "o", 143980 },	-- Gordunni Scroll
 				},
 				coords = {
@@ -1064,7 +1064,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				groups = {
 					objective(1, {	-- Shay's Bell
 						providers = {
-							{ "i",   9189 },	-- Shay's Bell
+							{ "i", 9189 },	-- Shay's Bell
 							{ "o", 144054 },	-- Shay's Chest
 						},
 					}),

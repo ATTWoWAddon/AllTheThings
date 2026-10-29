@@ -1064,24 +1064,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
 						providers = {
-							{ "i",   7292 },	-- Filled Containment Coffer
+							{ "i", 7292 },	-- Filled Containment Coffer
 							{ "o", 103574 },	-- Filled Containment Coffer
-							{ "i",   7247 },	-- Chest of Containment Coffers
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7247 },	-- Chest of Containment Coffers
+							{ "i", 7308 },	-- Cantation of Manifestation
 						},
 						coord = { 51.0, 95.0, MAP.STORMWIND_CITY },
 						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
 						providers = {
-							{ "i",   7247 },	-- Chest of Containment Coffers
+							{ "i", 7247 },	-- Chest of Containment Coffers
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
 						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
 						providers = {
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7308 },	-- Cantation of Manifestation
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
 						coord = { 49.6, 85.4, MAP.STORMWIND_CITY },
@@ -1099,7 +1099,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(2, {	-- 0/2 Clara's Fresh Apple
 						providers = {
-							{ "i",   8683 },	-- Clara's Fresh Apple
+							{ "i", 8683 },	-- Clara's Fresh Apple
 							{ "o", 142076 },	-- Clara's Fresh Apples
 						},
 						coord = { 34.0, 57.2, MAP.ELWYNN_FOREST },
@@ -1917,7 +1917,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 					objective(4, {	-- 0/1 Spool of Light Chartreuse Silk Thread
 						providers = {
-							{ "i",   8431 },	-- Spool of Light Chartreuse Silk Thread
+							{ "i", 8431 },	-- Spool of Light Chartreuse Silk Thread
 							{ "o", 140911 },	-- Spool of Light Chartreuse Silk Thread
 						},
 						coord = { 50.4, 60.2, MAP.STORMWIND_CITY },
@@ -1961,7 +1961,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					objective(1, {	-- 0/1 Ur's Treatise on Shadow Magic
 						providers = {
-							{ "i",   7266 },	-- Ur's Treatise on Shadow Magic
+							{ "i", 7266 },	-- Ur's Treatise on Shadow Magic
 							{ "o", 103628 },	-- Ur's Treatise on Shadow Magic
 						},
 						coord = { 70.6, 37.6, MAP.REDRIDGE_MOUNTAINS },

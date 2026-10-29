@@ -182,7 +182,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							objective(1, {	-- 0/8 Milly's Harvest
 								providers = {
 									{ "o", 161557 },	-- Milly's Harvest
-									{ "i",  11119 },	-- Milly's Harvest (QI!)
+									{ "i", 11119 },	-- Milly's Harvest (QI!)
 								},
 							}),
 						},
@@ -331,7 +331,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						groups = {
 							objective(1, {	-- 0/1 Powers of the Void
 								providers = {
-									{ "i",  6785 },	-- Powers of the Void (QI!)
+									{ "i", 6785 },	-- Powers of the Void (QI!)
 									{ "o", 83763 },	-- Stolen Books
 								},
 								coord = { 56.7, 44.0, MAP.ELWYNN_FOREST },
@@ -435,7 +435,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			exploration(797),	-- Jerod's Landing
 			visit_exploration(92, { coord={ 32.1, 58.2, MAP.ELWYNN_FOREST } }),	-- Mirror Lake
 			visit_exploration(89, { coord={ 31.6, 64.8, MAP.ELWYNN_FOREST } }),	-- Mirror Lake Orchard
-			visit_exploration(9,   { coord={ 45.5, 48.7, MAP.ELWYNN_FOREST } }),	-- Northshire Valley
+			visit_exploration(9, { coord={ 45.5, 48.7, MAP.ELWYNN_FOREST } }),	-- Northshire Valley
 			exploration(798),	-- Ridgepoint Tower
 			exploration(86),	-- Stone Cairn Lake
 			exploration(1519),	-- Stormwind City
@@ -468,7 +468,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/8 Bundle of Wood
 						providers = {
-							{ "i",  13872 },	-- Bundle of Wood (QI!)
+							{ "i", 13872 },	-- Bundle of Wood (QI!)
 							{ "o", 176793 },	-- Bundle of Wood
 						},
 					}),
@@ -997,7 +997,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Marshal Haggard's Badge
 						providers = {
-							{ "i",  6782 },	-- Marshal Haggard's Badge (QI!)
+							{ "i", 6782 },	-- Marshal Haggard's Badge (QI!)
 							{ "o", 85563 },	-- Dead-tooth's Strongbox
 						},
 						coord = { 89.2, 80.6, MAP.ELWYNN_FOREST },
@@ -1377,7 +1377,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(71, {	-- Report to Thomas
 				sourceQuest = 45,	-- Discover Rolf's Fate
-				provider = { "o",  56 },	-- Rolf's corpse
+				provider = { "o", 56 },	-- Rolf's corpse
 				coord = { 79.8, 55.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 7,

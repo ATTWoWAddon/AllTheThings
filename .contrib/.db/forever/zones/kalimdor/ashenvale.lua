@@ -821,7 +821,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/8 Troll Charm
 						providers = {
-							{ "i",  16602 },	-- Troll Charm
+							{ "i", 16602 },	-- Troll Charm
 							{ "o", 178144 },	-- Troll Chest
 						},
 						coord = { 40.8, 32.9, MAP.ASHENVALE },
@@ -970,14 +970,14 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 					objective(2, {	-- 0/1 Warsong Axe Shipment
 						providers = {
-							{ "i",  16745 },	-- Warsong Axe Shipment
+							{ "i", 16745 },	-- Warsong Axe Shipment
 							{ "o", 178204 },	-- Warsong Axe Shipment
 						},
 						coord = { 25.6, 73.4, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(3, {	-- 0/1 Warsong Oil
 						providers = {
-							{ "i",  16744 },	-- Warsong Oil
+							{ "i", 16744 },	-- Warsong Oil
 							{ "o", 178195 },	-- Warsong Oil
 						},
 						coords = {
@@ -1023,7 +1023,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Murgut's Totem
 						providers = {
-							{ "i",  16976 },	-- Murgut's Totem
+							{ "i", 16976 },	-- Murgut's Totem
 							{ "o", 178227 },	-- Murgut's Totem Basket
 						},
 						coord = { 56.5, 63.5, MAP.ASHENVALE },
@@ -1042,7 +1042,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Vorsha the Lasher slain
 						providers = {
-							{ "n",  12940 },	-- Vorsha the Lasher
+							{ "n", 12940 },	-- Vorsha the Lasher
 							{ "o", 178247 },	-- Naga Brazier
 						},
 						coord = { 9.6, 27.6, MAP.ASHENVALE },

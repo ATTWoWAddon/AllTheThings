@@ -94,7 +94,7 @@ instanceroot(241, {	-- Zul'Farrak
 				groups = {
 					objective(1, {	-- 0/1 Ancient Egg
 						providers = {
-							{ "i",  12402 },	-- Ancient Egg
+							{ "i", 12402 },	-- Ancient Egg
 							{ "o", 175889 },	-- Ancient Egg
 						},
 						coord = { 57.5, 86.7, MAP.THE_HINTERLANDS },

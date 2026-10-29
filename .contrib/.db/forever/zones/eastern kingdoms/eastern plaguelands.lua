@@ -125,7 +125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Augustus' Receipt Book
 						providers = {
-							{ "i",  15884 },	-- Augustus' Receipt Book
+							{ "i", 15884 },	-- Augustus' Receipt Book
 							{ "o", 177789 },	-- Augustus' Receipt Book
 						},
 						coord = { 17.5, 31.2, MAP.EASTERN_PLAGUELANDS },
@@ -450,7 +450,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Sacred Highborne Writings
 						providers = {
-							{ "i",  13313 },	-- Sacred Highborne Writings
+							{ "i", 13313 },	-- Sacred Highborne Writings
 							{ "o", 176356 },	-- Sacred Highborne Writings
 						},
 						coord = { 41.4, 52.5, MAP.AZSHARA },
@@ -471,9 +471,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(3, {	-- 0/1 Vial of Dire Water
 						providers = {
-							{ "i",  16973 },	-- Vial of Dire Water
+							{ "i", 16973 },	-- Vial of Dire Water
 							{ "o", 178224 },	-- Dire Pool
-							{ "i",  16974 },	-- Empty Water Vial
+							{ "i", 16974 },	-- Empty Water Vial
 						},
 						coord = { 42.70, 68.63, MAP.FERALAS },
 					}),
@@ -508,14 +508,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Davil's Libram
 						providers = {
-							{ "i",  12954 },	-- Davil's Libram
+							{ "i", 12954 },	-- Davil's Libram
 							{ "o", 176206 },	-- Davil's Libram
 						},
 						coord = { 42.4, 18.9, MAP.WESTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Redpath's Shield
 						providers = {
-							{ "i",  12955 },	-- Redpath's Shield
+							{ "i", 12955 },	-- Redpath's Shield
 							{ "o", 176207 },	-- Redpath's Shield
 						},
 						coord = { 63.7, 57.2, MAP.WESTERN_PLAGUELANDS },
@@ -525,9 +525,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			q(5942, {	-- Hidden Treasures
 				sourceQuest = 5721,	-- The Battle of Darrowshire
 				providers = {
-					{ "n",  10926 },	-- Pamela Redpath
+					{ "n", 10926 },	-- Pamela Redpath
 					{ "o", 177544 },	-- Joseph's Chest
-					{ "i",  15328 },	-- Joseph's Key
+					{ "i", 15328 },	-- Joseph's Key
 				},
 				coord = { 36.4, 90.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
@@ -868,7 +868,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					}),
 					objective(4, {	-- 0/1 Quel'Thalas Registry
 						providers = {
-							{ "i",  15847 },	-- Quel'Thalas Registry
+							{ "i", 15847 },	-- Quel'Thalas Registry
 							{ "o", 177747 },	-- Quel'Thalas Registry
 						},
 						coord = { 52.1, 18.5, MAP.EASTERN_PLAGUELANDS },
@@ -976,14 +976,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Skull of Horgus
 						providers = {
-							{ "i",  12956 },	-- Skull of Horgus
+							{ "i", 12956 },	-- Skull of Horgus
 							{ "o", 176208 },	-- Horgus' Skull
 						},
 						coord = { 51.1, 49.9, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Shattered Sword of Marduk
 						providers = {
-							{ "i",  12957 },	-- Shattered Sword of Marduk
+							{ "i", 12957 },	-- Shattered Sword of Marduk
 							{ "o", 176209 },	-- Shattered Sword of Marduk
 						},
 						coord = { 53.9, 65.8, MAP.EASTERN_PLAGUELANDS },

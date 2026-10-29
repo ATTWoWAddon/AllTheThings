@@ -670,21 +670,21 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				groups = {
 					objective(1, {	-- 0/1 Secret Note #1
 						providers = {
-							{ "i",  12765 },	-- Secret Note #1
+							{ "i", 12765 },	-- Secret Note #1
 							{ "o", 176344 },	-- Document Chest #1
 						},
 						coord = { 32.0, 33.0, MAP.THOUSAND_NEEDLES },
 					}),
 					objective(2, {	-- 0/1 Secret Note #2
 						providers = {
-							{ "i",  12766 },	-- Secret Note #2
+							{ "i", 12766 },	-- Secret Note #2
 							{ "o", 190483 },	-- Document Chest #2
 						},
 						coord = { 34.0, 39.0, MAP.THOUSAND_NEEDLES },
 					}),
 					objective(3, {	-- 0/1 Secret Note #3
 						providers = {
-							{ "i",  12768 },	-- Secret Note #3
+							{ "i", 12768 },	-- Secret Note #3
 							{ "o", 190484 },	-- Document Chest #3
 						},
 						coord = { 39.0, 41.0, MAP.THOUSAND_NEEDLES },
@@ -703,9 +703,9 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				groups = {
 					objective(1, {	-- 0/1 Arikara Serpent Skin
 						providers = {
-							{ "i",  12925 },	-- Arikara Serpent Skin
+							{ "i", 12925 },	-- Arikara Serpent Skin
 							{ "o", 175944 },	-- Sacred Fire of Life
-							{ "i",  12785 },	-- Incendia Powder
+							{ "i", 12785 },	-- Incendia Powder
 						},
 						coord = { 37.7, 56.1, MAP.THOUSAND_NEEDLES },
 						cr = 10882,	-- Arikara <Vengeance>

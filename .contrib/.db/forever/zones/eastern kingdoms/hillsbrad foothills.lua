@@ -19,7 +19,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			exploration(286),	-- Hillsbrad Fields
 			exploration(289),	-- Nethander Stead
 			exploration(896),	-- Purgation Isle
-			visit_exploration(3486,{ coord={ 70.3,45.6,MAP.HILLSBRAD_FOOTHILLS } }),	-- Ravenholdt Manor
+			visit_exploration(3486, { coord={ 70.3, 45.6, MAP.HILLSBRAD_FOOTHILLS } }),	-- Ravenholdt Manor
 			exploration(285),	-- Southpoint Tower
 			exploration(271),	-- Southshore
 			exploration(272),	-- Tarren Mill

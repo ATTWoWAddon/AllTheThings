@@ -105,7 +105,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/7 Hyacinth Mushroom
 								providers = {
-									{ "i",  10639 },	-- Hyacinth Mushroom
+									{ "i", 10639 },	-- Hyacinth Mushroom
 									{ "o", 152094 },	-- Hyacinth Mushroom
 								},
 								crs = {
@@ -922,7 +922,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/15 Wildkin Feather
 						providers = {
-							{ "i",  10819 },	-- Wildkin Feather
+							{ "i", 10819 },	-- Wildkin Feather
 							{ "o", 153239 },	-- Wildkin Feather
 						},
 						description = "Scattered on the ground around the Hinterlands.",

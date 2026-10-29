@@ -80,7 +80,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Hinterlands Honey Ripple
 						providers = {
-							{ "i",   8684 },	-- Hinterlands Honey Ripple
+							{ "i", 8684 },	-- Hinterlands Honey Ripple
 							{ "o", 142191 },	-- Horde Supply Crate
 						},
 						coords = {
@@ -152,7 +152,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Vessel of Tainted Blood
 						providers = {
-							{ "i",  19071 },	-- Vessel of Tainted Blood
+							{ "i", 19071 },	-- Vessel of Tainted Blood
 							{ "o", 179922 },	-- Vessel of Tainted Blood
 						},
 						description = "Can be found all over Jintha'alor.",
@@ -409,7 +409,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- Open Sharpbeak's Cage
 						providers = {
-							{ "i",   9472 },	-- Hexx's Key
+							{ "i", 9472 },	-- Hexx's Key
 							{ "o", 144070 },	-- Sharpbeak's Cage
 						},
 						coord = { 53.6, 66.8, MAP.THE_HINTERLANDS },
@@ -431,14 +431,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Huntsman Malkhor's Skull
 						providers = {
-							{ "i",  19069 },	-- Huntsman Malkhor's Skull
+							{ "i", 19069 },	-- Huntsman Malkhor's Skull
 							{ "o", 179915 },	-- Pile of Skulls
 						},
 						coord = { 58.6, 64.9, MAP.THE_HINTERLANDS },
 					}),
 					objective(2, {	-- 0/1 Huntsman Malkhor's Bones
 						providers = {
-							{ "i",  19070 },	-- Huntsman Malkhor's Bones
+							{ "i", 19070 },	-- Huntsman Malkhor's Bones
 							{ "o", 179914 },	-- Pile of Bones
 						},
 						coord = { 62.2, 75.5, MAP.THE_HINTERLANDS },

@@ -793,7 +793,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/12 Magenta Fungus Cap
 						providers = {
-							{ "i",   8047 },	-- Magenta Fungus Cap
+							{ "i", 8047 },	-- Magenta Fungus Cap
 							{ "o", 126049 },	-- Magenta Cap Clusters
 						},
 					}),
@@ -807,14 +807,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Advisor's Pack
 						providers = {
-							{ "i",  23658 },	-- Advisor's Pack
+							{ "i", 23658 },	-- Advisor's Pack
 							{ "o", 181628 },	-- Empty Barrel
 						},
 						coord = { 41.0, 29.2, MAP.BADLANDS },
 					}),
 					objective(2, {	-- 0/1 Advisor's Rapier
 						providers = {
-							{ "i",  23660 },	-- Advisor's Rapier
+							{ "i", 23660 },	-- Advisor's Rapier
 							{ "o", 181627 },	-- Weapon Rack
 						},
 						coord = { 41.7, 26.8, MAP.BADLANDS },

@@ -1599,7 +1599,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/15 Nugget Slug
 						providers = {
-							{ "i",  11143 },	-- Nugget Slug
+							{ "i", 11143 },	-- Nugget Slug
 							{ "o", 161752 },	-- Tool Bucket
 						},
 					}),
@@ -2154,7 +2154,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Stolen Silver
 						providers = {
-							{ "i",   5061 },	-- Stolen Silver
+							{ "i", 5061 },	-- Stolen Silver
 							{ "o", 147557 },	-- Stolen Silver
 						},
 						coord = { 58.0, 53.9, MAP.THE_BARRENS },
@@ -2218,7 +2218,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Crossroads' Supply Crates
 						providers = {
-							{ "i",  12708 },	-- Crossroads' Supply Crates
+							{ "i", 12708 },	-- Crossroads' Supply Crates
 							{ "o", 175708 },	-- Crossroads' Supply Crates
 						},
 						coord = { 59.5, 24.6, MAP.THE_BARRENS },

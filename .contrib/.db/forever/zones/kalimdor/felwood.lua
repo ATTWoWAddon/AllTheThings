@@ -1275,7 +1275,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					14345,	-- The Ongar
 					7093,	-- Vile Ooze
 				},
-				sym = { { "select","itemID", 20769 } },	-- Disgusting Oozeling (PET!)
+				sym = { { "select", "itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(15752, {	-- Pattern: Living Leggings (RECIPE!)
 				coords = {

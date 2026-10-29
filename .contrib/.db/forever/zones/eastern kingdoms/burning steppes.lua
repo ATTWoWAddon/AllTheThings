@@ -61,8 +61,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/8 Broodling Essence
 						providers = {
-							{ "i",  12283 },	-- Broodling Essence
-							{ "i",  12284 },	-- Draco-Incarcinatrix 900
+							{ "i", 12283 },	-- Broodling Essence
+							{ "i", 12284 },	-- Draco-Incarcinatrix 900
 							{ "o", 175264 },	-- Broodling Essence
 						},
 						crs = {
@@ -296,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- Gor'tesh Head Planted
 						providers = {
-							{ "i",  11079 },	-- Gor'tesh's Lopped Off Head
+							{ "i", 11079 },	-- Gor'tesh's Lopped Off Head
 							{ "o", 160840 },	-- Soft Dirt Mound
 						},
 						coord = { 81.0, 46.0, MAP.BURNING_STEPPES },
@@ -332,7 +332,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet Transcript
 						providers = {
-							{ "i",  11470 },	-- Tablet Transcript
+							{ "i", 11470 },	-- Tablet Transcript
 							{ "o", 169294 },	-- Tablet of the Seven
 						},
 						coord = { 53.0, 40.0, MAP.BURNING_STEPPES },
@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			n(1296, {	-- Felder Stover <Weaponsmith>
 				coord = { 72.9, 65.8, MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
-				sym = { { "select","itemID",
+				sym = { { "select", "itemID",
 					2528,	-- Falchion
 					2530,	-- Francisca
 					2531,	-- Great Axe

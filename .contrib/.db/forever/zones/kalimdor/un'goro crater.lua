@@ -77,9 +77,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Hive Wall Sample
 						providers = {
-							{ "i",  11131 },	-- Hive Wall Sample
+							{ "i", 11131 },	-- Hive Wall Sample
 							{ "o", 174793 },	-- Gorishi Hive Hatchery
-							{ "i",  11132 },	-- Unused Scraping Vial
+							{ "i", 11132 },	-- Unused Scraping Vial
 						},
 						coord = { 48.0, 85.0, MAP.UNGORO_CRATER },
 					}),
@@ -118,7 +118,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					}),
 					objective(2, {	-- 0/8 Bloodcap
 						providers = {
-							{ "i",  22434 },	-- Bloodcap
+							{ "i", 22434 },	-- Bloodcap
 							{ "o", 164958 },	-- Bloodpetal Sprout
 						},
 					}),
@@ -133,7 +133,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/3 Bloodpetal Sprout
 						providers = {
-							{ "i",  11315 },	-- Bloodpetal Sprout
+							{ "i", 11315 },	-- Bloodpetal Sprout
 							{ "o", 164958 },	-- Bloodpetal Sprout
 						},
 					}),
@@ -142,8 +142,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4148, {	-- Bloodpetal Zapper
 				sourceQuest = 4146,	-- Zapper Fuel
 				providers = {
-					{ "n",   9118 },	-- Larion
-					{ "i",  11315 },	-- Bloodpetal Sprout
+					{ "n", 9118 },	-- Larion
+					{ "i", 11315 },	-- Bloodpetal Sprout
 					{ "o", 164958 },	-- Bloodpetal Sprout
 				},
 				coord = { 45.6, 8.6, MAP.UNGORO_CRATER },
@@ -284,14 +284,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Crate of Foodstuffs
 						providers = {
-							{ "i",  11113 },	-- Crate of Foodstuffs
+							{ "i", 11113 },	-- Crate of Foodstuffs
 							{ "o", 161526 },	-- Crate of Foodstuffs
 						},
 						coord = { 68.4, 36.4, MAP.UNGORO_CRATER },
 					}),
 					objective(2, {	-- 0/1 Research Equipment
 						providers = {
-							{ "i",  11112 },	-- Research Equipment
+							{ "i", 11112 },	-- Research Equipment
 							{ "o", 161521 },	-- Research Equipment
 						},
 						coord = { 38.5, 66.0, MAP.UNGORO_CRATER },
@@ -305,7 +305,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- Find the hottest area of Fire Plume Ridge
 						providers = {
-							{ "i",  12472 },	-- Krackle's Thermometer
+							{ "i", 12472 },	-- Krackle's Thermometer
 							{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 						},
 						coord = { 49.0, 45.0, MAP.UNGORO_CRATER },
@@ -320,7 +320,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3845, {	-- It's a Secret to Everybody (2/3)
 				sourceQuest = 3844,	-- It's a Secret to Everybody (1/3)
 				providers = {
-					{ "i",  11107 },	-- A Small Pack
+					{ "i", 11107 },	-- A Small Pack
 					{ "o", 161504 },	-- A Small Pack
 				},
 				coord = { 63.1, 68.5, MAP.UNGORO_CRATER },
@@ -363,7 +363,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					}),
 					objective(2, {	-- 0/1 Golden Flame
 						providers = {
-							{ "i",  11179 },	-- Golden Flame
+							{ "i", 11179 },	-- Golden Flame
 							{ "o", 164910 },	-- Ornate Chest
 						},
 						coord = { 50.2, 50.0, MAP.UNGORO_CRATER },
@@ -466,7 +466,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/8 Dinosaur Bone
 						providers = {
-							{ "i",  11114 },	-- Dinosaur Bone
+							{ "i", 11114 },	-- Dinosaur Bone
 							{ "o", 161527 },	-- Dinosaur Bone
 						},
 						crs = {
@@ -566,7 +566,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Piece of Threshadon Carcass
 						providers = {
-							{ "i",  11504 },	-- Piece of Threshadon Carcass
+							{ "i", 11504 },	-- Piece of Threshadon Carcass
 							{ "o", 166863 },	-- Fresh Threshadon Carcass
 						},
 						coord = { 68.7, 56.7, MAP.UNGORO_CRATER },
@@ -628,8 +628,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					q(4041, {	-- The Videre Elixir
 						providers = {
-							{ "n",   7775 },	-- Gregan Brewspewer
-							{ "i",  11242 },	-- Evoroot
+							{ "n", 7775 },	-- Gregan Brewspewer
+							{ "i", 11242 },	-- Evoroot
 							{ "o", 164798 },	-- Evoroot
 						},
 						coords = {
@@ -793,7 +793,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					6559,	-- Glutinous Ooze
 					6557,	-- Primal Ooze
 				},
-				sym = { { "select","itemID", 20769 } },	-- Disgusting Oozeling (PET!)
+				sym = { { "select", "itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 				crs = {

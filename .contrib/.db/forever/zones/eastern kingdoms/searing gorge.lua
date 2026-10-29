@@ -186,7 +186,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Goodsteel Ledger
 						providers = {
-							{ "i",  11727 },	-- Goodsteel Ledger
+							{ "i", 11727 },	-- Goodsteel Ledger
 							{ "o", 173266 },	-- Goodsteel Ledger
 						},
 					}),
@@ -196,7 +196,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					}),
 					objective(3, {	-- 0/1 Overdue Package
 						providers = {
-							{ "i",  11724 },	-- Overdue Package
+							{ "i", 11724 },	-- Overdue Package
 							{ "o", 174728 },	-- Damaged Crate
 						},
 						coord = { 54.1, 55.8, MAP.DUSTWALLOW_MARSH },
@@ -252,7 +252,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 3371,	-- Dwarven Justice
 				providers = {
 					{ "o", 148498 },	-- Altar of Suntara
-					{ "n",   8417 },	-- Dying Archaeologist
+					{ "n", 8417 },	-- Dying Archaeologist
 				},
 				coord = { 41.2, 25.6, MAP.SEARING_GORGE },
 				races = ALLIANCE_ONLY,
@@ -260,7 +260,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Mysterious Artifact
 						providers = {
-							{ "i",  10442 },	-- Mysterious Artifact
+							{ "i", 10442 },	-- Mysterious Artifact
 							{ "o", 148506 },	-- Twilight Artifact
 						},
 						coord = { 29.2, 25.9, MAP.SEARING_GORGE },
@@ -339,28 +339,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- Western Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution
 							{ "o", 149025 },	-- Sentry Brazier
 						},
 						coord = { 33.0, 60.0, MAP.SEARING_GORGE },
 					}),
 					objective(2, {	-- Southern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution
 							{ "o", 149030 },	-- Sentry Brazier
 						},
 						coord = { 44.0, 60.0, MAP.SEARING_GORGE },
 					}),
 					objective(3, {	-- Eastern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution
 							{ "o", 149031 },	-- Sentry Brazier
 						},
 						coord = { 50.0, 55.0, MAP.SEARING_GORGE },
 					}),
 					objective(4, {	-- Northern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution
 							{ "o", 149032 },	-- Sentry Brazier
 						},
 						coord = { 33.0, 54.0, MAP.SEARING_GORGE },
@@ -415,7 +415,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				description = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 				sourceQuest = 3367,	-- Suntara Stones (1/2)
 				providers = {
-					{ "i",  10443 },	-- Singed Letter
+					{ "i", 10443 },	-- Singed Letter
 					{ "o", 175704 },	-- Singed Letter
 				},
 				coord = { 74.5, 19.3, MAP.SEARING_GORGE },
@@ -492,9 +492,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3454, {	-- The Torch of Retribution (2/2)
 				sourceQuest = 3453,	-- The Torch of Retribution (1/2)
 				providers = {
-					{ "n",   8479 },	-- Velarok Windblade
+					{ "n", 8479 },	-- Velarok Windblade
 					{ "o", 149047 },	-- Torch of Retribution
-					{ "i",  10515 },	-- Torch of Retribution
+					{ "i", 10515 },	-- Torch of Retribution
 				},
 				coord = { 39.1, 39.0, MAP.SEARING_GORGE },
 				lvl = 40,
@@ -537,7 +537,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 3463,	-- Set Them Ablaze!
 				providers = {
 					{ "o", 149502 },	-- Hoard of the Black Dragonflight
-					{ "i",  10569 },	-- Hoard of the Black Dragonflight
+					{ "i", 10569 },	-- Hoard of the Black Dragonflight
 				},
 				coord = { 39.0, 38.9, MAP.SEARING_GORGE },
 				lvl = 40,
@@ -566,7 +566,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Secret Plans: Fiery Flux
 						providers = {
-							{ "i",  18922 },	-- Secret Plans: Fiery Flux
+							{ "i", 18922 },	-- Secret Plans: Fiery Flux
 							{ "o", 179826 },	-- Secret Plans: Fiery Flux
 						},
 						coord = { 40.6, 35.7, MAP.SEARING_GORGE },
