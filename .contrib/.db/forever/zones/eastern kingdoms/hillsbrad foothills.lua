@@ -208,11 +208,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(550, {	-- Battle of Hillsbrad (7/7)
 				sourceQuest = 541,	-- Battle of Hillsbrad (6/7)
 				qg = 2215,	-- High Executor Darthalia
-				qi = 3701,	-- Darthalia's Sealed Commendation
 				coord = { 62.32, 20.33, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 19,
+				qi = 3701,	-- Darthalia's Sealed Commendation
 				groups = {
 					i(3761),	-- Deadskull Shield
 					i(3822),	-- Runic Darkblade
@@ -250,11 +250,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(98071, {	-- Brewer's Trade
 				qg = 2705,	-- Brewmeister Bilger
-				qi = 279390,	-- Case of Fallrook Varietal (PQI!)
 				coord = { 52.0, 58.4, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279390,	-- Case of Fallrook Varietal (PQI!)
 				groups = {
 					objective(2, {	-- 0/1 Sack of Homebrew Hops
 						providers = {
@@ -362,20 +362,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(513, {	-- Elixir of Agony (2/5)
 				sourceQuest = 509,	-- Elixir of Agony (1/5)
 				qg = 2216,	-- Apothecary Lydon
-				qi = 3506,	-- Mudsnout Composite
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 24,
+				qi = 3506,	-- Mudsnout Composite
 			}),
 			q(515, {	-- Elixir of Agony (3/5)
 				sourceQuest = 513,	-- Elixir of Agony (2/5)
 				qg = 2055,	-- Master Apothecary Faranell
-				qi = 3508,	-- Mudsnout Mixture
 				coord = { 48.89, 69.21, MAP.UNDERCITY },
 				cost = { { "i", 3388, 1 } },	-- Lesser Troll's Blood Elixir
 				races = HORDE_ONLY,
 				lvl = 24,
+				qi = 3508,	-- Mudsnout Mixture
 				groups = {
 					objective(2, {	-- 0/5 Daggerspine Scale
 						provider = { "i", 3509 },	-- Daggerspine Scale
@@ -459,10 +459,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(502, {	-- Elixir of Pain (2/2)
 				sourceQuest = 501,	-- Elixir of Pain (1/2)
 				qg = 2216,	-- Apothecary Lydon
-				qi = 3497,	-- Elixir of Pain
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 21,
+				qi = 3497,	-- Elixir of Pain
 			}),
 			q(496, {	-- Elixir of Suffering (1/2)
 				qg = 2216,	-- Apothecary Lydon
@@ -494,10 +494,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(499, {	-- Elixir of Suffering (2/2)
 				sourceQuest = 496,	-- Elixir of Suffering (1/2)
 				qg = 2216,	-- Apothecary Lydon
-				qi = 3495,	-- Elixir of Suffering
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 19,
+				qi = 3495,	-- Elixir of Suffering
 			}),
 			q(559, {	-- Farren's Proof (1/3)
 				sourceQuest = 536,	-- Down the Coast
@@ -522,10 +522,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(560, {	-- Farren's Proof (2/3)
 				sourceQuest = 559,	-- Farren's Proof (1/3)
 				qg = 2228,	-- Lieutenant Farren Orinelle
-				qi = 3717,	-- Sack of Murloc Heads
 				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
+				qi = 3717,	-- Sack of Murloc Heads
 			}),
 			q(561, {	-- Farren's Proof (3/3)
 				sourceQuest = 560,	-- Farren's Proof (2/3)
@@ -583,11 +583,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(98059, {	-- Hillsbrad's Hoard
 				qg = 251493,	-- Captain McManus
-				qi = 279386,	-- Sealed Company Request (PQI!)
 				coord = { 46.4, 50.2, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279386,	-- Sealed Company Request (PQI!)
 			}),
 			q(2480, {	-- Hinott's Assistance (2/2)
 				sourceQuest = 2479,	-- Hinott's Assistance (1/2)
@@ -627,19 +627,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(1065, {	-- Journey to Tarren Mill
 				sourceQuest = 1064,	-- Forsaken Aid
 				qg = 3419,	-- Apothecary Zamah
-				qi = 5628,	-- Zamah's Note
 				coord = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 13,
+				qi = 5628,	-- Zamah's Note
 			}),
 			q(95125, {	-- Ott's Masterwork
 				sourceQuest = 95111,	-- An Underrated Talent
 				qg = 3539,	-- Ott <Weaponsmith>
 				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(540, {	-- Preserving Knowledge
 				sourceQuest = 538,	-- Southshore
@@ -702,19 +702,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(563, {	-- Reassignment
 				sourceQuest = 562,	-- Stormwind Ho!
 				qg = 2228,	-- Lieutenant Farren Orinelle
-				qi = 3721,	-- Farren's Report
 				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
+				qi = 3721,	-- Farren's Report
 			}),
 			q(542, {	-- Return to Milton
 				sourceQuest = 540,	-- Preserving Knowledge
 				qg = 2277,	-- Loremaster Dibbs
-				qi = 3660,	-- Tomes of Alterac
 				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 3660,	-- Tomes of Alterac
 			}),
 			q(1067, {	-- Return to Thunder Bluff
 				sourceQuest = 1066,	-- Blood of Innocents
@@ -830,13 +830,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(95126, {	-- The Moonsilver Blade
 				sourceQuest = 95125,	-- Ott's Masterwork
 				qg = 3539,	-- Ott <Weaponsmith>
-				qi = 268359,	-- Ott's Masterwork (PQI!)
 				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 268359,	-- Ott's Masterwork (PQI!)
 				groups = {
 					i(268484),	-- Moonsilver Blade
 				},
@@ -887,11 +887,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(98095, {	-- Valuable Vantages
 				-- TODO: Wowhead lists Scout Support (98094) as the previous quest, but it isn't in the Forever DB yet.
 				qg = 270438,	-- Deathstalker Masoj
-				qi = 279395,	-- Apothecary Vials (PQI!)
 				coord = { 64.0, 53.8, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 19,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279395,	-- Apothecary Vials (PQI!)
 				groups = {
 					i(281294),	-- Expended Apothecary Vial
 					i(281293),	-- Weathered Deathstalker's Blade
@@ -1214,8 +1214,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				description = "The assassins spawn as part of a random world event. AFK in Southshore and eventually they'll spawn nearby.",
 				coord = { 50.8, 58.8, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				cr = 2434,	-- Shadowy Assassin
 				lvl = 30,
+				cr = 2434,	-- Shadowy Assassin
 			}),
 			i(3204, {	-- Deepwood Bracers
 				coords = {
@@ -1292,8 +1292,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				cr = 2373,	-- Mudsnout Shaman
 			}),
 			i(249881, {	-- Recipe: Root Tea (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 2376,	-- Torn Fin Oracle
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

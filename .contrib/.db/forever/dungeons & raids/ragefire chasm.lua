@@ -48,10 +48,10 @@ instanceroot(226, {	-- Ragefire Chasm
 			q(5724, {	-- Returning the Lost Satchel
 				sourceQuest = 5722,	-- Searching for the Lost Satchel
 				qg = 11834,	-- Maur Grimtotem
-				qi = 14381,	-- Grimtotem Satchel
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 9,
+				qi = 14381,	-- Grimtotem Satchel
 				groups = {
 					i(15452),	-- Featherbead Bracers
 					i(15453),	-- Savannah Bracers

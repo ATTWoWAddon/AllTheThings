@@ -17,11 +17,6 @@ root(ROOTS.WorldDrops, {
 		description = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		groups = {
 			i(16882, {	-- Battered Junkbox
-				groups = {
-					i(4446),	-- Blackvenom Blade
-					i(2567),	-- Evocator's Blade
-					i(5756),	-- Sliverblade
-				},
 				sym = {{ "select", "itemID",
 					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
@@ -52,6 +47,11 @@ root(ROOTS.WorldDrops, {
 					12008,	-- Savannah Ring
 					11967,	-- Zircon Band
 				}},
+				groups = {
+					i(4446),	-- Blackvenom Blade
+					i(2567),	-- Evocator's Blade
+					i(5756),	-- Sliverblade
+				},
 			}),
 			i(5760, {	-- Eternium Lockbox
 				sym = {{ "select", "itemID",

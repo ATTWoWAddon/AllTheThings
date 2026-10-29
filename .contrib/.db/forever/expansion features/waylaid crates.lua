@@ -121,8 +121,8 @@ root(ROOTS.ExpansionFeatures, {
 					}),
 					q(93862, {	-- Crate Return
 						description = "Use a Forged Delivery Receipt from an Uncertified Scribe on an empty Waylaid Crate to make a Notarized Shipping Container, then return it to your faction's trade representatives.",
-						timeline = { TIMELINE.CREATED_1_60_1 },
 						repeatable = true,
+						timeline = { TIMELINE.CREATED_1_60_1 },
 						groups = {
 							objective(1, {	-- Notarized Shipping Container
 								provider = { "i", 262917 },	-- Notarized Shipping Container

@@ -129,8 +129,8 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				sourceQuest = 8416,	-- Inert Scourgestones
 				qg = 10838,	-- Commander Ashlam Valorfist
 				coord = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Amber Voodoo Feather

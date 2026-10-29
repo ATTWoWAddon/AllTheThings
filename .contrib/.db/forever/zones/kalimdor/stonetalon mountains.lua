@@ -138,8 +138,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				coord = { 39.03, 38.04, MAP.ORGRIMMAR },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 13,
+				isBreadcrumb = true,
 			}),
 			q(1062, {	-- Goblin Invaders
 				sourceQuest = 1061,	-- The Spirits of Stonetalon
@@ -179,8 +179,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				qg = 4079,	-- Sentinel Thenysil
 				coord = { 34.9, 49.8, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(1071, {	-- A Gnome's Respite
 				sourceQuest = 1085,	-- On Guard in Stonetalon (2/2)
@@ -215,10 +215,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1077, {	-- Special Delivery for Gaxim
 				sourceQuest = 1076,	-- Devils in Westfall
 				qg = 4078,	-- Collin Mauren
-				qi = 5731,	-- Scroll of Messaging
 				coord = { 53.0, 86.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5731,	-- Scroll of Messaging
 			}),
 			q(1078, {	-- Retrieval for Mauren
 				qg = 4078,	-- Collin Mauren
@@ -245,10 +245,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1077,	-- Special Delivery for Gaxim
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5738,	-- Covert Ops Pack
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5738,	-- Covert Ops Pack
 				groups = {
 					objective(1, {	-- 0/1 Venture Co. Engineering Plans
 						providers = {
@@ -265,10 +265,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1077,	-- Special Delivery for Gaxim
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5738,	-- Covert Ops Pack
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5738,	-- Covert Ops Pack
 				groups = {
 					objective(1, {	-- 0/1 Venture Co. Letters
 						providers = {
@@ -432,17 +432,17 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1080,	-- Covert Ops - Beta
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5717,	-- Venture Co. Letters
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5717,	-- Venture Co. Letters
 			}),
 			q(1092, {	-- Gerenzo's Orders (2/2)
 				sourceQuest = 1090,	-- Gerenzo's Orders (1/2)
 				qg = 4276,	-- Piznik
-				qi = 5733,	-- Unidentified Ore
 				coord = { 71.80, 60.05, MAP.STONETALON_MOUNTAINS },
 				lvl = 17,
+				qi = 5733,	-- Unidentified Ore
 				groups = {
 					i(6666),	-- Dredge Boots
 				},
@@ -462,9 +462,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1094, {	-- Further Instructions (1/2)
 				sourceQuest = 1093,	-- Super Reaper 6000
 				qg = 4201,	-- Ziz Fizziks
-				qi = 5735,	-- Sealed Envelope
 				coord = { 59.00, 62.53, MAP.STONETALON_MOUNTAINS },
 				lvl = 16,
+				qi = 5735,	-- Sealed Envelope
 			}),
 			q(1095, {	-- Further Instructions (2/2)
 				sourceQuest = 1094,	-- Further Instructions (1/2)
@@ -490,25 +490,25 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1483, {	-- Ziz Fizziks
 				qg = 3442,	-- Sputtervalve
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(1511, {	-- Ken'zigla's Draught
 				sourceQuest = 1510,	-- News of Dogran (2/2)
 				qg = 4197,	-- Ken'zigla
-				qi = 6624,	-- Ken'zigla's Draught
 				coord = { 73.2, 95.0, MAP.STONETALON_MOUNTAINS },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
+				qi = 6624,	-- Ken'zigla's Draught
 			}),
 			q(5881, {	-- Calling in the Reserves
 				qg = 11860,	-- Maggran Earthbinder
-				qi = 16189,	-- Maggran's Reserve Letter
 				coord = { 47.17, 61.08, MAP.STONETALON_MOUNTAINS },
 				maps = { MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 23,
+				qi = 16189,	-- Maggran's Reserve Letter
 			}),
 			q(6282, {	-- Harpies Threaten
 				qg = 11860,	-- Maggran Earthbinder
@@ -753,9 +753,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(86576, {	-- Bloodfury Trinkets
 				qg = 11860,	-- Maggran Earthbinder
 				coord = { 47.2, 61.0, MAP.STONETALON_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/15 Glittering Sunstone
 						provider = { "i", 277936 },	-- Glittering Sunstone
@@ -877,8 +877,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 		}),
 		n(TREASURES, {
 			o(674126, {	-- Hidden Stash
-				coord = { 40.7, 52.7, MAP.STONETALON_MOUNTAINS },
 				description = "Inside the tent, in a box at the back.",
+				coord = { 40.7, 52.7, MAP.STONETALON_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(221324),	-- Brittle Key
@@ -968,8 +968,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				cr = 6167,	-- Chimaera Matriarch
 			}),
 			i(249880, {	-- Recipe: Royal Tea (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 4003,	-- Windshear Geomancer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

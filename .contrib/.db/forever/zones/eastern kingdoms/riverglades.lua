@@ -4,8 +4,8 @@
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 	lore = "A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 1032150,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades

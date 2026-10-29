@@ -89,7 +89,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(5202, {	-- A Strange Red Key
-				qi = 13140,	-- Blood Red Key
 				crs = {
 					7118,	-- Jaedenar Darkweaver
 					7114,	-- Jaedenar Enforcer
@@ -99,6 +98,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					14522,	-- Ur'dan
 				},
 				lvl = 49,
+				qi = 13140,	-- Blood Red Key
 			}),
 			q(8419, {	-- An Imp's Request
 				altQuests = { 8420 },	-- Hot and Itchy
@@ -122,11 +122,11 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			q(4261, {	-- Ancient Spirit
 				sourceQuest = 4442,	-- Purified!
 				qg = 9598,	-- Arei
-				qi = 11445,	-- Flute of the Ancients
 				coord = { 49.4, 14.4, MAP.FELWOOD },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 49,
+				qi = 11445,	-- Flute of the Ancients
 				groups = {
 					i(11873),	-- Ethereal Mist Cape
 					i(11874),	-- Clouddrift Mantle
@@ -155,9 +155,9 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			q(5159, {	-- Cleansed Water Returns to Felwood
 				sourceQuest = 5158,	-- Seeking Spiritual Aid
 				qg = 5901,	-- Islen Waterseer
-				qi = 12906,	-- Purified Moonwell Water
 				coord = { 65.8, 43.8, MAP.THE_BARRENS },
 				lvl = 48,
+				qi = 12906,	-- Purified Moonwell Water
 			}),
 			{	-- Cleansing Felwood
 				allianceQuestData = q(4101, {	-- Cleansing Felwood (A)
@@ -202,32 +202,32 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				provider = { "o", 164885 },	-- Corrupted Night Dragon
 				coord = { 40.7, 78.3, MAP.FELWOOD },
 				cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11952) },	-- Night Dragon's Breath
 			}),
 			q(4447, {	-- Corrupted Night Dragon
 				provider = { "o", 173324 },	-- Corrupted Night Dragon
 				coord = { 50.6, 30.4, MAP.FELWOOD },
 				cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11952) },	-- Night Dragon's Breath
 			}),
 			q(4448, {	-- Corrupted Night Dragon
 				provider = { "o", 174608 },	-- Corrupted Night Dragon
 				coord = { 42.5, 13.9, MAP.FELWOOD },
 				cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11952) },	-- Night Dragon's Breath
 			}),
 			q(4462, {	-- Corrupted Night Dragon
 				provider = { "o", 174684 },	-- Corrupted Night Dragon
 				coord = { 35.1, 59.0, MAP.FELWOOD },
 				cost = { { "i", 11516, 4 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11952) },	-- Night Dragon's Breath
 			}),
 			q(4506, {	-- Corrupted Sabers
@@ -251,198 +251,198 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				provider = { "o", 171942 },	-- Corrupted Songflower
 				coord = { 48.3, 75.6, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(2878, {	-- Corrupted Songflower
 				provider = { "o", 174594 },	-- Corrupted Songflower
 				coord = { 63.3, 22.6, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(3363, {	-- Corrupted Songflower
 				provider = { "o", 174595 },	-- Corrupted Songflower
 				coord = { 63.9, 6.1, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4113, {	-- Corrupted Songflower
 				provider = { "o", 164886 },	-- Corrupted Songflower
 				coord = { 52.9, 87.8, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4114, {	-- Corrupted Songflower
 				provider = { "o", 174596 },	-- Corrupted Songflower
 				coord = { 55.8, 10.5, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4116, {	-- Corrupted Songflower
 				provider = { "o", 174597 },	-- Corrupted Songflower
 				coord = { 50.6, 13.9, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4118, {	-- Corrupted Songflower
 				provider = { "o", 174598 },	-- Corrupted Songflower
 				coord = { 34.4, 52.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4401, {	-- Corrupted Songflower
 				provider = { "o", 171939 },	-- Corrupted Songflower
 				coord = { 46.0, 85.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4464, {	-- Corrupted Songflower
 				provider = { "o", 174712 },	-- Corrupted Songflower
 				coord = { 40.2, 56.6, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4465, {	-- Corrupted Songflower
 				provider = { "o", 174713 },	-- Corrupted Songflower
 				coord = { 40.1, 44.4, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(4117, {	-- Corrupted Whipper Root
 				provider = { "o", 164888 },	-- Corrupted Whipper Root
 				coord = { 40.2, 85.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(4443, {	-- Corrupted Whipper Root
 				provider = { "o", 173284 },	-- Corrupted Whipper Root
 				coord = { 50.6, 18.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(4444, {	-- Corrupted Whipper Root
 				provider = { "o", 174605 },	-- Corrupted Whipper Root
 				coord = { 49.4, 12.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(4445, {	-- Corrupted Whipper Root
 				provider = { "o", 174606 },	-- Corrupted Whipper Root
 				coord = { 40.7, 19.2, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(4446, {	-- Corrupted Whipper Root
 				provider = { "o", 174607 },	-- Corrupted Whipper Root
 				coord = { 43.0, 46.9, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(4461, {	-- Corrupted Whipper Root
 				provider = { "o", 174686 },	-- Corrupted Whipper Root
 				coord = { 34.1, 60.3, MAP.FELWOOD },
 				cost = { { "i", 11516, 3 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11951) },	-- Whipper Root Tuber
 			}),
 			q(996, {	-- Corrupted Windblossom
 				provider = { "o", 174600 },	-- Corrupted Windblossom
 				coord = { 57.5, 20.0, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(998, {	-- Corrupted Windblossom
 				provider = { "o", 174599 },	-- Corrupted Windblossom
 				coord = { 55.8, 7.0, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(1514, {	-- Corrupted Windblossom
 				provider = { "o", 173327 },	-- Corrupted Windblossom
 				coord = { 55.2, 23.5, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4115, {	-- Corrupted Windblossom
 				provider = { "o", 164887 },	-- Corrupted Windblossom
 				coord = { 50.0, 80.0, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4221, {	-- Corrupted Windblossom
 				provider = { "o", 174604 },	-- Corrupted Windblossom
 				coord = { 39.0, 59.1, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4222, {	-- Corrupted Windblossom
 				provider = { "o", 174603 },	-- Corrupted Windblossom
 				coord = { 34.4, 48.8, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4343, {	-- Corrupted Windblossom
 				provider = { "o", 174602 },	-- Corrupted Windblossom
 				coord = { 38.8, 21.9, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4403, {	-- Corrupted Windblossom
 				provider = { "o", 174601 },	-- Corrupted Windblossom
 				coord = { 45.4, 18.3, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4466, {	-- Corrupted Windblossom
 				provider = { "o", 174708 },	-- Corrupted Windblossom
 				coord = { 36.5, 61.9, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(4467, {	-- Corrupted Windblossom
 				provider = { "o", 174709 },	-- Corrupted Windblossom
 				coord = { 44.8, 41.7, MAP.FELWOOD },
 				cost = { { "i", 11516, 2 } },	-- Cenarion Plant Salve
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = { i(11950) },	-- Windblossom Berries
 			}),
 			q(5165, {	-- Dousing the Flames of Protection
@@ -526,9 +526,9 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(939, {	-- Flute of Xavaric
 				sourceQuest = 4906,	-- Further Corruption
-				qi = 11668,	-- Flute of Xavaric
 				races = ALLIANCE_ONLY,
 				lvl = 49,
+				qi = 11668,	-- Flute of Xavaric
 				groups = {
 					objective(1, {	-- 0/5 Jadefire Felbind
 						provider = { "i", 11674 },	-- Jadefire Felbind
@@ -589,11 +589,11 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			q(4883, {	-- Guarding Secrets (2/2)
 				sourceQuest = 4882,	-- Guarding Secrets (1/2)
 				qg = 10306,	-- Trull Failbane
-				qi = 12558,	-- Blue-feathered Necklace
 				coord = { 34.6, 52.6, MAP.FELWOOD },
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 52,
+				qi = 12558,	-- Blue-feathered Necklace
 				groups = {
 					i(15796),	-- Seaspray Bracers
 					i(15797),	-- Shining Armplates
@@ -687,8 +687,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = ENCHANTING,
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -714,8 +714,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = ENCHANTING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -741,8 +741,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = HERBALISM,
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -768,8 +768,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = HERBALISM,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -791,8 +791,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -814,8 +814,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -841,8 +841,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = MINING,
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -868,8 +868,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = MINING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -895,8 +895,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = SKINNING,
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -922,8 +922,8 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				requireSkill = SKINNING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
 				},
@@ -931,10 +931,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			q(5158, {	-- Seeking Spiritual Aid
 				sourceQuest = 5157,	-- Collection of the Corrupt Water
 				qg = 10922,	-- Greta Mosshoof
-				qi = 12907,	-- Corrupt Moonwell Water
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				maps = { MAP.THE_BARRENS },
 				lvl = 48,
+				qi = 12907,	-- Corrupt Moonwell Water
 			}),
 			q(4084, {	-- Silver Heart
 				sourceQuest = 3942,	-- Linken's Memory
@@ -990,9 +990,9 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			q(5385, {	-- The Remains of Trey Lightforge
 				sourceQuest = 5204,	-- Retribution of the Light
 				qg = 11020,	-- Remains of Trey Lightforge
-				qi = 13562,	-- Remains of Trey Lightforge
 				coord = { 38.4, 50.4, MAP.FELWOOD },
 				lvl = 49,
+				qi = 13562,	-- Remains of Trey Lightforge
 				groups = {
 					i(15706),	-- Hunt Tracker Blade
 					i(15705),	-- Tidecrest Blade

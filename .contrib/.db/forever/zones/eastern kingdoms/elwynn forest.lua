@@ -19,11 +19,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				n(QUESTS, {
 					q(92479, {	-- A Scribbled Letter
 						qg = 197,	-- Marshal McBride
-						qi = 251941,	-- Scribbled Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = { NIGHTELF },
 						classes = { WARRIOR },
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 251941,	-- Scribbled Letter (PQI!)
 					}),
 					q(783, {	-- A Threat Within
 						qg = 823,	-- Deputy Willem
@@ -34,8 +34,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91741,	-- Nibbled-On Book
 						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(6, {	-- Bounty on Garrick Padfoot
 						sourceQuest = 18,	-- Brotherhood of Thieves
@@ -74,10 +74,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3101, {	-- Consecrated Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9570,	-- Consecrated Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
-						classes = { PALADIN },
 						races = { HUMAN },
+						classes = { PALADIN },
+						qi = 9570,	-- Consecrated Letter (PQI!)
 					}),
 					q(5261, {	-- Eagan Peltskinner
 						sourceQuest = 783,	-- A Threat Within
@@ -89,33 +89,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3102, {	-- Encrypted Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9555,	-- Encrypted Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { ROGUE },
+						qi = 9555,	-- Encrypted Letter (PQI!)
 					}),
 					q(91758, {	-- Follow That Kobold!
 						sourceQuest = 91752,	-- The Big Picture
 						qg = 197,	-- Marshal McBride
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					q(3104, {	-- Glyphic Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9571,	-- Glyphic Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { MAGE },
+						qi = 9571,	-- Glyphic Letter (PQI!)
 					}),
 					q(3905, {	-- Grape Manifest
 						sourceQuest = 3904,	-- Milly's Harvest
 						qg = 9296,	-- Milly Osworth
-						qi = 11125,	-- Grape Manifest (PQI!)
 						coord = { 50.7, 39.3, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						lvl = 2,
+						qi = 11125,	-- Grape Manifest (PQI!)
 						groups = {
 							i(2690),	-- Latched Belt
 							i(11475),	-- Wine-stained Cloak
@@ -124,18 +124,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3103, {	-- Hallowed Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9548,	-- Hallowed Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { PRIEST },
+						qi = 9548,	-- Hallowed Letter (PQI!)
 					}),
 					q(5623, {	-- In Favor of the Light
 						qg = 375,	-- Priestess Anetta <Priest Trainer>
 						coord = { 49.8, 39.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { PRIEST },
-						isBreadcrumb = true,
 						lvl = 5,
+						isBreadcrumb = true,
 					}),
 					q(345, {	-- Ink Supplies
 						sourceQuest = 344,	-- Brother Paxton (quest in Stormwind)
@@ -191,14 +191,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91743,	-- Rascally Rodents
 						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						--requireSkill = MINING,	-- CRIEVE NOTE: I picked the Mining book, maybe this is required?
 					}),
 					q(91741, {	-- Nibbled-On Book
 						qs = 247834,	-- Nibbled-On Book (QS!)
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						qis = {
 							247857,	-- Nibbled-On Book
 						},
@@ -207,8 +207,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 92124,	-- Book Inventory
 						qg = 951,	-- Brother Paxton <Librarian>
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
 								provider = { "i", 247839 },	-- Stolen Book
@@ -225,9 +225,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(54, {	-- Report to Goldshire
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
 						qg = 197,	-- Marshal McBride
-						qi = 745,	-- Marshal McBride's Documents (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
+						qi = 745,	-- Marshal McBride's Documents (PQI!)
 						groups = {
 							i(6078),	-- Pikeman Shield
 						},
@@ -240,10 +240,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(346, {	-- Return to Kristoff
 						sourceQuest = 347,	-- Rethban Ore (quest in Redridge Mountains)
 						qg = 951,	-- Brother Paxton <Librarian>
-						qi = 2795,	-- Book: Stresses of Iron (PQI!)
 						coord = { 49.6, 40.4, MAP.ELWYNN_FOREST },
 						races = ALLIANCE_ONLY,
 						lvl = 20,
+						qi = 2795,	-- Book: Stresses of Iron (PQI!)
 						groups = {
 							i(6095),	-- Wandering Boots
 						},
@@ -251,10 +251,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(91772, {	-- Shhh! We're Hunting Kobolds
 						sourceQuest = 91758,	-- Follow That Kobold!
 						qg = 248415,	-- Tordrin Sternblade <Hunter Trainer>
-						qi = 247970,	-- Kobold Tracking Kit (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						qi = 247970,	-- Kobold Tracking Kit (PQI!)
 						groups = {
 							objective(1, {	-- 0/6 Followed Kobold Tracks
 								provider = { "o", 563442 },	-- Kobold Tracks
@@ -264,10 +264,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3100, {	-- Simple Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9542,	-- Simple Letter (PQI!)
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARRIOR },
+						qi = 9542,	-- Simple Letter (PQI!)
 					}),
 					q(21, {	-- Skirmish at Echo Ridge
 						sourceQuest = 15,	-- Investigate Echo Ridge
@@ -286,10 +286,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					q(3105, {	-- Tainted Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
-						qi = 9576,	-- Tainted Letter (PQI!)
 						coord = { 48.8, 41.6, MAP.ELWYNN_FOREST },
 						races = { HUMAN },
 						classes = { WARLOCK },
+						qi = 9576,	-- Tainted Letter (PQI!)
 					}),
 					q(96627, {	-- The Adventurer [Elwynn Forest]
 						sourceQuest = 21,	-- Skirmish at Echo Ridge
@@ -312,8 +312,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91745,	-- Mining Consultant
 						qg = 247226,	-- Kelsey Fargo <Junior Mining Trainer>
 						coord = { 47.2, 32.17, MAP.ELWYNN_FOREST },
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
 								provider = { "i", 247886 },	-- Sack of "Picture" Books
@@ -407,8 +407,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						cr = 38,	-- Defias Thug
 					}),
 					i(247834, {	-- Nibbled-On Book
-						timeline = { TIMELINE.ADDED_1_60_1 },
 						cr = 6,	-- Kobold Vermin
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(2055, {	-- Small Wooden Hammer
 						cr = 80,	-- Kobold Laborer
@@ -484,16 +484,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 99128,	-- Slimy Menace
 				qg = 383,	-- Jason Mathers <Fishmonger>
 				coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99127, {	-- A Net Disaster
 				qg = 383,	-- Jason Mathers <Fishmonger>
 				coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Half-Eaten Fish
 						providers = {
@@ -505,9 +505,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(95771, {	-- A Taste of Darkness
+				lvl = 6,
 				-- Not yet available in game.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 6,
 				groups = {
 					i(270298),	-- Unholy Icon
 				},
@@ -517,17 +517,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 955,	-- Sergeant De Vries <Morale Officer>
 				coord = { 24.0, 73.0, MAP.ELWYNN_FOREST },
 				cost = { { "i", 247824, 1 } },	-- 1x Thunder Applejack
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(91753, {	-- An Enchanting Lesson
 				qg = 11072,	-- Kitta Firewind <Artisan Enchanter>
 				coord = { 64.8, 70.6, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				requireSkill = ENCHANTING,
 				lvl = 5,
+				requireSkill = ENCHANTING,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
@@ -539,9 +539,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 99129,	-- A Man About a Murloc
 				qg = 241,	-- Remy "Two Times"
 				coord = { 42.2, 67.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/18 Duskweed Petal
 						providers = {
@@ -573,10 +573,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				provider = { "o", 562131 },	-- Applejack Still
 				coord = { 24.6, 58.0, MAP.ELWYNN_FOREST },
 				cost = { { "i", 4536, 4 } },	-- 4x Shiny Red Apple
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				repeatable = true,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				repeatable = true,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(247824),	-- Thunder Applejack
 				},
@@ -584,26 +584,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(84, {	-- Back to Billy
 				sourceQuest = 86,	-- Pie for Billy
 				qg = 246,	-- "Auntie" Bernice Stonefield
-				qi = 962,	-- Pork Belly Pie (PQI!)
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				qi = 962,	-- Pork Belly Pie (PQI!)
 			}),
 			q(99131, {	-- Baited for Success
 				sourceQuest = 99130,	-- An Enticing Offer
 				qg = 241,	-- Remy "Two Times"
 				coord = { 42.2, 67.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(91775, {	-- Book Return
 				sourceQuest = 91772,	-- Shhh! We're Hunting Kobolds
 				qg = 240,	-- Marshal Dughan
-				qi = 279935,	-- Book Bag (PQI!)
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279935,	-- Book Bag (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
 						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
@@ -627,9 +627,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(99143, {	-- Bottles and Baubles
 				qg = 1651,	-- Lee Brown <Fisherman>
 				coord = { 47.6, 62.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Shiny Junk
 						providers = {
@@ -937,10 +937,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(59, {	-- Cloth and Leather Armor
 				sourceQuest = 39,	-- Deliver Thomas' Report
 				qg = 240,	-- Marshal Dughan
-				qi = 748,	-- Stormwind Armor Marker (PQI!)
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				qi = 748,	-- Stormwind Armor Marker (PQI!)
 				groups = {
 					i(2237),	-- Patched Pants
 					i(1171),	-- Well-stitched Robe
@@ -973,26 +973,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 377,	-- Priestess Josetta <Priest Trainer>
 				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
 				maps = { MAP.IRONFORGE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { GNOME },
 				classes = { PRIEST },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1277455),	-- Confounding Flash
 				},
 			}),
 			q(91740, {	-- Croaky's Head
 				qs = 247826,	-- Croaky's Head (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1667, {	-- Dead-tooth Jack
 				sourceQuest = 1666,	-- Marshal Haggard
 				qg = 294,	-- Marshal Haggard
 				coord = { 84.6, 69.4, MAP.ELWYNN_FOREST },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Marshal Haggard's Badge
@@ -1000,8 +1000,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ "i",  6782 },	-- Marshal Haggard's Badge (QI!)
 							{ "o", 85563 },	-- Dead-tooth's Strongbox
 						},
-						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key
 						coord = { 89.2, 80.6, MAP.ELWYNN_FOREST },
+						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key
 						cr = 6093,	-- Dead-Tooth Jack
 					}),
 					i(6979),	-- Haggard's Axe
@@ -1013,9 +1013,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91723, {	-- Delicate Instruments (1/2)
 				qg = 248242,	-- Hamish Bergwort
 				coord = { 65.0, 69.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Kobold Geomancer slain
 						provider = { "n", 476 },	-- Kobold Geomancer
@@ -1027,9 +1027,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 91723,	-- Delicate Instruments (1/2)
 				qg = 248242,	-- Hamish Bergwort
 				coord = { 65.0, 69.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Defias Rogue Wizard slain
 						provider = { "n", 474 },	-- Defias Rogue Wizard
@@ -1083,9 +1083,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91733, {	-- Downstream
 				qg = 248265,	-- Ormin Pelford
 				coord = { 76.6, 72.0, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Waterlogged Axe
 						providers = {
@@ -1112,9 +1112,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(91746, {	-- Elmpaw's Head
 				qs = 247862,	-- Elmpaw's Head (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1097, {	-- Elmore's Task
 				qgs = {
@@ -1127,8 +1127,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,	-- for "Stormpike's Delivery" in Stormwind
 				lvl = 9,
+				isBreadcrumb = true,	-- for "Stormpike's Delivery" in Stormwind
 			}),
 			q(37, {	-- Find the Lost Guards
 				sourceQuest = 35,	-- Further Concerns
@@ -1203,9 +1203,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91732, {	-- Good Steel
 				qg = 248266,	-- Hagar Lowe
 				coord = { 82.6, 63.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/4 Mining Tools
 						providers = {
@@ -1259,10 +1259,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(107, {	-- Note to William
 				sourceQuest = 111,	-- Speak with Gramma
 				qg = 248,	-- Gramma Stonefield
-				qi = 1252,	-- Gramma Stonefield's Note (PQI!)
 				coord = { 34.9, 83.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				qi = 1252,	-- Gramma Stonefield's Note (PQI!)
 			}),
 			q(86, {	-- Pie for Billy
 				sourceQuest = 85,	-- Lost Necklace
@@ -1310,8 +1310,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				sourceQuest = 91775,	-- Book Return
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.2, 65.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Geomancy for Curious Young Wizards
 						provider = { "i", 248003 },	-- Geomancy for Curious Young Wizards
@@ -1341,8 +1341,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 				qg = 377,	-- Priestess Josetta <Priest Trainer>
 				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
-				classes = { PRIEST },
 				races = { NIGHTELF },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -1378,10 +1378,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(71, {	-- Report to Thomas
 				sourceQuest = 45,	-- Discover Rolf's Fate
 				provider = { "o",  56 },	-- Rolf's corpse
-				qi = 735,	-- Rolf and Malakai's Medallions (PQI!)
 				coord = { 79.8, 55.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				qi = 735,	-- Rolf and Malakai's Medallions (PQI!)
 			}),
 			q(11, {	-- Riverpaw Gnoll Bounty
 				sourceQuest = 239,	-- Westbrook Garrison Needs Help!
@@ -1407,10 +1407,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			q(91751, {	-- Rough Wolf Pelts
 				qg = 6306,	-- Helene Peltskinner <Skinner>
 				coord = { 46.2, 62.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				requireSkill = SKINNING,
 				lvl = 5,
+				requireSkill = SKINNING,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Rough Wolf Pelt
 						provider = { "i", 247877 },	-- Rough Wolf Pelt
@@ -1423,21 +1423,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(2205, {	-- Seek out SI: 7
 				qg = 917,	-- Keryn Sylvius <Rogue Trainer>
-				qi = 7674,	-- Delivery to Mathias (PQI!)
 				coord = { 43.9, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
+				qi = 7674,	-- Delivery to Mathias (PQI!)
 			}),
 			q(61, {	-- Shipment to Stormwind
 				sourceQuests = { 60 },	-- Kobold Candles
 				qg = 253,	-- William Pestle
-				qi = 957,	-- William's Shipment (PQI!)
 				coord = { 43.2, 65.8, MAP.ELWYNN_FOREST },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 3,
+				qi = 957,	-- William's Shipment (PQI!)
 				groups = {
 					i(2454),	-- Elixir of Minor Strength
 					i(1178),	-- Explosive Rocket
@@ -1450,16 +1450,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(99128, {	-- Slimy Menace
 				sourceQuest = 99127,	-- A Net Disaster
 				qg = 383,	-- Jason Mathers <Fishmonger>
 				coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/4 Murloc Streamrunner slain
 						providers = { "n", 735 },	-- Murloc Streamrunner
@@ -1484,15 +1484,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 43.3, 66.2, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(91725, {	-- Stolen Enchanting Supplies
 				qg = 248248,	-- Blixie Fitzwink
 				coord = { 63.2, 72.6, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Stolen Enchanting Supplies
 						providers = {
@@ -1549,17 +1549,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(123, {	-- The Collector
 				qs = 1307,	-- Gold Pickup Schedule (QS!)
-				qi = 2223,	-- The Collector's Schedule (PQI!)
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				qi = 2223,	-- The Collector's Schedule (PQI!)
 			}),
 			q(114, {	-- The Escape
 				sourceQuest = 112,	-- Collecting Kelp
 				qg = 253,	-- William Pestle
-				qi = 1257,	-- Invisibility Liquor (PQI!)
 				coord = { 43.3, 65.7, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				qi = 1257,	-- Invisibility Liquor (PQI!)
 			}),
 			q(62, {	-- The Fargodeep Mine
 				qg = 240,	-- Marshal Dughan
@@ -1627,15 +1627,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qg = 240,	-- Marshal Dughan
 				coord = { 42.1, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 6,
+				isBreadcrumb = true,
 			}),
 			q(106, {	-- Young Lovers
 				qg = 251,	-- Maybell Maclure
-				qi = 1208,	-- Maybell's Love Letter (PQI!)
 				coord = { 43.2, 89.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				qi = 1208,	-- Maybell's Love Letter (PQI!)
 			}),
 		}),
 		n(RARES, {
@@ -1882,7 +1882,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(268238, {	-- Nordun Steadysight <Traveling Ranged Weapon Salesman>
 				coord = { 42.1, 66.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				sym = {{ "select", "itemID",
 					2506,	-- Hornwood Recurve Bow
 					2509,	-- Ornate Blunderbuss
@@ -1890,6 +1889,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					2510,	-- Solid Blunderbuss
 					2504,	-- Worn Shortbow
 				}},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			n(1198, {	-- Rallic Finn <Bowyer>
 				coord = { 83.2, 66.0, MAP.ELWYNN_FOREST },
@@ -1922,21 +1922,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			i(247826, {	-- Croaky's Head (QS!)
 				coord = { 76.6, 86.8, MAP.ELWYNN_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 248278,	-- Croaky
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(247883, {	-- Crude Wax Effigy
 				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 476,	-- Kobold Geomancer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(247862, {	-- Elmpaw's Head (QS!)
 				coords = {
 					{ 77.6, 37.8, MAP.ELWYNN_FOREST },
 					{ 81.8, 84.2, MAP.ELWYNN_FOREST },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 248299,	-- Elmpaw
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1307, {	-- Gold Pickup Schedule (QS!)
 				crs = {

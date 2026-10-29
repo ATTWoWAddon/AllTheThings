@@ -5,8 +5,8 @@
 maproot(MAP.ZEPHRAS_ISLE, {
 	lore = "Once a secluded island oasis in the sky, Zephras Isle now welcomes the next generation of WoW’s newest race – the Skyborne – to protect this floating island and secure its future.",
 	icon = [[~_.asset("zephrasisland")]],
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	maps = { 2665 },	-- Zephras Isle (Flight Path Map)
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		explorationHeader({
 			exploration(17675),	-- East Pylon Watchtower
@@ -123,17 +123,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92485, {	-- A Student of Nature
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282420,	-- Folded Parchment (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
 				lvl = 2,
+				qi = 282420,	-- Folded Parchment (PQI!)
 			}),
 			q(92481, {	-- A Student of the Arcane
+				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
-				sourceQuest = 92461,	-- Harmony in Balance
-				classes = { MAGE },
 				races = ALLIANCE_ONLY,
+				classes = { MAGE },
 				lvl = 2,
 				groups = { i(282416), },	-- Glowing Recall Crystal
 			}),
@@ -222,10 +222,10 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92483, {	-- At Home in the Shadows
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282422,	-- Simple Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { ROGUE },
 				lvl = 2,
+				qi = 282422,	-- Simple Note (PQI!)
 			}),
 			q(92834, {	-- Avenged Tenfold
 				sourceQuest = 92840,	-- Catching Wind
@@ -329,16 +329,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92466,	-- Call of Earth
 				qg = 251374,	-- Windshaper Boro <Shaman Trainer>
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = HORDE_ONLY,
+				classes = { SHAMAN },
 				lvl = 3,
 			}),
 			q(92468, {	-- Call of Earth
 				sourceQuest = 92467,	-- Call of Earth
 				qg = 251166,	-- Minor Manifestation of Earth
 				coord = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = HORDE_ONLY,
+				classes = { SHAMAN },
 				lvl = 3,
 				groups = {
 					i(5175),	-- Earth Totem
@@ -347,44 +347,44 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(97243, {	-- Call of Fire
 				qg = 252382,	-- Sessaria Skystride <Shaman Trainer>
 				coord = { 58.2, 78.4, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
 				lvl = 10,
 			}),
 			q(97244, {	-- Call of Fire
 				sourceQuest = 97243,	-- Call of Fire
 				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
 				lvl = 10,
 			}),
 			q(97245, {	-- Call of Fire
 				sourceQuest = 97244,	-- Call of Fire
 				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
 				lvl = 10,
 			}),
 			q(97257, {	-- Call of Fire
 				sourceQuest = 97245,	-- Call of Fire
 				qg = 268592,	-- Olariaan Swiftburn <Windshapers>
-				qi = 277329,	-- Torch of Eternal Flame (PQI!)
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
 				lvl = 10,
+				qi = 277329,	-- Torch of Eternal Flame (PQI!)
 				groups = {
 					i(5176),	-- Fire Totem
 				},
 			}),
 			q(98517, {	-- Call of Fire
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Sessaria Skystride or Aarnor Galestrike.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
 				lvl = 10,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Sessaria Skystride or Aarnor Galestrike.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Torch of the Dormant Flame
 						provider = { "i", 6653 },	-- Torch of the Dormant Flame
@@ -767,11 +767,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92484, {	-- Embracing the Elements
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282418,	-- Humming Recall Crystal (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
-				classes = { SHAMAN },
 				races = HORDE_ONLY,
+				classes = { SHAMAN },
 				lvl = 2,
+				qi = 282418,	-- Humming Recall Crystal (PQI!)
 			}),
 			q(93963, {	-- Exploring the Alliance
 				sourceQuest = 94947,	-- Welcome to Azeroth
@@ -949,9 +949,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(94901, {	-- Hopping Helpers
+				lvl = 8,
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect Gustjumper frogs).
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 8,
 			}),
 			q(92860, {	-- In Service of Zephras
 				sourceQuest = 92834,	-- Avenged Tenfold
@@ -1039,8 +1039,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93165,	-- Mercy Falls on Deaf Ears
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
-				repeatable = true,
 				lvl = 8,
+				repeatable = true,
 				qi = 258771,	-- Al'Aketh Cultist's Ear (QI!)
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders
@@ -1134,9 +1134,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 9,
 			}),
 			q(93791, {	-- Speak with Belann
-				races = ALLIANCE_ONLY,
 				qg = 252373,	-- Anathamaas Aetherwind <Mage Trainer>
 				coord = { 65.8, 80.4, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
 				classes = { MAGE },
 				lvl = 10,
 			}),
@@ -1169,11 +1169,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94638, {	-- Strength and Mercy
+				sourceQuest = 92840,	-- Catching Wind
 				qg = 255853,	-- Urs'endris <The Great Windborne Bear Spirit>
 				coord = { 69.8, 61.6, MAP.ZEPHRAS_ISLE },
-				sourceQuest = 92840,	-- Catching Wind
-				classes = { DRUID },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				classes = { DRUID },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Ur'endra slain
@@ -1185,35 +1185,35 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94007, {	-- Taming the Beast
 				qg = 254084,	-- Elayaa Easewind <Hunter Trainer>
 				coord = { 45.2, 44.2, MAP.ZEPHRAS_ISLE },
-				classes = { HUNTER },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				classes = { HUNTER },
 				lvl = 10,
 			}),
 			q(94013, {	-- Taming the Beast
 				sourceQuest = 94979,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
-				qi = 264163,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
+				qi = 264163,	-- Taming Rod (PQI!)
 			}),
 			q(94978, {	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
-				qi = 267272,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
-				classes = { HUNTER },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				classes = { HUNTER },
 				lvl = 10,
+				qi = 267272,	-- Taming Rod (PQI!)
 			}),
 			q(94979, {	-- Taming the Beast
 				sourceQuest = 94978,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
-				qi = 267298,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
+				qi = 267298,	-- Taming Rod (PQI!)
 			}),
 			q(94485, {	-- Tears of the Lady
 				sourceQuest = 94484,	-- Unnerving Silence
@@ -1248,9 +1248,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93735, {	-- The Broken Construct
 				sourceQuest = 92700,	-- The Grand Skyseer
-				races = HORDE_ONLY,
 				qg = 251968,	-- Ayessa Dawnsinger <Grand Skyseer of The Windshapers>
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(93737, {	-- The Broken Construct
@@ -1369,9 +1369,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92700, {	-- The Grand Skyseer
 				sourceQuest = 92579,	-- To Valanaar
-				races = HORDE_ONLY,
 				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(96101, {	-- The Great Outdoors [Zephras Isle]
@@ -1391,8 +1391,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94006, {	-- The Great Ursera Spirit
 				qg = 252359,	-- Lotheluum Starbreeze <Druid Trainer>
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
-				classes = { DRUID },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				classes = { DRUID },
 				lvl = 10,
 			}),
 			q(92881, {	-- The High Elder's Request
@@ -1440,15 +1440,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 7,
 			}),
 			q(93174, {	-- The Malfunctioning Construct
+				lvl = 8,
 				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Riaani Nightwind in Valanaar, then the Strange Hermit in Shadowgale Forest.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 8,
 			}),
 			q(92727, {	-- The Missing Scholar
 				sourceQuest = 92699,	-- The Supreme Magister
-				races = ALLIANCE_ONLY,
 				qg = 253204,	-- Dondallion Whisperwind
 				coord = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(92849, {	-- The Missing Scholar
@@ -1505,8 +1505,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94003, {	-- The Skybreaker Bulwark
 				qg = 252377,	-- Seena Skybreaker <Warrior Trainer>
 				coord = { 59.8, 72.8, MAP.ZEPHRAS_ISLE },
-				classes = { WARRIOR },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				classes = { WARRIOR },
 				lvl = 10,
 				qi = 263993,	-- Skybreaker Bulwark (QI!)
 				groups = {
@@ -1520,9 +1520,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92699, {	-- The Supreme Magister
 				sourceQuest = 92701,	-- To Valanaar
-				races = ALLIANCE_ONLY,
 				qg = 252383,	-- Valennia Stormfist <Peacekeeper Captain>
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(94488, {	-- The Ties That Bind
@@ -1545,18 +1545,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92532, {	-- The Warrior's Path
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282419,	-- Crumpled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { WARRIOR },
 				lvl = 2,
+				qi = 282419,	-- Crumpled Note (PQI!)
 			}),
 			q(92482, {	-- The Way of the Hunter
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
-				qi = 282421,	-- Scribbled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
 				lvl = 2,
+				qi = 282421,	-- Scribbled Note (PQI!)
 			}),
 			q(93926, {	-- The Western Watch
 				sourceQuest = 92528,	-- Among the Faithful
@@ -1565,9 +1565,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 5,
 			}),
 			q(92595, {	-- The Windshapers
-				races = HORDE_ONLY,
 				qg = 251902,	-- Illaya Amberwind <Elder Windshaper>
 				coord = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(94489, {	-- The Wounds of Betrayal
@@ -1659,16 +1659,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93736, {	-- Unwelcome Spirits
 				sourceQuest = 92700,	-- The Grand Skyseer
-				races = HORDE_ONLY,
 				qg = 254344,	-- Endaria Mistgaze
 				coord = { 58.2, 78.2, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(92741, {	-- Unwelcome Visitors
 				sourceQuest = 92699,	-- The Supreme Magister
-				races = ALLIANCE_ONLY,
 				qg = 253004,	-- Iaadaria Bitterwind <Alchemist>
 				coord = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
+				races = ALLIANCE_ONLY,
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/8 Shriekling Talons
@@ -1684,9 +1684,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 			q(94902, {	-- Valanaar Vintages
+				lvl = 8,
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect grapes).
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 8,
 			}),
 			q(93318, {	-- WANTED: Vulgara the Insatiable
 				sourceQuests = {
@@ -1730,9 +1730,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 			}),
 			q(92454, {	-- Welcome!
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				-- TODO: Wowhead doesn't list the quest giver yet. Bring the voucher to Dalia Windbreeze.
 				qi = 251900,	-- Thendal Grove Gift Voucher (PQI!)
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(13584),	-- Diablo Stone
 					i(13583),	-- Panda Collar

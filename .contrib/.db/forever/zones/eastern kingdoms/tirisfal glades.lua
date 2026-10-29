@@ -16,9 +16,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				n(QUESTS, {
 					q(8, {	-- A Rogue's Deal (1/2)
 						qg = 6784,	-- Calvin Montague
-						qi = 7628,	-- Nondescript Letter
 						coord = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
+						qi = 7628,	-- Nondescript Letter
 						groups = {
 							objective(1, {	-- Deliver the Nondescript Letter to Innkeeper Renee
 								provider = { "n", 5688 },	-- Innkeeper Renee
@@ -131,10 +131,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(383, {	-- Vital Intelligence
 						sourceQuest = 382,	-- The Red Messenger
 						qg = 1570,	-- Executor Arren
-						qi = 2885,	-- Scarlet Crusade Documents
 						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
 						lvl = 2,
+						qi = 2885,	-- Scarlet Crusade Documents
 					}),
 					q(590, {	-- A Rogue's Deal (2/2)
 						sourceQuest = 8,	-- A Rogue's Deal (1/2)
@@ -158,42 +158,42 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(3095, {	-- Simple Scroll
 						sourceQuest = 364,	-- The Mindless Ones
 						qg = 1569,	-- Shadow Priest Sarvis
-						qi = 9546,	-- Simple Scroll
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { WARRIOR },
+						qi = 9546,	-- Simple Scroll
 					}),
 					q(3096, {	-- Encrypted Scroll
 						sourceQuest = 364,	-- The Mindless Ones
 						qg = 1569,	-- Shadow Priest Sarvis
-						qi = 9559,	-- Encrypted Scroll
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { ROGUE },
+						qi = 9559,	-- Encrypted Scroll
 					}),
 					q(3097, {	-- Hallowed Scroll
 						sourceQuest = 364,	-- The Mindless Ones
 						qg = 1569,	-- Shadow Priest Sarvis
-						qi = 9569,	-- Hallowed Scroll
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { PRIEST },
+						qi = 9569,	-- Hallowed Scroll
 					}),
 					q(3098, {	-- Glyphic Scroll
 						sourceQuest = 364,	-- The Mindless Ones
 						qg = 1569,	-- Shadow Priest Sarvis
-						qi = 9574,	-- Glyphic Scroll
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { MAGE },
+						qi = 9574,	-- Glyphic Scroll
 					}),
 					q(3099, {	-- Tainted Scroll
 						sourceQuest = 364,	-- The Mindless Ones
 						qg = 1569,	-- Shadow Priest Sarvis
-						qi = 9578,	-- Tainted Scroll
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { WARLOCK },
+						qi = 9578,	-- Tainted Scroll
 					}),
 					q(3901, {	-- Rattling the Rattlecages
 						sourceQuest = 364,	-- The Mindless Ones
@@ -551,10 +551,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(366, {	-- Return the Book
 				sourceQuest = 357,	-- The Lich's Identity
 				qg = 1498,	-- Bethor Iceshard
-				qi = 3016,	-- Gunther's Spellbook
 				coord = { 84.2, 17.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 5,
+				qi = 3016,	-- Gunther's Spellbook
 			}),
 			q(367, {	-- A New Plague (1/4)
 				qg = 1518,	-- Apothecary Johaan
@@ -734,18 +734,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(405, {	-- The Prodigal Lich
 				qg = 1499,	-- Magistrate Sevren
-				qi = 3017,	-- Sevren's Orders
 				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 5,
+				qi = 3017,	-- Sevren's Orders
 			}),
 			q(407, {	-- Fields of Grief (2/2)
 				sourceQuest = 365,	-- Fields of Grief (1/2)
 				qg = 1518,	-- Apothecary Johaan
-				qi = 3035,	-- Laced Pumpkin
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 4,
+				qi = 3035,	-- Laced Pumpkin
 			}),
 			q(408, {	-- The Family Crypt
 				sourceQuest = 355,	-- Speak with Sevren
@@ -780,8 +780,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						provider = { "o", 1586 },	-- Crate of Candles
 						coord = { 68.1, 42.0, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 5,
+						repeatable = true,
 						groups = {
 							i(3080),	-- Candle of Beckoning
 						},
@@ -793,8 +793,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						},
 						coord = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 5,
+						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Lillith Nefara slain
 								questID = 409,	-- Proving Allegiance
@@ -808,10 +808,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(411, {	-- The Prodigal Lich Returns
 				sourceQuest = 409,	-- Proving Allegiance
 				qg = 1497,	-- Gunther Arcanus
-				qi = 3081,	-- Nether Gem
 				coord = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 5,
+				qi = 3081,	-- Nether Gem
 				groups = {
 					i(5940),	-- Bone Buckler
 				},
@@ -851,18 +851,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(445, {	-- Delivery to Silverpine Forest
 				qg = 1518,	-- Apothecary Johaan
-				qi = 3238,	-- Johaan's Findings
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 9,
+				qi = 3238,	-- Johaan's Findings
 			}),
 			q(492, {	-- A New Plague (4/4)
 				sourceQuest = 369,	-- A New Plague (3/4)
 				qg = 1518,	-- Apothecary Johaan
-				qi = 3460,	-- Johaan's Special Drink
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
+				qi = 3460,	-- Johaan's Special Drink
 			}),
 			q(1818, {	-- Speak with Dillinger
 				altQuests = { 1502 },	-- Thun'grim Firegaze
@@ -870,8 +870,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 61.84, 52.53, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1819, {	-- Ulag the Cleaver
 				sourceQuest = 1818,	-- Speak with Dillinger
@@ -894,8 +894,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1821, {	-- Agamand Heirlooms
 				sourceQuest = 1820,	-- Speak with Coleman
@@ -1045,10 +1045,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 91285,	-- Murlocs at the Gates
 				qg = 246349,	-- Breton Samuels
 				coord = { 21.8, 45.2, MAP.TIRISFAL_GLADES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 8,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Speak with Hilda the Breaker
 						cr = 246389,	-- Hilda the Breaker <Paladin Trainer>
@@ -1120,11 +1120,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(94434, {	-- A Lesson in Divinity
 				qg = 257648,	-- Tanis Alderwood
 				coord = { 65.6, 37.8, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = { { "i", 2589, 10 } },	-- 10x Linen Cloth
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
-				cost = { { "i", 2589, 10 } },	-- 10x Linen Cloth
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(94435, {	-- A Lesson in Divinity
 				qg = 257648,	-- Tanis Alderwood
@@ -1881,8 +1881,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 		n(TREASURES, {
 			o(405879, {	-- Apothecary Society Primer
 				coord = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(208185),	-- The Apothecary's Metaphysical Primer
 				},
@@ -2010,11 +2010,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			i(255007, {	-- Golem Isospring
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				coord = { 54.0, 57.4, MAP.TIRISFAL_GLADES },
 				crs = {
 					276061,	-- Decrepit Harvester
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3321, {	-- Gray Fur Booties
 				coords = {
@@ -2039,9 +2039,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				cr = 1662,	-- Captain Perrine
 			}),
 			i(277470, {	-- Schematic: Harvester Override Signalcaster (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 276061,	-- Decrepit Harvester
 				coord = { 53.8, 56.2, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3319, {	-- Short Sabre
 				coords = {

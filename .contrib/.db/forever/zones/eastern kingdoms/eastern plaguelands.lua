@@ -6,8 +6,8 @@ local CRAFTSMANS_WRIT_QUEST = function(id, itemID, cost)
 	return q(id, {	-- Craftsman's Writ - Quest
 		provider = { "i", itemID },	-- Craftsman's Writ - Item
 		cost = { cost },
-		repeatable = true,
 		lvl = 55,
+		repeatable = true,
 		groups = {
 			i(22524),	-- Insignia of the Crusade
 			i(22523),	-- Insignia of the Dawn
@@ -182,8 +182,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16131,	-- Rohan the Assassin
 				coord = { 81.4, 58.5, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22526, 30 } },	-- Bone Fragments
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22524),	-- Insignia of the Crusade
 				},
@@ -232,8 +232,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 				coord = { 81.5, 58.3, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22527, 30 } },	-- Core of Elements
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22523),	-- Insignia of the Dawn
 				},
@@ -242,8 +242,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 12843, 1 } },	-- Corruptor's Scourgestone
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
@@ -253,8 +253,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
 				coord = { 81.1, 57.5, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 12844, 1 } },	-- Argent Dawn Valor Token
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22568),	-- Sealed Craftsman's Writ
 				},
@@ -264,8 +264,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 				coord = { 82.5, 58.6, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22525, 30 } },	-- Crypt Fiend Parts
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22524),	-- Insignia of the Crusade
 				},
@@ -284,8 +284,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16112,	-- Korfax, Champion of the Light
 				coord = { 81.8, 58.1, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22528, 30 } },	-- Dark Iron Scraps
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22523),	-- Insignia of the Dawn
 				},
@@ -349,8 +349,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 27 },	-- Insignia of the Crusade
 					{ "i", 22523, 27 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22657),	-- Amulet of the Dawn
 					i(22667),	-- Bracers of Hope
@@ -369,8 +369,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 110 },	-- Insignia of the Crusade
 					{ "i", 22523, 110 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22657),	-- Amulet of the Dawn
 					i(22667),	-- Bracers of Hope
@@ -389,8 +389,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 75 },	-- Insignia of the Crusade
 					{ "i", 22523, 75 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22657),	-- Amulet of the Dawn
 					i(22667),	-- Bracers of Hope
@@ -409,8 +409,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 45 },	-- Insignia of the Crusade
 					{ "i", 22523, 45 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22657),	-- Amulet of the Dawn
 					i(22667),	-- Bracers of Hope
@@ -541,8 +541,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 12841, 10 } },	-- Invader's Scourgestones
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
@@ -579,8 +579,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
 					i(12844),	-- Argent Dawn Valor Token
 				},
@@ -627,9 +627,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			q(5941, {	-- Return to Chromie
 				sourceQuest = 5206,	-- Marauders of Darrowshire
 				qg = 11063,	-- Carlin Redpath
-				qi = 15314,	-- Bundle of Relics
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
+				qi = 15314,	-- Bundle of Relics
 			}),
 			q(6147, {	-- Return to Nathanos
 				sourceQuest = 6146,	-- Nathanos' Ruse
@@ -653,8 +653,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 16135,	-- Rayne <Cenarion Circle>
 				coord = { 81.2, 59.0, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22529, 30 } },	-- Savage Frond
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22524),	-- Insignia of the Crusade
 					i(22523),	-- Insignia of the Dawn
@@ -668,8 +668,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 6 },	-- Insignia of the Crusade
 					{ "i", 22523, 6 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22681),	-- Band of Piety
 					i(22680),	-- Band of Resolution
@@ -688,8 +688,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 30 },	-- Insignia of the Crusade
 					{ "i", 22523, 30 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22681),	-- Band of Piety
 					i(22680),	-- Band of Resolution
@@ -708,8 +708,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 20 },	-- Insignia of the Crusade
 					{ "i", 22523, 20 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22681),	-- Band of Piety
 					i(22680),	-- Band of Resolution
@@ -728,8 +728,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 7 },	-- Insignia of the Crusade
 					{ "i", 22523, 7 },	-- Insignia of the Dawn
 				},
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(22681),	-- Band of Piety
 					i(22680),	-- Band of Resolution
@@ -753,7 +753,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			q(7622, {	-- The Balance of Light and Shadow
 				sourceQuest = 7621,	-- A Warning
 				qg = 14494,	-- Eris Havenfire
-				qi = 18659,	-- Splinter of Nordrassil
 				coord = { 20.8, 18.4, MAP.EASTERN_PLAGUELANDS },
 				cost = {
 					{ "i", 18646, 1 },	-- The Eye of Divinity
@@ -761,6 +760,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				},
 				classes = { PRIEST },
 				lvl = 60,
+				qi = 18659,	-- Splinter of Nordrassil
 				groups = {
 					i(18609),	-- Anathema
 					i(18608),	-- Benediction
@@ -800,8 +800,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 54,
 			}),
 			q(6136, {	-- The Corpulent One
-				qg = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 				sourceQuest = 6133,	-- The Ranger Lord's Behest
+				qg = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 				coord = { 26.6, 74.8, MAP.EASTERN_PLAGUELANDS },
 				races = HORDE_ONLY,
 				lvl = 56,
@@ -845,8 +845,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 10 },	-- Insignia of the Crusade
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					i(22636),	-- Ice Guard
 				},
@@ -897,8 +897,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ "i", 22524, 10 },	-- Insignia of the Crusade
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 60,
+				repeatable = true,
 				groups = {
 					i(22638),	-- Shadow Guard
 				},
@@ -945,10 +945,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			q(5248, {	-- Tormented By the Past
 				sourceQuest = 5247,	-- Fragments of the Past
 				qg = 10304,	-- Aurora Skycaller
-				qi = 13347,	-- Crystal of Zin-Malor
 				coord = { 53.4, 22.0, MAP.EASTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
+				qi = 13347,	-- Crystal of Zin-Malor
 			}),
 			q(6042, {	-- Un-Life's Little Annoyances
 				qg = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
@@ -1014,8 +1014,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				description = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 				qg = 16226,	-- Guard Didier <Brotherhood of the Light>
 				coord = { 80.0, 58.0, MAP.EASTERN_PLAGUELANDS },
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- Writ of Safe Passage Signed
 						provider = { "i", 22593 },	-- Writ of Safe Passage

@@ -67,8 +67,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3382, {	-- A Crew Under Fire
 				qg = 8380,	-- Captain Vanessa Beltis
 				coord = { 53.0, 87.8, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(5536, {	-- A Land Filled with Hatred
 				qg = 11548,	-- Loth'atu
@@ -89,16 +89,16 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3381, {	-- A Meeting with the Master
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
-				timeline = { REMOVED_1_7_0 },
 				lvl = 45,
+				timeline = { REMOVED_1_7_0 },
 			}),
 			q(3564, {	-- Andron's Payment to Jediga
 				sourceQuest = 3542,	-- Delivery to Andron Gant
 				qg = 6522,	-- Andron Gant
-				qi = 10679,	-- Andron's Note
 				coord = { 54.6, 75.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10679,	-- Andron's Note
 			}),
 			q(3602, {	-- Azsharite
 				sourceQuest = 3511,	-- The Name of the Beast (3/3)
@@ -117,10 +117,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 			q(3504, {	-- Betrayed (1/4)
 				qg = 4485,	-- Belgrom Rockmaul
-				qi = 10643,	-- Sealed Letter to Ag'tor
 				coord = { 75.0, 34.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 44,
+				qi = 10643,	-- Sealed Letter to Ag'tor
 			}),
 			q(3505, {	-- Betrayed (2/4)
 				sourceQuest = 3504,	-- Betrayed (1/4)
@@ -157,10 +157,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3507, {	-- Betrayed (4/4)
 				sourceQuest = 3506,	-- Betrayed (3/4)
 				qg = 8576,	-- Ag'tor Bloodfist
-				qi = 10597,	-- Head of Magus Rimtori
 				coord = { 22.2, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 44,
+				qi = 10597,	-- Head of Magus Rimtori
 				groups = {
 					i(10709),	-- Pyrestone Orb
 					i(11120),	-- Belgrom's Hammer
@@ -200,42 +200,42 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3542, {	-- Delivery to Andron Gant
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10540,	-- Tablet of Markri
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10540,	-- Tablet of Markri
 			}),
 			q(3561, {	-- Delivery to Archmage Xylem
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10541,	-- Tablet of Sael'hai
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10541,	-- Tablet of Sael'hai
 			}),
 			q(3541, {	-- Delivery to Jes'rimon
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10539,	-- Tablet of Jin'yael
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10539,	-- Tablet of Jin'yael
 			}),
 			q(3518, {	-- Delivery to Magatha
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10538,	-- Tablet of Beth'Amara
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10538,	-- Tablet of Beth'Amara
 			}),
 			q(9364, {	-- Fragmented Magic
 				sourceQuest = 9362,	-- Warlord Krellian
 				qg = 8379,	-- Archmage Xylem
-				qi = 23250,	-- Prismatic Shell
 				coord = { 29.6, 40.6, MAP.AZSHARA },
 				classes = { MAGE },
 				lvl = 60,
+				qi = 23250,	-- Prismatic Shell
 				groups = {
 					objective(1, {	-- 0/50 Polymorph Clone slain
 						provider = { "n", 16479 },	-- Polymorph Clone
@@ -258,10 +258,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3563, {	-- Jes'rimon's Payment to Jediga
 				sourceQuest = 3541,	-- Delivery to Jes'rimon
 				qg = 8659,	-- Jes'rimon
-				qi = 10680,	-- Jes'rimon's Note
 				coord = { 55.6, 34.0, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10680,	-- Jes'rimon's Note
 			}),
 			q(3601, {	-- Kim'jael Indeed!
 				qg = 8420,	-- Kim'jael
@@ -326,10 +326,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3562, {	-- Magatha's Payment to Jediga
 				sourceQuest = 3518,	-- Delivery to Magatha
 				qg = 4046,	-- Magatha Grimtotem
-				qi = 10678,	-- Magatha's Note
 				coord = { 70.2, 30.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10678,	-- Magatha's Note
 			}),
 			q(8250, {	-- Magecraft
 				allianceQuestData = {
@@ -355,8 +355,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					},
 				},
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(8251, {	-- Magic Dust
 				sourceQuest = 8250,	-- Magecraft
@@ -377,8 +377,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3503, {	-- Meeting with the Master
 				qg = 8395,	-- Sanath Lim-yo
 				coord = { 28.0, 50.0, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(8255, {	-- Of Coursers We Know
 				sourceQuest = 8254,	-- Cenarion Aid
@@ -400,8 +400,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3421, {	-- Return Trip
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(5535, {	-- Spiritual Unrest
 				qg = 11548,	-- Loth'atu
@@ -451,10 +451,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3621, {	-- The Formation of Felbane
 				sourceQuest = 3602,	-- Azsharite
 				qg = 7783,	-- Loramus Thalipedes
-				qi = 10738,	-- Shipment to Galvan
 				coord = { 60.8, 66.4, MAP.AZSHARA },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 45,
+				qi = 10738,	-- Shipment to Galvan
 			}),
 			q(8151, {	-- The Hunter's Charm
 				allianceQuestData = {
@@ -531,9 +531,9 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3511, {	-- The Name of the Beast (3/3)
 				sourceQuest = 3510,	-- The Name of the Beast (2/3)
 				qg = 6134,	-- Lord Arkkoroc
-				qi = 10610,	-- Hetaera's Blood
 				coord = { 77.2, 42.8, MAP.AZSHARA },
 				lvl = 45,
+				qi = 10610,	-- Hetaera's Blood
 			}),
 			q(8252, {	-- The Siren's Coral
 				sourceQuest = 8251,	-- Magic Dust
@@ -581,10 +581,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3565, {	-- Xylem's Payment to Jediga
 				sourceQuest = 3561,	-- Delivery to Archmage Xylem
 				qg = 8379,	-- Archmage Xylem
-				qi = 10681,	-- Xylem's Note
 				coord = { 29.2, 40.2, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10681,	-- Xylem's Note
 			}),
 		}),
 		n(RARES, {

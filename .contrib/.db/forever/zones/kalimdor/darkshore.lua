@@ -54,20 +54,20 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(993, {	-- A Lost Master (2/2)
 				sourceQuest = 986,	-- A Lost Master (1/2)
 				qg = 3693,	-- Terenthis
-				qi = 5387,	-- Enchanted Moonstalker Cloak
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 5387,	-- Enchanted Moonstalker Cloak
 			}),
 			q(78088, {	-- A Strange Artifact
 				provider = { "o", 409289 },	-- Strange Orb
-				qi = 209748,	-- Althalaxx Orb (PQI!)
 				coord = { 56.2, 26.4, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 209748,	-- Althalaxx Orb (PQI!)
 			}),
 			q(4812, {	-- As Water Cascades
 				sourceQuest = 4811,	-- The Red Crystal
@@ -418,9 +418,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(994, {	-- Escape Through Force
-				altQuests = { 995 },	-- Escape Through Stealth
 				description = "This quest becomes unavailable if you complete Escape Through Stealth",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 995 },	-- Escape Through Stealth
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -430,9 +430,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(995, {	-- Escape Through Stealth
-				altQuests = { 994 },	-- Escape Through Force
 				description = "This quest becomes unavailable if you complete Escape Through Force",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 994 },	-- Escape Through Force
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -443,11 +443,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(97914, {	-- Expanding Horizons
 				qg = 3649,	-- Thundris Windweaver
-				qi = 279045,	-- Thundris' Letter (PQI!)
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279045,	-- Thundris' Letter (PQI!)
 			}),
 			q(963, {	-- For Love Eternal
 				qg = 3644,	-- Cerellean Whiteclaw
@@ -609,10 +609,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(97926, {	-- Making Do
 				sourceQuest = 97914,	-- Expanding Horizons
 				qg = 1646,	-- Baros Alexston <City Architect>
-				qi = 279048,	-- Alexston's Reply (PQI!)
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279048,	-- Alexston's Reply (PQI!)
 				groups = {
 					i(282286),	-- Shipwright's Satchel
 				},
@@ -755,11 +755,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(741, {	-- The Absent Minded Prospector (3/5)
 				sourceQuest = 731,	-- The Absent Minded Prospector (2/5)
 				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
-				qi = 4654,	-- Mysterious Fossil
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 4654,	-- Mysterious Fossil
 				groups = {
 					i(5629),	-- Hammerfist Gloves
 					i(5630),	-- Windfelt Gloves
@@ -930,11 +930,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(967, {	-- The Tower of Althalaxx (3/9)
 				sourceQuest = 966,	-- The Tower of Althalaxx (2/9)
 				qg = 3661,	-- Balthule Shadowstrike
-				qi = 5354,	-- Letter to Delgren
 				coord = { 55.0, 24.9, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				qi = 5354,	-- Letter to Delgren
 			}),
 			q(1143, {	-- The Tower of Althalaxx (8/9)
 				sourceQuest = 1167,	-- The Tower of Althalaxx (7/9)
@@ -1030,9 +1030,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(98025, {	-- WANTED: Jai'vhanel
 				provider = { "o", 175320 },	-- WANTED: Murkdeep!
 				coord = { 37.2, 44.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Feather of Jai'vhanel
 						provider = { "i", 281038 },	-- Feather of Jai'vhanel
@@ -1080,8 +1080,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 		}),
 		n(RARES, {
 			n(270294, {	-- Baron Marinous
-				coord = { 59.0, 22.9, MAP.DARKSHORE },
 				description = "Combine 20 Mathystral Amulet Fragments into a Mathystral Amulet, then use it at the Fathom Stone at the bottom of the spiral staircase in the Ruins of Mathystra to summon him.",
+				coord = { 59.0, 22.9, MAP.DARKSHORE },
 				cost = { { "i", 279277, 1 } },	-- Mathystral Amulet
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
@@ -1250,23 +1250,23 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			i(3173),	-- Bear Meat
 			i(5352, {	-- Book: The Powers Below
 				races = ALLIANCE_ONLY,
+				lvl = 10,
 				crs = {
 					2339,	-- Twilight Thug
 					2338,	-- Twilight Disciple
 				},
-				lvl = 10,
 			}),
 			i(5839, {	-- Journal Page
 				cr = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
 			}),
 			i(279276, {	-- Mathystral Amulet Fragment
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					271903,	-- Stormscale Beastmistress
 					2183,	-- Stormscale Warrior
 					2182,	-- Stormscale Sorceress
 					2181,	-- Stormscale Myrmidon
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(279277, {	-- Mathystral Amulet
 						cost = { { "i", 279276, 20 } },	-- 20x Mathystral Amulet Fragment

@@ -36,8 +36,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 			maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 			maps = { MAP.WESTERN_PLAGUELANDS },
 			races = ALLIANCE_ONLY,
-			isYearly = true,
 			lvl = 30,
+			isYearly = true,
 			groups = {
 				objective(1, {	-- Uther's Tribute
 					provider = { "i", 19850 },	-- Uther's Tribute
@@ -52,8 +52,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 			maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 			maps = { MAP.ASHENVALE },
 			races = HORDE_ONLY,
-			isYearly = true,
 			lvl = 30,
+			isYearly = true,
 			groups = {
 				objective(1, {	-- Grom's Tribute
 					provider = { "i", 19851 },	-- Grom's Tribute

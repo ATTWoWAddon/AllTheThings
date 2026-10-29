@@ -107,10 +107,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(2976, {	-- A Grim Discovery (2/2)
 				sourceQuest = 2974,	-- A Grim Discovery (1/2)
 				qg = 4544,	-- Krueg Skullsplitter
-				qi = 9462,	-- Crate of Grimtotem Horns
 				coord = { 76.0, 42.8, MAP.FERALAS },
 				races = HORDE_ONLY,
 				lvl = 37,
+				qi = 9462,	-- Crate of Grimtotem Horns
 				groups = {
 					i(11858),	-- Battlehard Cape
 					i(11859),	-- Jademoon Orb
@@ -144,26 +144,26 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(3121, {	-- A Strange Request
 				qg = 8115,	-- Witch Doctor Uzer'i
-				qi = 9629,	-- A Shrunken Head
 				coord = { 74.4, 43.4, MAP.FERALAS },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 40,
+				qi = 9629,	-- A Shrunken Head
 			}),
 			q(2981, {	-- A Threat in Feralas
 				qg = 4485,	-- Belgrom Rockmaul
 				coord = { 75.0, 34.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 38,
+				isBreadcrumb = true,
 			}),
 			q(7725, {	-- Again With the Zapped Giants
 				sourceQuest = 7003,	-- Zapped Giants
 				qg = 14637,	-- Zorbin Fandazzle
 				coord = { 44.8, 43.4, MAP.FERALAS },
 				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/10 Miniaturization Residue
 						provider = { "i", 18956 },	-- Miniaturization Residue
@@ -237,10 +237,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(3841, {	-- An Orphan Looking For a Home
 				sourceQuest = 2972,	-- Doling Justice (2/2)
 				qg = 7956,	-- Kindal Moonweaver
-				qi = 11102,	-- Unhatched Sprite Darter Egg
 				coord = { 65.8, 45.6, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 11102,	-- Unhatched Sprite Darter Egg
 			}),
 			q(4127, {	-- Boat Wreckage
 				sourceQuest = 4125,	-- The Missing Courier (2)
@@ -274,8 +274,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				groups = {
 					objective(1, {	-- 0/1 Edana's Dark Heart
 						provider = { "i", 9528 },	-- Edana's Dark Heart
-						cost = { { "i", 9530, 1 } },	-- Horn of Hatetalon
 						coord = { 40.6, 8.6, MAP.FERALAS },
+						cost = { { "i", 9530, 1 } },	-- Horn of Hatetalon
 						cr = 8075,	-- Edana Hatetalon
 					}),
 					i(9530, {	-- Horn of Hatetalon
@@ -293,10 +293,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(2871, {	-- Delivering the Relic
 				sourceQuest = 2870,	-- Against Lord Shalzaru
 				qg = 7877,	-- Latronicus Moonspear
-				qi = 9248,	-- Mysterious Relic
 				coord = { 30.4, 46.2, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 9248,	-- Mysterious Relic
 				groups = {
 					i(9663),	-- Dawnrider's Chestpiece
 					i(9664),	-- Sentinel's Guard
@@ -323,11 +323,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(2972, {	-- Doling Justice (2/2)
 				sourceQuest = 2970,	-- Doling Justice (1/2)
 				qg = 7957,	-- Jer'kai Moonweaver
-				qi = 9368,	-- Jer'kai's Signet Ring
 				coord = { 65.8, 45.6, MAP.FERALAS },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 9368,	-- Jer'kai's Signet Ring
 				groups = {
 					i(10705),	-- Firwillow Wristbands
 					i(10706),	-- Nightscale Girdle
@@ -351,8 +351,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				},
 			}),
 			q(2766, {	-- Find OOX-22/FE!
-				qi = 8705,	-- OOX-22/FE Distress Beacon
 				lvl = 40,
+				qi = 8705,	-- OOX-22/FE Distress Beacon
 			}),
 			q(4265, {	-- Freed from the Hive
 				sourceQuest = 4135,	-- The Writhing Deep
@@ -480,15 +480,15 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				qg = 5566,	-- Tannysa
 				coord = { 44.8, 77.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(3788, {	-- Jonespyre's Request
 				qg = 7736,	-- Innkeeper Shyria
 				coord = { 31.0, 43.4, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			{	-- Master of the Wild Leather
 				allianceQuestData = q(2853, {	-- Master of the Wild Leather [A]
@@ -532,8 +532,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 32.4, 43.8, MAP.FERALAS },
 				cost = { { "i", 11040, 5 } },	-- Morrowgrain
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 			}),
 			q(3127, {	-- Mountain Giant Muisek
 				sourceQuest = 3126,	-- Treant Muisek
@@ -609,34 +609,34 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(98156, {	-- Packaged Pristine Pelts
 				sourceQuest = 98155,	-- Pristine Pesterhide Pelts
 				qg = 11826,	-- Kristy Grant
-				qi = 279481,	-- Package of Pristine Pelts (PQI!)
 				coord = { 89.4, 46.2, MAP.FERALAS },
 				maps = { MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 27,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279481,	-- Package of Pristine Pelts (PQI!)
 				groups = {
 					i(281295),	-- Pelt Pants
 				},
 			}),
 			q(7738, {	-- Perfect Yeti Hide
-				qi = 18972,	-- Perfect Yeti Hide
 				coord = { 55.6, 56.2, MAP.FERALAS },
 				races = HORDE_ONLY,
-				repeatable = true,
+				lvl = 40,
 				crs = {
 					5297,	-- Elder Rage Scar
 					5299,	-- Ferocious Rage Scar
 					5296,	-- Rage Scar Yeti
 				},
-				lvl = 40,
+				repeatable = true,
+				qi = 18972,	-- Perfect Yeti Hide
 			}),
 			q(98155, {	-- Pristine Pesterhide Pelts
 				qg = 11826,	-- Kristy Grant
 				coord = { 89.4, 46.2, MAP.FERALAS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Pristine Pesterhide Pelt
 						provider = { "i", 279472 },	-- Pristine Pesterhide Pelt
@@ -646,15 +646,15 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				},
 			}),
 			q(7735, {	-- Pristine Yeti Hide
-				qi = 18969,	-- Pristine Yeti Hide
 				races = ALLIANCE_ONLY,
-				repeatable = true,
+				lvl = 40,
 				crs = {
 					5297,	-- Elder Rage Scar
 					5299,	-- Ferocious Rage Scar
 					5296,	-- Rage Scar Yeti
 				},
-				lvl = 40,
+				repeatable = true,
+				qi = 18969,	-- Pristine Yeti Hide
 			}),
 			q(4130, {	-- Psychometric Reading
 				sourceQuest = 4129,	-- The Knife Revealed
@@ -668,8 +668,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				qg = 14637,	-- Zorbin Fandazzle
 				coord = { 44.8, 43.4, MAP.FERALAS },
 				maxReputation = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/6 Water Elemental Core
 						provider = { "i", 18958 },	-- Water Elemental Core
@@ -700,18 +700,18 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(3122, {	-- Return to Witch Doctor Uzer'i
 				sourceQuest = 3121,	-- A Strange Request
 				qg = 3216,	-- Neeru Fireblade
-				qi = 9628,	-- Neeru's Herb Pouch
 				coord = { 49.6, 50.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 40,
+				qi = 9628,	-- Neeru's Herb Pouch
 			}),
 			q(4267, {	-- Rise of the Silithid
 				sourceQuest = 4266,	-- A Hero's Welcome
 				qg = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
-				qi = 11466,	-- Raschal's Report
 				coord = { 30.3, 46.2, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 11466,	-- Raschal's Report
 				groups = {
 				},
 			}),
@@ -746,10 +746,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(4281, {	-- Thalanaar Delivery
 				sourceQuest = 4135,	-- The Writhing Deep
-				qi = 11463,	-- Undelivered Parcel
 				coord = { 73.3, 56.3, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 11463,	-- Undelivered Parcel
 			}),
 			q(2903, {	-- The Battle Plans
 				sourceQuest = 2902,	-- Woodpaw Investigation
@@ -774,11 +774,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(3002, {	-- The Gordunni Orb
 				sourceQuest = 2979,	-- Dark Ceremony
 				qg = 7777,	-- Rok Orhan
-				qi = 9371,	-- Gordunni Orb
 				coord = { 74.2, 44.6, MAP.FERALAS },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 9371,	-- Gordunni Orb
 			}),
 			q(2978, {	-- The Gordunni Scroll
 				providers = {
@@ -812,10 +812,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(4129, {	-- The Knife Revealed
 				sourceQuest = 4127,	-- Boat Wreckage
 				qg = 7880,	-- Ginro Hearthkindle
-				qi = 11462,	-- Discarded Knife
 				coord = { 31.9, 45.1, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 11462,	-- Discarded Knife
 			}),
 			q(2821, {	-- The Mark of Quality [A]
 				qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
@@ -1018,8 +1018,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			q(3567, {	-- To the Top
 				qg = 7773,	-- Marli Wishrunner
 				coord = { 45.8, 16.4, MAP.FERALAS },
-				repeatable = true,
 				lvl = 25,
+				repeatable = true,
 			}),
 			q(3126, {	-- Treant Muisek
 				sourceQuest = 3125,	-- Faerie Dragon Muisek
@@ -1291,11 +1291,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					7730,	-- Zukk'ash Infestation
 				},
 				qg = 7875,	-- Hadoken Swiftstrider
-				qi = 19020,	-- Camp Mojache Zukk'ash Report
 				coord = { 74.8, 42.6, MAP.FERALAS },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 39,
+				qi = 19020,	-- Camp Mojache Zukk'ash Report
 				groups = {
 					i(19038),	-- Ring of Subtlety
 					i(19037),	-- Emerald Peak Spaulders

@@ -38,43 +38,43 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				qg = 2198,	-- Crier Goodman
 				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5090, {	-- A Call to Arms: The Plaguelands! [Ironforge]
 				qg = 10877,	-- Courier Hammerfall
 				coord = { 31.6, 67.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5091, {	-- A Call to Arms: The Plaguelands! [Darnassus]
 				qg = 10878,	-- Herald Moonstalker
 				coord = { 36.4, 39.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 				qg = 10880,	-- Warcaller Gorlach
 				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
 				qg = 10879,	-- Harbinger Balthazad
 				coord = { 64.0, 44.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5095, {	-- A Call to Arms: The Plaguelands! [Thunder Bluff]
 				qg = 10881,	-- Bluff Runner Windstrider
 				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(4971, {	-- A Matter of Time
 				qg = 10667,	-- Chromie
@@ -260,9 +260,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5210, {	-- Brother Carlin
 				sourceQuest = 5154,	-- The Annals of Darrowshire
 				qg = 10667,	-- Chromie
-				qi = 13202,	-- Extended Annals of Darrowshire
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
+				qi = 13202,	-- Extended Annals of Darrowshire
 			}),
 			q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 				qgs = {
@@ -275,8 +275,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				},
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			{	-- Chromatic Mantle of the Dawn
 				allianceQuestData = q(5521, {	-- Chromatic Mantle of the Dawn [A]
@@ -356,8 +356,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				sourceQuest = 4972,	-- Counting Out Time (1/2)
 				qg = 10667,	-- Chromie
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
-				repeatable = true,
 				lvl = 53,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Andorhal Watch
 						providers = {
@@ -381,16 +381,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ "i", 13356, 5 },	-- Somatic Intensifier
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(8414, {	-- Dispelling Evil
 				sourceQuest = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 				qg = 10838,	-- Commander Ashlam Valorfist
 				coord = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 				cost = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 50,
 			}),
 			q(5218, {	-- Felstone Field Cauldron
@@ -405,8 +405,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ "i", 13357, 6 },	-- Osseous Agitator
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(5227, {	-- Gahrron's Withering Cauldron
 				sourceQuests = {
@@ -420,8 +420,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ "i", 13354, 4 },	-- Ectoplasmic Resonator
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			{	-- Glyphed Oaken Branch
 				allianceQuestData = q(4986, {	-- Glyphed Oaken Branch [A]
@@ -463,19 +463,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5048, {	-- Good Natured Emma
 				sourceQuest = 5022,	-- Better Late Than Never (2/2) [A]
 				qg = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
-				qi = 12724,	-- Janice's Parcel
 				coord = { 48.6, 30.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 50,
+				qi = 12724,	-- Janice's Parcel
 			}),
 			q(8416, {	-- Inert Scourgestones
 				sourceQuest = 8414,	-- Dispelling Evil
 				qg = 1854,	-- High Priest Thel'danis
-				qi = 20612,	-- Inert Scourgestone
 				coord = { 52.2, 83.6, MAP.WESTERN_PLAGUELANDS },
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 50,
+				qi = 20612,	-- Inert Scourgestone
 			}),
 			{	-- Invader's Scourgestones
 				allianceQuestData = q(5403, {	-- Invader's Scourgestones [A]
@@ -506,8 +506,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ "i",  12738 },	-- Dalson Outhouse Key
 				},
 				coord = { 48.2, 49.6, MAP.WESTERN_PLAGUELANDS },
-				repeatable = true,
 				lvl = 52,
+				repeatable = true,
 				groups = {
 					i(12739, {	-- Dalson Cabinet Key
 						coord = { 48.2, 49.6, MAP.WESTERN_PLAGUELANDS },
@@ -814,10 +814,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5049, {	-- The Jeremiah Blues
 				sourceQuest = 5023,	-- Better Late Than Never (2/2) [H]
 				qg = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
-				qi = 12724,	-- Janice's Parcel
 				coord = { 69.6, 43.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 50,
+				qi = 12724,	-- Janice's Parcel
 			}),
 			{	-- The Scourge Cauldrons
 				allianceQuestData = q(5215, {	-- The Scourge Cauldrons [A]
@@ -922,8 +922,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					{ "i", 13356, 5 },	-- Somatic Intensifier
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 		}),
 		n(RARES, {
@@ -1146,9 +1146,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				},
 			}),
 			n(11278, {	-- Magnus Frostwake
-				cost = { { "i", 13544, 1 } },	-- Spectral Essence
 				description = "Only visible if you have the Spectral Essence equipped.",
 				coord = { 68.0, 77.6, MAP.WESTERN_PLAGUELANDS },
+				cost = { { "i", 13544, 1 } },	-- Spectral Essence
 				groups = {
 					i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 					i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)

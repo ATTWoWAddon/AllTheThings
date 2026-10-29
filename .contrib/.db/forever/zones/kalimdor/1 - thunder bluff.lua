@@ -33,10 +33,10 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 		n(QUESTS, {
 			q(6361, {	-- A Bundle of Hides
 				qg = 3483,	-- Jahan Hawkwing <Leather & Mail Armor Merchant>
-				qi = 16282,	-- Bundle of Hides
 				coord = { 51.2, 29.0, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16282,	-- Bundle of Hides
 			}),
 			q(7822, {	-- A Donation of Mageweave
 				qg = 14728,	-- Rumstag Proudstrider
@@ -73,36 +73,36 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				maxReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(936, {	-- Assisting Arch Druid Runetotem [Orgrimmar]
 				qg = 6929,	-- Innkeeper Gryshka
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 				qg = 6746,	-- Innkeeper Pala
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
 				qg = 6741,	-- Innkeeper Norman
 				coord = { 67.6, 38.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(1845, {	-- Brutal Helm
 				sourceQuest = 1844,	-- Chimaeric Horn
 				qg = 6410,	-- Orm Stonehoof
 				coord = { 39.0, 55.8, MAP.THUNDER_BLUFF },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(7130),	-- Brutal Helm
@@ -113,8 +113,8 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				qg = 6410,	-- Orm Stonehoof
 				coord = { 39.0, 55.8, MAP.THUNDER_BLUFF },
 				maps = { MAP.STONETALON_MOUNTAINS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Galvanized Horn
@@ -147,11 +147,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(1136, {	-- Frostmaw
 				sourceQuest = 1131,	-- Steelsnap
 				qg = 3441,	-- Melor Stonehoof
-				qi = 5838,	-- Kodo Skin Scroll
 				coord = { 61.52, 80.88, MAP.THUNDER_BLUFF },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 26,
+				qi = 5838,	-- Kodo Skin Scroll
 				groups = {
 					objective(1, {	-- 0/1 Frostmaw's Mane
 						providers = {
@@ -205,16 +205,16 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				qg = 3387,	-- Jorn Skyseer
 				coord = { 44.8, 59.0, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(3782, {	-- Morrowgrain Research (1/2)
 				sourceQuest = 3761,	-- Un'Goro Soil
 				qg = 5769,	-- Arch Druid Hamuul Runetotem
-				qi = 11103,	-- Seed Voucher
 				coord = { 78.4, 28.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 47,
+				qi = 11103,	-- Seed Voucher
 			}),
 			q(3786, {	-- Morrowgrain Research (2/2)
 				sourceQuest = 3782,	-- Morrowgrain Research (1/2)
@@ -233,8 +233,8 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11887),	-- Cenarion Circle Cache
 				},
@@ -242,21 +242,21 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
 				sourceQuest = 6363,	-- Tal the Wind Rider Master
 				qg = 2995,	-- Tal
-				qi = 16283,	-- Ahanu's Leather Goods
 				coord = { 46.8, 50.0, MAP.THUNDER_BLUFF },
 				maps = {
 					MAP.THE_BARRENS,
 				},
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16283,	-- Ahanu's Leather Goods
 			}),
 			q(6362, {	-- Ride to Thunder Bluff
 				sourceQuest = 6361,	-- A Bundle of Hides
 				qg = 3615,	-- Devrak
-				qi = 16282,	-- Bundle of Hides
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16282,	-- Bundle of Hides
 			}),
 			q(1131, {	-- Steelsnap
 				sourceQuest = 1130,	-- Melor Sends Word
@@ -276,13 +276,13 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(6363, {	-- Tal the Wind Rider Master
 				sourceQuest = 6362,	-- Ride to Thunder Bluff
 				qg = 8359,	-- Ahanu
-				qi = 16283,	-- Ahanu's Leather Goods
 				coord = { 45.74, 55.86, MAP.THUNDER_BLUFF },
 				maps = {
 					MAP.THE_BARRENS,
 				},
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16283,	-- Ahanu's Leather Goods
 			}),
 			q(1086, {	-- The Flying Machine Airport
 				sourceQuest = 1067,	-- Return to Thunder Bluff
@@ -318,20 +318,20 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(1196, {	-- The Sacred Flame (2/3)
 				sourceQuest = 1195,	-- The Sacred Flame (1/3)
 				qg = 4721,	-- Zangen Stonehoof
-				qi = 5868,	-- Filled Etched Phial
 				coord = { 54.97, 51.32, MAP.THUNDER_BLUFF },
 				maps = { MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 20,
+				qi = 5868,	-- Filled Etched Phial
 			}),
 			q(1197, {	-- The Sacred Flame (3/3)
 				sourceQuest = 1196,	-- The Sacred Flame (2/3)
 				qg = 4722,	-- Rau Cliffrunner
-				qi = 5868,	-- Filled Etched Phial
 				coord = { 46.13, 51.69, MAP.THOUSAND_NEEDLES },
 				cost = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
 				races = HORDE_ONLY,
 				lvl = 20,
+				qi = 5868,	-- Filled Etched Phial
 				groups = {
 					objective(1, {	-- 0/1 Cloven Hoof
 						providers = {
@@ -347,9 +347,9 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(97485, {	-- Traditions of the Bluff
 				qg = 269068,	-- Eylah Sunhorn <Sun Priest of An'she>
 				coord = { 38.2, 56.2, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- Objective: combine the herbs, cedar twigs, sinew thread and flint bought from the Thunder Bluff suppliers, then spread the incense off Hunter's Rise.
 				groups = {
 					objective(1, {	-- 0/1 Prepared Incense
@@ -373,11 +373,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(264, {	-- Until Death Do Us Part
 				qg = 5543,	-- Clarice Foster
-				qi = 6145,	-- Clarice's Pendant
 				coord = { 28.19, 25.31, MAP.THUNDER_BLUFF },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 12,
+				qi = 6145,	-- Clarice's Pendant
 			}),
 		}),
 		n(VENDORS, {

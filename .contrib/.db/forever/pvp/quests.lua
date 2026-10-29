@@ -25,8 +25,8 @@ root(ROOTS.PVP, {
 				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = ALLIANCE_ONLY,
-			repeatable = true,
 			lvl = 51,
+			repeatable = true,
 		}),
 		q(8367, {	-- For Great Honor
 			qg = 15350,	-- Horde Warbringer
@@ -49,8 +49,8 @@ root(ROOTS.PVP, {
 				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = HORDE_ONLY,
-			repeatable = true,
 			lvl = 51,
+			repeatable = true,
 		}),
 	}),
 });

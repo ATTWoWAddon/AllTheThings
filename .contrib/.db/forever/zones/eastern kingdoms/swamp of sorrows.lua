@@ -102,15 +102,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					},
 				},
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(93429, {	-- Blood of My Blood
 				qg = 254775,	-- Karana
 				coord = { 25.6, 31.4, MAP.SWAMP_OF_SORROWS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Lost One slain
 						crs = {
@@ -143,11 +143,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(1425, {	-- Deliver the Shipment
 				sourceQuest = 1398,	-- Driftwood
 				qg = 5476,	-- Watcher Biggs
-				qi = 6178,	-- Shipment to Nethergarde
 				coord = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
 				maps = { MAP.BLASTED_LANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				qi = 6178,	-- Shipment to Nethergarde
 			}),
 			q(1389, {	-- Draenethyst Crystals
 				qg = 1776,	-- Magtoor
@@ -291,9 +291,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(93663, {	-- Lost in Transit
 				qg = 5591,	-- Dar
 				coord = { 44.8, 57.2, MAP.SWAMP_OF_SORROWS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Courier's Shipment
 						provider = { "i", 260452 },	-- Courier's Shipment
@@ -302,10 +302,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			}),
 			q(93176, {	-- My Little Friends
 				qg = 217412,	-- Amaryllis Webb
-				qi = 213565,	-- Entomology Starter Kit (PQI!)
 				coord = { 25.0, 53.4, MAP.SWAMP_OF_SORROWS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 213565,	-- Entomology Starter Kit (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Arbor Tarantula Specimen
 						provider = { "i", 213566 },	-- Arbor Tarantula Specimen
@@ -323,13 +323,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				qg = 1442,	-- Helgrum the Swift
 				coord = { 47.7, 55.2, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 30,
+				isBreadcrumb = true,
 			}),
 			q(1392, {	-- Noboru the Cudgel
-				qi = 6196,	-- Noboru's Cudgel
 				cr = 5477,	-- Noboru the Cudgel
 				lvl = 29,
+				qi = 6196,	-- Noboru's Cudgel
 			}),
 			q(1424, {	-- Pool of Tears (H)
 				qg = 1443,	-- Fel'zerul
@@ -356,9 +356,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 38,
 			}),
 			q(93430, {	-- Taking the Bait Back
+				lvl = 30,
 				-- TODO: Wowhead doesn't list the quest giver yet. Pelluk is the one whose lure was stolen.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Lucky Lure
 						provider = { "i", 258530 },	-- Lucky Lure
@@ -370,11 +370,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(1429, {	-- The Atal'ai Exile
 				sourceQuest = 1424,	-- Pool of Tears [Horde]
 				qg = 1443,	-- Fel'zerul
-				qi = 6193,	-- Bundle of Atal'ai Artifacts
 				coord = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
 				maps = { MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 6193,	-- Bundle of Atal'ai Artifacts
 			}),
 			q(2744, {	-- The Demon Hunter
 				sourceQuest = 2743,	-- The Cover of Darkness
@@ -417,8 +417,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					{ "o", 28604 },	-- Scattered Crate
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 30,
+				repeatable = true,
 				groups = {
 					i(6827),	-- Box of Supplies
 				},
@@ -498,16 +498,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(93464, {	-- The Visiting Mage
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Azore Aldamort in Desolace.
 				maps = { MAP.DESOLACE },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(93585, {	-- This Light of Mine
 				qg = 255597,	-- Father Tuttle
 				coord = { 22.0, 50.6, MAP.SWAMP_OF_SORROWS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- TODO: Escort Father Tuttle to The Harborage (turned in to Magtoor); Wowhead has no IDs for the escort yet.
 			}),
 			q(1422, {	-- Threat From the Sea (1/3)
@@ -755,9 +755,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			}),
 			i(6172),	-- Lost Supplies
 			i(255728, {	-- Manual: Potent Anti-Venom (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 760,
 				coord = { 64.2, 20.6, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(6196, {	-- Noboru's Cudgel
 				cr = 5477,	-- Noboru the Cudgel
