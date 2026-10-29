@@ -396,7 +396,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
-				qi = 6812,	-- Mysterious Fossil
+				qi = 4654,	-- Mysterious Fossil
 			}),
 			q(1039, {	-- The Barrens Port
 				sourceQuest = 1038,	-- Velinde's Effects
