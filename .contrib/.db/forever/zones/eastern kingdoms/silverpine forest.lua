@@ -78,7 +78,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Valdred's Hands
-						provider = { "i", 3613 },	-- Valdred's Hands
+						provider = { "i", 3613 },	-- Valdred's Hands (QI!)
 						coord = { 46.4, 84.6, MAP.SILVERPINE_FOREST },
 						cr = 2332,	-- Valdred Moray
 					}),
@@ -101,12 +101,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 						cr = 248840,	-- Trevan Rol
 					}),
 					objective(2, {	-- 0/1 Whitestone Oak Lumber
-						provider = { "i", 6994 },	-- Whitestone Oak Lumber
+						provider = { "i", 6994 },	-- Whitestone Oak Lumber (QI!)
 						cr = 641,	-- Goblin Woodcarver
 					}),
 					objective(3, {	-- 0/1 Enchanted Silver Ingot
 						providers = {
-							{ "i", 267361 },	-- Enchanted Silver Ingot
+							{ "i", 267361 },	-- Enchanted Silver Ingot (QI!)
 							{ "o", 629065 },	-- Enchanted Silver Ingot
 						},
 						description = "Found on the table next to Archmage Arugal in Shadowfang Keep.",
@@ -120,7 +120,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
-								provider = { "i", 6995 },	-- Corrupted Kor Gem
+								provider = { "i", 6995 },	-- Corrupted Kor Gem (QI!)
 								crs = {
 									4803,	-- Blackfathom Oracle
 									4805,	-- Blackfathom Sea Witch
@@ -128,7 +128,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 								},
 							}),
 							objective(4, {	-- 0/1 Purified Kor Gem
-								provider = { "i", 272448 },	-- Purified Kor Gem
+								provider = { "i", 272448 },	-- Purified Kor Gem (QI!)
 								questID = 95036,	-- A Moon-Kissed Blade
 							}),
 						},
@@ -142,7 +142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/6 Grizzled Bear Heart
-						provider = { "i", 3253 },	-- Grizzled Bear Heart
+						provider = { "i", 3253 },	-- Grizzled Bear Heart (QI!)
 						crs = {
 							1778,	-- Ferocious Grizzled Bear
 							1797,	-- Giant Grizzled Bear
@@ -150,7 +150,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 						},
 					}),
 					objective(2, {	-- 0/6 Skittering Blood
-						provider = { "i", 3254 },	-- Skittering Blood
+						provider = { "i", 3254 },	-- Skittering Blood (QI!)
 						crs = {
 							12433,	-- Krethis Shadowspinner
 							1781,	-- Mist Creeper
@@ -169,7 +169,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Berard's Journal
 						providers = {
-							{ "i", 3255 },	-- Berard's Journal
+							{ "i", 3255 },	-- Berard's Journal (QI!)
 							{ "o", 1594 },	-- Berard's Bookshelf
 						},
 						coord = { 43.0, 73.3, MAP.SILVERPINE_FOREST },
@@ -184,21 +184,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/6 Lake Skulker Moss
-						provider = { "i", 3256 },	-- Lake Skulker Moss
+						provider = { "i", 3256 },	-- Lake Skulker Moss (QI!)
 						crs = {
 							1954,	-- Elder Lake Skulker
 							1953,	-- Lake Skulker
 						},
 					}),
 					objective(2, {	-- 0/6 Lake Creeper Moss
-						provider = { "i", 3257 },	-- Lake Creeper Moss
+						provider = { "i", 3257 },	-- Lake Creeper Moss (QI!)
 						crs = {
 							1956,	-- Elder Lake Creeper
 							1955,	-- Lake Creeper
 						},
 					}),
 					objective(3, {	-- 0/1 Hardened Tumor
-						provider = { "i", 3258 },	-- Hardened Tumor
+						provider = { "i", 3258 },	-- Hardened Tumor (QI!)
 						crs = {
 							1909,	-- Vile Fin Lakestalker
 							1908,	-- Vile Fin Oracle
@@ -225,7 +225,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Dalaran Pendant
-						provider = { "i", 3354 },	-- Dalaran Pendant
+						provider = { "i", 3354 },	-- Dalaran Pendant (QI!)
 						crs = {
 							1915,	-- Dalaran Conjuror
 							1914,	-- Dalaran Mage
@@ -252,7 +252,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Remedy of Arugal
 						providers = {
-							{ "i", 3155 },	-- Remedy of Arugal
+							{ "i", 3155 },	-- Remedy of Arugal (QI!)
 							{ "o", 1571 },	-- Dusty Spellbooks
 						},
 						coord = { 52.8, 28.4, MAP.SILVERPINE_FOREST },
@@ -267,11 +267,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/6 Glutton Shackle
-						provider = { "i", 3156 },	-- Glutton Shackle
+						provider = { "i", 3156 },	-- Glutton Shackle (QI!)
 						cr = 1779,	-- Moonrage Glutton
 					}),
 					objective(2, {	-- 0/3 Darksoul Shackle
-						provider = { "i", 3157 },	-- Darksoul Shackle
+						provider = { "i", 3157 },	-- Darksoul Shackle (QI!)
 						cr = 1782,	-- Moonrage Darksoul
 					}),
 				},
@@ -284,7 +284,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Head of Grimson
-						provider = { "i", 3634 },	-- Head of Grimson
+						provider = { "i", 3634 },	-- Head of Grimson (QI!)
 						coord = { 58.6, 44.8, MAP.SILVERPINE_FOREST },
 						cr = 1972,	-- Grimson the Pale
 					}),
@@ -298,7 +298,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/6 Pyrewood Shackle
-						provider = { "i", 3218 },	-- Pyrewood Shackle
+						provider = { "i", 3218 },	-- Pyrewood Shackle (QI!)
 						crs = {
 							3529,	-- Moonrage Armorer
 							1896,	-- Moonrage Elder
@@ -328,7 +328,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Worgen Bits
-						provider = { "i", 280375 },	-- Worgen Bits
+						provider = { "i", 280375 },	-- Worgen Bits (QI!)
 						cr = 1924,	-- Moonrage Bloodhowler
 					}),
 					i(281315),	-- Foulfur Gloves
@@ -342,7 +342,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Thule's Head
-						provider = { "i", 3623 },	-- Thule's Head
+						provider = { "i", 3623 },	-- Thule's Head (QI!)
 						coord = { 65.6, 24.6, MAP.SILVERPINE_FOREST },
 						cr = 1947,	-- Thule Ravenclaw
 					}),
@@ -396,7 +396,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 44.0, 41.0, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3353,	-- Rune-inscribed Pendant
+				qi = 3353,	-- Rune-inscribed Pendant (QI!)
 			}),
 			q(482, {	-- Dalaran's Intentions
 				sourceQuest = 481,	-- Dalar's Analysis
@@ -431,7 +431,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Ivar's Head
-						provider = { "i", 3621 },	-- Ivar's Head
+						provider = { "i", 3621 },	-- Ivar's Head (QI!)
 						coord = { 51.8, 13.8, MAP.SILVERPINE_FOREST },
 						cr = 1971,	-- Ivar the Foul
 					}),
@@ -444,7 +444,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 19,
-				qi = 3468,	-- Renferrel's Findings
+				qi = 3468,	-- Renferrel's Findings (QI!)
 			}),
 			q(428, {	-- Lost Deathstalkers
 				qg = 1952,	-- High Executor Hadrec
@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Fenris Isle Key
-						provider = { "i", 267412 },	-- Fenris Isle Key
+						provider = { "i", 267412 },	-- Fenris Isle Key (QI!)
 						crs = {
 							1943,	-- Raging Rot Hide
 							1944,	-- Rot Hide Bruiser
@@ -476,7 +476,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 477,	-- Border Crossings
 				providers = {
 					{ "o", 1627 },	-- Dalaran Crate
-					{ "i", 3353 },	-- Rune-inscribed Pendant
+					{ "i", 3353 },	-- Rune-inscribed Pendant (QI!)
 				},
 				coord = { 49.9, 60.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -529,7 +529,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3234,	-- Deliah's Ring
+				qi = 3234,	-- Deliah's Ring (QI!)
 			}),
 			q(448, {	-- Report to Hadrec
 				sourceQuest = 446,	-- Thule Ravenclaw
@@ -558,7 +558,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3165,	-- Quinn's Potion
+				qi = 3165,	-- Quinn's Potion (QI!)
 			}),
 			q(91921, {	-- Return to Quinn (Again)
 				sourceQuests = { 91920 },	-- Wild Eyes
@@ -575,13 +575,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 45.6, 42.4, MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
-				qi = 16209,	-- Podrig's Order
+				qi = 16209,	-- Podrig's Order (QI!)
 			}),
 			q(439, {	-- Rot Hide Clues
 				sourceQuest = 438,	-- The Decrepit Ferry
 				providers = {
 					{ "o", 1593 },	-- Corpse Laden Boat
-					{ "i", 3234 },	-- Deliah's Ring
+					{ "i", 3234 },	-- Deliah's Ring (QI!)
 				},
 				coord = { 58.4, 34.9, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -595,7 +595,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Rot Hide Ichor
-						provider = { "i", 3236 },	-- Rot Hide Ichor
+						provider = { "i", 3236 },	-- Rot Hide Ichor (QI!)
 						crs = {
 							1943,	-- Raging Rot Hide
 							1944,	-- Rot Hide Bruiser
@@ -612,7 +612,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3237,	-- Sample Ichor
+				qi = 3237,	-- Sample Ichor (QI!)
 			}),
 			q(3221, {	-- Speak with Renferrel
 				sourceQuest = 449,	-- The Deathstalkers' Report
@@ -642,7 +642,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 41.6, MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
-				qi = 16209,	-- Podrig's Order
+				qi = 16209,	-- Podrig's Order (QI!)
 			}),
 			q(437, {	-- The Dead Fields
 				qg = 1952,	-- High Executor Hadrec
@@ -651,7 +651,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Essence of Nightlash
-						provider = { "i", 3622 },	-- Essence of Nightlash
+						provider = { "i", 3622 },	-- Essence of Nightlash (QI!)
 						coord = { 45.8, 20.4, MAP.SILVERPINE_FOREST },
 						cr = 1983,	-- Nightlash
 					}),
@@ -664,7 +664,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3252,	-- Deathstalker Report
+				qi = 3252,	-- Deathstalker Report (QI!)
 			}),
 			q(95034, {	-- The Debt
 				qg = 259620,	-- Lumina Windsinger
@@ -694,7 +694,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				maps = { MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3234,	-- Deliah's Ring
+				qi = 3234,	-- Deliah's Ring (QI!)
 			}),
 			q(78699, {	-- The Eye of Bhossca
 				classes = { ROGUE },
@@ -709,7 +709,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 460,	-- Resting in Pieces
 				providers = {
 					{ "o", 1599 },	-- Shallow Grave
-					{ "i", 3318 },	-- Alaric's Remains
+					{ "i", 3318 },	-- Alaric's Remains (QI!)
 				},
 				coord = { 67.8, 24.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -724,7 +724,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Horn of Xelthos
 						providers = {
-							{ "i", 210183 },	-- Horn of Xelthos
+							{ "i", 210183 },	-- Horn of Xelthos (QI!)
 							{ "o", 410528 },	-- Ornamented Chest
 						},
 					}),
@@ -792,7 +792,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Tortured Soul
-						provider = { "i", 271350 },	-- Tortured Soul
+						provider = { "i", 271350 },	-- Tortured Soul (QI!)
 						crs = {
 							1974,	-- Ravenclaw Drudger
 							1973,	-- Ravenclaw Guardian
@@ -809,11 +809,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					-- FIX_ME!!!
 					objective(1, {	-- 0/1 Ataeric's Staff
-						provider = { "i", 3515 },	-- Ataeric's Staff
+						provider = { "i", 3515 },	-- Ataeric's Staff (QI!)
 						cr = 2120,	-- Archmage Ataeric
 					}),
 					objective(1, {	-- 0/1 Ataeric's Staff
-						provider = { "i", 3515 },	-- Ataeric's Staff
+						provider = { "i", 3515 },	-- Ataeric's Staff (QI!)
 						coord = { 63.6, 64.0, MAP.SILVERPINE_FOREST },
 						cr = 2120,	-- Archmage Ataeric
 					}),
@@ -837,7 +837,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 84.2, 17.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 3250,	-- Bethor's Scroll
+				qi = 3250,	-- Bethor's Scroll (QI!)
 				groups = {
 					i(3251),	-- Bethor's Potion
 				},
@@ -846,7 +846,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuest = 461,	-- The Hidden Niche
 				providers = {
 					{ "o", 112888 },	-- Dusty Shelf
-					{ "i", 3425 },	-- Woven Wand
+					{ "i", 3425 },	-- Woven Wand (QI!)
 				},
 				coord = { 65.3, 24.8, MAP.SILVERPINE_FOREST },
 				maps = { MAP.UNDERCITY },
@@ -912,7 +912,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 6016,	-- Wolf Heart Sample
+				qi = 6016,	-- Wolf Heart Sample (QI!)
 			}),
 		}),
 		n(RARES, {

@@ -140,7 +140,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),
@@ -170,10 +170,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Blade of House Perenolde
-						provider = { "i", 275635 },	-- Blade of House Perenolde
+						provider = { "i", 275635 },	-- Blade of House Perenolde (QI!)
 					}),
 					objective(2, {	-- 0/1 Royal Aegis of Perenolde
-						provider = { "i", 275636 },	-- Royal Aegis of Perenolde
+						provider = { "i", 275636 },	-- Royal Aegis of Perenolde (QI!)
 					}),
 				},
 			}),
@@ -184,7 +184,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/9 Dirty Knucklebones
-						provider = { "i", 2843 },	-- Dirty Knucklebones
+						provider = { "i", 2843 },	-- Dirty Knucklebones (QI!)
 						crs = {
 							2253,	-- Crushridge Brute
 							2256,	-- Crushridge Enforcer
@@ -223,10 +223,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				cost = { { "i", 3357, 8 } },	-- 8x Liferoot
 				classes = { WARRIOR },
 				lvl = 30,
-				qi = 6929,	-- Bath'rah's Parchment
+				qi = 6929,	-- Bath'rah's Parchment (QI!)
 				groups = {
 					objective(2, {	-- 0/30 Bloodscalp Tusk
-						provider = { "i", 3901 },	-- Bloodscalp Tusk
+						provider = { "i", 3901 },	-- Bloodscalp Tusk (QI!)
 						crs = {
 							694,	-- Bloodscalp Axe Thrower
 							699,	-- Bloodscalp Beastmaster
@@ -256,7 +256,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						groups = {
 							objective(3, {	-- 0/1 Essence of the Exile
 								questID = 1712,	-- Cyclonian
-								provider = { "i", 6851 },	-- Essence of the Exile
+								provider = { "i", 6851 },	-- Essence of the Exile (QI!)
 							}),
 						},
 					}),
@@ -273,7 +273,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						provider = { "n", 2318 },	-- Argus Shadow Mage
 					}),
 					objective(2, {	-- 0/1 Head of Nagaz
-						provider = { "i", 3672 },	-- Head of Nagaz
+						provider = { "i", 3672 },	-- Head of Nagaz (QI!)
 						coord = { 39.6, 15.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2320,	-- Nagaz
 					}),
@@ -306,7 +306,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/10 Encoded Fragment
-						provider = { "i", 20023 },	-- Encoded Fragment
+						provider = { "i", 20023 },	-- Encoded Fragment (QI!)
 						cr = 8766,	-- Forest Ooze
 					}),
 				},
@@ -316,7 +316,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ "o", 1738 },	-- Syndicate Documents
 					{ "o", 1739 },	-- Syndicate Documents
 					{ "o", 1740 },	-- Syndicate Documents
-					{ "i", 3521 },	-- Cleverly Encrypted Letter
+					{ "i", 3521 },	-- Cleverly Encrypted Letter (QI!)
 				},
 				coord = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
@@ -328,7 +328,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ "o", 1738 },	-- Syndicate Documents
 					{ "o", 1739 },	-- Syndicate Documents
 					{ "o", 1740 },	-- Syndicate Documents
-					{ "i", 3718 },	-- Foreboding Plans
+					{ "i", 3718 },	-- Foreboding Plans (QI!)
 				},
 				coord = { 58.3, 68.0, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
@@ -342,7 +342,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 3518,	-- Decrypted Letter
+				qi = 3518,	-- Decrypted Letter (QI!)
 			}),
 			q(503, {	-- Gol'dir
 				sourceQuest = 533,	-- Infiltration
@@ -352,7 +352,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Rusted Iron Key
-						provider = { "i", 3704 },	-- Rusted Iron Key
+						provider = { "i", 3704 },	-- Rusted Iron Key (QI!)
 						coord = { 61.8, 40.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 2431,	-- Jailor Borhuin
 					}),
@@ -366,7 +366,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Syndicate Missive
-						provider = { "i", 3601 },	-- Syndicate Missive
+						provider = { "i", 3601 },	-- Syndicate Missive (QI!)
 						description = "You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",
 						crs = {
 							2240,	-- Syndicate Footpad
@@ -392,7 +392,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 50.4, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 3521,	-- Cleverly Encrypted Letter
+				qi = 3521,	-- Cleverly Encrypted Letter (QI!)
 			}),
 			q(507, {	-- Lord Aliden Perenolde
 				sourceQuest = 506,	-- Blackmoore's Legacy
@@ -422,7 +422,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/7 Alterac Signet Ring
-						provider = { "i", 3505 },	-- Alterac Signet Ring
+						provider = { "i", 3505 },	-- Alterac Signet Ring (QI!)
 						crs = {
 							14221,	-- Gravis Slipknot
 							2246,	-- Syndicate Assassin
@@ -445,7 +445,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 The Lost Magic of the Runemasters
 						providers = {
-							{ "i", 273169 },	-- The Lost Magic of the Runemasters
+							{ "i", 273169 },	-- The Lost Magic of the Runemasters (QI!)
 							{ "o", 650929 },	-- The Lost Magic of the Runemasters
 						},
 					}),
@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Azure Bag
-						provider = { "i", 19775 },	-- Sealed Azure Bag
+						provider = { "i", 19775 },	-- Sealed Azure Bag (QI!)
 						coord = { 43.5, 25.4, MAP.AZSHARA },
 						cr = 6188,	-- Timbermaw Shaman
 					}),
@@ -478,7 +478,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/8 Bloodshot Spider Eye
-						provider = { "i", 20610 },	-- Bloodshot Spider Eye
+						provider = { "i", 20610 },	-- Bloodshot Spider Eye (QI!)
 						crs = {
 							1821,	-- Carrion Lurker
 							1809,	-- Carrion Vulture
@@ -487,7 +487,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						},
 					}),
 					objective(2, {	-- 0/8 Thick Black Claw
-						provider = { "i", 20611 },	-- Thick Black Claw
+						provider = { "i", 20611 },	-- Thick Black Claw (QI!)
 						crs = {
 							1809,	-- Carrion Vulture
 							1815,	-- Diseased Black Bear
@@ -561,7 +561,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 39.30, 14.30, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 29,
-				qi = 3498,	-- Taretha's Necklace
+				qi = 3498,	-- Taretha's Necklace (QI!)
 				groups = {
 					i(3765),	-- Brigand's Pauldrons
 					i(3764),	-- Mantis Boots
@@ -595,17 +595,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Targ's Head
-						provider = { "i", 3550 },	-- Targ's Head
+						provider = { "i", 3550 },	-- Targ's Head (QI!)
 						coord = { 39.6, 53.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2420,	-- Targ
 					}),
 					objective(2, {	-- 0/1 Muckrake's Head
-						provider = { "i", 3551 },	-- Muckrake's Head
+						provider = { "i", 3551 },	-- Muckrake's Head (QI!)
 						coord = { 38.8, 47.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2421,	-- Muckrake
 					}),
 					objective(3, {	-- 0/1 Glommus's Head
-						provider = { "i", 3552 },	-- Glommus's Head
+						provider = { "i", 3552 },	-- Glommus's Head (QI!)
 						coord = { 39.4, 41.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2422,	-- Glommus
 					}),
@@ -619,12 +619,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 Mug'thol's Head
-						provider = { "i", 3553 },	-- Mug'thol's Head
+						provider = { "i", 3553 },	-- Mug'thol's Head (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
 					objective(2, {	-- 0/1 Crown of Will
-						provider = { "i", 3554 },	-- Crown of Will
+						provider = { "i", 3554 },	-- Crown of Will (QI!)
 						coord = { 35.8, 54.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2257,	-- Mug'thol
 					}),
@@ -636,7 +636,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 62.61, 20.64, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 34,
-				qi = 3554,	-- Crown of Will
+				qi = 3554,	-- Crown of Will (QI!)
 				groups = {
 					i(4430),	-- Ethereal Talisman
 				},
@@ -654,7 +654,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			q(6681, {	-- The Manor, Ravenholdt
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				providers = {
-					{ "i", 17125 },	-- Seal of Ravenholdt
+					{ "i", 17125 },	-- Seal of Ravenholdt (QI!)
 					{ "i", 17126 },	-- Elegant Letter
 				},
 				classes = { ROGUE },
@@ -668,7 +668,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Whirlwind Heart
-						provider = { "i", 6894 },	-- Whirlwind Heart
+						provider = { "i", 6894 },	-- Whirlwind Heart (QI!)
 						coord = { 80.6, 62.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 6239,	-- Cyclonian
 					}),
@@ -682,7 +682,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				races = HORDE_ONLY,
 				lvl = 29,
 				groups = {
-					i(3601),	-- Syndicate Missive
+					i(3601),	-- Syndicate Missive (QI!)
 				},
 			}),
 			q(566, {	-- WANTED: Baron Vardus
@@ -693,7 +693,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Vardus
-						provider = { "i", 3626 },	-- Head of Baron Vardus
+						provider = { "i", 3626 },	-- Head of Baron Vardus (QI!)
 						coord = { 56.0, 26.2, MAP.ALTERAC_MOUNTAINS },
 						cr = 2306,	-- Baron Vardus
 					}),
@@ -708,7 +708,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Barton's Scouting Report
-						provider = { "i", 275482 },	-- Barton's Scouting Report
+						provider = { "i", 275482 },	-- Barton's Scouting Report (QI!)
 					}),
 				},
 			}),

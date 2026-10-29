@@ -183,10 +183,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Imprisoned Doomguard
 						providers = {
-							{ "i", 18605 },	-- Imprisoned Doomguard
+							{ "i", 18605 },	-- Imprisoned Doomguard (QI!)
 							{ "o", 179644 },	-- Imprisoned Doomguard
 						},
-						cost = { { "i", 18601, 1 } },	-- Glowing Crystal Prison
+						cost = { { "i", 18601, 1 } },	-- Glowing Crystal Prison (QI!)
 						cr = 12396,	-- Doomguard Commander
 					}),
 					{
@@ -243,7 +243,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/15 Satyr Blood
-						provider = { "i", 18603 },	-- Satyr Blood
+						provider = { "i", 18603 },	-- Satyr Blood (QI!)
 					}),
 				},
 			}),
@@ -255,7 +255,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/5 Tears of the Hederine
-						provider = { "i", 18604 },	-- Tears of the Hederine
+						provider = { "i", 18604 },	-- Tears of the Hederine (QI!)
 						crs = {
 							7461,	-- Hederine Initiate
 							7463,	-- Hederine Slayer
@@ -293,8 +293,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				groups = {
 					objective(1, {	-- Severed Horn of the Defiler
 						providers = {
-							{ "i", 10759 },	-- Severed Horn of the Defiler
-							{ "i", 10757 },	-- Ward of the Defiler
+							{ "i", 10759 },	-- Severed Horn of the Defiler (QI!)
+							{ "i", 10757 },	-- Ward of the Defiler (QI!)
 							{ "o", 153205 },	-- Altar of the Defiler
 						},
 						coord = { 47.6, 30.0, MAP.BLASTED_LANDS },

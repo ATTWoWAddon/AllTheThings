@@ -35,7 +35,7 @@ instanceroot(233, {	-- Razorfen Downs
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Ambassador Malcin's Head
-						provider = { "i", 17009 },	-- Ambassador Malcin's Head
+						provider = { "i", 17009 },	-- Ambassador Malcin's Head (QI!)
 						coord = { 48.6, 95.6, MAP.THE_BARRENS },
 						cr = 12865,	-- Ambassador Malcin
 					}),
@@ -54,7 +54,7 @@ instanceroot(233, {	-- Razorfen Downs
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/1 Skull of the Coldbringer
-						provider = { "i", 10420 },	-- Skull of the Coldbringer
+						provider = { "i", 10420 },	-- Skull of the Coldbringer (QI!)
 					}),
 					i(10823),	-- Vanquisher's Sword
 					i(10824),	-- Amberglow Talisman
@@ -87,7 +87,7 @@ instanceroot(233, {	-- Razorfen Downs
 			q(3523, {	-- Scourge of the Downs
 				providers = {
 					{ "n", 8516 },	-- Belnistrasz
-					{ "i", 10682 },	-- Belnistrasz's Oathstone
+					{ "i", 10682 },	-- Belnistrasz's Oathstone (QI!)
 				},
 				lvl = 32,
 			}),
@@ -160,7 +160,7 @@ instanceroot(233, {	-- Razorfen Downs
 			},
 		}),
 		n(7358, {	-- Amnennar the Coldbringer
-			i(10420),	-- Skull of the Coldbringer
+			i(10420),	-- Skull of the Coldbringer (QI!)
 			i(10761),	-- Coldrage Dagger
 			i(10763),	-- Icemetal Barbute
 			i(10764),	-- Deathchill Armor

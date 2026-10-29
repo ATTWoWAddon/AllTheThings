@@ -72,7 +72,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(2, {	-- 0/3 Tear of Theradras
 						providers = {
-							{ "i", 255878 },	-- Tear of Theradras
+							{ "i", 255878 },	-- Tear of Theradras (QI!)
 							{ "o", 587299 },	-- Tear of Theradras
 						},
 						coord = { 38.7, 95.4, MAP.DESOLACE },
@@ -89,7 +89,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Conqueror's Helm
 						providers = {
-							{ "i", 254392 },	-- Conqueror's Helm
+							{ "i", 254392 },	-- Conqueror's Helm (QI!)
 							{ "o", 580100 },	-- Conqueror's Helm
 						},
 						coord = { 57.1, 40.1, MAP.BADLANDS },
@@ -114,7 +114,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Azore's Transcription
-						provider = { "i", 260518 },	-- Azore's Transcription
+						provider = { "i", 260518 },	-- Azore's Transcription (QI!)
 					}),
 				},
 			}),
@@ -222,7 +222,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Kodo Bone
 						providers = {
-							{ "i", 13703 },	-- Kodo Bone
+							{ "i", 13703 },	-- Kodo Bone (QI!)
 							{ "o", 176751 },	-- Kodo Bones
 						},
 					}),
@@ -237,11 +237,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Book of the Ancients
 						providers = {
-							{ "i", 15803 },	-- Book of the Ancients
+							{ "i", 15803 },	-- Book of the Ancients (QI!)
 							{ "o", 177673 },	-- Serpent Statue
 						},
 						coord = { 28.2, 6.4, MAP.DESOLACE },
-						cost = { { "i", 15766, 1 } },	-- Gem of the Serpent
+						cost = { { "i", 15766, 1 } },	-- Gem of the Serpent (QI!)
 						cr = 12369,	-- Lord Kragaru
 					}),
 					i(16791),	-- Silkstream Cuffs
@@ -260,7 +260,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/3 Broken Tears
 						providers = {
-							{ "i", 6083 },	-- Broken Tears
+							{ "i", 6083 },	-- Broken Tears (QI!)
 							{ "o", 22246 },	-- Tear of Theradras
 						},
 						crs = {
@@ -294,7 +294,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Molkar
-						provider = { "i", 257685 },	-- Totem Tote
+						provider = { "i", 257685 },	-- Totem Tote (QI!)
 						cr = 253140,	-- Molkar <Gelkis Clan Quartermaster>
 						coord = { 35.6, 92.0, MAP.DESOLACE },
 					}),
@@ -309,7 +309,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Molkar
-						provider = { "i", 257685 },	-- Totem Tote
+						provider = { "i", 257685 },	-- Totem Tote (QI!)
 						cr = 253140,	-- Molkar <Gelkis Clan Quartermaster>
 						coord = { 35.6, 92.0, MAP.DESOLACE },
 					}),
@@ -323,7 +323,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
-						provider = { "i", 257685 },	-- Totem Tote
+						provider = { "i", 257685 },	-- Totem Tote (QI!)
 						cr = 253139,	-- Gorhak <Magram Clan Quartermaster>
 						coord = { 66.2, 79.4, MAP.DESOLACE },
 					}),
@@ -338,7 +338,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- Deliver the Totem Tote to Gorhak
-						provider = { "i", 257685 },	-- Totem Tote
+						provider = { "i", 257685 },	-- Totem Tote (QI!)
 						cr = 253139,	-- Gorhak <Magram Clan Quartermaster>
 						coord = { 66.2, 79.4, MAP.DESOLACE },
 					}),
@@ -387,7 +387,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/15 Centaur Ear
-						provider = { "i", 6067 },	-- Centaur Ear
+						provider = { "i", 6067 },	-- Centaur Ear (QI!)
 						crs = {
 							4636,	-- Kolkar Battle Lord
 							4632,	-- Kolkar Centaur
@@ -409,7 +409,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/15 Centaur Ear
-						provider = { "i", 6067 },	-- Centaur Ear
+						provider = { "i", 6067 },	-- Centaur Ear (QI!)
 						crs = {
 							4636,	-- Kolkar Battle Lord
 							4632,	-- Kolkar Centaur
@@ -433,14 +433,14 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Rackmore's Silver Key
-						provider = { "i", 15878 },	-- Rackmore's Silver Key
+						provider = { "i", 15878 },	-- Rackmore's Silver Key (QI!)
 						crs = {
 							11562,	-- Drysnap Crawler
 							11563,	-- Drysnap Pincer
 						},
 					}),
 					objective(2, {	-- 0/1 Rackmore's Golden Key
-						provider = { "i", 15881 },	-- Rackmore's Golden Key
+						provider = { "i", 15881 },	-- Rackmore's Golden Key (QI!)
 						crs = {
 							14229,	-- Accursed Slitherblade
 							4714,	-- Slitherblade Myrmidon
@@ -465,8 +465,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Soft-shelled Clam Meat
 						providers = {
-							{ "i", 15924 },	-- Soft-shelled Clam Meat
-							{ "i", 15874 },	-- Soft-shelled Clam
+							{ "i", 15924 },	-- Soft-shelled Clam Meat (QI!)
+							{ "i", 15874 },	-- Soft-shelled Clam (QI!)
 							{ "o", 177784 },	-- Giant Softshell Clam
 						},
 						cr = 12347,	-- Enraged Reef Crawler
@@ -495,7 +495,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 34,
-				qi = 5539,	-- Letter of Commendation
+				qi = 5539,	-- Letter of Commendation (QI!)
 			}),
 			q(92812, {	-- Economic Warfare (Gelkis)
 				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
@@ -546,9 +546,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/8 Ghost-o-plasm
-						provider = { "i", 15849 },	-- Ghost-o-plasm
+						provider = { "i", 15849 },	-- Ghost-o-plasm (QI!)
 						coord = { 65.0, 91.0, MAP.DESOLACE },
-						cost = { { "i", 15848, 1 } },	-- Crate of Ghost Magnets
+						cost = { { "i", 15848, 1 } },	-- Crate of Ghost Magnets (QI!)
 						cr = 11560,	-- Magrami Spectre
 					}),
 					i(15864),	-- Condor Bracers
@@ -592,8 +592,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/1 Demon Box
 						providers = {
-							{ "i", 13542 },	-- Demon Box
-							{ "i", 14523 },	-- Demon Pick
+							{ "i", 13542 },	-- Demon Box (QI!)
+							{ "i", 14523 },	-- Demon Pick (QI!)
 							{ "o", 176581 },	-- Hand of Iruxos Crystal
 						},
 						coord = { 55.0, 26.4, MAP.DESOLACE },
@@ -633,7 +633,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
 				lvl = 28,
-				qi = 14546,	-- Roon's Kodo Horn
+				qi = 14546,	-- Roon's Kodo Horn (QI!)
 			}),
 			q(92814, {	-- I Need a Tailor
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Molkar in Gelkis Village.
@@ -653,7 +653,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Dez'hepah's Head
-						provider = { "i", 6066 },	-- Khan Dez'hepah's Head
+						provider = { "i", 6066 },	-- Khan Dez'hepah's Head (QI!)
 						coords = {
 							{ 73.2, 42.6, MAP.DESOLACE },
 							{ 74.6, 48.8, MAP.DESOLACE },
@@ -670,9 +670,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
-						provider = { "i", 6077 },	-- Maraudine Key Fragment
+						provider = { "i", 6077 },	-- Maraudine Key Fragment (QI!)
 						coord = { 29.8, 52.8, MAP.DESOLACE },
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece (QI!)
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(6773),	-- Gelkis Marauder Chain
@@ -687,9 +687,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
-						provider = { "i", 6077 },	-- Maraudine Key Fragment
+						provider = { "i", 6077 },	-- Maraudine Key Fragment (QI!)
 						coord = { 29.8, 52.8, MAP.DESOLACE },
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece (QI!)
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(6788),	-- Magram Hunter's Belt
@@ -703,9 +703,9 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
-						provider = { "i", 6077 },	-- Maraudine Key Fragment
+						provider = { "i", 6077 },	-- Maraudine Key Fragment (QI!)
 						coord = { 29.6, 50.6, MAP.DESOLACE },
-						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece
+						cost = { { "i", 6074, 1 } },	-- War Horn Mouthpiece (QI!)
 						cr = 5402,	-- Khan Hratha
 					}),
 					i(254432),	-- Carved Centaur Totem (x10)
@@ -723,7 +723,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn's Head
-						provider = { "i", 6072 },	-- Khan Jehn's Head
+						provider = { "i", 6072 },	-- Khan Jehn's Head (QI!)
 						coord = { 66.6, 79.8, MAP.DESOLACE },
 						cr = 5601,	-- Khan Jehn
 					}),
@@ -759,7 +759,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn resurrected
-						provider = { "i", 257517 },	-- Ultimate Necromancy Staff
+						provider = { "i", 257517 },	-- Ultimate Necromancy Staff (QI!)
 					}),
 					i(271803),	-- Greatstaff of the Necrokhans
 					i(271804),	-- Soulsplatter Mace
@@ -775,7 +775,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Shaka's Head
-						provider = { "i", 6073 },	-- Khan Shaka's Head
+						provider = { "i", 6073 },	-- Khan Shaka's Head (QI!)
 						coord = { 40.6, 95.6, MAP.DESOLACE },
 						cr = 5602,	-- Khan Shaka
 					}),
@@ -787,7 +787,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/5 Kodos Tamed
-						provider = { "i", 13892 },	-- Kodo Kombobulator
+						provider = { "i", 13892 },	-- Kodo Kombobulator (QI!)
 						crs = {
 							4702,	-- Ancient Kodo
 							4700,	-- Aged Kodo
@@ -837,7 +837,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Gimashi's Findings
-						provider = { "i", 258774 },	-- Gimashi's Findings
+						provider = { "i", 258774 },	-- Gimashi's Findings (QI!)
 						cr = 255003,	-- Gimashi
 						coord = { 80.8, 76.6, MAP.DESOLACE },
 					}),
@@ -852,7 +852,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Draenethyst Shard
-						provider = { "i", 6190 },	-- Draenethyst Shard
+						provider = { "i", 6190 },	-- Draenethyst Shard (QI!)
 						coord = { 65.0, 21.0, MAP.SWAMP_OF_SORROWS },
 						cr = 5622,	-- Ongeku
 					}),
@@ -888,7 +888,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/6 Portals Banished
 						providers = {
-							{ "i", 14547 },	-- Hand of Iruxos
+							{ "i", 14547 },	-- Hand of Iruxos (QI!)
 							{ "o", 177243 },	-- Demon Portal
 						},
 						cr = 11937,	-- Demon Portal Guardian
@@ -905,7 +905,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Crude Charm
-						provider = { "i", 6079 },	-- Crude Charm
+						provider = { "i", 6079 },	-- Crude Charm (QI!)
 						crs = {
 							12977,	-- Kolkar Ambusher
 							4636,	-- Kolkar Battle Lord
@@ -927,7 +927,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Hatefury Claw
-						provider = { "i", 6246 },	-- Hatefury Claw
+						provider = { "i", 6246 },	-- Hatefury Claw (QI!)
 						crs = {
 							4673,	-- Hatefury Betrayer
 							4672,	-- Hatefury Felsworn
@@ -939,7 +939,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 						},
 					}),
 					objective(2, {	-- 0/10 Hatefury Horn
-						provider = { "i", 6247 },	-- Hatefury Horn
+						provider = { "i", 6247 },	-- Hatefury Horn (QI!)
 						crs = {
 							4673,	-- Hatefury Betrayer
 							4672,	-- Hatefury Felsworn
@@ -960,7 +960,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/7 Scorpashi Venom
-						provider = { "i", 6248 },	-- Scorpashi Venom
+						provider = { "i", 6248 },	-- Scorpashi Venom (QI!)
 						crs = {
 							4697,	-- Scorpashi Lasher
 							4696,	-- Scorpashi Snapper
@@ -968,7 +968,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 						},
 					}),
 					objective(2, {	-- 0/3 Aged Kodo Hide
-						provider = { "i", 6249 },	-- Aged Kodo Hide
+						provider = { "i", 6249 },	-- Aged Kodo Hide (QI!)
 						cr = 4700,	-- Aged Kodo
 					}),
 				},
@@ -981,7 +981,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Felhound Brain
-						provider = { "i", 6250 },	-- Felhound Brain
+						provider = { "i", 6250 },	-- Felhound Brain (QI!)
 						crs = {
 							4685,	-- Ley Hunter
 							4681,	-- Mage Hunter
@@ -989,7 +989,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 						},
 					}),
 					objective(2, {	-- 0/10 Nether Wing
-						provider = { "i", 6251 },	-- Nether Wing
+						provider = { "i", 6251 },	-- Nether Wing (QI!)
 						crs = {
 							4679,	-- Nether Maiden
 							4682,	-- Nether Sister
@@ -997,7 +997,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 						},
 					}),
 					objective(3, {	-- 0/10 Doomwarder Blood
-						provider = { "i", 6252 },	-- Doomwarder Blood
+						provider = { "i", 6252 },	-- Doomwarder Blood (QI!)
 						crs = {
 							4680,	-- Doomwarder Captain
 							14226,	-- Kaskk
@@ -1012,7 +1012,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 6253,	-- Leftwitch's Package
+				qi = 6253,	-- Leftwitch's Package (QI!)
 				groups = {
 					i(6793),	-- Auric Bracers
 					i(6794),	-- Stormfire Gauntlets / Tawny Gloves [LEGION+]
@@ -1058,7 +1058,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Sceptre of Light
-						provider = { "i", 15750 },	-- Sceptre of Light
+						provider = { "i", 15750 },	-- Sceptre of Light (QI!)
 						coord = { 55.2, 30.0, MAP.DESOLACE },
 						cr = 13019,	-- Burning Blade Seer
 					}),
@@ -1072,7 +1072,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Tyranis' Pendant
-						provider = { "i", 6767 },	-- Tyranis' Pendant
+						provider = { "i", 6767 },	-- Tyranis' Pendant (QI!)
 						coord = { 53.0, 28.4, MAP.DESOLACE },
 						cr = 5643,	-- Tyranis Malem
 					}),
@@ -1087,7 +1087,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/6 Crudely Dried Meat
 						providers = {
-							{ "i", 6069 },	-- Crudely Dried Meat
+							{ "i", 6069 },	-- Crudely Dried Meat (QI!)
 							{ "o", 22245 },	-- Sack of Meat
 						},
 					}),
@@ -1112,7 +1112,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Dispel the Accursed Skull
-						provider = { "i", 256057 },	-- Draenethyst Crystal
+						provider = { "i", 256057 },	-- Draenethyst Crystal (QI!)
 					}),
 					i(271794),	-- Centaur Spear
 					i(271795),	-- Wanderer's Broadsword
@@ -1127,7 +1127,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/15 Infused Burning Gem
-						provider = { "i", 6435 },	-- Infused Burning Gem
+						provider = { "i", 6435 },	-- Infused Burning Gem (QI!)
 						coord = { 55.0, 26.7, MAP.DESOLACE },
 						cost = { { "i", 6436, 1 } },	-- Burning Gem
 						crs = {
@@ -1163,7 +1163,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Shadowstalker Scalp
-						provider = { "i", 6441 },	-- Shadowstalker Scalp
+						provider = { "i", 6441 },	-- Shadowstalker Scalp (QI!)
 						coord = { 75.8, 20.0, MAP.DESOLACE },
 						cr = 4674,	-- Hatefury Shadowstalker
 					}),
@@ -1177,7 +1177,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Oracle Crystal
-						provider = { "i", 6442 },	-- Oracle Crystal
+						provider = { "i", 6442 },	-- Oracle Crystal (QI!)
 						coord = { 31.0, 15.4, MAP.DESOLACE },
 						cr = 4718,	-- Slitherblade Oracle
 					}),
@@ -1232,7 +1232,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Karnitol's Satchel
-						provider = { "i", 6245 },	-- Karnitol's Satchel
+						provider = { "i", 6245 },	-- Karnitol's Satchel (QI!)
 						crs = {
 							4719,	-- Slitherblade Sea Witch
 							4716,	-- Slitherblade Tidehunter
@@ -1247,7 +1247,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 6245,	-- Karnitol's Satchel
+				qi = 6245,	-- Karnitol's Satchel (QI!)
 				groups = {
 					i(6791),	-- Hellion Boots
 					i(6792),	-- Sanguine Pauldrons
@@ -1270,7 +1270,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1437,	-- Vahlarriel's Search (1/3)
 				providers = {
 					{ "o", 50961 },	-- Malem Chest
-					{ "i", 6479 },	-- Malem Pendant
+					{ "i", 6479 },	-- Malem Pendant (QI!)
 				},
 				coord = { 56.6, 17.8, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
@@ -1593,7 +1593,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					4684,	-- Nether Sorceress
 				},
 			}),
-			i(6074, {	-- War Horn Mouthpiece
+			i(6074, {	-- War Horn Mouthpiece (QI!)
 				crs = {
 					6070,	-- Maraudine Khan Advisor
 					6069,	-- Maraudine Khan Guard

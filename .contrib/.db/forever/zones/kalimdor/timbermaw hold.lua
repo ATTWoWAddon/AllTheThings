@@ -155,7 +155,7 @@ maproot(MAP.KALIMDOR, {
 					}),
 					providers = {
 						{ "n", 11555 },	-- Gorn One Eye
-						{ "i", 21155 },	-- Timbermaw Offering of Peace
+						{ "i", 21155 },	-- Timbermaw Offering of Peace (QI!)
 					},
 					coord = { 65.2, 2.6, MAP.FELWOOD },
 					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
@@ -169,9 +169,9 @@ maproot(MAP.KALIMDOR, {
 					lvl = 45,
 					groups = {
 						objective(1, {	-- 0/1 Essence of Xandivious
-							provider = { "i", 21145 },	-- Essence of Xandivious
+							provider = { "i", 21145 },	-- Essence of Xandivious (QI!)
 							coord = { 68.0, 37.6, MAP.WINTERSPRING },
-							cost = { { "i", 21144, 1 } },	-- Demon Summoning Torch
+							cost = { { "i", 21144, 1 } },	-- Demon Summoning Torch (QI!)
 							cr = 15623,	-- Xandivious
 						}),
 						i(21326),	-- Defender of the Timbermaw

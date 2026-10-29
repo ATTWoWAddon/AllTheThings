@@ -96,7 +96,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 33,
 				groups = {
 					objective(1, {	-- 0/12 Pristine Crawler Leg
-						provider = { "i", 5938 },	-- Pristine Crawler Leg
+						provider = { "i", 5938 },	-- Pristine Crawler Leg (QI!)
 						crs = {
 							1088,	-- Monstrous Crawler
 							922,	-- Silt Crawler
@@ -216,7 +216,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				-- This quest was moved to Darkshore after TBC Prepatch.
 				groups = {
 					objective(1, {	-- 0/10 Highperch Venom Sac
-						provider = { "i", 5809 },	-- Highperch Venom Sac
+						provider = { "i", 5809 },	-- Highperch Venom Sac (QI!)
 						crs = {
 							5934,	-- Heartrazor
 							4109,	-- Highperch Consort
@@ -233,7 +233,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/12 Mirefin Head
-						provider = { "i", 5847 },	-- Mirefin Head
+						provider = { "i", 5847 },	-- Mirefin Head (QI!)
 						crs = {
 							14230,	-- Burgle Eye
 							4362,	-- Mirefin Coastrunner
@@ -255,14 +255,14 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/15 Searing Tongue
-						provider = { "i", 5840 },	-- Searing Tongue
+						provider = { "i", 5840 },	-- Searing Tongue (QI!)
 						crs = {
 							4323,	-- Searing Hatchling
 							4324,	-- Searing Whelp
 						},
 					}),
 					objective(2, {	-- 0/15 Searing Heart
-						provider = { "i", 5841 },	-- Searing Heart
+						provider = { "i", 5841 },	-- Searing Heart (QI!)
 						crs = {
 							4323,	-- Searing Hatchling
 							4324,	-- Searing Whelp
@@ -283,9 +283,9 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				qi = 7516,	-- Tabetha's Instructions
 				groups = {
 					objective(2, {	-- 0/1 Bolt Charged Bramble
-						provider = { "i", 7272 },	-- Bolt Charged Bramble
+						provider = { "i", 7272 },	-- Bolt Charged Bramble (QI!)
 						coord = { 52.0, 51.0, MAP.ARATHI_HIGHLANDS },
-						cost = { { "i", 7273, 10 } },	-- Witherbark Totem Stick
+						cost = { { "i", 7273, 10 } },	-- Witherbark Totem Stick (QI!)
 						crs = {
 							2554,	-- Witherbark Axe Thrower
 							2558,	-- Witherbark Berserker
@@ -336,7 +336,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/40 Unpopped Darkmist Eye
-						provider = { "i", 5884 },	-- Unpopped Darkmist Eye
+						provider = { "i", 5884 },	-- Unpopped Darkmist Eye (QI!)
 						crs = {
 							4377,	-- Darkmist Lurker
 							4378,	-- Darkmist Recluse
@@ -378,7 +378,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			q(1252, {	-- Lieutenant Paval Reethe (1/2) [A]
 				providers = {
 					{ "o", 21042 },	-- Theramore Guard Badge
-					{ "i", 5950 },	-- Reethe's Badge
+					{ "i", 5950 },	-- Reethe's Badge (QI!)
 				},
 				coord = { 29.8, 48.2, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
@@ -432,7 +432,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Jeweled Pendant
-						provider = { "i", 5942 },	-- Jeweled Pendant
+						provider = { "i", 5942 },	-- Jeweled Pendant (QI!)
 						crs = {
 							14236,	-- Lord Angler
 							4401,	-- Muckshell Clacker
@@ -463,7 +463,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 33,
 				groups = {
 					objective(1, {	-- 0/8 Forked Mudrock Tongue
-						provider = { "i", 5883 },	-- Forked Mudrock Tongue
+						provider = { "i", 5883 },	-- Forked Mudrock Tongue (QI!)
 						crs = {
 							4399,	-- Mudrock Borer
 							4398,	-- Mudrock Burrower
@@ -492,22 +492,22 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Feralas Ahi
-						provider = { "i", 16967 },	-- Feralas Ahi
+						provider = { "i", 16967 },	-- Feralas Ahi (QI!)
 						coord = { 63.5, 53.6, MAP.FERALAS },
 					}),
 					objective(2, {	-- 0/1 Misty Reed Mahi Mahi
-						provider = { "i", 16970 },	-- Misty Reed Mahi Mahi
+						provider = { "i", 16970 },	-- Misty Reed Mahi Mahi (QI!)
 						coord = { 94.1, 39.7, MAP.SWAMP_OF_SORROWS },
 					}),
 					objective(3, {	-- 0/1 Sar'theris Striker
-						provider = { "i", 16968 },	-- Sar'theris Striker
+						provider = { "i", 16968 },	-- Sar'theris Striker (QI!)
 						coords = {
 							{ 36.2, 32.9, MAP.DESOLACE },
 							{ 26.0, 80.1, MAP.DESOLACE },
 						},
 					}),
 					objective(4, {	-- 0/1 Savage Coast Blue Sailfin
-						provider = { "i", 16969 },	-- Savage Coast Blue Sailfin
+						provider = { "i", 16969 },	-- Savage Coast Blue Sailfin (QI!)
 						coord = { 26.3, 67.8, MAP.STRANGLETHORN_VALE },
 					}),
 					recipe(18248, {	-- Fishing (Artisan)
@@ -522,15 +522,15 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Mok'Morokk's Snuff
-						provider = { "i", 5834 },	-- Mok'Morokk's Snuff
+						provider = { "i", 5834 },	-- Mok'Morokk's Snuff (QI!)
 						coord = { 44.4, 66.0, MAP.DUSTWALLOW_MARSH },
 					}),
 					objective(2, {	-- 0/1 Mok'Morokk's Grog
-						provider = { "i", 5835 },	-- Mok'Morokk's Grog
+						provider = { "i", 5835 },	-- Mok'Morokk's Grog (QI!)
 						coord = { 38.6, 65.4, MAP.DUSTWALLOW_MARSH },
 					}),
 					objective(3, {	-- 0/1 Mok'Morokk's Strongbox
-						provider = { "i", 5836 },	-- Mok'Morokk's Strongbox
+						provider = { "i", 5836 },	-- Mok'Morokk's Strongbox (QI!)
 						coord = { 36.6, 69.4, MAP.DUSTWALLOW_MARSH },
 					}),
 					i(10702),	-- Enormous Ogre Boots
@@ -553,7 +553,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				coord = { 35.2, 30.6, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
 				lvl = 30,
-				qi = 5942,	-- Jeweled Pendant
+				qi = 5942,	-- Jeweled Pendant (QI!)
 			}),
 			q(1953, {	-- Return to the Marsh
 				qgs = {
@@ -669,7 +669,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/6 Acidic Venom Sac
-						provider = { "i", 5959 },	-- Acidic Venom Sac
+						provider = { "i", 5959 },	-- Acidic Venom Sac (QI!)
 						crs = {
 							4412,	-- Darkfang Creeper
 							4411,	-- Darkfang Lurker
@@ -762,7 +762,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Infernal Orb
-						provider = { "i", 7291 },	-- Infernal Orb
+						provider = { "i", 7291 },	-- Infernal Orb (QI!)
 						coord = { 55.0, 77.8, MAP.DESOLACE },
 						cr = 4668,	-- Burning Blade Summoner
 					}),
@@ -821,7 +821,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				sourceQuest = 1238,	-- The Lost Report
 				providers = {
 					{ "o", 20985 },	-- Loose Dirt
-					{ "i", 5918 },	-- Defiant Orc Head
+					{ "i", 5918 },	-- Defiant Orc Head (QI!)
 				},
 				coord = { 55.4, 26.0, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
@@ -835,7 +835,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Captain's Documents
-						provider = { "i", 5882 },	-- Captain's Documents
+						provider = { "i", 5882 },	-- Captain's Documents (QI!)
 						coord = { 71.5, 51.1, MAP.DUSTWALLOW_MARSH },
 					}),
 				},
@@ -847,7 +847,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				maps = { MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
 				lvl = 30,
-				qi = 5918,	-- Defiant Orc Head
+				qi = 5918,	-- Defiant Orc Head (QI!)
 			}),
 			q(1201, {	-- Theramore Spies
 				qg = 4791,	-- Nazeer Bloodpike
@@ -877,7 +877,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/15 Patients Saved
-						provider = { "i", 16991 },	-- Triage Bandage
+						provider = { "i", 16991 },	-- Triage Bandage (QI!)
 						crs = {
 							12936,	-- Badly Injured Alliance Soldier
 							12937,	-- Critically Injured Alliance Soldier

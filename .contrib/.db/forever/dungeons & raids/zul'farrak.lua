@@ -16,7 +16,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Divino-matic Rod
-						provider = { "i", 8548 },	-- Divino-matic Rod
+						provider = { "i", 8548 },	-- Divino-matic Rod (QI!)
 					}),
 					i(9534),	-- Engineer's Guild Headpiece
 					i(9533),	-- Masons Fraternity Ring
@@ -29,7 +29,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Gahz'rilla's Electrified Scale
-						provider = { "i", 8707 },	-- Gahz'rilla's Electrified Scale
+						provider = { "i", 8707 },	-- Gahz'rilla's Electrified Scale (QI!)
 					}),
 					i(11122, {	-- Carrot on a Stick
 						description = "Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",
@@ -45,7 +45,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Nekrum's Medallion
-						provider = { "i", 9471 },	-- Nekrum's Medallion
+						provider = { "i", 9471 },	-- Nekrum's Medallion (QI!)
 					}),
 				},
 			}),
@@ -56,7 +56,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/5 Uncracked Scarab Shell
-						provider = { "i", 9238 },	-- Uncracked Scarab Shell
+						provider = { "i", 9238 },	-- Uncracked Scarab Shell (QI!)
 						cr = 7269,	-- Scarab
 					}),
 				},
@@ -94,7 +94,7 @@ instanceroot(241, {	-- Zul'Farrak
 				groups = {
 					objective(1, {	-- 0/1 Ancient Egg
 						providers = {
-							{ "i", 12402 },	-- Ancient Egg
+							{ "i", 12402 },	-- Ancient Egg (QI!)
 							{ "o", 175889 },	-- Ancient Egg
 						},
 						coord = { 57.5, 86.7, MAP.THE_HINTERLANDS },
@@ -115,10 +115,10 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 First Mosh'aru Tablet
-						provider = { "i", 10660 },	-- First Mosh'aru Tablet
+						provider = { "i", 10660 },	-- First Mosh'aru Tablet (QI!)
 					}),
 					objective(2, {	-- 0/1 Second Mosh'aru Tablet
-						provider = { "i", 10661 },	-- Second Mosh'aru Tablet
+						provider = { "i", 10661 },	-- Second Mosh'aru Tablet (QI!)
 					}),
 				},
 			}),
@@ -141,7 +141,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Tiara of the Deep
-						provider = { "i", 9234 },	-- Tiara of the Deep
+						provider = { "i", 9234 },	-- Tiara of the Deep (QI!)
 					}),
 					i(9527),	-- Spellshifter Rod
 					i(9531),	-- Gemshale Pauldrons
@@ -153,7 +153,7 @@ instanceroot(241, {	-- Zul'Farrak
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/20 Troll Temper
-						provider = { "i", 9523 },	-- Troll Temper
+						provider = { "i", 9523 },	-- Troll Temper (QI!)
 					}),
 				},
 			}),
@@ -184,7 +184,7 @@ instanceroot(241, {	-- Zul'Farrak
 		}),
 		n(ZONE_DROPS, {
 			i(9243),	-- Shriveled Heart / Shriveled Troll Heart
-			i(9523),	-- Troll Temper
+			i(9523),	-- Troll Temper (QI!)
 		}),
 		n(10080, {	-- Sandarr Dunereaver
 			description = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
@@ -211,7 +211,7 @@ instanceroot(241, {	-- Zul'Farrak
 		e(485, {	-- Theka the Martyr
 			creatureID = 7272,
 			groups = {
-				i(10660),	-- First Mosh'aru Tablet
+				i(10660),	-- First Mosh'aru Tablet (QI!)
 			},
 		}),
 		e(484, {	-- Antu'sul
@@ -239,8 +239,8 @@ instanceroot(241, {	-- Zul'Farrak
 		e(482, {	-- Hydromancer Velratha
 			creatureID = 7795,
 			groups = {
-				i(9234),	-- Tiara of the Deep
-				i(10661),	-- Second Mosh'aru Tablet
+				i(9234),	-- Tiara of the Deep (QI!)
+				i(10661),	-- Second Mosh'aru Tablet (QI!)
 			},
 		}),
 		e(483, {	-- Gahz'rilla
@@ -249,7 +249,7 @@ instanceroot(241, {	-- Zul'Farrak
 			provider = { "o", 141832 },	-- Gong of Zul'Farrak
 			cost = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
 			groups = {
-				i(8707),	-- Gahz'rilla's Electrified Scale
+				i(8707),	-- Gahz'rilla's Electrified Scale (QI!)
 				i(9467),	-- Gahz'rilla Fang
 				i(9469),	-- Gahz'rilla Scale Armor
 			},
@@ -257,7 +257,7 @@ instanceroot(241, {	-- Zul'Farrak
 		n(7796, {	-- Nekrum Gutchewer
 			description = "He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",
 			groups = {
-				i(9471, {	-- Nekrum's Medallion
+				i(9471, {	-- Nekrum's Medallion (QI!)
 					races = ALLIANCE_ONLY,
 				}),
 			},
@@ -282,7 +282,7 @@ instanceroot(241, {	-- Zul'Farrak
 				7605,	-- Raven
 			},
 			groups = {
-				i(8548),	-- Divino-matic Rod
+				i(8548),	-- Divino-matic Rod (QI!)
 			},
 		}),
 		n(7797, {	-- Ruuzlu

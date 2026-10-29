@@ -27,7 +27,7 @@ instanceroot(238, {	-- The Stockade
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/1 Hand of Dextren Ward
-						provider = { "i", 3628 },	-- Hand of Dextren Ward
+						provider = { "i", 3628 },	-- Hand of Dextren Ward (QI!)
 					}),
 					i(2906),	-- Darkshire Mail Leggings
 					i(2033),	-- Ambassador's Boots
@@ -49,7 +49,7 @@ instanceroot(238, {	-- The Stockade
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/10 Red Wool Bandana
-						provider = { "i", 2909 },	-- Red Wool Bandana
+						provider = { "i", 2909 },	-- Red Wool Bandana (QI!)
 						crs = {
 							1716,	-- Bazil Thredd
 							1720,	-- Bruegal Ironknuckle
@@ -71,7 +71,7 @@ instanceroot(238, {	-- The Stockade
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Head of Deepfury
-						provider = { "i", 3640 },	-- Head of Deepfury
+						provider = { "i", 3640 },	-- Head of Deepfury (QI!)
 					}),
 					i(1264),	-- Headbasher
 					i(3562),	-- Belt of Vindication
@@ -88,7 +88,7 @@ instanceroot(238, {	-- The Stockade
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Head of Bazil Thredd
-						provider = { "i", 2926 },	-- Head of Bazil Thredd
+						provider = { "i", 2926 },	-- Head of Bazil Thredd (QI!)
 					}),
 				},
 			}),
@@ -99,7 +99,7 @@ instanceroot(238, {	-- The Stockade
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Head of Targorr
-						provider = { "i", 3630 },	-- Head of Targorr
+						provider = { "i", 3630 },	-- Head of Targorr (QI!)
 					}),
 					i(1317),	-- Hardened Root Staff
 					i(3400),	-- Lucine Longsword
@@ -124,7 +124,7 @@ instanceroot(238, {	-- The Stockade
 			},
 		}),
 		n(1666, {	-- Kam Deepfury
-			i(3640),	-- Head of Deepfury
+			i(3640),	-- Head of Deepfury (QI!)
 			i(273808, {	-- Bridgebreaker Bindings
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -134,7 +134,7 @@ instanceroot(238, {	-- The Stockade
 			i(2280),	-- Kam's Walking Stick
 		}),
 		n(1663, {	-- Dextren Ward
-			i(3628),	-- Hand of Dextren Ward
+			i(3628),	-- Hand of Dextren Ward (QI!)
 			i(273819, {	-- Boneslicer
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -157,7 +157,7 @@ instanceroot(238, {	-- The Stockade
 			}),
 		}),
 		n(1696, {	-- Targorr the Dread
-			i(3630),	-- Head of Targorr
+			i(3630),	-- Head of Targorr (QI!)
 			i(273805, {	-- Blackrock Harness
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -169,7 +169,7 @@ instanceroot(238, {	-- The Stockade
 			}),
 		}),
 		n(1716, {	-- Bazil Thredd
-			i(2926),	-- Head of Bazil Thredd
+			i(2926),	-- Head of Bazil Thredd (QI!)
 			i(273827, {	-- Debt Collector
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),

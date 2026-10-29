@@ -89,7 +89,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			o(129127, {	-- Gallywix's Lockbox
 				coord = { 54.7, 5.6, MAP.THE_BARRENS },
-				cost = { { "i", 8072, 1 } },	-- 1x Silixiz's Tower Key
+				cost = { { "i", 8072, 1 } },	-- 1x Silixiz's Tower Key (QI!)
 				requireSkill = LOCKPICKING,
 				learnedAt = 70,
 				groups = {
@@ -101,7 +101,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				requireSkill = LOCKPICKING,
 				learnedAt = 25,
 				groups = {
-					i(7968, {	-- Southsea Treasure
+					i(7968, {	-- Southsea Treasure (QI!)
 						description = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
 						cost = { { "i", 7970, 1 } },	-- 1x E.C.A.C.
 						cr = 7168,	-- Polly
@@ -141,7 +141,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Unrefined Ore Sample
-						provider = { "i", 5842 },	-- Unrefined Ore Sample
+						provider = { "i", 5842 },	-- Unrefined Ore Sample (QI!)
 						crs = {
 							4116,	-- Gravelsnout Surveyor
 							4113,	-- Gravelsnout Digger
@@ -177,7 +177,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Altered Snapjaw Shell
-						provider = { "i", 5098 },	-- Altered Snapjaw Shell
+						provider = { "i", 5098 },	-- Altered Snapjaw Shell (QI!)
 						cr = 3461,	-- Oasis Snapjaw
 					}),
 				},
@@ -189,7 +189,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 5027,	-- Rendered Spores
+				qi = 5027,	-- Rendered Spores (QI!)
 				groups = {
 					i(2458),	-- Elixir of Minor Fortitude
 					i(2457),	-- Elixir of Minor Agility
@@ -206,17 +206,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/1 Kuz's Skull
-						provider = { "i", 5074 },	-- Kuz's Skull
+						provider = { "i", 5074 },	-- Kuz's Skull (QI!)
 						coord = { 44.6, 79.8, MAP.THE_BARRENS },
 						cr = 3436,	-- Kuz
 					}),
 					objective(2, {	-- 0/1 Nak's Skull
-						provider = { "i", 5073 },	-- Nak's Skull
+						provider = { "i", 5073 },	-- Nak's Skull (QI!)
 						coord = { 43.8, 83.6, MAP.THE_BARRENS },
 						cr = 3434,	-- Nak
 					}),
 					objective(3, {	-- 0/1 Lok's Skull
-						provider = { "i", 5072 },	-- Lok's Skull
+						provider = { "i", 5072 },	-- Lok's Skull (QI!)
 						coord = { 40.2, 80.6, MAP.THE_BARRENS },
 						cr = 3435,	-- Lok Orcbane
 					}),
@@ -228,7 +228,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 17,
-				qi = 5072,	-- Lok's Skull
+				qi = 5072,	-- Lok's Skull (QI!)
 				groups = {
 					i(5316),	-- Barkshell Tunic
 					i(5317),	-- Dry Moss Tunic
@@ -266,7 +266,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 7587,	-- Thun'grim's Instructions
 				groups = {
 					objective(1, {	-- 0/15 Smoky Iron Ingot
-						provider = { "i", 7126 },	-- Smoky Iron Ingot
+						provider = { "i", 7126 },	-- Smoky Iron Ingot (QI!)
 						crs = {
 							3999,	-- Windshear Digger
 							4003,	-- Windshear Geomancer
@@ -277,11 +277,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(2, {	-- 0/10 Powdered Azurite
-						provider = { "i", 7127 },	-- Powdered Azurite
+						provider = { "i", 7127 },	-- Powdered Azurite (QI!)
 						cr = 2269,	-- Hillsbrad Miner
 					}),
 					objective(4, {	-- 0/1 Vial of Phlogiston
-						provider = { "i", 6841 },	-- Vial of Phlogiston
+						provider = { "i", 6841 },	-- Vial of Phlogiston (QI!)
 						cr = 6168,	-- Roogug
 					}),
 				},
@@ -342,7 +342,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				classes = { SHAMAN },
 				lvl = 10,
 				groups = {
-					i(6653),	-- Torch of the Dormant Flame
+					i(6653),	-- Torch of the Dormant Flame (QI!)
 				},
 			}),
 			q(1525, {	-- Call of Fire (3/5)
@@ -354,7 +354,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Fire Tar
-						provider = { "i", 5026 },	-- Fire Tar
+						provider = { "i", 5026 },	-- Fire Tar (QI!)
 						crs = {
 							3269,	-- Razormane Geomancer
 							3271,	-- Razormane Mystic
@@ -363,7 +363,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(2, {	-- 0/1 Reagent Pouch
-						provider = { "i", 6652 },	-- Reagent Pouch
+						provider = { "i", 6652 },	-- Reagent Pouch (QI!)
 						cr = 3199,	-- Burning Blade Cultist
 					}),
 					i(6636),	-- Fire Sapta
@@ -376,11 +376,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 10,
-				qi = 6653,	-- Torch of the Dormant Flame
+				qi = 6653,	-- Torch of the Dormant Flame (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Glowing Ember
 						providers = {
-							{ "i", 6655 },	-- Glowing Ember
+							{ "i", 6655 },	-- Glowing Ember (QI!)
 							{ "i", 6636 },	-- Fire Sapta
 						},
 						coord = { 38.6, 58.2, MAP.DUROTAR },
@@ -400,7 +400,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(5176, {	-- Fire Totem
 						description = "You must keep this in your bags forever.",
 					}),
-					i(6654),	-- Torch of the Eternal Flame
+					i(6654),	-- Torch of the Eternal Flame (QI!)
 				},
 			}),
 			q(2985, {	-- Call of Water (1/9) [Durotar]
@@ -458,8 +458,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Brown Waterskin
 						providers = {
-							{ "i", 7769 },	-- Filled Brown Waterskin
-							{ "i", 7766 },	-- Empty Brown Waterskin
+							{ "i", 7769 },	-- Filled Brown Waterskin (QI!)
+							{ "i", 7766 },	-- Empty Brown Waterskin (QI!)
 						},
 						coord = { 44.0, 77.0, MAP.THE_BARRENS },
 					}),
@@ -476,8 +476,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Red Waterskin
 						providers = {
-							{ "i", 7771 },	-- Filled Red Waterskin
-							{ "i", 7768 },	-- Empty Red Waterskin
+							{ "i", 7771 },	-- Filled Red Waterskin (QI!)
+							{ "i", 7768 },	-- Empty Red Waterskin (QI!)
 						},
 						coord = { 62.0, 20.0, MAP.HILLSBRAD_FOOTHILLS },
 					}),
@@ -494,8 +494,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Blue Waterskin
 						providers = {
-							{ "i", 7770 },	-- Filled Blue Waterskin
-							{ "i", 7767 },	-- Empty Blue Waterskin
+							{ "i", 7770 },	-- Filled Blue Waterskin (QI!)
+							{ "i", 7767 },	-- Empty Blue Waterskin (QI!)
 						},
 						coord = { 33.0, 67.0, MAP.ASHENVALE },
 					}),
@@ -508,7 +508,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
-				qi = 7810,	-- Vial of Purest Water
+				qi = 7810,	-- Vial of Purest Water (QI!)
 				groups = {
 					i(6637),	-- Water Sapta
 				},
@@ -524,8 +524,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Corrupt Manifestation's Bracers
 						providers = {
-							{ "i", 7812 },	-- Corrupt Manifestation's Bracers
-							{ "i", 7811 },	-- Remaining Drops of Purest Water
+							{ "i", 7812 },	-- Corrupt Manifestation's Bracers (QI!)
+							{ "i", 7811 },	-- Remaining Drops of Purest Water (QI!)
 						},
 						coord = { 38.8, 44.3, MAP.SILVERPINE_FOREST },
 						cr = 5894,	-- Corrupt Minor Manifestation of Water
@@ -547,7 +547,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
-				qi = 7813,	-- Shard of Water
+				qi = 7813,	-- Shard of Water (QI!)
 				groups = {
 					recipe(5394),	-- Healing Stream Totem
 					i(5177, {	-- Water Totem
@@ -574,7 +574,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/15 Centaur Bracers
-						provider = { "i", 5030 },	-- Centaur Bracers
+						provider = { "i", 5030 },	-- Centaur Bracers (QI!)
 						crs = {
 							3394,	-- Barak Kodobane
 							5838,	-- Brokespear
@@ -624,7 +624,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/5 Savannah Lion Tusk
-						provider = { "i", 4893 },	-- Savannah Lion Tusk
+						provider = { "i", 4893 },	-- Savannah Lion Tusk (QI!)
 						crs = {
 							3243,	-- Savannah Highmane
 							3415,	-- Savannah Huntress
@@ -634,7 +634,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(2, {	-- 0/5 Plainstrider Kidney
-						provider = { "i", 4894 },	-- Plainstrider Kidney
+						provider = { "i", 4894 },	-- Plainstrider Kidney (QI!)
 						crs = {
 							3246,	-- Fleeting Plainstrider
 							3244,	-- Greater Plainstrider
@@ -642,7 +642,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(3, {	-- 0/1 Thunder Lizard Horn
-						provider = { "i", 4895 },	-- Thunder Lizard Horn
+						provider = { "i", 4895 },	-- Thunder Lizard Horn (QI!)
 						crs = {
 							3240,	-- Stormsnout
 							5832,	-- Thunderstomp
@@ -661,15 +661,15 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Lightning Gland
-						provider = { "i", 4898 },	-- Lightning Gland
+						provider = { "i", 4898 },	-- Lightning Gland (QI!)
 						cr = 3238,	-- Stormhide
 					}),
 					objective(2, {	-- 0/1 Thunderhawk Saliva Gland
-						provider = { "i", 4897 },	-- Thunderhawk Saliva Gland
+						provider = { "i", 4897 },	-- Thunderhawk Saliva Gland (QI!)
 						cr = 3249,	-- Greater Thunderhawk
 					}),
 					objective(3, {	-- 0/1 Kodo Liver
-						provider = { "i", 4896 },	-- Kodo Liver
+						provider = { "i", 4896 },	-- Kodo Liver (QI!)
 						crs = {
 							3236,	-- Barrens Kodo
 							3235,	-- Greater Barrens Kodo
@@ -689,7 +689,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Chol'aruk's Head
-						provider = { "i", 276070 },	-- Chol'aruk's Head
+						provider = { "i", 276070 },	-- Chol'aruk's Head (QI!)
 						coord = { 57.4, 27.2, MAP.THE_BARRENS },
 						cr = 267307,	-- Chol'aruk <The Ravener>
 					}),
@@ -707,7 +707,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Chol'aruk's Head
-						provider = { "i", 276070 },	-- Chol'aruk's Head
+						provider = { "i", 276070 },	-- Chol'aruk's Head (QI!)
 						coord = { 57.4, 27.2, MAP.THE_BARRENS },
 						cr = 267307,	-- Chol'aruk <The Ravener>
 					}),
@@ -766,7 +766,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 31,
 				groups = {
 					objective(1, {	-- 0/10 Vial of Hatefury Blood
-						provider = { "i", 6989 },	-- Vial of Hatefury Blood
+						provider = { "i", 6989 },	-- Vial of Hatefury Blood (QI!)
 						crs = {
 							4673,	-- Hatefury Betrayer
 							4672,	-- Hatefury Felsworn
@@ -778,7 +778,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(2, {	-- 0/1 Lesser Infernal Stone
-						provider = { "i", 6990 },	-- Lesser Infernal Stone
+						provider = { "i", 6990 },	-- Lesser Infernal Stone (QI!)
 						cr = 4676,	-- Lesser Infernal
 					}),
 				},
@@ -793,10 +793,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 31,
 				groups = {
 					objective(1, {	-- 0/1 Fine Gold Thread
-						provider = { "i", 12293 },	-- Fine Gold Thread
+						provider = { "i", 12293 },	-- Fine Gold Thread (QI!)
 					}),
 					objective(2, {	-- 0/2 Smoldering Coal
-						provider = { "i", 6991 },	-- Smoldering Coal
+						provider = { "i", 6991 },	-- Smoldering Coal (QI!)
 						cr = 2760,	-- Burning Exile
 					}),
 				},
@@ -808,7 +808,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/60 Bristleback Quilboar Tusk
-						provider = { "i", 5085 },	-- Bristleback Quilboar Tusk
+						provider = { "i", 5085 },	-- Bristleback Quilboar Tusk (QI!)
 						crs = {
 							3263,	-- Bristleback Geomancer
 							3258,	-- Bristleback Hunter
@@ -828,7 +828,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Piece of Krom'zar's Banner
-						provider = { "i", 11227 },	-- Piece of Krom'zar's Banner
+						provider = { "i", 11227 },	-- Piece of Krom'zar's Banner (QI!)
 						cr = 9456,	-- Warlord Krom'zar
 					}),
 				},
@@ -841,7 +841,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Thunderhawk Wings
-						provider = { "i", 5164 },	-- Thunderhawk Wings
+						provider = { "i", 5164 },	-- Thunderhawk Wings (QI!)
 						crs = {
 							3249,	-- Greater Thunderhawk
 							3424,	-- Thunderhawk Cloudscraper
@@ -862,7 +862,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/10 Sickly Gazelle cured
-						provider = { "i", 15826 },	-- Curative Animal Salve
+						provider = { "i", 15826 },	-- Curative Animal Salve (QI!)
 						cr = 12296,	-- Sickly Gazelle
 					}),
 					i(15866),	-- Veildust Medicine Bag
@@ -876,7 +876,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/15 Deepmoss Egg
 						providers = {
-							{ "i", 5570 },	-- Deepmoss Egg
+							{ "i", 5570 },	-- Deepmoss Egg (QI!)
 							{ "o", 19542 },	-- Deepmoss Eggs
 						},
 					}),
@@ -929,7 +929,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				lvl = 20,
-				qi = 6624,	-- Ken'zigla's Draught
+				qi = 6624,	-- Ken'zigla's Draught (QI!)
 			}),
 			q(6385, {	-- Doras the Wind Rider Master
 				sourceQuest = 6384,	-- Ride to Orgrimmar
@@ -937,7 +937,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 54.09, 68.43, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
 				lvl = 10,
-				qi = 16307,	-- Gryshka's Letter
+				qi = 16307,	-- Gryshka's Letter (QI!)
 			}),
 			q(881, {	-- Echeyakee
 				sourceQuest = 903,	-- Prowlers of the Barrens
@@ -948,8 +948,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Echeyakee's Hide
 						providers = {
-							{ "i", 5100 },	-- Echeyakee's Hide
-							{ "i", 10327 },	-- Horn of Echeyakee
+							{ "i", 5100 },	-- Echeyakee's Hide (QI!)
+							{ "i", 10327 },	-- Horn of Echeyakee (QI!)
 						},
 						coord = { 55.8, 17.2, MAP.THE_BARRENS },
 						cr = 3475,	-- Echeyakee
@@ -964,9 +964,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/12 Silithid Egg
 						providers = {
-							{ "i", 5058 },	-- Silithid Egg
+							{ "i", 5058 },	-- Silithid Egg (QI!)
 							{ "o", 3685 },	-- Silithid Mound
-							{ "i", 5059 },	-- Digging Claw
+							{ "i", 5059 },	-- Digging Claw (QI!)
 						},
 					}),
 					i(6503),	-- Harlequin Robes
@@ -981,7 +981,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/3 Thunder Lizard Blood
-						provider = { "i", 5143 },	-- Thunder Lizard Blood
+						provider = { "i", 5143 },	-- Thunder Lizard Blood (QI!)
 						crs = {
 							3240,	-- Stormsnout
 							3239,	-- Thunderhead
@@ -1018,7 +1018,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Forged Steel Bars
 						providers = {
-							{ "i", 6534 },	-- Forged Steel Bars
+							{ "i", 6534 },	-- Forged Steel Bars (QI!)
 							{ "o", 58369 },	-- Stolen Iron Chest
 						},
 						coord = { 55.0, 26.6, MAP.THE_BARRENS },
@@ -1043,7 +1043,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Infernal Orb
-						provider = { "i", 7291 },	-- Infernal Orb
+						provider = { "i", 7291 },	-- Infernal Orb (QI!)
 						coord = { 55.0, 77.8, MAP.DESOLACE },
 						cr = 4668,	-- Burning Blade Summoner
 					}),
@@ -1070,7 +1070,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/4 Fungal Spores
 						providers = {
-							{ "i", 5012 },	-- Fungal Spores
+							{ "i", 5012 },	-- Fungal Spores (QI!)
 							{ "o", 3640 },	-- Laden Mushroom
 						},
 					}),
@@ -1089,7 +1089,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 3375 },	-- Bael'dun Foreman
 					}),
 					objective(3, {	-- 0/1 Khazgorm's Journal
-						provider = { "i", 5006 },	-- Khazgorm's Journal
+						provider = { "i", 5006 },	-- Khazgorm's Journal (QI!)
 						coord = { 47.8, 85.6, MAP.THE_BARRENS },
 						cr = 3392,	-- Prospector Khazgorm <Explorers' League>
 					}),
@@ -1105,7 +1105,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					objective(2, {	-- 0/5 Kodo Horn
-						provider = { "i", 15852 },	-- Kodo Horn
+						provider = { "i", 15852 },	-- Kodo Horn (QI!)
 						crs = {
 							3236,	-- Barrens Kodo
 							3234,	-- Lost Barrens Kodo
@@ -1131,7 +1131,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3637, {	-- Gnome Engineering [H]
 				altQuests = {
@@ -1151,7 +1151,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3633, {	-- Goblin Engineering [H]
 				altQuests = {
@@ -1171,7 +1171,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(875, {	-- Harpy Lieutenants
 				sourceQuest = 867,	-- Harpy Raiders
@@ -1181,7 +1181,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/6 Harpy Lieutenant Ring
-						provider = { "i", 5065 },	-- Harpy Lieutenant Ring
+						provider = { "i", 5065 },	-- Harpy Lieutenant Ring (QI!)
 						cr = 3278,	-- Witchwing Slayer
 					}),
 				},
@@ -1193,7 +1193,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/8 Witchwing Talon
-						provider = { "i", 5064 },	-- Witchwing Talon
+						provider = { "i", 5064 },	-- Witchwing Talon (QI!)
 						crs = {
 							3452,	-- Serena Bloodfeather
 							3279,	-- Witchwing Ambusher
@@ -1216,7 +1216,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Heartswood
 						providers = {
-							{ "i", 6912 },	-- Heartswood
+							{ "i", 6912 },	-- Heartswood (QI!)
 							{ "o", 93192 },	-- Heartswood
 						},
 						coord = { 31.0, 31.0, MAP.ASHENVALE },
@@ -1244,7 +1244,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Hezrul's Head
-						provider = { "i", 5025 },	-- Hezrul's Head
+						provider = { "i", 5025 },	-- Hezrul's Head (QI!)
 						coord = { 46.8, 38.6, MAP.THE_BARRENS },
 						cr = 3396,	-- Hezrul Bloodmark
 					}),
@@ -1262,7 +1262,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- Rynthariel the Keymaster slain
 						providers = {
 							{ "n", 8518 },	-- Rynthariel the Keymaster
-							{ "i", 10622 },	-- Kadrak's Flag
+							{ "i", 10622 },	-- Kadrak's Flag (QI!)
 						},
 						coord = { 29.8, 17.6, MAP.STONETALON_MOUNTAINS },
 					}),
@@ -1279,7 +1279,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/1 Ignition Key
-						provider = { "i", 5050 },	-- Ignition Key
+						provider = { "i", 5050 },	-- Ignition Key (QI!)
 						coord = { 56.2, 8.6, MAP.THE_BARRENS },
 						cr = 3445,	-- Supervisor Lugwizzle
 					}),
@@ -1325,7 +1325,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Heart of Isha Awak
-						provider = { "i", 5104 },	-- Heart of Isha Awak
+						provider = { "i", 5104 },	-- Heart of Isha Awak (QI!)
 						coords = {
 							{ 65.6, 47.0, MAP.THE_BARRENS },
 							{ 64.2, 50.6, MAP.THE_BARRENS },
@@ -1346,12 +1346,12 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Ishamuhale's Fang
-						provider = { "i", 5101 },	-- Ishamuhale's Fang
+						provider = { "i", 5101 },	-- Ishamuhale's Fang (QI!)
 						coord = { 59.8, 30.6, MAP.THE_BARRENS },
-						cost = { { "i", 10338, 1 } },	-- 1x Fresh Zhevra Carcass
+						cost = { { "i", 10338, 1 } },	-- 1x Fresh Zhevra Carcass (QI!)
 						cr = 3257,	-- Ishamuhale
 					}),
-					i(10338, {	-- Fresh Zhevra Carcass
+					i(10338, {	-- Fresh Zhevra Carcass (QI!)
 						crs = {
 							3426,	-- Zhevra Charger
 							3466,	-- Zhevra Courser
@@ -1421,7 +1421,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Kodobane's Head
-						provider = { "i", 5022 },	-- Kodobane's Head
+						provider = { "i", 5022 },	-- Kodobane's Head (QI!)
 						coord = { 42.8, 23.6, MAP.THE_BARRENS },
 						cr = 3394,	-- Barak Kodobane
 					}),
@@ -1480,7 +1480,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 51.62, 30.90, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 15,
-				qi = 5594,	-- Letter to Jin'Zil
+				qi = 5594,	-- Letter to Jin'Zil (QI!)
 			}),
 			q(4921, {	-- Lost in Battle
 				qg = 3432,	-- Mankrik
@@ -1501,7 +1501,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				lvl = 20,
-				qi = 6625,	-- Dirt-caked Pendant
+				qi = 6625,	-- Dirt-caked Pendant (QI!)
 			}),
 			q(874, {	-- Mahren Skyseer
 				sourceQuest = 913,	-- Cry of the Thunderhawk
@@ -1515,7 +1515,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 52.62, 29.84, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
 				lvl = 10,
-				qi = 16306,	-- Zargh's Meats
+				qi = 16306,	-- Zargh's Meats (QI!)
 			}),
 			q(3646, {	-- Membership Card Renewal
 				sourceQuest = 3639,	-- Show Your Work
@@ -1547,7 +1547,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/1 Cats Eye Emerald
-						provider = { "i", 5097 },	-- Cats Eye Emerald
+						provider = { "i", 5097 },	-- Cats Eye Emerald (QI!)
 						coord = { 60.4, 3.8, MAP.THE_BARRENS },
 						crs = {
 							9336,	-- Boss Copperplug
@@ -1578,15 +1578,15 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 7308 },	-- Venture Co. Patroller
 					}),
 					objective(4, {	-- 0/1 Gallywix's Head
-						provider = { "i", 8074 },	-- Gallywix's Head
+						provider = { "i", 8074 },	-- Gallywix's Head (QI!)
 						cr = 7288,	-- Grand Foreman Puzik Gallywix
 					}),
 					objective(5, {	-- 0/1 Silixiz's Tower Key
-						provider = { "i", 8072 },	-- Silixiz's Tower Key
+						provider = { "i", 8072 },	-- Silixiz's Tower Key (QI!)
 						cr = 7287,	-- Foreman Silixiz
 					}),
 					objective(6, {	-- 0/1 Cache of Zanzil's Altered Mixture
-						provider = { "i", 8073 },	-- Cache of Zanzil's Altered Mixture
+						provider = { "i", 8073 },	-- Cache of Zanzil's Altered Mixture (QI!)
 					}),
 					i(18160),	-- Recipe: Thistle Tea (RECIPE!)
 				},
@@ -1632,7 +1632,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/15 Nugget Slug
 						providers = {
-							{ "i", 11143 },	-- Nugget Slug
+							{ "i", 11143 },	-- Nugget Slug (QI!)
 							{ "o", 161752 },	-- Tool Bucket
 						},
 					}),
@@ -1662,7 +1662,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/5 Handful of Complicated Parts
 						providers = {
-							{ "i", 277331 },	-- Handful of Complicated Parts
+							{ "i", 277331 },	-- Handful of Complicated Parts (QI!)
 							{ "o", 660930 },	-- Pile of Complicated Parts
 						},
 						coord = { 62.2, 47.4, MAP.THE_BARRENS },
@@ -1689,7 +1689,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Singed Scale
-						provider = { "i", 6486 },	-- Singed Scale
+						provider = { "i", 6486 },	-- Singed Scale (QI!)
 						crs = {
 							3131,	-- Lightning Hide
 							3130,	-- Thunder Lizard
@@ -1705,7 +1705,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/7 Plainstrider Beak
-						provider = { "i", 5087 },	-- Plainstrider Beak
+						provider = { "i", 5087 },	-- Plainstrider Beak (QI!)
 						crs = {
 							3244,	-- Greater Plainstrider
 							3246,	-- Fleeting Plainstrider
@@ -1723,7 +1723,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Southsea Treasure
-						provider = { "i", 7968 },	-- Southsea Treasure
+						provider = { "i", 7968 },	-- Southsea Treasure (QI!)
 					}),
 					i(7970),	-- E.C.A.C.
 					i(7676),	-- Thistle Tea
@@ -1737,7 +1737,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/7 Prowler Claws
-						provider = { "i", 5096 },	-- Prowler Claws
+						provider = { "i", 5096 },	-- Prowler Claws (QI!)
 						cr = 3425,	-- Savannah Prowler
 					}),
 				},
@@ -1748,7 +1748,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/5 Intact Raptor Horn
-						provider = { "i", 5055 },	-- Intact Raptor Horn
+						provider = { "i", 5055 },	-- Intact Raptor Horn (QI!)
 						crs = {
 							3257,	-- Ishamuhale
 							3256,	-- Sunscale Scytheclaw
@@ -1766,7 +1766,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/12 Raptor Head
-						provider = { "i", 5062 },	-- Raptor Head
+						provider = { "i", 5062 },	-- Raptor Head (QI!)
 						crs = {
 							3254,	-- Sunscale Lashtail
 							3255,	-- Sunscale Screecher
@@ -1804,7 +1804,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 45.21, 63.58, MAP.ORGRIMMAR },
 				races = { ORC, TROLL },
 				lvl = 10,
-				qi = 16307,	-- Gryshka's Letter
+				qi = 16307,	-- Gryshka's Letter (QI!)
 			}),
 			q(4976, {	-- Returning the Cleansed Orb
 				sourceQuest = 4961,	-- Cleansing of the Orb of Orahil
@@ -1812,7 +1812,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 				classes = { WARLOCK },
 				lvl = 35,
-				qi = 12642,	-- Cleansed Infernal Orb
+				qi = 12642,	-- Cleansed Infernal Orb (QI!)
 			}),
 			q(846, {	-- Revenge of Gann (1/2)
 				sourceQuest = 843,	-- Gann's Reclamation
@@ -1822,7 +1822,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/6 Nitroglycerin
-						provider = { "i", 5017 },	-- Nitroglycerin
+						provider = { "i", 5017 },	-- Nitroglycerin (QI!)
 						crs = {
 							3378,	-- Bael'dun Officer
 							3377,	-- Bael'dun Rifleman
@@ -1830,7 +1830,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(2, {	-- 0/6 Wood Pulp
-						provider = { "i", 5018 },	-- Wood Pulp
+						provider = { "i", 5018 },	-- Wood Pulp (QI!)
 						crs = {
 							3378,	-- Bael'dun Officer
 							3377,	-- Bael'dun Rifleman
@@ -1838,7 +1838,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 					objective(3, {	-- 0/6 Sodium Nitrate
-						provider = { "i", 5019 },	-- Sodium Nitrate
+						provider = { "i", 5019 },	-- Sodium Nitrate (QI!)
 						crs = {
 							3378,	-- Bael'dun Officer
 							3377,	-- Bael'dun Rifleman
@@ -1857,7 +1857,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- Bael Modan Flying Machine destroyed
 						providers = {
 							{ "o", 3644 },	-- Bael Modan Flying Machine
-							{ "i", 5021 },	-- Explosive Stick of Gann
+							{ "i", 5021 },	-- Explosive Stick of Gann (QI!)
 						},
 						coord = { 46.0, 85.0, MAP.THE_BARRENS },
 					}),
@@ -1870,7 +1870,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { ORC, TROLL },
 				lvl = 10,
-				qi = 16306,	-- Zargh's Meats
+				qi = 16306,	-- Zargh's Meats (QI!)
 			}),
 			q(3923, {	-- Rilli Greasygob
 				sourceQuest = 3922,	-- Nugget Slugs
@@ -1878,7 +1878,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 49.05, 11.17, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 11146,	-- Broken and Battered Samophlange
+				qi = 11146,	-- Broken and Battered Samophlange (QI!)
 			}),
 			q(5045, {	-- Rising Spirit
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
@@ -1897,7 +1897,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/8 Root Sample
-						provider = { "i", 5056 },	-- Root Sample
+						provider = { "i", 5056 },	-- Root Sample (QI!)
 					}),
 					i(5341),	-- Spore-covered Tunic
 				},
@@ -1935,7 +1935,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Console Key
-						provider = { "i", 5089 },	-- Console Key
+						provider = { "i", 5089 },	-- Console Key (QI!)
 						coord = { 53.0, 10.6, MAP.THE_BARRENS },
 						cr = 3471,	-- Tinkerer Sniggles
 					}),
@@ -1945,7 +1945,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 901,	-- Samophlange (3/4)
 				providers = {
 					{ "o", 4141 },	-- Control Console
-					{ "i", 5054 },	-- Samophlange
+					{ "i", 5054 },	-- Samophlange (QI!)
 				},
 				coord = { 52.41, 11.60, MAP.THE_BARRENS },
 				lvl = 10,
@@ -1962,19 +1962,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Samophlange Manual
-						provider = { "i", 11149 },	-- Samophlange Manual
+						provider = { "i", 11149 },	-- Samophlange Manual (QI!)
 						cost = {
-							{ "i", 11147, 1 },	-- 1x Samophlange Manual Cover
-							{ "i", 11148, 5 },	-- 5x Samophlange Manual Page
+							{ "i", 11147, 1 },	-- 1x Samophlange Manual Cover (QI!)
+							{ "i", 11148, 5 },	-- 5x Samophlange Manual Page (QI!)
 						},
 					}),
 					i(11854),	-- Samophlange Screwdriver
 					i(11855),	-- Tork Wrench
-					i(11147, {	-- Samophlange Manual Cover
+					i(11147, {	-- Samophlange Manual Cover (QI!)
 						coord = { 60.0, 4.0, MAP.THE_BARRENS },
 						cr = 9336,	-- Boss Copperplug
 					}),
-					i(11148, {	-- Samophlange Manual Page
+					i(11148, {	-- Samophlange Manual Page (QI!)
 						crs = {
 							3283,	-- Venture Co. Enforcer
 							3286,	-- Venture Co. Overseer
@@ -2022,7 +2022,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/1 Serena's Head
-						provider = { "i", 5067 },	-- Serena's Head
+						provider = { "i", 5067 },	-- Serena's Head (QI!)
 						coord = { 39.4, 12.4, MAP.THE_BARRENS },
 						cr = 3452,	-- Serena Bloodfeather
 					}),
@@ -2049,7 +2049,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Imprisoned Felhound Spirit
 						providers = {
-							{ "i", 12648 },	-- Imprisoned Felhound Spirit
+							{ "i", 12648 },	-- Imprisoned Felhound Spirit (QI!)
 							{ "i", 12647 },	-- Felhas Ruby
 						},
 						coords = {
@@ -2073,7 +2073,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Imprisoned Infernal Spirit
 						providers = {
-							{ "i", 12649 },	-- Imprisoned Infernal Spirit
+							{ "i", 12649 },	-- Imprisoned Infernal Spirit (QI!)
 							{ "i", 12646 },	-- Infus Emerald
 						},
 						coord = { 50.0, 73.0, MAP.DESOLACE },
@@ -2088,7 +2088,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
-						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms (QI!)
 					}),
 				},
 			}),
@@ -2170,14 +2170,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Shipment of Boots
 						providers = {
-							{ "i", 5076 },	-- Shipment of Boots
+							{ "i", 5076 },	-- Shipment of Boots (QI!)
 							{ "o", 3767 },	-- Drizzlik's Emporium
 						},
 						coord = { 62.6, 49.7, MAP.THE_BARRENS },
 					}),
 					objective(2, {	-- 0/1 Telescopic Lens
 						providers = {
-							{ "i", 5077 },	-- Telescopic Lens
+							{ "i", 5077 },	-- Telescopic Lens (QI!)
 							{ "o", 3768 },	-- Fragile - Do Not Drop
 						},
 						coord = { 63.6, 49.2, MAP.THE_BARRENS },
@@ -2195,7 +2195,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Stolen Silver
 						providers = {
-							{ "i", 5061 },	-- Stolen Silver
+							{ "i", 5061 },	-- Stolen Silver (QI!)
 							{ "o", 147557 },	-- Stolen Silver
 						},
 						coord = { 58.0, 53.9, MAP.THE_BARRENS },
@@ -2259,7 +2259,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Crossroads' Supply Crates
 						providers = {
-							{ "i", 12708 },	-- Crossroads' Supply Crates
+							{ "i", 12708 },	-- Crossroads' Supply Crates (QI!)
 							{ "o", 175708 },	-- Crossroads' Supply Crates
 						},
 						coord = { 59.5, 24.6, MAP.THE_BARRENS },
@@ -2326,7 +2326,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- Summoned Felhunter slain
 						provider = { "n", 6268 },	-- Summoned Felhunter
-						cost = { { "i", 6999, 1 } },	-- 1x Tome of the Cabal
+						cost = { { "i", 6999, 1 } },	-- 1x Tome of the Cabal (QI!)
 					}),
 					recipe(691),	-- Summon Felhunter
 					i(22244),	-- Box of Souls
@@ -2386,7 +2386,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 3266 },	-- Razormane Defender
 					}),
 					objective(3, {	-- 0/1 Kreenig Snarlsnout's Tusk
-						provider = { "i", 5063 },	-- Kreenig Snarlsnout's Tusk
+						provider = { "i", 5063 },	-- Kreenig Snarlsnout's Tusk (QI!)
 						coord = { 58.6, 27.2, MAP.THE_BARRENS },
 						cr = 3438,	-- Kreenig Snarlsnout
 					}),
@@ -2430,7 +2430,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						coord = { 63.0, 56.6, MAP.THE_BARRENS },
 					}),
 					objective(4, {	-- 0/10 Theramore Medal
-						provider = { "i", 5078 },	-- Theramore Medal
+						provider = { "i", 5078 },	-- Theramore Medal (QI!)
 						crs = {
 							3385,	-- Theramore Marine
 							3386,	-- Theramore Preserver
@@ -2484,14 +2484,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 3391,	-- Gazlowe
 				coord = { 62.68, 36.24, MAP.THE_BARRENS },
 				lvl = 9,
-				qi = 5080,	-- Gazlowe's Ledger
+				qi = 5080,	-- Gazlowe's Ledger (QI!)
 			}),
 			q(892, {	-- The Missing Shipment (2/2)
 				sourceQuest = 890,	-- The Missing Shipment (1/2)
 				qg = 3453,	-- Wharfmaster Dizzywig
 				coord = { 63.35, 38.45, MAP.THE_BARRENS },
 				lvl = 9,
-				qi = 5080,	-- Gazlowe's Ledger
+				qi = 5080,	-- Gazlowe's Ledger (QI!)
 			}),
 			q(3513, {	-- The Runed Scroll
 				provider = { "i", 10621 },	-- Runed Scroll
@@ -2507,7 +2507,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- Test the Dried Seeds
 						providers = {
-							{ "i", 5068 },	-- Dried Seeds
+							{ "i", 5068 },	-- Dried Seeds (QI!)
 							{ "o", 3737 },	-- Bubbling Fissure
 						},
 						coord = { 55.0, 42.0, MAP.THE_BARRENS },
@@ -2522,7 +2522,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Tear of the Moons
 						providers = {
-							{ "i", 5038 },	-- Tear of the Moons
+							{ "i", 5038 },	-- Tear of the Moons (QI!)
 							{ "o", 3646 },	-- General Twinbraid's Strongbox
 						},
 						coord = { 49.1, 84.2, MAP.THE_BARRENS },
@@ -2546,7 +2546,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/4 Zhevra Hooves
-						provider = { "i", 5086 },	-- Zhevra Hooves
+						provider = { "i", 5086 },	-- Zhevra Hooves (QI!)
 						crs = {
 							5831,	-- Swiftmane
 							3426,	-- Zhevra Charger
@@ -2597,14 +2597,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- 0/1 Moldy Tome
 						providers = {
-							{ "i", 6931 },	-- Moldy Tome
+							{ "i", 6931 },	-- Moldy Tome (QI!)
 							{ "o", 92013 },	-- Tome of the Cabal
 						},
 						coord = { 27.8, 72.9, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(2, {	-- 0/1 Tattered Manuscript
 						providers = {
-							{ "i", 6997 },	-- Tattered Manuscript
+							{ "i", 6997 },	-- Tattered Manuscript (QI!)
 							{ "o", 92423 },	-- Damaged Chest
 						},
 						coord = { 43.5, 32.7, MAP.THOUSAND_NEEDLES },
@@ -2616,20 +2616,20 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					sourceQuest = 1802,	-- Tome of the Cabal (2/3) (A)
 					qg = 6294,	-- Krom Stoutarm
 					coord = { 74.4, 9.4, MAP.IRONFORGE },
-					qi = 7006,	-- Reconstructed Tome
+					qi = 7006,	-- Reconstructed Tome (QI!)
 				}),
 				hordeQuestData = q(1805, {	-- Tome of the Cabal (3/3) (H)
 					sourceQuest = 1803,	-- Tome of the Cabal (2/3) (H)
 					qg = 6293,	-- Jorah Annison
 					coord = { 76.6, 36.8, MAP.UNDERCITY },
-					qi = 7006,	-- Reconstructed Tome
+					qi = 7006,	-- Reconstructed Tome (QI!)
 				}),
 				maps = { MAP.WETLANDS },
 				classes = { WARLOCK },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/3 Rod of Channeling
-						provider = { "i", 6930 },	-- Rod of Channeling
+						provider = { "i", 6930 },	-- Rod of Channeling (QI!)
 						crs = {
 							1057,	-- Dragonmaw Bonewarder
 							1038,	-- Dragonmaw Shadowwarder
@@ -2646,7 +2646,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Twitching Antenna
-						provider = { "i", 7119 },	-- Twitching Antenna
+						provider = { "i", 7119 },	-- Twitching Antenna (QI!)
 						crs = {
 							3250,	-- Silithid Creeper
 							3251,	-- Silithid Grub
@@ -2682,7 +2682,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 99-Year-Old Port
-						provider = { "i", 5334 },	-- 99-Year-Old Port
+						provider = { "i", 5334 },	-- 99-Year-Old Port (QI!)
 						coord = { 45.0, 35.2, MAP.THE_BARRENS },
 						cr = 3655,	-- Mad Magglish
 					}),
@@ -2730,7 +2730,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Verog's Head
-						provider = { "i", 5023 },	-- Verog's Head
+						provider = { "i", 5023 },	-- Verog's Head (QI!)
 						coord = { 53.0, 41.6, MAP.THE_BARRENS },
 						cr = 3395,	-- Verog the Dervish
 					}),
@@ -2788,7 +2788,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Baron Longshore's Head
-						provider = { "i", 5084 },	-- Baron Longshore's Head
+						provider = { "i", 5084 },	-- Baron Longshore's Head (QI!)
 						coord = { 62.6, 49.8, MAP.THE_BARRENS },
 						cr = 3467,	-- Baron Longshore <Southsea Freebooters>
 					}),
@@ -2801,7 +2801,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Bruuz's Dorsal Fin
-						provider = { "i", 253710 },	-- Bruuz's Dorsal Fin
+						provider = { "i", 253710 },	-- Bruuz's Dorsal Fin (QI!)
 						coord = { 64.7, 39.0, MAP.THE_BARRENS },
 						cr = 209797,	-- Bruuz
 					}),
@@ -2851,14 +2851,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 11142,	-- Broken Samophlange
+				qi = 11142,	-- Broken Samophlange (QI!)
 			}),
 			q(1492, {	-- Wharfmaster Dizzywig
 				qg = 3390,	-- Apothecary Helbrim
 				coord = { 51.44, 30.15, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 9,
-				qi = 6462,	-- Secure Crate
+				qi = 6462,	-- Secure Crate (QI!)
 			}),
 			q(5044, {	-- Wisdom of Agamaggan
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan

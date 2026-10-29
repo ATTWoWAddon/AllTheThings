@@ -20,7 +20,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						qi = 282423,	-- Consecrated Scroll (QI!)
+						qi = 282423,	-- Consecrated Scroll (QI!) (TODO: verify Quest Item)
 						groups = {
 							i(6060),	-- Flax Bracers
 							i(2173),	-- Old Leather Belt
@@ -44,7 +44,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						qg = 6784,	-- Calvin Montague
 						coord = { 38.2, 56.6, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
-						qi = 7628,	-- Nondescript Letter
+						qi = 7628,	-- Nondescript Letter (QI!)
 						groups = {
 							objective(1, {	-- Deliver the Nondescript Letter to Innkeeper Renee
 								provider = { "n", 5688 },	-- Innkeeper Renee <Innkeeper>
@@ -93,7 +93,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { ROGUE },
-						qi = 9559,	-- Encrypted Scroll
+						qi = 9559,	-- Encrypted Scroll (QI!)
 					}),
 					q(3098, {	-- Glyphic Scroll
 						sourceQuest = 364,	-- The Mindless Ones
@@ -101,7 +101,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { MAGE },
-						qi = 9574,	-- Glyphic Scroll
+						qi = 9574,	-- Glyphic Scroll (QI!)
 					}),
 					q(3097, {	-- Hallowed Scroll
 						sourceQuest = 364,	-- The Mindless Ones
@@ -109,7 +109,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { PRIEST },
-						qi = 9569,	-- Hallowed Scroll
+						qi = 9569,	-- Hallowed Scroll (QI!)
 					}),
 					q(5651, {	-- In Favor of Darkness
 						qg = 2123,	-- Dark Cleric Duesten <Priest Trainer>
@@ -127,7 +127,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						groups = {
 							objective(1, {	-- Samuel's Remains Buried
 								providers = {
-									{ "i", 16333 },	-- Samuel's Remains
+									{ "i", 16333 },	-- Samuel's Remains (QI!)
 									{ "o", 178090 },	-- Marla's Grave
 								},
 								coords = {
@@ -172,7 +172,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						classes = { WARLOCK },
 						groups = {
 							objective(1, {	-- 0/3 Rattlecage Skull
-								provider = { "i", 6281 },	-- Rattlecage Skull
+								provider = { "i", 6281 },	-- Rattlecage Skull (QI!)
 								cr = 1890,	-- Rattlecage Skeleton
 							}),
 							recipe(688),	-- Summon Imp
@@ -239,7 +239,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						groups = {
 							objective(1, {	-- 0/6 Scavenged Goods
 								providers = {
-									{ "i", 11127 },	-- Scavenged Goods
+									{ "i", 11127 },	-- Scavenged Goods (QI!)
 									{ "o", 164662 },	-- Equipment Boxes
 								},
 							}),
@@ -254,7 +254,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { WARRIOR },
-						qi = 9546,	-- Simple Scroll
+						qi = 9546,	-- Simple Scroll (QI!)
 					}),
 					q(3099, {	-- Tainted Scroll
 						sourceQuest = 364,	-- The Mindless Ones
@@ -262,7 +262,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 30.8, 66.2, MAP.TIRISFAL_GLADES },
 						races = { UNDEAD },
 						classes = { WARLOCK },
-						qi = 9578,	-- Tainted Scroll
+						qi = 9578,	-- Tainted Scroll (QI!)
 					}),
 					q(96656, {	-- The Adventurer [Tirisfal Glades]
 						altQuests = {
@@ -293,14 +293,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						lvl = 2,
 						groups = {
 							objective(1, {	-- 0/6 Scavenger Paw
-								provider = { "i", 3265 },	-- Scavenger Paw
+								provider = { "i", 3265 },	-- Scavenger Paw (QI!)
 								crs = {
 									1509,	-- Ragged Scavenger
 									1508,	-- Young Scavenger
 								},
 							}),
 							objective(2, {	-- 0/6 Duskbat Wing
-								provider = { "i", 3264 },	-- Duskbat Wing
+								provider = { "i", 3264 },	-- Duskbat Wing (QI!)
 								crs = {
 									1512,	-- Duskbat
 									1553,	-- Greater Duskbat
@@ -335,7 +335,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						lvl = 2,
 						groups = {
 							objective(1, {	-- 0/1 Scarlet Crusade Documents
-								provider = { "i", 2885 },	-- Scarlet Crusade Documents
+								provider = { "i", 2885 },	-- Scarlet Crusade Documents (QI!)
 								coord = { 36.6, 68.6, MAP.TIRISFAL_GLADES },
 								cr = 1667,	-- Meven Korgal
 							}),
@@ -351,7 +351,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						lvl = 2,
 						groups = {
 							objective(1, {	-- 0/12 Scarlet Armband
-								provider = { "i", 3266 },	-- Scarlet Armband
+								provider = { "i", 3266 },	-- Scarlet Armband (QI!)
 								crs = {
 									1507,	-- Scarlet Initiate
 									1506,	-- Scarlet Convert
@@ -370,7 +370,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 32.2, 66.0, MAP.TIRISFAL_GLADES },
 						races = HORDE_ONLY,
 						lvl = 2,
-						qi = 2885,	-- Scarlet Crusade Documents
+						qi = 2885,	-- Scarlet Crusade Documents (QI!)
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -541,7 +541,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			q(361, {	-- A Letter Undelivered
 				providers = {
 					{ "i", 2839 },	-- A Letter to Yvette
-					{ "i", 2837 },	-- Thurman's Letter
+					{ "i", 2837 },	-- Thurman's Letter (QI!)
 				},
 				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
@@ -554,7 +554,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/5 Darkhound Blood
-						provider = { "i", 2858 },	-- Darkhound Blood
+						provider = { "i", 2858 },	-- Darkhound Blood (QI!)
 						crs = {
 							1548,	-- Cursed Darkhound
 							1547,	-- Decrepit Darkhound
@@ -571,7 +571,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/5 Vile Fin Scale
-						provider = { "i", 2859 },	-- Vile Fin Scale
+						provider = { "i", 2859 },	-- Vile Fin Scale (QI!)
 						crs = {
 							1544,	-- Vile Fin Minor Oracle
 							1545,	-- Vile Fin Muckdweller
@@ -589,7 +589,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/4 Vicious Night Web Spider Venom
-						provider = { "i", 2872 },	-- Vicious Night Web Spider Venom
+						provider = { "i", 2872 },	-- Vicious Night Web Spider Venom (QI!)
 						cr = 1555,	-- Vicious Night Web Spider
 					}),
 					i(3442),	-- Apprentice Sash
@@ -601,7 +601,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
-				qi = 3460,	-- Johaan's Special Drink
+				qi = 3460,	-- Johaan's Special Drink (QI!)
 			}),
 			q(404, {	-- A Putrid Task
 				qg = 1496,	-- Deathguard Dillinger
@@ -610,7 +610,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/7 Putrid Claw
-						provider = { "i", 2855 },	-- Putrid Claw
+						provider = { "i", 2855 },	-- Putrid Claw (QI!)
 						crs = {
 							1526,	-- Ravaged Corpse
 							1525,	-- Rotting Dead
@@ -641,7 +641,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				classes = { PALADIN },
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 270436,	-- Rudolph Gelhardt's Head (QI!)
+				qi = 270436,	-- Rudolph Gelhardt's Head (QI!) (TODO: verify Quest Item)
 			}),
 			q(1821, {	-- Agamand Heirlooms
 				sourceQuest = 1820,	-- Speak with Coleman
@@ -653,28 +653,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					objective(1, {	-- 0/1 Agamand Family Axe
 						providers = {
-							{ "i", 7567 },	-- Agamand Family Axe
+							{ "i", 7567 },	-- Agamand Family Axe (QI!)
 							{ "o", 105170 },	-- Agamand Weapon Rack
 						},
 						coord = { 51.7, 25.7, MAP.TIRISFAL_GLADES },
 					}),
 					objective(2, {	-- 0/1 Agamand Family Dagger
 						providers = {
-							{ "i", 7568 },	-- Agamand Family Dagger
+							{ "i", 7568 },	-- Agamand Family Dagger (QI!)
 							{ "o", 105172 },	-- Agamand Weapon Rack
 						},
 						coord = { 52.6, 26.9, MAP.TIRISFAL_GLADES },
 					}),
 					objective(3, {	-- 0/1 Agamand Family Mace
 						providers = {
-							{ "i", 7569 },	-- Agamand Family Mace
+							{ "i", 7569 },	-- Agamand Family Mace (QI!)
 							{ "o", 105171 },	-- Agamand Weapon Rack
 						},
 						coord = { 51.9, 27.1, MAP.TIRISFAL_GLADES },
 					}),
 					objective(4, {	-- 0/1 Agamand Family Sword
 						providers = {
-							{ "i", 7566 },	-- Agamand Family Sword
+							{ "i", 7566 },	-- Agamand Family Sword (QI!)
 							{ "o", 105169 },	-- Agamand Weapon Rack
 						},
 						coord = { 52.6, 25.9, MAP.TIRISFAL_GLADES },
@@ -1036,17 +1036,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/1 Gregor's Remains
-						provider = { "i", 2829 },	-- Gregor's Remains
+						provider = { "i", 2829 },	-- Gregor's Remains (QI!)
 						coord = { 46.8, 29.6, MAP.TIRISFAL_GLADES },
 						cr = 1654,	-- Gregor Agamand
 					}),
 					objective(2, {	-- 0/1 Nissa's Remains
-						provider = { "i", 2828 },	-- Nissa's Remains
+						provider = { "i", 2828 },	-- Nissa's Remains (QI!)
 						coord = { 49.6, 36.2, MAP.TIRISFAL_GLADES },
 						cr = 1655,	-- Nissa Agamand
 					}),
 					objective(3, {	-- 0/1 Thurman's Remains
-						provider = { "i", 2830 },	-- Thurman's Remains
+						provider = { "i", 2830 },	-- Thurman's Remains (QI!)
 						coord = { 44.0, 33.4, MAP.TIRISFAL_GLADES },
 						cr = 1656,	-- Thurman Agamand
 					}),
@@ -1057,7 +1057,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 9,
-				qi = 3238,	-- Johaan's Findings
+				qi = 3238,	-- Johaan's Findings (QI!)
 			}),
 			q(91858, {	-- Diplomatic Incident
 				qg = 246378,	-- Danitha Morr
@@ -1125,7 +1125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					objective(1, {	-- 0/10 Tirisfal Pumpkin
 						providers = {
-							{ "i", 2846 },	-- Tirisfal Pumpkin
+							{ "i", 2846 },	-- Tirisfal Pumpkin (QI!)
 							{ "o", 375 },	-- Tirisfal Pumpkin
 						},
 						coords = {
@@ -1141,7 +1141,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 4,
-				qi = 3035,	-- Laced Pumpkin
+				qi = 3035,	-- Laced Pumpkin (QI!)
 			}),
 			q(359, {	-- Forsaken Duties
 				qg = 1499,	-- Magistrate Sevren
@@ -1172,7 +1172,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					objective(1, {	-- 0/3 Gloom Weed
 						providers = {
-							{ "i", 12737 },	-- Gloom Weed
+							{ "i", 12737 },	-- Gloom Weed (QI!)
 							{ "o", 175566 },	-- Gloom Weed
 						},
 						coords = {
@@ -1195,7 +1195,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						provider = { "n", 1675 },	-- Rot Hide Mongrel
 					}),
 					objective(3, {	-- 0/8 Embalming Ichor
-						provider = { "i", 2834 },	-- Embalming Ichor
+						provider = { "i", 2834 },	-- Embalming Ichor (QI!)
 						crs = {
 							1674,	-- Rot Hide Gnoll
 							1941,	-- Rot Hide Graverobber
@@ -1357,7 +1357,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/10 Scarlet Insignia Ring
-						provider = { "i", 2875 },	-- Scarlet Insignia Ring
+						provider = { "i", 2875 },	-- Scarlet Insignia Ring (QI!)
 						crs = {
 							1665,	-- Captain Melrache
 							1662,	-- Captain Perrine
@@ -1390,12 +1390,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						lvl = 5,
 						repeatable = true,
 						groups = {
-							i(3080),	-- Candle of Beckoning
+							i(3080),	-- Candle of Beckoning (QI!)
 						},
 					}),
 					q(410, {	-- The Dormant Shade
 						providers = {
-							{ "i", 3080 },	-- Candle of Beckoning
+							{ "i", 3080 },	-- Candle of Beckoning (QI!)
 							{ "o", 1557 },	-- Lillith's Dinner Table
 						},
 						coord = { 66.6, 44.8, MAP.TIRISFAL_GLADES },
@@ -1470,7 +1470,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 84.2, 17.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 5,
-				qi = 3016,	-- Gunther's Spellbook
+				qi = 3016,	-- Gunther's Spellbook (QI!)
 			}),
 			q(360, {	-- Return to the Magistrate
 				sourceQuest = 359,	-- Forsaken Duties
@@ -1567,7 +1567,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Duskbat Pelt
-						provider = { "i", 2876 },	-- Duskbat Pelt
+						provider = { "i", 2876 },	-- Duskbat Pelt (QI!)
 						crs = {
 							1553,	-- Greater Duskbat
 							1554,	-- Vampiric Duskbat
@@ -1608,7 +1608,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						provider = { "n", 1530 },	-- Rotting Ancestor
 					}),
 					objective(3, {	-- 0/1 Dargol's Skull
-						provider = { "i", 3082 },	-- Dargol's Skull
+						provider = { "i", 3082 },	-- Dargol's Skull (QI!)
 						coord = { 52.6, 26.4, MAP.TIRISFAL_GLADES },
 						cr = 1658,	-- Captain Dargol
 					}),
@@ -1639,7 +1639,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/1 Devlin's Remains
-						provider = { "i", 2831 },	-- Devlin's Remains
+						provider = { "i", 2831 },	-- Devlin's Remains (QI!)
 						coord = { 47.6, 40.2, MAP.TIRISFAL_GLADES },
 						cr = 1657,	-- Devlin Agamand
 					}),
@@ -1669,14 +1669,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/5 Notched Rib
-						provider = { "i", 3162 },	-- Notched Rib
+						provider = { "i", 3162 },	-- Notched Rib (QI!)
 						crs = {
 							1523,	-- Cracked Skull Soldier
 							1520,	-- Rattlecage Soldier
 						},
 					}),
 					objective(2, {	-- 0/3 Blackened Skull
-						provider = { "i", 3163 },	-- Blackened Skull
+						provider = { "i", 3163 },	-- Blackened Skull (QI!)
 						cr = 1522,	-- Darkeye Bonecaster
 					}),
 					i(3447),	-- Cryptwalker Boots
@@ -1704,7 +1704,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 61.2, 50.8, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 5,
-				qi = 3017,	-- Sevren's Orders
+				qi = 3017,	-- Sevren's Orders (QI!)
 			}),
 			q(411, {	-- The Prodigal Lich Returns
 				sourceQuest = 409,	-- Proving Allegiance
@@ -1712,7 +1712,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 68.2, 42.0, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 5,
-				qi = 3081,	-- Nether Gem
+				qi = 3081,	-- Nether Gem (QI!)
 				groups = {
 					i(5940),	-- Bone Buckler
 				},
@@ -1807,7 +1807,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/1 Maggot Eye's Paw
-						provider = { "i", 3635 },	-- Maggot Eye's Paw
+						provider = { "i", 3635 },	-- Maggot Eye's Paw (QI!)
 						coord = { 58.6, 31.6, MAP.TIRISFAL_GLADES },
 						cr = 1753,	-- Maggot Eye
 					}),
@@ -2010,8 +2010,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				groups = {
-					i(13320),	-- Arcane Quickener
-					i(13370),	-- Vitreous Focuser
+					i(13320),	-- Arcane Quickener (QI!)
+					i(13370),	-- Vitreous Focuser (QI!)
 				},
 			}),
 			n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>

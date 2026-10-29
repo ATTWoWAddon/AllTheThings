@@ -200,7 +200,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						races = ALLIANCE_ONLY,
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						qis = {
-							247857,	-- Nibbled-On Book
+							247857,	-- Nibbled-On Book (QI!)
 						},
 					}),
 					q(91743, {	-- Rascally Rodents
@@ -211,7 +211,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/8 Stolen Book
-								provider = { "i", 247839 },	-- Stolen Book
+								provider = { "i", 247839 },	-- Stolen Book (QI!)
 								crs = {
 									6,	-- Kobold Vermin
 									257,	-- Kobold Worker
@@ -316,7 +316,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/1 Sack of "Picture" Books
-								provider = { "i", 247886 },	-- Sack of "Picture" Books
+								provider = { "i", 247886 },	-- Sack of "Picture" Books (QI!)
 								coord = { 49.0, 29.0, MAP.ELWYNN_FOREST },
 								cr = 248362,	-- Shinyfinder Narf
 							}),
@@ -497,7 +497,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/7 Half-Eaten Fish
 						providers = {
-							{ "i", 286205 },	-- Half-Eaten Fish
+							{ "i", 286205 },	-- Half-Eaten Fish (QI!)
 							{ "o", 694772 },	-- Fishing Trap
 						},
 						coord = { 49.9, 66.7, MAP.ELWYNN_FOREST },
@@ -545,7 +545,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/18 Duskweed Petal
 						providers = {
-							{ "i", 286214 },	-- Duskweed Petal
+							{ "i", 286214 },	-- Duskweed Petal (QI!)
 							{ "o", 694855 },	-- Overgrown Duskweed
 						},
 						coords = {
@@ -555,7 +555,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					objective(2, {	-- 0/6 Vial of Animal Blood
-						providers = { "i", 286215 },	-- Vial of Animal Blood
+						providers = { "i", 286215 },	-- Vial of Animal Blood (QI!)
 						coords = {
 							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
 							{ 42.4, 73.0, MAP.ELWYNN_FOREST },
@@ -606,12 +606,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				qi = 279935,	-- Book Bag (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Picture Book: Fun with Elementals
-						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals
+						provider = { "i", 248002 },	-- Picture Book: Fun with Elementals (QI!)
 						coord = { 41.6, 80.0, MAP.ELWYNN_FOREST },
 						cr = 248464,	-- Nimsy <Apprentice Geosculptor>
 					}),
 					objective(2, {	-- 0/6 Lost Book
-						provider = { "i", 248001 },	-- Lost Book
+						provider = { "i", 248001 },	-- Lost Book (QI!)
 						coords = {
 							{ 41.6, 80.0, MAP.ELWYNN_FOREST },
 							{ 61.4, 52.8, MAP.ELWYNN_FOREST },
@@ -633,7 +633,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/6 Shiny Junk
 						providers = {
-							{ "i", 286209 },	-- Shiny Junk
+							{ "i", 286209 },	-- Shiny Junk (QI!)
 							{ "o", 694785 },	-- Junk Pile
 						},
 						coord = { 54.4, 66.9, MAP.ELWYNN_FOREST },
@@ -1001,7 +1001,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ "o", 85563 },	-- Dead-tooth's Strongbox
 						},
 						coord = { 89.2, 80.6, MAP.ELWYNN_FOREST },
-						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key
+						cost = { { "i", 6783, 1 } },	-- 1x Dead-tooth's Key (QI!)
 						cr = 6093,	-- Dead-Tooth Jack
 					}),
 					i(6979),	-- Haggard's Axe
@@ -1089,21 +1089,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Waterlogged Axe
 						providers = {
-							{ "i", 247817 },	-- Waterlogged Axe
+							{ "i", 247817 },	-- Waterlogged Axe (QI!)
 							{ "o", 562105 },	-- Waterlogged Axe
 						},
 						coord = { 76.7, 82.5, MAP.ELWYNN_FOREST },
 					}),
 					objective(2, {	-- 0/1 Waterlogged Saw
 						providers = {
-							{ "i", 247813 },	-- Waterlogged Saw
+							{ "i", 247813 },	-- Waterlogged Saw (QI!)
 							{ "o", 562103 },	-- Waterlogged Saw
 						},
 						coord = { 74.3, 76.4, MAP.ELWYNN_FOREST },
 					}),
 					objective(3, {	-- 0/1 Waterlogged Toolbox
 						providers = {
-							{ "i", 247818 },	-- Waterlogged Toolbox
+							{ "i", 247818 },	-- Waterlogged Toolbox (QI!)
 							{ "o", 562106 },	-- Waterlogged Toolbox
 						},
 						coord = { 77.3, 86.8, MAP.ELWYNN_FOREST },
@@ -1209,7 +1209,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/4 Mining Tools
 						providers = {
-							{ "i", 247816 },	-- Mining Tools
+							{ "i", 247816 },	-- Mining Tools (QI!)
 							{ "o", 562114 },	-- Mining Tools
 						},
 						coord = { 60.8, 52.6, MAP.ELWYNN_FOREST },
@@ -1272,7 +1272,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/4 Chunk of Boar Meat
-						provider = { "i", 769 },	-- Chunk of Boar Meat (QI!)
+						provider = { "i", 769 },	-- Chunk of Boar Meat (QI!) (TODO: verify Quest Item)
 					}),
 				},
 			}),
@@ -1314,12 +1314,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Geomancy for Curious Young Wizards
-						provider = { "i", 248003 },	-- Geomancy for Curious Young Wizards
+						provider = { "i", 248003 },	-- Geomancy for Curious Young Wizards (QI!)
 						coord = { 60.6, 49.8, MAP.ELWYNN_FOREST },
 						cr = 248474,	-- Geosculptor Yip
 					}),
 					objective(2, {	-- 0/1 Arcane Explainer: Magical Stuff in Simple Words
-						provider = { "i", 248004 },	-- Arcane Explainer: Magical Stuff in Simple Words
+						provider = { "i", 248004 },	-- Arcane Explainer: Magical Stuff in Simple Words (QI!)
 						coord = { 61.8, 47.8, MAP.ELWYNN_FOREST },
 						cr = 471,	-- Mother Fang
 					}),
@@ -1413,7 +1413,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Rough Wolf Pelt
-						provider = { "i", 247877 },	-- Rough Wolf Pelt
+						provider = { "i", 247877 },	-- Rough Wolf Pelt (QI!)
 						crs = {
 							1922,	-- Gray Forest Wolf
 							118,	-- Prowler
@@ -1496,7 +1496,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				groups = {
 					objective(1, {	-- 0/5 Stolen Enchanting Supplies
 						providers = {
-							{ "i", 247805 },	-- Stolen Enchanting Supplies
+							{ "i", 247805 },	-- Stolen Enchanting Supplies (QI!)
 							{ "o", 561159 },	-- Stolen Enchanting Supplies
 						},
 						coord = { 64.9, 41.1, MAP.ELWYNN_FOREST },
@@ -1793,7 +1793,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(1939),	-- Skin of Sweet Rum
+					i(1939),	-- Skin of Sweet Rum (QI!)
 				},
 			}),
 			n(54, {	-- Corina Steele <Weaponsmith>

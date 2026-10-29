@@ -18,7 +18,7 @@ instanceroot(78791, {	-- The Drowned City
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Ancient Gurubashi Idol
-						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
+						provider = { "i", 276894 },	-- Ancient Gurubashi Idol (QI!)
 					}),
 				},
 			}),
@@ -28,7 +28,7 @@ instanceroot(78791, {	-- The Drowned City
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 I'lalai Fetish
-						provider = { "i", 270343 },	-- I'lalai Fetish
+						provider = { "i", 270343 },	-- I'lalai Fetish (QI!)
 					}),
 				},
 			}),
@@ -38,16 +38,16 @@ instanceroot(78791, {	-- The Drowned City
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The First Tablet of I'lalai
-						provider = { "i", 270308 },	-- The First Tablet of I'lalai
+						provider = { "i", 270308 },	-- The First Tablet of I'lalai (QI!)
 					}),
 					objective(2, {	-- 0/1 The Second Tablet of I'lalai
-						provider = { "i", 270309 },	-- The Second Tablet of I'lalai
+						provider = { "i", 270309 },	-- The Second Tablet of I'lalai (QI!)
 					}),
 					objective(3, {	-- 0/1 The Third Tablet of I'lalai
-						provider = { "i", 270310 },	-- The Third Tablet of I'lalai
+						provider = { "i", 270310 },	-- The Third Tablet of I'lalai (QI!)
 					}),
 					objective(4, {	-- 0/1 The Fourth Tablet of I'lalai
-						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai
+						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai (QI!)
 					}),
 				},
 			}),
@@ -57,16 +57,16 @@ instanceroot(78791, {	-- The Drowned City
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The First Tablet of I'lalai
-						provider = { "i", 270308 },	-- The First Tablet of I'lalai
+						provider = { "i", 270308 },	-- The First Tablet of I'lalai (QI!)
 					}),
 					objective(2, {	-- 0/1 The Second Tablet of I'lalai
-						provider = { "i", 270309 },	-- The Second Tablet of I'lalai
+						provider = { "i", 270309 },	-- The Second Tablet of I'lalai (QI!)
 					}),
 					objective(3, {	-- 0/1 The Third Tablet of I'lalai
-						provider = { "i", 270310 },	-- The Third Tablet of I'lalai
+						provider = { "i", 270310 },	-- The Third Tablet of I'lalai (QI!)
 					}),
 					objective(4, {	-- 0/1 The Fourth Tablet of I'lalai
-						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai
+						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai (QI!)
 					}),
 				},
 			}),

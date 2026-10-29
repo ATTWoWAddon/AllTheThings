@@ -17,7 +17,7 @@ instanceroot(63, {	-- Deadmines
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/4 Miners' Union Card
-						provider = { "i", 1894 },	-- Miners' Union Card
+						provider = { "i", 1894 },	-- Miners' Union Card (QI!)
 					}),
 					i(2036),	-- Dusty Mining Gloves
 					i(2037),	-- Tunneler's Boots
@@ -50,7 +50,7 @@ instanceroot(63, {	-- Deadmines
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Thistlenettle's Badge
-						provider = { "i", 1875 },	-- Thistlenettle's Badge
+						provider = { "i", 1875 },	-- Thistlenettle's Badge (QI!)
 					}),
 					i(1893),	-- Miner's Revenge
 					i(270012, {	-- Miner's Workgloves
@@ -72,7 +72,7 @@ instanceroot(63, {	-- Deadmines
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/10 Red Silk Bandana
-						provider = { "i", 915 },	-- Red Silk Bandana
+						provider = { "i", 915 },	-- Red Silk Bandana (QI!)
 						description = "Can also drop from any Defias mob in the Deadmines.",
 						crs = {
 							619,	-- Defias Conjurer
@@ -96,7 +96,7 @@ instanceroot(63, {	-- Deadmines
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Head of VanCleef
-						provider = { "i", 3637 },	-- Head of VanCleef
+						provider = { "i", 3637 },	-- Head of VanCleef (QI!)
 					}),
 					i(6087),	-- Chausses of Westfall
 					i(2042),	-- Staff of Westfall
@@ -119,7 +119,7 @@ instanceroot(63, {	-- Deadmines
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Gnoam Sprecklesprocket
-						provider = { "i", 7365 },	-- Gnoam Sprecklesprocket
+						provider = { "i", 7365 },	-- Gnoam Sprecklesprocket (QI!)
 					}),
 					i(7607),	-- Sable Wand
 					i(7606),	-- Polar Gauntlets
@@ -145,7 +145,7 @@ instanceroot(63, {	-- Deadmines
 				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
 				coord = { 42.2, 82.6, MAP.WESTFALL },
 				groups = {
-					i(1875),	-- Thistlenettle's Badge
+					i(1875),	-- Thistlenettle's Badge (QI!)
 					i(2167),	-- Foreman's Gloves
 					i(2166),	-- Foreman's Leggings
 					i(2168),	-- Foreman's Boots [Classic] / Corpse Rompers [CATA+]
@@ -203,7 +203,7 @@ instanceroot(63, {	-- Deadmines
 			i(1944, {	-- Metalworking Gloves
 				cr = 1731,	-- Goblin Craftsman
 			}),
-			i(1894, {	-- Miners' Union Card
+			i(1894, {	-- Miners' Union Card (QI!)
 				crs = {
 					623,	-- Skeletal Miner
 					625,	-- Undead Dynamiter
@@ -222,7 +222,7 @@ instanceroot(63, {	-- Deadmines
 			i(7997, {	-- Red Defias Mask
 				description = "Can drop in Westfall and The Deadmines.",
 			}),
-			i(915),	-- Red Silk Bandana
+			i(915),	-- Red Silk Bandana (QI!)
 			i(1929, {	-- Silk-threaded Trousers
 				crs = {
 					1729,	-- Defias Evoker
@@ -260,7 +260,7 @@ instanceroot(63, {	-- Deadmines
 			}),
 		}),
 		n(642, {	-- Sneed's Shredder <Lumbermaster>
-			i(7365),	-- Gnoam Sprecklesprocket
+			i(7365),	-- Gnoam Sprecklesprocket (QI!)
 			i(2169),	-- Buzzer Blade
 			i(1937),	-- Buzz Saw
 			i(285292, {	-- Dull Sawblade
@@ -302,7 +302,7 @@ instanceroot(63, {	-- Deadmines
 		}),
 		n(639, {	-- Edwin VanCleef <Defias Kingpin>
 			i(2874),	-- An Unsent Letter
-			i(3637),	-- Head of VanCleef
+			i(3637),	-- Head of VanCleef (QI!)
 			i(5191),	-- Cruel Barb
 			i(5193),	-- Cape of the Brotherhood
 			i(5202),	-- Corsair's Overshirt

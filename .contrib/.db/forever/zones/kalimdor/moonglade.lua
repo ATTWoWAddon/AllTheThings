@@ -125,7 +125,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
 						coord = { 43.0, 45.0, MAP.DARKSHORE },
-						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust
+						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust (QI!)
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -158,7 +158,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
 						coord = { 42.0, 60.0, MAP.THE_BARRENS },
-						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust
+						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust (QI!)
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -525,9 +525,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
-						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
+						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler (QI!)
 						coord = { 54.9, 33.3, MAP.DARKSHORE },
-						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
+						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler (QI!)
 					}),
 				},
 			}),
@@ -541,9 +541,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Filled Dreadmist Peak Sampler
-						provider = { "i", 15843 },	-- Filled Dreadmist Peak Sampler
+						provider = { "i", 15843 },	-- Filled Dreadmist Peak Sampler (QI!)
 						coord = { 47.0, 18.0, MAP.THE_BARRENS },
-						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Peak Sampler
+						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Peak Sampler (QI!)
 					}),
 				},
 			}),
@@ -576,7 +576,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Shrine Bauble
-						provider = { "i", 15877 },	-- Shrine Bauble
+						provider = { "i", 15877 },	-- Shrine Bauble (QI!)
 						coords = {
 							{ 54.1, 50.1, MAP.MOONGLADE },
 							{ 36.4, 40.2, MAP.MOONGLADE },
@@ -597,21 +597,21 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Pendant of the Sea Lion
-						provider = { "i", 15885 },	-- Pendant of the Sea Lion
+						provider = { "i", 15885 },	-- Pendant of the Sea Lion (QI!)
 						cost = {
-							{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
-							{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility
+							{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance (QI!)
+							{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility (QI!)
 						},
 					}),
 					{
-						itemID = 15882,	-- Half Pendant of Aquatic Endurance
+						itemID = 15882,	-- Half Pendant of Aquatic Endurance (QI!)
 						coords = {
 							{ 17.9, 33.0, MAP.WESTFALL },
 							{ 29.6, 29.5, MAP.SILVERPINE_FOREST },
 						},
 					},
 					{
-						itemID = 15883,	-- Half Pendant of Aquatic Agility
+						itemID = 15883,	-- Half Pendant of Aquatic Agility (QI!)
 						coords = {
 							{ 48.9, 11.3, MAP.DARKSHORE },
 							{ 56.7, 8.3, MAP.THE_BARRENS },
@@ -643,7 +643,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				qg = 11801,	-- Rabine Saturna
 				coord = { 51.7, 45.1, MAP.MOONGLADE },
 				lvl = 54,
-				qi = 17355,	-- Rabine's Letter
+				qi = 17355,	-- Rabine's Letter (QI!)
 			}),
 		}),
 		n(VENDORS, {

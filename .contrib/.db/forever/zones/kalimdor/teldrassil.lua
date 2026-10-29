@@ -37,8 +37,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/1 Filled Crystal Phial
 								providers = {
-									{ "i", 5184 },	-- Filled Crystal Phial
-									{ "i", 5185 },	-- Crystal Phial
+									{ "i", 5184 },	-- Filled Crystal Phial (QI!)
+									{ "i", 5185 },	-- Crystal Phial (QI!)
 								},
 								coord = { 59.94, 33.07, MAP.TELDRASSIL },
 							}),
@@ -49,14 +49,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						qg = 3514,	-- Tenaron Stormgrip
 						coord = { 59.0, 39.4, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
-						qi = 5186,	-- Partially Filled Vessel
+						qi = 5186,	-- Partially Filled Vessel (QI!)
 					}),
 					q(2159, {	-- Dolanaar Delivery
 						qg = 6780,	-- Porthannius
 						coord = { 61.2, 47.6, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
 						_drop = { "g" },	-- Refreshing Spring Water
-						qi = 7627,	-- Dolanaar Delivery
+						qi = 7627,	-- Dolanaar Delivery (QI!)
 					}),
 					q(3118, {	-- Encrypted Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
@@ -64,7 +64,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { ROGUE },
-						qi = 9551,	-- Encrypted Sigil
+						qi = 9551,	-- Encrypted Sigil (QI!)
 					}),
 					q(3117, {	-- Etched Sigil
 						sourceQuest = 457,	-- The Balance of Nature (2/2)
@@ -72,7 +72,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { HUNTER },
-						qi = 9567,	-- Etched Sigil
+						qi = 9567,	-- Etched Sigil (QI!)
 					}),
 					q(97236, {	-- Fang of Githyiss
 						provider = { "i", 277190 },	-- Fang of Githyiss
@@ -86,7 +86,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { PRIEST },
-						qi = 9557,	-- Hallowed Sigil
+						qi = 9557,	-- Hallowed Sigil (QI!)
 					}),
 					q(5622, {	-- In Favor of Elune
 						qg = 3595,	-- Shanda <Priest Trainer>
@@ -105,7 +105,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/7 Hyacinth Mushroom
 								providers = {
-									{ "i", 10639 },	-- Hyacinth Mushroom
+									{ "i", 10639 },	-- Hyacinth Mushroom (QI!)
 									{ "o", 152094 },	-- Hyacinth Mushroom
 								},
 								crs = {
@@ -115,12 +115,12 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							}),
 							objective(2, {	-- 0/4 Moonpetal Lily
 								providers = {
-									{ "i", 10641 },	-- Moonpetal Lily
+									{ "i", 10641 },	-- Moonpetal Lily (QI!)
 									{ "o", 152095 },	-- Moonpetal Lily
 								},
 							}),
 							objective(3, {	-- 0/1 Webwood Ichor
-								provider = { "i", 10640 },	-- Webwood Ichor
+								provider = { "i", 10640 },	-- Webwood Ichor (QI!)
 								cr = 1986,	-- Webwood Spider
 							}),
 						},
@@ -131,7 +131,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 60.8, 42.0, MAP.TELDRASSIL },
 						races = ALLIANCE_ONLY,
 						lvl = 2,
-						qi = 10642,	-- Iverron's Antidote
+						qi = 10642,	-- Iverron's Antidote (QI!)
 						groups = {
 							i(10655),	-- Sedgeweed Britches
 							i(10656),	-- Barkmail Vest
@@ -180,7 +180,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { WARRIOR },
-						qi = 9545,	-- Simple Sigil
+						qi = 9545,	-- Simple Sigil (QI!)
 					}),
 					q(920, {	-- Tenaron's Summons
 						sourceQuest = 917,	-- Webwood Egg
@@ -267,7 +267,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/8 Fel Moss
-								provider = { "i", 3297 },	-- Fel Moss
+								provider = { "i", 3297 },	-- Fel Moss (QI!)
 								crs = {
 									1988,	-- Grell
 									1989,	-- Grellkin
@@ -284,7 +284,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 58.6, 44.2, MAP.TELDRASSIL },
 						races = { NIGHTELF },
 						classes = { DRUID },
-						qi = 9580,	-- Verdant Sigil
+						qi = 9580,	-- Verdant Sigil (QI!)
 					}),
 					q(917, {	-- Webwood Egg
 						sourceQuest = 916,	-- Webwood Venom
@@ -294,7 +294,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						groups = {
 							objective(1, {	-- 0/1 Webwood Egg
 								providers = {
-									{ "i", 5167 },	-- Webwood Egg
+									{ "i", 5167 },	-- Webwood Egg (QI!)
 									{ "o", 4406 },	-- Webwood Eggs
 								},
 								coord = { 56.6, 26.5, MAP.TELDRASSIL },
@@ -311,7 +311,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						lvl = 3,
 						groups = {
 							objective(1, {	-- 0/10 Webwood Venom Sac
-								provider = { "i", 5166 },	-- Webwood Venom Sac
+								provider = { "i", 5166 },	-- Webwood Venom Sac (QI!)
 								cr = 1986,	-- Webwood Spider
 							}),
 							i(10544),	-- Thistlewood Maul
@@ -424,7 +424,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/15 Gnarlpine Fang
-						provider = { "i", 5220 },	-- Gnarlpine Fang
+						provider = { "i", 5220 },	-- Gnarlpine Fang (QI!)
 						crs = {
 							2006,	-- Gnarlpine Ursa
 							2007,	-- Gnarlpine Gardener
@@ -704,7 +704,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 34.8, 8.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279291,	-- Drained Vessel
+				qi = 279291,	-- Drained Vessel (QI!)
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
@@ -712,7 +712,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279331,	-- Moonwell Remnants
+				qi = 279331,	-- Moonwell Remnants (QI!)
 			}),
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -722,8 +722,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Jade Phial
 						providers = {
-							{ "i", 5639 },	-- Filled Jade Phial
-							{ "i", 5619 },	-- Jade Phial
+							{ "i", 5639 },	-- Filled Jade Phial (QI!)
+							{ "i", 5619 },	-- Jade Phial (QI!)
 						},
 						coord = { 63.0, 58.0, MAP.TELDRASSIL },
 					}),
@@ -737,8 +737,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Tourmaline Phial
 						providers = {
-							{ "i", 5645 },	-- Filled Tourmaline Phial
-							{ "i", 5621 },	-- Tourmaline Phial
+							{ "i", 5645 },	-- Filled Tourmaline Phial (QI!)
+							{ "i", 5621 },	-- Tourmaline Phial (QI!)
 						},
 						coord = { 42.0, 67.0, MAP.TELDRASSIL },
 					}),
@@ -752,8 +752,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Filled Amethyst Phial
 						providers = {
-							{ "i", 18151 },	-- Filled Amethyst Phial
-							{ "i", 18152 },	-- Amethyst Phial
+							{ "i", 18151 },	-- Filled Amethyst Phial (QI!)
+							{ "i", 18152 },	-- Amethyst Phial (QI!)
 						},
 						coord = { 38.0, 34.0, MAP.TELDRASSIL },
 					}),
@@ -764,7 +764,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 3515,	-- Corithras Moonrage
 				coord = { 56.2, 61.7, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				qi = 5188,	-- Filled Vessel
+				qi = 5188,	-- Filled Vessel (QI!)
 				groups = {
 					i(5596),	-- Ashwood Bow
 					i(5595),	-- Thicket Hammer
@@ -779,17 +779,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Hatescreech's Amulet
-						provider = { "i", 280831 },	-- Hatescreech's Amulet
+						provider = { "i", 280831 },	-- Hatescreech's Amulet (QI!)
 						coord = { 35.0, 38.6, MAP.TELDRASSIL },
 						cr = 272034,	-- Hatescreech
 					}),
 					objective(2, {	-- 0/1 Windmistress Gaedress' Amulet
-						provider = { "i", 280832 },	-- Windmistress Gaedress' Amulet
+						provider = { "i", 280832 },	-- Windmistress Gaedress' Amulet (QI!)
 						coord = { 33.2, 36.0, MAP.TELDRASSIL },
 						cr = 272044,	-- Windmistress Gaedress
 					}),
 					objective(3, {	-- 0/1 Witchmother Arysa's Amulet
-						provider = { "i", 280834 },	-- Witchmother Arysa's Amulet
+						provider = { "i", 280834 },	-- Witchmother Arysa's Amulet (QI!)
 						coord = { 34.2, 27.9, MAP.TELDRASSIL },
 						cr = 272046,	-- Witchmother Arysa
 					}),
@@ -800,7 +800,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
-				qi = 5391,	-- Rare Earth
+				qi = 5391,	-- Rare Earth (QI!)
 			}),
 			q(5636, {	-- Desperate Prayer
 				altQuests = {
@@ -833,7 +833,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Release Oben Rageclaw's spirit
 						providers = {
 							{ "n", 7318 },	-- Rageclaw
-							{ "i", 8149 },	-- Voodoo Charm
+							{ "i", 8149 },	-- Voodoo Charm (QI!)
 						},
 						coord = { 45.6, 59.6, MAP.TELDRASSIL },
 					}),
@@ -854,7 +854,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 286069,	-- Lashwater Salve
+				qi = 286069,	-- Lashwater Salve (QI!)
 			}),
 			q(1684, {	-- Elanaria
 				altQuests = {
@@ -922,7 +922,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/15 Wildkin Feather
 						providers = {
-							{ "i", 10819 },	-- Wildkin Feather
+							{ "i", 10819 },	-- Wildkin Feather (QI!)
 							{ "o", 153239 },	-- Wildkin Feather
 						},
 						description = "Scattered on the ground around the Hinterlands.",
@@ -949,7 +949,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						providers = {
 							{ "i", 8050 },	-- Tallonkai's Jewel
 							{ "n", 7234 },	-- Ferocitas the Dream Eater
-							{ "i", 8049 },	-- Gnarlpine Necklace
+							{ "i", 8049 },	-- Gnarlpine Necklace (QI!)
 						},
 						coord = { 69.2, 53.4, MAP.TELDRASSIL },
 					}),
@@ -961,7 +961,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 58.4, 94.0, MAP.TELDRASSIL },
 				races = { NIGHTELF },
 				lvl = 10,
-				qi = 16262,	-- Nessa's Collection
+				qi = 16262,	-- Nessa's Collection (QI!)
 			}),
 			q(5621, {	-- Garments of the Moon
 				sourceQuest = 5622,	-- In Favor of Elune
@@ -1012,7 +1012,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Gargantuan Tumor
-						provider = { "i", 8136 },	-- Gargantuan Tumor
+						provider = { "i", 8136 },	-- Gargantuan Tumor (QI!)
 						coord = { 53.6, 75.0, MAP.TELDRASSIL },
 						cr = 2166,	-- Oakenscowl
 					}),
@@ -1026,9 +1026,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 5217,	-- Tainted Heart
+				qi = 5217,	-- Tainted Heart (QI!)
 				groups = {
-					i(5218),	-- Cleansed Timberling Heart
+					i(5218),	-- Cleansed Timberling Heart (QI!)
 				},
 			}),
 			q(4161, {	-- Recipe of the Kaldorei
@@ -1047,7 +1047,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 60.8, 68.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
-				qi = 5168,	-- Timberling Seed
+				qi = 5168,	-- Timberling Seed (QI!)
 			}),
 			q(2498, {	-- Return to Denalan
 				sourceQuest = 923,	-- Tumors / Mossy Tumors [CATA+]
@@ -1063,7 +1063,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 42,
-				qi = 9331,	-- Feralas: A History
+				qi = 9331,	-- Feralas: A History (QI!)
 			}),
 			q(489, {	-- Seek Redemption!
 				sourceQuest = 488,	-- Zenn's Bidding
@@ -1074,7 +1074,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/3 Fel Cone
 						providers = {
-							{ "i", 3418 },	-- Fel Cone
+							{ "i", 3418 },	-- Fel Cone (QI!)
 							{ "o", 1673 },	-- Fel Cone
 						},
 					}),
@@ -1088,7 +1088,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Soft Nightsaber Pelt
-						provider = { "i", 280087 },	-- Soft Nightsaber Pelt
+						provider = { "i", 280087 },	-- Soft Nightsaber Pelt (QI!)
 						cr = 2042,	-- Nightsaber
 					}),
 					i(280088),	-- Soft Saber Sack
@@ -1111,7 +1111,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Webwood Lurker
 						providers = {
 							{ "n", 1998 },	-- Webwood Lurker
-							{ "i", 15921 },	-- Taming Rod
+							{ "i", 15921 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -1127,7 +1127,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Nightsaber Stalker
 						providers = {
 							{ "n", 2043 },	-- Nightsaber Stalker
-							{ "i", 15922 },	-- Taming Rod
+							{ "i", 15922 },	-- Taming Rod (QI!)
 						},
 					}),
 				},
@@ -1143,7 +1143,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					objective(1, {	-- Tame a Strigid Screecher
 						providers = {
 							{ "n", 1996 },	-- Strigid Screecher
-							{ "i", 15923 },	-- Taming Rod
+							{ "i", 15923 },	-- Taming Rod (QI!)
 						},
 					}),
 					recipe(883),	-- Call Pet
@@ -1163,7 +1163,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 6,
-				qi = 5219,	-- Inscribed Bark
+				qi = 5219,	-- Inscribed Bark (QI!)
 				groups = {
 					i(281250, {	-- Forest Oracle's Cloak
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1176,7 +1176,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				lvl = 10,
-				qi = 7735,	-- Jannok's Rose
+				qi = 7735,	-- Jannok's Rose (QI!)
 			}),
 			q(2941, {	-- The Borrower
 				sourceQuest = 2940,	-- Feralas: A History
@@ -1184,7 +1184,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 42,
-				qi = 9329,	-- A Short Note
+				qi = 9329,	-- A Short Note (QI!)
 			}),
 			q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				sourceQuest = 6344,	-- Nessa Shadowsong
@@ -1192,7 +1192,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				coord = { 56.2, 92.4, MAP.TELDRASSIL },
 				races = { NIGHTELF },
 				lvl = 10,
-				qi = 16262,	-- Nessa's Collection
+				qi = 16262,	-- Nessa's Collection (QI!)
 			}),
 			q(2438, {	-- The Emerald Dreamcatcher
 				qg = 3567,	-- Tallonkai Swiftroot
@@ -1201,7 +1201,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Emerald Dreamcatcher
 						providers = {
-							{ "i", 8048 },	-- Emerald Dreamcatcher
+							{ "i", 8048 },	-- Emerald Dreamcatcher (QI!)
 							{ "o", 126158 },	-- Tallonkai's Dresser
 						},
 						coord = { 68.0, 59.6, MAP.TELDRASSIL },
@@ -1215,7 +1215,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/6 Bloodfeather Belt
-						provider = { "i", 5204 },	-- Bloodfeather Belt
+						provider = { "i", 5204 },	-- Bloodfeather Belt (QI!)
 						crs = {
 							2019,	-- Bloodfeather Fury
 							2015,	-- Bloodfeather Harpy
@@ -1233,7 +1233,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(930, {	-- The Glowing Fruit
 				providers = {
 					{ "o", 6751 },	-- Strange Fruited Plant
-					{ "i", 5189 },	-- Glowing Fruit
+					{ "i", 5189 },	-- Glowing Fruit (QI!)
 				},
 				coord = { 42.6, 76.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -1264,7 +1264,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Dewy Lasher Frond
-						provider = { "i", 286017 },	-- Dewy Lasher Frond
+						provider = { "i", 286017 },	-- Dewy Lasher Frond (QI!)
 						crs = {
 							275703,	-- Lasher Sproutling
 							275708,	-- Blooming Lasher
@@ -1357,28 +1357,28 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/1 Raven Claw Talisman
 						providers = {
-							{ "i", 3405 },	-- Raven Claw Talisman
+							{ "i", 3405 },	-- Raven Claw Talisman (QI!)
 							{ "o", 2740 },	-- Chest of the Raven Claw
 						},
 						coord = { 45.7, 57.5, MAP.TELDRASSIL },
 					}),
 					objective(2, {	-- 0/1 Black Feather Quill
 						providers = {
-							{ "i", 3406 },	-- Black Feather Quill
+							{ "i", 3406 },	-- Black Feather Quill (QI!)
 							{ "o", 2739 },	-- Chest of the Black Feather
 						},
 						coord = { 43.8, 61.2, MAP.TELDRASSIL },
 					}),
 					objective(3, {	-- 0/1 Sapphire of Sky
 						providers = {
-							{ "i", 3407 },	-- Sapphire of Sky
+							{ "i", 3407 },	-- Sapphire of Sky (QI!)
 							{ "o", 2741 },	-- Chest of the Sky
 						},
 						coord = { 44.6, 62.5, MAP.TELDRASSIL },
 					}),
 					objective(4, {	-- 0/1 Rune of Nesting
 						providers = {
-							{ "i", 3408 },	-- Rune of Nesting
+							{ "i", 3408 },	-- Rune of Nesting (QI!)
 							{ "o", 2742 },	-- Chest of Nesting
 						},
 						coord = { 44.5, 60.6, MAP.TELDRASSIL },
@@ -1401,7 +1401,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(931, {	-- The Shimmering Frond
 				providers = {
 					{ "o", 6752 },	-- Strange Fronded Plant
-					{ "i", 5190 },	-- Shimmering Frond
+					{ "i", 5190 },	-- Shimmering Frond (QI!)
 				},
 				coord = { 34.7, 28.8, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -1423,7 +1423,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 3,
 				groups = {
 					objective(1, {	-- Shaman Voodoo Charm
-						provider = { "i", 8363 },	-- Shaman Voodoo Charm
+						provider = { "i", 8363 },	-- Shaman Voodoo Charm (QI!)
 						cr = 2009,	-- Gnarlpine Shaman
 					}),
 				},
@@ -1443,7 +1443,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/8 Timberling Seed
-						provider = { "i", 5168 },	-- Timberling Seed
+						provider = { "i", 5168 },	-- Timberling Seed (QI!)
 						crs = {
 							2030,	-- Elder Timberling
 							2166,	-- Oakenscowl
@@ -1463,7 +1463,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					objective(1, {	-- 0/12 Timberling Seed
 						providers = {
-							{ "i", 5169 },	-- Timberling Sprout
+							{ "i", 5169 },	-- Timberling Sprout (QI!)
 							{ "o", 4608 },	-- Timberling Sprout
 						},
 					}),
@@ -1491,7 +1491,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/5 Mossy Tumor
-						provider = { "i", 5170 },	-- Mossy Tumor
+						provider = { "i", 5170 },	-- Mossy Tumor (QI!)
 						crs = {
 							2030,	-- Elder Timberling
 							2029,	-- Timberling Mire Beast
@@ -1508,7 +1508,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {
-						provider = { "i", 5221 },	-- Melenas' Head
+						provider = { "i", 5221 },	-- Melenas' Head (QI!)
 						coord = { 51.6, 51.6, MAP.TELDRASSIL },
 						cr = 2038,	-- Lord Melenas
 					}),
@@ -1529,7 +1529,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						coord = { 48.4, 50.2, MAP.TELDRASSIL },
 					}),
 					objective(2, {	-- 0/1 Mature Fel Moss
-						provider = { "i", 281023 },	-- Mature Fel Moss
+						provider = { "i", 281023 },	-- Mature Fel Moss (QI!)
 						coord = { 51.3, 45.4, MAP.TELDRASSIL },
 						cr = 272116,	-- Xethorr the Wicked
 					}),
@@ -1570,7 +1570,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/3 Nightsaber Fang
-						provider = { "i", 3409 },	-- Nightsaber Fang
+						provider = { "i", 3409 },	-- Nightsaber Fang (QI!)
 						crs = {
 							14430,	-- Duskstalker
 							2042,	-- Nightsaber
@@ -1578,14 +1578,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						},
 					}),
 					objective(2, {	-- 0/3 Strigid Owl Feather
-						provider = { "i", 3411 },	-- Strigid Owl Feather
+						provider = { "i", 3411 },	-- Strigid Owl Feather (QI!)
 						crs = {
 							1995,	-- Strigid Owl
 							1996,	-- Strigid Screecher
 						},
 					}),
 					objective(3, {	-- 0/3 Webwood Spider Silk
-						provider = { "i", 3412 },	-- Webwood Spider Silk
+						provider = { "i", 3412 },	-- Webwood Spider Silk (QI!)
 						crs = {
 							1998,	-- Webwood Lurker
 							2000,	-- Webwood Silkspinner

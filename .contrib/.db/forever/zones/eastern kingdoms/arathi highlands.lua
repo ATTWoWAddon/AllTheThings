@@ -91,7 +91,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Stolen Funds
 						providers = {
-							{ "i", 275709 },	-- Stolen Funds
+							{ "i", 275709 },	-- Stolen Funds (QI!)
 							{ "o", 656405 },	-- Anastasia's Stash
 						},
 						coord = { 29.4, 64.9, MAP.ARATHI_HIGHLANDS },
@@ -104,7 +104,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 46.2, 47.8, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 4529,	-- Enchanted Agate
+				qi = 4529,	-- Enchanted Agate (QI!)
 			}),
 			q(696, {	-- Attack on the Tower
 				sourceQuest = 695,	-- An Apprentice's Enchantment
@@ -115,21 +115,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Trelane's Phylactery
 						providers = {
-							{ "i", 4530 },	-- Trelane's Phylactery
+							{ "i", 4530 },	-- Trelane's Phylactery (QI!)
 							{ "o", 2717 },	-- Trelane's Footlocker
 						},
 						coord = { 18.2, 68.2, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Trelane's Orb
 						providers = {
-							{ "i", 4531 },	-- Trelane's Orb
+							{ "i", 4531 },	-- Trelane's Orb (QI!)
 							{ "o", 2716 },	-- Trelane's Chest
 						},
 						coord = { 18.1, 69.1, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Trelane's Ember Agate
 						providers = {
-							{ "i", 4532 },	-- Trelane's Ember Agate
+							{ "i", 4532 },	-- Trelane's Ember Agate (QI!)
 							{ "o", 2718 },	-- Trelane's Lockbox
 						},
 						coord = { 18.0, 67.9, MAP.ARATHI_HIGHLANDS },
@@ -143,7 +143,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Rod of Order
-						provider = { "i", 4469 },	-- Rod of Order
+						provider = { "i", 4469 },	-- Rod of Order (QI!)
 						cr = 2611,	-- Fozruk
 					}),
 				},
@@ -230,28 +230,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Maiden's Folly Charts
 						providers = {
-							{ "i", 4487 },	-- Maiden's Folly Charts
+							{ "i", 4487 },	-- Maiden's Folly Charts (QI!)
 							{ "o", 2707 },	-- Maiden's Folly Charts
 						},
 						coord = { 23.0, 84.5, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Maiden's Folly Log
 						providers = {
-							{ "i", 4489 },	-- Maiden's Folly Log
+							{ "i", 4489 },	-- Maiden's Folly Log (QI!)
 							{ "o", 2709 },	-- Maiden's Folly Log
 						},
 						coord = { 23.5, 85.1, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Spirit of Silverpine Charts
 						providers = {
-							{ "i", 4488 },	-- Spirit of Silverpine Charts
+							{ "i", 4488 },	-- Spirit of Silverpine Charts (QI!)
 							{ "o", 2708 },	-- Spirit of Silverpine Charts
 						},
 						coord = { 20.5, 85.5, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(4, {	-- 0/1 Spirit of Silverpine Log
 						providers = {
-							{ "i", 4490 },	-- Spirit of Silverpine Log
+							{ "i", 4490 },	-- Spirit of Silverpine Log (QI!)
 							{ "o", 2710 },	-- Spirit of Silverpine Log
 						},
 						coord = { 20.7, 85.1, MAP.ARATHI_HIGHLANDS },
@@ -291,7 +291,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Tattered Note
-						provider = { "i", 274463 },	-- Tattered Note
+						provider = { "i", 274463 },	-- Tattered Note (QI!)
 						cr = 4421,	-- Charlga Razorflank <The Crone>
 					}),
 				},
@@ -303,7 +303,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Bloodstone Amulet
-						provider = { "i", 4495 },	-- Bloodstone Amulet
+						provider = { "i", 4495 },	-- Bloodstone Amulet (QI!)
 						crs = {
 							2586,	-- Syndicate Highwayman
 							2589,	-- Syndicate Mercenary
@@ -320,7 +320,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Befouled Bloodstone Orb
-						provider = { "i", 4510 },	-- Befouled Bloodstone Orb
+						provider = { "i", 4510 },	-- Befouled Bloodstone Orb (QI!)
 						coord = { 29.0, 64.0, MAP.ARATHI_HIGHLANDS },
 						cr = 2783,	-- Marez Cowl
 					}),
@@ -361,7 +361,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/12 Raptor Heart
-						provider = { "i", 4513 },	-- Raptor Heart
+						provider = { "i", 4513 },	-- Raptor Heart (QI!)
 						cr = 2561,	-- Highland Fleshstalker
 					}),
 				},
@@ -372,7 +372,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 29,
-				qi = 4528,	-- Tor'gan's Orb
+				qi = 4528,	-- Tor'gan's Orb (QI!)
 			}),
 			q(847, {	-- Guile of the Raptor (3/3)
 				sourceQuest = 702,	-- Guile of the Raptor (2/3)
@@ -402,7 +402,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qi = 268582,	-- Corrupted Totems (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Eye of the Tempest
-						provider = { "i", 212792 },	-- Eye of the Tempest
+						provider = { "i", 212792 },	-- Eye of the Tempest (QI!)
 						cr = 216474,	-- Ravaging Tempest
 						coord = { 34.6, 42.6, MAP.THOUSAND_NEEDLES },
 					}),
@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Folder
-						provider = { "i", 4482 },	-- Sealed Folder
+						provider = { "i", 4482 },	-- Sealed Folder (QI!)
 						coord = { 52.6, 61.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2714,	-- Forsaken Courier
 					}),
@@ -475,7 +475,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
-				qi = 4441,	-- MacKreel's Moonshine
+				qi = 4441,	-- MacKreel's Moonshine (QI!)
 			}),
 			q(690, {	-- Malin's Request (1/2)
 				qg = 2708,	-- Archmage Malin
@@ -491,7 +491,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 4533,	-- Sealed Letter to Archmage Malin
+				qi = 4533,	-- Sealed Letter to Archmage Malin (QI!)
 				groups = {
 					i(4975),	-- Vigilant Buckler
 					i(15104),	-- Wingborne Boots
@@ -542,7 +542,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/10 Highland Raptor Eye
-						provider = { "i", 4512 },	-- Highland Raptor Eye
+						provider = { "i", 4512 },	-- Highland Raptor Eye (QI!)
 						crs = {
 							2559,	-- Highland Strider
 							2560,	-- Highland Thrasher
@@ -556,7 +556,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 29,
-				qi = 4526,	-- Raptor Talon Amulet
+				qi = 4526,	-- Raptor Talon Amulet (QI!)
 			}),
 			q(675, {	-- Raising Spirits (3/3)
 				sourceQuest = 674,	-- Raising Spirits (2/3)
@@ -573,7 +573,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Arathor
-						provider = { "i", 4458 },	-- Sigil of Arathor
+						provider = { "i", 4458 },	-- Sigil of Arathor (QI!)
 						cr = 2612,	-- Lieutenant Valorcall
 					}),
 				},
@@ -586,7 +586,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Strom
-						provider = { "i", 4440 },	-- Sigil of Strom
+						provider = { "i", 4440 },	-- Sigil of Strom (QI!)
 						coord = { 27.6, 63.4, MAP.ARATHI_HIGHLANDS },
 						crs = {
 							2590,	-- Syndicate Conjuror
@@ -602,7 +602,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = 32,
-				qi = 4453,	-- Sigil of Thoradin
+				qi = 4453,	-- Sigil of Thoradin (QI!)
 			}),
 			q(644, {	-- Sigil of Trollbane
 				sourceQuest = 643,	-- Sigil of Arathor
@@ -612,7 +612,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/1 Sigil of Trollbane
-						provider = { "i", 4466 },	-- Sigil of Trollbane
+						provider = { "i", 4466 },	-- Sigil of Trollbane (QI!)
 						cr = 2607,	-- Prince Galen Trollbane
 					}),
 				},
@@ -625,7 +625,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Surgical Spidersilk
-						provider = { "i", 278225 },	-- Surgical Spidersilk
+						provider = { "i", 278225 },	-- Surgical Spidersilk (QI!)
 						crs = {
 							2565,	-- Giant Plains Creeper
 							2563,	-- Plains Creeper
@@ -641,21 +641,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Burning Key
 						providers = {
-							{ "i", 4483 },	-- Burning Key
+							{ "i", 4483 },	-- Burning Key (QI!)
 							{ "o", 2689 },	-- Stone of West Binding
 						},
 						coord = { 25.5, 30.2, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(2, {	-- 0/1 Cresting Key
 						providers = {
-							{ "i", 4484 },	-- Cresting Key
+							{ "i", 4484 },	-- Cresting Key (QI!)
 							{ "o", 2691 },	-- Stone of East Binding
 						},
 						coord = { 66.7, 29.8, MAP.ARATHI_HIGHLANDS },
 					}),
 					objective(3, {	-- 0/1 Thundering Key
 						providers = {
-							{ "i", 4485 },	-- Thundering Key
+							{ "i", 4485 },	-- Thundering Key (QI!)
 							{ "o", 2690 },	-- Stone of Outer Binding
 						},
 						coord = { 52.1, 50.7, MAP.ARATHI_HIGHLANDS },
@@ -674,7 +674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qi = 274483,	-- The Walks of Shaman (PQI!)
 				groups = {
 					objective(1, {	-- 0/5 Twisted Fire Totem
-						provider = { "i", 274044 },	-- Twisted Fire Totem
+						provider = { "i", 274044 },	-- Twisted Fire Totem (QI!)
 						crs = {
 							2893,	-- Stonevault Bonesnapper
 							2906,	-- Dustbelcher Warrior
@@ -683,7 +683,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/5 Twisted Earth Totem
-						provider = { "i", 274045 },	-- Twisted Earth Totem
+						provider = { "i", 274045 },	-- Twisted Earth Totem (QI!)
 						crs = {
 							757,	-- Lost One Fisherman
 							760,	-- Lost One Muckdweller
@@ -692,7 +692,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					objective(3, {	-- 0/5 Twisted Air Totem
-						provider = { "i", 274047 },	-- Twisted Air Totem
+						provider = { "i", 274047 },	-- Twisted Air Totem (QI!)
 						crs = {
 							4656,	-- Maraudine Mauler
 							4655,	-- Maraudine Wrangler
@@ -701,7 +701,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					objective(4, {	-- 0/5 Twisted Water Totem
-						provider = { "i", 274046 },	-- Twisted Water Totem
+						provider = { "i", 274046 },	-- Twisted Water Totem (QI!)
 						crs = {
 							4362,	-- Mirefin Coastrunner
 							4359,	-- Mirefin Murloc
@@ -720,7 +720,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/15 Stromgarde Badge
-						provider = { "i", 4506 },	-- Stromgarde Badge
+						provider = { "i", 4506 },	-- Stromgarde Badge (QI!)
 						crs = {
 							2590,	-- Syndicate Conjuror
 							2591,	-- Syndicate Magus
@@ -740,7 +740,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				providers = {
 					{ "i", 4433 },	-- Waterlogged Envelope
 					{ "o", 2656 },	-- Waterlogged Letter
-					{ "i", 4432 },	-- Sully Balloo's Letter
+					{ "i", 4432 },	-- Sully Balloo's Letter (QI!)
 				},
 				coord = { 44.3, 92.9, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
@@ -754,8 +754,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Eldritch Shackles
 						providers = {
-							{ "i", 4473 },	-- Eldritch Shackles
-							{ "i", 4472 },	-- Scroll of Myzrael
+							{ "i", 4473 },	-- Eldritch Shackles (QI!)
+							{ "i", 4472 },	-- Scroll of Myzrael (QI!)
 							{ "o", 138492 },	-- Shards of Myzrael
 						},
 						coord = { 62.6, 34.6, MAP.ARATHI_HIGHLANDS },
@@ -782,14 +782,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Elven Gem
 						providers = {
-							{ "i", 4492 },	-- Elven Gem
+							{ "i", 4492 },	-- Elven Gem (QI!)
 							{ "o", 2712 },	-- Calcified Elven Gem
 						},
 						coord = { 23.6, 87.4, MAP.ARATHI_HIGHLANDS },
 					}),
 					i(4547),	-- Gnomish Zapper
 					i(4548),	-- Servomechanic Sledgehammer
-					i(4491),	-- Goggles of Gem Hunting / Do not replace i(...) with a qi field; this item is equippable.
+					i(4491),	-- Goggles of Gem Hunting / Do not replace i(...) with a qi field; this item is equippable. (QI!)
 				},
 			}),
 			q(668, {	-- Sunken Treasure (3/5)
@@ -797,7 +797,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				qg = 2774,	-- Doctor Draxlegauge <Blackwater Raiders>
 				coord = { 33.8, 80.4, MAP.ARATHI_HIGHLANDS },
 				lvl = 35,
-				qi = 4493,	-- Elven Gems
+				qi = 4493,	-- Elven Gems (QI!)
 			}),
 			q(669, {	-- Sunken Treasure (4/5)
 				sourceQuest = 668,	-- Sunken Treasure (3/5)
@@ -805,14 +805,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 32.2, 81.4, MAP.ARATHI_HIGHLANDS },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
-				qi = 4502,	-- Sample Elven Gem
+				qi = 4502,	-- Sample Elven Gem (QI!)
 			}),
 			q(670, {	-- Sunken Treasure (5/5)
 				sourceQuest = 669,	-- Sunken Treasure (4/5)
 				qg = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
 				lvl = 35,
-				qi = 4494,	-- Seahorn's Sealed Letter
+				qi = 4494,	-- Seahorn's Sealed Letter (QI!)
 			}),
 			q(640, {	-- The Broken Sigil
 				sourceQuest = 639,	-- Sigil of Strom
@@ -822,7 +822,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/11 Sigil Fragment
-						provider = { "i", 4450 },	-- Sigil Fragment
+						provider = { "i", 4450 },	-- Sigil Fragment (QI!)
 						crs = {
 							2584,	-- Stromgarde Defender
 							2583,	-- Stromgarde Troll Hunter
@@ -860,7 +860,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/12 Mote of Myzrael
-						provider = { "i", 4435 },	-- Mote of Myzrael
+						provider = { "i", 4435 },	-- Mote of Myzrael (QI!)
 						coord = { 83.6, 33.4, MAP.ARATHI_HIGHLANDS },
 						crs = {
 							2574,	-- Drywhisker Digger
@@ -878,7 +878,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Or'Kalar's Head
-						provider = { "i", 4551 },	-- Or'Kalar's Head
+						provider = { "i", 4551 },	-- Or'Kalar's Head (QI!)
 						coord = { 20.8, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2773,	-- Or'Kalar
 					}),
@@ -898,10 +898,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Intercepted Shipment
-						provider = { "i", 275882 },	-- Intercepted Shipment
+						provider = { "i", 275882 },	-- Intercepted Shipment (QI!)
 					}),
 					objective(2, {	-- 0/1 Syndicate Uniform
-						provider = { "i", 275706 },	-- Syndicate Uniform
+						provider = { "i", 275706 },	-- Syndicate Uniform (QI!)
 					}),
 				},
 			}),
@@ -959,7 +959,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { REMOVED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/1 Azure Agate
-						provider = { "i", 4527 },	-- Azure Agate
+						provider = { "i", 4527 },	-- Azure Agate (QI!)
 						coord = { 19.8, 66.4, MAP.ARATHI_HIGHLANDS },
 						cr = 2570,	-- Boulderfist Shaman
 					}),
@@ -975,7 +975,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/15 Patients Saved!
-						provider = { "i", 16991 },	-- Triage Bandage
+						provider = { "i", 16991 },	-- Triage Bandage (QI!)
 						crs = {
 							12923,	-- Injured Soldier
 							12924,	-- Badly Injured Soldier
@@ -991,7 +991,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 644,	-- Sigil of Trollbane
 				providers = {
 					{ "n", 2703 },	-- Zengu
-					{ "i", 4467 },	-- Sigil of Ignaeus
+					{ "i", 4467 },	-- Sigil of Ignaeus (QI!)
 					{ "o", 2703 },	-- Trollbane's Tomb
 				},
 				coord = { 73.8, 33.8, MAP.ARATHI_HIGHLANDS },
@@ -1002,7 +1002,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				sourceQuest = 645,	-- Trol'kalar (1/2)
 				providers = {
 					{ "o", 2703 },	-- Trollbane's Tomb
-					{ "i", 4468 },	-- Sheathed Trol'kalar
+					{ "i", 4468 },	-- Sheathed Trol'kalar (QI!)
 				},
 				coord = { 28.9, 59.6, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
@@ -1027,7 +1027,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Trelane's Wand of Invocation
-						provider = { "i", 4525 },	-- Trelane's Wand of Invocation
+						provider = { "i", 4525 },	-- Trelane's Wand of Invocation (QI!)
 						coord = { 54.6, 81.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2793,	-- Kor'gresh Coldrage
 					}),
@@ -1040,7 +1040,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Marez's Head
-						provider = { "i", 4515 },	-- Marez's Head
+						provider = { "i", 4515 },	-- Marez's Head (QI!)
 						coord = { 29.0, 64.0, MAP.ARATHI_HIGHLANDS },
 						cr = 2783,	-- Marez Cowl
 					}),
@@ -1060,12 +1060,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Otto's Head
-						provider = { "i", 4516 },	-- Otto's Head
+						provider = { "i", 4516 },	-- Otto's Head (QI!)
 						coord = { 26.0, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2599,	-- Otto <Bodyguard>
 					}),
 					objective(2, {	-- 0/1 Falconcrest's Head
-						provider = { "i", 4517 },	-- Falconcrest's Head
+						provider = { "i", 4517 },	-- Falconcrest's Head (QI!)
 						coord = { 26.0, 65.6, MAP.ARATHI_HIGHLANDS },
 						cr = 2597,	-- Lord Falconcrest <Syndicate Leader>
 					}),
@@ -1085,7 +1085,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Packaged Tonics
-						provider = { "i", 278462 },	-- Packaged Tonics
+						provider = { "i", 278462 },	-- Packaged Tonics (QI!)
 						-- TODO: picked up at Jorell's lab in Go'shek Farm; Wowhead doesn't list the object yet.
 					}),
 				},
@@ -1098,7 +1098,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Witherbark Tusk
-						provider = { "i", 4503 },	-- Witherbark Tusk
+						provider = { "i", 4503 },	-- Witherbark Tusk (QI!)
 						crs = {
 							2554,	-- Witherbark Axe Thrower
 							2558,	-- Witherbark Berserker
@@ -1111,11 +1111,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/4 Witherbark Medicine Pouch
-						provider = { "i", 4522 },	-- Witherbark Medicine Pouch
+						provider = { "i", 4522 },	-- Witherbark Medicine Pouch (QI!)
 						cr = 2555,	-- Witherbark Witch Doctor
 					}),
 					objective(3, {	-- 0/1 Shadow Hunter Knife
-						provider = { "i", 5040 },	-- Shadow Hunter Knife
+						provider = { "i", 5040 },	-- Shadow Hunter Knife (QI!)
 						cr = 2557,	-- Witherbark Shadow Hunter
 					}),
 				},
@@ -1385,7 +1385,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			i(1297, {	-- Robes of the Shadowcaster
 				cr = 2577,	-- Dark Iron Shadowcaster
 			}),
-			i(5040, {	-- Shadow Hunter Knife
+			i(5040, {	-- Shadow Hunter Knife (QI!)
 				cr = 2557,	-- Witherbark Shadow Hunter
 				coord = { 63.6, 84.2, MAP.ARATHI_HIGHLANDS },
 				collectible = false,

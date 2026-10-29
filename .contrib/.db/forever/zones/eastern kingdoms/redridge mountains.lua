@@ -45,7 +45,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				requireSkill = LOCKPICKING,
 				learnedAt = 25,
 				groups = {
-					i(7871),	-- Token of Thievery
+					i(7871),	-- Token of Thievery (QI!)
 				},
 			}),
 			o(178244, {	-- Practice Lockbox
@@ -253,10 +253,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					MAP.WESTFALL,
 				},
 				cost = {
-					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine
-					{ "i", 1941, 1 },	-- 1x Cask of Merlot
+					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine (QI!)
+					{ "i", 1941, 1 },	-- 1x Cask of Merlot (QI!)
 					{ "i", 1262, 1 },	-- 1x Keg of Thunderbrew
-					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum
+					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum (QI!)
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -416,7 +416,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
 				cost = {
 					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
-					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout
+					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout (QI!)
 					{ "i", 1080, 5 },	-- 5x Tough Condor Meat
 				},
 				races = ALLIANCE_ONLY,
@@ -435,7 +435,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/5 Rethban Ore
 						providers = {
-							{ "i", 2798 },	-- Rethban Ore
+							{ "i", 2798 },	-- Rethban Ore (QI!)
 							{ "n", 580 },	-- Redridge Drudger
 							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
 							{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
@@ -495,7 +495,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Spiked Collar
-						provider = { "i", 280911 },	-- Spiked Collar
+						provider = { "i", 280911 },	-- Spiked Collar (QI!)
 						coords = {
 							{ 16.0, 61.4, MAP.REDRIDGE_MOUNTAINS },
 							{ 31.0, 83.6, MAP.REDRIDGE_MOUNTAINS },
@@ -511,7 +511,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
-						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms (QI!)
 					}),
 				},
 			}),
@@ -604,7 +604,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1283,	-- Verner's Note
+				qi = 1283,	-- Verner's Note (QI!)
 			}),
 			q(1699, {	-- The Rethban Gauntlet
 				sourceQuest = 1698,	-- Yorus Barleybrew
@@ -1165,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 17.8, 57.8, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
-			i(2296, {	-- Great Goretusk Snout
+			i(2296, {	-- Great Goretusk Snout (QI!)
 				crs = {
 					345,	-- Bellygrub
 					547,	-- Great Goretusk
