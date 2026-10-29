@@ -635,7 +635,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
 				providers = {
 					{ "i", 17125 },	-- Seal of Ravenholdt (QI!)
-					{ "i", 17126 },	-- Elegant Letter
+					{ "i", 17126 },	-- Elegant Letter (QS!)
 				},
 				classes = { ROGUE },
 				lvl = 24,
