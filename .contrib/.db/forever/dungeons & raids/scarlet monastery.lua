@@ -87,7 +87,7 @@ instanceroot(316, {	-- Scarlet Monastery
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/20 Heart of Zeal
-						provider = { "i", 5805 },	-- Heart of Zeal
+						provider = { "i", 5805 },	-- Heart of Zeal (QI!)
 					}),
 				},
 			}),
@@ -151,7 +151,7 @@ instanceroot(316, {	-- Scarlet Monastery
 			i(7755),	-- Flintrock Shoulders
 			i(7754),	-- Harbinger Boots
 			i(7786),	-- Headsplitter
-			i(5805),	-- Heart of Zeal
+			i(5805),	-- Heart of Zeal (QI!)
 			i(2262),	-- Mark of Kern
 			i(7787),	-- Resplendent Guardian
 			i(7758),	-- Ruthless Shiv
@@ -181,7 +181,7 @@ instanceroot(316, {	-- Scarlet Monastery
 						lvl = 25,
 						groups = {
 							objective(1, {	-- 0/1 Vorrel's Wedding Ring
-								provider = { "i", 5538 },	-- Vorrel's Wedding Ring
+								provider = { "i", 5538 },	-- Vorrel's Wedding Ring (QI!)
 								coord = { 32.3, 32.8, MAP.ALTERAC_MOUNTAINS },
 								cr = 3984,	-- Nancy Vishas
 							}),
@@ -236,7 +236,7 @@ instanceroot(316, {	-- Scarlet Monastery
 						groups = {
 							objective(1, {	-- 0/1 Compendium of the Fallen
 								providers = {
-									{ "i", 5535 },	-- Compendium of the Fallen
+									{ "i", 5535 },	-- Compendium of the Fallen (QI!)
 									{ "o", 19283 },	-- Compendium of the Fallen
 								},
 								description = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
@@ -254,7 +254,7 @@ instanceroot(316, {	-- Scarlet Monastery
 						groups = {
 							objective(1, {	-- 0/1 Mythology of the Titans
 								providers = {
-									{ "i", 5536 },	-- Mythology of the Titans
+									{ "i", 5536 },	-- Mythology of the Titans (QI!)
 									{ "o", 19284 },	-- Mythology of the Titans
 								},
 								description = "In the hallway with the benches immediately to your left upon entering it.",
@@ -271,7 +271,7 @@ instanceroot(316, {	-- Scarlet Monastery
 						lvl = 30,
 						groups = {
 							objective(1, {	-- 0/1 Rituals of Power
-								provider = { "i", 7274 },	-- Rituals of Power
+								provider = { "i", 7274 },	-- Rituals of Power (QI!)
 							}),
 						},
 					}),
@@ -284,7 +284,7 @@ instanceroot(316, {	-- Scarlet Monastery
 						groups = {
 							objective(1, {	-- 0/1 Beginnings of the Undead Threat
 								providers = {
-									{ "i", 5861 },	-- Beginnings of the Undead Threat
+									{ "i", 5861 },	-- Beginnings of the Undead Threat (QI!)
 									{ "o", 20726 },	-- Beginnings of the Undead Threat
 								},
 								description = "In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",

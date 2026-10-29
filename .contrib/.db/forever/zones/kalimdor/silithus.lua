@@ -440,7 +440,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 58,
 				groups = {
 					objective(1, {	-- 0/1 Hive'Ashi Silithid Brain
-						provider = { "i", 20457 },	-- Hive'Ashi Silithid Brain
+						provider = { "i", 20457 },	-- Hive'Ashi Silithid Brain (QI!)
 						crs = {
 							13301,	-- Hive'Ashi Ambusher
 							11722,	-- Hive'Ashi Defender
@@ -452,7 +452,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 						},
 					}),
 					objective(2, {	-- 0/1 Hive'Zora Silithid Brain
-						provider = { "i", 20458 },	-- Hive'Zora Silithid Brain
+						provider = { "i", 20458 },	-- Hive'Zora Silithid Brain (QI!)
 						crs = {
 							11729,	-- Hive'Zora Hive Sister
 							11728,	-- Hive'Zora Reaver
@@ -462,7 +462,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 						},
 					}),
 					objective(3, {	-- 0/1 Hive'Regal Silithid Brain
-						provider = { "i", 20459 },	-- Hive'Regal Silithid Brain
+						provider = { "i", 20459 },	-- Hive'Regal Silithid Brain (QI!)
 						crs = {
 							11730,	-- Hive'Regal Ambusher
 							11731,	-- Hive'Regal Burrower
@@ -515,11 +515,11 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/8 Stonelash Scorpid Stinger
-						provider = { "i", 20373 },	-- Stonelash Scorpid Stinger
+						provider = { "i", 20373 },	-- Stonelash Scorpid Stinger (QI!)
 						cr = 11735,	-- Stonelash Scorpid
 					}),
 					objective(2, {	-- 0/8 Sand Skitterer Fang
-						provider = { "i", 20376 },	-- Sand Skitterer Fang
+						provider = { "i", 20376 },	-- Sand Skitterer Fang (QI!)
 						cr = 11738,	-- Sand Skitterer
 					}),
 				},
@@ -621,7 +621,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, MAP.SILITHUS },
 				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts (QI!)
 				lvl = 57,
 				repeatable = true,
 			}),
@@ -719,21 +719,21 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Hive'Ashi Rubbing
 						providers = {
-							{ "i", 20455 },	-- Hive'Ashi Rubbing
+							{ "i", 20455 },	-- Hive'Ashi Rubbing (QI!)
 							{ "o", 180454 },	-- Hive'Ashi Glyphed Crystal
 						},
 						coord = { 50.0, 26.0, MAP.SILITHUS },
 					}),
 					objective(2, {	-- 0/1 Hive'Zora Rubbing
 						providers = {
-							{ "i", 20454 },	-- Hive'Zora Rubbing
+							{ "i", 20454 },	-- Hive'Zora Rubbing (QI!)
 							{ "o", 180455 },	-- Hive'Zora Glyphed Crystal
 						},
 						coord = { 37.0, 62.0, MAP.SILITHUS },
 					}),
 					objective(3, {	-- 0/1 Hive'Regal Rubbing
 						providers = {
-							{ "i", 20456 },	-- Hive'Regal Rubbing
+							{ "i", 20456 },	-- Hive'Regal Rubbing (QI!)
 							{ "o", 180453 },	-- Hive'Regal Glyphed Crystal
 						},
 						coord = { 52.0, 99.0, MAP.SILITHUS },
@@ -783,8 +783,8 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Encrusted Silithid Object
 						providers = {
-							{ "i", 17346 },	-- Encrusted Silithid Object
-							{ "i", 17345 },	-- Silithid Goo
+							{ "i", 17346 },	-- Encrusted Silithid Object (QI!)
+							{ "i", 17345 },	-- Silithid Goo (QI!)
 							{ "o", 178553 },	-- Hive'Ashi Pod
 						},
 						coord = { 60.3, 52.6, MAP.SILITHUS },
@@ -903,15 +903,15 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/3 Stonelash Flayer Stinger
-						provider = { "i", 20375 },	-- Stonelash Flayer Stinger
+						provider = { "i", 20375 },	-- Stonelash Flayer Stinger (QI!)
 						cr = 11737,	-- Stonelash Flayer
 					}),
 					objective(2, {	-- 0/3 Stonelash Pincer Stinger
-						provider = { "i", 20374 },	-- Stonelash Pincer Stinger
+						provider = { "i", 20374 },	-- Stonelash Pincer Stinger (QI!)
 						cr = 11736,	-- Stonelash Pincer
 					}),
 					objective(3, {	-- 0/3 Rock Stalker Fang
-						provider = { "i", 20377 },	-- Rock Stalker Fang
+						provider = { "i", 20377 },	-- Rock Stalker Fang (QI!)
 						cr = 11739,	-- Rock Stalker
 					}),
 				},
@@ -924,7 +924,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Noggle's Satchel
 						providers = {
-							{ "i", 20379 },	-- Noggle's Satchel
+							{ "i", 20379 },	-- Noggle's Satchel (QI!)
 							{ "o", 180435 },	-- Noggle's Satchel
 						},
 						coord = { 44.7, 91.5, MAP.SILITHUS },
@@ -1029,7 +1029,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			q(8318, {	-- Secret Communication
 				qg = 15306,	-- Bor Wildmane
 				coord = { 48.6, 37.8, MAP.SILITHUS },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts (QI!)
 				lvl = 57,
 			}),
 			q(8280, {	-- Securing the Supply Lines
@@ -1050,7 +1050,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				sourceQuest = 8307,	-- Desert Recipe
 				providers = {
 					{ "o", 180503 },	-- Sandy Cookbook
-					{ "i", 20467 },	-- Torn Recipe Page
+					{ "i", 20467 },	-- Torn Recipe Page (QI!)
 				},
 				coord = { 37.9, 45.3, MAP.SILITHUS },
 				requireSkill = COOKING,
@@ -1113,7 +1113,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				sourceQuest = 8323,	-- True Believers
 				qg = 15194,	-- Hermit Ortell
 				coord = { 67.0, 69.6, MAP.SILITHUS },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text (QI!)
 				lvl = 54,
 				repeatable = true,
 			}),
@@ -1271,7 +1271,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/1 Crystal Unlocking Mechanism
 						providers = {
-							{ "i", 20465 },	-- Crystal Unlocking Mechanism
+							{ "i", 20465 },	-- Crystal Unlocking Mechanism (QI!)
 							{ "i", 20464 },	-- Glyphs of Calling
 						},
 						coord = { 48.5, 58.5, MAP.SILITHUS },
@@ -1284,7 +1284,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15183,	-- Geologist Larksbane
 				coord = { 49.7, 37.5, MAP.SILITHUS },
 				lvl = 54,
-				qi = 20401,	-- Restored Twilight Tablet
+				qi = 20401,	-- Restored Twilight Tablet (QI!)
 			}),
 			q(8538, {	-- The Four Dukes
 				lvl = 60,
@@ -1343,10 +1343,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Venoxis's Venom Sac
-						provider = { "i", 22216 },	-- Venoxis's Venom Sac
+						provider = { "i", 22216 },	-- Venoxis's Venom Sac (QI!)
 					}),
 					objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
-						provider = { "i", 22217 },	-- Kurinnaxx's Venom Sac
+						provider = { "i", 22217 },	-- Kurinnaxx's Venom Sac (QI!)
 					}),
 					i(22378),	-- Ravenholdt Slicer
 					i(22379),	-- Shivsprocket's Shiv
@@ -1377,17 +1377,17 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Twilight Lexicon - Chapter 1
-						provider = { "i", 20394 },	-- Twilight Lexicon - Chapter 1
+						provider = { "i", 20394 },	-- Twilight Lexicon - Chapter 1 (QI!)
 						coord = { 26.3, 36.6, MAP.SILITHUS },
 						cr = 15200,	-- Twilight Keeper Mayna <Twilight's Hammer>
 					}),
 					objective(2, {	-- 0/1 Twilight Lexicon - Chapter 2
-						provider = { "i", 20395 },	-- Twilight Lexicon - Chapter 2
+						provider = { "i", 20395 },	-- Twilight Lexicon - Chapter 2 (QI!)
 						coord = { 16.1, 86.4, MAP.SILITHUS },
 						cr = 11803,	-- Twilight Keeper Exeter <Twilight's Hammer>
 					}),
 					objective(3, {	-- 0/1 Twilight Lexicon - Chapter 3
-						provider = { "i", 20396 },	-- Twilight Lexicon - Chapter 3
+						provider = { "i", 20396 },	-- Twilight Lexicon - Chapter 3 (QI!)
 						coord = { 40.9, 42.2, MAP.SILITHUS },
 						cr = 11804,	-- Twilight Keeper Havunth <Twilight's Hammer>
 					}),
@@ -1400,7 +1400,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					objective(1, {	-- 0/8 Twilight Tablet Fragment
 						providers = {
-							{ "i", 20378 },	-- Twilight Tablet Fragment
+							{ "i", 20378 },	-- Twilight Tablet Fragment (QI!)
 							{ "o", 180436 },	-- Twilight Tablet Fragment
 							{ "o", 180501 },	-- Twilight Tablet Fragment
 						},
@@ -1425,7 +1425,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				sourceQuest = 8279,	-- The Twilight Lexicon
 				qg = 15194,	-- Hermit Ortell
 				coord = { 67.0, 69.6, MAP.SILITHUS },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text (QI!)
 				lvl = 54,
 			}),
 			q(8498, {	-- Twilight Battle Orders
@@ -1434,7 +1434,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qi = 20943,	-- Tactical Task Briefing X
 				groups = {
 					objective(1, {	-- 0/1 Twilight Battle Orders
-						provider = { "i", 20803 },	-- Twilight Battle Orders
+						provider = { "i", 20803 },	-- Twilight Battle Orders (QI!)
 						cr = 15308,	-- Twilight Prophet <Twilight's Hammer>
 					}),
 					CENARION_TACTICAL_BADGE,
@@ -1487,7 +1487,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 81.8, 18.8, MAP.SILITHUS },
 				maps = { MAP.MOONGLADE },
 				lvl = 54,
-				qi = 17346,	-- Encrusted Silithid Object
+				qi = 17346,	-- Encrusted Silithid Object (QI!)
 			}),
 			q(8782, {	-- Uniform Supplies (A)
 				cost = {
@@ -1570,7 +1570,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Vyral's Signet Ring
-						provider = { "i", 20466 },	-- Vyral's Signet Ring
+						provider = { "i", 20466 },	-- Vyral's Signet Ring (QI!)
 						coord = { 72.4, 15.6, MAP.SILITHUS },
 						cr = 15202,	-- Vyral the Vile
 					}),
@@ -1584,7 +1584,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Deathclasp's Pincer
-						provider = { "i", 20385 },	-- Deathclasp's Pincer
+						provider = { "i", 20385 },	-- Deathclasp's Pincer (QI!)
 						coord = { 45.0, 91.0, MAP.SILITHUS },
 						cr = 15196,	-- Deathclasp
 					}),
@@ -1679,7 +1679,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					n(15206, {	-- The Duke of Cynders <Abyssal Council>
 						cost = { { "i", 20432, 1 } },	-- Signet of Beckoning: Fire
 						groups = {
-							i(21989),	-- Cinder of Cynders
+							i(21989),	-- Cinder of Cynders (QI!)
 							i(20666),	-- Hardened Steel Warhammer
 							i(20664),	-- Abyssal Cloth Sash
 							i(20665),	-- Abyssal Leather Leggings
@@ -1965,7 +1965,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 						8324,	-- Still Believing
 						8323,	-- True Believers
 					},
-					cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
+					cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text (QI!)
 					groups = {
 						--[[Commented out until confirmed
 						i(20547),	-- Pattern: Runed Stygian Boots (RECIPE!)
@@ -2160,7 +2160,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(20404, {	-- Encrypted Twilight Text
+			i(20404, {	-- Encrypted Twilight Text (QI!)
 				crs = {
 					15308,	-- Twilight Prophet <Twilight's Hammer>
 					15541,	-- Twilight Marauder Morna <Twilight's Hammer>

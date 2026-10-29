@@ -266,7 +266,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 						provider = { "i", 255007 },	-- Golem Isospring
 					}),
 					objective(2, {	-- 0/5 Harvester Gyrostabilizer
-						provider = { "i", 255010 },	-- Harvester Gyrostabilizer
+						provider = { "i", 255010 },	-- Harvester Gyrostabilizer (QI!)
 					}),
 				},
 			}),
@@ -340,7 +340,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/8 Suspicious Industrial Supplies
 						providers = {
-							{ "i", 254676 },	-- Suspicious Industrial Supplies
+							{ "i", 254676 },	-- Suspicious Industrial Supplies (QI!)
 							{ "o", 254676 },	-- Suspicious Crate
 						},
 						coord = { 43.2, 68.3, MAP.WESTFALL },
@@ -355,7 +355,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Longshore Murloc Gill
-						provider = { "i", 254548 },	-- Longshore Murloc Gill
+						provider = { "i", 254548 },	-- Longshore Murloc Gill (QI!)
 						crs = {
 							126,	-- Murloc Coastrunner
 							458,	-- Murloc Hunter
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Holy Spring Water
 						providers = {
-							{ "i", 737 },	-- Holy Spring Water (QI!)
+							{ "i", 737 },	-- Holy Spring Water (QI!) (TODO: verify Quest Item)
 							{ "o", 759 },	-- The Holy Spring
 						},
 						coord = { 28.9, 62.0, MAP.STRANGLETHORN_VALE },
@@ -565,11 +565,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qi = 254545,	-- Well Water Sample Kit (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Jansen Stead Water Sample
-						provider = { "i", 254546 },	-- Jansen Stead Water Sample
+						provider = { "i", 254546 },	-- Jansen Stead Water Sample (QI!)
 						coord = { 56.7, 18.7, MAP.WESTFALL },
 					}),
 					objective(2, {	-- 0/1 Molsen Farm Water Sample
-						provider = { "i", 254547 },	-- Molsen Farm Water Sample
+						provider = { "i", 254547 },	-- Molsen Farm Water Sample (QI!)
 						coord = { 46.2, 38.3, MAP.WESTFALL },
 					}),
 				},
@@ -1082,7 +1082,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			i(2087, {	-- Hard Crawler Carapace
 				cr = 830,	-- Sand Crawler
 			}),
-			i(255010, {	-- Harvester Gyrostabilizer
+			i(255010, {	-- Harvester Gyrostabilizer (QI!)
 				crs = {
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher

@@ -64,7 +64,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Putrid Vine
-						provider = { "i", 22444 },	-- Putrid Vine
+						provider = { "i", 22444 },	-- Putrid Vine (QI!)
 					}),
 					i(22458),	-- Moonshadow Stave
 					i(22272),	-- Forest's Embrace
@@ -79,7 +79,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Blood of Morphaz
-						provider = { "i", 20025 },	-- Blood of Morphaz
+						provider = { "i", 20025 },	-- Blood of Morphaz (QI!)
 						cr = 5719,	-- Morphaz
 					}),
 					i(19990),	-- Blessed Prayer Beads
@@ -96,13 +96,13 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Amber Voodoo Feather
-						provider = { "i", 20606 },	-- Amber Voodoo Feather
+						provider = { "i", 20606 },	-- Amber Voodoo Feather (QI!)
 					}),
 					objective(2, {	-- 0/2 Blue Voodoo Feather
-						provider = { "i", 20607 },	-- Blue Voodoo Feather
+						provider = { "i", 20607 },	-- Blue Voodoo Feather (QI!)
 					}),
 					objective(3, {	-- 0/2 Green Voodoo Feather
-						provider = { "i", 20608 },	-- Green Voodoo Feather
+						provider = { "i", 20608 },	-- Green Voodoo Feather (QI!)
 					}),
 					i(20369),	-- Azurite Fists
 					i(20503),	-- Enamored Water Spirit
@@ -117,7 +117,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Arcane Shard
-						provider = { "i", 20085 },	-- Arcane Shard
+						provider = { "i", 20085 },	-- Arcane Shard (QI!)
 						cr = 5719,	-- Morphaz
 					}),
 					i(20035),	-- Glacial Spike
@@ -134,13 +134,13 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Amber Voodoo Feather
-						provider = { "i", 20606 },	-- Amber Voodoo Feather
+						provider = { "i", 20606 },	-- Amber Voodoo Feather (QI!)
 					}),
 					objective(2, {	-- 0/2 Blue Voodoo Feather
-						provider = { "i", 20607 },	-- Blue Voodoo Feather
+						provider = { "i", 20607 },	-- Blue Voodoo Feather (QI!)
 					}),
 					objective(3, {	-- 0/2 Green Voodoo Feather
-						provider = { "i", 20608 },	-- Green Voodoo Feather
+						provider = { "i", 20608 },	-- Green Voodoo Feather (QI!)
 					}),
 					i(20504),	-- Lightforged Blade
 					i(20505),	-- Chivalrous Signet
@@ -157,7 +157,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/5 Atal'ai Haze
-						provider = { "i", 11318 },	-- Atal'ai Haze
+						provider = { "i", 11318 },	-- Atal'ai Haze (QI!)
 					}),
 				},
 			}),
@@ -174,7 +174,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				sourceQuest = 3444,	-- The Stone Circle
 				providers = {
 					{ "n", 7771 },	-- Marvon Rivetseeker
-					{ "i", 10466 },	-- Atal'ai Stone Circle
+					{ "i", 10466 },	-- Atal'ai Stone Circle (QI!)
 					{ "o", 148836 },	-- Altar of Hakkar
 				},
 				coord = { 52.6, 45.8, MAP.TANARIS },
@@ -189,7 +189,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				groups = {
 					objective(1, {	-- 0/10 Atal'ai Tablet
 						providers = {
-							{ "i", 6288 },	-- Atal'ai Tablet
+							{ "i", 6288 },	-- Atal'ai Tablet (QI!)
 							{ "o", 37099 },	-- Atal'ai Tablet
 						},
 						description = "Scattered around the inside and outside of the instance.",
@@ -203,7 +203,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Head of Jammal'an
-						provider = { "i", 6212 },	-- Head of Jammal'an
+						provider = { "i", 6212 },	-- Head of Jammal'an (QI!)
 					}),
 					i(11124),	-- Helm of Exile
 					i(11123),	-- Rainstrider Leggings
@@ -218,7 +218,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Azure Key
-						provider = { "i", 20022 },	-- Azure Key
+						provider = { "i", 20022 },	-- Azure Key (QI!)
 						cr = 5719,	-- Morphaz
 					}),
 					i(19982),	-- Duskbat Drape
@@ -254,11 +254,11 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Filled Egg of Hakkar
-						provider = { "i", 10662 },	-- Filled Egg of Hakkar
+						provider = { "i", 10662 },	-- Filled Egg of Hakkar (QI!)
 						cr = 8443,	-- Avatar of Hakkar
 						cost = {
-							{ "i", 10465, 1 },	-- Egg of Hakkar
-							{ "i", 10663, 1 },	-- Essence of Hakkar
+							{ "i", 10465, 1 },	-- Egg of Hakkar (QI!)
+							{ "i", 10663, 1 },	-- Essence of Hakkar (QI!)
 						},
 					}),
 					i(10749),	-- Avenguard Helm
@@ -274,7 +274,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Tooth of Morphaz
-						provider = { "i", 20019 },	-- Tooth of Morphaz
+						provider = { "i", 20019 },	-- Tooth of Morphaz (QI!)
 						cr = 5719,	-- Morphaz
 					}),
 					i(19991),	-- Devilsaur Eye
@@ -290,7 +290,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/20 Fetish of Hakkar
-						provider = { "i", 6181 },	-- Fetish of Hakkar
+						provider = { "i", 6181 },	-- Fetish of Hakkar (QI!)
 					}),
 					i(1490),	-- Guardian Talisman
 				},
@@ -303,13 +303,13 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Amber Voodoo Feather
-						provider = { "i", 20606 },	-- Amber Voodoo Feather
+						provider = { "i", 20606 },	-- Amber Voodoo Feather (QI!)
 					}),
 					objective(2, {	-- 0/2 Blue Voodoo Feather
-						provider = { "i", 20607 },	-- Blue Voodoo Feather
+						provider = { "i", 20607 },	-- Blue Voodoo Feather (QI!)
 					}),
 					objective(3, {	-- 0/2 Green Voodoo Feather
-						provider = { "i", 20608 },	-- Green Voodoo Feather
+						provider = { "i", 20608 },	-- Green Voodoo Feather (QI!)
 					}),
 					i(20534),	-- Abyss Shard
 					i(20530),	-- Robes of Servitude
@@ -324,13 +324,13 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Amber Voodoo Feather
-						provider = { "i", 20606 },	-- Amber Voodoo Feather
+						provider = { "i", 20606 },	-- Amber Voodoo Feather (QI!)
 					}),
 					objective(2, {	-- 0/2 Blue Voodoo Feather
-						provider = { "i", 20607 },	-- Blue Voodoo Feather
+						provider = { "i", 20607 },	-- Blue Voodoo Feather (QI!)
 					}),
 					objective(3, {	-- 0/2 Green Voodoo Feather
-						provider = { "i", 20608 },	-- Green Voodoo Feather
+						provider = { "i", 20608 },	-- Green Voodoo Feather (QI!)
 					}),
 					i(20130),	-- Diamond Flask
 					i(20517),	-- Razorsteel Shoulders
@@ -341,27 +341,27 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				sourceQuest = 4147,	-- Marvon's Workshop
 				providers = {
 					{ "n", 8496 },	-- Liv Rizzlefix <Workshop Assistant>
-					{ "i", 11319 },	-- Unloaded Zapper
+					{ "i", 11319 },	-- Unloaded Zapper (QI!)
 				},
 				coord = { 62.5, 38.7, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/5 Atal'ai Haze
-						provider = { "i", 11318 },	-- Atal'ai Haze
+						provider = { "i", 11318 },	-- Atal'ai Haze (QI!)
 					}),
 				},
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(11318, {	-- Atal'ai Haze
+			i(11318, {	-- Atal'ai Haze (QI!)
 				crs = {
 					8384,	-- Deep Lurker
 					5226,	-- Murk Worm
 					5228,	-- Saturated Ooze
 				},
 			}),
-			i(6181),	-- Fetish of Hakkar
+			i(6181),	-- Fetish of Hakkar (QI!)
 			i(16216, {	-- Formula: Enchant Cloak - Greater Resistance (RECIPE!)
 				crs = {
 					5259,	-- Atal'ai Witch Doctor
@@ -382,19 +382,19 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			i(10634),	-- Mindseye Circle
 		}),
 		n(COMMON_BOSS_DROPS, {
-			i(20606, {	-- Amber Voodoo Feather
+			i(20606, {	-- Amber Voodoo Feather (QI!)
 				crs = {
 					5713,	-- Gasher
 					5716,	-- Zul'Lor
 				},
 			}),
-			i(20607, {	-- Blue Voodoo Feather
+			i(20607, {	-- Blue Voodoo Feather (QI!)
 				crs = {
 					5715,	-- Hukku
 					5717,	-- Mijan
 				},
 			}),
-			i(20608, {	-- Green Voodoo Feather
+			i(20608, {	-- Green Voodoo Feather (QI!)
 				crs = {
 					5714,	-- Loro
 					5712,	-- Zolo
@@ -429,7 +429,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				n(8580, {	-- Atal'alarion
 					description = "Summoned by activating the Atal'ai Statues in the proper order.",
 					groups = {
-						i(22444),	-- Putrid Vine
+						i(22444),	-- Putrid Vine (QI!)
 						i(10799),	-- Headspike
 						i(10800),	-- Darkwater Bracers
 						i(10798),	-- Atal'alarion Tusk Ring
@@ -462,11 +462,11 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 				8440,	-- Shade of Hakkar
 			},
 			cost = {
-				{ "i", 10465, 1 },	-- Egg of Hakkar
+				{ "i", 10465, 1 },	-- Egg of Hakkar (QI!)
 				{ "i", 10818, 1 },	-- Yeh'kinya's Scroll
 			},
 			groups = {
-				i(10663),	-- Essence of Hakkar
+				i(10663),	-- Essence of Hakkar (QI!)
 				i(10844),	-- Spire of Hakkar
 				i(10838),	-- Might of Hakkar
 				i(10843),	-- Featherskin Cape
@@ -482,7 +482,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			i(10804),	-- Fist of the Damned
 		}),
 		n(5710, {	-- Jammal'an the Prophet
-			i(6212),	-- Head of Jammal'an
+			i(6212),	-- Head of Jammal'an (QI!)
 			i(10806),	-- Vestments of the Atal'ai Prophet
 			i(10808),	-- Gloves of the Atal'ai Prophet
 			i(10807),	-- Kilt of the Atal'ai Prophet

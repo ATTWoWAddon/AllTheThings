@@ -66,7 +66,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				}),
 			}),
 			prof(FISHING, {
-				i(16967, {	-- Feralas Ahi
+				i(16967, {	-- Feralas Ahi (QI!)
 					description = "Best fished at the given coords.",
 					coords = {
 						{ 62.0, 52.0, MAP.FERALAS },	-- Verdantis River
@@ -95,7 +95,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/20 Grimtotem Horn
-						provider = { "i", 9460 },	-- Grimtotem Horn
+						provider = { "i", 9460 },	-- Grimtotem Horn (QI!)
 						crs = {
 							7726,	-- Grimtotem Naturalist
 							7725,	-- Grimtotem Raider
@@ -110,7 +110,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 76.0, 42.8, MAP.FERALAS },
 				races = HORDE_ONLY,
 				lvl = 37,
-				qi = 9462,	-- Crate of Grimtotem Horns
+				qi = 9462,	-- Crate of Grimtotem Horns (QI!)
 				groups = {
 					i(11858),	-- Battlehard Cape
 					i(11859),	-- Jademoon Orb
@@ -134,7 +134,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- Iridescent Sprite Darter Wing
-						provider = { "i", 9369 },	-- Iridescent Sprite Darter Wing
+						provider = { "i", 9369 },	-- Iridescent Sprite Darter Wing (QI!)
 						crs = {
 							7997,	-- Captured Sprite Darter
 							5278,	-- Sprite Darter
@@ -148,7 +148,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 40,
-				qi = 9629,	-- A Shrunken Head
+				qi = 9629,	-- A Shrunken Head (QI!)
 			}),
 			q(2981, {	-- A Threat in Feralas
 				qg = 4485,	-- Belgrom Rockmaul
@@ -166,8 +166,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/10 Miniaturization Residue
-						provider = { "i", 18956 },	-- Miniaturization Residue
-						cost = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker
+						provider = { "i", 18956 },	-- Miniaturization Residue (QI!)
+						cost = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker (QI!)
 						crs = {
 							5358,	-- Cliff Giant
 							5360,	-- Deep Strider
@@ -186,7 +186,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Mysterious Relic
-						provider = { "i", 9248 },	-- Mysterious Relic
+						provider = { "i", 9248 },	-- Mysterious Relic (QI!)
 						coord = { 28.4, 70.4, MAP.FERALAS },
 						cr = 8136,	-- Lord Shalzaru
 					}),
@@ -207,7 +207,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Hatecrest Naga Scale
-						provider = { "i", 9247 },	-- Hatecrest Naga Scale
+						provider = { "i", 9247 },	-- Hatecrest Naga Scale (QI!)
 						crs = {
 							5334,	-- Hatecrest Myrmidon
 							5335,	-- Hatecrest Screamer
@@ -246,7 +246,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				sourceQuest = 4125,	-- The Missing Courier (2)
 				providers = {
 					{ "o", 164909 },	-- Wrecked Row Boat
-					{ "i", 11462 },	-- Discarded Knife
+					{ "i", 11462 },	-- Discarded Knife (QI!)
 				},
 				coord = { 45.4, 65.0, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
@@ -260,7 +260,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Gordunni Orb
-						provider = { "i", 9371 },	-- Gordunni Orb
+						provider = { "i", 9371 },	-- Gordunni Orb (QI!)
 						coord = { 59.2, 70.2, MAP.FERALAS },
 						cr = 5239,	-- Gordunni Mage-Lord
 					}),
@@ -273,12 +273,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Edana's Dark Heart
-						provider = { "i", 9528 },	-- Edana's Dark Heart
+						provider = { "i", 9528 },	-- Edana's Dark Heart (QI!)
 						coord = { 40.6, 8.6, MAP.FERALAS },
-						cost = { { "i", 9530, 1 } },	-- Horn of Hatetalon
+						cost = { { "i", 9530, 1 } },	-- Horn of Hatetalon (QI!)
 						cr = 8075,	-- Edana Hatetalon
 					}),
-					i(9530, {	-- Horn of Hatetalon
+					i(9530, {	-- Horn of Hatetalon (QI!)
 						crs = {
 							5366,	-- Northspring Windcaller
 							5364,	-- Northspring Slayer
@@ -296,7 +296,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 30.4, 46.2, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
-				qi = 9248,	-- Mysterious Relic
+				qi = 9248,	-- Mysterious Relic (QI!)
 				groups = {
 					i(9663),	-- Dawnrider's Chestpiece
 					i(9664),	-- Sentinel's Guard
@@ -327,7 +327,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
-				qi = 9368,	-- Jer'kai's Signet Ring
+				qi = 9368,	-- Jer'kai's Signet Ring (QI!)
 				groups = {
 					i(10705),	-- Firwillow Wristbands
 					i(10706),	-- Nightscale Girdle
@@ -341,8 +341,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/8 Faerie Dragon Muisek
-						provider = { "i", 9596 },	-- Faerie Dragon Muisek
-						cost = { { "i", 9620, 1 } },	-- Faerie Dragon Muisek Vessel
+						provider = { "i", 9596 },	-- Faerie Dragon Muisek (QI!)
+						cost = { { "i", 9620, 1 } },	-- Faerie Dragon Muisek Vessel (QI!)
 						crs = {
 							5278,	-- Sprite Darter
 							5276,	-- Sprite Dragon
@@ -372,7 +372,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 							{ "n", 7997 },	-- Captured Sprite Darter
 							{ "n", 5278 },	-- Sprite Darter
 						},
-						cost = { { "i", 12301, 1 } },	-- Bamboo Cage Key
+						cost = { { "i", 12301, 1 } },	-- Bamboo Cage Key (QI!)
 					}),
 				},
 			}),
@@ -382,7 +382,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/10 Water Elemental Core
-						provider = { "i", 18958 },	-- Water Elemental Core
+						provider = { "i", 18958 },	-- Water Elemental Core (QI!)
 						crs = {
 							5461,	-- Sea Elemental
 							5462,	-- Sea Spray
@@ -399,10 +399,10 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				groups = {
 					objective(1, {	-- 0/12 Gordunni Cobalt
 						providers = {
-							{ "i", 9463 },	-- Gordunni Cobalt
+							{ "i", 9463 },	-- Gordunni Cobalt (QI!)
 							{ "o", 144064 },	-- Gordunni Dirt Mound
 						},
-						cost = { { "i", 9466, 1 } },	-- Orwin's Shovel
+						cost = { { "i", 9466, 1 } },	-- Orwin's Shovel (QI!)
 					}),
 					i(9658),	-- Boots of the Maharishi
 					i(9660),	-- Stargazer Cloak
@@ -419,8 +419,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Hippogryph Muisek
-						provider = { "i", 9595 },	-- Hippogryph Muisek
-						cost = { { "i", 9619, 1 } },	-- Hippogryph Muisek Vessel
+						provider = { "i", 9595 },	-- Hippogryph Muisek (QI!)
+						cost = { { "i", 9619, 1 } },	-- Hippogryph Muisek Vessel (QI!)
 						crs = {
 							5347,	-- Antilus the Soarer
 							5300,	-- Frayfeather Hippogryph
@@ -439,7 +439,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Rage Scar Yeti Hide
-						provider = { "i", 18947 },	-- Rage Scar Yeti Hide
+						provider = { "i", 18947 },	-- Rage Scar Yeti Hide (QI!)
 						description = "Can also be looted via Skinning to speed up your progress.",
 						crs = {
 							5297,	-- Elder Rage Scar
@@ -458,7 +458,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Rage Scar Yeti Hide
-						provider = { "i", 18947 },	-- Rage Scar Yeti Hide
+						provider = { "i", 18947 },	-- Rage Scar Yeti Hide (QI!)
 						description = "Can also be looted via Skinning to speed up your progress.",
 						crs = {
 							5297,	-- Elder Rage Scar
@@ -501,7 +501,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					},
 					providers = {
 						{ "n", 7852 },	-- Pratt McGrubben
-						{ "i", 9235 },	-- Pratt's Letter
+						{ "i", 9235 },	-- Pratt's Letter (QI!)
 					},
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
@@ -515,7 +515,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					},
 					providers = {
 						{ "n", 7854 },	-- Jangdor Swiftstrider
-						{ "i", 9236 },	-- Jangdor's Letter
+						{ "i", 9236 },	-- Jangdor's Letter (QI!)
 					},
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
@@ -543,8 +543,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/7 Mountain Giant Muisek
-						provider = { "i", 9597 },	-- Mountain Giant Muisek
-						cost = { { "i", 9621, 1 } },	-- Mountain Giant Muisek Vessel
+						provider = { "i", 9597 },	-- Mountain Giant Muisek (QI!)
+						cost = { { "i", 9621, 1 } },	-- Mountain Giant Muisek Vessel (QI!)
 						crs = {
 							5358,	-- Cliff Giant
 							5357,	-- Land Walker
@@ -560,11 +560,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/2 Splintered Log
-						provider = { "i", 9590 },	-- Splintered Log
+						provider = { "i", 9590 },	-- Splintered Log (QI!)
 						cr = 7584,	-- Wandering Forest Walker
 					}),
 					objective(2, {	-- 0/6 Encrusted Minerals
-						provider = { "i", 9589 },	-- Encrusted Minerals
+						provider = { "i", 9589 },	-- Encrusted Minerals (QI!)
 						crs = {
 							7997,	-- Captured Sprite Darter
 							5358,	-- Cliff Giant
@@ -574,7 +574,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 						},
 					}),
 					objective(3, {	-- 0/20 Resilient Sinew
-						provider = { "i", 9591 },	-- Resilient Sinew
+						provider = { "i", 9591 },	-- Resilient Sinew (QI!)
 						crs = {
 							5347,	-- Antilus the Soarer
 							5300,	-- Frayfeather Hippogryph
@@ -588,7 +588,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 						},
 					}),
 					objective(4, {	-- 0/40 Metallic Fragments
-						provider = { "i", 9592 },	-- Metallic Fragments
+						provider = { "i", 9592 },	-- Metallic Fragments (QI!)
 						crs = {
 							5347,	-- Antilus the Soarer
 							5358,	-- Cliff Giant
@@ -639,7 +639,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Pristine Pesterhide Pelt
-						provider = { "i", 279472 },	-- Pristine Pesterhide Pelt
+						provider = { "i", 279472 },	-- Pristine Pesterhide Pelt (QI!)
 						cr = 4249,	-- Pesterhide Snarler
 						coord = { 89.2, 45.0, MAP.FERALAS },
 					}),
@@ -672,7 +672,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/6 Water Elemental Core
-						provider = { "i", 18958 },	-- Water Elemental Core
+						provider = { "i", 18958 },	-- Water Elemental Core (QI!)
 						crs = {
 							5461,	-- Sea Elemental
 							5462,	-- Sea Spray
@@ -703,7 +703,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 49.6, 50.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 40,
-				qi = 9628,	-- Neeru's Herb Pouch
+				qi = 9628,	-- Neeru's Herb Pouch (QI!)
 			}),
 			q(4267, {	-- Rise of the Silithid
 				sourceQuest = 4266,	-- A Hero's Welcome
@@ -711,7 +711,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 30.3, 46.2, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
-				qi = 11466,	-- Raschal's Report
+				qi = 11466,	-- Raschal's Report (QI!)
 				groups = {
 				},
 			}),
@@ -723,7 +723,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/1 Stinglasher's Glands
-						provider = { "i", 18962 },	-- Stinglasher's Glands
+						provider = { "i", 18962 },	-- Stinglasher's Glands (QI!)
 						coord = { 75.4, 61.0, MAP.FERALAS },
 						cr = 14661,	-- Stinglasher
 					}),
@@ -738,8 +738,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Wildkin Muisek
-						provider = { "i", 9594 },	-- Wildkin Muisek
-						cost = { { "i", 9618, 1 } },	-- Wildkin Muisek Vessel
+						provider = { "i", 9594 },	-- Wildkin Muisek (QI!)
+						cost = { { "i", 9618, 1 } },	-- Wildkin Muisek Vessel (QI!)
 						cr = 2927,	-- Vicious Owlbeast
 					}),
 				},
@@ -755,7 +755,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				sourceQuest = 2902,	-- Woodpaw Investigation
 				providers = {
 					{ "o", 142195 },	-- Woodpaw Battle Map
-					{ "i", 9266 },	-- Woodpaw Battle Plans
+					{ "i", 9266 },	-- Woodpaw Battle Plans (QI!)
 				},
 				coord = { 71.6, 55.9, MAP.FERALAS },
 				races = HORDE_ONLY,
@@ -778,7 +778,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 9371,	-- Gordunni Orb
+				qi = 9371,	-- Gordunni Orb (QI!)
 			}),
 			q(2978, {	-- The Gordunni Scroll
 				providers = {
@@ -815,7 +815,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				coord = { 31.9, 45.1, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
-				qi = 11462,	-- Discarded Knife
+				qi = 11462,	-- Discarded Knife (QI!)
 			}),
 			q(2821, {	-- The Mark of Quality [A]
 				qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
@@ -824,7 +824,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Thick Yeti Hide
-						provider = { "i", 8973 },	-- Thick Yeti Hide
+						provider = { "i", 8973 },	-- Thick Yeti Hide (QI!)
 						description = "Can also be looted via Skinning to speed up your progress.",
 						crs = {
 							5346,	-- Bloodroar the Stalker
@@ -845,7 +845,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/10 Thick Yeti Hide
-						provider = { "i", 8973 },	-- Thick Yeti Hide
+						provider = { "i", 8973 },	-- Thick Yeti Hide (QI!)
 						description = "Can also be looted via Skinning to speed up your progress.",
 						crs = {
 							5346,	-- Bloodroar the Stalker
@@ -876,8 +876,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				sourceQuest = 2879,	-- The Stave of Equinex
 				providers = {
 					{ "o", 144063 },	-- Equinex Monolith
-					{ "i", 9306 },	-- Stave of Equinex
-					{ "i", 9307 },	-- A Sparkling Stone
+					{ "i", 9306 },	-- Stave of Equinex (QI!)
+					{ "i", 9307 },	-- A Sparkling Stone (QI!)
 				},
 				coord = { 38.9, 13.2, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
@@ -952,9 +952,9 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 42,
 				groups = {
 					objective(1, {	-- 0/1 Stave of Equinex
-						provider = { "i", 9306 },	-- Stave of Equinex
+						provider = { "i", 9306 },	-- Stave of Equinex (QI!)
 						cost = {
-							{ "i", 9263, 1 },	-- Troyas' Stave
+							{ "i", 9263, 1 },	-- Troyas' Stave (QI!)
 							{ "i", 9258, 1 },	-- Byltan Essence
 							{ "i", 9256, 1 },	-- Imbel Essence
 							{ "i", 9255, 1 },	-- Lahassa Essence
@@ -1029,8 +1029,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/3 Treant Muisek
-						provider = { "i", 9593 },	-- Treant Muisek
-						cost = { { "i", 9606, 1 } },	-- Treant Muisek Vessel
+						provider = { "i", 9593 },	-- Treant Muisek (QI!)
+						cost = { { "i", 9606, 1 } },	-- Treant Muisek Vessel (QI!)
 						cr = 7584,	-- Wandering Forest Walker
 					}),
 				},
@@ -1064,12 +1064,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				groups = {
 					objective(1, {	-- Shay's Bell
 						providers = {
-							{ "i", 9189 },	-- Shay's Bell
+							{ "i", 9189 },	-- Shay's Bell (QI!)
 							{ "o", 144054 },	-- Shay's Chest
 						},
 					}),
 					objective(2, {	-- Take Shay Leafrunner to Rockbiter's camp
-						provider = { "i", 9189 },	-- Shay's Bell
+						provider = { "i", 9189 },	-- Shay's Bell (QI!)
 						coord = { 42.4, 22.0, MAP.FERALAS },
 						cr = 7765,	-- Rockbiter
 					}),
@@ -1084,7 +1084,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/10 Woodpaw Gnoll Mane
-						provider = { "i", 9237 },	-- Woodpaw Gnoll Mane
+						provider = { "i", 9237 },	-- Woodpaw Gnoll Mane (QI!)
 						crs = {
 							5258,	-- Woodpaw Alpha
 							5253,	-- Woodpaw Brute
@@ -1253,8 +1253,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/15 Miniaturization Residue
-						provider = { "i", 18956 },	-- Miniaturization Residue
-						cost = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker
+						provider = { "i", 18956 },	-- Miniaturization Residue (QI!)
+						cost = { { "i", 18904, 1 } },	-- Zorbin's Ultra-Shrinker (QI!)
 						crs = {
 							5358,	-- Cliff Giant
 							5360,	-- Deep Strider
@@ -1274,7 +1274,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/20 Zukk'ash Carapace
-						provider = { "i", 18961 },	-- Zukk'ash Carapace
+						provider = { "i", 18961 },	-- Zukk'ash Carapace (QI!)
 						crs = {
 							14661,	-- Stinglasher
 							5244,	-- Zukk'ash Stinger
@@ -1295,7 +1295,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 39,
-				qi = 19020,	-- Camp Mojache Zukk'ash Report
+				qi = 19020,	-- Camp Mojache Zukk'ash Report (QI!)
 				groups = {
 					i(19038),	-- Ring of Subtlety
 					i(19037),	-- Emerald Peak Spaulders

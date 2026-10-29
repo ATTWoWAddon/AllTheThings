@@ -168,7 +168,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- Glowing Soul Gem
-						provider = { "i", 5366 },	-- Glowing Soul Gem
+						provider = { "i", 5366 },	-- Glowing Soul Gem (QI!)
 						crs = {
 							3728,	-- Dark Strand Adept
 							3879,	-- Dark Strand Assassin
@@ -187,7 +187,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/1 Ilkrud Magthrull's Tome
-						provider = { "i", 5533 },	-- Ilkrud Magthrull's Tome
+						provider = { "i", 5533 },	-- Ilkrud Magthrull's Tome (QI!)
 						coord = { 25.2, 60.6, MAP.ASHENVALE },
 						cr = 3664,	-- Ilkrud Magthrull
 					}),
@@ -220,7 +220,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Ancient Statuette
 						providers = {
-							{ "i", 5424 },	-- Ancient Statuette
+							{ "i", 5424 },	-- Ancient Statuette (QI!)
 							{ "o", 17783 },	-- Ancient Statuette
 						},
 						coord = { 14.2, 20.6, MAP.ASHENVALE },
@@ -234,7 +234,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/20 Wrathtail Head
-						provider = { "i", 5490 },	-- Wrathtail Head
+						provider = { "i", 5490 },	-- Wrathtail Head (QI!)
 						crs = {
 							3711,	-- Wrathtail Myrmidon
 							3944,	-- Wrathtail Priestess
@@ -254,7 +254,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Ring of Zoram
-						provider = { "i", 5445 },	-- Ring of Zoram
+						provider = { "i", 5445 },	-- Ring of Zoram (QI!)
 						coords = {
 							{ 7.2, 13.0, MAP.ASHENVALE },
 							{ 9.4, 15.2, MAP.ASHENVALE },
@@ -277,7 +277,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/5 Bathran's Hair
 						providers = {
-							{ "i", 5437 },	-- Bathran's Hair
+							{ "i", 5437 },	-- Bathran's Hair (QI!)
 							{ "o", 17282 },	-- Plant Bundle
 						},
 						coord = { 31.8, 22.9, MAP.ASHENVALE },
@@ -293,7 +293,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Bottle of Disease
 						providers = {
-							{ "i", 5440 },	-- Bottle of Disease
+							{ "i", 5440 },	-- Bottle of Disease (QI!)
 							{ "i", 18036 },	-- Bottle of Disease
 						},
 						coord = { 75.3, 72.3, MAP.ASHENVALE },
@@ -335,14 +335,14 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Divined Scroll
-						provider = { "i", 5455 },	-- Divined Scroll
+						provider = { "i", 5455 },	-- Divined Scroll (QI!)
 						cost = {
-							{ "i", 5456, 1 },	-- Divining Scroll
-							{ "i", 12220, 5 },	-- Intact Elemental Bracer
+							{ "i", 5456, 1 },	-- Divining Scroll (QI!)
+							{ "i", 12220, 5 },	-- Intact Elemental Bracer (QI!)
 						},
 					}),
-					i(5456),	-- Divining Scroll
-					i(12220, {	-- Intact Elemental Bracer
+					i(5456),	-- Divining Scroll (QI!)
+					i(12220, {	-- Intact Elemental Bracer (QI!)
 						crs = {
 							3917,	-- Befouled Water Elemental
 							12759,	-- Tideress
@@ -359,7 +359,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Sarilus Foulborne's Head
-						provider = { "i", 5537 },	-- Sarilus Foulborne's Head
+						provider = { "i", 5537 },	-- Sarilus Foulborne's Head (QI!)
 						coord = { 48.2, 19.0, MAP.THE_BARRENS },
 						cr = 3986,	-- Sarilus Foulborne
 					}),
@@ -374,7 +374,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 26.4, 38.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 5460,	-- Orendil's Cure
+				qi = 5460,	-- Orendil's Cure (QI!)
 			}),
 			q(1021, {	-- Vile Satyr! Dryads in Danger!
 				qg = 3901,	-- Illiyana
@@ -400,10 +400,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 20.2, 42.2, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-				qi = 5505,	-- Teronis' Journal
+				qi = 5505,	-- Teronis' Journal (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Glowing Gem
-						provider = { "i", 5463 },	-- Glowing Gem
+						provider = { "i", 5463 },	-- Glowing Gem (QI!)
 						crs = {
 							3740,	-- Saltspittle Muckdweller
 							3742,	-- Saltspittle Oracle
@@ -419,7 +419,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-				qi = 5463,	-- Glowing Gem
+				qi = 5463,	-- Glowing Gem (QI!)
 			}),
 			q(1025, {	-- An Aggressive Defense
 				sourceQuest = 1023,	-- Raene's Cleansing (2/11)
@@ -451,11 +451,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Iron Shaft
 						providers = {
-							{ "i", 5464 },	-- Iron Shaft
+							{ "i", 5464 },	-- Iron Shaft (QI!)
 							{ "o", 19022 },	-- Worn Chest
 						},
 						coord = { 54.4, 35.3, MAP.ASHENVALE },
-						cost = { { "i", 5475, 1 } },	-- Wooden Key
+						cost = { { "i", 5475, 1 } },	-- Wooden Key (QI!)
 						crs = {
 							3834,	-- Crazed Ancient
 							3919,	-- Withered Ancient
@@ -472,7 +472,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Iron Pommel
 						providers = {
-							{ "i", 5519 },	-- Iron Pommel
+							{ "i", 5519 },	-- Iron Pommel (QI!)
 							{ "o", 19021 },	-- Rusty Chest
 						},
 						description = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
@@ -515,7 +515,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/1 Branch of Cenarius
-						provider = { "i", 5461 },	-- Branch of Cenarius
+						provider = { "i", 5461 },	-- Branch of Cenarius (QI!)
 						coord = { 78.6, 42.8, MAP.ASHENVALE },
 						cr = 4619,	-- Geltharis
 					}),
@@ -531,7 +531,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/16 Satyr Horns
-						provider = { "i", 5481 },	-- Satyr Horns
+						provider = { "i", 5481 },	-- Satyr Horns (QI!)
 						crs = {
 							3898,	-- Aligar the Tormentor
 							3899,	-- Balizar the Umbrage
@@ -563,7 +563,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Elune's Tear
 						providers = {
-							{ "i", 5493 },	-- Elune's Tear
+							{ "i", 5493 },	-- Elune's Tear (QI!)
 							{ "o", 19015 },	-- Elune's Tear
 						},
 						coord = { 46.0, 46.5, MAP.ASHENVALE },
@@ -579,7 +579,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/5 Handful of Stardust
 						providers = {
-							{ "i", 5494 },	-- Handful of Stardust
+							{ "i", 5494 },	-- Handful of Stardust (QI!)
 							{ "o", 19016 },	-- Stardust Covered Bush
 						},
 						coord = { 33.9, 68.2, MAP.ASHENVALE },
@@ -594,7 +594,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Fallen Moonstone
-						provider = { "i", 5508 },	-- Fallen Moonstone
+						provider = { "i", 5508 },	-- Fallen Moonstone (QI!)
 						coord = { 66.6, 82.0, MAP.ASHENVALE },
 						cr = 3931,	-- Shadethicket Oracle
 					}),
@@ -619,7 +619,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				qi = 5462,	-- Dartol's Rod of Transformation
 				groups = {
 					objective(1, {	-- 0/1 Ran Bloodtooth
-						provider = { "i", 5388 },	-- Ran Bloodtooth's Skull
+						provider = { "i", 5388 },	-- Ran Bloodtooth's Skull (QI!)
 						coord = { 54.6, 79.4, MAP.ASHENVALE },
 						cr = 3696,	-- Ran Bloodtooth
 					}),
@@ -636,7 +636,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Ran Bloodtooth's Skull
-						provider = { "i", 5388 },	-- Ran Bloodtooth's Skull
+						provider = { "i", 5388 },	-- Ran Bloodtooth's Skull (QI!)
 					}),
 					objective(2, {	-- 0/1 Dartol's Rod of Transformation
 						provider = { "i", 5462 },	-- Dartol's Rod of Transformation
@@ -657,7 +657,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Dal Bloodclaw's Skull
-						provider = { "i", 5544 },	-- Dal Bloodclaw's Skull
+						provider = { "i", 5544 },	-- Dal Bloodclaw's Skull (QI!)
 						coord = { 37.6, 35.4, MAP.ASHENVALE },
 						cr = 3987,	-- Dal Bloodclaw
 					}),
@@ -688,7 +688,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/12 Pridewing Venom Sac
-						provider = { "i", 5808 },	-- Pridewing Venom Sac
+						provider = { "i", 5808 },	-- Pridewing Venom Sac (QI!)
 						crs = {
 							4014,	-- Pridewing Consort
 							4015,	-- Pridewing Patriarch
@@ -738,7 +738,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 34.7, 48.9, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
-				qi = 12060,	-- Shindrell's Note
+				qi = 12060,	-- Shindrell's Note (QI!)
 			}),
 			q(6382, {	-- The Ashenvale Hunt (1/2) [The Barrens]
 				qg = 3387,	-- Jorn Skyseer
@@ -767,7 +767,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 21,
 				groups = {
 					objective(1, {	-- 0/16 Satyr Horns
-						provider = { "i", 5481 },	-- Satyr Horns
+						provider = { "i", 5481 },	-- Satyr Horns (QI!)
 						crs = {
 							3898,	-- Aligar the Tormentor
 							3899,	-- Balizar the Umbrage
@@ -799,7 +799,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/20 Wrathtail Head
-						provider = { "i", 5490 },	-- Wrathtail Head
+						provider = { "i", 5490 },	-- Wrathtail Head (QI!)
 						crs = {
 							3711,	-- Wrathtail Myrmidon
 							3944,	-- Wrathtail Priestess
@@ -821,7 +821,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/8 Troll Charm
 						providers = {
-							{ "i", 16602 },	-- Troll Charm
+							{ "i", 16602 },	-- Troll Charm (QI!)
 							{ "o", 178144 },	-- Troll Chest
 						},
 						coord = { 40.8, 32.9, MAP.ASHENVALE },
@@ -895,7 +895,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 48.12, 5.42, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 17,
-				qi = 16783,	-- Bundle of Reports
+				qi = 16783,	-- Bundle of Reports (QI!)
 				groups = {
 					q(6546, {	-- Warsong Outrider Update
 						qg = 12864,	-- Warsong Outrider
@@ -905,7 +905,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						groups = {
 							objective(3, {	-- 0/1 Warsong Outrider Update
 								questID = 6543,	-- The Warsong Reports
-								provider = { "i", 16765 },	-- Warsong Outrider Update
+								provider = { "i", 16765 },	-- Warsong Outrider Update (QI!)
 							}),
 						},
 					}),
@@ -917,7 +917,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						groups = {
 							objective(2, {	-- 0/1 Warsong Runner Update
 								questID = 6543,	-- The Warsong Reports
-								provider = { "i", 16763 },	-- Warsong Runner Update
+								provider = { "i", 16763 },	-- Warsong Runner Update (QI!)
 							}),
 						},
 					}),
@@ -929,7 +929,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						groups = {
 							objective(1, {	-- 0/1 Warsong Scout Update
 								questID = 6543,	-- The Warsong Reports
-								provider = { "i", 16764 },	-- Warsong Scout Update
+								provider = { "i", 16764 },	-- Warsong Scout Update (QI!)
 							}),
 						},
 					}),
@@ -964,20 +964,20 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						groups = {
 							objective(1, {	-- 0/1 Warsong Saw Blades
 								questID = 6571,	-- Warsong Supplies
-								provider = { "i", 16742 },	-- Warsong Saw Blades
+								provider = { "i", 16742 },	-- Warsong Saw Blades (QI!)
 							}),
 						},
 					}),
 					objective(2, {	-- 0/1 Warsong Axe Shipment
 						providers = {
-							{ "i", 16745 },	-- Warsong Axe Shipment
+							{ "i", 16745 },	-- Warsong Axe Shipment (QI!)
 							{ "o", 178204 },	-- Warsong Axe Shipment
 						},
 						coord = { 25.6, 73.4, MAP.STRANGLETHORN_VALE },
 					}),
 					objective(3, {	-- 0/1 Warsong Oil
 						providers = {
-							{ "i", 16744 },	-- Warsong Oil
+							{ "i", 16744 },	-- Warsong Oil (QI!)
 							{ "o", 178195 },	-- Warsong Oil
 						},
 						coords = {
@@ -987,7 +987,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						},
 					}),
 					objective(4, {	-- 0/1 Logging Rope
-						provider = { "i", 16743 },	-- Logging Rope
+						provider = { "i", 16743 },	-- Logging Rope (QI!)
 						crs = {
 							3746,	-- Foulweald Den Watcher
 							3745,	-- Foulweald Pathfinder
@@ -1023,11 +1023,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Murgut's Totem
 						providers = {
-							{ "i", 16976 },	-- Murgut's Totem
+							{ "i", 16976 },	-- Murgut's Totem (QI!)
 							{ "o", 178227 },	-- Murgut's Totem Basket
 						},
 						coord = { 56.5, 63.5, MAP.ASHENVALE },
-						cost = { { "i", 16972, 1 } },	-- Karang's Banner
+						cost = { { "i", 16972, 1 } },	-- Karang's Banner (QI!)
 						cr = 12918,	-- Chief Murgut
 					}),
 					i(17005),	-- Boorguard Tunic
@@ -1082,12 +1082,12 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Jagged Orcish Sword
-						provider = { "i", 279505 },	-- Jagged Orcish Sword
+						provider = { "i", 279505 },	-- Jagged Orcish Sword (QI!)
 						cr = 11682,	-- Horde Grunt
 						coord = { 71.4, 81.2, MAP.ASHENVALE },
 					}),
 					objective(2, {	-- 0/4 Curved Orcish Dagger
-						provider = { "i", 279507 },	-- Curved Orcish Dagger
+						provider = { "i", 279507 },	-- Curved Orcish Dagger (QI!)
 						cr = 11680,	-- Horde Scout
 						coord = { 69.4, 82.4, MAP.ASHENVALE },
 					}),
@@ -1147,7 +1147,7 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					objective(1, {	-- 0/1 Vine-Wrapped Scroll
 						providers = {
-							{ "i", 281014 },	-- Vine-Wrapped Scroll
+							{ "i", 281014 },	-- Vine-Wrapped Scroll (QI!)
 							{ "o", 673431 },	-- Vine-Wrapped Scroll
 						},
 						coord = { 81.1, 50.3, MAP.ASHENVALE },

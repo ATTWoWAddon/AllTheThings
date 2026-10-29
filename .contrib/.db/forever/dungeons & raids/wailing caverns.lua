@@ -47,7 +47,7 @@ instanceroot(240, {	-- Wailing Caverns
 					lvl = 13,
 					groups = {
 						objective(1, {	-- 0/20 Deviate Hide
-							provider = { "i", 6443 },	-- Deviate Hide
+							provider = { "i", 6443 },	-- Deviate Hide (QI!)
 						}),
 						i(6480),	-- Slick Deviate Leggings
 						i(918),	-- Deviate Hide Pack
@@ -59,7 +59,7 @@ instanceroot(240, {	-- Wailing Caverns
 					coord = { 52.3, 31.9, MAP.THE_BARRENS },
 					races = HORDE_ONLY,
 					lvl = 10,
-					qi = 10414,	-- Sample Snapjaw Shell
+					qi = 10414,	-- Sample Snapjaw Shell (QI!)
 				}),
 				q(3370, {	-- In Nightmares [A]
 					description = "She lives in a house on top of the mountain.",
@@ -70,7 +70,7 @@ instanceroot(240, {	-- Wailing Caverns
 					lvl = 15,
 					groups = {
 						objective(1, {
-							provider = { "i", 10649 },	-- Nightmare Shard
+							provider = { "i", 10649 },	-- Nightmare Shard (QI!)
 						}),
 						i(10657),	-- Talbar Mantle
 						i(10658),	-- Quagmire Galoshes
@@ -85,7 +85,7 @@ instanceroot(240, {	-- Wailing Caverns
 					lvl = 15,
 					groups = {
 						objective(1, {
-							provider = { "i", 10649 },	-- Nightmare Shard
+							provider = { "i", 10649 },	-- Nightmare Shard (QI!)
 						}),
 						i(10657),	-- Talbar Mantle
 						i(10658),	-- Quagmire Galoshes
@@ -99,16 +99,16 @@ instanceroot(240, {	-- Wailing Caverns
 					lvl = 10,
 					groups = {
 						objective(1, {	-- 0/1 Gem of Cobrahn
-							provider = { "i", 9738 },	-- Gem of Cobrahn
+							provider = { "i", 9738 },	-- Gem of Cobrahn (QI!)
 						}),
 						objective(2, {	-- 0/1 Gem of Anacondra
-							provider = { "i", 9739 },	-- Gem of Anacondra
+							provider = { "i", 9739 },	-- Gem of Anacondra (QI!)
 						}),
 						objective(3, {	-- 0/1 Gem of Pythas
-							provider = { "i", 9740 },	-- Gem of Pythas
+							provider = { "i", 9740 },	-- Gem of Pythas (QI!)
 						}),
 						objective(4, {	-- 0/1 Gem of Serpentis
-							provider = { "i", 9741 },	-- Gem of Serpentis
+							provider = { "i", 9741 },	-- Gem of Serpentis (QI!)
 						}),
 						i(6505),	-- Crescent Staff
 						i(6504),	-- Wingblade
@@ -132,7 +132,7 @@ instanceroot(240, {	-- Wailing Caverns
 					groups = {
 						objective(1, {	-- 0/10 Serpentbloom
 							providers = {
-								{ "i", 5339 },	-- Serpentbloom
+								{ "i", 5339 },	-- Serpentbloom (QI!)
 								{ "o", 13891 },	-- Serpentbloom
 							},
 						}),
@@ -152,7 +152,7 @@ instanceroot(240, {	-- Wailing Caverns
 					lvl = 13,
 					groups = {
 						objective(1, {	-- 0/6 Wailing Essence
-							provider = { "i", 6464 },	-- Wailing Essence
+							provider = { "i", 6464 },	-- Wailing Essence (QI!)
 							crs = {
 								3638,	-- Devouring Ectoplasm
 								3640,	-- Evolving Ectoplasm
@@ -195,7 +195,7 @@ instanceroot(240, {	-- Wailing Caverns
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(6443, {	-- Deviate Hide
+			i(6443, {	-- Deviate Hide (QI!)
 				description = "Drops from Deviate creatures in the Wailing Caverns.",
 			}),
 			i(10413, {	-- Gloves of the Fang
@@ -213,7 +213,7 @@ instanceroot(240, {	-- Wailing Caverns
 		e(474, {	-- Lady Anacondra <Fanglord>
 			creatureID = 3671,
 			groups = {
-				i(9739),	-- Gem of Anacondra
+				i(9739),	-- Gem of Anacondra (QI!)
 				i(5404),	-- Serpent's Shoulders
 				i(10412),	-- Belt of the Fang
 				i(273088, {	-- Snake Eye Kaleidoscope
@@ -238,7 +238,7 @@ instanceroot(240, {	-- Wailing Caverns
 		e(476, {	-- Lord Pythas <Fanglord>
 			creatureID = 3670,
 			groups = {
-				i(9740),	-- Gem of Pythas
+				i(9740),	-- Gem of Pythas (QI!)
 				i(6472),	-- Stinging Viper
 				i(6473),	-- Armor of the Fang
 				i(273089, {	-- Slither Cord
@@ -249,7 +249,7 @@ instanceroot(240, {	-- Wailing Caverns
 		e(475, {	-- Lord Cobrahn <Fanglord>
 			creatureID = 3669,
 			groups = {
-				i(9738),	-- Gem of Cobrahn
+				i(9738),	-- Gem of Cobrahn (QI!)
 				i(6465),	-- Robe of the Moccasin
 				i(6460),	-- Cobrahn's Grasp
 				i(10410),	-- Leggings of the Fang
@@ -275,7 +275,7 @@ instanceroot(240, {	-- Wailing Caverns
 		e(479, {	-- Lord Serpentis <Fanglord>
 			creatureID = 3673,
 			groups = {
-				i(9741),	-- Gem of Serpentis
+				i(9741),	-- Gem of Serpentis (QI!)
 				i(6469),	-- Venomstrike
 				i(5970),	-- Serpent Gloves
 				i(10411),	-- Footpads of the Fang

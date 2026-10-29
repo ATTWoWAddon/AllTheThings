@@ -125,7 +125,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Augustus' Receipt Book
 						providers = {
-							{ "i", 15884 },	-- Augustus' Receipt Book
+							{ "i", 15884 },	-- Augustus' Receipt Book (QI!)
 							{ "o", 177789 },	-- Augustus' Receipt Book
 						},
 						coord = { 17.5, 31.2, MAP.EASTERN_PLAGUELANDS },
@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/15 Slab of Carrion Worm Meat
-						provider = { "i", 13853 },	-- Slab of Carrion Worm Meat
+						provider = { "i", 13853 },	-- Slab of Carrion Worm Meat (QI!)
 						crs = {
 							8605,	-- Carrion Devourer
 							8603,	-- Carrion Grub
@@ -334,7 +334,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 56,
 				groups = {
 					objective(1, {	-- 0/1 Patch of Duskwing's Fur
-						provider = { "i", 15850 },	-- Patch of Duskwing's Fur
+						provider = { "i", 15850 },	-- Patch of Duskwing's Fur (QI!)
 						cr = 11897,	-- Duskwing
 					}),
 					i(16994),	-- Duskwing Gloves
@@ -450,7 +450,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Sacred Highborne Writings
 						providers = {
-							{ "i", 13313 },	-- Sacred Highborne Writings
+							{ "i", 13313 },	-- Sacred Highborne Writings (QI!)
 							{ "o", 176356 },	-- Sacred Highborne Writings
 						},
 						coord = { 41.4, 52.5, MAP.AZSHARA },
@@ -471,9 +471,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(3, {	-- 0/1 Vial of Dire Water
 						providers = {
-							{ "i", 16973 },	-- Vial of Dire Water
+							{ "i", 16973 },	-- Vial of Dire Water (QI!)
 							{ "o", 178224 },	-- Dire Pool
-							{ "i", 16974 },	-- Empty Water Vial
+							{ "i", 16974 },	-- Empty Water Vial (QI!)
 						},
 						coord = { 42.70, 68.63, MAP.FERALAS },
 					}),
@@ -491,7 +491,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Hameya's Key
-						provider = { "i", 15767 },	-- Hameya's Key
+						provider = { "i", 15767 },	-- Hameya's Key (QI!)
 						coord = { 70.6, 18.8, MAP.EASTERN_PLAGUELANDS },
 						cr = 12248,	-- Infiltrator Hameya
 					}),
@@ -508,14 +508,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Davil's Libram
 						providers = {
-							{ "i", 12954 },	-- Davil's Libram
+							{ "i", 12954 },	-- Davil's Libram (QI!)
 							{ "o", 176206 },	-- Davil's Libram
 						},
 						coord = { 42.4, 18.9, MAP.WESTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Redpath's Shield
 						providers = {
-							{ "i", 12955 },	-- Redpath's Shield
+							{ "i", 12955 },	-- Redpath's Shield (QI!)
 							{ "o", 176207 },	-- Redpath's Shield
 						},
 						coord = { 63.7, 57.2, MAP.WESTERN_PLAGUELANDS },
@@ -527,7 +527,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				providers = {
 					{ "n", 10926 },	-- Pamela Redpath
 					{ "o", 177544 },	-- Joseph's Chest
-					{ "i", 15328 },	-- Joseph's Key
+					{ "i", 15328 },	-- Joseph's Key (QI!)
 				},
 				coord = { 36.4, 90.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
@@ -566,9 +566,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/5 Resonating Skull
 						providers = {
-							{ "i", 13155 },	-- Resonating Skull
-							{ "i", 13156 },	-- Mystic Crystal
-							{ "i", 13157 },	-- Fetid Skull
+							{ "i", 13155 },	-- Resonating Skull (QI!)
+							{ "i", 13156 },	-- Mystic Crystal (QI!)
+							{ "i", 13157 },	-- Fetid Skull (QI!)
 						},
 						cr = 8529,	-- Scourge Champion
 					}),
@@ -595,12 +595,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 56,
 				groups = {
 					objective(1, {	-- 0/1 The Grand Crusader's Command
-						provider = { "i", 13852 },	-- The Grand Crusader's Command
+						provider = { "i", 13852 },	-- The Grand Crusader's Command (QI!)
 					}),
-					i(15876, {	-- Nathanos' Chest
+					i(15876, {	-- Nathanos' Chest (QI!)
 						groups = {
-							i(15875),	-- Rotten Apple
-							i(13852),	-- The Grand Crusader's Command
+							i(15875),	-- Rotten Apple (QI!)
+							i(13852),	-- The Grand Crusader's Command (QI!)
 						},
 					}),
 				},
@@ -615,11 +615,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Pamela's Doll
-						provider = { "i", 12885 },	-- Pamela's Doll
+						provider = { "i", 12885 },	-- Pamela's Doll (QI!)
 						cost = {
-							{ "i", 12886, 1 },	-- Pamela's Doll's Head
-							{ "i", 12887, 1 },	-- Pamela's Doll's Left Side
-							{ "i", 12888, 1 },	-- Pamela's Doll's Right Side
+							{ "i", 12886, 1 },	-- Pamela's Doll's Head (QI!)
+							{ "i", 12887, 1 },	-- Pamela's Doll's Left Side (QI!)
+							{ "i", 12888, 1 },	-- Pamela's Doll's Right Side (QI!)
 						},
 					}),
 				},
@@ -629,7 +629,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				qg = 11063,	-- Carlin Redpath
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
-				qi = 15314,	-- Bundle of Relics
+				qi = 15314,	-- Bundle of Relics (QI!)
 			}),
 			q(6147, {	-- Return to Nathanos
 				sourceQuest = 6146,	-- Nathanos' Ruse
@@ -775,7 +775,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					objective(1, {	-- Accept Redpath's Forgiveness
 						providers = {
 							{ "n", 10936 },	-- Joseph Redpath
-							{ "i", 15209 },	-- Relic Bundle
+							{ "i", 15209 },	-- Relic Bundle (QI!)
 						},
 						coord = { 39.0, 91.2, MAP.EASTERN_PLAGUELANDS },
 					}),
@@ -824,7 +824,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 56,
 				groups = {
 					objective(1, {	-- 0/1 The Grand Crusader's Command
-						provider = { "i", 15868 },	-- The Grand Crusader's Command
+						provider = { "i", 15868 },	-- The Grand Crusader's Command (QI!)
 						cr = 12337,	-- Crimson Courier
 					}),
 				},
@@ -868,7 +868,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					}),
 					objective(4, {	-- 0/1 Quel'Thalas Registry
 						providers = {
-							{ "i", 15847 },	-- Quel'Thalas Registry
+							{ "i", 15847 },	-- Quel'Thalas Registry (QI!)
 							{ "o", 177747 },	-- Quel'Thalas Registry
 						},
 						coord = { 52.1, 18.5, MAP.EASTERN_PLAGUELANDS },
@@ -919,7 +919,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Coagulated Rot
-						providers = { { "i", 15448 } },	-- Coagulated Rot
+						providers = { { "i", 15448 } },	-- Coagulated Rot (QI!)
 						crs = {
 							8526,	-- Dark Caster
 							8531,	-- Gibbering Ghoul
@@ -930,12 +930,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 							12262,	-- Ziggurat Protector
 						},
 					}),
-					i(15448, {	-- Coagulated Rot
-						provider = { "i", 15454 },	-- Mortar and Pestle
-						cost = { { "i", 15447, 7 } },	-- Living Rot
+					i(15448, {	-- Coagulated Rot (QI!)
+						provider = { "i", 15454 },	-- Mortar and Pestle (QI!)
+						cost = { { "i", 15447, 7 } },	-- Living Rot (QI!)
 					}),
-					i(15454),	-- Mortar and Pestle
-					i(15447, {	-- Living Rot
+					i(15454),	-- Mortar and Pestle (QI!)
+					i(15447, {	-- Living Rot (QI!)
 						description = "PROTIP: Do NOT loot these until you have a couple of creatures killed nearby. The timer starts the second you pick it up.",
 					}),
 				},
@@ -946,7 +946,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				coord = { 53.4, 22.0, MAP.EASTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
-				qi = 13347,	-- Crystal of Zin-Malor
+				qi = 13347,	-- Crystal of Zin-Malor (QI!)
 			}),
 			q(6042, {	-- Un-Life's Little Annoyances
 				qg = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
@@ -976,14 +976,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Skull of Horgus
 						providers = {
-							{ "i", 12956 },	-- Skull of Horgus
+							{ "i", 12956 },	-- Skull of Horgus (QI!)
 							{ "o", 176208 },	-- Horgus' Skull
 						},
 						coord = { 51.1, 49.9, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Shattered Sword of Marduk
 						providers = {
-							{ "i", 12957 },	-- Shattered Sword of Marduk
+							{ "i", 12957 },	-- Shattered Sword of Marduk (QI!)
 							{ "o", 176209 },	-- Shattered Sword of Marduk
 						},
 						coord = { 53.9, 65.8, MAP.EASTERN_PLAGUELANDS },
@@ -998,7 +998,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/8 Scourge Structures Destroyed
 						providers = {
-							{ "i", 15736 },	-- Smokey's Special Compound
+							{ "i", 15736 },	-- Smokey's Special Compound (QI!)
 							{ "n", 12247 },	-- Scourge Structure
 						},
 					}),
@@ -1016,7 +1016,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- Writ of Safe Passage Signed
-						provider = { "i", 22593 },	-- Writ of Safe Passage
+						provider = { "i", 22593 },	-- Writ of Safe Passage (QI!)
 					}),
 					i(22524),	-- Insignia of the Crusade
 					i(22523),	-- Insignia of the Dawn
@@ -1028,7 +1028,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Zaeldarr's Head
-						provider = { "i", 15785 },	-- Zaeldarr's Head
+						provider = { "i", 15785 },	-- Zaeldarr's Head (QI!)
 						coord = { 27.6, 85.2, MAP.EASTERN_PLAGUELANDS },
 						cr = 12250,	-- Zaeldarr the Outcast
 					}),

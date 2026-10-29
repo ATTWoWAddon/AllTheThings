@@ -26,7 +26,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Head of the Baron
-						provider = { "i", 268518 },	-- Head of the Baron
+						provider = { "i", 268518 },	-- Head of the Baron (QI!)
 						cr = 250660,	-- The Baron
 					}),
 					i(279865),	-- Grave Shroud
@@ -40,7 +40,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/10 Bloodied Insignia
-						provider = { "i", 268540 },	-- Bloodied Insignia
+						provider = { "i", 268540 },	-- Bloodied Insignia (QI!)
 					}),
 					i(279868),	-- Duty Bound Leggings
 					i(279869),	-- Remembrance Armor
@@ -73,7 +73,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/25 Intact Limbs
-						provider = { "i", 268580 },	-- Intact Limbs
+						provider = { "i", 268580 },	-- Intact Limbs (QI!)
 					}),
 					i(279875),	-- Spare Part Bindings
 					i(279874),	-- The Stitcher
@@ -104,7 +104,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Highly Toxic Strain
-						provider = { "i", 275443 },	-- Highly Toxic Strain
+						provider = { "i", 275443 },	-- Highly Toxic Strain (QI!)
 						cr = 250483,	-- Witherfang
 					}),
 					i(279876),	-- Plaguefang
@@ -158,7 +158,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Toxic Skullcap
-						provider = { "i", 281246 },	-- Toxic Skullcap
+						provider = { "i", 281246 },	-- Toxic Skullcap (QI!)
 						coords = {
 							{ 63.4, 40.0, MAP.UNDERCITY },
 							{ 68.8, 40.0, MAP.UNDERCITY },
@@ -170,7 +170,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 					objective(2, {	-- 0/1 Blisterweed
 						-- CRIEVE NOTE: Get coordinate and the objectID
 						providers = {
-							{ "i", 281300 },	-- Blisterweed
+							{ "i", 281300 },	-- Blisterweed (QI!)
 							--{ "o",  },	-- Blisterweed
 						},
 					}),
@@ -189,7 +189,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Hissing Serum administered
-						provider = { "i", 281327 },	-- Hissing Serum
+						provider = { "i", 281327 },	-- Hissing Serum (QI!)
 					}),
 				},
 			}),

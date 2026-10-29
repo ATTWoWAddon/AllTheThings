@@ -11,7 +11,7 @@ instanceroot(246, {	-- Scholomance
 	},
 	mapID = MAP.SCHOLOMANCE,
 	coord = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
-	cost = { { "i", 13704, 1 } },	-- Skeleton Key
+	cost = { { "i", 13704, 1 } },	-- Skeleton Key (QI!)
 	lvl = 55,
 	groups = {
 		n(QUESTS, {
@@ -36,7 +36,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 60,
 				repeatable = true,
 				groups = {
-					i(18746),	-- Divination Scryer
+					i(18746),	-- Divination Scryer (QI!)
 				},
 			}),
 			q(7669, {	-- Again Into the Great Ossuary [H]
@@ -48,7 +48,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 60,
 				repeatable = true,
 				groups = {
-					i(18746),	-- Divination Scryer
+					i(18746),	-- Divination Scryer (QI!)
 				},
 			}),
 			{	-- Araj's Scarab
@@ -67,7 +67,7 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 Araj's Scarab
 						providers = {
-							{ "i", 14610 },	-- Araj's Scarab
+							{ "i", 14610 },	-- Araj's Scarab (QI!)
 							{ "o", 177241 },	-- Araj's Phylactery
 						},
 						coord = { 45.6, 69.2, MAP.WESTERN_PLAGUELANDS },
@@ -89,28 +89,28 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 The Deed to Brill
 						providers = {
-							{ "i", 13471 },	-- The Deed to Brill
+							{ "i", 13471 },	-- The Deed to Brill (QI!)
 							{ "o", 176484 },	-- The Deed to Brill
 						},
 						description = "Can be found along the wall in Ras Frostwhisper's room.",
 					}),
 					objective(2, {	-- 0/1 The Deed to Caer Darrow
 						providers = {
-							{ "i", 13448 },	-- The Deed to Caer Darrow
+							{ "i", 13448 },	-- The Deed to Caer Darrow (QI!)
 							{ "o", 176485 },	-- The Deed to Caer Darrow
 						},
 						description = "Can be found right next to Alexi Barov.",
 					}),
 					objective(3, {	-- 0/1 The Deed to Southshore
 						providers = {
-							{ "i", 13450 },	-- The Deed to Southshore
+							{ "i", 13450 },	-- The Deed to Southshore (QI!)
 							{ "o", 176486 },	-- The Deed to Southshore
 						},
 						description = "Can be found in the very back of the first room hidden behind some bookshelves.",
 					}),
 					objective(4, {	-- 0/1 The Deed to Tarren Mill
 						providers = {
-							{ "i", 13451 },	-- The Deed to Tarren Mill
+							{ "i", 13451 },	-- The Deed to Tarren Mill (QI!)
 							{ "o", 176487 },	-- The Deed to Tarren Mill
 						},
 						description = "Can be found on the table in the back corner just before you enter the dragon whelpling room or travel downstairs to fight Jandice Barov.",
@@ -135,7 +135,7 @@ instanceroot(246, {	-- Scholomance
 						provider = { "n", 10432 },	-- Vectus
 					}),
 					objective(2, {	-- 0/1 Place Dawn's Gambit
-						provider = { "i", 12368 },	-- Dawn's Gambit
+						provider = { "i", 12368 },	-- Dawn's Gambit (QI!)
 						description = "This will significantly reduce all of the nearby student's health and damage. As soon as the component opens, you should have your tank or plate/rogue dps aggro the room other than the 2 bosses and get ready to AOE.",
 					}),
 					i(15854),	-- Dancing Sliver
@@ -172,10 +172,10 @@ instanceroot(246, {	-- Scholomance
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Unfinished Skeleton Key
-						provider = { "i", 14645 },	-- Unfinished Skeleton Key
+						provider = { "i", 14645 },	-- Unfinished Skeleton Key (QI!)
 						coord = { 49.6, 47.6, MAP.UNGORO_CRATER },
 						cost = {
-							{ "i", 14644, 1 },	-- Skeleton Key Mold
+							{ "i", 14644, 1 },	-- Skeleton Key Mold (QI!)
 							{ "i", 12359, 2 },	-- Thorium Bar
 						},
 					}),
@@ -209,7 +209,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Krastinov's Bag of Horrors
-						provider = { "i", 13725 },	-- Krastinov's Bag of Horrors
+						provider = { "i", 13725 },	-- Krastinov's Bag of Horrors (QI!)
 					}),
 				},
 			}),
@@ -217,7 +217,7 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 7646,	-- The Divination Scryer
 				providers = {
 					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					{ "i", 18804 },	-- Lord Grayson's Satchel
+					{ "i", 18804 },	-- Lord Grayson's Satchel (QI!)
 				},
 				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_PALADINS,
@@ -226,14 +226,14 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 Charger's Redeemed Soul
 						provider = { "i", 18799 },	-- Charger's Redeemed Soul
-						cost = { { "i", 18749, 1 } },	-- Charger's Lost Soul
+						cost = { { "i", 18749, 1 } },	-- Charger's Lost Soul (QI!)
 						crs = {
 							14516,	-- Death Knight Darkreaver
 							14568,	-- Darkreaver's Fallen Charger
 						},
 					}),
 					objective(2, {	-- 0/1 Blessed Arcanite Barding
-						provider = { "i", 18792 },	-- Blessed Arcanite Barding
+						provider = { "i", 18792 },	-- Blessed Arcanite Barding (QI!)
 					}),
 					mount(23214, {	-- Charger (MOUNT!)
 						races = ALLIANCE_ONLY,
@@ -246,7 +246,7 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 4735,	-- Egg Collection
 				providers = {
 					{ "n", 10267 },	-- Tinkee Steamboil
-					{ "i", 13761 },	-- Frozen Eggs
+					{ "i", 13761 },	-- Frozen Eggs (QI!)
 				},
 				coord = { 65.2, 23.8, MAP.BURNING_STEPPES },
 				lvl = 57,
@@ -267,7 +267,7 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 5462,	-- The Dying, Ras Frostwhisper
 				providers = {
 					{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-					{ "i", 13585 },	-- Keepsake of Remembrance
+					{ "i", 13585 },	-- Keepsake of Remembrance (QI!)
 				},
 				coord = { 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
 				maps = { MAP.STRATHOLME },
@@ -277,7 +277,7 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 5463,	-- Menethil's Gift (1/2)
 				providers = {
 					{ "o", 176631 },	-- Menethil's Gift
-					{ "i", 13624 },	-- Soulbound Keepsake
+					{ "i", 13624 },	-- Soulbound Keepsake (QI!)
 				},
 				maps = { MAP.STRATHOLME },
 				lvl = 57,
@@ -295,7 +295,7 @@ instanceroot(246, {	-- Scholomance
 					maps = { MAP.WESTERN_PLAGUELANDS },
 				}),
 				cost = {
-					{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
+					{ "i", 14628, 1 },	-- Imbued Skeletal Fragments (QI!)
 					{ "g", 150000 },	-- 15g
 				},
 				lvl = 55,
@@ -339,7 +339,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/15 Skeletal Fragments
-						provider = { "i", 14619 },	-- Skeletal Fragments
+						provider = { "i", 14619 },	-- Skeletal Fragments (QI!)
 						crs = {
 							1789,	-- Skeletal Acolyte
 							1787,	-- Skeletal Executioner
@@ -355,7 +355,7 @@ instanceroot(246, {	-- Scholomance
 				sourceQuest = 5464,	-- Menethil's Gift (2/2)
 				providers = {
 					{ "n", 11036 },	-- Leonid Barthalomew the Revered <The Argent Dawn>
-					{ "i", 13624 },	-- Soulbound Keepsake
+					{ "i", 13624 },	-- Soulbound Keepsake (QI!)
 				},
 				coord = { 81.7, 57.8, MAP.EASTERN_PLAGUELANDS },
 				lvl = 57,
@@ -369,7 +369,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Darkreaver's Head
-						provider = { "i", 18880 },	-- Darkreaver's Head
+						provider = { "i", 18880 },	-- Darkreaver's Head (QI!)
 						cr = 14516,	-- Death Knight Darkreaver
 					}),
 					i(18807),	-- Helm of Latent Power
@@ -387,7 +387,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Darkreaver's Head
-						provider = { "i", 18880 },	-- Darkreaver's Head
+						provider = { "i", 18880 },	-- Darkreaver's Head (QI!)
 						cr = 14516,	-- Death Knight Darkreaver
 					}),
 					i(20134),	-- Skyfury Helm
@@ -398,7 +398,7 @@ instanceroot(246, {	-- Scholomance
 				providers = {
 					{ "n", 11286 },	-- Magistrate Marduke
 					{ "i", 13544 },	-- Spectral Essence
-					{ "i", 13585 },	-- Keepsake of Remembrance
+					{ "i", 13585 },	-- Keepsake of Remembrance (QI!)
 				},
 				coord = { 70.6, 74.1, MAP.WESTERN_PLAGUELANDS },
 				lvl = 57,
@@ -415,7 +415,7 @@ instanceroot(246, {	-- Scholomance
 				groups = {
 					objective(1, {	-- 0/1 Keepsake of Remembrance
 						providers = {
-							{ "i", 13585 },	-- Keepsake of Remembrance
+							{ "i", 13585 },	-- Keepsake of Remembrance (QI!)
 							{ "o", 176630 },	-- Keepsake of Remembrance
 						},
 						coord = { 17.9, 69.4, MAP.ARATHI_HIGHLANDS },
@@ -436,7 +436,7 @@ instanceroot(246, {	-- Scholomance
 				}),
 				lvl = 55,
 				groups = {
-					i(13704),	-- Skeleton Key
+					i(13704),	-- Skeleton Key (QI!)
 				},
 			},
 			q(5344, {	-- The Last Barov [Alliance]
@@ -448,7 +448,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/1 Head of Alexi Barov
-						provider = { "i", 13470 },	-- Head of Alexi Barov
+						provider = { "i", 13470 },	-- Head of Alexi Barov (QI!)
 						coord = { 83.0, 71.6, MAP.TIRISFAL_GLADES },
 						cr = 11022,	-- Alexi Barov <House of Barov>
 					}),
@@ -464,7 +464,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/1 Head of Weldon Barov
-						provider = { "i", 13469 },	-- Head of Weldon Barov
+						provider = { "i", 13469 },	-- Head of Weldon Barov (QI!)
 						coord = { 43.4, 83.6, MAP.WESTERN_PLAGUELANDS },
 						cr = 11023,	-- Weldon Barov <House of Barov>
 					}),
@@ -481,7 +481,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Human Head of Ras Frostwhisper
-						provider = { "i", 13626 },	-- Human Head of Ras Frostwhisper
+						provider = { "i", 13626 },	-- Human Head of Ras Frostwhisper (QI!)
 					}),
 					i(14002),	-- Darrowshire Strongguard
 					i(13984),	-- Darrowspike
@@ -594,7 +594,7 @@ instanceroot(246, {	-- Scholomance
 		}),
 		n(10503, {	-- Jandice Barov
 			i(13523),	-- Blood of Innocents
-			i(13725),	-- Krastinov's Bag of Horrors
+			i(13725),	-- Krastinov's Bag of Horrors (QI!)
 			o(180794, {	-- Journal of Jandice Barov
 				description = "Jandice Barov drops this item when killed, which teaches Felcloth Bag.",
 				groups = {
@@ -627,10 +627,10 @@ instanceroot(246, {	-- Scholomance
 			i(16711),	-- Shadowcraft Boots
 		}),
 		n(14516, {	-- Death Knight Darkreaver
-			cost = { { "i", 18746, 1 } },	-- Divination Scryer
+			cost = { { "i", 18746, 1 } },	-- Divination Scryer (QI!)
 			groups = {
-				i(18749),	-- Charger's Lost Soul
-				i(18880),	-- Darkreaver's Head
+				i(18749),	-- Charger's Lost Soul (QI!)
+				i(18880),	-- Darkreaver's Head (QI!)
 				i(18759),	-- Malicious Axe
 				i(18761),	-- Oblivion's Touch
 				i(18758),	-- Specter's Blade
@@ -646,9 +646,9 @@ instanceroot(246, {	-- Scholomance
 			i(14577),	-- Skullsmoke Pants
 		}),
 		n(10508, {	-- Ras Frostwhisper
-			i(13626, {	-- Human Head of Ras Frostwhisper
+			i(13626, {	-- Human Head of Ras Frostwhisper (QI!)
 				description = "Use the Keepsake on him before he dies to turn him back into a human.",
-				cost = { { "i", 13752, 1 } },	-- Soulbound Keepsake
+				cost = { { "i", 13752, 1 } },	-- Soulbound Keepsake (QI!)
 			}),
 			i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
 			i(14487),	-- Bonechill Hammer

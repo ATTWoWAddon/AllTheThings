@@ -123,7 +123,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 41.5, 66.7, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
-				qi = 889,	-- A Dusty Unsent Letter
+				qi = 889,	-- A Dusty Unsent Letter (QI!)
 			}),
 			q(69, {	-- The Legend of Stalvan (4/13)
 				sourceQuest = 68,	-- The Legend of Stalvan (3/13)
@@ -142,7 +142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				groups = {
 					objective(1, {	-- 0/1 An Undelivered Letter
 						providers = {
-							{ "i", 910 },	-- An Undelivered Letter
+							{ "i", 910 },	-- An Undelivered Letter (QI!)
 							{ "o", 1560 },	-- Storage Chest
 						},
 						coord = { 44.2, 65.8, MAP.ELWYNN_FOREST },
@@ -163,7 +163,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
-				qi = 916,	-- A Torn Journal Page
+				qi = 916,	-- A Torn Journal Page (QI!)
 			}),
 			q(75, {	-- The Legend of Stalvan (8/13)
 				sourceQuest = 74,	-- The Legend of Stalvan (7/13)
@@ -174,7 +174,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				groups = {
 					objective(1, {	-- 0/1 A Faded Journal Page
 						providers = {
-							{ "i", 921 },	-- A Faded Journal Page
+							{ "i", 921 },	-- A Faded Journal Page (QI!)
 							{ "o", 1562 },	-- Marshal Haggard's Chest
 						},
 						coord = { 85.6, 69.6, MAP.ELWYNN_FOREST },
@@ -187,7 +187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 84.6, 69.3, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
-				qi = 921,	-- A Faded Journal Page
+				qi = 921,	-- A Faded Journal Page (QI!)
 			}),
 			q(79, {	-- The Legend of Stalvan (10/13)
 				sourceQuest = 78,	-- The Legend of Stalvan (9/13)
@@ -195,7 +195,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
-				qi = 938,	-- Muddy Journal Pages
+				qi = 938,	-- Muddy Journal Pages (QI!)
 			}),
 			q(80, {	-- The Legend of Stalvan (11/13)
 				sourceQuest = 79,	-- The Legend of Stalvan (10/13)
@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
-				qi = 939,	-- A Bloodstained Journal Page
+				qi = 939,	-- A Bloodstained Journal Page (QI!)
 			}),
 			q(90, {	-- Seasoned Wolf Kabobs
 				qg = 272,	-- Chef Grual
@@ -249,7 +249,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Mistmantle Family Ring
-						provider = { "i", 3629 },	-- Mistmantle Family Ring
+						provider = { "i", 3629 },	-- Mistmantle Family Ring (QI!)
 						coord = { 77.6, 34.8, MAP.DUSKWOOD },
 						cr = 315,	-- Stalvan Mistmantle
 					}),
@@ -267,7 +267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/10 Ghoul Fang
-						provider = { "i", 1129 },	-- Ghoul Fang
+						provider = { "i", 1129 },	-- Ghoul Fang (QI!)
 						crs = {
 							210,	-- Bone Chewer
 							570,	-- Brain Eater
@@ -278,7 +278,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 						},
 					}),
 					objective(2, {	-- 0/5 Vial of Spider Venom
-						provider = { "i", 1130 },	-- Vial of Spider Venom
+						provider = { "i", 1130 },	-- Vial of Spider Venom (QI!)
 						crs = {
 							930,	-- Black Widow Hatchling
 							949,	-- Carrion Recluse
@@ -289,7 +289,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 						},
 					}),
 					objective(3, {	-- 0/10 Skeleton Finger
-						provider = { "i", 2378 },	-- Skeleton Finger
+						provider = { "i", 2378 },	-- Skeleton Finger (QI!)
 						crs = {
 							531,	-- Skeletal Fiend
 							787,	-- Skeletal Healer
@@ -311,7 +311,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/7 Ghoul Rib
-						provider = { "i", 884 },	-- Ghoul Rib
+						provider = { "i", 884 },	-- Ghoul Rib (QI!)
 						crs = {
 							210,	-- Bone Chewer
 							570,	-- Brain Eater
@@ -331,7 +331,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				groups = {
 					objective(1, {	-- 0/1 Abercrombie's Crate
 						providers = {
-							{ "i", 1349 },	-- Abercrombie's Crate
+							{ "i", 1349 },	-- Abercrombie's Crate (QI!)
 							{ "o", 119 },	-- Abercrombie's Crate
 						},
 						coord = { 33.5, 76.5, MAP.DUSKWOOD },
@@ -351,7 +351,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1453,	-- Spectral Comb
+				qi = 1453,	-- Spectral Comb (QI!)
 			}),
 			q(154, {	-- Return the Comb
 				sourceQuest = 149,	-- Ghost Hair Thread
@@ -359,7 +359,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 81.9, 59.1, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1518,	-- Ghost Hair Comb
+				qi = 1518,	-- Ghost Hair Comb (QI!)
 			}),
 			q(156, {	-- Gather Rot Blossoms
 				sourceQuest = 158,	-- Zombie Juice
@@ -369,7 +369,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/8 Rot Blossom
-						provider = { "i", 1598 },	-- Rot Blossom
+						provider = { "i", 1598 },	-- Rot Blossom (QI!)
 						crs = {
 							531,	-- Skeletal Fiend
 							202,	-- Skeletal Horror
@@ -383,7 +383,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1596,	-- Ghost Hair Thread
+				qi = 1596,	-- Ghost Hair Thread (QI!)
 			}),
 			q(158, {	-- Zombie Juice
 				sourceQuest = 157,	-- Deliver the Thread
@@ -398,7 +398,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1451,	-- Bottle of Zombie Juice
+				qi = 1451,	-- Bottle of Zombie Juice (QI!)
 			}),
 			q(160, {	-- Note to the Mayor
 				sourceQuest = 134,	-- Ogre Thieves
@@ -406,7 +406,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1637,	-- Letter to Ello
+				qi = 1637,	-- Letter to Ello (QI!)
 			}),
 			q(163, {	-- Raven Hill
 				qg = 633,	-- Elaine Carevin
@@ -421,7 +421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				races = ALLIANCE_ONLY,
 				lvl = 17,
 				isBreadcrumb = true,
-				qi = 1922,	-- Supplies for Sven
+				qi = 1922,	-- Supplies for Sven (QI!)
 			}),
 			q(165, {	-- The Hermit
 				qg = 633,	-- Elaine Carevin
@@ -463,7 +463,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Mary's Looking Glass
-						provider = { "i", 1946 },	-- Mary's Looking Glass
+						provider = { "i", 1946 },	-- Mary's Looking Glass (QI!)
 						coord = { 80.8, 71.6, MAP.DUSKWOOD },
 						cr = 511,	-- Insane Ghoul
 					}),
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Ogre's Monocle
-						provider = { "i", 1968 },	-- Ogre's Monocle
+						provider = { "i", 1968 },	-- Ogre's Monocle (QI!)
 						coord = { 37.0, 82.4, MAP.DUSKWOOD },
 						cr = 300,	-- Zzarc' Vul
 					}),
@@ -518,7 +518,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 75.3, 48.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 23,
-				qi = 2113,	-- Calor's Note
+				qi = 2113,	-- Calor's Note (QI!)
 				groups = {
 					i(2902),	-- Cloak of the Faith
 					i(1547),	-- Shield of the Faith
@@ -564,7 +564,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Mor'Ladim's Skull
-						provider = { "i", 3514 },	-- Mor'Ladim's Skull
+						provider = { "i", 3514 },	-- Mor'Ladim's Skull (QI!)
 						coord = { 19.4, 34.6, MAP.DUSKWOOD },
 						cr = 522,	-- Mor'Ladim
 					}),
@@ -581,7 +581,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				sourceQuest = 95,	-- Sven's Revenge
 				providers = {
 					{ "o", 59 },	-- Mound of loose dirt
-					{ "i", 2161 },	-- Book from Sven's Farm
+					{ "i", 2161 },	-- Book from Sven's Farm (QI!)
 				},
 				coord = { 49.9, 77.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
@@ -591,7 +591,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				sourceQuest = 229,	-- The Daughter Who Lived
 				providers = {
 					{ "n", 576 },	-- Watcher Ladimore
-					{ "i", 2162 },	-- Sarah's Ring
+					{ "i", 2162 },	-- Sarah's Ring (QI!)
 					{ "o", 61 },	-- A Weathered Grave
 				},
 				coord = { 73.6, 46.8, MAP.DUSKWOOD },
@@ -610,7 +610,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.8, 43.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
-				qi = 2250,	-- Dusky Crab Cakes
+				qi = 2250,	-- Dusky Crab Cakes (QI!)
 			}),
 			q(245, {	-- Eight-Legged Menaces
 				qg = 888,	-- Watcher Dodds
@@ -638,7 +638,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 71.9, 46.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1637,	-- Letter to Ello
+				qi = 1637,	-- Letter to Ello (QI!)
 			}),
 			q(252, {	-- Translation to Ello
 				sourceQuest = 401,	-- Wait for Sirra to Finish
@@ -646,9 +646,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1656,	-- Translated Letter
+				qi = 1656,	-- Translated Letter (QI!)
 				groups = {
-					i(3248),	-- Translated Letter from The Embalmer
+					i(3248),	-- Translated Letter from The Embalmer (QI!)
 				},
 			}),
 			q(253, {	-- Bride of the Embalmer
@@ -665,7 +665,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 						groups = {
 							objective(1, {	-- 0/1 The Embalmer's Heart
 								questID = 253,	-- Bride of the Embalmer
-								provider = { "i", 2382 },	-- The Embalmer's Heart
+								provider = { "i", 2382 },	-- The Embalmer's Heart (QI!)
 								cr = 314,	-- Eliza <Bride of the Embalmer>
 							}),
 						},
@@ -683,7 +683,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 7.8, 34.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2161,	-- Book from Sven's Farm
+				qi = 2161,	-- Book from Sven's Farm (QI!)
 			}),
 			q(265, {	-- The Shadowy Search Continues
 				sourceQuest = 262,	-- The Shadowy Figure
@@ -691,7 +691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 75.8, 45.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2161,	-- Book from Sven's Farm
+				qi = 2161,	-- Book from Sven's Farm (QI!)
 			}),
 			q(266, {	-- Inquire at the Inn
 				sourceQuest = 265,	-- The Shadowy Search Continues
@@ -699,7 +699,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 72.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2161,	-- Book from Sven's Farm
+				qi = 2161,	-- Book from Sven's Farm (QI!)
 			}),
 			q(268, {	-- Return to Sven
 				sourceQuest = 453,	-- Finding the Shadowy Figure
@@ -707,7 +707,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 18.2, 56.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2560,	-- Jitters' Completed Journal
+				qi = 2560,	-- Jitters' Completed Journal (QI!)
 			}),
 			q(269, {	-- Seeking Wisdom
 				sourceQuest = 323,	-- Proving Your Worth
@@ -715,7 +715,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 7.8, 34.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2560,	-- Jitters' Completed Journal
+				qi = 2560,	-- Jitters' Completed Journal (QI!)
 			}),
 			q(270, {	-- The Doomed Fleet
 				sourceQuest = 269,	-- Seeking Wisdom
@@ -733,7 +733,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 10.6, 60.5, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2712,	-- Crate of Lightforge Ingots
+				qi = 2712,	-- Crate of Lightforge Ingots (QI!)
 			}),
 			q(323, {	-- Proving Your Worth
 				sourceQuest = 268,	-- Return to Sven
@@ -782,7 +782,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.8, 44.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 2161,	-- Book from Sven's Farm
+				qi = 2161,	-- Book from Sven's Farm (QI!)
 			}),
 			q(1042, {	-- The Carevin Family
 				sourceQuest = 1041,	-- The Caravan Road
@@ -831,15 +831,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/5 Shadow Panther Heart
-						provider = { "i", 6080 },	-- Shadow Panther Heart
+						provider = { "i", 6080 },	-- Shadow Panther Heart (QI!)
 						cr = 768,	-- Shadow Panther
 					}),
 					objective(2, {	-- 0/1 Mire Lord Fungus
-						provider = { "i", 6081 },	-- Mire Lord Fungus
+						provider = { "i", 6081 },	-- Mire Lord Fungus (QI!)
 						cr = 1081,	-- Mire Lord
 					}),
 					objective(3, {	-- 0/1 Deepstrider Tumor
-						provider = { "i", 6082 },	-- Deepstrider Tumor
+						provider = { "i", 6082 },	-- Deepstrider Tumor (QI!)
 						crs = {
 							4686,	-- Deepstrider Giant
 							4687,	-- Deepstrider Searcher
@@ -855,7 +855,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 87.4, 35.4, MAP.DUSKWOOD },
 				races = HORDE_ONLY,
 				lvl = 37,
-				qi = 6086,	-- Faustin's Truth Serum
+				qi = 6086,	-- Faustin's Truth Serum (QI!)
 			}),
 			q(1391, {	-- Nothing But The Truth (4/4)
 				sourceQuest = 1388,	-- Nothing But The Truth (3/4)
@@ -863,7 +863,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 87.6, 35.6, MAP.DUSKWOOD },
 				races = HORDE_ONLY,
 				lvl = 37,
-				qi = 6089,	-- Zraedus's Brew
+				qi = 6089,	-- Zraedus's Brew (QI!)
 			}),
 			q(1395, {	-- Supplies for Nethergarde
 				sourceQuest = 1477,	-- Vital Supplies
@@ -872,7 +872,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				maps = { MAP.BLASTED_LANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
-				qi = 6091,	-- Crate of Power Stones
+				qi = 6091,	-- Crate of Power Stones (QI!)
 			}),
 			q(1477, {	-- Vital Supplies
 				qg = 5694,	-- High Sorcerer Andromath
@@ -895,7 +895,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Grant's Mace
-						provider = { "i", 281146 },	-- Grant's Mace
+						provider = { "i", 281146 },	-- Grant's Mace (QI!)
 						crs = {
 							787,	-- Skeletal Healer
 							202,	-- Skeletal Horror
@@ -976,7 +976,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				groups = {
 					objective(1, {	-- 0/1 Raven Hill Tome
 						providers = {
-							{ "i", 281046 },	-- Raven Hill Tome
+							{ "i", 281046 },	-- Raven Hill Tome (QI!)
 							{ "o", 673515 },	-- Memory of Valor
 						},
 						coord = { 72.6, 47.6, MAP.DUSKWOOD },
@@ -1124,7 +1124,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				coord = { 73.8, 44.2, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(1942),	-- Bottle of Moonshine
+					i(1942),	-- Bottle of Moonshine (QI!)
 				},
 			}),
 			n(2481, {	-- Bliztik <Alchemy Supplies>

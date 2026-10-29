@@ -99,7 +99,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
 						lvl = 4,
-						qi = 10440,	-- Nori's Mug
+						qi = 10440,	-- Nori's Mug (QI!)
 					}),
 					q(94373, {	-- Call of Earth (1/3)
 						sourceQuest = 98581,	-- Archaic Rune
@@ -111,7 +111,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						groups = {
 							objective(1, {	-- 0/2 Frostmane Bear Pendant
-								provider = { "i", 264356 },	-- Iceclaw Bear Pendant
+								provider = { "i", 264356 },	-- Iceclaw Bear Pendant (QI!)
 								maps = { 428 },	-- Frostmane Hovel (Coldridge Valley)
 							}),
 						},
@@ -134,7 +134,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						classes = { SHAMAN },
 						lvl = 4,
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						qi = 6656,	-- Rough Quartz
+						qi = 6656,	-- Rough Quartz (QI!)
 						groups = {
 							i(5175, {	-- Earth Totem
 								description = "You must keep this in your bags forever.",
@@ -201,7 +201,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						repeatable = true,
 						lockCriteria = { 1, "questID", 94374 },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						groups = { i(6635) },	-- Earth Sapta (QI!)
+						groups = { i(6635) },	-- Earth Sapta (QI!) (TODO: verify Quest Item)
 					}),
 					q(3113, {	-- Encrypted Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
@@ -926,7 +926,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/14 Mostly Dry Firewood
 						providers = {
-							{ "i", 286339 },	-- Mostly Dry Firewood
+							{ "i", 286339 },	-- Mostly Dry Firewood (QI!)
 							{ "o", 694934 },	-- Fallen Log
 						},
 					}),
@@ -941,7 +941,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						providers = {
-							{ "i", 280413 },	-- Flintfire's Shipment
+							{ "i", 280413 },	-- Flintfire's Shipment (QI!)
 							{ "o", 672508 },	-- Flintfire's Shipments
 						},
 					}),
@@ -955,7 +955,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Sack of Fish
-						provider = { "i", 280426 },	-- Sack of Fish
+						provider = { "i", 280426 },	-- Sack of Fish (QI!)
 						coord = { 40.0, 48.4, MAP.DUN_MOROGH },
 						cr = 271587,	-- Frosthowl
 					}),
@@ -1020,7 +1020,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6  Pristine Leopard Pelt
-						provider = { "i", 267414 },	-- Pristine Leopard Pelt
+						provider = { "i", 267414 },	-- Pristine Leopard Pelt (QI!)
 						cr = 260157,	-- Elder Snow Leopard
 					}),
 				},
@@ -1162,7 +1162,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Avala's Core
-						provider = { "i", 286325 },	-- Avala's Core
+						provider = { "i", 286325 },	-- Avala's Core (QI!)
 						coord = { 58.1, 42.1, MAP.DUN_MOROGH },
 						cr = 276009,	-- Avala <The Lost Rime>
 					}),
@@ -1212,7 +1212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				lvl = 4,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					i(280430),	-- Mountaineer Gretchen's Report
+					i(280430),	-- Mountaineer Gretchen's Report (QI!)
 				},
 			}),
 			q(413, {	-- Shimmer Stout
@@ -1274,7 +1274,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/16 Stolen Blasting Powder
-						provider = { "i", 267415 },	-- Stolen Blasting Powder
+						provider = { "i", 267415 },	-- Stolen Blasting Powder (QI!)
 						coord = { 72.6, 55.0, MAP.DUN_MOROGH },
 						crs = {
 							1118,	-- Rockjaw Backbreaker
@@ -1462,7 +1462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						provider = { "i", 2840 },	-- Copper Bar
 					}),
 					objective(2, {	-- 0/4 Toughened Boar Hide
-						provider = { "i", 267416 },	-- Toughened Boar Hide
+						provider = { "i", 267416 },	-- Toughened Boar Hide (QI!)
 						coord = { 81.4, 53.0, MAP.DUN_MOROGH },
 						cr = 1689,	-- Scarred Crag Boar
 					}),
@@ -1514,13 +1514,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						groups = {
 							objective(1, {	-- 0/1 Jordan's Ore Shipment
 								providers = {
-									{ "i", 6992 },	-- Jordan's Ore Shipment
+									{ "i", 6992 },	-- Jordan's Ore Shipment (QI!)
 									{ "o", 92420 },	-- Bailor's Ore
 								},
 								coord = { 71.6, 21.4, LOCH_MODAN },
 							}),
 							objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
-								provider = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+								provider = { "i", 6993 },	-- Jordan's Refined Ore Shipment (QI!)
 								questID = 1654,	-- The Test of Righteousness (2/3)
 							}),
 						},
@@ -1535,7 +1535,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
-								provider = { "i", 6995 },	-- Corrupted Kor Gem
+								provider = { "i", 6995 },	-- Corrupted Kor Gem (QI!)
 								crs = {
 									4803,	-- Blackfathom Oracle
 									4805,	-- Blackfathom Sea Witch
@@ -1543,7 +1543,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 								},
 							}),
 							objective(4, {	-- 0/1 Purified Kor Gem
-								provider = { "i", 7083 },	-- Purified Kor Gem
+								provider = { "i", 7083 },	-- Purified Kor Gem (QI!)
 								questID = 1654,	-- The Test of Righteousness (2/3)
 							}),
 						},
@@ -1643,21 +1643,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/1 Coalbeard's Rifle
 						providers = {
-							{ "i", 286358 },	-- Coalbeard's Rifle
+							{ "i", 286358 },	-- Coalbeard's Rifle (QI!)
 							{ "o", 695222 },	-- Coalbeard's Rifle
 						},
 						coord = { 52.1, 44.1, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Stoneavil's Rifle
 						providers = {
-							{ "i", 286360 },	-- Stoneanvil's Rifle
+							{ "i", 286360 },	-- Stoneanvil's Rifle (QI!)
 							{ "o", 695277 },	-- Stoneanvil's Rifle
 						},
 						coord = { 53.1, 58.8, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Sunhammers's Rifle
 						providers = {
-							{ "i", 286359 },	-- Sunhammer's Rifle
+							{ "i", 286359 },	-- Sunhammer's Rifle (QI!)
 							{ "o", 695223 },	-- Sunhammer's Rifle
 						},
 						coord = { 59.9, 50.1, MAP.DUN_MOROGH },

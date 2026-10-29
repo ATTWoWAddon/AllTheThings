@@ -36,7 +36,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 51.2, 29.0, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
-				qi = 16282,	-- Bundle of Hides
+				qi = 16282,	-- Bundle of Hides (QI!)
 			}),
 			q(7822, {	-- A Donation of Mageweave
 				qg = 14728,	-- Rumstag Proudstrider
@@ -118,7 +118,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Galvanized Horn
-						provider = { "i", 6840 },	-- Galvanized Horn
+						provider = { "i", 6840 },	-- Galvanized Horn (QI!)
 						cr = 6167,	-- Chimaera Matriarch
 					}),
 				},
@@ -131,7 +131,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Deadmire's Tooth
-						provider = { "i", 5945 },	-- Deadmire's Tooth
+						provider = { "i", 5945 },	-- Deadmire's Tooth (QI!)
 						coord = { 47.6, 56.6, MAP.DUSTWALLOW_MARSH },
 						cr = 4841,	-- Deadmire
 					}),
@@ -151,18 +151,18 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 26,
-				qi = 5838,	-- Kodo Skin Scroll
+				qi = 5838,	-- Kodo Skin Scroll (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Frostmaw's Mane
 						providers = {
-							{ "i", 5811 },	-- Frostmaw's Mane
+							{ "i", 5811 },	-- Frostmaw's Mane (QI!)
 							{ "o", 1770 },	-- Flame of Uzel
-							{ "i", 5810 },	-- Fresh Carcass
+							{ "i", 5810 },	-- Fresh Carcass (QI!)
 						},
 						coord = { 37.0, 68.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 4504,	-- Frostmaw
 					}),
-					i(5810, {	-- Fresh Carcass
+					i(5810, {	-- Fresh Carcass (QI!)
 						crs = {
 							2385,	-- Feral Mountain Lion
 							2407,	-- Hulking Mountain Lion
@@ -214,7 +214,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 78.4, 28.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 47,
-				qi = 11103,	-- Seed Voucher
+				qi = 11103,	-- Seed Voucher (QI!)
 			}),
 			q(3786, {	-- Morrowgrain Research (2/2)
 				sourceQuest = 3782,	-- Morrowgrain Research (1/2)
@@ -248,7 +248,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				},
 				races = { TAUREN },
 				lvl = 10,
-				qi = 16283,	-- Ahanu's Leather Goods
+				qi = 16283,	-- Ahanu's Leather Goods (QI!)
 			}),
 			q(6362, {	-- Ride to Thunder Bluff
 				sourceQuest = 6361,	-- A Bundle of Hides
@@ -256,7 +256,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
-				qi = 16282,	-- Bundle of Hides
+				qi = 16282,	-- Bundle of Hides (QI!)
 			}),
 			q(1131, {	-- Steelsnap
 				sourceQuest = 1130,	-- Melor Sends Word
@@ -267,7 +267,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Steelsnap's Rib
-						provider = { "i", 5837 },	-- Steelsnap's Rib
+						provider = { "i", 5837 },	-- Steelsnap's Rib (QI!)
 						coord = { 13.6, 28.0, MAP.THOUSAND_NEEDLES },
 						cr = 4548,	-- Steelsnap
 					}),
@@ -282,7 +282,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				},
 				races = { TAUREN },
 				lvl = 10,
-				qi = 16283,	-- Ahanu's Leather Goods
+				qi = 16283,	-- Ahanu's Leather Goods (QI!)
 			}),
 			q(1086, {	-- The Flying Machine Airport
 				sourceQuest = 1067,	-- Return to Thunder Bluff
@@ -293,7 +293,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- Place the Toxic Fogger
-						provider = { "i", 5638 },	-- Toxic Fogger
+						provider = { "i", 5638 },	-- Toxic Fogger (QI!)
 						coord = { 66.0, 45.0, MAP.STONETALON_MOUNTAINS },
 					}),
 				},
@@ -306,11 +306,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Etched Phial
-						provider = { "i", 5868 },	-- Filled Etched Phial
+						provider = { "i", 5868 },	-- Filled Etched Phial (QI!)
 						coord = { 60.0, 72.0, MAP.ASHENVALE },
-						cost = { { "i", 5867, 1 } },	-- 1x Etched Phial
+						cost = { { "i", 5867, 1 } },	-- 1x Etched Phial (QI!)
 					}),
-					i(5867, {	-- Etched Phial
+					i(5867, {	-- Etched Phial (QI!)
 						cr = 4054,	-- Laughing Sister
 					}),
 				},
@@ -322,20 +322,20 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				maps = { MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 20,
-				qi = 5868,	-- Filled Etched Phial
+				qi = 5868,	-- Filled Etched Phial (QI!)
 			}),
 			q(1197, {	-- The Sacred Flame (3/3)
 				sourceQuest = 1196,	-- The Sacred Flame (2/3)
 				qg = 4722,	-- Rau Cliffrunner
 				coord = { 46.13, 51.69, MAP.THOUSAND_NEEDLES },
-				cost = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
+				cost = { { "i", 5869, 1 } },	-- 1x Cloven Hoof (QI!)
 				races = HORDE_ONLY,
 				lvl = 20,
-				qi = 5868,	-- Filled Etched Phial
+				qi = 5868,	-- Filled Etched Phial (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Cloven Hoof
 						providers = {
-							{ "i", 5869 },	-- Cloven Hoof
+							{ "i", 5869 },	-- Cloven Hoof (QI!)
 							{ "o", 20807 },	-- Ancient Brazier
 						},
 						coord = { 42.0, 35.0, MAP.THOUSAND_NEEDLES },
@@ -353,7 +353,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				-- Objective: combine the herbs, cedar twigs, sinew thread and flint bought from the Thunder Bluff suppliers, then spread the incense off Hunter's Rise.
 				groups = {
 					objective(1, {	-- 0/1 Prepared Incense
-						provider = { "i", 278078 },	-- Prepared Incense
+						provider = { "i", 278078 },	-- Prepared Incense (QI!)
 					}),
 					i(281040),	-- Prepared Incense (x5)
 				},
@@ -377,7 +377,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				maps = { MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 12,
-				qi = 6145,	-- Clarice's Pendant
+				qi = 6145,	-- Clarice's Pendant (QI!)
 			}),
 		}),
 		n(VENDORS, {
@@ -679,7 +679,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
 						isLimited = true,
 					}),
-					i(278081, {	-- Sinew Thread
+					i(278081, {	-- Sinew Thread (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281043, {	-- Sinew Thread
@@ -691,7 +691,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
-					i(278083, {	-- Ceremonial Flint and Tinder
+					i(278083, {	-- Ceremonial Flint and Tinder (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281044, {	-- Ceremonial Flint and Tinder
@@ -726,7 +726,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 				} },
 				groups = {
-					i(278080, {	-- Bundle of Dried Cedar Twigs
+					i(278080, {	-- Bundle of Dried Cedar Twigs (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281042, {	-- Bundle of Dried Cedar Twigs
@@ -743,7 +743,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3014, {	-- Nida Winterhoof <Herbalism Supplier>
 				coord = { 49.2, 39.6, MAP.THUNDER_BLUFF },
 				groups = {
-					i(278079, {	-- Bundle of Herbs
+					i(278079, {	-- Bundle of Herbs (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281041, {	-- Bundle of Herbs

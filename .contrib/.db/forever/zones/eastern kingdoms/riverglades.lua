@@ -138,7 +138,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				groups = {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					i(271657),	-- Fresh Chum
+					i(271657),	-- Fresh Chum (QI!)
 				},
 			}),
 			n(255895, {	-- Grizzek <General Goods>
@@ -156,7 +156,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(260565, {	-- Kor'gar <Engineering Supplies>
 				coord = { 77.6, 50.8, MAP.RIVERGLADES },
 				groups = {
-					i(271653),	-- Goblin Degreaser
+					i(271653),	-- Goblin Degreaser (QI!)
 					i(16046),	-- Schematic: Masterwork Target Dummy (RECIPE!)
 					i(16047),	-- Schematic: Thorium Tube (RECIPE!)
 				},
@@ -164,7 +164,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(260560, {	-- Krikshank <Poison Vendor>
 				coord = { 76.8, 51.1, MAP.RIVERGLADES },
 				groups = {
-					i(271654),	-- Expired Poison
+					i(271654),	-- Expired Poison (QI!)
 				},
 			}),
 			n(263326, {	-- Madam Swyndle <Agent of the Black Market>

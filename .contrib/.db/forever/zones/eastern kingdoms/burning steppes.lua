@@ -61,7 +61,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/8 Broodling Essence
 						providers = {
-							{ "i", 12283 },	-- Broodling Essence
+							{ "i", 12283 },	-- Broodling Essence (QI!)
 							{ "i", 12284 },	-- Draco-Incarcinatrix 900
 							{ "o", 175264 },	-- Broodling Essence
 						},
@@ -103,7 +103,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				qg = 10267,	-- Tinkee Steamboil
 				coord = { 65.2, 23.8, MAP.BURNING_STEPPES },
 				lvl = 50,
-				qi = 12438,	-- Tinkee's Letter
+				qi = 12438,	-- Tinkee's Letter (QI!)
 			}),
 			q(4283, {	-- FIFTY! YEP!
 				qg = 9177,	-- Oralius
@@ -112,7 +112,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/50 Blackrock Medallion
-						provider = { "i", 11467 },	-- Blackrock Medallion
+						provider = { "i", 11467 },	-- Blackrock Medallion (QI!)
 						crs = {
 							7029,	-- Blackrock Battlemaster
 							7027,	-- Blackrock Slayer
@@ -136,7 +136,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Gor'tesh's Lopped Off Head
-						provider = { "i", 11080 },	-- Gor'tesh's Lopped Off Head
+						provider = { "i", 11080 },	-- Gor'tesh's Lopped Off Head (QI!)
 						coord = { 39.6, 55.6, MAP.BURNING_STEPPES },
 						cr = 9176,	-- Gor'tesh
 					}),
@@ -162,7 +162,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Sha'ni's Nose-Ring
-						provider = { "i", 11058 },	-- Sha'ni's Nose-Ring
+						provider = { "i", 11058 },	-- Sha'ni's Nose-Ring (QI!)
 						cr = 8977,	-- Krom'Grul
 					}),
 					i(11869),	-- Sha'ni's Ring
@@ -181,7 +181,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				repeatable = true,
 				groups = {
-					i(11642),	-- Lesser Arcanum of Constitution
+					i(11642),	-- Lesser Arcanum of Constitution (QI!)
 				},
 			}),
 			q(4483, {	-- Libram of Resilience
@@ -197,7 +197,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				repeatable = true,
 				groups = {
-					i(11644),	-- Lesser Arcanum of Resilience
+					i(11644),	-- Lesser Arcanum of Resilience (QI!)
 				},
 			}),
 			q(4463, {	-- Libram of Rumination
@@ -213,7 +213,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				repeatable = true,
 				groups = {
-					i(11622),	-- Lesser Arcanum of Rumination
+					i(11622),	-- Lesser Arcanum of Rumination (QI!)
 				},
 			}),
 			q(4482, {	-- Libram of Tenacity
@@ -229,7 +229,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				repeatable = true,
 				groups = {
-					i(11643),	-- Lesser Arcanum of Tenacity
+					i(11643),	-- Lesser Arcanum of Tenacity (QI!)
 				},
 			}),
 			q(4484, {	-- Libram of Voracity
@@ -245,11 +245,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				repeatable = true,
 				groups = {
-					i(11647),	-- Lesser Arcanum of Voracity
-					i(11648),	-- Lesser Arcanum of Voracity
-					i(11649),	-- Lesser Arcanum of Voracity
-					i(11645),	-- Lesser Arcanum of Voracity
-					i(11646),	-- Lesser Arcanum of Voracity
+					i(11647),	-- Lesser Arcanum of Voracity (QI!)
+					i(11648),	-- Lesser Arcanum of Voracity (QI!)
+					i(11649),	-- Lesser Arcanum of Voracity (QI!)
+					i(11645),	-- Lesser Arcanum of Voracity (QI!)
+					i(11646),	-- Lesser Arcanum of Voracity (QI!)
 				},
 			}),
 			q(7623, {	-- Lord Banehollow
@@ -296,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- Gor'tesh Head Planted
 						providers = {
-							{ "i", 11079 },	-- Gor'tesh's Lopped Off Head
+							{ "i", 11079 },	-- Gor'tesh's Lopped Off Head (QI!)
 							{ "o", 160840 },	-- Soft Dirt Mound
 						},
 						coord = { 81.0, 46.0, MAP.BURNING_STEPPES },
@@ -314,7 +314,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/30 Raging Beast's Blood
-						provider = { "i", 18590 },	-- Raging Beast's Blood
+						provider = { "i", 18590 },	-- Raging Beast's Blood (QI!)
 						crs = {
 							7453,	-- Moontouched Owlbeast
 							7454,	-- Berserk Owlbeast
@@ -332,7 +332,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet Transcript
 						providers = {
-							{ "i", 11470 },	-- Tablet Transcript
+							{ "i", 11470 },	-- Tablet Transcript (QI!)
 							{ "o", 169294 },	-- Tablet of the Seven
 						},
 						coord = { 53.0, 40.0, MAP.BURNING_STEPPES },
@@ -356,7 +356,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
 				classes = { WARLOCK },
 				lvl = 60,
-				qi = 18591,	-- Case of Blood
+				qi = 18591,	-- Case of Blood (QI!)
 			}),
 		}),
 		n(RARES, {

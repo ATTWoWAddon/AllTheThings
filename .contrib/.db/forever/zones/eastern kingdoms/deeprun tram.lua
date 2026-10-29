@@ -23,7 +23,7 @@ maproot(MAP.EASTERN_KINGDOMS, DEEPRUN_TRAM, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Rats Captured
-						provider = { "i", 17117 },	-- Rat Catcher's Flute
+						provider = { "i", 17117 },	-- Rat Catcher's Flute (QI!)
 						cr = 13016,	-- Deeprun Rat
 					}),
 				},
@@ -33,7 +33,7 @@ maproot(MAP.EASTERN_KINGDOMS, DEEPRUN_TRAM, {
 				qg = 12997,	-- Monty
 				races = ALLIANCE_ONLY,
 				lvl = 10,
-				qi = 17118,	-- Carton of Mystery Meat
+				qi = 17118,	-- Carton of Mystery Meat (QI!)
 				groups = {
 					i(17119),	-- Deeprun Rat Kabob
 				},
