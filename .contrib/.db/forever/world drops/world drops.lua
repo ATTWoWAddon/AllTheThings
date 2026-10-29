@@ -1229,8 +1229,6 @@ root(ROOTS.WorldDrops, {
 		i(15304),	-- Grizzly Jerkin
 		i(15303),	-- Grizzly Pants
 		i(15301),	-- Grizzly Slippers
-		i(9756),	-- Nomad Trousers
-		i(9757),	-- Nomad Tunic
 		i(3800),	-- Hardened Leather Belt
 		i(3801),	-- Hardened Leather Boots
 		i(3802),	-- Hardened Leather Bracers
@@ -1375,6 +1373,8 @@ root(ROOTS.WorldDrops, {
 		i(9755),	-- Nomad Gloves
 		i(9751),	-- Nomad Sandals
 		i(9750),	-- Nomad Sash
+		i(9756),	-- Nomad Trousers
+		i(9757),	-- Nomad Tunic
 		i(13117),	-- Ogron's Sash
 		i(1787),	-- Patched Leather Belt
 		i(1788),	-- Patched Leather Boots
@@ -2955,8 +2955,8 @@ root(ROOTS.WorldDrops, {
 		i(9843),	-- Banded Shield
 		i(9778),	-- Bandit Buckler
 		i(6559),	-- Bard's Buckler
-		i(3650),	-- Battle Shield
 		i(2210),	-- Battered Buckler
+		i(3650),	-- Battle Shield
 		i(6599),	-- Battleforge Shield
 		i(2211),	-- Bent Large Shield
 		i(4069),	-- Blackforge Buckler
@@ -3011,7 +3011,6 @@ root(ROOTS.WorldDrops, {
 		i(15298),	-- Grizzly Buckler
 		i(15512),	-- Grunt's Shield
 		i(15621),	-- Gryphon Mail Buckler
-		i(9753),	-- Nomad Buckler
 		i(14607),	-- Hawkeye's Buckler
 		i(15352),	-- Headhunter's Buckler
 		i(10204),	-- Heavy Lamellar Shield
@@ -3044,6 +3043,7 @@ root(ROOTS.WorldDrops, {
 		i(10158),	-- Mercurial Guard
 		i(13082),	-- Mountainside Buckler
 		i(8134),	-- Myrmidon's Defender
+		i(9753),	-- Nomad Buckler
 		i(10362),	-- Ornate Shield
 		i(15504),	-- Outrunner's Shield
 		i(9974),	-- Overlord's Shield
@@ -3416,15 +3416,15 @@ root(ROOTS.WorldDrops, {
 		-- Sort away Blueprints to dungeons
 		prof(ALCHEMY, {
 			i(273085, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Fermenter (RECIPE!)
-			i(13518),	-- Recipe: Flask of Petrification (RECIPE!)
-			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
 			i(9297),	-- Recipe: Draught of Dream Vision (RECIPE!)
+			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
 			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
 			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 			i(3830),	-- Recipe: Elixir of Lesser Fortitude (RECIPE!)
 			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
 			i(250380, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
 			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
+			i(13518),	-- Recipe: Flask of Petrification (RECIPE!)
 			i(13493),	-- Recipe: Greater Arcane Elixir (RECIPE!)
 			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
@@ -3796,8 +3796,8 @@ root(ROOTS.WorldDrops, {
 			description = "Drops from spiders in the level bracket 45-60.",
 			crs = {
 				1821,	-- Carrion Lurker
-				5858,	-- Searing Lava Spider
 				1824,	-- Plague Lurker
+				5858,	-- Searing Lava Spider
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},

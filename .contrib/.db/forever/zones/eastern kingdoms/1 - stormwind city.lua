@@ -196,21 +196,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 			}),
-			q(5645, {	-- Chastise
-				altQuests = {
-					5647,	-- Chastise [Darnassus]
-					5641,	-- Chastise [Ironforge]
-				},
-				qg = 376,	-- High Priestess Laurena <Priest Trainer>
-				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
-				maps = { MAP.IRONFORGE },
-				classes = { PRIEST },
-				races = { DWARF },
-				lvl = 20,
-				groups = {
-					recipe(6346),	-- Fear Ward
-				},
-			}),
 			q(212, {	-- A Meal Served Cold
 				qg = 1141,	-- Angus Stern <Head Chef>
 				coord = { 51.8, 93.7, MAP.STORMWIND_CITY },
@@ -471,6 +456,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				lvl = 13,
 				isBreadcrumb = true,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(5645, {	-- Chastise
+				altQuests = {
+					5647,	-- Chastise [Darnassus]
+					5641,	-- Chastise [Ironforge]
+				},
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
+				maps = { MAP.IRONFORGE },
+				classes = { PRIEST },
+				races = { DWARF },
+				lvl = 20,
+				groups = {
+					recipe(6346),	-- Fear Ward
+				},
 			}),
 			q(7642, {	-- Collection of Goods
 				sourceQuest = 7641,	-- The Work of Grimand Elmore

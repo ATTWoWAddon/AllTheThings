@@ -309,11 +309,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(21833, {	-- Cologne Bottle
 					_drop = { "f", "spellID" },
 				}),
-				i(21829, {	-- Perfume Bottle
-					_drop = { "f", "spellID" },
-				}),
 				i(21815, {	-- Love Token
 					_drop = { "f" },
+				}),
+				i(21829, {	-- Perfume Bottle
+					_drop = { "f", "spellID" },
 				}),
 			},
 		}),
