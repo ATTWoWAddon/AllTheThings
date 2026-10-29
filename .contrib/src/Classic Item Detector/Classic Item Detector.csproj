@@ -3,7 +3,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <GenerateSupportedRuntime>false</GenerateSupportedRuntime>
     <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
     <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
