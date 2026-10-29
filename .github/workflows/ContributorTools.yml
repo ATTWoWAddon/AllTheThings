@@ -1,0 +1,94 @@
+name: Contributor Tools SDK Validation
+
+on:
+  push:
+    branches: ['codex/src-sdk-style']
+    tags-ignore: ['**']
+    paths:
+      - '.contrib/src/**'
+      - '.github/workflows/ContributorTools.yml'
+      - '.github/scripts/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: 0ab01b14d7f262744b5c4e64d6df06206052ba6a
+          path: baseline
+          persist-credentials: false
+      - uses: microsoft/setup-msbuild@v3
+      - name: Build and compare contributor tools
+        shell: pwsh
+        run: .github/scripts/Verify-SdkProjects.ps1
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: sdk-build-evidence-${{ github.sha }}
+          path: ${{ runner.temp }}/sdk-validation/
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v7
+        with:
+          name: contributor-tools-windows-x64-${{ github.sha }}
+          path: ${{ runner.temp }}/contributor-tools/
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v7
+        with:
+          name: baseline-parser-${{ github.sha }}
+          path: ${{ runner.temp }}/baseline-parser/
+          if-no-files-found: error
+          retention-days: 7
+
+  compare-parser:
+    needs: build
+    runs-on: windows-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { flavor: Retail, output: Standard, config: '' }
+          - { flavor: ClassicEra, output: Vanilla, config: '../.db/standard/.config/classic/01 - Classic Era.config' }
+          - { flavor: SoD, output: VanillaSOD, config: '../.db/standard/.config/classic/01 - Classic SOD.config' }
+          - { flavor: TBC, output: TBC, config: '../.db/standard/.config/classic/02 - TBC.config' }
+          - { flavor: Wrath, output: Wrath, config: '../.db/standard/.config/classic/03 - Wrath.config' }
+          - { flavor: Cata, output: Cata, config: '../.db/standard/.config/classic/04 - Cataclysm.config' }
+          - { flavor: Mists, output: Mists, config: '../.db/standard/.config/classic/05 - Mists of Pandaria.config' }
+          - { flavor: Forever, output: Camelot, config: '../.db/forever/.config/forever.config' }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: contributor-tools-windows-x64-${{ github.sha }}
+          path: ${{ runner.temp }}/contributor-tools/
+      - uses: actions/download-artifact@v8
+        with:
+          name: baseline-parser-${{ github.sha }}
+          path: ${{ runner.temp }}/baseline-parser/
+      - name: Compare Parser runs
+        shell: powershell
+        env:
+          PARSER_FLAVOR: ${{ matrix.flavor }}
+          PARSER_OUTPUT: ${{ matrix.output }}
+          PARSER_CONFIG: ${{ matrix.config }}
+        run: .github/scripts/Compare-ParserPackages.ps1 -Flavor $env:PARSER_FLAVOR -OutputName $env:PARSER_OUTPUT -Config $env:PARSER_CONFIG
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: parser-comparison-${{ matrix.flavor }}-${{ github.sha }}
+          path: ${{ runner.temp }}/parser-comparison-${{ matrix.flavor }}/
+          if-no-files-found: warn
+          retention-days: 7
