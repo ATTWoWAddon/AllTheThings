@@ -301,7 +301,7 @@ i(8398, 10542);		-- Tough Scorpid Gloves
 i(8402, 10570);		-- Tough Scorpid Helm
 i(8401, 10568);		-- Tough Scorpid Leggings
 i(8400, 10564);		-- Tough Scorpid Shoulders
-i(252767, 1255141);	-- Trapper's Leather Belt
+i(252766, 1255141);	-- Trapper's Leather Belt
 i(252787, 1255120);	-- Trapper's Leather Boots
 i(252778, 1255129);	-- Trapper's Leather Gloves
 i(252799, 1255108);	-- Trapper's Leather Hood
