@@ -285,9 +285,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				requireSkill = ENGINEERING,
 				cost = {
-					{ "i", 255007, 8 },	-- 8x Golem Isospring
 					{ "i", 4363, 4 },	-- 4x Copper Modulator
 					{ "i", 4405, 1 },	-- 1x Crude Scope
+					{ "i", 255007, 8 },	-- 8x Golem Isospring
 				},
 				lvl = 8,
 				groups = {
@@ -786,10 +786,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
 				cost = {
-					{ "i", 729, 3 },	-- 3x Stringy Vulture Meat
-					{ "i", 730, 3 },	-- 3x Murloc Eye
 					{ "i", 731, 3 },	-- 3x Goretusk Snout
+					{ "i", 730, 3 },	-- 3x Murloc Eye
 					{ "i", 732, 3 },	-- 3x Okra
+					{ "i", 729, 3 },	-- 3x Stringy Vulture Meat
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 9,

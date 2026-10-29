@@ -153,8 +153,8 @@ instanceroot(230, {	-- Dire Maul
 			q(1193, {	-- A Broken Trap
 				description = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 				cost = {
-					{ "i", 15994, 1 },	-- 1x Thorium Widget
 					{ "i", 3829, 1 },	-- 1x Frost Oil
+					{ "i", 15994, 1 },	-- 1x Thorium Widget
 				},
 				provider = { "o", 179485 },	-- Broken Trap
 				maps = GORDOK_COMMONS_MAPS,
@@ -436,9 +436,9 @@ instanceroot(230, {	-- Dire Maul
 				maxReputation = { FACTION_SHENDRALAR, EXALTED },
 				maps = CAPITAL_GARDENS_MAPS,
 				cost = {
+					{ "i", 14344, 4 },	-- 4x Large Brilliant Shard
 					{ "i", 18333, 1 },	-- 1x Libram of Focus
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
-					{ "i", 14344, 4 },	-- 4x Large Brilliant Shard
 					{ "i", 12753, 2 },	-- 2x Skin of Shadow
 				},
 				repeatable = true,
@@ -456,10 +456,10 @@ instanceroot(230, {	-- Dire Maul
 				maxReputation = { FACTION_SHENDRALAR, EXALTED },
 				maps = CAPITAL_GARDENS_MAPS,
 				cost = {
+					{ "i", 12735, 1 },	-- 1x Frayed Abomination Stitching
+					{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
 					{ "i", 18334, 1 },	-- 1x Libram of Protection
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
-					{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
-					{ "i", 12735, 1 },	-- 1x Frayed Abomination Stitching
 				},
 				repeatable = true,
 				lvl = 57,
@@ -476,10 +476,10 @@ instanceroot(230, {	-- Dire Maul
 				maxReputation = { FACTION_SHENDRALAR, EXALTED },
 				maps = CAPITAL_GARDENS_MAPS,
 				cost = {
+					{ "i", 12938, 2 },	-- 2x Blood of Heroes
+					{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
 					{ "i", 18332, 1 },	-- 1x Libram of Rapidity
 					{ "i", 18335, 1 },	-- 1x Pristine Black Diamond
-					{ "i", 14344, 2 },	-- 2x Large Brilliant Shard
-					{ "i", 12938, 2 },	-- 2x Blood of Heroes
 				},
 				repeatable = true,
 				lvl = 57,
@@ -509,8 +509,8 @@ instanceroot(230, {	-- Dire Maul
 					objective(1, {	-- 0/1 Sealed Reliquary of Purity
 						provider = { "i", 18540 },	-- Sealed Reliquary of Purity
 						cost = {
-							{ "i", 18539, 1 },	-- 1x Reliquary of Purity
 							{ "i", 18501, 1 },	-- 1x Felvine Shard
+							{ "i", 18539, 1 },	-- 1x Reliquary of Purity
 						},
 					}),
 					i(18535),	-- Milli's Shield
@@ -546,9 +546,9 @@ instanceroot(230, {	-- Dire Maul
 				maps = GORDOK_COMMONS_MAPS,
 				cost = {
 					{ "i", 14048, 4 },	-- 4x Bolt of Runecloth
+					{ "i", 18240, 1 },	-- 1x Ogre Tannin
 					{ "i", 8170, 8 },	-- 8x Rugged Leather
 					{ "i", 14341, 2 },	-- 2x Rune Thread
-					{ "i", 18240, 1 },	-- 1x Ogre Tannin
 				},
 				lvl = 56,
 				groups = {
@@ -572,9 +572,9 @@ instanceroot(230, {	-- Dire Maul
 				maps = GORDOK_COMMONS_MAPS,
 				cost = {
 					{ "i", 14048, 4 },	-- 4x Bolt of Runecloth
+					{ "i", 18240, 1 },	-- 1x Ogre Tannin
 					{ "i", 8170, 8 },	-- 8x Rugged Leather
 					{ "i", 14341, 2 },	-- 2x Rune Thread
-					{ "i", 18240, 1 },	-- 1x Ogre Tannin
 				},
 				repeatable = true,
 				lvl = 56,
@@ -1165,9 +1165,9 @@ instanceroot(230, {	-- Dire Maul
 					description = "|cff3399ffSTEP 1:|r Find a Warlock that is on or has completed Dreadsteed of Xoroth.\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs, Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 12.4, 31.6)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
 					sourceQuest = 7631,	-- Dreadsteed of Xoroth
 					cost = {
-						{ "i", 18670, 1 },	-- 1x Xorothian Glyphs
 						{ "i", 18629, 1 },	-- 1x Black Lodestone
 						{ "i", 18663, 1 },	-- 1x J'eevee's Jar
+						{ "i", 18670, 1 },	-- 1x Xorothian Glyphs
 					},
 					groups = {
 						i(18757),	-- Diabolic Mantle

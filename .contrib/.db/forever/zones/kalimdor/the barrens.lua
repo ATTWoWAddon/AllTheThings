@@ -1502,8 +1502,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 61.22, 37.86, MAP.THE_BARRENS },
 				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 				cost = {
-					{ "i", 2589, 40 },	-- 40x Linen Cloth
 					{ "i", 3371, 4 },	-- 4x Empty Vial
+					{ "i", 2589, 40 },	-- 40x Linen Cloth
 				},
 				repeatable = true,
 				lvl = 10,

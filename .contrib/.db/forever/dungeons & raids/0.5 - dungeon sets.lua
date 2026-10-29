@@ -191,8 +191,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			classes = { HUNTER },
 			cost = {
 				{ "i", 16675, 1 },	-- 1x Beaststalker's Boots
-				{ "i", 16678, 1 },	-- 1x Beaststalker's Pants
 				{ "i", 16679, 1 },	-- 1x Beaststalker's Mantle
+				{ "i", 16678, 1 },	-- 1x Beaststalker's Pants
 			},
 			lvl = 58,
 			groups = {
@@ -464,8 +464,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 			classes = { PALADIN },
 			cost = {
-				{ "i", 16727, 1 },	-- 1x Lightforge Helm
 				{ "i", 16726, 1 },	-- 1x Lightforge Breastplate
+				{ "i", 16727, 1 },	-- 1x Lightforge Helm
 			},
 			lvl = 58,
 			groups = {
@@ -524,9 +524,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 			classes = { PRIEST },
 			cost = {
+				{ "i", 16695, 1 },	-- 1x Devout Mantle
 				{ "i", 16691, 1 },	-- 1x Devout Sandals
 				{ "i", 16694, 1 },	-- 1x Devout Skirt
-				{ "i", 16695, 1 },	-- 1x Devout Mantle
 			},
 			lvl = 58,
 			groups = {
@@ -855,9 +855,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
 			classes = { WARLOCK },
 			cost = {
-				{ "i", 16704, 1 },	-- 1x Dreadmist Sandals
 				{ "i", 16699, 1 },	-- 1x Dreadmist Leggings
 				{ "i", 16701, 1 },	-- 1x Dreadmist Mantle
+				{ "i", 16704, 1 },	-- 1x Dreadmist Sandals
 			},
 			lvl = 58,
 			groups = {
@@ -1019,8 +1019,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 16731, 1 },	-- 1x Helm of Valor
 				{ "i", 16730, 1 },	-- 1x Breastplate of Valor
+				{ "i", 16731, 1 },	-- 1x Helm of Valor
 			},
 			classes = { WARRIOR },
 			lvl = 58,
@@ -1112,10 +1112,10 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16016,	-- Anthion Harmon
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			cost = {
+				{ "i", 15407, 4 },	-- 4x Cured Rugged Hide
 				{ "i", 11371, 3 },	-- 3x Dark Iron Bar
 				{ "i", 12810, 20 },	-- 20x Enchanted Leather
 				{ "i", 14342, 3 },	-- 3x Mooncloth
-				{ "i", 15407, 4 },	-- 4x Cured Rugged Hide
 			},
 			lvl = 58,
 		}),
@@ -1281,8 +1281,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet
 				{ "i", 13512, 1 },	-- 1x Flask of Supreme Power
+				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet
 			},
 			lvl = 58,
 			groups = {
@@ -1410,8 +1410,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet
 				{ "i", 22056, 1 },	-- 1x Brazier of Beckoning [Lord Valthalak]
+				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet
 			},
 			cr = 16042,	-- Lord Valthalak
 			lvl = 58,
@@ -1610,8 +1610,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22049, 1 },	-- 1x Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARRIOR, MAGE },
 			lvl = 58,
@@ -1633,8 +1633,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				239,	-- Warpwood Quarter
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22050, 1 },	-- 1x Brazier of Beckoning [Isalien]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARLOCK, DRUID },
 			lvl = 58,
@@ -1652,8 +1652,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22051, 1 },	-- 1x Brazier of Beckoning [Jarien and Sothos]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { HUNTER, ROGUE },
 			lvl = 58,
@@ -1674,8 +1674,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22052, 1 },	-- 1x Brazier of Beckoning [Kormok]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { PALADIN, PRIEST, SHAMAN },
 			lvl = 58,
@@ -1697,8 +1697,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				239,	-- Warpwood Quarter
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22050, 1 },	-- 1x Brazier of Beckoning [Isalien]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARRIOR, ROGUE },
 			lvl = 58,
@@ -1709,9 +1709,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
 					cost = {
-						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
 						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
 					},
 				}),
 			},
@@ -1724,8 +1724,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22049, 1 },	-- 1x Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { DRUID, PALADIN, SHAMAN },
 			lvl = 58,
@@ -1736,9 +1736,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
 					cost = {
-						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
 						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
 					},
 				}),
 			},
@@ -1748,8 +1748,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22051, 1 },	-- 1x Brazier of Beckoning [Jarien & Sothos]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { PRIEST, MAGE },
 			lvl = 58,
@@ -1763,9 +1763,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				objective(3, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
 					cost = {
-						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
 						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
 					},
 				}),
 			},
@@ -1775,8 +1775,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 			cost = {
-				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 				{ "i", 22052, 1 },	-- 1x Brazier of Beckoning [Kormok]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { HUNTER, WARLOCK },
 			lvl = 58,
@@ -1787,9 +1787,9 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
 					cost = {
-						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
 						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet
 					},
 				}),
 			},

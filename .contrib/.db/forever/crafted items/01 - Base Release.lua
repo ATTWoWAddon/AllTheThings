@@ -2221,8 +2221,8 @@ root(ROOTS.Craftables, {
 		filter(MISC, {
 			i(11020, {	-- Evergreen Pouch
 				cost = {
-					{ "i", 11018, 2 },	-- 2x Un'Goro Soil
 					{ "i", 11022, 1 },	-- 1x Packet of Tharlendris Seeds
+					{ "i", 11018, 2 },	-- 2x Un'Goro Soil
 				},
 				groups = {
 					i(11024, {	-- Evergreen Herb Casing
