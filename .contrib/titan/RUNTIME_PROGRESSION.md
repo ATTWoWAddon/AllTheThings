@@ -34,7 +34,7 @@ This is an illustrative runtime contract, not a command for users to select or s
 
 ## Acquisition semantics
 
-A source can carry `releasePhases = { "example:one" }`. Requirements on the same source and its ancestors combine with AND. Alternative acquisition sources combine with OR. Each alternative retains its own release, unavailable (`u`), and event (`e`) restrictions.
+A source can carry `releasePhases = { "example:one" }`. Requirements on the same source and its ancestors combine with AND. Alternative acquisition sources combine with OR. Each alternative retains its own release, numeric phase (`phase`), unavailable (`u`), and event (`e`) restrictions.
 
 For example, an open but removed boss drop and a future vendor reward do not produce a currently obtainable item by borrowing favorable fields from each other. The merger retains both complete alternatives. A source's live status and later acquisition ancestry remain relevant after cloning and merging. Weak sidecars avoid holding closed display copies alive; source IDs deduplicate repeated alternatives. While a source or view remains alive, visibility evaluation reads its current conditions. After it is collected, retained routes use the last observed conditions and local overrides. Changes to an original source followed by collection before any evaluation are not guaranteed to propagate to every existing copy, including writes made through the explicit availability helper. Keep a changed original alive through visibility evaluation when later copies must retain that state.
 
@@ -44,7 +44,7 @@ Content identity remains separate from progression. A new SoD boss or replacemen
 
 `ReleasePhases` stores flat, namespaced boolean overrides. An unset key uses the active profile's baseline; explicit `false` survives baseline changes and profile copies. Copying an ATT settings profile creates independent storage.
 
-A phase may declare `legacyU` to preserve an existing explicit numeric preference. This is an intentional adapter, not a global conversion of every numeric `u`. Different flavors do not share preferences unless their profile explicitly declares that relationship. The Phase settings page displays active-profile controls while retaining legacy controls for unmapped content. Debug visibility is a display mode, not evidence of server progression.
+A phase may declare `legacyU` to preserve an existing explicit numeric preference for both numeric `u` and numeric `phase` fields. Controlled acquisition routes retain numeric phase together with release, u, and event conditions, so alternatives cannot borrow each other’s visibility. This is an intentional adapter, not a global conversion of every numeric `u`. Different flavors do not share preferences unless their profile explicitly declares that relationship. The Phase settings page displays active-profile controls while retaining legacy controls for unmapped content. Debug visibility is a display mode, not evidence of server progression.
 
 ## Explicit availability updates
 

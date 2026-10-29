@@ -165,16 +165,20 @@ DefineToggleFilter("Unobtainable", AccountFilters, function(item)
 	if app.Modules.Progression.HasControlledSources(item) then return true; end
 	return FilterUnobtainable(item);
 end);
+local function FilterPhase(item)
+	local phase = item.phase;
+	if phase and app.Modules.Progression.GetProfile() then return app.Settings:GetUnobtainableFilter(phase); end
+	return not phase or SettingsUnobtainable[phase];
+end
 DefineToggleFilter("ReleasePhase", AccountFilters, function(item)
 	return app.Modules.Progression.Filter(item, AccountFilters.Unobtainable and FilterUnobtainable,
-		AccountFilters.Event and app.Modules.Events.FilterIsEventActive);
+		AccountFilters.Event and app.Modules.Events.FilterIsEventActive, AccountFilters.Phase and FilterPhase);
 end);
 
 -- Phase (shares the Unobtainable settings container, keyed by phase ID)
-DefineToggleFilter("Phase", AccountFilters,
-function(item)
-	local phase = item.phase
-	return not phase or SettingsUnobtainable[phase];
+DefineToggleFilter("Phase", AccountFilters, function(item)
+	if app.Modules.Progression.HasControlledSources(item) then return true; end
+	return FilterPhase(item);
 end);
 
 -- PvP

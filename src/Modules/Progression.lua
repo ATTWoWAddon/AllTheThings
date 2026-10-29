@@ -86,7 +86,7 @@ local function SaveCondition(route, index, source)
 	local fallback = route.fallback;
 	local condition = fallback[index];
 	if not condition then condition = {}; fallback[index] = condition; end
-	condition.u, condition.e = source.u, source.e;
+	condition.u, condition.e, condition.phase = source.u, source.e, source.phase;
 	local requirements = source.releasePhases;
 	if requirements ~= nil then fallback.controlled = true; end
 	if type(requirements) == "table" then
@@ -109,7 +109,7 @@ local function CaptureFallback(route, source)
 	local seen, index = {}, 0;
 	while source and not seen[source] do
 		seen[source] = true;
-		if index == 0 or source.u ~= nil or source.e ~= nil or source.releasePhases ~= nil then
+		if index == 0 or source.u ~= nil or source.e ~= nil or source.phase ~= nil or source.releasePhases ~= nil then
 			index = index + 1; SaveCondition(route, index, source);
 		end
 		source = source.sourceParent or source.parent;
@@ -193,6 +193,7 @@ local function ObserveView(route)
 	if values and view and not flattened[view] then
 		values.hasU, values.hasE = view.u ~= route.initialU, view.e ~= route.initialE;
 		values.u, values.e = view.u, view.e;
+		values.hasPhase, values.phase = view.phase ~= route.initialPhase, view.phase;
 	end
 	return view, values;
 end
@@ -200,20 +201,22 @@ local function BindView(entry, target, source)
 	if #entry.routes ~= 1 then entry.shared = true; return entry; end
 	local route = CopyRoute(entry.routes[1]);
 	local _, observed = ObserveView(route);
-	if observed and (observed.hasU or observed.hasE) then
+	if observed and (observed.hasU or observed.hasE or observed.hasPhase) then
 		local previous = route.availability;
 		local values = { hasU = previous and previous.hasU, hasE = previous and previous.hasE,
-			u = previous and previous.u, e = previous and previous.e };
+			u = previous and previous.u, e = previous and previous.e,
+			phase = previous and previous.phase, hasPhase = previous and previous.hasPhase };
 		-- Rebinding retains the prior occurrence's local deltas, including explicit nil.
 		-- Untouched fields still follow the original source, while newer local writes win.
 		if observed.hasU and not route.skipViewU then values.hasU, values.u = true, observed.u; end
 		if observed.hasE and not route.skipViewE then values.hasE, values.e = true, observed.e; end
+		if observed.hasPhase then values.hasPhase, values.phase = true, observed.phase; end
 		route.availability = values;
 	end
 	route.view = setmetatable({ target }, { __mode = "v" });
 	route.viewValues = {};
 	route.skipViewU, route.skipViewE = nil, nil;
-	route.initialU, route.initialE = source.u, source.e;
+	route.initialU, route.initialE, route.initialPhase = source.u, source.e, source.phase;
 	return Entry({ route }, target, entry);
 end
 -- Record complete acquisition alternatives before legacy u/event merging can flatten their pairing.
@@ -293,7 +296,8 @@ function api.SetSourceAvailability(group, field, value)
 				route.availability = nil;
 			else
 				local values = { hasU = previous and previous.hasU, hasE = previous and previous.hasE,
-					u = previous and previous.u, e = previous and previous.e };
+					u = previous and previous.u, e = previous and previous.e,
+					phase = previous and previous.phase, hasPhase = previous and previous.hasPhase };
 				if field == "u" then values.hasU = true; else values.hasE = true; end
 				values[field] = value;
 				route.availability = values;
@@ -305,7 +309,7 @@ function api.SetSourceAvailability(group, field, value)
 				if field == "u" then route.initialU, route.skipViewU = value, nil;
 				else route.initialE, route.skipViewE = value, nil; end
 				route.viewValues = { hasU = group.u ~= route.initialU, hasE = group.e ~= route.initialE,
-					u = group.u, e = group.e };
+					u = group.u, e = group.e, hasPhase = group.phase ~= route.initialPhase, phase = group.phase };
 			end
 			route.revision = updateRevision;
 			changed = true;
@@ -314,30 +318,33 @@ function api.SetSourceAvailability(group, field, value)
 	end
 	if changed then sources[group] = Entry(routes, group, entry); end
 end
-local function ConditionPass(condition, unobtainable, event, uValues, eValues)
+local function ConditionPass(condition, unobtainable, event, phase, uValues, eValues, phaseValues)
 	return api.RequirementsPass(condition.releasePhases)
 		and (not unobtainable or unobtainable(uValues or condition))
-		and (not event or event(eValues or condition));
+		and (not event or event(eValues or condition))
+		and (not phase or phase(phaseValues or condition));
 end
-local function RoutePass(route, unobtainable, event)
+local function RoutePass(route, unobtainable, event, phase)
 	local live = route.live[1];
 	local view, observed = ObserveView(route);
 	local availability = route.availability;
 	local uValues = availability and availability.hasU and availability;
 	local eValues = availability and availability.hasE and availability;
+	local phaseValues = availability and availability.hasPhase and availability;
 	if observed then
 		if observed.hasU and not route.skipViewU then uValues = observed; end
 		if observed.hasE and not route.skipViewE then eValues = observed; end
+		if observed.hasPhase then phaseValues = observed; end
 	end
 	if view and not flattened[view] and not api.RequirementsPass(view.releasePhases) then return false; end
 	if live and not flattened[live] then
 		local seen, first, index, pass = {}, true, 0, true;
 		while live and not seen[live] do
 			seen[live] = true;
-			if first or live.u ~= nil or live.e ~= nil or live.releasePhases ~= nil then
+			if first or live.u ~= nil or live.e ~= nil or live.phase ~= nil or live.releasePhases ~= nil then
 				index = index + 1; SaveCondition(route, index, live);
 			end
-			if pass and not ConditionPass(live, unobtainable, event, first and uValues, first and eValues) then pass = false; end
+			if pass and not ConditionPass(live, unobtainable, event, phase, first and uValues, first and eValues, first and phaseValues) then pass = false; end
 			first = false;
 			live = live.sourceParent or live.parent;
 		end
@@ -345,17 +352,17 @@ local function RoutePass(route, unobtainable, event)
 		if not pass then return false; end
 	else
 		for i,condition in ipairs(route.fallback) do
-			if not ConditionPass(condition, unobtainable, event, i == 1 and uValues, i == 1 and eValues) then return false; end
+			if not ConditionPass(condition, unobtainable, event, phase, i == 1 and uValues, i == 1 and eValues, i == 1 and phaseValues) then return false; end
 		end
 	end
-	for _,context in ipairs(route.contexts) do if not RoutePass(context, unobtainable, event) then return false; end end
+	for _,context in ipairs(route.contexts) do if not RoutePass(context, unobtainable, event, phase) then return false; end end
 	return true;
 end
-function api.Filter(group, unobtainable, event)
+function api.Filter(group, unobtainable, event, phase)
 	if not api.GetProfile() then return app.ProgressionProfile == nil; end
 	local entry = sources[group];
 	if entry and IsControlled(entry) then
-		for _,route in ipairs(entry.routes) do if RoutePass(route, unobtainable, event) then return true; end end
+		for _,route in ipairs(entry.routes) do if RoutePass(route, unobtainable, event, phase) then return true; end end
 		return false;
 	end
 	-- Unmerged source ancestry contributes AND requirements without flattening separate routes.

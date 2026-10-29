@@ -45,6 +45,6 @@ for _,optIn in ipairs({ false, true }) do
 		local clone = app.CloneObject(merged); app.MergeProperties(clone, cached[1]); return clone;
 	end, app, optIn and 32 or 0);
 	Run(label .. " merged availability filter", iterations * 5, function()
-		return app.RecursiveUnobtainableFilter(merged);
+		return app.Modules.Filter.Filters.RecursiveUnobtainableFilter(merged);
 	end, app);
 end

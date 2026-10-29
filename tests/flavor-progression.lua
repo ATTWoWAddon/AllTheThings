@@ -31,7 +31,7 @@ local function MakeApp(profile)
 		wipe = function(t) for k in pairs(t) do t[k] = nil; end end,
 	}, { __index = _G });
 	local app = { Modules = { FactionData = { FACTION_RACES = { {}, {} } } }, WOWAPI = {}, L = {
-		PHASES = { [1] = { state = 1 }, [2] = { state = 1 }, [31] = { state = 2 }, [32] = { state = 2 } },
+		PHASES = { [1] = { state = 1 }, [2] = { state = 1 }, [31] = { state = 2, buildVersion = 1 }, [32] = { state = 2, buildVersion = 2 } },
 	}, EmptyFunction = function() end, AddEventHandler = function() end, HandleEvent = function() end };
 	local settings = { GetRawSettings = function(_, key) return raw[key]; end,
 		Refresh = function() end, UpdateMode = function() end };
@@ -47,25 +47,26 @@ local function MakeApp(profile)
 	local prefix = Section(filterSource, "-- Filter Module", "-- PvP");
 	local event = assert(filterSource:match('(DefineToggleFilter%("Event", AccountFilters, function%(item%).-\nend%);)'));
 	local recursive = Section(filterSource, "local function RecursiveUnobtainableFilter(group)", "-- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)");
-	Compile(prefix .. "\nSettingsUnobtainable=app.Settings:GetRawSettings(\"Unobtainable\");\n" .. event .. "\n" .. recursive,
+	local account = Section(filterSource, "local function SettingsFilters_Account(o)", "local function SettingsExtraFilters(o, extraFilters)");
+	Compile(prefix .. "\n" .. account .. "\napi.Filters.TestAccount = SettingsFilters_Account;\nSettingsUnobtainable=app.Settings:GetRawSettings(\"Unobtainable\");\n" .. event .. "\n" .. recursive,
 		"Filter.lua availability pipeline", env)("ATT", app);
 	local merge = dataSource:sub((assert(dataSource:find("local MergeSkipFields = {", 1, true))));
 	Compile("local app=select(2,...); local L=app.L;\n" .. merge, "DataHandling.lua actual merge pipeline", env)("ATT", app);
 	local clones = Section(Read("src/Classes/base.lua"), "local function CloneClassInstance(object, ignoreChildren)", "-- Allow importing a specific set of Class functions from one Class to another");
 	app.CloneClassInstance, app.CloneObject = Compile("local app=select(2,...);\n" .. clones .. "\nreturn CloneClassInstance,CloneObject;", "Classes/base.lua actual clones", env)("ATT", app);
 	local dispatch = Section(dataSource, "UpdateGroups = function(parent, g)", "app.UpdateGroups = UpdateGroups");
-	env.UpdateGroupFixture = function(group) group.visible = not not app.RecursiveUnobtainableFilter(group); end;
+	env.UpdateGroupFixture = function(group) group.visible = not not app.Modules.Filter.Filters.RecursiveUnobtainableFilter(group); end;
 	Compile("local app=select(2,...); local UpdateGroup=UpdateGroupFixture; local UpdateGroups;\n" .. dispatch
 		.. "\napp.UpdateGroups=UpdateGroups;", "DataHandling.lua actual callback dispatch", env)("ATT", app);
 	-- Assigning after all runtime modules load proves no early Era/catalog capture is used.
 	app.ProgressionProfile = profile;
 	local set = app.Modules.Filter.Set;
-	set.Unobtainable(true); set.Event(true); set.ReleasePhase(profile ~= nil);
+	set.Unobtainable(true); set.Phase(true); set.Event(true); set.ReleasePhase(profile ~= nil);
 	return app, raw, env;
 end
 local meta = { __index = { key = "itemID" } };
 local function Item(fields) fields.itemID = 900001; return setmetatable(fields, meta); end
-local function Visible(app, item) return not not app.RecursiveUnobtainableFilter(item); end
+local function Visible(app, item) return not not app.Modules.Filter.Filters.RecursiveUnobtainableFilter(item); end
 
 local app, raw = MakeApp(Profile("titan", 6, 10));
 assert(app.Settings:GetReleasePhaseFilter("titan:6"));
@@ -420,6 +421,151 @@ do
 	assert(result.Unobtainable[12] == false and result.ReleasePhases["era:2"] == false);
 	result.ReleasePhases["era:2"] = true;
 	assert(state.ReleasePhases["era:2"] == false);
+end
+-- Both entry points must evaluate complete routes and rebuild the enabled filter array.
+local function PhaseVisible(app, item, expected, message)
+	assert(Visible(app, item) == expected
+		and (not not app.Modules.Filter.Filters.TestAccount(item)) == expected, message);
+end
+-- Numeric phase cannot borrow release permission from a different acquisition alternative.
+do
+	local a, choices = MakeApp(Profile("titan", 6, 10));
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local blocked = Item({ releasePhases = { "titan:6" }, phase = 31 });
+	local future = Item({ releasePhases = { "titan:7" }, phase = 32 });
+	local combined = a.MergedObject({ blocked, future }, true);
+	assert(combined.phase == 31, "The existing merger must still choose the earliest numeric phase");
+	PhaseVisible(a, combined, false, "Separate sources cannot supply each other's release and numeric phase");
+	choices.ReleasePhases["titan:7"] = true;
+	PhaseVisible(a, combined, true, "A complete permitted alternative survives a blocked flattened phase");
+	PhaseVisible(a, a.CloneObject(combined), true, "Merged clones retain their permitted alternative");
+	choices.ReleasePhases["titan:7"] = false;
+	a.Modules.Filter.Set.Phase(false);
+	PhaseVisible(a, combined, true, "Disabling Phase bypasses only the numeric phase predicate");
+	for _,fields in ipairs({ { releasePhases = { "titan:7" } },
+		{ releasePhases = { "titan:6" }, u = 2 }, { releasePhases = { "titan:6" }, e = 2 } }) do
+		fields.phase = 31;
+		PhaseVisible(a, a.MergedObject({ Item(fields) }, true), false,
+			"Disabling Phase must preserve release, unobtainable, and event restrictions");
+	end
+	a.Modules.Filter.Set.Phase(true);
+	PhaseVisible(a, combined, false, "Re-enabling Phase restores both filtering entry points");
+
+	-- Detach copied ancestry and verify that both weak originals really disappear.
+	local ancestor = { phase = 31 };
+	local source = Item({ releasePhases = { "titan:6" }, parent = ancestor });
+	local copy = a.CloneObject(source); copy.parent = nil; copy.sourceParent = nil;
+	a.MergeProperties(copy, future);
+	PhaseVisible(a, copy, false, "A detached merged route retains a phase-only ancestor");
+	ancestor.phase = 32; PhaseVisible(a, copy, true, "Phase-only ancestry remains live");
+	ancestor.phase = 31; PhaseVisible(a, copy, false, "Ancestor changes refresh the retained fallback");
+	local weak = setmetatable({ source, ancestor }, { __mode = "v" });
+	source, ancestor = nil, nil; collectgarbage("collect"); collectgarbage("collect");
+	assert(weak[1] == nil and weak[2] == nil, "Detached ancestry must not retain weak acquisition originals");
+	PhaseVisible(a, copy, false, "Collected phase-only ancestry retains its last observed restriction");
+
+	-- A copy can gain phase-only ancestry after its original acquisition route was captured.
+	local original = Item({ releasePhases = { "titan:6" } });
+	local occurrence = a.CloneObject(original); occurrence.parent = { phase = 31 };
+	local context = occurrence.parent;
+	local detached = a.MergedObject({ occurrence, future }, true);
+	PhaseVisible(a, detached, false, "Late acquisition contexts retain phase-only restrictions");
+	context.phase = 32; PhaseVisible(a, detached, true, "Late acquisition contexts are evaluated live");
+	context.phase = 31; PhaseVisible(a, detached, false, "Late contexts refresh their phase fallback");
+	local weakContext = setmetatable({ occurrence, context }, { __mode = "v" });
+	occurrence, context = nil, nil; collectgarbage("collect"); collectgarbage("collect");
+	assert(weakContext[1] == nil and weakContext[2] == nil);
+	PhaseVisible(a, detached, false, "Collected late contexts retain their numeric phase");
+
+	original = Item({ releasePhases = { "titan:6" }, phase = 31 });
+	local localCopy = a.CloneObject(original); localCopy.phase = nil;
+	local reclone = a.CloneObject(localCopy);
+	PhaseVisible(a, reclone, true, "A recloned explicit nil phase delta stays local to that occurrence");
+	assert(original.phase == 31);
+	PhaseVisible(a, a.MergedObject({ reclone, future }, true), true, "Remerging preserves an explicit nil phase delta");
+	reclone.phase = 31;
+	PhaseVisible(a, a.CloneObject(reclone), false, "A newer local phase write supersedes an inherited nil delta");
+	reclone.phase = 32;
+	PhaseVisible(a, a.CloneObject(reclone), true, "New numeric phase deltas survive recloning");
+	local untouched = a.CloneObject(original);
+	original.phase = 32; PhaseVisible(a, untouched, true, "Untouched copies still read the original phase live");
+	original.phase = 31; PhaseVisible(a, untouched, false, "A local override does not freeze untouched copies");
+	local display = a.MergedObject({ localCopy, future }, true);
+	PhaseVisible(a, display, true, "Observe a copy's nil phase before its weak reference disappears");
+	local weakCopy = setmetatable({ localCopy }, { __mode = "v" }); localCopy = nil;
+	collectgarbage("collect"); collectgarbage("collect");
+	assert(weakCopy[1] == nil);
+	PhaseVisible(a, display, true, "A collected copy retains its observed nil phase delta");
+
+	-- Flattening refreshes the phase fallback shared by previously created copies.
+	original.phase = 32; a.MergeProperties(original, future);
+	PhaseVisible(a, untouched, true, "Flattening must retain an original's current numeric phase");
+	local weakOriginal = setmetatable({ original }, { __mode = "v" }); original = nil;
+	collectgarbage("collect"); collectgarbage("collect");
+	assert(weakOriginal[1] == nil);
+	PhaseVisible(a, untouched, true, "Collected flattened originals preserve the refreshed phase fallback");
+end
+-- Both availability callbacks keep their acquisition origin and copy-local phase delta.
+for _,field in ipairs({ "u", "e" }) do
+	local a, choices = MakeApp(Profile("titan", 6, 10));
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local callback = function(group, parent, update)
+		a.Modules.Progression.SetSourceAvailability(group, field, nil); update(group, parent); return true;
+	end;
+	local source = Item({ releasePhases = { "titan:6" }, phase = 31, [field] = 2, OnUpdate = callback });
+	local future = Item({ releasePhases = { "titan:7" }, phase = 32 });
+	local merged = a.MergedObject({ source, future }, true);
+	a.UpdateGroups(nil, { merged });
+	assert(not merged.visible, "Self-updating callbacks cannot borrow another route's numeric phase");
+	PhaseVisible(a, merged, false, "A callback only adapts its retained origin's named availability field");
+	choices.Unobtainable[31] = true; a.UpdateGroups(nil, { merged }); assert(merged.visible);
+	choices.Unobtainable[31] = false;
+	local copy = a.CloneObject(source); copy.phase = nil;
+	a.UpdateGroups(nil, { copy }); assert(copy.visible);
+	local reclone = a.CloneObject(copy);
+	a.MergeProperties(reclone, future);
+	PhaseVisible(a, reclone, true, "Callbacks preserve nil phase deltas through cloning and flattening");
+	a.Modules.Progression.SetSourceAvailability(reclone, field, 2);
+	PhaseVisible(a, reclone, false, "A newer availability write keeps the existing phase delta");
+	a.Modules.Progression.SetSourceAvailability(reclone, field, nil);
+	PhaseVisible(a, reclone, true, "Clearing availability must not discard the retained nil phase override");
+	assert(source.phase == 31 and source[field] == 2, "Copy callbacks leave their original source unchanged");
+end
+-- Mapped numeric IDs use namespaced choices; unmapped IDs retain numeric settings.
+do
+	local a, choices = MakeApp(Profile("mapped", 1, 2, 31));
+	local mapped = Item({ phase = 31 });
+	choices.ReleasePhases["mapped:1"] = false; choices.Unobtainable[31] = true;
+	PhaseVisible(a, mapped, false, "Namespaced false overrides a mapped numeric true");
+	choices.ReleasePhases["mapped:1"] = true; choices.Unobtainable[31] = false;
+	PhaseVisible(a, mapped, true, "Namespaced true overrides a mapped numeric false");
+	local controlled = a.MergedObject({ Item({ releasePhases = { "mapped:1" }, phase = 32 }) }, true);
+	choices.ReleasePhases["mapped:2"] = false; choices.Unobtainable[32] = true;
+	PhaseVisible(a, controlled, false, "Controlled numeric phase uses its declared legacyU mapping");
+	choices.ReleasePhases["mapped:2"] = true; choices.Unobtainable[32] = false;
+	PhaseVisible(a, controlled, true, "Controlled routes honor namespaced true choices live");
+	local unmapped = Item({ phase = 2 });
+	PhaseVisible(a, unmapped, false, "Unmapped numeric phases preserve their raw false choice");
+	choices.Unobtainable[2] = true;
+	PhaseVisible(a, unmapped, true, "Unmapped numeric phases preserve their raw true choice");
+end
+-- Without a profile, master numeric phase filtering and earliest-phase merging stay active.
+do
+	local a, choices = MakeApp(nil);
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local blocked, allowed = Item({ phase = 31 }), Item({ phase = 32 });
+	PhaseVisible(a, blocked, false, "Legacy numeric false choices remain hidden");
+	PhaseVisible(a, allowed, true, "Legacy numeric true choices remain visible");
+	local merged = a.MergedObject({ allowed, blocked }, true);
+	assert(merged.phase == 31 and a.Modules.Progression.GetMergedSourceCount(merged) == 0);
+	PhaseVisible(a, merged, false, "Legacy merging still filters the earliest numeric phase");
+	a.Modules.Filter.Set.Phase(false);
+	PhaseVisible(a, merged, true, "Legacy Phase can be disabled in the account filter array");
+	a.Modules.Filter.Set.Phase(true);
+	PhaseVisible(a, merged, false, "Legacy Phase can be re-enabled in the account filter array");
+	local unrestricted = a.MergedObject({ blocked, Item({}) }, true);
+	assert(unrestricted.phase == nil);
+	PhaseVisible(a, unrestricted, true, "A legacy source without phase keeps the merged view unrestricted");
 end
 local retail = MakeApp(nil);
 local retailItem = Item({ u = 2 });
