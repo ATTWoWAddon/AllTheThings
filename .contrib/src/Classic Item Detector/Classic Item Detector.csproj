@@ -2,7 +2,6 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net48</TargetFramework>
-    <Prefer32Bit>true</Prefer32Bit>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GenerateSupportedRuntime>false</GenerateSupportedRuntime>
     <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
