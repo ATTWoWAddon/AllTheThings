@@ -54,56 +54,56 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 		}),
 		n(QUESTS, {
 			q(7809, {	-- A Donation of Mageweave
-				qg = 14724,	-- Bubulo Acerbus
+				qg = 14724,	-- Bubulo Acerbus <Alliance Cloth Quartermaster>
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				cost = {{ "i", 4338, 60 }},	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7804, {	-- A Donation of Mageweave
-				qg = 14723,	-- Mistina Steelshield
+				qg = 14723,	-- Mistina Steelshield <Alliance Cloth Quartermaster>
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				cost = {{ "i", 4338, 60 }},	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7811, {	-- A Donation of Runecloth
-				qg = 14724,	-- Bubulo Acerbus
+				qg = 14724,	-- Bubulo Acerbus <Alliance Cloth Quartermaster>
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				cost = {{ "i", 14047, 60 }},	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7805, {	-- A Donation of Runecloth
-				qg = 14723,	-- Mistina Steelshield
+				qg = 14723,	-- Mistina Steelshield <Alliance Cloth Quartermaster>
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				cost = {{ "i", 14047, 60 }},	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7808, {	-- A Donation of Silk
-				qg = 14724,	-- Bubulo Acerbus
+				qg = 14724,	-- Bubulo Acerbus <Alliance Cloth Quartermaster>
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				cost = {{ "i", 4306, 60 }},	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7803, {	-- A Donation of Silk
-				qg = 14723,	-- Mistina Steelshield
+				qg = 14723,	-- Mistina Steelshield <Alliance Cloth Quartermaster>
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				cost = {{ "i", 4306, 60 }},	-- 60x Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7802, {	-- A Donation of Wool
-				qg = 14723,	-- Mistina Steelshield
+				qg = 14723,	-- Mistina Steelshield <Alliance Cloth Quartermaster>
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				cost = {{ "i", 2592, 60 }},	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
 			q(7807, {	-- A Donation of Wool
-				qg = 14724,	-- Bubulo Acerbus
+				qg = 14724,	-- Bubulo Acerbus <Alliance Cloth Quartermaster>
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				cost = {{ "i", 2592, 60 }},	-- 60x Wool Cloth
 				races = ALLIANCE_ONLY,
@@ -111,14 +111,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(686, {	-- A King's Tribute (1/3)
 				sourceQuest = 683,	-- Sara Balloo's Plea
-				qg = 2784,	-- King Magni Bronzebeard
+				qg = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 				coord = { 39.4, 55.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
 			}),
 			q(689, {	-- A King's Tribute (2/3)
 				sourceQuest = 686,	-- A King's Tribute (1/3)
-				qg = 2790,	-- Grand Mason Marblesten
+				qg = 2790,	-- Grand Mason Marblesten <Royal Stonecutters Union>
 				coord = { 38.6, 87.0, MAP.IRONFORGE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
@@ -135,7 +135,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(700, {	-- A King's Tribute (3/3)
 				sourceQuest = 689,	-- A King's Tribute (2/3)
-				qg = 2790,	-- Grand Mason Marblesten
+				qg = 2790,	-- Grand Mason Marblesten <Royal Stonecutters Union>
 				coord = { 38.6, 87.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
@@ -192,7 +192,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						provider = { "i", 11954 },	-- Filled Pure Sample Jar
 						cost = { { "i", 11953, 1 } },	-- 1x Empty Pure Sample Jar
 						crs = {
-							6556,	-- Muculent Slime
+							6556,	-- Muculent Ooze
 							6557,	-- Primal Ooze
 						},
 					}),
@@ -225,7 +225,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(7806, {	-- Additional Runecloth [Ironforge]
 				sourceQuest = 7805,	-- A Donation of Runecloth
-				qg = 14723,	-- Mistina Steelshield
+				qg = 14723,	-- Mistina Steelshield <Alliance Cloth Quartermaster>
 				coord = { 43.2, 31.9, MAP.IRONFORGE },
 				maxReputation = { FACTION_IRONFORGE, EXALTED },
 				cost = {{ "i", 14047, 20 }},	-- 20x Runecloth
@@ -235,7 +235,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(7812, {	-- Additional Runecloth [Gnomeregan Exiles]
 				sourceQuest = 7811,	-- A Donation of Runecloth
-				qg = 14724,	-- Bubulo Acerbus
+				qg = 14724,	-- Bubulo Acerbus <Alliance Cloth Quartermaster>
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				maxReputation = { FACTION_GNOMEREGAN, EXALTED },
 				cost = {{ "i", 14047, 20 }},	-- 20x Runecloth
@@ -496,7 +496,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			q(95041, {	-- Data Hoarders
-				qg = 11028,	-- Jemma Quikswitch
+				qg = 11028,	-- Jemma Quikswitch <Journeyman Engineer>
 				coord = { 67.7, 44.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				maps = { MAP.DUN_MOROGH },
@@ -612,7 +612,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(6388, {	-- Gryth Thurden
 				sourceQuest = 6391,	-- Ride to Ironforge
-				qg = 4256,	-- Golnir Bouldertoe
+				qg = 4256,	-- Golnir Bouldertoe <Mining Supplier>
 				qi = 16311,	-- Honorary Picks
 				coord = { 51.0, 26.0, MAP.IRONFORGE },
 				races = { DWARF, GNOME },
@@ -628,7 +628,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 35,
 			}),
 			q(6612, {	-- I Know A Guy...
-				qg = 5159,	-- Daryl Riknussun
+				qg = 5159,	-- Daryl Riknussun <Cooking Trainer>
 				coord = { 60.1, 36.5, MAP.IRONFORGE },
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
@@ -701,7 +701,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(2298, {	-- Kingly Shakedown
 				sourceQuest = 2299,	-- To Hulfdan!
-				qg = 5165,	-- Hulfdan Blackbeard
+				qg = 5165,	-- Hulfdan Blackbeard <Rogue Trainer>
 				coord = { 51.6, 14.8, MAP.IRONFORGE },
 				classes = { ROGUE },
 				races = ALLIANCE_ONLY,
@@ -762,7 +762,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(6392, {	-- Return to Brock
 				sourceQuest = 6388,	-- Gryth Thurden
-				qg = 1573,	-- Gryth Thurden
+				qg = 1573,	-- Gryth Thurden <Gryphon Master>
 				qi = 16311,	-- Honorary Picks
 				coord = { 55.6, 48.0, MAP.IRONFORGE },
 				maps = { MAP.LOCH_MODAN },
@@ -834,7 +834,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			q(2238, {	-- Simple Subterfugin'
 				sourceQuest = 2218,	-- Road to Salvation
-				qg = 5165,	-- Hulfdan Blackbeard
+				qg = 5165,	-- Hulfdan Blackbeard <Rogue Trainer>
 				coord = { 51.6, 14.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -1090,7 +1090,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(4537),	-- Tel'Abim Banana
 				},
 			}),
-			n(5152, {	-- Bingus
+			n(5152, {	-- Bingus <Weapon Merchant>
 				coord = { 23.2, 17.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1118,7 +1118,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			n(5120, {	-- Brenwyn Wintersteel
+			n(5120, {	-- Brenwyn Wintersteel <Blade Merchant>
 				coord = { 61.8, 88.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1139,7 +1139,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2529,	-- Zweihander
 				}},
 			}),
-			n(5123, {	-- Bretta Goldfury
+			n(5123, {	-- Bretta Goldfury <Gun Merchant>
 				coord = { 72.8, 64.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1149,7 +1149,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2510,	-- Solid Blunderbuss
 				}},
 			}),
-			n(5106, {	-- Bromiir Ormsen
+			n(5106, {	-- Bromiir Ormsen <Heavy Armor Merchant>
 				coord = { 32.6, 58.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1165,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(17186),	-- Small Targe
 				},
 			}),
-			n(5125, {	-- Dolkin Craghelm
+			n(5125, {	-- Dolkin Craghelm <Mail Armor Merchant>
 				coord = { 54.8, 88.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1192,7 +1192,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					285,	-- Scalemail Vest
 				}},
 			}),
-			n(5102, {	-- Dolman Steelfury
+			n(5102, {	-- Dolman Steelfury <Weapon Merchant>
 				coord = { 36.6, 66.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1242,14 +1242,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			n(4256, {	-- Golnir Bouldertoe <Mining Supplies>
+			n(4256, {	-- Golnir Bouldertoe <Mining Supplier>
 				coord = { 51.5, 26.3, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(2901),	-- Mining Pick
 				},
 			}),
-			n(258306, {	-- Granny Finespindle
+			n(258306, {	-- Granny Finespindle <Leatherworking Recipes>
 				coord = { 39.3, 33.7, MAP.IRONFORGE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1267,7 +1267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(252829),	-- Pattern: Warden's Leather Belt (RECIPE!)
 				},
 			}),
-			n(5103, {	-- Grenil Steelfury
+			n(5103, {	-- Grenil Steelfury <Weapon Merchant>
 				coord = { 36.4, 66.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1310,7 +1310,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				races = ALLIANCE_ONLY,
 				sym = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
 			}),
-			n(5133, {	-- Harick Boulderdrum
+			n(5133, {	-- Harick Boulderdrum <Wands Merchant>
 				coord = { 22.8, 16.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1324,7 +1324,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					5208,	-- Smoldering Wand
 				}},
 			}),
-			n(5119, {	-- Hegnar Swiftaxe
+			n(5119, {	-- Hegnar Swiftaxe <Axe Merchant>
 				coord = { 61.8, 88.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1340,7 +1340,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					1196,	-- Tabar
 				}},
 			}),
-			n(5170, {	-- Hjoldir Stoneblade
+			n(5170, {	-- Hjoldir Stoneblade <Blade Merchant>
 				coord = { 45.8, 7.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1352,7 +1352,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2529,	-- Zweihander
 				}},
 			}),
-			n(5155, {	-- Ingrys Stonebrow
+			n(5155, {	-- Ingrys Stonebrow <Cloth Armor Merchant>
 				coord = { 39.2, 5.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1378,7 +1378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					200,	-- Thick Cloth Vest
 				}},
 			}),
-			n(5121, {	-- Kelomir Ironhand
+			n(5121, {	-- Kelomir Ironhand <Maces & Staves>
 				coord = { 61.4, 88.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1401,7 +1401,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(2524),	-- Truncheon
 				},
 			}),
-			n(5129, {	-- Lissyphus Finespindle
+			n(5129, {	-- Lissyphus Finespindle <Light Armor Merchant>
 				coord = { 54.6, 88.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1428,12 +1428,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2465,	-- Studded Pants
 				}},
 			}),
-			n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
+			n(5049, {	-- Lyesa Steelbrow <Guild Tabard Vendor>
 				coord = { 36.4, 84.4, MAP.IRONFORGE },
 				sym = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
 				races = ALLIANCE_ONLY,
 			}),
-			n(5156, {	-- Maeva Snowbraid
+			n(5156, {	-- Maeva Snowbraid <Robe Merchant>
 				coord = { 38.8, 5.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1446,7 +1446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2618,	-- Silver Dress Robes
 				}},
 			}),
-			n(5107, {	-- Mangorn Flinthammer
+			n(5107, {	-- Mangorn Flinthammer <Heavy Armor Merchant>
 				coord = { 32.0, 58.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -1472,7 +1472,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(4540),	-- Tough Hunk of Bread
 				},
 			}),
-			n(5126, {	-- Olthran Craghelm
+			n(5126, {	-- Olthran Craghelm <Heavy Armor Merchant>
 				coord = { 55.0, 88.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1604,7 +1604,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 				},
 			}),
-			n(7976, {	-- Thalgus Thunderfist
+			n(7976, {	-- Thalgus Thunderfist <Weapon Merchant>
 				coord = { 61.8, 90.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -1640,7 +1640,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			n(8117, {	-- Wizbang Booms
+			n(8117, {	-- Wizbang Booms <Holiday Fireworks Vendor>
 				coord = { 31.8, 63.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				description = "This NPC is only available on July 4th.",

@@ -115,7 +115,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(6181, {	-- A Swift Message
-				qg = 491,	-- Quartermaster Lewis
+				qg = 491,	-- Quartermaster Lewis <Quartermaster>
 				qi = 15998,	-- Lewis' Note (PQI!)
 				coord = { 56.9, 47.2, MAP.WESTFALL },
 				races = { HUMAN },
@@ -190,7 +190,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(6281, {	-- Continue to Stormwind
 				sourceQuest = 6181,	-- A Swift Message
-				qg = 523,	-- Thor
+				qg = 523,	-- Thor <Gryphon Master>
 				qi = 15998,	-- Lewis' Note (PQI!)
 				coord = { 56.4, 52.6, MAP.WESTFALL },
 				maps = { MAP.STORMWIND_CITY },
@@ -378,7 +378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				lvl = 15,
 			}),
 			q(102, {	-- Patrolling Westfall
-				qg = 821,	-- Captain Danuvin
+				qg = 821,	-- Captain Danuvin <The People's Militia>
 				coord = { 56.4, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
@@ -421,7 +421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(153, {	-- Red Leather Bandanas
-				qg = 878,	-- Scout Galiaan
+				qg = 878,	-- Scout Galiaan <The People's Militia>
 				coord = { 54.0, 53.0, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
@@ -609,7 +609,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(65, {	-- The Defias Brotherhood (1/7)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -624,7 +624,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(135, {	-- The Defias Brotherhood (3/7)
 				sourceQuest = 132,	-- The Defias Brotherhood (2/7)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				qi = 1327,	-- Wiley's Note (PQI!)
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
@@ -632,7 +632,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(141, {	-- The Defias Brotherhood (4/7)
 				sourceQuest = 135,	-- The Defias Brotherhood (3/7)
-				qg = 332,	-- Master Mathias Shaw
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
 				qi = 1353,	-- Shaw's Report (PQI!)
 				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -640,7 +640,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(142, {	-- The Defias Brotherhood (5/7)
 				sourceQuest = 141,	-- The Defias Brotherhood (4/7)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -691,7 +691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(12, {	-- The People's Militia (1/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -706,7 +706,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(13, {	-- The People's Militia (2/3)
 				sourceQuest = 12,	-- The People's Militia (1/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -721,7 +721,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(14, {	-- The People's Militia (3/3)
 				sourceQuest = 13,	-- The People's Militia (2/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,

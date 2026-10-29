@@ -32,28 +32,28 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 		}),
 		n(QUESTS, {
 			q(7799, {	-- A Donation of Mageweave
-				qg = 14725,	-- Raedon Duskstriker
+				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
 				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			q(7800, {	-- A Donation of Runecloth
-				qg = 14725,	-- Raedon Duskstriker
+				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
 				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(7798, {	-- A Donation of Silk
-				qg = 14725,	-- Raedon Duskstriker
+				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
 				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
 			q(7792, {	-- A Donation of Wool
-				qg = 14725,	-- Raedon Duskstriker
+				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
 				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
@@ -76,7 +76,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(7801, {	-- Additional Runecloth [Darnassus]
 				sourceQuest = 7800,	-- A Donation of Runecloth
-				qg = 14725,	-- Raedon Duskstriker
+				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
 				coord = { 64.0, 23.0, MAP.DARNASSUS },
 				maxReputation = { FACTION_DARNASSUS, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
@@ -85,21 +85,21 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				lvl = 50,
 			}),
 			q(3763, {	-- Assisting Arch Druid Staghelm [Darnassus]
-				qg = 6735,	-- Innkeeper Saelienne
+				qg = 6735,	-- Innkeeper Saelienne <Innkeeper>
 				coord = { 67.4, 15.7, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
 			}),
 			q(3790, {	-- Assisting Arch Druid Staghelm [Ironforge]
-				qg = 5111,	-- Innkeeper Firebrew
+				qg = 5111,	-- Innkeeper Firebrew <Innkeeper>
 				coord = { 18.1, 51.5, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
 			}),
 			q(3789, {	-- Assisting Arch Druid Staghelm [Stormwind City]
-				qg = 6740,	-- Innkeeper Allison
+				qg = 6740,	-- Innkeeper Allison <Innkeeper>
 				coord = { 60.4, 75.3, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -141,7 +141,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(2242, {	-- Destiny Calls
 				sourceQuest = 2241,	-- The Apple Falls
-				qg = 4163,	-- Syurna
+				qg = 4163,	-- Syurna <Rogue Trainer>
 				coord = { 37.0, 21.9, MAP.DARNASSUS },
 				maps = { MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -176,7 +176,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(2260, {	-- Erion's Behest
 				sourceQuest = 2259,	-- Erion Shadewhisper
-				qg = 4214,	-- Erion Shadewhisper
+				qg = 4214,	-- Erion Shadewhisper <Rogue Trainer>
 				coord = { 34.6, 25.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -238,7 +238,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(3785, {	-- Morrowgrain Research (2/2)
 				sourceQuest = 3781,	-- Morrowgrain Research (1/2)
-				qg = 4217,	-- Mathrengyl Bearwalker
+				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 				coord = { 35.2, 8.0, MAP.DARNASSUS },
 				cost = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 				races = ALLIANCE_ONLY,
@@ -249,7 +249,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(3803, {	-- Morrowgrain to Darnassus
 				sourceQuest = 3785,	-- Morrowgrain Research (2/2)
-				qg = 4217,	-- Mathrengyl Bearwalker
+				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 				coord = { 35.2, 8.0, MAP.DARNASSUS },
 				cost = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 				races = ALLIANCE_ONLY,
@@ -260,7 +260,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				},
 			}),
 			q(6344, {	-- Nessa Shadowsong / Reminders of Home [CATA+]
-				qg = 4241,	-- Mydrannul
+				qg = 4241,	-- Mydrannul <General Goods Vendor>
 				coord = { 70.6, 45.3, MAP.DARNASSUS },
 				maps = { MAP.TELDRASSIL },
 				races = { NIGHTELF },
@@ -391,7 +391,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(942, {	-- The Absent Minded Prospector (4/5)
 				sourceQuest = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
-				qg = 2912,	-- Chief Archaeologist Greywhisker
+				qg = 2912,	-- Chief Archaeologist Greywhisker <Explorers' League>
 				qi = 6812,	-- Mysterious Fossil
 				coord = { 31.2, 84.2, MAP.DARNASSUS },
 				maps = { MAP.WETLANDS },
@@ -431,14 +431,14 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			q(2519, {	-- The Temple of the Moon
 				sourceQuest = 98391,	-- The Sisterhood of Elune
-				qg = 7316,	-- Sister Aquinne
+				qg = 7316,	-- Sister Aquinne <Novice Priestess>
 				coord = { 29.0, 45.4, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 5,
 			}),
 			q(730, {	-- Trouble In Darkshore?
-				qg = 2912,	-- Chief Archaeologist Greywhisker
+				qg = 2912,	-- Chief Archaeologist Greywhisker <Explorers' League>
 				coord = { 31.2, 84.2, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -546,7 +546,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2535,	-- War Staff
 				}},
 			}),
-			n(4172, {	-- Anadyia
+			n(4172, {	-- Anadyia <Robe Vendor>
 				coord = { 54.6, 83.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -597,7 +597,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(15907),	-- Left-Handed Claw
 				},
 			}),
-			n(4240, {	-- Caynrus
+			n(4240, {	-- Caynrus <Shield Merchant>
 				coord = { 55.4, 74.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -617,24 +617,24 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(17184),	-- Small Shield
 				},
 			}),
-			n(4216, {	-- Chardryn <Herbalism Supplies>
+			n(4216, {	-- Chardryn <Herbalism Supplier>
 				coord = { 49.55, 69.44, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(22250, {	-- Herb Pouch
 						description = "Only select Herbalism Suppliers sells this pouch.",
 						providers = {
-							{ "n", 4216 },	-- Chardryn <Herbalism Supplies>
+							{ "n", 4216 },	-- Chardryn <Herbalism Supplier>
 							{ "n", 5503 },	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 5138 },	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 							{ "n", 3548 },	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplies>
+							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplier>
 						},
 					}),
 				},
 			}),
-			n(4164, {	-- Cylania
+			n(4164, {	-- Cylania <Night Elf Armorer>
 				coord = { 56.8, 53.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -676,7 +676,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					845,	-- Tanned Leather Pants
 				}},
 			}),
-			n(4236, {	-- Cyridan
+			n(4236, {	-- Cyridan <Leather Armor Merchant>
 				coord = { 52.6, 77.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -728,7 +728,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(2127),	-- Cracked Leather Vest
 				},
 			}),
-			n(4180, {	-- Ealyshia Dewwhisper
+			n(4180, {	-- Ealyshia Dewwhisper <Two Handed Weapon Merchant>
 				coord = { 57.8, 71.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -826,7 +826,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2493,	-- Wooden Mallet
 				}},
 			}),
-			n(3561, {	-- Kyrai
+			n(3561, {	-- Kyrai <Poison Vendor>
 				coord = { 38.8, 35.4, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 			}),
@@ -873,7 +873,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(18902),	-- Reins of the Swift Stormsaber (MOUNT!)
 				},
 			}),
-			n(4177, {	-- Melea
+			n(4177, {	-- Melea <Mail Armor Merchant>
 				coord = { 55.6, 75.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -936,7 +936,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(2379),	-- Tarnished Chain Vest
 				},
 			}),
-			n(4171, {	-- Merelyssa
+			n(4171, {	-- Merelyssa <Blade Merchant>
 				coord = { 61.6, 63.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
@@ -956,7 +956,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2027,	-- Scimitar
 				}},
 			}),
-			n(4233, {	-- Mythidan
+			n(4233, {	-- Mythidan <Mace & Staff Merchant>
 				coord = { 60.4, 63.4, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",

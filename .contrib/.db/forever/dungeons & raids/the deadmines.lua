@@ -267,7 +267,7 @@ instanceroot(63, {	-- Deadmines
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
-		n(643, {	-- Sneed
+		n(643, {	-- Sneed <Lumbermaster>
 			i(273092, {	-- Blueprint: Repair Bot (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),

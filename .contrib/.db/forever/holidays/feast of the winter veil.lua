@@ -221,7 +221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				lvl = 10,
 			}),
 			q(7023, {	-- Greatfather Winter is Here! (Alliance)
-				qg = 13435,	-- Khole Jinglepocket
+				qg = 13435,	-- Khole Jinglepocket <Smokywood Pastures>
 				coord = { 62.8, 70.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -521,7 +521,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				crs = {
 					13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 					13420,	-- Penney Copperpinch <Smokywood Pastures>
-					13432,	-- Seersa Jinglepocket <Smokywood Pastures>
+					13432,	-- Seersa Copperpinch <Smokywood Pastures>
 					13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
 				},
 				maps = {
@@ -553,7 +553,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				coord = { 53.0, 66.0, MAP.ORGRIMMAR },
 				groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 			}),
-			n(13432, {	-- Seersa Jinglepocket <Smokywood Pastures>
+			n(13432, {	-- Seersa Copperpinch <Smokywood Pastures>
 				coord = { 43.8, 59.2, MAP.THUNDER_BLUFF },
 				groups = HOLIDAY_VENDOR_GROUPS_GREEN,
 			}),
