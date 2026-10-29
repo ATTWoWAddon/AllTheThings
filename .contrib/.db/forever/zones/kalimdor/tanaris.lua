@@ -169,7 +169,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Gorishi Scent Gland
-						provider = { "i", 11837 },	-- Gorishi Scent Gland
+						provider = { "i", 11837 },	-- Gorishi Scent Gland (QI!)
 						crs = {
 							6553,	-- Gorishi Reaver
 							6554,	-- Gorishi Stinger
@@ -192,7 +192,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				}),
 				providers = {
 					{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
-					{ "i", 11844 },	-- Pestlezugg's Un'Goro Report
+					{ "i", 11844 },	-- Pestlezugg's Un'Goro Report (QI!)
 				},
 				sourceQuest = 4507,	-- Pawn Captures Queen
 				coord = { 50.8, 27.0, MAP.TANARIS },
@@ -230,7 +230,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 				coord = { 55.4, 92.2, MAP.TANARIS },
 				cost = {
-					{ "i", 9275, 1 },	-- Cuergo's Key
+					{ "i", 9275, 1 },	-- Cuergo's Key (QI!)
 					{ "i", 9251, 1 },	-- Upper Map Fragment
 					{ "i", 9253, 1 },	-- Middle Map Fragment
 					{ "i", 9252, 1 },	-- Lower Map Fragment
@@ -239,7 +239,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/1 Cuergo's Key
-						provider = { "i", 9275 },	-- Cuergo's Key
+						provider = { "i", 9275 },	-- Cuergo's Key (QI!)
 						crs = {
 							7899,	-- Treasure Hunting Pirate
 							7901,	-- Treasure Hunting Swashbuckler
@@ -260,14 +260,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7583,	-- Sprinkle
 				coord = { 51.0, 26.8, MAP.TANARIS },
 				lvl = 44,
-				qi = 8528,	-- Violet Powder
+				qi = 8528,	-- Violet Powder (QI!)
 			}),
 			q(2874, {	-- Deliver to MacKinley
 				sourceQuest = 2873,	-- Stoley's Shipment
 				qg = 7881,	-- Stoley
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 40,
-				qi = 9245,	-- Stoley's Bottle
+				qi = 9245,	-- Stoley's Bottle (QI!)
 				groups = {
 					i(9636),	-- Swashbuckler Sash
 					i(9637),	-- Shinkicker Boots
@@ -300,8 +300,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Tapped Dowsing Widget
 						providers = {
-							{ "i", 8585 },	-- Tapped Dowsing Widget
-							{ "i", 8584 },	-- Untapped Dowsing Widget
+							{ "i", 8585 },	-- Tapped Dowsing Widget (QI!)
+							{ "i", 8584 },	-- Untapped Dowsing Widget (QI!)
 						},
 						coord = { 39.0, 29.0, MAP.TANARIS },
 					}),
@@ -314,11 +314,11 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/30 Gahz'ridian Ornament
 						providers = {
-							{ "i", 8443 },	-- Gahz'ridian Ornament
+							{ "i", 8443 },	-- Gahz'ridian Ornament (QI!)
 							{ "o", 140971 },	-- Gahz'ridian
 						},
 					}),
-					i(9978),	-- Gahz'ridian Detector
+					i(9978),	-- Gahz'ridian Detector (QI!)
 					i(10827),	-- Surveyor's Tunic
 					i(10826),	-- Staff of Lore
 				},
@@ -329,7 +329,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				maps = { MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				lvl = 42,
-				qi = 9507,	-- A Carefully-packed Crate
+				qi = 9507,	-- A Carefully-packed Crate (QI!)
 			}),
 			q(7653, {	-- Imperial Plate Belt
 				sourceQuest = 7652,	-- A Blue Light Bargain
@@ -420,7 +420,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 7564,	-- Marin Noggenfogger
 				coord = { 51.8, 28.6, MAP.TANARIS },
 				lvl = 44,
-				qi = 8603,	-- Thistleshrub Dew
+				qi = 8603,	-- Thistleshrub Dew (QI!)
 			}),
 			q(110, {	-- Insect Part Analysis (1/2)
 				sourceQuest = 10,	-- The Scrimshank Redemption
@@ -433,13 +433,13 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				qg = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 				coord = { 50.9, 27.0, MAP.TANARIS },
 				lvl = 39,
-				qi = 8594,	-- Insect Analysis Report
+				qi = 8594,	-- Insect Analysis Report (QI!)
 			}),
 			q(3914, {	-- Linken's Sword
 				sourceQuest = 3913,	-- A Grave Situation
 				providers = {
 					{ "o", 148504 },	-- A Conspicuous Gravestone
-					{ "i", 11162 },	-- Linken's Superior Sword
+					{ "i", 11162 },	-- Linken's Superior Sword (QI!)
 				},
 				coord = { 53.9, 29.0, MAP.TANARIS },
 				maps = { MAP.UNGORO_CRATER },
@@ -491,7 +491,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/5 Centipaar Insect Parts
-						provider = { "i", 8587 },	-- Centipaar Insect Parts
+						provider = { "i", 8587 },	-- Centipaar Insect Parts (QI!)
 						crs = {
 							5460,	-- Centipaar Sandreaver
 							5456,	-- Centipaar Stinger
@@ -512,8 +512,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Gorishi Queen Brain
 						providers = {
-							{ "i", 11835 },	-- Gorishi Queen Brain
-							{ "i", 11833 },	-- Gorishi Queen Lure
+							{ "i", 11835 },	-- Gorishi Queen Brain (QI!)
+							{ "i", 11833 },	-- Gorishi Queen Lure (QI!)
 							{ "o", 174792 },	-- Gorishi Silithid Crystal
 						},
 						coord = { 44.6, 81.6, MAP.UNGORO_CRATER },
@@ -527,7 +527,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/20 Southsea Pirate Hat
-						provider = { "i", 20519 },	-- Southsea Pirate Hat
+						provider = { "i", 20519 },	-- Southsea Pirate Hat (QI!)
 						crs = {
 							7883,	-- Andre Firebeard
 							8203,	-- Kregg Keelhaul
@@ -557,7 +557,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 8527,	-- Sealed Field Testing Kit
+				qi = 8527,	-- Sealed Field Testing Kit (QI!)
 				groups = {
 					i(11502),	-- Loreskin Shoulders
 					i(9635),	-- Master Apothecary Cape
@@ -585,7 +585,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					objective(1, {	-- 0/3 Screecher Spirit
 						providers = {
 							{ "n", 8612 },	-- Screecher Spirit
-							{ "i", 10699 },	-- Yeh'kinya's Bramble
+							{ "i", 10699 },	-- Yeh'kinya's Bramble (QI!)
 						},
 						crs = {
 							5307,	-- Vale Screecher
@@ -656,7 +656,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Violet Tragan
 						providers = {
-							{ "i", 8526 },	-- Violet Tragan
+							{ "i", 8526 },	-- Violet Tragan (QI!)
 							{ "o", 141853 },	-- Violet Tragan
 						},
 						coord = { 40.0, 59.0, MAP.THE_HINTERLANDS },
@@ -677,7 +677,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Stoley's Shipment
 						providers = {
-							{ "i", 9244 },	-- Stoley's Shipment
+							{ "i", 9244 },	-- Stoley's Shipment (QI!)
 							{ "o", 142181 },	-- Stolen Cargo
 						},
 						coord = { 72.2, 46.7, MAP.TANARIS },
@@ -691,7 +691,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/12 Super Sticky Tar
-						provider = { "i", 11834 },	-- Super Sticky Tar
+						provider = { "i", 11834 },	-- Super Sticky Tar (QI!)
 						crs = {
 							6517,	-- Tar Beast
 							6527,	-- Tar Creeper
@@ -708,7 +708,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 				providers = {
 					{ "i", 8524 },	-- Model 4711-FTZ Power Source
-					{ "i", 8523 },	-- Field Testing Kit
+					{ "i", 8523 },	-- Field Testing Kit (QI!)
 				},
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				races = HORDE_ONLY,
@@ -716,8 +716,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/8 Acceptable Basilisk Sample
 						providers = {
-							{ "i", 9440 },	-- Acceptable Basilisk Sample
-							{ "i", 9437 },	-- Untested Basilisk Sample
+							{ "i", 9440 },	-- Acceptable Basilisk Sample (QI!)
+							{ "i", 9437 },	-- Untested Basilisk Sample (QI!)
 						},
 						crs = {
 							5419,	-- Glasshide Basilisk
@@ -727,8 +727,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 					objective(2, {	-- 0/8 Acceptable Hyena Sample
 						providers = {
-							{ "i", 9441 },	-- Acceptable Hyena Sample
-							{ "i", 9439 },	-- Untested Hyena Sample
+							{ "i", 9441 },	-- Acceptable Hyena Sample (QI!)
+							{ "i", 9439 },	-- Untested Hyena Sample (QI!)
 						},
 						crs = {
 							5426,	-- Blisterpaw Hyena
@@ -739,8 +739,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 					objective(3, {	-- 0/8 Acceptable Scorpid Sample
 						providers = {
-							{ "i", 9438 },	-- Acceptable Scorpid Sample
-							{ "i", 9442 },	-- Untested Scorpid Sample
+							{ "i", 9438 },	-- Acceptable Scorpid Sample (QI!)
+							{ "i", 9442 },	-- Untested Scorpid Sample (QI!)
 						},
 						crs = {
 							7803,	-- Scorpid Duneburrower
@@ -803,7 +803,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Nixx's Pledge of Secrecy
 						provider = { "i", 11270 },	-- Nixx's Pledge of Secrecy
-						cost = { { "i", 10792, 1 } },	-- Nixx's Pledge of Secrecy
+						cost = { { "i", 10792, 1 } },	-- Nixx's Pledge of Secrecy (QI!)
 					}),
 				},
 			}),
@@ -815,7 +815,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Scrimshank's Surveying Gear
 						providers = {
-							{ "i", 8593 },	-- Scrimshank's Surveying Gear
+							{ "i", 8593 },	-- Scrimshank's Surveying Gear (QI!)
 							{ "o", 144053 },	-- Scrimshank's Surveying Gear
 						},
 						coord = { 56.0, 71.0, MAP.TANARIS },
@@ -834,7 +834,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Stone Circle
 						providers = {
-							{ "i", 10556 },	-- Stone Circle
+							{ "i", 10556 },	-- Stone Circle (QI!)
 							{ "o", 149036 },	-- Marvon's Chest
 						},
 						coord = { 62.5, 38.5, MAP.THE_BARRENS },
@@ -897,8 +897,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				groups = {
 					objective(1, {	-- 0/1 Snapshot of Gammerita
 						providers = {
-							{ "i", 9330 },	-- Snapshot of Gammerita
-							{ "i", 9328 },	-- Super Snapper FX
+							{ "i", 9330 },	-- Snapshot of Gammerita (QI!)
+							{ "i", 9328 },	-- Super Snapper FX (QI!)
 						},
 						coord = { 79.0, 62.0, MAP.THE_HINTERLANDS },
 						cr = 7977,	-- Gammerita
@@ -911,7 +911,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- 0/1 Laden Dew Gland
-						provider = { "i", 8428 },	-- Laden Dew Gland
+						provider = { "i", 8428 },	-- Laden Dew Gland (QI!)
 						coord = { 29.8, 66.8, MAP.TANARIS },
 						cr = 5481,	-- Thistleshrub Dew Collector
 					}),
@@ -977,7 +977,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Firebeard's Head
-						provider = { "i", 9246 },	-- Firebeard's Head
+						provider = { "i", 9246 },	-- Firebeard's Head (QI!)
 						coord = { 73.4, 47.0, MAP.TANARIS },
 						cr = 7883,	-- Andre Firebeard
 					}),
@@ -997,7 +997,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/1 Caliph Scorpidsting's Head
-						provider = { "i", 8723 },	-- Caliph Scorpidsting's Head
+						provider = { "i", 8723 },	-- Caliph Scorpidsting's Head (QI!)
 						coord = { 61.6, 35.6, MAP.TANARIS },
 						cr = 7847,	-- Caliph Scorpidsting
 					}),

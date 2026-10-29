@@ -48,7 +48,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 8525,	-- Zinge's Purchase Order
+				qi = 8525,	-- Zinge's Purchase Order (QI!)
 			}),
 			q(238, {	-- Errand for Apothecary Zinge (2/2)
 				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
@@ -56,7 +56,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 8523,	-- Field Testing Kit
+				qi = 8523,	-- Field Testing Kit (QI!)
 			}),
 			q(243, {	-- Into the Field
 				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
@@ -65,7 +65,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.TANARIS },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 8523,	-- Field Testing Kit
+				qi = 8523,	-- Field Testing Kit (QI!)
 			}),
 			q(1164, {	-- To Steal From Thieves
 				qg = 4486,	-- Genavie Callow
@@ -75,17 +75,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 27,
 				groups = {
 					objective(1, {	-- 0/1 Kenata's Head
-						provider = { "i", 5830 },	-- Kenata's Head
+						provider = { "i", 5830 },	-- Kenata's Head (QI!)
 						coord = { 56.2, 36.0, MAP.ARATHI_HIGHLANDS },
 						cr = 4480,	-- Kenata Dabyrie
 					}),
 					objective(2, {	-- 0/1 Marcel's Head
-						provider = { "i", 5832 },	-- Marcel's Head
+						provider = { "i", 5832 },	-- Marcel's Head (QI!)
 						coord = { 54.5, 38.6, MAP.ARATHI_HIGHLANDS },
 						cr = 4481,	-- Marcel Dabyrie
 					}),
 					objective(3, {	-- 0/1 Fardel's Head
-						provider = { "i", 5831 },	-- Fardel's Head
+						provider = { "i", 5831 },	-- Fardel's Head (QI!)
 						coord = { 55.0, 40.0, MAP.ARATHI_HIGHLANDS },
 						cr = 4479,	-- Fardel Dabyrie
 					}),
@@ -100,7 +100,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
-				qi = 6016,	-- Wolf Heart Sample
+				qi = 6016,	-- Wolf Heart Sample (QI!)
 				groups = {
 					i(10637),	-- Brewer's Gloves
 					i(10638),	-- Long Draping Cape
@@ -117,7 +117,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 6284, 1 } },	-- Runes of Summoning
+						cost = { { "i", 6284, 1 } },	-- Runes of Summoning (QI!)
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -142,7 +142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Egalin's Grimoire
-						provider = { "i", 6285 },	-- Egalin's Grimoire
+						provider = { "i", 6285 },	-- Egalin's Grimoire (QI!)
 						coord = { 51.1, 67.6, MAP.TIRISFAL_GLADES },
 					}),
 				},
@@ -158,7 +158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6286, 1 } },	-- Pure Hearts
+						cost = { { "i", 6286, 1 } },	-- Pure Hearts (QI!)
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -177,12 +177,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Dalin's Heart
-						provider = { "i", 6312 },	-- Dalin's Heart
+						provider = { "i", 6312 },	-- Dalin's Heart (QI!)
 						coord = { 46.6, 84.2, MAP.SILVERPINE_FOREST },
 						cr = 5682,	-- Dalin Forgewright
 					}),
 					objective(2, {	-- 0/1 Comar's Heart
-						provider = { "i", 6313 },	-- Comar's Heart
+						provider = { "i", 6313 },	-- Comar's Heart (QI!)
 						coord = { 50.6, 12.6, MAP.WETLANDS },
 						cr = 5683,	-- Comar Villard
 					}),
@@ -222,8 +222,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
-						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone
-						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone
+						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone (QI!)
+						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone (QI!)
 						crs = {
 							2091,	-- Chieftain Nek'rosh
 							1037,	-- Dragonmaw Battlemaster
@@ -270,7 +270,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Balnir Snapdragons
 						providers = {
-							{ "i", 7227 },	-- Balnir Snapdragons
+							{ "i", 7227 },	-- Balnir Snapdragons (QI!)
 							{ "o", 102985 },	-- Balnir Snapdragons
 						},
 						coord = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
@@ -297,7 +297,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Astor's Letter of Introduction
-						provider = { "i", 7231 },	-- Astor's Letter of Introduction
+						provider = { "i", 7231 },	-- Astor's Letter of Introduction (QI!)
 						coords = {
 							{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
 							{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
@@ -315,7 +315,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
-				qi = 7231,	-- Astor's Letter of Introduction
+				qi = 7231,	-- Astor's Letter of Introduction (QI!)
 			}),
 			q(1899, {	-- The Deathstalkers (3/4)
 				sourceQuest = 1898,	-- The Deathstalkers (2/4)
@@ -326,7 +326,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Andron's Ledger
-						provider = { "i", 7294 },	-- Andron's Ledger
+						provider = { "i", 7294 },	-- Andron's Ledger (QI!)
 						coord = { 55.3, 76.7, MAP.UNDERCITY },
 					}),
 				},
@@ -355,24 +355,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
 						providers = {
-							{ "i", 7292 },	-- Filled Containment Coffer
+							{ "i", 7292 },	-- Filled Containment Coffer (QI!)
 							{ "o", 103574 },	-- Filled Containment Coffer
-							{ "i", 7247 },	-- Chest of Containment Coffers
-							{ "i", 7308 },	-- Cantation of Manifestation
+							{ "i", 7247 },	-- Chest of Containment Coffers (QI!)
+							{ "i", 7308 },	-- Cantation of Manifestation (QI!)
 						},
 						coord = { 53.9, 73.2, MAP.UNDERCITY },
 						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
 						providers = {
-							{ "i", 7247 },	-- Chest of Containment Coffers
+							{ "i", 7247 },	-- Chest of Containment Coffers (QI!)
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
 						providers = {
-							{ "i", 7308 },	-- Cantation of Manifestation
+							{ "i", 7308 },	-- Cantation of Manifestation (QI!)
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 15,
 				groups = {
 					objective(2, {	-- 0/6 Dalaran Mana Gem
-						provider = { "i", 7293 },	-- Dalaran Mana Gem
+						provider = { "i", 7293 },	-- Dalaran Mana Gem (QI!)
 						crs = {
 							1867,	-- Dalaran Apprentice
 							3577,	-- Dalaran Brewmaster
@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
-				qi = 7294,	-- Andron's Ledger
+				qi = 7294,	-- Andron's Ledger (QI!)
 				groups = {
 					i(7298),	-- Blade of Cunning
 				},
@@ -437,7 +437,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Fenwick's Head
-						provider = { "i", 7306 },	-- Fenwick's Head
+						provider = { "i", 7306 },	-- Fenwick's Head (QI!)
 						coord = { 59.6, 34.2, MAP.SILVERPINE_FOREST },
 						cr = 6570,	-- Fenwick Thatros
 					}),
@@ -453,7 +453,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Dalaran Status Report
-						provider = { "i", 7309 },	-- Dalaran Status Report
+						provider = { "i", 7309 },	-- Dalaran Status Report (QI!)
 					}),
 				},
 			}),
@@ -493,7 +493,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3568, {	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
@@ -503,22 +503,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Filled Vial Labeled #1
-						provider = { "i", 10691 },	-- Filled Vial Labeled #1
+						provider = { "i", 10691 },	-- Filled Vial Labeled #1 (QI!)
 						coord = { 48.0, 60.0, MAP.AZSHARA },
 						cost = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
 					}),
 					objective(2, {	-- 0/1 Filled Vial Labeled #2
-						provider = { "i", 10692 },	-- Filled Vial Labeled #2
+						provider = { "i", 10692 },	-- Filled Vial Labeled #2 (QI!)
 						coord = { 47.0, 51.0, MAP.AZSHARA },
 						cost = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
 					}),
 					objective(3, {	-- 0/1 Filled Vial Labeled #3
-						provider = { "i", 10693 },	-- Filled Vial Labeled #3
+						provider = { "i", 10693 },	-- Filled Vial Labeled #3 (QI!)
 						coord = { 48.0, 48.0, MAP.AZSHARA },
 						cost = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
 					}),
 					objective(4, {	-- 0/1 Filled Vial Labeled #4
-						provider = { "i", 10694 },	-- Filled Vial Labeled #4
+						provider = { "i", 10694 },	-- Filled Vial Labeled #4 (QI!)
 						coord = { 47.0, 46.0, MAP.AZSHARA },
 						cost = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
 					}),
@@ -536,7 +536,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 47.6, 73.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
-				qi = 10712,	-- Cuely's Elixir
+				qi = 10712,	-- Cuely's Elixir (QI!)
 			}),
 			q(3570, {	-- Seeping Corruption (3/3)
 				sourceQuest = 3569,	-- Seeping Corruption (2/3)
@@ -563,7 +563,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				qi = 10789,	-- Manual of Engineering Disciplines
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(4293, {	-- A Sample of Slime...
 				qg = 10136,	-- Chemist Fuely
@@ -575,23 +575,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					q(4661, {	-- Testing for Corruption - Felwood
 						provider = { "o", 174848 },	-- Testing Equipment
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample
+						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample (QI!)
 						races = HORDE_ONLY,
 						lvl = 48,
 						repeatable = true,
 						groups = {
-							i(15103, {	-- Corrupt Tested Sample
+							i(15103, {	-- Corrupt Tested Sample (QI!)
 								description = "Might contain nothing. Bring way more slime samples than you need.",
 								groups = {
 									objective(1, {	-- 0/5 Corrupted Felwood Sample
 										questID = 4293,	-- A Sample of Slime...
-										provider = { "i", 12234 },	-- Corrupted Felwood Sample
+										provider = { "i", 12234 },	-- Corrupted Felwood Sample (QI!)
 									}),
 								},
 							}),
 						},
 					}),
-					i(12230, {	-- Felwood Slime Sample
+					i(12230, {	-- Felwood Slime Sample (QI!)
 						description = "Bring at least 30 of these back with you to the Undercity for testing.",
 						crs = {
 							7086,	-- Cursed Ooze
@@ -611,23 +611,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					q(4561, {	-- Testing for Impurities - Un'Goro Crater
 						provider = { "o", 174848 },	-- Testing Equipment
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
+						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample (QI!)
 						races = HORDE_ONLY,
 						lvl = 48,
 						repeatable = true,
 						groups = {
-							i(15102, {	-- Un'Goro Tested Sample
+							i(15102, {	-- Un'Goro Tested Sample (QI!)
 								description = "Might contain nothing. Bring way more slime samples than you need.",
 								groups = {
 									objective(1, {	-- 0/5 Pure Un'Goro Sample
 										questID = 4294,	-- ... and a Batch of Ooze
-										provider = { "i", 12236 },	-- Pure Un'Goro Sample
+										provider = { "i", 12236 },	-- Pure Un'Goro Sample (QI!)
 									}),
 								},
 							}),
 						},
 					}),
-					i(12235, {	-- Un'Goro Slime Sample
+					i(12235, {	-- Un'Goro Slime Sample (QI!)
 						description = "Bring at least 30 of these back with you to the Undercity for testing.",
 						crs = {
 							6559,	-- Glutinous Ooze
@@ -649,7 +649,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Merged Ooze Sample
-						provider = { "i", 12291 },	-- Merged Ooze Sample
+						provider = { "i", 12291 },	-- Merged Ooze Sample (QI!)
 						cost = { { "i", 12288, 1 } },	-- Encased Corrupt Ooze
 						crs = {
 							6557,	-- Primal Ooze
@@ -723,7 +723,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
-				qi = 16210,	-- Gordon's Crate
+				qi = 16210,	-- Gordon's Crate (QI!)
 			}),
 			q(6324, {	-- Return to Podrig
 				sourceQuest = 6322,	-- Michael Garrett
@@ -735,7 +735,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
-				qi = 16210,	-- Gordon's Crate
+				qi = 16210,	-- Gordon's Crate (QI!)
 			}),
 			q(7813, {	-- A Donation of Wool
 				qg = 14729,	-- Ralston Farnsley
@@ -797,12 +797,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Avelina's Heart
-						provider = { "i", 190179 },	-- Avelina's Heart
+						provider = { "i", 190179 },	-- Avelina's Heart (QI!)
 						coord = { 63.6, 65.6, MAP.SILVERPINE_FOREST },
 						cr = 185333,	-- Avelina Lilly
 					}),
 					objective(2, {	-- 0/1 Isaac's Heart
-						provider = { "i", 190180 },	-- Isaac's Heart
+						provider = { "i", 190180 },	-- Isaac's Heart (QI!)
 						coord = { 61.8, 38.6, MAP.THE_BARRENS },
 						cr = 185334,	-- Isaac Pearson
 					}),
@@ -819,7 +819,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts
+						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts (QI!)
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -859,7 +859,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
-						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
+						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart (QI!)
 						cr = 270094,	-- Stormheart
 						coord = { 51.4, 48.3, MAP.THOUSAND_NEEDLES },
 					}),

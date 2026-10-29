@@ -45,7 +45,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				requireSkill = LOCKPICKING,
 				learnedAt = 25,
 				groups = {
-					i(7871),	-- Token of Thievery
+					i(7871),	-- Token of Thievery (QI!)
 				},
 			}),
 			o(178244, {	-- Practice Lockbox
@@ -85,14 +85,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
-				qi = 5534,	-- Parker's Lunch (PQI!)
+				qi = 5534,	-- Parker's Lunch (QI!)
 			}),
 			q(94, {	-- A Watchful Eye
 				qg = 313,	-- Theocritus <Mage of Tower Azora>
 				coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 1083,	-- Glyph of Azora (PQI!)
+				qi = 1083,	-- Glyph of Azora (QI!)
 			}),
 			q(2282, {	-- Alther's Mill
 				sourceQuest = 2281,	-- Redridge Rendezvous
@@ -101,7 +101,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				lvl = 16,
-				qi = 5060,	-- Thieves' Tools (PQI!)
+				qi = 5060,	-- Thieves' Tools
 				groups = {
 					objective(1, {	-- 0/1 Token of Thievery
 						provider = { "i", 7871 },	-- Token of Thievery (QI!)
@@ -238,7 +238,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
-				qi = 1325,	-- Daffodil Bouquet (PQI!)
+				qi = 1325,	-- Daffodil Bouquet (QI!)
 				groups = {
 					i(1326),	-- Sauteed Sunfish
 				},
@@ -253,10 +253,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					MAP.WESTFALL,
 				},
 				cost = {
-					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine
-					{ "i", 1941, 1 },	-- 1x Cask of Merlot
+					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine (QI!)
+					{ "i", 1941, 1 },	-- 1x Cask of Merlot (QI!)
 					{ "i", 1262, 1 },	-- 1x Keg of Thunderbrew
-					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum
+					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum (QI!)
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -322,7 +322,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-				qi = 1409,	-- Solomon's Plea to Darkshire (PQI!)
+				qi = 1409,	-- Solomon's Plea to Darkshire (QI!)
 			}),
 			q(146, {	-- Messenger to Darkshire (2/2)
 				sourceQuest = 145,	-- Messenger to Darkshire (1/2)
@@ -330,14 +330,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 72.0, 46.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-				qi = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
+				qi = 1410,	-- Ebonlocke's Response to Solomon (QI!)
 			}),
 			q(120, {	-- Messenger to Stormwind (1/2)
 				qg = 344,	-- Magistrate Solomon
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1293,	-- The State of Lakeshire (PQI!)
+				qi = 1293,	-- The State of Lakeshire (QI!)
 			}),
 			q(121, {	-- Messenger to Stormwind (2/2)
 				sourceQuest = 120,	-- Messenger to Stormwind (1/2)
@@ -345,7 +345,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1294,	-- The General's Response (PQI!)
+				qi = 1294,	-- The General's Response (QI!)
 			}),
 			q(143, {	-- Messenger to Westfall (1/2)
 				sourceQuest = 121,	-- Messenger to Stormwind (2/2)
@@ -353,7 +353,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1407,	-- Solomon's Plea to Westfall (PQI!)
+				qi = 1407,	-- Solomon's Plea to Westfall (QI!)
 			}),
 			q(144, {	-- Messenger to Westfall (2/2)
 				sourceQuest = 143,	-- Messenger to Westfall (1/2)
@@ -361,7 +361,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 56.2, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
+				qi = 1408,	-- Stoutmantle's Response to Solomon (QI!)
 			}),
 			q(219, {	-- Missing In Action
 				qg = 349,	-- Corporal Keeshan
@@ -416,7 +416,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
 				cost = {
 					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
-					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout
+					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout (QI!)
 					{ "i", 1080, 5 },	-- 5x Tough Condor Meat
 				},
 				races = ALLIANCE_ONLY,
@@ -435,7 +435,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/5 Rethban Ore
 						providers = {
-							{ "i", 2798 },	-- Rethban Ore
+							{ "i", 2798 },	-- Rethban Ore (QI!)
 							{ "n", 580 },	-- Redridge Drudger
 							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
 							{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
@@ -449,7 +449,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
-				qi = 1284,	-- Crate of Horseshoes (PQI!)
+				qi = 1284,	-- Crate of Horseshoes (QI!)
 			}),
 			q(127, {	-- Selling Fish
 				qg = 381,	-- Dockmaster Baren
@@ -495,7 +495,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Spiked Collar
-						provider = { "i", 280911 },	-- Spiked Collar
+						provider = { "i", 280911 },	-- Spiked Collar (QI!)
 						coords = {
 							{ 16.0, 61.4, MAP.REDRIDGE_MOUNTAINS },
 							{ 31.0, 83.6, MAP.REDRIDGE_MOUNTAINS },
@@ -511,7 +511,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
-						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms (QI!)
 					}),
 				},
 			}),
@@ -604,7 +604,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1283,	-- Verner's Note
+				qi = 1283,	-- Verner's Note (QI!)
 			}),
 			q(1699, {	-- The Rethban Gauntlet
 				sourceQuest = 1698,	-- Yorus Barleybrew
@@ -621,7 +621,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
 				lvl = 20,
-				qi = 6843,	-- Cask of Scalder (PQI!)
+				qi = 6843,	-- Cask of Scalder (QI!)
 				groups = {
 					i(6970),	-- Furen's Favor
 				},
@@ -631,7 +631,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
-				qi = 1956,	-- Faded Shadowhide Pendant (PQI!)
+				qi = 1956,	-- Faded Shadowhide Pendant (QI!)
 				groups = {
 					i(1970),	-- Restoring Balm
 				},
@@ -1165,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 17.8, 57.8, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
-			i(2296, {	-- Great Goretusk Snout
+			i(2296, {	-- Great Goretusk Snout (QI!)
 				crs = {
 					345,	-- Bellygrub
 					547,	-- Great Goretusk

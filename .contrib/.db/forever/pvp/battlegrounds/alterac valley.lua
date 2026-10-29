@@ -185,7 +185,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies
+				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies (QI!)
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -193,7 +193,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies
+				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies (QI!)
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -349,7 +349,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies
+				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies (QI!)
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -357,7 +357,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies
+				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies (QI!)
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -428,7 +428,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Banner
-						provider = { "i", 17849 },	-- Stormpike Banner
+						provider = { "i", 17849 },	-- Stormpike Banner (QI!)
 						coord = { 41.9, 36.1, MAP.ALTERAC_VALLEY },
 					}),
 					i(17691),	-- Stormpike Insignia Rank 1
@@ -442,7 +442,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Banner
-						provider = { "i", 17850 },	-- Frostwolf Banner
+						provider = { "i", 17850 },	-- Frostwolf Banner (QI!)
 						coord = { 50.7, 93.3, MAP.ALTERAC_VALLEY },
 					}),
 					i(17690),	-- Frostwolf Insignia Rank 1

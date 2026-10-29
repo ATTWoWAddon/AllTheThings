@@ -147,7 +147,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				maps = { MAP.BLASTED_LANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
-				qi = 6178,	-- Shipment to Nethergarde
+				qi = 6178,	-- Shipment to Nethergarde (QI!)
 			}),
 			q(1389, {	-- Draenethyst Crystals
 				qg = 1776,	-- Magtoor
@@ -156,7 +156,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				groups = {
 					objective(1, {	-- 0/6 Draenethyst Crystal
 						providers = {
-							{ "i", 6071 },	-- Draenethyst Crystal
+							{ "i", 6071 },	-- Draenethyst Crystal (QI!)
 							{ "o", 22550 },	-- Draenethyst Crystals
 						},
 						coord = { 62.2, 23.5, MAP.SWAMP_OF_SORROWS },
@@ -172,7 +172,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				groups = {
 					objective(1, {	-- 0/8 Sundried Driftwood
 						providers = {
-							{ "i", 6146 },	-- Sundried Driftwood
+							{ "i", 6146 },	-- Sundried Driftwood (QI!)
 							{ "o", 24798 },	-- Sundried Driftwood
 						},
 						coord = { 93.4, 66.1, MAP.SWAMP_OF_SORROWS },
@@ -214,7 +214,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/10 Monstrous Crawler Leg
-						provider = { "i", 6184 },	-- Monstrous Crawler Leg
+						provider = { "i", 6184 },	-- Monstrous Crawler Leg (QI!)
 						cr = 1088,	-- Monstrous Crawler
 					}),
 					i(9681),	-- Grilled King Crawler Legs
@@ -267,7 +267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/8 Unprepared Sawtooth Flank
-						provider = { "i", 6169 },	-- Unprepared Sawtooth Flank
+						provider = { "i", 6169 },	-- Unprepared Sawtooth Flank (QI!)
 						crs = {
 							1082,	-- Sawtooth Crocolisk
 							1087,	-- Sawtooth Snapper
@@ -283,7 +283,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/6 Sawtooth Snapper Claw
-						provider = { "i", 6168 },	-- Sawtooth Snapper Claw
+						provider = { "i", 6168 },	-- Sawtooth Snapper Claw (QI!)
 						cr = 1087,	-- Sawtooth Snapper
 					}),
 				},
@@ -296,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Courier's Shipment
-						provider = { "i", 260452 },	-- Courier's Shipment
+						provider = { "i", 260452 },	-- Courier's Shipment (QI!)
 					}),
 				},
 			}),
@@ -339,7 +339,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				groups = {
 					objective(1, {	-- 0/10 Atal'ai Artifact
 						providers = {
-							{ "i", 6175 },	-- Atal'ai Artifact
+							{ "i", 6175 },	-- Atal'ai Artifact (QI!)
 							{ "o", 30854 },	-- Atal'ai Artifact
 							{ "o", 30855 },	-- Atal'ai Artifact
 							{ "o", 30856 },	-- Atal'ai Artifact
@@ -361,7 +361,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Lucky Lure
-						provider = { "i", 258530 },	-- Lucky Lure
+						provider = { "i", 258530 },	-- Lucky Lure (QI!)
 						cr = 757,	-- Lost One Fisherman
 						coord = { 43.0, 39.0, MAP.SWAMP_OF_SORROWS },
 					}),
@@ -374,7 +374,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				maps = { MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 38,
-				qi = 6193,	-- Bundle of Atal'ai Artifacts
+				qi = 6193,	-- Bundle of Atal'ai Artifacts (QI!)
 			}),
 			q(2744, {	-- The Demon Hunter
 				sourceQuest = 2743,	-- The Cover of Darkness
@@ -404,7 +404,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				groups = {
 					objective(1, {	-- 0/1 Wizards' Reagents
 						providers = {
-							{ "i", 6170 },	-- Wizards' Reagents
+							{ "i", 6170 },	-- Wizards' Reagents (QI!)
 							{ "o", 28024 },	-- Caravan Chest
 						},
 						coord = { 64.6, 18.4, MAP.SWAMP_OF_SORROWS },
@@ -489,7 +489,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Warchief's Orders
-						provider = { "i", 8463, },	-- Warchief's Orders
+						provider = { "i", 8463, },	-- Warchief's Orders (QI!)
 						coord = { 63.8, 83.6, MAP.SWAMP_OF_SORROWS },
 						cr = 950,	-- Swamp Talker
 					}),
@@ -555,17 +555,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Amulet of Allistarj
-						provider = { "i", 10755 },	-- Amulet of Allistarj
+						provider = { "i", 10755 },	-- Amulet of Allistarj (QI!)
 						coord = { 66.8, 29.6, MAP.BLASTED_LANDS },
 						cr = 7666,	-- Archmage Allistarj
 					}),
 					objective(2, {	-- 0/1 Amulet of Grol
-						provider = { "i", 10753 },	-- Amulet of Grol
+						provider = { "i", 10753 },	-- Amulet of Grol (QI!)
 						coord = { 43.0, 12.8, MAP.BLASTED_LANDS },
 						cr = 7665,	-- Grol the Destroyer
 					}),
 					objective(3, {	-- 0/1 Amulet of Sevine
-						provider = { "i", 10754 },	-- Amulet of Sevine
+						provider = { "i", 10754 },	-- Amulet of Sevine (QI!)
 						coord = { 40.6, 30.2, MAP.BLASTED_LANDS },
 						cr = 7667,	-- Lady Sevine
 					}),

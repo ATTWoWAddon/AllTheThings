@@ -6,14 +6,14 @@ local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	cost = { { "i", 9279, 1 } },	-- 1x White Punch Card
 	timeline = { REMOVED_5_0_4 },	-- guessed from WH comments
 	groups = {
-		i(9280),	-- Yellow Punch Card
+		i(9280),	-- Yellow Punch Card (QI!)
 	},
 });
 local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 	description = "This is located in the bottom of the Dormitories.",
-	cost = { { "i", 9280, 1 } },	-- 1x Yellow Punch Card
+	cost = { { "i", 9280, 1 } },	-- 1x Yellow Punch Card (QI!)
 	groups = {
-		i(9282),	-- Blue Punch Card
+		i(9282),	-- Blue Punch Card (QI!)
 		i(14639, {	-- Schematic: Minor Recombobulator (RECIPE!)
 			description = "If you are an Engineer, you will also get these plans by turning in the Yellow Punch Card.",
 		}),
@@ -21,16 +21,16 @@ local MATRIX_PUNCHOGRAPH_B = o(142475, {	-- Matrix Punchograph 3005-B
 });
 local MATRIX_PUNCHOGRAPH_C = o(142476, {	-- Matrix Punchograph 3005-C
 	description = "This is located at the bottom of the platform in the Engineering Labs.",
-	cost = { { "i", 9282, 1 } },	-- 1x Blue Punch Card
+	cost = { { "i", 9282, 1 } },	-- 1x Blue Punch Card (QI!)
 	groups = {
-		i(9281),	-- Red Punch Card
+		i(9281),	-- Red Punch Card (QI!)
 	},
 });
 local MATRIX_PUNCHOGRAPH_D = o(142696, {	-- Matrix Punchograph 3005-D
 	description = "This is located in the Workshop below Crowd Pummeler.",
-	cost = { { "i", 9281, 1 } },	-- 1x Red Punch Card
+	cost = { { "i", 9281, 1 } },	-- 1x Red Punch Card (QI!)
 	groups = {
-		i(9316),	-- Prismatic Punch Card
+		i(9316),	-- Prismatic Punch Card (QI!)
 		i(4413, {	-- Schematic: Discombobulator Ray (RECIPE!)
 			description = "If you are an Engineer and have a 'Security DELTA Access Card', you will also get these plans when you turn in your Red Punch Card.",
 			provider = { "i", 9327 },	-- Security DELTA Data Access Card
@@ -157,7 +157,7 @@ instanceroot(231, {	-- Gnomeregan
 					6230,	-- Peacekeeper Security Suit
 				},
 			}),
-			i(9309, {	-- Robo-mechanical Guts
+			i(9309, {	-- Robo-mechanical Guts (QI!)
 				description = "These can drop from any mechanical unit in Gnomeregan.",
 				races = ALLIANCE_ONLY,
 			}),
@@ -318,7 +318,7 @@ instanceroot(231, {	-- Gnomeregan
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Prismatic Punch Card
-						provider = { "i", 9316 },	-- Prismatic Punch Card
+						provider = { "i", 9316 },	-- Prismatic Punch Card (QI!)
 					}),
 					i(9604),	-- Mechanic's Pipehammer
 					i(9605),	-- Repairman's Cape
@@ -333,7 +333,7 @@ instanceroot(231, {	-- Gnomeregan
 				groups = {
 					objective(1, {	-- 0/12 Essential Artificial
 						providers = {
-							{ "i", 9278 },	-- Essential Artificial
+							{ "i", 9278 },	-- Essential Artificial (QI!)
 							{ "o", 142344 },	-- Artificial Extrapolator
 						},
 						description = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
@@ -348,8 +348,8 @@ instanceroot(231, {	-- Gnomeregan
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Full Leaden Collection Phial
-						provider = { "i", 9284 },	-- Full Leaden Collection Phial
-						cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial
+						provider = { "i", 9284 },	-- Full Leaden Collection Phial (QI!)
+						cost = { { "i", 9283, 1 } },	-- 1x Empty Leaden Collection Phial (QI!)
 						cr = 6329,	-- Irradiated Pillager
 					}),
 				},
@@ -377,7 +377,7 @@ instanceroot(231, {	-- Gnomeregan
 				races = HORDE_ONLY,
 				lvl = 20,
 				groups = {
-					i(9173, {	-- Goblin Transponder
+					i(9173, {	-- Goblin Transponder (QI!)
 						description = "You do not need to keep this in your inventory. You can simply discard it after transporting. To get another one, simply speak to Scooty again and tell him that you lost the first one.",
 					}),
 				},
@@ -397,7 +397,7 @@ instanceroot(231, {	-- Gnomeregan
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/24 Robo-mechanical Guts
-						provider = { "i", 9309 },	-- Robo-mechanical Guts
+						provider = { "i", 9309 },	-- Robo-mechanical Guts (QI!)
 					}),
 					i(9608),	-- Shoni's Disarming Tool
 					i(9609),	-- Shilly Mitts
@@ -458,12 +458,12 @@ instanceroot(231, {	-- Gnomeregan
 				groups = {
 					objective(1, {	-- 0/1 Rig Blueprints
 						providers = {
-							{ "i", 9153 },	-- Rig Blueprints
+							{ "i", 9153 },	-- Rig Blueprints (QI!)
 							{ "o", 142477 },	-- Thermaplugg's Safe
 						},
 					}),
 					objective(2, {	-- 0/1 Thermaplugg's Safe Combination
-						provider = { "i", 9299 },	-- Thermaplugg's Safe Combination
+						provider = { "i", 9299 },	-- Thermaplugg's Safe Combination (QI!)
 						cr = 7800,	-- Mekgineer Thermaplugg
 					}),
 					i(9623),	-- Civinad Robes
@@ -479,7 +479,7 @@ instanceroot(231, {	-- Gnomeregan
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Techbot's Memory Core
-						provider = { "i", 9277 },	-- Techbot's Memory Core
+						provider = { "i", 9277 },	-- Techbot's Memory Core (QI!)
 					}),
 				},
 			}),
@@ -512,8 +512,8 @@ instanceroot(231, {	-- Gnomeregan
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 High Potency Radioactive Fallout
-						provider = { "i", 9365 },	-- High Potency Radioactive Fallout
-						cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial
+						provider = { "i", 9365 },	-- High Potency Radioactive Fallout (QI!)
+						cost = { { "i", 9364, 1 } },	-- 1x Heavy Leaden Collection Phial (QI!)
 						cr = 6219,	-- Corrosive Lurker
 					}),
 				},
@@ -531,7 +531,7 @@ instanceroot(231, {	-- Gnomeregan
 			container(9363, {	-- Sparklematic-Wrapped Box
 				description = "Kill hostile creatures for [Grime-Encrusted Object], clean them at the Sparklematic 5200 to receive this box.",
 				groups = {
-					i(9280),	-- Yellow Punch Card
+					i(9280),	-- Yellow Punch Card (QI!)
 					i(10299),	-- Gnomeregan Amulet
 					i(10298),	-- Gnomeregan Band
 				},
@@ -541,7 +541,7 @@ instanceroot(231, {	-- Gnomeregan
 		n(6231, {	-- Techbot
 			description = "Located outside the instance near the teleporter.",
 			groups = {
-				i(9277),	-- Techbot's Memory Core
+				i(9277),	-- Techbot's Memory Core (QI!)
 				i(9444),	-- Techbot CPU Shell
 			},
 		}),

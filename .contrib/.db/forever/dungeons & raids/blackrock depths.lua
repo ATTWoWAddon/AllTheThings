@@ -64,10 +64,10 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Marshal Windsor's Lost Information
-						provider = { "i", 11464 },	-- Marshal Windsor's Lost Information
+						provider = { "i", 11464 },	-- Marshal Windsor's Lost Information (QI!)
 					}),
 					objective(2, {	-- 0/1 Marshal Windsor's Lost Information
-						provider = { "i", 11465 },	-- Marshal Windsor's Lost Information
+						provider = { "i", 11465 },	-- Marshal Windsor's Lost Information (QI!)
 					}),
 				},
 			}),
@@ -102,8 +102,8 @@ instanceroot(228, {	-- Blackrock Depths
 				coord = { 95.09, 31.56, MAP.BURNING_STEPPES },
 				groups = {
 					objective(1, {	-- 0/1 Encased Fiery Essence
-						provider = { "i", 11230 },	-- Encased Fiery Essence
-						cost = { { "i", 11231, 1 } },	-- 1x Altered Black Dragonflight Molt
+						provider = { "i", 11230 },	-- Encased Fiery Essence (QI!)
+						cost = { { "i", 11231, 1 } },	-- 1x Altered Black Dragonflight Molt (QI!)
 						cr = 9016,	-- Bael'Gar
 					}),
 					i(12066),	-- Shaleskin Cape
@@ -144,10 +144,10 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Ironfel
-						provider = { "i", 10999 },	-- Ironfel
+						provider = { "i", 10999 },	-- Ironfel (QI!)
 						cr = 9056,	-- Fineous Darkvire <Chief Architect>
 					}),
-					i(11000),	-- Shadowforge Key
+					i(11000),	-- Shadowforge Key (QI!)
 				},
 			}),
 			q(3906, {	-- Disharmony of Flame
@@ -173,7 +173,7 @@ instanceroot(228, {	-- Blackrock Depths
 						provider = { "n", 9017 },	-- Lord Incendius
 					}),
 					objective(2, {	-- 0/1 Tablet of Kurniya
-						provider = { "i", 11126 },	-- Tablet of Kurniya
+						provider = { "i", 11126 },	-- Tablet of Kurniya (QI!)
 					}),
 					i(12112),	-- Crypt Demon Bracers
 					i(12114),	-- Nightfall Gloves
@@ -241,7 +241,7 @@ instanceroot(228, {	-- Blackrock Depths
 				sourceQuests = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 				providers = {
 					{ "n", 9080 },	-- Lexlort <Kargath Expeditionary Force>
-					{ "i", 11286 },	-- Thorium Shackles
+					{ "i", 11286 },	-- Thorium Shackles (QI!)
 				},
 				coord = { 5.9, 47.6, MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -255,7 +255,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Lost Thunderbrew Recipe
-						provider = { "i", 11312 },	-- Lost Thunderbrew Recipe
+						provider = { "i", 11312 },	-- Lost Thunderbrew Recipe (QI!)
 					}),
 					i(12000),	-- Limb Cleaver
 					i(11964),	-- Swiftstrike Cudgel
@@ -345,7 +345,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Lost Thunderbrew Recipe
-						provider = { "i", 11312 },	-- Lost Thunderbrew Recipe
+						provider = { "i", 11312 },	-- Lost Thunderbrew Recipe (QI!)
 					}),
 					i(12000),	-- Limb Cleaver
 					i(11964),	-- Swiftstrike Cudgel
@@ -391,10 +391,10 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/1 Thorium Shackles
-						provider = { "i", 11286 },	-- Thorium Shackles
+						provider = { "i", 11286 },	-- Thorium Shackles (QI!)
 					}),
 					objective(2, {	-- Prisoner Transport
-						provider = { "i", 11286 },	-- Thorium Shackles
+						provider = { "i", 11286 },	-- Thorium Shackles (QI!)
 					}),
 				},
 			}),
@@ -413,7 +413,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Ribbly's Head
-						provider = { "i", 11313 },	-- Ribbly's Head
+						provider = { "i", 11313 },	-- Ribbly's Head (QI!)
 					}),
 					i(11963),	-- Penance Spaulders
 					i(12049),	-- Splintsteel Armor
@@ -443,7 +443,7 @@ instanceroot(228, {	-- Blackrock Depths
 				sourceQuest = 6403,	-- The Great Masquerade
 				providers = {
 					{ "n", 1748 },	-- Highlord Bolvar Fordragon
-					{ "i", 16662 },	-- Fragment of the Dragon's Eye
+					{ "i", 16662 },	-- Fragment of the Dragon's Eye (QI!)
 				},
 				coord = { 78.2, 18.1, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -483,7 +483,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/20 Dark Iron Fanny Pack
-						provider = { "i", 11468 },	-- Dark Iron Fanny Pack
+						provider = { "i", 11468 },	-- Dark Iron Fanny Pack (QI!)
 					}),
 					i(11883),	-- A Dingy Fanny Pack
 				},
@@ -494,7 +494,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 The Heart of the Mountain
-						provider = { "i", 11309 },	-- The Heart of the Mountain
+						provider = { "i", 11309 },	-- The Heart of the Mountain (QI!)
 					}),
 				},
 			}),
@@ -506,7 +506,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/10 Essence of the Elements
-						provider = { "i", 11129 },	-- Essence of the Elements
+						provider = { "i", 11129 },	-- Essence of the Elements (QI!)
 					}),
 					i(12038),	-- Lagrave's Seal
 				},
@@ -520,7 +520,7 @@ instanceroot(228, {	-- Blackrock Depths
 						provider = { "i", 8846 },	-- Gromsblood
 					}),
 					objective(2, {	-- 0/10 Giant Silver Vein
-						provider = { "i", 11405 },	-- Giant Silver Vein
+						provider = { "i", 11405 },	-- Giant Silver Vein (QI!)
 						coord = { 68.0, 17.0, MAP.AZSHARA },
 						crs = {
 							6146,	-- Cliff Breaker
@@ -529,9 +529,9 @@ instanceroot(228, {	-- Blackrock Depths
 						},
 					}),
 					objective(3, {	-- 0/1 Nagmara's Filled Vial
-						provider = { "i", 11413 },	-- Nagmara's Filled Vial
+						provider = { "i", 11413 },	-- Nagmara's Filled Vial (QI!)
 						coord = { 31.0, 49.0, MAP.UNGORO_CRATER },
-						cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial
+						cost = { { "i", 11412, 1 } },	-- 1x Nagmara's Vial (QI!)
 					}),
 					i(11962),	-- Manacle Cuffs
 					i(11866),	-- Nagmara's Whipping Belt
@@ -567,7 +567,7 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/10 Fractured Elemental Shard
-						provider = { "i", 11266 },	-- Fractured Elemental Shard
+						provider = { "i", 11266 },	-- Fractured Elemental Shard (QI!)
 						crs = {
 							7032,	-- Greater Obsidian Elemental
 							8981,	-- Malfunctioning Reaver
@@ -580,7 +580,7 @@ instanceroot(228, {	-- Blackrock Depths
 				sourceQuest = 4061,	-- The Rise of the Machines (1/3)
 				providers = {
 					{ "n", 9079 },	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
-					{ "i", 11267 },	-- Elemental Shard Sample
+					{ "i", 11267 },	-- Elemental Shard Sample (QI!)
 				},
 				coord = { 3.02, 47.81, MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -594,10 +594,10 @@ instanceroot(228, {	-- Blackrock Depths
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/1 Head of Argelmach
-						provider = { "i", 11268 },	-- Head of Argelmach
+						provider = { "i", 11268 },	-- Head of Argelmach (QI!)
 					}),
 					objective(2, {	-- 0/10 Intact Elemental Core
-						provider = { "i", 11269 },	-- Intact Elemental Core
+						provider = { "i", 11269 },	-- Intact Elemental Core (QI!)
 					}),
 					i(12110),	-- Raincaster Drape
 					i(12109),	-- Azure Moon Amice
@@ -659,7 +659,7 @@ instanceroot(228, {	-- Blackrock Depths
 				coord = { 85.8, 69.0, MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
 				lvl = 48,
-				qi = 11366,	-- Helendis Riverhorn's Letter
+				qi = 11366,	-- Helendis Riverhorn's Letter (QI!)
 			}),
 			q(4184, {	-- The True Masters (2/6)
 				sourceQuest = 4183,	-- The True Masters (1/6)
@@ -667,7 +667,7 @@ instanceroot(228, {	-- Blackrock Depths
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 48,
-				qi = 11367,	-- Solomon's Plea to Bolvar
+				qi = 11367,	-- Solomon's Plea to Bolvar (QI!)
 			}),
 			q(4185, {	-- The True Masters (3/6)
 				sourceQuest = 4184,	-- The True Masters (2/6)
@@ -685,7 +685,7 @@ instanceroot(228, {	-- Blackrock Depths
 				sourceQuest = 4185,	-- The True Masters (3/6)
 				providers = {
 					{ "n", 1748 },	-- Highlord Bolvar Fordragon
-					{ "i", 11368 },	-- Bolvar's Decree
+					{ "i", 11368 },	-- Bolvar's Decree (QI!)
 				},
 				coord = { 78.2, 18.1, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -814,11 +814,11 @@ instanceroot(228, {	-- Blackrock Depths
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(11468),	-- Dark Iron Fanny Pack
+			i(11468),	-- Dark Iron Fanny Pack (QI!)
 			i(18945),	-- Dark Iron Residue
 			--i(22528),	-- Dark Iron Scraps //Commented out until confirmed
-			i(11129),	-- Essence of the Elements
-			i(11269, {	-- Intact Elemental Core
+			i(11129),	-- Essence of the Elements (QI!)
+			i(11269, {	-- Intact Elemental Core (QI!)
 				crs = {
 					8908,	-- Molten War Golem
 					8906,	-- Ragereaver Golem
@@ -947,7 +947,7 @@ instanceroot(228, {	-- Blackrock Depths
 							{ "o", 181074 },	-- Arena Spoils
 						},
 						groups = {
-							i(22047),	-- Top Piece of Lord Valthalak's Amulet
+							i(22047),	-- Top Piece of Lord Valthalak's Amulet (QI!)
 							i(22305),	-- Ironweave Mantle
 							i(22317),	-- Lefty's Brass Knuckle
 							i(22318),	-- Malgen's Long Bow
@@ -969,7 +969,7 @@ instanceroot(228, {	-- Blackrock Depths
 				creatureID = 9017,
 				groups = {
 					--i(21987),	-- Incendicite of Incendius \\Commented out until confirmed
-					i(11126),	-- Tablet of Kurniya
+					i(11126),	-- Tablet of Kurniya (QI!)
 					i(11764),	-- Cinderhide Armsplints
 					i(11767),	-- Emberplate Armguards
 					i(11766),	-- Flameweave Cuffs
@@ -1031,7 +1031,7 @@ instanceroot(228, {	-- Blackrock Depths
 					o(165554, {	-- Heart of the Mountain
 						description = "This spawns after defeating Watchman Doomgrip.",
 						groups = {
-							i(11309),	-- The Heart of the Mountain
+							i(11309),	-- The Heart of the Mountain (QI!)
 						},
 					}),
 					o(161495, {	-- Secret Safe
@@ -1075,7 +1075,7 @@ instanceroot(228, {	-- Blackrock Depths
 			e(378, {	-- General Angerforge
 				creatureID = 9033,
 				groups = {
-					i(11464),	-- Marshal Windsor's Lost Information
+					i(11464),	-- Marshal Windsor's Lost Information (QI!)
 					i(11816),	-- Angerforge's Battle Axe
 					i(11810),	-- Force of Will
 					i(11815),	-- Hand of Justice
@@ -1087,8 +1087,8 @@ instanceroot(228, {	-- Blackrock Depths
 			e(379, {	-- Golem Lord Argelmach
 				creatureID = 8983,
 				groups = {
-					i(11268),	-- Head of Argelmach
-					i(11465),	-- Marshal Windsor's Lost Information
+					i(11268),	-- Head of Argelmach (QI!)
+					i(11465),	-- Marshal Windsor's Lost Information (QI!)
 					i(11823),	-- Luminary Kilt
 					i(11669),	-- Naglering
 					i(11822),	-- Omnicast Boots
@@ -1100,7 +1100,7 @@ instanceroot(228, {	-- Blackrock Depths
 				provider = { "o", 164911 },	-- Thunderbrew Lager Keg
 				description = "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
 				groups = {
-					i(11312),	-- Lost Thunderbrew Recipe
+					i(11312),	-- Lost Thunderbrew Recipe (QI!)
 					i(18043),	-- Coal Miner Boots
 					--i(22275),	-- Firemoss Boots \\Commented out until confirmed
 					i(18044),	-- Hurley's Tankard
@@ -1111,7 +1111,7 @@ instanceroot(228, {	-- Blackrock Depths
 				creatureID = 9543,
 				description = "Speak to him to start the encounter.",
 				groups = {
-					i(11313),	-- Ribbly's Head
+					i(11313),	-- Ribbly's Head (QI!)
 					i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 					i(2663),	-- Ribbly's Bandolier
 					i(2662),	-- Ribbly's Quiver

@@ -17,7 +17,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Razorflank's Heart
-						provider = { "i", 5793 },	-- Razorflank's Heart
+						provider = { "i", 5793 },	-- Razorflank's Heart (QI!)
 					}),
 					i(6725),	-- Marbled Buckler
 					i(4197),	-- Berylline Pads
@@ -40,30 +40,30 @@ instanceroot(234, {	-- Razorfen Kraul
 				groups = {
 					objective(1, {	-- 0/6 Blueleaf Tuber
 						providers = {
-							{ "i", 5876 },	-- Blueleaf Tuber
+							{ "i", 5876 },	-- Blueleaf Tuber (QI!)
 							{ "o", 20920 },	-- Blueleaf Tuber
-							{ "i", 5880 },	-- Crate With Holes
-							{ "i", 6684 },	-- Snufflenose Command Stick
+							{ "i", 5880 },	-- Crate With Holes (QI!)
+							{ "i", 6684 },	-- Snufflenose Command Stick (QI!)
 						},
 						cr = 4781,	-- Snufflenose Gopher
 					}),
 					objective(2, {	-- 0/1 Crate With Holes
 						providers = {
-							{ "i", 5880 },	-- Crate With Holes
+							{ "i", 5880 },	-- Crate With Holes (QI!)
 							{ "o", 21277 },	-- Crate with Holes
 						},
 						coord = { 62.3, 37.6, MAP.THE_BARRENS },
 					}),
 					objective(3, {	-- 0/1 Snufflenose Owner's Manual
 						providers = {
-							{ "i", 5897 },	-- Snufflenose Owner's Manual
+							{ "i", 5897 },	-- Snufflenose Owner's Manual (QI!)
 							{ "o", 21530 },	-- Snufflenose Owner's Manual
 						},
 						coord = { 62.3, 37.6, MAP.THE_BARRENS },
 					}),
 					objective(4, {	-- 0/1 Snufflenose Command Stick
 						providers = {
-							{ "i", 6684 },	-- Snufflenose Command Stick
+							{ "i", 6684 },	-- Snufflenose Command Stick (QI!)
 							{ "o", 68865 },	-- Snufflenose Command Sticks
 						},
 						coord = { 62.3, 37.6, MAP.THE_BARRENS },
@@ -80,7 +80,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Kraul Guano
-						provider = { "i", 5801 },	-- Kraul Guano
+						provider = { "i", 5801 },	-- Kraul Guano (QI!)
 					}),
 				},
 			}),
@@ -90,7 +90,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				coord = { 30.0, 24.0, MAP.THOUSAND_NEEDLES },
 				races = ALLIANCE_ONLY,
 				lvl = 29,
-				qi = 5790,	-- Lonebrow's Journal (PQI!)
+				qi = 5790,	-- Lonebrow's Journal (QI!)
 			}),
 			q(1142, {	-- Mortality Wanes
 				qg = 4510,	-- Heralath Fallowbrook
@@ -99,7 +99,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Treshala's Pendant
-						provider = { "i", 5825 },	-- Treshala's Pendant
+						provider = { "i", 5825 },	-- Treshala's Pendant (QI!)
 						description = "Drops from any creature in the Dungeon.",
 					}),
 					i(6751),	-- Mourning Shawl
@@ -117,7 +117,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Razorflank's Medallion
-						provider = { "i", 5792 },	-- Razorflank's Medallion
+						provider = { "i", 5792 },	-- Razorflank's Medallion (QI!)
 					}),
 					i(6725),	-- Marbled Buckler
 					i(4197),	-- Berylline Pads
@@ -149,7 +149,7 @@ instanceroot(234, {	-- Razorfen Kraul
 					4511,	-- Agam'ar
 				},
 			}),
-			i(5801, {	-- Kraul Guano
+			i(5801, {	-- Kraul Guano (QI!)
 				crs = {
 					4539,	-- Greater Kraul Bat
 					4538,	-- Kraul Bat
@@ -178,7 +178,7 @@ instanceroot(234, {	-- Razorfen Kraul
 				i(274152, {	-- Roogug's Severed Head
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-				i(6841),	-- Vial of Phlogiston
+				i(6841),	-- Vial of Phlogiston (QI!)
 				i(274149, {	-- Thornweaver Drape
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
@@ -233,8 +233,8 @@ instanceroot(234, {	-- Razorfen Kraul
 		e(901, {	-- Charlga Razorflank
 			creatureID = 4421,	-- Charlga Razorflank <The Crone>
 			groups = {
-				i(5793),	-- Razorflank's Heart
-				i(5792),	-- Razorflank's Medallion
+				i(5793),	-- Razorflank's Heart (QI!)
+				i(5792),	-- Razorflank's Medallion (QI!)
 				i(17008),	-- Small Scroll
 				i(6692),	-- Pronged Reaver
 				i(6694),	-- Heart of Agamaggan

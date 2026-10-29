@@ -30,7 +30,7 @@ instanceroot(3065, {	-- Hall of Thanes
 				groups = {
 					objective(1, {	-- 0/8 Dwarven Heirloom
 						providers = {
-							{ "i", 274289 },	-- Dwarven Heirloom
+							{ "i", 274289 },	-- Dwarven Heirloom (QI!)
 							{ "o", 457387 },	-- Dwarven Heirloom
 						},
 					}),
@@ -62,7 +62,7 @@ instanceroot(3065, {	-- Hall of Thanes
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Durgen Dirgehammer's Head
-						provider = { "i", 274286 },	-- Durgen Dirgehammer's Head
+						provider = { "i", 274286 },	-- Durgen Dirgehammer's Head (QI!)
 						cr = 261319,	-- Durgen Dirgehammer
 					}),
 					i(279894),	-- Calibrated Blunderbuss

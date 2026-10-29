@@ -119,7 +119,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 56.9, 47.2, MAP.WESTFALL },
 				races = { HUMAN },
 				lvl = 10,
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qi = 15998,	-- Lewis' Note (QI!)
 			}),
 			q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 				qs = 1357,	-- Captain Sander's Treasure Map (QS!)
@@ -130,14 +130,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				provider = { "o", 35 },	-- Captain's Footlocker
 				coord = { 25.9, 47.77, MAP.WESTFALL },
 				lvl = 10,
-				qi = 1358,	-- A Clue to Sander's Treasure (PQI!)
+				qi = 1358,	-- A Clue to Sander's Treasure (QI!)
 			}),
 			q(139, {	-- Captain Sander's Hidden Treasure (3/4)
 				sourceQuest = 138,	-- Captain Sander's Hidden Treasure (2/4)
 				provider = { "o", 36 },	-- Broken Barrel
 				coord = { 40.50, 47.82, MAP.WESTFALL },
 				lvl = 10,
-				qi = 1361,	-- Another Clue to Sander's Treasure (PQI!)
+				qi = 1361,	-- Another Clue to Sander's Treasure (QI!)
 			}),
 			q(140, {	-- Captain Sander's Hidden Treasure (4/4)
 				sourceQuest = 139,	-- Captain Sander's Hidden Treasure (3/4)
@@ -150,7 +150,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ 25.97, 16.90, MAP.WESTFALL },
 				},
 				lvl = 10,
-				qi = 1362,	-- Final Clue to Sander's Treasure (PQI!)
+				qi = 1362,	-- Final Clue to Sander's Treasure (QI!)
 				groups = {
 					i(270257, {	-- Captain Sander's Locker
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -195,7 +195,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				maps = { MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				lvl = 10,
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qi = 15998,	-- Lewis' Note (QI!)
 			}),
 			q(1076, {	-- Devils in Westfall
 				sourceQuest = 1075,	-- A Scroll from Mauren
@@ -238,7 +238,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
-				qi = 1971,	-- Furlbrow's Deed (PQI!)
+				qi = 1971,	-- Furlbrow's Deed (QI!)
 				groups = {
 					i(5057),	-- Ripe Watermelon
 					i(4656),	-- Small Pumpkin
@@ -266,7 +266,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 						provider = { "i", 255007 },	-- Golem Isospring
 					}),
 					objective(2, {	-- 0/5 Harvester Gyrostabilizer
-						provider = { "i", 255010 },	-- Harvester Gyrostabilizer
+						provider = { "i", 255010 },	-- Harvester Gyrostabilizer (QI!)
 					}),
 				},
 			}),
@@ -312,7 +312,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				lvl = 20,
-				qi = 8046,	-- Kearnen's Journal (PQI!)
+				qi = 8046,	-- Kearnen's Journal
 				groups = {
 					objective(1, {	-- 0/1 Klaven Mortwake's Journal
 						provider = { "i", 7908 },	-- Klaven Mortwake's Journal (QI!)
@@ -340,7 +340,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/8 Suspicious Industrial Supplies
 						providers = {
-							{ "i", 254676 },	-- Suspicious Industrial Supplies
+							{ "i", 254676 },	-- Suspicious Industrial Supplies (QI!)
 							{ "o", 254676 },	-- Suspicious Crate
 						},
 						coord = { 43.2, 68.3, MAP.WESTFALL },
@@ -355,7 +355,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Longshore Murloc Gill
-						provider = { "i", 254548 },	-- Longshore Murloc Gill
+						provider = { "i", 254548 },	-- Longshore Murloc Gill (QI!)
 						crs = {
 							126,	-- Murloc Coastrunner
 							458,	-- Murloc Hunter
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Holy Spring Water
 						providers = {
-							{ "i", 737 },	-- Holy Spring Water (QI!)
+							{ "i", 737 },	-- Holy Spring Water
 							{ "o", 759 },	-- The Holy Spring
 						},
 						coord = { 28.9, 62.0, MAP.STRANGLETHORN_VALE },
@@ -562,14 +562,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 254545,	-- Well Water Sample Kit (PQI!)
+				qi = 254545,	-- Well Water Sample Kit (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Jansen Stead Water Sample
-						provider = { "i", 254546 },	-- Jansen Stead Water Sample
+						provider = { "i", 254546 },	-- Jansen Stead Water Sample (QI!)
 						coord = { 56.7, 18.7, MAP.WESTFALL },
 					}),
 					objective(2, {	-- 0/1 Molsen Farm Water Sample
-						provider = { "i", 254547 },	-- Molsen Farm Water Sample
+						provider = { "i", 254547 },	-- Molsen Farm Water Sample (QI!)
 						coord = { 46.2, 38.3, MAP.WESTFALL },
 					}),
 				},
@@ -620,7 +620,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 21.4, 45.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1327,	-- Wiley's Note (PQI!)
+				qi = 1327,	-- Wiley's Note (QI!)
 			}),
 			q(135, {	-- The Defias Brotherhood (3/7)
 				sourceQuest = 132,	-- The Defias Brotherhood (2/7)
@@ -628,7 +628,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1327,	-- Wiley's Note (PQI!)
+				qi = 1327,	-- Wiley's Note (QI!)
 			}),
 			q(141, {	-- The Defias Brotherhood (4/7)
 				sourceQuest = 135,	-- The Defias Brotherhood (3/7)
@@ -636,7 +636,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				qi = 1353,	-- Shaw's Report (PQI!)
+				qi = 1353,	-- Shaw's Report (QI!)
 			}),
 			q(142, {	-- The Defias Brotherhood (5/7)
 				sourceQuest = 141,	-- The Defias Brotherhood (4/7)
@@ -667,7 +667,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Furlbrow's Pocket Watch
 						providers = {
-							{ "i", 841 },	-- Furlbrow's Pocket Watch (PQI!)
+							{ "i", 841 },	-- Furlbrow's Pocket Watch (QI!)
 							{ "o", 290 },	-- Furlbrow's Wardrobe
 						},
 						coord = { 49.3, 19.5, MAP.WESTFALL },
@@ -779,7 +779,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
-				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
+				qi = 2832,	-- Verna's Westfall Stew Recipe (QI!)
 			}),
 			q(38, {	-- Westfall Stew (2/2)
 				sourceQuest = 36,	-- Westfall Stew (1/2)
@@ -1082,7 +1082,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			i(2087, {	-- Hard Crawler Carapace
 				cr = 830,	-- Sand Crawler
 			}),
-			i(255010, {	-- Harvester Gyrostabilizer
+			i(255010, {	-- Harvester Gyrostabilizer (QI!)
 				crs = {
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher

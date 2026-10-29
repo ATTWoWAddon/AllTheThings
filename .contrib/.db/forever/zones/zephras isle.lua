@@ -126,7 +126,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
 				lvl = 2,
-				qi = 282420,	-- Folded Parchment (PQI!)
+				qi = 282420,	-- Folded Parchment
 			}),
 			q(92481, {	-- A Student of the Arcane
 				sourceQuest = 92461,	-- Harmony in Balance
@@ -149,7 +149,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 3,
 				groups = {
 					objective(1, {	-- 0/6 Scrawny Ursera Claw
-						provider = { "i", 251918 },	-- Scrawny Ursera Claw
+						provider = { "i", 251918 },	-- Scrawny Ursera Claw (QI!)
 						coord = { 40.4, 27.0, MAP.ZEPHRAS_ISLE },
 						cr = 250926,	-- Scrawny Ursera
 					}),
@@ -179,7 +179,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					objective(1, {	-- 0/8 Abandoned Belongings
 						providers = {
-							{ "i", 266433 },	-- Abandoned Belongings
+							{ "i", 266433 },	-- Abandoned Belongings (QI!)
 							{ "o", 623295 },	-- Abandoned Belongings
 						},
 						coord = { 58.0, 31.9, MAP.ZEPHRAS_ISLE },
@@ -235,7 +235,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/10 Al'Aketh Windstone Charm
-						provider = { "i", 255658 },	-- Al'Aketh Windstone Charm
+						provider = { "i", 255658 },	-- Al'Aketh Windstone Charm (QI!)
 						crs = {
 							253511,	-- Al'Aketh Pillager
 							253195,	-- Al'Aketh Preacher
@@ -387,7 +387,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Torch of the Dormant Flame
-						provider = { "i", 6653 },	-- Torch of the Dormant Flame
+						provider = { "i", 6653 },	-- Torch of the Dormant Flame (QI!)
 					}),
 				},
 			}),
@@ -645,7 +645,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
-				qi = 254584,	-- Index Esoteria (PQI!)
+				qi = 254584,	-- Index Esoteria (QI!)
 				groups = {
 					objective(1, {	-- 0/6 Gather Data on Elemental Currents
 						provider = { "o", 697118 },	-- Windstone Formation
@@ -782,7 +782,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- Receive Instructions from Randal Emerson
-						provider = { "i", 285356 },	-- Advisor Emerson's Instructions (QI!)
+						provider = { "i", 285356 },	-- Advisor Emerson's Instructions
 						cr = 275491,	-- Randal Emerson <Royal Advisor>
 						coords = {
 							{ 79.0, 44.8, MAP.STORMWIND_CITY },
@@ -810,7 +810,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
 				races = { SKYBORNE_HORDE },
 				lvl = 7,
-				qi = 285357,	-- Advisor Nazgrel's Instructions (QI!)
+				qi = 285357,	-- Advisor Nazgrel's Instructions
 				groups = {
 					i(286426),	-- Honorbound Cloak
 				},
@@ -846,11 +846,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
-				qi = 253666,	-- Flutterfly Swatter (PQI!)
+				qi = 253666,	-- Flutterfly Swatter (QI!)
 				groups = {
 					objective(1, {	-- 0/5 Flutterfly Dust
 						providers = {
-							{ "i", 253595 },	-- Flutterfly Dust
+							{ "i", 253595 },	-- Flutterfly Dust (QI!)
 							{ "o", 578959 },	-- Flutterfly Dust
 						},
 						cr = 251622,	-- Flutterfly
@@ -871,7 +871,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						coord = { 37.6, 26.0, MAP.ZEPHRAS_ISLE },
 					}),
 					objective(2, {	-- 0/1 Head of Urs'anah
-						provider = { "i", 252665 },	-- Head of Urs'anah
+						provider = { "i", 252665 },	-- Head of Urs'anah (QI!)
 						coord = { 35.7, 25.3, MAP.ZEPHRAS_ISLE },
 						cr = 251115,	-- Urs'anah <The Den Mother>
 					}),
@@ -991,7 +991,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					objective(1, {	-- 10/10 Ripe Stormapple
 						providers = {
-							{ "i", 253591 },	-- Ripe Stormapple
+							{ "i", 253591 },	-- Ripe Stormapple (QI!)
 							{ "o", 578937 },	-- Ripe Stormapple
 						},
 						coord = { 47.6, 82.7, MAP.ZEPHRAS_ISLE },
@@ -1028,7 +1028,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
-				qi = 258771,	-- Al'Aketh Cultist's Ear (QI!)
+				qi = 258771,	-- Al'Aketh Cultist's Ear
 				groups = {
 					i(263306),	-- Nightclaw Gloves
 					i(263307),	-- Shadowgale Pants
@@ -1041,7 +1041,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				repeatable = true,
-				qi = 258771,	-- Al'Aketh Cultist's Ear (QI!)
+				qi = 258771,	-- Al'Aketh Cultist's Ear
 			}),
 			q(92684, {	-- Ornery Ornery Galestriders
 				sourceQuest = 92679,	-- Blood Tithe
@@ -1050,7 +1050,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/7 Lowlands Galestrider Tenderloin
-						provider = { "i", 253597 },	-- Lowlands Galestrider Tenderloin
+						provider = { "i", 253597 },	-- Lowlands Galestrider Tenderloin (QI!)
 						cr = 251707,	-- Ornery Galestrider
 						coord = { 53.3, 72.2, MAP.ZEPHRAS_ISLE },
 					}),
@@ -1323,7 +1323,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/1 Heirloom
-						provider = { "i", 266434 },	-- Resaan's Heirloom
+						provider = { "i", 266434 },	-- Resaan's Heirloom (QI!)
 						cr = 259013,	-- Resaan Nimbuswalker <Ban'aethal Citizen>
 						coord = { 57.0, 29.5, MAP.ZEPHRAS_ISLE },
 					}),
@@ -1334,7 +1334,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
-				qi = 265782,	-- Mysterious Orders (PQI!)
+				qi = 265782,	-- Mysterious Orders (QI!)
 			}),
 			q(93836, {	-- The Fate of Zephras
 				sourceQuest = 92646,	-- Confront Lorthuna
@@ -1476,7 +1476,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 1/1 Shriekling Matriarch's Head
-						provider = { "i", 257107 },	-- Shriekling Matriarch's Head
+						provider = { "i", 257107 },	-- Shriekling Matriarch's Head (QI!)
 						cr = 253283,	-- Shriekling Matriarch
 						coord = { 52.3, 65.6, MAP.ZEPHRAS_ISLE },
 					}),
@@ -1637,7 +1637,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 253372,	-- Dead Cultist
 				coord = { 56.0, 58.8, MAP.ZEPHRAS_ISLE },
 				lvl = 6,
-				qi = 273852,	-- Glowing Crystal (PQI!)
+				qi = 273852,	-- Glowing Crystal (QI!)
 				groups = {
 					i(263330),	-- Tracker's Pants
 					i(263332),	-- Elder's Tunic
@@ -1672,7 +1672,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/8 Shriekling Talons
-						provider = { "i", 254378 },	-- Shriekling Talons
+						provider = { "i", 254378 },	-- Shriekling Talons (QI!)
 						crs = {
 							256092,	-- Shadowgale Shriekling
 							251247,	-- Shadowgale Manticore (location unknown)

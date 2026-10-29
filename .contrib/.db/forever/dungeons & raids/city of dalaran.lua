@@ -31,7 +31,7 @@ instanceroot(2959, {	-- City of Dalaran
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Fel Infused Blossom
-						provider = { "i", 251983 },	-- Fel Infused Blossom
+						provider = { "i", 251983 },	-- Fel Infused Blossom (QI!)
 					}),
 					i(279835),	-- Vine Pruner's Cloak
 					i(279836),	-- Thorn Protecting Girdle
@@ -56,7 +56,7 @@ instanceroot(2959, {	-- City of Dalaran
 				races = HORDE_ONLY,
 				lvl = 30,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279469,	-- Grimy Key
+				qi = 279469,	-- Grimy Key (QI!)
 			}),
 			q(92459, {	-- Friend of the Kirin Tor
 				sourceQuest = 92458,	-- Heart of Disruption [Alliance]
@@ -65,7 +65,7 @@ instanceroot(2959, {	-- City of Dalaran
 				races = ALLIANCE_ONLY,
 				lvl = 24,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 251961,	-- Arcane Mote
+				qi = 251961,	-- Arcane Mote (QI!)
 			}),
 			q(93689, {	-- Friend of the Kirin Tor
 				lvl = 24,
@@ -82,7 +82,7 @@ instanceroot(2959, {	-- City of Dalaran
 				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
-						provider = { "i", 251961 },	-- Arcane Mote
+						provider = { "i", 251961 },	-- Arcane Mote (QI!)
 						cr = 246020,	-- Shade of the Archmage
 					}),
 					i(279839),	-- Spellguard Pauldrons
@@ -100,7 +100,7 @@ instanceroot(2959, {	-- City of Dalaran
 				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
-						provider = { "i", 251961 },	-- Arcane Mote
+						provider = { "i", 251961 },	-- Arcane Mote (QI!)
 						cr = 246020,	-- Shade of the Archmage
 					}),
 					i(279842),	-- Battle Spaulders
@@ -117,7 +117,7 @@ instanceroot(2959, {	-- City of Dalaran
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Grimy Key
-						provider = { "i", 279469 },	-- Grimy Key
+						provider = { "i", 279469 },	-- Grimy Key (QI!)
 					}),
 				},
 			}),
@@ -128,7 +128,7 @@ instanceroot(2959, {	-- City of Dalaran
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The Founding of Dalaran
-						provider = { "i", 275996 },	-- The Founding of Dalaran
+						provider = { "i", 275996 },	-- The Founding of Dalaran (QI!)
 					}),
 					i(279845),	-- Solid Gold Band
 					i(279846),	-- Larcenist's Belt
@@ -154,7 +154,7 @@ instanceroot(2959, {	-- City of Dalaran
 				races = HORDE_ONLY,
 				lvl = 24,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 251961,	-- Arcane Mote
+				qi = 251961,	-- Arcane Mote (QI!)
 			}),
 			q(96988, {	-- Source of Power
 				qg = 11044,	-- Doctor Martin Felben <Journeyman Alchemist Trainer>
@@ -164,7 +164,7 @@ instanceroot(2959, {	-- City of Dalaran
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Cracked Sentry Core
-						provider = { "i", 275997 },	-- Cracked Sentry Core
+						provider = { "i", 275997 },	-- Cracked Sentry Core (QI!)
 						cr = 246664,	-- Fragmented Sentry
 					}),
 					i(279847),	-- Unstable Power Core

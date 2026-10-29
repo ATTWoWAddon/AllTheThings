@@ -186,7 +186,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Verga
 						providers = {
-							{ "i", 6535 },	-- Tablet of Verga
+							{ "i", 6535 },	-- Tablet of Verga (QI!)
 							{ "o", 58595 },	-- Burning Blade Stash
 						},
 						coord = { 51.6, 9.7, MAP.DUROTAR },
@@ -204,7 +204,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning
+						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning (QI!)
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -239,7 +239,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant
+						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant (QI!)
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -256,8 +256,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					objective(1, {	-- 0/1 Tazan's Logbook
 						providers = {
 							{ "i", 7295 },	-- Tazan's Logbook
-							{ "i", 7208 },	-- Tazan's Key
-							{ "i", 7209 },	-- Tazan's Satchel
+							{ "i", 7208 },	-- Tazan's Key (QI!)
+							{ "i", 7209 },	-- Tazan's Satchel (QI!)
 						},
 						coord = { 54.2, 68.2, MAP.ORGRIMMAR },
 						cr = 6466,	-- Gamon
@@ -284,8 +284,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Xavian Water Sample
 						providers = {
-							{ "i", 7268 },	-- Xavian Water Sample
-							{ "i", 7269 },	-- Deino's Flask
+							{ "i", 7268 },	-- Xavian Water Sample (QI!)
+							{ "i", 7269 },	-- Deino's Flask (QI!)
 						},
 						coord = { 76.0, 41.0, MAP.ASHENVALE },
 					}),
@@ -301,7 +301,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/12 Laughing Sister's Hair
-						provider = { "i", 7270 },	-- Laughing Sister's Hair
+						provider = { "i", 7270 },	-- Laughing Sister's Hair (QI!)
 						cr = 4054,	-- Laughing Sister
 					}),
 				},
@@ -316,7 +316,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tazan's Satchel
-						provider = { "i", 7209 },	-- Tazan's Satchel
+						provider = { "i", 7209 },	-- Tazan's Satchel (QI!)
 						coord = { 63.8, 44.6, MAP.THE_BARRENS },
 						cr = 6494,	-- Tazan
 					}),
@@ -380,7 +380,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 				classes = { ROGUE },
 				lvl = 20,
-				qi = 8087,	-- Sample of Zanzil's Altered Mixture
+				qi = 8087,	-- Sample of Zanzil's Altered Mixture (QI!)
 			}),
 			q(2751, {	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
@@ -495,7 +495,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				learnedAt = 210,
 				races = HORDE_ONLY,
 				lvl = 40,
-				qi = 8663,	-- Mithril Insignia
+				qi = 8663,	-- Mithril Insignia (QI!)
 			}),
 			q(4300, {	-- Bone-Bladed Weapons
 				qg = 8659,	-- Jes'rimon
@@ -505,7 +505,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 White Ravasaur Claw
-						provider = { "i", 11477 },	-- White Ravasaur Claw
+						provider = { "i", 11477 },	-- White Ravasaur Claw (QI!)
 						crs = {
 							9683,	-- Lar'korwi Mate
 							6505,	-- Ravasaur
@@ -604,7 +604,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Lieutenant's Insignia
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						provider = { "i", 14544 },	-- Lieutenant's Insignia (QI!)
 						crs = {
 							3198,	-- Burning Blade Apprentice
 							3197,	-- Burning Blade Fanatic
@@ -620,7 +620,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						provider = { "i", 14544 },	-- Lieutenant's Insignia (QI!)
 						coord = { 49.5, 50.6, MAP.ORGRIMMAR },
 						cr = 3216,	-- Neeru Fireblade
 					}),
@@ -772,7 +772,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf
+						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf (QI!)
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -789,7 +789,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Withered Scarf
-						provider = { "i", 190232 },	-- Withered Scarf
+						provider = { "i", 190232 },	-- Withered Scarf (QI!)
 						crs = {
 							3782,	-- Shadethicket Stone Mover
 							3784,	-- Shadethicket Bark Ripper
@@ -808,7 +808,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Rough Lizard Hide
-						provider = { "i", 275720 },	-- Rough Lizard Hide
+						provider = { "i", 275720 },	-- Rough Lizard Hide (QI!)
 						crs = {
 							3131,	-- Lightning Hide
 							3130,	-- Thunder Lizard
@@ -828,13 +828,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/2 Handful of Cattails
 						providers = {
-							{ "i", 277278 },	-- Handful of Cattails
+							{ "i", 277278 },	-- Handful of Cattails (QI!)
 							{ "o", 661093 },	-- Cattail
 						},
 					}),
 					objective(2, {	-- 0/4 Speargrass Cuttings
 						providers = {
-							{ "i", 277279 },	-- Speargrass Cuttings
+							{ "i", 277279 },	-- Speargrass Cuttings (QI!)
 							{ "o", 661092 },	-- Speargrass
 						},
 					}),
@@ -877,7 +877,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/8 Smooth Boulder
 						providers = {
-							{ "i", 277952 },	-- Smooth Boulder
+							{ "i", 277952 },	-- Smooth Boulder (QI!)
 							{ "o", 661446 },	-- Smooth Boulder
 							{ "o", 661448 },	-- Smooth Boulder
 							{ "o", 661449 },	-- Smooth Boulder

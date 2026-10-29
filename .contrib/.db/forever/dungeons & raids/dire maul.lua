@@ -177,7 +177,7 @@ instanceroot(230, {	-- Dire Maul
 				groups = {
 					objective(1, {	-- 0/1 Reliquary of Purity
 						providers = {
-							{ "i", 22201 },	-- Reliquary of Purity
+							{ "i", 22201 },	-- Reliquary of Purity (QI!)
 							{ "o", 179565 },	-- Dusty Reliquary
 						},
 						coord = { 63.2, 55.4, MAP.SILITHUS },
@@ -191,7 +191,7 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Hydrospawn Essence
-						provider = { "i", 18299 },	-- Hydrospawn Essence
+						provider = { "i", 18299 },	-- Hydrospawn Essence (QI!)
 					}),
 					recipe(10140),	-- Conjure Water (Rank 7)
 				},
@@ -408,7 +408,7 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Lethtendris's Web
-						provider = { "i", 18426 },	-- Lethtendris's Web
+						provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 					}),
 					i(18491),	-- Lorespinner
 				},
@@ -422,7 +422,7 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Lethtendris's Web
-						provider = { "i", 18426 },	-- Lethtendris's Web
+						provider = { "i", 18426 },	-- Lethtendris's Web (QI!)
 					}),
 					i(18491),	-- Lorespinner
 				},
@@ -494,7 +494,7 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Book of Incantations
-						provider = { "i", 18261 },	-- Book of Incantations
+						provider = { "i", 18261 },	-- Book of Incantations (QI!)
 					}),
 					i(18410),	-- Sprinter's Sword
 					i(18411),	-- Spry Boots
@@ -507,10 +507,10 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 56,
 				groups = {
 					objective(1, {	-- 0/1 Sealed Reliquary of Purity
-						provider = { "i", 18540 },	-- Sealed Reliquary of Purity
+						provider = { "i", 18540 },	-- Sealed Reliquary of Purity (QI!)
 						cost = {
 							{ "i", 18501, 1 },	-- 1x Felvine Shard
-							{ "i", 18539, 1 },	-- 1x Reliquary of Purity
+							{ "i", 18539, 1 },	-- 1x Reliquary of Purity (QI!)
 						},
 					}),
 					i(18535),	-- Milli's Shield
@@ -650,7 +650,7 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Gauntlet of Gordok Might
-						provider = { "i", 18336 },	-- Gauntlet of Gordok Might
+						provider = { "i", 18336 },	-- Gauntlet of Gordok Might (QI!)
 					}),
 					i(18367),	-- Gordok's Gauntlets
 					i(18368),	-- Gordok's Gloves
@@ -673,7 +673,7 @@ instanceroot(230, {	-- Dire Maul
 				i(18333),	-- Libram of Focus
 				i(18334),	-- Libram of Protection
 				i(18332),	-- Libram of Rapidity
-				i(21982, {	-- Ogre Warbeads
+				i(21982, {	-- Ogre Warbeads (QI!)
 					crs = {
 						11441,	-- Gordok Brute
 						14351,	-- Gordok Bushwacker
@@ -741,7 +741,7 @@ instanceroot(230, {	-- Dire Maul
 					i(18295, {	-- Phasing Boots
 						cr = 13196,	-- Phase Lasher
 					}),
-					i(18603, {	-- Satyr Blood
+					i(18603, {	-- Satyr Blood (QI!)
 						classes = { WARLOCK },
 						crs = {
 							11454,	-- Wildspawn Betrayer
@@ -771,7 +771,7 @@ instanceroot(230, {	-- Dire Maul
 							description = "This key is required to enter the Gordok Commons and Capital Gardens.",
 						}),
 						i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
-						i(18261),	-- Book of Incantations
+						i(18261),	-- Book of Incantations (QI!)
 						i(18255),	-- Runn Tum Tuber
 					},
 				}),
@@ -783,7 +783,7 @@ instanceroot(230, {	-- Dire Maul
 				e(404, {	-- Lethtendris
 					creatureID = 14327,
 					groups = {
-						i(18426),	-- Lethtendris's Web
+						i(18426),	-- Lethtendris's Web (QI!)
 						i(18302),	-- Band of Vigor
 						i(18325),	-- Felhide Cap
 						i(18301),	-- Lethtendris' Wand
@@ -793,7 +793,7 @@ instanceroot(230, {	-- Dire Maul
 				e(403, {	-- Hydrospawn
 					creatureID = 13280,
 					groups = {
-						i(18299),	-- Hydrospawn Essence
+						i(18299),	-- Hydrospawn Essence (QI!)
 						--i(19268),	-- Ace of Elementals //Commented out until confirmed
 						i(18305),	-- Breakwater Legguards
 						i(18307),	-- Riptide Shoes
@@ -822,11 +822,11 @@ instanceroot(230, {	-- Dire Maul
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 						objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
 							questID = 8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
-							provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+							provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet (QI!)
 						}),
 						i(22472),	-- Boots of Ferocity
 						i(22315),	-- Hammer of Revitalization
@@ -1067,7 +1067,7 @@ instanceroot(230, {	-- Dire Maul
 							11472,	-- Eldreth Spirit
 						},
 					}),
-					i(22224, {	-- Jeering Spectre's Essence
+					i(22224, {	-- Jeering Spectre's Essence (QI!)
 						crs = {
 							11471,	-- Eldreth Apparition
 							11475,	-- Eldreth Phantasm
@@ -1191,7 +1191,7 @@ instanceroot(230, {	-- Dire Maul
 				e(410, {	-- Prince Tortheldrin
 					creatureID = 11486,
 					groups = {
-						i(18336, {	-- Gauntlet of Gordok Might
+						i(18336, {	-- Gauntlet of Gordok Might (QI!)
 							description = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
 							provider = { "o", 179545 },	-- The Prince's Chest
 						}),

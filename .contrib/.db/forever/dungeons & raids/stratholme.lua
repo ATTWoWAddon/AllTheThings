@@ -64,7 +64,7 @@ instanceroot(236, {	-- Stratholme
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Head of Baron Rivendare
-						provider = { "i", 13251 },	-- Head of Baron Rivendare
+						provider = { "i", 13251 },	-- Head of Baron Rivendare (QI!)
 					}),
 				},
 			}),
@@ -81,7 +81,7 @@ instanceroot(236, {	-- Stratholme
 				sourceQuest = 5848,	-- Of Love and Family (2/2)
 				providers = {
 					{ "n", 1855 },	-- Tirion Fordring
-					{ "i", 14872 },	-- Tirion's Gift
+					{ "i", 14872 },	-- Tirion's Gift (QI!)
 				},
 				coord = { 7.6, 43.6, MAP.EASTERN_PLAGUELANDS },
 				lvl = 52,
@@ -126,7 +126,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Taelan's Hammer
 						providers = {
-							{ "i", 14613 },	-- Taelan's Hammer
+							{ "i", 14613 },	-- Taelan's Hammer (QI!)
 							{ "o", 177240 },	-- Loose Dirt Mound
 						},
 						coord = { 29.8, 85.6, MAP.EASTERN_PLAGUELANDS },
@@ -142,7 +142,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Symbol of Lost Honor
 						providers = {
-							{ "i", 14625 },	-- Symbol of Lost Honor
+							{ "i", 14625 },	-- Symbol of Lost Honor (QI!)
 							{ "o", 177264 },	-- Symbol of Lost Honor
 						},
 						coord = { 71.3, 33.9, MAP.EASTERN_PLAGUELANDS },
@@ -163,7 +163,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Of Love and Family
 						providers = {
-							{ "i", 14679 },	-- Of Love and Family
+							{ "i", 14679 },	-- Of Love and Family (QI!)
 							{ "o", 177287 },	-- Unfinished Painting
 						},
 					}),
@@ -177,7 +177,7 @@ instanceroot(236, {	-- Stratholme
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Head of Ramstein the Gorger
-						provider = { "i", 15880 },	-- Head of Ramstein the Gorger
+						provider = { "i", 15880 },	-- Head of Ramstein the Gorger (QI!)
 						cr = 10439,	-- Ramstein the Gorger
 					}),
 					i(18022),	-- Royal Seal of Alexis
@@ -198,7 +198,7 @@ instanceroot(236, {	-- Stratholme
 				sourceQuest = 5861,	-- Find Myranda
 				providers = {
 					{ "n", 11872 },	-- Myranda the Hag
-					{ "i", 14872 },	-- Tirion's Gift
+					{ "i", 14872 },	-- Tirion's Gift (QI!)
 				},
 				coord = { 50.8, 77.8, MAP.WESTERN_PLAGUELANDS },
 				lvl = 52,
@@ -211,7 +211,7 @@ instanceroot(236, {	-- Stratholme
 				groups = {
 					objective(1, {	-- 0/1 Scourge Data
 						providers = {
-							{ "i", 13176 },	-- Scourge Data
+							{ "i", 13176 },	-- Scourge Data (QI!)
 							{ "o", 176249 },	-- Scourge Data
 						},
 					}),
@@ -252,7 +252,7 @@ instanceroot(236, {	-- Stratholme
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/10 Plagued Flesh Sample (20 in Classic)
-						provider = { "i", 13174 },	-- Plagued Flesh Sample
+						provider = { "i", 13174 },	-- Plagued Flesh Sample (QI!)
 					}),
 				},
 			}),
@@ -262,7 +262,7 @@ instanceroot(236, {	-- Stratholme
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Grimm's Premium Tobacco
-						provider = { "i", 13172 },	-- Grimm's Premium Tobacco
+						provider = { "i", 13172 },	-- Grimm's Premium Tobacco (QI!)
 						cr = 11058,	-- Ezra Grimm
 					}),
 					i(13171),	-- Smokey's Lighter
@@ -285,7 +285,7 @@ instanceroot(236, {	-- Stratholme
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/15 Souls Freed
-						provider = { "i", 13289 },	-- Egan's Blaster
+						provider = { "i", 13289 },	-- Egan's Blaster (QI!)
 						crs = {
 							10385,	-- Ghostly Citizen
 							10384,	-- Spectral Citizen
@@ -317,7 +317,7 @@ instanceroot(236, {	-- Stratholme
 			i(12840, {	-- Minion's Scourgestone
 				description = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			}),
-			i(13174),	-- Plagued Flesh Sample
+			i(13174),	-- Plagued Flesh Sample (QI!)
 			i(12735, {	-- Frayed Abomination Stitching
 				crs = {
 					10439,	-- Ramstein the Gorger
@@ -434,7 +434,7 @@ instanceroot(236, {	-- Stratholme
 				n(11058, {	-- Fras Siabi / Ezra Grimm
 					description = "In order to summon this boss, one of your party members must be on the quest.",
 					groups = {
-						i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco
+						i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco (QI!)
 					},
 				}),
 				n(11082, {	-- Stratholme Courier
@@ -508,7 +508,7 @@ instanceroot(236, {	-- Stratholme
 					provider = { "o", 176325 },	-- Blacksmithing Plans
 					groups = {
 						i(18781),	-- Bottom Half of Advanced Armorsmithing: Volume II
-						i(13351),	-- Crimson Hammersmith's Apron
+						i(13351),	-- Crimson Hammersmith's Apron (QI!)
 						i(12827, {	-- Plans: Serenity (RECIPE!)
 							description = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 						}),
@@ -534,7 +534,7 @@ instanceroot(236, {	-- Stratholme
 				e(448, {	-- Archivist Galford
 					creatureID = 10811,	-- Archivist Galford
 					groups = {
-						i(14679, {	-- Of Love and Family
+						i(14679, {	-- Of Love and Family (QI!)
 							description = "Found on the wall near Archivist Galford.",
 						}),
 						i(22897, {	-- Tome of Conjure Food VII
@@ -580,11 +580,11 @@ instanceroot(236, {	-- Stratholme
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
-							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+							provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 						}),
 						objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
 							questID = 8991,	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
-							provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+							provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet (QI!)
 						}),
 						i(22329),	-- Scepter of Interminable Focus
 						i(22327),	-- Amulet of the Redeemed
@@ -633,7 +633,7 @@ instanceroot(236, {	-- Stratholme
 				e(452, {	-- Nerub'enkan
 					creatureID = 10437,	-- Nerub'enkan
 					groups = {
-						i(13176, {	-- Scourge Data
+						i(13176, {	-- Scourge Data (QI!)
 							description = "Located in the Ziggurat behind the boss.",
 							provider = { "o", 176249 },	-- Scourge Data
 						}),
@@ -654,7 +654,7 @@ instanceroot(236, {	-- Stratholme
 					provider = { "o", 176325 },	-- Blacksmithing Plans
 					groups = {
 						i(18783),	-- Bottom Half of Advanced Armorsmithing: Volume III
-						i(13350),	-- Insignia of the Black Guard
+						i(13350),	-- Insignia of the Black Guard (QI!)
 						i(12830, {	-- Plans: Corruption (RECIPE!)
 							description = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
 						}),
@@ -709,7 +709,7 @@ instanceroot(236, {	-- Stratholme
 				e(455, {	-- Ramstein the Gorger
 					creatureID = 10439,	-- Ramstein the Gorger
 					groups = {
-						i(15880),	-- Head of Ramstein the Gorger
+						i(15880),	-- Head of Ramstein the Gorger (QI!)
 						i(13372),	-- Slavedriver's Cane
 						i(13375),	-- Crest of Retribution
 						i(18723),	-- Animated Chain Necklace
@@ -722,7 +722,7 @@ instanceroot(236, {	-- Stratholme
 				e(456, {	-- Baron Rivendare
 					creatureID = 10440,	-- Baron Rivendare
 					groups = {
-						i(13251),	-- Head of Baron Rivendare
+						i(13251),	-- Head of Baron Rivendare (QI!)
 						i(13335),	-- Rivendare's Deathcharger (MOUNT!)
 						i(16678),	-- Beaststalker's Pants
 						i(16694),	-- Devout Skirt

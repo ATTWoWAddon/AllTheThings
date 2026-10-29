@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Apprentice Crate
-								provider = { "i", 248765 },	-- Sealed Apprentice Crate (QI!)
+								provider = { "i", 248765 },	-- Sealed Apprentice Crate
 							}),
 							currency(3402),	-- Merchant's Favor x5
 						},
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Journeyman Crate
-								provider = { "i", 248766 },	-- Sealed Journeyman Crate (QI!)
+								provider = { "i", 248766 },	-- Sealed Journeyman Crate
 							}),
 							currency(3402),	-- Merchant's Favor x10
 						},
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Expert Crate
-								provider = { "i", 248767 },	-- Sealed Expert Crate (QI!)
+								provider = { "i", 248767 },	-- Sealed Expert Crate
 							}),
 							currency(3402),	-- Merchant's Favor x15
 						},
@@ -80,7 +80,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Apprentice Crate
-								provider = { "i", 248770 },	-- Sealed Apprentice Crate (QI!)
+								provider = { "i", 248770 },	-- Sealed Apprentice Crate
 							}),
 							currency(3402),	-- Merchant's Favor x10
 						},
@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Journeyman Crate
-								provider = { "i", 248771 },	-- Sealed Journeyman Crate (QI!)
+								provider = { "i", 248771 },	-- Sealed Journeyman Crate
 							}),
 							currency(3402),	-- Merchant's Favor x20
 						},
@@ -114,7 +114,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Expert Crate
-								provider = { "i", 248772 },	-- Sealed Expert Crate (QI!)
+								provider = { "i", 248772 },	-- Sealed Expert Crate
 							}),
 							currency(3402),	-- Merchant's Favor x30
 						},

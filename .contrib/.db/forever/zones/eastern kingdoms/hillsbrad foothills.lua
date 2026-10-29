@@ -73,7 +73,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 29,
 				groups = {
 					objective(4, {	-- 0/10 Yeti Fur
-						provider = { "i", 3720 },	-- Yeti Fur
+						provider = { "i", 3720 },	-- Yeti Fur (QI!)
 						crs = {
 							4504,	-- Frostmaw
 							2251,	-- Giant Yeti
@@ -133,7 +133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(3, {	-- 0/1 Shipment of Iron
 						providers = {
-							{ "i", 3564 },	-- Shipment of Iron
+							{ "i", 3564 },	-- Shipment of Iron (QI!)
 							{ "o", 1736 },	-- Shipment of Iron
 						},
 						coord = { 32.1, 45.4, MAP.HILLSBRAD_FOOTHILLS },
@@ -160,7 +160,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(4, {	-- 0/1 Hillsbrad Town Registry
 						providers = {
-							{ "i", 3657 },	-- Hillsbrad Town Registry
+							{ "i", 3657 },	-- Hillsbrad Town Registry (QI!)
 							{ "o", 1759 },	-- Hillsbrad Town Registry
 						},
 						coord = { 29.6, 41.6, MAP.HILLSBRAD_FOOTHILLS },
@@ -212,7 +212,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 19,
-				qi = 3701,	-- Darthalia's Sealed Commendation
+				qi = 3701,	-- Darthalia's Sealed Commendation (QI!)
 				groups = {
 					i(3761),	-- Deadskull Shield
 					i(3822),	-- Runic Darkblade
@@ -228,7 +228,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/5 Vial of Innocent Blood
-						provider = { "i", 5620 },	-- Vial of Innocent Blood
+						provider = { "i", 5620 },	-- Vial of Innocent Blood (QI!)
 						cr = 2244,	-- Syndicate Shadow Mage
 					}),
 				},
@@ -242,7 +242,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/4 Bracers of Earth Binding
-						provider = { "i", 3715 },	-- Bracers of Earth Binding
+						provider = { "i", 3715 },	-- Bracers of Earth Binding (QI!)
 						coord = { 16.4, 78.8, MAP.ALTERAC_MOUNTAINS },
 						cr = 2359,	-- Elemental Slave
 					}),
@@ -258,7 +258,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(2, {	-- 0/1 Sack of Homebrew Hops
 						providers = {
-							{ "i", 279389 },	-- Sack of Homebrew Hops
+							{ "i", 279389 },	-- Sack of Homebrew Hops (QI!)
 							{ "o", 670348 },	-- Homebrew Hops
 						},
 						coord = { 72.0, 80.4, MAP.HILLSBRAD_FOOTHILLS },
@@ -351,7 +351,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/6 Mudsnout Blossoms
 						providers = {
-							{ "i", 3502 },	-- Mudsnout Blossoms
+							{ "i", 3502 },	-- Mudsnout Blossoms (QI!)
 							{ "o", 1723 },	-- Mudsnout Blossom
 						},
 						coord = { 64.2, 62.5, MAP.HILLSBRAD_FOOTHILLS },
@@ -366,7 +366,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 24,
-				qi = 3506,	-- Mudsnout Composite
+				qi = 3506,	-- Mudsnout Composite (QI!)
 			}),
 			q(515, {	-- Elixir of Agony (3/5)
 				sourceQuest = 513,	-- Elixir of Agony (2/5)
@@ -375,10 +375,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				cost = { { "i", 3388, 1 } },	-- Lesser Troll's Blood Elixir
 				races = HORDE_ONLY,
 				lvl = 24,
-				qi = 3508,	-- Mudsnout Mixture
+				qi = 3508,	-- Mudsnout Mixture (QI!)
 				groups = {
 					objective(2, {	-- 0/5 Daggerspine Scale
-						provider = { "i", 3509 },	-- Daggerspine Scale
+						provider = { "i", 3509 },	-- Daggerspine Scale (QI!)
 						crs = {
 							2370,	-- Daggerspine Screamer
 							2369,	-- Daggerspine Shorehunter
@@ -388,7 +388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						},
 					}),
 					objective(3, {	-- 0/5 Torn Fin Eye
-						provider = { "i", 3510 },	-- Torn Fin Eye
+						provider = { "i", 3510 },	-- Torn Fin Eye (QI!)
 						crs = {
 							14276,	-- Scargil
 							2375,	-- Torn Fin Coastrunner
@@ -413,7 +413,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/1 Keg of Shindigger Stout
 						providers = {
-							{ "i", 3517 },	-- Keg of Shindigger Stout
+							{ "i", 3517 },	-- Keg of Shindigger Stout (QI!)
 							{ "o", 1727 },	-- Keg of Shindigger Stout
 						},
 						coord = { 72.7, 80.0, MAP.HILLSBRAD_FOOTHILLS },
@@ -424,7 +424,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				sourceQuest = 517,	-- Elixir of Agony (4/5)
 				providers = {
 					{ "n", 2216 },	-- Apothecary Lydon
-					{ "i", 3520 },	-- Tainted Keg
+					{ "i", 3520 },	-- Tainted Keg (QI!)
 					{ "o", 1728 },	-- Dusty Rug
 				},
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
@@ -439,7 +439,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 21,
 				groups = {
 					objective(1, {	-- 0/10 Mountain Lion Blood
-						provider = { "i", 3496 },	-- Mountain Lion Blood
+						provider = { "i", 3496 },	-- Mountain Lion Blood (QI!)
 						crs = {
 							2385,	-- Feral Mountain Lion
 							2407,	-- Hulking Mountain Lion
@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 21,
-				qi = 3497,	-- Elixir of Pain
+				qi = 3497,	-- Elixir of Pain (QI!)
 			}),
 			q(496, {	-- Elixir of Suffering (1/2)
 				qg = 2216,	-- Apothecary Lydon
@@ -472,7 +472,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 19,
 				groups = {
 					objective(1, {	-- 0/10 Gray Bear Tongue
-						provider = { "i", 3476 },	-- Gray Bear Tongue
+						provider = { "i", 3476 },	-- Gray Bear Tongue (QI!)
 						crs = {
 							14280,	-- Big Samras
 							2356,	-- Elder Gray Bear
@@ -481,7 +481,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						},
 					}),
 					objective(2, {	-- 0/1 Creeper Ichor
-						provider = { "i", 3477 },	-- Creeper Ichor
+						provider = { "i", 3477 },	-- Creeper Ichor (QI!)
 						crs = {
 							14279,	-- Creepthess
 							2348,	-- Elder Moss Creeper
@@ -497,7 +497,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 19,
-				qi = 3495,	-- Elixir of Suffering
+				qi = 3495,	-- Elixir of Suffering (QI!)
 			}),
 			q(559, {	-- Farren's Proof (1/3)
 				sourceQuest = 536,	-- Down the Coast
@@ -507,7 +507,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/10 Murloc Head
-						provider = { "i", 3716 },	-- Murloc Head
+						provider = { "i", 3716 },	-- Murloc Head (QI!)
 						description = "Running joke is that since all adventurers take from the Murlocs is their heads, that's why the drop rate is so low - there's a bunch of headless murlocs running around!",
 						crs = {
 							14276,	-- Scargil
@@ -525,7 +525,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
-				qi = 3717,	-- Sack of Murloc Heads
+				qi = 3717,	-- Sack of Murloc Heads (QI!)
 			}),
 			q(561, {	-- Farren's Proof (3/3)
 				sourceQuest = 560,	-- Farren's Proof (2/3)
@@ -541,7 +541,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 29,
 				groups = {
 					objective(1, {	-- 0/1 Helcular's Rod
-						provider = { "i", 3708 },	-- Helcular's Rod
+						provider = { "i", 3708 },	-- Helcular's Rod (QI!)
 						crs = {
 							2248,	-- Cave Yeti
 							2249,	-- Ferocious Yeti
@@ -560,21 +560,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- Flame of Azel charged
 						providers = {
-							{ "i", 3710 },	-- Rod of Helcular
+							{ "i", 3710 },	-- Rod of Helcular (QI!)
 							{ "o", 1768 },	-- Flame of Azel
 						},
 						coord = { 46.0, 32.0, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(2, {	-- Flame of Veraz charged
 						providers = {
-							{ "i", 3710 },	-- Rod of Helcular
+							{ "i", 3710 },	-- Rod of Helcular (QI!)
 							{ "o", 1769 },	-- Flame of Veraz
 						},
 						coord = { 46.0, 32.0, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(3, {	-- Flame of Uzel charged
 						providers = {
-							{ "i", 3710 },	-- Rod of Helcular
+							{ "i", 3710 },	-- Rod of Helcular (QI!)
 							{ "o", 1770 },	-- Flame of Uzel
 						},
 						coord = { 37.0, 68.0, MAP.ALTERAC_MOUNTAINS },
@@ -609,7 +609,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/1 Humbert's Sword
-						provider = { "i", 3693 },	-- Humbert's Sword
+						provider = { "i", 3693 },	-- Humbert's Sword (QI!)
 						crs = {
 							2344,	-- Dun Garok Mountaineer
 							2346,	-- Dun Garok Priest
@@ -630,7 +630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 13,
-				qi = 5628,	-- Zamah's Note
+				qi = 5628,	-- Zamah's Note (QI!)
 			}),
 			q(95125, {	-- Ott's Masterwork
 				sourceQuest = 95111,	-- An Underrated Talent
@@ -650,7 +650,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Recovered Tome
-						provider = { "i", 3658 },	-- Recovered Tome
+						provider = { "i", 3658 },	-- Recovered Tome (QI!)
 						crs = {
 							2253,	-- Crushridge Brute
 							2256,	-- Crushridge Enforcer
@@ -663,7 +663,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(2, {	-- Worn Leather Book
 						providers = {
-							{ "i", 3659 },	-- Worn Leather Book
+							{ "i", 3659 },	-- Worn Leather Book (QI!)
 							{ "o", 1760 },	-- Weathered Bookcase
 						},
 						coord = { 38.5, 46.5, MAP.ALTERAC_MOUNTAINS },
@@ -678,22 +678,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Bloodstone Wedge
-						provider = { "i", 3691 },	-- Bloodstone Wedge
+						provider = { "i", 3691 },	-- Bloodstone Wedge (QI!)
 						coord = { 19.4, 86.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2413,	-- Dermot
 					}),
 					objective(2, {	-- 0/1 Bloodstone Marble
-						provider = { "i", 3689 },	-- Bloodstone Marble
+						provider = { "i", 3689 },	-- Bloodstone Marble (QI!)
 						coord = { 20.8, 84.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 2411,	-- Ricter
 					}),
 					objective(3, {	-- 0/1 Bloodstone Shard
-						provider = { "i", 3690 },	-- Bloodstone Shard
+						provider = { "i", 3690 },	-- Bloodstone Shard (QI!)
 						coord = { 20.4, 86.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 2412,	-- Alina
 					}),
 					objective(4, {	-- 0/1 Bloodstone Oval
-						provider = { "i", 3688 },	-- Bloodstone Oval
+						provider = { "i", 3688 },	-- Bloodstone Oval (QI!)
 						coord = { 18.0, 83.6, MAP.ALTERAC_MOUNTAINS },
 						cr = 2414,	-- Kegan Darkmar
 					}),
@@ -705,7 +705,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				coord = { 51.4, 58.4, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 25,
-				qi = 3721,	-- Farren's Report
+				qi = 3721,	-- Farren's Report (QI!)
 			}),
 			q(542, {	-- Return to Milton
 				sourceQuest = 540,	-- Preserving Knowledge
@@ -714,7 +714,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-				qi = 3660,	-- Tomes of Alterac
+				qi = 3660,	-- Tomes of Alterac (QI!)
 			}),
 			q(1067, {	-- Return to Thunder Bluff
 				sourceQuest = 1066,	-- Blood of Innocents
@@ -761,7 +761,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/30 Hillsbrad Human Skull
-						provider = { "i", 3692 },	-- Hillsbrad Human Skull
+						provider = { "i", 3692 },	-- Hillsbrad Human Skull (QI!)
 						crs = {
 							2404,	-- Blacksmith Verringtan
 							2449,	-- Citizen Wilkes
@@ -800,7 +800,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/10 Worn Stone Token
-						provider = { "i", 3714 },	-- Worn Stone Token
+						provider = { "i", 3714 },	-- Worn Stone Token (QI!)
 						crs = {
 							2271,	-- Dalaran Shield Guard
 							2358,	-- Dalaran Summoner
@@ -852,7 +852,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						providers = {
 							{ "n", 2239 },	-- Drull
 							{ "o", 1721 },	-- Locked ball and chain
-							{ "i", 3467 },	-- Dull Iron Key
+							{ "i", 3467 },	-- Dull Iron Key (QI!)
 						},
 						coords = {
 							{ 75.2, 41.6, MAP.HILLSBRAD_FOOTHILLS },
@@ -865,7 +865,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						providers = {
 							{ "n", 2238 },	-- Tog'thar
 							{ "o", 1722 },	-- Locked ball and chain
-							{ "i", 3499 },	-- Burnished Gold Key
+							{ "i", 3499 },	-- Burnished Gold Key (QI!)
 						},
 						coords = {
 							{ 79.6, 39.6, MAP.HILLSBRAD_FOOTHILLS },

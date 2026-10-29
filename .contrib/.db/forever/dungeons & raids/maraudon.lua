@@ -57,10 +57,10 @@ instanceroot(232, {	-- Maraudon
 				lvl = 41,
 				groups = {
 					objective(1, {	-- 0/1 Celebrian Diamond
-						provider = { "i", 17703 },	-- Celebrian Diamond
+						provider = { "i", 17703 },	-- Celebrian Diamond (QI!)
 					}),
 					objective(2, {	-- 0/1 Celebrian Rod
-						provider = { "i", 17702 },	-- Celebrian Rod
+						provider = { "i", 17702 },	-- Celebrian Rod (QI!)
 					}),
 				},
 			}),
@@ -68,7 +68,7 @@ instanceroot(232, {	-- Maraudon
 				description = "This quest becomes available after you defeat Princess Theradras.",
 				providers = {
 					{ "n", 12238 },	-- Zaetar's Spirit
-					{ "i", 17760 },	-- Seed of Life
+					{ "i", 17760 },	-- Seed of Life (QI!)
 				},
 				maps = { MAP.MOONGLADE },
 				lvl = 39,
@@ -85,7 +85,7 @@ instanceroot(232, {	-- Maraudon
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/10 Shadowshard Fragment
-						provider = { "i", 17756 },	-- Shadowshard Fragment
+						provider = { "i", 17756 },	-- Shadowshard Fragment (QI!)
 						crs = {
 							11777,	-- Shadowshard Rumbler
 							11778,	-- Shadowshard Smasher
@@ -104,9 +104,9 @@ instanceroot(232, {	-- Maraudon
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/1 Amulet of Union
-						provider = { "i", 17758 },	-- Amulet of Union
+						provider = { "i", 17758 },	-- Amulet of Union (QI!)
 						cost = {
-							{ "i", 17757, 1 },	-- Amulet of Spirits
+							{ "i", 17757, 1 },	-- Amulet of Spirits (QI!)
 							{ "i", 17761, 1 },	-- Gem of the First Khan
 							{ "i", 17762, 1 },	-- Gem of the Second Kahn
 							{ "i", 17763, 1 },	-- Gem of the Third Kahn
@@ -114,7 +114,7 @@ instanceroot(232, {	-- Maraudon
 							{ "i", 17765, 1 },	-- Gem of the Fifth Kahn
 						},
 					}),
-					i(17757, {	-- Amulet of Spirits
+					i(17757, {	-- Amulet of Spirits (QI!)
 						coord = { 28.1, 62.4, MAP.DESOLACE },
 						cr = 13718,	-- The Nameless Prophet
 					}),
@@ -175,7 +175,7 @@ instanceroot(232, {	-- Maraudon
 				lvl = 41,
 				groups = {
 					objective(1, {	-- 0/15 Theradric Crystal Carving
-						provider = { "i", 17684 },	-- Theradric Crystal Carving
+						provider = { "i", 17684 },	-- Theradric Crystal Carving (QI!)
 					}),
 					i(17776),	-- Sprightring Helm
 					i(17779),	-- Hulkstone Pauldrons
@@ -196,13 +196,13 @@ instanceroot(232, {	-- Maraudon
 				groups = {
 					objective(1, {	-- 0/8 Vylestem Vines healed
 						provider = { "n", 13696 },	-- Noxxious Scion
-						cost = { { "i", 17696, 1 } },	-- Filled Cerulean Vial
+						cost = { { "i", 17696, 1 } },	-- Filled Cerulean Vial (QI!)
 						description = "Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",
 					}),
-					i(17696, {	-- Filled Cerulean Vial
+					i(17696, {	-- Filled Cerulean Vial (QI!)
 						description = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
 						coord = { 38.0, 58.0, MAP.DESOLACE },
-						cost = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
+						cost = { { "i", 17693, 1 } },	-- Coated Cerulean Vial (QI!)
 					}),
 					i(17770),	-- Branchclaw Gauntlets
 					i(17778),	-- Sagebrush Girdle
@@ -211,13 +211,13 @@ instanceroot(232, {	-- Maraudon
 			},
 		}),
 		n(ZONE_DROPS, {
-			i(17684),	-- Theradric Crystal Carving
+			i(17684),	-- Theradric Crystal Carving (QI!)
 		}),
 		n(FOULSPORE_CAVERN, {
 			e(423, {	-- Noxxion
 				creatureID = 13282,
 				groups = {
-					i(17702),	-- Celebrian Rod
+					i(17702),	-- Celebrian Rod (QI!)
 					i(17745),	-- Noxious Shooter
 					i(17746),	-- Noxxion's Shackles
 					i(17744),	-- Heart of Noxxion
@@ -237,7 +237,7 @@ instanceroot(232, {	-- Maraudon
 			e(427, {	-- Lord Vyletongue
 				creatureID = 12236,
 				groups = {
-					i(17703),	-- Celebrian Diamond
+					i(17703),	-- Celebrian Diamond (QI!)
 					i(17752),	-- Satyr's Lash
 					i(17755),	-- Satyrmane Sash
 					i(17754),	-- Infernal Trickster Leggings
