@@ -6,8 +6,6 @@
     <RootNamespace>ATT</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
-    <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <PlatformTarget>AnyCPU</PlatformTarget>

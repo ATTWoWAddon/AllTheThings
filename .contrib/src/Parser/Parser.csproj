@@ -7,8 +7,6 @@
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
-    <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <StartupObject>ATT.Program</StartupObject>

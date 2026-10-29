@@ -93,6 +93,17 @@ function Get-TextSha256([string]$value) {
     [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData([Text.Encoding]::UTF8.GetBytes($value))).ToLowerInvariant()
 }
 
+function Get-DefineSet([string]$value) {
+    $set = [Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+    foreach ($part in ($value -split '[;,]')) {
+        $symbol = $part.Trim()
+        if ($symbol) {
+            if ($symbol -cnotmatch '^[A-Za-z_][A-Za-z0-9_]*$') { throw "Invalid compilation symbol: $symbol" }
+            $null = $set.Add($symbol)
+        }
+    }
+    return ,$set
+}
 function Run-Process([string]$exe, [string]$arguments, [string]$directory, [string]$label) {
     $out = Join-Path $evidence "$label.stdout.log"; $err = Join-Path $evidence "$label.stderr.log"
     $proc = Start-Process -FilePath $exe -ArgumentList $arguments -WorkingDirectory $directory -RedirectStandardOutput $out -RedirectStandardError $err -PassThru -WindowStyle Hidden
@@ -170,6 +181,11 @@ foreach ($project in $projects) {
             $evaluation = & msbuild $path -nologo "-getProperty:$propertyNames" "-p:Configuration=$config" "-p:Platform=$($project.Platform)"
             if ($LASTEXITCODE -ne 0) { throw "$side $($project.Name) $config property evaluation failed" }
             [IO.File]::WriteAllText((Join-Path $evidence "$side-$($project.Name)-$config.properties.json"), ($evaluation -join "`n"), [Text.UTF8Encoding]::new($false))
+            if ($side -eq 'candidate') {
+                $effective = & msbuild $path -nologo '-t:AddImplicitDefineConstants' '-getProperty:DefineConstants,TargetFrameworkVersion' "-p:Configuration=$config" "-p:Platform=$($project.Platform)"
+                if ($LASTEXITCODE -ne 0) { throw "candidate $($project.Name) $config implicit defines evaluation failed" }
+                [IO.File]::WriteAllText((Join-Path $evidence "candidate-$($project.Name)-$config.effective-defines.json"), ($effective -join "`n"), [Text.UTF8Encoding]::new($false))
+            }
             $itemEvaluation = & msbuild $path -nologo '-getItem:Compile' "-p:Configuration=$config" "-p:Platform=$($project.Platform)"
             if ($LASTEXITCODE -ne 0) { throw "$side $($project.Name) $config compile item evaluation failed" }
             $items = ($itemEvaluation -join "`n" | ConvertFrom-Json).Items.Compile
@@ -218,9 +234,29 @@ foreach ($project in $projects) {
         }
         $leftProps = (Get-Content -Raw (Join-Path $evidence "baseline-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
         $rightProps = (Get-Content -Raw (Join-Path $evidence "candidate-$($project.Name)-$config.properties.json") | ConvertFrom-Json).Properties
-        foreach ($key in 'OutputType','Platform','PlatformTarget','DefineConstants','LangVersion','DebugType','OutputPath','TargetFrameworkVersion') {
+        foreach ($key in 'OutputType','Platform','PlatformTarget','LangVersion','DebugType','OutputPath','TargetFrameworkVersion') {
             if ($leftProps.$key -ne $rightProps.$key) { throw "$($project.Name) $config property $key differs: $($leftProps.$key) vs $($rightProps.$key)" }
         }
+        $effectiveProps = (Get-Content -Raw (Join-Path $evidence "candidate-$($project.Name)-$config.effective-defines.json") | ConvertFrom-Json).Properties
+        if ($effectiveProps.TargetFrameworkVersion -ne 'v4.8') { throw "Unexpected candidate target framework for $($project.Name) $config" }
+        $baselineDefines = Get-DefineSet $leftProps.DefineConstants
+        $candidateDefines = Get-DefineSet $effectiveProps.DefineConstants
+        $expectedDefines = [Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
+        foreach ($symbol in $baselineDefines) { $null = $expectedDefines.Add($symbol) }
+        foreach ($symbol in @($config.ToUpperInvariant(), 'NETFRAMEWORK', 'NET48',
+            'NET20_OR_GREATER', 'NET30_OR_GREATER', 'NET35_OR_GREATER', 'NET40_OR_GREATER', 'NET45_OR_GREATER',
+            'NET451_OR_GREATER', 'NET452_OR_GREATER', 'NET46_OR_GREATER', 'NET461_OR_GREATER', 'NET462_OR_GREATER',
+            'NET47_OR_GREATER', 'NET471_OR_GREATER', 'NET472_OR_GREATER', 'NET48_OR_GREATER')) { $null = $expectedDefines.Add($symbol) }
+        $added = @($candidateDefines | Where-Object { -not $baselineDefines.Contains($_) } | Sort-Object -CaseSensitive)
+        $removed = @($baselineDefines | Where-Object { -not $candidateDefines.Contains($_) } | Sort-Object -CaseSensitive)
+        $defineReport = [ordered]@{
+            baselineRaw = $leftProps.DefineConstants; candidateRaw = $effectiveProps.DefineConstants
+            baseline = @($baselineDefines | Sort-Object -CaseSensitive); candidate = @($candidateDefines | Sort-Object -CaseSensitive)
+            expected = @($expectedDefines | Sort-Object -CaseSensitive); added = $added; removed = $removed
+            matchesExpected = $expectedDefines.SetEquals($candidateDefines)
+        }
+        [IO.File]::WriteAllText((Join-Path $evidence "$($project.Name)-$config.defines-report.json"), ($defineReport | ConvertTo-Json -Depth 5), [Text.UTF8Encoding]::new($false))
+        if (-not $defineReport.matchesExpected) { throw "$($project.Name) $config unexpected compilation symbols" }
         $expectedPlatformDifference = $project.Name -eq 'Classic' -or ($project.Name -eq 'Harvester' -and $config -eq 'Test')
         $expectedBaselinePreference = if ($project.Name -eq 'Parser' -or $expectedPlatformDifference) { 'true' } else { 'false' }
         if ($leftProps.Prefer32Bit -ne $expectedBaselinePreference -or $rightProps.Prefer32Bit -ne 'false') {
