@@ -176,8 +176,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 						providers = {
 							{ "i", 280839 },	-- Blackrock Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
-							{ "o", 673385 },	-- Grain Sack
-							{ "o", 673399 },	-- Meat Haunch
+							{ "o", 673385 },	-- Blackrock Supplies
+							{ "o", 673399 },	-- Stolen Weapon
 						},
 						coords = {
 							{ 66.1, 73.6, MAP.REDRIDGE_MOUNTAINS },
