@@ -2698,11 +2698,11 @@ root(ROOTS.WorldDrops, {
 			i(15210),	-- Raider Shortsword
 			i(9718, {	-- Reforged Blade of Heroes
 				cost = {
-					{ "i", 9719, 1 },	-- Broken Blade of Heroes
-					{ "i", 7068, 2 },	-- Elemental Fire
-					{ "i", 3486, 2 },	-- Heavy Grinding Stone
-					{ "i", 3859, 4 },	-- Steel Bar
-					{ "i", 3466, 4 },	-- Strong Flux
+					{ "i", 9719, 1 },	-- 1x Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- 2x Elemental Fire
+					{ "i", 3486, 2 },	-- 2x Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- 4x Steel Bar
+					{ "i", 3466, 4 },	-- 4x Strong Flux
 				},
 			}),
 			i(15216),	-- Rune Sword

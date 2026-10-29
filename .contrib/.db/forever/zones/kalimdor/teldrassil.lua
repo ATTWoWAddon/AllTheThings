@@ -881,8 +881,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				qg = 2083,	-- Syral Bladeleaf
 				coord = { 56.0, 57.8, MAP.TELDRASSIL },
 				cost = {
-					{ "i", 2454, 6 },	-- Elixir of Minor Strength
-					{ "i", 5997, 2 },	-- Elixir of Minor Defense
+					{ "i", 2454, 6 },	-- 6x Elixir of Minor Strength
+					{ "i", 5997, 2 },	-- 2x Elixir of Minor Defense
 				},
 				learnedAt = 20,	-- TODO: Check that this is true in Forever.
 				requireSkill = ALCHEMY,
@@ -1034,7 +1034,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(4161, {	-- Recipe of the Kaldorei
 				qg = 6286,	-- Zarrin
 				coord = { 57.0, 61.2, MAP.TELDRASSIL },
-				cost = { { "i", 5465, 7 } },	-- Small Spider Leg
+				cost = { { "i", 5465, 7 } },	-- 7x Small Spider Leg
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
 				groups = {

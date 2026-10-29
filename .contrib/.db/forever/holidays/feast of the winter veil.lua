@@ -380,7 +380,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				coord = { 33.4, 67.0, MAP.IRONFORGE },
 				cost = {
-					{ "i", 8150, 1 },	-- Deeprock Salt
+					{ "i", 8150, 1 },	-- 1x Deeprock Salt
 					{ "g", 50000 },	-- 5g
 				},
 				requireSkill = COOKING,
@@ -395,7 +395,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				coord = { 53.2, 66.6, MAP.ORGRIMMAR },
 				cost = {
-					{ "i", 8150, 1 },	-- Deeprock Salt
+					{ "i", 8150, 1 },	-- 1x Deeprock Salt
 					{ "g", 50000 },	-- 5g
 				},
 				requireSkill = COOKING,
@@ -441,8 +441,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					races = HORDE_ONLY,
 				}),
 				cost = {
-					{ "i", 17197, 5 },	-- Gingerbread Cookie
-					{ "i", 1179, 1 },	-- Ice Cold Milk
+					{ "i", 17197, 5 },	-- 5x Gingerbread Cookie
+					{ "i", 1179, 1 },	-- 1x Ice Cold Milk
 				},
 				isYearly = true,
 				lvl = 10,

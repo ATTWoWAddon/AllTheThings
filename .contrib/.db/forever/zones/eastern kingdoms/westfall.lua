@@ -179,7 +179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					MAP.TIRISFAL_GLADES,
 					MAP.WESTFALL,
 				},
-				cost = { { "i", 11109, 1 } },	-- Special Chicken Feed
+				cost = { { "i", 11109, 1 } },	-- 1x Special Chicken Feed
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -247,7 +247,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(22, {	-- Goretusk Liver Pie
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
-				cost = { { "i", 723, 8 } },	-- Goretusk Liver
+				cost = { { "i", 723, 8 } },	-- 8x Goretusk Liver
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 				groups = {
@@ -285,9 +285,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				requireSkill = ENGINEERING,
 				cost = {
-					{ "i", 255007, 8 },	-- Golem Isospring
-					{ "i", 4363, 4 },	-- Copper Modulator
-					{ "i", 4405, 1 },	-- Crude Scope
+					{ "i", 255007, 8 },	-- 8x Golem Isospring
+					{ "i", 4363, 4 },	-- 4x Copper Modulator
+					{ "i", 4405, 1 },	-- 1x Crude Scope
 				},
 				lvl = 8,
 				groups = {
@@ -301,7 +301,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Flask of Oil
-						cost = { { "i", 814, 5 } },	-- Flask of Oil
+						cost = { { "i", 814, 5 } },	-- 5x Flask of Oil
 					}),
 				},
 			}),
@@ -519,7 +519,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuest = 49,	-- Sweet Amber (2/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
-				cost = { { "i", 6037, 1 } },	-- Truesilver Bar
+				cost = { { "i", 6037, 1 } },	-- 1x Truesilver Bar
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
@@ -767,7 +767,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(117, {	-- Thunderbrew
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
-				cost = { { "i", 1274, 5 } },	-- Hops
+				cost = { { "i", 1274, 5 } },	-- 5x Hops
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -786,10 +786,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
 				cost = {
-					{ "i", 729, 3 },	-- Stringy Vulture Meat
-					{ "i", 730, 3 },	-- Murloc Eye
-					{ "i", 731, 3 },	-- Goretusk Snout
-					{ "i", 732, 3 },	-- Okra
+					{ "i", 729, 3 },	-- 3x Stringy Vulture Meat
+					{ "i", 730, 3 },	-- 3x Murloc Eye
+					{ "i", 731, 3 },	-- 3x Goretusk Snout
+					{ "i", 732, 3 },	-- 3x Okra
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 9,

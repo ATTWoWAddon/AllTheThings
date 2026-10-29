@@ -89,7 +89,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			o(129127, {	-- Gallywix's Lockbox
 				coord = { 54.7, 5.6, MAP.THE_BARRENS },
-				cost = { { "i", 8072, 1 } },	-- Silixiz's Tower Key
+				cost = { { "i", 8072, 1 } },	-- 1x Silixiz's Tower Key
 				requireSkill = LOCKPICKING,
 				learnedAt = 70,
 				groups = {
@@ -103,7 +103,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(7968, {	-- Southsea Treasure
 						description = "When you open the chest, Polly will spawn and attack you. Use the E.C.A.C. to kill him and loot the treasure.",
-						cost = {{ "i", 7970, 1 }},	-- E.C.A.C.
+						cost = {{ "i", 7970, 1 }},	-- 1x E.C.A.C.
 						cr = 7168,	-- Polly
 					}),
 				},
@@ -155,7 +155,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 4 } },	-- Blood Shard
+				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -164,7 +164,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 4 } },	-- Blood Shard
+				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -238,7 +238,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 878,	-- Tribes at War
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 1 } },	-- Blood Shard
+				cost = { { "i", 5075, 1 } },	-- 1x Blood Shard
 				races = HORDE_ONLY,
 				lvl = 14,
 			}),
@@ -248,7 +248,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qi = 7587,	-- Thun'grim's Instructions
 				coord = { 57.23, 30.34, MAP.THE_BARRENS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS, MAP.RAZORFEN_KRAUL, MAP.STONETALON_MOUNTAINS },
-				cost = { { "i", 3575, 10 } },	-- Iron Bar
+				cost = { { "i", 3575, 10 } },	-- 10x Iron Bar
 				classes = { WARRIOR },
 				races = HORDE_ONLY,
 				lvl = 20,
@@ -726,7 +726,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				},
 				qg = 6266,	-- Menara Voidrender
 				coord = { 62.4, 35.4, MAP.THE_BARRENS },
-				cost = { { "i", 5770, 1 } },	-- Robes of Arcana
+				cost = { { "i", 5770, 1 } },	-- 1x Robes of Arcana
 				classes = { WARLOCK },
 				lvl = 31,
 			}),
@@ -734,7 +734,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 1796,	-- Components for the Enchanted Gold Bloodrobe (1/5)
 				qg = 6266,	-- Menara Voidrender
 				coord = { 62.4, 35.4, MAP.THE_BARRENS },
-				cost = { { "i", 3577, 1 } },	-- Gold Bar
+				cost = { { "i", 3577, 1 } },	-- 1x Gold Bar
 				classes = { WARLOCK },
 				lvl = 31,
 			}),
@@ -776,7 +776,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				qg = 6266,	-- Menara Voidrender
 				coord = { 62.4, 35.4, MAP.THE_BARRENS },
 				maps = { MAP.ARATHI_HIGHLANDS },
-				cost = { { "i", 6265, 1 } },	-- Soul Shard
+				cost = { { "i", 6265, 1 } },	-- 1x Soul Shard
 				classes = { WARLOCK },
 				lvl = 31,
 				groups = {
@@ -882,7 +882,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			q(862, {	-- Dig Rat Stew
 				qg = 3443,	-- Grub
 				coord = { 55.31, 31.79, MAP.THE_BARRENS },
-				cost = { { "i", 5051, 8 } },	-- Dig Rat
+				cost = { { "i", 5051, 8 } },	-- 8x Dig Rat
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
 				lvl = 15,
@@ -1087,7 +1087,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 6127,	-- The Principal Source [H]
 				qg = 3448,	-- Tonga Runetotem
 				coord = { 52.2, 31.8, MAP.THE_BARRENS },
-				cost = { { "i", 2449, 5 } },	-- Earthroot
+				cost = { { "i", 2449, 5 } },	-- 5x Earthroot
 				races = HORDE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
@@ -1323,7 +1323,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- 0/1 Ishamuhale's Fang
 						provider = { "i", 5101 },	-- Ishamuhale's Fang
 						coord = { 59.8, 30.6, MAP.THE_BARRENS },
-						cost = { { "i", 10338, 1 } },	-- Fresh Zhevra Carcass
+						cost = { { "i", 10338, 1 } },	-- 1x Fresh Zhevra Carcass
 						cr = 3257,	-- Ishamuhale
 					}),
 					i(10338, {	-- Fresh Zhevra Carcass
@@ -1502,8 +1502,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 61.22, 37.86, MAP.THE_BARRENS },
 				lockCriteria = { 1, "factionID", 470.4 },	-- Ratchet, Neutral
 				cost = {
-					{ "i", 2589, 40 },	-- Linen Cloth
-					{ "i", 3371, 4 },	-- Empty Vial
+					{ "i", 2589, 40 },	-- 40x Linen Cloth
+					{ "i", 3371, 4 },	-- 4x Empty Vial
 				},
 				repeatable = true,
 				lvl = 10,
@@ -1746,7 +1746,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 4 } },	-- Blood Shard
+				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -1851,7 +1851,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 4 } },	-- Blood Shard
+				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -1931,8 +1931,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- 0/1 Samophlange Manual
 						provider = { "i", 11149 },	-- Samophlange Manual
 						cost = {
-							{ "i", 11147, 1 },	-- Samophlange Manual Cover
-							{ "i", 11148, 5 },	-- Samophlange Manual Page
+							{ "i", 11147, 1 },	-- 1x Samophlange Manual Cover
+							{ "i", 11148, 5 },	-- 5x Samophlange Manual Page
 						},
 					}),
 					i(11854),	-- Samophlange Screwdriver
@@ -2091,7 +2091,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 10 } },	-- Blood Shard
+				cost = { { "i", 5075, 10 } },	-- 10x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -2250,17 +2250,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- Visit Blue Raptor Nest
 						provider = { "o", 6907 },	-- Blue Raptor Nest
 						coord = { 52.59, 46.10, MAP.THE_BARRENS },
-						cost = { { "i", 5165, 1 } },	-- Sunscale Feather
+						cost = { { "i", 5165, 1 } },	-- 1x Sunscale Feather
 					}),
 					objective(2, {	-- Visit Yellow Raptor Nest
 						provider = { "o", 6908 },	-- Yellow Raptor Nest
 						coord = { 52.46, 46.57, MAP.THE_BARRENS },
-						cost = { { "i", 5165, 1 } },	-- Sunscale Feather
+						cost = { { "i", 5165, 1 } },	-- 1x Sunscale Feather
 					}),
 					objective(3, {	-- Visit Red Raptor Nest
 						provider = { "o", 6906 },	-- Red Raptor Nest
 						coord = { 52.03, 46.48, MAP.THE_BARRENS },
-						cost = { { "i", 5165, 1 } },	-- Sunscale Feather
+						cost = { { "i", 5165, 1 } },	-- 1x Sunscale Feather
 					}),
 				},
 			}),
@@ -2285,7 +2285,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					objective(1, {	-- Summoned Felhunter slain
 						provider = { "n", 6268 },	-- Summoned Felhunter
-						cost = { { "i", 6999, 1 } },	-- Tome of the Cabal
+						cost = { { "i", 6999, 1 } },	-- 1x Tome of the Cabal
 					}),
 					recipe(691),	-- Summon Felhunter
 					i(22244),	-- Box of Souls
@@ -2864,7 +2864,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sourceQuest = 5052,	-- Blood Shards of Agamaggan
 				qg = 3430,	-- Mangletooth
 				coord = { 44.55, 59.26, MAP.THE_BARRENS },
-				cost = { { "i", 5075, 4 } },	-- Blood Shard
+				cost = { { "i", 5075, 4 } },	-- 4x Blood Shard
 				races = HORDE_ONLY,
 				repeatable = true,
 				lvl = 14,
@@ -3240,7 +3240,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 52.8, 41.8, MAP.THE_BARRENS },
 					{ 44.3, 37.7, MAP.THE_BARRENS },
 				},
-				cost = { { "i", 5020, 1 } },	-- Kolkar Booty Key
+				cost = { { "i", 5020, 1 } },	-- 1x Kolkar Booty Key
 			}),
 			o(407566, {	-- Goblin Tome
 				coord = { 62.7, 36.3, MAP.THE_BARRENS },
@@ -3291,15 +3291,15 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				groups = {
 					i(270887, {	-- Advertising License Application (QS!)
 						minReputation = { 2587, HONORED },	-- Durotar Supply and Logistics, Honored.
-						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
+						cost = { { "c", 3402, 1200 } },	-- 1200x Merchant's Favor
 					}),
 					i(262764, {	-- Durotar Supply and Logistics Tabard
 						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
-						cost = { { "c", 3402, 200 } },	-- x200 Merchant's Favor
+						cost = { { "c", 3402, 200 } },	-- 200x Merchant's Favor
 					}),
 					i(284664, {	-- Packmule Treat
 						minReputation = { 2587, REVERED },	-- Durotar Supply and Logistics, Revered.
-						cost = { { "c", 3402, 1500 } },	-- x1500 Merchant's Favor
+						cost = { { "c", 3402, 1500 } },	-- 1500x Merchant's Favor
 					}),
 				},
 			}),

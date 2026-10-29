@@ -85,7 +85,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -104,7 +104,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -123,7 +123,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -142,7 +142,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -161,7 +161,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -180,7 +180,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -199,7 +199,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -218,7 +218,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -237,7 +237,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -256,7 +256,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -275,7 +275,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -294,7 +294,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 20, 29 },
 			}),
@@ -313,7 +313,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -332,7 +332,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -351,7 +351,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -370,7 +370,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
 			}),
@@ -389,7 +389,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -408,7 +408,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 50, 59 },
 			}),
@@ -427,7 +427,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
@@ -446,7 +446,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
+				cost = { { "i", 20559, 3 } },	-- 3x Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
