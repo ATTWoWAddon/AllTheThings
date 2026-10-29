@@ -1077,7 +1077,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 7,
 			}),
-			q(92597, {	-- Reading the Ley Lines
+			q(92597, {	-- Reading the Leylines
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251371,	-- Falorne Fallwind <High Order>
 				coord = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },

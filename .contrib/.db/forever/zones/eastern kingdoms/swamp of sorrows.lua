@@ -140,7 +140,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 				},
 			}),
-			q(1425, {	-- Deliver the Shipment
+			q(1425, {	-- Deliver the First Shipment
 				sourceQuest = 1398,	-- Driftwood
 				qg = 5476,	-- Watcher Biggs
 				qi = 6178,	-- Shipment to Nethergarde

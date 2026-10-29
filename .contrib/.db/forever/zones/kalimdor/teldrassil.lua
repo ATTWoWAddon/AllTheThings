@@ -155,7 +155,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					q(5629, {	-- Returning Home [Teldrassil]
 						altQuests = {
-							5627,	-- Returning Home [Darnassus]
+							5627,	-- Stars of Elune [Darnassus]
 							5628,	-- Returning Home [Elwynn Forest]
 							5630,	-- Returning Home [Dun Morogh]
 							5631,	-- Returning Home [Stormwind City]

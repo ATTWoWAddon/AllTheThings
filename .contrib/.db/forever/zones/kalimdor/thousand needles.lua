@@ -417,7 +417,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				lvl = 29,
 			}),
 			q(1190, {	-- Keeping Pace
-				sourceQuest = 1137,	-- News for Frizzle
+				sourceQuest = 1137,	-- News for Fizzle
 				qg = 4630,	-- Pozzik
 				coord = { 80.2, 75.9, MAP.THOUSAND_NEEDLES },
 				lvl = 29,

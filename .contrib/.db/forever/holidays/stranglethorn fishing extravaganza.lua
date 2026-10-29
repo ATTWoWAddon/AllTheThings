@@ -75,7 +75,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 					i(19969),	-- Nat Pagle's Extreme Anglin' Boots
 				},
 			}),
-			q(8224, {	-- Rare Fish - Dezian Angelfish
+			q(8224, {	-- Rare Fish - Dezian Queenfish
 				qg = 15079,	-- Fishbot 5000
 				coord = { 27.4, 76.9, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 19806, 1 } },	-- 1x Dezian Angelfish

@@ -648,7 +648,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(960, {	-- Onu is meditating
+			q(960, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				sourceQuest = 944,	-- The Master's Glaive
 				qg = 3616,	-- Onu
@@ -659,7 +659,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(5251),	-- Phial of Scrying
 				},
 			}),
-			q(961, {	-- Onu is meditating
+			q(961, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 				sourceQuest = 949,	-- The Twilight Camp
 				qg = 3616,	-- Onu
@@ -739,7 +739,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(729, {	-- The Absent Minded Prospector (1/5)
-				sourceQuest = 730,	-- Trouble in Darkshore?
+				sourceQuest = 730,	-- Trouble In Darkshore?
 				qg = 2913,	-- Archaeologist Hollee
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,

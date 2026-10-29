@@ -191,7 +191,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			},
 			{	-- All Along the Watchtowers
 				allianceQuestData = q(5097, {	-- All Along the Watchtowers [A]
-					sourceQuest = 5092,	-- Clear The Way
+					sourceQuest = 5092,	-- Clear the Way
 					qg = 10838,	-- Commander Ashlam Valorfist
 					coord = { 42.7, 84.1, MAP.WESTERN_PLAGUELANDS },
 				}),

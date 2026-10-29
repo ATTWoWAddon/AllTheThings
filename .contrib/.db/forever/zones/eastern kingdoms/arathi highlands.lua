@@ -1033,7 +1033,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 				},
 			}),
-			q(684, {	-- Wanted! Marez Cowl
+			q(684, {	-- WANTED: Marez Cowl
 				provider = { "o", 2713 },	-- Wanted Board
 				coord = { 46.0, 47.7, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
@@ -1053,7 +1053,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 				},
 			}),
-			q(685, {	-- Wanted! Otto and Falconcrest
+			q(685, {	-- WANTED: Otto and Falconcrest
 				provider = { "o", 2713 },	-- Wanted Board
 				coord = { 46.0, 47.7, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,

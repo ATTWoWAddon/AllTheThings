@@ -24,7 +24,7 @@ local allBookSourceQuests = {
 	79949,	-- A Web of Lies: Debunking Myths and Legends
 	78145,	-- Arcanic Systems Manual
 	79091,	-- Archmage Antonidas: The Unabridged Autobiography
-	79092,	-- Archmage Theocritus's Research Journal
+	79092,	-- Archmage Theocritus' Research Journal
 	79096,	-- Ataeric: On Arcane Curiosities
 	79535,	-- Basilisks: Should Petrification be Feared?
 	79097,	-- Baxtan: On Destructive Magics
@@ -45,7 +45,7 @@ local allBookSourceQuests = {
 	84402,	-- Necromancy 101
 	84397,	-- Northern Kalimdor - A Comprehensive Guide
 	79093,	-- Rumi of Gnomeregan: The Collected Works
-	78148,	-- Runes of the Sorceror-Kings
+	78148,	-- Runes of the Sorcerer-Kings
 	79952,	-- RwlRwlRwlRwl!
 	81947,	-- Sanguine Sorcery
 	84401,	-- Scourge: Undead Menace or Misunderstood?
@@ -107,7 +107,7 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(79092, {	-- Archmage Theocritus's Research Journal
+			q(79092, {	-- Archmage Theocritus' Research Journal
 				provider = { "i", 203755 },	-- Archmage Theocritus's Research Journal
 				maps = { ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(78148, {	-- Runes of the Sorceror-Kings
+			q(78148, {	-- Runes of the Sorcerer-Kings
 				provider = { "i", 209850 },	-- Runes of the Sorcerer-Kings
 				maps = { LOCH_MODAN },
 				races = ALLIANCE_ONLY,

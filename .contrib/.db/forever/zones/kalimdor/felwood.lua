@@ -565,7 +565,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(4906, {	-- Further Corruption
-				sourceQuest = 4421,	-- Corruption of the Jadefire
+				sourceQuest = 4421,	-- The Corruption of the Jadefire
 				qg = 9116,	-- Eridan Bluewind
 				coord = { 51.4, 81.5, MAP.FELWOOD },
 				races = ALLIANCE_ONLY,
@@ -655,7 +655,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				lvl = 49,
 			}),
 			q(5204, {	-- Retribution of the Light
-				sourceQuest = 5203,	-- Rescue from Jaedenar
+				sourceQuest = 5203,	-- Rescue From Jaedenar
 				qg = 11019,	-- Jessir Moonbow
 				coord = { 51.3, 82.0, MAP.FELWOOD },
 				lvl = 49,

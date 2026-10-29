@@ -661,7 +661,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(169, {	-- Wanted: Gath'Ilzogg
+			q(169, {	-- WANTED: Gath'Ilzogg
 				provider = { "o", 60 },	-- Wanted: Gath'Ilzogg
 				coord = { 24.6, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -674,7 +674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			q(95999, {	-- Wanted: Insinerator Gar'im
+			q(95999, {	-- WANTED: Incinerator Gar'im
 				provider = { "o", 649051 },	-- Wanted: Incinerator Gar'im
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -691,7 +691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					i(277218),	-- Incinerator's Boots
 				},
 			}),
-			q(180, {	-- Wanted: Lieutenant Fangore
+			q(180, {	-- WANTED: Lieutenant Fangore
 				provider = { "o", 47 },	-- Wanted: Lieutenant Fangore
 				coord = { 21.7, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,

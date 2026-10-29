@@ -1800,7 +1800,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
-			q(398, {	-- Wanted: Maggot Eye
+			q(398, {	-- WANTED: Maggot Eye
 				provider = { "o", 711 },	-- Wanted!
 				coord = { 60.7, 51.5, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
