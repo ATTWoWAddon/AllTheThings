@@ -4,7 +4,7 @@ local i = GetRecipeHelperForProfession(LEATHERWORKING);
 --------------------
 -- LEATHERWORKING --
 --------------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 2108);			-- Leatherworking (Apprentice)
 i(0, 3104);			-- Leatherworking (Journeyman)
 i(0, 3811);			-- Leatherworking (Expert)
@@ -81,10 +81,10 @@ i(0, 10511);		-- Turtle Scale Breastplate
 i(0, 10552);		-- Turtle Scale Helm
 i(0, 10556);		-- Turtle Scale Leggings
 i(0, 1255088);		-- Wisdom's Leather Helm
---- QUEST ---
+-- - QUEST ---
 i(0, 1229432);	-- Camp Tent
 i(0, 19093);	-- Onyxia Scale Cloak
---- ITEM ---
+-- - ITEM ---
 i(276961, 1301454);	-- Azure Gustwoven Belt
 i(276963, 1301456);	-- Azure Gustwoven Boots
 i(276959, 1301452);	-- Azure Gustwoven Bracers
@@ -338,7 +338,7 @@ i(252782, 1255125);	-- Wisdom's Leather Gloves
 i(252803, 1255104);	-- Wisdom's Leather Hood
 i(252825, 1255082);	-- Wisdom's Leather Leggings
 i(252810, 1255097);	-- Wisdom's Leather Tunic
---- UNKNOWN ---
+-- - UNKNOWN ---
 --[[
 r(1254968),	-- Black Dragonscale Helm
 r(1254969),	-- Blue Dragonscale Helm
@@ -553,7 +553,7 @@ i(0, 28223);		-- Icy Scale Gauntlets
 -- MC
 i(18252, 22727);	-- Core Armor Kit
 --]]
---- DRAGONSCALE ---
+-- - DRAGONSCALE ---
 i(0, DRAGONSCALE_LEATHERWORKING, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Leatherworking
 i(0, 24654, nil, DRAGONSCALE_LEATHERWORKING);	-- Blue Dragonscale Leggings
 i(0, 10650, nil, DRAGONSCALE_LEATHERWORKING);	-- Dragonscale Breastplate
@@ -578,7 +578,7 @@ i(19331, 23708, nil, DRAGONSCALE_LEATHERWORKING);	-- Chromatic Gauntlets
 -- Silithus P4
 i(20382, 24703, nil, DRAGONSCALE_LEATHERWORKING);	-- Dreamscale Breastplate
 --]]
---- ELEMENTAL ---
+-- - ELEMENTAL ---
 i(0, ELEMENTAL_LEATHERWORKING, nil, ELEMENTAL_LEATHERWORKING);	-- Elemental Leatherworking
 i(0, 10630, nil, ELEMENTAL_LEATHERWORKING);	-- Gauntlets of the Sea
 i(0, 10632, nil, ELEMENTAL_LEATHERWORKING);	-- Helm of Fire
@@ -605,7 +605,7 @@ i(19333, 23710, nil, ELEMENTAL_LEATHERWORKING);	-- Molten Belt
 i(21548, 26279, nil, ELEMENTAL_LEATHERWORKING);	-- Stormshroud Gloves
 --]]
 
---- TRIBAL ---
+-- - TRIBAL ---
 i(0, TRIBAL_LEATHERWORKING, nil, TRIBAL_LEATHERWORKING);	-- Tribal Leatherworking
 i(0, 10647, nil, TRIBAL_LEATHERWORKING);	-- Feathered Breastplate
 i(0, 10621, nil, TRIBAL_LEATHERWORKING);	-- Wolfshead Helm

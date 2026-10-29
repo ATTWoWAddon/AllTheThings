@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(3526, {	-- Goblin Engineering [H]
 				altQuests = {
-					-- 3526,	-- Goblin Engineering
+					--3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
 					3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
@@ -553,7 +553,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					3632,	-- Gnome Engineering
 					3633,	-- Goblin Engineering
 					3634,	-- Gnome Engineering
-					-- 3635,	-- Gnome Engineering
+					--3635,	-- Gnome Engineering
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},

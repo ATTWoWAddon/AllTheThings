@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, {
 		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(ARMOR, {
-				---- DUNGEON SET 1 ----
+				-- -- DUNGEON SET 1 ----
 				-- Hunter
 				i(16674),	-- Beaststalker's Tunic
 				-- Mage

@@ -929,7 +929,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					i(1179),	-- Ice Cold Milk
 					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
+					--i(1645),	-- Moonberry Juice
 					i(8766),	-- Morning Glory Dew
 					i(159),	-- Refreshing Spring Water
 					i(1708),	-- Sweet Nectar
