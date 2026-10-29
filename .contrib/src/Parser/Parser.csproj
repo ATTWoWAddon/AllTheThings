@@ -31,9 +31,9 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Csv" Version="[2.0.93]" />
-    <PackageReference Include="KeraLua" Version="[1.2.13]" />
-    <PackageReference Include="NLua" Version="[1.5.8]" />
+    <PackageReference Include="Csv" Version="[2.0.245]" />
+    <PackageReference Include="KeraLua" Version="[1.4.11]" />
+    <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CollectedStatus.cs" />
