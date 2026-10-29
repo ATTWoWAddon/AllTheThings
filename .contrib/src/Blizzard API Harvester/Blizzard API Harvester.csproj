@@ -58,9 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="[13.0.1]" ExcludeAssets="all" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Extensions.cs" />
     <Compile Include="lib\MiniJSON.cs" />
     <Compile Include="Program.cs" />
