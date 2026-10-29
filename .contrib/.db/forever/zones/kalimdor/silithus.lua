@@ -2130,7 +2130,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					-- Commented out recipes, does not seem to be on vendor on beta
 					{		-- Neutral
 					}, {	-- Friendly
-						i(275601, { timeline = { TIMELINE.ADDED_1_60_1 } }),-- Plans: Clutchlord's Grips
+						i(275601, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Clutchlord's Grips
 						i(275598, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Goregasher Grips
 						--i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 						--i(22768),	-- Plans: Ironvine Belt (RECIPE!)

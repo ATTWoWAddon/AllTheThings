@@ -2382,11 +2382,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
-			n(227853, { -- Pix Xizzix <Undermine Trader>
+			n(227853, {	-- Pix Xizzix <Undermine Trader>
 				coord = { 28.5, 75.8, MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					i(272151, { -- Damaged Undermine Supply Crate
+					i(272151, {	-- Damaged Undermine Supply Crate
 						cost = { { "c", 3469, 5 }, },	-- 5x Tarnished Undermine Real
 					}),
 					i(272393, {	-- Magician's Cord
@@ -2416,7 +2416,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(272402, {	-- Prophet's Waistcord
 						cost = { { "c", 3469, 100 } },	-- x100 Tarnished Undermine Real
 					}),
-					i(272403, { -- Valiant's Waistguard
+					i(272403, {	-- Valiant's Waistguard
 						cost = { { "c", 3469, 100 }, },	-- 100x Tarnished Undermine Real
 					}),
 					i(272404, {	-- Vindicator's Belt
@@ -2425,73 +2425,73 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(272405, {	-- Redeemer's Waistcord
 						cost = { { "c", 3469, 100 } },	-- x100 Tarnished Undermine Real
 					}),
-					i(272406, { -- Channeler's Ring
+					i(272406, {	-- Channeler's Ring
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272407, { -- Blessed Band of Light
+					i(272407, {	-- Blessed Band of Light
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272408, { -- Cutthroat's Signet
+					i(272408, {	-- Cutthroat's Signet
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272409, { -- Ring of Awareness
+					i(272409, {	-- Ring of Awareness
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
 					i(272410, {	-- Windseeker's Belt
 						cost = { { "c", 3469, 100 } },	-- x100 Tarnished Undermine Real
 					}),
-					i(272411, { -- Arcanoweave Cloak
+					i(272411, {	-- Arcanoweave Cloak
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272413, { -- Drape of Recovery
+					i(272413, {	-- Drape of Recovery
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272414, { -- Howler's Furs
+					i(272414, {	-- Howler's Furs
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272415, { -- Stalwart Cloak
+					i(272415, {	-- Stalwart Cloak
 						cost = { { "c", 3469, 75 }, },	-- 75x Tarnished Undermine Real
 					}),
-					i(272427, { -- Howling Idol
+					i(272427, {	-- Howling Idol
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272428, { -- Enraged Idol
+					i(272428, {	-- Enraged Idol
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272429, { -- Idol of Synthesis
+					i(272429, {	-- Idol of Synthesis
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272430, { -- Swarming Idol
+					i(272430, {	-- Swarming Idol
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272431, { -- Tidal Totem
+					i(272431, {	-- Tidal Totem
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272432, { -- Totem of the Storm
+					i(272432, {	-- Totem of the Storm
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272433, { -- Burning Totem
+					i(272433, {	-- Burning Totem
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272434, { -- Sentinel's Libram
+					i(272434, {	-- Sentinel's Libram
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272435, { -- Libram of Law
+					i(272435, {	-- Libram of Law
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272436, { -- Libram of Economy
+					i(272436, {	-- Libram of Economy
 						cost = { { "c", 3469, 50 }, },	-- 50x Tarnished Undermine Real
 					}),
-					i(272437, { -- Adaptive Combat Assistant
+					i(272437, {	-- Adaptive Combat Assistant
 						cost = { { "c", 3469, 125 }, },	-- 125x Tarnished Undermine Real
 					}),
-					i(272438, { -- Weakness Analyzer
+					i(272438, {	-- Weakness Analyzer
 						cost = { { "c", 3469, 125 }, },	-- 125x Tarnished Undermine Real
 					}),
-					i(272439, { -- Serenity Field
+					i(272439, {	-- Serenity Field
 						cost = { { "c", 3469, 125 }, },	-- 125x Tarnished Undermine Real
 					}),
-					i(272440, { -- Defender's Grip Stabilizer
+					i(272440, {	-- Defender's Grip Stabilizer
 						cost = { { "c", 3469, 125 }, },	-- 125x Tarnished Undermine Real
 					}),
 				},
