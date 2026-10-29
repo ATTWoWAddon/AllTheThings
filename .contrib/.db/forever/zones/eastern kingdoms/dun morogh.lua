@@ -1343,9 +1343,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qi = 15911,	-- Taming Rod (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Large Crag Boar
-						providers = {
-							{ "n", 1126 },	-- Large Crag Boar
-						},
+						providers = { { "n", 1126 }, },	-- Large Crag Boar
 					}),
 				},
 			}),
@@ -1359,9 +1357,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qi = 15913,	-- Taming Rod (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Snow Leopard
-						providers = {
-							{ "n", 1201 },	-- Snow Leopard
-						},
+						providers = { { "n", 1201 }, },	-- Snow Leopard
 					}),
 				},
 			}),
@@ -1375,9 +1371,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				qi = 15908,	-- Taming Rod (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Tame a Ice Claw Bear
-						providers = {
-							{ "n", 1196 },	-- Ice Claw Bear
-						},
+						providers = { { "n", 1196 }, },	-- Ice Claw Bear
 					}),
 				},
 			}),

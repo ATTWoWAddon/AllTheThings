@@ -2264,44 +2264,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 					}),
 					i(275240, {	-- Premier Emboldened Wrist Seal
-						cost = {
-							{ "c", 1792, 750 },	-- 750x Honor Points
-						},
+						cost = { { "c", 1792, 750 }, },	-- 750x Honor Points
 					}),
 					i(275244, {	-- Premier Emboldened Belt Seal
-						cost = {
-							{ "c", 1792, 1000 },	-- 1000x Honor Points
-						},
+						cost = { { "c", 1792, 1000 }, },	-- 1000x Honor Points
 					}),
 					i(275243, {	-- Premier Emboldened Feet Seal
-						cost = {
-							{ "c", 1792, 1000 },	-- 1000x Honor Points
-						},
+						cost = { { "c", 1792, 1000 }, },	-- 1000x Honor Points
 					}),
 					i(275239, {	-- Premier Emboldened Hands Seal
-						cost = {
-							{ "c", 1792, 1500 },	-- 1500x Honor Points
-						},
+						cost = { { "c", 1792, 1500 }, },	-- 1500x Honor Points
 					}),
 					i(275242, {	-- Premier Emboldened Legs Seal
-						cost = {
-							{ "c", 1792, 2000 },	-- 2000x Honor Points
-						},
+						cost = { { "c", 1792, 2000 }, },	-- 2000x Honor Points
 					}),
 					i(275229, {	-- Premier Emboldened Shoulder Seal
-						cost = {
-							{ "c", 1792, 1500 },	-- 1500x Honor Points
-						},
+						cost = { { "c", 1792, 1500 }, },	-- 1500x Honor Points
 					}),
 					i(275241, {	-- Premier Emboldened Head Seal
-						cost = {
-							{ "c", 1792, 2000 },	-- 2000x Honor Points
-						},
+						cost = { { "c", 1792, 2000 }, },	-- 2000x Honor Points
 					}),
 					i(275238, {	-- Premier Emboldened Chest Seal
-						cost = {
-							{ "c", 1792, 1750 },	-- 1750x Honor Points
-						},
+						cost = { { "c", 1792, 1750 }, },	-- 1750x Honor Points
 					}),
 				}),
 			}),
@@ -2894,9 +2878,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					moh(1, i(15198)),	-- Knight's Colors
 					i(272694),	-- Private's Tabard
 					i(274445, {	-- Greater Insignia of the Alliance
-						cost = {
-							{ "c", 1792, 3500 },	-- 3500x Honor Points
-						},
+						cost = { { "c", 1792, 3500 }, },	-- 3500x Honor Points
 					}),
 					i(272699, {	-- Premier Sergeant's Cape
 						cost = {

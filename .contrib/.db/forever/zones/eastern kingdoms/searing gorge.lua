@@ -149,9 +149,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				maxReputation = {
 					FACTION_THORIUM_BROTHERHOOD, HONORED,
 				},
-				cost = {
-					{ "i", 18945, 4 },	-- Dark Iron Residue
-				},
+				cost = { { "i", 18945, 4 } },	-- Dark Iron Residue
 				lvl = 40,
 				repeatable = true,
 			}),

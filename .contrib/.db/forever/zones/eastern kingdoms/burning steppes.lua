@@ -42,9 +42,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				},
 				qg = 14437,	-- Gorzeeki Wildeyes
 				coord = { 12.4, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 12360, 3 },	-- Arcanite Bar
-				},
+				cost = { { "i", 12360, 3 } },	-- Arcanite Bar
 				classes = { WARLOCK },
 				lvl = 60,
 			}),
@@ -52,9 +50,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				sourceQuest = 7564,	-- Wildeyes
 				qg = 14436,	-- Mor'zul Bloodbringer
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 9264, 10 },	-- Elixir of Shadow Power
-				},
+				cost = { { "i", 9264, 10 } },	-- Elixir of Shadow Power
 				classes = { WARLOCK },
 				lvl = 60,
 			}),
@@ -81,9 +77,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				sourceQuest = 7564,	-- Wildeyes
 				qg = 14436,	-- Mor'zul Bloodbringer
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 15416, 35},	-- 35x Black Dragonscale
-				},
+				cost = { { "i", 15416, 35 } },	-- 35x Black Dragonscale
 				classes = { WARLOCK },
 				lvl = 60,
 			}),

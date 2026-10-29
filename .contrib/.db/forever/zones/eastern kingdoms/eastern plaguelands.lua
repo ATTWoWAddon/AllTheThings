@@ -919,9 +919,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 54,
 				groups = {
 					objective(1, {	-- 0/1 Coagulated Rot
-						providers = {
-							{ "i", 15448 },	-- Coagulated Rot
-						},
+						providers = { { "i", 15448 } },	-- Coagulated Rot
 						crs = {
 							8526,	-- Dark Caster
 							8531,	-- Gibbering Ghoul
