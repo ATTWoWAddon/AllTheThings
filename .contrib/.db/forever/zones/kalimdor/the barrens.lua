@@ -129,7 +129,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					i(2459),	-- Swiftness Potion
-					i(3388),	-- Strong Troll's Blood Potion
+					i(3388),	-- Lesser Troll's Blood Elixir
 				},
 			}),
 			q(1153, {	-- A New Ore Sample
@@ -1866,7 +1866,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- 0/8 Root Sample
 						provider = { "i", 5056 },	-- Root Sample
 					}),
-					i(5341),	-- Spore-Covered Tunic
+					i(5341),	-- Spore-covered Tunic
 				},
 			}),
 			q(894, {	-- Samophlange (1/4)
@@ -2114,7 +2114,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				lvl = 14,
 				groups = {
 					i(3334),	-- Farmer's Shovel
-					i(221498),	-- Sturdy Lunchbox
+					i(221498),	-- Old Toolbox
 					i(1652),	-- Sturdy Lunchbox
 					i(2901),	-- Mining Pick
 					i(4470),	-- Simple Wood
@@ -3324,7 +3324,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4820, {	-- Guardian Buckler
 						isLimited = true,
 					}),
-					i(4798, {	-- Heavy Runed CLoak
+					i(4798, {	-- Heavy Runed Cloak
 						isLimited = true,
 					}),
 					i(4816, {	-- Legionnaire's Leggings
@@ -3359,7 +3359,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4793, {	-- Sylvan Cloak
 						isLimited = true,
 					}),
-					i(4781, {	-- Whispering Cloak
+					i(4781, {	-- Whispering Vest
 						isLimited = true,
 					}),
 					i(4786, {	-- Wise Man's Belt
@@ -3571,7 +3571,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4797, {	-- Fiery Cloak
 						isLimited = true,
 					}),
-					i(4798, {	-- Heavy Runed CLoak
+					i(4798, {	-- Heavy Runed Cloak
 						isLimited = true,
 					}),
 					i(4778, {	-- Heavy Spiked Mace

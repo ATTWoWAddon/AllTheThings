@@ -365,7 +365,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						races = ALLIANCE_ONLY,
 						groups = {
 							objective(1, {	-- 0/1 Grenlin Whitebeard's Journal
-								provider = { "i", 2004 },	-- Grenlin Whitebeard's Journal (QI!)
+								provider = { "i", 2004 },	-- Grelin Whitebeard's Journal (QI!)
 								coord = { 30.4, 80.2, MAP.DUN_MOROGH },
 								cr = 808,	-- Grik'nir the Cold
 							}),
@@ -570,7 +570,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/6 Crag Boar Rib
-						provider = { "i", 2886 },	-- Tender Boar Ribs
+						provider = { "i", 2886 },	-- Crag Boar Rib
 						crs = {
 							1125,	-- Crag Boar
 							1126,	-- Large Crag Boar
@@ -941,7 +941,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						providers = {
-							{ "i", 280413 },	-- Flintfire's Shipments
+							{ "i", 280413 },	-- Flintfire's Shipment
 							{ "o", 672508 },	-- Flintfire's Shipments
 						},
 					}),
@@ -1656,14 +1656,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 					objective(1, {	-- 0/1 Stoneavil's Rifle
 						providers = {
-							{ "i", 286360 },	-- Stoneavil's Rifle
+							{ "i", 286360 },	-- Stoneanvil's Rifle
 							{ "o", 695277 },	-- Stoneavil's Rifle
 						},
 						coord = { 53.1, 58.8, MAP.DUN_MOROGH },
 					}),
 					objective(1, {	-- 0/1 Sunhammers's Rifle
 						providers = {
-							{ "i", 286359 },	-- Sunhammers's Rifle
+							{ "i", 286359 },	-- Sunhammer's Rifle
 							{ "o", 695223 },	-- Sunhammers's Rifle
 						},
 						coord = { 59.9, 50.1, MAP.DUN_MOROGH },
@@ -1759,7 +1759,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1271, {	-- Old Icebeard
 				coord = { 38.4, 54.0, MAP.DUN_MOROGH },
 				groups = {
-					i(2899),	-- Wengido Collar
+					i(2899),	-- Wendigo Collar
 				},
 			}),
 			n(1132, {	-- Timber
@@ -1937,13 +1937,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 63.2, 50.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(280797, {	-- Artic Rabbit (PET!)
+					i(280797, {	-- Rabbit Crate (Arctic) (PET!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(280801, {	-- Brown Rabbit (PET!)
+					i(280801, {	-- Rabbit Crate (Brown) (PET!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(8497),	-- Snowshoe Rabbit (PET!)
+					i(8497),	-- Rabbit Crate (Snowshoe) (PET!)
 				},
 			}),
 		}),

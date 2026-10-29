@@ -280,7 +280,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					i(19107),	-- Bloodseeker
-					i(20648),	-- Cold Forged Hamme
+					i(20648),	-- Cold Forged Hammer
 					i(19106),	-- Ice Barbed Spear
 					i(19108),	-- Wand of Biting Cold
 				},
@@ -468,7 +468,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			q(8375, {	-- Remember Alterac Valley!
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 			}),
 			q(8383, {	-- Remember Alterac Valley!
@@ -476,7 +476,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -606,7 +606,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force
@@ -617,7 +617,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19084),	-- Stormpike Soldier's Cloak
 					i(19094),	-- Stormpike Cloth Girdle
 					i(19093),	-- Stormpike Leather Girdle
-					i(19092),	-- Stormpike Mail Girgle
+					i(19092),	-- Stormpike Mail Girdle
 					i(19091),	-- Stormpike Plate Girdle
 					i(19325),	-- Don Julio's Band
 					i(21563),	-- Don Rodrigo's Band
@@ -638,7 +638,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				coord = { 49.3, 82.5, MAP.ALTERAC_VALLEY },
 				races = HORDE_ONLY,
 				groups = {
-					i(19029),	-- Frostwolf Howler (MOUNT!)
+					i(19029),	-- Horn of the Frostwolf Howler (MOUNT!)
 					i(19031),	-- Frostwolf Battle Tabard
 					i(19046),	-- Frostwolf Battle Standard
 					i(19103),	-- Frostbite
@@ -647,7 +647,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force
@@ -689,7 +689,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 		}),
 		n(ZONE_DROPS, {
 			i(17422),	-- Armor Scraps
-			i(18228),	-- Autographed Picture of Foror & Tigule
+			i(18228),	-- Autographed Picture of Tigule
 			i(17504),	-- Frostwolf Commander's Medal
 			i(17503),	-- Frostwolf Lieutenant's Medal
 			i(17502),	-- Frostwolf Soldier's Medal
