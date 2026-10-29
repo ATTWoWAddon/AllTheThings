@@ -789,7 +789,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4547),	-- Gnomish Zapper
 					i(4548),	-- Servomechanic Sledgehammer
-					i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
+					i(4491),	-- Goggles of Gem Hunting / Do not replace i(...) with a qi field; this item is equippable.
 				},
 			}),
 			q(668, {	-- Sunken Treasure (3/5)
