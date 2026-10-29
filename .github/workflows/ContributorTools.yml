@@ -1,4 +1,4 @@
-name: Contributor Tools SDK Validation
+name: Parser implicit Compile experiment
 
 on:
   push:
@@ -23,13 +23,13 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v7
         with:
-          ref: 0ab01b14d7f262744b5c4e64d6df06206052ba6a
+          ref: 2867ce196198c09cb26f5a717829a4221ea9df94
           path: baseline
           persist-credentials: false
       - uses: microsoft/setup-msbuild@v3
-      - name: Build and compare contributor tools
+      - name: Compare manual and implicit Parser builds
         shell: pwsh
-        run: .github/scripts/Verify-SdkProjects.ps1
+        run: .github/scripts/Test-ParserImplicitCompile.ps1
       - uses: actions/upload-artifact@v7
         if: always()
         with:
