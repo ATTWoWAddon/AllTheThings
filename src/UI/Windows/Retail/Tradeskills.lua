@@ -50,9 +50,9 @@ do -- TradeSkill Functionality
 	---@alias ATTProfessionRanks { [integer]: integer }
 
 	--- Detects added, removed, or changed values in the profession and rank caches.
-	---@param previous ATTProfessionOwnership|ATTProfessionRanks Saved membership flags or ranks before refresh.
-	---@param current ATTProfessionOwnership|ATTProfessionRanks Refreshed values for the same kind of cache as previous.
-	---@return true|nil changed True when a key is added, removed, or changes value; nil otherwise.
+	---@param previous ATTProfessionOwnership|ATTProfessionRanks # Saved membership flags or ranks before refresh.
+	---@param current ATTProfessionOwnership|ATTProfessionRanks # Refreshed values for the same kind of cache as previous.
+	---@return true|nil changed # True when a key is added, removed, or changes value; nil otherwise.
 	local function HasCacheChanged(previous, current)
 		for id,value in pairs(previous) do
 			if current[id] ~= value then return true; end
@@ -690,7 +690,7 @@ app:CreateWindow("Tradeskills", {
 				for i,child in ipairs({UIParent:GetChildren()}) do
 					--- Enumerated UI frame inspected to locate and hook the TradeSkillMaster crafting window.
 					---@class ATTChildFrameTemplate: Frame
-					---@field headerBgCenter any Header background element used to identify the TradeSkillMaster crafting frame.
+					---@field headerBgCenter any # Header background element used to identify the TradeSkillMaster crafting frame.
 					local f = child;
 					if f.headerBgCenter then
 						self.cachedTSMFrame = f;

@@ -22,24 +22,24 @@
 
 --- Record-shaped values deliberately rejected as names or explicit realms.
 ---@class ATTIdentifierTestRecordInput
----@field name? string Name carried by a malformed table input.
+---@field name? string # Name carried by a malformed table input.
 
 --- Valid strings and transport IDs mixed with intentionally invalid argument values.
 ---@alias ATTIdentifierTestInput ATTAccountTransportKey|boolean|ATTIdentifierTestRecordInput|nil
 
 --- Packed normalizer inputs, including an explicit count when the last argument is nil.
 ---@class ATTIdentifierTestArguments
----@field [1]? ATTIdentifierTestInput Candidate name or combined name-realm identifier.
----@field [2]? ATTIdentifierTestInput Optional explicit realm, including invalid test values.
----@field n? integer Argument count used to preserve an explicit trailing nil.
+---@field [1]? ATTIdentifierTestInput # Candidate name or combined name-realm identifier.
+---@field [2]? ATTIdentifierTestInput # Optional explicit realm, including invalid test values.
+---@field n? integer # Argument count used to preserve an explicit trailing nil.
 
 --- Client flavor exposed to the extracted identifier helper closures.
 ---@class ATTIdentifierTestApp
----@field IsForever boolean Whether the fixture represents a Forever client.
+---@field IsForever boolean # Whether the fixture represents a Forever client.
 
 --- Current-realm context, allowing malformed cached realm values for rejection tests.
 ---@class ATTIdentifierTestCurrentCharacter
----@field realm? string|number Realm fallback; numbers deliberately exercise invalid data.
+---@field realm? string|number # Realm fallback; numbers deliberately exercise invalid data.
 
 --- Production normalizer accepting packed test inputs and returning the identifier and complete name.
 ---@alias ATTIdentifierTestNormalizer fun(identifier: ATTIdentifierTestInput, ...: ATTIdentifierTestInput): string?, string?
@@ -55,37 +55,37 @@
 
 --- Saved account-wide state passed to the actual initialization callback.
 ---@class ATTIdentifierTestAccountWideData
----@field OneTimeFixes? table<string, integer> Completion markers retained from unrelated one-time fixes.
+---@field OneTimeFixes? table<string, integer> # Completion markers retained from unrelated one-time fixes.
 
 --- Client label and build for one account identifier lifecycle scenario.
 ---@class ATTIdentifierTestFlavor
----@field label string Client name included in assertion failures.
----@field build integer Client build used by the native player-name fixture.
+---@field label string # Client name included in assertion failures.
+---@field build integer # Client build used by the native player-name fixture.
 
 --- Actual initialization callback binding saved records and updating play-time metadata.
 ---@alias ATTIdentifierTestSavedVariablesHandler fun(currentCharacter: ATTNameTestCharacter, accountWideData: ATTIdentifierTestAccountWideData, characterData: ATTIdentifierTestCharacterData)
 
 --- Event-registration mock capturing the actual SavedVariables callback.
 ---@class ATTIdentifierTestInitializationApp
----@field AddEventHandler fun(eventName: string, callback: ATTIdentifierTestSavedVariablesHandler) Captures a callback; the event name is unused.
+---@field AddEventHandler fun(eventName: string, callback: ATTIdentifierTestSavedVariablesHandler) # Captures a callback; the event name is unused.
 
 --- Settings consumed by the actual Account Management window load callback.
 ---@class ATTIdentifierTestWindowSettings
----@field AutoSync boolean Whether window loading starts automatic synchronization.
----@field EnableBattleNet boolean Whether the window enables Battle.net transport.
----@field LinkedCharacters? table<ATTAccountTransportKey, boolean> Allowed saved transport recipients.
+---@field AutoSync boolean # Whether window loading starts automatic synchronization.
+---@field EnableBattleNet boolean # Whether the window enables Battle.net transport.
+---@field LinkedCharacters? table<ATTAccountTransportKey, boolean> # Allowed saved transport recipients.
 
 --- Window methods needed to exercise its real startup callback.
 ---@class ATTIdentifierTestAccountWindow
----@field OnLoad fun(self: ATTIdentifierTestAccountWindow, settings: ATTIdentifierTestWindowSettings) Loads settings and refreshes saved identifiers.
----@field RegisterEvent fun(self: ATTIdentifierTestAccountWindow, eventName: string): nil Accepts a native event registration without dispatching it.
+---@field OnLoad fun(self: ATTIdentifierTestAccountWindow, settings: ATTIdentifierTestWindowSettings) # Loads settings and refreshes saved identifiers.
+---@field RegisterEvent fun(self: ATTIdentifierTestAccountWindow, eventName: string): nil # Accepts a native event registration without dispatching it.
 
 --- Expected current and optional alt identifiers at each automatic broadcast.
 ---@class ATTIdentifierTestWindowCalls
----@field expected string Identifier that must already be current when AutoSync starts.
----@field broadcast integer Number of AutoSync calls observed.
----@field other? ATTNameTestCharacter Alt saved record checked before the main character synchronizes.
----@field otherExpected? string Expected normalized alt identifier before AutoSync.
+---@field expected string # Identifier that must already be current when AutoSync starts.
+---@field broadcast integer # Number of AutoSync calls observed.
+---@field other? ATTNameTestCharacter # Alt saved record checked before the main character synchronizes.
+---@field otherExpected? string # Expected normalized alt identifier before AutoSync.
 
 ---@type string
 local root = arg[1] or ".";
@@ -111,11 +111,11 @@ local currentCharacter = { realm = "Realm With Spaces" };
 local normalize = chunk(normalApp, currentCharacter);
 local tests = 0;
 --- Runs a production normalizer and checks both results without accepting thrown errors.
----@param label string Case label included in assertion failures.
----@param arguments ATTIdentifierTestArguments Packed call inputs; n preserves explicit nil realms.
----@param fullName string? Expected normalized name-realm identifier, or nil for rejected inputs.
----@param shortName string? Expected complete normalized name without the realm, or nil for rejected inputs.
----@param fn ATTIdentifierTestNormalizer? Alternate bound normalizer; nil uses the default fixture.
+---@param label string # Case label included in assertion failures.
+---@param arguments ATTIdentifierTestArguments # Packed call inputs; n preserves explicit nil realms.
+---@param fullName string? # Expected normalized name-realm identifier, or nil for rejected inputs.
+---@param shortName string? # Expected complete normalized name without the realm, or nil for rejected inputs.
+---@param fn ATTIdentifierTestNormalizer? # Alternate bound normalizer; nil uses the default fixture.
 local function check(label, arguments, fullName, shortName, fn)
 	local ok, actualFull, actualShort = pcall(fn or normalize, unpackValues(arguments, 1, arguments.n or #arguments));
 	assert(ok, label .. " threw: " .. tostring(actualFull));
@@ -203,11 +203,11 @@ local initialize = assert((loadstring or load)(initProgram, "@actual-account-sav
 local windowSource = assert(source:match('(OnLoad = function%(self, settings%).-)\n\tOnSave ='), "Cannot locate account window OnLoad");
 local tokenSource = assert(source:match('(local function GetSyncIdentityToken.-)local function FindCharacterInfo'), "Cannot locate synchronization token helper");
 --- Compiles the real normalizer and window load callback with persistent saved-record fixtures.
----@param character ATTNameTestCharacter Current saved character after native identity refresh.
----@param characterData ATTIdentifierTestCharacterData Saved characters shared by all login sessions.
----@param expectedIdentifier string Required current identifier before AutoSync starts.
----@return ATTIdentifierTestAccountWindow window Production OnLoad callback and native registration stub.
----@return ATTIdentifierTestWindowCalls calls Expected identifier and observed AutoSync count.
+---@param character ATTNameTestCharacter # Current saved character after native identity refresh.
+---@param characterData ATTIdentifierTestCharacterData # Saved characters shared by all login sessions.
+---@param expectedIdentifier string # Required current identifier before AutoSync starts.
+---@return ATTIdentifierTestAccountWindow window # Production OnLoad callback and native registration stub.
+---@return ATTIdentifierTestWindowCalls calls # Expected identifier and observed AutoSync count.
 local function loadAccountWindow(character, characterData, expectedIdentifier)
 	local windowProgram = [[
 ---@type ATTNameTestCharacter, ATTIdentifierTestCharacterData, ATTIdentifierTestWindowCalls

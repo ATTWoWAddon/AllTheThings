@@ -35,8 +35,8 @@ app.WOWAPI = lib;
 
 -- Priority API assigner.
 -- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper.
----@param name string Name under which the selected function is stored in `app.WOWAPI`.
----@param ... function|nil Candidate API functions in priority order; the first available function is selected.
+---@param name string # Name under which the selected function is stored in `app.WOWAPI`.
+---@param ... function|nil # Candidate API functions in priority order; the first available function is selected.
 local function AssignAPIWrapper(name, ...)
 	for i = 1, select("#", ...) do
 		local api = select(i, ...)  -- Get API Function
@@ -175,8 +175,8 @@ local GetTradeSkillLineForRecipe = C_TradeSkillUI and C_TradeSkillUI.GetTradeSki
 AssignAPIWrapper("GetProfessionInfoByRecipeID", C_TradeSkillUI and C_TradeSkillUI.GetProfessionInfoByRecipeID,
 	GetTradeSkillLineForRecipe and
 	--- Adapts the legacy recipe skill-line result to the modern profession-info table shape.
-	---@param recipeID number Recipe spell ID.
-	---@return {professionID: number}|nil professionInfo Nil when the recipe has no skill line.
+	---@param recipeID number # Recipe spell ID.
+	---@return {professionID: number}|nil professionInfo # Nil when the recipe has no skill line.
 	function(recipeID)
 		local professionID = GetTradeSkillLineForRecipe(recipeID);
 		if professionID then return { professionID = professionID }; end

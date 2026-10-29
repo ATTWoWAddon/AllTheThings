@@ -28,84 +28,84 @@
 
 --- Inputs for native player-name APIs and an optional remote-unit lookup.
 ---@class ATTPlayerNameTestOptions
----@field full string Complete player name returned by GetUnitName.
----@field first string Player first-name component returned by tuple APIs.
----@field second string Forever surname or Retail/Classic realm returned by tuple APIs.
----@field build? integer Client build; defaults to the Forever fixture build.
----@field raw? string Actual realm returned by GetRealmName; defaults to the spaced fixture realm.
----@field savedName? string Existing saved name used to verify login refresh.
----@field savedRealm? string Existing saved realm used to verify login refresh.
----@field savedIdentifier? string Existing derived identifier left for Account Management to refresh.
----@field remoteUnit? string Additional permitted unit token, such as party1 or raid3.
----@field remoteFull? string Remote GetUnitName result, including a Forever surname or Retail/Classic realm suffix.
----@field remoteFirst? string Remote UnitName first result, separate from the UnitFullName name.
----@field remoteName? string Remote UnitFullName name result.
----@field remoteRealm? string Remote UnitFullName surname or realm result.
----@field regionalNames? boolean Feature API result; nil omits RegionalUniqueNamesEnabled entirely.
----@field secretGuid? boolean Whether unit-token GUIDs must be discarded as secret.
+---@field full string # Complete player name returned by GetUnitName.
+---@field first string # Player first-name component returned by tuple APIs.
+---@field second string # Forever surname or Retail/Classic realm returned by tuple APIs.
+---@field build? integer # Client build; defaults to the Forever fixture build.
+---@field raw? string # Actual realm returned by GetRealmName; defaults to the spaced fixture realm.
+---@field savedName? string # Existing saved name used to verify login refresh.
+---@field savedRealm? string # Existing saved realm used to verify login refresh.
+---@field savedIdentifier? string # Existing derived identifier left for Account Management to refresh.
+---@field remoteUnit? string # Additional permitted unit token, such as party1 or raid3.
+---@field remoteFull? string # Remote GetUnitName result, including a Forever surname or Retail/Classic realm suffix.
+---@field remoteFirst? string # Remote UnitName first result, separate from the UnitFullName name.
+---@field remoteName? string # Remote UnitFullName name result.
+---@field remoteRealm? string # Remote UnitFullName surname or realm result.
+---@field regionalNames? boolean # Feature API result; nil omits RegionalUniqueNamesEnabled entirely.
+---@field secretGuid? boolean # Whether unit-token GUIDs must be discarded as secret.
 
 --- Native API call counts and the server-name flags passed to GetUnitName.
 ---@class ATTPlayerNameTestCalls
----@field complete integer GetUnitName call count.
----@field realm integer GetRealmName call count.
----@field unit integer UnitName call count.
----@field unmodified integer UnitNameUnmodified call count.
----@field native integer UnitFullName call count.
----@field nameutil integer NameUtil reconstruction call count.
----@field regional integer RegionalUniqueNamesEnabled evaluation count.
----@field guidInfo integer GetPlayerInfoByGUID call count.
----@field guid integer UnitGUID call count.
----@field class integer UnitClass call count.
----@field race integer UnitRace call count.
----@field secret integer Secret-GUID guard call count.
----@field flags (boolean|"default")[] GetUnitName flags in call order; omitted flags are recorded as "default".
+---@field complete integer # GetUnitName call count.
+---@field realm integer # GetRealmName call count.
+---@field unit integer # UnitName call count.
+---@field unmodified integer # UnitNameUnmodified call count.
+---@field native integer # UnitFullName call count.
+---@field nameutil integer # NameUtil reconstruction call count.
+---@field regional integer # RegionalUniqueNamesEnabled evaluation count.
+---@field guidInfo integer # GetPlayerInfoByGUID call count.
+---@field guid integer # UnitGUID call count.
+---@field class integer # UnitClass call count.
+---@field race integer # UnitRace call count.
+---@field secret integer # Secret-GUID guard call count.
+---@field flags (boolean|"default")[] # GetUnitName flags in call order; omitted flags are recorded as "default".
 
 --- Saved collection data that must survive identity initialization.
 ---@class ATTPlayerNameTestSavedCharacter: ATTNameTestCharacter
----@field Spells table<integer, boolean> Known spells retained by login.
----@field ActiveSkills table<integer, ATTNameTestSkillRank> Profession rank and maximum pairs retained by login.
----@field CustomCollects? table<string, boolean> Custom collection flags initialized by login.
----@field Professions? table<integer, boolean> Known profession spells initialized by login.
+---@field Spells table<integer, boolean> # Known spells retained by login.
+---@field ActiveSkills table<integer, ATTNameTestSkillRank> # Profession rank and maximum pairs retained by login.
+---@field CustomCollects? table<string, boolean> # Custom collection flags initialized by login.
+---@field Professions? table<integer, boolean> # Known profession spells initialized by login.
 
 --- App fields populated or consumed by the extracted identity source.
 ---@class ATTPlayerNameTestApp
----@field GUID string Current player GUID fixture.
----@field Level integer Current player level.
----@field FactionID integer Current player faction.
----@field RaceIndex integer Current player race index.
----@field Race string Current player race token.
----@field GameBuildVersion integer Client build populated by the wrapper module.
----@field IsForever boolean Whether the build uses Forever name semantics.
----@field IsRetail boolean Whether the build uses Retail or Forever code paths.
----@field IsClassic boolean Whether the build uses Classic code paths.
----@field CurrentCharacter ATTPlayerNameTestSavedCharacter Refreshed saved player record.
----@field Me string Class-colored complete name and realm built during base initialization.
----@field ClassName string Class-colored localized class name.
----@field ClassIndex integer Current player class ID.
----@field Class string Current player class token.
----@field WOWAPI { issecretvalue: fun(value: string): boolean } Secret-GUID guard used by the unit cache.
----@field print fun(...: string) Silent sink for wrapper-availability messages.
----@field LocalizeGlobalIfAllowed fun(key: string, initialize?: boolean): table<string, ATTPlayerNameTestSavedCharacter> Saved-character table lookup.
+---@field GUID string # Current player GUID fixture.
+---@field Level integer # Current player level.
+---@field FactionID integer # Current player faction.
+---@field RaceIndex integer # Current player race index.
+---@field Race string # Current player race token.
+---@field GameBuildVersion integer # Client build populated by the wrapper module.
+---@field IsForever boolean # Whether the build uses Forever name semantics.
+---@field IsRetail boolean # Whether the build uses Retail or Forever code paths.
+---@field IsClassic boolean # Whether the build uses Classic code paths.
+---@field CurrentCharacter ATTPlayerNameTestSavedCharacter # Refreshed saved player record.
+---@field Me string # Class-colored complete name and realm built during base initialization.
+---@field ClassName string # Class-colored localized class name.
+---@field ClassIndex integer # Current player class ID.
+---@field Class string # Current player class token.
+---@field WOWAPI { issecretvalue: fun(value: string): boolean } # Secret-GUID guard used by the unit cache.
+---@field print fun(...: string) # Silent sink for wrapper-availability messages.
+---@field LocalizeGlobalIfAllowed fun(key: string, initialize?: boolean): table<string, ATTPlayerNameTestSavedCharacter> # Saved-character table lookup.
 
 --- Mock native APIs and supporting metadata supplied to compiled source.
 ---@class ATTPlayerNameTestEnvironment
----@field GetBuildInfo fun(): string, string, string, integer Version, build label, date and numeric client build.
----@field GetRealmName fun(): string Actual current realm, with spaces retained.
----@field GetNormalizedRealmName fun(): string Normalized current realm alias.
----@field GetUnitName fun(unit: string, showServer?: boolean): string? Complete native name for an allowed unit.
----@field UnitName fun(unit: string): string?, string? Native first name and client-specific second component.
----@field UnitNameUnmodified fun(unit: string): string, string Unmodified player tuple that must not be used to obtain a realm.
----@field UnitFullName fun(unit: string): string?, string? Player or remote tuple with client-specific second-value semantics.
----@field NameUtil { GetUnmodifiedUnitFullName: fun(unit?: string): string } Reconstruction sentinel that must not be called.
----@field Constants { CharacterNameSeparatorConsts: { CHARACTERNAME_SURNAME_SEPARATOR: string } } Deliberately unrelated surname separator.
----@field UnitClass fun(unit?: string): string, string, integer Localized class, class token and class ID.
----@field UnitRace fun(unit?: string): string, string, integer Localized race, race token and race ID.
----@field UnitGUID fun(unit: string): string GUID for an allowed unit.
----@field RegionalUniqueNamesEnabled? fun(): boolean Whether complete regional names are available.
----@field GetPlayerInfoByGUID fun(guid: string): string, string, string, string, integer, string GUID class/race metadata and native name.
----@field issecretvalue fun(value: string): boolean Whether a GUID must be hidden from the cache.
----@field C_CreatureInfo { GetRaceInfo: fun(raceID?: integer): { raceName: string } } Localized race metadata.
----@field RAID_CLASS_COLORS table<string, { colorStr: string }> Class-color lookup by class token.
+---@field GetBuildInfo fun(): string, string, string, integer # Version, build label, date and numeric client build.
+---@field GetRealmName fun(): string # Actual current realm, with spaces retained.
+---@field GetNormalizedRealmName fun(): string # Normalized current realm alias.
+---@field GetUnitName fun(unit: string, showServer?: boolean): string? # Complete native name for an allowed unit.
+---@field UnitName fun(unit: string): string?, string? # Native first name and client-specific second component.
+---@field UnitNameUnmodified fun(unit: string): string, string # Unmodified player tuple that must not be used to obtain a realm.
+---@field UnitFullName fun(unit: string): string?, string? # Player or remote tuple with client-specific second-value semantics.
+---@field NameUtil { GetUnmodifiedUnitFullName: fun(unit?: string): string } # Reconstruction sentinel that must not be called.
+---@field Constants { CharacterNameSeparatorConsts: { CHARACTERNAME_SURNAME_SEPARATOR: string } } # Deliberately unrelated surname separator.
+---@field UnitClass fun(unit?: string): string, string, integer # Localized class, class token and class ID.
+---@field UnitRace fun(unit?: string): string, string, integer # Localized race, race token and race ID.
+---@field UnitGUID fun(unit: string): string # GUID for an allowed unit.
+---@field RegionalUniqueNamesEnabled? fun(): boolean # Whether complete regional names are available.
+---@field GetPlayerInfoByGUID fun(guid: string): string, string, string, string, integer, string # GUID class/race metadata and native name.
+---@field issecretvalue fun(value: string): boolean # Whether a GUID must be hidden from the cache.
+---@field C_CreatureInfo { GetRaceInfo: fun(raceID?: integer): { raceName: string } } # Localized race metadata.
+---@field RAID_CLASS_COLORS table<string, { colorStr: string }> # Class-color lookup by class token.
 
 --- Exported fixture initializer used by other character-name regression suites.
 ---@alias ATTPlayerNameTestInitializer fun(opts: ATTPlayerNameTestOptions): ATTPlayerNameTestApp, ATTPlayerNameTestCalls, ATTPlayerNameTestEnvironment
@@ -115,16 +115,16 @@
 local mode,fixtureRoot=...
 local root=fixtureRoot or arg[1] or "."
 --- Read one repository source file for extraction without executing the full addon.
----@param path string Repository-relative source path.
----@return string source Complete UTF-8 source file contents.
+---@param path string # Repository-relative source path.
+---@return string source # Complete UTF-8 source file contents.
 local function read(path)
 	local file=assert(io.open(root.."/"..path,"rb")); local value=file:read("*a"); file:close(); return value
 end
 --- Compile extracted source with fixture APIs under Lua 5.1 or later.
----@param source string Lua source to compile.
----@param name string Chunk name used in diagnostics.
----@param env ATTPlayerNameTestEnvironment Native API fixture and inherited Lua globals.
----@return function chunk Compiled source callable bound to the supplied environment.
+---@param source string # Lua source to compile.
+---@param name string # Chunk name used in diagnostics.
+---@param env ATTPlayerNameTestEnvironment # Native API fixture and inherited Lua globals.
+---@return function chunk # Compiled source callable bound to the supplied environment.
 local function compile(source,name,env)
 	if loadstring and setfenv then local chunk=assert(loadstring(source,name)); setfenv(chunk,env); return chunk end
 	return assert(load --[[@as fun(source: string, name: string, mode: string, env: ATTPlayerNameTestEnvironment): function?]](source,name,"t",env))
@@ -139,17 +139,17 @@ local unitSetup=assert(characterSource:match("(local function CacheCharacterData
 local characterSetup=assert(startup:match("(%-%- Character Data Storage.-app%.CurrentCharacter = currentCharacter;)"))
 --- Assert equality while retaining a caller-supplied failure explanation.
 ---@generic T
----@param actual T Value produced by the tested source.
----@param expected T Expected value or unchanged object reference.
----@param message? string Context included in the assertion failure.
+---@param actual T # Value produced by the tested source.
+---@param expected T # Expected value or unchanged object reference.
+---@param message? string # Context included in the assertion failure.
 local function equal(actual,expected,message)
 	assert(actual==expected,(message or "Values differ")..": expected "..tostring(expected)..", got "..tostring(actual))
 end
 local unpackValues=table.unpack or unpack
 --- Supply WoW's literal string splitter for the actual unit-token/GUID detection code.
----@param separator string Nonempty delimiter searched literally.
----@param value string String to split into consecutive fields.
----@return string ... Fields in their original order, including empty fields.
+---@param separator string # Nonempty delimiter searched literally.
+---@param value string # String to split into consecutive fields.
+---@return string ... # Fields in their original order, including empty fields.
 function string.split(separator,value)
 	local values,start={},1
 	while true do
@@ -162,10 +162,10 @@ local color="ffaabbcc"
 local rawRealm,normalizedRealm="Winter And Rivers","WinterAndRivers"
 --- Execute base and login identity initialization against native-name API fixtures.
 --- Return the initialized app, call counters and environment for further unit lookups.
----@param opts ATTPlayerNameTestOptions Player API values and optional saved or remote identities.
----@return ATTPlayerNameTestApp app Initialized addon fields and saved player record.
----@return ATTPlayerNameTestCalls calls Native API usage recorded during initialization.
----@return ATTPlayerNameTestEnvironment env Mock APIs available to later source snippets.
+---@param opts ATTPlayerNameTestOptions # Player API values and optional saved or remote identities.
+---@return ATTPlayerNameTestApp app # Initialized addon fields and saved player record.
+---@return ATTPlayerNameTestCalls calls # Native API usage recorded during initialization.
+---@return ATTPlayerNameTestEnvironment env # Mock APIs available to later source snippets.
 local function initialize(opts)
 	---@type table<integer, ATTNameTestSkillRank>
 	local oldSkills={[2259]={50,100}}
@@ -179,7 +179,7 @@ local function initialize(opts)
 	---@type ATTPlayerNameTestCalls
 	local calls={complete=0,realm=0,unit=0,unmodified=0,native=0,nameutil=0,regional=0,guidInfo=0,guid=0,class=0,race=0,secret=0,flags={}}
 	--- Reject API calls to unit tokens that this fixture does not define.
-	---@param unit string Requested player or configured remote unit token.
+	---@param unit string # Requested player or configured remote unit token.
 	local function expectUnit(unit)
 		assert(unit=="player" or unit==opts.remoteUnit,"Unexpected unit: "..tostring(unit))
 	end
@@ -223,7 +223,7 @@ local function initialize(opts)
 	---@cast env ATTPlayerNameTestEnvironment
 	if opts.regionalNames~=nil then
 		--- Record module-level feature detection independently from unit lookups.
-		---@return boolean enabled Whether native names include regional name components.
+		---@return boolean enabled # Whether native names include regional name components.
 		env.RegionalUniqueNamesEnabled=function() calls.regional=calls.regional+1; return not not opts.regionalNames end
 	end
 	compile(wrappers,"@src/WoW API Wrappers.lua",env)("AllTheThings",app)
@@ -244,10 +244,10 @@ local function initialize(opts)
 end
 if mode=="fixtures" then return initialize end
 --- Verify that base UI text and the saved login record contain the same complete identity.
----@param opts ATTPlayerNameTestOptions Player APIs and preexisting saved identity.
----@param name string Expected complete native player name.
----@param realm string Expected actual realm, retaining its original spaces.
----@return ATTPlayerNameTestCalls calls Initialization API counts and recorded flags.
+---@param opts ATTPlayerNameTestOptions # Player APIs and preexisting saved identity.
+---@param name string # Expected complete native player name.
+---@param realm string # Expected actual realm, retaining its original spaces.
+---@return ATTPlayerNameTestCalls calls # Initialization API counts and recorded flags.
 local function checkIdentity(opts,name,realm)
 	local app,calls=initialize(opts)
 	equal(app.CurrentCharacter.name,name,"Saved complete name")
@@ -258,9 +258,9 @@ local function checkIdentity(opts,name,realm)
 	return calls
 end
 --- Compile actual module-level name selection and the cache helper with fixture APIs.
----@param app ATTPlayerNameTestApp Initialized player identity and client-flavor flags.
----@param env ATTPlayerNameTestEnvironment Native APIs used by unit-token lookups.
----@return ATTPlayerNameTestUnitCache cache Callable that fills a unit identity cache record.
+---@param app ATTPlayerNameTestApp # Initialized player identity and client-flavor flags.
+---@param env ATTPlayerNameTestEnvironment # Native APIs used by unit-token lookups.
+---@return ATTPlayerNameTestUnitCache cache # Callable that fills a unit identity cache record.
 local function unitCache(app,env)
 	local prefix="local _,app=...\nlocal ClassInfoByClassFile={MAGE={classID=8}}\nlocal ClassInfoByID={[8]={icon=1}}\n"
 	return compile(prefix..unitNameSetup.."\n"..unitSetup.."\nreturn CacheCharacterDataFromAPIs","@src/Classes/CharacterClass.lua",env)("AllTheThings",app)
@@ -268,8 +268,8 @@ end
 ---@type integer, string[]
 local tests,failures=0,{}
 --- Run one named regression and retain its traceback without stopping later cases.
----@param name string Description of the behavior checked by this case.
----@param fn fun() Assertion callback; failures are captured with a traceback.
+---@param name string # Description of the behavior checked by this case.
+---@param fn fun() # Assertion callback; failures are captured with a traceback.
 local function test(name,fn)
 	tests=tests+1; local ok,err=xpcall(fn,debug.traceback)
 	if ok then print("PASS "..name) else failures[#failures+1]=name.."\n"..err; print("FAIL "..name) end
@@ -420,12 +420,12 @@ test("regional-name selection is cached across repeated unit lookups",function()
 	local cache=unitCache(app,env)
 	equal(calls.regional,1,"The feature API runs while the module locals initialize")
 	--- Fail if a lookup rechecks feature availability after module initialization.
-	---@return boolean enabled This sentinel never returns normally.
+	---@return boolean enabled # This sentinel never returns normally.
 	env.RegionalUniqueNamesEnabled=function() error("Feature selection must remain cached") end
 	--- Fail if a lookup resolves the name API again instead of using the selected local.
-	---@param unit string Unit token passed to an incorrectly reselected API.
-	---@param showServer? boolean Optional realm-display flag; unused by this sentinel.
-	---@return string? name This sentinel never returns normally.
+	---@param unit string # Unit token passed to an incorrectly reselected API.
+	---@param showServer? boolean # Optional realm-display flag; unused by this sentinel.
+	---@return string? name # This sentinel never returns normally.
 	env.GetUnitName=function(unit,showServer) error("Name API selection must remain cached: "..unit) end
 	for _=1,2 do
 		---@type ATTUnitIdentityCache

@@ -23,132 +23,132 @@
 
 --- Current and maximum ranks in one cached profession.
 ---@class ATTNameTestSkillRank
----@field [1] number Current profession rank.
----@field [2] number Maximum profession rank.
+---@field [1] number # Current profession rank.
+---@field [2] number # Maximum profession rank.
 
 --- Saved character fields shared by the name, tooltip and synchronization fixtures.
 ---@class ATTNameTestCharacter: ATTAccountCharacter
----@field Spells? table<integer, boolean> Known spell IDs, including recipe spells.
----@field Quests? table<integer, boolean> Completed quest IDs.
----@field PriorQuests? table<integer, boolean> Quest IDs completed before the current collection state.
----@field Mounts? table<integer, boolean> Collected mount IDs.
----@field ActiveSkills? table<integer, ATTNameTestSkillRank> Profession spell IDs mapped to current and maximum ranks.
----@field ignored? boolean Whether KnownBy omits the character.
----@field totalTimePlayed? number Cached played time in seconds.
----@field lastTimePlayedRecorded? number Timestamp of the last played-time update.
+---@field Spells? table<integer, boolean> # Known spell IDs, including recipe spells.
+---@field Quests? table<integer, boolean> # Completed quest IDs.
+---@field PriorQuests? table<integer, boolean> # Quest IDs completed before the current collection state.
+---@field Mounts? table<integer, boolean> # Collected mount IDs.
+---@field ActiveSkills? table<integer, ATTNameTestSkillRank> # Profession spell IDs mapped to current and maximum ranks.
+---@field ignored? boolean # Whether KnownBy omits the character.
+---@field totalTimePlayed? number # Cached played time in seconds.
+---@field lastTimePlayedRecorded? number # Timestamp of the last played-time update.
 
 --- Client flavor and local realm values supplied to a tooltip fixture.
 ---@class ATTTooltipTestOptions
----@field raw? string Exact local realm returned by GetRealmName.
----@field normalized? string Local realm returned by GetNormalizedRealmName.
----@field forever? boolean Whether the simulated client is Forever; defaults to true.
----@field classic? boolean Whether profession and OwnedBy processing use Classic behavior.
----@field build? integer Simulated client build; defaults to 16001.
+---@field raw? string # Exact local realm returned by GetRealmName.
+---@field normalized? string # Local realm returned by GetNormalizedRealmName.
+---@field forever? boolean # Whether the simulated client is Forever; defaults to true.
+---@field classic? boolean # Whether profession and OwnedBy processing use Classic behavior.
+---@field build? integer # Simulated client build; defaults to 16001.
 
 --- Counts calls made while formatting one character list.
 ---@class ATTTooltipTestCalls
----@field raw integer Calls to GetRealmName.
----@field normalized integer Calls to GetNormalizedRealmName.
+---@field raw integer # Calls to GetRealmName.
+---@field normalized integer # Calls to GetNormalizedRealmName.
 
 --- Collection fields supplied to the real KnownBy and CompletedBy processors.
 ---@class ATTTooltipTestReference: ATTKnownByReference
----@field spellID? integer Spell whose owning characters are displayed.
----@field questID? integer Quest whose current or prior completion is displayed.
----@field mountID? integer Mount whose owning characters are displayed.
----@field itemID? integer Item whose inventory count is appended to OwnedBy.
+---@field spellID? integer # Spell whose owning characters are displayed.
+---@field questID? integer # Quest whose current or prior completion is displayed.
+---@field mountID? integer # Mount whose owning characters are displayed.
+---@field itemID? integer # Item whose inventory count is appended to OwnedBy.
 
 --- Character and ranks passed to the Classic profession sorter.
 ---@class ATTTooltipTestProfessionRow
----@field [1] ATTNameTestCharacter Character owning the profession.
----@field [2] number Current rank used for sorting.
----@field [3] number Maximum rank displayed in the right column.
+---@field [1] ATTNameTestCharacter # Character owning the profession.
+---@field [2] number # Current rank used for sorting.
+---@field [3] number # Maximum rank displayed in the right column.
 
 --- Localized labels consumed by the extracted tooltip code.
 ---@class ATTTooltipTestLocale
----@field KNOWN_BY string Format containing %s for characters that know a thing.
----@field COMPLETED_BY string Format containing %s for characters that completed a thing.
----@field OWNED_BY string Format containing %s for characters that own a thing.
+---@field KNOWN_BY string # Format containing %s for characters that know a thing.
+---@field COMPLETED_BY string # Format containing %s for characters that completed a thing.
+---@field OWNED_BY string # Format containing %s for characters that own a thing.
 
 --- Mock game APIs used by collection and quantity processing.
 ---@class ATTTooltipTestWoWAPI
----@field GetItemCount fun(itemID: integer, includeBank?: boolean): integer Fixture inventory count, defaulting to one.
----@field IsQuestFlaggedCompletedOnAccount fun(questID: integer): boolean? Fixture account-wide completion state.
+---@field GetItemCount fun(itemID: integer, includeBank?: boolean): integer # Fixture inventory count, defaulting to one.
+---@field IsQuestFlaggedCompletedOnAccount fun(questID: integer): boolean? # Fixture account-wide completion state.
 
 --- Default character-name comparator passed to the fixture sorter.
 ---@class ATTTooltipTestSortDefaults
----@field name fun(a: ATTNameTestCharacter, b: ATTNameTestCharacter): boolean Complete-name ordering, with display-text fallback.
+---@field name fun(a: ATTNameTestCharacter, b: ATTNameTestCharacter): boolean # Complete-name ordering, with display-text fallback.
 
 --- Grouping settings disabled so this suite continues to exercise flat character names.
 ---@class ATTNameTestSettings
----@field GetTooltipSetting fun(self: ATTNameTestSettings, key: string): false Returns false for the realm and faction grouping switches.
+---@field GetTooltipSetting fun(self: ATTNameTestSettings, key: string): false # Returns false for the realm and faction grouping switches.
 
 --- Minimal addon services referenced by the extracted tooltip processors.
 ---@class ATTTooltipTestApp
----@field IsForever boolean Whether native names contain Forever surnames.
----@field IsClassic boolean Whether Classic-specific collection branches are enabled.
----@field GameBuildVersion integer Simulated client build.
----@field GUID string GUID of the simulated current character.
----@field CurrentCharacter? ATTAccountCharacter Optional saved current-character metadata.
----@field Settings ATTNameTestSettings Disabled grouping switches for flat-name regression cases.
----@field L ATTTooltipTestLocale KnownBy, CompletedBy and OwnedBy formats.
----@field Colors { TooltipDescription: string } Color assigned to appended description rows.
----@field AccountWideQuestsDB table<integer, boolean> Quest IDs tracked account-wide.
----@field WOWAPI ATTTooltipTestWoWAPI Inventory and account-completion mocks.
----@field SortDefaults ATTTooltipTestSortDefaults Default complete-name comparison.
----@field Sort fun(values: (ATTNameTestCharacter|ATTTooltipTestProfessionRow)[], compare: function) Sorts character records or profession rows using the supplied comparator.
----@field wipearray fun(values: (ATTNameTestCharacter|ATTTooltipTestProfessionRow)[]) Clears the array shared by consecutive tooltip calls.
+---@field IsForever boolean # Whether native names contain Forever surnames.
+---@field IsClassic boolean # Whether Classic-specific collection branches are enabled.
+---@field GameBuildVersion integer # Simulated client build.
+---@field GUID string # GUID of the simulated current character.
+---@field CurrentCharacter? ATTAccountCharacter # Optional saved current-character metadata.
+---@field Settings ATTNameTestSettings # Disabled grouping switches for flat-name regression cases.
+---@field L ATTTooltipTestLocale # KnownBy, CompletedBy and OwnedBy formats.
+---@field Colors { TooltipDescription: string } # Color assigned to appended description rows.
+---@field AccountWideQuestsDB table<integer, boolean> # Quest IDs tracked account-wide.
+---@field WOWAPI ATTTooltipTestWoWAPI # Inventory and account-completion mocks.
+---@field SortDefaults ATTTooltipTestSortDefaults # Default complete-name comparison.
+---@field Sort fun(values: (ATTNameTestCharacter|ATTTooltipTestProfessionRow)[], compare: function) # Sorts character records or profession rows using the supplied comparator.
+---@field wipearray fun(values: (ATTNameTestCharacter|ATTTooltipTestProfessionRow)[]) # Clears the array shared by consecutive tooltip calls.
 
 --- Globals injected while the real tooltip section is compiled.
 ---@class ATTTooltipTestEnvironment
----@field ATTCharacterData table<string, ATTNameTestCharacter> Saved character records indexed by fixture keys.
----@field GetRealmName fun(): string Exact local realm mock.
----@field GetNormalizedRealmName fun(): string Normalized local realm mock.
----@field ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE string Account-wide ownership notice.
----@field ACCOUNT_COMPLETED_QUEST_NOTICE string Prior account-completion notice.
+---@field ATTCharacterData table<string, ATTNameTestCharacter> # Saved character records indexed by fixture keys.
+---@field GetRealmName fun(): string # Exact local realm mock.
+---@field GetNormalizedRealmName fun(): string # Normalized local realm mock.
+---@field ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE string # Account-wide ownership notice.
+---@field ACCOUNT_COMPLETED_QUEST_NOTICE string # Prior account-completion notice.
 
 --- Real processor functions exported by the generated tooltip chunk.
 ---@class ATTTooltipTestProcessors
----@field known fun(context: unknown, reference: ATTTooltipTestReference, rows: ATTTooltipLine[]) Appends KnownBy rows; context is unused.
----@field completed fun(context: unknown, reference: ATTTooltipTestReference, rows: ATTTooltipLine[]) Appends CompletedBy or OwnedBy rows.
----@field render fun(characters: ATTNameTestCharacter[], kind: string): ATTTooltipLine[] Formats an explicit list through the shared builder.
+---@field known fun(context: unknown, reference: ATTTooltipTestReference, rows: ATTTooltipLine[]) # Appends KnownBy rows; context is unused.
+---@field completed fun(context: unknown, reference: ATTTooltipTestReference, rows: ATTTooltipLine[]) # Appends CompletedBy or OwnedBy rows.
+---@field render fun(characters: ATTNameTestCharacter[], kind: string): ATTTooltipLine[] # Formats an explicit list through the shared builder.
 
 ---@alias ATTTooltipTestProcessorKind "known"|"completed"
 
 --- Mutable collection state, API counters and processor entry points for one test.
 ---@class ATTTooltipTestFixture
----@field app ATTTooltipTestApp Addon services supplied to the extracted code.
----@field data table<string, ATTNameTestCharacter> Saved characters consulted by the real processors.
----@field inventory table<integer, integer> Item IDs mapped to owning quantities.
----@field accountQuests table<integer, boolean> Quest IDs with account-wide completion.
----@field calls ATTTooltipTestCalls Realm API call counts.
----@field processors ATTTooltipTestProcessors Actual addon processor functions.
----@field run fun(self: ATTTooltipTestFixture, kind: ATTTooltipTestProcessorKind, reference: ATTTooltipTestReference): ATTTooltipLine[] Executes a collection processor with fresh output rows.
+---@field app ATTTooltipTestApp # Addon services supplied to the extracted code.
+---@field data table<string, ATTNameTestCharacter> # Saved characters consulted by the real processors.
+---@field inventory table<integer, integer> # Item IDs mapped to owning quantities.
+---@field accountQuests table<integer, boolean> # Quest IDs with account-wide completion.
+---@field calls ATTTooltipTestCalls # Realm API call counts.
+---@field processors ATTTooltipTestProcessors # Actual addon processor functions.
+---@field run fun(self: ATTTooltipTestFixture, kind: ATTTooltipTestProcessorKind, reference: ATTTooltipTestReference): ATTTooltipLine[] # Executes a collection processor with fresh output rows.
 
 --- Addon placeholder required when loading the Summary serializer definitions.
 ---@class ATTTooltipTestSummaryApp
----@field EmptyFunction fun() Callback used for ignored synchronization fields.
+---@field EmptyFunction fun() # Callback used for ignored synchronization fields.
 
 --- Globals injected into the extracted account serialization section.
 ---@class ATTTooltipTestSummaryEnvironment
----@field app ATTTooltipTestSummaryApp Ignored-field callback provider.
+---@field app ATTTooltipTestSummaryApp # Ignored-field callback provider.
 
 --- Real twelve-field Summary functions exported by the generated account chunk.
 ---@class ATTTooltipTestSummaryAPI
----@field serialize fun(character: ATTNameTestCharacter): string Encodes the saved identity and metadata.
----@field deserialize fun(field: string, currentValue: unknown, data: ATTCharacterSummaryFields, character: ATTNameTestCharacter) Applies Summary fields and clears Identifier only when name or realm changes.
+---@field serialize fun(character: ATTNameTestCharacter): string # Encodes the saved identity and metadata.
+---@field deserialize fun(field: string, currentValue: unknown, data: ATTCharacterSummaryFields, character: ATTNameTestCharacter) # Applies Summary fields and clears Identifier only when name or realm changes.
 
 local root=arg[1] or "."
 --- Reads an addon or fixture source file relative to the repository root.
----@param path string Repository-relative Lua file path.
----@return string source Complete file contents.
+---@param path string # Repository-relative Lua file path.
+---@return string source # Complete file contents.
 local function read(path)
 	local file=assert(io.open(root.."/"..path,"rb")); local value=file:read("*a"); file:close(); return value
 end
 --- Compiles extracted addon code using optional fixture globals.
----@param source string Lua source to compile.
----@param name string Chunk label used in syntax errors and tracebacks.
----@param env ATTTooltipTestEnvironment|ATTTooltipTestSummaryEnvironment|nil Injected globals; nil keeps the normal global environment.
----@return function chunk Compiled code whose exported functions are typed at each call site.
+---@param source string # Lua source to compile.
+---@param name string # Chunk label used in syntax errors and tracebacks.
+---@param env ATTTooltipTestEnvironment|ATTTooltipTestSummaryEnvironment|nil # Injected globals; nil keeps the normal global environment.
+---@return function chunk # Compiled code whose exported functions are typed at each call site.
 local function compile(source,name,env)
 	if loadstring and setfenv then
 		local chunk=assert(loadstring(source,name)); if env then setfenv(chunk,env) end; return chunk
@@ -157,31 +157,31 @@ local function compile(source,name,env)
 	return assert(load --[[@as fun(source: string, name: string, mode: string, env: ATTTooltipTestEnvironment|ATTTooltipTestSummaryEnvironment|_G): function?]](source,name,"t",env or _G))
 end
 --- Checks an exact value and reports both sides when the assertion fails.
----@param actual unknown Value produced by the code under test.
----@param expected unknown Required value, including nil for missing data.
----@param message string? Optional context included in the failure message.
+---@param actual unknown # Value produced by the code under test.
+---@param expected unknown # Required value, including nil for missing data.
+---@param message string? # Optional context included in the failure message.
 local function equal(actual,expected,message)
 	assert(actual==expected,(message or "Values differ")..": expected "..tostring(expected)..", got "..tostring(actual))
 end
 --- Checks a literal text fragment without interpreting Lua pattern characters.
----@param value string Rendered tooltip text to inspect.
----@param part string Exact fragment that must remain in the output.
+---@param value string # Rendered tooltip text to inspect.
+---@param part string # Exact fragment that must remain in the output.
 local function contains(value,part)
 	assert(value:find(part,1,true),"Missing "..part.." in "..value)
 end
 --- Joins tooltip columns so assertions can inspect all appended rows.
----@param rows ATTTooltipLine[] Left and optional right text from the actual processors.
----@return string rendered Rows joined with spaces between columns and newlines between rows.
+---@param rows ATTTooltipLine[] # Left and optional right text from the actual processors.
+---@return string rendered # Rows joined with spaces between columns and newlines between rows.
 local function text(rows)
 	local result={}; for _,row in ipairs(rows) do result[#result+1]=(row.left or "").." "..(row.right or "") end
 	return table.concat(result,"\n")
 end
 local rawRealm,normalizedRealm="Winter And Rivers","WinterAndRivers"
 --- Builds a spell-owning character with standard class-colored display text.
----@param name string Complete native character name, including any surname.
----@param realm string Actual server name kept separate from the character name.
----@param extra ATTNameTestCharacter? Saved fields overriding the defaults, such as build, GUID or text.
----@return ATTNameTestCharacter character Saved identity and collection record for the fixture.
+---@param name string # Complete native character name, including any surname.
+---@param realm string # Actual server name kept separate from the character name.
+---@param extra ATTNameTestCharacter? # Saved fields overriding the defaults, such as build, GUID or text.
+---@return ATTNameTestCharacter character # Saved identity and collection record for the fixture.
 local function character(name,realm,extra)
 	local result={name=name,realm=realm,text="|cffaabbcc"..name.."-"..realm.."|r",Spells={[10]=true},factionID=2}
 	for k,v in pairs(extra or {}) do result[k]=v end
@@ -212,8 +212,8 @@ return {known=ProcessForKnownBy,completed=ProcessForCompletedBy,
 	end}
 ]]
 --- Loads the real tooltip processors with independent client and collection state.
----@param opts ATTTooltipTestOptions? Flavor, build and realm overrides; omitted fields use the default Forever client.
----@return ATTTooltipTestFixture fixture Mutable saved data, mocked APIs and actual processor entry points.
+---@param opts ATTTooltipTestOptions? # Flavor, build and realm overrides; omitted fields use the default Forever client.
+---@return ATTTooltipTestFixture fixture # Mutable saved data, mocked APIs and actual processor entry points.
 local function fixture(opts)
 	opts=opts or {}
 	local calls={raw=0,normalized=0}
@@ -224,42 +224,42 @@ local function fixture(opts)
 		IsForever=opts.forever~=false,IsClassic=opts.classic or false,GameBuildVersion=opts.build or 16001,GUID="current",
 		Settings={
 			--- Keeps both grouping switches disabled for the existing flat-name cases.
-			---@param _self ATTNameTestSettings Fixture settings instance.
-			---@param _key string Tooltip grouping setting being queried.
-			---@return false enabled Grouping remains disabled in this suite.
+			---@param _self ATTNameTestSettings # Fixture settings instance.
+			---@param _key string # Tooltip grouping setting being queried.
+			---@return false enabled # Grouping remains disabled in this suite.
 			GetTooltipSetting=function(_self,_key) return false end,
 		},L={KNOWN_BY="Known by %s",COMPLETED_BY="Completed by %s",OWNED_BY="Owned by %s"},
 		Colors={TooltipDescription="description"},AccountWideQuestsDB={},WOWAPI={},
 		SortDefaults={
 			--- Compares complete names, using display text for text-only account notices.
-			---@param a ATTNameTestCharacter First character or account notice.
-			---@param b ATTNameTestCharacter Second character or account notice.
-			---@return boolean before Whether a sorts before b.
+			---@param a ATTNameTestCharacter # First character or account notice.
+			---@param b ATTNameTestCharacter # Second character or account notice.
+			---@return boolean before # Whether a sorts before b.
 			name=function(a,b) return (a.name or a.text or "")<(b.name or b.text or "") end
 		},
 		--- Sorts the supplied character records or Classic profession rows in place.
 		---@generic T
-		---@param values T[] Array passed by the real tooltip processor.
-		---@param compare fun(a: T, b: T): boolean Ordering predicate for the array entries.
+		---@param values T[] # Array passed by the real tooltip processor.
+		---@param compare fun(a: T, b: T): boolean # Ordering predicate for the array entries.
 		Sort=function(values,compare) table.sort(values,compare) end,
 		--- Clears reusable tooltip entries after each processor call.
 		---@generic T
-		---@param values T[] Mutable array to empty.
+		---@param values T[] # Mutable array to empty.
 		wipearray=function(values) for i=#values,1,-1 do values[i]=nil end end,
 	}
 	--- Returns the exact fixture realm and records one native API call.
-	---@return string realm Exact local realm name.
+	---@return string realm # Exact local realm name.
 	local getRealmName=function() calls.raw=calls.raw+1; return raw end
 	--- Returns the normalized fixture realm and records one native API call.
-	---@return string realm Normalized local realm name.
+	---@return string realm # Normalized local realm name.
 	local getNormalizedRealmName=function() calls.normalized=calls.normalized+1; return normalized end
 	--- Supplies item quantities used by the actual OwnedBy processor.
-	---@param id integer Item ID queried by the addon.
-	---@return integer count Fixture quantity, defaulting to one.
+	---@param id integer # Item ID queried by the addon.
+	---@return integer count # Fixture quantity, defaulting to one.
 	app.WOWAPI.GetItemCount=function(id) return inventory[id] or 1 end
 	--- Supplies the account-wide completion state for a quest notice.
-	---@param id integer Quest ID queried by the addon.
-	---@return boolean? completed Recorded completion state; nil means no fixture entry.
+	---@param id integer # Quest ID queried by the addon.
+	---@return boolean? completed # Recorded completion state; nil means no fixture entry.
 	app.WOWAPI.IsQuestFlaggedCompletedOnAccount=function(id) return accountQuests[id] end
 	---@cast app ATTTooltipTestApp
 	local env=setmetatable({ATTCharacterData=data,GetRealmName=getRealmName,GetNormalizedRealmName=getNormalizedRealmName,
@@ -269,9 +269,9 @@ local function fixture(opts)
 	local processors=compile(program,"actual-tooltip-processors",env)("AllTheThings",app)
 	local result={app=app,data=data,inventory=inventory,accountQuests=accountQuests,calls=calls,processors=processors}
 	--- Runs an actual collection processor with a new output array.
-	---@param kind ATTTooltipTestProcessorKind KnownBy or CompletedBy entry point to execute.
-	---@param reference ATTTooltipTestReference Collection fields selecting the branch under test.
-	---@return ATTTooltipLine[] rows Processor output including text, colors and optional rank columns.
+	---@param kind ATTTooltipTestProcessorKind # KnownBy or CompletedBy entry point to execute.
+	---@param reference ATTTooltipTestReference # Collection fields selecting the branch under test.
+	---@return ATTTooltipLine[] rows # Processor output including text, colors and optional rank columns.
 	function result:run(kind,reference)
 		local rows={}; self.processors[kind]({},reference,rows); return rows
 	end
@@ -279,7 +279,7 @@ local function fixture(opts)
 	return result
 end
 --- Loads the real Summary serializer and deserializer with ignored-field stubs.
----@return ATTTooltipTestSummaryAPI sync Actual twelve-field account synchronization functions.
+---@return ATTTooltipTestSummaryAPI sync # Actual twelve-field account synchronization functions.
 local function accountSync()
 	local account=read("src/UI/Windows/Account Management.lua")
 	local definitions=assert(account:match("(%-%- Data Handling.-)%-%- Serialization"))
@@ -295,8 +295,8 @@ end
 local initializePlayer=compile(read("tests/player-names.lua"),"player-name-fixtures")("fixtures",root)
 local tests,failures=0,{}
 --- Executes one named case and accumulates failures without stopping later cases.
----@param name string Behavior printed with the PASS or FAIL result.
----@param fn fun() Assertion callback for the case; a raised error records a failure.
+---@param name string # Behavior printed with the PASS or FAIL result.
+---@param fn fun() # Assertion callback for the case; a raised error records a failure.
 local function test(name,fn)
 	tests=tests+1; local ok,err=xpcall(fn,debug.traceback)
 	if ok then print("PASS "..name) else failures[#failures+1]=name.."\n"..err; print("FAIL "..name) end
@@ -451,8 +451,8 @@ test("profession KnownBy preserves saved names and ranks",function()
 end)
 
 --- Checks the Summary marker and returns its twelve positional string fields.
----@param wire string Serialized Summary message produced by the actual addon code.
----@return ATTCharacterSummaryFields fields Identity and metadata in the addon wire order.
+---@param wire string # Serialized Summary message produced by the actual addon code.
+---@return ATTCharacterSummaryFields fields # Identity and metadata in the addon wire order.
 local function summaryFields(wire)
 	local fields={string.split(";",wire)}; equal(table.remove(fields,1),"Summary"); return fields
 end

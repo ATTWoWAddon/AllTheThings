@@ -1328,8 +1328,8 @@ ATTSettingsPanelMixin = {
 		end
 		--- Settings checkbox with an ATT text label and refresh/click handlers.
 		---@class ATTSettingsCheckButton: CheckButton
-		---@field Text FontString Text label displayed beside the settings checkbox.
-		---@field OnRefreshCheckedDisabled any Default refresh handler that checks, disables, and fades the checkbox.
+		---@field Text FontString # Text label displayed beside the settings checkbox.
+		---@field OnRefreshCheckedDisabled any # Default refresh handler that checks, disables, and fades the checkbox.
 		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, settings.UITemplates.Checkbox)
 		Mixin(cb, ATTSettingsObjectMixin);
 		self:RegisterObject(cb);
@@ -1354,7 +1354,7 @@ ATTSettingsPanelMixin = {
 
 		--- Settings text input with optional labels and configurable handlers.
 		---@class ATTOptionsEditBox: EditBox
-		---@field AddLabel fun(self:any, label: string) Creates and registers a text label above the edit box.
+		---@field AddLabel fun(self:any, label: string) # Creates and registers a text label above the edit box.
 		local editbox = CreateFrame("EditBox", name, self, template)
 		Mixin(editbox, ATTSettingsObjectMixin);
 		self:RegisterObject(editbox);
@@ -1567,8 +1567,8 @@ end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
 	--- Settings page frame registered as an options category or subcategory.
 	---@class ATTSubCategoryFrame: Frame
-	---@field CreateCheckBox fun(self: any, locale: string, OnRefresh: function, OnClick: function) Creates a labeled settings checkbox with refresh and click handlers.
-	---@field CreateHeaderLabel fun(self: any, locale: string) Creates and registers a left-aligned settings section heading.
+	---@field CreateCheckBox fun(self: any, locale: string, OnRefresh: function, OnClick: function) # Creates a labeled settings checkbox with refresh and click handlers.
+	---@field CreateHeaderLabel fun(self: any, locale: string) # Creates and registers a left-aligned settings section heading.
 	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);

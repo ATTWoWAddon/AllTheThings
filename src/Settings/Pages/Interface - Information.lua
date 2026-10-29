@@ -239,43 +239,43 @@ local knownBy = {};
 --- Left and right text, color, and wrapping options for one appended tooltip row.
 --- Used by collection information processors and synchronization queue tooltips.
 ---@class ATTTooltipLine
----@field left? string Left-column text.
----@field right? string Right-column text.
----@field color? string Eight-digit ARGB hexadecimal color.
----@field wrap? boolean Whether the left text wraps.
----@field r? number Red color component.
----@field g? number Green color component.
----@field b? number Blue color component.
----@field a? number Alpha color component.
+---@field left? string # Left-column text.
+---@field right? string # Right-column text.
+---@field color? string # Eight-digit ARGB hexadecimal color.
+---@field wrap? boolean # Whether the left text wraps.
+---@field r? number # Red color component.
+---@field g? number # Green color component.
+---@field b? number # Blue color component.
+---@field a? number # Alpha color component.
 
 --- Collection type, ID, character cache, and tracking flags supplied to KnownBy.
 --- Selects which saved collection records the character-list processor consults.
 ---@class ATTKnownByReference
----@field knownByID? number Collection ID overriding the spell ID.
----@field spellID? SpellID Spell to find in character collection caches.
----@field key? string Primary field identifying the collection type.
----@field __type? string ATT object type used for account-wide filtering.
----@field perCharacter? boolean Whether this thing is tracked per character.
----@field CACHE? string Saved character cache containing this collection.
+---@field knownByID? number # Collection ID overriding the spell ID.
+---@field spellID? SpellID # Spell to find in character collection caches.
+---@field key? string # Primary field identifying the collection type.
+---@field __type? string # ATT object type used for account-wide filtering.
+---@field perCharacter? boolean # Whether this thing is tracked per character.
+---@field CACHE? string # Saved character cache containing this collection.
 
 --- Identifier, localized label, and display priority for a registered information type.
 --- Used by the Interface Information page to configure and order tooltip information.
 ---@class ATTInformationType
----@field informationTypeID string Registered information type identifier.
----@field text? string Localized label for the information type.
----@field priority? number Display sort order.
+---@field informationTypeID string # Registered information type identifier.
+---@field text? string # Localized label for the information type.
+---@field priority? number # Display sort order.
 
 --- Saved character identity with faction grouping and account-ignore state.
 ---@class ATTTooltipCharacter: ATTCharacterIdentity
----@field factionID integer? Horde or Alliance faction ID used for the localized group label.
----@field ignored boolean? Excludes the character from tooltip lists.
+---@field factionID integer? # Horde or Alliance faction ID used for the localized group label.
+---@field ignored boolean? # Excludes the character from tooltip lists.
 
 --- Shortens local or realm-grouped character names while preserving colors and quantities.
----@param character ATTCharacterIdentity? Saved UI text and actual realm to format; nil yields "???".
----@param realmName string Exact local realm name returned by GetRealmName.
----@param normalizedRealmName string Normalized local realm name returned by GetNormalizedRealmName.
----@param stripRealm boolean? Also remove a remote saved realm when it is already shown by a group heading.
----@return string displayName Saved UI text with the matching realm suffix omitted, retaining colors and quantities.
+---@param character ATTCharacterIdentity? # Saved UI text and actual realm to format; nil yields "???".
+---@param realmName string # Exact local realm name returned by GetRealmName.
+---@param normalizedRealmName string # Normalized local realm name returned by GetNormalizedRealmName.
+---@param stripRealm boolean? # Also remove a remote saved realm when it is already shown by a group heading.
+---@return string displayName # Saved UI text with the matching realm suffix omitted, retaining colors and quantities.
 local function GetCharacterDisplayName(character, realmName, normalizedRealmName, stripRealm)
 	if not character then return "???"; end
 	local text = character.text or "???";
@@ -299,26 +299,26 @@ local function GetCharacterDisplayName(character, realmName, normalizedRealmName
 	return text;
 end
 --- Return the localized faction label for a character.
----@param character ATTTooltipCharacter Character record whose faction is displayed.
----@return string factionName Localized Horde or Alliance label, or Unknown when no faction is saved.
+---@param character ATTTooltipCharacter # Character record whose faction is displayed.
+---@return string factionName # Localized Horde or Alliance label, or Unknown when no faction is saved.
 local function GetCharacterFactionName(character)
 	if character.factionID == Enum.FlightPathFaction.Horde then return FACTION_HORDE; end
 	if character.factionID == Enum.FlightPathFaction.Alliance then return FACTION_ALLIANCE; end
 	return UNKNOWN;
 end
 --- Return the saved realm label or Unknown.
----@param character ATTTooltipCharacter Character record whose realm is displayed.
----@return string realmName Saved realm, or Unknown when it is missing.
+---@param character ATTTooltipCharacter # Character record whose realm is displayed.
+---@return string realmName # Saved realm, or Unknown when it is missing.
 local function GetCharacterRealmName(character)
 	local realm = character.realm;
 	return realm and realm ~= "" and realm or UNKNOWN;
 end
 --- Compare characters by enabled realm and faction groups, then by plain name.
----@param a ATTTooltipCharacter First character record.
----@param b ATTTooltipCharacter Second character record.
----@param groupByRealm boolean Whether to group characters by realm.
----@param groupByFaction boolean Whether to group characters by faction.
----@return boolean precedes Whether the first character sorts before the second.
+---@param a ATTTooltipCharacter # First character record.
+---@param b ATTTooltipCharacter # Second character record.
+---@param groupByRealm boolean # Whether to group characters by realm.
+---@param groupByFaction boolean # Whether to group characters by faction.
+---@return boolean precedes # Whether the first character sorts before the second.
 local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
 	if groupByRealm then
 		local realmA, realmB = GetCharacterRealmName(a), GetCharacterRealmName(b);
@@ -333,8 +333,8 @@ local function SortCharactersForGrouping(a, b, groupByRealm, groupByFaction)
 	return nameA < nameB;
 end
 --- Append the collected characters using the selected grouping settings, then clear the collection.
----@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving group headings and character names.
----@param kind string? Localized heading with a single character-list format placeholder.
+---@param tooltipInfo ATTTooltipLine[] # Tooltip rows receiving group headings and character names.
+---@param kind string? # Localized heading with a single character-list format placeholder.
 ---@return nil
 local function BuildKnownByInfoForKind(tooltipInfo, kind)
 	local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
@@ -348,9 +348,9 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 		if groupByRealm or groupByFaction then
 			app.Sort(knownBy,
 				--- Apply the current grouping settings when sorting character records.
-				---@param a ATTTooltipCharacter First character record.
-				---@param b ATTTooltipCharacter Second character record.
-				---@return boolean precedes Whether the first character sorts before the second.
+				---@param a ATTTooltipCharacter # First character record.
+				---@param b ATTTooltipCharacter # Second character record.
+				---@return boolean precedes # Whether the first character sorts before the second.
 				function(a, b)
 					return SortCharactersForGrouping(a, b, groupByRealm, groupByFaction);
 				end);
@@ -530,14 +530,14 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 end
 --- A Classic profession entry retaining its character, current rank and maximum rank.
 ---@class ATTTooltipProfessionRank
----@field [1] ATTTooltipCharacter Character that owns this profession.
----@field [2] number Current saved profession rank, used for descending sort order.
----@field [3] number Maximum saved profession rank, displayed beside the current rank.
+---@field [1] ATTTooltipCharacter # Character that owns this profession.
+---@field [2] number # Current saved profession rank, used for descending sort order.
+---@field [3] number # Maximum saved profession rank, displayed beside the current rank.
 
 --- Adds known-character entries and Classic profession ranks to the tooltip.
----@param t ATTInformationType? Information type descriptor (unused).
----@param reference ATTKnownByReference Collection, spell, and cache fields used to find known characters.
----@param tooltipInfo ATTTooltipLine[] Mutable array receiving appended tooltip lines.
+---@param t ATTInformationType? # Information type descriptor (unused).
+---@param reference ATTKnownByReference # Collection, spell, and cache fields used to find known characters.
+---@param tooltipInfo ATTTooltipLine[] # Mutable array receiving appended tooltip lines.
 local function ProcessForKnownBy(t, reference, tooltipInfo)
 	-- This is to show which characters have this profession.
 	local id = reference.knownByID or reference.spellID
@@ -552,9 +552,9 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			if #knownBy > 0 then
 				app.Sort(knownBy,
 					--- Order Classic profession entries by their saved current rank.
-					---@param a ATTTooltipProfessionRank First character, current rank and maximum rank.
-					---@param b ATTTooltipProfessionRank Second character, current rank and maximum rank.
-					---@return boolean precedes Whether the first rank is higher.
+					---@param a ATTTooltipProfessionRank # First character, current rank and maximum rank.
+					---@param b ATTTooltipProfessionRank # Second character, current rank and maximum rank.
+					---@return boolean precedes # Whether the first rank is higher.
 					function(a, b)
 					return a[2] > b[2];
 				end);
@@ -593,22 +593,22 @@ end
 
 --- Recipe metadata and inherited character restrictions used to check learning eligibility.
 ---@class ATTRecipeEligibilityReference
----@field recipeID integer? Recipe spell ID identifying an actual recipe.
----@field knownByID integer? Alternate recipe ID on a linked object.
----@field spellID integer? Spell ID used to find the linked recipe.
----@field skillID integer? Required profession, expansion skill line or specialization ID.
----@field requireSkill integer? Required skill ID inherited from a parent when absent on the recipe.
----@field learnedAt number? Minimum skill rank; defaults to one.
----@field r integer? Required faction ID; zero means unrestricted.
----@field c integer[]? Permitted class IDs inherited from recipe parents.
----@field races integer[]? Permitted race IDs inherited from recipe parents.
----@field parent ATTRecipeEligibilityReference? Display parent providing inherited requirements.
----@field sourceParent ATTRecipeEligibilityReference? Original source parent taking precedence over display parents.
+---@field recipeID integer? # Recipe spell ID identifying an actual recipe.
+---@field knownByID integer? # Alternate recipe ID on a linked object.
+---@field spellID integer? # Spell ID used to find the linked recipe.
+---@field skillID integer? # Required profession, expansion skill line or specialization ID.
+---@field requireSkill integer? # Required skill ID inherited from a parent when absent on the recipe.
+---@field learnedAt number? # Minimum skill rank; defaults to one.
+---@field r integer? # Required faction ID; zero means unrestricted.
+---@field c integer[]? # Permitted class IDs inherited from recipe parents.
+---@field races integer[]? # Permitted race IDs inherited from recipe parents.
+---@field parent ATTRecipeEligibilityReference? # Display parent providing inherited requirements.
+---@field sourceParent ATTRecipeEligibilityReference? # Original source parent taking precedence over display parents.
 
 --- Append characters eligible to learn a recipe using saved ranks and character restrictions.
----@param t ATTInformationType? Information type descriptor (unused).
----@param reference ATTRecipeEligibilityReference Recipe or linked object whose requirements are checked.
----@param tooltipInfo ATTTooltipLine[] Tooltip rows receiving eligible character names.
+---@param t ATTInformationType? # Information type descriptor (unused).
+---@param reference ATTRecipeEligibilityReference # Recipe or linked object whose requirements are checked.
+---@param tooltipInfo ATTTooltipLine[] # Tooltip rows receiving eligible character names.
 ---@return nil
 local function ProcessForUsefulFor(t, reference, tooltipInfo)
 	-- Only actual recipes can be useful to a character; arbitrary item/spell IDs are not recipes.
@@ -1787,7 +1787,7 @@ local function OnRefreshForInformationCheckBox(self)
 end
 --- Applies an All, Default, or None preset to the visible Information options.
 --- Refreshes the active tooltip information and settings controls.
----@param value boolean|nil true enables all; false disables all; nil clears overrides to restore ATT defaults.
+---@param value boolean|nil # true enables all; false disables all; nil clears overrides to restore ATT defaults.
 local function SetInformationTypes(value)
 	for _,informationType in ipairs(SortedInformationTypesByName) do
 		-- nil removes the override so the profile uses ATT's default value.

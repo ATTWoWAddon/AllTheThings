@@ -7,8 +7,8 @@
 local root = arg[1] or ".";
 local unpack = table.unpack or unpack;
 --- Reads addon source relative to the optional repository root and normalizes line endings.
----@param path string Repository-relative Lua source path.
----@return string source Complete source text using LF newlines for stable extraction patterns.
+---@param path string # Repository-relative Lua source path.
+---@return string source # Complete source text using LF newlines for stable extraction patterns.
 local function ReadFile(path)
 	local file = assert(io.open(root .. "/" .. path, "r"));
 	local content = file:read("*a"):gsub("\r\n", "\n");
@@ -16,9 +16,9 @@ local function ReadFile(path)
 	return content;
 end
 --- Compiles an extracted addon module for execution with the rank-fixture application.
----@param source string Actual addon source selected by the fixture.
----@param name string File label used in syntax errors and tracebacks.
----@return fun(addonName: string, app: ATTProfessionRankTestApp) chunk Compiled addon initializer receiving the fixture services.
+---@param source string # Actual addon source selected by the fixture.
+---@param name string # File label used in syntax errors and tracebacks.
+---@return fun(addonName: string, app: ATTProfessionRankTestApp) chunk # Compiled addon initializer receiving the fixture services.
 local function Compile(source, name)
 	return assert((loadstring or load)(source, "@" .. name));
 end
@@ -37,37 +37,37 @@ local now = 1000;
 time = function() return now; end
 --- A delayed callback recorded by the fixture's controllable timer.
 ---@class ATTProfessionRankTestTimer
----@field [1] number Delay requested by the real callback scheduler.
----@field [2] fun() Pending callback invoked when the fixture flushes timers.
+---@field [1] number # Delay requested by the real callback scheduler.
+---@field [2] fun() # Pending callback invoked when the fixture flushes timers.
 
 --- Current and maximum ranks in one pre-existing Classic skill cache entry.
 ---@class ATTProfessionRankTestSkillRank
----@field [1] number Current rank that Retail refresh must preserve.
----@field [2] number Maximum rank retained with that entry.
+---@field [1] number # Current rank that Retail refresh must preserve.
+---@field [2] number # Maximum rank retained with that entry.
 
 --- Character-owned professions and synchronization timestamps used by the rank cache.
 ---@class ATTProfessionRankTestCharacter
----@field Professions table<integer, boolean|number> Owned base professions, specializations, and always-available skills.
----@field ActiveSkills table<integer, ATTProfessionRankTestSkillRank> Existing Classic skill tuples that Retail refresh must preserve.
----@field ProfessionRanks? ATTProfessionRanks Current base and expansion ranks keyed by their own skill-line IDs.
----@field TimeStamps? table<string, number> Last change timestamp for each synchronized cache field.
----@field lastPlayed? number Character timestamp advanced by cache changes.
+---@field Professions table<integer, boolean|number> # Owned base professions, specializations, and always-available skills.
+---@field ActiveSkills table<integer, ATTProfessionRankTestSkillRank> # Existing Classic skill tuples that Retail refresh must preserve.
+---@field ProfessionRanks? ATTProfessionRanks # Current base and expansion ranks keyed by their own skill-line IDs.
+---@field TimeStamps? table<string, number> # Last change timestamp for each synchronized cache field.
+---@field lastPlayed? number # Character timestamp advanced by cache changes.
 
 --- Mock addon services plus observable effects of the actual Retail rank-refresh code.
 ---@class ATTProfessionRankTestApp
----@field CurrentCharacter ATTProfessionRankTestCharacter Cached professions, ranks, and timestamps.
----@field IsRetail boolean Selects Retail behavior when the extracted code checks client flavor.
----@field ClassIndex integer Simulated Hunter class ID, preserving the existing Beast Training ownership flag.
----@field handlers table<string, (fun())[]> Startup and collection callbacks registered by production code.
----@field events table<string, fun()> Event callbacks registered by production code.
----@field invalidations integer Number of tooltip search-cache invalidations.
----@field searchCache table<string, string> Search results retained when ranks are unchanged and cleared when they change.
----@field WOWAPI {GetProfessionInfoByRecipeID: fun(recipeID: integer): {professionID: integer}?, IsTradeSkillLinked: fun(): boolean} Actual wrappers selected for the fixture's available API variants.
----@field FlushCallbacks fun() Executes one batch of callbacks recorded by the real scheduler.
----@field PendingCallbacks fun(): ATTProfessionRankTestTimer[] Returns callbacks awaiting a manual timer flush.
+---@field CurrentCharacter ATTProfessionRankTestCharacter # Cached professions, ranks, and timestamps.
+---@field IsRetail boolean # Selects Retail behavior when the extracted code checks client flavor.
+---@field ClassIndex integer # Simulated Hunter class ID, preserving the existing Beast Training ownership flag.
+---@field handlers table<string, (fun())[]> # Startup and collection callbacks registered by production code.
+---@field events table<string, fun()> # Event callbacks registered by production code.
+---@field invalidations integer # Number of tooltip search-cache invalidations.
+---@field searchCache table<string, string> # Search results retained when ranks are unchanged and cleared when they change.
+---@field WOWAPI {GetProfessionInfoByRecipeID: fun(recipeID: integer): {professionID: integer}?, IsTradeSkillLinked: fun(): boolean} # Actual wrappers selected for the fixture's available API variants.
+---@field FlushCallbacks fun() # Executes one batch of callbacks recorded by the real scheduler.
+---@field PendingCallbacks fun(): ATTProfessionRankTestTimer[] # Returns callbacks awaiting a manual timer flush.
 
 --- Builds fresh rank caches and event hooks, then loads the real API wrappers and callback scheduler.
----@return ATTProfessionRankTestApp app Independent state, registered callbacks, and observable cache invalidations.
+---@return ATTProfessionRankTestApp app # Independent state, registered callbacks, and observable cache invalidations.
 local function MakeApp()
 	local handlers, events, scheduled = {}, {}, {};
 	local app = {

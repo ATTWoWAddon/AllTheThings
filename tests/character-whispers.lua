@@ -33,138 +33,138 @@
 
 --- One reply produced by a dispatched incoming command.
 ---@class ATTWhisperTestResponse
----@field detail string Label displayed while the reply is queued.
----@field msg string Encoded command text to send back to the sender.
+---@field detail string # Label displayed while the reply is queued.
+---@field msg string # Encoded command text to send back to the sender.
 
 --- Incoming command callback; the empty owner is used only by rejected-event tests.
 ---@alias ATTWhisperTestMessageHandler fun(owner: ATTWhisperTestWindow|{}, sender: ATTAccountTransportKey, content: string[], responses: ATTWhisperTestResponse[]): boolean?
 
 --- Captured call to the native addon whisper API.
 ---@class ATTWhisperTestAddonMessage
----@field prefix string Registered addon-message prefix.
----@field message string Encoded payload passed to the native API.
----@field channel string Addon chat channel; accepted sends use WHISPER.
----@field target string Native full name or Retail/Classic name-realm recipient.
+---@field prefix string # Registered addon-message prefix.
+---@field message string # Encoded payload passed to the native API.
+---@field channel string # Addon chat channel; accepted sends use WHISPER.
+---@field target string # Native full name or Retail/Classic name-realm recipient.
 
 --- Captured call to the native Battle.net game-data API.
 ---@class ATTWhisperTestBattleNetMessage
----@field target number Numeric Battle.net game-account ID.
----@field prefix string Registered addon-message prefix.
----@field message string Encoded payload passed to the native API.
+---@field target number # Numeric Battle.net game-account ID.
+---@field prefix string # Registered addon-message prefix.
+---@field message string # Encoded payload passed to the native API.
 
 --- One pending outgoing payload split into numbered chunks.
 ---@class ATTWhisperTestSendChunks
----@field method ATTWhisperTestTransportMethod Native whisper or Battle.net send mock.
----@field target ATTAccountTransportKey Exact key shared by sending and ACK lookup.
----@field chunks string[] Ordered payload fragments.
----@field detail string Queue label, with Unknown used when no label was supplied.
----@field cooldown number Fixture-clock time at which the next send is allowed.
----@field acks table<integer, boolean> Acknowledged chunk indices.
----@field uid integer Identifier assigned to this outgoing chunk sequence.
+---@field method ATTWhisperTestTransportMethod # Native whisper or Battle.net send mock.
+---@field target ATTAccountTransportKey # Exact key shared by sending and ACK lookup.
+---@field chunks string[] # Ordered payload fragments.
+---@field detail string # Queue label, with Unknown used when no label was supplied.
+---@field cooldown number # Fixture-clock time at which the next send is allowed.
+---@field acks table<integer, boolean> # Acknowledged chunk indices.
+---@field uid integer # Identifier assigned to this outgoing chunk sequence.
 
 --- One incoming sequence, including slots not yet received.
 ---@class ATTWhisperTestReceiveChunks
----@field chunks table<integer, string> Received fragments keyed by chunk index.
----@field count integer Total fragment count declared by the sender.
+---@field chunks table<integer, string> # Received fragments keyed by chunk index.
+---@field count integer # Total fragment count declared by the sender.
 
 --- Replies waiting to pass through the normal send/chunk path.
 ---@class ATTWhisperTestQueuedResponses
----@field method ATTWhisperTestSender Transport-specific message sender.
----@field target ATTAccountTransportKey Native sender or numeric Battle.net ID.
----@field responses ATTWhisperTestResponse[] Replies ordered by payload length.
----@field index integer Index of the next reply to process.
+---@field method ATTWhisperTestSender # Transport-specific message sender.
+---@field target ATTAccountTransportKey # Native sender or numeric Battle.net ID.
+---@field responses ATTWhisperTestResponse[] # Replies ordered by payload length.
+---@field index integer # Index of the next reply to process.
 
 --- Minimal window used by production rebuild and parent-chain calls.
 ---@class ATTWhisperTestWindow
----@field Rebuild fun(self: ATTWhisperTestWindow) Count a requested queue rebuild.
----@field GetParent fun(self: ATTWhisperTestWindow): ATTWhisperTestWindow Return this mock window.
+---@field Rebuild fun(self: ATTWhisperTestWindow) # Count a requested queue rebuild.
+---@field GetParent fun(self: ATTWhisperTestWindow): ATTWhisperTestWindow # Return this mock window.
 
 --- Raw queue item returned by the production queue builder through CreateRawText.
 ---@class ATTWhisperTestQueueItem: ATTSyncQueueItem
----@field parent? ATTWhisperTestQueueGroup Parent queue group supplied by the builder.
----@field icon? number Queue icon selected by the production builder.
----@field GetParent? fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow Parent hook installed when the item is selected.
----@field OnClick fun(row: ATTWhisperTestQueueRow, button: string): true Production cancellation callback.
----@field OnTooltip fun(item: ATTWhisperTestQueueItem, lines: ATTTooltipLine[]) Production chunk-progress tooltip callback.
----@field OnUpdate fun(item: ATTWhisperTestQueueItem): true? Production progress callback.
+---@field parent? ATTWhisperTestQueueGroup # Parent queue group supplied by the builder.
+---@field icon? number # Queue icon selected by the production builder.
+---@field GetParent? fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow # Parent hook installed when the item is selected.
+---@field OnClick fun(row: ATTWhisperTestQueueRow, button: string): true # Production cancellation callback.
+---@field OnTooltip fun(item: ATTWhisperTestQueueItem, lines: ATTTooltipLine[]) # Production chunk-progress tooltip callback.
+---@field OnUpdate fun(item: ATTWhisperTestQueueItem): true? # Production progress callback.
 
 --- Selected queue item with the parent hook required by cancellation.
 ---@class ATTWhisperTestParentedQueueItem: ATTWhisperTestQueueItem
----@field GetParent fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow Return the fixture window.
+---@field GetParent fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow # Return the fixture window.
 
 --- Click receiver carrying the raw item rather than a real WoW button.
 ---@class ATTWhisperTestQueueRow
----@field ref ATTWhisperTestQueueItem Queue data selected for cancellation.
----@field GetParent fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow Parent hook shared with the selected item.
+---@field ref ATTWhisperTestQueueItem # Queue data selected for cancellation.
+---@field GetParent fun(self: ATTWhisperTestQueueItem|ATTWhisperTestQueueRow): ATTWhisperTestWindow # Parent hook shared with the selected item.
 
 --- Queue group populated by the extracted production OnUpdate callback.
 ---@class ATTWhisperTestQueueGroup
----@field g ATTWhisperTestQueueItem[] Current send/receive queue items.
----@field visible? boolean Whether at least one pending transport key exists.
+---@field g ATTWhisperTestQueueItem[] # Current send/receive queue items.
+---@field visible? boolean # Whether at least one pending transport key exists.
 
 --- Extracted Sync Queue option, including its raw-text display properties.
 ---@class ATTWhisperTestQueueOption: ATTWhisperTestQueueGroup
----@field text? string Localized Sync Queue title set by CreateRawText.
----@field icon? number Queue section icon.
----@field description? string Localized queue description.
----@field expanded? boolean Whether the section is expanded.
----@field OnUpdate fun(group: ATTWhisperTestQueueGroup): true Rebuild items from pending transport keys.
+---@field text? string # Localized Sync Queue title set by CreateRawText.
+---@field icon? number # Queue section icon.
+---@field description? string # Localized queue description.
+---@field expanded? boolean # Whether the section is expanded.
+---@field OnUpdate fun(group: ATTWhisperTestQueueGroup): true # Rebuild items from pending transport keys.
 
 --- Incoming event entry points extracted from Account Management.
 ---@class ATTWhisperTestEvents
----@field CHAT_MSG_ADDON fun(owner: ATTWhisperTestWindow|{}, prefix: string, message: string, channel: string, sender: string) Dispatch a native character whisper after filtering.
----@field BN_CHAT_MSG_ADDON fun(owner: ATTWhisperTestWindow|{}, prefix: string, message: string, channel: string, sender: number) Dispatch a numeric Battle.net sender after filtering.
+---@field CHAT_MSG_ADDON fun(owner: ATTWhisperTestWindow|{}, prefix: string, message: string, channel: string, sender: string) # Dispatch a native character whisper after filtering.
+---@field BN_CHAT_MSG_ADDON fun(owner: ATTWhisperTestWindow|{}, prefix: string, message: string, channel: string, sender: number) # Dispatch a numeric Battle.net sender after filtering.
 
 --- Production transport functions and queues exposed by the generated module.
 ---@class ATTWhisperTestAPI
----@field send fun(target: string, detail: string?, message: string|string[]) Send a character whisper before or through chunking.
----@field bnet fun(target: number, detail: string?, message: string|string[]) Send to a numeric Battle.net game-account ID.
----@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey Resolve regionally unique native full names.
----@field normalize fun(identifier: string|number|nil, ...: string|nil): string?, string? Build a logical identifier and return its normalized complete name.
----@field link fun(input: string) Add a logical link through the actual popup callback and send its initial request.
----@field events ATTWhisperTestEvents Filtered addon-message event callbacks.
----@field handlers table<string, ATTWhisperTestMessageHandler> Command callbacks, including the extracted check/ACK handlers and test probes.
----@field queueOption ATTWhisperTestQueueOption Extracted queue section and its item builder.
----@field sending table<ATTAccountTransportKey, table<integer, ATTWhisperTestSendChunks>> Outgoing sequences indexed by recipient and UID.
----@field receiving table<ATTAccountTransportKey, table<integer, ATTWhisperTestReceiveChunks>> Incoming sequences indexed by sender and UID.
----@field responses table<ATTAccountTransportKey, table<integer, ATTWhisperTestQueuedResponses>> Reply queues indexed by sender and UID.
+---@field send fun(target: string, detail: string?, message: string|string[]) # Send a character whisper before or through chunking.
+---@field bnet fun(target: number, detail: string?, message: string|string[]) # Send to a numeric Battle.net game-account ID.
+---@field target fun(identifier: ATTAccountTransportKey): ATTAccountTransportKey # Resolve regionally unique native full names.
+---@field normalize fun(identifier: string|number|nil, ...: string|nil): string?, string? # Build a logical identifier and return its normalized complete name.
+---@field link fun(input: string) # Add a logical link through the actual popup callback and send its initial request.
+---@field events ATTWhisperTestEvents # Filtered addon-message event callbacks.
+---@field handlers table<string, ATTWhisperTestMessageHandler> # Command callbacks, including the extracted check/ACK handlers and test probes.
+---@field queueOption ATTWhisperTestQueueOption # Extracted queue section and its item builder.
+---@field sending table<ATTAccountTransportKey, table<integer, ATTWhisperTestSendChunks>> # Outgoing sequences indexed by recipient and UID.
+---@field receiving table<ATTAccountTransportKey, table<integer, ATTWhisperTestReceiveChunks>> # Incoming sequences indexed by sender and UID.
+---@field responses table<ATTAccountTransportKey, table<integer, ATTWhisperTestQueuedResponses>> # Reply queues indexed by sender and UID.
 
 --- Addon services required by the extracted transport and queue code.
 ---@class ATTWhisperTestApp
----@field IsForever boolean Whether the fixture represents Forever, independently of regional-name capability.
----@field IsRetail boolean Retail flag used by the selected fixture mode.
----@field print fun(...: ATTWhisperTestPrintedValue) Discard addon chat output.
----@field asset fun(name: string): string Return the requested mock asset name unchanged.
----@field GetWindow fun(self: ATTWhisperTestApp, name: string?): ATTWhisperTestWindow Return the shared mock window.
----@field StartATTCoroutine fun(self: ATTWhisperTestApp, name: string, callback: fun()) Start only when no live fixture coroutine exists.
----@field CreateRawText fun(text: string, options: ATTWhisperTestQueueItem|ATTWhisperTestQueueOption): ATTWhisperTestQueueItem|ATTWhisperTestQueueOption Attach display text to the supplied options.
----@field ShowPopupDialog fun(self: ATTWhisperTestApp, prompt: string, callback: fun()) Confirm immediately through the supplied callback.
+---@field IsForever boolean # Whether the fixture represents Forever, independently of regional-name capability.
+---@field IsRetail boolean # Retail flag used by the selected fixture mode.
+---@field print fun(...: ATTWhisperTestPrintedValue) # Discard addon chat output.
+---@field asset fun(name: string): string # Return the requested mock asset name unchanged.
+---@field GetWindow fun(self: ATTWhisperTestApp, name: string?): ATTWhisperTestWindow # Return the shared mock window.
+---@field StartATTCoroutine fun(self: ATTWhisperTestApp, name: string, callback: fun()) # Start only when no live fixture coroutine exists.
+---@field CreateRawText fun(text: string, options: ATTWhisperTestQueueItem|ATTWhisperTestQueueOption): ATTWhisperTestQueueItem|ATTWhisperTestQueueOption # Attach display text to the supplied options.
+---@field ShowPopupDialog fun(self: ATTWhisperTestApp, prompt: string, callback: fun()) # Confirm immediately through the supplied callback.
 
 --- Native chat API replacement that records outgoing whispers.
 ---@class ATTWhisperTestChatAPI
----@field SendAddonMessage fun(prefix: string, message: string, channel: string, target: string) Append a captured native whisper call.
+---@field SendAddonMessage fun(prefix: string, message: string, channel: string, target: string) # Append a captured native whisper call.
 
 --- Locale strings used by the production queue callbacks; other keys echo themselves.
 ---@class ATTWhisperTestLocale
----@field ACCOUNT_MANAGEMENT_CHUNK_PROGRESS string Format for received/acknowledged progress.
----@field ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP string Cancellation prompt format.
----@field [string] string Localized string or fallback key.
+---@field ACCOUNT_MANAGEMENT_CHUNK_PROGRESS string # Format for received/acknowledged progress.
+---@field ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP string # Cancellation prompt format.
+---@field [string] string # Localized string or fallback key.
 
 --- Fully initialized state and controls for one isolated transport scenario.
 ---@class ATTWhisperTestFixture
----@field outgoing ATTWhisperTestAddonMessage[] Captured character whispers.
----@field battleNet ATTWhisperTestBattleNetMessage[] Captured Battle.net game-data messages.
----@field linked table<ATTAccountTransportKey, boolean> Explicit allowed or disabled logical links.
----@field characters table<string, ATTNameTestCharacter> Saved records keyed by fixture label or GUID.
----@field rebuilds integer Number of requested mock-window rebuilds.
----@field now number Fixture clock returned to production cooldown logic.
----@field coroutine? thread Current synchronization coroutine, cleared when it finishes.
----@field api ATTWhisperTestAPI Loaded production transport functions and queues.
----@field step fun(self: ATTWhisperTestFixture) Resume the active coroutine once and surface errors.
----@field finish fun(self: ATTWhisperTestFixture) Resume at most twelve times until the coroutine finishes.
----@field chat fun(self: ATTWhisperTestFixture, sender: string, message: string) Deliver a native whisper using the valid addon prefix/channel.
----@field bn fun(self: ATTWhisperTestFixture, sender: number, message: string) Deliver a Battle.net event with a numeric sender.
----@field row fun(self: ATTWhisperTestFixture, target: ATTAccountTransportKey): ATTWhisperTestParentedQueueItem Build and select the actual queue item for a transport key.
+---@field outgoing ATTWhisperTestAddonMessage[] # Captured character whispers.
+---@field battleNet ATTWhisperTestBattleNetMessage[] # Captured Battle.net game-data messages.
+---@field linked table<ATTAccountTransportKey, boolean> # Explicit allowed or disabled logical links.
+---@field characters table<string, ATTNameTestCharacter> # Saved records keyed by fixture label or GUID.
+---@field rebuilds integer # Number of requested mock-window rebuilds.
+---@field now number # Fixture clock returned to production cooldown logic.
+---@field coroutine? thread # Current synchronization coroutine, cleared when it finishes.
+---@field api ATTWhisperTestAPI # Loaded production transport functions and queues.
+---@field step fun(self: ATTWhisperTestFixture) # Resume the active coroutine once and surface errors.
+---@field finish fun(self: ATTWhisperTestFixture) # Resume at most twelve times until the coroutine finishes.
+---@field chat fun(self: ATTWhisperTestFixture, sender: string, message: string) # Deliver a native whisper using the valid addon prefix/channel.
+---@field bn fun(self: ATTWhisperTestFixture, sender: number, message: string) # Deliver a Battle.net event with a numeric sender.
+---@field row fun(self: ATTWhisperTestFixture, target: ATTAccountTransportKey): ATTWhisperTestParentedQueueItem # Build and select the actual queue item for a transport key.
 
 local root = arg[1] or ".";
 local file = assert(io.open(root .. "/src/UI/Windows/Account Management.lua", "rb"));
@@ -215,42 +215,42 @@ return {
 local chunk = assert((loadstring or load)(program, "@actual-account-whisper-transport"));
 local logicalTarget, nativeTarget = "First Last-Remote Realm", "First Last";
 --- Create independent transport state, API mocks, and coroutine controls for one client mode.
----@param mode ATTWhisperTestMode Flavor behavior to exercise.
----@param regionalNames? boolean Capability result; nil enables it only for the default Forever fixture.
----@param regionalAPIAvailable? boolean Whether the feature API exists; nil defaults to true.
----@return ATTWhisperTestFixture fixture Initialized production transport and captured effects.
+---@param mode ATTWhisperTestMode # Flavor behavior to exercise.
+---@param regionalNames? boolean # Capability result; nil enables it only for the default Forever fixture.
+---@param regionalAPIAvailable? boolean # Whether the feature API exists; nil defaults to true.
+---@return ATTWhisperTestFixture fixture # Initialized production transport and captured effects.
 local function fixture(mode, regionalNames, regionalAPIAvailable)
 	local h = { outgoing = {}, battleNet = {}, linked = {}, characters = {}, rebuilds = 0, now = 1000 };
 	local window = {};
 	--- Count rebuilds requested by the production queue code.
-	---@param self ATTWhisperTestWindow Fixture window receiving the rebuild request.
+	---@param self ATTWhisperTestWindow # Fixture window receiving the rebuild request.
 	function window:Rebuild() h.rebuilds = h.rebuilds + 1; end
 	--- Keep parent traversal on the shared window without constructing real frames.
-	---@param self ATTWhisperTestWindow Fixture window receiving the parent query.
-	---@return ATTWhisperTestWindow parent This same window.
+	---@param self ATTWhisperTestWindow # Fixture window receiving the parent query.
+	---@return ATTWhisperTestWindow parent # This same window.
 	function window:GetParent() return self; end
 	---@cast window ATTWhisperTestWindow
 	local app = { IsForever = mode == "forever", IsRetail = mode ~= "classic", print = function() end, asset = function(name) return name; end };
 	--- Return the shared window for all named-window requests.
-	---@param self ATTWhisperTestApp Fixture addon services.
-	---@return ATTWhisperTestWindow window Fixture queue window.
+	---@param self ATTWhisperTestApp # Fixture addon services.
+	---@return ATTWhisperTestWindow window # Fixture queue window.
 	function app:GetWindow() return window; end
 	--- Create a coroutine only when the previous synchronization has finished.
-	---@param self ATTWhisperTestApp Fixture addon services.
-	---@param _ string Coroutine name, ignored by this single-coroutine fixture.
-	---@param fn fun() Production coroutine body.
+	---@param self ATTWhisperTestApp # Fixture addon services.
+	---@param _ string # Coroutine name, ignored by this single-coroutine fixture.
+	---@param fn fun() # Production coroutine body.
 	function app:StartATTCoroutine(_, fn)
 		if not h.coroutine or coroutine.status(h.coroutine) == "dead" then h.coroutine = coroutine.create(fn); end
 	end
 	--- Attach UI text while preserving the production builder's original options object.
-	---@param text string Raw item or section label.
-	---@param options ATTWhisperTestQueueItem|ATTWhisperTestQueueOption Mutable options returned by the production queue builder.
-	---@return ATTWhisperTestQueueItem|ATTWhisperTestQueueOption item The same options object with its display text set.
+	---@param text string # Raw item or section label.
+	---@param options ATTWhisperTestQueueItem|ATTWhisperTestQueueOption # Mutable options returned by the production queue builder.
+	---@return ATTWhisperTestQueueItem|ATTWhisperTestQueueOption item # The same options object with its display text set.
 	function app.CreateRawText(text, options) options.text = text; return options; end
 	--- Confirm the cancellation popup immediately so its actual callback can be exercised.
-	---@param self ATTWhisperTestApp Fixture addon services.
-	---@param _ string Popup prompt, ignored by the mock.
-	---@param callback fun() Confirmation action to execute.
+	---@param self ATTWhisperTestApp # Fixture addon services.
+	---@param _ string # Popup prompt, ignored by the mock.
+	---@param callback fun() # Confirmation action to execute.
 	function app:ShowPopupDialog(_, callback) callback(); end
 	---@cast app ATTWhisperTestApp
 	---@type ATTWhisperTestChatAPI
@@ -258,16 +258,16 @@ local function fixture(mode, regionalNames, regionalAPIAvailable)
 		h.outgoing[#h.outgoing+1] = { prefix=prefix, message=message, channel=channel, target=target };
 	end };
 	--- Record native Battle.net calls without contacting a game account.
-	---@param target number Numeric game-account ID.
-	---@param prefix string Registered addon-message prefix.
-	---@param message string Encoded payload to capture.
+	---@param target number # Numeric game-account ID.
+	---@param prefix string # Registered addon-message prefix.
+	---@param message string # Encoded payload to capture.
 	local bnet = function(target, prefix, message) h.battleNet[#h.battleNet+1] = {target=target,prefix=prefix,message=message}; end;
 	---@type ATTWhisperTestLocale
 	local locale = setmetatable({ ACCOUNT_MANAGEMENT_CHUNK_PROGRESS = "%d/%d", ACCOUNT_MANAGEMENT_DELETE_SYNC_QUEUE_POPUP = "%s" }, {__index=
 		--- Echo untranslated keys so queue labels remain available without the locale database.
-		---@param _ ATTWhisperTestLocale Locale table, ignored for fallback entries.
-		---@param key string Missing locale key.
-		---@return string label The key itself.
+		---@param _ ATTWhisperTestLocale # Locale table, ignored for fallback entries.
+		---@param key string # Missing locale key.
+		---@return string label # The key itself.
 		function(_, key) return key; end});
 	---@type ATTNameTestCharacter
 	local current = { realm="Local Realm", name="Current Player", guid="current", lastPlayed=1000 };
@@ -275,48 +275,48 @@ local function fixture(mode, regionalNames, regionalAPIAvailable)
 	local regionalAPI;
 	if regionalAPIAvailable ~= false then
 		--- Report regional-name capability independently of the client flavor flags.
-		---@return boolean enabled Whether this fixture uses regionally unique native names.
+		---@return boolean enabled # Whether this fixture uses regionally unique native names.
 		regionalAPI = function() return regionalNames == nil and mode == "forever" or regionalNames == true; end;
 	end
 	h.api = chunk(app, chat, bnet, current, h.characters, h.linked, locale,
 		--- Read the fixture clock without advancing it during production cooldown checks.
-		---@return number now Current simulated time.
+		---@return number now # Current simulated time.
 		function() return h.now; end, regionalAPI);
 	--- Resume one synchronization step and clear the handle when the coroutine ends.
-	---@param self ATTWhisperTestFixture Fixture with an active synchronization coroutine.
+	---@param self ATTWhisperTestFixture # Fixture with an active synchronization coroutine.
 	function h:step()
 		assert(self.coroutine and coroutine.status(self.coroutine) ~= "dead", "No active sync coroutine");
 		local ok, err = coroutine.resume(self.coroutine); assert(ok, err);
 		if coroutine.status(self.coroutine) == "dead" then self.coroutine = nil; end
 	end
 	--- Drain a bounded number of synchronization steps, failing if work remains.
-	---@param self ATTWhisperTestFixture Fixture whose coroutine should finish.
+	---@param self ATTWhisperTestFixture # Fixture whose coroutine should finish.
 	function h:finish()
 		for _=1,12 do if not self.coroutine then return; end; self:step(); end
 		error("Sync coroutine did not finish");
 	end
 	--- Deliver a correctly prefixed native whisper through the production event handler.
-	---@param self ATTWhisperTestFixture Fixture whose handler receives the message.
-	---@param sender string Native complete character name or Retail/Classic name-realm sender.
-	---@param message string Encoded incoming command or chunk.
+	---@param self ATTWhisperTestFixture # Fixture whose handler receives the message.
+	---@param sender string # Native complete character name or Retail/Classic name-realm sender.
+	---@param message string # Encoded incoming command or chunk.
 	function h:chat(sender, message) self.api.events.CHAT_MSG_ADDON(window, "ATTSYNC", message, "WHISPER", sender); end
 	--- Deliver a correctly prefixed Battle.net message through the production event handler.
-	---@param self ATTWhisperTestFixture Fixture whose handler receives the message.
-	---@param sender number Numeric Battle.net game-account ID.
-	---@param message string Encoded incoming command or chunk.
+	---@param self ATTWhisperTestFixture # Fixture whose handler receives the message.
+	---@param sender number # Numeric Battle.net game-account ID.
+	---@param message string # Encoded incoming command or chunk.
 	function h:bn(sender, message) self.api.events.BN_CHAT_MSG_ADDON(window, "ATTSYNC", message, "WHISPER", sender); end
 	--- Build real production queue data and select the item matching the exact transport key.
-	---@param self ATTWhisperTestFixture Fixture containing pending send/receive queues.
-	---@param target ATTAccountTransportKey Native sender name or numeric game-account ID to select.
-	---@return ATTWhisperTestParentedQueueItem row Selected item with a mock parent hook.
+	---@param self ATTWhisperTestFixture # Fixture containing pending send/receive queues.
+	---@param target ATTAccountTransportKey # Native sender name or numeric game-account ID to select.
+	---@return ATTWhisperTestParentedQueueItem row # Selected item with a mock parent hook.
 	function h:row(target)
 		---@type ATTWhisperTestQueueGroup
 		local data = {g={}}; self.api.queueOption.OnUpdate(data);
 		for _, row in ipairs(data.g) do
 			if row.datalink == target then
 				--- Supply the parent chain used by the production cancellation callback.
-				---@param self ATTWhisperTestQueueItem|ATTWhisperTestQueueRow Item or click receiver sharing this hook.
-				---@return ATTWhisperTestWindow parent Fixture window.
+				---@param self ATTWhisperTestQueueItem|ATTWhisperTestQueueRow # Item or click receiver sharing this hook.
+				---@return ATTWhisperTestWindow parent # Fixture window.
 				function row:GetParent() return window; end
 				---@cast row ATTWhisperTestParentedQueueItem
 				return row;
@@ -329,14 +329,14 @@ local function fixture(mode, regionalNames, regionalAPIAvailable)
 end
 local count = 0;
 --- Run one scenario and count it only after all assertions succeed.
----@param name string Scenario label printed on success.
----@param fn fun() Isolated scenario body.
+---@param name string # Scenario label printed on success.
+---@param fn fun() # Isolated scenario body.
 local function test(name, fn) fn(); count=count+1; print("PASS " .. name); end
 --- Return the first outgoing sequence for a transport key, failing if none exists.
----@param h ATTWhisperTestFixture Fixture containing the outgoing queue.
----@param target ATTAccountTransportKey Exact queue key to inspect.
----@return integer id Sequence UID returned by the queue.
----@return ATTWhisperTestSendChunks data Pending chunk sequence.
+---@param h ATTWhisperTestFixture # Fixture containing the outgoing queue.
+---@param target ATTAccountTransportKey # Exact queue key to inspect.
+---@return integer id # Sequence UID returned by the queue.
+---@return ATTWhisperTestSendChunks data # Pending chunk sequence.
 local function pending(h, target)
 	local queue = assert(h.api.sending[target], "Missing transport queue");
 	local id, data = next(queue); assert(id and data); return id, data;
@@ -345,10 +345,10 @@ end
 --- Character transports use string keys; Battle.net transports use numeric keys.
 ---@overload fun(h: ATTWhisperTestFixture, target: string, sender: string, battleNet: false)
 ---@overload fun(h: ATTWhisperTestFixture, target: number, sender: number, battleNet: true)
----@param h ATTWhisperTestFixture Fixture whose pending sequence will be completed.
----@param target ATTAccountTransportKey Queue key matching the selected transport.
----@param sender ATTAccountTransportKey Incoming ACK sender matching the selected transport.
----@param battleNet boolean True for numeric Battle.net events, false for character whispers.
+---@param h ATTWhisperTestFixture # Fixture whose pending sequence will be completed.
+---@param target ATTAccountTransportKey # Queue key matching the selected transport.
+---@param sender ATTAccountTransportKey # Incoming ACK sender matching the selected transport.
+---@param battleNet boolean # True for numeric Battle.net events, false for character whispers.
 local function acknowledgeAll(h, target, sender, battleNet)
 	local id, data = pending(h, target);
 	for i=1,#data.chunks do

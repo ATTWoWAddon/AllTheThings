@@ -282,9 +282,9 @@ local function _SendAddonMessage(target, msg)
 end
 --- Sends an account-sync whisper, queuing chunks when the message exceeds the payload limit.
 --- Regionally unique names use native full names before the queue key is chosen.
----@param target string Character name or ATT name-realm identifier.
----@param detail string|nil Label shown for queued messages.
----@param msg string|string[] Message text or commands to encode.
+---@param target string # Character name or ATT name-realm identifier.
+---@param detail string|nil # Label shown for queued messages.
+---@param msg string|string[] # Message text or commands to encode.
 local function SendAddonMessage(target, detail, msg)
 	SendMessageChunks(_SendAddonMessage, GetCharacterWhisperTarget(target), detail, msg, 255);
 end
@@ -313,22 +313,22 @@ end
 --- Saved character record containing identity, a derived Identifier, and account-sync metadata.
 --- Read and updated by Summary serialization and linked-character lookups.
 ---@class ATTAccountCharacter: ATTCharacterIdentity
----@field Identifier? string Cached normalized name-realm identifier.
----@field battleTag? string Battle tag of the character's account.
----@field factionID? FactionID Character faction ID.
----@field lvl? number Character level.
----@field classID? ClassID Character class ID.
----@field class? string Class token used by class metadata and colors.
----@field raceID? RaceID Character race ID.
----@field lastPlayed? number Timestamp of the character's last login or update.
----@field Deaths? number Recorded character death count.
+---@field Identifier? string # Cached normalized name-realm identifier.
+---@field battleTag? string # Battle tag of the character's account.
+---@field factionID? FactionID # Character faction ID.
+---@field lvl? number # Character level.
+---@field classID? ClassID # Character class ID.
+---@field class? string # Class token used by class metadata and colors.
+---@field raceID? RaceID # Character race ID.
+---@field lastPlayed? number # Timestamp of the character's last login or update.
+---@field Deaths? number # Recorded character death count.
 
 --- Builds a name-realm identifier while preserving spaces within complete names.
 --- An explicit realm argument keeps the entire name; missing realms use the current realm.
----@param identifier string|number|nil Complete name or combined identifier; non-strings are rejected.
----@param ... string|nil Optional explicit realm, including nil for the current realm.
----@return string|nil identifier Normalized name followed by a realm without spaces.
----@return string|nil name Normalized complete name without the realm suffix.
+---@param identifier string|number|nil # Complete name or combined identifier; non-strings are rejected.
+---@param ... string|nil # Optional explicit realm, including nil for the current realm.
+---@return string|nil identifier # Normalized name followed by a realm without spaces.
+---@return string|nil name # Normalized complete name without the realm suffix.
 local function NormalizeLinkedCharacterIdentifier(identifier, ...)
 	if type(identifier) ~= "string" or identifier == "" then return; end
 	local name, realm = identifier, ...;
@@ -356,8 +356,8 @@ local function NormalizeLinkedCharacterIdentifier(identifier, ...)
 end
 --- Maps logical identifiers to regionally unique native full names, preserving native spelling.
 --- Without regional unique names, identifiers pass through unchanged; numeric IDs always pass through.
----@param identifier ATTAccountTransportKey Native full name, ATT name-realm identifier, or Battle.net game-account ID.
----@return ATTAccountTransportKey target Whisper recipient with original native spelling; numeric IDs pass through.
+---@param identifier ATTAccountTransportKey # Native full name, ATT name-realm identifier, or Battle.net game-account ID.
+---@return ATTAccountTransportKey target # Whisper recipient with original native spelling; numeric IDs pass through.
 GetCharacterWhisperTarget = function(identifier)
 	if not HasRegionalUniqueNames or type(identifier) ~= "string" then return identifier; end
 	identifier = TrimString(identifier);
@@ -388,7 +388,7 @@ local function AddCharacterLookup(characterByInfo, character)
 end
 --- Checks whether a sender is allowed by the explicit or implicit linked-character entries.
 --- Regionally unique senders match allowed native names using the logical links' normalization.
----@param identifier ATTAccountTransportKey Character sender name or Battle.net game-account ID.
+---@param identifier ATTAccountTransportKey # Character sender name or Battle.net game-account ID.
 ---@return boolean linked
 local function IsLinkedCharacter(identifier)
 	if LinkedCharacters[identifier] then return true end
@@ -1386,23 +1386,23 @@ local wrappers = {
 }
 --- Numeric rank payload received for one character's ProfessionRanks field.
 ---@class ATTSerializedProfessionRanks
----@field [1] string? Payload such as "2:171=300/2485=155"; "2:" or a missing value clears saved ranks.
+---@field [1] string? # Payload such as "2:171=300/2485=155"; "2:" or a missing value clears saved ranks.
 
 --- Fixed twelve-string array used to encode and decode account-sync Summary messages.
 --- Positions retain the wire order below; numeric values stay strings until deserialized.
 ---@class ATTCharacterSummaryFields
----@field [1] string Battle tag.
----@field [2] string Character display text, including class colors.
----@field [3] string Complete native character name.
----@field [4] string Realm name.
----@field [5] string Faction ID encoded as a number.
----@field [6] string Character level encoded as a number.
----@field [7] string Class ID encoded as a number.
----@field [8] string Class token.
----@field [9] string Race ID encoded as a number.
----@field [10] string Last-played timestamp encoded as a number.
----@field [11] string Death count encoded as a number.
----@field [12] string Client build encoded as a number.
+---@field [1] string # Battle tag.
+---@field [2] string # Character display text, including class colors.
+---@field [3] string # Complete native character name.
+---@field [4] string # Realm name.
+---@field [5] string # Faction ID encoded as a number.
+---@field [6] string # Character level encoded as a number.
+---@field [7] string # Class ID encoded as a number.
+---@field [8] string # Class token.
+---@field [9] string # Race ID encoded as a number.
+---@field [10] string # Last-played timestamp encoded as a number.
+---@field [11] string # Death count encoded as a number.
+---@field [12] string # Client build encoded as a number.
 
 local deserializers = setmetatable({
 	ActiveSkills = function(field, currentValue, data)
@@ -1486,10 +1486,10 @@ local deserializers = setmetatable({
 	end,
 	--- Applies the received twelve-field summary to saved character identity and metadata.
 	--- Clears the derived Identifier only when the received name or realm changes.
-	---@param field string Serialized field name (unused).
-	---@param currentValue any Value supplied by the generic deserializer (unused).
-	---@param data ATTCharacterSummaryFields Summary fields in wire order.
-	---@param character ATTAccountCharacter Saved character record to update.
+	---@param field string # Serialized field name (unused).
+	---@param currentValue any # Value supplied by the generic deserializer (unused).
+	---@param data ATTCharacterSummaryFields # Summary fields in wire order.
+	---@param character ATTAccountCharacter # Saved character record to update.
 	Summary = function(field, currentValue, data, character)
 		if character.name ~= data[3] or character.realm ~= data[4] then
 			character.Identifier = nil;
@@ -2101,20 +2101,20 @@ end
 --- Pending synchronization item containing a transport key, display label, and chunk progress.
 --- Shared by queue display, progress tooltips, and cancellation callbacks.
 ---@class ATTSyncQueueItem
----@field datalink? ATTAccountTransportKey Key used by the pending send and receive queues.
----@field text? string Display name used in the cancellation prompt.
----@field progress? number Number of received or acknowledged chunks.
----@field total? number Total number of send and receive chunks.
----@field visible? boolean Whether the queue item is displayed.
+---@field datalink? ATTAccountTransportKey # Key used by the pending send and receive queues.
+---@field text? string # Display name used in the cancellation prompt.
+---@field progress? number # Number of received or acknowledged chunks.
+---@field total? number # Total number of send and receive chunks.
+---@field visible? boolean # Whether the queue item is displayed.
 
 --- ATT window row whose ref points to the synchronization item being displayed.
 --- Click handling uses that item's transport key to cancel pending synchronization.
 ---@class ATTSyncQueueRow: ATTRowClass
----@field ref ATTSyncQueueItem Queue data associated with the row.
+---@field ref ATTSyncQueueItem # Queue data associated with the row.
 
 --- Cancels pending send and receive chunks after a right-click confirmation.
----@param row ATTSyncQueueRow Window row containing the transport key and display name.
----@param button string Clicked mouse button.
+---@param row ATTSyncQueueRow # Window row containing the transport key and display name.
+---@param button string # Clicked mouse button.
 ---@return true handled
 local function OnClickForSyncQueue(row, button)
 	local identifier = row.ref.datalink;
@@ -2306,8 +2306,8 @@ local function OnTooltipForLinkedAccount(t, tooltipInfo)
 	end
 end
 --- Appends send/receive chunk progress and the cancellation hint for this transport key.
----@param t ATTSyncQueueItem Queue item containing the transport key.
----@param tooltipInfo ATTTooltipLine[] Tooltip lines to append to.
+---@param t ATTSyncQueueItem # Queue item containing the transport key.
+---@param tooltipInfo ATTTooltipLine[] # Tooltip lines to append to.
 local function OnTooltipForSyncQueue(t, tooltipInfo)
 	local identifier = t.datalink;
 	if not identifier then return; end
@@ -2360,8 +2360,8 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	});
 end
 --- Updates combined send/receive progress and makes the queue item visible.
----@param t ATTSyncQueueItem Queue item containing the transport key.
----@return true|nil updated Nil when the item has no transport key.
+---@param t ATTSyncQueueItem # Queue item containing the transport key.
+---@return true|nil updated # Nil when the item has no transport key.
 local function OnUpdateForSyncQueue(t)
 	local identifier = t.datalink;
 	if not identifier then return; end

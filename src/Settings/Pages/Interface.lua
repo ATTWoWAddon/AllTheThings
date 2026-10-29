@@ -515,7 +515,7 @@ headerCharacterInformation:SetPoint("TOP", textTooltipShownInfo, "TOP", 0, 0)
 
 local checkboxCompletedBy = child:CreateCheckBox(L.COMPLETED_BY_CHECKBOX,
 ---Refreshes the Completed By checkbox value and enabled state.
----@param self ATTSettingsCheckButton Checkbox displaying the Completed By setting.
+---@param self ATTSettingsCheckButton # Checkbox displaying the Completed By setting.
 ---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("CompletedBy"))
@@ -528,7 +528,7 @@ function(self)
 	end
 end,
 ---Saves whether Completed By character information is displayed.
----@param self ATTSettingsCheckButton Checkbox containing the selected Completed By value.
+---@param self ATTSettingsCheckButton # Checkbox containing the selected Completed By value.
 ---@return nil
 function(self)
 	settings:SetTooltipSetting("CompletedBy", self:GetChecked())
@@ -545,7 +545,7 @@ headerCharacterInformation:SetPoint("LEFT", checkboxCompletedBy, "LEFT", -8, 0)
 
 local checkboxKnownBy = child:CreateCheckBox(L.KNOWN_BY_CHECKBOX,
 ---Refreshes the Known By checkbox value and enabled state.
----@param self ATTSettingsCheckButton Checkbox displaying the Known By setting.
+---@param self ATTSettingsCheckButton # Checkbox displaying the Known By setting.
 ---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"))
@@ -558,7 +558,7 @@ function(self)
 	end
 end,
 ---Saves whether Known By character information is displayed.
----@param self ATTSettingsCheckButton Checkbox containing the selected Known By value.
+---@param self ATTSettingsCheckButton # Checkbox containing the selected Known By value.
 ---@return nil
 function(self)
 	settings:SetTooltipSetting("KnownBy", self:GetChecked())
@@ -568,7 +568,7 @@ checkboxKnownBy:AlignBelow(checkboxCompletedBy)
 
 local checkboxUsefulFor = child:CreateCheckBox(L.USEFUL_FOR_CHECKBOX,
 ---Refreshes the Useful For checkbox value and enabled state.
----@param self ATTSettingsCheckButton Checkbox displaying the Useful For setting.
+---@param self ATTSettingsCheckButton # Checkbox displaying the Useful For setting.
 ---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("UsefulFor"))
@@ -581,7 +581,7 @@ function(self)
 	end
 end,
 ---Saves the Useful For tooltip setting.
----@param self ATTSettingsCheckButton Checkbox containing the selected Useful For value.
+---@param self ATTSettingsCheckButton # Checkbox containing the selected Useful For value.
 ---@return nil
 function(self)
 	settings:SetTooltipSetting("UsefulFor", self:GetChecked())
@@ -596,7 +596,7 @@ headerCharacterGrouping:AlignBelow(checkboxUsefulFor, headerCharacterInformation
 
 local checkboxGroupByRealm = child:CreateCheckBox(L.GROUP_BY_REALM_CHECKBOX,
 ---Refreshes the realm grouping checkbox value and enabled state.
----@param self ATTSettingsCheckButton Checkbox displaying the realm grouping setting.
+---@param self ATTSettingsCheckButton # Checkbox displaying the realm grouping setting.
 ---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("GroupByRealm"))
@@ -612,7 +612,7 @@ function(self)
 	end
 end,
 ---Saves whether character tooltip entries are grouped by realm.
----@param self ATTSettingsCheckButton Checkbox containing the selected realm grouping value.
+---@param self ATTSettingsCheckButton # Checkbox containing the selected realm grouping value.
 ---@return nil
 function(self)
 	settings:SetTooltipSetting("GroupByRealm", self:GetChecked())
@@ -626,7 +626,7 @@ checkboxGroupByRealm:SetHitRectInsets(0, -checkboxGroupByRealm.Text:GetWidth() *
 
 local checkboxGroupByFaction = child:CreateCheckBox(L.GROUP_BY_FACTION_CHECKBOX,
 ---Refreshes the faction grouping checkbox value and enabled state.
----@param self ATTSettingsCheckButton Checkbox displaying the faction grouping setting.
+---@param self ATTSettingsCheckButton # Checkbox displaying the faction grouping setting.
 ---@return nil
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("GroupByFaction"))
@@ -642,7 +642,7 @@ function(self)
 	end
 end,
 ---Saves whether character tooltip entries are grouped by faction.
----@param self ATTSettingsCheckButton Checkbox containing the selected faction grouping value.
+---@param self ATTSettingsCheckButton # Checkbox containing the selected faction grouping value.
 ---@return nil
 function(self)
 	settings:SetTooltipSetting("GroupByFaction", self:GetChecked())

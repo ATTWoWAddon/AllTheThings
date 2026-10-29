@@ -78,107 +78,107 @@ local function groupContaining(rows,label)
 end
 --- Grouping switches and client behavior selected for one independent tooltip scenario.
 ---@class ATTTooltipFeatureOptions
----@field realm? boolean Enable realm headers; false preserves a flat or faction-only list.
----@field faction? boolean Enable faction headers independently of realm grouping.
----@field classic? boolean Use Classic profession and ownership processing.
----@field build? integer Client build selecting pre-Wrath and pre-Warlords collection behavior.
+---@field realm? boolean # Enable realm headers; false preserves a flat or faction-only list.
+---@field faction? boolean # Enable faction headers independently of realm grouping.
+---@field classic? boolean # Use Classic profession and ownership processing.
+---@field build? integer # Client build selecting pre-Wrath and pre-Warlords collection behavior.
 
 --- Current and maximum ranks in one saved Classic profession.
 ---@class ATTTooltipFeatureSkillRank
----@field [1] number Current skill rank.
----@field [2] number Maximum skill rank.
+---@field [1] number # Current skill rank.
+---@field [2] number # Maximum skill rank.
 
 --- Saved collection and identity fields supplied to the real tooltip processors.
 ---@class ATTTooltipFeatureCharacter: ATTAccountCharacter
----@field Spells? table<integer, boolean> Known spell and recipe IDs.
----@field Quests? table<integer, boolean> Currently completed quest IDs.
----@field PriorQuests? table<integer, boolean> Previously completed quest IDs.
----@field Exploration? table<integer, boolean> Discovered exploration IDs.
----@field FirstCrafts? table<integer, boolean> Completed first-craft IDs.
----@field ProfessionNodes? table<integer, boolean> Completed profession-node IDs.
----@field Achievements? table<integer, boolean> Character achievement IDs.
----@field Mounts? table<integer, boolean> Collected Classic mount IDs.
----@field BattlePets? table<integer, boolean> Collected Classic pet species IDs.
----@field Toys? table<integer, boolean> Owned toy item IDs.
----@field Professions? table<integer, boolean|number> Owned profession and specialization skill IDs.
----@field ProfessionRanks? ATTProfessionRanks Current ranks keyed by base or expansion skill-line ID.
----@field ActiveSkills? table<integer, ATTTooltipFeatureSkillRank> Classic profession spell IDs mapped to current and maximum ranks.
+---@field Spells? table<integer, boolean> # Known spell and recipe IDs.
+---@field Quests? table<integer, boolean> # Currently completed quest IDs.
+---@field PriorQuests? table<integer, boolean> # Previously completed quest IDs.
+---@field Exploration? table<integer, boolean> # Discovered exploration IDs.
+---@field FirstCrafts? table<integer, boolean> # Completed first-craft IDs.
+---@field ProfessionNodes? table<integer, boolean> # Completed profession-node IDs.
+---@field Achievements? table<integer, boolean> # Character achievement IDs.
+---@field Mounts? table<integer, boolean> # Collected Classic mount IDs.
+---@field BattlePets? table<integer, boolean> # Collected Classic pet species IDs.
+---@field Toys? table<integer, boolean> # Owned toy item IDs.
+---@field Professions? table<integer, boolean|number> # Owned profession and specialization skill IDs.
+---@field ProfessionRanks? ATTProfessionRanks # Current ranks keyed by base or expansion skill-line ID.
+---@field ActiveSkills? table<integer, ATTTooltipFeatureSkillRank> # Classic profession spell IDs mapped to current and maximum ranks.
 
 --- Collection identifiers and inherited restrictions passed to production tooltip processors.
 ---@class ATTTooltipFeatureReference: ATTKnownByReference
----@field questID? integer Quest whose current or prior completion is displayed.
----@field objectiveID? integer Objective marker suppressing the completion list.
----@field explorationID? integer Exploration cache key.
----@field firstcraftID? integer First-craft cache key.
----@field professionnodeID? integer Profession-node cache key.
----@field achievementID? integer Classic achievement cache key.
----@field mountID? integer Classic mount cache key.
----@field speciesID? integer Classic pet species cache key.
----@field toyID? integer Toy marker; the item ID selects the character cache entry.
----@field itemID? integer Item whose inventory count is appended for the current character.
----@field professionID? integer Profession whose Classic ranks are listed.
----@field recipeID? integer Recipe spell ID used for eligibility and duplicate quest exclusion.
----@field skillID? integer Base, expansion, or specialization profession skill ID.
----@field requireSkill? integer Required profession or specialization skill ID.
----@field learnedAt? number Minimum skill rank; defaults to one.
----@field r? integer Required faction ID.
----@field c? integer[] Allowed class IDs.
----@field races? integer[] Allowed race IDs.
----@field parent? ATTTooltipFeatureReference Parent providing inherited recipe requirements.
----@field sourceParent? ATTTooltipFeatureReference Preferred source parent for inherited requirements.
+---@field questID? integer # Quest whose current or prior completion is displayed.
+---@field objectiveID? integer # Objective marker suppressing the completion list.
+---@field explorationID? integer # Exploration cache key.
+---@field firstcraftID? integer # First-craft cache key.
+---@field professionnodeID? integer # Profession-node cache key.
+---@field achievementID? integer # Classic achievement cache key.
+---@field mountID? integer # Classic mount cache key.
+---@field speciesID? integer # Classic pet species cache key.
+---@field toyID? integer # Toy marker; the item ID selects the character cache entry.
+---@field itemID? integer # Item whose inventory count is appended for the current character.
+---@field professionID? integer # Profession whose Classic ranks are listed.
+---@field recipeID? integer # Recipe spell ID used for eligibility and duplicate quest exclusion.
+---@field skillID? integer # Base, expansion, or specialization profession skill ID.
+---@field requireSkill? integer # Required profession or specialization skill ID.
+---@field learnedAt? number # Minimum skill rank; defaults to one.
+---@field r? integer # Required faction ID.
+---@field c? integer[] # Allowed class IDs.
+---@field races? integer[] # Allowed race IDs.
+---@field parent? ATTTooltipFeatureReference # Parent providing inherited recipe requirements.
+---@field sourceParent? ATTTooltipFeatureReference # Preferred source parent for inherited requirements.
 
 --- Mutable tooltip switches read by the actual grouping and eligibility code.
 ---@class ATTTooltipFeatureSettings
----@field GroupByRealm boolean Whether realm grouping is enabled.
----@field GroupByFaction boolean Whether faction grouping is enabled.
----@field KnownBy? boolean Independent KnownBy information switch used by one isolation scenario.
----@field GetTooltipSetting fun(self: ATTTooltipFeatureSettings, key: string): boolean? Returns a fixture tooltip switch.
----@field Get fun(self: ATTTooltipFeatureSettings, key: string): boolean? Returns a fixture setting.
+---@field GroupByRealm boolean # Whether realm grouping is enabled.
+---@field GroupByFaction boolean # Whether faction grouping is enabled.
+---@field KnownBy? boolean # Independent KnownBy information switch used by one isolation scenario.
+---@field GetTooltipSetting fun(self: ATTTooltipFeatureSettings, key: string): boolean? # Returns a fixture tooltip switch.
+---@field Get fun(self: ATTTooltipFeatureSettings, key: string): boolean? # Returns a fixture setting.
 
 --- Recipe skill-line information returned by the mocked profession API.
 ---@class ATTTooltipFeatureProfessionInfo
----@field professionID? integer Recipe's expansion skill-line ID, or a base skill-line ID on legacy clients.
----@field parentProfessionID? integer Base profession owning that expansion skill line.
+---@field professionID? integer # Recipe's expansion skill-line ID, or a base skill-line ID on legacy clients.
+---@field parentProfessionID? integer # Base profession owning that expansion skill line.
 
 --- Game API responses used by collection and profession eligibility processing.
 ---@class ATTTooltipFeatureWoWAPI
----@field GetProfessionInfoByRecipeID fun(recipeID: integer): ATTTooltipFeatureProfessionInfo? Returns the configured recipe skill line.
----@field IsQuestFlaggedCompletedOnAccount fun(questID: integer): boolean? Returns configured account completion.
----@field GetItemCount fun(itemID: integer, includeBank?: boolean): integer Returns configured inventory count, defaulting to one.
+---@field GetProfessionInfoByRecipeID fun(recipeID: integer): ATTTooltipFeatureProfessionInfo? # Returns the configured recipe skill line.
+---@field IsQuestFlaggedCompletedOnAccount fun(questID: integer): boolean? # Returns configured account completion.
+---@field GetItemCount fun(itemID: integer, includeBank?: boolean): integer # Returns configured inventory count, defaulting to one.
 
 --- Addon state inspected by feature scenarios; other services are configured internally by fixture().
 ---@class ATTTooltipFeatureApp
----@field Settings ATTTooltipFeatureSettings Grouping and information switches.
----@field IsClassic boolean Enables Classic skill-rank processing.
----@field IsRetail boolean Enables Retail expansion-rank eligibility.
----@field IsForever boolean Allows Forever's single base-profession rank semantics.
----@field GameBuildVersion integer Simulated client build used by ownership dispatch.
----@field GUID string Key of the simulated current character.
----@field AccountWideQuestsDB table<integer, boolean> Quests with account-wide completion semantics.
----@field SkillDB {SkillToSpell: table<integer, integer>, Conversion: table<integer, integer>, SpecializationSpells: table<integer, integer>, SpellToSkill: table<integer, integer>} Actual generated profession mappings.
----@field WOWAPI ATTTooltipFeatureWoWAPI Configured recipe, quest, and inventory responses.
+---@field Settings ATTTooltipFeatureSettings # Grouping and information switches.
+---@field IsClassic boolean # Enables Classic skill-rank processing.
+---@field IsRetail boolean # Enables Retail expansion-rank eligibility.
+---@field IsForever boolean # Allows Forever's single base-profession rank semantics.
+---@field GameBuildVersion integer # Simulated client build used by ownership dispatch.
+---@field GUID string # Key of the simulated current character.
+---@field AccountWideQuestsDB table<integer, boolean> # Quests with account-wide completion semantics.
+---@field SkillDB {SkillToSpell: table<integer, integer>, Conversion: table<integer, integer>, SpecializationSpells: table<integer, integer>, SpellToSkill: table<integer, integer>} # Actual generated profession mappings.
+---@field WOWAPI ATTTooltipFeatureWoWAPI # Configured recipe, quest, and inventory responses.
 
 ---@alias ATTTooltipFeatureProcessorKind "known"|"completed"|"useful"
 ---@alias ATTTooltipFeatureProcessor fun(context: {}, reference: ATTTooltipFeatureReference, rows: ATTTooltipLine[])
 
 --- Actual tooltip entry points compiled from the Information page.
 ---@class ATTTooltipFeatureProcessors
----@field known ATTTooltipFeatureProcessor Appends characters who know the referenced spell or recipe.
----@field completed ATTTooltipFeatureProcessor Appends completion or Classic ownership rows.
----@field useful ATTTooltipFeatureProcessor Appends characters eligible to learn the recipe.
----@field builder fun(rows: ATTTooltipLine[], kind: string?) Formats the production shared character list.
+---@field known ATTTooltipFeatureProcessor # Appends characters who know the referenced spell or recipe.
+---@field completed ATTTooltipFeatureProcessor # Appends completion or Classic ownership rows.
+---@field useful ATTTooltipFeatureProcessor # Appends characters eligible to learn the recipe.
+---@field builder fun(rows: ATTTooltipLine[], kind: string?) # Formats the production shared character list.
 
 --- Independent saved state and execution entry points for one tooltip feature scenario.
 ---@class ATTTooltipFeatureFixture
----@field app ATTTooltipFeatureApp Addon state and services passed to the real processors.
----@field settings ATTTooltipFeatureSettings Mutable grouping switches used between successive runs.
----@field data table<string, ATTTooltipFeatureCharacter> Saved characters keyed by scenario labels or GUID.
----@field objects table<string, table<integer, ATTTooltipFeatureReference>> Recipe metadata returned by object searches.
----@field professionInfos table<integer, ATTTooltipFeatureProfessionInfo> Profession API results keyed by recipe ID.
----@field accountQuests table<integer, boolean> Account-completed quest IDs.
----@field inventory table<integer, integer> Item IDs mapped to inventory counts.
----@field processors ATTTooltipFeatureProcessors Production functions exposed by the generated chunk.
----@field run fun(self: ATTTooltipFeatureFixture, kind: ATTTooltipFeatureProcessorKind, reference: ATTTooltipFeatureReference): ATTTooltipLine[] Executes a processor with fresh output rows.
+---@field app ATTTooltipFeatureApp # Addon state and services passed to the real processors.
+---@field settings ATTTooltipFeatureSettings # Mutable grouping switches used between successive runs.
+---@field data table<string, ATTTooltipFeatureCharacter> # Saved characters keyed by scenario labels or GUID.
+---@field objects table<string, table<integer, ATTTooltipFeatureReference>> # Recipe metadata returned by object searches.
+---@field professionInfos table<integer, ATTTooltipFeatureProfessionInfo> # Profession API results keyed by recipe ID.
+---@field accountQuests table<integer, boolean> # Account-completed quest IDs.
+---@field inventory table<integer, integer> # Item IDs mapped to inventory counts.
+---@field processors ATTTooltipFeatureProcessors # Production functions exposed by the generated chunk.
+---@field run fun(self: ATTTooltipFeatureFixture, kind: ATTTooltipFeatureProcessorKind, reference: ATTTooltipFeatureReference): ATTTooltipLine[] # Executes a processor with fresh output rows.
 
 local currentRealm = "Aegwynn (EU).+"
 local normalizedRealm = "Aegwynn(EU).+"
@@ -189,8 +189,8 @@ local function character(name, realm, faction, color, extra)
 	return c
 end
 --- Creates fresh saved characters, exact and normalized realm APIs, and production tooltip entry points.
----@param opts ATTTooltipFeatureOptions? Grouping dimensions and client behavior; omitted values select flat Retail output.
----@return ATTTooltipFeatureFixture fixture Independent mutable inputs and a run method returning actual tooltip rows.
+---@param opts ATTTooltipFeatureOptions? # Grouping dimensions and client behavior; omitted values select flat Retail output.
+---@return ATTTooltipFeatureFixture fixture # Independent mutable inputs and a run method returning actual tooltip rows.
 local function fixture(opts)
 	opts = opts or {}
 	local settings = { GroupByRealm = opts.realm or false, GroupByFaction = opts.faction or false }
@@ -240,11 +240,11 @@ local function fixture(opts)
 end
 --- Production rank synchronization callbacks loaded by the fixture.
 ---@class ATTProfessionRankSyncHandlers
----@field serialize fun(field: string, value: ATTProfessionRanks, timeStamp: number?, lastUpdated: number): string? Returns "ProfessionRanks;2:skillLineID=rank/...", or nil when the sender has no newer data than the receiver's lastUpdated timestamp.
----@field deserialize fun(field: string, currentValue: ATTProfessionRanks?, data: ATTSerializedProfessionRanks): ATTProfessionRanks Replaces numeric ranks from data[1]; an empty numeric payload clears previously saved ranks.
+---@field serialize fun(field: string, value: ATTProfessionRanks, timeStamp: number?, lastUpdated: number): string? # Returns "ProfessionRanks;2:skillLineID=rank/...", or nil when the sender has no newer data than the receiver's lastUpdated timestamp.
+---@field deserialize fun(field: string, currentValue: ATTProfessionRanks?, data: ATTSerializedProfessionRanks): ATTProfessionRanks # Replaces numeric ranks from data[1]; an empty numeric payload clears previously saved ranks.
 
 --- Loads the actual ProfessionRanks wire handlers without starting account synchronization or WoW UI.
----@return ATTProfessionRankSyncHandlers handlers Rank serializer and replacing deserializer from the production code.
+---@return ATTProfessionRankSyncHandlers handlers # Rank serializer and replacing deserializer from the production code.
 local function accountSync()
 	local accountSource = read(root .. "/src/UI/Windows/Account Management.lua")
 	local serializers = assert(accountSource:match("(%-%- Data Handling.-)local function ReceiveCharacterSummary"), "Cannot locate actual account serializers")
