@@ -12,12 +12,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				9001,	-- Saving the Best for Last [A] (Mage)
 				9014,	-- Saving the Best for Last [H] (Mage)
 				9002,	-- Saving the Best for Last [A] (Paladin)
-				10499,	-- Saving the Best for Last [H] (Paladin)
+				10499,	-- Saving the Best for Last [H] (Paladin) (TODO: verify quest name)
 				9003,	-- Saving the Best for Last [A] (Priest)
 				9009,	-- Saving the Best for Last [H] (Priest)
 				9004,	-- Saving the Best for Last [A] (Rogue)
 				9010,	-- Saving the Best for Last [H] (Rogue)
-				10498,	-- Saving the Best for Last [A] (Shaman)
+				10498,	-- Saving the Best for Last [A] (Shaman) (TODO: verify quest name)
 				9011,	-- Saving the Best for Last [H] (Shaman)
 				9005,	-- Saving the Best for Last [A] (Warlock)
 				9012,	-- Saving the Best for Last [H] (Warlock)
@@ -376,7 +376,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			hordeQuestData = q(10493, {	-- An Earnest Proposition [H]
+			hordeQuestData = q(10493, {	-- An Earnest Proposition [H] (TODO: verify quest name)
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
@@ -403,7 +403,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 		},
 		{	-- Anthion's Parting Words
 			allianceQuestData = q(8954),	-- Anthion's Parting Words [A]
-			hordeQuestData = q(10497),	-- Anthion's Parting Words [H]
+			hordeQuestData = q(10497),	-- Anthion's Parting Words [H] (TODO: verify quest name)
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
@@ -430,7 +430,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 			}),
-			hordeQuestData = q(10495, {	-- Just Compensation [H]
+			hordeQuestData = q(10495, {	-- Just Compensation [H] (TODO: verify quest name)
 				sourceQuest = 8978,	-- Return to Mokvar
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
@@ -453,7 +453,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 			}),
-			hordeQuestData = q(10499, {	-- Saving the Best for Last [H]
+			hordeQuestData = q(10499, {	-- Saving the Best for Last [H] (TODO: verify quest name)
 				sourceQuest = 8998,	-- Back to the Beginning [HORDE]
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
@@ -699,7 +699,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 	}),
 	cl(SHAMAN, {
 		{	-- An Earnest Proposition
-			allianceQuestData = q(10492, {	-- An Earnest Proposition [A]
+			allianceQuestData = q(10492, {	-- An Earnest Proposition [A] (TODO: verify quest name)
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
@@ -735,7 +735,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = { i(22095) },	-- Bindings of The Five Thunders
 		},
 		{	-- Anthion's Parting Words
-			allianceQuestData = q(10496),	-- Anthion's Parting Words [A]
+			allianceQuestData = q(10496),	-- Anthion's Parting Words [A] (TODO: verify quest name)
 			hordeQuestData = q(8957),	-- Anthion's Parting Words [H]
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
@@ -758,7 +758,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 		},
 		{	-- Just Compensation
-			allianceQuestData = q(10494, {	-- Just Compensation [A]
+			allianceQuestData = q(10494, {	-- Just Compensation [A] (TODO: verify quest name)
 				sourceQuest = 8977,	-- Return to Deliana
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
@@ -783,7 +783,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 		},
 		{	-- Saving the Best for Last
-			allianceQuestData = q(10498, {	-- Saving the Best for Last [A]
+			allianceQuestData = q(10498, {	-- Saving the Best for Last [A] (TODO: verify quest name)
 				sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
