@@ -701,7 +701,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						cr = 254588,	-- Windsong Crawler
 						coord = { 64.1, 61.5, MAP.ZEPHRAS_ISLE },
 					}),
-					i(263513),	-- Recipe Pincer Bites
+					i(263513),	-- Recipe Pincer Bites (RECIPE!)
 					i(263512),	-- Pincer Bites
 				},
 			}),
@@ -1094,7 +1094,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
-					i(263511),	-- Recipe Skywall Souffle
+					i(263511),	-- Recipe Skywall Souffle (RECIPE!)
 					i(263509),	-- Skywall Souffle
 				},
 			}),

@@ -3666,24 +3666,24 @@ root(ROOTS.WorldDrops, {
 			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
 
 			--[[Sort out later to dungeons?]]
-			i(253976),	-- Pattern: Filigreed Pristine Circlet
-			i(253978),	-- Pattern: Filigreed Silky Circlet
-			i(253980),	-- Pattern: Filigreed Flame Circlet
-			i(253982),	-- Pattern: Filigreed Shadow Circlet
-			i(253984),	-- Pattern: Filigreed Pearly Circlet
-			i(253986),	-- Pattern: Filigreed Shining Circlet
-			i(253938),	-- Pattern: Filigreed Pristine Leggings
-			i(253940),	-- Pattern: Filigreed Silky Leggings
-			i(253942),	-- Pattern: Filigreed Flame Leggings
-			i(253944),	-- Pattern: Filigreed Shadow Leggings
-			i(253946),	-- Pattern: Filigreed Pearly Leggings
-			i(253948),	-- Pattern: Filigreed Shining Leggings
-			i(253902),	-- Pattern: Filigreed Pristine Gown
-			i(253904),	-- Pattern: Filigreed Silky Gown
-			i(253906),	-- Pattern: Filigreed Flame Gown
-			i(253912),	-- Pattern: Filigreed Shining Gown
-			i(253910),	-- Pattern: Filigreed Pearly Gown
-			i(253908),	-- Pattern: Filigreed Shadow Gown
+			i(253976),	-- Pattern: Filigreed Pristine Circlet (RECIPE!)
+			i(253978),	-- Pattern: Filigreed Silky Circlet (RECIPE!)
+			i(253980),	-- Pattern: Filigreed Flame Circlet (RECIPE!)
+			i(253982),	-- Pattern: Filigreed Shadow Circlet (RECIPE!)
+			i(253984),	-- Pattern: Filigreed Pearly Circlet (RECIPE!)
+			i(253986),	-- Pattern: Filigreed Shining Circlet (RECIPE!)
+			i(253938),	-- Pattern: Filigreed Pristine Leggings (RECIPE!)
+			i(253940),	-- Pattern: Filigreed Silky Leggings (RECIPE!)
+			i(253942),	-- Pattern: Filigreed Flame Leggings (RECIPE!)
+			i(253944),	-- Pattern: Filigreed Shadow Leggings (RECIPE!)
+			i(253946),	-- Pattern: Filigreed Pearly Leggings (RECIPE!)
+			i(253948),	-- Pattern: Filigreed Shining Leggings (RECIPE!)
+			i(253902),	-- Pattern: Filigreed Pristine Gown (RECIPE!)
+			i(253904),	-- Pattern: Filigreed Silky Gown (RECIPE!)
+			i(253906),	-- Pattern: Filigreed Flame Gown (RECIPE!)
+			i(253912),	-- Pattern: Filigreed Shining Gown (RECIPE!)
+			i(253910),	-- Pattern: Filigreed Pearly Gown (RECIPE!)
+			i(253908),	-- Pattern: Filigreed Shadow Gown (RECIPE!)
 		}),
 		cl(DRUID, {
 			i(17682, {	-- Book: Gift of the Wild

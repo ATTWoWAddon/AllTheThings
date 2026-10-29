@@ -301,7 +301,7 @@ instanceroot(2959, {	-- City of Dalaran
 				i(273046),	-- Guardian's Dualblade
 				i(273048),	-- Refractory Scaleguards
 				i(273047),	-- Unstable Crystalline Shoulderpads
-				i(273099),	-- Blueprint: Spinning Wheel
+				i(273099),	-- Blueprint: Spinning Wheel (RECIPE!)
 			},
 		}),
 		e(3303, {	-- Shade of the Archmage
@@ -310,7 +310,7 @@ instanceroot(2959, {	-- City of Dalaran
 				i(273052),	-- Ponderous Orb
 				i(273051),	-- Violet Sorcerer's Mantle
 				i(273049),	-- Archmagister's Faceted Pendant
-				i(273103),	-- Blueprint: Arcane Salvager
+				i(273103),	-- Blueprint: Arcane Salvager (RECIPE!)
 			},
 		}),
 	},

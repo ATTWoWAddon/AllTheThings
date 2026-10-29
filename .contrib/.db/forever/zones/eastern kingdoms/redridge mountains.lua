@@ -914,10 +914,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 22.1, 45.6, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(253665, {	-- Pattern: Linen Reagent Bag
+					i(253665, {	-- Pattern: Linen Reagent Bag (RECIPE!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(253668, {	-- Pattern: Woolen Reagent Bag
+					i(253668, {	-- Pattern: Woolen Reagent Bag (RECIPE!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(4782, {	-- Solstice Robe
