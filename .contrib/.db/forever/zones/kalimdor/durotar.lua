@@ -1395,7 +1395,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					objective(2, {	-- 0/5 Rough Grinding Stone
 						provider = { "i", 3470 },	-- Rough Grinding Stone
 					}),
-					i(277673),	-- Plans: Rough Copper Chain Boots
+					i(277673),	-- Plans: Rough Copper Chain Boots (RECIPE!)
 				},
 			}),
 			q(99049, {	-- Threat from Below
