@@ -143,20 +143,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(4535),	-- Ironforge Memorial Ring
 				},
 			}),
-			q(5641, {	-- Chastise
-				altQuests = {
-					5647,	-- Chastise [Darnassus]
-					5645,	-- Chastise [Stormwind City]
-				},
-				qg = 11406,	-- High Priest Rohan <Priest Trainer>
-				coord = { 25.0, 8.2, MAP.IRONFORGE },
-				classes = { PRIEST },
-				races = { DWARF },
-				lvl = 20,
-				groups = {
-					recipe(6346),	-- Fear Ward
-				},
-			}),
 			q(4512, {	-- A Little Slime Goes a Long Way (1/2)
 				qg = 9616,	-- Laris Geardawdle
 				coord = { 75.4, 23.4, MAP.IRONFORGE },
@@ -380,6 +366,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
 				lvl = 20,
+			}),
+			q(5641, {	-- Chastise
+				altQuests = {
+					5647,	-- Chastise [Darnassus]
+					5645,	-- Chastise [Stormwind City]
+				},
+				qg = 11406,	-- High Priest Rohan <Priest Trainer>
+				coord = { 25.0, 8.2, MAP.IRONFORGE },
+				classes = { PRIEST },
+				races = { DWARF },
+				lvl = 20,
+				groups = {
+					recipe(6346),	-- Fear Ward
+				},
 			}),
 			q(94817, {	-- Confounding Flash
 				altQuests = {
@@ -1617,10 +1617,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					2509,	-- Ornate Blunderbuss
 				}},
 				groups = {
-					i(15904),	-- Right-Handed Blades
-					i(15906),	-- Left-Handed Brass Knuckles
 					i(15909),	-- Left-Handed Blades
+					i(15906),	-- Left-Handed Brass Knuckles
 					i(15907),	-- Left-Handed Claw
+					i(15904),	-- Right-Handed Blades
 					i(15903),	-- Right-Handed Claw
 				},
 			}),

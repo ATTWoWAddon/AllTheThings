@@ -1862,25 +1862,25 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 76.0, 37.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(15905),	-- Right-Handed Brass Knuckles
 					i(2520),	-- Broadsword
 					i(1198),	-- Claymore
 					i(851),	-- Cutlass
 					i(922),	-- Dacian Falx
-					i(15904),	-- Right-Handed Blades
 					i(2024),	-- Espadon
 					i(2528),	-- Falchion
 					i(2207),	-- Jambiya
 					i(2209),	-- Kris
-					i(15906),	-- Left-Handed Brass Knuckles
 					i(15909),	-- Left-Handed Blades
+					i(15906),	-- Left-Handed Brass Knuckles
 					i(15907),	-- Left-Handed Claw
 					i(923),	-- Longsword
 					i(2526),	-- Main Gauche
 					i(2208),	-- Poniard
+					i(15904),	-- Right-Handed Blades
+					i(15905),	-- Right-Handed Brass Knuckles
+					i(15903),	-- Right-Handed Claw
 					i(2534),	-- Rondel
 					i(2027),	-- Scimitar
-					i(15903),	-- Right-Handed Claw
 				},
 			}),
 			n(3413, {	-- Sovik <Engineering Supplies>

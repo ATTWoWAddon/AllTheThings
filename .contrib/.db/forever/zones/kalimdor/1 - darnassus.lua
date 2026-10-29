@@ -59,21 +59,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(5647, {	-- Chastise
-				altQuests = {
-					5641,	-- Chastise [Ironforge]
-					5645,	-- Chastise [Stormwind City]
-				},
-				qg = 11401,	-- Priestess Alathea <Priest Trainer>
-				coord = { 39.2, 81.0, MAP.DARNASSUS },
-				maps = { MAP.IRONFORGE },
-				classes = { PRIEST },
-				races = { DWARF },
-				lvl = 20,
-				groups = {
-					recipe(6346),	-- Fear Ward
-				},
-			}),
 			q(7801, {	-- Additional Runecloth [Darnassus]
 				sourceQuest = 7800,	-- A Donation of Runecloth
 				qg = 14725,	-- Raedon Duskstriker <Alliance Cloth Quartermaster>
@@ -116,6 +101,21 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(11870),	-- Oblivion Orb
 					i(11871),	-- Snarkshaw Spaulders
 					i(11872),	-- Eschewal Greaves
+				},
+			}),
+			q(5647, {	-- Chastise
+				altQuests = {
+					5641,	-- Chastise [Ironforge]
+					5645,	-- Chastise [Stormwind City]
+				},
+				qg = 11401,	-- Priestess Alathea <Priest Trainer>
+				coord = { 39.2, 81.0, MAP.DARNASSUS },
+				maps = { MAP.IRONFORGE },
+				classes = { PRIEST },
+				races = { DWARF },
+				lvl = 20,
+				groups = {
+					recipe(6346),	-- Fear Ward
 				},
 			}),
 			q(5640, {	-- Desperate Prayer
@@ -866,8 +866,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(8632),	-- Reins of the Spotted Frostsaber (MOUNT!)
-					i(8629),	-- Reins of the Striped Nightsaber (MOUNT!)
 					i(8631),	-- Reins of the Striped Frostsaber (MOUNT!)
+					i(8629),	-- Reins of the Striped Nightsaber (MOUNT!)
 					i(18766),	-- Reins of the Swift Frostsaber (MOUNT!)
 					i(18767),	-- Reins of the Swift Mistsaber (MOUNT!)
 					i(18902),	-- Reins of the Swift Stormsaber (MOUNT!)
