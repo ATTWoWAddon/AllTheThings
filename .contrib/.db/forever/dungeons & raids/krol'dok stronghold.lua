@@ -17,10 +17,10 @@ instanceroot(78792, {	-- Krol'dok Stronghold
 		--[[
 		-- TODO: Encounter IDs aren't in DungeonEncounter yet. Known bosses:
 		--   258968 (name unknown), the final boss credited for "Krol'dok Stronghold" in Experienced Spelunker (62032 / 64017).
-		e(, {	-- 
-			creatureID = ,	-- 
+		e(, {	--
+			creatureID = ,	--
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
 		]]--

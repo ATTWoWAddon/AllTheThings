@@ -90,13 +90,13 @@ instanceroot(78791, {	-- The Drowned City
 		e(, {	-- Var'Taka
 			creatureID = 258924,	-- Var'Taka
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
-		e(, {	-- 
-			creatureID = 260274,	-- 
+		e(, {	--
+			creatureID = 260274,	--
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
 		]]--

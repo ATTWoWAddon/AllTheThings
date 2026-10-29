@@ -1440,7 +1440,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(277718),	-- Reins of the Spectral Bear (MOUNT!)
 				},
 			}),
-			]]-- 
+			]]--
 			q(1060, {	-- Letter to Jin'Zil
 				sourceQuest = 876,	-- Serena Bloodfeather
 				qg = 3449,	-- Darsok Swiftdagger
