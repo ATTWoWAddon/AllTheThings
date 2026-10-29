@@ -1,13 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
-    <Platform Condition="'$(Platform)' == ''">x64</Platform>
+    <Platform>x64</Platform>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
   <PropertyGroup>
     <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputType>Exe</OutputType>
+    <Deterministic>false</Deterministic>
+    <TargetFramework>net48</TargetFramework>
+    <Prefer32Bit>true</Prefer32Bit>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DisableImplicitConfigurationDefines>true</DisableImplicitConfigurationDefines>
+    <DisableImplicitFrameworkDefines>true</DisableImplicitFrameworkDefines>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
     <StartupObject>ATT.Program</StartupObject>
   </PropertyGroup>
@@ -132,10 +139,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
     <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
   </Target>
