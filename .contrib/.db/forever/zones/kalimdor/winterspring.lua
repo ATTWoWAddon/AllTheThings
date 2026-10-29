@@ -307,7 +307,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Shardtooth Meat
-						provider = { "i", 12622 },
+						provider = { "i", 12622 },	-- Shardtooth Meat
 						crs = {
 							7445,	-- Elder Shardtooth
 							7446,	-- Rabid Shardtooth
@@ -316,7 +316,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 						},
 					}),
 					objective(2, {	-- 0/5 Chillwind Meat
-						provider = { "i", 12623 },
+						provider = { "i", 12623 },	-- Chillwind Meat
 						crs = {
 							7448,	-- Chillwind Chimaera
 							7449,	-- Chillwind Ravager
