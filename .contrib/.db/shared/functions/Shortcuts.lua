@@ -3644,6 +3644,7 @@ end
 end)();
 
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
+--- Initializes custom header registries, schedules, and translation helpers.
 (function()
 if not NextHeaderID then
 	-- Once we've eliminated all of the old style NPC IDs, we can change this value and
@@ -3653,12 +3654,13 @@ if not NextHeaderID then
 end
 ---@type table<ATTHeaderID, ATTHeaderDefinition>
 local customHeaders = {};
+---@type table<string, ATTHeaderInputDefinition|ATTHeaderProcessingDefinition|ATTHeaderDefinition>, table<string, ATTHeaderInputDefinition|ATTHeaderProcessingDefinition|ATTHeaderDefinition>
 local customHeadersByReadable, customHeadersByConstant = {}, {};
 ---@type table<ATTHeaderID, ATTHeaderDefinition>
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
 --- Serializes sorted table key/value pairs into a Lua table-literal string.
 ---@param t table<string, string|number> # Schedule fields whose numeric or expression values are serialized into a Lua table literal.
----@return string
+---@return string # Lua table-literal source with sorted keys.
 local concatKeyPairs = function(t)
 	local keys = {};
 	for key,value in pairs(t) do
@@ -3676,7 +3678,7 @@ local concatKeyPairs = function(t)
 end
 --- Converts a parser date table into a Unix timestamp.
 ---@param t ATTDateParts # Date components containing `day` or `monthDay`, plus optional hour and minute.
----@return integer
+---@return integer # Unix timestamp derived from the date fields.
 local getTimestamp = function(t)
 	return os.time({
 		year=t.year,
@@ -3694,8 +3696,8 @@ local SECONDS_IN_A_WEEK = 604800;
 --- Registers a reusable parser header definition and returns its header ID.
 --- Header metadata is indexed for parser generation and can later be referenced
 --- through `header(...)`, `n(...)`, or generated constants.
----@param data ATTHeaderInputDefinition # Header definition to validate, normalize, and register with an assigned header ID.
----@return ATTHeaderID|nil
+---@param data? ATTHeaderInputDefinition # Header definition to validate, normalize, and register with an assigned header ID.
+---@return ATTHeaderID|nil # Assigned header ID, or nil when validation fails.
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -4155,7 +4157,7 @@ local temporaryHeaderAssignments = {};
 --- Returns a programmatic header-translation token for a header ID or localization table.
 ---@param data? ATTHeaderID|table<string, string> # Existing header ID or localized text from which to create a reusable translation header.
 ---@param key? string|integer # Header text field such as `description` or `lore`; used only with a numeric header ID.
----@return string|nil
+---@return string|nil # Programmatic header translation token, or nil for invalid input.
 translate = function(data, key)
 	if not data then
 		print("INVALID TRANSLATION: You must pass data into the translate function.");
