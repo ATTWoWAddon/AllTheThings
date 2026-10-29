@@ -426,7 +426,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 						}),
 					},
 				}),
-				n(8580, {	-- Atal'alarion
+				n(8580, {	-- Atal'alarion <Guardian of the Idol>
 					description = "Summoned by activating the Atal'ai Statues in the proper order.",
 					groups = {
 						i(22444),	-- Putrid Vine

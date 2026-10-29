@@ -80,28 +80,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 			}),
 			q(7817, {	-- A Donation of Mageweave
-				qg = 14729,	-- Ralston Farnsley
+				qg = 14729,	-- Ralston Farnsley <Horde Cloth Quartermaster>
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
 				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
 			q(7818, {	-- A Donation of Runecloth
-				qg = 14729,	-- Ralston Farnsley
+				qg = 14729,	-- Ralston Farnsley <Horde Cloth Quartermaster>
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
 				cost = { { "i", 14047, 60 } },	-- Runecloth
 				races = HORDE_ONLY,
 				lvl = 50,
 			}),
 			q(7814, {	-- A Donation of Silk
-				qg = 14729,	-- Ralston Farnsley
+				qg = 14729,	-- Ralston Farnsley <Horde Cloth Quartermaster>
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
 				cost = { { "i", 4306, 60 } },	-- Silk Cloth
 				races = HORDE_ONLY,
 				lvl = 26,
 			}),
 			q(7813, {	-- A Donation of Wool
-				qg = 14729,	-- Ralston Farnsley
+				qg = 14729,	-- Ralston Farnsley <Horde Cloth Quartermaster>
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
 				cost = { { "i", 2592, 60 } },	-- Wool Cloth
 				races = HORDE_ONLY,
@@ -145,7 +145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(7819, {	-- Additional Runecloth [Undercity]
 				sourceQuest = 7818,	-- A Donation of Runecloth
-				qg = 14729,	-- Ralston Farnsley
+				qg = 14729,	-- Ralston Farnsley <Horde Cloth Quartermaster>
 				coord = { 71.8, 29.0, MAP.UNDERCITY },
 				maxReputation = { FACTION_UNDERCITY, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
@@ -182,7 +182,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(1507, {	-- Devourer of Souls [Orgrimmar]
 				altQuests = { 1472 },	-- Devourer of Souls [Undercity]
-				qg = 5875,	-- Dan'rul Bloodeye
+				qg = 5875,	-- Gan'rul Bloodeye
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				isBreadcrumb = true,
@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5644,	-- Devouring Plague [Thunder Bluff]
 				},
 				qgs = {
-					4606,	-- Aelthalyste
+					4606,	-- Aelthalyste <Priest Trainer>
 					6018,	-- Ur'kyo <Priest Trainer>
 					3044,	-- Miles Welsh <Priest Trainer>
 				},
@@ -247,7 +247,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 			}),
 			q(232, {	-- Errand for Apothecary Zinge (1/2)
-				qg = 5204,	-- Apothecary Zinge
+				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				qi = 8525,	-- Zinge's Purchase Order
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
@@ -255,7 +255,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(238, {	-- Errand for Apothecary Zinge (2/2)
 				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
-				qg = 7683,	-- Alessandro Luca
+				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
 				qi = 8523,	-- Field Testing Kit
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
@@ -392,13 +392,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					objective(2, {	-- 0/1 Comar's Heart
 						provider = { "i", 6313 },	-- Corma's Heart
 						coord = { 50.6, 12.6, MAP.WETLANDS },
-						cr = 5683,	-- Comar Villard
+						cr = 5683,	-- Corma Villard
 					}),
 				},
 			}),
 			q(243, {	-- Into the Field
 				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
-				qg = 5204,	-- Apothecary Zinge
+				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				qi = 8523,	-- Field Testing Kit
 				coord = { 50.1, 68.0, MAP.UNDERCITY },
 				maps = { MAP.TANARIS },
@@ -481,7 +481,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 			}),
 			q(1885, {	-- Mennet Carkad
-				qg = 2130,	-- Marion Call
+				qg = 2130,	-- Marion Call <Rogue Trainer>
 				coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
 				classes = { ROGUE },
@@ -490,7 +490,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(6322, {	-- Michael Garrett
 				sourceQuest = 6323,	-- Ride to the Undercity
-				qg = 4556,	-- Gordon Wendham
+				qg = 4556,	-- Gordon Wendham <Weapons Merchant>
 				qi = 16210,	-- Gordon's Crate
 				coord = { 61.6, 41.8, MAP.UNDERCITY },
 				maps = { MAP.SILVERPINE_FOREST },
@@ -532,7 +532,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(6324, {	-- Return to Podrig
 				sourceQuest = 6322,	-- Michael Garrett
-				qg = 4551,	-- Michael Garrett
+				qg = 4551,	-- Michael Garrett <Bat Handler>
 				qi = 16210,	-- Gordon's Crate
 				coords = {
 					{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
@@ -544,7 +544,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(1358, {	-- Sample for Helbrim
 				sourceQuest = 1359,	-- Zinge's Delivery
-				qg = 5204,	-- Apothecary Zinge
+				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				qi = 6016,	-- Wolf Heart Sample
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				maps = { MAP.THE_BARRENS },
@@ -817,7 +817,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5663,	-- Touch of Weakness [Thunder Bluff]
 				},
 				qgs = {
-					4606,	-- Aelthalyste
+					4606,	-- Aelthalyste <Priest Trainer>
 					3706,	-- Tai'jin <Priest Trainer>
 					11407,	-- Var'jun
 					6018,	-- Ur'kyo <Priest Trainer>
@@ -919,7 +919,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			n(4602, {	-- Benijah Fenner
+			n(4602, {	-- Benijah Fenner <Weapon Merchant>
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -973,19 +973,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			n(4555, {	-- Eleanor Rusk <General Goods>
+			n(4555, {	-- Eleanor Rusk <General Goods Vendor>
 				coord = { 69.2, 48.9, MAP.UNDERCITY },	-- Trade Quarter
 				races = HORDE_ONLY,
 			}),
-			n(4585, {	-- Ezekiel
+			n(4585, {	-- Ezekiel Graves <Poison Vendor>
 				coord = { 75.6, 51.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 			}),
-			n(4775, {	-- Felicia Doan <Trade Supplies>
+			n(4775, {	-- Felicia Doan <General Trade Goods Vendor>
 				coord = { 64.1, 50.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 			}),
-			n(4601, {	-- Francis Eliot
+			n(4601, {	-- Francis Eliot <Weapon Merchant>
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1001,7 +1001,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(15810),	-- Short Spear
 				},
 			}),
-			n(4600, {	-- Geoffrey Hartwell
+			n(4600, {	-- Geoffrey Hartwell <Weapon Merchant>
 				coord = { 58.4, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1017,7 +1017,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2529,	-- Zweihander
 				}},
 			}),
-			n(5820, {	-- Gillian Moore
+			n(5820, {	-- Gillian Moore <Leather Armor Merchant>
 				coord = { 70.6, 59.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1063,7 +1063,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(799),	-- Rough Leather Vest
 				},
 			}),
-			n(4556, {	-- Gordon Wendham
+			n(4556, {	-- Gordon Wendham <Weapons Merchant>
 				coord = { 61.4, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1118,12 +1118,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(22250, {	-- Herb Pouch
 						description = "Only select Herbalism Suppliers sells this pouch.",
 						providers = {
-							{ "n", 4216},	-- Chardryn <Herbalism Supplies>
+							{ "n", 4216},	-- Chardryn <Herbalism Supplier>
 							{ "n", 5503},	-- Eldraeith <Herbalism Supplier>
 							{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplier>
 							{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplier>
 							{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+							{ "n", 3405},	-- Zeal'aya <Herbalism Supplier>
 						},
 					}),
 				},
@@ -1185,7 +1185,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),
-			n(4557, {	-- Louis Warren
+			n(4557, {	-- Louis Warren <Weapons Merchant>
 				coord = { 62.0, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1207,7 +1207,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					1196,	-- Tabar
 				}},
 			}),
-			n(4580, {	-- Lucille Castleton
+			n(4580, {	-- Lucille Castleton <Robe Vendor>
 				coord = { 71.4, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1238,7 +1238,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(10321),	-- Pattern: Tuxedo Shirt (RECIPE!)
 				}),
 			}),
-			n(5819, {	-- Mirelle Tremayne
+			n(5819, {	-- Mirelle Tremayne <Heavy Armor Merchant>
 				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1294,7 +1294,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					286,	-- Scalemail Pants
 				}},
 			}),
-			n(4592, {	-- Nathaniel Steenwick
+			n(4592, {	-- Nathaniel Steenwick <Thrown Weapons Merchant>
 				coord = { 77.2, 50.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1306,7 +1306,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2504,	-- Worn Shortbow
 				}},
 			}),
-			n(4603, {	-- Nicholas Atwood
+			n(4603, {	-- Nicholas Atwood <Gun Merchant>
 				coord = { 62.2, 27.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1326,7 +1326,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
-			n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
+			n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplier>
 				coord = { 61.4, 30.1, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 			}),
@@ -1418,7 +1418,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 				}},
 			}),
-			n(4559, {	-- Timothy Weldon
+			n(4559, {	-- Timothy Weldon <Heavy Armor Merchant>
 				coord = { 63.6, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1444,7 +1444,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(2386),	-- Rusted Chain Vest
 				},
 			}),
-			n(4560, {	-- Walter Ellingson
+			n(4560, {	-- Walter Ellingson <Heavy Armor Merchant>
 				coord = { 62.8, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1458,7 +1458,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					1202,	-- Wall Shield
 				}},
 			}),
-			n(5754, {	-- Zane Bradford
+			n(5754, {	-- Zane Bradford <Wand Vendor>
 				coord = { 70.0, 27.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select", "itemID",

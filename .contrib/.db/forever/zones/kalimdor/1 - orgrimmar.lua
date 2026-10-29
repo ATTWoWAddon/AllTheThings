@@ -335,7 +335,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2757, {	-- Booty Bay or Bust!
 				sourceQuest = 2756,	-- The Old Ways
-				qg = 7793,	-- Ox
+				qg = 7793,	-- Ox <The Mithril Order>
 				qi = 8663,	-- Mithril Insignia
 				coord = { 80.4, 23.2, MAP.ORGRIMMAR },
 				requireSkill = BLACKSMITHING,
@@ -376,7 +376,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2458, {	-- Deep Cover
 				sourceQuest = 2460,	-- The Shattered Salute
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				qi = 8051,	-- Flare Gun
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
 				classes = { ROGUE },
@@ -464,7 +464,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2479, {	-- Hinott's Assistance (1/2)
 				sourceQuest = 2478,	-- Mission: Possible But Not Probable
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				qi = 8087,	-- Sample of Zanzil's Altered Mixture
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
 				classes = { ROGUE },
@@ -599,7 +599,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 				qgs = {
 					6018,	-- Ur'kyo <Priest Trainer>
-					4606,	-- Aelthalyste
+					4606,	-- Aelthalyste <Priest Trainer>
 					3044,	-- Miles Welsh <Priest Trainer>
 				},
 				coords = {
@@ -728,7 +728,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2460, {	-- The Shattered Salute
 				sourceQuest = 2380,	-- To Orgrimmar!
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
 				classes = { ROGUE },
 				races = HORDE_ONLY,
@@ -736,7 +736,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(6611, {	-- To Gadgetzan You Go!
 				coord = { 57.4, 53.6, MAP.ORGRIMMAR },
-				qg = 3399,	-- Zamja
+				qg = 3399,	-- Zamja <Cooking Trainer>
 				requireSkill = COOKING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
@@ -745,7 +745,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2380, {	-- To Orgrimmar!
 				altQuests = { 2378 },	-- Find the Shattered Hand
-				qg = 3170,	-- Kaplak
+				qg = 3170,	-- Kaplak <Rogue Trainer>
 				coord = { 51.98, 43.70, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				classes = { ROGUE },
@@ -804,7 +804,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			q(65610, {	-- Wish You Were Here
 				sourceQuest = 65601,	-- Love Hurts
 				altQuests = { 65593 },	-- Hearts of the Lovers
-				qg = 3363,	-- Magar <Tailoring Trainer>
+				qg = 3363,	-- Magar <Expert Tailor>
 				coord = { 63.6, 50.0, MAP.ORGRIMMAR },
 				maps = { MAP.ASHENVALE },
 				classes = { WARLOCK },
@@ -823,7 +823,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(7660, {	-- Wolf Swapping - Arctic Wolf
 				description = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-				qg = 3362,	-- Ogunaro Wolfrunner
+				qg = 3362,	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
 				timeline = { REMOVED_1_4_0 },
 				cost = { { "i", 12351, 1 } },	-- 1x Arctic Wolf
@@ -834,7 +834,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(7661, {	-- Wolf Swapping - Red Wolf
 				description = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-				qg = 3362,	-- Ogunaro Wolfrunner
+				qg = 3362,	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
 				timeline = { REMOVED_1_4_0 },
 				cost = { { "i", 12330, 1 } },	-- 1x Red Wolf (MOUNT!)
@@ -884,7 +884,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2379, {	-- Zando'zan
 				sourceQuest = 2378,	-- Find the Shattered Hand
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
 				classes = { ROGUE },
 				races = HORDE_ONLY,
@@ -978,7 +978,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3367, {	-- Felika <Trade Supplies>
+			n(3367, {	-- Felika <General Trade Goods Merchant>
 				description = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 				coords = {
 					{ 46.5, 36.6, MAP.ORGRIMMAR },
@@ -1013,12 +1013,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(5976),	-- Guild Tabard
 				},
 			}),
-			n(3358, {	-- Gorina <Mining Supplies>
+			n(3358, {	-- Gorina <Mining Supplier>
 				coord = { 73.2, 26.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
 			}),
-			n(3335, {	-- Hagrus <Reagents>
+			n(3335, {	-- Hagrus <Reagents Vendor>
 				coord = { 46.2, 46.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1096,7 +1096,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3322, {	-- Kaja <Bow & Rifle Vendor>
+			n(3322, {	-- Kaja <Guns and Ammo Merchant>
 				coord = { 40.8, 49.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1109,7 +1109,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(3026),	-- Reinforced Bow
 				},
 			}),
-			n(3331, {	-- Kareth
+			n(3331, {	-- Kareth <Blade Merchant>
 				coord = { 46.8, 63.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1128,7 +1128,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2027,	-- Scimitar
 				}},
 			}),
-			n(5816, {	-- Katis
+			n(5816, {	-- Katis <Wand Merchant>
 				coord = { 45.8, 57.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1164,7 +1164,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				}),
 			}),
-			n(8122, {	-- Kizzak Sparks
+			n(8122, {	-- Kizzak Sparks <Holiday Fireworks Vendor>
 				coord = { 57.8, 56.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				description =
@@ -1187,7 +1187,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3360, {	-- Koru
+			n(3360, {	-- Koru <Mace & Staves Vendor>
 				coord = { 76.2, 37.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -1675,7 +1675,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(845),	-- Tanned Leather Pants
 				},
 			}),
-			n(3330, {	-- Muragus
+			n(3330, {	-- Muragus <Staff Merchant>
 				coord = { 46.0, 57.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1709,7 +1709,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3317, {	-- Ollanus <Cloth Armor Merchant>
+			n(3317, {	-- Ollanus <Light Armor Merchant>
 				coord = { 60.6, 58.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1746,7 +1746,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(18248),	-- Red Skeletal Warhorse (MOUNT!)
 				}),
 			}),
-			n(3334, {	-- Rekkul
+			n(3334, {	-- Rekkul <Poison Vendor>
 				coord = { 44.0, 58.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 			}),
@@ -1854,7 +1854,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),
-			n(5817, {	-- Shimra <Trade Supplies>
+			n(5817, {	-- Shimra <General Trade Goods Merchant>
 				coord = { 47.8, 80.5, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 			}),
@@ -1898,7 +1898,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3356, {	-- Sumi <Blacksmithing Supplies>
+			n(3356, {	-- Sumi <Blacksmithing Supplier>
 				coord = { 82.4, 23.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -2060,7 +2060,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3400, {	-- Xen'to <Cooking Supplies>
+			n(3400, {	-- Xen'to <Cooking Supplier>
 				coord = { 57.6, 53.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -2068,7 +2068,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
-			n(3405, {	-- Zeal'aya <Herbalism Supplies>
+			n(3405, {	-- Zeal'aya <Herbalism Supplier>
 				coord = { 55.0, 39.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {

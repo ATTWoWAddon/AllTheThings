@@ -15,13 +15,13 @@ instanceroot(238, {	-- The Stockade
 		n(QUESTS, {
 			q(389, {	-- Bazil Thredd
 				sourceQuest = 373,	-- The Unsent Letter
-				qg = 1646,	-- Baros Alexston
+				qg = 1646,	-- Baros Alexston <City Architect>
 				coords = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 			}),
 			q(377, {	-- Crime and Punishment
-				qg = 270,	-- Councilman Millstipe
+				qg = 270,	-- Councilman Millstipe <Council of Darkshire>
 				coord = { 72.0, 46.8, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 24,

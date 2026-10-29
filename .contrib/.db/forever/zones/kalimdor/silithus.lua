@@ -480,7 +480,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			q(8573, {	-- Champion's Battlegear
 				sourceQuest = 8800,	-- Cenarion Battlegear
-				qg = 15176,	-- Vargus
+				qg = 15176,	-- Vargus <Blacksmith>
 				coord = { 51.2, 38.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, EXALTED },
 				cost = {
@@ -689,7 +689,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 60,
 				groups = {
 					q(8732, {	-- Field Duty Papers (H)
-						qg = 15612,	-- Krug Skullsplit
+						qg = 15612,	-- Krug Skullsplit <Orgrimmar Legion Captain>
 						coord = { 52.2, 68.4, MAP.SILITHUS },
 						races = HORDE_ONLY,
 						repeatable = true,
@@ -1080,7 +1080,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			q(8574, {	-- Stalwart's Battlegear
 				sourceQuest = 8800,	-- Cenarion Battlegear
-				qg = 15176,	-- Vargus
+				qg = 15176,	-- Vargus <Blacksmith>
 				coord = { 51.2, 38.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, REVERED },
 				cost = {
@@ -1447,7 +1447,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/10 Twilight Geolord slain
-						provider = { "n", 11881 },	-- Twilight Geolord
+						provider = { "n", 11881 },	-- Twilight Geolord <Twilight's Hammer>
 					}),
 				},
 			}),
@@ -1529,7 +1529,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			q(8572, {	-- Veteran's Battlegear
 				sourceQuest = 8800,	-- Cenarion Battlegear
-				qg = 15176,	-- Vargus
+				qg = 15176,	-- Vargus <Blacksmith>
 				coord = { 51.2, 38.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, HONORED },
 				cost = {
@@ -1547,7 +1547,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			q(8548, {	-- Volunteer's Battlegear
 				sourceQuest = 8800,	-- Cenarion Battlegear
-				qg = 15176,	-- Vargus
+				qg = 15176,	-- Vargus <Blacksmith>
 				coord = { 51.2, 38.9, MAP.SILITHUS },
 				minReputation = { FACTION_CENARION_CIRCLE, FRIENDLY },
 				cost = {
@@ -1572,7 +1572,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					objective(1, {	-- 0/1 Vyral's Signet Ring
 						provider = { "i", 20466 },	-- Vyral's Signet Ring
 						coord = { 72.4, 15.6, MAP.SILITHUS },
-						cr = 15202,	-- Vyral the Vile
+						cr = 15202,	-- Vyral the Vile <Twilight's Hammer>
 					}),
 					i(20650),	-- Desert Wind Gauntlets
 					i(20649),	-- Sunprism Pendant
@@ -2075,7 +2075,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			n(15174, {	-- Calandrath <Innkeeper>
 				coord = { 51.8, 39.0, MAP.SILITHUS },
 			}),
-			n(15419, {	-- Kania <Enchanting Supplies>
+			n(15419, {	-- Kania <Enchanting Supplier>
 				coord = { 52.0, 39.7, MAP.SILITHUS },
 				sym = {{ "select","itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
@@ -2206,41 +2206,41 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			i(20408, {	-- Twilight Cultist Cowl
 				crs = {
-					11880,	-- Twilight Avenger
+					11880,	-- Twilight Avenger <Twilight's Hammer>
 					15201,	-- Twilight Flamereaver
-					11881,	-- Twilight Geolord
-					14479,	-- Twilight Lord Everun
-					15542,	-- Twilight Marauder
-					15541,	-- Twilight Marauder Morna
-					11883,	-- Twilight Master
-					15213,	-- Twilight Overlord
-					11882,	-- Twilight Stonecaller
+					11881,	-- Twilight Geolord <Twilight's Hammer>
+					14479,	-- Twilight Lord Everun <Twilight's Hammer>
+					15542,	-- Twilight Marauder <Twilight's Hammer>
+					15541,	-- Twilight Marauder Morna <Twilight's Hammer>
+					11883,	-- Twilight Master <Twilight's Hammer>
+					15213,	-- Twilight Overlord <Twilight's Hammer>
+					11882,	-- Twilight Stonecaller <Twilight's Hammer>
 				},
 			}),
 			i(20406, {	-- Twilight Cultist Mantle
 				crs = {
-					11880,	-- Twilight Avenger
+					11880,	-- Twilight Avenger <Twilight's Hammer>
 					15201,	-- Twilight Flamereaver
-					11881,	-- Twilight Geolord
-					14479,	-- Twilight Lord Everun
-					15542,	-- Twilight Marauder
-					15541,	-- Twilight Marauder Morna
-					11883,	-- Twilight Master
-					15213,	-- Twilight Overlord
-					11882,	-- Twilight Stonecaller
+					11881,	-- Twilight Geolord <Twilight's Hammer>
+					14479,	-- Twilight Lord Everun <Twilight's Hammer>
+					15542,	-- Twilight Marauder <Twilight's Hammer>
+					15541,	-- Twilight Marauder Morna <Twilight's Hammer>
+					11883,	-- Twilight Master <Twilight's Hammer>
+					15213,	-- Twilight Overlord <Twilight's Hammer>
+					11882,	-- Twilight Stonecaller <Twilight's Hammer>
 				},
 			}),
 			i(20407, {	-- Twilight Cultist Robe
 				crs = {
-					11880,	-- Twilight Avenger
+					11880,	-- Twilight Avenger <Twilight's Hammer>
 					15201,	-- Twilight Flamereaver
-					11881,	-- Twilight Geolord
-					14479,	-- Twilight Lord Everun
-					15542,	-- Twilight Marauder
-					15541,	-- Twilight Marauder Morna
-					11883,	-- Twilight Master
-					15213,	-- Twilight Overlord
-					11882,	-- Twilight Stonecaller
+					11881,	-- Twilight Geolord <Twilight's Hammer>
+					14479,	-- Twilight Lord Everun <Twilight's Hammer>
+					15542,	-- Twilight Marauder <Twilight's Hammer>
+					15541,	-- Twilight Marauder Morna <Twilight's Hammer>
+					11883,	-- Twilight Master <Twilight's Hammer>
+					15213,	-- Twilight Overlord <Twilight's Hammer>
+					11882,	-- Twilight Stonecaller <Twilight's Hammer>
 				},
 			}),
 		}),

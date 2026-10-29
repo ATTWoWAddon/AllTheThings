@@ -3526,7 +3526,7 @@ root(ROOTS.Craftables, {
 					1815,	-- Diseased Black Bear
 					1816,	-- Diseased Grizzly
 					7445,	-- Elder Shardtooth
-					7444,	-- Shardtooth Mauler
+					7444,	-- Shardtooth Bear
 				},
 				description = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
 				coords = {

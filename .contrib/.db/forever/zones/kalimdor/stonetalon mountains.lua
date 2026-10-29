@@ -333,7 +333,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			}),
 			q(1095, {	-- Further Instructions (2/2)
 				sourceQuest = 1094,	-- Further Instructions (1/2)
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				coord = { 62.97, 37.19, MAP.THE_BARRENS },
 				lvl = 16,
 			}),
@@ -353,13 +353,13 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 			}),
 			q(1090, {	-- Gerenzo's Orders (1/2)
-				qg = 4276,	-- Piznik
+				qg = 4276,	-- Piznik <Venture Co.>
 				coord = { 71.80, 60.05, MAP.STONETALON_MOUNTAINS },
 				lvl = 17,
 			}),
 			q(1092, {	-- Gerenzo's Orders (2/2)
 				sourceQuest = 1090,	-- Gerenzo's Orders (1/2)
-				qg = 4276,	-- Piznik
+				qg = 4276,	-- Piznik <Venture Co.>
 				qi = 5733,	-- Unidentified Ore
 				coord = { 71.80, 60.05, MAP.STONETALON_MOUNTAINS },
 				lvl = 17,
@@ -727,7 +727,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 13,
 			}),
 			q(1061, {	-- The Spirits of Stonetalon
-				qg = 4047,	-- Zor Lonetree
+				qg = 4047,	-- Zor Lonetree <Elder Far Seer>
 				coord = { 39.03, 38.04, MAP.ORGRIMMAR },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
@@ -775,7 +775,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 			}),
 			q(1483, {	-- Ziz Fizziks
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
 				isBreadcrumb = true,
 				lvl = 16,

@@ -37,7 +37,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			q(231, {	-- A Daughter's Love
 				sourceQuest = 229,	-- The Daughter Who Lived
 				providers = {
-					{ "n", 576 },	-- Watcher Ladimore
+					{ "n", 576 },	-- Watcher Ladimore <The Night Watch>
 					{ "i", 2162 },	-- Sarah's Ring
 					{ "o", 61 },	-- A Weathered Grave
 				},
@@ -123,7 +123,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(253, {	-- Bride of the Embalmer
 				sourceQuest = 252,	-- Translation to Ello
-				qg = 263,	-- Lord Ello Ebonlocke
+				qg = 263,	-- Lord Ello Ebonlocke <Mayor of Darkshire>
 				coord = { 71.9, 46.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -175,7 +175,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(245, {	-- Eight-Legged Menaces
-				qg = 888,	-- Watcher Dodds
+				qg = 888,	-- Watcher Dodds <The Night Watch>
 				coord = { 45.1, 67.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
@@ -228,7 +228,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(133, {	-- Ghoulish Effigy
 				sourceQuest = 159,	-- Juice Delivery
-				qg = 289,	-- Abercrombie
+				qg = 289,	-- Abercrombie <The Hermit>
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -379,7 +379,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(228, {	-- Mor'Ladim
 				sourceQuest = 227,	-- Morgan Ladimore
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -411,7 +411,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(227, {	-- Morgan Ladimore
 				sourceQuest = 225,	-- The Weathered Grave
-				qg = 268,	-- Sirra Von'Indi
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -421,7 +421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(160, {	-- Note to the Mayor
 				sourceQuest = 134,	-- Ogre Thieves
-				qg = 289,	-- Abercrombie
+				qg = 289,	-- Abercrombie <The Hermit>
 				qi = 1637,	-- Letter to Ello
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
@@ -478,7 +478,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(134, {	-- Ogre Thieves
 				sourceQuest = 133,	-- Ghoulish Effigy
-				qg = 289,	-- Abercrombie
+				qg = 289,	-- Abercrombie <The Hermit>
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -594,7 +594,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(148, {	-- Supplies from Darkshire
 				sourceQuest = 165,	-- The Hermit
-				qg = 289,	-- Abercrombie
+				qg = 289,	-- Abercrombie <The Hermit>
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -625,7 +625,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(229, {	-- The Daughter Who Lived
 				sourceQuest = 228,	-- Mor'Ladim
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -676,7 +676,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(70, {	-- The Legend of Stalvan (5/13)
 				sourceQuest = 69,	-- The Legend of Stalvan (4/13)
-				qg = 295,	-- Innkeeper Farley
+				qg = 295,	-- Innkeeper Farley <Innkeeper>
 				coord = { 43.8, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
@@ -740,7 +740,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(80, {	-- The Legend of Stalvan (11/13)
 				sourceQuest = 79,	-- The Legend of Stalvan (10/13)
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				qi = 939,	-- A Bloodstained Journal Page
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
@@ -755,7 +755,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(98, {	-- The Legend of Stalvan (13/13)
 				sourceQuest = 97,	-- The Legend of Stalvan (12/13)
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
@@ -773,7 +773,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(56, {	-- The Night Watch (1/3)
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
@@ -788,7 +788,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(57, {	-- The Night Watch (2/3)
 				sourceQuest = 56,	-- The Night Watch (1/3)
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
@@ -803,7 +803,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(58, {	-- The Night Watch (3/3)
 				sourceQuest = 57,	-- The Night Watch (2/3)
-				qg = 264,	-- Commander Althea Ebonlocke
+				qg = 264,	-- Commander Althea Ebonlocke <Leader of The Night Watch>
 				coord = { 73.6, 46.9, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
@@ -933,7 +933,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(251, {	-- Translate Abercrombie's Note
 				sourceQuest = 160,	-- Note to the Mayor
-				qg = 263,	-- Lord Ello Ebonlocke
+				qg = 263,	-- Lord Ello Ebonlocke <Mayor of Darkshire>
 				qi = 1637,	-- Letter to Ello
 				coord = { 71.9, 46.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
@@ -941,7 +941,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(252, {	-- Translation to Ello
 				sourceQuest = 401,	-- Wait for Sirra to Finish
-				qg = 268,	-- Sirra Von'Indi
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				qi = 1656,	-- Translated Letter
 				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
@@ -959,7 +959,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(401, {	-- Wait for Sirra to Finish
 				sourceQuest = 251,	-- Translate Abercrombie's Note
-				qg = 268,	-- Sirra Von'Indi
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
@@ -1032,7 +1032,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 			q(158, {	-- Zombie Juice
 				sourceQuest = 157,	-- Deliver the Thread
-				qg = 289,	-- Abercrombie
+				qg = 289,	-- Abercrombie <The Hermit>
 				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,

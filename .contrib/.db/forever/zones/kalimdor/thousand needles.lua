@@ -77,7 +77,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(5088, {	-- Arikara
 				sourceQuest = 5062,	-- Sacred Fire
-				qg = 4046,	-- Magatha Grimtotem
+				qg = 4046,	-- Magatha Grimtotem <Elder Crone>
 				coord = { 69.85, 30.90, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 24,
@@ -640,7 +640,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				lvl = 24,
 			}),
 			q(98069, {	-- Stolen Freewind Supplies
-				qg = 4877,	-- Jandia
+				qg = 4877,	-- Jandia <Trade Supplies>
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -652,7 +652,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				},
 			}),
 			q(98070, {	-- Stop the Screeching
-				qg = 4877,	-- Jandia
+				qg = 4877,	-- Jandia <Trade Supplies>
 				coord = { 46.0, 51.4, MAP.THOUSAND_NEEDLES },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -817,7 +817,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				},
 			}),
 			q(1179, {	-- The Brassbolts Brothers
-				qg = 2092,	-- Pilot Longbeard
+				qg = 2092,	-- Pilot Longbeard <Ironforge Siege Brigade>
 				qi = 5849,	-- Crate of Crash Helmets
 				coord = { 72.4, 93.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
@@ -916,7 +916,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				lvl = 30,
 			}),
 			q(4767, {	-- Wind Rider
-				qg = 10377,	-- Elu
+				qg = 10377,	-- Elu <Wind Rider Apprentice>
 				coord = { 44.84, 48.97, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 25,

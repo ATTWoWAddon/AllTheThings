@@ -106,7 +106,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				hordeQuestData = q(32, {	-- Rise of the Silithid [H]
 					maps = { MAP.ORGRIMMAR },
 				}),
-				qg = 7724,	-- Senior Surveyor Fizzledowser
+				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
 				sourceQuest = 113,	-- Insect Part Analysis (2/2)
 				coord = { 50.2, 27.5, MAP.TANARIS },
 				lvl = 39,
@@ -139,7 +139,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2771, {	-- A Good Head On Your Shoulders
 				sourceQuest = 2764,	-- Galvan's Finest Pupil
-				qg = 7804,	-- Trenton Lighthammer
+				qg = 7804,	-- Trenton Lighthammer <The Mithril Order>
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				cost = {
 					{ "i", 7931, 2 },	-- Mithril Coif
@@ -190,7 +190,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					4494,	-- March of the Silithid [Horde]
 					4493,	-- March of the Silithid [Alliance]
 				},
-				qg = 5594,	-- Alchemist Pestlezugg
+				qg = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 				coord = { 50.8, 27.0, MAP.TANARIS },
 				maps = { MAP.UNGORO_CRATER },
 				lvl = 50,
@@ -217,7 +217,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 				altQuests = { 13825 },	-- Clamlette Surprise
 				qgs = {
-					8125,	-- Dirge Quikcleave
+					8125,	-- Dirge Quikcleave <Butcher>
 				},
 				coord = { 52.6, 28.1, MAP.TANARIS },
 				cost = {
@@ -291,7 +291,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					2773,	-- The Mithril Kid
 					2772,	-- The World At Your Feet
 				},
-				qg = 7804,	-- Trenton Lighthammer
+				qg = 7804,	-- Trenton Lighthammer <The Mithril Order>
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -306,7 +306,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 43,
 			}),
 			q(992, {	-- Gadgetzan Water Survey
-				qg = 7724,	-- Senior Surveyor Fizzledowser
+				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
 				coord = { 50.2, 27.5, MAP.TANARIS },
 				lvl = 38,
 				groups = {
@@ -436,7 +436,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(110, {	-- Insect Part Analysis (1/2)
 				sourceQuest = 10,	-- The Scrimshank Redemption
-				qg = 7724,	-- Senior Surveyor Fizzledowser
+				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
 				coord = { 50.2, 27.5, MAP.TANARIS },
 				lvl = 39,
 			}),
@@ -472,7 +472,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(1691, {	-- More Wastewander Justice
 				sourceQuest = 1690,	-- Wastewander Justice
-				qg = 7407,	-- Chief Engineer Bilgewhizzle
+				qg = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 				coord = { 52.5, 28.5, MAP.TANARIS },
 				lvl = 40,
 				groups = {
@@ -498,7 +498,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(82, {	-- Noxious Lair Investigation
 				sourceQuest = 992,	-- Gadgetzan Water Survey
-				qg = 7724,	-- Senior Surveyor Fizzledowser
+				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
 				coord = { 50.2, 27.5, MAP.TANARIS },
 				lvl = 39,
 				groups = {
@@ -534,7 +534,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(8365, {	-- Pirate Hats Ahoy!
-				qg = 15165,	-- Haughty Modiste
+				qg = 15165,	-- Haughty Modiste <Fashion Designer>
 				coord = { 66.6, 22.3, MAP.TANARIS },
 				lvl = 40,
 				groups = {
@@ -627,7 +627,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(8366, {	-- Southsea Shakedown
-				qg = 7882,	-- Security Chief Bilgewhizzle
+				qg = 7882,	-- Security Chief Bilgewhizzle <Water Co. Security>
 				coord = { 67.1, 23.9, MAP.TANARIS },
 				lvl = 40,
 				groups = {
@@ -771,7 +771,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2773, {	-- The Mithril Kid
 				sourceQuest = 2764,	-- Galvan's Finest Pupil
-				qg = 7804,	-- Trenton Lighthammer
+				qg = 7804,	-- Trenton Lighthammer <The Mithril Order>
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				cost = {
 					{ "i", 7930, 2 },	-- Heavy Mithril Breastplate
@@ -809,7 +809,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(10, {	-- The Scrimshank Redemption
 				sourceQuest = 82,	-- Noxious Lair Investigation
-				qg = 7724,	-- Senior Surveyor Fizzledowser
+				qg = 7724,	-- Senior Surveyor Fizzledowser <Gadgetzan Water Co.>
 				coord = { 50.2, 27.5, MAP.TANARIS },
 				lvl = 39,
 				groups = {
@@ -919,7 +919,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(2772, {	-- The World At Your Feet
 				sourceQuest = 2764,	-- Galvan's Finest Pupil
-				qg = 7804,	-- Trenton Lighthammer
+				qg = 7804,	-- Trenton Lighthammer <The Mithril Order>
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				cost = {
 					{ "i", 7933, 2 },	-- Heavy Mithril Boots
@@ -967,7 +967,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				providers = {
 					{ "o", 150075 },	-- Wanted Poster
 					{ "o", 142122 },	-- Wanted Poster
-					{ "n", 7882 },	-- Security Chief Bilgewhizzle
+					{ "n", 7882 },	-- Security Chief Bilgewhizzle <Water Co. Security>
 				},
 				coords = {
 					{ 51.9, 27.0, MAP.TANARIS },
@@ -1015,7 +1015,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 40,
 			}),
 			q(1690, {	-- Wastewander Justice
-				qg = 7407,	-- Chief Engineer Bilgewhizzle
+				qg = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 				coord = { 52.5, 28.5, MAP.TANARIS },
 				lvl = 40,
 				groups = {
@@ -1028,7 +1028,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(1707, {	-- Water Pouch Bounty
-				qg = 7408,	-- Spigot Operator Luglunket
+				qg = 7408,	-- Spigot Operator Luglunket <Gadgetzan Water Co.>
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				cost = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 				lvl = 40,
@@ -1038,7 +1038,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(1878, {	-- Water Pouch Bounty
 				sourceQuest = 1707,	-- Water Pouch Bounty
-				qg = 7408,	-- Spigot Operator Luglunket
+				qg = 7408,	-- Spigot Operator Luglunket <Gadgetzan Water Co.>
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				cost = { { "i", 8483, 5 } },	-- Wastewander Water Pouch
 				repeatable = true,

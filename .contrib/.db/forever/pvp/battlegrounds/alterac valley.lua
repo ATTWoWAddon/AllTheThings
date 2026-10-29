@@ -678,7 +678,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			}),
 			n(13219, {	-- Jorek Ironside <Frostwolf Supply Officer> [CATA+] / Jekyll Flandring <Frostwolf Supply Officer>
 				coord = { 62.8, 59.4, MAP.ALTERAC_MOUNTAINS },
-				sym = { { "sub", "common_vendor", 13218 } },	-- Grunnda Wolfheart
+				sym = { { "sub", "common_vendor", 13218 } },	-- Grunnda Wolfheart <Frostwolf Supply Officer>
 				races = HORDE_ONLY,
 			}),
 			n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>

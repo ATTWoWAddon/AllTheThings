@@ -181,7 +181,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			}),
 			q(7816, {	-- Gammerita, Mon!
 				sourceQuest = 7815,	-- Snapjaws, Mon!
-				qg = 14740,	-- Katoom the Angler
+				qg = 14740,	-- Katoom the Angler <Fishing Trainer & Supplies>
 				coord = { 80.2, 81.4, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 44,
@@ -388,14 +388,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 42,
 			}),
 			q(649, {	-- Ripple Recovery (1/2)
-				qg = 6986,	-- Dran Droffers
+				qg = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 				coord = { 59.4, 36.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 42,
 			}),
 			q(650, {	-- Ripple Recovery (2/2)
 				sourceQuest = 649,	-- Ripple Recovery
-				qg = 6987,	-- Malton Droffers
+				qg = 6987,	-- Malton Droffers <Droffers and Son Salvage>
 				coord = { 59.4, 36.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 42,
@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				},
 			}),
 			q(7815, {	-- Snapjaws, Mon!
-				qg = 14740,	-- Katoom the Angler
+				qg = 14740,	-- Katoom the Angler <Fishing Trainer & Supplies>
 				coord = { 80.2, 81.4, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 44,
@@ -774,7 +774,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 				},
 			}),
-			n(14738, {	-- Otho Moji'ko <Cooking Supplies>
+			n(14738, {	-- Otho Moji'ko <Cooking Supplier>
 				coord = { 79.2, 79.0, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				groups = {

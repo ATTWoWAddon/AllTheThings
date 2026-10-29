@@ -41,7 +41,7 @@ battleground(MAP.ARATHI_BASIN, {
 		}),
 		n(QUESTS, {
 			q(8262, {	-- Arathor Advanced Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
@@ -51,7 +51,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8260, {	-- Arathor Basic Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
@@ -61,7 +61,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8261, {	-- Arathor Standard Care Package
-				qg = 15127,	-- Samuel Hawke
+				qg = 15127,	-- Samuel Hawke <League of Arathor Supply Officer>
 				coord = { 46.0, 45.2, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, FRIENDLY },
 				races = ALLIANCE_ONLY,
@@ -475,7 +475,7 @@ battleground(MAP.ARATHI_BASIN, {
 				lvl = 60,
 			}),
 			q(8265, {	-- Defiler's Advanced Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
@@ -485,7 +485,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8263, {	-- Defiler's Basic Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
@@ -495,7 +495,7 @@ battleground(MAP.ARATHI_BASIN, {
 				},
 			}),
 			q(8264, {	-- Defiler's Standard Care Package
-				qg = 15126,	-- Rutherford Twing
+				qg = 15126,	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
 				minReputation = { FACTION_THE_DEFILERS, FRIENDLY },
 				races = HORDE_ONLY,
@@ -629,7 +629,7 @@ battleground(MAP.ARATHI_BASIN, {
 			i(20559),	-- Arathi Basin Mark of Honor
 		}),
 		n(VENDORS, {
-			n(15126, {	-- Rutherford Twing
+			n(15126, {	-- Rutherford Twing <Defilers Supply Officer>
 				coord = { 73.4, 29.8, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				groups = {

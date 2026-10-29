@@ -222,7 +222,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(1066, {	-- Blood of Innocents
 				sourceQuest = 1065,	-- Journey to Tarren Mill
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				coord = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 13,
@@ -267,7 +267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				},
 			}),
 			q(564, {	-- Costly Menace
-				qg = 2382,	-- Darren Malvew
+				qg = 2382,	-- Darren Malvew <Stablehand>
 				coord = { 52.4, 56.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -344,7 +344,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(509, {	-- Elixir of Agony (1/5)
 				sourceQuest = 502,	-- Elixir of Pain (2/2)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 24,
@@ -361,7 +361,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(513, {	-- Elixir of Agony (2/5)
 				sourceQuest = 509,	-- Elixir of Agony (1/5)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				qi = 3506,	-- Mudsnout Composite
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.UNDERCITY },
@@ -370,7 +370,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(515, {	-- Elixir of Agony (3/5)
 				sourceQuest = 513,	-- Elixir of Agony (2/5)
-				qg = 2055,	-- Master Apothecary Faranell
+				qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 				qi = 3508,	-- Mudsnout Mixture
 				coord = { 48.89, 69.21, MAP.UNDERCITY },
 				cost = { { "i", 3388, 1 } },	-- Lesser Troll's Blood Elixir
@@ -406,7 +406,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(517, {	-- Elixir of Agony (4/5)
 				sourceQuest = 515,	-- Elixir of Agony (3/5)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 24,
@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(524, {	-- Elixir of Agony (5/5)
 				sourceQuest = 517,	-- Elixir of Agony (4/5)
 				providers = {
-					{ "n", 2216 },	-- Apothecary Lydon
+					{ "n", 2216 },	-- Apothecary Lydon <Royal Apothecary Society>
 					{ "i", 3520 },	-- Tainted Keg
 					{ "o", 1728 },	-- Dusty Rug
 				},
@@ -433,7 +433,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(501, {	-- Elixir of Pain (1/2)
 				sourceQuest = 499,	-- Elixir of Suffering (2/2)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 21,
@@ -458,14 +458,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(502, {	-- Elixir of Pain (2/2)
 				sourceQuest = 501,	-- Elixir of Pain (1/2)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				qi = 3497,	-- Elixir of Pain
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 21,
 			}),
 			q(496, {	-- Elixir of Suffering (1/2)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
@@ -493,7 +493,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(499, {	-- Elixir of Suffering (2/2)
 				sourceQuest = 496,	-- Elixir of Suffering (1/2)
-				qg = 2216,	-- Apothecary Lydon
+				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
 				qi = 3495,	-- Elixir of Suffering
 				coord = { 61.45, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
@@ -591,7 +591,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(2480, {	-- Hinott's Assistance (2/2)
 				sourceQuest = 2479,	-- Hinott's Assistance (1/2)
-				qg = 2391,	-- Serge Hinott
+				qg = 2391,	-- Serge Hinott <Expert Alchemist>
 				coord = { 61.6, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				classes = { ROGUE },
@@ -626,7 +626,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			q(1065, {	-- Journey to Tarren Mill
 				sourceQuest = 1064,	-- Forsaken Aid
-				qg = 3419,	-- Apothecary Zamah
+				qg = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
 				qi = 5628,	-- Zamah's Note
 				coord = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
@@ -719,7 +719,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			q(1067, {	-- Return to Thunder Bluff
 				sourceQuest = 1066,	-- Blood of Innocents
 				qgs = {
-					2216,	-- Apothecary Lydon
+					2216,	-- Apothecary Lydon <Royal Apothecary Society>
 					5588,	-- Lydon's Toxin
 				},
 				coord = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
@@ -733,7 +733,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					coord = { 51.8, 58.7, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				hordeQuestData = q(7321, {	-- Soothing Turtle Bisque (H)
-					qg = 2393,	-- Christoph Jeffcoat
+					qg = 2393,	-- Christoph Jeffcoat <Tradesman>
 					coord = { 62.30, 19.05, MAP.HILLSBRAD_FOOTHILLS },
 				}),
 				requireSkill = COOKING,

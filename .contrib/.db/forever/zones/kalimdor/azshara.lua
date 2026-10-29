@@ -71,7 +71,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 48,
 			}),
 			q(5536, {	-- A Land Filled with Hatred
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, MAP.AZSHARA },
 				lvl = 45,
 				groups = {
@@ -325,7 +325,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 			q(3562, {	-- Magatha's Payment to Jediga
 				sourceQuest = 3518,	-- Delivery to Magatha
-				qg = 4046,	-- Magatha Grimtotem
+				qg = 4046,	-- Magatha Grimtotem <Elder Crone>
 				qi = 10678,	-- Magatha's Note
 				coord = { 70.2, 30.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
@@ -404,7 +404,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 45,
 			}),
 			q(5535, {	-- Spiritual Unrest
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, MAP.AZSHARA },
 				lvl = 45,
 				groups = {
@@ -703,7 +703,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 		}),
 		n(VENDORS, {
-			n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
+			n(12957, {	-- Blimo Gadgetspring <Trade Supplier>
 				coord = { 45.2, 90.8, MAP.AZSHARA },
 				groups = {
 					i(15751),	-- Pattern: Blue Dragonscale Breastplate (RECIPE!)

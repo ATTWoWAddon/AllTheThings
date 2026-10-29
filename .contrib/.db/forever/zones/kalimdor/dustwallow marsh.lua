@@ -10,7 +10,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			isRaid = true,
 			lvl = 60,
 			groups = {
-				n(15552, {	-- Dr. Weavil
+				n(15552, {	-- Doctor Weavil
 					coord = { 77.6, 17.0, MAP.DUSTWALLOW_MARSH },
 					groups = {
 						i(21103),	-- Draconic for Dummies [Chapter I]
@@ -108,7 +108,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				},
 			}),
 			q(6625, {	-- Alliance Trauma
-				qg = 5150,	-- Nissa Firestone
+				qg = 5150,	-- Nissa Firestone <First Aid Trainer>
 				coord = { 54.8, 58.6, MAP.IRONFORGE },
 				requireSkill = FIRST_AID,
 				learnedAt = 225,
@@ -182,7 +182,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					1258,	-- ... and Bugs
 					1222,	-- Stinky's Escape
 				},
-				qg = 1141,	-- Angus Stern
+				qg = 1141,	-- Angus Stern <Head Chef>
 				coords = {
 					{ 51.8, 93.7, MAP.STORMWIND_CITY },
 				},
@@ -300,7 +300,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				},
 			}),
 			q(1301, {	-- James Hyal (1/2)
-				qg = 5081,	-- Connor Rivers
+				qg = 5081,	-- Connor Rivers <Apprentice Chef>
 				coord = { 51.1, 95.5, MAP.STORMWIND_CITY },
 				maps = { MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -445,7 +445,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				},
 			}),
 			q(1260, {	-- Morgan Stern
-				qg = 1141,	-- Angus Stern
+				qg = 1141,	-- Angus Stern <Head Chef>
 				coords = {
 					{ 51.8, 93.7, MAP.STORMWIND_CITY },
 				},
@@ -576,7 +576,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			q(7541, {	-- Service to the Horde
 				sourceQuest = 1262,	-- Report to Zor
-				qg = 4047,	-- Zor Lonetree
+				qg = 4047,	-- Zor Lonetree <Elder Far Seer>
 				coord = { 39.0, 38.0, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 30,
@@ -800,7 +800,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			q(1267, {	-- The Missing Diplomat (17/17)
 				sourceQuest = 1324,	-- The Missing Diplomat (16/17)
-				qg = 4968,	-- Lady Jaina Proudmoore
+				qg = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
 				coord = { 45.2, 24.2, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
@@ -869,7 +869,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			q(6624, {	-- Triage [A]
 				sourceQuest = 6625,	-- Alliance Trauma
-				qg = 12939,	-- Doctor Gustaf VanHowzen
+				qg = 12939,	-- Doctor Gustaf VanHowzen <Trauma Surgeon>
 				coord = { 67.7, 48.9, MAP.DUSTWALLOW_MARSH },
 				requireSkill = FIRST_AID,
 				learnedAt = 225,
@@ -1016,7 +1016,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					i(18778),	-- Swift White Steed (MOUNT!)
 				},
 			}),
-			n(4886, {	-- Hans Weston <Armorer & Weaponsmith>
+			n(4886, {	-- Hans Weston <Armorer & Shieldsmith>
 				coord = { 64.6, 50.4, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				groups = {

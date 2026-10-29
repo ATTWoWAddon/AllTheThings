@@ -473,7 +473,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(98313, {	-- For Further Study
 				sourceQuest = 98310,	-- Gleaning Our Future
-				qg = 1077,	-- Prospector Whelgar
+				qg = 1077,	-- Prospector Whelgar <Explorers' League>
 				qi = 280403,	-- Whelgar Relic Package (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -526,7 +526,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(98310, {	-- Gleaning Our Future
 				sourceQuest = 98216,	-- Understanding Our Present
-				qg = 1077,	-- Prospector Whelgar
+				qg = 1077,	-- Prospector Whelgar <Explorers' League>
 				qi = 280394,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -573,7 +573,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(306, {	-- In Search of the Excavation Team (2/2)
 				sourceQuest = 305,	-- In Search of the Excavation Team (1/2)
-				qg = 1076,	-- Merrin Rockweaver
+				qg = 1076,	-- Merrin Rockweaver <Explorers' League>
 				qi = 2639,	-- Merrin's Letter
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
@@ -816,7 +816,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(943, {	-- The Absent Minded Prospector (5/5)
 				sourceQuest = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
-				qg = 2911,	-- Archaeologist Flagongut
+				qg = 2911,	-- Archaeologist Flagongut <Explorers' League>
 				coord = { 10.8, 60.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
@@ -1045,7 +1045,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(299, {	-- Uncovering the Past
 				description = "The quest items spawn randomly in the dig site below.",
-				qg = 1077,	-- Prospector Whelgar
+				qg = 1077,	-- Prospector Whelgar <Explorers' League>
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 22,
@@ -1079,7 +1079,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 			q(98216, {	-- Understanding Our Present
 				sourceQuest = 299,	-- Uncovering the Past
-				qg = 1077,	-- Prospector Whelgar
+				qg = 1077,	-- Prospector Whelgar <Explorers' League>
 				qi = 279996,	-- Goaz Stone (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1379,7 +1379,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
-			n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
+			n(1448, {	-- Neal Allen <Engineering & General Goods Supplier>
 				coord = { 10.8, 56.8, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
 			}),

@@ -620,7 +620,7 @@ instanceroot(229, {	-- Blackrock Spire
 					objective(1, {	-- 0/1 Soul Stained Pike
 						provider = { "i", 12847 },	-- Soul Stained Pike
 						cost = { { "i", 12848, 1 } },	-- Blood Stained Pike
-						cr = 10899,	-- Goraluk Anvilcrack
+						cr = 10899,	-- Goraluk Anvilcrack <Blackhand Legion Armorsmith>
 					}),
 					objective(2, {	-- 0/1 Unforged Rune Covered Breastplate
 						provider = { "i", 12806 },	-- Unforged Rune Covered Breastplate
@@ -889,14 +889,14 @@ instanceroot(229, {	-- Blackrock Spire
 			i(16713),	-- Shadowcraft Belt
 			i(16716, {	-- Wildheart Belt
 				crs = {
-					9692,	-- Bloodaxe Raider
-					9258,	-- Scarshield Raider
+					9692,	-- Bloodaxe Raider <Bloodaxe Legion>
+					9258,	-- Scarshield Raider <Scarshield Legion>
 				},
 			}),
 			i(16717, {	-- Wildheart Gloves
 				crs = {
-					9692,	-- Bloodaxe Raider
-					9262,	-- Firebrand Invoker
+					9692,	-- Bloodaxe Raider <Bloodaxe Legion>
+					9262,	-- Firebrand Invoker <Firebrand Legion>
 				},
 			}),
 		}),
@@ -909,18 +909,18 @@ instanceroot(229, {	-- Blackrock Spire
 					cr = 9216,	-- Spirestone Warlord
 				}),
 				i(14513, {	-- Pattern: Robe of the Archmage (RECIPE!)
-					cr = 9264,	-- Firebrand Pyromancer
+					cr = 9264,	-- Firebrand Pyromancer <Firebrand Legion>
 				}),
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
-					cr = 9259,	-- Firebrand Grunt
+					cr = 9259,	-- Firebrand Grunt <Firebrand Legion>
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
-					cr = 9260,	-- Firebrand Legionnaire
+					cr = 9260,	-- Firebrand Legionnaire <Firebrand Legion>
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)
 					crs = {
-						9262,	-- Firebrand Invoker
-						9264,	-- Firebrand Pyromancer
+						9262,	-- Firebrand Invoker <Firebrand Legion>
+						9264,	-- Firebrand Pyromancer <Firebrand Legion>
 					},
 				}),
 				i(21982, {	-- Ogre Warbeads
@@ -939,7 +939,7 @@ instanceroot(229, {	-- Blackrock Spire
 				}),
 				i(12219),	-- Unadorned Seal of Ascension
 			}),
-			n(9257, {	-- Scarshield Warlock
+			n(9257, {	-- Scarshield Warlock <Scarshield Legion>
 				description = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				groups = {
 					i(9214, {	-- Grimoire of Inferno
@@ -1092,7 +1092,7 @@ instanceroot(229, {	-- Blackrock Spire
 				},
 			}),
 			e(393, {	-- Quartermaster Zigris
-				creatureID = 9736,	-- Quartermaster Zigris
+				creatureID = 9736,	-- Quartermaster Zigris <Bloodaxe Legion>
 				groups = {
 					i(12835),	-- Plans: Annihilator (RECIPE!)
 					i(13253),	-- Hands of Power
@@ -1196,7 +1196,7 @@ instanceroot(229, {	-- Blackrock Spire
 						i(12589),	-- Dustfeather Sash
 					},
 				}),
-				n(10509, {	-- Jed Runewatcher
+				n(10509, {	-- Jed Runewatcher <Blackhand Legion>
 					description = "This is a Rare Creature and, as such, is not always present.",
 					groups = {
 						i(12605),	-- Serpentine Skuller
@@ -1204,7 +1204,7 @@ instanceroot(229, {	-- Blackrock Spire
 						i(12930),	-- Briarwood Reed
 					},
 				}),
-				n(10899, {	-- Goraluk Anvilcrack
+				n(10899, {	-- Goraluk Anvilcrack <Blackhand Legion Armorsmith>
 					i(18779),	-- Bottom Half of Advanced Armorsmithing: Volume I
 					i(12848, {	-- Unforged Rune Covered Breastplate
 						description = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",

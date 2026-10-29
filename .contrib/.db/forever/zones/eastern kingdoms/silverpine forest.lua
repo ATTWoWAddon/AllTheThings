@@ -72,7 +72,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(530, {	-- A Husband's Revenge
 				sourceQuest = 441,	-- Raleigh and the Undercity
-				qg = 2050,	-- Raleigh Andrean
+				qg = 2050,	-- Raleigh Andrean <Ex-Chef>
 				coord = { 62.0, 43.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -136,7 +136,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(447, {	-- A Recipe For Death (1/3)
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 9,
@@ -162,7 +162,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(450, {	-- A Recipe For Death (2/3)
 				sourceQuest = 447,	-- A Recipe For Death (1/3)
-				qg = 2055,	-- Master Apothecary Faranell
+				qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 				coord = { 48.6, 69.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 9,
@@ -178,7 +178,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(451, {	-- A Recipe For Death (3/3)
 				sourceQuest = 450,	-- A Recipe For Death (2/3)
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 9,
@@ -425,7 +425,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(425, {	-- Ivar the Foul
 				sourceQuest = 91921,	-- Return to Quinn (Again)
-				qg = 1950,	-- Rane Yorick
+				qg = 1950,	-- Rane Yorick <Deathstalker>
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -440,7 +440,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(493, {	-- Journey to Hillsbrad Foothills
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				qi = 3468,	-- Renferrel's Findings
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -533,7 +533,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(448, {	-- Report to Hadrec
 				sourceQuest = 446,	-- Thule Ravenclaw
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -554,7 +554,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(430, {	-- Return to Quinn
 				sourceQuest = 429,	-- Wild Hearts
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				qi = 3165,	-- Quinn's Potion
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -571,7 +571,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(6323, {	-- Ride to the Undercity
 				sourceQuest = 6321,	-- Supplying the Sepulcher / Supplying Brill [CATA+]
-				qg = 2226,	-- Karos Razok
+				qg = 2226,	-- Karos Razok <Bat Handler>
 				qi = 16209,	-- Podrig's Order
 				coord = { 45.6, 42.4, MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
@@ -608,7 +608,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(444, {	-- Rot Hide Origins
 				sourceQuest = 443,	-- Rot Hide Ichor
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				qi = 3237,	-- Sample Ichor
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -660,7 +660,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(449, {	-- The Deathstalkers' Report
 				sourceQuest = 435,	-- Escorting Erland
-				qg = 1950,	-- Rane Yorick
+				qg = 1950,	-- Rane Yorick <Deathstalker>
 				qi = 3252,	-- Deathstalker Report
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -889,7 +889,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(429, {	-- Wild Hearts
 				sourceQuest = 428,	-- Lost Deathstalkers
-				qg = 1950,	-- Rane Yorick
+				qg = 1950,	-- Rane Yorick <Deathstalker>
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
@@ -907,7 +907,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			}),
 			q(1359, {	-- Zinge's Delivery
 				sourceQuest = 3221,	-- Speak with Renferrel
-				qg = 1937,	-- Apothecary Renferrel
+				qg = 1937,	-- Apothecary Renferrel <Royal Apothecary Society>
 				qi = 6016,	-- Wolf Heart Sample
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				maps = { MAP.UNDERCITY },
@@ -944,7 +944,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 				},
 			}),
-			n(12433, {	-- Krethis the Shadowspinner
+			n(12433, {	-- Krethis Shadowspinner
 				coords = {
 					{ 35.6, 9.0, MAP.SILVERPINE_FOREST },
 					{ 37.2, 15.6, MAP.SILVERPINE_FOREST },
@@ -1053,7 +1053,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(6892),	-- Recipe: Smoked Bear Meat (RECIPE!)
 				},
 			}),
-			n(2140, {	-- Edwin Harly
+			n(2140, {	-- Edwin Harly <General Supplies>
 				coord = { 44.1, 39.7, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 			}),

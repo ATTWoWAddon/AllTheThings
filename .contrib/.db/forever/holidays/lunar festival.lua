@@ -401,7 +401,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8862, {	-- Elune's Candle
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
 				isYearly = true,
@@ -412,7 +412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8863, {	-- Festival Dumplings
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 1 } },
 				repeatable = true,
@@ -421,7 +421,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8864, {	-- Festive Lunar Dresses
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
 				repeatable = true,
@@ -433,7 +433,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(8865, {	-- Festive Lunar Pant Suits
-				qg = 15864,	-- Valadar Starsong
+				qg = 15864,	-- Valadar Starsong <Coin of Ancestry Collector>
 				coord = { 53.6, 35.3, MAP.MOONGLADE },
 				cost = { { "i", COIN_OF_ANCESTRY, 5 } },
 				isYearly = true,

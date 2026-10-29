@@ -139,7 +139,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 50,
 			}),
 			q(9131, {	-- Binding the Dreadnaught
-				qg = 16112,	-- Korfax, Champion of the Light
+				qg = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 				coord = { 81.8, 58.1, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 				lvl = 55,
@@ -179,7 +179,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			}),
 			q(9127, {	-- Bone Fragments
 				sourceQuest = 9126,	-- Bonescythe Digs
-				qg = 16131,	-- Rohan the Assassin
+				qg = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 				coord = { 81.4, 58.5, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22526, 30 } },	-- Bone Fragments
 				repeatable = true,
@@ -189,7 +189,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				},
 			}),
 			q(9126, {	-- Bonescythe Digs
-				qg = 16131,	-- Rohan the Assassin
+				qg = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 				coord = { 81.4, 58.5, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22526, 30 } },	-- Bone Fragments
 				lvl = 55,
@@ -281,7 +281,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			}),
 			q(9132, {	-- Dark Iron Scraps
 				sourceQuest = 9131,	-- Binding the Dreadnaught
-				qg = 16112,	-- Korfax, Champion of the Light
+				qg = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 				coord = { 81.8, 58.1, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 22528, 30 } },	-- Dark Iron Scraps
 				repeatable = true,
@@ -421,7 +421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				},
 			}),
 			q(9664, {	-- Establishing New Outposts
-				qg = 17069,	-- Emissary Whitebeard
+				qg = 17069,	-- Emmisary Whitebeard
 				coord = { 81.3, 59.4, MAP.EASTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 55,
@@ -1353,7 +1353,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			}),
 		}),
 		n(VENDORS, {
-			n(12384, {	-- Agustus the Touched
+			n(12384, {	-- Augustus the Touched
 				description = "Vendor will not sell anything until you complete his quest.",
 				sourceQuests = {
 					6164,	-- Augustus' Receipt Book
@@ -1499,7 +1499,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				cr = 8538,	-- Unseen Servant
 			}),
 			i(14485, {	-- Pattern: Wizardweave Leggings (RECIPE!)
-				cr = 8551,	-- Dark Summoner
+				cr = 8551,	-- Dark Summoner <Cult of the Damned>
 			}),
 			i(14500, {	-- Pattern: Wizardweave Robe (RECIPE!)
 				cr = 8526,	-- Dark Caster

@@ -231,7 +231,7 @@ instanceroot(234, {	-- Razorfen Kraul
 			i(6690),	-- Ferine Leggings
 		}),
 		e(901, {	-- Charlga Razorflank
-			creatureID = 4421,	-- Charlga Razorflank
+			creatureID = 4421,	-- Charlga Razorflank <The Crone>
 			groups = {
 				i(5793),	-- Razorflank's Heart
 				i(5792),	-- Razorflank's Medallion

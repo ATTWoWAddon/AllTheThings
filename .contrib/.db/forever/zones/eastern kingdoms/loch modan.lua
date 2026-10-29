@@ -178,7 +178,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(2500, {	-- Badlands Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -217,7 +217,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(2501, {	-- Badlands Reagent Run II
 				sourceQuest = 17,	-- Uldaman Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				maps = { MAP.BADLANDS },
 				requireSkill = ALCHEMY,
@@ -482,7 +482,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(6387, {	-- Honor Students
-				qg = 1681,	-- Brock Stoneseeker
+				qg = 1681,	-- Brock Stoneseeker <Mining Trainer>
 				qi = 16310,	-- Brock's List (PQI!)
 				coord = { 37.0, 47.8, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
@@ -577,7 +577,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(436, {	-- Ironband's Excavation
-				qg = 1105,	-- Jern Hornhelm
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -648,7 +648,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
-				qg = 1105,	-- Jern Hornhelm
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				qi = 2637,	-- Ironband's Progress Report
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
@@ -663,14 +663,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(273, {	-- Resupplying the Excavation
 				sourceQuest = 302,	-- Powder to Ironband
-				qg = 1105,	-- Jern Hornhelm
+				qg = 1105,	-- Jern Hornhelm <Explorers' League>
 				coord = { 37.2, 47.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 			}),
 			q(6391, {	-- Ride to Ironforge
 				sourceQuest = 6387,	-- Honor Students
-				qg = 1572,	-- Thorgrum Borrelson
+				qg = 1572,	-- Thorgrum Borrelson <Gryphon Master>
 				qi = 16310,	-- Brock's List
 				coord = { 33.9, 50.9, MAP.LOCH_MODAN },
 				races = { DWARF, GNOME },
@@ -779,7 +779,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			}),
 			q(17, {	-- Uldaman Reagent Run
 				sourceQuest = 2500,	-- Badlands Reagent Run
-				qg = 1470,	-- Ghak Healtouch
+				qg = 1470,	-- Ghak Healtouch <Journeyman Alchemist>
 				coord = { 37.07, 49.38, MAP.LOCH_MODAN },
 				maps = { MAP.BADLANDS, MAP.ULDAMAN },
 				races = ALLIANCE_ONLY,

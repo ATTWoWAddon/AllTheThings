@@ -39,28 +39,28 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 10,
 			}),
 			q(7822, {	-- A Donation of Mageweave
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
 			q(7823, {	-- A Donation of Runecloth
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
 				races = HORDE_ONLY,
 				lvl = 50,
 			}),
 			q(7821, {	-- A Donation of Silk
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				races = HORDE_ONLY,
 				lvl = 26,
 			}),
 			q(7820, {	-- A Donation of Wool
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				races = HORDE_ONLY,
@@ -68,7 +68,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(7825, {	-- Additional Runecloth [Thunder Bluff]
 				sourceQuest = 7823,	-- A Donation of Runecloth
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				maxReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
@@ -77,21 +77,21 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 50,
 			}),
 			q(936, {	-- Assisting Arch Druid Runetotem [Orgrimmar]
-				qg = 6929,	-- Innkeeper Gryshka
+				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
 			}),
 			q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
-				qg = 6746,	-- Innkeeper Pala
+				qg = 6746,	-- Innkeeper Pala <Innkeeper>
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
 			}),
 			q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
-				qg = 6741,	-- Innkeeper Norman
+				qg = 6741,	-- Innkeeper Norman <Innkeeper>
 				coord = { 67.6, 38.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
@@ -139,7 +139,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(1064, {	-- Forsaken Aid
 				sourceQuest = 1063,	-- The Elder Crone
-				qg = 4046,	-- Magatha Grimtotem
+				qg = 4046,	-- Magatha Grimtotem <Elder Crone>
 				coord = { 69.85, 30.91, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 13,
@@ -241,7 +241,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
 				sourceQuest = 6363,	-- Tal the Wind Rider Master
-				qg = 2995,	-- Tal
+				qg = 2995,	-- Tal <Wind Rider Master>
 				qi = 16283,	-- Ahanu's Leather Goods
 				coord = { 46.8, 50.0, MAP.THUNDER_BLUFF },
 				maps = {
@@ -252,7 +252,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(6362, {	-- Ride to Thunder Bluff
 				sourceQuest = 6361,	-- A Bundle of Hides
-				qg = 3615,	-- Devrak
+				qg = 3615,	-- Devrak <Wind Rider Master>
 				qi = 16282,	-- Bundle of Hides
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { TAUREN },
@@ -275,7 +275,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(6363, {	-- Tal the Wind Rider Master
 				sourceQuest = 6362,	-- Ride to Thunder Bluff
-				qg = 8359,	-- Ahanu
+				qg = 8359,	-- Ahanu <Leather Armor Merchant>
 				qi = 16283,	-- Ahanu's Leather Goods
 				coord = { 45.74, 55.86, MAP.THUNDER_BLUFF },
 				maps = {
@@ -286,7 +286,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(1086, {	-- The Flying Machine Airport
 				sourceQuest = 1067,	-- Return to Thunder Bluff
-				qg = 3419,	-- Apothecary Zamah
+				qg = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
 				coord = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				races = HORDE_ONLY,
@@ -592,7 +592,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					2493,	-- Wooden Mallet
 				}},
 			}),
-			n(3021, {	-- Kard Ragetotem <Sword & Dagger Merchant>
+			n(3021, {	-- Kard Ragetotem <Sword and Dagger Merchant>
 				coord = { 53.6, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
@@ -646,12 +646,12 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			n(3002, {	-- Kurm Stonehoof <Mining Supplies>
+			n(3002, {	-- Kurm Stonehoof <Mining Supplier>
 				coord = { 34.35, 56.58, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				sym = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
 			}),
-			n(8362, {	-- Kuruk <General Goods>
+			n(8362, {	-- Kuruk <General Goods Vendor>
 				coord = { 39.0, 64.4, MAP.THUNDER_BLUFF },	-- Wayfarer's Rest
 				races = HORDE_ONLY,
 				sym = {{ "select","itemID",
@@ -697,7 +697,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			n(3027, {	-- Naal Mistrunner <Cooking Supplies>
+			n(3027, {	-- Naal Mistrunner <Cooking Supplier>
 				coord = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
@@ -784,7 +784,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(4496),	-- Small Brown Pouch
 				},
 			}),
-			n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
+			n(3029, {	-- Sewa Mistrunner <Fishing Supplier>
 				coord = { 55.8, 47.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
@@ -792,7 +792,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 				},
 			}),
-			n(8363, {	-- Shadi Mistrunner <Trade Supplies>
+			n(8363, {	-- Shadi Mistrunner <Trade Goods Supplier>
 				coord = { 40.6, 64.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 			}),

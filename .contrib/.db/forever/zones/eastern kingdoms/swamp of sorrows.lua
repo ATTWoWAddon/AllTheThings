@@ -43,7 +43,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 		}),
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
-				n(1386, {	-- Rogvar <Alchemy Trainer>
+				n(1386, {	-- Rogvar <Master Alchemist>
 					coord = { 49.8, 56.0, MAP.SWAMP_OF_SORROWS },
 					races = HORDE_ONLY,
 					groups = ALCHEMY_RECIPES.ARTISAN,
@@ -682,7 +682,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			}),
 		}),
 		n(VENDORS, {
-			n(989, {	-- Banalash <Trade Supplies>
+			n(989, {	-- Banalash <Trade Goods>
 				coord = { 44.6, 56.8, MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
 				groups = {

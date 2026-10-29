@@ -272,7 +272,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(6141, {	-- Brother Anton
-				qg = 12336,	-- Brother Crowley
+				qg = 12336,	-- Brother Crowley <Scarlet Crusade Emissary>
 				coord = { 42.4, 24.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -458,7 +458,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(6142, {	-- Clam Bait
-				qg = 12031,	-- Mai'Lahii
+				qg = 12031,	-- Mai'Lahii <Fishing Supplies>
 				coord = { 22.6, 72.0, MAP.DESOLACE },
 				races = HORDE_ONLY,
 				lvl = 31,
@@ -921,7 +921,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1458, {	-- Reagents for Reclaimers Inc. (1/4)
 				sourceQuest = 1453,	-- Reclaimers' Business in Desolace
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -954,7 +954,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1459, {	-- Reagents for Reclaimers Inc. (2/4)
 				sourceQuest = 1458,	-- Reagents for Reclaimers Inc. (1/4)
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -975,7 +975,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1466, {	-- Reagents for Reclaimers Inc. (3/4)
 				sourceQuest = 1459,	-- Reagents for Reclaimers Inc. (2/4)
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -1008,7 +1008,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1467, {	-- Reagents for Reclaimers Inc. (4/4)
 				sourceQuest = 1466,	-- Reagents for Reclaimers Inc. (3/4)
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				qi = 6253,	-- Leftwitch's Package
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
@@ -1019,7 +1019,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(1453, {	-- Reclaimers' Business in Desolace
-				qg = 5637,	-- Roetten Stonehammer
+				qg = 5637,	-- Roetten Stonehammer <Reclaimers Inc.>
 				coord = { 69.6, 21.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -1212,7 +1212,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuests = {
 					1453,	-- Reclaimers' Business in Desolace
 				},
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -1226,7 +1226,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1456, {	-- The Karnitol Shipwreck (3/4)
 				sourceQuest = 1455,	-- The Karnitol Shipwreck (2/4)
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
@@ -1242,7 +1242,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(1457, {	-- The Karnitol Shipwreck (4/4)
 				sourceQuest = 1456,	-- The Karnitol Shipwreck (3/4)
-				qg = 5638,	-- Kreldig Ungor
+				qg = 5638,	-- Kreldig Ungor <Reclaimers Inc.>
 				qi = 6245,	-- Karnitol's Satchel
 				coord = { 66.2, 9.6, MAP.DESOLACE },
 				maps = { MAP.IRONFORGE },

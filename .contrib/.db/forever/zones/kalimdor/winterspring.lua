@@ -225,7 +225,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			q(4861, {	-- Enraged Wildkin (2/4)
 				sourceQuest = 6604,	-- Enraged Wildkin (1/4)
-				qg = 10301,	-- Jaron Stoneshaper
+				qg = 10301,	-- Jaron Stoneshaper <Explorers' League>
 				coord = { 52.0, 30.4, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
@@ -523,7 +523,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				},
 			}),
 			q(5250, {	-- Starfall
-				qg = 7907,	-- Daryn Lightwind
+				qg = 7907,	-- Daryn Lightwind <Cenarion Lore Keeper>
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -621,7 +621,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				},
 			}),
 			q(5249, {	-- To Winterspring!
-				qg = 10924,	-- Ivy Leafrunner
+				qg = 10924,	-- Ivy Leafrunner <Emerald Circle>
 				coord = { 50.8, 81.6, MAP.FELWOOD },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -648,7 +648,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			q(5245, {	-- Troubled Spirits of Kel'Theril
 				sourceQuest = 5244,	-- The Ruins of Kel'Theril
-				qg = 10301,	-- Jaron Stoneshaper
+				qg = 10301,	-- Jaron Stoneshaper <Explorers' League>
 				coord = { 52.0, 30.4, MAP.WINTERSPRING },
 				maps = { MAP.EASTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
@@ -855,7 +855,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				coord = { 52.0, 29.2, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
 			}),
-			n(11189, {	-- Qia <Trade Supplies>
+			n(11189, {	-- Qia <Trade Goods Supplies>
 				coord = { 61.2, 37.2, MAP.WINTERSPRING },
 				groups = {
 					i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)

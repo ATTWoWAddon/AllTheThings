@@ -374,7 +374,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 			}),
 			q(98393, {	-- The Great Cat Spirit
-				qg = 4217,	-- Mathrengyl Bearwalker
+				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 				coord = { 35.2, 8.0, MAP.DARNASSUS },
 				races = { NIGHTELF, SKYBORNE_ALLIANCE },
 				classes = { DRUID },

@@ -147,7 +147,7 @@ instanceroot(239, {	-- Uldaman
 			}),
 			q(2963, {	-- Portents of Uldum [Alliance]
 				sourceQuest = 2439,	-- The Platinum Discs (3/3) [Alliance]
-				qg = 5387,	-- High Explorer Magellas
+				qg = 5387,	-- High Explorer Magellas <Explorers' League>
 				coord = { 69.8, 18.4, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 45,

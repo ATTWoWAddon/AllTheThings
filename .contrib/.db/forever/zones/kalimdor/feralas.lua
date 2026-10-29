@@ -33,7 +33,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 		n(FLIGHT_PATHS, {
 			fp(42, {	-- Camp Mojache, Feralas
 				crs = {
-					8020,	-- Shyn <Hippogryph Master>
+					8020,	-- Shyn <Wind Rider Master>
 				},
 				coord = { 75.4, 44.2, MAP.FERALAS },
 				races = HORDE_ONLY,
@@ -59,7 +59,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 		}),
 		n(PROFESSIONS, {
 			prof(ALCHEMY, {
-				n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
+				n(7948, {	-- Kylanna Windwhisper <Master Alchemist>
 					coord = { 32.6, 43.8, MAP.FERALAS },
 					races = ALLIANCE_ONLY,
 					groups = ALCHEMY_RECIPES.ARTISAN,
@@ -452,7 +452,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			q(7734, {	-- Improved Quality [H]
 				sourceQuest = 2822,	-- The Mark of Quality [H]
-				qg = 7854,	-- Jangdor Swiftstrider
+				qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 				coord = { 74.4, 42.8, MAP.FERALAS },
 				races = HORDE_ONLY,
 				lvl = 40,
@@ -477,14 +477,14 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 42,
 			}),
 			q(3787, {	-- Jonespyre's Request
-				qg = 5566,	-- Tannysa
+				qg = 5566,	-- Tannysa <Herbalism Trainer>
 				coord = { 44.8, 77.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
 			}),
 			q(3788, {	-- Jonespyre's Request
-				qg = 7736,	-- Innkeeper Shyria
+				qg = 7736,	-- Innkeeper Shyria <Innkeeper>
 				coord = { 31.0, 43.4, MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
@@ -500,7 +500,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 						2849,	-- Wild Leather Vest [A]
 					},
 					providers = {
-						{ "n", 7852 },	-- Pratt McGrubben
+						{ "n", 7852 },	-- Pratt McGrubben <Leatherworking Supplies>
 						{ "i", 9235 },	-- Pratt's Letter
 					},
 					coord = { 30.6, 42.7, MAP.FERALAS },
@@ -514,7 +514,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 						2856,	-- Wild Leather Vest [H]
 					},
 					providers = {
-						{ "n", 7854 },	-- Jangdor Swiftstrider
+						{ "n", 7854 },	-- Jangdor Swiftstrider <Leatherworking Supplies>
 						{ "i", 9236 },	-- Jangdor's Letter
 					},
 					coord = { 74.43, 42.91, MAP.FERALAS },
@@ -839,7 +839,7 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				},
 			}),
 			q(2822, {	-- The Mark of Quality [H]
-				qg = 7854,	-- Jangdor Swiftstrider
+				qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 				coord = { 74.4, 42.8, MAP.FERALAS },
 				races = HORDE_ONLY,
 				lvl = 40,
@@ -1114,11 +1114,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			}),
 			{	-- Wild Leather Armor
 				allianceQuestData = q(2847, {	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2854, {	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				cost = { { "i", 4304, 10 } },	-- Thick Leather
@@ -1129,12 +1129,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			{	-- Wild Leather Boots
 				allianceQuestData = q(2851, {	-- Wild Leather Boots [A]
 					sourceQuest = 2847,	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2858, {	-- Wild Leather Boots [H]
 					sourceQuest = 2854,	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				requireSkill = LEATHERWORKING,
@@ -1152,12 +1152,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			{	-- Wild Leather Helmet
 				allianceQuestData = q(2850, {	-- Wild Leather Helmet [A]
 					sourceQuest = 2847,	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2857, {	-- Wild Leather Helmet [H]
 					sourceQuest = 2854,	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				requireSkill = LEATHERWORKING,
@@ -1175,12 +1175,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			{	-- Wild Leather Leggings
 				allianceQuestData = q(2852, {	-- Wild Leather Leggings [A]
 					sourceQuest = 2847,	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2859, {	-- Wild Leather Leggings [H]
 					sourceQuest = 2854,	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				requireSkill = LEATHERWORKING,
@@ -1198,12 +1198,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			{	-- Wild Leather Shoulders
 				allianceQuestData = q(2848, {	-- Wild Leather Shoulders [A]
 					sourceQuest = 2847,	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2855, {	-- Wild Leather Shoulders [H]
 					sourceQuest = 2854,	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				requireSkill = LEATHERWORKING,
@@ -1220,12 +1220,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			{	-- Wild Leather Vest
 				allianceQuestData = q(2849, {	-- Wild Leather Vest [A]
 					sourceQuest = 2847,	-- Wild Leather Armor [A]
-					qg = 7852,	-- Pratt McGrubben
+					qg = 7852,	-- Pratt McGrubben <Leatherworking Supplies>
 					coord = { 30.6, 42.7, MAP.FERALAS },
 				}),
 				hordeQuestData = q(2856, {	-- Wild Leather Vest [H]
 					sourceQuest = 2854,	-- Wild Leather Armor [H]
-					qg = 7854,	-- Jangdor Swiftstrider
+					qg = 7854,	-- Jangdor Swiftstrider <Leatherworking Supplies>
 					coord = { 74.43, 42.91, MAP.FERALAS },
 				}),
 				requireSkill = LEATHERWORKING,

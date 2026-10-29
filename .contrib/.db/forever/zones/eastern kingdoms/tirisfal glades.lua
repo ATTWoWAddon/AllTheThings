@@ -47,7 +47,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						races = HORDE_ONLY,
 						groups = {
 							objective(1, {	-- Deliver the Nondescript Letter to Innkeeper Renee
-								provider = { "n", 5688 },	-- Innkeeper Renee
+								provider = { "n", 5688 },	-- Innkeeper Renee <Innkeeper>
 								coord = { 61.7, 52.1, MAP.TIRISFAL_GLADES },
 							}),
 						},
@@ -548,7 +548,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 4,
 			}),
 			q(367, {	-- A New Plague (1/4)
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
@@ -565,7 +565,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(368, {	-- A New Plague (2/4)
 				sourceQuest = 367,	-- A New Plague (1/4)
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
@@ -583,7 +583,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(369, {	-- A New Plague (3/4)
 				sourceQuest = 368,	-- A New Plague (2/4)
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
@@ -597,7 +597,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(492, {	-- A New Plague (4/4)
 				sourceQuest = 369,	-- A New Plague (3/4)
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				qi = 3460,	-- Johaan's Special Drink
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
@@ -1053,7 +1053,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(445, {	-- Delivery to Silverpine Forest
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				qi = 3238,	-- Johaan's Findings
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
@@ -1100,7 +1100,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(5482, {	-- Doom Weed
 				sourceQuest = 5481,	-- Gordo's Task
-				qg = 10665,	-- Junior Apothecary Holland
+				qg = 10665,	-- Junior Apothecary Holland <Royal Apothecary Society>
 				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 5,
@@ -1137,7 +1137,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(407, {	-- Fields of Grief (2/2)
 				sourceQuest = 365,	-- Fields of Grief (1/2)
-				qg = 1518,	-- Apothecary Johaan
+				qg = 1518,	-- Apothecary Johaan <Royal Apothecary Society>
 				qi = 3035,	-- Laced Pumpkin
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
@@ -1458,8 +1458,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						},
 						coord = { 69.2, 66.0, MAP.TIRISFAL_GLADES },
 						crs = {
-							267006,	-- Dark Neophyte
-							275437,	-- Dark Enforcer
+							267006,	-- Dark Neophyte <Cult of the Damned>
+							275437,	-- Dark Enforcer <Cult of the Damned>
 						},
 					}),
 				},
@@ -1502,7 +1502,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(1818, {	-- Speak with Dillinger
 				altQuests = { 1502 },	-- Thun'grim Firegaze
-				qg = 2131,	-- Austil de Mon
+				qg = 2131,	-- Austil de Mon <Warrior Trainer>
 				coord = { 61.84, 52.53, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				classes = { WARRIOR },
@@ -2204,7 +2204,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 				crs = {
 					1688,	-- Night Web Matriarch
-					1555,	-- Vicious Night Web Spiders
+					1555,	-- Vicious Night Web Spider
 				},
 			}),
 		}),

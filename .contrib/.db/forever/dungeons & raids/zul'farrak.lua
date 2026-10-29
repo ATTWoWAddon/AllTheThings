@@ -177,7 +177,7 @@ instanceroot(241, {	-- Zul'Farrak
 					{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 				},
 				crs = {
-					8127,	-- Antu'sul
+					8127,	-- Antu'sul <Overseer of Sul>
 					7267,	-- Chief Ukorz Sandscalp
 				},
 			}),

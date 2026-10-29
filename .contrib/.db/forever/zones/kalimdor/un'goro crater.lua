@@ -686,7 +686,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				},
 			}),
 			q(4502, {	-- Volcanic Activity
-				qg = 8496,	-- Liv Rizzlefix
+				qg = 8496,	-- Liv Rizzlefix <Workshop Assistant>
 				coord = { 62.4, 38.6, MAP.THE_BARRENS },
 				lvl = 49,
 				groups = {

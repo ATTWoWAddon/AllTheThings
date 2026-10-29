@@ -53,7 +53,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 		n(QUESTS, {
 			q(5242, {	-- A Final Blow
 				sourceQuest = 5165,	-- Dousing the Flames of Protection
-				qg = 10922,	-- Greta Mosshoof
+				qg = 10922,	-- Greta Mosshoof <Emerald Circle>
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				lvl = 48,
 				groups = {
@@ -161,11 +161,11 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			{	-- Cleansing Felwood
 				allianceQuestData = q(4101, {	-- Cleansing Felwood (A)
-					qg = 9528,	-- Arathandris Silversky
+					qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 					coord = { 54.2, 86.7, MAP.FELWOOD },
 				}),
 				hordeQuestData = q(4102, {	-- Cleansing Felwood (H)
-					qg = 9529,	-- Maybess Riverbreeze
+					qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 					coord = { 46.8, 83.0, MAP.FELWOOD },
 				}),
 				lvl = 48,
@@ -185,7 +185,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			},
 			q(5157, {	-- Collection of the Corrupt Water
 				sourceQuest = 5155,	-- Forces of Jaedenar
-				qg = 10922,	-- Greta Mosshoof
+				qg = 10922,	-- Greta Mosshoof <Emerald Circle>
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				lvl = 48,
 				groups = {
@@ -447,7 +447,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5165, {	-- Dousing the Flames of Protection
 				sourceQuest = 5159,	-- Cleansed Water Returns to Felwood
-				qg = 10922,	-- Greta Mosshoof
+				qg = 10922,	-- Greta Mosshoof <Emerald Circle>
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				lvl = 48,
 				groups = {
@@ -483,7 +483,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4441, {	-- Felbound Ancients
 				sourceQuest = 939,	-- Flute of Xavaric
-				qg = 9116,	-- Eridan Bluewind
+				qg = 9116,	-- Eridan Bluewind <Emerald Circle>
 				coord = { 51.4, 81.5, MAP.FELWOOD },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
@@ -546,7 +546,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(5155, {	-- Forces of Jaedenar
-				qg = 10922,	-- Greta Mosshoof
+				qg = 10922,	-- Greta Mosshoof <Emerald Circle>
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				lvl = 48,
 				groups = {
@@ -566,7 +566,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4906, {	-- Further Corruption
 				sourceQuest = 4421,	-- The Corruption of the Jadefire
-				qg = 9116,	-- Eridan Bluewind
+				qg = 9116,	-- Eridan Bluewind <Emerald Circle>
 				coord = { 51.4, 81.5, MAP.FELWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 49,
@@ -668,7 +668,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5886, {	-- Salve via Disenchanting (1/2)
 				sourceQuest = 4101,	-- Cleansing Felwood (A)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 				requireSkill = ENCHANTING,
@@ -681,7 +681,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5891, {	-- Salve via Disenchanting (1/2)
 				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 				requireSkill = ENCHANTING,
@@ -694,7 +694,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4107, {	-- Salve via Disenchanting (2/2)
 				sourceQuest = 5886,	-- Salve via Disenchanting (1/2)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 				requireSkill = ENCHANTING,
@@ -708,7 +708,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4112, {	-- Salve via Disenchanting (2/2)
 				sourceQuest = 4112,	-- Salve via Disenchanting (1/2)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
 				requireSkill = ENCHANTING,
@@ -722,7 +722,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5884, {	-- Salve via Gathering (1/2)
 				sourceQuest = 4101,	-- Cleansing Felwood (A)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11514, 4 } },	-- Fel Creep
 				requireSkill = HERBALISM,
@@ -735,7 +735,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5889, {	-- Salve via Gathering (1/2)
 				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11514, 4 } },	-- Fel Creep
 				requireSkill = HERBALISM,
@@ -748,7 +748,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4105, {	-- Salve via Gathering (2/2)
 				sourceQuest = 5884,	-- Salve via Gathering (1/2)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11514, 4 } },	-- Fel Creep
 				requireSkill = HERBALISM,
@@ -762,7 +762,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4110, {	-- Salve via Gathering (2/2)
 				sourceQuest = 5889,	-- Salve via Gathering (1/2)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11514, 4 } },	-- Fel Creep
 				requireSkill = HERBALISM,
@@ -776,7 +776,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5882, {	-- Salve via Hunting (1/2)
 				sourceQuest = 4101,	-- Cleansing Felwood (A)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = ALLIANCE_ONLY,
@@ -787,7 +787,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5887, {	-- Salve via Hunting (1/2)
 				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = HORDE_ONLY,
@@ -798,7 +798,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4103, {	-- Salve via Hunting (2/2)
 				sourceQuest = 5882,	-- Salve via Hunting (1/2)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = ALLIANCE_ONLY,
@@ -810,7 +810,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4108, {	-- Salve via Hunting (2/2)
 				sourceQuest = 5887,	-- Salve via Hunting (1/2)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = HORDE_ONLY,
@@ -822,7 +822,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5883, {	-- Salve via Mining (1/2)
 				sourceQuest = 4101,	-- Cleansing Felwood (A)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
 				requireSkill = MINING,
@@ -835,7 +835,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5888, {	-- Salve via Mining (1/2)
 				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
 				requireSkill = MINING,
@@ -848,7 +848,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4104, {	-- Salve via Mining (2/2)
 				sourceQuest = 5883,	-- Salve via Mining (1/2)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
 				requireSkill = MINING,
@@ -862,7 +862,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4109, {	-- Salve via Mining (2/2)
 				sourceQuest = 5888,	-- Salve via Mining (1/2)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
 				requireSkill = MINING,
@@ -876,7 +876,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5885, {	-- Salve via Skinning (1/2)
 				sourceQuest = 4101,	-- Cleansing Felwood (A)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 				requireSkill = SKINNING,
@@ -889,7 +889,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5890, {	-- Salve via Skinning (1/2)
 				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 				requireSkill = SKINNING,
@@ -902,7 +902,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4106, {	-- Salve via Skinning (2/2)
 				sourceQuest = 5885,	-- Salve via Skinning (1/2)
-				qg = 9528,	-- Arathandris Silversky
+				qg = 9528,	-- Arathandris Silversky <Emerald Circle>
 				coord = { 54.2, 86.7, MAP.FELWOOD },
 				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 				requireSkill = SKINNING,
@@ -916,7 +916,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(4111, {	-- Salve via Skinning (2/2)
 				sourceQuest = 5890,	-- Salve via Skinning (1/2)
-				qg = 9529,	-- Maybess Riverbreeze
+				qg = 9529,	-- Maybess Riverbreeze <Emerald Circle>
 				coord = { 46.8, 83.0, MAP.FELWOOD },
 				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
 				requireSkill = SKINNING,
@@ -930,7 +930,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			q(5158, {	-- Seeking Spiritual Aid
 				sourceQuest = 5157,	-- Collection of the Corrupt Water
-				qg = 10922,	-- Greta Mosshoof
+				qg = 10922,	-- Greta Mosshoof <Emerald Circle>
 				qi = 12907,	-- Corrupt Moonwell Water
 				coord = { 51.2, 82.2, MAP.FELWOOD },
 				maps = { MAP.THE_BARRENS },
@@ -965,7 +965,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(4421, {	-- The Corruption of the Jadefire
-				qg = 9116,	-- Eridan Bluewind
+				qg = 9116,	-- Eridan Bluewind <Emerald Circle>
 				coord = { 51.4, 81.5, MAP.FELWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 49,
@@ -1038,7 +1038,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(5156, {	-- Verifying the Corruption
-				qg = 10921,	-- Taronn Redfeather
+				qg = 10921,	-- Taronn Redfeather <Emerald Circle>
 				coord = { 50.9, 81.6, MAP.FELWOOD },
 				lvl = 48,
 				groups = {
@@ -1240,10 +1240,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 		n(ZONE_DROPS, {
 			i(13140, {	-- Blood Red Key
 				crs = {
-					7118,	-- Jaedendar Darkweaver
-					7114,	-- Jaedendar Enforcer
-					9862,	-- Jaedendar Legionnaire
-					7120,	-- Jaedendar Warlock
+					7118,	-- Jaedenar Darkweaver
+					7114,	-- Jaedenar Enforcer
+					9862,	-- Jaedenar Legionnaire
+					7120,	-- Jaedenar Warlock
 				},
 			}),
 			i(11515, {	-- Corrupted Soul Shard

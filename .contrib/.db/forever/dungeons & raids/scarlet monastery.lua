@@ -329,7 +329,7 @@ instanceroot(316, {	-- Scarlet Monastery
 			cost = {{"i", 7146, 1}},	-- The Scarlet Key
 			lvl = 35,
 			groups = {
-				n(3975, {	-- Herod
+				n(3975, {	-- Herod <The Scarlet Champion>
 					i(7717),	-- Ravager
 					i(7719),	-- Raging Berserker's Helm
 					i(7718),	-- Herod's Shoulder

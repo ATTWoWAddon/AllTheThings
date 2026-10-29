@@ -252,7 +252,7 @@ instanceroot(246, {	-- Scholomance
 				lvl = 57,
 			}),
 			q(7667, {	-- Material Assistance
-				qg = 13417,	-- Sagorne Creststrider
+				qg = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				coord = { 39.2, 48.4, MAP.ORGRIMMAR },
 				cost = {
 					{ "i", 12800, 1 },	-- Azerothian Diamond
@@ -684,7 +684,7 @@ instanceroot(246, {	-- Scholomance
 				11261,	-- Doctor Theolen Krastinov <The Butcher>
 				10901,	-- Lorekeeper Polkelt
 				10502,	-- Lady Illucia Barov
-				10504,	-- Lord Alexi Barov
+				10504,	-- Lord Alexei Barov
 				10507,	-- The Ravenian
 			},
 			groups = {

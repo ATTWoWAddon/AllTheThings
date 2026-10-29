@@ -325,7 +325,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 				}),
 				n(VENDORS, {
-					n(3592, {	-- Andiss
+					n(3592, {	-- Andiss <Armorer & Shieldcrafter>
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							2129,	-- Large Round Shield
@@ -338,7 +338,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2379,	-- Tarnished Chain Vest
 						}},
 					}),
-					n(3591, {	-- Freja Nightwing
+					n(3591, {	-- Freja Nightwing <Leather Armor Merchant>
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							2122,	-- Cracked Leather Belt
@@ -349,7 +349,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2127,	-- Cracked Leather Vest
 						}},
 					}),
-					n(3590, {	-- Janna Brightmoon
+					n(3590, {	-- Janna Brightmoon <Clothier>
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							2121,	-- Thin Cloth Armor
@@ -360,14 +360,14 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2117,	-- Thin Cloth Shoes
 						}},
 					}),
-					n(3589, {	-- Keina
+					n(3589, {	-- Keina <Bowyer>
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							2506,	-- Hornwood Recurve Bow
 							2507,	-- Laminated Recurve Bow
 						}},
 					}),
-					n(3588, {	-- Khardan Proudblade
+					n(3588, {	-- Khardan Proudblade <Weaponsmith>
 						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							1194,	-- Bastard Sword
@@ -708,7 +708,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(98065, {	-- Crown of the Earth (2/2) [Forever]
 				sourceQuest = 98046,	-- Crown of the Earth (1/2) [Forever]
-				qg = 4092,	-- Lariia
+				qg = 4092,	-- Lariia <Priest Trainer>
 				qi = 279331,	-- Moonwell Remnants
 				coord = { 40.2, 88.2, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -849,7 +849,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(99073, {	-- Easing Suffering
 				sourceQuest = 99050,	-- The Great Tree Provides
-				qg = 6094,	-- Byancie
+				qg = 6094,	-- Byancie <First Aid Trainer>
 				qi = 286069,	-- Lashwater Salve
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -892,7 +892,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2259, {	-- Erion Shadewhisper
 				sourceQuest = 2241,	-- The Apple Falls
-				qg = 3599,	-- Jannok Breezesong
+				qg = 3599,	-- Jannok Breezesong <Rogue Trainer>
 				coord = { 56.4, 60.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
@@ -957,7 +957,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(6342, {	-- Flight to Auberdine / An Unexpected Gift [CATA+]
 				sourceQuest = 6341,	-- The Bounty of Teldrassil / To Darnassus [CATA+]
-				qg = 3838,	-- Vesprystus
+				qg = 3838,	-- Vesprystus <Hippogryph Master>
 				qi = 16262,	-- Nessa's Collection
 				coord = { 58.4, 94.0, MAP.TELDRASSIL },
 				races = { NIGHTELF },
@@ -1032,7 +1032,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(4161, {	-- Recipe of the Kaldorei
-				qg = 6286,	-- Zarrin
+				qg = 6286,	-- Zarrin <Cook>
 				coord = { 57.0, 61.2, MAP.TELDRASSIL },
 				cost = { { "i", 5465, 7 } },	-- 7x Small Spider Leg
 				requireSkill = COOKING,
@@ -1058,7 +1058,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2943, {	-- Return to Troyas
 				sourceQuest = 2944,	-- The Super Snapper FX
-				qg = 7907,	-- Daryn Lightwind
+				qg = 7907,	-- Daryn Lightwind <Cenarion Lore Keeper>
 				qi = 9331,	-- Feralas: A History
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				maps = { MAP.FERALAS },
@@ -1081,7 +1081,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(87288, {	-- Soft Saber Pelts
-				qg = 3608,	-- Aldia
+				qg = 3608,	-- Aldia <General Supplies>
 				coord = { 55.4, 57.2, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1171,7 +1171,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 			}),
 			q(2241, {	-- The Apple Falls
-				qg = 3599,	-- Jannok Breezesong
+				qg = 3599,	-- Jannok Breezesong <Rogue Trainer>
 				qi = 7735,	-- Jannok's Rose
 				coord = { 56.4, 60.1, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -1180,7 +1180,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(2941, {	-- The Borrower
 				sourceQuest = 2940,	-- Feralas: A History
-				qg = 7907,	-- Daryn Lightwind
+				qg = 7907,	-- Daryn Lightwind <Cenarion Lore Keeper>
 				qi = 9329,	-- A Short Note
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
@@ -1188,7 +1188,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(6341, {	-- The Bounty of Teldrassil / To Darnassus [CATA+]
 				sourceQuest = 6344,	-- Nessa Shadowsong
-				qg = 10118,	-- Nessa Shadowsong
+				qg = 10118,	-- Nessa Shadowsong <Fishing Supplies>
 				qi = 16262,	-- Nessa's Collection
 				coord = { 56.2, 92.4, MAP.TELDRASSIL },
 				races = { NIGHTELF },
@@ -1257,7 +1257,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			}),
 			q(99050, {	-- The Great Tree Provides
 				sourceQuest = 99047,	-- Not Dead Yet
-				qg = 6094,	-- Byancie
+				qg = 6094,	-- Byancie <First Aid Trainer>
 				coord = { 55.2, 56.8, MAP.TELDRASSIL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
