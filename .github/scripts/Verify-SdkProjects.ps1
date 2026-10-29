@@ -20,6 +20,79 @@ function Manifest([string]$directory, [scriptblock]$filter) {
 function Check-Same([string[]]$a, [string[]]$b, [string]$message) {
     if ($a.Count -eq 0 -or $b.Count -eq 0 -or (Compare-Object $a $b)) { throw $message }
 }
+function Get-ConfigElements([System.Xml.XmlNode]$node) {
+    $children = @()
+    foreach ($child in $node.ChildNodes) {
+        if ($child.NodeType -eq [System.Xml.XmlNodeType]::Element) { $children += $child }
+        elseif ($child.NodeType -eq [System.Xml.XmlNodeType]::Whitespace -or $child.NodeType -eq [System.Xml.XmlNodeType]::SignificantWhitespace) { continue }
+        else { throw "Unexpected XML node $($child.NodeType) in $($node.Name)" }
+    }
+    return $children
+}
+function Assert-ConfigElement([System.Xml.XmlElement]$node, [string]$name, [string]$ns, [hashtable]$attributes) {
+    if ($node.LocalName -cne $name -or $node.NamespaceURI -cne $ns) { throw "Unexpected XML element: $($node.Name)" }
+    $actual = @($node.Attributes | Where-Object { $_.NamespaceURI -cne 'http://www.w3.org/2000/xmlns/' })
+    if ($actual.Count -ne $attributes.Count) { throw "Unexpected attributes in $name" }
+    foreach ($attr in $actual) {
+        if ($attr.NamespaceURI -cne '' -or -not $attributes.ContainsKey($attr.LocalName) -or $attr.Value -cne $attributes[$attr.LocalName]) {
+            throw "Unexpected attribute $($attr.Name) in $name"
+        }
+    }
+}
+function Convert-ConfigElement([System.Xml.XmlElement]$node) {
+    $attributes = @($node.Attributes | Where-Object { $_.NamespaceURI -cne 'http://www.w3.org/2000/xmlns/' } | Sort-Object NamespaceURI, LocalName | ForEach-Object {
+        [ordered]@{ name=$_.LocalName; namespace=$_.NamespaceURI; value=$_.Value }
+    })
+    $children = @(Get-ConfigElements $node | ForEach-Object { Convert-ConfigElement $_ })
+    return [ordered]@{ name=$node.LocalName; namespace=$node.NamespaceURI; attributes=$attributes; children=$children }
+}
+function Read-ValidatedConfig([string]$path, [bool]$parserBinding) {
+    if (-not (Test-Path -LiteralPath $path -PathType Leaf)) { throw "Missing config: $path" }
+    $settings = [System.Xml.XmlReaderSettings]::new()
+    $settings.DtdProcessing = [System.Xml.DtdProcessing]::Prohibit
+    $settings.XmlResolver = $null
+    $reader = [System.Xml.XmlReader]::Create($path, $settings)
+    try {
+        $document = [System.Xml.XmlDocument]::new()
+        $document.PreserveWhitespace = $true
+        $document.XmlResolver = $null
+        $document.Load($reader)
+    } finally { $reader.Dispose() }
+    foreach ($node in $document.ChildNodes) {
+        if ($node.NodeType -ne [System.Xml.XmlNodeType]::Element -and $node.NodeType -ne [System.Xml.XmlNodeType]::XmlDeclaration -and
+            $node.NodeType -ne [System.Xml.XmlNodeType]::Whitespace) { throw "Unexpected XML document node $($node.NodeType)" }
+    }
+    $root = $document.DocumentElement
+    if ($null -eq $root) { throw "Empty config: $path" }
+    Assert-ConfigElement $root 'configuration' '' @{}
+    $rootChildren = @(Get-ConfigElements $root)
+    $expectedCount = if ($parserBinding) { 2 } else { 1 }
+    if ($rootChildren.Count -ne $expectedCount) { throw "Unexpected configuration content: $path" }
+    $startup = $rootChildren[0]
+    Assert-ConfigElement $startup 'startup' '' @{}
+    $children = @(Get-ConfigElements $startup)
+    if ($children.Count -ne 1) { throw "Unexpected startup content: $path" }
+    $supported = $children[0]
+    Assert-ConfigElement $supported 'supportedRuntime' '' @{version='v4.0'; sku='.NETFramework,Version=v4.8'}
+    if (@(Get-ConfigElements $supported).Count -ne 0) { throw "Unexpected supportedRuntime content: $path" }
+    if ($parserBinding) {
+        $runtime = $rootChildren[1]; Assert-ConfigElement $runtime 'runtime' '' @{}
+        $children = @(Get-ConfigElements $runtime); if ($children.Count -ne 1) { throw "Unexpected runtime content: $path" }
+        $ns = 'urn:schemas-microsoft-com:asm.v1'
+        $binding = $children[0]; Assert-ConfigElement $binding 'assemblyBinding' $ns @{}
+        $children = @(Get-ConfigElements $binding); if ($children.Count -ne 1) { throw "Unexpected assemblyBinding content: $path" }
+        $dependency = $children[0]; Assert-ConfigElement $dependency 'dependentAssembly' $ns @{}
+        $children = @(Get-ConfigElements $dependency); if ($children.Count -ne 2) { throw "Unexpected dependentAssembly content: $path" }
+        Assert-ConfigElement $children[0] 'assemblyIdentity' $ns @{name='KeraLua'; publicKeyToken='6a194c04b9c89217'; culture='neutral'}
+        Assert-ConfigElement $children[1] 'bindingRedirect' $ns @{oldVersion='0.0.0.0-1.4.11.0'; newVersion='1.4.11.0'}
+        foreach ($child in $children) { if (@(Get-ConfigElements $child).Count -ne 0) { throw "Unexpected dependency content: $path" } }
+    }
+    return (Convert-ConfigElement $root | ConvertTo-Json -Depth 20 -Compress)
+}
+function Get-TextSha256([string]$value) {
+    [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData([Text.Encoding]::UTF8.GetBytes($value))).ToLowerInvariant()
+}
+
 function Run-Process([string]$exe, [string]$arguments, [string]$directory, [string]$label) {
     $out = Join-Path $evidence "$label.stdout.log"; $err = Join-Path $evidence "$label.stderr.log"
     $proc = Start-Process -FilePath $exe -ArgumentList $arguments -WorkingDirectory $directory -RedirectStandardOutput $out -RedirectStandardError $err -PassThru -WindowStyle Hidden
@@ -32,9 +105,22 @@ function Run-Process([string]$exe, [string]$arguments, [string]$directory, [stri
 }
 $source = Join-Path $root '.contrib/src'
 $baseSource = Join-Path $baseline '.contrib/src'
-$projectNames = @($projects | ForEach-Object { [IO.Path]::GetFileName($_.Project) })
-$sourceFilter = { $_.Name -notin $projectNames -and $_.FullName -notmatch '[/\\](obj|bin)[/\\]' }
-$a = @(Manifest $source $sourceFilter); $b = @(Manifest $baseSource $sourceFilter)
+$projectPaths = @($projects | ForEach-Object { $_.Project.Replace('\', '/') })
+$configPaths = @($projects | ForEach-Object { ([IO.Path]::GetDirectoryName($_.Project).Replace('\', '/') + '/App.config') })
+foreach ($relative in $configPaths) {
+    $original = Join-Path $baseSource $relative
+    $candidate = Join-Path $source $relative
+    $semantic = Read-ValidatedConfig $original $false
+    if (Test-Path -LiteralPath $candidate) { throw "Unexpected source config: $relative" }
+    Write-Host "Baseline source config $relative SHA256=$((Get-FileHash -LiteralPath $original -Algorithm SHA256).Hash.ToLowerInvariant()) semanticSHA256=$(Get-TextSha256 $semantic)"
+}
+$excludedSourceFiles = @($projectPaths + $configPaths)
+$sourceFilter = {
+    $relative = [IO.Path]::GetRelativePath($currentSource, $_.FullName).Replace('\', '/')
+    $relative -notin $excludedSourceFiles -and $relative -notmatch '(^|/)(obj|bin)(/|$)'
+}
+$currentSource = $source; $a = @(Manifest $currentSource $sourceFilter)
+$currentSource = $baseSource; $b = @(Manifest $currentSource $sourceFilter)
 Check-Same $a $b 'Non-project source differs from pinned baseline'
 [IO.File]::WriteAllLines((Join-Path $evidence 'source.sha256'), $a)
 $packages = @{ Csv='[2.0.245]'; KeraLua='[1.4.11]'; NLua='[1.7.9]' }
@@ -100,7 +186,30 @@ foreach ($project in $projects) {
         $a = @(Manifest $baseOut $filter); $b = @(Manifest $candidateOut $filter)
         [IO.File]::WriteAllLines((Join-Path $evidence "baseline-$($project.Name)-$config.files.sha256"), $a)
         [IO.File]::WriteAllLines((Join-Path $evidence "candidate-$($project.Name)-$config.files.sha256"), $b)
-        Check-Same $a $b "$($project.Name) $config runtime closure differs"
+        $configName = $project.Exe + '.config'
+        $baseConfig = Join-Path $baseOut $configName
+        $candidateConfig = Join-Path $candidateOut $configName
+        $expectBinding = $project.Name -eq 'Parser'
+        $baseSemantic = Read-ValidatedConfig $baseConfig $expectBinding
+        $candidateSemantic = Read-ValidatedConfig $candidateConfig $expectBinding
+        $baseSemanticHash = Get-TextSha256 $baseSemantic
+        $candidateSemanticHash = Get-TextSha256 $candidateSemantic
+        $configReport = [ordered]@{
+            baselineRawSha256 = (Get-FileHash -LiteralPath $baseConfig -Algorithm SHA256).Hash.ToLowerInvariant()
+            candidateRawSha256 = (Get-FileHash -LiteralPath $candidateConfig -Algorithm SHA256).Hash.ToLowerInvariant()
+            baselineSemanticSha256 = $baseSemanticHash; candidateSemanticSha256 = $candidateSemanticHash
+            semanticEqual = $baseSemantic -ceq $candidateSemantic
+        }
+        [IO.File]::WriteAllText((Join-Path $evidence "baseline-$($project.Name)-$config.config.canonical.json"), $baseSemantic, [Text.UTF8Encoding]::new($false))
+        [IO.File]::WriteAllText((Join-Path $evidence "candidate-$($project.Name)-$config.config.canonical.json"), $candidateSemantic, [Text.UTF8Encoding]::new($false))
+        [IO.File]::WriteAllText((Join-Path $evidence "$($project.Name)-$config.config-report.json"), ($configReport | ConvertTo-Json -Depth 4), [Text.UTF8Encoding]::new($false))
+        if (-not $configReport.semanticEqual) { throw "$($project.Name) $config output config semantics differ" }
+        $baseOther = @($a | Where-Object { $_.Substring(66) -cne $configName })
+        $candidateOther = @($b | Where-Object { $_.Substring(66) -cne $configName })
+        if ($baseOther.Count -ne $candidateOther.Count) { throw "$($project.Name) $config runtime closure differs" }
+        for ($i = 0; $i -lt $baseOther.Count; $i++) {
+            if ($baseOther[$i] -cne $candidateOther[$i]) { throw "$($project.Name) $config runtime closure differs" }
+        }
         $baselineCompile = @(Get-Content -LiteralPath (Join-Path $evidence "baseline-$($project.Name)-$config.compile.txt"))
         $candidateCompile = @(Get-Content -LiteralPath (Join-Path $evidence "candidate-$($project.Name)-$config.compile.txt"))
         if ($baselineCompile.Count -eq 0 -or $baselineCompile.Count -ne $candidateCompile.Count) { throw "$($project.Name) $config compile item count differs" }
