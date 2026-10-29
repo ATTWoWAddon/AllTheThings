@@ -614,7 +614,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/2 Ravasaur Pheromone Gland
-						provider = { "i", 11509  },	-- Ravasaur Pheromone Gland
+						provider = { "i", 11509 },	-- Ravasaur Pheromone Gland
 						cr = 9683,	-- Lar'korwi Mate
 					}),
 				},
@@ -793,7 +793,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					6559,	-- Glutinous Ooze
 					6557,	-- Primal Ooze
 				},
-				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+				sym = { { "select","itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 				crs = {

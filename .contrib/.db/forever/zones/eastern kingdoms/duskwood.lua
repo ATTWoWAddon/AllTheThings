@@ -625,7 +625,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 							{ 52.0, 12.4, MAP.DUSKWOOD },
 							{ 27.8, 29.2, MAP.DUSKWOOD },
 							{ 13.0, 28.4, MAP.DUSKWOOD },
-							{  9.4, 39.8, MAP.DUSKWOOD },
+							{ 9.4, 39.8, MAP.DUSKWOOD },
 							{ 13.0, 70.6, MAP.DUSKWOOD },
 						},
 					}),
@@ -1110,10 +1110,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(228, {	-- Avette Fellwood <Bowyer>
 				coord = { 73.2, 44.8, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11304, {	-- Fine Longbow
 						isLimited = true,
@@ -1145,7 +1145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(225, {	-- Gavin Gnarltree <Weaponsmith>
 				coord = { 73.6, 49.8, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					929,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
@@ -1162,7 +1162,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					2208,	-- Poniard
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
-				}},
+				} },
 				groups = {
 					i(12247, {	-- Broad Bladed Knife
 						isLimited = true,
@@ -1216,7 +1216,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			n(226, {	-- Morg Gnarltree <Armorer>
 				coord = { 73.8, 48.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2446,	-- Kite Shield
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots
@@ -1225,7 +1225,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					2152,	-- Polished Scale Leggings
 					2153,	-- Polished Scale Vest
 					17192,	-- Reinforced Targe
-				}},
+				} },
 				groups = {
 					i(4799, {	-- Antiquated Cloak
 						isLimited = true,

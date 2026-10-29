@@ -1251,14 +1251,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
 				coord = { 46.0, 47.7, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2527,	-- Battle Staff
 					2532,	-- Morning Star
 					2524,	-- Truncheon
 					2525,	-- War Hammer
 					2533,	-- War Maul
 					2535,	-- War Staff
-				}},
+				} },
 				groups = {
 					i(10858, {	-- Plans: Solid Iron Maul (RECIPE!)
 						isLimited = true,
@@ -1289,10 +1289,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			n(9555, {	-- Mu'uta <Bowyer>
 				coord = { 72.6, 33.6, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11305, {	-- Dense Shortbow
 						isLimited = true,

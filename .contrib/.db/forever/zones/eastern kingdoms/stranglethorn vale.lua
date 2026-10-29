@@ -2198,10 +2198,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 		n(VENDORS, {
 			n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 				coord = { 28.2, 77.5, MAP.STRANGLETHORN_VALE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
 					5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
-				}},
+				} },
 			}),
 			n(734, {	-- Corporal Bluth <Camp Trader>
 				coord = { 38.0, 3.0, MAP.STRANGLETHORN_VALE },
@@ -2498,7 +2498,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2849, {	-- Qixdi Goodstitch <Cloth Armor and Accessories>
 				coord = { 28.2, 77.6, MAP.STRANGLETHORN_VALE },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -2525,7 +2525,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					201,	-- Thick Cloth Pants
 					202,	-- Thick Cloth Shoes
 					200,	-- Thick Cloth Vest
-				}},
+				} },
 				groups = sharedData({
 					collectible = false,
 				}, {
@@ -2709,11 +2709,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 	m(MAP.EASTERN_KINGDOMS, {
 		m(MAP.STRANGLETHORN_VALE, {
-			q(7908, {timeline = { ADDED_1_12_1 }}),	-- Arena Master [Old] - completed with quest 7810
+			q(7908, { timeline = { ADDED_1_12_1 } }),	-- Arena Master [Old] - completed with quest 7810
 			q(618),	-- Facing Negolash [Old] - completed with quest 8554
 			q(614),	-- The Captain's Chest [Old] - completed with quest 8551
-			q(615, {timeline = { ADDED_1_12_1 }}),	-- The Captain's Cutlass [Old] - completed with quest 8553
-			q(620, {timeline = { ADDED_1_12_1 }}),	-- The Monogrammed Sash [Old] - completed with quest 8552
+			q(615, { timeline = { ADDED_1_12_1 } }),	-- The Captain's Cutlass [Old] - completed with quest 8553
+			q(620, { timeline = { ADDED_1_12_1 } }),	-- The Monogrammed Sash [Old] - completed with quest 8552
 		}),
 	}),
 }));

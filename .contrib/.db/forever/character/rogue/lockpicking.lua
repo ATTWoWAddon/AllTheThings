@@ -68,4 +68,4 @@ root(ROOTS.Character, { cl(ROGUE, { lockpicking({
 			classes = { ROGUE },
 		}),
 	},
-})})});
+}) }) });

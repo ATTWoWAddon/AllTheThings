@@ -462,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			n(1296, {	-- Felder Stover <Weaponsmith>
 				coord = { 72.9, 65.8, MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select","itemID",
 					2528,	-- Falchion
 					2530,	-- Francisca
 					2531,	-- Great Axe
@@ -471,7 +471,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					2533,	-- War Maul
 					2535,	-- War Staff
 					2529,	-- Zweihander
-				}},
+				} },
 			}),
 			n(14437, {	-- Gorzeeki Wildeyes
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
@@ -503,15 +503,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 		n(ZONE_DROPS, {
 			i(14482, {	-- Pattern: Cindercloth Cloak (RECIPE!)
 				coords = {
-					{43.8, 39.4, MAP.BURNING_STEPPES},
-					{58.8, 37.2, MAP.BURNING_STEPPES},
+					{ 43.8, 39.4, MAP.BURNING_STEPPES },
+					{ 58.8, 37.2, MAP.BURNING_STEPPES },
 				},
 				cr = 7037,	-- Thaurissan Firewalker
 			}),
 			i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 				coords = {
-					{43.8, 39.4, MAP.BURNING_STEPPES},
-					{58.8, 37.2, MAP.BURNING_STEPPES},
+					{ 43.8, 39.4, MAP.BURNING_STEPPES },
+					{ 58.8, 37.2, MAP.BURNING_STEPPES },
 				},
 				cr = 7037,	-- Thaurissan Firewalker (RECIPE!)
 			}),

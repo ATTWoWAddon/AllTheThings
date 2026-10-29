@@ -327,7 +327,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				n(VENDORS, {
 					n(3592, {	-- Andiss <Armorer & Shieldcrafter>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2129,	-- Large Round Shield
 							17184,	-- Small Shield
 							2380,	-- Tarnished Chain Belt
@@ -336,40 +336,40 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2385,	-- Tarnished Chain Gloves
 							2381,	-- Tarnished Chain Leggings
 							2379,	-- Tarnished Chain Vest
-						}},
+						} },
 					}),
 					n(3591, {	-- Freja Nightwing <Leather Armor Merchant>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2122,	-- Cracked Leather Belt
 							2123,	-- Cracked Leather Boots
 							2124,	-- Cracked Leather Bracers
 							2125,	-- Cracked Leather Gloves
 							2126,	-- Cracked Leather Pants
 							2127,	-- Cracked Leather Vest
-						}},
+						} },
 					}),
 					n(3590, {	-- Janna Brightmoon <Clothier>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2121,	-- Thin Cloth Armor
 							3599,	-- Thin Cloth Belt
 							3600,	-- Thin Cloth Bracers
 							2119,	-- Thin Cloth Gloves
 							2120,	-- Thin Cloth Pants
 							2117,	-- Thin Cloth Shoes
-						}},
+						} },
 					}),
 					n(3589, {	-- Keina <Bowyer>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							2506,	-- Hornwood Recurve Bow
 							2507,	-- Laminated Recurve Bow
-						}},
+						} },
 					}),
 					n(3588, {	-- Khardan Proudblade <Weaponsmith>
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
+						sym = { { "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
 							2130,	-- Club
@@ -378,7 +378,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2480,	-- Large Club
 							2132,	-- Short Staff
 							2131,	-- Shortsword
-						}},
+						} },
 					}),
 				}),
 			},

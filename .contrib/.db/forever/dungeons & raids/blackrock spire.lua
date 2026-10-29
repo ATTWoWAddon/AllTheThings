@@ -1027,7 +1027,7 @@ instanceroot(229, {	-- Blackrock Spire
 			n(16080, {	-- Mor Grayhoof
 				description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
 				provider = { "i", 22057 },	-- Brazier of Invocation
-				cost = {{ "i", 22049, 1 }},	-- Brazier of Beckoning [Mor Grayhoof]
+				cost = { { "i", 22049, 1 } },	-- Brazier of Beckoning [Mor Grayhoof]
 				groups = {
 					objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 						questID = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
@@ -1142,7 +1142,7 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(UPPER_BLACKROCK_SPIRE, {
-			cost = {{ "i", 12344, 1}},	-- Seal of Ascension
+			cost = { { "i", 12344, 1 } },	-- Seal of Ascension
 			groups = {
 				n(ZONE_DROPS, {
 					i(12607, {	-- Brilliant Chromatic Scale //Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.
@@ -1269,7 +1269,7 @@ instanceroot(229, {	-- Blackrock Spire
 				n(16042, {	-- Lord Valthalak
 					description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
 					provider = { "i", 22057 },	-- Brazier of Invocation
-					cost = {{ "i", 22056, 1 }},	-- Brazier of Beckoning [Lord Valthalak]
+					cost = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
 					groups = {
 						i(22336),	-- Draconian Aegis of the Legion
 						i(22335),	-- Lord Valthalak's Staff of Command

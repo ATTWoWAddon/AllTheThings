@@ -2077,13 +2077,13 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			n(15419, {	-- Kania <Enchanting Supplies>
 				coord = { 52.0, 39.7, MAP.SILITHUS },
-				sym = {{ "select","itemID",
+				sym = { { "select","itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-				}},
+				} },
 				groups = {
 					--[[Commented out until confirmed
 					i(20732),	-- Formula: Enchant Cloak - Greater Fire Resistance (RECIPE!)
@@ -2130,15 +2130,15 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					-- Commented out recipes, does not seem to be on vendor on beta
 					{		-- Neutral
 					}, {	-- Friendly
-						i(275601, {timeline = {TIMELINE.ADDED_1_60_1}}),-- Plans: Clutchlord's Grips
-						i(275598, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Grips
+						i(275601, { timeline = { TIMELINE.ADDED_1_60_1 } }),-- Plans: Clutchlord's Grips
+						i(275598, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Goregasher Grips
 						--i(22209),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 						--i(22768),	-- Plans: Ironvine Belt (RECIPE!)
 					}, {	-- Honored
-						i(275603, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Clutchlord's Stompers
-						i(275602, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Clutchlord's Support
-						i(275600, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Stompers
-						i(275599, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Goregasher Support
+						i(275603, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Clutchlord's Stompers
+						i(275602, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Clutchlord's Support
+						i(275600, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Goregasher Stompers
+						i(275599, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Goregasher Support
 						--i(22767),	-- Plans: Ironvine Gloves (RECIPE!)
 						--i(22214),	-- Plans: Light Obsidian Belt (RECIPE!)
 					}, {	-- Revered

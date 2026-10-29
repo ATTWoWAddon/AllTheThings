@@ -17,7 +17,7 @@ root(ROOTS.WorldDrops, {
 		description = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		groups = {
 			i(16882, {	-- Battered Junkbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
 					11984,	-- Cobalt Ring
@@ -46,7 +46,7 @@ root(ROOTS.WorldDrops, {
 					3396,	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 					12008,	-- Savannah Ring
 					11967,	-- Zircon Band
-				}},
+				} },
 				groups = {
 					i(4446),	-- Blackvenom Blade
 					i(2567),	-- Evocator's Blade
@@ -54,13 +54,13 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(5760, {	-- Eternium Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					12058,	-- Demonic Bone Ring
-				}},
+				} },
 			}),
 			i(4633),	-- Heavy Bronze Lockbox
 			i(16885, {	-- Heavy Junkbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1728,	-- Teebu's Blazing Longsword (Does not currently load on beta)
 					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -96,10 +96,10 @@ root(ROOTS.WorldDrops, {
 					12055,	-- Stardust Band
 					12015,	-- Swamp Ring
 					11989,	-- Vanadium Loop
-				}},
+				} },
 			}),
 			i(4634, {	-- Iron Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
 					5774,	-- Pattern: Green Silk Pack (RECIPE!)
@@ -115,12 +115,12 @@ root(ROOTS.WorldDrops, {
 					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
 					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
 					13063,	-- Starfaller
-				}},
+				} },
 			}),
 			i(5758),	-- Mithril Lockbox
 			i(4632),	-- Ornate Bronze Lockbox
 			i(4638, {	-- Reinforced Steel Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					16215,	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -138,10 +138,10 @@ root(ROOTS.WorldDrops, {
 					12683,	-- Plans: Thorium Belt (RECIPE!)
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
 					3395,	-- Recipe: Limited Invulnerability Potion (RECIPE!)
-				}},
+				} },
 			}),
 			i(4637, {	-- Steel Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
 					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
@@ -158,10 +158,10 @@ root(ROOTS.WorldDrops, {
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
 					10603,	-- Schematic: Catseye Ultra Goggles (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
-				}},
+				} },
 			}),
 			i(4636, {	-- Strong Iron Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11167,	-- Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					7085,	-- Pattern: Azure Shoulders (RECIPE!)
@@ -181,7 +181,7 @@ root(ROOTS.WorldDrops, {
 					4417,	-- Schematic: Large Seaforium Charge (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
 					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
-				}},
+				} },
 			}),
 			i(5759),	-- Thorium Lockbox
 			i(16883),	-- Worn Junkbox
@@ -3415,30 +3415,30 @@ root(ROOTS.WorldDrops, {
 	filter(RECIPES, {
 		-- Sort away Blueprints to dungeons
 		prof(ALCHEMY, {
-			i(273085, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Fermenter (RECIPE!)
+			i(273085, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Fermenter (RECIPE!)
 			i(9297),	-- Recipe: Draught of Dream Vision (RECIPE!)
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
 			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
 			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 			i(3830),	-- Recipe: Elixir of Lesser Fortitude (RECIPE!)
 			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
-			i(250380, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
+			i(250380, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
 			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
 			i(13518),	-- Recipe: Flask of Petrification (RECIPE!)
 			i(13493),	-- Recipe: Greater Arcane Elixir (RECIPE!)
 			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
-			i(250983, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Frenzy Potion (RECIPE!)
-			i(250989, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Mender's Potion (RECIPE!)
-			i(250977, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Spellblasting Potion (RECIPE!)
+			i(250983, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Frenzy Potion (RECIPE!)
+			i(250989, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Mender's Potion (RECIPE!)
+			i(250977, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Spellblasting Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			i(9293),	-- Recipe: Magic Resistance Potion (RECIPE!)
-			i(250366, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Cleric's Elixir (RECIPE!)
-			i(250982, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Frenzy Potion (RECIPE!)
-			i(250375, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mageblood Elixir (RECIPE!)
+			i(250366, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Cleric's Elixir (RECIPE!)
+			i(250982, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Frenzy Potion (RECIPE!)
+			i(250375, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Mageblood Elixir (RECIPE!)
 			i(3393),	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
-			i(250988, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mender's Potion (RECIPE!)
-			i(250976, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Spellblasting Potion (RECIPE!)
+			i(250988, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Mender's Potion (RECIPE!)
+			i(250976, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Spellblasting Potion (RECIPE!)
 			i(3394),	-- Recipe: Potion of Poison Cleansing (RECIPE!)
 			i(13492),	-- Recipe: Purification Potion (RECIPE!)
 			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
@@ -3449,9 +3449,9 @@ root(ROOTS.WorldDrops, {
 			i(3831),	-- Recipe: Troll's Blood Elixir (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(273086, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Anvil (RECIPE!)
+			i(273086, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Anvil (RECIPE!)
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
-			i(251454, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Brass Knuckles (RECIPE!)
+			i(251454, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Brass Knuckles (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
@@ -3492,11 +3492,11 @@ root(ROOTS.WorldDrops, {
 			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
-			i(251335, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Boots (RECIPE!)
-			i(251339, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Breastplate (RECIPE!)
-			i(251337, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Gauntlet (RECIPE!)
-			i(251336, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Leggings (RECIPE!)
-			i(251338, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Shoulders (RECIPE!)
+			i(251335, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Boots (RECIPE!)
+			i(251339, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Breastplate (RECIPE!)
+			i(251337, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Gauntlet (RECIPE!)
+			i(251336, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Leggings (RECIPE!)
+			i(251338, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Shoulders (RECIPE!)
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
 			i(12683),	-- Plans: Thorium Belt (RECIPE!)
@@ -3514,7 +3514,7 @@ root(ROOTS.WorldDrops, {
 			--]]
 		}),
 		prof(ENCHANTING, {
-			i(273103, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Arcane Salvager (RECIPE!)
+			i(273103, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Arcane Salvager (RECIPE!)
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245),	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
@@ -3523,7 +3523,7 @@ root(ROOTS.WorldDrops, {
 			i(11204),	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 			i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 			i(6375),	-- Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
-			i(249474, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Formula: Enchant Bracer - Minor Intellect (RECIPE!)
+			i(249474, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Formula: Enchant Bracer - Minor Intellect (RECIPE!)
 			i(6344),	-- Formula: Enchant Bracer - Minor Spirit (RECIPE!)
 			i(6347),	-- Formula: Enchant Bracer - Minor Strength (RECIPE!)
 			i(16218),	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -3592,7 +3592,7 @@ root(ROOTS.WorldDrops, {
 			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
-			i(252804, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
+			i(252804, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)

@@ -11,14 +11,14 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			ach(848),	-- Explore Desolace
 		}),
 		explorationHeader({
-			visit_exploration(2405,{coord={41.6,29.8,MAP.DESOLACE}}),	-- Ethel Rethor
+			visit_exploration(2405,{ coord={ 41.6,29.8,MAP.DESOLACE } }),	-- Ethel Rethor
 			exploration(606),	-- Gelkis Village
 			exploration(596),	-- Kodo Graveyard
 			exploration(609),	-- Kolkar Village
 			exploration(2407),	-- Kormek's Hut
 			exploration(604),	-- Magram Village / Shok'Thokar [CATA+]
 			exploration(602),	-- Mannoroc Coven
-			visit_exploration(2100,{coord={29.4,62.3,MAP.DESOLACE}}),	-- Maraudon
+			visit_exploration(2100,{ coord={ 29.4,62.3,MAP.DESOLACE } }),	-- Maraudon
 			exploration(608),	-- Nijel's Point
 			exploration(2406),	-- Ranazjar Isle
 			exploration(603),	-- Sargeron
@@ -1539,11 +1539,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			n(12245, {	-- Vendor-Tron 1000
 				coord = { 60.2, 38.0, MAP.DESOLACE },
-				sym = {{"select", "itemID",
+				sym = { { "select", "itemID",
 					5973,	-- Pattern: Barbaric Leggings (RECIPE!)
 					14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
 					7613,	-- Pattern: Green Leather Armor (RECIPE!)
-				}},
+				} },
 				groups = {
 					i(12232, {	-- Recipe: Carrion Surprise (RECIPE!)
 						isLimited = true,

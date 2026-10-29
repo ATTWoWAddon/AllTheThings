@@ -24,7 +24,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			exploration(1017),	-- Raptor Ridge
 			exploration(1023),	-- Saltspray Glen
 			exploration(1024),	-- Sundown Marsh
-			visit_exploration(5304, {coord={26.3, 25.9, MAP.WETLANDS}}),	-- Swiftgear Station
+			visit_exploration(5304, { coord={ 26.3, 25.9, MAP.WETLANDS } }),	-- Swiftgear Station
 			exploration(1025),	-- The Green Belt
 			exploration(1021),	-- Thelgen Rock
 			exploration(118),	-- Whelgar's Excavation Site
@@ -1254,7 +1254,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1450, {	-- Brahnmar <Armorer>
 				coord = { 11.6, 59.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2446,	-- Kite Shield
 					2148,	-- Polished Scale Belt
 					2149,	-- Polished Scale Boots
@@ -1263,12 +1263,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					2152,	-- Polished Scale Leggings
 					2153,	-- Polished Scale Vest
 					17192,	-- Reinforced Targe
-				}},
+				} },
 			}),
 			n(1441, {	-- Brak Durnad <Weaponsmith>
 				coord = { 11.6, 59.5, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					926,	-- Battle Axe
 					922,	-- Dacian Falx
 					927,	-- Double Axe
@@ -1277,7 +1277,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					923,	-- Longsword
 					928,	-- Long Staff
 					924,	-- Maul
-				}},
+				} },
 				groups = {
 					i(4817, {	-- Blessed Claymore
 						isLimited = true,
@@ -1361,18 +1361,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1461, {	-- Murndan Derth <Gunsmith>
 				coord = { 11.3, 59.6, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
 					3023,	-- Large Bore Blunderbuss
-				}},
+				} },
 			}),
 			n(1459, {	-- Naela Trance <Bowyer>
 				coord = { 11.3, 58.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2507,	-- Laminated Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11304, {	-- Fine Longbow
 						isLimited = true,

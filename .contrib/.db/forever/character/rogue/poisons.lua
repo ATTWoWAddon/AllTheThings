@@ -85,4 +85,4 @@ root(ROOTS.Character, { cl(ROGUE, { prof(POISONS, {
 			lvl = 56,
 		},
 	},
-})})});
+}) }) });

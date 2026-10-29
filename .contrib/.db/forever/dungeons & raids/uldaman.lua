@@ -405,9 +405,9 @@ instanceroot(239, {	-- Uldaman
 			o(141979, {	-- Ancient Treasure
 				description = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 				modelScale = 3,
-				sym = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
+				sym = { { "select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
 					8029,	-- Plans: Wicked Mithril Blade
-				}},
+				} },
 			}),
 			o(123329, {	-- Baelog's Chest
 				i(7740, {	-- Gni'kiv Medallion

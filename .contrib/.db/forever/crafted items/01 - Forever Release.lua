@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
+root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 } }, {
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(250951),	-- Caustic Smog Potion

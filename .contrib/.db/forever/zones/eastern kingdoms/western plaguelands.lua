@@ -11,10 +11,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			ach(770),	-- Explore Western Plaguelands
 		}),
 		explorationHeader({
-			visit_exploration(2298,{coord={67.5,73.4,MAP.WESTERN_PLAGUELANDS}}),	-- Caer Darrow
+			visit_exploration(2298,{ coord={ 67.5,73.4,MAP.WESTERN_PLAGUELANDS } }),	-- Caer Darrow
 			exploration(200),	-- Dalson's Tears / Dalson's Farm [CATA+]
 			exploration(2297),	-- Darrowmere Lake
-			visit_exploration(2625,{coord={43.4,19.3,MAP.WESTERN_PLAGUELANDS}}),	-- Eastwall Gate
+			visit_exploration(2625,{ coord={ 43.4,19.3,MAP.WESTERN_PLAGUELANDS } }),	-- Eastwall Gate
 			exploration(199),	-- Felstone Field
 			exploration(201),	-- Gahrron's Withering
 			exploration(190),	-- Hearthglen
@@ -1117,7 +1117,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			}),
 			n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 				coord = { 42.8, 83.8, MAP.WESTERN_PLAGUELANDS },
-				sym = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
+				sym = { { "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 			}),
 			n(10667, {	-- Chromie
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
@@ -1189,7 +1189,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					12387,	-- Large Vile Slime
 					1806,	-- Vile Slime
 				},
-				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+				sym = { { "select","itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(13357, {	-- Osseous Agitator
 				description = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",

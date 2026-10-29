@@ -326,7 +326,7 @@ instanceroot(316, {	-- Scarlet Monastery
 			},
 		}),
 		n(SCARLET_MONASTERY_ARMORY_HEADER, {
-			cost = {{"i", 7146, 1}},	-- The Scarlet Key
+			cost = { { "i", 7146, 1 } },	-- The Scarlet Key
 			lvl = 35,
 			groups = {
 				n(3975, {	-- Herod

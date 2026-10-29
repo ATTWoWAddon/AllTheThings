@@ -66,7 +66,7 @@ local DIREMAUL_SUBMAP = function(mapID, headerID, t)
 	t.headerID = headerID;
 	local oldMaps = t.maps;
 	if oldMaps then
-		local maps = {};
+		local maps = { };
 		for i, m in ipairs(oldMaps) do
 			if m ~= mapID then
 				table.insert(maps, m);
@@ -818,7 +818,7 @@ instanceroot(230, {	-- Dire Maul
 				n(16097, {	-- Isalien
 					description = "This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",
 					provider = { "i", 22057 },	-- Brazier of Invocation
-					cost = {{ "i", 22050, 1 }},	-- 1x Brazier of Beckoning [Isalien]
+					cost = { { "i", 22050, 1 } },	-- 1x Brazier of Beckoning [Isalien]
 					groups = {
 						objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 							questID = 8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
@@ -859,7 +859,7 @@ instanceroot(230, {	-- Dire Maul
 		DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
 			coord = { 62.48, 24.48, MAP.FERALAS },	-- Dire Maul [North]
 			maps = GORDOK_COMMONS_MAPS,
-			cost = {{ "i", 18249, 1 }},	-- 1x Crescent Key
+			cost = { { "i", 18249, 1 } },	-- 1x Crescent Key
 			groups = {
 				n(ZONE_DROPS, {
 					i(18250, {	-- Gordok Shackle Key
@@ -944,7 +944,7 @@ instanceroot(230, {	-- Dire Maul
 				}),
 				o(179501, {	-- Knot Thimblejack's Cache
 					sourceQuest = 5525,	-- Free Knot!
-					cost = {{ "i", 18250, 1 }},	-- 1x Gordok Shackle Key
+					cost = { { "i", 18250, 1 } },	-- 1x Gordok Shackle Key
 					groups = {
 						i(18240),	-- Ogre Tannin
 						--[[ Commented out until confirmed
@@ -1041,7 +1041,7 @@ instanceroot(230, {	-- Dire Maul
 		DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
 			coord = { 60.32, 30.17, MAP.FERALAS },	-- Dire Maul [West]
 			maps = CAPITAL_GARDENS_MAPS,
-			cost = {{ "i", 18249, 1 }},	-- 1x Crescent Key
+			cost = { { "i", 18249, 1 } },	-- 1x Crescent Key
 			groups = {
 				n(VENDORS, {
 					n(14371, {	-- Shen'dralar Provisioner
