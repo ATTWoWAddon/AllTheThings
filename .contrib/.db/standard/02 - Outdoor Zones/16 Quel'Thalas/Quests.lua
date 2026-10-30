@@ -6,10 +6,19 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 	timeline = { ADDED_12_0_1_LAUNCH },
 	groups = {
 		n(QUESTS, {
+			q(95008, {	-- Adventuring in Midnight (Alliance only?)
+				qg = 259153,	-- Soridormi
+				coord = { 55.7, 70.0, MAP.MIDNIGHT.SILVERMOON_CITY },
+			}),
 			q(94993, {	-- Adventuring in Midnight (Horde only?)
 				description = "Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",
 				coord = { 45.7, 67.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 				lockCriteria = { 1, "lvl", 80 },	-- Added because this quest pops up only on Alts and can't be completed on a Main Character.	-- Exo
+			}),
+			q(91854, {	-- Deepening Shadows
+				description = "Available after completing one of the optional zones after Eversong's campaign.",
+				qg = 248631,	-- Commander Koruth Mountainfist
+				coord = { 45.4, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 			}),
 			header(HEADERS.Achievement, 41805, {	-- Arator's Journey
 				header(HEADERS.AchCriteria, 41805.01, {	-- The Path of Light
@@ -345,21 +354,12 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 						},
 						groups = { i(253629) },	-- Personal Key to the Arcantina (TOY!)
 					}),
+					q(91787, {	-- The Journey Ends
+						sourceQuest = 86903,	-- The Arcantina
+						qg = 237502,	-- Arator
+						coord = { 52.2, 60.6, ARCANTINA },
+					}),
 				}),
-			}),
-			q(95008, {	-- Adventuring in Midnight (Alliance only?)
-				qg = 259153,	-- Soridormi
-				coord = { 55.7, 70.0, MAP.MIDNIGHT.SILVERMOON_CITY },
-			}),
-			q(91854, {	-- Deepening Shadows
-				description = "Available after completing one of the optional zones after Eversong's campaign.",
-				qg = 248631,	-- Commander Koruth Mountainfist
-				coord = { 45.4, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
-			}),
-			q(91787, {	-- The Journey Ends
-				sourceQuest = 86903,	-- The Arcantina
-				qg = 237502,	-- Arator
-				coord = { 52.2, 60.6, ARCANTINA },
 			}),
 			header(HEADERS.Achievement, 60891, {	-- The Crimson Rogue
 				header(HEADERS.AchCriteria, 60891.01, {	-- The Regent's Request
@@ -921,10 +921,120 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 					--
 				}),
 			}),
+			header(HEADERS.Achievement, 63713, {	-- The Coreway Advance
+				timeline = { ADDED_12_1_7 },
+				groups = {
+					q(95287, {	-- The Coreway Advance
+						qg = 235787,	-- Lor'themar Theron
+						coord = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+					}),
+					q(95302, {	-- To the Core of the Matter
+						sourceQuest = 95287,	-- The Coreway Advance
+						qg = 260512,	-- Arator
+						coord = { 30.0, 59.6, DORNOGAL },
+					}),
+					q(95291, {	-- Repair and Resist
+						sourceQuest = 95302,	-- To the Core of the Matter
+						qg = 260511,	-- Dagran Thaurissan II
+						coord = { 75.1, 46.1, HALLOWFALL },
+					}),
+					q(95292, {	-- Draw Its Ire
+						sourceQuest = 95302,	-- To the Core of the Matter
+						qg = 260511,	-- Dagran Thaurissan II
+						coord = { 75.1, 46.1, HALLOWFALL },
+					}),
+					q(95289, {	-- No Stalling
+						sourceQuest = 95302,	-- To the Core of the Matter
+						qg = 260510,	-- Arator
+						coord = { 75.1, 46.0, HALLOWFALL },
+					}),
+					q(95297, {	-- Path of the Keeper
+						sourceQuests = {
+							95291,	-- Repair and Resist
+							95292,	-- Draw Its Ire
+							95289,	-- No Stalling
+						},
+						qg = 260514,	-- Dagran Thaurissan II
+						coord = { 76.3, 44.9, HALLOWFALL },
+					}),
+					q(95298, {	-- Access Granted
+						sourceQuest = 95297,	-- Path of the Keeper
+						qg = 266226,	-- High Speaker Brinthe
+						coord = { 27.8, 68.5, ISLE_OF_DORN },
+						groups = {
+							o(655555, {	-- Tyr's Security Disc
+								coord = { 27.9, 68.7, ISLE_OF_DORN },
+								groups = { i(275914) },	-- Tyr's Security Disc (QI!)
+							}),
+						},
+					}),
+					q(95299, {	-- Family Road Trip
+						sourceQuest = 95298,	-- Access Granted
+						qg = 260658,	-- Dagran Thaurissan II
+						coord = { 27.9, 68.7, ISLE_OF_DORN },
+						maps = { 2603 },	-- Hall of the Keepers, Uldaman
+					}),
+					------ Stay awhile and listen ------
+					--hqt(??, {	-- Stay awhile and listen: High Speaker Brinthe
+					--	name = "Stay awhile and listen: High Speaker Brinthe",
+					--	description = "Dialogue becomes available after accepting 'Family Road Trip' (95299).",
+					--	sourceQuest = 95298,	-- Access Granted
+					--	qg = 260657,	-- High Speaker Brinthe
+					--	coord = { 27.9, 68.7, ISLE_OF_DORN },
+					--}),
+					--
+					q(95301, {	-- No Competition
+						sourceQuest = 95299,	-- Family Road Trip
+						qg = 260664,	-- Brann Bronzebeard
+						coord = { 19.4, 28.0, 2603 },	-- Hall of the Keepers, Uldaman
+					}),
+					q(95300, {	-- Clearance Chase
+						sourceQuest = 95299,	-- Family Road Trip
+						qg = 260665,	-- Dagran Thaurissan II
+						coord = { 19.7, 28.5, 2603 },	-- Hall of the Keepers, Uldaman
+						qi = 269266,	-- Security Disc Fragment (QI!)
+					}),
+					q(95305, {	-- Synthesis Scrap
+						sourceQuests = {
+							95301,	-- No Competition
+							95300,	-- Clearance Chase
+						},
+						qg = 260667,	-- Dagran Thaurissan II
+						coord = { 32.7, 73.8, 2603 },	-- Hall of the Keepers, Uldaman
+						groups = { i(281399) },	-- Ancient Uldaman Tome (DECOR!)
+					}),
+					q(95303, {	-- Security Training
+						sourceQuest = 95305,	-- Synthesis Scrap
+						qg = 260667,	-- Dagran Thaurissan II
+						coord = { 32.8, 73.7, 2603 },	-- Hall of the Keepers, Uldaman
+					}),
+					q(95306, {	-- Final Thoughts
+						sourceQuest = 95303,	-- Security Training
+						qg = 260668,	-- Brann Bronzebeard
+						coord = { 68.4, 62.5, 2603 },	-- Hall of the Keepers, Uldaman
+						groups = { 
+							o(639242, {	-- Tyr's Security Disc
+								coord = { 69.5, 62.2, 2603 },	-- Hall of the Keepers, Uldaman
+								groups = { i(275924) },	-- Tyr's Security Disc (QI!)
+							}),
+							o(631254, {	-- Archaedas
+								coord = { 77.3, 63.3, 2603 },	-- Hall of the Keepers, Uldaman
+								groups = { i(275915) },	-- Archaedas's Security Disc (QI!)
+							}),
+						},
+					}),
+					q(95307, {	-- Worldcore Revealed
+						sourceQuest = 95306,	-- Final Thoughts
+						qg = 226543,	-- Dagran Thaurissan II
+						coord = { 50.9, 61.7, VAULT_OF_MEMORY },
+						groups = { i(281401) },	-- Broken Uldaman Statue (DECOR!)
+					}),
+				},
+			}),
 		}),
 	},
 });
-
+ 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {

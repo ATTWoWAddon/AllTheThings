@@ -170135,7 +170135,7 @@ ach(62057),
 ach(61910,{
 title(766,{awp=120005})}),
 ach(60891,{awp=120001}),
-ach(63713,{awp=120107,questID=95307}),
+ach(63713,{awp=120107,sourceQuests={95307}}),
 ach(61854,{
 crit(111100,{achID=61839,id=1})}),
 ach(42117)}),
@@ -170156,8 +170156,12 @@ n(245106,{coords={
 [641]={{46.6,35.6}}},g={
 crit(111950,{achID=62188,id=5})}})}}),
 h(-45,{
+q(95008,{coords={
+[2393]={{55.7,70}}},lvl=80,qgs={259153}}),
 q(94993,{coords={
 [2393]={{45.7,67.7}}},description="Pops up on Alts the first time you enter Sanctum of Light and leads you to the Scouting Map so you can chose where to start your Campaign.",lc={1,"lvl",80},lvl=80}),
+q(91854,{coords={
+[2393]={{45.4,70.2}}},description="Available after completing one of the optional zones after Eversong's campaign.",lvl=80,qgs={248631}}),
 ah(41805,{type="a",g={
 ah(41805.01,{type="crit",g={
 q(89193,{coords={
@@ -170280,13 +170284,9 @@ q(86833,{coords={
 q(86903,{coords={
 [2393]={{40.6,66.1}}},lvl=83,maps={2541},qgs={253125},qis={248131,254838},sourceQuests={86833},g={
 toy(253629,{b=1}),
-crit(103891,{achID=41805,awp=120001,id=2})}})}})}}),
-q(95008,{coords={
-[2393]={{55.7,70}}},lvl=80,qgs={259153}}),
-q(91854,{coords={
-[2393]={{45.4,70.2}}},description="Available after completing one of the optional zones after Eversong's campaign.",lvl=80,qgs={248631}}),
+crit(103891,{achID=41805,awp=120001,id=2})}}),
 q(91787,{coords={
-[2541]={{52.2,60.6}}},lvl=83,qgs={237502},sourceQuests={86903}}),
+[2541]={{52.2,60.6}}},lvl=83,qgs={237502},sourceQuests={86903}})}})}}),
 ah(60891,{type="a",g={
 ah(60891.01,{type="crit",g={
 q(91822,{coords={
@@ -170502,7 +170502,47 @@ hqt(92802,{coords={
 hqt(92810,{coords={
 [2424]={{53.2,47.4}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={253144},sourceQuests={90862}}),
 hqt(92757,{coords={
-[2424]={{51.2,44.5}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={244578},sourceQuests={90862}})}})}})}),
+[2424]={{51.2,44.5}}},description="Dialogue becomes available after the cutscene during 'From Darkness, Light' (90867).",qgs={244578},sourceQuests={90862}})}})}}),
+ah(63713,{awp=120107,type="a",g={
+q(95287,{coords={
+[2393]={{45.4,70.3}}},qgs={235787}}),
+q(95302,{coords={
+[2339]={{30,59.6}}},qgs={260512},sourceQuests={95287}}),
+q(95291,{coords={
+[2215]={{75.1,46.1}}},qgs={260511},sourceQuests={95302}}),
+q(95292,{coords={
+[2215]={{75.1,46.1}}},qgs={260511},sourceQuests={95302}}),
+q(95289,{coords={
+[2215]={{75.1,46}}},qgs={260510},sourceQuests={95302}}),
+q(95297,{coords={
+[2215]={{76.3,44.9}}},qgs={260514},sourceQuests={95289,95291,95292}}),
+q(95298,{coords={
+[2248]={{27.8,68.5}}},qgs={266226},sourceQuests={95297},g={
+o(655555,{coords={
+[2248]={{27.9,68.7}}},g={
+i(275914)}})}}),
+q(95299,{coords={
+[2248]={{27.9,68.7}}},maps={2603},qgs={260658},sourceQuests={95298}}),
+q(95301,{coords={
+[2603]={{19.4,28}}},qgs={260664},sourceQuests={95299}}),
+q(95300,{coords={
+[2603]={{19.7,28.5}}},qgs={260665},qis={269266},sourceQuests={95299}}),
+q(95305,{coords={
+[2603]={{32.7,73.8}}},qgs={260667},sourceQuests={95300,95301},g={
+de(25272,{itemID=281399,spellID=1311069})}}),
+q(95303,{coords={
+[2603]={{32.8,73.7}}},qgs={260667},sourceQuests={95305}}),
+q(95306,{coords={
+[2603]={{68.4,62.5}}},qgs={260668},sourceQuests={95303},g={
+o(639242,{coords={
+[2603]={{69.5,62.2}}},g={
+i(275924)}}),
+o(631254,{coords={
+[2603]={{77.3,63.3}}},g={
+i(275915)}})}}),
+q(95307,{coords={
+[2367]={{50.9,61.7}}},qgs={226543},sourceQuests={95306},g={
+de(26200,{itemID=281401,spellID=1311071})}})}})}),
 h(-246,{sharedDescription="Rewarded from most repeatable treasures.",g={
 i(259189,{b=1,requireSkill=171,spellID=1264572}),
 i(259188,{b=1,requireSkill=171,spellID=1264572}),

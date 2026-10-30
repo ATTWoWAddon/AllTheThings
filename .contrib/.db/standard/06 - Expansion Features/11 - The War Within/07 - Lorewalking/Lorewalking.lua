@@ -95,7 +95,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				header(HEADERS.Achievement, 42188, {	-- Lorewalking: Blade's Bane
 					q(84371, {	-- Lorewalking: The Blade and the High Priest
 						-- Alex: when I picked up this quest - it flag 40706 & 42074 as completed
-						provider = { "n", 232441 },	-- Lorewalker Cho
+						qg = 232441,	-- Lorewalker Cho
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
@@ -111,14 +111,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 					q(84779, {	-- Lorewalking: The Blade's Gambit
-						sourceQuests = { 84371 },	-- Lorewalking: The Blade and the High Priest
-						provider = { "n", 231891 },	-- Lorewalker Cho
+						sourceQuest = 84371,	-- Lorewalking: The Blade and the High Priest
+						qg = 231891,	-- Lorewalker Cho
 						coord = { 61.5, 71.0, 20 },	-- Keeper's Rest
 						isRepeatable = true,
 					}),
 					q(84782, {	-- Lorewalking: The Blade's Past
-						sourceQuests = { 84779 },	-- Lorewalking: The Blade's Gambit
-						provider = { "n", 231891 },	-- Lorewalker Cho
+						sourceQuest = 84779,	-- Lorewalking: The Blade's Gambit
+						qg = 231891,	-- Lorewalker Cho
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
@@ -127,8 +127,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 					}),
 					q(85871, {	-- Lorewalking: The Blade's Forces
-						sourceQuests = { 84782 },	-- Lorewalking: The Blade's Past
-						provider = { "n", 230321 },	-- Xithixxin
+						sourceQuest = 84782,	-- Lorewalking: The Blade's Past
+						qg = 230321,	-- Xithixxin
 						coord = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
 						maps = {
 							2382,	-- Ny'alotha
@@ -138,8 +138,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 					}),
 					q(84784, {	-- Lorewalking: The Blade's Nemeses
-						sourceQuests = { 84782 },	-- Lorewalking: The Blade's Past
-						provider = { "n", 230321 },	-- Xithixxin
+						sourceQuest = 84782,	-- Lorewalking: The Blade's Past
+						qg = 230321,	-- Xithixxin
 						coord = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
 						maps = {
 							2382,	-- Ny'alotha
@@ -153,7 +153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							85871,	-- Lorewalking: The Blade's Forces
 							84784,	-- Lorewalking: The Blade's Nemeses
 						},
-						provider = { "n", 230321 },	-- Xithixxin
+						qg = 230321,	-- Xithixxin
 						coord = { 52.5, 73.1, 2381 },	-- Ny'alotha, the Waking City
 						maps = { 2379 },	-- Annex of Prophecy
 						isRepeatable = true,
@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				header(HEADERS.Achievement, 42187, {	-- Lorewalking: Ethereal Wisdom
 					q(85027, {	-- Lorewalking: The Protectorate
-						provider = { "n", 232441 },	-- Lorewalker Cho
+						qg = 232441,	-- Lorewalker Cho
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
@@ -174,31 +174,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 					}),
 					q(85029, {	-- Lorewalking: Locus-Walker
-						sourceQuests = { 85027 },	-- Lorewalking: The Protectorate
-						provider = { "n", 231702 },	-- Lorewalker Cho
+						sourceQuest = 85027,	-- Lorewalking: The Protectorate
+						qg = 231702,	-- Lorewalker Cho
 						coord = { 60.1, 31.7, NETHERSTORM },
 						isRepeatable = true,
 					}),
 					q(85028, {	-- Lorewalking: The Brokers
-						sourceQuests = { 85029 },	-- Lorewalking: Locus-Walker
-						provider = { "n", 231702 },	-- Lorewalker Cho
+						sourceQuest = 85029,	-- Lorewalking: Locus-Walker
+						qg = 231702,	-- Lorewalker Cho
 						coord = { 28.4, 47.2, EREDATH },
 						isRepeatable = true,
 					}),
 					q(85035, {	-- Locus-Walker, Telogrus Ranger
-						sourceQuests = { 85028 },	-- Lorewalking: The Brokers
-						provider = { "n", 234111 },	-- Om'rajula
+						sourceQuest = 85028,	-- Lorewalking: The Brokers
+						qg = 234111,	-- Om'rajula
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
 							{ 64.2, 16.1, STORMWIND_CITY },
 						},
 						isRepeatable = true,
-						groups = { i(231831) },	-- Ve'nari's Parcel (QI!)
+						qi = 231831,	-- Ve'nari's Parcel (QI!)
 					}),
 					q(85036, {	-- Veni Vidi Ve'nari
-						sourceQuests = { 85035 },	-- Locus-Walker, Telogrus Ranger
-						provider = { "n", 231706 },	-- Locus-Walker
+						sourceQuest = 85035,	-- Locus-Walker, Telogrus Ranger
+						qg = 231706,	-- Locus-Walker
 						coord = { 27.5, 28.3, TELOGRUS_RIFT },
 						isRepeatable = true,
 						groups = {
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = {
 						q(95421, {	-- Lorewalking: A Bright Young Mage
-							provider = { "n", 230246 },	-- Li Li Stormstout
+							qg = 230246,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -223,7 +223,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(95422, {	-- Lorewalking: Tides of War
 							sourceQuest = 95421,	-- Lorewalking: A Bright Young Mage
-							provider = { "n", 261067 },	-- Li Li Stormstout
+							qg = 261067,	-- Li Li Stormstout
 							maps = {
 								2716,	-- Hyjal Summit
 								2717,	-- Theramore Isle
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(95423, {	-- Lorewalking: Daughter of the Sea
 							sourceQuest = 95422,	-- Lorewalking: Tides of War
-							provider = { "n", 261067 },	-- Li Li Stormstout
+							qg = 261067,	-- Li Li Stormstout
 							coord = { 30.2, 49.3, 501 },	-- Dalaran
 							isRepeatable = true,
 						}),
@@ -243,7 +243,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_11_2_7 },
 					groups = {
 						q(85252, {	-- Lorewalking: Children of the Blood
-							provider = { "n", 230246 },	-- Lorewalker Cho
+							qg = 230246,	-- Lorewalker Cho
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -252,8 +252,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							isRepeatable = true,
 						}),
 						q(85254, {	-- Lorewalking: Children of the Void
-							sourceQuests = { 85252 },	-- Lorewalking: Children of the Blood
-							provider = { "n", 234616 },	-- Lorewalker Cho
+							sourceQuest = 85252,	-- Lorewalking: Children of the Blood
+							qg = 234616,	-- Lorewalker Cho
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -265,7 +265,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				header(HEADERS.Achievement, 42189, {	-- Lorewalking: The Lich King
 					q(85884, {	-- Lorewalking: The Prince Who Would Be King
-						provider = { "n", 230246 },	-- Lorewalker Cho
+						qg = 230246,	-- Lorewalker Cho
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
@@ -274,14 +274,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						isRepeatable = true,
 					}),
 					q(85862, {	-- A Prince's Duty
-						sourceQuests = { 85884 },	-- Lorewalking: The Prince Who Would Be King
-						provider = { "n", 233752 },	-- Uther Lightbringer
+						sourceQuest = 85884,	-- Lorewalking: The Prince Who Would Be King
+						qg = 233752,	-- Uther Lightbringer
 						coord = { 34.1, 84.1, 2418 },	-- Scarlet Halls
 						isRepeatable = true,
 					}),
 					q(85885, {	-- Lorewalking: No King Rules Forever
-						sourceQuests = { 85884 },	-- Lorewalking: The Prince Who Would Be King
-						provider = { "n", 236114 },	-- Lorewalker Cho
+						sourceQuest = 85884,	-- Lorewalking: The Prince Who Would Be King
+						qg = 236114,	-- Lorewalker Cho
 						coords = {
 							{ 49.5, 31.6, DORNOGAL },
 							{ 54.5, 57.2, ORGRIMMAR },
@@ -294,13 +294,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						},
 					}),
 					q(85875, {	-- Ascent of the Lich King
-						sourceQuests = { 85885 },	-- Lorewalking: No King Rules Forever
+						sourceQuest = 85885,	-- Lorewalking: No King Rules Forever
 						-- provider = { "n", ?? },	-- auto accepted during 85885
 						coord = { 51.4, 79.4, ICECROWN },
 						isRepeatable = true,
 					}),
 					q(85878, {	-- O' Thanagor
-						sourceQuests = { 85875 },	-- Ascent of the Lich King
+						sourceQuest = 85875,	-- Ascent of the Lich King
 						-- provider = { "n", ?? },	-- auto accepted during 85885, but after 85875
 						-- coord = { X, Y, ICECROWN_CITADEL },
 						isRepeatable = true,
@@ -341,7 +341,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = {
 						q(92652, {	-- Lorewalking: Warchief, Shaman, Hero
-							provider = { "n", 230246 },	-- Li Li Stormstout
+							qg = 230246,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -352,7 +352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(92673, {	-- Lorewalking: In Pride's Wake
 							sourceQuest = 92652,	-- Lorewalking: Warchief, Shaman, Hero
-							provider = { "n", 252907 },	-- Li Li Stormstout
+							qg = 252907,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -363,7 +363,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(92675, {	-- Lorewalking: The Weight of Doubt
 							sourceQuest = 92673,	-- Lorewalking: In Pride's Wake
-							provider = { "n", 252907 },	-- Li Li Stormstout
+							qg = 252907,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -374,13 +374,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(92676, {	-- Lorewalking: In Another's Footsteps
 							sourceQuest = 92675,	-- Lorewalking: The Weight of Doubt
-							provider = { "n", 252907 },	-- Li Li Stormstout
+							qg = 252907,	-- Li Li Stormstout
 							coord = { 33.3, 36.0, MULGORE },
 							isRepeatable = true,
 						}),
 						q(92677, {	-- Lorewalking: Paths Ever Onward
 							sourceQuest = 92676,	-- Lorewalking: In Another's Footsteps
-							provider = { "n", 252907 },	-- Li Li Stormstout
+							qg = 252907,	-- Li Li Stormstout
 							coord = { 60.2, 27.4, KORTHIA },
 							isRepeatable = true,
 						}),
@@ -390,7 +390,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = {
 						q(95461, {	-- Lorewalking: Mysteries of the Earthen
-							provider = { "n", 230246 },	-- Li Li Stormstout
+							qg = 230246,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -401,13 +401,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(95462, {	-- Lorewalking: Secrets of Ulduar
 							sourceQuest = 95461,	-- Lorewalking: Mysteries of the Earthen
-							provider = { "n", 261254 },	-- Li Li Stormstout
+							qg = 261254,	-- Li Li Stormstout
 							maps = { HALLS_OF_STONE },
 							isRepeatable = true,
 						}),
 						q(95466, {	-- Algalon
 							sourceQuest = 95461,	-- Lorewalking: Mysteries of the Earthen
-							provider = { "n", 33235 },	-- Brann Bronzebeard
+							qg = 33235,	-- Brann Bronzebeard
 							maps = { 148 },	-- The Archivum, Ulduar
 							isRepeatable = true,
 						}),
@@ -416,7 +416,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 								95462,	-- Lorewalking: Secrets of Ulduar
 								95466,	-- Algalon
 							},
-							provider = { "n", 261254 },	-- Li Li Stormstout
+							qg = 261254,	-- Li Li Stormstout
 							coord = { 48.4, 62.3, NORTHREND_DALARAN },
 							maps = {
 								2593,	-- Frachtorn
@@ -426,13 +426,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(95463, {	-- The War Unending
 							sourceQuest = 95462,	-- Lorewalking: Secrets of Ulduar
-							provider = { "n", 261816 },	-- Olviron the Sentinel
+							qg = 261816,	-- Olviron the Sentinel
 							coord = { 35.3, 17.0, 2593 },	-- Frachtorn
 							isRepeatable = true,
 						}),
 						q(95464, {	-- The Fate Inevitable
 							sourceQuest = 95462,	-- Lorewalking: Secrets of Ulduar
-							provider = { "n", 261856 },	-- Aggramar
+							qg = 261856,	-- Aggramar
 							coord = { 54.7, 54.8, 2592 },	-- Seat of the Pantheon
 							isRepeatable = true,
 						}),
@@ -442,7 +442,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 								95463,	-- The War Unending
 								95464,	-- The Fate Inevitable
 							},
-							provider = { "n", 261254 },	-- Li Li Stormstout
+							qg = 261254,	-- Li Li Stormstout
 							coord = { 60.9, 79.4, KROKUUN },
 							isRepeatable = true,
 						}),
@@ -452,7 +452,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					timeline = { ADDED_12_1_7 },
 					groups = {
 						q(95441, {	-- Lorewalking: The Silver Scale
-							provider = { "n", 230246 },	-- Li Li Stormstout
+							qg = 230246,	-- Li Li Stormstout
 							coords = {
 								{ 49.5, 31.6, DORNOGAL },
 								{ 54.5, 57.2, ORGRIMMAR },
@@ -463,19 +463,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						}),
 						q(95442, {	-- Lorewalking: The Silver Hand
 							sourceQuest = 95441,	-- Lorewalking: The Silver Scale
-							provider = { "n", 261308 },	-- Li Li Stormstout
+							qg = 261308,	-- Li Li Stormstout
 							coord = { 55.3, 43.8, VALDRAKKEN },
 							isRepeatable = true,
 						}),
 						q(95443, {	-- Lorewalking: Tyr's Fall
 							sourceQuest = 95442,	-- Lorewalking: The Silver Hand
-							provider = { "n", 261308 },	-- Li Li Stormstout
+							qg = 261308,	-- Li Li Stormstout
 							coord = { 13.8, 56.5, TIRISFAL_GLADES },
 							isRepeatable = true,
 						}),
 						q(95444, {	-- Lorewalking: Locating Tyr's Memories
 							sourceQuest = 95443,	-- Lorewalking: Tyr's Fall
-							provider = { "n", 261308 },	-- Li Li Stormstout
+							qg = 261308,	-- Li Li Stormstout
 							coord = { 60.4, 58.8, THALDRASZUS },
 							isRepeatable = true,
 							groups = { i(282709) },	-- Lorewalker's Notes: Keeper Tyr
