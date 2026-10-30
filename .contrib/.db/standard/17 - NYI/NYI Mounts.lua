@@ -820,9 +820,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223460, {	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				displayID = 119658,
 			}),
-			i(223284, {	-- Underlight Shorestalker (MOUNT!)
-				displayID = 119506,
-			}),
 		}),
 	}),
 	expansion(EXPANSION.TWW, {
@@ -957,12 +954,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(232523, {	-- G-99 Breakneck
 				-- displayID = ,
 			}),
-			i(235659, {	-- Midnight Butterfly (MOUNT!)
-				displayID = 126175,
-			}),
-			i(235554, {	-- Midnight Darkmoon Charger (MOUNT!)
-				displayID = 126058,
-			}),
 			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
 				displayID = 126061,
 			}),
@@ -977,9 +968,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(238968, {	-- Lavaborn Cormaera (MOUNT!)
 				displayID = 127846,
 			}),
-			i(238900, {	-- Summer Harvesthog (MOUNT!)
-				displayID = 127823,
-			}),
 			i(238901, {	-- Winter Harvesthog (MOUNT!)
 				displayID = 127824,
 			}),
@@ -990,9 +978,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			-- With MountID attached
 			i(243593, {	-- Banshee's Chilling Charger (MOUNT!)
 				displayID = 129222,
-			}),
-			i(243597, {	-- Banshee's Sickening Charger (MOUNT!)
-				displayID = 129394,
 			}),
 			i(243590, {	-- Grandmaster's Deep Board (MOUNT!)
 				displayID = 129383,

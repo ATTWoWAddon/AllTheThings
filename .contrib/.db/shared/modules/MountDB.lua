@@ -1967,7 +1967,6 @@ i(223285, 448851);	-- Underlight Corrupted Behemoth
 i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
 i(223282, 448845);	-- Blue Old God Fish Mount
-i(223284, 448849);	-- Underlight Shorestalker
 
 ------------------
 -- PATCH 11.0.0 --
@@ -2161,8 +2160,6 @@ i(235556, 1217342);	-- Violet Darkmoon Charger
 i(229947, 466021);	-- Violet Goblin Shredder
 --- NYI ---
 i(232523, 460013);	-- G-99 Breakneck
-i(235659, 1218014);	-- Midnight Butterfly
-i(235554, 1217340);	-- Midnight Darkmoon Charger
 i(235557, 1217343);	-- Snowy Darkmoon Charger
 
 ------------------
@@ -2191,7 +2188,6 @@ i(211089, 428068);	-- Voidfire Deathcycle
 --- NYI ---
 i(238902, 1226533);	-- Autumn Harvesthog
 i(238968, 1226856);	-- Lavaborn Cormaera
-i(238900, 1226531);	-- Summer Harvesthog
 i(238901, 1226532);	-- Winter Harvesthog
 
 ------------------
@@ -2212,7 +2208,6 @@ i(245936, 1240003);	-- Unarmored Deathtusk Felboar
 i(243596, 1235819);	-- Wailing Banshee's Charger
 --- NYI ---
 i(243593, 1234859);	-- Banshee's Chilling Charger
-i(243597, 1235820);	-- Banshee's Sickening Charger
 i(243590, 1235763);	-- Grandmaster's Deep Board
 i(243592, 1235806);	-- Grandmaster's Smokey Board
 
@@ -2489,7 +2484,6 @@ i(257225, 1261362);	-- Witherbark Warbear Harness
 --- NYI ---
 i(268878, 1283906);	-- [PH] Giant Eagle Sunwalker Mount Blue
 i(268875, 1283911);	-- [PH] Giant Eagle Sunwalker Mount White
-i(268362, 1282274);	-- Gilnean Copper Charger
 i(268360, 1282268);	-- Gilnean Iron Charger
 i(260421, 1266285);	-- Void-Corrupted Amani Warbear Kit
 
@@ -2595,16 +2589,22 @@ i(282649, 1314169);	-- Hot Motocross Bunmover 4600
 ------------------
 -- PATCH 12.1.7 --
 ------------------
+i(268362, 1282274);	-- Ambermill Traveler's Rouncey
+i(282272, 1313284);	-- Autumn Dream Jumper
+i(238900, 1226531);	-- Enchanted Woodland Wanderer
+i(243597, 1235820);	-- Faith-Cursed Courser
+i(235554, 1217340);	-- Lost Mare of the Maddening Faire
 i(287513, 1323203);	-- Markeet of the Infinite
+i(235659, 1218014);	-- Night Court Courier
+i(275255, 1296315);	-- Shadowbound Storybook
+i(282278, 1313363);	-- Shadowpaw Wood Watcher
+i(282271, 1313280);	-- Stone-Carved Crusher
+i(223284, 448849);	-- The Watcher in the Waves
 --- UNSORTED ---
 i(274262, 1293485);	-- [PH] Dino Size Test
 i(286632, 1320798);	-- [PH] Stegodon - Black
 i(286633, 1320801);	-- [PH] Stegodon - Blue
 i(286634, 1320802);	-- [PH] Stegodon - Green
 i(286635, 1320803);	-- [PH] Stegodon - Purple
-i(282272, 1313284);	-- Autumn Dream Jumper
 i(288214, 1325226);	-- Reanimated Skeletal Raptor
-i(275255, 1296315);	-- Shadowbound Storybook
-i(282278, 1313363);	-- Shadowpaw Wood Watcher
-i(282271, 1313280);	-- Stone-Carved Crusher
 i(287092, 1321944);	-- Winterrrgl's Pine-Powered Candy Cane Contraption

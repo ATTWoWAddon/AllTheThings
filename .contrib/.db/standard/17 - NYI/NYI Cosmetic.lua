@@ -344,14 +344,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(190908),	-- Devourer's Skullscythe
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
-				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
-				i(213063),	-- Paradise's Ruby Axe
 				i(190900),	-- Prototype Farstrider Sniper Rifle
 				i(190820),	-- Restless Void Handaxe
-				i(213066),	-- Rosy Floral Edge
-				i(213069),	-- Rosy Floral Stalk
-				i(213072),	-- Ruby Floral Staff
 				i(190891),	-- Shabby Battleaxe
 				i(190903),	-- Soulburner Warscythe
 				i(190902),	-- Will of the Titanforged
@@ -506,20 +501,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(230077),	-- Prowler's Grassy Mask
 				i(230036),	-- Prowler's Grassy Shoulder Cape
 
-				------ Prowler's Lively Set ------
-				i(230172),	-- Ensemble: Prowler's Lively Headgear
-				q(85126),	-- Ensemble: Prowler's Lively Headgear
-				i(230062),	-- Prowler's Lively Cowl
-				i(230082),	-- Prowler's Lively Mask
-				i(230041),	-- Prowler's Lively Shoulder Cape
-
-				------ Prowler's Plum Set ------
-				i(230178),	-- Ensemble: Prowler's Plum Headgear
-				q(85137),	-- Ensemble: Prowler's Plum Headgear
-				i(230068),	-- Prowler's Plum Cowl
-				i(230088),	-- Prowler's Plum Mask
-				i(230047),	-- Prowler's Plum Shoulder Cape
-
 				------ Prowler's Rosy Set ------
 				i(230046),	-- Prowler's Rosy Shoulder Cape
 			}),
@@ -618,7 +599,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(235034),	-- Vigilante's Aquatic Mask
 				i(235023),	-- Vigilante's Cloudy Mask
 				i(235022),	-- Vigilante's Grassy Mask
-				i(234601),	-- Wings of the Icy Rose Monarch
 			}),
 			n(PVP, {
 				i(232890),	-- Arsenal: Algari Warmonger's Weapons
@@ -628,26 +608,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(232889),	-- Ensemble: Algari Warmonger's Plate Armor
 			}),
 			n(SETS, {
-				------ Forest Dweller's Garden Set ------
-				i(235592),	-- Ensemble: Forest Dweller's Garden Attire
-				q(86871),	-- Ensemble: Forest Dweller's Garden Attire
-				i(235588),	-- Forest Dweller's Garden Belt
-				i(235567),	-- Forest Dweller's Garden Boots
-				i(235575),	-- Forest Dweller's Garden Cap
-				i(235571),	-- Forest Dweller's Garden Glove
-				i(235584),	-- Forest Dweller's Garden Mantle
-				i(235579),	-- Forest Dweller's Garden Pants
-				i(235563),	-- Forest Dweller's Garden Tunic
-
-				------ Midnight Butterfly Set ------
-				i(235229),	-- Ensemble: Ornaments of the Midnight Butterfly
-				i(235215),	-- Midnight Butterfly Belt
-				i(235153),	-- Midnight Butterfly Helm
-				i(235155),	-- Midnight Butterfly Pauldrons
-
-				------ Topsy Turvy Mask Set ------
-				i(235340),	-- Topsy Turvy Fool's Mask
-
 				-- Old Delve Sets
 				------ Myconic Set ------
 				i(234347),	-- Myconic Chausses
@@ -694,7 +654,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 			n(WEAPONS, {
 				i(234374),	-- Arathi Holy Standard
-				i(234609),	-- Double-Bladed Forest Garden Trowel
 				i(234370),	-- Flame-Bearing Crozier
 				i(238775, {sourceID = 287817}),	-- Gallagio Raider's Venture Co. Blasthammer
 				i(238775, {sourceID = 287819}),	-- Gallagio Raider's Venture Co. Blasthammer
@@ -702,18 +661,10 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(234371),	-- Hand of Piety
 				i(234373),	-- Imperial Flarebolt
 				i(234375),	-- Lamplighter's Mercy
-				i(235654),	-- Midnight Butterfly Longbow
-				i(235271),	-- Midnight Butterfly Mace
-				i(235400),	-- Midnight Butterfly Polearm
-				i(235292),	-- Midnight Butterfly Sword
-				i(235296),	-- Midnight Butterfly Wand
 				i(234369),	-- Pyretic Star
 				i(234378),	-- Radiant Steelglaives
 				i(234367),	-- Sanctifier's Startierce
 				i(234372),	-- Shooting Starquebus
-				i(234572),	-- Topsy Turvy Fool's Blade
-				i(234727),	-- Topsy Turvy Fool's Cleaver
-				i(235640),	-- Topsy Turvy Fool's Die
 				i(234577),	-- Topsy Turvy Joker's Blade
 				i(234726),	-- Topsy Turvy Joker's Cleaver
 				i(235643),	-- Topsy Turvy Joker's Die
@@ -768,12 +719,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(WEAPONS, {
 				i(238621),	-- Blackwater Pinchzapper
 				i(238620),	-- Darkfuse Pinchzapper
-				i(238957),	-- Deathwarder's Great Grove Blade
 				i(238958),	-- Deathwarder's Great Twilight Blade
-				i(236628),	-- Deathwarder's Grove Blade
-				i(237181),	-- Deathwarder's Grove Fetish
-				i(237177),	-- Deathwarder's Grove Fist
-				i(236403),	-- Deathwarder's Grove Stave
 				i(236629),	-- Deathwarder's Twilight Blade
 				i(237182),	-- Deathwarder's Twilight Fetish
 				i(237178),	-- Deathwarder's Twilight Fist
@@ -806,19 +752,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(244184),	-- Chilling Epaulets of the Banshee
 				i(244188),	-- Chilling Leggings of the Banshee
 				i(244210),	-- Chilling Shroud of the Banshee
-
-				------ Banshee's Sickly Set ------
-				i(244227),	-- Ensemble: Banshee's Sickly Collection
-				q(90929),	-- Ensemble: Banshee's Sickly Collection
-				i(244209),	-- Banshee's Sickly Chestplate
-				i(244201),	-- Banshee's Sickly Grip
-				i(244183),	-- Banshee's Sickly Veil
-				i(244205),	-- Banshee's Sickly Vestment
-				i(244218),	-- Sickly Banshee Boots
-				i(244222),	-- Sickly Banshee Cinch
-				i(244187),	-- Sickly Epaulets of the Banshee
-				i(244191),	-- Sickly Leggings of the Banshee
-				i(244213),	-- Sickly Shroud of the Banshee
 
 				------ Deep Sweatsuit Set ------
 				i(242460),	-- Ensemble: Deep Sweatsuit
@@ -873,7 +806,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242375),	-- Grandmaster's White Bulwark
 				i(242542),	-- Grandmaster's White Mace
 				i(242360),	-- Grandmaster's White Stave
-				i(242524),	-- Sickening Forsaken Cauldron
 				i(242630),	-- Sickly Forsaken Blade
 				i(242634),	-- Sickly Forsaken Great Blade
 				i(242379),	-- Sickly Forsaken Longbow

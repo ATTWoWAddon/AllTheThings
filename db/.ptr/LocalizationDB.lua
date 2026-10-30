@@ -1344,6 +1344,7 @@ _.HeaderConstants = {
 	SHOULDER = -98,
 	SPECIAL = -55,
 	TALEBOUND = -801,
+	TALEBOUND_STORE = -817,
 	THE_GREAT_GNOMEREGAN_RUN_HEADER = -589,
 	THOUSAND_BOAT_BASH_HEADER = -590,
 	TIER_14_RAIDS = -478,
@@ -2034,6 +2035,7 @@ localize(L.HEADER_NAMES, {
 	[-798] = select(2,GetAchievementInfo(63714)),
 	[-800] = "Alliance Outrunners",
 	[-801] = "Talebound",
+	[-817] = "Talebound Store",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2819,6 +2821,7 @@ localize(L.HEADER_ICONS, {
 	[-798] = 133783,
 	[-800] = 236449,
 	[-801] = 7815705,
+	[-817] = 2744751,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

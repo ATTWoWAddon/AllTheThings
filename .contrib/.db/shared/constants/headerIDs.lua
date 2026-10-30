@@ -613,6 +613,7 @@ HeaderAssignments = {
 	["Storming the Citadel"] = -368,
 	["Stranglethorn Fishing Extravaganza"] = -588,
 	["Talebound"] = -801,
+	["Talebound Store"] = -817,
 	["Tanks"] = -314,
 	["Tankworks"] = -126,
 	["TBC Classic Anniversary Edition - Outland Upgrade"] = -694,
@@ -796,4 +797,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -817
+NextHeaderID = -818

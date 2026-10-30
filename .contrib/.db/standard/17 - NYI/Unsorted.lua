@@ -91,15 +91,6 @@ root(ROOTS.Unsorted, {
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
 			i(283995),	-- Lemon Lollibop
-			i(283999),	-- Wood Haunter's Belt
-			i(284000),	-- Wood Haunter's Helm
-			i(284001),	-- Wood Haunter's Pauldrons
-			i(284002),	-- Wood Haunter's Hauberk
-			i(284003),	-- Wood Haunter's Leggings
-			i(284004),	-- Wood Haunter's Boots
-			i(284005),	-- Wood Haunter's Gloves
-			i(284006),	-- Wood Haunter's Cloak
-			i(284007),	-- Ensemble: Wood Haunter's Guise of the Wight
 			i(284008),	-- Ice-Walker's Belt
 			i(284009),	-- Ice-Walker's Helm
 			i(284010),	-- Ice-Walker's Pauldrons
@@ -144,7 +135,6 @@ root(ROOTS.Unsorted, {
 			i(285333),	-- Frost Revenant's Reversed Pauldrons
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
-			i(285336),	-- Wood Haunter's Reversed Pauldrons
 			i(285942),	-- Spirited Tidesage Manse
 			i(285956),	-- Ice Walker's Bell-Crook
 			i(285957),	-- Wood Haunter's Bell-Crook
@@ -251,7 +241,6 @@ root(ROOTS.Unsorted, {
 			i(276800),	-- [PH]Writhes Mount - Yellow
 			i(277157),	-- Barnacle-Encrusted Chest
 			i(277266),	-- The First Troll Legend
-			i(277270),	-- Kirin Tor Kitty
 			i(277318),	-- Catsramas
 			i(277319),	-- Cat'Thuzad
 			i(277321),	-- Mewkahen
@@ -701,16 +690,6 @@ root(ROOTS.Unsorted, {
 					i(268437),	-- Emberstone Loyalist Bracer
 					i(268746),	-- Emberstone Loyalist Leggings
 
-					------ Ambermill Rebel Streetware Set ------
-					i(268452),	-- Ensemble: Ambermill Rebel Streetware
-					i(268446),	-- Ambermill Rebel Bowler
-					i(268447),	-- Ambermill Rebel Coat
-					i(268448),	-- Ambermill Rebel Belt
-					i(268449),	-- Ambermill Rebel Pants
-					i(268450),	-- Ambermill Rebel Boots
-					i(268451),	-- Ambermill Rebel Bracer
-					i(268744),	-- Ambermill Rebel Leggings
-
 					------ Blue Sunwalker Guard Set ------
 					i(268604),	-- Ensemble: Blue Sunwalker Guard
 					i(268592),	-- Blue Sunwalker Breastplate
@@ -786,7 +765,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(268878),	-- [PH] Giant Eagle Sunwalker Mount Blue (MOUNT!)
 				i(268875),	-- [PH] Giant Eagle Sunwalker Mount White (MOUNT!)
-				i(268362),	-- Gilnean Copper Charger (MOUNT!)
 				i(268360),	-- Gilnean Iron Charger (MOUNT!)
 			}),
 			filter(QUEST_ITEMS, {
