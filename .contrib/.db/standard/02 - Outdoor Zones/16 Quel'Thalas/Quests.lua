@@ -1034,7 +1034,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 		}),
 	},
 });
- 
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	m(MAP.MIDNIGHT.QUELTHALAS, {
 		n(QUESTS, {

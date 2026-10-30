@@ -401,10 +401,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 									75953,	-- An Exemplar of Order: Valunei
 								},
 								qgs = {
+									-- #if AFTER 12.1.7
 									204602,	-- Travard
+									-- #endif
 									206221,	-- Travard
 								},
-								coord = { 17.6, 31.5, THE_AZURE_SPAN },
+								coords = {
+									-- #if AFTER 12.1.7
+									{ 59.8, 58.7, THALDRASZUS },
+									-- #endif
+									{ 17.6, 31.5, THE_AZURE_SPAN },
+								},
 							}),
 							q(76176, {	-- First Steps
 								sourceQuests = { 75635 },	-- For Tyr!

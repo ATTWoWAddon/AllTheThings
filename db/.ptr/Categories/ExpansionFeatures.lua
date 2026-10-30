@@ -34212,7 +34212,8 @@ i(206204,{minReputation={2510,12}})}}),
 q(75953,{coords={
 [2024]={{17.6,31.3}}},lvl=10,minReputation={2510,12},qgs={204591},sourceQuests={76171}}),
 q(75635,{coords={
-[2024]={{17.6,31.5}}},lvl=10,minReputation={2510,12},qgs={204602,206221},sourceQuests={75950,75951,75952,75953}}),
+[2024]={{17.6,31.5}},
+[2025]={{59.8,58.7}}},lvl=10,minReputation={2510,12},qgs={204602,206221},sourceQuests={75950,75951,75952,75953}}),
 q(76176,{coords={
 [2025]={{59.9,58.7}}},lvl=10,minReputation={2510,12},qgs={208968},sourceQuests={75635}}),
 q(75636,{coords={
@@ -38724,7 +38725,7 @@ ach(63691,{awp=120107,sourceQuests={92677},g={
 de(28340,{itemID=281626,spellID=1311970})}}),
 ach(63710,{awp=120107,sourceQuests={95465},g={
 de(28582,{itemID=283475,spellID=1314801})}}),
-ach(63604,{awp=120107,questID=95445,g={
+ach(63604,{awp=120107,sourceQuests={95445},g={
 de(28339,{itemID=283463,spellID=1314796})}})}),
 h(-47,{
 i(242386,{b=1,sym={{"select","itemID",171305},{"pop"}}})}),
@@ -38862,7 +38863,9 @@ q(95442,{coords={
 q(95443,{coords={
 [18]={{13.8,56.5}}},qgs={261308},repeatable=1,sourceQuests={95442}}),
 q(95444,{coords={
-[2025]={{60.4,58.8}}},qgs={261308},repeatable=1,sourceQuests={95443},g={
+[2025]={{60.4,58.8}}},qgs={261308},repeatable=1,sourceQuests={95443}}),
+q(95445,{coords={
+[2025]={{60.4,58.8}}},qgs={261308},repeatable=1,sourceQuests={95444},g={
 i(282709)}})}}),
 ah(93929,{awp=110207,type="q",g={
 q(93929,{isBreadcrumb=1,lvl=70}),

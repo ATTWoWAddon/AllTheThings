@@ -478,9 +478,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							qg = 261308,	-- Li Li Stormstout
 							coord = { 60.4, 58.8, THALDRASZUS },
 							isRepeatable = true,
+						}),
+						q(95445, {	-- Lorewalking: Tyr's Restoration
+							sourceQuest = 95444,	-- Lorewalking: Locating Tyr's Memories
+							qg = 261308,	-- Li Li Stormstout
+							coord = { 60.4, 58.8, THALDRASZUS },
+							isRepeatable = true,
 							groups = { i(282709) },	-- Lorewalker's Notes: Keeper Tyr
 						}),
-						-- TODO: Incomplete
 					},
 				}),
 				header(HEADERS.Quest, 93929, {	-- The War Within Recap
