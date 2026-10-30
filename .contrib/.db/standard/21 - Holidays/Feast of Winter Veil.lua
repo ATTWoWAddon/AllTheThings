@@ -231,54 +231,6 @@ local STOLEN_PRESENT_GROUPS = {
 
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	n(ACHIEVEMENTS, {
-		ach(1692, {	-- Merrymaker (A)
-			sym = {{"meta_achievement",
-				273,			-- On Metzen!
-				252,			-- With a Little Helper from My Friends
-				1255,			-- Scrooge (A)
-				1282,			-- Fa-la-la-la-Ogri'la
-				277,			-- 'Tis the Season
-				279,			-- Simply Abominable
-				1687,			-- Let It Snow
-				1686,			-- Bros. Before Ho Ho Ho's (A)
-				1688,			-- The Winter Veil Gourmet
-				1689,			-- He Knows If You've Been Naughty
-				1690,			-- A Frosty Shake
-			}},
-			timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
-			races = ALLIANCE_ONLY,
-			groups = {
-				title(102),				-- Merrymaker
-			},
-		}),
-		ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
-			sym = {{"meta_achievement",
-				273,			-- On Metzen!
-				252,			-- With a Little Helper from My Friends
-				-- #if AFTER MOP
-				1255,			-- Scrooge (A)
-				-- #endif
-				259,			-- Scrooge (H)
-				1282,			-- Fa-la-la-la-Ogri'la
-				277,			-- 'Tis the Season
-				279,			-- Simply Abominable
-				1687,			-- Let It Snow
-				-- #if AFTER MOP
-				1686,			-- Bros. Before Ho Ho Ho's (A)
-				-- #endif
-				1685,			-- Bros. Before Ho Ho Ho's (H)
-				1688,			-- The Winter Veil Gourmet
-				1689,			-- He Knows If You've Been Naughty
-				1690,			-- A Frosty Shake
-			}},
-			timeline = { ADDED_3_0_2 },
-			-- #if BEFORE MOP
-			races = HORDE_ONLY,
-			-- #endif
-			groups = {
-				title(102),				-- Merrymaker
-			},
-		}),
 		ach(277, {	-- 'Tis the Season
 			providers = {
 				{ "i", 21215 },	-- Graccu's Mince Meat Fruitcake
@@ -449,6 +401,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #endif
 				-- #endif
 			},
+		}),
+		ach(64367, {	-- Bells Will Be Ringing
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
+		}),
+		ach(64371, {	-- Candy Cane Brigade
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
 		}),
 		ach(1295, {	-- Crashin' & Thrashin'
 			providers = {
@@ -625,6 +585,57 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			timeline = { ADDED_3_0_2 },
 			sym = {{ "achievement_criteria" }},
 		}),
+		ach(64175, {	-- Let's Put A Bow On It
+			timeline = { ADDED_12_1_7 },
+		}),
+		ach(1692, {	-- Merrymaker (A)
+			sym = {{"meta_achievement",
+				273,			-- On Metzen!
+				252,			-- With a Little Helper from My Friends
+				1255,			-- Scrooge (A)
+				1282,			-- Fa-la-la-la-Ogri'la
+				277,			-- 'Tis the Season
+				279,			-- Simply Abominable
+				1687,			-- Let It Snow
+				1686,			-- Bros. Before Ho Ho Ho's (A)
+				1688,			-- The Winter Veil Gourmet
+				1689,			-- He Knows If You've Been Naughty
+				1690,			-- A Frosty Shake
+			}},
+			timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
+			races = ALLIANCE_ONLY,
+			groups = {
+				title(102),				-- Merrymaker
+			},
+		}),
+		ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
+			sym = {{"meta_achievement",
+				273,			-- On Metzen!
+				252,			-- With a Little Helper from My Friends
+				-- #if AFTER MOP
+				1255,			-- Scrooge (A)
+				-- #endif
+				259,			-- Scrooge (H)
+				1282,			-- Fa-la-la-la-Ogri'la
+				277,			-- 'Tis the Season
+				279,			-- Simply Abominable
+				1687,			-- Let It Snow
+				-- #if AFTER MOP
+				1686,			-- Bros. Before Ho Ho Ho's (A)
+				-- #endif
+				1685,			-- Bros. Before Ho Ho Ho's (H)
+				1688,			-- The Winter Veil Gourmet
+				1689,			-- He Knows If You've Been Naughty
+				1690,			-- A Frosty Shake
+			}},
+			timeline = { ADDED_3_0_2 },
+			-- #if BEFORE MOP
+			races = HORDE_ONLY,
+			-- #endif
+			groups = {
+				title(102),				-- Merrymaker
+			},
+		}),
 		ach(62502, {	-- Master of Merry Mayhem
 			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
 			timeline = { ADDED_12_1_5 },
@@ -684,6 +695,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			races = HORDE_ONLY,
 			_noautomation = true,
 		}),
+		ach(64370, {	-- Season's Beatings
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
+		}),
 		ach(279, {	-- Simply Abominable
 			sourceQuests = {
 				7045,	-- A Smokywood Pastures' Thank You! (Alliance)
@@ -694,6 +709,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				IRONFORGE,
 				ORGRIMMAR,
 			},
+		}),
+		ach(64369, {	-- Sockin' Around the Winter Veil Tree
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
+		}),
+		ach(64368, {
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
 		}),
 		ach(8699, {	-- The Danger Zone
 			provider = { "i", 104318 },	-- Crashin' Thrashin' Flyer Controller
@@ -720,11 +743,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 			},
 		}),
+		ach(64372, {	-- Tree-fense
+			maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
+			timeline = { ADDED_12_1_7 },
+		}),
 		pvp(ach(252, {	-- With a Little Helper from My Friends
 			provider = { "o", 180796 },	-- PX-238 Winter Wondervolt
 			timeline = { ADDED_3_0_2 },
 			_noautomation = true,
 		})),
+		-- Yearly Toys
 		ach(1705, {	-- Clockwork Rocket Bot (2007)
 			provider = { "i", 34425 },	-- Clockwork Rocket Bot
 			timeline = { ADDED_2_3_0 },
@@ -847,11 +875,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			provider = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
 			timeline = { ADDED_11_2_7 },
 		}),
-		ach(64174, {	-- Bow Go
+		ach(64174, {	-- Bow Go (2026)
 			--provider = { "i", 286660 },	-- Throw Bow (TOY!)
-			timeline = { ADDED_12_1_7 },
-		}),
-		ach(64175, {	-- Let's Put A Bow On It
 			timeline = { ADDED_12_1_7 },
 		}),
 	}),
