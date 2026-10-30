@@ -74752,7 +74752,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 136322,,136321,1,0,53972,0,0
 136323,"Use the /cold emote on Ragnaros",0,0,4,0,0,8193
 136324,,136323,1,0,53973,0,0
-136325,"Dance with someone around the tree in Winter Garb",0,0,4,0,0,8193
+136325,"Dance with someone around the tree in Winter Garb or Red-and-Greench Sweats",0,0,4,0,0,8193
 136326,,136325,1,0,53974,0,0
 136327,"Ice elementals killed",0,100,5,0,0,8193
 136328,,136327,0,0,53975,0,0
@@ -115359,7 +115359,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225687,"Defeat Placeholder",225686,1,0,113875,0,0
 225690,"12.1.7 GM3 - Revendreth - Scenario - Vampire Boss",0,0,4,0,0,2
 225694,"12.1.7 GM3 - Quillgrave - Scenario - Death",0,0,4,0,0,2
-225697,"Defeat the Storyteller",225694,1,0,113875,0,0
+225697,"Storyteller defeated",225694,1,0,113875,0,0
 225701,"Burrow Fledglings slain",222605,100,0,113862,2,0
 225703,"Candlepot Wax-filled",0,0,4,0,0,0
 225704,"Candlepot Wax-filled",225703,0,0,113863,0,0
@@ -118116,7 +118116,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230004,,224213,30,0,115515,24,0
 230005,,224213,1,0,115516,25,0
 230006,,224213,7,0,115517,26,0
-230007,"Defeat Tilywth, the Fairy Queen",225682,1,0,117254,0,0
+230007,"Tilywth, the Fairy Queen defeated",225682,1,0,117254,0,0
 230008,"12.1 Delves - Ethereals02 - V04 - Bonus: Use Waygate (Hufton)",0,0,4,0,0,0
 230009,"(optional) Waygate used",230008,0,0,115521,0,0
 230010,"12.0.7 Showdowns - Naigtal - WQ - Free the Creatures - Collect Keys",0,0,4,0,0,12288
@@ -118679,7 +118679,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231187,Khu'tulak,231185,1,0,116326,1,0
 231188,Susarikk,231185,1,0,116327,2,0
 231189,"Last Tyr Quest Completed",0,0,4,0,0,0
-231190,"Complete the Tyr Lorewalking Campaign.",231189,1,0,116328,0,0
+231190,,231189,1,0,116328,0,0
 231195,"Hands dusted with tarsap",232478,1,0,116331,0,0
 231200,"Secret Souvenirs Found in Founder's Point",0,0,4,0,0,0
 231201,"Secret Souvenir 1",231200,0,0,116392,0,0
@@ -119058,7 +119058,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231701,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 231702,,231701,5,0,116682,0,0
 231703,"Flames re-lit",0,0,4,0,0,0
-231704,"Flames re-lit",231703,4,0,116684,0,0
+231704,"Flames re-lit",231703,4,0,119405,0,0
 231705,"The Prisoner vanquished",0,0,4,0,0,0
 231706,"The Prisoner vanquished",231705,1,0,116685,0,0
 231711,"Arenas won after using crowd control",0,2,5,0,0,4096
@@ -119600,12 +119600,11 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232752,,224224,35,0,115538,21,0
 232753,,66460,30,0,117124,32,0
 232885,"12.1.7 GM3 - Quillgrave - Scenario - Puppetmaster",0,0,4,0,0,2
-232886,"Defeat the Outfitter",232885,1,0,117136,0,0
-232887,"Defeat the Scribe",232885,1,0,117137,1,0
-232888,"Defeat the Arcanist",232885,1,0,117138,2,0
-233350,,233339,1,0,117335,2,32
+232886,"Outfitter defeated",232885,1,0,117136,0,0
+232887,"Scribe defeated",232885,1,0,117137,1,0
+232888,"Arcanist defeated",232885,1,0,117138,2,0
 232889,"12.1.7 GM3 - Quillgrave - Scenario - War",0,0,4,0,0,2
-232890,"Defeat the Storyteller",232889,0,0,117139,0,0
+232890,"Storyteller defeated",232889,0,0,117139,0,0
 232891,"12.1.7 GM3 - Quillgrave - Scenario - Antiquarian",0,0,4,0,0,2
 232892,"Defeat the Antiquarian",232891,0,0,117140,0,0
 232894,"Flames of Jan'alai lit 1a",0,1,4,0,0,0
@@ -119619,7 +119618,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 232910,"Heart of the Labyrinth approached",232909,1,0,117149,0,0
 232911,"12.1.5 Labyrinth - Chamber 4 - Kill Den'Zara (BAK)",0,0,4,0,0,0
 232912,"Den'zara slain",232911,1,0,117150,0,0
-232913,"Defeat Alexandre Dozsenc",225690,1,0,117148,0,0
+232913,"Alexandre Dozsenc defeated",225690,1,0,117148,0,0
 232914,"12.1.7 Lorewalking - Complete Titans",0,0,4,0,0,0
 232915,,232914,1,0,117151,0,0
 232916,"12.1.7 Lorewalking - Complete Jaina",0,0,4,0,0,0
@@ -119960,6 +119959,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233347,,233337,1,0,117338,3,32
 233348,,233337,1,0,117342,4,32
 233349,,233339,1,0,117331,1,32
+233350,,233339,1,0,117335,2,32
 233351,,233339,1,0,117339,3,32
 233352,,233339,1,0,117343,4,32
 233353,,233341,1,0,117332,1,32
@@ -120027,18 +120027,19 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233429,"Head Ritualist Zol'go slain",233425,1,0,113671,2,32
 233430,"12.1.5 - Labyrinth Event - Generic Scenario 2 - Kill Named NPC - 3c",0,0,4,0,0,0
 233431,"Head Ritualist Malakk slain",233430,1,0,113680,0,0
+233673,,233672,0,0,116994,0,2
 233432,"12.1.5 - Labyrinth Event - Generic Scenario 2 -  Kill Boss - 3c",0,1,4,0,0,0
 233433,"Sha'Kuro slain",233432,1,0,119153,0,0
-233434,"12.1.7 GM3 - Achievement - Currency Collect - 1000 Ducats",0,0,4,0,0,2
-233435,,233434,1000,0,117412,0,1
-233436,"12.1.7 GM3 - Achievement - Currency Collect - 2000 Ducats",0,0,4,0,0,2
-233437,,233436,2000,0,117412,0,1
-233438,"12.1.7 GM3 - Achievement - Currency Collect - 3000 Ducats",0,0,4,0,0,2
-233439,,233438,3000,0,117412,0,1
-233440,"12.1.7 GM3 - Achievement - Currency Collect - 4000 Ducats",0,0,4,0,0,2
-233441,,233440,4000,0,117412,0,1
-233442,"12.1.7 GM3 - Achievement - Currency Collect - 5000 Ducats",0,0,4,0,0,2
-233443,,233442,5000,0,117412,0,1
+233434,"12.1.7 GM3 - Achievement - Currency Collect - 01 Ducats",0,0,4,0,0,2
+233435,,233434,20000,0,117412,0,1
+233436,"12.1.7 GM3 - Achievement - Currency Collect - 02 Ducats",0,0,4,0,0,2
+233437,,233436,40000,0,117412,0,1
+233438,"12.1.7 GM3 - Achievement - Currency Collect - 03 Ducats",0,0,4,0,0,2
+233439,,233438,60000,0,117412,0,1
+233440,"12.1.7 GM3 - Achievement - Currency Collect - 04 Ducats",0,0,4,0,0,2
+233441,,233440,80000,0,117412,0,1
+233442,"12.1.7 GM3 - Achievement - Currency Collect - 05 Ducats",0,0,4,0,0,2
+233443,,233442,100000,0,117412,0,1
 233444,"Puzzle Completed",0,0,4,0,0,0
 233445,"12.1.7 GM3 - Achievement - Complete all the Puzzle",0,0,4,0,0,0
 233467,"Kindo'jan defeated",233466,1,0,114815,0,0
@@ -120108,7 +120109,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233670,"Statistic - 12.1.5 Raid - Kithix - Heroic",0,0,4,0,0,0
 233671,,233670,0,0,117533,0,2
 233672,"Statistic - 12.1.5 Raid - Kithix - Mythic",0,0,4,0,0,0
-233673,,233672,0,0,116994,0,2
 233689,"12.1 Z1 - Delves - Season 2 Tutorial - 02 - Vehicle Quest - Slithering Spoils 3/6 (DTM)",0,0,4,0,0,4096
 233690,,233689,0,0,117541,0,0
 233700,"The Labyrinth of Kindo'jan: Tier 4",0,0,4,0,0,0
@@ -120584,7 +120584,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235856,,235851,15,0,118716,0,0
 235857,,235852,1,0,118716,0,0
 235858,,235853,30,0,118716,0,0
-235862,"Defeat the Antiquarian",235861,0,0,117140,0,0
+235862,"Antiquarian defeated",235861,0,0,117140,0,0
 235863,"Puzzle Completed",233444,1,0,118724,0,0
 235864,"Darkhaven Puzzles Completed",0,0,4,0,0,0
 235865,"First Darkhaven Mirror",235864,1,0,118728,0,0
@@ -120639,13 +120639,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 236226,"The Antiquarian",236222,1,0,118910,3,0
 236227,"The Scribe",236222,1,0,118911,4,0
 236408,"12.1.7 GM3 - Ardenweald - Scenario - Nightmare King",0,0,4,0,0,2
-236409,"Defeat Maernok, the Nightmare King",236408,1,0,117258,0,0
+236409,"Maernok, the Nightmare King defeated",236408,1,0,117258,0,0
 236423,"12.1.7 GM3 - Ardenweald - Scenario - Unseelie Princes",0,0,4,0,0,2
-236424,"Defeat the Unseelie Princes",236423,3,0,119074,0,0
+236424,"Unseelie Princes defeated",236423,3,0,119074,0,0
 236448,"12.1.7 GM3 - Revendreth - Scenario - Crusader Boss",0,0,4,0,0,2
-236449,"Defeat Konrad von Sonnesheim",236448,1,0,117147,0,0
+236449,"Konrad von Sonnesheim defeated",236448,1,0,117147,0,0
 236450,"12.1.7 GM3 - Revendreth - Scenario - Templars",0,0,4,0,0,2
-236451,"Defeat the Sanctified Templars",236450,3,0,119086,0,0
+236451,"Sanctified Templars defeated",236450,3,0,119086,0,0
 236478,"Prologue Complete",0,0,4,0,0,4096
 236479,,236478,1,0,119098,0,0
 236481,,236480,0,0,119099,0,0
@@ -120677,6 +120677,209 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 236818,,236817,1,0,119348,0,2
 236820,,236819,1,0,119349,0,2
 236825,,223755,0,0,119352,1,0
+236847,"<DNT> Talebound - Champ Item",0,0,4,0,0,0
+236848,,236847,0,0,119371,0,0
+236849,"<DNT> Talebound - Hero Item 1",0,0,4,0,0,0
+236850,,236849,0,0,119372,0,0
+236851,"<DNT> Talebound - Hero Item 2",0,0,4,0,0,0
+236852,,236851,0,0,119373,0,0
+236853,"<DNT> Talebound - Hero Item 3",0,0,4,0,0,0
+236854,,236853,0,0,119374,0,0
+236855,"<DNT> Talebound - Hero Item 4",0,0,4,0,0,0
+236856,,236855,0,0,119375,0,0
+236857,"<DNT> Talebound - Hero Item 5",0,0,4,0,0,0
+236858,,236857,0,0,119376,0,0
+236859,"<DNT> Talebound - Myth Item 1",0,0,4,0,0,0
+236860,,236859,0,0,119377,0,0
+236861,"<DNT> Talebound - Myth Item 2",0,0,4,0,0,0
+236862,,236861,0,0,119378,0,0
+236863,"<DNT> Talebound - Champ Crests",0,0,4,0,0,0
+236864,,236863,0,0,119379,0,0
+236865,"<DNT> Talebound - Hero Crests 1",0,0,4,0,0,0
+236866,,236865,0,0,119380,0,0
+236867,"<DNT> Talebound - Hero Crests 2",0,0,4,0,0,0
+236868,,236867,0,0,119381,0,0
+236869,"<DNT> Talebound - Myth Crests 1",0,0,4,0,0,0
+236870,,236869,0,0,119382,0,0
+236871,"<DNT> Talebound - Myth Crests 2",0,0,4,0,0,0
+236872,,236871,0,0,119383,0,0
+236873,"<DNT> Talebound - Marl Small",0,0,4,0,0,0
+236874,,236873,0,0,119384,0,0
+236875,"<DNT> Talebound - Marl Large 1",0,0,4,0,0,0
+236876,,236875,0,0,119385,0,0
+236877,"<DNT> Talebound - Marl Large 2",0,0,4,0,0,0
+236878,,236877,0,0,119386,0,0
+236879,"<DNT> Talebound - Outfitter",0,0,4,0,0,0
+236880,,236879,0,0,119387,0,0
+236881,"<DNT> Talebound - Alchemy",0,0,4,0,0,0
+236882,,236881,0,0,119388,0,0
+236883,"<DNT> Talebound - Venomstone 1",0,0,4,0,0,0
+236884,,236883,0,0,119389,0,0
+236885,"<DNT> Talebound - Venomstone 2",0,0,4,0,0,0
+236886,,236885,0,0,119390,0,0
+236887,"<DNT> Talebound - Venomstone 3",0,0,4,0,0,0
+236888,,236887,0,0,119391,0,0
+236889,"<DNT> Talebound - Venomstone 4",0,0,4,0,0,0
+236890,,236889,0,0,119392,0,0
+236891,"<DNT> Talebound - Nebulous Void 1",0,0,4,0,0,0
+236892,,236891,0,0,119393,0,0
+236893,"<DNT> Talebound - Nebulous Void 2",0,0,4,0,0,0
+236894,,236893,0,0,119394,0,0
+236895,"<DNT> Talebound - Nebulous Void 3",0,0,4,0,0,0
+236896,,236895,0,0,119395,0,0
+236897,"<DNT> Talebound - XP Potion 1",0,0,4,0,0,0
+236898,,236897,0,0,119396,0,0
+236899,"<DNT> Talebound - XP Potion 2",0,0,4,0,0,0
+236900,,236899,0,0,119397,0,0
+236901,"<DNT> Talebound - XP Potion 3",0,0,4,0,0,0
+236902,,236901,0,0,119398,0,0
+236903,"<DNT> Talebound - XP Potion 4",0,0,4,0,0,0
+236904,,236903,0,0,119399,0,0
+236926,"Talk to the Traveling Raven",0,0,4,0,0,0
+236927,,236926,1,0,119410,0,0
+236933,"Puzzle Completed",236932,1,0,118724,0,0
+236958,"Thrall Lorewalking completed",0,0,4,0,0,8192
+236959,,236958,1,0,119425,0,0
+236960,"Jaina Lorewalking completed",0,0,4,0,0,8192
+236961,,236960,1,0,119426,0,0
+236962,"Tyr Lorewalking completed",0,0,4,0,0,8192
+236963,,236962,1,0,119427,0,0
+236964,"Titans Lorewalking completed",0,0,4,0,0,8192
+236965,,236964,1,0,119428,0,0
+236966,"Use the /wave emote on Trading Post Merchants",0,0,4,0,0,1
+236967,"Andee Seabraide",236966,1,0,119433,0,1
+236968,Teha,236966,1,0,119429,1,1
+236981,"Use the /listen emote",0,0,4,0,0,1
+236982,"Traveling Supplier",236981,1,0,119440,0,1
+236983,"Traveling Raven",236981,1,0,119441,1,1
+236984,"Traveling Owl",236981,1,0,119443,2,1
+237013,"The Coreway Advance",237012,0,0,119452,0,0
+237014,"No Stalling",237012,0,0,119453,1,0
+237015,"Repair and Resist",237012,0,0,119454,2,0
+237016,"Draw Its Ire",237012,0,0,119455,3,0
+237017,"Path of the Keeper",237012,0,0,119456,4,0
+237018,"Access Granted",237012,0,0,119457,5,0
+237019,"Family Road Trip",237012,0,0,119458,6,0
+237020,"Clearance Chase",237012,0,0,119459,7,0
+237021,"No Competition",237012,0,0,119460,8,0
+237022,"To the Core of the Matter",237012,0,0,119461,9,0
+237023,"Security Training",237012,0,0,119462,10,0
+237024,"Synthesis Scrap",237012,0,0,119463,11,0
+237025,"Final Thoughts",237012,0,0,119464,12,0
+237026,"Worldcore Revealed",237012,0,0,119465,13,0
+237029,,237028,0,0,119466,0,0
+237034,Ula'tek,136359,1,0,119467,16,0
+237035,Charonus,136359,1,0,119470,17,0
+237036,Zul'jan,136359,1,0,119471,18,0
+237037,"Lithiel Cinderfury",136359,1,0,119472,19,0
+237038,Charonus,149883,1,0,119470,16,0
+237039,Ula'tek,149883,1,0,119467,17,0
+237040,"Lithiel Cinderfury",149883,1,0,119472,18,0
+237041,Zul'jan,149883,1,0,119471,19,0
+237042,Charonus,149897,1,0,119470,16,0
+237043,Ula'tek,149897,1,0,119467,17,0
+237044,"Lithiel Cinderfury",149897,1,0,119472,18,0
+237045,Zul'jan,149897,1,0,119471,19,0
+237050,"Bow thrown",0,0,4,0,0,8193
+237051,,237050,0,0,119478,0,0
+237054,"Bells rung",0,5,8,0,0,1
+237055,,237054,0,0,119480,0,0
+237056,"Gifts given",0,3,8,0,0,1
+237057,,237056,0,0,119481,0,0
+237058,"Attackers punted",0,6,8,0,0,1
+237059,,237058,0,0,119482,0,0
+237060,Pummeled,0,3,8,0,0,1
+237061,,237060,0,0,119483,0,0
+237062,"Enchanted Snowflakes earned",0,200,5,0,0,8193
+237063,,237062,0,0,119484,0,1
+237064,,237062,0,0,119485,1,0
+237065,"Enchanted Snowflakes earned",0,500,5,0,0,8193
+237066,,237065,0,0,119484,0,1
+237067,,237065,0,0,119485,1,0
+237078,"First Darkhaven Mirror",237077,1,0,118728,0,0
+237079,"Second Darkhaven Mirror",237077,1,0,118729,1,0
+237080,"First Blood Crate",237077,1,0,118730,2,0
+237081,"Second Blood Crate",237077,1,0,118731,3,0
+237082,"Third Blood Crate",237077,1,0,118732,4,0
+237084,"First Purifying Totem Completed",237083,1,0,118739,0,0
+237085,"Second Purifying Totem Completed",237083,1,0,118739,1,0
+237086,"Third Purifying Totem Completed",237083,1,0,118739,2,0
+237087,"First Leaky Pipe Completed",237083,1,0,118743,3,0
+237088,"Second Leaky Pipe Completed",237083,1,0,118739,4,0
+237089,"Third Leaky Pipe Completed",237083,1,0,118739,5,0
+237090,"Watcher's Puzzle Completed",237083,1,0,118742,6,0
+237092,"First Dream Jumper Completed",237091,1,0,118746,0,0
+237093,"Second Dream Jumper Completed",237091,1,0,118747,1,0
+237094,"First Rubies Cube Completed",237091,1,0,118748,2,0
+237095,"Second Rubies Cube Completed",237091,1,0,118749,3,0
+237096,"First Flower Match Completed",237091,1,0,118750,4,0
+237097,"Second Flower Match Completed",237091,1,0,118751,5,0
+237099,,237098,1,0,118753,0,32
+237100,,237098,1,0,118754,1,32
+237101,,237098,1,0,118755,2,32
+237102,,237098,1,0,118756,3,32
+237103,"<DNT> Complete any Tale on Normal",0,1,8,0,0,0
+237104,,237103,1,0,117334,0,32
+237105,,237103,1,0,117330,1,32
+237106,,237103,1,0,117342,2,32
+237107,,237103,1,0,117338,3,32
+237108,"<DNT> Complete any Talebound Story on Veteran Difficulty.",0,1,8,0,0,0
+237109,,237108,1,0,117335,0,32
+237110,,237108,1,0,117331,1,32
+237111,,237108,1,0,117343,2,32
+237112,,237108,1,0,117339,3,32
+237113,"<DNT> Complete any Story on Heroic Difficulty.",0,1,8,0,0,0
+237114,,237113,1,0,117336,0,32
+237115,,237113,1,0,117332,1,32
+237116,,237113,1,0,117344,2,32
+237117,,237113,1,0,117340,3,32
+237118,"<DNT> Complete any Talebound Story on Mythic Difficulty",0,1,8,0,0,0
+237119,,237118,1,0,117337,0,32
+237120,,237118,1,0,117333,1,32
+237121,,237118,1,0,117345,2,32
+237122,,237118,1,0,117341,3,32
+237124,"Face the Final Confrontation",237123,1,0,117269,0,0
+237126,"Face the Final Confrontation on Veteran Difficulty",237125,1,0,117270,0,0
+237130,"Face the Final Confrontation on Heroic Difficulty",237129,1,0,117271,0,0
+237132,"Face the Final Confrontation on Mythic Difficulty",237131,1,0,117272,0,0
+237133,"<DNT> Complete the Final Confrontation on all 3 classes on Normal Difficulty.",0,0,4,0,0,0
+237134,,237133,1,0,119486,0,32
+237135,,237133,1,0,119487,1,32
+237136,,237133,1,0,119488,2,32
+237137,"<DNT> Complete the Final Confrontation on all 3 classes on Veteran Difficulty.",0,0,4,0,0,0
+237138,,237137,1,0,119489,0,32
+237139,,237137,1,0,119490,1,32
+237140,,237137,1,0,119491,2,32
+237141,"<DNT> Complete the Final Confrontation on all 3 classes on Heroic difficulty.",0,0,4,0,0,0
+237142,,237141,1,0,119492,0,32
+237143,,237141,1,0,119493,1,32
+237144,,237141,1,0,119494,2,32
+237145,"<DNT> Complet the Final Confrontation on all 3 classes on Mythic Difficulty.",0,0,4,0,0,0
+237146,,237145,1,0,119495,0,32
+237147,,237145,1,0,119496,1,32
+237148,,237145,1,0,119497,2,32
+237150,,237149,20000,0,117412,0,1
+237152,,237151,40000,0,117412,0,1
+237154,,237153,60000,0,117412,0,1
+237156,,237155,80000,0,117412,0,1
+237158,,237157,100000,0,117412,0,1
+237165,,237164,1,0,117922,0,32
+237166,,237164,1,0,117923,1,32
+237167,,237164,1,0,117924,2,32
+237168,,237164,1,0,117925,3,32
+237170,,237169,1,0,117324,0,32
+237171,,237169,1,0,117330,1,32
+237172,,237169,1,0,117334,2,32
+237173,,237169,1,0,117338,3,32
+237174,,237169,1,0,117342,4,32
+237176,"First Vines Out Completed",237175,1,0,118733,0,0
+237177,"Second Vines Out Completed",237175,1,0,118734,1,0
+237178,"Third Vines Out Completed",237175,1,0,118735,2,0
+237179,"First Garden Trails Completed",237175,1,0,118736,3,0
+237180,"Second Garden Trails Completed",237175,1,0,118737,4,0
+237181,"Third Garden Trails Completed",237175,1,0,118738,5,0
+237190,"12.1.7 GM3 - Revendreth - Scenario - Bishop Encounters",0,0,4,0,0,0
+237191,"Bishop confronted",237190,3,0,119503,0,0
 12374,"Honor the flames of Kalimdor.",0,0,4,0,0,0
 5438,"Catch a fish in each of the specific nodes listed below.",0,0,4,0,0,0
 3835,"Win Alterac Valley while your team controls both mines.",0,0,4,0,0,0
@@ -120768,7 +120971,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20376,,0,0,4,0,0,0
 20382,,0,0,4,0,0,0
 20570,,0,0,4,0,0,0
-19793,,0,1,5,0,0,0
 4372,"Kill 50 enemy players in any of your home cities.",0,50,5,0,0,0
 4965,"Complete the battleground achievements listed below.",0,0,4,0,0,0
 31792,"Complete the battleground achievements listed below.",0,0,4,0,0,0
@@ -120807,6 +121009,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4409,"Complete the Arathi Basin achievements listed below.",0,0,4,0,0,0
 7316,"Honor the flames of Eastern Kingdoms.",0,0,4,0,0,0
 8077,"Raise all of The Burning Crusade dungeon reputations to exalted.",0,0,4,0,0,0
+20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
 6714,"Complete the Eastern Kingdoms quest achievements listed below.",0,0,4,0,0,0
 6894,"Complete the Northrend quest achievements listed below.",0,0,4,0,0,0
 6585,"Visit the Candy Buckets in Kalimdor.",0,0,4,0,0,0
@@ -120850,6 +121053,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 19780,,0,1,5,0,0,0
 19784,,0,1,5,0,0,0
 19789,,0,1,5,0,0,0
+19793,,0,1,5,0,0,0
 19798,,0,1,5,0,0,0
 20436,,0,1,5,0,0,0
 7754,"Complete the Alterac Valley achievements listed below.",0,0,4,0,0,0
@@ -120942,7 +121146,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20766,"Defeat The Black Knight in the Trial of the Champion on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 20440,"Complete the heroic Northrend dungeon achievements listed below while in a guild group.",0,0,4,0,0,0
 20807,"Visit the Candy Buckets in Northrend.",0,0,4,0,0,0
-20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
 20573,"Launch off Darkmoon Fireworks in every friendly capital city.",0,0,4,0,0,0
 20721,"Honor the flames of Northrend.",0,0,4,0,0,0
 20748,"Honor the flames of zones opened by the cataclysm.",0,0,4,0,0,0
@@ -121084,6 +121287,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 46208,"Unlocked True Iron Rudder",0,0,4,0,0,0
 46198,"Unlocked Fog Lights",0,0,4,0,0,0
 46073,"7.0 Artifacts - Warlock Order - Step 06 Complete - TSH",0,0,4,0,0,0
+79078,"New Criteria Tree",0,0,4,0,0,4096
 46083,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
 46085,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
 46087,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
@@ -121148,6 +121352,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 140848,"Legion - Bonus Event Quest - Battlegrounds",0,4,5,0,0,4096
 67957,"7.0 Bonus Event Weekend - World Quests",0,20,5,0,0,4096
 55243,"Stormforged Grapple Launcher",0,0,4,0,0,4128
+80742,"New Criteria Tree",0,0,4,0,0,4096
 55665,"7.1.5 - Class Hall - Special - PVP Intro - Has Completed any random battleground",0,0,4,0,0,4096
 55725,"7.0 Order Hall - Monk - Campaign - Chapter 3 - Quest 0B - SBV",0,10,5,0,0,4096
 56138,"Demons Defeated",0,20,5,0,0,4096
@@ -121219,8 +121424,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 65798,"New Criteria Tree",0,0,4,0,0,4096
 65974,"New Criteria Tree",0,0,4,0,0,4096
 67775,"New Criteria Tree",0,0,4,0,0,4096
-79078,"New Criteria Tree",0,0,4,0,0,4096
-80742,"New Criteria Tree",0,0,4,0,0,4096
 85582,"New Criteria Tree",0,0,4,0,0,4096
 85708,"New Criteria Tree",0,0,4,0,0,4096
 91982,"New Criteria Tree",0,0,4,0,0,4096
@@ -121580,6 +121783,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 169825,"8.3 Visions of N'Zoth - Orgrimmar - Free Shaman - Enter Valley of Spirits",0,0,4,0,0,4096
 169835,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Talk with Garona Completed",0,0,4,0,0,4096
 169837,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Bag Vendor Completed",0,0,4,0,0,4096
+90578,"Evade the Tarragrue",0,0,4,0,0,2
 169841,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Orphanage Completed",0,0,4,0,0,4096
 169845,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Leatherworker Completed",0,0,4,0,0,4096
 169843,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Engineer Completed",0,0,4,0,0,4096
@@ -121656,7 +121860,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90566,"Evade the Tarragrue",0,0,4,0,0,2
 90570,"Evade the Tarragrue",0,0,4,0,0,2
 90574,"Evade the Tarragrue",0,0,4,0,0,2
-90578,"Evade the Tarragrue",0,0,4,0,0,2
 90582,"Evade the Tarragrue",0,0,4,0,0,2
 90586,"Evade the Tarragrue",0,0,4,0,0,2
 90590,"Evade the Tarragrue",0,0,4,0,0,2
@@ -121766,7 +121969,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85386,"Complete 3 World Quests in Maldraxxus",0,3,5,0,0,4096
 85388,"Complete 3 World Quests in Maldraxxus",0,3,5,0,0,4096
 85390,"Complete 3 World Quests in Maldraxxus",0,3,5,0,0,4096
-142046,"Honor earned",0,0,4,0,0,1
 85392,"Complete 3 World Quests in Maldraxxus",0,3,5,0,0,4096
 88786,"Complete 3 World Quests in Maldraxxus",0,3,5,0,0,4096
 85363,"Complete 3 World Quests in Revendreth",0,3,5,0,0,4096
@@ -121908,6 +122110,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 136042,"Injured Hunters",0,0,4,0,0,0
 136116,"Lost Equipment",0,0,4,0,0,0
 136132,"Winghunter Nests",0,0,4,0,0,0
+142046,"Honor earned",0,0,4,0,0,1
 142733,"Honor earned",0,0,4,0,0,1
 151396,"Pet battles won",0,0,4,0,0,1
 151646,"Pet battles won",0,0,4,0,0,1
@@ -122012,6 +122215,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 143269,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143271,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143273,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
+232184,"Quests completed",0,5,5,0,0,8193
 143275,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143281,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143283,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
@@ -122076,7 +122280,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 148656,"Quests completed",0,5,5,0,0,8193
 216312,"Quests completed",0,5,5,0,0,8193
 223339,"Quests completed",0,5,5,0,0,8193
-232184,"Quests completed",0,5,5,0,0,8193
 149871,"Fireworks launched",0,10,5,0,0,8193
 218056,"Turkeys dominated",0,0,4,0,0,8193
 157039,"Items upgraded",0,5,5,0,0,8193
@@ -122143,6 +122346,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 170363,"Pet battle won",0,0,4,0,0,8193
 170365,"Pet battle won",0,0,4,0,0,8193
 219745,"Pet battle won",0,0,4,0,0,8193
+237028,"Pet battle won",0,0,4,0,0,8193
 154487,"Clear Traitor's Bramble from the site",0,100,4,0,0,0
 154485,"Clear Boneclover from the site",0,100,4,0,0,0
 154818,"11.0 - Delves - Test Example - - Nerubian groups slain (STM)",0,0,4,0,0,0
@@ -122275,6 +122479,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212394,"Delver's Cosmetic Surprise Bag purchased from Reno Jackson",0,0,4,0,0,6144
 212404,"Delver's Cosmetic Surprise Bag purchased from Reno Jackson",0,0,4,0,0,6144
 212396,"Delver's Starter Kit purchased from Sir Finley Mrrgglton",0,0,4,0,0,6144
+212237,"Reach level 40",0,1,4,0,0,4096
 212406,"Delver's Starter Kit purchased from Sir Finley Mrrgglton",0,0,4,0,0,6144
 206370,"Earn a 2600 personal rating in the 2v2 bracket of the arena in Season 39 (TWW 2)",0,0,4,0,0,0
 206833,"Drifts completed",0,400,5,0,0,8193
@@ -122343,7 +122548,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211445,"[DNT] Quests completed",0,2,5,0,0,4096
 221096,"Complete World Quests",0,5,4,0,0,0
 229615,"Complete World Quests",0,5,4,0,0,0
-212237,"Reach level 40",0,1,4,0,0,4096
 212253,"Reach level 40",0,1,4,0,0,4096
 217505,"Complete Aln'hara's Gift",0,0,4,0,0,4096
 215423,"Herbs, ores, skins, or fish gathered",0,100,5,0,0,8193
@@ -122414,6 +122618,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230700,"12.0 Midnight - Seasonal - Z1 - Silvermoon Court (MPK)",0,1,8,0,0,4096
 229817,"12.0 Midnight - Seasonal - Z4 - Stormarion Assault (MPK)",0,1,8,0,0,4096
 230705,"12.0 Midnight - Seasonal - Z4 - Stormarion Assault (MPK)",0,1,8,0,0,4096
+231533,"Complete an Umbral Strike",0,3,5,0,0,4096
 230432,"Obtain all curios that are available for Valeera Sanguinar at rank 4.",0,1,8,0,0,8194
 220789,"Explore the regions of Midnight.",0,0,4,0,0,0
 221058,"Player Has Opened all Midnight Delve Sturdy Chests",0,0,4,0,0,0
@@ -122479,7 +122684,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225556,"Battlegrounds won",0,2,5,0,0,4096
 231550,"Battlegrounds won",0,2,5,0,0,4096
 227964,"Complete an Umbral Strike",0,3,5,0,0,4096
-231533,"Complete an Umbral Strike",0,3,5,0,0,4096
 227431,"Automaton Fuel Cells Acquired",0,1,4,0,0,4096
 225740,"Coalesced Corruption",0,0,4,0,0,0
 236086,"Recover a Fragment of Alien Void or Arcane Magic",0,1,5,0,0,4096
@@ -122525,18 +122729,36 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235861,"12.1.7 GM3 - Quillgrave - Scenario - Antiquarian",0,0,4,0,0,2
 234379,"Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0
 235189,"Open the locked door hidden within Kindo'jan's Labyrinth.",0,1,8,0,0,0
+237123,"12.1.7 GM3 - Achievement - Quillgrave - The Final Confrontation",0,0,4,0,0,2
+237125,"12.1.7 GM3 - Achievement - Quillgrave - The Final Confrontation Veteran",0,0,4,0,0,2
+237129,"12.1.7 GM3 - Achievement - Quillgrave - The Final Confrontation Heroic",0,0,4,0,0,2
+237131,"12.1.7 GM3 - Achievement - Quillgrave - The Final Confrontation Mythic",0,0,4,0,0,2
+237169,"12.1.7 GM3 - Achievement - Full tale + Final Confrontation",0,0,4,0,0,0
 233383,"12.1.7 GM3 - Quest - Quillgrave - Greenthistle Wood Bosses - Any Difficulty",0,0,4,0,0,4096
 233566,"12.1.7 GM3 - Quest - Quillgrave - Greenthistle Wood Bosses - Any Difficulty",0,0,4,0,0,4096
 233468,"12.1.5 Labyrinth - Chamber 4 - Speak to Kinduru (BAK)",0,0,4,0,0,0
+237149,"12.1.7 GM3 - Achievement - Currency Collect - 01 Ducats",0,0,4,0,0,2
+237151,"12.1.7 GM3 - Achievement - Currency Collect - 02 Ducats",0,0,4,0,0,2
+237153,"12.1.7 GM3 - Achievement - Currency Collect - 03 Ducats",0,0,4,0,0,2
+237155,"12.1.7 GM3 - Achievement - Currency Collect - 04 Ducats",0,0,4,0,0,2
+237157,"12.1.7 GM3 - Achievement - Currency Collect - 05 Ducats",0,0,4,0,0,2
+236932,"Puzzle Completed",0,0,4,0,0,0
+237098,"12.1.7 GM3 - Achievement - Complete all the Puzzle",0,0,4,0,0,0
+237012,"Trading Post - Complete 12.1.5 Labyrinth - Intro Campaign",0,0,4,0,0,1
 234332,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234334,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234336,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234338,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
 234340,"Find and purge Akil'zon's Roost of intruders on Tier 8 or above.",0,1,4,0,0,4096
+237164,"12.1.7 GM3 - Achievement - Collect the Stories of the Storyteller",0,0,4,0,0,0
 234628,"Deposit Candy at your Neighborhood",0,0,4,0,0,4096
 234630,"Deposit Candy at your Neighborhood",0,0,4,0,0,4096
 235781,"Potions Consumed",0,1,4,0,0,8193
 235783,"Potions Consumed",0,1,4,0,0,8193
 235785,"Potions Consumed",0,1,4,0,0,8193
 235853,"Puzzles Completed",0,0,4,0,0,8193
+237077,"Darkhaven Puzzles Completed",0,0,4,0,0,0
+237175,"Greenthistle Woods Puzzles Completed",0,0,4,0,0,0
+237083,"Greywake's Expedition Puzzles Completed",0,0,4,0,0,0
+237091,"Court of Night Puzzles Completed",0,0,4,0,0,0
 236819,"[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party, before the end of Midnight Season 2.",0,0,4,0,0,0

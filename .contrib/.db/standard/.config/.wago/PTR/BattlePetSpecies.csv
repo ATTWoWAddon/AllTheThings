@@ -2860,7 +2860,6 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "This baby thorntail's favorite activity is splashing in small puddles.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4825,245215,1237377,6159151,4,2,0,6,7,0
 "This little thorntail just loves to get into scraps and scrapes with its greatest foe: lapbugs.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4826,245217,1237379,6159150,4,2,0,6,7,0
 "Early attempts to integrate with the ecosystem resulted in multiple specimens being eyeblasted.","|cFFFFD200Drop:|r Vibrating Box|n|cFFFFD200Zone: |rK'aresh",4827,245474,1238270,7119296,5,2,0,6,7,0
-"She sees you when you're sleeping.","|cFFFFD200Vendor: Talebound|r",5171,274252,1315373,5788266,0,16386,2,6,7,0
 "It waits and watches from the shadows. Softly. Softly.","|cFFFFD200Vendor: |rShad'anis|n|cFFFFD200Zone: |rK'aresh|n|cFFFFD200Cost: |r4|Hcurrency:3303|h|TInterface\ICONS\INV_Misc_Coin_08.blp:0|t|h",4829,245476,1238272,7119389,5,18,2,6,7,0
 "Ever watchful, never blinking.","|cFFFFD200Vendor: |rMaterialist Ophinell|n|cFFFFD200Zone: |rTwilight Highlands|n|cFFFFD200Cost: |r30|Hcurrency:3319|h|TInterface\ICONS\INV12_Twilight_ Blade_Cultist_Insignia.BLP:0|t|h",4830,245477,1238273,7119297,5,16402,2,6,7,0
 "While not viewed as insightful enough to be a Watcher just yet, he's on the lookout for others to share his vision with.","|cFFFFD200Faction: |rManaforge Vandals|n|cFFFFD200Renown: |r13|n|cFFFFD200Location: |rShadow Point",4832,245479,1238275,7119298,5,18,1,6,7,0
@@ -2982,7 +2981,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "The eagles of Zul'Aman are a regal species yet they have suffered without Akil'zon watching over them. Faithbreaker Ger'lok has been especially cruel testing his dark magic on the young eaglets.","|cFFFFD200Ritual Site:|r Broken Throne ",5017,261676,1286610,7210236,2,82,0,6,7,0
 "Separated from his mother when they were captured. Chubs is sad but fierce. He takes pride when he can bite his Twilight Blade handlers hands at feeding time.","|cFFFFD200Ritual Site:|r Broken Throne",5019,261684,1286634,7523130,7,82,0,6,7,0
 "The naga's mix of arcane and void magics have disturbed the mana wyrms around Daggerspine Point making them extremely hostile. The very few manalings remaining in the aftermath of their ritual are showing unique abilities.","|cFFFFD200Drop: |rMana-Gorged Greatwyrm|n|cFFFFD200Ritual Site: |rDaggerspine Point",5020,262066,1287339,1386549,5,2,0,6,7,0
-"This loyal companion bears the holy words of the inquisitor's across lands touched by darkness.","|cFFFFD200Vendor: Talebound|r |n",5169,273981,1314175,5547301,2,2,2,6,7,0
+"On wings of white with torch to bear; a feathered friend by spoken prayer.","|cFFFFD200Vendor: Talebound|r |n",5169,273981,1314175,5547301,2,2,2,6,7,0
 "The loyal snapdragon are the perfect companion to any naga. They adapt well to their environment especially when the environment likes to adapt them.","|cFFFFD200Ritual Site: |rDaggerspine Point",5021,262089,1287374,2766227,8,82,0,6,7,0
 "Ravaged by the invading naga, many hawkstriders died in the area of Daggerspine Point. It is rare to find any of their young yet alive.","|cFFFFD200Ritual Sites: |rDaggerspine Point",5022,262090,1287376,6703754,4,82,10,6,7,0
 "This curious kitten has been hanging around one too many ritual sites.","|cFFFFD200Ritual Sites: |rRustling Underbrush",5023,262092,1287380,7390433,7,82,0,6,7,0
@@ -3021,7 +3020,7 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Ula'tek's venom gave rise to new color variants of wind serpents, like this little pink one.","|cFFFFD200Drop: |rWriggling Venom-Soaked Satchel|n|cFFFFD200Zone: |rThe Coiled Isle",5092,267689,1299089,8125117,7,210,0,6,7,0
 "Demands scritches and blood sacrifices.","|cFFFFD200Vendor: |rJan'sari the Watchful|n|cFFFFD200Zone: |rThe Coiled Isle|n|cFFFFD200Cost: |r2500|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h|n|n",5093,267805,1299255,8125118,7,210,2,6,7,0
 "The winged aqir are very fast and agile, and their wings provide a nice breeze on a warm afternoon.","|cFFFFD200Vendor: |rEstelia Archtender|n|cFFFFD200Zone: |rSilvermoon City|n|cFFFFD200Cost: |r2000|Hcurrency:3316|h|TInterface\ICONS\INV_112_RaidTrinkets_VoidPrism.BLP:0|t|h",5100,268483,1301393,2103895,2,82,2,6,7,0
-"Don't be put off by this cat's icy demeanor.","|cFFFFD200Vendor: Talebound|r ",5114,268609,1301935,8014864,7,16466,2,6,7,0
+"Where witches lie, in forests deep, their feline friends curled up asleep.","|cFFFFD200Vendor: Talebound|r ",5114,268609,1301935,8014864,7,16466,2,6,7,0
 "Knocks potions and reagents off shelves for ""research purposes.""","|cFFFFD200Trading Post|r",5115,268636,1302008,8014864,7,16466,11,6,7,0
 "Sometimes a good cat nap is all you need to stave off death.","|cFFFFD200Trading Post|r",5116,268671,1302084,7977787,7,16466,11,6,7,0
 "Do not let this cat cross your path.","|cFFFFD200Trading Post|r",5117,268672,1302088,7977787,7,16466,11,6,7,0
@@ -3040,8 +3039,9 @@ INTERNAL TEMPERATURE: LOW.","|cFFFFD200Promotion|r |n",4618,229901,463251,586966
 "Infused with a raging spirit and a combination of pristine ritual ingredients.","|cFFFFD200Discovery: |rOfi's Offerings",5134,271163,1307902,7558868,5,138,0,6,7,0
 "Big Mon was all alone until he found an injured snakebiter. He nursed the snakebiter back to health and named him Lil' Mon. Big Mon may have been undead, but he wasn't heartless. He loved Lil' Mon and would do anything to protect his only friend.","|cFFFFD200Drop:|r Big Mon|n|cFFFFD200Zone:|r The Coiled Isle|n",5137,271772,1309175,2027894,7,210,0,6,7,0
 "Got into a spot of trouble digging through magical garbage in Silvermoon. Luckily, you were there to help him out!","|cFFFFD200Discovery:|r Silvermoon City|n",5164,273775,1313813,8284165,4,82,10,6,7,0
-"A faithful hound to accompany you through the monster-ridden woods.","|cFFFFD200Vendor: Talebound|r ",5168,273980,1314164,5279603,7,82,2,6,7,0
-PH,"|cFFFFD200Vendor: Talebound|r ",5170,274233,1315041,2030683,5,2,2,6,7,0
+"Oh faithful friend, here at my side, through darkened tales to track and guide.","|cFFFFD200Vendor: Talebound|r ",5168,273980,1314164,5279603,7,82,2,6,7,0
+"In blackened woods, where foes do dare, even the dark needs friends to care.","|cFFFFD200Vendor: Talebound|r ",5170,274233,1315041,2030683,5,16386,2,6,7,0
+"From fog and salt, where waters flow, in blackened depths small shadows grow.","|cFFFFD200Vendor: Talebound|r",5171,274252,1315373,5788266,0,16386,2,6,7,0
 "Small in nature, plenty of strength.","|cFFFFD200Trading Post|r",5184,276413,1320926,8415179,7,16466,11,6,7,0
 "Once sat alone in a boggy marsh. Now eager to join on your adventures.","|cFFFFD200Trading Post|r",5185,276417,1320950,8415180,7,16466,11,6,7,0
 "Small in nature, mighty in spirit.","|cFFFFD200Trading Post|r",5186,276418,1320954,8415181,7,16466,11,6,7,0

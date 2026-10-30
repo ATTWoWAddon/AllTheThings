@@ -14100,11 +14100,11 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "used to award pepe decor","[DNT] Hallow's End Pepe Decor",,63700,-1,-1,0,158,0,0,1180672,38,136243,0,232661,0,0,0,0
 "Complete the Titans Lorewalking Campaign.","Lorewalking: Titans","Decor Reward: A Brief History of the Titans",63710,-1,-1,0,15552,0,5,132096,7,254113,0,232914,0,0,0,0
 "Complete the Jaina Lorewalking Campaign.","Lorewalking: Jaina","Decor Reward: Tome of the Sea",63712,-1,-1,0,15552,0,5,132096,10,2484334,0,232916,0,0,0,0
-"Complete the Coreway Advance storyline.","The Coreway Advance","Reward: TBD",63713,-1,-1,0,15547,0,10,131072,29,2000855,0,232919,0,0,0,0
+"Complete the Coreway Advance storyline.","The Coreway Advance",,63713,-1,-1,0,15547,0,10,131072,29,2000855,0,232919,0,0,0,0
 "Logged in during WoW's 22nd Anniversary.","WoW's 22nd Anniversary",,63714,-1,-1,0,15274,0,0,2048,81,133783,0,232921,0,0,0,0
 "Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","Let Me Solo Him: Kindo'jan","Reward: Loa-Blessed Wayfarer",63715,-1,-1,0,15531,0,0,14336,24,8269989,0,232931,0,0,0,0
 "Defeat Kindo'jan within his Labyrinth.","The First Hash'ey","Title: Loa-Blessed",63716,-1,-1,0,15531,0,0,14336,13,3601564,0,232998,0,0,0,0
-"Complete the Court of Night on any difficulty.","The Tale of the Court of Night","20 Bound Silver",63790,-1,-1,0,15628,0,0,131072,4,3551336,0,233311,0,0,0,0
+"Defeat Tilywth in the Tales of the Storyteller on any difficulty.","The Fairy Queen","20 Bound Silver",63760,-1,-1,0,15627,0,0,131072,9,3601533,0,233241,0,0,0,0
 "Find and open all Sturdy Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,41,4203076,0,233000,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,235189,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,235187,0,0,0,0
@@ -14115,7 +14115,6 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Enter Kindo'jan's Labyrinth for the first time.","Knock Knock",,63724,-1,-1,0,15522,0,5,131072,40,6025441,0,233092,0,0,0,0
 "Loot 10 Mislaid Treasures within Kindo'jan's Labyrinth.","Treasures Upon Treasures",,63727,-1,-1,0,15522,0,5,131200,42,7298691,0,233083,0,0,0,0
 "Loot 50 Mislaid Treasures within Kindo'jan's Labyrinth.","A Few More Can't Hurt",,63728,-1,-1,63727,15522,0,10,131200,43,7298691,0,233090,0,0,0,0
-"Defeat Mobog in the Tales of the Storyteller on any difficulty.","The Giant of Greenthistle Wood","20 Bound Silver",63729,-1,-1,0,15627,0,0,131072,3,432001,0,233043,0,0,0,0
 ,"Total Kindo'jan's Labyrinth Chambers completed",,63730,-1,-1,0,15533,0,0,1,18,136243,0,233094,0,0,0,0
 ,"Total Kindo'jan Kills",,63731,-1,-1,0,15533,0,0,1,19,136243,0,233096,0,0,0,0
 "Defeat Mobog in the Tales of the Storyteller on Veteran Difficulty","Veteran: The Giant of Greenthistle Wood","20 Bound Silver",63734,-1,-1,0,15627,0,0,131072,16,432001,0,233170,0,0,0,0
@@ -14136,7 +14135,6 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Alexandre Dozsenc in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Vampire Bishop","20 Bound Silver",63755,-1,-1,63754,15627,0,0,131072,15,3670321,0,233235,0,0,0,0
 "Defeat Alexandre Dozsenc in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Vampire Bishop","20 Bound Silver",63758,-1,-1,63755,15627,0,0,131072,27,3670321,0,233237,0,0,0,0
 "Defeat Alexandre Dozsenc in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Vampire Bishop","20 Bound Silver",63759,-1,-1,63758,15627,0,0,131072,41,3670321,0,233239,0,0,0,0
-"Defeat Tilywth in the Tales of the Storyteller on any difficulty.","The Fairy Queen","20 Bound Silver",63760,-1,-1,0,15627,0,0,131072,9,3601533,0,233241,0,0,0,0
 "Defeat Tilywth in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Fairy Queen","20 Bound Silver",63761,-1,-1,63760,15627,0,0,131072,21,3601533,0,233243,0,0,0,0
 "Defeat Tilywth in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Fairy Queen","20 Bound Silver",63762,-1,-1,63761,15627,0,0,131072,34,3601533,0,233245,0,0,0,0
 "Defeat Tilywth in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Fairy Queen","20 Bound Silver",63763,-1,-1,63762,15627,0,0,131072,47,3601533,0,233247,0,0,0,0
@@ -14152,7 +14150,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Defeat Chathoa in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Herald from Beyond","20 Bound Silver",63773,-1,-1,63772,15627,0,0,131072,20,3012070,0,233267,0,0,0,0
 "Defeat Chathoa in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Herald from Beyond","20 Bound Silver",63774,-1,-1,63773,15627,0,0,131072,33,3012070,0,233269,0,0,0,0
 "Defeat Chathoa in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Herald from Beyond","20 Bound Silver",63775,-1,-1,63774,15627,0,0,131072,46,3012070,0,233271,0,0,0,0
-"Face the Final Confrontation in the Tales of the Storyteller on any difficulty.","The Final Confrontation","20 Bound Silver",63776,-1,-1,0,15627,0,0,131072,10,7815705,0,233273,0,0,0,0
+"Face the Final Confrontation in the Tales of the Storyteller on any difficulty.","The Final Confrontation","Warband Campsite: The Fate of Quillgrave",63776,-1,-1,0,15627,0,0,393216,10,7815705,0,233273,0,0,0,0
 "Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty.","Veteran: The Final Confrontation","20 Bound Silver",63777,-1,-1,63776,15627,0,0,131072,23,7815705,0,233275,0,0,0,0
 "Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty.","Heroic: The Final Confrontation","20 Bound Silver",63778,-1,-1,63777,15627,0,0,131072,36,7815705,0,233277,0,0,0,0
 "Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty.","Mythic: The Final Confrontation","20 Bound Silver",63779,-1,-1,63778,15627,0,0,131072,49,7815705,0,233279,0,0,0,0
@@ -14165,6 +14163,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete the tale of Darkhaven on Veteran difficulty.","Veteran: The Tale of Darkhaven","20 Bound Silver",63787,-1,-1,63786,15628,0,0,131072,6,3551339,0,233300,0,0,0,0
 "Complete the tale of Darkhaven on Heroic difficulty.","Heroic: The Tale of Darkhaven","20 Bound Silver",63788,-1,-1,63787,15628,0,0,131072,11,3551339,0,233303,0,0,0,0
 "Complete the tale of Darkhaven on Mythic difficulty.","Mythic: The Tale of Darkhaven","20 Bound Silver",63789,-1,-1,63788,15628,0,0,131072,16,3551339,0,233306,0,0,0,0
+"Complete the Court of Night on any difficulty.","The Tale of the Court of Night","20 Bound Silver",63790,-1,-1,0,15628,0,0,131072,4,3551336,0,233311,0,0,0,0
 "Complete the tale of the Court of Night on Veteran difficulty.","Veteran: The Tale of the Court of Night","20 Bound Silver",63791,-1,-1,63790,15628,0,0,131072,9,3551336,0,233314,0,0,0,0
 "Complete the tale of the Court of Night on Heroic difficulty.","Heroic: The Tale of the Court of Night","20 Bound Silver",63792,-1,-1,63791,15628,0,0,131072,14,3551336,0,233319,0,0,0,0
 "Complete the tale of the Court of Night on Mythic difficulty.","Mythic: The Tale of the Court of Night","20 Bound Silver",63793,-1,-1,63792,15628,0,0,131072,18,3551336,0,233322,0,0,0,0
@@ -14188,11 +14187,11 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Face the Final Confrontation in the Tales of the Storyteller on Veteran difficulty as an Inquisitor.","Veteran: The Inquisitor's Final Confrontation","20 Bound Silver",63811,-1,-1,63810,15627,0,0,131072,26,5681681,0,233417,0,0,0,0
 "Face the Final Confrontation in the Tales of the Storyteller on Heroic difficulty as an Inquisitor.","Heroic: The Inquisitor's Final Confrontation","20 Bound Silver",63812,-1,-1,63811,15627,0,0,131072,39,5681681,0,233419,0,0,0,0
 "Face the Final Confrontation in the Tales of the Storyteller on Mythic difficulty as an Inquisitor.","Mythic: The Inquisitor's Final Confrontation","Title: of the Sacred Flame",63813,-1,-1,63812,15627,0,0,131072,52,5681681,0,233421,0,0,0,0
-"Earn 1000 Ducats through the Storyteller's Tales.","Traveler's Coin","20 Bound Silver",63814,-1,-1,0,15625,0,0,131072,1,6255014,0,233434,0,0,0,0
-"Earn 2000 Ducats through the Storyteller's Tales.","Traveler's Purse","20 Bound Silver",63815,-1,-1,63814,15625,0,0,131072,2,5931417,0,233436,0,0,0,0
-"Earn 3000 Ducats through the Storyteller's Tales.","Traveler's Cache","20 Bound Silver",63816,-1,-1,63815,15625,0,0,131072,3,4208810,0,233438,0,0,0,0
-"Earn 4000 Ducats through the Storyteller's Tales.","Traveler's Trove","20 Bound Silver",63817,-1,-1,63816,15625,0,0,131072,4,901746,0,233440,0,0,0,0
-"Earn 5000 Ducats through the Storyteller's Tales.","Traveler's Fortune","20 Bound Silver",63818,-1,-1,63817,15625,0,0,131072,5,4203076,0,233442,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Coin","20 Bound Silver",63814,-1,-1,0,15625,0,0,131072,1,6255014,0,233434,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Purse","20 Bound Silver",63815,-1,-1,63814,15625,0,0,131072,2,5931417,0,233436,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Cache","20 Bound Silver",63816,-1,-1,63815,15625,0,0,131072,3,4208810,0,233438,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Trove","20 Bound Silver",63817,-1,-1,63816,15625,0,0,131072,4,901746,0,233440,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Fortune","20 Bound Silver",63818,-1,-1,63817,15625,0,0,131072,5,4203076,0,233442,0,0,0,0
 "Complete a puzzle in the Tales of the Storyteller.","A Puzzling Tale","20 Bound Silver",63819,-1,-1,0,15625,0,0,131072,11,5948083,0,233444,0,0,0,0
 "Complete every puzzle in the Tales of the Storyteller.","The Tale of the Puzzle Master","20 Bound Silver",63820,-1,-1,0,15625,0,0,131072,16,4094821,0,233445,0,0,0,0
 "Unlock every Slayer improvement at the Scribe.","The Slayer and the Scribe","20 Bound Silver",63821,-1,-1,0,15625,0,0,131072,20,7684216,0,233446,0,0,0,0
@@ -14244,11 +14243,44 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Complete the quest Seeking Knowledge: The Power of Stories","The Power of Stories",,64290,-1,-1,0,15610,0,0,1179648,54,236855,0,236100,0,0,0,0
 "Complete the quest Seeking Knowledge: Core Logic","Core Logic",,64291,-1,-1,0,15610,0,0,1179648,55,236855,0,236102,0,0,0,0
 "Join in with the neighborhood carolers by successfully ringing your bells.","Bells Will Be Ringing",,64367,-1,-1,0,156,0,10,131072,25,6012000,0,236741,0,0,0,0
-"Return Stolen Festive Presents to the neighborhood tree during the tree defense activitiy.","That's Not For You",,64368,-1,-1,0,156,0,10,131072,27,134140,0,236743,0,0,0,0
-"Punt 100 tree attackers duing the neighborhood tree defense activity.","Sockin' Around the Winter Veil Tree",,64369,-1,-1,0,156,0,10,131072,28,6712972,0,236745,0,0,0,0
+"Return Stolen Festive Presents to the neighborhood tree during the tree defense activity.","That's Not For You",,64368,-1,-1,0,156,0,10,131072,27,134140,0,236743,0,0,0,0
+"Punt 100 tree attackers during the neighborhood tree defense activity.","Sockin' Around the Winter Veil Tree",,64369,-1,-1,0,156,0,10,131072,28,6712972,0,236745,0,0,0,0
 "Get pummeled 10 times by a Rotten Pummeler during the neighborhood tree defense activity.","Season's Beatings",,64370,-1,-1,0,156,0,10,131072,29,574568,0,236747,0,0,0,0
 "Deliver 12 Candy Cane gifts within the housing neighborhoods.","Candy Cane Brigade",,64371,-1,-1,0,156,0,10,131072,26,6127641,0,236749,0,0,0,0
 "Complete the neighborhood tree defense activity.",Tree-fense,,64372,-1,-1,0,156,0,10,131072,30,7539550,0,236751,0,0,0,0
 "[DNT] Potatoad Egg Secret","[DNT] Potatoad Egg Secret",,64373,-1,-1,0,15541,0,0,1179652,40,6100921,251903,236760,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy)","Reward: Loa-Blessed Wayfarer",64380,-1,-1,0,15531,0,0,1179652,25,8269989,283363,236817,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)","Reward: Loa-Blessed Wayfarer",64384,-1,-1,0,15531,0,0,1179652,26,8269989,280820,236819,0,0,0,0
+"Visit the Traveling Raven near the Trading Post in Silvermoon City.","Tapping at the Trader's Door",,64416,-1,-1,0,15631,0,0,0,62,1733737,0,236926,0,0,0,0
+"Complete the Talebound tutorial, enter your first Storyteller's Tale, and defeat a boss.","Delving into a Tale","Quest: Seeking Knowledge: Memories and Tales",64417,-1,-1,0,15631,0,0,4,63,458721,0,0,0,0,0,0
+"Complete every puzzle in the Tales of the Storyteller.","The Tale of the Puzzle Master Rewarded","Traveling Raven: Voidlight Marl Crystal",64418,-1,-1,0,15631,0,0,4,69,4094821,0,237098,0,0,0,0
+"Complete every puzzle in the Tale of Darkhaven.","The Sanguine Puzzlemaster's Reward","Traveling Raven: Darkhaven Wisdom",64419,-1,-1,0,15631,0,0,4,65,3853936,0,237077,0,0,0,0
+"Complete every puzzle in the Tale of Greenthistle Woods.","The Hexed Puzzlemaster's Reward","Traveling Raven: Greenthistle Wisdom",64420,-1,-1,0,15631,0,0,4,66,5224623,0,237175,0,0,0,0
+"Complete every puzzle in the Tale of Greywake's Expedition.","The Eldrich Puzzlemaster's Reward","Traveling Raven: Greywake's Wisdom",64421,-1,-1,0,15631,0,0,4,67,6011928,0,237083,0,0,0,0
+"Complete every puzzle in the Tale of the Court of Night.","The Fae Puzzlemaster's Reward","Traveling Raven: Court of Night Wisdom",64422,-1,-1,0,15631,0,0,4,68,3536173,0,237091,0,0,0,0
+"Complete any Talebound Story on Normal Difficulty or higher.","It's Just a Normal Tale","Traveling Raven: Cache of Champion Treasures",64423,-1,-1,0,15631,0,0,4,70,3716928,0,237103,0,0,0,0
+"Complete any Talebound Story on Veteran Difficulty.","Starting Down a Veteran's Tale","Traveling Raven: Cache of Heroic Treasures",64424,-1,-1,0,15631,0,0,4,71,3551339,0,237108,0,0,0,0
+"Complete any Talebound Story on Heroic Difficulty.","Stepping up to a Heroic Tale","Traveling Raven: Cache of Heroic Treasures",64425,-1,-1,0,15631,0,0,4,72,4067364,0,237113,0,0,0,0
+"Complete any Talebound Story on Mythic Difficulty.","Confronting a Mythic Tale","Traveling Raven: Cache of Mythic Treasures",64426,-1,-1,0,15631,0,0,4,73,2011138,0,237118,0,0,0,0
+"Complete the Final Confrontation in Talebound on Normal Difficulty or higher.","The Final Confrontation's Conclusion","Traveling Raven: Venomstone Cache",64427,-1,-1,0,15631,0,0,4,75,7815705,0,237123,0,0,0,0
+"Complete the Final Confrontation in Talebound on Veteran Difficulty.","Veteran: The Final Confrontation's Conclusion","Traveling Raven: Venomstone Cache",64428,-1,-1,0,15631,0,0,4,76,7815705,0,237125,0,0,0,0
+"Complete the Final Confrontation in Talebound on Heroic Difficulty.","Heroic: The Final Confrontation's Conclusion","Traveling Raven: Venomstone Cache",64429,-1,-1,0,15631,0,0,4,77,7815705,0,237129,0,0,0,0
+"Complete the Final Confrontation in Talebound on Mythic Difficulty.","Mythic: The Final Confrontation's Conclusion","Traveling Raven: Venomstone Cache",64430,-1,-1,0,15631,0,0,4,78,7815705,0,237131,0,0,0,0
+"Complete the Final Confrontation in Talebound with the Slayer, the Witch, and the Inquisitor on Normal Difficulty.","The Comprehensive Final Confrontation","Traveling Raven: Cache of Heroic Treasures",64431,-1,-1,0,15631,0,0,4,79,7815705,0,237133,0,0,0,0
+"Complete the Final Confrontation in Talebound with the Slayer, the Witch, and the Inquisitor on Veteran Difficulty.","Veteran: The Comprehensive Final Confrontation","Traveling Raven: Cache of Heroic Treasures",64432,-1,-1,0,15631,0,0,4,80,4663970,0,237137,0,0,0,0
+"Complete the Final Confrontation in Talebound with the Slayer, the Witch, and the Inquisitor on Heroic Difficulty.","Heroic: The Comprehensive Final Confrontation","Traveling Raven: Cache of Heroic Treasures",64433,-1,-1,0,15631,0,0,4,81,2440573,0,237141,0,0,0,0
+"Complete the Final Confrontation in Talebound with the Slayer, the Witch, and the Inquisitor on Mythic Difficulty.","Mythic: The Comprehensive Final Confrontation","Traveling Raven: Cache of Mythic Treasures",64434,-1,-1,0,15631,0,0,4,82,5681681,0,237145,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Coin Exchanged","Traveling Raven: Champion Mistcrest Pouch",64435,-1,-1,0,15631,0,0,4,84,6255014,0,237149,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Purse Exchanged","Traveling Raven: Hero Mistcrest Pouch",64436,-1,-1,0,15631,0,0,4,85,5931417,0,237151,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Cache Exchanged","Traveling Raven: Hero Mistcrest Pouch",64437,-1,-1,0,15631,0,0,4,86,4208810,0,237153,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Trove Exchanged","Traveling Raven: Myth Mistcrest Pouch",64438,-1,-1,0,15631,0,0,4,87,901746,0,237155,0,0,0,0
+"Earn Ducats through the Storyteller's Tales.","Traveler's Fortune Exchanged","Traveling Raven: Myth Mistcrest Pouch",64439,-1,-1,0,15631,0,0,4,88,4203076,0,237157,0,0,0,0
+"Enable every relic at the Antiquarian.","The Antiquarian's Chapter Complete","Traveling Raven: Voidlight Marl Crystal",64440,-1,-1,0,15631,0,0,4,89,1379240,0,0,0,0,0,0
+"Fully upgrade your armor at the Outfitter.","The Outfitter's Story Complete","Traveling Raven: Outfitter's Crate",64441,-1,-1,0,15631,0,0,4,90,7549368,0,237159,0,0,0,0
+"Unlock every formula at the Arcanist.","The Arcanist's Account Complete","Traveling Raven: Packed Alchemy Crate",64442,-1,-1,0,15631,0,0,4,91,4624376,0,237160,0,0,0,0
+"Unlock every Inquisitor improvement at the Scribe.","The Inquisitor and the Scribe Complete","Traveling Raven: Nebulous Voidcache",64443,-1,-1,0,15631,0,0,4,94,5947993,0,237163,0,0,0,0
+"Unlock every Slayer improvement at the Scribe.","The Slayer and the Scribe Complete","Traveling Raven: Nebulous Voidcache",64444,-1,-1,0,15631,0,0,4,92,7684216,0,237161,0,0,0,0
+"Unlock every Witch improvement at the Scribe.","The Witch and the Scribe Complete","Traveling Raven: Nebulous Voidcache",64445,-1,-1,0,15631,0,0,4,93,2101972,0,237162,0,0,0,0
+"Complete a puzzle in the Tales of the Storyteller.","A Puzzling Tale Reward","Traveling Raven: Voidlight Marl Prism",64446,-1,-1,0,15631,0,0,4,64,5948083,0,236932,0,0,0,0
+"Find and hear all the stories throughout the Storyteller's Tales.","Stories Shared","Traveling Raven: Hexed Tiny Tome",64464,-1,-1,0,15631,0,0,131076,74,7815705,0,237164,0,0,0,0
+"Complete all Storyteller Tales and the Final Confrontation on any Difficulty.","The Tale Complete","Traveling Raven: Wood-Cursed Hearthstone",64465,-1,-1,0,15631,0,0,131076,83,4497561,0,237169,0,0,0,0

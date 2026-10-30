@@ -4204,7 +4204,7 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Banshee's Chilling Collection",4554,0,90926,258,326,13967,0,1,10,110107,10,0
 "Forsaken's Grotesque Collection",4555,0,90927,258,326,13968,4554,1,10,110107,10,0
 "Wailing Banshee's Collection",4556,0,90928,258,326,14015,4554,1,10,110107,10,0
-"Banshee's Sickly Collection",4557,0,90929,258,326,14122,4554,1,10,110107,10,0
+"Faith-Cursed Collection",4557,0,90929,258,326,14122,4554,1,10,110107,10,0
 "Stillwater Fisher Attire",4558,0,90930,258,0,0,0,1,10,110107,10,0
 "Golden Fleet Garb",4559,0,90939,256,327,13965,0,1,7,80000,10,0
 "Zocalo Merchant's Wear",4560,0,90940,256,327,13967,4559,1,7,80000,10,0
@@ -4940,7 +4940,7 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Gilneas Loyalist Streetwear",5653,0,95149,258,386,14131,0,1,11,120005,10,0
 "Emberstone Loyalist Streetware",5654,0,95150,258,386,13968,5653,1,11,120005,10,0
 "Pyrewood Rebel Streetwear",5655,0,95151,258,386,14130,5653,1,11,120005,10,0
-"Ambermill Rebel Streetware",5656,0,95152,258,386,14015,5653,1,11,120005,10,0
+"Ambermill Traveler Attire",5656,0,95152,258,386,14015,5653,1,11,120005,10,0
 "Blue Sunwalker Guard",5657,0,95255,258,387,13967,0,1,11,120005,10,0
 "Duskrunner's Painted Battle Garb",5658,0,95274,258,387,14123,5657,1,11,120005,10,0
 "Sunbringer's Painted Battle Garb",5659,0,95280,258,387,14130,5657,1,11,120005,10,0
@@ -5200,6 +5200,7 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Outfitter's Oaken Garments",5944,0,98571,67,0,0,0,1,10,0,1640,0
 "Outfitter's Blush Garments",5945,0,98572,67,0,0,0,1,10,0,1640,0
 "Outfitter's Maroon Garments",5946,0,98573,67,0,0,0,1,10,0,1640,0
+"Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
 "Wood Haunter's Guise of the Wight",5948,0,98727,258,413,14145,0,1,11,120105,4000,0
 "Ice-Walker's Guise of the Wight",5949,0,98728,258,413,13967,5948,1,11,120105,4000,0
 "Embered Guise of the Wight",5950,0,98729,258,413,14097,5948,1,11,120105,4000,0
@@ -5207,13 +5208,12 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Traveler's Velvet Commonwear",6159,0,99110,67,0,0,0,1,10,0,1640,0
 "Traveler's Charcoal Commonwear",6160,0,99109,67,0,0,0,1,10,0,1640,0
 "Villager's Linen Commonwear",6161,0,99112,67,0,0,0,1,10,0,1640,0
-"Villager's Linen Commonwear",6162,0,99111,67,0,0,0,1,10,0,1640,0
+"Villager's Woolen Commonwear",6162,0,99111,67,0,0,0,1,10,0,1640,0
 "Traveler's Colorful Mantle Collection",6163,0,99138,67,0,0,0,1,10,0,1640,0
 "Cursed Wood-Witch's Mask Gallery",6164,0,99139,67,0,0,0,1,11,0,1640,0
 "Noble's Literary Caps",6165,0,99140,67,0,0,0,1,11,0,1640,0
 "Wastewander Hunter's Kit",6269,0,99574,258,232,14015,3306,1,11,120107,10,0
 "Red-and-Greench Sweatsuit",6276,0,99697,2,0,0,0,1,11,120107,10,0
-"Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
 "Varian's Azure Dragon Attire",5705,0,96144,258,0,14130,0,1,11,120007,10,0
 "Veteran Adventurer's Outdoor Wear",5914,0,97984,258,0,13968,0,1,11,120100,10,0
 "Shen'dorei Magister's Garb",5700,0,95977,258,393,13967,0,1,11,120100,1000,0
