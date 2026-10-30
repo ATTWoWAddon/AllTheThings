@@ -3013,10 +3013,10 @@ p(4956,{b=1,itemID=262342,npcID=256237,providers={{"o",584508},{"o",584515}},spe
 p(4954,{b=1,itemID=262394,npcID=256276,providers={{"o",584508},{"o",584509},{"o",584512},{"o",584515},{"o",584518}},spellID=1268698})}),
 flt(55),
 flt(50,{
-i(264669,{f=55,spellID=1272321}),
+i(264669,{f=55,providers={{"o",584515}},spellID=1272321}),
 i(264670,{f=55,spellID=1272350}),
 i(260913,{f=55,spellID=1272710}),
-i(260924,{f=55,spellID=1272713}),
+i(260924,{f=55,providers={{"o",584515}},spellID=1272713}),
 i(262389,{f=55,spellID=1272711}),
 i(254250,{lvl=80}),
 i(257387,{lvl=80}),
@@ -3109,6 +3109,7 @@ o(584511,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584509,{VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(584508,{VerifyLoot={"armor","weapon","miscellaneous"},g={
 i(254869,{b=1,f=55,spellID=1258805}),
+p(4953,{b=1,itemID=262390,npcID=256264,spellID=1268686}),
 s(303844,265366,{f=21})}}),
 o(581922,{providers={{"i",252415},{"i",265714}},VerifyLoot={"armor","weapon","miscellaneous"}}),
 o(506498),
@@ -3793,6 +3794,9 @@ q(98951,{coords={
 i(285065)}}),
 q(98963,{coords={
 [2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98951},g={
+i(285065)}}),
+q(98962,{coords={
+[2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98963},g={
 i(285065)}}),
 q(97241,{coords={
 [2647]={{77.9,62.7},{78,51.4},{79.7,55.2},{82.9,65.6},{84.3,54.1}}},providers={{"o",649924},{"o",649937},{"o",649938},{"o",649939},{"o",649940}}}),
