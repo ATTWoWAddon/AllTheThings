@@ -429,7 +429,10 @@ app:RegisterDataStyleExporter("Raw", {
 	-- TODO: if not all items are loaded the .name can be empty, perhaps add a full scan of .name then export once all return??
 	beforeData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."{"..(data.name and (" -- "..data.name) or "") end end,
 	afterData = function(data, depth) if data and data.key ~= "strKey" then return string.rep("\t", depth>0 and depth-1 or 0).."}," end end,
-	beforeExport = function(data) return "{ -- Raw Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	beforeExport = function(data)
+		return "{ -- Raw Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "")
+			.. "\n-- " .. table.concat(app.GetClientInformationLines(), "\n-- ");
+	end,
 	afterExport = function(data) return "} -- End Raw Data" end
 })
 
@@ -612,7 +615,10 @@ app:RegisterDataStyleExporter("Readable", {
 	beforeData = ReadableBeforeData,
 	afterData = ReadableAfterData,
 	depthShift = ReadableDepthShift,
-	beforeExport = function(data) return "{ -- Readable Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "") end,
+	beforeExport = function(data)
+		return "{ -- Readable Data from "..(data and (data.name or (data.window and data.window.Suffix)) or "")
+			.. "\n-- " .. table.concat(app.GetClientInformationLines(), "\n-- ");
+	end,
 	afterExport = function(data) return "} -- End Readable Data" end,
 })
 
