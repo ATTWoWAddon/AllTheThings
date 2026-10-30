@@ -16,7 +16,6 @@ assignRootCategoryHeader(30, ROOTS.Holidays, HOLIDAYS, {
 	SortType = "EventStart",
 });
 assignRootCategoryHeader(35, ROOTS.ExpansionFeatures, EXPANSION_FEATURES);
-assignRootCategoryHeader(100, ROOTS.Talebound, TALEBOUND);
 
 -----------------------------------------
 -- L I M I T E D   C A T E G O R I E S --

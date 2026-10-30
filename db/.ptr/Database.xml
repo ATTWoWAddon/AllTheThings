@@ -19,7 +19,6 @@
 	<Script file="Categories/PVP.lua"/>
 	<Script file="Categories/Secrets.lua"/>
 	<Script file="Categories/Sourceless.lua"/>
-	<Script file="Categories/Talebound.lua"/>
 	<Script file="Categories/TradingPost.lua"/>
 	<Script file="Categories/Unsorted.lua"/>
 	<Script file="Categories/WorldDrops.lua"/>

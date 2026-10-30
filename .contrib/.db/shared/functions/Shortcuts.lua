@@ -3319,7 +3319,6 @@ ROOTS = setmetatable({
 	SeasonOfDiscovery = "SeasonOfDiscovery",
 	Secrets = "Secrets",
 	Sourceless = "Sourceless",
-	Talebound = "Talebound",
 	TradingPost = "TradingPost",
 	Uncollectible = "Uncollectible",
 	Unsorted = "Unsorted",
