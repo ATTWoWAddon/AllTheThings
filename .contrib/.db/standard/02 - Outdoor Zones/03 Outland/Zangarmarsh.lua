@@ -500,12 +500,16 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					coord = { 80.2, 65.2, ZANGARMARSH },
 					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
-					maps = { AZSHARA },
+					maps = {
+						AUCHINDOUN_SETHEKK_HALLS,
+						AZSHARA,
+					},
 					classes = { DRUID },
 					lvl = 70,
 					groups = {
 						objective(1, {	-- 0/1 Southfury Moonstone
 							providers = {
+								{ "n",  23002 },	-- Rizzle Sprysprocket
 								{ "i",  32364 },	-- Southfury Moonstone
 								{ "o", 185566 },	-- Southfury Moonstone
 							},
