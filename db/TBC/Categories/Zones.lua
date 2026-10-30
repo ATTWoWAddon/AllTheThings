@@ -22871,8 +22871,8 @@ s(141830,31484,{b=1,f=6,loc=45,q=2})}}),
 q(10975,{coords={
 [1949]={{52.8,15}}},cost={{"i",29460,5}},lvl=70,qgs={22919},repeatable=1,sourceQuests={10974},g={
 i(29750,{q=2})}}),
-q(10993,{c={11},coords={
-[1949]={{61.5,38.3}}},cost={{"i",32359,1}},lvl=70,maps={1946},phase=18,qgs={22924},rwp=40001,sourceQuests={10992}}),
+q(10993,{awp=20100,c={11},coords={
+[1949]={{61.5,38.3}}},lvl=70,maps={258,1946},phase=18,qgs={22924},qis={32359},rwp=40001,sourceQuests={10992}}),
 q(10709,{coords={
 [1949]={{75.3,60.9}}},lvl=65,qgs={22004},r=1,sourceQuests={10614}}),
 q(10657,{coords={
@@ -22994,19 +22994,15 @@ qo(1,{providers={{"n",21956}}}),
 s(141770,31424,{b=1,f=27,q=2}),
 s(141768,31422,{b=1,f=20,q=2}),
 s(141769,31423,{b=1,f=21,q=2})}}),
+q(10990,{awp=20100,c={11},coords={
+[1949]={{61.5,38.3}}},lvl=70,maps={258,1952},phase=18,qgs={22924},qis={32355,32657},rwp=40001,sourceQuests={10988},g={
+qo(1,{crs={22993},providers={{"i",32355},{"o",185547}}})}}),
 q(10455,{coords={
 [1949]={{36.2,67.2}}},lvl=65,qgs={21066},r=2,sourceQuests={9794},g={
 qo(1,{providers={{"n",21022}}})}}),
 q(10486,{coords={
 [1949]={{52.4,57.9}}},lvl=65,qgs={21117},r=1,sourceQuests={9795},g={
 qo(1,{providers={{"n",21033}}})}}),
-q(10991,{c={11},coords={
-[1949]={{61.5,38.3}}},cost={{"i",32357,1},{"i",32657,1}},lvl=70,maps={1952},phase=18,qgs={22924},rwp=40001,sourceQuests={10990},g={
-qo(1,{crs={22994},providers={{"i",32357}}})}}),
-q(10992,{c={11},coords={
-[1949]={{61.5,38.3}}},cost={{"i",32356,1},{"i",32657,1}},lvl=70,maps={1952},phase=18,qgs={22924},rwp=40001,sourceQuests={10991},g={
-qo(1,{providers={{"n",21033}}}),
-i(32481,{b=1,f=53,q=3})}}),
 q(10912,{coords={
 [1949]={{63.5,35.5}}},description="Quest Giver location depends on where you use |cFFFFFFFFDruid Signal|r which was given to you when accepting the quest |cFFFFD700Death's Door|r (10910).",lvl=65,qgs={22423},sourceQuests={10911},g={
 qo(1,{providers={{"i",31809},{"n",19747}}}),
@@ -25249,8 +25245,6 @@ q(10082,{coords={
 qo(1,{providers={{"n",18043}}})}}),
 q(9913,{coords={
 [1951]={{51,69.8},{51.9,34.8}}},isBreadcrumb=1,nextQuests={9900},qgs={18335}}),
-q(10990,{c={11},coords={
-[1949]={{61.5,38.3}}},cost={{"i",32355,1},{"i",32657,1}},lvl=70,phase=18,qgs={22924},rwp=40001,sourceQuests={10988}}),
 q(9861,{crs={17158,17159,17160},qss={24504}}),
 q(9888,{coords={
 [1951]={{55.6,37.6}}},description="Completing this quest will grant Neutral with The Mag'har.",qgs={18106},r=1,sourceQuests={9797}}),
@@ -25273,7 +25267,7 @@ s(136127,25780,{b=1,f=3,q=2}),
 i(25779,{b=1,f=52,q=2})}}),
 q(10988,{awp=20100,c={11},coords={
 [1951]={{20.6,35.7}}},lvl=70,maps={258,1949,1952},phase=18,qgs={22981},qis={32313,32315},rwp=40001,sourceQuests={10987},g={
-qo(1,{providers={{"i",32313},{"i",32315},{"o",185541}}})}}),
+qo(1,{providers={{"i",32313},{"i",32315},{"n",22972},{"o",185541}}})}}),
 q(9962,{coords={
 [1951]={{42.8,20.7}}},qgs={18471},g={
 qo(1,{providers={{"n",18398}}})}}),
@@ -25350,7 +25344,7 @@ s(138521,28175,{b=1,f=7,loc=46,q=3})}}),
 q(10175,{qgs={18141},r=1,rwp=40001,sourceQuests={10172}}),
 q(10987,{awp=20100,c={11},coords={
 [1951]={{20.6,35.7}}},lvl=70,maps={258},phase=18,qgs={22981},qis={32320,32321},rwp=40001,sourceQuests={10986},g={
-qo(1,{crs={22979},providers={{"i",32320}}})}}),
+qo(1,{providers={{"i",32320},{"i",32321},{"n",22979}}})}}),
 q(10081,{coords={
 [1951]={{56.6,34.2}}},qgs={18141},r=1,sourceQuests={10045}}),
 q(9863,{coords={
@@ -27589,6 +27583,8 @@ q(10847,{coords={
 [1955]={{52.6,21}}},qgs={22292},sourceQuests={10862,10863,10908},g={
 qo(1,{providers={{"i",25638},{"o",185200}}}),
 qo(2,{providers={{"i",25642},{"o",185201}}})}}),
+q(10991,{awp=20100,c={11},lvl=70,maps={258},phase=18,qgs={23338},qis={32357,32657},rwp=40001,sourceQuests={10990},g={
+qo(1,{crs={22994},providers={{"i",32357},{"o",185553}}})}}),
 q(10915,{coords={
 [1952]={{31,76.1}}},qgs={22446},sourceQuests={10914},g={
 s(142144,31798,{b=1,f=4,loc=42,q=2}),
@@ -27615,6 +27611,9 @@ qo(1,{providers={{"n",18583}}})}}),
 q(10003,{coords={
 [1952]={{63.4,42.7}}},qgs={18566},r=1,sourceQuests={10000},g={
 qo(1,{providers={{"n",18583}}})}}),
+q(10992,{awp=20100,c={11},lvl=70,maps={258,1949},phase=18,qgs={23338},qis={32356,32657},rwp=40001,sourceQuests={10991},g={
+qo(1,{crs={22992},providers={{"i",32356},{"o",185551}}}),
+i(32481,{b=1,f=53,q=3})}}),
 q(10896,{coords={
 [1952]={{37.9,51.7}}},qgs={22420},g={
 qo(1,{providers={{"n",22419}}})}}),
@@ -28080,9 +28079,9 @@ q(9814,{coords={
 qo(1,{coords={
 [1946]={{28.5,52.5},{30.8,44.7}}},providers={{"i",24468},{"o",182095}}})}}),
 q(10994,{awp=20100,c={11},coords={
-[1946]={{80.2,65.2}}},lvl=70,maps={1447},phase=18,qgs={22832},rwp=40001,sourceQuests={10993},g={
+[1946]={{80.2,65.2}}},lvl=70,maps={258,1447},phase=18,qgs={22832},rwp=40001,sourceQuests={10993},g={
 qo(1,{coords={
-[1447]={{14.2,47.8}}},description="Jump into the water and catch Rizzle Sprysprocket by using aquatic form to race down the river avoiding the depth charges she leaves behind.",providers={{"i",32364},{"o",185566}}})}}),
+[1447]={{14.2,47.8}}},description="Jump into the water and catch Rizzle Sprysprocket by using aquatic form to race down the river avoiding the depth charges she leaves behind.",providers={{"i",32364},{"n",23002},{"o",185566}}})}}),
 q(9766,{cost={{"i",24368,1}},lvl=67,maps={263},maxReputation={942,42000},qgs={17841},repeatable=1,rwp=40300,sourceQuests={9765}}),
 q(10115,{coords={
 [1946]={{41.8,27}}},lvl=62,qgs={18008},r=2,g={

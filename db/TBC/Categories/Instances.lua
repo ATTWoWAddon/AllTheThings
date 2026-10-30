@@ -3295,7 +3295,7 @@ s(132606,22207,{b=1,f=6,loc=45,lvl=55,phase=15,q=3}),
 i(11934,{b=1,f=52,lvl=55,q=3}),
 i(11815,{b=1,f=53,lvl=53,q=3}),
 i(12033,{q=1})}})})}}),
-inst(229,{lore="The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",lvl=50,mapID=250,maps={250,251,252,253,254,255},savedInstanceID=229,zoneTextAreaID=1583,g={
+inst(229,{lore="The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",lvl=50,mapID=250,maps={251,252,253,254,255},savedInstanceID=229,zoneTextAreaID=1583,g={
 h(-45,{
 q(6601,{coords={
 [1445]={{56.8,87.4}}},lvl=55,maps={1443},qgs={10321},qis={16888},r=1,rwp=40003,sourceQuests={6585}}),
