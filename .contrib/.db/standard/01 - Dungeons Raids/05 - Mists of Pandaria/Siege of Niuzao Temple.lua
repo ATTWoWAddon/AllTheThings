@@ -14,8 +14,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 		groups = {
 			n(QUESTS, {
 				q(31365, {	-- Somewhere Inside
-					provider = { "n", 64517 },	-- Shado-Master Chum Kiu
-					coord = { 58.0, 23.0, 457 },
+					qg = 64517,	-- Shado-Master Chum Kiu
+					coord = { 58.0, 23.0, SIEGE_OF_NIUZAO_TEMPLE },
 					groups = {
 						objective(1, {	-- 0/12 Shado-Pan Prisoner freed
 							provider = { "n", 64520 },	-- Shado-Pan Prisoner
@@ -23,8 +23,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31366, {	-- Take Down the Wing Leader
-					provider = { "n", 64517 },	-- Shado-Master Chum Kiu
-					coord = { 58.0, 23.0, 457 },
+					qg = 64517,	-- Shado-Master Chum Kiu
+					coord = { 58.0, 23.0, SIEGE_OF_NIUZAO_TEMPLE },
 					groups = {
 						objective(1, {	-- 0/1 Wing Leader Ner'onok slain
 							provider = { "n", 62205 },	-- Wing Leader Ner'onok
@@ -41,9 +41,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				e(727, {	-- Wing Leader Ner'onok
 					crs = { 62205 },	-- Wing Leader Ner'onok
 					groups = {
-						ach(10011, {	-- Siege of Niuzao Temple
-							timeline = { ADDED_6_2_0 },
-						}),
+						ach(10011, { timeline = { ADDED_6_2_0 } }),	-- Siege of Niuzao Temple
 					},
 				}),
 			}),

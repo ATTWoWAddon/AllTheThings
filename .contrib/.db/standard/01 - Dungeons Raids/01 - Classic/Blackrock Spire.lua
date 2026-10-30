@@ -61,7 +61,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 	-- #endif
 	maps = {
 		BLACKROCK_SPIRE,
-		LBRS_TAZZALOR,
 		LBRS_SKITTERWEB_TUNNELS,
 		LBRS_HORDEMAR_CITY,
 		LBRS_HALL_OF_BLACKHAND,
@@ -1763,8 +1762,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
 				coords = {
-					{ 53.0, 67.0, LBRS_TAZZALOR },
-					{ 49.0, 55.0, LBRS_TAZZALOR },
+					{ 53.0, 67.0, BLACKROCK_SPIRE },
+					{ 49.0, 55.0, BLACKROCK_SPIRE },
 				},
 				description = "This is a Rare Creature and, as such, is not always present.",
 				groups = {

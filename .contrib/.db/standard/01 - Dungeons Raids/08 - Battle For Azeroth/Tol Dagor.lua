@@ -4,7 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 	inst(1002, {	-- Tol Dagor
-		coord = { 38.8, 70.1, 1169 },
+		coord = { 38.8, 70.1, TOL_DAGOR },
 		maps = {
 			974,	-- Tol Dagor
 			975,	-- The Drain
@@ -159,9 +159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					}),
 					n(135448, {	-- Gol'than the Malodorous
 						provider = { "i", 158698 },	-- Discarded Cell Key
-						groups = {
-							i(160704),	-- Filthy Slime (PET!)
-						},
+						groups = { i(160704) },	-- Filthy Slime (PET!)
 					}),
 					e(2097, {	-- The Sand Queen
 						crs = { 127479 },	-- The Sand Queen

@@ -50,7 +50,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 		1417,	-- Sunken Temple
 		1477,	-- The Temple of Atal'hakkar
 	},
-	mapID = MAP.TEMPLE_OF_ATALHAKKAR,
+	mapID = MAP.SUNKEN_TEMPLE,
 	coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 	lvl = 45,
 	groups = {

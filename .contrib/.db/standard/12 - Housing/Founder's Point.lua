@@ -6,16 +6,16 @@ root(ROOTS.Housing, m(FOUNDERS_POINT, {
 	timeline = { ADDED_11_2_7 },
 	groups = {
 		n(EXPLORATION, {
-			visit_exploration(16704,{coord={62.2,76.9,2352}}),	-- Breakwater Bight
-			visit_exploration(16376,{coord={64.0,53.7,2352}}),	-- Brumewood Hollow
-			visit_exploration(16709,{coord={31.4,53.6,2352}}),	-- Crescent Cove
-			visit_exploration(16700,{coord={34.9,70.4,2352}}),	-- Faldir's Torch
-			map_exploration(16105,{coord={57.2,27.4,2352}}),	-- Founder's Point
-			visit_exploration(16377,{coord={48.2,56.0,2352}}),	-- Gilded Oaks
-			visit_exploration(16701,{coord={60.9,62.1,2352}}),	-- Morgan's Rest
-			visit_exploration(16818,{coord={57.3,34.2,2352}}),	-- Stoneveil Ridge
-			visit_exploration(16378,{coord={38.3,39.6,2352}}),	-- The Outer Banks
-			visit_exploration(16588,{coord={53.0,35.1,2352}}),	-- Town Center
+			visit_exploration(16704, { coord = { 62.2, 76.9, FOUNDERS_POINT } }),	-- Breakwater Bight
+			visit_exploration(16376, { coord = { 64.0, 53.7, FOUNDERS_POINT } }),	-- Brumewood Hollow
+			visit_exploration(16709, { coord = { 31.4, 53.6, FOUNDERS_POINT } }),	-- Crescent Cove
+			visit_exploration(16700, { coord = { 34.9, 70.4, FOUNDERS_POINT } }),	-- Faldir's Torch
+			map_exploration(16105, { coord = { 57.2, 27.4, FOUNDERS_POINT } }),	-- Founder's Point
+			visit_exploration(16377, { coord = { 48.2, 56.0, FOUNDERS_POINT } }),	-- Gilded Oaks
+			visit_exploration(16701, { coord = { 60.9, 62.1, FOUNDERS_POINT } }),	-- Morgan's Rest
+			visit_exploration(16818, { coord = { 57.3, 34.2, FOUNDERS_POINT } }),	-- Stoneveil Ridge
+			visit_exploration(16378, { coord = { 38.3, 39.6, FOUNDERS_POINT } }),	-- The Outer Banks
+			visit_exploration(16588, { coord = { 53.0, 35.1, FOUNDERS_POINT } }),	-- Town Center
 		}),
 		n(FLIGHT_PATHS, {
 			fp(3078, {	-- Brumewood Hollow, Founder's Point

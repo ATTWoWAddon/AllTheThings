@@ -12,6 +12,27 @@ local containsValue = app.containsValue;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
 local TryColorizeName = app.TryColorizeName
 
+-- Release phases whose build/release date hasn't arrived yet (same rule as the default phase filter states in Settings/Pages/Phases.lua)
+local PhaseAvailability = {};
+local function IsPhaseAvailable(phaseID)
+	local available = PhaseAvailability[phaseID];
+	if available == nil then
+		local phase = app.L.PHASES and app.L.PHASES[phaseID];
+		if phase and phase.minimumBuildVersion then
+			local build = app.GameBuildVersion;
+			available = build >= phase.minimumBuildVersion
+				and phase.buildVersion and build >= phase.buildVersion
+				and (not phase.release or phase.release <= time())
+				or false;
+		else
+			available = true;
+		end
+		-- Only cache a positive result; an unreleased phase can become available mid-session when its release time passes
+		if available then PhaseAvailability[phaseID] = true; end
+	end
+	return available;
+end
+
 -- Lib Helpers
 local constructor = function(id, t, typeID)
 	if t then
@@ -224,6 +245,9 @@ local DefaultFields = {
 		local phase = GetRelativeValue(t, "phase");
 		if phase then
 			score = score + 1 + phase;
+			if not IsPhaseAvailable(phase) then
+				score = score + 10000;
+			end
 		end
 		t.AccessibilityScore = score;
 		return score;

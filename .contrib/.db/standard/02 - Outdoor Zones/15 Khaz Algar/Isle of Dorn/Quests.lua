@@ -13,11 +13,11 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				DisablePartySync = true,
 			}),
 			q(78717, {	-- A Mysterious Warning
-				sourceQuests = { 81966 },	-- Slept like a Rock
+				sourceQuest = 81966,	-- Slept like a Rock
 				qg = 213624,	-- Magni Bronzebeard
 				coords = {
 					{ 45.3, 57.4, LEGION_DALARAN },
-					{ 45.7, 56.1, 629 },	-- Legion Dalaran, Aegwynn's Gallery
+					{ 45.7, 56.1, AEGWYNNS_GALLERY },
 				},
 			}),
 			q(78719, {	-- Citizens of Dalaran

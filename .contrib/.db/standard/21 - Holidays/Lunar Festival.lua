@@ -1474,7 +1474,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					"Inside of Maraudon. Located in the passage way across the water where Rotgrip can be found as if you were headed to Tinkerer from the water near Princess.",
 					-- #endif
 				qg = 15556,	-- Elder Splitrock
-				coord = { 44.5, 77.1, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
+				coord = { 44.5, 77.1, MARAUDON_OUTDOOR_LEVEL2 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				maps = { MARAUDON },
 			}),
 			q(8713, {	-- Starsong the Elder
@@ -1492,7 +1492,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #endif
 				},
 				qg = 15593,	-- Elder Starsong
-				maps = { TEMPLE_OF_ATALHAKKAR },
+				maps = { SUNKEN_TEMPLE },
 			}),
 			q(8644, {	-- Stonefort the Elder
 				description =
@@ -1507,7 +1507,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				qg = 15560,	-- Elder Stonefort
 				maps = {
 					BLACKROCK_SPIRE,
-					LBRS_TAZZALOR,
 					LBRS_SKITTERWEB_TUNNELS,
 					LBRS_HORDEMAR_CITY,
 					LBRS_HALL_OF_BLACKHAND,

@@ -985,16 +985,16 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(49266, {	-- Forge of Aeons
-					sourceQuests = { 49698 },	-- The Lightforged
+					sourceQuest = 49698,	-- The Lightforged
 					provider = { "n", 130549 },	-- Captain Fareeya
-					coord = { 44.0, 28.0, 940 },
+					coord = { 44.0, 28.0, THE_VINDICAAR },
 					maps = { 933 },	-- Forge of Aeons (Lightbound Draenei Scenario)
 					races = ALLIANCE_ONLY,
 				}),
 				q(50071, {	-- For the Light!
-					sourceQuests = { 49266 },	-- Forge of Aeons
+					sourceQuest = 49266,	-- Forge of Aeons
 					provider = { "n", 130810 },	-- High Exarch Turalyon
-					coord = { 48.6, 40.4, 940 },
+					coord = { 48.6, 40.4, THE_VINDICAAR },
 					races = ALLIANCE_ONLY,
 					groups = {
 						ach(12243),	-- Allied Races: Lightforged Draenei
@@ -1004,13 +1004,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				-- Lightforged Draenei Starter Quests
 				q(49772, {	-- For the Alliance
 					provider = { "n", 130993 },	-- Captain Fareeya
-					coord = { 49.5, 44.9, 940 },
+					coord = { 49.5, 44.9, THE_VINDICAAR },
 					races = { LIGHTFORGED },
 					lvl = 20,
-					groups = {
-						i(157756),	-- Lightforged Tabard
-						i(157022),	-- Letter from King Anduin Wrynn (QI!)
-					},
+					qi = 157022,	-- Letter from King Anduin Wrynn (QI!)
+					groups = { i(157756) },	-- Lightforged Tabard
 				}),
 				q(50313, {	-- Stranger in a Strange Land
 					sourceQuests = { 49772 },	-- For the Alliance
@@ -1658,15 +1656,15 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					races = HORDE_ONLY,
 				}),
 				q(53827, {	-- The Council Has Spoken
-					sourceQuests = { 53825 },	-- The New Zanchuli Council
+					sourceQuest = 53825,	-- The New Zanchuli Council
 					provider = { "n", 145359 },	-- Princess Talanji
-					coord = { 60.5, 38.8, 1166 },	-- Zanchul, Council Chambers
+					coord = { 60.5, 38.8, ZANCHUL_COUNCIL_CHAMBERS },	-- Zanchul, Council Chambers
 					races = HORDE_ONLY,
 				}),
 				q(53828, {	-- Gaze of the Loa
-					sourceQuests = { 53827 },	-- The Council Has Spoken
+					sourceQuest = 53827,	-- The Council Has Spoken
 					provider = { "n", 145359 },	-- Princess Talanji
-					coord = { 60.5, 38.8, 1166 },	-- Zanchul, Council Chambers
+					coord = { 60.5, 38.8, ZANCHUL_COUNCIL_CHAMBERS },	-- Zanchul, Council Chambers
 					races = HORDE_ONLY,
 				}),
 				q(54031, {	-- Gaze of the Loa: Krag'wa

@@ -4298,7 +4298,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 	}),
 	m(THE_UNDERKEEP, {
 		icon = [[~_.asset("Delves_Nerubian")]],
-		coord = { 58.1, 65.8, 2213 },
+		coord = { 58.1, 65.8, NERUBAR },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(40815),	-- The Underkeep Discoveries

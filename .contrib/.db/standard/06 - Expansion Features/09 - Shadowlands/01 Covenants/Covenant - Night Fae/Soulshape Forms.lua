@@ -24,9 +24,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 				name = "Cat (Well-Fed) Soul",
 				description = "After obtaining the Cat Soul, grab a |cFFFFFFFFSpectral Feed|r located at |cFFFFFFFF63.75, 61.69|r in Revendreth. Then return to Heart of the Forest with it, and go to the Queen's Conservatory portal downstairs.\nFind |cFFFFFFFFMa'oh|r next to the portal and |cFFFFFFFF/meow|r at them. Then use the |cFFFFFFFFSpectral Feed|r from your inventory while targeting them.",
 				icon = 656577,
-				sourceQuests = { 64961 },	-- Cat Soul
+				sourceQuest = 64961,	-- Cat Soul
 				qg = 182093,	-- Ma'oh
-				coord = { 58.4, 70.5, 1702 },	-- Heart of the Forest
+				coord = { 58.4, 70.5, THE_ROOTS },	-- Heart of the Forest
 				cost = { { "i", 187811, 1 } },	-- Spectral Feed
 			}),
 			q(64941, {	-- Chicken Soul

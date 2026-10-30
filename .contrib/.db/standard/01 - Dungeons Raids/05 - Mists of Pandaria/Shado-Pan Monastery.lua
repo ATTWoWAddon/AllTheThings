@@ -16,14 +16,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(QUESTS, {
 				q(31030, {	-- Into the Monastery
 					sourceQuest = 30752,	-- Unbelievable!
-					provider = { "n", 62227 },	-- Ban Bearheart
+					qg = 62227,	-- Ban Bearheart
 					coord = { 36.6, 47.7, KUN_LAI_SUMMIT },
 					isBreadcrumb = true,
 				}),
 				q(31031, {	-- Into the Monastery
 					description = "This version is available if you abandon the other version.",
 					sourceQuest = 30752,	-- Unbelievable!
-					provider = { "n", 62227 },	-- Ban Bearheart
+					qg = 62227,	-- Ban Bearheart
 					coord = { 35.3, 49.5, KUN_LAI_SUMMIT },
 					isBreadcrumb = true,
 				}),
@@ -32,8 +32,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						31030,	-- Into the Monastery
 						31031,	-- Into the Monastery
 					},
-					provider = { "n", 62236 },	-- Ban Bearheart
-					coord = { 84.8, 56.0, 444 },
+					qg = 62236,	-- Ban Bearheart
+					coord = { 84.8, 56.0, SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO },
 					groups = {
 						i(87319),	-- Antagonist's Headwrap
 						i(87315),	-- Cowl of Angry Thoughts
@@ -47,8 +47,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31342, {	-- The Path to Respect Lies in Violence
-					provider = { "n", 56541 },	-- Master Snowdrift
-					coord = { 29.5, 73.0, 443 },
+					qg = 56541,	-- Master Snowdrift
+					coord = { 29.5, 73.0, SHADOPAN_MONASTERY },
 					groups = {
 						i(87327),	-- Cloudstriker Cord
 						i(87332),	-- Cord of Disturbed Dreams

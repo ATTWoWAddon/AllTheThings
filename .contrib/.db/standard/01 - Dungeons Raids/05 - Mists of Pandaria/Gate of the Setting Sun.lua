@@ -13,18 +13,18 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 		groups = {
 			n(QUESTS, {
 				q(31363, {	-- Lighting the Way
-					provider = { "n", 64467 },	-- Bowmistress Li
-					coord = { 61.0, 88.2, 437 },
+					qg = 64467,	-- Bowmistress Li
+					coord = { 61.0, 88.2, GATE_OF_THE_SETTING_SUN },
 					groups = {
 						objective(1, {	-- 0/1 Light the Signal Flame
 							provider = { "o", 211129 },	-- Signal Flame
-							coord = { 47.2, 24.6, 437 },
+							coord = { 47.2, 24.6, GATE_OF_THE_SETTING_SUN },
 						}),
 					},
 				}),
 				q(31364, {	-- That's a Big Bug!
-					provider = { "n", 64467 },	-- Bowmistress Li
-					coord = { 61.0, 88.2, 437 },
+					qg = 64467,	-- Bowmistress Li
+					coord = { 61.0, 88.2, GATE_OF_THE_SETTING_SUN },
 					groups = {
 						objective(1, {	-- 0/1 Raigonn slain
 							provider = { "n", 56877 },	-- Raigonn

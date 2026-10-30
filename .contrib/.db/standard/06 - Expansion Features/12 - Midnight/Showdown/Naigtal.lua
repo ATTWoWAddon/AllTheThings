@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								96052,	-- Through the Mana Rift (Naigtal)
 								96051,	-- Through the Cold Rift (Val)
 							},
-							sqreq = 1,	-- either one is enough
+							sourceQuestNumRequired = 1,
 							qgs = {
 								264879,	-- Decimus
 								265303,	-- Decimus
@@ -98,8 +98,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								{ 48.5, 81.9, NAIGTAL },
 								{ 60.0, 22.1, VAL },
 							},
+							qi = 277554,	-- Void Commander's Emblem (QI!)
 							groups = sharedData({ modID = 6 }, {
-								i(277554),	-- Void Commander's Emblem (QI!)
 								-- Mythic appearances
 								i(276794),	-- Archmage's Cord of Light
 								i(276792),	-- Belt of the Illidari Vanguard

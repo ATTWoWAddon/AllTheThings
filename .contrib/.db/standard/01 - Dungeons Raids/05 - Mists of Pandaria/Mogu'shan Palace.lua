@@ -35,36 +35,36 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31357, {	-- Relics of the Four Kings
-					provider = { "n", 64432 },	-- Sinan the Dreamer
-					coord = { 38.8, 81.8, 455 },
+					qg = 64432,	-- Sinan the Dreamer
+					coord = { 38.8, 81.8, MOGUSHAN_PALACE_THRONE_OF_ANCIENT_CONQUERORS },
 					groups = {
 						objective(1, {	-- 0/1 Lantern of the Sorcerer King
 							providers = {
-								{ "i",  86476 },	-- Lantern of the Sorcerer King
+								{ "i", 86476 },	-- Lantern of the Sorcerer King
 								{ "o", 214824 },	-- Ancient Mogu Chest
 							},
-							coord = { 54.9, 53.9, 454 },
+							coord = { 54.9, 53.9, MOGUSHAN_PALACE_VAULTS_OF_KINGS_PAST },
 						}),
 						objective(2, {	-- 0/1 Mad King Meng's Balance
 							providers = {
-								{ "i",  86477 },	-- Mad King Meng's Balance
+								{ "i", 86477 },	-- Mad King Meng's Balance
 								{ "o", 214825 },	-- Ancient Mogu Chest
 							},
-							coord = { 55.8, 53.2, 454 },
+							coord = { 55.8, 53.2, MOGUSHAN_PALACE_VAULTS_OF_KINGS_PAST },
 						}),
 						objective(3, {	-- 0/1 Qiang's "The Science of War"
 							providers = {
-								{ "i",  86478 },	-- Qiang's "The Science of War"
+								{ "i", 86478 },	-- Qiang's "The Science of War"
 								{ "o", 214826 },	-- Ancient Mogu Chest
 							},
-							coord = { 55.1, 58.0, 454 },
+							coord = { 55.1, 58.0, MOGUSHAN_PALACE_VAULTS_OF_KINGS_PAST },
 						}),
 						objective(4, {	-- 0/1 Subetai's Bow of the Swift
 							providers = {
-								{ "i",  86479 },	-- Subetai's Bow of the Swift
+								{ "i", 86479 },	-- Subetai's Bow of the Swift
 								{ "o", 214827 },	-- Ancient Mogu Chest
 							},
-							coord = { 58.5, 57.0, 454 },
+							coord = { 58.5, 57.0, MOGUSHAN_PALACE_VAULTS_OF_KINGS_PAST },
 						}),
 						i(87346),	-- Armbands of the Reawakened
 						i(87349),	-- Armplates of Martial Artistry

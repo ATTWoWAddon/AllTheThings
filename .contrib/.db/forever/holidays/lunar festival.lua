@@ -588,7 +588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 					description = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
 					coord = { 69.2, 54.8, MAP.SWAMP_OF_SORROWS },
 					qg = 15593,	-- Elder Starsong
-					maps = { MAP.TEMPLE_OF_ATALHAKKAR },
+					maps = { MAP.SUNKEN_TEMPLE },
 				}),
 				q(8644, {	-- Stonefort the Elder
 					description = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",

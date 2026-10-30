@@ -145,7 +145,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				isWeekly = true,
 				questID = 56057,
 				isRaid = true,
-				coord = { 84.2, 35.9, 1355 },
+				coord = { 84.2, 35.9, NAZJATAR },
 				maps = {	-- all Nazjatar maps
 					1499,	--
 					1500,	-- Chitterspine Grotto
@@ -158,7 +158,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					152697,	-- Ulmath
 				},
 				timeline = { ADDED_8_2_0 },
-				groups = bubbleDown({modID = 3 }, {
+				groups = bubbleDown({ modID = 3 }, {
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
 					i(170091),	-- Willbinder's Halberd
@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				isWeekly = true,
 				questID = 56056,
 				isRaid = true,
-				coord = { 42.8, 77.9, 1355 },
+				coord = { 42.8, 77.9, NAZJATAR },
 				maps = {	-- all Nazjatar maps
 					1499,	--
 					1500,	-- Chitterspine Grotto
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 				creatureID = 152671,	-- Wekemara
 				timeline = { ADDED_8_2_0 },
-				groups = bubbleDown({modID = 3}, {
+				groups = bubbleDown({ modID = 3 }, {
 					i(168340),	-- Naga Ritualist's Mantle
 					i(168366),	-- Tidal Lurker's Greathelm
 					i(168351),	-- Spitcharged Shoulderguards

@@ -2219,15 +2219,13 @@ maproot(KALIMDOR, DESOLACE, {
 			q(14332, {	-- Time For Change
 				sourceQuest = 14330,	-- Behind Closed Doors
 				qg = 36196,	-- Kherrah
-				coord = { 13.0, 46.3, 67 },	-- quest starts in Maraudon's mapID
+				coord = { 13.0, 46.3, MARAUDON_OUTDOOR_LEVEL1 },
 				timeline = { ADDED_4_0_3 },
 				groups = {
-					i(55912),	-- Wrought Formal Dagger
 					i(55913),	-- Emissary's Chestpiece
+					i(131347, { timeline = { ADDED_7_0_3 } }),	-- Messenger's Greaves
 					i(55914),	-- Silent Footpads
-					i(131347, {	-- Messenger's Greaves
-						timeline = { ADDED_7_0_3 },
-					}),
+					i(55912),	-- Wrought Formal Dagger
 				},
 			}),
 			q(14357, {	-- To the Hilt! (A)
@@ -2316,7 +2314,7 @@ maproot(KALIMDOR, DESOLACE, {
 			q(14333, {	-- While You're Here
 				sourceQuest = 14328,	-- Three Princes
 				provider = { "o", 196393 },	-- Broken Relic
-				coord = { 12.5, 49.3, 67 },	-- quest starts in Maraudon's mapID
+				coord = { 12.5, 49.3, MARAUDON_OUTDOOR_LEVEL1 },	-- quest starts in Maraudon's mapID
 				timeline = { ADDED_4_0_3 },
 			}),
 			q(14325, {	-- Will Work For Food

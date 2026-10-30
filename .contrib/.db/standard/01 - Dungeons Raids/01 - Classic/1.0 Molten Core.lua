@@ -328,7 +328,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					timeline = { REMOVED_3_0_8 },
 					maps = {
 						BLACKROCK_SPIRE,
-						LBRS_TAZZALOR,
 						LBRS_SKITTERWEB_TUNNELS,
 						LBRS_HORDEMAR_CITY,
 						LBRS_HALL_OF_BLACKHAND,

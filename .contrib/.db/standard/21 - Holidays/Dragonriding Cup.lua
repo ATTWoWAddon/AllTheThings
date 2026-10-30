@@ -886,7 +886,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				dragonridingrace(76309, {	-- Gilneas Gambit
 					provider = { "n", 206246 },	-- Bronze Timekeeper
-					coord = { 58.6, 11.6, 217 },
+					coord = { 58.6, 11.6, RUINS_OF_GILNEAS },
 					groups = {
 						ach(18399),	-- Gilneas Gambit: Bronze
 						ach(18400),	-- Gilneas Gambit: Silver
@@ -895,7 +895,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				dragonridingrace(76310, {	-- Gilneas Gambit - Advanced
 					provider = { "n", 206246 },	-- Bronze Timekeeper
-					coord = { 58.6, 11.6, 217 },
+					coord = { 58.6, 11.6, RUINS_OF_GILNEAS },
 					groups = {
 						ach(18402),	-- Gilneas Gambit Advanced: Bronze
 						ach(18403),	-- Gilneas Gambite Advanced: Silver
@@ -904,7 +904,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 				}),
 				dragonridingrace(76311, {	-- Gilneas Gambit - Reverse
 					provider = { "n", 206246 },	-- Bronze Timekeeper
-					coord = { 58.6, 11.6, 217 },
+					coord = { 58.6, 11.6, RUINS_OF_GILNEAS },
 					groups = {
 						ach(18405),	-- Gilneas Gambit Reverse: Bronze
 						ach(18406),	-- Gilneas Gambit Reverse: Silver

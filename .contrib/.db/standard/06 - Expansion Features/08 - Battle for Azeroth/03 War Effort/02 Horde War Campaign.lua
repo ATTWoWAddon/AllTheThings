@@ -1571,16 +1571,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				})),
 				n(QUESTS, withShared({ timeline = { ADDED_8_2_0 } }, {
 					q(55778, {	-- Visions of Danger
-						sourceQuests = { 55051 },	-- A Display of Power
+						sourceQuest = 55051,	-- A Display of Power
 						provider = { "n", 151848 },	-- Lor'themar Theron
-						coord = { 48.5, 62.1, 1355 },
+						coord = { 48.5, 62.1, NAZJATAR },
 						races = HORDE_ONLY,
 					}),
 					q(55781, {	-- Old Allies
-						sourceQuests = { 55778 },	-- Visions of Danger
+						sourceQuest = 55778,	-- Visions of Danger
 						altQuests = { 55780 },	-- Old Allies
 						provider = { "n", 151848 },	-- Lor'themar Theron
-						coord = { 48.5, 62.1, 1355 },
+						coord = { 48.5, 62.1, NAZJATAR },
 						races = HORDE_ONLY,
 					}),
 					q(55780, {	-- Old Allies (Sylvanas Version)
@@ -1590,29 +1590,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 						altQuests = { 55781 },	-- Old Allies
 						provider = { "n", 151848 },	-- Lor'themar Theron
-						coord = { 48.5, 62.1, 1355 },
+						coord = { 48.5, 62.1, NAZJATAR },
 						races = HORDE_ONLY,
 					}),
 					q(55779, {	-- Stay of Execution
-						sourceQuests = { 55781 },	-- Old Allies
+						sourceQuest = 55781,	-- Old Allies
 						altQuests = { 55782 },	-- Stay of Execution
 						provider = { "n", 152977 },	-- Thrall
 						coord = { 56.1, 68.0, 86 },
-						maps = {
-							ORGRIMMAR,
-							1479,	-- Baine Rescue (Scenario)
-						},
+						maps = { ORGRIMMAR, 1479 },	-- Baine Rescue (Scenario)
 						races = HORDE_ONLY,
 					}),
 					q(55782, {	-- Stay of Execution (Sylvanas Version)
-						sourceQuests = { 55780 },	-- Old Allies (Sylvanas Version)
+						sourceQuest = 55780,	-- Old Allies (Sylvanas Version)
 						altQuests = { 55779 },	-- Stay of Execution
 						provider = { "n", 152977 },	-- Thrall
 						coord = { 56.1, 68.0, 86 },
-						maps = {
-							ORGRIMMAR,
-							1479,	-- Baine Rescue (Scenario)
-						},
+						maps = { ORGRIMMAR, 1479 },	-- Baine Rescue (Scenario)
 						races = HORDE_ONLY,
 					}),
 				})),

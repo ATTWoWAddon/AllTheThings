@@ -694,11 +694,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					q(46050, {	-- Champion: Minerva Ravensorrow
 						sourceQuest = 45103,	-- We Ride!
-						provider = { "n", 95900 },	-- Minerva Ravensorrow
-						coord = { 25.6, 34.2, 647 },
-						groups = {
-							follower(1003),	-- Minerva Ravensorrow
-						},
+						qg = 95900,	-- Minerva Ravensorrow
+						coord = { 25.6, 34.2, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						groups = { follower(1003) },	-- Minerva Ravensorrow
 					}),
 					q(46719, {	-- Amal'thazad's Message
 						sourceQuest = 46050,	-- Champion: Minerva Ravensorrow
@@ -776,8 +774,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				n(VENDORS, {
 					n(93550, {	-- Quartermaster Ozorg
-						coord = { 44.2, 37.5, 647 },
-						sym = {{"select","itemID",143727}},	-- Champion's Salute (TOY!)
+						coord = { 44.2, 37.5, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
+						sym = { { "select", "itemID", 143727 } },	-- Champion's Salute (TOY!)
 						groups = {
 							i(34649),	-- Archerus Knight's Gauntlets
 							i(34651),	-- Archerus Knight's Girdle
@@ -796,23 +794,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 							i(38667),	-- Bloodbane's Gauntlets of Command
 							i(140538),	-- Broadaxe of the Ebon Blade
-							i(174485, {	-- Burning Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174662, {	-- Burning Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174485, { timeline = { ADDED_8_3_0 } }),	-- Burning Greatsword of the Ebon Blade
+							i(174662, { timeline = { ADDED_8_3_0 } }),	-- Burning Saber of the Ebon Blade
 							i(34657),	-- Choker of Damnation
 							i(38147),	-- Corrupted Band
-							i(174486, {	-- Crimson Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174659, {	-- Crimson Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(140935, {	-- Deathlord's Armor Kit
-								cost = { { "c", ORDER_RESOURCES, 2000 } },
-							}),
+							i(174486, { timeline = { ADDED_8_3_0 } }),	-- Crimson Greatsword of the Ebon Blade
+							i(174659, { timeline = { ADDED_8_3_0 } }),	-- Crimson Saber of the Ebon Blade
+							i(140935, { cost = { { "c", ORDER_RESOURCES, 2000 } } }),	-- Deathlord's Armor Kit
 							i(139680, {	-- Deathlord's Bracers
 								cost = 5000000,	-- 500g
 							}),
@@ -828,18 +816,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(139674, {	-- Deathlord's Greatboots
 								cost = 5000000,	-- 500g
 							}),
-							i(140963, {	-- Deathlord's Greater Armor Kit
-								cost = { { "c", ORDER_RESOURCES, 4000 } },
-							}),
+							i(140963, { cost = { { "c", ORDER_RESOURCES, 4000 } } }),	-- Deathlord's Greater Armor Kit
 							i(139676, {	-- Deathlord's Helm
 								cost = 5000000,	-- 500g
 							}),
 							i(139677, {	-- Deathlord's Legguards
 								cost = 5000000,	-- 500g
 							}),
-							i(140962, {	-- Deathlord's Lesser Armor Kit
-								cost = { { "c", ORDER_RESOURCES, 500 } },
-							}),
+							i(140962, { cost = { { "c", ORDER_RESOURCES, 500 } } }),	-- Deathlord's Lesser Armor Kit
 							i(139678, {	-- Deathlord's Mantle
 								cost = 5000000,	-- 500g
 							}),
@@ -860,12 +844,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								cost = { { "c", ORDER_RESOURCES, 1200 } },
 							}),
 							i(38669),	-- Engraved Saronite Legplates
-							i(174488, {	-- Freezing Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174660, {	-- Freezing Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174488, { timeline = { ADDED_8_3_0 } }),	-- Freezing Greatsword of the Ebon Blade
+							i(174660, { timeline = { ADDED_8_3_0 } }),	-- Freezing Saber of the Ebon Blade
 							i(38633),	-- Greataxe of the Ebon Blade
 							i(38661),	-- Greathelm of the Scourge Champion
 							i(38632),	-- Greatsword of the Ebon Blade
@@ -891,12 +871,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(38664),	-- Sky Darkener's Shroud of the Unholy
 							i(38674),	-- Soul Harvester's Charm
 							i(38668),	-- The Plaguebringer's Girdle
-							i(174487, {	-- Unholy Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174661, {	-- Unholy Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174487, { timeline = { ADDED_8_3_0 } }),	-- Unholy Greatsword of the Ebon Blade
+							i(174661, { timeline = { ADDED_8_3_0 } }),	-- Unholy Saber of the Ebon Blade
 							i(38671),	-- Valanar's Signet Ring
 							i(140554),	-- Warsword of the Ebon Blade
 							i(40775, {	-- Winged Steed of the Ebon Blade (MOUNT!)
@@ -906,7 +882,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					n(121752, {	-- Slimy
 						sourceQuest = 46813,	-- The Lost Glacier
-						coord = { 54.8, 28.9, 648 },
+						coord = { 54.8, 28.9, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 						groups = {
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
 								sourceQuest = 46813,	-- The Lost Glacier

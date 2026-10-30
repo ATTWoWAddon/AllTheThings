@@ -24,6 +24,7 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 			}),
 			n(274690, {	-- Fenwir <Botanist>
 				coord = { 37.8, 49.0, DRUSTVAR },
+				races = ALLIANCE_ONLY,
 				timeline = { ADDED_12_1_5 },
 				groups = {
 					i(284462, { cost = { { "c", WAR_RESOURCES, 100 } } }),	-- Arching Crimson Ivy (DECOR!)

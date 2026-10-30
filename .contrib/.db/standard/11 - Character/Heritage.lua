@@ -1416,20 +1416,18 @@ root(ROOTS.Character, n(HERITAGE, {
 			q(54761, {	-- Spirit Guide
 				sourceQuest = 54760,	-- The Spiritwalkers
 				provider = { "n", 149084 },	-- Spiritwalker Ussoh
-				coord = { 12.3, 31.3, 462 },
+				coord = { 12.3, 31.3, CAMP_NARACHE },
 			}),
 			q(54762, {	-- A Small Retreat
 				sourceQuest = 54761,	-- Spirit Guide
 				provider = { "n", 149084 },	-- Spiritwalker Ussoh
-				coord = { 12.3, 31.3, 462 },
+				coord = { 12.3, 31.3, CAMP_NARACHE },
 			}),
 			q(54763, {	-- Crossing Over
 				sourceQuest = 54762,	-- A Small Retreat
 				provider = { "n", 149529 },	-- Spiritwalker Ussoh
 				coord = { 49.2, 60.8, STONETALON_MOUNTAINS },
-				groups = {
-					i(166899),	-- Spiritwalker's Hallowed Vessel (QI!)
-				},
+				qi = 166899,	-- Spiritwalker's Hallowed Vessel (QI!)
 			}),
 			q(54764, {	-- Storm in Bloodhoof
 				sourceQuest = 54763,	-- Crossing Over
@@ -1443,7 +1441,7 @@ root(ROOTS.Character, n(HERITAGE, {
 					149528,	-- Baine Bloodhoof <High Chieftain>
 				},
 				coord = { 58.3, 51.8, THUNDER_BLUFF },
-				groups = { i(167030) },	-- Spiritwalker's Hallowed Vessel (QI!)
+				qi = 167030,	-- Spiritwalker's Hallowed Vessel (QI!)
 			}),
 			q(54765, {	-- Thank Your Guide
 				sourceQuest = 54766,	-- Answer the Call
@@ -1483,9 +1481,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				sourceQuests = { 77874 },	-- De Loa of de Past
 				provider = { "n", 210238 },	-- Rokhan
 				coord = { 84.8, 40.2, NORTHERN_STRANGLETHORN },
-				groups = {
-					i(211350),	-- Offering to Hakkar (QI!)
-				},
+				qi = 211350,	-- Offering to Hakkar (QI!)
 			}),
 			q(77881, {	-- There is Another
 				sourceQuests = { 77879 },	-- Stalking the Stalker
@@ -1516,9 +1512,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				sourceQuests = { 77877 },	-- One With the Loa
 				provider = { "n", 210091 },	-- Rokhan
 				coord = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
-				groups = {
-					i(210593),	-- Lukou's Altar Centerpiece (QI!)
-				},
+				qi = 210593,	-- Lukou's Altar Centerpiece (QI!)
 			}),
 			q(77894, {	-- Heart of Lokou
 				sourceQuests = {
@@ -1537,9 +1531,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				sourceQuests = { 77898 },	-- Honor and Tribute
 				provider = { "n", 210086 },	-- Witch Doctor Tzadah
 				coord = { 59.1, 65.9, ECHO_ISLES },
-				groups = {
-					i(210830),	-- Finished Rush'kah Mask (QI!)
-				},
+				qi = 210830,	-- Finished Rush'kah Mask (QI!)
 			}),
 			q(77900, {	-- The Loa Trials
 				sourceQuests = { 77899 },	-- The Rush'kah
@@ -1550,9 +1542,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				sourceQuests = { 77900 },	-- The Loa Trials
 				provider = { "n", 210260 },	-- Kevo ya Siti
 				coord = { 59.0, 66.3, ECHO_ISLES },
-				groups = {
-					i(211000),	-- Cunning Charm (QI!)
-				},
+				qi = 211000,	-- Cunning Charm (QI!)
 			}),
 			q(77902, {	-- Ritual Recovery
 				sourceQuests = { 77900 },	-- The Loa Trials

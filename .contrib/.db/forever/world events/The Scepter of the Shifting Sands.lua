@@ -119,7 +119,7 @@ root(ROOTS.WorldEvents, {
 				q(8733, {	-- Eranikus, Tyrant of the Dream
 					sourceQuest = 8555,	-- The Charge of the Dragonflights
 					qg = 15362,	-- Malfurion Stormrage
-					maps = { MAP.TEMPLE_OF_ATALHAKKAR },
+					maps = { MAP.SUNKEN_TEMPLE },
 					lvl = 60,
 				}),
 				q(8305, {	-- Long Forgotten Memories

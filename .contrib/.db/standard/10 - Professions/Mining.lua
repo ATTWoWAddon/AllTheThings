@@ -1532,7 +1532,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 		}),
 		n(TREASURES, {
 			o(525908, {	-- Amani Expert's Chisel
-				coord = { 33.6, 65.4, 2536 },	-- Atal'Aman Outdoor
+				coord = { 33.6, 65.4, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				questID = 89149,
 				groups = { i(238601) },	-- Amani Expert's Chisel
 			}),
