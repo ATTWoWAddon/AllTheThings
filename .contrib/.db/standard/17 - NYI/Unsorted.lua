@@ -74,7 +74,6 @@ root(ROOTS.Unsorted, {
 			i(282646),	-- Hot Motocross Bunmover 4000
 			i(282647),	-- Hot Motocross Bunmover 4200
 			i(282648),	-- Hot Motocross Bunmover 4400
-			i(282649),	-- Hot Motocross Bunmover 4600
 			i(282659),	-- Ghost Goggles
 			i(282660),	-- Vacpack 84-X
 			i(283388),	-- Blessed Loa Armament

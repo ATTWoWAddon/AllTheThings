@@ -37,7 +37,7 @@ local ALL_REGULAR_DELVES_MID = {
 	-- VENOMFALL_DEEPS,
 	-- #endif
 	-- #if AFTER 12.1.5
-	LABYRINTH_KINDOJAN
+	--LABYRINTH_KINDOJAN
 	-- #endif
 };
 local ALL_THE_DELVES_MID = {

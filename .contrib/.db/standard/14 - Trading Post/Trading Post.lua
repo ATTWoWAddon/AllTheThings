@@ -2911,5 +2911,10 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(125, i(250310)),	-- Theif's Notched Blade
 			}),
 		}),
+		Month(NOVEMBER, { "added 12.1.5.70575", "removed 12.1.5.99999" }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(282649),	-- Hot Motocross Bunmover 4600 (MOUNT!)
+			}),
+		}),
 	}),
 }))
