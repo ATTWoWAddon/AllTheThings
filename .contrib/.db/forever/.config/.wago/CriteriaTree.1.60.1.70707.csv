@@ -1028,8 +1028,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 122983,"Total facepalms",122982,0,0,3232,0,0
 122986,,0,0,4,0,0,0
 122987,"Ring of Trials matches",122986,0,0,5730,0,0
-123016,,0,0,4,0,0,0
-123017,"Eye of the Storm victories",123016,0,0,5745,0,0
 123018,,0,0,4,0,0,0
 123019,"Arathi Basin victories",123018,0,0,102,0,0
 123035,,0,0,4,0,0,0
@@ -1577,8 +1575,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 124436,"Total healing received",124435,0,0,5375,0,0
 124443,,0,0,4,0,0,0
 124444,Gal'darah,124443,1,0,5614,0,0
-124476,,0,0,4,0,0,0
-124477,"Eye of the Storm battles",124476,0,0,105,0,0
 124478,,0,0,4,0,0,0
 124479,"The Prophet Tharon'ja",124478,1,0,3651,0,0
 124480,"The Prophet Tharon'ja",124478,1,0,9258,0,0
@@ -1902,8 +1898,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 125895,"Herald Volazj",125894,1,0,3647,0,0
 125907,,0,0,4,0,0,0
 125908,Thaddius,125907,1,0,5134,0,0
-125915,,0,0,4,0,0,0
-125916,"Strand of the Ancients",125915,0,0,5894,0,0
 125988,,0,0,4,0,0,0
 125989,Deathknell,125988,1,0,1037,0,0
 125990,"Agamand Mills",125988,1,0,1039,0,0
@@ -2046,8 +2040,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 126407,"The Dagger Hills",126395,1,0,1260,0,0
 126408,"Demont's Place",126395,1,0,1258,0,0
 126409,"Furlbrow's Pumpkin Farm",126395,1,0,1250,0,0
-126410,,0,0,4,0,0,0
-126411,"Strand of the Ancients",126410,0,0,5898,0,0
 126435,,0,0,4,0,0,0
 126436,Mimiron,126435,1,0,9963,0,0
 126437,,0,0,4,0,0,0
@@ -4989,10 +4981,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 132771,"Anub'arak attempt",132770,1,0,12226,0,2
 132772,,0,0,4,0,0,0
 132773,"Anub'arak attempt",132772,1,0,12227,0,2
-132776,,0,0,4,0,0,0
-132777,"Isle of Conquest",132776,0,0,13368,0,0
-132778,,0,0,4,0,0,0
-132779,"Isle of Conquest victories",132778,0,0,13369,0,0
 132780,,0,0,4,0,0,0
 132781,Grobbulus,132780,1,0,6406,0,0
 132782,,0,0,4,0,0,0

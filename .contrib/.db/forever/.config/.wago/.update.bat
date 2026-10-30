@@ -1,5 +1,5 @@
 @echo off
-SET BUILD=1.60.1.70532
+SET BUILD=1.60.1.70707
 @REM Pass "force_overwrite" to refresh files already downloaded for this build.
 set "FORCE_OVERWRITE="
 if /i "%~1"=="force_overwrite" set "FORCE_OVERWRITE=1"

@@ -752,7 +752,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 1766,ShatterScarVale,"Shatter Scar Vale",1,361,751,0,0,0,2172,0,0,53,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1767,IrontreeWoods,"Irontree Woods",1,361,752,0,0,0,2172,0,0,53,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1768,IrontreeCavern,"Irontree Cavern",1,361,753,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
-1769,TimbermawHold,"Timbermaw Hold",1,361,754,0,0,0,2172,0,0,54,0,0,0,0,0,-1,0,0,0,0,1073741888,0,0,0,0,0
+1769,TimbermawHold,"Timbermaw Hold",1,361,754,0,0,0,2172,0,0,54,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1770,ShadowHold,"Shadow Hold",1,361,755,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1771,ShrineoftheDeceiver,"Shrine of the Deceiver",1,361,756,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1777,Itharius'sCave,"Itharius's Cave",0,8,757,0,0,0,2172,0,0,36,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
