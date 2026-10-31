@@ -1457,7 +1457,7 @@ SOD_PHASE_EIGHT = createClassicPhaseForSOD({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "包含血色领地团队副本、新阿瓦隆的全新户外与专业技能内容，以及全新的传说武器任务线。",
 		tw = "包含血色領區團隊副本、新亞法隆的全新戶外與專業技能內容，以及全新的傳說武器任務線。",
 	},
 });

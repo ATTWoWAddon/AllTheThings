@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "适用于以上所有角色信息。",
 		tw = "套用至以上所有角色資訊。",
 	},
 })
