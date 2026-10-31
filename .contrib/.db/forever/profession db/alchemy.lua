@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(ALCHEMY);
 -------------
 -- ALCHEMY --
 -------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 2259);			-- Alchemy (Apprentice)
 i(0, 3101);			-- Alchemy (Journeyman)
 i(0, 3464);			-- Alchemy (Expert)
@@ -46,10 +46,10 @@ i(0, 1249633);		-- Sulfuric Acid
 i(0, 1244648);		-- Superior Discolored Healing Potion
 i(0, 7841);			-- Swim Speed Potion
 i(0, 1249632);		-- Viridian Dye
---- QUEST ---
+-- - QUEST ---
 i(0, 1230564);		-- Mana Well
 i(0, 11452);		-- Restorative Potion
---- ITEM ---
+-- - ITEM ---
 i(250995, 1251749);	-- Caustic Smog Potion
 i(250996, 1251750);	-- Disorienting Smog Potion
 i(250997, 1251751);	-- Dragonfire Potion

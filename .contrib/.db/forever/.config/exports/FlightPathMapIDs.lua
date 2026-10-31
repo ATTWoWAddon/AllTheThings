@@ -2,7 +2,7 @@ do
 -- FlightPathDB --
 -- Represents the mapID used by the game to show FlightPaths at a Flight Master
 -- Missing ones will be reported in chat by ATT when 'Debugging' is set
-local FlightPathMapIDs = {};
+local FlightPathMapIDs = { };
 for i, mapID in ipairs({
 	1464,	-- Kalimdor
 	1463,	-- Eastern Kingdoms

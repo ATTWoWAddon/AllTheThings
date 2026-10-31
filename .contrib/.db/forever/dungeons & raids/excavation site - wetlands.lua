@@ -6,8 +6,8 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 	icon = [[~_.asset("excavationsite")]],
 	zoneTextAreaID = 17732,	-- Excavation Site: Wetlands
 	coord = { 48.1, 56.4, MAP.WETLANDS },
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 23,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(QUESTS, {
 			q(95697, {	-- Changing Tastes
@@ -17,7 +17,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/4 Thicket Raptor Meat
-						provider = { "i", 271100 },	-- Thicket Raptor Meat
+						provider = { "i", 271100 },	-- Thicket Raptor Meat (QI!)
 						crs = {
 							260800,	-- Thicket Lurker
 							260801,	-- Thicket Hunter
@@ -41,11 +41,11 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 			q(98823, {	-- Earthen Echo
 				sourceQuest = 95664,	-- Elder Knowledge
 				qg = 9087,	-- Bashana Runetotem
-				qi = 287958,	-- Titan Relic (PQI!)
 				coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 				maps = { MAP.MULGORE },
 				races = HORDE_ONLY,
 				lvl = 24,
+				qi = 287958,	-- Titan Relic
 				groups = {
 					i(271766),	-- Heavehammer
 					i(271767),	-- Healer's Staff
@@ -72,9 +72,9 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 			q(95809, {	-- Heartwoven
 				sourceQuest = 95647,	-- Lost in the Thicket Things
 				qg = 262681,	-- Ardin Grassman
-				qi = 270901,	-- Reed-woven Heart
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				qi = 270901,	-- Reed-woven Heart (QI!)
 				groups = {
 					i(280766),	-- Satchel of Potions
 					i(2459),	-- Swiftness Potion
@@ -89,7 +89,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/4 Thicket Raptor Hide
-						provider = { "i", 284845 },	-- Thicket Raptor Hide
+						provider = { "i", 284845 },	-- Thicket Raptor Hide (QI!)
 						crs = {
 							260800,	-- Thicket Lurker
 							260801,	-- Thicket Hunter
@@ -106,7 +106,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/1 Horrible Rootcore
-						provider = { "i", 270180 },	-- Horrible Rootcore
+						provider = { "i", 270180 },	-- Horrible Rootcore (QI!)
 					}),
 					i(271667),	-- Ironwood Destroyer
 					i(271664),	-- Hornbeam Heft
@@ -139,7 +139,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 						provider = { "n", 275044 },	-- Dragonmaw Warder
 					}),
 					objective(3, {	-- 0/1 Dragonmaw Dispatch
-						provider = { "i", 284844 },	-- Dragonmaw Dispatch
+						provider = { "i", 284844 },	-- Dragonmaw Dispatch (QI!)
 						cr = 275046,	-- Dragonmaw Thaumaturgist
 					}),
 					i(271740),	-- Knife-Polishing Rag
@@ -150,11 +150,11 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 			q(98824, {	-- Prehistoric Prism
 				sourceQuest = 95810,	-- Lost Relic Carry
 				qg = 1077,	-- Prospector Whelgar <Explorers' League>
-				qi = 287959,	-- Titan Relic (PQI!)
 				coord = { 38.8, 52.2, MAP.WETLANDS },
 				maps = { MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				qi = 287959,	-- Titan Relic
 				groups = {
 					i(271766),	-- Heavehammer
 					i(271767),	-- Healer's Staff
@@ -188,7 +188,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 		e(3644, {	-- Highland Horror
 			creatureID = 260808,	-- Highland Horror
 			groups = {
-				i(270180),	-- Horrible Rootcore
+				i(270180),	-- Horrible Rootcore (QI!)
 			},
 		}),
 		e(3482, {	-- Relic Guardian

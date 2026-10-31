@@ -17,12 +17,7 @@ root(ROOTS.WorldDrops, {
 		description = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		groups = {
 			i(16882, {	-- Battered Junkbox
-				groups = {
-					i(4446),	-- Blackvenom Blade
-					i(2567),	-- Evocator's Blade
-					i(5756),	-- Sliverblade
-				},
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
 					11984,	-- Cobalt Ring
@@ -51,16 +46,21 @@ root(ROOTS.WorldDrops, {
 					3396,	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 					12008,	-- Savannah Ring
 					11967,	-- Zircon Band
-				}},
+				} },
+				groups = {
+					i(4446),	-- Blackvenom Blade
+					i(2567),	-- Evocator's Blade
+					i(5756),	-- Sliverblade
+				},
 			}),
 			i(5760, {	-- Eternium Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					12058,	-- Demonic Bone Ring
-				}},
+				} },
 			}),
 			i(4633),	-- Heavy Bronze Lockbox
 			i(16885, {	-- Heavy Junkbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					1728,	-- Teebu's Blazing Longsword (Does not currently load on beta)
 					16215,	-- Formula: Enchant Boots Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -96,10 +96,10 @@ root(ROOTS.WorldDrops, {
 					12055,	-- Stardust Band
 					12015,	-- Swamp Ring
 					11989,	-- Vanadium Loop
-				}},
+				} },
 			}),
 			i(4634, {	-- Iron Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11164,	-- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)
 					7449,	-- Pattern: Dusky Leather Leggings (RECIPE!)
 					5774,	-- Pattern: Green Silk Pack (RECIPE!)
@@ -115,12 +115,12 @@ root(ROOTS.WorldDrops, {
 					4416,	-- Schematic: Goblin Land Mine (RECIPE!)
 					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
 					13063,	-- Starfaller
-				}},
+				} },
 			}),
-			i(5758),	-- Mithril Lockbox,
+			i(5758),	-- Mithril Lockbox
 			i(4632),	-- Ornate Bronze Lockbox
 			i(4638, {	-- Reinforced Steel Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					16215,	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					16218,	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -138,10 +138,10 @@ root(ROOTS.WorldDrops, {
 					12683,	-- Plans: Thorium Belt (RECIPE!)
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
 					3395,	-- Recipe: Limited Invulnerability Potion (RECIPE!)
-				}},
+				} },
 			}),
 			i(4637, {	-- Steel Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11204,	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 					11202,	-- Formula: Enchant Shield - Stamina (RECIPE!)
 					8387,	-- Pattern: Big Voodoo Mask (RECIPE!)
@@ -158,10 +158,10 @@ root(ROOTS.WorldDrops, {
 					9295,	-- Recipe: Invisibility Potion (RECIPE!)
 					10603,	-- Schematic: Catseye Ultra Goggles (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
-				}},
+				} },
 			}),
 			i(4636, {	-- Strong Iron Lockbox
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					11167,	-- Formula: Enchant Boots - Lesser Spirit (RECIPE!)
 					11165,	-- Formula: Enchant Weapon - Lesser Elemental Slayer (RECIPE!)
 					7085,	-- Pattern: Azure Shoulders (RECIPE!)
@@ -181,7 +181,7 @@ root(ROOTS.WorldDrops, {
 					4417,	-- Schematic: Large Seaforium Charge (RECIPE!)
 					10606,	-- Schematic: Parachute Cloak (RECIPE!)
 					4414,	-- Schematic: Portable Bronze Mortar (RECIPE!)
-				}},
+				} },
 			}),
 			i(5759),	-- Thorium Lockbox
 			i(16883),	-- Worn Junkbox
@@ -236,7 +236,7 @@ root(ROOTS.WorldDrops, {
 		i(9847),	-- Conjurer's Cloak
 		i(10098),	-- Councillor's Cloak
 		i(3939),	-- Crochet Cloak
-		i(1782),	-- Cross-Stitched Cloak
+		i(1782),	-- Cross-stitched Cloak
 		i(10194),	-- Crusader's Cloak
 		i(15135),	-- Cutthroat's Cape
 		i(13122),	-- Dark Phantom Cape
@@ -580,13 +580,13 @@ root(ROOTS.WorldDrops, {
 		i(3941),	-- Crochet Pants
 		i(3942),	-- Crochet Shoulderpads
 		i(3943),	-- Crochet Vest
-		i(3380),	-- Cross-Stitched Belt
-		i(3381),	-- Cross-Stitched Bracers
-		i(1783),	-- Cross-Stitched Gloves
-		i(1784),	-- Cross-Stitched Pants
-		i(1780),	-- Cross-Stitched Sandals
-		i(1785),	-- Cross-Stitched Shoulderpads
-		i(1786),	-- Cross-Stitched Vest
+		i(3380),	-- Cross-stitched Belt
+		i(3381),	-- Cross-stitched Bracers
+		i(1783),	-- Cross-stitched Gloves
+		i(1784),	-- Cross-stitched Pants
+		i(1780),	-- Cross-stitched Sandals
+		i(1785),	-- Cross-stitched Shoulderpads
+		i(1786),	-- Cross-stitched Vest
 		i(13008),	-- Dalewind Trousers
 		i(14237),	-- Darkmist Armor
 		i(14240),	-- Darkmist Bands
@@ -1229,8 +1229,6 @@ root(ROOTS.WorldDrops, {
 		i(15304),	-- Grizzly Jerkin
 		i(15303),	-- Grizzly Pants
 		i(15301),	-- Grizzly Slippers
-		i(9756),	-- Gypsy Trousers
-		i(9757),	-- Gypsy Tunic
 		i(3800),	-- Hardened Leather Belt
 		i(3801),	-- Hardened Leather Boots
 		i(3802),	-- Hardened Leather Bracers
@@ -1375,6 +1373,8 @@ root(ROOTS.WorldDrops, {
 		i(9755),	-- Nomad Gloves
 		i(9751),	-- Nomad Sandals
 		i(9750),	-- Nomad Sash
+		i(9756),	-- Nomad Trousers
+		i(9757),	-- Nomad Tunic
 		i(13117),	-- Ogron's Sash
 		i(1787),	-- Patched Leather Belt
 		i(1788),	-- Patched Leather Boots
@@ -2584,7 +2584,7 @@ root(ROOTS.WorldDrops, {
 			i(15272),	-- Razor Axe
 			i(4562),	-- Severing Axe
 			i(1824),	-- Shiny War Axe
-			i(1812),	-- Short-Handled Battle Axe
+			i(1812),	-- Short-handled Battle Axe
 			i(4020),	-- Splintering Battle Axe
 			i(1828),	-- Stone War Axe
 			i(15268),	-- Twin-Bladed Axe [CATA+] / Twin-bladed Axe
@@ -2698,11 +2698,11 @@ root(ROOTS.WorldDrops, {
 			i(15210),	-- Raider Shortsword
 			i(9718, {	-- Reforged Blade of Heroes
 				cost = {
-					{ "i", 9719, 1 },	-- Broken Blade of Heroes
-					{ "i", 7068, 2 },	-- Elemental Fire
-					{ "i", 3486, 2 },	-- Heavy Grinding Stone
-					{ "i", 3859, 4 },	-- Steel Bar
-					{ "i", 3466, 4 },	-- Strong Flux
+					{ "i", 9719, 1 },	-- 1x Broken Blade of Heroes
+					{ "i", 7068, 2 },	-- 2x Elemental Fire
+					{ "i", 3486, 2 },	-- 2x Heavy Grinding Stone
+					{ "i", 3859, 4 },	-- 4x Steel Bar
+					{ "i", 3466, 4 },	-- 4x Strong Flux
 				},
 			}),
 			i(15216),	-- Rune Sword
@@ -2861,14 +2861,14 @@ root(ROOTS.WorldDrops, {
 			i(8181),	-- Hunting Rifle
 			i(13137),	-- Ironweaver
 			i(13136),	-- Lil Timmy's Peashooter
-			i(3780),	-- Long-Barreled Musket
+			i(3780),	-- Long-barreled Musket
 			i(2786),	-- Oiled Blunderbuss
 			i(8182),	-- Pellet Rifle
 			i(15323),	-- Percussion Shotgun
 			i(2100),	-- Precisely Calibrated Boomstick (does not currently load)
 			i(13825),	-- Primed Musket
 			i(4089),	-- Ricochet Blunderbuss
-			i(2774),	-- Rust-Covered Blunderbuss
+			i(2774),	-- Rust-covered Blunderbuss
 			i(4026),	-- Sentinel Musket
 			i(15325),	-- Sharpshooter Harquebus
 			i(13146),	-- Shell Launcher Shotgun
@@ -2955,8 +2955,8 @@ root(ROOTS.WorldDrops, {
 		i(9843),	-- Banded Shield
 		i(9778),	-- Bandit Buckler
 		i(6559),	-- Bard's Buckler
-		i(3650),	-- Battle Shield
 		i(2210),	-- Battered Buckler
+		i(3650),	-- Battle Shield
 		i(6599),	-- Battleforge Shield
 		i(2211),	-- Bent Large Shield
 		i(4069),	-- Blackforge Buckler
@@ -3011,7 +3011,6 @@ root(ROOTS.WorldDrops, {
 		i(15298),	-- Grizzly Buckler
 		i(15512),	-- Grunt's Shield
 		i(15621),	-- Gryphon Mail Buckler
-		i(9753),	-- Gypsy Buckler
 		i(14607),	-- Hawkeye's Buckler
 		i(15352),	-- Headhunter's Buckler
 		i(10204),	-- Heavy Lamellar Shield
@@ -3044,6 +3043,7 @@ root(ROOTS.WorldDrops, {
 		i(10158),	-- Mercurial Guard
 		i(13082),	-- Mountainside Buckler
 		i(8134),	-- Myrmidon's Defender
+		i(9753),	-- Nomad Buckler
 		i(10362),	-- Ornate Shield
 		i(15504),	-- Outrunner's Shield
 		i(9974),	-- Overlord's Shield
@@ -3331,7 +3331,7 @@ root(ROOTS.WorldDrops, {
 		i(5572),	-- Small Green Pouch
 		i(805),	-- Small Red Pouch
 		i(4500),	-- Traveler's Backpack
-		i(1685),	-- Troll-Hide Bag
+		i(1685),	-- Troll-hide Bag
 		i(5574),	-- White Leather Bag
 	}),
 	filter(RELICS_F, {
@@ -3372,7 +3372,7 @@ root(ROOTS.WorldDrops, {
 			i(211784, {	-- Scroll: WUBBA WUBBA
 				description = "This might just be a Pee Wee Herman quote.",
 			}),
-			i(213545),	-- PEATCHY ATTAX
+			i(213545),	-- Scroll: PEATCHY ATTAX
 			i(213546),	-- Scroll: SHOOBEEDOOP
 			i(213547),	-- Scroll: THAW WORDS
 			i(213544),	-- Scroll: TOPAZ YORAK
@@ -3415,30 +3415,30 @@ root(ROOTS.WorldDrops, {
 	filter(RECIPES, {
 		-- Sort away Blueprints to dungeons
 		prof(ALCHEMY, {
-			i(273085, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Fermenter (RECIPE!)
-			i(13518),	-- Flask of Petrification (RECIPE!)
-			i(3832),	-- Recipe: Draught of Detect Lesser Invisibility (RECIPE!)
+			i(273085, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Fermenter (RECIPE!)
 			i(9297),	-- Recipe: Draught of Dream Vision (RECIPE!)
-			i(9298),	-- Recipe: Elixir of Greater Strength (RECIPE!)
+			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility (RECIPE!)
+			i(9298),	-- Recipe: Elixir of Giants (RECIPE!)
 			i(3396),	-- Recipe: Elixir of Lesser Agility (RECIPE!)
 			i(3830),	-- Recipe: Elixir of Lesser Fortitude (RECIPE!)
 			i(2553),	-- Recipe: Elixir of Minor Agility (RECIPE!)
-			i(250380, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
-			i(6211),	-- Recipe: Elixir of Ogre Strength (RECIPE!)
+			i(250380, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Elixir of Minor Spirit (RECIPE!)
+			i(6211),	-- Recipe: Elixir of Ogre's Strength (RECIPE!)
+			i(13518),	-- Recipe: Flask of Petrification (RECIPE!)
 			i(13493),	-- Recipe: Greater Arcane Elixir (RECIPE!)
 			i(13490),	-- Recipe: Greater Stoneshield Potion (RECIPE!)
 			i(9295),	-- Recipe: Invisibility Potion (RECIPE!)
-			i(250983, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Frenzy Potion (RECIPE!)
-			i(250989, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Mender's Potion (RECIPE!)
-			i(250977, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Lesser Spellblasting Potion (RECIPE!)
+			i(250983, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Frenzy Potion (RECIPE!)
+			i(250989, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Mender's Potion (RECIPE!)
+			i(250977, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Lesser Spellblasting Potion (RECIPE!)
 			i(3395),	-- Recipe: Limited Invulnerability Potion (RECIPE!)
 			i(9293),	-- Recipe: Magic Resistance Potion (RECIPE!)
-			i(250366, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Cleric's Elixir (RECIPE!)
-			i(250982, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Frenzy Potion (RECIPE!)
-			i(250375, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mageblood Elixir (RECIPE!)
+			i(250366, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Cleric's Elixir (RECIPE!)
+			i(250982, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Frenzy Potion (RECIPE!)
+			i(250375, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Mageblood Elixir (RECIPE!)
 			i(3393),	-- Recipe: Minor Magic Resistance Potion (RECIPE!)
-			i(250988, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Mender's Potion (RECIPE!)
-			i(250976, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Recipe: Minor Spellblasting Potion (RECIPE!)
+			i(250988, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Mender's Potion (RECIPE!)
+			i(250976, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Recipe: Minor Spellblasting Potion (RECIPE!)
 			i(3394),	-- Recipe: Potion of Poison Cleansing (RECIPE!)
 			i(13492),	-- Recipe: Purification Potion (RECIPE!)
 			i(2555),	-- Recipe: Swiftness Potion (RECIPE!)
@@ -3449,9 +3449,9 @@ root(ROOTS.WorldDrops, {
 			i(3831),	-- Recipe: Troll's Blood Elixir (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(273086, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Anvil (RECIPE!)
+			i(273086, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Anvil (RECIPE!)
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
-			i(251454, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Brass Knuckles (RECIPE!)
+			i(251454, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Brass Knuckles (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
@@ -3492,11 +3492,11 @@ root(ROOTS.WorldDrops, {
 			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
-			i(251335, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Boots (RECIPE!)
-			i(251339, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Breastplate (RECIPE!)
-			i(251337, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Gauntlet (RECIPE!)
-			i(251336, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Leggings (RECIPE!)
-			i(251338, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Sterling Silver Shoulders (RECIPE!)
+			i(251335, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Boots (RECIPE!)
+			i(251339, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Breastplate (RECIPE!)
+			i(251337, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Gauntlet (RECIPE!)
+			i(251336, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Leggings (RECIPE!)
+			i(251338, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Plans: Sterling Silver Shoulders (RECIPE!)
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
 			i(12683),	-- Plans: Thorium Belt (RECIPE!)
@@ -3514,7 +3514,7 @@ root(ROOTS.WorldDrops, {
 			--]]
 		}),
 		prof(ENCHANTING, {
-			i(273103, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Arcane Salvager (RECIPE!)
+			i(273103, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Blueprint: Arcane Salvager (RECIPE!)
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245),	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
@@ -3523,7 +3523,7 @@ root(ROOTS.WorldDrops, {
 			i(11204),	-- Formula: Enchant Bracer - Greater Spirit (RECIPE!)
 			i(11225),	-- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 			i(6375),	-- Formula: Enchant Bracer - Lesser Spirit (RECIPE!)
-			i(249474, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Formula: Enchant Bracer - Minor Intellect (RECIPE!)
+			i(249474, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Formula: Enchant Bracer - Minor Intellect (RECIPE!)
 			i(6344),	-- Formula: Enchant Bracer - Minor Spirit (RECIPE!)
 			i(6347),	-- Formula: Enchant Bracer - Minor Strength (RECIPE!)
 			i(16218),	-- Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -3592,7 +3592,7 @@ root(ROOTS.WorldDrops, {
 			i(7364),	-- Pattern: Heavy Earthen Gloves (RECIPE!)
 			i(15743),	-- Pattern: Heavy Scorpid Belt (RECIPE!)
 			i(4294),	-- Pattern: Hillman's Belt (RECIPE!)
-			i(252804, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
+			i(252804, { timeline = { TIMELINE.ADDED_1_60_1 } }),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
@@ -3666,24 +3666,24 @@ root(ROOTS.WorldDrops, {
 			i(10301),	-- Pattern: White Bandit Mask (RECIPE!)
 
 			--[[Sort out later to dungeons?]]
-			i(253976),	-- Pattern: Filigreed Pristine Circlet
-			i(253978),	-- Pattern: Filigreed Silky Circlet
-			i(253980),	-- Pattern: Filigreed Flame Circlet
-			i(253982),	-- Pattern: Filigreed Shadow Circlet
-			i(253984),	-- Pattern: Filigreed Pearly Circlet
-			i(253986),	-- Pattern: Filigreed Shining Circlet
-			i(253938),	-- Pattern: Filigreed Pristine Leggings
-			i(253940),	-- Pattern: Filigreed Silky Leggings
-			i(253942),	-- Pattern: Filigreed Flame Leggings
-			i(253944),	-- Pattern: Filigreed Shadow Leggings
-			i(253946),	-- Pattern: Filigreed Pearly Leggings
-			i(253948),	-- Pattern: Filigreed Shining Leggings
-			i(253902),	-- Pattern: Filigreed Pristine Gown
-			i(253904),	-- Pattern: Filigreed Silky Gown
-			i(253906),	-- Pattern: Filigreed Flame Gown
-			i(253912),	-- Pattern: Filigreed Shining Gown
-			i(253910),	-- Pattern: Filigreed Pearly Gown
-			i(253908),	-- Pattern: Filigreed Shadow Gown
+			i(253976),	-- Pattern: Filigreed Pristine Circlet (RECIPE!)
+			i(253978),	-- Pattern: Filigreed Silky Circlet (RECIPE!)
+			i(253980),	-- Pattern: Filigreed Flame Circlet (RECIPE!)
+			i(253982),	-- Pattern: Filigreed Shadow Circlet (RECIPE!)
+			i(253984),	-- Pattern: Filigreed Pearly Circlet (RECIPE!)
+			i(253986),	-- Pattern: Filigreed Shining Circlet (RECIPE!)
+			i(253938),	-- Pattern: Filigreed Pristine Leggings (RECIPE!)
+			i(253940),	-- Pattern: Filigreed Silky Leggings (RECIPE!)
+			i(253942),	-- Pattern: Filigreed Flame Leggings (RECIPE!)
+			i(253944),	-- Pattern: Filigreed Shadow Leggings (RECIPE!)
+			i(253946),	-- Pattern: Filigreed Pearly Leggings (RECIPE!)
+			i(253948),	-- Pattern: Filigreed Shining Leggings (RECIPE!)
+			i(253902),	-- Pattern: Filigreed Pristine Gown (RECIPE!)
+			i(253904),	-- Pattern: Filigreed Silky Gown (RECIPE!)
+			i(253906),	-- Pattern: Filigreed Flame Gown (RECIPE!)
+			i(253912),	-- Pattern: Filigreed Shining Gown (RECIPE!)
+			i(253910),	-- Pattern: Filigreed Pearly Gown (RECIPE!)
+			i(253908),	-- Pattern: Filigreed Shadow Gown (RECIPE!)
 		}),
 		cl(DRUID, {
 			i(17682, {	-- Book: Gift of the Wild
@@ -3796,8 +3796,8 @@ root(ROOTS.WorldDrops, {
 			description = "Drops from spiders in the level bracket 45-60.",
 			crs = {
 				1821,	-- Carrion Lurker
-				5858,	-- Greater Lava Spider
 				1824,	-- Plague Lurker
+				5858,	-- Searing Lava Spider
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
@@ -3832,10 +3832,10 @@ root(ROOTS.WorldDrops, {
 				4431,	-- Darkfang Spider
 				4377,	-- Darkmist Lurker
 				5856,	-- Glassweb Spider
-				5858,	-- Greater Lava Spider
+				5858,	-- Searing Lava Spider
 				5857,	-- Searing Lava Spider
 				4412,	-- Darkfang Creeper
-				4414,	-- Darkfang Venomspider
+				4414,	-- Darkfang Venomspitter
 				4378,	-- Darkmist Recluse
 				4379,	-- Darkmist Silkspinner
 				4376,	-- Darkmist Spider
@@ -4020,7 +4020,7 @@ root(ROOTS.WorldDrops, {
 				MAP.SEARING_GORGE,
 			},
 		}),
-		i(7077, {	-- Hearth of Fire
+		i(7077, {	-- Heart of Fire
 			coords = {
 				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, MAP.UNGORO_CRATER },	-- Fire Plum Ridge
@@ -4078,7 +4078,7 @@ root(ROOTS.WorldDrops, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 			},
 			maps = {
 				MAP.DIRE_MAUL,
@@ -4103,7 +4103,7 @@ root(ROOTS.WorldDrops, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 			},
 			maps = {
 				MAP.DIRE_MAUL,
@@ -4118,7 +4118,7 @@ root(ROOTS.WorldDrops, {
 				{ 53.0, 42.0, MAP.WINTERSPRING },	-- Lake Kel'Theril
 			},
 			crs = {
-				7524,	-- Anghuished Highborne
+				7524,	-- Anguished Highborne
 				12378,	-- Damned Soul
 				6116,	-- Highborne Apparition
 				6117,	-- Highborne Lichling
@@ -4249,7 +4249,7 @@ root(ROOTS.WorldDrops, {
 				i(5498),	-- Small Lustrous Pearl
 			},
 		}),
-		i(5524, {	-- Thick-Shelled Clam
+		i(5524, {	-- Thick-shelled Clam
 			maps = {
 				MAP.BLACKFATHOM_DEEPS,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -4479,7 +4479,7 @@ root(ROOTS.WorldDrops, {
 				{ 64.0, 20.1, MAP.DUSKWOOD },	-- The Darkened Bank, east.
 			},
 			crs = {
-				565,	-- Rapid Dire Wolf
+				565,	-- Rabid Dire Wolf
 				213,	-- Starving Dire Wolf
 			},
 			description = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
@@ -4490,7 +4490,7 @@ root(ROOTS.WorldDrops, {
 				{ 50.0, 31.3, MAP.HILLSBRAD_FOOTHILLS },	-- Darrow Hill
 			},
 			crs = {
-				2385,	-- Foothill Stalker
+				2385,	-- Feral Mountain Lion
 				2384,	-- Starving Mountain Lion
 			},
 			description = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
@@ -4526,7 +4526,7 @@ root(ROOTS.WorldDrops, {
 				{ 40.0, 22.0, MAP.STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
 			},
 			crs = {
-				2635,	-- Elder Snapjaw Crocolisk
+				2635,	-- Elder Saltwater Crocolisk
 				1150,	-- River Crocolisk
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
@@ -4655,7 +4655,7 @@ root(ROOTS.WorldDrops, {
 			},
 			crs = {
 				3056,	-- Ghost Howl
-				1922,	-- Grey Forest Wolf
+				1922,	-- Gray Forest Wolf
 				525,	-- Mangy Wolf
 				2959,	-- Prairie Stalker
 				2958,	-- Prairie Wolf
@@ -4681,7 +4681,7 @@ root(ROOTS.WorldDrops, {
 				{ 40.0, 22.0, MAP.STRANGLETHORN_VALE },	-- Lake Nazieriti, south end.
 			},
 			crs = {
-				2635,	-- Elder Snapjaw Crocolisk
+				2635,	-- Elder Saltwater Crocolisk
 				1150,	-- River Crocolisk
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
@@ -4972,7 +4972,7 @@ root(ROOTS.WorldDrops, {
 			},
 			crs = {
 				7857,	-- Southsea Dock Worker
-				7856,	-- Southsea Frebooter
+				7856,	-- Southsea Freebooter
 				15685,	-- Southsea Kidnapper
 				7902,	-- Treasure Hunting Buccaneer
 				7899,	-- Treasure Hunting Pirate

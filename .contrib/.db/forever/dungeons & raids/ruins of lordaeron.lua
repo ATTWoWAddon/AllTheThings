@@ -6,8 +6,8 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 	icon = [[~_.asset("ruinsoflordaeron")]],
 	zoneTextAreaID = 16611,	-- Ruins of Lordaeron
 	coord = { 50.0, 50.0, MAP.TIRISFAL_GLADES },
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 15,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(QUESTS, {
 			q(92401, {	-- A Frightened Request
@@ -26,7 +26,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Head of the Baron
-						provider = { "i", 268518 },	-- Head of the Baron
+						provider = { "i", 268518 },	-- Head of the Baron (QI!)
 						cr = 250660,	-- The Baron
 					}),
 					i(279865),	-- Grave Shroud
@@ -40,7 +40,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/10 Bloodied Insignia
-						provider = { "i", 268540 },	-- Bloodied Insignia
+						provider = { "i", 268540 },	-- Bloodied Insignia (QI!)
 					}),
 					i(279868),	-- Duty Bound Leggings
 					i(279869),	-- Remembrance Armor
@@ -73,7 +73,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/25 Intact Limbs
-						provider = { "i", 268580 },	-- Intact Limbs
+						provider = { "i", 268580 },	-- Intact Limbs (QI!)
 					}),
 					i(279875),	-- Spare Part Bindings
 					i(279874),	-- The Stitcher
@@ -88,11 +88,11 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 			q(95161, {	-- Remember That I Love You (2/2)
 				sourceQuest = 92415,	-- Remember That I Love You (1/2)
 				qg = 14450,	-- Orphan Matron Nightingale
-				qi = 251522,	-- Blood-Stained Letter (QS!)
 				coord = { 56.2, 54.2, MAP.STORMWIND_CITY },
 				maps = { MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 251522,	-- Blood-Stained Letter (QS!)
 				groups = {
 					i(279870),	-- Tarnished Locket
 				},
@@ -104,7 +104,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Highly Toxic Strain
-						provider = { "i", 275443 },	-- Highly Toxic Strain
+						provider = { "i", 275443 },	-- Highly Toxic Strain (QI!)
 						cr = 250483,	-- Witherfang
 					}),
 					i(279876),	-- Plaguefang
@@ -133,10 +133,10 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 			q(97289, {	-- Unending Torment (2/5)
 				sourceQuest = 97288,	-- Unending Torment (1/5)
 				qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
-				qi = 268518,	-- Head of the Baron (PQI!)
 				coord = { 48.4, 69.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 16,
+				qi = 268518,	-- Head of the Baron (QI!)
 			}),
 			q(97290, {	-- Unending Torment (3/5)
 				sourceQuest = 97289,	-- Unending Torment (2/5)
@@ -158,7 +158,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Toxic Skullcap
-						provider = { "i", 281246 },	-- Toxic Skullcap
+						provider = { "i", 281246 },	-- Toxic Skullcap (QI!)
 						coords = {
 							{ 63.4, 40.0, MAP.UNDERCITY },
 							{ 68.8, 40.0, MAP.UNDERCITY },
@@ -170,7 +170,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 					objective(2, {	-- 0/1 Blisterweed
 						-- CRIEVE NOTE: Get coordinate and the objectID
 						providers = {
-							{ "i", 281300 },	-- Blisterweed
+							{ "i", 281300 },	-- Blisterweed (QI!)
 							--{ "o",  },	-- Blisterweed
 						},
 					}),
@@ -189,7 +189,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Hissing Serum administered
-						provider = { "i", 281327 },	-- Hissing Serum
+						provider = { "i", 281327 },	-- Hissing Serum (QI!)
 					}),
 				},
 			}),

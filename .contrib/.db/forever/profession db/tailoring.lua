@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(TAILORING);
 ---------------
 -- TAILORING --
 ---------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 3908);			-- Tailoring (Apprentice)
 i(0, 3909);			-- Tailoring (Journeyman)
 i(0, 3910);			-- Tailoring (Expert)
@@ -96,10 +96,10 @@ i(0, 8467);			-- White Woolen Dress
 i(0, 3757);			-- Woolen Bag
 i(0, 2401);			-- Woolen Boots
 i(0, 2402);			-- Woolen Cape
---- QUEST ---
+-- - QUEST ---
 i(0, 1263425);		-- Camp Chair
 i(0, 19435);		-- Mooncloth Boots
---- ITEM ---
+-- - ITEM ---
 i(10318, 12081);	-- Admiral's Hat
 i(7085, 8795);		-- Azure Shoulders
 i(7089, 8786);		-- Azure Silk Cloak
@@ -332,7 +332,7 @@ i(14485, 18421);	-- Wizardweave Leggings
 i(14500, 18446);	-- Wizardweave Robe
 i(14505, 18450);	-- Wizardweave Turban
 i(253668, 1257017);	-- Woolen Reagent Bag
---- UNSURE ---
+-- - UNSURE ---
 i(0, 26086);		-- Felcloth Bag
 --[[
 -- unknown
@@ -491,6 +491,6 @@ i(0, 28207);		-- Glacial Vest
 i(0, 28209);		-- Glacial Wrists
 -- ZG
 i(19766, 24093);	-- Bloodvine Boots
-i(19765, 24092);	-- Bloodvine Leggings 
+i(19765, 24092);	-- Bloodvine Leggings
 i(19764, 24091);	-- Bloodvine Vest
 --]]

@@ -42,7 +42,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Fine Moonstalker Pelt
-						provider = { "i", 5386 },	-- Fine Moonstalker Pelt
+						provider = { "i", 5386 },	-- Fine Moonstalker Pelt (QI!)
 						crs = {
 							2071,	-- Moonstalker Matriarch
 							2237,	-- Moonstalker Sire
@@ -54,20 +54,20 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(993, {	-- A Lost Master (2/2)
 				sourceQuest = 986,	-- A Lost Master (1/2)
 				qg = 3693,	-- Terenthis
-				qi = 5387,	-- Enchanted Moonstalker Cloak
 				coord = { 39.4, 43.5, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				qi = 5387,	-- Enchanted Moonstalker Cloak
 			}),
 			q(78088, {	-- A Strange Artifact
 				provider = { "o", 409289 },	-- Strange Orb
-				qi = 209748,	-- Althalaxx Orb (PQI!)
 				coord = { 56.2, 26.4, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
 				lvl = 22,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 209748,	-- Althalaxx Orb (PQI!)
 			}),
 			q(4812, {	-- As Water Cascades
 				sourceQuest = 4811,	-- The Red Crystal
@@ -77,9 +77,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/1 Moonwell Water Tube
-						provider = { "i", 14339 },	-- Moonwell Water Tube
+						provider = { "i", 14339 },	-- Moonwell Water Tube (QI!)
 						coord = { 37.0, 43.0, MAP.DARKSHORE },
-						cost = { { "i", 14338, 1 } },	-- Empty Water Tube
+						cost = { { "i", 14338, 1 } },	-- 1x Empty Water Tube (QI!)
 					}),
 				},
 			}),
@@ -108,7 +108,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/8 Grell Earring
-						provider = { "i", 5336 },	-- Grell Earring
+						provider = { "i", 5336 },	-- Grell Earring (QI!)
 						crs = {
 							2189,	-- Vile Sprite
 							2190,	-- Wild Grell
@@ -124,7 +124,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/1 Ancient Moonstone Seal
-						provider = { "i", 5338 },	-- Ancient Moonstone Seal
+						provider = { "i", 5338 },	-- Ancient Moonstone Seal (QI!)
 						cr = 2212,	-- Deth'ryll Satyr
 					}),
 				},
@@ -138,7 +138,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Destroy the seal at the ancient flame
 						providers = {
-							{ "i", 5338 },	-- Ancient Moonstone Seal
+							{ "i", 5338 },	-- Ancient Moonstone Seal (QI!)
 							{ "o", 16393 },	-- Ancient Flame
 						},
 						coord = { 42.0, 61.0, MAP.DARKSHORE },
@@ -152,7 +152,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175233 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones (QI!)
 				},
 				coord = { 42.0, 31.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -162,7 +162,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175226 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones (QI!)
 				},
 				coord = { 36.0, 70.8, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -172,7 +172,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175227 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones (QI!)
 				},
 				coord = { 32.7, 80.9, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -182,7 +182,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 175230 },	-- Beached Sea Creature
-					{ "i",  12242 },	-- Sea Creature Bones
+					{ "i", 12242 },	-- Sea Creature Bones (QI!)
 				},
 				coord = { 31.2, 87.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -192,7 +192,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176190 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains (QI!)
 				},
 				coord = { 37.2, 62.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -202,7 +202,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176197 },	-- Beached Sea Turtle
-					{ "i",  12292 },	-- Strangely Marked Box
+					{ "i", 12292 },	-- Strangely Marked Box (QI!)
 				},
 				coord = { 44.2, 20.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -212,7 +212,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176196 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains (QI!)
 				},
 				coord = { 53.1, 18.1, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -222,7 +222,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176198 },	-- Beached Sea Turtle
-					{ "i",  12292 },	-- Strangely Marked Box
+					{ "i", 12292 },	-- Strangely Marked Box (QI!)
 				},
 				coord = { 31.7, 83.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -232,7 +232,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 4681,	-- Washed Ashore (2/2)
 				providers = {
 					{ "o", 176191 },	-- Beached Sea Turtle
-					{ "i",  12289 },	-- Sea Turtle Remains
+					{ "i", 12289 },	-- Sea Turtle Remains (QI!)
 				},
 				coord = { 31.2, 85.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -246,7 +246,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/6 Moonstalker Fang
-						provider = { "i", 5413 },	-- Moonstalker Fang
+						provider = { "i", 5413 },	-- Moonstalker Fang (QI!)
 						crs = {
 							2069,	-- Moonstalker
 							2071,	-- Moonstalker Matriarch
@@ -265,7 +265,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/3 Thresher Eye
-						provider = { "i", 5412 },	-- Thresher Eye
+						provider = { "i", 5412 },	-- Thresher Eye (QI!)
 						crs = {
 							2185,	-- Darkshore Thresher
 							2187,	-- Elder Darkshore Thresher
@@ -281,7 +281,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/4 Grizzled Scalp
-						provider = { "i", 5414 },	-- Grizzled Scalp
+						provider = { "i", 5414 },	-- Grizzled Scalp (QI!)
 						crs = {
 							6788,	-- Den Mother
 							2165,	-- Grizzled Thistle Bear
@@ -298,7 +298,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/6 Crawler Leg
-						provider = { "i", 5385 },	-- Crawler Leg
+						provider = { "i", 5385 },	-- Crawler Leg (QI!)
 						crs = {
 							2231,	-- Pygmy Tide Crawler
 							2236,	-- Raging Reef Crawler
@@ -317,14 +317,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/5 Scaber Stalk
 						providers = {
-							{ "i", 5271 },	-- Scaber Stalk
+							{ "i", 5271 },	-- Scaber Stalk (QI!)
 							{ "o", 11714 },	-- Scaber Stalk
 						},
 						coord = { 55.1, 34.6, MAP.DARKSHORE },
 					}),
 					objective(2, {	-- 0/1 Death Cap
 						providers = {
-							{ "i", 5270 },	-- Death Cap
+							{ "i", 5270 },	-- Death Cap (QI!)
 							{ "o", 11713 },	-- Death Cap
 						},
 						coord = { 55.4, 36.4, MAP.DARKSHORE },
@@ -346,14 +346,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(6124, {	-- Curing the Sick (A)
 				sourceQuest = 6123,	-- Gathering the Cure
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.6, 40.6, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/10 Sickly Deer cured
-						provider = { "i", 15826 },	-- Curative Animal Salve
+						provider = { "i", 15826 },	-- Curative Animal Salve (QI!)
 						cr = 12298,	-- Sickly Deer
 					}),
 					i(15866),	-- Veildust Medicine Bag
@@ -361,21 +361,21 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(982, {	-- Deep Ocean, Vast Sea
 				sourceQuest = 97894,	-- Business in Auberdine
-				qg = 6301,	-- Gorbold Steelhand
+				qg = 6301,	-- Gorbold Steelhand <General Trade Supplier>
 				coord = { 38.1, 41.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/1 Silver Dawning's Lockbox
 						providers = {
-							{ "i",  12191 },	-- Silver Dawning's Lockbox
+							{ "i", 12191 },	-- Silver Dawning's Lockbox (QI!)
 							{ "o", 175165 },	-- Silver Dawning's Lockbox
 						},
 						coord = { 38.3, 28.8, MAP.DARKSHORE },
 					}),
 					objective(2, {	-- 0/1 Mist Veil's Lockbox
 						providers = {
-							{ "i",  12192 },	-- Mist Veil's Lockbox
+							{ "i", 12192 },	-- Mist Veil's Lockbox (QI!)
 							{ "o", 175166 },	-- Mist Veil's Lockbox
 						},
 						coord = { 39.7, 27.4, MAP.DARKSHORE },
@@ -388,9 +388,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(2178, {	-- Easy Strider Living
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.7, 40.7, MAP.DARKSHORE },
-				cost = { { "i", 5469, 5 } },	-- Strider Meat
+				cost = { { "i", 5469, 5 } },	-- 5x Strider Meat
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -408,7 +408,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/12 Electropeller
-						provider = { "i", 6718 },	-- Electropeller
+						provider = { "i", 6718 },	-- Electropeller (QI!)
 						coords = {
 							{ 52.0, 28.9, MAP.DARKSHORE },
 							{ 41.5, 73.4, MAP.DARKSHORE },
@@ -418,9 +418,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(994, {	-- Escape Through Force
-				altQuests = { 995 },	-- Escape Through Stealth
 				description = "This quest becomes unavailable if you complete Escape Through Stealth",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 995 },	-- Escape Through Stealth
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -430,9 +430,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(995, {	-- Escape Through Stealth
-				altQuests = { 994 },	-- Escape Through Force
 				description = "This quest becomes unavailable if you complete Escape Through Force",
 				sourceQuest = 993,	-- A Lost Master (2/2)
+				altQuests = { 994 },	-- Escape Through Force
 				qg = 3692,	-- Volcor
 				coord = { 45.0, 85.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -443,11 +443,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 			q(97914, {	-- Expanding Horizons
 				qg = 3649,	-- Thundris Windweaver
-				qi = 279045,	-- Thundris' Letter (PQI!)
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279045,	-- Thundris' Letter (QI!)
 			}),
 			q(963, {	-- For Love Eternal
 				qg = 3644,	-- Cerellean Whiteclaw
@@ -456,7 +456,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Anaya's Pendant
-						provider = { "i", 5382 },	-- Anaya's Pendant
+						provider = { "i", 5382 },	-- Anaya's Pendant (QI!)
 						coord = { 43.2, 59.8, MAP.DARKSHORE },
 						cr = 3667,	-- Anaya Dawnrunner
 					}),
@@ -470,7 +470,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/6 Fine Crab Chunks
-						provider = { "i", 12237 },	-- Fine Crab Chunks
+						provider = { "i", 12237 },	-- Fine Crab Chunks (QI!)
 						crs = {
 							2233,	-- Encrusted Tide Crawler
 							2235,	-- Reef Crawler
@@ -489,22 +489,22 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Gaffer Jack
-						provider = { "i", 6717 },	-- Gaffer Jack
+						provider = { "i", 6717 },	-- Gaffer Jack (QI!)
 					}),
 				},
 			}),
 			q(6123, {	-- Gathering the Cure (A)
 				sourceQuest = 6122,	-- The Principal Source [A]
-				qg = 3702,	-- Alanndarian Nightsong
+				qg = 3702,	-- Alanndarian Nightsong <Pet Trainer>
 				coord = { 37.6, 40.6, MAP.DARKSHORE },
-				cost = { { "i", 2449, 5 } },	-- Earthroot
+				cost = { { "i", 2449, 5 } },	-- 5x Earthroot
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
 				groups = {
 					objective(2, {	-- 0/12 Lunar Fungus
 						providers = {
-							{ "i",  15851 },	-- Lunar Fungus
+							{ "i", 15851 },	-- Lunar Fungus (QI!)
 							{ "o", 177750 },	-- Lunar Fungal Bloom
 						},
 					}),
@@ -517,11 +517,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Top of Gelkak's Key
-						provider = { "i", 7498 },	-- Top of Gelkak's Key
+						provider = { "i", 7498 },	-- Top of Gelkak's Key (QI!)
 						cr = 2323,	-- Giant Foreststrider
 					}),
 					objective(2, {	-- 0/1 Middle of Gelkak's Key
-						provider = { "i", 7499 },	-- Middle of Gelkak's Key
+						provider = { "i", 7499 },	-- Middle of Gelkak's Key (QI!)
 						crs = {
 							2202,	-- Greymist Coastrunner
 							2206,	-- Greymist Hunter
@@ -535,7 +535,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 						},
 					}),
 					objective(3, {	-- 0/1 Bottom of Gelkak's Key
-						provider = { "i", 7500 },	-- Bottom of Gelkak's Key
+						provider = { "i", 7500 },	-- Bottom of Gelkak's Key (QI!)
 						crs = {
 							2233,	-- Encrusted Tide Crawler
 							2236,	-- Raging Reef Crawler
@@ -609,24 +609,24 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(97926, {	-- Making Do
 				sourceQuest = 97914,	-- Expanding Horizons
 				qg = 1646,	-- Baros Alexston <City Architect>
-				qi = 279048,	-- Alexston's Reply (PQI!)
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 13,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279048,	-- Alexston's Reply (QI!)
 				groups = {
 					i(282286),	-- Shipwright's Satchel
 				},
 			}),
 			q(951, {	-- Mathystra Relics
 				sourceQuest = 950,	-- Return to Onu
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 				groups = {
 					objective(1, {	-- 0/6 Mathystra Relic
 						providers = {
-							{ "i", 5273 },	-- Mathystra Relic
+							{ "i", 5273 },	-- Mathystra Relic (QI!)
 							{ "o", 13360 },	-- Mathystra Relic
 						},
 						coord = { 59.0, 21.8, MAP.DARKSHORE },
@@ -648,26 +648,26 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(960, {	-- Onu is meditating
+			q(960, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				sourceQuest = 944,	-- The Master's Glaive
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
-					i(5251),	-- Phial of Scrying
+					i(5251),	-- Phial of Scrying (QI!)
 				},
 			}),
-			q(961, {	-- Onu is meditating
+			q(961, {	-- Onu is Meditating
 				description = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 				sourceQuest = 949,	-- The Twilight Camp
-				qg = 3616,	-- Onu
+				qg = 3616,	-- Onu <Ancient of Lore>
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
-					i(5251),	-- Phial of Scrying
+					i(5251),	-- Phial of Scrying (QI!)
 				},
 			}),
 			q(2118, {	-- Plagued Lands
@@ -679,7 +679,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					objective(1, {	-- Rabid Thistle Bear Captured
 						providers = {
 							{ "n", 11836 },	-- Captured Rabid Thistle Bear
-							{ "i", 7586 },	-- Tharnariun's Hope
+							{ "i", 7586 },	-- Tharnariun's Hope (QI!)
 						},
 						cr = 2164,	-- Rabid Thistle Bear
 					}),
@@ -688,8 +688,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(6343, {	-- Return to Nessa
 				sourceQuest = 6342,	-- Flight to Auberdine
 				providers = {
-					{ "n", 4200 },	-- Laird
-					{ "i", 16263 },	-- Laird's Response
+					{ "n", 4200 },	-- Laird <Fish Vendor>
+					{ "i", 16263 },	-- Laird's Response (QI!)
 				},
 				coord = { 36.8, 44.2, MAP.DARKSHORE },
 				races = { NIGHTELF },
@@ -699,7 +699,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sourceQuest = 949,	-- The Twilight Camp
 				providers = {
 					{ "o", 12666 },	-- Twilight Tome
-					{ "i", 5272 },	-- Insane Scribbles
+					{ "i", 5272 },	-- Insane Scribbles (QI!)
 				},
 				coord = { 38.7, 86.1, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -739,27 +739,27 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				},
 			}),
 			q(729, {	-- The Absent Minded Prospector (1/5)
-				sourceQuest = 730,	-- Trouble in Darkshore?
-				qg = 2913,	-- Archaeologist Hollee
+				sourceQuest = 730,	-- Trouble In Darkshore?
+				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
 			q(731, {	-- The Absent Minded Prospector (2/5)
 				sourceQuest = 729,	-- The Absent Minded Prospector (1/5)
-				qg = 2917,	-- Prospector Remtravel
+				qg = 2917,	-- Prospector Remtravel <Explorers' League>
 				coord = { 35.7, 83.7, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
 			q(741, {	-- The Absent Minded Prospector (3/5)
 				sourceQuest = 731,	-- The Absent Minded Prospector (2/5)
-				qg = 2913,	-- Archaeologist Hollee
-				qi = 4654,	-- Mysterious Fossil
+				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
 				coord = { 37.4, 41.8, MAP.DARKSHORE },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 4654,	-- Mysterious Fossil (QI!)
 				groups = {
 					i(5629),	-- Hammerfist Gloves
 					i(5630),	-- Windfelt Gloves
@@ -774,33 +774,33 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- Talisman of Corruption
 						providers = {
-							{ "i",  12355 },	-- Talisman of Corruption
+							{ "i", 12355 },	-- Talisman of Corruption (QI!)
 							{ "o", 177624 },	-- Xabraxxis' Demon Bag
 						},
 						coord = { 52.5, 33.5, MAP.DARKSHORE },
 						cost = {
-							{ "i", 12347, 1 },	-- Filled Cleansing Bowl
-							{ "i", 12341, 1 },	-- Blackwood Fruit Sample
-							{ "i", 12342, 1 },	-- Blackwood Grain Sample
-							{ "i", 12343, 1 },	-- Blackwood Nut Sample
+							{ "i", 12341, 1 },	-- 1x Blackwood Fruit Sample (QI!)
+							{ "i", 12342, 1 },	-- 1x Blackwood Grain Sample (QI!)
+							{ "i", 12343, 1 },	-- 1x Blackwood Nut Sample (QI!)
+							{ "i", 12347, 1 },	-- 1x Filled Cleansing Bowl (QI!)
 						},
 						cr = 10373,	-- Xabraxxis
 					}),
-					i(12347, {	-- Filled Cleansing Bowl
-						provider = { "i", 12346 },	-- Empty Cleansing Bowl
+					i(12347, {	-- Filled Cleansing Bowl (QI!)
+						provider = { "i", 12346 },	-- Empty Cleansing Bowl (QI!)
 						coord = { 37.76, 44.02, MAP.DARKSHORE },
 					}),
-					i(12341, {	-- Blackwood Fruit Sample
+					i(12341, {	-- Blackwood Fruit Sample (QI!)
 						provider = { "o", 175330 },	-- Blackwood Fruit Stores
 						coord = { 52.91, 33.38, MAP.DARKSHORE },
 						_allowObjectProvider = true,
 					}),
-					i(12342, {	-- Blackwood Grain Sample
+					i(12342, {	-- Blackwood Grain Sample (QI!)
 						provider = { "o", 175331 },	-- Blackwood Grain Stores
 						coord = { 50.63, 35.05, MAP.DARKSHORE },
 						_allowObjectProvider = true,
 					}),
-					i(12343, {	-- Blackwood Nut Sample
+					i(12343, {	-- Blackwood Nut Sample (QI!)
 						provider = { "o", 175329 },	-- Blackwood Nut Stores
 						coord = { 51.81, 33.43, MAP.DARKSHORE },
 						_allowObjectProvider = true,
@@ -818,9 +818,9 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 11,
 				groups = {
 					objective(1, {	-- 0/1 Cliffspring River Sample
-						provider = { "i", 12349 },	-- Cliffspring River Sample
+						provider = { "i", 12349 },	-- Cliffspring River Sample (QI!)
 						coord = { 50.76, 25.56, MAP.DARKSHORE },
-						cost = { { "i", 12350, 1 } },	-- Empty Sampling Tube
+						cost = { { "i", 12350, 1 } },	-- 1x Empty Sampling Tube (QI!)
 					}),
 				},
 			}),
@@ -844,7 +844,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				description = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 				qg = 10216,	-- Gubber Blump
 				coord = { 36.1, 44.9, MAP.DARKSHORE },
-				cost = { { "i", 12238, 6 } },	-- Darkshore Grouper
+				cost = { { "i", 12238, 6 } },	-- 6x Darkshore Grouper
 				requireSkill = FISHING,
 				races = ALLIANCE_ONLY,
 				lvl = 10,
@@ -867,8 +867,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(944, {	-- The Master's Glaive
 				sourceQuest = 948,	-- Onu
 				providers = {
-					{ "n", 3616 },	-- Onu
-					{ "i", 5251 },	-- Phial of Scrying
+					{ "n", 3616 },	-- Onu <Ancient of Lore>
+					{ "i", 5251 },	-- Phial of Scrying (QI!)
 					{ "o", 10076 },	-- Scrying Bowl
 				},
 				coord = { 43.5, 76.3, MAP.DARKSHORE },
@@ -888,14 +888,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 12,
 			}),
 			q(5321, {	-- The Sleeper Has Awakened
-				qg = 11218,	-- Kerlonian Evershade
+				qg = 11218,	-- Kerlonian Evershade <Druid of the Claw>
 				coord = { 44.4, 76.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
 				groups = {
 					objective(1, {	-- Escort Kerlonian Evershade to Maestra's Post
 						providers = {
-							{ "i",  13536 },	-- Horn of Awakening
+							{ "i", 13536 },	-- Horn of Awakening (QI!)
 							{ "o", 176634 },	-- Kerlonian's Chest
 						},
 						coord = { 44.4, 76.4, MAP.DARKSHORE },
@@ -922,7 +922,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/4 Worn Parchment
-						provider = { "i", 5348 },	-- Worn Parchment
+						provider = { "i", 5348 },	-- Worn Parchment (QI!)
 						cr = 2336,	-- Dark Strand Fanatic
 					}),
 				},
@@ -930,11 +930,11 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(967, {	-- The Tower of Althalaxx (3/9)
 				sourceQuest = 966,	-- The Tower of Althalaxx (2/9)
 				qg = 3661,	-- Balthule Shadowstrike
-				qi = 5354,	-- Letter to Delgren
 				coord = { 55.0, 24.9, MAP.DARKSHORE },
 				maps = { MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				qi = 5354,	-- Letter to Delgren (QI!)
 			}),
 			q(1143, {	-- The Tower of Althalaxx (8/9)
 				sourceQuest = 1167,	-- The Tower of Althalaxx (7/9)
@@ -944,7 +944,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 13,
 				groups = {
 					objective(1, {	-- 0/1 Athrikus Narassin's Head
-						provider = { "i", 5383 },	-- Athrikus Narassin's Head
+						provider = { "i", 5383 },	-- Athrikus Narassin's Head (QI!)
 						coord = { 56.0, 26.0, MAP.DARKSHORE },
 						cr = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
 					}),
@@ -965,7 +965,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(949, {	-- The Twilight Camp
 				sourceQuest = 944,	-- The Master's Glaive
 				providers = {
-					{ "i", 5251 },	-- Phial of Scrying
+					{ "i", 5251 },	-- Phial of Scrying (QI!)
 					{ "o", 10076 },	-- Scrying Bowl
 				},
 				coord = { 38.6, 86.2, MAP.DARKSHORE },
@@ -993,7 +993,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/7 Highborne Relic
-						provider = { "i", 5360 },	-- Highborne Relic
+						provider = { "i", 5360 },	-- Highborne Relic (QI!)
 						crs = {
 							2176,	-- Cursed Highborne
 							2178,	-- Wailing Highborne
@@ -1030,12 +1030,12 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			q(98025, {	-- WANTED: Jai'vhanel
 				provider = { "o", 175320 },	-- WANTED: Murkdeep!
 				coord = { 37.2, 44.2, MAP.DARKSHORE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Feather of Jai'vhanel
-						provider = { "i", 281038 },	-- Feather of Jai'vhanel
+						provider = { "i", 281038 },	-- Feather of Jai'vhanel (QI!)
 						coord = { 45.2, 58.4, MAP.DARKSHORE },
 						cr = 270196,	-- Jai'vhanel
 					}),
@@ -1051,7 +1051,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Sea Creature Bones
 						providers = {
-							{ "i",  12242 },	-- Sea Creature Bones
+							{ "i", 12242 },	-- Sea Creature Bones (QI!)
 							{ "o", 175207 },	-- Beached Sea Creature
 						},
 						coord = { 36.4, 50.9, MAP.DARKSHORE },
@@ -1067,7 +1067,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				groups = {
 					objective(1, {	-- 0/1 Sea Turtle Remains
 						providers = {
-							{ "i",  12289 },	-- Sea Turtle Remains
+							{ "i", 12289 },	-- Sea Turtle Remains (QI!)
 							{ "o", 176189 },	-- Skeletal Sea Turtle
 						},
 						coord = { 31.9, 46.3, MAP.DARKSHORE },
@@ -1080,8 +1080,8 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 		}),
 		n(RARES, {
 			n(270294, {	-- Baron Marinous
-				coord = { 59.0, 22.9, MAP.DARKSHORE },
 				description = "Combine 20 Mathystral Amulet Fragments into a Mathystral Amulet, then use it at the Fathom Stone at the bottom of the spiral staircase in the Ruins of Mathystra to summon him.",
+				coord = { 59.0, 22.9, MAP.DARKSHORE },
 				cost = { { "i", 279277, 1 } },	-- Mathystral Amulet
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
@@ -1225,7 +1225,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			n(4183, {	-- Naram Longclaw <Weaponsmith>
 				coord = { 37.6, 40.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					851,	-- Cutlass
 					852,	-- Mace
 					853,	-- Hatchet
@@ -1234,7 +1234,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					1197,	-- Giant Mace
 					1198,	-- Claymore
 					2207,	-- Jambiya
-				}},
+				} },
 			}),
 			n(4189, {	-- Valdaron <Tailoring Supplies>
 				coord = { 38.1, 40.6, MAP.DARKSHORE },
@@ -1250,23 +1250,23 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			i(3173),	-- Bear Meat
 			i(5352, {	-- Book: The Powers Below
 				races = ALLIANCE_ONLY,
+				lvl = 10,
 				crs = {
 					2339,	-- Twilight Thug
 					2338,	-- Twilight Disciple
 				},
-				lvl = 10,
 			}),
 			i(5839, {	-- Journal Page
 				cr = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
 			}),
 			i(279276, {	-- Mathystral Amulet Fragment
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					271903,	-- Stormscale Beastmistress
 					2183,	-- Stormscale Warrior
 					2182,	-- Stormscale Sorceress
 					2181,	-- Stormscale Myrmidon
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(279277, {	-- Mathystral Amulet
 						cost = { { "i", 279276, 20 } },	-- 20x Mathystral Amulet Fragment

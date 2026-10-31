@@ -1,7 +1,7 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
+root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 } }, {
 	prof(ALCHEMY, {
 		filter(CONSUMABLES, {
 			i(250951),	-- Caustic Smog Potion
@@ -65,8 +65,8 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(250936),	-- Superior Spellblasting Potion
 			i(250942),	-- Superior Frenzy Potion
 			i(246948),	-- Distilled Firewater
-			i(250955),	-- Potion of Beast Culling
-			i(250954),	-- Potion of Elemental Siphoning
+			i(250955),	-- Potion of Beast Slaying
+			i(250954),	-- Potion of Elemental Purging
 		}),
 		filter(MISC, {
 			i(279990),	-- Alchemy Laboratory
@@ -74,7 +74,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(279956),	-- Mana Well
 		}),
 		filter(REAGENTS, {
-			i(249409),	-- Cerulean Dyel
+			i(249409),	-- Cerulean Dye
 			i(251290),	-- Legionite Bar
 			i(249430),	-- Magenta Dye
 			i(249410),	-- Sulfuric Acid
@@ -355,7 +355,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(249398),	-- Polished Driftwood Icon
 			i(249441),	-- Talons of Wrath
 			i(249397),	-- Tenets of the Silver Hand
-			i(249443),	-- Totem of Ancestral Protectio
+			i(249443),	-- Totem of Ancestral Protection
 			i(228176),	-- Totem of Thunder
 			-- Unknown
 			i(279250),	-- Idol of Swiftness
@@ -423,7 +423,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			i(274048),	-- 9-60 Battery Pack
 			i(279989),	-- Anarchist's Workbench
 			i(260807),	-- Compact Critter Carrier
-			i(260823),	-- Dimensional Transporter - Mt.
+			i(260823),	-- Dimensional Transporter - Mt. Hyjal
 			i(260811),	-- Gnomish Army Knife
 			i(269902),	-- Hoof-Shaped Foot Pedal
 			i(260812),	-- Loot-A-Rang

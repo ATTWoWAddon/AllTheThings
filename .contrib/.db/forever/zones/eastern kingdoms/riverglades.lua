@@ -4,8 +4,8 @@
 
 maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 	lore = "A sprawling landscape in the Eastern Kingdom which shifts from lush hillsides to ruined keeps of old.",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 1032150,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62354),	-- Explore Riverglades
@@ -75,7 +75,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(255897, {	-- Friz Frazzlespark <Specialty Goods>
 				coord = { 77.1, 52.9, MAP.RIVERGLADES },
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					-- Weapons
 					2520,	-- Broadsword
 					2521,	-- Flamberge
@@ -87,7 +87,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					2527,	-- Battle Staff
 					-- Poison Supplies
 					-- Not included.
-				}},
+				} },
 				groups = bubbleDownClassicRep(2827, {	-- Powderfuse
 					{	-- Neutral
 						
@@ -107,7 +107,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(272435, {	-- Goren Grayfellow <Armorer>
 				coord = { 37.7, 76.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2417,	-- Augmented Chain Vest
 					2419,	-- Augmented Chain Belt
 					2418,	-- Augmented Chain Leggings
@@ -131,14 +131,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					2468,	-- Studded Bracers
 					2469,	-- Studded Gloves
 					3890,	-- Studded Hat
-				}},
+				} },
 			}),
 			n(260487, {	-- Gritta Chumwater <Fisherman>
 				coord = { 78.4, 55.1, MAP.RIVERGLADES },
 				groups = {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					i(271657),	-- Fresh Chum
+					i(271657),	-- Fresh Chum (QI!)
 				},
 			}),
 			n(255895, {	-- Grizzek <General Goods>
@@ -156,15 +156,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(260565, {	-- Kor'gar <Engineering Supplies>
 				coord = { 77.6, 50.8, MAP.RIVERGLADES },
 				groups = {
-					i(271653),	-- Goblin Degreaser
+					i(271653),	-- Goblin Degreaser (QI!)
 					i(16046),	-- Schematic: Masterwork Target Dummy (RECIPE!)
 					i(16047),	-- Schematic: Thorium Tube (RECIPE!)
 				},
 			}),
-			n(260560, {	-- Fimbo Greasemitz <Poison Vendor>
+			n(260560, {	-- Krikshank <Poison Vendor>
 				coord = { 76.8, 51.1, MAP.RIVERGLADES },
 				groups = {
-					i(271654),	-- Expired Poison
+					i(271654),	-- Expired Poison (QI!)
 				},
 			}),
 			n(263326, {	-- Madam Swyndle <Agent of the Black Market>
@@ -209,10 +209,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(248820),	-- Torbernite
 				},
 			}),
-			n(259861, {	-- Paige Armstrong
+			n(259861, {	-- Paige Armstrong <Weaponsmith & Armorcrafter>
 				coord = { 64.3, 82.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2429,	-- Russet Vest
 					3593,	-- Russet Belt
 					2431,	-- Russet Pants
@@ -244,7 +244,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					2525,	-- War Hammer
 					2526,	-- Main Gauche
 					2527,	-- Battle Staff
-				}},
+				} },
 			}),
 			n(6568, {	-- Vizzklick <Tailoring Supplies>
 				coord = { 77.3, 51.3, MAP.RIVERGLADES },

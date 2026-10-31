@@ -29,12 +29,12 @@ instanceroot(227, {	-- Blackfathom Deeps
 				sourceQuest = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 				provider = { "i", 16790 },	-- Damp Note
 				races = HORDE_ONLY,
-				cr = 4802,	-- Blackfathom Tide Priestess
 				lvl = 17,
+				cr = 4802,	-- Blackfathom Tide Priestess
 			}),
 			q(6565, {	-- Allegiance to the Old Gods (2/2)
 				sourceQuest = 6564,	-- Allegiance to the Old Gods (1/2)
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+				qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 				coord = { 11.6, 34.3, MAP.ASHENVALE },
 				races = HORDE_ONLY,
 				lvl = 17,
@@ -47,24 +47,24 @@ instanceroot(227, {	-- Blackfathom Deeps
 				},
 			}),
 			q(908, {	-- Amongst the Ruins -- Might not exist //Braghe
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+				qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 				coord = { 11.6, 34.3, MAP.ASHENVALE },
 				races = HORDE_ONLY,
 				lvl = 21,
 				groups = {
 					objective(1, {	-- 0/1 Fathom Core
-						provider = { "i", 16762 },	-- Fathom Core
+						provider = { "i", 16762 },	-- Fathom Core (QI!)
 					}),
 				},
 			}),
 			q(6921, {	-- Amongst the Ruins
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+				qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 				coord = { 11.6, 34.3, MAP.ASHENVALE },
 				races = HORDE_ONLY,
 				lvl = 21,
 				groups = {
 					objective(1, {	-- 0/1 Fathom Core
-						provider = { "i", 16762 },	-- Fathom Core
+						provider = { "i", 16762 },	-- Fathom Core (QI!)
 					}),
 				},
 			}),
@@ -89,7 +89,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Head of Kelris
-						provider = { "i", 5881 },	-- Head of Kelris
+						provider = { "i", 5881 },	-- Head of Kelris (QI!)
 						cr = 4832,	-- Twilight Lord Kelris
 					}),
 					i(7002),	-- Arctic Buckler
@@ -109,7 +109,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Head of Kelris
-						provider = { "i", 5881 },	-- Head of Kelris
+						provider = { "i", 5881 },	-- Head of Kelris (QI!)
 						cr = 4832,	-- Twilight Lord Kelris
 					}),
 					i(7002),	-- Arctic Buckler
@@ -126,8 +126,8 @@ instanceroot(227, {	-- Blackfathom Deeps
 				description = "This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)",
 				qg = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 				coord = { 55.4, 25.0, MAP.DARNASSUS },
-				isBreadcrumb = true,
 				lvl = 18,
+				isBreadcrumb = true,
 			}),
 			q(971, {	-- Knowledge in the Deeps
 				sourceQuest = 968,	-- The Powers Below
@@ -138,7 +138,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				groups = {
 					objective(1, {	-- 0/1 Lorgalis Manuscript
 						providers = {
-							{ "i", 5359 },	-- Lorgalis Manuscript
+							{ "i", 5359 },	-- Lorgalis Manuscript (QI!)
 							{ "o", 13949 },	-- Pitted Iron Chest
 						},
 						description = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
@@ -154,7 +154,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/8 Corrupted Brain Stem
-						provider = { "i", 5952 },	-- Corrupted Brain Stem
+						provider = { "i", 5952 },	-- Corrupted Brain Stem (QI!)
 						crs = {
 							4807,	-- Blackfathom Myrmidon
 							4803,	-- Blackfathom Oracle
@@ -179,19 +179,19 @@ instanceroot(227, {	-- Blackfathom Deeps
 				coord = { 36.2, 67.6, MAP.STORMWIND_CITY },
 				maps = { MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(6563, {	-- The Essence of Aku'Mai
 				sourceQuest = 6562,	-- Trouble in the Deeps
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+				qg = 12736,	-- Je'neu Sancrea <Earthen Ring>
 				coord = { 11.6, 34.3, MAP.ASHENVALE },
 				races = HORDE_ONLY,
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/20 Sapphire of Aku'Mai
 						providers = {
-							{ "i",  16784 },	-- Sapphire of Aku'Mai
+							{ "i", 16784 },	-- Sapphire of Aku'Mai (QI!)
 							{ "o", 178184 },	-- Sapphire of Aku'Mai
 							{ "o", 178185 },	-- Sapphire of Aku'Mai
 							{ "o", 178186 },	-- Sapphire of Aku'Mai
@@ -204,8 +204,8 @@ instanceroot(227, {	-- Blackfathom Deeps
 				coord = { 47.3, 64.4, MAP.STONETALON_MOUNTAINS },
 				maps = { MAP.ASHENVALE },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(1199, {	-- Twilight Falls
 				qg = 4784,	-- Argent Guard Manados <The Argent Dawn>
@@ -214,7 +214,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/10 Twilight Pendant
-						provider = { "i", 5879 },	-- Twilight Pendant
+						provider = { "i", 5879 },	-- Twilight Pendant (QI!)
 						crs = {
 							4809,	-- Twilight Acolyte
 							4811,	-- Twilight Aquamancer
@@ -259,7 +259,7 @@ instanceroot(227, {	-- Blackfathom Deeps
 			sourceQuest = 6921,	-- Amongst the Ruins
 			races = HORDE_ONLY,
 			groups = {
-				i(16762),	-- Fathom Core
+				i(16762),	-- Fathom Core (QI!)
 				n(12876, {	-- Baron Aquanis
 					description = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
 					groups = {

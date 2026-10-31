@@ -4,11 +4,11 @@
 instanceroot(78790, {	-- Barrow Deeps
 	--lore = "",
 	icon = 409547,
+	isRaid = true,
+	lvl = 60,
 	--zoneTextAreaID = ,	-- Barrow Deeps
 	--coord = { , MAP.AZSHARA },
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	isRaid = true,
-	lvl = 60,
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62035),	-- Conqueror of the Deeps
@@ -17,12 +17,12 @@ instanceroot(78790, {	-- Barrow Deeps
 			
 		}),
 		--[[
-		e(, {	-- 
-			creatureID = ,	-- 
+		e(, {	--
+			creatureID = ,	--
 			groups = {
-				--i(),	-- 
+				--i(),	--
 			},
 		}),
-		]]-- 
+		]]--
 	},
 });

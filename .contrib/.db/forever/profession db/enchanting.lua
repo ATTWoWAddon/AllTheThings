@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(ENCHANTING);
 ----------------
 -- ENCHANTING --
 ----------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 7411);			-- Enchanting (Apprentice)
 i(0, 7412);			-- Enchanting (Journeyman)
 i(0, 7413);			-- Enchanting (Expert)
@@ -75,9 +75,9 @@ i(0, 7421);			-- Runed Copper Rod
 i(0, 13628);		-- Runed Golden Rod
 i(0, 7795);			-- Runed Silver Rod
 i(0, 13702);		-- Runed Truesilver Rod
---- QUEST ---
+-- - QUEST ---
 i(0, 1230643);		-- Enchanted Lute
---- ITEM ---
+-- - ITEM ---
 i(273103, 1263056);	-- Arcane Salvager
 i(249537, 1248650);	-- Brilliant Wand
 i(249507, 1249064);	-- Dreamstaff
@@ -182,7 +182,7 @@ i(249532, 1249154);	-- Totem of Thunder
 i(249508, 1249069);	-- Truesilver Conduit
 i(249509, 1249070);	-- Twisting Essence Jar
 i(17725, 21931);	-- Winter's Might
---- UNKNOWN ---
+-- - UNKNOWN ---
 --[[
 i(249475),	-- Formula: Enchant Bracer - Minor Healing Power
 r(1248459),	-- Enchant Bracer - Minor Healing Power

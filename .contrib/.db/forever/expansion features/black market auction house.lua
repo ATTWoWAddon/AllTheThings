@@ -24,12 +24,12 @@ local BLACK_MARKET_AUCTION_HOUSE = createHeader({
 });
 root(ROOTS.ExpansionFeatures, {
 	n(BLACK_MARKET_AUCTION_HOUSE, {
-		timeline = { TIMELINE.ADDED_1_60_1 },
 		symselector=SymSelector.BMAH,
 		u = BLACK_MARKET,
+		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
 			n(ARMOR, {
-				---- DUNGEON SET 1 ----
+				-- -- DUNGEON SET 1 ----
 				-- Hunter
 				i(16674),	-- Beaststalker's Tunic
 				-- Mage

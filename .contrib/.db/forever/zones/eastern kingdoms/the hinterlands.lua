@@ -80,7 +80,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Hinterlands Honey Ripple
 						providers = {
-							{ "i",   8684 },	-- Hinterlands Honey Ripple
+							{ "i", 8684 },	-- Hinterlands Honey Ripple (QI!)
 							{ "o", 142191 },	-- Horde Supply Crate
 						},
 						coords = {
@@ -105,7 +105,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- 0/1 Skylord Plume
-						provider = { "i", 19025 },	-- Skylord Plume
+						provider = { "i", 19025 },	-- Skylord Plume (QI!)
 						cr = 2659,	-- Razorbeak Skylord
 					}),
 				},
@@ -152,7 +152,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/10 Vessel of Tainted Blood
 						providers = {
-							{ "i",  19071 },	-- Vessel of Tainted Blood
+							{ "i", 19071 },	-- Vessel of Tainted Blood (QI!)
 							{ "o", 179922 },	-- Vessel of Tainted Blood
 						},
 						description = "Can be found all over Jintha'alor.",
@@ -163,8 +163,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			}),
 			q(485, {	-- Find OOX-09/HL!
 				description = "The item that starts this quest has a chance to drop from any killed creature in The Hinterlands.",
-				qi = 8704,	-- OOX-09/HL Distress Beacon
 				lvl = 43,
+				qi = 8704,	-- OOX-09/HL Distress Beacon
 			}),
 			q(4297, {	-- Food for Baby
 				sourceQuest = 3843,	-- The Newest Member of the Family
@@ -174,7 +174,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/5 Silvermane Stalker Flank
-						provider = { "i", 11472 },	-- Silvermane Stalker Flank
+						provider = { "i", 11472 },	-- Silvermane Stalker Flank (QI!)
 						cr = 2926,	-- Silvermane Stalker
 					}),
 				},
@@ -187,7 +187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- 0/1 Katoom's Best Lure
-						provider = { "i", 19023 },	-- Katoom's Best Lure
+						provider = { "i", 19023 },	-- Katoom's Best Lure (QI!)
 						coords = {
 							{ 81.4, 47.2, MAP.THE_HINTERLANDS },
 							{ 80.6, 59.6, MAP.THE_HINTERLANDS },
@@ -250,7 +250,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- 0/1 Lard's Lunch
-						provider = { "i", 19034 },	-- Lard's Lunch
+						provider = { "i", 19034 },	-- Lard's Lunch (QI!)
 						coord = { 84.6, 41.2, MAP.THE_HINTERLANDS },
 						cr = 14748,	-- Vilebranch Kidnapper
 					}),
@@ -287,7 +287,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 46,
 				groups = {
 					objective(1, {	-- 0/1 Shackle Key
-						provider = { "i", 19064 },	-- Shackle Key
+						provider = { "i", 19064 },	-- Shackle Key (QI!)
 						coord = { 57.6, 86.6, MAP.THE_HINTERLANDS },
 						cr = 10802,	-- Hitah'ya the Keeper
 					}),
@@ -330,7 +330,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/3 Roc Gizzard
-						provider = { "i", 6257 },	-- Roc Gizzard
+						provider = { "i", 6257 },	-- Roc Gizzard (QI!)
 						crs = {
 							5429,	-- Fire Roc
 							5428,	-- Roc
@@ -338,7 +338,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						},
 					}),
 					objective(2, {	-- 0/3 Ironfur Liver
-						provider = { "i", 6258 },	-- Ironfur Liver
+						provider = { "i", 6258 },	-- Ironfur Liver (QI!)
 						crs = {
 							5272,	-- Grizzled Ironfur Bear
 							5268,	-- Ironfur Bear
@@ -347,7 +347,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						},
 					}),
 					objective(3, {	-- 0/3 Groddoc Liver
-						provider = { "i", 6259 },	-- Groddoc Liver
+						provider = { "i", 6259 },	-- Groddoc Liver (QI!)
 						crs = {
 							5260,	-- Groddoc Ape
 							5262,	-- Groddoc Thunderer
@@ -358,10 +358,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(1469, {	-- Rhapsody's Tale
 				sourceQuest = 1452,	-- Rhapsody's Kalimdor Kocktail
 				qg = 5634,	-- Rhapsody Shindigger
-				qi = 6287,	-- Atal'ai Tablet Fragment
 				coord = { 26.8, 48.4, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+				qi = 6287,	-- Atal'ai Tablet Fragment (QI!)
 			}),
 			q(2742, {	-- Rin'ji is Trapped!
 				qg = 7780,	-- Rin'ji <Witherbark Troll>
@@ -373,7 +373,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				sourceQuest = 2742,	-- Rin'ji is Trapped!
 				providers = {
 					{ "o", 142127 },	-- Rin'ji's Secret
-					{ "i", 8724 },	-- Rin'ji's Secret
+					{ "i", 8724 },	-- Rin'ji's Secret (QI!)
 				},
 				coord = { 86.3, 59.1, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
@@ -382,10 +382,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(81, {		-- Ripple Delivery
 				sourceQuest = 77,	-- A Sticky Situation
 				qg = 7801,	-- Gilveradin Sunchaser
-				qi = 8685,	-- Dran's Ripple Delivery
 				coord = { 26.6, 48.4, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
 				lvl = 42,
+				qi = 8685,	-- Dran's Ripple Delivery
 			}),
 			q(649, {	-- Ripple Recovery (1/2)
 				qg = 6986,	-- Dran Droffers
@@ -409,13 +409,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- Open Sharpbeak's Cage
 						providers = {
-							{ "i",   9472 },	-- Hexx's Key
+							{ "i", 9472 },	-- Hexx's Key (QI!)
 							{ "o", 144070 },	-- Sharpbeak's Cage
 						},
 						coord = { 53.6, 66.8, MAP.THE_HINTERLANDS },
 						cr = 8023,	-- Sharpbeak
 					}),
-					i(9472, {	-- Hexx's Key
+					i(9472, {	-- Hexx's Key (QI!)
 						coord = { 59.6, 77.6, MAP.THE_HINTERLANDS },
 						cr = 7995,	-- Vile Priestess Hexx
 					}),
@@ -431,14 +431,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Huntsman Malkhor's Skull
 						providers = {
-							{ "i",  19069 },	-- Huntsman Malkhor's Skull
+							{ "i", 19069 },	-- Huntsman Malkhor's Skull (QI!)
 							{ "o", 179915 },	-- Pile of Skulls
 						},
 						coord = { 58.6, 64.9, MAP.THE_HINTERLANDS },
 					}),
 					objective(2, {	-- 0/1 Huntsman Malkhor's Bones
 						providers = {
-							{ "i",  19070 },	-- Huntsman Malkhor's Bones
+							{ "i", 19070 },	-- Huntsman Malkhor's Bones (QI!)
 							{ "o", 179914 },	-- Pile of Bones
 						},
 						coord = { 62.2, 75.5, MAP.THE_HINTERLANDS },
@@ -497,8 +497,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Shadra's Venom
 						providers = {
-							{ "i", 9324 },	-- Shadra's Venom
-							{ "i", 9323 },	-- Gadrin's Parchment
+							{ "i", 9324 },	-- Shadra's Venom (QI!)
+							{ "i", 9323 },	-- Gadrin's Parchment (QI!)
 						},
 						coord = { 34.0, 72.0, MAP.THE_HINTERLANDS },
 						cr = 2707,	-- Shadra <The Venom Queen>
@@ -508,10 +508,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(2990, {	-- Thadius Grimshade
 				sourceQuest = 2989,	-- The Altar of Zul
 				qg = 5636,	-- Gryphon Master Talonaxe
-				qi = 9468,	-- Sharpbeak's Feather
 				coord = { 9.8, 44.5, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 9468,	-- Sharpbeak's Feather (QI!)
 			}),
 			q(2989, {	-- The Altar of Zul
 				sourceQuest = 2988,	-- Witherbark Cages
@@ -528,7 +528,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- Message to the Wildhammer Delivered
-						provider = { "i", 19036 },	-- Final Message to the Wildhammer
+						provider = { "i", 19036 },	-- Final Message to the Wildhammer (QI!)
 						coord = { 14.0, 48.0, MAP.THE_HINTERLANDS },
 					}),
 					i(19119),	-- Owlbeast Hide Gloves
@@ -550,8 +550,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				},
 				cost = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(2934, {	-- Undamaged Venom Sac
 				sourceQuest = 2933,	-- Venom Bottles
@@ -561,7 +561,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Undamaged Venom Sac
-						provider = { "i", 9322 },	-- Undamaged Venom Sac
+						provider = { "i", 9322 },	-- Undamaged Venom Sac (QI!)
 						coord = { 34.8, 70.2, MAP.THE_HINTERLANDS },
 						cr = 2686,	-- Witherbark Broodguard
 					}),
@@ -570,7 +570,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(2933, {	-- Venom Bottles
 				providers = {
 					{ "o", 142702 },	-- Venom Bottle
-					{ "i", 9321 },	-- Venom Bottle
+					{ "i", 9321 },	-- Venom Bottle (QI!)
 				},
 				coord = { 23.6, 58.7, MAP.THE_HINTERLANDS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
@@ -580,11 +580,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			q(2938, {	-- Venom to the Undercity
 				sourceQuest = 2937,	-- Summoning Shadra
 				qg = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
-				qi = 9436,	-- Faranell's Parcel
 				coord = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 40,
+				qi = 9436,	-- Faranell's Parcel (QI!)
 				groups = {
 					i(9649),	-- Royal Highmark Vestments
 					i(9650),	-- Honorguard Chestpiece
@@ -598,7 +598,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				lvl = 44,
 				groups = {
 					objective(1, {	-- 0/1 Slagtree's Lost Tools
-						provider = { "i", 19033 },	-- Slagtree's Lost Tools
+						provider = { "i", 19033 },	-- Slagtree's Lost Tools (QI!)
 						coords = {
 							{ 53.3, 38.8, MAP.THE_HINTERLANDS },
 							{ 57.5, 42.6, MAP.THE_HINTERLANDS },

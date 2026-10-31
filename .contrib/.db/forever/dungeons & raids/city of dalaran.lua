@@ -11,39 +11,39 @@ instanceroot(2959, {	-- City of Dalaran
 	groups = {
 		n(QUESTS, {
 			--[[
-			q(, {	-- 
-				qg = ,	-- 
+			q(, {	--
+				qg = ,	--
 				coord = {  },
 				races = HORDE_ONLY,
 				lvl = 24,
 				groups = {
-					i(),	-- 
-					i(),	-- 
-					i(),	-- 
+					i(),	--
+					i(),	--
+					i(),	--
 				},
 			}),
-			]]-- 
+			]]--
 			q(92456, {	-- A Green Sample
-				qg = 5502,	-- Shylamiir
+				qg = 5502,	-- Shylamiir <Herbalism Trainer>
 				coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Fel Infused Blossom
-						provider = { "i", 251983 },	-- Fel Infused Blossom
+						provider = { "i", 251983 },	-- Fel Infused Blossom (QI!)
 					}),
 					i(279835),	-- Vine Pruner's Cloak
 					i(279836),	-- Thorn Protecting Girdle
 				},
 			}),
 			q(92432, {	-- An Alarming Request
-				qg = 247264,	-- Emissary Jacques
+				qg = 247264,	-- Emissary Jacques <Kirin Tor>
 				coord = { 48.3, 60.1, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(92434, {	-- Blood in the Streets
 				sourceQuests = {
@@ -51,38 +51,38 @@ instanceroot(2959, {	-- City of Dalaran
 					93680,	-- Key to the City
 				},
 				qg = 2410,	-- Magus Wordeen Voidglare
-				qi = 279469,	-- Grimy Key
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279469,	-- Grimy Key (QI!)
 			}),
 			q(92459, {	-- Friend of the Kirin Tor
 				sourceQuest = 92458,	-- Heart of Disruption [Alliance]
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 251961,	-- Arcane Mote
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 251961,	-- Arcane Mote (QI!)
 			}),
 			q(93689, {	-- Friend of the Kirin Tor
+				lvl = 24,
 				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Archmage Celindra in the City of Dalaran.
 				timeline = { TIMELINE.CREATED_1_60_1 },
-				lvl = 24,
 			}),
 			q(92458, {	-- Heart of Disruption [Alliance]
 				sourceQuest = 92432,	-- An Alarming Request
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 277507,	-- Dalaran Sewer Key
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
-						provider = { "i", 251961 },	-- Arcane Mote
+						provider = { "i", 251961 },	-- Arcane Mote (QI!)
 						cr = 246020,	-- Shade of the Archmage
 					}),
 					i(279839),	-- Spellguard Pauldrons
@@ -93,14 +93,14 @@ instanceroot(2959, {	-- City of Dalaran
 			q(96984, {	-- Heart of Disruption [Horde]
 				sourceQuest = 92434,	-- Blood in the Streets
 				qg = 269127,	-- Image of Archmage Modera
-				qi = 277507,	-- Dalaran Sewer Key
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277507,	-- Dalaran Sewer Key
 				groups = {
 					objective(1, {	-- 0/1 Arcane Mote
-						provider = { "i", 251961 },	-- Arcane Mote
+						provider = { "i", 251961 },	-- Arcane Mote (QI!)
 						cr = 246020,	-- Shade of the Archmage
 					}),
 					i(279842),	-- Battle Spaulders
@@ -111,24 +111,24 @@ instanceroot(2959, {	-- City of Dalaran
 			q(93680, {	-- Key to the City
 				qg = 2410,	-- Magus Wordeen Voidglare
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 30,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Grimy Key
-						provider = { "i", 279469 },	-- Grimy Key
+						provider = { "i", 279469 },	-- Grimy Key (QI!)
 					}),
 				},
 			}),
 			q(96987, {	-- Opportunistic Education
 				qg = 268743,	-- Rexxie Copperclutch
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 The Founding of Dalaran
-						provider = { "i", 275996 },	-- The Founding of Dalaran
+						provider = { "i", 275996 },	-- The Founding of Dalaran (QI!)
 					}),
 					i(279845),	-- Solid Gold Band
 					i(279846),	-- Larcenist's Belt
@@ -141,7 +141,7 @@ instanceroot(2959, {	-- City of Dalaran
 				lvl = 24,
 				groups = {
 					objective(1, {	-- 0/1 Mana Elemental slain
-						provider = { "n", 246016 },	-- Mana Elemental
+						provider = { "n", 246016 },	-- Arcanic Enigma
 					}),
 					i(251962),	-- Violet Sash
 					i(279849),	-- Runebound Gloves
@@ -150,21 +150,21 @@ instanceroot(2959, {	-- City of Dalaran
 			q(97287, {	-- Shrewd Negotiations
 				sourceQuest = 96984,	-- Heart of Disruption [Horde]
 				qg = 2410,	-- Magus Wordeen Voidglare
-				qi = 251961,	-- Arcane Mote
 				coord = { 61.60, 20.85, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 251961,	-- Arcane Mote (QI!)
 			}),
 			q(96988, {	-- Source of Power
-				qg = 11044,	-- Doctor Martin Felben
+				qg = 11044,	-- Doctor Martin Felben <Journeyman Alchemist Trainer>
 				coord = { 46.6, 74.4, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Cracked Sentry Core
-						provider = { "i", 275997 },	-- Cracked Sentry Core
+						provider = { "i", 275997 },	-- Cracked Sentry Core (QI!)
 						cr = 246664,	-- Fragmented Sentry
 					}),
 					i(279847),	-- Unstable Power Core
@@ -175,9 +175,9 @@ instanceroot(2959, {	-- City of Dalaran
 				sourceQuest = 92432,	-- An Alarming Request
 				qg = 269127,	-- Image of Archmage Modera
 				coord = { 68.6, 45.2, MAP.SILVERPINE_FOREST },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Seeking Remnant slain
 						provider = { "n", 247003 },	-- Seeking Remnant
@@ -195,9 +195,9 @@ instanceroot(2959, {	-- City of Dalaran
 			q(96986, {	-- The Grave Knight
 				qg = 2278,	-- Melisara
 				coord = { 62.6, 20.6, MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 24,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Atrexis the Grave Knight slain
 						provider = { "n", 247126 },	-- Atrexis the Grave Knight
@@ -245,7 +245,7 @@ instanceroot(2959, {	-- City of Dalaran
 			},
 		}),
 		e(3310, {	-- Lyn the Ignored TODO: Source the steps to unlock the attunement https://www.wowhead.com/forever/es/news/how-to-find-the-secret-boss-in-the-city-of-dalaran-dungeon-in-wow-forever-383366
-			cost = { { "i", 275989, 1 } },	-- Tome of Dalaran
+			cost = { { "i", 275989, 1 } },	-- 1x Tome of Dalaran
 			creatureID = 247032,	-- Lyn the Ignored
 			groups = {
 				i(273053),	-- Tendonscraper Dagger
@@ -289,10 +289,10 @@ instanceroot(2959, {	-- City of Dalaran
 			creatureID = 246931,	-- Mana Wraith
 			groups = {
 				--[[
-				i(),	-- 
-				i(),	-- 
-				i(),	-- 
-				]]-- 
+				i(),	--
+				i(),	--
+				i(),	--
+				]]--
 			},
 		}),
 		e(3302, {	-- Unstable Sentinel
@@ -301,7 +301,7 @@ instanceroot(2959, {	-- City of Dalaran
 				i(273046),	-- Guardian's Dualblade
 				i(273048),	-- Refractory Scaleguards
 				i(273047),	-- Unstable Crystalline Shoulderpads
-				i(273099),	-- Blueprint: Spinning Wheel
+				i(273099),	-- Blueprint: Spinning Wheel (RECIPE!)
 			},
 		}),
 		e(3303, {	-- Shade of the Archmage
@@ -310,7 +310,7 @@ instanceroot(2959, {	-- City of Dalaran
 				i(273052),	-- Ponderous Orb
 				i(273051),	-- Violet Sorcerer's Mantle
 				i(273049),	-- Archmagister's Faceted Pendant
-				i(273103),	-- Blueprint: Arcane Salvager
+				i(273103),	-- Blueprint: Arcane Salvager (RECIPE!)
 			},
 		}),
 	},

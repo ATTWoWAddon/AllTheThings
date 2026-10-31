@@ -40,7 +40,7 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 6585,	-- The Test of Skulls, Axtroz
 				providers = {
 					{ "n", 10321 },	-- Emberstrife
-					{ "i", 16888 },	-- Dull Drakefire Amulet
+					{ "i", 16888 },	-- Dull Drakefire Amulet (QI!)
 				},
 				coord = { 56.8, 87.4, MAP.DUSTWALLOW_MARSH },
 				maps = { MAP.DESOLACE },
@@ -57,7 +57,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Bijou's Belongings
 						providers = {
-							{ "i",  12345 },	-- Bijou's Belongings
+							{ "i", 12345 },	-- Bijou's Belongings (QI!)
 							{ "o", 175334 },	-- Bijou's Belongings
 						},
 					}),
@@ -67,7 +67,7 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 4982,	-- Bijou's Belongings (H)
 				providers = {
 					{ "n", 10257 },	-- Bijou
-					{ "i", 12652 },	-- Bijou's Reconnaissance Report
+					{ "i", 12652 },	-- Bijou's Reconnaissance Report (QI!)
 				},
 				maps = { MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -79,8 +79,8 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 			q(7761, {	-- Blackhand's Command
 				providers = {
-					{ "n",   9046 },	-- Scarshield Quartermaster <Scarshield Legion>
-					{ "i",  18987 },	-- Blackhand's Command
+					{ "n", 9046 },	-- Scarshield Quartermaster <Scarshield Legion>
+					{ "i", 18987 },	-- Blackhand's Command
 					{ "o", 179880 },	-- Drakkisath's Brand
 				},
 				coord = { 34.9, 27.9, MAP.BURNING_STEPPES },
@@ -105,7 +105,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Blood of the Black Dragon Champion
-						provider = { "i", 16663 },	-- Blood of the Black Dragon Champion
+						provider = { "i", 16663 },	-- Blood of the Black Dragon Champion (QI!)
 					}),
 					i(16309),	-- Drakefire Amulet
 				},
@@ -122,8 +122,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12753, 5 },	-- Skin of Shadow
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12757),	-- Breastplate of Bloodthirst
 				},
@@ -156,8 +156,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12752),	-- Cap of the Scarlet Savant
 				},
@@ -182,7 +182,7 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 4764,	-- Doomrigger's Clasp
 				providers = {
 					{ "n", 9565 },	-- Mayara Brightwing
-					{ "i", 12437 },	-- Ridgewell's Crate
+					{ "i", 12437 },	-- Ridgewell's Crate (QI!)
 				},
 				coord = { 84.8, 69.0, MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
@@ -200,14 +200,12 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Doomrigger's Clasp
-						providers = {
-							{ "i",  12352 },	-- Doomrigger's Clasp
-						},
+						providers = { { "i", 12352 } },	-- Doomrigger's Clasp (QI!)
 					}),
 					o(175382, {	-- Doomrigger's Coffer
 						description = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
 						groups = {
-							i(12352),	-- Doomrigger's Clasp
+							i(12352),	-- Doomrigger's Clasp (QI!)
 						},
 					}),
 				},
@@ -220,7 +218,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Blood of the Black Dragon Champion
-						provider = { "i", 16663 },	-- Blood of the Black Dragon Champion
+						provider = { "i", 16663 },	-- Blood of the Black Dragon Champion (QI!)
 					}),
 					i(16309),	-- Drakefire Amulet
 				},
@@ -233,12 +231,12 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/8 Collected Dragon Egg
 						providers = {
-							{ "i",  12241 },	-- Collected Dragon Egg
+							{ "i", 12241 },	-- Collected Dragon Egg (QI!)
 							{ "o", 175124 },	-- Rookery Egg
 						},
 						cost = {
 							{ "i", 12144, 1 },	-- Eggscilloscope
-							{ "i", 12287, 1 },	-- Collectronic Module
+							{ "i", 12287, 1 },	-- Collectronic Module (QI!)
 						},
 					}),
 				},
@@ -251,7 +249,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- Test the Eggscilliscope Prototype
 						providers = {
-							{ "i",  12286 },	-- Eggscilloscope Prototype
+							{ "i", 12286 },	-- Eggscilloscope Prototype
 							{ "o", 175124 },	-- Rookery Egg
 						},
 					}),
@@ -278,14 +276,14 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 6569,	-- Oculus Illusions
 				providers = {
 					{ "n", 11872 },	-- Myranda the Hag
-					{ "i", 16787 },	-- Amulet of Draconic Subversion
+					{ "i", 16787 },	-- Amulet of Draconic Subversion (QI!)
 				},
 				coord = { 50.8, 77.8, MAP.WESTERN_PLAGUELANDS },
 				maps = { MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
 				lvl = 55,
 				groups = {
-					i(16787),	-- Amulet of Draconic Subversion
+					i(16787),	-- Amulet of Draconic Subversion (QI!)
 				},
 			}),
 			q(4862, {	-- En-Ay-Es-Tee-Why
@@ -295,7 +293,7 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/15 Spire Spider Egg
 						providers = {
-							{ "i",  12530 },	-- Spire Spider Egg
+							{ "i", 12530 },	-- Spire Spider Egg (QI!)
 							{ "o", 175606 },	-- Spire Spider Egg
 						},
 						description = "Interacting with a spider egg may spawn baby spiders, beware!",
@@ -328,7 +326,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Head of Rend Blackhand
-						provider = { "i", 12630 },	-- Head of Rend Blackhand
+						provider = { "i", 12630 },	-- Head of Rend Blackhand (QI!)
 					}),
 					i(13965),	-- Blackhand's Breadth
 					i(13968),	-- Eye of the Beast
@@ -372,9 +370,9 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Caged Worg Pup
-						provider = { "i", 12263 },	-- Caged Worg Pup
+						provider = { "i", 12263 },	-- Caged Worg Pup (QI!)
 						description = "Can be pulled outside of the room without engaging the boss.",
-						cost = { { "i", 12262, 1 } },	-- Empty Worg Pup Cage
+						cost = { { "i", 12262, 1 } },	-- Empty Worg Pup Cage (QI!)
 						cr = 10221,	-- Bloodaxe Worg Pup
 					}),
 					i(12264),	-- Worg Pup (PET!)
@@ -392,8 +390,8 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12736, 5 },	-- Frostwhisper's Embalming Fluid
 					{ "g", 500000 },	-- 50 Gold
 				},
-				repeatable = true,
 				lvl = 57,
+				repeatable = true,
 				groups = {
 					i(12756),	-- Leggings of Arcana
 				},
@@ -462,7 +460,7 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 5001,	-- Bijou's Belongings (A)
 				providers = {
 					{ "n", 10257 },	-- Bijou
-					{ "i", 12770 },	-- Bijou's Information
+					{ "i", 12770 },	-- Bijou's Information (QI!)
 				},
 				maps = { MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
@@ -488,7 +486,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/20 Black Dragonspawn Eye
-						provider = { "i", 16786 },	-- Black Dragonspawn Eye
+						provider = { "i", 16786 },	-- Black Dragonspawn Eye (QI!)
 					}),
 				},
 			}),
@@ -502,11 +500,11 @@ instanceroot(229, {	-- Blackrock Spire
 				description = "Kill The Beast in UBRS. Using Pip's Skinner and a 300 Skill Skinner, skin the boss and Pip Quickwit will appear. Everyone in the raid can pick up this quest at that time.",
 				providers = {
 					{ "n", 10776 },	-- Pip Quickwit
-					{ "i", 12710 },	-- Glowing Hunk of the Beast's Flesh
+					{ "i", 12710 },	-- Glowing Hunk of the Beast's Flesh (QI!)
 				},
 				maps = { MAP.WINTERSPRING },
 				cr = 10430,	-- The Beast
-				lvl = 57
+				lvl = 57,
 			}),
 			q(4701, {	-- Put Her Down
 				qg = 9562,	-- Helendis Riverhorn
@@ -541,18 +539,18 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Forged Seal of Ascension
-						provider = { "i", 12324 },	-- Forged Seal of Ascension
+						provider = { "i", 12324 },	-- Forged Seal of Ascension (QI!)
 						cost = {
-							{ "i", 12323, 1 },	-- Unforged Seal of Ascension
-							{ "i", 12300, 1 },	-- Orb of Draconic Energy
+							{ "i", 12323, 1 },	-- Unforged Seal of Ascension (QI!)
+							{ "i", 12300, 1 },	-- Orb of Draconic Energy (QI!)
 						},
 						cr = 10321,	-- Emberstrife
 					}),
-					i(12339, {	-- Vaelan's Gift
-						i(12323, {	-- Unforged Seal of Ascension
+					i(12339, {	-- Vaelan's Gift (QI!)
+						i(12323, {	-- Unforged Seal of Ascension (QI!)
 							description = "Use this once the dragon reaches 10-20% health.",
 						}),
-						i(12300, {	-- Orb of Draconic Energy
+						i(12300, {	-- Orb of Draconic Energy (QI!)
 							description = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife.",
 						}),
 					}),
@@ -577,16 +575,14 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 57,
 				groups = {
 					objective(1, {	-- 0/1 Darkstone Tablet
-						providers = {
-							{ "i",  12358 },	-- Darkstone Tablet
-						},
+						providers = { { "i", 12358 } },	-- Darkstone Tablet (QI!)
 					}),
 					i(15860),	-- Blinkstrike Armguards
 					i(15861),	-- Swiftfoot Treads
 					o(175385, {	-- Darkstone Tablet
 						description = "This is the white tablet leaning up against the wall in the Whelp Room.",
 						groups = {
-							i(12358),	-- Darkstone Tablet
+							i(12358),	-- Darkstone Tablet (QI!)
 						},
 					}),
 				},
@@ -600,7 +596,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Soul Stained Pike
-						provider = { "i", 12847 },	-- Soul Stained Pike
+						provider = { "i", 12847 },	-- Soul Stained Pike (QI!)
 						cost = { { "i", 12848, 1 } },	-- Blood Stained Pike
 						cr = 10899,	-- Goraluk Anvilcrack
 					}),
@@ -620,13 +616,13 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Fifth Mosh'aru Tablet
 						providers = {
-							{ "i",  12740 },	-- Fifth Mosh'aru Tablet
+							{ "i", 12740 },	-- Fifth Mosh'aru Tablet (QI!)
 							{ "o", 175949 },	-- Fifth Mosh'aru Tablet
 						},
 					}),
 					objective(2, {	-- 0/1 Sixth Mosh'aru Tablet
 						providers = {
-							{ "i",  12741 },	-- Sixth Mosh'aru Tablet
+							{ "i", 12741 },	-- Sixth Mosh'aru Tablet (QI!)
 							{ "o", 175950 },	-- Sixth Mosh'aru Tablet
 						},
 					}),
@@ -647,14 +643,14 @@ instanceroot(229, {	-- Blackrock Spire
 				groups = {
 					objective(1, {	-- 0/1 Third Mosh'aru Tablet
 						providers = {
-							{ "i",  12411 },	-- Third Mosh'aru Tablet
+							{ "i", 12411 },	-- Third Mosh'aru Tablet (QI!)
 							{ "o", 175487 },	-- Third Mosh'aru Tablet
 						},
 						coord = { 72.4, 13.0, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 Fourth Mosh'aru Tablet
 						providers = {
-							{ "i",  12412 },	-- Fourth Mosh'aru Tablet
+							{ "i", 12412 },	-- Fourth Mosh'aru Tablet (QI!)
 							{ "o", 175488 },	-- Fourth Mosh'aru Tablet
 						},
 						coord = { 72.7, 15.7, MAP.EASTERN_PLAGUELANDS },
@@ -665,7 +661,7 @@ instanceroot(229, {	-- Blackrock Spire
 				description = "Speak with Awbee in UBRS to accept this quest. Most tanks skip the two mobs near Awbee, so you should mention it to them.",
 				providers = {
 					{ "n", 10740 },	-- Awbee
-					{ "i", 12923 },	-- Awbee's Scale
+					{ "i", 12923 },	-- Awbee's Scale (QI!)
 				},
 				maps = { MAP.WINTERSPRING },
 				lvl = 57,
@@ -697,7 +693,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 The Skull of Axtroz
-						provider = { "i", 16872 },	-- The Skull of Axtroz
+						provider = { "i", 16872 },	-- The Skull of Axtroz (QI!)
 						coord = { 83.4, 49.6, MAP.WETLANDS },
 						cr = 12899,	-- Axtroz
 					}),
@@ -712,7 +708,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 The Skull of Chronalis
-						provider = { "i", 16871 },	-- The Skull of Chronalis
+						provider = { "i", 16871 },	-- The Skull of Chronalis (QI!)
 						coord = { 64.4, 50.6, MAP.TANARIS },
 						qg = 8197,	-- Chronalis
 					}),
@@ -727,7 +723,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 The Skull of Scryer
-						provider = { "i", 16869 },	-- The Skull of Scryer
+						provider = { "i", 16869 },	-- The Skull of Scryer (QI!)
 						coord = { 53.6, 55.8, MAP.WINTERSPRING },
 						qg = 10664,	-- Scryer
 					}),
@@ -742,7 +738,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 The Skull of Somnus
-						provider = { "i", 16870 },	-- The Skull of Somnus
+						provider = { "i", 16870 },	-- The Skull of Somnus (QI!)
 						coord = { 80.2, 57.2, MAP.SWAMP_OF_SORROWS },
 						qg = 12900,	-- Somnus
 					}),
@@ -752,7 +748,7 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 6567,	-- The Champion of the Horde
 				providers = {
 					{ "n", 10182 },	-- Rexxar <Champion of the Horde>
-					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter
+					{ "i", 16785 },	-- Rexxar's Testament/Rokaro's Letter (QI!)
 				},
 				coords = {
 					{ 54.0, 3.2, MAP.DESOLACE },
@@ -776,7 +772,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/8 Uncracked Chillwind Horn
-						provider = { "i", 12444 },	-- Uncracked Chillwind Horn
+						provider = { "i", 12444 },	-- Uncracked Chillwind Horn (QI!)
 						crs = {
 							7447,	-- Fledgling Chillwind
 							7448,	-- Chillwind Chimaera
@@ -789,8 +785,8 @@ instanceroot(229, {	-- Blackrock Spire
 				sourceQuest = 4810,	-- Return to Tinkee
 				qg = 10468,	-- Felnok Steelspring
 				coord = { 61.6, 38.6, MAP.WINTERSPRING },
-				isBreadcrumb = true,
 				lvl = 57,
+				isBreadcrumb = true,
 			}),
 			q(4867, {	-- Urok Doomhowl
 				providers = {
@@ -800,7 +796,7 @@ instanceroot(229, {	-- Blackrock Spire
 				lvl = 55,
 				groups = {
 					objective(1, {	-- 0/1 Warosh's Mojo
-						provider = { "i", 12712 },	-- Warosh's Mojo
+						provider = { "i", 12712 },	-- Warosh's Mojo (QI!)
 					}),
 					i(15867),	-- Prismcharm
 				},
@@ -809,8 +805,8 @@ instanceroot(229, {	-- Blackrock Spire
 				qg = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 				coord = { 49.8, 68.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 57,
+				isBreadcrumb = true,
 			}),
 			q(4903, {	-- Warlord's Command
 				description = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
@@ -833,7 +829,7 @@ instanceroot(229, {	-- Blackrock Spire
 					}),
 					objective(4, {	-- 0/1 Important Blackrock Documents
 						providers = {
-							{ "i",  12562 },	-- Important Blackrock Documents
+							{ "i", 12562 },	-- Important Blackrock Documents (QI!)
 							{ "o", 175785 },	-- Inconspicuous Documents
 						},
 						description = "On the ground next to Overlord Wyrmthalak.",
@@ -867,8 +863,8 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(22138),	-- Blackrock Bracer
-			i(16786),	-- Black Dragonspawn Eye
+			i(22138),	-- Blackrock Bracer (QI!)
+			i(16786),	-- Black Dragonspawn Eye (QI!)
 			i(16681, {	-- Beaststalker's Bindings
 				cr = 9096,	-- Rage Talon Dragonspawn
 			}),
@@ -921,7 +917,7 @@ instanceroot(229, {	-- Blackrock Spire
 						9264,	-- Firebrand Pyromancer
 					},
 				}),
-				i(21982, {	-- Ogre Warbeads
+				i(21982, {	-- Ogre Warbeads (QI!)
 					crs = {
 						9196,	-- Highlord Omokk
 						10584,	-- Urok Doomhowl
@@ -995,11 +991,11 @@ instanceroot(229, {	-- Blackrock Spire
 			e(389, {	-- Shadow Hunter Vosh'gajin
 				creatureID = 9236,	-- Shadow Hunter Vosh'gajin
 				groups = {
-					i(12740, {	-- Fifth Mosh'aru Tablet
+					i(12740, {	-- Fifth Mosh'aru Tablet (QI!)
 						description = "Located directly behind the boss.",
 						provider = { "o", 175949 },	-- Fifth Mosh'aru Tablet
 					}),
-					i(13352),	-- Vosh'gajin's Snakestone
+					i(13352),	-- Vosh'gajin's Snakestone (QI!)
 					i(12651),	-- Blackcrow
 					i(12653),	-- Riphook
 					i(13257),	-- Demonic Runed Spaulders
@@ -1012,7 +1008,7 @@ instanceroot(229, {	-- Blackrock Spire
 			e(390, {	-- War Master Voone
 				creatureID = 9237,	-- War Master Voone
 				groups = {
-					i(12741, {	-- Sixth Mosh'aru Tablet
+					i(12741, {	-- Sixth Mosh'aru Tablet (QI!)
 						description = "Located directly behind the boss.",
 						provider = { "o", 175950 },	-- Sixth Mosh'aru Tablet
 					}),
@@ -1028,16 +1024,16 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 			n(16080, {	-- Mor Grayhoof
 				description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",
-				cost = {{ "i", 22049, 1 }},	-- Brazier of Beckoning [Mor Grayhoof]
 				provider = { "i", 22057 },	-- Brazier of Invocation
+				cost = { { "i", 22049, 1 } },	-- Brazier of Beckoning [Mor Grayhoof]
 				groups = {
 					objective(1, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
 						questID = 8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
-						provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+						provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 					}),
 					objective(2, {	-- 0/1 Right Piece of Lord Valthalak's Amulet
 						questID = 8989,	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
-						provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet
+						provider = { "i", 22046 },	-- Right Piece of Lord Valthalak's Amulet (QI!)
 					}),
 					i(22322),	-- The Jaw Breaker
 					i(22319),	-- Tome of Divine Right
@@ -1081,7 +1077,7 @@ instanceroot(229, {	-- Blackrock Spire
 					{ "i", 12534, 1 },	-- Omokk's Head
 				},
 				groups = {
-					i(12712),	-- Warosh's Mojo
+					i(12712),	-- Warosh's Mojo (QI!)
 					i(18784),	-- Top Half of Advanced Armorsmithing: Volume III
 					i(13258),	-- Slaghide Gauntlets
 					i(22232),	-- Marksman's Girdle
@@ -1144,7 +1140,7 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(UPPER_BLACKROCK_SPIRE, {
-			cost = {{ "i", 12344, 1}},	-- Seal of Ascension
+			cost = { { "i", 12344, 1 } },	-- Seal of Ascension
 			groups = {
 				n(ZONE_DROPS, {
 					i(12607, {	-- Brilliant Chromatic Scale //Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.
@@ -1166,8 +1162,8 @@ instanceroot(229, {	-- Blackrock Spire
 					i(13260),	-- Wind Dancer Boots
 				}),
 				n(9816, {	-- Pyroguard Emberseer
-					i(21988),	-- Ember of Emberseer
-					i(17322),	-- Eye of the Emberseer
+					i(21988),	-- Ember of Emberseer (QI!)
+					i(17322),	-- Eye of the Emberseer (QI!)
 					i(12929),	-- Emberfury Talisman
 					i(12905),	-- Wildfire Cape
 					i(12927),	-- Truestrike Shoulders
@@ -1226,7 +1222,7 @@ instanceroot(229, {	-- Blackrock Spire
 					i(16669),	-- Pauldrons of Elements
 				}),
 				n(10429, {	-- Warchief Rend Blackhand
-					i(12630),	-- Head of Rend Blackhand
+					i(12630),	-- Head of Rend Blackhand (QI!)
 					i(12583),	-- Blackhand Doomsaw
 					i(12940),	-- Dal'Rend's Sacred Charge
 					i(12939),	-- Dal'Rend's Tribal Guardian
@@ -1270,8 +1266,8 @@ instanceroot(229, {	-- Blackrock Spire
 				}),
 				n(16042, {	-- Lord Valthalak
 					description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",
-					cost = {{ "i", 22056, 1 }},	-- Brazier of Beckoning [Lord Valthalak]
 					provider = { "i", 22057 },	-- Brazier of Invocation
+					cost = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
 					groups = {
 						i(22336),	-- Draconian Aegis of the Legion
 						i(22335),	-- Lord Valthalak's Staff of Command
@@ -1284,7 +1280,7 @@ instanceroot(229, {	-- Blackrock Spire
 					},
 				}),
 				n(10363, {	-- General Drakkisath
-					i(16663),	-- Blood of the Black Dragon Champion
+					i(16663),	-- Blood of the Black Dragon Champion (QI!)
 					i(15730),	-- Pattern: Red Dragonscale Breastplate (RECIPE!)
 					i(13519),	-- Recipe: Flask of the Titans (RECIPE!)
 					i(12592),	-- Blackblade of Shahram

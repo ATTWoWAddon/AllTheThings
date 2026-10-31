@@ -48,10 +48,10 @@ instanceroot(226, {	-- Ragefire Chasm
 			q(5724, {	-- Returning the Lost Satchel
 				sourceQuest = 5722,	-- Searching for the Lost Satchel
 				qg = 11834,	-- Maur Grimtotem
-				qi = 14381,	-- Grimtotem Satchel
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 9,
+				qi = 14381,	-- Grimtotem Satchel (QI!)
 				groups = {
 					i(15452),	-- Featherbead Bracers
 					i(15453),	-- Savannah Bracers
@@ -74,7 +74,7 @@ instanceroot(226, {	-- Ragefire Chasm
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Taragaman the Hungerer's Heart
-						provider = { "i", 14540 },	-- Taragaman the Hungerer's Heart
+						provider = { "i", 14540 },	-- Taragaman the Hungerer's Heart (QI!)
 					}),
 				},
 			}),
@@ -99,10 +99,10 @@ instanceroot(226, {	-- Ragefire Chasm
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Spells of Shadow
-						provider = { "i", 14395 },	-- Spells of Shadow
+						provider = { "i", 14395 },	-- Spells of Shadow (QI!)
 					}),
 					objective(2, {	-- 0/1 Incantations from the Nether
-						provider = { "i", 14396 },	-- Incantations from the Nether
+						provider = { "i", 14396 },	-- Incantations from the Nether (QI!)
 					}),
 					i(15450),	-- Dredgemire Leggings
 					i(15451),	-- Gargoyle Leggings

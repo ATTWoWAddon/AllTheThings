@@ -19,13 +19,13 @@ end]];
 
 battleground(MAP.ALTERAC_VALLEY, {
 	lore = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
-	timeline = { TIMELINE.ADDED_1_60_1 },
 	icon = 236388,
 	lvl = 51,
+	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(13419, {	-- Ivus the Forest Lord
-			isRaid = true,
 			races = HORDE_ONLY,
+			isRaid = true,
 			groups = sharedData({ timeline = { TIMELINE.CREATED_1_60_1 } }, {
 				i(19110),	-- Cold Forged Blade
 				i(19105),	-- Frost Runed Headdress
@@ -36,8 +36,8 @@ battleground(MAP.ALTERAC_VALLEY, {
 			}),
 		}),
 		n(13256, {	-- Lokholar the Ice Lord
-			isRaid = true,
 			races = ALLIANCE_ONLY,
+			isRaid = true,
 			groups = sharedData({ timeline = { TIMELINE.CREATED_1_60_1 } }, {
 				i(19110),	-- Cold Forged Blade
 				i(19105),	-- Frost Runed Headdress
@@ -81,7 +81,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13236,	-- Primalist Thurloga
 				coord = { 50.1, 85.1, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17306, 5 } },	-- Stormpike Soldier's Blood
+				cost = { { "i", 17306, 5 } },	-- 5x Stormpike Soldier's Blood
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -93,7 +93,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			q(7223, {	-- Armor Scraps
 				qg = 13257,	-- Murgot Deepforge
 				coord = { 43.5, 15.5, MAP.ALTERAC_VALLEY },
-				cost = { { "i", 17422, 20 } },	-- Armor Scraps
+				cost = { { "i", 17422, 20 } },	-- 20x Armor Scraps
 				races = ALLIANCE_ONLY,
 			}),
 			q(7282, {	-- Brotherly Love (Alliance)
@@ -122,7 +122,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13179,	-- Wing Commander Guse
 				coord = { 50.0, 32.0, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17326, 1 } },	-- Stormpike Soldier's Flesh
+				cost = { { "i", 17326, 1 } },	-- 1x Stormpike Soldier's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -130,7 +130,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13437,	-- Wing Commander Ichman
 				coord = { 48.3, 84.3, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17504, 1 } },	-- Frostwolf Commander's Medal
+				cost = { { "i", 17504, 1 } },	-- 1x Frostwolf Commander's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -138,7 +138,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13180,	-- Wing Commander Jeztor
 				coord = { 54.2, 25.4, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17327, 1 } },	-- Stormpike Lieutenant's Flesh
+				cost = { { "i", 17327, 1 } },	-- 1x Stormpike Lieutenant's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -146,7 +146,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13181,	-- Wing Commander Mulverick
 				coord = { 45.1, 14.0, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17328, 1 } },	-- Stormpike Commander's Flesh
+				cost = { { "i", 17328, 1 } },	-- 1x Stormpike Commander's Flesh
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -154,7 +154,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13438,	-- Wing Commander Slidore
 				coord = { 50.6, 65.8, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17502, 1 } },	-- Frostwolf Soldier's Medal
+				cost = { { "i", 17502, 1 } },	-- 1x Frostwolf Soldier's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -162,7 +162,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13439,	-- Wing Commander Vipore
 				coord = { 50.3, 81.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17503, 1 } },	-- Frostwolf Lieutenant's Medal
+				cost = { { "i", 17503, 1 } },	-- 1x Frostwolf Lieutenant's Medal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -185,7 +185,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17542, 10 } },	-- Coldtooth Supplies
+				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies (QI!)
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -193,7 +193,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17542, 10 } },	-- Coldtooth Supplies
+				cost = { { "i", 17542, 10 } },	-- 10x Coldtooth Supplies (QI!)
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -201,7 +201,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13442,	-- Arch Druid Renferal
 				coord = { 43.9, 12.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17423, 5 } },	-- Storm Crystal
+				cost = { { "i", 17423, 5 } },	-- 5x Storm Crystal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -260,7 +260,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			q(7224, {	-- Enemy Booty
 				qg = 13176,	-- Smith Regzar
 				coord = { 49.5, 82.7, MAP.ALTERAC_VALLEY },
-				cost = { { "i", 17422, 20 } },	-- Armor Scraps
+				cost = { { "i", 17422, 20 } },	-- 20x Armor Scraps
 				races = HORDE_ONLY,
 			}),
 			q(7301, {	-- Fallen Sky Lords (Alliance)
@@ -280,7 +280,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					i(19107),	-- Bloodseeker
-					i(20648),	-- Cold Forged Hamme
+					i(20648),	-- Cold Forged Hammer
 					i(19106),	-- Ice Barbed Spear
 					i(19108),	-- Wand of Biting Cold
 				},
@@ -332,7 +332,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			q(8369, {	-- Invaders of Alterac Valley
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = HORDE_ONLY,
 			}),
 			q(8387, {	-- Invaders of Alterac Valley
@@ -340,7 +340,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 15350,	-- Horde Warbringer
 				coord = HORDE_WARBRINGER_COORDS,
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -349,7 +349,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12096,	-- Stormpike Quartermaster
 				coord = { 43.1, 17.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17522, 10 } },	-- Irondeep Supplies
+				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies (QI!)
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -357,7 +357,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 12097,	-- Frostwolf Quartermaster
 				coord = { 46.6, 84.2, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17522, 10 } },	-- Irondeep Supplies
+				cost = { { "i", 17522, 10 } },	-- 10x Irondeep Supplies (QI!)
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -365,7 +365,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13442,	-- Arch Druid Renferal
 				coord = { 43.9, 12.6, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17423, 1 } },	-- Storm Crystal
+				cost = { { "i", 17423, 1 } },	-- 1x Storm Crystal
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -399,7 +399,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13236,	-- Primalist Thurloga
 				coord = { 50.1, 85.1, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17306, 1 } },	-- Stormpike Soldier's Blood
+				cost = { { "i", 17306, 1 } },	-- 1x Stormpike Soldier's Blood
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -408,7 +408,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13257,	-- Murgot Deepforge
 				coord = { 43.5, 15.5, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17422, 20 } },	-- Armor Scraps
+				cost = { { "i", 17422, 20 } },	-- 20x Armor Scraps
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -417,7 +417,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13176,	-- Smith Regzar
 				coord = { 49.5, 82.7, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17422, 20 } },	-- Armor Scraps
+				cost = { { "i", 17422, 20 } },	-- 20x Armor Scraps
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -428,7 +428,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Stormpike Banner
-						provider = { "i", 17849 },	-- Stormpike Banner
+						provider = { "i", 17849 },	-- Stormpike Banner (QI!)
 						coord = { 41.9, 36.1, MAP.ALTERAC_VALLEY },
 					}),
 					i(17691),	-- Stormpike Insignia Rank 1
@@ -442,7 +442,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Frostwolf Banner
-						provider = { "i", 17850 },	-- Frostwolf Banner
+						provider = { "i", 17850 },	-- Frostwolf Banner (QI!)
 						coord = { 50.7, 93.3, MAP.ALTERAC_VALLEY },
 					}),
 					i(17690),	-- Frostwolf Insignia Rank 1
@@ -453,7 +453,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13441,	-- Frostwolf Wolf Rider Commander
 				coord = { 57.0, 82.8, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_FROSTWOLF_CLAN, EXALTED },
-				cost = { { "i", 17642, 1 } },	-- Alterac Ram Hide
+				cost = { { "i", 17642, 1 } },	-- 1x Alterac Ram Hide
 				races = HORDE_ONLY,
 				repeatable = true,
 			}),
@@ -461,14 +461,14 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 13577,	-- Stormpike Ram Rider Commander
 				coord = { 42.1, 17.2, MAP.ALTERAC_VALLEY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 17643, 1 } },	-- Frostwolf Hide
+				cost = { { "i", 17643, 1 } },	-- 1x Frostwolf Hide
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
 			q(8375, {	-- Remember Alterac Valley!
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 			}),
 			q(8383, {	-- Remember Alterac Valley!
@@ -476,7 +476,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- 3x Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),
@@ -606,7 +606,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force
@@ -617,7 +617,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19084),	-- Stormpike Soldier's Cloak
 					i(19094),	-- Stormpike Cloth Girdle
 					i(19093),	-- Stormpike Leather Girdle
-					i(19092),	-- Stormpike Mail Girgle
+					i(19092),	-- Stormpike Mail Girdle
 					i(19091),	-- Stormpike Plate Girdle
 					i(19325),	-- Don Julio's Band
 					i(21563),	-- Don Rodrigo's Band
@@ -638,7 +638,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				coord = { 49.3, 82.5, MAP.ALTERAC_VALLEY },
 				races = HORDE_ONLY,
 				groups = {
-					i(19029),	-- Frostwolf Howler (MOUNT!)
+					i(19029),	-- Horn of the Frostwolf Howler (MOUNT!)
 					i(19031),	-- Frostwolf Battle Tabard
 					i(19046),	-- Frostwolf Battle Standard
 					i(19103),	-- Frostbite
@@ -647,7 +647,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force
@@ -689,7 +689,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 		}),
 		n(ZONE_DROPS, {
 			i(17422),	-- Armor Scraps
-			i(18228),	-- Autographed Picture of Foror & Tigule
+			i(18228),	-- Autographed Picture of Tigule
 			i(17504),	-- Frostwolf Commander's Medal
 			i(17503),	-- Frostwolf Lieutenant's Medal
 			i(17502),	-- Frostwolf Soldier's Medal

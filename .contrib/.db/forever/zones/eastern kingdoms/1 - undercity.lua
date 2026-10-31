@@ -45,27 +45,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 		n(QUESTS, {
 			q(232, {	-- Errand for Apothecary Zinge (1/2)
 				qg = 5204,	-- Apothecary Zinge
-				qi = 8525,	-- Zinge's Purchase Order
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8525,	-- Zinge's Purchase Order (QI!)
 			}),
 			q(238, {	-- Errand for Apothecary Zinge (2/2)
 				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
 				qg = 7683,	-- Alessandro Luca
-				qi = 8523,	-- Field Testing Kit
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8523,	-- Field Testing Kit (QI!)
 			}),
 			q(243, {	-- Into the Field
 				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
 				qg = 5204,	-- Apothecary Zinge
-				qi = 8523,	-- Field Testing Kit
 				coord = { 50.1, 68.0, MAP.UNDERCITY },
 				maps = { MAP.TANARIS },
 				races = HORDE_ONLY,
 				lvl = 38,
+				qi = 8523,	-- Field Testing Kit (QI!)
 			}),
 			q(1164, {	-- To Steal From Thieves
 				qg = 4486,	-- Genavie Callow
@@ -75,17 +75,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 27,
 				groups = {
 					objective(1, {	-- 0/1 Kenata's Head
-						provider = { "i", 5830 },	-- Kenata's Head
+						provider = { "i", 5830 },	-- Kenata's Head (QI!)
 						coord = { 56.2, 36.0, MAP.ARATHI_HIGHLANDS },
 						cr = 4480,	-- Kenata Dabyrie
 					}),
 					objective(2, {	-- 0/1 Marcel's Head
-						provider = { "i", 5832 },	-- Marcel's Head
+						provider = { "i", 5832 },	-- Marcel's Head (QI!)
 						coord = { 54.5, 38.6, MAP.ARATHI_HIGHLANDS },
 						cr = 4481,	-- Marcel Dabyrie
 					}),
 					objective(3, {	-- 0/1 Fardel's Head
-						provider = { "i", 5831 },	-- Fardel's Head
+						provider = { "i", 5831 },	-- Fardel's Head (QI!)
 						coord = { 55.0, 40.0, MAP.ARATHI_HIGHLANDS },
 						cr = 4479,	-- Fardel Dabyrie
 					}),
@@ -96,11 +96,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1358, {	-- Sample for Helbrim
 				sourceQuest = 1359,	-- Zinge's Delivery
 				qg = 5204,	-- Apothecary Zinge
-				qi = 6016,	-- Wolf Heart Sample
 				coord = { 50.0, 68.4, MAP.UNDERCITY },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				lvl = 10,
+				qi = 6016,	-- Wolf Heart Sample (QI!)
 				groups = {
 					i(10637),	-- Brewer's Gloves
 					i(10638),	-- Long Draping Cape
@@ -111,13 +111,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 6284, 1 } },	-- Runes of Summoning
+						cost = { { "i", 6284, 1 } },	-- Runes of Summoning (QI!)
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -128,8 +128,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1473, {	-- Creature of the Void [Undercity]
 				sourceQuest = 1478,	-- Halgar's Summons
@@ -142,7 +142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Egalin's Grimoire
-						provider = { "i", 6285 },	-- Egalin's Grimoire
+						provider = { "i", 6285 },	-- Egalin's Grimoire (QI!)
 						coord = { 51.1, 67.6, MAP.TIRISFAL_GLADES },
 					}),
 				},
@@ -152,13 +152,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6286, 1 } },	-- Pure Hearts
+						cost = { { "i", 6286, 1 } },	-- Pure Hearts (QI!)
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -172,17 +172,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5693,	-- Godrick Farsan
 				coord = { 85.0, 14.8, MAP.UNDERCITY },
 				maps = { MAP.SILVERPINE_FOREST, MAP.WETLANDS },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Dalin's Heart
-						provider = { "i", 6312 },	-- Dalin's Heart
+						provider = { "i", 6312 },	-- Dalin's Heart (QI!)
 						coord = { 46.6, 84.2, MAP.SILVERPINE_FOREST },
 						cr = 5682,	-- Dalin Forgewright
 					}),
 					objective(2, {	-- 0/1 Comar's Heart
-						provider = { "i", 6313 },	-- Comar's Heart
+						provider = { "i", 6313 },	-- Comar's Heart (QI!)
 						coord = { 50.6, 12.6, MAP.WETLANDS },
 						cr = 5683,	-- Comar Villard
 					}),
@@ -201,15 +201,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5875,	-- Dan'rul Bloodeye
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(1841, {	-- Velora Nitely and the Brutal Legguards
 				sourceQuest = 1838,	-- Brutal Armor
 				qg = 5878,	-- Thun'grim Firegaze
 				coord = { 57.2, 30.2, MAP.THE_BARRENS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 			}),
 			q(1846, {	-- Dragonmaw Shinbones
@@ -217,13 +217,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 6411,	-- Velora Nitely
 				coord = { 62.4, 39.2, MAP.UNDERCITY },
 				maps = { MAP.WETLANDS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
-						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone
-						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone
+						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone (QI!)
+						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone (QI!)
 						crs = {
 							2091,	-- Chieftain Nek'rosh
 							1037,	-- Dragonmaw Battlemaster
@@ -240,8 +240,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sourceQuest = 1846,	-- Dragonmaw Shinbones
 				qg = 6411,	-- Velora Nitely
 				coord = { 62.4, 39.2, MAP.UNDERCITY },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(7132),	-- Brutal Legguards
@@ -253,8 +253,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 61.8, 52.4, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD, TROLL },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1882, {	-- The Balnir Farmstead
 				sourceQuests = {
@@ -270,7 +270,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/1 Balnir Snapdragons
 						providers = {
-							{ "i",   7227 },	-- Balnir Snapdragons
+							{ "i", 7227 },	-- Balnir Snapdragons (QI!)
 							{ "o", 102985 },	-- Balnir Snapdragons
 						},
 						coord = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
@@ -284,8 +284,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(1886, {	-- The Deathstalkers (1/4)
 				sourceQuest = 1885,	-- Mennet Carkad
@@ -297,7 +297,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Astor's Letter of Introduction
-						provider = { "i", 7231 },	-- Astor's Letter of Introduction
+						provider = { "i", 7231 },	-- Astor's Letter of Introduction (QI!)
 						coords = {
 							{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
 							{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
@@ -311,11 +311,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1898, {	-- The Deathstalkers (2/4)
 				sourceQuest = 1886,	-- The Deathstalkers (1/4)
 				qg = 6467,	-- Mennet Carkad
-				qi = 7231,	-- Astor's Letter of Introduction
 				coord = { 83.2, 69.0, MAP.UNDERCITY },
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
+				qi = 7231,	-- Astor's Letter of Introduction (QI!)
 			}),
 			q(1899, {	-- The Deathstalkers (3/4)
 				sourceQuest = 1898,	-- The Deathstalkers (2/4)
@@ -326,7 +326,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Andron's Ledger
-						provider = { "i", 7294 },	-- Andron's Ledger
+						provider = { "i", 7294 },	-- Andron's Ledger (QI!)
 						coord = { 55.3, 76.7, MAP.UNDERCITY },
 					}),
 				},
@@ -342,8 +342,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				},
 				races = HORDE_ONLY,
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 15,
+				isBreadcrumb = true,
 			}),
 			q(1960, {	-- Investigate the Alchemist Shop
 				sourceQuest = 1959,	-- Report to Anastasia
@@ -355,24 +355,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				groups = {
 					objective(1, {	-- 0/3 Filled Containment Coffer
 						providers = {
-							{ "i",   7292 },	-- Filled Containment Coffer
+							{ "i", 7292 },	-- Filled Containment Coffer (QI!)
 							{ "o", 103574 },	-- Filled Containment Coffer
-							{ "i",   7247 },	-- Chest of Containment Coffers
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7247 },	-- Chest of Containment Coffers (QI!)
+							{ "i", 7308 },	-- Cantation of Manifestation (QI!)
 						},
 						coord = { 53.9, 73.2, MAP.UNDERCITY },
 						cr = 6492,	-- Rift Spawn
 					}),
 					objective(2, {	-- 0/1 Chest of Containment Coffers
 						providers = {
-							{ "i",   7247 },	-- Chest of Containment Coffers
+							{ "i", 7247 },	-- Chest of Containment Coffers (QI!)
 							{ "o", 105174 },	-- Chest of Containment Coffers
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
 					}),
 					objective(3, {	-- 0/1 Cantation of Manifestation
 						providers = {
-							{ "i",   7308 },	-- Cantation of Manifestation
+							{ "i", 7308 },	-- Cantation of Manifestation (QI!)
 							{ "o", 105175 },	-- Cantation of Manifestation
 						},
 						coord = { 85.4, 10.2, MAP.UNDERCITY },
@@ -390,7 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 15,
 				groups = {
 					objective(2, {	-- 0/6 Dalaran Mana Gem
-						provider = { "i", 7293 },	-- Dalaran Mana Gem
+						provider = { "i", 7293 },	-- Dalaran Mana Gem (QI!)
 						crs = {
 							1867,	-- Dalaran Apprentice
 							3577,	-- Dalaran Brewmaster
@@ -419,11 +419,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(1978, {	-- The Deathstalkers (4/4)
 				sourceQuest = 1899,	-- The Deathstalkers (3/4)
 				qg = 6467,	-- Mennet Carkad
-				qi = 7294,	-- Andron's Ledger
 				coord = { 83.2, 69.0, MAP.UNDERCITY },
 				races = { UNDEAD },
 				classes = { ROGUE },
 				lvl = 10,
+				qi = 7294,	-- Andron's Ledger (QI!)
 				groups = {
 					i(7298),	-- Blade of Cunning
 				},
@@ -437,7 +437,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Fenwick's Head
-						provider = { "i", 7306 },	-- Fenwick's Head
+						provider = { "i", 7306 },	-- Fenwick's Head (QI!)
 						coord = { 59.6, 34.2, MAP.SILVERPINE_FOREST },
 						cr = 6570,	-- Fenwick Thatros
 					}),
@@ -453,7 +453,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Dalaran Status Report
-						provider = { "i", 7309 },	-- Dalaran Status Report
+						provider = { "i", 7309 },	-- Dalaran Status Report (QI!)
 					}),
 				},
 			}),
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(3526, {	-- Goblin Engineering [H]
 				altQuests = {
-					-- 3526,	-- Goblin Engineering
+					--3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
 					3630,	-- Gnome Engineering
 					3632,	-- Gnome Engineering
@@ -488,12 +488,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					4181,	-- Goblin Engineering
 				},
 				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 75.6, 74.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(3568, {	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
@@ -503,24 +503,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Filled Vial Labeled #1
-						provider = { "i", 10691 },	-- Filled Vial Labeled #1
-						cost = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
+						provider = { "i", 10691 },	-- Filled Vial Labeled #1 (QI!)
 						coord = { 48.0, 60.0, MAP.AZSHARA },
+						cost = { { "i", 10687, 1 } },	-- Empty Vial Labeled #1
 					}),
 					objective(2, {	-- 0/1 Filled Vial Labeled #2
-						provider = { "i", 10692 },	-- Filled Vial Labeled #2
-						cost = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
+						provider = { "i", 10692 },	-- Filled Vial Labeled #2 (QI!)
 						coord = { 47.0, 51.0, MAP.AZSHARA },
+						cost = { { "i", 10688, 1 } },	-- Empty Vial Labeled #2
 					}),
 					objective(3, {	-- 0/1 Filled Vial Labeled #3
-						provider = { "i", 10693 },	-- Filled Vial Labeled #3
-						cost = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
+						provider = { "i", 10693 },	-- Filled Vial Labeled #3 (QI!)
 						coord = { 48.0, 48.0, MAP.AZSHARA },
+						cost = { { "i", 10689, 1 } },	-- Empty Vial Labeled #3
 					}),
 					objective(4, {	-- 0/1 Filled Vial Labeled #4
-						provider = { "i", 10694 },	-- Filled Vial Labeled #4
-						cost = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
+						provider = { "i", 10694 },	-- Filled Vial Labeled #4 (QI!)
 						coord = { 47.0, 46.0, MAP.AZSHARA },
+						cost = { { "i", 10690, 1 } },	-- Empty Vial Labeled #4
 					}),
 					i(10695, {	-- Box of Empty Vials
 						i(10687),	-- Empty Vial Labeled #1
@@ -533,10 +533,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(3569, {	-- Seeping Corruption (2/3)
 				sourceQuest = 3568,	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
-				qi = 10712,	-- Cuely's Elixir
 				coord = { 47.6, 73.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10712,	-- Cuely's Elixir (QI!)
 			}),
 			q(3570, {	-- Seeping Corruption (3/3)
 				sourceQuest = 3569,	-- Seeping Corruption (2/3)
@@ -553,17 +553,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					3632,	-- Gnome Engineering
 					3633,	-- Goblin Engineering
 					3634,	-- Gnome Engineering
-					-- 3635,	-- Gnome Engineering
+					--3635,	-- Gnome Engineering
 					3637,	-- Gnome Engineering
 					4181,	-- Goblin Engineering
 				},
 				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
 				coord = { 75.6, 74.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				lvl = 30,
 				requireSkill = ENGINEERING,
 				learnedAt = 200,
-				lvl = 30,
+				qi = 10789,	-- Manual of Engineering Disciplines (QI!)
 			}),
 			q(4293, {	-- A Sample of Slime...
 				qg = 10136,	-- Chemist Fuely
@@ -575,23 +575,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					q(4661, {	-- Testing for Corruption - Felwood
 						provider = { "o", 174848 },	-- Testing Equipment
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample
+						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample (QI!)
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 48,
+						repeatable = true,
 						groups = {
-							i(15103, {	-- Corrupt Tested Sample
+							i(15103, {	-- Corrupt Tested Sample (QI!)
 								description = "Might contain nothing. Bring way more slime samples than you need.",
 								groups = {
 									objective(1, {	-- 0/5 Corrupted Felwood Sample
 										questID = 4293,	-- A Sample of Slime...
-										provider = { "i", 12234 },	-- Corrupted Felwood Sample
+										provider = { "i", 12234 },	-- Corrupted Felwood Sample (QI!)
 									}),
 								},
 							}),
 						},
 					}),
-					i(12230, {	-- Felwood Slime Sample
+					i(12230, {	-- Felwood Slime Sample (QI!)
 						description = "Bring at least 30 of these back with you to the Undercity for testing.",
 						crs = {
 							7086,	-- Cursed Ooze
@@ -611,23 +611,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					q(4561, {	-- Testing for Impurities - Un'Goro Crater
 						provider = { "o", 174848 },	-- Testing Equipment
 						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
+						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample (QI!)
 						races = HORDE_ONLY,
-						repeatable = true,
 						lvl = 48,
+						repeatable = true,
 						groups = {
-							i(15102, {	-- Un'Goro Tested Sample
+							i(15102, {	-- Un'Goro Tested Sample (QI!)
 								description = "Might contain nothing. Bring way more slime samples than you need.",
 								groups = {
 									objective(1, {	-- 0/5 Pure Un'Goro Sample
 										questID = 4294,	-- ... and a Batch of Ooze
-										provider = { "i", 12236 },	-- Pure Un'Goro Sample
+										provider = { "i", 12236 },	-- Pure Un'Goro Sample (QI!)
 									}),
 								},
 							}),
 						},
 					}),
-					i(12235, {	-- Un'Goro Slime Sample
+					i(12235, {	-- Un'Goro Slime Sample (QI!)
 						description = "Bring at least 30 of these back with you to the Undercity for testing.",
 						crs = {
 							6559,	-- Glutinous Ooze
@@ -649,7 +649,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Merged Ooze Sample
-						provider = { "i", 12291 },	-- Merged Ooze Sample
+						provider = { "i", 12291 },	-- Merged Ooze Sample (QI!)
 						cost = { { "i", 12288, 1 } },	-- Encased Corrupt Ooze
 						crs = {
 							6557,	-- Primal Ooze
@@ -681,8 +681,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 35.6, 87.6, MAP.ORGRIMMAR },
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 				},
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -706,8 +706,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 35.6, 87.6, MAP.ORGRIMMAR },
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 				},
-				classes = { PRIEST },
 				races = { UNDEAD },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					{
@@ -719,16 +719,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			q(6322, {	-- Michael Garrett
 				sourceQuest = 6323,	-- Ride to the Undercity
 				qg = 4556,	-- Gordon Wendham
-				qi = 16210,	-- Gordon's Crate
 				coord = { 61.6, 41.8, MAP.UNDERCITY },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16210,	-- Gordon's Crate (QI!)
 			}),
 			q(6324, {	-- Return to Podrig
 				sourceQuest = 6322,	-- Michael Garrett
 				qg = 4551,	-- Michael Garrett
-				qi = 16210,	-- Gordon's Crate
 				coords = {
 					{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
 					{ 63.4, 48.6, MAP.UNDERCITY },
@@ -736,6 +735,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maps = { MAP.SILVERPINE_FOREST },
 				races = { UNDEAD },
 				lvl = 10,
+				qi = 16210,	-- Gordon's Crate (QI!)
 			}),
 			q(7813, {	-- A Donation of Wool
 				qg = 14729,	-- Ralston Farnsley
@@ -772,8 +772,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				maxReputation = { FACTION_UNDERCITY, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(8273, {	-- Oran's Gratitude
 				sourceQuest = 2782,	-- Rin'ji's Secret
@@ -792,17 +792,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
 				maps = { MAP.THE_BARRENS, MAP.SILVERPINE_FOREST },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Avelina's Heart
-						provider = { "i", 190179 },	-- Avelina's Heart
+						provider = { "i", 190179 },	-- Avelina's Heart (QI!)
 						coord = { 63.6, 65.6, MAP.SILVERPINE_FOREST },
 						cr = 185333,	-- Avelina Lilly
 					}),
 					objective(2, {	-- 0/1 Isaac's Heart
-						provider = { "i", 190180 },	-- Isaac's Heart
+						provider = { "i", 190180 },	-- Isaac's Heart (QI!)
 						coord = { 61.8, 38.6, MAP.THE_BARRENS },
 						cr = 185334,	-- Isaac Pearson
 					}),
@@ -813,13 +813,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				altQuests = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts
+						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts (QI!)
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -835,31 +835,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ 74.6, 23.2, MAP.UNDERCITY },
 					{ 53.2, 29.4, MAP.UNDERCITY },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = { { "i", 278265, 1 } },	-- Nutritious Slime Sludge
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(275682),	-- Excitable Slime
 				},
 			}),
 			q(97891, {	-- Prompt Potion Runner
 				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
-				qi = 279020,	-- Unstable Potion (PQI!)
 				coord = { 58.2, 55.2, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279020,	-- Unstable Potion (PQI!)
 			}),
 			q(97985, {	-- Thundering Hearts
 				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
 				coord = { 48.4, 70.8, MAP.UNDERCITY },
 				maps = { MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 25,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
-						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
+						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart (QI!)
 						cr = 270094,	-- Stormheart
 						coord = { 51.4, 48.3, MAP.THOUSAND_NEEDLES },
 					}),
@@ -890,10 +890,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4604, {	-- Abigail Sawyer <Bow Merchant>
 				coord = { 54.8, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
-				}},
+				} },
 				groups = {
 					i(11303, {	-- Fine Shortbow
 						isLimited = true,
@@ -921,7 +921,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4602, {	-- Benijah Fenner
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -931,7 +931,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					924,	-- Maul
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
-				}},
+				} },
 				groups = {
 					i(15808),	-- Fine Light Crossbow
 					i(15809),	-- Heavy Crossbow
@@ -950,7 +950,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4569, {	-- Charles Seaton <Blade Merchant>
 				coord = { 77.0, 50.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					-- added all
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -961,7 +961,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					923,	-- Longsword
 					2208,	-- Poniad
 					2027,	-- Scimitar
-				}},
+				} },
 			}),
 			n(4561, {	-- Daniel Bartlett <General Trade Supplier>
 				coord = { 64.0, 37.4, MAP.UNDERCITY },
@@ -987,14 +987,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4601, {	-- Francis Eliot
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2029,	-- Cleaver
 					927,	-- Double Axe
 					853,	-- Hatchet
 					1196,	-- Tabar
-				}},
+				} },
 				groups = {
 					i(15811),	-- Heavy Spear
 					i(15810),	-- Short Spear
@@ -1003,7 +1003,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4600, {	-- Geoffrey Hartwell
 				coord = { 58.4, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2520,	-- Broadsword
 					2523,	-- Bullova
 					2528,	-- Falchion
@@ -1014,12 +1014,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2525,	-- War Hammer
 					2533,	-- War Maul
 					2529,	-- Zweihander
-				}},
+				} },
 			}),
 			n(5820, {	-- Gillian Moore
 				coord = { 70.6, 59.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -1052,7 +1052,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					844,	-- Tanned Leather Gloves
 					846,	-- Tanned Leather Jerkin
 					845,	-- Tanned Leather Pants
-				}},
+				} },
 				groups = {
 					i(1839),	-- Rough Leather Belt
 					i(796),	-- Rough Leather Boots
@@ -1065,7 +1065,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4556, {	-- Gordon Wendham
 				coord = { 61.4, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
 					2130,	-- Club
@@ -1082,7 +1082,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2489,	-- Two-Handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
-				}},
+				} },
 			}),
 			n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 				coord = { 67.6, 44.1, MAP.UNDERCITY },
@@ -1100,7 +1100,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4589, {	-- Joseph Moore <Leatherworking Supplies>
 				coord = { 70.1, 58.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = { {"sub", "common_vendor", 5565} },	-- Jillian Tanner <Leatherworking Supplies>
+				sym = { { "sub", "common_vendor", 5565 } },	-- Jillian Tanner <Leatherworking Supplies>
 				groups = {
 					i(18949, {	-- Pattern: Barbaric Bracers (RECIPE!)
 						isLimited = true,
@@ -1117,12 +1117,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					i(22250, {	-- Herb Pouch
 						description = "Only select Herbalism Suppliers sells this pouch.",
 						providers = {
-							{ "n", 4216},	-- Chardryn <Herbalism Supplies>
-							{ "n", 5503},	-- Eldraeith <Herbalism Supplier>
-							{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplier>
-							{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplier>
-							{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
+							{ "n", 4216 },	-- Chardryn <Herbalism Supplies>
+							{ "n", 5503 },	-- Eldraeith <Herbalism Supplier>
+							{ "n", 5138 },	-- Gwina Stonebranch <Herbalism Supplier>
+							{ "n", 4615 },	-- Katrina Alliestar <Herbalism Supplier>
+							{ "n", 3548 },	-- Selina Weston <Alchemy & Herbalism Supplies>
+							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplies>
 						},
 					}),
 				},
@@ -1130,7 +1130,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 				coord = { 64.0, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2371,	-- Battered Leather Belt
 					2373,	-- Battered Leather Boots
 					2374,	-- Battered Leather Bracers
@@ -1158,7 +1158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2369,	-- Woven Gloves
 					2366,	-- Woven Pants
 					2364,	-- Woven Vest
-				}},
+				} },
 				groups = {
 					i(1835),	-- Dirty Leather Belt
 					i(210),	-- Dirty Leather Boots
@@ -1187,7 +1187,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4557, {	-- Louis Warren
 				coord = { 62.0, 41.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2025,	-- Bearded Axe
 					1198,	-- Claymore
 					2029,	-- Cleaver
@@ -1204,12 +1204,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
 					1196,	-- Tabar
-				}},
+				} },
 			}),
 			n(4580, {	-- Lucille Castleton
 				coord = { 71.4, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -1217,10 +1217,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2614,	-- Robe Of Apprenticeship
 					2616,	-- Shimmering Silk Robes
 					2618,	-- Silver Dress Robes
-				}},
+				} },
 			}),
 			n(5190, {	-- Merill Pleasance <Tabard Vendor>
-				sym = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
+				sym = { { "sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 				coord = { 69.3, 44.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 			}),
@@ -1240,7 +1240,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5819, {	-- Mirelle Tremayne
 				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2419,	-- Augmented Chain Belt
 					2420,	-- Augmented Chain Boots
 					2421,	-- Augmented Chain Bracers
@@ -1291,29 +1291,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					1852,	-- Scalemail Bracers
 					718,	-- Scalemail Gloves
 					286,	-- Scalemail Pants
-				}},
+				} },
 			}),
 			n(4592, {	-- Nathaniel Steenwick
 				coord = { 77.2, 50.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					2506,	-- Hornwood Recurve Bow
 					2507,	-- Laminated Recurve Bow
 					2505,	-- Polished Shortbow
 					3026,	-- Reinforced Bow
 					2504,	-- Worn Shortbow
-				}},
+				} },
 			}),
 			n(4603, {	-- Nicholas Atwood
 				coord = { 62.2, 27.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
 					2510,	-- Solid Blunderbuss
-				}},
+				} },
 			}),
 			n(4553, {	-- Ronald Burch <Cooking Supplier>
 				coord = { 62.3, 43.1, MAP.UNDERCITY },
@@ -1339,7 +1339,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 				coord = { 70.6, 28.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2435,	-- Embroidered Armor
 					3587,	-- Embroidered Belt
 					2438,	-- Embroidered Boots
@@ -1378,7 +1378,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					201,	-- Thick Cloth Pants
 					202,	-- Thick Cloth Shoes
 					200,	-- Thick Cloth Vest
-				}},
+				} },
 				groups = {
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui
@@ -1388,14 +1388,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4570, {	-- Sydney Upton <Staff Merchant>
 				coord = { 69.8, 27.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
-				}},
+				} },
 			}),
 			n(4554, {	-- Tawny Grisette <Mushroom Vendor>
-				coord = { 69.7, 44.8, MAP.UNDERCITY },
 				description = "Walks around the Trade Quarter, upper level.",
+				coord = { 69.7, 44.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				groups = {
 					i(4607),	-- Delicious Cave Mold
@@ -1409,25 +1409,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 				coord = { 62.0, 60.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
+				sym = { { "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
 					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				} },
 			}),
 			n(4559, {	-- Timothy Weldon
 				coord = { 63.6, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					17183,	-- Dented Buckler
 					1200,	-- Large Wooden Shield
 					17185,	-- Round Buckler
 					1202,	-- Wall Shield
 					2376,	-- Worn Heater Shield
-				}},
+				} },
 				groups = {
 					i(2398),	-- Light Chain Armor
 					i(2399),	-- Light Chain Belt
@@ -1446,7 +1446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4560, {	-- Walter Ellingson
 				coord = { 62.8, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
@@ -1455,12 +1455,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					850,	-- Chainmail Gloves
 					848,	-- Chainmail Pants
 					1202,	-- Wall Shield
-				}},
+				} },
 			}),
 			n(5754, {	-- Zane Bradford
 				coord = { 70.0, 27.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select", "itemID",
+				sym = { { "select", "itemID",
 					5239,	-- Blackbone Wand
 					5210,	-- Burning Wand
 					5236,	-- Combustible Wand
@@ -1469,7 +1469,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5347,	-- Pestilent Wand
 					5238,	-- Pitchwood Wand
 					5208,	-- Smoldering Wand
-				}},
+				} },
 			}),
 		}),
 	},
