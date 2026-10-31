@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					sourceQuest = 11001,	-- Vanquish the Raven God
 					qg = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					coord = { 80.2, 65.2, ZANGARMARSH },
-					timeline = { REMOVED_4_0_1 },
+					timeline = { ADDED_2_1_0, REMOVED_4_0_1 },
 					classes = { DRUID },
 					repeatable = true,
 					lvl = lvlsquish(70, 70, 30),
@@ -279,6 +279,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if BEFORE 4.0.1
 						description = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
 						sourceQuest = 11001,	-- Vanquish the Raven God
+						timeline = { ADDED_2_1_0 },
 						cost = { { "i", 32449, 1 } },	-- Essence-Infused Moonstone
 						-- #endif
 						creatureID = 23035,
