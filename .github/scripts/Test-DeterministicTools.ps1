@@ -30,6 +30,23 @@ function Run-Process([string]$exe, [string]$arguments, [string]$directory, [stri
     if ($null -eq $proc.ExitCode -or $proc.ExitCode -ne 0) { throw "$label exit code: $($proc.ExitCode)" }
     if ((Get-Item -LiteralPath $err).Length -ne 0) { throw "$label wrote to stderr" }
 }
+function Assert-MetadataContract($left, $right, [string]$label) {
+    foreach ($side in $left,$right) {
+        if ($side.contract.normalizedMetadataSha256 -cnotmatch '^[0-9a-f]{64}$' -or $side.layoutNormalizedMetadataSha256 -cnotmatch '^[0-9a-f]{64}$') { throw "$label missing metadata SHA256" }
+    }
+    $leftRows=@($left.rvaRows); $rightRows=@($right.rvaRows)
+    if ($leftRows.Count -eq 0 -or $leftRows.Count -ne $rightRows.Count) { throw "$label RVA row count differs" }
+    for ($i=0; $i -lt $leftRows.Count; $i++) {
+        $a=$leftRows[$i]; $b=$rightRows[$i]
+        if ($a.table -cne $b.table -or $a.row -ne $b.row -or $a.token -ne $b.token -or $a.offset -ne $b.offset -or
+            (($a.originalRva -eq 0) -ne ($b.originalRva -eq 0))) { throw "$label RVA row identity or body presence differs at index $i" }
+    }
+    $leftContract=[ordered]@{}; $rightContract=[ordered]@{}
+    foreach ($p in $left.contract.PSObject.Properties) { if ($p.Name -cne 'normalizedMetadataSha256') { $leftContract[$p.Name]=$p.Value } }
+    foreach ($p in $right.contract.PSObject.Properties) { if ($p.Name -cne 'normalizedMetadataSha256') { $rightContract[$p.Name]=$p.Value } }
+    if ((ConvertTo-Json -InputObject $leftContract -Depth 30 -Compress) -cne (ConvertTo-Json -InputObject $rightContract -Depth 30 -Compress)) { throw "$label logical PE contract, raw method IL or initialized field bytes differ" }
+    if ($left.layoutNormalizedMetadataSha256 -cne $right.layoutNormalizedMetadataSha256) { throw "$label non-layout metadata bytes differ" }
+}
 function Invoke-Reflection([string]$exe, [string]$output, [string]$label) {
     $hostExe = Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe'
     $probe = Join-Path $root '.github/scripts/Invoke-ParserReflectionProbe.ps1'
@@ -151,9 +168,7 @@ try {
             if ((ConvertTo-Json -InputObject $leftPe.stable -Depth 10 -Compress) -cne (ConvertTo-Json -InputObject $rightPe.stable -Depth 10 -Compress)) { throw "$($project.Name) $config stable PE header differs" }
             $leftMeta=Get-Content -Raw -LiteralPath (Join-Path $evidence "$leftLabel.metadata.json") | ConvertFrom-Json
             $rightMeta=Get-Content -Raw -LiteralPath (Join-Path $evidence "$rightLabel.metadata.json") | ConvertFrom-Json
-            $leftContract=ConvertTo-Json -InputObject $leftMeta.contract -Depth 30 -Compress
-            $rightContract=ConvertTo-Json -InputObject $rightMeta.contract -Depth 30 -Compress
-            if ($leftContract -cne $rightContract) { throw "$($project.Name) $config normalized metadata, raw method IL, PE contract, resources or FieldRVA differs" }
+            Assert-MetadataContract $leftMeta $rightMeta "$($project.Name) $config"
             $expectedMachine=if ($project.Name -eq 'Parser') { 'Amd64' } else { 'I386' }
             $expectedMagic=if ($project.Name -eq 'Parser') { 'PE32Plus' } else { 'PE32' }
             if ($leftMeta.contract.machine -ne $expectedMachine -or $leftMeta.contract.peMagic -ne $expectedMagic -or
@@ -167,7 +182,7 @@ try {
                 if ($leftReflection.hostArchitecture -ne 64 -or $leftReflection.entryPoint -cne 'ATT.Program.Main(System.String[])->System.Int32' -or @($leftReflection.modules).Count -ne 27) { throw "$config unexpected Parser reflection contract" }
                 if ((ConvertTo-Json -InputObject $leftReflection -Depth 30 -Compress) -cne (ConvertTo-Json -InputObject $rightReflection -Depth 30 -Compress)) { throw "$config Parser reflection differs" }
             }
-            $result.comparisons += [ordered]@{ project=$project.Name; configuration=$config; baselineSha256=$leftMeta.sha256; candidateSha256=$rightMeta.sha256; baselineMvid=$leftMeta.mvid; candidateMvid=$rightMeta.mvid; baselineTimestamp=$leftMeta.timestamp; candidateTimestamp=$rightMeta.timestamp; compileOrderEqual=$true; otherPropertiesEqual=$true; baselineDeterministic=$leftProps.Deterministic; candidateDeterministic=$rightProps.Deterministic; contractEqual=$true; runtimeEqual=$true }
+            $result.comparisons += [ordered]@{ project=$project.Name; configuration=$config; baselineSha256=$leftMeta.sha256; candidateSha256=$rightMeta.sha256; baselineMvid=$leftMeta.mvid; candidateMvid=$rightMeta.mvid; baselineTimestamp=$leftMeta.timestamp; candidateTimestamp=$rightMeta.timestamp; baselineMvidOnlyMetadataSha256=$leftMeta.contract.normalizedMetadataSha256; candidateMvidOnlyMetadataSha256=$rightMeta.contract.normalizedMetadataSha256; baselineLayoutMetadataSha256=$leftMeta.layoutNormalizedMetadataSha256; candidateLayoutMetadataSha256=$rightMeta.layoutNormalizedMetadataSha256; compileOrderEqual=$true; otherPropertiesEqual=$true; baselineDeterministic=$leftProps.Deterministic; candidateDeterministic=$rightProps.Deterministic; contractEqual=$true; runtimeEqual=$true }
         }
     }
     foreach ($project in $projects) {
