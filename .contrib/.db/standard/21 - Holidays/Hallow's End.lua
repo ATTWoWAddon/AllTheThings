@@ -1072,8 +1072,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						-- #endif
 						-- Mists of Pandaria
 						-- #if ANYCLASSIC
-						i(263014, { timeline = { ADDED_5_5_1, REMOVED_6_0_2 } }),	-- The Horseman's Horrific Hood
-						i(263018, { timeline = { ADDED_5_5_1, REMOVED_6_0_2 } }),	-- The Horseman's Sinister Slicer
+						i(263014, { timeline = { ADDED_5_5_1, REMOVED_5_5_4 } }),	-- The Horseman's Horrific Hood (489)
+						i(263018, { timeline = { ADDED_5_5_1, REMOVED_5_5_4 } }),	-- The Horseman's Sinister Slicer (489)
+						i(282172, { timeline = { ADDED_5_5_4, REMOVED_6_0_2 } }),	-- The Horseman's Horrific Hood (528)
+						i(282174, { timeline = { ADDED_5_5_4, REMOVED_6_0_2 } }),	-- The Horseman's Sinister Slicer (528)
 						i(87569, { timeline = { CREATED_5_0_4 } }),	-- The Horseman's Horrific Hood
 						i(87570, { timeline = { CREATED_5_0_4 } }),	-- The Horseman's Sinister Slicer
 						-- #else
