@@ -38778,7 +38778,8 @@ q(95421,{coords={
 [2393]={{58.7,70.8}}},maps={2716},qgs={230246},repeatable=1}),
 q(95422,{maps={2716,2717,2718},qgs={261067},repeatable=1,sourceQuests={95421}}),
 q(95423,{coords={
-[501]={{30.2,49.3}}},qgs={261067},repeatable=1,sourceQuests={95422}})}}),
+[501]={{30.2,49.3}}},qgs={261067},repeatable=1,sourceQuests={95422},g={
+i(283486)}})}}),
 ah(61467,{awp=110207,type="a",g={
 q(85252,{coords={
 [84]={{64.2,16.1}},
@@ -38835,7 +38836,8 @@ q(92675,{coords={
 q(92676,{coords={
 [7]={{33.3,36}}},qgs={252907},repeatable=1,sourceQuests={92675}}),
 q(92677,{coords={
-[1961]={{60.2,27.4}}},qgs={252907},repeatable=1,sourceQuests={92676}})}}),
+[1961]={{60.2,27.4}}},qgs={252907},repeatable=1,sourceQuests={92676},g={
+i(281653)}})}}),
 ah(63710,{awp=120107,type="a",g={
 q(95461,{coords={
 [84]={{64.2,16.1}},
@@ -38851,7 +38853,8 @@ q(95463,{coords={
 q(95464,{coords={
 [2592]={{54.7,54.8}}},qgs={261856},repeatable=1,sourceQuests={95462}}),
 q(95465,{coords={
-[830]={{60.9,79.4}}},qgs={261254},repeatable=1,sourceQuests={95463,95464,95567}})}}),
+[830]={{60.9,79.4}}},qgs={261254},repeatable=1,sourceQuests={95463,95464,95567},g={
+i(282708)}})}}),
 ah(63604,{awp=120107,type="a",g={
 q(95441,{coords={
 [84]={{64.2,16.1}},

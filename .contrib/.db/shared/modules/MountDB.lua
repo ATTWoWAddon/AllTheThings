@@ -2602,9 +2602,9 @@ i(282271, 1313280);	-- Stone-Carved Crusher
 i(223284, 448849);	-- The Watcher in the Waves
 --- UNSORTED ---
 i(274262, 1293485);	-- [PH] Dino Size Test
-i(286632, 1320798);	-- [PH] Stegodon - Black
-i(286633, 1320801);	-- [PH] Stegodon - Blue
-i(286634, 1320802);	-- [PH] Stegodon - Green
-i(286635, 1320803);	-- [PH] Stegodon - Purple
+i(286632, 1320798);	-- Attuned Ancient Stegodon
+i(286633, 1320801);	-- Crackling Ancient Stegodon
 i(288214, 1325226);	-- Reanimated Skeletal Raptor
+i(286634, 1320802);	-- Rumbling Jungle Stegodon
+i(286635, 1320803);	-- Thundering Primal Stegodon
 i(287092, 1321944);	-- Winterrrgl's Pine-Powered Candy Cane Contraption

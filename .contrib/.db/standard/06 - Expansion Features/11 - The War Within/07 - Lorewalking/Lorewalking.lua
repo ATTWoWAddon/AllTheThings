@@ -236,6 +236,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							qg = 261067,	-- Li Li Stormstout
 							coord = { 30.2, 49.3, 501 },	-- Dalaran
 							isRepeatable = true,
+							groups = { i(283486) },	-- Lorewalker's Notes: Jaina
 						}),
 					},
 				}),
@@ -383,6 +384,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							qg = 252907,	-- Li Li Stormstout
 							coord = { 60.2, 27.4, KORTHIA },
 							isRepeatable = true,
+							groups = { i(281653) },	-- Lorewalker's Notes: Thrall
 						}),
 					},
 				}),
@@ -445,6 +447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							qg = 261254,	-- Li Li Stormstout
 							coord = { 60.9, 79.4, KROKUUN },
 							isRepeatable = true,
+							groups = { i(282708) },	-- Lorewalker's Notes: Titans
 						}),
 					},
 				}),

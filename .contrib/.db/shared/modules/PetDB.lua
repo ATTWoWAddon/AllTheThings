@@ -4737,8 +4737,8 @@ i(283378, 5169);	-- Inquisitor's Messenger
 i(283375, 5168);	-- Slayer's Faithful Tracker
 i(284103, 5171);	-- Zyg'ee <The Hadorable Tyrant>
 --- UNSORTED ---
-i(286652, 5184);	-- Baby Stegodon (Black)
-i(286653, 5185);	-- Baby Stegodon (Blue)
-i(286654, 5186);	-- Baby Stegodon (Green)
-i(286655, 5187);	-- Baby Stegodon (Purple)
+i(286652, 5184);	-- Bump
+i(286655, 5187);	-- Frump
+i(286654, 5186);	-- Grump
+i(286653, 5185);	-- Lump
 i(286661, 5188);	-- Petite Snow Buddy
