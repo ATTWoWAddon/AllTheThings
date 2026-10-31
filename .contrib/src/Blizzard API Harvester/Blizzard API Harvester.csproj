@@ -2,7 +2,6 @@
   <PropertyGroup>
     <Configurations>Debug;Release;Test</Configurations>
     <OutputType>Exe</OutputType>
-    <Deterministic>false</Deterministic>
     <RootNamespace>ATT</RootNamespace>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>

@@ -3,7 +3,6 @@
     <Platform>x64</Platform>
     <Platforms>x64</Platforms>
     <OutputType>Exe</OutputType>
-    <Deterministic>false</Deterministic>
     <TargetFramework>net48</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
