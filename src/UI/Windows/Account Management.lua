@@ -6,8 +6,9 @@ local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 -- Global locals
 local ipairs, pairs, tonumber, time, type, tinsert, tremove, math_floor, tsort
 	= ipairs, pairs, tonumber, time, type, tinsert, tremove, math.floor, table.sort;
-local BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed
-	= BNGetInfo, BNSendGameData, C_BattleNet, C_ChatInfo, RequestTimePlayed;
+local BNGetInfo, C_BattleNet, C_ChatInfo, RequestTimePlayed
+	= BNGetInfo, C_BattleNet, C_ChatInfo, RequestTimePlayed;
+local SendGameData = app.WOWAPI.SendGameData;
 
 -- Suppress the user-visible time played chat print when we request it programmatically.
 -- Inspired by Broker_PlayedTime addon
@@ -290,7 +291,7 @@ local function SendAddonMessage(target, detail, msg)
 end
 local function _SendBattleNetMessage(target, msg)
 	DebugPrint("SEND.NET",target,msg:len(),msg:sub(1, 500))
-	BNSendGameData(target, AddonMessagePrefix, msg);
+	SendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, detail, msg)
 	SendMessageChunks(_SendBattleNetMessage, target, detail, msg, 4050);	-- wiki reports 4078 is max
@@ -440,7 +441,7 @@ end
 local function SendCharacterMessage(character, detail, msg)
 	if character then
 		local gameAccountID = character.gameAccountID;
-		if BNSendGameData and gameAccountID and EnableBattleNet then
+		if SendGameData and gameAccountID and EnableBattleNet then
 			SendBattleNetMessage(gameAccountID, detail, msg);
 		else
 			local identifier = character.Identifier or NormalizeLinkedCharacterIdentifier(character.name, character.realm)

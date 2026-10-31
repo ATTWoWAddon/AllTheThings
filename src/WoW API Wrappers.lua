@@ -54,6 +54,11 @@ end
 -- System Level APIs
 AssignAPIWrapper("issecretvalue", issecretvalue, function() return false; end);
 
+-- Battle.net APIs
+local C_BattleNet = C_BattleNet;
+lib.SendGameData = false; -- Optional when the client has no game-data transport.
+AssignAPIWrapper("SendGameData", C_BattleNet and C_BattleNet.SendGameData, BNSendGameData);
+
 -- ChatInfo APIs
 local C_ChatInfo = C_ChatInfo
 AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage, SendChatMessage);

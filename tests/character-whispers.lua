@@ -180,7 +180,7 @@ local linkPopup = source:sub((assert(source:find("app:ShowPopupDialogWithEditBox
 local linkCallback = assert(linkPopup:match("(function%(cmd%).-self:Rebuild%(%)%;%s*end%s*end)"));
 local program = [[
 ---@type ATTWhisperTestApp, ATTWhisperTestChatAPI, fun(target: number, prefix: string, message: string), ATTNameTestCharacter, table<string, ATTNameTestCharacter>, table<ATTAccountTransportKey, boolean>, ATTWhisperTestLocale, fun(): number, (fun(): boolean)?
-local app, C_ChatInfo, BNSendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
+local app, C_ChatInfo, SendGameData, CurrentCharacter, CharacterData, LinkedCharacters, L, time, RegionalUniqueNamesEnabled = ...;
 --- Discard production debug messages in the isolated module.
 ---@type fun(...: ATTWhisperTestPrintedValue)
 local DebugPrint = function() end;
