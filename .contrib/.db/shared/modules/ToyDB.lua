@@ -1654,7 +1654,7 @@ i(280821);	-- Trail of Halazzi
 ------------------
 -- PATCH 12.1.7 --
 ------------------
---- UNSORTED ---
 i(288899);	-- Hexed Tiny Tome
-i(286660);	-- Throw Bow
 i(288912);	-- Wood-Cursed Hearthstone
+--- UNSORTED ---
+i(286660);	-- Throw Bow

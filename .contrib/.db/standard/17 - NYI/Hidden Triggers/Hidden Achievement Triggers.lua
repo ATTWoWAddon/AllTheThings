@@ -4301,5 +4301,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 12.1.5.70077
 			ach(64186),	-- [DNT] Complete 3+ Chambers within a single run of Kindo'jan's Labyrinth.
 		}),
+
+		-- 12.1.7
+		expansion(EXPANSION.MID, patch(1,7), {
+			-- 12.1.7.70493
+			ach(64380),	-- [DNT] Let Me Solo Him: Kindo'jan (copy)
+			ach(64384),	-- [DNT] Let Me Solo Him: Kindo'jan (copy) (copy)
+			ach(64373),	-- [DNT] Potatoad Egg Secret
+		}),
 	}),
 });

@@ -13,7 +13,6 @@ local TALEBOUND = createHeader({
 		en = "The village of Quillgrave awaits, and the stories are far from finished. The Storyteller is waiting, and the fire is lit. Gather around the campfire and prepare to lose yourself in Talebound’s macabre tales.",
 	},
 });
-
 local TALEBOUND_STORE = createHeader({
 	readable = "Talebound Store",
 	constant = "TALEBOUND_STORE",
@@ -34,34 +33,97 @@ root(ROOTS.WorldEvents, {
 			n(ACHIEVEMENTS, {
 				-- Main Achievements
 				ach(63819),	-- A Puzzling Tale
+				ach(64446, {	-- A Puzzling Tale Reward
+					i(288966),	-- Voidlight Marl Prism
+				}),
+				ach(64417),	-- Delving into a Tale
+				ach(64464, {	-- Stories Shared
+					i(288899),	-- Hexed Tiny Tome (TOY!)
+				}),
+				ach(64139, {	-- Stories to Share
+					title(813),	-- Listener <Name>
+				}),
+				ach(64416, {	-- Tapping at the Trader's Door
+					provider = { "n", 278794 },	-- Traveling Raven
+					--coord = { XX.X, YY.Y, MAP.MIDNIGHT.SILVERMOON_CITY },
+				}),
 				ach(63826),	-- The Antiquarian's Chapter
+				ach(64440, {	-- The Antiquarian's Chapter Complete
+					i(288969),	-- Voidlight Marl Crystal
+				}),
 				ach(63825),	-- The Arcanist's Account
+				ach(64442, {	-- The Arcanist's Account Complete
+					i(288973),	-- Packed Alchemy Crate
+				}),
 				ach(64229),	-- The Eldritch Puzzlemaster
+				ach(64421, {	-- The Eldrich Puzzlemaster's Reward
+					i(288971),	-- Greywake's Wisdom
+				}),
 				ach(64230),	-- The Fae Puzzlemaster
+				ach(64422, {	-- The Fae Puzzlemaster's Reward
+					i(288972),	-- Court of Night Wisdom
+				}),
 				ach(64228),	-- The Hexed Puzzlemaster
-				ach(63823),	-- The Inquisitor and the Scribe: The Complete Tale
+				ach(64420, {	-- The Hexed Puzzlemaster's Reward
+					i(288970),	-- Greenthistle Wisdom
+				}),
+				ach(63823),	-- The Inquisitor and the Scribe
+				ach(64443, {	-- The Inquisitor and the Scribe Complete
+					i(288961),	-- Nebulous Voidcache
+				}),
 				ach(63824),	-- The Outfitter's Story
+				ach(64441, {	-- The Outfitter's Story Complete
+					i(288974),	-- Outfitter's Crate
+				}),
 				ach(64227),	-- The Sanguine Puzzlemaster
-				ach(63821),	-- The Slayer and the Scribe: The Complete Tale
+				ach(64419, {	-- The Sanguine Puzzlemaster's Reward
+					i(288957),	-- Darkhaven Wisdom
+				}),
+				ach(63821),	-- The Slayer and the Scribe
+				ach(64444, {	-- The Slayer and the Scribe Complete
+					i(288961),	-- Nebulous Voidcache
+				}),
 				ach(64135),	-- The Stories of Greenthistle Wood
-				ach(64139),	-- The Stories of the Storyteller
 				ach(64136),	-- The Story of Darkhaven
 				ach(64138),	-- The Story of Greywake's Expedition
 				ach(63820),	-- The Tale of the Puzzle Master
-				ach(63822),	-- The Witch and the Scribe: The Complete Tale
+				ach(64418, {	-- The Tale of the Puzzle Master Rewarded
+					i(288969),	-- Voidlight Marl Crystal
+				}),
+				ach(63822),	-- The Witch and the Scribe
+				ach(64445, {	-- The Witch and the Scribe Complete
+					i(288961),	-- Nebulous Voidcache
+				}),
 				ach(64137),	-- The Verses of the Court of Night
-				ach(63814),	-- Traveler's Coin (1000 Ducats)
-				ach(63815),	-- Traveler's Purse (2000 Ducats)
-				ach(63816),	-- Traveler's Cache (3000 Ducats)
-				ach(63817),	-- Traveler's Trove (4000 Ducats)
-				ach(63818),	-- Traveler's Fortune (5000 Ducats)
+				ach(63814),	-- Traveler's Coin (20000 Ducats)
+				ach(64435, {	-- Traveler's Coin Exchanged
+					i(288979),	-- Champion Mistcrest Pouch
+				}),
+				ach(63815),	-- Traveler's Purse (40000 Ducats)
+				ach(64436, {	-- Traveler's Purse Exchanged
+					i(288978),	-- Hero Mistcrest Pouch
+				}),
+				ach(63816),	-- Traveler's Cache (60000 Ducats)
+				ach(64437, {	-- Traveler's Cache Exchanged (60000 Ducats)
+					i(288978),	-- Hero Mistcrest Pouch
+				}),
+				ach(63817),	-- Traveler's Trove (80000 Ducats)
+				ach(64438, {	-- Traveler's Trove Exchanged (80000 Ducats)
+					i(288976),	-- Myth Mistcrest Pouch
+				}),
+				ach(63818),	-- Traveler's Fortune (100000 Ducats)
+				ach(64439, {	-- Traveler's Fortune Exchanged
+					i(288976),	-- Myth Mistcrest Pouch
+				}),
 
 				-- Bosses
 				ach(63760),	-- The Fairy Queen
 				ach(63761),	-- Veteran: The Fairy Queen
 				ach(63762),	-- Heroic: The Fairy Queen
 				ach(63763),	-- Mythic: The Fairy Queen
-				ach(63776),	-- The Final Confrontation
+				ach(63776, {	-- The Final Confrontation
+					spell(1327486),	-- The Fate of Quillgrave (CAMPSITE!)
+				}),
 				ach(63777),	-- Veteran: The Final Confrontation
 				ach(63778),	-- Heroic: The Final Confrontation
 				ach(63779),	-- Mythic: The Final Confrontation
@@ -80,7 +142,9 @@ root(ROOTS.WorldEvents, {
 				ach(63810),	-- The Inquisitor's Final Confrontation
 				ach(63811),	-- Veteran: The Inquisitor's Final Confrontation
 				ach(63812),	-- Heroic: The Inquisitor's Final Confrontation
-				ach(63813),	-- Mythic: The Inquisitor's Final Confrontation
+				ach(63813, {	-- Mythic: The Inquisitor's Final Confrontation
+					title(814),	-- <Name> of the Sacred Flame
+				}),
 				ach(63748),	-- The Lord Marshal
 				ach(63749),	-- Veteran: The Lord Marshal
 				ach(63780),	-- Heroic: The Lord Marshal
@@ -92,7 +156,9 @@ root(ROOTS.WorldEvents, {
 				ach(63802),	-- The Slayer's Final Confrontation
 				ach(63803),	-- Veteran: The Slayer's Final Confrontation
 				ach(63804),	-- Heroic: The Slayer's Final Confrontation
-				ach(63805),	-- Mythic: The Slayer's Final Confrontation
+				ach(63805, {	-- Mythic: The Slayer's Final Confrontation
+					title(812),	-- Monster Hunter <Name>
+				}),
 				ach(63754),	-- The Vampire Bishop
 				ach(63755),	-- Veteran: The Vampire Bishop
 				ach(63758),	-- Heroic: The Vampire Bishop
@@ -108,10 +174,48 @@ root(ROOTS.WorldEvents, {
 				ach(63806),	-- The Witch's Final Confrontation
 				ach(63807),	-- Veteran: The Witch's Final Confrontation
 				ach(63808),	-- Heroic: The Witch's Final Confrontation
-				ach(63809),	-- Mythic: The Witch's Final Confrontation
+				ach(63809, {	-- Mythic: The Witch's Final Confrontation
+					title(811),	-- <Name> of the Crooked Path
+				}),
+				ach(64426, {	-- Confronting a Mythic Tale
+					i(288983),	-- Cache of Mythic Treasures
+				}),
+				ach(64427, {	-- The Final Confrontation's Conclusion
+					i(288965),	-- Venomstone Cache
+				}),
+				ach(64428, {	-- Veteran: The Final Confrontation's Conclusion
+					i(288965),	-- Venomstone Cache
+				}),
+				ach(64429, {	-- Heroic: The Final Confrontation's Conclusion
+					i(288965),	-- Venomstone Cache
+				}),
+				ach(64430, {	-- Mythic: The Final Confrontation's Conclusion
+					i(288965),	-- Venomstone Cache
+				}),
+				ach(64431, {	-- The Comprehensive Final Confrontation
+					i(288987),	-- Cache of Heroic Treasures
+				}),
+				ach(64432, {	-- Veteran: The Comprehensive Final Confrontation
+					i(288987),	-- Cache of Heroic Treasures
+				}),
+				ach(64433, {	-- Heroic: The Comprehensive Final Confrontation
+					i(288987),	-- Cache of Heroic Treasures
+				}),
+				ach(64434, {	-- Mythic: The Comprehensive Final Confrontation
+					i(288983),	-- Cache of Mythic Treasures
+				}),
 
 				-- Levels
 				ach(63798),	-- The Complete Tale
+				ach(64465, {	-- The Tale Complete
+					i(288912),	-- Wood-Cursed Hearthstone (TOY!)
+				}),
+				ach(64424, {	-- Starting Down a Veteran's Tale
+					i(288987),	-- Cache of Heroic Treasures
+				}),
+				ach(64425, {	-- Stepping up to a Heroic Tale
+					i(288987),	-- Cache of Heroic Treasures
+				}),
 				ach(63799),	-- Veteran: The Complete Tale
 				ach(63800),	-- Heroic: The Complete Tale
 				ach(63801),	-- Mythic: The Complete Tale
@@ -131,13 +235,22 @@ root(ROOTS.WorldEvents, {
 				ach(63791),	-- Veteran: The Tale of the Court of Night
 				ach(63792),	-- Heroic: The Tale of the Court of Night
 				ach(63793),	-- Mythic: The Tale of the Court of Night
+				ach(64423, {	-- It's Just a Normal Tale
+					i(288984),	-- Cache of Champion Treasures
+				}),
+				n(REWARDS, {
+					currency(BOUND_SILVER),
+				}),
 			}),
 			n(REWARDS, {
-				currency(BOUND_SILVER),
 				currency(DUCATS),
 				currency(OUTFITTER_SUPPLIES),
 			}),
-			n(TALEBOUND_STORE, sharedData({ cost = { { "c", BOUND_SILVER, 20 } } }, {
+			n(TALEBOUND_STORE, sharedData({
+				--cr = 278794,	-- Traveling Raven
+				--coord = { XX.X, YY.Y, MAP.MIDNIGHT.SILVERMOON_CITY },
+				cost = { { "c", BOUND_SILVER, 20 } },
+			}, {
 				filter(BATTLE_PETS, {
 					i(277270),	-- Bewitching Familiar (PET!)
 					i(284094),	-- Hex-Cursed Manifestation (PET!)
