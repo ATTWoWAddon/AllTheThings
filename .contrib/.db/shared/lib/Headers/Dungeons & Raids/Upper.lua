@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "上层",
 		-- TODO: tw = "",
 	},
 });

@@ -43,7 +43,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		end
 	end
 	if #commandTexts > 0 then
-		tinsert(tooltipInfo, { left = "Commands: |cffcccccc\n  " .. app.TableConcat(commandTexts, nil, nil, "\n  ") .. "|r" });
+		tinsert(tooltipInfo, { left = L.COMMANDS_LABEL .. " |cffcccccc\n  " .. app.TableConcat(commandTexts, nil, nil, "\n  ") .. "|r" });
 	end
 	if window.HasPendingUpdate then
 		tinsert(tooltipInfo, { left = " " });

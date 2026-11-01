@@ -163,7 +163,7 @@ if app.IsClassic then
 		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
 	end
 
-	local OpenAuctionListAutomatically = child:CreateCheckBox("Automatically Open the Auction Module",
+	local OpenAuctionListAutomatically = child:CreateCheckBox(L.AUTO_AUCTION_LIST_CHECKBOX,
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
 	end,
@@ -175,6 +175,6 @@ if app.IsClassic then
 			if window then window:UpdatePosition(); end
 		end
 	end);
-	OpenAuctionListAutomatically:SetATTTooltip("Enable this option if you want to automatically open the Auction List when you open the auction house.\n\nShortcut Command: /attauctions");
+	OpenAuctionListAutomatically:SetATTTooltip(L.AUTO_AUCTION_LIST_CHECKBOX_TOOLTIP);
 	OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
 end
