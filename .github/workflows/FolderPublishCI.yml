@@ -1,0 +1,101 @@
+name: Contributor folder publish validation
+
+on:
+  push:
+    branches: ['codex/src-folder-publish-ci']
+    tags-ignore: ['**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish-and-fixtures:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+      - name: Publish and validate five tools
+        shell: pwsh
+        run: .github/scripts/Test-FolderPublish.ps1
+      - name: Upload published folders
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: contributor-folder-publish-${{ github.sha }}
+          path: ${{ runner.temp }}/att-folder-upload/
+          if-no-files-found: error
+          retention-days: 7
+      - name: Upload Parser baseline for comparisons
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: contributor-parser-build-baseline-${{ github.sha }}
+          path: ${{ runner.temp }}/att-folder-baseline/Parser/
+          if-no-files-found: error
+          retention-days: 1
+      - name: Upload publish evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: contributor-folder-publish-evidence-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/att-folder-publish-evidence/*.json
+            ${{ runner.temp }}/att-folder-publish-evidence/*.log
+          if-no-files-found: warn
+          retention-days: 7
+
+  compare-parser:
+    needs: publish-and-fixtures
+    runs-on: windows-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { flavor: Retail, output: Standard, config: '' }
+          - { flavor: ClassicEra, output: Vanilla, config: '../.db/standard/.config/classic/01 - Classic Era.config' }
+          - { flavor: SoD, output: VanillaSOD, config: '../.db/standard/.config/classic/01 - Classic SOD.config' }
+          - { flavor: TBC, output: TBC, config: '../.db/standard/.config/classic/02 - TBC.config' }
+          - { flavor: Wrath, output: Wrath, config: '../.db/standard/.config/classic/03 - Wrath.config' }
+          - { flavor: Cata, output: Cata, config: '../.db/standard/.config/classic/04 - Cataclysm.config' }
+          - { flavor: Mists, output: Mists, config: '../.db/standard/.config/classic/05 - Mists of Pandaria.config' }
+          - { flavor: Forever, output: Camelot, config: '../.db/forever/.config/forever.config' }
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v8
+        with:
+          name: contributor-folder-publish-${{ github.sha }}
+          path: ${{ runner.temp }}/folder-publish-artifact
+      - uses: actions/download-artifact@v8
+        with:
+          name: contributor-parser-build-baseline-${{ github.sha }}
+          path: ${{ runner.temp }}/folder-parser-baseline
+      - name: Prepare isolated published Parser
+        shell: pwsh
+        run: |
+          Move-Item -LiteralPath (Join-Path $env:RUNNER_TEMP 'folder-publish-artifact/Parser') -Destination (Join-Path $env:RUNNER_TEMP 'folder-parser-publish')
+      - name: Compare build and published Parser
+        shell: pwsh
+        env:
+          PARSER_FLAVOR: ${{ matrix.flavor }}
+          PARSER_OUTPUT: ${{ matrix.output }}
+          PARSER_CONFIG: ${{ matrix.config }}
+        run: .github/scripts/Compare-FolderParser.ps1 -Flavor $env:PARSER_FLAVOR -OutputName $env:PARSER_OUTPUT -Config $env:PARSER_CONFIG
+      - name: Upload Parser evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: folder-parser-${{ matrix.flavor }}-${{ github.sha }}
+          path: |
+            ${{ runner.temp }}/folder-parser-evidence-${{ matrix.flavor }}/*.json
+            ${{ runner.temp }}/folder-parser-evidence-${{ matrix.flavor }}/*.log
+          if-no-files-found: warn
+          retention-days: 7
