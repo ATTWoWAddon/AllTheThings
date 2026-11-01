@@ -28,8 +28,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 		}),
 		n(FACTIONS, {
 			faction(2586, {	-- Azeroth Commerce Authority
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 		n(FLIGHT_PATHS, {
@@ -45,7 +45,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				requireSkill = LOCKPICKING,
 				learnedAt = 25,
 				groups = {
-					i(7871),	-- Token of Thievery
+					i(7871),	-- Token of Thievery (QI!)
 				},
 			}),
 			o(178244, {	-- Practice Lockbox
@@ -81,27 +81,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 			}),
 			q(129, {	-- A Free Lunch
-				qg = 379,	-- Darcy
-				qi = 5534,	-- Parker's Lunch (PQI!)
+				qg = 379,	-- Darcy <Waitress>
 				coord = { 22.0, 45.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				qi = 5534,	-- Parker's Lunch (PQI!)
 			}),
 			q(94, {	-- A Watchful Eye
-				qg = 313,	-- Theocritus
-				qi = 1083,	-- Glyph of Azora (PQI!)
+				qg = 313,	-- Theocritus <Mage of Tower Azora>
 				coord = { 65.2, 69.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1083,	-- Glyph of Azora (PQI!)
 			}),
 			q(2282, {	-- Alther's Mill
 				sourceQuest = 2281,	-- Redridge Rendezvous
 				qg = 6966,	-- Lucius
-				qi = 5060,	-- Thieves' Tools (PQI!)
 				coord = { 23.0, 52.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				lvl = 16,
+				qi = 5060,	-- Thieves' Tools (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Token of Thievery
 						provider = { "i", 7871 },	-- Token of Thievery (QI!)
@@ -115,9 +115,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				sourceQuest = 89,	-- The Everstill Bridge
 				qg = 341,	-- Foreman Oslow
 				coord = { 27.0, 48.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/12 Greater Tarantula slain
 						providers = {
@@ -168,16 +168,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(98387, {	-- Blackrock Blockade
 				qg = 382,	-- Marshal Marris
 				coord = { 28.4, 49.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/10 Stolen Supplies
 						providers = {
-							{ "i", 280839 },	-- Stolen Supplies (QI!)
+							{ "i", 280839 },	-- Blackrock Supplies (QI!)
 							{ "o", 673384 },	-- Water Barrel
-							{ "o", 673385 },	-- Grain Sack
-							{ "o", 673399 },	-- Meat Haunch
+							{ "o", 673385 },	-- Blackrock Supplies
+							{ "o", 673399 },	-- Stolen Weapon
 						},
 						coords = {
 							{ 66.1, 73.6, MAP.REDRIDGE_MOUNTAINS },
@@ -235,10 +235,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(131, {	-- Delivering Daffodils
 				sourceQuest = 130,	-- Visit the Herbalist
 				qg = 342,	-- Martie Jainrose
-				qi = 1325,	-- Daffodil Bouquet (PQI!)
 				coord = { 16.8, 46.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 12,
+				qi = 1325,	-- Daffodil Bouquet (PQI!)
 				groups = {
 					i(1326),	-- Sauteed Sunfish
 				},
@@ -253,10 +253,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					MAP.WESTFALL,
 				},
 				cost = {
-					{ "i", 1942, 1 },	-- Bottle of Moonshine
-					{ "i", 1941, 1 },	-- Cask of Merlot
-					{ "i", 1262, 1 },	-- Keg of Thunderbrew
-					{ "i", 1939, 1 },	-- Skin of Sweet Rum
+					{ "i", 1942, 1 },	-- 1x Bottle of Moonshine (QI!)
+					{ "i", 1941, 1 },	-- 1x Cask of Merlot (QI!)
+					{ "i", 1262, 1 },	-- 1x Keg of Thunderbrew
+					{ "i", 1939, 1 },	-- 1x Skin of Sweet Rum (QI!)
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 12,
@@ -278,7 +278,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 Hilary's Necklace
 						providers = {
-							{ "i",  10958 },	-- Hilary's Necklace (QI!)
+							{ "i", 10958 },	-- Hilary's Necklace (QI!)
 							{ "o", 154357 },	-- Glinting Mud
 						},
 						coords = {
@@ -307,61 +307,61 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(248, {	-- Looking Further
 				sourceQuest = 94,	-- A Watchful Eye
-				qi = 1083,	-- Glyph of Azora (QI!)
 				providers = {
-					{ "o",   31 },	-- Old Lion Statue
-					{ "o",   76 },	-- An Empty Jar
+					{ "o", 31 },	-- Old Lion Statue
+					{ "o", 76 },	-- An Empty Jar
 				},
 				coord = { 79.2, 46.7, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				qi = 1083,	-- Glyph of Azora (QI!)
 			}),
 			q(145, {	-- Messenger to Darkshire (1/2)
 				sourceQuest = 144,	-- Messenger to Westfall (2/2)
 				qg = 344,	-- Magistrate Solomon
-				qi = 1409,	-- Solomon's Plea to Darkshire (PQI!)
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 1409,	-- Solomon's Plea to Darkshire (PQI!)
 			}),
 			q(146, {	-- Messenger to Darkshire (2/2)
 				sourceQuest = 145,	-- Messenger to Darkshire (1/2)
-				qg = 263,	-- Lord Ello Ebonlocke
-				qi = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
+				qg = 263,	-- Lord Ello Ebonlocke <Mayor of Darkshire>
 				coord = { 72.0, 46.6, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				qi = 1410,	-- Ebonlocke's Response to Solomon (PQI!)
 			}),
 			q(120, {	-- Messenger to Stormwind (1/2)
 				qg = 344,	-- Magistrate Solomon
-				qi = 1293,	-- The State of Lakeshire (PQI!)
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1293,	-- The State of Lakeshire (PQI!)
 			}),
 			q(121, {	-- Messenger to Stormwind (2/2)
 				sourceQuest = 120,	-- Messenger to Stormwind (1/2)
-				qg = 466,	-- General Marcus Jonathan
-				qi = 1294,	-- The General's Response (PQI!)
+				qg = 466,	-- General Marcus Jonathan <High Commander of Stormwind Defense>
 				coord = { 63.8, 75.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1294,	-- The General's Response (PQI!)
 			}),
 			q(143, {	-- Messenger to Westfall (1/2)
 				sourceQuest = 121,	-- Messenger to Stormwind (2/2)
 				qg = 344,	-- Magistrate Solomon
-				qi = 1407,	-- Solomon's Plea to Westfall (PQI!)
 				coord = { 24.9, 44.4, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1407,	-- Solomon's Plea to Westfall (PQI!)
 			}),
 			q(144, {	-- Messenger to Westfall (2/2)
 				sourceQuest = 143,	-- Messenger to Westfall (1/2)
-				qg = 234,	-- Gryan Stoutmantle
-				qi = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.2, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1408,	-- Stoutmantle's Response to Solomon (PQI!)
 			}),
 			q(219, {	-- Missing In Action
 				qg = 349,	-- Corporal Keeshan
@@ -377,7 +377,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(249, {	-- Morganth
 				sourceQuest = 248,	-- Looking Further
 				providers = {
-					{ "o",  31 },	-- Old Lion Statue
+					{ "o", 31 },	-- Old Lion Statue
 					{ "n", 313 },	-- Theocritus <Mage of Tower Azora>
 				},
 				coords = {
@@ -404,7 +404,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(150, {	-- Murloc Poachers
 				qg = 381,	-- Dockmaster Baren
 				coord = { 22.6, 47.4, MAP.REDRIDGE_MOUNTAINS },
-				cost = { { "i", 1468, 8 } },	-- Murloc Fin
+				cost = { { "i", 1468, 8 } },	-- 8x Murloc Fin
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
@@ -415,9 +415,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				qg = 343,	-- Chef Breanna
 				coord = { 17.6, 43.8, MAP.REDRIDGE_MOUNTAINS },
 				cost = {
-					{ "i", 2296, 5 },	-- Great Goretusk Snout
-					{ "i", 1080, 5 },	-- Tough Condor Meat
-					{ "i", 1081, 5 },	-- Crisp Spider Meat
+					{ "i", 1081, 5 },	-- 5x Crisp Spider Meat
+					{ "i", 2296, 5 },	-- 5x Great Goretusk Snout (QI!)
+					{ "i", 1080, 5 },	-- 5x Tough Condor Meat
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 15,
@@ -435,7 +435,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/5 Rethban Ore
 						providers = {
-							{ "i", 2798 },	-- Rethban Ore
+							{ "i", 2798 },	-- Rethban Ore (QI!)
 							{ "n", 580 },	-- Redridge Drudger
 							{ "o", 2055 },	-- Copper Vein (Redridge Mountains - Rethban Caverns)
 							{ "o", 2054 },	-- Tin Vein (Redridge Mountains - Rethban Caverns)
@@ -445,11 +445,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(119, {	-- Return to Verner
 				sourceQuest = 118,	-- The Price of Shoes
-				qg = 514,	-- Smith Argus
-				qi = 1284,	-- Crate of Horseshoes (PQI!)
+				qg = 514,	-- Smith Argus <Journeyman Blacksmith>
 				coord = { 41.7, 65.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				qi = 1284,	-- Crate of Horseshoes (PQI!)
 			}),
 			q(127, {	-- Selling Fish
 				qg = 381,	-- Dockmaster Baren
@@ -490,12 +490,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(98407, {	-- Show of Force
 				qg = 1070,	-- Deputy Feldon
 				coord = { 25.6, 60.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 11,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Spiked Collar
-						provider = { "i", 280911 },	-- Spiked Collar
+						provider = { "i", 280911 },	-- Spiked Collar (QI!)
 						coords = {
 							{ 16.0, 61.4, MAP.REDRIDGE_MOUNTAINS },
 							{ 31.0, 83.6, MAP.REDRIDGE_MOUNTAINS },
@@ -506,12 +506,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(95816, {	-- Sign Me Up!
 				qs = 270888,	-- Advertising License Application (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				-- Turned in to Elaine Compton <Contract Coordinator> (256391).
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
-						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						provider = { "i", 270897 },	-- Massive Pile of Completed Forms (QI!)
 					}),
 				},
 			}),
@@ -592,7 +592,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					objective(1, {	-- 0/1 Oslow's Toolbox
 						providers = {
 							{ "i", 1309 },	-- Oslow's Toolbox (QI!)
-							{ "o",   32 },	-- Sunken Chest
+							{ "o", 32 },	-- Sunken Chest
 						},
 						coord = { 36.5, 54.68, MAP.REDRIDGE_MOUNTAINS },
 					}),
@@ -601,10 +601,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(118, {	-- The Price of Shoes
 				qg = 415,	-- Verner Osgood
-				qi = 1283,	-- Verner's Notes
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1283,	-- Verner's Note (QI!)
 			}),
 			q(1699, {	-- The Rethban Gauntlet
 				sourceQuest = 1698,	-- Yorus Barleybrew
@@ -617,21 +617,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			q(1702, {	-- The Shieldsmith
 				sourceQuest = 1699,	-- The Rethban Gauntlet
 				qg = 6166,	-- Yorus Barleybrew
-				qi = 6843,	-- Cask of Scalder (PQI!)
 				coord = { 21.5, 44.7, MAP.REDRIDGE_MOUNTAINS },
-				classes = { WARRIOR },
 				races = ALLIANCE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
+				qi = 6843,	-- Cask of Scalder (PQI!)
 				groups = {
 					i(6970),	-- Furen's Favor
 				},
 			}),
 			q(178, {	-- Theocritus' Retrieval
 				qs = 1962,	-- Glowing Shadowhide Pendant (QS!)
-				qi = 1956,	-- Faded Shadowhide Pendant (PQI!)
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				qi = 1956,	-- Faded Shadowhide Pendant (PQI!)
 				groups = {
 					i(1970),	-- Restoring Balm
 				},
@@ -661,7 +661,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 12,
 			}),
-			q(169, {	-- Wanted: Gath'Ilzogg
+			q(169, {	-- WANTED: Gath'Ilzogg
 				provider = { "o", 60 },	-- Wanted: Gath'Ilzogg
 				coord = { 24.6, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -674,7 +674,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			q(95999, {	-- Wanted: Insinerator Gar'im
+			q(95999, {	-- WANTED: Incinerator Gar'im
 				provider = { "o", 649051 },	-- Wanted: Incinerator Gar'im
 				coord = { 24.3, 46.2, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -691,7 +691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					i(277218),	-- Incinerator's Boots
 				},
 			}),
-			q(180, {	-- Wanted: Lieutenant Fangore
+			q(180, {	-- WANTED: Lieutenant Fangore
 				provider = { "o", 47 },	-- Wanted: Lieutenant Fangore
 				coord = { 21.7, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
@@ -715,8 +715,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 				classes = { WARRIOR },
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 		}),
 		n(RARES, {
@@ -749,8 +749,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(584, {	-- Kazon
 				coords = {
-					{ 33.0,  6.6, MAP.REDRIDGE_MOUNTAINS },
-					{ 36.0,  8.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 33.0, 6.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 36.0, 8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 36.6, 11.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 38.4, 13.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 42.4, 15.4, MAP.REDRIDGE_MOUNTAINS },
@@ -841,21 +841,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256732, {	-- Alynsia <Enchanter>
 				coord = { 11.1, 71.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					236,	-- Cured Leather Armor
 					1849,	-- Cured Leather Belt
 					238,	-- Cured Leather Boots
 					1850,	-- Cured Leather Bracers
 					239,	-- Cured Leather Gloves
 					237,	-- Cured Leather Pants
-				}},
+				} },
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -894,8 +894,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256734, {	-- Daniel Stitchsong <Leatherworker>
 				coord = { 10.0, 72.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(956, {	-- Dorin Songblade <Armorer>
@@ -914,10 +914,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				coord = { 22.1, 45.6, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(253665, {	-- Pattern: Linen Reagent Bag
+					i(253665, {	-- Pattern: Linen Reagent Bag (RECIPE!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(253668, {	-- Pattern: Woolen Reagent Bag
+					i(253668, {	-- Pattern: Woolen Reagent Bag (RECIPE!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(4782, {	-- Solstice Robe
@@ -933,8 +933,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256733, {	-- Fritz Fizzle <Engineer>
 				coord = { 10.4, 74.4, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(3085, {	-- Gloria Femmel <Cooking Supplies>
@@ -948,15 +948,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3088, {	-- Henry Chapal <Gunsmith>
 				coord = { 18.8, 41.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
-				}},
+				} },
 			}),
 			n(256736, {	-- Huey Sunnydale <Mule Handler>
 				coord = { 8.4, 72.0, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(262766, {	-- Reins of the Pack Kodo (MOUNT!)
 						minReputation = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
@@ -967,10 +967,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(793, {	-- Kara Adams <Shield Crafter>
 				coord = { 25.5, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
+				sym = { { "select", "itemID",
 					2445,	-- Large Metal Shield
 					17188,	-- Ringed Buckler
-				}},
+				} },
 				groups = {
 					i(4821, {	-- Bear Buckler
 						isLimited = true,
@@ -985,68 +985,68 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(256731, {	-- Kalsey Sanden <Chef>
 				coord = { 10.8, 72.8, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(249888, {	-- Recipe: Calcified Smoothie (RECIPE!)
 						minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
-						cost = { { "c", 3402, 60 } },	-- x60 Merchant's Favor
+						cost = { { "c", 3402, 60 } },	-- 60x Merchant's Favor
 					}),
 					i(249887, {	-- Recipe: Mrrggl Smrrthle (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(249886, {	-- Recipe: Slimy Smoothie (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					i(249889, {	-- Recipe: Spicy Smoothie (RECIPE!)
 						minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.
-						cost = { { "c", 3402, 60 } },	-- x60 Merchant's Favor
+						cost = { { "c", 3402, 60 } },	-- 60x Merchant's Favor
 					}),
 					i(249885, {	-- Recipe: Venomous Smoothie (RECIPE!)
-						cost = { { "c", 3402, 30 } },	-- x30 Merchant's Favor
+						cost = { { "c", 3402, 30 } },	-- 30x Merchant's Favor
 					}),
 					i(249890, {	-- Recipe: Wicked Smoothie (RECIPE!)
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
-						cost = { { "c", 3402, 90 } },	-- x90 Merchant's Favor
+						cost = { { "c", 3402, 90 } },	-- 90x Merchant's Favor
 					}),
 				},
 			}),
 			n(256735, {	-- Mivin Shadowweave <Tailor>
 				coord = { 10.0, 72.8, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256729, {	-- Nina Surefire <Alchemist>
 				coord = { 10.8, 72.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256730, {	-- Stondry Darkhammer <Blacksmith>
 				coord = { 10.4, 74.6, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_ALLIANCE,
 			}),
 			n(256389, {	-- Tamelyn Aldridge <Supply Officer>
 				coord = { 10.5, 71.3, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(270888, {	-- Advertising License Application (QS!)
 						minReputation = { 2586, HONORED },	-- Azeroth Commerce Authority, Honored.
-						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
+						cost = { { "c", 3402, 1200 } },	-- 1200x Merchant's Favor
 					}),
 					i(262765, {	-- Azeroth Commerce Authority Tabard
 						minReputation = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
-						cost = { { "c", 3402, 200 } },	-- x200 Merchant's Favor
+						cost = { { "c", 3402, 200 } },	-- 200x Merchant's Favor
 					}),
 					i(284664, {	-- Packmule Treat
 						minReputation = { 2586, REVERED },	-- Azeroth Commerce Authority, Revered.
-						cost = { { "c", 3402, 1500 } },	-- x1500 Merchant's Favor
+						cost = { { "c", 3402, 1500 } },	-- 1500x Merchant's Favor
 					}),
 				},
 			}),
@@ -1097,7 +1097,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			i(1445, {	-- Blackrock Pauldrons
 				coords = {
 					{ 39.4, 14.8, MAP.REDRIDGE_MOUNTAINS },
-					{ 35.4,  8.6, MAP.REDRIDGE_MOUNTAINS },
+					{ 35.4, 8.6, MAP.REDRIDGE_MOUNTAINS },
 					{ 28.6, 14.4, MAP.REDRIDGE_MOUNTAINS },
 				},
 				crs = {
@@ -1165,7 +1165,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 17.8, 57.8, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
-			i(2296, {	-- Great Goretusk Snout
+			i(2296, {	-- Great Goretusk Snout (QI!)
 				crs = {
 					345,	-- Bellygrub
 					547,	-- Great Goretusk
@@ -1212,16 +1212,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 81.0, 70.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
-			i(250188, {	-- Recipe: Breakfast Omelet (RECIPE!)
+			i(250188, {	-- Recipe: Breakfast Omelette (RECIPE!)
 				coords = {
 					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside
 					{ 56.4, 75.6, MAP.REDRIDGE_MOUNTAINS },	-- Southside
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 428,	-- Dire Condor
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251526, {	-- Recipe: Savory Whimsyfin Delight (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					426,	-- Redridge Brute
 					428,	-- Dire Condor
@@ -1236,6 +1235,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					440,	-- Blackrock Grunt
 					441,	-- Black Dragon Whelp
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1219, {	-- Redridge Machete
 				cr = 424,	-- Redridge Poacher

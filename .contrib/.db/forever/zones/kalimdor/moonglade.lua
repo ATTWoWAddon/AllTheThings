@@ -29,14 +29,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			fp(63, {	-- Nighthaven, Moonglade
 				cr = 11800,	-- Silva Fil'naveth <Darnassus Flight Master>
 				coord = { 44.2, 45.2, MAP.MOONGLADE },
-				classes = { DRUID },
 				races = ALLIANCE_ONLY,
+				classes = { DRUID },
 			}),
 			fp(62, {	-- Nighthaven, Moonglade
 				cr = 11798,	-- Bunthen Plainswind <Thunder Bluff Flight Master>
 				coord = { 44.4, 45.6, MAP.MOONGLADE },
-				classes = { DRUID },
 				races = HORDE_ONLY,
+				classes = { DRUID },
 			}),
 		}),
 		n(QUESTS, {
@@ -131,9 +131,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					6762,	-- Rabine Saturna [A]
 				},
 				qg = 11801,	-- Rabine Saturna
-				qi = 17355,	-- Rabine's Letter
 				coord = { 51.7, 45.1, MAP.MOONGLADE },
 				lvl = 54,
+				qi = 17355,	-- Rabine's Letter (QI!)
 			}),
 			q(1185, {	-- Under the Chitin Was...
 				sourceQuest = 6845,	-- Uncovering Past Secrets
@@ -168,48 +168,48 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				coord = { 34.8, 7.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5924, {	-- Heeding the Call [Stormwind City]
 				qg = 5505,	-- Theridran <Druid Trainer>
 				coord = { 36.2, 64.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5925, {	-- Heeding the Call [Teldrassil]
 				qg = 3602,	-- Kal <Druid Trainer>
 				coord = { 56.0, 61.6, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5926, {	-- Heeding the Call [Thunder Bluff]
 				qg = 6746,	-- Innkeeper Pala <Innkeeper>
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5927, {	-- Heeding the Call [Orgrimmar]
 				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5928, {	-- Heeding the Call [Mulgore]
 				qg = 3064,	-- Gennia Runetotem <Druid Trainer>
 				coord = { 48.4, 59.6, MAP.MULGORE },
 				races = HORDE_ONLY,
 				classes = { DRUID },
-				isBreadcrumb = true,
 				lvl = 10,
+				isBreadcrumb = true,
 			}),
 			q(5931, {	-- Back to Darnassus
 				sourceQuest = 5929,	-- Great Bear Spirit [A]
@@ -240,8 +240,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
-						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust
 						coord = { 43.0, 45.0, MAP.DARKSHORE },
+						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust (QI!)
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -273,8 +273,8 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
 						provider = { "n", 12138 },	-- Lunaclaw
-						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust
 						coord = { 42.0, 60.0, MAP.THE_BARRENS },
+						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust (QI!)
 					}),
 					{
 						recipeID = 5487,	-- Bear Form // Dire Bear Form
@@ -317,9 +317,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
-						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
-						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
+						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler (QI!)
 						coord = { 54.9, 33.3, MAP.DARKSHORE },
+						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler (QI!)
 					}),
 				},
 			}),
@@ -345,9 +345,9 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 14,
 				groups = {
 					objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
-						provider = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
-						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
+						provider = { "i", 15843 },	-- Filled Dreadmist Falls Sampler (QI!)
 						coord = { 47.0, 18.0, MAP.THE_BARRENS },
+						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler (QI!)
 					}),
 				},
 			}),
@@ -387,10 +387,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.4, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				classes = { DRUID },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(94914, {	-- Moonglade
 				sourceQuests = {
@@ -400,27 +400,27 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				},
 				qg = 5504,	-- Sheldras Moontree <Druid Trainer>
 				coord = { 21.0, 55.4, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98340, {	-- The Great Cat Spirit
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TAUREN },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98341, {	-- The Great Windborne Cat Spirit
 				sourceQuest = 98340,	-- The Great Cat Spirit
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98342, {	-- The Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
@@ -531,10 +531,10 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				sourceQuest = 98404,	-- The Great Windborne Cat Spirit
 				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
 				coord = { 44.0, 73.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98739, {	-- Blessings of the Great Cat Spirit
 				qg = 11957,	-- Great Cat Spirit
@@ -602,7 +602,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Shrine Bauble
-						provider = { "i", 15877 },	-- Shrine Bauble
+						provider = { "i", 15877 },	-- Shrine Bauble (QI!)
 						coords = {
 							{ 54.1, 50.1, MAP.MOONGLADE },
 							{ 36.4, 40.2, MAP.MOONGLADE },
@@ -623,21 +623,21 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Pendant of the Sea Lion
-						provider = { "i", 15885 },	-- Pendant of the Sea Lion
+						provider = { "i", 15885 },	-- Pendant of the Sea Lion (QI!)
 						cost = {
-							{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
-							{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility
+							{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance (QI!)
+							{ "i", 15883, 1 },	-- Half Pendant of Aquatic Agility (QI!)
 						},
 					}),
 					{
-						itemID = 15882,	-- Half Pendant of Aquatic Endurance
+						itemID = 15882,	-- Half Pendant of Aquatic Endurance (QI!)
 						coords = {
 							{ 17.9, 33.0, MAP.WESTFALL },
 							{ 29.6, 29.5, MAP.SILVERPINE_FOREST },
 						},
 					},
 					{
-						itemID = 15883,	-- Half Pendant of Aquatic Agility
+						itemID = 15883,	-- Half Pendant of Aquatic Agility (QI!)
 						coords = {
 							{ 48.9, 11.3, MAP.DARKSHORE },
 							{ 56.7, 8.3, MAP.THE_BARRENS },
@@ -651,14 +651,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				coord = { 51.6, 33.2, MAP.MOONGLADE },
 				groups = {
 					i(14488, {	-- Pattern: Runecloth Boots (RECIPE!)
-						isLimited = true
+						isLimited = true,
 					}),
 					i(14472, {	-- Pattern: Runecloth Cloak (RECIPE!)
-						isLimited = true
+						isLimited = true,
 						-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 					}),
 					i(14469, {	-- Pattern: Runecloth Robe (RECIPE!)
-						isLimited = true
+						isLimited = true,
 						-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 					}),
 				},

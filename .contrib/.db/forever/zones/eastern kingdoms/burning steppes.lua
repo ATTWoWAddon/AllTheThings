@@ -42,9 +42,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				},
 				qg = 14437,	-- Gorzeeki Wildeyes
 				coord = { 12.4, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 12360, 3 },	-- Arcanite Bar
-				},
+				cost = { { "i", 12360, 3 } },	-- Arcanite Bar
 				classes = { WARLOCK },
 				lvl = 60,
 			}),
@@ -52,9 +50,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				sourceQuest = 7564,	-- Wildeyes
 				qg = 14436,	-- Mor'zul Bloodbringer
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 9264, 10 },	-- Elixir of Shadow Power
-				},
+				cost = { { "i", 9264, 10 } },	-- Elixir of Shadow Power
 				classes = { WARLOCK },
 				lvl = 60,
 			}),
@@ -65,8 +61,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/8 Broodling Essence
 						providers = {
-							{ "i",  12283 },	-- Broodling Essence
-							{ "i",  12284 },	-- Draco-Incarcinatrix 900
+							{ "i", 12283 },	-- Broodling Essence (QI!)
+							{ "i", 12284 },	-- Draco-Incarcinatrix 900
 							{ "o", 175264 },	-- Broodling Essence
 						},
 						crs = {
@@ -81,9 +77,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				sourceQuest = 7564,	-- Wildeyes
 				qg = 14436,	-- Mor'zul Bloodbringer
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
-				cost = {
-					{ "i", 15416, 35},	-- 35x Black Dragonscale
-				},
+				cost = { { "i", 15416, 35 } },	-- 35x Black Dragonscale
 				classes = { WARLOCK },
 				lvl = 60,
 			}),
@@ -107,9 +101,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			q(4808, {	-- Felnok Steelspring
 				sourceQuest = 4726,	-- Broodling Essence
 				qg = 10267,	-- Tinkee Steamboil
-				qi = 12438,	-- Tinkee's Letter
 				coord = { 65.2, 23.8, MAP.BURNING_STEPPES },
 				lvl = 50,
+				qi = 12438,	-- Tinkee's Letter (QI!)
 			}),
 			q(4283, {	-- FIFTY! YEP!
 				qg = 9177,	-- Oralius
@@ -118,7 +112,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/50 Blackrock Medallion
-						provider = { "i", 11467 },	-- Blackrock Medallion
+						provider = { "i", 11467 },	-- Blackrock Medallion (QI!)
 						crs = {
 							7029,	-- Blackrock Battlemaster
 							7027,	-- Blackrock Slayer
@@ -142,7 +136,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Gor'tesh's Lopped Off Head
-						provider = { "i", 11080 },	-- Gor'tesh's Lopped Off Head
+						provider = { "i", 11080 },	-- Gor'tesh's Lopped Off Head (QI!)
 						coord = { 39.6, 55.6, MAP.BURNING_STEPPES },
 						cr = 9176,	-- Gor'tesh
 					}),
@@ -154,11 +148,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					7630,	-- Arcanite
 				},
 				qg = 14437,	-- Gorzeeki Wildeyes
-				qi = 18688,	-- Imp in a Jar
 				coord = { 12.4, 31.6, MAP.BURNING_STEPPES },
 				maps = { MAP.SCHOLOMANCE },
 				classes = { WARLOCK },
 				lvl = 60,
+				qi = 18688,	-- Imp in a Jar
 			}),
 			q(3822, {	-- Krom'Grul
 				sourceQuest = 3821,	-- Dreadmaul Rock
@@ -168,7 +162,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Sha'ni's Nose-Ring
-						provider = { "i", 11058 },	-- Sha'ni's Nose-Ring
+						provider = { "i", 11058 },	-- Sha'ni's Nose-Ring (QI!)
 						cr = 8977,	-- Krom'Grul
 					}),
 					i(11869),	-- Sha'ni's Ring
@@ -184,10 +178,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11952, 4 },	-- Night Dragon's Breath
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
-					i(11642),	-- Lesser Arcanum of Constitution
+					i(11642),	-- Lesser Arcanum of Constitution (QI!)
 				},
 			}),
 			q(4483, {	-- Libram of Resilience
@@ -200,10 +194,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11736, 1 },	-- Libram of Resilience
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
-					i(11644),	-- Lesser Arcanum of Resilience
+					i(11644),	-- Lesser Arcanum of Resilience (QI!)
 				},
 			}),
 			q(4463, {	-- Libram of Rumination
@@ -216,10 +210,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11732, 1 },	-- Libram of Rumination
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
-					i(11622),	-- Lesser Arcanum of Rumination
+					i(11622),	-- Lesser Arcanum of Rumination (QI!)
 				},
 			}),
 			q(4482, {	-- Libram of Tenacity
@@ -232,10 +226,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11753, 1 },	-- Eye of Kajal
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
-					i(11643),	-- Lesser Arcanum of Tenacity
+					i(11643),	-- Lesser Arcanum of Tenacity (QI!)
 				},
 			}),
 			q(4484, {	-- Libram of Voracity
@@ -248,14 +242,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					{ "i", 11563, 4 },	-- Crystal Force
 					{ "g", 300000 },	-- 30g
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 				groups = {
-					i(11647),	-- Lesser Arcanum of Voracity
-					i(11648),	-- Lesser Arcanum of Voracity
-					i(11649),	-- Lesser Arcanum of Voracity
-					i(11645),	-- Lesser Arcanum of Voracity
-					i(11646),	-- Lesser Arcanum of Voracity
+					i(11647),	-- Lesser Arcanum of Voracity (QI!)
+					i(11648),	-- Lesser Arcanum of Voracity (QI!)
+					i(11649),	-- Lesser Arcanum of Voracity (QI!)
+					i(11645),	-- Lesser Arcanum of Voracity (QI!)
+					i(11646),	-- Lesser Arcanum of Voracity (QI!)
 				},
 			}),
 			q(7623, {	-- Lord Banehollow
@@ -290,8 +284,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					},
 				},
 				classes = { WARLOCK },
-				isBreadcrumb = true,
 				lvl = 60,
+				isBreadcrumb = true,
 			}),
 			q(3825, {	-- Ogre Head On A Stick = Party
 				sourceQuest = 3824,	-- Gor'tesh the Brute Lord
@@ -302,7 +296,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- Gor'tesh Head Planted
 						providers = {
-							{ "i",  11079 },	-- Gor'tesh's Lopped Off Head
+							{ "i", 11079 },	-- Gor'tesh's Lopped Off Head (QI!)
 							{ "o", 160840 },	-- Soft Dirt Mound
 						},
 						coord = { 81.0, 46.0, MAP.BURNING_STEPPES },
@@ -320,7 +314,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/30 Raging Beast's Blood
-						provider = { "i", 18590 },	-- Raging Beast's Blood
+						provider = { "i", 18590 },	-- Raging Beast's Blood (QI!)
 						crs = {
 							7453,	-- Moontouched Owlbeast
 							7454,	-- Berserk Owlbeast
@@ -338,7 +332,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet Transcript
 						providers = {
-							{ "i",  11470 },	-- Tablet Transcript
+							{ "i", 11470 },	-- Tablet Transcript (QI!)
 							{ "o", 169294 },	-- Tablet of the Seven
 						},
 						coord = { 53.0, 40.0, MAP.BURNING_STEPPES },
@@ -359,10 +353,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			q(7564, {	-- Wildeyes
 				sourceQuest = 7563,	-- Rage of Blood
 				qg = 14436,	-- Mor'zul Bloodbringer
-				qi = 18591,	-- Case of Blood
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
 				classes = { WARLOCK },
 				lvl = 60,
+				qi = 18591,	-- Case of Blood (QI!)
 			}),
 		}),
 		n(RARES, {
@@ -468,7 +462,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			n(1296, {	-- Felder Stover <Weaponsmith>
 				coord = { 72.9, 65.8, MAP.BURNING_STEPPES },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2528,	-- Falchion
 					2530,	-- Francisca
 					2531,	-- Great Axe
@@ -477,7 +471,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 					2533,	-- War Maul
 					2535,	-- War Staff
 					2529,	-- Zweihander
-				}},
+				} },
 			}),
 			n(14437, {	-- Gorzeeki Wildeyes
 				coord = { 12.6, 31.6, MAP.BURNING_STEPPES },
@@ -509,15 +503,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 		n(ZONE_DROPS, {
 			i(14482, {	-- Pattern: Cindercloth Cloak (RECIPE!)
 				coords = {
-					{43.8, 39.4, MAP.BURNING_STEPPES},
-					{58.8, 37.2, MAP.BURNING_STEPPES},
+					{ 43.8, 39.4, MAP.BURNING_STEPPES },
+					{ 58.8, 37.2, MAP.BURNING_STEPPES },
 				},
 				cr = 7037,	-- Thaurissan Firewalker
 			}),
 			i(14490, {	-- Pattern: Cindercloth Pants (RECIPE!)
 				coords = {
-					{43.8, 39.4, MAP.BURNING_STEPPES},
-					{58.8, 37.2, MAP.BURNING_STEPPES},
+					{ 43.8, 39.4, MAP.BURNING_STEPPES },
+					{ 58.8, 37.2, MAP.BURNING_STEPPES },
 				},
 				cr = 7037,	-- Thaurissan Firewalker (RECIPE!)
 			}),

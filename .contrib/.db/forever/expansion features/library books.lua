@@ -107,8 +107,8 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(79092, {	-- Archmage Theocritus's Research Journal
-				provider = { "i", 203755 },	-- Archmage Theocritus's Research Journal
+			q(79092, {	-- Archmage Theocritus' Research Journal
+				provider = { "i", 203755 },	-- Archmage Theocritus' Research Journal
 				maps = { ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(78148, {	-- Runes of the Sorceror-Kings
+			q(78148, {	-- Runes of the Sorcerer-Kings
 				provider = { "i", 209850 },	-- Runes of the Sorcerer-Kings
 				maps = { LOCH_MODAN },
 				races = ALLIANCE_ONLY,

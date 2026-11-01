@@ -83,8 +83,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 11755,	-- Harlo Wigglesworth
 				coord = { 61.0, 38.4, MAP.WINTERSPRING },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 49,
+				isBreadcrumb = true,
 			}),
 			q(8798, {	-- A Yeti of Your Own
 				sourceQuest = 5163,	-- Are We There, Yeti? (3/3)
@@ -104,7 +104,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/10 Thick Yeti Fur
-						provider = { "i", 12366 },	-- Thick Yeti Fur
+						provider = { "i", 12366 },	-- Thick Yeti Fur (QI!)
 						crs = {
 							7457,	-- Rogue Ice Thistle
 							7458,	-- Ice Thistle Yeti
@@ -119,7 +119,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/2 Pristine Yeti Horn
-						provider = { "i", 12367 },	-- Pristine Yeti Horn
+						provider = { "i", 12367 },	-- Pristine Yeti Horn (QI!)
 						crs = {
 							7460,	-- Ice Thistle Patriarch
 							7459,	-- Ice Thistle Matriarch
@@ -137,21 +137,21 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					objective(1, {	-- Scare Legacki
 						providers = {
 							{ "n", 10978 },	-- Legacki
-							{ "i", 12928 },	-- Umi's Mechanical Yeti
+							{ "i", 12928 },	-- Umi's Mechanical Yeti (QI!)
 						},
 						coord = { 61.6, 38.6, MAP.WINTERSPRING },
 					}),
 					objective(2, {	-- Scare Sprinkle
 						providers = {
 							{ "n", 7583 },	-- Sprinkle
-							{ "i", 12928 },	-- Umi's Mechanical Yeti
+							{ "i", 12928 },	-- Umi's Mechanical Yeti (QI!)
 						},
 						coord = { 51.0, 26.8, MAP.TANARIS },
 					}),
 					objective(3, {	-- Scare Quixxil
 						providers = {
 							{ "n", 10977 },	-- Quixxil
-							{ "i", 12928 },	-- Umi's Mechanical Yeti
+							{ "i", 12928 },	-- Umi's Mechanical Yeti (QI!)
 						},
 						coord = { 43.6, 9.6, MAP.UNGORO_CRATER },
 					}),
@@ -184,8 +184,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 4804, 3 } },	-- Chillwind E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12457),	-- Juju Chill
 				},
@@ -203,7 +203,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Insignia of the Black Guard
-						provider = { "i", 13350 },	-- Insignia of the Black Guard
+						provider = { "i", 13350 },	-- Insignia of the Black Guard (QI!)
 						cr = 11121,	-- Black Guard Swordsmith
 					}),
 					i(12825),	-- Plans: Blazing Rapier (RECIPE!)
@@ -211,17 +211,17 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			q(6030, {	-- Duke Nicholas Zverenhoff
 				qg = 10431,	-- Gregor Greystone
-				qi = 15790,	-- Studies in Spirit Speaking
 				coord = { 61.2, 38.8, MAP.WINTERSPRING },
 				maps = { MAP.EASTERN_PLAGUELANDS },
 				lvl = 50,
+				qi = 15790,	-- Studies in Spirit Speaking (QI!)
 			}),
 			q(6604, {	-- Enraged Wildkin (1/4)
 				qg = 11755,	-- Harlo Wigglesworth
 				coord = { 61.0, 38.4, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 53,
+				isBreadcrumb = true,
 			}),
 			q(4861, {	-- Enraged Wildkin (2/4)
 				sourceQuest = 6604,	-- Enraged Wildkin (1/4)
@@ -246,13 +246,13 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				groups = {
 					objective(1, {	-- 0/1 Jaron's Supplies
 						providers = {
-							{ "i", 12525 },	-- Jaron's Supplies
+							{ "i", 12525 },	-- Jaron's Supplies (QI!)
 							{ "o", 175629 },	-- Jaron's Supplies
 						},
 						coord = { 61.4, 60.7, MAP.WINTERSPRING },
 					}),
 					objective(2, {	-- 0/1 Blue-feathered Amulet
-						provider = { "i", 12524 },	-- Blue-feathered Amulet
+						provider = { "i", 12524 },	-- Blue-feathered Amulet (QI!)
 						crs = {
 							7454,	-- Berserk Owlbeast
 							7452,	-- Crazed Owlbeast
@@ -280,8 +280,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12436, 3 } },	-- Frostmaul E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12460),	-- Juju Might
 				},
@@ -291,8 +291,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12430, 3 } },	-- Frostsaber E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12450),	-- Juju Flurry
 				},
@@ -303,11 +303,11 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL },
 				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 58,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Shardtooth Meat
-						provider = { "i", 12622 },
+						provider = { "i", 12622 },	-- Shardtooth Meat (QI!)
 						crs = {
 							7445,	-- Elder Shardtooth
 							7446,	-- Rabid Shardtooth
@@ -316,7 +316,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 						},
 					}),
 					objective(2, {	-- 0/5 Chillwind Meat
-						provider = { "i", 12623 },
+						provider = { "i", 12623 },	-- Chillwind Meat (QI!)
 						crs = {
 							7448,	-- Chillwind Chimaera
 							7449,	-- Chillwind Ravager
@@ -334,10 +334,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			q(4882, {	-- Guarding Secrets (1/2)
 				sourceQuest = 4741,	-- Wild Guardians (2/3)
-				qi = 12558,	-- Blue-feathered Necklace
 				maps = { MAP.FELWOOD },
 				races = HORDE_ONLY,
 				lvl = 52,
+				qi = 12558,	-- Blue-feathered Necklace
 			}),
 			q(5121, {	-- High Chief Winterfall
 				sourceQuest = 5087,	-- Winterfall Runners
@@ -359,8 +359,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12435, 3 } },	-- Ice Thistle E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12459),	-- Juju Escape
 				},
@@ -372,7 +372,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				groups = {
 					objective(1, {	-- 0/10 Frostmaul Shards
 						providers = {
-							{ "i", 12334 },	-- Frostmaul Shards
+							{ "i", 12334 },	-- Frostmaul Shards (QI!)
 							{ "o", 175324 },	-- Frostmaul Shards
 						},
 						crs = {
@@ -392,8 +392,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					{ "i", 14047, 40 },	-- Runecloth
 					{ "i", 3857, 4 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(978, {	-- Moontouched Wildkin
 				sourceQuest = 3661,	-- Favored of Elune?
@@ -404,7 +404,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				groups = {
 					objective(1, {	-- 0/10 Moontouched Feather
 						providers = {
-							{ "i", 12383 },	-- Moontouched Feather
+							{ "i", 12383 },	-- Moontouched Feather (QI!)
 							{ "o", 175407 },	-- Moontouched Feather
 						},
 					}),
@@ -426,8 +426,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				minReputation = { FACTION_WINTERSABER_TRAINERS, HONORED },
 				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 58,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/4 Frostmaul Giant slain
 						provider = { "n", 7428 },	-- Frostmaul Giant
@@ -440,18 +440,18 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(5252, {	-- Remorseful Highborne
 				sourceQuest = 5248,	-- Tormented By the Past
 				qg = 10684,	-- Remorseful Highborne
-				qi = 13347,	-- Crystal of Zin-Malor (Provided)
 				coord = { 56.2, 44.4, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
+				qi = 13347,	-- Crystal of Zin-Malor (Provided) (QI!)
 			}),
 			q(4810, {	-- Return to Tinkee
 				sourceQuest = 4809,	-- Chillwind Horns
 				qg = 10468,	-- Felnok Steelspring
-				qi = 12445,	-- Felnok's Package
 				coord = { 61.6, 38.6, MAP.WINTERSPRING },
 				maps = { MAP.BURNING_STEPPES },
 				lvl = 50,
+				qi = 12445,	-- Felnok's Package
 				groups = {
 					i(15862),	-- Blitzcleaver
 					i(15863),	-- Grave Scepter
@@ -462,8 +462,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12432, 3 } },	-- Shardtooth E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12455),	-- Juju Ember
 				},
@@ -481,9 +481,9 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 							{ "o", 177684 },	-- Stone of Shy-Rotam
 						},
 						coord = { 49.8, 9.8, MAP.WINTERSPRING },
-						cost = { { "i", 12733, 1 } },	-- Sacred Frostsaber Meat
+						cost = { { "i", 12733, 1 } },	-- Sacred Frostsaber Meat (QI!)
 					}),
-					i(12733, {	-- Sacred Frostsaber Meat
+					i(12733, {	-- Sacred Frostsaber Meat (QI!)
 						crs = {
 							7431,	-- Frostsaber
 							7430,	-- Frostsaber Cub
@@ -516,7 +516,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Vosh'gajin's Snakestone
-						provider = { "i", 13352 },	-- Vosh'gajin's Snakestone
+						provider = { "i", 13352 },	-- Vosh'gajin's Snakestone (QI!)
 						cr = 9236,	-- Shadow Hunter Vosh'gajin
 					}),
 					i(12821),	-- Plans: Dawn's Edge (RECIPE!)
@@ -526,8 +526,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 7907,	-- Daryn Lightwind
 				coord = { 55.4, 92.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 53,
+				isBreadcrumb = true,
 			}),
 			q(4842, {	-- Strange Sources
 				sourceQuest = 980,	-- The New Springs
@@ -552,7 +552,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Crimson Hammersmith's Apron
-						provider = { "i", 13351 },	-- Crimson Hammersmith's Apron
+						provider = { "i", 13351 },	-- Crimson Hammersmith's Apron (QI!)
 						cr = 11120,	-- Crimson Hammersmith
 					}),
 					i(12824),	-- Plans: Enchanted Battlehammer (RECIPE!)
@@ -561,11 +561,11 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(5253, {	-- The Crystal of Zin-Malor
 				sourceQuest = 5252,	-- Remorseful Highborne
 				qg = 11079,	-- Wynd Nightchaser
-				qi = 13347,	-- Crystal of Zin-Malor (Provided)
 				coord = { 52.0, 30.2, MAP.WINTERSPRING },
 				maps = { MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
+				qi = 13347,	-- Crystal of Zin-Malor (Provided) (QI!)
 				groups = {
 					i(15791),	-- Turquoise Sash
 					i(15792),	-- Plow Wood Spaulders
@@ -581,17 +581,17 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				}),
 				providers = {
 					{ "n", 10431 },	-- Gregor Greystone
-					{ "i", 15788 },	-- Everlook Report
+					{ "i", 15788 },	-- Everlook Report (QI!)
 				},
 				coord = { 61.2, 38.8, MAP.WINTERSPRING },
 				lvl = 50,
 			},
 			q(5123, {	-- The Final Piece
 				sourceQuest = 5087,	-- Winterfall Runners
-				qi = 12842,	-- Crudely-Written Log
 				coord = { 69.6, 38.2, MAP.WINTERSPRING },
 				cr = 10738,	-- High Chief Winterfall
 				lvl = 52,
+				qi = 12842,	-- Crudely-Written Log
 			}),
 			q(5244, {	-- The Ruins of Kel'Theril
 				sourceQuests = {
@@ -624,8 +624,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10924,	-- Ivy Leafrunner
 				coord = { 50.8, 81.6, MAP.FELWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 53,
+				isBreadcrumb = true,
 			}),
 			q(5086, {	-- Toxic Horrors
 				sourceQuest = 5085,	-- Mystery Goo
@@ -635,7 +635,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/3 Toxic Horror Droplet
-						provider = { "i", 12822 },	-- Toxic Horror Droplet
+						provider = { "i", 12822 },	-- Toxic Horror Droplet (QI!)
 						cr = 7132,	-- Toxic Horror
 					}),
 				},
@@ -643,8 +643,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			q(6603, {	-- Trouble in Winterspring!
 				qg = 11754,	-- Meggi Peppinrocker
 				coord = { 61.4, 38.4, MAP.WINTERSPRING },
-				isBreadcrumb = true,
 				lvl = 52,
+				isBreadcrumb = true,
 			}),
 			q(5245, {	-- Troubled Spirits of Kel'Theril
 				sourceQuest = 5244,	-- The Ruins of Kel'Theril
@@ -656,33 +656,33 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				groups = {
 					objective(1, {	-- 0/1 First Relic Fragment
 						providers = {
-							{ "i", 12896 },	-- First Relic Fragment
+							{ "i", 12896 },	-- First Relic Fragment (QI!)
 							{ "o", 175888 },	-- Highborne Relic Fragment
-							{ "i", 12891 },	-- Jaron's Pick
+							{ "i", 12891 },	-- Jaron's Pick (QI!)
 						},
 						coord = { 55.0, 42.0, MAP.WINTERSPRING },
 					}),
 					objective(2, {	-- 0/1 Second Relic Fragment
 						providers = {
-							{ "i", 12897 },	-- Second Relic Fragment
+							{ "i", 12897 },	-- Second Relic Fragment (QI!)
 							{ "o", 175891 },	-- Highborne Relic Fragment
-							{ "i", 12891 },	-- Jaron's Pick
+							{ "i", 12891 },	-- Jaron's Pick (QI!)
 						},
 						coord = { 50.0, 41.0, MAP.WINTERSPRING },
 					}),
 					objective(3, {	-- 0/1 Third Relic Fragment
 						providers = {
-							{ "i", 12898 },	-- Third Relic Fragment
+							{ "i", 12898 },	-- Third Relic Fragment (QI!)
 							{ "o", 175892 },	-- Highborne Relic Fragment
-							{ "i", 12891 },	-- Jaron's Pick
+							{ "i", 12891 },	-- Jaron's Pick (QI!)
 						},
 						coord = { 53.0, 43.0, MAP.WINTERSPRING },
 					}),
 					objective(4, {	-- 0/1 Fourth Relic Fragment
 						providers = {
-							{ "i", 12899 },	-- Fourth Relic Fragment
+							{ "i", 12899 },	-- Fourth Relic Fragment (QI!)
 							{ "o", 175893 },	-- Highborne Relic Fragment
-							{ "i", 12891 },	-- Jaron's Pick
+							{ "i", 12891 },	-- Jaron's Pick (QI!)
 						},
 						coord = { 52.0, 41.0, MAP.WINTERSPRING },
 					}),
@@ -704,8 +704,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12433, 3 } },	-- Wildkin E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12458),	-- Juju Guile
 				},
@@ -715,15 +715,15 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				qg = 10307,	-- Witch Doctor Mau'ari
 				coord = { 61.8, 38.2, MAP.WINTERSPRING },
 				cost = { { "i", 12431, 3 } },	-- Winterfall E'ko
-				repeatable = true,
 				lvl = 55,
+				repeatable = true,
 				groups = {
 					i(12451),	-- Juju Power
 				},
 			}),
 			q(5083, {	-- Winterfall Firewater
-				qi = 12771,	-- Empty Firewater Flask
 				lvl = 52,
+				qi = 12771,	-- Empty Firewater Flask
 			}),
 			q(5201, {	-- Winterfall Intrusion
 				qg = 10618,	-- Rivern Frostwind
@@ -731,8 +731,8 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				minReputation = { FACTION_WINTERSABER_TRAINERS, NEUTRAL + 1500 },
 				maxReputation = { FACTION_WINTERSABER_TRAINERS, EXALTED },
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 58,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Winterfall Shaman slain
 						provider = { "n", 7439 },	-- Winterfall Shaman
@@ -749,7 +749,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				lvl = 52,
 				groups = {
 					objective(1, {	-- 0/1 Winterfall Crate
-						provider = { "i", 12829 },	-- Winterfall Crate
+						provider = { "i", 12829 },	-- Winterfall Crate (QI!)
 						coord = { 28.4, 37.8, MAP.WINTERSPRING },
 						cr = 10916,	-- Winterfall Runner
 					}),
@@ -1117,7 +1117,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					7438,	-- Winterfall Ursa
 				},
 			}),
-			i(21928, {	-- Winterspring Blood Sample
+			i(21928, {	-- Winterspring Blood Sample (QI!)
 				crs = {
 					7445,	-- Elder Shardtooth
 					7431,	-- Frostsaber

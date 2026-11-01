@@ -72,8 +72,8 @@ maproot(MAP.KALIMDOR, {
 					coord = { 27.8, 34.6, MAP.WINTERSPRING },
 					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21383, 5 } },	-- Winterfall Spirit Beads
-					repeatable = true,
 					lvl = 50,
+					repeatable = true,
 				}),
 				q(8461, {	-- Deadwood of the North
 					qg = 15395,	-- Nafien
@@ -85,7 +85,6 @@ maproot(MAP.KALIMDOR, {
 					},
 				}),
 				q(8470, {	-- Deadwood Ritual Totem
-					qi = 20741,	-- Deadwood Ritual Totem
 					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },
 					crs = {
 						7157,	-- Deadwood Avenger
@@ -93,6 +92,7 @@ maproot(MAP.KALIMDOR, {
 						7158,	-- Deadwood Shaman
 					},
 					lvl = 45,
+					qi = 20741,	-- Deadwood Ritual Totem
 				}),
 				q(8466, {	-- Feathers for Grazle
 					sourceQuest = 8460,	-- Timbermaw Ally
@@ -100,8 +100,8 @@ maproot(MAP.KALIMDOR, {
 					coord = { 50.9, 85.0, MAP.FELWOOD },
 					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					repeatable = true,
 					lvl = 45,
+					repeatable = true,
 				}),
 				q(8467, {	-- Feathers for Nafien
 					sourceQuest = 8460,	-- Timbermaw Ally
@@ -109,8 +109,8 @@ maproot(MAP.KALIMDOR, {
 					coord = { 64.8, 8.2, MAP.FELWOOD },
 					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					repeatable = true,
 					lvl = 45,
+					repeatable = true,
 				}),
 				q(6031, {	-- Runecloth
 					qg = 11557,	-- Meilosh
@@ -155,7 +155,7 @@ maproot(MAP.KALIMDOR, {
 					}),
 					providers = {
 						{ "n", 11555 },	-- Gorn One Eye
-						{ "i", 21155 },	-- Timbermaw Offering of Peace
+						{ "i", 21155 },	-- Timbermaw Offering of Peace (QI!)
 					},
 					coord = { 65.2, 2.6, MAP.FELWOOD },
 					minReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
@@ -169,9 +169,9 @@ maproot(MAP.KALIMDOR, {
 					lvl = 45,
 					groups = {
 						objective(1, {	-- 0/1 Essence of Xandivious
-							provider = { "i", 21145 },	-- Essence of Xandivious
+							provider = { "i", 21145 },	-- Essence of Xandivious (QI!)
 							coord = { 68.0, 37.6, MAP.WINTERSPRING },
-							cost = { { "i", 21144, 1 } },	-- Demon Summoning Torch
+							cost = { { "i", 21144, 1 } },	-- Demon Summoning Torch (QI!)
 							cr = 15623,	-- Xandivious
 						}),
 						i(21326),	-- Defender of the Timbermaw
@@ -217,7 +217,6 @@ maproot(MAP.KALIMDOR, {
 					},
 				}),
 				q(8471, {	-- Winterfall Ritual Totem
-					qi = 20742,	-- Winterfall Ritual Totem
 					minReputation = { FACTION_TIMBERMAW_HOLD, NEUTRAL },	-- Timbermaw Hold
 					crs = {
 						10738,	-- High Chief Winterfall
@@ -229,6 +228,7 @@ maproot(MAP.KALIMDOR, {
 						7438,	-- Winterfall Ursa
 					},
 					lvl = 50,
+					qi = 20742,	-- Winterfall Ritual Totem
 				}),
 			}),
 			n(VENDORS, {

@@ -54,11 +54,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3201, {	-- At Last!
 				sourceQuest = 3182,	-- Proof of Deed
 				qg = 8256,	-- Curator Thorius
-				qi = 10022,	-- Proof of Deed
 				coord = { 71.4, 16.2, MAP.IRONFORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 10022,	-- Proof of Deed (QI!)
 				groups = {
 					i(5396),	-- Key to Searing Gorge
 				},
@@ -121,7 +121,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/8 Thorium Plated Dagger
-						provider = { "i", 10551 },	-- Thorium Plated Dagger
+						provider = { "i", 10551 },	-- Thorium Plated Dagger (QI!)
 						crs = {
 							5839,	-- Dark Iron Geologist
 							15692,	-- Dark Iron Kidnapper
@@ -149,11 +149,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				maxReputation = {
 					FACTION_THORIUM_BROTHERHOOD, HONORED,
 				},
-				cost = {
-					{ "i", 18945, 4 },	-- Dark Iron Residue
-				},
-				repeatable = true,
+				cost = { { "i", 18945, 4 } },	-- Dark Iron Residue
 				lvl = 40,
+				repeatable = true,
 			}),
 			q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
 				qg = 14627,	-- Hansel Heavyhands
@@ -188,23 +186,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Goodsteel Ledger
 						providers = {
-							{ "i",  11727 },	-- Goodsteel Ledger
+							{ "i", 11727 },	-- Goodsteel Ledger (QI!)
 							{ "o", 173266 },	-- Goodsteel Ledger
 						},
 					}),
 					objective(2, {	-- 0/20 Solid Crystal Leg Shaft
-						provider = { "i", 11725 },	-- Solid Crystal Leg Shaft
+						provider = { "i", 11725 },	-- Solid Crystal Leg Shaft (QI!)
 						cr = 5856,	-- Glassweb Spider
 					}),
 					objective(3, {	-- 0/1 Overdue Package
 						providers = {
-							{ "i",  11724 },	-- Overdue Package
+							{ "i", 11724 },	-- Overdue Package (QI!)
 							{ "o", 174728 },	-- Damaged Crate
 						},
 						coord = { 54.1, 55.8, MAP.DUSTWALLOW_MARSH },
 					}),
 					objective(4, {	-- 0/1 Goodsteel's Balanced Flameberge
-						provider = { "i", 11723 },	-- Goodsteel's Balanced Flameberge
+						provider = { "i", 11723 },	-- Goodsteel's Balanced Flameberge (QI!)
 						cr = 9916,	-- Jarquia
 						coords = {
 							{ 94.4, 51.8, MAP.SWAMP_OF_SORROWS },
@@ -230,7 +228,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Prayer to Elune
-						provider = { "i", 10458 },	-- Prayer to Elune
+						provider = { "i", 10458 },	-- Prayer to Elune (QI!)
 						crs = {
 							5860,	-- Twilight Dark Shaman
 							5861,	-- Twilight Fire Guard
@@ -245,16 +243,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3182, {	-- Proof of Deed
 				sourceQuest = 3181,	-- The Horn of the Beast
 				qg = 3836,	-- Mountaineer Pebblebitty
-				qi = 10005,	-- Margol's Gigantic Horn
 				coord = { 18.2, 84.0, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				lvl = 40,
+				qi = 10005,	-- Margol's Gigantic Horn (QI!)
 			}),
 			q(3372, {	-- Release Them
 				sourceQuest = 3371,	-- Dwarven Justice
 				providers = {
 					{ "o", 148498 },	-- Altar of Suntara
-					{ "n",   8417 },	-- Dying Archaeologist
+					{ "n", 8417 },	-- Dying Archaeologist
 				},
 				coord = { 41.2, 25.6, MAP.SEARING_GORGE },
 				races = ALLIANCE_ONLY,
@@ -262,7 +260,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Mysterious Artifact
 						providers = {
-							{ "i",  10442 },	-- Mysterious Artifact
+							{ "i", 10442 },	-- Mysterious Artifact (QI!)
 							{ "o", 148506 },	-- Twilight Artifact
 						},
 						coord = { 29.2, 25.9, MAP.SEARING_GORGE },
@@ -276,12 +274,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
-					{ "i", 18944, 2 },	-- Incendosaur Scale
+					{ "i", 18944, 2 },	-- Incendosaur Scale (QI!)
 					{ "i", 4234, 10 },	-- Heavy Leather
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(8241, {	-- Restoring Fiery Flux Supplies via Iron
 				sourceQuest = 7722,	-- What the Flux?
@@ -290,12 +288,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
-					{ "i", 18944, 2 },	-- Incendosaur Scale
+					{ "i", 18944, 2 },	-- Incendosaur Scale (QI!)
 					{ "i", 3575, 4 },	-- Iron Bar
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(7736, {	-- Restoring Fiery Flux Supplies via Kingsblood
 				sourceQuest = 7722,	-- What the Flux?
@@ -304,12 +302,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				minReputation = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },
 				cost = {
-					{ "i", 18944, 2 },	-- Incendosaur Scale
+					{ "i", 18944, 2 },	-- Incendosaur Scale (QI!)
 					{ "i", 3356, 4 },	-- Kingsblood
 					{ "i", 3857, 1 },	-- Coal
 				},
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(3566, {	-- Rise, Obsidion!
 				sourceQuest = 3372,	-- Release Them
@@ -319,12 +317,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Head of Lathoric the Black
-						provider = { "i", 10447 },	-- Head of Lathoric the Black
+						provider = { "i", 10447 },	-- Head of Lathoric the Black (QI!)
 						coord = { 41.6, 26.6, MAP.SEARING_GORGE },
 						cr = 8391,	-- Lathoric the Black
 					}),
 					objective(2, {	-- 0/1 Heart of Obsidion
-						provider = { "i", 10446 },	-- Heart of Obsidion
+						provider = { "i", 10446 },	-- Heart of Obsidion (QI!)
 						coord = { 42.6, 27.0, MAP.SEARING_GORGE },
 						cr = 8400,	-- Obsidion
 					}),
@@ -341,28 +339,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- Western Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution (QI!)
 							{ "o", 149025 },	-- Sentry Brazier
 						},
 						coord = { 33.0, 60.0, MAP.SEARING_GORGE },
 					}),
 					objective(2, {	-- Southern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution (QI!)
 							{ "o", 149030 },	-- Sentry Brazier
 						},
 						coord = { 44.0, 60.0, MAP.SEARING_GORGE },
 					}),
 					objective(3, {	-- Eastern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution (QI!)
 							{ "o", 149031 },	-- Sentry Brazier
 						},
 						coord = { 50.0, 55.0, MAP.SEARING_GORGE },
 					}),
 					objective(4, {	-- Northern Tower Ablaze
 						providers = {
-							{ "i",  10515 },	-- Torch of Retribution
+							{ "i", 10515 },	-- Torch of Retribution (QI!)
 							{ "o", 149032 },	-- Sentry Brazier
 						},
 						coord = { 33.0, 54.0, MAP.SEARING_GORGE },
@@ -396,11 +394,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Smithing Tuyere
-						provider = { "i", 18959 },	-- Smithing Tuyere
+						provider = { "i", 18959 },	-- Smithing Tuyere (QI!)
 						cr = 5840,	-- Dark Iron Steamsmith
 					}),
 					objective(2, {	-- 0/1 Lookout's Spyglass
-						provider = { "i", 18960 },	-- Lookout's Spyglass
+						provider = { "i", 18960 },	-- Lookout's Spyglass (QI!)
 						cr = 8566,	-- Dark Iron Lookout
 					}),
 					i(19124),	-- Slagplate Leggings
@@ -417,7 +415,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				description = "The Singed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 				sourceQuest = 3367,	-- Suntara Stones (1/2)
 				providers = {
-					{ "i",  10443 },	-- Singed Letter
+					{ "i", 10443 },	-- Singed Letter
 					{ "o", 175704 },	-- Singed Letter
 				},
 				coord = { 74.5, 19.3, MAP.SEARING_GORGE },
@@ -431,7 +429,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Symbol of Ragnaros
-						provider = { "i", 10552 },	-- Symbol of Ragnaros
+						provider = { "i", 10552 },	-- Symbol of Ragnaros (QI!)
 						crs = {
 							5860,	-- Twilight Dark Shaman
 							5861,	-- Twilight Fire Guard
@@ -448,7 +446,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/4 Heart of Flame
-						provider = { "i", 10509 },	-- Heart of Flame
+						provider = { "i", 10509 },	-- Heart of Flame (QI!)
 						crs = {
 							5850,	-- Blazing Elemental
 							5852,	-- Inferno Elemental
@@ -457,7 +455,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 						},
 					}),
 					objective(2, {	-- 0/4 Golem Oil
-						provider = { "i", 10511 },	-- Golem Oil
+						provider = { "i", 10511 },	-- Golem Oil (QI!)
 						crs = {
 							5854,	-- Heavy War Golem
 							5855,	-- Magma Elemental
@@ -469,13 +467,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3181, {	-- The Horn of the Beast
 				providers = {
 					{ "i", 10000 },	-- Margol's Horn
-					{ "i", 10005 },	-- Margol's Gigantic Horn
+					{ "i", 10005 },	-- Margol's Gigantic Horn (QI!)
 				},
 				coord = { 73.0, 77.2, MAP.SEARING_GORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				cr = 5833,	-- Margol the Rager
 				lvl = 40,
+				cr = 5833,	-- Margol the Rager
 			}),
 			q(4451, {	-- The Key to Freedom
 				providers = {
@@ -494,9 +492,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			q(3454, {	-- The Torch of Retribution (2/2)
 				sourceQuest = 3453,	-- The Torch of Retribution (1/2)
 				providers = {
-					{ "n",   8479 },	-- Velarok Windblade
+					{ "n", 8479 },	-- Velarok Windblade
 					{ "o", 149047 },	-- Torch of Retribution
-					{ "i",  10515 },	-- Torch of Retribution
+					{ "i", 10515 },	-- Torch of Retribution (QI!)
 				},
 				coord = { 39.1, 39.0, MAP.SEARING_GORGE },
 				lvl = 40,
@@ -517,7 +515,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 						coord = { 35.8, 52.6, MAP.SEARING_GORGE },
 					}),
 					objective(3, {	-- 0/1 Trader's Satchel
-						provider = { "i", 10467 },	-- Trader's Satchel
+						provider = { "i", 10467 },	-- Trader's Satchel (QI!)
 						coord = { 35.8, 52.6, MAP.SEARING_GORGE },
 						cr = 8444,	-- Trade Master Kovic <The Undermarket>
 					}),
@@ -539,7 +537,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				sourceQuest = 3463,	-- Set Them Ablaze!
 				providers = {
 					{ "o", 149502 },	-- Hoard of the Black Dragonflight
-					{ "i",  10569 },	-- Hoard of the Black Dragonflight
+					{ "i", 10569 },	-- Hoard of the Black Dragonflight
 				},
 				coord = { 39.0, 38.9, MAP.SEARING_GORGE },
 				lvl = 40,
@@ -553,7 +551,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Head of Overseer Maltorius
-						provider = { "i", 18946 },	-- Head of Overseer Maltorius
+						provider = { "i", 18946 },	-- Head of Overseer Maltorius (QI!)
 						coord = { 41.8, 35.4, MAP.SEARING_GORGE },
 						cr = 14621,	-- Overseer Maltorius
 					}),
@@ -568,7 +566,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				groups = {
 					objective(1, {	-- 0/1 Secret Plans: Fiery Flux
 						providers = {
-							{ "i",  18922 },	-- Secret Plans: Fiery Flux
+							{ "i", 18922 },	-- Secret Plans: Fiery Flux (QI!)
 							{ "o", 179826 },	-- Secret Plans: Fiery Flux
 						},
 						coord = { 40.6, 35.7, MAP.SEARING_GORGE },
@@ -653,7 +651,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(18944, {	-- Incendosaur Scale
+			i(18944, {	-- Incendosaur Scale (QI!)
 				cr = 9318,	-- Incendosaur
 			}),
 			i(11818, {	-- Grimesilt Outhouse Key

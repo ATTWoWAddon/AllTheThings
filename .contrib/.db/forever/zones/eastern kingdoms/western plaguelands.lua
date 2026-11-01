@@ -11,10 +11,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			ach(770),	-- Explore Western Plaguelands
 		}),
 		explorationHeader({
-			visit_exploration(2298,{coord={67.5,73.4,MAP.WESTERN_PLAGUELANDS}}),	-- Caer Darrow
+			visit_exploration(2298, { coord={ 67.5, 73.4, MAP.WESTERN_PLAGUELANDS } }),	-- Caer Darrow
 			exploration(200),	-- Dalson's Tears / Dalson's Farm [CATA+]
 			exploration(2297),	-- Darrowmere Lake
-			visit_exploration(2625,{coord={43.4,19.3,MAP.WESTERN_PLAGUELANDS}}),	-- Eastwall Gate
+			visit_exploration(2625, { coord={ 43.4, 19.3, MAP.WESTERN_PLAGUELANDS } }),	-- Eastwall Gate
 			exploration(199),	-- Felstone Field
 			exploration(201),	-- Gahrron's Withering
 			exploration(190),	-- Hearthglen
@@ -38,43 +38,43 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				qg = 2198,	-- Crier Goodman
 				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5090, {	-- A Call to Arms: The Plaguelands! [Ironforge]
 				qg = 10877,	-- Courier Hammerfall
 				coord = { 31.6, 67.0, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5091, {	-- A Call to Arms: The Plaguelands! [Darnassus]
 				qg = 10878,	-- Herald Moonstalker
 				coord = { 36.4, 39.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 				qg = 10880,	-- Warcaller Gorlach
 				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
 				qg = 10879,	-- Harbinger Balthazad
 				coord = { 64.0, 44.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(5095, {	-- A Call to Arms: The Plaguelands! [Thunder Bluff]
 				qg = 10881,	-- Bluff Runner Windstrider
 				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(4971, {	-- A Matter of Time
 				qg = 10667,	-- Chromie
@@ -84,7 +84,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					objective(1, {	-- 0/15 Temporal Parasite slain
 						providers = {
 							{ "n", 10717 },	-- Temporal Parasite
-							{ "i", 12627 },	-- Temporal Displacer
+							{ "i", 12627 },	-- Temporal Displacer (QI!)
 						},
 					}),
 					i(15812),	-- Orchid Amice
@@ -105,8 +105,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/100 Plagueland Termites
 						providers = {
-							{ "i",  15043 },	-- Plagueland Termites
-							{ "i",  15042 },	-- Empty Termite Jar
+							{ "i", 15043 },	-- Plagueland Termites (QI!)
+							{ "i", 15042 },	-- Empty Termite Jar (QI!)
 							{ "o", 177464 },	-- Large Termite Mound
 						},
 						coord = { 42.0, 38.0, MAP.EASTERN_PLAGUELANDS },
@@ -117,8 +117,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				allianceQuestData = q(5904, {	-- A Plague Upon Thee (2/3) [A]
 					sourceQuest = 5903,	-- A Plague Upon Thee (1/3)
 					providers = {
-						{ "n",  11616 },	-- Nathaniel Dumah
-						{ "i",  15044 },	-- Barrel of Plagueland Termites
+						{ "n", 11616 },	-- Nathaniel Dumah
+						{ "i", 15044 },	-- Barrel of Plagueland Termites (QI!)
 						{ "o", 177491 },	-- Termite Barrel
 						{ "o", 177490 },	-- Northridge Lumber Mill Crate
 					},
@@ -127,8 +127,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				hordeQuestData = q(5902, {	-- A Plague Upon Thee (2/3) [H]
 					sourceQuest = 5901,	-- A Plague Upon Thee (1/3)
 					providers = {
-						{ "n",  11615 },	-- Mickey Levine
-						{ "i",  15044 },	-- Barrel of Plagueland Termites
+						{ "n", 11615 },	-- Mickey Levine
+						{ "i", 15044 },	-- Barrel of Plagueland Termites (QI!)
 						{ "o", 177491 },	-- Termite Barrel
 						{ "o", 177490 },	-- Northridge Lumber Mill Crate
 					},
@@ -145,7 +145,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 177491 },	-- Termite Barrel
-					{ "i",  15044 },	-- Barrel of Plagueland Termites
+					{ "i", 15044 },	-- Barrel of Plagueland Termites (QI!)
 				},
 				coord = { 48.4, 31.9, MAP.WESTERN_PLAGUELANDS },
 				lvl = 48,
@@ -158,7 +158,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Joseph's Wedding Ring
 						providers = {
-							{ "i",  12894 },	-- Joseph's Wedding Ring
+							{ "i", 12894 },	-- Joseph's Wedding Ring (QI!)
 							{ "o", 176145 },	-- Joseph Redpath's Monument
 						},
 						coord = { 49.6, 76.8, MAP.WESTERN_PLAGUELANDS },
@@ -180,7 +180,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Araj's Phylactery Shard
 						providers = {
-							{ "i",  17114 },	-- Araj's Phylactery Shard
+							{ "i", 17114 },	-- Araj's Phylactery Shard (QI!)
 							{ "o", 177241 },	-- Araj's Phylactery
 						},
 						coord = { 45.6, 69.2, MAP.WESTERN_PLAGUELANDS },
@@ -203,19 +203,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- Tower One marked
-						provider = { "i", 12815 },	-- Beacon Torch
+						provider = { "i", 12815 },	-- Beacon Torch (QI!)
 						coord = { 40.0, 72.0, MAP.WESTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- Tower Two marked
-						provider = { "i", 12815 },	-- Beacon Torch
+						provider = { "i", 12815 },	-- Beacon Torch (QI!)
 						coord = { 42.0, 66.0, MAP.WESTERN_PLAGUELANDS },
 					}),
 					objective(3, {	-- Tower Three marked
-						provider = { "i", 12815 },	-- Beacon Torch
+						provider = { "i", 12815 },	-- Beacon Torch (QI!)
 						coord = { 44.0, 63.0, MAP.WESTERN_PLAGUELANDS },
 					}),
 					objective(4, {	-- Tower Four marked
-						provider = { "i", 12815 },	-- Beacon Torch
+						provider = { "i", 12815 },	-- Beacon Torch (QI!)
 						coord = { 46.0, 70.0, MAP.WESTERN_PLAGUELANDS },
 					}),
 				},
@@ -236,7 +236,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			},
 			q(5021, {	-- Better Late Than Never (1/2)
 				providers = {
-					{ "n",  10778 },	-- Janice Felstone
+					{ "n", 10778 },	-- Janice Felstone
 					{ "o", 175894 },	-- Janice's Parcel
 				},
 				coord = { 38.4, 54.0, MAP.WESTERN_PLAGUELANDS },
@@ -251,7 +251,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 175894 },	-- Janice's Parcel
-					{ "i",  12724 },	-- Janice's Parcel
+					{ "i", 12724 },	-- Janice's Parcel (QI!)
 				},
 				sourceQuest = 5021,	-- Better Late Than Never (1/2)
 				coord = { 38.8, 55.2, MAP.WESTERN_PLAGUELANDS },
@@ -260,9 +260,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5210, {	-- Brother Carlin
 				sourceQuest = 5154,	-- The Annals of Darrowshire
 				qg = 10667,	-- Chromie
-				qi = 13202,	-- Extended Annals of Darrowshire
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
+				qi = 13202,	-- Extended Annals of Darrowshire (QI!)
 			}),
 			q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 				qgs = {
@@ -275,8 +275,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				},
 				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			{	-- Chromatic Mantle of the Dawn
 				allianceQuestData = q(5521, {	-- Chromatic Mantle of the Dawn [A]
@@ -344,7 +344,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/5 Andorhal Watch
 						providers = {
-							{ "i",  12638 },	-- Andorhal Watch
+							{ "i", 12638 },	-- Andorhal Watch (QI!)
 							{ "o", 175802 },	-- Small Lockbox
 						},
 						coord = { 41.3, 69.8, MAP.WESTERN_PLAGUELANDS },
@@ -356,12 +356,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				sourceQuest = 4972,	-- Counting Out Time (1/2)
 				qg = 10667,	-- Chromie
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
-				repeatable = true,
 				lvl = 53,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Andorhal Watch
 						providers = {
-							{ "i",  12638 },	-- Andorhal Watch
+							{ "i", 12638 },	-- Andorhal Watch (QI!)
 							{ "o", 175802 },	-- Small Lockbox
 						},
 						coord = { 41.3, 69.8, MAP.WESTERN_PLAGUELANDS },
@@ -377,20 +377,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				provider = { "o", 177289 },	-- Scourge Cauldron
 				coord = { 46.2, 52.0, MAP.WESTERN_PLAGUELANDS },
 				cost = {
-					{ "i", 13320, 1 },	-- Arcane Quickener
+					{ "i", 13320, 1 },	-- Arcane Quickener (QI!)
 					{ "i", 13356, 5 },	-- Somatic Intensifier
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(8414, {	-- Dispelling Evil
 				sourceQuest = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 				qg = 10838,	-- Commander Ashlam Valorfist
 				coord = { 42.8, 84.0, MAP.WESTERN_PLAGUELANDS },
 				cost = { { "i", 12840, 20 } },	-- Minion's Scourgestone
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 50,
 			}),
 			q(5218, {	-- Felstone Field Cauldron
@@ -401,12 +401,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				provider = { "o", 176361 },	-- Scourge Cauldron
 				coord = { 37.2, 56.9, MAP.WESTERN_PLAGUELANDS },
 				cost = {
-					{ "i", 13320, 1 },	-- Arcane Quickener
+					{ "i", 13320, 1 },	-- Arcane Quickener (QI!)
 					{ "i", 13357, 6 },	-- Osseous Agitator
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(5227, {	-- Gahrron's Withering Cauldron
 				sourceQuests = {
@@ -416,12 +416,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				provider = { "o", 176392 },	-- Scourge Cauldron
 				coord = { 62.5, 58.6, MAP.WESTERN_PLAGUELANDS },
 				cost = {
-					{ "i", 13320, 1 },	-- Arcane Quickener
+					{ "i", 13320, 1 },	-- Arcane Quickener (QI!)
 					{ "i", 13354, 4 },	-- Ectoplasmic Resonator
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			{	-- Glyphed Oaken Branch
 				allianceQuestData = q(4986, {	-- Glyphed Oaken Branch [A]
@@ -432,7 +432,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "n", 10739 },	-- Mulgris Deepriver
-					{ "i", 12663 },	-- Glyphed Oaken Branch
+					{ "i", 12663 },	-- Glyphed Oaken Branch (QI!)
 				},
 				sourceQuest = 4985,	-- The Wildlife Suffers Too
 				coord = { 53.6, 64.6, MAP.WESTERN_PLAGUELANDS },
@@ -445,7 +445,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				allianceQuestData = {
 					providers = {
 						{ "n", 3520 },	-- Ol' Emma
-						{ "i", 12721 },	-- Good Luck Half-Charm
+						{ "i", 12721 },	-- Good Luck Half-Charm (QI!)
 					},
 					sourceQuest = 5048,	-- Good Natured Emma
 					coord = { 52.4, 41.8, MAP.STORMWIND_CITY },
@@ -453,7 +453,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				hordeQuestData = {
 					providers = {
 						{ "n", 8403 },	-- Jeremiah Payson <Cockroach Vendor>
-						{ "i", 12721 },	-- Good Luck Half-Charm
+						{ "i", 12721 },	-- Good Luck Half-Charm (QI!)
 					},
 					sourceQuest = 5049,	-- The Jeremiah Blues
 					coord = { 67.4, 43.8, MAP.UNDERCITY },
@@ -463,19 +463,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5048, {	-- Good Natured Emma
 				sourceQuest = 5022,	-- Better Late Than Never (2/2) [A]
 				qg = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
-				qi = 12724,	-- Janice's Parcel
 				coord = { 48.6, 30.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 50,
+				qi = 12724,	-- Janice's Parcel (QI!)
 			}),
 			q(8416, {	-- Inert Scourgestones
 				sourceQuest = 8414,	-- Dispelling Evil
 				qg = 1854,	-- High Priest Thel'danis
-				qi = 20612,	-- Inert Scourgestone
 				coord = { 52.2, 83.6, MAP.WESTERN_PLAGUELANDS },
-				classes = { PALADIN },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 50,
+				qi = 20612,	-- Inert Scourgestone (QI!)
 			}),
 			{	-- Invader's Scourgestones
 				allianceQuestData = q(5403, {	-- Invader's Scourgestones [A]
@@ -503,11 +503,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5059, {	-- Locked Away
 				providers = {
 					{ "o", 175925 },	-- Outhouse
-					{ "i",  12738 },	-- Dalson Outhouse Key
+					{ "i", 12738 },	-- Dalson Outhouse Key
 				},
 				coord = { 48.2, 49.6, MAP.WESTERN_PLAGUELANDS },
-				repeatable = true,
 				lvl = 52,
+				repeatable = true,
 				groups = {
 					i(12739, {	-- Dalson Cabinet Key
 						coord = { 48.2, 49.6, MAP.WESTERN_PLAGUELANDS },
@@ -518,7 +518,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5060, {	-- Locked Away
 				providers = {
 					{ "o", 175924 },	-- Locked Cabinet
-					{ "i",  12739 },	-- Dalson Cabinet Key
+					{ "i", 12739 },	-- Dalson Cabinet Key
 				},
 				coord = { 47.4, 49.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 52,
@@ -588,7 +588,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 177289 },	-- Scourge Cauldron
-					{ "i",  13191 },	-- Filled Dalson's Tears Bottle
+					{ "i", 13191 },	-- Filled Dalson's Tears Bottle (QI!)
 				},
 				coord = { 46.2, 52.0, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -602,7 +602,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176361 },	-- Scourge Cauldron
-					{ "i",  13190 },	-- Filled Felstone Field Bottle
+					{ "i", 13190 },	-- Filled Felstone Field Bottle (QI!)
 				},
 				coord = { 37.2, 56.9, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -616,7 +616,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176392 },	-- Scourge Cauldron
-					{ "i",  13193 },	-- Filled Gahrron's Withering Bottle
+					{ "i", 13193 },	-- Filled Gahrron's Withering Bottle (QI!)
 				},
 				coord = { 62.5, 58.6, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -630,7 +630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				}),
 				providers = {
 					{ "o", 176393 },	-- Scourge Cauldron
-					{ "i",  13192 },	-- Filled Writhing Haunt Bottle
+					{ "i", 13192 },	-- Filled Writhing Haunt Bottle (QI!)
 				},
 				coord = { 53.0, 65.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
@@ -648,8 +648,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- Destroy the command tent and plant the Scourge banner in the camp
 						providers = {
-							{ "i",  12807 },	-- Scourge Banner
-							{ "i",  12814 },	-- Flame in a Bottle
+							{ "i", 12807 },	-- Scourge Banner (QI!)
+							{ "i", 12814 },	-- Flame in a Bottle (QI!)
 							{ "o", 176092 },	-- Box of Incendiaries
 							{ "o", 176210 },	-- Command Tent
 						},
@@ -675,8 +675,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Dalson's Tears Cauldron Key
 						providers = {
-							{ "i", 13195 },	-- Dalson's Tears Cauldron Key
-							{ "i", 13187 },	-- Empty Dalson's Tears Bottle
+							{ "i", 13195 },	-- Dalson's Tears Cauldron Key (QI!)
+							{ "i", 13187 },	-- Empty Dalson's Tears Bottle (QI!)
 						},
 						coord = { 46.2, 52.6, MAP.WESTERN_PLAGUELANDS },
 						cr = 11077,	-- Cauldron Lord Malvinious
@@ -698,8 +698,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Felstone Field Cauldron Key
 						providers = {
-							{ "i", 13194 },	-- Felstone Field Cauldron Key
-							{ "i", 13186 },	-- Empty Felstone Field Bottle
+							{ "i", 13194 },	-- Felstone Field Cauldron Key (QI!)
+							{ "i", 13186 },	-- Empty Felstone Field Bottle (QI!)
 						},
 						coord = { 37.0, 57.6, MAP.WESTERN_PLAGUELANDS },
 						cr = 11075,	-- Cauldron Lord Bilemaw
@@ -721,8 +721,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Gahrron's Withering Cauldron Key
 						providers = {
-							{ "i", 13196 },	-- Gahrron's Withering Cauldron Key
-							{ "i", 13189 },	-- Empty Gahrron's Withering Bottle
+							{ "i", 13196 },	-- Gahrron's Withering Cauldron Key (QI!)
+							{ "i", 13189 },	-- Empty Gahrron's Withering Bottle (QI!)
 						},
 						coord = { 62.6, 59.0, MAP.WESTERN_PLAGUELANDS },
 						cr = 11078,	-- Cauldron Lord Soulwrath
@@ -744,8 +744,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Writhing Haunt Cauldron Key
 						providers = {
-							{ "i", 13197 },	-- Writhing Haunt Cauldron Key
-							{ "i", 13188 },	-- Empty Writhing Haunt Bottle
+							{ "i", 13197 },	-- Writhing Haunt Cauldron Key (QI!)
+							{ "i", 13188 },	-- Empty Writhing Haunt Bottle (QI!)
 						},
 						coord = { 52.8, 66.0, MAP.WESTERN_PLAGUELANDS },
 						cr = 11076,	-- Cauldron Lord Razarch
@@ -760,7 +760,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Annals of Darrowshire
 						providers = {
-							{ "i",  12900 },	-- Annals of Darrowshire
+							{ "i", 12900 },	-- Annals of Darrowshire (QI!)
 							{ "o", 176150 },	-- Musty Tome
 						},
 						description = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
@@ -786,21 +786,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				groups = {
 					objective(1, {	-- 0/1 SI:7 Insignia (Rutger)
 						providers = {
-							{ "i",  16003 },	-- SI:7 Insignia (Rutger)
+							{ "i", 16003 },	-- SI:7 Insignia (Rutger) (QI!)
 							{ "o", 177806 },	-- Mangled Human Remains
 						},
 						coord = { 28.8, 79.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(2, {	-- 0/1 SI:7 Insignia (Fredo)
 						providers = {
-							{ "i",  16001 },	-- SI:7 Insignia (Fredo)
+							{ "i", 16001 },	-- SI:7 Insignia (Fredo) (QI!)
 							{ "o", 177804 },	-- Mangled Human Remains
 						},
 						coord = { 27.3, 75.0, MAP.EASTERN_PLAGUELANDS },
 					}),
 					objective(3, {	-- 0/1 SI:7 Insignia (Turyen)
 						providers = {
-							{ "i",  16002 },	-- SI:7 Insignia (Turyen)
+							{ "i", 16002 },	-- SI:7 Insignia (Turyen) (QI!)
 							{ "o", 177805 },	-- Mangled Human Remains
 						},
 						coord = { 28.8, 74.9, MAP.EASTERN_PLAGUELANDS },
@@ -814,10 +814,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			q(5049, {	-- The Jeremiah Blues
 				sourceQuest = 5023,	-- Better Late Than Never (2/2) [H]
 				qg = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
-				qi = 12724,	-- Janice's Parcel
 				coord = { 69.6, 43.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 50,
+				qi = 12724,	-- Janice's Parcel (QI!)
 			}),
 			{	-- The Scourge Cauldrons
 				allianceQuestData = q(5215, {	-- The Scourge Cauldrons [A]
@@ -860,10 +860,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 Good Luck Charm
-						provider = { "i", 12723 },	-- Good Luck Charm
+						provider = { "i", 12723 },	-- Good Luck Charm (QI!)
 						cost = {
-							{ "i", 12721, 1 },	-- Good Luck Half-Charm
-							{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm
+							{ "i", 12721, 1 },	-- Good Luck Half-Charm (QI!)
+							{ "i", 12722, 1 },	-- Good Luck Other-Half-Charm (QI!)
 						},
 					}),
 					i(13473),	-- Felstone Good Luck Charm
@@ -918,12 +918,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				provider = { "o", 176393 },	-- Scourge Cauldron
 				coord = { 53.0, 65.7, MAP.WESTERN_PLAGUELANDS },
 				cost = {
-					{ "i", 13320, 1 },	-- Arcane Quickener
+					{ "i", 13320, 1 },	-- Arcane Quickener (QI!)
 					{ "i", 13356, 5 },	-- Somatic Intensifier
 					{ "i", 14047, 4 },	-- Runecloth
 				},
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 		}),
 		n(RARES, {
@@ -1111,13 +1111,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				coord = { 42.6, 83.8, MAP.WESTERN_PLAGUELANDS },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(13320),	-- Arcane Quickener
-					i(13370),	-- Vitreous Focuser
+					i(13320),	-- Arcane Quickener (QI!)
+					i(13370),	-- Vitreous Focuser (QI!)
 				},
 			}),
 			n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
 				coord = { 42.8, 83.8, MAP.WESTERN_PLAGUELANDS },
-				sym = {{ "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
+				sym = { { "select", "npcID", 11536 }, { "isnt", "questID" }, { "pop" }, { "exclude", "itemID", 136801, 136928 } },	-- Quartermaster Miranda Breechlock <The Argent Crusade>
 			}),
 			n(10667, {	-- Chromie
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
@@ -1146,9 +1146,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				},
 			}),
 			n(11278, {	-- Magnus Frostwake
-				cost = { { "i", 13544, 1 } },	-- Spectral Essence
 				description = "Only visible if you have the Spectral Essence equipped.",
 				coord = { 68.0, 77.6, MAP.WESTERN_PLAGUELANDS },
+				cost = { { "i", 13544, 1 } },	-- Spectral Essence
 				groups = {
 					i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 					i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
@@ -1168,9 +1168,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			}),
 			i(13354, {	-- Ectoplasmic Resonator
 				description = "These only drop from ghostly mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser
+				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser (QI!)
 			}),
-			i(12722, {	-- Good Luck Other-Half-Charm
+			i(12722, {	-- Good Luck Other-Half-Charm (QI!)
 				coord = { 38.6, 56.2, MAP.WESTERN_PLAGUELANDS },
 				cr = 10801,	-- Jabbering Ghoul
 			}),
@@ -1189,11 +1189,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					12387,	-- Large Vile Slime
 					1806,	-- Vile Slime
 				},
-				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+				sym = { { "select", "itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(13357, {	-- Osseous Agitator
 				description = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser
+				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser (QI!)
 			}),
 			i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
 				coords = {
@@ -1225,7 +1225,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			}),
 			i(13356, {	-- Somatic Intensifier
 				description = "These only drop from zombies in Western Plaguelands while you have Vitreous Focuser in your inventory.",
-				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser
+				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser (QI!)
 			}),
 		}),
 	},

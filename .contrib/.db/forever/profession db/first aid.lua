@@ -2,7 +2,7 @@ local i = GetRecipeHelperForProfession(FIRST_AID);
 ---------------
 -- FIRST AID --
 ---------------
---- TRAINER ---
+-- - TRAINER ---
 i(0, 3273);			-- First Aid (Apprentice)
 i(0, 3274);			-- First Aid (Journeyman)
 i(0, 3275);			-- Linen Bandage
@@ -19,10 +19,10 @@ i(0, 7928);			-- Silk Bandage
 i(0, 10841);		-- Heavy Mageweave Bandage
 i(0, 18629);		-- Runecloth Bandage
 i(0, 18630);		-- Heavy Runecloth Bandage
---- QUEST ---
+-- - QUEST ---
 i(0, 10846);		-- First Aid (Artisan)
 i(0, 1230117);		-- First Aid Kit
---- ITEM ---
+-- - ITEM ---
 i(16084, 7924);		-- First Aid (Expert)
 i(6454, 7935);		-- Strong Anti-Venom
 i(273105, 1262996);	-- Toxin Study
@@ -32,7 +32,7 @@ i(255724, 1259343);	-- Clever Poultice
 i(16113, 10840);	-- Mageweave Bandage
 i(255728, 1259341);	-- Potent Anti-Venom
 i(255729, 1244436);	-- Major Healing Potion
---- UNKNOWN ---
+-- - UNKNOWN ---
 --[[
 r(1259348),	-- Leather Tourniquet
 r(1259344),	-- Superior Poultice

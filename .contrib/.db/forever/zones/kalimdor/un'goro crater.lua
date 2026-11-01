@@ -46,9 +46,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3913, {	-- A Grave Situation
 				sourceQuest = 3912,	-- Meet at the Grave
 				qg = 9299,	-- Gaeriyan
-				qi = 11136,	-- Linken's Tempered Sword
 				coord = { 54.0, 23.4, MAP.TANARIS },
 				lvl = 47,
+				qi = 11136,	-- Linken's Tempered Sword (QI!)
 			}),
 			q(4491, {	-- A Little Help From My Friends
 				sourceQuest = 4492,	-- Lost!
@@ -64,11 +64,11 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4142, {	-- A Visit to Gregan
 				sourceQuest = 4141,	-- Muigin and Larion
 				qg = 9119,	-- Muigin
-				qi = 11316,	-- Bloodpetal
 				coord = { 42.9, 9.6, MAP.UNGORO_CRATER },
 				maps = { MAP.FERALAS },
 				races = ALLIANCE_ONLY,
 				lvl = 47,
+				qi = 11316,	-- Bloodpetal (QI!)
 			}),
 			q(3883, {	-- Alien Ecology
 				qg = 9271,	-- Hol'anyee Marshal
@@ -77,9 +77,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Hive Wall Sample
 						providers = {
-							{ "i",  11131 },	-- Hive Wall Sample
+							{ "i", 11131 },	-- Hive Wall Sample (QI!)
 							{ "o", 174793 },	-- Gorishi Hive Hatchery
-							{ "i",  11132 },	-- Unused Scraping Vial
+							{ "i", 11132 },	-- Unused Scraping Vial (QI!)
 						},
 						coord = { 48.0, 85.0, MAP.UNGORO_CRATER },
 					}),
@@ -108,7 +108,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/8 Gorishi Sting
-						provider = { "i", 22435 },	-- Gorishi Sting
+						provider = { "i", 22435 },	-- Gorishi Sting (QI!)
 						crs = {
 							6551,	-- Gorishi Wasp
 							6554,	-- Gorishi Stinger
@@ -118,7 +118,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					}),
 					objective(2, {	-- 0/8 Bloodcap
 						providers = {
-							{ "i",  22434 },	-- Bloodcap
+							{ "i", 22434 },	-- Bloodcap (QI!)
 							{ "o", 164958 },	-- Bloodpetal Sprout
 						},
 					}),
@@ -133,7 +133,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/3 Bloodpetal Sprout
 						providers = {
-							{ "i",  11315 },	-- Bloodpetal Sprout
+							{ "i", 11315 },	-- Bloodpetal Sprout
 							{ "o", 164958 },	-- Bloodpetal Sprout
 						},
 					}),
@@ -142,15 +142,15 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4148, {	-- Bloodpetal Zapper
 				sourceQuest = 4146,	-- Zapper Fuel
 				providers = {
-					{ "n",   9118 },	-- Larion
-					{ "i",  11315 },	-- Bloodpetal Sprout
+					{ "n", 9118 },	-- Larion
+					{ "i", 11315 },	-- Bloodpetal Sprout
 					{ "o", 164958 },	-- Bloodpetal Sprout
 				},
 				coord = { 45.6, 8.6, MAP.UNGORO_CRATER },
 				races = HORDE_ONLY,
 				lvl = 47,
 				groups = {
-					i(11320),	-- Bloodpetal Zapper
+					i(11320),	-- Bloodpetal Zapper (QI!)
 				},
 			}),
 			q(4243, {	-- Chasing A-Me 01 (1/3)
@@ -179,8 +179,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11566),	-- Crystal Charge
 				},
@@ -193,8 +193,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11185, 10 },	-- Green Power Crystal
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11563),	-- Crystal Force
 				},
@@ -207,8 +207,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 					{ "i", 11185, 10 },	-- Green Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11562),	-- Crystal Restore
 				},
@@ -221,8 +221,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 					{ "i", 11188, 10 },	-- Yellow Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11567),	-- Crystal Spire
 				},
@@ -235,8 +235,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11185, 10 },	-- Green Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11564),	-- Crystal Ward
 				},
@@ -249,8 +249,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					{ "i", 11186, 10 },	-- Red Power Crystal
 					{ "i", 11184, 10 },	-- Blue Power Crystal
 				},
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11565),	-- Crystal Yield
 				},
@@ -268,11 +268,11 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			q(5150, {	-- Dadanga is Hungry!
 				qg = 9274,	-- Dadanga
-				qi = 15699,	-- Small Brown-wrapped Package
 				coord = { 43.6, 7.2, MAP.UNGORO_CRATER },
 				cost = { { "i", 11315, 15 } },	-- Bloodpetal Sprout
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
+				qi = 15699,	-- Small Brown-wrapped Package
 				groups = {
 					i(13481),	-- Recipe: Elixir of Brute Force (RECIPE!)
 				},
@@ -284,14 +284,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Crate of Foodstuffs
 						providers = {
-							{ "i",  11113 },	-- Crate of Foodstuffs
+							{ "i", 11113 },	-- Crate of Foodstuffs (QI!)
 							{ "o", 161526 },	-- Crate of Foodstuffs
 						},
 						coord = { 68.4, 36.4, MAP.UNGORO_CRATER },
 					}),
 					objective(2, {	-- 0/1 Research Equipment
 						providers = {
-							{ "i",  11112 },	-- Research Equipment
+							{ "i", 11112 },	-- Research Equipment (QI!)
 							{ "o", 161521 },	-- Research Equipment
 						},
 						coord = { 38.5, 66.0, MAP.UNGORO_CRATER },
@@ -305,7 +305,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- Find the hottest area of Fire Plume Ridge
 						providers = {
-							{ "i",  12472 },	-- Krackle's Thermometer
+							{ "i", 12472 },	-- Krackle's Thermometer (QI!)
 							{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 						},
 						coord = { 49.0, 45.0, MAP.UNGORO_CRATER },
@@ -320,20 +320,20 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3845, {	-- It's a Secret to Everybody (2/3)
 				sourceQuest = 3844,	-- It's a Secret to Everybody (1/3)
 				providers = {
-					{ "i",  11107 },	-- A Small Pack
+					{ "i", 11107 },	-- A Small Pack (QI!)
 					{ "o", 161504 },	-- A Small Pack
 				},
 				coord = { 63.1, 68.5, MAP.UNGORO_CRATER },
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/1 Large Compass
-						provider = { "i", 11104 },	-- Large Compass
+						provider = { "i", 11104 },	-- Large Compass (QI!)
 					}),
 					objective(2, {	-- 0/1 Curled Map Parchment
-						provider = { "i", 11105 },	-- Curled Map Parchment
+						provider = { "i", 11105 },	-- Curled Map Parchment (QI!)
 					}),
 					objective(3, {	-- 0/1 Lion-headed Key
-						provider = { "i", 11106 },	-- Lion-headed Key
+						provider = { "i", 11106 },	-- Lion-headed Key (QI!)
 					}),
 					i(11108),	-- Faded Photograph
 					i(3108),	-- Heavy Throwing Dagger
@@ -342,10 +342,10 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3908, {	-- It's a Secret to Everybody (3/3)
 				sourceQuest = 3845,	-- It's a Secret to Everybody (2/3)
 				qg = 8737,	-- Linken
-				qi = 11133,	-- Linken's Training Sword
 				coord = { 44.6, 8.2, MAP.UNGORO_CRATER },
 				maps = { MAP.WINTERSPRING },
 				lvl = 47,
+				qi = 11133,	-- Linken's Training Sword (QI!)
 			}),
 			q(3962, {	-- It's Dangerous to Go Alone
 				sourceQuest = 3961,	-- Linken's Adventure
@@ -356,14 +356,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					objective(1, {	-- 0/1 Blazerunner slain
 						providers = {
 							{ "n", 9376 },	-- Blazerunner
-							{ "i", 11522 },	-- Silver Totem of Aquementas
+							{ "i", 11522 },	-- Silver Totem of Aquementas (QI!)
 						},
 						coord = { 49.6, 49.6, MAP.UNGORO_CRATER },
 						description = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
 					}),
 					objective(2, {	-- 0/1 Golden Flame
 						providers = {
-							{ "i",  11179 },	-- Golden Flame
+							{ "i", 11179 },	-- Golden Flame (QI!)
 							{ "o", 164910 },	-- Ornate Chest
 						},
 						coord = { 50.2, 50.0, MAP.UNGORO_CRATER },
@@ -396,9 +396,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3961, {	-- Linken's Adventure
 				sourceQuest = 4005,	-- Aquementas
 				qg = 9117,	-- J.D. Collie
-				qi = 11522,	-- Silver Totem of Aquementas
 				coord = { 41.8, 2.6, MAP.UNGORO_CRATER },
 				lvl = 47,
+				qi = 11522,	-- Silver Totem of Aquementas (QI!)
 			}),
 			q(3942, {	-- Linken's Memory
 				sourceQuest = 3941,	-- A Gnome's Assistance
@@ -409,9 +409,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			q(4492, {	-- Lost!
 				qg = 9997,	-- Spraggle Frock
-				qi = 15722,	-- Spraggle's Canteen
 				coord = { 43.6, 8.5, MAP.UNGORO_CRATER },
 				lvl = 50,
+				qi = 15722,	-- Spraggle's Canteen (QI!)
 			}),
 			q(4321, {	-- Making Sense of It
 				sourceQuests = {
@@ -423,7 +423,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				coord = { 41.8, 2.6, MAP.UNGORO_CRATER },
 				lvl = 47,
 				groups = {
-					i(11482),	-- Crystal Pylon User's Manual
+					i(11482),	-- Crystal Pylon User's Manual (QI!)
 				},
 			}),
 			q(4147, {	-- Marvon's Workshop
@@ -437,10 +437,10 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(3912, {	-- Meet at the Grave
 				sourceQuest = 3909,	-- The Videre Elixir
 				qg = 9298,	-- Donova Snowden
-				qi = 11136,	-- Linken's Tempered Sword
 				coord = { 31.2, 45.2, MAP.WINTERSPRING },
-				cost = { { "i", 11243, 1 } },	-- Videre Elixir
+				cost = { { "i", 11243, 1 } },	-- Videre Elixir (QI!)
 				lvl = 47,
+				qi = 11136,	-- Linken's Tempered Sword (QI!)
 			}),
 			q(4141, {	-- Muigin and Larion
 				qg = 9119,	-- Muigin
@@ -449,7 +449,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/15 Bloodpetal
-						provider = { "i", 11316 },	-- Bloodpetal
+						provider = { "i", 11316 },	-- Bloodpetal (QI!)
 						crs = {
 							6510,	-- Bloodpetal Flayer
 							6511,	-- Bloodpetal Thresher
@@ -466,7 +466,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/8 Dinosaur Bone
 						providers = {
-							{ "i",  11114 },	-- Dinosaur Bone
+							{ "i", 11114 },	-- Dinosaur Bone (QI!)
 							{ "o", 161527 },	-- Dinosaur Bone
 						},
 						crs = {
@@ -488,7 +488,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 49,
 				groups = {
 					objective(1, {	-- 0/8 Webbed Diemetradon Scale
-						provider = { "i", 11830 },	-- Webbed Diemetradon Scale
+						provider = { "i", 11830 },	-- Webbed Diemetradon Scale (QI!)
 						crs = {
 							9162,	-- Young Diemetradon
 							9163,	-- Diemetradon
@@ -496,7 +496,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 						},
 					}),
 					objective(2, {	-- 0/8 Webbed Pterrordax Scale
-						provider = { "i", 11831 },	-- Webbed Pterrordax Scale
+						provider = { "i", 11831 },	-- Webbed Pterrordax Scale (QI!)
 						crs = {
 							9165,	-- Fledgling Pterrordax
 							9166,	-- Pterrordax
@@ -514,15 +514,15 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/2 Un'Goro Gorilla Pelt
-						provider = { "i", 11478 },	-- Un'Goro Gorilla Pelt
+						provider = { "i", 11478 },	-- Un'Goro Gorilla Pelt (QI!)
 						cr = 6514,	-- Un'Goro Gorilla
 					}),
 					objective(2, {	-- 0/2 Un'Goro Stomper Pelt
-						provider = { "i", 11479 },	-- Un'Goro Stomper Pelt
+						provider = { "i", 11479 },	-- Un'Goro Stomper Pelt (QI!)
 						cr = 6513,	-- Un'Goro Stomper
 					}),
 					objective(3, {	-- 0/2 Un'Goro Thunderer Pelt
-						provider = { "i", 11480 },	-- Un'Goro Thunderer Pelt
+						provider = { "i", 11480 },	-- Un'Goro Thunderer Pelt (QI!)
 						cr = 6516,	-- Un'Goro Thunderer
 					}),
 				},
@@ -530,13 +530,13 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			q(4292, {	-- The Bait for Lar'korwi
 				sourceQuest = 4291,	-- The Scent of Lar'korwi
 				qg = 9619,	-- Torwa Pathfinder
-				qi = 11568,	-- Torwa's Pouch
 				coord = { 71.6, 76.0, MAP.UNGORO_CRATER },
 				lvl = 48,
+				qi = 11568,	-- Torwa's Pouch (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Lar'korwi's Head
 						providers = {
-							{ "i", 11510 },	-- Lar'korwi's Head
+							{ "i", 11510 },	-- Lar'korwi's Head (QI!)
 							{ "i", 11570 },	-- Preserved Pheromone Mixture
 							{ "i", 11569 },	-- Preserved Threshadon Meat
 						},
@@ -566,7 +566,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- 0/1 Piece of Threshadon Carcass
 						providers = {
-							{ "i",  11504 },	-- Piece of Threshadon Carcass
+							{ "i", 11504 },	-- Piece of Threshadon Carcass (QI!)
 							{ "o", 166863 },	-- Fresh Threshadon Carcass
 						},
 						coord = { 68.7, 56.7, MAP.UNGORO_CRATER },
@@ -580,7 +580,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/1 U'cha's Pelt
-						provider = { "i", 11476 },	-- U'cha's Pelt
+						provider = { "i", 11476 },	-- U'cha's Pelt (QI!)
 						coord = { 68.6, 14.6, MAP.UNGORO_CRATER },
 						cr = 9622,	-- U'cha
 					}),
@@ -614,7 +614,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/2 Ravasaur Pheromone Gland
-						provider = { "i", 11509  },	-- Ravasaur Pheromone Gland
+						provider = { "i", 11509 },	-- Ravasaur Pheromone Gland (QI!)
 						cr = 9683,	-- Lar'korwi Mate
 					}),
 				},
@@ -628,8 +628,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				groups = {
 					q(4041, {	-- The Videre Elixir
 						providers = {
-							{ "n",   7775 },	-- Gregan Brewspewer
-							{ "i",  11242 },	-- Evoroot
+							{ "n", 7775 },	-- Gregan Brewspewer
+							{ "i", 11242 },	-- Evoroot
 							{ "o", 164798 },	-- Evoroot
 						},
 						coords = {
@@ -640,7 +640,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 						groups = {
 							objective(1, {	-- 0/1 Videre Elixir
 								questID = 3909,	-- The Videre Elixir
-								provider = { "i", 11243 },	-- Videre Elixir
+								provider = { "i", 11243 },	-- Videre Elixir (QI!)
 							}),
 						},
 					}),
@@ -680,7 +680,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- Devilsaur stabbed with barb
-						provider = { "i", 22432 },	-- Devilsaur Barb
+						provider = { "i", 22432 },	-- Devilsaur Barb (QI!)
 						cr = 6498,	-- Devilsaur
 					}),
 				},
@@ -691,7 +691,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				lvl = 49,
 				groups = {
 					objective(1, {	-- 0/9 Un'Goro Ash
-						provider = { "i", 11829 },	-- Un'Goro Ash
+						provider = { "i", 11829 },	-- Un'Goro Ash (QI!)
 						crs = {
 							6520,	-- Scorching Elemental
 							6521,	-- Living Blaze
@@ -701,8 +701,8 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				},
 			}),
 			q(3884, {	-- Williden's Journal
-				qi = 11116,	-- A Mangled Journal
 				lvl = 48,
+				qi = 11116,	-- A Mangled Journal
 			}),
 		}),
 		n(RARES, {
@@ -793,7 +793,7 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					6559,	-- Glutinous Ooze
 					6557,	-- Primal Ooze
 				},
-				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
+				sym = { { "select", "itemID", 20769 } },	-- Disgusting Oozeling (PET!)
 			}),
 			i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 				crs = {

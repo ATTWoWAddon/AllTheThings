@@ -67,8 +67,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3382, {	-- A Crew Under Fire
 				qg = 8380,	-- Captain Vanessa Beltis
 				coord = { 53.0, 87.8, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 48,
+				repeatable = true,
 			}),
 			q(5536, {	-- A Land Filled with Hatred
 				qg = 11548,	-- Loth'atu
@@ -89,16 +89,16 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3381, {	-- A Meeting with the Master
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
-				timeline = { REMOVED_1_7_0 },
 				lvl = 45,
+				timeline = { REMOVED_1_7_0 },
 			}),
 			q(3564, {	-- Andron's Payment to Jediga
 				sourceQuest = 3542,	-- Delivery to Andron Gant
 				qg = 6522,	-- Andron Gant
-				qi = 10679,	-- Andron's Note
 				coord = { 54.6, 75.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10679,	-- Andron's Note (QI!)
 			}),
 			q(3602, {	-- Azsharite
 				sourceQuest = 3511,	-- The Name of the Beast (3/3)
@@ -107,7 +107,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/20 Crystallized Azsharite
-						provider = { "i",  10714 },	-- Crystallized Azsharite
+						provider = { "i", 10714 },	-- Crystallized Azsharite (QI!)
 					}),
 					i(10834, {	-- Felhound Tracker Kit
 						i(10832),	-- Fel Tracker Owner's Manual
@@ -117,10 +117,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 			q(3504, {	-- Betrayed (1/4)
 				qg = 4485,	-- Belgrom Rockmaul
-				qi = 10643,	-- Sealed Letter to Ag'tor
 				coord = { 75.0, 34.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 44,
+				qi = 10643,	-- Sealed Letter to Ag'tor (QI!)
 			}),
 			q(3505, {	-- Betrayed (2/4)
 				sourceQuest = 3504,	-- Betrayed (1/4)
@@ -146,7 +146,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Head of Magus Rimtori
 						providers = {
-							{ "i",  10597 },	-- Head of Magus Rimtori
+							{ "i", 10597 },	-- Head of Magus Rimtori (QI!)
 							{ "o", 150140 },	-- Arcane Focusing Crystal
 						},
 						coord = { 59.6, 31.4, MAP.AZSHARA },
@@ -157,10 +157,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3507, {	-- Betrayed (4/4)
 				sourceQuest = 3506,	-- Betrayed (3/4)
 				qg = 8576,	-- Ag'tor Bloodfist
-				qi = 10597,	-- Head of Magus Rimtori
 				coord = { 22.2, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 44,
+				qi = 10597,	-- Head of Magus Rimtori (QI!)
 				groups = {
 					i(10709),	-- Pyrestone Orb
 					i(11120),	-- Belgrom's Hammer
@@ -192,7 +192,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/2 Perfect Courser Antlers
-						provider = { "i", 20017 },	-- Perfect Courser Antler
+						provider = { "i", 20017 },	-- Perfect Courser Antler (QI!)
 						cr = 8761,	-- Mosshoof Courser
 					}),
 				},
@@ -200,42 +200,42 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3542, {	-- Delivery to Andron Gant
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10540,	-- Tablet of Markri
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10540,	-- Tablet of Markri (QI!)
 			}),
 			q(3561, {	-- Delivery to Archmage Xylem
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10541,	-- Tablet of Sael'hai
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10541,	-- Tablet of Sael'hai (QI!)
 			}),
 			q(3541, {	-- Delivery to Jes'rimon
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10539,	-- Tablet of Jin'yael
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10539,	-- Tablet of Jin'yael (QI!)
 			}),
 			q(3518, {	-- Delivery to Magatha
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
-				qi = 10538,	-- Tablet of Beth'Amara
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10538,	-- Tablet of Beth'Amara (QI!)
 			}),
 			q(9364, {	-- Fragmented Magic
 				sourceQuest = 9362,	-- Warlord Krellian
 				qg = 8379,	-- Archmage Xylem
-				qi = 23250,	-- Prismatic Shell
 				coord = { 29.6, 40.6, MAP.AZSHARA },
 				classes = { MAGE },
 				lvl = 60,
+				qi = 23250,	-- Prismatic Shell (QI!)
 				groups = {
 					objective(1, {	-- 0/50 Polymorph Clone slain
 						provider = { "n", 16479 },	-- Polymorph Clone
@@ -258,10 +258,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3563, {	-- Jes'rimon's Payment to Jediga
 				sourceQuest = 3541,	-- Delivery to Jes'rimon
 				qg = 8659,	-- Jes'rimon
-				qi = 10680,	-- Jes'rimon's Note
 				coord = { 55.6, 34.0, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10680,	-- Jes'rimon's Note (QI!)
 			}),
 			q(3601, {	-- Kim'jael Indeed!
 				qg = 8420,	-- Kim'jael
@@ -270,25 +270,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Kim'Jael's Compass
 						providers = {
-							{ "i",  10717 },	-- Kim'Jael's Compass
+							{ "i", 10717 },	-- Kim'Jael's Compass (QI!)
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(2, {	-- 0/1 Kim'Jael's Scope
 						providers = {
-							{ "i",  10715 },	-- Kim'Jael's Scope
+							{ "i", 10715 },	-- Kim'Jael's Scope (QI!)
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(3, {	-- 0/1 Kim'Jael's Stuffed Chicken
 						providers = {
-							{ "i",  10722 },	-- Kim'Jael's Stuffed Chicken
+							{ "i", 10722 },	-- Kim'Jael's Stuffed Chicken (QI!)
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
 					objective(4, {	-- 0/1 Kim'Jael's Wizzlegoober
 						providers = {
-							{ "i",  10718 },	-- Kim'Jael's Wizzlegoober
+							{ "i", 10718 },	-- Kim'Jael's Wizzlegoober (QI!)
 							{ "o", 153123 },	-- Kim'jael's Equipment
 						},
 					}),
@@ -302,7 +302,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 47,
 				groups = {
 					objective(1, {	-- 0/1 Some Rune
-						provider = { "i", 13815 },	-- Some Rune
+						provider = { "i", 13815 },	-- Some Rune (QI!)
 						crs = {
 							7885,	-- Spitelash Battlemaster
 							7886,	-- Spitelash Enchantress
@@ -326,10 +326,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3562, {	-- Magatha's Payment to Jediga
 				sourceQuest = 3518,	-- Delivery to Magatha
 				qg = 4046,	-- Magatha Grimtotem
-				qi = 10678,	-- Magatha's Note
 				coord = { 70.2, 30.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10678,	-- Magatha's Note (QI!)
 			}),
 			q(8250, {	-- Magecraft
 				allianceQuestData = {
@@ -355,8 +355,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					},
 				},
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 50,
+				isBreadcrumb = true,
 			}),
 			q(8251, {	-- Magic Dust
 				sourceQuest = 8250,	-- Magecraft
@@ -366,7 +366,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/10 Glittering Dust
-						provider = { "i", 20028 },	-- Glittering Dust
+						provider = { "i", 20028 },	-- Glittering Dust (QI!)
 						crs = {
 							6199,	-- Blood Elf Reclaimer
 							6198,	-- Blood Elf Surveyor
@@ -377,8 +377,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3503, {	-- Meeting with the Master
 				qg = 8395,	-- Sanath Lim-yo
 				coord = { 28.0, 50.0, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(8255, {	-- Of Coursers We Know
 				sourceQuest = 8254,	-- Cenarion Aid
@@ -392,7 +392,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 						cr = 36156,	-- Mutant Goblin
 					}),
 					objective(1, {	-- 0/4 Healthy Courser Gland
-						provider = { "i", 20027 },	-- Healthy Courser Gland
+						provider = { "i", 20027 },	-- Healthy Courser Gland (QI!)
 						cr = 8761,	-- Mosshoof Courser
 					}),
 				},
@@ -400,8 +400,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3421, {	-- Return Trip
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
-				repeatable = true,
 				lvl = 45,
+				repeatable = true,
 			}),
 			q(5535, {	-- Spiritual Unrest
 				qg = 11548,	-- Loth'atu
@@ -424,25 +424,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Beth'Amara
 						providers = {
-							{ "i",  10538 },	-- Tablet of Beth'Amara
+							{ "i", 10538 },	-- Tablet of Beth'Amara (QI!)
 							{ "o", 148516 },	-- Tablet of Beth'Amara
 						},
 					}),
 					objective(2, {	-- 0/1 Tablet of Jin'yael
 						providers = {
-							{ "i",  10539 },	-- Tablet of Jin'yael
+							{ "i", 10539 },	-- Tablet of Jin'yael (QI!)
 							{ "o", 148513 },	-- Tablet of Jin'yael
 						},
 					}),
 					objective(3, {	-- 0/1 Tablet of Markri
 						providers = {
-							{ "i",  10540 },	-- Tablet of Markri
+							{ "i", 10540 },	-- Tablet of Markri (QI!)
 							{ "o", 148514 },	-- Tablet of Markri
 						},
 					}),
 					objective(4, {	-- 0/1 Tablet of Sael'hai
 						providers = {
-							{ "i",  10541 },	-- Tablet of Sael'hai
+							{ "i", 10541 },	-- Tablet of Sael'hai (QI!)
 							{ "o", 148515 },	-- Tablet of Sael'hai
 						},
 					}),
@@ -451,10 +451,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3621, {	-- The Formation of Felbane
 				sourceQuest = 3602,	-- Azsharite
 				qg = 7783,	-- Loramus Thalipedes
-				qi = 10738,	-- Shipment to Galvan
 				coord = { 60.8, 66.4, MAP.AZSHARA },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 45,
+				qi = 10738,	-- Shipment to Galvan (QI!)
 			}),
 			q(8151, {	-- The Hunter's Charm
 				allianceQuestData = {
@@ -511,7 +511,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 45,
 				groups = {
 					objective(1, {	-- 0/1 Hetaera's Beaten Head
-						provider = { "i", 10599 },	-- Hetaera's Beaten Head
+						provider = { "i", 10599 },	-- Hetaera's Beaten Head (QI!)
 						coords = {
 							{ 56.6, 44.6, MAP.AZSHARA },
 							{ 59.4, 40.6, MAP.AZSHARA },
@@ -519,11 +519,11 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 						cr = 6140,	-- Hetaera
 					}),
 					objective(2, {	-- 0/1 Hetaera's Bloodied Head
-						provider = { "i", 10598 },	-- Hetaera's Bloodied Head
+						provider = { "i", 10598 },	-- Hetaera's Bloodied Head (QI!)
 						cr = 6140,	-- Hetaera
 					}),
 					objective(3, {	-- 0/1 Hetaera's Bruised Head
-						provider = { "i", 10600 },	-- Hetaera's Bruised Head
+						provider = { "i", 10600 },	-- Hetaera's Bruised Head (QI!)
 						cr = 6140,	-- Hetaera
 					}),
 				},
@@ -531,9 +531,9 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3511, {	-- The Name of the Beast (3/3)
 				sourceQuest = 3510,	-- The Name of the Beast (2/3)
 				qg = 6134,	-- Lord Arkkoroc
-				qi = 10610,	-- Hetaera's Blood
 				coord = { 77.2, 42.8, MAP.AZSHARA },
 				lvl = 45,
+				qi = 10610,	-- Hetaera's Blood (QI!)
 			}),
 			q(8252, {	-- The Siren's Coral
 				sourceQuest = 8251,	-- Magic Dust
@@ -543,7 +543,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/6 Enchanted Coral
-						provider = { "i", 20029 },	-- Enchanted Coral
+						provider = { "i", 20029 },	-- Enchanted Coral (QI!)
 						cr = 6195,	-- Spitelash Siren
 					}),
 				},
@@ -555,7 +555,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 60,
 				groups = {
 					objective(1, {	-- 0/1 Prismatic Shell
-						provider = { "i", 23250 },	-- Prismatic Shell
+						provider = { "i", 23250 },	-- Prismatic Shell (QI!)
 						coord = { 41.6, 52.8, MAP.AZSHARA },
 						cr = 8408,	-- Warlord Krellian
 					}),
@@ -569,7 +569,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 50,
 				groups = {
 					objective(1, {	-- 0/6 Wavethrasher Scales
-						provider = { "i", 20087 },	-- Wavethrasher Scales
+						provider = { "i", 20087 },	-- Wavethrasher Scales (QI!)
 						crs = {
 							6349,	-- Great Wavethrasher
 							6348,	-- Wavethrasher
@@ -581,10 +581,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			q(3565, {	-- Xylem's Payment to Jediga
 				sourceQuest = 3561,	-- Delivery to Archmage Xylem
 				qg = 8379,	-- Archmage Xylem
-				qi = 10681,	-- Xylem's Note
 				coord = { 29.2, 40.2, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+				qi = 10681,	-- Xylem's Note (QI!)
 			}),
 		}),
 		n(RARES, {
@@ -677,21 +677,21 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			o(152620, {	-- Azsharite Formation
 				coord = { 50.0, 70.1, MAP.AZSHARA },
 				groups = {
-					i(10714),	-- Crystallized Azsharite
+					i(10714),	-- Crystallized Azsharite (QI!)
 					i(10840),	-- Crystallized Note
 				},
 			}),
 			o(152621, {	-- Azsharite Formation
 				coord = { 52.6, 78.3, MAP.AZSHARA },
 				groups = {
-					i(10714),	-- Crystallized Azsharite
+					i(10714),	-- Crystallized Azsharite (QI!)
 					i(10839),	-- Crystallized Note
 				},
 			}),
 			o(152622, {	-- Azsharite Formation
 				coord = { 60.7, 86.5, MAP.AZSHARA },
 				groups = {
-					i(10714),	-- Crystallized Azsharite
+					i(10714),	-- Crystallized Azsharite (QI!)
 				},
 			}),
 			o(441250, {	-- Book

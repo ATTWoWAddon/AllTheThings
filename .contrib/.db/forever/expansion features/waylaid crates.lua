@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Apprentice Crate
-								provider = { "i", 248765 },	-- Sealed Apprentice Crate (QI!)
+								provider = { "i", 248765 },	-- Sealed Apprentice Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x5
 						},
@@ -46,7 +46,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Journeyman Crate
-								provider = { "i", 248766 },	-- Sealed Journeyman Crate (QI!)
+								provider = { "i", 248766 },	-- Sealed Journeyman Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x10
 						},
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Expert Crate
-								provider = { "i", 248767 },	-- Sealed Expert Crate (QI!)
+								provider = { "i", 248767 },	-- Sealed Expert Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x15
 						},
@@ -80,7 +80,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Apprentice Crate
-								provider = { "i", 248770 },	-- Sealed Apprentice Crate (QI!)
+								provider = { "i", 248770 },	-- Sealed Apprentice Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x10
 						},
@@ -97,7 +97,7 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Journeyman Crate
-								provider = { "i", 248771 },	-- Sealed Journeyman Crate (QI!)
+								provider = { "i", 248771 },	-- Sealed Journeyman Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x20
 						},
@@ -114,15 +114,15 @@ root(ROOTS.ExpansionFeatures, {
 						repeatable = true,
 						groups = {
 							objective(1, {	-- Sealed Expert Crate
-								provider = { "i", 248772 },	-- Sealed Expert Crate (QI!)
+								provider = { "i", 248772 },	-- Sealed Expert Crate (QI!) (TODO: verify Quest Item)
 							}),
 							currency(3402),	-- Merchant's Favor x30
 						},
 					}),
 					q(93862, {	-- Crate Return
 						description = "Use a Forged Delivery Receipt from an Uncertified Scribe on an empty Waylaid Crate to make a Notarized Shipping Container, then return it to your faction's trade representatives.",
-						timeline = { TIMELINE.CREATED_1_60_1 },
 						repeatable = true,
+						timeline = { TIMELINE.CREATED_1_60_1 },
 						groups = {
 							objective(1, {	-- Notarized Shipping Container
 								provider = { "i", 262917 },	-- Notarized Shipping Container

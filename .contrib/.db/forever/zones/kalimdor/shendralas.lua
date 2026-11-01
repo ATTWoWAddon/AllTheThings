@@ -20,14 +20,14 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 		}),
 		n(QUESTS, {
 			q(93062, {	-- Bone Burying
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Haggard Bones laid to rest
-						provider = { "i", 258661 },	-- Uthek's Draenethyst Staff
+						provider = { "i", 258661 },	-- Uthek's Draenethyst Staff (QI!)
 						cr = 253446,	-- Haggard Bones
 						coord = { 38.6, 29.8, MAP.SHENDRALAS },
 					}),
@@ -42,7 +42,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/10 Summon or Slay Haggard Bones
-						provider = { "i", 255403 },	-- Enhanced Necromancy Staff
+						provider = { "i", 255403 },	-- Enhanced Necromancy Staff (QI!)
 						cr = 253446,	-- Haggard Bones
 						coord = { 38.6, 29.8, MAP.SHENDRALAS },
 					}),
@@ -100,7 +100,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				groups = {
 					objective(1, {	-- 0/3 Petrified Bark
 						providers = {
-							{ "i", 254841 },	-- Petrified Bark
+							{ "i", 254841 },	-- Petrified Bark (QI!)
 							{ "o", 582187 },	-- Petrified Tree
 						},
 						coords = {
@@ -111,7 +111,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 						},
 					}),
 					objective(2, {	-- 0/3 Imbued Tears
-						provider = { "i", 254840 },	-- Imbued Tears
+						provider = { "i", 254840 },	-- Imbued Tears (QI!)
 					}),
 				},
 			}),
@@ -129,26 +129,26 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Accursed Skull
-						provider = { "i", 255945 },	-- Accursed Skull
+						provider = { "i", 255945 },	-- Accursed Skull (QI!)
 					}),
 					objective(2, {	-- 0/1 Gelkis Necromantic Garb
-						provider = { "i", 255941 },	-- Gelkis Necromantic Garb
+						provider = { "i", 255941 },	-- Gelkis Necromantic Garb (QI!)
 					}),
 				},
 			}),
 			q(93125, {	-- Going Home
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				-- TODO: Escort Rokren out of the Outcast Hideaway; Wowhead has no IDs for the escort yet.
 			}),
 			q(93072, {	-- Long-Term Solutions
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/2 Outcast Scout slain
 						provider = { "n", 254283 },	-- Outcast Scout
@@ -173,7 +173,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/426 Gently Cursed Bone
-						provider = { "i", 254663 },	-- Gently Cursed Bone
+						provider = { "i", 254663 },	-- Gently Cursed Bone (QI!)
 						crs = {
 							11561,	-- Undead Ravager
 						},
@@ -219,7 +219,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Necromantic Garb
-						provider = { "i", 255875 },	-- Necromantic Garb
+						provider = { "i", 255875 },	-- Necromantic Garb (QI!)
 						cr = 11559,	-- Outcast Necromancer
 						coord = { 22.6, 26.2, MAP.SHENDRALAS },
 					}),
@@ -235,8 +235,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				groups = {
 					objective(1, {	-- 0/426 Well Cursed Bone
 						providers = {
-							{ "i", 254842 },	-- Well Cursed Bone
-							{ "i", 254870 },	-- Rudimentary Necromancy Staff
+							{ "i", 254842 },	-- Well Cursed Bone (QI!)
+							{ "i", 254870 },	-- Rudimentary Necromancy Staff (QI!)
 						},
 						cr = 253360,	-- Nascent Undead Ravager
 					}),
@@ -266,17 +266,17 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					93072,	-- Long-Term Solutions
 					93129,	-- Threat of Starvation
 				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
 			q(93058, {	-- Saving Our Own
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Gelkis Captive rescued
 						provider = { "n", 254825 },	-- Gelkis Captive
@@ -285,13 +285,13 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/6 Stolen Supplies
-						provider = { "i", 256892 },	-- Stolen Supplies
+						provider = { "i", 256892 },	-- Stolen Supplies (QI!)
 					}),
 				},
 			}),

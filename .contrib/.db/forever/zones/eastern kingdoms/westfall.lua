@@ -15,7 +15,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			exploration(109),	-- Furlbrow's Pumpkin Farm
 			exploration(113),	-- Gold Coast Quarry
 			exploration(111),	-- Jangolode Mine
-			visit_exploration(2, {coord={58.4, 9.4, MAP.WESTFALL}}),	-- Longshore
+			visit_exploration(2, { coord={ 58.4, 9.4, MAP.WESTFALL } }),	-- Longshore
 			exploration(20),	-- Moonbrook
 			exploration(107),	-- Saldean's Farm
 			exploration(108),	-- Sentinel Hill
@@ -70,12 +70,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ 37.5, 50.7, WESTFALL },
 					{ 46.4, 73.8, THE_BARRENS },
 				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(2459),	-- Swiftness Potion
-					i(3388),	-- Strong Troll's Blood Potion
+					i(3388),	-- Lesser Troll's Blood Elixir
 				},
 			}),
 			q(94503, {	-- Call of Water
@@ -90,7 +90,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(92109, {	-- My First Alchemy Set
 				qg = 249713,	-- Odd Child
 				coord = { 41.0, 79.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = {
 					{ "i", 3371, 5 },	-- Empty Vial
 					{ "i", 765, 5 },	-- Silverleaf
@@ -98,6 +97,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(249905),	-- Scribbled I.O.U.
 				},
@@ -105,52 +105,52 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(92110, {	-- My First Real Potion
 				qg = 249713,	-- Odd Child
 				coord = { 41., 79.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
+				cost = { { "i", 730, 3 } },	-- 3x Murloc Eye
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
 					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(6181, {	-- A Swift Message
-				qg = 491,	-- Quartermaster Lewis
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qg = 491,	-- Quartermaster Lewis <Quartermaster>
 				coord = { 56.9, 47.2, MAP.WESTFALL },
 				races = { HUMAN },
 				lvl = 10,
+				qi = 15998,	-- Lewis' Note (PQI!)
 			}),
-			q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
-				qs = 1357,	-- Captain Sanders' Treasure Map (QS!)
+			q(136, {	-- Captain Sander's Hidden Treasure (1/4)
+				qs = 1357,	-- Captain Sander's Treasure Map (QS!)
 				lvl = 10,
 			}),
-			q(138, {	-- Captain Sanders' Hidden Treasure (2/4)
-				sourceQuest = 136,	-- Captain Sanders' Hidden Treasure (1/4)
+			q(138, {	-- Captain Sander's Hidden Treasure (2/4)
+				sourceQuest = 136,	-- Captain Sander's Hidden Treasure (1/4)
 				provider = { "o", 35 },	-- Captain's Footlocker
-				qi = 1358,	-- A Clue to Sander's Treasure (PQI!)
 				coord = { 25.9, 47.77, MAP.WESTFALL },
 				lvl = 10,
+				qi = 1358,	-- A Clue to Sander's Treasure (PQI!)
 			}),
-			q(139, {	-- Captain Sanders' Hidden Treasure (3/4)
-				sourceQuest = 138,	-- Captain Sanders' Hidden Treasure (2/4)
+			q(139, {	-- Captain Sander's Hidden Treasure (3/4)
+				sourceQuest = 138,	-- Captain Sander's Hidden Treasure (2/4)
 				provider = { "o", 36 },	-- Broken Barrel
-				qi = 1361,	-- Another Clue to Sander's Treasure (PQI!)
 				coord = { 40.50, 47.82, MAP.WESTFALL },
 				lvl = 10,
+				qi = 1361,	-- Another Clue to Sander's Treasure (PQI!)
 			}),
-			q(140, {	-- Captain Sanders' Hidden Treasure (4/4)
-				sourceQuest = 139,	-- Captain Sanders' Hidden Treasure (3/4)
+			q(140, {	-- Captain Sander's Hidden Treasure (4/4)
+				sourceQuest = 139,	-- Captain Sander's Hidden Treasure (3/4)
 				providers = {
 					{ "o", 34 },	-- Old Jug
 					{ "o", 33 },	-- Locked Chest
 				},
-				qi = 1362,	-- Final Clue to Sanders' Treasure (PQI!)
 				coords = {
 					{ 40.62, 17.01, MAP.WESTFALL },
 					{ 25.97, 16.90, MAP.WESTFALL },
 				},
 				lvl = 10,
+				qi = 1362,	-- Final Clue to Sander's Treasure (PQI!)
 				groups = {
 					i(270257, {	-- Captain Sander's Locker
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -158,11 +158,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 							i(270001),	-- Rusty Cutlass
 							i(276694),	-- Captain Sander's Lucky Shooter
 							i(270002),	-- Midshipman's Worn Boots
-							i(3343),	-- Captain Sanders' Booty Bag
+							i(3343),	-- Captain Sander's Booty Bag
 						},
 					}),
-					i(3344),	-- Captain Sanders' Sash
-					i(3342),	-- Captain Sanders' Shirt
+					i(3344),	-- Captain Sander's Sash
+					i(3342),	-- Captain Sander's Shirt
 					i(2842),	-- Silver Bar
 				},
 			}),
@@ -179,23 +179,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					MAP.TIRISFAL_GLADES,
 					MAP.WESTFALL,
 				},
-				cost = { { "i", 11109, 1 } },	-- Special Chicken Feed
+				cost = { { "i", 11109, 1 } },	-- 1x Special Chicken Feed
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
-					i(11110, {	-- Westfall Chicken (PET!)
+					i(11110, {	-- Chicken Egg (PET!)
 						description = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
 					}),
 				},
 			}),
 			q(6281, {	-- Continue to Stormwind
 				sourceQuest = 6181,	-- A Swift Message
-				qg = 523,	-- Thor
-				qi = 15998,	-- Lewis' Note (PQI!)
+				qg = 523,	-- Thor <Gryphon Master>
 				coord = { 56.4, 52.6, MAP.WESTFALL },
 				maps = { MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				lvl = 10,
+				qi = 15998,	-- Lewis' Note (PQI!)
 			}),
 			q(1076, {	-- Devils in Westfall
 				sourceQuest = 1075,	-- A Scroll from Mauren
@@ -228,17 +228,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuest = 92747,	-- Moonbrook Espionage
 				qg = 253092,	-- Alba Fairmoon
 				coord = { 52.5, 53.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(184, {	-- Furlbrow's Deed
 				qs = 1972,	-- Westfall Deed (QS!)
-				qi = 1971,	-- Furlbrow's Deed (PQI!)
 				maps = { MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
+				qi = 1971,	-- Furlbrow's Deed (PQI!)
 				groups = {
 					i(5057),	-- Ripe Watermelon
 					i(4656),	-- Small Pumpkin
@@ -247,7 +247,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(22, {	-- Goretusk Liver Pie
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
-				cost = { { "i", 723, 8 } },	-- Goretusk Liver
+				cost = { { "i", 723, 8 } },	-- 8x Goretusk Liver
 				races = ALLIANCE_ONLY,
 				lvl = 9,
 				groups = {
@@ -258,38 +258,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(92909, {	-- Harvesting the Harvesters
 				qg = 253395,	-- Ozwin Ironsprocket
 				coord = { 51.6, 32.2, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/14 Golem Isospring
 						provider = { "i", 255007 },	-- Golem Isospring
 					}),
 					objective(2, {	-- 0/5 Harvester Gyrostabilizer
-						provider = { "i", 255010 },	-- Harvester Gyrostabilizer
+						provider = { "i", 255010 },	-- Harvester Gyrostabilizer (QI!)
 					}),
 				},
 			}),
 			q(92910, {	-- Harvesting the Harvesters (Engineering 1/2)
 				qs = 255155,	-- Precessive Autocognition Assembly (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				requireSkill = ENGINEERING,
 				lvl = 8,
+				requireSkill = ENGINEERING,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(92911, {	-- Harvesting the Harvesters (Engineering 2/2)
 				sourceQuest = 92910,	-- Harvesting the Harvesters (Engineering 1/2)
 				qg = 253395,	-- Ozwin Ironsprocket
 				coord = { 51.6, 32.2, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				requireSkill = ENGINEERING,
 				cost = {
-					{ "i", 255007, 8 },	-- Golem Isospring
-					{ "i", 4363, 4 },	-- Copper Modulator
-					{ "i", 4405, 1 },	-- Crude Scope
+					{ "i", 4363, 4 },	-- 4x Copper Modulator
+					{ "i", 4405, 1 },	-- 1x Crude Scope
+					{ "i", 255007, 8 },	-- 8x Golem Isospring
 				},
+				requireSkill = ENGINEERING,
+				races = ALLIANCE_ONLY,
 				lvl = 8,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(277132),	-- Harvester Override Signalcaster
 					i(277470),	-- Schematic: Harvester Override Signalcaster (RECIPE!)
@@ -301,18 +301,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/5 Flask of Oil
-						cost = { { "i", 814, 5 } },	-- Flask of Oil
+						cost = { { "i", 814, 5 } },	-- 5x Flask of Oil
 					}),
 				},
 			}),
 			q(2359, {	-- Klaven's Tower
 				sourceQuest = 2360,	-- Mathias and the Defias
 				qg = 7024,	-- Agent Kearnen
-				qi = 8046,	-- Kearnen's Journal (PQI!)
 				coord = { 68.5, 70.2, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				classes = { ROGUE },
 				lvl = 20,
+				qi = 8046,	-- Kearnen's Journal (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Klaven Mortwake's Journal
 						provider = { "i", 7908 },	-- Klaven Mortwake's Journal (QI!)
@@ -334,13 +334,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuest = 92745,	-- The State of the Mines
 				qg = 253092,	-- Alba Fairmoon
 				coord = { 52.5, 53.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Suspicious Industrial Supplies
 						providers = {
-							{ "i", 254676 },	-- Suspicious Industrial Supplies
+							{ "i", 254676 },	-- Suspicious Industrial Supplies (QI!)
 							{ "o", 254676 },	-- Suspicious Crate
 						},
 						coord = { 43.2, 68.3, MAP.WESTFALL },
@@ -350,12 +350,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(92744, {	-- Murloc Gills
 				qg = 253092,	-- Alba Fairmoon
 				coord = { 52.5, 53.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/7 Longshore Murloc Gill
-						provider = { "i", 254548 },	-- Longshore Murloc Gill
+						provider = { "i", 254548 },	-- Longshore Murloc Gill (QI!)
 						crs = {
 							126,	-- Murloc Coastrunner
 							458,	-- Murloc Hunter
@@ -373,12 +373,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 6271,	-- Mouse
 				coord = { 32.2, 51.2, MAP.WESTFALL },
 				maps = { MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(102, {	-- Patrolling Westfall
-				qg = 821,	-- Captain Danuvin
+				qg = 821,	-- Captain Danuvin <The People's Militia>
 				coord = { 56.4, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 8,
@@ -421,7 +421,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(153, {	-- Red Leather Bandanas
-				qg = 878,	-- Scout Galiaan
+				qg = 878,	-- Scout Galiaan <The People's Militia>
 				coord = { 54.0, 53.0, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
@@ -477,7 +477,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Holy Spring Water
 						providers = {
-							{ "i", 737 },	-- Holy Spring Water (QI!)
+							{ "i", 737 },	-- Holy Spring Water (QI!) (TODO: verify Quest Item)
 							{ "o", 759 },	-- The Holy Spring
 						},
 						coord = { 28.9, 62.0, MAP.STRANGLETHORN_VALE },
@@ -494,21 +494,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Sack of Barley
 						providers = {
-							{ "i",   738 },	-- Sack of Barley (QI!)
+							{ "i", 738 },	-- Sack of Barley (QI!)
 							{ "o", 50936 },	-- Sack of Barley
 						},
 						coord = { 62.5, 23.3, MAP.SWAMP_OF_SORROWS },
 					}),
 					objective(2, {	-- 0/1 Sack of Corn
 						providers = {
-							{ "i",   739 },	-- Sack of Corn (QI!)
+							{ "i", 739 },	-- Sack of Corn (QI!)
 							{ "o", 50935 },	-- Sack of Corn
 						},
 						coord = { 65.8, 36.7, MAP.TANARIS },
 					}),
 					objective(3, {	-- 0/1 Sack of Rye
 						providers = {
-							{ "i",   740 },	-- Sack of Rye (QI!)
+							{ "i", 740 },	-- Sack of Rye (QI!)
 							{ "o", 50937 },	-- Sack of Rye
 						},
 						coord = { 39.9, 66.2, MAP.THE_HINTERLANDS },
@@ -519,7 +519,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sourceQuest = 49,	-- Sweet Amber (2/5)
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
-				cost = { { "i", 6037, 1 } },	-- Truesilver Bar
+				cost = { { "i", 6037, 1 } },	-- 1x Truesilver Bar
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
@@ -548,7 +548,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				groups = {
 					objective(1, {	-- 0/1 Bundle of Charred Oak
 						providers = {
-							{ "i",   743 },	-- Bundle of Charred Oak (QI!)
+							{ "i", 743 },	-- Bundle of Charred Oak (QI!)
 							{ "o", 50982 },	-- The Charred Oak
 						},
 						coord = { 54.6, 50.7, MAP.SEARING_GORGE },
@@ -558,18 +558,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(92742, {	-- Testing the Wells
 				qg = 253092,	-- Alba Fairmoon
-				qi = 254545,	-- Well Water Sample Kit (PQI!)
 				coord = { 52.5, 53.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 254545,	-- Well Water Sample Kit (PQI!)
 				groups = {
 					objective(1, {	-- 0/1 Jansen Stead Water Sample
-						provider = { "i", 254546 },	-- Jansen Stead Water Sample
+						provider = { "i", 254546 },	-- Jansen Stead Water Sample (QI!)
 						coord = { 56.7, 18.7, MAP.WESTFALL },
 					}),
 					objective(2, {	-- 0/1 Molsen Farm Water Sample
-						provider = { "i", 254547 },	-- Molsen Farm Water Sample
+						provider = { "i", 254547 },	-- Molsen Farm Water Sample (QI!)
 						coord = { 46.2, 38.3, MAP.WESTFALL },
 					}),
 				},
@@ -609,7 +609,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(65, {	-- The Defias Brotherhood (1/7)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -617,30 +617,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(132, {	-- The Defias Brotherhood (2/7)
 				sourceQuest = 65,	-- The Defias Brotherhood (1/7)
 				qg = 266,	-- Wiley the Black
-				qi = 1327,	-- Wiley's Note (PQI!)
 				coord = { 21.4, 45.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1327,	-- Wiley's Note (PQI!)
 			}),
 			q(135, {	-- The Defias Brotherhood (3/7)
 				sourceQuest = 132,	-- The Defias Brotherhood (2/7)
-				qg = 234,	-- Gryan Stoutmantle
-				qi = 1327,	-- Wiley's Note (PQI!)
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1327,	-- Wiley's Note (PQI!)
 			}),
 			q(141, {	-- The Defias Brotherhood (4/7)
 				sourceQuest = 135,	-- The Defias Brotherhood (3/7)
-				qg = 332,	-- Master Mathias Shaw
-				qi = 1353,	-- Shaw's Report (PQI!)
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
 				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				qi = 1353,	-- Shaw's Report (PQI!)
 			}),
 			q(142, {	-- The Defias Brotherhood (5/7)
 				sourceQuest = 141,	-- The Defias Brotherhood (4/7)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
@@ -691,7 +691,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 			}),
 			q(12, {	-- The People's Militia (1/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -706,7 +706,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(13, {	-- The People's Militia (2/3)
 				sourceQuest = 12,	-- The People's Militia (1/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -721,7 +721,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(14, {	-- The People's Militia (3/3)
 				sourceQuest = 13,	-- The People's Militia (2/3)
-				qg = 234,	-- Gryan Stoutmantle
+				qg = 234,	-- Gryan Stoutmantle <The People's Militia>
 				coord = { 56.3, 47.6, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -750,9 +750,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				qg = 253092,	-- Alba Fairmoon
 				coord = { 52.5, 53.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/4 Kobold Digger slain
 						provider = { "n", 1236 },	-- Kobold Digger
@@ -767,7 +767,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			q(117, {	-- Thunderbrew
 				qg = 239,	-- Grimbooze Thunderbrew
 				coord = { 44.6, 80.2, MAP.WESTFALL },
-				cost = { { "i", 1274, 5 } },	-- Hops
+				cost = { { "i", 1274, 5 } },	-- 5x Hops
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
@@ -776,20 +776,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			q(36, {	-- Westfall Stew (1/2)
 				qg = 238,	-- Verna Furlbrow
-				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
 				coord = { 60.0, 19.4, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				qi = 2832,	-- Verna's Westfall Stew Recipe (PQI!)
 			}),
 			q(38, {	-- Westfall Stew (2/2)
 				sourceQuest = 36,	-- Westfall Stew (1/2)
 				qg = 235,	-- Salma Saldean
 				coord = { 56.4, 30.6, MAP.WESTFALL },
 				cost = {
-					{ "i", 729, 3 },	-- Stringy Vulture Meat
-					{ "i", 730, 3 },	-- Murloc Eye
-					{ "i", 731, 3 },	-- Goretusk Snout
-					{ "i", 732, 3 },	-- Okra
+					{ "i", 731, 3 },	-- 3x Goretusk Snout
+					{ "i", 730, 3 },	-- 3x Murloc Eye
+					{ "i", 732, 3 },	-- 3x Okra
+					{ "i", 729, 3 },	-- 3x Stringy Vulture Meat
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 9,
@@ -1006,7 +1006,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				cr = 124,	-- Riverpaw Brute
 			}),
-			i(1357, {	-- Captain Sanders' Treasure Map (QS!)
+			i(1357, {	-- Captain Sander's Treasure Map (QS!)
 				crs = {
 					126,	-- Murloc Coastrunner
 					458,	-- Murloc Hunter
@@ -1061,13 +1061,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				cr = 517,	-- Murloc Oracle
 			}),
 			i(255007, {	-- Golem Isospring
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher
 					115,	-- Harvest Reaper
 					480,	-- Rusty Harvest Golem
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(723),	-- Goretusk Liver
 			i(731, {	-- Goretusk Snout
@@ -1082,13 +1082,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			i(2087, {	-- Hard Crawler Carapace
 				cr = 830,	-- Sand Crawler
 			}),
-			i(255010, {	-- Harvester Gyrostabilizer
-				timeline = { TIMELINE.ADDED_1_60_1 },
+			i(255010, {	-- Harvester Gyrostabilizer (QI!)
 				crs = {
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher
 					115,	-- Harvest Reaper
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1274, {	-- Hops
 				crs = {
@@ -1155,12 +1155,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				cr = 450,	-- Defias Renegade Mage
 			}),
 			i(255155, {	-- Precessive Autocognition Assembly (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher
 					480,	-- Rusty Harvest Golem
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(821, {	-- Riverpaw Leather Vest
 				cr = 123,	-- Riverpaw Mongrel

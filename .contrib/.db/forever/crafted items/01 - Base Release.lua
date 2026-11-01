@@ -79,7 +79,7 @@ root(ROOTS.Craftables, {
 			i(3382),	-- Minor Troll's Blood Elixir
 			i(6052),	-- Nature Protection Potion
 			i(8956),	-- Oil of Immolation
-			i(9224),	-- Potion of Demonslaying
+			i(9224),	-- Potion of Demon Slaying
 			i(3386),	-- Potion of Poison Cleansing
 			i(13462),	-- Purification Potion
 			i(5631),	-- Rage Potion
@@ -104,7 +104,7 @@ root(ROOTS.Craftables, {
 	}),
 	prof(BLACKSMITHING, {
 		n(COMMON_VENDOR_ITEMS, {
-			i(5956),	-- Blacksmithing Hammer
+			i(5956),	-- Blacksmith Hammer
 			i(3857),	-- Coal
 			i(18567),	-- Elemental Flux
 			i(3466),	-- Strong Flux
@@ -529,7 +529,7 @@ root(ROOTS.Craftables, {
 		filter(PROFESSION_EQUIPMENT, {
 			i(16207),	-- Runed Arcanite Rod
 			i(6218),	-- Runed Copper Rod
-			i(11130),	-- Runed Gold Rod
+			i(11130),	-- Runed Golden Rod
 			i(6339),	-- Runed Silver Rod
 			i(11145),	-- Runed Truesilver Rod
 		}),
@@ -566,7 +566,7 @@ root(ROOTS.Craftables, {
 				i(11826),	-- Lil' Smoky (PET!)
 			}),
 			filter(MISC, {
-				i(18645),	-- Gnomish Alarm-o-Bot
+				i(18645),	-- Gnomish Alarm-O-Bot
 				i(18986, {	-- Ultrasafe Transporter: Gadgetzan
 					requireSkill = GNOMISH_ENGINEERING,
 				}),
@@ -653,8 +653,8 @@ root(ROOTS.Craftables, {
 			i(15999),	-- Spellpower Goggles Xtreme Plus
 		}),
 		filter(BATTLE_PETS, {
-			i(15996),	-- Lifelike Toad (PET!)
-			i(4401),	-- Mechanical Squirrel (PET!)
+			i(15996),	-- Lifelike Mechanical Toad (PET!)
+			i(4401),	-- Mechanical Squirrel Box (PET!)
 			i(21277),	-- Tranquil Mechanical Yeti (PET!)
 		}),
 		filter(MISC, {
@@ -666,8 +666,8 @@ root(ROOTS.Craftables, {
 			i(16005),	-- Dark Iron Bomb
 			i(18641),	-- Dense Dynamite
 			i(4384),	-- Explosive Sheep
-			i(6714),	-- EZ-Thro Dynamite
-			i(18588),	-- EZ-Thro Dynamite II
+			i(6714),	-- Ez-Thro Dynamite
+			i(18588),	-- Ez-Thro Dynamite II
 			i(4395),	-- Goblin Land Mine
 			i(4378),	-- Heavy Dynamite
 			i(10562),	-- Hi-Explosive Bomb
@@ -775,10 +775,10 @@ root(ROOTS.Craftables, {
 			i(16007),	-- Flawless Arcanite Rifle
 			i(4372),	-- Lovingly Crafted Boomstick
 			i(10508),	-- Mithril Blunderbuss
-			i(10510),	-- Mithril Heavy-Bore Rifle
+			i(10510),	-- Mithril Heavy-bore Rifle
 			i(4383),	-- Moonsight Rifle
 			i(4362),	-- Rough Boomstick
-			i(4379),	-- Silver-Plated Shotgun
+			i(4379),	-- Silver-plated Shotgun
 			i(15995),	-- Thorium Rifle
 		}),
 		n(WEAPON_ENCHANTMENTS, {
@@ -892,17 +892,19 @@ root(ROOTS.Craftables, {
 			i(13911),	-- 19 Pound Lobster
 			i(13912),	-- 21 Pound Lobster
 			i(13913),	-- 22 Pound Lobster
-			i(13876),	-- 40 Pound Grouper
-			i(13877),	-- 47 Pound Grouper
-			i(13878),	-- 53 Pound Grouper
-			i(13879),	-- 59 Pound Grouper
-			i(13880),	-- 68 Pound Grouper
+			i(13876),	-- 40 Pound Yellowtail
+			i(13877),	-- 47 Pound Yellowtail
+			i(13878),	-- 53 Pound Yellowtail
+			i(13879),	-- 59 Pound Yellowtail
+			i(13880),	-- 68 Pound Yellowtail
 			-- Bloated fish:
 			i(6646),	-- Bloated Albacore
-			i(6647),	-- Bloated Catfish
-			i(21163),	-- Bloated Firefin
+			i(6643),	-- Bloated Brilliant Smallfish
+			i(6647),	-- Bloated Bristle Whisker Catfish
+			i(21163),	-- Bloated Firefin Snapper
+			i(21243),	-- Bloated Glossy Mightfish
 			i(6644),	-- Bloated Mackerel
-			i(21243),	-- Bloated Mightfish
+			i(8366),	-- Bloated Mithril Head Trout
 			i(6645),	-- Bloated Mud Snapper
 			i(21162),	-- Bloated Oily Blackmouth
 			i(13881, {	-- Bloated Redgill
@@ -915,9 +917,7 @@ root(ROOTS.Craftables, {
 				i(1529),	-- Jade
 				i(1705),	-- Lesser Moonstone
 			}),
-			i(13891),	-- Bloated Salmon
-			i(6643),	-- Bloated Smallfish
-			i(8366),	-- Bloated Trout
+			i(13891),	-- Bloated Whitescale Salmon
 			-- Containers:
 			i(6351),	-- Dented Crate
 			i(13874),	-- Heavy Crate
@@ -943,11 +943,11 @@ root(ROOTS.Craftables, {
 					MAP.WETLANDS,
 				},
 				providers = {
-					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 180683 },	-- Firefin Snapper School
-					{ "o", 180683 },	-- Greater Sagefish School
+					{ "o", 180683 },	-- Firefin Snapper School
+					{ "o", 180901 },	-- Floating Wreckage
+					{ "o", 180685 },	-- Floating Wreckage
 					{ "o", 180682 },	-- Oily Blackmouth School
-					{ "o", 180685 },	-- Waterlogged Wreckage
 				},
 				--[[groups = {
 					i(4339),	-- Bolt of Mageweave
@@ -959,7 +959,7 @@ root(ROOTS.Craftables, {
 				},]]
 			}),
 			i(6307),	-- Message in a Bottle
-			i(21228, {	-- Mitril Bound Trunk
+			i(21228, {	-- Mithril Bound Trunk
 				maps_disp = {
 					MAP.BLASTED_LANDS,
 					MAP.EASTERN_PLAGUELANDS,
@@ -1011,9 +1011,7 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				providers = {
-					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-				},
+				providers = { { "o", 180662 }, },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 				--[[groups = {
 					i(4305),	-- Bolt of Silk Cloth
 					i(2997),	-- Bolt of Woolen Cloth
@@ -1026,18 +1024,18 @@ root(ROOTS.Craftables, {
 			-- Consumables:
 			i(21151, {	-- Rumsey Rum Black Label
 				providers = {
-					{ "o", 180901 },	-- Bloodsail Wreckage
+					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180683 },	-- Firefin Snapper School
 					{ "o", 180655 },	-- Floating Debris
+					{ "o", 180901 },	-- Floating Wreckage
 					{ "o", 180751 },	-- Floating Wreckage
-					{ "o", 180683 },	-- Greater Sagefish School
+					{ "o", 180685 },	-- Floating Wreckage
 					{ "o", 180682 },	-- Oily Blackmouth School
+					{ "o", 180663 },	-- Sagefish School
+					{ "o", 180656 },	-- Sagefish School
 					{ "o", 180658 },	-- School of Deviate Fish
 					{ "o", 180662 },	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
 					{ "o", 180712 },	-- Stonescale Eel Swarm
-					{ "o", 180685 },	-- Waterlogged Wreckage
-					{ "o", 180663 },	-- Sagefish School
-					{ "o", 180656 },	-- Sagefish School
 				},
 			}),
 			i(20709, {	-- Rumsey Rum Light
@@ -1049,9 +1047,7 @@ root(ROOTS.Craftables, {
 					MAP.WESTFALL,
 					MAP.THE_BARRENS,
 				},
-				providers = {
-					{ "o", 180655 },	-- Floating Debris
-				},
+				providers = { { "o", 180655 }, },	-- Floating Debris
 			}),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
@@ -1105,9 +1101,7 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			providers = {
-				{ "o", 180683 },	-- Firefin Snapper School
-			},
+			providers = { { "o", 180683 }, },	-- Firefin Snapper School
 		}),
 		i(13893, {	-- Large Raw Mightfish
 			description = "Can be caught on the seaside.",
@@ -1115,7 +1109,7 @@ root(ROOTS.Craftables, {
 				MAP.AZSHARA,
 			},
 		}),
-		i(13757, {	-- Lightening Eel
+		i(13757, {	-- Lightning Eel
 			coord = { 60.6, 71.7, MAP.SILITHUS },
 			description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 			maps_disp = {
@@ -1146,9 +1140,7 @@ root(ROOTS.Craftables, {
 				MAP.WESTFALL,
 				MAP.WETLANDS,
 			},
-			providers = {
-				{ "o", 180682 },	-- Oily Blackmouth School
-			},
+			providers = { { "o", 180682 }, },	-- Oily Blackmouth School
 		}),
 		i(6291, {	-- Raw Brilliant Smallfish
 			description = "Can be caught in inland waters and waterways.",
@@ -1396,12 +1388,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		-- Wreckages:
-		o(180901, {	-- Bloodsail Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
-			maps = {
-				MAP.STRANGLETHORN_VALE,
-			},
-		}),
 		o(180655, {	-- Floating Debris
 			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
@@ -1411,6 +1397,12 @@ root(ROOTS.Craftables, {
 				MAP.SILVERPINE_FOREST,
 				MAP.WESTFALL,
 				MAP.THE_BARRENS,
+			},
+		}),
+		o(180901, {	-- Floating Wreckage
+			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
+			maps = {
+				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180751, {	-- Floating Wreckage
@@ -1466,12 +1458,13 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(142143, {	-- Blindweed
-				maps = { MAP.SWAMP_OF_SORROWS },
-				learnedAt = 235,
 				description = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
+				learnedAt = 235,
+				maps = { MAP.SWAMP_OF_SORROWS },
 			}),
 			o(1621, {	-- Briarthorn
 				learnedAt = 70,
+				description = "Usually found near trees.",
 				maps = {
 					MAP.DARKSHORE,
 					MAP.DUSKWOOD,
@@ -1482,7 +1475,6 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.SILVERPINE_FOREST,
 				},
-				description = "Usually found near trees.",
 			}),
 			o(3729, {	-- Briarthorn (The Barrens)
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
@@ -1493,6 +1485,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1622, {	-- Bruiseweed
 				learnedAt = 100,
+				description = "Usually found near hillsides, buildings and structures.",
 				maps = {
 					MAP.ASHENVALE,
 					MAP.DUSKWOOD,
@@ -1502,7 +1495,6 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				description = "Usually found near hillsides, buildings and structures.",
 			}),
 			o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
@@ -1517,6 +1509,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(176584, {	-- Dreamfoil
 				learnedAt = 270,
+				description = "Can usually be found on flat open spaces.",
 				maps = {
 					MAP.BURNING_STEPPES,
 					MAP.SILITHUS,
@@ -1525,7 +1518,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				description = "Can usually be found on flat open spaces.",
 			}),
 			o(176693, {	-- Dreamfoil (Felwood)
 				learnedAt = 270,
@@ -1533,6 +1525,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1619, {	-- Earthroot
 				learnedAt = 15,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.DUN_MOROGH,
 					MAP.DUROTAR,
@@ -1545,7 +1538,6 @@ root(ROOTS.Craftables, {
 					MAP.DARKSHORE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(3726, {	-- Earthroot (The Barrens)
 				-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
@@ -1554,35 +1546,36 @@ root(ROOTS.Craftables, {
 			}),
 			o(2042, {	-- Fadeleaf
 				learnedAt = 160,
+				description = "Can be found in fertile terrain and fields.",
 				maps = {
 					MAP.ALTERAC_MOUNTAINS,
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				description = "Can be found in fertile terrain and fields.",
 			}),
 			o(2866, {	-- Firebloom
 				learnedAt = 205,
+				description = "Can be found on hot deserts.",
 				maps = {
 					MAP.BADLANDS,
 					MAP.SEARING_GORGE,
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				description = "Can be found on hot deserts.",
 			}),
 			o(142144, {	-- Ghost Mushroom
+				description = "Can be found inside caves.",
 				coords = {
 					{ 58.0, 41.2, MAP.THE_HINTERLANDS },
 					{ 55.8, 68.1, MAP.THE_HINTERLANDS },
 					{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 				},
-				description = "Can be found inside caves.",
 				learnedAt = 245,
 			}),
 			o(176583, {	-- Golden Sansam
 				learnedAt = 260,
+				description = "Can be found by trees and other natural structures.",
 				maps = {
 					MAP.SILITHUS,
 					MAP.UNGORO_CRATER,
@@ -1592,7 +1585,6 @@ root(ROOTS.Craftables, {
 					MAP.FERALAS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found by trees and other natural structures.",
 			}),
 			o(176638, {	-- Golden Sansam (Felwood)
 				learnedAt = 260,
@@ -1600,6 +1592,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2046, {	-- Goldthorn
 				learnedAt = 170,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1609,24 +1602,23 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(1628, {	-- Grave Moss
+				description = "Can be found on graves.",
 				coords = {
 					{ 20.0, 40.0, MAP.DUSKWOOD },	-- Raven Hill Cemetery
 					{ 50.0, 58.0, MAP.DESOLACE },
 					{ 80.0, 71.0, MAP.DUSKWOOD },
 				},
-				description = "Can be found on graves.",
 				learnedAt = 120,
 			}),
 			o(142145, {	-- Gromsblood
+				description = "Found in locations corrupted by the Burning Legion.",
 				coords = {
 					{ 84.1, 71.65, MAP.ASHENVALE },	-- Felfire Hill
 					{ 53.5, 46.5, MAP.BLASTED_LANDS },
 					{ 50.0, 80.0, MAP.DESOLACE },
 				},
-				description = "Found in locations corrupted by the Burning Legion.",
 				learnedAt = 250,
 			}),
 			o(176637, {	-- Gromsblood (Felwood)
@@ -1639,6 +1631,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2043, {	-- Khadgar's Whisker
 				learnedAt = 185,
+				description = "Can be found near trees.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1649,10 +1642,10 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found near trees.",
 			}),
 			o(1624, {	-- Kingsblood
 				learnedAt = 125,
+				description = "Can be found in the woods.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSKWOOD,
@@ -1668,10 +1661,10 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				description = "Can be found in the woods.",
 			}),
 			o(2041, {	-- Liferoot
 				learnedAt = 150,
+				description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 				maps = {
 					MAP.ARATHI_HIGHLANDS,
 					MAP.DUSTWALLOW_MARSH,
@@ -1685,7 +1678,6 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 			}),
 			o(1620, {	-- Mageroyal
 				learnedAt = 50,
@@ -1709,6 +1701,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(176586, {	-- Mountain Silversage
 				learnedAt = 280,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.AZSHARA,
 					MAP.BURNING_STEPPES,
@@ -1717,7 +1710,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(176640, {	-- Mountain Silversage (Felwood)
 				learnedAt = 280,
@@ -1744,6 +1736,7 @@ root(ROOTS.Craftables, {
 				},
 			}),
 			o(142140, {	-- Purple Lotus
+				description = "Can be found in elven or troll ruins.",
 				maps = {
 					MAP.AZSHARA,
 					MAP.FERALAS,
@@ -1751,7 +1744,6 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found in elven or troll ruins.",
 				learnedAt = 210,
 			}),
 			o(1617, {	-- Silverleaf
@@ -1787,6 +1779,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(2045, {	-- Stranglekelp
 				learnedAt = 85,
+				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 				maps = {
 					MAP.ASHENVALE,
 					MAP.DARKSHORE,
@@ -1802,7 +1795,6 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 			}),
 			o(142142, {	-- Sungrass
 				learnedAt = 230,
@@ -1822,6 +1814,7 @@ root(ROOTS.Craftables, {
 			}),
 			o(1623, {	-- Wild Steelbloom
 				learnedAt = 115,
+				description = "Can be found on uneven terrain and mountain sides.",
 				maps = {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THOUSAND_NEEDLES,
@@ -1829,7 +1822,6 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 		}),
 		{	-- Herbs:
@@ -2221,8 +2213,8 @@ root(ROOTS.Craftables, {
 		filter(MISC, {
 			i(11020, {	-- Evergreen Pouch
 				cost = {
-					{ "i", 11018, 2 },	-- Un'Goro Soil
-					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+					{ "i", 11022, 1 },	-- 1x Packet of Tharlendris Seeds
+					{ "i", 11018, 2 },	-- 2x Un'Goro Soil
 				},
 				groups = {
 					i(11024, {	-- Evergreen Herb Casing
@@ -2238,8 +2230,8 @@ root(ROOTS.Craftables, {
 			i(6260),	-- Blue Dye
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
+			i(4340),	-- Gray Dye
 			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
 			i(8343),	-- Heavy Silken Thread
 			i(4342),	-- Purple Dye
 			i(2604),	-- Red Dye
@@ -2259,7 +2251,7 @@ root(ROOTS.Craftables, {
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046),	-- Green Dragonscale Leggings
-				i(15047),	-- Red Dragonscale Breastplate'
+				i(15047),	-- Red Dragonscale Breastplate
 				--[[BRD
 				i(15050),	-- Black Dragonscale Breastplate
 				i(16984),	-- Black Dragonscale Boots
@@ -2369,7 +2361,7 @@ root(ROOTS.Craftables, {
 				i(5958),	-- Fine Leather Pants
 				i(4243),	-- Fine Leather Tunic
 				i(7348),	-- Fletcher's Gloves
-				i(4262),	-- Gem-Studded Leather Belt
+				i(4262),	-- Gem-studded Leather Belt
 				i(17721),	-- Gloves of the Greatfather
 				i(4255),	-- Green Leather Armor
 				i(4257),	-- Green Leather Belt
@@ -2437,7 +2429,7 @@ root(ROOTS.Craftables, {
 			filter(MAIL, {
 				i(15082),	-- Heavy Scorpid Belt
 				i(15077),	-- Heavy Scorpid Bracers
-				i(15078),	-- Heavy Scorpid Gauntlets
+				i(15078),	-- Heavy Scorpid Gauntlet
 				i(15080),	-- Heavy Scorpid Helm
 				i(15079),	-- Heavy Scorpid Leggings
 				i(15081),	-- Heavy Scorpid Shoulders
@@ -2658,7 +2650,7 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 						},
 					}),
-					o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
+					o(105569, {	-- Silver Vein (The Barrens/Hillsbrad Foothills - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
 						coords = {
 							{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine
@@ -3335,43 +3327,43 @@ root(ROOTS.Craftables, {
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(2841, {	-- Bronze Bar
 				cost = ClassicCost({
-					{ "i", 2840, 1 },	-- Copper Bar
-					{ "i", 3576, 1 },	-- Tin Bar
+					{ "i", 2840, 1 },	-- 1x Copper Bar
+					{ "i", 3576, 1 },	-- 1x Tin Bar
 				}),
 			}),
 			i(2840, {	-- Copper Bar
-				cost = ClassicCost({ { "i", 2770, 1 } }),	-- Copper Ore
+				cost = ClassicCost({ { "i", 2770, 1 } }),	-- 1x Copper Ore
 			}),
 			i(11371, {	-- Dark Iron Bar
-				cost = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
+				cost = ClassicCost({ { "i", 11370, 8 } }),	-- 8x Dark Iron Ore
 				description = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 			}),
 			i(3577, {	-- Gold Bar
-				cost = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
+				cost = ClassicCost({ { "i", 2776, 1 } }),	-- 1x Gold Ore
 			}),
 			i(3575, {	-- Iron Bar
-				cost = ClassicCost({ { "i", 2772, 1 } }),	-- Iron Ore
+				cost = ClassicCost({ { "i", 2772, 1 } }),	-- 1x Iron Ore
 			}),
 			i(3860, {	-- Mithril Bar
-				cost = ClassicCost({ { "i", 3858, 1 } }),	-- Mithril Ore
+				cost = ClassicCost({ { "i", 3858, 1 } }),	-- 1x Mithril Ore
 			}),
 			i(2842, {	-- Silver Bar
-				cost = ClassicCost({ { "i", 2775, 1 } }),	-- Silver Ore
+				cost = ClassicCost({ { "i", 2775, 1 } }),	-- 1x Silver Ore
 			}),
 			i(3859, {	-- Steel Bar
 				cost = ClassicCost({
-					{ "i", 3575, 1 },	-- Iron Bar
-					{ "i", 3857, 1 },	-- Coal
+					{ "i", 3575, 1 },	-- 1x Iron Bar
+					{ "i", 3857, 1 },	-- 1x Coal
 				}),
 			}),
 			i(12359, {	-- Thorium Bar
-				cost = ClassicCost({ { "i", 10620, 1 } }),	-- Thorium Ore
+				cost = ClassicCost({ { "i", 10620, 1 } }),	-- 1x Thorium Ore
 			}),
 			i(3576, {	-- Tin Bar
-				cost = ClassicCost({ { "i", 2771, 1 } }),	-- Tin Ore
+				cost = ClassicCost({ { "i", 2771, 1 } }),	-- 1x Tin Ore
 			}),
 			i(6037, {	-- Truesilver Bar
-				cost = ClassicCost({ { "i", 7911, 1 } }),	-- Truesilver Ore
+				cost = ClassicCost({ { "i", 7911, 1 } }),	-- 1x Truesilver Ore
 			}),
 		}),
 	}),
@@ -3389,9 +3381,9 @@ root(ROOTS.Craftables, {
 		i(8926),	-- Instant Poison IV
 		i(8927),	-- Instant Poison V
 		i(8928),	-- Instant Poison VI
-		i(5237),	-- Mind-Numbing Poison
-		i(6951),	-- Mind-Numbing Poison II
-		i(9186),	-- Mind-Numbing Poison III
+		i(5237),	-- Mind-numbing Poison
+		i(6951),	-- Mind-numbing Poison II
+		i(9186),	-- Mind-numbing Poison III
 		i(10918),	-- Wound Poison
 		i(10920),	-- Wound Poison II
 		i(10921),	-- Wound Poison III
@@ -3526,7 +3518,7 @@ root(ROOTS.Craftables, {
 					1815,	-- Diseased Black Bear
 					1816,	-- Diseased Grizzly
 					7445,	-- Elder Shardtooth
-					7444,	-- Shardtooth Mauler
+					7444,	-- Shardtooth Bear
 				},
 				description = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
 				coords = {
@@ -3607,8 +3599,8 @@ root(ROOTS.Craftables, {
 			i(6260),	-- Blue Dye
 			i(2320),	-- Coarse Thread
 			i(2321),	-- Fine Thread
+			i(4340),	-- Gray Dye
 			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
 			i(8343),	-- Heavy Silken Thread
 			i(6261),	-- Orange Dye
 			i(10290),	-- Pink Dye
@@ -3638,7 +3630,7 @@ root(ROOTS.Craftables, {
 				i(4327),	-- Icy Cloak
 				i(2570),	-- Linen Cloak
 				i(4326),	-- Long Silken Cloak
-				i(5542),	-- Pearl-Clasped Cloak
+				i(5542),	-- Pearl-clasped Cloak
 				i(2580),	-- Reinforced Linen Cape
 				i(13860),	-- Runecloth Cloak
 				i(2584),	-- Woolen Cape
@@ -3686,7 +3678,7 @@ root(ROOTS.Craftables, {
 				i(7059),	-- Crimson Silk Shoulders
 				i(7058),	-- Crimson Silk Vest
 				i(4333),	-- Dark Silk Shirt
-				i(4314),	-- Double-stitched Woolen Shoulders
+				i(4314),	-- Double-Stitched Woolen Shoulders
 				i(10041),	-- Dreamweave Circlet
 				i(10019),	-- Dreamweave Gloves
 				i(10021),	-- Dreamweave Vest
@@ -3775,7 +3767,7 @@ root(ROOTS.Craftables, {
 				i(10047),	-- Simple Kilt
 				i(10046),	-- Simple Linen Boots
 				i(10045),	-- Simple Linen Pants
-				i(4312),	-- Soft-Soled Linen Boots
+				i(4312),	-- Soft-soled Linen Boots
 				i(4328),	-- Spider Belt
 				i(4321),	-- Spider Silk Slippers
 				i(4320),	-- Spidersilk Boots

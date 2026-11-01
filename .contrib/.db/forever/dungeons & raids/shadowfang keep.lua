@@ -17,7 +17,7 @@ instanceroot(64, {	-- Shadowfang Keep
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Head of Arugal
-						provider = { "i", 5442 },	-- Head of Arugal
+						provider = { "i", 5442 },	-- Head of Arugal (QI!)
 					}),
 					i(6414),	-- Seal of Sylvanas
 				},
@@ -45,12 +45,12 @@ instanceroot(64, {	-- Shadowfang Keep
 				groups = {
 					objective(1, {	-- 0/1 The Book of Ur
 						providers = {
-							{ "i", 6283 },	-- The Book of Ur
+							{ "i", 6283 },	-- The Book of Ur (QI!)
 							{ "o", 36738 },	-- The Book of Ur
 						},
 						description = "Can be found on a bookshelf in the circular room with Fenrus.",
 					}),
-					i(4534),	-- Steel-Clasped Bracers
+					i(4534),	-- Steel-clasped Bracers
 					i(6335),	-- Grizzled Boots
 					i(270030, {	-- Tattered Mittens
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -65,11 +65,11 @@ instanceroot(64, {	-- Shadowfang Keep
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/3 Soran'ruk Fragment
-						provider = { "i", 6914 },	-- Soran'ruk Fragment
+						provider = { "i", 6914 },	-- Soran'ruk Fragment (QI!)
 						cr = 4809,	-- Twilight Acolyte
 					}),
 					objective(2, {	-- 0/1 Large Soran'ruk Fragment
-						provider = { "i", 6915 },	-- Large Soran'ruk Fragment
+						provider = { "i", 6915 },	-- Large Soran'ruk Fragment (QI!)
 						cr = 3855,	-- Shadowfang Darksoul
 					}),
 					i(6898),	-- Orb of Soran'ruk
@@ -193,7 +193,7 @@ instanceroot(64, {	-- Shadowfang Keep
 			}),
 		}),
 		n(4275, {	-- Archmage Arugal
-			i(5442),	-- Head of Arugal
+			i(5442),	-- Head of Arugal (QI!)
 			i(6220),	-- Meteor Shard
 			i(6324),	-- Robes of Arugal
 			i(6392),	-- Belt of Arugal

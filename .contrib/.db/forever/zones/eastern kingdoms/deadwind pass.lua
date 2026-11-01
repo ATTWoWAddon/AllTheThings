@@ -10,7 +10,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DEADWIND_PASS, {
 			ach(777),	-- Explore Deadwind Pass
 		}),
 		explorationHeader({
-			visit_exploration(2560,{coord={52.6,36.8,MAP.DEADWIND_PASS}}),	-- Ariden's Camp
+			visit_exploration(2560, { coord={ 52.6, 36.8, MAP.DEADWIND_PASS } }),	-- Ariden's Camp
 			exploration(2697),	-- Deadman's Crossing
 			exploration(2562),	-- Karazhan
 			exploration(2938),	-- Sleeping Gorge

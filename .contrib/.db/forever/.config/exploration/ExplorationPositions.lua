@@ -3,7 +3,7 @@
 -- These are NOT in-game harvested points: they are only injected into
 -- ExportDB.ExplorationAreaPositionDB for area/map pairs that have no harvested coordinate.
 -- Do not edit by hand; re-run ExplorationPositions.py to regenerate.
--- [areaID] = { [uiMapID] = { { x, y } } },	-- Area Name (Map [source rect], ...)
+--[areaID] = { [uiMapID] = { { x, y } } },	-- Area Name (Map [source rect], ...)
 local ExplorationAreaPositionDB_Estimated = {
 	[19] = { [1434] = { { 59.9, 18.7 } } },	-- Zul'Gurub (Stranglethorn Vale [hit])
 	[35] = { [1434] = { { 26.2, 74.1 } } },	-- Booty Bay (Stranglethorn Vale [hit])

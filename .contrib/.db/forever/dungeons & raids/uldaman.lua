@@ -52,14 +52,14 @@ instanceroot(239, {	-- Uldaman
 				races = ALLIANCE_ONLY,
 				lvl = 37,
 				groups = {
-					i(7667),	-- Talvash's Phial of Scrying
+					i(7667),	-- Talvash's Phial of Scrying (QI!)
 				},
 			}),
 			q(2340, {	-- Deliver the Gems
 				sourceQuest = 2339,	-- Find the Gems and Power Source
 				providers = {
 					{ "n", 6868 },	-- Jarkal Mossmeld
-					{ "i", 7887 },	-- Necklace and Gem Salvage
+					{ "i", 7887 },	-- Necklace and Gem Salvage (QI!)
 				},
 				coord = { 2.6, 46.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -75,13 +75,13 @@ instanceroot(239, {	-- Uldaman
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/1 Shattered Necklace Ruby
-						provider = { "i", 7669 },	-- Shattered Necklace Ruby
+						provider = { "i", 7669 },	-- Shattered Necklace Ruby (QI!)
 					}),
 					objective(2, {	-- 0/1 Shattered Necklace Sapphire
-						provider = { "i", 7670 },	-- Shattered Necklace Sapphire
+						provider = { "i", 7670 },	-- Shattered Necklace Sapphire (QI!)
 					}),
 					objective(3, {	-- 0/1 Shattered Necklace Topaz
-						provider = { "i", 7671 },	-- Shattered Necklace Topaz
+						provider = { "i", 7671 },	-- Shattered Necklace Topaz (QI!)
 					}),
 				},
 			}),
@@ -96,16 +96,16 @@ instanceroot(239, {	-- Uldaman
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/1 Shattered Necklace Ruby
-						provider = { "i", 7669 },	-- Shattered Necklace Ruby
+						provider = { "i", 7669 },	-- Shattered Necklace Ruby (QI!)
 					}),
 					objective(2, {	-- 0/1 Shattered Necklace Sapphire
-						provider = { "i", 7670 },	-- Shattered Necklace Sapphire
+						provider = { "i", 7670 },	-- Shattered Necklace Sapphire (QI!)
 					}),
 					objective(3, {	-- 0/1 Shattered Necklace Topaz
-						provider = { "i", 7671 },	-- Shattered Necklace Topaz
+						provider = { "i", 7671 },	-- Shattered Necklace Topaz (QI!)
 					}),
 					objective(4, {	-- 0/1 Shattered Necklace Power Source
-						provider = { "i", 7672 },	-- Shattered Necklace Power Source
+						provider = { "i", 7672 },	-- Shattered Necklace Power Source (QI!)
 					}),
 				},
 			}),
@@ -167,7 +167,7 @@ instanceroot(239, {	-- Uldaman
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Obsidian Power Source
-						provider = { "i", 8053 },	-- Obsidian Power Source
+						provider = { "i", 8053 },	-- Obsidian Power Source (QI!)
 					}),
 				},
 			}),
@@ -181,20 +181,20 @@ instanceroot(239, {	-- Uldaman
 					{ "i", 1708, 1 },	-- Sweet Nectar
 				},
 				races = ALLIANCE_ONLY,
-				repeatable = true,
 				lvl = 37,
+				repeatable = true,
 				groups = {
-					i(7667),	-- Talvash's Phial of Scrying
+					i(7667),	-- Talvash's Phial of Scrying (QI!)
 				},
 			}),
 			q(2204, {	-- Restoring the Necklace (1/2)
 				sourceQuest = 2201,	-- Find the Gems
-				provider = { "i", 7667 },	-- Talvash's Phial of Scrying
+				provider = { "i", 7667 },	-- Talvash's Phial of Scrying (QI!)
 				races = ALLIANCE_ONLY,
 				lvl = 37,
 				groups = {
 					objective(1, {	-- 0/1 Shattered Necklace Power Source
-						provider = { "i", 7672 },	-- Shattered Necklace Power Source
+						provider = { "i", 7672 },	-- Shattered Necklace Power Source (QI!)
 					}),
 				},
 			}),
@@ -212,7 +212,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2954,	-- The Stone Watcher
 				providers = {
 					{ "o", 142343 },	-- Uldum Pedestal
-					{ "i", 6064 },	-- Miniature Platinum Discs
+					{ "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				},
 				coord = { 37.7, 81.5, MAP.TANARIS },
 				maps = { MAP.IRONFORGE },
@@ -223,7 +223,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2954,	-- The Stone Watcher
 				providers = {
 					{ "o", 142343 },	-- Uldum Pedestal
-					{ "i", 6064 },	-- Miniature Platinum Discs
+					{ "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				},
 				coord = { 37.7, 81.5, MAP.TANARIS },
 				maps = { MAP.THUNDER_BLUFF },
@@ -234,7 +234,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2963,	-- Portents of Uldum [Alliance]
 				providers = {
 					{ "n", 2916 },	-- Historian Karnik
-					{ "i", 6064 },	-- Miniature Platinum Discs
+					{ "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				},
 				coord = { 77.2, 11.8, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
@@ -244,7 +244,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2965,	-- Portents of Uldum [Horde]
 				providers = {
 					{ "n", 5770 },	-- Nara Wildmane
-					{ "i", 6064 },	-- Miniature Platinum Discs
+					{ "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				},
 				coord = { 75.6, 31.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
@@ -264,8 +264,8 @@ instanceroot(239, {	-- Uldaman
 				qg = 1356,	-- Prospector Stormpike
 				coord = { 74.6, 11.7, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(1139, {	-- The Lost Tablets of Will
 				sourceQuest = 762,	-- An Ambassador of Evil
@@ -275,7 +275,7 @@ instanceroot(239, {	-- Uldaman
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Will
-						provider = { "i", 5824 },	-- Tablet of Will
+						provider = { "i", 5824 },	-- Tablet of Will (QI!)
 					}),
 					i(6723),	-- Medal of Courage
 				},
@@ -286,13 +286,13 @@ instanceroot(239, {	-- Uldaman
 				lvl = 40,
 			}),
 			q(2279, {	-- The Platinum Discs (2/3) [Alliance]
-				provider = { "i", 6064 },	-- Miniature Platinum Discs
+				provider = { "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
 			-- apparently there used to be A/H versions of these quests, then changed to one shared version in Cata?
 			q(2280, {	-- The Platinum Discs (2/3) [Horde]
-				provider = { "i", 6064 },	-- Miniature Platinum Discs
+				provider = { "i", 6064 },	-- Miniature Platinum Discs (QI!)
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
@@ -300,7 +300,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2279,	-- The Platinum Discs (2/3) [Alliance]
 				qg = 5387,	-- High Explorer Magellas <Explorers' League>
 				coord = { 69.9, 18.6, MAP.IRONFORGE },
-				cost = { { "i", 8070, 1 } },	-- Reward Voucher
+				cost = { { "i", 8070, 1 } },	-- Reward Voucher (QI!)
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 				groups = {
@@ -311,7 +311,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2280,	-- The Platinum Discs (2/3) [Horde]
 				qg = 3978,	-- Sage Truthseeker
 				coord = { 34.6, 47.2, MAP.THUNDER_BLUFF },
-				cost = { { "i", 8070, 1 } },	-- Reward Voucher
+				cost = { { "i", 8070, 1 } },	-- Reward Voucher (QI!)
 				races = HORDE_ONLY,
 				lvl = 40,
 				groups = {
@@ -336,7 +336,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2284,	-- Necklace Recovery, Take 2
 				providers = {
 					{ "n", 6912 },	-- Remains of a Paladin
-					{ "i", 7886 },	-- Untranslated Journal
+					{ "i", 7886 },	-- Untranslated Journal (QI!)
 				},
 				races = HORDE_ONLY,
 				lvl = 37,
@@ -345,7 +345,7 @@ instanceroot(239, {	-- Uldaman
 				sourceQuest = 2318,	-- Translating the Journal
 				providers = {
 					{ "n", 6868 },	-- Jarkal Mossmeld
-					{ "i", 7886 },	-- Untranslated Journal
+					{ "i", 7886 },	-- Untranslated Journal (QI!)
 				},
 				coord = { 2.6, 46.0, MAP.BADLANDS },
 				races = HORDE_ONLY,
@@ -405,9 +405,9 @@ instanceroot(239, {	-- Uldaman
 			o(141979, {	-- Ancient Treasure
 				description = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 				modelScale = 3,
-				sym = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
+				sym = { { "select", "itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
 					8029,	-- Plans: Wicked Mithril Blade
-				}},
+				} },
 			}),
 			o(123329, {	-- Baelog's Chest
 				i(7740, {	-- Gni'kiv Medallion
@@ -417,16 +417,16 @@ instanceroot(239, {	-- Uldaman
 			o(125477, {	-- Conspicuous Urn
 				description = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top of the stairs. You will need to kill some stealthed Troggs to get there.",
 				groups = {
-					i(7671),	-- Shattered Necklace Topaz
+					i(7671),	-- Shattered Necklace Topaz (QI!)
 				},
 			}),
 			o(113757, {	-- Shadowforge Cache
 				description = "WARNING: Defeat the Galgann Firehammer first as looting this chest will spawn two dwarven Ambushers.\n\nNOTE: This trigger only occurs once per instance lockout.",
 				groups = {
-					i(7669),	-- Shattered Necklace Ruby
+					i(7669),	-- Shattered Necklace Ruby (QI!)
 				},
 			}),
-			i(7733, {	-- Staff of Prehistoria
+			i(7733, {	-- Staff of Prehistoria (QI!)
 				description = "Use this on the Keystone in the digsite that has the miniature city to open the door to Ironaya.\n\nThis is a reference to the Raiders of the Lost Ark.",
 				cost = {
 					{ "i", 7740, 1 },	-- Gni'kiv Medallion
@@ -436,14 +436,14 @@ instanceroot(239, {	-- Uldaman
 			o(142088, {	-- Tablet of Will
 				description = "Located in the same room as Galgann Firehammer.",
 				groups = {
-					i(5824),	-- Tablet of Will
+					i(5824),	-- Tablet of Will (QI!)
 				},
 			}),
 			o(131474, {	-- The Discs of Norgannon
 				description = "Talk to the Lore Keeper until he has finished talking and then pick up the quest from The Discs of Norgannon again.",
 				modelScale = 3,
 				groups = {
-					i(6064),	-- Miniature Platinum Discs
+					i(6064),	-- Miniature Platinum Discs (QI!)
 				},
 			}),
 		}),
@@ -474,7 +474,7 @@ instanceroot(239, {	-- Uldaman
 		}),
 		n(6912, {	-- Remains of a Paladin
 			groups = {
-				i(7886),	-- Untranslated Journal
+				i(7886),	-- Untranslated Journal (QI!)
 			},
 		}),
 		e(467, {	-- Revelosh
@@ -491,7 +491,7 @@ instanceroot(239, {	-- Uldaman
 		}),
 		o(124371, {	-- Keystone
 			coord = { 50.7, 73.9, MAP.ULDAMAN },
-			cost = { { "i", 7733, 1 } },	-- Staff of Prehistoria
+			cost = { { "i", 7733, 1 } },	-- Staff of Prehistoria (QI!)
 			groups = {
 				objective(1, {	-- Explore the Hidden Chamber
 					questID = 2240,	-- The Hidden Chamber
@@ -510,7 +510,7 @@ instanceroot(239, {	-- Uldaman
 		e(748, {	-- Obsidian Sentinel
 			creatureID = 7023,
 			groups = {
-				i(8053),	-- Obsidian Power Source
+				i(8053),	-- Obsidian Power Source (QI!)
 			},
 		}),
 		e(470, {	-- Ancient Stone Keeper
@@ -532,7 +532,7 @@ instanceroot(239, {	-- Uldaman
 		e(472, {	-- Grimlok
 			creatureID = 4854,
 			groups = {
-				i(7670),	-- Shattered Necklace Sapphire
+				i(7670),	-- Shattered Necklace Sapphire (QI!)
 				i(9416),	-- Grimlock's Charge
 				i(9415),	-- Grimlock's Tribal Vestments
 				i(9414),	-- Oilskin Leggings
@@ -541,7 +541,7 @@ instanceroot(239, {	-- Uldaman
 		e(473, {	-- Archaedas
 			creatureID = 2748,
 			groups = {
-				i(7672),	-- Shattered Necklace Power Source
+				i(7672),	-- Shattered Necklace Power Source (QI!)
 				i(9418),	-- Stoneslayer
 				i(9413),	-- The Rockpounder
 				i(11118),	-- Archaedic Stone

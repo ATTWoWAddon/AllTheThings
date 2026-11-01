@@ -101,50 +101,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			}),
 			q(8897, {	-- Dearest Colara, [Stormwind City]
 				qg = 16005,	-- Lieutenant Jocryn Heldric
-				qi = 21921,	-- Carefully Penned Note
 				coord = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21921,	-- Carefully Penned Note (QI!)
 			}),
 			q(8898, {	-- Dearest Colara, [Ironforge]
 				qg = 16009,	-- Tormek Stoneriver
-				qi = 21920,	-- Creased Letter
 				coord = { 32.4, 66.0, MAP.IRONFORGE },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21920,	-- Creased Letter (QI!)
 			}),
 			q(8899, {	-- Dearest Colara, [Darnassus]
 				qg = 16001,	-- Aldris Fourclouds
-				qi = 21925,	-- Immaculate Letter
 				coord = { 42.0, 42.0, MAP.DARNASSUS },
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				qi = 21925,	-- Immaculate Letter (QI!)
 			}),
 			q(8900, {	-- Dearest Elenia, [Orgrimmar]
 				qg = 16007,	-- Orok Deathbane
-				qi = 21926,	-- Slightly Creased Note
 				coord = { 51.2, 70.2, MAP.ORGRIMMAR },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 21926,	-- Slightly Creased Note (QI!)
 			}),
 			q(8901, {	-- Dearest Elenia, [Thunder Bluff]
 				qg = 16008,	-- Temma of the Wells
-				qi = 22264,	-- Carefully Written Letter
 				coord = { 44.8, 59.6, MAP.THUNDER_BLUFF },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 22264,	-- Carefully Written Letter (QI!)
 			}),
 			q(8902, {	-- Dearest Elenia, [Undercity]
 				qg = 16003,	-- Deathguard Tor
-				qi = 22265,	-- Lovingly Composed Letter
 				coord = { 60.6, 59.6, MAP.TIRISFAL_GLADES },
 				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				qi = 22265,	-- Lovingly Composed Letter (QI!)
 			}),
 			q(8979, {	-- Fenstad's Hunch
 				sourceQuest = 8904,	-- Dangerous Love (H)
@@ -279,7 +279,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 			},
 			description = "These items are contained within the Gifts and Pledges of Adoration.",
 			groups = {
-				i(21813, {	-- Bag of Heart Candies
+				i(21813, {	-- Bag of Candies
 					i(21816),	-- Heart Candy (Be Mine!)
 					i(21817),	-- Heart Candy (I LOVE YOU)
 					i(21818),	-- Heart Candy (I'll follow you all around Azeroth.)
@@ -299,7 +299,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(22261),	-- Love Fool
 				i(22279),	-- Lovely Black Dress
 				i(22200),	-- Silver Shafted Arrow
-				i(22235),	-- Peddlefeet (PET!)
+				i(22235),	-- Truesilver Shafted Arrow (PET!)
 				i(22259),	-- Unbestowed Friendship Bracelet
 			},
 		}),
@@ -309,27 +309,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				i(21833, {	-- Cologne Bottle
 					_drop = { "f", "spellID" },
 				}),
+				i(21815, {	-- Love Token
+					_drop = { "f" },
+				}),
 				i(21829, {	-- Perfume Bottle
 					_drop = { "f", "spellID" },
-				}),
-				i(21815, {	-- Wrinkled Love Token
-					_drop = { "f" },
 				}),
 			},
 		}),
 		n(ZONE_DROPS, {
 			description = "Apply a perfume or cologne buff to your character and speak to a guard in a major city to receive one of these items. Items exclusively found within each container will be listed within.",
 			cost = {
-				{ "i", 21833, 1 },	-- Cologne Bottle
-				{ "i", 21829, 1 },	-- Perfume Bottle
-				{ "i", 21815, 1 },	-- Wrinkled Love Token
+				{ "i", 21833, 1 },	-- 1x Cologne Bottle
+				{ "i", 21815, 1 },	-- 1x Love Token
+				{ "i", 21829, 1 },	-- 1x Perfume Bottle
 			},
 			groups = {
 				i(22262, {	-- Alliance Gift Collection
 					cost = {
-						{ "i", 22133, 1 },	-- Darnassus Gift Collection
-						{ "i", 22132, 1 },	-- Ironforge Gift Collection
-						{ "i", 22131, 1 },	-- Stormwind Gift Collection
+						{ "i", 22133, 1 },	-- 1x Darnassus Gift Collection
+						{ "i", 22132, 1 },	-- 1x Ironforge Gift Collection
+						{ "i", 22131, 1 },	-- 1x Stormwind Gift Collection
 					},
 					maps = { MAP.DARNASSUS, MAP.IRONFORGE, MAP.STORMWIND_CITY },
 					_drop = { "f" },
@@ -337,9 +337,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				}),
 				i(22263, {	-- Horde Gift Collection
 					cost = {
-						{ "i", 22136, 1 },	-- Orgrimmar Gift Collection
-						{ "i", 22135, 1 },	-- Thunder Bluff Gift Collection
-						{ "i", 22134, 1 },	-- Undercity Gift Collection
+						{ "i", 22136, 1 },	-- 1x Orgrimmar Gift Collection
+						{ "i", 22135, 1 },	-- 1x Thunder Bluff Gift Collection
+						{ "i", 22134, 1 },	-- 1x Undercity Gift Collection
 					},
 					maps = { MAP.ORGRIMMAR, MAP.THUNDER_BLUFF, MAP.UNDERCITY },
 					_drop = { "f" },
@@ -349,28 +349,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Darnassus
 				i(22133, {	-- Darnassus Gift Collection
 					cost = {
-						{ "i", 22291, 1 },	-- Box of Woodcrafts
-						{ "i", 22289, 1 },	-- Stack of Cards
-						{ "i", 22290, 1 },	-- Darnassus Pledge Collection
+						{ "i", 22291, 1 },	-- 1x Box of Woodcrafts
+						{ "i", 22290, 1 },	-- 1x Darnassus Pledge Collection
+						{ "i", 22289, 1 },	-- 1x Stack of Cards
 					},
 					maps = { MAP.DARNASSUS },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22290, {	-- Darnassus Pledge Collection
-					cost = { { "i", 22120, 5 } },	-- Pledge of Loyalty: Darnassus
+					cost = { { "i", 22120, 5 } },	-- 5x Pledge of Loyalty: Darnassus
 					maps = { MAP.DARNASSUS },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22291, {	-- Box of Woodcrafts
-					cost = { { "i", 21960, 5 } },	-- Handmade Woodcraft
+					cost = { { "i", 21960, 5 } },	-- 5x Handmade Woodcraft
 					maps = { MAP.DARNASSUS },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22289, {	-- Stack of Cards
-					cost = { { "i", 22140, 5 } },	-- Sentinel's Card
+					cost = { { "i", 22140, 5 } },	-- 5x Sentinel's Card
 					maps = { MAP.DARNASSUS },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
@@ -406,28 +406,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Ironforge
 				i(22132, {	-- Ironforge Gift Collection
 					cost = {
-						{ "i", 22288, 1 },	-- Case of Homebrew
-						{ "i", 22287, 1 },	-- Parcel of Cards
-						{ "i", 22286, 1 },	-- Ironforge Pledge Collection
+						{ "i", 22288, 1 },	-- 1x Case of Homebrew
+						{ "i", 22286, 1 },	-- 1x Ironforge Pledge Collection
+						{ "i", 22287, 1 },	-- 1x Parcel of Cards
 					},
 					maps = { MAP.IRONFORGE },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22286, {	-- Ironforge Pledge Collection
-					cost = { { "i", 22119, 5 } },	-- Pledge of Loyalty: Ironforge
+					cost = { { "i", 22119, 5 } },	-- 5x Pledge of Loyalty: Ironforge
 					maps = { MAP.IRONFORGE },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22288, {	-- Case of Homebrew
-					cost = { { "i", 22173, 5 } },	-- Dwarven Homebrew
+					cost = { { "i", 22173, 5 } },	-- 5x Dwarven Homebrew
 					maps = { MAP.IRONFORGE },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22287, {	-- Parcel of Cards
-					cost = { { "i", 22141, 5 } },	-- Ironforge Guard's Card
+					cost = { { "i", 22141, 5 } },	-- 5x Ironforge Guard's Card
 					maps = { MAP.IRONFORGE },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
@@ -463,28 +463,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Stormwind City
 				i(22131, {	-- Stormwind Gift Collection
 					cost = {
-						{ "i", 22283, 1 },	-- Sack of Homemade Bread
-						{ "i", 22284, 1 },	-- Bundle of Cards
-						{ "i", 22285, 1 },	-- Stormwind Pledge Collection
+						{ "i", 22284, 1 },	-- 1x Bundle of Cards
+						{ "i", 22283, 1 },	-- 1x Sack of Homemade Bread
+						{ "i", 22285, 1 },	-- 1x Stormwind Pledge Collection
 					},
 					maps = { MAP.STORMWIND_CITY },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22285, {	-- Stormwind Pledge Collection
-					cost = { { "i", 22117, 5 } },	-- Pledge of Loyalty: Stormwind
+					cost = { { "i", 22117, 5 } },	-- 5x Pledge of Loyalty: Stormwind
 					maps = { MAP.STORMWIND_CITY },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22283, {	-- Sack of Homemade Bread
-					cost = { { "i", 22176, 5 } },	-- Homemade Bread
+					cost = { { "i", 22176, 5 } },	-- 5x Homemade Bread
 					maps = { MAP.STORMWIND_CITY },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
 				}),
 				i(22284, {	-- Bundle of Cards
-					cost = { { "i", 22143, 5 } },	-- Stormwind Guard's Card
+					cost = { { "i", 22143, 5 } },	-- 5x Stormwind Guard's Card
 					maps = { MAP.STORMWIND_CITY },
 					_drop = { "f", "spellID" },
 					races = ALLIANCE_ONLY,
@@ -520,28 +520,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Orgrimmar
 				i(22136, {	-- Orgrimmar Gift Collection
 					cost = {
-						{ "i", 22292, 1 },	-- Box of Fresh Pies
-						{ "i", 22293, 1 },	-- Package of Cards
-						{ "i", 22294, 1 },	-- Orgrimmar Pledge Collection
+						{ "i", 22292, 1 },	-- 1x Box of Fresh Pies
+						{ "i", 22294, 1 },	-- 1x Orgrimmar Pledge Collection
+						{ "i", 22293, 1 },	-- 1x Package of Cards
 					},
 					maps = { MAP.ORGRIMMAR },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22294, {	-- Orgrimmar Pledge Collection
-					cost = { { "i", 22123, 5 } },	-- Pledge of Loyalty: Orgrimmar
+					cost = { { "i", 22123, 5 } },	-- 5x Pledge of Loyalty: Orgrimmar
 					maps = { MAP.ORGRIMMAR },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22292, {	-- Box of Fresh Pies
-					cost = { { "i", 22175, 5 } },	-- Freshly Baked Pie
+					cost = { { "i", 22175, 5 } },	-- 5x Freshly Baked Pie
 					maps = { MAP.ORGRIMMAR },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22293, {	-- Package of Cards
-					cost = { { "i", 22142, 5 } },	-- Grunt's Card
+					cost = { { "i", 22142, 5 } },	-- 5x Grunt's Card
 					maps = { MAP.ORGRIMMAR },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
@@ -577,28 +577,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Thunder Bluff
 				i(22135, {	-- Thunder Bluff Gift Collection
 					cost = {
-						{ "i", 22296, 1 },	-- Basket of Flowers
-						{ "i", 22295, 1 },	-- Satchel of Cards
-						{ "i", 22297, 1 },	-- Thunder Bluff Pledge Collection
+						{ "i", 22296, 1 },	-- 1x Basket of Flowers
+						{ "i", 22295, 1 },	-- 1x Satchel of Cards
+						{ "i", 22297, 1 },	-- 1x Thunder Bluff Pledge Collection
 					},
 					maps = { MAP.THUNDER_BLUFF },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22297, {	-- Thunder Bluff Pledge Collection
-					cost = { { "i", 22122, 5 } },	-- Pledge of Loyalty: Thunder Bluff
+					cost = { { "i", 22122, 5 } },	-- 5x Pledge of Loyalty: Thunder Bluff
 					maps = { MAP.THUNDER_BLUFF },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22296, {	-- Basket of Flowers
-					cost = { { "i", 22177, 5 } },	-- Freshly Picked Flowers
+					cost = { { "i", 22177, 5 } },	-- 5x Freshly Picked Flowers
 					maps = { MAP.THUNDER_BLUFF },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22295, {	-- Satchel of Cards
-					cost = { { "i", 22144, 5 } },	-- Bluffwatcher's Card
+					cost = { { "i", 22144, 5 } },	-- 5x Bluffwatcher's Card
 					maps = { MAP.THUNDER_BLUFF },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
@@ -634,28 +634,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				-- Undercity
 				i(22134, {	-- Undercity Gift Collection
 					cost = {
-						{ "i", 22298, 1 },	-- Book of Romantic Poems
-						{ "i", 22299, 1 },	-- Sheaf of Cards
-						{ "i", 22300, 1 },	-- Undercity Pledge Collection
+						{ "i", 22298, 1 },	-- 1x Book of Romantic Poems
+						{ "i", 22299, 1 },	-- 1x Sheaf of Cards
+						{ "i", 22300, 1 },	-- 1x Undercity Pledge Collection
 					},
 					maps = { MAP.UNDERCITY },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22300, {	-- Undercity Pledge Collection
-					cost = { { "i", 22121, 5 } },	-- Pledge of Loyalty: Undercity
+					cost = { { "i", 22121, 5 } },	-- 5x Pledge of Loyalty: Undercity
 					maps = { MAP.UNDERCITY },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22298, {	-- Book of Romantic Poems
-					cost = { { "i", 22174, 5 } },	-- Romantic Poem
+					cost = { { "i", 22174, 5 } },	-- 5x Romantic Poem
 					maps = { MAP.UNDERCITY },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,
 				}),
 				i(22299, {	-- Sheaf of Cards
-					cost = { { "i", 22145, 5 } },	-- Guardian's Moldy Card
+					cost = { { "i", 22145, 5 } },	-- 5x Guardian's Moldy Card
 					maps = { MAP.UNDERCITY },
 					_drop = { "f", "spellID" },
 					races = HORDE_ONLY,

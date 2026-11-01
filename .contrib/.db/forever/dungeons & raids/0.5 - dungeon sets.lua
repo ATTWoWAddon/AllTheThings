@@ -12,12 +12,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				9001,	-- Saving the Best for Last [A] (Mage)
 				9014,	-- Saving the Best for Last [H] (Mage)
 				9002,	-- Saving the Best for Last [A] (Paladin)
-				10499,	-- Saving the Best for Last [H] (Paladin)
+				10499,	-- Saving the Best for Last [H] (Paladin) (TODO: verify quest name)
 				9003,	-- Saving the Best for Last [A] (Priest)
 				9009,	-- Saving the Best for Last [H] (Priest)
 				9004,	-- Saving the Best for Last [A] (Rogue)
 				9010,	-- Saving the Best for Last [H] (Rogue)
-				10498,	-- Saving the Best for Last [A] (Shaman)
+				10498,	-- Saving the Best for Last [A] (Shaman) (TODO: verify quest name)
 				9011,	-- Saving the Best for Last [H] (Shaman)
 				9005,	-- Saving the Best for Last [A] (Warlock)
 				9012,	-- Saving the Best for Last [H] (Warlock)
@@ -35,7 +35,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -45,7 +45,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -56,11 +56,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { DRUID },
 			cost = {
-				{ "i", 16714, 1 },	-- Wildheart Bracers
+				{ "i", 16714, 1 },	-- 1x Wildheart Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = { i(22108) },	-- Feralheart Bracers
 		},
@@ -74,12 +74,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
-				{ "i", 16715, 1 },	-- Wildheart Boots
-				{ "i", 16719, 1 },	-- Wildheart Kilt
-				{ "i", 16718, 1 },	-- Wildheart Spaulders
+				{ "i", 16715, 1 },	-- 1x Wildheart Boots
+				{ "i", 16719, 1 },	-- 1x Wildheart Kilt
+				{ "i", 16718, 1 },	-- 1x Wildheart Spaulders
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22107),	-- Feralheart Boots
@@ -103,11 +103,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
-				{ "i", 16716, 1 },	-- Wildheart Belt
-				{ "i", 16717, 1 },	-- Wildheart Gloves
+				{ "i", 16716, 1 },	-- 1x Wildheart Belt
+				{ "i", 16717, 1 },	-- 1x Wildheart Gloves
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22106),	-- Feralheart Belt
@@ -129,11 +129,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { DRUID },
 			cost = {
-				{ "i", 16720, 1 },	-- Wildheart Cowl
-				{ "i", 16706, 1 },	-- Wildheart Vest
+				{ "i", 16720, 1 },	-- 1x Wildheart Cowl
+				{ "i", 16706, 1 },	-- 1x Wildheart Vest
 			},
+			classes = { DRUID },
 			lvl = 58,
 			groups = {
 				i(22109),	-- Feralheart Cowl
@@ -149,7 +149,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -159,7 +159,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -170,11 +170,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { HUNTER },
 			cost = {
-				{ "i", 16681, 1 },	-- Beaststalker's Bindings
+				{ "i", 16681, 1 },	-- 1x Beaststalker's Bindings
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = { i(22011) },	-- Beastmaster's Bindings
 		},
@@ -188,12 +188,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
-				{ "i", 16675, 1 },	-- Beaststalker's Boots
-				{ "i", 16678, 1 },	-- Beaststalker's Pants
-				{ "i", 16679, 1 },	-- Beaststalker's Mantle
+				{ "i", 16675, 1 },	-- 1x Beaststalker's Boots
+				{ "i", 16679, 1 },	-- 1x Beaststalker's Mantle
+				{ "i", 16678, 1 },	-- 1x Beaststalker's Pants
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22061),	-- Beastmaster's Boots
@@ -215,11 +215,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
-				{ "i", 16680, 1 },	-- Beaststalker's Belt
-				{ "i", 16676, 1 },	-- Beaststalker's Gloves
+				{ "i", 16680, 1 },	-- 1x Beaststalker's Belt
+				{ "i", 16676, 1 },	-- 1x Beaststalker's Gloves
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22010),	-- Beastmaster's Belt
@@ -241,11 +241,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { HUNTER },
 			cost = {
-				{ "i", 16677, 1 },	-- Beaststalker's Cap
-				{ "i", 16674, 1 },	-- Beaststalker's Tunic
+				{ "i", 16677, 1 },	-- 1x Beaststalker's Cap
+				{ "i", 16674, 1 },	-- 1x Beaststalker's Tunic
 			},
+			classes = { HUNTER },
 			lvl = 58,
 			groups = {
 				i(22013),	-- Beastmaster's Cap
@@ -261,7 +261,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -271,7 +271,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -282,11 +282,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { MAGE },
 			cost = {
-				{ "i", 16683, 1 },	-- Magister's Bindings
+				{ "i", 16683, 1 },	-- 1x Magister's Bindings
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = { i(22063) },	-- Sorcerer's Bindings
 		},
@@ -297,12 +297,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { MAGE },
 			cost = {
-				{ "i", 16682, 1 },	-- Magister's Boots
-				{ "i", 16687, 1 },	-- Magister's Leggings
-				{ "i", 16689, 1 },	-- Magister's Mantle
+				{ "i", 16682, 1 },	-- 1x Magister's Boots
+				{ "i", 16687, 1 },	-- 1x Magister's Leggings
+				{ "i", 16689, 1 },	-- 1x Magister's Mantle
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22064),	-- Sorcerer's Boots
@@ -326,11 +326,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { MAGE },
 			cost = {
-				{ "i", 16685, 1 },	-- Magister's Belt
-				{ "i", 16684, 1 },	-- Magister's Gloves
+				{ "i", 16685, 1 },	-- 1x Magister's Belt
+				{ "i", 16684, 1 },	-- 1x Magister's Gloves
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22062),	-- Sorcerer's Belt
@@ -352,11 +352,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { MAGE },
 			cost = {
-				{ "i", 16686, 1 },	-- Magister's Crown
-				{ "i", 16688, 1 },	-- Magister's Robes
+				{ "i", 16686, 1 },	-- 1x Magister's Crown
+				{ "i", 16688, 1 },	-- 1x Magister's Robes
 			},
+			classes = { MAGE },
 			lvl = 58,
 			groups = {
 				i(22065),	-- Sorcerer's Crown
@@ -372,17 +372,17 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
-			hordeQuestData = q(10493, {	-- An Earnest Proposition [H]
+			hordeQuestData = q(10493, {	-- An Earnest Proposition [H] (TODO: verify quest name)
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -393,17 +393,17 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { PALADIN },
 			cost = {
-				{ "i", 16722, 1 },	-- Lightforge Bracers
+				{ "i", 16722, 1 },	-- 1x Lightforge Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = { i(22088) },	-- Soulforge Bracers
 		},
 		{	-- Anthion's Parting Words
 			allianceQuestData = q(8954),	-- Anthion's Parting Words [A]
-			hordeQuestData = q(10497),	-- Anthion's Parting Words [H]
+			hordeQuestData = q(10497),	-- Anthion's Parting Words [H] (TODO: verify quest name)
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
@@ -411,12 +411,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PALADIN },
 			cost = {
-				{ "i", 16725, 1 },	-- Lightforge Boots
-				{ "i", 16728, 1 },	-- Lightforge Legplates
-				{ "i", 16729, 1 },	-- Lightforge Spaulders
+				{ "i", 16725, 1 },	-- 1x Lightforge Boots
+				{ "i", 16728, 1 },	-- 1x Lightforge Legplates
+				{ "i", 16729, 1 },	-- 1x Lightforge Spaulders
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22087),	-- Soulforge Boots
@@ -430,17 +430,17 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 			}),
-			hordeQuestData = q(10495, {	-- Just Compensation [H]
+			hordeQuestData = q(10495, {	-- Just Compensation [H] (TODO: verify quest name)
 				sourceQuest = 8978,	-- Return to Mokvar
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			}),
 			maps = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
-			classes = { PALADIN },
 			cost = {
-				{ "i", 16723, 1 },	-- Lightforge Belt
-				{ "i", 16724, 1 },	-- Lightforge Gauntlets
+				{ "i", 16723, 1 },	-- 1x Lightforge Belt
+				{ "i", 16724, 1 },	-- 1x Lightforge Gauntlets
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22086),	-- Soulforge Belt
@@ -453,7 +453,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 			}),
-			hordeQuestData = q(10499, {	-- Saving the Best for Last [H]
+			hordeQuestData = q(10499, {	-- Saving the Best for Last [H] (TODO: verify quest name)
 				sourceQuest = 8998,	-- Back to the Beginning [HORDE]
 				qg = 16012,	-- Mokvar
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
@@ -462,11 +462,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PALADIN },
 			cost = {
-				{ "i", 16727, 1 },	-- Lightforge Helm
-				{ "i", 16726, 1 },	-- Lightforge Breastplate
+				{ "i", 16726, 1 },	-- 1x Lightforge Breastplate
+				{ "i", 16727, 1 },	-- 1x Lightforge Helm
 			},
+			classes = { PALADIN },
 			lvl = 58,
 			groups = {
 				i(22091),	-- Soulforge Helm
@@ -482,7 +482,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -492,7 +492,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -503,11 +503,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { PRIEST },
 			cost = {
-				{ "i", 16697, 1 },	-- Devout Bracers
+				{ "i", 16697, 1 },	-- 1x Devout Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = { i(22079) },	-- Virtuous Bracers
 		},
@@ -522,12 +522,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
-				{ "i", 16691, 1 },	-- Devout Sandals
-				{ "i", 16694, 1 },	-- Devout Skirt
-				{ "i", 16695, 1 },	-- Devout Mantle
+				{ "i", 16695, 1 },	-- 1x Devout Mantle
+				{ "i", 16691, 1 },	-- 1x Devout Sandals
+				{ "i", 16694, 1 },	-- 1x Devout Skirt
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22084),	-- Virtuous Sandals
@@ -550,11 +550,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
-				{ "i", 16696, 1 },	-- Devout Belt
-				{ "i", 16692, 1 },	-- Devout Gloves
+				{ "i", 16696, 1 },	-- 1x Devout Belt
+				{ "i", 16692, 1 },	-- 1x Devout Gloves
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22078),	-- Virtuous Belt
@@ -576,11 +576,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { PRIEST },
 			cost = {
-				{ "i", 16693, 1 },	-- Devout Crown
-				{ "i", 16690, 1 },	-- Devout Robe
+				{ "i", 16693, 1 },	-- 1x Devout Crown
+				{ "i", 16690, 1 },	-- 1x Devout Robe
 			},
+			classes = { PRIEST },
 			lvl = 58,
 			groups = {
 				i(22080),	-- Virtuous Crown
@@ -596,7 +596,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -606,7 +606,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -617,11 +617,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { ROGUE },
 			cost = {
-				{ "i", 16710, 1 },	-- Shadowcraft Bracers
+				{ "i", 16710, 1 },	-- 1x Shadowcraft Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = { i(22004) },	-- Darkmantle Bracers
 		},
@@ -632,12 +632,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { ROGUE },
 			cost = {
-				{ "i", 16711, 1 },	-- Shadowcraft Boots
-				{ "i", 16709, 1 },	-- Shadowcraft Pants
-				{ "i", 16708, 1 },	-- Shadowcraft Spaulders
+				{ "i", 16711, 1 },	-- 1x Shadowcraft Boots
+				{ "i", 16709, 1 },	-- 1x Shadowcraft Pants
+				{ "i", 16708, 1 },	-- 1x Shadowcraft Spaulders
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22003),	-- Darkmantle Boots
@@ -659,11 +659,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { ROGUE },
 			cost = {
-				{ "i", 16713, 1 },	-- Shadowcraft Belt
-				{ "i", 16712, 1 },	-- Shadowcraft Gloves
+				{ "i", 16713, 1 },	-- 1x Shadowcraft Belt
+				{ "i", 16712, 1 },	-- 1x Shadowcraft Gloves
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22006),	-- Darkmantle Gloves
@@ -685,11 +685,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { ROGUE },
 			cost = {
-				{ "i", 16707, 1 },	-- Shadowcraft Cap
-				{ "i", 16721, 1 },	-- Shadowcraft Tunic
+				{ "i", 16707, 1 },	-- 1x Shadowcraft Cap
+				{ "i", 16721, 1 },	-- 1x Shadowcraft Tunic
 			},
+			classes = { ROGUE },
 			lvl = 58,
 			groups = {
 				i(22005),	-- Darkmantle Cap
@@ -699,13 +699,13 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 	}),
 	cl(SHAMAN, {
 		{	-- An Earnest Proposition
-			allianceQuestData = q(10492, {	-- An Earnest Proposition [A]
+			allianceQuestData = q(10492, {	-- An Earnest Proposition [A] (TODO: verify quest name)
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -715,7 +715,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -726,16 +726,16 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { SHAMAN },
 			cost = {
-				{ "i", 16671, 1 },	-- Bindings of Elements
+				{ "i", 16671, 1 },	-- 1x Bindings of Elements
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = { i(22095) },	-- Bindings of The Five Thunders
 		},
 		{	-- Anthion's Parting Words
-			allianceQuestData = q(10496),	-- Anthion's Parting Words [A]
+			allianceQuestData = q(10496),	-- Anthion's Parting Words [A] (TODO: verify quest name)
 			hordeQuestData = q(8957),	-- Anthion's Parting Words [H]
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
@@ -744,12 +744,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
-				{ "i", 16670, 1 },	-- Boots of Elements
-				{ "i", 16668, 1 },	-- Kilt of Elements
-				{ "i", 16669, 1 },	-- Pauldrons of Elements
+				{ "i", 16670, 1 },	-- 1x Boots of Elements
+				{ "i", 16668, 1 },	-- 1x Kilt of Elements
+				{ "i", 16669, 1 },	-- 1x Pauldrons of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22096),	-- Boots of The Five Thunders
@@ -758,7 +758,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 		},
 		{	-- Just Compensation
-			allianceQuestData = q(10494, {	-- Just Compensation [A]
+			allianceQuestData = q(10494, {	-- Just Compensation [A] (TODO: verify quest name)
 				sourceQuest = 8977,	-- Return to Deliana
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
@@ -771,11 +771,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
-				{ "i", 16673, 1 },	-- Cord of Elements
-				{ "i", 16672, 1 },	-- Gauntlets of Elements
+				{ "i", 16673, 1 },	-- 1x Cord of Elements
+				{ "i", 16672, 1 },	-- 1x Gauntlets of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22098),	-- Cord of The Five Thunders
@@ -783,7 +783,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			},
 		},
 		{	-- Saving the Best for Last
-			allianceQuestData = q(10498, {	-- Saving the Best for Last [A]
+			allianceQuestData = q(10498, {	-- Saving the Best for Last [A] (TODO: verify quest name)
 				sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
 				qg = 16013,	-- Deliana
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
@@ -797,11 +797,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { SHAMAN },
 			cost = {
-				{ "i", 16667, 1 },	-- Coif of Elements
-				{ "i", 16666, 1 },	-- Vest of Elements
+				{ "i", 16667, 1 },	-- 1x Coif of Elements
+				{ "i", 16666, 1 },	-- 1x Vest of Elements
 			},
+			classes = { SHAMAN },
 			lvl = 58,
 			groups = {
 				i(22097),	-- Coif of The Five Thunders
@@ -817,7 +817,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -827,7 +827,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -838,11 +838,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { WARLOCK },
 			cost = {
-				{ "i", 16703, 1 },	-- Dreadmist Bracers
+				{ "i", 16703, 1 },	-- 1x Dreadmist Bracers
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = { i(22071) },	-- Deathmist Bracers
 		},
@@ -853,12 +853,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { WARLOCK },
 			cost = {
-				{ "i", 16704, 1 },	-- Dreadmist Sandals
-				{ "i", 16699, 1 },	-- Dreadmist Leggings
-				{ "i", 16701, 1 },	-- Dreadmist Mantle
+				{ "i", 16699, 1 },	-- 1x Dreadmist Leggings
+				{ "i", 16701, 1 },	-- 1x Dreadmist Mantle
+				{ "i", 16704, 1 },	-- 1x Dreadmist Sandals
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22076),	-- Deathmist Sandals
@@ -878,11 +878,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			}),
 			maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
-			classes = { WARLOCK },
 			cost = {
-				{ "i", 16702, 1 },	-- Dreadmist Belt
-				{ "i", 16705, 1 },	-- Dreadmist Wraps
+				{ "i", 16702, 1 },	-- 1x Dreadmist Belt
+				{ "i", 16705, 1 },	-- 1x Dreadmist Wraps
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22070),	-- Deathmist Belt
@@ -904,11 +904,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARLOCK },
 			cost = {
-				{ "i", 16698, 1 },	-- Dreadmist Mask
-				{ "i", 16700, 1 },	-- Dreadmist Robe
+				{ "i", 16698, 1 },	-- 1x Dreadmist Mask
+				{ "i", 16700, 1 },	-- 1x Dreadmist Robe
 			},
+			classes = { WARLOCK },
 			lvl = 58,
 			groups = {
 				i(22074),	-- Deathmist Mask
@@ -924,7 +924,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample (QI!)
 					}),
 				},
 			}),
@@ -934,7 +934,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 				groups = {
 					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample (QI!)
 						crs = {
 							11739,	-- Rock Stalker
 							11738,	-- Sand Skitterer
@@ -945,11 +945,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					}),
 				},
 			}),
-			classes = { WARRIOR },
 			cost = {
-				{ "i", 16735, 1 },	-- Bracers of Valor
+				{ "i", 16735, 1 },	-- 1x Bracers of Valor
 				{ "g", 200000 },	-- 20g
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = { i(21996) },	-- Bracers of Heroism
 		},
@@ -964,12 +964,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARRIOR },
 			cost = {
-				{ "i", 16734, 1 },	-- Boots of Valor
-				{ "i", 16732, 1 },	-- Legplates of Valor
-				{ "i", 16733, 1 },	-- Spaulders of Valor
+				{ "i", 16734, 1 },	-- 1x Boots of Valor
+				{ "i", 16732, 1 },	-- 1x Legplates of Valor
+				{ "i", 16733, 1 },	-- 1x Spaulders of Valor
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = {
 				i(21995),	-- Boots of Heroism
@@ -992,11 +992,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.STRATHOLME,
 				MAP.BLACKROCK_SPIRE,
 			},
-			classes = { WARRIOR },
 			cost = {
-				{ "i", 16736, 1 },	-- Belt of Valor
-				{ "i", 16737, 1 },	-- Gauntlets of Valor
+				{ "i", 16736, 1 },	-- 1x Belt of Valor
+				{ "i", 16737, 1 },	-- 1x Gauntlets of Valor
 			},
+			classes = { WARRIOR },
 			lvl = 58,
 			groups = {
 				i(21994),	-- Belt of Heroism
@@ -1019,8 +1019,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 16731, 1 },	-- Helm of Valor
-				{ "i", 16730, 1 },	-- Breastplate of Valor
+				{ "i", 16730, 1 },	-- 1x Breastplate of Valor
+				{ "i", 16731, 1 },	-- 1x Helm of Valor
 			},
 			classes = { WARRIOR },
 			lvl = 58,
@@ -1039,7 +1039,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Magma Core
-					provider = { "i", 21938 },	-- Magma Core
+					provider = { "i", 21938 },	-- Magma Core (QI!)
 					coord = { 36.0, 56.4, MAP.BURNING_STEPPES },
 					cr = 16043,	-- Magma Lord Bokk
 				}),
@@ -1050,7 +1050,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16014,	-- Mux Manascrambler
 			coord = { 52.4, 27.2, MAP.TANARIS },
 			maps = { MAP.WINTERSPRING },
-			cost = { { "i", 21939, 1 } },	-- Fel Elemental Rod
+			cost = { { "i", 21939, 1 } },	-- 1x Fel Elemental Rod
 			lvl = 58,
 		}),
 		{	-- A Supernatural Device
@@ -1069,8 +1069,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8912,	-- An Earnest Proposition [WARRIOR]
 				},
 				qg = 16013,	-- Deliana
-				qi = 21985,	-- Sealed Blood Container
 				coord = { 43.5, 52.6, MAP.IRONFORGE },
+				qi = 21985,	-- Sealed Blood Container (QI!)
 			}),
 			hordeQuestData = q(8923, {	-- A Supernatural Device [H]
 				sourceQuests = {
@@ -1087,8 +1087,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8920,	-- An Earnest Proposition [WARRIOR]
 				},
 				qg = 16012,	-- Mokvar
-				qi = 22382,	-- Sealed Venom Container
 				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
+				qi = 22382,	-- Sealed Venom Container (QI!)
 			}),
 			maps = { MAP.TANARIS },
 			lvl = 58,
@@ -1096,7 +1096,6 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 		q(8948, {	-- Anthion's Old Friend
 			sourceQuest = 8947,	-- Anthion's Strange Request
 			qg = 16016,	-- Anthion Harmon
-			qi = 21983,	-- Incomplete Banner of Provocation
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			maps = {
 				MAP.DIRE_MAUL,
@@ -1106,16 +1105,17 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				238,	-- Prison of Immol'Thar
 			},
 			lvl = 58,
+			qi = 21983,	-- Incomplete Banner of Provocation
 		}),
 		q(8947, {	-- Anthion's Strange Request
 			sourceQuest = 8946,	-- Proof of Life
 			qg = 16016,	-- Anthion Harmon
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
 			cost = {
-				{ "i", 11371, 3 },	-- Dark Iron Bar
-				{ "i", 12810, 20 },	-- Enchanted Leather
-				{ "i", 14342, 3 },	-- Mooncloth
-				{ "i", 15407, 4 },	-- Cured Rugged Hide
+				{ "i", 15407, 4 },	-- 4x Cured Rugged Hide
+				{ "i", 11371, 3 },	-- 3x Dark Iron Bar
+				{ "i", 12810, 20 },	-- 20x Enchanted Leather
+				{ "i", 14342, 3 },	-- 3x Mooncloth
 			},
 			lvl = 58,
 		}),
@@ -1170,19 +1170,19 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			description = "Bodley is standing right outside the entrance to Blackrock Spire.",
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			lvl = 58,
 		},
 		q(8962, {	-- Components of Importance [WARRIOR, MAGE]
 			sourceQuest = 8961,	-- Three Kings of Flame
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { WARRIOR, MAGE },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Druidical Remains
-					provider = { "i", 22226 },	-- Druidical Remains
+					provider = { "i", 22226 },	-- Druidical Remains (QI!)
 					crs = {
 						11730,	-- Hive'Regal Ambusher
 						11731,	-- Hive'Regal Burrower
@@ -1197,12 +1197,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8961,	-- Three Kings of Flame
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { WARLOCK, DRUID },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Starbreeze Village Relic
-					provider = { "i", 22227 },	-- Starbreeze Village Relic
+					provider = { "i", 22227 },	-- Starbreeze Village Relic (QI!)
 					crs = {
 						7428,	-- Frostmaul Giant
 						7429,	-- Frostmaul Preserver
@@ -1214,12 +1214,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8961,	-- Three Kings of Flame
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { HUNTER, ROGUE },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Brilliant Sword of Zealotry
-					provider = { "i", 22228 },	-- Brilliant Sword of Zealotry
+					provider = { "i", 22228 },	-- Brilliant Sword of Zealotry (QI!)
 					cr = 9448,	-- Scarlet Praetorian
 				}),
 			},
@@ -1228,12 +1228,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8961,	-- Three Kings of Flame
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { PALADIN, PRIEST, SHAMAN },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Soul Ashes of the Banished
-					provider = { "i", 22229 },	-- Soul Ashes of the Banished
+					provider = { "i", 22229 },	-- Soul Ashes of the Banished (QI!)
 				}),
 			},
 		}),
@@ -1262,7 +1262,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/25 Ogre Warbeads
-					provider = { "i", 21982 },	-- Ogre Warbeads
+					provider = { "i", 21982 },	-- Ogre Warbeads (QI!)
 				}),
 				i(22150),	-- Beads of Ogre Might
 				i(22149),	-- Beads of Ogre Mojo
@@ -1281,13 +1281,13 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
-				{ "i", 13512, 1 },	-- Flask of Supreme Power
+				{ "i", 13512, 1 },	-- 1x Flask of Supreme Power
+				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet (QI!)
 			},
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/40 Blackrock Bracer
-					provider = { "i", 22138 },	-- Blackrock Bracer
+					provider = { "i", 22138 },	-- Blackrock Bracer (QI!)
 				}),
 			},
 		}),
@@ -1299,29 +1299,29 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/12 Scorched Ectoplasm
-					provider = { "i", 21937 },	-- Scorched Ectoplasm
+					provider = { "i", 21937 },	-- Scorched Ectoplasm (QI!)
 					crs = {
 						12178,	-- Tortured Druid
 						12179,	-- Tortured Sentinel
 					},
 					cost = {
-						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-						{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+						{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+						{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 					},
 				}),
 				objective(2, {	-- 0/12 Frozen Ectoplasm
-					provider = { "i", 21936 },	-- Frozen Ectoplasm
+					provider = { "i", 21936 },	-- Frozen Ectoplasm (QI!)
 					crs = {
 						7524,	-- Anguished Highborne
 						7523,	-- Suffering Highborne
 					},
 					cost = {
-						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-						{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+						{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+						{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 					},
 				}),
 				objective(3, {	-- 0/12 Stable Ectoplasm
-					provider = { "i", 21935 },	-- Stable Ectoplasm
+					provider = { "i", 21935 },	-- Stable Ectoplasm (QI!)
 					crs = {
 						8542,	-- Death Singer
 						8539,	-- Eyeless Watcher
@@ -1330,8 +1330,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 						8538,	-- Unseen Servant
 					},
 					cost = {
-						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-						{ "i", 9061, 1 },	-- Goblin Rocket Fuel
+						{ "i", 21946, 1 },	-- 1x Ectoplasmic Distiller
+						{ "i", 9061, 1 },	-- 1x Goblin Rocket Fuel
 					},
 				}),
 			},
@@ -1349,7 +1349,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = {
 				objective(1, {	-- 0/20 Bloodkelp
 					providers = {
-						{ "i",  22094 },	-- Bloodkelp
+						{ "i", 22094 },	-- Bloodkelp (QI!)
 						{ "o", 181053 },	-- Basket of Bloodkelp
 					},
 					crs = {
@@ -1399,7 +1399,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				coord = { 34.95, 38.29, MAP.ORGRIMMAR },
 			}),
 			maps = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			lvl = 58,
 		},
 		q(8995, {	-- Mea Culpa, Lord Valthalak
@@ -1410,8 +1410,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22048, 1 },	-- Lord Valthalak's Amulet
-				{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
+				{ "i", 22056, 1 },	-- 1x Brazier of Beckoning [Lord Valthalak]
+				{ "i", 22048, 1 },	-- 1x Lord Valthalak's Amulet (QI!)
 			},
 			cr = 16042,	-- Lord Valthalak
 			lvl = 58,
@@ -1420,12 +1420,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { WARRIOR, ROGUE },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Starbreeze Village Relic
-					provider = { "i", 22227 },	-- Starbreeze Village Relic
+					provider = { "i", 22227 },	-- Starbreeze Village Relic (QI!)
 					crs = {
 						7428,	-- Frostmaul Giant
 						7429,	-- Frostmaul Preserver
@@ -1439,12 +1439,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { DRUID, PALADIN, SHAMAN },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Druidical Remains
-					provider = { "i", 22226 },	-- Druidical Remains
+					provider = { "i", 22226 },	-- Druidical Remains (QI!)
 					crs = {
 						11730,	-- Hive'Regal Ambusher
 						11731,	-- Hive'Regal Burrower
@@ -1461,12 +1461,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.EASTERN_PLAGUELANDS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { PRIEST, MAGE },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Brilliant Sword of Zealotry
-					provider = { "i", 22228 },	-- Brilliant Sword of Zealotry
+					provider = { "i", 22228 },	-- Brilliant Sword of Zealotry (QI!)
 					cr = 9448,	-- Scarlet Praetorian
 				}),
 				i(22192),	-- Bloodkelp Elixir of Dodging
@@ -1477,12 +1477,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			classes = { HUNTER, WARLOCK },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Soul Ashes of the Banished
-					provider = { "i", 22229 },	-- Soul Ashes of the Banished
+					provider = { "i", 22229 },	-- Soul Ashes of the Banished (QI!)
 					crs = {
 						7071,	-- Cursed Paladin
 						7072,	-- Cursed Justicar
@@ -1497,7 +1497,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			sourceQuest = 8945,	-- Dead Man's Plea
 			qg = 16031,	-- Ysida Harmon
 			maps = { MAP.EASTERN_PLAGUELANDS, MAP.STRATHOLME },
-			cost = { { "i", 22139, 1 } },	-- Ysida's Locket
+			cost = { { "i", 22139, 1 } },	-- 1x Ysida's Locket
 			lvl = 58,
 		}),
 		q(8996, {	-- Return to Bodley
@@ -1507,7 +1507,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_MOUNTAIN,
 				MAP.BLACKROCK_SPIRE,
 			},
-			cost = { { "i", 22056, 1 } },	-- Brazier of Beckoning [Lord Valthalak]
+			cost = { { "i", 22056, 1 } },	-- 1x Brazier of Beckoning [Lord Valthalak]
 			lvl = 58,
 			groups = {
 				i(22057),	-- Brazier of Invocation
@@ -1546,7 +1546,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "i", 21986 },	-- Banner of Provocation
 				}),
 				objective(2, {	-- Top Piece of Lord Valthalak's Amulet
-					provider = { "i", 22047 },	-- Top Piece of Lord Valthalak's Amulet
+					provider = { "i", 22047 },	-- Top Piece of Lord Valthalak's Amulet (QI!)
 				}),
 				{
 					itemID = 21986,	-- Banner of Provocation
@@ -1563,16 +1563,16 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			coord = { 52.4, 27.2, MAP.TANARIS },
 			maps = { MAP.BURNING_STEPPES },
 			cost = {
-				{ "i", 16006, 1 },	-- Delicate Arcanite Converter
-				{ "i", 16203, 4 },	-- Greater Eternal Essence
-				{ "i", 13423, 10 },	-- Stonescale Oil
+				{ "i", 16006, 1 },	-- 1x Delicate Arcanite Converter
+				{ "i", 16203, 4 },	-- 4x Greater Eternal Essence
+				{ "i", 13423, 10 },	-- 10x Stonescale Oil
 				{ "g", 400000 },	-- 40g
 			},
 			lvl = 58,
 			groups = {
 				objective(4, {	-- 0/25 Volcanic Ash
 					providers = {
-						{ "i",  22338 },	-- Volcanic Ash
+						{ "i", 22338 },	-- Volcanic Ash (QI!)
 						{ "o", 181098 },	-- Volcanic Ash
 					},
 					cr = 10078,	-- Terrorspark
@@ -1592,13 +1592,13 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				238,	-- Prison of Immol'Thar
 			},
 			cost = {
-				{ "i", 20520, 4 },	-- Dark Rune
-				{ "i", 14344, 8 },	-- Large Brilliant Shard
+				{ "i", 20520, 4 },	-- 4x Dark Rune
+				{ "i", 14344, 8 },	-- 8x Large Brilliant Shard
 			},
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Jeering Spectre's Essence
-					provider = { "i", 22224 },	-- Jeering Spectre's Essence
+					provider = { "i", 22224 },	-- Jeering Spectre's Essence (QI!)
 				}),
 			},
 		}),
@@ -1610,8 +1610,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22049, 1 },	-- 1x Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARRIOR, MAGE },
 			lvl = 58,
@@ -1620,7 +1620,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16080 },	-- Mor Grayhoof
 				}),
 				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 				}),
 			},
 		}),
@@ -1633,8 +1633,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				239,	-- Warpwood Quarter
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
+				{ "i", 22050, 1 },	-- 1x Brazier of Beckoning [Isalien]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARLOCK, DRUID },
 			lvl = 58,
@@ -1643,7 +1643,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16097 },	-- Isalien
 				}),
 				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 				}),
 			},
 		}),
@@ -1652,8 +1652,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien and Sothos]
+				{ "i", 22051, 1 },	-- 1x Brazier of Beckoning [Jarien and Sothos]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { HUNTER, ROGUE },
 			lvl = 58,
@@ -1665,7 +1665,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16102 },	-- Sothos
 				}),
 				objective(3, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 				}),
 			},
 		}),
@@ -1674,8 +1674,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
+				{ "i", 22052, 1 },	-- 1x Brazier of Beckoning [Kormok]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { PALADIN, PRIEST, SHAMAN },
 			lvl = 58,
@@ -1684,7 +1684,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16118 },	-- Kormok
 				}),
 				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet (QI!)
 				}),
 			},
 		}),
@@ -1697,8 +1697,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				239,	-- Warpwood Quarter
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
+				{ "i", 22050, 1 },	-- 1x Brazier of Beckoning [Isalien]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { WARRIOR, ROGUE },
 			lvl = 58,
@@ -1707,11 +1707,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16097 },	-- Isalien
 				}),
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
-					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+					provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 					cost = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
 					},
 				}),
 			},
@@ -1724,8 +1724,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22049, 1 },	-- 1x Brazier of Beckoning [Mor Grayhoof]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { DRUID, PALADIN, SHAMAN },
 			lvl = 58,
@@ -1734,11 +1734,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16080 },	-- Mor Grayhoof
 				}),
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
-					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+					provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 					cost = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
 					},
 				}),
 			},
@@ -1748,8 +1748,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.STRATHOLME },
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
+				{ "i", 22051, 1 },	-- 1x Brazier of Beckoning [Jarien & Sothos]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { PRIEST, MAGE },
 			lvl = 58,
@@ -1761,11 +1761,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16102 },	-- Sothos
 				}),
 				objective(3, {	-- 0/1 Lord Valthalak's Amulet
-					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+					provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 					cost = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
 					},
 				}),
 			},
@@ -1775,8 +1775,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			qg = 16033,	-- Bodley
 			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
 			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
+				{ "i", 22052, 1 },	-- 1x Brazier of Beckoning [Kormok]
+				{ "i", 22115, 1 },	-- 1x Extra-Dimensional Ghost Revealer
 			},
 			classes = { HUNTER, WARLOCK },
 			lvl = 58,
@@ -1785,11 +1785,11 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					provider = { "n", 16118 },	-- Kormok
 				}),
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
-					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+					provider = { "i", 22048 },	-- Lord Valthalak's Amulet (QI!)
 					cost = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+						{ "i", 21984, 1 },	-- 1x Left Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22046, 1 },	-- 1x Right Piece of Lord Valthalak's Amulet (QI!)
+						{ "i", 22047, 1 },	-- 1x Top Piece of Lord Valthalak's Amulet (QI!)
 					},
 				}),
 			},
@@ -1809,17 +1809,17 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.WESTERN_PLAGUELANDS,
 				MAP.TIRISFAL_GLADES,
 			},
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			cost = { { "i", 22115, 1 } },	-- 1x Extra-Dimensional Ghost Revealer
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Incendicite of Incendius
-					provider = { "i", 21987 },	-- Incendicite of Incendius
+					provider = { "i", 21987 },	-- Incendicite of Incendius (QI!)
 				}),
 				objective(2, {	-- 0/1 Ember of Emberseer
-					provider = { "i", 21988 },	-- Ember of Emberseer
+					provider = { "i", 21988 },	-- Ember of Emberseer (QI!)
 				}),
 				objective(3, {	-- 0/1 Cinder of Cynders
-					provider = { "i", 21989 },	-- Cinder of Cynders
+					provider = { "i", 21989 },	-- Cinder of Cynders (QI!)
 				}),
 				objective(4, {	-- 0/1 Hallowed Brazier
 					provider = { "i", 22014 },	-- Hallowed Brazier
