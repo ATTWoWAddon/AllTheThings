@@ -43,7 +43,7 @@ function Assert-Pe([string]$Path,[string]$Kind) {
 function Assert-ArtifactSafe([string]$Root) {
     # These lists describe the entire expected output; unknown files or folders fail closed.
     $allowed=@{
-        Parser=@('Parser.exe','Parser.exe.config','Parser.pdb','Parser.deps.json','Csv.dll','Csv.xml','KeraLua.dll','KeraLua.xml','NLua.dll','NLua.xml','lua54.dll')
+        Parser=@('Parser.exe','Parser.exe.config','Parser.pdb','Parser.deps.json','Csv.dll','Csv.xml','KeraLua.dll','KeraLua.xml','NLua.dll','NLua.xml','lua54.dll','liblua54.dylib','liblua54.so')
         CSVCleaner=@('CSVCleaner.exe','CSVCleaner.dll','CSVCleaner.pdb','CSVCleaner.deps.json','CSVCleaner.runtimeconfig.json')
         Harvester=@('Blizzard API Harvester.exe','Blizzard API Harvester.exe.config','Blizzard API Harvester.pdb')
         ClassicItemDetector=@('Classic Item Detector.exe','Classic Item Detector.exe.config','Classic Item Detector.pdb')
@@ -106,6 +106,11 @@ try {
     $result['checkoutFilesUnchanged'] = $true
     $result['checkoutFileCount'] = $checkoutBefore.Count
     $publish=Join-Path $work 'publish'
+    $nugetRoot=if ($env:NUGET_PACKAGES) { $env:NUGET_PACKAGES } else { Join-Path $env:USERPROFILE '.nuget/packages' }
+    $luaTargets=Join-Path $nugetRoot 'keralua/1.4.11/build/net46/KeraLua.targets'
+    $result['keraluaTargetsCaptured']=Test-Path -LiteralPath $luaTargets -PathType Leaf
+    if ($result.keraluaTargetsCaptured) { Copy-Item -LiteralPath $luaTargets -Destination (Join-Path $evidence 'keralua-1.4.11.targets.log') }
+    $result['publishFileNames']=@(Get-ChildItem -LiteralPath $publish -File -Recurse -Force | Sort-Object FullName | ForEach-Object { $_.FullName.Substring($publish.Length+1).Replace('\','/') })
     Assert-ArtifactSafe $publish
     $result.outputs['publish']=Assert-Outputs $publish
     $manifest=foreach ($f in Get-ChildItem -LiteralPath $publish -Recurse -File -Force | Sort-Object FullName) {
@@ -129,7 +134,7 @@ try {
     }
     # The baseline Parser is uploaded separately for use by the parser matrix.
     # Apply the same closed list to it by reusing the Parser part of the validation below.
-    $allowedParser=@('Parser.exe','Parser.exe.config','Parser.pdb','Parser.deps.json','Csv.dll','Csv.xml','KeraLua.dll','KeraLua.xml','NLua.dll','NLua.xml','lua54.dll')
+    $allowedParser=@('Parser.exe','Parser.exe.config','Parser.pdb','Parser.deps.json','Csv.dll','Csv.xml','KeraLua.dll','KeraLua.xml','NLua.dll','NLua.xml','lua54.dll','liblua54.dylib','liblua54.so')
     foreach ($item in @(Get-ChildItem -LiteralPath (Join-Path $baseline 'Parser') -Force)) {
         if ($item.PSIsContainer -or $item.Name -notin $allowedParser) { throw "Unexpected baseline Parser artifact: $($item.FullName)" }
     }
