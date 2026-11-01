@@ -1516,4 +1516,10 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 	app.HandleEvent("OnDataCached", AllCategories, app:GetDatabaseRoot())
 	AllHiddenCategories = nil
 	AllCategories = nil
+
+	-- TEMP
+	-- Talebound fallback since we skip loading the entire file due to having no way to detect within the file itself
+	if not app.CreateDecor then
+		app.CreateDecor = app.ExtendClass("Item", "Decor", "decorID", {});
+	end
 end)

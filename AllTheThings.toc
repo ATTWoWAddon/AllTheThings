@@ -37,7 +37,8 @@
 src\WoW API Wrappers.lua
 
 # Raw DBs
-db\[Game]\ReferenceDB.lua
+db\[Game]\ReferenceDB.lua [ExcludeLoadGameType wowhack]
+db\Standard\ReferenceDB.lua [AllowLoadGameType wowhack]
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
@@ -93,7 +94,8 @@ src\Modules\Contributor.lua
 #src\__test.lua
 
 # Load Database Files
-db\[Game]\Database.xml
+db\[Game]\Database.xml [ExcludeLoadGameType wowhack]
+db\Standard\Database.xml [AllowLoadGameType wowhack]
 
 # Load object class templates
 src\Classes\base.lua
@@ -134,7 +136,7 @@ src\Classes\Ensemble.lua
 src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
-src\Classes\Decor.lua
+src\Classes\Decor.lua [ExcludeLoadGameType wowhack]
 src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
