@@ -176,3 +176,5 @@ finally {
     [IO.File]::WriteAllText((Join-Path $evidence 'result.json'),($result | ConvertTo-Json -Depth 12),[Text.UTF8Encoding]::new($false))
     Write-Host ('FOLDER_PUBLISH_RESULT=' + (ConvertTo-Json -InputObject $result -Depth 12 -Compress))
 }
+
+exit 0
