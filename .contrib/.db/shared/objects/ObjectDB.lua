@@ -39837,6 +39837,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187560] = {
@@ -39899,6 +39900,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187565] = {
@@ -40591,6 +40593,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187915] = {
@@ -40623,6 +40626,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187917] = {
@@ -40640,6 +40644,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187919] = {
@@ -40657,6 +40662,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187920] = {
@@ -40674,6 +40680,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187921] = {
@@ -40691,6 +40698,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187922] = {
@@ -40708,6 +40716,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187923] = {
@@ -40725,6 +40734,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187924] = {
@@ -40742,6 +40752,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187925] = {
@@ -40759,6 +40770,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187926] = {
@@ -40776,6 +40788,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187927] = {
@@ -40793,6 +40806,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187928] = {
@@ -40810,6 +40824,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187929] = {
@@ -40827,6 +40842,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187930] = {
@@ -40844,6 +40860,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187931] = {
@@ -40861,6 +40878,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187932] = {
@@ -40878,6 +40896,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187933] = {
@@ -40895,6 +40914,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187934] = {
@@ -40912,6 +40932,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187935] = {
@@ -40929,6 +40950,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187936] = {
@@ -40946,6 +40968,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187937] = {
@@ -40963,6 +40986,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187938] = {
@@ -40980,6 +41004,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187939] = {
@@ -40997,6 +41022,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187940] = {
@@ -41014,6 +41040,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187941] = {
@@ -41031,6 +41058,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187942] = {
@@ -41048,6 +41076,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187943] = {
@@ -41065,6 +41094,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187944] = {
@@ -41082,6 +41112,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187945] = {
@@ -41099,6 +41130,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187946] = {
@@ -41116,6 +41148,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[187947] = {
@@ -41133,6 +41166,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187948] = {
@@ -41150,6 +41184,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187949] = {
@@ -41167,6 +41202,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187950] = {
@@ -41184,6 +41220,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187951] = {
@@ -41201,6 +41238,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187952] = {
@@ -41218,6 +41256,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187953] = {
@@ -41235,6 +41274,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187954] = {
@@ -41252,6 +41292,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187955] = {
@@ -41269,6 +41310,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187956] = {
@@ -41286,6 +41328,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187957] = {
@@ -41303,6 +41346,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187958] = {
@@ -41320,6 +41364,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187959] = {
@@ -41337,6 +41382,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187960] = {
@@ -41354,6 +41400,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187961] = {
@@ -41371,6 +41418,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187962] = {
@@ -41388,6 +41436,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187963] = {
@@ -41405,6 +41454,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187964] = {
@@ -41422,6 +41472,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187965] = {
@@ -41439,6 +41490,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187966] = {
@@ -41456,6 +41508,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187967] = {
@@ -41473,6 +41526,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187968] = {
@@ -41490,6 +41544,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187969] = {
@@ -41507,6 +41562,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187970] = {
@@ -41524,6 +41580,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187971] = {
@@ -41541,6 +41598,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187972] = {
@@ -41558,6 +41616,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187973] = {
@@ -41575,6 +41634,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187974] = {
@@ -41592,6 +41652,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187975] = {
@@ -41609,6 +41670,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[187980] = {
@@ -54616,6 +54678,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194033] = {
@@ -54633,6 +54696,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194034] = {
@@ -54650,6 +54714,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194035] = {
@@ -54667,6 +54732,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194036] = {
@@ -54684,6 +54750,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194037] = {
@@ -54701,6 +54768,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194038] = {
@@ -54718,6 +54786,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194039] = {
@@ -54735,6 +54804,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194040] = {
@@ -54752,6 +54822,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194042] = {
@@ -54769,6 +54840,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194043] = {
@@ -54786,6 +54858,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194044] = {
@@ -54803,6 +54876,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194045] = {
@@ -54820,6 +54894,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194046] = {
@@ -54837,6 +54912,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194048] = {
@@ -54854,6 +54930,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[194049] = {
@@ -54871,6 +54948,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[194056] = {
@@ -76391,6 +76469,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207983] = {
@@ -76408,6 +76487,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207984] = {
@@ -76425,6 +76505,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207985] = {
@@ -76442,6 +76523,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207986] = {
@@ -76459,6 +76541,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207987] = {
@@ -76476,6 +76559,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207988] = {
@@ -76493,6 +76577,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207989] = {
@@ -76510,6 +76595,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207990] = {
@@ -76527,6 +76613,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207991] = {
@@ -76544,6 +76631,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207992] = {
@@ -76561,6 +76649,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[207993] = {
@@ -76578,6 +76667,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[207995] = {
@@ -76721,6 +76811,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[208090] = {
@@ -76738,6 +76829,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[208093] = {
@@ -76755,6 +76847,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[208094] = {
@@ -76772,6 +76865,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[208115] = {
@@ -100120,6 +100214,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[217852] = {
@@ -100137,6 +100232,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[218049] = {
@@ -169590,6 +169686,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[259871] = {
@@ -169607,6 +169704,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[259926] = {
@@ -169624,6 +169722,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[259927] = {
@@ -169641,6 +169740,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[259928] = {
@@ -220926,6 +221026,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[316789] = {
@@ -220956,6 +221057,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[316792] = {
@@ -220988,6 +221090,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Альянса",
 			ko = "얼라이언스 화톳불",
 			cn = "联盟篝火",
+			tw = "聯盟篝火",
 		},
 	},
 	[316795] = {
@@ -221005,6 +221108,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[316796] = {
@@ -221022,6 +221126,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[316801] = {
@@ -221039,6 +221144,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Большой костер Орды",
 			ko = "호드 화톳불",
 			cn = "部落篝火",
+			tw = "部落篝火",
 		},
 	},
 	[316821] = {
@@ -311409,6 +311515,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "亮闪闪",
 		},
 	},
+	[421526] = {
+		readable = "Research Notes",
+		text = {
+			en = "Research Notes",
+			mx = "Notas de investigación",
+			de = "Forschungsnotizen",
+			fr = "Notes de recherche",
+			it = "Research Notes",
+			ru = "Исследовательские записи",
+			ko = "연구 일지",
+		},
+	},
 	[421555] = {
 		readable = "Kaldorei Moon Bow",
 		model = 2133380,
@@ -311813,6 +311931,96 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "灵魂之井",
 		},
 	},
+	[423895] = {
+		readable = "Scrolls",
+		text = {
+			en = "Scrolls",
+			es = "Pergaminos",
+			mx = "Pergaminos",
+			de = "Schriftrollen",
+			fr = "Parchemins",
+			it = "Scrolls",
+			pt = "Pergaminhos",
+			ru = "Свитки",
+			ko = "두루마리",
+			cn = "卷轴",
+			tw = "卷軸",
+		},
+	},
+	[423896] = {
+		readable = "Manual",
+		text = {
+			en = "Manual",
+			es = "Manual",
+			mx = "Manual",
+			de = "Handbuch",
+			fr = "Manuel",
+			it = "Manual",
+			pt = "Manual",
+			ru = "Руководство",
+			ko = "안내서",
+			cn = "手册",
+			tw = "手冊",
+		},
+	},
+	[423897] = {
+		readable = "Scrolls",
+		text = {
+			en = "Scrolls",
+			es = "Pergaminos",
+			mx = "Pergaminos",
+			de = "Schriftrollen",
+			fr = "Parchemins",
+			it = "Scrolls",
+			pt = "Pergaminhos",
+			ru = "Свитки",
+			ko = "두루마리",
+		},
+	},
+	[423898] = {
+		readable = "Mysterious Book",
+		text = {
+			en = "Mysterious Book",
+			es = "Libro misterioso",
+			mx = "Libro misterioso",
+			de = "Mysteriöses Buch",
+			fr = "Livre mystérieux",
+			it = "Mysterious Book",
+			pt = "Livro Misterioso",
+			ru = "Загадочная книга",
+			ko = "수수께끼의 책",
+			cn = "神秘的书籍",
+			tw = "秘籍",
+		},
+	},
+	[423899] = {
+		readable = "Scrolls",
+		text = {
+			en = "Scrolls",
+			es = "Pergaminos",
+			mx = "Pergaminos",
+			de = "Schriftrollen",
+			fr = "Parchemins",
+			it = "Scrolls",
+			ru = "Свитки",
+			ko = "두루마리",
+		},
+	},
+	[423900] = {
+		readable = "Waterlogged Book",
+		text = {
+			en = "Waterlogged Book",
+			es = "Libro empapado",
+			mx = "Libro anegado",
+			de = "Durchnässtes Buch",
+			fr = "Livre détrempé",
+			it = "Waterlogged Book",
+			pt = "Livro Encharcado",
+			ru = "Отсыревшая книга",
+			ko = "물에 젖은 책",
+			cn = "浸水的书籍",
+		},
+	},
 	[423958] = {
 		readable = "Arathi Chest",
 		model = 5154231,
@@ -311928,6 +312136,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "떨어뜨린 꾸러미",
 			cn = "掉落的包裹",
 			tw = "掉落的包裹",
+		},
+	},
+	[424002] = {
+		readable = "Kurzen Supply Crate",
+		text = {
+			en = "Kurzen Supply Crate",
+			es = "Cajón de suministros Kurzen",
+			de = "Kurzens Vorratskiste",
+			fr = "Caisse de fournitures de Kurzen",
+			it = "Kurzen Supply Crate",
+			ko = "쿠르젠 보급품 상자",
+			tw = "庫爾森補給箱",
 		},
 	},
 	[424005] = {
@@ -314294,6 +314514,107 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "티탄 제어장치",
 			cn = "泰坦控制台",
 			tw = "泰坦控制臺",
+		},
+	},
+	[441247] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+		},
+	},
+	[441248] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			ru = "Книга",
+			ko = "책",
+		},
+	},
+	[441250] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+		},
+	},
+	[441251] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[441252] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			ru = "Книга",
+			ko = "책",
+		},
+	},
+	[441253] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[441254] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
 		},
 	},
 	[441257] = {
@@ -321401,6 +321722,125 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "놀라의 마지막 소원",
 			cn = "诺拉的遗愿",
 			tw = "諾菈的最後心願",
+		},
+	},
+	[463206] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463207] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463208] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463209] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463211] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+		},
+	},
+	[463212] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463213] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
+		},
+	},
+	[463214] = {
+		readable = "Book",
+		text = {
+			en = "Book",
+			es = "Libro",
+			mx = "Libro",
+			de = "Buch",
+			fr = "Livre",
+			it = "Book",
+			pt = "Livro",
+			ru = "Книга",
+			ko = "책",
+			cn = "书籍",
+			tw = "書籍",
 		},
 	},
 	[463539] = {
@@ -334820,6 +335260,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "格羅法的囤積物",
 		},
 	},
+	[566037] = {
+		readable = "Charred Remains",
+		text = {
+			en = "Charred Remains",
+			mx = "Restos carbonizados",
+			de = "Verkohlte Überreste",
+			fr = "Restes carbonisés",
+			it = "Charred Remains",
+			ru = "Обугленные останки",
+			cn = "被烧焦的残骸",
+		},
+	},
 	[566083] = {
 		readable = "Stormarion Supplies",
 		model = 6391989,
@@ -340049,6 +340501,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "奇異點鉗子",
 		},
 	},
+	[580100] = {
+		readable = "Conqueror's Helm",
+		text = {
+			en = "Conqueror's Helm",
+			de = "Helm des Eroberers",
+			it = "Conqueror's Helm",
+		},
+	},
 	[580106] = {
 		readable = "Void Zeal",
 		model = 166432,
@@ -340202,6 +340662,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "황혼의 폭발물",
 			cn = "暮光军火",
 			tw = "暮光火藥",
+		},
+	},
+	[582187] = {
+		readable = "Petrified Tree",
+		text = {
+			en = "Petrified Tree",
+			de = "Versteinerter Baum",
+			fr = "Arbre pétrifié",
+			it = "Petrified Tree",
 		},
 	},
 	[583965] = {
@@ -340678,6 +341147,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "황금빛 운룡 보물 상자",
 			cn = "金色云端翔龙宝箱",
 			tw = "金色雲蛟寶箱",
+		},
+	},
+	[587299] = {
+		readable = "Tear of Theradras",
+		text = {
+			en = "Tear of Theradras",
+			it = "Tear of Theradras",
 		},
 	},
 	[587307] = {
@@ -342561,6 +343037,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Bloody Note",
 		text = {
 			en = "Bloody Note",
+		},
+	},
+	[617839] = {
+		readable = "Hippogryph Down",
+		text = {
+			en = "Hippogryph Down",
+			es = "Hipogrifo caído",
+			de = "Hippogryphendaunen",
+			fr = "Duvet d’hippogriffe",
+			it = "Hippogryph Down",
+			pt = "Pluma de Hipogrifo",
+			ru = "Пух гиппогрифа",
+			ko = "히포그리프 솜털",
+			cn = "角鹰兽绒毛",
+			tw = "角鷹獸羽絨",
 		},
 	},
 	[617852] = {
@@ -344538,6 +345029,17 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "影月木材",
 		},
 	},
+	[629065] = {
+		readable = "Enchanted Silver Ingot",
+		text = {
+			en = "Enchanted Silver Ingot",
+			de = "Verzauberter Silberbarren",
+			fr = "Lingot d’argent enchanté",
+			it = "Enchanted Silver Ingot",
+			ru = "Слиток зачарованного серебра",
+			tw = "附魔銀錠",
+		},
+	},
 	[629421] = {
 		readable = "Malfunctioning Staff",
 		model = 2059988,
@@ -344617,6 +345119,30 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Portal para o Sacrário de Astalor",
 			ru = "Портал в покои Асталора",
 			ko = "아스탈로르의 성소로 통하는 차원문",
+		},
+	},
+	[630871] = {
+		readable = "Bottle",
+		text = {
+			en = "Bottle",
+			es = "Botella",
+			mx = "Botella",
+			de = "Flasche",
+			fr = "Bouteille",
+			it = "Bottle",
+			ru = "Бутылка",
+		},
+	},
+	[630885] = {
+		readable = "Bottle",
+		text = {
+			en = "Bottle",
+			es = "Botella",
+			mx = "Botella",
+			de = "Flasche",
+			fr = "Bouteille",
+			it = "Bottle",
+			ru = "Бутылка",
 		},
 	},
 	[631027] = {
@@ -344876,6 +345402,22 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "잔알라이의 깃털",
 			cn = "加亚莱的羽毛",
 			tw = "賈納雷之羽",
+		},
+	},
+	[640104] = {
+		readable = "Sprung Trap",
+		text = {
+			en = "Sprung Trap",
+			es = "Trampa activada",
+			mx = "Trampa activada",
+			de = "Ausgelöste Falle",
+			fr = "Piège déclenché",
+			it = "Sprung Trap",
+			pt = "Armadilha Disparada",
+			ru = "Сработавшая ловушка",
+			ko = "용수철 덫",
+			cn = "爆炸陷阱",
+			tw = "發動過的陷阱",
 		},
 	},
 	[641565] = {
@@ -345168,6 +345710,20 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Smoldering Incense",
 			ko = "Smoldering Incense",
 			cn = "Smoldering Incense",
+		},
+	},
+	[645153] = {
+		readable = "Offering Stone",
+		text = {
+			en = "Offering Stone",
+			es = "Piedra de ofrendas",
+			mx = "Piedra de ofrenda",
+			de = "Opfergabenstein",
+			fr = "Pierre à offrandes",
+			it = "Offering Stone",
+			ru = "Камень для даров",
+			ko = "공물석",
+			cn = "供奉石",
 		},
 	},
 	[645181] = {
@@ -347723,6 +348279,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Meeting Stone",
 		},
 	},
+	[650929] = {
+		readable = "The Lost Magic of the Runemasters",
+		text = {
+			en = "The Lost Magic of the Runemasters",
+			it = "The Lost Magic of the Runemasters",
+		},
+	},
 	[651045] = {
 		readable = "Reliquary Stash",
 		model = 7277164,
@@ -348041,6 +348604,35 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Worn Tablet",
 			ko = "Worn Tablet",
 			cn = "Worn Tablet",
+		},
+	},
+	[654846] = {
+		readable = "Lost Journal",
+		text = {
+			en = "Lost Journal",
+			es = "Diario perdido",
+			mx = "Diario perdido",
+			de = "Verschollenes Tagebuch",
+			fr = "Journal perdu",
+			it = "Lost Journal",
+			pt = "Diário Perdido",
+			ru = "Потерянный дневник",
+			ko = "잃어버린 일지",
+		},
+	},
+	[654925] = {
+		readable = "Lost Journal",
+		text = {
+			en = "Lost Journal",
+			es = "Diario perdido",
+			mx = "Diario perdido",
+			de = "Verschollenes Tagebuch",
+			fr = "Journal perdu",
+			it = "Lost Journal",
+			pt = "Diário Perdido",
+			ru = "Потерянный дневник",
+			cn = "遗失的日记",
+			tw = "遺失的日誌",
 		},
 	},
 	[654950] = {
@@ -348441,6 +349033,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "微光墓穴全像圖",
 		},
 	},
+	[656157] = {
+		readable = "Syndicate Footlocker",
+		text = {
+			en = "Syndicate Footlocker",
+			de = "Schließkiste des Syndikats",
+			it = "Syndicate Footlocker",
+			ko = "비밀결사대 사물함",
+		},
+	},
 	[656160] = {
 		readable = "Wilted Peacebloom",
 		model = 219481,
@@ -348455,11 +349056,85 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Stunted Silverleaf",
 		},
 	},
+	[656177] = {
+		readable = "Prickly Pear Fruit",
+		text = {
+			en = "Prickly Pear Fruit",
+			es = "Fruto pera espinosa",
+			mx = "Fruto pera espinosa",
+			de = "Kaktusfeige",
+			fr = "Figue de Barbarie",
+			it = "Prickly Pear Fruit",
+			pt = "Pera Espinhosa",
+			ru = "Колючая груша",
+			cn = "仙人掌果",
+			tw = "仙人掌果",
+		},
+	},
+	[656180] = {
+		readable = "Raider's Bow",
+		text = {
+			en = "Raider's Bow",
+			es = "Arco de asaltante",
+			mx = "Arco de asaltante",
+			de = "Räuberbogen",
+			fr = "Arc d’écumeur",
+			it = "Raider's Bow",
+			pt = "Arco do Saqueador",
+			ru = "Разбойничий лук",
+			tw = "劫掠者之弓",
+		},
+	},
+	[656181] = {
+		readable = "Raider's Battleaxe",
+		text = {
+			en = "Raider's Battleaxe",
+			es = "Hacha de batalla de asaltante",
+			mx = "Hacha de batalla de asaltante",
+			de = "Räuberstreitaxt",
+			fr = "Hache d’armes d’écumeur",
+			it = "Raider's Battleaxe",
+			pt = "Machado de Batalha do Saqueador",
+			ru = "Разбойничий боевой топор",
+			tw = "劫掠者戰鬥斧",
+		},
+	},
+	[656182] = {
+		readable = "Raider's Shield",
+		text = {
+			en = "Raider's Shield",
+			es = "Escudo de asaltante",
+			mx = "Escudo de asaltante",
+			de = "Räuberschild",
+			fr = "Bouclier d’écumeur",
+			it = "Raider's Shield",
+			pt = "Escudo do Saqueador",
+			ru = "Разбойничий щит",
+			cn = "袭击者之盾",
+			tw = "劫掠者之盾",
+		},
+	},
 	[656308] = {
 		readable = "Mistbound",
 		model = 116317,
 		text = {
 			en = "Mistbound",
+		},
+	},
+	[656366] = {
+		readable = "Naxxramas Crystal Fragment",
+		text = {
+			en = "Naxxramas Crystal Fragment",
+			es = "Fragmento de cristal de Naxxramas",
+			mx = "Trozo de cristal de Naxxramas",
+			de = "Kristallfragment von Naxxramas",
+			fr = "Fragment de cristal de Naxxramas",
+			it = "Naxxramas Crystal Fragment",
+			pt = "Fragmento de Cristal de Naxxramas",
+			ru = "Осколок кристалла Наксрамаса",
+			ko = "낙스라마스 수정 파편",
+			cn = "纳克萨玛斯水晶碎片",
+			tw = "納克薩瑪斯水晶碎片",
 		},
 	},
 	[656382] = {
@@ -348520,6 +349195,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Bar Tab Barrel",
 			mx = "Barril de la cuenta del bar",
 			pt = "Barril na Conta",
+		},
+	},
+	[656405] = {
+		readable = "Anastasia's Stash",
+		text = {
+			en = "Anastasia's Stash",
+			de = "Anastasias Versteck",
+			it = "Anastasia's Stash",
 		},
 	},
 	[656486] = {
@@ -349472,6 +350155,19 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Gatehouse Door",
 		},
 	},
+	[660647] = {
+		readable = "Forgotten Loa Idol",
+		text = {
+			en = "Forgotten Loa Idol",
+			mx = "Ídolo loa olvidado",
+			de = "Vergessener Loagötze",
+			fr = "Idole de Loa oubliée",
+			it = "Forgotten Loa Idol",
+			pt = "Imagem do Loa Esquecido",
+			ru = "Забытый идол лоа",
+			cn = "被遗忘的洛阿神像",
+		},
+	},
 	[660724] = {
 		readable = "Gatehouse Shipment",
 		model = 198166,
@@ -349509,6 +350205,33 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Cycles of Morality",
 		},
 	},
+	[660739] = {
+		readable = "Ritual Fire",
+		text = {
+			en = "Ritual Fire",
+			es = "Fuego ritual",
+			de = "Ritualfeuer",
+			fr = "Feu rituel",
+			it = "Ritual Fire",
+			pt = "Fogo Ritualístico",
+			ru = "Ритуальный огонь",
+			cn = "仪式火焰",
+		},
+	},
+	[660930] = {
+		readable = "Pile of Complicated Parts",
+		text = {
+			en = "Pile of Complicated Parts",
+			es = "Montón de piezas complicadas",
+			de = "Haufen komplexer Teile",
+			fr = "Tas de pièces complexes",
+			it = "Pile of Complicated Parts",
+			pt = "Pilha de Peças Complicadas",
+			ru = "Груда изощренных деталей",
+			ko = "복잡한 부품 더미",
+			cn = "一堆错综复杂的零件",
+		},
+	},
 	[660964] = {
 		readable = "Misplaced Packages",
 		model = 198085,
@@ -349531,6 +350254,38 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "Ulantu's Scout Pack",
 		},
 	},
+	[661092] = {
+		readable = "Speargrass",
+		text = {
+			en = "Speargrass",
+			es = "Apiácea",
+			mx = "Césped lanza",
+			de = "Speergras",
+			fr = "Herbe polisson",
+			it = "Speargrass",
+			pt = "Gramalança",
+			ru = "Копье-трава",
+			ko = "창풀",
+			cn = "矛草",
+			tw = "長矛草",
+		},
+	},
+	[661093] = {
+		readable = "Cattail",
+		text = {
+			en = "Cattail",
+			es = "Enea",
+			mx = "Totora",
+			de = "Katzenschwanz",
+			fr = "Roseau",
+			it = "Cattail",
+			pt = "Taboa",
+			ru = "Камыш",
+			ko = "부들",
+			cn = "香蒲",
+			tw = "香蒲",
+		},
+	},
 	[661347] = {
 		readable = "Slithersoul Spoils",
 		text = {
@@ -349543,6 +350298,62 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Slithersoul Spoils",
 			ko = "Slithersoul Spoils",
 			cn = "Slithersoul Spoils",
+		},
+	},
+	[661446] = {
+		readable = "Smooth Boulder",
+		text = {
+			en = "Smooth Boulder",
+			es = "Roca suave",
+			mx = "Roca lisa",
+			de = "Glatter Felsen",
+			fr = "Rocher lisse",
+			it = "Smooth Boulder",
+			pt = "Pedregulho Liso",
+			ru = "Гладкий валун",
+			ko = "매끈한 바위",
+			cn = "光滑的巨石",
+			tw = "光滑巨石",
+		},
+	},
+	[661448] = {
+		readable = "Smooth Boulder",
+		text = {
+			en = "Smooth Boulder",
+			es = "Roca suave",
+			mx = "Roca lisa",
+			de = "Glatter Felsen",
+			fr = "Rocher lisse",
+			it = "Smooth Boulder",
+			pt = "Pedregulho Liso",
+			ru = "Гладкий валун",
+			ko = "매끈한 바위",
+			cn = "光滑的巨石",
+			tw = "光滑巨石",
+		},
+	},
+	[661449] = {
+		readable = "Smooth Boulder",
+		text = {
+			en = "Smooth Boulder",
+			es = "Roca suave",
+			mx = "Roca lisa",
+			de = "Glatter Felsen",
+			fr = "Rocher lisse",
+			it = "Smooth Boulder",
+			pt = "Pedregulho Liso",
+			ru = "Гладкий валун",
+			ko = "매끈한 바위",
+			cn = "光滑的巨石",
+			tw = "光滑巨石",
+		},
+	},
+	[661516] = {
+		readable = "Thoroughly Scavenged Supplies",
+		text = {
+			en = "Thoroughly Scavenged Supplies",
+			de = "Gründlich geplünderte Vorräte",
+			it = "Thoroughly Scavenged Supplies",
 		},
 	},
 	[661548] = {
@@ -349581,6 +350392,28 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 343863,
 		text = {
 			en = "Mountaineer Ylva's Body",
+		},
+	},
+	[665282] = {
+		readable = "Excavation Tools",
+		text = {
+			en = "Excavation Tools",
+			es = "Herramientas de excavación",
+			de = "Ausgrabungswerkzeuge",
+			fr = "Outils d’excavation",
+			it = "Excavation Tools",
+			ru = "Инструменты для раскопок",
+		},
+	},
+	[665289] = {
+		readable = "Discarded Fishing Toolbox",
+		text = {
+			en = "Discarded Fishing Toolbox",
+			es = "Caja de herramientas de pesca abandonada",
+			de = "Weggeworfene Kiste mit Angelzubehör",
+			fr = "Boîte de pêche abandonnée",
+			it = "Discarded Fishing Toolbox",
+			ru = "Выброшенный набор рыболова",
 		},
 	},
 	[665411] = {
@@ -349629,6 +350462,34 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 203114,
 		text = {
 			en = "Unadorned Stake",
+		},
+	},
+	[668482] = {
+		readable = "Gnarlpine Totem",
+		text = {
+			en = "Gnarlpine Totem",
+			es = "Tótem Tuercepinos",
+			mx = "Tótem de Tuercepinos",
+			de = "Totem der Knarzklauen",
+			fr = "Totem pin-tordu",
+			it = "Gnarlpine Totem",
+			pt = "Totem Masca-pinho",
+			ru = "Тотем племени Кривой Сосны",
+			ko = "나무옹이일족 토템",
+		},
+	},
+	[668493] = {
+		readable = "Gnarlpine Totem",
+		text = {
+			en = "Gnarlpine Totem",
+			es = "Tótem Tuercepinos",
+			mx = "Tótem de Tuercepinos",
+			de = "Totem der Knarzklauen",
+			fr = "Totem pin-tordu",
+			it = "Gnarlpine Totem",
+			pt = "Totem Masca-pinho",
+			ru = "Тотем племени Кривой Сосны",
+			ko = "나무옹이일족 토템",
 		},
 	},
 	[668589] = {
@@ -349811,6 +350672,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "Funerary Inscription",
 		},
 	},
+	[669176] = {
+		readable = "Gleaming Crescent Pendant",
+		text = {
+			en = "Gleaming Crescent Pendant",
+			mx = "Colgante curvo resplandeciente",
+			de = "Leuchtender Mondsichelanhänger",
+			fr = "Pendentif de lune resplendissante",
+			it = "Gleaming Crescent Pendant",
+			pt = "Pingente de Crescente Rebrilhante",
+			ru = "Сияющая подвеска-полумесяц",
+			ko = "반짝이는 초승달 펜던트",
+			cn = "闪亮的弯月坠饰",
+			tw = "發光的新月墜飾",
+		},
+	},
 	[669308] = {
 		readable = "Abandoned Tablet",
 		model = 6212409,
@@ -349921,6 +350797,123 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Snow",
 		},
 	},
+	[670348] = {
+		readable = "Homebrew Hops",
+		text = {
+			en = "Homebrew Hops",
+			de = "Selbstgezogener Hopfen",
+			fr = "Houblon artisanal",
+			it = "Homebrew Hops",
+			ru = "Домашний хмель",
+			tw = "自釀啤酒花",
+		},
+	},
+	[670771] = {
+		readable = "Khaz Modan Timber",
+		text = {
+			en = "Khaz Modan Timber",
+			es = "Madera de Khaz Modan",
+			de = "Holz aus Khaz Modan",
+			fr = "Bois de construction de Khaz Modan",
+			it = "Khaz Modan Timber",
+			pt = "Madeira Serrada de Khaz Modan",
+			ru = "Каз-моданская древесина",
+			ko = "카즈 모단 목재",
+		},
+	},
+	[670774] = {
+		readable = "Khaz Modan Iron",
+		text = {
+			en = "Khaz Modan Iron",
+			es = "Hierro de Khaz Modan",
+			de = "Eisen aus Khaz Modan",
+			fr = "Fer de Khaz Modan",
+			it = "Khaz Modan Iron",
+			pt = "Ferro de Khaz Modan",
+			ru = "Каз-моданское железо",
+			ko = "카즈 모단 철",
+		},
+	},
+	[670962] = {
+		readable = "Nord'el",
+		text = {
+			en = "Nord'el",
+			es = "Nord'el",
+			de = "Nord'el",
+			fr = "Nord’el",
+			it = "Nord'el",
+			pt = "Nord'el",
+			ru = "Норд'эль",
+			ko = "노르델",
+		},
+	},
+	[671154] = {
+		readable = "Dry Branch",
+		text = {
+			en = "Dry Branch",
+			es = "Rama seca",
+			mx = "Rama seca",
+			de = "Trockener Ast",
+			fr = "Branche sèche",
+			it = "Dry Branch",
+			pt = "Galho Seco",
+			ru = "Сухая ветка",
+			ko = "마른 가지",
+			cn = "干枯的树枝",
+			tw = "乾樹枝",
+		},
+	},
+	[671481] = {
+		readable = "Attack Plan: Menethil Harbor",
+		text = {
+			en = "Attack Plan: Menethil Harbor",
+			es = "Plan de ataque: Puerto de Menethil",
+			de = "Angriffsplan: Hafen von Menethil",
+			fr = "Plan d’attaque : port de Menethil",
+			it = "Attack Plan: Menethil Harbor",
+			pt = "Plano de Ataque: Porto de Menethil",
+			ru = "План нападения на Гавань Менетилов",
+			ko = "공격 계획: 메네실 항구",
+		},
+	},
+	[671483] = {
+		readable = "Attack Plan: Southshore",
+		text = {
+			en = "Attack Plan: Southshore",
+			es = "Plan de ataque: Costasur",
+			de = "Angriffsplan: Southshore",
+			fr = "Plan d’attaque : Austrivage",
+			it = "Attack Plan: Southshore",
+			pt = "Plano de Ataque: Costa Sul",
+			ru = "План нападения на Южнобережье",
+			ko = "공격 계획: 사우스쇼어",
+		},
+	},
+	[671486] = {
+		readable = "Attack Plan: Thelsamar",
+		text = {
+			en = "Attack Plan: Thelsamar",
+			es = "Plan de ataque: Thelsamar",
+			de = "Angriffsplan: Thelsamar",
+			fr = "Plan d’attaque : Thelsamar",
+			it = "Attack Plan: Thelsamar",
+			pt = "Plano de Ataque: Thelsamar",
+			ru = "План нападения на Телсамар",
+			ko = "공격 계획: 텔사마",
+		},
+	},
+	[671487] = {
+		readable = "Attack Plan: Ironforge",
+		text = {
+			en = "Attack Plan: Ironforge",
+			es = "Plan de ataque: Forjaz",
+			de = "Angriffsplan: Ironforge",
+			fr = "Plan d’attaque : Forgefer",
+			it = "Attack Plan: Ironforge",
+			ru = "План нападения на Стальгорн",
+			ko = "공격 계획: 아이언포지",
+		},
+	},
 	[671498] = {
 		readable = "Venom-Worn Coffer",
 		model = 1382579,
@@ -349972,11 +350965,96 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "金塔爾的聖匣",
 		},
 	},
+	[671518] = {
+		readable = "Tattered Spellbook",
+		text = {
+			en = "Tattered Spellbook",
+			es = "Libro de hechizos andrajoso",
+			de = "Zerfleddertes Zauberbuch",
+			fr = "Grimoire en lambeaux",
+			it = "Tattered Spellbook",
+			pt = "Grimório Esfarrapado",
+			ru = "Изодранная книга заклинаний",
+			ko = "너덜너덜한 마법책",
+		},
+	},
 	[671661] = {
 		readable = "Ylva's Helm",
 		model = 197871,
 		text = {
 			en = "Ylva's Helm",
+		},
+	},
+	[671892] = {
+		readable = "Razormaw Eggs",
+		text = {
+			en = "Razormaw Eggs",
+			es = "Huevos de Tajobuche",
+			de = "Scharfzahneier",
+			fr = "Œufs de tranchegueule",
+			it = "Razormaw Eggs",
+			ru = "Яйца острозуба",
+			ko = "칼날아귀 알",
+		},
+	},
+	[671931] = {
+		readable = "Razormaw Egg",
+		text = {
+			en = "Razormaw Egg",
+			es = "Huevo de Tajobuche",
+			de = "Scharfzahnei",
+			fr = "Œuf de tranchegueule",
+			it = "Razormaw Egg",
+			ru = "Яйцо острозуба",
+			ko = "칼날아귀 알",
+		},
+	},
+	[672330] = {
+		readable = "Dragonmaw Armaments",
+		text = {
+			en = "Dragonmaw Armaments",
+			es = "Armamento Faucedraco",
+			de = "Waffen der Dragonmaw",
+			fr = "Armement gueule-de-dragon",
+			it = "Dragonmaw Armaments",
+			ru = "Снаряжение Драконьей Пасти",
+			ko = "용아귀 무장",
+		},
+	},
+	[672334] = {
+		readable = "Dragonmaw Armaments",
+		text = {
+			en = "Dragonmaw Armaments",
+			es = "Armamento Faucedraco",
+			de = "Waffen der Dragonmaw",
+			fr = "Armement gueule-de-dragon",
+			it = "Dragonmaw Armaments",
+			ru = "Снаряжение Драконьей Пасти",
+			ko = "용아귀 무장",
+		},
+	},
+	[672336] = {
+		readable = "Dragonmaw Armaments",
+		text = {
+			en = "Dragonmaw Armaments",
+			es = "Armamento Faucedraco",
+			de = "Waffen der Dragonmaw",
+			fr = "Armement gueule-de-dragon",
+			it = "Dragonmaw Armaments",
+			ru = "Снаряжение Драконьей Пасти",
+			ko = "용아귀 무장",
+		},
+	},
+	[672337] = {
+		readable = "Dragonmaw Armaments",
+		text = {
+			en = "Dragonmaw Armaments",
+			es = "Armamento Faucedraco",
+			de = "Waffen der Dragonmaw",
+			fr = "Armement gueule-de-dragon",
+			it = "Dragonmaw Armaments",
+			ru = "Снаряжение Драконьей Пасти",
+			ko = "용아귀 무장",
 		},
 	},
 	[672508] = {
@@ -350002,6 +351080,30 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Thundering Hexmask",
 		text = {
 			en = "Thundering Hexmask",
+		},
+	},
+	[673085] = {
+		readable = "Tarantula Egg",
+		text = {
+			en = "Tarantula Egg",
+			es = "Huevo de tarántula",
+			de = "Tarantelei",
+			fr = "Œuf de tarentule",
+			it = "Tarantula Egg",
+			ru = "Яйцо тарантула",
+			ko = "타란툴라 알",
+		},
+	},
+	[673101] = {
+		readable = "Tarantula Egg",
+		text = {
+			en = "Tarantula Egg",
+			es = "Huevo de tarántula",
+			de = "Tarantelei",
+			fr = "Œuf de tarentule",
+			it = "Tarantula Egg",
+			ru = "Яйцо тарантула",
+			ko = "타란툴라 알",
 		},
 	},
 	[673137] = {
@@ -350032,11 +351134,34 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			es = "Baúl pesado pródigo",
 		},
 	},
+	[673206] = {
+		readable = "Stolen Explosives",
+		text = {
+			en = "Stolen Explosives",
+			es = "Explosivos robados",
+			de = "Gestohlener Sprengstoff",
+			it = "Stolen Explosives",
+			ru = "Украденная взрывчатка",
+			ko = "도난당한 폭발물",
+		},
+	},
 	[673376] = {
 		readable = "Meat Haunch",
 		ignorewowhead = true,
 		text = {
 			en = "Meat Haunch",
+		},
+	},
+	[673378] = {
+		readable = "Oracle Tree Bark",
+		text = {
+			en = "Oracle Tree Bark",
+			es = "Corteza de árbol de oráculo",
+			mx = "Corteza de árbol de oráculo",
+			de = "Orakelbaumrinde",
+			fr = "Écorce d’arbre oracle",
+			it = "Oracle Tree Bark",
+			ko = "예언자 나무껍질",
 		},
 	},
 	[673384] = {
@@ -350051,6 +351176,17 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		ignorewowhead = true,
 		text = {
 			en = "Grain Sack",
+		},
+	},
+	[673390] = {
+		readable = "Weapon Rack",
+		text = {
+			en = "Weapon Rack",
+			es = "Expositor de armas",
+			de = "Waffenständer",
+			fr = "Râtelier d’armes",
+			it = "Weapon Rack",
+			ru = "Оружейная стойка",
 		},
 	},
 	[673399] = {
@@ -350081,6 +351217,81 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 2199319,
 		text = {
 			en = "Library",
+		},
+	},
+	[673431] = {
+		readable = "Vine-Wrapped Scroll",
+		text = {
+			en = "Vine-Wrapped Scroll",
+			mx = "Vine-Wrapped Scroll",
+			de = "Vine-Wrapped Scroll",
+			fr = "Vine-Wrapped Scroll",
+			it = "Vine-Wrapped Scroll",
+			pt = "Vine-Wrapped Scroll",
+			cn = "藤蔓缠绕的卷轴",
+			tw = "Vine-Wrapped Scroll",
+		},
+	},
+	[673476] = {
+		readable = "Abandoned Training Weapon",
+		text = {
+			en = "Abandoned Training Weapon",
+			es = "Arma de entrenamiento abandonada",
+			mx = "Arma de entrenamiento abandonada",
+			de = "Zurückgelassene Übungswaffe",
+			fr = "Arme d’entraînement abandonnée",
+			it = "Abandoned Training Weapon",
+			pt = "Arma de Treino Abandonada",
+			ru = "Брошенное тренировочное оружие",
+			ko = "버려진 훈련용 무기",
+			cn = "被遗弃的训练武器",
+			tw = "被遺棄的訓練武器",
+		},
+	},
+	[673494] = {
+		readable = "Shredder Operation Instructions",
+		text = {
+			en = "Shredder Operation Instructions",
+			de = "Schredderbedienungsanleitung",
+			fr = "Notice d’utilisation du déchiqueteur",
+			it = "Shredder Operation Instructions",
+			pt = "Instruções de Operação do Retalhador",
+			ru = "Инструкция по управлению крошшером",
+		},
+	},
+	[673496] = {
+		readable = "Barrens Operations Best Practices",
+		text = {
+			en = "Barrens Operations Best Practices",
+			de = "Bewährte Praktiken für Operationen im Brachland",
+			fr = "Bonnes pratiques des opérations menées dans les Tarides",
+			it = "Barrens Operations Best Practices",
+			pt = "Melhores Práticas para Operações nos Sertões",
+			ru = "Рекомендации по ведению бизнеса в Степях",
+		},
+	},
+	[673497] = {
+		readable = "One \"Gerenzo\", of Stonetalon",
+		text = {
+			en = "One \"Gerenzo\", of Stonetalon",
+			de = "Ein gewisser \"Gerenzo\" aus dem Steinkrallengebirge",
+			fr = "Un certain « Gerenzo » des Serres-Rocheuses",
+			it = "One \"Gerenzo\", of Stonetalon",
+			pt = "Um Tal \"Gerenzo\", das Torres de Pedra",
+			ru = "Некий \"Геренцо\" из Когтистых гор",
+		},
+	},
+	[673515] = {
+		readable = "Memory of Valor",
+		text = {
+			en = "Memory of Valor",
+			es = "Recuerdo de valor",
+			de = "Erinnerung an die Valors",
+			fr = "Souvenir des Valor",
+			it = "Memory of Valor",
+			ru = "Воспоминание о доблести",
+			ko = "밸러 가문의 추억",
+			tw = "勇氣回憶",
 		},
 	},
 	[673637] = {
@@ -350127,6 +351338,25 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Relíquia Ossificada",
 			ru = "Окостеневшая реликвия",
 			ko = "골화 성물",
+		},
+	},
+	[674124] = {
+		readable = "Traveler's Cache",
+		text = {
+			en = "Traveler's Cache",
+			de = "Truhe des Reisenden",
+			fr = "Cache de voyageur",
+			it = "Traveler's Cache",
+		},
+	},
+	[674126] = {
+		readable = "Hidden Stash",
+		text = {
+			en = "Hidden Stash",
+			de = "Versteckte Vorräte",
+			fr = "Planque secrète",
+			it = "Hidden Stash",
+			tw = "隱密藏匿物",
 		},
 	},
 	[675629] = {
@@ -350514,6 +351744,39 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Mislaid Curiosity",
 		},
 	},
+	[678585] = {
+		readable = "Essene's Waterskin",
+		text = {
+			en = "Essene's Waterskin",
+			de = "Essenes Wasserschlauch",
+			fr = "Outre d’Essène",
+			it = "Essene's Waterskin",
+			ru = "Бурдюк Эссин",
+			ko = "에센의 물주머니",
+		},
+	},
+	[678590] = {
+		readable = "Essene's Spellbook",
+		text = {
+			en = "Essene's Spellbook",
+			de = "Essenes Zauberbuch",
+			fr = "Grimoire d’Essène",
+			it = "Essene's Spellbook",
+			ru = "Книга заклинаний Эссин",
+			ko = "에센의 마법책",
+		},
+	},
+	[687845] = {
+		readable = "Essene's Necklace",
+		text = {
+			en = "Essene's Necklace",
+			de = "Essenes Halskette",
+			fr = "Collier d’Essène",
+			it = "Essene's Necklace",
+			ru = "Ожерелье Эссин",
+			ko = "에센의 목걸이",
+		},
+	},
 	[689304] = {
 		readable = "Ancestral Bounty",
 		text = {
@@ -350538,6 +351801,48 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		ignorewowhead = true,
 		text = {
 			en = "Broken Tablet",
+		},
+	},
+	[693669] = {
+		readable = "Weapon Piece",
+		text = {
+			en = "Weapon Piece",
+			mx = "Parte de arma",
+			de = "Waffenteile",
+			fr = "Fragment d’arme",
+			it = "Weapon Piece",
+			pt = "Parte de Arma",
+			ru = "Деталь оружия",
+			cn = "Weapon Piece",
+			tw = "Weapon Piece",
+		},
+	},
+	[693670] = {
+		readable = "Strange Debris",
+		text = {
+			en = "Strange Debris",
+			mx = "Escombros extraños",
+			de = "Seltsame Trümmer",
+			fr = "Débris étranges",
+			it = "Strange Debris",
+			pt = "Destroços Estranhos",
+			ru = "Странные обломки",
+			cn = "Strange Debris",
+			tw = "Strange Debris",
+		},
+	},
+	[693674] = {
+		readable = "Abandoned Dagger",
+		text = {
+			en = "Abandoned Dagger",
+			mx = "Daga abandonada",
+			de = "Zurückgelassener Dolch",
+			fr = "Dague abandonnée",
+			it = "Abandoned Dagger",
+			pt = "Adaga Abandonada",
+			ru = "Брошенный кинжал",
+			cn = "Abandoned Dagger",
+			tw = "Abandoned Dagger",
 		},
 	},
 	[694772] = {
@@ -350603,11 +351908,80 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Chair",
 		},
 	},
+	[694855] = {
+		readable = "Overgrown Duskweed",
+		text = {
+			en = "Overgrown Duskweed",
+			es = "Floraocaso frondoso",
+			mx = "Overgrown Duskweed",
+			de = "Überwachsenes Dämmerkraut",
+			fr = "Brunelle envahissante",
+			it = "Overgrown Duskweed",
+			pt = "Erva-poente Exuberante",
+			ru = "Разросшийся закатнолист",
+			ko = "무성한 어스름풀",
+			cn = "Overgrown Duskweed",
+			tw = "生長過盛的暮色草",
+		},
+	},
+	[694895] = {
+		readable = "Glowing Crystal Fragment",
+		text = {
+			en = "Glowing Crystal Fragment",
+			es = "Fragmento de cristal resplandeciente",
+			mx = "Glowing Crystal Fragment",
+			de = "Leuchtendes Kristallfragment",
+			fr = "Fragment de cristal luminescent",
+			it = "Glowing Crystal Fragment",
+			ru = "Светящийся осколок кристалла",
+		},
+	},
+	[694934] = {
+		readable = "Fallen Log",
+		text = {
+			en = "Fallen Log",
+			es = "Tronco caído",
+			de = "Umgefallener Baumstamm",
+			fr = "Rondin tombé",
+			it = "Fallen Log",
+			pt = "Tora Caída",
+			ru = "Упавшее бревно",
+			ko = "떨어진 통나무",
+			cn = "Fallen Log",
+			tw = "Fallen Log",
+		},
+	},
 	[695222] = {
 		readable = "Coalbeard's Rifle",
 		ignorewowhead = true,
 		text = {
 			en = "Coalbeard's Rifle",
+		},
+	},
+	[695223] = {
+		readable = "Sunhammer's Rifle",
+		text = {
+			en = "Sunhammer's Rifle",
+			es = "Rifle de Martisol",
+			de = "Sonnenhammers Gewehr",
+			fr = "Fusil de Solemartel",
+			it = "Sunhammer's Rifle",
+			pt = "Rifle da Martélion",
+			ru = "Винтовка Солнцемолот",
+			ko = "선해머의 소총",
+			tw = "Sunhammer's Rifle",
+		},
+	},
+	[695277] = {
+		readable = "Stoneanvil's Rifle",
+		text = {
+			en = "Stoneanvil's Rifle",
+			es = "Rifle de Yunquepiedra",
+			de = "Steinamboss’ Gewehr",
+			fr = "Fusil de Pierrenclume",
+			it = "Stoneanvil's Rifle",
+			ru = "Винтовка Камнегорна",
+			ko = "스톤앤빌의 소총",
 		},
 	},
 	[696116] = {
@@ -354277,11 +355651,36 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Dwarven District",
 		},
 	},
+	[697118] = {
+		readable = "Windstone Formation",
+		text = {
+			en = "Windstone Formation",
+			es = "Formación de piedras de viento",
+			de = "Windsteinformation",
+			fr = "Formation de pierre des vents",
+			it = "Windstone Formation",
+			ru = "Огромный ветрокамень",
+			tw = "風石岩層",
+		},
+	},
 	[701639] = {
 		readable = "Amani Tablet",
 		text = {
 			en = "Amani Tablet",
 			pt = "Tabuleta Amani",
+		},
+	},
+	[701788] = {
+		readable = "Knife",
+		text = {
+			en = "Knife",
+			es = "Cuchillo",
+			mx = "Cuchillo",
+			de = "Messer",
+			fr = "Couteau",
+			it = "Knife",
+			ru = "Нож",
+			ko = "칼",
 		},
 	},
 	[705929] = {
@@ -354320,6 +355719,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Mislaid Treasure",
 		text = {
 			en = "Mislaid Treasure",
+		},
+	},
+	[706187] = {
+		readable = "Tear of Tilloa",
+		text = {
+			en = "Tear of Tilloa",
+			it = "Tear of Tilloa",
 		},
 	},
 	[9000000] = {
@@ -355207,6 +356613,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Sentinax Portal",
 			cn = "森提纳克斯号传送门",
+			tw = "Sentinax Portal",
 		},
 	},
 	[1278968766] = {
