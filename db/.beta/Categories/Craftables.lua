@@ -17348,9 +17348,12 @@ i(267401)}}),
 h(-679,{
 de(14589,{itemID=262459,spellID=1268852}),
 de(14588,{itemID=262458,spellID=1268851}),
-de(19229,{itemID=268038,spellID=1281355}),
-de(19231,{itemID=268039,spellID=1281356}),
-de(19234,{itemID=268041,spellID=1281357}),
+de(19229,{itemID=268038,spellID=1281355,g={
+i(268032,{b=1,f=55,lvl=70,spellID=1281332})}}),
+de(19231,{itemID=268039,spellID=1281356,g={
+i(268033,{b=1,f=55,lvl=70,spellID=1281333})}}),
+de(19234,{itemID=268041,spellID=1281357,g={
+i(268034,{b=1,f=55,lvl=70,spellID=1281334})}}),
 de(14580,{itemID=262450,spellID=1268843}),
 de(14585,{itemID=262455,spellID=1268848}),
 de(14598,{itemID=262468,spellID=1268862}),

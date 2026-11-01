@@ -3601,7 +3601,7 @@ i(12184,{coords={
 i(4461,{description="Drops from raptors ranging from level 30 to 40.",maps={1417,1434,1445}}),
 i(12203,{coords={
 [1448]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood."}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={242,250,317,1419,1435,1451,1452}}),
+i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={242,317,1419,1435,1451,1452}}),
 i(10285,{crs={1821,1822,1824,5856,5857},description="Drops from spiders in the level bracket 45-60."}),
 i(5635,{description="Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",maps={279,301,310,1413,1421,1424,1431,1432,1433,1436,1437,1439,1440,1441,1442}}),
 i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={230,235,280,301,1417,1425,1443,1444}}),

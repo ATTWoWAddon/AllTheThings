@@ -1618,7 +1618,6 @@ _.Modules.Events.SetEventInformation(1181, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=12,weekday=7,year=2026},{hour=0,minute=0,month=9,monthDay=13,weekday=1,year=2026})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=4,weekday=6,year=2026},{hour=0,minute=0,month=9,monthDay=14,weekday=2,year=2026},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=10,monthDay=2,weekday=6,year=2026},{hour=0,minute=0,month=10,monthDay=12,weekday=2,year=2026},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=6,weekday=6,year=2026},{hour=0,minute=0,month=11,monthDay=16,weekday=2,year=2026},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=12,monthDay=4,weekday=6,year=2026},{hour=0,minute=0,month=12,monthDay=14,weekday=2,year=2026},{remappedID=375}),
@@ -1628,7 +1627,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=4,monthDay=2,weekday=6,year=2027},{hour=0,minute=0,month=4,monthDay=12,weekday=2,year=2027},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=5,monthDay=7,weekday=6,year=2027},{hour=0,minute=0,month=5,monthDay=17,weekday=2,year=2027},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=6,monthDay=4,weekday=6,year=2027},{hour=0,minute=0,month=6,monthDay=14,weekday=2,year=2027},{remappedID=375}),
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=7,monthDay=2,weekday=6,year=2027},{hour=0,minute=0,month=7,monthDay=12,weekday=2,year=2027},{remappedID=374})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=7,monthDay=2,weekday=6,year=2027},{hour=0,minute=0,month=7,monthDay=12,weekday=2,year=2027},{remappedID=374}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=8,monthDay=6,weekday=6,year=2027},{hour=0,minute=0,month=8,monthDay=16,weekday=2,year=2027},{remappedID=375})
 })
 -- Filter Database Module
 _.FilterConstants = {

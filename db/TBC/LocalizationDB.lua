@@ -1685,7 +1685,6 @@ _.Modules.Events.SetEventInformation(1181, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=12,weekday=7,year=2026},{hour=0,minute=0,month=9,monthDay=13,weekday=1,year=2026})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=6,weekday=1,year=2026},{hour=0,minute=0,month=9,monthDay=13,weekday=1,year=2026},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=10,monthDay=4,weekday=1,year=2026},{hour=0,minute=0,month=10,monthDay=11,weekday=1,year=2026},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=1,weekday=1,year=2026},{hour=0,minute=0,month=11,monthDay=8,weekday=1,year=2026},{remappedID=376}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=12,monthDay=6,weekday=1,year=2026},{hour=0,minute=0,month=12,monthDay=13,weekday=1,year=2026},{remappedID=374}),
@@ -1695,7 +1694,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=4,monthDay=4,weekday=1,year=2027},{hour=0,minute=0,month=4,monthDay=11,weekday=1,year=2027},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=5,monthDay=2,weekday=1,year=2027},{hour=0,minute=0,month=5,monthDay=9,weekday=1,year=2027},{remappedID=376}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=6,monthDay=6,weekday=1,year=2027},{hour=0,minute=0,month=6,monthDay=13,weekday=1,year=2027},{remappedID=374}),
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=7,monthDay=4,weekday=1,year=2027},{hour=0,minute=0,month=7,monthDay=11,weekday=1,year=2027},{remappedID=375})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=7,monthDay=4,weekday=1,year=2027},{hour=0,minute=0,month=7,monthDay=11,weekday=1,year=2027},{remappedID=375}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=8,monthDay=1,weekday=1,year=2027},{hour=0,minute=0,month=8,monthDay=8,weekday=1,year=2027},{remappedID=376})
 })
 -- Filter Database Module
 _.FilterConstants = {

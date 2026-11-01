@@ -9678,7 +9678,7 @@ i(29335,{b=1,f=51}),
 i(29333,{b=1,f=51})}}),
 q(10180,{coords={
 [111]={{58,15.2}}},isBreadcrumb=1,lvl=15,nextQuests={10097,10098,29605},qgs={19045}}),
-q(11011,{c={11},coords={
+q(11011,{awp=20100,c={11},coords={
 [102]={{80.2,65.2}}},qgs={22832},repeatable=1,rwp=40001,sourceQuests={11001},u=2,g={
 i(32449,{b=1,spellID=40098,u=2})}}),
 q(29607,{awp=40300,crs={19428},description="Dealer Vijaad appears upon defeating Darkweaver Syth.",lvl=15,qgs={54847},qis={72480}}),

@@ -1406,7 +1406,6 @@ localize(L.HEADER_NAMES, {
 	[-103] = "Expansion Pre-Launch",
 	[-210] = FACTION_ALLIANCE,
 	[-211] = FACTION_HORDE,
-	[-212] = COMBATLOG_FILTER_STRING_NEUTRAL_UNITS,
 	[-213] = BATTLE_PET_SOURCE_10,
 	[-215] = ITEM_QUALITY1_DESC,
 	[-217] = ITEM_QUALITY4_DESC,
@@ -1520,6 +1519,7 @@ localize(L.HEADER_NAMES, {
 	[-736] = BATTLE_PET_SOURCE_8,
 	[-782] = "CN Promotions (Classic)",
 	[-800] = "Alliance Outrunners",
+	[-813] = "Tricks and Treats of Northrend",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1627,7 +1627,6 @@ localize(L.HEADER_ICONS, {
 	[-103] = 134289,
 	[-210] = 374217,
 	[-211] = 374221,
-	[-212] = 374222,
 	[-213] = _.asset("category_ingameshop"),
 	[-215] = 135030,
 	[-217] = 135028,
@@ -1741,6 +1740,7 @@ localize(L.HEADER_ICONS, {
 	[-736] = _.asset("category_promo"),
 	[-782] = _.asset("expansion_wotlk"),
 	[-800] = 236449,
+	[-813] = 133982,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -3855,7 +3855,10 @@ local ObjectNames = {
 	[185519] = "Mana-Tombs Stasis Chamber",
 	[185522] = "Shaffar's Stasis Chamber",
 	[185541] = "Raven Stone Fragment",
+	[185547] = "Shrine of the Eagle",
 	[185549] = "Monstrous Kaliri Egg",
+	[185551] = "Shrine of the Hawk",
+	[185553] = "Shrine of the Falcon",
 	[185557] = "Ancient Gem Vein",
 	[185562] = "Vim'gol's Vile Grimoire",
 	[185566] = "Southfury Moonstone",
@@ -5846,7 +5849,10 @@ local ObjectModels = {
 	[185302] = 189528,
 	[185497] = 193396,
 	[185541] = 202595,
+	[185547] = 190022,
 	[185549] = 200974,
+	[185551] = 190022,
+	[185553] = 190022,
 	[185557] = 219422,
 	[185562] = 200900,
 	[185566] = 198719,
@@ -7532,6 +7538,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Zwielicht-Assistent",
 	[-660] = "Zwielicht-Duo",
 	[-661] = "Zwielichtzone",
+	[-813] = "Süßes oder Saures in Nordend",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -8631,7 +8638,11 @@ localize(ObjectNames, {
 	[185497] = "Sumpfblüte",
 	[185519] = "Stasiskammer der Managruft",
 	[185522] = "Shaffars Stasiskammer",
+	[185541] = "Rabensteinfragment",
+	[185547] = "Schrein des Adlers",
 	[185549] = "Monströses Kaliriei",
+	[185551] = "Schrein des Habichts",
+	[185553] = "Schrein des Falken",
 	[185557] = "Uralte Edelsteinader",
 	[185562] = "Vim'gols übler Zauberfoliant",
 	[185566] = "Mondstein des Südstroms",
@@ -9425,6 +9436,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Aide Crépusculaire",
 	[-660] = "Duo Crépusculaire",
 	[-661] = "Chroniques des Crépusculaires",
+	[-813] = "Bonbons et blagues du Norfendre",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-47] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -10547,7 +10559,11 @@ localize(ObjectNames, {
 	[185497] = "Fleur des tourbières",
 	[185519] = "Chambre de stase de Tombes-mana",
 	[185522] = "Chambre de stase de Shaffar",
+	[185541] = "Fragment de pierre du Corbeau",
+	[185547] = "Sanctuaire de l'Aigle",
 	[185549] = "Œuf de kaliri monstrueux",
+	[185551] = "Sanctuaire du Faucon",
+	[185553] = "Sanctuaire de l'Epervier",
 	[185557] = "Ancien filon de gemmes",
 	[185562] = "Grimoire infâme de Vim'gol",
 	[185566] = "Pierre de lune de la Furie-du-sud",
@@ -11016,6 +11032,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Assist Crepuscolare",
 	[-660] = "Doppietta Crepuscolare",
 	[-661] = "Zona del Crepuscolo",
+	[-813] = "Dolcetti o scherzetti di Nordania",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-341] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -11729,7 +11746,10 @@ localize(ObjectNames, {
 	[185302] = "Cassa di Fei Fei",
 	[185497] = "Fiordipalude",
 	[185522] = "Camera di Stasi degli Shaffar",
+	[185547] = "Santuario dell'Aquila",
 	[185549] = "Uovo di Kaliri Mostruoso",
+	[185551] = "Santuario del Falco",
+	[185553] = "Santuario del Falcone",
 	[185557] = "Antica Vena di Gemme",
 	[185562] = "Vil Grimorio di Vim'gol",
 	[185567] = "Teschio di Drago di Grulloc",
@@ -12253,6 +12273,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Assistente do Crepúsculo",
 	[-660] = "Dupla do Crepúsculo",
 	[-661] = "Além da Imaginação",
+	[-813] = "Gostosuras e Travessuras de Nortúndria",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -13286,7 +13307,10 @@ localize(ObjectNames, {
 	[185497] = "Flor do Pântano",
 	[185519] = "Câmara de Estase das Tumbas de Mana",
 	[185522] = "Câmara de Estase de Shaffar",
+	[185547] = "Altar da Águia",
 	[185549] = "Ovo de Kaliri Monstruoso",
+	[185551] = "Altar do Gavião",
+	[185553] = "Altar do Falcão",
 	[185557] = "Veio de Gemas Antigo",
 	[185562] = "Grimório Vil de Vim'gol",
 	[185567] = "Crânio de Dragão de Grulloc",
@@ -14440,6 +14464,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "Сумеречные помощники",
 	[-660] = "Сумеречный дуэт",
 	[-661] = "Зона сумерек",
+	[-813] = "'Конфета или жизнь' в Нордсколе",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -15570,7 +15595,10 @@ localize(ObjectNames, {
 	[185519] = "стазисную камеру Гробниц маны",
 	[185522] = "Палата стазиса Шаффара",
 	[185541] = "Фрагмент Вороньего камня",
+	[185547] = "Святилище Орла",
 	[185549] = "Яйцо чудовищной калири",
+	[185551] = "Святилище Ястреба",
+	[185553] = "Святилище Сокола",
 	[185557] = "Древняя самоцветная жила",
 	[185562] = "Гримуар Вимгола Зловещего",
 	[185566] = "Лунный камень из реки Строптивая",
@@ -16080,6 +16108,7 @@ localize(L.HEADER_NAMES, {
 	[-659] = "황혼의 지원",
 	[-660] = "황혼의 2인조",
 	[-661] = "황혼 지대",
+	[-813] = "노스렌드의 할로윈",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-59] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -17118,7 +17147,11 @@ localize(ObjectNames, {
 	[185497] = "수렁꽃",
 	[185519] = "마나 무덤의 잠금 장치를",
 	[185522] = "샤파르의 감금실",
+	[185541] = "까마귀석 조각",
+	[185547] = "독수리 제단",
 	[185549] = "거대한 칼리리 알",
+	[185551] = "참매 제단",
+	[185553] = "수리매 제단",
 	[185557] = "고대 보석 광맥",
 	[185562] = "비열한 빔골의 흑마법서",
 	[185567] = "그룰록의 용 해골",
@@ -18401,6 +18434,7 @@ localize(L.HEADER_NAMES, {
 	[-661] = "Dimensión Desconocida",
 	[-694] = "Mejora de la edición del aniversario de Burning Crusade Classic™",
 	[-723] = "Incursiones elementales",
+	[-813] = "Truco o trato en Rasganorte",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es posible que deba estar activo un día festivo específico para que pueda completar las cosas referenciadas en esta sección.",
@@ -19542,7 +19576,11 @@ localize(ObjectNames, {
 	[185497] = "Cardo de Mantar",
 	[185519] = "Cámara de Estasis de las Tumbas de Maná",
 	[185522] = "Cámara de Estasis de Shaffar",
+	[185541] = "Trozo de la piedra del cuervo",
+	[185547] = "Santuario del águila",
 	[185549] = "Huevo de kaliri monstruoso",
+	[185551] = "Santuario del halcón",
+	[185553] = "Santuario del falcón",
 	[185557] = "Filón de gemas antiguo",
 	[185562] = "Grimorio de Vim'gol el Vil",
 	[185566] = "Piedra lunar de Furia del Sur",
@@ -21614,6 +21652,7 @@ localize(L.HEADER_NAMES, {
 	[-723] = "元素入侵",
 	[-782] = "中国促销（经典）",
 	[-800] = "联盟斥候",
+	[-813] = "诺森德的糖果",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -22693,7 +22732,9 @@ localize(ObjectNames, {
 	[185497] = "沼泽花",
 	[185519] = "法力陵墓静止间",
 	[185522] = "沙法尔的静止间",
+	[185547] = "雄鹰神殿",
 	[185549] = "巨大的卡利鸟蛋",
+	[185553] = "猎鹰神殿",
 	[185557] = "上古宝石矿脉",
 	[185562] = "维姆高尔的魔典",
 	[185577] = "斯古洛克之魂",
@@ -23948,6 +23989,7 @@ localize(L.HEADER_NAMES, {
 	[-660] = "暮光雙人組",
 	[-661] = "暮光地帶",
 	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
+	[-813] = "北裂境之不給糖就搗蛋",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "你可能需要在特定節日的活動中才能完成本節中的事物。",
@@ -24742,7 +24784,9 @@ localize(ObjectNames, {
 	[185226] = "卡巴寶箱",
 	[185233] = "博士的保險箱",
 	[185302] = "菲菲的貯藏所",
+	[185547] = "戰鷹石龕",
 	[185549] = "巨大的卡里瑞蛋",
+	[185553] = "獵隼石龕",
 	[185557] = "遠古寶石礦脈",
 	[185861] = "惡魔砲彈堆",
 	[185877] = "虛空聚晶礦床",

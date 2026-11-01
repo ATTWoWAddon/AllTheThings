@@ -8129,7 +8129,7 @@ i(29335,{b=1,f=51,q=3}),
 i(29333,{b=1,f=51,q=3})}}),
 q(10180,{coords={
 [1955]={{58,15.2}}},isBreadcrumb=1,lvl=65,nextQuests={10097,10098},qgs={19045}}),
-q(11011,{c={11},coords={
+q(11011,{awp=20100,c={11},coords={
 [1946]={{80.2,65.2}}},lvl=70,phase=18,qgs={22832},repeatable=1,rwp=40001,sourceQuests={11001},g={
 i(32449,{b=1,q=1})}}),
 q(10098,{coords={
@@ -8195,7 +8195,7 @@ i(27916,{b=1,f=36,lvl=68,q=3,rwp=50004}),
 i(27917,{b=1,f=54,lvl=68,q=3,rwp=50004}),
 i(25461,{q=1,rwp=70100}),
 i(27633,{q=1})}}),
-e(542,{cost={{"i",32449,1}},description="This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",npcID=23035,phase=18,sourceQuests={11001},g={
+e(542,{awp=20100,cost={{"i",32449,1}},description="This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",npcID=23035,phase=18,sourceQuests={11001},g={
 ach(883,{providers={{"i",32768}}}),
 mnt(41252,{b=1,itemID=32768,lvl=70,q=4}),
 s(143125,32781,{b=1,f=20,lvl=70,q=3}),

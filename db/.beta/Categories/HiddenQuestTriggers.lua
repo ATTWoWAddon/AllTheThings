@@ -7492,6 +7492,12 @@ hqt(91432),
 hqt(88770),
 hqt(94952),
 hqt(94426)})}),
+ah(2838,{type="fa",g={
+hqt(97456,{isWeekly=1}),
+hqt(99246,{isWeekly=1}),
+hqt(99251,{isWeekly=1}),
+hqt(96495),
+hqt(97316)}}),
 h(-671,{
 h(-45,{
 hqt(93872,{isWeekly=1}),
