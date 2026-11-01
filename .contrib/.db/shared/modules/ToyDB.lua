@@ -1,4 +1,6 @@
 local Items = ItemDBConditional;
+--- Marks the item as a toy in the conditional item database.
+---@param itemID ItemID # Item ID to mark as a toy.
 local i = function(itemID)
 	-- This is necessary because Blizzard sometimes tells us that things are Toys when they are not Toys.
 	-- So we cannot trust them and have to do it ourselves.

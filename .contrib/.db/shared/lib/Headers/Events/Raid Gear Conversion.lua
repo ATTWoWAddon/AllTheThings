@@ -23,6 +23,10 @@ RAID_GEAR_CONVERSION = createHeader({
 });
 
 -- allows creating an Item which has a cost assignment from the other variants of that item
+--- Builds an LFR item with providers for other raid difficulties.
+---@param itemID ItemID # LFR item identifier.
+---@param t? ATTObject|ATTObjectArray # Optional item fields or child groups.
+---@return ATTItemObject # Item with Normal, Heroic, and Mythic variant providers.
 i_RAID_GEAR_CONVERSION = function(itemID, t)
 	-- This is expected to be an LFR variant of the Item
 	local item = i(itemID, t)
