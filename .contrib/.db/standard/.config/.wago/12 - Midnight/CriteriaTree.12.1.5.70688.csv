@@ -120665,7 +120665,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 231701,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 231702,,231701,5,0,116682,0,0
 231703,"Flames re-lit",0,0,4,0,0,0
-231704,"Flames re-lit",231703,4,0,116684,0,0
+231704,"Flames re-lit",231703,4,0,119405,0,0
 231705,"The Prisoner vanquished",0,0,4,0,0,0
 231706,"The Prisoner vanquished",231705,1,0,116685,0,0
 231711,"Arenas won after using crowd control",0,2,5,0,0,4096
