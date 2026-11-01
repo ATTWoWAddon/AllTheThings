@@ -19,9 +19,13 @@ root(ROOTS.Instances, {
 					coord = { 42.1, 58.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 					groups = {
 						filter(MOUNTS, bubbleDownFiltered({
+							-- #if BEFORE 12.1.5
 							cost = { { "i", 275436, 1 } },	-- Timelost Saddle
+							-- #else
+							cost = { { "i", 279396, 1 } },	-- Timelost Saddle
+							-- #endif
 							timeline = { ADDED_12_0_5 },
-						},FILTERFUNC_itemID,{
+						}, FILTERFUNC_itemID, {
 							-- 'Keystone Master', and 'Keystone Legend' Mounts from previous seasons
 							i(174836),	-- Awakened Mindborer (MOUNT!) [BFA KSM S4]
 							i(182717),	-- Sintouched Deathwalker (MOUNT!) [SL KSM S1]

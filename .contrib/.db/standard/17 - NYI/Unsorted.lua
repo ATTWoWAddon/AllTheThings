@@ -12,7 +12,6 @@ root(ROOTS.Unsorted, {
 			i(275732),	-- A Rat-Sized Portion of Onion
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
-			i(279396),	-- Timelost Saddle
 			i(281176),	-- Sous Chef's Jacket
 			i(281177),	-- Pastry Chef's Jacket
 			i(281178),	-- Sauce Chef's Jacket

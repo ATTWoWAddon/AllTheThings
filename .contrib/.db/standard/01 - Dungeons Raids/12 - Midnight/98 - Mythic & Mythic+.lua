@@ -333,7 +333,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			q(98483, {	-- Accolades for the Venomous Contender
 				sourceAchievement = 63690,	-- Midnight Keystone Myth: Season 2
 				timeline = { ADDED_12_1_5, REMOVED_12_2_0 },
-				groups = { i(275436), }	-- Timelost Saddle
+				groups = { i(279396), }	-- Timelost Saddle
 			}),
 		}),
 		n(REWARDS, sharedData({ timeline = { ADDED_12_0_5, REMOVED_12_1_0 } }, {
