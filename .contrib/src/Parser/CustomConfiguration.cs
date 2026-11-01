@@ -62,6 +62,10 @@ namespace ATT
             {
                 string configText = File.ReadAllText(filepath, Encoding.UTF8);
                 object jsonObj = MiniJSON.Json.Deserialize(configText);
+                if (jsonObj is null)
+                {
+                    Framework.LogWarn($"Config File is not proper JSON!", filepath);
+                }
                 _root.ApplyData(jsonObj);
             }
             catch (Exception ex)
