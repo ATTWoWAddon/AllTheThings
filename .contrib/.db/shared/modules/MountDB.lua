@@ -2323,7 +2323,6 @@ i(250762, 0);		-- Felfueled Memento of the Abyss
 i(250106, 1250287);	-- Floestrider Crest-Horn
 i(239686, 1229286);	-- Forgotten Fel Batt
 i(250726, 1251257);	-- Leyfrost Manasabe
-i(250928, 1251689);	-- Murky Turkey
 i(250727, 1251264);	-- Nightwell Manasabr
 i(250927, 1251685);	-- Quirky Turkeyer
 i(239666, 1229278);	-- Risen Fel Bat
@@ -2572,8 +2571,10 @@ i(276550, 1299962);	-- Wind Serpent - White
 -- PATCH 12.1.5 --
 ------------------
 i(282657, 1314189);	-- Ashen Dreadglider
+i(250928, 1251689);	-- Aubergine Warturkey
 i(276926, 1301331);	-- Corrupted Swarmer
 i(278743, 1305612);	-- Giant Grrloc
+i(282648, 1314168);	-- Hot Motocross Bunmover 4400
 i(282649, 1314169);	-- Hot Motocross Bunmover 4600
 i(275756, 1297808);	-- Living Heartsbane Cauldron
 i(283363, 1314715);	-- Loa-Blessed Wayfarer
@@ -2584,7 +2585,6 @@ i(280520, 1309110);	-- [PH] Purple Cat Mount
 i(280522, 1309114);	-- [PH] White Blue Cat Mount
 i(282646, 1314165);	-- Hot Motocross Bunmover 4000
 i(282647, 1314166);	-- Hot Motocross Bunmover 4200
-i(282648, 1314168);	-- Hot Motocross Bunmover 4400
 
 ------------------
 -- PATCH 12.1.7 --

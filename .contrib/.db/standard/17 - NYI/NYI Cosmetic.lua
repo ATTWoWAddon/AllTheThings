@@ -1052,11 +1052,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(257785),	-- Sorcerer's Camo Cape
 				i(257765),	-- Sorcerer's Camo Cowl
 
-				------ Sorcerer's Carrot Garb Set ------
-				i(257994),	-- Ensemble: Sorcerer's Carrot Garb
-				i(257789),	-- Sorcerer's Carrot Cape
-				i(257770),	-- Sorcerer's Carrot Cowl
-
 				------ Sorcerer's Crimson Garb Set ------
 				i(258017),	-- Ensemble: Sorcerer's Crimson Garb
 				i(257792),	-- Sorcerer's Crimson Cape
@@ -1198,9 +1193,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262843),	-- Camo Dunecloth Belt
 				i(262825),	-- Camo Dunecloth Skirt
 				i(262861),	-- Camo Dunecloth Vest
-				i(262847),	-- Carrot Dunecloth Belt
-				i(262829),	-- Carrot Dunecloth Skirt
-				i(262866),	-- Carrot Dunecloth Vest
 				i(262850),	-- Crimson Dunecloth Belt
 				i(262832),	-- Crimson Dunecloth Skirt
 				i(262868),	-- Crimson Dunecloth Vest
@@ -1209,9 +1201,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(262860),	-- Deep Dunecloth Vest
 				i(258032),	-- Ensemble: Skilled Preyseeker's Attire
 				i(262585),	-- Pristine Lunch Bag
-				i(262848),	-- Rosy Dunecloth Belt
-				i(262830),	-- Rosy Dunecloth Skirt
-				i(262865),	-- Rosy Dunecloth Vest
 				i(262588),	-- Sack Lunch
 			}),
 			filter(TABARDS, {

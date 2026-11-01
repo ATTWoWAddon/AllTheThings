@@ -2915,6 +2915,55 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(282649),	-- Hot Motocross Bunmover 4600 (MOUNT!)
 			}),
+			filter(MOUNTS, {
+				traderstender(500, i(250928)),	-- Aubergine Warturkey (MOUNT!)
+				traderstender(500, i(250926)),	-- Highlands Gobbler (MOUNT!)
+				traderstender(500, i(282648)),	-- Hot Motocross Bunmover 4400 (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(250, i(229368)),	-- Gill'el (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(150, i(285225)),	-- Baker's Citrine Bulwark
+				traderstender(150, i(284237)),	-- Baker's Citrine Tray
+				traderstender(150, i(283485)),	-- Baker's Enchanted Cookbook
+				traderstender(150, i(283484)),	-- Baker's Fiery Cookbook
+				traderstender(150, i(285223)),	-- Baker's Morganite Bulwark
+				traderstender(150, i(284235)),	-- Baker's Morganite Tray
+				traderstender(40, i(274060)),	-- Bandit's Carrot Highboot
+				traderstender(40, i(274061)),	-- Bandit's Rosy Highboot
+				traderstender(95, i(251854)),	-- Bunch of Green Chiles
+				traderstender(95, i(251656)),	-- Bunch of Orange Carrots
+				traderstender(30, i(262847)),	-- Carrot Dunecloth Belt
+				traderstender(35, i(262829)),	-- Carrot Dunecloth Skirt
+				traderstender(35, i(262866)),	-- Carrot Dunecloth Vest
+				traderstender(50, i(279438)),	-- Carrot Gloomcap
+				traderstender(70, i(248721)),	-- Chef's Apron
+				traderstender(60, i(248731)),	-- Copper Pot of Stew
+				traderstender(150, i(283991)),	-- Cotton Candy Lollibop
+				traderstender(50, i(270290)),	-- Crown of Carrot Springflowers
+				traderstender(50, i(270291)),	-- Crown of Rosy Springflowers
+				traderstender(95, i(251800)),	-- Ears of Yellow Corn
+				traderstender(700, iensemble(281212)),	-- Ensemble: Executive Chef's Uniform
+				traderstender(700, iensemble(281220)),	-- Ensemble: Head Chef's Uniform
+				traderstender(100, iensemble(257994)),	-- Ensemble: Sorcerer's Carrot Garb
+				traderstender(440, iensemble(249939)),	-- Ensemble: Villager's Country Attire
+				traderstender(440, iensemble(250904)),	-- Ensemble: Villager's Country Collection
+				traderstender(50, i(274631)),	-- Gunslinger's Rosy Lid
+				traderstender(60, i(251869)),	-- Offhand Bunch of Green Chiles
+				traderstender(60, i(251663)),	-- Offhand Bunch of Orange Carrots
+				traderstender(60, i(251804)),	-- Offhand Ears of Yellow Corn
+				traderstender(150, i(283990)),	-- Orange Lollibop
+				traderstender(95, i(250290)),	-- Ready-Warm Portable Bakery
+				traderstender(30, i(262848)),	-- Rosy Dunecloth Belt
+				traderstender(35, i(262830)),	-- Rosy Dunecloth Skirt
+				traderstender(35, i(262865)),	-- Rosy Dunecloth Vest
+				traderstender(50, i(279439)),	-- Rosy Gloomcap
+				traderstender(95, i(248726)),	-- Smoked Rib Rack
+				traderstender(95, i(248926)),	-- Stale Thirteen Grain Loaf
+				traderstender(40, i(283472)),	-- Steel-Plated Cushion Boots
+				traderstender(50, i(273133)),	-- Stylish Crimson Top Hat
+			}),
 		}),
 	}),
-}))
+}));

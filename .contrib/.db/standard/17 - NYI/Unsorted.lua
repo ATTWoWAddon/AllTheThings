@@ -13,22 +13,10 @@ root(ROOTS.Unsorted, {
 			i(275733),	-- A Rat-Sized Portion of Mushroom
 			i(275734),	-- A Rat-Sized Portion of Honey
 			i(279396),	-- Timelost Saddle
-			i(281169),	-- Executive Chef's Jacket
-			i(281170),	-- Executive Chef's Hat
-			i(281171),	-- Executive Chef's Gloves
-			i(281172),	-- Executive Chef's Belt
-			i(281173),	-- Executive Chef's Pants
-			i(281174),	-- Executive Chef's Boots
-			i(281175),	-- Head Chef's Jacket
 			i(281176),	-- Sous Chef's Jacket
 			i(281177),	-- Pastry Chef's Jacket
 			i(281178),	-- Sauce Chef's Jacket
 			i(281179),	-- Grill Chef's Jacket
-			i(281180),	-- Head Chef's Hat
-			i(281181),	-- Head Chef's Gloves
-			i(281182),	-- Head Chef's Belt
-			i(281183),	-- Head Chef's Pants
-			i(281184),	-- Head Chef's Boots
 			i(281185),	-- Sauce Chef's Hat
 			i(281186),	-- Sauce Chef's Gloves
 			i(281187),	-- Sauce Chef's Belt
@@ -49,12 +37,10 @@ root(ROOTS.Unsorted, {
 			i(281204),	-- Sous Chef's Belt
 			i(281205),	-- Sous Chef's Pants
 			i(281206),	-- Sous Chef's Boots
-			i(281212),	-- Ensemble: Executive Chef's Uniform
 			i(281216),	-- Ensemble: Sous Chef's Uniform
 			i(281217),	-- Ensemble: Grill Chef's Uniform
 			i(281218),	-- Ensemble: Pastry Chef's Uniform
 			i(281219),	-- Ensemble: Sauce Chef's Uniform
-			i(281220),	-- Ensemble: Head Chef's Uniform
 			i(282273),	-- Ice Walker's Frost Fetish
 			i(282275),	-- Embered Frost Fetish
 			i(282276),	-- Frost Revenant's Frost Fetish
@@ -73,19 +59,13 @@ root(ROOTS.Unsorted, {
 			i(282645),	-- Wood Haunter's Hide Piercer
 			i(282646),	-- Hot Motocross Bunmover 4000
 			i(282647),	-- Hot Motocross Bunmover 4200
-			i(282648),	-- Hot Motocross Bunmover 4400
 			i(282659),	-- Ghost Goggles
 			i(282660),	-- Vacpack 84-X
 			i(283388),	-- Blessed Loa Armament
-			i(283472),	-- Steel-Plated Cushion Boots
 			i(283481),	-- Baker's Frosty Cookbook
 			i(283483),	-- Baker's Mysterious Cookbook
-			i(283484),	-- Baker's Fiery Cookbook
-			i(283485),	-- Baker's Enchanted Cookbook
 			i(283988),	-- Blue Raspberry Lollibop
 			i(283989),	-- Sour Apple Lollibop
-			i(283990),	-- Orange Lollibop
-			i(283991),	-- Cotton Candy Lollibop
 			i(283992),	-- Grape Lollibop
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
@@ -119,18 +99,14 @@ root(ROOTS.Unsorted, {
 			i(284034),	-- Ensemble: Frost Revenant's Guise of the Wight
 			i(284233),	-- Baker's Sapphire Tray
 			i(284234),	-- Baker's Emerald Tray
-			i(284235),	-- Baker's Morganite Tray
 			i(284236),	-- Baker's Amethyst Tray
-			i(284237),	-- Baker's Citrine Tray
 			i(284258),	-- Tailwind Conduit
 			i(284259),	-- Motionless Nulltide
 			i(284260),	-- Overflowing Voidspire
 			i(285044),	-- Venerated Loa Armament
 			i(285221),	-- Baker's Sapphire Bulwark
 			i(285222),	-- Baker's Emerald Bulwark
-			i(285223),	-- Baker's Morganite Bulwark
 			i(285224),	-- Baker's Amethyst Bulwark
-			i(285225),	-- Baker's Citrine Bulwark
 			i(285333),	-- Frost Revenant's Reversed Pauldrons
 			i(285334),	-- Embered Reversed Pauldrons
 			i(285335),	-- Ice-Walker's Reversed Pauldrons
@@ -367,8 +343,6 @@ root(ROOTS.Unsorted, {
 			i(279434),	-- Camo Gloomcap
 			i(279436),	-- Lively Gloomcap
 			i(279437),	-- Faded Gloomcap
-			i(279438),	-- Carrot Gloomcap
-			i(279439),	-- Rosy Gloomcap
 			i(279441),	-- Crimson Gloomcap
 			i(279442),	-- Violet Gloomcap
 			i(279444),	-- Snowy Gloomcap
@@ -578,7 +552,6 @@ root(ROOTS.Unsorted, {
 				i(271690),	-- Duskwatch Outlaw's Hat
 				i(271691),	-- Duskwatch Outlaw's Bandana
 				i(273132),	-- Stylish Violet Top Hat
-				i(273133),	-- Stylish Crimson Top Hat
 				i(273861),	-- Bloodwatch Outlaw's Britches
 				i(273862),	-- Bloodwatch Outlaw's Treads
 				i(273863),	-- Bloodwatch Outlaw's Undercoat
@@ -592,8 +565,6 @@ root(ROOTS.Unsorted, {
 				i(274056),	-- Bandit's Camo Highboot
 				i(274058),	-- Bandit's Lively Highboot
 				i(274059),	-- Bandit's Faded Highboot
-				i(274060),	-- Bandit's Carrot Highboot
-				i(274061),	-- Bandit's Rosy Highboot
 				i(274063),	-- Bandit's Crimson Highboot
 				i(274064),	-- Bandit's Violet Highboot
 				i(274067),	-- Bandit's Sunny Highboot
@@ -615,7 +586,6 @@ root(ROOTS.Unsorted, {
 				i(274626),	-- Gunslinger's Camo Lid
 				i(274628),	-- Gunslinger's Lively Lid
 				i(274629),	-- Gunslinger's Faded Lid
-				i(274631),	-- Gunslinger's Rosy Lid
 				i(274633),	-- Gunslinger's Crimson Lid
 				i(274634),	-- Gunslinger's Violet Lid
 				i(274637),	-- Gunslinger's Sunny Lid
@@ -666,12 +636,10 @@ root(ROOTS.Unsorted, {
 				n(ARMOR, {
 					i(270280),	-- Crown of Azure Springflowers
 					i(270286),	-- Crown of Camo Springflowers
-					i(270290),	-- Crown of Carrot Springflowers
 					i(270293),	-- Crown of Crimson Springflowers
 					i(270285),	-- Crown of Deep Springflowers
 					i(270283),	-- Crown of Grassy Springflowers
 					i(270288),	-- Crown of Lively Springflowers
-					i(270291),	-- Crown of Rosy Springflowers
 					i(270281),	-- Crown of Sepia Springflowers
 					i(270294),	-- Crown of Violet Springflowers
 				}),

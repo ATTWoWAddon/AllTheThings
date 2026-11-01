@@ -1014,9 +1014,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(250106, {	-- Floestrider Crest-Horn
 				displayID = 136075,
 			}),
-			i(250928, {	-- Murky Turkey
-				displayID = 136380,
-			}),
 			i(250927, {	-- Quirky Turkey
 				displayID = 136375,
 			}),
