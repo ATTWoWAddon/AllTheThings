@@ -25,6 +25,7 @@ local TALEBOUND_STORE = createHeader({
 local BOUND_SILVER = 3361;
 local DUCATS = 3325;
 local OUTFITTER_SUPPLIES = 3320;
+local TALES_OF_VALOR = 3327;
 
 root(ROOTS.WorldEvents, {
 	n(TALEBOUND, {
@@ -245,6 +246,7 @@ root(ROOTS.WorldEvents, {
 			n(REWARDS, {
 				currency(DUCATS),
 				currency(OUTFITTER_SUPPLIES),
+				currency(TALES_OF_VALOR),
 			}),
 			n(TALEBOUND_STORE, sharedData({
 				--cr = 278794,	-- Traveling Raven
@@ -390,6 +392,10 @@ root(ROOTS.WorldEvents, {
 					i(236628),	-- Wicker-Sage's Rune Slasher
 				}),
 			})),
+			n(ZONE_REWARDS, {
+				i(288471),	-- Barrier Potion
+				i(238669),	-- Focus Potion
+			}),
 		},
 	}),
 })
