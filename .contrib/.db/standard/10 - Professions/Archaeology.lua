@@ -109,20 +109,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				ach(4921),	-- Master Archaeologist
 				ach(4922),	-- Grand Master Archaeologist
 				ach(4923),	-- Illustrious Grand Master Archaeologist
-				ach(5193, {	-- Blue Streak
-					crit(15058, {	-- Notched Sword of Tunadil the Redeemer
-						provider = { "i", 64337 },	-- Notched Sword of Tunadil the Redeemer
-					}),
-					crit(15059, {	-- Dented Shield of Horuz Killcrow
-						provider = { "i", 64362 },	-- Dented Shield of Horuz Killcrow
-					}),
-					crit(15060, {	-- Scorched Staff of Shadow Priest Anund
-						provider = { "i", 64366 },	-- Scorched Staff of Shadow Priest Anund
-					}),
-					crit(15095, {	-- Silver Kris of Korl
-						provider = { "i", 64483 },	-- Silver Kris of Korl
-					}),
-				}),
+				ach(5193),	-- Blue Streak
 				ach(5470),	-- Diggerest
 				ach(5469),	-- Diggerer
 				ach(5315),	-- Digger
@@ -138,88 +125,13 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					crit(16205),	-- Vrykul
 				}),
 				ach(4859, {	-- Kings Under the Mountain
-					crit(15062, {	-- Mithril Chain of Angerforge
-						provider = { "i", 64368 },	-- Mithril Chain of Angerforge
-					}),
-					crit(15063, {	-- Moltenfist's Jeweled Goblet
-						provider = { "i", 63414 },	-- Moltenfist's Jeweled Goblet
-					}),
-					crit(15064, {	-- Winged Helm of Corehammer
-						provider = { "i", 64343 },	-- Winged Helm of Corehammer
-					}),
-					crit(15065, {	-- Ironstar's Petrified Shield
-						provider = { "i", 64344 },	-- Ironstar's Petrified Shield
-					}),
-					crit(15066, {	-- Skull Staff of Shadowforge
-						provider = { "i", 64371 },	-- Skull Staff of Shadowforge
-					}),
-					crit(15068, {	-- Spiked Gauntlets of Anvilrage
-						provider = { "i", 64485 },	-- Spiked Gauntlets of Anvilrage
-					}),
-					crit(15069, {	-- Warmaul of Burningeye
-						provider = { "i", 64484 },	-- Warmaul of Burningeye
-					}),
 					i(245426, {	-- Dark Iron Brazier (DECOR!)
 						timeline = { ADDED_11_2_7 },
 					}),
 				}),
-				ach(4858, {	-- Seven Scepters
-					crit(15051, {	-- Scepter of Charlga Razorflank
-						provider = { "i", 64367 },	-- Scepter of Charlga Razorflank
-					}),
-					crit(15050, {	-- Atal'ai Scepter
-						provider = { "i", 64348 },	-- Atal'ai Scepter
-					}),
-					crit(15052, {	-- Scepter of Xavius
-						provider = { "i", 64382 },	-- Scepter of Xavius
-					}),
-					crit(15071, {	-- Scepter of Nekros Skullcrusher
-						provider = { "i", 64420 },	-- Scepter of Nekros Skullcrusher
-					}),
-					crit(15074, {	-- Scepter of the Nathrezim
-						provider = { "i", 64444 },	-- Scepter of the Nathrezim
-					}),
-					crit(15092, {	-- Scepter of Nezar'Azret
-						provider = { "i", 64475 },	-- Scepter of Nezar'Azret
-					}),
-					crit(15096, {	-- Scepter of Bronzebeard
-						provider = { "i", 64487 },	-- Scepter of Bronzebeard
-					}),
-				}),
-				ach(5301, {	-- The Boy Who Would be King
-					crit(15100, {	-- Cat Statue with Emerald Eyes
-						provider = { "i", 64653 },	-- Cat Statue with Emerald Eyes
-					}),
-					crit(15101, {	-- Soapstone Scarab Necklace
-						provider = { "i", 64654 },	-- Soapstone Scarab Necklace
-					}),
-					crit(15102, {	-- Tiny Oasis Mosaic
-						provider = { "i", 64655 },	-- Tiny Oasis Mosaic
-					}),
-					crit(15103, {	-- Engraved Scimitar Hilt
-						provider = { "i", 64656 },	-- Engraved Scimitar Hilt
-					}),
-					crit(15104, {	-- Sketch of a Desert Palace
-						provider = { "i", 64658 },	-- Sketch of a Desert Palace
-					}),
-					crit(15105, {	-- Canopic Jar
-						provider = { "i", 64657 },	-- Canopic Jar
-					}),
-				}),
-				ach(5192, {	-- The Harder they Fall
-					crit(15061, {	-- Tiny Bronze Scorpion
-						provider = { "i", 64389 },	-- Tiny Bronze Scorpion
-					}),
-					crit(15070, {	-- Maul of Stone Guard Mur'og
-						provider = { "i", 64417 },	-- Maul of Stone Guard Mur'og
-					}),
-					crit(15072, {	-- Gray Candle Stub
-						provider = { "i", 64418 },	-- Gray Candle Stub
-					}),
-					crit(15073, {	-- Rusted Steak Knife
-						provider = { "i", 64419 },	-- Rusted Steak Knife
-					}),
-				}),
+				ach(4858),	-- Seven Scepters
+				ach(5301),	-- The Boy Who Would be King
+				ach(5192),	-- The Harder they Fall
 				ach(4854, {	-- I Had It in My Hand
 					title(148),	-- Assistant Professor <Name>
 				}),
@@ -229,26 +141,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				ach(4856, {	-- It Belongs in a Museum!
 					title(150),	-- Professor <Name>
 				}),
-				ach(5191, {	-- Tragedy in Three Acts
-					crit(15053, {	-- Delicate Music Box
-						provider = { "i", 64357 },	-- Delicate Music Box
-					}),
-					crit(15054, {	-- Cloak Clasp with Antlers
-						provider = { "i", 63407 },	-- Cloak Clasp with Antlers
-					}),
-					crit(15055, {	-- Hairpin of Silver and Malachite
-						provider = { "i", 64356 },	-- Hairpin of Silver and Malachite
-					}),
-					crit(15056, {	-- Chest of Tiny Glass Animals
-						provider = { "i", 64379 },	-- Chest of Tiny Glass Animals
-					}),
-					crit(15057, {	-- Cracked Crystal Vial
-						provider = { "i", 64381 },	-- Cracked Crystal Vial
-					}),
-					crit(15099, {	-- Silver Scroll Case
-						provider = { "i", 64648 },	-- Silver Scroll Case
-					}),
-				}),
+				ach(5191),	-- Tragedy in Three Acts
 			}),
 			n(VENDORS, timelineSelf({ timeline = { ADDED_5_0_4 } }, {
 				crs = {
@@ -506,178 +399,19 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				ach(7357, {	-- Collector: Worn Monument Ledgers (5)
 					provider = { "i", 79917 },	-- Worn Monument Ledger
 				}),
-				ach(7337, {	-- Documents of a Dark History
-					crit(20649, {	-- Edicts of the Thunder King
-						provider = { "i", 79913 },	-- Edicts of the Thunder King
-					}),
-					crit(20650, {	-- Worn Monument Ledger
-						provider = { "i", 79917 },	-- Worn Monument Ledger
-					}),
-				}),
-				ach(7334, {	-- Instruments of Cruelty
-					crit(20639, {	-- Manacles of Rebellion
-						provider = { "i", 79908 },	-- Manacles of Rebellion
-					}),
-					crit(20640, {	-- Petrified Bone Whip
-						provider = { "i", 79911 },	-- Petrified Bone Whip
-					}),
-					crit(20641, {	-- Warlord's Branding Iron
-						provider = { "i", 79915 },	-- Warlord's Branding Iron
-					}),
-					crit(20642, {	-- Anatomical Dummy
-						provider = { "i", 89614 },	-- Anatomical Dummy (TOY!)
-					}),
-				}),
+				ach(7337),	-- Documents of a Dark History
+				ach(7334),	-- Instruments of Cruelty
 				ach(8219, {	-- History of the Mantid
 					timeline = { ADDED_5_2_0 },
-					groups = {
-						crit(22947, {	-- Pristine Banner of the Mantid Empire
-							_quests = { 32686 },
-						}),
-						crit(22948, {	-- Pristine Ancient Sap Feeder
-							_quests = { 32687 },
-						}),
-						crit(22949, {	-- Pristine Praying Mantid
-							_quests = { 32688 },
-						}),
-						crit(22950, {	-- Pristine Sound Beacon
-							_quests = { 32689 },
-						}),
-						crit(22951, {	-- Pristine Remains of a Paragon
-							_quests = { 32690 },
-						}),
-						crit(22952, {	-- Pristine Mantid Lamp
-							_quests = { 32691 },
-						}),
-						crit(22953, {	-- Pristine Pollen Collector
-							_quests = { 32692 },
-						}),
-						crit(22954, {	-- Pristine Kypari Sap Container
-							_quests = { 32693 },
-						}),
-					},
 				}),
-				ach(7336, {	-- Stone Servants
-					crit(20647, {	-- Terracotta Arm
-						provider = { "i", 79910 },	-- Terracotta Arm
-					}),
-					crit(20648, {	-- Quilen Statuette
-						provider = { "i", 89611 },	-- Quilen Statuette
-					}),
-				}),
-				ach(7335, {	-- Symbols of Strength
-					crit(20643, {	-- Iron Amulet
-						provider = { "i", 79914 },	-- Iron Amulet
-					}),
-					crit(20644, {	-- Cracked Mogu Runestone
-						provider = { "i", 79909 },	-- Cracked Mogu Runestone
-					}),
-					crit(20645, {	-- Mogu Coin
-						provider = { "i", 79916 },	-- Mogu Coin
-					}),
-					crit(20646, {	-- Thunder King Insignia
-						provider = { "i", 79912 },	-- Thunder King Insignia
-					}),
-				}),
-				ach(7332, {	-- The Broken Hearted
-					crit(20632, {	-- Carved Bronze Mirror
-						provider = { "i", 79901 },	-- Carved Bronze Mirror
-					}),
-					crit(20633, {	-- Gold-Inlaid Figurine
-						provider = { "i", 79902 },	-- Gold-Inlaid Figurine
-					}),
-					crit(20634, {	-- Apothecary Tins
-						provider = { "i", 79903 },	-- Apothecary Tins
-					}),
-				}),
-				ach(7333, {	-- The Four Celestials
-					crit(20635, {	-- Pearl of Yu'lon
-						provider = { "i", 79904 },	-- Pearl of Yu'lon
-					}),
-					crit(20636, {	-- Standard of Niuzao
-						provider = { "i", 79905 },	-- Standard of Niuzao
-					}),
-					crit(20637, {	-- Umbrella of Chi-Ji
-						provider = { "i", 89684 },	-- Umbrella of Chi-Ji
-					}),
-					crit(20638, {	-- Spear of Xuen
-						provider = { "i", 89685 },	-- Spear of Xuen
-					}),
-				}),
+				ach(7336),	-- Stone Servants
+				ach(7335),	-- Symbols of Strength
+				ach(7332),	-- The Broken Hearted
+				ach(7333),	-- The Four Celestials
 				ach(7612, {	-- The Seat of Knowledge
 					title(208),	-- <Name>, Seeker of Knowledge
-					crit(21954, {	-- Pristine Manacles of Rebellion
-						_quests = { 31786 },
-					}),
-					crit(21956, {	-- Pristine Mogu Runestone
-						_quests = { 31787 },
-					}),
-					crit(21958, {	-- Pristine Terracotta Arm
-						_quests = { 31788 },
-					}),
-					crit(21960, {	-- Pristine Petrified Bone Whip
-						_quests = { 31789 },
-					}),
-					crit(21965, {	-- Pristine Thunder King Insignia
-						_quests = { 31790 },
-					}),
-					crit(21967, {	-- Pristine Edicts of the Thunder King
-						_quests = { 31791 },
-					}),
-					crit(21969, {	-- Pristine Iron Amulet
-						_quests = { 31792 },
-					}),
-					crit(21970, {	-- Pristine Branding Iron
-						_quests = { 31793 },
-					}),
-					crit(21971, {	-- Pristine Mogu Coin
-						_quests = { 31794 },
-					}),
-					crit(21972, {	-- Pristine Monument Ledger
-						_quests = { 31805 },
-					}),
-					crit(21973, {	-- Pristine Pandaren Tea Set
-						_quests = { 31795 },
-					}),
-					crit(21974, {	-- Pristine Game Board
-						_quests = { 31796 },
-					}),
-					crit(21975, {	-- Pristine Twin Stein Set
-						_quests = { 31797 },
-					}),
-					crit(21976, {	-- Pristine Walking Cane
-						_quests = { 31798 },
-					}),
-					crit(21977, {	-- Pristine Empty Keg
-						_quests = { 31799 },
-					}),
-					crit(21978, {	-- Pristine Carved Bronze Mirror
-						_quests = { 31800 },
-					}),
-					crit(21979, {	-- Pristine Gold-Inlaid Figurine
-						_quests = { 31801 },
-					}),
-					crit(21980, {	-- Pristine Apothecary Tins
-						_quests = { 31802 },
-					}),
-					crit(21981, {	-- Pristine Pearl of Yu'lon
-						_quests = { 31803 },
-					}),
-					crit(21982, {	-- Pristine Standard of Niuzao
-						_quests = { 31804 },
-					}),
 				}),
-				ach(7331, {	-- The Three Brew Fathers
-					crit(20629, {	-- Twin Stein Set
-						provider = { "i", 79898 },	-- Twin Stein Set
-					}),
-					crit(20630, {	-- Walking Cane
-						provider = { "i", 79899 },	-- Walking Cane
-					}),
-					crit(20631, {	-- Empty Keg
-						provider = { "i", 79900 },	-- Empty Keg
-					}),
-				}),
+				ach(7331),	-- The Three Brew Fathers
 			}),
 			n(QUESTS, {
 				n(ARCHAEOLOGY_MANTID, {
@@ -815,375 +549,18 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 		expansion(EXPANSION.WOD, {
 			n(ACHIEVEMENTS, {
 				ach(9409),	-- Draenor Archaeologist
-				ach(9414, {	-- Ogre Observer
-					crit(25692, {	-- Eye of Har'gunn the Blind
-						provider = { "i", 114191 },	-- Eye of Har'gunn the Blind
-					}),
-					crit(25693, {	-- Gladiator's Shield
-						provider = { "i", 114189 },	-- Gladiator's Shield
-					}),
-					crit(25694, {	-- Imperial Decree Stele
-						provider = { "i", 114194 },	-- Imperial Decree Stele
-					}),
-					crit(25695, {	-- Mortar and Pestle
-						provider = { "i", 114190 },	-- Mortar and Pestle
-					}),
-					crit(25696, {	-- Ogre Figurine
-						provider = { "i", 114185 },	-- Ogre Figurine
-					}),
-					crit(25697, {	-- Pictogram Carving
-						provider = { "i", 114187 },	-- Pictogram Carving
-					}),
-					crit(25698, {	-- Rylak Riding Harness
-						provider = { "i", 114193 },	-- Rylak Riding Harness
-					}),
-					crit(25699, {	-- Stone Dentures
-						provider = { "i", 114192 },	-- Stone Dentures
-					}),
-					crit(25700, {	-- Stone Manacles
-						provider = { "i", 114183 },	-- Stone Manacles
-					}),
-					crit(25701, {	-- Stonemaul Succession Stone
-						provider = { "i", 114181 },	-- Stonemaul Succession Stone
-					}),
-				}),
+				ach(9414),	-- Ogre Observer
 				ach(9415, {	-- Secrets of Skettis
-					crit(25702, {	-- Dreamcatcher
-						provider = { "i", 114197 },	-- Dreamcatcher
-					}),
-					crit(25703, {	-- Burial Urn
-						provider = { "i", 114198 },	-- Burial Urn
-					}),
-					crit(25704, {	-- Decree Scrolls
-						provider = { "i", 114199 },	-- Decree Scrolls
-					}),
-					crit(25705, {	-- Solar Orb
-						provider = { "i", 114200 },	-- Solar Orb
-					}),
-					crit(25706, {	-- Sundial
-						provider = { "i", 114201 },	-- Sundial
-					}),
-					crit(25707, {	-- Talonpriest Mask
-						provider = { "i", 114202 },	-- Talonpriest Mask
-					}),
-					crit(25708, {	-- Outcast Dreamcatcher
-						provider = { "i", 114203 },	-- Outcast Dreamcatcher
-					}),
-					crit(25709, {	-- Apexis Crystal
-						provider = { "i", 114204 },	-- Apexis Crystal
-					}),
-					crit(25710, {	-- Apexis Hieroglyph
-						provider = { "i", 114205 },	-- Apexis Hieroglyph
-					}),
-					crit(25711, {	-- Apexis Scroll
-						provider = { "i", 114206 },	-- Apexis Scroll
-					}),
 					i(258740, {	-- Glorious Pendant of Rukhmar (DECOR!)
 						timeline = { ADDED_12_0_0 },
 					}),
 				}),
-				ach(9413, {	-- Strength and Honor
-					crit(25673, {	-- Ancestral Talisman
-						provider = { "i", 114171 },	-- Ancestral Talisman
-					}),
-					crit(25674, {	-- Barbed Fishing Hook
-						provider = { "i", 114163 },	-- Barbed Fishing Hook
-					}),
-					crit(25675, {	-- Blackrock Razor
-						provider = { "i", 114157 },	-- Blackrock Razor
-					}),
-					crit(25676, {	-- Calcified Eye in a Jar
-						provider = { "i", 114165 },	-- Calcified Eye in a Jar
-					}),
-					crit(25677, {	-- Ceremonial Tattoo Needles
-						provider = { "i", 114167 },	-- Ceremonial Tattoo Needles
-					}),
-					crit(25678, {	-- Cracked Ivory Idol
-						provider = { "i", 114169 },	-- Cracked Ivory Idol
-					}),
-					crit(25679, {	-- Doomsday Prophecy
-						provider = { "i", 114177 },	-- Doomsday Prophecy
-					}),
-					crit(25680, {	-- Elemental Bellows
-						provider = { "i", 114155 },	-- Elemental Bellows
-					}),
-					crit(25681, {	-- Fang-Scarred Frostwolf Axe
-						provider = { "i", 114141 },	-- Fang-Scarred Frostwolf Axe
-					}),
-					crit(25682, {	-- Flask of Blazegrease
-						provider = { "i", 114173 },	-- Flask of Blazegrease
-					}),
-					crit(25683, {	-- Frostwolf Ancestry Scrimshaw
-						provider = { "i", 114143 },	-- Frostwolf Ancestry Scrimshaw
-					}),
-					crit(25684, {	-- Gronn-Tooth Necklace
-						provider = { "i", 114175 },	-- Gronn-Tooth Necklace
-					}),
-					crit(25685, {	-- Hooked Dagger
-						provider = { "i", 114161 },	-- Hooked Dagger
-					}),
-					crit(25686, {	-- Metalworker's Hammer
-						provider = { "i", 114153 },	-- Metalworker's Hammer
-					}),
-					crit(25687, {	-- Screaming Bullroarer
-						provider = { "i", 114149 },	-- Screaming Bullroarer
-					}),
-					crit(25688, {	-- Warsinger's Drums
-						provider = { "i", 114147 },	-- Warsinger's Drums
-					}),
-					crit(25689, {	-- Warsong Ceremonial Pike
-						provider = { "i", 114151 },	-- Warsong Ceremonial Pike
-					}),
-					crit(25690, {	-- Weighted Chopping Axe
-						provider = { "i", 114159 },	-- Weighted Chopping Axe
-					}),
-					crit(25691, {	-- Wolfskin Snowshoes
-						provider = { "i", 114145 },	-- Wolfskin Snowshoes
-					}),
-				}),
-				ach(9412, {	-- Arakkoa Archivist
-					crit(25663, {	-- Pristine Dreamcatcher
-						_quests = { 36771 },
-					}),
-					crit(25664, {	-- Pristine Burial Urn
-						_quests = { 36772 },
-					}),
-					crit(25665, {	-- Pristine Decree Scrolls
-						_quests = { 36773 },
-					}),
-					crit(25666, {	-- Pristine Solar Orb
-						_quests = { 36774 },
-					}),
-					crit(25667, {	-- Pristine Sundial
-						_quests = { 36775 },
-					}),
-					crit(25668, {	-- Pristine Talonpriest Mask
-						_quests = { 36776 },
-					}),
-					crit(25669, {	-- Pristine Outcast Dreamcatcher
-						_quests = { 36777 },
-					}),
-					crit(25670, {	-- Pristine Apexis Crystal
-						_quests = { 36778 },
-					}),
-					crit(25671, {	-- Pristine Apexis Hieroglyph
-						_quests = { 36779 },
-					}),
-					crit(25672, {	-- Pristine Apexis Scroll
-						_quests = { 36780 },
-					}),
-				}),
-				ach(9419, {	-- Draenor Curator
-					crit(25663, {	-- Pristine Dreamcatcher
-						_quests = { 36771 },
-					}),
-					crit(25664, {	-- Pristine Burial Urn
-						_quests = { 36772 },
-					}),
-					crit(25665, {	-- Pristine Decree Scrolls
-						_quests = { 36773 },
-					}),
-					crit(25666, {	-- Pristine Solar Orb
-						_quests = { 36774 },
-					}),
-					crit(25667, {	-- Pristine Sundial
-						_quests = { 36775 },
-					}),
-					crit(25668, {	-- Pristine Talonpriest Mask
-						_quests = { 36776 },
-					}),
-					crit(25669, {	-- Pristine Outcast Dreamcatcher
-						_quests = { 36777 },
-					}),
-					crit(25670, {	-- Pristine Apexis Crystal
-						_quests = { 36778 },
-					}),
-					crit(25671, {	-- Pristine Apexis Hieroglyph
-						_quests = { 36779 },
-					}),
-					crit(25672, {	-- Pristine Apexis Scroll
-						_quests = { 36780 },
-					}),
-					crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
-						_quests = { 36725 },
-					}),
-					crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
-						_quests = { 36743 },
-					}),
-					crit(25636, {	-- Pristine Wolfskin Snowshoes
-						_quests = { 36744 },
-					}),
-					crit(25637, {	-- Pristine Warsinger's Drums
-						_quests = { 36745 },
-					}),
-					crit(25638, {	-- Pristine Screaming Bullroarer
-						_quests = { 36746 },
-					}),
-					crit(25639, {	-- Pristine Warsong Ceremonial Pike
-						_quests = { 36747 },
-					}),
-					crit(25640, {	-- Pristine Metalworker's Hammer
-						_quests = { 36748 },
-					}),
-					crit(25641, {	-- Pristine Elemental Bellows
-						_quests = { 36749 },
-					}),
-					crit(25642, {	-- Pristine Blackrock Razor
-						_quests = { 36750 },
-					}),
-					crit(25643, {	-- Pristine Weighted Chopping Axe
-						_quests = { 36751 },
-					}),
-					crit(25644, {	-- Pristine Hooked Dagger
-						_quests = { 36752 },
-					}),
-					crit(25645, {	-- Pristine Barbed Fishing Hook
-						_quests = { 36753 },
-					}),
-					crit(25646, {	-- Pristine Calcified Eye In A Jar
-						_quests = { 36754 },
-					}),
-					crit(25647, {	-- Pristine Ceremonial Tattoo Needles
-						_quests = { 36755 },
-					}),
-					crit(25648, {	-- Pristine Ancestral Talisman
-						_quests = { 36756 },
-					}),
-					crit(25649, {	-- Pristine Cracked Ivory Idol
-						_quests = { 36757 },
-					}),
-					crit(25650, {	-- Pristine Flask of Blazegrease
-						_quests = { 36758 },
-					}),
-					crit(25651, {	-- Pristine Gronn-Tooth Necklace
-						_quests = { 36759 },
-					}),
-					crit(25652, {	-- Pristine Doomsday Prophecy
-						_quests = { 36760 },
-					}),
-					crit(25653, {	-- Pristine Stonemaul Succession Stone
-						_quests = { 36761 },
-					}),
-					crit(25654, {	-- Pristine Stone Manacles
-						_quests = { 36762 },
-					}),
-					crit(25655, {	-- Pristine Ogre Figurine
-						_quests = { 36763 },
-					}),
-					crit(25656, {	-- Pristine Pictogram Carving
-						_quests = { 36764 },
-					}),
-					crit(25657, {	-- Pristine Gladiator's Shield
-						_quests = { 36765 },
-					}),
-					crit(25658, {	-- Pristine Mortar and Pestle
-						_quests = { 36766 },
-					}),
-					crit(25659, {	-- Pristine Eye of Har'guun the Blind
-						_quests = { 36767 },
-					}),
-					crit(25660, {	-- Pristine Stone Dentures
-						_quests = { 36768 },
-					}),
-					crit(25661, {	-- Pristine Rylak Riding Harness
-						_quests = { 36769 },
-					}),
-					crit(25662, {	-- Pristine Imperial Decree Stele
-						_quests = { 36770 },
-					}),
-				}),
-				ach(9411, {	-- Highmaul Historian
-					crit(25653, {	-- Pristine Stonemaul Succession Stone
-						_quests = { 36761 },
-					}),
-					crit(25654, {	-- Pristine Stone Manacles
-						_quests = { 36762 },
-					}),
-					crit(25655, {	-- Pristine Ogre Figurine
-						_quests = { 36763 },
-					}),
-					crit(25656, {	-- Pristine Pictogram Carving
-						_quests = { 36764 },
-					}),
-					crit(25657, {	-- Pristine Gladiator's Shield
-						_quests = { 36765 },
-					}),
-					crit(25658, {	-- Pristine Mortar and Pestle
-						_quests = { 36766 },
-					}),
-					crit(25659, {	-- Pristine Eye of Har'guun the Blind
-						_quests = { 36767 },
-					}),
-					crit(25660, {	-- Pristine Stone Dentures
-						_quests = { 36768 },
-					}),
-					crit(25661, {	-- Pristine Rylak Riding Harness
-						_quests = { 36769 },
-					}),
-					crit(25662, {	-- Pristine Imperial Decree Stele
-						_quests = { 36770 },
-					}),
-				}),
+				ach(9413),	-- Strength and Honor
+				ach(9412),	-- Arakkoa Archivist
+				ach(9419),	-- Draenor Curator
+				ach(9411),	-- Highmaul Historian
 				ach(9422),	-- The Search For Fact, Not Truth
-				ach(9410, {	-- Unite the Clans
-					crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
-						_quests = { 36725 },
-					}),
-					crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
-						_quests = { 36743 },
-					}),
-					crit(25636, {	-- Pristine Wolfskin Snowshoes
-						_quests = { 36744 },
-					}),
-					crit(25637, {	-- Pristine Warsinger's Drums
-						_quests = { 36745 },
-					}),
-					crit(25638, {	-- Pristine Screaming Bullroarer
-						_quests = { 36746 },
-					}),
-					crit(25639, {	-- Pristine Warsong Ceremonial Pike
-						_quests = { 36747 },
-					}),
-					crit(25640, {	-- Pristine Metalworker's Hammer
-						_quests = { 36748 },
-					}),
-					crit(25641, {	-- Pristine Elemental Bellows
-						_quests = { 36749 },
-					}),
-					crit(25642, {	-- Pristine Blackrock Razor
-						_quests = { 36750 },
-					}),
-					crit(25643, {	-- Pristine Weighted Chopping Axe
-						_quests = { 36751 },
-					}),
-					crit(25644, {	-- Pristine Hooked Dagger
-						_quests = { 36752 },
-					}),
-					crit(25645, {	-- Pristine Barbed Fishing Hook
-						_quests = { 36753 },
-					}),
-					crit(25646, {	-- Pristine Calcified Eye In A Jar
-						_quests = { 36754 },
-					}),
-					crit(25647, {	-- Pristine Ceremonial Tattoo Needles
-						_quests = { 36755 },
-					}),
-					crit(25648, {	-- Pristine Ancestral Talisman
-						_quests = { 36756 },
-					}),
-					crit(25649, {	-- Pristine Cracked Ivory Idol
-						_quests = { 36757 },
-					}),
-					crit(25650, {	-- Pristine Flask of Blazegrease
-						_quests = { 36758 },
-					}),
-					crit(25651, {	-- Pristine Gronn-Tooth Necklace
-						_quests = { 36759 },
-					}),
-					crit(25652, {	-- Pristine Doomsday Prophecy
-						_quests = { 36760 },
-					}),
-				}),
+				ach(9410),	-- Unite the Clans
 			}),
 			n(QUESTS, {
 				n(ARCHAEOLOGY_ARAKKOA, {
@@ -1343,97 +720,11 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 		expansion(EXPANSION.LEGION, {
 			n(ACHIEVEMENTS, {
 				ach(10600),	-- Legion Archaeologist
-				ach(10604, {	-- Legion Curator
-					crit(29979, {	-- Pristine Imp's Cup
-						_quests = { 40359 },
-					}),
-					crit(29980, {	-- Pristine Flayed-Skin Chronicle
-						_quests = { 40360 },
-					}),
-					crit(29981, {	-- Pristine Malformed Abyssal
-						_quests = { 40361 },
-					}),
-					crit(29982, {	-- Pristine Orb of Inner Chaos
-						_quests = { 40362 },
-					}),
-					crit(29983, {	-- Pristine Houndstooth Hauberk
-						_quests = { 40363 },
-					}),
-					crit(29984, {	-- Pristine Violetglass Vessel
-						_quests = { 40349 },
-					}),
-					crit(29985, {	-- Pristine Inert Leystone Charm
-						_quests = { 40350 },
-					}),
-					crit(29986, {	-- Pristine Quietwine Vial
-						_quests = { 40351 },
-					}),
-					crit(29987, {	-- Pristine Pre-War Highborne Tapestry
-						_quests = { 40352 },
-					}),
-					crit(29988, {	-- Pristine Nobleman's Letter Opener
-						_quests = { 40353 },
-					}),
-					crit(29989, {	-- Pristine Trailhead Drum
-						_quests = { 40354 },
-					}),
-					crit(29990, {	-- Pristine Moosebone Fish-Hook
-						_quests = { 40355 },
-					}),
-					crit(29991, {	-- Pristine Hand-Smoothed Pyrestone
-						_quests = { 40356 },
-					}),
-					crit(29992, {	-- Pristine Drogbar Gem-Roller
-						_quests = { 40357 },
-					}),
-					crit(29993, {	-- Pristine Stonewood Bow
-						_quests = { 40358 },
-					}),
-				}),
-				ach(10603, {	-- A Keen Eye
-					crit(29966, {	-- Corrupted Studies
-						_quests = { 41157 },
-					}),
-					crit(29967, {	-- A Beacon of Hope
-						_quests = { 41173 },
-					}),
-					crit(29968, {	-- Neltharion's Lair: Misdirected
-						_quests = { 41188 },
-					}),
-					crit(29969, {	-- Sifting Through the Rubble
-						_quests = { 41176 },
-					}),
-					crit(29970, {	-- The Gates of Valor
-						_quests = { 41802 },
-					}),
-					crit(29971, {	-- What Once Was Lost
-						_quests = { 41179 },
-					}),
-					crit(29972, {	-- The Apocalypse Bringer
-						_quests = { 41163 },
-					}),
-					crit(29973, {	-- Uncovering the Orb of Sciallax
-						_quests = { 41182 },
-					}),
-					crit(29974, {	-- Drogbar Deception
-						_quests = { 41191 },
-					}),
-					crit(29975, {	-- Dark Secrets
-						_quests = { 41166 },
-					}),
-					crit(29976, {	-- The Keys to Success
-						_quests = { 41185 },
-					}),
-					crit(29977, {	-- Darkheart Thicket: Through the Fog
-						_quests = { 41169 },
-					}),
-					crit(29978, {	-- Laying to Rest
-						_quests = { 41193 },
-					}),
-				}),
+				ach(10604),	-- Legion Curator
+				ach(10603),	-- A Keen Eye
 				achpart(10601, 10603),	-- Surveying the Land
 				achpart(10602, 10603),	-- This Side Up (gets filled with class-wrapped artifacts from Artifacts file)
-				ach(10605, {	-- Handle With Care
+				ach(10605, {	-- Handle With Care (automation uses spells)
 					crit(29994, {	-- Imp's Cup
 						provider = { "i", 130916 },	-- Imp's Cup
 					}),
@@ -1862,7 +1153,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				ach(12761, {	-- Zandalari Archaeologist
 					races = HORDE_ONLY,
 				}),
-				ach(12765, {	-- Exotic Discoveries
+				ach(12765, {	-- Exotic Discoveries (automation uses spells)
 					crit(43323, {	-- Ceremonial Bonesaw
 						provider = { "i", 154921 },	-- Ceremonial Bonesaw
 					}),
