@@ -23,13 +23,13 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 - Describe the actual content or code changes and their resulting behavior in the subject and body. Omit references to user instructions or the agent's workflow.
 - Describe detailed changes in the commit body, separated from the subject by a blank line.
 
-Every commit containing AI-assisted work must include the following trailer at the end of its commit message:
+Every commit containing AI-assisted work must end with exactly one `Assisted-by:` trailer on a single line. Include every contributing model on that line, separated by a comma and a space. End the trailer with an ASCII period after the final model name; the period is punctuation, not part of a model name.
 
 ```text
-Assisted-by: <model name>
+Assisted-by: <model name(s)>.
 ```
 
-Replace `<model name>` with the actual model used. If multiple models contributed to a commit, add one `Assisted-by:` trailer per model. Do not substitute a tool or product name for an unknown model name; obtain the model name before committing. Preserve applicable attribution when amending or squashing commits.
+Use the actual model name for each contributor. A single-model commit lists one name; for example, a multi-model commit can use `Assisted-by: gpt-6-luna, gpt-6.1-terra, gpt-6.1-sol.` Do not substitute a tool or product name for an unknown model name; obtain the model name before committing. Preserve all applicable model attribution when amending or squashing commits.
 
 ## PR Descriptions
 
