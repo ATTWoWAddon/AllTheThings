@@ -666,12 +666,10 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			}),
 			header(HEADERS.AchCriteria, 16401.02, {	-- Brave Researchers
 				q(69897, {	-- Behavior Analysis "Homework"
-					sourceQuests = { 66963 },	-- Out For Delivery
 					provider = { "n", 193500 },	-- Iyali
 					coord = { 45.9, 81.4, THE_WAKING_SHORES },
 				}),
 				q(69898, {	-- Scientfic Meat-thod
-					sourceQuests = { 66963 },	-- Out For Delivery
 					provider = { "n", 193500 },	-- Iyali
 					coord = { 45.9, 81.4, THE_WAKING_SHORES },
 				}),
