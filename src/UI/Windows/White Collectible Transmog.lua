@@ -8,9 +8,9 @@ app:CreateWindow("White Collectible Transmog", {
 	Commands = { "attwct" },
 	RootCommands = { "wct" },
 	OnLoad = function(self, settings)
-		self:SetData(app.CreateRawText(L.WHITE_COLLECTIBLE_TRANSMOG, {
+		self:SetData(app.CreateRawText(L.WHITE_GRAY_TRANSMOG, {
 			icon = app.asset("Interface_Newly_Added"),
-			description = "",
+			description = L.WHITE_GRAY_TRANSMOG_TOOLTIP,
 			visible = true,
 			expanded = true,
 			SortType = "Global",

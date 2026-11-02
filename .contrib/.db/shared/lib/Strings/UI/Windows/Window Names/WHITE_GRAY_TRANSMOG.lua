@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "White Collectible Transmog",
-	constant = "WHITE_COLLECTIBLE_TRANSMOG",
+	readable = "White/Gray Transmog",
+	constant = "WHITE_GRAY_TRANSMOG",
 	export = true,
 	text = {
-		en = "White Collectible Transmog",
+		en = "White/Gray Transmog",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",
@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "白色收藏品幻化",
+		cn = "灰白幻化",
 		-- TODO: tw = "",
 	},
 })

@@ -2888,7 +2888,7 @@ local LocalizedWindowNames = {
 	["Toys"] = "TOYS",
 	["Tradeskills"] = "TRADESKILLS",
 	["Unsorted"] = "UNSORTED",
-	["White Collectible Transmog"] = "WHITE_COLLECTIBLE_TRANSMOG",
+	["White Collectible Transmog"] = "WHITE_GRAY_TRANSMOG",
 	["WorldQuests"] = "WORLD_QUESTS",
 };
 local function GetLocalizedWindowName(suffix)
