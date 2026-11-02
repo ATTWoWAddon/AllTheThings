@@ -216,6 +216,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114200),	-- Solar Orb
 				i(114201),	-- Sundial
 				i(114202),	-- Talonpriest Mask
+				-- Pristines
+				i(114222),	-- Pristine Apexis Crystal
+				i(114223),	-- Pristine Apexis Hieroglyph
+				i(114224),	-- Pristine Apexis Scroll
+				i(114216),	-- Pristine Burial Urn
+				i(114217),	-- Pristine Decree Scrolls
+				i(114215),	-- Pristine Dreamcatcher
+				i(114221),	-- Pristine Outcast Dreamcatcher
+				i(114218),	-- Pristine Solar Orb
+				i(114219),	-- Pristine Sundial
+				i(114220),	-- Pristine Talonpriest Mask
 			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({cost={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{	-- TODO: someone can add different fragment costs within as needed
@@ -248,6 +259,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114151),	-- Warsong Ceremonial Pike
 				i(114159),	-- Weighted Chopping Axe
 				i(114145),	-- Wolfskin Snowshoes
+				-- Pristines
+				i(114172),	-- Pristine Ancestral Talisman
+				i(114164),	-- Pristine Barbed Fishing Hook
+				i(114158),	-- Pristine Blackrock Razor
+				i(114166),	-- Pristine Calcified Eye In A Jar
+				i(114168),	-- Pristine Ceremonial Tattoo Needles
+				i(114170),	-- Pristine Cracked Ivory Idol
+				i(114178),	-- Pristine Doomsday Prophecy
+				i(114156),	-- Pristine Elemental Bellows
+				i(114142),	-- Pristine Fang-Scarred Frostwolf Axe
+				i(114174),	-- Pristine Flask of Blazegrease
+				i(114144),	-- Pristine Frostwolf Ancestry Scrimshaw
+				i(114176),	-- Pristine Gronn-Tooth Necklace
+				i(114162),	-- Pristine Hooked Dagger
+				i(114154),	-- Pristine Metalworker's Hammer
+				i(114150),	-- Pristine Screaming Bullroarer
+				i(114148),	-- Pristine Warsinger's Drums
+				i(114152),	-- Pristine Warsong Ceremonial Pike
+				i(114160),	-- Pristine Weighted Chopping Axe
+				i(114146),	-- Pristine Wolfskin Snowshoes
 			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({cost={{"c",ARCH_CURRENCY_OGRE,50}}},{	-- TODO: someone can add different fragment costs within as needed
@@ -272,6 +303,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114183),	-- Stone Manacles
 				i(114181),	-- Stonemaul Succession Stone
 				i(117384),	-- Warmaul of the Warmaul Chieftain
+				-- Pristines
+				i(114210),	-- Pristine Eye of Har'guun the Blind
+				i(114208),	-- Pristine Gladiator's Shield
+				i(114213),	-- Pristine Imperial Decree Stele
+				i(114209),	-- Pristine Mortar and Pestle
+				i(114186),	-- Pristine Ogre Figurine
+				i(114188),	-- Pristine Pictogram Carving
+				i(114212),	-- Pristine Rylak Riding Harness
+				i(114211),	-- Pristine Stone Dentures
+				i(114184),	-- Pristine Stone Manacles
+				i(114182),	-- Pristine Stonemaul Succession Stone
 			},
 		})),
 	}),
