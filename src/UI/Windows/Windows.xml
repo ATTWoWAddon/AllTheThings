@@ -51,7 +51,7 @@
 	<Script file="Toys.lua"/>
 	<Script file="Tradeskills.lua"/>
 	<Script file="Retail/Tradeskills.lua"/>
-	<Script file="White Collectible Transmog.lua"/>
+	<Script file="White and Gray Transmog.lua"/>
 	<Script file="World Quests.lua"/>
 
 	<Frame name="AllTheThings_Tab" virtual="true" inherits="QuestLogTabButtonTemplate">

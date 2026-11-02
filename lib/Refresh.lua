@@ -159,6 +159,147 @@ OneTimeFixFunctions.ConvertAccountModeFiltersForProfiles = function(currentChara
 		app.print("One-Time conversion of Profile Filter sets performed!")
 	end)
 end
+--- Saved global-window fields are a dictionary and may include custom persistent values.
+---@class ATTWhiteGrayTransmogGlobalWindowSettings
+---@field visible boolean? # Whether the window is visible.
+---@field ShouldAutomaticallyOpen boolean? # Whether the window opens automatically.
+---@field point string? # Saved anchor point on the window.
+---@field relativePoint string? # Saved anchor point on the relative frame.
+---@field relativeTo string? # Saved global frame name used as the window's anchor.
+---@field x number? # Horizontal offset.
+---@field y number? # Vertical offset.
+---@field width number? # Saved window width.
+---@field height number? # Saved window height.
+---@field isLocked boolean? # Whether the window is locked.
+---@field movable boolean? # Whether the window is movable.
+---@field resizable boolean? # Whether the window is resizable.
+---@field scale number? # Saved frame scale.
+---@field alpha number? # Saved frame opacity.
+---@field [string] any # Persisted window fields can contain arbitrary custom data.
+
+--- Profile window settings combine an ordered point list with named layout options.
+---@class ATTWhiteGrayTransmogProfilePoint
+---@field Point string? # Anchor point on the window, when saved.
+---@field PointRef string? # Anchor point on the relative frame, when saved.
+---@field X number? # Horizontal offset, when saved.
+---@field Y number? # Vertical offset, when saved.
+
+---@class ATTWhiteGrayTransmogProfileWindowSettings
+---@field Width number? # Saved profile width.
+---@field Height number? # Saved profile height.
+---@field Locked boolean? # Whether the window is locked.
+---@field visible boolean? # Whether the window is visible.
+---@field [number] ATTWhiteGrayTransmogProfilePoint # Ordered points; the last applied point can determine the final position.
+---@field [string] any # Named or custom saved options outside the point list can have arbitrary values.
+
+---@class ATTWhiteGrayTransmogSavedProfile
+---@field Windows table<string, ATTWhiteGrayTransmogProfileWindowSettings>? # Window settings keyed by window suffix.
+---@field [string] any # Other profile fields can contain arbitrary saved data.
+
+---@class ATTWhiteGrayTransmogSavedVariables
+---@field Windows table<string, ATTWhiteGrayTransmogGlobalWindowSettings>? # Global window settings keyed by window suffix.
+
+--- Merge global SavedVariables window dictionaries; every non-nil target value wins, including false and zero.
+---@param windowSettings table<string, ATTWhiteGrayTransmogGlobalWindowSettings> # Global window settings indexed by suffix.
+---@param oldSuffix string # Previously persisted window suffix.
+---@param newSuffix string # Canonical window suffix.
+local function MergeWindowSettings(windowSettings, oldSuffix, newSuffix)
+	local oldSettings = windowSettings[oldSuffix]
+	if type(oldSettings) ~= "table" then return end
+
+	local newSettings = windowSettings[newSuffix]
+	if newSettings == nil then
+		windowSettings[newSuffix] = oldSettings
+	elseif type(newSettings) == "table" then
+		for key,value in pairs(oldSettings) do
+			if newSettings[key] == nil then
+				newSettings[key] = value
+			end
+		end
+	else
+		return
+	end
+	windowSettings[oldSuffix] = nil
+end
+--- Merge profile settings without combining two ordered point lists.
+--- If the target already has any numeric point, preserve its whole point list and only fill missing named fields.
+---@param windowSettings table<string, ATTWhiteGrayTransmogProfileWindowSettings> # Per-profile window settings indexed by suffix.
+---@param oldSuffix string # Previously persisted window suffix.
+---@param newSuffix string # Canonical window suffix.
+local function MergeProfileWindowSettings(windowSettings, oldSuffix, newSuffix)
+	local oldSettings = windowSettings[oldSuffix]
+	if type(oldSettings) ~= "table" then return end
+
+	local newSettings = windowSettings[newSuffix]
+	if newSettings == nil then
+		windowSettings[newSuffix] = oldSettings
+	elseif type(newSettings) == "table" then
+		-- Profile points are applied in sequence, so mixing old and new points can override the new position.
+		local hasNewPoints = false
+		for key in pairs(newSettings) do
+			if type(key) == "number" then
+				hasNewPoints = true
+				break
+			end
+		end
+		for key,value in pairs(oldSettings) do
+			if type(key) ~= "number" or not hasNewPoints then
+				if newSettings[key] == nil then
+					newSettings[key] = value
+				end
+			end
+		end
+	else
+		return
+	end
+	windowSettings[oldSuffix] = nil
+end
+--- Runs once from the SavedVariables-available handler, before Settings initialization and window OnInit.
+--- The runner records its persistent one-time marker before calling this migration.
+--- The callback ignores the runner's character and account arguments.
+OneTimeFixFunctions.RenameWhiteAndGrayTransmogWindow = function()
+	local oldSuffix = "White Collectible Transmog"
+	local newSuffix = "White and Gray Transmog"
+	local oldFrameName = "ATTWindow" .. oldSuffix
+	local newFrameName = "ATTWindow" .. newSuffix
+	---@type table<string, ATTWhiteGrayTransmogGlobalWindowSettings>?
+	local savedWindows = AllTheThingsSavedVariables and AllTheThingsSavedVariables.Windows
+
+	if type(savedWindows) == "table" then
+		MergeWindowSettings(savedWindows, oldSuffix, newSuffix)
+		for _,settings in pairs(savedWindows) do
+			if type(settings) == "table" and settings.relativeTo == oldFrameName then
+				settings.relativeTo = newFrameName
+			end
+		end
+	end
+
+	---@type table<string, ATTWhiteGrayTransmogSavedProfile>?
+	local profiles = AllTheThingsProfiles and AllTheThingsProfiles.Profiles
+	if type(profiles) == "table" then
+		for _,profile in pairs(profiles) do
+			if type(profile) == "table" and type(profile.Windows) == "table" then
+				MergeProfileWindowSettings(profile.Windows, oldSuffix, newSuffix)
+			end
+		end
+	end
+
+end
+--- Run on every login after saved settings load; prebuild the lazy target before dependent windows apply anchors.
+--- GetWindow constructs the frame without showing it; this also covers logins after the one-time migration marker is set.
+app.AddEventHandler("OnAfterSavedVariablesAvailable", function()
+	---@type table<string, ATTWhiteGrayTransmogGlobalWindowSettings>?
+	local savedWindows = AllTheThingsSavedVariables and AllTheThingsSavedVariables.Windows
+	if type(savedWindows) ~= "table" then return end
+	local suffix = "White and Gray Transmog"
+	local frameName = "ATTWindow" .. suffix
+	for _,settings in pairs(savedWindows) do
+		if type(settings) == "table" and settings.relativeTo == frameName then
+			app:GetWindow(suffix)
+			return
+		end
+	end
+end)
 local function OneTimeFixes(currentCharacter, accountWideData, characterData)
 	if not accountWideData.OneTimeFixes then accountWideData.OneTimeFixes = {} end
 	local appliedFixes = accountWideData.OneTimeFixes

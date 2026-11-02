@@ -4,9 +4,9 @@ local tinsert = tinsert;
 local L = app.L;
 
 -- Implementation
-app:CreateWindow("White Collectible Transmog", {
-	Commands = { "attwct" },
-	RootCommands = { "wct" },
+app:CreateWindow("White and Gray Transmog", {
+	Commands = { "attwgt", "attwct" },
+	RootCommands = { "wgt", "wct" },
 	OnLoad = function(self, settings)
 		self:SetData(app.CreateRawText(L.WHITE_GRAY_TRANSMOG, {
 			icon = app.asset("Interface_Newly_Added"),
