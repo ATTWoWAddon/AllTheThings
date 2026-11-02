@@ -1599,6 +1599,7 @@ MobileDB.GameObject = {
 	[239067] = true,	-- War Mill Work Order
 	[239143] = true,	-- Glass of Warm Milk [H]
 	[239171] = true,	-- Glass of Warm Milk [A]
+	[239238] = true,	-- Herb Garden Work Order
 	[239452] = true,	-- Demon Ward (q:37658)
 	[239692] = true,	-- Arcane-infused Egg (q:37727)
 	[239775] = true,	-- Coral Trident Rack
