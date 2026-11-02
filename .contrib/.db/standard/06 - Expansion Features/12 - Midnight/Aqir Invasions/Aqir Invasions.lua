@@ -285,6 +285,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							qg = 262758,	-- Zul'jarra
 							coord = { 32.0, 69.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 						}),
+						hqt(98431, {	-- Stay awhile and listen: Memorial Wreath
+							name = "Stay awhile and listen: Memorial Wreath",
+							sourceQuest = 95812,	-- Last Wishes
+							qg = 268839,	-- Memorial Wreath
+							coord = { 35.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+						}),
 						q(95813, {	-- What the World Sees
 							sourceQuest = 95812,	-- Last Wishes
 							qg = 262877,	-- Orweyna

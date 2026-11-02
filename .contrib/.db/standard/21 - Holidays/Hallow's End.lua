@@ -4300,6 +4300,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			o(691654, {	-- Ghost Gear
 				coords = {
 					{ 54.1, 33.8, FOUNDERS_POINT },
+					{ 51.7, 54.3, RAZORWIND_SHORES }
 				},
 				timeline = { ADDED_12_1_5 },
 				groups = { i(249386) },	-- Ghost Gear

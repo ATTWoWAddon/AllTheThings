@@ -59,7 +59,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 				i(274272, {	-- Amani Equipment Chest
 					timeline = { ADDED_12_1_5, REMOVED_12_2_0 },
 					cost = { { "c", VOIDLIGHT_MARL, 750 } },
-					sym = {
+					--[[sym = {	-- TODO: Not Accurate Enough
 						-- MID Season 2 dungeons (Normal+ difficulty)
 						{"select", "instanceID"
 							,1030	-- Temple of Sethraliss
@@ -75,7 +75,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 						{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
 						{"extract", "itemID"},
 						SYM.SUB.INVTYPE_ALL_SLOTS,
-					},
+					},--]]
 				}),
 			},
 		}),
