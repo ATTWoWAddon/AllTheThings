@@ -337,7 +337,7 @@ local DefaultFields = {
 	-- end,
 };
 
-
+---@type function
 local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions = {}
@@ -955,17 +955,23 @@ app.SwapClassDefinitionMethod = function(className, classField, newFunc)
 	end
 end
 -- Setup a simple true/false swap for the 'collectible' field of the given class based on the tracked setting name
-app.AddSimpleCollectibleSwap = function(classname, setting)
-	local function AssignCollectibleFunction()
+-- makeFunction() runs at refresh time and returns the collectible function for the current settings
+app.AddCollectibleSwap = function(classname, setting, makeFunction)
+	local function Assign()
 		-- app.PrintDebug("Swapping",classname,".collectible","via",setting,app.Settings.Collectibles[setting])
 		if app.Settings.Collectibles[setting] then
-			app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnTrue)
+			app.SwapClassDefinitionMethod(classname, "collectible", makeFunction())
 		else
-			app.SwapClassDefinitionMethod(classname,"collectible",app.ReturnFalse)
+			app.SwapClassDefinitionMethod(classname, "collectible", app.ReturnFalse)
 		end
 	end
-	app.AddEventHandler("OnSettingsNeedsRefresh", AssignCollectibleFunction);
-	app.AddEventHandler("OnStartup", AssignCollectibleFunction);
+	app.AddEventHandler("OnSettingsNeedsRefresh", Assign)
+	app.AddEventHandler("OnStartup", Assign)
+end
+
+-- swaps a class 'collectible' function between ReturnTrue/ReturnFalse
+app.AddSimpleCollectibleSwap = function(classname, setting)
+	app.AddCollectibleSwap(classname, setting, function() return app.ReturnTrue end)
 end
 
 local OverrideBaseClassFields = {
