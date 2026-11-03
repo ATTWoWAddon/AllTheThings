@@ -2,6 +2,7 @@ local _, app = ...
 local L = app.L
 
 -- Globals
+---@type function,function,function,function,function,function,function
 local setmetatable, rawget, select, tostring, ipairs, pairs, tonumber
 	= setmetatable, rawget, select, tostring, ipairs, pairs, tonumber
 
@@ -162,6 +163,10 @@ do
 		collected = function(t)
 			return app.TypicalCharacterCollected("Quests", t.questID)
 		end,
+	}, function(t) return t.questID end,
+	"WithDualQuest", {
+		ImportFrom = "NPCWithQuest",
+		ImportFields = app.EmptyTable, -- this will soft-copy all fields from the ImportFrom class
 		-- questID is sometimes a faction-based questID for a single NPC (i.e. BFA Warfront Rares), thanks Blizzard
 		questID = function(t)
 			local qa = t.questIDA
@@ -195,14 +200,14 @@ do
 		end,
 		-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
 		customTotal = function(t)
-			if app.MODE_DEBUG_OR_ACCOUNT and t.questIDA and t.collectible then
+			if app.MODE_DEBUG_OR_ACCOUNT and t.collectible then
 				return 1
 			end
 		end,
 		customProgress = function(t)
-			return (t.otherFactionQuestID and IsQuestFlaggedCompleted(t.otherFactionQuestID)) and 1 or 0
+			return IsQuestFlaggedCompleted(t.otherFactionQuestID) and 1 or 0
 		end,
-	}, (function(t) return t.questID or t.questIDA or t.questIDH end))
+	}, function(t) return t.questIDA or t.questIDH end)
 end
 
 -- Header Lib
