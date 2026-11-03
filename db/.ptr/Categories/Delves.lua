@@ -2476,24 +2476,6 @@ o(454207,{coords={
 crit(69563,{achID=40816,id=4})}})})}})}}),
 x(12,{awp=120001,g={
 h(-674,{rwp=120100,u=2,g={
-m(2507,{coords={
-[2405]={{61.2,71.4}}},icon=7452103,u=2,g={
-n(252101,{isWeekly=1,questID=96417,u=2,g={
-ach(61797,{u=2,g={
-s(302720,263413,{f=2,loc=40,u=2}),
-crit(111292,{achID=61906,id=4})}}),
-p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687,u=2}),
-hqt(95155,{an="n:252892",u=2})}}),
-n(252892,{isWeekly=1,questID=96416,u=2,g={
-ach(61808,{rwp=120001,u=2,g={
-title(689,{u=2})}}),
-ach(61799,{u=2,g={
-mnt(1268949,{itemID=263222,lvl=10,u=2})}}),
-ach(61798,{u=2,g={
-title(688,{u=2})}}),
-p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687,u=2}),
-hqt(95154,{an="n:252892",u=2}),
-toy(264413,{awp=120100,b=1,u=2})}})}}),
 h(-12,{u=2,g={
 ach(61800,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},u=2}),
 ach(61801,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547},u=2}),
@@ -2640,25 +2622,6 @@ i(263179,{b=1,lvl=90,questID=93881,spellID=1269871,type="ihqt",u=2})}}),
 flt(100,{u=2,g={
 mnt(1268924,{cost={{"c",3316,10}},itemID=262500,lvl=10,u=2})}})}})}})}}),
 h(-675,{awp=120100,rwp=120200,g={
-m(2634,{coords={
-[2512]={{51.2,30.3}}},icon=7876113,g={
-n(262455,{isWeekly=1,questID=92888,g={
-ach(63326,{
-s(309591,276163,{f=3}),
-crit(115861,{achID=61906,id=4})}),
-s(303636,264971,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=28}),
-s(303635,264970,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=22}),
-p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687}),
-s(303846,265368,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=25}),
-s(303844,265366,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=21}),
-s(303845,265367,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=20})}}),
-n(265500,{isWeekly=1,questID=97913,g={
-ach(63334,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",rwp=120100,u=2,g={
-title(776,{u=2})}}),
-ach(63333,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",g={
-mnt(1297404,{itemID=275657})}}),
-ach(63332,{
-title(775)})}})}}),
 h(-12,{
 ach(62889,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635}}),
 ach(62890,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635}}),
@@ -3705,6 +3668,43 @@ o(618288,{coords={
 crit(111275,{achID=61896,id=2})}})}),
 h(-47,{
 i(266438,{b=1})})}}),
+m(2507,{coords={
+[2405]={{61.2,71.4}}},icon=7452103,g={
+n(252101,{isWeekly=1,questID=96417,g={
+ach(61797,{rwp=120100,u=2,g={
+s(302720,263413,{f=2,loc=40,u=2}),
+crit(111292,{achID=61906,id=4})}}),
+p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687}),
+hqt(95155,{an="n:252892"})}}),
+n(252892,{isWeekly=1,questID=96416,g={
+ach(61808,{rwp=120001,u=2,g={
+title(689,{u=2})}}),
+ach(61799,{rwp=120100,u=2,g={
+mnt(1268949,{itemID=263222,lvl=10,u=2})}}),
+ach(61798,{rwp=120100,u=2,g={
+title(688,{u=2})}}),
+p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687}),
+hqt(95154,{an="n:252892"}),
+toy(264413,{awp=120100,b=1})}})}}),
+m(2634,{awp=120100,coords={
+[2512]={{51.2,30.3}}},icon=7876113,g={
+n(262455,{isWeekly=1,questID=92888,g={
+ach(63326,{rwp=120200,g={
+s(309591,276163,{f=3}),
+crit(115861,{achID=61906,id=4})}}),
+s(303636,264971,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=28}),
+s(303635,264970,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=22}),
+p(4958,{b=1,itemID=262391,npcID=256265,spellID=1268687}),
+s(303846,265368,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=25}),
+s(303844,265366,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=21}),
+s(303845,265367,{description="The first kill per week per character has a somewhat higher chance to grant you this item.",f=20})}}),
+n(265500,{isWeekly=1,questID=97913,g={
+ach(63334,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",rwp=120100,u=2,g={
+title(776,{u=2})}}),
+ach(63333,{description="Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",rwp=120200,g={
+mnt(1297404,{itemID=275657})}}),
+ach(63332,{rwp=120200,g={
+title(775)}})}})}}),
 m(2647,{awp=120105,coords={
 [2395]={{63,72.2}}},crs={275658},icon=3601564,lore="An ancient Amani funeral complex previously sealed for centuries. Once again opened, the complex is combed by looters and Vilebranch for relics while the interred spirits defend it with deadly force.",maps={2648},g={
 h(-12,{
