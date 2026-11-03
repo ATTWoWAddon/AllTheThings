@@ -56,47 +56,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 		-- TODO 12.1 - Mark permanent Delve content from S1 with proper timelines
 		timeline = { ADDED_12_0_1_SEASONSTART, REMOVED_12_1_0 },
 		groups = {
-			-- MID Season 1 Boss
-			m(TORMENTS_RISE, {
-				icon = 7452103,
-				coord = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
-				timeline = { ADDED_12_0_1_SEASONSTART },
-				groups = {
-					n(252101, {	-- Nullaeus ?
-						questID = 96417,
-						isWeekly = true,
-						groups = {
-							ach(61797, {	-- My Shady Nemesis
-								timeline = { REMOVED_12_1_0 },
-								groups = { i(263413) },	-- Nullaeus Domaneye (COSMETIC!)
-							}),
-							i(262391),	-- Ominous Dominus (PET!)
-							hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
-						},
-					}),
-					n(252892, {	-- Nullaeus ??
-						questID = 96416,
-						isWeekly = true,
-						groups = {
-							ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
-								timeline = { REMOVED_12_0_1_SEASONSTART },
-								groups = { title(689) },	-- <Name>, Fabled Vanquisher of Nullaeus
-							}),
-							ach(61799, {	-- Let Me Solo Him: Nullaeus
-								timeline = { REMOVED_12_1_0 },
-								groups = { i(263222) },	-- Arcanovoid Construct (MOUNT!)
-							}),
-							ach(61798, {	-- Lighting the Dark
-								timeline = { REMOVED_12_1_0 },
-								groups = { title(688) },	-- <Name> the Ominous
-							}),
-							i(262391),	-- Ominous Dominus (PET!)
-							hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
-							i(264413, { timeline = { ADDED_12_1_0 } }),	-- Dominating Victory (TOY!)
-						},
-					}),
-				},
-			}),
 			n(ACHIEVEMENTS, {
 				mapped(ach(61800)),	-- Midnight Delves: Tier 4 (Season 1)
 				mapped(ach(61801)),	-- Midnight Delves: Tier 5 (Season 1)

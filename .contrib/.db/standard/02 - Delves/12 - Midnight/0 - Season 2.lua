@@ -71,56 +71,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 	n(DELVES_MID_S2, {
 		timeline = { ADDED_12_1_0, REMOVED_12_2_0 },
 		groups = {
-			-- MID Season 2 Boss
-			m(VENOMFALL_DEEPS, {
-				icon = 7876113,
-				coord = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
-				groups = {
-					n(262455, {	-- Azta'rec ?
-						questID = 92888,
-						isWeekly = true,
-						groups = {
-							ach(63326, {	-- My Venomous Nemesis
-								i(276163),	-- Apophic Patagia (COSMETIC!)
-							}),
-							i(264971, {	-- Annihilation Rod (COSMETIC!)
-								description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-							}),
-							i(264970, {	-- Oblivion's Edge (COSMETIC!)
-								description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-							}),
-							i(262391),	-- Ominous Dominus (PET)
-							i(265368, {	-- Twilight Destroyer (COSMETIC!)
-								description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-							}),
-							i(265366, {	-- Twilight Executioner (COSMETIC!)
-								description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-							}),
-							i(265367, {	-- Twilight Fang (COSMETIC!)
-								description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
-							}),
-						},
-					}),
-					n(265500, {	-- Azta'rec ??
-						questID = 97913,	-- one-time quest, determine weekly
-						isWeekly = true,
-						groups = {
-							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
-								description = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
-								timeline = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
-								groups = { title(776) },	-- <Name>, Fabled Vanquisher of Azta'rec
-							}),
-							ach(63333, {	-- Let Me Solo Him: Azta'rec
-								description = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
-								groups = { i(275657) },	-- Apophic Soul Crusher (MOUNT!)
-							}),
-							ach(63332, {	-- Purging the Poison
-								title(775),	-- <Name> the Poisonous
-							}),
-						},
-					}),
-				},
-			}),
 			n(ACHIEVEMENTS, {
 				mapped(ach(62889)),	-- Midnight Delves: Tier 4 (Season 2)
 				mapped(ach(62890)),	-- Midnight Delves: Tier 5 (Season 2)

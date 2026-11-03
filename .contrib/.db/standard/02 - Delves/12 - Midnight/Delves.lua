@@ -934,14 +934,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 			},
 		}),
 	}),
-	n(RARES, {
-		-- TODO: Alex - I don't think there any point to source them but in case there will be achievement for it or whatever
-		--n(253257),	-- Abandoned Sentinel
-		--n(253249),	-- Clever Saptor
-		--n(207482),	-- Invasive Sporecap // alpha
-		--n(253304),	-- Paingolin
-		--n(253267),	-- Wailing Spirit
-	}),
 	n(SPECIAL, {
 		o(609862, {	-- Lordaeron's Loss (Gravestone)
 			lore = "Died in Lordaeron or Undercity.",	-- This is visible only AFTER the acquisition.
@@ -1820,6 +1812,99 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 			}),
 			n(REWARDS, {
 				i(266438),	-- Idol of Pestilence (QS!)
+			}),
+		},
+	}),
+	m(TORMENTS_RISE, {
+		icon = 7452103,
+		coord = { 61.2, 71.4, MAP.MIDNIGHT.VOIDSTORM },
+		timeline = { ADDED_12_0_1_SEASONSTART },
+		groups = {
+			n(252101, {	-- Nullaeus ?
+				questID = 96417,
+				isWeekly = true,
+				groups = {
+					ach(61797, {	-- My Shady Nemesis
+						timeline = { REMOVED_12_1_0 },
+						groups = { i(263413) },	-- Nullaeus Domaneye (COSMETIC!)
+					}),
+					i(262391),	-- Ominous Dominus (PET!)
+					hqt(95155, name(HEADERS.NPC, 252892)),	-- Nullaeus ? (first time)
+				},
+			}),
+			n(252892, {	-- Nullaeus ??
+				questID = 96416,
+				isWeekly = true,
+				groups = {
+					ach(61808, {	-- Fabled Let Me Solo Him: Nullaeus
+						timeline = { REMOVED_12_0_1_SEASONSTART },
+						groups = { title(689) },	-- <Name>, Fabled Vanquisher of Nullaeus
+					}),
+					ach(61799, {	-- Let Me Solo Him: Nullaeus
+						timeline = { REMOVED_12_1_0 },
+						groups = { i(263222) },	-- Arcanovoid Construct (MOUNT!)
+					}),
+					ach(61798, {	-- Lighting the Dark
+						timeline = { REMOVED_12_1_0 },
+						groups = { title(688) },	-- <Name> the Ominous
+					}),
+					i(262391),	-- Ominous Dominus (PET!)
+					hqt(95154, name(HEADERS.NPC, 252892)),	-- Nullaeus ?? (first time)
+					i(264413, { timeline = { ADDED_12_1_0 } }),	-- Dominating Victory (TOY!)
+				},
+			}),
+		},
+	}),
+	m(VENOMFALL_DEEPS, {
+		icon = 7876113,
+		coord = { 51.2, 30.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+		timeline = { ADDED_12_1_0 },
+		groups = {
+			n(262455, {	-- Azta'rec ?
+				questID = 92888,
+				isWeekly = true,
+				groups = {
+					ach(63326, {	-- My Venomous Nemesis
+						timeline = { REMOVED_12_2_0 },
+						groups = { i(276163) },	-- Apophic Patagia (COSMETIC!)
+					}),
+					i(264971, {	-- Annihilation Rod (COSMETIC!)
+						description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+					}),
+					i(264970, {	-- Oblivion's Edge (COSMETIC!)
+						description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+					}),
+					i(262391),	-- Ominous Dominus (PET)
+					i(265368, {	-- Twilight Destroyer (COSMETIC!)
+						description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+					}),
+					i(265366, {	-- Twilight Executioner (COSMETIC!)
+						description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+					}),
+					i(265367, {	-- Twilight Fang (COSMETIC!)
+						description = "The first kill per week per character has a somewhat higher chance to grant you this item.",
+					}),
+				},
+			}),
+			n(265500, {	-- Azta'rec ??
+				questID = 97913,	-- one-time quest, determine weekly
+				isWeekly = true,
+				groups = {
+					ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
+						description = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+						timeline = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
+						groups = { title(776) },	-- <Name>, Fabled Vanquisher of Azta'rec
+					}),
+					ach(63333, {	-- Let Me Solo Him: Azta'rec
+						description = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+						timeline = { REMOVED_12_2_0 },
+						groups = { i(275657) },	-- Apophic Soul Crusher (MOUNT!)
+					}),
+					ach(63332, {	-- Purging the Poison
+						timeline = { REMOVED_12_2_0 },
+						groups = { title(775) },	-- <Name> the Poisonous
+					}),
+				},
 			}),
 		},
 	}),
