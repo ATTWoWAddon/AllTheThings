@@ -620,10 +620,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.VETERAN,
-					bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
-					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
-				),
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -639,6 +635,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					Boss(DIURNA),
 					Boss(RASZAGETH),
 				}),
+				RevivalCatalyst(UPGRADETRACKS.VETERAN,
+					bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ERANOG, {
@@ -667,9 +667,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
-					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
-				),
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						provider = { "n", 193460 },	-- Kalecgos
@@ -687,6 +684,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(KUROG),
 				Boss(DIURNA),
 				Boss(RASZAGETH),
+				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				CommonBossDrops({
@@ -707,10 +707,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.HERO,
-					bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
-					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
-				),
 				CommonBossDrops({
 					ig(200686),	-- Primal Focus
 				}),
@@ -731,12 +727,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				Boss(KUROG),
 				Boss(DIURNA),
 				Boss(RASZAGETH),
+				RevivalCatalyst(UPGRADETRACKS.HERO,
+					bubbleDownFiltered({bonusID=1},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.HEROIC))
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.MYTH,
-					bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
-					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
-				),
 				CommonBossDrops({
 					ig(190455),	-- Concentrated Primal Focus
 				}),
@@ -807,6 +803,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 				}),
+				RevivalCatalyst(UPGRADETRACKS.MYTH,
+					bubbleDownFiltered({bonusID=450},FILTERFUNC_itemID,
+					ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
+				),
 			}),
 		},
 	}),

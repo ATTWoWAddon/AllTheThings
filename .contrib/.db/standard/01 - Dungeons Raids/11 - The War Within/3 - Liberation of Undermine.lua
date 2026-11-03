@@ -675,9 +675,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.VETERAN,
-					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
-				),
 				ZoneDrops({
 				}),
 				CommonBossDrops({
@@ -709,6 +706,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.LFR)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(VEXIE, {
@@ -769,9 +769,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.CHAMPION,
-					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
-				),
 				CommonBossDrops({
 					currency(CARVED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
@@ -801,6 +798,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(VEXIE),
@@ -817,9 +817,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.HERO,
-					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
-				),
 				CommonBossDrops({
 					currency(RUNED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
@@ -847,11 +844,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				TheCatalyst(UPGRADETRACKS.MYTH,
-					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
-				),
 				CommonBossDrops({
 					currency(GILDED_UNDERMINE_CREST, {
 						timeline = { REMOVED_11_2_0 },
@@ -902,6 +899,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(LIBERATION_OF_UNDERMINE_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 			}),
 			n(VENDORS, {
 				--[[ add new vendor also to all the curios

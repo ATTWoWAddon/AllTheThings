@@ -726,9 +726,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.VETERAN,
-					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.LFR)
-				),
 				ZoneDrops({}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
@@ -754,6 +751,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						}),
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.LFR)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(PLEXUS, {
@@ -782,9 +782,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.CHAMPION,
-					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.NORMAL)
-				),
 				CommonBossDrops({
 					currency(CARVED_ETHEREAL_CREST, {
 						timeline = { REMOVED_12_0_1_LAUNCH },
@@ -804,6 +801,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
@@ -825,9 +825,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
-				TheCatalyst(UPGRADETRACKS.HERO,
-					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.HEROIC)
-				),
 				CommonBossDrops({
 					currency(RUNED_ETHEREAL_CREST, {
 						timeline = { REMOVED_12_0_1_LAUNCH },
@@ -847,11 +844,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				TheCatalyst(UPGRADETRACKS.MYTH,
-					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.MYTHIC)
-				),
 				CommonBossDrops({
 					currency(GILDED_ETHEREAL_CREST, {
 						timeline = { REMOVED_12_0_1_LAUNCH },
@@ -897,6 +894,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				TheCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 			}),
 		},
 	}),

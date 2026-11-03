@@ -886,12 +886,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 }}).AddGroups({
-				CreationCatalyst(UPGRADETRACKS.VETERAN,
-					sharedData({
-						cost = { { "i", 190189, 2070 } },	-- 2070 Sandworn Relic, Full set cost from Vendor
-					},
-					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
-				),
 				ZoneDrops(),
 				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					Boss(VIGILANT_GUARDIAN),
@@ -912,6 +906,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				header(HEADERS.Achievement, 15418, {	-- The Grand Design
 					Boss(THE_JAILER),
 				}),
+				CreationCatalyst(UPGRADETRACKS.VETERAN,
+					sharedData({
+						cost = { { "i", 190189, 2070 } },	-- 2070 Sandworn Relic, Full set cost from Vendor
+					},
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(VIGILANT_GUARDIAN, {
@@ -955,9 +955,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190967,	-- Mourne Fragment (QI!)
 					}),
 				}),
-				CreationCatalyst(UPGRADETRACKS.CHAMPION,
-					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
-				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -970,6 +967,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				Boss(LORDS_OF_DREAD),
 				Boss(RYGELON),
 				Boss(THE_JAILER),
+				CreationCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
@@ -1008,9 +1008,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190966,	-- Mourne Fragment (QI!)
 					}),
 				}),
-				CreationCatalyst(UPGRADETRACKS.HERO,
-					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
-				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN),
 				Boss(SKOLEX_THE_INSATIABLE_RAVENER),
@@ -1023,6 +1020,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				Boss(LORDS_OF_DREAD),
 				Boss(RYGELON),
 				Boss(THE_JAILER),
+				CreationCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
@@ -1034,9 +1034,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						qi = 190959,	-- Mourne Fragment (QI!)
 					}),
 				}),
-				CreationCatalyst(UPGRADETRACKS.MYTH,
-					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
-				),
 				ZoneDrops(),
 				Boss(VIGILANT_GUARDIAN, {
 					ach(15479),	-- Mythic: Vigilant Guardian
@@ -1091,6 +1088,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					ach(15474),	-- Mythic The Jailer Guild Run
 					ig(190768),	-- Zereth Overseer (MOUNT!)
 				}),
+				CreationCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
+				),
 			}),
 		},
 	}),

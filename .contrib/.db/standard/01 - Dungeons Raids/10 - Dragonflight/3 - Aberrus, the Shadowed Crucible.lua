@@ -773,9 +773,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.VETERAN,
-					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
-				),
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
 						timeline = { REMOVED_10_2_0 },
@@ -805,6 +802,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(204465),	-- Voice of the Silent Star
 					}),
 				}),
+				RevivalCatalyst(UPGRADETRACKS.VETERAN,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.LFR)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(KAZZARA, {
@@ -868,9 +868,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
-					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
-				),
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						provider = { "n", 201574 },	-- Wrathion
@@ -900,6 +897,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 					i(204465, {ItemAppearanceModifierID=1}),	-- Voice of the Silent Star
 				}),
+				RevivalCatalyst(UPGRADETRACKS.CHAMPION,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.NORMAL)
+				),
 			}),
 			-- This is needed for Achievement distribution
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
@@ -916,9 +916,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.HERO,
-					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
-				),
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						provider = { "n", 201574 },	-- Wrathion
@@ -948,11 +945,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						up = IGNORED_VALUE,
 					}),
 				}),
+				RevivalCatalyst(UPGRADETRACKS.HERO,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.HEROIC)
+				),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
-				RevivalCatalyst(UPGRADETRACKS.MYTH,
-					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
-				),
 				n(QUESTS, {
 					q(76086, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (M)
 						provider = { "n", 201574 },	-- Wrathion
@@ -1016,6 +1013,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						sym = {{"sub","instance_tier",1208,DIFFICULTY.RAID.MYTHIC}},
 					}),
 				}),
+				RevivalCatalyst(UPGRADETRACKS.MYTH,
+					ALL_CLASS_TIERS_HELPER(TIER_ABERRUS, DIFFICULTY.RAID.MYTHIC)
+				),
 			}),
 		},
 	}),
