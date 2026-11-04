@@ -62,6 +62,7 @@ i(228502);	-- Piccolo of the Flaming Fire (Blizzard... Why did you duplicate thi
 --   FOREVER   --
 -----------------
 i(276236);	-- Holstered Replica Ironforge Air Rifle
+i(289439);	-- Pouch of Violet Dust
 i(280740);	-- Shen'dorei Windwell
 
 -----------------

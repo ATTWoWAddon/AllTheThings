@@ -37,5 +37,7 @@ p(5138,{b=1,itemID=280614,npcID=271867,spellID=1309420,u=3}),
 p(5159,{b=1,itemID=281166,npcID=272330,spellID=1310331,u=3}),
 s(311584,280729,{b=1,f=9,u=3}),
 mnt(1309405,{b=1,itemID=280611,lvl=40,u=3}),
-p(5160,{b=1,itemID=281167,npcID=272329,spellID=1310330,u=3})}})}})}})}})
+p(5160,{b=1,itemID=281167,npcID=272329,spellID=1310330,u=3})}})}})}}),
+h(-818,{
+toy(289439,{awp=16001,description="Awarded as a Twitch Mystery Drop during the WoW: Forever launch celebration, only between 4:00 p.m. & 5:00 p.m. Pacific Time on launch day. Viewers watching World of Warcraft streams with Drops enabled had a random chance to receive it; watching the whole hour didn't guarantee one.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nIt is no longer obtainable. A one-hour, luck-based window announced only shortly beforehand is exactly the kind of FOMO that disheartens collectors: it couldn't be earned by playing the game at all, and anyone who was at work, asleep, or simply in-game instead of on Twitch missed it permanently.",rwp=16001})})}})
 end)

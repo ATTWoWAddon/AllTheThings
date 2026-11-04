@@ -1337,6 +1337,7 @@ localize(L.HEADER_NAMES, {
 	[-809] = "Craftsman's Writs",
 	[-810] = "Waylaid Crates",
 	[-811] = "Beta Event",
+	[-818] = "Forever Seasonal Promotions",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1367,6 +1368,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-809] = "Sealed Journeyman's, Expert's and Artisan's Writs drop all over Azeroth and contain a random Craftsman's Writ of that rank. Each writ starts a daily quest to deliver a crafted item to a customer marked on your map, rewarding reputation with the Azeroth Commerce Authority or Durotar Supply and Logistics. You don't need the profession yourself.",
 	[-810] = "Waylaid Crates drop from creatures of level 10 and above all over Azeroth. Read the label to identify the shipment, then fill it with any one of the listed bundles to make a Sealed Crate, and deliver it to your faction's trade representative for Merchant's Favor.",
 	[-811] = "On the last day of the WoW: Forever Beta, low level creatures dropped epic items resembling Molten Core loot. These items were added to the client's Item table but are not obtainable in the live game.",
+	[-818] = "These promotions happened during World of Warcraft: Forever.\n\nThey are listed in the order of their first appearance.",
 })
 localize(L.HEADER_LORE, {
 	[-318] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
@@ -1466,6 +1468,7 @@ localize(L.HEADER_ICONS, {
 	[-809] = 134327,
 	[-810] = 132765,
 	[-811] = 133066,
+	[-818] = 1120721,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

@@ -282,6 +282,7 @@ HeaderAssignments = {
 	["Flexible Raid Vendor"] = -345,
 	["Flight Paths"] = -32,
 	["Followers"] = -33,
+	["Forever Seasonal Promotions"] = -818,
 	["Forged Gladiator: The War Within Season 1"] = -288,
 	["Forsaken Deathsquad"] = -396,
 	["Foulspore Cavern"] = -359,
@@ -797,4 +798,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -818
+NextHeaderID = -819
