@@ -399,7 +399,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(252397),	-- Brennadam Grinder (DECOR!)
-			i(283291, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Campfire Grill (DECOR!)
 			i(283299, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Round Cushion (DECOR!)
 			i(283303, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Steel Forge (DECOR!)
 			i(252399),	-- Stormsong Stove (DECOR!)
@@ -779,6 +778,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(246604),	-- Deactivated Atomic Recalibrator (DECOR!)
 			i(246486),	-- Gnomish Tesla Mega-Coil (DECOR!)
+			i(283291, { timeline = { ADDED_12_1_5 } }),	-- Nomad's Campfire Grill (DECOR!)
 			i(246500),	-- Mechagon Miniature Artificial Sun (DECOR!)
 		})),
 		filter(MISC, {

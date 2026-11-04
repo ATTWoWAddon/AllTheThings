@@ -308,6 +308,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(146667, {timeline = {ADDED_7_2_0}}),	-- Rethu's Incessant Courage
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+			i(282124, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge (DECOR!)
 			i(247922),	-- Suramar Fence (DECOR!)
 			i(247909),	-- Suramar Fencepost (DECOR!)
 			i(245408),	-- Tauren Soup Pot (DECOR!)
@@ -429,7 +430,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(258226),	-- Dalaran Auto-Hammer (DECOR!)
 			i(258225),	-- Failed Failure Detection Pylon (DECOR!)
-			i(282124, { timeline = { ADDED_12_1_5 } }),	-- Gleaming Lightforge (DECOR!)
 			i(282144, { timeline = { ADDED_12_1_5 } }),	-- Lightforged Recall Beacon (DECOR!)
 		})),
 		filter(RELICS_F, {

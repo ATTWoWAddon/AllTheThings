@@ -506,6 +506,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					coord = { 24.8, 22.5, LABYRINTH_KINDOJAN },
 					-- Triggers hqt(86371),	-- Trovehunter's Bounty
 				}),
+				o(654948, {	-- Massive Treasure Trove
+				}),
 				o(677414, {	-- Mislaid Curiosity
 					description = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
@@ -561,6 +563,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			timeline = { ADDED_12_1_5 },
 			groups = {
 				q(98842),	-- completion of 9 chambers in one run
+				q(99585),	-- Treasure Chest event
 			},
 		}),
 	}),
