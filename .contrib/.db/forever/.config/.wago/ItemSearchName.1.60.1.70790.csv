@@ -481,7 +481,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 2310,"Embossed Leather Cloak",2,0,0,0,-1,8,0,0,0,13,0,24580,0,32,0,-1,-1
 2311,"White Leather Jerkin",2,0,0,0,-1,8,0,0,0,13,0,24580,0,32,0,-1,-1
 2312,"Fine Leather Gloves",2,0,0,0,-1,10,0,0,0,15,0,24580,0,32,0,-1,-1
-2314,"Toughened Leather Armor",1,0,0,0,-1,19,0,0,0,24,0,24580,0,32,0,-1,-1
+2314,"Toughened Leather Armor",2,0,0,0,-1,19,0,0,0,24,0,24580,0,32,0,-1,-1
 2315,"Gray Leather Boots",2,0,0,0,-1,15,0,0,0,20,0,24580,0,32,0,-1,-1
 2316,"Dark Leather Cloak",2,0,0,0,-1,17,0,0,0,22,0,24580,0,32,0,-1,-1
 2317,"Dark Leather Tunic",2,0,0,0,-1,15,0,0,0,20,0,24580,0,32,0,-1,-1

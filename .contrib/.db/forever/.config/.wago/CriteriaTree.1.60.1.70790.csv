@@ -6728,7 +6728,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 236025,,236023,1,0,118350,1,2
 236026,,236023,1,0,118366,2,2
 236079,"Played in Beta",0,0,4,0,0,0
-236080,"Played in the World of Warcraft: Forever Beta",236079,1,0,118798,0,0
+236080,"Played in the World of Warcraft: Forever Beta",236079,61,0,118798,0,0
 236282,,227701,1,0,118960,1,0
 236283,,227681,1,0,118961,1,0
 236284,,225134,1,0,118962,1,0
