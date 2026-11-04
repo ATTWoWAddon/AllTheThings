@@ -531,7 +531,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.SL, {
 			i(180760),	-- Crown of the Righteous
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
-			i(282126, { timeline = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp (DECOR!)
 			i(262663),	-- Kyrian Floating Lamp (DECOR!)
 			i(260699),	-- Maldraxxian Runic Tablet (DECOR!)
 		})),

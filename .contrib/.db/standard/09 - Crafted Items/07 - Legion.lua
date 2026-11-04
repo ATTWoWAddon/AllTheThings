@@ -697,6 +697,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(151590, {timeline = {ADDED_7_3_0}}),	-- Empyrial Titan Crown
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+			i(282126, { timeline = { ADDED_12_1_5 } }),	-- Hanging Argunite Lamp (DECOR!)
 			i(245557),	-- Shaded Suramar Window (DECOR!)
 			i(258227),	-- Suramar Jeweler's Assortment (DECOR!)
 		})),
