@@ -684,6 +684,8 @@ local function GenerateVariantClasses(class)
 	local fields = class.__class
 	local variants = fields.variants
 	if not variants or #variants == 0 then return end
+	local variantMetas = {}
+	fields.__variants = variantMetas
 	local subbase = function(t, key) return class.__index; end
 	local classname = fields.__type()
 	local variantClone, variantName, variant
@@ -699,13 +701,13 @@ local function GenerateVariantClasses(class)
 		-- raw variant table may be used by other classes, so need to copy it for this specific subclass
 		variantClone = CloneDictionary(fields, CloneDictionary(variant, {base=subbase}))
 		variantName = classname..variant.__name
-		variants[i] = CreateClassMeta(variantClone, variantName);
+		variantMetas[i] = CreateClassMeta(variantClone, variantName);
 		if variant.__onclassgenerated then variant.__onclassgenerated(variantName) end
 	end
 end
 local function AppendVariantConditionals(conditionals, class, ignoresubcassCondition)
 	local subcassCondition = not ignoresubcassCondition and class.__class.__condition or nil
-	local variants = class.__class.variants
+	local variants = class.__class.__variants
 	if subcassCondition then
 		if variants then
 			conditionals[#conditionals + 1] = function(t)
