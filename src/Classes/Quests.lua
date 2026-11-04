@@ -555,8 +555,6 @@ local CollectibleAsQuest = function(t)
 			-- TODO: add t.requiredForQuestID
 			or
 			(
-				not t.isWorldQuest
-				and
 				(
 					t.cost
 					or
@@ -1601,12 +1599,11 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	icon = function(t)
 		-- TODO: need app.GetAutomaticHeaderData to provide icon
 		return app.GetIconFromProviders(t)
-			or (t.isWorldQuest and GetWorldQuestIcon(t))
 			or (t.repeatable and RepeatableQuestIcon)
 			or DefaultQuestIcon;
 	end,
 	repeatable = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
 	end,
 	model = function(t)
 		if t.providers then
@@ -1649,14 +1646,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	saved = function(t)
 		return IsQuestSaved(t.questID);
-	end,
-	timeRemaining = function(t)
-		if t.isWorldQuest then
-			local timeLeft = GetQuestTimeLeftMinutes(t.questID)
-			if timeLeft then
-				return timeLeft * 60
-			end
-		end
 	end,
 	missingSourceQuests = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
@@ -1759,7 +1748,21 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	variants = {
 		AndBreadcrumbWithLockCriteria,
 	},
-}, (function(t) return t.isBreadcrumb; end)
+}, (function(t) return t.isBreadcrumb; end),
+"AsWorldQuest", {
+	collectible = app.ReturnFalse,
+	repeatable = app.ReturnTrue,
+	timeRemaining = function(t)
+		local timeLeft = GetQuestTimeLeftMinutes(t.questID)
+		if timeLeft then
+			return timeLeft * 60
+		end
+	end,
+	trackable = function(t)
+		return C_QuestLog_IsOnQuest(t.questID) or t.timeRemaining
+	end,
+	icon = GetWorldQuestIcon,
+}, function(t) return t.isWorldQuest end
 );
 
 app.CreateQuest = createQuest;
