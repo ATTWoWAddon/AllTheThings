@@ -314,6 +314,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
+				n(ACHIEVEMENTS, {
+					ach(7933, {	-- And... It's Good!
+						description = "This takes place in the room of the boss Elegon. Do not clear the room until a Mogu'shan Warden has given you a flight through the discs above the gap.",
+						cr = 64947,	-- Mogu'shan Warden
+					}),
+				}),
 				n(ZONE_DROPS, {
 					i(86042),	-- Jade Charioteer Figurine
 					i(86043),	-- Jade Bandit Figurine
@@ -362,11 +368,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					groups = {
 						ach(6687),	-- Getting Hot In Here
 					},
-				}),
-				n(64947, {	-- Mogu'shan Warden
-					ach(7933, {	-- And... It's Good!
-						description = "This takes place in the room of the boss Elegon. Do not clear the room until a Mogu'shan Warden has given you a flight through the discs above the gap.",
-					}),
 				}),
 				e(726, {	-- Elegon
 					crs = { 60410 },	-- Elegon

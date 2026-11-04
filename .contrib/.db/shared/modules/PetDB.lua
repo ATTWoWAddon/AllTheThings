@@ -4727,6 +4727,7 @@ i(279197, 5129);	-- Slitherfang
 i(276927, 5100);	-- Aqir Razorwing
 i(274923, 5066);	-- Aqir Scuttler
 i(274927, 5068);	-- Aqir Wingreaver
+i(284179, 5173);	-- Eyestalker
 
 ------------------
 -- PATCH 12.1.7 --

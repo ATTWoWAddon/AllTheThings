@@ -58,6 +58,17 @@ local FANTA = createHeader({
 		tw = "前往 https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it ，遊玩一個小遊戲，每週可獲得 1 份獎勵。抽獎活動從 2026 年 4 月 1 日開始，至 2026 年 7 月 30 日美東時間晚上 11:59，或所有獎勵領取完畢時結束，以先到者為準。每週每種獎勵各有 2392 份。每週美東時間凌晨 12:00 重置。無須購買即可參加。",
 	},
 });
+local DUNGEONS_AND_DRAGONS = createHeader({
+	readable = "D&D: World of Warcraft Bundles",
+	icon = 134153,
+	text = {
+		en = "Dungeons & Dragons",
+	},
+	description = {
+		en = "Special ingame items available alongside purchase of the D&D: World of Warcraft Ultimate or Collector Edition bundles.",
+	},
+});
+
 
 root(ROOTS.Promotions, {
 	n(MIDNIGHT_SEASONAL_PROMOTIONS, {
@@ -216,8 +227,15 @@ root(ROOTS.Promotions, {
 			}),
 			i(263294, {	-- Cuddly Gold-Colored Grrgle (DECOR!)
 				description = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 13th, 10:00 a.m. & November 3rd, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				timeline = { ADDED_12_1_5, "removed 12.1.5.99999" },
+				timeline = { ADDED_12_1_5, "removed 12.1.5.70688" },
 			}),
+			n(DUNGEONS_AND_DRAGONS, sharedDataSelf({
+				timeline = { ADDED_12_1_5 },
+			}, {
+				i(281526),	-- Black Malice (MOUNT!)
+				i(284179);	-- Eyestalker (PET!)
+				i(284220),	-- Shifty Chest (TOY!)
+			}));
 			-- Season 3
 
 		--	i(500001, {	-- The PVE/PVP Banner temporary item	-- TEMPLATE

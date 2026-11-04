@@ -1649,6 +1649,7 @@ i(280822);	-- Nalorakk's Strength Charm
 i(284572);	-- Rexxar's Companion Transformation
 i(280825);	-- Rite of Jan'alai's Flame
 i(281615);	-- Shadeweaver's Hearthstone
+i(284220);	-- Shifty Chest
 i(280821);	-- Trail of Halazzi
 
 ------------------

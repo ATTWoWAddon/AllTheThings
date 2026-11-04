@@ -2572,6 +2572,7 @@ i(276550, 1299962);	-- Wind Serpent - White
 ------------------
 i(282657, 1314189);	-- Ashen Dreadglider
 i(250928, 1251689);	-- Aubergine Warturkey
+i(281526, 1311627);	-- Black Malice
 i(276926, 1301331);	-- Corrupted Swarmer
 i(278743, 1305612);	-- Giant Grrloc
 i(282648, 1314168);	-- Hot Motocross Bunmover 4400
