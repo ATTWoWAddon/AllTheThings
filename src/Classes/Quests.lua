@@ -526,44 +526,27 @@ local OtherCharacterCompletedQuests = setmetatable({}, {
 local IsPartySyncActive = false;
 local CollectibleAsQuest = function(t)
 	-- consolidated representation of whether a Thing can be collectible via QuestID
-	local questID = t.questID;
-	return
+	local questID = t.questID
 	-- must have a questID associated
-	questID
-	and
-	(
-		-- Quest collectible type is being collected
-		-- TODO: will probably need to split this method into separate types
-		-- and use in separate Quest types...
-		-- but really need a revision of the Variant/Subclass logic to make this
-		-- viable and not chaos like it is becoming
-		app.Settings.Collectibles[t.CollectibleType or "Quests"]
-		and
-		(
-			(
-				-- must not be repeatable
-				not t.repeatable
-				and
-				(
-					-- collectible by any character
-					app.Settings.AccountWide.Quests
-					-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
-					or (not OneTimeQuests[questID] or OneTimeQuests[questID] == app.GUID)
-				)
-			)
-			-- If it is an active quest with an associated item/cost
-			-- TODO: add t.requiredForQuestID
-			or
-			(
-				(
-					t.cost
-					or
-					t.itemID
-				)
-				and C_QuestLog_IsOnQuest(questID)	-- sometimes this causes repeatable quests with a cost to show as 'collected' in chat
-			)
-		)
-	)
+	if not questID then return end
+	-- Quest collectible type is being collected
+	-- TODO: will probably need to split this method into separate types
+	-- and use in separate Quest types...
+	-- but really need a revision of the Variant/Subclass logic to make this
+	-- viable and not chaos like it is becoming
+	local Settings = app.Settings
+	if not Settings.Collectibles[t.CollectibleType or "Quests"] then return end
+	-- must not be repeatable
+	if not t.repeatable then
+		-- collectible by any character
+		if Settings.AccountWide.Quests then return true end
+		-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
+		local otq = OneTimeQuests[questID]
+		if not otq or otq == app.GUID then return true end
+	end
+	-- If it is an active quest with an associated item/cost
+	-- TODO: add t.requiredForQuestID
+	return (t.cost or t.itemID) and C_QuestLog_IsOnQuest(questID)	-- sometimes this causes repeatable quests with a cost to show as 'collected' in chat
 end
 
 -- Returns whether a locked quest is actually in a state where it should be considered collectible given possible completion
