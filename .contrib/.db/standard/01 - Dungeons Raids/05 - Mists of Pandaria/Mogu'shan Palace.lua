@@ -87,6 +87,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						61240,	-- Glintrok Skulker
 					},
 				}),
+				i(89427, {	-- Ancient Mogu Treasure
+					description = "Contains some gold and a several green-quality gems.",
+					cost = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
+				}),
 				i(89428, {	-- Ancient Mogu Treasure
 					description = "Contains some gold and a several green-quality gems.",
 					cost = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
@@ -344,7 +348,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						-- Available
 						ach(6756),	-- Heroic: Mogu'shan Palace
 						ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
-						ach(6736),	-- What Does This Button Do?
+						ach(6736, {	-- What Does This Button Do?
+							description = "At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfer with the recognision of the achievemnt objective.",
+						}),
 						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							timeline = { ADDED_7_1_5 },
 						}),

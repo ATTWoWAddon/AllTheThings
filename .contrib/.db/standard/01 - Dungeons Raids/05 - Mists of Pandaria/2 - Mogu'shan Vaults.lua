@@ -314,9 +314,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			-- #endif
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {
-				n(ACHIEVEMENTS, {
-					ach(7933),	-- And... It's Good!
-				}),
 				n(ZONE_DROPS, {
 					i(86042),	-- Jade Charioteer Figurine
 					i(86043),	-- Jade Bandit Figurine
@@ -332,7 +329,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						59915,	-- Jasper Guardian
 					},
 					groups = {
-						ach(6823),	-- Must Love Dogs
+						ach(6823, {	-- Must Love Dogs
+							description = "Canine Battle Pets added after MoP are often not recognised for this achievement.",
+						}),
 					},
 				}),
 				e(689, {	-- Feng the Accursed
@@ -363,6 +362,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					groups = {
 						ach(6687),	-- Getting Hot In Here
 					},
+				}),
+				n(64947, {	-- Mogu'shan Warden
+					ach(7933, {	-- And... It's Good!
+						description = "This takes place in the room of the boss Elegon. Do not clear the room until a Mogu'shan Warden has given you a flight through the discs above the gap.",
+					}),
 				}),
 				e(726, {	-- Elegon
 					crs = { 60410 },	-- Elegon

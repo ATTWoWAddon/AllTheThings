@@ -75,6 +75,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			n(VENDORS, {
 				n(59822, {	-- Auntie Stormstout
 					i(88530),	-- Bubbling Beverage
+					i(81924),	-- Carbonated Water
+					i(81923),	-- Cobo Cola
 					i(80313),	-- Ling-Ting's Favorite Tea
 					i(88529),	-- Sparkling Water
 					i(88490),	-- Triple-Distilled Brew

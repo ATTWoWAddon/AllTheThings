@@ -63,6 +63,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+				-- #if AFTER MOP
+				n(56747, {	-- Gu Cloudstrike
+					description = "Do not attack the Azure Serpent until Gu Cloudstrike made immune of all damage, otherwise Gu might remain immune for the following ten minutes!",
+				}),
+				-- #endif
 				e(686, {	-- Taran Zhu
 					crs = { 56884 },	-- Taran Zhu
 					groups = {
