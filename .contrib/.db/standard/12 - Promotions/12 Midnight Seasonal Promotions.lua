@@ -234,6 +234,7 @@ root(ROOTS.Promotions, {
 			}, {
 				i(281526),	-- Black Malice (MOUNT!)
 				i(284179);	-- Eyestalker (PET!)
+				i(285216),	-- Shifty Chest (DECOR!)
 				i(284220),	-- Shifty Chest (TOY!)
 			}));
 			-- Season 3
