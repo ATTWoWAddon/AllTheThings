@@ -225,6 +225,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					groups = { i(285065) },	-- Mythical Soul Fragment
 				}),
+				q(98961, {	-- Jan'alai's Refuge
+					sourceQuest = 98962,	-- The Cave Towers
+					qg = 264886,	-- Wah'du <Servant of de Loa>
+					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					groups = { i(285065) },	-- Mythical Soul Fragment
+				}),
 				q(97241, {	-- Voices of Stone
 					providers = {
 						{ "o", 649924 },	-- Small Loa Figurine
