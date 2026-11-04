@@ -1727,11 +1727,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	costCollectibles = function(t)
 		return QuestWithReputationCostCollectibles[t]
 	end,
-	variants = {
-		app.GlobalVariants.AndLockCriteriaWithAutoName,
-		app.GlobalVariants.AndLockCriteria,
-		app.GlobalVariants.WithAutoName,
-	}
 }, (function(t) return t.maxReputation; end),
 "WithBonusReputation", {
 	RootConstructor = "CreateHQTBonusRep",
@@ -1751,21 +1746,11 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	costCollectibles = function(t)
 		return QuestWithReputationCostCollectibles[t]
 	end,
-	variants = {
-		app.GlobalVariants.AndLockCriteriaWithAutoName,
-		app.GlobalVariants.AndLockCriteria,
-		app.GlobalVariants.WithAutoName,
-	}
 }, (function(t) return t.type == "hqtbr"; end),
 "AsHQT", {
 	RootConstructor = "CreateHQT",
 	CollectibleType = function() return "QuestsHidden" end,
 	isHQT = app.ReturnTrue,
-	variants = {
-		app.GlobalVariants.AndLockCriteriaWithAutoName,
-		app.GlobalVariants.AndLockCriteria,
-		app.GlobalVariants.WithAutoName,
-	},
 }, (function(t) return t.type == "hqt" end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
