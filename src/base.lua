@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 --            Copyright 2017-2025 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
+---@type function,function,function,function,function,function,function,function,function,function,function,function
 local rawget, next, pairs, rawset, type, tinsert, tremove, setmetatable, print,math_sqrt,math_floor,getmetatable
 	= rawget, next, pairs, rawset, type, tinsert, tremove, setmetatable, print,math.sqrt,math.floor,getmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
@@ -202,24 +203,24 @@ end
 -- Returns the first matching relative value from the "oldest" parent in the hierarchy where you need to go recursively deeper in the hierarchy to find the value from the top down. (meaning if you're 4 headerIDs deep and looking for "headerID", it'll return the root category's headerID rather than the immediate parent or grandparent's headerID)
 local function GetDeepestRelativeValue(group, field)
 	if group then
-		return GetDeepestRelativeValue(group.sourceParent or group.parent, field) or group[field];
+		return GetDeepestRelativeValue(rawget(group, "sourceParent") or group.parent, field) or group[field];
 	end
 end
 local function GetDeepestRelativeFunc(group, func)
 	if group then
-		return GetDeepestRelativeFunc(group.sourceParent or group.parent, func) or func(group);
+		return GetDeepestRelativeFunc(rawget(group, "sourceParent") or group.parent, func) or func(group);
 	end
 end
 -- Returns the first matching relative group from the "oldest" parent in the hierarchy where you need to go recursively deeper in the hierarchy to find the value from the top down. (meaning if you're 4 headerIDs deep and looking for "headerID", it'll return the root category's headerID rather than the immediate parent or grandparent's headerID)
 local function GetDeepestRelativeGroup(group, field)
 	if group then
-		return GetDeepestRelativeGroup(group.sourceParent or group.parent, field) or (group[field] and group);
+		return GetDeepestRelativeGroup(rawget(group, "sourceParent") or group.parent, field) or (group[field] and group);
 	end
 end
 app.GetDeepestRelativeGroup = GetDeepestRelativeGroup;
 local function GetRelativeField(group, field, value)
 	if group then
-		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
+		return group[field] == value or GetRelativeField(rawget(group, "sourceParent") or group.parent, field, value);
 	end
 end
 local function GetRawRelativeField(group, field, value)
@@ -231,14 +232,14 @@ end
 -- Prioritizes sourceParent before parent
 local function GetRelativeValue(group, field)
 	if group then
-		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
+		return group[field] or GetRelativeValue(rawget(group, "sourceParent") or group.parent, field);
 	end
 end
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
 local function GetRelativeGroup(group, field, followSource)
 	if group then
-		return (group[field] and group) or GetRelativeGroup(followSource and group.sourceParent or group.parent, field);
+		return (group[field] and group) or GetRelativeGroup(followSource and rawget(group, "sourceParent") or group.parent, field);
 	end
 end
 app.GetRelativeGroup = GetRelativeGroup;
@@ -252,7 +253,7 @@ app.GetRelativeRawWithField = GetRelativeRawWithField;
 -- Returns the first encountered group tracing upwards in direct parent hierarchy which returns a value from when passed into the provided function
 local function GetRelativeByFunc(group, func)
 	if group then
-		return func(group) or GetRelativeByFunc(group.sourceParent or group.parent, func)
+		return func(group) or GetRelativeByFunc(rawget(group, "sourceParent") or group.parent, func)
 	end
 end
 -- Iterates down a whole tree, filtering matching groups into the results table

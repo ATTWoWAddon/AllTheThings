@@ -215,7 +215,7 @@ local function UpdateGroup(group, parent)
 	-- A group with a source parent means it has a different 'real' hierarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
 	if not valid then
-		if group.sourceParent then
+		if rawget(group, "sourceParent") then
 			valid = RecursiveGroupRequirementsFilter(group)
 			-- if debug then app.PrintDebug("UG.RGRF",valid,"=>",group.sourceParent.hash) end
 		else

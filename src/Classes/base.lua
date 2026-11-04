@@ -3,13 +3,18 @@
 local _, app = ...;
 
 -- Global locals
+---@type function,function,function,function,function,function,function,function,
 local type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
 	= type,pairs,setmetatable,rawget,unpack,rawset,select,getmetatable
 
 -- App locals
+---@type function
 local GetRelativeValue = app.GetRelativeValue;
+---@type function
 local containsValue = app.containsValue;
+---@type function
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+---@type function
 local TryColorizeName = app.TryColorizeName
 
 -- Release phases whose build/release date hasn't arrived yet (same rule as the default phase filter states in Settings/Pages/Phases.lua)
@@ -134,7 +139,7 @@ app.SetCAN_RETRY_DURATION_SEC = function(sec) CAN_RETRY_DURATION_SEC = sec end
 local DefaultFields = {
 	-- Cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
 	parent = function(t)
-		return t.sourceParent;
+		return rawget(t, "sourceParent");
 	end,
 	-- A semi-unique string value that identifies this object based on its key, or text if it doesn't have one.
 	hash = function(t)
@@ -339,7 +344,46 @@ local DefaultFields = {
 
 ---@type function
 local CloneDictionary = app.CloneDictionary
--- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
+local __CheckRawGetFields
+local RegisterClassDynamicFields
+if __CheckRawGetFields then
+	-- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
+	-- Holds all the fields which are potentially dynamic for a given __type
+	-- This can help later to avoid using .field notation on groups where the field can only be assigned directly on the table, meaning
+	-- rawget can be used instead to save on the missed __index access (which is a function call anyway)
+	local AllClassFields = {__type={"Auto"}}
+	local RawgetKeys = {
+		forceShow = true,
+		wasFilled = true,
+		sourceParent = true,
+		-- u = true,
+		customCollect = true,
+		-- c = true,
+		-- races = true,
+		minReputation = true,
+	}
+	RegisterClassDynamicFields = function(fields, className)
+		local next = next
+		local classes
+		for field,val in next,fields do
+			if type(val) == "function" then
+				classes = AllClassFields[field]
+				if classes then classes[#classes+1] = className
+				else AllClassFields[field] = {className} end
+			end
+		end
+	end
+	app.AddEventHandler("OnLoad", function()
+		for k in pairs(RawgetKeys) do
+			if AllClassFields[k] then
+				app.report("rawget key is dynamic in a class",k)
+			end
+		end
+		app.AllClassFields = AllClassFields
+		-- app.PrintTable(AllClassFields, nil, "AllClassFields")
+	end)
+	RegisterClassDynamicFields(DefaultFields, "DefaultFields")
+end
 local classDefinitions = {}
 local function call(class, key, t)
 	local _cache = rawget(class, key);
@@ -362,7 +406,10 @@ local CreateClassMeta = not app.__perf and function(fields, className)
 		ClassError("A Class has already been defined with that name!", className);
 	end
 
-	if fields then CloneDictionary(fields, class) end
+	if fields then
+		CloneDictionary(fields, class)
+		if __CheckRawGetFields then RegisterClassDynamicFields(fields, className) end
+	end
 
 	-- Inject the default fields into the class
 	CloneDictionary(DefaultFields, class)
@@ -392,7 +439,10 @@ or function(fields, className)
 		ClassError("A Class has already been defined with that name!", className);
 	end
 
-	if fields then CloneDictionary(fields, class) end
+	if fields then
+		CloneDictionary(fields, class)
+		if __CheckRawGetFields then RegisterClassDynamicFields(fields, className) end
+	end
 
 	-- Inject the default fields into the class
 	CloneDictionary(DefaultFields, class)
