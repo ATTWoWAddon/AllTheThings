@@ -219,6 +219,8 @@ local Ignored = setmetatable({
 		[142850] = true,    -- Horde Shaman [Warfront]
 		[142968] = true,    -- Horde Shaman [Warfront]
 		[155586] = true,    -- Arathor Ancestor [Warfront]
+		[174998] = true,	-- Generic Bunny [Gateway to Hero's Rest]
+		[175196] = true,	-- Generic Bunny [Gateway to Hero's Rest]
 		[198464] = true,	-- Rostrum of Transformation
 		[213145] = true,	-- Auralia Steelstrike [Renown Quartermaster - Hallowfall Arathi]
 		[220867] = true,	-- Y'tekhi [Renown Quartermaster - The Severed Threads]
@@ -278,6 +280,7 @@ local Ignored = setmetatable({
 		[269806] = true,	-- Spiritwing Gust
 		[270399] = true,	-- Firetender Zab'ni [Decor Specialist]
 		[272175] = true,	-- <DNT> Players are active in this area.
+		[274668] = true,	-- Curator Ilaros [Decor Specialist]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]

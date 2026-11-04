@@ -258,7 +258,10 @@ maproot(SHADOWLANDS, BASTION, {
 			}),
 			n(160985, {	-- Selena the Reborn
 				description = "Requires 3 people to summon. After all 3 have channeled the incense, the vesper will ring and Sophia will appear. Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Radiance.",
-				crs = { 160875 },	-- Sophia
+				crs = {
+					160875,	-- Sophia
+					174607,	-- Power Bell Trigger (vignette)
+				},
 				coord = { 61.2, 51.0, BASTION },
 				questID = 58320,
 				groups = {

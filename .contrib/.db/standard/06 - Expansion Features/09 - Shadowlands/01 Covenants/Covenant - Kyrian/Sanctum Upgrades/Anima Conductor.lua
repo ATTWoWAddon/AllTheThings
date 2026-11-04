@@ -1,33 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-
-local GRATEFUL_CURRENCY = currency(GRATEFUL);
-local REGURGITATED_KYRIAN_WINGS = i(182749);	-- Regurgitated Kyrian Wings
-local AEGIS_OF_SALVATION = i(184365);	-- Aegis of Salvation
-local WINGFLAYTER_THE_CRUEL = n(167078, {	-- Wingflayer the Cruel
-	description = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
-	coord = { 41.8, 55.4, BASTION },
-	questID = 60314,
-	isDaily = true,
-	groups = {
-		REGURGITATED_KYRIAN_WINGS,
-	},
-});
-local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
-	description = "Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
-	crs = { 156339 },	-- Eliminator Sotiros
-	coord = { 24.5, 22.7, BASTION },
-	questID = 61634,
-	isDaily = true,
-	groups = {
-		i(184401, {	-- Larion Pouncer (PET!)
-			description = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
-		}),
-		AEGIS_OF_SALVATION,
-	},
-});
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
@@ -57,7 +30,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 								}),
 							}),
 							n(RARES, {
-								WINGFLAYTER_THE_CRUEL,
+								n(167078, {	-- Wingflayer the Cruel
+									description = "Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
+									coord = { 41.8, 55.4, BASTION },
+									provider = { "o", 356756 },	-- Horn of Courage (vignette)
+									questID = 60314,
+									isDaily = true,
+									customCollect = IGNORED_VALUE,
+									groups = {
+										i(182749, {	-- Regurgitated Kyrian Wings
+											customCollect = IGNORED_VALUE,
+										}),
+									},
+								}),
 							}),
 							n(TREASURES, {
 								o(356818, {	-- Penitence of Purity
@@ -154,7 +139,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 						}),
 						n(TIER_THREE, {
 							n(RARES, {
-								ORSTUS_AND_SOTIROS,
+								n(156340, {	-- Larionrider Orstus
+									description = "Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
+									crs = { 156339 },	-- Eliminator Sotiros
+									provider = { "o", 356677 },	-- Black Bell (vignette)
+									coord = { 24.5, 22.7, BASTION },
+									questID = 61634,
+									isDaily = true,
+									customCollect = IGNORED_VALUE,
+									groups = {
+										i(184401, {	-- Larion Pouncer (PET!)
+											description = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+										}),
+										i(184365, {	-- Aegis of Salvation
+											customCollect = IGNORED_VALUE,
+										}),
+									},
+								}),
 							}),
 						}),
 					}),
@@ -162,11 +163,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			},
 		}),
 	}),
-})));
-
-for _,t in ipairs({WINGFLAYTER_THE_CRUEL,ORSTUS_AND_SOTIROS,GRATEFUL_CURRENCY,REGURGITATED_KYRIAN_WINGS,AEGIS_OF_SALVATION}) do
-	t.customCollect = nil;
-end
+})))
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 	n(KYRIAN,  bubbleDown({ customCollect = "SL_COV_KYR" }, {
