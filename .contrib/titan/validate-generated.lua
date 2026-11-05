@@ -166,6 +166,8 @@ else
  for id, phase in pairs({[759]="titan:6",[745]="titan:7",[746]="titan:7",[747]="titan:7",[742]="titan:8",[760]="titan:8",[743]="titan:8",[744]="titan:9",[758]="titan:10",[761]="titan:10",[750]="titan:unknown",[751]="titan:unknown"}) do
   for _, record in ipairs(RequireRoute("instanceID",id,id,nil,phase)) do
    assert(record.node.u ~= 17 and record.node.u ~= 19 and record.node.u ~= 31, "Mapped scope retains its historical main release u");
+   assert(record.node.phase ~= 17 and record.node.phase ~= 19 and record.node.phase ~= 31,
+    "Mapped scope retains its historical numeric phase");
   end
  end
  RequireRoute("mountID",1280400);

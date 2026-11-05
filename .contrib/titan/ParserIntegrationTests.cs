@@ -151,6 +151,15 @@ public static class TitanParserIntegration
             Assert(Requires(rawNested, "titan:6") && !((Dictionary<string, object>)((List<object>)rawNested["groups"])[0]).ContainsKey("u"), "actual Lua groups fields bind before merge normalizes them to g");
             var six = Bind(ulduarPath, UlduarFixture());
             Assert(Requires(six, "titan:6") && !six.ContainsKey("u"), "qualified Titan Ulduar scope resolves to independent phase six");
+            var repeatedTitanPhase = D("itemID", 25L, "phase", 31L);
+            var laterTitanPhase = D("itemID", 35L, "phase", 32L);
+            var authoredTitanPhase = Bind(ulduarPath, D("instanceID", 759L, "u", 2L, "phase", 31L,
+                "g", L(repeatedTitanPhase, laterTitanPhase)));
+            Assert(Requires(authoredTitanPhase, "titan:6") && !authoredTitanPhase.ContainsKey("phase")
+                && (long)authoredTitanPhase["u"] == 2L, "Titan replaces the authored historical phase while preserving removed status");
+            Assert(!repeatedTitanPhase.ContainsKey("phase") && !laterTitanPhase.ContainsKey("phase") &&
+                Requires(laterTitanPhase, "titan:unknown"),
+                "Titan clears repeated inherited phase values and uses the declared unknown child transition");
             var children = ((List<object>)six["g"]).Cast<Dictionary<string, object>>().ToList();
             Assert(!children[0].ContainsKey("u"), "inherited declared progression u is cleared only in the mapped scope");
             Assert((long)children[1]["u"] == 1 && (long)children[2]["u"] == 2 && (long)children[3]["u"] == 3, "true unavailable/status u values survive conversion");
@@ -203,9 +212,25 @@ public static class TitanParserIntegration
             Assert(Process(".contrib/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua").Contains("_.ItemDB"), "ordinary Wrath retains its dedicated ItemDB");
             var wrath = Bind(ulduarPath, UlduarFixture());
             Assert(Requires(wrath, "wrath:2"), "same Ulduar source maps to Wrath phase two");
-            var classicNaxx = Bind("01 - Classic/3.0 Naxxramas.lua", D("instanceID", 754L, "u", 30L));
+            var doubleChild = D("itemID", 25L, "u", 32L, "phase", 33L);
+            var doubleRoot = Bind(ulduarPath, D("instanceID", 759L, "u", 32L, "phase", 31L, "g", L(doubleChild)));
+            Assert(Requires(doubleRoot, "wrath:2") && Requires(doubleRoot, "wrath:3") &&
+                !doubleRoot.ContainsKey("u") && !doubleRoot.ContainsKey("phase"),
+                "a bound authored phase preserves a different mapped legacy u requirement");
+            Assert(Requires(doubleChild, "wrath:4") && !doubleChild.ContainsKey("u") && !doubleChild.ContainsKey("phase"),
+                "a child retains the parent's mapped u and adds its distinct mapped phase");
+            var crossFieldChild = D("itemID", 35L, "u", 32L, "phase", 33L);
+            Bind(ulduarPath, D("instanceID", 759L, "phase", 31L, "g", L(crossFieldChild)));
+            Assert(Requires(crossFieldChild, "wrath:3") && Requires(crossFieldChild, "wrath:4"),
+                "two different child numeric slots become separate release requirements");
+            var unmappedNumeric = Bind(ulduarPath, D("instanceID", 759L, "u", 31L, "phase", 3001L));
+            Assert(Requires(unmappedNumeric, "wrath:2") && !unmappedNumeric.ContainsKey("u") && (long)unmappedNumeric["phase"] == 3001L,
+                "mapping legacy u does not erase an undeclared numeric phase");
+            var classicNaxx = Bind("01 - Classic/3.0 Naxxramas.lua", D("instanceID", 754L, "u", 30L, "phase", 16L));
             var wrathNaxx = Bind("03 - Wrath of the Lich King/2 Naxxramas.lua", D("instanceID", 754L, "u", 30L));
-            Assert(!classicNaxx.ContainsKey("releasePhases") && Requires(wrathNaxx, "wrath:1"), "source filename disambiguates shared Naxxramas ID754");
+            Assert(!classicNaxx.ContainsKey("releasePhases") && (long)classicNaxx["u"] == 30L &&
+                (long)classicNaxx["phase"] == 16L && Requires(wrathNaxx, "wrath:1"),
+                "source filename separates shared Naxxramas ID754 and preserves unbound numeric conditions");
             var differentRoute = D("releasePhases", L("wrath:3"));
             Assert(!(bool)Invoke(catalog, "SameRequirements", wrath, differentRoute), "different acquisition requirements cannot flatten into one Parser source");
             Assert((bool)Invoke(catalog, "SameRequirements", wrath, D("releasePhases", L("wrath:2"))), "equivalent acquisition requirements can merge");
@@ -237,6 +262,9 @@ public static class TitanParserIntegration
                 "unmapped sources retain the existing merge with a profile");
 
             Load("02 - TBC");
+            var disabledNumeric = Bind(ulduarPath, D("instanceID", 759L, "u", 31L, "phase", 31L));
+            Assert(!disabledNumeric.ContainsKey("releasePhases") && (long)disabledNumeric["u"] == 31L &&
+                (long)disabledNumeric["phase"] == 31L, "no-profile input keeps both numeric conditions");
             Assert(MergeRoutes(D("itemID", 25L, "u", 2L), D("itemID", 25L)).Count == 1,
                 "a build without a profile retains the existing merge");
 

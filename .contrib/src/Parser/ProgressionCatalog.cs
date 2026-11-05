@@ -99,6 +99,7 @@ namespace ATT
         private sealed class Scope
         {
             internal long? RawU;
+            internal long? RawPhase;
         }
 
         private static void VisitValue(object value, List<IDictionary<string, object>> ancestry, Scope inherited, string source,
@@ -106,8 +107,6 @@ namespace ATT
         {
             if (value is IDictionary<string, object> node)
             {
-                long? rawU = node.TryGetValue("u", out object raw) && raw.TryConvert(out long id) ? (long?)id : null;
-                var scope = inherited;
                 bool matched = false;
                 string matchedPhase = null;
                 if (bindings != null)
@@ -126,21 +125,7 @@ namespace ATT
                 }
                 // Qualified source provenance is captured in the catalog's separate map
                 // before merging; no private binding fields enter acquisition objects.
-                if (matched) scope = new Scope { RawU = rawU.HasValue && _releaseIDs.Contains(rawU.Value) ? rawU : inherited?.RawU };
-                if (scope != null && rawU.HasValue && _releaseIDs.Contains(rawU.Value))
-                {
-                    if (matched || scope.RawU == rawU)
-                    {
-                        node.Remove("u");
-                    }
-                    else if (_legacy.TryGetValue(rawU.Value.ToString(), out object phase))
-                    {
-                        AddRequirement(node, (string)phase);
-                        node.Remove("u");
-                        scope = new Scope { RawU = rawU };
-                    }
-                    // A different child phase without an explicit adapter remains legacy u.
-                }
+                var scope = AdaptScope(node, inherited, matched);
                 // Inherited requirements still control how sibling acquisition nodes can merge.
                 if (scope != null || node.ContainsKey("releasePhases") ||
                     ancestry.Count > 0 && HasControlledRoute(ancestry[ancestry.Count - 1]))
@@ -154,6 +139,36 @@ namespace ATT
             {
                 foreach (var child in list) VisitValue(child, ancestry, inherited, source, bindings);
             }
+        }
+
+        private static Scope AdaptScope(IDictionary<string, object> node, Scope inherited, bool matched)
+        {
+            if (!matched && inherited == null) return null;
+
+            var rawU = GetDeclaredRelease(node, "u");
+            var rawPhase = GetDeclaredRelease(node, "phase");
+            // An explicit binding replaces the current phase field, or legacy u if phase is absent.
+            // A different declared release in the other field keeps its own requirement.
+            var primary = rawPhase ?? rawU;
+            var nextU = AdaptCondition(node, "u", rawU, inherited?.RawU, matched && rawU == primary);
+            var nextPhase = AdaptCondition(node, "phase", rawPhase, inherited?.RawPhase, matched && rawPhase == primary);
+            if (!matched && nextU == inherited.RawU && nextPhase == inherited.RawPhase) return inherited;
+            return new Scope { RawU = nextU, RawPhase = nextPhase };
+        }
+
+        private static long? GetDeclaredRelease(IDictionary<string, object> node, string field) =>
+            node.TryGetValue(field, out long value) && _releaseIDs.Contains(value) ? (long?)value : null;
+
+        private static long? AdaptCondition(IDictionary<string, object> node, string field, long? release, long? inherited, bool replaced)
+        {
+            if (!release.HasValue) return inherited;
+            if (!replaced && release != inherited)
+            {
+                if (!_legacy.TryGetValue(release.Value.ToString(), out object phase)) return inherited;
+                AddRequirement(node, (string)phase);
+            }
+            node.Remove(field);
+            return release;
         }
 
         private static bool Matches(IDictionary<string, object> node, List<IDictionary<string, object>> ancestry, List<object> selectors)
