@@ -241,12 +241,16 @@ public static class TitanParserIntegration
                 "a build without a profile retains the existing merge");
 
             Load("01 - Classic Era");
-            var legacy40 = D("difficultyID", 9L, "u", 11L);
-            var sod20Unmapped = D("difficultyID", 201L, "u", 1608L);
-            Bind("01 - Classic/1.0 Molten Core.lua", D("instanceID", 741L, "g", L(legacy40, sod20Unmapped)));
-            Assert(Requires(legacy40, "era:1") && !legacy40.ContainsKey("u"), "Era maps the legacy forty-player acquisition variant");
-            Assert(!sod20Unmapped.ContainsKey("releasePhases") && (long)sod20Unmapped["u"] == 1608, "Era does not accidentally map the separate SoD twenty-player variant");
+            const string molCorePath = "01 - Classic/1.0 Molten Core.lua";
+            const string molCoreSource = ".contrib/.db/standard/01 - Dungeons Raids/" + molCorePath;
+            Assert(!Process(molCoreSource).Contains("DIFFICULTY.LEGACY_RAID.PLAYER40"),
+                "Era preprocesses the Molten Core tree without a legacy difficulty wrapper");
+            var eraMoltenCore = Bind(molCorePath, D("instanceID", 741L, "g", L(D("itemID", 18878L))));
+            Assert(Requires(eraMoltenCore, "era:1"), "Era maps the actual Molten Core instance acquisition scope");
+
             Load("01 - Classic SOD");
+            Assert(Process(molCoreSource).Contains("DIFFICULTY.LEGACY_RAID.PLAYER40"),
+                "SoD retains its separate legacy difficulty wrapper");
             var lateFive = D("itemID", 227683L, "u", 1609L);
             var lateSix = D("itemID", 233213L, "u", 1610L);
             var sod20 = D("difficultyID", 201L, "u", 1608L, "g", L(lateSix));

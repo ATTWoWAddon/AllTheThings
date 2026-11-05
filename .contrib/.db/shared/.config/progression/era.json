@@ -68,15 +68,11 @@
         }
     },
     "content": {
-        "raid.mc.legacy40": "era:1",
+        "raid.mc.common": "era:1",
         "raid.bwl.common": "era:3",
-        "raid.bwl.legacy40": "era:3",
         "raid.aq20.common": "era:5",
-        "raid.aq20.legacy20": "era:5",
         "raid.aq40.common": "era:5",
-        "raid.aq40.legacy40": "era:5",
         "raid.naxx.classic-common": "era:6",
-        "raid.naxx.legacy40": "era:6",
         "raid.onyxia": "era:1"
     },
     "legacyReleases": {

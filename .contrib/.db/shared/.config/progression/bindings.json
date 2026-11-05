@@ -27,14 +27,11 @@
     ],
     "bindings": [
         {
-            "key": "raid.mc.legacy40",
+            "key": "raid.mc.common",
             "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
             "selectors": [
                 {
                     "instanceID": 741
-                },
-                {
-                    "difficultyID": 9
                 }
             ]
         },
@@ -51,18 +48,6 @@
             ]
         },
         {
-            "key": "raid.bwl.legacy40",
-            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
-            "selectors": [
-                {
-                    "instanceID": 742
-                },
-                {
-                    "difficultyID": 9
-                }
-            ]
-        },
-        {
             "key": "raid.bwl.sod20",
             "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
             "selectors": [
@@ -71,18 +56,6 @@
                 },
                 {
                     "difficultyID": 201
-                }
-            ]
-        },
-        {
-            "key": "raid.aq20.legacy20",
-            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
-            "selectors": [
-                {
-                    "instanceID": 743
-                },
-                {
-                    "difficultyID": 148
                 }
             ]
         },
@@ -99,18 +72,6 @@
             ]
         },
         {
-            "key": "raid.aq40.legacy40",
-            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
-            "selectors": [
-                {
-                    "instanceID": 744
-                },
-                {
-                    "difficultyID": 9
-                }
-            ]
-        },
-        {
             "key": "raid.aq40.sod20",
             "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
             "selectors": [
@@ -119,18 +80,6 @@
                 },
                 {
                     "difficultyID": 201
-                }
-            ]
-        },
-        {
-            "key": "raid.naxx.legacy40",
-            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
-            "selectors": [
-                {
-                    "instanceID": 754
-                },
-                {
-                    "difficultyID": 9
                 }
             ]
         },
