@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!-- This target file was inspired by SkiaSharp one, it will be used to copy the native Lua dll to the output directory -->
+
+    <!-- if ShouldIncludeNativeLua == False then don't include the native lua54 -->
+    <PropertyGroup>
+        <ShouldIncludeNativeLua Condition=" '$(ShouldIncludeNativeLua)' == '' ">True</ShouldIncludeNativeLua>
+    </PropertyGroup>
+    <Choose>
+        <When Condition="'$(MSBuildVersion)' &gt; '16.1.0'">
+            <PropertyGroup>
+                <RuntimeArch>$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString().ToLower())</RuntimeArch>
+            </PropertyGroup>
+        </When>
+    </Choose>
+    <!-- get the preferred architecture  -->
+    <PropertyGroup>
+        <RuntimeArch Condition=" '$(RuntimeArch)' == '' and $([System.Environment]::Is64BitOperatingSystem) ">x64</RuntimeArch>
+        <RuntimeArch Condition=" '$(RuntimeArch)' == '' "  >x86</RuntimeArch>
+        <!-- handle x86/x64/ARM/ARM64 specifically -->
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' or '$(PlatformTarget)' == 'ARM' or '$(PlatformTarget)' == 'ARM64') ">$(PlatformTarget)</PreferredNativeLua> 
+
+        <!-- handle ARM64 machines specifically -->
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and ('$(RuntimeArch)' == 'arm64' or '$(CurrentProcessArchitecture)' == 'aarch64' or '$(CurrentProcessArchitecture)' == 'ARM64' or '$(HOSTTYPE)' == 'arm64' or '$(HOSTTYPE)' == 'aarch64' or '$(PROCESSOR_ARCHITECTURE)' == 'ARM64') ">arm64</PreferredNativeLua>  
+        <!-- handle Any CPU, considering Prefer32Bit -->
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeLua>  
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == '' and '$(Prefer32Bit)' == 'True' ">x86</PreferredNativeLua> 
+        <!-- fall back to $RuntimeArch -->
+        <PreferredNativeLua Condition=" '$(PreferredNativeLua)' == ''  ">$(RuntimeArch)</PreferredNativeLua> 
+    </PropertyGroup>
+
+    <!-- get the preferred paths -->
+    <PropertyGroup>
+        <PreferredWindowsNativeLuaPath>$(MSBuildThisFileDirectory)..\..\runtimes\win-$(PreferredNativeLua)\native\lua54.dll</PreferredWindowsNativeLuaPath>
+        <PreferredOSXNativeLuaPath>$(MSBuildThisFileDirectory)..\..\runtimes\osx\native\liblua54.dylib</PreferredOSXNativeLuaPath>
+        <PreferredLinuxNativeLuaPath>$(MSBuildThisFileDirectory)..\..\runtimes\linux-$(PreferredNativeLua)\native\liblua54.so</PreferredLinuxNativeLuaPath>
+    </PropertyGroup>
+
+    <ItemGroup Condition=" '$(ShouldIncludeNativeLua)' != 'False' ">
+        <None Include="$(PreferredWindowsNativeLuaPath)" Condition=" Exists('$(PreferredWindowsNativeLuaPath)') ">
+            <Link>$([System.IO.Path]::GetFilename('$(PreferredWindowsNativeLuaPath)'))</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(PreferredOSXNativeLuaPath)" Condition=" Exists('$(PreferredOSXNativeLuaPath)') ">
+            <Link>$([System.IO.Path]::GetFilename('$(PreferredOSXNativeLuaPath)'))</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(PreferredLinuxNativeLuaPath)" Condition=" Exists('$(PreferredLinuxNativeLuaPath)') ">
+            <Link>$([System.IO.Path]::GetFilename('$(PreferredLinuxNativeLuaPath)'))</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <!-- a special case for Any CPU -->
+    <ItemGroup Condition=" '$(ShouldIncludeNativeLua)' != 'False' and ( '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' and '$(PlatformTarget)' != 'ARM' and '$(PlatformTarget)' != 'ARM64') ">
+        <!-- Windows -->
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x86\native\lua54.dll"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win-x86\native\lua54.dll')">
+            <Link>x86\lua54.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-x64\native\lua54.dll"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win-x64\native\lua54.dll')">
+            <Link>x64\lua54.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-arm64\native\lua54.dll"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\win-arm64\native\lua54.dll')">
+            <Link>ARM64\lua54.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <!-- Linux -->
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\linux-x86\native\native\liblua54.so"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\linux-x86\native\liblua54.so')">
+            <Link>x86\liblua54.so</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\linux-x64\native\liblua54.so"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\linux-x64\native\liblua54.so')">
+            <Link>x64\liblua54.so</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\linux-arm64\native\liblua54.so"
+              Condition="Exists('$(MSBuildThisFileDirectory)..\..\runtimes\linux-arm64\native\liblua54.so')">
+            <Link>ARM64\liblua54.so</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

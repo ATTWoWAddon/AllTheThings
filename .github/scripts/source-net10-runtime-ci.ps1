@@ -1,7 +1,8 @@
 param(
     [Parameter(Mandatory = $true)][string] $Release,
     [Parameter(Mandatory = $true)][string] $FixtureRoot,
-    [Parameter(Mandatory = $true)][string] $Evidence
+    [Parameter(Mandatory = $true)][string] $Evidence,
+    [string] $SharedTools
 )
 $ErrorActionPreference = 'Stop'
 New-Item -ItemType Directory -Force $FixtureRoot, $Evidence | Out-Null
@@ -55,10 +56,15 @@ function Assert-Text([string] $Path, [string] $Expected, [string] $Label) {
 # AssetDB: execute the actual tool against a synthetic input in a separate repository-shaped tree.
 $assetRepo = Join-Path $FixtureRoot 'asset-repo'
 $assetWork = Join-Path $assetRepo '.contrib/.tools'
+if ($SharedTools) {
+    if (!(Test-Path -LiteralPath $SharedTools -PathType Container)) { throw "Shared tools folder missing: $SharedTools" }
+    $assetWork = $SharedTools
+    $assetRepo = [System.IO.Directory]::GetParent([System.IO.Directory]::GetParent($SharedTools).FullName).FullName
+}
 $assetInput = Join-Path $assetRepo '.contrib/.raw/AssetDB'
 New-Item -ItemType Directory -Force $assetWork, $assetInput | Out-Null
 [System.IO.File]::WriteAllText((Join-Path $assetInput 'fixture.json'), '{"20":false,"3":{"x":1}}')
-$assetExe = Join-Path $Release 'AssetDB Builder/AssetDB Builder.exe'
+$assetExe = if ($SharedTools) { Join-Path $SharedTools 'AssetDB Builder.exe' } else { Join-Path $Release 'AssetDB Builder/AssetDB Builder.exe' }
 Invoke-FixtureProcess $assetExe @() $assetWork 'asset-exe'
 $assetExpected = "-- #if fixture`n_.AssetDB = {`n[3]=1,`n[20]=1,`n};`n-- #endif`n"
 Assert-Text (Join-Path $assetRepo '.contrib/.db/standard/00 - DB/AssetDB/fixture.lua') $assetExpected 'asset-output'
@@ -66,13 +72,14 @@ Assert-Text (Join-Path $assetRepo '.contrib/.db/standard/00 - DB/AssetDB/fixture
 # IconID: provide a local listfile to avoid downloads, then check both replacement and a non-match.
 $iconRepo = Join-Path $FixtureRoot 'icon-repo'
 $iconWork = Join-Path $iconRepo '.contrib/.tools'
+if ($SharedTools) { $iconRepo = $assetRepo; $iconWork = $SharedTools }
 $iconData = Join-Path $iconWork 'Wago'
 $iconSource = Join-Path $iconRepo 'src'
 New-Item -ItemType Directory -Force $iconData, $iconSource | Out-Null
 [System.IO.File]::WriteAllText((Join-Path $iconData 'community-listfile.csv'), "12345;Interface/Icons/inv_test.blp`n")
 $iconFile = Join-Path $iconSource 'fixture.lua'
 [System.IO.File]::WriteAllText($iconFile, "local icon = `"Interface/Icons/inv_test`"`nlocal untouched = `"Interface/Icons/missing`"`n")
-$iconExe = Join-Path $Release 'IconID Converter/IconID Converter.exe'
+$iconExe = if ($SharedTools) { Join-Path $SharedTools 'IconID Converter.exe' } else { Join-Path $Release 'IconID Converter/IconID Converter.exe' }
 Invoke-FixtureProcess $iconExe @() $iconWork 'icon-exe'
 Assert-Text $iconFile "local icon = 12345`nlocal untouched = `"Interface/Icons/missing`"`n" 'icon-output'
 
@@ -142,6 +149,6 @@ $offlineEnvironment = @{
 }
 Invoke-FixtureProcess $dotnet @('restore', (Join-Path $harness 'SkillHarness.csproj'), '--configfile', (Join-Path $harness 'NuGet.Config')) $harness 'skill-harness-restore' 60 $offlineEnvironment
 Invoke-FixtureProcess $dotnet @('build', (Join-Path $harness 'SkillHarness.csproj'), '--configuration', 'Release', '--no-restore') $harness 'skill-harness-build' 60 $offlineEnvironment
-$skillDir = Join-Path $Release 'Skill Level Requirements'
+$skillDir = if ($SharedTools) { $SharedTools } else { Join-Path $Release 'Skill Level Requirements' }
 $expectedJsonHash = (Get-FileHash -LiteralPath (Join-Path $skillDir 'Newtonsoft.Json.dll') -Algorithm SHA256).Hash
 Invoke-FixtureProcess $dotnet @((Join-Path $harness 'bin/Release/net10.0/SkillHarness.dll'), $skillDir, $expectedJsonHash) $harness 'skill-parser' 60 $offlineEnvironment

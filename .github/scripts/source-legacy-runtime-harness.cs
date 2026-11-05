@@ -53,6 +53,23 @@ internal static class SourceLegacyRuntimeHarness
         CheckLoadedModules(outputDirectory);
     }
 
+    private static void CheckParser(string outputDirectory)
+    {
+        Assembly app = Assembly.LoadFrom(Path.Combine(outputDirectory, "Parser.exe"));
+        Type program = app.GetType("ATT.Program", true);
+        FieldInfo luaField = program.GetField("lua", BindingFlags.Static | BindingFlags.NonPublic);
+        Require(luaField != null, "Parser Lua field unavailable.");
+        object lua = luaField.GetValue(null);
+        Require(lua != null, "Parser Lua initialization returned null.");
+        MethodInfo doString = lua.GetType().GetMethod("DoString", new[] { typeof(string), typeof(string) });
+        Require(doString != null, "Parser Lua DoString method unavailable.");
+        object[] result = (object[])doString.Invoke(lua, new object[] { "return 42", "shared-fixture" });
+        Require(result != null && result.Length == 1 && Convert.ToInt64(result[0]) == 42,
+            "Parser Lua expression returned an unexpected result.");
+        Console.WriteLine("PARSER Lua initialized and returned 42");
+        CheckLoadedModules(outputDirectory);
+    }
+
     private static void CheckSync(string outputDirectory, string accountDirectory)
     {
         Assembly app = Assembly.LoadFrom(Path.Combine(outputDirectory, "ATT Sync Tool.exe"));
@@ -90,11 +107,13 @@ internal static class SourceLegacyRuntimeHarness
         MethodInfo parse = savedVariables.GetMethod("Parse", BindingFlags.Public | BindingFlags.Static);
         Require(parse != null, "SavedVariables.Parse unavailable.");
         IDictionary data = (IDictionary)parse.Invoke(null, new object[] { new DirectoryInfo(accountDirectory) });
-        Require(data != null && data.Contains("Probe"), "Probe table missing from parsed data.");
+        Require(data != null && data.Count == 1 && data.Contains("Probe"), "Unexpected saved-variable tables or missing Probe table.");
         IDictionary probe = (IDictionary)data["Probe"];
+        Require(probe.Count == 3, "Unexpected Probe field count.");
         Require(Convert.ToInt64(probe["value"]) == 42, "Unexpected Probe.value.");
         Require((bool)probe["active"], "Unexpected Probe.active.");
         IDictionary nested = (IDictionary)probe["nested"];
+        Require(nested.Count == 1, "Unexpected Probe.nested field count.");
         Require((string)nested["text"] == "sample", "Unexpected Probe.nested.text.");
         string file = Path.Combine(accountDirectory, "SavedVariables", "AllTheThings.lua");
         string rewritten = File.ReadAllText(file);
@@ -113,6 +132,7 @@ internal static class SourceLegacyRuntimeHarness
             string outputDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (args[0] == "item") CheckItem(outputDirectory);
             else if (args[0] == "sync") CheckSync(outputDirectory, args[1]);
+            else if (args[0] == "parser") CheckParser(outputDirectory);
             else throw new ArgumentException("Unknown mode: " + args[0]);
             return 0;
         }

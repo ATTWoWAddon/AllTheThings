@@ -1,7 +1,8 @@
 param(
     [Parameter(Mandatory = $true)][string] $Release,
     [Parameter(Mandatory = $true)][string] $FixtureRoot,
-    [Parameter(Mandatory = $true)][string] $Evidence
+    [Parameter(Mandatory = $true)][string] $Evidence,
+    [string] $SharedTools
 )
 $ErrorActionPreference = 'Stop'
 New-Item -ItemType Directory -Force $FixtureRoot, $Evidence | Out-Null
@@ -40,13 +41,19 @@ Invoke-LegacyProcess $csc @('/nologo', '/target:exe', '/platform:x64', '/referen
 $itemRepo = Join-Path $FixtureRoot 'item-repo'
 $itemWork = Join-Path $itemRepo '.contrib/.tools'
 $itemInput = Join-Path $itemRepo '.contrib/.raw/ItemDB'
+if ($SharedTools) {
+    if (!(Test-Path -LiteralPath $SharedTools -PathType Container)) { throw "Shared tools folder missing: $SharedTools" }
+    if (![string]::Equals([System.IO.Path]::GetFullPath($SharedTools).TrimEnd('\', '/'), [System.IO.Path]::GetFullPath($itemWork).TrimEnd('\', '/'), [System.StringComparison]::OrdinalIgnoreCase)) {
+        throw "Shared tools folder must be the item fixture working directory: $itemWork"
+    }
+}
 New-Item -ItemType Directory -Force $itemWork, $itemInput | Out-Null
 @'
 DBContext = "TEST"
 DBFileName = "fixture"
 ItemDB = { [42] = { name = "Example", itemID = 42, quality = 2 }, [2] = { name = "Low", quality = 1 } }
 '@ | Set-Content -Encoding utf8 (Join-Path $itemInput 'fixture.lua')
-$itemDir = Join-Path $Release 'Item Database Consolidator'
+$itemDir = if ($SharedTools) { $SharedTools } else { Join-Path $Release 'Item Database Consolidator' }
 $itemExe = Join-Path $itemDir 'Item Database Consolidator.exe'
 Copy-Item $harness (Join-Path $itemDir 'SourceLegacyRuntimeHarness.exe')
 Copy-Item (Join-Path $itemDir 'Item Database Consolidator.exe.config') (Join-Path $itemDir 'SourceLegacyRuntimeHarness.exe.config')
@@ -104,11 +111,23 @@ Probe = { value = 42, active = true, nested = { text = "sample" } }
     New-Item -Path $syncKey -Force | Out-Null
     $syncCreated = $true
     New-ItemProperty -Path $syncKey -Name StartupAutomatically -Value 0 -PropertyType DWord -Force | Out-Null
-    $syncDir = Join-Path $Release 'ATT Sync Tool'
+    $syncDir = if ($SharedTools) { $SharedTools } else { Join-Path $Release 'ATT Sync Tool' }
     Copy-Item $harness (Join-Path $syncDir 'SourceLegacyRuntimeHarness.exe')
     Copy-Item (Join-Path $syncDir 'ATT Sync Tool.exe.config') (Join-Path $syncDir 'SourceLegacyRuntimeHarness.exe.config')
     Invoke-LegacyProcess (Join-Path $syncDir 'SourceLegacyRuntimeHarness.exe') @('sync', $accountDir) $syncDir 'sync-form-and-database'
-    $moduleEvidence = foreach ($label in 'item-loaded-modules', 'sync-form-and-database') {
+    Copy-Item -LiteralPath (Join-Path $savedDir 'AllTheThings.lua') -Destination (Join-Path $Evidence 'database-rewritten.lua.txt')
+    $moduleLabels = @('item-loaded-modules', 'sync-form-and-database')
+    if ($SharedTools) {
+        $parserExe = Join-Path $SharedTools 'Parser.exe'
+        $parserConfig = Join-Path $SharedTools 'Parser.exe.config'
+        if (!(Test-Path -LiteralPath $parserExe -PathType Leaf) -or !(Test-Path -LiteralPath $parserConfig -PathType Leaf)) {
+            throw 'Parser executable or its configuration is missing from the shared tools folder.'
+        }
+        Copy-Item $parserConfig (Join-Path $SharedTools 'SourceLegacyRuntimeHarness.exe.config') -Force
+        Invoke-LegacyProcess (Join-Path $SharedTools 'SourceLegacyRuntimeHarness.exe') @('parser', $accountDir) $SharedTools 'parser-loaded-modules'
+        $moduleLabels += 'parser-loaded-modules'
+    }
+    $moduleEvidence = foreach ($label in $moduleLabels) {
         $found = @()
         foreach ($line in Get-Content (Join-Path $Evidence "$label.stdout.txt")) {
             if ($line -match '^(ASSEMBLY|NATIVE) (NLua|KeraLua|lua54) (.+) SHA256=([0-9A-F]{64})$') {

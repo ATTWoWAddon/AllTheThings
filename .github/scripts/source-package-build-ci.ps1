@@ -19,13 +19,19 @@ function Invoke-Build([string] $Path, [string] $Configuration, [string] $Platfor
     if ($code -ne 0) { throw "Build failed: $Path / $Configuration / $Platform ($code)" }
 }
 
-function Test-RestoredFile([string] $Actual, [string] $PackagePath) {
-    $expected = Join-Path $env:NUGET_PACKAGES $PackagePath
+function Test-MatchedFile([string] $Actual, [string] $Expected, [string] $Origin) {
+    $expected = $Expected
     if (!(Test-Path $Actual) -or !(Test-Path $expected)) { throw "Missing output or restored asset: $Actual / $expected" }
     $actualHash = (Get-FileHash $Actual -Algorithm SHA256).Hash
     $expectedHash = (Get-FileHash $expected -Algorithm SHA256).Hash
-    $files.Add([pscustomobject]@{ output = $Actual; packageAsset = $expected; actualSha256 = $actualHash; expectedSha256 = $expectedHash })
+    $files.Add([pscustomobject]@{ output = $Actual; packageAsset = $expected; origin = $Origin; actualSha256 = $actualHash; expectedSha256 = $expectedHash })
     if ($actualHash -ne $expectedHash) { throw "Unexpected output content: $Actual" }
+}
+function Test-VendoredFile([string] $Actual, [string] $PackagePath) {
+    Test-MatchedFile $Actual (Join-Path $source "packages/$PackagePath") 'repository package'
+}
+function Test-RestoredFile([string] $Actual, [string] $PackagePath) {
+    Test-MatchedFile $Actual (Join-Path $env:NUGET_PACKAGES $PackagePath) 'NuGet restore'
 }
 
 try {
@@ -33,16 +39,15 @@ try {
         throw "Expected an empty NuGet packages folder: $env:NUGET_PACKAGES"
     }
     New-Item -ItemType Directory -Force $env:NUGET_PACKAGES | Out-Null
-    $oldPackages = Join-Path $source 'packages'
-    if (Test-Path $oldPackages) { Remove-Item $oldPackages -Recurse -Force }
-    foreach ($name in 'NLua.dll', 'KeraLua.dll', 'lua54.dll') {
-        $path = Join-Path $env:GITHUB_WORKSPACE ".contrib/.tools/$name"
-        if (Test-Path $path) { Remove-Item $path -Force }
+    $repositoryTools = Join-Path $env:GITHUB_WORKSPACE '.contrib/.tools'
+    $sourceManifest = Get-ChildItem -LiteralPath $source -File -Recurse -Force | Sort-Object FullName | ForEach-Object {
+        $relative = [System.IO.Path]::GetRelativePath($source, $_.FullName)
+        "$((Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash)  $relative"
     }
-    foreach ($name in 'NLua.dll', 'KeraLua.dll') {
-        $path = Join-Path $source "Item Database Consolidator/bin/Debug/$name"
-        if (Test-Path $path) { Remove-Item $path -Force }
-    }
+    $sourceManifest | Set-Content -Encoding utf8 (Join-Path $evidence 'source-SHA256SUMS.txt')
+    Test-VendoredFile (Join-Path $repositoryTools 'NLua.dll') 'NLua.1.7.9/lib/net46/NLua.dll'
+    Test-VendoredFile (Join-Path $repositoryTools 'KeraLua.dll') 'KeraLua.1.4.11/lib/net46/KeraLua.dll'
+    Test-VendoredFile (Join-Path $repositoryTools 'lua54.dll') 'KeraLua.1.4.11/runtimes/win-x64/native/lua54.dll'
 
     # CI-only imports keep each project's outputs and intermediates separate.
     @'
@@ -65,9 +70,9 @@ try {
 '@ | Set-Content -Encoding utf8 (Join-Path $source 'Directory.Build.targets')
 
     $projects = @(
-        @{ Path = 'Database/Database.csproj'; Platform = 'x64'; KeraLua = '1.2.13'; NLua = '1.5.7' },
-        @{ Path = 'ATT Sync Tool/ATT Sync Tool.csproj'; Platform = 'x64'; KeraLua = '1.2.13'; NLua = '1.5.7' },
-        @{ Path = 'Item Database Consolidator/Item Database Consolidator.csproj'; Platform = 'AnyCPU'; KeraLua = '1.4.11'; NLua = '1.7.9' },
+        @{ Path = 'Database/Database.csproj'; Platform = 'x64'; Legacy = $true; NativeTarget = $true },
+        @{ Path = 'ATT Sync Tool/ATT Sync Tool.csproj'; Platform = 'x64'; Legacy = $true; NativeTarget = $true },
+        @{ Path = 'Item Database Consolidator/Item Database Consolidator.csproj'; Platform = 'AnyCPU'; Legacy = $true; NativeTarget = $false },
         @{ Path = 'Skill Level Requirements/Skill Level Requirements.csproj'; Platform = 'AnyCPU' },
         @{ Path = 'AssetDB Builder/AssetDB Builder.csproj'; Platform = 'AnyCPU' },
         @{ Path = 'IconID Converter/IconID Converter.csproj'; Platform = 'AnyCPU' }
@@ -80,26 +85,31 @@ try {
             Invoke-Build $path $configuration $project.Platform $label
             $output = Join-Path $env:RUNNER_TEMP "att-source-output/$configuration/$name"
             if (!(Test-Path $output)) { throw "Missing isolated output directory: $output" }
-            $assetsPath = Join-Path $env:RUNNER_TEMP "att-source-obj/$name/project.assets.json"
-            if (!(Test-Path $assetsPath)) { throw "Missing assets manifest: $assetsPath" }
-            Copy-Item $assetsPath (Join-Path $evidence "$label.assets.json")
-            $assets = Get-Content -Raw $assetsPath | ConvertFrom-Json
-            $libraries = @($assets.libraries.PSObject.Properties.Name)
-            $assetManifests.Add([pscustomobject]@{ project = $name; configuration = $configuration; path = $assetsPath; libraries = $libraries; packageFolders = @($assets.packageFolders.PSObject.Properties.Name) })
-            if ($project.KeraLua) {
-                foreach ($library in "KeraLua/$($project.KeraLua)", "NLua/$($project.NLua)") {
-                    if ($libraries -notcontains $library) { throw "Missing expected restored package $library in $assetsPath" }
+            if ($project.Legacy) {
+                if ($project.NativeTarget) {
+                    $manifest = Join-Path (Split-Path $path) 'packages.config'
+                    [xml] $packageConfig = Get-Content -Raw $manifest
+                    foreach ($expected in @(@{ Id = 'KeraLua'; Version = '1.4.11' }, @{ Id = 'NLua'; Version = '1.7.9' })) {
+                        $matches = @($packageConfig.packages.package | Where-Object { $_.id -eq $expected.Id -and $_.version -eq $expected.Version })
+                        if ($matches.Count -ne 1) { throw "Unexpected package declaration in $manifest for $($expected.Id)" }
+                    }
+                    Copy-Item $manifest (Join-Path $evidence "$label.packages.config")
+                    $assetManifests.Add([pscustomobject]@{ project = $name; configuration = $configuration; path = $manifest; source = 'packages.config and repository packages' })
+                } else {
+                    $assetManifests.Add([pscustomobject]@{ project = $name; configuration = $configuration; path = $path; source = 'repository .tools HintPaths' })
                 }
-                $generatedTargets = Join-Path $env:RUNNER_TEMP "att-source-obj/$name/$([System.IO.Path]::GetFileName($project.Path)).nuget.g.targets"
-                if (!(Test-Path $generatedTargets) -or !((Get-Content -Raw $generatedTargets) -match 'KeraLua\.targets')) { throw "KeraLua targets not imported: $generatedTargets" }
-                Copy-Item $generatedTargets (Join-Path $evidence "$label.nuget.g.targets")
-                Test-RestoredFile (Join-Path $output 'KeraLua.dll') "keralua/$($project.KeraLua)/lib/net46/KeraLua.dll"
-                Test-RestoredFile (Join-Path $output 'NLua.dll') "nlua/$($project.NLua)/lib/net46/NLua.dll"
-                Test-RestoredFile (Join-Path $output 'lua54.dll') "keralua/$($project.KeraLua)/runtimes/win-x64/native/lua54.dll"
-                if ($name -eq 'Item Database Consolidator' -and $configuration -eq 'Debug') {
-                    Test-RestoredFile (Join-Path $output 'x86/lua54.dll') "keralua/$($project.KeraLua)/runtimes/win-x86/native/lua54.dll"
-                    Test-RestoredFile (Join-Path $output 'x64/lua54.dll') "keralua/$($project.KeraLua)/runtimes/win-x64/native/lua54.dll"
+                Test-VendoredFile (Join-Path $output 'KeraLua.dll') 'KeraLua.1.4.11/lib/net46/KeraLua.dll'
+                Test-VendoredFile (Join-Path $output 'NLua.dll') 'NLua.1.7.9/lib/net46/NLua.dll'
+                if ($project.NativeTarget) {
+                    Test-VendoredFile (Join-Path $output 'lua54.dll') 'KeraLua.1.4.11/runtimes/win-x64/native/lua54.dll'
                 }
+            } else {
+                $assetsPath = Join-Path $env:RUNNER_TEMP "att-source-obj/$name/project.assets.json"
+                if (!(Test-Path $assetsPath)) { throw "Missing assets manifest: $assetsPath" }
+                Copy-Item $assetsPath (Join-Path $evidence "$label.assets.json")
+                $assets = Get-Content -Raw $assetsPath | ConvertFrom-Json
+                $libraries = @($assets.libraries.PSObject.Properties.Name)
+                $assetManifests.Add([pscustomobject]@{ project = $name; configuration = $configuration; path = $assetsPath; libraries = $libraries; packageFolders = @($assets.packageFolders.PSObject.Properties.Name) })
             }
         }
     }
@@ -110,6 +120,13 @@ try {
 
     # Verify the final Release folders, including dependencies copied after solution builds.
     $release = Join-Path $env:RUNNER_TEMP 'att-source-output/Release'
+    # Item uses root .tools HintPaths and has no KeraLua.targets. Supply the
+    # native DLL from the already verified repository .tools for the standalone artifact.
+    $itemNative = Join-Path $release 'Item Database Consolidator/lua54.dll'
+    Copy-Item (Join-Path $repositoryTools 'lua54.dll') $itemNative -Force
+    Test-VendoredFile $itemNative 'KeraLua.1.4.11/runtimes/win-x64/native/lua54.dll'
+    'Item Release native lua54.dll was copied from the verified repository .tools; its project does not copy it.' |
+        Set-Content -Encoding utf8 (Join-Path $evidence 'item-native-provenance.txt')
     $required = @(
         'Database/Database.dll',
         'ATT Sync Tool/ATT Sync Tool.exe', 'ATT Sync Tool/ATT Sync Tool.exe.config', 'ATT Sync Tool/Database.dll',
@@ -129,14 +146,45 @@ try {
     if ((Get-FileHash $database -Algorithm SHA256).Hash -ne (Get-FileHash $syncDatabase -Algorithm SHA256).Hash) {
         throw 'The Database library in ATT Sync Tool differs from the Release Database output.'
     }
-    foreach ($project in $projects | Where-Object { $_.KeraLua }) {
+    foreach ($project in $projects | Where-Object { $_.Legacy }) {
         $name = [System.IO.Path]::GetFileNameWithoutExtension($project.Path)
         $output = Join-Path $release $name
-        Test-RestoredFile (Join-Path $output 'KeraLua.dll') "keralua/$($project.KeraLua)/lib/net46/KeraLua.dll"
-        Test-RestoredFile (Join-Path $output 'NLua.dll') "nlua/$($project.NLua)/lib/net46/NLua.dll"
-        Test-RestoredFile (Join-Path $output 'lua54.dll') "keralua/$($project.KeraLua)/runtimes/win-x64/native/lua54.dll"
+        Test-VendoredFile (Join-Path $output 'KeraLua.dll') 'KeraLua.1.4.11/lib/net46/KeraLua.dll'
+        Test-VendoredFile (Join-Path $output 'NLua.dll') 'NLua.1.7.9/lib/net46/NLua.dll'
+        Test-VendoredFile (Join-Path $output 'lua54.dll') 'KeraLua.1.4.11/runtimes/win-x64/native/lua54.dll'
     }
     Test-RestoredFile (Join-Path $release 'Skill Level Requirements/Newtonsoft.Json.dll') 'newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll'
+
+    [xml] $syncConfig = Get-Content -Raw (Join-Path $release 'ATT Sync Tool/ATT Sync Tool.exe.config')
+    $namespace = [System.Xml.XmlNamespaceManager]::new($syncConfig.NameTable)
+    $namespace.AddNamespace('asm', 'urn:schemas-microsoft-com:asm.v1')
+    $redirect = $syncConfig.SelectSingleNode('//asm:dependentAssembly[asm:assemblyIdentity/@name="KeraLua"]/asm:bindingRedirect', $namespace)
+    if ($null -eq $redirect -or $redirect.GetAttribute('newVersion') -ne '1.4.11.0') {
+        throw 'The generated Sync EXE configuration does not redirect KeraLua to 1.4.11.0.'
+    }
+    Copy-Item (Join-Path $release 'ATT Sync Tool/ATT Sync Tool.exe.config') (Join-Path $evidence 'sync-generated.exe.config')
+
+    # Ensure Database was actually recompiled to NLua's new optional-bool constructor.
+    $stream = [System.IO.File]::OpenRead($database)
+    try {
+        $pe = [System.Reflection.PortableExecutable.PEReader]::new($stream)
+        try {
+            $metadata = [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($pe)
+            $constructors = foreach ($handle in $metadata.MemberReferences) {
+                $member = $metadata.GetMemberReference($handle)
+                if ($member.Parent.Kind -ne [System.Reflection.Metadata.HandleKind]::TypeReference) { continue }
+                $type = $metadata.GetTypeReference([System.Reflection.Metadata.TypeReferenceHandle]::op_Explicit($member.Parent))
+                if ($metadata.GetString($type.Namespace) -eq 'NLua' -and $metadata.GetString($type.Name) -eq 'Lua' -and $metadata.GetString($member.Name) -eq '.ctor') {
+                    [Convert]::ToHexString($metadata.GetBlobBytes($member.Signature))
+                }
+            }
+        } finally { $pe.Dispose() }
+    } finally { $stream.Dispose() }
+    if (@($constructors) -notcontains '20010102' -or @($constructors) -contains '200001') {
+        throw "Unexpected NLua Lua constructor reference(s): $($constructors -join ', ')"
+    }
+    [pscustomobject]@{ assembly = $database; expected = '20010102'; actual = @($constructors) } |
+        ConvertTo-Json -Depth 4 | Set-Content -Encoding utf8 (Join-Path $evidence 'database-nlua-constructor.json')
 
     # Run against isolated copies so fixtures and harnesses cannot modify the artifact.
     $runtimeRoot = Join-Path $env:RUNNER_TEMP 'att-source-runtime'
@@ -159,6 +207,40 @@ try {
     }
     & (Join-Path $PSScriptRoot 'source-legacy-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $fixtures -Evidence $runtimeEvidence
     & (Join-Path $PSScriptRoot 'source-net10-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $fixtures -Evidence $runtimeEvidence
+
+    # Recreate the shared .tools layout in a separate synthetic repository.
+    # Reject mismatching duplicate names instead of silently replacing files.
+    $sharedFixtures = Join-Path $runtimeRoot 'shared-fixtures'
+    $sharedTools = Join-Path $sharedFixtures 'item-repo/.contrib/.tools'
+    $sharedEvidence = Join-Path $runtimeEvidence 'shared'
+    New-Item -ItemType Directory -Force $sharedTools, $sharedEvidence | Out-Null
+    foreach ($folder in Get-ChildItem -LiteralPath $release -Directory) {
+        foreach ($file in Get-ChildItem -LiteralPath $folder.FullName -File -Recurse) {
+            if ($file.Extension -in '.pdb', '.xml') { continue }
+            $relative = [System.IO.Path]::GetRelativePath($folder.FullName, $file.FullName)
+            $destination = Join-Path $sharedTools $relative
+            if (Test-Path -LiteralPath $destination) {
+                if ((Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash) {
+                    throw "Conflicting files in shared .tools layout: $relative"
+                }
+            } else {
+                New-Item -ItemType Directory -Force (Split-Path $destination) | Out-Null
+                Copy-Item -LiteralPath $file.FullName -Destination $destination
+            }
+        }
+    }
+    foreach ($name in 'Parser.exe', 'Parser.exe.config', 'Csv.dll') {
+        $original = Join-Path $repositoryTools $name
+        $destination = Join-Path $sharedTools $name
+        if (!(Test-Path -LiteralPath $original -PathType Leaf) -or (Test-Path -LiteralPath $destination)) { throw "Missing or conflicting Parser file: $name" }
+        Copy-Item -LiteralPath $original -Destination $destination
+        Test-MatchedFile $destination $original 'repository Parser file'
+    }
+    foreach ($name in 'NLua.dll', 'KeraLua.dll', 'lua54.dll') {
+        Test-MatchedFile (Join-Path $sharedTools $name) (Join-Path $repositoryTools $name) 'repository shared .tools'
+    }
+    & (Join-Path $PSScriptRoot 'source-legacy-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $sharedFixtures -Evidence $sharedEvidence -SharedTools $sharedTools
+    & (Join-Path $PSScriptRoot 'source-net10-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $sharedFixtures -Evidence $sharedEvidence -SharedTools $sharedTools
     $runtimeCoverage = [pscustomobject]@{
         item = 'Actual EXE fixture output and same application entry point in a module-path harness.'
         sync = 'Built EXE assembly: MainForm initialization, Shown event, message loop, and clean close in a harness.'
@@ -166,15 +248,17 @@ try {
         asset = 'Actual EXE with synthetic JSON input and checked output.'
         icon = 'Actual EXE with local synthetic CSV and checked file replacement.'
         skill = 'Built DLL Helper.Parse with synthetic content and Newtonsoft path/hash; EXE and live Wowhead were not tested.'
-        lua = 'Application integration uses bundled Lua 5.4.3 and 5.4.9; input syntax is Lua 5.1 compatible.'
+        shared = 'Fixtures also run with the built tools and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
+        lua = 'Application integration uses bundled Lua 5.4.9; input syntax is Lua 5.1 compatible.'
     }
 
     @'
 ATT source tools - Release build
 
-Each tool is in its own folder with its build dependencies. Keep the folders
-separate: the tools use different versions of NLua, KeraLua, and native Lua.
-Database is a library; ATT Sync Tool also has its own copy of Database.dll.
+Each tool is in its own folder with its build dependencies. Database is a
+library; ATT Sync Tool also has its own copy of Database.dll. The tools use
+the same Lua libraries. The Item native lua54.dll was copied from the verified
+repository .tools because the Item project itself does not copy that file.
 
 ATT Sync Tool and Item Database Consolidator target .NET Framework 4.7.2.
 Skill Level Requirements, AssetDB Builder, and IconID Converter target .NET 10
@@ -192,6 +276,8 @@ and IconID Converter executables. A harness checked the Sync form initialization
 and Database saved-variable parsing. Skill Level Requirements was checked at its
 parsing function using synthetic content; its executable and live Wowhead access
 were not tested. These checks do not replace testing with actual game data.
+The same fixtures were also checked in a synthetic shared .tools layout with
+the existing Parser; only Parser Lua initialization was checked, not a parse.
 '@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
     $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
         $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
