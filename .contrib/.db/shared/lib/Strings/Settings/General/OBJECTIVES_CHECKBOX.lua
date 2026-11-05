@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "+Objectives",
+	readable = "Quest Objectives",
 	constant = "OBJECTIVES_CHECKBOX",
 	export = true,
 	text = {
-		en = "+Objectives",
+		en = "Quest Objectives",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",
@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "+目标",
+		-- TODO: cn = "+目标",
 		-- TODO: tw = "",
 	},
 })

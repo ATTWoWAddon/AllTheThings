@@ -688,6 +688,25 @@ end)
 checkboxCurrencyCalculation:SetATTTooltip(L.SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP)
 checkboxCurrencyCalculation:AlignBelow(checkboxSpecializations)
 
+if app.IsClassic or app.IsForever then
+	local checkboxQuestObjectives = child:CreateCheckBox(L.OBJECTIVES_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:Get("QuestObjectives"))
+		if not settings:GetTooltipSetting("Enabled") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:Set("QuestObjectives", self:GetChecked())
+	end)
+	checkboxQuestObjectives:SetATTTooltip(L.OBJECTIVES_CHECKBOX_TOOLTIP)
+	checkboxQuestObjectives:AlignBelow(checkboxCurrencyCalculation)
+end
+
 if app.IsClassic then
 -- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
 local checkboxShowCraftedItems = child:CreateCheckBox(L.SHOW_CRAFTED_ITEMS_CHECKBOX,
