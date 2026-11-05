@@ -19,30 +19,51 @@ The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a97
 
 The stages apply to the complete migration, not merely the first raids. A pilot can exercise stages 2–3 in isolated validation, but cannot justify removing a globally used helper. Cut over a complete propagation chain, including shared helpers/caches and nested sources; do not publish a mixture that silently falls back to legacy for uncovered content.
 
-### Source shape through the stages
+### Blackwing Lair through P1–P4
 
-This example uses the existing SoD difficulty wrapper to show the authoring transition; omitted bosses, rewards, and guards remain intact.
+Here **P1–P4 are the four migration stages**, not the raid's game-content phases. The existing Blackwing Lair source wraps the whole instance in `applyclassicphase(PHASE_THREE, ...)`; its separate SoD raid branch also uses `SOD_PHASE_FIVE`. In SoD the existing alias makes `PHASE_THREE` mean phase 5. The migration must preserve both source scopes rather than reuse another raid's example.
 
 ```lua
--- Stage 1
-applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, {
-    -- Existing acquisition data.
-}))
+-- P1: existing source authority, abbreviated without changing the wrappers.
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
+    applyclassicphase(PHASE_THREE, {
+        inst(742, { -- Blackwing Lair
+            groups = {
+                -- Existing original/legacy-history groups remain here.
+                -- #if SEASON_OF_DISCOVERY
+                applyclassicphase(SOD_PHASE_FIVE,
+                    d(DIFFICULTY.SOD.PLAYER20, {
+                        timeline = { ADDED_1_15_4 },
+                        -- Existing SoD bosses, quests and rewards.
+                    })),
+                -- #endif
+            },
+        }),
+    })))
 
--- Stages 2 and 3: same authored form, different compiler authority.
-applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, {
-    progressionKey = "raid.mc.sod20",
-    -- The same acquisition data.
-}))
+-- P2: add these input fields, keeping the P1 expressions and actual data.
+-- On inst(742, ...):
+progressionKey = "raid.bwl.common",
+-- On the existing SoD difficulty subtree:
+flavors = { "sod" },
+progressionKey = "raid.bwl.sod20",
+-- On the existing later Draconic for Dummies source o(180667, ...):
+progressionKey = "raid.bwl.draconic-for-dummies",
 
--- Stage 4: no authored phase or legacy wrapper.
-d(DIFFICULTY.SOD.PLAYER20, {
-    progressionKey = "raid.mc.sod20",
-    -- The same acquisition data.
-})
+-- P3: keep the same annotated source for the isolated legacy golden.
+-- Production ignores the old phase producers and exports, for example:
+progressionScopes = {
+    "sod:main:raid.bwl.common",
+    "sod:main:raid.bwl.sod20",
+},
+
+-- P4: remove the old phase wrappers/assignments after the P3 gates pass.
+-- Keep the actual original and SoD groups, their timelines and technical
+-- guards. Section 2b shows the concrete final source and all four policies.
 ```
 
-In stage 3 the old wrapper cannot contribute to production output. A missing later-child key must fail comparison/coverage; the production compiler must not recover that missing transition by inspecting the old child's `phase`. The production authority must suppress every legacy timing producer before normalization or merging: helper writes, literal/propagated phase fields, RecipeDB phase caches and copies, and phase-driven serialized callback branches. Ignoring only `applyclassicphase` is insufficient. Keep unrelated unavailable/event/level code; do not indiscriminately strip `u` writes. The legacy compilation retains those original timing paths in its isolated process.
+In P2 both new input fields are stripped from official legacy output. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old writer is suppressed before normalization/merge in the production process; the isolated golden retains the original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
+
 
 ## 2. What humans maintain
 
@@ -87,7 +108,7 @@ This plan uses the eight current design families specified for ATT: **Retail (`r
 
 Different opening timelines within a family use distinct profile IDs when needed. For example, original and Anniversary Hardcore can remain within `hardcore` while selecting different reviewed profiles; they do not add another current flavor to this list. `main` below is only the proposed initial profile filename, not evidence that one profile covers every context.
 
-Historical classification is documentation, not a new runtime lifecycle field. It does not rewrite SoM's source identity, windows, or `u` conditions. A historical `som` profile supports explicit replay, inspection, and independent golden tests; an unknown live context must never fall back to it. Shared preprocessing tags are not flavor identity: SoD's configuration also contains the `SOM` preprocessing tag, which does not make SoD and SoM the same flavor.
+Historical classification is documentation, not a new runtime lifecycle field. It does not rewrite SoM's source identity, windows, or `u` conditions. A historical `som` profile supports explicit replay, inspection, and independent golden tests; an unknown live context must never fall back to it. Shared preprocessing tags are not flavor identity: SoD's configuration also contains the `SEASON_OF_MASTERY` preprocessing tag, which does not make SoD and SoM the same flavor.
 
 The concrete profile paths appear in section 9. Section 11 now plans the complete published phase groups for the seven in-scope current families and historical SoM; Appendix D accounts for every repository declaration and alias. Unknown individual dates, realm-state evidence, and runtime selectors are labeled explicitly rather than deleting their scope from the plan.
 
@@ -125,66 +146,154 @@ The validated context gate must protect **both** its data and any write of `app.
 
 These activation gates are required when progress becomes production authority in stage 3. In stage 2, collect and validate contexts without changing the official legacy loading predicates, outputs, or controls; the byte-equality gate remains in force. The profile example below is the shape assigned only after its matching context has been validated, not an unguarded global assignment.
 
-## 2b. Concrete Era and SoD file examples
+## 2b. Blackwing Lair in progression, Anniversary, Era, and SoD
 
-This is a review example, not an implementation or a complete production policy. The proposed files below have not been added to ATT. The Parser does not yet implement the proposed `Progression*` configuration fields.
+**The same instance ID does not imply the same raid source or opening.** This example follows the actual Blackwing Lair file for four explicitly selected flavors. It is a design proposal, not a source patch or a runnable current configuration. The complete phase catalogs remain in section 11; the small JSON documents below cover the shown BWL scopes only.
 
-`era` and `sod` are the flavor identifiers selected for this design, not Blizzard API enum values. `main` is a proposed schedule-profile ID, not an existing or automatically detected profile. Opening values illustrate the existing repository's phase assumptions; they are not new in-game verification.
+### Files and evidence
 
-### Files involved
+| File | Role in this example |
+| --- | --- |
+| `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua` | Existing instance, original bosses/loot, SoD legacy-history wrapper, and SoD replacement raid. |
+| `.contrib/.db/shared/lib/Constants/Phases.lua` | Existing legacy aliases used only by P1/P2 official authority and P3's separate golden. |
+| `.contrib/.db/shared/.config/progression/progression/main.json` | Proposed progression timeline; Vanilla chapter shown below, later chapters retain their own stable keys. |
+| `.contrib/.db/shared/.config/progression/anniversary/main.json` | Proposed Anniversary timeline; never chosen merely because a target is named TBC. |
+| `.contrib/.db/shared/.config/progression/era/main.json` | Proposed Era timeline for historical inspection and an explicit later default view, not a restarted live rollout. |
+| `.contrib/.db/shared/.config/progression/sod/main.json` | Proposed SoD timeline and occurrence-specific policy. |
+| `.contrib/.db/standard/.config/classic/contexts/progression-vanilla.config` | Proposed explicit selection overlay for a reviewed historical progression/Vanilla source context. Not an existing working target. |
+| `.contrib/.db/standard/.config/classic/contexts/anniversary-vanilla.config` | Proposed explicit selection overlay for a reviewed Anniversary/Vanilla source context. Not the current Anniversary TBC target. |
+| `.contrib/.db/standard/.config/classic/01 - Classic Era.config` and `01 - Classic SOD.config` | Existing source targets; add explicit profile selection only after their complete applicability is reviewed. |
 
-```text
-.contrib/.db/
-├── standard/
-│   ├── .config/classic/
-│   │   ├── 01 - Classic Era.config       # Existing build settings: select Era policy.
-│   │   └── 01 - Classic SOD.config       # Existing build settings: select SoD policy.
-│   └── 01 - Dungeons Raids/01 - Classic/
-│       └── 1.0 Molten Core.lua          # Existing source variants: add keys, retain loot.
-└── shared/.config/progression/
-    ├── era/main.json                    # Proposed Era schedule.
-    └── sod/main.json                    # Proposed SoD schedule.
-```
+Opening evidence: original Classic BWL opened [February 12, 2020 at 15:00 PST](https://us.forums.blizzard.com/en/wow/t/wow-classic-content-unlock-february-12/406222); Anniversary BWL opened [March 20, 2025, in phase 3](https://news.blizzard.com/en-us/article/24182548/wow-20th-anniversary-edition-phase-3-honor-cap-arathi-basin-and-more-now-live); SoD BWL opened [September 26, 2024, at 13:00 PDT](https://worldofwarcraft.blizzard.com/en-us/news/24135893). SoD's raid is tuned for 20 but permits up to 40 players; `DIFFICULTY.SOD.PLAYER20` is the repository's internal variant name, not a maximum-player assertion. [Official SoD phase-5 details](https://worldofwarcraft.blizzard.com/en-us/news/24139952)
 
-Both existing build configurations use `DataPatch: [1, 15, 9, 70576]`. That value does not choose the flavor. Existing preprocessing selects the appropriate source variants; the explicit profile selection below chooses their schedule.
+Current Era is not a new phase-3 rollout. Its historical `vanilla.3` key preserves the opening history; a later default view shows BWL already open. A manual view is never claimed to detect the live server's progress.
 
-### 1. Existing Lua source: annotate the actual variants
+### Actual source distinctions that must survive
 
-File: `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua`
+| Source fact at the pinned baseline | Consequence for this design |
+| --- | --- |
+| Instance `742`; outer `PHASE_THREE`; SoD aliases that symbol to `SOD_PHASE_FIVE` (`1609`). | Progression/Anniversary/Era use their own `vanilla.3`; SoD's common parent remains `vanilla.5`, including its retained old history. Do not make that parent neutral before the legacy gate. |
+| Only the SoD preprocessing path adds `d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, ...))`. | Keep the old source for removed-content inspection. Do not invent a new 40-player wrapper in the non-SoD tree. |
+| The separate SoD difficulty subtree has `ADDED_1_15_4` and `SOD_PHASE_FIVE`. | Preserve its different loot/quests and its own policy scope. The source occurrence/provenance preserves identity; the key itself is not an identity. |
+| Both Nefarian occurrences use encounter `1536`, NPCs `11583`/`10162`, and heads `19003`/`19002`. Original Ashkandi is `19364`; the SoD boss version is `230818`. | Never coalesce the occurrences by boss or head ID and mix their reward pools. |
+| Original head turn-ins finish at quests `7782`/`7784` with rewards `19366`/`19383`/`19384`; SoD uses `85643`/`85644` with `230841`/`230840`/`230839`. | The same head does not imply the same quest/reward route. Keep faction, quest prerequisites and the old quest-group removal timeline. |
+| `o(180667)` / item `21109`, Draconic for Dummies, has a nested `PHASE_FIVE` plus `ADDED_1_9_0` / `REMOVED_4_0_3`. | Give the later source its own key. Opening BWL at phase 3 cannot open this phase-5 source early. In SoD this is retained legacy history under the removed original variant, not evidence of an obtainable new phase-6 book. |
 
-This is an abbreviated **stage-4 shape**, after retiring legacy phase assignments. It is not a replacement for the whole file. Keep the existing outer wrappers, guards, conditions, bosses, and rewards. During stages 2–3, retain the existing legacy expressions as required by the migration plan.
+The complete boss structure has eight encounter occurrences in each variant; the example does not reduce the raid to Nefarian:
 
-```lua
-inst(741, { -- Molten Core
-    progressionKey = "raid.mc.common", -- Shared container; each profile supplies its policy.
-    groups = {
-        -- Existing shared entries retain their own source conditions.
-        -- Keep the existing legacy 40-player block here as well, including
-        -- its SoD REMOVED_1_15_1 condition. Do not turn it into an else branch.
+| Encounter | Boss | NPC identity retained in both variants |
+| --- | --- | --- |
+| `1529` | Razorgore the Untamed | `12435` |
+| `1530` | Vaelastrasz the Corrupt | `13020` |
+| `1531` | Broodlord Lashlayer | `12017` |
+| `1532` | Firemaw | `11983` |
+| `1533` | Ebonroc | `14601` |
+| `1534` | Flamegor | `11981` |
+| `1535` | Chromaggus | `14020` |
+| `1536` | Nefarian | `11583` / `10162` |
 
-        -- #if SEASON_OF_DISCOVERY
-        d(DIFFICULTY.SOD.PLAYER20, {
-            progressionKey = "raid.mc.sod20",
-            flavors = { "sod" },
-            timeline = { ADDED_1_15_3 }, -- Existing client/source condition.
-            groups = {
-                -- Existing SoD bosses and rewards stay here, unchanged.
-            },
-        }),
-        -- #endif
+For example, Razorgore's original Untamed Blade is `19334`, while its SoD version is `230242`. Original Nefarian drops Ashkandi `19364`; SoD Nefarian drops `230818`; Shadowflame Ashkandi `232550` belongs to cache `495500`, not automatically to the boss's direct-drop route. Keep all remaining authored loot unchanged. SoD trial objects `495577`, `495578`, `495503`, `495505`, and `495500` depend on trial/weekly encounter conditions. Those are not new release milestones merely because a chest replaces another chest.
+
+Attunement `sourceQuest = 7761` remains the raid's existing prerequisite where the source requires it. The [original announcement](https://us.forums.blizzard.com/en/wow/t/wow-classic-content-unlock-february-12/406222) made Blackhand's Command available before BWL opened; do not automatically apply the raid's opening window to the prerequisite quest's own source.
+
+These facts come from [the existing BWL source](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua) and [the ordered phase aliases](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1483). They document current authored assumptions, not new in-game verification of every reward or the old book's availability.
+
+### P1 → P4: exactly what changes for this raid
+
+| Migration stage | BWL Lua and policies | Official generated output | Four-flavor comparison and next gate |
+| --- | --- | --- | --- |
+| **P1: freeze the existing raid** | Preserve the whole-instance `PHASE_THREE`, later book `PHASE_FIVE`, SoD branch/quest `SOD_PHASE_FIVE`, original/SoD timelines and all guards. Capture each reviewed context's actual alias results. | Existing legacy source `phase`/conditions; no new profile or `progressionScopes`. | Pin four independent source/config/runtime baselines. An unverified progression/Anniversary Vanilla target is a missing baseline, not permission to run the current TBC config and call it Vanilla. |
+| **P2: annotate and shadow-validate** | Add common, later-book and SoD-child keys; add `flavors = { "sod" }` to the complete SoD subtree; add the four JSON policies below. Keep all P1 expressions/guards. | **Exactly the P1 legacy bytes**, apart from separately named diagnostic artifacts. Strip the new input fields. No profile/selection change controls official output. | Compare key hits, separate same-ID occurrences, policy coverage and proposed source selection in shadow mode. Missing book transition or wrong flavor data blocks advancement. |
+| **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. Production suppresses all old phase writers and uses only the explicit selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
+| **P4: remove the old path** | Delete the outer/nested phase writers and phase-only aliases' authoring use after complete migration. Keep actual data, intrinsic timeline predicates and justified construction guards. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | No new direct phase writes; no source/cache contamination; no same-ID loot union. Prove redundant repeated SoD phase-5 quest wrappers may inherit their parent before removing them. |
+
+The four profiles below are **complete valid examples for the shown scopes, not complete production files**: two shared keys and the SoD child key where applicable. The book deliberately uses `status = unknown` and an empty window list. Existing `PHASE_FIVE` (and SoD's phase-6 alias, whose declaration is marked TODO) does not prove a particular War Effort or scepter-quest opening batch.
+
+**This is an explicit P3 promotion blocker for the book's affected propagation chain.** P2's official legacy output remains unchanged. A P3 candidate can test source identity and unknown-content inspection, but cannot claim availability equivalence or complete BWL cutover until that mapping is evidenced and reviewed. Keep the independent golden's actual phase-5/6 result; do not change it, read it as a production fallback, or invent a calendar boundary to make the comparison pass. Design review can proceed with this clearly identified data task. No example bypasses `REMOVED_1_15_4`, `REMOVED_4_0_3`, faction, quests, or other conditions.
+
+### Four concrete policy files
+
+**`.contrib/.db/shared/.config/progression/progression/main.json`**
+
+```json
+{
+    "schema": 2,
+    "flavorId": "progression",
+    "id": "main",
+    "mode": "phased",
+    "defaultView": "vanilla.2",
+    "phases": {
+        "vanilla.2": {
+            "order": 130,
+            "name": {
+                "en": "Phase 2"
+            }
+        },
+        "vanilla.3": {
+            "order": 140,
+            "name": {
+                "en": "Phase 3"
+            }
+        }
     },
-})
+    "content": {
+        "raid.bwl.common": {
+            "windows": [
+                {
+                    "from": "vanilla.3"
+                }
+            ]
+        },
+        "raid.bwl.draconic-for-dummies": {
+            "status": "unknown",
+            "windows": []
+        }
+    },
+    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+}
 ```
 
-The source says **which acquisition scope this is**. There is no opening phase number in this final authored form. The complete SoD subtree declares its applicability; its existing pragma is retained here until safe construction of its difficulty constants/wrappers is proven, as section 2c requires. Existing later-boss/drop transitions require their own keys; they must not disappear when their old wrappers are removed.
+**`.contrib/.db/shared/.config/progression/anniversary/main.json`**
 
-The current source also retains the old 40-player content under SoD with its removal timeline. Keep that historical data and condition; selecting SoD does not authorize deleting it. The SoD 20-player scope is a separate addition.
+```json
+{
+    "schema": 2,
+    "flavorId": "anniversary",
+    "id": "main",
+    "mode": "phased",
+    "defaultView": "vanilla.2",
+    "phases": {
+        "vanilla.2": {
+            "order": 120,
+            "name": {
+                "en": "Phase 2"
+            }
+        },
+        "vanilla.3": {
+            "order": 140,
+            "name": {
+                "en": "Phase 3"
+            }
+        }
+    },
+    "content": {
+        "raid.bwl.common": {
+            "windows": [
+                {
+                    "from": "vanilla.3"
+                }
+            ]
+        },
+        "raid.bwl.draconic-for-dummies": {
+            "status": "unknown",
+            "windows": []
+        }
+    },
+    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+}
+```
 
-The original negative pragma around the common scheduling key is removed. Both selected contexts recognize the neutral parent key: Era opens the original scope at its launch milestone; SoD keeps the parent neutral from `start`, while the SoD20 child opens later. Existing legacy40 removal and other intrinsic conditions remain intact. Every other context requires its own reviewed policy coverage.
-
-### 2. Proposed Era policy
-
-File: `.contrib/.db/shared/.config/progression/era/main.json`
+**`.contrib/.db/shared/.config/progression/era/main.json`**
 
 ```json
 {
@@ -192,24 +301,39 @@ File: `.contrib/.db/shared/.config/progression/era/main.json`
     "flavorId": "era",
     "id": "main",
     "mode": "phased",
-    "defaultView": "vanilla.1",
+    "defaultView": "vanilla.6",
     "phases": {
-        "vanilla.1": { "order": 1, "name": { "en": "Phase 1" } }
-    },
-    "content": {
-        "raid.mc.common": {
-            "windows": [{ "from": "vanilla.1" }]
+        "vanilla.3": {
+            "order": 140,
+            "name": {
+                "en": "Phase 3"
+            }
+        },
+        "vanilla.6": {
+            "order": 210,
+            "name": {
+                "en": "Phase 6"
+            }
         }
     },
-    "verificationStatus": "illustrative"
+    "content": {
+        "raid.bwl.common": {
+            "windows": [
+                {
+                    "from": "vanilla.3"
+                }
+            ]
+        },
+        "raid.bwl.draconic-for-dummies": {
+            "status": "unknown",
+            "windows": []
+        }
+    },
+    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
 }
 ```
 
-This means the original Molten Core scope opens at the selected Era profile's milestone `vanilla.1`. `defaultView` is only an example display default; it is not a statement about the live server's current progress.
-
-### 3. Proposed SoD policy
-
-File: `.contrib/.db/shared/.config/progression/sod/main.json`
+**`.contrib/.db/shared/.config/progression/sod/main.json`**
 
 ```json
 {
@@ -219,28 +343,70 @@ File: `.contrib/.db/shared/.config/progression/sod/main.json`
     "mode": "phased",
     "defaultView": "vanilla.4",
     "phases": {
-        "vanilla.4": { "order": 1, "name": { "en": "Phase 4 update" } },
-        "vanilla.4.raids": { "order": 2, "name": { "en": "Phase 4 raids" } }
-    },
-    "content": {
-        "raid.mc.common": { "windows": [{ "from": "start" }] },
-        "raid.mc.sod20": {
-            "windows": [{ "from": "vanilla.4.raids" }]
+        "vanilla.4": {
+            "order": 130,
+            "name": {
+                "en": "Phase 4"
+            }
+        },
+        "vanilla.5": {
+            "order": 170,
+            "name": {
+                "en": "Phase 5"
+            }
         }
     },
-    "verificationStatus": "illustrative"
+    "content": {
+        "raid.bwl.common": {
+            "windows": [
+                {
+                    "from": "vanilla.5"
+                }
+            ]
+        },
+        "raid.bwl.draconic-for-dummies": {
+            "status": "unknown",
+            "windows": []
+        },
+        "raid.bwl.sod20": {
+            "windows": [
+                {
+                    "from": "vanilla.5"
+                }
+            ]
+        }
+    },
+    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
 }
 ```
 
-This means the SoD 20-player scope is future at the July 11 phase-4 update (`vanilla.4`) and opens in the July 25 raid batch (`vanilla.4.raids`). The neutral parent does not override its historical legacy40 removal timeline. This finer opening is sourced in section 11, not inferred from the old numeric phase-4 assignment. Era's `vanilla.1` and SoD's `vanilla.4.raids` are not compared. Their identical content-expansion classification does not make them share a schedule or a loot table.
+The schedules are independent even where three examples use the label “phase 3.” Progression and Era preserve the original Classic opening history; Anniversary uses its later actual cycle. SoD uses phase 5 and a different raid source. The Era example's `defaultView = vanilla.6` makes that distinction visible. These example defaults are display choices, not live detection values. A later expansion in `progression/main` adds new chapter keys; it does not redefine `vanilla.3`.
 
-These are complete JSON examples for the shown scopes, **not complete production policies** for the real Era/SoD datasets. All other emitted keys and independent transitions still require coverage.
+### Four explicit configuration selections
 
-### 4. Existing build configurations: select a profile explicitly
+The following are **overlay excerpts**, not runnable complete configurations. Existing composition must first select a reviewed source/build context and safe output directory. The example adds no real client discriminator. In particular, `.contrib/.db/standard/.config/classic/02 - TBC.config` contains `CLASSIC_ANNIVERSARY`; it is not the historical Vanilla baseline for either of the first two examples.
 
-Add the following proposed fields to the existing configurations. These are merge excerpts, not replacement files. Paths here are shown repository-relative; the future implementation must resolve and validate the explicit path consistently.
+**`.contrib/.db/standard/.config/classic/contexts/progression-vanilla.config`** — NEW proposed overlay; historical progression Vanilla source/config snapshot and positive applicability still required.
 
-`.contrib/.db/standard/.config/classic/01 - Classic Era.config`:
+```json
+{
+    "ProgressionFlavor": "progression",
+    "ProgressionProfile": ".contrib/.db/shared/.config/progression/progression/main.json",
+    "ProgressionLegacyEligibility": "none"
+}
+```
+
+**`.contrib/.db/standard/.config/classic/contexts/anniversary-vanilla.config`** — NEW proposed overlay; Anniversary Vanilla source/config snapshot and positive applicability still required.
+
+```json
+{
+    "ProgressionFlavor": "anniversary",
+    "ProgressionProfile": ".contrib/.db/shared/.config/progression/anniversary/main.json",
+    "ProgressionLegacyEligibility": "none"
+}
+```
+
+**`.contrib/.db/standard/.config/classic/01 - Classic Era.config`** — Existing target; its negative not-SoD requirement is not a complete positive ruleset detector.
 
 ```json
 {
@@ -250,7 +416,7 @@ Add the following proposed fields to the existing configurations. These are merg
 }
 ```
 
-`.contrib/.db/standard/.config/classic/01 - Classic SOD.config`:
+**`.contrib/.db/standard/.config/classic/01 - Classic SOD.config`** — Existing target; verify the complete selected context rather than infer identity from its filename.
 
 ```json
 {
@@ -260,62 +426,114 @@ Add the following proposed fields to the existing configurations. These are merg
 }
 ```
 
-`none` is used because these small examples request no native-phase eligibility rule. It is not a decision to remove restrictions from the complete real datasets. Those restrictions need the separate context review described in the design.
+`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2 still uses the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
 
-Keep each configuration's existing source inputs and tags. Do not point both at a file named `vanilla.json` just because the client or content expansion matches. Keep separate output directories.
+### P4 target source shape: preserve the actual variants
 
-The Era configuration's current negative season predicate is not a complete ruleset detector. Before stage 3, verified unique applicability must guard both the matching profile and data; these excerpts do not supply missing client evidence or make the current predicate sufficient.
+The following is the intended P4 structure after its promotion gates pass, not permission to retire the unresolved book path now. It is a shortened structural excerpt, not a replacement file. Omitted bosses, quests, fields and rewards remain unchanged. The original quest group's existing SoD removal wrapper also remains; it is omitted here only to keep the example readable.
 
-### 5. Generated Lua: exact linkage for the SoD example
+```lua
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
+    inst(742, { -- Blackwing Lair
+        progressionKey = "raid.bwl.common",
+        timeline = { ADDED_1_6_0 },
+        groups = {
+            -- Existing quest group and its SoD removal condition stay here.
+            -- #if SEASON_OF_DISCOVERY
+            d(DIFFICULTY.LEGACY_RAID.PLAYER40,
+                bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+            -- #endif
+            n(TREASURES, {
+                o(180667, { -- Draconic for Dummies; formerly PHASE_FIVE.
+                    progressionKey = "raid.bwl.draconic-for-dummies",
+                    timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+                    groups = { i(21109) },
+                }),
+            }),
+            e(1536, { -- Original Nefarian occurrence.
+                crs = { 11583, 10162 },
+                groups = {
+                    i(19003, { races = ALLIANCE_ONLY }),
+                    i(19002, { races = HORDE_ONLY }),
+                    i(19364), -- Original Ashkandi.
+                    -- The remaining original loot/conditions are unchanged.
+                },
+            }),
+            -- #if SEASON_OF_DISCOVERY
+                })), -- Close the existing SoD-only legacy40 wrapper.
+            d(DIFFICULTY.SOD.PLAYER20, {
+                flavors = { "sod" },
+                progressionKey = "raid.bwl.sod20",
+                timeline = { ADDED_1_15_4 },
+                groups = {
+                    -- Existing SoD quests, trials, vendors and other bosses.
+                    e(1536, { -- Distinct SoD Nefarian occurrence.
+                        crs = { 11583, 10162 },
+                        groups = {
+                            i(19003),
+                            i(19002),
+                            i(230818), -- SoD Ashkandi; not item 19364.
+                            -- Remaining SoD loot stays in this occurrence.
+                        },
+                    }),
+                },
+            }),
+            -- #endif
+        },
+    }),
+}))
+```
 
-Inside the validated matching context guard, the generated profile would have this shape:
+The remaining `SEASON_OF_DISCOVERY` conditions shown here preserve asymmetric constructor/removal structure and the existing guarded local token data until its safe extraction is reviewed; they do not assign the opening phase. The `flavors` field makes the SoD subtree's applicability explicit but does not undo pre-filter helper side effects or make an unbalanced wrapper valid in another context. `DIFFICULTY.SOD.PLAYER20 = 201` is already declared unconditionally; an allegedly missing difficulty constant is not a reason to keep this guard. The BWL-local `TOKENS` table and full helper effects still require the section-2c construction/isolation review before removing that surrounding guard. Retire a retained guard only after that proof. No negative flavor guard is needed merely to choose a scheduling key.
+
+### Generated linkage and visible behavior in each flavor
+
+For each selected artifact, Parser emits one profile whose `flavorId`/`id` match its configuration, retains the profile-local phase keys above, and prefixes every `content` lookup with `flavorId:main:`. An original Nefarian/head occurrence inherits the common scope. The later book inherits common **and** book scopes. The SoD replacement inherits common **and** SoD scopes; the same NPC/head ID never substitutes for its occurrence ancestry.
+
+| Artifact/profile | Original Nefarian scope | Later book's additional scope | SoD replacement scope |
+| --- | --- | --- | --- |
+| `progression:main` | `progression:main:raid.bwl.common` | `progression:main:raid.bwl.draconic-for-dummies` | Not selected. |
+| `anniversary:main` | `anniversary:main:raid.bwl.common` | `anniversary:main:raid.bwl.draconic-for-dummies` | Not selected. |
+| `era:main` | `era:main:raid.bwl.common` | `era:main:raid.bwl.draconic-for-dummies` | Not selected. |
+| `sod:main` | `sod:main:raid.bwl.common`; original route remains removed history. | `sod:main:raid.bwl.draconic-for-dummies`; also retains the original removed-history conditions. | `sod:main:raid.bwl.common` AND `sod:main:raid.bwl.sod20`. |
+
+For example, inside the validated matching SoD context guard, this **P3 candidate** demonstrates the generated shape while the book remains unresolved. It is not a promoted P4 policy; P4 requires an approved resolved window and the corresponding golden check:
 
 ```lua
 app.ProgressionProfile = {
-    schema = 2,
-    flavorId = "sod",
-    id = "main",
-    mode = "phased",
+    schema = 2, flavorId = "sod", id = "main", mode = "phased",
     defaultView = "vanilla.4",
     phases = {
-        ["vanilla.4"] = { order = 1, name = { en = "Phase 4 update" } },
-        ["vanilla.4.raids"] = { order = 2, name = { en = "Phase 4 raids" } },
+        ["vanilla.4"] = { order = 130, name = { en = "Phase 4" } },
+        ["vanilla.5"] = { order = 170, name = { en = "Phase 5" } },
     },
     content = {
-        ["sod:main:raid.mc.common"] = { windows = { { from = "start" } } },
-        ["sod:main:raid.mc.sod20"] = {
-            windows = { { from = "vanilla.4.raids" } },
+        ["sod:main:raid.bwl.common"] = { windows = { { from = "vanilla.5" } } },
+        ["sod:main:raid.bwl.sod20"] = { windows = { { from = "vanilla.5" } } },
+        ["sod:main:raid.bwl.draconic-for-dummies"] = {
+            status = "unknown", windows = {},
         },
     },
 }
-```
-
-The actual generated SoD acquisition node would retain its ordinary fields and children and contain:
-
-```lua
+-- On the retained SoD Nefarian/head acquisition occurrence:
 progressionScopes = {
-    "sod:main:raid.mc.common",
-    "sod:main:raid.mc.sod20",
+    "sod:main:raid.bwl.common",
+    "sod:main:raid.bwl.sod20",
 },
 ```
 
-It would contain neither input-only `progressionKey` nor `flavors`. The parent and child windows both apply. The namespace selects this profile's policy; it does not identify or merge NPCs/items. The displayed state still respects all other source conditions.
+Neither input field nor an authored numeric `phase` remains in that new output. Ordinary fields, faction/quest/event predicates, intrinsic timelines and independently derived unavailable conditions remain. The book entry explicitly reports unknown timing; it neither passes the old availability golden nor makes the removed original SoD source obtainable.
 
-| Selected profile | Selected view | Shown scope | Schedule result |
-| --- | --- | --- | --- |
-| `era:main` | `vanilla.1` | Original Molten Core | Active |
-| `sod:main` | `vanilla.4` | SoD 20-player Molten Core | Future |
-| `sod:main` | `vanilla.4.raids` | SoD 20-player Molten Core | Active |
+| Selected flavor/view | BWL result from this policy | Later book / source-identity result |
+| --- | --- | --- |
+| Progression `vanilla.2` → `vanilla.3` | Original BWL changes from future to open. | Book timing is explicitly unknown pending evidence; the old phase-5 baseline remains the independent comparison. SoD loot is absent. |
+| Anniversary `vanilla.2` → `vanilla.3` | Original BWL opens in Anniversary's own March-2025 cycle. | Its unresolved book mapping blocks promotion of that chain; the current TBC target's filename cannot supply it. |
+| Era default `vanilla.6` | Original BWL is already open; no new live rollout is implied. | Historical earlier views remain available; intrinsic restrictions still apply. |
+| SoD `vanilla.4` → `vanilla.5` | The reworked SoD raid opens at its own September-2024 boundary. | Original loot remains removed history; repeated head/NPC IDs do not mix original and SoD rewards. |
+| SoD book inspection at any view | Timing remains unknown; this scope has no confirmed window. | Original removal conditions still apply. Do not call it an obtainable new phase-6 book or report the availability golden as passed. |
 
-Changing the SoD window edits the SoD JSON. Changing the SoD reward list edits its actual Lua source branch. Neither operation edits the Era schedule automatically.
+Changing one flavor's window must not change the other three policies. A source/loot edit stays in its actual Lua occurrence. Dates, current view defaults and new item availability are not inferred from the shared instance ID, a reused native phase number, or an expansion-named configuration.
 
-### Still required before production
-
-The eight current design families are `retail`, `progression`, `anniversary`, `sod`, `era`, `hardcore`, `forever`, and `titan`. Historical `som` is a separate stable identity. This is the agreed design scope, not an exhaustive count of every historical flavor or a claim that all listed families are verified live today. Retail PTR remains a channel, not another flavor; Retail phase planning is excluded. In-scope flavors may select different reviewed profiles for distinct channel/realm schedules.
-
-Section 11 and Appendix D supply the full planned phase/declaration inventory; unresolved historical endpoints and actual runtime/profile bindings remain explicitly marked evidence work. A shared family such as `hardcore` does not choose one timeline by itself: original and Anniversary Hardcore can require different schedule profiles within that family. Historical SoM must retain its own source identity, windows, unavailable conditions, and golden evidence; it is not an automatic fallback for an unknown live context.
-
-These examples connect concrete files. They do not supply missing live-client evidence or implement the Parser/runtime. The occurrence data comes from the repository; section 11 supplies the SoD raid-opening announcement. Neither substitutes for record-level in-game evidence.
 
 ## 2c. Fewer Parser-facing `SEASON_OF_DISCOVERY` pragmas
 
@@ -341,7 +559,7 @@ n(900001, {
 -- An adjacent shared boss omits flavors and keeps its own source data.
 ```
 
-The example does not invent real bosses or rewards. In the actual Molten Core file, the complete SoD20 subtree is a candidate for this treatment. Its legacy40 wrapping/removed timeline is structurally different; do not invent a 40-player wrapper for Era merely to remove a conditional. Do not replace field-level loot patches or asymmetric constructor fragments with an invented complete node.
+The example does not invent real bosses or rewards. In the actual Blackwing Lair file, the complete SoD subtree is a candidate for this treatment. Its existing legacy40 wrapper and `REMOVED_1_15_4` condition are added only in the SoD source path; do not invent a 40-player wrapper for Era, progression, or Anniversary merely to remove a conditional. Do not replace field-level loot patches or asymmetric constructor fragments with an invented complete node.
 
 | Existing directive purpose | End-state treatment | Required proof |
 | --- | --- | --- |
@@ -561,7 +779,7 @@ Freeze the legacy source/runtime/toolchain and build context before new policy b
 - **Authority-isolation checks:** changing a legacy-only timing assignment must not change candidate production output; changing a new policy window must not change the legacy golden. A missing child key must cause failure, never be repaired from legacy phase.
 - After stage 4, preserve pinned snapshots/small expected fixtures as evidence. New content is authored once through progress policy; do not require it to be dual-written into retired legacy syntax.
 
-The synthetic example above supplies independent expected results for the new `4.1`/`4.2`/`4.10` and removal/reopening capabilities. Separately, existing MC source conditions provide legacy cases: SoD20 opens at phase four; distinct NPC `227819` occurrences carry rewards `226659` and later `232099`; items `233213` and `233201` have later phase-six conditions. These are authored repository assumptions, not new in-game verification. Equal NPC IDs must not collapse those transitions.
+The synthetic example above supplies independent expected results for the new `4.1`/`4.2`/`4.10` and removal/reopening capabilities. Separately, Blackwing Lair supplies real legacy cases for all four selected flavors: outer `PHASE_THREE` becomes SoD phase 5; `o(180667)` / `i(21109)` has a later `PHASE_FIVE`; original and SoD Nefarian share encounter/NPC/head IDs but have different loot and head-turn-in rewards. The original SoD branch remains removed history. A missing book key, merged same-ID loot, or a new output that secretly reads the old alias must fail comparison. The explicitly unknown book mapping in section 2b remains a promotion blocker for that affected chain until evidence resolves its independent window; the golden is not rewritten to accept it. These are authored repository assumptions, not new in-game verification.
 
 ## 8. Full authoring inventory and retirement gates
 
@@ -620,6 +838,8 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 
 | Path | Responsibility |
 | --- | --- |
+| `.contrib/.db/standard/.config/classic/contexts/progression-vanilla.config` | Proposed explicit historical progression/Vanilla selection overlay; requires a reviewed source baseline and positive context applicability before activation. |
+| `.contrib/.db/standard/.config/classic/contexts/anniversary-vanilla.config` | Proposed explicit Anniversary/Vanilla selection overlay; do not reuse the current Anniversary TBC target as its Vanilla baseline. |
 | `.contrib/.db/shared/lib/Strings/Settings/Phases/PROGRESSION_PHASE_LABEL.lua` | Provide one localized format for ordinary phase/subphase labels. |
 | `.contrib/.db/shared/lib/Strings/Settings/Phases/PROGRESSION_UNKNOWN.lua` | Define one shared localized unknown-phase label. |
 | `.contrib/.tools/Parser.build-manifest.json` | Record the exact CI source, run, and matching payload hashes. |
@@ -761,7 +981,7 @@ The official SoM outline defines a different sequence from 2019: Honor, battlegr
 | 150 | `vanilla.5.raids` | AQ raids once the War Effort permits them. | SoM boss/reward variants remain distinct. |
 | 160 | `vanilla.6` | Naxxramas and Scourge Invasion. | [2022-07-28 release](https://worldofwarcraft.blizzard.com/en-us/news/23826539); SoM-specific encounters/rewards. |
 
-A single repository SoM-specific constant is not evidence that SoM had only one phase. Historical source captures, availability windows, and comparison outputs must be preserved independently of current SoD's reuse of a `SOM` preprocessing tag.
+A single repository SoM-specific constant is not evidence that SoM had only one phase. Historical source captures, availability windows, and comparison outputs must be preserved independently of current SoD's reuse of a `SEASON_OF_MASTERY` preprocessing tag.
 
 ### Season of Discovery: all eight phases and staggered batches
 
@@ -1344,7 +1564,9 @@ This is a **one-time migration inventory**, not a policy registry. It records th
 
 </details>
 
-## Appendix C: initial pilot scope reference
+## Appendix C: historical prototype inventory (not the worked example)
+
+The worked example for this design is now Blackwing Lair across all four flavors in section 2b. This appendix preserves the old 17-entry prototype inventory as migration evidence; its Molten Core rows are historical inventory, not the chosen example or a replacement for the complete catalog.
 
 This prototype-derived checklist identifies the first 17 scheduling scopes, not all source transitions or the final window policy. Numbers below are the prototype's repository-assumed opening assignments, not independent golden evidence or verified availability. A dash is an old prototype omission, **not permission for a missing stage-3 policy**. These Era/SoD/Wrath column names describe the prototype's historical build-target mapping, not the new flavor taxonomy or approved policies. Final profiles must cover every explicitly supported output context and any closing/reopening windows supported by evidence.
 
@@ -1561,7 +1783,7 @@ Configuration names are build targets, not the flavor catalog. These entries inc
 | Existing configuration | DataPhase / DataPatch | Relevant identity evidence / disposition |
 | --- | --- | --- |
 | `.contrib/.db/standard/.config/classic/01 - Classic Era.config` | `CLASSIC` / `[1, 15, 9, 70576]` | Candidate Era binding; negative not-SoD requirement is not exhaustive positive identity proof. |
-| `.contrib/.db/standard/.config/classic/01 - Classic SOD.config` | `SEASON_OF_DISCOVERY` / `[1, 15, 9, 70576]` | SoD candidate; same DataPatch as Era. Shared SOM tag is not historical SoM identity. |
+| `.contrib/.db/standard/.config/classic/01 - Classic SOD.config` | `SEASON_OF_DISCOVERY` / `[1, 15, 9, 70576]` | SoD candidate; same DataPatch as Era. Shared `SEASON_OF_MASTERY` tag is not historical SoM identity. |
 | `.contrib/.db/standard/.config/classic/02 - TBC.config` | `TBC` / `[2, 5, 6, 70577]` | Contains CLASSIC_ANNIVERSARY: must not be mechanically assigned to original progression TBC. |
 | `.contrib/.db/standard/.config/classic/03 - Wrath.config` | `WRATH` / `[3, 4, 5, 63697]` | Explicit NAXX_10MAN_DROPS_25MAN_LOOT source variant; profile cannot manufacture that loot. |
 | `.contrib/.db/standard/.config/classic/04 - Cataclysm.config` | `CATA` / `[4, 4, 5, 55261]` | Expansion target; actual progression binding and runtime applicability require review. |
