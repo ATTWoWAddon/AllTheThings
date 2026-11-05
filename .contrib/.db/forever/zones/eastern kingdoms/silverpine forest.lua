@@ -857,7 +857,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					objective(1, {	-- Murloc Eye
 						provider = { "i", 730 },	-- Murloc Eye
 					}),
-					i(4597),	-- Recipe: Discolored Healing Potion (RECIPE!)
+					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
+					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(429, {	-- Wild Hearts
@@ -876,8 +877,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 							12431,	-- Gorefang
 						},
 					}),
-					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
-					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(1359, {	-- Zinge's Delivery
