@@ -2247,4 +2247,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(93463, {	-- Triggered when turning in 'The High Order', likely a shared quest flag for either faction having completed their initial introduction quest.
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
+	q(92542, {	-- Completed after accepting quest Falaath Village (92529)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });
