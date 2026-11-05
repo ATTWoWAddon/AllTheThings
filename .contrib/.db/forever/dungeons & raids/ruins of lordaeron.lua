@@ -98,6 +98,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				},
 			}),
 			q(95216, {	-- The New Plague
+				sourceQuest = 451,	-- A Recipe For Death (3/3)
 				qg = 11835,	-- Theodore Griffs
 				coord = { 46.6, 72.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
@@ -112,6 +113,7 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				},
 			}),
 			q(92422, {	-- The Wrath of Rath'mael
+				sourceQuest = 99156,	-- Rear Guard Patrol (2/2)
 				qg = 251001,	-- Deathguard Kristof
 				coord = { 65.2, 60.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,

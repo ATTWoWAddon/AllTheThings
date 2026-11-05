@@ -850,13 +850,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sourceQuests = { 430 },	-- Return to Quinn
 				qg = 1951,	-- Quinn Yorick <Deathstalker>
 				coord = { 53.43, 12.59, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
 				races = HORDE_ONLY,
 				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- Murloc Eye
-						provider = { "i", 730 },	-- Murloc Eye
-					}),
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
 					i(4596),	-- Minor Discolored Healing Potion
 				},

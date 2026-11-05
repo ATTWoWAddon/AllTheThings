@@ -3586,6 +3586,7 @@ i(5116,{coords={
 [1442]={{32.4,66}}},description="Drops from birds and harpies in the given zones.",maps={1417,1418,1443}}),
 i(4338,{description="Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={219,235,1418,1427,1428,1446,1448}}),
 i(12223,{crs={1553,1554},description="Only drops from bats in Tirisfal Glades.",maps={1420}}),
+i(730,{crs={126,127,171,391,422,456,458,513,515,517,519,520,544,545,548,578,645,1024,1025,1026,1027,1028,1029,1083,1259,1418,1767,1768,1908,1909,1957,1958,2201,2202,2203,2204,2205,2206,2207,2208,3654,3737,3739,3740,3742,4818,4819,4820,6243,7015,10323,14270},description="Drops from murlocs in the level bracket 10-30 like murlocs along the Westfall coast."}),
 i(1468,{coords={
 [1437]={{15.1,39.3}}},crs={1024,1025,1026,1027,1028,1029,1418},description="Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands."}),
 i(12037,{coords={

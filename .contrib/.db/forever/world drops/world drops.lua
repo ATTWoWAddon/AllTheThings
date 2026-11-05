@@ -4505,6 +4505,63 @@ root(ROOTS.WorldDrops, {
 			},
 			description = "Only drops from bats in Tirisfal Glades.",
 		}),
+		i(730, {	-- Murloc Eye
+			crs = {
+				 4819,	-- Blindlight Muckdweller
+				 4818,	-- Blindlight Murloc
+				 4820,	-- Blindlight Oracle
+				 1026,	-- Bluegill Forager
+				 1028,	-- Bluegill Muckdweller
+				 1024,	-- Bluegill Murloc
+				 1029,	-- Bluegill Oracle
+				 1025,	-- Bluegill Puddlejumper
+				 1418,	-- Bluegill Raider
+				 1027,	-- Bluegill Warrior
+				  520,	-- Brack
+				  645,	-- Cookie
+				 7015,	-- Flagglemurk the Cruel
+				 6243,	-- Gelihast
+				 1259,	-- Gobbler
+				 2202,	-- Greymist Coastrunner
+				 2206,	-- Greymist Hunter
+				 2204,	-- Greymist Netter
+				 2207,	-- Greymist Oracle
+				 2201,	-- Greymist Raider
+				 2203,	-- Greymist Seer
+				 2208,	-- Greymist Tidehunter
+				 2205,	-- Greymist Warrior
+				10323,	-- Murkdeep
+				  126,	-- Murloc Coastrunner
+				  422,	-- Murloc Flesheater
+				  458,	-- Murloc Hunter
+				  456,	-- Murloc Minor Oracle
+				  548,	-- Murloc Minor Tidecaller
+				  513,	-- Murloc Netter
+				  544,	-- Murloc Nightcrawler
+				  517,	-- Murloc Oracle
+				  515,	-- Murloc Raider
+				  578,	-- Murloc Scout
+				 1083,	-- Murloc Shorestriker
+				  545,	-- Murloc Tidecaller
+				  127,	-- Murloc Tidehunter
+				  171,	-- Murloc Warrior
+				 3654,	-- Mutanus the Devourer
+				  391,	-- Old Murk-Eye
+				 3740,	-- Saltspittle Muckdweller
+				 3742,	-- Saltspittle Oracle
+				 3737,	-- Saltspittle Puddlejumper
+				 3739,	-- Saltspittle Warrior
+				  519,	-- Slark
+				14270,	-- Squiddic
+				 1909,	-- Vile Fin Lakestalker
+				 1908,	-- Vile Fin Oracle
+				 1957,	-- Vile Fin Shorecreeper
+				 1767,	-- Vile Fin Shredder
+				 1958,	-- Vile Fin Tidecaller
+				 1768,	-- Vile Fin Tidehunter
+			},
+			description = "Drops from murlocs in the level bracket 10-30 like murlocs along the Westfall coast.",
+		}),
 		i(1468, {	-- Murloc Fin
 			coords = {
 				{ 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
