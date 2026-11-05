@@ -1881,14 +1881,12 @@ settings.UpdateMode = function(self, doRefresh)
 		-- Release Phases have build version information, Unobtainable Filters do not.
 		local anyUnobtainableFiltered, anyPhaseFiltered = false, false
 		for id,phase in pairs(L.PHASES) do
-			if not settings:GetUnobtainableFilter(id) then
-				if phase.minimumBuildVersion or phase.buildVersion then
-					anyPhaseFiltered = true;
-				else
-					anyUnobtainableFiltered = true;
-				end
-				if anyUnobtainableFiltered and anyPhaseFiltered then break; end
+			if phase.minimumBuildVersion or phase.buildVersion then
+				if not settings:GetPhaseFilter(id) then anyPhaseFiltered = true; end
+			elseif not RawSettings.Unobtainable[id] then
+				anyUnobtainableFiltered = true;
 			end
+			if anyUnobtainableFiltered and anyPhaseFiltered then break; end
 		end
 		if anyUnobtainableFiltered then
 			filterSet.Unobtainable(true)
@@ -1939,6 +1937,7 @@ settings.UpdateMode = function(self, doRefresh)
 		end
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
+	filterSet.ReleasePhase(app.ProgressionProfile ~= nil and not self:Get("DebugMode"));
 	app.HandleEvent("OnUpdateModeFilters", self)
 
 	if self:Get("Show:CompletedGroups") then
