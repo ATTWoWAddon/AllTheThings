@@ -47,7 +47,8 @@ local function MakeApp(profile)
 	local prefix = Section(filterSource, "-- Filter Module", "-- PvP");
 	local event = assert(filterSource:match('(DefineToggleFilter%("Event", AccountFilters, function%(item%).-\nend%);)'));
 	local recursive = Section(filterSource, "local function RecursiveUnobtainableFilter(group)", "-- Recursively check outwards to find if any parent group restricts the filter for the current character (regardless of settings)");
-	Compile(prefix .. "\nSettingsUnobtainable=app.Settings:GetRawSettings(\"Unobtainable\");\n" .. event .. "\n" .. recursive,
+	local account = Section(filterSource, "local function SettingsFilters_Account(o)", "local function SettingsExtraFilters(o, extraFilters)");
+	Compile(prefix .. "\n" .. account .. "\napi.Filters.TestAccount = SettingsFilters_Account;\nSettingsUnobtainable=app.Settings:GetRawSettings(\"Unobtainable\");\n" .. event .. "\n" .. recursive,
 		"Filter.lua availability pipeline", env)("ATT", app);
 	local merge = dataSource:sub((assert(dataSource:find("local MergeSkipFields = {", 1, true))));
 	Compile("local app=select(2,...); local L=app.L;\n" .. merge, "DataHandling.lua actual merge pipeline", env)("ATT", app);
@@ -407,9 +408,243 @@ assert(app.Settings:GetUnobtainableFilter(32));
 app.ProgressionProfile = Profile("titan", 6, 10);
 assert(not app.Settings:GetReleasePhaseFilter("titan:7"), "Titan must not inherit Wrath numeric phase choices");
 
+-- Copy actual profile storage; flat overrides must not alias or discard explicit false.
+do
+	local _, _, env = MakeApp(Profile("era", 6, 6, 11));
+	local state = { Unobtainable = { [12] = false }, ReleasePhases = { ["era:2"] = false }, General = {}, Tooltips = {}, Filters = {} };
+	env.AllTheThingsProfiles = { Profiles = { original = state } };
+	local copy = Section(settingsSource, "local function rawcopy(source, copy)", "-- Removes a Profile");
+	local owner = { Settings = {} }; owner.ProgressionProfile = Profile("era", 6, 6, 11);
+	owner.Settings.GetProfile = function() return "original"; end;
+	Compile("local app=select(2,...); local settings=app.Settings;\n" .. copy, "Settings.lua actual profile copy", env)("ATT", owner);
+	local result = owner.Settings:CopyProfile("copy", "original");
+	assert(result.Unobtainable[12] == false and result.ReleasePhases["era:2"] == false);
+	result.ReleasePhases["era:2"] = true;
+	assert(state.ReleasePhases["era:2"] == false);
+end
+-- Both entry points must evaluate complete routes and rebuild the enabled filter array.
+local function PhaseVisible(app, item, expected, message)
+	assert(Visible(app, item) == expected
+		and (not not app.Modules.Filter.Filters.TestAccount(item)) == expected, message);
+end
+-- Numeric phase cannot borrow release permission from a different acquisition alternative.
+do
+	local a, choices = MakeApp(Profile("titan", 6, 10));
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local blocked = Item({ releasePhases = { "titan:6" }, phase = 31 });
+	local future = Item({ releasePhases = { "titan:7" }, phase = 32 });
+	local combined = a.MergedObject({ blocked, future }, true);
+	assert(combined.phase == 31, "The existing merger must still choose the earliest numeric phase");
+	PhaseVisible(a, combined, false, "Separate sources cannot supply each other's release and numeric phase");
+	choices.ReleasePhases["titan:7"] = true;
+	PhaseVisible(a, combined, true, "A complete permitted alternative survives a blocked flattened phase");
+	PhaseVisible(a, a.CloneObject(combined), true, "Merged clones retain their permitted alternative");
+	choices.ReleasePhases["titan:7"] = false;
+	a.Modules.Filter.Set.Phase(false);
+	PhaseVisible(a, combined, true, "Disabling Phase bypasses only the numeric phase predicate");
+	for _,fields in ipairs({ { releasePhases = { "titan:7" } },
+		{ releasePhases = { "titan:6" }, u = 2 }, { releasePhases = { "titan:6" }, e = 2 } }) do
+		fields.phase = 31;
+		PhaseVisible(a, a.MergedObject({ Item(fields) }, true), false,
+			"Disabling Phase must preserve release, unobtainable, and event restrictions");
+	end
+	a.Modules.Filter.Set.Phase(true);
+	PhaseVisible(a, combined, false, "Re-enabling Phase restores both filtering entry points");
+
+	-- Detach copied ancestry and verify that both weak originals really disappear.
+	local ancestor = { phase = 31 };
+	local source = Item({ releasePhases = { "titan:6" }, parent = ancestor });
+	local copy = a.CloneObject(source); copy.parent = nil; copy.sourceParent = nil;
+	a.MergeProperties(copy, future);
+	PhaseVisible(a, copy, false, "A detached merged route retains a phase-only ancestor");
+	ancestor.phase = 32; PhaseVisible(a, copy, true, "Phase-only ancestry remains live");
+	ancestor.phase = 31; PhaseVisible(a, copy, false, "Ancestor changes refresh the retained fallback");
+	local weak = setmetatable({ source, ancestor }, { __mode = "v" });
+	source, ancestor = nil, nil; collectgarbage("collect"); collectgarbage("collect");
+	assert(weak[1] == nil and weak[2] == nil, "Detached ancestry must not retain weak acquisition originals");
+	PhaseVisible(a, copy, false, "Collected phase-only ancestry retains its last observed restriction");
+
+	-- A copy can gain phase-only ancestry after its original acquisition route was captured.
+	local original = Item({ releasePhases = { "titan:6" } });
+	local occurrence = a.CloneObject(original); occurrence.parent = { phase = 31 };
+	local context = occurrence.parent;
+	local detached = a.MergedObject({ occurrence, future }, true);
+	PhaseVisible(a, detached, false, "Late acquisition contexts retain phase-only restrictions");
+	context.phase = 32; PhaseVisible(a, detached, true, "Late acquisition contexts are evaluated live");
+	context.phase = 31; PhaseVisible(a, detached, false, "Late contexts refresh their phase fallback");
+	local weakContext = setmetatable({ occurrence, context }, { __mode = "v" });
+	occurrence, context = nil, nil; collectgarbage("collect"); collectgarbage("collect");
+	assert(weakContext[1] == nil and weakContext[2] == nil);
+	PhaseVisible(a, detached, false, "Collected late contexts retain their numeric phase");
+
+	original = Item({ releasePhases = { "titan:6" }, phase = 31 });
+	local localCopy = a.CloneObject(original); localCopy.phase = nil;
+	local reclone = a.CloneObject(localCopy);
+	PhaseVisible(a, reclone, true, "A recloned explicit nil phase delta stays local to that occurrence");
+	assert(original.phase == 31);
+	PhaseVisible(a, a.MergedObject({ reclone, future }, true), true, "Remerging preserves an explicit nil phase delta");
+	reclone.phase = 31;
+	PhaseVisible(a, a.CloneObject(reclone), false, "A newer local phase write supersedes an inherited nil delta");
+	reclone.phase = 32;
+	PhaseVisible(a, a.CloneObject(reclone), true, "New numeric phase deltas survive recloning");
+	local untouched = a.CloneObject(original);
+	original.phase = 32; PhaseVisible(a, untouched, true, "Untouched copies still read the original phase live");
+	original.phase = 31; PhaseVisible(a, untouched, false, "A local override does not freeze untouched copies");
+	local display = a.MergedObject({ localCopy, future }, true);
+	PhaseVisible(a, display, true, "Observe a copy's nil phase before its weak reference disappears");
+	local weakCopy = setmetatable({ localCopy }, { __mode = "v" }); localCopy = nil;
+	collectgarbage("collect"); collectgarbage("collect");
+	assert(weakCopy[1] == nil);
+	PhaseVisible(a, display, true, "A collected copy retains its observed nil phase delta");
+
+	-- Flattening refreshes the phase fallback shared by previously created copies.
+	original.phase = 32; a.MergeProperties(original, future);
+	PhaseVisible(a, untouched, true, "Flattening must retain an original's current numeric phase");
+	local weakOriginal = setmetatable({ original }, { __mode = "v" }); original = nil;
+	collectgarbage("collect"); collectgarbage("collect");
+	assert(weakOriginal[1] == nil);
+	PhaseVisible(a, untouched, true, "Collected flattened originals preserve the refreshed phase fallback");
+end
+-- Both availability callbacks keep their acquisition origin and copy-local phase delta.
+for _,field in ipairs({ "u", "e" }) do
+	local a, choices = MakeApp(Profile("titan", 6, 10));
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local callback = function(group, parent, update)
+		a.Modules.Progression.SetSourceAvailability(group, field, nil); update(group, parent); return true;
+	end;
+	local source = Item({ releasePhases = { "titan:6" }, phase = 31, [field] = 2, OnUpdate = callback });
+	local future = Item({ releasePhases = { "titan:7" }, phase = 32 });
+	local merged = a.MergedObject({ source, future }, true);
+	a.UpdateGroups(nil, { merged });
+	assert(not merged.visible, "Self-updating callbacks cannot borrow another route's numeric phase");
+	PhaseVisible(a, merged, false, "A callback only adapts its retained origin's named availability field");
+	choices.Unobtainable[31] = true; a.UpdateGroups(nil, { merged }); assert(merged.visible);
+	choices.Unobtainable[31] = false;
+	local copy = a.CloneObject(source); copy.phase = nil;
+	a.UpdateGroups(nil, { copy }); assert(copy.visible);
+	local reclone = a.CloneObject(copy);
+	a.MergeProperties(reclone, future);
+	PhaseVisible(a, reclone, true, "Callbacks preserve nil phase deltas through cloning and flattening");
+	a.Modules.Progression.SetSourceAvailability(reclone, field, 2);
+	PhaseVisible(a, reclone, false, "A newer availability write keeps the existing phase delta");
+	a.Modules.Progression.SetSourceAvailability(reclone, field, nil);
+	PhaseVisible(a, reclone, true, "Clearing availability must not discard the retained nil phase override");
+	assert(source.phase == 31 and source[field] == 2, "Copy callbacks leave their original source unchanged");
+end
+-- Mapped numeric IDs use namespaced choices; unmapped IDs retain numeric settings.
+do
+	local a, choices = MakeApp(Profile("mapped", 1, 2, 31));
+	local mapped = Item({ phase = 31 });
+	choices.ReleasePhases["mapped:1"] = false; choices.Unobtainable[31] = true;
+	PhaseVisible(a, mapped, false, "Namespaced false overrides a mapped numeric true");
+	choices.ReleasePhases["mapped:1"] = true; choices.Unobtainable[31] = false;
+	PhaseVisible(a, mapped, true, "Namespaced true overrides a mapped numeric false");
+	local controlled = a.MergedObject({ Item({ releasePhases = { "mapped:1" }, phase = 32 }) }, true);
+	choices.ReleasePhases["mapped:2"] = false; choices.Unobtainable[32] = true;
+	PhaseVisible(a, controlled, false, "Controlled numeric phase uses its declared phaseID mapping");
+	choices.ReleasePhases["mapped:2"] = true; choices.Unobtainable[32] = false;
+	PhaseVisible(a, controlled, true, "Controlled routes honor namespaced true choices live");
+	local unmapped = Item({ phase = 2 });
+	PhaseVisible(a, unmapped, false, "Unmapped numeric phases preserve their raw false choice");
+	choices.Unobtainable[2] = true;
+	PhaseVisible(a, unmapped, true, "Unmapped numeric phases preserve their raw true choice");
+end
+-- Equal numeric IDs in u and phase keep independent field semantics.
+do
+	local a, choices = MakeApp(Profile("separate", 1, 2, 31));
+	local unavailable, phased = Item({ u = 31 }), Item({ phase = 31 });
+	local combined = Item({ u = 31, phase = 31 });
+	choices.Unobtainable[31], choices.ReleasePhases["separate:1"] = false, true;
+	PhaseVisible(a, unavailable, false, "u uses the raw unavailable choice even when the same phase is enabled");
+	PhaseVisible(a, phased, true, "phase uses its namespaced choice independently of the same-number u");
+	PhaseVisible(a, combined, false, "An enabled phase cannot open a blocked unavailable condition");
+	choices.Unobtainable[31], choices.ReleasePhases["separate:1"] = true, false;
+	PhaseVisible(a, unavailable, true, "A disabled namespaced phase does not hide the same-number u");
+	PhaseVisible(a, phased, false, "A raw unavailable choice cannot open a disabled phase");
+	PhaseVisible(a, combined, false, "Both field conditions remain required");
+	a.Settings:SetUnobtainableFilter(31, false);
+	assert(choices.ReleasePhases["separate:1"] == false, "Changing raw u settings must retain the independent release override");
+	choices.Unobtainable[31] = true;
+	a.ProgressionProfile = Profile("other", 1, 2, 31);
+	choices.ReleasePhases["other:1"] = true;
+	PhaseVisible(a, unavailable, true, "Changing profiles leaves u governed by the same raw setting");
+	choices.Unobtainable[31] = false;
+	PhaseVisible(a, unavailable, false, "A new profile cannot borrow release permission for u");
+end
+
+-- Execute the actual defaults initialization with and without a release profile.
+do
+	local source = Read("src/Settings/Pages/Phases.lua");
+	local defaultsCode = Section(source, "-- Update the default unobtainable states", "function CreateExpansionPage");
+	local function Defaults(profile)
+		local a, _, env = MakeApp(profile);
+		a.GameBuildVersion = 100;
+		local values = { [1] = false, [2] = false, [31] = true };
+		env.DefaultsFixture = values;
+		env.time = function() return 0; end;
+		local prefix = [[local app=select(2,...);
+local phases = { [31] = { minimumBuildVersion=1, buildVersion=200 } };
+local UnobtainableSettingsBase={ __index=DefaultsFixture };
+local progression=app.Modules.Progression;
+local mappedPhases={ [31]="defaults:1" };
+]];
+		Compile(prefix .. defaultsCode, "Phases.lua actual numeric defaults", env)("ATT", a);
+		return a, values;
+	end
+	local without, original = Defaults(nil);
+	local with, mapped = Defaults(Profile("defaults", 1, 2, 31));
+	for id,value in pairs(original) do assert(mapped[id] == value, "Profiles must not alter master numeric defaults"); end
+	for id,value in pairs(mapped) do assert(original[id] == value, "Profile defaults cannot add numeric availability choices"); end
+	assert(mapped[31] == false and mapped[11] == true);
+	assert(with.Settings:GetReleasePhaseFilter("defaults:1"), "A release baseline is evaluated separately from numeric defaults");
+end
+
+-- Execute the real UpdateMode activation block with opposing u and phase choices.
+do
+	local a, choices, env = MakeApp(Profile("mode", 1, 2, 31));
+	a.L.PHASES = { [2] = { state=1 }, [31] = { state=2, buildVersion=1 } };
+	local flags = {};
+	env.ModeFixture = {
+		Unobtainable = function(value) flags.u = value == true; end,
+		Phase = function(value) flags.phase = value == true; end,
+	};
+	local code = Section(settingsSource, "\t\t-- Check for any inactive unobtainable or phase filters.", "\t\tif self:Get(\"Show:TrackableThings\")");
+	local update = Compile("local app=select(2,...); local L=app.L; local settings=app.Settings; local RawSettings=RawFixture; local filterSet=ModeFixture;\n" .. code,
+		"Settings.lua actual filter activation", env);
+	choices.Unobtainable[2], choices.Unobtainable[31], choices.ReleasePhases["mode:1"] = false, true, false;
+	update("ATT", a);
+	assert(flags.u and flags.phase, "Availability and phase activation use their respective settings");
+	choices.Unobtainable[2], choices.Unobtainable[31], choices.ReleasePhases["mode:1"] = true, false, true;
+	update("ATT", a);
+	assert(not flags.u and not flags.phase, "A raw phase default cannot activate either independent filter");
+end
+-- Without a profile, master numeric phase filtering and earliest-phase merging stay active.
+do
+	local a, choices = MakeApp(nil);
+	choices.Unobtainable[31], choices.Unobtainable[32] = false, true;
+	local blocked, allowed = Item({ phase = 31 }), Item({ phase = 32 });
+	PhaseVisible(a, blocked, false, "Legacy numeric false choices remain hidden");
+	PhaseVisible(a, allowed, true, "Legacy numeric true choices remain visible");
+	local merged = a.MergedObject({ allowed, blocked }, true);
+	assert(merged.phase == 31 and a.Modules.Progression.GetMergedSourceCount(merged) == 0);
+	PhaseVisible(a, merged, false, "Legacy merging still filters the earliest numeric phase");
+	a.Modules.Filter.Set.Phase(false);
+	PhaseVisible(a, merged, true, "Legacy Phase can be disabled in the account filter array");
+	a.Modules.Filter.Set.Phase(true);
+	PhaseVisible(a, merged, false, "Legacy Phase can be re-enabled in the account filter array");
+	local unrestricted = a.MergedObject({ blocked, Item({}) }, true);
+	assert(unrestricted.phase == nil);
+	PhaseVisible(a, unrestricted, true, "A legacy source without phase keeps the merged view unrestricted");
+end
 local retail = MakeApp(nil);
 local retailItem = Item({ u = 2 });
 local retailMerged = retail.MergedObject({ retailItem, Item({}) }, true);
 assert(retail.Modules.Progression.GetMergedSourceCount(retailMerged) == 0, "Non-opt-in merges retain the existing path");
 
+-- The generic runtime module is available before merge/filter/settings consumers.
+local toc = Read("AllTheThings.toc");
+local progression = assert(toc:find("src\\Modules\\Progression.lua", 1, true));
+assert(progression < assert(toc:find("src\\DataHandling.lua", 1, true)));
+assert(progression < assert(toc:find("src\\Modules\\Filter.lua", 1, true)));
+assert(progression < assert(toc:find("src\\Settings\\Settings.xml", 1, true)));
 print("PASS: actual per-flavor phase preferences, source alternatives, u/events, ancestry, clone lifecycle, and legacy compatibility");
