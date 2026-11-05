@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Platforms>x64</Platforms>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <PublishAot>False</PublishAot>
     <BaseOutputPath>..\..\.tools\</BaseOutputPath>
@@ -17,7 +17,7 @@
     <PlatformTarget>x64</PlatformTarget>
     <VerifyReferenceAotCompatibility>true</VerifyReferenceAotCompatibility>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)|$(TargetFramework)'=='Release|x64|net8.0'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutputPath>..\..\.tools\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
