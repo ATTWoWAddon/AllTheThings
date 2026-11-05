@@ -326,9 +326,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(98389, {	-- A Light in the Darkness
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_ONLY,
 						lvl = 2,
-						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = {
+							objective(1, {	-- 0/6 Webbed Forsaken
+								provider = { "n", 271968 },	-- Forsaken Adventurer
+								coord = { 26.2, 60.3, MAP.TIRISFAL_GLADES },
+								cr = 271961,	-- Webbed Forsaken
+							}),
+						},
 					}),
 					q(98601, {	-- A Difficult Path
 						qg = 1569,	-- Shadow Priest Sarvis
