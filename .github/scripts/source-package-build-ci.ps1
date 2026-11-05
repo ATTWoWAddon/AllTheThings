@@ -11,7 +11,7 @@ $assetManifests = [System.Collections.Generic.List[object]]::new()
 $frameworkEvidence = [System.Collections.Generic.List[object]]::new()
 $frameworkExpectations = @{
     'ATT Sync Tool' = 'v4.8'
-    'Database' = 'v4.7.2'
+    'Database' = 'v4.8'
     'Item Database Consolidator' = 'v4.7.2'
 }
 $installedFrameworkRelease = $null
@@ -303,8 +303,8 @@ Each tool is in its own folder with its build dependencies. Database is a
 library; ATT Sync Tool also has its own copy of Database.dll. The tools use
 the same Lua libraries, acquired from NuGet during the build.
 
-ATT Sync Tool targets .NET Framework 4.8. Item Database Consolidator and
-Database target .NET Framework 4.7.2.
+ATT Sync Tool and Database target .NET Framework 4.8. Item Database
+Consolidator targets .NET Framework 4.7.2.
 Skill Level Requirements, AssetDB Builder, and IconID Converter target .NET 10
 and need the .NET 10 runtime installed. These are Windows x64 build outputs.
 
