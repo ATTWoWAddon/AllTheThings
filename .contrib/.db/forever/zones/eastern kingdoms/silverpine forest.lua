@@ -419,7 +419,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 18,
 			}),
 			q(425, {	-- Ivar the Foul
-				sourceQuest = 430,	-- Return to Quinn
+				sourceQuest = 91921,	-- Return to Quinn (Again)
 				qg = 1950,	-- Rane Yorick
 				coord = { 53.4, 13.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
