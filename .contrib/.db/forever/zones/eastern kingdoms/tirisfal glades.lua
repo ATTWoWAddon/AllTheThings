@@ -677,6 +677,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(99152, {	-- As Above, So Below
+				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 246389,	-- Hilda the Breaker <Paladin Trainer>
 				coord = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
@@ -1678,6 +1679,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(99153, {	-- The One That Got Away
+				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 259190,	-- Ephram Barbaro <Stable Master>
 				coord = { 20.2, 46.4, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
@@ -1843,6 +1845,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				groups = {
 					i(283460),	-- Decaying Flesh Belt
 				},
+			}),
+			n(274300, {	-- Coldrasp
+				coords = {
+					{ 16.0, 67.2, MAP.TIRISFAL_GLADES },
+					{ 17.4, 68.8, MAP.TIRISFAL_GLADES },
+					{ 19.2, 64.8, MAP.TIRISFAL_GLADES },
+					{ 19.4, 64.4, MAP.TIRISFAL_GLADES },
+					{ 19.6, 70.6, MAP.TIRISFAL_GLADES },
+					{ 19.8, 65.0, MAP.TIRISFAL_GLADES },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			n(276061, {	-- Decrepit Harvester
 				coords = {
