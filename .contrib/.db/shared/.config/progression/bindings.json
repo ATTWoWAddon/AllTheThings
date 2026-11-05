@@ -1,0 +1,207 @@
+{
+    "schema": 1,
+    "phaseIDs": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        30,
+        31,
+        32,
+        33,
+        1605,
+        1606,
+        1607,
+        1608,
+        1609,
+        1610,
+        1611,
+        1612
+    ],
+    "bindings": [
+        {
+            "key": "raid.mc.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.bwl.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 742
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.aq20.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 743
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.aq40.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 744
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.classic-common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                }
+            ]
+        },
+        {
+            "key": "raid.bwl.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 742
+                }
+            ]
+        },
+        {
+            "key": "raid.aq20.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 743
+                }
+            ]
+        },
+        {
+            "key": "raid.aq40.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 744
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.sulfuras",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 227683
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.lodestone",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 233213
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.globe",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 233201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.wrath",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/2 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                }
+            ]
+        },
+        {
+            "key": "raid.ulduar",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua",
+            "selectors": [
+                {
+                    "instanceID": 759
+                }
+            ]
+        },
+        {
+            "key": "raid.onyxia",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.5 Onyxia's Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 760
+                }
+            ]
+        },
+        {
+            "key": "raid.icc",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/8 Icecrown Citadel.lua",
+            "selectors": [
+                {
+                    "instanceID": 758
+                }
+            ]
+        }
+    ],
+    "coverage": "Representative acquisition scopes only. Selectors bind authored source variants to configured release requirements. Unmapped sources retain their existing availability and phase conditions.",
+    "declarationEvidence": {
+        "source": ".contrib/.db/shared/lib/Constants/Phases.lua",
+        "scope": "Explicit declarations are converted only inside an opted-in, catalog-bound source scope."
+    }
+}
