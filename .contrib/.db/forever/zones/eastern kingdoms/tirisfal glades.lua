@@ -988,7 +988,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/10 Doom Weed
-						provider = { "i", 13702 },	-- Doom Weed
+						providers = {
+							{ "i",  13702 },	-- Doom Weed
+							{ "o", 176753 },	-- Doom Weed
+						},
+						coords = {
+							{ 57.7, 34.5, MAP.TIRISFAL_GLADES },
+							{ 56.6, 43.2, MAP.TIRISFAL_GLADES },
+						},
 					}),
 				},
 			}),
