@@ -275,10 +275,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					q(91208, {	-- Coming to Terms
 						qg = 244808,	-- Aramis Hammerhand <Paladin Trainer>
 						coord = { 31.0, 66.2, MAP.TIRISFAL_GLADES },
+						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_PALADINS,
 						classes = { PALADIN },
 						lvl = 4,
-						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = {
+							objective(1, {	-- Offer aid to the Frightened Paladin
+								provider = { "n", 246143 },	-- Frightened Paladin
+								coord = { 27.7, 63.8, MAP.TIRISFAL_GLADES },
+							}),
+						},
 					}),
 					q(91209, {	-- Continue Your Training
 						sourceQuests = { 91208 },	-- Coming to Terms
