@@ -87,7 +87,7 @@ end
 app.Push = Push;
 
 -- Represents a key-weak table containing a cache of functions which are desired to be run within a coroutine.
--- If the function is temporary and all references are removed externally, then the respective cache entry can be removed as well when garbagecollection
+-- If the function is temporary and all references are removed externally, then the respective cache entry can be removed as well when garbage collection
 -- happens to run. This makes sure that we don't permanently hold references to every coroutined-function during the lifetime of the client
 local CoroutineCache = setmetatable({}, {
 	__mode = "k",

@@ -2,7 +2,7 @@
 -- (i.e. they bypass the duplicate filled-group checks by hash)
 
 -- This can be useful for Items which commonly show up multiple times within a given minilist or popout and
--- have no risk of infintely recursing their fill logic
+-- have no risk of infinitely recursing their fill logic
 
 -- This DB is defined by Class Type and then its Key Value
 

@@ -466,7 +466,7 @@ maproot(NAZJATAR, {
 						description = "Contains Mardivas reagents.",
 					}),
 					i(168094, {	-- Faintly Humming Sea Stones
-						description = "Contains Scrying Stones.",	-- Description added so you dont need debug mode to see contained item.
+						description = "Contains Scrying Stones.",	-- Description added so you don't need debug mode to see contained item.
 						groups = { i(167077) },	-- Scrying Stone
 					}),
 					i(168093, {	-- Grimy Manapearl Bracelet
@@ -476,7 +476,7 @@ maproot(NAZJATAR, {
 						description = "Contains 3 Prismatic Manapearls.",
 					}),
 					i(170153, {	-- Ominous Looking Tome
-						description = "Grants 150 reputation with each of your bodyguards.",	-- Description added so you dont need debug mode to see contained items.
+						description = "Grants 150 reputation with each of your bodyguards.",	-- Description added so you don't need debug mode to see contained items.
 						groups = {
 							i(169945),	-- Naga Deployment Orders (A)
 							i(170085),	-- Naga Deployment Orders (H)
@@ -493,7 +493,7 @@ maproot(NAZJATAR, {
 						description = "Contains a piece of Benthic gear.",
 					}),
 					i(168091, {	-- Severly Rusted Lockbox
-						description = "Contains a Barnacled Lockbox.",	-- Description added so you dont need debug mode to see contained items.
+						description = "Contains a Barnacled Lockbox.",	-- Description added so you don't need debug mode to see contained items.
 						sym = { { "select", "itemID",
 							169475,	-- Barnacled Lockbox
 						}},
@@ -513,14 +513,14 @@ maproot(NAZJATAR, {
 					i(168053),	-- Unusually Wise Hermit Crab
 					i(170161),	-- Unusually Wise Hermit Crab
 					i(168096, {	-- Waterlogged Toolbox
-						description = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
+						description = "Contains items to summon Nazjatar rares.",	-- Description added so you don't need debug mode to see contained items.
 						groups = {
 							i(167059),	-- Chum
 							i(166888),	-- Germinating Seed
 						},
 					}),
 					i(170162, {	-- Waterlogged Toolbox
-						description = "Contains items to summon Nazjatar rares.",	-- Description added so you dont need debug mode to see contained items.
+						description = "Contains items to summon Nazjatar rares.",	-- Description added so you don't need debug mode to see contained items.
 						groups = {
 							i(167012),	-- Brinestone Pickaxe
 							i(167059),	-- Chum

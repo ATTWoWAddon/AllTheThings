@@ -1,4 +1,4 @@
-# Tool Harvesters and Generating Missing with name
+# Tool for harvesting data and generating missing names
 # mypy: ignore-errors
 import csv
 import re
@@ -252,7 +252,7 @@ def remove_empty_builds(lines: list[str]) -> list[str]:
 
 
 def get_other_skilllines(flavor: str) -> list[str]:
-    """Get other interesting skilllines ."""
+    """Get other interesting skilllines."""
     other_skilllines = list[str]()
     if flavor == "Forever":
         exclusion_path = Path("Exclusion - Forever", "SkillLineOther.txt")
@@ -291,7 +291,7 @@ def read_file_in_order(file_path: str) -> list[str]:
 
 """Programme"""
 def check_build_difference() -> None:
-    """Check difference between two text files (dropdown options from wago and what's currently in Builds.txt)"""
+    """Check the difference between two text files (dropdown options from Wago and what's currently in Builds.txt)"""
     # Paths to your dropdown-options.txt and Builds.txt files
     dropdown_file_path = 'dropdown-options.txt'  # Adjust this path if needed
     builds_file_path = 'Builds.txt'              # Adjust this path if needed
@@ -346,7 +346,7 @@ def add_latest_build(build: str) -> list[str]:
 
 
 def get_thing_data(thing: type[Thing], build: str) -> list[str]:
-    """Get the IDs (and some thing specific data) of a thing from a build."""
+    """Get the IDs (and some data specific to a thing) of a thing from a build."""
     thing_list: list[str] = list[str]()
     reader = csv.DictReader(get_thing_table(thing, build))
     for row in reader:
@@ -395,7 +395,7 @@ def sort_raw_file_recipes(flavor: str) -> None:
 
 
 def get_itemdb_difference(profession: str, flavor: str) -> list[str]:
-    """Get itemDB difference for recipes"""
+    """Get the itemDB difference for recipes"""
     itemdb_list = list[str]()
     if flavor == "Forever":
         itemdb_path = Path(
@@ -732,7 +732,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
 
 
 def add_latest_data(build: str) -> None:
-    """Adds latest builds to build file and add latest data to raw files"""
+    """Adds the latest builds to the build file and adds the latest data to the raw files"""
     things: list[type[Thing]] = things_version(build)
     next_builds: list[str] = add_latest_build(build)
     for thing in things:
@@ -796,15 +796,15 @@ def create_missing_files(flavor: str) -> None:
 
 
 """How to add latest data from a new Build"""
-"""Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
+"""Step 1: Run add_latest_data(build: str) (you have to uncomment it) with the build as a string, e.g. add_latest_data("10.2.5.53441"). """
 # add_latest_data("")
-"""Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
-"""Step 3a: Run sort_raw_file_recipes(flavor: str) Choose between Retail or Forever (you have to uncomment it) this will sort raw recipes into respective profession."""
+"""Step 2a: If new SkillLines have been added, they need to be sorted manually. Ex. Language:Furbolg is not a real profession, so it has to be added into Exclusion/SkillLines.txt. If it's an interesting SkillLine, it can be added to Exclusion/SkillLineOther.txt. If it's a new profession, just let it be"""
+"""Step 3a: Run sort_raw_file_recipes(flavor: str) (you have to uncomment it). Choose between Retail and Forever; this will sort raw recipes into their respective professions."""
 # sort_raw_file_recipes("")
-"""Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
+"""Step 2b: If new items have been detected, they will be in FastItem.txt. Please add them to unsorted."""
 
 """How to generate Missing Files"""
-"""Step 1: Delete questDB.json in DATAS/00 - Item DB folder"""
+"""Step 1: Delete questDB.json in the DATAS/00 - Item DB folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
-"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it) Choosen between Classic, SoM, SoD, Forever, TBC, WotLK, Cata, MoP, Retail"""
+"""Step 3: Uncomment and run create_missing_files(flavor), choosing between Classic, SoM, SoD, Forever, TBC, WotLK, Cata, MoP, and Retail"""
 # create_missing_files("Classic")

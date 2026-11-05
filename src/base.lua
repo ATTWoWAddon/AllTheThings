@@ -803,7 +803,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", sf)
 		eb:SetSize(sf:GetSize())
 		eb:SetMultiLine(true)
-		eb:SetAutoFocus(false) -- dont automatically focus
+		eb:SetAutoFocus(false) -- don't automatically focus
 		eb:SetFontObject("ChatFontNormal")
 		eb:SetScript("OnEscapePressed", function() f:Hide() end)
 		---@diagnostic disable-next-line: undefined-field

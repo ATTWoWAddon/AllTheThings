@@ -114,7 +114,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				}),
 			}),
 			o(375413, {	-- Drowned Broker Supplies
-				description = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",
+				description = "Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc on it to get the chest.",
 				coord = { 34.8, 69.9, ZERETH_MORTIS },
 				questID = 65523,
 				groups = {

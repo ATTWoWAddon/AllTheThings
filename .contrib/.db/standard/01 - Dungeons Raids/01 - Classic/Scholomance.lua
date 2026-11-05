@@ -718,7 +718,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			i(12736, {	-- Frostwhisper's Embalming Fluid
 				description = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
 				provider = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
-				timeline = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
+				timeline = { ADDED_1_11_1, REMOVED_5_0_4, ADDED_10_2_5 }	-- Maybe added with Scholo in 10.1.7, but it's a useless item anyway.
 			}),
 		},
 	}),

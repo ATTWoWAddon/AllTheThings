@@ -35,13 +35,13 @@ root(ROOTS.PVP, pvp(n(UNRATED, {
 		i(164251, {	-- Champion's Strongbox [Horde]
 			timeline = { ADDED_8_0_1 },
 		}),
-		i(164261, {	-- Steel Strongbox [Alliance]	-- This item can drop any <name of current season> Aspirant's gear, but we dont list it cuz bloat. Rewarded from BG
+		i(164261, {	-- Steel Strongbox [Alliance]	-- This item can drop any <name of current season> Aspirant's gear, but we don't list it cuz bloat. Rewarded from BG
 			timeline = { ADDED_8_0_1 },
 		}),
 		i(165717, {	-- Steel Strong Box [Alliance]	-- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 			timeline = { ADDED_8_1_0 },
 		}),
-		i(164262, {	-- Steel Strongbox [Horde]	-- This item can drop any <name of current season>, but we dont list it cuz bloat. Rewarded from BG
+		i(164262, {	-- Steel Strongbox [Horde]	-- This item can drop any <name of current season>, but we don't list it cuz bloat. Rewarded from BG
 			timeline = { ADDED_8_0_1 },
 		}),
 		i(165718, {	-- Steel Strong Box [Horde]	-- 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde

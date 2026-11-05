@@ -18,7 +18,7 @@ local i = function(itemID, t)
 	return item
 end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
--- Put items between these two bars if you dont want to sort them /Braghe
+-- Put items between these two bars if you don't want to sort them /Braghe
 i(6457);	-- Rusted Engineering Parts
 i(4491,{collectible=false})	-- Goggles of Gem Hunting
 i(6653,{collectible=false})	-- Torch of the Dormant Flame
@@ -82,7 +82,7 @@ i(211768);	-- Hastily Scrawled Satyr Ravings
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
--- Dont add anything here /Braghe
+-- Don't add anything here /Braghe
 -------------------------------------------------------------------- NOT SORTED --------------------------------------------------------------------
 -- Sorted by QuestDB API
 -- i(143542);	-- Crown Co. "Kure-Everything" Tonic

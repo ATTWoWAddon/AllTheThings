@@ -2325,7 +2325,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 							i(239446),	-- Uncharged Cyrstal (QI!)
 						}),
 						--
-						i(239607),	-- Charged Cyrstal (QI!) (Reward, required for the Warrant)
+						i(239607),	-- Charged Crystal (QI!) (Reward, required for the Warrant)
 					},
 				}),
 				q(89505, {	-- Smuggler's Mark

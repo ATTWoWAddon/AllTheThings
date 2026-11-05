@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
 							provider = { "i", 143328 },	-- Battle Report
-							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
+							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (it's an 850 mission).
 							groups = {
 								i(143606, {	-- Satchel of Battlefield Spoils
 									i(140413),	-- Grisly Souvenir

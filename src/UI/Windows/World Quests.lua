@@ -308,7 +308,7 @@ app:CreateWindow("WorldQuests", {
 			local questLines = C_QuestLine_GetAvailableQuestLines(mapID)
 			if questLines then
 				for id,questLine in pairs(questLines) do
-					-- dont show 'hidden' quest lines... not sure what this is exactly
+					-- don't show 'hidden' quest lines... not sure what this is exactly
 					if not questLine.isHidden and not AddedQuestIDs[questLine.questID] then
 						AddedQuestIDs[questLine.questID] = true
 						local questObject = GetPopulatedQuestObject(questLine.questID);

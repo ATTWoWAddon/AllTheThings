@@ -1285,7 +1285,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 			}),
 			-- #endif
 			n(64028, {	-- Challenger Soong <Challenge Dungeons>
-				description = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+				description = "You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",
 				coord = { 86.3, 61.5, VALE_OF_ETERNAL_BLOSSOMS },
 				races = ALLIANCE_ONLY,
 				groups = sharedData({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {
@@ -1380,7 +1380,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 				}),
 			}),
 			n(63994, {	-- Challenger Wuli <Challenge Dungeons>
-				description = "You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",
+				description = "You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",
 				coord = { 61.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 				races = HORDE_ONLY,
 				groups = sharedData({ timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }, {

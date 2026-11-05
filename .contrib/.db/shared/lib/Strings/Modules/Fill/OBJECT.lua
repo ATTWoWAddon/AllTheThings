@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Object",
 		-- TODO: de = "",
-		es = "Objeto de entorno",	-- Enviroment object due in spanish item and object mean the same
-		mx = "Objeto de entorno",	-- Enviroment object due in spanish item and object mean the same
+		es = "Objeto de entorno",	-- Environment object because "item" and "object" mean the same in Spanish.
+		mx = "Objeto de entorno",	-- Environment object because "item" and "object" mean the same in Spanish.
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

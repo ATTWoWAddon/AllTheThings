@@ -2342,7 +2342,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				}),
 				n(10509, {	-- Jed Runewatcher
 					-- #if SEASON_OF_DISCOVERY
-					-- Its always up in SoD
+					-- It's always up in SoD
 					-- #else
 					description = "This is a Rare Creature and, as such, is not always present.",
 					-- #endif

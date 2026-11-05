@@ -507,7 +507,7 @@ local function HasExpandedSubgroup(group)
 	if not g then return end
 
 	for i=1,#g do
-		-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+		-- don't need recursion since a group has to be expanded for a subgroup to be visible within it
 		if g[i].expanded then
 			return true;
 		end

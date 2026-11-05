@@ -679,7 +679,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(55577),	-- Frayfeather Vest
 				-- #endif
 				i(65744),	-- Nimble Command Shoulderguards
-				i(54769),	-- Rough Bronze Bracers	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but its a visual bug. 27th Oct 2020	-- Gold
+				i(54769),	-- Rough Bronze Bracers	-- Do Not Remove until somebody provides proof as obtained. Guild Tab shows somebody might be able to craft it, but it's a visual bug. 27th Oct 2020	-- Gold
 				i(59789),	-- Sea-Snack Footguards
 				i(54783),	-- Silvered Bronze Shoulders
 				i(54781),	-- Thorbia's Gauntlets

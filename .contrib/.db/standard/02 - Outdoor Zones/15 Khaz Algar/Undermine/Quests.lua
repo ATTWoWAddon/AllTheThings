@@ -1636,7 +1636,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 		}),
 		-- Unsure
 		q(87496, {	-- Benefit Packages
-			sourceQuests = { 83096 },	-- Welcome to Undermine (TODO: it is up during this quests so should fire inaccurate?)
+			sourceQuests = { 83096 },	-- Welcome to Undermine (TODO: it is up during this quest so should fire inaccurate?)
 			provider = { "n", 231049 },	-- Kaydee Racketting
 			coord = { 42.8, 52.2, UNDERMINE },
 		}),

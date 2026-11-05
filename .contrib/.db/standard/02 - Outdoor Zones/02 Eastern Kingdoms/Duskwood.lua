@@ -1869,7 +1869,7 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 			n(771, {	-- Commander Felstrom
 				description =
 					-- #if AFTER 10.1.7
-					"Wanders the Raven Hill Cemetary, spawns at the given coordinate.",
+					"Wanders the Raven Hill Cemetery, spawns at the given coordinate.",
 					-- #else
 					"Spawns in the Dawning Wood Catacombs.",
 					-- #endif
@@ -2077,7 +2077,7 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				classes = { ROGUE },
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
-				description = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+				description = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetery.",
 				providers = {
 					-- { "o",  },	-- TODO: Find ObjectID
 					{ "i", 210250 },	-- Engraved Gold Ring

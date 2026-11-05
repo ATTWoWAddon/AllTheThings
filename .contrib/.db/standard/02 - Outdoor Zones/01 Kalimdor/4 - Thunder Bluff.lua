@@ -1335,7 +1335,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					i(4499),	-- Huge Brown Sack
 					i(4496),	-- Small Brown Pouch
 					-- #if AFTER CATA
-					-- i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
+					-- i(60335),	-- Thick Hide Pack	// blacklisted as it's a common vendor good since cata
 					-- #endif
 				},
 			}),

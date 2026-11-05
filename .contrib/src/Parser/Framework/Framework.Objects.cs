@@ -85,7 +85,7 @@ namespace ATT
             public static IDictionary<long, Dictionary<long, string>> AllRecipes { get; } = new Dictionary<long, Dictionary<long, string>>();
 
             /// <summary>
-            /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
+            /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that the various pieces of information are synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
             public static ConcurrentDictionary<string, ConcurrentDictionary<decimal, ConcurrentDictionary<string, object>>> SharedDataByPrimaryKey { get; }
