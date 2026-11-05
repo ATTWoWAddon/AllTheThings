@@ -680,6 +680,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				qg = 1952,	-- High Executor Hadrec
 				qi = 3234,	-- Deliah's Ring
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
+				maps = { MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 10,
 			}),
