@@ -49,7 +49,7 @@ def create_named_file(thing: type[Thing]) -> None:
 
 
 # def add_latest_data(build: str) -> None:
-#    """Adds latest builds to build files and add latests data to raw files"""
+#    """Adds latest builds to build files and adds latest data to raw files"""
 #    add_latest_build(build)
 #    things: list[type[Thing]] = Thing.__subclasses__()
 #    for thing in things:

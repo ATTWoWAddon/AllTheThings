@@ -3039,7 +3039,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
 				isWorldQuest = true,
 				timeline = { ADDED_12_1_5 },
-				qi = 284591,	-- Neighboorhood Candy (QI!)
+				qi = 284591,	-- Neighborhood Candy (QI!)
 			}),
 			q(11356, {	-- Costumed Orphan Matron
 				qgs = {
@@ -4737,7 +4737,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 			}),
 			n(252232, {	-- Tricky Treat Trader <Candy Crew>
-				description = "The exhange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",
+				description = "The exchange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",
 				coords = {
 					{ 53.8, 33.6, FOUNDERS_POINT },
 					{ 51.6, 54.6, RAZORWIND_SHORES },

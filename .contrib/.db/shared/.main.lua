@@ -44,7 +44,7 @@ do
 -- 		[[it, pt, ru, ko, cn]]
 -- 	},
 -- Some containers have constant, export, description, lore, model.
--- Refer to the invidual containers for more info.
+-- Refer to the individual containers for more info.
 -- Database Container injections contain a bunch of small modifications / additions, but since we're using it everywhere, it is losing the data due to what is known as "data chomping" with how we are using it. To combat this, the tables are designed to persist their structures despite the root being freed every time a new file is loaded and processed.
 local function RecursivelyMergeData(t, c, path, options)
     path = path or ""  -- used for error reporting

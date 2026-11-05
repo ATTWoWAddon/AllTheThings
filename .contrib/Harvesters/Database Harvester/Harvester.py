@@ -732,7 +732,7 @@ def post_process(thing: type[Thing], flavor: str) -> None:
 
 
 def add_latest_data(build: str) -> None:
-    """Adds latest builds to build file and add latest data to raw files"""
+    """Adds latest builds to build file and adds latest data to raw files"""
     things: list[type[Thing]] = things_version(build)
     next_builds: list[str] = add_latest_build(build)
     for thing in things:
@@ -798,13 +798,13 @@ def create_missing_files(flavor: str) -> None:
 """How to add latest data from a new Build"""
 """Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.2.5.53441"). """
 # add_latest_data("")
-"""Step 2a: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
+"""Step 2a: If new SkillLines have been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
 """Step 3a: Run sort_raw_file_recipes(flavor: str) Choose between Retail or Forever (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes("")
-"""Step 2b: If new items has been detected. They will be in FastItem.txt please add them to unsorted."""
+"""Step 2b: If new items have been detected. They will be in FastItem.txt please add them to unsorted."""
 
 """How to generate Missing Files"""
 """Step 1: Delete questDB.json in DATAS/00 - Item DB folder"""
 """Step 2: Parse Retail with Debug Mode. Change parser config to a PTR patch if you want to account for PTR things."""
-"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it) Choosen between Classic, SoM, SoD, Forever, TBC, WotLK, Cata, MoP, Retail"""
+"""Step 3: Run create_missing_files(flavor) and (you have to uncomment it) Choose between Classic, SoM, SoD, Forever, TBC, WotLK, Cata, MoP, Retail"""
 # create_missing_files("Classic")

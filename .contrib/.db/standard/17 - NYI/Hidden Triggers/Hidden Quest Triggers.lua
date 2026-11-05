@@ -596,7 +596,7 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
-		q(57046),	-- Operaton: Mechagon — triggered upon killing King Mechagon for the first time (Heroic).  Could be from killing the boss or from looting the Azerite Essence
+		q(57046),	-- Operation: Mechagon — triggered upon killing King Mechagon for the first time (Heroic).  Could be from killing the boss or from looting the Azerite Essence
 
 		-- Azerite essences assembled with Aqueous Reliquary
 		q(56946),	-- Vitality Redistribution Lattice (Rank 1)

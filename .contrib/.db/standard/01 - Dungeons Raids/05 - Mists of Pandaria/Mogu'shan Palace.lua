@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						ach(6756),	-- Heroic: Mogu'shan Palace
 						ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
 						ach(6736, {	-- What Does This Button Do?
-							description = "At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfer with the recognision of the achievemnt objective.",
+							description = "At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfere with the recognition of the achievement objective.",
 						}),
 						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							timeline = { ADDED_7_1_5 },

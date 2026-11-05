@@ -271,7 +271,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				q(92600, {	-- Cracked Keystone
 					provider = { "i", 253245 },	-- Cracked Keystone (QI!/QS!)
 					maps = ALL_REGULAR_DELVES_MID,
-					isMonthly = true,	-- This quests resets every season (at least) and is not reliably collectible
+					isMonthly = true,	-- This quest resets every season (at least) and is not reliably collectible
 				}),
 			}),
 			n(REWARDS, sharedDataSelf({timeline = { ADDED_12_0_5, REMOVED_12_1_0 }}, {

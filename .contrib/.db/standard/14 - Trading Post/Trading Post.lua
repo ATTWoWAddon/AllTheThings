@@ -1448,7 +1448,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(175, i(236405)),	-- Deathwarder's Blood Stave
 				traderstender(180, i(238959)),	-- Deathwarder's Great Blood Blade
 				traderstender(440, iensemble(237224)),	-- Ensemble: Attire of the Swift Fox
-				traderstender(440, iensemble(237222)),	-- Ensemble: Attire of the Woodland Racoon
+				traderstender(440, iensemble(237222)),	-- Ensemble: Attire of the Woodland Raccoon
 				traderstender(175, i(217374)),	-- Frenzied Hat of the Shallows
 				traderstender(225, i(235985)),	-- Heroic Half Shell
 				traderstender(60, i(190860)),	-- Initiate's Bo
