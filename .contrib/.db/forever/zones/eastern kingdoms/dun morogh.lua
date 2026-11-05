@@ -562,10 +562,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(384, {	-- Beer Basted Boar Ribs
 				qg = 1267,	-- Ragnar Thunderbrew
 				coord = { 46.8, 52.4, MAP.DUN_MOROGH },
-				cost = {
-					{ "i", 2894, 1 },	-- Rhapsody Malt
-					{ "i", 2886, 6 },	-- Crag Boar Rib
-				},
 				races = ALLIANCE_ONLY,
 				lvl = 5,
 				groups = {
@@ -1238,7 +1234,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			q(317, {	-- Stocking Jetsteam
 				qg = 1378,	-- Pilot Bellowfiz
 				coord = { 49.4, 48.4, MAP.DUN_MOROGH },
-				cost = {{ "i", 769, 4 }},	-- Chunk of Boar Meat
 				races = ALLIANCE_ONLY,
 				lvl = 2,
 				groups = {
