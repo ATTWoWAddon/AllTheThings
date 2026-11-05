@@ -198,9 +198,9 @@ public static class TitanParserIntegration
                 var restricted = D("itemID", 25L, field, 2L);
                 var available = D("itemID", 25L);
                 var parent = Bind(ulduarPath, D("instanceID", 759L, "u", 31L, "g", L(restricted, available, D("itemID", 25L))));
-                var children = (List<object>)MergeRoutes(parent).Single()["g"];
-                Assert(children.Count == 2 && (long)((IDictionary<string, object>)children[0])[field] == 2
-                    && !((IDictionary<string, object>)children[1]).ContainsKey(field),
+                var mergedChildren = (List<object>)MergeRoutes(parent).Single()["g"];
+                Assert(mergedChildren.Count == 2 && (long)((IDictionary<string, object>)mergedChildren[0])[field] == 2
+                    && !((IDictionary<string, object>)mergedChildren[1]).ContainsKey(field),
                     "inherited release retains distinct " + field + " routes and merges equivalent routes");
 
                 var copy = MergeRoutes(restricted).Single();
