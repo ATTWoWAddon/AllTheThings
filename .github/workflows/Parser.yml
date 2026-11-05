@@ -239,6 +239,11 @@ jobs:
             }
           }
 
+      - name: Verify generated progression bindings
+        if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+        shell: pwsh
+        run: python ../titan/validate-generated.py --bindings-only
+
       - name: Upload Parser validation evidence
         if: always() && (steps.regenerate-wrath.outcome == 'success' || steps.regenerate-wrath.outcome == 'failure')
         uses: actions/upload-artifact@v7

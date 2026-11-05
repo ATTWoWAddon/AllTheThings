@@ -59,14 +59,18 @@ def compare_categories(left, right):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[2])
-    parser.add_argument("--lua", required=True, help="Lua 5.1 executable (checked by the Lua fixture)")
+    parser.add_argument("--lua", help="Lua 5.1 executable (checked by the Lua fixture)")
+    parser.add_argument("--bindings-only", action="store_true", help="Validate binding diagnostics without executing generated Lua")
     parser.add_argument("--flavors", nargs="+", choices=PROFILES, default=list(PROFILES))
     parser.add_argument("--compare-categories", nargs=2, type=Path, metavar=("FIRST", "SECOND"), help="Compare category directories from identical data inputs with different profile baselines")
     args = parser.parse_args()
+    if not args.bindings_only and not args.lua:
+        parser.error("--lua is required unless --bindings-only is selected")
     root = args.repo_root.resolve()
     for flavor in args.flavors:
         validate_bindings(root, flavor)
-        subprocess.run([args.lua, str(root / ".contrib/titan/validate-generated.lua"), str(root), flavor], check=True)
+        if not args.bindings_only:
+            subprocess.run([args.lua, str(root / ".contrib/titan/validate-generated.lua"), str(root), flavor], check=True)
     if args.compare_categories:
         compare_categories(*args.compare_categories)
 
