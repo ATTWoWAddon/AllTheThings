@@ -78,8 +78,8 @@ A successful name lookup does not confirm the other claims. A held claim blocks 
 | Is this quest ID in the target client data? | A complete Wago `QuestV2` export pinned to the selected Forever build and hotfix mode. | Membership in that exact client-table snapshot. This table has no quest-name column and does not establish server availability or the validity of a local reference. |
 | What is this entity's name? | The exact typed-ID Wowhead **Forever** record, or applicable in-game/Contributor evidence permitted by the parent rules. | The name and attributes actually exposed by that source. For web audits, use Forever pages and `dataEnv=16` tooltips, without another-flavour fallback. |
 | Does this reference use the intended ID? | Exact-ID evidence tied to the owning context and every relationship needed by the proposed correction. | Identity in that reference. Name similarity or uniqueness in the local files does not establish an ID relationship. |
-| Is an item a quest item? | Explicit item classification or other positive evidence for the relevant flavour. | The broad QI/QS category. `Quest Item` text or class 12 does not select the reference's role; missing tooltip text is not proof that the item is outside this category. |
-| Is this reference QI or QS? | Exact item-to-current-quest evidence for its required/objective use or quest-start relationship. | QI or QS for that reference. A quest requirement containing only an item name is insufficient exact-ID evidence. |
+| Does a tooltip classify this item as a Quest Item? | A valid Forever tooltip for the exact item ID that explicitly shows the `Quest Item` property. Record the response state separately. | The property is present for that item. A valid tooltip without the property does not prove the item is outside the category, but it does not satisfy the prerequisite for adding a new `(QI!)` marker. A 404, network failure, or invalid response is unknown, not property-absent. |
+| Is this reference QI or QS? | Exact item-to-current-quest evidence for required/objective use (QI) or for starting that current quest (QS). | The role of this item in this reference. A quest requirement containing only an item name is insufficient exact-ID evidence. An explicit tooltip property alone does not prove QI use in this quest; current-reference starter evidence can support QS even when the tooltip lacks the Quest Item property. |
 | Does a pattern belong to this recipe? | Explicit pattern-item / recipe-spell / product relationships for the reference being corrected. | The linked identities actually shown, rather than a chain inferred from similar names. |
 
 Existing Lua fields, comments, markers, and constructor positions describe the current data and provide context. They do not replace external evidence for gameplay changes. Apply the parent rules for accepted data-change evidence and PR disclosure. The user's Wago instruction supplies the source for the client-membership audit; its result is reported separately from gameplay corrections.
@@ -87,7 +87,7 @@ Existing Lua fields, comments, markers, and constructor positions describe the c
 ### 3.2 Pin and capture sources
 
 1. Select the requested flavour/build. Cross-check the repository's Forever build configuration, applicable product version metadata, and the version actually returned by Wago. An unpinned Wago page can default to another product.
-2. Record the source commit, direct requested/final URL, exact entity/relationship IDs, flavour/product, build where available, locale, retrieval date, response outcome, and raw-source hash. Distinguish a valid missing record from a network failure or invalid response.
+2. Record the source commit, direct requested/final URL, exact entity/relationship IDs, flavour/product, build where available, locale, retrieval date, response outcome, and raw-source hash. For item tooltips, distinguish a valid response with `Quest Item` present, a valid response without it, a 404, and a network failure or invalid response. A 404 or failed/invalid request is unknown, not a valid response without the property.
 3. Validate table identity, columns, completeness, and ID uniqueness before a set comparison. Record whether hotfixes are included. A page containing only one results page is not a complete absence check.
 4. Reuse captured evidence only when its identity, flavour/build context, response validity, and content integrity match the claim. State which snapshot was checked; do not describe cached or unpinned data as a newly verified build.
 5. Check reference context before changing its label. When a source name contradicts the intended quest, creature, item, or version context, resolve the identity question first.
@@ -99,7 +99,11 @@ Existing Lua fields, comments, markers, and constructor positions describe the c
 | Quest ID absent from the pinned table | Report the ID, current label, source reference links, build/table source, and applicable conditions in the requested discussion thread. Table absence does not create or remove code TODOs. |
 | Quest name unavailable during an authorized name/TODO pass | Preserve the existing name and context and append ` (TODO: verify quest name)` once. With no existing comment, use `-- TODO: verify quest name`. Preserve existing TODOs; a known name without an inline comment is not an unavailable source. |
 | Conflicting reference identity | Hold identity-dependent ID and label changes for that reference; report its context, conflicting evidence, and missing proof. |
-| Unresolved item role | Preserve the role marker and report the missing role evidence. Independently supported name or formatting operations remain eligible when their own prerequisites are satisfied. |
+| New `(QI!)` marker | Add it only when a valid Forever tooltip for the exact item ID explicitly shows `Quest Item` and current-reference evidence shows that item is required or used as an objective in the quest. If either condition is missing, hold the marker. |
+| Existing `(QI!)` with valid tooltip but no `Quest Item` property | Keep `(QI!)`, append exactly ` (TODO: verify Quest Item)` once to the existing source comment, and mark the record pending in the audit. |
+| Tooltip 404, network failure, or invalid response | Record the property status as unknown and report separately. Preserve existing markers; do not treat the result as valid property absence or apply the preceding TODO outcome on that basis. |
+| Existing `(PQI!)` | Preserve the marker; do not automatically convert it to `(QI!)` or remove it. A proposed marker change needs its own reference-specific evidence and operation. |
+| Unresolved item role | Preserve the role marker and report the missing current-reference role evidence. Independently supported name or formatting operations remain eligible when their own prerequisites are satisfied. |
 | Source title confirmed | Change only the approved label span while retaining unrelated markers, quantities, version aliases, and contextual prose. |
 
 These are different evidence results. Keep membership, title, identity, and role findings distinct in both reports and code changes.
@@ -126,7 +130,7 @@ Apply these dependency rules throughout:
 ```text
 ID or entity-kind change -> refresh names, relationships, roles and duplicate analysis
 Final name change       -> refresh provider/cost labels and affected alphabetical keys
-Reference-role evidence -> select that reference's QI/QS marker
+Reference-role evidence -> select an eligible QI/QS marker without automatically replacing an existing PQI marker
 Classified structure    -> select its field, sequence and presentation policies
 Any source edit         -> refresh affected offsets, hashes and final source links
 All applied operations  -> independent verification, full-scope rescan and delivery
@@ -221,14 +225,15 @@ Inspect what the closing token terminates, then apply the matching policy. Keep 
 | Entity name | The exact-ID name appropriate to the reference context. Preserve version aliases and explanatory qualifiers. |
 | NPC display label | Full name and actual `<subtitle>` when supplied by the source. Distinguish the subtitle from creature type, level, rank, and faction. |
 | Every provider entity | A comment identifying that entity. Use the actual object name rather than an objective's action text. |
-| Verified required/objective item | `(QI!)` for the current quest reference. Normalize `(PQI!)` to `(QI!)` after confirming that role. |
-| Verified quest starter | `(QS!)` for the current quest reference. An item can have a different role in another quest; preserve confirmed QS annotations. |
+| Verified required/objective item | Add a new `(QI!)` only when the exact item has an explicit `Quest Item` property in a valid Forever tooltip and the current quest reference shows required/objective use. Follow section 3.3 for existing markers with valid property absence or unknown tooltip results. |
+| Existing `(PQI!)` marker | Preserve `(PQI!)`; do not normalize it automatically to `(QI!)` or remove it. Follow section 3.3 for marker review. |
+| Verified quest starter | Use `(QS!)` when exact-item evidence shows the item starts this current quest. The tooltip need not show the `Quest Item` property. An item can have a different role in another quest; preserve confirmed QS annotations. |
 | Item inside `objective(...)` | Audit direct items, typed providers, and item costs using the same identity/role procedure. Position inside the objective is not role evidence. |
 | Ordinary recipe-item comment | Include `(RECIPE!)` when the item is verified as a recipe. Recipe helpers retain their spell/product label semantics; their first argument alone does not trigger ordinary recipe-item tags. |
 | Numeric-ID cost | Include quantity and entity name, for example `-- 200x Item Name`. Preserve applicable item markers. |
 | Reputation pair expressed with faction and standing constants | Omit a comment merely repeating those two constants. |
 
-Treat identity, name, role, and presentation edits as separately reviewable operations. A marker-only operation retains the item name and unrelated annotations; report a pre-existing name conflict through its own claim and plan.
+Treat identity, name, role, marker, and field-structure edits as separately reviewable operations. A marker-only operation retains the item name and unrelated annotations. Changing a marker does not by itself justify changing `provider`/`providers` or `qi`/`qis` structure, and changing those fields does not by itself justify changing a marker. Report a pre-existing name conflict through its own claim and plan.
 
 ### 6.4 Comments and whitespace
 
