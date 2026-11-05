@@ -13,9 +13,12 @@ The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a97
 | Stage | Authored source | Official output authority | Advancement gate |
 | --- | --- | --- | --- |
 | **1. Existing behavior** | Original `applyclassicphase`, direct/propagated phase values, templates, and callbacks. | Existing legacy Parser/runtime. | Inventory every producer and consumer; freeze inputs, tools, build contexts, outputs, and legacy settings vectors for comparison. |
-| **2. Add progress annotations** | Add `progressionKey` and external policies while retaining the original legacy expressions. | **Legacy only.** The progress path collects coverage and validates policy but cannot affect shipped output or controls. | Official outputs remain byte-identical to the pinned legacy baseline, excluding explicitly identified diagnostic/artifact metadata. Complete coverage includes every distinct nested transition and all supported builds. |
+| **2.1. Lua first** | Add valid `progressionKey` / `flavors` annotations; keep all original timing and guards. JSON may be absent. | **Legacy only.** Strip new fields; do not apply new flavor/timing filters. | Legacy byte equality, valid annotations, no leaks and a pending-key report. Expected missing JSON/policies do not block the legacy build or commit. |
+| **2.2. JSON next** | Write/select the external policy files and resolve their mappings in shadow validation. | **Legacy only.** Same official output as P1/P2.1. | Explicitly selected files must parse and match their identities; shadow coverage and evidence must be complete before P3 promotion. |
 | **3. Progress output; legacy golden** | Legacy expressions remain solely for the separate golden compilation. | **Progress only.** Production must not infer, repair, or default any policy from legacy phase values or phase-driven callbacks. | Independent legacy/progress comparison, all boundary fixtures, build eligibility, complete coverage, and authority-isolation tests pass. New capabilities unsupported by legacy have separate reviewed expected results. |
 | **4. Remove legacy authoring** | Remove `applyclassicphase`, direct phase assignments, obsolete phase-writing helpers/parameters, and legacy-only callback branches. Keep `progressionKey` and unrelated source conditions. | Progress only; old golden survives as pinned test evidence, not a second authoring path. | Full inventory is resolved, no live legacy writer/read dependency remains, and strict validation prevents reintroduction. |
+
+**P1–P4 remain four main stages; P2.1/P2.2 split only the authoring sequence within P2.** No `migrationStage` or equivalent policy property is added.
 
 The stages apply to the complete migration, not merely the first raids. A pilot can exercise stages 2–3 in isolated validation, but cannot justify removing a globally used helper. Cut over a complete propagation chain, including shared helpers/caches and nested sources; do not publish a mixture that silently falls back to legacy for uncovered content.
 
@@ -41,7 +44,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
         }),
     })))
 
--- P2: add these input fields, keeping the P1 expressions and actual data.
+-- P2.1: add these input fields first; keep the P1 expressions and data.
+-- No JSON file is required yet. P2.2 adds the policy files in section 2b.
 -- On inst(742, ...):
 progressionKey = "raid.bwl.common",
 -- On the existing SoD difficulty subtree:
@@ -62,7 +66,7 @@ progressionScopes = {
 -- guards. Section 2b shows the concrete final source and all four policies.
 ```
 
-In P2 both new input fields are stripped from official legacy output. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old writer is suppressed before normalization/merge in the production process; the isolated golden retains the original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
+P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from official legacy output and keep the old guards/authority. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old writer is suppressed before normalization/merge in the production process; the isolated golden retains the original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
 
 
 ## 2. What humans maintain
@@ -116,7 +120,7 @@ The concrete profile paths appear in section 9. Section 11 now plans the complet
 
 A compilation context is the fully resolved build/source configuration plus explicit `flavorId` and `profileId`. Keep one profile in each generated artifact. A build target may be invoked in several reviewed contexts, and one flavor/profile may span several targets. This is an explicit relationship in the existing configuration/workflow inputs, not a new discovery registry or automatic Cartesian product.
 
-The proposed selection inputs are:
+The following selection inputs are introduced for P2.2 shadow policy validation and required for P3 progress authority. P2.1 does not require them or an empty placeholder profile:
 
 | Existing configuration/workflow input | Required contract |
 | --- | --- |
@@ -138,17 +142,17 @@ A flavor/profile can continue across expansion/configuration changes without res
 
 ### Compilation errors and runtime uncertainty are different
 
-Compilation fails for missing selection inputs, identity mismatch, multiple selected profiles, an unreviewed source/profile binding, or ambiguous eligibility/coverage. Each context has isolated output/staging directories and a manifest naming its flavor/profile, resolved configuration, tags, build values, source variant, and hashes. Reusing a target's old output directory for two contexts must not overwrite one artifact with the other.
+P2.1 legacy compilation does not fail merely because JSON or new profile selection is absent; it validates/strips annotations and reports pending keys. In P2.2, an explicitly selected missing file, malformed JSON, identity mismatch, multiple profiles or ambiguous shadow binding fails policy validation; it is not silently treated as P2.1 pending. P3 compilation requires the complete reviewed selection, eligibility and coverage and fails if any is missing. These shadow failures never change P2 official legacy bytes. Each context has isolated output/staging directories and a manifest naming its flavor/profile, resolved configuration, tags, build values, source variant, and hashes. Reusing a target's old output directory for two contexts must not overwrite one artifact with the other.
 
 At runtime, load requirements must positively and uniquely identify the complete supported context, including profile applicability when one flavor has several realm/region/season policies. A verified flavor match alone cannot choose between two applicable profiles. Existing `DataRequirements` are retained but are not automatically sufficient evidence; where a trusted discriminator is missing, that context remains unsupported until evidence is supplied. Do not invent detection values or infer identity from an expansion, build number, config basename, or a not-other-flavor predicate.
 
 The validated context gate must protect **both** its data and any write of `app.ProgressionProfile`, including `LocalizationDB.lua`. Complete unique-context validation before any profile assignment or variant-data merge; unknown/conflicting selection writes neither and leaves no partially selected progression state. Co-loaded XML files may not overwrite a different flavor/profile singleton. Exactly one complete context activates; no matching trusted context or conflicting matches produce a visible unsupported/ambiguity diagnostic and keep independent progression inactive. They do not choose the first/last profile, silently use a default, or return to legacy timing authority. Repeated fragments of the same context must agree on its profile identity and policy fingerprint.
 
-These activation gates are required when progress becomes production authority in stage 3. In stage 2, collect and validate contexts without changing the official legacy loading predicates, outputs, or controls; the byte-equality gate remains in force. The profile example below is the shape assigned only after its matching context has been validated, not an unguarded global assignment.
+These activation gates are required when progress becomes production authority in stage 3. In P2.1 collect source locations/pending keys without requiring policy selection; in P2.2 validate explicitly selected contexts in shadow. Neither changes official legacy loading predicates, outputs or controls; the byte-equality gate remains in force. The profile example below is the shape assigned only after its matching context has been validated, not an unguarded global assignment.
 
 ## 2b. Blackwing Lair in progression, Anniversary, Era, and SoD
 
-**The same instance ID does not imply the same raid source or opening.** This example follows the actual Blackwing Lair file for four explicitly selected flavors. It is a design proposal, not a source patch or a runnable current configuration. The complete phase catalogs remain in section 11; the small JSON documents below cover the shown BWL scopes only.
+**The same instance ID does not imply the same raid source or opening.** This example follows the actual Blackwing Lair file for four explicitly selected flavors. It is a design proposal, not a source patch or a runnable current configuration. The complete phase catalogs remain in section 11; the complete JSON documents below include each profile's ordered milestone catalog and cover the shown BWL acquisition scopes.
 
 ### Files and evidence
 
@@ -156,7 +160,7 @@ These activation gates are required when progress becomes production authority i
 | --- | --- |
 | `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua` | Existing instance, original bosses/loot, SoD legacy-history wrapper, and SoD replacement raid. |
 | `.contrib/.db/shared/lib/Constants/Phases.lua` | Existing legacy aliases used only by P1/P2 official authority and P3's separate golden. |
-| `.contrib/.db/shared/.config/progression/progression/main.json` | Proposed progression timeline; Vanilla chapter shown below, later chapters retain their own stable keys. |
+| `.contrib/.db/shared/.config/progression/progression/main.json` | Proposed progression timeline; the full ordered Vanilla, TBC, Wrath, Cataclysm and Mists catalog is shown below with stable chapter-qualified keys. |
 | `.contrib/.db/shared/.config/progression/anniversary/main.json` | Proposed Anniversary timeline; never chosen merely because a target is named TBC. |
 | `.contrib/.db/shared/.config/progression/era/main.json` | Proposed Era timeline for historical inspection and an explicit later default view, not a restarted live rollout. |
 | `.contrib/.db/shared/.config/progression/sod/main.json` | Proposed SoD timeline and occurrence-specific policy. |
@@ -203,7 +207,8 @@ These facts come from [the existing BWL source](https://github.com/ATTWoWAddon/A
 | Migration stage | BWL Lua and policies | Official generated output | Four-flavor comparison and next gate |
 | --- | --- | --- | --- |
 | **P1: freeze the existing raid** | Preserve the whole-instance `PHASE_THREE`, later book `PHASE_FIVE`, SoD branch/quest `SOD_PHASE_FIVE`, original/SoD timelines and all guards. Capture each reviewed context's actual alias results. | Existing legacy source `phase`/conditions; no new profile or `progressionScopes`. | Pin four independent source/config/runtime baselines. An unverified progression/Anniversary Vanilla target is a missing baseline, not permission to run the current TBC config and call it Vanilla. |
-| **P2: annotate and shadow-validate** | Add common, later-book and SoD-child keys; add `flavors = { "sod" }` to the complete SoD subtree; add the four JSON policies below. Keep all P1 expressions/guards. | **Exactly the P1 legacy bytes**, apart from separately named diagnostic artifacts. Strip the new input fields. No profile/selection change controls official output. | Compare key hits, separate same-ID occurrences, policy coverage and proposed source selection in shadow mode. Missing book transition or wrong flavor data blocks advancement. |
+| **P2.1: annotate Lua first** | Add common, later-book and SoD-child keys and the SoD `flavors` annotation. Keep every P1 expression/guard; JSON may be absent. | **Exactly P1 legacy bytes**; strip new fields, with no new applicability/timing filter. | Validate annotations/no leaks and report pending keys with source locations. Expected absent policy does not block this legacy build/commit. |
+| **P2.2: write JSON next** | Add/select the four full JSON documents below and validate their mapping in shadow. | **Still P1 legacy bytes**; no policy controls official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
 | **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. Production suppresses all old phase writers and uses only the explicit selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
 | **P4: remove the old path** | Delete the outer/nested phase writers and phase-only aliases' authoring use after complete migration. Keep actual data, intrinsic timeline predicates and justified construction guards. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | No new direct phase writes; no source/cache contamination; no same-ID loot union. Prove redundant repeated SoD phase-5 quest wrappers may inherit their parent before removing them. |
 
@@ -211,9 +216,43 @@ The four profiles below are **complete valid examples for the shown scopes, not 
 
 **This is an explicit P3 promotion blocker for the book's affected propagation chain.** P2's official legacy output remains unchanged. A P3 candidate can test source identity and unknown-content inspection, but cannot claim availability equivalence or complete BWL cutover until that mapping is evidenced and reviewed. Keep the independent golden's actual phase-5/6 result; do not change it, read it as a production fallback, or invent a calendar boundary to make the comparison pass. Design review can proceed with this clearly identified data task. No example bypasses `REMOVED_1_15_4`, `REMOVED_4_0_3`, faction, quests, or other conditions.
 
-### Four concrete policy files
+### P2.1: add the Lua keys before writing JSON
 
-**`.contrib/.db/shared/.config/progression/progression/main.json`**
+P2.1 does **not** require any of the files below. Add the three BWL source keys and the SoD subtree's `flavors` annotation first, while keeping every legacy expression and guard. The legacy build strips these input fields, does not apply a new flavor/timing filter, and keeps its output byte-identical. A missing profile or unmapped key produces a pending-policy report, not a legacy-build or commit failure.
+
+For each pending key, report its source location, enclosing source scope/variant, existing build context and whether profile selection is still pending. For this example the list includes `raid.bwl.common`, `raid.bwl.draconic-for-dummies`, and `raid.bwl.sod20` where that source exists. Do not guess windows from the old phase or create an empty/unphased placeholder file. Malformed keys, invalid `flavors` arrays/placement, and leaked input fields remain errors even without JSON. Tests at this step cover valid annotation handling, legacy byte equality, no leaks and the pending list.
+
+### P2.2: write the complete JSON files
+
+These are complete JSON documents: all required root fields, the full **ordered** milestone catalog for each chosen profile, and every BWL key shown in the source walkthrough. There are no omitted fields, comments or ellipses inside the JSON. Each file is written once in P2.2; P3 uses the same reviewed policy as authority, and P4 keeps that JSON while removing legacy Lua timing. A change of authority is not a new JSON lifecycle property.
+
+**Coverage boundary:** these documents completely author the illustrated BWL subset, not every unrelated ATT acquisition. The existing real configurations load much more than BWL. Applying the examples to a real `main.json` must retain/add all other content policies; replacing that production file with only these BWL entries would fail complete coverage. An isolated validation fixture may contain exactly the illustrated sources, but no new source-glob or currently runnable target is assumed here.
+
+| Profile file | Full ordered catalog included | BWL content keys |
+| --- | --- | --- |
+| `progression/main.json` | 64 milestones: Vanilla, TBC, Wrath, Cataclysm and Mists, without resetting order across chapters. | Common raid + unresolved later book. |
+| `anniversary/main.json` | 17 milestones: its own Vanilla and TBC cycles, including string key `tbc.3.5`. | Common raid + unresolved later book. |
+| `era/main.json` | 9 ordered historical Vanilla milestones; default view is later, not a new live rollout. | Common raid + unresolved later book. |
+| `sod/main.json` | 16 ordered milestones: all eight phases and their evidenced staggered batches. | Common raid + unresolved historical book + reworked SoD raid. |
+
+**What each field means when writing the file:**
+
+| Field | What the author writes |
+| --- | --- |
+| `schema`, `mode` | Use `2` and `phased` for these files. Missing JSON in P2.1 is not `unphased`. |
+| `flavorId`, `id` | Exact selected flavor and stable profile ID; here `main`. Neither is inferred from an expansion filename. |
+| `defaultView` | One defined milestone key. It is an initial display choice, not a build cutoff or detected server state. |
+| `phases` | The complete known ordered catalog below. Keep keys stable and `order` unique; do not rename/reorder a milestone to reschedule one source. |
+| `phaseID` within a milestone | Optional reference to an existing canonical **name locale map only** in these examples. It imports no lore, release date, build cutoff or window. Each ID is used once per profile. |
+| `name` within a milestone | Only custom batch captions need the concise English override shown. Native labels use existing localization; ordinary custom numeric labels can use the shared format. Do not repeat hand-maintained `tw`/`cn` phase-name tables. Literal UTF-8 text is valid JSON. |
+| `content` | Exact authored `progressionKey` strings, without a generated flavor prefix. Each entry answers when that occurrence scope is available. |
+| `windows` | Explicit `{ "from": "key" }`, optionally with exclusive `until`; more than one disjoint window represents reopening. Parent scopes still intersect. |
+| `status: unknown` | Use an empty `windows` array for genuinely unresolved timing, as with the book. This is not an always-open fallback or a passed migration gate. |
+| `verificationStatus`, `coverage` | Human-readable evidence/scope notes. They never change availability. |
+
+Optional metadata is not silently required by these examples. `activation` has exactly the array-of-objects shape defined in section 5: each object requires string `at`, `region`, `realm`, and `evidence`; only a verified offset/UTC timestamp and actual scope may be entered. These files omit it rather than invent times. `content[key].eligibility`, if needed by a reviewed context, is exactly `{ "nativePhaseID": integer }` and requires that context's `preserve-reviewed` eligibility mode; it is deliberately omitted here. Do not copy source `phase`, `u`, or existing numeric preferences into either metadata field.
+
+**Full proposed file: `.contrib/.db/shared/.config/progression/progression/main.json`**
 
 ```json
 {
@@ -223,16 +262,316 @@ The four profiles below are **complete valid examples for the shown scopes, not 
     "mode": "phased",
     "defaultView": "vanilla.2",
     "phases": {
+        "vanilla.1": {
+            "order": 100,
+            "phaseID": 11
+        },
+        "vanilla.1.dire-maul": {
+            "order": 110,
+            "phaseID": 1101
+        },
         "vanilla.2": {
+            "order": 120,
+            "phaseID": 12
+        },
+        "vanilla.2.battlegrounds": {
             "order": 130,
             "name": {
-                "en": "Phase 2"
+                "en": "Vanilla — Warsong Gulch and Alterac Valley"
             }
         },
         "vanilla.3": {
             "order": 140,
+            "phaseID": 13
+        },
+        "vanilla.4.arathi": {
+            "order": 160,
             "name": {
-                "en": "Phase 3"
+                "en": "Vanilla — Arathi Basin"
+            }
+        },
+        "vanilla.4": {
+            "order": 170,
+            "phaseID": 14
+        },
+        "vanilla.5.war-effort": {
+            "order": 180,
+            "phaseID": 1501
+        },
+        "vanilla.6": {
+            "order": 210,
+            "phaseID": 16
+        },
+        "tbc.prepatch": {
+            "order": 1000,
+            "name": {
+                "en": "TBC — prepatch"
+            }
+        },
+        "tbc.1": {
+            "order": 1010,
+            "phaseID": 17
+        },
+        "tbc.1.arena": {
+            "order": 1020,
+            "name": {
+                "en": "TBC — Arena Season 1"
+            }
+        },
+        "tbc.2.preparation": {
+            "order": 1030,
+            "name": {
+                "en": "TBC — phase 2 preparation"
+            }
+        },
+        "tbc.2.arena": {
+            "order": 1040,
+            "name": {
+                "en": "TBC — Arena Season 2"
+            }
+        },
+        "tbc.2": {
+            "order": 1050,
+            "phaseID": 18
+        },
+        "tbc.3.preparation": {
+            "order": 1060,
+            "name": {
+                "en": "TBC — phase 3 preparation"
+            }
+        },
+        "tbc.3": {
+            "order": 1070,
+            "phaseID": 19
+        },
+        "tbc.4.preparation": {
+            "order": 1080,
+            "name": {
+                "en": "TBC — phase 4 preparation"
+            }
+        },
+        "tbc.4": {
+            "order": 1090,
+            "phaseID": 20
+        },
+        "tbc.5": {
+            "order": 1100,
+            "phaseID": 21
+        },
+        "tbc.5.sunwell": {
+            "order": 1110,
+            "name": {
+                "en": "TBC — Sunwell Plateau"
+            }
+        },
+        "wrath.prepatch": {
+            "order": 2000,
+            "name": {
+                "en": "Wrath — prepatch"
+            }
+        },
+        "wrath.prepatch.zombie": {
+            "order": 2010,
+            "name": {
+                "en": "Wrath — zombie outbreak"
+            }
+        },
+        "wrath.prepatch.invasion": {
+            "order": 2020,
+            "name": {
+                "en": "Wrath — Scourge Invasion"
+            }
+        },
+        "wrath.1": {
+            "order": 2030,
+            "phaseID": 30
+        },
+        "wrath.1.arena": {
+            "order": 2040,
+            "name": {
+                "en": "Wrath — Arena Season 5"
+            }
+        },
+        "wrath.1.raids": {
+            "order": 2050,
+            "name": {
+                "en": "Wrath — first raids"
+            }
+        },
+        "wrath.2.preparation": {
+            "order": 2060,
+            "name": {
+                "en": "Wrath — phase 2 preparation"
+            }
+        },
+        "wrath.2": {
+            "order": 2070,
+            "phaseID": 31
+        },
+        "wrath.3.preparation": {
+            "order": 2080,
+            "name": {
+                "en": "Wrath — phase 3 preparation"
+            }
+        },
+        "wrath.3": {
+            "order": 2090,
+            "phaseID": 32
+        },
+        "wrath.4.preparation": {
+            "order": 2100,
+            "name": {
+                "en": "Wrath — phase 4 preparation"
+            }
+        },
+        "wrath.4": {
+            "order": 2110,
+            "phaseID": 33
+        },
+        "wrath.5": {
+            "order": 2120,
+            "phaseID": 3302
+        },
+        "wrath.transition-uprising": {
+            "order": 2130,
+            "phaseID": 3303
+        },
+        "cata.prepatch": {
+            "order": 3000,
+            "name": {
+                "en": "Cataclysm — prepatch"
+            }
+        },
+        "cata.1": {
+            "order": 3010,
+            "phaseID": 40
+        },
+        "cata.1.arena": {
+            "order": 3020,
+            "name": {
+                "en": "Cataclysm — PvP Season 9"
+            }
+        },
+        "cata.1.raids": {
+            "order": 3030,
+            "name": {
+                "en": "Cataclysm — first raids"
+            }
+        },
+        "cata.2": {
+            "order": 3040,
+            "phaseID": 4001
+        },
+        "cata.3.molten-front": {
+            "order": 3050,
+            "phaseID": 4002
+        },
+        "cata.3.preparation": {
+            "order": 3060,
+            "name": {
+                "en": "Cataclysm — Firelands preparation"
+            }
+        },
+        "cata.3": {
+            "order": 3070,
+            "phaseID": 41
+        },
+        "cata.4.preparation": {
+            "order": 3080,
+            "name": {
+                "en": "Cataclysm — Hour of Twilight dungeons"
+            }
+        },
+        "cata.4": {
+            "order": 3090,
+            "phaseID": 42
+        },
+        "cata.4.alizabal": {
+            "order": 3100,
+            "name": {
+                "en": "Cataclysm — Alizabal"
+            }
+        },
+        "mists.prepatch": {
+            "order": 4000,
+            "name": {
+                "en": "Mists — prepatch"
+            }
+        },
+        "mists.1": {
+            "order": 4010,
+            "phaseID": 50
+        },
+        "mists.1.arena": {
+            "order": 4020,
+            "name": {
+                "en": "Mists — PvP Season 12"
+            }
+        },
+        "mists.1.msv": {
+            "order": 4030,
+            "phaseID": 5001
+        },
+        "mists.1.celestial-msv": {
+            "order": 4040,
+            "phaseID": 5002
+        },
+        "mists.1.hof": {
+            "order": 4050,
+            "phaseID": 5003
+        },
+        "mists.1.sha-tier14": {
+            "order": 4060,
+            "phaseID": 5004
+        },
+        "mists.1.celestial-hof": {
+            "order": 4070,
+            "phaseID": 5005
+        },
+        "mists.1.toes": {
+            "order": 4080,
+            "phaseID": 5006
+        },
+        "mists.1.celestial-toes": {
+            "order": 4090,
+            "phaseID": 5007
+        },
+        "mists.2": {
+            "order": 4100,
+            "phaseID": 51
+        },
+        "mists.3": {
+            "order": 4110,
+            "phaseID": 52
+        },
+        "mists.3.throne": {
+            "order": 4120,
+            "name": {
+                "en": "Mists — Throne of Thunder"
+            }
+        },
+        "mists.3.celestial": {
+            "order": 4130,
+            "phaseID": 5201
+        },
+        "mists.3.oondasta": {
+            "order": 4140,
+            "name": {
+                "en": "Mists — Oondasta"
+            }
+        },
+        "mists.4": {
+            "order": 4150,
+            "phaseID": 53
+        },
+        "mists.5": {
+            "order": 4160,
+            "phaseID": 54
+        },
+        "mists.5.siege": {
+            "order": 4170,
+            "name": {
+                "en": "Mists — Siege of Orgrimmar"
             }
         }
     },
@@ -249,11 +588,12 @@ The four profiles below are **complete valid examples for the shown scopes, not 
             "windows": []
         }
     },
-    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+    "verificationStatus": "Design example. Raid opening evidence is in section 11; the book timing is unresolved and blocks promotion of its affected chain.",
+    "coverage": "Complete ordered milestone catalog for this profile, with only the shown BWL acquisition keys authored. This is not a replacement policy for the full ATT database."
 }
 ```
 
-**`.contrib/.db/shared/.config/progression/anniversary/main.json`**
+**Full proposed file: `.contrib/.db/shared/.config/progression/anniversary/main.json`**
 
 ```json
 {
@@ -263,16 +603,88 @@ The four profiles below are **complete valid examples for the shown scopes, not 
     "mode": "phased",
     "defaultView": "vanilla.2",
     "phases": {
+        "vanilla.launch": {
+            "order": 100,
+            "name": {
+                "en": "Vanilla — launch"
+            }
+        },
+        "vanilla.1.raids": {
+            "order": 110,
+            "phaseID": 11
+        },
         "vanilla.2": {
             "order": 120,
+            "phaseID": 12
+        },
+        "vanilla.2.battlegrounds": {
+            "order": 130,
             "name": {
-                "en": "Phase 2"
+                "en": "Vanilla — Warsong Gulch and Alterac Valley"
             }
         },
         "vanilla.3": {
             "order": 140,
+            "phaseID": 13
+        },
+        "vanilla.3.pvp": {
+            "order": 150,
             "name": {
-                "en": "Phase 3"
+                "en": "Vanilla — rank cap and Arathi Basin"
+            }
+        },
+        "vanilla.4": {
+            "order": 160,
+            "phaseID": 14
+        },
+        "vanilla.5.war-effort": {
+            "order": 170,
+            "phaseID": 1501
+        },
+        "vanilla.6": {
+            "order": 180,
+            "phaseID": 16
+        },
+        "tbc.prepatch": {
+            "order": 1000,
+            "name": {
+                "en": "TBC — prepatch"
+            }
+        },
+        "tbc.1": {
+            "order": 1010,
+            "phaseID": 17
+        },
+        "tbc.1.arena": {
+            "order": 1020,
+            "name": {
+                "en": "TBC — Arena Season 1"
+            }
+        },
+        "tbc.1.raids": {
+            "order": 1030,
+            "name": {
+                "en": "TBC — first raids"
+            }
+        },
+        "tbc.2": {
+            "order": 1040,
+            "phaseID": 18
+        },
+        "tbc.3": {
+            "order": 1050,
+            "phaseID": 19
+        },
+        "tbc.3.5": {
+            "order": 1060,
+            "name": {
+                "en": "TBC — phase 3.5, Zul’Aman"
+            }
+        },
+        "tbc.4": {
+            "order": 1070,
+            "name": {
+                "en": "TBC — phase 4, Sunwell"
             }
         }
     },
@@ -289,11 +701,12 @@ The four profiles below are **complete valid examples for the shown scopes, not 
             "windows": []
         }
     },
-    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+    "verificationStatus": "Design example. Raid opening evidence is in section 11; the book timing is unresolved and blocks promotion of its affected chain.",
+    "coverage": "Complete ordered milestone catalog for this profile, with only the shown BWL acquisition keys authored. This is not a replacement policy for the full ATT database."
 }
 ```
 
-**`.contrib/.db/shared/.config/progression/era/main.json`**
+**Full proposed file: `.contrib/.db/shared/.config/progression/era/main.json`**
 
 ```json
 {
@@ -303,17 +716,45 @@ The four profiles below are **complete valid examples for the shown scopes, not 
     "mode": "phased",
     "defaultView": "vanilla.6",
     "phases": {
+        "vanilla.1": {
+            "order": 100,
+            "phaseID": 11
+        },
+        "vanilla.1.dire-maul": {
+            "order": 110,
+            "phaseID": 1101
+        },
+        "vanilla.2": {
+            "order": 120,
+            "phaseID": 12
+        },
+        "vanilla.2.battlegrounds": {
+            "order": 130,
+            "name": {
+                "en": "Vanilla — Warsong Gulch and Alterac Valley"
+            }
+        },
         "vanilla.3": {
             "order": 140,
+            "phaseID": 13
+        },
+        "vanilla.4.arathi": {
+            "order": 160,
             "name": {
-                "en": "Phase 3"
+                "en": "Vanilla — Arathi Basin"
             }
+        },
+        "vanilla.4": {
+            "order": 170,
+            "phaseID": 14
+        },
+        "vanilla.5.war-effort": {
+            "order": 180,
+            "phaseID": 1501
         },
         "vanilla.6": {
             "order": 210,
-            "name": {
-                "en": "Phase 6"
-            }
+            "phaseID": 16
         }
     },
     "content": {
@@ -329,11 +770,12 @@ The four profiles below are **complete valid examples for the shown scopes, not 
             "windows": []
         }
     },
-    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+    "verificationStatus": "Design example. Raid opening evidence is in section 11; the book timing is unresolved and blocks promotion of its affected chain.",
+    "coverage": "Complete ordered milestone catalog for this profile, with only the shown BWL acquisition keys authored. This is not a replacement policy for the full ATT database."
 }
 ```
 
-**`.contrib/.db/shared/.config/progression/sod/main.json`**
+**Full proposed file: `.contrib/.db/shared/.config/progression/sod/main.json`**
 
 ```json
 {
@@ -343,16 +785,86 @@ The four profiles below are **complete valid examples for the shown scopes, not 
     "mode": "phased",
     "defaultView": "vanilla.4",
     "phases": {
+        "vanilla.1": {
+            "order": 100,
+            "phaseID": 1605
+        },
+        "vanilla.2": {
+            "order": 110,
+            "phaseID": 1606
+        },
+        "vanilla.3": {
+            "order": 120,
+            "phaseID": 1607
+        },
         "vanilla.4": {
             "order": 130,
+            "phaseID": 1608
+        },
+        "vanilla.4.world-bosses": {
+            "order": 140,
             "name": {
-                "en": "Phase 4"
+                "en": "Phase 4 — world bosses"
+            }
+        },
+        "vanilla.4.raids": {
+            "order": 150,
+            "name": {
+                "en": "Phase 4 — raids"
             }
         },
         "vanilla.5": {
             "order": 170,
+            "phaseID": 1609
+        },
+        "vanilla.6.scepter": {
+            "order": 180,
             "name": {
-                "en": "Phase 5"
+                "en": "Phase 6 — scepter questline"
+            }
+        },
+        "vanilla.6.war-effort": {
+            "order": 190,
+            "name": {
+                "en": "Phase 6 — War Effort begins"
+            }
+        },
+        "vanilla.6.war-effort-end": {
+            "order": 200,
+            "name": {
+                "en": "Phase 6 — War Effort ends"
+            }
+        },
+        "vanilla.6.war": {
+            "order": 210,
+            "name": {
+                "en": "Phase 6 — battle begins"
+            }
+        },
+        "vanilla.6.raids": {
+            "order": 220,
+            "name": {
+                "en": "Phase 6 — raids"
+            }
+        },
+        "vanilla.7": {
+            "order": 230,
+            "phaseID": 1611
+        },
+        "vanilla.7.naxxramas": {
+            "order": 240,
+            "name": {
+                "en": "Phase 7 — Naxxramas"
+            }
+        },
+        "vanilla.8": {
+            "order": 250,
+            "phaseID": 1612
+        },
+        "vanilla.8.scarlet-enclave": {
+            "order": 260,
+            "name": {
+                "en": "Phase 8 — Scarlet Enclave"
             }
         }
     },
@@ -376,11 +888,49 @@ The four profiles below are **complete valid examples for the shown scopes, not 
             ]
         }
     },
-    "verificationStatus": "Illustrative BWL slice. Raid openings are sourced; the later book has unresolved record-level timing and blocks migration promotion of its affected chain."
+    "verificationStatus": "Design example. Raid opening evidence is in section 11; the book timing is unresolved and blocks promotion of its affected chain.",
+    "coverage": "Complete ordered milestone catalog for this profile, with only the shown BWL acquisition keys authored. This is not a replacement policy for the full ATT database."
 }
 ```
 
-The schedules are independent even where three examples use the label “phase 3.” Progression and Era preserve the original Classic opening history; Anniversary uses its later actual cycle. SoD uses phase 5 and a different raid source. The Era example's `defaultView = vanilla.6` makes that distinction visible. These example defaults are display choices, not live detection values. A later expansion in `progression/main` adds new chapter keys; it does not redefine `vanilla.3`.
+### Catalog entries that deliberately have no invented order
+
+The files contain every numerically ordered row in section 11. The following already-listed scopes are still accounted for, but cannot be turned into guessed selectable milestones:
+
+| Profile | Pending chronology or independent condition | Treatment before complete production promotion |
+| --- | --- | --- |
+| Era and progression | `vanilla.3.darkmoon`; `vanilla.5.loot` | Establish their source-specific order before adding milestone definitions. Existing recurring-event predicates remain independent. |
+| Era and progression | `vanilla.5.raids` | AQ realm completion/gong conditions remain independent; do not fabricate one global raid timestamp. |
+| Progression | `tbc.5.isle-*`; `mists.3.isle-stages` | Preserve realm/personal subobjectives under the corresponding chapter window. They are not one invented total ordering. |
+| Anniversary | `vanilla.5.transport`, `.gong`, `.war`, `.raids` | Completion-dependent realm progression; record its source conditions instead of guessing calendar phases. |
+| SoD | `vanilla.4.demon-fall` | Exact release order remains pending; do not assign the next unused integer just to fill the file. |
+
+These pending rows are a review ledger, not unsupported JSON properties or a second policy registry. They do not authorize dropping their acquisition sources or passing full real-database coverage. The chapter catalogs and existing source conditions remain in section 11/Appendix D.
+
+### How the Lua keys connect to the JSON
+
+| Lua occurrence | JSON entry | What is inherited |
+| --- | --- | --- |
+| `inst(742)` with `raid.bwl.common` | `content["raid.bwl.common"]` in the selected file. | All eight bosses, ordinary drops and other descendants inherit this window unless an additional real transition has its own key. |
+| Original `o(180667)` with `raid.bwl.draconic-for-dummies` | The explicit unknown book entry. | Common raid AND book policy, plus intrinsic timeline and quest/source conditions. |
+| SoD difficulty subtree with `raid.bwl.sod20` | Only SoD's `content["raid.bwl.sod20"]`. | Common raid AND SoD variant policy; its eight boss occurrences and ordinary drops inherit these scopes. |
+
+A boss/item does not need a separate JSON entry merely because it has an ID. Add a new key only for an independently timed source occurrence. Distinct loot and same-ID alternative routes stay in Lua; a JSON window cannot manufacture or union them.
+
+The schedules remain independent. Era's later `defaultView` does not start a new rollout. A later chapter in progression adds stable chapter-qualified keys rather than redefining `vanilla.3`. The four explicit configuration selections below are introduced in **P2.2 for shadow validation**; P2.1 must not require them.
+
+### Concrete editing operations
+
+Do not copy fictional changes into BWL's real schedule. Section 3 contains one complete, clearly synthetic operations profile with all opening/removal/reopening fields. These are exact edits to that full file, not another schema or a set of incomplete real-world policies:
+
+| Desired edit in the synthetic file | Exact JSON edit | Effect |
+| --- | --- | --- |
+| Delay the dungeon from `4` to `4.1` | Change `content["example.dungeon"].windows` from `[{"from":"4"}]` to `[{"from":"4.1"}]`; leave the phase catalog/order unchanged. | All descendants remain closed until the parent opens, even if a child has an earlier window. |
+| Add a later drop | Add its actual Lua occurrence/key `example.later-drop` and the full entry `{ "windows": [{ "from": "4.2" }] }` under `content`, exactly as section 3 shows. | Only that acquisition occurrence starts at `4.2`; no global item-ID rewrite. |
+| Remove an existing drop | The full `example.original-drop` entry is `{ "windows": [{ "from": "4", "until": "4.2" }] }`. | Available at `4`; unavailable from `4.2`, without deleting its data or clearing intrinsic `u`. |
+| Remove and reopen a boss | The full `example.new-boss` entry has `[{"from":"4.1","until":"4.2"},{"from":"4.10"}]`. | Active, then removed, then reopened. Its child routes still require the dungeon window. |
+
+For actual BWL, edit the selected flavor's `content` entry only after evidence review. SoD currently has **parent `vanilla.5` AND child `vanilla.5`**: moving only the child earlier would not open the raid earlier. An earlier opening requires reviewing all applicable ancestors; a later child opening affects that child scope. Never change the entire `phases[key].order` to reschedule one source. A genuinely new milestone needs a new stable key and a reviewed unique order first. The unresolved book cannot be changed to a guessed confirmed window simply to make a coverage/golden check pass.
 
 ### Four explicit configuration selections
 
@@ -426,7 +976,7 @@ The following are **overlay excerpts**, not runnable complete configurations. Ex
 }
 ```
 
-`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2 still uses the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
+`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2.1 has no required new selection; P2.2 uses these excerpts only for shadow validation. Both retain the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
 
 ### P4 target source shape: preserve the actual variants
 
@@ -497,15 +1047,29 @@ For each selected artifact, Parser emits one profile whose `flavorId`/`id` match
 | `era:main` | `era:main:raid.bwl.common` | `era:main:raid.bwl.draconic-for-dummies` | Not selected. |
 | `sod:main` | `sod:main:raid.bwl.common`; original route remains removed history. | `sod:main:raid.bwl.draconic-for-dummies`; also retains the original removed-history conditions. | `sod:main:raid.bwl.common` AND `sod:main:raid.bwl.sod20`. |
 
-For example, inside the validated matching SoD context guard, this **P3 candidate** demonstrates the generated shape while the book remains unresolved. It is not a promoted P4 policy; P4 requires an approved resolved window and the corresponding golden check:
+For example, inside the validated matching SoD context guard, this **P3 candidate** demonstrates the generated shape (all 16 SoD milestones are included; locale maps show only their English entries here) while the book remains unresolved. It is not a promoted P4 policy; P4 requires an approved resolved window and the corresponding golden check:
 
 ```lua
 app.ProgressionProfile = {
     schema = 2, flavorId = "sod", id = "main", mode = "phased",
     defaultView = "vanilla.4",
     phases = {
+        ["vanilla.1"] = { order = 100, name = { en = "Season of Discovery" } },
+        ["vanilla.2"] = { order = 110, name = { en = "Phase 2" } },
+        ["vanilla.3"] = { order = 120, name = { en = "Phase 3" } },
         ["vanilla.4"] = { order = 130, name = { en = "Phase 4" } },
+        ["vanilla.4.world-bosses"] = { order = 140, name = { en = "Phase 4 — world bosses" } },
+        ["vanilla.4.raids"] = { order = 150, name = { en = "Phase 4 — raids" } },
         ["vanilla.5"] = { order = 170, name = { en = "Phase 5" } },
+        ["vanilla.6.scepter"] = { order = 180, name = { en = "Phase 6 — scepter questline" } },
+        ["vanilla.6.war-effort"] = { order = 190, name = { en = "Phase 6 — War Effort begins" } },
+        ["vanilla.6.war-effort-end"] = { order = 200, name = { en = "Phase 6 — War Effort ends" } },
+        ["vanilla.6.war"] = { order = 210, name = { en = "Phase 6 — battle begins" } },
+        ["vanilla.6.raids"] = { order = 220, name = { en = "Phase 6 — raids" } },
+        ["vanilla.7"] = { order = 230, name = { en = "Phase 7" } },
+        ["vanilla.7.naxxramas"] = { order = 240, name = { en = "Phase 7 — Naxxramas" } },
+        ["vanilla.8"] = { order = 250, name = { en = "Phase 8" } },
+        ["vanilla.8.scarlet-enclave"] = { order = 260, name = { en = "Phase 8 — Scarlet Enclave" } },
     },
     content = {
         ["sod:main:raid.bwl.common"] = { windows = { { from = "vanilla.5" } } },
@@ -541,7 +1105,7 @@ The goal is **zero schedule-only `SEASON_OF_DISCOVERY` pragmas in migrated produ
 
 `flavors = { "sod" }` belongs on a complete acquisition subtree. Omission means shared applicability within already validated selected contexts. An explicit array must contain known flavor IDs, cannot be empty, and rejects duplicates. Ancestor and child allowlists intersect: a child cannot reopen an excluded parent. The scheduling key remains independent; two flavors may use the same neutral key with different policies, and two same-ID sources may have different keys/data. This field does not choose a profile, a realm, a date, or a loot replacement.
 
-**Required ordering:** validate the output context → safely construct the selected source trees → apply inherited flavor applicability → bind only retained occurrences to policy/coverage → merge/coalesce/index occurrences → export without either input field. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
+**Required P3 production ordering (P2.2 shadow only):** validate the output context → safely construct the selected source trees → apply inherited flavor applicability → bind only retained occurrences to policy/coverage → merge/coalesce/index occurrences → export without either input field. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
 
 ```lua
 -- Illustrative complete-group variant, with synthetic IDs.
@@ -572,7 +1136,7 @@ The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` s
 
 The conservative syntax triage covers all 1,664 groups: 2 phase-metadata/alias blocks, 327 field patches, 1,263 data/structure blocks, 35 program/callback blocks, 21 constructor/wrapper fragments, 4 closing fragments, and 12 string/comment/empty blocks. These are syntax categories, **not a semantic count of removable timing guards**. Of the total, 38 occur in shared preload, 10 in global ItemDB/RecipeDB sources, and 1,616 in authored acquisition trees. Input acquisition fields cannot be applied blindly to preload/global-record code. Eleven groups are implied true and four false by enclosing conditions; even those require branch-preserving review. The implementation's temporary report retains all 131 file locations and exact block spans for audit.
 
-During stage 2 the applicability pass is shadow validation only; official legacy bytes remain identical. Stage 3 activates reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
+P2.1 validates/strips annotations and records pending keys; it runs no new applicability/timing filter. P2.2 may shadow-evaluate selected applicability/policies. Both keep official legacy bytes identical. Stage 3 activates reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
 
 Acceptance includes zero remaining **schedule-only** `SEASON_OF_DISCOVERY` directives in the completed cohort; every remaining `SEASON_OF_DISCOVERY` directive has a justified structural/technical exception; no `flavors`/`progressionKey` leaks; no excluded-source merge or pre-merge cache influence (poison an excluded same-ID variant and prove retained ItemDB/RecipeDB/header/event/output values are unchanged); no invented source data; and byte/semantic regression checks for all affected contexts, including unchanged Retail.
 
@@ -702,7 +1266,7 @@ Evaluation separates **availability** from **inspection visibility**:
 
 ## 5. Policy schema and complete build coverage
 
-There is one canonical availability representation: a policy object with a `windows` list. Do not add string/opening-only shorthand. Keys match `[a-z0-9][a-z0-9._-]*`; a colon is reserved for generated namespacing. The special boundary `start` means no local opening restriction before the first selectable milestone; it is not a selectable phase key.
+The JSON schema applies once a policy is explicitly authored/selected in P2.2 and under P3 authority; P2.1 does not have to instantiate it. There is one canonical availability representation: a policy object with a `windows` list. Do not add string/opening-only shorthand. Keys match `[a-z0-9][a-z0-9._-]*`; a colon is reserved for generated namespacing. The special boundary `start` means no local opening restriction before the first selectable milestone; it is not a selectable phase key.
 
 | Field | Type and rule |
 | --- | --- |
@@ -726,9 +1290,9 @@ Reusing the same profile on another target requires eligibility review for that 
 
 `activation`, when present, is an array of objects. Each record has exactly four required nonempty string fields: `at` (an ISO-8601 timestamp with explicit UTC/offset), `region`, `realm`, and `evidence`. Extra properties are rejected. Region/realm values identify the actual applicable scope; an explicit `"all"` requires evidence of global applicability. `evidence` identifies an accessible supporting screenshot/report or source link. Absence of a record means timing is not established. These metadata fields do not determine window endpoints or select the view.
 
-The initial phase validation inventory covers target entries labeled Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever; Retail is excluded from phase changes and retains an unchanged-output regression check. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. A missing UI does **not** imply missing policy authority.
+The initial phase validation inventory covers target entries labeled Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever; Retail is excluded from phase changes and retains an unchanged-output regression check. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. For a supported P3 context, a missing UI does **not** imply missing policy authority; this requirement does not create a JSON prerequisite for P2.1.
 
-In phased mode every emitted acquisition key needs a policy; missing entries remain errors. A profile reused across targets may also describe keys outside one target's selected source set. Zero-hit exceptions require explicit context applicability/exclusion evidence from the reviewed source selection or context-specific eligibility; they cannot be inferred from expansion names or silently skipped. A key expected in that context but absent is an error, including misspellings and missing child transitions. Export only the context-applicable policy subset, preserving the profile's milestone identities; this is selection, not policy inheritance.
+In P3 phased production every retained acquisition key needs a policy; missing entries are errors. P2.1 instead records missing JSON/mappings as expected pending work without failing the legacy build or commit. P2.2 validates the explicitly selected JSON and reports missing/unknown mappings as unresolved shadow coverage; they block P3 promotion. A nonexistent selected file or invalid schema/identity is a shadow-validation failure, not an implicit unphased policy. A profile reused across targets may also describe keys outside one target's selected source set. Zero-hit exceptions require explicit context applicability/exclusion evidence from the reviewed source selection or context-specific eligibility; they cannot be inferred from expansion names or silently skipped. A key expected in that context but absent is an error, including misspellings and missing child transitions. Export only the context-applicable policy subset, preserving the profile's milestone identities; this is selection, not policy inheritance.
 
 A minimal complete unphased declaration is:
 
@@ -757,7 +1321,7 @@ Neither stage 3 nor stage 4 may use legacy phase assignments, propagated child v
 | Situation | Stage 2 | Stage 3 / final behavior |
 | --- | --- | --- |
 | Existing `applyclassicphase` or direct phase input | Produces official output; new marker has no effect. | Golden-only in stage 3; absent/rejected in stage 4. Never a production fallback. |
-| New annotated source missing an external policy | Coverage error blocks promotion; official legacy output remains unchanged. | Error. Do not infer policy from the old phase or silently open it. |
+| New annotated source missing an external policy | P2.1: pending-key report, not a legacy-build/commit blocker. P2.2: unresolved shadow coverage blocks P3 promotion; official output is unchanged. | Error. Do not infer policy from the old phase or silently open it. |
 | Later child has an independent legacy transition | Annotate it or prove it redundant under all relevant builds. | Its own progress key/window must express the transition. Missing keys fail golden/expected-result checks. |
 | Same inherited restriction repeated by old helpers | Keep it for the unchanged legacy path. | Remove a redundant writer only after proof; no need to invent a key for every repeated call. |
 | Parent and child have different windows | Collect both alongside the legacy form. | Intersect them. A child cannot escape a closed parent. |
@@ -772,7 +1336,8 @@ The new runtime does not read old numeric checkbox combinations as its source of
 
 Freeze the legacy source/runtime/toolchain and build context before new policy becomes authoritative. Run legacy and progress compilation in separate fresh processes with isolated mutable state. Record exact source/version, input hashes, full resolved target/flavor/profile context, preprocessing/source selection, runtime applicability, and tool versions. Golden production must not call the new converter or derive its expected settings from candidate windows or candidate `phaseID` mappings.
 
-- **Stage 2:** compare official output bytes to the pinned old output. New markers and policy files may be collected but cannot change it. Explicit diagnostic/artifact metadata is separately identified.
+- **P2.1:** with JSON absent, verify annotation shape, input stripping, pending-key/source-location reports and official byte equality. No new applicability/timing selection runs.
+- **P2.2:** validate explicit policy files, identity, mappings and shadow coverage; compare official bytes to the same legacy baseline. Explicit diagnostic artifacts are separate. Missing/unknown mappings cannot be promoted to P3; malformed or missing explicitly selected files fail shadow validation.
 - **Stage 3:** compare complete acquisition structures and route conditions using independently reviewed legacy settings vectors and matching candidate viewpoints. Test all meaningful opening/closing/reopening boundaries, plus unavailable/event combinations. Do not compare only loot IDs, hit counts, or aggregate totals.
 - A testing-only projection may explain representation changes, but its expected behavior comes from the pinned old runtime/data and reviewed vectors, not a round-trip through the candidate.
 - Legacy checkbox combinations are not all representable as one chronological view. Do not claim equivalence for arbitrary old UI states. New subphases, windows, or behavior corrections that legacy cannot express require separate approved fixtures and data evidence, not invented golden agreement.
@@ -830,7 +1395,7 @@ The following **NEW files are proposed after approval**. No profile file is adde
 
 These cover seven current families plus historical SoM; Retail has no proposed policy file. Original and Anniversary Hardcore require separate profiles, and Forever beta is separate from its live timeline. Section 11 supplies the full phase/batch planning catalog. Additional independently reviewed timelines use their own `<profileId>.json`; none is automatically selected from an expansion or guessed client value. It adds no universal registry or lifecycle field.
 
-Before implementing stage-2 policies, the context matrix must identify, for each supported invocation: resolved existing configuration, flavor ID, profile ID/path, source variant selection, positive runtime applicability, context-local legacy eligibility decision, and expected/explicitly excluded source keys. The concrete filenames are settled as proposals; their complete contents and actual target/runtime bindings are **not yet verified**. Missing identity/selector evidence blocks promotion of that context. Historical SoM replay uses independently pinned historical inputs, not an assumption that today's SoD configuration reproduces SoM. Unknown live contexts do not select historical policies.
+Before validating P2.2 selected policies and promoting to P3, the context matrix must identify, for each supported invocation: resolved existing configuration, flavor ID, profile ID/path, source variant selection, positive runtime applicability, context-local legacy eligibility decision, and expected/explicitly excluded source keys. The concrete filenames are settled as proposals; their complete contents and actual target/runtime bindings are **not yet verified**. Missing identity/selector evidence blocks promotion of that context. Historical SoM replay uses independently pinned historical inputs, not an assumption that today's SoD configuration reproduces SoM. Unknown live contexts do not select historical policies.
 
 Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechanically assigned to `progression`. The existing source tags and requirements must be reviewed for each invocation. `example-a/main.json` and `example-b/main.json` may remain isolated contract-test fixtures; they are not extra production flavors. The concrete non-profile foundation paths below remain planned.
 
@@ -901,7 +1466,7 @@ Future C# source-change commits must include their matching CI-built Parser bina
 ## 10. Ordered rollout and acceptance
 
 1. Complete the pinned inventory and independent legacy baseline for each reviewed target/flavor/profile binding and propagation chain. Resolve its source selection, runtime applicability, and phased/unphased policy from evidence, not an expansion or target name.
-2. Implement stage-2 collection, strict schema validation, source hints, and policy coverage without altering official legacy bytes. Start with representative raids, then professions/currencies/templates/callbacks and all remaining source files.
+2. Implement P2.1 annotation collection/validation, stripping and pending-key reporting with JSON absent, preserving legacy bytes. Then P2.2 authors/selects complete JSON and validates schema/identity/coverage in shadow. Start with representative raids, then cover all indirect producers and source files; do not require simultaneous Lua/JSON commits.
 3. Fill external windows and independent eligibility for every real transition; add all distinct child/boss/drop scopes. Complete canonical localization and shared subphase/unknown labels. Do not invent timestamps, native IDs, or removal dates.
 4. Exercise stage 3 in isolated candidates, then switch official authority only after full coverage, golden comparison, independent new-capability fixtures, and invariance gates pass. The new path must work when legacy timing expressions are poisoned or disabled.
 5. Remove legacy code/data expressions in stage 4; rerun all build/content, runtime, callback, source identity, window-boundary, and strict-authoring checks. Preserve frozen legacy evidence without requiring future dual authoring.
@@ -910,9 +1475,9 @@ Acceptance must demonstrate:
 
 - The same exact client build or expansion supports two synthetic flavors with distinct source variants, windows, and saved views; neither profile overwrites the other.
 - One flavor/profile spanning targets keeps its namespace and milestone meaning; target changes cannot reset its view or implicitly inherit a foreign legacy cutoff.
-- Missing/mismatched compile selection fails. Runtime unknown, a merely negative discriminator, conflicting guards, or two applicable profiles produces a visible diagnostic without selecting by load order or falling back to legacy authority.
-- Cross-target zero-hit exceptions require explicit applicability evidence; emitted keys without policy and expected-but-missing child scopes still fail.
-- Stage 2 official byte equality and stage 3 independent authority, with no legacy-child or missing-policy fallback.
+- P2.1 missing policy/selection is diagnostic pending work, while malformed annotations and input leaks fail. P2.2 explicitly selected file/schema/identity errors fail shadow validation. P3 missing/mismatched compile selection fails. Runtime unknown, a merely negative discriminator, conflicting guards, or two applicable profiles produces a visible diagnostic without selecting by load order or falling back to legacy authority.
+- Cross-target zero-hit exceptions require explicit applicability evidence. Missing mappings are pending in P2.1, unresolved coverage in P2.2, and failures under P3 authority; absent required child transitions block promotion.
+- P2.1 and P2.2 each preserve official legacy bytes; P3 is independent authority with no legacy-child or missing-policy fallback. No empty placeholder JSON, implicit unphased policy, or new lifecycle field is introduced.
 - Active/future/removed/unknown/reopened results at every milestone boundary; `4.10` distinct from `4.1`; timestamps absent or region-scoped without implicit advancement.
 - Dungeon/child intersection and alternative-route union; a removed boss cannot expose its child's later drop; another valid source for that item remains usable.
 - Independent `u`/event/level conditions and availability-vs-inspection distinction; reopening a schedule does not clear native unavailable state.
