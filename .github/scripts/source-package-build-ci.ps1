@@ -7,6 +7,7 @@ New-Item -ItemType Directory -Force $evidence | Out-Null
 $builds = [System.Collections.Generic.List[object]]::new()
 $files = [System.Collections.Generic.List[object]]::new()
 $assetManifests = [System.Collections.Generic.List[object]]::new()
+$runtimeCoverage = $null
 $failure = $null
 
 function Invoke-Build([string] $Path, [string] $Configuration, [string] $Platform, [string] $Label) {
@@ -137,6 +138,37 @@ try {
     }
     Test-RestoredFile (Join-Path $release 'Skill Level Requirements/Newtonsoft.Json.dll') 'newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll'
 
+    # Run against isolated copies so fixtures and harnesses cannot modify the artifact.
+    $runtimeRoot = Join-Path $env:RUNNER_TEMP 'att-source-runtime'
+    $runtimeApps = Join-Path $runtimeRoot 'apps'
+    $fixtures = Join-Path $runtimeRoot 'fixtures'
+    $runtimeEvidence = Join-Path $evidence 'runtime'
+    New-Item -ItemType Directory -Force $runtimeApps, $fixtures, $runtimeEvidence | Out-Null
+    Copy-Item -Path (Join-Path $release '*') -Destination $runtimeApps -Recurse -Force
+    foreach ($relativePath in @(
+        'ATT Sync Tool/NLua.dll', 'ATT Sync Tool/KeraLua.dll', 'ATT Sync Tool/lua54.dll',
+        'Item Database Consolidator/NLua.dll', 'Item Database Consolidator/KeraLua.dll', 'Item Database Consolidator/lua54.dll',
+        'Skill Level Requirements/Newtonsoft.Json.dll'
+    )) {
+        $original = Join-Path $release $relativePath
+        $copy = Join-Path $runtimeApps $relativePath
+        if (!(Test-Path -LiteralPath $copy -PathType Leaf) -or
+            (Get-FileHash -LiteralPath $original -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $copy -Algorithm SHA256).Hash) {
+            throw "Runtime fixture dependency differs from Release output: $relativePath"
+        }
+    }
+    & (Join-Path $PSScriptRoot 'source-legacy-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $fixtures -Evidence $runtimeEvidence
+    & (Join-Path $PSScriptRoot 'source-net10-runtime-ci.ps1') -Release $runtimeApps -FixtureRoot $fixtures -Evidence $runtimeEvidence
+    $runtimeCoverage = [pscustomobject]@{
+        item = 'Actual EXE fixture output and same application entry point in a module-path harness.'
+        sync = 'Built EXE assembly: MainForm initialization, Shown event, message loop, and clean close in a harness.'
+        database = 'Built Database.dll: synthetic SavedVariables parse and rewrite, with loaded Lua module path and hash.'
+        asset = 'Actual EXE with synthetic JSON input and checked output.'
+        icon = 'Actual EXE with local synthetic CSV and checked file replacement.'
+        skill = 'Built DLL Helper.Parse with synthetic content and Newtonsoft path/hash; EXE and live Wowhead were not tested.'
+        lua = 'Application integration uses bundled Lua 5.4.3 and 5.4.9; input syntax is Lua 5.1 compatible.'
+    }
+
     @'
 ATT source tools - Release build
 
@@ -152,9 +184,14 @@ Several tools use paths relative to the current working directory and require
 the ATT repository and its input data; those are not included in this archive.
 Use the repository's .contrib/.tools directory as the working directory when
 running tools that expect it, while keeping the executable and dependencies
-in their extracted folder. Build and output checks were run; the tools were
-not executed as part of this CI run.
+in their extracted folder.
 IconID Converter scans and may modify files under the repository.
+
+Offline synthetic fixtures ran the Item Database Consolidator, AssetDB Builder,
+and IconID Converter executables. A harness checked the Sync form initialization
+and Database saved-variable parsing. Skill Level Requirements was checked at its
+parsing function using synthetic content; its executable and live Wowhead access
+were not tested. These checks do not replace testing with actual game data.
 '@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
     $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
         $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
@@ -173,5 +210,6 @@ IconID Converter scans and may modify files under the repository.
         builds = @($builds)
         packageManifests = @($assetManifests)
         outputHashes = @($files)
+        runtimeCoverage = $runtimeCoverage
     } | ConvertTo-Json -Depth 10 | Set-Content -Encoding utf8 (Join-Path $evidence 'result.json')
 }
