@@ -1798,10 +1798,13 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	end,
 	RefreshCollectionOnly = true,
 	collectible = function(t)
-		if not t.questID or not app.Settings.Collectibles.QuestObjectives then
-			return false;
+		if app.Settings.Collectibles.Quests and t.questID then
+			if not app.Settings.Collectibles.QuestObjectives then
+				return false;
+			end
+			return C_QuestLog_IsOnQuest(t.questID);
 		end
-		return app.Settings.Collectibles.Quests and C_QuestLog_IsOnQuest(t.questID);
+		return false;
 	end,
 	trackable = function(t)
 		if not t.questID then

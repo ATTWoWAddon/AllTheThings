@@ -567,12 +567,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/6 Crag Boar Rib
 						provider = { "i", 2886 },	-- Tender Boar Ribs
-						crs = {
-							1125,	-- Crag Boar
-							1126,	-- Large Crag Boar
-							1127,	-- Elder Crag Boar
-							1689,	-- Scarred Crag Boar
-						},
 					}),
 					objective(2, {	-- 0/1 Rhapsody Malt
 						provider = { "i", 2894 },	-- Rhapsody Malt

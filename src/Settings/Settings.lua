@@ -256,6 +256,7 @@ local Things = {
 	"Quests",
 	"QuestsLocked",
 	"QuestsHidden",
+	"QuestObjectives",
 	"Recipes",
 	"Reputations",
 	"RuneforgeLegendaries",

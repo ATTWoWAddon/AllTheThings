@@ -131,6 +131,7 @@ local function presetStore()
 		["Thing:Quests"] = settings:Get("Thing:Quests"),
 		["Thing:QuestsLocked"] = settings:Get("Thing:QuestsLocked"),
 		["Thing:QuestsHidden"] = settings:Get("Thing:QuestsHidden"),
+		["Thing:QuestObjectives"] = settings:Get("Thing:QuestObjectives"),
 		["Thing:Recipes"] = settings:Get("Thing:Recipes"),
 		["Thing:Reputations"] = settings:Get("Thing:Reputations"),
 		["Thing:Titles"] = settings:Get("Thing:Titles"),
@@ -223,6 +224,7 @@ modeButton:SetScript("OnClick", function()
 				settings:Set("Thing:Quests", settings:Get("PresetRestore")["Thing:Quests"])
 				settings:Set("Thing:QuestsLocked", settings:Get("PresetRestore")["Thing:QuestsLocked"])
 				settings:Set("Thing:QuestsHidden", settings:Get("PresetRestore")["Thing:QuestsHidden"])
+				settings:Set("Thing:QuestObjectives", settings:Get("PresetRestore")["Thing:QuestObjectives"])
 				settings:Set("Thing:Recipes", settings:Get("PresetRestore")["Thing:Recipes"])
 				settings:Set("Thing:Reputations", settings:Get("PresetRestore")["Thing:Reputations"])
 				settings:Set("Thing:Titles", settings:Get("PresetRestore")["Thing:Titles"])
