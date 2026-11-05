@@ -8,10 +8,24 @@ on: # Controls automatic and manual workflow triggers
       - '**' # Ignore all tags, including names containing '/'
     paths: # Require at least one matching changed file; not evaluated for tag pushes
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
+      - '.contrib/.raw/**'
+      - '.contrib/src/Parser/**'
+      - '.contrib/.tools/**'
+      - '.contrib/titan/**'
+      - '.contrib/build-parser.ps1'
+      - '.contrib/validate-db.py'
+      - '.contrib/tests/test_validate_db.py'
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
   pull_request: # Trigger on opened, synchronize, or reopened events for any target branch
     paths: # Require at least one matching file changed in the pull request
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
+      - '.contrib/.raw/**'
+      - '.contrib/src/Parser/**'
+      - '.contrib/.tools/**'
+      - '.contrib/titan/**'
+      - '.contrib/build-parser.ps1'
+      - '.contrib/validate-db.py'
+      - '.contrib/tests/test_validate_db.py'
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
   workflow_dispatch: # Run manually: Actions -> Parser -> Run workflow -> select a branch -> Run workflow (requires write access and this file on the default branch; no path filters)
 
@@ -37,7 +51,52 @@ jobs:
             non_forever:
               - '.contrib/.db/**'
               - '!.contrib/.db/forever/**'
+              - '.contrib/.raw/**'
+              - '.contrib/src/Parser/**'
+              - '.contrib/.tools/**'
+              - '.contrib/titan/**'
+              - '.contrib/build-parser.ps1'
+              - '.contrib/validate-db.py'
+              - '.contrib/tests/test_validate_db.py'
               - '.github/workflows/Parser.yml'
+
+      - name: Test Parser validation helpers
+        shell: pwsh
+        run: |
+          python ../tests/test_validate_db.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python ../titan/test_pipeline.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build current Parser sources
+        shell: pwsh
+        run: '& "../build-parser.ps1" -ArtifactDirectory (Join-Path $env:RUNNER_TEMP "parser-windows-x64")'
+
+      - name: Upload the Windows x64 Parser
+        uses: actions/upload-artifact@v7
+        with:
+          name: parser-windows-x64-${{ github.sha }}
+          path: ${{ runner.temp }}/parser-windows-x64/
+          retention-days: 7
+          if-no-files-found: error
+
+      - name: Regenerate the Wrath ItemDB guard
+        shell: pwsh
+        run: '& "../titan/Stage-WrathItemDB.ps1" -StageDirectory (Join-Path $env:RUNNER_TEMP "wrath-itemdb")'
+
+      - name: Test compiled Titan profile and guards
+        shell: powershell
+        run: '& "../titan/Test-Parser.ps1"'
+
+      - name: Prepare fresh database outputs
+        shell: pwsh
+        run: |
+          if ('${{ github.event_name }}' -eq 'workflow_dispatch' -or '${{ steps.changes.outputs.non_forever }}' -eq 'true') {
+            python ../validate-db.py --prepare
+          } else {
+            python ../validate-db.py --prepare --flavors Camelot
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - parallel:
         - name: Database Parser for Retail
@@ -85,6 +144,15 @@ jobs:
           run: |
             "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
 
+        - name: Database Parser for Titan Reforged
+          id: Parse-Titan
+          if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
+          timeout-minutes: 5
+          continue-on-error: true
+          shell: cmd
+          run: |
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Titan Reforged.config"
+
         - name: Database Parser for Cataclysm
           id: Parse-CATA
           if: github.event_name == 'workflow_dispatch' || steps.changes.outputs.non_forever == 'true'
@@ -112,6 +180,7 @@ jobs:
             "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
 
       - name: Full Success Check
+        if: always()
         shell: pwsh
         run: |
           $results = [ordered]@{
@@ -125,6 +194,7 @@ jobs:
               ClassicSoD = '${{ steps.Parse-ClassicSoD.outcome }}'
               TBC = '${{ steps.Parse-TBC.outcome }}'
               WOTLK = '${{ steps.Parse-WOTLK.outcome }}'
+              Titan = '${{ steps.Parse-Titan.outcome }}'
               CATA = '${{ steps.Parse-CATA.outcome }}'
               MOP = '${{ steps.Parse-MOP.outcome }}'
               FOREVER = '${{ steps.Parse-FOREVER.outcome }}'
@@ -143,8 +213,42 @@ jobs:
             exit 1
           }
 
+      - name: Verify required database artifacts
+        shell: pwsh
+        run: |
+          if ('${{ github.event_name }}' -eq 'workflow_dispatch' -or '${{ steps.changes.outputs.non_forever }}' -eq 'true') {
+            python ../validate-db.py --manifest "$env:RUNNER_TEMP/db-artifacts.sha256"
+          } else {
+            python ../validate-db.py --flavors Camelot --manifest "$env:RUNNER_TEMP/db-artifacts.sha256"
+          }
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Stage Parser validation evidence
+        shell: pwsh
+        run: |
+          $evidence = Join-Path $env:RUNNER_TEMP 'parser-validation'
+          New-Item -ItemType Directory -Path $evidence | Out-Null
+          Copy-Item -LiteralPath (Join-Path $env:RUNNER_TEMP 'db-artifacts.sha256') -Destination $evidence
+          Copy-Item -LiteralPath (Join-Path $env:RUNNER_TEMP 'wrath-itemdb/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua') -Destination $evidence
+          if ('${{ github.event_name }}' -eq 'workflow_dispatch' -or '${{ steps.changes.outputs.non_forever }}' -eq 'true') {
+            $progression = Join-Path $evidence 'Progression'
+            New-Item -ItemType Directory -Path $progression | Out-Null
+            foreach ($name in 'era', 'sod', 'wrath', 'titan') {
+              Copy-Item -LiteralPath "../Debugging/Progression/$name.json" -Destination $progression
+            }
+          }
+
+      - name: Upload Parser validation evidence
+        uses: actions/upload-artifact@v7
+        with:
+          name: parser-validation-${{ github.sha }}
+          path: ${{ runner.temp }}/parser-validation/
+          retention-days: 7
+          if-no-files-found: error
+
       - uses: actions/upload-artifact@v7
         with:
           name: db  # Artifact name
           path: db/  # File path to upload
           retention-days: 7
+          if-no-files-found: error
