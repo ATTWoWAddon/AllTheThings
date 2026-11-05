@@ -1,0 +1,34 @@
+name: Source package reference build
+
+on:
+  push:
+    branches:
+      - codex/source-package-references-ci
+    tags-ignore:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2025-vs2026
+    env:
+      NUGET_PACKAGES: ${{ runner.temp }}\att-source-nuget
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - uses: microsoft/setup-msbuild@v3
+      - name: Build source projects and solution
+        shell: pwsh
+        run: ./.github/scripts/source-package-build-ci.ps1
+      - name: Upload build evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: source-package-build-evidence
+          path: ${{ runner.temp }}\att-source-evidence
+          if-no-files-found: warn
