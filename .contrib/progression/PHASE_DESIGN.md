@@ -20,7 +20,7 @@ The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a97
 
 **P1–P4 remain four main stages; P2.1/P2.2 split only the authoring sequence within P2.** Stage selection lives only in the temporary migration manifest, never in the permanent availability policy or an authored timing field. `P2` is an umbrella term, not a valid manifest stage value.
 
-**Stages are selected independently for named source cohorts, not once for the whole database.** A cohort is one complete source file or an explicit group of dependent files whose propagation chain can be isolated. BWL may remain P2.1 while another raid is P4 in the same artifact. The table describes each cohort's authority; section 2d supplies the temporary control file. This is an explicit mixed migration, never a fallback chosen because a policy is missing. A P3/P4 request that fails its gates is an error, not an automatic return to P1. Retiring a cohort's old authoring does not authorize deleting helpers still used by another cohort.
+**Stages are selected independently for named source cohorts, not once for the whole database.** A cohort is one complete source file or an explicit group of dependent files whose propagation chain can be isolated. P1, P2.1, P2.2, P3 and P4 may all coexist in different cohorts of the same build/artifact; they are not mutually exclusive whole-build modes. The table describes each cohort's authority; section 2d supplies the temporary control file. This is an explicit mixed migration, never a fallback chosen because a policy is missing. A P3/P4 request that fails its gates is an error, not an automatic return to P1. Retiring a cohort's old authoring does not authorize deleting helpers still used by another cohort.
 
 ### Blackwing Lair through P1–P4
 
@@ -937,12 +937,12 @@ For actual BWL, edit the selected flavor's `content` entry only after evidence r
 
 The following are **overlay excerpts**, not runnable complete configurations. Existing composition must first select a reviewed source/build context and safe output directory. The example adds no real client discriminator. In particular, `.contrib/.db/standard/.config/classic/02 - TBC.config` contains `CLASSIC_ANNIVERSARY`; it is not the historical Vanilla baseline for either of the first two examples.
 
-Use the complete manifest shape in section 2d with these **BWL authoring states**. Its separate BWL P2.1 / ZG P4 demonstration is an intentionally unready request; do not leave ZG at P4 while trying these BWL-only policy examples.
+Use the complete manifest shape in section 2d with these **BWL authoring states**. Its five-cohort demonstration is a separate, intentionally unready request. For these BWL-only policy examples, keep every other example cohort (`onyxias-lair`, `ruins-of-ahn-qiraj`, `temple-of-ahn-qiraj`, and `zul-gurub`) at P1 with its frozen legacy source; omit one only while it remains in that reviewed P1 baseline.
 
 | BWL authoring step | Exact manifest settings | New configuration selection |
 | --- | --- | --- |
-| P2.1: Lua first | `blackwing-lair.stage = "P2.1"`; set `zul-gurub.stage = "P1"`, or omit that cohort only while its source remains in the frozen P1 baseline. | Set only `ProgressionMigration` to `.contrib/progression/migration.json`; policy selection is not required. |
-| P2.2: JSON next | Change `blackwing-lair.stage` to `"P2.2"`; keep ZG P1 and all unrelated legacy sources at their reviewed stages. | Select the matching four-property overlay below and its complete BWL policy file. Official BWL still uses the legacy projection. |
+| P2.1: Lua first | `blackwing-lair.stage = "P2.1"`; keep all four other example cohorts at `"P1"` as specified above. | Set only `ProgressionMigration` to `.contrib/progression/migration.json`; policy selection is not required. |
+| P2.2: JSON next | Change only `blackwing-lair.stage` to `"P2.2"`; keep all four other example cohorts at `"P1"`. | Select the matching four-property overlay below and its complete BWL policy file. Official BWL still uses the legacy projection. |
 | Later BWL promotion | Request P3/P4 only after BWL's book/coverage/golden and cross-context retirement gates pass. | Keep the approved policy; changing the stage never fills a missing mapping. |
 
 The manifest is selected for the resolved context. Reusing the same example path in four invocations does not authorize incompatible deletion of a shared Lua writer; the cross-context retirement rule in section 2d still applies. Different explicit contexts can select separate reviewed manifest paths if their stages differ.
@@ -1159,7 +1159,7 @@ Acceptance includes zero remaining **schedule-only** `SEASON_OF_DISCOVERY` direc
 
 **Edit one temporary control file to say which raid is at which migration stage.** A scheduling JSON answers *when content opens*; this manifest answers *which implementation currently owns that source*. It is neither a second scheduling catalog nor an addon setting. It is removed only after the entire supported migration has retired the legacy path.
 
-Proposed path: **`.contrib/progression/migration.json`**. This is a complete control-file example, with BWL at P2.1 and Zul'Gurub requested at P4:
+Proposed path: **`.contrib/progression/migration.json`**. This complete control-file example requests **all four main stages simultaneously in one build/artifact**, including both P2 steps, on five distinct existing raid files:
 
 ```json
 {
@@ -1167,11 +1167,32 @@ Proposed path: **`.contrib/progression/migration.json`**. This is a complete con
     "defaultStage": "P1",
     "cohorts": [
         {
+            "id": "onyxias-lair",
+            "sources": [
+                ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.5 Onyxia's Lair.lua"
+            ],
+            "stage": "P1"
+        },
+        {
             "id": "blackwing-lair",
             "sources": [
                 ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua"
             ],
             "stage": "P2.1"
+        },
+        {
+            "id": "ruins-of-ahn-qiraj",
+            "sources": [
+                ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua"
+            ],
+            "stage": "P2.2"
+        },
+        {
+            "id": "temple-of-ahn-qiraj",
+            "sources": [
+                ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua"
+            ],
+            "stage": "P3"
         },
         {
             "id": "zul-gurub",
@@ -1195,7 +1216,9 @@ A reviewed context selects this file explicitly. For example, the following is t
 }
 ```
 
-**This example requests a target state; it does not claim that Zul'Gurub is ready for P4.** The four full JSON files in section 2b cover BWL acquisition scopes only. Selecting the manifest above with those files must report `zul-gurub: requested P4; missing source policies/child transitions and retirement evidence`, and refuse that requested artifact. It must not silently use P1 or pretend `raid.zg.common` alone covers the file. The existing ZG source includes its outer `PHASE_FOUR`, later `PHASE_FIVE` item sources (20757, 20756, 22216), `PHASE_SIX` quests (9210, 9208, 9209), and SoD-specific transitions. The manifest's syntax is complete; its P4 request still needs the independently reviewed full ZG policy, annotations, writer removal and golden evidence. No new ZG availability is invented here.
+**These are illustrative stage assignments, not claims that the raids are already ready for those stages.** The four full JSON files in section 2b cover BWL acquisition scopes only. Selecting this manifest with those files must report Ruins' unresolved P2.2 shadow coverage, Temple's missing P3 policies/child transitions and independent golden evidence, and `zul-gurub: requested P4; missing source policies/child transitions and retirement evidence`. The P3/P4 failures refuse the requested artifact; they never select P1 automatically. No new raid availability or live-client value is invented here.
+
+For example, `raid.zg.common` alone cannot cover ZG: its existing source includes the outer `PHASE_FOUR`, later `PHASE_FIVE` item sources (20757, 20756, 22216), `PHASE_SIX` quests (9210, 9208, 9209), and SoD-specific transitions. Every advancing cohort still needs its own reviewed annotations, complete propagation-chain coverage and stage gates. ZG's P4 additionally requires writer removal and retirement evidence; Temple's P3 retains its old syntax for separate golden validation.
 
 ### What to edit, and what each value means
 
@@ -1240,18 +1263,25 @@ Coverage is counted **by context, cohort and source occurrence before aggregatio
 
 Export `app.ProgressionProfile.content` only for keys actually required by validated P3/P4-owned output. A BWL-only unknown book entry used solely by P2 shadow work is not exported or treated as a production coverage failure. If a production-owned occurrence uses that same unknown key, its own gate fails. Profile milestone IDs remain stable; ownership selection does not rewrite their order or create another policy inheritance layer.
 
-After a separately reviewed complete ZG cohort passes its P4 gates, the mixed acceptance fixture must show:
+After each requested stage's missing work and gates are supplied, **one acceptance fixture must contain all five cohorts simultaneously and inspect one composed artifact**. Separate pairwise demonstrations do not satisfy this case:
 
-| Check | BWL at P2.1/P2.2 | Validated ZG at P4 |
+| Cohort and stage in that one artifact | Authored source and validation | Official output authority |
 | --- | --- | --- |
-| Official condition source | Original numeric phases/callbacks; no new `progressionScopes`. | Only approved scope windows; no authored legacy phase dependence. |
-| Missing BWL JSON / unknown book | Pending or unresolved shadow report; BWL remains explicitly legacy-owned. | Does not block unrelated ZG production policies. |
-| Old phase-checkbox change | Retains its original effect on BWL legacy routes/callbacks. | Does not change ZG progress availability. |
-| New `viewPhase` change | Does not change BWL legacy availability. | Evaluates ZG's windows. |
-| Same item available in both raids | Keep BWL's complete route and conditions. | Keep ZG's separate route; the item can be obtainable through either complete valid route. |
-| Poison/reorder the other projection's cache writes | BWL owned output stays equal to its isolated legacy baseline. | ZG output stays unchanged and remains independent of legacy phase writers. |
+| Onyxia's Lair — **P1** | Unannotated frozen legacy source and its pinned baseline. | Legacy projection; original phases/callbacks. |
+| Blackwing Lair — **P2.1** | Valid Lua annotations with original expressions/guards retained; its JSON policies may be absent. Validate stripping, pending reports and owned legacy-byte equality. | Legacy projection; no new applicability/timing filter. |
+| Ruins of Ahn'Qiraj — **P2.2** | Annotated legacy source plus explicitly selected valid JSON; mappings are checked in a separate shadow run. Unresolved coverage blocks promotion. | Legacy projection, equal to its pinned owned bytes; shadow output is not shipped. |
+| Temple of Ahn'Qiraj — **P3** | Keep old syntax for the independent legacy golden using pinned inputs/tools and separate checks; pass complete progress policy/coverage gates. | Progress projection only; retained old syntax never supplies production timing. |
+| Zul'Gurub — **P4** | Remove local old timing syntax after its retirement gates; retain pinned golden evidence. Shared definitions remain until their last supported caller retires. | Progress projection only, with the approved P3 behavior preserved. |
 
-This is an acceptance contract **after ZG's missing work is supplied**, not a claim that the example manifest/profile currently passes. BWL's unresolved book blocks BWL P3/P4, not all progress adoption. No runtime authority is inferred from a missing key, profile presence or load order. Existing numeric phase controls remain active for legacy-owned routes; the new view controls progress-owned routes. `phaseID` metadata may supply labels but cannot globally alias the two control systems. Raw `u` filtering remains independent of both. Complete inherited route conditions combine with AND; complete alternative acquisition routes combine with OR. No new permanent `authority` field is needed if compiler provenance and the exported condition families preserve this separation.
+In that same fixture, verify all of the following against the composed artifact and each isolated owned output:
+
+- Onyxia, BWL and Ruins retain legacy checkbox behavior; changing `viewPhase` does not change their availability. Temple and ZG respond only to the new view, not legacy phase checkboxes.
+- Missing BWL policies and valid but unresolved Ruins shadow mappings remain pending/promotion blockers for their own cohorts; they do not block unrelated validated Temple/ZG production policies. Missing or invalid required Temple/ZG policy fails the requested artifact, never falls back.
+- The legacy projection contributes P1/P2.1/P2.2 once; the progress projection contributes P3/P4 once. Ruins' shadow and Temple's golden are isolated validation outputs and contribute no duplicate official occurrences.
+- Reversing projection execution order and poisoning same-ID cache writes leaves every cohort's owned output unchanged. Poisoning Temple's retained legacy timing also leaves its progress output unchanged; pinned golden inputs stay independent.
+- Where an item has legacy and progress acquisition alternatives, retain each complete source route and its inherited conditions. Test the composed result, not only the isolated raids.
+
+This is an acceptance contract **after the missing cohort work is supplied**, not a claim that the example manifest/profile currently passes. BWL's unresolved book blocks BWL P3/P4, not all progress adoption. No runtime authority is inferred from a missing key, profile presence or load order. Existing numeric phase controls remain active for legacy-owned routes; the new view controls progress-owned routes. `phaseID` metadata may supply labels but cannot globally alias the two control systems. Raw `u` filtering remains independent of both. Complete inherited route conditions combine with AND; complete alternative acquisition routes combine with OR. No new permanent `authority` field is needed if compiler provenance and the exported condition families preserve this separation.
 
 P2 equality is measured on its **isolated owned legacy output**, not the whole mixed artifact: another P4 cohort may legitimately change that artifact. Also validate the composed artifact so a merge cannot silently alter the protected routes. Delete a shared legacy helper/reader or physical source expression only after its last supported consumer in every affected context has retired; remove the temporary stage manifest only when there is no remaining legacy production path and a separately reviewed final configuration makes progress authority explicit.
 
@@ -1594,7 +1624,7 @@ Acceptance must demonstrate:
 - P2.1 missing policy/selection is diagnostic pending work, while malformed annotations and input leaks fail. P2.2 explicitly selected file/schema/identity errors fail shadow validation. P3 missing/mismatched compile selection fails. Runtime unknown, a merely negative discriminator, conflicting guards, or two applicable profiles produces a visible diagnostic without selecting by load order or falling back to legacy authority.
 - Cross-target zero-hit exceptions require explicit applicability evidence. Missing mappings are pending in P2.1, unresolved coverage in P2.2, and failures under P3 authority; absent required child transitions block promotion.
 - P2.1/P2.2 preserve their owned isolated legacy bytes even beside a P4 cohort. P3 has no legacy-child or missing-policy fallback. Only the temporary manifest selects stage; permanent policy JSON gets no lifecycle field, empty placeholder or implicit unphased fallback.
-- The complete BWL P2.1 + ZG P4 control-file request fails with exact missing ZG coverage/retirement diagnostics against BWL-only policies. After independently supplying the complete ZG gates, the same stage arrangement produces mixed output: unresolved BWL shadow policy does not block valid ZG output.
+- The complete five-cohort manifest reports Ruins P2.2 shadow gaps and rejects Temple P3 / ZG P4 missing coverage/golden/retirement gates against BWL-only policies. After the required work, one fixture and one composed artifact must demonstrate Onyxia P1, BWL P2.1, Ruins P2.2, Temple P3 and ZG P4 simultaneously, including isolated authorities, controls, complete routes and non-shipped shadows/goldens; pairwise-only cases are insufficient.
 - Duplicate/nonexistent/overlapping source ownership and unknown stages fail before Lua execution; new files/writers cannot evade review through default P1. A P4 deletion of a physical source writer shared with another supported P1/P2 context fails; that context cannot silently be rebuilt from a golden snapshot. Separate cohort occurrences of a repeated key cannot satisfy each other's coverage.
 - Both projections are isolated from shared-cache poisoning and order changes; each occurrence is selected exactly once. Legacy checkboxes affect only legacy routes, the new view only progress routes, and mixed same-ID alternatives retain full ancestry and independent u/event conditions.
 - Active/future/removed/unknown/reopened results at every milestone boundary; `4.10` distinct from `4.1`; timestamps absent or region-scoped without implicit advancement.
