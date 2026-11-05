@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 
 namespace ATT
@@ -21,11 +22,13 @@ namespace ATT
         private static Dictionary<string, List<Dictionary<string, object>>> _bindings;
         private static string _addonRoot;
         private static Dictionary<string, long> _bindingCounts;
+        private static ConditionalWeakTable<IDictionary<string, object>, object> _controlledRoutes;
         internal static bool Enabled => _profile != null;
 
         internal static void Initialize(CustomConfiguration config)
         {
             _profile = null;
+            _controlledRoutes = new ConditionalWeakTable<IDictionary<string, object>, object>();
             string profilePath = config["ProgressionProfile"];
             if (string.IsNullOrWhiteSpace(profilePath)) return;
             _profile = ReadObject(profilePath);
@@ -138,6 +141,10 @@ namespace ATT
                     }
                     // A different child phase without an explicit adapter remains legacy u.
                 }
+                // Inherited requirements still control how sibling acquisition nodes can merge.
+                if (scope != null || node.ContainsKey("releasePhases") ||
+                    ancestry.Count > 0 && HasControlledRoute(ancestry[ancestry.Count - 1]))
+                    _controlledRoutes.GetValue(node, _ => new object());
                 ancestry.Add(node);
                 foreach (var child in node.Where(p => p.Key == "g" || p.Key == "groups" || p.Key == "aqd" || p.Key == "hqd").Select(p => p.Value).ToArray())
                     VisitValue(child, ancestry, scope, source, bindings);
@@ -171,12 +178,38 @@ namespace ATT
             if (!requirements.Contains(phase)) requirements.Add(phase);
         }
 
+        private static bool HasControlledRoute(IDictionary<string, object> node) =>
+            node.ContainsKey("releasePhases") || _controlledRoutes.TryGetValue(node, out _);
+
+        internal static void PreserveRouteScope(IDictionary<string, object> target, IDictionary<string, object> source)
+        {
+            if (Enabled && HasControlledRoute(source))
+                _controlledRoutes.GetValue(target, _ => new object());
+        }
+
         internal static bool SameRequirements(IDictionary<string, object> left, IDictionary<string, object> right)
         {
             left.TryGetValue("releasePhases", out List<object> a);
             right.TryGetValue("releasePhases", out List<object> b);
-            if (a == null || b == null) return a == b;
-            return new HashSet<string>(a.Cast<string>()).SetEquals(b.Cast<string>());
+            bool sameReleases = a == null || b == null ? a == b : new HashSet<string>(a.Cast<string>()).SetEquals(b.Cast<string>());
+            return sameReleases && ((!HasControlledRoute(left) && !HasControlledRoute(right))
+                || (SameCondition(left, right, "u") && SameCondition(left, right, "e") && SameCondition(left, right, "phase")));
+        }
+
+        private static bool SameCondition(IDictionary<string, object> left, IDictionary<string, object> right, string field)
+        {
+            bool hasLeft = TryGetCondition(left, field, out long leftValue);
+            bool hasRight = TryGetCondition(right, field, out long rightValue);
+            return hasLeft == hasRight && (!hasLeft || leftValue == rightValue);
+        }
+
+        private static bool TryGetCondition(IDictionary<string, object> node, string field, out long value)
+        {
+            if (node.TryGetValue(field, out value)) return true;
+            if (field == "phase") return false;
+            foreach (var pair in node)
+                if (Framework.ConvertFieldName(pair.Key) == field && pair.Value.TryConvert(out value)) return true;
+            return false;
         }
 
         internal static Dictionary<string, object> ExportProfile()

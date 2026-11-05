@@ -9,7 +9,7 @@ public static class TitanParserIntegration
 {
     private const BindingFlags Flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static;
     private static Assembly assembly;
-    private static Type framework, catalog, program, json, titan;
+    private static Type framework, catalog, program, json, titan, objects;
     private static string root, temp;
     private static int checks;
     private static object Invoke(Type type, string method, params object[] args)
@@ -50,16 +50,35 @@ public static class TitanParserIntegration
     private static object Config { get { return framework.GetProperty("Config", Flags).GetValue(null, null); } }
     private static void Load(string name, Dictionary<string, object> changes = null)
     {
+        framework.GetProperty("Config", Flags).SetValue(null, null, null);
         framework.GetField("_preprocessorTags", Flags).SetValue(null, null);
-        Invoke(framework, "InitConfigSettings", "../.db/standard/.config/retail/retail.config", true);
-        Invoke(framework, "InitConfigSettings", "../.db/standard/.config/classic/" + name + ".config", false);
         Invoke(framework, "InitConfigSettings", "../.db/shared/.config/root.config", false);
+        Invoke(framework, "InitConfigSettings", "../.db/standard/.config/retail/retail.config", false);
+        Invoke(framework, "InitConfigSettings", "../.db/standard/.config/classic/" + name + ".config", true);
         if (changes != null)
         {
             string path = Path.Combine(temp, "override.config"); Write(path, changes);
             Invoke(framework, "InitConfigSettings", path, false);
         }
         Invoke(framework, "ApplyConfigSettings");
+        var config = Config;
+        var indexer = config.GetType().GetProperty("Item", BindingFlags.Instance | BindingFlags.NonPublic, null, null, new[] { typeof(string) }, null);
+        foreach (string fieldName in new[] { "SINGULAR_PLURAL_FIELDS_LONG", "NON_SORTED_FIELDS", "PASS_THRU_FIELDS" })
+        {
+            var field = objects.GetField(fieldName, Flags);
+            var value = indexer.GetValue(config, new object[] { fieldName });
+            var convert = value.GetType().GetMethods(Flags).Single(m => m.Name == "op_Implicit" && m.ReturnType == field.FieldType);
+            field.SetValue(null, convert.Invoke(null, new[] { value }));
+        }
+    }
+    private static List<IDictionary<string, object>> MergeRoutes(params IDictionary<string, object>[] sources)
+    {
+        var merge = objects.GetMethods(Flags)
+            .Single(m => m.Name == "Merge" && m.IsGenericMethodDefinition && m.GetGenericArguments().Length == 1)
+            .MakeGenericMethod(typeof(object));
+        var result = new List<object>();
+        foreach (var source in sources) merge.Invoke(null, new object[] { result, source });
+        return result.Cast<IDictionary<string, object>>().ToList();
     }
     private static string Process(string relative)
     {
@@ -93,6 +112,8 @@ public static class TitanParserIntegration
         program = assembly.GetType("ATT.Program", true);
         json = assembly.GetType("MiniJSON.Json", true);
         titan = assembly.GetType("ATT.TitanProfile", true);
+        objects = framework.GetNestedType("Objects", BindingFlags.Public);
+        Invoke(assembly.GetType("ATT.Export", true), "Initialize");
         temp = Path.Combine(Path.GetTempPath(), "att-titan-integration-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(temp);
         framework.GetProperty("Automated", Flags).SetValue(null, true, null);
@@ -162,6 +183,36 @@ public static class TitanParserIntegration
             var differentRoute = D("releasePhases", L("wrath:3"));
             Assert(!(bool)Invoke(catalog, "SameRequirements", wrath, differentRoute), "different acquisition requirements cannot flatten into one Parser source");
             Assert((bool)Invoke(catalog, "SameRequirements", wrath, D("releasePhases", L("wrath:2"))), "equivalent acquisition requirements can merge");
+
+            var removedRoute = D("itemID", 25L, "releasePhases", L("wrath:2"), "u", 2L, "e", 1L);
+            var eventRoute = D("itemID", 25L, "releasePhases", L("wrath:2"), "e", 2L);
+            var distinct = MergeRoutes(removedRoute, eventRoute);
+            Assert(distinct.Count == 2 && (long)distinct[0]["u"] == 2 && (long)distinct[0]["e"] == 1
+                && !distinct[1].ContainsKey("u") && (long)distinct[1]["e"] == 2,
+                "same-release item alternatives retain their own event and unavailable conditions");
+            Assert(MergeRoutes(removedRoute, D("itemID", 25L, "releasePhases", L("wrath:2"), "un", 2L, "event", 1L)).Count == 1,
+                "field aliases merge with equivalent canonical route conditions");
+
+            foreach (string field in new[] { "u", "e", "phase" })
+            {
+                var restricted = D("itemID", 25L, field, 2L);
+                var available = D("itemID", 25L);
+                var parent = Bind(ulduarPath, D("instanceID", 759L, "u", 31L, "g", L(restricted, available, D("itemID", 25L))));
+                var children = (List<object>)MergeRoutes(parent).Single()["g"];
+                Assert(children.Count == 2 && (long)((IDictionary<string, object>)children[0])[field] == 2
+                    && !((IDictionary<string, object>)children[1]).ContainsKey(field),
+                    "inherited release retains distinct " + field + " routes and merges equivalent routes");
+
+                var copy = MergeRoutes(restricted).Single();
+                Assert(MergeRoutes(copy, D("itemID", 25L)).Count == 2,
+                    "merging a copied inherited route still preserves " + field);
+            }
+            Assert(MergeRoutes(D("itemID", 25L, "u", 2L), D("itemID", 25L)).Count == 1,
+                "unmapped sources retain the existing merge with a profile");
+
+            Load("02 - TBC");
+            Assert(MergeRoutes(D("itemID", 25L, "u", 2L), D("itemID", 25L)).Count == 1,
+                "a build without a profile retains the existing merge");
 
             Load("01 - Classic Era");
             var legacy40 = D("difficultyID", 9L, "u", 11L);

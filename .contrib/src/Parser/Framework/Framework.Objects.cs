@@ -752,7 +752,9 @@ namespace ATT
                 //LogDebug($"Post Process Merge Added: {key}:{keyValue}", data);
                 // Processing on groups happens IN PARALLEL so if we are adding content to be post-merged during that pass
                 // we will order them based on their keyvalue to ensure consistency between parses
-                mergeObjects.Add(new Dictionary<string, object>(data));
+                var copy = new Dictionary<string, object>(data);
+                ProgressionCatalog.PreserveRouteScope(copy, data);
+                mergeObjects.Add(copy);
             }
 
             /// <summary>
@@ -2329,6 +2331,8 @@ end");
                 if (ReferenceEquals(item, data))
                     return;
 
+                ProgressionCatalog.PreserveRouteScope(item, data);
+
                 // don't merge _drop fields into a data which defines those fields to be dropped
                 foreach (var pair in data.WithoutDrops(item)) Merge(item, pair.Key, pair.Value);
             }
@@ -2416,6 +2420,8 @@ end");
                             // split into two separate quest objects
                             IDictionary<string, object> aQuest = new Dictionary<string, object>();
                             IDictionary<string, object> hQuest = new Dictionary<string, object>();
+                            ProgressionCatalog.PreserveRouteScope(aQuest, data2);
+                            ProgressionCatalog.PreserveRouteScope(hQuest, data2);
 
                             // remove the faction-specific objects
                             data2.Remove("aqd");
@@ -2507,7 +2513,7 @@ end");
                     return null;
                 }
 
-                // Keep different acquisition-release routes separate while merging equal IDs.
+                // Keep the availability conditions of different controlled acquisition routes separate.
                 if (ProgressionCatalog.Enabled)
                     container = container.Where(value => !(value is IDictionary<string, object> candidate) || ProgressionCatalog.SameRequirements(candidate, data2));
 
