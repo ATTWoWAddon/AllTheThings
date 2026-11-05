@@ -1569,6 +1569,28 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 		CostRunner.Run(CollectibleAsCost, quest)
 	end
 end)
+app.GlobalVariants.AndMaxReputation = {
+	__name = "AndMaxReputation",
+	__condition = function(t)
+		return t.maxReputation
+	end,
+	description = QuestWithReputationDescription,
+	collectibleAsCost = app.CollectibleAsCost,
+	costCollectibles = function(t)
+		return QuestWithReputationCostCollectibles[t]
+	end,
+}
+
+app.GlobalVariants.Combine(
+	app.GlobalVariants.AndLockCriteria,
+	app.GlobalVariants.AndMaxReputation)
+app.GlobalVariants.Combine(
+	app.GlobalVariants.WithAutoName,
+	app.GlobalVariants.AndMaxReputation)
+app.GlobalVariants.Combine(
+	app.GlobalVariants.AndLockCriteriaWithAutoName,
+	app.GlobalVariants.AndMaxReputation)
+
 local createQuest = app.CreateClass("Quest", "questID", {
 	CACHE = function() return CACHE end,
 	AsyncRefreshFunc = function()
@@ -1688,19 +1710,16 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	indicatorIcon = GetQuestIndicator,
 	variants = {
+		app.GlobalVariants.AndLockCriteriaWithAutoNameAndMaxReputation,
+		app.GlobalVariants.AndLockCriteriaAndMaxReputation,
+		app.GlobalVariants.WithAutoNameAndMaxReputation,
 		app.GlobalVariants.AndLockCriteriaWithAutoName,
 		app.GlobalVariants.AndLockCriteria,
 		app.GlobalVariants.WithAutoName,
+		app.GlobalVariants.AndMaxReputation,
 	}
 },
-"WithReputation", {
-	description = QuestWithReputationDescription,
-	collectibleAsCost = app.CollectibleAsCost,
-	costCollectibles = function(t)
-		return QuestWithReputationCostCollectibles[t]
-	end,
-}, (function(t) return t.maxReputation; end),
-"WithBonusReputation", {
+"AsBonusReputation", {
 	RootConstructor = "CreateHQTBonusRep",
 	CollectibleType = function() return "QuestsHidden" end,
 	isHQT = app.ReturnTrue,
@@ -1712,11 +1731,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		local name = QuestBonusReputationFormat:format(faction.name, parent.name)
 		t.name = name
 		return name
-	end,
-	description = QuestWithReputationDescription,
-	collectibleAsCost = app.CollectibleAsCost,
-	costCollectibles = function(t)
-		return QuestWithReputationCostCollectibles[t]
 	end,
 }, (function(t) return t.type == "hqtbr"; end),
 "AsHQT", {
