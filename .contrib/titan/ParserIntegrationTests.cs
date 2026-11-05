@@ -104,6 +104,21 @@ public static class TitanParserIntegration
     {
         return D("instanceID", 759L, "u", 31L, "g", L(D("itemID", 25L, "u", 31L), D("itemID", 35L, "u", 1L), D("itemID", 36L, "u", 2L), D("itemID", 37L, "u", 3L), D("itemID", 38L, "u", 3001L), D("itemID", 39L, "u", 32L)));
     }
+    public static int Main(string[] args)
+    {
+        try
+        {
+            if (args.Length != 2) throw new ArgumentException("Expected the repository root and the CI-built Parser.exe path.");
+            if (IntPtr.Size != 8) throw new InvalidOperationException("The Parser fixture must run as a 64-bit process.");
+            Run(args[0], Assembly.LoadFrom(args[1]));
+            return 0;
+        }
+        catch (Exception error)
+        {
+            Console.Error.WriteLine(error);
+            return 1;
+        }
+    }
     public static int Run(string repoRoot, Assembly parserAssembly)
     {
         root = repoRoot; assembly = parserAssembly; checks = 0;
