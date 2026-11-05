@@ -202,8 +202,7 @@ Move complete fields with their values and attached annotations. Inspect express
 | String table key that is a valid non-keyword Lua 5.1 identifier | Use `key = ...`. Retain bracket syntax for other keys. |
 | Race/class ID value | Use an existing predefined constant after checking its value and context. Preserve scalar/array shape and other numeric domains. |
 | Comma followed by more code on the same line | Use one space. An inline comment is handled by the comment-gap policy. |
-| Brace next to actual data on the same line | Use `{ data }` spacing. Outside cost tables, preserve adjacent-brace spacing rather than introducing gaps solely between braces. Empty tables have no data boundary to adjust. |
-| Cost table brace boundaries | Leave a space inside every populated level, including adjacent nested tables: `cost = { { "i", itemID, quantity } },`. |
+| Table-brace token boundaries | When the next Lua token follows `{` on the same line, use one space between them; when the previous Lua token precedes `}` on the same line, use one space between them. This includes empty `{ }` tables and adjacent nested braces, inside and outside cost tables, such as `cost = { { "i", itemID, quantity } },`. Preserve multiline indentation and brace placement; do not change braces inside strings or comments. |
 | Simple `cost`, `provider`, or `providers` table | Put it on one line when the whole value and its annotations can be preserved. Per-entry comments, independent comments, Parser branches, or complex expressions retain the structure they need. |
 
 ### 6.2 Determine separators from syntax and field role
