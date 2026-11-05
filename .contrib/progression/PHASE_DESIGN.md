@@ -2,7 +2,9 @@
 
 **Status: proposed; implementation requires maintainer approval. This PR contains only this document.** No runtime, Parser, configuration, test, database, or binary implementation is included.
 
-The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a975132e9`. The [unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee) is reference material, not a dependency or implementation of this design. Its positive-only `releasePhases`/independent-checkbox proposal is superseded here.
+The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a975132e9`. The [unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee) is reference material, not a dependency or implementation of this design. Its positive-only `releasePhases`/independent-checkbox proposal is superseded here. Research cutoff: 2026-11-05. The complete declaration/configuration inventory was also compared with master `9dba6e6d3faa901ae63fe6f0c744cc76415e2b2c`; the 14 relevant source blobs are unchanged.
+
+**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2c explains how this replaces schedule-only `SEASON_OF_DISCOVERY` pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
 
 ## 1. Required destination and four stages
 
@@ -52,17 +54,17 @@ Keep **what can be obtained and from which actual source** in Lua. Place the sch
 - Shared NPC/item IDs do not prove that two sources are the same. Existing SoD variants and different vendor/reward occurrences remain separate.
 - Repeated keys are allowed when occurrences intentionally share policy. The key is not a merge identity.
 
-The only new **authored acquisition field** is `progressionKey` (the “progress field” in this plan). There is no alias named `progress`, `fallbackPhase`, or a replacement numeric phase field.
+**Two distinct input fields have different jobs:** `progressionKey` is the scheduling key (the “progress field”); optional `flavors` restricts which gameplay flavors an actual acquisition subtree belongs to. Shared sources omit `flavors`. Neither field is a global item/NPC identity. There is no alias named `progress`, `fallbackPhase`, or replacement numeric phase field.
 
 | Data layer | Fields and responsibility |
 | --- | --- |
-| Authored acquisition Lua | `progressionKey`: one nonempty string on a source scope. Existing `u`, `e`, timeline, level, and other non-phase conditions keep their meaning. |
+| Authored acquisition Lua | `progressionKey`: one nonempty scheduling key; optional `flavors`: a nonempty, duplicate-free array of explicit flavor IDs on a complete acquisition scope. Existing `u`, `e`, timeline, level, and other non-phase conditions keep their meaning. |
 | Transitional legacy inputs | `phase`, `applyclassicphase`, numeric recipe-phase parameters, and phase-driven callback code exist only as specified by stages 1–3. They are retired in stage 4. |
 | Generated acquisition routes | `progressionScopes`: an array of namespaced policy keys. Parser creates it; authors do not write it directly. |
 | Generated `LocalizationDB.lua` | `app.ProgressionProfile`: compiled ordered milestones, scope windows, and view defaults. No positive-only `releasePhases` schema is introduced. |
 | Saved settings | One saved `viewPhase` under the `(flavorId, profileId)` pair, plus inspection controls. Existing numeric SavedVariables are retained as legacy history/raw unavailable settings, not interpreted as a chronology. |
 
-Input markers never leak into addon output. A neutral hint may pass through a source-generation sidecar before becoming an actual acquisition annotation; it must not become a global rule that rewrites every same-ID item/NPC source.
+Both input fields are removed before addon export; neither may leak into output. A neutral hint may pass through a source-generation sidecar before becoming an actual acquisition annotation; it must not become a global rule that rewrites every same-ID item/NPC source.
 
 ## 2a. Identity and policy selection: flavor is not expansion
 
@@ -81,13 +83,13 @@ The existing Era and SoD configurations use the same `DataPatch` (`[1,15,9,70576
 
 This plan uses the eight current design families specified for ATT: **Retail (`retail`), progression (`progression`), Anniversary (`anniversary`), SoD (`sod`), Era (`era`), Hardcore (`hardcore`), Forever (`forever`), and Titan (`titan`)**. These are the agreed design categories, not a claim that all eight have verified live support. **Season of Mastery (`som`) is a separate historical flavor.** The historical list is not exhaustive; eight listed families plus SoM is not a claim that only nine flavors have ever existed.
 
-Retail PTR is `retail` on a test channel, not another flavor. A channel may still select different source data or a different reviewed profile; sharing the flavor ID does not force it to share a database or schedule. Expansions such as TBC and Wrath are separate from this list. In particular, an expansion-named target must not automatically select `progression`: the existing TBC configuration includes an Anniversary tag.
+**Retail is outside this phase project.** Its existing behavior is preserved without a `retail/main.json` stub or new phase-policy gate. Retail PTR remains the Retail flavor on a test channel, not another flavor. For the in-scope families, a channel may select different source data or a separately reviewed profile. Expansions such as TBC and Wrath are separate from this list. In particular, an expansion-named target must not automatically select `progression`: the existing TBC configuration includes an Anniversary tag.
 
 Different opening timelines within a family use distinct profile IDs when needed. For example, original and Anniversary Hardcore can remain within `hardcore` while selecting different reviewed profiles; they do not add another current flavor to this list. `main` below is only the proposed initial profile filename, not evidence that one profile covers every context.
 
 Historical classification is documentation, not a new runtime lifecycle field. It does not rewrite SoM's source identity, windows, or `u` conditions. A historical `som` profile supports explicit replay, inspection, and independent golden tests; an unknown live context must never fall back to it. Shared preprocessing tags are not flavor identity: SoD's configuration also contains the `SOM` preprocessing tag, which does not make SoD and SoM the same flavor.
 
-The concrete proposed profile paths appear in section 9. The flavor names are now fixed for this design; complete historical coverage and verified target/runtime/profile bindings remain evidence work.
+The concrete profile paths appear in section 9. Section 11 now plans the complete published phase groups for the seven in-scope current families and historical SoM; Appendix D accounts for every repository declaration and alias. Unknown individual dates, realm-state evidence, and runtime selectors are labeled explicitly rather than deleting their scope from the plan.
 
 ### One selected context, one artifact, one profile
 
@@ -154,9 +156,7 @@ This is an abbreviated **stage-4 shape**, after retiring legacy phase assignment
 
 ```lua
 inst(741, { -- Molten Core
-    -- #if NOT SEASON_OF_DISCOVERY
-    progressionKey = "raid.mc.common",
-    -- #endif
+    progressionKey = "raid.mc.common", -- Shared container; each profile supplies its policy.
     groups = {
         -- Existing shared entries retain their own source conditions.
         -- Keep the existing legacy 40-player block here as well, including
@@ -165,6 +165,7 @@ inst(741, { -- Molten Core
         -- #if SEASON_OF_DISCOVERY
         d(DIFFICULTY.SOD.PLAYER20, {
             progressionKey = "raid.mc.sod20",
+            flavors = { "sod" },
             timeline = { ADDED_1_15_3 }, -- Existing client/source condition.
             groups = {
                 -- Existing SoD bosses and rewards stay here, unchanged.
@@ -175,11 +176,11 @@ inst(741, { -- Molten Core
 })
 ```
 
-The source says **which acquisition scope this is**. There is no opening phase number in this final authored form. Existing later-boss/drop transitions require their own keys; they must not disappear when their old wrappers are removed.
+The source says **which acquisition scope this is**. There is no opening phase number in this final authored form. The complete SoD subtree declares its applicability; its existing pragma is retained here until safe construction of its difficulty constants/wrappers is proven, as section 2c requires. Existing later-boss/drop transitions require their own keys; they must not disappear when their old wrappers are removed.
 
 The current source also retains the old 40-player content under SoD with its removal timeline. Keep that historical data and condition; selecting SoD does not authorize deleting it. The SoD 20-player scope is a separate addition.
 
-The `NOT SEASON_OF_DISCOVERY` branch is an existing source-selection convention, not proof that every non-SoD client is Era. This example is limited to two explicitly selected contexts. Every other context using that source requires its own reviewed policy coverage.
+The original negative pragma around the common scheduling key is removed. Both selected contexts recognize the neutral parent key: Era opens the original scope at its launch milestone; SoD keeps the parent neutral from `start`, while the SoD20 child opens later. Existing legacy40 removal and other intrinsic conditions remain intact. Every other context requires its own reviewed policy coverage.
 
 ### 2. Proposed Era policy
 
@@ -191,20 +192,20 @@ File: `.contrib/.db/shared/.config/progression/era/main.json`
     "flavorId": "era",
     "id": "main",
     "mode": "phased",
-    "defaultView": "1",
+    "defaultView": "vanilla.1",
     "phases": {
-        "1": { "order": 1 }
+        "vanilla.1": { "order": 1, "name": { "en": "Phase 1" } }
     },
     "content": {
         "raid.mc.common": {
-            "windows": [{ "from": "1" }]
+            "windows": [{ "from": "vanilla.1" }]
         }
     },
     "verificationStatus": "illustrative"
 }
 ```
 
-This means the original Molten Core scope opens at the selected Era profile's milestone `1`. `defaultView` is only an example display default; it is not a statement about the live server's current progress.
+This means the original Molten Core scope opens at the selected Era profile's milestone `vanilla.1`. `defaultView` is only an example display default; it is not a statement about the live server's current progress.
 
 ### 3. Proposed SoD policy
 
@@ -216,21 +217,22 @@ File: `.contrib/.db/shared/.config/progression/sod/main.json`
     "flavorId": "sod",
     "id": "main",
     "mode": "phased",
-    "defaultView": "3",
+    "defaultView": "vanilla.4",
     "phases": {
-        "3": { "order": 1 },
-        "4": { "order": 2 }
+        "vanilla.4": { "order": 1, "name": { "en": "Phase 4 update" } },
+        "vanilla.4.raids": { "order": 2, "name": { "en": "Phase 4 raids" } }
     },
     "content": {
+        "raid.mc.common": { "windows": [{ "from": "start" }] },
         "raid.mc.sod20": {
-            "windows": [{ "from": "4" }]
+            "windows": [{ "from": "vanilla.4.raids" }]
         }
     },
     "verificationStatus": "illustrative"
 }
 ```
 
-This means the SoD 20-player scope is future at this profile's `3` and opens at its `4`. Era's `1` and SoD's `4` are not compared. Their identical content-expansion classification does not make them share a schedule or a loot table.
+This means the SoD 20-player scope is future at the July 11 phase-4 update (`vanilla.4`) and opens in the July 25 raid batch (`vanilla.4.raids`). The neutral parent does not override its historical legacy40 removal timeline. This finer opening is sourced in section 11, not inferred from the old numeric phase-4 assignment. Era's `vanilla.1` and SoD's `vanilla.4.raids` are not compared. Their identical content-expansion classification does not make them share a schedule or a loot table.
 
 These are complete JSON examples for the shown scopes, **not complete production policies** for the real Era/SoD datasets. All other emitted keys and independent transitions still require coverage.
 
@@ -274,14 +276,15 @@ app.ProgressionProfile = {
     flavorId = "sod",
     id = "main",
     mode = "phased",
-    defaultView = "3",
+    defaultView = "vanilla.4",
     phases = {
-        ["3"] = { order = 1, name = { en = "Phase 3" } },
-        ["4"] = { order = 2, name = { en = "Phase 4" } },
+        ["vanilla.4"] = { order = 1, name = { en = "Phase 4 update" } },
+        ["vanilla.4.raids"] = { order = 2, name = { en = "Phase 4 raids" } },
     },
     content = {
+        ["sod:main:raid.mc.common"] = { windows = { { from = "start" } } },
         ["sod:main:raid.mc.sod20"] = {
-            windows = { { from = "4" } },
+            windows = { { from = "vanilla.4.raids" } },
         },
     },
 }
@@ -291,27 +294,69 @@ The actual generated SoD acquisition node would retain its ordinary fields and c
 
 ```lua
 progressionScopes = {
+    "sod:main:raid.mc.common",
     "sod:main:raid.mc.sod20",
 },
 ```
 
-It would not contain the input-only `progressionKey`. The namespace selects this profile's policy; it does not identify or merge NPCs/items. The displayed state still respects all other source conditions.
+It would contain neither input-only `progressionKey` nor `flavors`. The parent and child windows both apply. The namespace selects this profile's policy; it does not identify or merge NPCs/items. The displayed state still respects all other source conditions.
 
 | Selected profile | Selected view | Shown scope | Schedule result |
 | --- | --- | --- | --- |
-| `era:main` | `1` | Original Molten Core | Active |
-| `sod:main` | `3` | SoD 20-player Molten Core | Future |
-| `sod:main` | `4` | SoD 20-player Molten Core | Active |
+| `era:main` | `vanilla.1` | Original Molten Core | Active |
+| `sod:main` | `vanilla.4` | SoD 20-player Molten Core | Future |
+| `sod:main` | `vanilla.4.raids` | SoD 20-player Molten Core | Active |
 
 Changing the SoD window edits the SoD JSON. Changing the SoD reward list edits its actual Lua source branch. Neither operation edits the Era schedule automatically.
 
 ### Still required before production
 
-The eight current design families are `retail`, `progression`, `anniversary`, `sod`, `era`, `hardcore`, `forever`, and `titan`. Historical `som` is a separate stable identity. This is the agreed design scope, not an exhaustive count of every historical flavor or a claim that all listed families are verified live today. Retail PTR is the `retail` flavor on a test channel, not another flavor; the channel may still need different source data or a separately selected schedule.
+The eight current design families are `retail`, `progression`, `anniversary`, `sod`, `era`, `hardcore`, `forever`, and `titan`. Historical `som` is a separate stable identity. This is the agreed design scope, not an exhaustive count of every historical flavor or a claim that all listed families are verified live today. Retail PTR remains a channel, not another flavor; Retail phase planning is excluded. In-scope flavors may select different reviewed profiles for distinct channel/realm schedules.
 
-The complete historical inventory and actual runtime/profile bindings remain unfinished. A shared family such as `hardcore` does not choose one timeline by itself: original and Anniversary Hardcore can require different schedule profiles within that family. Historical SoM must retain its own source identity, windows, unavailable conditions, and golden evidence; it is not an automatic fallback for an unknown live context.
+Section 11 and Appendix D supply the full planned phase/declaration inventory; unresolved historical endpoints and actual runtime/profile bindings remain explicitly marked evidence work. A shared family such as `hardcore` does not choose one timeline by itself: original and Anniversary Hardcore can require different schedule profiles within that family. Historical SoM must retain its own source identity, windows, unavailable conditions, and golden evidence; it is not an automatic fallback for an unknown live context.
 
-These examples connect concrete files. They do not supply missing live-client evidence or implement the Parser/runtime. Era's and SoD's shown opening values reflect repository assumptions, not new in-game verification.
+These examples connect concrete files. They do not supply missing live-client evidence or implement the Parser/runtime. The occurrence data comes from the repository; section 11 supplies the SoD raid-opening announcement. Neither substitutes for record-level in-game evidence.
+
+## 2c. Fewer Parser-facing `SEASON_OF_DISCOVERY` pragmas
+
+The goal is **zero schedule-only `SEASON_OF_DISCOVERY` pragmas in migrated production data**, not a promise that Lua code can always execute without technical guards. Do not replace `#if SEASON_OF_DISCOVERY` with an equally opaque generic pragma.
+
+`flavors = { "sod" }` belongs on a complete acquisition subtree. Omission means shared applicability within already validated selected contexts. An explicit array must contain known flavor IDs, cannot be empty, and rejects duplicates. Ancestor and child allowlists intersect: a child cannot reopen an excluded parent. The scheduling key remains independent; two flavors may use the same neutral key with different policies, and two same-ID sources may have different keys/data. This field does not choose a profile, a realm, a date, or a loot replacement.
+
+**Required ordering:** validate the output context → safely construct the selected source trees → apply inherited flavor applicability → bind only retained occurrences to policy/coverage → merge/coalesce/index occurrences → export without either input field. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
+
+```lua
+-- Illustrative complete-group variant, with synthetic IDs.
+-- Before: a source-data block hidden behind a `SEASON_OF_DISCOVERY` pragma.
+-- #if SEASON_OF_DISCOVERY
+n(900001, { groups = { i(900002) } }),
+-- #endif
+
+-- After: applicability is data; opening/removal is external policy.
+n(900001, {
+    flavors = { "sod" },
+    progressionKey = "example.raid.extra-boss",
+    groups = { i(900002) },
+}),
+-- An adjacent shared boss omits flavors and keeps its own source data.
+```
+
+The example does not invent real bosses or rewards. In the actual Molten Core file, the complete SoD20 subtree is a candidate for this treatment. Its legacy40 wrapping/removed timeline is structurally different; do not invent a 40-player wrapper for Era merely to remove a conditional. Do not replace field-level loot patches or asymmetric constructor fragments with an invented complete node.
+
+| Existing directive purpose | End-state treatment | Required proof |
+| --- | --- | --- |
+| Opening/later drop/removal/reopening only | External windows on the appropriate occurrence; remove timing pragma and legacy phase writer. | Independent boundary golden and child coverage; no old-value fallback. |
+| Complete SoD-only boss/reward/acquisition subtree | `flavors` on that subtree, with unchanged data and explicit policy. | Prune before coalescing/ID lookup; same-ID alternatives and mixed shared/variant trees remain correct. |
+| Field replacement, incompatible constructor/wrapper, or source-generation branch | First reconstruct equivalent complete source occurrences where safe; otherwise retain a documented exception. | No accidental union of mutually exclusive loot/fields and no altered non-SoD structure. |
+| Missing Lua API/constant, executable helper, import, or incompatible syntax | Retain the necessary technical pragma or select safe files through configuration. | Lua executes before the data filter: a rejected subtree cannot prevent an undefined function/constant from being evaluated. |
+
+The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` sites in 131 DB source files** (1,640 positive, 24 negative), not 1,664 removable guards. Classify each block as timing, source applicability, mixed, or technical before promising a removal count. The temporary migration report lists each retained exception with source location, reason, and regression coverage; it is not a permanent path-based policy registry. No automatic classifier may call a mixed block schedule-only.
+
+The conservative syntax triage covers all 1,664 groups: 2 phase-metadata/alias blocks, 327 field patches, 1,263 data/structure blocks, 35 program/callback blocks, 21 constructor/wrapper fragments, 4 closing fragments, and 12 string/comment/empty blocks. These are syntax categories, **not a semantic count of removable timing guards**. Of the total, 38 occur in shared preload, 10 in global ItemDB/RecipeDB sources, and 1,616 in authored acquisition trees. Input acquisition fields cannot be applied blindly to preload/global-record code. Eleven groups are implied true and four false by enclosing conditions; even those require branch-preserving review. The implementation's temporary report retains all 131 file locations and exact block spans for audit.
+
+During stage 2 the applicability pass is shadow validation only; official legacy bytes remain identical. Stage 3 activates reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
+
+Acceptance includes zero remaining **schedule-only** `SEASON_OF_DISCOVERY` directives in the completed cohort; every remaining `SEASON_OF_DISCOVERY` directive has a justified structural/technical exception; no `flavors`/`progressionKey` leaks; no excluded-source merge or pre-merge cache influence (poison an excluded same-ID variant and prove retained ItemDB/RecipeDB/header/event/output values are unchanged); no invented source data; and byte/semantic regression checks for all affected contexts, including unchanged Retail.
 
 ## 3. Opening, later additions, removal, and reopening
 
@@ -463,7 +508,7 @@ Reusing the same profile on another target requires eligibility review for that 
 
 `activation`, when present, is an array of objects. Each record has exactly four required nonempty string fields: `at` (an ISO-8601 timestamp with explicit UTC/offset), `region`, `realm`, and `evidence`. Extra properties are rejected. Region/realm values identify the actual applicable scope; an explicit `"all"` requires evidence of global applicability. `evidence` identifies an accessible supporting screenshot/report or source link. Absence of a record means timing is not established. These metadata fields do not determine window endpoints or select the view.
 
-The initial validation inventory in this plan covers target entries labeled Retail, Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. A missing UI does **not** imply missing policy authority.
+The initial phase validation inventory covers target entries labeled Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever; Retail is excluded from phase changes and retains an unchanged-output regression check. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. A missing UI does **not** imply missing policy authority.
 
 In phased mode every emitted acquisition key needs a policy; missing entries remain errors. A profile reused across targets may also describe keys outside one target's selected source set. Zero-hit exceptions require explicit context applicability/exclusion evidence from the reviewed source selection or context-specific eligibility; they cannot be inferred from expansion names or silently skipped. A key expected in that context but absent is an error, including misspellings and missing child transitions. Export only the context-applicable policy subset, preserving the profile's milestone identities; this is selection, not policy inheritance.
 
@@ -499,7 +544,7 @@ Neither stage 3 nor stage 4 may use legacy phase assignments, propagated child v
 | Same inherited restriction repeated by old helpers | Keep it for the unchanged legacy path. | Remove a redundant writer only after proof; no need to invent a key for every repeated call. |
 | Parent and child have different windows | Collect both alongside the legacy form. | Intersect them. A child cannot escape a closed parent. |
 | Repeated A → B → A conditions | Preserve and inventory the actual legacy scopes. | Explicit source scopes/ancestry determine conditions. No legacy-value-based nearest-phase adapter exists. |
-| Build has no phase UI | Still inventory all legacy restrictions. | Requires an explicit policy or verified unphased declaration; absence of UI is not an opt-out. |
+| In-scope context has no phase UI | Still inventory all legacy restrictions. | Requires an explicit policy or verified unphased declaration; absence of UI is not an opt-out. Retail is excluded and unchanged. |
 | Same NPC/item appears in multiple routes | Record every occurrence. | Keep separate windows, `u`, events, and ancestry; sharing an ID does not combine source identity. |
 | A phase-driven callback assigns `u`, `rwp`, or `phase` | Keep original callback as legacy evidence. | Replace only its phase-driven behavior with scope evaluation. Preserve separate level/event/season/unavailable logic. |
 
@@ -554,17 +599,18 @@ The following **NEW files are proposed after approval**. No profile file is adde
 
 | Design coverage | Flavor ID | Proposed new path |
 | --- | --- | --- |
-| Current family: Retail | `retail` | `.contrib/.db/shared/.config/progression/retail/main.json` |
 | Current family: progression | `progression` | `.contrib/.db/shared/.config/progression/progression/main.json` |
 | Current family: Anniversary | `anniversary` | `.contrib/.db/shared/.config/progression/anniversary/main.json` |
 | Current family: SoD | `sod` | `.contrib/.db/shared/.config/progression/sod/main.json` |
 | Current family: Era | `era` | `.contrib/.db/shared/.config/progression/era/main.json` |
-| Current family: Hardcore | `hardcore` | `.contrib/.db/shared/.config/progression/hardcore/main.json` |
-| Current family: Forever | `forever` | `.contrib/.db/shared/.config/progression/forever/main.json` |
+| Hardcore: original launch | `hardcore` | `.contrib/.db/shared/.config/progression/hardcore/original-2023.json` |
+| Hardcore: Anniversary timeline | `hardcore` | `.contrib/.db/shared/.config/progression/hardcore/anniversary-2024.json` |
+| Current family: Forever live | `forever` | `.contrib/.db/shared/.config/progression/forever/main.json` |
+| Forever historical beta channel | `forever` | `.contrib/.db/shared/.config/progression/forever/beta-2026.json` |
 | Current family: Titan | `titan` | `.contrib/.db/shared/.config/progression/titan/main.json` |
 | Historical flavor: Season of Mastery | `som` | `.contrib/.db/shared/.config/progression/som/main.json` |
 
-These are eight listed current design families plus one identified historical flavor, not an exhaustive historical catalog. Additional independently reviewed timelines within a family use their own `<profileId>.json`; this plan does not predeclare their real schedule values or client selectors. It adds no universal registry or lifecycle field.
+These cover seven current families plus historical SoM; Retail has no proposed policy file. Original and Anniversary Hardcore require separate profiles, and Forever beta is separate from its live timeline. Section 11 supplies the full phase/batch planning catalog. Additional independently reviewed timelines use their own `<profileId>.json`; none is automatically selected from an expansion or guessed client value. It adds no universal registry or lifecycle field.
 
 Before implementing stage-2 policies, the context matrix must identify, for each supported invocation: resolved existing configuration, flavor ID, profile ID/path, source variant selection, positive runtime applicability, context-local legacy eligibility decision, and expected/explicitly excluded source keys. The concrete filenames are settled as proposals; their complete contents and actual target/runtime bindings are **not yet verified**. Missing identity/selector evidence blocks promotion of that context. Historical SoM replay uses independently pinned historical inputs, not an assumption that today's SoD configuration reproduces SoM. Unknown live contexts do not select historical policies.
 
@@ -585,7 +631,7 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/progression/Test-Parser.ps1` | Run compiled fixtures against the CI payload and selected policy configuration. |
 | `.contrib/progression/benchmark-progression.lua` | Measure synthetic route-handling overhead with Lua 5.1. |
 | `.contrib/progression/compare-legacy.py` | Compare separate legacy/progress artifacts and boundary behavior; never generate the golden through the new converter. |
-| `.contrib/progression/validate-authoring.py` | Enforce frozen legacy-only allowances, strict cutover coverage, and final writer/helper removal. |
+| `.contrib/progression/validate-authoring.py` | Enforce writer retirement, input-field placement/allowlists, and the reviewed `SEASON_OF_DISCOVERY` directive disposition/exception list. |
 | `.contrib/progression/validate-generated.lua` | Check active/future/removed/unknown/reopened routes at every ordered boundary. |
 | `.contrib/progression/validate-generated.py` | Validate scope windows, per-context policy coverage, generated artifacts, and no input-marker leaks. |
 | `.contrib/src/Parser/ProgressionCatalog.cs` | Read external policies; compile scope windows/eligibility; validate coverage and transition authority. |
@@ -600,7 +646,7 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | --- | --- |
 | `.contrib/.db/forever/.config/forever.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.db/shared/.config/root.config` | Pass through generated `progressionScopes`; no path-selector catalog. |
-| `.contrib/.db/shared/functions/Shortcuts.lua` | Stage 2–3 instrumentation and neutral recipe/source hints; Stage 4 remove phase-writing helpers and numeric recipe-phase input. |
+| `.contrib/.db/shared/functions/Shortcuts.lua` | Document `progressionKey`/`flavors` on ATTObject; prevent excluded helper calls from mutating shared caches; stage 2–3 instrumentation and neutral recipe/source hints; Stage 4 remove phase-writing helpers and numeric recipe-phase input. |
 | `.contrib/.db/shared/lib/Constants/Phases.lua` | Retain canonical phase metadata and fill missing labels; remove no metadata merely because writers retire. |
 | `.contrib/.db/shared/lib/Functions/Function Templates.lua` | Replace phase-driven callback/tooltip paths with scope-aware progress queries while retaining independent conditions. |
 | `.contrib/.db/standard/.config/classic/01 - Classic Era.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
@@ -609,14 +655,13 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/.db/standard/.config/classic/03 - Wrath.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.db/standard/.config/classic/04 - Cataclysm.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.db/standard/.config/classic/05 - Mists of Pandaria.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
-| `.contrib/.db/standard/.config/retail/retail.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.tools/Parser.exe` | Replace with the CI-built executable matching the committed C# source. |
-| `.contrib/src/Parser/Framework/Framework.Merge.cs` | Apply annotation processing before merging source nodes. |
+| `.contrib/src/Parser/Framework/Framework.Merge.cs` | Prune source applicability before any coalescing/identity lookup; bind selected occurrence policies before merging. |
 | `.contrib/src/Parser/Framework/Framework.Objects.cs` | Preserve complete source conditions through matching, merging, and copies. |
 | `.contrib/src/Parser/Framework/Framework.Processing.cs` | Preserve build/timeline eligibility without authored phase; enforce retired-authoring gates. |
 | `.contrib/src/Parser/Framework/Framework.cs` | Initialize profile processing and export the generated profile. |
 | `.contrib/src/Parser/MiniJSON.cs` | Add profile-only duplicate-property rejection; leave other readers unchanged. |
-| `.contrib/src/Parser/Program.cs` | Select legacy/progress compilation authority and isolate phase metadata/input state. |
+| `.contrib/src/Parser/Program.cs` | Select compilation authority/context before executing side-effectful inputs; isolate source evaluation/staging and phase metadata so excluded variants cannot contaminate shared state. |
 | `.github/workflows/Parser.yml` | Run staged legacy/progress authorities in fresh processes, coverage of the reviewed output contexts for the initially listed build-target entries and any additional supported contexts, boundary checks, and provenance artifacts. |
 | `AllTheThings.toc` | Load the new progression module before source-handling modules. |
 | `src/Classes/base.lua` | Preserve acquisition conditions when cloning base objects. |
@@ -651,11 +696,267 @@ Acceptance must demonstrate:
 - Active/future/removed/unknown/reopened results at every milestone boundary; `4.10` distinct from `4.1`; timestamps absent or region-scoped without implicit advancement.
 - Dungeon/child intersection and alternative-route union; a removed boss cannot expose its child's later drop; another valid source for that item remains usable.
 - Independent `u`/event/level conditions and availability-vs-inspection distinction; reopening a schedule does not clear native unavailable state.
-- Full per-context policy coverage, including targets without new phase UI and Forever's Classic preprocessing behavior; eight target labels do not prove all supported rulesets/profiles were tested.
+- Full per-context policy coverage, including targets without new phase UI and Forever's Classic preprocessing behavior; target labels do not prove all supported rulesets/profiles were tested; Retail remains unchanged.
 - No client/expansion eligibility bypass and no generated record-set change from merely selecting another view.
 - No remaining production legacy writer/helper/cache/normalization bypass after retirement, including serialized callbacks and indirect recipe/currency paths.
+- Complete flavor applicability precedes policy coverage and every merge/index operation; shared nodes and same-ID variants remain distinct. Schedule-only `SEASON_OF_DISCOVERY` pragmas are eliminated, with an explicit justified list of retained technical/structural guards.
 - Every source occurrence preserved, including SoD variants and repeated NPC/item identities. Only proven redundant inherited writers may disappear without a new key.
 - Matching CI binaries and complete generated-data/runtime checks; localization-only differences separately reviewed. Test success is not evidence of actual game availability.
+
+## 11. Complete phase planning catalog
+
+This catalog covers **Era, progression, Anniversary, SoD, Hardcore, Forever, Titan, and historical SoM**. Retail has no phase plan here. Expansion headings below are chapters of a flavor's timeline, not additional flavors. The catalog includes every published primary phase and named opening batch found in the cited primary sources, every finer repository declaration, and every alias/placeholder in Appendix D. It does not invent a future Classic expansion cycle from a leftover constant.
+
+**How to read the tables:** keys are proposed stable profile-local identifiers. Review-order integers propose the relative chronology for a selected profile, not official phase numbers or Unix timestamps; they increase across the progression/Anniversary chapters. A pending or conditional row has no numeric order until its relative timing is established; it cannot be emitted as a ready policy milestone. Separate profiles never compare these integers. Rows marked realm/source condition are not assigned a fabricated total chronological order: use their containing phase window plus the independent realm/personal unlock predicate. Native IDs are reconciled individually in Appendix D; they do not automatically select a flavor or overwrite its schedule. Dates record the source's actual region/global wording; a date-only announcement is not a UTC timestamp.
+
+An opening usually begins a window. An ending, replacement, reward transfer, or reopening needs its own explicit source evidence; the next raid's opening is not an automatic closing date. The table's full content groups must be resolved into actual acquisition occurrences, including dungeons, quests, professions, reputation vendors, PvP rewards, later boss/drop additions and temporary events. This is complete planning coverage, **not a claim that every individual item window has been verified in-game**. Repository-only or unresolved boundaries remain visible and block promotion of those affected policies, not their inclusion in this design.
+
+| Profile | Planned timeline and default treatment |
+| --- | --- |
+| `era/main` | Historical Vanilla openings retained for inspection; current Era is not a new restart. A reviewed current/default view is selected explicitly, never assumed to be launch. |
+| `progression/main` | Vanilla → TBC → Wrath → Cataclysm → Mists, with chapter-qualified stable keys and one increasing order. No later cycle is inferred. |
+| `anniversary/main` | Anniversary Vanilla followed by its own TBC schedule, including officially named 3.5; never copy original TBC numbering/timing mechanically. |
+| `sod/main` | All eight phases, staggered openings, later source additions, and explicit closing boundaries. |
+| `hardcore/original-2023` | One all-original-PvE-phases launch, with Hardcore source restrictions; no fabricated six-step unlocking. |
+| `hardcore/anniversary-2024` | Full Anniversary Vanilla PvE sequence only; no battlegrounds or TBC continuation. |
+| `forever/main` | Live launch and announced first raids; further announced scope remains pending ordered evidence. |
+| `forever/beta-2026` | Historical beta level-20/30 stages; not the live launch/raid keys. |
+| `titan/main` | Chrono launch and all ten announced numbered phases, with separately evidenced later-source batches. Future phases remain labeled announced. |
+| `som/main` | Historical SoM's six-phase cycle and its distinct first-phase availability. Not a live fallback or SoD alias. |
+
+`progression` uses chapter-qualified keys (`vanilla.*`, `tbc.*`, `wrath.*`, `cata.*`, `mists.*`) with one increasing profile order, not a reset at expansion boundaries. Era's historical 2019 opening sequence is separate evidence for `era`; present Era is not represented as restarting that cycle. SoD and historical SoM remain independent profiles/source variants. An opening normally begins a window; a dated patch does not prove every earlier source closed. Closures, replacements, and reward-transfer routes need their own recorded endpoints.
+
+### Classic / Era historical opening groups
+
+The March 2019 six-phase plan is a planning baseline, **not the final date schedule**. Dire Maul and battlegrounds were subsequently moved earlier. The complete six primary groups and the known distinct release batches must be retained separately. [Original official plan](https://us.forums.blizzard.com/en/wow/t/classic-content-plan/120346), [official BWL release](https://worldofwarcraft.blizzard.com/en-us/news/23302787), [official ZG release](https://worldofwarcraft.blizzard.com/en-us/news/23391283).
+
+| Review order | Proposed key | Required content scope | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 100 | `vanilla.1` | Molten Core, Onyxia, Maraudon; initial world/quest/profession source set. | Six-phase plan, launch group. World content is not assumed to share a raid's marker. |
+| 110 | `vanilla.1.dire-maul` | Dire Maul and its dependent class/profession/quest chains. | [2019-10-15 10:00 PDT](https://us.forums.blizzard.com/en/wow/t/dire-maul-releases-at-10-00am-pdt/333837), ahead of the original plan's phase-2 placement. |
+| 120 | `vanilla.2` | Azuregos, Kazzak; Honor/rank rewards are a separate policy scope. | Six-phase plan for bosses; PvP needs its separately announced schedule, not inferred from PvE. |
+| 130 | `vanilla.2.battlegrounds` | Warsong Gulch, Alterac Valley, associated vendors; elemental invasions are a separately named concurrent scope. | [2019-12-10 US / Dec 11 EU](https://worldofwarcraft.blizzard.com/en-gb/news/23237900); separate from BWL. |
+| 140 | `vanilla.3` | Blackwing Lair, level-50 class quests, reputation-reward additions. | [2020-02-12 release](https://worldofwarcraft.blizzard.com/en-us/news/23302787). |
+| Pending order | `vanilla.3.darkmoon` | Darkmoon Faire and deck sources. | Same release article confirms availability; recurring event availability remains an event predicate, not a permanent phase toggle. |
+| 160 | `vanilla.4.arathi` | Arathi Basin and battleground holiday/vendor changes. | [2020-03-11 15:00 PDT](https://us.forums.blizzard.com/en/wow/t/wow-classic-arathi-basin-unlocks-march-11/461697), before ZG. The earlier week-of-March-10 announcement is not the actual opening time. |
+| 170 | `vanilla.4` | Zul'Gurub, Dragons of Nightmare, Silithus additions, Stranglethorn Fishing Extravaganza. | [2020-04-15 official release](https://worldofwarcraft.blizzard.com/en-us/news/23391283). Fishing recurrence remains independent. |
+| 180 | `vanilla.5.war-effort` | AQ War Effort and scepter/gong chain. | [Six-phase plan](https://us.forums.blizzard.com/en/wow/t/classic-content-plan/120346); do not collapse collection, gate opening, and the limited battle into one instant. |
+| — (realm condition) | `vanilla.5.raids` | Ruins and Temple of Ahn'Qiraj after that realm's gate conditions. | Official plan makes raid opening depend on War Effort; a universal guessed date is wrong. |
+| Pending source order | `vanilla.5.loot` | Dungeon set 0.5, relics, loot-table relocation/reconfiguration and later vendor/recipe groups. | Official plan explicitly separates the loot changes; every repository subphase must be reconciled. |
+| 210 | `vanilla.6` | Naxxramas and Scourge Invasion; associated world-PvP/source groups remain explicit. | [2020-12-03 Naxxramas announcement](https://worldofwarcraft.blizzard.com/en-us/news/23584140), six-phase plan. Invasion ending is not inferred from raid opening. |
+
+The two source-backed plans do not prove every fine-grained recipe/vendor date. Those entries stay in the complete repository catalog with a repository-evidence label rather than disappearing from the plan.
+
+### Historical Season of Mastery: all six primary phases
+
+The official SoM outline defines a different sequence from 2019: Honor, battlegrounds, and Dire Maul are available in its first phase. Do not reuse Era's windows. [Official six-phase outline](https://news.blizzard.com/en-us/article/23738002/wow-classic-season-of-mastery-is-now-live).
+
+| Review order | Proposed key | Complete announced primary group | Additional evidence / treatment |
+| --- | --- | --- | --- |
+| 100 | `vanilla.1` | Molten Core, Onyxia, Maraudon, Dire Maul, Honor and battlegrounds. | SoM-specific first phase; historical profile only. |
+| 110 | `vanilla.2` | Azuregos and Kazzak. | Separate world-boss opening. |
+| 120 | `vanilla.3` | Blackwing Lair, Darkmoon Faire/decks. | [BWL opened 2022-02-10 15:00 PST](https://worldofwarcraft.blizzard.com/en-us/news/23764288). |
+| 130 | `vanilla.4` | Zul'Gurub and Dragons of Nightmare. | Official outline; date not invented. |
+| 140 | `vanilla.5.war-effort` | AQ War Effort. | Realm progression separate from raid access. |
+| 150 | `vanilla.5.raids` | AQ raids once the War Effort permits them. | SoM boss/reward variants remain distinct. |
+| 160 | `vanilla.6` | Naxxramas and Scourge Invasion. | [2022-07-28 release](https://worldofwarcraft.blizzard.com/en-us/news/23826539); SoM-specific encounters/rewards. |
+
+A single repository SoM-specific constant is not evidence that SoM had only one phase. Historical source captures, availability windows, and comparison outputs must be preserved independently of current SoD's reuse of a `SOM` preprocessing tag.
+
+### Season of Discovery: all eight phases and staggered batches
+
+| Review order | Proposed key | Required content group / transition | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 100 | `vanilla.1` | Level 25, Blackfathom Deeps raid, initial runes/profession sources, Battle for Ashenvale. | [Launch 2023-11-30 / BFD](https://worldofwarcraft.blizzard.com/en-us/news/24025494); [phase-2 article identifies prior Ashenvale event](https://worldofwarcraft.blizzard.com/en-us/news/24056979). |
+| 110 | `vanilla.2` | Level 40, Gnomeregan, new runes and dungeon skill books, profession recipes/cap 225, Blood Moon and rewards. | [2024-02-08 release](https://worldofwarcraft.blizzard.com/en-us/news/24056984). Ashenvale timing/level-limited buff changes are distinct conditions, not deletion of the event. |
+| 120 | `vanilla.3` | Level 50, Sunken Temple, new runes, Nightmare Incursions / Emerald Wardens; profession specializations. | [2024-04-04 schedule](https://worldofwarcraft.blizzard.com/en-us/news/24078320), [content overview](https://news.blizzard.com/en-us/article/24078318/season-of-discovery-phase-3-now-live). Incursions occupy four zone scopes; preserve each source. |
+| 130 | `vanilla.4` | Level 60, new runes, late dungeons, profession/reputation and PvP updates, Blackrock Eruption. | [2024-07-11 release](https://worldofwarcraft.blizzard.com/en-us/news/24111477), [official development inventory](https://worldofwarcraft.blizzard.com/en-us/news/24107635). Development-only details are not silently promoted to final facts. |
+| 140 | `vanilla.4.world-bosses` | Instanced Kazzak and Azuregos. | [2024-07-18 13:00 PDT globally](https://news.blizzard.com/en-us/article/24115314/twiw-the-war-within-pre-expansion-season-of-discovery-phase-4-and-more). |
+| 150 | `vanilla.4.raids` | Reworked Molten Core and Onyxia; MC difficulty-dependent reward routes. | [2024-07-25 13:00 PDT globally](https://news.blizzard.com/en-us/article/24115314/twiw-the-war-within-pre-expansion-season-of-discovery-phase-4-and-more). Not all phase-4 content opens July 11. |
+| Pending order | `vanilla.4.demon-fall` | Demon Fall Canyon dungeon and original encounter set. | Phase-4 source cohort; exact release scope must be joined to the current repository/official patch record. Do not conflate with phase-5 added boss. |
+| 170 | `vanilla.5` | Blackwing Lair / Tier 2, Zul'Gurub, Honor cap increases to 13, new Crystal Vale/Thunderaan encounter, additional Demon Fall Canyon boss. | [2024-09-26 release](https://worldofwarcraft.blizzard.com/en-us/news/24139952). Later boss/drop occurrences need their own keys. |
+| 180 | `vanilla.6.scepter` | Scepter of the Shifting Sands questline. | [2024-11-12 regional resets](https://worldofwarcraft.blizzard.com/en-us/news/24154449). |
+| 190 | `vanilla.6.war-effort` | AQ supply collection begins. | [2024-11-21 13:00 PST globally](https://worldofwarcraft.blizzard.com/en-us/news/24154449). |
+| 200 | `vanilla.6.war-effort-end` | Supply-collection phase ends. | [2024-11-29](https://worldofwarcraft.blizzard.com/en-us/news/24154449); an explicit closing boundary, not just another opening. |
+| 210 | `vanilla.6.war` | Anubisath/qiraji battle period begins. | [2024-12-04](https://worldofwarcraft.blizzard.com/en-us/news/24154449). |
+| 220 | `vanilla.6.raids` | Temple/Ruins of AQ and Nightmare Grove. | [2024-12-06](https://worldofwarcraft.blizzard.com/en-us/news/24154449). Raid-specific difficulty/loot options remain separate sources. |
+| 230 | `vanilla.7` | Karazhan Crypts, Scourge Invasions, rune-broker acquisitions. | [NA 2025-01-28 maintenance](https://worldofwarcraft.blizzard.com/en-us/news/24171906), [EU Jan 29](https://worldofwarcraft.blizzard.com/en-gb/news/24171906/season-of-discovery-phase-7-naxxramas-now-live). |
+| 240 | `vanilla.7.naxxramas` | Reworked Naxxramas, empowered rewards, Sanctified gear/Seal of the Dawn. | [2025-02-06 13:00 PST globally](https://worldofwarcraft.blizzard.com/en-us/news/24171906). |
+| 250 | `vanilla.8` | New Avalon outdoor/quest/profession content. | [2025-04-08](https://worldofwarcraft.blizzard.com/en-us/news/24188044). |
+| 260 | `vanilla.8.scarlet-enclave` | Scarlet Enclave raid and legendary weapon questline. | [2025-04-10 13:00 PDT globally](https://worldofwarcraft.blizzard.com/en-us/news/24188044). |
+
+The published opening batches do not erase repository-defined nested later loot, removed legacy raid variants, runes, currencies, or recipe changes. Each of those definitions and aliases is covered by the full repository appendix. No phase 9 is invented. A synthetic `4.1`/`4.2` example demonstrates the interface; the named keys above describe actual distinct batches without pretending Blizzard named them decimal phases.
+
+### Progression chapter: Burning Crusade (original Classic cycle)
+
+The February 2021 overview was explicitly provisional and put Arena seasons in different phase slots. Actual release announcements below supersede those pairings. This is the historical progression cycle, not the Anniversary cycle. [Provisional plan](https://news.blizzard.com/en-us/article/23625673/world-of-warcraft-burning-crusade-classic-deep-dive).
+
+| Review order | Proposed key | Required content group | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 1000 | `tbc.prepatch` | Blood Elf/Draenei access and pre-expansion systems; time-limited old-source closure decisions remain separate. | Provisional overview confirms early race access; exact source windows require prepatch evidence. |
+| 1010 | `tbc.1` | Outland, Karazhan, Gruul, Magtheridon; initial dungeons, professions, and reputations. | [Classic launch 2021-06-01](https://investor.activisionblizzard.com/node/34151/pdf). |
+| 1020 | `tbc.1.arena` | Arena Season 1 and its vendor/reward sources. | [2021-06-15 release](https://worldofwarcraft.blizzard.com/en-us/news/23685040). |
+| 1030 | `tbc.2.preparation` | Guild banks, group browser, arena standings; season-1 ending/offseason pricing. | [2.5.2 timeline](https://us.forums.blizzard.com/en/wow/t/burning-crusade-classic-patch-252-content-timeline/1077822): Aug 31 patch; Sept 6 season end, region-qualified. |
+| 1040 | `tbc.2.arena` | Arena Season 2. | Same timeline: Sept 14 regional reset. |
+| 1050 | `tbc.2` | SSC, The Eye; Sha'tari Skyguard and Ogri'la. | Same timeline: 2021-09-15 15:00 PDT globally. |
+| 1060 | `tbc.3.preparation` | Arena Season 3, Netherwing and related updates. | [Phase 3 release article](https://news.blizzard.com/en-us/article/23764312/burning-crusade-classic-phase-3-is-now-live); preserve its preparation/raid separation. |
+| 1070 | `tbc.3` | Hyjal and Black Temple, related reputations and attunement rewards. | Same source: 2022-01-27 raids. |
+| 1080 | `tbc.4.preparation` | Dungeon/key changes, badge vendor/drop additions, greater drums, epic-gem and world-boss loot changes. | [2022-03-22 update](https://worldofwarcraft.blizzard.com/en-us/news/23783585). |
+| 1090 | `tbc.4` | Zul'Aman and timed Amani War Bear route. | [2022-03-24 raid](https://worldofwarcraft.blizzard.com/en-us/news/23783585). Closing of the original bear route needs its own later evidence. |
+| 1100 | `tbc.5` | Shattered Sun Offensive / Isle of Quel'Danas campaign and Arena Season 4. | [2022-05-10 update / regional maintenance](https://news.blizzard.com/en-us/article/23789253/burning-crusade-classic-the-sunwell-plateau-is-now-open). |
+| — (realm/source condition) | `tbc.5.isle-*` | Every named island stage, subobjective, service and vendor unlock. | Same source: realm participation controls advancement. Preserve all 2101–2107 repository groups; a fixed global date is not established. |
+| 1110 | `tbc.5.sunwell` | Sunwell Plateau. | [2022-05-12 raid](https://news.blizzard.com/en-us/article/23789253/burning-crusade-classic-the-sunwell-plateau-is-now-open). |
+
+### Progression chapter: Wrath
+
+| Review order | Proposed key | Required content group | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 2000 | `wrath.prepatch` | Death Knight, Inscription, new systems and fresh-start realms. | [2022-08-30 regional maintenance](https://worldofwarcraft.blizzard.com/en-us/news/23833257). |
+| 2010 | `wrath.prepatch.zombie` | Zombie outbreak window. | Same source: Sept 6–13. |
+| 2020 | `wrath.prepatch.invasion` | Scourge Invasion window. | Same source: Sept 13 to launch; retain event/source conditions. |
+| 2030 | `wrath.1` | Northrend and level-80 dungeons/professions/reputations. | Same source: 2022-09-26 15:00 PDT global launch. |
+| 2040 | `wrath.1.arena` | Arena Season 5. | Same source: Oct 4/5 regional resets. |
+| 2050 | `wrath.1.raids` | Naxxramas, Eye of Eternity, Obsidian Sanctum. | Same source: Oct 6 15:00 PDT. |
+| 2060 | `wrath.2.preparation` | Emblem/vendor redistribution, Titan Rune Alpha, Arena Season 6, Argent Tournament initial content. | [January 2023 update](https://worldofwarcraft.blizzard.com/en-us/news/23897173/), week of Jan 16 / Jan 17 regional reset. |
+| 2070 | `wrath.2` | Ulduar and hard-mode source routes. | Same source: 2023-01-19 15:00 PST. |
+| 2080 | `wrath.3.preparation` | Titan Rune Beta, Sidereal Essence vendor, Trial of the Champion, expanded tournament quests, Arena Season 7. | [2023-06-20 update](https://worldofwarcraft.blizzard.com/en-us/news/23951684). |
+| 2090 | `wrath.3` | Trial of the Crusader/Grand Crusader; level-80 Onyxia. | Same source: June 22 15:00 PDT. |
+| 2100 | `wrath.4.preparation` | Forge of Souls, Pit of Saron, Halls of Reflection; random dungeon finder; Titan Rune Gamma. | [Week of 2023-10-10](https://worldofwarcraft.blizzard.com/en-us/news/24013831). |
+| 2110 | `wrath.4` | Icecrown Citadel and Shadowmourne chain. | Same source: Oct 12 15:00 PDT globally. |
+| 2120 | `wrath.5` | Ruby Sanctum. | [2024-01-11 15:00 PST](https://worldofwarcraft.blizzard.com/en-us/news/24042881). |
+| 2130 | `wrath.transition-uprising` | Operation Gnomeregan / Zalazane's Fall and associated temporary acquisitions. | [2024-03-26](https://worldofwarcraft.blizzard.com/en-us/news/24078320). No inferred permanent reopening of prior sources. |
+
+### Progression chapter: Cataclysm
+
+| Review order | Proposed key | Required content group | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 3000 | `cata.prepatch` | Shattering/source replacements and systems. | Full repository prepatch definitions are required; no raid date substitutes for old-source removal. |
+| 3010 | `cata.1` | Level 85 zones, initial dungeons, Tol Barad, professions/reputations. | [2024-05-20 global launch](https://worldofwarcraft.blizzard.com/en-us/news/24095669). |
+| 3020 | `cata.1.arena` | PvP Season 9, Battle for Gilneas/Twin Peaks. | [2024-05-28 regional resets](https://worldofwarcraft.blizzard.com/en-us/news/24097846). |
+| 3030 | `cata.1.raids` | Bastion of Twilight, Blackwing Descent, Throne of Four Winds. | Same source: May 30 15:00 PDT globally. Baradin Hold bosses retain their independent rows. |
+| 3040 | `cata.2` | Rise of the Zandalari: heroic Zul'Gurub/Zul'Aman, Stranglethorn chain/pet, replacement raid/dungeon and mount routes. | [2024-07-30](https://worldofwarcraft.blizzard.com/en-us/news/24117140). New versions do not merge with old raid sources. |
+| 3050 | `cata.3.molten-front` | Regrowth / Molten Front daily progression and four vendors. | [2024-09-17 early opening](https://news.blizzard.com/en-us/article/24135893/get-ready-for-the-molten-front-and-season-of-discovery-phase-5); personal quest unlocks remain requirements. |
+| 3060 | `cata.3.preparation` | Elemental Bonds, Elemental Rune Protocol Inferno and reward sources. | [Rage of the Firelands update](https://news.blizzard.com/en-gb/article/24148553/wow-20th-anniversary-celebration-rage-of-the-firelands-and-firelands-raid-for-cataclysm-classic-and-more): EU Oct 30; region-qualified. |
+| 3070 | `cata.3` | Firelands and Dragonwrath chain. | [2024-11-07 15:00 PST globally](https://worldofwarcraft.blizzard.com/en-us/news/24154449). |
+| 3080 | `cata.4.preparation` | End Time, Well of Eternity, Hour of Twilight dungeons and associated source additions. | [2025-02-18 maintenance](https://worldofwarcraft.blizzard.com/en-us/news/24173042); EU Feb 19. |
+| 3090 | `cata.4` | Dragon Soul, Fangs of the Father. | Same source: Feb 20 15:00 PST globally. |
+| 3100 | `cata.4.alizabal` | Baradin Hold Alizabal. | Same source: Feb 25 NA / Feb 26 EU maintenance. |
+
+### Progression chapter: Mists of Pandaria
+
+| Review order | Proposed key | Required content group | Official evidence / date qualification |
+| --- | --- | --- | --- |
+| 4000 | `mists.prepatch` | Pandaren, Monk, talent systems, pet battles, Theramore scenario. | [2025-07-01](https://worldofwarcraft.blizzard.com/en-us/news/24213954). Retail promotional rewards are outside this Phase plan. |
+| 4010 | `mists.1` | Level 90 zones, dungeons, scenarios, challenge modes, professions/reputations, Sunsong Ranch. | [2025-07-21 launch](https://worldofwarcraft.blizzard.com/en-us/news/24224134). |
+| 4020 | `mists.1.arena` | PvP Season 12, new arena/battleground sources. | Same source: week after launch. |
+| 4030 | `mists.1.msv` | Mogu'shan Vaults. | Same source: July 31 15:00 PDT globally. |
+| 4040 | `mists.1.celestial-msv` | Celestial Dungeons and MSV reward pool. | [2025-08-12 regional maintenance](https://worldofwarcraft.blizzard.com/en-gb/news/24223022). |
+| 4050 | `mists.1.hof` | Heart of Fear. | Same source: Aug 21 23:00 BST. |
+| 4060 | `mists.1.sha-tier14` | Sha of Anger gains Tier 14 drops. | Same source: Aug 26 regional maintenance; exact later-drop scope, not whole-boss reopening. |
+| 4070 | `mists.1.celestial-hof` | HoF Celestial reward pool. | Same source: Sept 2 regional maintenance. |
+| 4080 | `mists.1.toes` | Terrace of Endless Spring. | Same source: Sept 4 23:00 BST; no Classic HoF-clear prerequisite. |
+| 4090 | `mists.1.celestial-toes` | ToES Celestial reward pool. | Same source: Sept 16 regional maintenance. |
+| 4100 | `mists.2` | Landfall factions/campaign, five scenarios, Brawler's Guild ranks 1–7, Wrathion socket chapter, gear-upgrade/vendor changes. | [2025-09-23](https://worldofwarcraft.blizzard.com/en-us/news/24229242). |
+| 4110 | `mists.3` | Isle of Thunder/Isle of Giants, factions, legendary meta-gem chapter, Thunderforging, new scenarios. | [2025-12-09 NA / Dec 10 EU update](https://worldofwarcraft.blizzard.com/en-gb/news/24242434/mists-of-pandaria-classic-the-thunder-king-content-update-is-now-live). |
+| 4120 | `mists.3.throne` | Throne of Thunder normal/heroic and Ra-den prerequisite. | Same source: Dec 11 23:00 GMT. |
+| 4130 | `mists.3.celestial` | Updated Celestial rewards and challenge-mode season. | Same source: week of Dec 16/17 regional maintenance. |
+| 4140 | `mists.3.oondasta` | Oondasta. | Same source's Dec 12 correction: Dec 18 23:00 GMT globally. Do not use the earlier initial article's assumed date. |
+| — (realm/source condition) | `mists.3.isle-stages` | Every island war-effort stage, associated services/quests, final Nalak access. | Same source: final-stage dependent; no invented universal Nalak date. |
+| 4150 | `mists.4` | Escalation campaign, Northern Barrens, four new scenarios/six heroic versions, legendary chapter, Brawler's Guild higher ranks/challenge cards. | [2026-03-31 regional update](https://worldofwarcraft.blizzard.com/en-us/news/24267939). |
+| 4160 | `mists.5` | Timeless Isle, Emperor Shaohao, final legendary-cloak chapter, four Celestials/Ordos, Proving Grounds, season-14 and challenge/Celestial season-3 sources. | [2026-06-02 update](https://worldofwarcraft.blizzard.com/en-us/news/24264421). |
+| 4170 | `mists.5.siege` | Siege of Orgrimmar. | [2026-06-04 raid](https://worldofwarcraft.blizzard.com/en-us/news/24252017). |
+
+No WoD, Legion, BfA, Shadowlands, Dragonflight, or War Within Classic cycle is inferred from leftover numeric constants. They remain classified repository metadata outside the evidenced progression timeline until actual support is specified. Appendix D retains every definition and its disposition.
+
+### Evidence limits that must survive integration
+
+- Official announcement/source groups are verified as published plans/releases, not new in-game observation of every item. Record-level availability still needs the repository's required source evidence.
+- Every finer repository phase/subphase/alias must appear in a reconciliation table; unknown date is acceptable, silently omitted definition is not.
+- Region reset dates, realm-wide war efforts, and player-specific unlocks are different axes. A single chronological view does not erase the latter two predicates.
+- Raid opening does not prove that a whole expansion's unrelated quests, vendors, or profession recipes share its phase.
+- Cross-expansion removals, changed loot pools, PvP reward season closure, limited invasions, and later boss/drop additions are full-route window work. Where the sources above do not establish an endpoint, mark that specific endpoint unresolved; never fill it with the next raid's date.
+
+### Anniversary: Vanilla cycle
+
+| Review order | Proposed key | Opening / scope | Primary evidence |
+| --- | --- | --- | --- |
+| 100 | `vanilla.launch` | November 2024 fresh level-60 world; raid opening is separate. | [Launch overview](https://news.blizzard.com/en-us/article/24156594/relive-your-adventure-with-the-wow-classic-20th-anniversary-edition) |
+| 110 | `vanilla.1.raids` | Dec 12, 2024 PST: Molten Core and Onyxia. | Same launch overview. |
+| 120 | `vanilla.2` | Jan 9, 2025 14:00 PST: Dire Maul, Azuregos, Kazzak; Honor rank cap 11. | [Official timetable](https://news.blizzard.com/en-us/article/24165126/wow-weekly-the-siren-isle-content-update-is-now-live-and-more) |
+| 130 | `vanilla.2.battlegrounds` | Jan 16: Warsong Gulch and Alterac Valley. | Same timetable; keep separate from Jan 9. |
+| 140 | `vanilla.3` | Mar 20: Blackwing Lair, level-50 class quests, reputation reward additions, Eternal Quintessence, Darkmoon Faire. | [Phase 3 timetable](https://news.blizzard.com/en-us/article/24182548/wow-20th-anniversary-edition-phase-3-honor-cap-arathi-basin-and-more-now-live) |
+| 150 | `vanilla.3.pvp` | Apr 3: rank-11 cap lifted to 14, Arathi Basin and BG holidays. | Same phase-3 timetable. |
+| 160 | `vanilla.4` | May 1: Zul'Gurub, Dragons of Nightmare, Silithus additions, fishing tournament and dungeon set 0.5. Set 0.5 is earlier than the original Classic phase-5 grouping. | [Phase 4](https://news.blizzard.com/en-us/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live) |
+| 170 | `vanilla.5.war-effort` | Jul 10 at 15:00 PDT: resource turn-ins begin. | [Phase 5](https://news.blizzard.com/en-gb/article/24213950/wow-classic-20th-anniversary-edition-phase-5-now-live) |
+| — (realm/source condition) | `vanilla.5.transport`, `.gong`, `.war`, `.raids` | Completion-dependent five-day transport, realm gong, limited battle, AQ20/AQ40 access. Do not invent one universal raid date. Preserve separately timed acquisition routes. | Same phase-5 article. |
+| 180 | `vanilla.6` | Oct 2 at 23:00 BST: Naxxramas and Scourge Invasion, with associated world-PvP content. An invasion's closing endpoint needs independent evidence. | [Official announcement recap](https://worldofwarcraft.blizzard.com/en-gb/news/24229248) |
+
+### Anniversary: Burning Crusade cycle
+
+The official 2026 roadmap explicitly numbers this cycle **1, 2, 3, 3.5, 4**, not the original Classic TBC 1–5. The [official roadmap](https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/tq/TQEKUSQ6MZFT1769706584394.png) linked from [State of Azeroth](https://news.blizzard.com/en-us/article/24250385/catch-up-on-the-state-of-azeroth-in-our-recap). It places Zul'Aman at 3.5 and Sunwell at 4, both within the autumn planning band. Later exact announcements supersede broad roadmap windows.
+
+| Review order | Proposed key | Opening / scope | Primary evidence |
+| --- | --- | --- | --- |
+| 1000 | `tbc.prepatch` | Jan 13, 2026: prepatch/new races and systems; source-removal windows require their own evidence. | [Launch/prepatch article](https://news.blizzard.com/en-us/article/24242436/wow-burning-crusade-classic-anniversary-edition-now-live) |
+| 1010 | `tbc.1` | Feb 5: Outland, level 70, Jewelcrafting, flying and guild banks at launch. Guild-bank timing differs from original Classic. | Same launch article. |
+| 1020 | `tbc.1.arena` | Feb 17 regional reset: Arena S1. | Same launch article. |
+| 1030 | `tbc.1.raids` | Feb 19 at 15:00 PST: Karazhan, Gruul, Magtheridon. | Same launch article. |
+| 1040 | `tbc.2` | May 14 at 15:00 PDT: SSC, The Eye, Ogri'la, Skyguard, Swift Flight Form and profession additions. Arena S2 is listed but reward season closure/offseason remains a separate scope. | [Dated announcement](https://worldofwarcraft.blizzard.com/en-us/news/24272608), [content and off-season details](https://news.blizzard.com/en-us/article/24276751/bcc-anniversary-edition-overlords-of-outland-now-live) |
+| 1050 | `tbc.3` | Aug 27 at 15:00 PDT: Black Temple, Hyjal, Netherwing, epic gems and Arena S3. | [Official dated announcement recap](https://worldofwarcraft.blizzard.com/en-us/news/24293051) |
+| 1060 | `tbc.3.5` | Oct 22 at 15:00 PDT: Zul'Aman/timed bear; additional badge drops/vendor pools, epic gems in newly acquired containers, reputation/attunement changes, profession recipes and tradeability changes. Keep new container acquisitions distinct from old unopened containers. | [Zul'Aman update](https://worldofwarcraft.blizzard.com/en-us/news/24310652) |
+| 1070 | `tbc.4` | Announced Sunwell Plateau, Isle of Quel'Danas and Arena S4. Exact dates and island subobjective timing not verified at cutoff; retain full prospective scope without assigning original-Classic 2101–2107 dates or phase-5 numbers. | Official 2026 roadmap above. |
+
+All named island subobjectives from the repository remain in the reconciliation inventory; whether each exists and its eligibility in Anniversary requires evidence. No Wrath Anniversary cycle is inferred from discussion/speculation.
+
+### Hardcore: two distinct actual timelines
+
+- `hardcore/original-2023.json`: opened Aug 24, 2023 at 15:00 PDT with all original content phases available. A single `launch` milestone can include all eligible PvE scopes; do not make players unlock six historical phases again. Battlegrounds/battlemasters are disabled and Wargames grant no Honor/PvP reputation. These are source-applicability restrictions, not future unlocks. [Official patch notes](https://news.blizzard.com/en-us/article/23987544/world-of-warcraft-classic-era-1-14-4-update-notes), [rules](https://news.blizzard.com/en-us/article/23973734/rules-of-engagement-classic-hardcore-is-coming-to-world-of-warcraft).
+- `hardcore/anniversary-2024.json`: independently record the complete Anniversary Vanilla launch, raid, Dire Maul/world-boss, BWL, ZG, AQ flow and Naxx sequence above. Officially follows the normal Anniversary PvE openings; excludes BG/battlemaster unlocks and **does not progress to TBC**. Do not import the entire Anniversary policy without its restrictions. [Official Anniversary rules](https://news.blizzard.com/en-us/article/24156594/relive-your-adventure-with-the-wow-classic-20th-anniversary-edition).
+- Self-Found is a gameplay constraint, not another global phase schedule. Review its trade/acquisition restrictions separately. An all-content-at-launch announcement does not prove all historical one-time events or temporary rewards repeat; endpoints such as AQ battle/scepter and invasions remain explicit evidence questions.
+- Future Forever Hardcore belongs to a Forever ruleset/context, not these Classic Hardcore histories.
+
+### Titan: every currently announced numbered phase
+
+Profile: `titan/main.json` (Chrono); no native release-phase IDs exist in the audited master catalog. Keep Titan source variants independent from Wrath/TBC/Vanilla originals.
+
+| Review order | Proposed key | State at cutoff | Opening/content | Evidence |
+| --- | --- | --- | --- | --- |
+| 100 | `chrono.launch` | Historical opening boundary; exact general-access versus early-access boundary needs reconciliation | Leveling/client baseline before first raid opening. Official launch article is dated Nov 13, 2025; earlier previews mention Nov 18. Do not silently select one as a universal activation time. | [Launch announcement](https://wow.blizzard.cn/news/20251113/40565_1270773.html) |
+| 110 | `chrono.1` | Opened | Dec 4, 2025: reworked Molten Core; first ranked world-PvP cycle. | [Launch/first-raid announcement](https://wow.blizzard.cn/news/20251113/40565_1270773.html) |
+| 120 | `chrono.2` | Opened | Jan 29, 2026: Tempest Keep, Serpentshrine Cavern, Doom Lord Kazzak/Doomwalker, Titan Thunderfury and upgrades of earlier legendary equipment; S2. | [Phase 2](https://wow.blizzard.cn/news/20260114/40565_1281658.html) |
+| 130 | `chrono.3` | Opened | Apr 2, 2026: Naxxramas, Obsidian Sanctum, Eye of Eternity; Titan Atiesh; S3. | [Phase 3](https://wow.blizzard.cn/news/trr/20260402/43039_1294320.html) |
+| 140 | `chrono.3.1` | Opened; local subphase, not an official numbered phase | Apr 9: a separate merchant/acquisition route for old T3 appearances and mounts becomes available. Keep it distinct from the raid-opening boundary and historical original routes. | [Phase 3 merchant date](https://wow.blizzard.cn/news/trr/20260402/43039_1294320.html) |
+| 150 | `chrono.4` | Opened | May 28, 2026: Trial of the Crusader and Zul'Gurub (level-80/25-player variants), new legendary dagger and S4. | [Phase 4](https://wow.blizzard.cn/news/trr/20260528/43039_1302020.html) |
+| 160 | `chrono.4.1` | Opened; local subphase | Jun 11 after maintenance: new weekly quest on Yojamba Isle awarding a reputation gem. This is a later source within phase 4. | [New weekly](https://wow.blizzard.cn/news/trr/20260610/43039_1303733.html) |
+| 170 | `chrono.5` | Opened | Aug 6, 2026: Sunwell Plateau and 25-player Zul'Aman, revised Thori'dal and S5. | [Phase 5 announcement](https://wow.blizzard.cn/news/trr/20260724/43039_1308957.html), [Aug 6 confirmation](https://wow.blizzard.cn/news/trr/20260806/43039_1309932.html) |
+| 180 | `chrono.6` | Opened | Oct 8, 2026: Ulduar, its explicitly retained encounter-triggered hard modes, revised healing/damage Val'anyr options and S6. | [Phase 6](https://wow.blizzard.cn/news/trr/20261010/43039_1315082.html), [Oct 9 live raid adjustments](https://wow.blizzard.cn/news/trr/20261009/43039_1316105.html) |
+| 190 | `chrono.6.1` | Announced for Oct 12; separate feature boundary | Raid challenge rankings begin after the raid. Apply this boundary only to actual ATT acquisition scopes tied to that feature, not every Ulduar drop. | [Phase 6 leaderboard date](https://wow.blizzard.cn/news/trr/20261010/43039_1315082.html) |
+| 200 | `chrono.7` | Announced, not established as released at cutoff | Winter 2026: 25-player Karazhan, Gruul and Magtheridon. | [Official future roadmap](https://wow.blizzard.cn/news/20260913/43790_1313712.html) |
+| 210 | `chrono.8` | Announced future | Spring 2027: Blackwing Lair, Onyxia and Ruins of Ahn'Qiraj. | [Roadmap](https://wow.blizzard.cn/news/20260913/43790_1313712.html) |
+| 220 | `chrono.9` | Announced future | Summer 2027: Temple of Ahn'Qiraj and Dragons of Nightmare. | [Roadmap](https://wow.blizzard.cn/news/20260913/43790_1313712.html) |
+| 230 | `chrono.10` | Announced future | Summer 2027: Icecrown Citadel and Ruby Sanctum. Preserve the stated phase-9/10 order; do not invent separate dates from a shared season window. | [Roadmap](https://wow.blizzard.cn/news/20260913/43790_1313712.html) |
+
+The phase-6 page header is dated September 25 and its URL may contain September 24 or October 10, while the body explicitly gives October 8 for the opening. The body schedule and October 9 live adjustment evidence support the opening boundary; neither publication date nor URL date is the opening date.
+
+The Jun 25 gem adjustment changes the holding limit and removes surplus copies from inventory; it does **not** announce that the weekly acquisition route was removed. Do not invent `until = chrono.4.2` from that announcement. [Adjustment](https://wow.blizzard.cn/news/trr/20260622/43039_1304959.html)
+
+World-PvP ranking seasons have close/settlement periods independent of raid availability. For example, S4 scoring ends Jul 26 at 23:59:59 and S5 starts Aug 6. End a ranking/reward route only where its actual reward eligibility is evidenced; closing the ranking does not close the raid. Temporary commercial/holiday reward routes retain their own event/availability evidence rather than making all event changes global raid phases.
+
+### Forever: live milestones and beta phases are different
+
+Sol's source audit identifies `FOREVER_PHASE_ONE = 600` and `FOREVER_PHASE_TWO = 601` as **beta level-20/level-30** declarations. These are not evidence that live launch and first raids are native phases 600/601.
+
+| Review order | Proposed profile/key | State | Scope/evidence |
+| --- | --- | --- | --- |
+| 100 (beta profile) | `forever/beta-2026.json`: `beta.20` | Historical beta level-20 stage; native ID 600 | Preserve the repository stage; verify its date separately. Not the live launch. |
+| 110 (beta profile) | `forever/beta-2026.json`: `beta.30` | Historical beta level-30 stage; native ID 601 | Follows the beta level-20 stage; verify its date separately. Not the first live raids. |
+| 100 (live profile) | `forever/main.json`: `launch` | Launched by the research cutoff | Nov 4, 2026 15:00 PST = Nov 5, 2026 07:00 Asia/Taipei. Baseline level-1–60 world, not an invented numbered phase. [Official panel recap](https://worldofwarcraft.blizzard.com/en-us/news/24303862/world-of-warcraft-forever-whats-next) |
+| 110 (live profile) | `forever/main.json`: `first-raids` | Announced upcoming | Dec 9: Barrow Deeps (10), Hyjal Summit (20), Onyxia (40). Use new local keys; no verified native numeric mapping. [Official raid overview](https://news.blizzard.com/en-gb/article/24303009/world-of-warcraft-forever-raid-overviewlocations-raid-sizes-and-attunement) |
+| Pending announcement/order | Future roadmap entries, not assigned chronological keys yet | Announced scope, dates/order not fully established in the accessible primary text | Further raids/dungeons, PvP updates, world content and quests, Hardcore, and a reworked iconic raid. Preserve them in a pending roadmap ledger instead of manufacturing phases 3–6. [Panel recap](https://worldofwarcraft.blizzard.com/en-us/news/24303862/world-of-warcraft-forever-whats-next) |
+
+The official ruleset overview explicitly puts Forever Hardcore after launch. It remains a Forever ruleset/context, not evidence that classic Hardcore or Anniversary Hardcore's schedule applies to Forever. [Rulesets](https://worldofwarcraft.blizzard.com/en-us/news/24302070)
+
+The complete [official panel recap](https://news.blizzard.com/en-us/article/24303862/world-of-warcraft-forever-whats-next-panel-recap) confirms the launch, September 17 beta, and December 9 raid sequence. Later scope is announced without a complete ordered/date roadmap in that text; no additional phase number or date is inferred.
 
 ## Appendix A: existing explicit-call source cohort
 
@@ -1070,3 +1371,209 @@ Paths are relative to `.contrib/.db/standard/01 - Dungeons Raids/`. Annotation l
 | `raid.icc` | `03 - Wrath of the Lich King/8 Icecrown Citadel.lua` | `instanceID=758` | — | — | `4` |
 
 No new screenshot, Contributor Report, or game-record observation is supplied by this design. Example schedules, removals, subphases, and timing remain illustrative or explicitly unverified until supported by the evidence required by `AGENTS.md`. Implementation starts only after this design is reviewed and approved.
+
+## Appendix D: every repository phase definition and its disposition
+
+This is an exhaustive reconciliation of the pinned `shared/lib/Constants/Phases.lua`, not a second policy registry. **72 release-metadata declarations (64 `createClassicPhase` and 8 `createClassicPhaseForSOD`) do not mean 72 chronological releases:** realm/personal predicates, collector-priority filters and beta stages must not be flattened into one timeline. Source references and every alias retain their context. The 18 numeric-only future constants do not announce future Classic cycles.
+
+<details>
+<summary>All 72 registered release-metadata declarations</summary>
+
+| Native ID | Source symbol | Planned key or non-timeline disposition | Migration/evidence boundary |
+| --- | --- | --- | --- |
+| 11 | [`PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L561) | `vanilla.1` | Historical Vanilla opening; choose flavor-specific policy. |
+| 1101 | [`PHASE_ONE_DIREMAUL`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L593) | `vanilla.1.dire-maul` | Original Classic early batch; SoM launch / Anniversary phase 2 / SoD phase 4 are separate policies. |
+| 12 | [`PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L638) | `vanilla.2` | World bosses/Honor scopes must be separated from later BG opening. |
+| 13 | [`PHASE_THREE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L670) | `vanilla.3` | BWL plus individually reviewed alias groups. |
+| 14 | [`PHASE_FOUR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L706) | `vanilla.4` | ZG/Dragons; AB can open separately. |
+| 15 | [`PHASE_FIVE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L740) | `vanilla.5.loot` | Broad phase-5 content is split by actual loot, war-effort and raid occurrence. |
+| 1501 | [`PHASE_FIVE_WAR_EFFORT`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L775) | `vanilla.5.war-effort` | Collection window; realm completion remains independent. |
+| 1502 | [`PHASE_FIVE_GONG`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L819) | `AQ gates-unopened condition` | Realm-state condition under the AQ window, not a global timestamp. |
+| 1503 | [`PHASE_FIVE_WAR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L863) | `AQ battle window` | Realm gong plus limited battle; do not invent one global 10-hour date. |
+| 1504 | [`PHASE_FIVE_CATCH_UP`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L907) | `vanilla.5.catch-up` | Repository-described nature-resistance catch-up; exact flavor/date boundary unresolved. |
+| 16 | [`PHASE_SIX`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L952) | `vanilla.6` | Naxx opening; invasion is a separate source window. |
+| 1601 | [`PHASE_SIX_SCOURGE_INVASION`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L985) | `vanilla.6.invasion` | Temporary invasion; ending requires independent evidence. |
+| 1602 | [`PHASE_SIX_SILITHYST`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1029) | `vanilla.6.silithyst` | Repository world-PvP source group; verify each flavor rather than copy alias. |
+| 1603 | [`PHASE_SIX_CLASSICERA`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1074) | `vanilla.era-transition` | Era/Chronoboon source context; not another universal raid phase. |
+| 1604 | [`SOM_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1135) | `som: vanilla.1…6` | One SoM metadata declaration does not collapse the officially announced six-phase cycle. |
+| 1605 | [`SOD_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1195) | `sod: vanilla.1` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1606 | [`SOD_PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1240) | `sod: vanilla.2` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1607 | [`SOD_PHASE_THREE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1272) | `sod: vanilla.3` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1608 | [`SOD_PHASE_FOUR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1304) | `sod: vanilla.4` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1609 | [`SOD_PHASE_FIVE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1336) | `sod: vanilla.5` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1610 | [`SOD_PHASE_SIX`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1368) | `sod: vanilla.6` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1611 | [`SOD_PHASE_SEVEN`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1400) | `sod: vanilla.7` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 1612 | [`SOD_PHASE_EIGHT`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1432) | `sod: vanilla.8` | Primary SoD phase metadata; all finer batches in section 11 remain distinct and do not inherit a fabricated native ID. |
+| 17 | [`TBC_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1521) | `tbc.1` | Original launch; Anniversary separates raid opening. |
+| 1701 | [`TBC_PHASE_ONE_DARKPORTAL`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1554) | `tbc.1 / portal source condition` | Dark Portal opening and prepatch source transitions require precise occurrence windows. |
+| 18 | [`TBC_PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1602) | `tbc.2` | Original SSC/TK batch; Anniversary has its own phase 2. |
+| 1801 | [`TBC_PHASE_TWO_OGRILA`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1635) | `tbc.2.ogrila` | Faction/source group, opening plus independent quest prerequisites. |
+| 1802 | [`TBC_PHASE_TWO_SKYGUARD`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1681) | `tbc.2.skyguard` | Faction/source group, not automatic all-reputation completion. |
+| 19 | [`TBC_PHASE_THREE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1728) | `tbc.3` | Hyjal/BT; source variants remain context-specific. |
+| 1901 | [`TBC_PHASE_THREE_NETHERWING`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1761) | `tbc.3.netherwing` | Faction unlock/preparation separate where announcement distinguishes it. |
+| 1902 | [`TBC_PHASE_THREE_GLAIVEPRIO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1807) | `Not chronological: Glaive priority` | Collector/guild-priority display condition; preserve separately, never turn into a release window. |
+| 20 | [`TBC_PHASE_FOUR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1852) | `progression tbc.4 / Anniversary tbc.3.5` | Same legacy label cannot dictate both cycles' official numbering. |
+| 21 | [`TBC_PHASE_FIVE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1885) | `progression tbc.5 / Anniversary tbc.4` | Sunwell/Isle opening; native ID does not establish Anniversary date. |
+| 2101 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1919) | `Isle Sanctum unlock` | Realm progress predicate under the Isle opening; no invented global order. |
+| 2102 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L1964) | `Isle Portal unlock` | Parallel/subobjective realm predicate; no inferred date. |
+| 2103 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2009) | `Isle Armory unlock` | Realm progress predicate, retain source requirements. |
+| 2104 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2054) | `Isle Anvil unlock` | Subobjective/service availability, not next raid date. |
+| 2105 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2099) | `Isle Harbor unlock` | Realm progress predicate, not all players' quest completion. |
+| 2106 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2144) | `Isle Monument unlock` | Subobjective predicate; do not serialize independent objectives artificially. |
+| 2107 | [`TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2189) | `Isle Alchemy Lab unlock` | Subobjective/service predicate; verify availability per flavor. |
+| 2108 | [`TBC_PHASE_FIVE_SCOURGE_INVASION`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2234) | `wrath.prepatch.invasion` | Temporary transition event, not permanent Sunwell loot. |
+| 30 | [`WRATH_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2290) | `wrath.1` | Launch baseline; raid and Arena batches are separate. |
+| 3001 | [`WRATH_PHASE_ONE_REALM_FIRST`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2322) | `Not chronological: realm-first eligibility` | Achievement/source eligibility, not a repeatable global phase. |
+| 31 | [`WRATH_PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2366) | `wrath.2` | Ulduar opening, preserve independently later/lost routes. |
+| 3101 | [`WRATH_PHASE_TWO_HAMMERPRIO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2398) | `Not chronological: Hammer priority` | Collector/guild priority condition; preserve outside timeline. |
+| 32 | [`WRATH_PHASE_THREE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2443) | `wrath.3` | ToC/Onyxia; preparation/dungeon/vendor sources separated. |
+| 33 | [`WRATH_PHASE_FOUR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2475) | `wrath.4` | ICC; preparation dungeons are a different batch. |
+| 3301 | [`WRATH_PHASE_FOUR_SHADOWMOURNE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2507) | `Not chronological: Shadowmourne priority` | Collector priority is not the legendary quest opening itself. |
+| 3302 | [`WRATH_PHASE_FOUR_RUBYSANCTUM`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2552) | `wrath.5` | Ruby Sanctum; stable new key need not copy legacy phase-four name. |
+| 3303 | [`WRATH_PHASE_FOUR_OPERATION_ZALAZANE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2597) | `wrath.transition-uprising` | Gnomeregan/Zalazane temporary routes. |
+| 3304 | [`WRATH_PHASE_FOUR_ELEMENTAL_INVASION`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2642) | `cata.prepatch.elemental-unrest` | Repository-defined transition event; exact occurrence endpoints unresolved. |
+| 40 | [`CATA_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2699) | `cata.1` | Launch; raids/PvP separate. |
+| 4001 | [`CATA_PHASE_RISE_OF_THE_ZANDALARI`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2731) | `cata.2` | Rise of Zandalari; old/new raid/dungeon routes stay distinct. |
+| 4002 | [`CATA_PHASE_MOLTEN_FRONT`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2777) | `cata.3.molten-front` | Early opening plus personal unlock progression, not Firelands raid date. |
+| 41 | [`CATA_PHASE_RAGE_OF_THE_FIRELANDS`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2822) | `cata.3` | Firelands raid and distinct preparation batch. |
+| 42 | [`CATA_PHASE_HOUR_OF_TWILIGHT`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2867) | `cata.4` | Hour of Twilight update, Dragon Soul and Alizabal have distinct openings. |
+| 50 | [`MOP_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2924) | `mists.1` | Launch; later raid/season batches explicit. |
+| 5001 | [`MOP_PHASE_ONE_MOGUSHAN_VAULTS`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2957) | `mists.1.msv` | MSV raid opening. |
+| 5002 | [`MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L2995) | `mists.1.celestial-msv` | Separate Celestial reward route/pool. |
+| 5003 | [`MOP_PHASE_ONE_HEART_OF_FEAR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3033) | `mists.1.hof` | HoF opening. |
+| 5004 | [`MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3071) | `mists.1.sha-tier14` | Later drops on an existing boss, not whole-boss opening. |
+| 5005 | [`MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3109) | `mists.1.celestial-hof` | HoF Celestial reward pool. |
+| 5006 | [`MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3147) | `mists.1.toes` | ToES opening. |
+| 5007 | [`MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3185) | `mists.1.celestial-toes` | ToES Celestial reward pool. |
+| 51 | [`MOP_PHASE_LANDFALL`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3223) | `mists.2` | Landfall systems/scenarios/factions. |
+| 52 | [`MOP_PHASE_RISE_OF_THE_THUNDER_KING`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3256) | `mists.3` | Thunder King; raid, world boss and realm unlock batches split. |
+| 5201 | [`MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3289) | `mists.3.celestial` | ToT Celestial rewards. |
+| 53 | [`MOP_PHASE_ESCALATION`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3327) | `mists.4` | Escalation. |
+| 54 | [`MOP_PHASE_SIEGE_OF_ORGRIMMAR`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3360) | `mists.5` | SoO update; raid separate. |
+| 5401 | [`MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3393) | `mists.5.celestial` | Celestial SoO pool; verify exact opening against update announcement. |
+| 600 | [`FOREVER_PHASE_ONE`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3565) | `forever/beta-2026: beta.20` | Historical beta level 20; NEVER map to live launch. |
+| 601 | [`FOREVER_PHASE_TWO`](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/shared/lib/Constants/Phases.lua#L3598) | `forever/beta-2026: beta.30` | Historical beta level 30; NEVER map to first live raids. |
+
+Keys in this table are planning destinations, not a global numeric-to-release conversion. A content source is resolved in its selected flavor/profile. A missing official date or existing TODO stays unverified; a nonchronological predicate remains independent of the manual timeline. In particular, the three legendary-priority settings and realm-first eligibility need dedicated compatibility/retirement tests before their old `phase` transport can be removed; moving them into a window would change their meaning.
+
+</details>
+
+<details>
+<summary>All 47 ordered alias assignments, including overrides</summary>
+
+Later assignments can overwrite earlier ones. The SoD block explicitly contains uncertain/TODO assignments; its final numeric value proves current source behavior, not actual game availability. Stage-2 golden preserves that behavior; any correction needs separate evidence and an approved difference. In particular, earlier phase-4 recipe/T0.5 assignments are later overwritten by phase-5/6 aliases: do not automatically publish either as verified policy.
+
+| Source line | Alias | Assigned target | Condition | Existing comment / migration treatment |
+| --- | --- | --- | --- | --- |
+| 198 | `BLACK_MARKET` | `REAL_MONEY` | `ANYCLASSIC` | Preserve the context-specific unavailable/special alias independently; no progression window is implied. |
+| 199 | `TCG` | `REAL_MONEY` | `ANYCLASSIC` | Preserve the context-specific unavailable/special alias independently; no progression window is implied. |
+| 371 | `TRAINING` | `UNLEARNABLE` | `Unconditional` | Preserve the context-specific unavailable/special alias independently; no progression window is implied. |
+| 702 | `PHASE_THREE_DMF_CARDS` | `PHASE_THREE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 703 | `PHASE_THREE_ENCHANTS` | `PHASE_THREE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 704 | `PHASE_THREE_RECIPES` | `PHASE_THREE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 705 | `PHASE_THREE_SILITHUS_EXPEDITION_QUESTS` | `PHASE_THREE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 738 | `PHASE_FOUR_DARKIRON_RECIPES` | `PHASE_FOUR` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 739 | `PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS` | `PHASE_FOUR` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 772 | `PHASE_FIVE_RECIPES` | `PHASE_FIVE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 773 | `PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS` | `PHASE_FIVE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 774 | `PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS` | `PHASE_FIVE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 984 | `PHASE_SIX_CLASS_BOOKS` | `PHASE_SIX` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 1465 | `PHASE_SIX_CLASSICERA` | `SOD_PHASE_ONE` | `SEASON_OF_DISCOVERY` | Chronoboons were available right away. |
+| 1468 | `PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS` | `SOD_PHASE_THREE` | `SEASON_OF_DISCOVERY` | Sunken Temple Class Quests came out with Phase 3 of SOD. |
+| 1471 | `PHASE_ONE_DIREMAUL` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | Dire Maul actually came out with Phase 4 of SOD. |
+| 1472 | `PHASE_TWO` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD. |
+| 1473 | `PHASE_THREE_ENCHANTS` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | A number of these actually came out with Phase 4 of SOD. (CRIEVE NOTE: Not actually sure since I can't check the AH for these...) |
+| 1474 | `PHASE_THREE_RECIPES` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | A number of these actually came out with Phase 4 of SOD. |
+| 1475 | `PHASE_FOUR_DARKIRON_RECIPES` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | A number of these actually came out with Phase 4 of SOD. |
+| 1476 | `PHASE_FIVE_RECIPES` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | A number of these actually came out with Phase 4 of SOD. |
+| 1477 | `PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | T0.5 Sets actually came out with Phase 4 of SOD. |
+| 1478 | `PHASE_SIX_CLASS_BOOKS` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | A number of these actually came out with Phase 4 of SOD. |
+| 1479 | `PHASE_SIX_SILITHYST` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | The Silithyst Quests actually came out with Phase 4 of SOD. |
+| 1480 | `PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS` | `SOD_PHASE_FOUR` | `SEASON_OF_DISCOVERY` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 1483 | `PHASE_THREE` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | Blackwing Lair came out with Phase 5 of SOD. |
+| 1484 | `PHASE_THREE_DMF_CARDS` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1485 | `PHASE_THREE_ENCHANTS` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1486 | `PHASE_THREE_RECIPES` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1487 | `PHASE_THREE_SILITHUS_EXPEDITION_QUESTS` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. CRIEVE NOTE: On SOD Phase 4, none of these quests were available. |
+| 1488 | `PHASE_FOUR` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | Zul'Gurub came out with Phase 5 of SOD. |
+| 1489 | `PHASE_FOUR_DARKIRON_RECIPES` | `SOD_PHASE_FIVE` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1492 | `PHASE_FIVE` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1493 | `PHASE_FIVE_RECIPES` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1494 | `PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1495 | `PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1496 | `PHASE_FIVE_WAR_EFFORT` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1497 | `PHASE_FIVE_GONG` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1498 | `PHASE_FIVE_WAR` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1499 | `PHASE_FIVE_CATCH_UP` | `SOD_PHASE_SIX` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1502 | `PHASE_SIX` | `SOD_PHASE_SEVEN` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1503 | `PHASE_SIX_CLASS_BOOKS` | `SOD_PHASE_SEVEN` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1504 | `PHASE_SIX_SCOURGE_INVASION` | `SOD_PHASE_SEVEN` | `SEASON_OF_DISCOVERY` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 1505 | `PHASE_SIX_SILITHYST` | `SOD_PHASE_SEVEN` | `SEASON_OF_DISCOVERY` | TODO: Confirm this. |
+| 1727 | `TBC_PHASE_TWO_SWIFTFLIGHTFORM` | `TBC_PHASE_TWO` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 1918 | `TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE` | `TBC_PHASE_FIVE` | `Unconditional` | Preserve evaluated context in golden; bind actual source occurrences to explicit policy. |
+| 2776 | `CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT` | `CATA_PHASE_RISE_OF_THE_ZANDALARI` | `Unconditional` | World Boss Loot was originally blue, they got upgraded to Epic later. |
+
+</details>
+
+<details>
+<summary>All 18 numeric-only future constants and 10 non-release declarations</summary>
+
+These remain visible in the inventory but do not create production flavor schedules. Retail is excluded; future-expansion constants with references require disposition in any affected non-Retail context, not guessed Classic dates.
+
+| Symbol | Native ID | Disposition |
+| --- | --- | --- |
+| `WOD_PHASE_ONE` | 60 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `WOD_PHASE_TWO` | 61 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `WOD_PHASE_THREE` | 62 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `LEGION_PHASE_ONE` | 70 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `LEGION_PHASE_TWO` | 71 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `LEGION_PHASE_THREE` | 72 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `BFA_PHASE_ONE` | 80 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `BFA_PHASE_TWO` | 81 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `BFA_PHASE_THREE` | 82 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `SL_PHASE_ONE` | 90 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `SL_PHASE_TWO` | 91 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `SL_PHASE_THREE` | 92 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `DF_PHASE_ONE` | 100 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `DF_PHASE_TWO` | 101 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `DF_PHASE_THREE` | 102 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `TWW_PHASE_ONE` | 110 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `TWW_PHASE_TWO` | 111 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `TWW_PHASE_THREE` | 112 | Numeric-only repository constant; no registered phase metadata or announced cycle established here. |
+| `NEVER_IMPLEMENTED` | 1 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `REMOVED_FROM_GAME` | 2 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `REAL_MONEY` | 3 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `BLACK_MARKET` | 9 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `TCG` | 10 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `TRADING_POST` | 7 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `ELITE_PVP_REQUIREMENT` | 4 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `UNLEARNABLE` | 5 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `CONDITIONALLY_AVAILABLE` | 6 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+| `TEMP_MOP_LEGENDARY_CLOAK_PHASE` | 38 | Existing unavailable/special filter; not a progression milestone. Preserve its independent semantics. |
+
+</details>
+
+<details>
+<summary>All 13 audited non-Retail configuration entries</summary>
+
+Configuration names are build targets, not the flavor catalog. These entries include future templates: their existence does not announce support or a game cycle. Only reviewed actual contexts are activated; a future template is recorded as deferred, not silently treated as a currently supported profile.
+
+| Existing configuration | DataPhase / DataPatch | Relevant identity evidence / disposition |
+| --- | --- | --- |
+| `.contrib/.db/standard/.config/classic/01 - Classic Era.config` | `CLASSIC` / `[1, 15, 9, 70576]` | Candidate Era binding; negative not-SoD requirement is not exhaustive positive identity proof. |
+| `.contrib/.db/standard/.config/classic/01 - Classic SOD.config` | `SEASON_OF_DISCOVERY` / `[1, 15, 9, 70576]` | SoD candidate; same DataPatch as Era. Shared SOM tag is not historical SoM identity. |
+| `.contrib/.db/standard/.config/classic/02 - TBC.config` | `TBC` / `[2, 5, 6, 70577]` | Contains CLASSIC_ANNIVERSARY: must not be mechanically assigned to original progression TBC. |
+| `.contrib/.db/standard/.config/classic/03 - Wrath.config` | `WRATH` / `[3, 4, 5, 63697]` | Explicit NAXX_10MAN_DROPS_25MAN_LOOT source variant; profile cannot manufacture that loot. |
+| `.contrib/.db/standard/.config/classic/04 - Cataclysm.config` | `CATA` / `[4, 4, 5, 55261]` | Expansion target; actual progression binding and runtime applicability require review. |
+| `.contrib/.db/standard/.config/classic/05 - Mists of Pandaria.config` | `MOP` / `[5, 5, 4, 70631]` | MOP_BEFORE_SOO source selector; do not assume this target emits the full published later schedule. |
+| `.contrib/.db/standard/.config/classic/06 - Warlords of Draenor.config` | `WOD` / `[6, 3, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/standard/.config/classic/07 - Legion.config` | `LEGION` / `[7, 4, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/standard/.config/classic/08 - Battle for Azeroth.config` | `BFA` / `[8, 4, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/standard/.config/classic/09 - Shadowlands.config` | `SL` / `[9, 3, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/standard/.config/classic/10 - Dragonflight.config` | `DRAGONFLIGHT` / `[10, 3, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/standard/.config/classic/11 - The War Within.config` | `TWW` / `[11, 3, 0, 55261]` | Future-expansion/template entry only; no announced Classic cycle or active policy inferred. |
+| `.contrib/.db/forever/.config/forever.config` | `FOREVER` / `[1, 60, 1, 69893]` | ANYCLASSIC/FOREVER/CAMELOT; source beta IDs do not establish live phase IDs or runtime detector. |
+
+</details>
+
+Coverage totals: 82 table declarations = 72 release-metadata declarations + 10 unavailable/special declarations; 47 alias assignment events; 18 numeric-only constants; 13 non-Retail configuration entries; 9,442 lexical phase-symbol references. References are not emitted acquisition counts. The separate 5,554-call authoring inventory and 1,664-directive `SEASON_OF_DISCOVERY` inventory measure different things and must not be summed as phases.
