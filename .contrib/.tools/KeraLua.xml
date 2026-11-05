@@ -700,11 +700,10 @@
             </summary>
             <param name="number"></param>
         </member>
-        <member name="M:KeraLua.Lua.PushThread(KeraLua.Lua)">
+        <member name="M:KeraLua.Lua.PushThread">
             <summary>
             Pushes the thread represented by L onto the stack. Returns true if this thread is the main thread of its state. 
             </summary>
-            <param name="thread"></param>
             <returns></returns>
         </member>
         <member name="M:KeraLua.Lua.PushCopy(System.Int32)">
@@ -1390,6 +1389,58 @@
         <member name="M:KeraLua.Lua.OpenLibs">
             <summary>
             Opens all standard Lua libraries into the given state. 
+            Equivalent to calling <c>luaL_openlibs</c>
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenBasicLibrary">
+            <summary>
+            Opens the base library (<c>_G</c>), registering core global functions
+            such as <c>print</c>, <c>pairs</c>, and <c>type</c>
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenPackageLibrary">
+            <summary>
+            Opens the package library, enabling module loading via <c>require</c>
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenCoroutineLibrary">
+            <summary>
+            Opens the coroutine library for cooperative multitasking
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenTableLibrary">
+            <summary>
+            Opens the table library for table manipulation utilities
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenIOLibrary">
+            <summary>
+            Opens the I/O library for file operations
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenOSLibrary">
+            <summary>
+            Opens the OS library for operating system interactions
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenStringLibrary">
+            <summary>
+            Opens the string library for string manipulation functions
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenUTF8Library">
+            <summary>
+            Opens the UTF-8 library for Unicode string handling
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenMathLibrary">
+            <summary>
+            Opens the math library for mathematical operations
+            </summary>
+        </member>
+        <member name="M:KeraLua.Lua.OpenDebugLibrary">
+            <summary>
+            Opens the debug library for advanced debugging and introspection
             </summary>
         </member>
         <member name="M:KeraLua.Lua.OptInteger(System.Int32,System.Int64)">

@@ -414,12 +414,12 @@
         </member>
         <member name="M:ATT.PropertyChanged`1.#ctor">
             <summary>
-            Contruct an empty Property with the default value.
+            Construct an empty Property with the default value.
             </summary>
         </member>
         <member name="M:ATT.PropertyChanged`1.#ctor(`0)">
             <summary>
-            Contruct an empty Property with a specific default value.
+            Construct an empty Property with a specific default value.
             </summary>
             <param name="defaultValue">The default value.</param>
         </member>
@@ -467,7 +467,7 @@
         </member>
         <member name="M:ATT.SavedVariables.Parse(System.IO.DirectoryInfo)">
             <summary>
-            Parse the Saved Variables into a more usuable format.
+            Parse the Saved Variables into a more usable format.
             </summary>
             <param name="root">The Saved Variables Root Folder for the Account.</param>
             <returns>The less raw data.</returns>
