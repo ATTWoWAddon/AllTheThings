@@ -827,6 +827,7 @@ namespace ATT
                 Framework.WaitForUser();
                 throw new ArgumentNullException("DataPatch");
             }
+            ProgressionCatalog.Initialize(Config);
             CURRENT_RELEASE_VERSION = configPatch.ConvertVersion();
             DATA_REQUIREMENTS = Config["DataRequirements"] ?? null;
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
@@ -2127,6 +2128,9 @@ namespace ATT
                     .AppendLine("local localize = function(t, data) for k,v in pairs(data) do t[k] = v end end")
                     .AppendLine("local appName, _, a = ...")
                     .AppendLine("local L = _.L").AppendLine();
+                var progressionProfile = ProgressionCatalog.ExportProfile();
+                if (progressionProfile != null)
+                    localizationDatabase.Append("_.ProgressionProfile=").AppendLine(ExportPureLua(progressionProfile).ToString());
                 Dictionary<string, StringBuilder> localizationByLocale = new Dictionary<string, StringBuilder>();
                 foreach (var language in SUPPORTED_LOCALES.Except(l => l == "en"))
                 {
@@ -3686,6 +3690,7 @@ setmetatable(_.HeaderConstants, {
                 }
                 IncludePureNewlines = true;
                 WriteIfDifferent(referenceDBFilename, referenceDB.ToString());
+                ProgressionCatalog.WriteDiagnostics(addonRootFolder);
 
                 // General Incorporation data references
                 var incorporationFolder = Path.Combine(addonRootFolder, $".contrib/Debugging/IncorporationRefs", dbRootFolder);

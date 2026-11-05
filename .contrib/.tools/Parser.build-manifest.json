@@ -1,0 +1,42 @@
+{
+  "repository": "ATTWoWAddon/AllTheThings",
+  "commit": "b307f066b13771f18a847d7f3fdbccf4d27d3a3f",
+  "runId": "41974495364",
+  "runAttempt": "1",
+  "configuration": "Release",
+  "platform": "x64",
+  "files": [
+    {
+      "path": "Csv.dll",
+      "sha256": "19b0c7aff956a6900cf58c871b479d8a3f29d0843de99e6d24dca9631cbec61d"
+    },
+    {
+      "path": "KeraLua.dll",
+      "sha256": "5a8addbb6c119a887bdcbd9b971d338f0849066be82e25ff20eaaeaf00e0443c"
+    },
+    {
+      "path": "liblua54.dylib",
+      "sha256": "00145bdeabb1cc4a8730bba042f2e18ed51b9f589a33a792cdc764a0b25fdd66"
+    },
+    {
+      "path": "liblua54.so",
+      "sha256": "31ad48a61bb6f5fd8a10f163d644ad403c0136722b6e23caf7532c3c43689bc2"
+    },
+    {
+      "path": "lua54.dll",
+      "sha256": "2d563db79f53acca0164fa0c0d53f99e2d1bd0d50b427b85c7cc2b2158657833"
+    },
+    {
+      "path": "NLua.dll",
+      "sha256": "476fff1274aa8a85d18df8ca1cfc1f420ed4654dcf9aba0957b93b978a3592f6"
+    },
+    {
+      "path": "Parser.exe",
+      "sha256": "102117c4b1d09cb1de9c1f70066afb5a6a3e84dbdf1ba297ae2c6bf6a87d69ef"
+    },
+    {
+      "path": "Parser.exe.config",
+      "sha256": "3c07dd192272d154ba6cd96e906801671aadce330ef37b62bfe91dd04e9af155"
+    }
+  ]
+}
