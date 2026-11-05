@@ -30,6 +30,9 @@ local function MakeApp(interface, project, wrathProject, options)
 		GetLocale = function() return options.locale or "enUS"; end,
 		GetCurrentRegion = function() return options.region or 1; end,
 		GetRealmName = function() return "FixtureRealm"; end,
+		GetItemClassInfo = function() return "FixtureItemClass"; end,
+		GetItemSubClassInfo = function() return "FixtureItemSubClass"; end,
+		GetSpellInfo = function() return "FixtureSpell"; end,
 		C_Seasons = options.season and { GetActiveSeason = function() return options.season; end } or nil,
 		C_Item = options.transmog and {} or nil,
 		C_Transmog = options.transmog and { GetSlotForInventoryType = function() end } or nil,
@@ -194,8 +197,9 @@ local function LoadFlavors(interface, project, season, classic)
 	});
 	app.DefaultColors = setmetatable({}, { __index = function() return "ffffff"; end });
 	app.FilterConstants, app.HeaderConstants = {}, {};
+	app.Modules.Events = { CreateSchedule = function() return {}; end, SetEventInformation = function() end };
 	app.AddEventHandler = function(event, callback)
-		assert(event == "OnBuildDataCache", "Unexpected generated database event");
+		assert(event == "OnBuildDataCache" or event == "OnBuildHiddenDataCache", "Unexpected generated database event: " .. event);
 		state.registrations[current] = (state.registrations[current] or 0) + 1;
 	end;
 	-- Keep values behind a proxy so overwriting an existing reference is observable too.
