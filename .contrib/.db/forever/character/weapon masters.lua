@@ -4,6 +4,7 @@
 -- CRIEVE NOTE: I wanted to add Weapon Masters to the zones without polluting the main files.
 local WEAPON_SKILL_BOWS = {
 	recipeID = 264,	-- Bows
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		ROGUE,
@@ -12,6 +13,7 @@ local WEAPON_SKILL_BOWS = {
 };
 local WEAPON_SKILL_CROSSBOWS = {
 	recipeID = 5011,	-- Crossbows
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		ROGUE,
@@ -20,6 +22,7 @@ local WEAPON_SKILL_CROSSBOWS = {
 };
 local WEAPON_SKILL_DAGGERS = {
 	recipeID = 1180,	-- Daggers
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,
 		HUNTER,
@@ -33,6 +36,7 @@ local WEAPON_SKILL_DAGGERS = {
 };
 local WEAPON_SKILL_FIST_WEAPONS = {
 	recipeID = 15590,	-- Fist Weapons
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,
 		HUNTER,
@@ -43,6 +47,7 @@ local WEAPON_SKILL_FIST_WEAPONS = {
 };
 local WEAPON_SKILL_GUNS = {
 	recipeID = 266,	-- Guns
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		ROGUE,
@@ -51,6 +56,7 @@ local WEAPON_SKILL_GUNS = {
 };
 local WEAPON_SKILL_ONE_HANDED_AXES = {
 	recipeID = 196,	-- One-Handed Axes
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		PALADIN,
@@ -61,6 +67,7 @@ local WEAPON_SKILL_ONE_HANDED_AXES = {
 };
 local WEAPON_SKILL_ONE_HANDED_MACES = {
 	recipeID = 198,	-- One-Handed Maces
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,
 		PALADIN,
@@ -72,6 +79,7 @@ local WEAPON_SKILL_ONE_HANDED_MACES = {
 };
 local WEAPON_SKILL_ONE_HANDED_SWORDS = {
 	recipeID = 201,	-- One-Handed Swords
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		MAGE,
@@ -83,6 +91,7 @@ local WEAPON_SKILL_ONE_HANDED_SWORDS = {
 };
 local WEAPON_SKILL_POLEARMS = {
 	recipeID = 200,	-- Polearms
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,	-- New with Forever
 		HUNTER,
@@ -92,6 +101,7 @@ local WEAPON_SKILL_POLEARMS = {
 };
 local WEAPON_SKILL_STAVES = {
 	recipeID = 227,	-- Staves
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,
 		HUNTER,
@@ -104,6 +114,7 @@ local WEAPON_SKILL_STAVES = {
 };
 local WEAPON_SKILL_THROWN = {
 	recipeID = 2567,	-- Thrown
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		ROGUE,
@@ -112,6 +123,7 @@ local WEAPON_SKILL_THROWN = {
 };
 local WEAPON_SKILL_TWO_HANDED_AXES = {
 	recipeID = 197,	-- Two-Handed Axes
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		PALADIN,
@@ -121,6 +133,7 @@ local WEAPON_SKILL_TWO_HANDED_AXES = {
 };
 local WEAPON_SKILL_TWO_HANDED_MACES = {
 	recipeID = 199,	-- Two-Handed Maces
+	_drop = { "requireSkill" },
 	classes = {
 		DRUID,
 		PALADIN,
@@ -130,6 +143,7 @@ local WEAPON_SKILL_TWO_HANDED_MACES = {
 };
 local WEAPON_SKILL_TWO_HANDED_SWORDS = {
 	recipeID = 202,	-- Two-Handed Swords
+	_drop = { "requireSkill" },
 	classes = {
 		HUNTER,
 		PALADIN,
@@ -138,6 +152,7 @@ local WEAPON_SKILL_TWO_HANDED_SWORDS = {
 };
 local WEAPON_SKILL_WANDS = {
 	recipeID = 5009,	-- Wands
+	_drop = { "requireSkill" },
 	classes = {
 		MAGE,
 		PRIEST,
