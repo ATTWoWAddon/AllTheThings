@@ -512,17 +512,6 @@ battleground(MAP.ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
-			q(7141, {	-- The Battle of Alterac (Alliance)
-				qg = 13816,	-- Prospector Stonehewer
-				coord = { 41.0, 79.6, MAP.ALTERAC_MOUNTAINS },
-				races = ALLIANCE_ONLY,
-				groups = {
-					objective(1, {	-- 0/1 Drek'Thar slain
-						provider = { "n", 11946 },	-- Drek'Thar <Frostwolf General>
-						coord = { 47.2, 86.9, MAP.ALTERAC_VALLEY },
-					}),
-				},
-			}),
 			q(7142, {	-- The Battle for Alterac (Horde)
 				qg = 13817,	-- Voggah Deathgrip
 				coord = { 63.6, 60.4, MAP.ALTERAC_MOUNTAINS },
@@ -531,6 +520,17 @@ battleground(MAP.ALTERAC_VALLEY, {
 					objective(1, {	-- 0/1 Vanndar Stormpike slain
 						provider = { "n", 11948 },	-- Vanndar Stormpike <Stormpike General>
 						coord = { 42.3, 12.8, MAP.ALTERAC_VALLEY },
+					}),
+				},
+			}),
+			q(7141, {	-- The Battle of Alterac (Alliance)
+				qg = 13816,	-- Prospector Stonehewer
+				coord = { 41.0, 79.6, MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				groups = {
+					objective(1, {	-- 0/1 Drek'Thar slain
+						provider = { "n", 11946 },	-- Drek'Thar <Frostwolf General>
+						coord = { 47.2, 86.9, MAP.ALTERAC_VALLEY },
 					}),
 				},
 			}),

@@ -97,12 +97,6 @@ root(ROOTS.WorldEvents, {
 						}),
 					},
 				}),
-				q(8597, {	-- Draconic for Dummies
-					sourceQuest = 8576,	-- Translating the Ledger
-					qg = 11811,	-- Narain Soothfancy
-					coord = { 65.2, 18.6, MAP.TANARIS },
-					lvl = 60,
-				}),
 				q(8586, {	-- Dirge's Kickin' Chimaerok Chops
 					sourceQuest = 8585,	-- The Isle of Dread!
 					qg = 8125,	-- Dirge Quikcleave <Butcher>
@@ -115,6 +109,12 @@ root(ROOTS.WorldEvents, {
 					groups = {
 						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops (RECIPE!)
 					},
+				}),
+				q(8597, {	-- Draconic for Dummies
+					sourceQuest = 8576,	-- Translating the Ledger
+					qg = 11811,	-- Narain Soothfancy
+					coord = { 65.2, 18.6, MAP.TANARIS },
+					lvl = 60,
 				}),
 				q(8733, {	-- Eranikus, Tyrant of the Dream
 					sourceQuest = 8555,	-- The Charge of the Dragonflights

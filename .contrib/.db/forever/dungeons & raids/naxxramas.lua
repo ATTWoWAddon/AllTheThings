@@ -1580,6 +1580,17 @@ root(ROOTS.Instances, {
 								i(22707),	-- Ramaladni's Icy Grasp
 							},
 						}),
+						q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
+							altQuests = {
+								9121,	-- The Dread Citadel - Naxxramas [Honored]
+								9122,	-- The Dread Citadel - Naxxramas [Revered]
+								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
+							},
+							qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+							coord = { 81.5, 58.3, MAP.EASTERN_PLAGUELANDS },
+							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
+							lvl = 60,
+						}),
 						q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
 							altQuests = {
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
@@ -1612,17 +1623,6 @@ root(ROOTS.Instances, {
 								{ "i", 20725, 1 },	-- Nexus Crystal
 								{ "g", 300000 },	-- 30g
 							},
-							lvl = 60,
-						}),
-						q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
-							altQuests = {
-								9121,	-- The Dread Citadel - Naxxramas [Honored]
-								9122,	-- The Dread Citadel - Naxxramas [Revered]
-								9378,	-- Attunement [HIDDEN QUEST TRIGGER]
-							},
-							qg = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							coord = { 81.5, 58.3, MAP.EASTERN_PLAGUELANDS },
-							minReputation = { FACTION_ARGENT_DAWN, EXALTED },
 							lvl = 60,
 						}),
 						q(9120, {	-- The Fall of Kel'Thuzad

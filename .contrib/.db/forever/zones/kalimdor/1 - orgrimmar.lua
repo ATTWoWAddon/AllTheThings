@@ -174,213 +174,92 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 		}),
 		n(QUESTS, {
-			q(1501, {	-- Creature of the Void [Orgrimmar]
-				sourceQuest = 1506,	-- Gan'rul's Summons
-				altQuests = { 1473 },	-- Creature of the Void [Undercity]
-				qg = 5875,	-- Gan'rul Bloodeye
-				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				maps = { MAP.DUROTAR },
-				races = { ORC, TROLL, UNDEAD },
-				classes = { WARLOCK },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Tablet of Verga
-						providers = {
-							{ "i", 6535 },	-- Tablet of Verga
-							{ "o", 58595 },	-- Burning Blade Stash
-						},
-						coord = { 51.6, 9.7, MAP.DUROTAR },
-					}),
-				},
-			}),
-			q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
-				sourceQuest = 1501,	-- Creature of the Void [Orgrimmar]
-				altQuests = { 1471 },	-- The Binding (Voidwalker) [Undercity]
-				qg = 5875,	-- Gan'rul Bloodeye
-				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				races = { ORC, TROLL, UNDEAD },
-				classes = { WARLOCK },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Summoned Voidwalker slain
-						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning
-					}),
-					recipe(697),	-- Summon Voidwalker
-				},
-			}),
-			q(1508, {	-- Blind Cazul
-				sourceQuests = {
-					1507,	-- Devourer of Souls [Orgrimmar]
-					1472,	-- Devourer of Souls [Undercity]
-				},
-				qg = 5909,	-- Cazul
-				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
-				races = { ORC, UNDEAD },
-				lvl = 20,
-			}),
-			q(1509, {	-- News of Dogran (1/2)
-				sourceQuest = 1508,	-- Blind Cazul
-				qg = 5910,	-- Zankaja
-				coord = { 37.0, 59.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
-				races = { ORC, UNDEAD },
-				lvl = 20,
-			}),
-			q(1513, {	-- The Binding (Succubus) [Orgrimmar]
-				sourceQuest = 1512,	-- Love's Gift
-				altQuests = { 1474 },	-- The Binding (Succubus) [Undercity]
-				qg = 5875,	-- Gan'rul Bloodeye
-				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
+			q(7831, {	-- A Donation of Mageweave
+				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
+				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
+				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Summoned Succubus slain
-						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant
-					}),
-					recipe(712),	-- Summon Succubus
-					i(22243),	-- Small Soul Pouch
-				},
+				lvl = 40,
 			}),
-			q(1858, {	-- The Shattered Hand (2/2)
-				sourceQuest = 1963,	-- The Shattered Hand (1/2)
-				qg = 6446,	-- Therzok
-				coord = { 42.74, 53.52, MAP.ORGRIMMAR },
-				races = { ORC, TROLL },
-				classes = { ROGUE },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Tazan's Logbook
-						providers = {
-							{ "i", 7295 },	-- Tazan's Logbook
-							{ "i", 7208 },	-- Tazan's Key
-							{ "i", 7209 },	-- Tazan's Satchel
-						},
-						coord = { 54.2, 68.2, MAP.ORGRIMMAR },
-						cr = 6466,	-- Gamon
-					}),
-					i(7298),	-- Blade of Cunning
-				},
+			q(7835, {	-- A Donation of Mageweave
+				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
+				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
+				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
+				races = HORDE_ONLY,
+				lvl = 40,
 			}),
-			q(1943, {	-- Speak with Deino
-				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
-				coord = { 85.0, 10.2, MAP.UNDERCITY },
-				races = { UNDEAD, TROLL },
-				classes = { MAGE },
-				isBreadcrumb = true,
+			q(7824, {	-- A Donation of Runecloth
+				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
+				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
+				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
+				races = HORDE_ONLY,
+				lvl = 50,
+			}),
+			q(7836, {	-- A Donation of Runecloth
+				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
+				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
+				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
+				races = HORDE_ONLY,
+				lvl = 50,
+			}),
+			q(7827, {	-- A Donation of Silk
+				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
+				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
+				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
+				races = HORDE_ONLY,
 				lvl = 26,
 			}),
-			q(1944, {	-- Waters of Xavian
-				sourceQuest = 1943,	-- Speak with Deino
-				qg = 5885,	-- Deino <Mage Trainer>
-				coord = { 38.6, 86.0, MAP.ORGRIMMAR },
-				maps = { MAP.ASHENVALE },
-				races = { UNDEAD, TROLL },
-				classes = { MAGE },
+			q(7834, {	-- A Donation of Silk
+				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
+				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
+				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
+				races = HORDE_ONLY,
 				lvl = 26,
+			}),
+			q(7826, {	-- A Donation of Wool
+				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
+				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
+				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
+				races = HORDE_ONLY,
+				lvl = 12,
+			}),
+			q(7833, {	-- A Donation of Wool
+				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
+				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
+				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
+				races = HORDE_ONLY,
+				lvl = 12,
+			}),
+			q(7341, {	-- A Fair Trade
+				qg = 14182,	-- Bounty Hunter Kolark
+				coord = { 74.4, 26.4, MAP.ORGRIMMAR },
+				cost = { { "i", 15997, 200 } },	-- 200x Thorium Shells
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = 52,
 				groups = {
-					objective(1, {	-- 0/1 Xavian Water Sample
-						providers = {
-							{ "i", 7268 },	-- Xavian Water Sample
-							{ "i", 7269 },	-- Deino's Flask
-						},
-						coord = { 76.0, 41.0, MAP.ASHENVALE },
-					}),
+					i(18042),	-- Thorium Headed Arrow
 				},
 			}),
-			q(1945, {	-- Laughing Sisters
-				sourceQuest = 1944,	-- Waters of Xavian
-				qg = 5885,	-- Deino <Mage Trainer>
-				coord = { 38.6, 86.0, MAP.ORGRIMMAR },
-				maps = { MAP.ASHENVALE },
-				classes = { MAGE },
-				races = { UNDEAD, TROLL },
-				lvl = 26,
-				groups = {
-					objective(1, {	-- 0/12 Laughing Sister's Hair
-						provider = { "i", 7270 },	-- Laughing Sister's Hair
-						cr = 4054,	-- Laughing Sister
-					}),
-				},
-			}),
-			q(1963, {	-- The Shattered Hand (1/2)
-				sourceQuest = 1859,	-- Therzok
-				qg = 6446,	-- Therzok
-				coord = { 42.74, 53.52, MAP.ORGRIMMAR },
-				maps = { MAP.THE_BARRENS },
-				races = { ORC, TROLL },
-				classes = { ROGUE },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Tazan's Satchel
-						provider = { "i", 7209 },	-- Tazan's Satchel
-						coord = { 63.8, 44.6, MAP.THE_BARRENS },
-						cr = 6494,	-- Tazan
-					}),
-				},
-			}),
-			q(2378, {	-- Find the Shattered Hand
-				altQuests = { 2380 },	-- To Orgrimmar!
-				qg = 6467,	-- Mennet Carkad
-				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				classes = { ROGUE },
+			q(7832, {	-- Additional Runecloth [Darkspear Trolls]
+				sourceQuest = 7824,	-- A Donation of Runecloth
+				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
+				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
+				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
+				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
-				lvl = 16,
+				repeatable = true,
+				lvl = 50,
 			}),
-			q(2379, {	-- Zando'zan
-				sourceQuest = 2378,	-- Find the Shattered Hand
-				qg = 3401,	-- Shenthul
-				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
+			q(7837, {	-- Additional Runecloth [Orgrimmar]
+				sourceQuest = 7836,	-- A Donation of Runecloth
+				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
+				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
+				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
+				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				lvl = 16,
-			}),
-			q(2380, {	-- To Orgrimmar!
-				altQuests = { 2378 },	-- Find the Shattered Hand
-				qg = 3170,	-- Kaplak
-				coord = { 51.98, 43.70, MAP.DUROTAR },
-				races = HORDE_ONLY,
-				classes = { ROGUE },
-				isBreadcrumb = true,
-				lvl = 16,
-			}),
-			q(2382, {	-- Wrenix of Ratchet
-				sourceQuest = 2379,	-- Zando'zan
-				qg = 3402,	-- Zando'zan
-				coord = { 42.8, 53.0, MAP.ORGRIMMAR },
-				classes = { ROGUE },
-				races = HORDE_ONLY,
-				lvl = 16,
-			}),
-			q(2458, {	-- Deep Cover
-				sourceQuest = 2460,	-- The Shattered Salute
-				qg = 3401,	-- Shenthul
-				qi = 8051,	-- Flare Gun
-				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
-				races = HORDE_ONLY,
-				lvl = 20,
-			}),
-			q(2460, {	-- The Shattered Salute
-				sourceQuest = 2380,	-- To Orgrimmar!
-				qg = 3401,	-- Shenthul
-				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
-				races = HORDE_ONLY,
-				lvl = 20,
-			}),
-			q(2479, {	-- Hinott's Assistance (1/2)
-				sourceQuest = 2478,	-- Mission: Possible But Not Probable
-				qg = 3401,	-- Shenthul
-				qi = 8087,	-- Sample of Zanzil's Altered Mixture
-				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
-				races = HORDE_ONLY,
-				lvl = 20,
+				repeatable = true,
+				lvl = 50,
 			}),
 			q(2751, {	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
@@ -400,42 +279,197 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			q(2752, {	-- On Iron Pauldrons
-				sourceQuest = 2751,	-- Barbaric Battlements
-				qg = 7790,	-- Orokk Omosh
-				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
-				cost = {
-					{ "i", 7958, 4 },	-- 4x Bronze Battle Axe
-					{ "i", 7956, 4 },	-- 4x Bronze Warhammer
-				},
-				requireSkill = BLACKSMITHING,
-				learnedAt = 140,
+			q(96875, {	-- Beasts of Thunder Ridge
+				qg = 5811,	-- Kamari <Journeyman Leatherworker>
+				coord = { 63.2, 44.4, MAP.ORGRIMMAR },
+				cost = { { "i", 4231, 2 } },	-- 2x Cured Light Hide
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				lvl = 32,
+				requireSkill = LEATHERWORKING,
+				lvl = 6,
 				groups = {
-					i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
-						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+					objective(1, {	-- 0/5 Rough Lizard Hide
+						provider = { "i", 275720 },	-- Rough Lizard Hide
+						crs = {
+							3131,	-- Lightning Hide
+							3130,	-- Thunder Lizard
+						},
+						coord = { 40.0, 24.1, MAP.DUROTAR },
+					}),
+					i(277716),	-- Pattern: Light Leather Reagent Bag (RECIPE!)
+				},
+			}),
+			q(1508, {	-- Blind Cazul
+				sourceQuests = {
+					1507,	-- Devourer of Souls [Orgrimmar]
+					1472,	-- Devourer of Souls [Undercity]
+				},
+				qg = 5909,	-- Cazul
+				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = { ORC, UNDEAD },
+				lvl = 20,
+			}),
+			q(4300, {	-- Bone-Bladed Weapons
+				qg = 8659,	-- Jes'rimon
+				coord = { 55.6, 34.2, MAP.ORGRIMMAR },
+				maps = { MAP.UNGORO_CRATER },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 White Ravasaur Claw
+						provider = { "i", 11477 },	-- White Ravasaur Claw
+						crs = {
+							9683,	-- Lar'korwi Mate
+							6505,	-- Ravasaur
+							6507,	-- Ravasaur Hunter
+							6581,	-- Ravasaur Matriarch
+							6506,	-- Ravasaur Runner
+							6508,	-- Venomhide Ravasaur
+						},
+					}),
+					i(11862),	-- White Bone Band
+					i(11863),	-- White Bone Shredder
+					i(11864),	-- White Bone Spear
+				},
+			}),
+			q(2757, {	-- Booty Bay or Bust!
+				sourceQuest = 2756,	-- The Old Ways
+				qg = 7793,	-- Ox
+				qi = 8663,	-- Mithril Insignia
+				coord = { 80.4, 23.2, MAP.ORGRIMMAR },
+				requireSkill = BLACKSMITHING,
+				learnedAt = 210,
+				races = HORDE_ONLY,
+				lvl = 40,
+			}),
+			q(4511, {	-- Calm Before the Storm (2/2)
+				sourceQuest = 4509,	-- Calm Before the Storm (1/2)
+				qg = 7010,	-- Zilzibin Drumlore
+				coord = { 56.4, 46.6, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
+					i(11870),	-- Oblivion Orb
+					i(11871),	-- Snarkshaw Spaulders
+					i(11872),	-- Eschewal Greaves
+				},
+			}),
+			q(1501, {	-- Creature of the Void [Orgrimmar]
+				sourceQuest = 1506,	-- Gan'rul's Summons
+				altQuests = { 1473 },	-- Creature of the Void [Undercity]
+				qg = 5875,	-- Gan'rul Bloodeye
+				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
+				maps = { MAP.DUROTAR },
+				races = { ORC, TROLL, UNDEAD },
+				classes = { WARLOCK },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Tablet of Verga
+						providers = {
+							{ "i", 6535 },	-- Tablet of Verga
+							{ "o", 58595 },	-- Burning Blade Stash
+						},
+						coord = { 51.6, 9.7, MAP.DUROTAR },
 					}),
 				},
 			}),
-			q(2753, {	-- Trampled Under Foot
-				sourceQuest = 2752,	-- On Iron Pauldrons
-				qg = 7790,	-- Orokk Omosh
-				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
-				cost = {
-					{ "i", 3836, 4 },	-- 4x Green Iron Helm
-					{ "i", 3835, 4 },	-- 4x Green Iron Bracers
-					{ "i", 3842, 2 },	-- 2x Green Iron Leggings
-				},
-				requireSkill = BLACKSMITHING,
-				learnedAt = 140,
+			q(2458, {	-- Deep Cover
+				sourceQuest = 2460,	-- The Shattered Salute
+				qg = 3401,	-- Shenthul
+				qi = 8051,	-- Flare Gun
+				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
+				classes = { ROGUE },
 				races = HORDE_ONLY,
-				lvl = 32,
+				lvl = 20,
+			}),
+			q(97249, {	-- Favorite Food
+				sourceQuest = 97246,	-- Meal Appeal
+				qg = 3368,	-- Borstan <Meat Vendor>
+				qi = 277284,	-- Migi's Lunch (PQI!)
+				coord = { 57.4, 53.4, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
+			}),
+			q(2378, {	-- Find the Shattered Hand
+				altQuests = { 2380 },	-- To Orgrimmar!
+				qg = 6467,	-- Mennet Carkad
+				coord = { 83.2, 69.0, MAP.UNDERCITY },
+				classes = { ROGUE },
+				races = HORDE_ONLY,
+				isBreadcrumb = true,
+				lvl = 16,
+			}),
+			q(5652, {	-- Hex of Weakness [Orgrimmar]
+				altQuests = {
+					5654,	-- Hex of Weakness [Durotar]
+					5655,	-- Hex of Weakness [Mulgore]
+					5656,	-- Hex of Weakness [Thunder Bluff]
+					5657,	-- Hex of Weakness [Undercity]
+				},
+				qgs = {
+					6018,	-- Ur'kyo <Priest Trainer>
+					3706,	-- Tai'jin <Priest Trainer>
+					11407,	-- Var'jun
+					3044,	-- Miles Welsh <Priest Trainer>
+					4606,	-- Aelthalyste <Priest Trainer>
+				},
+				coords = {
+					{ 35.6, 87.6, MAP.ORGRIMMAR },
+					{ 54.2, 42.8, MAP.DUROTAR },
+					{ 47.0, 58.8, MAP.MULGORE },
+					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
+					{ 49.01, 18.32, MAP.UNDERCITY },
+				},
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 10,
 				groups = {
-					i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
-						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+					{
+						recipeID = 9035,	-- Hex of Weakness (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
+			q(5726, {	-- Hidden Enemies (1/5)
+				qg = 4949,	-- Thrall <Warchief>
+				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
+				maps = { MAP.DUROTAR },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/1 Lieutenant's Insignia
+						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						crs = {
+							3198,	-- Burning Blade Apprentice
+							3197,	-- Burning Blade Fanatic
+						},
 					}),
 				},
+			}),
+			q(5727, {	-- Hidden Enemies (2/5)
+				sourceQuest = 5726,	-- Hidden Enemies (1/5)
+				qg = 4949,	-- Thrall <Warchief>
+				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
+						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						coord = { 49.5, 50.6, MAP.ORGRIMMAR },
+						cr = 3216,	-- Neeru Fireblade
+					}),
+				},
+			}),
+			q(2479, {	-- Hinott's Assistance (1/2)
+				sourceQuest = 2478,	-- Mission: Possible But Not Probable
+				qg = 3401,	-- Shenthul
+				qi = 8087,	-- Sample of Zanzil's Altered Mixture
+				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
+				classes = { ROGUE },
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(2754, {	-- Horns of Frenzy
 				description =
@@ -472,53 +506,28 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			q(2756, {	-- The Old Ways
-				qg = 7792,	-- Aturk the Anvil
-				coord = { 80.6, 23.2, MAP.ORGRIMMAR },
-				cost = {
-					{ "i", 7963, 4 },	-- 4x Steel Breastplate
-					{ "i", 7922, 4 },	-- 4x Steel Plate Helm
-				},
-				requireSkill = BLACKSMITHING,
-				learnedAt = 210,
-				races = HORDE_ONLY,
-				lvl = 40,
+			q(1945, {	-- Laughing Sisters
+				sourceQuest = 1944,	-- Waters of Xavian
+				qg = 5885,	-- Deino <Mage Trainer>
+				coord = { 38.6, 86.0, MAP.ORGRIMMAR },
+				maps = { MAP.ASHENVALE },
+				classes = { MAGE },
+				races = { UNDEAD, TROLL },
+				lvl = 26,
 				groups = {
-					recipe(9957),	-- Orcish War Leggings
-				},
-			}),
-			q(2757, {	-- Booty Bay or Bust!
-				sourceQuest = 2756,	-- The Old Ways
-				qg = 7793,	-- Ox
-				qi = 8663,	-- Mithril Insignia
-				coord = { 80.4, 23.2, MAP.ORGRIMMAR },
-				requireSkill = BLACKSMITHING,
-				learnedAt = 210,
-				races = HORDE_ONLY,
-				lvl = 40,
-			}),
-			q(4300, {	-- Bone-Bladed Weapons
-				qg = 8659,	-- Jes'rimon
-				coord = { 55.6, 34.2, MAP.ORGRIMMAR },
-				maps = { MAP.UNGORO_CRATER },
-				races = HORDE_ONLY,
-				lvl = 48,
-				groups = {
-					objective(1, {	-- 0/1 White Ravasaur Claw
-						provider = { "i", 11477 },	-- White Ravasaur Claw
-						crs = {
-							9683,	-- Lar'korwi Mate
-							6505,	-- Ravasaur
-							6507,	-- Ravasaur Hunter
-							6581,	-- Ravasaur Matriarch
-							6506,	-- Ravasaur Runner
-							6508,	-- Venomhide Ravasaur
-						},
+					objective(1, {	-- 0/12 Laughing Sister's Hair
+						provider = { "i", 7270 },	-- Laughing Sister's Hair
+						cr = 4054,	-- Laughing Sister
 					}),
-					i(11862),	-- White Bone Band
-					i(11863),	-- White Bone Shredder
-					i(11864),	-- White Bone Spear
 				},
+			}),
+			q(65601, {	-- Love Hurts
+				sourceQuest = 1507,	-- Devourer of Souls [Orgrimmar]
+				qg = 5909,	-- Cazul
+				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(4494, {	-- March of the Silithid (H)
 				sourceQuest = 32,	-- Rise of the Silithid (H)
@@ -528,47 +537,59 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 50,
 			}),
-			q(4511, {	-- Calm Before the Storm (2/2)
-				sourceQuest = 4509,	-- Calm Before the Storm (1/2)
-				qg = 7010,	-- Zilzibin Drumlore
-				coord = { 56.4, 46.6, MAP.ORGRIMMAR },
+			q(97246, {	-- Meal Appeal
+				qg = 268701,	-- Thatog
+				coord = { 55.6, 72.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				lvl = 50,
+				lvl = 5,
+			}),
+			q(1509, {	-- News of Dogran (1/2)
+				sourceQuest = 1508,	-- Blind Cazul
+				qg = 5910,	-- Zankaja
+				coord = { 37.0, 59.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = { ORC, UNDEAD },
+				lvl = 20,
+			}),
+			q(2752, {	-- On Iron Pauldrons
+				sourceQuest = 2751,	-- Barbaric Battlements
+				qg = 7790,	-- Orokk Omosh
+				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
+				cost = {
+					{ "i", 7958, 4 },	-- 4x Bronze Battle Axe
+					{ "i", 7956, 4 },	-- 4x Bronze Warhammer
+				},
+				requireSkill = BLACKSMITHING,
+				learnedAt = 140,
+				races = HORDE_ONLY,
+				lvl = 32,
 				groups = {
-					i(11870),	-- Oblivion Orb
-					i(11871),	-- Snarkshaw Spaulders
-					i(11872),	-- Eschewal Greaves
+					i(7978, {	-- Plans: Barbaric Iron Shoulders (RECIPE!)
+						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+					}),
 				},
 			}),
-			q(5652, {	-- Hex of Weakness [Orgrimmar]
-				altQuests = {
-					5654,	-- Hex of Weakness [Durotar]
-					5655,	-- Hex of Weakness [Mulgore]
-					5656,	-- Hex of Weakness [Thunder Bluff]
-					5657,	-- Hex of Weakness [Undercity]
-				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					3044,	-- Miles Welsh <Priest Trainer>
-					4606,	-- Aelthalyste <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 54.2, 42.8, MAP.DUROTAR },
-					{ 47.0, 58.8, MAP.MULGORE },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-					{ 49.01, 18.32, MAP.UNDERCITY },
-				},
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 10,
+			q(97326, {	-- Rocks to Rests
+				qg = 268684,	-- Thra
+				coord = { 36.0, 28.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 5,
 				groups = {
-					{
-						recipeID = 9035,	-- Hex of Weakness (Rank 1)
-						rank = 1,
-					},
+					objective(1, {	-- 0/8 Smooth Boulder
+						providers = {
+							{ "i", 277952 },	-- Smooth Boulder
+							{ "o", 661446 },	-- Smooth Boulder
+							{ "o", 661448 },	-- Smooth Boulder
+							{ "o", 661449 },	-- Smooth Boulder
+						},
+					}),
+					i(281272),	-- Brog's Friendship Bracelet
+					i(281273),	-- Migi's Friendship Bracelet
+					i(281269),	-- Mogra's Friendship Bracelet
+					i(281271),	-- Puk's Friendship Bracelet
+					i(281270),	-- Thra's Friendship Bracelet
 				},
 			}),
 			q(5680, {	-- Shadowguard [Orgrimmar]
@@ -596,44 +617,122 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					},
 				},
 			}),
-			q(5726, {	-- Hidden Enemies (1/5)
-				qg = 4949,	-- Thrall <Warchief>
-				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
-				maps = { MAP.DUROTAR },
-				races = HORDE_ONLY,
-				lvl = 9,
-				groups = {
-					objective(1, {	-- 0/1 Lieutenant's Insignia
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
-						crs = {
-							3198,	-- Burning Blade Apprentice
-							3197,	-- Burning Blade Fanatic
-						},
-					}),
-				},
-			}),
-			q(5727, {	-- Hidden Enemies (2/5)
-				sourceQuest = 5726,	-- Hidden Enemies (1/5)
-				qg = 4949,	-- Thrall <Warchief>
-				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
-				lvl = 9,
-				groups = {
-					objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
-						coord = { 49.5, 50.6, MAP.ORGRIMMAR },
-						cr = 3216,	-- Neeru Fireblade
-					}),
-				},
-			}),
-			q(6608, {	-- You Too Good.
-				qg = 3332,	-- Lumak <Fishing Trainer>
-				coord = { 66.6, 41.6, MAP.ORGRIMMAR },	-- TODO: confirm if this is the correct coordinate for the fishing trainer in Orgrimmar
-				requireSkill = FISHING,
-				learnedAt = 225,
-				races = HORDE_ONLY,
+			q(1943, {	-- Speak with Deino
+				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
+				coord = { 85.0, 10.2, MAP.UNDERCITY },
+				races = { UNDEAD, TROLL },
+				classes = { MAGE },
 				isBreadcrumb = true,
-				lvl = 35,
+				lvl = 26,
+			}),
+			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
+				sourceQuest = 65610,	-- Wish You Were Here
+				altQuests = { 65597 },	-- The Binding (Incubus) [Undercity]
+				qg = 5875,	-- Gan'rul Bloodeye
+				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Incubus slain
+						provider = { "n", 185335 },	-- Summoned Incubus
+						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf
+					}),
+					recipe(713),	-- Summon Incubus
+					i(22243),	-- Small Soul Pouch
+				},
+			}),
+			q(1513, {	-- The Binding (Succubus) [Orgrimmar]
+				sourceQuest = 1512,	-- Love's Gift
+				altQuests = { 1474 },	-- The Binding (Succubus) [Undercity]
+				qg = 5875,	-- Gan'rul Bloodeye
+				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Succubus slain
+						provider = { "n", 5677 },	-- Summoned Succubus
+						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant
+					}),
+					recipe(712),	-- Summon Succubus
+					i(22243),	-- Small Soul Pouch
+				},
+			}),
+			q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
+				sourceQuest = 1501,	-- Creature of the Void [Orgrimmar]
+				altQuests = { 1471 },	-- The Binding (Voidwalker) [Undercity]
+				qg = 5875,	-- Gan'rul Bloodeye
+				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
+				races = { ORC, TROLL, UNDEAD },
+				classes = { WARLOCK },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Voidwalker slain
+						provider = { "n", 5676 },	-- Summoned Voidwalker
+						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning
+					}),
+					recipe(697),	-- Summon Voidwalker
+				},
+			}),
+			q(2756, {	-- The Old Ways
+				qg = 7792,	-- Aturk the Anvil
+				coord = { 80.6, 23.2, MAP.ORGRIMMAR },
+				cost = {
+					{ "i", 7963, 4 },	-- 4x Steel Breastplate
+					{ "i", 7922, 4 },	-- 4x Steel Plate Helm
+				},
+				requireSkill = BLACKSMITHING,
+				learnedAt = 210,
+				races = HORDE_ONLY,
+				lvl = 40,
+				groups = {
+					recipe(9957),	-- Orcish War Leggings
+				},
+			}),
+			q(1963, {	-- The Shattered Hand (1/2)
+				sourceQuest = 1859,	-- Therzok
+				qg = 6446,	-- Therzok
+				coord = { 42.74, 53.52, MAP.ORGRIMMAR },
+				maps = { MAP.THE_BARRENS },
+				races = { ORC, TROLL },
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Tazan's Satchel
+						provider = { "i", 7209 },	-- Tazan's Satchel
+						coord = { 63.8, 44.6, MAP.THE_BARRENS },
+						cr = 6494,	-- Tazan
+					}),
+				},
+			}),
+			q(1858, {	-- The Shattered Hand (2/2)
+				sourceQuest = 1963,	-- The Shattered Hand (1/2)
+				qg = 6446,	-- Therzok
+				coord = { 42.74, 53.52, MAP.ORGRIMMAR },
+				races = { ORC, TROLL },
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Tazan's Logbook
+						providers = {
+							{ "i", 7295 },	-- Tazan's Logbook
+							{ "i", 7208 },	-- Tazan's Key
+							{ "i", 7209 },	-- Tazan's Satchel
+						},
+						coord = { 54.2, 68.2, MAP.ORGRIMMAR },
+						cr = 6466,	-- Gamon
+					}),
+					i(7298),	-- Blade of Cunning
+				},
+			}),
+			q(2460, {	-- The Shattered Salute
+				sourceQuest = 2380,	-- To Orgrimmar!
+				qg = 3401,	-- Shenthul
+				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
+				classes = { ROGUE },
+				races = HORDE_ONLY,
+				lvl = 20,
 			}),
 			q(6611, {	-- To Gadgetzan You Go!
 				coord = { 57.4, 53.6, MAP.ORGRIMMAR },
@@ -644,15 +743,82 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = 35,
 			}),
-			q(7341, {	-- A Fair Trade
-				qg = 14182,	-- Bounty Hunter Kolark
-				coord = { 74.4, 26.4, MAP.ORGRIMMAR },
-				cost = { { "i", 15997, 200 } },	-- 200x Thorium Shells
+			q(2380, {	-- To Orgrimmar!
+				altQuests = { 2378 },	-- Find the Shattered Hand
+				qg = 3170,	-- Kaplak
+				coord = { 51.98, 43.70, MAP.DUROTAR },
 				races = HORDE_ONLY,
-				repeatable = true,
-				lvl = 52,
+				classes = { ROGUE },
+				isBreadcrumb = true,
+				lvl = 16,
+			}),
+			q(2753, {	-- Trampled Under Foot
+				sourceQuest = 2752,	-- On Iron Pauldrons
+				qg = 7790,	-- Orokk Omosh
+				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
+				cost = {
+					{ "i", 3836, 4 },	-- 4x Green Iron Helm
+					{ "i", 3835, 4 },	-- 4x Green Iron Bracers
+					{ "i", 3842, 2 },	-- 2x Green Iron Leggings
+				},
+				requireSkill = BLACKSMITHING,
+				learnedAt = 140,
+				races = HORDE_ONLY,
+				lvl = 32,
 				groups = {
-					i(18042),	-- Thorium Headed Arrow
+					i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
+						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
+					}),
+				},
+			}),
+			q(1944, {	-- Waters of Xavian
+				sourceQuest = 1943,	-- Speak with Deino
+				qg = 5885,	-- Deino <Mage Trainer>
+				coord = { 38.6, 86.0, MAP.ORGRIMMAR },
+				maps = { MAP.ASHENVALE },
+				races = { UNDEAD, TROLL },
+				classes = { MAGE },
+				lvl = 26,
+				groups = {
+					objective(1, {	-- 0/1 Xavian Water Sample
+						providers = {
+							{ "i", 7268 },	-- Xavian Water Sample
+							{ "i", 7269 },	-- Deino's Flask
+						},
+						coord = { 76.0, 41.0, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(97275, {	-- Whuut's the Rush
+				qg = 3347,	-- Yelmak <Expert Alchemist>
+				qi = 277566,	-- Yelmak's Potion (PQI!)
+				coord = { 56.4, 33.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					i(929),	-- Healing Potion
+					i(3385),	-- Lesser Mana Potion
+				},
+			}),
+			q(65610, {	-- Wish You Were Here
+				sourceQuest = 65601,	-- Love Hurts
+				altQuests = { 65593 },	-- Hearts of the Lovers
+				qg = 3363,	-- Magar <Tailoring Trainer>
+				coord = { 63.6, 50.0, MAP.ORGRIMMAR },
+				maps = { MAP.ASHENVALE },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Withered Scarf
+						provider = { "i", 190232 },	-- Withered Scarf
+						crs = {
+							3782,	-- Shadethicket Stone Mover
+							3784,	-- Shadethicket Bark Ripper
+							3931,	-- Shadethicket Oracle
+						},
+					}),
 				},
 			}),
 			q(7660, {	-- Wolf Swapping - Arctic Wolf
@@ -677,146 +843,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				_drop = { "g" },
 				sym = { { "select", "itemID", 18796, 18798, 18797 } },
 			}),
-			q(7824, {	-- A Donation of Runecloth
-				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
+			q(2382, {	-- Wrenix of Ratchet
+				sourceQuest = 2379,	-- Zando'zan
+				qg = 3402,	-- Zando'zan
+				coord = { 42.8, 53.0, MAP.ORGRIMMAR },
+				classes = { ROGUE },
 				races = HORDE_ONLY,
-				lvl = 50,
-			}),
-			q(7826, {	-- A Donation of Wool
-				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
-				races = HORDE_ONLY,
-				lvl = 12,
-			}),
-			q(7827, {	-- A Donation of Silk
-				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
-				races = HORDE_ONLY,
-				lvl = 26,
-			}),
-			q(7831, {	-- A Donation of Mageweave
-				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
-				races = HORDE_ONLY,
-				lvl = 40,
-			}),
-			q(7832, {	-- Additional Runecloth [Darkspear Trolls]
-				sourceQuest = 7824,	-- A Donation of Runecloth
-				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
-				coord = { 63.4, 51.0, MAP.ORGRIMMAR },
-				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
-				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
-				races = HORDE_ONLY,
-				repeatable = true,
-				lvl = 50,
-			}),
-			q(7833, {	-- A Donation of Wool
-				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
-				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
-				races = HORDE_ONLY,
-				lvl = 12,
-			}),
-			q(7834, {	-- A Donation of Silk
-				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
-				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
-				races = HORDE_ONLY,
-				lvl = 26,
-			}),
-			q(7835, {	-- A Donation of Mageweave
-				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
-				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
-				races = HORDE_ONLY,
-				lvl = 40,
-			}),
-			q(7836, {	-- A Donation of Runecloth
-				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
-				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
-				races = HORDE_ONLY,
-				lvl = 50,
-			}),
-			q(7837, {	-- Additional Runecloth [Orgrimmar]
-				sourceQuest = 7836,	-- A Donation of Runecloth
-				qg = 14727,	-- Vehena <Horde Cloth Quartermaster>
-				coord = { 37.8, 87.6, MAP.ORGRIMMAR },
-				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
-				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
-				races = HORDE_ONLY,
-				repeatable = true,
-				lvl = 50,
-			}),
-			q(65601, {	-- Love Hurts
-				sourceQuest = 1507,	-- Devourer of Souls [Orgrimmar]
-				qg = 5909,	-- Cazul
-				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				lvl = 20,
-			}),
-			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
-				sourceQuest = 65610,	-- Wish You Were Here
-				altQuests = { 65597 },	-- The Binding (Incubus) [Undercity]
-				qg = 5875,	-- Gan'rul Bloodeye
-				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Summoned Incubus slain
-						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf
-					}),
-					recipe(713),	-- Summon Incubus
-					i(22243),	-- Small Soul Pouch
-				},
-			}),
-			q(65610, {	-- Wish You Were Here
-				sourceQuest = 65601,	-- Love Hurts
-				altQuests = { 65593 },	-- Hearts of the Lovers
-				qg = 3363,	-- Magar <Tailoring Trainer>
-				coord = { 63.6, 50.0, MAP.ORGRIMMAR },
-				maps = { MAP.ASHENVALE },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Withered Scarf
-						provider = { "i", 190232 },	-- Withered Scarf
-						crs = {
-							3782,	-- Shadethicket Stone Mover
-							3784,	-- Shadethicket Bark Ripper
-							3931,	-- Shadethicket Oracle
-						},
-					}),
-				},
-			}),
-			q(96875, {	-- Beasts of Thunder Ridge
-				qg = 5811,	-- Kamari <Journeyman Leatherworker>
-				coord = { 63.2, 44.4, MAP.ORGRIMMAR },
-				cost = { { "i", 4231, 2 } },	-- 2x Cured Light Hide
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				requireSkill = LEATHERWORKING,
-				lvl = 6,
-				groups = {
-					objective(1, {	-- 0/5 Rough Lizard Hide
-						provider = { "i", 275720 },	-- Rough Lizard Hide
-						crs = {
-							3131,	-- Lightning Hide
-							3130,	-- Thunder Lizard
-						},
-						coord = { 40.0, 24.1, MAP.DUROTAR },
-					}),
-					i(277716),	-- Pattern: Light Leather Reagent Bag (RECIPE!)
-				},
+				lvl = 16,
 			}),
 			q(97242, {	-- Yelmak's Medley
 				sourceQuest = 97246,	-- Meal Appeal
@@ -840,55 +873,22 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			q(97246, {	-- Meal Appeal
-				qg = 268701,	-- Thatog
-				coord = { 55.6, 72.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+			q(6608, {	-- You Too Good.
+				qg = 3332,	-- Lumak <Fishing Trainer>
+				coord = { 66.6, 41.6, MAP.ORGRIMMAR },	-- TODO: confirm if this is the correct coordinate for the fishing trainer in Orgrimmar
+				requireSkill = FISHING,
+				learnedAt = 225,
 				races = HORDE_ONLY,
-				lvl = 5,
+				isBreadcrumb = true,
+				lvl = 35,
 			}),
-			q(97249, {	-- Favorite Food
-				sourceQuest = 97246,	-- Meal Appeal
-				qg = 3368,	-- Borstan <Meat Vendor>
-				qi = 277284,	-- Migi's Lunch (PQI!)
-				coord = { 57.4, 53.4, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+			q(2379, {	-- Zando'zan
+				sourceQuest = 2378,	-- Find the Shattered Hand
+				qg = 3401,	-- Shenthul
+				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
+				classes = { ROGUE },
 				races = HORDE_ONLY,
-				lvl = 5,
-			}),
-			q(97275, {	-- Whuut's the Rush
-				qg = 3347,	-- Yelmak <Expert Alchemist>
-				qi = 277566,	-- Yelmak's Potion (PQI!)
-				coord = { 56.4, 33.2, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 9,
-				groups = {
-					i(929),	-- Healing Potion
-					i(3385),	-- Lesser Mana Potion
-				},
-			}),
-			q(97326, {	-- Rocks to Rests
-				qg = 268684,	-- Thra
-				coord = { 36.0, 28.2, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 5,
-				groups = {
-					objective(1, {	-- 0/8 Smooth Boulder
-						providers = {
-							{ "i", 277952 },	-- Smooth Boulder
-							{ "o", 661446 },	-- Smooth Boulder
-							{ "o", 661448 },	-- Smooth Boulder
-							{ "o", 661449 },	-- Smooth Boulder
-						},
-					}),
-					i(281272),	-- Brog's Friendship Bracelet
-					i(281273),	-- Migi's Friendship Bracelet
-					i(281269),	-- Mogra's Friendship Bracelet
-					i(281271),	-- Puk's Friendship Bracelet
-					i(281270),	-- Thra's Friendship Bracelet
-				},
+				lvl = 16,
 			}),
 		}),
 		n(RIDING_TRAINER, {

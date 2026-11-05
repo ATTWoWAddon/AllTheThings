@@ -242,6 +242,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				lvl = 14,
 			}),
+			q(95494, {	-- Bruised Pride and Lion Hides
+				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Savannah Lion Hide
+						provider = { "i", 269715 },	-- Savannah Lion Hide (QI!)
+					}),
+				},
+			}),
 			q(1838, {	-- Brutal Armor
 				sourceQuest = 1825,	-- Speak with Thun'grim
 				qg = 5878,	-- Thun'grim Firegaze
@@ -285,22 +297,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(7133),	-- Brutal Hauberk
 				},
 			}),
-			q(1522, {	-- Call of Fire (1/5) [Orgrimmar]
-				qg = 5892,	-- Searn Firewarder
-				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
-				classes = { SHAMAN },
-				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(1523, {	-- Call of Fire (1/5) [Thunder Bluff]
-				qg = 5906,	-- Xanis Flameweaver
-				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
-				classes = { SHAMAN },
-				races = HORDE_SHAMANS,
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
 			q(2983, {	-- Call of Fire (1/5) [Durotar]
 				qg = 3173,	-- Swart <Shaman Trainer>
 				coord = { 54.4, 42.6, MAP.DUROTAR },
@@ -314,6 +310,22 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				coord = { 48.4, 59.2, MAP.MULGORE },
 				races = HORDE_SHAMANS,
 				classes = { SHAMAN },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(1522, {	-- Call of Fire (1/5) [Orgrimmar]
+				qg = 5892,	-- Searn Firewarder
+				coord = { 37.8, 37.4, MAP.ORGRIMMAR },
+				classes = { SHAMAN },
+				races = HORDE_SHAMANS,
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(1523, {	-- Call of Fire (1/5) [Thunder Bluff]
+				qg = 5906,	-- Xanis Flameweaver
+				coord = { 25.2, 21.0, MAP.THUNDER_BLUFF },
+				classes = { SHAMAN },
+				races = HORDE_SHAMANS,
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
@@ -1211,6 +1223,19 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(95774, {	-- Her Name Is Olgra
+				sourceQuests = { 4921 },	-- Lost in Battle
+				qg = 3432,	-- Mankrik
+				coord = { 51.95, 31.58, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					objective(1, {	-- Olgra's Adornments
+						provider = { "i", 277277 },	-- Olgra's Adornments (QI!)
+					}),
+				},
+			}),
 			q(852, {	-- Hezrul Bloodmark
 				sourceQuest = 851,	-- Verog the Dervish
 				qg = 3389,	-- Regthar Deathgate
@@ -1248,6 +1273,18 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
+			q(858, {	-- Ignition
+				qg = 3439,	-- Wizzlecrank's Shredder
+				coord = { 56.52, 7.45, MAP.THE_BARRENS },
+				lvl = 13,
+				groups = {
+					objective(1, {	-- 0/1 Ignition Key
+						provider = { "i", 5050 },	-- Ignition Key
+						coord = { 56.2, 8.6, MAP.THE_BARRENS },
+						cr = 3445,	-- Supervisor Lugwizzle
+					}),
+				},
+			}),
 			q(4736, {	-- In Search of Menara Voidrender (Ironforge)
 				qg = 5172,	-- Briarthorn
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
@@ -1279,18 +1316,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 31,
-			}),
-			q(858, {	-- Ignition
-				qg = 3439,	-- Wizzlecrank's Shredder
-				coord = { 56.52, 7.45, MAP.THE_BARRENS },
-				lvl = 13,
-				groups = {
-					objective(1, {	-- 0/1 Ignition Key
-						provider = { "i", 5050 },	-- Ignition Key
-						coord = { 56.2, 8.6, MAP.THE_BARRENS },
-						cr = 3445,	-- Supervisor Lugwizzle
-					}),
-				},
 			}),
 			q(873, {	-- Isha Awak
 				sourceQuest = 874,	-- Mahren Skyseer
@@ -1349,19 +1374,27 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				isBreadcrumb = true,
 				lvl = 9,
 			}),
-			q(4967, {	-- Knowledge of the Orb of Orahil [Orgrimmar]
-				qg = 3326,	-- Zevrost
-				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				isBreadcrumb = true,
-				lvl = 35,
+			q(98024, {	-- Journey to the Crossroads
+				sourceQuest = 95350,	-- Welcome to Azeroth
+				qg = 4949,	-- Thrall <Warchief>
+				coord = { 31.73, 37.82, MAP.ORGRIMMAR },
+				races = { SKYBORNE_HORDE },
+				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(4965, {	-- Knowledge of the Orb of Orahil [Ironforge]
 				qg = 5172,	-- Briarthorn
 				coord = { 50.2, 6.0, MAP.IRONFORGE },
 				classes = { WARLOCK },
 				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 35,
+			}),
+			q(4967, {	-- Knowledge of the Orb of Orahil [Orgrimmar]
+				qg = 3326,	-- Zevrost
+				coord = { 48.4, 45.6, MAP.ORGRIMMAR },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 35,
 			}),
@@ -1751,16 +1784,16 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				repeatable = true,
 				lvl = 14,
 			}),
-			q(6541, {	-- Report to Kadrak (The Barrens)
-				qg = 3429,	-- Thork
-				coord = { 51.50, 30.86, MAP.THE_BARRENS },
+			q(6542, {	-- Report to Kadrak (Stonetalon Mountains)
+				qg = 11821,	-- Darn Talongrip
+				coord = { 73.23, 94.91, MAP.STONETALON_MOUNTAINS },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 17,
 			}),
-			q(6542, {	-- Report to Kadrak (Stonetalon Mountains)
-				qg = 11821,	-- Darn Talongrip
-				coord = { 73.23, 94.91, MAP.STONETALON_MOUNTAINS },
+			q(6541, {	-- Report to Kadrak (The Barrens)
+				qg = 3429,	-- Thork
+				coord = { 51.50, 30.86, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 17,
@@ -1948,6 +1981,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						},
 					}),
 				},
+			}),
+			q(98094, {	-- Scout Support
+				qg = 2215,	-- High Executor Darthalia
+				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
+				races = HORDE_ONLY,
+				lvl = 19,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 279394,	-- Darthalia's Orders (QI!)
 			}),
 			q(2996, {	-- Seeking Strahad (Orgrimmar)
 				qg = 5875,	-- Gan'rul Bloodeye
@@ -2404,6 +2445,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				lvl = 10,
 			}),
+			q(95495, {	-- The Hermit Tanner
+				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+				coord = { 43.8, 12.21, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 14,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 269718,	-- Bundle of Hides (QI!)
+			}),
 			q(1718, {	-- The Islander
 				allianceQuestData = {
 					qgs = {
@@ -2588,55 +2637,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			},
-			q(95494, {	-- Bruised Pride and Lion Hides
-				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
-				coord = { 43.8, 12.21, MAP.THE_BARRENS },
-				races = HORDE_ONLY,
-				lvl = 14,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Savannah Lion Hide
-						provider = { "i", 269715 },	-- Savannah Lion Hide (QI!)
-					}),
-				},
-			}),
-			q(95774, {	-- Her Name Is Olgra
-				sourceQuests = { 4921 },	-- Lost in Battle
-				qg = 3432,	-- Mankrik
-				coord = { 51.95, 31.58, MAP.THE_BARRENS },
-				races = HORDE_ONLY,
-				lvl = 14,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Olgra's Adornments
-						provider = { "i", 277277 },	-- Olgra's Adornments (QI!)
-					}),
-				},
-			}),
-			q(98024, {	-- Journey to the Crossroads
-				sourceQuest = 95350,	-- Welcome to Azeroth
-				qg = 4949,	-- Thrall <Warchief>
-				coord = { 31.73, 37.82, MAP.ORGRIMMAR },
-				races = { SKYBORNE_HORDE },
-				lvl = 7,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(98094, {	-- Scout Support
-				qg = 2215,	-- High Executor Darthalia
-				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
-				races = HORDE_ONLY,
-				lvl = 19,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279394,	-- Darthalia's Orders (QI!)
-			}),
-			q(95495, {	-- The Hermit Tanner
-				qg = 3682,	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
-				coord = { 43.8, 12.21, MAP.THE_BARRENS },
-				races = HORDE_ONLY,
-				lvl = 14,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 269718,	-- Bundle of Hides (QI!)
-			}),
 			q(1824, {	-- Trial at the Field of Giants
 				sourceQuest = 1823,	-- Speak with Ruga
 				qg = 6394,	-- Ruga Ragetotem

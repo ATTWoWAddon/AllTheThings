@@ -540,6 +540,18 @@ battleground(MAP.ARATHI_BASIN, {
 				races = ALLIANCE_ONLY,
 				lvl = { 20, 29 },
 			}),
+			q(8171, {	-- The Battle for Arathi Basin! [Level 20] (Horde)
+				altQuests = {
+					8171,	-- The Battle for Arathi Basin! [Level 20]
+					8170,	-- The Battle for Arathi Basin! [Level 30]
+					8169,	-- The Battle for Arathi Basin! [Level 40]
+					8120,	-- The Battle for Arathi Basin! [Level 50]
+				},
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = { 20, 29 },
+			}),
 			q(8167, {	-- The Battle for Arathi Basin! [Level 30] (Alliance)
 				altQuests = {
 					8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -550,6 +562,18 @@ battleground(MAP.ARATHI_BASIN, {
 				qg = 14983,	-- Field Marshal Oslight
 				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
+				lvl = { 30, 39 },
+			}),
+			q(8170, {	-- The Battle for Arathi Basin! [Level 30] (Horde)
+				altQuests = {
+					8171,	-- The Battle for Arathi Basin! [Level 20]
+					8170,	-- The Battle for Arathi Basin! [Level 30]
+					8169,	-- The Battle for Arathi Basin! [Level 40]
+					8120,	-- The Battle for Arathi Basin! [Level 50]
+				},
+				qg = 15021,	-- Deathmaster Dwire
+				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
 			q(8166, {	-- The Battle for Arathi Basin! [Level 40] (Alliance)
@@ -564,42 +588,6 @@ battleground(MAP.ARATHI_BASIN, {
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
 			}),
-			q(8105, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
-				altQuests = {
-					8168,	-- The Battle for Arathi Basin! [Level 20]
-					8167,	-- The Battle for Arathi Basin! [Level 30]
-					8166,	-- The Battle for Arathi Basin! [Level 40]
-					8105,	-- The Battle for Arathi Basin! [Level 50]
-				},
-				qg = 14983,	-- Field Marshal Oslight
-				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 50,
-			}),
-			q(8171, {	-- The Battle for Arathi Basin! [Level 20] (Horde)
-				altQuests = {
-					8171,	-- The Battle for Arathi Basin! [Level 20]
-					8170,	-- The Battle for Arathi Basin! [Level 30]
-					8169,	-- The Battle for Arathi Basin! [Level 40]
-					8120,	-- The Battle for Arathi Basin! [Level 50]
-				},
-				qg = 15021,	-- Deathmaster Dwire
-				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				races = HORDE_ONLY,
-				lvl = { 20, 29 },
-			}),
-			q(8170, {	-- The Battle for Arathi Basin! [Level 30] (Horde)
-				altQuests = {
-					8171,	-- The Battle for Arathi Basin! [Level 20]
-					8170,	-- The Battle for Arathi Basin! [Level 30]
-					8169,	-- The Battle for Arathi Basin! [Level 40]
-					8120,	-- The Battle for Arathi Basin! [Level 50]
-				},
-				qg = 15021,	-- Deathmaster Dwire
-				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
-				races = HORDE_ONLY,
-				lvl = { 30, 39 },
-			}),
 			q(8169, {	-- The Battle for Arathi Basin! [Level 40] (Horde)
 				altQuests = {
 					8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -611,6 +599,18 @@ battleground(MAP.ARATHI_BASIN, {
 				coord = { 73.3, 29.7, MAP.ARATHI_HIGHLANDS },
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
+			}),
+			q(8105, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
+				altQuests = {
+					8168,	-- The Battle for Arathi Basin! [Level 20]
+					8167,	-- The Battle for Arathi Basin! [Level 30]
+					8166,	-- The Battle for Arathi Basin! [Level 40]
+					8105,	-- The Battle for Arathi Basin! [Level 50]
+				},
+				qg = 14983,	-- Field Marshal Oslight
+				coord = { 45.8, 45.6, MAP.ARATHI_HIGHLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(8120, {	-- The Battle for Arathi Basin! [Level 50] (Horde)
 				altQuests = {

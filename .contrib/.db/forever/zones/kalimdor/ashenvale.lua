@@ -60,44 +60,72 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 		}),
 		n(QUESTS, {
-			q(2, {		-- Sharptalon's Claw
-				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16305,	-- Sharptalon's Claw
-				coords = {
-					{ 75.8, 69.6, MAP.ASHENVALE },
-				},
+			q(98252, {	-- A Void Path
+				sourceQuest = 98251,	-- Never Coming Back
+				qg = 267214,	-- Va'xug Firefure
+				coord = { 40.4, 61.4, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				cr = 12676,	-- Sharptalon
-				lvl = 20,
+				lvl = 18,
+				-- Objective: guide Va'xug's Eye of Kilrogg (271181) back to the main Ashenvale road; it's tracked by a hidden credit NPC.
 			}),
-			q(23, {		-- Ursangous's Paw
-				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16303,	-- Ursangous's Paw
-				coords = {
-					{ 41.6, 66.6, MAP.ASHENVALE },
-				},
-				races = HORDE_ONLY,
-				cr = 12678,	-- Ursangous
-				lvl = 20,
+			q(78089, {	-- Advice From Stormwind
+				sourceQuest = 78088,	-- A Strange Artifact
+				qg = 3663,	-- Delgren the Purifier
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 26.2, 38.6, MAP.ASHENVALE },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
 			}),
-			q(24, {		-- Shadumbra's Head
-				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
-				qi = 16304,	-- Shadumbra's Head
-				coords = {
-					{ 59.8, 54.6, MAP.ASHENVALE },
-				},
-				races = HORDE_ONLY,
-				cr = 12677,	-- Shadumbra
-				lvl = 20,
-			}),
-			q(25, {		-- Stonetalon Standstill / Simmer Down Now [CATA+]
-				qg = 12737,	-- Mastok Wrilehiss
-				coord = { 73.66, 60.01, MAP.ASHENVALE },
-				races = HORDE_ONLY,
-				lvl = 23,
+			q(1025, {	-- An Aggressive Defense
+				sourceQuest = 1023,	-- Raene's Cleansing (2/11)
+				qg = 3691,	-- Raene Wolfrunner
+				coord = { 36.6, 49.6, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
 				groups = {
-					objective(1, {	-- 0/12 Befouled Water Elemental slain
-						provider = { "n", 3917 },	-- Befouled Water Elemental
+					objective(1, {	-- 0/1 Foulweald Den Watcher slain
+						provider = { "n", 3746 },	-- Foulweald Den Watcher
+					}),
+					objective(2, {	-- 0/2 Foulweald Ursa slain
+						provider = { "n", 3749 },	-- Foulweald Ursa
+					}),
+					objective(3, {	-- 0/10 Foulweald Totemic slain
+						provider = { "n", 3750 },	-- Foulweald Totemic
+					}),
+					objective(4, {	-- 0/12 Foulweald Warrior slain
+						provider = { "n", 3743 },	-- Foulweald Warrior
+					}),
+				},
+			}),
+			q(6503, {	-- Ashenvale Outrunners
+				qg = 12867,	-- Kuray'bin
+				coords = {
+					{ 71.0, 68.2, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 19,
+				groups = {
+					objective(1, {	-- 0/9 Ashenvale Outrunner slain
+						provider = { "n", 12856 },	-- Ashenvale Outrunner
+					}),
+				},
+			}),
+			q(1010, {	-- Bathran's Hair
+				qg = 3847,	-- Orendil Broadleaf
+				coord = { 26.4, 38.6, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/5 Bathran's Hair
+						providers = {
+							{ "i", 5437 },	-- Bathran's Hair
+							{ "o", 17282 },	-- Plant Bundle
+						},
+						coord = { 31.8, 22.9, MAP.ASHENVALE },
 					}),
 				},
 			}),
@@ -117,171 +145,73 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
-			q(235, {	-- The Ashenvale Hunt (1/2) [Orgrimmar]
-				qg = 10880,	-- Warcaller Gorlach
-				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
-				isBreadcrumb = true,
-				lvl = 20,
-			}),
-			q(247, {	-- The Hunt Completed
-				sourceQuests = {
-					24,	-- Shadumbra's Head
-					2,	-- Sharptalon's Claw
-					23,	-- Ursangous's Paw
-				},
-				qg = 12696,	-- Senani Thunderheart
-				coord = { 73.6, 61.4, MAP.ASHENVALE },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					i(16658),	-- Wildhunter Cloak
-				},
-			}),
-			q(742, {	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
-				qg = 10881,	-- Bluff Runner Windstrider
-				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				isBreadcrumb = true,
-				lvl = 20,
-			}),
-			q(824, {	-- Je'neu of the Earthen Ring
-				sourceQuest = 1918,	-- The Befouled Element
-				qg = 12737,	-- Mastok Wrilehiss
-				qi = 16408,	-- Befouled Water Globe
-				coords = {
-					{ 73.6, 60.0, MAP.ASHENVALE },
-				},
-				races = HORDE_ONLY,
-				lvl = 23,
-				groups = {
-					i(16659),	-- Deftkin Belt
-					i(16660),	-- Driftmire Shield
-					i(16661),	-- Soft Willow Cape
-				},
-			}),
-			q(970, {	-- The Tower of Althalaxx (4/9)
-				sourceQuest = 967,	-- The Tower of Althalaxx (3/9) (Darkshore)
-				qg = 3663,	-- Delgren the Purifier
-				coord = { 26.2, 38.7, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 13,
-				groups = {
-					objective(1, {	-- Glowing Soul Gem
-						provider = { "i", 5366 },	-- Glowing Soul Gem
-						crs = {
-							3728,	-- Dark Strand Adept
-							3879,	-- Dark Strand Assassin
-							3725,	-- Dark Strand Cultist
-							3727,	-- Dark Strand Enforcer
-							3730,	-- Dark Strand Excavator
-						},
-					}),
-				},
-			}),
-			q(973, {	-- The Tower of Althalaxx (5/9)
-				sourceQuest = 970,	-- The Tower of Althalaxx (4/9)
-				qg = 3663,	-- Delgren the Purifier
-				coord = { 26.2, 38.6, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 13,
-				groups = {
-					objective(1, {	-- 0/1 Ilkrud Magthrull's Tome
-						provider = { "i", 5533 },	-- Ilkrud Magthrull's Tome
-						coord = { 25.2, 60.6, MAP.ASHENVALE },
-						cr = 3664,	-- Ilkrud Magthrull
-					}),
-					i(5622),	-- Clergy Ring
-					i(5613),	-- Staff of the Purifier
-				},
-			}),
-			q(976, {	-- Supplies to Auberdine
-				sourceQuest = 973,	-- The Tower of Althalaxx (5/9)
-				qg = 4484,	-- Feero Ironhand
-				coord = { 26.2, 38.9, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 19,
-				groups = {
-					i(5323),	-- Everglow Lantern
-					i(6721),	-- Chestplate of Kor
-				},
-			}),
-			q(991, {	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
+			q(1054, {	-- Culling the Threat
 				qg = 3691,	-- Raene Wolfrunner
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-			}),
-			q(1007, {	-- The Ancient Statuette
-				qg = 3846,	-- Talen
-				coord = { 14.8, 31.3, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 19,
 				groups = {
-					objective(1, {	-- 0/1 Ancient Statuette
-						providers = {
-							{ "i", 5424 },	-- Ancient Statuette
-							{ "o", 17783 },	-- Ancient Statuette
-						},
-						coord = { 14.2, 20.6, MAP.ASHENVALE },
+					objective(1, {	-- 0/1 Dal Bloodclaw's Skull
+						provider = { "i", 5544 },	-- Dal Bloodclaw's Skull
+						coord = { 37.6, 35.4, MAP.ASHENVALE },
+						cr = 3987,	-- Dal Bloodclaw
 					}),
+					i(1970),	-- Restoring Balm
 				},
 			}),
-			q(1008, {	-- The Zoram Strand
-				qg = 3845,	-- Shindrell Swiftfire
-				coord = { 34.7, 48.9, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 14,
-				groups = {
-					objective(1, {	-- 0/20 Wrathtail Head
-						provider = { "i", 5490 },	-- Wrathtail Head
-						crs = {
-							3711,	-- Wrathtail Myrmidon
-							3944,	-- Wrathtail Priestess
-							3712,	-- Wrathtail Razortail
-							3715,	-- Wrathtail Sea Witch
-							3717,	-- Wrathtail Sorceress
-							3713,	-- Wrathtail Wave Rider
-						},
-					}),
-				},
-			}),
-			q(1009, {	-- Ruuzel
-				sourceQuest = 1007,	-- The Ancient Statuette
-				qg = 3846,	-- Talen
-				coord = { 14.8, 31.3, MAP.ASHENVALE },
+			q(1016, {	-- Elemental Bracers [Vanilla] / Retaking Mystral Lake [CATA+]
+				qg = 3885,	-- Sentinel Velene Starstrike
+				coord = { 49.8, 67.2, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/1 Ring of Zoram
-						provider = { "i", 5445 },	-- Ring of Zoram
-						coords = {
-							{ 7.2, 13.0, MAP.ASHENVALE },
-							{ 9.4, 15.2, MAP.ASHENVALE },
-							{ 12.4, 19.6, MAP.ASHENVALE },
-							{ 11.0, 29.6, MAP.ASHENVALE },
-						},
-						crs = {
-							3943,	-- Ruuzel
-							10559,	-- Lady Vespia
+					objective(1, {	-- 0/1 Divined Scroll
+						provider = { "i", 5455 },	-- Divined Scroll
+						cost = {
+							{ "i", 5456, 1 },	-- Divining Scroll
+							{ "i", 12220, 5 },	-- Intact Elemental Bracer
 						},
 					}),
-					i(5812),	-- Robes of Antiquity
+					i(5456),	-- Divining Scroll
+					i(12220, {	-- Intact Elemental Bracer
+						crs = {
+							3917,	-- Befouled Water Elemental
+							12759,	-- Tideress
+						},
+					}),
 				},
 			}),
-			q(1010, {	-- Bathran's Hair
-				qg = 3847,	-- Orendil Broadleaf
-				coord = { 26.4, 38.6, MAP.ASHENVALE },
+			q(1033, {	-- Elune's Tear
+				sourceQuest = 1020,	-- Orendil's Cure
+				qg = 3894,	-- Pelturas Whitemoon
+				coord = { 37.3, 51.8, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/5 Bathran's Hair
+					objective(1, {	-- 0/1 Elune's Tear
 						providers = {
-							{ "i", 5437 },	-- Bathran's Hair
-							{ "o", 17282 },	-- Plant Bundle
+							{ "i", 5493 },	-- Elune's Tear
+							{ "o", 19015 },	-- Elune's Tear
 						},
-						coord = { 31.8, 22.9, MAP.ASHENVALE },
+						coord = { 46.0, 46.5, MAP.ASHENVALE },
 					}),
+				},
+			}),
+			q(1035, {	-- Fallen Sky Lake
+				sourceQuest = 1034,	-- The Ruins of Stardust
+				qg = 3894,	-- Pelturas Whitemoon
+				coord = { 37.3, 51.8, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Fallen Moonstone
+						provider = { "i", 5508 },	-- Fallen Moonstone
+						coord = { 66.6, 82.0, MAP.ASHENVALE },
+						cr = 3931,	-- Shadethicket Oracle
+					}),
+					i(5814),	-- Snapbrook Armor
+					i(6722),	-- Beastial Manacles
+					i(17047),	-- Luminescent Amice
 				},
 			}),
 			q(1011, {	-- Forsaken Diseases
@@ -298,6 +228,25 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						},
 						coord = { 75.3, 72.3, MAP.ASHENVALE },
 					}),
+				},
+			}),
+			q(6482, {	-- Freedom to Ruul
+				qg = 12818,	-- Ruul Snowhoof
+				coords = {
+					{ 41.4, 34.4, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 19,
+			}),
+			q(98027, {	-- Gleaming Crescent Necklace
+				provider = { "o", 669176 },	-- Gleaming Crescent Pendant
+				qi = 279274,	-- Gleaming Crescent Necklace (PQI!)
+				coord = { 63.0, 71.6, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 22,
+				groups = {
+					i(281290),	-- Replica Crescent Necklace
 				},
 			}),
 			q(1012, {	-- Insane Druids
@@ -328,26 +277,60 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
-			q(1016, {	-- Elemental Bracers [Vanilla] / Retaking Mystral Lake [CATA+]
-				qg = 3885,	-- Sentinel Velene Starstrike
-				coord = { 49.8, 67.2, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
+			q(824, {	-- Je'neu of the Earthen Ring
+				sourceQuest = 1918,	-- The Befouled Element
+				qg = 12737,	-- Mastok Wrilehiss
+				qi = 16408,	-- Befouled Water Globe
+				coords = {
+					{ 73.6, 60.0, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 23,
 				groups = {
-					objective(1, {	-- 0/1 Divined Scroll
-						provider = { "i", 5455 },	-- Divined Scroll
-						cost = {
-							{ "i", 5456, 1 },	-- Divining Scroll
-							{ "i", 12220, 5 },	-- Intact Elemental Bracer
+					i(16659),	-- Deftkin Belt
+					i(16660),	-- Driftmire Shield
+					i(16661),	-- Soft Willow Cape
+				},
+			}),
+			q(1056, {	-- Journey to Stonetalon Peak
+				qg = 3996,	-- Faldreas Goeth'Shael
+				coord = { 35.6, 49.2, MAP.ASHENVALE },
+				maps = { MAP.STONETALON_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 18,
+			}),
+			q(4581, {	-- Kayneth Stillwind
+				qg = 3845,	-- Shindrell Swiftfire
+				qi = 12060,	-- Shindrell's Note
+				coord = { 34.7, 48.9, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 24,
+			}),
+			q(6621, {	-- King of the Foulweald
+				sourceQuests = {
+					216,	-- Between a Rock and a Thistlefur
+				},
+				qgs = {
+					12757,	-- Karang Amakkar
+				},
+				coords = {
+					{ 11.8, 34.4, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 21,
+				groups = {
+					objective(1, {	-- 0/1 Murgut's Totem
+						providers = {
+							{ "i",  16976 },	-- Murgut's Totem
+							{ "o", 178227 },	-- Murgut's Totem Basket
 						},
+						coord = { 56.5, 63.5, MAP.ASHENVALE },
+						cost = { { "i", 16972, 1 } },	-- Karang's Banner
+						cr = 12918,	-- Chief Murgut
 					}),
-					i(5456),	-- Divining Scroll
-					i(12220, {	-- Intact Elemental Bracer
-						crs = {
-							3917,	-- Befouled Water Elemental
-							12759,	-- Tideress
-						},
-					}),
+					i(17005),	-- Boorguard Tunic
+					i(17006),	-- Cobalt Legguards
 				},
 			}),
 			q(1017, {	-- Mage Summoner
@@ -368,6 +351,44 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
+			q(6442, {	-- Naga at the Zoram Strand
+				qg = 12719,	-- Marukai
+				coords = {
+					{ 11.6, 34.8, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 14,
+				groups = {
+					objective(1, {	-- 0/20 Wrathtail Head
+						provider = { "i", 5490 },	-- Wrathtail Head
+						crs = {
+							3711,	-- Wrathtail Myrmidon
+							3944,	-- Wrathtail Priestess
+							3712,	-- Wrathtail Razortail
+							3715,	-- Wrathtail Sea Witch
+							3717,	-- Wrathtail Sorceress
+							3713,	-- Wrathtail Wave Rider
+						},
+					}),
+				},
+			}),
+			q(98251, {	-- Never Coming Back
+				qg = 267214,	-- Va'xug Firefure
+				coord = { 40.4, 61.4, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/6 Shadowhorn Stag slain
+						provider = { "n", 3817 },	-- Shadowhorn Stag
+						coord = { 36.2, 61.4, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/6 Ashenvale Bear slain
+						provider = { "n", 3809 },	-- Ashenvale Bear
+						coord = { 32.2, 39.4, MAP.ASHENVALE },
+					}),
+				},
+			}),
 			q(1020, {	-- Orendil's Cure
 				sourceQuest = 1010,	-- Bathran's Hair
 				qg = 3847,	-- Orendil Broadleaf
@@ -376,23 +397,32 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 			}),
-			q(1021, {	-- Vile Satyr! Dryads in Danger!
-				qg = 3901,	-- Illiyana
-				coord = { 21.7, 53.4, MAP.ASHENVALE },
+			q(1134, {	-- Pridewings of Stonetalon
+				sourceQuest = 1008,	-- The Zoram Strand
+				qg = 3845,	-- Shindrell Swiftfire
+				coord = { 34.7, 48.9, MAP.ASHENVALE },
+				maps = { MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				lvl = 26,
-			}),
-			q(1022, {	-- The Howling Vale
-				qg = 3880,	-- Sentinel Melyria Frostshadow
-				coord = { 22.2, 53.0, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
+				lvl = 18,
 				groups = {
-					objective(1, {	-- View the Tome of Mel'Thandris
-						provider = { "o", 19027 },	-- Tome of Mel'Thandris
-						coord = { 50.5, 39.1, MAP.ASHENVALE },
+					objective(1, {	-- 0/12 Pridewing Venom Sac
+						provider = { "i", 5808 },	-- Pridewing Venom Sac
+						crs = {
+							4014,	-- Pridewing Consort
+							4015,	-- Pridewing Patriarch
+							4013,	-- Pridewing Skyhunter
+							4012,	-- Pridewing Wyvern
+							5928,	-- Sorrow Wing
+							4011,	-- Young Pridewing
+						},
 					}),
 				},
+			}),
+			q(991, {	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
+				qg = 3691,	-- Raene Wolfrunner
+				coord = { 36.6, 49.6, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
 			}),
 			q(1023, {	-- Raene's Cleansing (2/11) [Vanilla] / The Lost Gem [CATA]
 				sourceQuest = 991,	-- Raene's Cleansing (1/11)
@@ -420,27 +450,6 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-			}),
-			q(1025, {	-- An Aggressive Defense
-				sourceQuest = 1023,	-- Raene's Cleansing (2/11)
-				qg = 3691,	-- Raene Wolfrunner
-				coord = { 36.6, 49.6, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/1 Foulweald Den Watcher slain
-						provider = { "n", 3746 },	-- Foulweald Den Watcher
-					}),
-					objective(2, {	-- 0/2 Foulweald Ursa slain
-						provider = { "n", 3749 },	-- Foulweald Ursa
-					}),
-					objective(3, {	-- 0/10 Foulweald Totemic slain
-						provider = { "n", 3750 },	-- Foulweald Totemic
-					}),
-					objective(4, {	-- 0/12 Foulweald Warrior slain
-						provider = { "n", 3743 },	-- Foulweald Warrior
-					}),
-				},
 			}),
 			q(1026, {	-- Raene's Cleansing (4/11) [Vanilla] / Search the Bole [CATA]
 				sourceQuest = 1024,	-- Raene's Cleansing (3/11)
@@ -491,6 +500,13 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(5462),	-- Dartol's Rod of Transformation
 				},
 			}),
+			q(1055, {	-- Raene's Cleansing (7/11)
+				sourceQuest = 1028,	-- Raene's Cleansing (6/11)
+				provider = { "o", 19024 },	-- Hidden Shrine
+				coord = { 56.38, 49.24, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+			}),
 			q(1029, {	-- Raene's Cleansing (8/11) [Vanilla] / Return to Raene [CATA]
 				sourceQuest = 1055,	-- Raene's Cleansing (7/11)
 				qg = 3916,	-- Shael'dryn
@@ -506,109 +522,6 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coord = { 36.6, 49.6, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
 				lvl = 18,
-			}),
-			q(1031, {	-- The Branch of Cenarius
-				sourceQuest = 1021,	-- Vile Satyr! Dryads in Danger!
-				qg = 3920,	-- Anilia
-				coord = { 78.3, 44.8, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 26,
-				groups = {
-					objective(1, {	-- 0/1 Branch of Cenarius
-						provider = { "i", 5461 },	-- Branch of Cenarius
-						coord = { 78.6, 42.8, MAP.ASHENVALE },
-						cr = 4619,	-- Geltharis
-					}),
-					i(5820),	-- Faerie Mantle
-					i(11229),	-- Brightscale Girdle
-				},
-			}),
-			q(1032, {	-- Satyr Slaying!
-				sourceQuest = 1031,	-- The Branch of Cenarius
-				qg = 3901,	-- Illiyana
-				coord = { 21.8, 53.2, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 26,
-				groups = {
-					objective(1, {	-- 0/16 Satyr Horns
-						provider = { "i", 5481 },	-- Satyr Horns
-						crs = {
-							3898,	-- Aligar the Tormentor
-							3899,	-- Balizar the Umbrage
-							3771,	-- Bleakheart Hellcaller
-							3765,	-- Bleakheart Satyr
-							3770,	-- Bleakheart Shadowstalker
-							3767,	-- Bleakheart Trickster
-							3900,	-- Caedakar the Vicious
-							3762,	-- Felmusk Felsworn
-							3759,	-- Felmusk Rogue
-							3758,	-- Felmusk Satyr
-							3763,	-- Felmusk Shadowstalker
-							4619,	-- Geltharis
-							10647,	-- Prince Raze
-							3754,	-- Xavian Betrayer
-							3755,	-- Xavian Felsworn
-							3757,	-- Xavian Hellcaller
-							3752,	-- Xavian Rogue
-						},
-					}),
-				},
-			}),
-			q(1033, {	-- Elune's Tear
-				sourceQuest = 1020,	-- Orendil's Cure
-				qg = 3894,	-- Pelturas Whitemoon
-				coord = { 37.3, 51.8, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Elune's Tear
-						providers = {
-							{ "i", 5493 },	-- Elune's Tear
-							{ "o", 19015 },	-- Elune's Tear
-						},
-						coord = { 46.0, 46.5, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(1034, {	-- The Ruins of Stardust
-				sourceQuest = 1033,	-- Elune's Tear
-				qg = 3894,	-- Pelturas Whitemoon
-				coord = { 37.3, 51.8, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/5 Handful of Stardust
-						providers = {
-							{ "i", 5494 },	-- Handful of Stardust
-							{ "o", 19016 },	-- Stardust Covered Bush
-						},
-						coord = { 33.9, 68.2, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(1035, {	-- Fallen Sky Lake
-				sourceQuest = 1034,	-- The Ruins of Stardust
-				qg = 3894,	-- Pelturas Whitemoon
-				coord = { 37.3, 51.8, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Fallen Moonstone
-						provider = { "i", 5508 },	-- Fallen Moonstone
-						coord = { 66.6, 82.0, MAP.ASHENVALE },
-						cr = 3931,	-- Shadethicket Oracle
-					}),
-					i(5814),	-- Snapbrook Armor
-					i(6722),	-- Beastial Manacles
-					i(17047),	-- Luminescent Amice
-				},
-			}),
-			q(1037, {	-- Velinde Starsong
-				sourceQuest = 1022,	-- The Howling Vale
-				qg = 3880,	-- Sentinel Melyria Frostshadow
-				coord = { 22.2, 53.0, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
 			}),
 			q(1045, {	-- Raene's Cleansing (10/11) [Vanilla] / A New Adornment [CATA]
 				sourceQuest = 1030,	-- Raene's Cleansing (9/11)
@@ -650,113 +563,41 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
-			q(1054, {	-- Culling the Threat
-				qg = 3691,	-- Raene Wolfrunner
-				coord = { 36.6, 49.6, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 18,
+			q(78093, {	-- Return to Delgren
+				sourceQuest = 78092,	-- It Must Be Destroyed
+				provider = { "o", 409315 },	-- Shattered Orb
+				qi = 209800,	-- Orb Fragments (PQI!)
+				coord = { 89.4, 77.0, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
 				groups = {
-					objective(1, {	-- 0/1 Dal Bloodclaw's Skull
-						provider = { "i", 5544 },	-- Dal Bloodclaw's Skull
-						coord = { 37.6, 35.4, MAP.ASHENVALE },
-						cr = 3987,	-- Dal Bloodclaw
-					}),
-					i(1970),	-- Restoring Balm
+					i(277205),	-- Cloak of the Divine Storm
 				},
 			}),
-			q(1055, {	-- Raene's Cleansing (7/11)
-				sourceQuest = 1028,	-- Raene's Cleansing (6/11)
-				provider = { "o", 19024 },	-- Hidden Shrine
-				coord = { 56.38, 49.24, MAP.ASHENVALE },
+			q(1009, {	-- Ruuzel
+				sourceQuest = 1007,	-- The Ancient Statuette
+				qg = 3846,	-- Talen
+				coord = { 14.8, 31.3, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
-				lvl = 18,
-			}),
-			q(1056, {	-- Journey to Stonetalon Peak
-				qg = 3996,	-- Faldreas Goeth'Shael
-				coord = { 35.6, 49.2, MAP.ASHENVALE },
-				maps = { MAP.STONETALON_MOUNTAINS },
-				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 18,
-			}),
-			q(1134, {	-- Pridewings of Stonetalon
-				sourceQuest = 1008,	-- The Zoram Strand
-				qg = 3845,	-- Shindrell Swiftfire
-				coord = { 34.7, 48.9, MAP.ASHENVALE },
-				maps = { MAP.STONETALON_MOUNTAINS },
-				races = ALLIANCE_ONLY,
-				lvl = 18,
+				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/12 Pridewing Venom Sac
-						provider = { "i", 5808 },	-- Pridewing Venom Sac
+					objective(1, {	-- 0/1 Ring of Zoram
+						provider = { "i", 5445 },	-- Ring of Zoram
+						coords = {
+							{ 7.2, 13.0, MAP.ASHENVALE },
+							{ 9.4, 15.2, MAP.ASHENVALE },
+							{ 12.4, 19.6, MAP.ASHENVALE },
+							{ 11.0, 29.6, MAP.ASHENVALE },
+						},
 						crs = {
-							4014,	-- Pridewing Consort
-							4015,	-- Pridewing Patriarch
-							4013,	-- Pridewing Skyhunter
-							4012,	-- Pridewing Wyvern
-							5928,	-- Sorrow Wing
-							4011,	-- Young Pridewing
+							3943,	-- Ruuzel
+							10559,	-- Lady Vespia
 						},
 					}),
+					i(5812),	-- Robes of Antiquity
 				},
-			}),
-			q(1140, {	-- The Tower of Althalaxx (6/9)
-				sourceQuest = 973,	-- The Tower of Althalaxx (5/9)
-				qg = 3663,	-- Delgren the Purifier
-				coord = { 26.2, 38.6, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 13,
-				groups = {
-					objective(1, {	-- Free the Highborne soul in Night Run
-						provider = { "o", 19901 },	-- Circle of Imprisonment
-						coord = { 66.7, 57.0, MAP.ASHENVALE },
-					}),
-					objective(2, {	-- Free the Highborne soul in Satyrnaar
-						provider = { "o", 20352 },	-- Circle of Imprisonment
-						coord = { 81.6, 48.5, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(1167, {	-- The Tower of Althalaxx (7/9)
-				sourceQuest = 1140,	-- The Tower of Althalaxx (6/9)
-				qg = 3663,	-- Delgren the Purifier
-				coord = { 26.2, 38.6, MAP.ASHENVALE },
-				maps = { MAP.DARKSHORE },
-				races = ALLIANCE_ONLY,
-				lvl = 13,
-			}),
-			q(1918, {	-- The Befouled Element
-				sourceQuest = 25,	-- Stonetalon Standstill / Simmer Down Now [CATA]
-				qi = 16408,	-- Befouled Water Globe
-				coord = { 50.8, 71.6, MAP.ASHENVALE },
-				races = HORDE_ONLY,
-				cr = 12759,	-- Tideress
-				lvl = 23,
-			}),
-			q(4581, {	-- Kayneth Stillwind
-				qg = 3845,	-- Shindrell Swiftfire
-				qi = 12060,	-- Shindrell's Note
-				coord = { 34.7, 48.9, MAP.ASHENVALE },
-				races = ALLIANCE_ONLY,
-				lvl = 24,
-			}),
-			q(6382, {	-- The Ashenvale Hunt (1/2) [The Barrens]
-				qg = 3387,	-- Jorn Skyseer
-				coord = { 44.86, 59.13, MAP.THE_BARRENS },
-				races = HORDE_ONLY,
-				isBreadcrumb = true,
-				lvl = 20,
-			}),
-			q(6383, {	-- The Ashenvale Hunt (2/2)
-				sourceQuests = {
-					235,	-- The Ashenvale Hunt (1/2) [Orgrimmar]
-					742,	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
-					6382,	-- The Ashenvale Hunt (1/2) [The Barrens]
-				},
-				qg = 12696,	-- Senani Thunderheart
-				coord = { 73.6, 61.4, MAP.ASHENVALE },
-				races = HORDE_ONLY,
-				lvl = 20,
 			}),
 			q(6441, {	-- Satyr Horns
 				qg = 12724,	-- Pixel
@@ -790,63 +631,227 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
-			q(6442, {	-- Naga at the Zoram Strand
-				qg = 12719,	-- Marukai
-				coords = {
-					{ 11.6, 34.8, MAP.ASHENVALE },
-				},
-				races = HORDE_ONLY,
-				lvl = 14,
+			q(1032, {	-- Satyr Slaying!
+				sourceQuest = 1031,	-- The Branch of Cenarius
+				qg = 3901,	-- Illiyana
+				coord = { 21.8, 53.2, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 26,
 				groups = {
-					objective(1, {	-- 0/20 Wrathtail Head
-						provider = { "i", 5490 },	-- Wrathtail Head
+					objective(1, {	-- 0/16 Satyr Horns
+						provider = { "i", 5481 },	-- Satyr Horns
 						crs = {
-							3711,	-- Wrathtail Myrmidon
-							3944,	-- Wrathtail Priestess
-							3712,	-- Wrathtail Razortail
-							3715,	-- Wrathtail Sea Witch
-							3717,	-- Wrathtail Sorceress
-							3713,	-- Wrathtail Wave Rider
+							3898,	-- Aligar the Tormentor
+							3899,	-- Balizar the Umbrage
+							3771,	-- Bleakheart Hellcaller
+							3765,	-- Bleakheart Satyr
+							3770,	-- Bleakheart Shadowstalker
+							3767,	-- Bleakheart Trickster
+							3900,	-- Caedakar the Vicious
+							3762,	-- Felmusk Felsworn
+							3759,	-- Felmusk Rogue
+							3758,	-- Felmusk Satyr
+							3763,	-- Felmusk Shadowstalker
+							4619,	-- Geltharis
+							10647,	-- Prince Raze
+							3754,	-- Xavian Betrayer
+							3755,	-- Xavian Felsworn
+							3757,	-- Xavian Hellcaller
+							3752,	-- Xavian Rogue
 						},
 					}),
 				},
 			}),
-			q(6462, {	-- Troll Charm
-				qg = 12721,	-- Mitsuwa
+			q(95737, {	-- Seeking Caitlin
+				qg = 3970,	-- Llana <Reagent Supplies>
+				coord = { 35.0, 48.4, MAP.ASHENVALE },
+				maps = { MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 24,
+			}),
+			q(24, {		-- Shadumbra's Head
+				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
+				qi = 16304,	-- Shadumbra's Head
 				coords = {
-					{ 11.6, 34.8, MAP.ASHENVALE },
+					{ 59.8, 54.6, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
+				cr = 12677,	-- Shadumbra
+				lvl = 20,
+			}),
+			q(98418, {	-- Shared Fury
+				sourceQuest = 98417,	-- Vengeful Trail
+				qg = 221269,	-- Maseara Autumnmoon
+				coord = { 86.2, 45.8, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(1, {	-- 0/5 Xavian Betrayer slain
+						provider = { "n", 3754 },	-- Xavian Betrayer
+						coord = { 78.2, 45.4, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/5 Xavian Felsworn slain
+						provider = { "n", 3755 },	-- Xavian Felsworn
+						coord = { 77.4, 44.8, MAP.ASHENVALE },
+					}),
+					objective(3, {	-- 0/5 Xavian Hellcaller slain
+						provider = { "n", 3757 },	-- Xavian Hellcaller
+						coord = { 77.4, 44.8, MAP.ASHENVALE },
+					}),
+					objective(4, {	-- 0/5 Xavian Rogue slain
+						provider = { "n", 3752 },	-- Xavian Rogue
+						coord = { 77.2, 46.6, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(2, {		-- Sharptalon's Claw
+				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
+				qi = 16305,	-- Sharptalon's Claw
+				coords = {
+					{ 75.8, 69.6, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				cr = 12676,	-- Sharptalon
+				lvl = 20,
+			}),
+			q(86757, {	-- Slowing the Orc Advance
+				qg = 3955,	-- Shandrina <Trade Goods>
+				coord = { 49.4, 67.0, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 27,
+				groups = {
+					objective(1, {	-- 0/6 Jagged Orcish Sword
+						provider = { "i", 279505 },	-- Jagged Orcish Sword
+						cr = 11682,	-- Horde Grunt
+						coord = { 71.4, 81.2, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- 0/4 Curved Orcish Dagger
+						provider = { "i", 279507 },	-- Curved Orcish Dagger
+						cr = 11680,	-- Horde Scout
+						coord = { 69.4, 82.4, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(25, {		-- Stonetalon Standstill / Simmer Down Now [CATA+]
+				qg = 12737,	-- Mastok Wrilehiss
+				coord = { 73.66, 60.01, MAP.ASHENVALE },
+				races = HORDE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(1, {	-- 0/12 Befouled Water Elemental slain
+						provider = { "n", 3917 },	-- Befouled Water Elemental
+					}),
+				},
+			}),
+			q(976, {	-- Supplies to Auberdine
+				sourceQuest = 973,	-- The Tower of Althalaxx (5/9)
+				qg = 4484,	-- Feero Ironhand
+				coord = { 26.2, 38.9, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
 				lvl = 19,
 				groups = {
-					objective(1, {	-- 0/8 Troll Charm
+					i(5323),	-- Everglow Lantern
+					i(6721),	-- Chestplate of Kor
+				},
+			}),
+			q(1007, {	-- The Ancient Statuette
+				qg = 3846,	-- Talen
+				coord = { 14.8, 31.3, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 19,
+				groups = {
+					objective(1, {	-- 0/1 Ancient Statuette
 						providers = {
-							{ "i",  16602 },	-- Troll Charm
-							{ "o", 178144 },	-- Troll Chest
+							{ "i", 5424 },	-- Ancient Statuette
+							{ "o", 17783 },	-- Ancient Statuette
 						},
-						coord = { 40.8, 32.9, MAP.ASHENVALE },
+						coord = { 14.2, 20.6, MAP.ASHENVALE },
 					}),
 				},
 			}),
-			q(6482, {	-- Freedom to Ruul
-				qg = 12818,	-- Ruul Snowhoof
-				coords = {
-					{ 41.4, 34.4, MAP.ASHENVALE },
-				},
+			q(235, {	-- The Ashenvale Hunt (1/2) [Orgrimmar]
+				qg = 10880,	-- Warcaller Gorlach
+				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				lvl = 19,
+				isBreadcrumb = true,
+				lvl = 20,
 			}),
-			q(6503, {	-- Ashenvale Outrunners
-				qg = 12867,	-- Kuray'bin
-				coords = {
-					{ 71.0, 68.2, MAP.ASHENVALE },
-				},
+			q(6382, {	-- The Ashenvale Hunt (1/2) [The Barrens]
+				qg = 3387,	-- Jorn Skyseer
+				coord = { 44.86, 59.13, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				lvl = 19,
+				isBreadcrumb = true,
+				lvl = 20,
+			}),
+			q(742, {	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
+				qg = 10881,	-- Bluff Runner Windstrider
+				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				isBreadcrumb = true,
+				lvl = 20,
+			}),
+			q(6383, {	-- The Ashenvale Hunt (2/2)
+				sourceQuests = {
+					235,	-- The Ashenvale Hunt (1/2) [Orgrimmar]
+					742,	-- The Ashenvale Hunt (1/2) [Thunder Bluff]
+					6382,	-- The Ashenvale Hunt (1/2) [The Barrens]
+				},
+				qg = 12696,	-- Senani Thunderheart
+				coord = { 73.6, 61.4, MAP.ASHENVALE },
+				races = HORDE_ONLY,
+				lvl = 20,
+			}),
+			q(1918, {	-- The Befouled Element
+				sourceQuest = 25,	-- Stonetalon Standstill / Simmer Down Now [CATA]
+				qi = 16408,	-- Befouled Water Globe
+				coord = { 50.8, 71.6, MAP.ASHENVALE },
+				races = HORDE_ONLY,
+				cr = 12759,	-- Tideress
+				lvl = 23,
+			}),
+			q(1031, {	-- The Branch of Cenarius
+				sourceQuest = 1021,	-- Vile Satyr! Dryads in Danger!
+				qg = 3920,	-- Anilia
+				coord = { 78.3, 44.8, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 26,
 				groups = {
-					objective(1, {	-- 0/9 Ashenvale Outrunner slain
-						provider = { "n", 12856 },	-- Ashenvale Outrunner
+					objective(1, {	-- 0/1 Branch of Cenarius
+						provider = { "i", 5461 },	-- Branch of Cenarius
+						coord = { 78.6, 42.8, MAP.ASHENVALE },
+						cr = 4619,	-- Geltharis
 					}),
+					i(5820),	-- Faerie Mantle
+					i(11229),	-- Brightscale Girdle
+				},
+			}),
+			q(1022, {	-- The Howling Vale
+				qg = 3880,	-- Sentinel Melyria Frostshadow
+				coord = { 22.2, 53.0, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+				groups = {
+					objective(1, {	-- View the Tome of Mel'Thandris
+						provider = { "o", 19027 },	-- Tome of Mel'Thandris
+						coord = { 50.5, 39.1, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(247, {	-- The Hunt Completed
+				sourceQuests = {
+					24,	-- Shadumbra's Head
+					2,	-- Sharptalon's Claw
+					23,	-- Ursangous's Paw
+				},
+				qg = 12696,	-- Senani Thunderheart
+				coord = { 73.6, 61.4, MAP.ASHENVALE },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					i(16658),	-- Wildhunter Cloak
 				},
 			}),
 			q(6504, {	-- The Lost Pages
@@ -885,6 +890,82 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(16740),	-- Shredder Operating Gloves
 					i(16741),	-- Oilrag Handwraps
 				},
+			}),
+			q(1034, {	-- The Ruins of Stardust
+				sourceQuest = 1033,	-- Elune's Tear
+				qg = 3894,	-- Pelturas Whitemoon
+				coord = { 37.3, 51.8, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/5 Handful of Stardust
+						providers = {
+							{ "i", 5494 },	-- Handful of Stardust
+							{ "o", 19016 },	-- Stardust Covered Bush
+						},
+						coord = { 33.9, 68.2, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(970, {	-- The Tower of Althalaxx (4/9)
+				sourceQuest = 967,	-- The Tower of Althalaxx (3/9) (Darkshore)
+				qg = 3663,	-- Delgren the Purifier
+				coord = { 26.2, 38.7, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+				groups = {
+					objective(1, {	-- Glowing Soul Gem
+						provider = { "i", 5366 },	-- Glowing Soul Gem
+						crs = {
+							3728,	-- Dark Strand Adept
+							3879,	-- Dark Strand Assassin
+							3725,	-- Dark Strand Cultist
+							3727,	-- Dark Strand Enforcer
+							3730,	-- Dark Strand Excavator
+						},
+					}),
+				},
+			}),
+			q(973, {	-- The Tower of Althalaxx (5/9)
+				sourceQuest = 970,	-- The Tower of Althalaxx (4/9)
+				qg = 3663,	-- Delgren the Purifier
+				coord = { 26.2, 38.6, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+				groups = {
+					objective(1, {	-- 0/1 Ilkrud Magthrull's Tome
+						provider = { "i", 5533 },	-- Ilkrud Magthrull's Tome
+						coord = { 25.2, 60.6, MAP.ASHENVALE },
+						cr = 3664,	-- Ilkrud Magthrull
+					}),
+					i(5622),	-- Clergy Ring
+					i(5613),	-- Staff of the Purifier
+				},
+			}),
+			q(1140, {	-- The Tower of Althalaxx (6/9)
+				sourceQuest = 973,	-- The Tower of Althalaxx (5/9)
+				qg = 3663,	-- Delgren the Purifier
+				coord = { 26.2, 38.6, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
+				groups = {
+					objective(1, {	-- Free the Highborne soul in Night Run
+						provider = { "o", 19901 },	-- Circle of Imprisonment
+						coord = { 66.7, 57.0, MAP.ASHENVALE },
+					}),
+					objective(2, {	-- Free the Highborne soul in Satyrnaar
+						provider = { "o", 20352 },	-- Circle of Imprisonment
+						coord = { 81.6, 48.5, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(1167, {	-- The Tower of Althalaxx (7/9)
+				sourceQuest = 1140,	-- The Tower of Althalaxx (6/9)
+				qg = 3663,	-- Delgren the Purifier
+				coord = { 26.2, 38.6, MAP.ASHENVALE },
+				maps = { MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 13,
 			}),
 			q(6543, {	-- The Warsong Reports
 				sourceQuests = {
@@ -935,6 +1016,25 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 				},
 			}),
+			q(1008, {	-- The Zoram Strand
+				qg = 3845,	-- Shindrell Swiftfire
+				coord = { 34.7, 48.9, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 14,
+				groups = {
+					objective(1, {	-- 0/20 Wrathtail Head
+						provider = { "i", 5490 },	-- Wrathtail Head
+						crs = {
+							3711,	-- Wrathtail Myrmidon
+							3944,	-- Wrathtail Priestess
+							3712,	-- Wrathtail Razortail
+							3715,	-- Wrathtail Sea Witch
+							3717,	-- Wrathtail Sorceress
+							3713,	-- Wrathtail Wave Rider
+						},
+					}),
+				},
+			}),
 			q(6544, {	-- Torek's Assault
 				qg = 12858,	-- Torek
 				coords = {
@@ -945,6 +1045,78 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				groups = {
 					i(16889),	-- Polished Walking Staff
 					i(16890),	-- Slatemetal Cutlass
+				},
+			}),
+			q(6462, {	-- Troll Charm
+				qg = 12721,	-- Mitsuwa
+				coords = {
+					{ 11.6, 34.8, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				lvl = 19,
+				groups = {
+					objective(1, {	-- 0/8 Troll Charm
+						providers = {
+							{ "i",  16602 },	-- Troll Charm
+							{ "o", 178144 },	-- Troll Chest
+						},
+						coord = { 40.8, 32.9, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(23, {		-- Ursangous's Paw
+				sourceQuest = 6383,	-- The Ashenvale Hunt (2/2)
+				qi = 16303,	-- Ursangous's Paw
+				coords = {
+					{ 41.6, 66.6, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				cr = 12678,	-- Ursangous
+				lvl = 20,
+			}),
+			q(1037, {	-- Velinde Starsong
+				sourceQuest = 1022,	-- The Howling Vale
+				qg = 3880,	-- Sentinel Melyria Frostshadow
+				coord = { 22.2, 53.0, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+			}),
+			q(98417, {	-- Vengeful Trail
+				qg = 221269,	-- Maseara Autumnmoon
+				coord = { 86.2, 45.8, MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 23,
+				groups = {
+					objective(1, {	-- 0/1 Vine-Wrapped Scroll
+						providers = {
+							{ "i", 281014 },	-- Vine-Wrapped Scroll
+							{ "o", 673431 },	-- Vine-Wrapped Scroll
+						},
+						coord = { 81.1, 50.3, MAP.ASHENVALE },
+					}),
+				},
+			}),
+			q(1021, {	-- Vile Satyr! Dryads in Danger!
+				qg = 3901,	-- Illiyana
+				coord = { 21.7, 53.4, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				lvl = 26,
+			}),
+			q(6641, {	-- Vorsha the Lasher
+				qg = 12717,	-- Muglash
+				coord = { 12.0, 34.6, MAP.ASHENVALE },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Vorsha the Lasher slain
+						providers = {
+							{ "n",  12940 },	-- Vorsha the Lasher
+							{ "o", 178247 },	-- Naga Brazier
+						},
+						coord = { 9.6, 27.6, MAP.ASHENVALE },
+					}),
+					i(17692),	-- Horn Ring
 				},
 			}),
 			q(6571, {	-- Warsong Supplies
@@ -1006,178 +1178,6 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(16975),	-- Warsong Sash
 					i(16977),	-- Warsong Boots
 					i(16978),	-- Warsong Gauntlets
-				},
-			}),
-			q(6621, {	-- King of the Foulweald
-				sourceQuests = {
-					216,	-- Between a Rock and a Thistlefur
-				},
-				qgs = {
-					12757,	-- Karang Amakkar
-				},
-				coords = {
-					{ 11.8, 34.4, MAP.ASHENVALE },
-				},
-				races = HORDE_ONLY,
-				lvl = 21,
-				groups = {
-					objective(1, {	-- 0/1 Murgut's Totem
-						providers = {
-							{ "i",  16976 },	-- Murgut's Totem
-							{ "o", 178227 },	-- Murgut's Totem Basket
-						},
-						coord = { 56.5, 63.5, MAP.ASHENVALE },
-						cost = { { "i", 16972, 1 } },	-- Karang's Banner
-						cr = 12918,	-- Chief Murgut
-					}),
-					i(17005),	-- Boorguard Tunic
-					i(17006),	-- Cobalt Legguards
-				},
-			}),
-			q(6641, {	-- Vorsha the Lasher
-				qg = 12717,	-- Muglash
-				coord = { 12.0, 34.6, MAP.ASHENVALE },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Vorsha the Lasher slain
-						providers = {
-							{ "n",  12940 },	-- Vorsha the Lasher
-							{ "o", 178247 },	-- Naga Brazier
-						},
-						coord = { 9.6, 27.6, MAP.ASHENVALE },
-					}),
-					i(17692),	-- Horn Ring
-				},
-			}),
-			q(78089, {	-- Advice From Stormwind
-				sourceQuest = 78088,	-- A Strange Artifact
-				qg = 3663,	-- Delgren the Purifier
-				qi = 209748,	-- Althalaxx Orb (PQI!)
-				coord = { 26.2, 38.6, MAP.ASHENVALE },
-				maps = { MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_PALADINS,
-				classes = { PALADIN },
-				lvl = 22,
-			}),
-			q(78093, {	-- Return to Delgren
-				sourceQuest = 78092,	-- It Must Be Destroyed
-				provider = { "o", 409315 },	-- Shattered Orb
-				qi = 209800,	-- Orb Fragments (PQI!)
-				coord = { 89.4, 77.0, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_PALADINS,
-				classes = { PALADIN },
-				lvl = 22,
-				groups = {
-					i(277205),	-- Cloak of the Divine Storm
-				},
-			}),
-			q(86757, {	-- Slowing the Orc Advance
-				qg = 3955,	-- Shandrina <Trade Goods>
-				coord = { 49.4, 67.0, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 27,
-				groups = {
-					objective(1, {	-- 0/6 Jagged Orcish Sword
-						provider = { "i", 279505 },	-- Jagged Orcish Sword
-						cr = 11682,	-- Horde Grunt
-						coord = { 71.4, 81.2, MAP.ASHENVALE },
-					}),
-					objective(2, {	-- 0/4 Curved Orcish Dagger
-						provider = { "i", 279507 },	-- Curved Orcish Dagger
-						cr = 11680,	-- Horde Scout
-						coord = { 69.4, 82.4, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(95737, {	-- Seeking Caitlin
-				qg = 3970,	-- Llana <Reagent Supplies>
-				coord = { 35.0, 48.4, MAP.ASHENVALE },
-				maps = { MAP.WETLANDS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 24,
-			}),
-			q(98027, {	-- Gleaming Crescent Necklace
-				provider = { "o", 669176 },	-- Gleaming Crescent Pendant
-				qi = 279274,	-- Gleaming Crescent Necklace (PQI!)
-				coord = { 63.0, 71.6, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 22,
-				groups = {
-					i(281290),	-- Replica Crescent Necklace
-				},
-			}),
-			q(98251, {	-- Never Coming Back
-				qg = 267214,	-- Va'xug Firefure
-				coord = { 40.4, 61.4, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/6 Shadowhorn Stag slain
-						provider = { "n", 3817 },	-- Shadowhorn Stag
-						coord = { 36.2, 61.4, MAP.ASHENVALE },
-					}),
-					objective(2, {	-- 0/6 Ashenvale Bear slain
-						provider = { "n", 3809 },	-- Ashenvale Bear
-						coord = { 32.2, 39.4, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(98252, {	-- A Void Path
-				sourceQuest = 98251,	-- Never Coming Back
-				qg = 267214,	-- Va'xug Firefure
-				coord = { 40.4, 61.4, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 18,
-				-- Objective: guide Va'xug's Eye of Kilrogg (271181) back to the main Ashenvale road; it's tracked by a hidden credit NPC.
-			}),
-			q(98417, {	-- Vengeful Trail
-				qg = 221269,	-- Maseara Autumnmoon
-				coord = { 86.2, 45.8, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 23,
-				groups = {
-					objective(1, {	-- 0/1 Vine-Wrapped Scroll
-						providers = {
-							{ "i", 281014 },	-- Vine-Wrapped Scroll
-							{ "o", 673431 },	-- Vine-Wrapped Scroll
-						},
-						coord = { 81.1, 50.3, MAP.ASHENVALE },
-					}),
-				},
-			}),
-			q(98418, {	-- Shared Fury
-				sourceQuest = 98417,	-- Vengeful Trail
-				qg = 221269,	-- Maseara Autumnmoon
-				coord = { 86.2, 45.8, MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 23,
-				groups = {
-					objective(1, {	-- 0/5 Xavian Betrayer slain
-						provider = { "n", 3754 },	-- Xavian Betrayer
-						coord = { 78.2, 45.4, MAP.ASHENVALE },
-					}),
-					objective(2, {	-- 0/5 Xavian Felsworn slain
-						provider = { "n", 3755 },	-- Xavian Felsworn
-						coord = { 77.4, 44.8, MAP.ASHENVALE },
-					}),
-					objective(3, {	-- 0/5 Xavian Hellcaller slain
-						provider = { "n", 3757 },	-- Xavian Hellcaller
-						coord = { 77.4, 44.8, MAP.ASHENVALE },
-					}),
-					objective(4, {	-- 0/5 Xavian Rogue slain
-						provider = { "n", 3752 },	-- Xavian Rogue
-						coord = { 77.2, 46.6, MAP.ASHENVALE },
-					}),
 				},
 			}),
 		}),

@@ -183,15 +183,26 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				repeatable = true,
 				lvl = 60,
 			}),
-			q(8316, {	-- Armaments of War [WARRIOR]
+			q(8382, {	-- Armaments of War [DRUID]
 				sourceQuest = 8315,	-- The Calling
 				qg = 15183,	-- Geologist Larksbane
 				coord = { 49.7, 37.5, MAP.SILITHUS },
-				classes = { WARRIOR },
+				classes = { DRUID },
 				lvl = 58,
 				groups = {
-					i(20699),	-- Cenarion Reservist's Legplates
-					i(20710),	-- Crystal Encrusted Greaves
+					i(20704),	-- Cenarion Reservist's Leggings
+					i(20714),	-- Sandstorm Boots
+				},
+			}),
+			q(8377, {	-- Armaments of War [HUNTER]
+				sourceQuest = 8315,	-- The Calling
+				qg = 15183,	-- Geologist Larksbane
+				coord = { 49.7, 37.5, MAP.SILITHUS },
+				classes = { HUNTER },
+				lvl = 58,
+				groups = {
+					i(20702),	-- Cenarion Reservist's Legguards
+					i(20713),	-- Desertstalkers's Gauntlets
 				},
 			}),
 			q(8381, {	-- Armaments of War [MAGE / WARLOCK]
@@ -203,6 +214,17 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					i(20705),	-- Cenarion Reservist's Pants
 					i(20716),	-- Sandworm Skin Gloves
+				},
+			}),
+			q(8376, {	-- Armaments of War [PALADIN]
+				sourceQuest = 8315,	-- The Calling
+				qg = 15183,	-- Geologist Larksbane
+				coord = { 49.7, 37.5, MAP.SILITHUS },
+				classes = { PALADIN },
+				lvl = 58,
+				groups = {
+					i(20700),	-- Cenarion Reservist's Legplates
+					i(20711),	-- Crystal Lined Greaves
 				},
 			}),
 			q(8379, {	-- Armaments of War [PRIEST]
@@ -227,39 +249,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					i(20715),	-- Dunestalker's Boots
 				},
 			}),
-			q(8382, {	-- Armaments of War [DRUID]
-				sourceQuest = 8315,	-- The Calling
-				qg = 15183,	-- Geologist Larksbane
-				coord = { 49.7, 37.5, MAP.SILITHUS },
-				classes = { DRUID },
-				lvl = 58,
-				groups = {
-					i(20704),	-- Cenarion Reservist's Leggings
-					i(20714),	-- Sandstorm Boots
-				},
-			}),
-			q(8377, {	-- Armaments of War [HUNTER]
-				sourceQuest = 8315,	-- The Calling
-				qg = 15183,	-- Geologist Larksbane
-				coord = { 49.7, 37.5, MAP.SILITHUS },
-				classes = { HUNTER },
-				lvl = 58,
-				groups = {
-					i(20702),	-- Cenarion Reservist's Legguards
-					i(20713),	-- Desertstalkers's Gauntlets
-				},
-			}),
-			q(8376, {	-- Armaments of War [PALADIN]
-				sourceQuest = 8315,	-- The Calling
-				qg = 15183,	-- Geologist Larksbane
-				coord = { 49.7, 37.5, MAP.SILITHUS },
-				classes = { PALADIN },
-				lvl = 58,
-				groups = {
-					i(20700),	-- Cenarion Reservist's Legplates
-					i(20711),	-- Crystal Lined Greaves
-				},
-			}),
 			q(8380, {	-- Armaments of War [SHAMAN]
 				sourceQuest = 8315,	-- The Calling
 				qg = 15183,	-- Geologist Larksbane
@@ -269,6 +258,17 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					i(20701),	-- Cenarion Reservist's Legguards
 					i(20712),	-- Wastewalker's Gauntlets
+				},
+			}),
+			q(8316, {	-- Armaments of War [WARRIOR]
+				sourceQuest = 8315,	-- The Calling
+				qg = 15183,	-- Geologist Larksbane
+				coord = { 49.7, 37.5, MAP.SILITHUS },
+				classes = { WARRIOR },
+				lvl = 58,
+				groups = {
+					i(20699),	-- Cenarion Reservist's Legplates
+					i(20710),	-- Crystal Encrusted Greaves
 				},
 			}),
 			q(8780, {	-- Armor Kits for the Field (A)
@@ -561,6 +561,20 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
+			q(8856, {	-- Desert Survival Kits (A)
+				qi = 20807,	-- Logistics Task Briefing I (A)
+				cost = {
+					{ "i", 7079, 4 },	-- Globe of Water
+					{ "i", 19440, 4 },	-- Powerful Anti-Venom
+					{ "i", 20452, 4 },	-- Smoked Desert Dumplings
+				},
+				repeatable = true,
+				lvl = 60,
+				groups = {
+					CENARION_LOGISTICS_BADGE,
+					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
+				},
+			}),
 			q(8804, {	-- Desert Survival Kits (H)
 				qi = 21378,	-- Logistics Task Briefing I (H)
 				cost = {
@@ -574,20 +588,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				groups = {
 					CENARION_LOGISTICS_BADGE,
 					LOGISTICS_ASSIGNMENT_H,
-				},
-			}),
-			q(8856, {	-- Desert Survival Kits (A)
-				qi = 20807,	-- Logistics Task Briefing I (A)
-				cost = {
-					{ "i", 7079, 4 },	-- Globe of Water
-					{ "i", 19440, 4 },	-- Powerful Anti-Venom
-					{ "i", 20452, 4 },	-- Smoked Desert Dumplings
-				},
-				repeatable = true,
-				lvl = 60,
-				groups = {
-					CENARION_LOGISTICS_BADGE,
-					FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 				},
 			}),
 			q(8332, {	-- Dukes of the Council

@@ -34,12 +34,362 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 			}),
 		}),
 		n(QUESTS, {
+			q(231, {	-- A Daughter's Love
+				sourceQuest = 229,	-- The Daughter Who Lived
+				providers = {
+					{ "n", 576 },	-- Watcher Ladimore
+					{ "i", 2162 },	-- Sarah's Ring
+					{ "o", 61 },	-- A Weathered Grave
+				},
+				coord = { 73.6, 46.8, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+				groups = {
+					i(2000),	-- Archeus
+					i(270051, {	-- Ladimore Heirloom Ring
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			q(337, {	-- An Old History Book
+				qi = 2794,	-- An Old History Book
+				maps = { MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(98372, {	-- An Unfortunate End
+				qg = 271866,	-- Night Watch Guard <The Night Watch>
+				coords = {
+					{ 23.6, 33.2, MAP.DUSKWOOD },
+					{ 17.2, 54.4, MAP.DUSKWOOD },
+					{ 47.6, 59.6, MAP.DUSKWOOD },
+					{ 45.6, 79.0, MAP.DUSKWOOD },
+					{ 66.0, 33.8, MAP.DUSKWOOD },
+					{ 68.8, 69.6, MAP.DUSKWOOD },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(280612),	-- Night Watchman's Torch
+				},
+			}),
+			q(99267, {	-- An Unfortunate End (2/2)
+				qg = 271866,	-- Night Watch Guard <The Night Watch>
+				coords = {
+					{ 23.6, 33.2, MAP.DUSKWOOD },
+					{ 17.2, 54.4, MAP.DUSKWOOD },
+					{ 47.6, 59.6, MAP.DUSKWOOD },
+					{ 45.6, 79.0, MAP.DUSKWOOD },
+					{ 66.0, 33.8, MAP.DUSKWOOD },
+					{ 68.8, 69.6, MAP.DUSKWOOD },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				repeatable = true,
+				groups = {
+					i(280612),	-- Night Watchman's Torch
+				},
+			}),
+			q(1044, {	-- Answered Questions
+				sourceQuest = 1043,	-- The Scythe of Elune
+				qg = 661,	-- Jonathan Carevin
+				coord = { 75.3, 49.2, MAP.DUSKWOOD },
+				maps = { MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+				groups = {
+					i(5817),	-- Lunaris Bow
+					i(5818),	-- Moonbeam Wand
+				},
+			}),
+			q(325, {	-- Armed and Ready
+				sourceQuest = 322,	-- Blessed Arm
+				qg = 1416,	-- Grimand Elmore
+				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					i(7297),	-- Morbent's Bane
+				},
+			}),
+			q(322, {	-- Blessed Arm
+				sourceQuests = {
+					526,	-- Lightforge Ingots
+					324,	-- The Lost Ingots
+				},
+				qg = 1217,	-- Glorin Steelbrow
+				qi = 2712,	-- Crate of Lightforge Ingots
+				coord = { 10.6, 60.5, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(253, {	-- Bride of the Embalmer
+				sourceQuest = 252,	-- Translation to Ello
+				qg = 263,	-- Lord Ello Ebonlocke
+				coord = { 71.9, 46.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					q(254, {	-- Digging Through the Dirt
+						provider = { "o", 51708 },	-- Eliza's Grave Dirt
+						coord = { 28.8, 30.8, MAP.DUSKWOOD },
+						repeatable = true,
+						groups = {
+							objective(1, {	-- 0/1 The Embalmer's Heart
+								questID = 253,	-- Bride of the Embalmer
+								provider = { "i", 2382 },	-- The Embalmer's Heart
+								cr = 314,	-- Eliza <Bride of the Embalmer>
+							}),
+						},
+					}),
+					i(3560),	-- Mantle of Honor
+					i(6223),	-- Crest of Darkshire
+					i(270044, {	-- Darkshire Shoulderguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			q(157, {	-- Deliver the Thread
+				sourceQuest = 154,	-- Return the Comb
+				qg = 265,	-- Madame Eva
+				qi = 1596,	-- Ghost Hair Thread
+				coord = { 75.8, 45.3, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(164, {	-- Deliveries to Sven
+				qg = 633,	-- Elaine Carevin
+				qi = 1922,	-- Supplies for Sven
+				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 17,
+			}),
+			q(93, {	-- Dusky Crab Cakes
+				sourceQuest = 5,	-- Jitters' Growling Gut
+				qg = 272,	-- Chef Grual
+				coord = { 73.8, 43.5, MAP.DUSKWOOD },
+				cost = { { "i", 2251, 6 } },	-- Gooey Spider Leg
+				races = ALLIANCE_ONLY,
+				lvl = 17,
+				groups = {
+					i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
+				},
+			}),
+			q(245, {	-- Eight-Legged Menaces
+				qg = 888,	-- Watcher Dodds
+				coord = { 45.1, 67.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 17,
+				groups = {
+					objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
+						provider = { "n", 539 },	-- Pygmy Venom Web Spider
+						coords = {
+							{ 90.8, 16.0, MAP.DUSKWOOD },
+							{ 52.0, 12.4, MAP.DUSKWOOD },
+							{ 27.8, 29.2, MAP.DUSKWOOD },
+							{ 13.0, 28.4, MAP.DUSKWOOD },
+							{  9.4, 39.8, MAP.DUSKWOOD },
+							{ 13.0, 70.6, MAP.DUSKWOOD },
+						},
+					}),
+					i(3559),	-- Night Watch Gauntlets
+				},
+			}),
+			q(453, {	-- Finding the Shadowy Figure
+				sourceQuest = 266,	-- Inquire at the Inn
+				qg = 273,	-- Tavernkeep Smitts
+				qi = 2161,	-- Book from Sven's Farm
+				coord = { 73.8, 44.4, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(156, {	-- Gather Rot Blossoms
+				sourceQuest = 158,	-- Zombie Juice
+				qg = 273,	-- Tavernkeep Smitts
+				coord = { 73.8, 44.4, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/8 Rot Blossom
+						provider = { "i", 1598 },	-- Rot Blossom
+						crs = {
+							531,	-- Skeletal Fiend
+							202,	-- Skeletal Horror
+						},
+					}),
+				},
+			}),
+			q(149, {	-- Ghost Hair Thread
+				sourceQuest = 148,	-- Supplies from Darkshire
+				qg = 265,	-- Madame Eva
+				qi = 1453,	-- Spectral Comb
+				coord = { 75.8, 45.3, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(133, {	-- Ghoulish Effigy
+				sourceQuest = 159,	-- Juice Delivery
+				qg = 289,	-- Abercrombie
+				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/7 Ghoul Rib
+						provider = { "i", 884 },	-- Ghoul Rib
+						crs = {
+							210,	-- Bone Chewer
+							570,	-- Brain Eater
+							3,		-- Flesh Eater
+							604,	-- Plague Spreader
+							948,	-- Rotted One
+						},
+					}),
+				},
+			}),
+			q(79362, {	-- Grant's Shield
+				aqd = {
+					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				hqd = {
+					qg = 6176,	-- Bath'rah the Windwatcher
+					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				qs = 281147,	-- Grant's Shield (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/1 Grant's Mace
+						provider = { "i", 281146 },	-- Grant's Mace
+						crs = {
+							787,	-- Skeletal Healer
+							202,	-- Skeletal Horror
+							531,	-- Skeletal Fiend
+						},
+					}),
+				},
+			}),
+			q(266, {	-- Inquire at the Inn
+				sourceQuest = 265,	-- The Shadowy Search Continues
+				qg = 267,	-- Clerk Daltry
+				qi = 2161,	-- Book from Sven's Farm
+				coord = { 72.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(96137, {	-- Ira's Dagger
+				aqd = {
+					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				hqd = {
+					qg = 6176,	-- Bath'rah the Windwatcher
+					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				qs = 281143,	-- Ira's Dagger (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/10 Young Black Ravager slain
+						provider = { "n", 923 },	-- Young Black Ravager
+					}),
+					objective(2, {	-- 0/7 Black Ravager slain
+						provider = { "n", 628 },	-- Black Ravager
+					}),
+				},
+			}),
 			q(5, {	-- Jitters' Growling Gut
 				sourceQuest = 163,	-- Raven Hill
 				qg = 288,	-- Jitters
 				coord = { 18.2, 56.3, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+			}),
+			q(159, {	-- Juice Delivery
+				sourceQuest = 156,	-- Gather Rot Blossoms
+				qg = 273,	-- Tavernkeep Smitts
+				qi = 1451,	-- Bottle of Zombie Juice
+				coord = { 73.8, 44.4, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(174, {	-- Look To The Stars (1/4)
+				qg = 276,	-- Viktori Prism'Antras
+				coord = { 79.8, 48.0, MAP.DUSKWOOD },
+				cost = { { "i", 4371, 1 } },	-- Bronze Tube
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(175, {	-- Look To The Stars (2/4)
+				sourceQuest = 174,	-- Look To The Stars (1/4)
+				qg = 276,	-- Viktori Prism'Antras
+				coord = { 79.8, 48.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(177, {	-- Look To The Stars (3/4)
+				sourceQuest = 175,	-- Look To The Stars (2/4)
+				qg = 302,	-- Blind Mary
+				coord = { 81.9, 59.1, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Mary's Looking Glass
+						provider = { "i", 1946 },	-- Mary's Looking Glass
+						coord = { 80.8, 71.6, MAP.DUSKWOOD },
+						cr = 511,	-- Insane Ghoul
+					}),
+				},
+			}),
+			q(181, {	-- Look To The Stars (4/4)
+				sourceQuest = 177,	-- Look To The Stars (3/4)
+				qg = 276,	-- Viktori Prism'Antras
+				coord = { 79.8, 48.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Ogre's Monocle
+						provider = { "i", 1968 },	-- Ogre's Monocle
+						coord = { 37.0, 82.4, MAP.DUSKWOOD },
+						cr = 300,	-- Zzarc' Vul
+					}),
+					i(7107),	-- Belt of the Stars
+					i(7106),	-- Zodiac Gloves
+				},
+			}),
+			q(96138, {	-- Merrick's Bow
+				aqd = {
+					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				hqd = {
+					qg = 6176,	-- Bath'rah the Windwatcher
+					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				qs = 281142,	-- Merrick's Bow (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/8 Splinter Fist Warrior slain
+						provider = { "n", 212 },	-- Splinter Fist Warrior
+					}),
+					objective(2, {	-- 0/4 Splinter Fist Taskmaster slain
+						provider = { "n", 892 },	-- Splinter Fist Taskmaster
+					}),
+				},
+			}),
+			q(228, {	-- Mor'Ladim
+				sourceQuest = 227,	-- Morgan Ladimore
+				qg = 264,	-- Commander Althea Ebonlocke
+				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+				groups = {
+					objective(1, {	-- 0/1 Mor'Ladim's Skull
+						provider = { "i", 3514 },	-- Mor'Ladim's Skull
+						coord = { 19.4, 34.6, MAP.DUSKWOOD },
+						cr = 522,	-- Mor'Ladim
+					}),
+				},
 			}),
 			q(55, {	-- Morbent Fel
 				sourceQuest = 325,	-- Armed and Ready
@@ -59,49 +409,240 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					i(2953),	-- Watch Master's Cloak
 				},
 			}),
-			q(56, {	-- The Night Watch (1/3)
-				qg = 264,	-- Commander Althea Ebonlocke
-				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+			q(227, {	-- Morgan Ladimore
+				sourceQuest = 225,	-- The Weathered Grave
+				qg = 268,	-- Sirra Von'Indi
+				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				lvl = 18,
+				lvl = 28,
 				groups = {
-					objective(1, {	-- 0/8 Skeletal Warrior slain
-						provider = { "n", 48 },	-- Skeletal Warrior
+					i(2154),	-- The Story of Morgan Ladimore
+				},
+			}),
+			q(160, {	-- Note to the Mayor
+				sourceQuest = 134,	-- Ogre Thieves
+				qg = 289,	-- Abercrombie
+				qi = 1637,	-- Letter to Ello
+				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(1372, {	-- Nothing But The Truth (1/4)
+				qg = 5418,	-- Deathstalker Zraedus
+				coord = { 87.6, 35.6, MAP.DUSKWOOD },
+				races = HORDE_ONLY,
+				lvl = 37,
+			}),
+			q(1383, {	-- Nothing But The Truth (2/4)
+				sourceQuest = 1372,	-- Nothing But The Truth (1/4)
+				qg = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
+				coord = { 87.4, 35.4, MAP.DUSKWOOD },
+				maps = { MAP.DESOLACE, MAP.SWAMP_OF_SORROWS },
+				races = HORDE_ONLY,
+				lvl = 37,
+				groups = {
+					objective(1, {	-- 0/5 Shadow Panther Heart
+						provider = { "i", 6080 },	-- Shadow Panther Heart
+						cr = 768,	-- Shadow Panther
 					}),
-					objective(2, {	-- 0/6 Skeletal Mage slain
-						provider = { "n", 203 },	-- Skeletal Mage
+					objective(2, {	-- 0/1 Mire Lord Fungus
+						provider = { "i", 6081 },	-- Mire Lord Fungus
+						cr = 1081,	-- Mire Lord
+					}),
+					objective(3, {	-- 0/1 Deepstrider Tumor
+						provider = { "i", 6082 },	-- Deepstrider Tumor
+						crs = {
+							4686,	-- Deepstrider Giant
+							4687,	-- Deepstrider Searcher
+						},
+					}),
+					i(6832),	-- Cloak of Blight
+					i(11265),	-- Cragwood Maul
+				},
+			}),
+			q(1388, {	-- Nothing But The Truth (3/4)
+				sourceQuest = 1383,	-- Nothing But The Truth (2/4)
+				qg = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
+				qi = 6086,	-- Faustin's Truth Serum
+				coord = { 87.4, 35.4, MAP.DUSKWOOD },
+				races = HORDE_ONLY,
+				lvl = 37,
+			}),
+			q(1391, {	-- Nothing But The Truth (4/4)
+				sourceQuest = 1388,	-- Nothing But The Truth (3/4)
+				qg = 5418,	-- Deathstalker Zraedus
+				qi = 6089,	-- Zraedus's Brew
+				coord = { 87.6, 35.6, MAP.DUSKWOOD },
+				races = HORDE_ONLY,
+				lvl = 37,
+			}),
+			q(134, {	-- Ogre Thieves
+				sourceQuest = 133,	-- Ghoulish Effigy
+				qg = 289,	-- Abercrombie
+				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Abercrombie's Crate
+						providers = {
+							{ "i", 1349 },	-- Abercrombie's Crate
+							{ "o",  119 },	-- Abercrombie's Crate
+						},
+						coord = { 33.5, 76.5, MAP.DUSKWOOD },
 					}),
 				},
 			}),
-			q(57, {	-- The Night Watch (2/3)
-				sourceQuest = 56,	-- The Night Watch (1/3)
-				qg = 264,	-- Commander Althea Ebonlocke
-				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+			q(323, {	-- Proving Your Worth
+				sourceQuest = 268,	-- Return to Sven
+				qg = 311,	-- Sven Yorgen
+				coord = { 7.8, 34.0, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				lvl = 18,
+				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/15 Skeletal Fiend slain
-						provider = { "n", 531 },	-- Skeletal Fiend
+					objective(1, {	-- 0/15 Skeletal Raider slain
+						provider = { "n", 1110 },	-- Skeletal Raider
 					}),
-					objective(2, {	-- 0/15 Skeletal Horror slain
-						provider = { "n", 202 },	-- Skeletal Horror
+					objective(2, {	-- 0/3 Skeletal Healer slain
+						provider = { "n", 787 },	-- Skeletal Healer
+					}),
+					objective(3, {	-- 0/3 Skeletal Warder slain
+						provider = { "n", 785 },	-- Skeletal Warder
 					}),
 				},
 			}),
-			q(58, {	-- The Night Watch (3/3)
-				sourceQuest = 57,	-- The Night Watch (2/3)
-				qg = 264,	-- Commander Althea Ebonlocke
-				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+			q(163, {	-- Raven Hill
+				qg = 633,	-- Elaine Carevin
+				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 17,
+			}),
+			q(154, {	-- Return the Comb
+				sourceQuest = 149,	-- Ghost Hair Thread
+				qg = 302,	-- Blind Mary
+				qi = 1518,	-- Ghost Hair Comb
+				coord = { 81.9, 59.1, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(240, {	-- Return to Jitters
+				sourceQuest = 93,	-- Dusky Crab Cakes
+				qg = 272,	-- Chef Grual
+				qi = 2250,	-- Dusky Crab Cakes
+				coord = { 73.8, 43.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 17,
+			}),
+			q(268, {	-- Return to Sven
+				sourceQuest = 453,	-- Finding the Shadowy Figure
+				qg = 288,	-- Jitters
+				qi = 2560,	-- Jitters' Completed Journal
+				coord = { 18.2, 56.3, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(90, {	-- Seasoned Wolf Kabobs
+				qg = 272,	-- Chef Grual
+				coord = { 73.8, 43.5, MAP.DUSKWOOD },
+				cost = {
+					{ "i", 1015, 10 },	-- Lean Wolf Flank
+				},
 				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {
-					objective(1, {	-- 0/20 Plague Spreader slain
-						provider = { "n", 604 },	-- Plague Spreader
-					}),
-					i(3604),	-- Bandolier of the Night Watch
-					i(1729),	-- Gunnysack of the Night Watch
-					i(3605),	-- Quiver of the Night Watch
+					i(1017),	-- Seasoned Wolf Kabob
+					i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
 				},
+			}),
+			q(269, {	-- Seeking Wisdom
+				sourceQuest = 323,	-- Proving Your Worth
+				qg = 311,	-- Sven Yorgen
+				qi = 2560,	-- Jitters' Completed Journal
+				coord = { 7.8, 34.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(79363, {	-- Silvia's Sword
+				aqd = {
+					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+					coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				},
+				hqd = {
+					qg = 6176,	-- Bath'rah the Windwatcher
+					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				qs = 281145,	-- Silvia's Sword (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/7 Defias Night Blade slain
+						provider = { "n", 909 },	-- Defias Night Blade
+					}),
+					objective(2, {	-- 0/2 Defias Enchanter slain
+						provider = { "n", 910 },	-- Defias Enchanter
+					}),
+				},
+			}),
+			q(1395, {	-- Supplies for Nethergarde
+				sourceQuest = 1477,	-- Vital Supplies
+				qg = 5464,	-- Watchmaster Sorigal
+				qi = 6091,	-- Crate of Power Stones
+				coord = { 75.8, 46.2, MAP.DUSKWOOD },
+				maps = { MAP.BLASTED_LANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+			}),
+			q(148, {	-- Supplies from Darkshire
+				sourceQuest = 165,	-- The Hermit
+				qg = 289,	-- Abercrombie
+				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(230, {	-- Sven's Camp
+				sourceQuest = 95,	-- Sven's Revenge
+				providers = {
+					{ "o", 59 },	-- Mound of loose dirt
+					{ "i", 2161 },	-- Book from Sven's Farm
+				},
+				coord = { 49.9, 77.7, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(95, {	-- Sven's Revenge
+				sourceQuest = 164,	-- Deliveries to Sven
+				qg = 311,	-- Sven Yorgen
+				coord = { 7.8, 34.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(1042, {	-- The Carevin Family
+				sourceQuest = 1041,	-- The Caravan Road
+				qg = 267,	-- Clerk Daltry
+				coord = { 72.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+			}),
+			q(229, {	-- The Daughter Who Lived
+				sourceQuest = 228,	-- Mor'Ladim
+				qg = 264,	-- Commander Althea Ebonlocke
+				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+			}),
+			q(270, {	-- The Doomed Fleet
+				sourceQuest = 269,	-- Seeking Wisdom
+				qg = 1212,	-- Bishop Farthing
+				coord = { 50.0, 46.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(165, {	-- The Hermit
+				qg = 633,	-- Elaine Carevin
+				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lvl = 17,
 			}),
 			q(66, {	-- The Legend of Stalvan (1/13)
 				qg = 265,	-- Madame Eva
@@ -205,37 +746,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				races = ALLIANCE_ONLY,
 				lvl = 22,
 			}),
-			q(90, {	-- Seasoned Wolf Kabobs
-				qg = 272,	-- Chef Grual
-				coord = { 73.8, 43.5, MAP.DUSKWOOD },
-				cost = {
-					{ "i", 1015, 10 },	-- Lean Wolf Flank
-				},
-				races = ALLIANCE_ONLY,
-				lvl = 18,
-				groups = {
-					i(1017),	-- Seasoned Wolf Kabob
-					i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
-				},
-			}),
-			q(93, {	-- Dusky Crab Cakes
-				sourceQuest = 5,	-- Jitters' Growling Gut
-				qg = 272,	-- Chef Grual
-				coord = { 73.8, 43.5, MAP.DUSKWOOD },
-				cost = { { "i", 2251, 6 } },	-- Gooey Spider Leg
-				races = ALLIANCE_ONLY,
-				lvl = 17,
-				groups = {
-					i(3683),	-- Recipe: Gooey Spider Cake (RECIPE!)
-				},
-			}),
-			q(95, {	-- Sven's Revenge
-				sourceQuest = 164,	-- Deliveries to Sven
-				qg = 311,	-- Sven Yorgen
-				coord = { 7.8, 34.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
 			q(97, {	-- The Legend of Stalvan (12/13)
 				sourceQuest = 80,	-- The Legend of Stalvan (11/13)
 				qg = 267,	-- Clerk Daltry
@@ -261,6 +771,79 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
+			}),
+			q(56, {	-- The Night Watch (1/3)
+				qg = 264,	-- Commander Althea Ebonlocke
+				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/8 Skeletal Warrior slain
+						provider = { "n", 48 },	-- Skeletal Warrior
+					}),
+					objective(2, {	-- 0/6 Skeletal Mage slain
+						provider = { "n", 203 },	-- Skeletal Mage
+					}),
+				},
+			}),
+			q(57, {	-- The Night Watch (2/3)
+				sourceQuest = 56,	-- The Night Watch (1/3)
+				qg = 264,	-- Commander Althea Ebonlocke
+				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/15 Skeletal Fiend slain
+						provider = { "n", 531 },	-- Skeletal Fiend
+					}),
+					objective(2, {	-- 0/15 Skeletal Horror slain
+						provider = { "n", 202 },	-- Skeletal Horror
+					}),
+				},
+			}),
+			q(58, {	-- The Night Watch (3/3)
+				sourceQuest = 57,	-- The Night Watch (2/3)
+				qg = 264,	-- Commander Althea Ebonlocke
+				coord = { 73.6, 46.9, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- 0/20 Plague Spreader slain
+						provider = { "n", 604 },	-- Plague Spreader
+					}),
+					i(3604),	-- Bandolier of the Night Watch
+					i(1729),	-- Gunnysack of the Night Watch
+					i(3605),	-- Quiver of the Night Watch
+				},
+			}),
+			q(1043, {	-- The Scythe of Elune
+				sourceQuest = 1042,	-- The Carevin Family
+				qg = 661,	-- Jonathan Carevin
+				coord = { 75.3, 49.2, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 25,
+				groups = {
+					objective(1, {	-- Find evidence of the Scythe of Elune
+						provider = { "o", 19030 },	-- Mound of Dirt
+						coord = { 73.7, 79.0, MAP.DUSKWOOD },
+					}),
+				},
+			}),
+			q(262, {	-- The Shadowy Figure
+				sourceQuest = 230,	-- Sven's Camp
+				qg = 311,	-- Sven Yorgen
+				qi = 2161,	-- Book from Sven's Farm
+				coord = { 7.8, 34.0, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+			}),
+			q(265, {	-- The Shadowy Search Continues
+				sourceQuest = 262,	-- The Shadowy Figure
+				qg = 265,	-- Madame Eva
+				qi = 2161,	-- Book from Sven's Farm
+				coord = { 75.8, 45.3, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
 			}),
 			q(101, {	-- The Totem of Infliction
 				qg = 265,	-- Madame Eva
@@ -305,132 +888,96 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					i(1131),	-- Totem of Infliction
 				},
 			}),
-			q(133, {	-- Ghoulish Effigy
-				sourceQuest = 159,	-- Juice Delivery
-				qg = 289,	-- Abercrombie
-				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+			q(96139, {	-- The Valor Family (1/2)
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				lvl = 20,
+				lvl = 18,
 				groups = {
-					objective(1, {	-- 0/7 Ghoul Rib
-						provider = { "i", 884 },	-- Ghoul Rib
-						crs = {
-							210,	-- Bone Chewer
-							570,	-- Brain Eater
-							3,		-- Flesh Eater
-							604,	-- Plague Spreader
-							948,	-- Rotted One
-						},
-					}),
-				},
-			}),
-			q(134, {	-- Ogre Thieves
-				sourceQuest = 133,	-- Ghoulish Effigy
-				qg = 289,	-- Abercrombie
-				coord = { 28.0, 31.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Abercrombie's Crate
+					objective(1, {	-- 0/1 Raven Hill Tome
 						providers = {
-							{ "i", 1349 },	-- Abercrombie's Crate
-							{ "o",  119 },	-- Abercrombie's Crate
+							{ "i", 281046 },	-- Raven Hill Tome
+							{ "o", 673515 },	-- Memory of Valor
 						},
-						coord = { 33.5, 76.5, MAP.DUSKWOOD },
+						coord = { 72.6, 47.6, MAP.DUSKWOOD },
+					}),
+					i(281149),	-- Memories of Valor
+				},
+			}),
+			q(98447, {	-- The Valor Family (2/2)
+				description = "NOTE: No one currently knows how to get this quest. It may not be in the game yet. If you manage to finish it, please @crieve on Discord!",
+				sourceQuests = {
+					79362,	-- Grant's Shield
+					96137,	-- Ira's Dagger
+					96138,	-- Merrick's Bow
+					79363,	-- Silvia's Sword
+				},
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 18,
+				groups = {
+					objective(1, {	-- Raven Hill investigated
+						provider = { "n", 272450 },	-- Ol' Sandy
+						coord = { 17.4, 54.0, MAP.DUSKWOOD },
 					}),
 				},
 			}),
-			q(148, {	-- Supplies from Darkshire
-				sourceQuest = 165,	-- The Hermit
-				qg = 289,	-- Abercrombie
-				coord = { 28.0, 31.5, MAP.DUSKWOOD },
+			q(225, {	-- The Weathered Grave
+				provider = { "o", 61 },	-- A Weathered Grave
+				coord = { 17.7, 29.2, MAP.DUSKWOOD },
+				races = ALLIANCE_ONLY,
+				lvl = 28,
+			}),
+			q(251, {	-- Translate Abercrombie's Note
+				sourceQuest = 160,	-- Note to the Mayor
+				qg = 263,	-- Lord Ello Ebonlocke
+				qi = 1637,	-- Letter to Ello
+				coord = { 71.9, 46.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 			}),
-			q(149, {	-- Ghost Hair Thread
-				sourceQuest = 148,	-- Supplies from Darkshire
-				qg = 265,	-- Madame Eva
-				qi = 1453,	-- Spectral Comb
-				coord = { 75.8, 45.3, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(154, {	-- Return the Comb
-				sourceQuest = 149,	-- Ghost Hair Thread
-				qg = 302,	-- Blind Mary
-				qi = 1518,	-- Ghost Hair Comb
-				coord = { 81.9, 59.1, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(156, {	-- Gather Rot Blossoms
-				sourceQuest = 158,	-- Zombie Juice
-				qg = 273,	-- Tavernkeep Smitts
-				coord = { 73.8, 44.4, MAP.DUSKWOOD },
+			q(252, {	-- Translation to Ello
+				sourceQuest = 401,	-- Wait for Sirra to Finish
+				qg = 268,	-- Sirra Von'Indi
+				qi = 1656,	-- Translated Letter
+				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/8 Rot Blossom
-						provider = { "i", 1598 },	-- Rot Blossom
-						crs = {
-							531,	-- Skeletal Fiend
-							202,	-- Skeletal Horror
-						},
-					}),
+					i(3248),	-- Translated Letter from The Embalmer
 				},
 			}),
-			q(157, {	-- Deliver the Thread
-				sourceQuest = 154,	-- Return the Comb
-				qg = 265,	-- Madame Eva
-				qi = 1596,	-- Ghost Hair Thread
-				coord = { 75.8, 45.3, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(158, {	-- Zombie Juice
-				sourceQuest = 157,	-- Deliver the Thread
-				qg = 289,	-- Abercrombie
-				coord = { 28.0, 31.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(159, {	-- Juice Delivery
-				sourceQuest = 156,	-- Gather Rot Blossoms
-				qg = 273,	-- Tavernkeep Smitts
-				qi = 1451,	-- Bottle of Zombie Juice
-				coord = { 73.8, 44.4, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(160, {	-- Note to the Mayor
-				sourceQuest = 134,	-- Ogre Thieves
-				qg = 289,	-- Abercrombie
-				qi = 1637,	-- Letter to Ello
-				coord = { 28.0, 31.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(163, {	-- Raven Hill
-				qg = 633,	-- Elaine Carevin
-				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+			q(1477,	{	-- Vital Supplies
+				qg = 5694,	-- High Sorcerer Andromath
+				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
-				lvl = 17,
+				lvl = 40,
 			}),
-			q(164, {	-- Deliveries to Sven
-				qg = 633,	-- Elaine Carevin
-				qi = 1922,	-- Supplies for Sven
-				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+			q(401, {	-- Wait for Sirra to Finish
+				sourceQuest = 251,	-- Translate Abercrombie's Note
+				qg = 268,	-- Sirra Von'Indi
+				coord = { 72.6, 47.7, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 17,
+				lvl = 20,
 			}),
-			q(165, {	-- The Hermit
-				qg = 633,	-- Elaine Carevin
-				coord = { 75.3, 48.7, MAP.DUSKWOOD },
+			q(226, {	-- Wolves at Our Heels
+				qg = 893,	-- Lars
+				coord = { 7.7, 33.4, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 17,
+				lvl = 19,
+				groups = {
+					objective(1, {	-- 0/12 Starving Dire Wolf slain
+						provider = { "n", 213 },	-- Starving Dire Wolf
+					}),
+					objective(2, {	-- 0/8 Rabid Dire Wolf slain
+						provider = { "n", 565 },	-- Rabid Dire Wolf
+					}),
+					i(1127),	-- Flash Bundle
+				},
 			}),
 			q(173, {	-- Worgen in the Woods (1/4)
 				qg = 663,	-- Calor
@@ -441,50 +988,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					objective(1, {	-- 0/6 Nightbane Shadow Weaver
 						provider = { "n", 533 },	-- Nightbane Shadow Weaver
 					}),
-				},
-			}),
-			q(174, {	-- Look To The Stars (1/4)
-				qg = 276,	-- Viktori Prism'Antras
-				coord = { 79.8, 48.0, MAP.DUSKWOOD },
-				cost = { { "i", 4371, 1 } },	-- Bronze Tube
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(175, {	-- Look To The Stars (2/4)
-				sourceQuest = 174,	-- Look To The Stars (1/4)
-				qg = 276,	-- Viktori Prism'Antras
-				coord = { 79.8, 48.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(177, {	-- Look To The Stars (3/4)
-				sourceQuest = 175,	-- Look To The Stars (2/4)
-				qg = 302,	-- Blind Mary
-				coord = { 81.9, 59.1, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Mary's Looking Glass
-						provider = { "i", 1946 },	-- Mary's Looking Glass
-						coord = { 80.8, 71.6, MAP.DUSKWOOD },
-						cr = 511,	-- Insane Ghoul
-					}),
-				},
-			}),
-			q(181, {	-- Look To The Stars (4/4)
-				sourceQuest = 177,	-- Look To The Stars (3/4)
-				qg = 276,	-- Viktori Prism'Antras
-				coord = { 79.8, 48.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Ogre's Monocle
-						provider = { "i", 1968 },	-- Ogre's Monocle
-						coord = { 37.0, 82.4, MAP.DUSKWOOD },
-						cr = 300,	-- Zzarc' Vul
-					}),
-					i(7107),	-- Belt of the Stars
-					i(7106),	-- Zodiac Gloves
 				},
 			}),
 			q(221, {	-- Worgen in the Woods (2/4)
@@ -527,515 +1030,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					i(5244),	-- Consecrated Wand
 				},
 			}),
-			q(225, {	-- The Weathered Grave
-				provider = { "o", 61 },	-- A Weathered Grave
-				coord = { 17.7, 29.2, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 28,
-			}),
-			q(226, {	-- Wolves at Our Heels
-				qg = 893,	-- Lars
-				coord = { 7.7, 33.4, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 19,
-				groups = {
-					objective(1, {	-- 0/12 Starving Dire Wolf slain
-						provider = { "n", 213 },	-- Starving Dire Wolf
-					}),
-					objective(2, {	-- 0/8 Rabid Dire Wolf slain
-						provider = { "n", 565 },	-- Rabid Dire Wolf
-					}),
-					i(1127),	-- Flash Bundle
-				},
-			}),
-			q(227, {	-- Morgan Ladimore
-				sourceQuest = 225,	-- The Weathered Grave
-				qg = 268,	-- Sirra Von'Indi
-				coord = { 72.6, 47.7, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 28,
-				groups = {
-					i(2154),	-- The Story of Morgan Ladimore
-				},
-			}),
-			q(228, {	-- Mor'Ladim
-				sourceQuest = 227,	-- Morgan Ladimore
-				qg = 264,	-- Commander Althea Ebonlocke
-				coord = { 73.6, 46.9, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 28,
-				groups = {
-					objective(1, {	-- 0/1 Mor'Ladim's Skull
-						provider = { "i", 3514 },	-- Mor'Ladim's Skull
-						coord = { 19.4, 34.6, MAP.DUSKWOOD },
-						cr = 522,	-- Mor'Ladim
-					}),
-				},
-			}),
-			q(229, {	-- The Daughter Who Lived
-				sourceQuest = 228,	-- Mor'Ladim
-				qg = 264,	-- Commander Althea Ebonlocke
-				coord = { 73.6, 46.9, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 28,
-			}),
-			q(230, {	-- Sven's Camp
-				sourceQuest = 95,	-- Sven's Revenge
-				providers = {
-					{ "o", 59 },	-- Mound of loose dirt
-					{ "i", 2161 },	-- Book from Sven's Farm
-				},
-				coord = { 49.9, 77.7, MAP.DUSKWOOD },
+			q(158, {	-- Zombie Juice
+				sourceQuest = 157,	-- Deliver the Thread
+				qg = 289,	-- Abercrombie
+				coord = { 28.0, 31.5, MAP.DUSKWOOD },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
-			}),
-			q(231, {	-- A Daughter's Love
-				sourceQuest = 229,	-- The Daughter Who Lived
-				providers = {
-					{ "n", 576 },	-- Watcher Ladimore
-					{ "i", 2162 },	-- Sarah's Ring
-					{ "o", 61 },	-- A Weathered Grave
-				},
-				coord = { 73.6, 46.8, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 28,
-				groups = {
-					i(2000),	-- Archeus
-					i(270051, {	-- Ladimore Heirloom Ring
-						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-				},
-			}),
-			q(240, {	-- Return to Jitters
-				sourceQuest = 93,	-- Dusky Crab Cakes
-				qg = 272,	-- Chef Grual
-				qi = 2250,	-- Dusky Crab Cakes
-				coord = { 73.8, 43.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 17,
-			}),
-			q(245, {	-- Eight-Legged Menaces
-				qg = 888,	-- Watcher Dodds
-				coord = { 45.1, 67.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 17,
-				groups = {
-					objective(1, {	-- 0/15 Pygmy Venom Web Spider slain
-						provider = { "n", 539 },	-- Pygmy Venom Web Spider
-						coords = {
-							{ 90.8, 16.0, MAP.DUSKWOOD },
-							{ 52.0, 12.4, MAP.DUSKWOOD },
-							{ 27.8, 29.2, MAP.DUSKWOOD },
-							{ 13.0, 28.4, MAP.DUSKWOOD },
-							{  9.4, 39.8, MAP.DUSKWOOD },
-							{ 13.0, 70.6, MAP.DUSKWOOD },
-						},
-					}),
-					i(3559),	-- Night Watch Gauntlets
-				},
-			}),
-			q(251, {	-- Translate Abercrombie's Note
-				sourceQuest = 160,	-- Note to the Mayor
-				qg = 263,	-- Lord Ello Ebonlocke
-				qi = 1637,	-- Letter to Ello
-				coord = { 71.9, 46.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(252, {	-- Translation to Ello
-				sourceQuest = 401,	-- Wait for Sirra to Finish
-				qg = 268,	-- Sirra Von'Indi
-				qi = 1656,	-- Translated Letter
-				coord = { 72.6, 47.7, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					i(3248),	-- Translated Letter from The Embalmer
-				},
-			}),
-			q(253, {	-- Bride of the Embalmer
-				sourceQuest = 252,	-- Translation to Ello
-				qg = 263,	-- Lord Ello Ebonlocke
-				coord = { 71.9, 46.5, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					q(254, {	-- Digging Through the Dirt
-						provider = { "o", 51708 },	-- Eliza's Grave Dirt
-						coord = { 28.8, 30.8, MAP.DUSKWOOD },
-						repeatable = true,
-						groups = {
-							objective(1, {	-- 0/1 The Embalmer's Heart
-								questID = 253,	-- Bride of the Embalmer
-								provider = { "i", 2382 },	-- The Embalmer's Heart
-								cr = 314,	-- Eliza <Bride of the Embalmer>
-							}),
-						},
-					}),
-					i(3560),	-- Mantle of Honor
-					i(6223),	-- Crest of Darkshire
-					i(270044, {	-- Darkshire Shoulderguards
-						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-				},
-			}),
-			q(262, {	-- The Shadowy Figure
-				sourceQuest = 230,	-- Sven's Camp
-				qg = 311,	-- Sven Yorgen
-				qi = 2161,	-- Book from Sven's Farm
-				coord = { 7.8, 34.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(265, {	-- The Shadowy Search Continues
-				sourceQuest = 262,	-- The Shadowy Figure
-				qg = 265,	-- Madame Eva
-				qi = 2161,	-- Book from Sven's Farm
-				coord = { 75.8, 45.3, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(266, {	-- Inquire at the Inn
-				sourceQuest = 265,	-- The Shadowy Search Continues
-				qg = 267,	-- Clerk Daltry
-				qi = 2161,	-- Book from Sven's Farm
-				coord = { 72.6, 46.9, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(268, {	-- Return to Sven
-				sourceQuest = 453,	-- Finding the Shadowy Figure
-				qg = 288,	-- Jitters
-				qi = 2560,	-- Jitters' Completed Journal
-				coord = { 18.2, 56.3, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(269, {	-- Seeking Wisdom
-				sourceQuest = 323,	-- Proving Your Worth
-				qg = 311,	-- Sven Yorgen
-				qi = 2560,	-- Jitters' Completed Journal
-				coord = { 7.8, 34.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(270, {	-- The Doomed Fleet
-				sourceQuest = 269,	-- Seeking Wisdom
-				qg = 1212,	-- Bishop Farthing
-				coord = { 50.0, 46.0, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(322, {	-- Blessed Arm
-				sourceQuests = {
-					526,	-- Lightforge Ingots
-					324,	-- The Lost Ingots
-				},
-				qg = 1217,	-- Glorin Steelbrow
-				qi = 2712,	-- Crate of Lightforge Ingots
-				coord = { 10.6, 60.5, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(323, {	-- Proving Your Worth
-				sourceQuest = 268,	-- Return to Sven
-				qg = 311,	-- Sven Yorgen
-				coord = { 7.8, 34.0, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/15 Skeletal Raider slain
-						provider = { "n", 1110 },	-- Skeletal Raider
-					}),
-					objective(2, {	-- 0/3 Skeletal Healer slain
-						provider = { "n", 787 },	-- Skeletal Healer
-					}),
-					objective(3, {	-- 0/3 Skeletal Warder slain
-						provider = { "n", 785 },	-- Skeletal Warder
-					}),
-				},
-			}),
-			q(325, {	-- Armed and Ready
-				sourceQuest = 322,	-- Blessed Arm
-				qg = 1416,	-- Grimand Elmore
-				coord = { 59.7, 33.8, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					i(7297),	-- Morbent's Bane
-				},
-			}),
-			q(337, {	-- An Old History Book
-				qi = 2794,	-- An Old History Book
-				maps = { MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(401, {	-- Wait for Sirra to Finish
-				sourceQuest = 251,	-- Translate Abercrombie's Note
-				qg = 268,	-- Sirra Von'Indi
-				coord = { 72.6, 47.7, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(453, {	-- Finding the Shadowy Figure
-				sourceQuest = 266,	-- Inquire at the Inn
-				qg = 273,	-- Tavernkeep Smitts
-				qi = 2161,	-- Book from Sven's Farm
-				coord = { 73.8, 44.4, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-			}),
-			q(1042, {	-- The Carevin Family
-				sourceQuest = 1041,	-- The Caravan Road
-				qg = 267,	-- Clerk Daltry
-				coord = { 72.6, 46.9, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
-			}),
-			q(1043, {	-- The Scythe of Elune
-				sourceQuest = 1042,	-- The Carevin Family
-				qg = 661,	-- Jonathan Carevin
-				coord = { 75.3, 49.2, MAP.DUSKWOOD },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
-				groups = {
-					objective(1, {	-- Find evidence of the Scythe of Elune
-						provider = { "o", 19030 },	-- Mound of Dirt
-						coord = { 73.7, 79.0, MAP.DUSKWOOD },
-					}),
-				},
-			}),
-			q(1044, {	-- Answered Questions
-				sourceQuest = 1043,	-- The Scythe of Elune
-				qg = 661,	-- Jonathan Carevin
-				coord = { 75.3, 49.2, MAP.DUSKWOOD },
-				maps = { MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
-				groups = {
-					i(5817),	-- Lunaris Bow
-					i(5818),	-- Moonbeam Wand
-				},
-			}),
-			q(1372, {	-- Nothing But The Truth (1/4)
-				qg = 5418,	-- Deathstalker Zraedus
-				coord = { 87.6, 35.6, MAP.DUSKWOOD },
-				races = HORDE_ONLY,
-				lvl = 37,
-			}),
-			q(1383, {	-- Nothing But The Truth (2/4)
-				sourceQuest = 1372,	-- Nothing But The Truth (1/4)
-				qg = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
-				coord = { 87.4, 35.4, MAP.DUSKWOOD },
-				maps = { MAP.DESOLACE, MAP.SWAMP_OF_SORROWS },
-				races = HORDE_ONLY,
-				lvl = 37,
-				groups = {
-					objective(1, {	-- 0/5 Shadow Panther Heart
-						provider = { "i", 6080 },	-- Shadow Panther Heart
-						cr = 768,	-- Shadow Panther
-					}),
-					objective(2, {	-- 0/1 Mire Lord Fungus
-						provider = { "i", 6081 },	-- Mire Lord Fungus
-						cr = 1081,	-- Mire Lord
-					}),
-					objective(3, {	-- 0/1 Deepstrider Tumor
-						provider = { "i", 6082 },	-- Deepstrider Tumor
-						crs = {
-							4686,	-- Deepstrider Giant
-							4687,	-- Deepstrider Searcher
-						},
-					}),
-					i(6832),	-- Cloak of Blight
-					i(11265),	-- Cragwood Maul
-				},
-			}),
-			q(1388, {	-- Nothing But The Truth (3/4)
-				sourceQuest = 1383,	-- Nothing But The Truth (2/4)
-				qg = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
-				qi = 6086,	-- Faustin's Truth Serum
-				coord = { 87.4, 35.4, MAP.DUSKWOOD },
-				races = HORDE_ONLY,
-				lvl = 37,
-			}),
-			q(1391, {	-- Nothing But The Truth (4/4)
-				sourceQuest = 1388,	-- Nothing But The Truth (3/4)
-				qg = 5418,	-- Deathstalker Zraedus
-				qi = 6089,	-- Zraedus's Brew
-				coord = { 87.6, 35.6, MAP.DUSKWOOD },
-				races = HORDE_ONLY,
-				lvl = 37,
-			}),
-			q(1395, {	-- Supplies for Nethergarde
-				sourceQuest = 1477,	-- Vital Supplies
-				qg = 5464,	-- Watchmaster Sorigal
-				qi = 6091,	-- Crate of Power Stones
-				coord = { 75.8, 46.2, MAP.DUSKWOOD },
-				maps = { MAP.BLASTED_LANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 40,
-			}),
-			q(1477,	{	-- Vital Supplies
-				qg = 5694,	-- High Sorcerer Andromath
-				coord = { 48.7, 87.6, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 40,
-			}),
-			q(79362, {	-- Grant's Shield
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
-				qs = 281147,	-- Grant's Shield (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/1 Grant's Mace
-						provider = { "i", 281146 },	-- Grant's Mace
-						crs = {
-							787,	-- Skeletal Healer
-							202,	-- Skeletal Horror
-							531,	-- Skeletal Fiend
-						},
-					}),
-				},
-			}),
-			q(79363, {	-- Silvia's Sword
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
-				qs = 281145,	-- Silvia's Sword (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/7 Defias Night Blade slain
-						provider = { "n", 909 },	-- Defias Night Blade
-					}),
-					objective(2, {	-- 0/2 Defias Enchanter slain
-						provider = { "n", 910 },	-- Defias Enchanter
-					}),
-				},
-			}),
-			q(96137, {	-- Ira's Dagger
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
-				qs = 281143,	-- Ira's Dagger (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/10 Young Black Ravager slain
-						provider = { "n", 923 },	-- Young Black Ravager
-					}),
-					objective(2, {	-- 0/7 Black Ravager slain
-						provider = { "n", 628 },	-- Black Ravager
-					}),
-				},
-			}),
-			q(96138, {	-- Merrick's Bow
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
-				qs = 281142,	-- Merrick's Bow (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/8 Splinter Fist Warrior slain
-						provider = { "n", 212 },	-- Splinter Fist Warrior
-					}),
-					objective(2, {	-- 0/4 Splinter Fist Taskmaster slain
-						provider = { "n", 892 },	-- Splinter Fist Taskmaster
-					}),
-				},
-			}),
-			q(96139, {	-- The Valor Family (1/2)
-				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-				coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/1 Raven Hill Tome
-						providers = {
-							{ "i", 281046 },	-- Raven Hill Tome
-							{ "o", 673515 },	-- Memory of Valor
-						},
-						coord = { 72.6, 47.6, MAP.DUSKWOOD },
-					}),
-					i(281149),	-- Memories of Valor
-				},
-			}),
-			q(98372, {	-- An Unfortunate End
-				qg = 271866,	-- Night Watch Guard <The Night Watch>
-				coords = {
-					{ 23.6, 33.2, MAP.DUSKWOOD },
-					{ 17.2, 54.4, MAP.DUSKWOOD },
-					{ 47.6, 59.6, MAP.DUSKWOOD },
-					{ 45.6, 79.0, MAP.DUSKWOOD },
-					{ 66.0, 33.8, MAP.DUSKWOOD },
-					{ 68.8, 69.6, MAP.DUSKWOOD },
-				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					i(280612),	-- Night Watchman's Torch
-				},
-			}),
-			q(98447, {	-- The Valor Family (2/2)
-				description = "NOTE: No one currently knows how to get this quest. It may not be in the game yet. If you manage to finish it, please @crieve on Discord!",
-				sourceQuests = {
-					79362,	-- Grant's Shield
-					96137,	-- Ira's Dagger
-					96138,	-- Merrick's Bow
-					79363,	-- Silvia's Sword
-				},
-				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-				coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 18,
-				groups = {
-					objective(1, {	-- Raven Hill investigated
-						provider = { "n", 272450 },	-- Ol' Sandy
-						coord = { 17.4, 54.0, MAP.DUSKWOOD },
-					}),
-				},
-			}),
-			q(99267, {	-- An Unfortunate End (2/2)
-				qg = 271866,	-- Night Watch Guard <The Night Watch>
-				coords = {
-					{ 23.6, 33.2, MAP.DUSKWOOD },
-					{ 17.2, 54.4, MAP.DUSKWOOD },
-					{ 47.6, 59.6, MAP.DUSKWOOD },
-					{ 45.6, 79.0, MAP.DUSKWOOD },
-					{ 66.0, 33.8, MAP.DUSKWOOD },
-					{ 68.8, 69.6, MAP.DUSKWOOD },
-				},
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				repeatable = true,
-				groups = {
-					i(280612),	-- Night Watchman's Torch
-				},
 			}),
 		}),
 		n(RARES, {

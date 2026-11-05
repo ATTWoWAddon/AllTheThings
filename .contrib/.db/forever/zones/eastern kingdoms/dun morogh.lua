@@ -607,6 +607,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
+			q(94449, {	-- Call of Fire
+				qgs = {
+					258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+					258113,	-- Ingrid Dunwald <Shaman Trainer>
+				},
+				coords = {
+					{ 47.14, 13.52, MAP.IRONFORGE },
+					{ 47.58, 51.95, MAP.DUN_MOROGH },
+				},
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(94465, {	-- Call of Fire
+				sourceQuests = { 94449 },	-- Call of Fire
+				qg = 257597,	-- Bruegs Kindleborn
+				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
+				races = ALLIANCE_SHAMANS,
+				classes = { SHAMAN },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 6653,	-- Torch of the Dormant Flame (QI!)
+			}),
 			q(96045, {	-- Camping 101: Alchemy [Dun Morogh]
 				sourceQuest = 96608,	-- The Great Outdoors [Dun Morogh]
 				altQuests = {
@@ -861,6 +885,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					recipe(1263425),	-- Tailoring: Camp Chair
 				},
+			}),
+			q(94824, {	-- Confounding Flash
+				qg = 1226,	-- Maxan Anvol <Priest Trainer>
+				coord = { 47.34, 52.19, MAP.DUN_MOROGH },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(99158, {	-- Dawn in the Mountains
 				qg = 1226,	-- Maxan Anvol <Priest Trainer>
@@ -1379,17 +1411,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				},
 			}),
-			q(6074, {	-- The Hunter's Path [Ironforge]
-				qg = 5116,	-- Olmin Burningbeard <Hunter Trainer>
-				coord = { 70.0, 84.6, MAP.IRONFORGE },
+			q(6075, {	-- The Hunter's Path [Dun Morogh]
+				qg = 11807,	-- Tristane Shadowstone
+				coord = { 30.6, 45.4, MAP.DUN_MOROGH },
 				races = { DWARF },
 				classes = { HUNTER },
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6075, {	-- The Hunter's Path [Dun Morogh]
-				qg = 11807,	-- Tristane Shadowstone
-				coord = { 30.6, 45.4, MAP.DUN_MOROGH },
+			q(6074, {	-- The Hunter's Path [Ironforge]
+				qg = 5116,	-- Olmin Burningbeard <Hunter Trainer>
+				coord = { 70.0, 84.6, MAP.IRONFORGE },
 				races = { DWARF },
 				classes = { HUNTER },
 				isBreadcrumb = true,
@@ -1544,38 +1576,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 					}),
 				},
-			}),
-			q(94449, {	-- Call of Fire
-				qgs = {
-					258098,	-- Eldrun Stormbreaker <Shaman Trainer>
-					258113,	-- Ingrid Dunwald <Shaman Trainer>
-				},
-				coords = {
-					{ 47.14, 13.52, MAP.IRONFORGE },
-					{ 47.58, 51.95, MAP.DUN_MOROGH },
-				},
-				races = ALLIANCE_SHAMANS,
-				classes = { SHAMAN },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(94465, {	-- Call of Fire
-				sourceQuests = { 94449 },	-- Call of Fire
-				qg = 257597,	-- Bruegs Kindleborn
-				coord = { 87.94, 44.8, MAP.DUN_MOROGH },
-				races = ALLIANCE_SHAMANS,
-				classes = { SHAMAN },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 6653,	-- Torch of the Dormant Flame (QI!)
-			}),
-			q(94824, {	-- Confounding Flash
-				qg = 1226,	-- Maxan Anvol <Priest Trainer>
-				coord = { 47.34, 52.19, MAP.DUN_MOROGH },
-				races = { GNOME },
-				classes = { PRIEST },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1806, {	-- The Test of Righteousness (3/3)
 				sourceQuest = 1654,	-- The Test of Righteousness (2/3)

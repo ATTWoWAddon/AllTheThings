@@ -156,29 +156,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					i(21241),	-- Winter Veil Eggnog
 				},
 			}),
-			q(8769, {	-- A Ticking Present
-				providers = {
-					{ "o", 180748 },	-- Ticking Present
-					{ "i", 21327 },	-- Ticking Present
-				},
-				coords = {
-					{ 33.6, 66.5, MAP.IRONFORGE },
-					{ 49.5, 78.7, MAP.ORGRIMMAR },
-				},
-				isYearly = true,
-				lvl = 40,
-				_drop = { "g" },
-				groups = {
-					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
-					i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
-					i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
-					i(17706),	-- Plans: Edge of Winter (RECIPE!)
-					i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
-					i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
-					i(21325),	-- Mechanical Greench
-					i(21213),	-- Preserved Holly
-				},
-			}),
 			{	-- A Smokywood Pastures' Thank You!
 				allianceQuestData = q(7045, {	-- A Smokywood Pastures' Thank You! (Alliance)
 					sourceQuest = 7043,	-- You're a Mean One... (Alliance)
@@ -206,26 +183,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					}),
 				},
 			},
+			q(8769, {	-- A Ticking Present
+				providers = {
+					{ "o", 180748 },	-- Ticking Present
+					{ "i", 21327 },	-- Ticking Present
+				},
+				coords = {
+					{ 33.6, 66.5, MAP.IRONFORGE },
+					{ 49.5, 78.7, MAP.ORGRIMMAR },
+				},
+				isYearly = true,
+				lvl = 40,
+				_drop = { "g" },
+				groups = {
+					i(17725),	-- Formula: Enchant Weapon - Winter's Might (RECIPE!)
+					i(17722),	-- Pattern: Gloves of the Greatfather (RECIPE!)
+					i(17724),	-- Pattern: Green Holiday Shirt (RECIPE!)
+					i(17706),	-- Plans: Edge of Winter (RECIPE!)
+					i(17709),	-- Recipe: Elixir of Frost Power (RECIPE!)
+					i(17720),	-- Schematic: Snowmaster 9000 (RECIPE!)
+					i(21325),	-- Mechanical Greench
+					i(21213),	-- Preserved Holly
+				},
+			}),
 			q(99145, {	-- A Winter Veil Gift
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(286210),	-- A Winter Veil Gift
 				},
-			}),
-			q(7022, {	-- Greatfather Winter is Here! (Alliance)
-				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
-				coord = { 33.4, 67.0, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
-				isYearly = true,
-				lvl = 10,
-			}),
-			q(7023, {	-- Greatfather Winter is Here! (Alliance)
-				qg = 13435,	-- Khole Jinglepocket
-				coord = { 62.8, 70.2, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				isYearly = true,
-				lvl = 10,
 			}),
 			q(6961, {	-- Great-father Winter is Here! (Horde)
 				qg = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
@@ -245,6 +231,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				qg = 13429,	-- Nardstrum Copperpinch <Smokywood Pastures>
 				coord = { 68.0, 39.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				isYearly = true,
+				lvl = 10,
+			}),
+			q(7022, {	-- Greatfather Winter is Here! (Alliance)
+				qg = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
+				coord = { 33.4, 67.0, MAP.IRONFORGE },
+				races = ALLIANCE_ONLY,
+				isYearly = true,
+				lvl = 10,
+			}),
+			q(7023, {	-- Greatfather Winter is Here! (Alliance)
+				qg = 13435,	-- Khole Jinglepocket
+				coord = { 62.8, 70.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 				isYearly = true,
 				lvl = 10,
 			}),

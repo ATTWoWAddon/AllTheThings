@@ -1287,17 +1287,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6072, {	-- The Hunter's Path [Teldrassil]
-				qg = 3596,	-- Ayanna Everstride <Hunter Trainer>
-				coord = { 58.66, 40.45, MAP.TELDRASSIL },
+			q(6073, {	-- The Hunter's Path [Darnassus]
+				qg = 4205,	-- Dorion <Hunter Trainer>
+				coord = { 42.2, 7.6, MAP.DARNASSUS },
 				races = { NIGHTELF },
 				classes = { HUNTER },
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6073, {	-- The Hunter's Path [Darnassus]
-				qg = 4205,	-- Dorion <Hunter Trainer>
-				coord = { 42.2, 7.6, MAP.DARNASSUS },
+			q(6722, {	-- The Hunter's Path [Dun Morogh]
+				qg = 1231,	-- Grif Wildheart <Hunter Trainer>
+				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
 				races = { NIGHTELF },
 				classes = { HUNTER },
 				isBreadcrumb = true,
@@ -1311,9 +1311,9 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6722, {	-- The Hunter's Path [Dun Morogh]
-				qg = 1231,	-- Grif Wildheart <Hunter Trainer>
-				coord = { 45.8, 53.0, MAP.DUN_MOROGH },
+			q(6072, {	-- The Hunter's Path [Teldrassil]
+				qg = 3596,	-- Ayanna Everstride <Hunter Trainer>
+				coord = { 58.66, 40.45, MAP.TELDRASSIL },
 				races = { NIGHTELF },
 				classes = { HUNTER },
 				isBreadcrumb = true,

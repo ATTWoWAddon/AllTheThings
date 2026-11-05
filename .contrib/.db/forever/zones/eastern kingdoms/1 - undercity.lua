@@ -43,93 +43,126 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 		}),
 		n(QUESTS, {
-			q(232, {	-- Errand for Apothecary Zinge (1/2)
-				qg = 5204,	-- Apothecary Zinge
-				qi = 8525,	-- Zinge's Purchase Order
-				coord = { 50.0, 68.4, MAP.UNDERCITY },
+			q(4294, {	-- ... and a Batch of Ooze
+				qg = 10136,	-- Chemist Fuely
+				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				maps = { MAP.UNGORO_CRATER },
 				races = HORDE_ONLY,
-				lvl = 38,
-			}),
-			q(238, {	-- Errand for Apothecary Zinge (2/2)
-				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
-				qg = 7683,	-- Alessandro Luca
-				qi = 8523,	-- Field Testing Kit
-				coord = { 58.2, 55.2, MAP.UNDERCITY },
-				races = HORDE_ONLY,
-				lvl = 38,
-			}),
-			q(243, {	-- Into the Field
-				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
-				qg = 5204,	-- Apothecary Zinge
-				qi = 8523,	-- Field Testing Kit
-				coord = { 50.1, 68.0, MAP.UNDERCITY },
-				maps = { MAP.TANARIS },
-				races = HORDE_ONLY,
-				lvl = 38,
-			}),
-			q(1164, {	-- To Steal From Thieves
-				qg = 4486,	-- Genavie Callow
-				coord = { 64.8, 49.6, MAP.UNDERCITY },
-				maps = { MAP.ARATHI_HIGHLANDS },
-				races = HORDE_ONLY,
-				lvl = 27,
+				lvl = 48,
 				groups = {
-					objective(1, {	-- 0/1 Kenata's Head
-						provider = { "i", 5830 },	-- Kenata's Head
-						coord = { 56.2, 36.0, MAP.ARATHI_HIGHLANDS },
-						cr = 4480,	-- Kenata Dabyrie
+					q(4561, {	-- Testing for Impurities - Un'Goro Crater
+						provider = { "o", 174848 },	-- Testing Equipment
+						coord = { 47.7, 73.3, MAP.UNDERCITY },
+						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
+						races = HORDE_ONLY,
+						repeatable = true,
+						lvl = 48,
+						groups = {
+							i(15102, {	-- Un'Goro Tested Sample
+								description = "Might contain nothing. Bring way more slime samples than you need.",
+								groups = {
+									objective(1, {	-- 0/5 Pure Un'Goro Sample
+										questID = 4294,	-- ... and a Batch of Ooze
+										provider = { "i", 12236 },	-- Pure Un'Goro Sample
+									}),
+								},
+							}),
+						},
 					}),
-					objective(2, {	-- 0/1 Marcel's Head
-						provider = { "i", 5832 },	-- Marcel's Head
-						coord = { 54.5, 38.6, MAP.ARATHI_HIGHLANDS },
-						cr = 4481,	-- Marcel Dabyrie
+					i(12235, {	-- Un'Goro Slime Sample
+						description = "Bring at least 30 of these back with you to the Undercity for testing.",
+						crs = {
+							6559,	-- Glutinous Ooze
+							6556,	-- Muculent Ooze
+							6557,	-- Primal Ooze
+						},
 					}),
-					objective(3, {	-- 0/1 Fardel's Head
-						provider = { "i", 5831 },	-- Fardel's Head
-						coord = { 55.0, 40.0, MAP.ARATHI_HIGHLANDS },
-						cr = 4479,	-- Fardel Dabyrie
-					}),
-					i(4443),	-- Grim Pauldrons
-					i(2032),	-- Gallan Cuffs
 				},
 			}),
-			q(1358, {	-- Sample for Helbrim
-				sourceQuest = 1359,	-- Zinge's Delivery
-				qg = 5204,	-- Apothecary Zinge
-				qi = 6016,	-- Wolf Heart Sample
-				coord = { 50.0, 68.4, MAP.UNDERCITY },
-				maps = { MAP.THE_BARRENS },
+			q(7817, {	-- A Donation of Mageweave
+				qg = 14729,	-- Ralston Farnsley
+				coord = { 71.8, 29.0, MAP.UNDERCITY },
+				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
 				races = HORDE_ONLY,
-				lvl = 10,
-				groups = {
-					i(10637),	-- Brewer's Gloves
-					i(10638),	-- Long Draping Cape
-				},
+				lvl = 40,
 			}),
-			q(1471, {	-- The Binding (Voidwalker) [Undercity]
-				sourceQuest = 1473,	-- Creature of the Void [Undercity]
-				altQuests = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
-				qg = 5675,	-- Carendin Halgar
-				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
-				races = { ORC, UNDEAD },
-				lvl = 10,
+			q(7818, {	-- A Donation of Runecloth
+				qg = 14729,	-- Ralston Farnsley
+				coord = { 71.8, 29.0, MAP.UNDERCITY },
+				cost = { { "i", 14047, 60 } },	-- Runecloth
+				races = HORDE_ONLY,
+				lvl = 50,
+			}),
+			q(7814, {	-- A Donation of Silk
+				qg = 14729,	-- Ralston Farnsley
+				coord = { 71.8, 29.0, MAP.UNDERCITY },
+				cost = { { "i", 4306, 60 } },	-- Silk Cloth
+				races = HORDE_ONLY,
+				lvl = 26,
+			}),
+			q(7813, {	-- A Donation of Wool
+				qg = 14729,	-- Ralston Farnsley
+				coord = { 71.8, 29.0, MAP.UNDERCITY },
+				cost = { { "i", 2592, 60 } },	-- Wool Cloth
+				races = HORDE_ONLY,
+				lvl = 12,
+			}),
+			q(4293, {	-- A Sample of Slime...
+				qg = 10136,	-- Chemist Fuely
+				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				maps = { MAP.FELWOOD },
+				races = HORDE_ONLY,
+				lvl = 48,
 				groups = {
-					objective(1, {	-- 0/1 Summoned Voidwalker slain
-						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 6284, 1 } },	-- Runes of Summoning
+					q(4661, {	-- Testing for Corruption - Felwood
+						provider = { "o", 174848 },	-- Testing Equipment
+						coord = { 47.7, 73.3, MAP.UNDERCITY },
+						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample
+						races = HORDE_ONLY,
+						repeatable = true,
+						lvl = 48,
+						groups = {
+							i(15103, {	-- Corrupt Tested Sample
+								description = "Might contain nothing. Bring way more slime samples than you need.",
+								groups = {
+									objective(1, {	-- 0/5 Corrupted Felwood Sample
+										questID = 4293,	-- A Sample of Slime...
+										provider = { "i", 12234 },	-- Corrupted Felwood Sample
+									}),
+								},
+							}),
+						},
 					}),
-					recipe(697),	-- Summon Voidwalker
+					i(12230, {	-- Felwood Slime Sample
+						description = "Bring at least 30 of these back with you to the Undercity for testing.",
+						crs = {
+							7086,	-- Cursed Ooze
+							7092,	-- Tainted Ooze
+							14345,	-- The Ongar
+						},
+					}),
 				},
 			}),
-			q(1472, {	-- Devourer of Souls [Undercity]
-				altQuests = { 1507 },	-- Devourer of Souls [Orgrimmar]
-				qg = 5675,	-- Carendin Halgar
-				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				races = { ORC, UNDEAD },
-				classes = { WARLOCK },
-				isBreadcrumb = true,
+			q(7819, {	-- Additional Runecloth [Undercity]
+				sourceQuest = 7818,	-- A Donation of Runecloth
+				qg = 14729,	-- Ralston Farnsley
+				coord = { 71.8, 29.0, MAP.UNDERCITY },
+				maxReputation = { FACTION_UNDERCITY, EXALTED },
+				cost = { { "i", 14047, 20 } },	-- Runecloth
+				races = HORDE_ONLY,
+				repeatable = true,
+				lvl = 50,
+			}),
+			q(1847, {	-- Brutal Legguards
+				sourceQuest = 1846,	-- Dragonmaw Shinbones
+				qg = 6411,	-- Velora Nitely
+				coord = { 62.4, 39.2, MAP.UNDERCITY },
+				classes = { WARRIOR },
+				races = HORDE_ONLY,
 				lvl = 20,
+				groups = {
+					i(7132),	-- Brutal Legguards
+				},
 			}),
 			q(1473, {	-- Creature of the Void [Undercity]
 				sourceQuest = 1478,	-- Halgar's Summons
@@ -147,21 +180,196 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			q(1474, {	-- The Binding (Succubus) [Undercity]
-				sourceQuest = 1476,	-- Hearts of the Pure
-				altQuests = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
+			q(1507, {	-- Devourer of Souls [Orgrimmar]
+				altQuests = { 1472 },	-- Devourer of Souls [Undercity]
+				qg = 5875,	-- Dan'rul Bloodeye
+				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
+				isBreadcrumb = true,
+				lvl = 20,
+			}),
+			q(1472, {	-- Devourer of Souls [Undercity]
+				altQuests = { 1507 },	-- Devourer of Souls [Orgrimmar]
 				qg = 5675,	-- Carendin Halgar
 				coord = { 85.0, 25.6, MAP.UNDERCITY },
+				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
+				isBreadcrumb = true,
+				lvl = 20,
+			}),
+			q(5679, {	-- Devouring Plague [Undercity]
+				altQuests = {
+					5646,	-- Devouring Plague [Orgrimmar]
+					5644,	-- Devouring Plague [Thunder Bluff]
+				},
+				qgs = {
+					4606,	-- Aelthalyste
+					6018,	-- Ur'kyo <Priest Trainer>
+					3044,	-- Miles Welsh <Priest Trainer>
+				},
+				coords = {
+					{ 49.0, 18.3, MAP.UNDERCITY },
+					{ 35.6, 87.6, MAP.ORGRIMMAR },
+					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
+				},
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 2944,	-- Devouring Plague (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
+			q(1846, {	-- Dragonmaw Shinbones
+				sourceQuest = 1841,	-- Velora Nitely and the Brutal Legguards
+				qg = 6411,	-- Velora Nitely
+				coord = { 62.4, 39.2, MAP.UNDERCITY },
+				maps = { MAP.WETLANDS },
+				classes = { WARRIOR },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
+						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone
+						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone
+						crs = {
+							2091,	-- Chieftain Nek'rosh
+							1037,	-- Dragonmaw Battlemaster
+							1057,	-- Dragonmaw Bonewarder
+							1036,	-- Dragonmaw Centurion
+							1034,	-- Dragonmaw Raider
+							1038,	-- Dragonmaw Shadowwarder
+							1035,	-- Dragonmaw Swamprunner
+						},
+					}),
+				},
+			}),
+			q(232, {	-- Errand for Apothecary Zinge (1/2)
+				qg = 5204,	-- Apothecary Zinge
+				qi = 8525,	-- Zinge's Purchase Order
+				coord = { 50.0, 68.4, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 38,
+			}),
+			q(238, {	-- Errand for Apothecary Zinge (2/2)
+				sourceQuest = 232,	-- Errand for Apothecary Zinge (1/2)
+				qg = 7683,	-- Alessandro Luca
+				qi = 8523,	-- Field Testing Kit
+				coord = { 58.2, 55.2, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 38,
+			}),
+			q(1998, {	-- Fenwick Thatros
+				qg = 6467,	-- Mennet Carkad
+				coord = { 83.6, 67.6, MAP.UNDERCITY },
+				maps = { MAP.SILVERPINE_FOREST },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 16,
+				groups = {
+					objective(1, {	-- 0/1 Fenwick's Head
+						provider = { "i", 7306 },	-- Fenwick's Head
+						coord = { 59.6, 34.2, MAP.SILVERPINE_FOREST },
+						cr = 6570,	-- Fenwick Thatros
+					}),
+				},
+			}),
+			q(1961, {	-- Gathering Materials
+				sourceQuest = 1960,	-- Investigate the Alchemist Shop
+				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
+				coord = { 85.0, 10.2, MAP.UNDERCITY },
+				maps = { MAP.SILVERPINE_FOREST },
+				cost = { { "i", 2589, 10 } },	-- Linen Cloth
+				races = HORDE_ONLY,
+				classes = { MAGE },
+				lvl = 15,
+				groups = {
+					objective(2, {	-- 0/6 Dalaran Mana Gem
+						provider = { "i", 7293 },	-- Dalaran Mana Gem
+						crs = {
+							1867,	-- Dalaran Apprentice
+							3577,	-- Dalaran Brewmaster
+							1915,	-- Dalaran Conjuror
+							1914,	-- Dalaran Mage
+							3578,	-- Dalaran Miner
+							1912,	-- Dalaran Protector
+							1913,	-- Dalaran Warder
+							1888,	-- Dalaran Watcher
+							1889,	-- Dalaran Wizard
+						},
+					}),
+				},
+			}),
+			q(3635, {	-- Gnome Engineering [H]
+				altQuests = {
+					3526,	-- Goblin Engineering
+					3629,	-- Goblin Engineering
+					3630,	-- Gnome Engineering
+					3632,	-- Gnome Engineering
+					3633,	-- Goblin Engineering
+					3634,	-- Gnome Engineering
+					-- 3635,	-- Gnome Engineering
+					3637,	-- Gnome Engineering
+					4181,	-- Goblin Engineering
+				},
+				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
+				qi = 10789,	-- Manual of Engineering Disciplines
+				coord = { 75.6, 74.6, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				requireSkill = ENGINEERING,
+				learnedAt = 200,
+				lvl = 30,
+			}),
+			q(3526, {	-- Goblin Engineering [H]
+				altQuests = {
+					-- 3526,	-- Goblin Engineering
+					3629,	-- Goblin Engineering
+					3630,	-- Gnome Engineering
+					3632,	-- Gnome Engineering
+					3633,	-- Goblin Engineering
+					3634,	-- Gnome Engineering
+					3635,	-- Gnome Engineering
+					3637,	-- Gnome Engineering
+					4181,	-- Goblin Engineering
+				},
+				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
+				qi = 10789,	-- Manual of Engineering Disciplines
+				coord = { 75.6, 74.6, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				requireSkill = ENGINEERING,
+				learnedAt = 200,
+				lvl = 30,
+			}),
+			q(1478, {	-- Halgar's Summons
+				altQuests = { 1506 },	-- Gan'rul's Summons
+				qg = 5724,	-- Ageron Kargal
+				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
+				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
+				lvl = 10,
+			}),
+			q(65593, {	-- Hearts of the Lovers
+				sourceQuest = 1472,	-- Devourer of Souls [Undercity]
+				altQuests = { 65610 },	-- Wish You Were Here
+				qg = 5675,	-- Carendin Halgar
+				coord = { 85.0, 25.6, MAP.UNDERCITY },
+				maps = { MAP.THE_BARRENS, MAP.SILVERPINE_FOREST },
 				classes = { WARLOCK },
 				races = HORDE_ONLY,
 				lvl = 20,
 				groups = {
-					objective(1, {	-- 0/1 Summoned Succubus slain
-						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6286, 1 } },	-- Pure Hearts
+					objective(1, {	-- 0/1 Avelina's Heart
+						provider = { "i", 190179 },	-- Avelina's Heart
+						coord = { 63.6, 65.6, MAP.SILVERPINE_FOREST },
+						cr = 185333,	-- Avelina Lilly
 					}),
-					recipe(712),	-- Summon Succubus
-					i(22243),	-- Small Soul Pouch
+					objective(2, {	-- 0/1 Isaac's Heart
+						provider = { "i", 190180 },	-- Isaac's Heart
+						coord = { 61.8, 38.6, MAP.THE_BARRENS },
+						cr = 185334,	-- Isaac Pearson
+					}),
 				},
 			}),
 			q(1476, {	-- Hearts of the Pure
@@ -188,162 +396,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			q(1478, {	-- Halgar's Summons
-				altQuests = { 1506 },	-- Gan'rul's Summons
-				qg = 5724,	-- Ageron Kargal
-				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
-				races = { ORC, UNDEAD },
-				classes = { WARLOCK },
-				lvl = 10,
-			}),
-			q(1507, {	-- Devourer of Souls [Orgrimmar]
-				altQuests = { 1472 },	-- Devourer of Souls [Undercity]
-				qg = 5875,	-- Dan'rul Bloodeye
-				races = { ORC, UNDEAD },
-				classes = { WARLOCK },
-				isBreadcrumb = true,
-				lvl = 20,
-			}),
-			q(1841, {	-- Velora Nitely and the Brutal Legguards
-				sourceQuest = 1838,	-- Brutal Armor
-				qg = 5878,	-- Thun'grim Firegaze
-				coord = { 57.2, 30.2, MAP.THE_BARRENS },
-				classes = { WARRIOR },
+			q(243, {	-- Into the Field
+				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
+				qg = 5204,	-- Apothecary Zinge
+				qi = 8523,	-- Field Testing Kit
+				coord = { 50.1, 68.0, MAP.UNDERCITY },
+				maps = { MAP.TANARIS },
 				races = HORDE_ONLY,
-				lvl = 20,
-			}),
-			q(1846, {	-- Dragonmaw Shinbones
-				sourceQuest = 1841,	-- Velora Nitely and the Brutal Legguards
-				qg = 6411,	-- Velora Nitely
-				coord = { 62.4, 39.2, MAP.UNDERCITY },
-				maps = { MAP.WETLANDS },
-				classes = { WARRIOR },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/8 Sturdy Dragonmaw Shinbone
-						provider = { "i", 7134 },	-- Sturdy Dragonmaw Shinbone
-						cost = { { "i", 7131, 1 } },	-- Dragonmaw Shinbone
-						crs = {
-							2091,	-- Chieftain Nek'rosh
-							1037,	-- Dragonmaw Battlemaster
-							1057,	-- Dragonmaw Bonewarder
-							1036,	-- Dragonmaw Centurion
-							1034,	-- Dragonmaw Raider
-							1038,	-- Dragonmaw Shadowwarder
-							1035,	-- Dragonmaw Swamprunner
-						},
-					}),
-				},
-			}),
-			q(1847, {	-- Brutal Legguards
-				sourceQuest = 1846,	-- Dragonmaw Shinbones
-				qg = 6411,	-- Velora Nitely
-				coord = { 62.4, 39.2, MAP.UNDERCITY },
-				classes = { WARRIOR },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					i(7132),	-- Brutal Legguards
-				},
-			}),
-			q(1881, {	-- Speak with Anastasia
-				altQuests = { 1883 },	-- Speak with Un'thuwa
-				qg = 2128,	-- Cain Firesong <Mage Trainer>
-				coord = { 61.8, 52.4, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD, TROLL },
-				classes = { MAGE },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(1882, {	-- The Balnir Farmstead
-				sourceQuests = {
-					1881,	-- Speak with Anastasia
-					1883,	-- Speak with Un'thuwa
-				},
-				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
-				coord = { 85.0, 10.2, MAP.UNDERCITY },
-				maps = { MAP.TIRISFAL_GLADES },
-				races = { UNDEAD, TROLL },
-				classes = { MAGE },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Balnir Snapdragons
-						providers = {
-							{ "i",   7227 },	-- Balnir Snapdragons
-							{ "o", 102985 },	-- Balnir Snapdragons
-						},
-						coord = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
-					}),
-					i(7507),	-- Arcane Orb
-					i(9514),	-- Arcane Staff
-				},
-			}),
-			q(1885, {	-- Mennet Carkad
-				qg = 2130,	-- Marion Call
-				coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(1886, {	-- The Deathstalkers (1/4)
-				sourceQuest = 1885,	-- Mennet Carkad
-				qg = 6467,	-- Mennet Carkad
-				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				maps = { MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Astor's Letter of Introduction
-						provider = { "i", 7231 },	-- Astor's Letter of Introduction
-						coords = {
-							{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
-							{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
-							{ 51.0, 36.2, MAP.SILVERPINE_FOREST },
-							{ 46.4, 41.4, MAP.SILVERPINE_FOREST },
-						},
-						cr = 6497,	-- Astor Hadren
-					}),
-				},
-			}),
-			q(1898, {	-- The Deathstalkers (2/4)
-				sourceQuest = 1886,	-- The Deathstalkers (1/4)
-				qg = 6467,	-- Mennet Carkad
-				qi = 7231,	-- Astor's Letter of Introduction
-				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 10,
-			}),
-			q(1899, {	-- The Deathstalkers (3/4)
-				sourceQuest = 1898,	-- The Deathstalkers (2/4)
-				qg = 6522,	-- Andron Gant
-				coord = { 54.6, 75.6, MAP.UNDERCITY },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Andron's Ledger
-						provider = { "i", 7294 },	-- Andron's Ledger
-						coord = { 55.3, 76.7, MAP.UNDERCITY },
-					}),
-				},
-			}),
-			q(1959, {	-- Report to Anastasia
-				qgs = {
-					7311,	-- Uthel'nay <Mage Trainer>
-					3049,	-- Thurston Xane <Mage Trainer>
-				},
-				coords = {
-					{ 39.0, 86.0, MAP.ORGRIMMAR },
-					{ 25.0, 20.6, MAP.THUNDER_BLUFF },
-				},
-				races = HORDE_ONLY,
-				classes = { MAGE },
-				isBreadcrumb = true,
-				lvl = 15,
+				lvl = 38,
 			}),
 			q(1960, {	-- Investigate the Alchemist Shop
 				sourceQuest = 1959,	-- Report to Anastasia
@@ -379,84 +439,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			q(1961, {	-- Gathering Materials
-				sourceQuest = 1960,	-- Investigate the Alchemist Shop
-				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
-				coord = { 85.0, 10.2, MAP.UNDERCITY },
-				maps = { MAP.SILVERPINE_FOREST },
-				cost = { { "i", 2589, 10 } },	-- Linen Cloth
-				races = HORDE_ONLY,
-				classes = { MAGE },
-				lvl = 15,
-				groups = {
-					objective(2, {	-- 0/6 Dalaran Mana Gem
-						provider = { "i", 7293 },	-- Dalaran Mana Gem
-						crs = {
-							1867,	-- Dalaran Apprentice
-							3577,	-- Dalaran Brewmaster
-							1915,	-- Dalaran Conjuror
-							1914,	-- Dalaran Mage
-							3578,	-- Dalaran Miner
-							1912,	-- Dalaran Protector
-							1913,	-- Dalaran Warder
-							1888,	-- Dalaran Watcher
-							1889,	-- Dalaran Wizard
-						},
-					}),
-				},
-			}),
-			q(1962, {	-- Spellfire Robes
-				sourceQuest = 1961,	-- Gathering Materials
-				qg = 11049,	-- Rhiannon Davis <Expert Tailor>
-				coord = { 70.2, 30.2, MAP.UNDERCITY },
-				races = HORDE_ONLY,
-				classes = { MAGE },
-				lvl = 15,
-				groups = {
-					i(7510),	-- Lesser Spellfire Robes
-				},
-			}),
-			q(1978, {	-- The Deathstalkers (4/4)
-				sourceQuest = 1899,	-- The Deathstalkers (3/4)
-				qg = 6467,	-- Mennet Carkad
-				qi = 7294,	-- Andron's Ledger
-				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 10,
-				groups = {
-					i(7298),	-- Blade of Cunning
-				},
-			}),
-			q(1998, {	-- Fenwick Thatros
-				qg = 6467,	-- Mennet Carkad
-				coord = { 83.6, 67.6, MAP.UNDERCITY },
-				maps = { MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 16,
-				groups = {
-					objective(1, {	-- 0/1 Fenwick's Head
-						provider = { "i", 7306 },	-- Fenwick's Head
-						coord = { 59.6, 34.2, MAP.SILVERPINE_FOREST },
-						cr = 6570,	-- Fenwick Thatros
-					}),
-				},
-			}),
-			q(1999, {	-- Tools of the Trade
-				sourceQuest = 1998,	-- Fenwick Thatros
-				qg = 6467,	-- Mennet Carkad
-				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				maps = { MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
-				classes = { ROGUE },
-				lvl = 16,
-				groups = {
-					objective(1, {	-- 0/1 Dalaran Status Report
-						provider = { "i", 7309 },	-- Dalaran Status Report
-					}),
-				},
-			}),
 			q(2995, {	-- Lines of Communication
 				qg = 7825,	-- Oran Snakewrithe
 				coord = { 73.3, 32.4, MAP.UNDERCITY },
@@ -475,25 +457,103 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					}),
 				},
 			}),
-			q(3526, {	-- Goblin Engineering [H]
-				altQuests = {
-					-- 3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
+			q(4642, {	-- Melding of Influences
+				sourceQuests = {
+					4294,	-- ... and a Batch of Ooze
+					4293,	-- A Sample of Slime...
 				},
-				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
-				coord = { 75.6, 74.6, MAP.UNDERCITY },
+				qg = 10136,	-- Chemist Fuely
+				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				maps = { MAP.UNGORO_CRATER },
 				races = HORDE_ONLY,
-				requireSkill = ENGINEERING,
-				learnedAt = 200,
-				lvl = 30,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Merged Ooze Sample
+						provider = { "i", 12291 },	-- Merged Ooze Sample
+						cost = { { "i", 12288, 1 } },	-- Encased Corrupt Ooze
+						crs = {
+							6557,	-- Primal Ooze
+							9621,	-- Gargantuan Ooze
+						},
+					}),
+					i(15702),	-- Chemist's Ring
+					i(15703),	-- Chemist's Smock
+				},
+			}),
+			q(1885, {	-- Mennet Carkad
+				qg = 2130,	-- Marion Call
+				coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(6322, {	-- Michael Garrett
+				sourceQuest = 6323,	-- Ride to the Undercity
+				qg = 4556,	-- Gordon Wendham
+				qi = 16210,	-- Gordon's Crate
+				coord = { 61.6, 41.8, MAP.UNDERCITY },
+				maps = { MAP.SILVERPINE_FOREST },
+				races = { UNDEAD },
+				lvl = 10,
+			}),
+			q(8273, {	-- Oran's Gratitude
+				sourceQuest = 2782,	-- Rin'ji's Secret
+				qg = 7825,	-- Oran Snakewrithe
+				coord = { 73.4, 32.4, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 42,
+				groups = {
+					i(20643),	-- Undercity Reservist's Cap
+					i(20642),	-- Antiquated Nobleman's Tunic
+				},
+			}),
+			q(97891, {	-- Prompt Potion Runner
+				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
+				qi = 279020,	-- Unstable Potion (PQI!)
+				coord = { 58.2, 55.2, MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+			}),
+			q(1959, {	-- Report to Anastasia
+				qgs = {
+					7311,	-- Uthel'nay <Mage Trainer>
+					3049,	-- Thurston Xane <Mage Trainer>
+				},
+				coords = {
+					{ 39.0, 86.0, MAP.ORGRIMMAR },
+					{ 25.0, 20.6, MAP.THUNDER_BLUFF },
+				},
+				races = HORDE_ONLY,
+				classes = { MAGE },
+				isBreadcrumb = true,
+				lvl = 15,
+			}),
+			q(6324, {	-- Return to Podrig
+				sourceQuest = 6322,	-- Michael Garrett
+				qg = 4551,	-- Michael Garrett
+				qi = 16210,	-- Gordon's Crate
+				coords = {
+					{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
+					{ 63.4, 48.6, MAP.UNDERCITY },
+				},
+				maps = { MAP.SILVERPINE_FOREST },
+				races = { UNDEAD },
+				lvl = 10,
+			}),
+			q(1358, {	-- Sample for Helbrim
+				sourceQuest = 1359,	-- Zinge's Delivery
+				qg = 5204,	-- Apothecary Zinge
+				qi = 6016,	-- Wolf Heart Sample
+				coord = { 50.0, 68.4, MAP.UNDERCITY },
+				maps = { MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				lvl = 10,
+				groups = {
+					i(10637),	-- Brewer's Gloves
+					i(10638),	-- Long Draping Cape
+				},
 			}),
 			q(3568, {	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
@@ -545,119 +605,208 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
-			q(3635, {	-- Gnome Engineering [H]
-				altQuests = {
-					3526,	-- Goblin Engineering
-					3629,	-- Goblin Engineering
-					3630,	-- Gnome Engineering
-					3632,	-- Gnome Engineering
-					3633,	-- Goblin Engineering
-					3634,	-- Gnome Engineering
-					-- 3635,	-- Gnome Engineering
-					3637,	-- Gnome Engineering
-					4181,	-- Goblin Engineering
-				},
-				qg = 4586,	-- Graham Van Talen <Journeyman Engineer>
-				qi = 10789,	-- Manual of Engineering Disciplines
-				coord = { 75.6, 74.6, MAP.UNDERCITY },
-				races = HORDE_ONLY,
-				requireSkill = ENGINEERING,
-				learnedAt = 200,
-				lvl = 30,
+			q(1881, {	-- Speak with Anastasia
+				altQuests = { 1883 },	-- Speak with Un'thuwa
+				qg = 2128,	-- Cain Firesong <Mage Trainer>
+				coord = { 61.8, 52.4, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD, TROLL },
+				classes = { MAGE },
+				isBreadcrumb = true,
+				lvl = 10,
 			}),
-			q(4293, {	-- A Sample of Slime...
-				qg = 10136,	-- Chemist Fuely
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
-				maps = { MAP.FELWOOD },
+			q(1962, {	-- Spellfire Robes
+				sourceQuest = 1961,	-- Gathering Materials
+				qg = 11049,	-- Rhiannon Davis <Expert Tailor>
+				coord = { 70.2, 30.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				lvl = 48,
+				classes = { MAGE },
+				lvl = 15,
 				groups = {
-					q(4661, {	-- Testing for Corruption - Felwood
-						provider = { "o", 174848 },	-- Testing Equipment
-						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12230, 1 } },	-- Felwood Slime Sample
-						races = HORDE_ONLY,
-						repeatable = true,
-						lvl = 48,
-						groups = {
-							i(15103, {	-- Corrupt Tested Sample
-								description = "Might contain nothing. Bring way more slime samples than you need.",
-								groups = {
-									objective(1, {	-- 0/5 Corrupted Felwood Sample
-										questID = 4293,	-- A Sample of Slime...
-										provider = { "i", 12234 },	-- Corrupted Felwood Sample
-									}),
-								},
-							}),
-						},
-					}),
-					i(12230, {	-- Felwood Slime Sample
-						description = "Bring at least 30 of these back with you to the Undercity for testing.",
-						crs = {
-							7086,	-- Cursed Ooze
-							7092,	-- Tainted Ooze
-							14345,	-- The Ongar
-						},
-					}),
+					i(7510),	-- Lesser Spellfire Robes
 				},
 			}),
-			q(4294, {	-- ... and a Batch of Ooze
-				qg = 10136,	-- Chemist Fuely
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
-				maps = { MAP.UNGORO_CRATER },
-				races = HORDE_ONLY,
-				lvl = 48,
-				groups = {
-					q(4561, {	-- Testing for Impurities - Un'Goro Crater
-						provider = { "o", 174848 },	-- Testing Equipment
-						coord = { 47.7, 73.3, MAP.UNDERCITY },
-						cost = { { "i", 12235, 1 } },	-- Un'Goro Slime Sample
-						races = HORDE_ONLY,
-						repeatable = true,
-						lvl = 48,
-						groups = {
-							i(15102, {	-- Un'Goro Tested Sample
-								description = "Might contain nothing. Bring way more slime samples than you need.",
-								groups = {
-									objective(1, {	-- 0/5 Pure Un'Goro Sample
-										questID = 4294,	-- ... and a Batch of Ooze
-										provider = { "i", 12236 },	-- Pure Un'Goro Sample
-									}),
-								},
-							}),
-						},
-					}),
-					i(12235, {	-- Un'Goro Slime Sample
-						description = "Bring at least 30 of these back with you to the Undercity for testing.",
-						crs = {
-							6559,	-- Glutinous Ooze
-							6556,	-- Muculent Ooze
-							6557,	-- Primal Ooze
-						},
-					}),
-				},
-			}),
-			q(4642, {	-- Melding of Influences
+			q(1882, {	-- The Balnir Farmstead
 				sourceQuests = {
-					4294,	-- ... and a Batch of Ooze
-					4293,	-- A Sample of Slime...
+					1881,	-- Speak with Anastasia
+					1883,	-- Speak with Un'thuwa
 				},
-				qg = 10136,	-- Chemist Fuely
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
-				maps = { MAP.UNGORO_CRATER },
-				races = HORDE_ONLY,
-				lvl = 48,
+				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
+				coord = { 85.0, 10.2, MAP.UNDERCITY },
+				maps = { MAP.TIRISFAL_GLADES },
+				races = { UNDEAD, TROLL },
+				classes = { MAGE },
+				lvl = 10,
 				groups = {
-					objective(1, {	-- 0/1 Merged Ooze Sample
-						provider = { "i", 12291 },	-- Merged Ooze Sample
-						cost = { { "i", 12288, 1 } },	-- Encased Corrupt Ooze
-						crs = {
-							6557,	-- Primal Ooze
-							9621,	-- Gargantuan Ooze
+					objective(1, {	-- 0/1 Balnir Snapdragons
+						providers = {
+							{ "i",   7227 },	-- Balnir Snapdragons
+							{ "o", 102985 },	-- Balnir Snapdragons
 						},
+						coord = { 77.4, 62.1, MAP.TIRISFAL_GLADES },
 					}),
-					i(15702),	-- Chemist's Ring
-					i(15703),	-- Chemist's Smock
+					i(7507),	-- Arcane Orb
+					i(9514),	-- Arcane Staff
+				},
+			}),
+			q(65597, {	-- The Binding (Incubus) [Undercity]
+				sourceQuest = 65593,	-- Hearts of the Lovers
+				altQuests = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
+				qg = 5675,	-- Carendin Halgar
+				coord = { 85.0, 25.6, MAP.UNDERCITY },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Incubus slain
+						provider = { "n", 185335 },	-- Summoned Incubus
+						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts
+					}),
+					recipe(713),	-- Summon Incubus
+					i(22243),	-- Small Soul Pouch
+				},
+			}),
+			q(1474, {	-- The Binding (Succubus) [Undercity]
+				sourceQuest = 1476,	-- Hearts of the Pure
+				altQuests = { 1513 },	-- The Binding (Succubus) [Orgrimmar]
+				qg = 5675,	-- Carendin Halgar
+				coord = { 85.0, 25.6, MAP.UNDERCITY },
+				classes = { WARLOCK },
+				races = HORDE_ONLY,
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Succubus slain
+						provider = { "n", 5677 },	-- Summoned Succubus
+						cost = { { "i", 6286, 1 } },	-- Pure Hearts
+					}),
+					recipe(712),	-- Summon Succubus
+					i(22243),	-- Small Soul Pouch
+				},
+			}),
+			q(1471, {	-- The Binding (Voidwalker) [Undercity]
+				sourceQuest = 1473,	-- Creature of the Void [Undercity]
+				altQuests = { 1504 },	-- The Binding (Voidwalker) [Orgrimmar]
+				qg = 5675,	-- Carendin Halgar
+				coord = { 85.0, 25.6, MAP.UNDERCITY },
+				classes = { WARLOCK },
+				races = { ORC, UNDEAD },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Summoned Voidwalker slain
+						provider = { "n", 5676 },	-- Summoned Voidwalker
+						cost = { { "i", 6284, 1 } },	-- Runes of Summoning
+					}),
+					recipe(697),	-- Summon Voidwalker
+				},
+			}),
+			q(1886, {	-- The Deathstalkers (1/4)
+				sourceQuest = 1885,	-- Mennet Carkad
+				qg = 6467,	-- Mennet Carkad
+				coord = { 83.2, 69.0, MAP.UNDERCITY },
+				maps = { MAP.SILVERPINE_FOREST },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Astor's Letter of Introduction
+						provider = { "i", 7231 },	-- Astor's Letter of Introduction
+						coords = {
+							{ 67.4, 5.6, MAP.SILVERPINE_FOREST },
+							{ 53.6, 19.5, MAP.SILVERPINE_FOREST },
+							{ 51.0, 36.2, MAP.SILVERPINE_FOREST },
+							{ 46.4, 41.4, MAP.SILVERPINE_FOREST },
+						},
+						cr = 6497,	-- Astor Hadren
+					}),
+				},
+			}),
+			q(1898, {	-- The Deathstalkers (2/4)
+				sourceQuest = 1886,	-- The Deathstalkers (1/4)
+				qg = 6467,	-- Mennet Carkad
+				qi = 7231,	-- Astor's Letter of Introduction
+				coord = { 83.2, 69.0, MAP.UNDERCITY },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 10,
+			}),
+			q(1899, {	-- The Deathstalkers (3/4)
+				sourceQuest = 1898,	-- The Deathstalkers (2/4)
+				qg = 6522,	-- Andron Gant
+				coord = { 54.6, 75.6, MAP.UNDERCITY },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Andron's Ledger
+						provider = { "i", 7294 },	-- Andron's Ledger
+						coord = { 55.3, 76.7, MAP.UNDERCITY },
+					}),
+				},
+			}),
+			q(1978, {	-- The Deathstalkers (4/4)
+				sourceQuest = 1899,	-- The Deathstalkers (3/4)
+				qg = 6467,	-- Mennet Carkad
+				qi = 7294,	-- Andron's Ledger
+				coord = { 83.2, 69.0, MAP.UNDERCITY },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 10,
+				groups = {
+					i(7298),	-- Blade of Cunning
+				},
+			}),
+			q(97985, {	-- Thundering Hearts
+				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
+				coord = { 48.4, 70.8, MAP.UNDERCITY },
+				maps = { MAP.THOUSAND_NEEDLES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 25,
+				groups = {
+					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
+						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
+						cr = 270094,	-- Stormheart
+						coord = { 51.4, 48.3, MAP.THOUSAND_NEEDLES },
+					}),
+				},
+			}),
+			q(1164, {	-- To Steal From Thieves
+				qg = 4486,	-- Genavie Callow
+				coord = { 64.8, 49.6, MAP.UNDERCITY },
+				maps = { MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = 27,
+				groups = {
+					objective(1, {	-- 0/1 Kenata's Head
+						provider = { "i", 5830 },	-- Kenata's Head
+						coord = { 56.2, 36.0, MAP.ARATHI_HIGHLANDS },
+						cr = 4480,	-- Kenata Dabyrie
+					}),
+					objective(2, {	-- 0/1 Marcel's Head
+						provider = { "i", 5832 },	-- Marcel's Head
+						coord = { 54.5, 38.6, MAP.ARATHI_HIGHLANDS },
+						cr = 4481,	-- Marcel Dabyrie
+					}),
+					objective(3, {	-- 0/1 Fardel's Head
+						provider = { "i", 5831 },	-- Fardel's Head
+						coord = { 55.0, 40.0, MAP.ARATHI_HIGHLANDS },
+						cr = 4479,	-- Fardel Dabyrie
+					}),
+					i(4443),	-- Grim Pauldrons
+					i(2032),	-- Gallan Cuffs
+				},
+			}),
+			q(1999, {	-- Tools of the Trade
+				sourceQuest = 1998,	-- Fenwick Thatros
+				qg = 6467,	-- Mennet Carkad
+				coord = { 83.2, 69.0, MAP.UNDERCITY },
+				maps = { MAP.SILVERPINE_FOREST },
+				races = { UNDEAD },
+				classes = { ROGUE },
+				lvl = 16,
+				groups = {
+					objective(1, {	-- 0/1 Dalaran Status Report
+						provider = { "i", 7309 },	-- Dalaran Status Report
+					}),
 				},
 			}),
 			q(5658, {	-- Touch of Weakness [Undercity]
@@ -691,139 +840,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					},
 				},
 			}),
-			q(5679, {	-- Devouring Plague [Undercity]
-				altQuests = {
-					5646,	-- Devouring Plague [Orgrimmar]
-					5644,	-- Devouring Plague [Thunder Bluff]
-				},
-				qgs = {
-					4606,	-- Aelthalyste
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.0, 18.3, MAP.UNDERCITY },
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-				},
-				classes = { PRIEST },
-				races = { UNDEAD },
-				lvl = 20,
-				groups = {
-					{
-						recipeID = 2944,	-- Devouring Plague (Rank 1)
-						rank = 1,
-					},
-				},
-			}),
-			q(6322, {	-- Michael Garrett
-				sourceQuest = 6323,	-- Ride to the Undercity
-				qg = 4556,	-- Gordon Wendham
-				qi = 16210,	-- Gordon's Crate
-				coord = { 61.6, 41.8, MAP.UNDERCITY },
-				maps = { MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
-				lvl = 10,
-			}),
-			q(6324, {	-- Return to Podrig
-				sourceQuest = 6322,	-- Michael Garrett
-				qg = 4551,	-- Michael Garrett
-				qi = 16210,	-- Gordon's Crate
-				coords = {
-					{ 44.9, 38.9, MAP.EASTERN_KINGDOMS },
-					{ 63.4, 48.6, MAP.UNDERCITY },
-				},
-				maps = { MAP.SILVERPINE_FOREST },
-				races = { UNDEAD },
-				lvl = 10,
-			}),
-			q(7813, {	-- A Donation of Wool
-				qg = 14729,	-- Ralston Farnsley
-				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				cost = { { "i", 2592, 60 } },	-- Wool Cloth
-				races = HORDE_ONLY,
-				lvl = 12,
-			}),
-			q(7814, {	-- A Donation of Silk
-				qg = 14729,	-- Ralston Farnsley
-				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				cost = { { "i", 4306, 60 } },	-- Silk Cloth
-				races = HORDE_ONLY,
-				lvl = 26,
-			}),
-			q(7817, {	-- A Donation of Mageweave
-				qg = 14729,	-- Ralston Farnsley
-				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				cost = { { "i", 4338, 60 } },	-- Mageweave Cloth
-				races = HORDE_ONLY,
-				lvl = 40,
-			}),
-			q(7818, {	-- A Donation of Runecloth
-				qg = 14729,	-- Ralston Farnsley
-				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				cost = { { "i", 14047, 60 } },	-- Runecloth
-				races = HORDE_ONLY,
-				lvl = 50,
-			}),
-			q(7819, {	-- Additional Runecloth [Undercity]
-				sourceQuest = 7818,	-- A Donation of Runecloth
-				qg = 14729,	-- Ralston Farnsley
-				coord = { 71.8, 29.0, MAP.UNDERCITY },
-				maxReputation = { FACTION_UNDERCITY, EXALTED },
-				cost = { { "i", 14047, 20 } },	-- Runecloth
-				races = HORDE_ONLY,
-				repeatable = true,
-				lvl = 50,
-			}),
-			q(8273, {	-- Oran's Gratitude
-				sourceQuest = 2782,	-- Rin'ji's Secret
-				qg = 7825,	-- Oran Snakewrithe
-				coord = { 73.4, 32.4, MAP.UNDERCITY },
-				races = HORDE_ONLY,
-				lvl = 42,
-				groups = {
-					i(20643),	-- Undercity Reservist's Cap
-					i(20642),	-- Antiquated Nobleman's Tunic
-				},
-			}),
-			q(65593, {	-- Hearts of the Lovers
-				sourceQuest = 1472,	-- Devourer of Souls [Undercity]
-				altQuests = { 65610 },	-- Wish You Were Here
-				qg = 5675,	-- Carendin Halgar
-				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				maps = { MAP.THE_BARRENS, MAP.SILVERPINE_FOREST },
-				classes = { WARLOCK },
+			q(1841, {	-- Velora Nitely and the Brutal Legguards
+				sourceQuest = 1838,	-- Brutal Armor
+				qg = 5878,	-- Thun'grim Firegaze
+				coord = { 57.2, 30.2, MAP.THE_BARRENS },
+				classes = { WARRIOR },
 				races = HORDE_ONLY,
 				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Avelina's Heart
-						provider = { "i", 190179 },	-- Avelina's Heart
-						coord = { 63.6, 65.6, MAP.SILVERPINE_FOREST },
-						cr = 185333,	-- Avelina Lilly
-					}),
-					objective(2, {	-- 0/1 Isaac's Heart
-						provider = { "i", 190180 },	-- Isaac's Heart
-						coord = { 61.8, 38.6, MAP.THE_BARRENS },
-						cr = 185334,	-- Isaac Pearson
-					}),
-				},
-			}),
-			q(65597, {	-- The Binding (Incubus) [Undercity]
-				sourceQuest = 65593,	-- Hearts of the Lovers
-				altQuests = { 65604 },	-- The Binding (Incubus) [Orgrimmar]
-				qg = 5675,	-- Carendin Halgar
-				coord = { 85.0, 25.6, MAP.UNDERCITY },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Summoned Incubus slain
-						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190181, 1 } },	-- Lovers' Hearts
-					}),
-					recipe(713),	-- Summon Incubus
-					i(22243),	-- Small Soul Pouch
-				},
 			}),
 			q(97583, {	-- WRIGGLE.
 				description = "Spam /dance at the excitable slimes that patrol around the Undercity.",
@@ -841,29 +864,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				repeatable = true,
 				groups = {
 					i(275682),	-- Excitable Slime
-				},
-			}),
-			q(97891, {	-- Prompt Potion Runner
-				qg = 7683,	-- Alessandro Luca <Blue Moon Odds and Ends>
-				qi = 279020,	-- Unstable Potion (PQI!)
-				coord = { 58.2, 55.2, MAP.UNDERCITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 9,
-			}),
-			q(97985, {	-- Thundering Hearts
-				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
-				coord = { 48.4, 70.8, MAP.UNDERCITY },
-				maps = { MAP.THOUSAND_NEEDLES },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				lvl = 25,
-				groups = {
-					objective(1, {	-- 0/1 Stormheart's Still-beating Heart
-						provider = { "i", 279186 },	-- Stormheart's Still-beating Heart
-						cr = 270094,	-- Stormheart
-						coord = { 51.4, 48.3, MAP.THOUSAND_NEEDLES },
-					}),
 				},
 			}),
 		}),

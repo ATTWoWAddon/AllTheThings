@@ -78,6 +78,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(3388),	-- Strong Troll's Blood Potion
 				},
 			}),
+			q(6181, {	-- A Swift Message
+				qg = 491,	-- Quartermaster Lewis
+				qi = 15998,	-- Lewis' Note (PQI!)
+				coord = { 56.9, 47.2, MAP.WESTFALL },
+				races = { HUMAN },
+				lvl = 10,
+			}),
 			q(94503, {	-- Call of Water
 				sourceQuests = { 94502 },	-- Call of Water
 				provider = { "o", 619896 },	-- Forgotten Shrine
@@ -86,40 +93,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				classes = { SHAMAN },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(92109, {	-- My First Alchemy Set
-				qg = 249713,	-- Odd Child
-				coord = { 41.0, 79.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = {
-					{ "i", 3371, 5 },	-- Empty Vial
-					{ "i", 765, 5 },	-- Silverleaf
-					{ "i", 2447, 5 },	-- Peacebloom
-				},
-				races = ALLIANCE_ONLY,
-				lvl = 10,
-				groups = {
-					i(249905),	-- Scribbled I.O.U.
-				},
-			}),
-			q(92110, {	-- My First Real Potion
-				qg = 249713,	-- Odd Child
-				coord = { 41., 79.0, MAP.WESTFALL },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
-				races = ALLIANCE_ONLY,
-				lvl = 10,
-				groups = {
-					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
-					i(4596),	-- Minor Discolored Healing Potion
-				},
-			}),
-			q(6181, {	-- A Swift Message
-				qg = 491,	-- Quartermaster Lewis
-				qi = 15998,	-- Lewis' Note (PQI!)
-				coord = { 56.9, 47.2, MAP.WESTFALL },
-				races = { HUMAN },
-				lvl = 10,
 			}),
 			q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
 				qs = 1357,	-- Captain Sanders' Treasure Map (QS!)
@@ -367,6 +340,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 							171,	-- Murloc Warrior
 						},
 					}),
+				},
+			}),
+			q(92109, {	-- My First Alchemy Set
+				qg = 249713,	-- Odd Child
+				coord = { 41.0, 79.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 3371, 5 },	-- Empty Vial
+					{ "i", 765, 5 },	-- Silverleaf
+					{ "i", 2447, 5 },	-- Peacebloom
+				},
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
+					i(249905),	-- Scribbled I.O.U.
+				},
+			}),
+			q(92110, {	-- My First Real Potion
+				qg = 249713,	-- Odd Child
+				coord = { 41., 79.0, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
+					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
+					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(93928, {	-- Of Mice and Milk

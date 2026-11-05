@@ -188,31 +188,6 @@ instanceroot(246, {	-- Scholomance
 				repeatable = true,
 				lvl = 55,
 			}),
-			q(5384, {	-- Kirtonos the Herald
-				qg = 11216,	-- Eva Sarkhoff
-				sourceQuest = 5515,	-- Krastinov's Bag of Horrors
-				coord = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Kirtonos the Herald slain
-						provider = { "n", 10506 },	-- Kirtonos the Herald
-					}),
-					i(15806),	-- Mirah's Song
-					i(15805),	-- Penelope's Rose
-					ig(13544),	-- Spectral Essence
-				},
-			}),
-			q(5515, {	-- Krastinov's Bag of Horrors
-				sourceQuest = 5382,	-- Doctor Theolen Krastinov, the Butcher
-				qg = 11216,	-- Eva Sarkhoff
-				coord = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Krastinov's Bag of Horrors
-						provider = { "i", 13725 },	-- Krastinov's Bag of Horrors
-					}),
-				},
-			}),
 			q(7647, {	-- Judgment and Redemption
 				providers = {
 					{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -239,6 +214,31 @@ instanceroot(246, {	-- Scholomance
 						classes = { PALADIN },
 						races = ALLIANCE_ONLY,
 						lvl = 60,
+					}),
+				},
+			}),
+			q(5384, {	-- Kirtonos the Herald
+				qg = 11216,	-- Eva Sarkhoff
+				sourceQuest = 5515,	-- Krastinov's Bag of Horrors
+				coord = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Kirtonos the Herald slain
+						provider = { "n", 10506 },	-- Kirtonos the Herald
+					}),
+					i(15806),	-- Mirah's Song
+					i(15805),	-- Penelope's Rose
+					ig(13544),	-- Spectral Essence
+				},
+			}),
+			q(5515, {	-- Krastinov's Bag of Horrors
+				sourceQuest = 5382,	-- Doctor Theolen Krastinov, the Butcher
+				qg = 11216,	-- Eva Sarkhoff
+				coord = { 70.2, 73.7, MAP.WESTERN_PLAGUELANDS },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Krastinov's Bag of Horrors
+						provider = { "i", 13725 },	-- Krastinov's Bag of Horrors
 					}),
 				},
 			}),

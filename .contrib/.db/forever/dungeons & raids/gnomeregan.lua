@@ -218,71 +218,6 @@ instanceroot(231, {	-- Gnomeregan
 			}),
 		}),
 		n(QUESTS, {
-			header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
-				q(2951, {	-- The Sparklematic 5200!
-					provider = { "o", 142487 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-				}),
-				q(4601, {	-- The Sparklematic 5200!
-					provider = { "o", 15084 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-				}),
-				q(4602, {	-- The Sparklematic 5200!
-					provider = { "o", 15085 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-				}),
-				q(2952, {	-- The Sparklematic 5200!
-					sourceQuest = 2951,	-- The Sparklematic 5200!
-					provider = { "o", 142487 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-				q(4605, {	-- The Sparklematic 5200!
-					sourceQuest = 4601,	-- The Sparklematic 5200!
-					provider = { "o", 15084 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-				q(4606, {	-- The Sparklematic 5200!
-					sourceQuest = 4602,	-- The Sparklematic 5200!
-					provider = { "o", 15085 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-				q(2953, {	-- More Sparklematic Action
-					sourceQuest = 2952,	-- The Sparklematic 5200!
-					provider = { "o", 142487 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					repeatable = true,
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-				q(4603, {	-- More Sparklematic Action
-					sourceQuest = 4605,	-- The Sparklematic 5200!
-					provider = { "o", 15084 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					repeatable = true,
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-				q(4604, {	-- More Sparklematic Action
-					sourceQuest = 4606,	-- The Sparklematic 5200!
-					provider = { "o", 15085 },	-- The Sparklematic 5200
-					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
-					repeatable = true,
-					groups = {
-						i(9363),	-- Sparklematic-Wrapped Box
-					},
-				}),
-			}),
 			q(2904, {	-- A Fine Mess
 				qg = 7850,	-- Kernobee
 				maps = { MAP.STRANGLETHORN_VALE },
@@ -517,6 +452,71 @@ instanceroot(231, {	-- Gnomeregan
 						cr = 6219,	-- Corrosive Lurker
 					}),
 				},
+			}),
+			header(HEADERS.Object, 142487, {	-- The Sparklematic 5200
+				q(2951, {	-- The Sparklematic 5200!
+					provider = { "o", 142487 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+				}),
+				q(4601, {	-- The Sparklematic 5200!
+					provider = { "o", 15084 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+				}),
+				q(4602, {	-- The Sparklematic 5200!
+					provider = { "o", 15085 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+				}),
+				q(2952, {	-- The Sparklematic 5200!
+					sourceQuest = 2951,	-- The Sparklematic 5200!
+					provider = { "o", 142487 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
+				q(4605, {	-- The Sparklematic 5200!
+					sourceQuest = 4601,	-- The Sparklematic 5200!
+					provider = { "o", 15084 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
+				q(4606, {	-- The Sparklematic 5200!
+					sourceQuest = 4602,	-- The Sparklematic 5200!
+					provider = { "o", 15085 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
+				q(2953, {	-- More Sparklematic Action
+					sourceQuest = 2952,	-- The Sparklematic 5200!
+					provider = { "o", 142487 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					repeatable = true,
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
+				q(4603, {	-- More Sparklematic Action
+					sourceQuest = 4605,	-- The Sparklematic 5200!
+					provider = { "o", 15084 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					repeatable = true,
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
+				q(4604, {	-- More Sparklematic Action
+					sourceQuest = 4606,	-- The Sparklematic 5200!
+					provider = { "o", 15085 },	-- The Sparklematic 5200
+					cost = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
+					repeatable = true,
+					groups = {
+						i(9363),	-- Sparklematic-Wrapped Box
+					},
+				}),
 			}),
 			q(2923, {	-- Tinkmaster Overspark
 				qg = 7917,	-- Brother Sarno

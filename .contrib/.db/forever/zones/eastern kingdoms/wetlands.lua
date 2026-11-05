@@ -593,16 +593,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
-			q(321, {	-- Lightforge Iron
-				sourceQuest = 270,	-- The Doomed Fleet
-				qg = 1217,	-- Glorin Steelbrow
-				coord = { 10.6, 60.5, MAP.WETLANDS },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					i(2702),	-- Lightforge Ingot
-				},
-			}),
 			q(526, {	-- Lightforge Ingots
 				sourceQuest = 321,	-- Lightforge Iron
 				altQuests = { 324 },	-- The Lost Ingots
@@ -615,6 +605,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						provider = { "i", 2702 },	-- Lightforge Ingot
 						cr = 1418,	-- Bluegill Raider
 					}),
+				},
+			}),
+			q(321, {	-- Lightforge Iron
+				sourceQuest = 270,	-- The Doomed Fleet
+				qg = 1217,	-- Glorin Steelbrow
+				coord = { 10.6, 60.5, MAP.WETLANDS },
+				races = ALLIANCE_ONLY,
+				lvl = 20,
+				groups = {
+					i(2702),	-- Lightforge Ingot
 				},
 			}),
 			q(465, {	-- Nek'rosh's Gambit

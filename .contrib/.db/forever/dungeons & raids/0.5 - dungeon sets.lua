@@ -1173,43 +1173,6 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
 			lvl = 58,
 		},
-		q(8962, {	-- Components of Importance [WARRIOR, MAGE]
-			sourceQuest = 8961,	-- Three Kings of Flame
-			qg = 16033,	-- Bodley
-			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
-			classes = { WARRIOR, MAGE },
-			lvl = 58,
-			groups = {
-				objective(1, {	-- 0/1 Druidical Remains
-					provider = { "i", 22226 },	-- Druidical Remains
-					crs = {
-						11730,	-- Hive'Regal Ambusher
-						11731,	-- Hive'Regal Burrower
-						11734,	-- Hive'Regal Hive Lord
-						11733,	-- Hive'Regal Slavemaker
-						11732,	-- Hive'Regal Spitfire
-					},
-				}),
-			},
-		}),
-		q(8963, {	-- Components of Importance [WARLOCK, DRUID]
-			sourceQuest = 8961,	-- Three Kings of Flame
-			qg = 16033,	-- Bodley
-			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
-			classes = { WARLOCK, DRUID },
-			lvl = 58,
-			groups = {
-				objective(1, {	-- 0/1 Starbreeze Village Relic
-					provider = { "i", 22227 },	-- Starbreeze Village Relic
-					crs = {
-						7428,	-- Frostmaul Giant
-						7429,	-- Frostmaul Preserver
-					},
-				}),
-			},
-		}),
 		q(8964, {	-- Components of Importance [HUNTER, ROGUE]
 			sourceQuest = 8961,	-- Three Kings of Flame
 			qg = 16033,	-- Bodley
@@ -1234,6 +1197,43 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = {
 				objective(1, {	-- 0/1 Soul Ashes of the Banished
 					provider = { "i", 22229 },	-- Soul Ashes of the Banished
+				}),
+			},
+		}),
+		q(8963, {	-- Components of Importance [WARLOCK, DRUID]
+			sourceQuest = 8961,	-- Three Kings of Flame
+			qg = 16033,	-- Bodley
+			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
+			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			classes = { WARLOCK, DRUID },
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Starbreeze Village Relic
+					provider = { "i", 22227 },	-- Starbreeze Village Relic
+					crs = {
+						7428,	-- Frostmaul Giant
+						7429,	-- Frostmaul Preserver
+					},
+				}),
+			},
+		}),
+		q(8962, {	-- Components of Importance [WARRIOR, MAGE]
+			sourceQuest = 8961,	-- Three Kings of Flame
+			qg = 16033,	-- Bodley
+			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SILITHUS },
+			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			classes = { WARRIOR, MAGE },
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Druidical Remains
+					provider = { "i", 22226 },	-- Druidical Remains
+					crs = {
+						11730,	-- Hive'Regal Ambusher
+						11731,	-- Hive'Regal Burrower
+						11734,	-- Hive'Regal Hive Lord
+						11733,	-- Hive'Regal Slavemaker
+						11732,	-- Hive'Regal Spitfire
+					},
 				}),
 			},
 		}),
@@ -1416,25 +1416,6 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			cr = 16042,	-- Lord Valthalak
 			lvl = 58,
 		}),
-		q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
-			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
-			qg = 16033,	-- Bodley
-			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
-			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
-			classes = { WARRIOR, ROGUE },
-			lvl = 58,
-			groups = {
-				objective(1, {	-- 0/1 Starbreeze Village Relic
-					provider = { "i", 22227 },	-- Starbreeze Village Relic
-					crs = {
-						7428,	-- Frostmaul Giant
-						7429,	-- Frostmaul Preserver
-					},
-				}),
-				i(22192),	-- Bloodkelp Elixir of Dodging
-				i(22193),	-- Bloodkelp Elixir of Resistance
-			},
-		}),
 		q(8986, {	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
@@ -1457,6 +1438,26 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22193),	-- Bloodkelp Elixir of Resistance
 			},
 		}),
+		q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
+			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
+			qg = 16033,	-- Bodley
+			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
+			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
+			classes = { HUNTER, WARLOCK },
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Soul Ashes of the Banished
+					provider = { "i", 22229 },	-- Soul Ashes of the Banished
+					crs = {
+						7071,	-- Cursed Paladin
+						7072,	-- Cursed Justicar
+						7075,	-- Writhing Mage
+					},
+				}),
+				i(22192),	-- Bloodkelp Elixir of Dodging
+				i(22193),	-- Bloodkelp Elixir of Resistance
+			},
+		}),
 		q(8987, {	-- More Components of Importance [PRIEST, MAGE]
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
@@ -1473,20 +1474,19 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22193),	-- Bloodkelp Elixir of Resistance
 			},
 		}),
-		q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
+		q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
 			sourceQuest = 8970,	-- I See Alcaz Island In Your Future...
 			qg = 16033,	-- Bodley
-			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.HILLSBRAD_FOOTHILLS },
+			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.WINTERSPRING },
 			cost = { { "i", 22115, 1 } },	-- Extra-Dimensional Ghost Revealer
-			classes = { HUNTER, WARLOCK },
+			classes = { WARRIOR, ROGUE },
 			lvl = 58,
 			groups = {
-				objective(1, {	-- 0/1 Soul Ashes of the Banished
-					provider = { "i", 22229 },	-- Soul Ashes of the Banished
+				objective(1, {	-- 0/1 Starbreeze Village Relic
+					provider = { "i", 22227 },	-- Starbreeze Village Relic
 					crs = {
-						7071,	-- Cursed Paladin
-						7072,	-- Cursed Justicar
-						7075,	-- Writhing Mage
+						7428,	-- Frostmaul Giant
+						7429,	-- Frostmaul Preserver
 					},
 				}),
 				i(22192),	-- Bloodkelp Elixir of Dodging
@@ -1602,51 +1602,6 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				}),
 			},
 		}),
-		q(8966, {	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
-			sourceQuest = 8962,	-- Components of Importance [WARRIOR, MAGE]
-			qg = 16033,	-- Bodley
-			maps = {
-				MAP.BLACKROCK_MOUNTAIN,
-				MAP.BLACKROCK_SPIRE,
-			},
-			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
-			},
-			classes = { WARRIOR, MAGE },
-			lvl = 58,
-			groups = {
-				objective(1, {	-- 0/1 Mor Grayhoof slain
-					provider = { "n", 16080 },	-- Mor Grayhoof
-				}),
-				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
-				}),
-			},
-		}),
-		q(8967, {	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
-			sourceQuest = 8963,	-- Components of Importance [WARLOCK, DRUID]
-			qg = 16033,	-- Bodley
-			maps = {
-				MAP.BLACKROCK_MOUNTAIN,
-				MAP.DIRE_MAUL,
-				239,	-- Warpwood Quarter
-			},
-			cost = {
-				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
-			},
-			classes = { WARLOCK, DRUID },
-			lvl = 58,
-			groups = {
-				objective(1, {	-- 0/1 Isalien slain
-					provider = { "n", 16097 },	-- Isalien
-				}),
-				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
-					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
-				}),
-			},
-		}),
 		q(8968, {	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
 			sourceQuest = 8964,	-- Components of Importance [HUNTER, ROGUE]
 			qg = 16033,	-- Bodley
@@ -1688,8 +1643,8 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				}),
 			},
 		}),
-		q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
-			sourceQuest = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
+		q(8967, {	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
+			sourceQuest = 8963,	-- Components of Importance [WARLOCK, DRUID]
 			qg = 16033,	-- Bodley
 			maps = {
 				MAP.BLACKROCK_MOUNTAIN,
@@ -1700,19 +1655,36 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 				{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 			},
-			classes = { WARRIOR, ROGUE },
+			classes = { WARLOCK, DRUID },
 			lvl = 58,
 			groups = {
 				objective(1, {	-- 0/1 Isalien slain
 					provider = { "n", 16097 },	-- Isalien
 				}),
-				objective(2, {	-- 0/1 Lord Valthalak's Amulet
-					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
-					cost = {
-						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
-						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
-						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
-					},
+				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
+				}),
+			},
+		}),
+		q(8966, {	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
+			sourceQuest = 8962,	-- Components of Importance [WARRIOR, MAGE]
+			qg = 16033,	-- Bodley
+			maps = {
+				MAP.BLACKROCK_MOUNTAIN,
+				MAP.BLACKROCK_SPIRE,
+			},
+			cost = {
+				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+				{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
+			},
+			classes = { WARRIOR, MAGE },
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Mor Grayhoof slain
+					provider = { "n", 16080 },	-- Mor Grayhoof
+				}),
+				objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
+					provider = { "i", 21984 },	-- Left Piece of Lord Valthalak's Amulet
 				}),
 			},
 		}),
@@ -1732,6 +1704,30 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 			groups = {
 				objective(1, {	-- 0/1 Mor Grayhoof slain
 					provider = { "n", 16080 },	-- Mor Grayhoof
+				}),
+				objective(2, {	-- 0/1 Lord Valthalak's Amulet
+					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
+					cost = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
+						{ "i", 21984, 1 },	-- Left Piece of Lord Valthalak's Amulet
+					},
+				}),
+			},
+		}),
+		q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
+			sourceQuest = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
+			qg = 16033,	-- Bodley
+			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
+			cost = {
+				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+				{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
+			},
+			classes = { HUNTER, WARLOCK },
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Kormok slain
+					provider = { "n", 16118 },	-- Kormok
 				}),
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet
@@ -1770,19 +1766,23 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				}),
 			},
 		}),
-		q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
-			sourceQuest = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
+		q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
+			sourceQuest = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
 			qg = 16033,	-- Bodley
-			maps = { MAP.BLACKROCK_MOUNTAIN, MAP.SCHOLOMANCE },
+			maps = {
+				MAP.BLACKROCK_MOUNTAIN,
+				MAP.DIRE_MAUL,
+				239,	-- Warpwood Quarter
+			},
 			cost = {
 				{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-				{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
+				{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 			},
-			classes = { HUNTER, WARLOCK },
+			classes = { WARRIOR, ROGUE },
 			lvl = 58,
 			groups = {
-				objective(1, {	-- 0/1 Kormok slain
-					provider = { "n", 16118 },	-- Kormok
+				objective(1, {	-- 0/1 Isalien slain
+					provider = { "n", 16097 },	-- Isalien
 				}),
 				objective(2, {	-- 0/1 Lord Valthalak's Amulet
 					provider = { "i", 22048 },	-- Lord Valthalak's Amulet

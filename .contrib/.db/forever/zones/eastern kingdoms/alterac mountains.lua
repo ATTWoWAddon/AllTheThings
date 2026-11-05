@@ -80,6 +80,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
+			q(99191, {	-- A Donation of Wool
+				qg = 276170,	-- Belanaa Windveil
+				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 12,
+				groups = {
+					objective(1, {	-- 0/60 Wool Cloth
+						provider = { "i", 2592 },	-- Wool Cloth
+					}),
+				},
+			}),
 			q(8233, {	-- A Simple Request
 				allianceQuestData = {
 					qgs = {
@@ -140,6 +152,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 59.96, 43.74, MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 29,
+			}),
+			q(94912, {	-- Child of Nature
+				qg = 270459,	-- Alfina Nightgaze <Druid Trainer>
+				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
+				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 10,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(96782, {	-- Covert Extraction
 				sourceQuest = 96781,	-- What's the Big Idea?
@@ -702,26 +722,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					i(6975),	-- Whirlwind Axe
 					i(6977),	-- Whirlwind Sword
 					i(6976),	-- Whirlwind Warhammer
-				},
-			}),
-			q(94912, {	-- Child of Nature
-				qg = 270459,	-- Alfina Nightgaze <Druid Trainer>
-				coord = { 11.8, 56.6, MAP.ALTERAC_MOUNTAINS },
-				races = { SKYBORNE_ALLIANCE },
-				classes = { DRUID },
-				lvl = 10,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(99191, {	-- A Donation of Wool
-				qg = 276170,	-- Belanaa Windveil
-				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 12,
-				groups = {
-					objective(1, {	-- 0/60 Wool Cloth
-						provider = { "i", 2592 },	-- Wool Cloth
-					}),
 				},
 			}),
 		}),

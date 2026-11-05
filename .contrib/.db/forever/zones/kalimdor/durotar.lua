@@ -474,6 +474,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(4941),	-- Really Sticky Glue
 				},
 			}),
+			q(785, {	-- A Strategic Alliance
+				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(809, {	-- Ak'Zeloth
 				sourceQuest = 829,	-- Neeru Fireblade
 				qg = 3216,	-- Neeru Fireblade
@@ -1324,17 +1328,17 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 4,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
-			q(6068, {	-- The Hunter's Path [Orgrimmar]
-				qg = 3407,	-- Sian'dur <Hunter Trainer>
-				coord = { 67.8, 17.8, MAP.ORGRIMMAR },
+			q(6069, {	-- The Hunter's Path [Durotar]
+				qg = 11814,	-- Kali Remik
+				coord = { 6.2, 74.2, MAP.DUROTAR },
 				races = { ORC, UNDEAD, TROLL },
 				classes = { HUNTER },
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6069, {	-- The Hunter's Path [Durotar]
-				qg = 11814,	-- Kali Remik
-				coord = { 6.2, 74.2, MAP.DUROTAR },
+			q(6068, {	-- The Hunter's Path [Orgrimmar]
+				qg = 3407,	-- Sian'dur <Hunter Trainer>
+				coord = { 67.8, 17.8, MAP.ORGRIMMAR },
 				races = { ORC, UNDEAD, TROLL },
 				classes = { HUNTER },
 				isBreadcrumb = true,
@@ -1483,22 +1487,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(6062),	-- Heavy Cord Bracers
 				},
 			}),
-			q(785, {	-- A Strategic Alliance
-				lvl = 5,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(6081, {	-- Training the Beast
-				sourceQuest = 6082,	-- Taming the Beast (3/3)
-				qg = 3171,	-- Thotar <Hunter Trainer>
-				coord = { 51.8, 43.4, MAP.DUROTAR },
-				races = { ORC, UNDEAD, TROLL },
-				classes = { HUNTER },
-				lvl = 10,
-				groups = {
-					recipe(6991),	-- Feed Pet
-					recipe(982),	-- Revive Pet
-				},
-			}),
 			q(5660, {	-- Touch of Weakness [Durotar]
 				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
@@ -1516,6 +1504,18 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						recipeID = 2652,	-- Touch of Weakness (Rank 1)
 						rank = 1,
 					},
+				},
+			}),
+			q(6081, {	-- Training the Beast
+				sourceQuest = 6082,	-- Taming the Beast (3/3)
+				qg = 3171,	-- Thotar <Hunter Trainer>
+				coord = { 51.8, 43.4, MAP.DUROTAR },
+				races = { ORC, UNDEAD, TROLL },
+				classes = { HUNTER },
+				lvl = 10,
+				groups = {
+					recipe(6991),	-- Feed Pet
+					recipe(982),	-- Revive Pet
 				},
 			}),
 			q(96876, {	-- Ukor's Lost Pack

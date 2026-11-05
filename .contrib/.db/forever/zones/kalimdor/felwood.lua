@@ -679,6 +679,19 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(11516),	-- Cenarion Plant Salve
 				},
 			}),
+			q(5891, {	-- Salve via Disenchanting (1/2)
+				sourceQuest = 4102,	-- Cleansing Felwood (H)
+				qg = 9529,	-- Maybess Riverbreeze
+				coord = { 46.8, 83.0, MAP.FELWOOD },
+				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
+				requireSkill = ENCHANTING,
+				learnedAt = 225,
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(11516),	-- Cenarion Plant Salve
+				},
+			}),
 			q(4107, {	-- Salve via Disenchanting (2/2)
 				sourceQuest = 5886,	-- Salve via Disenchanting (1/2)
 				qg = 9528,	-- Arathandris Silversky
@@ -688,19 +701,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				lvl = 48,
-				groups = {
-					i(11516),	-- Cenarion Plant Salve
-				},
-			}),
-			q(5891, {	-- Salve via Disenchanting (1/2)
-				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
-				coord = { 46.8, 83.0, MAP.FELWOOD },
-				cost = { { "i", 11174, 1 } },	-- Lesser Nether Essence
-				requireSkill = ENCHANTING,
-				learnedAt = 225,
-				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
@@ -733,6 +733,19 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(11516),	-- Cenarion Plant Salve
 				},
 			}),
+			q(5889, {	-- Salve via Gathering (1/2)
+				sourceQuest = 4102,	-- Cleansing Felwood (H)
+				qg = 9529,	-- Maybess Riverbreeze
+				coord = { 46.8, 83.0, MAP.FELWOOD },
+				cost = { { "i", 11514, 4 } },	-- Fel Creep
+				requireSkill = HERBALISM,
+				learnedAt = 225,
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(11516),	-- Cenarion Plant Salve
+				},
+			}),
 			q(4105, {	-- Salve via Gathering (2/2)
 				sourceQuest = 5884,	-- Salve via Gathering (1/2)
 				qg = 9528,	-- Arathandris Silversky
@@ -742,19 +755,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				lvl = 48,
-				groups = {
-					i(11516),	-- Cenarion Plant Salve
-				},
-			}),
-			q(5889, {	-- Salve via Gathering (1/2)
-				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
-				coord = { 46.8, 83.0, MAP.FELWOOD },
-				cost = { { "i", 11514, 4 } },	-- Fel Creep
-				requireSkill = HERBALISM,
-				learnedAt = 225,
-				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
@@ -785,6 +785,17 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(11516),	-- Cenarion Plant Salve
 				},
 			}),
+			q(5887, {	-- Salve via Hunting (1/2)
+				sourceQuest = 4102,	-- Cleansing Felwood (H)
+				qg = 9529,	-- Maybess Riverbreeze
+				coord = { 46.8, 83.0, MAP.FELWOOD },
+				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(11516),	-- Cenarion Plant Salve
+				},
+			}),
 			q(4103, {	-- Salve via Hunting (2/2)
 				sourceQuest = 5882,	-- Salve via Hunting (1/2)
 				qg = 9528,	-- Arathandris Silversky
@@ -792,17 +803,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				lvl = 48,
-				groups = {
-					i(11516),	-- Cenarion Plant Salve
-				},
-			}),
-			q(5887, {	-- Salve via Hunting (1/2)
-				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
-				coord = { 46.8, 83.0, MAP.FELWOOD },
-				cost = { { "i", 11515, 6 } },	-- Corrupted Soul Shard
-				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
@@ -833,6 +833,19 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(11516),	-- Cenarion Plant Salve
 				},
 			}),
+			q(5888, {	-- Salve via Mining (1/2)
+				sourceQuest = 4102,	-- Cleansing Felwood (H)
+				qg = 9529,	-- Maybess Riverbreeze
+				coord = { 46.8, 83.0, MAP.FELWOOD },
+				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
+				requireSkill = MINING,
+				learnedAt = 225,
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(11516),	-- Cenarion Plant Salve
+				},
+			}),
 			q(4104, {	-- Salve via Mining (2/2)
 				sourceQuest = 5883,	-- Salve via Mining (1/2)
 				qg = 9528,	-- Arathandris Silversky
@@ -842,19 +855,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				lvl = 48,
-				groups = {
-					i(11516),	-- Cenarion Plant Salve
-				},
-			}),
-			q(5888, {	-- Salve via Mining (1/2)
-				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
-				coord = { 46.8, 83.0, MAP.FELWOOD },
-				cost = { { "i", 11513, 4 } },	-- Tainted Vitriol
-				requireSkill = MINING,
-				learnedAt = 225,
-				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve
@@ -887,6 +887,19 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(11516),	-- Cenarion Plant Salve
 				},
 			}),
+			q(5890, {	-- Salve via Skinning (1/2)
+				sourceQuest = 4102,	-- Cleansing Felwood (H)
+				qg = 9529,	-- Maybess Riverbreeze
+				coord = { 46.8, 83.0, MAP.FELWOOD },
+				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
+				requireSkill = SKINNING,
+				learnedAt = 225,
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(11516),	-- Cenarion Plant Salve
+				},
+			}),
 			q(4106, {	-- Salve via Skinning (2/2)
 				sourceQuest = 5885,	-- Salve via Skinning (1/2)
 				qg = 9528,	-- Arathandris Silversky
@@ -896,19 +909,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				learnedAt = 225,
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				lvl = 48,
-				groups = {
-					i(11516),	-- Cenarion Plant Salve
-				},
-			}),
-			q(5890, {	-- Salve via Skinning (1/2)
-				sourceQuest = 4102,	-- Cleansing Felwood (H)
-				qg = 9529,	-- Maybess Riverbreeze
-				coord = { 46.8, 83.0, MAP.FELWOOD },
-				cost = { { "i", 11512, 5 } },	-- Patch of Tainted Skin
-				requireSkill = SKINNING,
-				learnedAt = 225,
-				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
 					i(11516),	-- Cenarion Plant Salve

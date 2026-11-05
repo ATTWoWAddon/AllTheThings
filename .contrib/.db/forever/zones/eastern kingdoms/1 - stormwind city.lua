@@ -740,19 +740,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_PALADINS,
 				lvl = 60,
 			}),
-			q(92752, {	-- Explosive Consultation (2/2)
-				sourceQuests = {
-					92749,	-- A Dynamite Plan
-					92751,	-- Detonation at a Distance (2/2)
-				},
-				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
-				qi = 254553,	-- Extra-Destructive Explosives (PQI!)
-				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				maps = { MAP.WESTFALL },
-				races = ALLIANCE_ONLY,
-				lvl = 9,
-			}),
 			q(7640, {	-- Exorcising Terrordale
 				sourceQuest = 7639,	-- To Show Due Judgment
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -768,6 +755,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						coord = { 16.4, 31.8, MAP.EASTERN_PLAGUELANDS },
 					}),
 				},
+			}),
+			q(92752, {	-- Explosive Consultation (2/2)
+				sourceQuests = {
+					92749,	-- A Dynamite Plan
+					92751,	-- Detonation at a Distance (2/2)
+				},
+				qg = 11026,	-- Sprite Jumpsprocket <Journeyman Engineer>
+				qi = 254553,	-- Extra-Destructive Explosives (PQI!)
+				coord = { 61.8, 30.8, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.WESTFALL },
+				races = ALLIANCE_ONLY,
+				lvl = 9,
 			}),
 			q(1701, {	-- Fire Hardened Mail
 				sourceQuest = 1702,	-- The Shieldsmith
@@ -818,37 +818,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(5095),	-- Rainbow Fin Albacore
 				},
 			}),
-			q(78092, {	-- It Must Be Destroyed
-				sourceQuest = 78091,	-- Earning Your Salt
-				qg = 5495,	-- Ursula Deline <Warlock Trainer>
-				qi = 209748,	-- Althalaxx Orb (PQI!)
-				coord = { 26.2, 77.4, MAP.STORMWIND_CITY },
-				maps = { MAP.ASHENVALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_PALADINS,
-				classes = { PALADIN },
-				lvl = 22,
-				groups = {
-					objective(1, {	-- 0/12 Mote of Mannoroth
-						provider = { "i", 209779 },	-- Mote of Mannoroth
-						crs = {
-							 6073,	-- Searing Infernal
-							 6115,	-- Felguard
-							11697,	-- Mannoroc Lasher
-							 6071,	-- Legion Hound
-						},
-					}),
-				},
-			}),
-			q(98021, {	-- Journey to Sentinel Hill
-				sourceQuest = 94947,	-- Welcome to Azeroth
-				qg = 1748,	-- Highlord Bolvar Fordragon
-				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
-				maps = { MAP.WESTFALL },
-				races = { SKYBORNE_ALLIANCE },
-				lvl = 7,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
 			q(6184, {	-- Flint Shadowmore
 				sourceQuest = 6183,	-- Honor the Dead
 				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -867,6 +836,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(6972),	-- Fire Hardened Hauberk
 				},
 			}),
+			q(1717, {	-- Gakin's Summons (Succubus)
+				qg = 6120,	-- Lago Blackwrench
+				coord = { 47.6, 9.6, MAP.IRONFORGE },
+				races = { HUMAN, GNOME },
+				classes = { WARLOCK },
+				isBreadcrumb = true,
+				lvl = 20,
+			}),
 			q(1685, {	-- Gakin's Summons (Voidwalker)
 				altQuests = { 1715 },	-- The Slaughtered Lamb
 				qg = 6121,	-- Remen Marcot
@@ -875,14 +852,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				classes = { WARLOCK },
 				isBreadcrumb = true,
 				lvl = 10,
-			}),
-			q(1717, {	-- Gakin's Summons (Succubus)
-				qg = 6120,	-- Lago Blackwrench
-				coord = { 47.6, 9.6, MAP.IRONFORGE },
-				races = { HUMAN, GNOME },
-				classes = { WARLOCK },
-				isBreadcrumb = true,
-				lvl = 20,
 			}),
 			q(97222, {	-- Gatehouse Goods
 				sourceQuest = 97220,	-- Philmor's Favor
@@ -1088,6 +1057,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
+			q(78092, {	-- It Must Be Destroyed
+				sourceQuest = 78091,	-- Earning Your Salt
+				qg = 5495,	-- Ursula Deline <Warlock Trainer>
+				qi = 209748,	-- Althalaxx Orb (PQI!)
+				coord = { 26.2, 77.4, MAP.STORMWIND_CITY },
+				maps = { MAP.ASHENVALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
+				lvl = 22,
+				groups = {
+					objective(1, {	-- 0/12 Mote of Mannoroth
+						provider = { "i", 209779 },	-- Mote of Mannoroth
+						crs = {
+							 6073,	-- Searing Infernal
+							 6115,	-- Felguard
+							11697,	-- Mannoroc Lasher
+							 6071,	-- Legion Hound
+						},
+					}),
+				},
+			}),
 			q(2746, {	-- Items of Some Consequence
 				sourceQuest = 2745,	-- Infiltrating the Castle
 				qg = 7766,	-- Tyrion
@@ -1106,6 +1097,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
+			q(98021, {	-- Journey to Sentinel Hill
+				sourceQuest = 94947,	-- Welcome to Azeroth
+				qg = 1748,	-- Highlord Bolvar Fordragon
+				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
+				maps = { MAP.WESTFALL },
+				races = { SKYBORNE_ALLIANCE },
+				lvl = 7,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(1704, {	-- Klockmort Spannerspan
 				sourceQuest = 1701,	-- Fire Hardened Mail
 				qg = 5413,	-- Furen Longbeard
@@ -1115,6 +1115,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = { DWARF, GNOME },
 				isBreadcrumb = true,
 				lvl = 20,
+			}),
+			q(350, {	-- Look to an Old Friend
+				sourceQuest = 393,	-- Shadow of the Past
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 16,
 			}),
 			q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
@@ -1130,13 +1137,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_PALADINS,
 				isBreadcrumb = true,
 				lvl = 60,
-			}),
-			q(350, {	-- Look to an Old Friend
-				sourceQuest = 393,	-- Shadow of the Past
-				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
-				coord = { 78.3, 70.7, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 16,
 			}),
 			q(1941, {	-- Manaweave Robe
 				sourceQuest = 1921,	-- Gathering Materials
@@ -1790,22 +1790,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					}),
 				},
 			}),
-			q(4485, {	-- The Tome of Nobility (Stormwind City)
-				qg = 5491,	-- Arthur the Faithful <Paladin Trainer>
-				coord = { 49.6, 49.9, MAP.STORMWIND_CITY },
-				races = ALLIANCE_PALADINS,
-				classes = { PALADIN },
-				isBreadcrumb = true,
-				lvl = 40,
-			}),
-			q(4486, {	-- The Tome of Nobility (Ironforge)
-				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				coord = { 23.6, 6.6, MAP.IRONFORGE },
-				races = ALLIANCE_PALADINS,
-				classes = { PALADIN },
-				isBreadcrumb = true,
-				lvl = 40,
-			}),
 			q(1661, {	-- The Tome of Nobility
 				sourceQuests = {
 					4485,	-- The Tome of Nobility (Stormwind City)
@@ -1820,21 +1804,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					mount(13819),	-- Summon Warhorse
 				},
 			}),
-			q(1794, {	-- The Tome of Valor [Dwarf]
+			q(4486, {	-- The Tome of Nobility (Ironforge)
 				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				coord = { 23.6, 6.4, MAP.IRONFORGE },
+				coord = { 23.6, 6.6, MAP.IRONFORGE },
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
-				races = { DWARF },
-				repeatable = true,
-				lvl = 20,
+				isBreadcrumb = true,
+				lvl = 40,
 			}),
-			q(1793, {	-- The Tome of Valor [Human]
-				qg = 6171,	-- Duthorian Rall
-				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+			q(4485, {	-- The Tome of Nobility (Stormwind City)
+				qg = 5491,	-- Arthur the Faithful <Paladin Trainer>
+				coord = { 49.6, 49.9, MAP.STORMWIND_CITY },
+				races = ALLIANCE_PALADINS,
 				classes = { PALADIN },
-				races = { HUMAN },
-				repeatable = true,
-				lvl = 20,
+				isBreadcrumb = true,
+				lvl = 40,
 			}),
 			q(1649, {	-- The Tome of Valor (1/4)
 				sourceQuests = {
@@ -1875,6 +1859,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					recipe(5502),	-- Sense Undead
 					i(9607),	-- Bastion of Stormwind
 				},
+			}),
+			q(1794, {	-- The Tome of Valor [Dwarf]
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.6, 6.4, MAP.IRONFORGE },
+				classes = { PALADIN },
+				races = { DWARF },
+				repeatable = true,
+				lvl = 20,
+			}),
+			q(1793, {	-- The Tome of Valor [Human]
+				qg = 6171,	-- Duthorian Rall
+				coord = { 50.5, 47.5, MAP.STORMWIND_CITY },
+				classes = { PALADIN },
+				races = { HUMAN },
+				repeatable = true,
+				lvl = 20,
 			}),
 			q(2607, {	-- The Touch of Zanzil (1/3)
 				sourceQuest = 2359,	-- Klaven's Tower

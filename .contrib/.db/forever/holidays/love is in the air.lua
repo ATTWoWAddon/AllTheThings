@@ -99,10 +99,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 					}),
 				},
 			}),
-			q(8897, {	-- Dearest Colara, [Stormwind City]
-				qg = 16005,	-- Lieutenant Jocryn Heldric
-				qi = 21921,	-- Carefully Penned Note
-				coord = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
+			q(8899, {	-- Dearest Colara, [Darnassus]
+				qg = 16001,	-- Aldris Fourclouds
+				qi = 21925,	-- Immaculate Letter
+				coord = { 42.0, 42.0, MAP.DARNASSUS },
+				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
@@ -114,11 +115,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),
-			q(8899, {	-- Dearest Colara, [Darnassus]
-				qg = 16001,	-- Aldris Fourclouds
-				qi = 21925,	-- Immaculate Letter
-				coord = { 42.0, 42.0, MAP.DARNASSUS },
-				maps = { MAP.STORMWIND_CITY },
+			q(8897, {	-- Dearest Colara, [Stormwind City]
+				qg = 16005,	-- Lieutenant Jocryn Heldric
+				qi = 21921,	-- Carefully Penned Note
+				coord = { 57.0, 59.8, MAP.STORMWIND_CITY },	-- CRIEVE NOTE: This npc has never had a wrath coordinate, someone will need to find it and add it.
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 			}),

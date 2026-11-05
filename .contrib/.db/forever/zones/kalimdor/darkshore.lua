@@ -1011,22 +1011,6 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
-			q(4740, {	-- WANTED: Murkdeep!
-				provider = { "o", 175320 },	-- WANTED: Murkdeep!
-				coord = { 37.2, 44.2, MAP.DARKSHORE },
-				races = ALLIANCE_ONLY,
-				lvl = 15,
-				groups = {
-					objective(1, {	-- 0/1 Murkdeep slain
-						provider = { "n", 10323 },	-- Murkdeep
-						description = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
-						coord = { 35.4, 76.4, MAP.DARKSHORE },
-					}),
-					i(15404),	-- Breakwater Girdle
-					i(15403),	-- Ridgeback Bracers
-					i(5315),	-- Timberland Armguards
-				},
-			}),
 			q(98025, {	-- WANTED: Jai'vhanel
 				provider = { "o", 175320 },	-- WANTED: Murkdeep!
 				coord = { 37.2, 44.2, MAP.DARKSHORE },
@@ -1041,6 +1025,22 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					}),
 					i(287062),	-- Darnassian Knife
 					i(281289),	-- Swordfeather Cloak
+				},
+			}),
+			q(4740, {	-- WANTED: Murkdeep!
+				provider = { "o", 175320 },	-- WANTED: Murkdeep!
+				coord = { 37.2, 44.2, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				lvl = 15,
+				groups = {
+					objective(1, {	-- 0/1 Murkdeep slain
+						provider = { "n", 10323 },	-- Murkdeep
+						description = "Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
+						coord = { 35.4, 76.4, MAP.DARKSHORE },
+					}),
+					i(15404),	-- Breakwater Girdle
+					i(15403),	-- Ridgeback Bracers
+					i(5315),	-- Timberland Armguards
 				},
 			}),
 			q(3524, {	-- Washed Ashore (1/2)

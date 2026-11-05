@@ -629,21 +629,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			q(1319, {	-- The Black Shield (2/3) [A]
-				sourceQuest = 1253,	-- The Black Shield (1/3) [A]
-				qg = 4944,	-- Captain Garran Vimes
-				qi = 5919,	-- Blackened Iron Shield (QI!) not prov
-				coord = { 68.2, 48.6, MAP.DUSTWALLOW_MARSH },
-				races = ALLIANCE_ONLY,
-				lvl = 30,
-			}),
-			q(1320, {	-- The Black Shield (3/3) [A]
-				sourceQuest = 1319,	-- The Black Shield (2/3) [A]
-				qg = 4941,	-- Caz Twosprocket
-				coord = { 64.6, 50.4, MAP.DUSTWALLOW_MARSH },
-				races = ALLIANCE_ONLY,
-				lvl = 30,
-			}),
 			q(1251, {	-- The Black Shield (1/5) [H]
 				providers = {
 					{ "o", 20992 },	-- Black Shield
@@ -653,12 +638,27 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
+			q(1319, {	-- The Black Shield (2/3) [A]
+				sourceQuest = 1253,	-- The Black Shield (1/3) [A]
+				qg = 4944,	-- Captain Garran Vimes
+				qi = 5919,	-- Blackened Iron Shield (QI!) not prov
+				coord = { 68.2, 48.6, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+			}),
 			q(1321, {	-- The Black Shield (2/5) [H]
 				sourceQuest = 1251,	-- The Black Shield (1/5) [H]
 				qg = 4926,	-- Krog
 				qi = 5919,	-- Blackened Iron Shield (QI!) not prov
 				coord = { 36.4, 31.8, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
+				lvl = 30,
+			}),
+			q(1320, {	-- The Black Shield (3/3) [A]
+				sourceQuest = 1319,	-- The Black Shield (2/3) [A]
+				qg = 4941,	-- Caz Twosprocket
+				coord = { 64.6, 50.4, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
 			q(1322, {	-- The Black Shield (3/5) [H]

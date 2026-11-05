@@ -1110,12 +1110,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 				},
 			}),
-			q(91746, {	-- Elmpaw's Head
-				qs = 247862,	-- Elmpaw's Head (QS!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 7,
-			}),
 			q(1097, {	-- Elmore's Task
 				qgs = {
 					514,	-- Smith Argus
@@ -1129,6 +1123,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,	-- for "Stormpike's Delivery" in Stormwind
 				lvl = 9,
+			}),
+			q(91746, {	-- Elmpaw's Head
+				qs = 247862,	-- Elmpaw's Head (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 7,
 			}),
 			q(37, {	-- Find the Lost Guards
 				sourceQuest = 35,	-- Further Concerns
@@ -1330,27 +1330,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(276685),	-- Militia Bow
 				},
 			}),
-			q(5628, {	-- Returning Home [Elwynn Forest]
-				altQuests = {
-					5627,	-- Returning Home [Darnassus]
-					5629,	-- Returning Home [Teldrassil]
-					5630,	-- Returning Home [Dun Morogh]
-					5631,	-- Returning Home [Stormwind City]
-					5632,	-- Returning Home [Stormwind City]
-					5633,	-- Returning Home [Ironforge]
-				},
-				qg = 377,	-- Priestess Josetta <Priest Trainer>
-				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 10,
-				groups = {
-					{
-						recipeID = 10797,	-- Starshards (Rank 1)
-						rank = 1,
-					},
-				},
-			}),
 			q(83, {	-- Red Linen Goods
 				qg = 278,	-- Sara Timberlain
 				coord = { 79.5, 68.7, MAP.ELWYNN_FOREST },
@@ -1382,6 +1361,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				coord = { 79.8, 55.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+			}),
+			q(5628, {	-- Returning Home [Elwynn Forest]
+				altQuests = {
+					5627,	-- Returning Home [Darnassus]
+					5629,	-- Returning Home [Teldrassil]
+					5630,	-- Returning Home [Dun Morogh]
+					5631,	-- Returning Home [Stormwind City]
+					5632,	-- Returning Home [Stormwind City]
+					5633,	-- Returning Home [Ironforge]
+				},
+				qg = 377,	-- Priestess Josetta <Priest Trainer>
+				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
+				classes = { PRIEST },
+				races = { NIGHTELF },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 10797,	-- Starshards (Rank 1)
+						rank = 1,
+					},
+				},
 			}),
 			q(11, {	-- Riverpaw Gnoll Bounty
 				sourceQuest = 239,	-- Westbrook Garrison Needs Help!

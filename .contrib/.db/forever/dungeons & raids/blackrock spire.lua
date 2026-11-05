@@ -170,6 +170,22 @@ instanceroot(229, {	-- Blackrock Spire
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },
 				lvl = 57,
 			}),
+			q(4809, {	-- Chillwind Horns
+				sourceQuest = 4808,	-- Felnok Steelspring
+				qg = 10468,	-- Felnok Steelspring
+				coord = { 61.6, 38.6, MAP.WINTERSPRING },
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/8 Uncracked Chillwind Horn
+						provider = { "i", 12444 },	-- Uncracked Chillwind Horn
+						crs = {
+							7447,	-- Fledgling Chillwind
+							7448,	-- Chillwind Chimaera
+							7449,	-- Chillwind Ravager
+						},
+					}),
+				},
+			}),
 			q(8181, {	-- Confront Yeh'kinya
 				sourceQuest = 4788,	-- The Final Tablets
 				qg = 10460,	-- Prospector Ironboot
@@ -770,22 +786,6 @@ instanceroot(229, {	-- Blackrock Spire
 				maps = { MAP.WESTERN_PLAGUELANDS },
 				races = HORDE_ONLY,
 				lvl = 55,
-			}),
-			q(4809, {	-- Chillwind Horns
-				sourceQuest = 4808,	-- Felnok Steelspring
-				qg = 10468,	-- Felnok Steelspring
-				coord = { 61.6, 38.6, MAP.WINTERSPRING },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/8 Uncracked Chillwind Horn
-						provider = { "i", 12444 },	-- Uncracked Chillwind Horn
-						crs = {
-							7447,	-- Fledgling Chillwind
-							7448,	-- Chillwind Chimaera
-							7449,	-- Chillwind Ravager
-						},
-					}),
-				},
 			}),
 			q(4907, {	-- Tinkee Steamboil
 				sourceQuest = 4810,	-- Return to Tinkee

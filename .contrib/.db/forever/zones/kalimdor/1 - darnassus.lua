@@ -183,6 +183,31 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				isBreadcrumb = true,
 				lvl = 16,
 			}),
+			q(98067, {	-- Eyes of the Sentinels
+				qg = 8396,	-- Sentinel Dalia Sunblade
+				coord = { 39.8, 89.3, MAP.DARNASSUS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.TELDRASSIL },
+				races = ALLIANCE_ONLY,
+				groups = {
+					objective(1, {	-- Cenarion Hold depths entrance
+						provider = { "i", 279378 },	-- Lunar Pendant
+						coord = { 33.7, 16.2, MAP.DARNASSUS },
+					}),
+					objective(2, {	-- Darnassus Bank
+						provider = { "i", 279378 },	-- Lunar Pendant
+						coord = { 41.0, 43.4, MAP.DARNASSUS },
+					}),
+					objective(3, {	-- Craftsman's Terrace Inn
+						provider = { "i", 279378 },	-- Lunar Pendant
+						coord = { 66.3, 15.6, MAP.DARNASSUS },
+					}),
+					objective(4, {	-- City Gate
+						provider = { "i", 279378 },	-- Lunar Pendant
+						coord = { 35.8, 54.2, MAP.TELDRASSIL },
+					}),
+				},
+			}),
 			q(952, {	-- Grove of the Ancients
 				sourceQuest = 940,	-- Teldrassil
 				qg = 3516,	-- Arch Druid Fandral Staghelm
@@ -342,31 +367,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 							{ "o", 89635 },	-- Sunscorched Shell
 						},
 						coord = { 11.7, 37.1, MAP.THOUSAND_NEEDLES },
-					}),
-				},
-			}),
-			q(98067, {	-- Eyes of the Sentinels
-				qg = 8396,	-- Sentinel Dalia Sunblade
-				coord = { 39.8, 89.3, MAP.DARNASSUS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				maps = { MAP.TELDRASSIL },
-				races = ALLIANCE_ONLY,
-				groups = {
-					objective(1, {	-- Cenarion Hold depths entrance
-						provider = { "i", 279378 },	-- Lunar Pendant
-						coord = { 33.7, 16.2, MAP.DARNASSUS },
-					}),
-					objective(2, {	-- Darnassus Bank
-						provider = { "i", 279378 },	-- Lunar Pendant
-						coord = { 41.0, 43.4, MAP.DARNASSUS },
-					}),
-					objective(3, {	-- Craftsman's Terrace Inn
-						provider = { "i", 279378 },	-- Lunar Pendant
-						coord = { 66.3, 15.6, MAP.DARNASSUS },
-					}),
-					objective(4, {	-- City Gate
-						provider = { "i", 279378 },	-- Lunar Pendant
-						coord = { 35.8, 54.2, MAP.TELDRASSIL },
 					}),
 				},
 			}),

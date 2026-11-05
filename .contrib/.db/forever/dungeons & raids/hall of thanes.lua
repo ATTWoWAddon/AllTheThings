@@ -38,22 +38,6 @@ instanceroot(3065, {	-- Hall of Thanes
 					i(280096),	-- Tomb Robber's Gloves
 				},
 			}),
-			q(96394, {	-- The Restless Dead
-				qg = 264943,	-- Afadra Dunwall <Lorekeeper of Ironforge>
-				coord = { 33.2, 47.8, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/15 Enraged Apparition slain
-						provider = { "n", 263389 },	-- Enraged Apparition
-					}),
-					objective(2, {	-- 0/10 Tormented Soul slain
-						provider = { "n", 263390 },	-- Tormented Soul
-					}),
-					i(279897),	-- Dusty Belt
-					i(280095),	-- Cryptwalker Bracers
-				},
-			}),
 			q(96393, {	-- Old Ironforge Incursion
 				sourceQuest = 96391,	-- Underground Map
 				qg = 264936,	-- Earthseer Farsen
@@ -68,6 +52,22 @@ instanceroot(3065, {	-- Hall of Thanes
 					i(279894),	-- Calibrated Blunderbuss
 					i(279895),	-- Ironforge Greathammer
 					i(279896),	-- Deepblaze
+				},
+			}),
+			q(96394, {	-- The Restless Dead
+				qg = 264943,	-- Afadra Dunwall <Lorekeeper of Ironforge>
+				coord = { 33.2, 47.8, MAP.IRONFORGE },
+				races = ALLIANCE_ONLY,
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/15 Enraged Apparition slain
+						provider = { "n", 263389 },	-- Enraged Apparition
+					}),
+					objective(2, {	-- 0/10 Tormented Soul slain
+						provider = { "n", 263390 },	-- Tormented Soul
+					}),
+					i(279897),	-- Dusty Belt
+					i(280095),	-- Cryptwalker Bracers
 				},
 			}),
 			q(98423, {	-- The Treaty of Understanding

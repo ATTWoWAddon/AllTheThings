@@ -223,21 +223,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(270868),	-- Dwarven Tradeskill Signpost
 				},
 			}),
-			q(7806, {	-- Additional Runecloth [Ironforge]
-				sourceQuest = 7805,	-- A Donation of Runecloth
-				qg = 14723,	-- Mistina Steelshield
-				coord = { 43.2, 31.9, MAP.IRONFORGE },
-				maxReputation = { FACTION_IRONFORGE, EXALTED },
-				cost = {{ "i", 14047, 20 }},	-- Runecloth
-				races = ALLIANCE_ONLY,
-				repeatable = true,
-				lvl = 50,
-			}),
 			q(7812, {	-- Additional Runecloth [Gnomeregan Exiles]
 				sourceQuest = 7811,	-- A Donation of Runecloth
 				qg = 14724,	-- Bubulo Acerbus
 				coord = { 74.1, 48.1, MAP.IRONFORGE },
 				maxReputation = { FACTION_GNOMEREGAN, EXALTED },
+				cost = {{ "i", 14047, 20 }},	-- Runecloth
+				races = ALLIANCE_ONLY,
+				repeatable = true,
+				lvl = 50,
+			}),
+			q(7806, {	-- Additional Runecloth [Ironforge]
+				sourceQuest = 7805,	-- A Donation of Runecloth
+				qg = 14723,	-- Mistina Steelshield
+				coord = { 43.2, 31.9, MAP.IRONFORGE },
+				maxReputation = { FACTION_IRONFORGE, EXALTED },
 				cost = {{ "i", 14047, 20 }},	-- Runecloth
 				races = ALLIANCE_ONLY,
 				repeatable = true,
@@ -479,22 +479,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					recipe(1277462),	-- Contingency Plan
 				},
 			}),
-			q(5675, {	-- Elune's Grace [Ironforge]
-				altQuests = {
-					5672,	-- Elune's Grace [Darnassus]
-					5673,	-- Elune's Grace [Stormwind City]
-				},
-				qg = 11406,	-- High Priest Rohan <Priest Trainer>
-				coord = { 25.0, 8.2, MAP.IRONFORGE },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 20,
-				groups = {
-					r(2651, {	-- Elune's Grace (Rank 1)
-						rank = 1,
-					}),
-				},
-			}),
 			q(95041, {	-- Data Hoaders
 				qg = 11028,	-- Jemma Quikswitch
 				coord = { 67.7, 44.2, MAP.IRONFORGE },
@@ -528,6 +512,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 10,
 				groups = {
 					r(13908, {	-- Desperate Prayer (Rank 1)
+						rank = 1,
+					}),
+				},
+			}),
+			q(5675, {	-- Elune's Grace [Ironforge]
+				altQuests = {
+					5672,	-- Elune's Grace [Darnassus]
+					5673,	-- Elune's Grace [Stormwind City]
+				},
+				qg = 11406,	-- High Priest Rohan <Priest Trainer>
+				coord = { 25.0, 8.2, MAP.IRONFORGE },
+				classes = { PRIEST },
+				races = { NIGHTELF },
+				lvl = 20,
+				groups = {
+					r(2651, {	-- Elune's Grace (Rank 1)
 						rank = 1,
 					}),
 				},
@@ -891,30 +891,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(2997, {	-- The Tome of Divinity [Dun Morogh]
-				qg = 1232,	-- Azar Stronghammer <Paladin Trainer>
-				coord = { 47.6, 52.0, MAP.DUN_MOROGH },
-				races = { DWARF },
-				classes = { PALADIN },
-				isBreadcrumb = true,
-				lvl = 12,
-			}),
-			q(2999, {	-- The Tome of Divinity [Ironforge]
-				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-				coord = { 23.4, 6.2, MAP.IRONFORGE },
-				races = { DWARF },
-				classes = { PALADIN },
-				isBreadcrumb = true,
-				lvl = 12,
-			}),
-			q(3000, {	-- The Tome of Divinity [Stormwind City]
-				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
-				races = { DWARF },
-				classes = { PALADIN },
-				isBreadcrumb = true,
-				lvl = 12,
-			}),
 			q(1645, {	-- The Tome of Divinity (1a/8)
 				sourceQuests = {
 					2997,	-- The Tome of Divinity [Dun Morogh]
@@ -1020,6 +996,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						rank = 1,
 					}),
 				},
+			}),
+			q(2997, {	-- The Tome of Divinity [Dun Morogh]
+				qg = 1232,	-- Azar Stronghammer <Paladin Trainer>
+				coord = { 47.6, 52.0, MAP.DUN_MOROGH },
+				races = { DWARF },
+				classes = { PALADIN },
+				isBreadcrumb = true,
+				lvl = 12,
+			}),
+			q(2999, {	-- The Tome of Divinity [Ironforge]
+				qg = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+				coord = { 23.4, 6.2, MAP.IRONFORGE },
+				races = { DWARF },
+				classes = { PALADIN },
+				isBreadcrumb = true,
+				lvl = 12,
+			}),
+			q(3000, {	-- The Tome of Divinity [Stormwind City]
+				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				coord = { 48.6, 50.0, MAP.STORMWIND_CITY },
+				races = { DWARF },
+				classes = { PALADIN },
+				isBreadcrumb = true,
+				lvl = 12,
 			}),
 			q(1680, {	-- Tormus Deepforge
 				sourceQuest = 1678,	-- Vejrek

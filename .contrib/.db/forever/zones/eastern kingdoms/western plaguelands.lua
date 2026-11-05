@@ -34,9 +34,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 			}),
 		}),
 		n(QUESTS, {
-			q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
-				qg = 2198,	-- Crier Goodman
-				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
+			q(5091, {	-- A Call to Arms: The Plaguelands! [Darnassus]
+				qg = 10878,	-- Herald Moonstalker
+				coord = { 36.4, 39.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 50,
@@ -48,13 +48,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
-			q(5091, {	-- A Call to Arms: The Plaguelands! [Darnassus]
-				qg = 10878,	-- Herald Moonstalker
-				coord = { 36.4, 39.8, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
-				lvl = 50,
-			}),
 			q(5093, {	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 				qg = 10880,	-- Warcaller Gorlach
 				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
@@ -62,16 +55,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
-			q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
-				qg = 10879,	-- Harbinger Balthazad
-				coord = { 64.0, 44.0, MAP.UNDERCITY },
-				races = HORDE_ONLY,
+			q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
+				qg = 2198,	-- Crier Goodman
+				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
 			q(5095, {	-- A Call to Arms: The Plaguelands! [Thunder Bluff]
 				qg = 10881,	-- Bluff Runner Windstrider
 				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				isBreadcrumb = true,
+				lvl = 50,
+			}),
+			q(5094, {	-- A Call to Arms: The Plaguelands! [Undercity]
+				qg = 10879,	-- Harbinger Balthazad
+				coord = { 64.0, 44.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 				lvl = 50,

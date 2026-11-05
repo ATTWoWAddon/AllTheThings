@@ -150,18 +150,6 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11000),	-- Shadowforge Key
 				},
 			}),
-			q(3906, {	-- Disharmony of Flame
-				qg = 9084,	-- Thunderheart <Kargath Expeditionary Force>
-				coord = { 3.3, 48.3, MAP.BADLANDS },
-				maps = { MAP.BLACKROCK_MOUNTAIN },
-				races = HORDE_ONLY,
-				lvl = 48,
-				groups = {
-					objective(1, {	-- 0/1 Overmaster Pyron slain
-						provider = { "n", 9026 },	-- Overmaster Pyron
-					}),
-				},
-			}),
 			q(3907, {	-- Disharmony of Fire
 				sourceQuest = 3906,	-- Disharmony of Flame
 				qg = 9084,	-- Thunderheart <Kargath Expeditionary Force>
@@ -179,6 +167,18 @@ instanceroot(228, {	-- Blackrock Depths
 					i(12114),	-- Nightfall Gloves
 					i(12115),	-- Stalwart Clutch
 					i(12113),	-- Sunborne Cape
+				},
+			}),
+			q(3906, {	-- Disharmony of Flame
+				qg = 9084,	-- Thunderheart <Kargath Expeditionary Force>
+				coord = { 3.3, 48.3, MAP.BADLANDS },
+				maps = { MAP.BLACKROCK_MOUNTAIN },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Overmaster Pyron slain
+						provider = { "n", 9026 },	-- Overmaster Pyron
+					}),
 				},
 			}),
 			q(4182, {	-- Dragonkin Menace
@@ -468,14 +468,6 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 				},
 			}),
-			q(6403, {	-- The Great Masquerade
-				description = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
-				sourceQuest = 6402,	-- Stormwind Rendezvous
-				qg = 12580,	-- Reginald Windsor
-				coord = { 64.7, 76.8, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 50,
-			}),
 			q(4286, {	-- The Good Stuff
 				qg = 9177,	-- Oralius
 				coord = { 84.6, 68.7, MAP.BURNING_STEPPES },
@@ -487,6 +479,14 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					i(11883),	-- A Dingy Fanny Pack
 				},
+			}),
+			q(6403, {	-- The Great Masquerade
+				description = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+				sourceQuest = 6402,	-- Stormwind Rendezvous
+				qg = 12580,	-- Reginald Windsor
+				coord = { 64.7, 76.8, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
 			}),
 			q(4123, {	-- The Heart of the Mountain
 				qg = 9536,	-- Maxwort Uberglint

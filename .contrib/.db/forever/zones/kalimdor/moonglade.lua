@@ -54,163 +54,22 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				classes = { DRUID },
 				lvl = 16,
 			}),
-			q(1000, {	-- The New Frontier [Thunder Bluff]
-				altQuests = {
-					1018,	-- The New Frontier [Orgrimmar]
-					1004,	-- The New Frontier [Undercity]
-				},
-				qg = 10881,	-- Bluff Runner Windstrider
-				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				lvl = 54,
-			}),
-			q(1004, {	-- The New Frontier [Undercity]
-				altQuests = {
-					1018,	-- The New Frontier [Orgrimmar]
-					1000,	-- The New Frontier [Thunder Bluff]
-				},
-				qg = 10879,	-- Harbinger Balthazad
-				coord = { 68.8, 48.4, MAP.UNDERCITY },
-				races = HORDE_ONLY,
-				lvl = 54,
-			}),
-			q(1015, {	-- The New Frontier [Stormwind City]
-				altQuests = {
-					1019,	-- The New Frontier [Ironforge]
-					1047,	-- The New Frontier [Darnassus]
-				},
-				qg = 2198,	-- Crier Goodman
-				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				lvl = 54,
-			}),
-			q(1018, {	-- The New Frontier [Orgrimmar]
-				altQuests = {
-					1000,	-- The New Frontier [Thunder Bluff]
-					1004,	-- The New Frontier [Undercity]
-				},
-				qg = 10880,	-- Warcaller Gorlach
-				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
-				lvl = 54,
-			}),
-			q(1019, {	-- The New Frontier [Ironforge]
-				altQuests = {
-					1015,	-- The New Frontier [Stormwind City]
-					1047,	-- The New Frontier [Darnassus]
-				},
-				qg = 10877,	-- Courier Hammerfall
-				coord = { 31.6, 67.0, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
-				lvl = 54,
-			}),
-			q(1047, {	-- The New Frontier (1/2) [Darnassus]
-				altQuests = {
-					1015,	-- The New Frontier [Stormwind City]
-					1019,	-- The New Frontier [Ironforge]
-				},
-				qg = 10878,	-- Herald Moonstalker
-				coord = { 36.4, 39.8, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				lvl = 54,
-			}),
-			q(1123, {	-- Rabine Saturna [H]
-				sourceQuests = {
-					1000,	-- The New Frontier [Thunder Bluff]
-					1004,	-- The New Frontier [Undercity]
-					1018,	-- The New Frontier [Orgrimmar]
-				},
-				qg = 5769,	-- Arch Druid Hamuul Runetotem
-				coord = { 78.4, 28.4, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				lvl = 54,
-			}),
-			q(1124, {	-- Wasteland
-				sourceQuests = {
-					1123,	-- Rabine Saturna [H]
-					6762,	-- Rabine Saturna [A]
-				},
-				qg = 11801,	-- Rabine Saturna
-				qi = 17355,	-- Rabine's Letter
-				coord = { 51.7, 45.1, MAP.MOONGLADE },
-				lvl = 54,
-			}),
-			q(1185, {	-- Under the Chitin Was...
-				sourceQuest = 6845,	-- Uncovering Past Secrets
-				qg = 11939,	-- Umber
-				coord = { 44.88, 35.6, MAP.MOONGLADE },
-				lvl = 54,
-			}),
-			q(5921, {	-- Moonglade [A]
-				sourceQuests = {
-					5923,	-- Heeding the Call [Darnassus]
-					5924,	-- Heeding the Call [Stormwind City]
-					5925,	-- Heeding the Call [Teldrassil]
-				},
-				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-				coord = { 35.2, 8.0, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
+			{	-- Aquatic Form
+				allianceQuestData = q(5061, {	-- Aquatic Form [A]
+					sourceQuest = 272,	-- Trial of the Sea Lion [A]
+				}),
+				hordeQuestData = q(31, {	-- Aquatic Form [H]
+					sourceQuest = 30,	-- Trial of the Sea Lion [H]
+				}),
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
 				classes = { DRUID },
-			}),
-			q(5922, {	-- Moonglade [H]
-				sourceQuests = {
-					5926,	-- Heeding the Call [Thunder Bluff]
-					5927,	-- Heeding the Call [Orgrimmar]
-					5928,	-- Heeding the Call [Mulgore]
+				lvl = 16,
+				groups = {
+					recipe(1066),	-- Aquatic Form
+					i(16608),	-- Aquarius Belt
 				},
-				qg = 3033,	-- Turak Runetotem <Druid Trainer>
-				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-			}),
-			q(5923, {	-- Heeding the Call [Darnassus]
-				qg = 4218,	-- Denatharion <Druid Trainer>
-				coord = { 34.8, 7.8, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(5924, {	-- Heeding the Call [Stormwind City]
-				qg = 5505,	-- Theridran <Druid Trainer>
-				coord = { 36.2, 64.2, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(5925, {	-- Heeding the Call [Teldrassil]
-				qg = 3602,	-- Kal <Druid Trainer>
-				coord = { 56.0, 61.6, MAP.TELDRASSIL },
-				races = ALLIANCE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(5926, {	-- Heeding the Call [Thunder Bluff]
-				qg = 6746,	-- Innkeeper Pala <Innkeeper>
-				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(5927, {	-- Heeding the Call [Orgrimmar]
-				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
-				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
-			q(5928, {	-- Heeding the Call [Mulgore]
-				qg = 3064,	-- Gennia Runetotem <Druid Trainer>
-				coord = { 48.4, 59.6, MAP.MULGORE },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
+			},
 			q(5931, {	-- Back to Darnassus
 				sourceQuest = 5929,	-- Great Bear Spirit [A]
 				qg = 11802,	-- Dendrite Starblaze
@@ -228,6 +87,31 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				races = HORDE_ONLY,
 				classes = { DRUID },
 				lvl = 10,
+			}),
+			q(98731, {	-- Blessings of the Great Cat Spirit
+				qg = 11957,	-- Great Cat Spirit
+				coord = { 54.5, 74.8, MAP.MOONGLADE },
+				races = { NIGHTELF },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98739, {	-- Blessings of the Great Cat Spirit
+				qg = 11957,	-- Great Cat Spirit
+				coord = { 58.39, 73.52, MAP.MOONGLADE },
+				races = { TAUREN },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98738, {	-- Blessings of the Great Windborne Cat Spirit
+				sourceQuest = 98404,	-- The Great Windborne Cat Spirit
+				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
+				coord = { 44.0, 73.4, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 20,
 			}),
 			q(6001, {	-- Body and Heart [A]
 				sourceQuest = 5931,	-- Back to Darnassus
@@ -295,6 +179,66 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					},
 				},
 			}),
+			{	-- Great Bear Spirit
+				allianceQuestData = q(5929, {	-- Great Bear Spirit [A]
+					sourceQuest = 5921,	-- Moonglade [A]
+				}),
+				hordeQuestData = q(5930, {	-- Great Bear Spirit [H]
+					sourceQuest = 5922,	-- Moonglade [H]
+				}),
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				classes = { DRUID },
+				lvl = 10,
+			},
+			q(5923, {	-- Heeding the Call [Darnassus]
+				qg = 4218,	-- Denatharion <Druid Trainer>
+				coord = { 34.8, 7.8, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(5928, {	-- Heeding the Call [Mulgore]
+				qg = 3064,	-- Gennia Runetotem <Druid Trainer>
+				coord = { 48.4, 59.6, MAP.MULGORE },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(5927, {	-- Heeding the Call [Orgrimmar]
+				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
+				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(5924, {	-- Heeding the Call [Stormwind City]
+				qg = 5505,	-- Theridran <Druid Trainer>
+				coord = { 36.2, 64.2, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(5925, {	-- Heeding the Call [Teldrassil]
+				qg = 3602,	-- Kal <Druid Trainer>
+				coord = { 56.0, 61.6, MAP.TELDRASSIL },
+				races = ALLIANCE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
+			q(5926, {	-- Heeding the Call [Thunder Bluff]
+				qg = 6746,	-- Innkeeper Pala <Innkeeper>
+				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
 			q(6121, {	-- Lessons Anew [A]
 				sourceQuests = {
 					5923,	-- Heeding the Call [Darnassus]
@@ -307,22 +251,6 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				classes = { DRUID },
 				lvl = 14,
 			}),
-			q(6122, {	-- The Principal Source [A]
-				sourceQuest = 6121,	-- Lessons Anew [A]
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				maps = { MAP.DARKSHORE },
-				races = ALLIANCE_ONLY,
-				classes = { DRUID },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
-						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
-						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
-						coord = { 54.9, 33.3, MAP.DARKSHORE },
-					}),
-				},
-			}),
 			q(6126, {	-- Lessons Anew [H]
 				sourceQuests = {
 					5926,	-- Heeding the Call [Thunder Bluff]
@@ -334,50 +262,6 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				races = HORDE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
-			}),
-			q(6127, {	-- The Principal Source [H]
-				sourceQuests = { 6126 },	-- Lessons Anew [H]
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				maps = { MAP.THE_BARRENS },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 14,
-				groups = {
-					objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
-						provider = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
-						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
-						coord = { 47.0, 18.0, MAP.THE_BARRENS },
-					}),
-				},
-			}),
-			q(6761, {	-- The New Frontier (2/2) [Darnassus]
-				sourceQuests = {
-					1015,	-- The New Frontier [Stormwind City]
-					1019,	-- The New Frontier [Ironforge]
-					1047,	-- The New Frontier (1/2) [Darnassus]
-				},
-				qg = 3516,	-- Arch Druid Fandral Staghelm
-				coord = { 34.8, 8.8, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				lvl = 54,
-			}),
-			q(6762, {	-- Rabine Saturna [A]
-				sourceQuest = 6761,	-- The New Frontier (2/2) [Darnassus]
-				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-				coord = { 35.2, 8.0, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
-				lvl = 54,
-			}),
-			q(6845, {	-- Uncovering Past Secrets
-				sourceQuest = 6844,	-- Umber, Archivist
-				qg = 11939,	-- Umber
-				coord = { 44.88, 35.6, MAP.MOONGLADE },
-				lvl = 54,
-				groups = {
-					i(18400),	-- Ring of Living Stone
-					i(18402),	-- Glowing Crystal Ring
-				},
 			}),
 			q(94913, {	-- Moonglade
 				sourceQuests = {
@@ -405,20 +289,68 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				classes = { DRUID },
 				lvl = 10,
 			}),
+			q(5921, {	-- Moonglade [A]
+				sourceQuests = {
+					5923,	-- Heeding the Call [Darnassus]
+					5924,	-- Heeding the Call [Stormwind City]
+					5925,	-- Heeding the Call [Teldrassil]
+				},
+				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+				coord = { 35.2, 8.0, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				classes = { DRUID },
+			}),
+			q(5922, {	-- Moonglade [H]
+				sourceQuests = {
+					5926,	-- Heeding the Call [Thunder Bluff]
+					5927,	-- Heeding the Call [Orgrimmar]
+					5928,	-- Heeding the Call [Mulgore]
+				},
+				qg = 3033,	-- Turak Runetotem <Druid Trainer>
+				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+			}),
+			{	-- Power over Poison
+				allianceQuestData = q(6125, {	-- Power over Poison [A]
+					sourceQuest = 6124,	-- Curing the Sick [A]
+					maps = { MAP.DARNASSUS },
+				}),
+				hordeQuestData = q(6130, {	-- Power over Poison [H]
+					sourceQuest = 6129,	-- Curing the Sick [H]
+					maps = { MAP.THUNDER_BLUFF },
+				}),
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				classes = { DRUID },
+				lvl = 14,
+				groups = {
+					recipe(8946),	-- Cure Poison
+				},
+			},
+			q(6762, {	-- Rabine Saturna [A]
+				sourceQuest = 6761,	-- The New Frontier (2/2) [Darnassus]
+				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+				coord = { 35.2, 8.0, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(1123, {	-- Rabine Saturna [H]
+				sourceQuests = {
+					1000,	-- The New Frontier [Thunder Bluff]
+					1004,	-- The New Frontier [Undercity]
+					1018,	-- The New Frontier [Orgrimmar]
+				},
+				qg = 5769,	-- Arch Druid Hamuul Runetotem
+				coord = { 78.4, 28.4, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				lvl = 54,
+			}),
 			q(98340, {	-- The Great Cat Spirit
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TAUREN },
-				classes = { DRUID },
-				lvl = 20,
-			}),
-			q(98341, {	-- The Great Windborne Cat Spirit
-				sourceQuest = 98340,	-- The Great Cat Spirit
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { SKYBORNE_ALLIANCE },
 				classes = { DRUID },
 				lvl = 20,
 			}),
@@ -440,14 +372,6 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 						provider = { "i", 280680 },	-- Relic of the Silent Shadow (QI!)
 					}),
 				},
-			}),
-			q(98362, {	-- To Thunder Bluff
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.21, 30.64, MAP.MOONGLADE },
-				races = { TAUREN, SKYBORNE_HORDE },
-				classes = { DRUID },
-				lvl = 20,
-				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(98393, {	-- The Great Cat Spirit
 				qg = 4217,	-- Mathrengyl Bearwalker
@@ -485,13 +409,22 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					}),
 				},
 			}),
-			q(98397, {	-- To Darnassus
+			q(98405, {	-- The Great Cat Spirit
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.21, 30.64, MAP.MOONGLADE },
-				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				races = { TAUREN },
 				classes = { DRUID },
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98341, {	-- The Great Windborne Cat Spirit
+				sourceQuest = 98340,	-- The Great Cat Spirit
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 20,
 			}),
 			q(98404, {	-- The Great Windborne Cat Spirit
 				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
@@ -511,84 +444,125 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					}),
 				},
 			}),
-			q(98405, {	-- The Great Cat Spirit
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.21, 30.64, MAP.MOONGLADE },
-				races = { TAUREN },
-				classes = { DRUID },
-				lvl = 20,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(98731, {	-- Blessings of the Great Cat Spirit
-				qg = 11957,	-- Great Cat Spirit
-				coord = { 54.5, 74.8, MAP.MOONGLADE },
-				races = { NIGHTELF },
-				classes = { DRUID },
-				lvl = 20,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			q(98738, {	-- Blessings of the Great Windborne Cat Spirit
-				sourceQuest = 98404,	-- The Great Windborne Cat Spirit
-				qg = 272054,	-- Avatar of Saeyleenan <Great Windborne Cat Spirit>
-				coord = { 44.0, 73.4, MAP.MOONGLADE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { SKYBORNE_ALLIANCE },
-				classes = { DRUID },
-				lvl = 20,
-			}),
-			q(98739, {	-- Blessings of the Great Cat Spirit
-				qg = 11957,	-- Great Cat Spirit
-				coord = { 58.39, 73.52, MAP.MOONGLADE },
-				races = { TAUREN },
-				classes = { DRUID },
-				lvl = 20,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-			{	-- Aquatic Form
-				allianceQuestData = q(5061, {	-- Aquatic Form [A]
-					sourceQuest = 272,	-- Trial of the Sea Lion [A]
-				}),
-				hordeQuestData = q(31, {	-- Aquatic Form [H]
-					sourceQuest = 30,	-- Trial of the Sea Lion [H]
-				}),
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				classes = { DRUID },
-				lvl = 16,
-				groups = {
-					recipe(1066),	-- Aquatic Form
-					i(16608),	-- Aquarius Belt
+			q(1047, {	-- The New Frontier (1/2) [Darnassus]
+				altQuests = {
+					1015,	-- The New Frontier [Stormwind City]
+					1019,	-- The New Frontier [Ironforge]
 				},
-			},
-			{	-- Great Bear Spirit
-				allianceQuestData = q(5929, {	-- Great Bear Spirit [A]
-					sourceQuest = 5921,	-- Moonglade [A]
-				}),
-				hordeQuestData = q(5930, {	-- Great Bear Spirit [H]
-					sourceQuest = 5922,	-- Moonglade [H]
-				}),
+				qg = 10878,	-- Herald Moonstalker
+				coord = { 36.4, 39.8, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(6761, {	-- The New Frontier (2/2) [Darnassus]
+				sourceQuests = {
+					1015,	-- The New Frontier [Stormwind City]
+					1019,	-- The New Frontier [Ironforge]
+					1047,	-- The New Frontier (1/2) [Darnassus]
+				},
+				qg = 3516,	-- Arch Druid Fandral Staghelm
+				coord = { 34.8, 8.8, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(1019, {	-- The New Frontier [Ironforge]
+				altQuests = {
+					1015,	-- The New Frontier [Stormwind City]
+					1047,	-- The New Frontier [Darnassus]
+				},
+				qg = 10877,	-- Courier Hammerfall
+				coord = { 31.6, 67.0, MAP.IRONFORGE },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(1018, {	-- The New Frontier [Orgrimmar]
+				altQuests = {
+					1000,	-- The New Frontier [Thunder Bluff]
+					1004,	-- The New Frontier [Undercity]
+				},
+				qg = 10880,	-- Warcaller Gorlach
+				coord = { 46.6, 64.6, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
+				lvl = 54,
+			}),
+			q(1015, {	-- The New Frontier [Stormwind City]
+				altQuests = {
+					1019,	-- The New Frontier [Ironforge]
+					1047,	-- The New Frontier [Darnassus]
+				},
+				qg = 2198,	-- Crier Goodman
+				coord = { 54.8, 62.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(1000, {	-- The New Frontier [Thunder Bluff]
+				altQuests = {
+					1018,	-- The New Frontier [Orgrimmar]
+					1004,	-- The New Frontier [Undercity]
+				},
+				qg = 10881,	-- Bluff Runner Windstrider
+				coord = { 41.4, 54.2, MAP.THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				lvl = 54,
+			}),
+			q(1004, {	-- The New Frontier [Undercity]
+				altQuests = {
+					1018,	-- The New Frontier [Orgrimmar]
+					1000,	-- The New Frontier [Thunder Bluff]
+				},
+				qg = 10879,	-- Harbinger Balthazad
+				coord = { 68.8, 48.4, MAP.UNDERCITY },
+				races = HORDE_ONLY,
+				lvl = 54,
+			}),
+			q(6122, {	-- The Principal Source [A]
+				sourceQuest = 6121,	-- Lessons Anew [A]
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.2, 30.4, MAP.MOONGLADE },
-				classes = { DRUID },
-				lvl = 10,
-			},
-			{	-- Power over Poison
-				allianceQuestData = q(6125, {	-- Power over Poison [A]
-					sourceQuest = 6124,	-- Curing the Sick [A]
-					maps = { MAP.DARNASSUS },
-				}),
-				hordeQuestData = q(6130, {	-- Power over Poison [H]
-					sourceQuest = 6129,	-- Curing the Sick [H]
-					maps = { MAP.THUNDER_BLUFF },
-				}),
-				qg = 11802,	-- Dendrite Starblaze
-				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				maps = { MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
 				classes = { DRUID },
 				lvl = 14,
 				groups = {
-					recipe(8946),	-- Cure Poison
+					objective(1, {	-- 0/1 Filled Cliffspring Falls Sampler
+						provider = { "i", 15845 },	-- Filled Cliffspring Falls Sampler
+						cost = { { "i", 15844, 1 } },	-- Empty Cliffspring Falls Sampler
+						coord = { 54.9, 33.3, MAP.DARKSHORE },
+					}),
 				},
-			},
+			}),
+			q(6127, {	-- The Principal Source [H]
+				sourceQuests = { 6126 },	-- Lessons Anew [H]
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				maps = { MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 14,
+				groups = {
+					objective(1, {	-- 0/1 Filled Dreadmist Falls Sampler
+						provider = { "i", 15843 },	-- Filled Dreadmist Falls Sampler
+						cost = { { "i", 15842, 1 } },	-- Empty Dreadmist Falls Sampler
+						coord = { 47.0, 18.0, MAP.THE_BARRENS },
+					}),
+				},
+			}),
+			q(98397, {	-- To Darnassus
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.21, 30.64, MAP.MOONGLADE },
+				races = { NIGHTELF, SKYBORNE_ALLIANCE },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(98362, {	-- To Thunder Bluff
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.21, 30.64, MAP.MOONGLADE },
+				races = { TAUREN, SKYBORNE_HORDE },
+				classes = { DRUID },
+				lvl = 20,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			{	-- Trial of the Lake
 				allianceQuestData = q(29, {	-- Trial of the Lake [A]
 					sourceQuest = 26,	-- A Lesson to Learn [A]
@@ -645,6 +619,32 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					},
 				},
 			},
+			q(6845, {	-- Uncovering Past Secrets
+				sourceQuest = 6844,	-- Umber, Archivist
+				qg = 11939,	-- Umber
+				coord = { 44.88, 35.6, MAP.MOONGLADE },
+				lvl = 54,
+				groups = {
+					i(18400),	-- Ring of Living Stone
+					i(18402),	-- Glowing Crystal Ring
+				},
+			}),
+			q(1185, {	-- Under the Chitin Was...
+				sourceQuest = 6845,	-- Uncovering Past Secrets
+				qg = 11939,	-- Umber
+				coord = { 44.88, 35.6, MAP.MOONGLADE },
+				lvl = 54,
+			}),
+			q(1124, {	-- Wasteland
+				sourceQuests = {
+					1123,	-- Rabine Saturna [H]
+					6762,	-- Rabine Saturna [A]
+				},
+				qg = 11801,	-- Rabine Saturna
+				qi = 17355,	-- Rabine's Letter
+				coord = { 51.7, 45.1, MAP.MOONGLADE },
+				lvl = 54,
+			}),
 		}),
 		n(VENDORS, {
 			n(7940, {	-- Darnall <Tailoring Supplies>

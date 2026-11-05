@@ -725,7 +725,7 @@ L.OBJECT_DEBUGGER_NAME = "Name"
 L.OBJECT_ID = "Object ID"
 L.OBJECT_TYPE = "Object Type"
 L.OBJECTIVES = "Objectives"
-L.OBJECTIVES_CHECKBOX = "+Objectives"
+L.OBJECTIVES_CHECKBOX = "Quest Objectives"
 L.OBJECTIVES_CHECKBOX_TOOLTIP = "Enable this option to track the individual objectives of the quests you're currently on. Each objective counts as its own Thing while the quest is in your quest log, and is marked collected once you finish it. Quest tracking must also be enabled.\n\nIn tooltips, a quest you're on lists its objectives under Requirements, using the progress text from your quest log (e.g. '4/10 Kobold Vermin slain'), with a checkmark beside each one you've completed. If the quest log text isn't loaded yet, the objective shows as Retrieving Data until the game provides it."
 L.OBJECTS = "Objects"
 L.ONLY_OBTAINABLE_CHECKBOX = "Only Obtainable"
@@ -13323,6 +13323,7 @@ L.OBJECT_DEBUGGER_NAME = "名称"
 L.OBJECT_ID = "物体 ID"
 L.OBJECT_TYPE = "物体类型"
 L.OBJECTIVES = "目标"
+L.OBJECTIVES_CHECKBOX_TOOLTIP = "启用此选项可追踪你当前所接任务的各个目标。当任务在你的任务日志中时，每个目标都算作一个独立的事物，并在你完成后标记为已收集。任务追踪也必须启用。\n\n在鼠标提示中，你正在进行的任务会在「所需条件」下列出其目标，使用你任务日志中的进度文本（例如「已击杀 4/10 只狗头人害虫」），并在每个已完成的目标旁显示一个对勾。如果任务日志文本尚未加载，目标会显示为获取数据，直到游戏提供该文本。"
 L.OBJECTS = "物件"
 L.ONLY_OBTAINABLE_CHECKBOX = "仅可获得"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "如果只想查看可获得的共享外观，请启用此选项。"
@@ -13801,6 +13802,8 @@ localize(L.HEADER_NAMES, {
 	[-797] = "魔兽世界：无限",
 	[-799] = "图书馆藏书",
 	[-800] = "联盟斥候",
+	[-808] = "贸易物流",
+	[-810] = "遭劫的板条箱",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "术士可以教导他们的恶魔新技能，一些高等级的魔典只能从你阵营首都的恶魔训练师那里购买。",
@@ -13827,6 +13830,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-796] = "以下装备可通过创建对应种族与职业的全新角色获取。",
 	[-797] = "这些奖励是提供给购买了魔兽世界：无限升级包的玩家的。",
 	[-800] = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
+	[-808] = "艾泽拉斯贸易局和杜隆塔尔补给后勤部为协助在艾泽拉斯各地运送货物的人支付报酬。完成工匠文书和装满遭劫的板条箱并上交，以获取声望和商人青睐，然后于他们的商人处使用你的商人青睐。",
+	[-810] = "遭劫的板条箱会从艾泽拉斯各地 10 级及以上的生物身上掉落。阅读标签以确认货物种类，再放入清单内任意一组物资，制成密封的板条箱，再将其交付给你阵营的贸易代表，以换取商人青睐。",
 })
 localize(L.HEADER_LORE, {
 	[-318] = "地下城套装的第2套职业套装，通常称为 T0.5，是通过完成一条漫长的任务链来获得的，该任务链将作为终极地下城掉落的第一个套装升级为更强大的版本。在当前的魔兽世界中，这些套装受到收藏家的追捧，因为随着大灾变，这条任务链已被完全从游戏中移除。在魔兽世界经典版中，你应该在所有角色上完成这条任务链！",

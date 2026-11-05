@@ -84,6 +84,33 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 		}),
 		n(QUESTS, {
+			{
+				allianceQuestData = q(4508, {	-- Calm Before the Storm (1/2) [A]
+					maps = { MAP.DARNASSUS },
+				}),
+				hordeQuestData = q(4509, {	-- Calm Before the Storm (1/2) [H]
+					maps = { MAP.ORGRIMMAR },
+				}),
+				providers = {
+					{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
+					{ "i", 11844 },	-- Pestlezugg's Un'Goro Report
+				},
+				sourceQuest = 4507,	-- Pawn Captures Queen
+				coord = { 50.8, 27.0, MAP.TANARIS },
+				lvl = 50,
+			},
+			{
+				allianceQuestData = q(162, {	-- Rise of the Silithid [A]
+					maps = { MAP.DARNASSUS },
+				}),
+				hordeQuestData = q(32, {	-- Rise of the Silithid [H]
+					maps = { MAP.ORGRIMMAR },
+				}),
+				qg = 7724,	-- Senior Surveyor Fizzledowser
+				sourceQuest = 113,	-- Insect Part Analysis (2/2)
+				coord = { 50.2, 27.5, MAP.TANARIS },
+				lvl = 39,
+			},
 			q(2750, {	-- A Bad Egg
 				sourceQuest = 2741,	-- The Super Egg-O-Matic
 				qg = 7763,	-- Curgle Cranklehop
@@ -183,21 +210,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
-			{
-				allianceQuestData = q(4508, {	-- Calm Before the Storm (1/2) [A]
-					maps = { MAP.DARNASSUS },
-				}),
-				hordeQuestData = q(4509, {	-- Calm Before the Storm (1/2) [H]
-					maps = { MAP.ORGRIMMAR },
-				}),
-				providers = {
-					{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
-					{ "i", 11844 },	-- Pestlezugg's Un'Goro Report
-				},
-				sourceQuest = 4507,	-- Pawn Captures Queen
-				coord = { 50.8, 27.0, MAP.TANARIS },
-				lvl = 50,
-			},
 			q(6610, {	-- Clamlette Surprise
 				sourceQuests = {
 					6611,	-- To Gadgetzan You Go!
@@ -255,13 +267,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
-			q(2661, {	-- Delivery for Marin
-				sourceQuest = 2641,	-- Sprinkle's Secret Ingredient
-				qg = 7583,	-- Sprinkle
-				qi = 8528,	-- Violet Powder
-				coord = { 51.0, 26.8, MAP.TANARIS },
-				lvl = 44,
-			}),
 			q(2874, {	-- Deliver to MacKinley
 				sourceQuest = 2873,	-- Stoley's Shipment
 				qg = 7881,	-- Stoley
@@ -272,6 +277,13 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(9636),	-- Swashbuckler Sash
 					i(9637),	-- Shinkicker Boots
 				},
+			}),
+			q(2661, {	-- Delivery for Marin
+				sourceQuest = 2641,	-- Sprinkle's Secret Ingredient
+				qg = 7583,	-- Sprinkle
+				qi = 8528,	-- Violet Powder
+				coord = { 51.0, 26.8, MAP.TANARIS },
+				lvl = 44,
 			}),
 			q(3321, {	-- Did You Lose This?
 				sourceQuests = {
@@ -564,18 +576,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(9634),	-- Skilled Handling Gloves
 				},
 			}),
-			{
-				allianceQuestData = q(162, {	-- Rise of the Silithid [A]
-					maps = { MAP.DARNASSUS },
-				}),
-				hordeQuestData = q(32, {	-- Rise of the Silithid [H]
-					maps = { MAP.ORGRIMMAR },
-				}),
-				qg = 7724,	-- Senior Surveyor Fizzledowser
-				sourceQuest = 113,	-- Insect Part Analysis (2/2)
-				coord = { 50.2, 27.5, MAP.TANARIS },
-				lvl = 39,
-			},
 			q(3520, {	-- Screecher Spirits
 				qg = 8579,	-- Yeh'kinya
 				coord = { 67.0, 22.4, MAP.TANARIS },
