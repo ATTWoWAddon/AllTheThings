@@ -479,7 +479,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/1 The Lich's Spellbook
-						provider = { "i", 2833 },	-- The Lich's Spellbook
+						providers = {
+							{ "i", 2833 },	-- The Lich's Spellbook
+							{ "o", 1165 },	-- Gunther's Books
+						},
 						coord = { 68.0, 42.1, MAP.TIRISFAL_GLADES },
 					}),
 				},
