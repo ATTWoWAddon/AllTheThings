@@ -163,6 +163,7 @@ HeaderAssignments = {
 	["Curio"] = -382,
 	["Current Season"] = -763,
 	["Curse Surges"] = -770,
+	["D&D: World of Warcraft Bundles"] = -819,
 	["D.R.I.V.E. Racing"] = -54,
 	["Daggerspine Point"] = -757,
 	["Daily"] = -769,
@@ -798,4 +799,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -819
+NextHeaderID = -820

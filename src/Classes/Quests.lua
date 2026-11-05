@@ -1798,7 +1798,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	end,
 	RefreshCollectionOnly = true,
 	collectible = function(t)
-		if not t.questID then
+		if not t.questID or not app.Settings.Collectibles.QuestObjectives then
 			return false;
 		end
 		return app.Settings.Collectibles.Quests and C_QuestLog_IsOnQuest(t.questID);
