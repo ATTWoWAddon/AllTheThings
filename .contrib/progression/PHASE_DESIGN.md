@@ -4,7 +4,7 @@
 
 The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a975132e9`. The [unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee) is reference material, not a dependency or implementation of this design. Its positive-only `releasePhases`/independent-checkbox proposal is superseded here. Research cutoff: 2026-11-05. The complete declaration/configuration inventory was also compared with master `9dba6e6d3faa901ae63fe6f0c744cc76415e2b2c`; the 14 relevant source blobs are unchanged.
 
-**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2d gives the complete temporary control file for independently choosing each source cohort's migration stage; section 2c explains how this replaces schedule-only `SEASON_OF_DISCOVERY` pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
+**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2d gives the complete temporary control file for independently choosing each source cohort's migration stage; section 2c requires P4 source construction without authored flavor/season pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
 
 ## 1. Required destination and four stages
 
@@ -16,7 +16,7 @@ The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a97
 | **2.1. Lua first** | Add valid `progressionKey` / `flavors` annotations; keep all original timing and guards. JSON may be absent. | **Legacy only.** Strip new fields; do not apply new flavor/timing filters. | Owned legacy-output byte equality, valid annotations, no leaks and a pending-key report. Expected missing JSON/policies do not block the legacy build or commit. |
 | **2.2. JSON next** | Write/select the external policy files and resolve their mappings in shadow validation. | **Legacy only.** Same owned legacy output as P1/P2.1. | Explicitly selected files must parse and match their identities; shadow coverage and evidence must be complete before P3 promotion. |
 | **3. Progress output; legacy golden** | Legacy expressions remain solely for the separate golden compilation. | **Progress only.** Production must not infer, repair, or default any policy from legacy phase values or phase-driven callbacks. | Independent legacy/progress comparison, all boundary fixtures, build eligibility, complete coverage, and authority-isolation tests pass. New capabilities unsupported by legacy have separate reviewed expected results. |
-| **4. Remove legacy authoring** | Remove this cohort's `applyclassicphase`, direct phase assignments, retired phase parameters and legacy-only callback branches. Keep `progressionKey` and unrelated source conditions. | Progress only for this cohort; its old golden survives as pinned test evidence. | The cohort's inventory/dependencies are resolved and strict validation prevents reintroduction. Shared helper definitions and physical source writers remain until their last supported legacy consumer/context retires. |
+| **4. Remove legacy authoring** | Remove this cohort's old phase writers and every authored flavor/season conditional. Use explicitly selected complete source variants; keep `progressionKey` and unrelated source conditions. | Progress only for this cohort; its old golden survives as pinned test evidence. | No structural/technical flavor-guard exception remains in this cohort's construction path. Unresolved selection safety blocks P4. Shared legacy-only helpers and physical inputs remain for other supported consumers until their last use retires. |
 
 **P1–P4 remain four main stages; P2.1/P2.2 split only the authoring sequence within P2.** Stage selection lives only in the temporary migration manifest, never in the permanent availability policy or an authored timing field. `P2` is an umbrella term, not a valid manifest stage value.
 
@@ -62,11 +62,11 @@ progressionScopes = {
 },
 
 -- P4: remove the old phase wrappers/assignments after the P3 gates pass.
--- Keep the actual original and SoD groups, their timelines and technical
--- guards. Section 2b shows the concrete final source and all four policies.
+-- Keep actual original/SoD groups and timelines; replace flavor/season
+-- guards with selected complete variants before P4. See section 2b.
 ```
 
-P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from that cohort's official legacy output and keep its old guards/authority; another cohort may already contribute progress output to the same artifact. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old timing writer is suppressed before normalization/merge in the isolated progress projection for that cohort; legacy-owned cohorts and the independent golden retain their original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
+P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from that cohort's official legacy output and keep its old guards/authority; another cohort may already contribute progress output to the same artifact. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old timing writer is suppressed before normalization/merge in the isolated progress projection for that cohort; legacy-owned cohorts and the independent golden retain their original behavior. In P4 remove those retired writers and authored flavor/season guards after safe source construction is established. Preserve raid data, intrinsic timelines and independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
 
 
 ## 2. What humans maintain
@@ -125,6 +125,7 @@ The temporary `ProgressionMigration` selection is available at P2.1 to assign so
 | Existing configuration/workflow input | Required contract |
 | --- | --- |
 | Existing base/configuration composition | Resolves data roots, `DataPatch`, preprocessing tags, source variants, and requirements. Record the resolved context, not just the last filename. |
+| `SourceVariants` (NEW proposed) | Optional selector-to-variant-name object in the existing resolved configuration. An omitted map/selector uses that constructor's required `default` factory; an explicit invalid selection fails. This selects source structure, never context, phase policy or migration authority. Section 2b supplies the four BWL bindings. |
 | `ProgressionFlavor` | Explicit expected `flavorId`. Must exactly match the selected profile's `flavorId`. |
 | `ProgressionProfile` | Explicit path to one profile file. Its `id` is the selected `profileId`; do not glob a directory or guess by expansion. |
 | `ProgressionLegacyEligibility` | Explicit `none` or `preserve-reviewed`. The latter opts this exact context into its independently reviewed legacy eligibility rules; it is not a capability claim for other flavors/targets. |
@@ -211,7 +212,7 @@ These facts come from [the existing BWL source](https://github.com/ATTWoWAddon/A
 | **P2.1: annotate Lua first** | Add common, later-book and SoD-child keys and the SoD `flavors` annotation. Keep every P1 expression/guard; JSON may be absent. | **Exactly BWL's isolated P1-owned legacy bytes**; strip new fields, with no new applicability/timing filter. | Validate annotations/no leaks and report pending keys with source locations. Expected absent policy does not block this legacy build/commit. |
 | **P2.2: write JSON next** | Add/select the four full JSON documents below and validate their mapping in shadow. | **Still BWL's P1-owned legacy bytes**; no policy controls its official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
 | **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. The BWL progress projection suppresses its old phase writers and uses only the explicitly selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
-| **P4: remove the old path** | Delete the outer/nested phase writers and phase-only aliases' authoring use after complete migration. Keep actual data, intrinsic timeline predicates and justified construction guards. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | No new direct phase writes; no source/cache contamination; no same-ID loot union. Prove redundant repeated SoD phase-5 quest wrappers may inherit their parent before removing them. |
+| **P4: remove the old path** | Delete old phase writers and every flavor/season guard; use the complete configuration-selected constructors below. Preserve actual data and intrinsic timelines, including removed old quests/raid history. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | Zero flavor/season conditionals in the owned construction path; no source/cache contamination or same-ID loot union. Unresolved structural/technical selection blocks P4. Prove repeated phase writers redundant before removing them. |
 
 The four profiles below are **complete valid examples for the shown scopes, not complete production files**: two shared keys and the SoD child key where applicable. The book deliberately uses `status = unknown` and an empty window list. Existing `PHASE_FIVE` (and SoD's phase-6 alias, whose declaration is marked TODO) does not prove a particular War Effort or scepter-quest opening batch.
 
@@ -942,7 +943,7 @@ Use the complete manifest shape in section 2d with these **BWL authoring states*
 | BWL authoring step | Exact manifest settings | New configuration selection |
 | --- | --- | --- |
 | P2.1: Lua first | `blackwing-lair.stage = "P2.1"`; keep all four other example cohorts at `"P1"` as specified above. | Set only `ProgressionMigration` to `.contrib/progression/migration.json`; policy selection is not required. |
-| P2.2: JSON next | Change only `blackwing-lair.stage` to `"P2.2"`; keep all four other example cohorts at `"P1"`. | Select the matching four-property overlay below and its complete BWL policy file. Official BWL still uses the legacy projection. |
+| P2.2: JSON next | Change only `blackwing-lair.stage` to `"P2.2"`; keep all four other example cohorts at `"P1"`. | Select the matching policy properties below and complete BWL policy file; omit `SourceVariants` until a selected shadow/production run uses the factory rewrite. Official BWL remains legacy. |
 | Later BWL promotion | Request P3/P4 only after BWL's book/coverage/golden and cross-context retirement gates pass. | Keep the approved policy; changing the stage never fills a missing mapping. |
 
 The manifest is selected for the resolved context. Reusing the same example path in four invocations does not authorize incompatible deletion of a shared Lua writer; the cross-context retirement rule in section 2d still applies. Different explicit contexts can select separate reviewed manifest paths if their stages differ.
@@ -954,7 +955,10 @@ The manifest is selected for the resolved context. Reusing the same example path
     "ProgressionFlavor": "progression",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/progression/main.json",
     "ProgressionLegacyEligibility": "none",
-    "ProgressionMigration": ".contrib/progression/migration.json"
+    "ProgressionMigration": ".contrib/progression/migration.json",
+    "SourceVariants": {
+        "raid.bwl.groups": "default"
+    }
 }
 ```
 
@@ -965,7 +969,10 @@ The manifest is selected for the resolved context. Reusing the same example path
     "ProgressionFlavor": "anniversary",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/anniversary/main.json",
     "ProgressionLegacyEligibility": "none",
-    "ProgressionMigration": ".contrib/progression/migration.json"
+    "ProgressionMigration": ".contrib/progression/migration.json",
+    "SourceVariants": {
+        "raid.bwl.groups": "default"
+    }
 }
 ```
 
@@ -976,7 +983,10 @@ The manifest is selected for the resolved context. Reusing the same example path
     "ProgressionFlavor": "era",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/era/main.json",
     "ProgressionLegacyEligibility": "none",
-    "ProgressionMigration": ".contrib/progression/migration.json"
+    "ProgressionMigration": ".contrib/progression/migration.json",
+    "SourceVariants": {
+        "raid.bwl.groups": "default"
+    }
 }
 ```
 
@@ -987,69 +997,175 @@ The manifest is selected for the resolved context. Reusing the same example path
     "ProgressionFlavor": "sod",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/sod/main.json",
     "ProgressionLegacyEligibility": "none",
-    "ProgressionMigration": ".contrib/progression/migration.json"
+    "ProgressionMigration": ".contrib/progression/migration.json",
+    "SourceVariants": {
+        "raid.bwl.groups": "season_of_discovery"
+    }
 }
 ```
 
-`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2.1 selects its migration manifest without requiring a policy; P2.2 uses the four-property excerpts for shadow validation. Both retain the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
+`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2.1 selects its migration manifest without requiring a policy or `SourceVariants`; P2.2 uses the policy selections for shadow validation. The four excerpts also show the exact eventual BWL construction bindings. **Omit `SourceVariants` for annotation-only P2.1 or policy-only P2.2; include those bindings only when a selected shadow/production run actually uses the factory rewrite.** They do not change the official P1/P2 legacy construction. A selected rewritten source uses its declared default when no binding is supplied, including outside progress processing. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
 
-### P4 target source shape: preserve the actual variants
+### P4 target source shape: no flavor/season conditionals
 
-The following is the intended P4 structure after its promotion gates pass, not permission to retire the unresolved book path now. It is a shortened structural excerpt, not a replacement file. Omitted bosses, quests, fields and rewards remain unchanged. The original quest group's existing SoD removal wrapper also remains; it is omitted here only to keep the example readable.
+`sourceVariant(selector, factories)` and `SourceVariants` are **NEW proposed authoring/configuration support**, not existing runnable APIs. The four BWL JSON overlay excerpts above include the exact binding shape; the four BWL context paths above explicitly select `default` for progression, Anniversary and Era, and `season_of_discovery` for SoD. Omitting the normal binding also uses `default`; SoD requires its explicit reviewed selection. The resolver does not infer a special variant from the flavor name, build number or a not-SoD predicate. The selector `raid.bwl.groups` identifies a construction choice, not a `progressionKey` or availability policy.
+
+Resolve source configuration before acquisition Lua executes; the constructor receives an immutable `SourceVariants` map. The map may be omitted. When provided, it must be an object mapping nonempty selector strings to nonempty variant-name strings; non-object maps or non-string/empty values fail validation. Authoring validation requires literal selector/variant names, exactly one function-valued `default` entry, and no duplicate factory names. A missing `default` factory is an authoring error even when another variant is explicitly selected.
+
+At each call, the generic helper uses the explicit binding when present, otherwise the declared `default`, and validates all factory entries and the selected name **before invoking exactly one factory**. Explicit unknown, empty, malformed or conflicting bindings fail; they never fall back to `default`. There is no wildcard, first-match or flavor-specific resolver branch. A factory takes no arguments and returns a fresh dense group array; `{}` is valid and means no occurrences, while `nil` is invalid. There is no automatic union of default and special data. A selected special factory may explicitly call fresh common builders, as SoD does below. Declarations/captured setup perform no acquisition/helper/cache writes; only the selected factory executes those operations in its owner's isolated state. Do not precompute variants or reuse mutated tables. An invalid result aborts the isolated run before publication.
+
+Record selector calls from the selected construction and shadow runs. Before publication, reject every explicit `SourceVariants` key absent from their **combined used-selector set for one resolved context**; a binding used by the progress projection must not fail merely because the legacy projection does not call it. This catches misspelled/unused selectors without another declaration registry. Omit future bindings until a selected run actually uses the constructor.
+
+This source default applies only inside an already validated build/source context. It cannot choose a flavor/profile, fill missing schedule policies, downgrade P3/P4 to legacy, or bypass any migration gate. The reviewed SoD BWL context requires its explicit `season_of_discovery` binding and matching source identity; deleting that binding must fail the context/source-identity gate, even though the generic helper alone would choose default. These expectations are checked against that context's reviewed selection and independent fixtures, not a flavor-specific resolver branch. Retail's normal default is valid without any progression profile. The existing no-fallback rules for policy and migration authority remain unchanged.
+
+The following is a shortened, balanced P4 structural excerpt for the existing BWL source, not a replacement loot file or permission to retire its unresolved book now. The original quest/raid builders are authored once and return fresh data; the two complete constructors preserve their different parent structure. Omitted bosses, loot, quest-givers, coordinates, timelines and build conditions keep their existing meaning. Any omitted flavor/season branch must also be converted before P4; omission from this excerpt is not an exception.
 
 ```lua
+local function originalQuests()
+    return {
+        q(7781, { provider = { "i", 19003 }, races = ALLIANCE_ONLY }),
+        q(7782, {
+            sourceQuest = 7781,
+            races = ALLIANCE_ONLY,
+            groups = { i(19366), i(19383), i(19384) },
+        }),
+        q(7783, { provider = { "i", 19002 }, races = HORDE_ONLY }),
+        q(7784, {
+            sourceQuest = 7783,
+            races = HORDE_ONLY,
+            groups = { i(19383), i(19366), i(19384) },
+        }),
+    }
+end
+
+local function originalRaid()
+    return {
+        n(TREASURES, {
+            o(180667, { -- Draconic for Dummies; formerly PHASE_FIVE.
+                progressionKey = "raid.bwl.draconic-for-dummies",
+                timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+                groups = { i(21109) },
+            }),
+        }),
+        -- Existing zone drops and encounters 1529 through 1535 stay here.
+        e(1536, { -- Original Nefarian occurrence.
+            crs = { 11583, 10162 },
+            groups = {
+                i(19003, { races = ALLIANCE_ONLY }),
+                i(19002, { races = HORDE_ONLY }),
+                i(19364), -- Original Ashkandi.
+                -- Remaining original loot and conditions stay here.
+            },
+        }),
+    }
+end
+
+local function sodRaid()
+    -- Existing token data is constructed only inside the selected factory.
+    local TOKENS = {
+        ANCIENT = {
+            HELM = 231728, SHOULDERS = 231726, CHEST = 231731,
+            BRACERS = 231724, GLOVES = 231729, BELT = 231725,
+            LEGS = 231727, BOOTS = 231730,
+        },
+        DRACONIAN = {
+            HELM = 231711, SHOULDERS = 231709, CHEST = 231714,
+            BRACERS = 231707, GLOVES = 231712, BELT = 231708,
+            LEGS = 231710, BOOTS = 231713,
+        },
+        PRIMEVAL = {
+            HELM = 231719, SHOULDERS = 231717, CHEST = 231723,
+            BRACERS = 231715, GLOVES = 231720, BELT = 231716,
+            LEGS = 231718, BOOTS = 231721,
+        },
+    }
+    return d(DIFFICULTY.SOD.PLAYER20, {
+        flavors = { "sod" },
+        progressionKey = "raid.bwl.sod20",
+        timeline = { ADDED_1_15_4 },
+        groups = {
+            -- Existing SoD quests (including 85643/85644), trials, vendors,
+            -- token-cost calls using TOKENS, and encounters 1529–1535 stay
+            -- inside this factory, with their distinct rewards unchanged.
+            e(1536, { -- Distinct SoD Nefarian occurrence.
+                crs = { 11583, 10162 },
+                groups = {
+                    i(19003), i(19002),
+                    i(230818), -- SoD Ashkandi; not item 19364.
+                    -- Remaining SoD loot stays in this occurrence.
+                },
+            }),
+        },
+    })
+end
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
     inst(742, { -- Blackwing Lair
         progressionKey = "raid.bwl.common",
         timeline = { ADDED_1_6_0 },
-        groups = {
-            -- Existing quest group and its SoD removal condition stay here.
-            -- #if SEASON_OF_DISCOVERY
-            d(DIFFICULTY.LEGACY_RAID.PLAYER40,
-                bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
-            -- #endif
-            n(TREASURES, {
-                o(180667, { -- Draconic for Dummies; formerly PHASE_FIVE.
-                    progressionKey = "raid.bwl.draconic-for-dummies",
-                    timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
-                    groups = { i(21109) },
-                }),
-            }),
-            e(1536, { -- Original Nefarian occurrence.
-                crs = { 11583, 10162 },
-                groups = {
-                    i(19003, { races = ALLIANCE_ONLY }),
-                    i(19002, { races = HORDE_ONLY }),
-                    i(19364), -- Original Ashkandi.
-                    -- The remaining original loot/conditions are unchanged.
-                },
-            }),
-            -- #if SEASON_OF_DISCOVERY
-                })), -- Close the existing SoD-only legacy40 wrapper.
-            d(DIFFICULTY.SOD.PLAYER20, {
-                flavors = { "sod" },
-                progressionKey = "raid.bwl.sod20",
-                timeline = { ADDED_1_15_4 },
-                groups = {
-                    -- Existing SoD quests, trials, vendors and other bosses.
-                    e(1536, { -- Distinct SoD Nefarian occurrence.
-                        crs = { 11583, 10162 },
-                        groups = {
-                            i(19003),
-                            i(19002),
-                            i(230818), -- SoD Ashkandi; not item 19364.
-                            -- Remaining SoD loot stays in this occurrence.
-                        },
-                    }),
-                },
-            }),
-            -- #endif
-        },
+        -- Keep the remaining shared instance fields and compatible content.
+        groups = sourceVariant("raid.bwl.groups", {
+            default = function()
+                return {
+                    n(QUESTS, originalQuests()),
+                    unpack(originalRaid()), -- Last expression: direct groups.
+                }
+            end,
+            season_of_discovery = function()
+                return {
+                    n(QUESTS, sharedData(
+                        { timeline = { REMOVED_1_15_4 } }, originalQuests())),
+                    d(DIFFICULTY.LEGACY_RAID.PLAYER40,
+                        bubbleDownTimelineEventSelf(
+                            REMOVED_1_15_4, originalRaid())),
+                    sodRaid(),
+                }
+            end,
+        }),
     }),
 }))
 ```
 
-The remaining `SEASON_OF_DISCOVERY` conditions shown here preserve asymmetric constructor/removal structure and the existing guarded local token data until its safe extraction is reviewed; they do not assign the opening phase. The `flavors` field makes the SoD subtree's applicability explicit but does not undo pre-filter helper side effects or make an unbalanced wrapper valid in another context. `DIFFICULTY.SOD.PLAYER20 = 201` is already declared unconditionally; an allegedly missing difficulty constant is not a reason to keep this guard. The BWL-local `TOKENS` table and full helper effects still require the section-2c construction/isolation review before removing that surrounding guard. Retire a retained guard only after that proof. No negative flavor guard is needed merely to choose a scheduling key.
+The `default` constructor contains normal original BWL groups only, with no invented 40-player parent or SoD20 data. The SoD constructor keeps old quests with their existing `sharedData` removal semantics and the entire old raid under the recursive removal wrapper, beside the distinct new SoD20 raid. A shared quest/head/NPC ID never merges those routes or rewards. Only the selected constructor calls its helpers; choosing `default` never calls the SoD old-quest removal, legacy40 wrapper, `sodRaid` or its token-cost helpers, and never initializes `TOKENS`. Those remain inside the explicitly selected SoD factory. The old unused `SOD_REMOVED_1_15_4` declaration needs no replacement. `flavors` remains an explicit applicability check; it is not what prevents excluded construction. `DIFFICULTY.SOD.PLAYER20` is already unconditional and requires no flavor guard.
+
+For Retail, the complete construction-selection overlay below leaves the BWL selector unbound and therefore uses `default`; omitting `SourceVariants` entirely has the same effect. This is an overlay for the existing `.contrib/.db/standard/.config/retail/retail.config` composition, not a replacement configuration or a new Retail phase policy:
+
+```json
+{
+    "SourceVariants": {}
+}
+```
+
+Changing the shared file still requires regression checks for every affected resolved context, including Retail, SoM, Hardcore and Forever. Review whether its normal default preserves the existing source or it needs an explicit special selection; the four BWL bindings do not prove all other contexts correct. Retail's default keeps its ordinary build/version conditions and excludes SoD-specific construction entirely. Missing review blocks shared-file P4, not ordinary omission of a default binding. Historical inputs may remain separately pinned; the section-2d last-consumer rule still prevents deleting inputs required by another live context.
+
+For an entirely SoD-exclusive raid, put the **whole instance construction** inside the special factory. An unconditional `inst` with only its groups selected would leak an empty raid into Retail. This isolated synthetic fixture uses fixture-provided IDs, not claimed game records; its default creates no instance, encounter, reward or related cache writes:
+
+```lua
+-- FIXTURE_* constants are supplied by the isolated test fixture.
+local instances = sourceVariant("example.sod-only-instance", {
+    default = function()
+        return {}
+    end,
+    season_of_discovery = function()
+        return {
+            inst(FIXTURE_INSTANCE_ID, {
+                flavors = { "sod" },
+                progressionKey = "example.sod-only-instance",
+                groups = {
+                    e(FIXTURE_ENCOUNTER_ID, {
+                        groups = { i(FIXTURE_ITEM_ID) },
+                    }),
+                },
+            }),
+        }
+    end,
+})
+if #instances > 0 then -- Generic content-presence check, not a flavor test.
+    root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, instances))
+end
+```
+
+Only the explicit binding `SourceVariants["example.sod-only-instance"] = "season_of_discovery"` activates that fixture's special constructor. Retail's omitted binding executes only the empty default; it must not evaluate `inst`, `e`, `i`, any special initializer, or root/expansion registration. The generic nonempty-result check prevents publication of an empty container without testing flavor. This rule applies to complete flavor-exclusive source roots as well as BWL's shared-root variants.
 
 ### Generated linkage and visible behavior in each flavor
 
@@ -1114,46 +1230,32 @@ Neither input field nor an authored numeric `phase` remains in that new output. 
 Changing one flavor's window must not change the other three policies. A source/loot edit stays in its actual Lua occurrence. Dates, current view defaults and new item availability are not inferred from the shared instance ID, a reused native phase number, or an expansion-named configuration.
 
 
-## 2c. Fewer Parser-facing `SEASON_OF_DISCOVERY` pragmas
+## 2c. P4 removes authored flavor/season conditionals
 
-The goal is **zero schedule-only `SEASON_OF_DISCOVERY` pragmas in migrated production data**, not a promise that Lua code can always execute without technical guards. Do not replace `#if SEASON_OF_DISCOVERY` with an equally opaque generic pragma.
+**A P4 cohort has zero authored flavor/season pragmas, including structural and technical uses of `SEASON_OF_DISCOVERY`.** The rule covers its owned source and transitive code used to select or construct that cohort's data. Replacing the pragma with `IsSoD`, a renamed tag, or a flavor-specific branch hidden in a helper does not satisfy it. Temporary guards may remain in P1/P2/P3; an unresolved construction dependency blocks P4, rather than becoming a permanent exception.
 
-`flavors = { "sod" }` belongs on a complete acquisition subtree. Omission means shared applicability within already validated selected contexts. An explicit array must contain known flavor IDs, cannot be empty, and rejects duplicates. Ancestor and child allowlists intersect: a child cannot reopen an excluded parent. The scheduling key remains independent; two flavors may use the same neutral key with different policies, and two same-ID sources may have different keys/data. This field does not choose a profile, a realm, a date, or a loot replacement.
+This is not a requirement to retire every other cohort's shared support first. Existing legacy-only aliases/helpers and their guarded inputs may remain for isolated legacy/golden consumers, but cannot execute or be consulted to choose/build P4 variants. Canonical metadata can remain independent. Genuine client-version compatibility conditions, such as an API or field introduced at a specific build, retain their separate meaning and regression tests; they cannot stand in for gameplay flavor/season selection. A broad tag or a structural/technical label is not by itself a compatibility proof.
 
-**Required progress-projection ordering (P3/P4 production; P2.2 shadow only):** resolve context and source ownership before Lua execution → construct only that projection's permitted sources in isolated state → apply inherited flavor applicability → bind retained occurrences to owner-specific policy/coverage → select each owned occurrence once → merge/coalesce/index complete routes → export without either input field. Section 2d defines the separate legacy projection; a P2.1 cohort does not use this new applicability/timing path merely because a P4 cohort is present. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
+`flavors = { "sod" }` belongs on a complete acquisition subtree. Omission means shared applicability within already validated selected contexts. An explicit array must contain known flavor IDs, cannot be empty, and rejects duplicates. Ancestor and child allowlists intersect: a child cannot reopen an excluded parent. The scheduling key remains independent; two flavors may use the same neutral key with different policies, and two same-ID sources may have different keys/data. This field does not choose a profile, realm, date or loot replacement, and does not prevent eager Lua helper execution.
 
-```lua
--- Illustrative complete-group variant, with synthetic IDs.
--- Before: a source-data block hidden behind a `SEASON_OF_DISCOVERY` pragma.
--- #if SEASON_OF_DISCOVERY
-n(900001, { groups = { i(900002) } }),
--- #endif
+**Required progress-projection ordering (P3/P4 production; P2.2 shadow only):** resolve context, source ownership and explicit source selections → execute only selected safe files/factories in isolated state → apply inherited flavor applicability → bind retained occurrences to owner-specific policy/coverage → select each owned occurrence once → merge/coalesce/index complete routes → export without either input field or construction selector. Section 2d defines the separate legacy projection; a P2.1 cohort does not use this path merely because P4 is present. Omitted construction bindings use only each declared default; invalid explicit selections fail. Neither case includes every variant or changes policy/legacy authority.
 
--- After: applicability is data; opening/removal is external policy.
-n(900001, {
-    flavors = { "sod" },
-    progressionKey = "example.raid.extra-boss",
-    groups = { i(900002) },
-}),
--- An adjacent shared boss omits flavors and keeps its own source data.
-```
+Lua helpers can mutate ItemDB, RecipeDB, headers, events and caches before a data filter runs. Complete lazy factories, as in section 2b, prevent unselected helper invocation. Keep all mutating setup inside the selected factory and create fresh tables; post-evaluation `flavors` pruning cannot undo contamination. Incompatible syntax must instead live in complete safe files selected through existing configuration before parsing/execution. If neither safe construction form is established, retain the temporary guard and keep that cohort below P4. Selection belongs to source configuration, never scheduling JSON or an additional path/variant registry.
 
-The example does not invent real bosses or rewards. In the actual Blackwing Lair file, the complete SoD subtree is a candidate for this treatment. Its existing legacy40 wrapper and `REMOVED_1_15_4` condition are added only in the SoD source path; do not invent a 40-player wrapper for Era, progression, or Anniversary merely to remove a conditional. Do not replace field-level loot patches or asymmetric constructor fragments with an invented complete node.
-
-| Existing directive purpose | End-state treatment | Required proof |
+| Existing directive purpose | Required P4 replacement | Required proof |
 | --- | --- | --- |
 | Opening/later drop/removal/reopening only | External windows on the appropriate occurrence; remove timing pragma and legacy phase writer. | Independent boundary golden and child coverage; no old-value fallback. |
-| Complete SoD-only boss/reward/acquisition subtree | `flavors` on that subtree, with unchanged data and explicit policy. | Prune before coalescing/ID lookup; same-ID alternatives and mixed shared/variant trees remain correct. |
-| Field replacement, incompatible constructor/wrapper, or source-generation branch | First reconstruct equivalent complete source occurrences where safe; otherwise retain a documented exception. | No accidental union of mutually exclusive loot/fields and no altered non-SoD structure. |
-| Missing Lua API/constant, executable helper, import, or incompatible syntax | Retain the necessary technical pragma or select safe files through configuration. | Lua executes before the data filter: a rejected subtree cannot prevent an undefined function/constant from being evaluated. |
+| Complete flavor-only acquisition subtree | Retain explicit `flavors` and policy; use selected lazy construction or safe selected files wherever evaluation has side effects. | Excluded helpers never execute; applicability precedes coalescing/ID lookup. |
+| Field replacement, incompatible wrapper, or source-generation branch | Reconstruct complete balanced selected variants using shared fresh builders where possible. | No union of mutually exclusive loot/fields; original parent/child structure and removed history survive. |
+| Flavor-dependent helper, import, constant or syntax | Supply safe configuration-selected inputs and generic constructor support before execution. | No hidden flavor branch or eager excluded write. Any remaining dependency blocks P4. |
 
-The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` sites in 131 DB source files** (1,640 positive, 24 negative), not 1,664 removable guards. Classify each block as timing, source applicability, mixed, or technical before promising a removal count. The temporary migration report lists each retained exception with source location, reason, and regression coverage; it is not a permanent path-based policy registry. No automatic classifier may call a mixed block schedule-only.
+The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` sites in 131 DB source files** (1,640 positive, 24 negative). This is the starting inventory, not permission to retain structural/technical sites in P4. Classify each block as timing, source applicability, mixed or technical to choose the required rewrite. The temporary migration report records unresolved sites, source locations and regression coverage as P4 blockers; it is not a permanent registry or exception list.
 
-The conservative syntax triage covers all 1,664 groups: 2 phase-metadata/alias blocks, 327 field patches, 1,263 data/structure blocks, 35 program/callback blocks, 21 constructor/wrapper fragments, 4 closing fragments, and 12 string/comment/empty blocks. These are syntax categories, **not a semantic count of removable timing guards**. Of the total, 38 occur in shared preload, 10 in global ItemDB/RecipeDB sources, and 1,616 in authored acquisition trees. Input acquisition fields cannot be applied blindly to preload/global-record code. Eleven groups are implied true and four false by enclosing conditions; even those require branch-preserving review. The implementation's temporary report retains all 131 file locations and exact block spans for audit.
+The conservative syntax triage covers all 1,664 groups: 2 phase-metadata/alias blocks, 327 field patches, 1,263 data/structure blocks, 35 program/callback blocks, 21 constructor/wrapper fragments, 4 closing fragments, and 12 string/comment/empty blocks. These are syntax categories, not proof that a block can simply be deleted. Of the total, 38 occur in shared preload, 10 in global ItemDB/RecipeDB sources, and 1,616 in authored acquisition trees. Input acquisition fields cannot be applied blindly to preload/global-record code. Eleven groups are implied true and four false by enclosing conditions; even those require branch-preserving review. The implementation's temporary report retains all 131 file locations and exact block spans for audit.
 
-P2.1 validates/strips annotations and records pending keys; it runs no new applicability/timing filter. P2.2 may shadow-evaluate selected applicability/policies. Both keep their owned legacy-projection bytes identical to the frozen baseline. Stage 3 activates that cohort's reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
+P2.1 validates/strips annotations and records pending keys without new applicability/timing filtering. P2.2 may shadow-evaluate selected construction/applicability/policies. Both keep their owned legacy-projection bytes identical to the frozen baseline. P3 uses progress authority and independent pinned legacy evidence while any remaining flavor/season guards are temporary migration debt. P4 requires both retired timing writers and completed guard-free construction across every affected context. Retail gets no phase policy; its omitted bindings use the normal default, with unchanged Retail results required.
 
-Acceptance includes zero remaining **schedule-only** `SEASON_OF_DISCOVERY` directives in the completed cohort; every remaining `SEASON_OF_DISCOVERY` directive has a justified structural/technical exception; no `flavors`/`progressionKey` leaks; no excluded-source merge or pre-merge cache influence (poison an excluded same-ID variant and prove retained ItemDB/RecipeDB/header/event/output values are unchanged); no invented source data; and byte/semantic regression checks for all affected contexts, including unchanged Retail.
+Acceptance requires zero remaining flavor/season directives or disguised conditional replacements in the P4-owned construction path; no `flavors`/`progressionKey` or constructor-selection leaks; no excluded merge or pre-merge cache influence; and complete source identity/ancestry across affected contexts. Make the unselected factory raise an error or attempt cache poisoning and prove it is never invoked. Validate normal default BWL groups, removed SoD legacy40 and old quests, distinct SoD20 loot, and fresh tables across contexts. Test omitted Retail bindings selecting only default, empty defaults exposing no flavor-exclusive raid/root/cache state, and invalid explicit bindings, unused selector keys or a missing default factory failing without fallback. Removing SoD's required explicit selection fails its context/source-identity checks. P1/P2/P3 may still contain documented guards; those guards cannot be counted as completed P4 work.
 
 ## 2d. Choose P independently for each source cohort
 
@@ -1205,7 +1307,7 @@ Proposed path: **`.contrib/progression/migration.json`**. This complete control-
 }
 ```
 
-A reviewed context selects this file explicitly. For example, the following is the complete set of **new selection properties** for an Era overlay; it is not a replacement for the existing build/source configuration:
+A reviewed context selects this file explicitly. For example, the following is the complete set of **new selection properties** for an Era overlay; it is not a replacement for the existing build/source configuration. BWL is still P2.1 here, so its unused `SourceVariants` binding is omitted:
 
 ```json
 {
@@ -1227,7 +1329,7 @@ For example, `raid.zg.common` alone cannot cover ZG: its existing source include
 | Start BWL Lua annotations | Set its `stage` to `"P2.1"`; add source annotations while retaining the legacy expressions. | Official BWL uses legacy authority. Missing JSON/keys appear in its pending report, even if ZG already has a profile. |
 | Write BWL JSON next | Change only its `stage` to `"P2.2"` and select the policy file. | Validate BWL mappings in shadow; official BWL is still legacy. The unknown book remains unresolved, not a fabricated opening. |
 | Promote BWL output | Request `"P3"`. | Fail until BWL's complete propagation chain, book timing, context eligibility and independent golden pass. ZG's successful gates cannot satisfy BWL's gates. |
-| Retire BWL's old syntax | After those gates, request `"P4"` and remove BWL's retired legacy expressions. | BWL keeps the same approved JSON. Shared helpers used by other P1/P2 cohorts remain available to those cohorts. |
+| Retire BWL's old syntax | After those gates, request `"P4"` and remove BWL's old timing expressions and flavor/season guards after safe construction is proven. | BWL keeps the same approved policy JSON. Other cohorts retain their isolated legacy helpers; incomplete variant selection blocks BWL P4. |
 | Leave another old source alone | Keep it in the frozen baseline and omit it from `cohorts`. | Explicit `defaultStage: "P1"` preserves its legacy authority; this is not a missing-policy fallback. |
 
 `sources` names resolved execution entrypoints. Their imported fragments inherit that invocation's owner; record the full import/dependency closure in its hashes and isolation checks. An inline import must not switch stage midway through Lua execution based on the imported filename. A shared physical fragment may be evaluated separately for different owners in isolated projections; it is not an additional independently selected authoritative output. Conflicting entrypoint ownership is still an error.
@@ -1271,7 +1373,7 @@ After each requested stage's missing work and gates are supplied, **one acceptan
 | Blackwing Lair — **P2.1** | Valid Lua annotations with original expressions/guards retained; its JSON policies may be absent. Validate stripping, pending reports and owned legacy-byte equality. | Legacy projection; no new applicability/timing filter. |
 | Ruins of Ahn'Qiraj — **P2.2** | Annotated legacy source plus explicitly selected valid JSON; mappings are checked in a separate shadow run. Unresolved coverage blocks promotion. | Legacy projection, equal to its pinned owned bytes; shadow output is not shipped. |
 | Temple of Ahn'Qiraj — **P3** | Keep old syntax for the independent legacy golden using pinned inputs/tools and separate checks; pass complete progress policy/coverage gates. | Progress projection only; retained old syntax never supplies production timing. |
-| Zul'Gurub — **P4** | Remove local old timing syntax after its retirement gates; retain pinned golden evidence. Shared definitions remain until their last supported caller retires. | Progress projection only, with the approved P3 behavior preserved. |
+| Zul'Gurub — **P4** | Remove local old timing syntax and flavor/season conditionals after safe construction/retirement gates; retain pinned golden evidence. Shared legacy-only definitions remain for other supported callers. | Progress projection only, with the approved P3 behavior preserved. |
 
 In that same fixture, verify all of the following against the composed artifact and each isolated owned output:
 
@@ -1514,7 +1616,7 @@ Serialized callbacks need explicit template/occurrence review. Do not globally d
 1. Stage 1 records exact existing writer/caller locations and emitted provenance. Lexical scans include code and separately inspected generated callback strings; dynamic construction also requires compiled-output coverage.
 2. P2.1/P2.2 rejects newly introduced direct phase authoring outside the frozen legacy baseline. Changed legacy expressions require explicit baseline review. The temporary manifest selects each cohort's authority; it contains no availability policy. P2.1 missing policies remain pending even beside P4 cohorts.
 3. P3 rejects legacy-timing dependence in that cohort's progress projection. Cover its complete propagation chain and all supported contexts before promotion; unrelated cohorts may remain P1/P2. Failure does not authorize an implicit downgrade.
-4. P4 rejects `applyclassicphase`, direct or propagated authored phase values, retired numeric phase helper parameters, and new aliases such as `fallbackPhase` in the retired cohort. Shared definitions still used by a legacy cohort remain restricted to its isolated projection. Reject release IDs misfiled in `u` as an authoring bypass; real unavailable `u` is unchanged. The old upstream normalizer may remain for internal/legacy fixtures but cannot supply production scheduling.
+4. P4 rejects authored flavor/season conditionals in its construction path, including structural/technical or disguised helper branches, as well as `applyclassicphase`, direct or propagated authored phase values, retired numeric phase helper parameters and new aliases such as `fallbackPhase` in the retired cohort. Shared definitions still used by a legacy cohort remain restricted to its isolated projection. Reject release IDs misfiled in `u` as an authoring bypass; real unavailable `u` is unchanged. The old upstream normalizer may remain for internal/legacy fixtures but cannot supply production scheduling.
 5. Remove the legacy reader/shadow writer or any physical source expression only when no supported context, live source, template, callback or consumer still requires it. A source shared by P3 and P2 contexts must retain the legacy expressions for the latter; premature P4 removal is rejected unless inputs have been explicitly separated and reviewed. Keep canonical phase definitions/labels and unrelated numeric UI metadata; deleting the writer does not mean deleting all phase knowledge.
 
 ## 9. Exact implementation foundation and broader source scope
@@ -1562,7 +1664,7 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/progression/Test-Parser.ps1` | Run compiled fixtures against the CI payload and selected policy configuration. |
 | `.contrib/progression/benchmark-progression.lua` | Measure synthetic route-handling overhead with Lua 5.1. |
 | `.contrib/progression/compare-legacy.py` | Compare per-cohort owned legacy bytes and independent progress goldens, then composed route behavior; never generate the golden through the new converter. |
-| `.contrib/progression/validate-authoring.py` | Enforce writer retirement, input-field placement/allowlists, and the reviewed `SEASON_OF_DISCOVERY` directive disposition/exception list. |
+| `.contrib/progression/validate-authoring.py` | Enforce writer retirement, input-field placement/allowlists, literal lazy-constructor contracts and zero flavor/season conditionals in each P4 construction path; unresolved sites are blockers, not exceptions. |
 | `.contrib/progression/validate-generated.lua` | Check active/future/removed/unknown/reopened routes at every ordered boundary. |
 | `.contrib/progression/validate-generated.py` | Validate scope windows, per-context policy coverage, generated artifacts, and no input-marker leaks. |
 | `.contrib/src/Parser/ProgressionCatalog.cs` | Validate the selected migration manifest/policies, cohort ownership, stage gates and occurrence-bucketed coverage; export only production-owned scope policy. |
@@ -1576,8 +1678,10 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | Path | Responsibility |
 | --- | --- |
 | `.contrib/.db/forever/.config/forever.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
-| `.contrib/.db/shared/.config/root.config` | Pass through generated `progressionScopes`; no path-selector catalog. |
-| `.contrib/.db/shared/functions/Shortcuts.lua` | Document `progressionKey`/`flavors` on ATTObject; prevent excluded helper calls from mutating shared caches; instrument per-projection producer/consumer provenance; retire cohort-local phase inputs at P4 and shared helper definitions only after their last legacy consumer. |
+| `.contrib/.db/shared/.config/root.config` | Pass through generated `progressionScopes`; support optional `SourceVariants` only as construction configuration, never an exported field. Omitted selections use declared defaults; no separate path-selector catalog. |
+| `.contrib/.db/standard/.config/retail/retail.config` | Use normal source defaults with omitted bindings unless an explicit reviewed variant is required; prove unchanged Retail output and no special-raid leaks. Add no phase policy/UI. |
+| `.contrib/src/Parser/CustomConfiguration.cs` | Validate the proposed `SourceVariants` object during existing configuration composition; reject duplicate/conflicting bindings instead of silently overriding them. |
+| `.contrib/.db/shared/functions/Shortcuts.lua` | Add the NEW generic `sourceVariant(selector, factories)` helper: validate the explicit selection and lazy function values, invoke only the selected factory, and return fresh groups. Require a default factory; omitted bindings select it, invalid explicit bindings fail. No flavor-specific resolver branch. Preserve isolated provenance and last-caller retirement. |
 | `.contrib/.db/shared/lib/Constants/Phases.lua` | Retain canonical phase metadata and fill missing labels; remove no metadata merely because writers retire. |
 | `.contrib/.db/shared/lib/Functions/Function Templates.lua` | Replace phase-driven callback/tooltip paths with scope-aware progress queries while retaining independent conditions. |
 | `.contrib/.db/standard/.config/classic/01 - Classic Era.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
@@ -1592,7 +1696,7 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/src/Parser/Framework/Framework.Processing.cs` | Preserve build/timeline eligibility without authored phase; enforce retired-authoring gates. |
 | `.contrib/src/Parser/Framework/Framework.cs` | Initialize profile processing and export the generated profile. |
 | `.contrib/src/Parser/MiniJSON.cs` | Add scoped strict duplicate-property rejection for policy/migration JSON; leave unrelated readers unchanged. |
-| `.contrib/src/Parser/Program.cs` | Resolve source ownership/dependencies before Lua execution; orchestrate independent legacy/progress processes, retain each owned occurrence once, and reject unauthorized shared-state writes. |
+| `.contrib/src/Parser/Program.cs` | Resolve ownership/dependencies and optional `SourceVariants` before acquisition Lua; bind the immutable map to each isolated context. Reject explicit unused keys against combined construction/shadow selector calls before publication. Retain each occurrence once and reject unauthorized state writes. |
 | `.github/workflows/Parser.yml` | Run staged legacy/progress authorities in fresh processes, coverage of the reviewed output contexts for the initially listed build-target entries and any additional supported contexts, boundary checks, and provenance artifacts. |
 | `AllTheThings.toc` | Load the new progression module before source-handling modules. |
 | `src/Classes/base.lua` | Preserve acquisition conditions when cloning base objects. |
@@ -1615,7 +1719,7 @@ Future C# source-change commits must include their matching CI-built Parser bina
 2. Implement P2.1 annotation collection/validation, stripping and pending-key reporting with JSON absent, preserving legacy bytes. Then P2.2 authors/selects complete JSON and validates schema/identity/coverage in shadow. Start with representative raids, then cover all indirect producers and source files; do not require simultaneous Lua/JSON commits.
 3. Fill external windows and independent eligibility for every real transition; add all distinct child/boss/drop scopes. Complete canonical localization and shared subphase/unknown labels. Do not invent timestamps, native IDs, or removal dates.
 4. Exercise each cohort's P3 candidate in isolation; advance only that cohort after its complete coverage, golden comparison, independent new-capability fixtures and invariance gates pass. Compose it with explicitly legacy-owned cohorts using the two isolated projections. The new path must work when legacy timing expressions are poisoned or disabled.
-5. Remove that cohort's legacy expressions at P4; rerun its checks and the composed-artifact route/control/cache-isolation checks. Other cohorts keep their stages. Delete shared legacy helpers and finally the temporary manifest only after the last supported legacy consumer retires, preserving pinned evidence without future dual authoring.
+5. Remove that cohort's old timing expressions and every authored flavor/season guard at P4 after complete safe construction is available; unresolved structural/technical selection blocks this step. Rerun its checks and the composed-artifact route/control/cache-isolation checks. Other cohorts keep their stages. Delete shared legacy helpers and finally the temporary manifest only after the last supported legacy consumer retires, preserving pinned evidence without future dual authoring.
 
 Acceptance must demonstrate:
 
@@ -1633,7 +1737,7 @@ Acceptance must demonstrate:
 - Full per-context policy coverage, including targets without new phase UI and Forever's Classic preprocessing behavior; target labels do not prove all supported rulesets/profiles were tested; Retail remains unchanged.
 - No client/expansion eligibility bypass and no generated record-set change from merely selecting another view.
 - No legacy writer/helper/cache/normalization bypass in any retired P4 cohort, including serialized callbacks and indirect recipe/currency paths. Shared legacy definitions remain only for explicit legacy consumers; global deletion waits for the last consumer.
-- Complete flavor applicability precedes policy coverage and every merge/index operation; shared nodes and same-ID variants remain distinct. Schedule-only `SEASON_OF_DISCOVERY` pragmas are eliminated, with an explicit justified list of retained technical/structural guards.
+- Explicit source selection precedes construction; applicability precedes policy coverage and every merge/index operation. P4 has zero authored flavor/season conditionals, including former technical/structural exceptions or hidden helper branches. Test default-only construction when unbound, explicit-only special variants, no exclusive raid shell/cache leaks, fresh state and all affected shared-source contexts. Invalid explicit bindings or incomplete construction/regression proof keep that cohort below P4.
 - Every source occurrence preserved, including SoD variants and repeated NPC/item identities. Only proven redundant inherited writers may disappear without a new key.
 - Matching CI binaries and complete generated-data/runtime checks; localization-only differences separately reviewed. Test success is not evidence of actual game availability.
 
