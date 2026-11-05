@@ -8,6 +8,13 @@ New-Item -ItemType Directory -Force $evidence | Out-Null
 $builds = [System.Collections.Generic.List[object]]::new()
 $files = [System.Collections.Generic.List[object]]::new()
 $assetManifests = [System.Collections.Generic.List[object]]::new()
+$frameworkEvidence = [System.Collections.Generic.List[object]]::new()
+$frameworkExpectations = @{
+    'ATT Sync Tool' = 'v4.8'
+    'Database' = 'v4.7.2'
+    'Item Database Consolidator' = 'v4.7.2'
+}
+$installedFrameworkRelease = $null
 $runtimeCoverage = $null
 $failure = $null
 
@@ -31,8 +38,46 @@ function Test-MatchedFile([string] $Actual, [string] $Expected, [string] $Origin
 function Test-RestoredFile([string] $Actual, [string] $PackagePath) {
     Test-MatchedFile $Actual (Join-Path $env:NUGET_PACKAGES $PackagePath) 'NuGet restore'
 }
+function Test-FrameworkTarget([string] $Name, [string] $Output, [string] $Configuration, [string] $Phase) {
+    $version = $frameworkExpectations[$Name]
+    $assemblyName = if ($Name -eq 'Database') { 'Database.dll' } else { "$Name.exe" }
+    $path = Join-Path $Output $assemblyName
+    $stream = [System.IO.File]::OpenRead($path)
+    try {
+        $pe = [System.Reflection.PortableExecutable.PEReader]::new($stream)
+        try {
+            $metadata = [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($pe)
+            $targets = @(
+                foreach ($handle in $metadata.GetAssemblyDefinition().GetCustomAttributes()) {
+                    $attribute = $metadata.GetCustomAttribute($handle)
+                    if ($attribute.Constructor.Kind -ne [System.Reflection.Metadata.HandleKind]::MemberReference) { continue }
+                    $ctor = $metadata.GetMemberReference([System.Reflection.Metadata.MemberReferenceHandle]::op_Explicit($attribute.Constructor))
+                    if ($ctor.Parent.Kind -ne [System.Reflection.Metadata.HandleKind]::TypeReference) { continue }
+                    $type = $metadata.GetTypeReference([System.Reflection.Metadata.TypeReferenceHandle]::op_Explicit($ctor.Parent))
+                    if ($metadata.GetString($type.Namespace) -eq 'System.Runtime.Versioning' -and $metadata.GetString($type.Name) -eq 'TargetFrameworkAttribute') {
+                        $reader = $metadata.GetBlobReader($attribute.Value)
+                        if ($reader.ReadUInt16() -ne 1) { throw "Invalid framework attribute: $path" }
+                        $reader.ReadSerializedString()
+                    }
+                }
+            )
+        } finally { $pe.Dispose() }
+    } finally { $stream.Dispose() }
+    $expected = ".NETFramework,Version=$version"
+    if ($targets.Count -ne 1 -or $targets[0] -cne $expected) { throw "Unexpected target in $path; expected $expected, found $($targets -join ', ')" }
+    $sku = $null
+    if ($Name -ne 'Database') {
+        $configPath = "$path.config"
+        [xml] $config = Get-Content -Raw -LiteralPath $configPath
+        $runtime = @($config.SelectNodes('/configuration/startup/supportedRuntime') | Where-Object { $_.GetAttribute('version') -eq 'v4.0' })
+        if ($runtime.Count -ne 1 -or $runtime[0].GetAttribute('sku') -cne $expected) { throw "Unexpected runtime SKU in $configPath; expected $expected" }
+        $sku = $runtime[0].GetAttribute('sku')
+    }
+    $frameworkEvidence.Add([pscustomobject]@{ project = $Name; configuration = $Configuration; phase = $Phase; path = $path; target = $targets[0]; expected = $expected; executableSku = $sku })
+}
 
 try {
+    $installedFrameworkRelease = Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name 'Release'
     foreach ($cache in @($env:NUGET_PACKAGES, $env:NUGET_HTTP_CACHE_PATH)) {
         if ((Test-Path $cache) -and @(Get-ChildItem -Force $cache).Count -ne 0) {
             throw "Expected an empty NuGet cache folder: $cache"
@@ -92,6 +137,7 @@ try {
             Invoke-Build $path $configuration $project.Platform $label
             $output = Join-Path $env:RUNNER_TEMP "att-source-output/$configuration/$name"
             if (!(Test-Path $output)) { throw "Missing isolated output directory: $output" }
+            if ($project.Legacy) { Test-FrameworkTarget $name $output $configuration 'project' }
             $assetsPath = Join-Path $env:RUNNER_TEMP "att-source-obj/$name/project.assets.json"
             if (!(Test-Path $assetsPath)) { throw "Missing assets manifest: $assetsPath" }
             Copy-Item $assetsPath (Join-Path $evidence "$label.assets.json")
@@ -122,6 +168,9 @@ try {
 
     # Verify the final Release folders, including dependencies copied after solution builds.
     $release = Join-Path $env:RUNNER_TEMP 'att-source-output/Release'
+    foreach ($name in $frameworkExpectations.Keys) {
+        Test-FrameworkTarget $name (Join-Path $release $name) 'Release' 'solution-final'
+    }
     $required = @(
         'Database/Database.dll',
         'ATT Sync Tool/ATT Sync Tool.exe', 'ATT Sync Tool/ATT Sync Tool.exe.config', 'ATT Sync Tool/Database.dll',
@@ -254,7 +303,8 @@ Each tool is in its own folder with its build dependencies. Database is a
 library; ATT Sync Tool also has its own copy of Database.dll. The tools use
 the same Lua libraries, acquired from NuGet during the build.
 
-ATT Sync Tool and Item Database Consolidator target .NET Framework 4.7.2.
+ATT Sync Tool targets .NET Framework 4.8. Item Database Consolidator and
+Database target .NET Framework 4.7.2.
 Skill Level Requirements, AssetDB Builder, and IconID Converter target .NET 10
 and need the .NET 10 runtime installed. These are Windows x64 build outputs.
 
@@ -290,6 +340,8 @@ the existing Parser; only Parser Lua initialization was checked, not a parse.
         builds = @($builds)
         packageManifests = @($assetManifests)
         outputHashes = @($files)
+        frameworkTargets = @($frameworkEvidence)
+        installedFrameworkRelease = $installedFrameworkRelease
         runtimeCoverage = $runtimeCoverage
     } | ConvertTo-Json -Depth 10 | Set-Content -Encoding utf8 (Join-Path $evidence 'result.json')
 }
