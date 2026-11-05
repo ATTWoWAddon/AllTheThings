@@ -260,6 +260,9 @@ local function DoReport(reporttype, id)
 	-- 	reportData[#reportData + 1] = ReportLineFormats.Info:format("unlocks",app.TableConcat(acctUnlocks, nil, nil, "/"))
 	-- end
 	reportData[#reportData + 1] = ReportLineFormats.ATT:format(app.Version,app.GameBuildVersion,date("!%Y-%m-%dT%H:%M:%SZ", time()))
+	for _,line in ipairs(app.GetClientInformationLines()) do
+		reportData[#reportData + 1] = line;
+	end
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
 	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData, allowRepeat) then

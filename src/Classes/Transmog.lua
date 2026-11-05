@@ -2,7 +2,7 @@
 local appName,app = ...;
 
 local C_TransmogCollection = C_TransmogCollection;
-if not C_TransmogCollection then
+if not C_TransmogCollection or (app.IsTitanReforged() and not app.IsTitanTransmogSupported()) then
 	-- Transmog is NOT supported.
 	app.CreateItemSource = function(sourceID, itemID, t)
 		if not t then

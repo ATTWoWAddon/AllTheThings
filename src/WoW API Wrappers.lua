@@ -1,5 +1,67 @@
 local app = select(2, ...);
-app.GameBuildVersion = select(4, GetBuildInfo());
+local clientVersion, clientBuild, clientBuildDate, clientInterface;
+if type(GetBuildInfo) == "function" then
+	clientVersion, clientBuild, clientBuildDate, clientInterface = GetBuildInfo();
+end
+local clientProjectID, clientWrathProjectID = WOW_PROJECT_ID, WOW_PROJECT_WRATH_CLASSIC;
+app.GameBuildVersion = clientInterface;
+
+-- Titan shares the Wrath loading route. Unknown identities must not activate its data.
+function app.IsTitanReforged()
+	return type(clientProjectID) == "number" and type(clientWrathProjectID) == "number"
+		and clientWrathProjectID == 11 and clientProjectID == clientWrathProjectID
+		and type(clientInterface) == "number" and clientInterface >= 38000 and clientInterface < 39000;
+end
+
+-- Only Titan opts into its backported collection APIs; other flavor rules stay independent.
+function app.IsTitanTransmogSupported()
+	return app.IsTitanReforged()
+		and type(C_TransmogCollection) == "table"
+		and type(C_TransmogCollection.GetItemInfo) == "function"
+		and type(C_TransmogCollection.GetSourceInfo) == "function"
+		and type(C_TransmogCollection.GetAllAppearanceSources) == "function"
+		and type(C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance) == "function"
+		and type(C_Transmog) == "table" and type(C_Transmog.GetSlotForInventoryType) == "function"
+		and type(C_Item) == "table";
+end
+
+-- Read-only report fields. Database build assumptions do not identify the live server phase.
+function app.GetClientInformationLines()
+	local function Value(value)
+		if value == nil then return "unknown (nil)"; end
+		return tostring(value):gsub("[\r\n]", " ") .. " (" .. type(value) .. ")";
+	end
+	local function Optional(func)
+		if type(func) == "function" then return func(); end
+	end
+	local metadata = app.DatabaseMetadata or {};
+	local progression = app.ProgressionProfile or {};
+	local season;
+	if type(C_Seasons) == "table" and type(C_Seasons.GetActiveSeason) == "function" then
+		local ok, value = pcall(C_Seasons.GetActiveSeason);
+		if ok then season = value; end
+	end
+	local transmog = type(C_TransmogCollection) == "table" and C_TransmogCollection or {};
+	return {
+		"ClientVersion: " .. Value(clientVersion),
+		"ClientBuild: " .. Value(clientBuild),
+		"ClientBuildDate: " .. Value(clientBuildDate),
+		"ClientInterface: " .. Value(clientInterface),
+		"ClientProjectID: " .. Value(clientProjectID) .. "; WrathProjectID: " .. Value(clientWrathProjectID),
+		"ClientRegion: " .. Value(Optional(GetCurrentRegion)) .. "; ClientLocale: " .. Value(Optional(GetLocale)),
+		"ClientRealm: " .. Value(Optional(GetRealmName)),
+		"ClientSeason: " .. Value(season) .. "; TitanDetected: " .. tostring(app.IsTitanReforged()),
+		"ReferenceDatabaseProfile: " .. Value(metadata.profile) .. "; DataPatch: " .. Value(metadata.dataPatch),
+		"DatabaseHistoricalPhase: " .. Value(metadata.historicalPhase) .. "; PhasePolicy: " .. Value(metadata.phasePolicy),
+		"DatabaseProgressionBaseline: " .. Value(metadata.progressionBaseline) .. "; ServerPhase: unknown (not observed)",
+		"ProgressionProfile: " .. Value(progression.id) .. "; VisibilityBaseline: " .. Value(progression.baseline),
+		"DatabaseSnapshotStatus: " .. Value(metadata.snapshotStatus) .. "; RawDataStatus: " .. Value(metadata.rawDataStatus)
+			.. "; InputStatus: " .. Value(metadata.inputStatus),
+		"ClientTransmogAPIs: GetItemInfo=" .. type(transmog.GetItemInfo) .. "; GetSourceInfo=" .. type(transmog.GetSourceInfo)
+			.. "; GetAllAppearanceSources=" .. type(transmog.GetAllAppearanceSources)
+			.. "; PlayerHasTransmogItemModifiedAppearance=" .. type(transmog.PlayerHasTransmogItemModifiedAppearance),
+	};
+end
 app.IsForever = app.GameBuildVersion >= 16001 and app.GameBuildVersion < 20000;
 app.IsRetail = app.GameBuildVersion >= 110000 or app.IsForever;
 app.IsClassic = not app.IsRetail;

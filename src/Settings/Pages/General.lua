@@ -789,7 +789,7 @@ function(self)
 	settings:UpdateMode(1)
 end)
 local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;
-if app.GameBuildVersion < 40000 then
+if app.GameBuildVersion < 40000 and not app.IsTitanTransmogSupported() then
 	tooltip = tooltip .. "\n\n" .. L.UNOFFICIAL_SUPPORT_TOOLTIP;
 end
 if settings.ForceAccountWide.Transmog then
