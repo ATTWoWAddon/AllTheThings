@@ -9,6 +9,29 @@ local revampAch = function(id, t)
 	return t;
 end
 
+-- #if ANYCLASSIC
+-- #if NOT TITAN_REFORGED
+-- #if WRATH
+local ULDUAR_PHASE_ONUPDATE = [[function(t)
+	local removed = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[);
+	local u = removed and ]] .. REMOVED_FROM_GAME .. [[ or nil;
+	if _.ProgressionProfile and _.ProgressionProfile.id == "wrath" then
+		_.Modules.Progression.SetSourceAvailability(t, "u", u);
+	else
+		t.u = u;
+	end
+	if removed then
+		t.rwp = nil;
+	else
+		t.rwp = 30200;
+	end
+end]];
+-- #else
+local ULDUAR_PHASE_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200);
+-- #endif
+-- #endif
+-- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, {	-- Ulduar
 		mapID = ULDUAR,
@@ -626,7 +649,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+								-- #if NOT TITAN_REFORGED
+								OnUpdate = ULDUAR_PHASE_ONUPDATE,
+								-- #endif
 							}),
 							-- #endif
 							ach(3004, {	-- He Feeds On Your Tears (10 player)
@@ -919,7 +944,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+								-- #if NOT TITAN_REFORGED
+								OnUpdate = ULDUAR_PHASE_ONUPDATE,
+								-- #endif
 							}),
 							-- #endif
 							revampAch(3159, {	-- Alone in the Darkness (10 player)
@@ -1546,7 +1573,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17341, {	-- Cutting Edge: Ulduar
-								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+								-- #if NOT TITAN_REFORGED
+								OnUpdate = ULDUAR_PHASE_ONUPDATE,
+								-- #endif
 							}),
 							-- #endif
 							ach(3005, {	-- He Feeds On Your Tears (25 player)
@@ -1861,7 +1890,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						groups = {
 							-- #if ANYCLASSIC
 							ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-								OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+								-- #if NOT TITAN_REFORGED
+								OnUpdate = ULDUAR_PHASE_ONUPDATE,
+								-- #endif
 							}),
 							-- #endif
 							revampAch(3164, {	-- Alone in the Darkness (25 player)
@@ -2351,7 +2382,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- #if ANYCLASSIC
 						ach(17341, {	-- Cutting Edge: Ulduar
-							OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+							-- #if NOT TITAN_REFORGED
+							OnUpdate = ULDUAR_PHASE_ONUPDATE,
+							-- #endif
 						}),
 						-- #endif
 						ach(5020, {	-- Observed - Guild Edition
@@ -2798,7 +2831,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						-- #if ANYCLASSIC
 						ach(17340, {	-- Ahead of the Curve: Yogg-Saron
-							OnUpdate = FUNCTION_TEMPLATES.GenerateOnUpdateRemovedWithPhase(WRATH_PHASE_THREE, 30200),
+							-- #if NOT TITAN_REFORGED
+							OnUpdate = ULDUAR_PHASE_ONUPDATE,
+							-- #endif
 						}),
 						-- #endif
 						ach(12388, {	-- Alone in the Darkness
