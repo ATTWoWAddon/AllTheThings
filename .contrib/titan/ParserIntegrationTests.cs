@@ -140,7 +140,12 @@ public static class TitanParserIntegration
             Assert(Process(".contrib/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua").Trim().Length == 0, "Consolidator output excludes ordinary Wrath raw data from Titan");
             string ulduarPath = "03 - Wrath of the Lich King/5 Ulduar.lua";
             string ulduarSource = ".contrib/.db/standard/01 - Dungeons Raids/" + ulduarPath;
-            Assert(!Process(ulduarSource).Contains("ULDUAR_PHASE_ONUPDATE"), "Titan excludes the six Wrath phase callbacks");
+            const string ulduarCallback = "OnUpdate = ULDUAR_PHASE_ONUPDATE";
+            string ulduarAuthored = File.ReadAllText(Path.Combine(root, ulduarSource));
+            int authoredCallbacks = ulduarAuthored.Split(new[] { ulduarCallback }, StringSplitOptions.None).Length - 1;
+            Assert(authoredCallbacks == 6, "Expected six authored Ulduar callbacks; found " + authoredCallbacks);
+            string titanUlduar = Process(ulduarSource);
+            Assert(!titanUlduar.Contains("ULDUAR_PHASE_ONUPDATE"), "Titan excludes the Wrath phase callback definition and assignments");
             var rawNested = D("instanceID", 759L, "u", 31L, "groups", L(D("itemID", 25L, "u", 31L)));
             Bind(ulduarPath, D("headerID", -1L, "groups", L(rawNested)));
             Assert(Requires(rawNested, "titan:6") && !((Dictionary<string, object>)((List<object>)rawNested["groups"])[0]).ContainsKey("u"), "actual Lua groups fields bind before merge normalizes them to g");
@@ -187,8 +192,14 @@ public static class TitanParserIntegration
 
             Load("03 - Wrath");
             string wrathUlduar = Process(ulduarSource);
-            Assert(wrathUlduar.Split(new[] { "OnUpdate = ULDUAR_PHASE_ONUPDATE" }, StringSplitOptions.None).Length == 7
-                && wrathUlduar.Contains("SetSourceAvailability"), "Wrath retains six profile-aware Ulduar callbacks");
+            int wrathCallbacks = wrathUlduar.Split(new[] { ulduarCallback }, StringSplitOptions.None).Length - 1;
+            bool usesSourceAvailability = wrathUlduar.Contains("SetSourceAvailability");
+            // Two authored sites belong to the 7.3.5-and-later block outside Wrath.
+            Assert(wrathCallbacks == 4 && usesSourceAvailability,
+                "Wrath DataPatch 3.4.5.63697 retains four profile-aware Ulduar callbacks; found "
+                + wrathCallbacks + ", source adapter present: " + usesSourceAvailability);
+            Console.WriteLine("Ulduar callback assignments: authored {0}, Wrath {1}, Titan 0; Wrath source adapter present: {2}",
+                authoredCallbacks, wrathCallbacks, usesSourceAvailability);
             Assert(Process(".contrib/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua").Contains("_.ItemDB"), "ordinary Wrath retains its dedicated ItemDB");
             var wrath = Bind(ulduarPath, UlduarFixture());
             Assert(Requires(wrath, "wrath:2"), "same Ulduar source maps to Wrath phase two");
