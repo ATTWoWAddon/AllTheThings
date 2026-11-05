@@ -1,0 +1,333 @@
+{
+    "schema": 1,
+    "legacyReleaseIDs": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        30,
+        31,
+        32,
+        33,
+        1605,
+        1606,
+        1607,
+        1608,
+        1609,
+        1610,
+        1611,
+        1612
+    ],
+    "bindings": [
+        {
+            "key": "raid.mc.legacy40",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "difficultyID": 9
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.bwl.legacy40",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 742
+                },
+                {
+                    "difficultyID": 9
+                }
+            ]
+        },
+        {
+            "key": "raid.bwl.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 742
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.aq20.legacy20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 743
+                },
+                {
+                    "difficultyID": 148
+                }
+            ]
+        },
+        {
+            "key": "raid.aq20.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 743
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.aq40.legacy40",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 744
+                },
+                {
+                    "difficultyID": 9
+                }
+            ]
+        },
+        {
+            "key": "raid.aq40.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 744
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.legacy40",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                },
+                {
+                    "difficultyID": 9
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.sod20",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                },
+                {
+                    "difficultyID": 201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.classic-common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/3.0 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                }
+            ]
+        },
+        {
+            "key": "raid.bwl.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 742
+                }
+            ]
+        },
+        {
+            "key": "raid.aq20.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 743
+                }
+            ]
+        },
+        {
+            "key": "raid.aq40.common",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+            "selectors": [
+                {
+                    "instanceID": 744
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.sulfuras",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 227683
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.lodestone",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 233213
+                }
+            ]
+        },
+        {
+            "key": "raid.mc.sod.globe",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.0 Molten Core.lua",
+            "selectors": [
+                {
+                    "instanceID": 741
+                },
+                {
+                    "itemID": 233201
+                }
+            ]
+        },
+        {
+            "key": "raid.naxx.wrath",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/2 Naxxramas.lua",
+            "selectors": [
+                {
+                    "instanceID": 754
+                }
+            ]
+        },
+        {
+            "key": "raid.ulduar",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua",
+            "selectors": [
+                {
+                    "instanceID": 759
+                }
+            ]
+        },
+        {
+            "key": "raid.karazhan",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/1 Karazhan (Raid).lua",
+            "selectors": [
+                {
+                    "instanceID": 745
+                }
+            ]
+        },
+        {
+            "key": "raid.gruul",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/2 Gruul's Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 746
+                }
+            ]
+        },
+        {
+            "key": "raid.magtheridon",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/3 Magtheridon's Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 747
+                }
+            ]
+        },
+        {
+            "key": "raid.onyxia",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.5 Onyxia's Lair.lua",
+            "selectors": [
+                {
+                    "instanceID": 760
+                }
+            ]
+        },
+        {
+            "key": "raid.icc",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/8 Icecrown Citadel.lua",
+            "selectors": [
+                {
+                    "instanceID": 758
+                }
+            ]
+        },
+        {
+            "key": "raid.ruby",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/9 The Ruby Sanctum.lua",
+            "selectors": [
+                {
+                    "instanceID": 761
+                }
+            ]
+        },
+        {
+            "key": "raid.hyjal",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/6 The Battle for Mount Hyjal.lua",
+            "selectors": [
+                {
+                    "instanceID": 750
+                }
+            ]
+        },
+        {
+            "key": "raid.black-temple",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/7 The Black Temple.lua",
+            "selectors": [
+                {
+                    "instanceID": 751
+                }
+            ]
+        },
+        {
+            "key": "world.dragons-nightmare",
+            "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/0.9 World Bosses.lua",
+            "selectors": [
+                {
+                    "headerID": -74
+                }
+            ],
+            "identitySource": ".contrib/.db/shared/constants/headerIDs.lua: Dragons of Nightmare = -74",
+            "scope": "Whole existing dragon source, including shared drops and quests; excludes Azuregos/Kazzak and the separate SoD Nightmare Grove source."
+        }
+    ],
+    "coverage": "Representative shared acquisition scopes only. Source selectors do not assert that historical rewards or difficulties are Titan-verified; unmapped sources retain the existing legacy-u compatibility behavior.",
+    "declarationEvidence": {
+        "17": "TBC_PHASE_ONE",
+        "18": "TBC_PHASE_TWO",
+        "19": "TBC_PHASE_THREE",
+        "20": "TBC_PHASE_FOUR",
+        "21": "TBC_PHASE_FIVE",
+        "source": ".contrib/.db/shared/lib/Constants/Phases.lua",
+        "scope": "Explicit declarations are converted only inside an opted-in, catalog-bound source scope."
+    }
+}

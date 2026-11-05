@@ -1,0 +1,138 @@
+{
+    "schema": 1,
+    "id": "titan",
+    "baseline": "titan:6",
+    "phases": {
+        "titan:1": {
+            "order": 1,
+            "name": {
+                "en": "Phase 1",
+                "tw": "\u7b2c 1 \u968e\u6bb5",
+                "cn": "\u7b2c 1 \u9636\u6bb5"
+            }
+        },
+        "titan:2": {
+            "order": 2,
+            "name": {
+                "en": "Phase 2",
+                "tw": "\u7b2c 2 \u968e\u6bb5",
+                "cn": "\u7b2c 2 \u9636\u6bb5"
+            }
+        },
+        "titan:3": {
+            "order": 3,
+            "name": {
+                "en": "Phase 3",
+                "tw": "\u7b2c 3 \u968e\u6bb5",
+                "cn": "\u7b2c 3 \u9636\u6bb5"
+            }
+        },
+        "titan:4": {
+            "order": 4,
+            "name": {
+                "en": "Phase 4",
+                "tw": "\u7b2c 4 \u968e\u6bb5",
+                "cn": "\u7b2c 4 \u9636\u6bb5"
+            }
+        },
+        "titan:5": {
+            "order": 5,
+            "name": {
+                "en": "Phase 5",
+                "tw": "\u7b2c 5 \u968e\u6bb5",
+                "cn": "\u7b2c 5 \u9636\u6bb5"
+            }
+        },
+        "titan:6": {
+            "order": 6,
+            "name": {
+                "en": "Phase 6",
+                "tw": "\u7b2c 6 \u968e\u6bb5",
+                "cn": "\u7b2c 6 \u9636\u6bb5"
+            }
+        },
+        "titan:7": {
+            "order": 7,
+            "name": {
+                "en": "Phase 7",
+                "tw": "\u7b2c 7 \u968e\u6bb5",
+                "cn": "\u7b2c 7 \u9636\u6bb5"
+            }
+        },
+        "titan:8": {
+            "order": 8,
+            "name": {
+                "en": "Phase 8",
+                "tw": "\u7b2c 8 \u968e\u6bb5",
+                "cn": "\u7b2c 8 \u9636\u6bb5"
+            }
+        },
+        "titan:9": {
+            "order": 9,
+            "name": {
+                "en": "Phase 9",
+                "tw": "\u7b2c 9 \u968e\u6bb5",
+                "cn": "\u7b2c 9 \u9636\u6bb5"
+            }
+        },
+        "titan:10": {
+            "order": 10,
+            "name": {
+                "en": "Phase 10",
+                "tw": "\u7b2c 10 \u968e\u6bb5",
+                "cn": "\u7b2c 10 \u9636\u6bb5"
+            }
+        },
+        "titan:unknown": {
+            "order": 0,
+            "status": "unknown",
+            "name": {
+                "en": "Unknown progression",
+                "tw": "\u9032\u5ea6\u672a\u77e5",
+                "cn": "\u8fdb\u5ea6\u672a\u77e5"
+            }
+        }
+    },
+    "content": {
+        "raid.ulduar": "titan:6",
+        "raid.karazhan": "titan:7",
+        "raid.gruul": "titan:7",
+        "raid.magtheridon": "titan:7",
+        "raid.bwl.common": "titan:8",
+        "raid.onyxia": "titan:8",
+        "raid.aq20.common": "titan:8",
+        "raid.aq40.common": "titan:9",
+        "world.dragons-nightmare": "titan:9",
+        "raid.icc": "titan:10",
+        "raid.ruby": "titan:10",
+        "raid.hyjal": "titan:unknown",
+        "raid.black-temple": "titan:unknown"
+    },
+    "legacyReleases": {
+        "11": "titan:unknown",
+        "12": "titan:unknown",
+        "13": "titan:unknown",
+        "14": "titan:unknown",
+        "15": "titan:unknown",
+        "16": "titan:unknown",
+        "1605": "titan:unknown",
+        "1606": "titan:unknown",
+        "1607": "titan:unknown",
+        "1608": "titan:unknown",
+        "1609": "titan:unknown",
+        "1610": "titan:unknown",
+        "1611": "titan:unknown",
+        "1612": "titan:unknown",
+        "30": "titan:unknown",
+        "31": "titan:unknown",
+        "32": "titan:unknown",
+        "33": "titan:unknown",
+        "17": "titan:unknown",
+        "18": "titan:unknown",
+        "19": "titan:unknown",
+        "20": "titan:unknown",
+        "21": "titan:unknown"
+    },
+    "verificationStatus": "provisional",
+    "coverage": "Only catalog-bound acquisition scopes use independent releases. Unmapped sources preserve legacy u, including existing SoD aliases and subphase statuses. Titan mappings cover reviewed phase 6-10 roadmap scopes; earlier MC/Naxx chronology remains legacy compatibility and is not assigned an inferred Titan unlock."
+}

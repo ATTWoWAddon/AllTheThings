@@ -1,0 +1,92 @@
+{
+    "schema": 1,
+    "id": "era",
+    "baseline": "era:6",
+    "phases": {
+        "era:1": {
+            "order": 1,
+            "name": {
+                "en": "Phase 1",
+                "tw": "\u7b2c 1 \u968e\u6bb5",
+                "cn": "\u7b2c 1 \u9636\u6bb5"
+            },
+            "legacyU": 11
+        },
+        "era:2": {
+            "order": 2,
+            "name": {
+                "en": "Phase 2",
+                "tw": "\u7b2c 2 \u968e\u6bb5",
+                "cn": "\u7b2c 2 \u9636\u6bb5"
+            },
+            "legacyU": 12
+        },
+        "era:3": {
+            "order": 3,
+            "name": {
+                "en": "Phase 3",
+                "tw": "\u7b2c 3 \u968e\u6bb5",
+                "cn": "\u7b2c 3 \u9636\u6bb5"
+            },
+            "legacyU": 13
+        },
+        "era:4": {
+            "order": 4,
+            "name": {
+                "en": "Phase 4",
+                "tw": "\u7b2c 4 \u968e\u6bb5",
+                "cn": "\u7b2c 4 \u9636\u6bb5"
+            },
+            "legacyU": 14
+        },
+        "era:5": {
+            "order": 5,
+            "name": {
+                "en": "Phase 5",
+                "tw": "\u7b2c 5 \u968e\u6bb5",
+                "cn": "\u7b2c 5 \u9636\u6bb5"
+            },
+            "legacyU": 15
+        },
+        "era:6": {
+            "order": 6,
+            "name": {
+                "en": "Phase 6",
+                "tw": "\u7b2c 6 \u968e\u6bb5",
+                "cn": "\u7b2c 6 \u9636\u6bb5"
+            },
+            "legacyU": 16
+        },
+        "era:unknown": {
+            "order": 0,
+            "status": "unknown",
+            "name": {
+                "en": "Unknown progression",
+                "tw": "\u9032\u5ea6\u672a\u77e5",
+                "cn": "\u8fdb\u5ea6\u672a\u77e5"
+            }
+        }
+    },
+    "content": {
+        "raid.mc.legacy40": "era:1",
+        "raid.bwl.common": "era:3",
+        "raid.bwl.legacy40": "era:3",
+        "raid.aq20.common": "era:5",
+        "raid.aq20.legacy20": "era:5",
+        "raid.aq40.common": "era:5",
+        "raid.aq40.legacy40": "era:5",
+        "raid.naxx.classic-common": "era:6",
+        "raid.naxx.legacy40": "era:6",
+        "raid.onyxia": "era:1"
+    },
+    "legacyReleases": {
+        "11": "era:1",
+        "12": "era:2",
+        "13": "era:3",
+        "14": "era:4",
+        "15": "era:5",
+        "16": "era:6"
+    },
+    "verificationStatus": "repository-assumed",
+    "coverage": "Only catalog-bound acquisition scopes use independent releases. Unmapped sources preserve legacy u, including existing SoD aliases and subphase statuses. Titan mappings cover reviewed phase 6-10 roadmap scopes; earlier MC/Naxx chronology remains legacy compatibility and is not assigned an inferred Titan unlock."
+}

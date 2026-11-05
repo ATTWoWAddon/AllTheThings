@@ -1,0 +1,226 @@
+{
+    "schema": 1,
+    "profile": "Titan",
+    "product": "wow_classic_titan",
+    "region": "cn",
+    "build": "3.80.2.70372",
+    "interface": 38002,
+    "clientObservation": "unverified",
+    "inputStatus": "bootstrap",
+    "verificationStatus": "provisional",
+    "inputs": [],
+    "assumptions": {
+        "dataPatch": "Candidate product build from the dated plan; installed-client observation remains pending.",
+        "interface": "Candidate interface 38002; runtime identification accepts the documented 3.80.x interface family and does not infer server progression.",
+        "rawData": "No Titan Wago/ItemDB snapshot is imported. Wago Item endpoint request on 2026-10-20 returned HTTP 403; availability is unknown. Ordinary Wrath raw data is excluded.",
+        "sharedSources": "Shared and standard authored sources are a provisional baseline, not verified Titan drops or rewards."
+    },
+    "progressionCoverage": {
+        "policy": "Independent per-flavor progression profiles; source bodies do not change with the selected baseline.",
+        "status": "provisional-roadmap-bindings",
+        "published": "2026-09-25",
+        "effective": "2026-10-08",
+        "timeZone": "Asia/Shanghai",
+        "observedServerPhase": "unknown",
+        "evidence": [
+            "https://wow.blizzard.cn/news/20260913/43790_1313712.html",
+            "https://wow.blizzard.cn/news/20260924/43790_1315082.html",
+            "https://wow.blizzard.cn/news/trr/20261009/43039_1316105.html"
+        ],
+        "coverage": "The independent Titan profile declares phase keys 1-10 and defaults to titan:6. Reviewed roadmap source bindings cover phases 6-10; this coverage is not a restriction on selectable baselines and does not establish the actual server phase. Unmapped shared sources retain historical authoring as a provisional compatibility baseline and are not thereby assigned a Titan unlock phase. Black Temple and Mount Hyjal remain in the exported data with an explicit unknown release requirement, hidden by default pending reviewed mappings. Individual loot, difficulties, costs, quests, collection APIs, event windows, and unmapped sources remain unverified.",
+        "sourceGates": [
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua",
+                "phase": 6,
+                "instanceIDs": [
+                    759
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/1 Karazhan (Raid).lua",
+                "phase": 7,
+                "instanceIDs": [
+                    745
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/2 Gruul's Lair.lua",
+                "phase": 7,
+                "instanceIDs": [
+                    746
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/3 Magtheridon's Lair.lua",
+                "phase": 7,
+                "instanceIDs": [
+                    747
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+                "phase": 8,
+                "instanceIDs": [
+                    742
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.5 Onyxia's Lair.lua",
+                "phase": 8,
+                "instanceIDs": [
+                    760
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.5 Ruins of Ahn'Qiraj.lua",
+                "phase": 8,
+                "instanceIDs": [
+                    743
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+                "phase": 9,
+                "instanceIDs": [
+                    744
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/8 Icecrown Citadel.lua",
+                "phase": 10,
+                "instanceIDs": [
+                    758
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/9 The Ruby Sanctum.lua",
+                "phase": 10,
+                "instanceIDs": [
+                    761
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire existing instance source; no claim that historical loot/difficulties match Titan.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning."
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/0.9 World Bosses.lua",
+                "phase": 9,
+                "npcIDs": [
+                    14887,
+                    14888,
+                    14889,
+                    14890
+                ],
+                "evidence": [
+                    "https://wow.blizzard.cn/news/20260913/43790_1313712.html"
+                ],
+                "providerCount": 1,
+                "verificationStatus": "unverified-records",
+                "scope": "Entire Dragons of Nightmare header subtree, including shared rewards and quests; other world bosses and the separate SoD Nightmare Grove retain existing authoring.",
+                "policy": "Retained source with runtime release requirement; no build-time phase pruning.",
+                "headerID": -74
+            }
+        ],
+        "historicalCallbacks": {
+            "path": ".contrib/.db/standard/01 - Dungeons Raids/03 - Wrath of the Lich King/5 Ulduar.lua",
+            "achievementIDs": [
+                17340,
+                17341
+            ],
+            "copies": 6,
+            "policy": "Omit historical Wrath phase-three availability callbacks from Titan; preserve inherited authored records without asserting Titan achievement availability.",
+            "verificationStatus": "unverified-records"
+        },
+        "defaultBaseline": "titan:6",
+        "reviewedRoadmapPhases": [
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "unknownReleaseSources": [
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/6 The Battle for Mount Hyjal.lua",
+                "status": "retained-unknown-default-hidden",
+                "verificationStatus": "unverified",
+                "reason": "Outside the reviewed phase 6-10 roadmap; historical expansion order does not establish Titan release order.",
+                "releasePhase": "titan:unknown"
+            },
+            {
+                "path": ".contrib/.db/standard/01 - Dungeons Raids/02 - Burning Crusade/7 The Black Temple.lua",
+                "status": "retained-unknown-default-hidden",
+                "verificationStatus": "unverified",
+                "reason": "Outside the reviewed phase 6-10 roadmap; historical expansion order does not establish Titan release order.",
+                "releasePhase": "titan:unknown"
+            }
+        ]
+    }
+}

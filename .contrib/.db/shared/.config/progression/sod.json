@@ -1,0 +1,114 @@
+{
+    "schema": 1,
+    "id": "sod",
+    "baseline": "sod:8",
+    "phases": {
+        "sod:1": {
+            "order": 1,
+            "name": {
+                "en": "Phase 1",
+                "tw": "\u7b2c 1 \u968e\u6bb5",
+                "cn": "\u7b2c 1 \u9636\u6bb5"
+            },
+            "legacyU": 1605
+        },
+        "sod:2": {
+            "order": 2,
+            "name": {
+                "en": "Phase 2",
+                "tw": "\u7b2c 2 \u968e\u6bb5",
+                "cn": "\u7b2c 2 \u9636\u6bb5"
+            },
+            "legacyU": 1606
+        },
+        "sod:3": {
+            "order": 3,
+            "name": {
+                "en": "Phase 3",
+                "tw": "\u7b2c 3 \u968e\u6bb5",
+                "cn": "\u7b2c 3 \u9636\u6bb5"
+            },
+            "legacyU": 1607
+        },
+        "sod:4": {
+            "order": 4,
+            "name": {
+                "en": "Phase 4",
+                "tw": "\u7b2c 4 \u968e\u6bb5",
+                "cn": "\u7b2c 4 \u9636\u6bb5"
+            },
+            "legacyU": 1608
+        },
+        "sod:5": {
+            "order": 5,
+            "name": {
+                "en": "Phase 5",
+                "tw": "\u7b2c 5 \u968e\u6bb5",
+                "cn": "\u7b2c 5 \u9636\u6bb5"
+            },
+            "legacyU": 1609
+        },
+        "sod:6": {
+            "order": 6,
+            "name": {
+                "en": "Phase 6",
+                "tw": "\u7b2c 6 \u968e\u6bb5",
+                "cn": "\u7b2c 6 \u9636\u6bb5"
+            },
+            "legacyU": 1610
+        },
+        "sod:7": {
+            "order": 7,
+            "name": {
+                "en": "Phase 7",
+                "tw": "\u7b2c 7 \u968e\u6bb5",
+                "cn": "\u7b2c 7 \u9636\u6bb5"
+            },
+            "legacyU": 1611
+        },
+        "sod:8": {
+            "order": 8,
+            "name": {
+                "en": "Phase 8",
+                "tw": "\u7b2c 8 \u968e\u6bb5",
+                "cn": "\u7b2c 8 \u9636\u6bb5"
+            },
+            "legacyU": 1612
+        },
+        "sod:unknown": {
+            "order": 0,
+            "status": "unknown",
+            "name": {
+                "en": "Unknown progression",
+                "tw": "\u9032\u5ea6\u672a\u77e5",
+                "cn": "\u8fdb\u5ea6\u672a\u77e5"
+            }
+        }
+    },
+    "content": {
+        "raid.mc.sod20": "sod:4",
+        "raid.bwl.common": "sod:5",
+        "raid.bwl.sod20": "sod:5",
+        "raid.aq20.common": "sod:6",
+        "raid.aq20.sod20": "sod:6",
+        "raid.aq40.common": "sod:6",
+        "raid.aq40.sod20": "sod:6",
+        "raid.naxx.classic-common": "sod:7",
+        "raid.naxx.sod20": "sod:7",
+        "raid.mc.sod.sulfuras": "sod:5",
+        "raid.mc.sod.lodestone": "sod:6",
+        "raid.mc.sod.globe": "sod:6"
+    },
+    "legacyReleases": {
+        "1605": "sod:1",
+        "1606": "sod:2",
+        "1607": "sod:3",
+        "1608": "sod:4",
+        "1609": "sod:5",
+        "1610": "sod:6",
+        "1611": "sod:7",
+        "1612": "sod:8"
+    },
+    "verificationStatus": "repository-assumed",
+    "coverage": "Only catalog-bound acquisition scopes use independent releases. Unmapped sources preserve legacy u, including existing SoD aliases and subphase statuses. Titan mappings cover reviewed phase 6-10 roadmap scopes; earlier MC/Naxx chronology remains legacy compatibility and is not assigned an inferred Titan unlock."
+}
