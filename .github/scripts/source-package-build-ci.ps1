@@ -58,6 +58,7 @@ try {
   <PropertyGroup>
     <OutputPath>$(OutDir)</OutputPath>
     <DocumentationFile Condition="'$(DocumentationFile)' != ''">$(OutDir)$(AssemblyName).xml</DocumentationFile>
+    <UseCommonOutputDirectory Condition="'$(UsingMicrosoftNETSdk)' == 'true'">false</UseCommonOutputDirectory>
   </PropertyGroup>
 </Project>
 '@ | Set-Content -Encoding utf8 (Join-Path $source 'Directory.Build.targets')
@@ -105,6 +106,62 @@ try {
         $label = "solution-$configuration" -replace '[^a-zA-Z0-9-]', '-'
         Invoke-Build (Join-Path $source 'All The Tools.sln') $configuration 'x64' $label
     }
+
+    # Verify the final Release folders, including dependencies copied after solution builds.
+    $release = Join-Path $env:RUNNER_TEMP 'att-source-output/Release'
+    $required = @(
+        'Database/Database.dll',
+        'ATT Sync Tool/ATT Sync Tool.exe', 'ATT Sync Tool/ATT Sync Tool.exe.config', 'ATT Sync Tool/Database.dll',
+        'Item Database Consolidator/Item Database Consolidator.exe', 'Item Database Consolidator/Item Database Consolidator.exe.config'
+    )
+    foreach ($name in 'Skill Level Requirements', 'AssetDB Builder', 'IconID Converter') {
+        foreach ($extension in '.exe', '.dll', '.deps.json', '.runtimeconfig.json') {
+            $required += "$name/$name$extension"
+        }
+    }
+    foreach ($relativePath in $required) {
+        $path = Join-Path $release $relativePath
+        if (!(Test-Path -LiteralPath $path -PathType Leaf)) { throw "Missing Release file: $path" }
+    }
+    $database = Join-Path $release 'Database/Database.dll'
+    $syncDatabase = Join-Path $release 'ATT Sync Tool/Database.dll'
+    if ((Get-FileHash $database -Algorithm SHA256).Hash -ne (Get-FileHash $syncDatabase -Algorithm SHA256).Hash) {
+        throw 'The Database library in ATT Sync Tool differs from the Release Database output.'
+    }
+    foreach ($project in $projects | Where-Object { $_.KeraLua }) {
+        $name = [System.IO.Path]::GetFileNameWithoutExtension($project.Path)
+        $output = Join-Path $release $name
+        Test-RestoredFile (Join-Path $output 'KeraLua.dll') "keralua/$($project.KeraLua)/lib/net46/KeraLua.dll"
+        Test-RestoredFile (Join-Path $output 'NLua.dll') "nlua/$($project.NLua)/lib/net46/NLua.dll"
+        Test-RestoredFile (Join-Path $output 'lua54.dll') "keralua/$($project.KeraLua)/runtimes/win-x64/native/lua54.dll"
+    }
+    Test-RestoredFile (Join-Path $release 'Skill Level Requirements/Newtonsoft.Json.dll') 'newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll'
+
+    @'
+ATT source tools - Release build
+
+Each tool is in its own folder with its build dependencies. Keep the folders
+separate: the tools use different versions of NLua, KeraLua, and native Lua.
+Database is a library; ATT Sync Tool also has its own copy of Database.dll.
+
+ATT Sync Tool and Item Database Consolidator target .NET Framework 4.7.2.
+Skill Level Requirements, AssetDB Builder, and IconID Converter target .NET 10
+and need the .NET 10 runtime installed. These are Windows x64 build outputs.
+
+Several tools use paths relative to the current working directory and require
+the ATT repository and its input data; those are not included in this archive.
+Use the repository's .contrib/.tools directory as the working directory when
+running tools that expect it, while keeping the executable and dependencies
+in their extracted folder. Build and output checks were run; the tools were
+not executed as part of this CI run.
+IconID Converter scans and may modify files under the repository.
+'@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
+    $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
+        $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
+        "$((Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash)  $relativePath"
+    }
+    $manifest | Set-Content -Encoding utf8 (Join-Path $release 'SHA256SUMS.txt')
+    Copy-Item (Join-Path $release 'SHA256SUMS.txt') (Join-Path $evidence 'release-SHA256SUMS.txt')
     'All six projects built in Debug and Release; all seven solution configurations built with x64 solution mapping.' >> $env:GITHUB_STEP_SUMMARY
 } catch {
     $failure = $_.ToString()

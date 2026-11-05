@@ -23,6 +23,12 @@ jobs:
       - name: Build source projects and solution
         shell: pwsh
         run: ./.github/scripts/source-package-build-ci.ps1
+      - name: Upload Release tools
+        uses: actions/upload-artifact@v7
+        with:
+          name: source-tools-release-${{ github.sha }}
+          path: ${{ runner.temp }}\att-source-output\Release\
+          if-no-files-found: error
       - name: Upload build evidence
         if: always()
         uses: actions/upload-artifact@v7
