@@ -14,8 +14,6 @@ permissions:
 jobs:
   build:
     runs-on: windows-2025-vs2026
-    env:
-      NUGET_PACKAGES: ${{ runner.temp }}\att-source-nuget
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-dotnet@v6

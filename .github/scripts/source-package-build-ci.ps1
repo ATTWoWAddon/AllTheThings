@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $PSNativeCommandUseErrorActionPreference = $false
+$env:NUGET_PACKAGES = Join-Path $env:RUNNER_TEMP 'att-source-nuget'
 $source = Join-Path $env:GITHUB_WORKSPACE '.contrib/.source'
 $evidence = Join-Path $env:RUNNER_TEMP 'att-source-evidence'
 New-Item -ItemType Directory -Force $evidence | Out-Null
