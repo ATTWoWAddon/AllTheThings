@@ -4,7 +4,7 @@
 
 The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a975132e9`. The [unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee) is reference material, not a dependency or implementation of this design. Its positive-only `releasePhases`/independent-checkbox proposal is superseded here. Research cutoff: 2026-11-05. The complete declaration/configuration inventory was also compared with master `9dba6e6d3faa901ae63fe6f0c744cc76415e2b2c`; the 14 relevant source blobs are unchanged.
 
-**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2c explains how this replaces schedule-only `SEASON_OF_DISCOVERY` pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
+**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2d gives the complete temporary control file for independently choosing each source cohort's migration stage; section 2c explains how this replaces schedule-only `SEASON_OF_DISCOVERY` pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
 
 ## 1. Required destination and four stages
 
@@ -13,14 +13,14 @@ The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a97
 | Stage | Authored source | Official output authority | Advancement gate |
 | --- | --- | --- | --- |
 | **1. Existing behavior** | Original `applyclassicphase`, direct/propagated phase values, templates, and callbacks. | Existing legacy Parser/runtime. | Inventory every producer and consumer; freeze inputs, tools, build contexts, outputs, and legacy settings vectors for comparison. |
-| **2.1. Lua first** | Add valid `progressionKey` / `flavors` annotations; keep all original timing and guards. JSON may be absent. | **Legacy only.** Strip new fields; do not apply new flavor/timing filters. | Legacy byte equality, valid annotations, no leaks and a pending-key report. Expected missing JSON/policies do not block the legacy build or commit. |
-| **2.2. JSON next** | Write/select the external policy files and resolve their mappings in shadow validation. | **Legacy only.** Same official output as P1/P2.1. | Explicitly selected files must parse and match their identities; shadow coverage and evidence must be complete before P3 promotion. |
+| **2.1. Lua first** | Add valid `progressionKey` / `flavors` annotations; keep all original timing and guards. JSON may be absent. | **Legacy only.** Strip new fields; do not apply new flavor/timing filters. | Owned legacy-output byte equality, valid annotations, no leaks and a pending-key report. Expected missing JSON/policies do not block the legacy build or commit. |
+| **2.2. JSON next** | Write/select the external policy files and resolve their mappings in shadow validation. | **Legacy only.** Same owned legacy output as P1/P2.1. | Explicitly selected files must parse and match their identities; shadow coverage and evidence must be complete before P3 promotion. |
 | **3. Progress output; legacy golden** | Legacy expressions remain solely for the separate golden compilation. | **Progress only.** Production must not infer, repair, or default any policy from legacy phase values or phase-driven callbacks. | Independent legacy/progress comparison, all boundary fixtures, build eligibility, complete coverage, and authority-isolation tests pass. New capabilities unsupported by legacy have separate reviewed expected results. |
-| **4. Remove legacy authoring** | Remove `applyclassicphase`, direct phase assignments, obsolete phase-writing helpers/parameters, and legacy-only callback branches. Keep `progressionKey` and unrelated source conditions. | Progress only; old golden survives as pinned test evidence, not a second authoring path. | Full inventory is resolved, no live legacy writer/read dependency remains, and strict validation prevents reintroduction. |
+| **4. Remove legacy authoring** | Remove this cohort's `applyclassicphase`, direct phase assignments, retired phase parameters and legacy-only callback branches. Keep `progressionKey` and unrelated source conditions. | Progress only for this cohort; its old golden survives as pinned test evidence. | The cohort's inventory/dependencies are resolved and strict validation prevents reintroduction. Shared helper definitions and physical source writers remain until their last supported legacy consumer/context retires. |
 
-**P1–P4 remain four main stages; P2.1/P2.2 split only the authoring sequence within P2.** No `migrationStage` or equivalent policy property is added.
+**P1–P4 remain four main stages; P2.1/P2.2 split only the authoring sequence within P2.** Stage selection lives only in the temporary migration manifest, never in the permanent availability policy or an authored timing field. `P2` is an umbrella term, not a valid manifest stage value.
 
-The stages apply to the complete migration, not merely the first raids. A pilot can exercise stages 2–3 in isolated validation, but cannot justify removing a globally used helper. Cut over a complete propagation chain, including shared helpers/caches and nested sources; do not publish a mixture that silently falls back to legacy for uncovered content.
+**Stages are selected independently for named source cohorts, not once for the whole database.** A cohort is one complete source file or an explicit group of dependent files whose propagation chain can be isolated. BWL may remain P2.1 while another raid is P4 in the same artifact. The table describes each cohort's authority; section 2d supplies the temporary control file. This is an explicit mixed migration, never a fallback chosen because a policy is missing. A P3/P4 request that fails its gates is an error, not an automatic return to P1. Retiring a cohort's old authoring does not authorize deleting helpers still used by another cohort.
 
 ### Blackwing Lair through P1–P4
 
@@ -66,7 +66,7 @@ progressionScopes = {
 -- guards. Section 2b shows the concrete final source and all four policies.
 ```
 
-P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from official legacy output and keep the old guards/authority. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old writer is suppressed before normalization/merge in the production process; the isolated golden retains the original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
+P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from that cohort's official legacy output and keep its old guards/authority; another cohort may already contribute progress output to the same artifact. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old timing writer is suppressed before normalization/merge in the isolated progress projection for that cohort; legacy-owned cohorts and the independent golden retain their original behavior. In P4 remove those retired writers, not the raid data, intrinsic timelines, or independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
 
 
 ## 2. What humans maintain
@@ -87,7 +87,7 @@ Keep **what can be obtained and from which actual source** in Lua. Place the sch
 | Transitional legacy inputs | `phase`, `applyclassicphase`, numeric recipe-phase parameters, and phase-driven callback code exist only as specified by stages 1–3. They are retired in stage 4. |
 | Generated acquisition routes | `progressionScopes`: an array of namespaced policy keys. Parser creates it; authors do not write it directly. |
 | Generated `LocalizationDB.lua` | `app.ProgressionProfile`: compiled ordered milestones, scope windows, and view defaults. No positive-only `releasePhases` schema is introduced. |
-| Saved settings | One saved `viewPhase` under the `(flavorId, profileId)` pair, plus inspection controls. Existing numeric SavedVariables are retained as legacy history/raw unavailable settings, not interpreted as a chronology. |
+| Saved settings | One saved `viewPhase` under the `(flavorId, profileId)` pair controls progress-owned routes. Existing numeric phase checkboxes still control legacy-owned routes/callbacks; raw unavailable settings stay independent. Neither set is inferred from or continuously aliased to the other. |
 
 Both input fields are removed before addon export; neither may leak into output. A neutral hint may pass through a source-generation sidecar before becoming an actual acquisition annotation; it must not become a global rule that rewrites every same-ID item/NPC source.
 
@@ -118,9 +118,9 @@ The concrete profile paths appear in section 9. Section 11 now plans the complet
 
 ### One selected context, one artifact, one profile
 
-A compilation context is the fully resolved build/source configuration plus explicit `flavorId` and `profileId`. Keep one profile in each generated artifact. A build target may be invoked in several reviewed contexts, and one flavor/profile may span several targets. This is an explicit relationship in the existing configuration/workflow inputs, not a new discovery registry or automatic Cartesian product.
+For progress/shadow processing, a compilation context is the fully resolved build/source configuration plus explicit `flavorId` and `profileId`. A mixed artifact has at most one active progress profile for that context; it may also contain explicitly legacy-owned cohorts. Legacy-only P1/P2.1 output needs no progress profile. A build target may be invoked in several reviewed contexts, and one flavor/profile may span several targets. This is an explicit relationship in the existing configuration/workflow inputs, not a new discovery registry or automatic Cartesian product.
 
-The following selection inputs are introduced for P2.2 shadow policy validation and required for P3 progress authority. P2.1 does not require them or an empty placeholder profile:
+The temporary `ProgressionMigration` selection is available at P2.1 to assign source ownership/stages. `ProgressionFlavor`, `ProgressionProfile` and `ProgressionLegacyEligibility` are introduced for P2.2 shadow validation and required for P3/P4 progress authority. A P2.1 cohort does not require policy selection or an empty placeholder profile, even when another cohort in the artifact selects one:
 
 | Existing configuration/workflow input | Required contract |
 | --- | --- |
@@ -128,6 +128,7 @@ The following selection inputs are introduced for P2.2 shadow policy validation 
 | `ProgressionFlavor` | Explicit expected `flavorId`. Must exactly match the selected profile's `flavorId`. |
 | `ProgressionProfile` | Explicit path to one profile file. Its `id` is the selected `profileId`; do not glob a directory or guess by expansion. |
 | `ProgressionLegacyEligibility` | Explicit `none` or `preserve-reviewed`. The latter opts this exact context into its independently reviewed legacy eligibility rules; it is not a capability claim for other flavors/targets. |
+| `ProgressionMigration` | Explicit path to the temporary manifest in section 2d. It chooses cohort ownership/stages, not windows or runtime profile identity. No manifest means frozen P1 authority, never implicit progress activation. |
 
 For example, a synthetic configuration overlay may select `ProgressionFlavor = "example-a"` and `.contrib/.db/shared/.config/progression/example-a/main.json`. Another invocation of the same base client target may select `example-b/main.json`, with its own reviewed source tags and requirements. Existing configuration composition performs that source selection; the schedule file does not manufacture a loot variant.
 
@@ -142,13 +143,13 @@ A flavor/profile can continue across expansion/configuration changes without res
 
 ### Compilation errors and runtime uncertainty are different
 
-P2.1 legacy compilation does not fail merely because JSON or new profile selection is absent; it validates/strips annotations and reports pending keys. In P2.2, an explicitly selected missing file, malformed JSON, identity mismatch, multiple profiles or ambiguous shadow binding fails policy validation; it is not silently treated as P2.1 pending. P3 compilation requires the complete reviewed selection, eligibility and coverage and fails if any is missing. These shadow failures never change P2 official legacy bytes. Each context has isolated output/staging directories and a manifest naming its flavor/profile, resolved configuration, tags, build values, source variant, and hashes. Reusing a target's old output directory for two contexts must not overwrite one artifact with the other.
+P2.1 legacy compilation does not fail merely because JSON or new profile selection is absent; it validates/strips annotations and reports pending keys. In P2.2, an explicitly selected missing file, malformed JSON, identity mismatch, multiple profiles or ambiguous shadow binding fails policy validation; it is not silently treated as P2.1 pending. Each requested P3/P4 cohort requires the complete reviewed selection, its own eligibility and coverage, and fails if any is missing. Pending/unknown P2 shadow entries do not prevent an unrelated validated P3/P4 cohort from producing output; malformed explicitly selected shared files are still validation failures. These shadow failures never change a P2 cohort's official legacy projection. Each context has isolated output/staging directories and a manifest naming its flavor/profile, resolved configuration, tags, build values, source variant, and hashes. Reusing a target's old output directory for two contexts must not overwrite one artifact with the other.
 
 At runtime, load requirements must positively and uniquely identify the complete supported context, including profile applicability when one flavor has several realm/region/season policies. A verified flavor match alone cannot choose between two applicable profiles. Existing `DataRequirements` are retained but are not automatically sufficient evidence; where a trusted discriminator is missing, that context remains unsupported until evidence is supplied. Do not invent detection values or infer identity from an expansion, build number, config basename, or a not-other-flavor predicate.
 
-The validated context gate must protect **both** its data and any write of `app.ProgressionProfile`, including `LocalizationDB.lua`. Complete unique-context validation before any profile assignment or variant-data merge; unknown/conflicting selection writes neither and leaves no partially selected progression state. Co-loaded XML files may not overwrite a different flavor/profile singleton. Exactly one complete context activates; no matching trusted context or conflicting matches produce a visible unsupported/ambiguity diagnostic and keep independent progression inactive. They do not choose the first/last profile, silently use a default, or return to legacy timing authority. Repeated fragments of the same context must agree on its profile identity and policy fingerprint.
+The validated context gate must protect **both** its data and any write of `app.ProgressionProfile`, including `LocalizationDB.lua`. Complete unique-context validation before any profile assignment or variant-data merge; unknown/conflicting selection writes neither and leaves no partially selected progression state. Co-loaded XML files may not overwrite a different flavor/profile singleton. Exactly one complete context activates; no matching trusted context or conflicting matches produce a visible unsupported/ambiguity diagnostic and keep independent progression inactive. They do not choose the first/last profile, silently use a default, or change a progress-owned route back to legacy authority. Legacy-owned routes are not a substitute for failed progress-owned routes; a blocked mixed artifact is reported as unsupported, not as a complete fallback dataset. Repeated fragments of the same context must agree on its profile identity and policy fingerprint.
 
-These activation gates are required when progress becomes production authority in stage 3. In P2.1 collect source locations/pending keys without requiring policy selection; in P2.2 validate explicitly selected contexts in shadow. Neither changes official legacy loading predicates, outputs or controls; the byte-equality gate remains in force. The profile example below is the shape assigned only after its matching context has been validated, not an unguarded global assignment.
+These activation gates are required as soon as any cohort becomes production progress authority in stage 3; they do not reinterpret the explicitly retained legacy routes. In P2.1 collect source locations/pending keys without requiring policy selection; in P2.2 validate explicitly selected contexts in shadow. Neither changes that cohort's official legacy loading predicates, owned output or controls; its isolated byte-equality gate remains in force even when another cohort uses P4. The profile example below is the shape assigned only after its matching context has been validated, not an unguarded global assignment.
 
 ## 2b. Blackwing Lair in progression, Anniversary, Era, and SoD
 
@@ -207,9 +208,9 @@ These facts come from [the existing BWL source](https://github.com/ATTWoWAddon/A
 | Migration stage | BWL Lua and policies | Official generated output | Four-flavor comparison and next gate |
 | --- | --- | --- | --- |
 | **P1: freeze the existing raid** | Preserve the whole-instance `PHASE_THREE`, later book `PHASE_FIVE`, SoD branch/quest `SOD_PHASE_FIVE`, original/SoD timelines and all guards. Capture each reviewed context's actual alias results. | Existing legacy source `phase`/conditions; no new profile or `progressionScopes`. | Pin four independent source/config/runtime baselines. An unverified progression/Anniversary Vanilla target is a missing baseline, not permission to run the current TBC config and call it Vanilla. |
-| **P2.1: annotate Lua first** | Add common, later-book and SoD-child keys and the SoD `flavors` annotation. Keep every P1 expression/guard; JSON may be absent. | **Exactly P1 legacy bytes**; strip new fields, with no new applicability/timing filter. | Validate annotations/no leaks and report pending keys with source locations. Expected absent policy does not block this legacy build/commit. |
-| **P2.2: write JSON next** | Add/select the four full JSON documents below and validate their mapping in shadow. | **Still P1 legacy bytes**; no policy controls official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
-| **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. Production suppresses all old phase writers and uses only the explicit selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
+| **P2.1: annotate Lua first** | Add common, later-book and SoD-child keys and the SoD `flavors` annotation. Keep every P1 expression/guard; JSON may be absent. | **Exactly BWL's isolated P1-owned legacy bytes**; strip new fields, with no new applicability/timing filter. | Validate annotations/no leaks and report pending keys with source locations. Expected absent policy does not block this legacy build/commit. |
+| **P2.2: write JSON next** | Add/select the four full JSON documents below and validate their mapping in shadow. | **Still BWL's P1-owned legacy bytes**; no policy controls its official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
+| **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. The BWL progress projection suppresses its old phase writers and uses only the explicitly selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
 | **P4: remove the old path** | Delete the outer/nested phase writers and phase-only aliases' authoring use after complete migration. Keep actual data, intrinsic timeline predicates and justified construction guards. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | No new direct phase writes; no source/cache contamination; no same-ID loot union. Prove redundant repeated SoD phase-5 quest wrappers may inherit their parent before removing them. |
 
 The four profiles below are **complete valid examples for the shown scopes, not complete production files**: two shared keys and the SoD child key where applicable. The book deliberately uses `status = unknown` and an empty window list. Existing `PHASE_FIVE` (and SoD's phase-6 alias, whose declaration is marked TODO) does not prove a particular War Effort or scepter-quest opening batch.
@@ -218,7 +219,7 @@ The four profiles below are **complete valid examples for the shown scopes, not 
 
 ### P2.1: add the Lua keys before writing JSON
 
-P2.1 does **not** require any of the files below. Add the three BWL source keys and the SoD subtree's `flavors` annotation first, while keeping every legacy expression and guard. The legacy build strips these input fields, does not apply a new flavor/timing filter, and keeps its output byte-identical. A missing profile or unmapped key produces a pending-policy report, not a legacy-build or commit failure.
+P2.1 does **not** require any of the files below. Add the three BWL source keys and the SoD subtree's `flavors` annotation first, while keeping every legacy expression and guard. The BWL legacy projection strips these input fields, does not apply a new flavor/timing filter, and keeps its owned output byte-identical; another cohort may already use progress output. A missing profile or unmapped key produces a pending-policy report, not a legacy-build or commit failure.
 
 For each pending key, report its source location, enclosing source scope/variant, existing build context and whether profile selection is still pending. For this example the list includes `raid.bwl.common`, `raid.bwl.draconic-for-dummies`, and `raid.bwl.sod20` where that source exists. Do not guess windows from the old phase or create an empty/unphased placeholder file. Malformed keys, invalid `flavors` arrays/placement, and leaked input fields remain errors even without JSON. Tests at this step cover valid annotation handling, legacy byte equality, no leaks and the pending list.
 
@@ -936,13 +937,24 @@ For actual BWL, edit the selected flavor's `content` entry only after evidence r
 
 The following are **overlay excerpts**, not runnable complete configurations. Existing composition must first select a reviewed source/build context and safe output directory. The example adds no real client discriminator. In particular, `.contrib/.db/standard/.config/classic/02 - TBC.config` contains `CLASSIC_ANNIVERSARY`; it is not the historical Vanilla baseline for either of the first two examples.
 
+Use the complete manifest shape in section 2d with these **BWL authoring states**. Its separate BWL P2.1 / ZG P4 demonstration is an intentionally unready request; do not leave ZG at P4 while trying these BWL-only policy examples.
+
+| BWL authoring step | Exact manifest settings | New configuration selection |
+| --- | --- | --- |
+| P2.1: Lua first | `blackwing-lair.stage = "P2.1"`; set `zul-gurub.stage = "P1"`, or omit that cohort only while its source remains in the frozen P1 baseline. | Set only `ProgressionMigration` to `.contrib/progression/migration.json`; policy selection is not required. |
+| P2.2: JSON next | Change `blackwing-lair.stage` to `"P2.2"`; keep ZG P1 and all unrelated legacy sources at their reviewed stages. | Select the matching four-property overlay below and its complete BWL policy file. Official BWL still uses the legacy projection. |
+| Later BWL promotion | Request P3/P4 only after BWL's book/coverage/golden and cross-context retirement gates pass. | Keep the approved policy; changing the stage never fills a missing mapping. |
+
+The manifest is selected for the resolved context. Reusing the same example path in four invocations does not authorize incompatible deletion of a shared Lua writer; the cross-context retirement rule in section 2d still applies. Different explicit contexts can select separate reviewed manifest paths if their stages differ.
+
 **`.contrib/.db/standard/.config/classic/contexts/progression-vanilla.config`** — NEW proposed overlay; historical progression Vanilla source/config snapshot and positive applicability still required.
 
 ```json
 {
     "ProgressionFlavor": "progression",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/progression/main.json",
-    "ProgressionLegacyEligibility": "none"
+    "ProgressionLegacyEligibility": "none",
+    "ProgressionMigration": ".contrib/progression/migration.json"
 }
 ```
 
@@ -952,7 +964,8 @@ The following are **overlay excerpts**, not runnable complete configurations. Ex
 {
     "ProgressionFlavor": "anniversary",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/anniversary/main.json",
-    "ProgressionLegacyEligibility": "none"
+    "ProgressionLegacyEligibility": "none",
+    "ProgressionMigration": ".contrib/progression/migration.json"
 }
 ```
 
@@ -962,7 +975,8 @@ The following are **overlay excerpts**, not runnable complete configurations. Ex
 {
     "ProgressionFlavor": "era",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/era/main.json",
-    "ProgressionLegacyEligibility": "none"
+    "ProgressionLegacyEligibility": "none",
+    "ProgressionMigration": ".contrib/progression/migration.json"
 }
 ```
 
@@ -972,11 +986,12 @@ The following are **overlay excerpts**, not runnable complete configurations. Ex
 {
     "ProgressionFlavor": "sod",
     "ProgressionProfile": ".contrib/.db/shared/.config/progression/sod/main.json",
-    "ProgressionLegacyEligibility": "none"
+    "ProgressionLegacyEligibility": "none",
+    "ProgressionMigration": ".contrib/progression/migration.json"
 }
 ```
 
-`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2.1 has no required new selection; P2.2 uses these excerpts only for shadow validation. Both retain the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
+`none` requests no native-phase eligibility rule in these small examples; it is not permission to remove existing real source/client restrictions. Each actual context must select its reviewed eligibility mode, isolate its output directory, and uniquely guard both profile and data before P3 activation. P2.1 selects its migration manifest without requiring a policy; P2.2 uses the four-property excerpts for shadow validation. Both retain the unchanged official legacy selection. This example deliberately supplies no guessed command that would treat an incomplete overlay as a validated build.
 
 ### P4 target source shape: preserve the actual variants
 
@@ -1038,7 +1053,7 @@ The remaining `SEASON_OF_DISCOVERY` conditions shown here preserve asymmetric co
 
 ### Generated linkage and visible behavior in each flavor
 
-For each selected artifact, Parser emits one profile whose `flavorId`/`id` match its configuration, retains the profile-local phase keys above, and prefixes every `content` lookup with `flavorId:main:`. An original Nefarian/head occurrence inherits the common scope. The later book inherits common **and** book scopes. The SoD replacement inherits common **and** SoD scopes; the same NPC/head ID never substitutes for its occurrence ancestry.
+For the isolated BWL progress candidate below, Parser emits one profile whose `flavorId`/`id` match its configuration, retains the profile-local phase keys above, and prefixes each exported `content` lookup with `flavorId:main:`. In a mixed production artifact, only keys used by its validated progress-owned cohorts are exported; BWL shadow-only/unknown policies are not exported just because they occur in the selected JSON. An original Nefarian/head occurrence inherits the common scope. The later book inherits common **and** book scopes. The SoD replacement inherits common **and** SoD scopes; the same NPC/head ID never substitutes for its occurrence ancestry.
 
 | Artifact/profile | Original Nefarian scope | Later book's additional scope | SoD replacement scope |
 | --- | --- | --- | --- |
@@ -1105,7 +1120,7 @@ The goal is **zero schedule-only `SEASON_OF_DISCOVERY` pragmas in migrated produ
 
 `flavors = { "sod" }` belongs on a complete acquisition subtree. Omission means shared applicability within already validated selected contexts. An explicit array must contain known flavor IDs, cannot be empty, and rejects duplicates. Ancestor and child allowlists intersect: a child cannot reopen an excluded parent. The scheduling key remains independent; two flavors may use the same neutral key with different policies, and two same-ID sources may have different keys/data. This field does not choose a profile, a realm, a date, or a loot replacement.
 
-**Required P3 production ordering (P2.2 shadow only):** validate the output context → safely construct the selected source trees → apply inherited flavor applicability → bind only retained occurrences to policy/coverage → merge/coalesce/index occurrences → export without either input field. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
+**Required progress-projection ordering (P3/P4 production; P2.2 shadow only):** resolve context and source ownership before Lua execution → construct only that projection's permitted sources in isolated state → apply inherited flavor applicability → bind retained occurrences to owner-specific policy/coverage → select each owned occurrence once → merge/coalesce/index complete routes → export without either input field. Section 2d defines the separate legacy projection; a P2.1 cohort does not use this new applicability/timing path merely because a P4 cohort is present. An unknown context is an error, not permission to include every shared/variant node. **Construction must also isolate side effects:** Lua evaluation precedes the merge hook, and helpers can already write global ItemDB/RecipeDB records, headers, events, or caches. An excluded variant may not mutate any of those shared stores. Such entrypoints require context/import/preprocessor selection *before execution*, or isolated staging that commits only retained writes. Post-evaluation `flavors` pruning cannot undo contamination; retain the technical guard until that safety is proven. Mixed containers retain shared children and the matching variant children. Excluding a source cannot erase a separately retained acquisition route for the same item.
 
 ```lua
 -- Illustrative complete-group variant, with synthetic IDs.
@@ -1136,9 +1151,109 @@ The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` s
 
 The conservative syntax triage covers all 1,664 groups: 2 phase-metadata/alias blocks, 327 field patches, 1,263 data/structure blocks, 35 program/callback blocks, 21 constructor/wrapper fragments, 4 closing fragments, and 12 string/comment/empty blocks. These are syntax categories, **not a semantic count of removable timing guards**. Of the total, 38 occur in shared preload, 10 in global ItemDB/RecipeDB sources, and 1,616 in authored acquisition trees. Input acquisition fields cannot be applied blindly to preload/global-record code. Eleven groups are implied true and four false by enclosing conditions; even those require branch-preserving review. The implementation's temporary report retains all 131 file locations and exact block spans for audit.
 
-P2.1 validates/strips annotations and records pending keys; it runs no new applicability/timing filter. P2.2 may shadow-evaluate selected applicability/policies. Both keep official legacy bytes identical. Stage 3 activates reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
+P2.1 validates/strips annotations and records pending keys; it runs no new applicability/timing filter. P2.2 may shadow-evaluate selected applicability/policies. Both keep their owned legacy-projection bytes identical to the frozen baseline. Stage 3 activates that cohort's reviewed source selection and timing together, with independently pinned legacy output and source-identity checks. Stage 4 removes timing pragmas/writers after their full propagation chains are covered. Retail gets no phase policy: shared-source cleanup must preserve its existing outputs and retain guards wherever equivalent safe source selection has not been established.
 
 Acceptance includes zero remaining **schedule-only** `SEASON_OF_DISCOVERY` directives in the completed cohort; every remaining `SEASON_OF_DISCOVERY` directive has a justified structural/technical exception; no `flavors`/`progressionKey` leaks; no excluded-source merge or pre-merge cache influence (poison an excluded same-ID variant and prove retained ItemDB/RecipeDB/header/event/output values are unchanged); no invented source data; and byte/semantic regression checks for all affected contexts, including unchanged Retail.
+
+## 2d. Choose P independently for each source cohort
+
+**Edit one temporary control file to say which raid is at which migration stage.** A scheduling JSON answers *when content opens*; this manifest answers *which implementation currently owns that source*. It is neither a second scheduling catalog nor an addon setting. It is removed only after the entire supported migration has retired the legacy path.
+
+Proposed path: **`.contrib/progression/migration.json`**. This is a complete control-file example, with BWL at P2.1 and Zul'Gurub requested at P4:
+
+```json
+{
+    "schema": 1,
+    "defaultStage": "P1",
+    "cohorts": [
+        {
+            "id": "blackwing-lair",
+            "sources": [
+                ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua"
+            ],
+            "stage": "P2.1"
+        },
+        {
+            "id": "zul-gurub",
+            "sources": [
+                ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.7 Zul'Gurub.lua"
+            ],
+            "stage": "P4"
+        }
+    ]
+}
+```
+
+A reviewed context selects this file explicitly. For example, the following is the complete set of **new selection properties** for an Era overlay; it is not a replacement for the existing build/source configuration:
+
+```json
+{
+    "ProgressionFlavor": "era",
+    "ProgressionProfile": ".contrib/.db/shared/.config/progression/era/main.json",
+    "ProgressionLegacyEligibility": "none",
+    "ProgressionMigration": ".contrib/progression/migration.json"
+}
+```
+
+**This example requests a target state; it does not claim that Zul'Gurub is ready for P4.** The four full JSON files in section 2b cover BWL acquisition scopes only. Selecting the manifest above with those files must report `zul-gurub: requested P4; missing source policies/child transitions and retirement evidence`, and refuse that requested artifact. It must not silently use P1 or pretend `raid.zg.common` alone covers the file. The existing ZG source includes its outer `PHASE_FOUR`, later `PHASE_FIVE` item sources (20757, 20756, 22216), `PHASE_SIX` quests (9210, 9208, 9209), and SoD-specific transitions. The manifest's syntax is complete; its P4 request still needs the independently reviewed full ZG policy, annotations, writer removal and golden evidence. No new ZG availability is invented here.
+
+### What to edit, and what each value means
+
+| Maintainer action | Exact edit | Required result |
+| --- | --- | --- |
+| Start BWL Lua annotations | Set its `stage` to `"P2.1"`; add source annotations while retaining the legacy expressions. | Official BWL uses legacy authority. Missing JSON/keys appear in its pending report, even if ZG already has a profile. |
+| Write BWL JSON next | Change only its `stage` to `"P2.2"` and select the policy file. | Validate BWL mappings in shadow; official BWL is still legacy. The unknown book remains unresolved, not a fabricated opening. |
+| Promote BWL output | Request `"P3"`. | Fail until BWL's complete propagation chain, book timing, context eligibility and independent golden pass. ZG's successful gates cannot satisfy BWL's gates. |
+| Retire BWL's old syntax | After those gates, request `"P4"` and remove BWL's retired legacy expressions. | BWL keeps the same approved JSON. Shared helpers used by other P1/P2 cohorts remain available to those cohorts. |
+| Leave another old source alone | Keep it in the frozen baseline and omit it from `cohorts`. | Explicit `defaultStage: "P1"` preserves its legacy authority; this is not a missing-policy fallback. |
+
+`sources` names resolved execution entrypoints. Their imported fragments inherit that invocation's owner; record the full import/dependency closure in its hashes and isolation checks. An inline import must not switch stage midway through Lua execution based on the imported filename. A shared physical fragment may be evaluated separately for different owners in isolated projections; it is not an additional independently selected authoritative output. Conflicting entrypoint ownership is still an error.
+
+This first version selects **whole source files or explicit groups of files**. A cohort's `sources` may contain several exact paths when a source generator/cache/consumer chain must move together. It does not accept arbitrary subtrees, globs, NPC/item IDs or `progressionKey` selectors. Different nodes in one file can have different content windows, but not conflicting migration stages. If a dependency cannot be isolated, report both owners and put that complete propagation chain in one cohort; do not force unrelated raids or the entire database into the same stage.
+
+| Manifest field | Contract |
+| --- | --- |
+| `schema` | Required integer `1`. |
+| `defaultStage` | Required literal `"P1"`; applies only to source files/writers present in the pinned, reviewed legacy inventory. |
+| `cohorts` | Required array; an empty array leaves the frozen baseline at P1. |
+| `cohorts[].id` | Required unique stable name matching `[a-z0-9][a-z0-9._-]*`; diagnostic/ownership identity, not a schedule or entity ID. |
+| `cohorts[].sources` | Required nonempty array of canonical repository-relative Lua file paths. Each must exist; duplicates, overlapping ownership, traversal and globs are errors. |
+| `cohorts[].stage` | Required exact string `P1`, `P2.1`, `P2.2`, `P3` or `P4`. `P2` alone is invalid. |
+
+Reject duplicate JSON properties, unknown fields and unknown stage values. Different explicit contexts may select different manifest files, with their paths/hashes recorded in evidence; there is no automatic discovery or precedence rule. New files, newly introduced legacy writers and unowned generation paths must be assigned/reviewed instead of slipping through `defaultStage`. In the absence of a manifest, only the reviewed legacy baseline runs; no policy presence promotes a source. Valid Lua-first annotations may be collected and stripped under that unchanged authority, but new acquisition sources still need ownership review.
+
+**P4 deletion is also checked across contexts sharing a physical source.** Before deleting any old expression, callback branch or helper, verify that every supported context still using that file no longer depends on it. If Era has P3 progress output but SoD still needs that same file's P2 legacy expressions, keep the source at P3 until both can retire, or first provide explicitly separated and reviewed source inputs. Reject the premature P4 request. A pinned golden cannot silently replace another context's live legacy production inputs. This last-consumer rule applies to source-local expressions as well as shared helper definitions; it does not require unrelated raids to migrate together. P3 sources may still contain old wrapper calls even though their timing is suppressed: retain a callable, side-effect-free compatibility shim for that projection, or prove the reviewed projection rewrite removes the call before Lua execution. Do not delete the function while any live P3 caller still needs it; wait for those callers to reach P4 or for that explicit no-call proof. Pinned goldens retain their own old toolchain independently.
+
+### Combine two isolated projections, not two competing writers
+
+1. **Resolve ownership before execution.** Validate the manifest, resolved source list and producer/consumer dependencies before evaluating acquisition Lua. Do not run excluded acquisition files and then try to remove their output.
+2. **Legacy projection:** use the original helpers, callbacks and phase behavior for P1/P2.1/P2.2-owned sources. P2 fields are validated/reported and stripped, with no new applicability/timing filter.
+3. **Progress projection:** use P3/P4-owned sources with external policies. Suppress every legacy timing producer/consumer in this projection before it can affect normalization or merges, including recipe caches and phase-driven callback branches. P3's old expressions remain usable only by its separate pinned golden, not by this projection.
+4. **Isolate all mutable state.** The projections use separate Lua processes/state and separate ItemDB, RecipeDB, header, event and other caches. Shared support definitions may load only with reviewed side effects. Producer writes must be isolated and attributed to their consumers; if that cannot be proven, group the dependent sources into one cohort. A shared global stage flag or a post-export filter is insufficient.
+5. **Compose owned output once.** Retain each acquisition occurrence from its designated projection exactly once, preserving ancestry, independent `u`/event/level conditions and source provenance, then merge/index complete alternatives. A same-ID progress route must not overwrite a protected legacy route. The artifact records both projection hashes and cohort ownership in build evidence; migration metadata is not an addon scheduling field.
+
+P2.2 shadows and P3 goldens are additional isolated validation runs, not extra official writers. A future single-pass optimization would need the same isolation/provenance proof; it is not required by this design. Cross-cohort ancestor/child or cache dependencies that cannot preserve complete inherited conditions are hard errors naming the affected owners, not permission to drop a parent condition or apply both authorities to one source.
+
+### Coverage, settings and an actual mixed-artifact acceptance case
+
+Coverage is counted **by context, cohort and source occurrence before aggregation by key**. P2.1 keys remain pending even when another P4 cohort selects the same profile or uses the same key. P2.2's valid but unresolved/unknown shadow mappings block only that cohort's promotion. P3/P4 requires complete confirmed policies, child transitions, eligibility and its own golden/retirement gates. An invalid explicitly selected shared JSON file is still a validation error; ownership does not excuse malformed syntax or identities.
+
+Export `app.ProgressionProfile.content` only for keys actually required by validated P3/P4-owned output. A BWL-only unknown book entry used solely by P2 shadow work is not exported or treated as a production coverage failure. If a production-owned occurrence uses that same unknown key, its own gate fails. Profile milestone IDs remain stable; ownership selection does not rewrite their order or create another policy inheritance layer.
+
+After a separately reviewed complete ZG cohort passes its P4 gates, the mixed acceptance fixture must show:
+
+| Check | BWL at P2.1/P2.2 | Validated ZG at P4 |
+| --- | --- | --- |
+| Official condition source | Original numeric phases/callbacks; no new `progressionScopes`. | Only approved scope windows; no authored legacy phase dependence. |
+| Missing BWL JSON / unknown book | Pending or unresolved shadow report; BWL remains explicitly legacy-owned. | Does not block unrelated ZG production policies. |
+| Old phase-checkbox change | Retains its original effect on BWL legacy routes/callbacks. | Does not change ZG progress availability. |
+| New `viewPhase` change | Does not change BWL legacy availability. | Evaluates ZG's windows. |
+| Same item available in both raids | Keep BWL's complete route and conditions. | Keep ZG's separate route; the item can be obtainable through either complete valid route. |
+| Poison/reorder the other projection's cache writes | BWL owned output stays equal to its isolated legacy baseline. | ZG output stays unchanged and remains independent of legacy phase writers. |
+
+This is an acceptance contract **after ZG's missing work is supplied**, not a claim that the example manifest/profile currently passes. BWL's unresolved book blocks BWL P3/P4, not all progress adoption. No runtime authority is inferred from a missing key, profile presence or load order. Existing numeric phase controls remain active for legacy-owned routes; the new view controls progress-owned routes. `phaseID` metadata may supply labels but cannot globally alias the two control systems. Raw `u` filtering remains independent of both. Complete inherited route conditions combine with AND; complete alternative acquisition routes combine with OR. No new permanent `authority` field is needed if compiler provenance and the exported condition families preserve this separation.
+
+P2 equality is measured on its **isolated owned legacy output**, not the whole mixed artifact: another P4 cohort may legitimately change that artifact. Also validate the composed artifact so a merge cannot silently alter the protected routes. Delete a shared legacy helper/reader or physical source expression only after its last supported consumer in every affected context has retired; remove the temporary stage manifest only when there is no remaining legacy production path and a separately reviewed final configuration makes progress authority explicit.
 
 ## 3. Opening, later additions, removal, and reopening
 
@@ -1253,7 +1368,7 @@ Migration stages 1–4 describe how the implementation is replaced; they are unr
 
 `4`, `4.1`, `4.2`, and `4.10` are distinct **string identifiers**. Their unique integer `order` determines chronology; never parse the key as a decimal or infer order from spelling. A new subphase has no native numeric `phaseID` unless an actual independent legacy definition exists. It must not reuse its parent's ID merely because its name begins with `4`.
 
-The player explicitly selects one **viewed milestone**. This is a display scenario, not detection or a claim about the live server. `defaultView` applies only when there is no valid saved view. Preserve old checkbox values but do not derive a viewpoint from their highest enabled order or an arbitrary non-contiguous selection. Independent phase checkboxes cannot define a removal/reopening timeline and are not the new chronology control.
+The player explicitly selects one **viewed milestone**. This is a display scenario, not detection or a claim about the live server. `defaultView` applies only when there is no valid saved view. Preserve old checkbox values but do not derive a viewpoint from their highest enabled order or an arbitrary non-contiguous selection. Independent phase checkboxes cannot define a removal/reopening timeline and are not the new chronology control. They remain active with their original semantics for legacy-owned cohorts during mixed migration; the new view does not replace or alias those controls.
 
 Optional activation metadata may record a milestone's known release instant, with an unambiguous ISO-8601 offset/UTC timestamp, region/realm scope, and evidence. Unknown times remain absent; date-only values or `os.time` calls with unspecified timezone must not be promoted into verified UTC instants. Known milestone order does not require a known date. Initial behavior is manual selection: timestamps do not silently advance the view, and no automatic calendar/live-server mode is included.
 
@@ -1290,9 +1405,9 @@ Reusing the same profile on another target requires eligibility review for that 
 
 `activation`, when present, is an array of objects. Each record has exactly four required nonempty string fields: `at` (an ISO-8601 timestamp with explicit UTC/offset), `region`, `realm`, and `evidence`. Extra properties are rejected. Region/realm values identify the actual applicable scope; an explicit `"all"` requires evidence of global applicability. `evidence` identifies an accessible supporting screenshot/report or source link. Absence of a record means timing is not established. These metadata fields do not determine window endpoints or select the view.
 
-The initial phase validation inventory covers target entries labeled Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever; Retail is excluded from phase changes and retains an unchanged-output regression check. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. For a supported P3 context, a missing UI does **not** imply missing policy authority; this requirement does not create a JSON prerequisite for P2.1.
+The initial phase validation inventory covers target entries labeled Era, SoD, TBC, Wrath, Cataclysm, Mists, and Forever; Retail is excluded from phase changes and retains an unchanged-output regression check. This is not an exhaustive repository configuration inventory and is not a claim of eight gameplay flavors or eight sufficient test contexts. Other configurations exist; every declared supported context still needs coverage. Each explicitly supported target/flavor/profile binding must be covered independently. For a supported P3/P4 cohort/context, a missing UI does **not** imply missing policy authority; this requirement does not create a JSON prerequisite for P2.1.
 
-In P3 phased production every retained acquisition key needs a policy; missing entries are errors. P2.1 instead records missing JSON/mappings as expected pending work without failing the legacy build or commit. P2.2 validates the explicitly selected JSON and reports missing/unknown mappings as unresolved shadow coverage; they block P3 promotion. A nonexistent selected file or invalid schema/identity is a shadow-validation failure, not an implicit unphased policy. A profile reused across targets may also describe keys outside one target's selected source set. Zero-hit exceptions require explicit context applicability/exclusion evidence from the reviewed source selection or context-specific eligibility; they cannot be inferred from expansion names or silently skipped. A key expected in that context but absent is an error, including misspellings and missing child transitions. Export only the context-applicable policy subset, preserving the profile's milestone identities; this is selection, not policy inheritance.
+In P3/P4 phased production every retained acquisition key owned by that projection needs a policy; missing entries are errors. P2.1 instead records missing JSON/mappings as expected pending work without failing the legacy build or commit. P2.2 validates the explicitly selected JSON and reports missing/unknown mappings as unresolved shadow coverage; they block that cohort's P3 promotion. A nonexistent selected file or invalid schema/identity is a shadow-validation failure, not an implicit unphased policy. A profile reused across targets may also describe keys outside one target's selected source set. Zero-hit exceptions require explicit context applicability/exclusion evidence from the reviewed source selection or context-specific eligibility; they cannot be inferred from expansion names or silently skipped. A key expected for a given context/cohort but absent is an error, including misspellings and missing child transitions. Count coverage per occurrence/owner before key aggregation: another cohort's hit cannot satisfy it. Export only the context-applicable, production-owned policy subset, preserving the profile's milestone identities; shadow-only pending keys do not become production policy. This is ownership selection, not policy inheritance.
 
 A minimal complete unphased declaration is:
 
@@ -1308,13 +1423,13 @@ A minimal complete unphased declaration is:
 
 This example names no actual build. In unphased mode only required `schema`, `id`, `flavorId`, `mode`, and optional `verificationStatus`/`coverage` are allowed. `phases`, `defaultView`, and `content` are not silently ignored; they are rejected. This mode has no implicit per-source window table. If a selected context needs any external phase-based or per-scope native-phase eligibility restriction, use a complete phased policy instead, even if its old UI had no phase selector.
 
-A selected unphased context/profile explicitly declares that it imposes no phase-based restriction. It still preserves intrinsic build, timeline, event, and unavailable conditions and reports every input key. It may omit runtime phase UI after that policy is validated. This is permitted only when the full legacy baseline proves the intended behavior; do not infer it from a flavor name. In particular, Forever defines `ANYCLASSIC` and cannot automatically be treated as a no-op build.
+A selected unphased context/profile explicitly declares that its progress-owned cohorts impose no phase-based restriction; it does not erase restrictions in explicitly legacy-owned cohorts. It still preserves intrinsic build, timeline, event, and unavailable conditions and reports every input key. It may omit runtime phase UI after that policy is validated. This is permitted only when the full legacy baseline proves the intended behavior; do not infer it from a flavor name. In particular, Forever defines `ANYCLASSIC` and cannot automatically be treated as a no-op build.
 
 ### Build eligibility remains separate
 
 Preprocessing, `DataPatch`, intrinsic timeline rules, and verified client/source compatibility remain in force; an old target policy cutoff is not automatically a technical capability limit. Any exclusion previously carried only by an authored phase must be classified before cutover: preserve a reviewed context-local policy through explicit external eligibility, or document and validate its deliberate replacement. A native-phase reference can reproduce only that selected context's approved legacy rule without consulting the old source assignment. A window cannot bypass a genuine client/source constraint, while an old expansion cutoff is not automatically such a constraint for another ruleset.
 
-Neither stage 3 nor stage 4 may use legacy phase assignments, propagated child values, or old callback outputs to fill missing eligibility or schedule information. Changing `viewPhase` or `defaultView` changes display evaluation, not the set of client-compatible records generated. Removal windows retain compatible records; they do not override existing rules that omit unsupported/deleted client data.
+Neither a P3 nor a P4 progress projection may use legacy phase assignments, propagated child values or old callback outputs to fill missing eligibility or schedule information. That prohibition does not disable the deliberately retained legacy projection for other cohorts. Changing `viewPhase` or `defaultView` changes display evaluation, not the set of client-compatible records generated. Removal windows retain compatible records; they do not override existing rules that omit unsupported/deleted client data.
 
 ## 6. Coexistence during migration and after cutover
 
@@ -1330,21 +1445,21 @@ Neither stage 3 nor stage 4 may use legacy phase assignments, propagated child v
 | Same NPC/item appears in multiple routes | Record every occurrence. | Keep separate windows, `u`, events, and ancestry; sharing an ID does not combine source identity. |
 | A phase-driven callback assigns `u`, `rwp`, or `phase` | Keep original callback as legacy evidence. | Replace only its phase-driven behavior with scope evaluation. Preserve separate level/event/season/unavailable logic. |
 
-The new runtime does not read old numeric checkbox combinations as its source of availability. Native phase metadata and numeric saved data may remain for legacy/API compatibility and unrelated settings; that does not preserve direct DB phase authoring.
+These columns describe each cohort, not mutually exclusive whole-build modes. Legacy-owned routes and callbacks keep their original numeric phase checkboxes; progress-owned routes use `viewPhase` and windows. Loading a progress profile must not globally redirect a numeric phase getter or disable the legacy Phase toggle. Neither control set changes the other's routes, and raw `u` remains independent. Native `phaseID` supplies metadata/labels, not a continuous preference alias. The end state retires direct DB phase authoring only after every supported cohort has migrated.
 
 ## 7. Golden comparison without circular proof
 
-Freeze the legacy source/runtime/toolchain and build context before new policy becomes authoritative. Run legacy and progress compilation in separate fresh processes with isolated mutable state. Record exact source/version, input hashes, full resolved target/flavor/profile context, preprocessing/source selection, runtime applicability, and tool versions. Golden production must not call the new converter or derive its expected settings from candidate windows or candidate `phaseID` mappings.
+Freeze the legacy source/runtime/toolchain, complete dependency chain and build context for each cohort before its new policy becomes authoritative. Run legacy and progress compilation in separate fresh processes with isolated mutable state. Record exact source/version, input hashes, full resolved target/flavor/profile context, preprocessing/source selection, runtime applicability, and tool versions. Golden production must not call the new converter or derive its expected settings from candidate windows or candidate `phaseID` mappings.
 
-- **P2.1:** with JSON absent, verify annotation shape, input stripping, pending-key/source-location reports and official byte equality. No new applicability/timing selection runs.
-- **P2.2:** validate explicit policy files, identity, mappings and shadow coverage; compare official bytes to the same legacy baseline. Explicit diagnostic artifacts are separate. Missing/unknown mappings cannot be promoted to P3; malformed or missing explicitly selected files fail shadow validation.
+- **P2.1:** with JSON absent, verify annotation shape, input stripping, pending-key/source-location reports and equality of that cohort's isolated official legacy output to its baseline. No new applicability/timing selection runs for that cohort.
+- **P2.2:** validate explicit policy files, identity, mappings and shadow coverage; compare the cohort's owned legacy-projection bytes to the same baseline. Explicit diagnostic artifacts are separate. Missing/unknown mappings cannot be promoted to P3; malformed or missing explicitly selected files fail shadow validation.
 - **Stage 3:** compare complete acquisition structures and route conditions using independently reviewed legacy settings vectors and matching candidate viewpoints. Test all meaningful opening/closing/reopening boundaries, plus unavailable/event combinations. Do not compare only loot IDs, hit counts, or aggregate totals.
 - A testing-only projection may explain representation changes, but its expected behavior comes from the pinned old runtime/data and reviewed vectors, not a round-trip through the candidate.
 - Legacy checkbox combinations are not all representable as one chronological view. Do not claim equivalence for arbitrary old UI states. New subphases, windows, or behavior corrections that legacy cannot express require separate approved fixtures and data evidence, not invented golden agreement.
-- **Authority-isolation checks:** changing a legacy-only timing assignment must not change candidate production output; changing a new policy window must not change the legacy golden. A missing child key must cause failure, never be repaired from legacy phase.
+- **Authority-isolation checks:** changing legacy-only timing inside a progress-owned cohort must not change its candidate output; changing a new policy window must not change any legacy-owned output or the independent golden. Legacy-owned timing changes still have their original effect on that cohort. Reverse projection execution order and poison same-ID shared-cache writes to prove no cross-owner influence. A missing child key must cause failure, never be repaired from legacy phase.
 - After stage 4, preserve pinned snapshots/small expected fixtures as evidence. New content is authored once through progress policy; do not require it to be dual-written into retired legacy syntax.
 
-The synthetic example above supplies independent expected results for the new `4.1`/`4.2`/`4.10` and removal/reopening capabilities. Separately, Blackwing Lair supplies real legacy cases for all four selected flavors: outer `PHASE_THREE` becomes SoD phase 5; `o(180667)` / `i(21109)` has a later `PHASE_FIVE`; original and SoD Nefarian share encounter/NPC/head IDs but have different loot and head-turn-in rewards. The original SoD branch remains removed history. A missing book key, merged same-ID loot, or a new output that secretly reads the old alias must fail comparison. The explicitly unknown book mapping in section 2b remains a promotion blocker for that affected chain until evidence resolves its independent window; the golden is not rewritten to accept it. These are authored repository assumptions, not new in-game verification.
+The synthetic example above supplies independent expected results for the new `4.1`/`4.2`/`4.10` and removal/reopening capabilities. Separately, Blackwing Lair supplies real legacy cases for all four selected flavors: outer `PHASE_THREE` becomes SoD phase 5; `o(180667)` / `i(21109)` has a later `PHASE_FIVE`; original and SoD Nefarian share encounter/NPC/head IDs but have different loot and head-turn-in rewards. The original SoD branch remains removed history. A missing book key, merged same-ID loot, or a new output that secretly reads the old alias must fail comparison. The explicitly unknown book mapping in section 2b remains a promotion blocker for the complete BWL cohort/affected dependency chain until evidence resolves its independent window; it does not block an independently validated unrelated P4 cohort; the golden is not rewritten to accept it. These are authored repository assumptions, not new in-game verification.
 
 ## 8. Full authoring inventory and retirement gates
 
@@ -1367,10 +1482,10 @@ Serialized callbacks need explicit template/occurrence review. Do not globally d
 ### Enforcement by stage
 
 1. Stage 1 records exact existing writer/caller locations and emitted provenance. Lexical scans include code and separately inspected generated callback strings; dynamic construction also requires compiled-output coverage.
-2. Stage 2 rejects newly introduced direct phase authoring outside the frozen legacy baseline. Changed legacy expressions require explicit baseline review. A temporary migration ledger records status, not an ongoing second policy registry.
-3. Stage 3 rejects any production dependence on unresolved legacy inputs. Every affected propagation chain and build must be covered before official cutover.
-4. Stage 4 rejects `applyclassicphase`, direct or propagated authored phase values, retired numeric phase helper parameters, and new aliases such as `fallbackPhase`. Reject release IDs misfiled in `u` as an authoring bypass; real unavailable `u` is unchanged. The old upstream normalizer may remain for internal/legacy fixtures but cannot supply production scheduling.
-5. Remove the legacy reader/shadow writer only when no live source, template, callback, or consumer requires it. Keep canonical phase definitions/labels and unrelated numeric UI metadata; deleting the writer does not mean deleting all phase knowledge.
+2. P2.1/P2.2 rejects newly introduced direct phase authoring outside the frozen legacy baseline. Changed legacy expressions require explicit baseline review. The temporary manifest selects each cohort's authority; it contains no availability policy. P2.1 missing policies remain pending even beside P4 cohorts.
+3. P3 rejects legacy-timing dependence in that cohort's progress projection. Cover its complete propagation chain and all supported contexts before promotion; unrelated cohorts may remain P1/P2. Failure does not authorize an implicit downgrade.
+4. P4 rejects `applyclassicphase`, direct or propagated authored phase values, retired numeric phase helper parameters, and new aliases such as `fallbackPhase` in the retired cohort. Shared definitions still used by a legacy cohort remain restricted to its isolated projection. Reject release IDs misfiled in `u` as an authoring bypass; real unavailable `u` is unchanged. The old upstream normalizer may remain for internal/legacy fixtures but cannot supply production scheduling.
+5. Remove the legacy reader/shadow writer or any physical source expression only when no supported context, live source, template, callback or consumer still requires it. A source shared by P3 and P2 contexts must retain the legacy expressions for the latter; premature P4 removal is rejected unless inputs have been explicitly separated and reviewed. Keep canonical phase definitions/labels and unrelated numeric UI metadata; deleting the writer does not mean deleting all phase knowledge.
 
 ## 9. Exact implementation foundation and broader source scope
 
@@ -1409,17 +1524,18 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/.db/shared/lib/Strings/Settings/Phases/PROGRESSION_UNKNOWN.lua` | Define one shared localized unknown-phase label. |
 | `.contrib/.tools/Parser.build-manifest.json` | Record the exact CI source, run, and matching payload hashes. |
 | `.contrib/build-parser.ps1` | Build a clean Windows x64 payload and record provenance. |
-| `.contrib/progression/PIPELINE.md` | Document the implemented build/configuration and validation steps. |
+| `.contrib/progression/migration.json` | Temporary exact source-cohort ownership and stage manifest; frozen-baseline P1 default, no permanent availability policy. |
+| `.contrib/progression/PIPELINE.md` | Document manifest selection, the two isolated projections, ownership diagnostics and implemented validation steps. |
 | `.contrib/progression/ParserIntegrationFixture.cs` | Provide shared compiled-test setup and reflection support. |
-| `.contrib/progression/ProgressionParserIntegrationTests.cs` | Exercise isolated compilation authority, eligibility, policy schema, and complete routes. |
+| `.contrib/progression/ProgressionParserIntegrationTests.cs` | Exercise mixed cohort stages, ownership before execution, cache isolation, scoped policy coverage, eligibility and complete routes. |
 | `.contrib/progression/RUNTIME_PROGRESSION.md` | Document the implemented generated schema and runtime behavior. |
 | `.contrib/progression/Test-Parser.ps1` | Run compiled fixtures against the CI payload and selected policy configuration. |
 | `.contrib/progression/benchmark-progression.lua` | Measure synthetic route-handling overhead with Lua 5.1. |
-| `.contrib/progression/compare-legacy.py` | Compare separate legacy/progress artifacts and boundary behavior; never generate the golden through the new converter. |
+| `.contrib/progression/compare-legacy.py` | Compare per-cohort owned legacy bytes and independent progress goldens, then composed route behavior; never generate the golden through the new converter. |
 | `.contrib/progression/validate-authoring.py` | Enforce writer retirement, input-field placement/allowlists, and the reviewed `SEASON_OF_DISCOVERY` directive disposition/exception list. |
 | `.contrib/progression/validate-generated.lua` | Check active/future/removed/unknown/reopened routes at every ordered boundary. |
 | `.contrib/progression/validate-generated.py` | Validate scope windows, per-context policy coverage, generated artifacts, and no input-marker leaks. |
-| `.contrib/src/Parser/ProgressionCatalog.cs` | Read external policies; compile scope windows/eligibility; validate coverage and transition authority. |
+| `.contrib/src/Parser/ProgressionCatalog.cs` | Validate the selected migration manifest/policies, cohort ownership, stage gates and occurrence-bucketed coverage; export only production-owned scope policy. |
 | `.contrib/tests/test_validate_db.py` | Test required-output validation, policy coverage failures, and comparison manifests. |
 | `.contrib/validate-db.py` | Validate generated database manifests, required files, and flavor outputs. |
 | `src/Modules/Progression.lua` | Evaluate window unions, ancestor intersections, alternatives, and availability reasons at one selected view phase. |
@@ -1431,7 +1547,7 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | --- | --- |
 | `.contrib/.db/forever/.config/forever.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.db/shared/.config/root.config` | Pass through generated `progressionScopes`; no path-selector catalog. |
-| `.contrib/.db/shared/functions/Shortcuts.lua` | Document `progressionKey`/`flavors` on ATTObject; prevent excluded helper calls from mutating shared caches; stage 2–3 instrumentation and neutral recipe/source hints; Stage 4 remove phase-writing helpers and numeric recipe-phase input. |
+| `.contrib/.db/shared/functions/Shortcuts.lua` | Document `progressionKey`/`flavors` on ATTObject; prevent excluded helper calls from mutating shared caches; instrument per-projection producer/consumer provenance; retire cohort-local phase inputs at P4 and shared helper definitions only after their last legacy consumer. |
 | `.contrib/.db/shared/lib/Constants/Phases.lua` | Retain canonical phase metadata and fill missing labels; remove no metadata merely because writers retire. |
 | `.contrib/.db/shared/lib/Functions/Function Templates.lua` | Replace phase-driven callback/tooltip paths with scope-aware progress queries while retaining independent conditions. |
 | `.contrib/.db/standard/.config/classic/01 - Classic Era.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
@@ -1441,19 +1557,19 @@ Expansion-named targets such as TBC, Wrath, Cataclysm, and Mists are not mechani
 | `.contrib/.db/standard/.config/classic/04 - Cataclysm.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.db/standard/.config/classic/05 - Mists of Pandaria.config` | Declare the reviewed output context/profile selection and staged compilation authority; filename is not flavor identity. |
 | `.contrib/.tools/Parser.exe` | Replace with the CI-built executable matching the committed C# source. |
-| `.contrib/src/Parser/Framework/Framework.Merge.cs` | Prune source applicability before any coalescing/identity lookup; bind selected occurrence policies before merging. |
+| `.contrib/src/Parser/Framework/Framework.Merge.cs` | Compose designated occurrences exactly once from isolated projections; preserve complete mixed legacy/progress alternatives before any coalescing/identity lookup. |
 | `.contrib/src/Parser/Framework/Framework.Objects.cs` | Preserve complete source conditions through matching, merging, and copies. |
 | `.contrib/src/Parser/Framework/Framework.Processing.cs` | Preserve build/timeline eligibility without authored phase; enforce retired-authoring gates. |
 | `.contrib/src/Parser/Framework/Framework.cs` | Initialize profile processing and export the generated profile. |
-| `.contrib/src/Parser/MiniJSON.cs` | Add profile-only duplicate-property rejection; leave other readers unchanged. |
-| `.contrib/src/Parser/Program.cs` | Select compilation authority/context before executing side-effectful inputs; isolate source evaluation/staging and phase metadata so excluded variants cannot contaminate shared state. |
+| `.contrib/src/Parser/MiniJSON.cs` | Add scoped strict duplicate-property rejection for policy/migration JSON; leave unrelated readers unchanged. |
+| `.contrib/src/Parser/Program.cs` | Resolve source ownership/dependencies before Lua execution; orchestrate independent legacy/progress processes, retain each owned occurrence once, and reject unauthorized shared-state writes. |
 | `.github/workflows/Parser.yml` | Run staged legacy/progress authorities in fresh processes, coverage of the reviewed output contexts for the initially listed build-target entries and any additional supported contexts, boundary checks, and provenance artifacts. |
 | `AllTheThings.toc` | Load the new progression module before source-handling modules. |
 | `src/Classes/base.lua` | Preserve acquisition conditions when cloning base objects. |
 | `src/DataHandling.lua` | Retain complete alternative acquisition routes during merges. |
-| `src/Modules/Filter.lua` | Combine route conditions; keep raw u filtering separate from phase compatibility. |
-| `src/Settings/Pages/Phases.lua` | Select a viewed milestone and inspection controls; do not infer chronology from checkboxes. |
-| `src/Settings/Settings.lua` | Store the viewed milestone per flavor/profile identity; keep historical numeric settings and raw u controls independent. |
+| `src/Modules/Filter.lua` | Combine complete mixed-authority routes; retain legacy numeric phase filtering, progress windows and raw u as independent condition families. |
+| `src/Settings/Pages/Phases.lua` | Add viewed-milestone/inspection controls for progress routes while retaining legacy phase controls for remaining legacy-owned routes. |
+| `src/Settings/Settings.lua` | Store the viewed milestone per flavor/profile identity; keep active legacy numeric settings and raw u controls independent, without global aliases. |
 
 ### Existing data cohorts to modify and legacy pieces to retire
 
@@ -1465,11 +1581,11 @@ Future C# source-change commits must include their matching CI-built Parser bina
 
 ## 10. Ordered rollout and acceptance
 
-1. Complete the pinned inventory and independent legacy baseline for each reviewed target/flavor/profile binding and propagation chain. Resolve its source selection, runtime applicability, and phased/unphased policy from evidence, not an expansion or target name.
+1. Pin the legacy inventory and independent baseline; define exact non-overlapping source cohorts and their dependencies. Select the temporary manifest explicitly. Default P1 protects only the frozen baseline, not new unowned files or writers. Resolve each advancing cohort's context/source selection and policy from evidence.
 2. Implement P2.1 annotation collection/validation, stripping and pending-key reporting with JSON absent, preserving legacy bytes. Then P2.2 authors/selects complete JSON and validates schema/identity/coverage in shadow. Start with representative raids, then cover all indirect producers and source files; do not require simultaneous Lua/JSON commits.
 3. Fill external windows and independent eligibility for every real transition; add all distinct child/boss/drop scopes. Complete canonical localization and shared subphase/unknown labels. Do not invent timestamps, native IDs, or removal dates.
-4. Exercise stage 3 in isolated candidates, then switch official authority only after full coverage, golden comparison, independent new-capability fixtures, and invariance gates pass. The new path must work when legacy timing expressions are poisoned or disabled.
-5. Remove legacy code/data expressions in stage 4; rerun all build/content, runtime, callback, source identity, window-boundary, and strict-authoring checks. Preserve frozen legacy evidence without requiring future dual authoring.
+4. Exercise each cohort's P3 candidate in isolation; advance only that cohort after its complete coverage, golden comparison, independent new-capability fixtures and invariance gates pass. Compose it with explicitly legacy-owned cohorts using the two isolated projections. The new path must work when legacy timing expressions are poisoned or disabled.
+5. Remove that cohort's legacy expressions at P4; rerun its checks and the composed-artifact route/control/cache-isolation checks. Other cohorts keep their stages. Delete shared legacy helpers and finally the temporary manifest only after the last supported legacy consumer retires, preserving pinned evidence without future dual authoring.
 
 Acceptance must demonstrate:
 
@@ -1477,13 +1593,16 @@ Acceptance must demonstrate:
 - One flavor/profile spanning targets keeps its namespace and milestone meaning; target changes cannot reset its view or implicitly inherit a foreign legacy cutoff.
 - P2.1 missing policy/selection is diagnostic pending work, while malformed annotations and input leaks fail. P2.2 explicitly selected file/schema/identity errors fail shadow validation. P3 missing/mismatched compile selection fails. Runtime unknown, a merely negative discriminator, conflicting guards, or two applicable profiles produces a visible diagnostic without selecting by load order or falling back to legacy authority.
 - Cross-target zero-hit exceptions require explicit applicability evidence. Missing mappings are pending in P2.1, unresolved coverage in P2.2, and failures under P3 authority; absent required child transitions block promotion.
-- P2.1 and P2.2 each preserve official legacy bytes; P3 is independent authority with no legacy-child or missing-policy fallback. No empty placeholder JSON, implicit unphased policy, or new lifecycle field is introduced.
+- P2.1/P2.2 preserve their owned isolated legacy bytes even beside a P4 cohort. P3 has no legacy-child or missing-policy fallback. Only the temporary manifest selects stage; permanent policy JSON gets no lifecycle field, empty placeholder or implicit unphased fallback.
+- The complete BWL P2.1 + ZG P4 control-file request fails with exact missing ZG coverage/retirement diagnostics against BWL-only policies. After independently supplying the complete ZG gates, the same stage arrangement produces mixed output: unresolved BWL shadow policy does not block valid ZG output.
+- Duplicate/nonexistent/overlapping source ownership and unknown stages fail before Lua execution; new files/writers cannot evade review through default P1. A P4 deletion of a physical source writer shared with another supported P1/P2 context fails; that context cannot silently be rebuilt from a golden snapshot. Separate cohort occurrences of a repeated key cannot satisfy each other's coverage.
+- Both projections are isolated from shared-cache poisoning and order changes; each occurrence is selected exactly once. Legacy checkboxes affect only legacy routes, the new view only progress routes, and mixed same-ID alternatives retain full ancestry and independent u/event conditions.
 - Active/future/removed/unknown/reopened results at every milestone boundary; `4.10` distinct from `4.1`; timestamps absent or region-scoped without implicit advancement.
 - Dungeon/child intersection and alternative-route union; a removed boss cannot expose its child's later drop; another valid source for that item remains usable.
 - Independent `u`/event/level conditions and availability-vs-inspection distinction; reopening a schedule does not clear native unavailable state.
 - Full per-context policy coverage, including targets without new phase UI and Forever's Classic preprocessing behavior; target labels do not prove all supported rulesets/profiles were tested; Retail remains unchanged.
 - No client/expansion eligibility bypass and no generated record-set change from merely selecting another view.
-- No remaining production legacy writer/helper/cache/normalization bypass after retirement, including serialized callbacks and indirect recipe/currency paths.
+- No legacy writer/helper/cache/normalization bypass in any retired P4 cohort, including serialized callbacks and indirect recipe/currency paths. Shared legacy definitions remain only for explicit legacy consumers; global deletion waits for the last consumer.
 - Complete flavor applicability precedes policy coverage and every merge/index operation; shared nodes and same-ID variants remain distinct. Schedule-only `SEASON_OF_DISCOVERY` pragmas are eliminated, with an explicit justified list of retained technical/structural guards.
 - Every source occurrence preserved, including SoD variants and repeated NPC/item identities. Only proven redundant inherited writers may disappear without a new key.
 - Matching CI binaries and complete generated-data/runtime checks; localization-only differences separately reviewed. Test success is not evidence of actual game availability.
