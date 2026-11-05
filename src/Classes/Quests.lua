@@ -3,29 +3,41 @@ local app = select(2, ...);
 local L = app.L;
 
 -- App locals
+---@type function,function,function,function,function
 local AssignChildren, GetRelativeField, GetRelativeValue, SearchForField, GetRelativeByFunc =
 	app.AssignChildren, app.GetRelativeField, app.GetRelativeValue, app.SearchForField, app.GetRelativeByFunc;
+---@type function
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+---@type function
 local Search = app.SearchForObject
 
 -- Global locals
+---@type function,function,function,function,function,function,function,function,function,function,function,function,function,function
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring,next
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber,type,unpack,tostring,next
+---@type function,function
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
 ---@diagnostic disable-next-line: undefined-global
+---@type function
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
+---@type function
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
+---@type function
 ---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
+---@type function
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+---@type function
 local GetQuestLogRewardInfo
 	= GetQuestLogRewardInfo;
 
 -- WoW API Cache
+---@type function
 local GetSpellName = app.WOWAPI.GetSpellName;
+---@type function
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
+---@type function
 local GetQuestRewardCurrencies = app.WOWAPI.GetQuestRewardCurrencies;
-local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Class locals
 local LastQuestTurnedIn, MostRecentQuestTurnIns;
@@ -41,10 +53,13 @@ local Runner = app.CreateRunner("quests")
 Runner.SetPerFrameDefault(10)
 
 -- Quest Name Lib
+---@type function,function
 local GetTitleForQuestID, GetQuestTimeLeftMinutes;
+---@type function
 local C_QuestLog_GetTitleForQuestID = C_QuestLog.GetTitleForQuestID or C_QuestLog.GetQuestInfo;
 if C_TaskQuest then
 	GetQuestTimeLeftMinutes = C_TaskQuest.GetQuestTimeLeftMinutes;
+	---@type function
 	local C_TaskQuest_GetQuestInfoByQuestID = C_TaskQuest.GetQuestInfoByQuestID;
 	if C_TaskQuest_GetQuestInfoByQuestID then
 		GetTitleForQuestID = function(questID)
@@ -57,12 +72,14 @@ else
 end
 
 -- Load Quest Lib
+---@type function,function,table
 local RequestLoadQuestByID, ResetQuestName, QuestNameFromID;
 local RefreshQuestIDs = {}
 local function QuestAsyncRefreshFunc(t)
 	RefreshQuestIDs[t.questID] = t
 	return true
 end
+---@type function
 local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
 if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA_LOAD_RESULT") then
 	local QuestsRequested = {};
@@ -1724,11 +1741,14 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	CollectibleType = function() return "QuestsHidden" end,
 	isHQT = app.ReturnTrue,
 	name = function(t)
-		local parent = t.sourceParent or t.parent
+		local parent = rawget(t, "sourceParent") or t.parent
+		local parentName = parent.name
+		if IsRetrieving(parentName) then return end
+
 		local factionID = t.maxReputation[1]
 		local faction = app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID)
 		-- "Bonus Reputation: Faction [SourceName]"
-		local name = QuestBonusReputationFormat:format(faction.name, parent.name)
+		local name = QuestBonusReputationFormat:format(faction.name, parentName)
 		t.name = name
 		return name
 	end,
