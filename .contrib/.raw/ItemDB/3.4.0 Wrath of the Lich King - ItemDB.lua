@@ -1,4 +1,4 @@
-DBContext = "WRATH";
+DBContext = "WRATH_CLASSIC_ITEMDB";
 DBFileName = "03 - Wrath";
 ItemDB = {
 	nil, -- [1]
