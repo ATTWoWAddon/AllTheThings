@@ -17,7 +17,7 @@ Record these decisions before scanning or editing:
 
 Use Lua **5.1 exclusively** for Lua compilation and tests.
 
-Prepare three outputs: a classified inventory, a rule-by-rule change plan, and a verification/reporting ledger. Keep dated audit results, individual unresolved records, and source snapshots in that ledger or the discussion rather than adding record-specific rules to this document.
+Prepare three outputs: a classified inventory, a rule-by-rule change plan, and a verification/reporting ledger. Keep current audit findings and unresolved records in the ledger or discussion, and source snapshots in local cache, rather than adding record-specific rules or audit artifacts to this document.
 
 ## 2. Classify the source before choosing a rule
 
@@ -303,6 +303,6 @@ Use Lua 5.1 for applicable syntax/tests. Reproduce diagnostics against the basel
 
 * Separate applied rules into focused commits. Describe the actual changes and useful counts rather than a list of filenames. Follow the parent subject-length, message, signing, and actual-model attribution requirements. Honor configured signing and resolve signing failures without disabling it.
 * Report operations, source references, unique IDs, and unique records/tables as separate counts. Recompute the final contribution's totals after reversions or identity corrections.
-* Update the existing PR/discussion with direct evidence links, the relevant flavour/build/date context, verification results, and held findings. Follow the requested destination for existence reports and other audit output.
+* When updating an existing audit, update its original PR comments directly, replacing outdated results rather than retaining historical audit sections. Keep current per-record direct evidence links, actual source-check dates, flavour/build context, verification results, and held findings. Do not publish downloadable audit attachments or add audit artifacts to the repository; retain source snapshots and verification material in local cache. Follow the parent evidence requirements and the requested destination for existence reports and other audit output.
 * Keep PR and issue disclosures accurate under the parent `Summary`, `Data Sources` when applicable, and `AI Assistance` requirements. Distinguish source checks, static validation, Parser/CI results, and observed in-game behavior.
 * Perform only authorized Git/publication actions and verify the resulting remote state. Preserve unrelated work and clean up task worktrees within the current authorization.
