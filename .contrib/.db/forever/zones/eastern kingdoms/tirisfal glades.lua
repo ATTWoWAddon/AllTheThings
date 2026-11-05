@@ -1671,6 +1671,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(99142, {	-- Tomb Weed
+				sourceQuest = 5482,	-- Doom Weed
 				qg = 10665,	-- Junior Apothecary Holland <Royal Apothecary Society>
 				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
 				races = { UNDEAD },
@@ -1678,7 +1679,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Tomb Weed
-						provider = { "i", 286204 },	-- Tomb Weed (QI!)
+						providers = {
+							{ "i", 286204 },	-- Tomb Weed (QI!)
+							{ "o", 694732 },	-- Tomb Weed
+						},
+						coord = { 76.6, 62.0, MAP.TIRISFAL_GLADES },
 					}),
 				},
 			}),
