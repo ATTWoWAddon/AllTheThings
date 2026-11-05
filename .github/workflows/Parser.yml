@@ -81,8 +81,11 @@ jobs:
           if-no-files-found: error
 
       - name: Regenerate the Wrath ItemDB guard
+        id: regenerate-wrath
         shell: pwsh
-        run: '& "../titan/Stage-WrathItemDB.ps1" -StageDirectory (Join-Path $env:RUNNER_TEMP "wrath-itemdb")'
+        run: |
+          & "../titan/Stage-WrathItemDB.ps1" -StageDirectory (Join-Path $env:RUNNER_TEMP "wrath-itemdb") `
+            -EvidenceDirectory (Join-Path $env:RUNNER_TEMP "parser-validation/WrathItemDB")
 
       - name: Test compiled Titan profile and guards
         shell: powershell
@@ -227,9 +230,7 @@ jobs:
         shell: pwsh
         run: |
           $evidence = Join-Path $env:RUNNER_TEMP 'parser-validation'
-          New-Item -ItemType Directory -Path $evidence | Out-Null
           Copy-Item -LiteralPath (Join-Path $env:RUNNER_TEMP 'db-artifacts.sha256') -Destination $evidence
-          Copy-Item -LiteralPath (Join-Path $env:RUNNER_TEMP 'wrath-itemdb/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua') -Destination $evidence
           if ('${{ github.event_name }}' -eq 'workflow_dispatch' -or '${{ steps.changes.outputs.non_forever }}' -eq 'true') {
             $progression = Join-Path $evidence 'Progression'
             New-Item -ItemType Directory -Path $progression | Out-Null
@@ -239,6 +240,7 @@ jobs:
           }
 
       - name: Upload Parser validation evidence
+        if: always() && (steps.regenerate-wrath.outcome == 'success' || steps.regenerate-wrath.outcome == 'failure')
         uses: actions/upload-artifact@v7
         with:
           name: parser-validation-${{ github.sha }}
