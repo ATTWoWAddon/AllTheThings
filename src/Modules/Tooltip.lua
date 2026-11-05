@@ -720,7 +720,7 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 						strippedText = StripColorAndTextureData(strippedText .. summaryText);
 						if strippedText:len() < app.Settings:GetTooltipSetting("MaxTooltipTopLineLength") then
 							if tooltip.CloseButton then
-								-- don't think the region for the rightText can be modified within the tooltip, so pad instead
+								-- dont think the region for the rightText can be modified within the tooltip, so pad instead
 								summaryText = summaryText .. "     ";
 							end
 							rightText:SetText(summaryText);

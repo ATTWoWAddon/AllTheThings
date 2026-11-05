@@ -211,7 +211,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					}),
 					i(210217, {	-- Small Dreamy Bounty
 						cost = { { "i", 208066, 1 } },	-- Small Dreamseed
-						-- Don't think we should symlink this?
+						-- Dont Think we should symlink this?
 					}),
 				},
 			}),

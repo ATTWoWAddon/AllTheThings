@@ -177,8 +177,8 @@ async def localize_objects(
         line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if line_ind in localized_dict:
             obj_id = todo_dict[line_ind]
-            # Get the name from Wowhead because it might be a non-Retail name in this line,
-            # but still check all flavors in case Retail is missing this object
+            # have to get name from Wowhead cause it might be name from non retail in this line
+            # but still check all flavors in case retail is missing this object
             if obj_id not in original_obj_names:
                 original_obj_names[obj_id], _ = await get_localized_obj_name(
                     session, obj_id
@@ -299,7 +299,7 @@ async def get_objects_info(session: ClientSession, filepath: Path) -> ObjectsInf
                     objects.append(Object(obj_id, "GetSpellInfo", line))
                     continue
                 obj_name = re.findall('"([^"]*)"', line)[0]
-                # New entry: need to get the name; this only happens in enUS
+                # new entry, need to get the name, this only happens in enUS
                 if len(obj_name) == 0:
                     obj_name = await get_localized_obj_name_flavor(session, obj_id)
                     line = re.sub('".*"', f'"{obj_name}"', line)

@@ -89,7 +89,7 @@ app.PrintTable = function(t,depth,preface,...)
 		return
 	end
 	if depth == 0 then app._PrintTable = {}; end
-	-- don't accidentally recursively print the same table
+	-- dont accidentally recursively print the same table
 	if not app._PrintTable[t] then
 		app._PrintTable[t] = true;
 		print(p,tostring(t),"__type",t.__type," {");

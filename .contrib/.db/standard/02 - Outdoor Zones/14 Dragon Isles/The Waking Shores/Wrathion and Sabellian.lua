@@ -555,7 +555,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				}),
 			}),
 			n(VENDORS, {
-				n(199020, {	-- Atticus Belle (Same items as Lorena Belle, don't need sym)
+				n(199020, {	-- Atticus Belle (Same items as Lorena Belle, dont need sym)
 					coord = { 26.6, 62.4, THE_WAKING_SHORES },
 				}),
 				n(193310, {	-- Dealer Vexil <Food and Drink>
@@ -864,7 +864,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						},
 					}),
 				}),
-				n(199036, {	-- Xaldrass (Same items as Samia Inkling, don't need sym)
+				n(199036, {	-- Xaldrass (Same items as Samia Inkling, dont need sym)
 					coord = { 27.6, 56.2, THE_WAKING_SHORES },
 				}),
 			}),

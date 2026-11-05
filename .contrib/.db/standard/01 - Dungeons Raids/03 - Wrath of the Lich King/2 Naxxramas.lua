@@ -1598,7 +1598,7 @@ inst(754, {	-- Naxxramas
 										cost = { { "i", DEATHS_BARGAINING_CHIP, 20 } },
 									}),
 									i(206579, {	-- Phylacterweave
-										-- Don't symlink it to Dented tokens; it makes it too spammy.
+										-- Dont symlink it Dented tokens, makes it too spammy
 										description = "Can also drop from any Dented Raider's Token.\nChanged to Bind on Account in 10.1.7",
 									}),
 									i(206565, {	-- Plagued Grain (TOY!)

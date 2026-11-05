@@ -17,10 +17,10 @@ local AccountWideQuestsDB = {
 
 	-- #IF AFTER MID
 	------------------------------------------------------------------------------
-	-- PUT NEW QUESTIDS HERE vv IF YOU DON'T WANT TO CHECK WHERE YOU ARE PUTTING IT
+	-- PUT NEW QUESTIDS HERE vv IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
 	------------------------------------------------------------------------------
-	-- PUT NEW QUESTIDS HERE ^^ IF YOU DON'T WANT TO CHECK WHERE YOU ARE PUTTING IT
+	-- PUT NEW QUESTIDS HERE ^^ IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
 	------------------------------------------------------------------------------
 	-- #ENDIF
 

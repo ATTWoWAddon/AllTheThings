@@ -3746,7 +3746,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 			-- #endif
 			i(1485, {	-- Pitchfork
 				-- #if AFTER 10.1.7
-				description = "This item only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using a Horde alt that hasn't reached the quest progress trigger for this phasing, or using an Alliance alt.",
+				description = "This item only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that hasn't reached the quest progress trigger for this phasing, or using an Alliance alt.",
 				-- #endif
 				coords = {
 					-- #if AFTER 10.1.7

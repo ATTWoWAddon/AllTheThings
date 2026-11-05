@@ -673,7 +673,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			})),
 			n(SPECIAL, {
 				i(189167, {	-- Glimmer of Satisfaction
-					description = "Eating an Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
+					description = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
 				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					description = "Killed when having 3 stacks of Synergy",

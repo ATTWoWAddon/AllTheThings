@@ -101,7 +101,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.VOIDSTORM, {
 				coord = { 35.8, 70.4, MAP.MIDNIGHT.VOIDSTORM },
 				groups = {
 					ach(62105, {	-- Lysikas Would Be Proud
-						description = "This achievement has a lot of bugs. Keep reporting to blizzard if you don't get it.",
+						description = "This achievement has a lot of bugs. Keep reporting to blizzard if you dont get it.",
 					}),
 				},
 			}),

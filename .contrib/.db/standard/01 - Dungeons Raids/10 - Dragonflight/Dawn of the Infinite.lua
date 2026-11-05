@@ -1176,7 +1176,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						})),
 					},
 				}),
-				--[[	There doesn't seem to be any difference in loot. Might just use one?
+				--[[	Dont seem to be any difference in loot. Might just use one?
 				e(2534, {	-- Time-Lost Battlefield [H]
 					crs = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					groups = {

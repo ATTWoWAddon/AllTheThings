@@ -173,5 +173,5 @@ def exploration_mapping(build):
     print(f"ExplorationMapping.txt created successfully.")
 
 """How to generate latest data from a new Build"""
-"""Step 1: Run exploration_mapping(build: str) (you have to uncomment it) with the build as a string, e.g. exploration_mapping("11.2.5.62785")."""
+"""Step 1: Run exploration_mapping(build: str) (You have to uncomment) with the build as a string ex. exploration_mapping("11.2.5.62785")."""
 # exploration_mapping("12.0.5.67314")

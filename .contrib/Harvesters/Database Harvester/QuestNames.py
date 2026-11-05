@@ -34,7 +34,7 @@ def create_dict_from_raw(file_name: str) -> dict[str, list[str]]:
 
 
 def get_name(expansion: str, quest_id: str) -> str:
-    """This function tries to get the quest name from Wowhead. It is currently broken"""
+    """This function tries to get the quest name from wowhead. Currently broken"""
     name: str = ""
     """url = f"https://www.wowhead.com/{expansion}/quest={quest_id}"
     headers = {
@@ -52,7 +52,7 @@ def get_name(expansion: str, quest_id: str) -> str:
     return name
 
 def get_available_expansions(patch: str) -> dict[str, str]:
-    """This function returns proper expansion data for the patch"""
+    """This Function returns proper expansion data for the patch"""
     expansion_dict: dict[str, str] = {}
     if version.parse("1.15.0.0") < version.parse(patch) < version.parse("1.15.9.9"):
         expansion_dict = {
@@ -121,7 +121,7 @@ def get_available_expansions(patch: str) -> dict[str, str]:
     return expansion_dict
 
 def get_quest_names(flavor: str) -> None:
-    """This function gets quest names by ID from Wowhead"""
+    """This function gives questIDs names based on wowhead"""
     expansion_dict: dict[str, str] = {
         "Retail": "",
         "CLASSIC": "classic",

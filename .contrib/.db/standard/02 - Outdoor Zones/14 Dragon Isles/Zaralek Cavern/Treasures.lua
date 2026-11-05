@@ -309,7 +309,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 			o(401844, {	-- Smelly Trash Pile
 				description = "These spawn basically everywhere in the zone, 120+ coords not listed :)",
 				isRepeatable = true,
-				-- Don't link coords. There are too many.
+				-- Dont link coords. Its 2 many
 				sym = {
 					{"select","mapID",ZARALEK_CAVERN},
 					{"find","headerID",COMMON_BOSS_DROPS},

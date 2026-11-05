@@ -548,7 +548,7 @@ app:CreateWindow("MiniList", {
 			if not g then return end
 
 			-- check to expand groups after they have been built and updated
-			-- don't re-expand if the user has previously full-collapsed the minilist
+			-- dont re-expand if the user has previously full-collapsed the minilist
 			-- need to force expand if so since the groups haven't been updated yet
 			if self:TryAddAutoExpand() then
 				window:Update();
