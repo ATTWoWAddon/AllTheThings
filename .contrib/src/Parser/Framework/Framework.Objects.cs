@@ -2507,6 +2507,10 @@ end");
                     return null;
                 }
 
+                // Keep different acquisition-release routes separate while merging equal IDs.
+                if (ProgressionCatalog.Enabled)
+                    container = container.Where(value => !(value is IDictionary<string, object> candidate) || ProgressionCatalog.SameRequirements(candidate, data2));
+
                 // Determine the Most-Significant ID Type
                 if (!ObjectData.TryGetMostSignificantObjectType(data2, out Export.ObjectData objectData, out object keyObject))
                 {

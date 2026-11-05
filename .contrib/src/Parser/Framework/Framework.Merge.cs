@@ -23,6 +23,7 @@ namespace ATT
             // Parse the contents of the table into a generic object.
             var dict = ParseAsStringDictionary(table);
             if (dict == null) return;
+            ProgressionCatalog.BindSources(dict, CurrentFileName);
 
             // Iterate through the pairs and determine what goes where.
             foreach (var pair in dict)
