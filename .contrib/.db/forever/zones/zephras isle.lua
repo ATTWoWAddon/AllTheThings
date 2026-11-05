@@ -1837,6 +1837,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 		}),
+		n(SPECIAL, {
+			n(259843, {	-- Musical Gustjumper
+				description = "Target the singing frogs on the rock at the top of the waterfall and use /sing (at least two frogs need to be on the rock). They disappear and a Musical Gustjumper appears on the log next to you; click it to get the pet.",
+				coord = { 51.4, 72.2, MAP.ZEPHRAS_ISLE },
+				groups = {
+					i(268109),	-- Musical Gustjumper (PET!)
+				},
+			}),
+		}),
 		n(TREASURES, {
 			o(626718, {	-- Dented Chest
 				coords = {

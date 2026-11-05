@@ -838,6 +838,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = { { "i", 278265, 1 } },	-- Nutritious Slime Sludge
 				races = HORDE_ONLY,
+				repeatable = true,
 				groups = {
 					i(275682),	-- Excitable Slime
 				},

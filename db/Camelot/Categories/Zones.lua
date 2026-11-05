@@ -12028,7 +12028,7 @@ qo(1,{cost={{"i",190181,1}},providers={{"n",185335}}}),
 r(713,{requireSkill=354}),
 i(22243,{b=1,c={9},f=113})}}),
 q(97583,{awp=16001,coords={
-[1458]={{53.2,29.4},{57.6,63.4},{64.6,65},{74.6,23.2},{83.4,45.4}}},cost={{"i",278265,1}},description="Spam /dance at the excitable slimes that patrol around the Undercity.",qgs={269452},r=1,g={
+[1458]={{53.2,29.4},{57.6,63.4},{64.6,65},{74.6,23.2},{83.4,45.4}}},cost={{"i",278265,1}},description="Spam /dance at the excitable slimes that patrol around the Undercity.",qgs={269452},r=1,repeatable=1,g={
 p(5075,{itemID=275682,npcID=266735,spellID=1297608})}}),
 q(97891,{awp=16001,coords={
 [1458]={{58.2,55.2}}},lvl=9,qgs={7683},qis={279020},r=1}),
@@ -21516,6 +21516,10 @@ s(302639,263017,{f=6,loc=46,lvl=9})}}),
 n(256028,{coords={
 [2521]={{53.2,48}}},g={
 s(302632,263006,{b=1,f=5,loc=42,lvl=3})}})}),
+h(-55,{
+n(259843,{coords={
+[2521]={{51.4,72.2}}},description="Target the singing frogs on the rock at the top of the waterfall and use /sing (at least two frogs need to be on the rock). They disappear and a Musical Gustjumper appears on the log next to you; click it to get the pet.",g={
+i(268109,{f=101,spellID=1281641})}})}),
 h(-56,{
 o(626718,{coords={
 [2521]={{35.5,22.5},{35.8,33.8},{35.9,24.7},{36.2,25.5},{37.8,24.6}}},g={
