@@ -1,6 +1,6 @@
 # Independent progression runtime
 
-This document covers the independent flavor progression runtime. It does not activate a generated flavor profile or change authored game records. Profile generation, source bindings, and database loading belong to separate Parser integration.
+This document covers the independent flavor progression runtime. The same Phase change also supplies the generic Parser engine and Era, SoD, and Wrath profile generation described in the [Parser pipeline](PIPELINE.md). The runtime consumes those generated profiles while retaining existing handling when no profile is present.
 
 ## Activation and compatibility
 
@@ -30,7 +30,7 @@ app.ProgressionProfile = {
 }
 ```
 
-This is an illustrative runtime contract, not a command for users to select or spoof a live server phase. Production profile generation and source bindings remain pending. Invalid/missing/mismatched baseline keys fail closed; an unknown-status phase cannot be a baseline. Requirements for registered unknown-status phases are hidden by default, with explicit visibility controls available for inspection. Unregistered phase keys remain invalid and cannot be enabled through saved choices.
+This is an illustrative runtime contract, not a command for users to select or spoof a live server phase. The companion Parser pipeline provides production profile generation and qualified source bindings. Invalid/missing/mismatched baseline keys fail closed; an unknown-status phase cannot be a baseline. Requirements for registered unknown-status phases are hidden by default, with explicit visibility controls available for inspection. Unregistered phase keys remain invalid and cannot be enabled through saved choices.
 
 ## Acquisition semantics
 
@@ -59,7 +59,7 @@ app.Modules.Progression.SetSourceAvailability(group, "e", eventID)
 
 Only `"u"` and `"e"` are accepted. The helper changes the displayed field and the retained callback origin's corresponding condition. Explicit `nil` is distinct from no override; untouched fields keep reading the live source. It does not borrow fields from another alternative or change generic callback dispatch. Existing callback wrappers can delegate without changing the source identity.
 
-The standalone regression uses synthetic adapter callbacks through actual runtime merge/clone/filter code, including an unconditional delegating-wrapper fixture and an additional integration check when the optional quest-reward visibility module is present. Authored source adapters and their source-to-generated-output verification belong to separate Parser integration; they are not included in this runtime change.
+The standalone regression uses synthetic adapter callbacks through actual runtime merge/clone/filter code, including an unconditional delegating-wrapper fixture and an additional integration check when the optional quest-reward visibility module is present. The companion Parser pipeline covers the authored Wrath source adapters and their source-to-generated-output verification; these standalone runtime fixtures remain independent of generated databases.
 
 ## Standalone verification
 
@@ -74,4 +74,4 @@ The existing Lua regression workflow discovers the progression suite alongside t
 
 The benchmark compares opted-in and legacy runtime paths using synthetic inputs and actual runtime functions. It reports process CPU time and Lua heap measurements, including clone cleanup; ending heap size is not peak memory. It does not establish live WoW performance.
 
-Remaining validation includes generated profile/source bindings, complete database loading, full Parser integration, and live-client behavior. No runtime fixture or benchmark is evidence of actual game loot, release dates, or server phase.
+Generated profiles, source bindings, and full Parser output are checked separately by the companion pipeline; exact source, binary, and final-head results are recorded in the pull request. Live-client behavior remains a distinct validation step. No runtime fixture or benchmark is evidence of actual game loot, release dates, or server phase.
