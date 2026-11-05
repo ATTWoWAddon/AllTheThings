@@ -1,0 +1,65 @@
+{
+    "schema": 1,
+    "id": "wrath",
+    "baseline": "wrath:4",
+    "phases": {
+        "wrath:1": {
+            "order": 1,
+            "name": {
+                "en": "Phase 1",
+                "tw": "\u7b2c 1 \u968e\u6bb5",
+                "cn": "\u7b2c 1 \u9636\u6bb5"
+            },
+            "phaseID": 30
+        },
+        "wrath:2": {
+            "order": 2,
+            "name": {
+                "en": "Phase 2",
+                "tw": "\u7b2c 2 \u968e\u6bb5",
+                "cn": "\u7b2c 2 \u9636\u6bb5"
+            },
+            "phaseID": 31
+        },
+        "wrath:3": {
+            "order": 3,
+            "name": {
+                "en": "Phase 3",
+                "tw": "\u7b2c 3 \u968e\u6bb5",
+                "cn": "\u7b2c 3 \u9636\u6bb5"
+            },
+            "phaseID": 32
+        },
+        "wrath:4": {
+            "order": 4,
+            "name": {
+                "en": "Phase 4",
+                "tw": "\u7b2c 4 \u968e\u6bb5",
+                "cn": "\u7b2c 4 \u9636\u6bb5"
+            },
+            "phaseID": 33
+        },
+        "wrath:unknown": {
+            "order": 0,
+            "status": "unknown",
+            "name": {
+                "en": "Unknown progression",
+                "tw": "\u9032\u5ea6\u672a\u77e5",
+                "cn": "\u8fdb\u5ea6\u672a\u77e5"
+            }
+        }
+    },
+    "content": {
+        "raid.naxx.wrath": "wrath:1",
+        "raid.ulduar": "wrath:2",
+        "raid.icc": "wrath:4"
+    },
+    "phaseMappings": {
+        "30": "wrath:1",
+        "31": "wrath:2",
+        "32": "wrath:3",
+        "33": "wrath:4"
+    },
+    "verificationStatus": "repository-assumed",
+    "coverage": "Only catalog-bound acquisition scopes use independent releases. Unmapped sources retain their existing availability and phase conditions."
+}
