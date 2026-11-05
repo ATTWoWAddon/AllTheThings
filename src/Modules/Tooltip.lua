@@ -359,6 +359,7 @@ for i,guid in ipairs({
 	"Player-1096-0A7FDD25",	-- Atröpos-DefiasBrotherhood EU
 	-- Eremeir
 	"Player-3675-06DC8D18",	-- Eremeir-MoonGuard US
+	"Player-7055-003DCFBF", -- Eremeir Graywood RP-US (Forever)
 	-- Wouter
 	"Player-4454-06092222",	-- Wouter-Shek'zeer EU (Classic)
 }) do
