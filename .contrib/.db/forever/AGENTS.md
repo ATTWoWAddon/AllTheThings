@@ -39,6 +39,8 @@ For every targeted reference, record its path and source anchor, owning record/q
 
 Parse strings, comments, and Lua syntax before locating punctuation or identifiers. Keep commented-out source separate from executable source references. Classify comments using section 6.4.
 
+For an item-marker audit, inventory all eligible item references, including unmarked references, ordinary `i(...)` entries, item providers and costs, `qi`/`qis`, `qs`/`qss`, and items within `objective(...)`. Classify each occurrence in its owning context; an existing marker is not required for inclusion.
+
 ### 2.2 Container and order policy
 
 Assign each record, field, and collection an order policy before proposing a move. Classify existing subgroups within mixed collections using headings, Parser branches, version batches, slot/category structure, and evidence of intended ordering.
@@ -91,6 +93,8 @@ Existing Lua fields, comments, markers, and constructor positions describe the c
 3. Validate table identity, columns, completeness, and ID uniqueness before a set comparison. Record whether hotfixes are included. A page containing only one results page is not a complete absence check.
 4. Reuse captured evidence only when its identity, flavour/build context, response validity, and content integrity match the claim. State which snapshot was checked; do not describe cached or unpinned data as a newly verified build.
 5. Check reference context before changing its label. When a source name contradicts the intended quest, creature, item, or version context, resolve the identity question first.
+6. For Wowhead HTTP retrieval, prefer `curl` or `wget`; use a browser as a fallback when direct retrieval does not provide the required evidence.
+7. For a rescan, compare the eligible source inventory with the recorded baseline by typed ID and reference context. Retrieve evidence for new or invalidated claims; reuse matching valid captured facts for the rest. A cache miss alone does not establish that an ID is new. Reuse an applicable captured HTTP 404 outcome as unknown, not evidence that a record or property is absent.
 
 ### 3.3 Route findings by question
 
