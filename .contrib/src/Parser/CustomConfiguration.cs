@@ -89,6 +89,9 @@ namespace ATT
         /// </summary>
         public bool CanEnumerate => _dict != null || _list != null;
 
+        /// <summary>Whether this node was explicitly defined as a JSON array.</summary>
+        internal bool IsArray => _list != null;
+
         /// <summary>
         /// Represents the parent Key for this Node, if known
         /// </summary>
