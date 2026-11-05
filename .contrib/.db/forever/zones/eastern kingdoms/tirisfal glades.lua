@@ -528,10 +528,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuests = { 94440 },	-- A Lesson in Divinity
 				qg = 257655,	-- Deathguard Billmuth
 				coord = { 21.95, 44.5, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_PALADINS,
 				classes = { PALADIN },
 				lvl = 12,
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					r(7328, {	-- Redemption [Rank 1]
+						rank = 1,
+					}),
+				},
 			}),
 			q(361, {	-- A Letter Undelivered
 				providers = {

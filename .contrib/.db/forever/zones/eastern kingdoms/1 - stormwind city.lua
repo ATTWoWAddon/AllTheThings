@@ -1785,7 +1785,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				classes = { PALADIN },
 				lvl = 12,
 				groups = {
-					recipe(7328),	-- Redemption [Rank 1]
+					r(7328, {	-- Redemption [Rank 1]
+						rank = 1,
+					}),
 				},
 			}),
 			q(4485, {	-- The Tome of Nobility (Stormwind City)
