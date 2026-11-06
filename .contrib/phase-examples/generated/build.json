@@ -1,0 +1,7 @@
+{
+  "sourceCommit": "a4032635c10ae969d5dba469c1607f02b7ed820f",
+  "run": "https://github.com/NORPG/AllTheThings/actions/runs/42294678094",
+  "platform": "Windows x64 / net48 / Release",
+  "parserSHA256": "57faac6bc0b48194636d3cc9aefa0c71a5140fd18d3dae0bf7c7f36357c004b1",
+  "verifierLua": "5.1.5"
+}
