@@ -319,10 +319,10 @@ try {
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'database-api-baseline.json')
     $baselineSync = Join-Path $repositoryTools 'ATT Sync Tool.exe'
     $baselineSyncHash = (Get-FileHash -LiteralPath $baselineSync -Algorithm SHA256).Hash
-    if ($baselineSyncHash -ne '7A8276DA8E0B32F1342B87F5BBD1ADAF16855D0B6D870BAE9F5175799AA40163') {
+    if ($baselineSyncHash -ne '249890222A11B08382EC09F4B5F843A9461B8D933627861E7B09C3A0161D6B78') {
         throw 'Sync API baseline does not match the validated .NET Framework 4.8 artifact.'
     }
-    [pscustomobject]@{ path = $baselineSync; sha256 = $baselineSyncHash; source = 'validated original net48 Sync' } |
+    [pscustomobject]@{ path = $baselineSync; sha256 = $baselineSyncHash; source = 'previously validated SDK Sync' } |
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-api-baseline.json')
     $baselineItem = Join-Path $repositoryTools 'Item Database Consolidator.exe'
     $baselineItemHash = (Get-FileHash -LiteralPath $baselineItem -Algorithm SHA256).Hash
@@ -616,6 +616,18 @@ try {
     $sharedDatabase = Join-Path $sharedTools 'Database.dll'
     Copy-Item -LiteralPath $committedDatabase -Destination $sharedDatabase -Force
     Test-MatchedFile $sharedDatabase $committedDatabase 'committed SDK Database'
+    # Exercise the committed Sync alongside the committed Database and new Item.
+    $committedSync = @{
+        'ATT Sync Tool.exe' = '249890222A11B08382EC09F4B5F843A9461B8D933627861E7B09C3A0161D6B78'
+        'ATT Sync Tool.exe.config' = '3C07DD192272D154BA6CD96E906801671AADCE330EF37B62BFE91DD04E9AF155'
+    }
+    foreach ($name in $committedSync.Keys) {
+        $original = Join-Path $repositoryTools $name
+        if ((Get-FileHash -LiteralPath $original -Algorithm SHA256).Hash -ne $committedSync[$name]) { throw "Unexpected committed SDK Sync file: $name" }
+        $destination = Join-Path $sharedTools $name
+        Copy-Item -LiteralPath $original -Destination $destination -Force
+        Test-MatchedFile $destination $original 'committed SDK Sync'
+    }
     foreach ($name in 'Parser.exe', 'Parser.exe.config', 'Csv.dll') {
         $original = Join-Path $repositoryTools $name
         $destination = Join-Path $sharedTools $name
@@ -635,7 +647,7 @@ try {
         asset = 'Actual EXE with synthetic JSON input and checked output.'
         icon = 'Actual EXE with local synthetic CSV and checked file replacement.'
         skill = 'Built DLL Helper.Parse with synthetic content and Newtonsoft path/hash; EXE and live Wowhead were not tested.'
-        shared = 'Fixtures also run with the committed x64 .NET 10 tools and Database, built Sync and Item, and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
+        shared = 'Fixtures also run with the committed x64 .NET 10 tools, Database and Sync, built Item, and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
         lua = 'Application integration uses bundled Lua 5.4.9; input syntax is Lua 5.1 compatible.'
     }
 
@@ -664,8 +676,8 @@ and Database saved-variable parsing. Skill Level Requirements was checked at its
 parsing function using synthetic content; its executable and live Wowhead access
 were not tested. These checks do not replace testing with actual game data.
 The same fixtures were also checked in a synthetic shared .tools layout with
-the committed x64 .NET 10 tools and Database, newly built Sync and Item,
-and existing Parser; only Parser Lua initialization was checked, not a full parse.
+the committed x64 .NET 10 tools, Database and Sync, newly built Item, and
+existing Parser; only Parser Lua initialization was checked, not a full parse.
 '@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
     $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
         $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
