@@ -364,7 +364,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					i(163569),	-- Insulated Wiring
 				},
 			}),
-			n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
+			n(142564, {	-- Leedan Gustaf <Profession Liaison> [NOTE: PvP Craftable Recipes]
 				coord = { 56.0, 26.8, BORALUS },
 				races = ALLIANCE_ONLY,
 				groups = COMMON_BFA_PVP_RECIPES_S1_S2,

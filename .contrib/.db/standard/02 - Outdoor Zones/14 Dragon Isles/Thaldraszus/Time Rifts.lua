@@ -439,7 +439,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					currency(PARACAUSAL_FLAKES),	-- rewarded from literally everything, don't need to list everywhere
 				}),
 				n(TREASURES, {
-					o(404432,{	-- Bload Soaked Book
+					o(404432,{	-- Blood Soaked Book
 						coord = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						groups = {
 							i(206984),	-- Blood-Soaked Book (QI!)

@@ -228,7 +228,7 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					i(162030),	-- Technique: Glyph of the Humble Flyer (RECIPE!)
 				},
 			}),
-			n(142552, {	-- Ozgrom Ragefang <Profession Liason>
+			n(142552, {	-- Ozgrom Ragefang <Profession Liaison>
 				races = HORDE_ONLY,
 				coord = { 52.6, 58.2, ZULDAZAR },
 				groups = COMMON_BFA_PVP_RECIPES_S1_S2,
