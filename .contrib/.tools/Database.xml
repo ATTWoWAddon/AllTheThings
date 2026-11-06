@@ -4,166 +4,115 @@
         <name>Database</name>
     </assembly>
     <members>
-        <member name="T:ATT.ATTAccountWideData">
+        <member name="T:ATT.SavedVariableAttribute">
             <summary>
-            Represents a player's individual WoW Account and its combined collection.
+            The Saved Variable Attribute.
+            Used to synchronize SavedVariable tables with database tables.
             </summary>
         </member>
-        <member name="P:ATT.ATTAccountWideData.AccountName">
+        <member name="P:ATT.SavedVariableAttribute.Name">
             <summary>
-            The Account Name associated with this account.
+            The name of the saved variable used to store this data.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.Characters">
+        <member name="M:ATT.SavedVariableAttribute.#ctor(System.String)">
             <summary>
-            
+            Create a saved variable attribute for a given public property.
+            </summary>
+            <param name="name">The name of the saved variable to associate with the field.</param>
+        </member>
+        <member name="T:ATT.SavedVariablePerCharacterAttribute">
+            <summary>
+            The Saved Variable Per Character Attribute.
+            Used to synchronize PerCharacter SavedVariable tables with database tables.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.Artifacts">
+        <member name="P:ATT.SavedVariablePerCharacterAttribute.Name">
             <summary>
-            All of the artifacts that are a part of this collection.
+            The name of the saved variable used to store this data.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.FactionBonus">
+        <member name="M:ATT.SavedVariablePerCharacterAttribute.#ctor(System.String)">
             <summary>
-            All of the faction bonuses that are a part of this collection.
+            Create a saved variable attribute for a given public property.
+            </summary>
+            <param name="name">The name of the saved variable to associate with the field.</param>
+        </member>
+        <member name="T:ATT.SharedCollectionData">
+            <summary>
+            The Shared Collection Data class.
+            Contains the tables that are shared between Account and Character collection structures.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.HeirloomRanks">
+        <member name="F:ATT.SharedCollectionData.Achievements">
             <summary>
-            All of the heirloom ranks that are a part of this collection.
+            All of the achievements that are a part of this collection.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.Illusions">
+        <member name="F:ATT.SharedCollectionData.AzeriteEssenceRanks">
             <summary>
-            All of the illusions that are a part of this collection.
+            All of the azerite essence ranks that are a part of this collection.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.Sources">
+        <member name="F:ATT.SharedCollectionData.Buildings">
             <summary>
-            All of the sources that are a part of this collection.
+            All of the buildings that are a part of this collection.
             </summary>
         </member>
-        <member name="F:ATT.ATTAccountWideData.Toys">
+        <member name="F:ATT.SharedCollectionData.Factions">
             <summary>
-            All of the toys that are a part of this collection.
+            All of the factions that are a part of this collection.
             </summary>
         </member>
-        <member name="M:ATT.ATTAccountWideData.#ctor(System.String)">
+        <member name="F:ATT.SharedCollectionData.FlightPaths">
             <summary>
-            Create an instance of the WoW Account class with an associated name.
+            All of the flight paths that are a part of this collection.
             </summary>
-            <param name="accountName">The name of the account.</param>
         </member>
-        <member name="M:ATT.ATTAccountWideData.ExportToCSV(System.String)">
+        <member name="F:ATT.SharedCollectionData.Followers">
+            <summary>
+            All of the followers that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.SharedCollectionData.Quests">
+            <summary>
+            All of the quests that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.SharedCollectionData.Spells">
+            <summary>
+            All of the spells that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.SharedCollectionData.Titles">
+            <summary>
+            All of the titles that are a part of this collection.
+            </summary>
+        </member>
+        <member name="M:ATT.SharedCollectionData.ExportToCSV(System.String)">
             <summary>
             Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
             This is traditionally used within Microsoft Excel.
             </summary>
             <param name="directory">The directory to write to.</param>
         </member>
-        <member name="M:ATT.ATTAccountWideData.Import(System.Collections.Generic.Dictionary{System.Object,System.Object})">
+        <member name="M:ATT.SharedCollectionData.Export(System.Text.StringBuilder)">
             <summary>
-            Import data from the saved variables associated with the account.
+            Export the collection data to the builder for use in CSV files.
             </summary>
-            <param name="savedVariables">The saved variables.</param>
+            <param name="builder">The builder.</param>
         </member>
-        <member name="M:ATT.ATTAccountWideData.Load(System.String)">
+        <member name="M:ATT.SharedCollectionData.Load(System.IO.BinaryReader)">
             <summary>
-            Load the data from the local account data files.
+            Load the collection data from the data reader.
             </summary>
-            <param name="path">The root path for ATT Data.</param>
+            <param name="reader">The reader.</param>
         </member>
-        <member name="M:ATT.ATTAccountWideData.Save(System.String)">
+        <member name="M:ATT.SharedCollectionData.Save(System.IO.BinaryWriter)">
             <summary>
-            Save the data to the local account data files.
+            Save the collection data to the data writer.
             </summary>
-            <param name="path">The root path for ATT Data.</param>
-        </member>
-        <member name="M:ATT.ATTAccountWideData.ToContainerData(System.Collections.Generic.Dictionary{System.Object,System.Object})">
-            <summary>
-            Convert a raw data object into the format expected by the importer.
-            </summary>
-            <param name="data">The raw data.</param>
-            <returns>The collection data.</returns>
-        </member>
-        <member name="T:ATT.ATTCharacterData">
-            <summary>
-            Represents a player's individual WoW Character and its associated collection.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.GUID">
-            <summary>
-            The GUID that identifies this character.
-            GOTCHA: This identifier changes when a player Server Transfers.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Name">
-            <summary>
-            The character's name.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Realm">
-            <summary>
-            The Realm where this character resides.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.RealmName">
-            <summary>
-            The fully qualified realm name that represents this character.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.ClassID">
-            <summary>
-            This character's Class ID.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Class">
-            <summary>
-            This character's Class.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.RaceID">
-            <summary>
-            This character's Race ID.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Race">
-            <summary>
-            This character's Race.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.FactionID">
-            <summary>
-            This character's Faction ID.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Level">
-            <summary>
-            This character's level.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Deaths">
-            <summary>
-            This character's deaths.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.Text">
-            <summary>
-            This character's color-coded display name.
-            </summary>
-        </member>
-        <member name="P:ATT.ATTCharacterData.LastPlayed">
-            <summary>
-            The last time this character was played.
-            </summary>
-        </member>
-        <member name="M:ATT.ATTCharacterData.ExportToCSV(System.String)">
-            <summary>
-            Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
-            This is traditionally used within Microsoft Excel.
-            </summary>
-            <param name="directory">The directory to write to.</param>
+            <param name="writer">The writer.</param>
         </member>
         <member name="T:ATT.CollectionState">
             <summary>
@@ -479,40 +428,6 @@
             Whether or not the event handling associated with this property has been paused.
             </summary>
         </member>
-        <member name="T:ATT.SavedVariableAttribute">
-            <summary>
-            The Saved Variable Attribute.
-            Used to synchronize SavedVariable tables with database tables.
-            </summary>
-        </member>
-        <member name="P:ATT.SavedVariableAttribute.Name">
-            <summary>
-            The name of the saved variable used to store this data.
-            </summary>
-        </member>
-        <member name="M:ATT.SavedVariableAttribute.#ctor(System.String)">
-            <summary>
-            Create a saved variable attribute for a given public property.
-            </summary>
-            <param name="name">The name of the saved variable to associate with the field.</param>
-        </member>
-        <member name="T:ATT.SavedVariablePerCharacterAttribute">
-            <summary>
-            The Saved Variable Per Character Attribute.
-            Used to synchronize PerCharacter SavedVariable tables with database tables.
-            </summary>
-        </member>
-        <member name="P:ATT.SavedVariablePerCharacterAttribute.Name">
-            <summary>
-            The name of the saved variable used to store this data.
-            </summary>
-        </member>
-        <member name="M:ATT.SavedVariablePerCharacterAttribute.#ctor(System.String)">
-            <summary>
-            Create a saved variable attribute for a given public property.
-            </summary>
-            <param name="name">The name of the saved variable to associate with the field.</param>
-        </member>
         <member name="M:ATT.SavedVariables.GlobalLuaTableToJSON(NLua.LuaTable)">
             <summary>
             Convert the Lua Table to JSON.
@@ -557,81 +472,166 @@
             <param name="root">The Saved Variables Root Folder for the Account.</param>
             <returns>The less raw data.</returns>
         </member>
-        <member name="T:ATT.SharedCollectionData">
+        <member name="T:ATT.ATTCharacterData">
             <summary>
-            The Shared Collection Data class.
-            Contains the tables that are shared between Account and Character collection structures.
+            Represents a player's individual WoW Character and its associated collection.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Achievements">
+        <member name="P:ATT.ATTCharacterData.GUID">
             <summary>
-            All of the achievements that are a part of this collection.
+            The GUID that identifies this character.
+            GOTCHA: This identifier changes when a player Server Transfers.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.AzeriteEssenceRanks">
+        <member name="P:ATT.ATTCharacterData.Name">
             <summary>
-            All of the azerite essence ranks that are a part of this collection.
+            The character's name.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Buildings">
+        <member name="P:ATT.ATTCharacterData.Realm">
             <summary>
-            All of the buildings that are a part of this collection.
+            The Realm where this character resides.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Factions">
+        <member name="P:ATT.ATTCharacterData.RealmName">
             <summary>
-            All of the factions that are a part of this collection.
+            The fully qualified realm name that represents this character.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.FlightPaths">
+        <member name="P:ATT.ATTCharacterData.ClassID">
             <summary>
-            All of the flight paths that are a part of this collection.
+            This character's Class ID.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Followers">
+        <member name="P:ATT.ATTCharacterData.Class">
             <summary>
-            All of the followers that are a part of this collection.
+            This character's Class.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Quests">
+        <member name="P:ATT.ATTCharacterData.RaceID">
             <summary>
-            All of the quests that are a part of this collection.
+            This character's Race ID.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Spells">
+        <member name="P:ATT.ATTCharacterData.Race">
             <summary>
-            All of the spells that are a part of this collection.
+            This character's Race.
             </summary>
         </member>
-        <member name="F:ATT.SharedCollectionData.Titles">
+        <member name="P:ATT.ATTCharacterData.FactionID">
             <summary>
-            All of the titles that are a part of this collection.
+            This character's Faction ID.
             </summary>
         </member>
-        <member name="M:ATT.SharedCollectionData.ExportToCSV(System.String)">
+        <member name="P:ATT.ATTCharacterData.Level">
+            <summary>
+            This character's level.
+            </summary>
+        </member>
+        <member name="P:ATT.ATTCharacterData.Deaths">
+            <summary>
+            This character's deaths.
+            </summary>
+        </member>
+        <member name="P:ATT.ATTCharacterData.Text">
+            <summary>
+            This character's color-coded display name.
+            </summary>
+        </member>
+        <member name="P:ATT.ATTCharacterData.LastPlayed">
+            <summary>
+            The last time this character was played.
+            </summary>
+        </member>
+        <member name="M:ATT.ATTCharacterData.ExportToCSV(System.String)">
             <summary>
             Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
             This is traditionally used within Microsoft Excel.
             </summary>
             <param name="directory">The directory to write to.</param>
         </member>
-        <member name="M:ATT.SharedCollectionData.Export(System.Text.StringBuilder)">
+        <member name="T:ATT.ATTAccountWideData">
             <summary>
-            Export the collection data to the builder for use in CSV files.
+            Represents a player's individual WoW Account and its combined collection.
             </summary>
-            <param name="builder">The builder.</param>
         </member>
-        <member name="M:ATT.SharedCollectionData.Load(System.IO.BinaryReader)">
+        <member name="P:ATT.ATTAccountWideData.AccountName">
             <summary>
-            Load the collection data from the data reader.
+            The Account Name associated with this account.
             </summary>
-            <param name="reader">The reader.</param>
         </member>
-        <member name="M:ATT.SharedCollectionData.Save(System.IO.BinaryWriter)">
+        <member name="F:ATT.ATTAccountWideData.Characters">
             <summary>
-            Save the collection data to the data writer.
+            
             </summary>
-            <param name="writer">The writer.</param>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.Artifacts">
+            <summary>
+            All of the artifacts that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.FactionBonus">
+            <summary>
+            All of the faction bonuses that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.HeirloomRanks">
+            <summary>
+            All of the heirloom ranks that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.Illusions">
+            <summary>
+            All of the illusions that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.Sources">
+            <summary>
+            All of the sources that are a part of this collection.
+            </summary>
+        </member>
+        <member name="F:ATT.ATTAccountWideData.Toys">
+            <summary>
+            All of the toys that are a part of this collection.
+            </summary>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.#ctor(System.String)">
+            <summary>
+            Create an instance of the WoW Account class with an associated name.
+            </summary>
+            <param name="accountName">The name of the account.</param>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.ExportToCSV(System.String)">
+            <summary>
+            Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
+            This is traditionally used within Microsoft Excel.
+            </summary>
+            <param name="directory">The directory to write to.</param>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.Import(System.Collections.Generic.Dictionary{System.Object,System.Object})">
+            <summary>
+            Import data from the saved variables associated with the account.
+            </summary>
+            <param name="savedVariables">The saved variables.</param>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.Load(System.String)">
+            <summary>
+            Load the data from the local account data files.
+            </summary>
+            <param name="path">The root path for ATT Data.</param>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.Save(System.String)">
+            <summary>
+            Save the data to the local account data files.
+            </summary>
+            <param name="path">The root path for ATT Data.</param>
+        </member>
+        <member name="M:ATT.ATTAccountWideData.ToContainerData(System.Collections.Generic.Dictionary{System.Object,System.Object})">
+            <summary>
+            Convert a raw data object into the format expected by the importer.
+            </summary>
+            <param name="data">The raw data.</param>
+            <returns>The collection data.</returns>
         </member>
         <member name="T:MiniJSON.Json">
              <summary>
