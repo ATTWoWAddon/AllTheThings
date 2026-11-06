@@ -1,0 +1,94 @@
+name: C# project binary equality (temporary)
+
+on:
+  push:
+    branches:
+      - codex/csproj-normalization-ci
+
+permissions:
+  contents: read
+
+concurrency:
+  group: csproj-binary-equality-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    env:
+      ATT_CSPROJ_BASE_SHA: c90baf94d3d9c0799a942b505b871e2fcf1c36f6
+      ATT_CSPROJ_NORMALIZED_SHA: 55fa4a6fab2b4f90d12728db2f445e23d9dc3df4
+      ATT_CSPROJ_ARTIFACT_ROOT: ${{ runner.temp }}\att-csproj-binary-equality
+      DOTNET_CLI_TELEMETRY_OPTOUT: "1"
+      DOTNET_NOLOGO: "1"
+
+    steps:
+      - name: Prepare evidence folder
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path $env:ATT_CSPROJ_ARTIFACT_ROOT | Out-Null
+
+      - name: Checkout CI harness
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          path: ci-harness
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.403
+
+      - name: Pin SDK for both source revisions
+        shell: pwsh
+        run: |
+          $globalJson = Join-Path $env:GITHUB_WORKSPACE "global.json"
+          [System.IO.File]::WriteAllText($globalJson, '{"sdk":{"version":"10.0.403","rollForward":"disable"}}')
+
+      - name: Record runner and tool versions
+        shell: pwsh
+        run: |
+          $versionFile = Join-Path $env:ATT_CSPROJ_ARTIFACT_ROOT "versions.txt"
+          "OS=$([System.Runtime.InteropServices.RuntimeInformation]::OSDescription)" | Set-Content -Path $versionFile -Encoding utf8
+          "PROCESSOR_ARCHITECTURE=$env:PROCESSOR_ARCHITECTURE" | Add-Content -Path $versionFile -Encoding utf8
+          "Is64BitOperatingSystem=$([Environment]::Is64BitOperatingSystem)" | Add-Content -Path $versionFile -Encoding utf8
+          "Python=$(& python --version 2>&1)" | Add-Content -Path $versionFile -Encoding utf8
+          "Git=$(& git --version 2>&1)" | Add-Content -Path $versionFile -Encoding utf8
+          "dotnet=$(& dotnet --version 2>&1)" | Add-Content -Path $versionFile -Encoding utf8
+          if ((& dotnet --version).Trim() -ne "10.0.403") {
+            throw "Expected .NET SDK 10.0.403."
+          }
+          if (-not [Environment]::Is64BitOperatingSystem) {
+            throw "The binary comparison requires a 64-bit Windows runner."
+          }
+          dotnet --info | Add-Content -Path $versionFile -Encoding utf8
+
+      - name: Checkout source history at normalization head
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ env.ATT_CSPROJ_NORMALIZED_SHA }}
+          path: source
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Build both revisions and compare every output
+        shell: pwsh
+        working-directory: ci-harness
+        run: |
+          $sourceRoot = Join-Path $env:GITHUB_WORKSPACE "source"
+          python .github/scripts/check-csproj-binaries.py --source-root $sourceRoot --artifact-root $env:ATT_CSPROJ_ARTIFACT_ROOT
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      - name: Upload comparison evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: csproj-binary-equality-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/att-csproj-binary-equality
+          if-no-files-found: warn
+          retention-days: 7
