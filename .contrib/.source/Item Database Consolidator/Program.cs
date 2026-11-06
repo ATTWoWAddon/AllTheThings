@@ -44,7 +44,7 @@ namespace ATT
                         }
                     }
                     builder.AppendLine().AppendLine("};").AppendLine("-- #endif");
-                    File.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
+                    ATT.TextFile.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString());
                 }
             }
 

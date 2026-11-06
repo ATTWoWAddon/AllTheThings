@@ -123,7 +123,7 @@ namespace ATT
                 /*
                 var jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(recipeList, Newtonsoft.Json.Formatting.Indented);
                 if (!Directory.Exists("json")) Directory.CreateDirectory("json");
-                File.WriteAllText($"json/{profession}.json", jsonString);
+                ATT.TextFile.WriteAllText($"json/{profession}.json", jsonString);
                 */
 
                 sb.AppendLine().Append("-- ").AppendLine(profession);
