@@ -1,0 +1,40 @@
+name: Verify csproj style builds
+
+on:
+  push:
+    branches:
+      - codex/csproj-style-ci
+    tags-ignore:
+      - '**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2025-vs2026
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          ref: f1ce7e6208f5364847613ed6b0b6623bdd82e710
+          path: style-product
+      - uses: actions/checkout@v7
+        with:
+          ref: e515aa9dc34f22d370e141847d66e25db2aa0a4b
+          path: style-baseline
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: 10.0.x
+      - uses: microsoft/setup-msbuild@v3
+      - name: Compare before and after builds
+        shell: pwsh
+        run: ./.github/scripts/csproj-style-ci.ps1
+      - name: Upload build comparison evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: csproj-style-comparison-evidence
+          path: ${{ runner.temp }}\att-csproj-evidence
+          if-no-files-found: warn
