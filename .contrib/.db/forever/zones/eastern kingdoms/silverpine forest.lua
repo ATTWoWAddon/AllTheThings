@@ -235,6 +235,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(95111, {	-- An Underrated Talent
+				sourceQuest = 95036,	-- A Moon-Kissed Blade
 				qg = 248840,	-- Trevan Rol
 				coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
 				races = HORDE_PALADINS,
