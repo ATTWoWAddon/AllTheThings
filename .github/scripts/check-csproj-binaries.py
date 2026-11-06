@@ -189,6 +189,89 @@ def run_logged(command: list[str], cwd: Path, log_path: Path) -> None:
         )
 
 
+def discover_full_msbuild(source_root: Path) -> dict[str, str]:
+    program_files = os.environ.get("ProgramFiles(x86)")
+    if not program_files:
+        raise RuntimeError("ProgramFiles(x86) is required to locate vswhere.exe")
+    vswhere = Path(program_files) / "Microsoft Visual Studio" / "Installer" / "vswhere.exe"
+    if not vswhere.is_file():
+        raise RuntimeError(f"vswhere.exe not found: {vswhere}")
+    command = [
+        str(vswhere), "-latest", "-products", "*", "-requires",
+        "Microsoft.Component.MSBuild", "-format", "json", "-utf8",
+    ]
+    result = subprocess.run(
+        command, cwd=source_root, check=True, stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace",
+    )
+    instances = json.loads(result.stdout.lstrip("\ufeff"))
+    if not isinstance(instances, list) or len(instances) != 1:
+        raise RuntimeError("Expected exactly one latest VS instance containing MSBuild")
+    instance = instances[0]
+    installation = Path(instance["installationPath"])
+    version = instance["installationVersion"]
+    version_parts = tuple(int(part) for part in version.split(".")[:2])
+    if len(version_parts) != 2 or version_parts < (18, 0):
+        raise RuntimeError(f"Expected Visual Studio 18 or later, found {version}")
+    executable = installation / "MSBuild" / "Current" / "Bin" / "amd64" / "MSBuild.exe"
+    if not executable.is_file():
+        raise RuntimeError(f"64-bit MSBuild.exe not found: {executable}")
+    return {
+        "vswhere": str(vswhere),
+        "visual_studio_path": str(installation),
+        "visual_studio_version": version,
+        "executable": str(executable),
+    }
+
+
+def inspect_full_msbuild(
+    source_root: Path, project_path: Path, configuration: str, output_dir: Path,
+    discovery: dict[str, str], log_path: Path,
+) -> dict[str, str]:
+    command = [
+        discovery["executable"], str(project_path), "-nologo",
+        f"-p:Configuration={configuration}", "-p:Platform=x64",
+        f"-p:OutDir={output_dir}{os.sep}", *COMPILE_PROPERTIES,
+        "-getProperty:MSBuildRuntimeType,MSBuildVersion,NETCoreSdkVersion,MSBuildSDKsPath,TargetFramework",
+    ]
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    completed = subprocess.run(
+        command, cwd=source_root, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        text=True, encoding="utf-8", errors="replace",
+    )
+    log_path.write_text(
+        "COMMAND " + json.dumps(command, ensure_ascii=False) + "\n"
+        + completed.stdout + f"\nEXIT_CODE {completed.returncode}\n",
+        encoding="utf-8", newline="\n",
+    )
+    if completed.returncode:
+        raise RuntimeError(f"MSBuild host inspection failed; full log: {log_path}")
+    properties = json.loads(completed.stdout.lstrip("\ufeff"))["Properties"]
+    if properties.get("MSBuildRuntimeType") != "Full":
+        raise RuntimeError(f"Expected Full MSBuild runtime: {properties}")
+    if properties.get("NETCoreSdkVersion") != SDK_VERSION:
+        raise RuntimeError(f"Expected .NET SDK {SDK_VERSION} under MSBuild: {properties}")
+    if properties.get("TargetFramework") != "net48":
+        raise RuntimeError(f"Expected net48 project under Full MSBuild: {properties}")
+    version = properties.get("MSBuildVersion", "")
+    try:
+        version_parts = tuple(int(part) for part in version.split(".")[:2])
+    except ValueError as error:
+        raise RuntimeError(f"Invalid MSBuild version: {version}") from error
+    if len(version_parts) != 2 or version_parts < (18, 0):
+        raise RuntimeError(f"Expected MSBuild 18 or later, found {version}")
+    sdk_path = properties.get("MSBuildSDKsPath", "")
+    if not sdk_path:
+        raise RuntimeError("MSBuild did not report its SDK path")
+    return {
+        **discovery,
+        "runtime": properties["MSBuildRuntimeType"],
+        "msbuild_version": version,
+        "sdk_version": properties["NETCoreSdkVersion"],
+        "sdks_path": sdk_path,
+    }
+
+
 def git(source_root: Path, *args: str) -> str:
     result = subprocess.run(
         ["git", "-c", "core.hooksPath=/dev/null", "-c", "core.fsmonitor=false", *args],
@@ -379,11 +462,43 @@ def snapshot_outputs(
     shutil.copytree(output_dir, destination)
 
 
+def build_commands(
+    project: dict[str, Any], project_path: Path, configuration: str,
+    output_dir: Path, binlog_dir: Path, full_msbuild: dict[str, str],
+) -> tuple[list[str], list[str]]:
+    out_dir_arg = str(output_dir) + os.sep
+    shared_properties = [
+        "-p:Platform=x64", f"-p:OutDir={out_dir_arg}", *COMPILE_PROPERTIES,
+    ]
+    if project["framework"] == "net48":
+        prefix = [full_msbuild["executable"], str(project_path), "-nologo"]
+        restore = prefix + ["-target:Restore", "-verbosity:minimal"]
+        build = prefix + ["-target:Build", "-verbosity:minimal"]
+        restore += [f"-p:Configuration={configuration}", *shared_properties]
+        build += [f"-p:Configuration={configuration}", *shared_properties]
+    elif project["framework"] == "net10.0":
+        restore = [
+            "dotnet", "restore", str(project_path), "--verbosity", "minimal",
+            f"-p:Configuration={configuration}", *shared_properties,
+        ]
+        build = [
+            "dotnet", "build", str(project_path), "--no-restore",
+            "--configuration", configuration, "--verbosity", "minimal",
+            *shared_properties,
+        ]
+    else:
+        raise RuntimeError(f"Unsupported project framework: {project['framework']}")
+    restore.append(f"-binaryLogger:{binlog_dir / 'restore.binlog'}")
+    build.append(f"-binaryLogger:{binlog_dir / 'build.binlog'}")
+    return restore, build
+
+
 def build_revision(
     source_root: Path,
     label: str,
     checkout_record: dict[str, Any],
     artifact_root: Path,
+    full_msbuild: dict[str, str],
 ) -> dict[str, Any]:
     version = subprocess.run(
         ["dotnet", "--version"],
@@ -403,6 +518,7 @@ def build_revision(
     result: dict[str, Any] = {
         **checkout_record,
         "dotnet_sdk": version,
+        "full_msbuild": None,
         "builds": {},
     }
     atomic_json(artifact_root / "manifests" / f"{label}.json", result)
@@ -429,20 +545,24 @@ def build_revision(
             binlog_dir.mkdir(parents=True, exist_ok=True)
             restore_binlog = str(binlog_dir / "restore.binlog")
             build_binlog = str(binlog_dir / "build.binlog")
-            out_dir_arg = str(output_dir) + os.sep
-
-            restore_command = [
-                "dotnet",
-                "restore",
-                str(project_path),
-                "--verbosity",
-                "minimal",
-                f"-p:Configuration={configuration}",
-                "-p:Platform=x64",
-                f"-p:OutDir={out_dir_arg}",
-                *COMPILE_PROPERTIES,
-                f"-binaryLogger:{restore_binlog}",
-            ]
+            if project["framework"] == "net48":
+                host = inspect_full_msbuild(
+                    source_root, project_path, configuration, output_dir,
+                    full_msbuild, log_dir / "host-inspection.log",
+                )
+                if result["full_msbuild"] is None:
+                    result["full_msbuild"] = host
+                elif result["full_msbuild"] != host:
+                    raise RuntimeError(f"Full MSBuild host changed within {label}: {key}")
+                toolchain = {"kind": "full-msbuild", **host}
+            elif project["framework"] == "net10.0":
+                toolchain = {"kind": "dotnet", "sdk_version": version}
+            else:
+                raise RuntimeError(f"Unsupported project framework: {project['framework']}")
+            atomic_json(artifact_root / "manifests" / f"{label}.json", result)
+            restore_command, build_command = build_commands(
+                project, project_path, configuration, output_dir, binlog_dir, full_msbuild
+            )
             run_logged(
                 restore_command,
                 source_root,
@@ -452,20 +572,6 @@ def build_revision(
                 raise RuntimeError(f"Restore binlog missing or empty: {restore_binlog}")
             restore_graph = resolved_restore_graph(project_path)
 
-            build_command = [
-                "dotnet",
-                "build",
-                str(project_path),
-                "--no-restore",
-                "--configuration",
-                configuration,
-                "--verbosity",
-                "minimal",
-                "-p:Platform=x64",
-                f"-p:OutDir={out_dir_arg}",
-                *COMPILE_PROPERTIES,
-                f"-binaryLogger:{build_binlog}",
-            ]
             run_logged(
                 build_command,
                 source_root,
@@ -486,6 +592,7 @@ def build_revision(
                 "configuration": configuration,
                 "platform": "x64",
                 "out_dir": str(output_dir),
+                "toolchain": toolchain,
                 "restore_graph": restore_graph,
                 "required_outputs": required_outputs,
                 "output_file_count": len(hashes),
@@ -532,10 +639,33 @@ def compare_manifests(
         }
         atomic_json(artifact_root / "comparison.json", incomplete)
         raise RuntimeError("Build combinations are incomplete or unexpected; see comparison.json")
+    for label, manifest in (("base", base), ("normalized", normalized)):
+        host = manifest.get("full_msbuild")
+        if manifest.get("dotnet_sdk") != SDK_VERSION:
+            differences[f"{label}/dotnet-sdk"] = "Missing or unexpected .NET SDK"
+        if not isinstance(host, dict) or host.get("runtime") != "Full" or host.get("sdk_version") != SDK_VERSION:
+            differences[f"{label}/full-msbuild"] = "Missing or unexpected Full MSBuild host"
+    if base.get("full_msbuild") != normalized.get("full_msbuild"):
+        differences["full-msbuild"] = "Full MSBuild host differs between revisions"
+    frameworks = {
+        f"{project['key']}/{configuration}": project["framework"]
+        for project in PROJECTS for configuration in CONFIGURATIONS
+    }
     for key in sorted(expected):
         left = base_builds[key]["outputs"]
         right = normalized_builds[key]["outputs"]
         build_differences: dict[str, Any] = {}
+        for label, manifest in (("base", base), ("normalized", normalized)):
+            toolchain = manifest["builds"][key].get("toolchain", {})
+            expected_kind = "full-msbuild" if frameworks[key] == "net48" else "dotnet"
+            if toolchain.get("kind") != expected_kind or toolchain.get("sdk_version") != SDK_VERSION:
+                build_differences[f"{label}_toolchain"] = "Missing or unexpected build host"
+            elif expected_kind == "full-msbuild" and {
+                k: v for k, v in toolchain.items() if k != "kind"
+            } != manifest.get("full_msbuild"):
+                build_differences[f"{label}_toolchain"] = "Full MSBuild metadata does not match revision host"
+        if base_builds[key].get("toolchain") != normalized_builds[key].get("toolchain"):
+            build_differences["toolchain"] = "Build host differs between revisions"
         if left != right:
             files: dict[str, Any] = {}
             for filename in sorted(set(left) | set(right)):
@@ -560,7 +690,7 @@ def compare_manifests(
     atomic_json(artifact_root / "comparison.json", comparison)
     if differences:
         raise RuntimeError(
-            f"Binary outputs differ in {len(differences)} build combination(s); "
+            f"Output or toolchain differences in {len(differences)} comparison group(s); "
             f"see {artifact_root / 'comparison.json'}"
         )
     return comparison
@@ -615,6 +745,9 @@ def main() -> int:
     atomic_json(artifact_root / "versions.json", tool_versions)
 
     try:
+        full_msbuild = discover_full_msbuild(source_root)
+        tool_versions["full_msbuild_discovery"] = full_msbuild
+        atomic_json(artifact_root / "versions.json", tool_versions)
         for revision in (base_sha, normalized_sha):
             git(source_root, "cat-file", "-e", f"{revision}^{{commit}}")
         parent_sha = git(source_root, "rev-parse", f"{normalized_sha}^").lower()
@@ -626,14 +759,14 @@ def main() -> int:
             source_root, "base", base_sha, artifact_root
         )
         base_manifest = build_revision(
-            source_root, "base", base_checkout, artifact_root
+            source_root, "base", base_checkout, artifact_root, full_msbuild
         )
 
         normalized_checkout = checkout_revision(
             source_root, "normalized", normalized_sha, artifact_root
         )
         normalized_manifest = build_revision(
-            source_root, "normalized", normalized_checkout, artifact_root
+            source_root, "normalized", normalized_checkout, artifact_root, full_msbuild
         )
 
         comparison = compare_manifests(
