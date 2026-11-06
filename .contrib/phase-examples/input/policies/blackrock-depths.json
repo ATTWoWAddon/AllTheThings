@@ -1,0 +1,30 @@
+{
+  "progression:main": {
+    "brd.dungeon": { "windows": [{ "from": "start" }] },
+    "brd.second-half": { "windows": [{ "from": "start" }] }
+  },
+  "era:main": {
+    "brd.dungeon": { "windows": [{ "from": "start" }] },
+    "brd.second-half": { "windows": [{ "from": "start" }] }
+  },
+  "anniversary:main": {
+    "brd.dungeon": { "windows": [{ "from": "start" }] },
+    "brd.second-half": { "windows": [{ "from": "start" }] }
+  },
+  "sod:main": {
+    "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.second-half": { "windows": [{ "from": "vanilla.4" }] },
+    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.angerforge-axe": { "windows": [{ "from": "vanilla.4" }] }
+  },
+  "sod:replay": {
+    "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.second-half": { "windows": [{ "from": "vanilla.4" }] },
+    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.angerforge-axe": { "windows": [{ "from": "vanilla.4" }] }
+  },
+  "progression:replay": {
+    "brd.dungeon": { "windows": [{ "from": "start" }] },
+    "brd.second-half": { "windows": [{ "from": "start" }] }
+  }
+}

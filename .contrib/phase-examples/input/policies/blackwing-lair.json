@@ -1,0 +1,34 @@
+{
+  "progression:main": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] }
+  },
+  "era:main": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] }
+  },
+  "anniversary:main": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] }
+  },
+  "sod:main": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
+    "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] }
+  },
+  "sod:replay": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
+    "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] }
+  },
+  "progression:replay": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] }
+  }
+}

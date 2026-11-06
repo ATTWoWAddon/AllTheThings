@@ -1,0 +1,36 @@
+{
+  "milestones": [
+    "vanilla.1",
+    "vanilla.2",
+    "vanilla.3",
+    "vanilla.4",
+    "vanilla.4.raids",
+    "vanilla.5",
+    "vanilla.6.scepter",
+    "vanilla.6.war-effort",
+    "vanilla.6.war-effort-end",
+    "vanilla.6.war",
+    "vanilla.6.raids",
+    "vanilla.7"
+  ],
+  "content": {
+    "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.second-half": { "windows": [{ "from": "vanilla.4" }] },
+    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.angerforge-axe": { "windows": [{ "from": "vanilla.4" }] },
+    "dfc.dungeon": { "status": "unknown", "windows": [] },
+    "dfc.azgaloth": { "windows": [{ "from": "vanilla.5" }] },
+    "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] },
+    "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },
+    "dire-maul.isalien": { "status": "unknown", "windows": [] },
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
+    "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] },
+    "aq40.common": { "windows": [{ "from": "vanilla.6.raids" }] },
+    "aq40.original": { "status": "disabled", "windows": [] },
+    "aq40.reworked": { "windows": [{ "from": "vanilla.6.raids" }] },
+    "gnomeregan.dungeon": { "status": "disabled", "windows": [] },
+    "gnomeregan.raid10": { "windows": [{ "from": "vanilla.2" }] }
+  }
+}

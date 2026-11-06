@@ -1,0 +1,28 @@
+{
+  "progression:main": {
+    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.original": { "windows": [{ "from": "start" }] }
+  },
+  "era:main": {
+    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.original": { "windows": [{ "from": "start" }] }
+  },
+  "anniversary:main": {
+    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.original": { "windows": [{ "from": "start" }] }
+  },
+  "sod:main": {
+    "aq40.common": { "windows": [{ "from": "vanilla.6.raids" }] },
+    "aq40.original": { "status": "disabled", "windows": [] },
+    "aq40.reworked": { "windows": [{ "from": "vanilla.6.raids" }] }
+  },
+  "sod:replay": {
+    "aq40.common": { "windows": [{ "from": "vanilla.6.raids" }] },
+    "aq40.original": { "status": "disabled", "windows": [] },
+    "aq40.reworked": { "windows": [{ "from": "vanilla.6.raids" }] }
+  },
+  "progression:replay": {
+    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.original": { "windows": [{ "from": "start" }] }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "progression:main": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
+    "dire-maul.isalien": { "status": "unknown", "windows": [] }
+  },
+  "era:main": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
+    "dire-maul.isalien": { "status": "unknown", "windows": [] }
+  },
+  "anniversary:main": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.2" }] },
+    "dire-maul.isalien": { "windows": [{ "from": "vanilla.4" }] }
+  },
+  "sod:main": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },
+    "dire-maul.isalien": { "status": "unknown", "windows": [] }
+  },
+  "sod:replay": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },
+    "dire-maul.isalien": { "status": "unknown", "windows": [] }
+  },
+  "progression:replay": {
+    "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
+    "dire-maul.isalien": { "windows": [{ "from": "fixture.set2-open" }] }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "milestones": [
+    "vanilla.1",
+    "vanilla.1.dire-maul",
+    "vanilla.2",
+    "vanilla.3",
+    "vanilla.4",
+    "vanilla.5.war-effort",
+    "fixture.set2-open",
+    "vanilla.6"
+  ],
+  "content": {
+    "brd.dungeon": { "windows": [{ "from": "start" }] },
+    "brd.second-half": { "windows": [{ "from": "start" }] },
+    "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
+    "dire-maul.isalien": { "windows": [{ "from": "fixture.set2-open" }] },
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
+    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.original": { "windows": [{ "from": "start" }] },
+    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+  }
+}
