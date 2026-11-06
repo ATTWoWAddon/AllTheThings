@@ -1,23 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net48</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <RootNamespace>ATT</RootNamespace>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <ApplicationIcon>base_72x72_Q9mPGQ.ico</ApplicationIcon>
     <Platforms>x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ATT</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ApplicationIcon>base_72x72_Q9mPGQ.ico</ApplicationIcon>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <OutputPath>..\..\.tools\</OutputPath>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)' == 'Classic Era' Or '$(Configuration)' == 'Classic TBC' Or '$(Configuration)' == 'Classic Wrath'">
     <Optimize>true</Optimize>
   </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />

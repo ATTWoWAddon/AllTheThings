@@ -1,30 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platform>x64</Platform>
     <Platforms>x64</Platforms>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net48</TargetFramework>
-    <StartupObject>ATT.Program</StartupObject>
-    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Platform>x64</Platform>
     <PlatformTarget>x64</PlatformTarget>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <StartupObject>ATT.Program</StartupObject>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>..\..\.tools\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
     <DebugType>full</DebugType>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
     <DebugType>none</DebugType>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="System.Net.Http" />
     <PackageReference Include="Csv" Version="[2.0.245]" />
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
+
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
     <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
   </Target>

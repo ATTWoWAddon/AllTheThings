@@ -1,11 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
     <Platforms>x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Exe</OutputType>
     <RootNamespace>ATT</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -16,12 +15,11 @@
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
 
-    <ItemGroup>
-        <None Remove="att_logo_128_new_jrX_icon.ico" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Remove="att_logo_128_new_jrX_icon.ico" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <Content Include="att_logo_128_new_jrX_icon.ico" />
-    </ItemGroup>
-
+  <ItemGroup>
+    <Content Include="att_logo_128_new_jrX_icon.ico" />
+  </ItemGroup>
 </Project>
