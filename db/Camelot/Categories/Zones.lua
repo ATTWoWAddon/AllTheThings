@@ -13577,7 +13577,7 @@ q(3365,{coords={
 [1426]={{28.8,66.4}}},lvl=4,qgs={836},qis={10440},r=2,sourceQuests={3364}}),
 q(94373,{awp=16001,c={7},coords={
 [1426]={{28.8,66.2}}},lvl=4,qgs={257446},races={3},sourceQuests={98581},g={
-qo(1,{maps={428},providers={{"i",264356}}})}}),
+qo(1,{crs={706,946},maps={428},providers={{"i",264356}}})}}),
 q(94374,{awp=16001,c={7},coords={
 [1426]={{28.8,66.2}}},lvl=4,qgs={257446},qis={6635},races={3},sourceQuests={94373}}),
 q(94375,{awp=16001,c={7},coords={
@@ -17478,7 +17478,7 @@ r(1244645,{awp=16001,learnedAt=85,requireSkill=171,skillID=2937}),
 r(1244648,{awp=16001,learnedAt=230,requireSkill=171,skillID=2937})}})})}),
 h(-45,{
 q(91859,{awp=16001,c={2},coords={
-[1421]={{43.4,41}}},lvl=18,qgs={248840},races={5}}),
+[1421]={{43.4,41}}},lvl=18,qgs={248840},races={5},sourceQuests={91858}}),
 q(91860,{awp=16001,c={2},coords={
 [1421]={{45.6,41.8}}},lvl=18,qgs={259611},races={5},sourceQuests={91859}}),
 q(530,{coords={

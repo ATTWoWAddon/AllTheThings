@@ -53,6 +53,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 		}),
 		n(QUESTS, {
 			q(91859, {	-- A Curious Pair
+				sourceQuest = 91858,	-- Diplomatic Incident
 				qg = 248840,	-- Trevan Rol
 				coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
 				races = HORDE_PALADINS,
