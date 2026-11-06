@@ -507,6 +507,18 @@ instanceroot(228, {	-- Blackrock Depths
 				groups = {
 					objective(1, {	-- 0/10 Essence of the Elements
 						provider = { "i", 11129 },	-- Essence of the Elements
+						crs = {
+							9156,	-- Ambassador Flamelash
+							8910,	-- Blazing Fireguard
+							8909,	-- Fireguard
+							8911,	-- Fireguard Destroyer
+							9017,	-- Lord Incendius
+							9025,	-- Lord Roccor
+							8908,	-- Molten War Golem
+							8923,	-- Panzor the Invincible
+							8906,	-- Ragereaver Golem
+							8905,	-- Warbringer Construct
+						},
 					}),
 					i(12038),	-- Lagrave's Seal
 				},
@@ -1217,4 +1229,10 @@ instanceroot(228, {	-- Blackrock Depths
 			}),
 		}),
 	},
+});
+root(ROOTS.HiddenQuestTriggers, {
+	q(3911, {	-- The Last Element
+		description = "Unused duplicate of 'The Last Element' (7201) with no quest giver. Likely gets marked as completed alongside 7201.",
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });
