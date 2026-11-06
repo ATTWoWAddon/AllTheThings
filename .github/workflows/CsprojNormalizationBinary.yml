@@ -19,7 +19,6 @@ jobs:
     env:
       ATT_CSPROJ_BASE_SHA: c90baf94d3d9c0799a942b505b871e2fcf1c36f6
       ATT_CSPROJ_NORMALIZED_SHA: 55fa4a6fab2b4f90d12728db2f445e23d9dc3df4
-      ATT_CSPROJ_ARTIFACT_ROOT: ${{ runner.temp }}\att-csproj-binary-equality
       DOTNET_CLI_TELEMETRY_OPTOUT: "1"
       DOTNET_NOLOGO: "1"
 
@@ -27,7 +26,9 @@ jobs:
       - name: Prepare evidence folder
         shell: pwsh
         run: |
-          New-Item -ItemType Directory -Force -Path $env:ATT_CSPROJ_ARTIFACT_ROOT | Out-Null
+          $artifactRoot = Join-Path $env:RUNNER_TEMP "att-csproj-binary-equality"
+          New-Item -ItemType Directory -Force -Path $artifactRoot | Out-Null
+          "ATT_CSPROJ_ARTIFACT_ROOT=$artifactRoot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Checkout CI harness
         uses: actions/checkout@v7
