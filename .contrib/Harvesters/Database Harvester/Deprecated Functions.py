@@ -1,14 +1,15 @@
-
 # mypy: ignore-errors
+
+from TextOutput import text_output
 
 def create_raw_file(thing: type[Thing]) -> None:
     """Create a raw file for a thing."""
     raw_path = Path("Raw", f"{thing.__name__}.txt")
     builds_path = Path("Builds", f"{thing.__name__}.txt")
-    with open(builds_path) as builds_file:
+    with open(builds_path, encoding="utf-8-sig") as builds_file:
         for build in builds_file:
             thing_list = get_thing_data(thing, build.strip())
-            with open(raw_path, "r+") as raw_file:
+            with text_output(raw_path, "r+") as raw_file:
                 old_lines = raw_file.readlines()
                 # TODO: this only finds new Things, not removed Things
                 difference = sorted(
@@ -44,7 +45,7 @@ def create_named_file(thing: type[Thing]) -> None:
                 ids[index] += DELIMITER + " \\\\ ".join(name_list) + "\n"
             else:
                 ids[index] += "\n"
-        with open(named_path, "w") as named_file:
+        with text_output(named_path) as named_file:
             named_file.writelines(ids)
 
 
@@ -80,16 +81,16 @@ def check_diff():
     things: list[type[Thing]] = Thing.__subclasses__()
     main_list: list[str] = []
     for thing in things:
-        with open(Path("Builds", f"{thing.__name__}.txt"), "r") as build_list:
+        with open(Path("Builds", f"{thing.__name__}.txt"), "r", encoding="utf-8-sig") as build_list:
             build_lines: list[str] = build_list.readlines()
             build_dict[thing] = build_lines
-    with open(Path("Builds", "Achievements.txt"), "r") as main_build:
+    with open(Path("Builds", "Achievements.txt"), "r", encoding="utf-8-sig") as main_build:
         main_build_lines: list[str] = main_build.readlines()
         for line in main_build_lines:
             if all(line in values for values in build_dict.values()):
                 print(line)
                 main_list.append(line)
-    with open(Path("Builds", "Retail.txt"), "w") as build_list:
+    with text_output(Path("Builds", "Retail.txt")) as build_list:
         build_list.writelines(main_list)
 
 def check_diff():
@@ -99,10 +100,10 @@ def check_diff():
     things.remove(SpellNames)
     main_list: list[str] = []
     for thing in things:
-        with open(Path("Builds", f"{thing.__name__}.txt"), "r") as build_list:
+        with open(Path("Builds", f"{thing.__name__}.txt"), "r", encoding="utf-8-sig") as build_list:
             build_lines: list[str] = build_list.readlines()
             build_dict[thing] = build_lines
-    with open(Path("Builds", "Achievements.txt"), "r") as main_build:
+    with open(Path("Builds", "Achievements.txt"), "r", encoding="utf-8-sig") as main_build:
         main_build_lines: list[str] = main_build.readlines()
         for line in main_build_lines:
             if all(line in values for values in build_dict.values()):
@@ -118,7 +119,7 @@ def check_diff():
                     build_dict[thing].remove(line)
             #with open(Path("Builds", f"{thing.__name__}2.txt"), "w") as build_list:
                 #build_list.writelines(build_dict[thing])
-    with open(Path("Builds", "Retail2.txt"), "w") as build_list:
+    with text_output(Path("Builds", "Retail2.txt")) as build_list:
         build_list.writelines(main_list)
 
 def get_existing_ids_old(thing: type[Thing]) -> list[str]:
@@ -181,7 +182,7 @@ def create_missing_recipes() -> None:
     }
     for profession in profession_dict:
         print(profession)
-        with open(missing_path_dict[profession], "w") as missing_file:
+        with text_output(missing_path_dict[profession]) as missing_file:
             raw_ids = extract_nth_column(raw_path_dict[profession], 0)
             excluded_ids = extract_nth_column(exclusion_path_dict[profession], 0)
             difference = sorted(
@@ -214,7 +215,7 @@ def create_missing_file(thing: type[Thing]) -> None:
         "00 - Missing DB",
         f"Missing{thing.__name__}.txt",
     )
-    with open(missing_path, "w") as missing_file:
+    with text_output(missing_path) as missing_file:
         raw_ids = extract_nth_column(Path("Raw", f"{thing.__name__}.txt"), 0)
         excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
         difference_db = None
@@ -228,7 +229,7 @@ def create_missing_file(thing: type[Thing]) -> None:
             missing_file.write("Good Work! Nothing to do here!")
         if thing.db_path:
             existing_things = list[str]()
-            with open(thing.db_path) as db_file:
+            with open(thing.db_path, encoding="utf-8-sig") as db_file:
                 for line in db_file:
                     if info := thing.extract_existing_info(line):
                         existing_things.append(info + "\n")
@@ -254,7 +255,7 @@ def get_itemdb_difference(profession: str, raw_lines: list[str], excluded_recipe
         f"{profession}.lua",
     )
     try:
-        with open(itemdb_path) as itemdb_file:
+        with open(itemdb_path, encoding="utf-8-sig") as itemdb_file:
             for line in itemdb_file:
                 try:
                     line = line.split(";")[0].split(",")[1]
