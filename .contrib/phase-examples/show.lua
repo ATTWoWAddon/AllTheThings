@@ -1,4 +1,4 @@
--- Inspect a trusted Lua module emitted by Parser --phase-example.
+-- Comparison tooling (P4 example / Retail default): print the acquisition routes in a generated database for one milestone and item.
 assert(_VERSION == "Lua 5.1", "Run this example with Lua 5.1")
 if #arg ~= 3 or not tonumber(arg[3]) then
     io.stderr:write("Usage: lua5.1 show.lua OUTPUT.lua MILESTONE|- ITEM_ID\n")

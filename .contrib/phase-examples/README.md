@@ -1,6 +1,28 @@
 # Run the three phase interfaces
 
-Compile the same six dungeon and raid excerpts using three ways to divide authoring between Lua and JSON. Each option produces a native Lua database with the same acquisition routes. The output keeps the boss, difficulty and item occurrences separate, even when two bosses share an item ID.
+**Comparison guide · P1–P4 migration and the runnable P4 example.** These six instances are written three ways so you can choose one interface. A data contributor would maintain the inputs for the chosen option. The parallel versions here let reviewers compare their output.
+
+| Label at the start of the file | Who edits it and why |
+|---|---|
+| **Authoring input (A/B/C)** | The letter(s) name the option that uses the file. For **A**, edit `sources.lua` and `profiles/<flavor>/main.json`. For **B**, edit `layout.lua`, the selected `fragments/*.lua`, `selection.json` and the same profiles. For **C**, edit `sources.lua`, `catalogs/<flavor>/main.json` and `policies/<instance>.json`. All paths are under [input/](input). |
+| **Comparison fixture / Comparison tooling** | The `replay.json` files and `:replay` rows create synthetic openings for tests. The example compiler, workflow, evaluator, inspector and verifiers are maintained by developers of this comparison. |
+| **Generated** | The example Parser writes [SoD](generated/sod-main.lua) and [Retail](generated/retail.lua) Lua samples. Windows CI builds [Parser.exe](../.tools/Parser.exe) and writes the [build record](generated/build.json) beside the samples. Regenerate them after editing their sources. |
+
+## Migration stages by file
+
+P1–P4 describe how one group of source records is migrated. A, B and C are three possible file layouts. A name such as `vanilla.5` identifies a milestone on one flavor’s release schedule. Different groups can migrate independently.
+
+| Migration stage | File to open for Blackwing Lair | What produces the database at that stage |
+|---|---|---|
+| **P1** | [Existing raid source](../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua). Look for `applyclassicphase(PHASE_THREE, ...)`. | The production Parser reads the existing phase writers. Freeze that build and its inputs for comparison. |
+| **P2.1 · Lua first** | [Lua additions in the design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#p21-add-the-lua-keys-before-writing-json). Add keys to the same raid source while keeping its old guards. | The legacy path still supplies output. A missing JSON rule can be recorded as pending. |
+| **P2.2 · JSON next** | [A/B profile](input/profiles/sod/main.json), or [C catalog](input/catalogs/sod/main.json) and [C instance rules](input/policies/blackwing-lair.json). | Write the rules and validate them separately. The official output still comes from the legacy path. |
+| **P3** | Reuse the P2.2 policy files. The [migration manifest and comparison design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) define which group advances. | The progress rules supply official output for that group. Independently compile the old Lua with its original phase writers to obtain the legacy golden. |
+| **P4 · executable example** | [Shared A/C raid source](input/sources.lua), or [B layout](input/layout.lua), [selection](input/selection.json) and [reworked loot](input/fragments/bwl.rework.lua). Keep the reviewed JSON. | Remove the old phase writers and flavor guards from that group. The example Parser emits a [SoD module](generated/sod-main.lua) using the proposed format. |
+
+The standalone command exercises the **P4 candidate** and the ordinary **Retail default**. P1 and P2.1 point to the existing source and design excerpt. The P2.2 shadow run and the P3 legacy golden are specified in the design. The 21 modules from this comparison test equivalence across A/B/C. Retail takes the ordinary tree and has no release schedule.
+
+## Run an example
 
 From the repository root on Windows, use the Parser shipped with this branch. Output paths below are examples in your temp directory.
 
@@ -34,6 +56,24 @@ Inspect the two Ashkandis with `19364` and `230818`. The original stays disabled
 For example, add an existing-phase Nefarian drop under encounter `1536` in its own difficulty; the item inherits its full route's keys. A later drop needs a new source key plus a window in the appropriate A/B profile or C instance file. Moving that drop in SoD leaves the original acquisition and the other profiles independent.
 
 A/B read only their profile-local rules. C reads only its milestone catalog and the matching context row from each instance policy file. In B, an explicit `null` slot excludes the group before reading its file; a selected fragment contributes its key to its children without adding a generated parent. All options reject malformed mappings and preserve the previous output if compilation fails.
+
+### Reading a release rule
+
+In the [SoD profile (A/B)](input/profiles/sod/main.json) and [Blackwing Lair policy (C)](input/policies/blackwing-lair.json), find `raid.bwl.sod20`. Its `windows` field opens the 20-player difficulty at `vanilla.5`. A drop under that difficulty inherits the opening. To release a single item later, give **only that occurrence** a `progressionKey` in Lua and add the same key to the chosen JSON policy.
+
+The following **comparison fixture** shows how to write a temporary removal and reopening using existing SoD milestones. It illustrates the format with an invented schedule. To try it, replace just the value of `raid.bwl.sod20` in a working copy.
+
+```json
+{
+  "$comment": "The first window closes at the scepter milestone. The second reopens the route when the raids unlock.",
+  "windows": [
+    { "from": "vanilla.5", "until": "vanilla.6.scepter" },
+    { "from": "vanilla.6.raids" }
+  ]
+}
+```
+
+`from` includes its milestone. `until` excludes its milestone. Omit it for an open-ended window. Write windows in release order, without overlaps. For a history-only route use `{ "status": "disabled", "windows": [] }`. For an unconfirmed opening use `{ "status": "unknown", "windows": [] }`. Use Lua `--` comments and a single string-valued `"$comment"` per JSON object wherever an editor needs a note. Both are consumed when the Parser writes the database.
 
 ## Six things to try
 
