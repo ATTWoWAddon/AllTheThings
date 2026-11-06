@@ -1,4 +1,4 @@
--- Standalone Lua 5.1 evaluator for the executable phase examples.
+-- Comparison tooling (P4 example / Retail default): evaluate a generated phase database with a caller-supplied character eligibility check.
 -- It does not change ATT runtime settings or decide client/quest eligibility.
 local M = {}
 

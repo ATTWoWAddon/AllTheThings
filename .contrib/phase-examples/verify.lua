@@ -1,4 +1,4 @@
--- Lua 5.1 behavior checks for native output from Parser --phase-example.
+-- Comparison tooling (P4 example / Retail default): Lua 5.1 assertions for the three example interfaces and their generated databases.
 assert(_VERSION == "Lua 5.1", "run these checks with Lua 5.1")
 local evaluate = dofile(assert(arg[1], "evaluator path required"))
 local checks = 0
