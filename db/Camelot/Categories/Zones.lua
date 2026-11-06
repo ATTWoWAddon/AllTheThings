@@ -1673,8 +1673,10 @@ qo(1,{coords={
 s(158668,6739,{b=1,f=32}),
 s(158669,6740,{b=1,f=5,loc=45})}}),
 q(97485,{awp=16001,coords={
-[1456]={{38.2,56.2}}},lvl=3,qgs={269068},r=1,g={
-qo(1,{providers={{"i",278078}}}),
+[1456]={{38.2,56.2}}},description="While on this quest, buy a Bundle of Herbs from Nida Winterhoof, a Bundle of Dried Cedar Twigs from Nata Dawnstrider, Sinew Thread from Mahu and Ceremonial Flint and Tinder from Naal Mistrunner (1 copper each). Combine them into Prepared Incense, then spread it at the ceremonial site on the south-facing cliff of Hunter Rise.",lvl=3,qgs={269068},r=1,g={
+qo(1,{cost={{"i",278083,1},{"i",278081,1},{"i",278080,1},{"i",278079,1}},providers={{"i",278078}}}),
+qo(2,{coords={
+[1456]={{53.3,87.9}}},providers={{"o",665373}}}),
 i(281040,{b=1,spellID=1310133})}}),
 q(3761,{coords={
 [1456]={{78.4,28.4}}},cost={{"i",11018,20}},lvl=47,maps={1449},qgs={5769},r=1,sourceQuests={936,3762,3784}}),
@@ -17639,7 +17641,7 @@ qo(1,{coords={
 q(438,{coords={
 [1421]={{43.4,40.8}}},lvl=10,qgs={1952},r=1,sourceQuests={437}}),
 q(440,{coords={
-[1421]={{43.4,40.8}}},lvl=10,qgs={1952},qis={3234},r=1,sourceQuests={439}}),
+[1421]={{43.4,40.8}}},lvl=10,maps={1420},qgs={1952},qis={3234},r=1,sourceQuests={439}}),
 q(78699,{c={4},lvl=25,u=1,g={
 s(310145,277246,{b=1,c={4},f=25})}}),
 q(461,{coords={

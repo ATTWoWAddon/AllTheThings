@@ -350,10 +350,20 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
-				-- Objective: combine the herbs, cedar twigs, sinew thread and flint bought from the Thunder Bluff suppliers, then spread the incense off Hunter's Rise.
+				description = "While on this quest, buy a Bundle of Herbs from Nida Winterhoof, a Bundle of Dried Cedar Twigs from Nata Dawnstrider, Sinew Thread from Mahu and Ceremonial Flint and Tinder from Naal Mistrunner (1 copper each). Combine them into Prepared Incense, then spread it at the ceremonial site on the south-facing cliff of Hunter Rise.",
 				groups = {
 					objective(1, {	-- 0/1 Prepared Incense
 						provider = { "i", 278078 },	-- Prepared Incense
+						cost = {
+							{ "i", 278079, 1 },	-- Bundle of Herbs
+							{ "i", 278080, 1 },	-- Bundle of Dried Cedar Twigs
+							{ "i", 278081, 1 },	-- Sinew Thread
+							{ "i", 278083, 1 },	-- Ceremonial Flint and Tinder
+						},
+					}),
+					objective(2, {	-- Spread incense
+						provider = { "o", 665373 },	-- Incense Burner
+						coord = { 53.3, 87.9, MAP.THUNDER_BLUFF },
 					}),
 					i(281040),	-- Prepared Incense (x5)
 				},
