@@ -77,7 +77,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				races = HORDE_ONLY,
 				lvl = 10,
 				groups = {
-					objective(1, {
+					objective(1, {	-- 0/1 Valdred's Hands
 						provider = { "i", 3613 },	-- Valdred's Hands
 						coord = { 46.4, 84.6, MAP.SILVERPINE_FOREST },
 						cr = 2332,	-- Valdred Moray
@@ -97,9 +97,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Trevan's Weapon Notes
 						provider = { "i", 267454 },	-- Trevan's Weapon Notes
+						coord = { 43.4, 41.0, MAP.SILVERPINE_FOREST },
+						cr = 248840,	-- Trevan Rol
 					}),
 					objective(2, {	-- 0/1 Whitestone Oak Lumber
-						provider = { "i", 6994 },	-- Whitestone Oak Lumber (QI!)
+						provider = { "i", 6994 },	-- Whitestone Oak Lumber
 						cr = 641,	-- Goblin Woodcarver
 					}),
 					objective(3, {	-- 0/1 Enchanted Silver Ingot
@@ -121,6 +123,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 								provider = { "i", 6995 },	-- Corrupted Kor Gem
 								crs = {
 									4803,	-- Blackfathom Oracle
+									4805,	-- Blackfathom Sea Witch
 									4802,	-- Blackfathom Tide Priestess
 								},
 							}),
@@ -240,21 +243,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 268192,	-- Bundle of Blacksmithing Materials (QI!)
 			}),
-			q(98298, {	-- Arugal's Folly
-				sourceQuests = { 99 },	-- Arugal's Folly
-				qg = 1938,	-- Dalar Dawnweaver
-				coord = { 44.2, 39.81, MAP.SILVERPINE_FOREST },
-				races = HORDE_ONLY,
-				lvl = 9,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					objective(1, {	-- Worgen Bits
-						provider = { "i", 280375 },	-- Worgen Bits (QI!)
-					}),
-					i(281315),	-- Foulfur Gloves
-				},
-			}),
-			q(422, {	-- Arugal's Folly (1/4)
+			q(422, {	-- Arugal's Folly (1/5)
 				sourceQuest = 421,	-- Prove Your Worth
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
@@ -270,8 +259,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 				},
 			}),
-			q(423, {	-- Arugal's Folly (2/4)
-				sourceQuest = 422,	-- Arugal's Folly (1/4)
+			q(423, {	-- Arugal's Folly (2/5)
+				sourceQuest = 422,	-- Arugal's Folly (1/5)
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -287,8 +276,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 				},
 			}),
-			q(424, {	-- Arugal's Folly (3/4)
-				sourceQuest = 423,	-- Arugal's Folly (2/4)
+			q(424, {	-- Arugal's Folly (3/5)
+				sourceQuest = 423,	-- Arugal's Folly (2/5)
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -301,8 +290,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 				},
 			}),
-			q(99, {	-- Arugal's Folly (4/4)
-				sourceQuest = 424,	-- Arugal's Folly (3/4)
+			q(99, {	-- Arugal's Folly (4/5)
+				sourceQuest = 424,	-- Arugal's Folly (3/5)
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -328,6 +317,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(3586),	-- Logsplitter
 					i(3570),	-- Bonegrinding Pestle
 					i(5242),	-- Cinder Wand
+				},
+			}),
+			q(98298, {	-- Arugal's Folly (5/5)
+				sourceQuest = 99,	-- Arugal's Folly (4/5)
+				qg = 1938,	-- Dalar Dawnweaver
+				coord = { 44.2, 39.81, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 9,
+				groups = {
+					objective(1, {	-- 0/6 Worgen Bits
+						provider = { "i", 280375 },	-- Worgen Bits
+						cr = 1924,	-- Moonrage Bloodhowler
+					}),
+					i(281315),	-- Foulfur Gloves
 				},
 			}),
 			q(442, {	-- Assault on Fenris Isle
@@ -457,8 +461,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 18,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- Fenris Isle Key
-						provider = { "i", 267412 },	-- Fenris Isle Key (QI!)
+					objective(1, {	-- 0/1 Fenris Isle Key
+						provider = { "i", 267412 },	-- Fenris Isle Key
+						crs = {
+							1943,	-- Raging Rot Hide
+							1944,	-- Rot Hide Bruiser
+							1942,	-- Rot Hide Savage
+							1948,	-- Snarlmane
+						},
 					}),
 				},
 			}),
@@ -612,6 +622,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 			}),
 			q(98299, {	-- Stop the Spread
+				sourceQuest = 99,	-- Arugal's Folly (4/5)
 				qg = 1938,	-- Dalar Dawnweaver
 				coord = { 44.2, 39.81, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -742,6 +753,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				races = HORDE_ONLY,
 				lvl = 20,
 				groups = {
+					objective(1, {	-- Willingly offer blood
+						provider = { "o", 645153 },	-- Offering Stone
+						coord = { 58.1, 69.8, MAP.SILVERPINE_FOREST },
+					}),
+					objective(2, {	-- Release Tortured Soul
+						provider = { "i", 210713 },	-- Tortured Soul
+					}),
+					objective(3, {	-- 0/1 Tortured Soul slain
+						provider = { "n", 212753 },	-- Tortured Soul
+						coord = { 58.0, 69.8, MAP.SILVERPINE_FOREST },
+					}),
 					i(281673),	-- Loop of Sacrifice
 				},
 			}),
@@ -752,8 +774,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- Note Scrap
-						provider = { "i", 271343 },	-- Note Scrap (QS!)
+					objective(1, {	-- 0/1 Note Scrap
+						provider = { "i", 271343 },	-- Note Scrap
+						crs = {
+							1974,	-- Ravenclaw Drudger
+							1973,	-- Ravenclaw Guardian
+						},
 					}),
 				},
 			}),
