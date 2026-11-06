@@ -144,55 +144,146 @@ A repeated ID can be legitimate in different contexts or conditions. A collision
 
 ## 5. Define metadata field order once
 
-Use the type's complete order below and the shared constraints in this section. The complete Quest/Rare/Treasure examples in [Standard.lua](../../Standard.lua) supply the reference structure; the confirmed Forever policies here define the resulting order. Preserve the current field keys.
+Use the confirmed field order below when a field move is part of an authorized layout operation or accompanies other changes that make the move appropriate. Preserve current keys and scalar/list shapes. The [confirmed field-order clarification from Eremeir](https://github.com/ATTWoWAddon/AllTheThings/pull/2681#issuecomment-6694233196) is the basis for these sequences. [Standard.lua](../../Standard.lua) examples remain useful where complete, but that file is still being updated; missing or differently placed fields in an incomplete example do not override the orders below.
+
+For ordinary maintenance, follow the existing file or snippet style unless other changes are already being made. Prefer incorporating appropriate field moves into that work over a standalone in-place reordering commit. An explicitly requested ordering pass uses its agreed scope and the schemas below.
+
+### 5.1 Quest master order
+
+Use this complete order for a Quest record. The restrictions and flags positions expand to their listed fields; omit absent fields.
+
+| Position | Field or block |
+| --- | --- |
+| 1 | `name` |
+| 2 | `description` |
+| 3 | `sourceQuest` / `sourceQuests` |
+| 4 | `sourceQuestNumRequired` |
+| 5 | `altQuestID` / `altQuests` |
+| 6 | `qg` / `qgs` |
+| 7 | `qs` / `qss` |
+| 8 | `provider` / `providers` |
+| 9 | `coord` / `coords` |
+| 10 | `maps` |
+| 11 | `cr` / `crs` |
+| 12 | `cost` |
+| 13 | Restrictions (expanded below) |
+| 14 | Flags (expanded below) |
+| 15 | `lockCriteria` (immediately below flags) |
+| 16 | Other metadata, including `u`, `isLimited`, `customCollect`, `isRaid`, `DisablePartySync`, `OnClick`, `OnInit`, `OnUpdate`, `OnTooltip`, and unlisted fields, preserving their existing relative order |
+| 17 | `timeline` |
+| 18 | `sym` |
+| 19 | `qi` / `qis` |
+| 20 | `groups` |
+
+#### Restrictions
+
+Use these fields in this order:
+
+1. `minReputation`
+2. `maxReputation`
+3. `requireSkill`
+4. `races`
+5. `classes`
+6. `lvl`
+
+`maxReputation` belongs to this block. Keep `lockCriteria` in its separate position after the flags.
+
+#### Flags
+
+Use these named flags in this order:
+
+1. `isWorldQuest`
+2. `isBounty`
+3. `isDaily`
+4. `isWeekly`
+5. `isMonthly`
+6. `isYearly`
+7. `repeatable`
+8. `isBreadcrumb`
+
+`isBreadcrumb` is the last flag, followed immediately by `lockCriteria`. `isLimited`, `isRaid`, and other unlisted `is*` names belong to other metadata, whose existing relative order is preserved.
+
+### 5.2 NPC (rare) and Object (treasure) orders
+
+Use the following line-by-line schemas. Expand restrictions and flags as defined above; omit absent fields.
+
+| Position | NPC (rare) | Object (treasure) |
+| --- | --- | --- |
+| 1 | `description` | `description` |
+| 2 | `qg` / `qgs` | `sourceQuest` / `sourceQuests` |
+| 3 | `qs` / `qss` | `qg` / `qgs` |
+| 4 | `provider` / `providers` | `qs` / `qss` |
+| 5 | `coord` / `coords` | `provider` / `providers` |
+| 6 | `maps` | `coord` / `coords` |
+| 7 | `cr` / `crs` | `maps` |
+| 8 | `questID` | `cr` / `crs` |
+| 9 | `cost` | `questID` |
+| 10 | Restrictions | `cost` |
+| 11 | Flags | Restrictions |
+| 12 | `lockCriteria` | Flags |
+| 13 | Other metadata | `lockCriteria` |
+| 14 | `timeline` | Other metadata |
+| 15 | `sym` | `timeline` |
+| 16 | `qi` / `qis` | `sym` |
+| 17 | `groups` | `qi` / `qis` |
+| 18 | — | `groups` |
+
+The author noted that swapping `cr`/`crs` and `questID` in the Object schema could be argued either way, but did not confirm a separate swap rule. The order shown above follows the supplied Object sequence; do not infer a different order from an isolated record.
+
+### 5.3 Field families and aliases
 
 Classify singular and plural spellings as members of the same field family. Each family shares its semantic rules and ordering slot; a plural value applies the relevant rules to each entry. Preserve existing key spellings and scalar/list shapes. Resolve membership from the [Parser field configuration](../shared/.config/root.config) and [name conversions](../../src/Parser/Framework/Framework.cs); the [runtime area converters](../../../src/Cache.lua) establish the area-text family.
 
 | Field family | Members | Ordering slot |
 | --- | --- | --- |
-| Prerequisite achievement | `sourceAchievement`, `sourceAchievements` | Unlisted-field policy until the record schema assigns a slot. |
-| Prerequisite quest | `sourceQuest`, `sourceQuests` | Prerequisite slot in the record schema. |
-| Alternative quest | `altQuestID`, `altQuests` | Alternative-quest slot in the record schema. |
-| Quest giver | `qg`, `qgs` | Source block. |
-| Quest item | `qi`, `qis` | Tail, after `timeline` and before `groups`. |
-| Quest starter | `qs`, `qss` | Quest-starter slot before the source block. |
-| Creature source | `cr`, `crs` | Creature-source slot in the record schema. |
-| Point of interest | `poiID`, `poiIDs` | Unlisted-field policy until the record schema assigns a slot. |
-| Provider | `provider`, `providers` | Source block. |
-| Coordinate | `coord`, `coords` | Coordinate slot before `cost`. |
-| Area text | `zoneTextAreaID`, `zoneTextAreaIDs` | Unlisted-field policy until the record schema assigns a slot. |
+| Prerequisite achievement | `sourceAchievement`, `sourceAchievements` | Other metadata unless its owning schema assigns a slot. |
+| Prerequisite quest | `sourceQuest`, `sourceQuests` | Schema-defined prerequisite slot. |
+| Alternative quest | `altQuestID`, `altQuests` | Schema-defined alternative-quest slot. |
+| Quest giver | `qg`, `qgs` | First in the source block of the Quest, NPC, and Object schemas. |
+| Quest starter | `qs`, `qss` | Second in the source block of those schemas; identifies the item that starts the quest. |
+| Provider | `provider`, `providers` | Third in the source block of those schemas; classify the actual tuple by its tag and context. |
+| Coordinate | `coord`, `coords` | After the source block and before `maps` in those schemas. |
+| Creature source | `cr`, `crs` | After `maps`; before `questID` in NPC/Object schemas and before `cost` in the Quest schema. |
+| Quest item | `qi`, `qis` | Tail, after `sym` and before `groups`. |
+| Point of interest | `poiID`, `poiIDs` | Other metadata unless its owning schema assigns a slot. |
+| Area text | `zoneTextAreaID`, `zoneTextAreaIDs` | Other metadata unless its owning schema assigns a slot. |
 
-The quest-giver and provider families share the existing source-block slot while retaining their distinct field semantics. Preserve relative order among all fields sharing a slot; singular/plural spelling does not introduce a separate position or authorize merging fields.
+In the Quest, NPC, and Object schemas, use three distinct source-block slots: `qg`/`qgs`, then `qs`/`qss`, then `provider`/`providers`. Singular and plural spellings share their family’s slot; preserve their existing order within that family and retain each field. In the Quest discussion, the author described providers as objects and non-starter, non-consumed items. This description does not redefine provider types or establish a specific reference's role; classify each tuple and role using its own context and evidence.
 
 Resolve name aliases to their Parser field before selecting a family or slot. These spellings share the indicated classification while retaining their existing values and keys:
 
 | Name aliases | Classification and ordering |
 | --- | --- |
-| `group`, `groups`, `g` | Children field; the tail's `groups` slot. All are names for a children collection, rather than different cardinalities. |
+| `group`, `groups`, `g` | Children field; the final `groups` slot. All are names for a children collection, rather than different cardinalities. |
 | `coordID`, `coordIDs` | Coordinate family: map to `coord` and `coords`, respectively. |
 | `sourceQuestID`, `sourceQuestIDs` | Prerequisite-quest family: both map to `sourceQuests`. |
 | `level`, `lvl`, `reqlvl`, `reqlvls`, `reqLvl`, `reqLvls` | Level-requirement field; the restriction block's level slot. The plural-looking aliases do not introduce another slot. |
 | `classes`, `classIDs`, `c` | Class-restriction collection; the restriction block's class slot. |
 
-The complete schemas below expand these families and aliases wherever their slot appears. Classify remaining names by the owning schema and actual Parser/runtime behavior. Entity identifiers such as `classID`, `raceID`, `mapID`, and `difficultyID` are not interchangeable with restriction or association collections merely because they describe the same domain. `class` can also mean an item classification. Keep these roles distinct when applying the race/class/level restriction layout.
+Classify remaining names by the owning schema and actual Parser/runtime behavior. Entity identifiers such as `classID`, `raceID`, `mapID`, and `difficultyID` are not interchangeable with restriction or association collections merely because they describe the same domain. `class` can also mean an item classification. Keep these roles distinct when applying the race/class/level restriction layout.
 
 Family membership does not authorize sorting its elements. During family or metadata-layout operations, preserve collection order, including fields declared in the Parser's `NON_SORTED_FIELDS`. Any collection permutation needs its own policy and authorized plan under sections 2.2 and 7.
 
-| Record type | Recognized fields in order |
-| --- | --- |
-| Quest | `name` -> `description` -> `sourceQuest`/`sourceQuests` -> `sourceQuestNumRequired` -> `altQuestID`/`altQuests` -> `qs`/`qss` -> source block -> `coord`/`coords` -> `maps` -> `cost` -> restrictions -> flags/lock -> `customCollect` -> tail. |
-| NPC | `description` -> `cr`/`crs` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
-| Object | `description` -> `cr`/`crs` -> `sourceQuest`/`sourceQuests` -> source block -> `coord`/`coords` -> `maps` -> `questID` -> `cost` -> restrictions -> flags/lock -> tail. |
+### 5.4 Other constructors and shared constraints
 
-Apply a complete schema only to its classified entity record. For other constructors, category headers, and plain keyed tables, use applicable shared constraints:
+For other constructors, category headers, and plain keyed tables, apply only the relevant shared constraints; do not invent a complete schema.
+
+For `objective(...)`, [the author confirmed these relative positions](https://github.com/ATTWoWAddon/AllTheThings/pull/2681#issuecomment-6694412908):
+
+1. `provider` / `providers`
+2. `coord` / `coords`
+3. `maps`
+4. `cr` / `crs`
+
+Use `races` → `classes` → `lvl` where those restrictions occur. These positions form a partial objective order; keep unspecified fields in their existing relative order while applying the relevant shared constraints below. Provider-list entries use section 7.3 only after its semantic and Parser/runtime checks pass.
 
 | Block | Constraint |
 | --- | --- |
-| Cost and restrictions | `coord(s)` precedes `cost`; `cost` precedes the race/class/level block when present. |
-| Restrictions | Keep race restrictions, class restrictions, and level requirements together in that order; omit absent fields. Identify restrictions by schema rather than by an identifier's name alone. |
-| Flags and lock | Keep `isX` flags and `repeatable` together. Preserve their relative order, place `isBreadcrumb` last, then put `lockCriteria` immediately below the block. |
-| Tail | Put all other metadata before `timeline`, then the `qi`/`qis` group, then `groups`. Omit absent fields and preserve the relative order within `qi`/`qis`. |
-| Unlisted fields | Preserve their order relative to one another. Listed fields may cross them to satisfy the declared constraints; do not invent a complete schema for them. |
+| Cost and restrictions | `coord(s)` precedes `cost`; `cost` precedes the restriction block when present. |
+| Restrictions | Keep `minReputation`, `maxReputation`, `requireSkill`, `races`, `classes`, and level requirements in the Quest order above; omit absent fields. Identify restrictions by schema rather than by an identifier's name alone. |
+| Flags and lock | Keep the listed flags in the Quest order above, with `isBreadcrumb` last, then put `lockCriteria` immediately below the block. Do not treat every `is*` field as a member of this block. |
+| Other metadata | Preserve its existing relative order. This includes fields such as `customCollect`, `isLimited`, `isRaid`, callbacks, and unlisted fields when their schema gives them no position. |
+| Tail | Put other metadata before `timeline` → `sym` → `qi`/`qis` → `groups`. Preserve the existing order within `qi`/`qis` and preserve other collection order. |
 | Repeated keys | Preserve write order and the resulting value. A conflicting ordering requirement holds that move for review. |
 
 Move complete fields with their values and attached annotations. Inspect expression effects and dependencies: a permitted permutation may change textual evaluation order, but must preserve observable behavior. Unknown or stateful dependencies hold the affected move. Keep each field under the same Parser predicates; a conditional unit can move only when its complete structure and directive order are preserved.
@@ -281,6 +372,25 @@ After an ID or label change, recheck every affected alphabetical group, includin
 * Validate that the records are independent and their permutation preserves behavior. Use the same source/value/condition checks as other ordering operations.
 
 Semantic sequences and unknown collections retain their order. Record the classification and reason in the plan so a rescan can distinguish an intended sequence from an unresolved sorting candidate.
+
+### 7.3 Provider-list ordering
+
+[The provider-order clarification](https://github.com/ATTWoWAddon/AllTheThings/pull/2681#issuecomment-6694412908) applies when a classified provider subgroup has no logical ordering requirement and its applicable Parser/runtime behavior is preserved. Select that subgroup before sorting; keep semantic, category, source-batch, and Parser condition boundaries intact.
+
+Before proposing a permutation, inspect first-entry and sequence-sensitive behavior. The Parser records an initial item provider through `FirstItemProvider` and can use it for quest-starter inference in [Providers.cs](../../src/Parser/FieldTypes/Providers.cs). [Framework.Processing.cs](../../src/Parser/Framework/Framework.Processing.cs) also uses that state when handling NPC providers. If equivalence is not established, or a type or relationship is unresolved, preserve the current sequence and hold the candidate.
+
+For an eligible subgroup, use these type ranks:
+
+| Rank | Tuple tag | Provider kind |
+| --- | --- | --- |
+| 1 | `s` | Spell |
+| 2 | `n` | NPC / creature |
+| 3 | `o` | Object |
+| 4 | `i` | Item |
+
+Within each type, stably sort by primary name using section 7.2's name key and tie rules. Thus the ordering key is type rank first, then primary name; equal keys retain source order. Keep complete tuples, IDs, annotations, and conditions attached, and verify the permutation using section 8.
+
+Represent which object gives which item through supported data relationships. Provider-list adjacency or sorting is not evidence for that relationship.
 
 ## 8. Verify the actual change by operation
 
