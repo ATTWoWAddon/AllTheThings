@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platform>x64</Platform>
     <Platforms>x64</Platforms>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net48</TargetFramework>
-    <StartupObject>ATT.Program</StartupObject>
-    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Platform>x64</Platform>
     <PlatformTarget>x64</PlatformTarget>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <StartupObject>ATT.Program</StartupObject>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>..\..\.tools\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
