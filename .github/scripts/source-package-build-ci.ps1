@@ -15,6 +15,7 @@ $frameworkExpectations = @{
     'Item Database Consolidator' = 'v4.8'
 }
 $installedFrameworkRelease = $null
+$databaseContractMatched = $false
 $runtimeCoverage = $null
 $failure = $null
 
@@ -46,6 +47,9 @@ function Test-FrameworkTarget([string] $Name, [string] $Output, [string] $Config
     try {
         $pe = [System.Reflection.PortableExecutable.PEReader]::new($stream)
         try {
+            if ($Name -eq 'Database' -and $pe.PEHeaders.CoffHeader.Machine -ne [System.Reflection.PortableExecutable.Machine]::Amd64) {
+                throw "Database must remain x64: $path"
+            }
             $metadata = [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($pe)
             $targets = @(
                 foreach ($handle in $metadata.GetAssemblyDefinition().GetCustomAttributes()) {
@@ -75,6 +79,69 @@ function Test-FrameworkTarget([string] $Name, [string] $Output, [string] $Config
     }
     $frameworkEvidence.Add([pscustomobject]@{ project = $Name; configuration = $Configuration; phase = $Phase; path = $path; target = $targets[0]; expected = $expected; executableSku = $sku })
 }
+function Test-DatabaseProjectEvaluation {
+    $project = Join-Path $source 'Database/Database.csproj'
+    $expectedCompile = @(
+        'SavedVariableAttribute.cs', 'SharedCollectionData.cs', 'CollectionState.cs', 'Container.cs',
+        'Database.cs', 'IBinaryDataFormatter.cs', 'MiniJSON.cs', 'Properties/AssemblyInfo.cs',
+        'PropertyChanged.cs', 'SavedVariables.cs', 'ATTCharacterData.cs', 'ATTAccountWideData.cs'
+    ) | Sort-Object
+    $cases = @(
+        @{ Name = 'default'; Configuration = $null; Output = 'bin\x64\Debug\'; Optimize = 'false'; Docs = 'false' },
+        @{ Name = 'Debug'; Configuration = 'Debug'; Output = 'bin\x64\Debug\'; Optimize = 'false'; Docs = 'false' },
+        @{ Name = 'Release'; Configuration = 'Release'; Output = 'bin\x64\Retail\'; Optimize = 'true'; Docs = 'true' },
+        @{ Name = 'Classic-Era'; Configuration = 'Classic Era'; Output = 'bin\x64\Classic Era\'; Optimize = 'true'; Docs = 'true' },
+        @{ Name = 'Classic-TBC'; Configuration = 'Classic TBC'; Output = 'bin\x64\Classic TBC\'; Optimize = 'true'; Docs = 'true' },
+        @{ Name = 'Classic-Wrath'; Configuration = 'Classic Wrath'; Output = 'bin\x64\Classic Wrath\'; Optimize = 'true'; Docs = 'true' }
+    )
+    [pscustomobject]@{ source = 'pre-conversion Database project declarations'; compile = @($expectedCompile); embeddedResources = @(); cases = $cases } |
+        ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $evidence 'database-evaluation-baseline.json')
+    foreach ($case in $cases) {
+        $arguments = @($project, '-nologo', '-getProperty:Configuration,Platform,PlatformTarget,OutputPath,Optimize,GenerateDocumentationFile,AssemblyName,RootNamespace,TargetFramework,GenerateAssemblyInfo', '-getItem:Compile,EmbeddedResource')
+        if ($case.Configuration) { $arguments += "/p:Configuration=$($case.Configuration)", '/p:Platform=x64' }
+        $json = (& msbuild @arguments | Out-String)
+        if ($LASTEXITCODE -ne 0) { throw "Database project evaluation failed: $($case.Name)" }
+        $json | Set-Content -Encoding utf8 (Join-Path $evidence "database-evaluation-$($case.Name).json")
+        $evaluation = $json | ConvertFrom-Json
+        $properties = $evaluation.Properties
+        $expectedConfiguration = if ($case.Configuration) { $case.Configuration } else { 'Debug' }
+        if ($properties.Configuration -ne $expectedConfiguration -or $properties.Platform -ne 'x64' -or $properties.PlatformTarget -ne 'x64' -or
+            $properties.OutputPath -ne $case.Output -or $properties.Optimize -ne $case.Optimize -or $properties.GenerateDocumentationFile -ne $case.Docs -or
+            $properties.AssemblyName -ne 'Database' -or $properties.RootNamespace -ne 'ATT' -or $properties.TargetFramework -ne 'net48' -or $properties.GenerateAssemblyInfo -ne 'false') {
+            throw "Database project properties differ from the established behavior: $($case.Name)"
+        }
+        $actualCompile = @($evaluation.Items.Compile | ForEach-Object { $_.Identity.Replace('\', '/') } | Sort-Object)
+        $actualResources = @($evaluation.Items.EmbeddedResource | Where-Object { $null -ne $_ })
+        if ((Compare-Object $expectedCompile $actualCompile) -or $actualResources.Count -ne 0) {
+            throw "Database compile/resource items differ from the established source set: $($case.Name)"
+        }
+    }
+}
+function Get-DatabaseContract([string] $AssemblyPath, [string] $DependencyDirectory, [string] $Label) {
+    $info = [System.Diagnostics.ProcessStartInfo]::new()
+    $info.FileName = Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe'
+    $info.WorkingDirectory = $env:RUNNER_TEMP
+    $info.UseShellExecute = $false
+    $info.RedirectStandardOutput = $true
+    $info.RedirectStandardError = $true
+    foreach ($argument in @('-NoProfile', '-NonInteractive', '-ExecutionPolicy', 'Bypass', '-File', (Join-Path $PSScriptRoot 'database-sdk-api-ci.ps1'), '-AssemblyPath', $AssemblyPath, '-DependencyDirectory', $DependencyDirectory)) {
+        [void] $info.ArgumentList.Add($argument)
+    }
+    $process = [System.Diagnostics.Process]::new()
+    $process.StartInfo = $info
+    if (!$process.Start()) { throw "Could not start metadata-only contract check: $Label" }
+    $stdout = $process.StandardOutput.ReadToEndAsync()
+    $stderr = $process.StandardError.ReadToEndAsync()
+    $timedOut = !$process.WaitForExit(60000)
+    if ($timedOut) { $process.Kill($true); $process.WaitForExit() }
+    $text = $stdout.GetAwaiter().GetResult()
+    $errorText = $stderr.GetAwaiter().GetResult()
+    [System.IO.File]::WriteAllText((Join-Path $evidence "database-contract-$Label.json"), $text)
+    [System.IO.File]::WriteAllText((Join-Path $evidence "database-contract-$Label.stderr.txt"), $errorText)
+    if ($timedOut -or $process.ExitCode -ne 0) { throw "Database contract check failed or timed out: $Label (exit $($process.ExitCode))" }
+    $null = $text | ConvertFrom-Json
+    return $text.Trim()
+}
 
 try {
     $installedFrameworkRelease = Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' -Name 'Release'
@@ -90,6 +157,14 @@ try {
         "$((Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash)  $relative"
     }
     $sourceManifest | Set-Content -Encoding utf8 (Join-Path $evidence 'source-SHA256SUMS.txt')
+    Test-DatabaseProjectEvaluation
+    $baselineDatabase = Join-Path $repositoryTools 'Database.dll'
+    $baselineDatabaseHash = (Get-FileHash -LiteralPath $baselineDatabase -Algorithm SHA256).Hash
+    if ($baselineDatabaseHash -ne 'C425611AB07634B8C7DC5D16F0BD662C98AC6AABF127031F2CDC8E4FFAA6A2E2') {
+        throw 'Database API baseline does not match the validated .NET Framework 4.8 artifact.'
+    }
+    [pscustomobject]@{ path = $baselineDatabase; sha256 = $baselineDatabaseHash; source = 'validated pre-conversion net48 Database' } |
+        ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'database-api-baseline.json')
     # Preserve the original shared DLLs only as hash oracles, then remove them
     # from the runner checkout so no project can resolve a stale HintPath.
     $originalLua = Join-Path $env:RUNNER_TEMP 'att-original-lua'
@@ -165,6 +240,12 @@ try {
         $label = "solution-$configuration" -replace '[^a-zA-Z0-9-]', '-'
         Invoke-Build (Join-Path $source 'All The Tools.sln') $configuration 'x64' $label
     }
+    foreach ($configuration in 'Release', 'Classic Era', 'Classic TBC', 'Classic Wrath') {
+        $doc = Join-Path $env:RUNNER_TEMP "att-source-output/$configuration/Database/Database.xml"
+        if (!(Test-Path -LiteralPath $doc -PathType Leaf)) { throw "Database XML documentation missing: $doc" }
+    }
+    $debugDoc = Join-Path $env:RUNNER_TEMP 'att-source-output/Debug/Database/Database.xml'
+    if (Test-Path -LiteralPath $debugDoc) { throw "Database Debug unexpectedly produced XML documentation: $debugDoc" }
 
     # Verify the final Release folders, including dependencies copied after solution builds.
     $release = Join-Path $env:RUNNER_TEMP 'att-source-output/Release'
@@ -187,9 +268,14 @@ try {
     }
     $database = Join-Path $release 'Database/Database.dll'
     $syncDatabase = Join-Path $release 'ATT Sync Tool/Database.dll'
+    Test-MatchedFile (Join-Path $release 'Database/Database.dll.config') (Join-Path $source 'Database/app.config') 'Database source config'
     if ((Get-FileHash $database -Algorithm SHA256).Hash -ne (Get-FileHash $syncDatabase -Algorithm SHA256).Hash) {
         throw 'The Database library in ATT Sync Tool differs from the Release Database output.'
     }
+    $beforeContract = Get-DatabaseContract $baselineDatabase $originalLua 'before'
+    $afterContract = Get-DatabaseContract $database (Split-Path $database) 'after'
+    if ($beforeContract -cne $afterContract) { throw 'Database public/protected API, identity, or manifest resources differ from the net48 baseline.' }
+    $databaseContractMatched = $true
     foreach ($project in $projects | Where-Object { $_.Legacy }) {
         $name = [System.IO.Path]::GetFileNameWithoutExtension($project.Path)
         $output = Join-Path $release $name
@@ -342,6 +428,7 @@ the existing Parser; only Parser Lua initialization was checked, not a parse.
         outputHashes = @($files)
         frameworkTargets = @($frameworkEvidence)
         installedFrameworkRelease = $installedFrameworkRelease
+        databaseContractMatched = $databaseContractMatched
         runtimeCoverage = $runtimeCoverage
     } | ConvertTo-Json -Depth 10 | Set-Content -Encoding utf8 (Join-Path $evidence 'result.json')
 }
