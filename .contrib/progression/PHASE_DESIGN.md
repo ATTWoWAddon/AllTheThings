@@ -2,7 +2,7 @@
 
 **Draft design. Implementation awaits maintainer approval.**
 
-[Six dungeon and raid cases](#six-dungeon-and-raid-cases)
+[Six dungeon and raid cases](#six-dungeon-and-raid-cases) · [Compare three Lua/JSON interfaces](#three-lua-and-json-authoring-options)
 
 ## Raid availability at a glance
 
@@ -196,6 +196,88 @@ d(DIFFICULTY.SOD.PLAYER10, {
 ```
 
 SoD `content["gnomeregan.raid10"]` is `{ "windows": [{ "from": "vanilla.2" }] }`. At phase 1 the raid is future. At phase 2 it can supply `213410` to an eligible player. Retail/default retains the ordinary compatible dungeon and publishes no Menagerie occurrence, reward, empty raid difficulty or cache write from that source. The removed normal-dungeon history in SoD retains its own timeline.
+
+## Three Lua and JSON authoring options
+
+All three options must give the same result for BWL. In SoD, original Nefarian's Ashkandi (`19364`) stays disabled and reworked Nefarian's Ashkandi (`230818`) opens at `vanilla.5`. Retail loads ordinary compatible BWL. The options change which file a maintainer edits and how the Parser finds the right occurrence. The full profiles in section 2b illustrate A. B and C are alternative input designs with proposed paths and fields. The choice is open.
+
+| Author's question | A · Keys on Lua records | B · Named Lua source groups | C · One policy file per raid |
+| --- | --- | --- | --- |
+| Where do I add an ordinary boss drop? | Under the boss in the BWL Lua file. It inherits the boss or difficulty key. | In the selected original or reworked Lua fragment. It inherits that group's key. | Under the boss in BWL Lua. Its stable occurrence key links to the raid's JSON. |
+| How do I delay only the SoD rework? | Edit `raid.bwl.sod20` in `sod/main.json`. | Edit that group's window in `sod/main.json`. Keep the same selected groups and layouts. | Edit only the `sod:main` entry in the BWL policy file. |
+| What happens when I add a flavor? | Review Lua applicability, then map all applicable keys in its profile. | Choose its source roots/layout before evaluation, then map all retained group and child keys in its profile. | Add the profile's milestone catalog and review a policy row in each applicable raid file. |
+| What is easiest to review? | One flavor's whole schedule in one place. Flat original owners can repeat the same key. | Complete loot groups and early exclusion of their dependencies. Maintaining separate files and layout composition costs more. | One raid across flavors side by side. Reviewing a whole flavor requires reading several raid files. |
+
+### A · Keys on acquisition records
+
+Keep the direct records in `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua`. The original boss carries `raid.bwl.original`. The reworked difficulty carries `raid.bwl.sod20` and `flavors = { "sod" }`. Both inherit `raid.bwl.common` from `inst(742)`. The SoD decisions are entries in `.contrib/.db/shared/.config/progression/sod/main.json`; other profiles declare their own windows. See the complete matching short pair above. [A · Nefarian Lua and SoD JSON](#one-boss-two-loot-routes)
+
+A later addition to an existing boss needs a new key only if it has an independent release. For SoD-only records in a shared Lua file, the Parser must exclude the complete unsupported expression and its setup before evaluation, or prove isolation before any retained observer can see a rejected write. Keep ordinary originals flat and retain their distinct SoD history layout. [BWL source layout and safe construction](#p4-candidate-for-direct-lua-authoring)
+
+### B · Named groups in selected source files
+
+Put the two groups in separately selectable Lua inputs. For this option the proposed directory is `.contrib/.db/standard/.fragments/bwl/`. The selected source configuration supplies the ordinary `shared/` input and, for SoD, the additional `sod/` input before any acquisition Lua runs. A group declares its stable key in the data. Moving its file need not rename the key. The structural selection lives with the build inputs; the group's availability lives in its flavor profile.
+
+```lua
+-- shared/original.lua · returned as a source-only group
+return {
+    progressionKey = "raid.bwl.original",
+    groups = { e(1536, { groups = { i(19364) } }) },
+}
+```
+
+```lua
+-- sod/reworked.lua · evaluated only for the selected SoD inputs
+return {
+    progressionKey = "raid.bwl.sod20",
+    groups = { e(1536, { groups = { i(230818) } }) },
+}
+```
+
+**Matching entries in SoD's `main.json`** (inside `content`)
+
+```json
+{
+    "raid.bwl.common":   { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.sod20":    { "windows": [{ "from": "vanilla.5" }] }
+}
+```
+
+The ordinary layout places the original group's records directly under the instance. The SoD layout uses the original raid-body group under the removed legacy40 difficulty and the reworked group under the separate SoD20 difficulty. It preserves the old quests' separate removal treatment. The instance keeps its common scope. Both groups enter SoD, so the profile must explicitly disable the original. Retail loads the shared original only and reads no phase policy. A SoD-only token helper that writes to a cache from an unselected fragment must never execute. New independently timed drops within a group still require a child key.
+
+### C · One policy file per raid across profiles
+
+Keep the Lua records, source applicability and layouts from A. The change is which JSON owns the windows. A maintainer editing BWL can review its original and reworked decisions for every profile together in a proposed `.contrib/.db/shared/.config/progression/raids/blackwing-lair.json`. Each selected flavor profile still owns its milestone order, default view and chronology. The BWL file alone owns its source windows. The compiler validates the row for the selected flavor/profile against that profile's catalog.
+
+```lua
+-- Within the BWL groups under inst(742), which carries raid.bwl.common.
+e(1536, { progressionKey = "raid.bwl.original", groups = { i(19364) } })
+d(DIFFICULTY.SOD.PLAYER20, {
+    flavors = { "sod" }, progressionKey = "raid.bwl.sod20",
+    groups = { e(1536, { groups = { i(230818) } }) },
+})
+```
+
+**BWL policy excerpt** (the shown scopes in two profile rows)
+
+```json
+{
+    "era:main": {
+        "raid.bwl.common":   { "windows": [{ "from": "vanilla.3" }] },
+        "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] }
+    },
+    "sod:main": {
+        "raid.bwl.common":   { "windows": [{ "from": "vanilla.5" }] },
+        "raid.bwl.original": { "status": "disabled", "windows": [] },
+        "raid.bwl.sod20":    { "windows": [{ "from": "vanilla.5" }] }
+    }
+}
+```
+
+C would require one reviewed policy input per participating raid, selected explicitly for the build. The selected flavor's BWL row joins its milestone catalog at compilation. A second definition of the same policy is an error. Progression and Anniversary would each need their own rows, and the later book needs its own entry wherever retained. The displayed Era row omits the rework because the corresponding Lua source is outside its applicability. Retail can select ordinary Lua without loading a raid policy.
+
+**Acceptance for all three options.** Exercise the two Ashkandis and a shared head before and after phase 5, with history inspection enabled. Each retained occurrence needs an explicit policy or a valid inherited one. Missing expected mappings fail progress compilation, including an independently timed child under a disabled parent. An explicit unknown records an evidence gap and blocks promotion of that chain. An explicit disabled closes the complete route at every view even when the old removal timeline is neutralized in an isolated test. Existing `u`, timelines and events still apply. A successful ordinary build contains no SoD-only encounter, reward, cache write or empty shell. P4 source authoring uses no flavor/season branches. All options retain the same independent legacy, shadow and progress stage gates. [BWL acceptance cases](#bwl-acceptance-cases) · [Five source groups in one build](#five-source-groups-in-one-build)
 
 ## 1. Required destination and four stages
 
