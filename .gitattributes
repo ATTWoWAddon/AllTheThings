@@ -1,92 +1,27 @@
 ###############################################################################
-# Set default behavior to automatically normalize line endings.
+# Text normalization
 ###############################################################################
-* text=auto
-# executable developer tooling
-.githooks/* text eol=lf
-.contrib/db-sync/*.py text eol=lf
-.contrib/db-sync/*.sh text eol=lf
-.contrib/db-sync/*.cmd text eol=crlf
-# lua script
-*.lua       text eol=crlf
-/AllTheThings.lua text eol=lf
-/lib/**/*.lua  text eol=lf
-/src/**/*.lua  text eol=lf
-/tests/*.lua     text eol=lf
-/locales/*.lua   text eol=lf
-# project config / tool config
-*.config    text eol=crlf
-# WOW addon filelist
-*.toc       text eol=crlf
-# VS solution file
-*.sln       text eol=crlf
-# C# project file
-*.csproj    text eol=crlf
-# C# source code
-*.cs        text eol=crlf
-# text file
-*.text      text eol=crlf
-# xml file
-*.xml       text eol=crlf
-# Runtime XML
-/Bindings.xml text eol=lf
-/src/Settings/Settings.xml text eol=lf
-/src/UI/Windows/Windows.xml text eol=lf
-###############################################################################
-# Set default behavior for command prompt diff.
-#
-# This is need for earlier builds of msysgit that does not have it on by
-# default for csharp files.
-# Note: This is only used by command line
-###############################################################################
-#*.cs     diff=csharp
-###############################################################################
-# Set the merge driver for project and solution files
-#
-# Merging from the command prompt will add diff markers to the files if there
-# are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following
-# file extensions to fail to load in VS. An alternative would be to treat
-# these files as binary and thus will always conflict and require user
-# intervention with every merge. To do so, just uncomment the entries below
-###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.vcxproj   merge=binary
-#*.vcproj    merge=binary
-#*.dbproj    merge=binary
-#*.fsproj    merge=binary
-#*.lsproj    merge=binary
-#*.wixproj   merge=binary
-#*.modelproj merge=binary
-#*.sqlproj   merge=binary
-#*.wwaproj   merge=binary
-###############################################################################
-# behavior for image files
-#
-# image files are treated as binary by default.
-###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
-###############################################################################
-# diff behavior for common document formats
-#
-# Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the
-# entries below.
-###############################################################################
-#*.doc   diff=astextplain
-#*.DOC   diff=astextplain
-#*.docx  diff=astextplain
-#*.DOCX  diff=astextplain
-#*.dot   diff=astextplain
-#*.DOT   diff=astextplain
-#*.pdf   diff=astextplain
-#*.PDF   diff=astextplain
-#*.rtf   diff=astextplain
-#*.RTF   diff=astextplain
+# Store text as LF and check it out as LF, independent of core.autocrlf.
+* text=auto eol=lf
+
+# Windows command scripts use CRLF in the working tree (LF in Git).
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# PowerShell uses the default LF policy.
+*.ps1 text eol=lf
+*.psm1 text eol=lf
+*.psd1 text eol=lf
+
+# These formats are binary throughout the repository.
+*.dll binary
+*.exe binary
+*.ico binary
+*.pdb binary
+*.nupkg binary
+*.so binary
+*.dylib binary
+
 ###############################################################################
 # used to remove files from deployment using `git archive`
 ###############################################################################
