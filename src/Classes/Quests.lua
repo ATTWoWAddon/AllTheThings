@@ -1576,10 +1576,24 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 	-- which have checked their CostCollectibles
 	-- otherwise these only get updated based on chained Item costs onto the Quest
 	local next = next
+	---@type function
+	local RGRF = app.Modules.Filter.Filters.RecursiveGroupRequirementsFilter
 	local CostRunner = app.Modules.Costs.Runner
-	local CollectibleAsCost = app.CollectibleAsCost
+	local _
+	local function UpdateVisibleQuestsCollectibleAsCost(quest)
+		-- when checking collectibleAsCost directly, skip anything which is filtered out
+		if not RGRF(quest) then
+			quest.isCost = nil
+			-- app.PrintDebug("clearing cost on filtered quest!",app:SearchLink(quest))
+			app.DirectGroupUpdate(quest)
+			return
+		else
+			_ = quest.collectibleAsCost
+			-- app.PrintDebug("checked collectibleAsCost on visible quest!",_,app:SearchLink(quest))
+		end
+	end
 	for quest in next,QuestsWhichDeterminedCost do
-		CostRunner.Run(CollectibleAsCost, quest)
+		CostRunner.Run(UpdateVisibleQuestsCollectibleAsCost, quest)
 	end
 end)
 app.GlobalVariants.AndMaxReputation = {
