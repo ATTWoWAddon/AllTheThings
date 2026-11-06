@@ -8,8 +8,9 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 function Sort-Ordinal([string[]] $Values) {
+    if ($null -eq $Values -or $Values.Length -eq 0) { return }
     $copy = [string[]] @($Values)
-    [Array]::Sort($copy, [StringComparer]::Ordinal)
+    if ($copy.Length -gt 1) { [Array]::Sort($copy, [StringComparer]::Ordinal) }
     return $copy
 }
 
