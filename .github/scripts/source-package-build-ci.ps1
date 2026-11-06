@@ -577,6 +577,39 @@ try {
             }
         }
     }
+    # Exercise the committed x64 tools together with this run's Database/Sync/Item.
+    $committedNet10 = @{
+        'Skill Level Requirements.exe' = '18865A71035AAF8E7F2E1A8CBB9884B3C872420A2A44450AE713566BD6F9DA54'
+        'Skill Level Requirements.dll' = 'C6D2E90B23DC747671093D5D37B2A1C9B112D7070370DB26A6EF2186B8CA89B4'
+        'AssetDB Builder.exe' = 'A9B183132D037D882BC95E470D7C10BC5F4C5E0053CEDE3FD7E83B22E6025591'
+        'AssetDB Builder.dll' = 'A7D9D48D0BB633D43EB6FFBB007B36A8415FA7649CCB8BF57BF74A38EEB20B57'
+        'IconID Converter.exe' = 'C0C5C33D058679929027130C3108C90A9AB30266A29F7594706C4C102D76E4F7'
+        'IconID Converter.dll' = '92024D243F6EE8066BC1038A233E8F7355CC690392202BB4394D82B59BC4C570'
+    }
+    $committedNet10Json = @{
+        'Skill Level Requirements.deps.json' = '609FF4A575B4935C600BD6FF227AA1EC3AF06D023CAFB4C088C26530DB41758B'
+        'AssetDB Builder.deps.json' = '46DC753C3801A24C491F06EB369653D0EDE524E6ECF5A767E6440E8F520752EC'
+        'IconID Converter.deps.json' = '6652D718274D473B4550034A68331816832E845102873EB8C68920175DBB9E93'
+        'Skill Level Requirements.runtimeconfig.json' = '9950D4583CFC9A106857C0D5B8A75B53E8774852B57B80BC3823A74D44A4D87F'
+        'AssetDB Builder.runtimeconfig.json' = '9950D4583CFC9A106857C0D5B8A75B53E8774852B57B80BC3823A74D44A4D87F'
+        'IconID Converter.runtimeconfig.json' = '9950D4583CFC9A106857C0D5B8A75B53E8774852B57B80BC3823A74D44A4D87F'
+    }
+    foreach ($name in $committedNet10.Keys) {
+        $original = Join-Path $repositoryTools $name
+        if ((Get-FileHash -LiteralPath $original -Algorithm SHA256).Hash -ne $committedNet10[$name]) { throw "Unexpected committed x64 tool: $name" }
+        $destination = Join-Path $sharedTools $name
+        Copy-Item -LiteralPath $original -Destination $destination -Force
+        Test-MatchedFile $destination $original 'committed x64 tool'
+    }
+    foreach ($name in $committedNet10Json.Keys) {
+        $original = Join-Path $repositoryTools $name
+        $contents = [System.IO.File]::ReadAllText($original).Replace("`r`n", "`n")
+        $normalizedHash = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData([Text.Encoding]::UTF8.GetBytes($contents)))
+        if ($normalizedHash -ne $committedNet10Json[$name]) { throw "Unexpected committed x64 tool JSON: $name" }
+        $destination = Join-Path $sharedTools $name
+        Copy-Item -LiteralPath $original -Destination $destination -Force
+        Test-MatchedFile $destination $original 'committed x64 tool JSON'
+    }
     foreach ($name in 'Parser.exe', 'Parser.exe.config', 'Csv.dll') {
         $original = Join-Path $repositoryTools $name
         $destination = Join-Path $sharedTools $name
@@ -596,7 +629,7 @@ try {
         asset = 'Actual EXE with synthetic JSON input and checked output.'
         icon = 'Actual EXE with local synthetic CSV and checked file replacement.'
         skill = 'Built DLL Helper.Parse with synthetic content and Newtonsoft path/hash; EXE and live Wowhead were not tested.'
-        shared = 'Fixtures also run with the built tools and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
+        shared = 'Fixtures also run with the committed x64 .NET 10 tools, built legacy projects, and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
         lua = 'Application integration uses bundled Lua 5.4.9; input syntax is Lua 5.1 compatible.'
     }
 
@@ -625,7 +658,8 @@ and Database saved-variable parsing. Skill Level Requirements was checked at its
 parsing function using synthetic content; its executable and live Wowhead access
 were not tested. These checks do not replace testing with actual game data.
 The same fixtures were also checked in a synthetic shared .tools layout with
-the existing Parser; only Parser Lua initialization was checked, not a parse.
+the committed x64 .NET 10 tools and existing Parser; only Parser Lua
+initialization was checked, not a full parse.
 '@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
     $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
         $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
