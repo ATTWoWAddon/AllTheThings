@@ -16,6 +16,7 @@ $frameworkExpectations = @{
 }
 $installedFrameworkRelease = $null
 $databaseContractMatched = $false
+$syncContractMatched = $false
 $runtimeCoverage = $null
 $failure = $null
 
@@ -47,8 +48,8 @@ function Test-FrameworkTarget([string] $Name, [string] $Output, [string] $Config
     try {
         $pe = [System.Reflection.PortableExecutable.PEReader]::new($stream)
         try {
-            if ($Name -eq 'Database' -and $pe.PEHeaders.CoffHeader.Machine -ne [System.Reflection.PortableExecutable.Machine]::Amd64) {
-                throw "Database must remain x64: $path"
+            if ($Name -in @('Database', 'ATT Sync Tool') -and $pe.PEHeaders.CoffHeader.Machine -ne [System.Reflection.PortableExecutable.Machine]::Amd64) {
+                throw "$Name must remain x64: $path"
             }
             $metadata = [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($pe)
             $targets = @(
@@ -117,7 +118,46 @@ function Test-DatabaseProjectEvaluation {
         }
     }
 }
-function Get-DatabaseContract([string] $AssemblyPath, [string] $DependencyDirectory, [string] $Label) {
+function Test-SyncProjectEvaluation {
+    $project = Join-Path $source 'ATT Sync Tool/ATT Sync Tool.csproj'
+    $expectedCompile = @(
+        'MainForm.cs', 'MainForm.Designer.cs', 'Program.cs', 'Properties/AssemblyInfo.cs',
+        'Tracer.cs', 'Properties/Resources.Designer.cs', 'Properties/Settings.Designer.cs'
+    ) | Sort-Object
+    $expectedResources = @('MainForm.resx', 'Properties/Resources.resx') | Sort-Object
+    $cases = @(
+        @{ Name = 'default'; Configuration = $null; Output = 'bin\x64\Debug\'; Optimize = 'false' },
+        @{ Name = 'Debug'; Configuration = 'Debug'; Output = 'bin\x64\Debug\'; Optimize = 'false' },
+        @{ Name = 'Release'; Configuration = 'Release'; Output = '..\..\.tools\'; Optimize = 'true' },
+        @{ Name = 'Classic-Era'; Configuration = 'Classic Era'; Output = 'bin\x64\Classic Era\'; Optimize = 'true' },
+        @{ Name = 'Classic-TBC'; Configuration = 'Classic TBC'; Output = 'bin\x64\Classic TBC\'; Optimize = 'true' },
+        @{ Name = 'Classic-Wrath'; Configuration = 'Classic Wrath'; Output = 'bin\x64\Classic Wrath\'; Optimize = 'true' }
+    )
+    [pscustomobject]@{ source = 'pre-conversion Sync project declarations'; compile = @($expectedCompile); embeddedResources = @($expectedResources); cases = $cases } |
+        ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-evaluation-baseline.json')
+    foreach ($case in $cases) {
+        $arguments = @($project, '-nologo', '-getProperty:Configuration,Platform,PlatformTarget,OutputPath,Optimize,OutputType,UseWindowsForms,ApplicationIcon,AssemblyName,RootNamespace,TargetFramework,GenerateAssemblyInfo', '-getItem:Compile,EmbeddedResource')
+        if ($case.Configuration) { $arguments += "/p:Configuration=$($case.Configuration)", '/p:Platform=x64' }
+        $json = (& msbuild @arguments | Out-String)
+        if ($LASTEXITCODE -ne 0) { throw "Sync project evaluation failed: $($case.Name)" }
+        $json | Set-Content -Encoding utf8 (Join-Path $evidence "sync-evaluation-$($case.Name).json")
+        $evaluation = $json | ConvertFrom-Json
+        $properties = $evaluation.Properties
+        $expectedConfiguration = if ($case.Configuration) { $case.Configuration } else { 'Debug' }
+        if ($properties.Configuration -ne $expectedConfiguration -or $properties.Platform -ne 'x64' -or $properties.PlatformTarget -ne 'x64' -or
+            $properties.OutputPath -ne $case.Output -or $properties.Optimize -ne $case.Optimize -or $properties.OutputType -ne 'WinExe' -or
+            $properties.UseWindowsForms -ne 'true' -or $properties.ApplicationIcon -ne 'base_72x72_Q9mPGQ.ico' -or
+            $properties.AssemblyName -ne 'ATT Sync Tool' -or $properties.RootNamespace -ne 'ATT' -or $properties.TargetFramework -ne 'net48' -or $properties.GenerateAssemblyInfo -ne 'false') {
+            throw "Sync project properties differ from the established behavior: $($case.Name)"
+        }
+        $actualCompile = @($evaluation.Items.Compile | ForEach-Object { $_.Identity.Replace('\', '/') } | Sort-Object)
+        $actualResources = @($evaluation.Items.EmbeddedResource | ForEach-Object { $_.Identity.Replace('\', '/') } | Sort-Object)
+        if ((Compare-Object $expectedCompile $actualCompile) -or (Compare-Object $expectedResources $actualResources)) {
+            throw "Sync compile/resource items differ from the established source set: $($case.Name)"
+        }
+    }
+}
+function Get-AssemblyContract([string] $AssemblyPath, [string] $DependencyDirectory, [string] $Label, [string] $Name) {
     $info = [System.Diagnostics.ProcessStartInfo]::new()
     $info.FileName = Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe'
     $info.WorkingDirectory = $env:RUNNER_TEMP
@@ -136,9 +176,9 @@ function Get-DatabaseContract([string] $AssemblyPath, [string] $DependencyDirect
     if ($timedOut) { $process.Kill($true); $process.WaitForExit() }
     $text = $stdout.GetAwaiter().GetResult()
     $errorText = $stderr.GetAwaiter().GetResult()
-    [System.IO.File]::WriteAllText((Join-Path $evidence "database-contract-$Label.json"), $text)
-    [System.IO.File]::WriteAllText((Join-Path $evidence "database-contract-$Label.stderr.txt"), $errorText)
-    if ($timedOut -or $process.ExitCode -ne 0) { throw "Database contract check failed or timed out: $Label (exit $($process.ExitCode))" }
+    [System.IO.File]::WriteAllText((Join-Path $evidence "$Name-contract-$Label.json"), $text)
+    [System.IO.File]::WriteAllText((Join-Path $evidence "$Name-contract-$Label.stderr.txt"), $errorText)
+    if ($timedOut -or $process.ExitCode -ne 0) { throw "$Name contract check failed or timed out: $Label (exit $($process.ExitCode))" }
     $null = $text | ConvertFrom-Json
     return $text.Trim()
 }
@@ -158,6 +198,7 @@ try {
     }
     $sourceManifest | Set-Content -Encoding utf8 (Join-Path $evidence 'source-SHA256SUMS.txt')
     Test-DatabaseProjectEvaluation
+    Test-SyncProjectEvaluation
     $baselineDatabase = Join-Path $repositoryTools 'Database.dll'
     $baselineDatabaseHash = (Get-FileHash -LiteralPath $baselineDatabase -Algorithm SHA256).Hash
     if ($baselineDatabaseHash -ne 'C425611AB07634B8C7DC5D16F0BD662C98AC6AABF127031F2CDC8E4FFAA6A2E2') {
@@ -165,6 +206,13 @@ try {
     }
     [pscustomobject]@{ path = $baselineDatabase; sha256 = $baselineDatabaseHash; source = 'validated pre-conversion net48 Database' } |
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'database-api-baseline.json')
+    $baselineSync = Join-Path $repositoryTools 'ATT Sync Tool.exe'
+    $baselineSyncHash = (Get-FileHash -LiteralPath $baselineSync -Algorithm SHA256).Hash
+    if ($baselineSyncHash -ne '7A8276DA8E0B32F1342B87F5BBD1ADAF16855D0B6D870BAE9F5175799AA40163') {
+        throw 'Sync API baseline does not match the validated .NET Framework 4.8 artifact.'
+    }
+    [pscustomobject]@{ path = $baselineSync; sha256 = $baselineSyncHash; source = 'validated pre-conversion net48 Sync' } |
+        ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-api-baseline.json')
     # Preserve the original shared DLLs only as hash oracles, then remove them
     # from the runner checkout so no project can resolve a stale HintPath.
     $originalLua = Join-Path $env:RUNNER_TEMP 'att-original-lua'
@@ -272,10 +320,34 @@ try {
     if ((Get-FileHash $database -Algorithm SHA256).Hash -ne (Get-FileHash $syncDatabase -Algorithm SHA256).Hash) {
         throw 'The Database library in ATT Sync Tool differs from the Release Database output.'
     }
-    $beforeContract = Get-DatabaseContract $baselineDatabase $originalLua 'before'
-    $afterContract = Get-DatabaseContract $database (Split-Path $database) 'after'
+    $beforeContract = Get-AssemblyContract $baselineDatabase $originalLua 'before' 'database'
+    $afterContract = Get-AssemblyContract $database (Split-Path $database) 'after' 'database'
     if ($beforeContract -cne $afterContract) { throw 'Database public/protected API, identity, or manifest resources differ from the net48 baseline.' }
     $databaseContractMatched = $true
+    $sync = Join-Path $release 'ATT Sync Tool/ATT Sync Tool.exe'
+    $syncDependencies = Split-Path $sync
+    $beforeSyncContract = Get-AssemblyContract $baselineSync $syncDependencies 'before' 'sync'
+    $afterSyncContract = Get-AssemblyContract $sync $syncDependencies 'after' 'sync'
+    if ($beforeSyncContract -cne $afterSyncContract) { throw 'Sync public/protected API, identity, or manifest resources differ from the net48 baseline.' }
+    $syncResources = @(($afterSyncContract | ConvertFrom-Json).manifestResources | Sort-Object)
+    $expectedSyncResources = @('ATT.MainForm.resources', 'ATT.Properties.Resources.resources') | Sort-Object
+    if (Compare-Object $expectedSyncResources $syncResources) { throw 'Sync manifest resources differ from the expected names.' }
+    Add-Type -AssemblyName System.Drawing
+    $iconHashes = @(
+        foreach ($path in @($baselineSync, $sync)) {
+            $icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path)
+            if ($null -eq $icon) { throw "Missing application icon: $path" }
+            $stream = [System.IO.MemoryStream]::new()
+            try {
+                $icon.Save($stream)
+                [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($stream.ToArray()))
+            } finally { $stream.Dispose(); $icon.Dispose() }
+        }
+    )
+    if ($iconHashes.Count -ne 2 -or $iconHashes[0] -cne $iconHashes[1]) { throw 'Sync application icon differs from the baseline.' }
+    [pscustomobject]@{ baseline = $iconHashes[0]; actual = $iconHashes[1]; manifestResources = $syncResources } |
+        ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-icon-and-resources.json')
+    $syncContractMatched = $true
     foreach ($project in $projects | Where-Object { $_.Legacy }) {
         $name = [System.IO.Path]::GetFileNameWithoutExtension($project.Path)
         $output = Join-Path $release $name
@@ -429,6 +501,7 @@ the existing Parser; only Parser Lua initialization was checked, not a parse.
         frameworkTargets = @($frameworkEvidence)
         installedFrameworkRelease = $installedFrameworkRelease
         databaseContractMatched = $databaseContractMatched
+        syncContractMatched = $syncContractMatched
         runtimeCoverage = $runtimeCoverage
     } | ConvertTo-Json -Depth 10 | Set-Content -Encoding utf8 (Join-Path $evidence 'result.json')
 }
