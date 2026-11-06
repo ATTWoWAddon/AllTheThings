@@ -483,6 +483,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				lvl = 10,
 			}),
 			q(95140, {	-- Old Fire-Eye
+				sourceQuest = 95126,	-- The Moonsilver Blade
 				qg = 259620,	-- Lumina Windsinger
 				coord = { 43.2, 41.0, MAP.SILVERPINE_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
