@@ -207,6 +207,19 @@ instanceroot(2959, {	-- City of Dalaran
 				},
 			}),
 		}),
+		n(SPECIAL, {
+			i(276561, {	-- Black Tome
+				description = "Found on the table next to Archmage Arugal at the end of Shadowfang Keep. Each party member can loot one.",
+				provider = { "o", 659376 },	-- Black Tome
+				maps = { MAP.SHADOWFANG_KEEP },
+			}),
+			i(275989, {	-- Tome of Dalaran
+				description = "Use the Black Tome at the Leyline Focus next to Archmage Ataeric in the Ambermill Town Hall to create this. Use it on the purple ritual circle in the lower level of the City of Dalaran to summon Lyn the Ignored. It isn't consumed.",
+				provider = { "o", 672323 },	-- Leyline Focus
+				coord = { 63.4, 64.3, MAP.SILVERPINE_FOREST },
+				cost = { { "i", 276561, 1 } },	-- Black Tome
+			}),
+		}),
 		n(ZONE_DROPS, {
 			i(286992, {	-- Construct's Grips
 				cr = 246664,	-- Fragmented Sentry
@@ -244,7 +257,8 @@ instanceroot(2959, {	-- City of Dalaran
 				i(273032),	-- Bonebinder's Signet
 			},
 		}),
-		e(3310, {	-- Lyn the Ignored TODO: Source the steps to unlock the attunement https://www.wowhead.com/forever/es/news/how-to-find-the-secret-boss-in-the-city-of-dalaran-dungeon-in-wow-forever-383366
+		e(3310, {	-- Lyn the Ignored
+			description = "Summoned by using the Tome of Dalaran on the purple ritual circle in the lower level of the dungeon.",
 			cost = { { "i", 275989, 1 } },	-- Tome of Dalaran
 			creatureID = 247032,	-- Lyn the Ignored
 			groups = {

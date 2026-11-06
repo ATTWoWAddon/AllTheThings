@@ -1545,6 +1545,10 @@ q(96986,{awp=16001,coords={
 qo(1,{providers={{"n",247126}}}),
 s(298450,251963,{f=5,loc=47}),
 s(298452,251965,{f=6,loc=43})}})}),
+h(-55,{
+i(276561,{b=1,description="Found on the table next to Archmage Arugal at the end of Shadowfang Keep. Each party member can loot one.",maps={310},providers={{"o",659376}},spellID=1308377}),
+i(275989,{b=1,coords={
+[1421]={{63.4,64.3}}},cost={{"i",276561,1}},description="Use the Black Tome at the Leyline Focus next to Archmage Ataeric in the Ambermill Town Hall to create this. Use it on the purple ritual circle in the lower level of the City of Dalaran to summon Lyn the Ignored. It isn't consumed.",providers={{"o",672323}},spellID=1303304})}),
 h(-63,{
 s(317812,286992,{crs={246664},f=6,loc=44}),
 s(317810,286991,{crs={247003},f=5,loc=47}),
@@ -1556,7 +1560,7 @@ e(3311,{npcID=247126,g={
 s(308394,273033,{f=33}),
 s(308397,273036,{f=4,loc=43}),
 i(273032,{f=52})}}),
-e(3310,{cost={{"i",275989,1}},npcID=247032,g={
+e(3310,{cost={{"i",275989,1}},description="Summoned by using the Tome of Dalaran on the purple ritual circle in the lower level of the dungeon.",npcID=247032,g={
 s(308412,273053,{f=20}),
 s(308414,273055,{f=8}),
 s(308413,273054,{f=5,loc=44})}}),
