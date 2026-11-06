@@ -17,6 +17,8 @@ $frameworkExpectations = @{
 $installedFrameworkRelease = $null
 $databaseContractMatched = $false
 $syncContractMatched = $false
+$itemContractMatched = $false
+$itemArchitectureEvidence = [System.Collections.Generic.List[object]]::new()
 $runtimeCoverage = $null
 $failure = $null
 
@@ -50,6 +52,17 @@ function Test-FrameworkTarget([string] $Name, [string] $Output, [string] $Config
         try {
             if ($Name -in @('Database', 'ATT Sync Tool') -and $pe.PEHeaders.CoffHeader.Machine -ne [System.Reflection.PortableExecutable.Machine]::Amd64) {
                 throw "$Name must remain x64: $path"
+            }
+            if ($Name -eq 'Item Database Consolidator') {
+                $machine = $pe.PEHeaders.CoffHeader.Machine
+                $flags = $pe.PEHeaders.CorHeader.Flags
+                $expectedMachine = if ($Configuration -eq 'Debug') { [System.Reflection.PortableExecutable.Machine]::I386 } else { [System.Reflection.PortableExecutable.Machine]::Amd64 }
+                $ilOnly = [System.Reflection.PortableExecutable.CorFlags]::ILOnly
+                $no32BitFlags = [System.Reflection.PortableExecutable.CorFlags]::Requires32Bit -bor [System.Reflection.PortableExecutable.CorFlags]::Prefers32Bit
+                if ($machine -ne $expectedMachine -or ($flags -band $ilOnly) -eq 0 -or ($flags -band $no32BitFlags) -ne 0) {
+                    throw "Unexpected Item PE architecture for $Configuration : machine=$machine flags=$flags"
+                }
+                $itemArchitectureEvidence.Add([pscustomobject]@{ configuration = $Configuration; phase = $Phase; path = $path; machine = $machine.ToString(); corFlags = $flags.ToString() })
             }
             $metadata = [System.Reflection.Metadata.PEReaderExtensions]::GetMetadataReader($pe)
             $targets = @(
@@ -157,6 +170,39 @@ function Test-SyncProjectEvaluation {
         }
     }
 }
+function Test-ItemProjectEvaluation {
+    $project = Join-Path $source 'Item Database Consolidator/Item Database Consolidator.csproj'
+    $expectedCompile = @('Program.cs', 'Properties/AssemblyInfo.cs') | Sort-Object
+    $cases = @(
+        @{ Name = 'default'; Configuration = $null; Target = 'AnyCPU'; Optimize = 'false' },
+        @{ Name = 'Debug'; Configuration = 'Debug'; Target = 'AnyCPU'; Optimize = 'false' },
+        @{ Name = 'Release'; Configuration = 'Release'; Target = 'x64'; Optimize = 'true' }
+    )
+    [pscustomobject]@{ source = 'pre-conversion Item project declarations'; compile = @($expectedCompile); embeddedResources = @(); cases = $cases } |
+        ConvertTo-Json -Depth 5 | Set-Content -Encoding utf8 (Join-Path $evidence 'item-evaluation-baseline.json')
+    foreach ($case in $cases) {
+        $arguments = @($project, '-nologo', '-getProperty:Configuration,Platform,PlatformTarget,Prefer32Bit,OutputPath,Optimize,OutputType,ApplicationIcon,AssemblyName,RootNamespace,TargetFramework,GenerateAssemblyInfo', '-getItem:Compile,EmbeddedResource')
+        if ($case.Configuration) { $arguments += "/p:Configuration=$($case.Configuration)", '/p:Platform=AnyCPU' }
+        $json = (& msbuild @arguments | Out-String)
+        if ($LASTEXITCODE -ne 0) { throw "Item project evaluation failed: $($case.Name)" }
+        $json | Set-Content -Encoding utf8 (Join-Path $evidence "item-evaluation-$($case.Name).json")
+        $evaluation = $json | ConvertFrom-Json
+        $properties = $evaluation.Properties
+        $expectedConfiguration = if ($case.Configuration) { $case.Configuration } else { 'Debug' }
+        if ($properties.Configuration -ne $expectedConfiguration -or $properties.Platform -ne 'AnyCPU' -or $properties.PlatformTarget -ne $case.Target -or
+            $properties.Prefer32Bit -ne 'false' -or $properties.OutputPath -ne '..\..\.tools\' -or $properties.Optimize -ne $case.Optimize -or
+            $properties.OutputType -ne 'Exe' -or $properties.ApplicationIcon -ne 'att_logo_128_new_jrX_icon.ico' -or
+            $properties.AssemblyName -ne 'Item Database Consolidator' -or $properties.RootNamespace -ne 'ATT' -or
+            $properties.TargetFramework -ne 'net48' -or $properties.GenerateAssemblyInfo -ne 'false') {
+            throw "Item project properties differ from the established behavior: $($case.Name)"
+        }
+        $actualCompile = @($evaluation.Items.Compile | ForEach-Object { $_.Identity.Replace('\', '/') } | Sort-Object)
+        $actualResources = @($evaluation.Items.EmbeddedResource | Where-Object { $null -ne $_ })
+        if ((Compare-Object $expectedCompile $actualCompile) -or $actualResources.Count -ne 0) {
+            throw "Item compile/resource items differ from the established source set: $($case.Name)"
+        }
+    }
+}
 function Get-AssemblyContract([string] $AssemblyPath, [string] $DependencyDirectory, [string] $Label, [string] $Name) {
     $info = [System.Diagnostics.ProcessStartInfo]::new()
     $info.FileName = Join-Path $env:WINDIR 'System32/WindowsPowerShell/v1.0/powershell.exe'
@@ -199,20 +245,28 @@ try {
     $sourceManifest | Set-Content -Encoding utf8 (Join-Path $evidence 'source-SHA256SUMS.txt')
     Test-DatabaseProjectEvaluation
     Test-SyncProjectEvaluation
+    Test-ItemProjectEvaluation
     $baselineDatabase = Join-Path $repositoryTools 'Database.dll'
     $baselineDatabaseHash = (Get-FileHash -LiteralPath $baselineDatabase -Algorithm SHA256).Hash
-    if ($baselineDatabaseHash -ne 'C425611AB07634B8C7DC5D16F0BD662C98AC6AABF127031F2CDC8E4FFAA6A2E2') {
+    if ($baselineDatabaseHash -ne '3F9C29C7494F2CF601B2A4377F404E750577619D61BE20EAE7D8391DFCD7DAB8') {
         throw 'Database API baseline does not match the validated .NET Framework 4.8 artifact.'
     }
-    [pscustomobject]@{ path = $baselineDatabase; sha256 = $baselineDatabaseHash; source = 'validated pre-conversion net48 Database' } |
+    [pscustomobject]@{ path = $baselineDatabase; sha256 = $baselineDatabaseHash; source = 'validated previous SDK Database' } |
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'database-api-baseline.json')
     $baselineSync = Join-Path $repositoryTools 'ATT Sync Tool.exe'
     $baselineSyncHash = (Get-FileHash -LiteralPath $baselineSync -Algorithm SHA256).Hash
-    if ($baselineSyncHash -ne '7A8276DA8E0B32F1342B87F5BBD1ADAF16855D0B6D870BAE9F5175799AA40163') {
+    if ($baselineSyncHash -ne '926896CAD01BCAD59A0F68B99EF5C5FCA08ADDE096DE71ED06847C337D1022DB') {
         throw 'Sync API baseline does not match the validated .NET Framework 4.8 artifact.'
     }
-    [pscustomobject]@{ path = $baselineSync; sha256 = $baselineSyncHash; source = 'validated pre-conversion net48 Sync' } |
+    [pscustomobject]@{ path = $baselineSync; sha256 = $baselineSyncHash; source = 'validated previous SDK Sync' } |
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-api-baseline.json')
+    $baselineItem = Join-Path $repositoryTools 'Item Database Consolidator.exe'
+    $baselineItemHash = (Get-FileHash -LiteralPath $baselineItem -Algorithm SHA256).Hash
+    if ($baselineItemHash -ne 'F8A2916B295311831BD5655EFD0CB1047D370BCD54682AEAE91BF17765B4EDD7') {
+        throw 'Item API baseline does not match the validated .NET Framework 4.8 artifact.'
+    }
+    [pscustomobject]@{ path = $baselineItem; sha256 = $baselineItemHash; source = 'validated pre-conversion net48 Item' } |
+        ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'item-api-baseline.json')
     # Preserve the original shared DLLs only as hash oracles, then remove them
     # from the runner checkout so no project can resolve a stale HintPath.
     $originalLua = Join-Path $env:RUNNER_TEMP 'att-original-lua'
@@ -348,6 +402,26 @@ try {
     [pscustomobject]@{ baseline = $iconHashes[0]; actual = $iconHashes[1]; manifestResources = $syncResources } |
         ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'sync-icon-and-resources.json')
     $syncContractMatched = $true
+    $item = Join-Path $release 'Item Database Consolidator/Item Database Consolidator.exe'
+    $itemDependencies = Split-Path $item
+    $beforeItemContract = Get-AssemblyContract $baselineItem $itemDependencies 'before' 'item'
+    $afterItemContract = Get-AssemblyContract $item $itemDependencies 'after' 'item'
+    if ($beforeItemContract -cne $afterItemContract) { throw 'Item public/protected API, identity, or manifest resources differ from the net48 baseline.' }
+    $itemIconHashes = @(
+        foreach ($path in @($baselineItem, $item)) {
+            $icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path)
+            if ($null -eq $icon) { throw "Missing application icon: $path" }
+            $stream = [System.IO.MemoryStream]::new()
+            try {
+                $icon.Save($stream)
+                [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($stream.ToArray()))
+            } finally { $stream.Dispose(); $icon.Dispose() }
+        }
+    )
+    if ($itemIconHashes.Count -ne 2 -or $itemIconHashes[0] -cne $itemIconHashes[1]) { throw 'Item application icon differs from the baseline.' }
+    [pscustomobject]@{ baseline = $itemIconHashes[0]; actual = $itemIconHashes[1] } |
+        ConvertTo-Json | Set-Content -Encoding utf8 (Join-Path $evidence 'item-icon.json')
+    $itemContractMatched = $true
     foreach ($project in $projects | Where-Object { $_.Legacy }) {
         $name = [System.IO.Path]::GetFileNameWithoutExtension($project.Path)
         $output = Join-Path $release $name
@@ -431,6 +505,23 @@ try {
             }
         }
     }
+    # Exercise the actual product combination: previously committed Database and Sync,
+    # with the Item executable built in this run. The isolated Release tests above
+    # still exercise all of this run's own output files.
+    $productBundle = @{
+        'Database.dll' = '3F9C29C7494F2CF601B2A4377F404E750577619D61BE20EAE7D8391DFCD7DAB8'
+        'ATT Sync Tool.exe' = '926896CAD01BCAD59A0F68B99EF5C5FCA08ADDE096DE71ED06847C337D1022DB'
+        'ATT Sync Tool.exe.config' = '3C07DD192272D154BA6CD96E906801671AADCE330EF37B62BFE91DD04E9AF155'
+    }
+    foreach ($name in $productBundle.Keys) {
+        $original = Join-Path $repositoryTools $name
+        if ((Get-FileHash -LiteralPath $original -Algorithm SHA256).Hash -ne $productBundle[$name]) {
+            throw "Unexpected committed product baseline: $name"
+        }
+        $destination = Join-Path $sharedTools $name
+        Copy-Item -LiteralPath $original -Destination $destination -Force
+        Test-MatchedFile $destination $original 'previously validated committed product'
+    }
     foreach ($name in 'Parser.exe', 'Parser.exe.config', 'Csv.dll') {
         $original = Join-Path $repositoryTools $name
         $destination = Join-Path $sharedTools $name
@@ -450,7 +541,7 @@ try {
         asset = 'Actual EXE with synthetic JSON input and checked output.'
         icon = 'Actual EXE with local synthetic CSV and checked file replacement.'
         skill = 'Built DLL Helper.Parse with synthetic content and Newtonsoft path/hash; EXE and live Wowhead were not tested.'
-        shared = 'Fixtures also run with the built tools and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
+        shared = 'Fixtures also run with committed Database and Sync, newly built Item and other tools, and existing Parser in one synthetic .tools directory; Parser Lua initialization only, not a full parse.'
         lua = 'Application integration uses bundled Lua 5.4.9; input syntax is Lua 5.1 compatible.'
     }
 
@@ -478,8 +569,9 @@ and IconID Converter executables. A harness checked the Sync form initialization
 and Database saved-variable parsing. Skill Level Requirements was checked at its
 parsing function using synthetic content; its executable and live Wowhead access
 were not tested. These checks do not replace testing with actual game data.
-The same fixtures were also checked in a synthetic shared .tools layout with
-the existing Parser; only Parser Lua initialization was checked, not a parse.
+The same fixtures were also checked with the previously committed Database
+and Sync, newly built tools, and existing Parser in a synthetic shared .tools
+layout; only Parser Lua initialization was checked, not a full parse.
 '@ | Set-Content -Encoding utf8 (Join-Path $release 'README.txt')
     $manifest = Get-ChildItem -LiteralPath $release -File -Recurse | Sort-Object FullName | ForEach-Object {
         $relativePath = [System.IO.Path]::GetRelativePath($release, $_.FullName)
@@ -502,6 +594,8 @@ the existing Parser; only Parser Lua initialization was checked, not a parse.
         installedFrameworkRelease = $installedFrameworkRelease
         databaseContractMatched = $databaseContractMatched
         syncContractMatched = $syncContractMatched
+        itemContractMatched = $itemContractMatched
+        itemArchitecture = @($itemArchitectureEvidence)
         runtimeCoverage = $runtimeCoverage
     } | ConvertTo-Json -Depth 10 | Set-Content -Encoding utf8 (Join-Path $evidence 'result.json')
 }
