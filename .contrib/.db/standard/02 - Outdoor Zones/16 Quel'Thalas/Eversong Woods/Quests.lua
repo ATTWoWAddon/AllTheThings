@@ -14,6 +14,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 				q(94871, {	-- Eversong
 					description = "Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",
 					sourceQuests = { 86735 },	-- Paved in Ash
+					coord = { 45.4, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 					isBreadcrumb = true,
 				}),
 				------ Stay awhile and listen ------
