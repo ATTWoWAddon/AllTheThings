@@ -3036,7 +3036,7 @@ i(162686, 2144);	-- REUSE \\ Demon Goat
 i(163553, 0);		-- Digitized Assistant
 i(163554, 0);		-- Finicky Gauntlet
 i(163557, 0);		-- Gigan Tarantula
-i(154703, 0);		-- Hot Air Baloon
+i(154703, 0);		-- Hot Air Balloon
 i(163556, 0);		-- Mechanized Gulper
 i(163559, 0);		-- Queen Cobra
 i(152879, 0);		-- REUSE ME

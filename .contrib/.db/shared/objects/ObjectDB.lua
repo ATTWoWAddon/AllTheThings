@@ -230125,10 +230125,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[329737] = {
-		readable = "Norbit Control Pannel",
+		readable = "Norbit Control Panel",
 		model = 2628252,
 		text = {
-			en = "Norbit Control Pannel",
+			en = "Norbit Control Panel",
 			es = "Panel de control de Norbit",
 			de = "Norbits Bedienpult",
 			fr = "Panneau de contrôle de Norbis",
@@ -306445,10 +306445,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[404432] = {
-		readable = "Bload Soaked Book",
+		readable = "Blood Soaked Book",
 		model = 1005455,
 		text = {
-			en = "Bload Soaked Book",
+			en = "Blood Soaked Book",
 			es = "Libro empapado de sangre",
 			de = "Blutdurchtränktes Buch",
 			fr = "Livre trempé de sang",
