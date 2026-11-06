@@ -379,6 +379,15 @@ namespace ATT
         /// <param name="filePath">The file path.</param>
         public static void ExportDirtyObjectsToFilePath(string filePath) => ExportObjectsToFilePath(DIRTY_OBJECT_FIELDS, filePath);
 
+        // Persist only explicit harvested fields. Effective flavor overlays and
+        // runtime-only objects remain in their independently maintained sources.
+        internal static void ConsolidateDirtyObjects(string directory)
+        {
+            var dirty = ObjectDBConsolidation.SelectHarvested(DIRTY_OBJECT_FIELDS, Framework.ObjectDB);
+            ObjectDBConsolidation.Publish(directory, dirty);
+        }
+
+
         /// <summary>
         /// Exports the provided objectDB to a given file path.
         /// </summary>

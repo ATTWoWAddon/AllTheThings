@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using ATT;
+
+internal static class NativeObjectDBTests
+{
+    private static object Invoke(string name, params object[] args) => typeof(ObjectDBConsolidation)
+        .GetMethods(BindingFlags.NonPublic | BindingFlags.Static)
+        .Single(method => method.Name == name && method.GetParameters().Length == args.Length).Invoke(null, args);
+
+    private static Dictionary<object, object> Copy(object value) => (Dictionary<object, object>)Invoke("CopyValue", value);
+    private static void Require(bool value, string reason) { if (!value) throw new Exception(reason); }
+
+    public static int Main(string[] args)
+    {
+        try
+        {
+            if (args[0] == "store" || args[0] == "hold")
+            {
+                using (var store = new ObjectDBStore(args[1]))
+                {
+                    if (args[0] == "hold") { File.WriteAllText(args[2], "locked"); System.Threading.Thread.Sleep(800); }
+                    Console.WriteLine(MiniJSON.Json.Serialize(store.Files.Select(Path.GetFileName).ToList()));
+                }
+            }
+            else if (args[0] == "scan") Console.WriteLine(MiniJSON.Json.Serialize(ObjectDBStore.ParseEntries(File.ReadAllText(args[1])).Keys.ToList()));
+            else if (args[0] == "dispose")
+            {
+                var first = new ObjectDBStore(args[1]); first.Dispose();
+                using (var second = new ObjectDBStore(args[1]))
+                {
+                    first.Dispose();
+                    Require(File.Exists(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(args[1])), ".ObjectDB.lock")), "Repeated disposal must not delete another reader's lock");
+                }
+            }
+            else if (args[0] == "fingerprint") Console.WriteLine((string)Invoke("Fingerprint", args[1]));
+            else if (args[0] == "echo") Console.WriteLine(MiniJSON.Json.Serialize(args.Skip(1).ToList()));
+            else if (args[0] == "arguments")
+            {
+                var values = new[] { "C:\\folder with spaces\\source.lua", "\\\\server\\share\\", "quote\"inside", "歐巴悠", "", "trailing\\" };
+                var child = Process.Start(new ProcessStartInfo {
+                    FileName = "dotnet", Arguments = ObjectDBConsolidation.Quote(Assembly.GetExecutingAssembly().Location) + " echo " + string.Join(" ", values.Select(ObjectDBConsolidation.Quote)),
+                    UseShellExecute = false, RedirectStandardOutput = true
+                });
+                string text = child.StandardOutput.ReadToEnd(); child.WaitForExit();
+                Require(child.ExitCode == 0, "Argument child failed");
+                var actual = (List<object>)MiniJSON.Json.Deserialize(text);
+                Require(values.SequenceEqual(actual.Select(value => (string)value)), "Process argument quoting changed values");
+                Console.WriteLine("Argument round trip passed");
+            }
+            else if (args[0] == "literal")
+            {
+                var original = Copy(new Dictionary<string, object> {
+                    { "readable", "base" }, { "text", new Dictionary<string, object> { { "cn", "保留" } } },
+                    { "unknown", "retained" }, { "precision", 1.2345678901234567 }, { "model", 123456L },
+                    { "literal", "~print(\"keep as text\")" }, { "path", "C:\\name\\file" },
+                    { "control", "quote\"\n\r\t\0\u001f9" },
+                    { "numeric", new Dictionary<object, object> { { 1L, "base" }, { 2L, "retained" }, { true, "boolean key" } } }
+                });
+                var dirty = new Dictionary<long, IDictionary<string, object>> {
+                    { 1, new Dictionary<string, object> {
+                    { "text", new Dictionary<string, object> { { "en", "new" } } },
+                    { "unknown", null }, { "numeric", new Dictionary<object, object> { { 1d, "changed" } } }
+                    } }, { 2, new Dictionary<string, object> { { "readable", "dynamic event" } } },
+                    { 3, new Dictionary<string, object> { { "readable", "new harvested record" } } }
+                };
+                var effective = new Dictionary<long, IDictionary<string, object>> {
+                    { 1, new Dictionary<string, object> { { "readable", "flavor overlay must stay separate" } } },
+                    { 2, new Dictionary<string, object> { { "dynamic", true }, { "consolidate", true } } },
+                    { 999, new Dictionary<string, object> { { "readable", "runtime-only record" } } }
+                };
+                var harvested = ObjectDBConsolidation.SelectHarvested(dirty, effective);
+                Require(harvested.Count == 2 && harvested.ContainsKey(1) && harvested.ContainsKey(3), "Only explicit non-dynamic harvested updates may be published");
+                var incoming = Copy(harvested[1]);
+                Invoke("Upsert", original, incoming);
+                const string untouched = "[2] = {\r\n\treadable = [[kept\nraw]],\r\n}";
+                using (var output = new StringWriter())
+                {
+                    ObjectDBConsolidation.WriteSnapshot(output,
+                        new Dictionary<long, Dictionary<object, object>> { { 1, original }, { 2, Copy(new Dictionary<string, object> { { "readable", "kept\nraw" } }) } },
+                        new Dictionary<long, string> { { 2, untouched } });
+                    string snapshot = output.ToString();
+                    Require(ObjectDBStore.ParseEntries(snapshot)[2] == untouched, "Untouched entry source must remain byte-identical");
+                    Require(ObjectDBStore.ReadModel(ObjectDBStore.ParseEntries(snapshot)[1]) == 123456, "Serialized model must remain readable by cache collection");
+                    File.WriteAllText(args[1], snapshot);
+                }
+                Require(ObjectDBStore.ReadModel("[1]={a={model=999},[\"model\"]=123}") == 123, "Nested model must not replace the top-level model");
+                bool rejected = false;
+                try { Copy(new Dictionary<object, object> { { 1L, "one" }, { 1d, "duplicate Lua key" } }); }
+                catch (TargetInvocationException) { rejected = true; }
+                Require(rejected, "Equivalent numeric keys must be rejected");
+                var cycle = new Dictionary<string, object>(); cycle["self"] = cycle;
+                rejected = false; try { Copy(cycle); } catch (TargetInvocationException) { rejected = true; }
+                Require(rejected, "Cyclic source must be rejected");
+                ObjectDBConsolidation.Publish("unavailable-no-op-path", new Dictionary<long, IDictionary<string, object>>());
+                Console.WriteLine("Upsert preservation, key normalization, cycles and literal serialization passed");
+            }
+            else throw new Exception("Unknown test command");
+            return 0;
+        }
+        catch (Exception error) { Console.Error.WriteLine(error.GetBaseException().Message); return 1; }
+    }
+}

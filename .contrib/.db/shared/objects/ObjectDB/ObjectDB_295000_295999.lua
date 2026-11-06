@@ -1,0 +1,83 @@
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+[295162] = {
+		readable = "Jungle Studies",
+		model = 774269,
+		text = {
+			en = "Jungle Studies",
+			es = "Estudio de la selva",
+			de = "Dschungelforschung",
+			fr = "Études de la jungle",
+			it = "Studi della Giungla",
+			pt = "Estudos da Selva",
+			ru = "\"Книга джунглей\"",
+			ko = "밀림학 개론",
+		},
+	},
+[295323] = {
+		readable = "Kvaldir Haul",
+		model = 1402263,
+		text = {
+			en = "Kvaldir Haul",
+			es = "Botín kvaldir",
+			de = "Kvaldirbeute",
+			fr = "Prise kvaldir",
+			it = "Bottino dei Kvaldir",
+			pt = "Carregamento dos Kvaldir",
+			ru = "Схрон квалдиров",
+			ko = "크발디르 노획물",
+			cn = "克瓦迪尔宝箱",
+		},
+	},
+[295546] = {
+		readable = "Mausoleum Trigger",
+		model = 201070,
+		text = {
+			en = "Mausoleum Trigger",
+			it = "Mausoleo",
+			pt = "Gatilho do Mausoléu",
+		},
+	},
+[295547] = {
+		readable = "Pirate's Booty",
+		model = 1100065,
+		text = {
+			en = "Pirate's Booty",
+			es = "Botín de pirata",
+			de = "Piratenbeute",
+			fr = "Butin de pirate",
+			it = "Bottino del Pirata",
+			pt = "Butim do Pirata",
+			ru = "Пожива пирата",
+			cn = "海盗的赃物",
+		},
+	},
+[295548] = {
+		readable = "Pirate's Plunder",
+		model = 1100065,
+		text = {
+			en = "Pirate's Plunder",
+			es = "Saqueo de pirata",
+			de = "Piratenplündergut",
+			fr = "Pactole de pirate",
+			it = "Malloppo del Pirata",
+			pt = "Pilhagem do Pirata",
+			ru = "Счастье пирата",
+			cn = "海盗的战利品",
+		},
+	},
+[295817] = {
+		readable = "Experimental Azerite Weapons",
+		model = 1984085,
+		text = {
+			en = "Experimental Azerite Weapons",
+			es = "Armas de azerita experimentales",
+			de = "Experimentelle Azeritwaffen",
+			fr = "Armes à azérite expérimentales",
+			it = "Armi d'Azerite Sperimentali",
+			pt = "Armas de Azerita Experimentais",
+			ru = "Экспериментальное азеритовое оружие",
+			cn = "实验型艾泽里特武器",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

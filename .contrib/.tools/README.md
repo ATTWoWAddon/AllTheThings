@@ -99,3 +99,7 @@ git diff --check
 ```
 
 If the result is not expected, restore it with your normal Git workflow before making additional edits.
+
+## Maintain the canonical ObjectDB
+
+The canonical ObjectDB is stored in managed Lua shards. See [ObjectDB maintenance](Lua/ObjectDB.md) for editing, checking, repartitioning, consolidation requirements, and recovery.

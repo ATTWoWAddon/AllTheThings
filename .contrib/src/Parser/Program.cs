@@ -467,22 +467,34 @@ namespace ATT
                 string sharedRootFolder = Framework.Config["shared-data"] ?? "../.db/shared";
                 if (Directory.Exists(sharedRootFolder))
                 {
-                    var sharedFiles = Directory.GetFiles(sharedRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
-                    sharedFiles.Sort(StringComparer.InvariantCulture);
-                    try
+                    string objectStore = Path.GetFullPath(Path.Combine(sharedRootFolder, "objects", "ObjectDB"));
+                    string objectSlot = Path.Combine(sharedRootFolder, "objects", "ObjectDB.lua");
+                    if (File.Exists(objectSlot)) throw new InvalidDataException("Legacy ObjectDB.lua must not coexist with the canonical ObjectDB store.");
+                    using (var store = new ObjectDBStore(objectStore))
                     {
-                        foreach (var fileName in sharedFiles)
+                        var sharedFiles = Directory.GetFiles(sharedRootFolder, "*.lua", SearchOption.AllDirectories)
+                            .Where(file => !Path.GetFullPath(file).StartsWith(objectStore + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)).ToList();
+                        sharedFiles.Add(objectSlot);
+                        sharedFiles.Sort(StringComparer.InvariantCulture);
+                        try
                         {
-                            if (Errored) break;
-                            ParseLUAFile(lua, fileName);
+                            foreach (var fileName in sharedFiles)
+                            {
+                                if (Errored) break;
+                                if (Path.GetFullPath(fileName) == Path.GetFullPath(objectSlot))
+                                {
+                                    foreach (var shard in store.Files) ParseLUAFile(lua, shard);
+                                }
+                                else ParseLUAFile(lua, fileName);
+                            }
                         }
-                    }
                     catch (Exception e)
                     {
                         Framework.LogException(e);
                         File.WriteAllText("./ATT-ERROR-FILE.txt", content, Encoding.UTF8);
                         Framework.WaitForUser("Press any key to close...");
                         throw;
+                        }
                     }
                 }
 

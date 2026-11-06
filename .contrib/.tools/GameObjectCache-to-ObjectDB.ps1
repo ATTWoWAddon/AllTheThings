@@ -10,7 +10,8 @@ $repoRoot = (Get-Location).Path
 $cachePath = Join-Path $repoRoot $CachePath
 $outputPath = Join-Path $repoRoot $OutputPath
 $objectRoot = Join-Path $repoRoot ".contrib/.db/shared/objects"
-$objectDbPath = Join-Path $objectRoot "ObjectDB.lua"
+$objectDbStore = Join-Path $objectRoot "ObjectDB"
+$objectDbLock = Join-Path $objectRoot ".ObjectDB.lock"
 $conditionalsPath = Join-Path $objectRoot "ObjectDBConditionals.lua"
 $dynamicPath = Join-Path $objectRoot "Dynamic"
 $csvUrl = "https://wago.tools/db2/GameObjectDisplayInfo/csv?build=$Build"
@@ -31,11 +32,40 @@ foreach ($row in $displayRows) {
 }
 
 $existingModels = @{}
-$objectDataFiles = @($objectDbPath, $conditionalsPath) + @(
-	Get-ChildItem $dynamicPath -Filter "*.lua" |
-		Where-Object { $_.FullName -ne $outputPath } |
-		ForEach-Object { $_.FullName }
-)
+$store = $null
+try {
+	if ($PSVersionTable.PSEdition -eq 'Desktop') {
+		# Windows PowerShell uses the shipped net48 reader.
+		$readerAssembly = [Reflection.Assembly]::LoadFrom((Join-Path $repoRoot ".contrib/.tools/Parser.exe"))
+		$readerType = $readerAssembly.GetType("ATT.ObjectDBStore", $true)
+	} else {
+		# PowerShell Core can compile the bundled pure managed reader on any OS.
+		$readerType = [AppDomain]::CurrentDomain.GetAssemblies() | ForEach-Object { $_.GetType("ATT.ObjectDBStore", $false) } | Where-Object { $null -ne $_ } | Select-Object -First 1
+		if ($null -eq $readerType) {
+			$types = Add-Type -Path @((Join-Path $repoRoot ".contrib/src/Parser/ObjectDBStore.cs"), (Join-Path $repoRoot ".contrib/src/Parser/MiniJSON.cs")) -PassThru
+			$readerType = $types[0].Assembly.GetType("ATT.ObjectDBStore", $true)
+		}
+	}
+	$constructor = $readerType.GetConstructor([type[]]@([string]))
+	$store = $constructor.Invoke([object[]]@([string]$objectDbStore))
+	$flags = [Reflection.BindingFlags]'Static,NonPublic'
+	$entryReader = $readerType.GetMethod("ParseEntries", $flags)
+	$modelReader = $readerType.GetMethod("ReadModel", $flags)
+	foreach ($filePath in $readerType.GetProperty("Files").GetValue($store)) {
+		$entries = $entryReader.Invoke($null, @([IO.File]::ReadAllText($filePath)))
+		foreach ($entry in $entries.GetEnumerator()) {
+			# The WDB format only carries UInt32 object IDs.
+			if ($entry.Key -gt [uint32]::MaxValue) { continue }
+			$id = [uint32]$entry.Key
+			$model = $modelReader.Invoke($null, @($entry.Value))
+			$existingModels[$id] = if ($null -ne $model -and $model -gt 0 -and $model -le [uint32]::MaxValue) { [uint32]$model } else { $null }
+		}
+	}
+	$objectDataFiles = @($conditionalsPath) + @(
+		Get-ChildItem $dynamicPath -Filter "*.lua" |
+			Where-Object { $_.FullName -ne $outputPath } |
+			ForEach-Object { $_.FullName }
+	)
 $entryPattern = '(?ms)^[\t ]*\[(\d+)\]\s*=\s*\{(?<body>.*?)(?=^[\t ]*\[\d+\]\s*=\s*\{|\z)'
 foreach ($filePath in $objectDataFiles) {
 	$content = [IO.File]::ReadAllText($filePath)
@@ -48,6 +78,9 @@ foreach ($filePath in $objectDataFiles) {
 		$id = [uint32]$idMatch.Groups[1].Value
 		if (-not $existingModels.ContainsKey($id)) { $existingModels[$id] = $null }
 	}
+}
+} finally {
+	if ($null -ne $store) { $store.Dispose() }
 }
 
 $records = [Collections.Generic.List[object]]::new()

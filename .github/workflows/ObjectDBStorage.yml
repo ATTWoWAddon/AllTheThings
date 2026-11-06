@@ -1,0 +1,72 @@
+name: ObjectDB Storage Tests
+
+on:
+  push:
+    branches: ['**']
+    tags-ignore: ['**']
+    paths:
+      - '.contrib/.tools/Lua/split_objectdb.js'
+      - '.contrib/.tools/Lua/tests/**'
+      - '.contrib/src/Parser/ObjectDB*.cs'
+      - '.contrib/src/Parser/MiniJSON.cs'
+      - '.contrib/src/Parser/Program.cs'
+      - '.contrib/src/Parser/Framework/Framework.cs'
+      - '.contrib/src/Parser/Harvesters/ObjectHarvester.cs'
+      - '.contrib/.tools/GameObjectCache-to-ObjectDB.ps1'
+      - '.contrib/.db/shared/objects/ObjectDB/**'
+      - '.github/workflows/ObjectDBStorage.yml'
+  pull_request:
+    paths:
+      - '.contrib/.tools/Lua/split_objectdb.js'
+      - '.contrib/.tools/Lua/tests/**'
+      - '.contrib/src/Parser/ObjectDB*.cs'
+      - '.contrib/src/Parser/MiniJSON.cs'
+      - '.contrib/src/Parser/Program.cs'
+      - '.contrib/src/Parser/Framework/Framework.cs'
+      - '.contrib/src/Parser/Harvesters/ObjectHarvester.cs'
+      - '.contrib/.tools/GameObjectCache-to-ObjectDB.ps1'
+      - '.contrib/.db/shared/objects/ObjectDB/**'
+      - '.github/workflows/ObjectDBStorage.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  storage:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+      - name: Install Lua 5.1
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends lua5.1
+          lua5.1 -e 'assert(_VERSION == "Lua 5.1", "Lua 5.1 is required")'
+      - name: Check storage and native reader
+        run: |
+          node --check .contrib/.tools/Lua/split_objectdb.js
+          node --test .contrib/.tools/Lua/tests/*.test.cjs
+          node .contrib/.tools/Lua/split_objectdb.js --check .contrib/.db/shared/objects/ObjectDB
+
+  windows-native:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '8.0.x'
+      - name: Check native reader and Windows arguments
+        run: node --test .contrib/.tools/Lua/tests/native-objectdb.test.cjs
