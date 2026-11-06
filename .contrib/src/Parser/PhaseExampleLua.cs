@@ -1,3 +1,4 @@
+// Comparison tooling (P4 example / Retail default): read the declarative Lua records and named groups used by the phase examples.
 using System;
 using System.Collections.Generic;
 using System.Globalization;
