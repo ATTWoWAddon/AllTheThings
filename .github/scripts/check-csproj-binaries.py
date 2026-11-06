@@ -233,6 +233,14 @@ def checkout_revision(
             f"missing={sorted(tracked_projects - set(project_paths))}, "
             f"extra={sorted(set(project_paths) - tracked_projects)}"
         )
+    # A clean index entry may retain the previous revision's checkout EOL.
+    # Remove only the verified tracked projects so all are materialized again.
+    project_files = [source_root / relative for relative in project_paths]
+    for project_file in project_files:
+        if project_file.is_symlink() or not project_file.is_file():
+            raise RuntimeError(f"Expected a regular project file: {project_file}")
+    for project_file in project_files:
+        project_file.unlink()
     git(source_root, "checkout-index", "--force", "--", *project_paths)
 
     expected_hashes = (
