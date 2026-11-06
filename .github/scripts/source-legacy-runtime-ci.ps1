@@ -120,10 +120,13 @@ Probe = { value = 42, active = true, nested = { text = "sample" } }
     if ($SharedTools) {
         $parserExe = Join-Path $SharedTools 'Parser.exe'
         $parserConfig = Join-Path $SharedTools 'Parser.exe.config'
-        if (!(Test-Path -LiteralPath $parserExe -PathType Leaf) -or !(Test-Path -LiteralPath $parserConfig -PathType Leaf)) {
-            throw 'Parser executable or its configuration is missing from the shared tools folder.'
+        if (!(Test-Path -LiteralPath $parserExe -PathType Leaf)) { throw 'Built Parser executable is missing from the shared tools folder.' }
+        $harnessConfig = Join-Path $SharedTools 'SourceLegacyRuntimeHarness.exe.config'
+        if (Test-Path -LiteralPath $parserConfig -PathType Leaf) {
+            Copy-Item $parserConfig $harnessConfig -Force
+        } elseif (Test-Path -LiteralPath $harnessConfig -PathType Leaf) {
+            Remove-Item -LiteralPath $harnessConfig -Force
         }
-        Copy-Item $parserConfig (Join-Path $SharedTools 'SourceLegacyRuntimeHarness.exe.config') -Force
         Invoke-LegacyProcess (Join-Path $SharedTools 'SourceLegacyRuntimeHarness.exe') @('parser', $accountDir) $SharedTools 'parser-loaded-modules'
         $moduleLabels += 'parser-loaded-modules'
     }
