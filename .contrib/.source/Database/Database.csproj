@@ -4,13 +4,13 @@
     <RootNamespace>ATT</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Platforms>x64</Platforms>
-    <Platform Condition="'$(Platform)' == 'AnyCPU'">x64</Platform>
-    <PlatformTarget>x64</PlatformTarget>
-    <OutputPath>bin\x64\$(Configuration)\</OutputPath>
+    <Platform>x64</Platform>
+    <PlatformTarget>$(Platform)</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <OutputPath>bin\x64\Retail\</OutputPath>
+    <OutputPath>bin\$(Platform)\Retail\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Classic Era' Or '$(Configuration)' == 'Classic TBC' Or '$(Configuration)' == 'Classic Wrath'">
     <Optimize>true</Optimize>
