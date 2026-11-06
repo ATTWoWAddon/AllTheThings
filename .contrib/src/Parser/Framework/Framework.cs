@@ -3712,10 +3712,7 @@ setmetatable(_.HeaderConstants, {
                 // sometimes we can parse with this config set and all ObjectDB will be re-generated based on cumulative object information in Retail
                 if (Config["DoConsolidateObjectDB"] && !PreProcessorTags.Contains("ANYCLASSIC"))
                 {
-                    ObjectHarvester.ExportObjectsToFilePath(ObjectDB, "../.db/shared/objects/ObjectDB.lua",
-@"-----------------------------------------------------
---   O B J E C T   D A T A B A S E   M O D U L E   --
------------------------------------------------------");
+                    ObjectHarvester.ConsolidateDirtyObjects(Path.Combine(Config["shared-data"] ?? "../.db/shared", "objects", "ObjectDB"));
                 }
                 else
                 {
