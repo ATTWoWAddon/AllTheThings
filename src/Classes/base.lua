@@ -679,9 +679,6 @@ end
 app.CloneObject = CloneObject;
 app.CloneClassInstance = CloneClassInstance;
 app.CreateClassInstance = CreateClassInstance;
--- I wish this could just automatically work for any given Class, but the way this is designed
--- means it would have to generate a new variant class on top of every possible other Class, and most
--- wouldn't even be used obviously... so maybe in the future
 local GlobalVariants = {}
 app.GlobalVariants = GlobalVariants
 -- Takes multiple other variants and combines them together into the specified name, then storing it
@@ -728,6 +725,33 @@ GlobalVariants.Combine = function(...)
 	end
 	GlobalVariants[name] = combine
 	return combine
+end
+-- Takes N variant tables and generates all possible combinations of those variants, storing each unique named variant combination in GlobalVariants, and
+-- returns the full array of all variants (including the original set) sorted by the most-combined first
+GlobalVariants.DoAllCombinations = function(...)
+	local variantParams = {...}
+	local n = #variantParams
+	local output, picked = {}, {}
+
+	-- pick "remaining" more variants from index "start" onward, preserving param order
+	local function choose(start, remaining)
+		if remaining == 0 then
+			output[#output + 1] = #picked == 1 and picked[1]
+				or GlobalVariants.Combine(unpack(picked))
+			return
+		end
+		for i = start, n - remaining + 1 do
+			picked[#picked + 1] = variantParams[i]
+			choose(i + 1, remaining - 1)
+			picked[#picked] = nil
+		end
+	end
+
+	-- largest combination size first, so output is already sorted most-combined first
+	for size = n, 1, -1 do
+		choose(1, size)
+	end
+	return output
 end
 
 local function GenerateVariantClasses(class)
