@@ -1,12 +1,76 @@
 # Phase scheduling and legacy-authoring retirement
 
-**Status: proposed; implementation requires maintainer approval. This PR contains only this document.** No runtime, Parser, configuration, test, database, or binary implementation is included.
+**Draft design. Implementation awaits maintainer approval.**
 
-The source inventory is based on `master` at `0668031cb5986d021dc12611b1ee040a975132e9`. The [unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee) is reference material, not a dependency or implementation of this design. Its positive-only `releasePhases`/independent-checkbox proposal is superseded here. Research cutoff: 2026-11-05. The complete declaration/configuration inventory was also compared with master `9dba6e6d3faa901ae63fe6f0c744cc76415e2b2c`; the 14 relevant source blobs are unchanged.
+## Raid availability at a glance
 
-**Agreed BWL behavior.** The database describes the original bosses and their drops alongside the SoD rework. In SoD the original route is never obtainable, and the rework opens at game phase 5. Other reviewed Classic profiles use the original raid on their own schedules. Retail uses ordinary BWL data without a progression profile. Section 2b gives a concrete Lua/JSON candidate and the checks any alternative must pass. The field spelling, ownership of source applicability and method for preserving the old SoD layout are open for review.
+In Season of Discovery (SoD), players get the reworked Molten Core (MC) in the phase 4 raid batch and the reworked Blackwing Lair (BWL) in phase 5. The original 40-player routes stay disabled at every viewed milestone.
 
-**Reading guide:** sections 1–7 specify the authoring and runtime contract; section 2d gives the complete temporary control file for independently choosing each source cohort's migration stage; section 2c requires P4 source construction without authored flavor/season pragmas; section 11 catalogs every in-scope flavor and announced phase/batch; Appendix D reconciles every repository phase declaration and alias. Retail phase planning is excluded: no Retail policy file, phase configuration, or phase UI change is proposed. Existing Retail behavior must remain unchanged.
+| Raid source | Phase 4 begins <br>`vanilla.4` | Phase 4 raids <br>`vanilla.4.raids` | Phase 5 onward <br>`vanilla.5` | Retail default |
+| --- | --- | --- | --- | --- |
+| Original MC | Disabled | Disabled | Disabled | Ordinary MC |
+| Reworked MC | Future | **Open** | Open | Absent |
+| Original BWL | Disabled | Disabled | Disabled | Ordinary BWL |
+| Reworked BWL | Future | Future | **Open** | Absent |
+
+An open raid can still contain a later drop with its own conditions. Inspection can show compatible original records as history while both original SoD routes stay disabled. Retail uses its ordinary client-compatible sources and layout without a phase profile. Progression, Anniversary and Era open their original BWL routes at their own `vanilla.3`. [Four-profile BWL comparison](#generated-linkage-and-visible-behavior-in-each-flavor)
+
+### One boss, two loot routes
+
+Both Nefarians use encounter `1536`, but they drop different versions of Ashkandi. The loot and opening results are agreed. How authors divide the work between Lua and JSON remains open.
+
+**Candidate Lua · the two sources inside BWL**
+
+```lua
+inst(742, {
+    progressionKey = "raid.bwl.common",
+    groups = {
+        e(1536, { -- Original Nefarian
+            progressionKey = "raid.bwl.original",
+            groups = { i(19364) },
+        }),
+        d(DIFFICULTY.SOD.PLAYER20, {
+            flavors = { "sod" },
+            progressionKey = "raid.bwl.sod20",
+            groups = {
+                e(1536, { groups = { i(230818) } }), -- Reworked Nefarian
+            },
+        }),
+    },
+})
+```
+
+**Candidate JSON · matching entries inside the SoD profile's `content` object**
+
+```json
+{
+    "raid.bwl.common":   { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.sod20":    { "windows": [{ "from": "vanilla.5" }] }
+}
+```
+
+Item `230818` inherits the reworked difficulty's window and the instance window. Item `19364` inherits the disabled original scope. The example omits other loot and intrinsic conditions for space. [Full Lua example](#p4-candidate-for-direct-lua-authoring) · [Progression JSON](#progression-profile) · [Anniversary JSON](#anniversary-profile) · [Era JSON](#era-profile) · [SoD JSON](#sod-profile)
+
+### A shared drop at phase 5
+
+Both boss records also list Head of Nefarian `19003`. A scope is open during any of its windows. On one route, **every** scope from the instance to the drop must be open and its other source conditions must pass (AND). The item is obtainable if **any** complete route passes (OR). A disabled ancestor closes every route through it.
+
+```mermaid
+flowchart TD
+    context["SoD at phase 5 · BWL sources"] --> original["Original Nefarian → head 19003"]
+    context --> rework["Reworked Nefarian → head 19003"]
+    original --> closed["Original scope disabled"]
+    rework --> opened["Instance and rework windows open"]
+    closed --> history["Compatible history can be inspected"]
+    opened --> available["Obtainable if the other route conditions pass"]
+```
+
+The later BWL book, Draconic for Dummies, has unresolved timing. The disabled original prevents acquisition in SoD, but the book still needs its own mapping and evidence before BWL can advance. [Book and shared-head acceptance cases](#bwl-acceptance-cases)
+
+**Migration** · Each group of source files advances independently through P1, P2.1, P2.2, P3 and P4. Those stages describe how ATT builds the database. The phase columns above describe when players can obtain content. [Migration manifest](#migration-manifest) · [Build diagram](#how-the-two-build-paths-combine) · [Five source groups in one build](#five-source-groups-in-one-build) · [Rollout and acceptance](#10-ordered-rollout-and-acceptance)
+
+**Reference** · [Phase catalog](#11-complete-phase-planning-catalog) · [Repository phase declarations and aliases](#appendix-d-every-repository-phase-definition-and-its-disposition)
 
 ## 1. Required destination and four stages
 
@@ -158,9 +222,7 @@ These activation gates are required as soon as any cohort becomes production pro
 
 ## 2b. Blackwing Lair in progression, Anniversary, Era, and SoD
 
-**Required result.** The two Nefarian routes retain distinct loot. Original Nefarian's item `19364` is obtainable in the original raid when that profile opens it. In SoD that route stays unavailable at every view, including after phase 5. The reworked Nefarian's item `230818` first becomes available in SoD at `vanilla.5`. Each statement concerns that acquisition route. Another occurrence of the same item retains its own conditions.
-
-**One candidate for review.** The examples put the loot and optional flavor applicability in Lua, give the original and reworked sources separate keys, and write the SoD decision explicitly as `"status": "disabled", "windows": []` in the profile. The four complete JSON examples demonstrate this division of work. Review can change how applicability is expressed, how groups share a key, and how the Parser constructs the two layouts. The behavior table and fixtures below apply to any choice.
+The full example below follows both Nefarians, their head turn-ins and the later book through four profiles. It also preserves the SoD legacy40 raid as inspectable history and the flat original layout in other builds. The candidate field names, ownership of flavor applicability and construction of the two layouts are open for review. [Example loot and policy](#one-boss-two-loot-routes)
 
 ### Files and evidence
 
@@ -261,7 +323,10 @@ These are complete JSON documents: all required root fields, the full **ordered*
 
 Optional metadata is not silently required by these examples. `activation` has exactly the array-of-objects shape defined in section 5: each object requires string `at`, `region`, `realm`, and `evidence`; only a verified offset/UTC timestamp and actual scope may be entered. These files omit it rather than invent times. `content[key].eligibility`, if needed by a reviewed context, is exactly `{ "nativePhaseID": integer }` and requires that context's `preserve-reviewed` eligibility mode; it is deliberately omitted here. Do not copy source `phase`, `u`, or existing numeric preferences into either metadata field.
 
-**Full proposed file: `.contrib/.db/shared/.config/progression/progression/main.json`**
+#### Progression profile
+
+<details>
+<summary>Full JSON · <code>.contrib/.db/shared/.config/progression/progression/main.json</code></summary>
 
 ```json
 {
@@ -605,7 +670,12 @@ Optional metadata is not silently required by these examples. `activation` has e
 }
 ```
 
-**Full proposed file: `.contrib/.db/shared/.config/progression/anniversary/main.json`**
+</details>
+
+#### Anniversary profile
+
+<details>
+<summary>Full JSON · <code>.contrib/.db/shared/.config/progression/anniversary/main.json</code></summary>
 
 ```json
 {
@@ -721,7 +791,12 @@ Optional metadata is not silently required by these examples. `activation` has e
 }
 ```
 
-**Full proposed file: `.contrib/.db/shared/.config/progression/era/main.json`**
+</details>
+
+#### Era profile
+
+<details>
+<summary>Full JSON · <code>.contrib/.db/shared/.config/progression/era/main.json</code></summary>
 
 ```json
 {
@@ -793,7 +868,12 @@ Optional metadata is not silently required by these examples. `activation` has e
 }
 ```
 
-**Full proposed file: `.contrib/.db/shared/.config/progression/sod/main.json`**
+</details>
+
+#### SoD profile
+
+<details>
+<summary>Full JSON · <code>.contrib/.db/shared/.config/progression/sod/main.json</code></summary>
 
 ```json
 {
@@ -914,6 +994,8 @@ Optional metadata is not silently required by these examples. `activation` has e
     "coverage": "Complete ordered milestone catalog for this profile, with only the shown BWL acquisition keys authored. This is not a replacement policy for the full ATT database."
 }
 ```
+
+</details>
 
 ### Catalog entries that deliberately have no invented order
 
@@ -1139,17 +1221,7 @@ The following are acceptance results for compatible BWL data. “Open” assumes
 | SoD `vanilla.5` and later | Disabled at every view | Open from phase 5 | Only the reworked encounter supplies its Ashkandi. The old book's route remains disabled and its independent timing remains unknown. |
 | Retail ordinary build | Existing client-compatible original route and layout | Absent | No SoD helpers, registrations, caches or empty exclusive instance. No phase lookup. |
 
-**SoD cross-check with Molten Core.** The two reworks open at different milestones. These expectations apply to the raid routes when their ordinary client, quest and event requirements pass. A later boss or reward must also satisfy its own conditions. Section 11 identifies the phase-4 raid batch.
-
-| Viewed SoD milestone | Original MC (40) | Reworked MC | Original BWL (40) | Reworked BWL |
-| --- | --- | --- | --- | --- |
-| Before the phase-4 raid batch, including `vanilla.4` | Disabled | Future | Disabled | Future |
-| From `vanilla.4.raids` until `vanilla.5` | Disabled | Open | Disabled | Future |
-| From `vanilla.5` onward | Disabled | Open | Disabled | Open |
-
-Showing removed history at any of these views must leave both original acquisition routes disabled. This cross-check uses the same expected behavior regardless of the chosen Lua/JSON representation.
-
-Changing the SoD rework's opening affects only that profile's reworked branch, subject to the shared parent. Validated history remains inspectable wherever existing build/visibility rules allow it. Inspection never makes a disabled acquisition obtainable.
+Changing the rework's opening affects only the selected profile's reworked branch, subject to the shared parent. Compare the separate phase-4 and phase-5 raid openings in the [MC and BWL milestone table](#raid-availability-at-a-glance).
 
 ## 2c. P4 removes authored flavor/season conditionals
 
@@ -1171,6 +1243,8 @@ The pinned lexical inventory finds **1,664 `SEASON_OF_DISCOVERY`-related `#if` s
 P4 acceptance exercises the normal and SoD BWL layouts, an entirely SoD-only instance and independent same-ID routes. Inject a cache write into a rejected helper, then read the same ID from a retained sibling before export and compare the result against the clean baseline. Reverse input order and repeat with a fresh context. Require identical retained data and indices, no input metadata leaks and no flavor/season branch on the P4 path. Corrupt or remove one expected source or mapping and require a diagnostic before publication. Sections 5 and 7 cover disabled/unknown behavior and independent golden results.
 
 ## 2d. Choose P independently for each source cohort
+
+### Migration manifest
 
 **Edit one temporary control file to say which raid is at which migration stage.** A scheduling JSON answers *when content opens*; this manifest answers *which implementation currently owns that source*. It is neither a second scheduling catalog nor an addon setting. It is removed only after the entire supported migration has retired the legacy path.
 
@@ -1262,15 +1336,29 @@ Reject duplicate JSON properties, unknown fields and unknown stage values. Diffe
 
 **P4 deletion is also checked across contexts sharing a physical source.** Before deleting any old expression, callback branch or helper, verify that every supported context still using that file no longer depends on it. If Era has P3 progress output but SoD still needs that same file's P2 legacy expressions, keep the source at P3 until both can retire, or first provide explicitly separated and reviewed source inputs. Reject the premature P4 request. A pinned golden cannot silently replace another context's live legacy production inputs. This last-consumer rule applies to source-local expressions as well as shared helper definitions; it does not require unrelated raids to migrate together. P3 sources may still contain old wrapper calls even though their timing is suppressed: retain a callable, side-effect-free compatibility shim for that projection, or prove the reviewed projection rewrite removes the call before Lua execution. Do not delete the function while any live P3 caller still needs it; wait for those callers to reach P4 or for that explicit no-call proof. Pinned goldens retain their own old toolchain independently.
 
-### Combine two isolated projections, not two competing writers
+### How the two build paths combine
 
-1. **Resolve ownership before execution.** Validate the manifest, resolved source list and producer/consumer dependencies before evaluating acquisition Lua. Do not run excluded acquisition files and then try to remove their output.
-2. **Legacy projection:** use the original helpers, callbacks and phase behavior for P1/P2.1/P2.2-owned sources. P2 fields are validated/reported and stripped, with no new applicability/timing filter.
-3. **Progress projection:** use P3/P4-owned sources with external policies. Suppress every legacy timing producer/consumer in this projection before it can affect normalization or merges, including recipe caches and phase-driven callback branches. P3's old expressions remain usable only by its separate pinned golden, not by this projection.
-4. **Isolate all mutable state.** The projections use separate Lua processes/state and separate ItemDB, RecipeDB, header, event and other caches. Shared support definitions may load only with reviewed side effects. Producer writes must be isolated and attributed to their consumers; if that cannot be proven, group the dependent sources into one cohort. A shared global stage flag or a post-export filter is insufficient.
-5. **Compose owned output once.** Retain each acquisition occurrence from its designated projection exactly once, preserving ancestry, independent `u`/event/level conditions and source provenance, then merge/index complete alternatives. A same-ID progress route must not overwrite a protected legacy route. The artifact records both projection hashes and cohort ownership in build evidence; migration metadata is not an addon scheduling field.
+Before loading acquisition Lua, the Parser resolves each source file, its dependencies and its owner from the migration manifest. Each cohort contributes official output through exactly one of the two solid paths. Dotted paths run separate checks.
 
-P2.2 shadows and P3 goldens are additional isolated validation runs, not extra official writers. A future single-pass optimization would need the same isolation/provenance proof; it is not required by this design. Cross-cohort ancestor/child or cache dependencies that cannot preserve complete inherited conditions are hard errors naming the affected owners, not permission to drop a parent condition or apply both authorities to one source.
+```mermaid
+flowchart TD
+    owners["Resolve source ownership"] --> legacy["P1, P2.1, P2.2 · legacy output"]
+    owners --> progress["P3, P4 · progress output"]
+    legacy --> artifact["One official artifact"]
+    progress --> artifact
+    owners -.-> checks["Validation only"]
+    checks -.-> shadow["P2.2 · policy shadow"]
+    checks -.-> golden["P3 · frozen legacy golden"]
+```
+
+| Step | What the build must preserve |
+| --- | --- |
+| Run each projection in isolated state | Use separate Lua states/processes and separate ItemDB, RecipeDB, header, event and lookup caches. Execute only files assigned to that projection. Shared support code needs reviewed side effects. Attribute each producer's writes to its consumers or group the dependent files under one owner. |
+| Produce the official routes | Legacy uses its original helpers, phases and callbacks. It reports and strips P2 annotations. Progress resolves external policies and suppresses every legacy timing writer before normalization or merging, including recipe caches and phase-driven callbacks. |
+| Compose the artifact | Take each occurrence once from its owner, with its full ancestry and independent `u`, event and level conditions. Merge/index complete alternatives so a same-ID route cannot overwrite another owner's route. Record both projection hashes and cohort ownership in build evidence. |
+| Check each boundary | P2.2 checks candidate policy and coverage in shadow. P3 compares progress output to the separately pinned legacy source/runtime at every relevant opening, closing and reopening boundary. Neither validation run contributes occurrences to the artifact. |
+
+Fail a build that cannot preserve cross-cohort parent/child conditions or isolate a shared cache. Report the affected owners. A future single-pass implementation would need to demonstrate the same isolation and provenance.
 
 ### Coverage, settings and an actual mixed-artifact acceptance case
 
@@ -1278,7 +1366,9 @@ Coverage is counted **by context, cohort and source occurrence before aggregatio
 
 Export `app.ProgressionProfile.content` only for keys actually required by validated P3/P4-owned output. A BWL-only unknown book entry used solely by P2 shadow work is not exported or treated as a production coverage failure. If a production-owned occurrence uses that same unknown key, its own gate fails. Profile milestone IDs remain stable; ownership selection does not rewrite their order or create another policy inheritance layer.
 
-After each requested stage's missing work and gates are supplied, **one acceptance fixture must contain all five cohorts simultaneously and inspect one composed artifact**. Separate pairwise demonstrations do not satisfy this case:
+#### Five source groups in one build
+
+After the five cohorts pass their individual gates, one acceptance fixture must verify them together in the same generated artifact.
 
 | Cohort and stage in that one artifact | Authored source and validation | Official output authority |
 | --- | --- | --- |
@@ -1508,11 +1598,22 @@ Freeze the legacy source/runtime/toolchain, complete dependency chain and build 
 - **Authority-isolation checks:** changing legacy-only timing inside a progress-owned cohort must not change its candidate output; changing a new policy window must not change any legacy-owned output or the independent golden. Legacy-owned timing changes still have their original effect on that cohort. Reverse projection execution order and poison same-ID shared-cache writes to prove no cross-owner influence. A missing child key must cause failure, never be repaired from legacy phase.
 - After stage 4, preserve pinned snapshots/small expected fixtures as evidence. New content is authored once through progress policy; do not require it to be dual-written into retired legacy syntax.
 
-The synthetic dungeon has independent expected results at `4.1`, `4.2` and `4.10`. For BWL, pin the evaluated outer `PHASE_THREE` (SoD phase 5), the later `PHASE_FIVE` on `o(180667)` / `i(21109)` (SoD phase-6 alias), original flat groups, removed SoD quests/legacy40 ancestry, and both complete Nefarian and head-turn-in routes. Compare supported historical views against the frozen source/runtime with their actual inputs. The old nested book transition stays in the golden; the unknown child mapping cannot pass that comparison or promote BWL. Unrelated validated cohorts can advance.
+### BWL acceptance cases
 
-Keep the new guarantee in a **separate expected-result fixture**. At SoD phase 5, neutralize only the old `REMOVED_1_15_4` history effect in an isolated candidate test. With other conditions satisfied, original Nefarian → `19364` must still be unavailable and reworked Nefarian → `230818` available. A shared head `19003`/`19002` can pass via the full reworked route, never via the disabled original or a union of both reward lists. Repeat with the book unknown, an artificially early child window, and all inspection controls enabled. None may open the disabled branch. Remove the book mapping or its annotation and require a coverage failure even under the disabled ancestor. Preserve the untouched timeline in normal runs and the independent golden. Any difference between legacy history visibility and the new all-views guarantee needs a reviewed expectation. These checks are proposed, and the document supplies no new game observations.
+Keep the legacy comparison and the new disabled-route test separate. The frozen baseline includes the old source, runtime, removal timeline and historical settings. The candidate fixture below changes one input at a time.
+
+| What to exercise | Expected result |
+| --- | --- |
+| Compare the supported historical views with the frozen baseline. | Preserve the outer `PHASE_THREE` (SoD phase 5), the nested `PHASE_FIVE` on book `o(180667)` / `i(21109)` (SoD phase-6 alias), original flat groups, removed SoD quests, legacy40 ancestry and both Nefarian/head-turn-in routes. |
+| At SoD phase 5, neutralize only the old `REMOVED_1_15_4` effect in the isolated candidate. | With other conditions satisfied, only reworked Nefarian → `230818` opens. The original route to `19364` stays disabled. A shared head (`19003` or `19002`) passes only via a complete valid route. |
+| Repeat with the book unknown, with an artificially early child window, and with all inspection controls enabled. | The original branch stays disabled in every case. The book's unknown timing still blocks BWL promotion. Unrelated validated cohorts can advance. |
+| Remove the book mapping or its annotation. | Coverage fails even under the disabled ancestor. |
+
+Normal runs and the independent golden use the real removal timeline. A difference in historical visibility requires its own reviewed expectation. The [synthetic dungeon example](#3-opening-later-additions-removal-and-reopening) supplies separate expected results at `4.1`, `4.2` and `4.10`. These are proposed checks. Record-level game evidence for the book is still outstanding.
 
 ## 8. Full authoring inventory and retirement gates
+
+The inventory uses `master` at `0668031cb5986d021dc12611b1ee040a975132e9` and a research cutoff of November 5, 2026. All 14 source blobs in the declaration/configuration comparison also matched `master` at `9dba6e6d3faa901ae63fe6f0c744cc76415e2b2c`. The earlier prototype used positive-only `releasePhases` and independent checkboxes. Appendix C records that prototype as historical reference. [Unmerged prototype](https://github.com/NORPG/AllTheThings/tree/0317bae99cad879ebb045b48663ad7306da744ee)
 
 The previous nine-raid/17-key pilot is not the full migration. The read-only lexical inventory at the pinned master found:
 
@@ -1657,7 +1758,7 @@ Acceptance must demonstrate:
 - No legacy writer/helper/cache/normalization bypass in any retired P4 cohort, including serialized callbacks and indirect recipe/currency paths. Shared legacy definitions remain only for explicit legacy consumers; global deletion waits for the last consumer.
 - P4 preserves the identities and reward lists of the original and reworked sources wherever those sources apply. All technical and structural flavor guards retire for that cohort. Prove that rejected source operations cannot influence any retained read/write before merge/indexing. Ordinary BWL stays flat; SoD keeps the old quests and removed legacy40 branch beside its reworked raid. A wholly exclusive instance contributes no ordinary root, empty group, helper side effect or cache entry.
 - Verify the section 2b four-profile results, including original Nefarian → `19364` disabled at every SoD view and reworked Nefarian → `230818` opening at `vanilla.5`. Check all descendants, the independent book blocker, and the disabled result with the old removal timeline neutralized only in the section 7 candidate fixture. Missing expected mappings fail; inspection preserves the history and conditions.
-- Run the paired SoD boundary fixture from section 2b at `vanilla.4`, `vanilla.4.raids` and `vanilla.5`. Only reworked Molten Core opens at the first raid batch. Reworked BWL follows at phase 5, both originals stay disabled and independently later child drops still require their own windows.
+- Run the [paired SoD boundary fixture](#raid-availability-at-a-glance) at `vanilla.4`, `vanilla.4.raids` and `vanilla.5`. Only reworked Molten Core opens at the first raid batch. Reworked BWL follows at phase 5, both originals stay disabled and independently later child drops still require their own windows.
 - Every source occurrence preserved, including SoD variants and repeated NPC/item identities. Only proven redundant inherited writers may disappear without a new key.
 - Matching CI binaries and complete generated-data/runtime checks; localization-only differences separately reviewed. Test success is not evidence of actual game availability.
 
