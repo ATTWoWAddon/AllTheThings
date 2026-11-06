@@ -236,6 +236,9 @@ namespace ATT
 
         static int Main(string[] args)
         {
+            if (args.Length > 0 && args[0] == "--phase-example")
+                return PhaseExample.Run(args);
+
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);
