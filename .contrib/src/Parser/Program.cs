@@ -1,4 +1,5 @@
-﻿using ATT.DB;
+﻿// Shared production Parser entry point. Only --phase-example runs the P4 interface comparison and Retail default.
+using ATT.DB;
 using ATT.DB.Types;
 using System;
 using System.Collections.Generic;

@@ -1,3 +1,4 @@
+// Comparison tooling (P4 example / Retail default): read the JSON inputs for the phase examples and consume their documentation.
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -115,6 +116,13 @@ namespace ATT
                     if (!AddUnique(result, key, Value())) throw Error("Duplicate JSON key: " + key);
                 } while (Take(','));
                 Expect('}');
+                // Keep the reserved comment in the object until duplicate-key
+                // detection is complete, then consume it before schema validation.
+                if (result.TryGetValue("$comment", out object comment))
+                {
+                    if (!(comment is string)) throw Error("JSON $comment must be a string");
+                    result.Remove("$comment");
+                }
                 return result;
             }
 
