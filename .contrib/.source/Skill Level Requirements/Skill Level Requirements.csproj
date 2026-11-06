@@ -15,12 +15,6 @@
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="att_logo_128_new_jrX_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="att_logo_128_new_jrX_icon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>
