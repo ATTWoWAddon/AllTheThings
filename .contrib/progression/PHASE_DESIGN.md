@@ -2,6 +2,8 @@
 
 **Draft design. Implementation awaits maintainer approval.**
 
+[Six dungeon and raid cases](#six-dungeon-and-raid-cases)
+
 ## Raid availability at a glance
 
 In Season of Discovery (SoD), players get the reworked Molten Core (MC) in the phase 4 raid batch and the reworked Blackwing Lair (BWL) in phase 5. The original 40-player routes stay disabled at every viewed milestone.
@@ -71,6 +73,129 @@ The later BWL book, Draconic for Dummies, has unresolved timing. The disabled or
 **Migration** · Each group of source files advances independently through P1, P2.1, P2.2, P3 and P4. Those stages describe how ATT builds the database. The phase columns above describe when players can obtain content. [Migration manifest](#migration-manifest) · [Build diagram](#how-the-two-build-paths-combine) · [Five source groups in one build](#five-source-groups-in-one-build) · [Rollout and acceptance](#10-ordered-rollout-and-acceptance)
 
 **Reference** · [Phase catalog](#11-complete-phase-planning-catalog) · [Repository phase declarations and aliases](#appendix-d-every-repository-phase-definition-and-its-disposition)
+
+## Six dungeon and raid cases
+
+| Dungeons | Raids |
+| --- | --- |
+| [Blackrock Depths](#blackrock-depths) · open the second half later | [Blackwing Lair](#blackwing-lair) · distinguish original and reworked raid loot |
+| [Demon Fall Canyon](#demon-fall-canyon) · add a boss, then a drop on an existing boss | [Temple of Ahn'Qiraj](#temple-of-ahnqiraj) · separate preparations from raid entry |
+| [Dire Maul](#dire-maul) · move a summoned encounter between profiles | [Gnomeregan](#gnomeregan) · turn a dungeon into a raid in one flavor |
+
+The Lua excerpts identify where a maintainer would put each proposed key. The matching JSON shows entries inside the named profile's `content` object. The excerpts omit unrelated records. Existing source layout, eligibility, timelines, costs and quest conditions still apply.
+
+### Blackrock Depths
+
+SoD phase 3 opens part of Blackrock Depths. Phase 4 adds the second half. In instance `228`, the source already distinguishes two SoD drops, Gerstahn's Enthralled Sphere and Angerforge's Battle Axe. Put each drop's release on its own occurrence. The whole-dungeon announcements establish the staggered opening. The item records establish the timing of those two rewards. [Phase 3 launch](https://worldofwarcraft.blizzard.com/en-gb/news/24078318) · [Phase 4 dungeon list](https://worldofwarcraft.blizzard.com/en-us/news/24111477) · [Gerstahn source](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua#L2599-L2611) · [Angerforge source](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua#L3022-L3038)
+
+```lua
+-- Within the existing SoD loot of each encounter in Blackrock Depths.
+e(369, { groups = { i(223539, { progressionKey = "brd.enthralled-sphere" }) } })
+e(378, { groups = { i(227948, { progressionKey = "brd.angerforge-axe" }) } })
+```
+
+```json
+{
+    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
+    "brd.angerforge-axe":    { "windows": [{ "from": "vanilla.4" }] }
+}
+```
+
+**Boundary in SoD.** At phase 3 Gerstahn can supply `223539` while `227948` is future. At phase 4 Angerforge can supply the axe. Assigning one phase to all of `inst(228)` loses that distinction. Mapping every boss to a half requires encounter-level evidence.
+
+### Demon Fall Canyon
+
+The original SoD dungeon belongs to phase 4. A new boss, Azgaloth, arrives in phase 5. In phase 7 Grimroot, an existing boss, gains Ancient Ironwood Branch. Keep Grimroot's earlier drops on their original route. [Demon Fall Canyon source](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Demon%20Fall%20Canyon.lua#L7-L48) · [Blizzard's new phase 5 dungeon boss](https://news.blizzard.com/en-us/article/24139952/season-of-discovery-phase-5-is-now-live)
+
+```lua
+inst(2784, {
+    flavors = { "sod" }, progressionKey = "dfc.dungeon",
+    sourceQuest = 84384, provider = { "i", 228172 },
+    groups = {
+        n(226923, { groups = { -- Grimroot
+            i(228082),         -- Warsong Axe
+            i(235787, { progressionKey = "dfc.ironwood-branch" }),
+        } }),
+        n(232632, { progressionKey = "dfc.azgaloth",
+            groups = { i(231913), i(231912) },
+        }),
+    },
+})
+```
+
+```json
+{
+    "dfc.dungeon":         { "status": "unknown", "windows": [] },
+    "dfc.azgaloth":        { "windows": [{ "from": "vanilla.5" }] },
+    "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] }
+}
+```
+
+**Boundary in SoD.** Once the phase-4 entrance is open, an eligible player can get Grimroot's original axe. In phase 5 Azgaloth's loot joins it while the branch is still future. Phase 7 adds the branch without reopening either boss. The selected catalog still lacks the exact phase-4 opening within its ordered batches. The example therefore records the parent as unknown in shadow and blocks promotion until that evidence exists. The two child windows alone cannot open the dungeon. [Pending milestone in the SoD catalog](#season-of-discovery-all-eight-phases-and-staggered-batches)
+
+### Dire Maul
+
+Isalien (`16097`) is summoned in an already open dungeon. Historical Classic placed Dungeon Set 2 in phase 5. Anniversary offers it in phase 4. The same boss can use a different opening in each profile while the summoning requirements stay attached to its source. [Isalien source](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Dire%20Maul.lua#L1442-L1465) · [Classic six-phase plan](https://us.forums.blizzard.com/en/wow/t/classic-content-plan/120346) · [Anniversary Dungeon Set 2 opening](https://news.blizzard.com/en-gb/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live)
+
+```lua
+-- Isalien in a compatible Classic build, inside Dire Maul East.
+n_conditional(16097, {
+    progressionKey = "dire-maul.isalien",
+    cost = { { "i", 22050, 1 } }, provider = { "i", 22057 },
+    timeline = { REMOVED_4_0_3 }, groups = { i(22315) },
+})
+```
+
+| Profile | Candidate `content["dire-maul.isalien"]` |
+| --- | --- |
+| Historical progression | `{ "status": "unknown", "windows": [] }` until the phase-5 Dungeon Set 2 batch has a reviewed ordered key. |
+| Anniversary | `{ "windows": [{ "from": "vanilla.4" }] }` |
+
+**Boundary.** Compare the two profiles at phase 4 with Dire Maul open. Only Anniversary reaches Isalien's scheduled opening. An eligible summon is still needed to obtain Hammer of Revitalization (`22315`). The historical catalog's pending `vanilla.5.loot` and the SoD legacy aliases cannot supply a verified historical endpoint. The existing client-specific cost and quest conditions keep their source scopes.
+
+### Blackwing Lair
+
+Original and reworked Nefarian both use encounter `1536`. In SoD, `raid.bwl.original` is disabled even after the shared instance opens. At `vanilla.5`, `raid.bwl.sod20` permits reworked Ashkandi `230818`, while original Ashkandi `19364` stays unavailable from the old boss. The original head turn-ins remain separate too. [Paired boss Lua and SoD JSON](#one-boss-two-loot-routes) · [Shared-head diagram](#a-shared-drop-at-phase-5) · [Four profiles and their source evidence](#files-and-evidence)
+
+**Failure to catch.** In the isolated candidate, neutralize the old removal timeline. The original route must still be disabled while a shared head can drop through the complete reworked route. [BWL acceptance cases](#bwl-acceptance-cases)
+
+### Temple of Ahn'Qiraj
+
+The SoD phase-6 schedule separates quest preparation, supply collection, the battle and the opening of the Temple. Only the raid boundary can open C'Thun's boss loot. [Blizzard's SoD event schedule](https://news.blizzard.com/en-us/article/24154449/anniversary-celebration-at-the-november-trading-post-season-of-discovery-phase-6-the-war-within-audio-design-and-more) · [Original C'Thun](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1564-L1585) · [SoD C'Thun](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L2350-L2363)
+
+| Viewed SoD milestone | What opens or closes | Reworked C'Thun loot |
+| --- | --- | --- |
+| `vanilla.6.scepter` | Scepter questline begins | Future |
+| `vanilla.6.war-effort` → `vanilla.6.war-effort-end` | Supplies accepted until the end boundary | Future |
+| `vanilla.6.war` | Battle begins | Future |
+| `vanilla.6.raids` | Temple raid opens | Open when encounter conditions pass |
+
+```lua
+-- Reworked difficulty in inst(744). The original 40-player record stays separate.
+d(DIFFICULTY.SOD.PLAYER20, {
+    flavors = { "sod" }, progressionKey = "aq40.reworked",
+    groups = { e(1551, {
+        creatureID = 15727, groups = { i(21221), i(233634) },
+    }) },
+})
+```
+
+SoD `content["aq40.reworked"]` is `{ "windows": [{ "from": "vanilla.6.raids" }] }`. At the supply or battle milestone neither the shared Eye of C'Thun (`21221`) nor reworked Death's Sting (`233634`) is obtainable **from this raid**. The original boss's Death's Sting (`21126`) stays on its own route. Preserve separate realm, quest and event predicates wherever the selected context requires them.
+
+### Gnomeregan
+
+Ordinary Gnomeregan contains the normal dungeon. SoD adds a level-40, ten-player raid in phase 2. The Mechanical Menagerie supplies Glimmering Gizmoblade only on the raid route. [Ordinary Crowd Pummeler](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L883-L887) · [SoD difficulty](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L953-L962) · [Mechanical Menagerie loot](https://github.com/ATTWoWAddon/AllTheThings/blob/0668031cb5986d021dc12611b1ee040a975132e9/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L1633-L1638) · [Blizzard phase 2 raid details](https://worldofwarcraft.blizzard.com/en-gb/news/24056984/season-of-discovery-phase-2-is-now-live)
+
+```lua
+-- Excerpts from the ordinary dungeon and the separate SoD raid in inst(231).
+e(418, { groups = { i(9449) } }) -- Manual Crowd Pummeler
+d(DIFFICULTY.SOD.PLAYER10, {
+    flavors = { "sod" }, progressionKey = "gnomeregan.raid10",
+    groups = { n(218242, { groups = { i(213410) } }) },
+})
+```
+
+SoD `content["gnomeregan.raid10"]` is `{ "windows": [{ "from": "vanilla.2" }] }`. At phase 1 the raid is future. At phase 2 it can supply `213410` to an eligible player. Retail/default retains the ordinary compatible dungeon and publishes no Menagerie occurrence, reward, empty raid difficulty or cache write from that source. The removed normal-dungeon history in SoD retains its own timeline.
 
 ## 1. Required destination and four stages
 
