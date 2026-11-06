@@ -47,7 +47,6 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				},
 			}),
 			q(95189, {	-- Crest of Lordaeron (A)
-				-- CRIEVE NOTE: Missing the object
 				qs = 268579,	-- Crest of Lordaeron (QS!)
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -57,9 +56,8 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 				},
 			}),
 			q(95204, {	-- Crest of Lordaeron (H)
-				-- CRIEVE NOTE: Missing the object
 				qs = 275521,	-- Crest of Lordaeron (QS!)
-				maps = { MAP.STORMWIND_CITY },
+				maps = { MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 15,
 				groups = {
@@ -167,14 +165,19 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 							{ 69.0, 47.4, MAP.UNDERCITY },
 							{ 63.4, 47.4, MAP.UNDERCITY },
 						},
-						cr = 4554,	-- Tawny Grisette <Mushroom Vendor
+						cr = 4554,	-- Tawny Grisette <Mushroom Vendor>
 					}),
 					objective(2, {	-- 0/1 Blisterweed
-						-- CRIEVE NOTE: Get coordinate and the objectID
 						providers = {
 							{ "i", 281300 },	-- Blisterweed
-							--{ "o",  },	-- Blisterweed
+							{ "o", 673933 },	-- Blisterweed
 						},
+						coords = {
+							{ 54.0, 49.4, MAP.UNDERCITY },
+							{ 54.1, 49.5, MAP.UNDERCITY },
+							{ 54.5, 49.8, MAP.UNDERCITY },
+						},
+						description = "Loot it from the herbs in the barrel on the far left behind Katrina Alliestar, the Herbalism Trainer in the Undercity.",
 					}),
 					objective(3, {	-- 0/1 Essence of Agony
 						provider = { "i", 8923 },	-- Essence of Agony
@@ -204,6 +207,16 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 					i(6641),	-- Haunting Blade
 					i(6642),	-- Phantom Armor
 				},
+			}),
+		}),
+		n(TREASURES, {
+			o(614679, {	-- Crest of Lordaeron
+				i(268579, {	-- Crest of Lordaeron (QS!)
+					races = ALLIANCE_ONLY,
+				}),
+				i(275521, {	-- Crest of Lordaeron (QS!)
+					races = HORDE_ONLY,
+				}),
 			}),
 		}),
 		n(ZONE_DROPS, {

@@ -2554,7 +2554,7 @@ s(311532,279868,{b=1,f=5,loc=46}),
 s(311533,279869,{b=1,f=6,loc=42})}}),
 q(95189,{lvl=15,maps={1453},qss={268579},r=2,g={
 i(280567,{b=1,f=55})}}),
-q(95204,{lvl=15,maps={1453},qss={275521},r=1,g={
+q(95204,{lvl=15,maps={1458},qss={275521},r=1,g={
 i(280567,{b=1,f=55})}}),
 q(92421,{coords={
 [1458]={{57.8,89.8}}},lvl=15,qgs={266484},r=1,g={
@@ -2587,7 +2587,8 @@ q(97291,{coords={
 [1458]={{48.4,69.4}}},lvl=16,qgs={2055},r=1,sourceQuests={97290},g={
 qo(1,{coords={
 [1458]={{63.4,40},{63.4,47.4},{68.8,40},{69,47.4}}},crs={4554},providers={{"i",281246}}}),
-qo(2,{providers={{"i",281300}}}),
+qo(2,{coords={
+[1458]={{54,49.4},{54.1,49.5},{54.5,49.8}}},description="Loot it from the herbs in the barrel on the far left behind Katrina Alliestar, the Herbalism Trainer in the Undercity.",providers={{"i",281300},{"o",673933}}}),
 qo(3,{coords={
 [1458]={{75.6,51.6}}},crs={4585},providers={{"i",8923}}})}}),
 q(97292,{coords={
@@ -2597,6 +2598,10 @@ h(-46,{
 e(3408,{description="This is a Rare Creature and, as such, is not always present.",npcID=255699,g={
 s(158620,6641,{b=1,f=26,lvl=22}),
 s(158621,6642,{b=1,f=6,loc=42,lvl=22})}})}),
+h(-56,{
+o(614679,{
+i(268579,{b=1,r=2}),
+i(275521,{b=1,r=1})})}),
 h(-63,{
 i(268535,{b=1}),
 s(317505,286981,{crs={250618,250624,250626,255964},f=6,loc=43}),
