@@ -1,6 +1,9 @@
 local _, app = ...;
 local CreateObject = app.__CreateObject;
 
+local rawget,rawset
+	= rawget,rawset
+
 local api = {}
 app.Modules.Test = api
 
@@ -298,7 +301,7 @@ function ATTfuncvsor(count)
 	local temp
 
 	app.PrintDebug("direct-only-object",count)
-	-- 2.010676 @ 1M
+	-- 933ms @ 1M
 	for i=1,count do
 		temp = o.hash
 		o.hash = nil
@@ -306,7 +309,7 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 	app.PrintDebug("func-only-object",count)
-	-- 2.088579 @ 1M
+	-- 963ms @ 1M
 	for i=1,count do
 		temp = hash(o)
 		o.hash = nil
@@ -314,7 +317,7 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 	app.PrintDebug("direct|func-object",count)
-	-- 2.025655 @ 1M
+	-- 938ms @ 1M
 	for i=1,count do
 		temp = o.hash or hash(o)
 		o.hash = nil
@@ -322,7 +325,7 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 	app.PrintDebug("direct-only-table",count)
-	-- 0.029104 @ 1M
+	-- 21ms @ 1M
 	for i=1,count do
 		temp = p.hash
 		p.hash = nil
@@ -330,7 +333,7 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 	app.PrintDebug("func-only-table",count)
-	-- 0.510414 @ 1M
+	-- 271ms @ 1M
 	for i=1,count do
 		temp = hash(p)
 		p.hash = nil
@@ -338,10 +341,68 @@ function ATTfuncvsor(count)
 	app.PrintDebugPrior("---")
 
 	app.PrintDebug("direct|func-table",count)
-	-- 0.527799 @ 1M
+	-- 284ms @ 1M
 	for i=1,count do
 		temp = p.hash or hash(p)
 		p.hash = nil
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class|field-miss",count)
+	-- 93ms @ 1M
+	for i=1,count do
+		temp = o.potato
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class| rawget-miss(upvalue)",count)
+	-- 60ms @ 1M
+	for i=1,count do
+		temp = rawget(o, "potato")
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class| rawget-miss(local)",count)
+	local rg = rawget
+	-- 60ms @ 1M
+	for i=1,count do
+		temp = rg(o, "potato")
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("raw|field-miss",count)
+	-- 11ms @ 1M
+	for i=1,count do
+		temp = p.potato
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class|field-hit",count)
+	-- 2067ms @ 1M (varies by class/field)
+	for i=1,count do
+		temp = o.text
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class| rawget-hit(upvalue)",count)
+	-- 62ms @ 1M
+	for i=1,count do
+		temp = rawget(o, "text")
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("class| rawget-hit(local)",count)
+	local rg = rawget
+	-- 62ms @ 1M
+	for i=1,count do
+		temp = rg(o, "text")
+	end
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("raw|field-hit",count)
+	-- 11ms @ 1M
+	for i=1,count do
+		temp = p.text
 	end
 	app.PrintDebugPrior("---")
 
@@ -925,4 +986,49 @@ local C_TransmogCollection_GetAllAppearanceSources
 	end
 
 
+end
+
+function ATTSourceParentBench(N, trials)
+	N, trials = N or 3e6, trials or 5
+
+	-- Same __index shape as your classes. Swap in a real class table for realism.
+	local class = { collectible = function() return false end }
+	local mt = {
+		__class = class,
+		__index = function(t, key)
+			local _cache = class[key]
+			if _cache then return _cache(t) end
+		end,
+	}
+
+	local function best(f)
+		local b = math.huge
+		for _ = 1, trials do
+			collectgarbage()
+			local s = debugprofilestop()
+			f()
+			local e = debugprofilestop() - s
+			if e < b then b = e end
+		end
+		return b * 1e6 / N  -- ns per iteration
+	end
+
+	local base = best(function() local v; for i = 1, N do v = i end end)
+
+	local r = {}
+	r.plainMiss = best(function() local t, v = {}, nil; for i = 1, N do v = t.sourceParent end end)
+	r.plainHit  = best(function() local t, v = { sourceParent = true }, nil; for i = 1, N do v = t.sourceParent end end)
+	r.metaMiss  = best(function() local t, v = setmetatable({}, mt), nil; for i = 1, N do v = t.sourceParent end end)
+	r.metaHit   = best(function() local t, v = setmetatable({ sourceParent = true }, mt), nil; for i = 1, N do v = t.sourceParent end end)
+	r.rawMiss   = best(function() local rawget = rawget; local t, v = setmetatable({}, mt), nil; for i = 1, N do v = rawget(t, "sourceParent") end end)
+	r.rawHit    = best(function() local rawget = rawget; local t, v = setmetatable({ sourceParent = true }, mt), nil; for i = 1, N do v = rawget(t, "sourceParent") end end)
+
+	print(("loop overhead %.1f ns/iter (subtracted below)"):format(base))
+	for _, k in ipairs({ "plainMiss", "plainHit", "metaMiss", "metaHit", "rawMiss", "rawHit" }) do
+		r[k] = r[k] - base
+		print(("%-10s %6.1f ns"):format(k, r[k]))
+	end
+
+	local h, m, rg = r.metaHit, r.metaMiss, r.rawMiss
+	print(("break-even: rawget wins if the key is absent on more than %.0f%% of reads"):format((1 - (m - rg) / (m - h)) * 100))
 end
