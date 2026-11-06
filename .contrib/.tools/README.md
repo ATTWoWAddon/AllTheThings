@@ -100,22 +100,6 @@ git diff --check
 
 If the result is not expected, restore it with your normal Git workflow before making additional edits.
 
-## Split a generated ObjectDB
+## Maintain the canonical ObjectDB
 
-[`Lua/split_objectdb.js`](Lua/split_objectdb.js) splits a generated ObjectDB into sorted Lua modules. It requires [Node.js](https://nodejs.org/) and has been validated with Node.js 24. Run from the repository root:
-
-```sh
-node .contrib/.tools/Lua/split_objectdb.js ".contrib/.db/shared/objects/ObjectDB.lua" "./output"
-```
-
-The output directory must be new or empty; if omitted, it defaults to `./output`. Keep the output outside the parser data tree: this tool does not integrate the generated modules into ATT. The input is preserved.
-
-The tool accepts the generated `local ObjectDB = ObjectDB; for objectID,objectData in pairs({ ... }) do ObjectDB[objectID] = objectData; end` wrapper, with numeric `[ID] = { ... }` entries; the semicolon before `end` is optional. It preserves entry text, but discards comments and whitespace outside entries. Duplicate IDs, empty tables, ATT preprocessor directives, and other surrounding code are rejected before writing output. The literal `-- #` marker is rejected even inside strings and comments, matching ATT's preprocessor. The scanner checks structure but is not a full Lua syntax validator.
-
-Files contain at most 700 objects in aligned 10,000-, 1,000-, or 100-ID ranges. The greedy ranges can overlap in their filenames, but each ID appears in only one file. Files with fewer than 20 objects produce a warning.
-
-Run the standalone regression checks with Node.js 18 or later:
-
-```sh
-node --test .contrib/.tools/Lua/tests/split-objectdb.test.cjs
-```
+The canonical ObjectDB is stored in managed Lua shards. See [ObjectDB maintenance](Lua/ObjectDB.md) for editing, checking, repartitioning, consolidation requirements, and recovery.
