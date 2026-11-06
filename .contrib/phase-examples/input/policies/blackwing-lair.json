@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Blackwing Lair. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
   "progression:main": {
     "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
     "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
@@ -16,17 +17,26 @@
   },
   "sod:main": {
     "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
-    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.original": {
+      "$comment": "disabled keeps the original Nefarian loot in history. It supplies no items in this profile.",
+      "status": "disabled",
+      "windows": []
+    },
     "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
-    "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] }
+    "raid.bwl.sod20": {
+      "$comment": "This opens the reworked difficulty and its drops, including the other source of Nefarian’s head (19003).",
+      "windows": [{ "from": "vanilla.5" }]
+    }
   },
   "sod:replay": {
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
     "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
     "raid.bwl.original": { "status": "disabled", "windows": [] },
     "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
     "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] }
   },
   "progression:replay": {
+    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
     "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
     "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
     "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] }

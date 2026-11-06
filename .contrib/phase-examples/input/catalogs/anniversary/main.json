@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Anniversary main. List milestones in release order. Launch and the first raid opening occupy separate positions.",
   "milestones": [
     "vanilla.launch",
     "vanilla.1.raids",

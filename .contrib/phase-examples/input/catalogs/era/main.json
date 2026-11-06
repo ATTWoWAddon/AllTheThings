@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Era main. This profile orders the original releases. The position in this array determines when a milestone takes effect.",
   "milestones": [
     "vanilla.1",
     "vanilla.1.dire-maul",

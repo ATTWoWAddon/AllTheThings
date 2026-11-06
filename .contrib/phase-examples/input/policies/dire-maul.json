@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Dire Maul. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
   "progression:main": {
     "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
     "dire-maul.isalien": { "status": "unknown", "windows": [] }
@@ -9,17 +10,22 @@
   },
   "anniversary:main": {
     "dire-maul.common": { "windows": [{ "from": "vanilla.2" }] },
-    "dire-maul.isalien": { "windows": [{ "from": "vanilla.4" }] }
+    "dire-maul.isalien": {
+      "$comment": "Only the summon and its drops wait for Dungeon Set 2. The Lua cost and provider also apply.",
+      "windows": [{ "from": "vanilla.4" }]
+    }
   },
   "sod:main": {
     "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },
     "dire-maul.isalien": { "status": "unknown", "windows": [] }
   },
   "sod:replay": {
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
     "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },
     "dire-maul.isalien": { "status": "unknown", "windows": [] }
   },
   "progression:replay": {
+    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
     "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
     "dire-maul.isalien": { "windows": [{ "from": "fixture.set2-open" }] }
   }

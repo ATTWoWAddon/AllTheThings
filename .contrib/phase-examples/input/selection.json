@@ -1,5 +1,7 @@
 {
+  "$comment": "Authoring input (B): P4 source selection. Match each group(\"slot\") in layout.lua to a file under input/ for this context. Use null to skip the slot before reading any file.",
   "retail": {
+    "$comment": "Retail selects ordinary sources. Keep the SoD history and rework slots null here.",
     "brd.gerstahn-sod": null,
     "brd.angerforge-sod": null,
     "dfc.instance": null,
@@ -68,6 +70,7 @@
     "gnomeregan.raid": null
   },
   "sod:main": {
+    "$comment": "Select both BWL files to retain both loot lists. Their separate profile rules decide which difficulty can supply an item.",
     "brd.gerstahn-sod": "fragments/brd.gerstahn-sod.lua",
     "brd.angerforge-sod": "fragments/brd.angerforge-sod.lua",
     "dfc.instance": "fragments/dfc.instance.lua",
@@ -85,6 +88,7 @@
     "gnomeregan.raid": "fragments/gnomeregan.raid.lua"
   },
   "sod:replay": {
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
     "brd.gerstahn-sod": "fragments/brd.gerstahn-sod.lua",
     "brd.angerforge-sod": "fragments/brd.angerforge-sod.lua",
     "dfc.instance": "fragments/dfc.instance.lua",
@@ -102,6 +106,7 @@
     "gnomeregan.raid": "fragments/gnomeregan.raid.lua"
   },
   "progression:replay": {
+    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
     "brd.gerstahn-sod": null,
     "brd.angerforge-sod": null,
     "dfc.instance": null,

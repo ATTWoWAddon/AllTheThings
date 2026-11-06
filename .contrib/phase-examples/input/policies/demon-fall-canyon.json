@@ -1,11 +1,20 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Demon Fall Canyon. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
   "sod:main": {
-    "dfc.dungeon": { "status": "unknown", "windows": [] },
+    "dfc.dungeon": {
+      "$comment": "The opening within phase 4 is unconfirmed. An unknown parent blocks both later rewards.",
+      "status": "unknown",
+      "windows": []
+    },
     "dfc.azgaloth": { "windows": [{ "from": "vanilla.5" }] },
     "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] }
   },
   "sod:replay": {
-    "dfc.dungeon": { "windows": [{ "from": "fixture.dfc-open" }] },
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
+    "dfc.dungeon": {
+      "$comment": "This replay supplies a test opening so you can examine the later boss and item independently.",
+      "windows": [{ "from": "fixture.dfc-open" }]
+    },
     "dfc.azgaloth": { "windows": [{ "from": "vanilla.5" }] },
     "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] }
   }

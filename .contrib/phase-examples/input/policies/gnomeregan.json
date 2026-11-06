@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Gnomeregan. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
   "progression:main": {
     "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
   },
@@ -9,14 +10,23 @@
     "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
   },
   "sod:main": {
-    "gnomeregan.dungeon": { "status": "disabled", "windows": [] },
-    "gnomeregan.raid10": { "windows": [{ "from": "vanilla.2" }] }
+    "gnomeregan.dungeon": {
+      "$comment": "The original dungeon loot is retained as history in SoD.",
+      "status": "disabled",
+      "windows": []
+    },
+    "gnomeregan.raid10": {
+      "$comment": "Open the 10-player raid here. This difficulty supplies the reworked bosses and loot.",
+      "windows": [{ "from": "vanilla.2" }]
+    }
   },
   "sod:replay": {
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
     "gnomeregan.dungeon": { "status": "disabled", "windows": [] },
     "gnomeregan.raid10": { "windows": [{ "from": "vanilla.2" }] }
   },
   "progression:replay": {
+    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
     "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
   }
 }

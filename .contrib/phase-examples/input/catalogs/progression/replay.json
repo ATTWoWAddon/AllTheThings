@@ -1,4 +1,5 @@
 {
+  "$comment": "Comparison fixture (C): P4 test schedule only. Progression replay. fixture.set2-open is a test opening for Dungeon Set 2. Keep observed milestones in the main profile.",
   "milestones": [
     "vanilla.1",
     "vanilla.1.dire-maul",

@@ -1,6 +1,11 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Temple of Ahn'Qiraj. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
   "progression:main": {
-    "aq40.common": { "status": "unknown", "windows": [] },
+    "aq40.common": {
+      "$comment": "The realm controls the gate. Keep the parent unknown until an opening is available for this context.",
+      "status": "unknown",
+      "windows": []
+    },
     "aq40.original": { "windows": [{ "from": "start" }] }
   },
   "era:main": {
@@ -14,14 +19,19 @@
   "sod:main": {
     "aq40.common": { "windows": [{ "from": "vanilla.6.raids" }] },
     "aq40.original": { "status": "disabled", "windows": [] },
-    "aq40.reworked": { "windows": [{ "from": "vanilla.6.raids" }] }
+    "aq40.reworked": {
+      "$comment": "Use the raid-opening milestone within phase 6. The earlier scepter and War Effort milestones keep this route closed.",
+      "windows": [{ "from": "vanilla.6.raids" }]
+    }
   },
   "sod:replay": {
+    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
     "aq40.common": { "windows": [{ "from": "vanilla.6.raids" }] },
     "aq40.original": { "status": "disabled", "windows": [] },
     "aq40.reworked": { "windows": [{ "from": "vanilla.6.raids" }] }
   },
   "progression:replay": {
+    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
     "aq40.common": { "status": "unknown", "windows": [] },
     "aq40.original": { "windows": [{ "from": "start" }] }
   }
