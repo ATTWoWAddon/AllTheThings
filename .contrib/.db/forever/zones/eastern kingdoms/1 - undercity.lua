@@ -1475,3 +1475,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(5659, {	-- <NYI> Touch of Weakness
+		description = "Never implemented as a real quest. Likely gets marked as completed alongside any of the 'Touch of Weakness' Undead Priest quests (5658, 5660-5663).",
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		classes = { PRIEST },
+		races = { UNDEAD },
+	}),
+});

@@ -2244,6 +2244,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
+	q(93462, {	-- Completed by the 'DNT Windshapers' spells (1263988, 1266840), likely the Horde counterpart of 93463 for 'The Windshapers' (92595).
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 	q(93463, {	-- Triggered when turning in 'The High Order', likely a shared quest flag for either faction having completed their initial introduction quest.
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
