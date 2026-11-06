@@ -9639,11 +9639,11 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16384,RagemawTerrace,"Ragemaw Terrace",0,16194,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,8320,0,0,0,0
 16385,FirewingTerrace,"Firewing Terrace",0,16194,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,8320,0,0,0,0
 16386,WarlordsStair,"Warlord's Stair",0,16194,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073741888,8320,0,0,0,0
-16387,1127GM3ContentRunArdenweald,"Grove of the Night Court",2910,0,0,86,0,3565,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
+16387,1127GM3ContentRunArdenweald,"Grove of the Night Court",2910,0,0,86,0,3565,675,3712,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16388,ProveYourWorth,"The Foraging",2825,16368,0,91,0,3272,0,3268,0,0,0,0,0,0,13,-1,0,0,0,0,1342177280,396,0,0,0,0
 16389,PHProveYourWorthStormApproaches,"The Storm Approaches",2825,16368,0,91,0,3274,0,3311,0,0,0,0,0,0,13,-1,0,0,0,0,1342177280,140,0,0,0,0
 16390,PHProveYourWorthEnduringWinter,"Enduring Winter",2825,16368,0,91,0,3279,0,3270,0,0,0,0,0,0,13,-1,0,0,0,0,1342177280,140,0,0,0,0
-16391,1127GM3ContentRunValsharah,"Greenthistle Wood",2910,0,0,67,0,3387,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
+16391,1127GM3ContentRunValsharah,"Greenthistle Wood",2910,0,0,67,0,3387,675,3704,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16392,zz1127GM3ContentRunDrustvar,zzBriarweald,2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16393,12IntroGoldenBoughs,"Golden Boughs",2858,16182,0,0,0,351,675,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,0,1073741888,128,0,0,0,0
 16395,MaisaraCavernsDungeon,"Maisara Caverns",2874,0,0,97,0,3284,0,3315,0,0,0,0,0,1,13,-1,0,0,0,5071,-1879031808,136,0,0,0,0
@@ -9652,14 +9652,14 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16398,ShingingSpan,"The Shining Span",2858,16182,0,0,0,351,675,0,0,0,0,0,0,0.15000000596,13,-1,0,0,0,0,1073741888,128,0,0,0,0
 16400,GlimmeringCataract,"Glimmering Cataract",2694,15355,0,0,0,3111,2708,3243,0,0,0,0,0,0,15,-1,25,25,0,0,1073758272,8320,0,0,0,0
 16401,AhluaWetland,"Ahl'ua Wetland",2694,15355,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,25,25,0,0,1073758272,8320,0,0,0,0
-16402,1127GM3ContentRunRevendreth,Darkhaven,2910,0,0,67,0,3696,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
+16402,1127GM3ContentRunRevendreth,Darkhaven,2910,0,0,67,0,3696,675,3701,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16403,zz1127GM3ContentRun,"zzCrimson Cathedral",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16404,zz1127GM3ContentRun,"zzGM3 Sanguine Depths",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16405,zz1127GM3ContentRun,"zzGM3 Castle Nathria",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16406,zz1127GM3ContentRunEmeraldDream,"zzVerdant Hollow",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16407,zz1127GM3ContentRun,"zzTeocan Ruins",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16408,zz1127GM3ContentRun,"zzGM3 Darkheart Thicket",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
-16409,1127GM3ContentRunStormsongValley,"Greywake's Expedition",2910,0,0,75,0,3492,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
+16409,1127GM3ContentRunStormsongValley,"Greywake's Expedition",2910,0,0,75,0,3492,675,3706,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16410,zz1127GM3ContentRun,"zzGM3 Tiragarde",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16411,zz1127GM3ContentRun,"zzGM3 Shrine of the Storm",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
 16412,zz1127GM3ContentRun,"zzGM3 Crucible of Storms",2910,0,0,0,0,0,675,0,0,0,0,0,0,0,0,-1,0,0,0,5262,268439552,128,0,0,0,0
@@ -9761,7 +9761,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16528,TheShadowCleft,"The Shadow Cleft",2694,15355,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,25,25,0,0,1073758272,8320,0,0,0,0
 16530,StillrootBasin,"Stillroot Basin",2694,15355,12985,0,0,0,0,0,0,0,0,0,0,0,15,-1,25,25,0,0,1073758272,8192,0,0,0,0
 16531,DreamriftRaid,"The Dreamrift",2939,0,0,75,0,3354,0,3264,0,0,0,0,0,0,15,-1,0,0,0,3607,268451840,136,0,0,0,0
-16533,1127GM3PlayerHubQuillgrave,Quillgrave,2863,0,0,96,0,3562,0,0,0,0,0,0,0,0,0,-1,0,0,0,3343,32,128,0,0,0,0
+16533,1127GM3PlayerHubQuillgrave,Quillgrave,2863,0,0,96,0,3562,0,3700,0,0,0,0,0,0,0,-1,0,0,0,3343,32,128,0,0,0,0
 16534,LairOfPredaxas,"Lair of Predaxas",2771,15458,12993,0,0,3059,2708,3512,0,0,0,0,0,0,15,-1,0,0,0,3084,1073741888,0,0,0,0,0
 16535,VaultsofAtalUtek,"Vaults of Atal'Utek",2916,0,0,75,0,3527,3400,3579,0,0,0,0,0,0,15,-1,0,0,0,5381,16448,128,0,0,0,0
 16536,ValdekarsSunbath,"Solaarian Sunbath",0,15968,13096,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,3085,1073741888,8192,0,0,0,0
@@ -9809,7 +9809,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16601,DarkwellRaidCorruptedSunwellInterior,"The Sunwell",2913,16342,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,1342177280,136,0,0,0,0
 16613,12SunwellRamparts,"Sunwell Ramparts",0,16215,0,0,0,0,675,0,0,0,0,0,0,0.15000000596,15,-1,0,0,0,0,1073741888,128,0,0,0,0
 16618,12SilvermoonBloodKnightBuilding,"Hall of Blood",0,15969,0,0,0,0,0,0,0,0,0,0,4,0,15,-1,0,0,0,0,1080033344,128,0,0,0,0
-16621,1127GM3PlayerHubIntroTutorial,"Red Hollow",2863,0,0,96,0,3210,0,0,0,0,0,0,0,0,0,-1,0,0,0,3343,0,128,0,0,0,0
+16621,1127GM3PlayerHubIntroTutorial,"Red Hollow",2863,0,0,96,0,3210,0,3699,0,0,0,0,0,0,0,-1,0,0,0,3343,0,128,0,0,0,0
 16627,12SilvermoonSundries,"Sunwing Sundries",0,15969,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073743936,128,0,0,0,0
 16633,12SilvermoonMurderRowInn,"The Illicit Rain",0,15969,0,0,0,0,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073743936,128,0,0,0,0
 16634,12SilvermoonPreyHub,"Astalor's Sanctum",0,15969,0,96,0,2999,0,0,0,0,0,0,0,0,15,-1,0,0,0,0,1073743872,128,0,0,0,0
@@ -9915,7 +9915,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 16851,PvPHordeHubInn,"Mettle's Hold",2771,15959,0,0,0,3059,2708,3309,0,0,0,0,0,0,15,-1,0,0,0,3084,1077952544,8320,0,0,0,0
 16855,SlayersRiseBGMinibossPOI,"Voidscar Arena",2799,16423,0,0,0,0,2708,3240,0,0,0,0,0,0,13,-1,0,0,0,4278,1895940096,128,0,0,0,0
 16860,12ZulAmanGreatSea,"The Great Sea",0,15947,0,0,0,0,675,0,0,0,0,0,0,0,15,-1,0,0,0,3086,1073741888,128,0,0,0,0
-16862,1127GM3ContentRunQuillgrave,Quillgrave,2910,0,0,96,0,3698,0,0,0,0,0,0,0,0,0,-1,0,0,0,0,0,128,0,0,0,0
+16862,1127GM3ContentRunQuillgrave,Quillgrave,2910,0,0,96,0,3698,0,3710,0,0,1699,0,0,0,0,-1,0,0,0,0,0,128,0,0,0,0
 16863,Local13CaveB,"Quiet Cavern",2771,15458,0,0,0,2705,2708,0,0,0,0,0,0,0,15,-1,0,0,0,3084,1073758272,8320,0,0,0,0
 16864,Local13CaveA,"Consumptor Cave",2771,15458,0,0,0,2705,2708,0,0,0,0,0,0,0,15,-1,0,0,0,3084,1073758272,8320,0,0,0,0
 16865,AltarofFangsDungeon,"Altar of Fangs",2993,0,0,72,0,3495,3400,3614,0,0,0,0,0,0,0,-1,0,0,0,6666,-1879048192,136,0,0,0,0

@@ -113887,7 +113887,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 223756,,223755,0,0,112767,0,0
 223757,,215938,10,0,112768,8,0
 223758,"12.1.7 GM3 - Quillgrave - Tutorial - Meet the Arcanist - 1 or More Alkahest",0,0,4,0,0,4096
-223759,,223758,1,0,117894,0,0
+223759,,223758,1,0,119581,0,0
 223768,"Eversong Woods",222112,0,0,112779,0,0
 223769,Zul'Aman,222112,0,0,112780,1,0
 223770,Harandar,222112,0,0,112781,2,0
@@ -120880,6 +120880,20 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 237181,"Third Garden Trails Completed",237175,1,0,118738,5,0
 237190,"12.1.7 GM3 - Revendreth - Scenario - Bishop Encounters",0,0,4,0,0,0
 237191,"Bishop confronted",237190,3,0,119503,0,0
+237229,"Runic Archive Orb",0,0,4,0,0,4096
+237230,,237229,1,0,119525,0,0
+237309,"<DNT> Tutorial Complete and a Story Boss Defeated",0,0,4,0,0,0
+237310,"Tutorial Complete",237309,1,0,119580,0,0
+237311,"Story Boss Defeated",237309,1,8,0,1,8192
+237312,,237311,1,0,117304,0,0
+237313,,237311,1,0,117288,1,0
+237314,,237311,1,0,117292,2,0
+237315,,237311,1,0,117296,3,0
+237316,,237311,1,0,117300,4,0
+237317,,237311,1,0,117308,5,0
+237318,,237311,1,0,117312,6,0
+237319,,237311,1,0,117316,7,0
+237320,,237311,1,0,117320,8,0
 12374,"Honor the flames of Kalimdor.",0,0,4,0,0,0
 5438,"Catch a fish in each of the specific nodes listed below.",0,0,4,0,0,0
 3835,"Win Alterac Valley while your team controls both mines.",0,0,4,0,0,0
@@ -121009,7 +121023,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 4409,"Complete the Arathi Basin achievements listed below.",0,0,4,0,0,0
 7316,"Honor the flames of Eastern Kingdoms.",0,0,4,0,0,0
 8077,"Raise all of The Burning Crusade dungeon reputations to exalted.",0,0,4,0,0,0
-20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
 6714,"Complete the Eastern Kingdoms quest achievements listed below.",0,0,4,0,0,0
 6894,"Complete the Northrend quest achievements listed below.",0,0,4,0,0,0
 6585,"Visit the Candy Buckets in Kalimdor.",0,0,4,0,0,0
@@ -121146,6 +121159,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 20766,"Defeat The Black Knight in the Trial of the Champion on Heroic Difficulty while in a guild group.",0,0,4,0,0,0
 20440,"Complete the heroic Northrend dungeon achievements listed below while in a guild group.",0,0,4,0,0,0
 20807,"Visit the Candy Buckets in Northrend.",0,0,4,0,0,0
+20511,"Complete each Fish or Cut Bait achievement.",0,0,4,0,0,0
 20573,"Launch off Darkmoon Fireworks in every friendly capital city.",0,0,4,0,0,0
 20721,"Honor the flames of Northrend.",0,0,4,0,0,0
 20748,"Honor the flames of zones opened by the cataclysm.",0,0,4,0,0,0
@@ -121201,6 +121215,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 37588,"Explore The Stadium",0,0,4,0,0,4096
 37586,"Explore The Altar",0,0,4,0,0,4096
 37548,"Place a Work Order",0,0,4,0,0,4096
+65221,"Travel to Stormwind",0,1,8,0,0,4096
 37528,"Garrison - Attack - Stage 2 - Exit Primals",0,0,4,0,0,0
 37526,"Garrison - Attack - Stage 1 - Exit Primals",0,0,4,0,0,0
 37544,"New Criteria Tree",0,0,4,0,0,0
@@ -121287,7 +121302,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 46208,"Unlocked True Iron Rudder",0,0,4,0,0,0
 46198,"Unlocked Fog Lights",0,0,4,0,0,0
 46073,"7.0 Artifacts - Warlock Order - Step 06 Complete - TSH",0,0,4,0,0,0
-79078,"New Criteria Tree",0,0,4,0,0,4096
 46083,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
 46085,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
 46087,"Ashran - Kill Faction Leader",0,1,5,0,0,4096
@@ -121352,7 +121366,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 140848,"Legion - Bonus Event Quest - Battlegrounds",0,4,5,0,0,4096
 67957,"7.0 Bonus Event Weekend - World Quests",0,20,5,0,0,4096
 55243,"Stormforged Grapple Launcher",0,0,4,0,0,4128
-80742,"New Criteria Tree",0,0,4,0,0,4096
 55665,"7.1.5 - Class Hall - Special - PVP Intro - Has Completed any random battleground",0,0,4,0,0,4096
 55725,"7.0 Order Hall - Monk - Campaign - Chapter 3 - Quest 0B - SBV",0,10,5,0,0,4096
 56138,"Demons Defeated",0,20,5,0,0,4096
@@ -121424,6 +121437,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 65798,"New Criteria Tree",0,0,4,0,0,4096
 65974,"New Criteria Tree",0,0,4,0,0,4096
 67775,"New Criteria Tree",0,0,4,0,0,4096
+79078,"New Criteria Tree",0,0,4,0,0,4096
+80742,"New Criteria Tree",0,0,4,0,0,4096
 85582,"New Criteria Tree",0,0,4,0,0,4096
 85708,"New Criteria Tree",0,0,4,0,0,4096
 91982,"New Criteria Tree",0,0,4,0,0,4096
@@ -121484,7 +121499,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85067,"Go to Hellfire Peninsula (H)",0,1,8,0,0,4096
 85051,"Go to Northrend (H)",0,1,8,0,0,4096
 62847,"Travel to Stormwind",0,1,8,0,0,4096
-65221,"Travel to Stormwind",0,1,8,0,0,4096
 85064,"Go to Hellfire Peninsula (A)",0,1,8,0,0,4096
 85047,"Go to Northrend (A)",0,1,8,0,0,4096
 63708,"Use the void portal.",0,0,4,0,0,0
@@ -121783,7 +121797,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 169825,"8.3 Visions of N'Zoth - Orgrimmar - Free Shaman - Enter Valley of Spirits",0,0,4,0,0,4096
 169835,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Talk with Garona Completed",0,0,4,0,0,4096
 169837,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Bag Vendor Completed",0,0,4,0,0,4096
-90578,"Evade the Tarragrue",0,0,4,0,0,2
 169841,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Orphanage Completed",0,0,4,0,0,4096
 169845,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Leatherworker Completed",0,0,4,0,0,4096
 169843,"8.3 Visions of N'Zoth - Orgrimmar - Escort NPC - Engineer Completed",0,0,4,0,0,4096
@@ -121860,6 +121873,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90566,"Evade the Tarragrue",0,0,4,0,0,2
 90570,"Evade the Tarragrue",0,0,4,0,0,2
 90574,"Evade the Tarragrue",0,0,4,0,0,2
+90578,"Evade the Tarragrue",0,0,4,0,0,2
 90582,"Evade the Tarragrue",0,0,4,0,0,2
 90586,"Evade the Tarragrue",0,0,4,0,0,2
 90590,"Evade the Tarragrue",0,0,4,0,0,2
@@ -121989,6 +122003,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85446,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85449,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85455,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
+90953,"Tormentor defeated",0,0,4,0,0,0
 85458,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
 85461,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
 85677,"9.0 Level Squish - Player has traveled to Outland (MPK)",0,1,8,0,0,4096
@@ -122059,7 +122074,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 90945,"Jailer's forces defeated",0,300,9,0,0,1
 90951,"Jailer's forces defeated",0,300,9,0,0,1
 90949,"Tormentor defeated",0,0,4,0,0,0
-90953,"Tormentor defeated",0,0,4,0,0,0
 90955,"Tormentor defeated",0,0,4,0,0,0
 92576,"Get Archivist's Key",0,1,5,0,0,6144
 148552,"Byron Test Criteria Tree - Item Gained",0,0,4,0,0,6144
@@ -122215,7 +122229,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 143269,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143271,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143273,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
-232184,"Quests completed",0,5,5,0,0,8193
 143275,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143281,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
 143283,"10.1 Underground - Side - Snailies - Snailspiration - Shimmershell Snail (JLW)",0,0,4,0,0,4096
@@ -122280,6 +122293,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 148656,"Quests completed",0,5,5,0,0,8193
 216312,"Quests completed",0,5,5,0,0,8193
 223339,"Quests completed",0,5,5,0,0,8193
+232184,"Quests completed",0,5,5,0,0,8193
 149871,"Fireworks launched",0,10,5,0,0,8193
 218056,"Turkeys dominated",0,0,4,0,0,8193
 157039,"Items upgraded",0,5,5,0,0,8193
@@ -122479,7 +122493,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 212394,"Delver's Cosmetic Surprise Bag purchased from Reno Jackson",0,0,4,0,0,6144
 212404,"Delver's Cosmetic Surprise Bag purchased from Reno Jackson",0,0,4,0,0,6144
 212396,"Delver's Starter Kit purchased from Sir Finley Mrrgglton",0,0,4,0,0,6144
-212237,"Reach level 40",0,1,4,0,0,4096
 212406,"Delver's Starter Kit purchased from Sir Finley Mrrgglton",0,0,4,0,0,6144
 206370,"Earn a 2600 personal rating in the 2v2 bracket of the arena in Season 39 (TWW 2)",0,0,4,0,0,0
 206833,"Drifts completed",0,400,5,0,0,8193
@@ -122548,6 +122561,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 211445,"[DNT] Quests completed",0,2,5,0,0,4096
 221096,"Complete World Quests",0,5,4,0,0,0
 229615,"Complete World Quests",0,5,4,0,0,0
+212237,"Reach level 40",0,1,4,0,0,4096
 212253,"Reach level 40",0,1,4,0,0,4096
 217505,"Complete Aln'hara's Gift",0,0,4,0,0,4096
 215423,"Herbs, ores, skins, or fish gathered",0,100,5,0,0,8193
@@ -122618,7 +122632,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230700,"12.0 Midnight - Seasonal - Z1 - Silvermoon Court (MPK)",0,1,8,0,0,4096
 229817,"12.0 Midnight - Seasonal - Z4 - Stormarion Assault (MPK)",0,1,8,0,0,4096
 230705,"12.0 Midnight - Seasonal - Z4 - Stormarion Assault (MPK)",0,1,8,0,0,4096
-231533,"Complete an Umbral Strike",0,3,5,0,0,4096
 230432,"Obtain all curios that are available for Valeera Sanguinar at rank 4.",0,1,8,0,0,8194
 220789,"Explore the regions of Midnight.",0,0,4,0,0,0
 221058,"Player Has Opened all Midnight Delve Sturdy Chests",0,0,4,0,0,0
@@ -122684,6 +122697,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225556,"Battlegrounds won",0,2,5,0,0,4096
 231550,"Battlegrounds won",0,2,5,0,0,4096
 227964,"Complete an Umbral Strike",0,3,5,0,0,4096
+231533,"Complete an Umbral Strike",0,3,5,0,0,4096
 227431,"Automaton Fuel Cells Acquired",0,1,4,0,0,4096
 225740,"Coalesced Corruption",0,0,4,0,0,0
 236086,"Recover a Fragment of Alien Void or Arcane Magic",0,1,5,0,0,4096
