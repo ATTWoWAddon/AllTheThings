@@ -1,4 +1,5 @@
 {
+  "$comment": "Comparison fixture (A/B): P4 test schedule only. SoD replay. fixture.dfc-open is a test opening for Demon Fall Canyon. Its position lets this profile exercise the later boss and drop.",
   "milestones": [
     "vanilla.1",
     "vanilla.2",
@@ -15,11 +16,15 @@
     "vanilla.7"
   ],
   "content": {
+    "$comment": "Each key matches progressionKey in Lua. A drop with no key inherits the rules of its ancestors.",
     "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
     "brd.second-half": { "windows": [{ "from": "vanilla.4" }] },
     "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
     "brd.angerforge-axe": { "windows": [{ "from": "vanilla.4" }] },
-    "dfc.dungeon": { "windows": [{ "from": "fixture.dfc-open" }] },
+    "dfc.dungeon": {
+      "$comment": "The replay opens the entrance here. Grimroot’s later drop still has its own window.",
+      "windows": [{ "from": "fixture.dfc-open" }]
+    },
     "dfc.azgaloth": { "windows": [{ "from": "vanilla.5" }] },
     "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] },
     "dire-maul.common": { "windows": [{ "from": "vanilla.4" }] },

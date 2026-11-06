@@ -1,4 +1,5 @@
 {
+  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Progression main. List milestones in release order. An opening within phase 1 has its own name, vanilla.1.dire-maul.",
   "milestones": [
     "vanilla.1",
     "vanilla.1.dire-maul",

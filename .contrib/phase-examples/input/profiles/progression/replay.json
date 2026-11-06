@@ -1,4 +1,5 @@
 {
+  "$comment": "Comparison fixture (A/B): P4 test schedule only. Progression replay. fixture.set2-open is a test opening for Dungeon Set 2. Keep observed milestones in the main profile.",
   "milestones": [
     "vanilla.1",
     "vanilla.1.dire-maul",
@@ -10,10 +11,14 @@
     "vanilla.6"
   ],
   "content": {
+    "$comment": "Each key matches progressionKey in Lua. A drop with no key inherits the rules of its ancestors.",
     "brd.dungeon": { "windows": [{ "from": "start" }] },
     "brd.second-half": { "windows": [{ "from": "start" }] },
     "dire-maul.common": { "windows": [{ "from": "vanilla.1.dire-maul" }] },
-    "dire-maul.isalien": { "windows": [{ "from": "fixture.set2-open" }] },
+    "dire-maul.isalien": {
+      "$comment": "This opens the summoned encounter in the replay. Its Lua cost and item provider still apply.",
+      "windows": [{ "from": "fixture.set2-open" }]
+    },
     "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
     "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
     "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
