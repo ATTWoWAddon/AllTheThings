@@ -1487,10 +1487,6 @@ app.GlobalVariants.WithAutoName = {
 	end,
 }
 
-app.GlobalVariants.Combine(
-	app.GlobalVariants.AndLockCriteria,
-	app.GlobalVariants.WithAutoName)
-
 -- Party Sync Support
 local IsQuestReplayable = C_QuestLog.IsQuestReplayable
 local OnSetVisibilityForNestedQuest
@@ -1598,15 +1594,11 @@ app.GlobalVariants.AndMaxReputation = {
 	end,
 }
 
-app.GlobalVariants.Combine(
+local questVariants = app.GlobalVariants.DoAllCombinations(
 	app.GlobalVariants.AndLockCriteria,
-	app.GlobalVariants.AndMaxReputation)
-app.GlobalVariants.Combine(
 	app.GlobalVariants.WithAutoName,
-	app.GlobalVariants.AndMaxReputation)
-app.GlobalVariants.Combine(
-	app.GlobalVariants.AndLockCriteriaWithAutoName,
-	app.GlobalVariants.AndMaxReputation)
+	app.GlobalVariants.AndMaxReputation
+)
 
 local createQuest = app.CreateClass("Quest", "questID", {
 	CACHE = function() return CACHE end,
@@ -1726,15 +1718,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 	indicatorIcon = GetQuestIndicator,
-	variants = {
-		app.GlobalVariants.AndLockCriteriaWithAutoNameAndMaxReputation,
-		app.GlobalVariants.AndLockCriteriaAndMaxReputation,
-		app.GlobalVariants.WithAutoNameAndMaxReputation,
-		app.GlobalVariants.AndLockCriteriaWithAutoName,
-		app.GlobalVariants.AndLockCriteria,
-		app.GlobalVariants.WithAutoName,
-		app.GlobalVariants.AndMaxReputation,
-	}
+	variants = questVariants
 },
 "AsBonusReputation", {
 	RootConstructor = "CreateHQTBonusRep",
