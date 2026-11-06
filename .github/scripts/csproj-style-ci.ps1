@@ -97,6 +97,29 @@ function Compare-Outputs([string] $Before, [string] $After) {
     if (@($rows | Where-Object { !$_.match }).Count -ne 0) { throw 'Build output inventory or file bytes differ; see output-byte-comparison.json.' }
     return @($rows).Count
 }
+function Get-RewrittenFixture([string] $Path) {
+    # SavedVariables.Write emits a culture-formatted UTC timestamp on line two.
+    $raw = [IO.File]::ReadAllBytes($Path)
+    $encoding = [Text.UTF8Encoding]::new($false, $true)
+    $text = $encoding.GetString($raw)
+    $prefix = "-- Compressed & Optimized by the ATT Sync Tool`r`n-- "
+    if (!$text.StartsWith($prefix, [StringComparison]::Ordinal)) { throw "Unexpected rewritten fixture header: $Path" }
+    $end = $text.IndexOf("`r`n", $prefix.Length, [StringComparison]::Ordinal)
+    if ($end -lt 0) { throw "Missing rewritten fixture timestamp line ending: $Path" }
+    $timestamp = $text.Substring($prefix.Length, $end - $prefix.Length)
+    # The Windows fixture's .NET Framework writer emits this en-US format.
+    $culture = [Globalization.CultureInfo]::GetCultureInfo('en-US')
+    $format = 'dddd, MMMM d, yyyy h:mm:ss tt'
+    $parsed = [DateTime]::MinValue
+    if (![DateTime]::TryParseExact($timestamp, $format, $culture, [Globalization.DateTimeStyles]::None, [ref] $parsed) -or
+        $parsed.ToString($format, $culture) -cne $timestamp) { throw "Invalid rewritten fixture timestamp: $Path" }
+    $normalized = $text.Remove($prefix.Length, $end - $prefix.Length).Insert($prefix.Length, '<validated timestamp>')
+    return [pscustomobject]@{
+        rawSha256 = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($raw))
+        normalizedSha256 = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($encoding.GetBytes($normalized)))
+        ignoredTimestamp = $timestamp
+    }
+}
 function Compare-FixtureOutputs {
     $paths = @()
     foreach ($prefix in @('runtime', 'runtime/shared')) {
@@ -111,9 +134,15 @@ function Compare-FixtureOutputs {
         $a = Join-Path (Join-Path $pairEvidence 'baseline') $relative
         $b = Join-Path (Join-Path $pairEvidence 'candidate') $relative
         if (!(Test-Path -LiteralPath $a -PathType Leaf) -or !(Test-Path -LiteralPath $b -PathType Leaf)) { throw "Fixture output missing: $relative" }
-        $ha = (Get-FileHash -LiteralPath $a -Algorithm SHA256).Hash
-        $hb = (Get-FileHash -LiteralPath $b -Algorithm SHA256).Hash
-        [pscustomobject]@{ path=$relative; beforeSha256=$ha; afterSha256=$hb; match=($ha -ceq $hb) }
+        if ($relative -in @('runtime/database-rewritten.lua.txt', 'runtime/shared/database-rewritten.lua.txt')) {
+            $old = Get-RewrittenFixture $a
+            $new = Get-RewrittenFixture $b
+            [pscustomobject]@{ path=$relative; beforeSha256=$old.rawSha256; afterSha256=$new.rawSha256; beforeTimestamp=$old.ignoredTimestamp; afterTimestamp=$new.ignoredTimestamp; beforeNormalizedSha256=$old.normalizedSha256; afterNormalizedSha256=$new.normalizedSha256; match=($old.normalizedSha256 -ceq $new.normalizedSha256) }
+        } else {
+            $ha = (Get-FileHash -LiteralPath $a -Algorithm SHA256).Hash
+            $hb = (Get-FileHash -LiteralPath $b -Algorithm SHA256).Hash
+            [pscustomobject]@{ path=$relative; beforeSha256=$ha; afterSha256=$hb; match=($ha -ceq $hb) }
+        }
     }
     foreach ($prefix in @('runtime','runtime/shared')) {
         $values = foreach ($label in @('baseline','candidate')) {
