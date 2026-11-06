@@ -9,19 +9,15 @@
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <OutputPath>bin\$(Platform)\Retail\</OutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)' == 'Classic Era' Or '$(Configuration)' == 'Classic TBC' Or '$(Configuration)' == 'Classic Wrath'">
     <Optimize>true</Optimize>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)' == 'Release' Or '$(Configuration)' == 'Classic Era' Or '$(Configuration)' == 'Classic TBC' Or '$(Configuration)' == 'Classic Wrath'">
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />

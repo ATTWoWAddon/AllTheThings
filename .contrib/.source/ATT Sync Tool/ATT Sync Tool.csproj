@@ -12,15 +12,12 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>base_72x72_Q9mPGQ.ico</ApplicationIcon>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <OutputPath>..\..\.tools\</OutputPath>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)' == 'Classic Era' Or '$(Configuration)' == 'Classic TBC' Or '$(Configuration)' == 'Classic Wrath'">
     <Optimize>true</Optimize>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
