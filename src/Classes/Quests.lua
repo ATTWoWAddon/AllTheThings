@@ -1236,7 +1236,7 @@ local criteriaFuncs = {
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
 	text_questID = function(questID)
 		-- sometimes we can get nice names from non-server quests... so use their actual implementation
-		local questObject = app.SearchForObject("questID", questID, "field")
+		local questObject = Search("questID", questID, "field")
 		local questName
 		if questObject then questName = app.TryColorizeName(questObject) end
 		return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
@@ -1285,7 +1285,7 @@ local criteriaFuncs = {
 	end,
 	label_sourceID = L.LOCK_CRITERIA_SOURCE_LABEL or "Known Appearance",
 	text_sourceID = function(sourceID)
-		local group = app.SearchForObject("sourceID", sourceID, "field") or app.CreateItemSource(sourceID)
+		local group = Search("sourceID", sourceID, "field") or app.CreateItemSource(sourceID)
 		return group.link or group.text or RETRIEVING_DATA;
 	end,
 
@@ -1294,7 +1294,7 @@ local criteriaFuncs = {
 	end,
 	label_toyID = L.LOCK_CRITERIA_TOY_LABEL or "Known Toy",
 	text_toyID = function(toyID)
-		local group = app.SearchForObject("toyID", toyID, "field") or app.CreateToy(toyID)
+		local group = Search("toyID", toyID, "field") or app.CreateToy(toyID)
 		return group.link or group.text or RETRIEVING_DATA;
 	end,
 
@@ -1303,7 +1303,7 @@ local criteriaFuncs = {
 	end,
 	label_decorID = L.LOCK_CRITERIA_DECOR_LABEL or "Known Decor",
 	text_decorID = function(decorID)
-		local group = app.SearchForObject("decorID", decorID, "field") or app.CreateDecor(decorID)
+		local group = Search("decorID", decorID, "field") or app.CreateDecor(decorID)
 		return group.link or group.text or RETRIEVING_DATA;
 	end,
 };
@@ -1325,7 +1325,7 @@ local AWQuestLockers = setmetatable({
 	end,
 	-- spellID is always account-wide when it's a mount, so any mount lock will lock account-wide
 	spellID = function(spellID)
-		local o = app.SearchForObject("mountID", spellID)
+		local o = Search("mountID", spellID)
 		return o and true or nil
 	end,
 	questID = function(id)
@@ -1551,7 +1551,7 @@ local QuestWithReputationCostCollectibles = setmetatable({}, {
 			-- TODO: adjust when givesReputation exists
 			local maxReputation = quest.maxReputation
 			if maxReputation then
-				local faction = app.SearchForObject("factionID", maxReputation[1], "key") or app.CreateFaction(maxReputation[1])
+				local faction = Search("factionID", maxReputation[1], "key") or app.CreateFaction(maxReputation[1])
 				-- only case to treat as 'possible' cost collectible is when character does NOT exceed the maxReputation
 				if not faction:CompareReputation(maxReputation[2]) then
 					-- app.PrintDebug("QuestWithReputation.costCollectibles",app:SearchLink(quest),"=>",app:SearchLink(faction))
@@ -1744,7 +1744,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		if IsRetrieving(parentName) then return end
 
 		local factionID = t.maxReputation[1]
-		local faction = app.SearchForObject("factionID", factionID, "key") or app.CreateFaction(factionID)
+		local faction = Search("factionID", factionID, "key") or app.CreateFaction(factionID)
 		-- "Bonus Reputation: Faction [SourceName]"
 		local name = QuestBonusReputationFormat:format(faction.name, parentName)
 		t.name = name
@@ -2089,7 +2089,7 @@ app.AddEventHandler("OnLoad", function()
 					for i=1,#nextQuests do
 						nextQuestID = nextQuests[i]
 						if nextQuestID > 0 then
-							nq = app.SearchForObject("questID", nextQuestID, "field");
+							nq = Search("questID", nextQuestID, "field");
 							-- existing quest group
 							if nq then
 								nextq[#nextq + 1] = nq
