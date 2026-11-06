@@ -1,0 +1,121 @@
+return {
+    ["context"] = "retail",
+    ["milestones"] = {},
+    ["policies"] = {},
+    ["groups"] = {
+        {
+            ["instanceID"] = 228,
+            ["groups"] = {
+                {
+                    ["encounterID"] = 369,
+                    ["creatureID"] = 9018,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 11140
+                        }
+                    }
+                },
+                {
+                    ["encounterID"] = 378,
+                    ["creatureID"] = 9033,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 11464
+                        }
+                    }
+                },
+                {
+                    ["encounterID"] = 387,
+                    ["creatureID"] = 9019,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 11934
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["instanceID"] = 230,
+            ["groups"] = {
+                {
+                    ["npcID"] = 16097,
+                    ["provider"] = { "i", 22057 },
+                    ["sourceQuest"] = 8996,
+                    ["timeline"] = { "removed 4.0.3.13287" },
+                    ["u_sqs"] = true,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 22315
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["instanceID"] = 742,
+            ["provider"] = { "o", 179879 },
+            ["timeline"] = { "added 1.6.0.4500" },
+            ["groups"] = {
+                {
+                    ["encounterID"] = 1536,
+                    ["crs"] = { 11583, 10162 },
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 19003,
+                            ["races"] = { 1, 3, 4, 7, 11, 22, 25, 29, 30, 32, 34, 37, 52, 85, 86 }
+                        },
+                        {
+                            ["itemID"] = 19364
+                        }
+                    }
+                },
+                {
+                    ["headerID"] = -56,
+                    ["groups"] = {
+                        {
+                            ["objectID"] = 180667,
+                            ["timeline"] = { "added 1.9.0.4937", "removed 4.0.3.13287" },
+                            ["groups"] = {
+                                {
+                                    ["itemID"] = 21109
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["instanceID"] = 744,
+            ["groups"] = {
+                {
+                    ["encounterID"] = 1551,
+                    ["creatureID"] = 15727,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 21221
+                        },
+                        {
+                            ["itemID"] = 21126
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["instanceID"] = 231,
+            ["groups"] = {
+                {
+                    ["encounterID"] = 418,
+                    ["creatureID"] = 6229,
+                    ["groups"] = {
+                        {
+                            ["itemID"] = 9449
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
