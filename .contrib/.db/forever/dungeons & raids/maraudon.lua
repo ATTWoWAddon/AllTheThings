@@ -57,10 +57,10 @@ instanceroot(232, {	-- Maraudon
 				lvl = 41,
 				groups = {
 					objective(1, {	-- 0/1 Celebrian Diamond
-						provider = { "i", 17703 },	-- Celebrian Diamond
+						provider = { "i", 17703 },	-- Celebrian Diamond (QI!)
 					}),
 					objective(2, {	-- 0/1 Celebrian Rod
-						provider = { "i", 17702 },	-- Celebrian Rod
+						provider = { "i", 17702 },	-- Celebrian Rod (QI!)
 					}),
 				},
 			}),
@@ -68,7 +68,7 @@ instanceroot(232, {	-- Maraudon
 				description = "This quest becomes available after you defeat Princess Theradras.",
 				providers = {
 					{ "n", 12238 },	-- Zaetar's Spirit
-					{ "i", 17760 },	-- Seed of Life
+					{ "i", 17760 },	-- Seed of Life (QI!)
 				},
 				maps = { MAP.MOONGLADE },
 				lvl = 39,
@@ -85,7 +85,7 @@ instanceroot(232, {	-- Maraudon
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/10 Shadowshard Fragment
-						provider = { "i", 17756 },	-- Shadowshard Fragment
+						provider = { "i", 17756 },	-- Shadowshard Fragment (QI!)
 						crs = {
 							11777,	-- Shadowshard Rumbler
 							11778,	-- Shadowshard Smasher
@@ -104,17 +104,17 @@ instanceroot(232, {	-- Maraudon
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/1 Amulet of Union
-						provider = { "i", 17758 },	-- Amulet of Union
+						provider = { "i", 17758 },	-- Amulet of Union (QI!)
 						cost = {
-							{ "i", 17757, 1 },	-- Amulet of Spirits
+							{ "i", 17757, 1 },	-- Amulet of Spirits (QI!)
 							{ "i", 17761, 1 },	-- Gem of the First Khan
-							{ "i", 17762, 1 },	-- Gem of the Second Kahn
-							{ "i", 17763, 1 },	-- Gem of the Third Kahn
-							{ "i", 17764, 1 },	-- Gem of the Fourth Kahn
-							{ "i", 17765, 1 },	-- Gem of the Fifth Kahn
+							{ "i", 17762, 1 },	-- Gem of the Second Khan
+							{ "i", 17763, 1 },	-- Gem of the Third Khan
+							{ "i", 17764, 1 },	-- Gem of the Fourth Khan
+							{ "i", 17765, 1 },	-- Gem of the Fifth Khan
 						},
 					}),
-					i(17757, {	-- Amulet of Spirits
+					i(17757, {	-- Amulet of Spirits (QI!)
 						coord = { 28.1, 62.4, MAP.DESOLACE },
 						cr = 13718,	-- The Nameless Prophet
 					}),
@@ -126,7 +126,7 @@ instanceroot(232, {	-- Maraudon
 							13742,	-- Kolk <The First Kahn>
 						},
 					}),
-					i(17762, {	-- Gem of the Second Kahn
+					i(17762, {	-- Gem of the Second Khan
 						description = "Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 						coord = { 29.4, 56.9, MAP.DESOLACE },
 						crs = {
@@ -134,7 +134,7 @@ instanceroot(232, {	-- Maraudon
 							13741,	-- Gelk <The Second Kahn>
 						},
 					}),
-					i(17763, {	-- Gem of the Third Kahn
+					i(17763, {	-- Gem of the Third Khan
 						description = "Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 						coord = { 35.8, 60.4, MAP.DESOLACE },
 						crs = {
@@ -142,14 +142,14 @@ instanceroot(232, {	-- Maraudon
 							13740,	-- Magra <The Third Kahn>
 						},
 					}),
-					i(17764, {	-- Gem of the Fourth Kahn
+					i(17764, {	-- Gem of the Fourth Khan
 						description = "Maraudos is located inside the purple path of Maraudon, wandering not too far away from the entrance.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 						crs = {
 							12242,	-- Spirit of Maraudos <The Fourth Kahn>
 							13739,	-- Maraudos <The Fourth Kahn>
 						},
 					}),
-					i(17765, {	-- Gem of the Fifth Kahn
+					i(17765, {	-- Gem of the Fifth Khan
 						description = "Veng is located inside the orange path of Maraudon, wandering by the end of the path.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 						crs = {
 							12243,	-- Spirit of Veng <The Fifth Kahn>
@@ -175,7 +175,7 @@ instanceroot(232, {	-- Maraudon
 				lvl = 41,
 				groups = {
 					objective(1, {	-- 0/15 Theradric Crystal Carving
-						provider = { "i", 17684 },	-- Theradric Crystal Carving
+						provider = { "i", 17684 },	-- Theradric Crystal Carving (QI!)
 					}),
 					i(17776),	-- Sprightring Helm
 					i(17779),	-- Hulkstone Pauldrons
@@ -196,13 +196,13 @@ instanceroot(232, {	-- Maraudon
 				groups = {
 					objective(1, {	-- 0/8 Vylestem Vines healed
 						provider = { "n", 13696 },	-- Noxxious Scion
-						cost = { { "i", 17696, 1 } },	-- Filled Cerulean Vial
+						cost = { { "i", 17696, 1 } },	-- Filled Cerulean Vial (QI!)
 						description = "Use the Filled Cerulean Vial on the vines and then kill the Scions that are spawned.",
 					}),
-					i(17696, {	-- Filled Cerulean Vial
+					i(17696, {	-- Filled Cerulean Vial (QI!)
 						description = "Stand in the Orange Pool of water just outside the Orange Path of Maraudon and use this item to create the filled vial.",
 						coord = { 38.0, 58.0, MAP.DESOLACE },
-						cost = { { "i", 17693, 1 } },	-- Coated Cerulean Vial
+						cost = { { "i", 17693, 1 } },	-- Coated Cerulean Vial (QI!)
 					}),
 					i(17770),	-- Branchclaw Gauntlets
 					i(17778),	-- Sagebrush Girdle
@@ -211,13 +211,13 @@ instanceroot(232, {	-- Maraudon
 			},
 		}),
 		n(ZONE_DROPS, {
-			i(17684),	-- Theradric Crystal Carving
+			i(17684),	-- Theradric Crystal Carving (QI!)
 		}),
 		n(FOULSPORE_CAVERN, {
 			e(423, {	-- Noxxion
 				creatureID = 13282,
 				groups = {
-					i(17702),	-- Celebrian Rod
+					i(17702),	-- Celebrian Rod (QI!)
 					i(17745),	-- Noxious Shooter
 					i(17746),	-- Noxxion's Shackles
 					i(17744),	-- Heart of Noxxion
@@ -237,7 +237,7 @@ instanceroot(232, {	-- Maraudon
 			e(427, {	-- Lord Vyletongue
 				creatureID = 12236,
 				groups = {
-					i(17703),	-- Celebrian Diamond
+					i(17703),	-- Celebrian Diamond (QI!)
 					i(17752),	-- Satyr's Lash
 					i(17755),	-- Satyrmane Sash
 					i(17754),	-- Infernal Trickster Leggings
@@ -255,7 +255,7 @@ instanceroot(232, {	-- Maraudon
 		}),
 		n(MARAUDON_PORTAL, {
 			sourceQuest = 7046,	-- The Scepter of Celebras
-			cost = {{"i", 17191, 1}},	-- Scepter of Celebras
+			cost = { { "i", 17191, 1 } },	-- Scepter of Celebras
 			groups = {
 				e(428, {	-- Celebras the Cursed
 					creatureID = 12225,

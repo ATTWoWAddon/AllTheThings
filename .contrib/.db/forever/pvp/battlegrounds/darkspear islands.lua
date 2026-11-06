@@ -3,9 +3,9 @@
 -----------------------------------------------
 
 battleground(MAP.DARKSPEAR_ISLANDS, {
+	icon = 441150,
 	--lore = "",
 	timeline = { TIMELINE.ADDED_1_60_1 },
-	icon = 441150,
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(62049, {	-- Master of Darkspear Islands
@@ -35,7 +35,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			q(98888, {	-- Conflict at Darkspear Islands [Level 30]
 				qg = 15350,	-- Horde Warbringer
 				coords = HORDE_WARBRINGER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -63,7 +63,7 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 			q(98895, {	-- Darkspear Islands Clash [Level 30]
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 274895, 3 } },	-- Darkspear Islands Mark of Honor
+				cost = { { "i", 274895, 3 } },	-- 3x Darkspear Islands Mark of Honor
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
 			}),
@@ -96,28 +96,28 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 				lvl = { 60, 69 },
 			}),
 			q(98912, {	-- Darkspear's Advanced Care Package [Level 50]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 50, 60 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285173),	-- Darkspear Advanced Care Package
 				},
 			}),
 			q(98910, {	-- Darkspear's Basic Care Package [Level 30]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 30, 39 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285171),	-- Darkspear Basic Care Package
 				},
 			}),
 			q(98911, {	-- Darkspear's Standard Care Package [Level 40]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = { 40, 49 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285172),	-- Darkspear Standard Care Package
 				},
@@ -159,28 +159,28 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 				lvl = { 50, 60 },
 			}),
 			q(98915, {	-- Theramore Advanced Care Package [Level 50]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 50, 60 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285170),	-- Theramore Advanced Care Package
 				},
 			}),
 			q(98913, {	-- Theramore Basic Care Package [Level 30]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 30, 39 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285168),	-- Theramore Basic Care Package
 				},
 			}),
 			q(98914, {	-- Theramore Standard Care Package [Level 40]
-				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = { 40, 49 },
+				-- TODO: Wowhead doesn't list the quest giver or objectives yet.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
 					i(285169),	-- Theramore Standard Care Package
 				},
@@ -312,9 +312,9 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 					i(271932),	-- Insurgent's Manifesto
 					i(271933),	-- Insurgent's Manifesto
 					i(271934),	-- Insurgent's Manifesto
-					i(271936),	-- Guerilla's Jagged Mace
-					i(271937),	-- Guerilla's Jagged Mace
-					i(271938),	-- Guerilla's Jagged Mace
+					i(271936),	-- Guerrilla's Jagged Mace
+					i(271937),	-- Guerrilla's Jagged Mace
+					i(271938),	-- Guerrilla's Jagged Mace
 					i(271940),	-- Theramore Gauntlets
 					i(271941),	-- Theramore Gauntlets
 					i(271945),	-- Theramore Handwraps

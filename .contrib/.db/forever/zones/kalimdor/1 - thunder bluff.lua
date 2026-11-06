@@ -33,34 +33,34 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 		n(QUESTS, {
 			q(6361, {	-- A Bundle of Hides
 				qg = 3483,	-- Jahan Hawkwing <Leather & Mail Armor Merchant>
-				qi = 16282,	-- Bundle of Hides
 				coord = { 51.2, 29.0, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16282,	-- Bundle of Hides (QI!)
 			}),
 			q(7822, {	-- A Donation of Mageweave
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 4338, 60 } },	-- 60x Mageweave Cloth
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
 			q(7823, {	-- A Donation of Runecloth
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 14047, 60 } },	-- 60x Runecloth
 				races = HORDE_ONLY,
 				lvl = 50,
 			}),
 			q(7821, {	-- A Donation of Silk
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 4306, 60 } },	-- 60x Silk Cloth
 				races = HORDE_ONLY,
 				lvl = 26,
 			}),
 			q(7820, {	-- A Donation of Wool
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 2592, 60 } },	-- 60x Wool Cloth
 				races = HORDE_ONLY,
@@ -68,41 +68,41 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(7825, {	-- Additional Runecloth [Thunder Bluff]
 				sourceQuest = 7823,	-- A Donation of Runecloth
-				qg = 14728,	-- Rumstag Proudstrider
+				qg = 14728,	-- Rumstag Proudstrider <Horde Cloth Quartermaster>
 				coord = { 43.2, 42.8, MAP.THUNDER_BLUFF },
 				maxReputation = { FACTION_THUNDER_BLUFF, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(936, {	-- Assisting Arch Druid Runetotem [Orgrimmar]
-				qg = 6929,	-- Innkeeper Gryshka
+				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(3762, {	-- Assisting Arch Druid Runetotem [Thunder Bluff]
-				qg = 6746,	-- Innkeeper Pala
+				qg = 6746,	-- Innkeeper Pala <Innkeeper>
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(3784, {	-- Assisting Arch Druid Runetotem [Undercity]
-				qg = 6741,	-- Innkeeper Norman
+				qg = 6741,	-- Innkeeper Norman <Innkeeper>
 				coord = { 67.6, 38.2, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 47,
+				isBreadcrumb = true,
 			}),
 			q(1845, {	-- Brutal Helm
 				sourceQuest = 1844,	-- Chimaeric Horn
 				qg = 6410,	-- Orm Stonehoof
 				coord = { 39.0, 55.8, MAP.THUNDER_BLUFF },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					i(7130),	-- Brutal Helm
@@ -113,12 +113,12 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				qg = 6410,	-- Orm Stonehoof
 				coord = { 39.0, 55.8, MAP.THUNDER_BLUFF },
 				maps = { MAP.STONETALON_MOUNTAINS },
-				classes = { WARRIOR },
 				races = HORDE_ONLY,
+				classes = { WARRIOR },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Galvanized Horn
-						provider = { "i", 6840 },	-- Galvanized Horn
+						provider = { "i", 6840 },	-- Galvanized Horn (QI!)
 						cr = 6167,	-- Chimaera Matriarch
 					}),
 				},
@@ -131,7 +131,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Deadmire's Tooth
-						provider = { "i", 5945 },	-- Deadmire's Tooth
+						provider = { "i", 5945 },	-- Deadmire's Tooth (QI!)
 						coord = { 47.6, 56.6, MAP.DUSTWALLOW_MARSH },
 						cr = 4841,	-- Deadmire
 					}),
@@ -139,7 +139,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(1064, {	-- Forsaken Aid
 				sourceQuest = 1063,	-- The Elder Crone
-				qg = 4046,	-- Magatha Grimtotem
+				qg = 4046,	-- Magatha Grimtotem <Elder Crone>
 				coord = { 69.85, 30.91, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 13,
@@ -147,22 +147,22 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(1136, {	-- Frostmaw
 				sourceQuest = 1131,	-- Steelsnap
 				qg = 3441,	-- Melor Stonehoof
-				qi = 5838,	-- Kodo Skin Scroll
 				coord = { 61.52, 80.88, MAP.THUNDER_BLUFF },
 				maps = { MAP.ALTERAC_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 26,
+				qi = 5838,	-- Kodo Skin Scroll (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Frostmaw's Mane
 						providers = {
-							{ "i", 5811 },	-- Frostmaw's Mane
+							{ "i", 5811 },	-- Frostmaw's Mane (QI!)
 							{ "o", 1770 },	-- Flame of Uzel
-							{ "i", 5810 },	-- Fresh Carcass
+							{ "i", 5810 },	-- Fresh Carcass (QI!)
 						},
 						coord = { 37.0, 68.0, MAP.ALTERAC_MOUNTAINS },
 						cr = 4504,	-- Frostmaw
 					}),
-					i(5810, {	-- Fresh Carcass
+					i(5810, {	-- Fresh Carcass (QI!)
 						crs = {
 							2385,	-- Feral Mountain Lion
 							2407,	-- Hulking Mountain Lion
@@ -205,16 +205,16 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				qg = 3387,	-- Jorn Skyseer
 				coord = { 44.8, 59.0, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 20,
+				isBreadcrumb = true,
 			}),
 			q(3782, {	-- Morrowgrain Research (1/2)
 				sourceQuest = 3761,	-- Un'Goro Soil
 				qg = 5769,	-- Arch Druid Hamuul Runetotem
-				qi = 11103,	-- Seed Voucher
 				coord = { 78.4, 28.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 47,
+				qi = 11103,	-- Seed Voucher (QI!)
 			}),
 			q(3786, {	-- Morrowgrain Research (2/2)
 				sourceQuest = 3782,	-- Morrowgrain Research (1/2)
@@ -233,30 +233,30 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 70.8, 33.8, MAP.THUNDER_BLUFF },
 				cost = { { "i", 11040, 10 } },	-- 10x Morrowgrain
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 47,
+				repeatable = true,
 				groups = {
 					i(11887),	-- Cenarion Circle Cache
 				},
 			}),
 			q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
 				sourceQuest = 6363,	-- Tal the Wind Rider Master
-				qg = 2995,	-- Tal
-				qi = 16283,	-- Ahanu's Leather Goods
+				qg = 2995,	-- Tal <Wind Rider Master>
 				coord = { 46.8, 50.0, MAP.THUNDER_BLUFF },
 				maps = {
 					MAP.THE_BARRENS,
 				},
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16283,	-- Ahanu's Leather Goods (QI!)
 			}),
 			q(6362, {	-- Ride to Thunder Bluff
 				sourceQuest = 6361,	-- A Bundle of Hides
-				qg = 3615,	-- Devrak
-				qi = 16282,	-- Bundle of Hides
+				qg = 3615,	-- Devrak <Wind Rider Master>
 				coord = { 51.50, 30.34, MAP.THE_BARRENS },
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16282,	-- Bundle of Hides (QI!)
 			}),
 			q(1131, {	-- Steelsnap
 				sourceQuest = 1130,	-- Melor Sends Word
@@ -267,7 +267,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Steelsnap's Rib
-						provider = { "i", 5837 },	-- Steelsnap's Rib
+						provider = { "i", 5837 },	-- Steelsnap's Rib (QI!)
 						coord = { 13.6, 28.0, MAP.THOUSAND_NEEDLES },
 						cr = 4548,	-- Steelsnap
 					}),
@@ -275,25 +275,25 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(6363, {	-- Tal the Wind Rider Master
 				sourceQuest = 6362,	-- Ride to Thunder Bluff
-				qg = 8359,	-- Ahanu
-				qi = 16283,	-- Ahanu's Leather Goods
+				qg = 8359,	-- Ahanu <Leather Armor Merchant>
 				coord = { 45.74, 55.86, MAP.THUNDER_BLUFF },
 				maps = {
 					MAP.THE_BARRENS,
 				},
 				races = { TAUREN },
 				lvl = 10,
+				qi = 16283,	-- Ahanu's Leather Goods (QI!)
 			}),
 			q(1086, {	-- The Flying Machine Airport
 				sourceQuest = 1067,	-- Return to Thunder Bluff
-				qg = 3419,	-- Apothecary Zamah
+				qg = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
 				coord = { 22.85, 20.90, MAP.THUNDER_BLUFF },
 				maps = { MAP.STONETALON_MOUNTAINS },
 				races = HORDE_ONLY,
 				lvl = 13,
 				groups = {
 					objective(1, {	-- Place the Toxic Fogger
-						provider = { "i", 5638 },	-- Toxic Fogger
+						provider = { "i", 5638 },	-- Toxic Fogger (QI!)
 						coord = { 66.0, 45.0, MAP.STONETALON_MOUNTAINS },
 					}),
 				},
@@ -306,11 +306,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Filled Etched Phial
-						provider = { "i", 5868 },	-- Filled Etched Phial
+						provider = { "i", 5868 },	-- Filled Etched Phial (QI!)
 						coord = { 60.0, 72.0, MAP.ASHENVALE },
-						cost = { { "i", 5867, 1 } },	-- 1x Etched Phial
+						cost = { { "i", 5867, 1 } },	-- 1x Etched Phial (QI!)
 					}),
-					i(5867, {	-- Etched Phial
+					i(5867, {	-- Etched Phial (QI!)
 						cr = 4054,	-- Laughing Sister
 					}),
 				},
@@ -318,24 +318,24 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			q(1196, {	-- The Sacred Flame (2/3)
 				sourceQuest = 1195,	-- The Sacred Flame (1/3)
 				qg = 4721,	-- Zangen Stonehoof
-				qi = 5868,	-- Filled Etched Phial
 				coord = { 54.97, 51.32, MAP.THUNDER_BLUFF },
 				maps = { MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 20,
+				qi = 5868,	-- Filled Etched Phial (QI!)
 			}),
 			q(1197, {	-- The Sacred Flame (3/3)
 				sourceQuest = 1196,	-- The Sacred Flame (2/3)
 				qg = 4722,	-- Rau Cliffrunner
-				qi = 5868,	-- Filled Etched Phial
 				coord = { 46.13, 51.69, MAP.THOUSAND_NEEDLES },
-				cost = { { "i", 5869, 1 } },	-- 1x Cloven Hoof
+				cost = { { "i", 5869, 1 } },	-- 1x Cloven Hoof (QI!)
 				races = HORDE_ONLY,
 				lvl = 20,
+				qi = 5868,	-- Filled Etched Phial (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Cloven Hoof
 						providers = {
-							{ "i", 5869 },	-- Cloven Hoof
+							{ "i", 5869 },	-- Cloven Hoof (QI!)
 							{ "o", 20807 },	-- Ancient Brazier
 						},
 						coord = { 42.0, 35.0, MAP.THOUSAND_NEEDLES },
@@ -345,15 +345,15 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				},
 			}),
 			q(97485, {	-- Traditions of the Bluff
+				description = "While on this quest, buy a Bundle of Herbs from Nida Winterhoof, a Bundle of Dried Cedar Twigs from Nata Dawnstrider, Sinew Thread from Mahu and Ceremonial Flint and Tinder from Naal Mistrunner (1 copper each). Combine them into Prepared Incense, then spread it at the ceremonial site on the south-facing cliff of Hunter Rise.",
 				qg = 269068,	-- Eylah Sunhorn <Sun Priest of An'she>
 				coord = { 38.2, 56.2, MAP.THUNDER_BLUFF },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
-				description = "While on this quest, buy a Bundle of Herbs from Nida Winterhoof, a Bundle of Dried Cedar Twigs from Nata Dawnstrider, Sinew Thread from Mahu and Ceremonial Flint and Tinder from Naal Mistrunner (1 copper each). Combine them into Prepared Incense, then spread it at the ceremonial site on the south-facing cliff of Hunter Rise.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/1 Prepared Incense
-						provider = { "i", 278078 },	-- Prepared Incense
+						provider = { "i", 278078 },	-- Prepared Incense (QI!)
 						cost = {
 							{ "i", 278079, 1 },	-- Bundle of Herbs
 							{ "i", 278080, 1 },	-- Bundle of Dried Cedar Twigs
@@ -383,18 +383,18 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			q(264, {	-- Until Death Do Us Part
 				qg = 5543,	-- Clarice Foster
-				qi = 6145,	-- Clarice's Pendant
 				coord = { 28.19, 25.31, MAP.THUNDER_BLUFF },
 				maps = { MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 12,
+				qi = 6145,	-- Clarice's Pendant (QI!)
 			}),
 		}),
 		n(VENDORS, {
 			n(8359, {	-- Ahanu <Leather Armor Merchant>
 				coord = { 45.6, 55.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					236,	-- Cured Leather Armor
 					1849,	-- Cured Leather Belt
 					238,	-- Cured Leather Boots
@@ -412,7 +412,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 				coord = { 53.8, 57.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
 					2523,	-- Bullova
@@ -435,7 +435,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8360, {	-- Elki <Mail Armor Merchant>
 				coord = { 45.2, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					17187,	-- Banded Buckler
 					847,	-- Chainmail Armor
 					1845,	-- Chainmail Belt
@@ -457,7 +457,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3020, {	-- Etu Ragetotem <Mace & Staff Merchant>
 				coord = { 58.2, 52.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -484,7 +484,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3093, {	-- Grod <Leather Armor Merchant>
 				coord = { 42.4, 43.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2371,	-- Battered Leather Belt
 					2373,	-- Battered Leather Boots
 					2374,	-- Battered Leather Bracers
@@ -521,7 +521,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8358, {	-- Hewa <Cloth Armor Merchant>
 				coord = { 45.6, 56.7, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					16059,	-- Common Brown Shirt
 					3428,	-- Common Grey Shirt
 					16060,	-- Common White Shirt
@@ -542,7 +542,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 				coord = { 55.6, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					3024,	-- Bkp 2700 Enforcer
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
@@ -555,7 +555,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 				coord = { 41.6, 62.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2025,	-- Bearded Axe
 					1194,	-- Bastard Sword
 					2479,	-- Broad Axe
@@ -592,10 +592,10 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					2493,	-- Wooden Mallet
 				}},
 			}),
-			n(3021, {	-- Kard Ragetotem <Sword & Dagger Merchant>
+			n(3021, {	-- Kard Ragetotem <Sword and Dagger Merchant>
 				coord = { 53.6, 56.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2520,	-- Broadsword
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -626,7 +626,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 				coord = { 46.8, 45.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
 				}},
@@ -646,15 +646,15 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			n(3002, {	-- Kurm Stonehoof <Mining Supplies>
+			n(3002, {	-- Kurm Stonehoof <Mining Supplier>
 				coord = { 34.35, 56.58, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
+				sym = { { "sub", "common_vendor", 4599 } },	-- Sarah Killan <Mining Supplies>
 			}),
-			n(8362, {	-- Kuruk <General Goods>
+			n(8362, {	-- Kuruk <General Goods Vendor>
 				coord = { 39.0, 64.4, MAP.THUNDER_BLUFF },	-- Wayfarer's Rest
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
+				sym = { { "select", "itemID",
 					4498,	-- Brown Leather Satchel
 					4497,	-- Heavy Brown Bag
 					4499,	-- Huge Brown Sack
@@ -689,7 +689,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(10325, {	-- Pattern: White Wedding Dress (RECIPE!)
 						isLimited = true,
 					}),
-					i(278081, {	-- Sinew Thread
+					i(278081, {	-- Sinew Thread (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281043, {	-- Sinew Thread
@@ -697,11 +697,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			n(3027, {	-- Naal Mistrunner <Cooking Supplies>
+			n(3027, {	-- Naal Mistrunner <Cooking Supplier>
 				coord = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
-					i(278083, {	-- Ceremonial Flint and Tinder
+					i(278083, {	-- Ceremonial Flint and Tinder (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281044, {	-- Ceremonial Flint and Tinder
@@ -728,7 +728,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 				coord = { 44.9, 37.7, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
+				sym = { { "select", "itemID",
 					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
 					20752,	-- Formula: Minor Mana Oil (RECIPE!)
 					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
@@ -736,7 +736,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
 				}},
 				groups = {
-					i(278080, {	-- Bundle of Dried Cedar Twigs
+					i(278080, {	-- Bundle of Dried Cedar Twigs (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281042, {	-- Bundle of Dried Cedar Twigs
@@ -753,7 +753,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3014, {	-- Nida Winterhoof <Herbalism Supplier>
 				coord = { 49.2, 39.6, MAP.THUNDER_BLUFF },
 				groups = {
-					i(278079, {	-- Bundle of Herbs
+					i(278079, {	-- Bundle of Herbs (QI!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(281041, {	-- Bundle of Herbs
@@ -764,7 +764,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 				coord = { 53.6, 56.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2523,	-- Bullova
 					2531,	-- Great Axe
 					2521,	-- Flamberge
@@ -784,7 +784,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(4496),	-- Small Brown Pouch
 				},
 			}),
-			n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
+			n(3029, {	-- Sewa Mistrunner <Fishing Supplier>
 				coord = { 55.8, 47.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				groups = {
@@ -792,14 +792,14 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 				},
 			}),
-			n(8363, {	-- Shadi Mistrunner <Trade Supplies>
+			n(8363, {	-- Shadi Mistrunner <Trade Goods Supplier>
 				coord = { 40.6, 64.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 			}),
 			n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 				coord = { 49.6, 49.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2527,	-- Battle Staff
 					2535,	-- War Staff
 				}},
@@ -807,7 +807,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3023, {	-- Sura Wildmane <War Harness Vendor>
 				coord = { 51.8, 54.6, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					6526,	-- Battle Harness
 					6523,	-- Buckled Harness
 					6525,	-- Grunt's Harness
@@ -817,7 +817,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3092, {	-- Tagain <Cloth Armor Merchant>
 				coord = { 43.4, 43.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2617,	-- Burning Robes
 					2615,	-- Chromatic Robe
 					2613,	-- Double Stitched Robes
@@ -870,7 +870,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3016, {	-- Tand <Basket Weaver>
 				coord = { 49.1, 34.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
+				sym = { { "select", "itemID",
 					4498,	-- Brown Leather Satchel
 					4497,	-- Heavy Brown Bag
 					4496,	-- Small Brown Pouch
@@ -882,7 +882,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			n(5189, {	-- Thrumn <Tabard Vendor>
 				coord = { 38.0, 63.0, MAP.THUNDER_BLUFF },
-				sym = { {"sub", "common_vendor", 5188} },	-- Garyl <Tabard Vendor>
+				sym = { { "sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 				races = HORDE_ONLY,
 			}),
 		}),

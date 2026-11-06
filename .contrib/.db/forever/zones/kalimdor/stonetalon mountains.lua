@@ -101,7 +101,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 15,
 				groups = {
 					objective(1, {	-- 0/1 Besseleth's Fang
-						provider = { "i", 16192 },	-- Besseleth's Fang
+						provider = { "i", 16192 },	-- Besseleth's Fang (QI!)
 						coord = { 52.8, 72.6, MAP.STONETALON_MOUNTAINS },
 						cr = 11921,	-- Besseleth
 					}),
@@ -145,7 +145,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Bloodfury Ripper's Remains
-						provider = { "i", 16190 },	-- Bloodfury Ripper's Remains
+						provider = { "i", 16190 },	-- Bloodfury Ripper's Remains (QI!)
 						coord = { 31.8, 62.6, MAP.STONETALON_MOUNTAINS },
 						cr = 12579,	-- Bloodfury Ripper
 					}),
@@ -159,12 +159,12 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(86576, {	-- Bloodfury Trinkets
 				qg = 11860,	-- Maggran Earthbinder
 				coord = { 47.2, 61.0, MAP.STONETALON_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 18,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/15 Glittering Sunstone
-						provider = { "i", 277936 },	-- Glittering Sunstone
+						provider = { "i", 277936 },	-- Glittering Sunstone (QI!)
 						crs = {
 							4022,	-- Bloodfury Harpy
 							4023,	-- Bloodfury Roguefeather
@@ -182,7 +182,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Resonite Crystal
 						providers = {
-							{ "i",  16581 },	-- Resonite Crystal
+							{ "i", 16581 },	-- Resonite Crystal (QI!)
 							{ "o", 178104 },	-- Resonite Crystal
 						},
 						coord = { 60.0, 90.1, MAP.STONETALON_MOUNTAINS },
@@ -191,11 +191,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			}),
 			q(5881, {	-- Calling in the Reserves
 				qg = 11860,	-- Maggran Earthbinder
-				qi = 16189,	-- Maggran's Reserve Letter
 				coord = { 47.17, 61.08, MAP.STONETALON_MOUNTAINS },
 				maps = { MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 23,
+				qi = 16189,	-- Maggran's Reserve Letter (QI!)
 			}),
 			q(1087, {	-- Cenarius' Legacy
 				qg = 4198,	-- Braelyn Firehand
@@ -220,14 +220,14 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1077,	-- Special Delivery for Gaxim
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5738,	-- Covert Ops Pack
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5738,	-- Covert Ops Pack (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Venture Co. Engineering Plans
 						providers = {
-							{ "i", 5718 },	-- Venture Co. Engineering Plans
+							{ "i", 5718 },	-- Venture Co. Engineering Plans (QI!)
 							{ "o", 19602 },	-- Venture Co. Engineering Plans
 						},
 						coord = { 66.1, 51.3, MAP.STONETALON_MOUNTAINS },
@@ -240,14 +240,14 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1077,	-- Special Delivery for Gaxim
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5738,	-- Covert Ops Pack
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5738,	-- Covert Ops Pack (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Venture Co. Letters
 						providers = {
-							{ "i", 5717 },	-- Venture Co. Letters
+							{ "i", 5717 },	-- Venture Co. Letters (QI!)
 							{ "o", 19603 },	-- Venture Co. Documents
 						},
 						coord = { 74.4, 59.2, MAP.STONETALON_MOUNTAINS },
@@ -262,7 +262,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Gaea Seed
 						providers = {
-							{ "i",  16205 },	-- Gaea Seed
+							{ "i", 16205 },	-- Gaea Seed (QI!)
 							{ "o", 177926 },	-- Gaea Seed
 						},
 						coord = { 48.0, 39.8, MAP.STONETALON_MOUNTAINS },
@@ -278,9 +278,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 Goggeroc slain
 						providers = {
-							{ "n",  11920 },	-- Goggeroc
+							{ "n", 11920 },	-- Goggeroc
 							{ "o", 178145 },	-- Resonite Cask
-							{ "i",  16603 },	-- Enchanted Resonite Crystal
+							{ "i", 16603 },	-- Enchanted Resonite Crystal (QI!)
 						},
 						coord = { 57.4, 89.4, MAP.STONETALON_MOUNTAINS },
 					}),
@@ -298,7 +298,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 19,
 				groups = {
 					objective(1, {	-- 0/10 Incendrites
-						provider = { "i", 16312 },	-- Incendrites
+						provider = { "i", 16312 },	-- Incendrites (QI!)
 						crs = {
 							4038,	-- Burning Destroyer
 							4037,	-- Burning Ravager
@@ -315,7 +315,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/8 Smoldering Embers
-						provider = { "i", 5659 },	-- Smoldering Embers
+						provider = { "i", 5659 },	-- Smoldering Embers (QI!)
 						crs = {
 							4038,	-- Burning Destroyer
 							4037,	-- Burning Ravager
@@ -327,13 +327,13 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1094, {	-- Further Instructions (1/2)
 				sourceQuest = 1093,	-- Super Reaper 6000
 				qg = 4201,	-- Ziz Fizziks
-				qi = 5735,	-- Sealed Envelope
 				coord = { 59.00, 62.53, MAP.STONETALON_MOUNTAINS },
 				lvl = 16,
+				qi = 5735,	-- Sealed Envelope (QI!)
 			}),
 			q(1095, {	-- Further Instructions (2/2)
 				sourceQuest = 1094,	-- Further Instructions (1/2)
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				coord = { 62.97, 37.19, MAP.THE_BARRENS },
 				lvl = 16,
 			}),
@@ -344,7 +344,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Gerenzo's Mechanical Arm
-						provider = { "i", 5736 },	-- Gerenzo's Mechanical Arm
+						provider = { "i", 5736 },	-- Gerenzo's Mechanical Arm (QI!)
 						coord = { 63.6, 39.6, MAP.STONETALON_MOUNTAINS },
 						cr = 4202,	-- Gerenzo Wrenchwhistle
 					}),
@@ -353,16 +353,16 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 			}),
 			q(1090, {	-- Gerenzo's Orders (1/2)
-				qg = 4276,	-- Piznik
+				qg = 4276,	-- Piznik <Venture Co.>
 				coord = { 71.80, 60.05, MAP.STONETALON_MOUNTAINS },
 				lvl = 17,
 			}),
 			q(1092, {	-- Gerenzo's Orders (2/2)
 				sourceQuest = 1090,	-- Gerenzo's Orders (1/2)
-				qg = 4276,	-- Piznik
-				qi = 5733,	-- Unidentified Ore
+				qg = 4276,	-- Piznik <Venture Co.>
 				coord = { 71.80, 60.05, MAP.STONETALON_MOUNTAINS },
 				lvl = 17,
+				qi = 5733,	-- Unidentified Ore (QI!)
 				groups = {
 					i(6666),	-- Dredge Boots
 				},
@@ -406,22 +406,22 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/5 Stonetalon Sap
-						provider = { "i", 5582 },	-- Stonetalon Sap
+						provider = { "i", 5582 },	-- Stonetalon Sap (QI!)
 						cr = 4020,	-- Sap Beast
 					}),
 					objective(2, {	-- 0/5 Twilight Whisker
-						provider = { "i", 5584 },	-- Twilight Whisker
+						provider = { "i", 5584 },	-- Twilight Whisker (QI!)
 						cr = 4067,	-- Twilight Runner
 					}),
 					objective(3, {	-- 0/30 Courser Eye
-						provider = { "i", 5585 },	-- Courser Eye
+						provider = { "i", 5585 },	-- Courser Eye (QI!)
 						crs = {
 							4018,	-- Antlered Courser
 							4019,	-- Great Courser
 						},
 					}),
 					objective(4, {	-- 0/1 Fey Dragon Scale
-						provider = { "i", 5583 },	-- Fey Dragon Scale
+						provider = { "i", 5583 },	-- Fey Dragon Scale (QI!)
 						crs = {
 							4016,	-- Fey Dragon
 							4066,	-- Nal'taszar
@@ -438,10 +438,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					1080,	-- Covert Ops - Beta
 				},
 				qg = 4077,	-- Gaxim Rustfizzle
-				qi = 5717,	-- Venture Co. Letters
 				coord = { 59.6, 67.0, MAP.STONETALON_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5717,	-- Venture Co. Letters (QI!)
 			}),
 			q(6401, {	-- Kaya's Alive
 				sourceQuest = 6523,	-- Protect Kaya
@@ -453,11 +453,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1511, {	-- Ken'zigla's Draught
 				sourceQuest = 1510,	-- News of Dogran (2/2)
 				qg = 4197,	-- Ken'zigla
-				qi = 6624,	-- Ken'zigla's Draught
 				coord = { 73.2, 95.0, MAP.STONETALON_MOUNTAINS },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
+				qi = 6624,	-- Ken'zigla's Draught (QI!)
 			}),
 			q(6629, {	-- Kill Grundig Darkcloud
 				sourceQuest = 6548,	-- Avenge My Village
@@ -484,7 +484,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/10 Gaea seed planted
 						providers = {
-							{ "i",  16208 },	-- Enchanted Gaea Seeds
+							{ "i", 16208 },	-- Enchanted Gaea Seeds (QI!)
 							{ "o", 177929 },	-- Gaea Dirt Mound
 						},
 						coord = { 31.0, 61.0, MAP.STONETALON_MOUNTAINS },
@@ -497,8 +497,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				qg = 4079,	-- Sentinel Thenysil
 				coord = { 34.9, 49.8, MAP.ASHENVALE },
 				races = ALLIANCE_ONLY,
-				isBreadcrumb = true,
 				lvl = 17,
+				isBreadcrumb = true,
 			}),
 			q(1085, {	-- On Guard in Stonetalon (2/2)
 				sourceQuest = 1070,	-- On Guard in Stonetalon (1/2)
@@ -516,7 +516,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Ordanus' Head
-						provider = { "i", 5686 },	-- Ordanus' Head
+						provider = { "i", 5686 },	-- Ordanus' Head (QI!)
 						coord = { 62.0, 51.2, MAP.ASHENVALE },
 						cr = 4273,	-- Keeper Ordanus
 					}),
@@ -598,7 +598,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 17,
 				groups = {
 					objective(1, {	-- 0/8 Crystalized Scales
-						provider = { "i", 5675 },	-- Crystalized Scales
+						provider = { "i", 5675 },	-- Crystalized Scales (QI!)
 						crs = {
 							4044,	-- Blackened Basilisk
 							4147,	-- Saltstone Basilisk
@@ -644,10 +644,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			q(1077, {	-- Special Delivery for Gaxim
 				sourceQuest = 1076,	-- Devils in Westfall
 				qg = 4078,	-- Collin Mauren
-				qi = 5731,	-- Scroll of Messaging
 				coord = { 53.0, 86.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 17,
+				qi = 5731,	-- Scroll of Messaging (QI!)
 			}),
 			q(86574, {	-- Stonetalon Supply Run
 				qg = 268925,	-- Night Elf Courier
@@ -670,7 +670,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 16,
 				groups = {
 					objective(1, {	-- 0/1 Super Reaper 6000 Blueprints
-						provider = { "i", 5734 },	-- Super Reaper 6000 Blueprints
+						provider = { "i", 5734 },	-- Super Reaper 6000 Blueprints (QI!)
 						cr = 3988,	-- Venture Co. Operator
 					}),
 				},
@@ -679,7 +679,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				sourceQuest = 1088,	-- Ordanus
 				providers = {
 					{ "n", 4198 },	-- Braelyn Firehand
-					{ "i", 5687 },	-- Gatekeeper's Key
+					{ "i", 5687 },	-- Gatekeeper's Key (QI!)
 					{ "o", 19599 },	-- Talon Den Hoard
 				},
 				coord = { 45.91, 60.35, MAP.STONETALON_MOUNTAINS },
@@ -688,31 +688,31 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/1 Sleepers' Key
 						providers = {
-							{ "i", 5689 },	-- Sleepers' Key
+							{ "i", 5689 },	-- Sleepers' Key (QI!)
 							{ "o", 19596 },	-- Sleepers' Cache
-							{ "i", 5687 },	-- Gatekeeper's Key
+							{ "i", 5687 },	-- Gatekeeper's Key (QI!)
 						},
 						coord = { 25.6, 11.4, MAP.STONETALON_MOUNTAINS },
 					}),
 					objective(2, {	-- 0/1 Claw Key
 						providers = {
-							{ "i", 5690 },	-- Claw Key
+							{ "i", 5690 },	-- Claw Key (QI!)
 							{ "o", 19597 },	-- Druids' Cache
-							{ "i", 5687 },	-- Gatekeeper's Key
+							{ "i", 5687 },	-- Gatekeeper's Key (QI!)
 						},
 						coord = { 29.5, 15.8, MAP.STONETALON_MOUNTAINS },
 					}),
 					objective(3, {	-- 0/1 Barrow Key
 						providers = {
-							{ "i", 5691 },	-- Barrow Key
+							{ "i", 5691 },	-- Barrow Key (QI!)
 							{ "o", 19598 },	-- Barrow Cache
-							{ "i", 5687 },	-- Gatekeeper's Key
+							{ "i", 5687 },	-- Gatekeeper's Key (QI!)
 						},
 						coord = { 27.9, 13.8, MAP.STONETALON_MOUNTAINS },
 					}),
 					o(19595, {	-- Gatekeeper's Hold
 						coord = { 30.0, 15.5, MAP.STONETALON_MOUNTAINS },
-						groups = { i(5687) },	-- Gatekeeper's Key
+						groups = { i(5687) },	-- Gatekeeper's Key (QI!)
 					}),
 					i(6671),	-- Juggernaut Leggings
 					i(6670),	-- Panther Armor
@@ -727,12 +727,12 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 13,
 			}),
 			q(1061, {	-- The Spirits of Stonetalon
-				qg = 4047,	-- Zor Lonetree
+				qg = 4047,	-- Zor Lonetree <Elder Far Seer>
 				coord = { 39.03, 38.04, MAP.ORGRIMMAR },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 13,
+				isBreadcrumb = true,
 			}),
 			q(1082, {	-- Update for Sentinel Thenysil
 				sourceQuests = {
@@ -765,7 +765,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 22,
 				groups = {
 					objective(1, {	-- 0/1 Corroded Shrapnel
-						provider = { "i", 5664 },	-- Corroded Shrapnel
+						provider = { "i", 5664 },	-- Corroded Shrapnel (QI!)
 						crs = {
 							4029,	-- Blackened Ancient
 							4028,	-- Charred Ancient
@@ -775,10 +775,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 			}),
 			q(1483, {	-- Ziz Fizziks
-				qg = 3442,	-- Sputtervalve
+				qg = 3442,	-- Sputtervalve <Tinkers' Union>
 				coord = { 62.98, 37.21, MAP.THE_BARRENS },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 		}),
 		n(RARES, {
@@ -877,8 +877,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 		}),
 		n(TREASURES, {
 			o(674126, {	-- Hidden Stash
-				coord = { 40.7, 52.7, MAP.STONETALON_MOUNTAINS },
 				description = "Inside the tent, in a box at the back.",
+				coord = { 40.7, 52.7, MAP.STONETALON_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(221324),	-- Brittle Key
@@ -964,12 +964,12 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					4030,	-- Vengeful Ancient
 				},
 			}),
-			i(6840, {	-- Galvanized Horn
+			i(6840, {	-- Galvanized Horn (QI!)
 				cr = 6167,	-- Chimaera Matriarch
 			}),
 			i(249880, {	-- Recipe: Royal Tea (RECIPE!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 4003,	-- Windshear Geomancer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

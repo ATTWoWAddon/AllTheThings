@@ -97,8 +97,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.STRATHOLME,
 					MAP.SCHOLOMANCE,
 				},
-				isYearly = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 				lvl = 50,
+				isYearly = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
 				groups = {
 					objective(1),	-- Flame of Dire Maul
 					objective(2),	-- Flame of Blackrock Spire
@@ -118,8 +118,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.STRATHOLME,
 					MAP.SCHOLOMANCE,
 				},
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					objective(1),	-- Flame of Dire Maul
 					objective(2),	-- Flame of Blackrock Spire
@@ -137,8 +137,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				qg = FESTIVAL_LOREMASTER_ID,
 				coords = FESTIVAL_LOREMASTER_COORDS,
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					i(23323),	-- Crown of the Fire Festival
 				},
@@ -152,42 +152,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				qg = FESTIVAL_TALESPINNER_ID,
 				coords = FESTIVAL_TALESPINNER_COORDS,
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 50,
+				isYearly = true,
 				groups = {
 					i(23323),	-- Crown of the Fire Festival
-				},
-			}),
-			q(9389, {	-- Flickering Flames in Eastern Kingdoms
-				icon = 134467,
-				qgs = {
-					FESTIVAL_LOREMASTER_ID,
-					FESTIVAL_TALESPINNER_ID,
-				},
-				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
-				maps = {
-					MAP.HILLSBRAD_FOOTHILLS,
-					MAP.SILVERPINE_FOREST,
-					MAP.WESTFALL,
-					MAP.WETLANDS,
-				},
-				groups = {
-					objective(1, {	-- Flame of Hillsbrad
-						coord = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
-					}),
-					objective(2, {	-- Flame of Silverpine
-						coord = { 54.3, 69.6, MAP.SILVERPINE_FOREST },
-					}),
-					objective(3, {	-- Flame of Westfall
-						coord = { 33.2, 80.4, MAP.WESTFALL },
-					}),
-					objective(4, {	-- Flame of the Wetlands
-						coord = { 51.1, 17.2, MAP.WETLANDS },
-					}),
-					i(23211),	-- Toasted Smorc
-					i(23326),	-- Midsummer Sausage
-					i(23327),	-- Fire-toasted Bun
-					i(23435),	-- Elderberry Pie
 				},
 			}),
 			q(9388, {	-- Flickering Flames in Kalimdor
@@ -196,7 +164,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					FESTIVAL_LOREMASTER_ID,
 					FESTIVAL_TALESPINNER_ID,
 				},
-				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, { })),
 				maps = {
 					MAP.ASHENVALE,
 					MAP.THE_BARRENS,
@@ -222,6 +190,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					i(23435),	-- Elderberry Pie
 				},
 			}),
+			q(9389, {	-- Flickering Flames in the Eastern Kingdoms
+				icon = 134467,
+				qgs = {
+					FESTIVAL_LOREMASTER_ID,
+					FESTIVAL_TALESPINNER_ID,
+				},
+				coords = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, { })),
+				maps = {
+					MAP.HILLSBRAD_FOOTHILLS,
+					MAP.SILVERPINE_FOREST,
+					MAP.WESTFALL,
+					MAP.WETLANDS,
+				},
+				groups = {
+					objective(1, {	-- Flame of Hillsbrad
+						coord = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+					objective(2, {	-- Flame of Silverpine
+						coord = { 54.3, 69.6, MAP.SILVERPINE_FOREST },
+					}),
+					objective(3, {	-- Flame of Westfall
+						coord = { 33.2, 80.4, MAP.WESTFALL },
+					}),
+					objective(4, {	-- Flame of the Wetlands
+						coord = { 51.1, 17.2, MAP.WETLANDS },
+					}),
+					i(23211),	-- Toasted Smorc
+					i(23326),	-- Midsummer Sausage
+					i(23327),	-- Fire-toasted Bun
+					i(23435),	-- Elderberry Pie
+				},
+			}),
 			q(9332, {	-- Stealing Darnassus's Flame
 				providers = {
 					{ "o", 181334 },	-- Flame of Darnassus
@@ -230,8 +230,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				coord = { 56.6, 92.3, MAP.TELDRASSIL },
 				maps = { MAP.DARNASSUS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9331, {	-- Stealing Ironforge's Flame
@@ -241,8 +241,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 64.6, 24.8, MAP.IRONFORGE },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9324, {	-- Stealing Orgrimmar's Flame
@@ -252,8 +252,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 46.9, 38.7, MAP.ORGRIMMAR },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9330, {	-- Stealing Stormwind's Flame
@@ -263,8 +263,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 38.9, 62.3, MAP.STORMWIND_CITY },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9326, {	-- Stealing the Undercity's Flame
@@ -274,8 +274,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 62.6, 66.9, MAP.UNDERCITY },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9325, {	-- Stealing Thunder Bluff's Flame
@@ -285,8 +285,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 				coord = { 21.1, 25.6, MAP.THUNDER_BLUFF },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = FLAME_STEAL_LEVEL_REQUIREMENT,
+				isYearly = true,
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9367, {	-- The Festival of Fire (A)

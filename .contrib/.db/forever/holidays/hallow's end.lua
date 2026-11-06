@@ -33,8 +33,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 50.0, 57.2, MAP.HILLSBRAD_FOOTHILLS },
 				maps = { MAP.SILVERPINE_FOREST, MAP.TIRISFAL_GLADES },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Scout out the Forsaken's Wickerman Festival.
 						provider = { "o", 181672 },	-- Wickerman Effigy
@@ -48,8 +48,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 56.6, 51.8, MAP.STORMWIND_CITY },
 				maxReputation = { 469, EXALTED },	-- Alliance, Exalted.
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = {
 					q(8356, {	-- Flexing for Nougat (Alliance)
 						qg = 6740,	-- Innkeeper Allison <Innkeeper>
@@ -59,7 +59,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(1, {	-- 0/1 Stormwind Nougat
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20492 },	-- Stormwind Nougat
+								provider = { "i", 20492 },	-- Stormwind Nougat (QI!)
 							}),
 						},
 					}),
@@ -71,7 +71,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(2, {	-- 0/1 Gnomeregan Gumdrop
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20494 },	-- Gnomeregan Gumdrop
+								provider = { "i", 20494 },	-- Gnomeregan Gumdrop (QI!)
 							}),
 						},
 					}),
@@ -83,7 +83,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(3, {	-- 0/1 Ironforge Mint
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20490 },	-- Ironforge Mint
+								provider = { "i", 20490 },	-- Ironforge Mint (QI!)
 							}),
 						},
 					}),
@@ -95,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(4, {	-- 0/1 Darnassus Marzipan
 								questID = 8311,	-- Hallow's End Treats for Jesper!
-								provider = { "i", 20496 },	-- Darnassus Marzipan
+								provider = { "i", 20496 },	-- Darnassus Marzipan (QI!)
 							}),
 						},
 					}),
@@ -107,8 +107,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 71.2, 22.8, MAP.ORGRIMMAR },
 				maxReputation = { 67, EXALTED },	-- Horde, Exalted.
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 10,
+				isYearly = true,
 				groups = {
 					q(8359, {	-- Flexing for Nougat (Horde)
 						qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
@@ -118,7 +118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(1, {	-- 0/1 Orgrimmar Nougat
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20493 },	-- Orgrimmar Nougat
+								provider = { "i", 20493 },	-- Orgrimmar Nougat (QI!)
 							}),
 						},
 					}),
@@ -130,7 +130,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(2, {	-- 0/1 Darkspear Gumdrop
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20495 },	-- Darkspear Gumdrop
+								provider = { "i", 20495 },	-- Darkspear Gumdrop (QI!)
 							}),
 						},
 					}),
@@ -142,7 +142,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(3, {	-- 0/1 Undercity Mint
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20491 },	-- Undercity Mint
+								provider = { "i", 20491 },	-- Undercity Mint (QI!)
 							}),
 						},
 					}),
@@ -154,7 +154,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 						groups = {
 							objective(4, {	-- 0/1 Thunder Bluff Marzipan
 								questID = 8312,	-- Hallow's End Treats for Spoops!
-								provider = { "i", 20497 },	-- Thunder Bluff Marzipan
+								provider = { "i", 20497 },	-- Thunder Bluff Marzipan (QI!)
 							}),
 						},
 					}),
@@ -167,18 +167,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 					{ 55.6, 69.9, MAP.TIRISFAL_GLADES },
 					{ 51.4, 59.0, MAP.HILLSBRAD_FOOTHILLS },
 				},
-				cost = { { "i", 20605, 1 } },	-- Rotten Eggs
+				cost = { { "i", 20605, 1 } },	-- 1x Rotten Eggs (QI!)
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 			}),
 			q(8409, {	-- Ruined Kegs
 				sourceQuest = 8322,	-- Rotten Eggs
 				provider = { "o", 180570 },	-- Keg
 				coord = { 51.4, 59.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 30,
+				isYearly = true,
 				groups = {
 					i(20557),	-- Hallow's End Pumpkin Treat
 				},
@@ -188,11 +188,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				coord = { 55.6, 69.9, MAP.TIRISFAL_GLADES },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Toss Stink Bomb into Southshore
-						provider = { "i", 20387 },	-- Forsaken Stink Bomb Cluster
+						provider = { "i", 20387 },	-- Forsaken Stink Bomb Cluster (QI!)
 						coord = { 49.8, 57.9, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -202,11 +202,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 				qg = 15199,	-- Sergeant Hartman
 				coord = { 50.0, 57.2, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
-				isYearly = true,
 				lvl = 25,
+				isYearly = true,
 				groups = {
 					objective(1, {	-- Clean up a stink bomb that's been dropped on Southshore!
-						provider = { "i", 20604 },	-- Stink Bomb Cleaner
+						provider = { "i", 20604 },	-- Stink Bomb Cleaner (QI!)
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
 				},
@@ -233,22 +233,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 			i(20413),	-- Hallowed Wand - Random
 			i(20411),	-- Hallowed Wand - Skeleton
 			i(20414),	-- Hallowed Wand - Wisp
-			i(20562),	-- Dwarf Female Mask
-			i(20561),	-- Dwarf Male Mask
-			i(20392),	-- Gnome Female Mask
-			i(20391),	-- Gnome Male Mask
-			i(20565),	-- Human Female Mask
-			i(20566),	-- Human Male Mask
-			i(20563),	-- Night Elf Female Mask
-			i(20564),	-- Night Elf Male Mask
-			i(20569),	-- Orc Female Mask
-			i(20570),	-- Orc Male Mask
-			i(20571),	-- Tauren Female Mask
-			i(20572),	-- Tauren Male Mask
-			i(20567),	-- Troll Female Mask
-			i(20568),	-- Troll Male Mask
-			i(20574),	-- Undead Female Mask
-			i(20573),	-- Undead Male Mask
+			i(20562),	-- Flimsy Female Dwarf Mask
+			i(20561),	-- Flimsy Male Dwarf Mask
+			i(20392),	-- Flimsy Female Gnome Mask
+			i(20391),	-- Flimsy Male Gnome Mask
+			i(20565),	-- Flimsy Female Human Mask
+			i(20566),	-- Flimsy Male Human Mask
+			i(20563),	-- Flimsy Female Night Elf Mask
+			i(20564),	-- Flimsy Male Night Elf Mask
+			i(20569),	-- Flimsy Female Orc Mask
+			i(20570),	-- Flimsy Male Orc Mask
+			i(20571),	-- Flimsy Female Tauren Mask
+			i(20572),	-- Flimsy Male Tauren Mask
+			i(20567),	-- Flimsy Female Troll Mask
+			i(20568),	-- Flimsy Male Troll Mask
+			i(20574),	-- Flimsy Female Undead Mask
+			i(20573),	-- Flimsy Male Undead Mask
 		}),
 		n(TREASURES, {
 			o(180523, {	-- Apple Bob

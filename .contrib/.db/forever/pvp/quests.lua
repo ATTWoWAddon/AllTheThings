@@ -8,9 +8,9 @@ root(ROOTS.PVP, {
 			qg = 15351,	-- Alliance Brigadier General
 			coords = ALLIANCE_BRIGADIER_COORDS,
 			cost = {
-				{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
-				{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
-				{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				{ "i", 20560, 3 },	-- 3x Alterac Valley Mark of Honor
+				{ "i", 20559, 3 },	-- 3x Arathi Basin Mark of Honor
+				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = ALLIANCE_ONLY,
 			lvl = 51,
@@ -20,21 +20,21 @@ root(ROOTS.PVP, {
 			qg = 15351,	-- Alliance Brigadier General
 			coords = ALLIANCE_BRIGADIER_COORDS,
 			cost = {
-				{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
-				{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
-				{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				{ "i", 20560, 3 },	-- 3x Alterac Valley Mark of Honor
+				{ "i", 20559, 3 },	-- 3x Arathi Basin Mark of Honor
+				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = ALLIANCE_ONLY,
-			repeatable = true,
 			lvl = 51,
+			repeatable = true,
 		}),
 		q(8367, {	-- For Great Honor
 			qg = 15350,	-- Horde Warbringer
 			coords = HORDE_WARBRINGER_COORDS,
 			cost = {
-				{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
-				{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
-				{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				{ "i", 20560, 3 },	-- 3x Alterac Valley Mark of Honor
+				{ "i", 20559, 3 },	-- 3x Arathi Basin Mark of Honor
+				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = HORDE_ONLY,
 			lvl = 51,
@@ -44,13 +44,13 @@ root(ROOTS.PVP, {
 			qg = 15350,	-- Horde Warbringer
 			coords = HORDE_WARBRINGER_COORDS,
 			cost = {
-				{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
-				{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
-				{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				{ "i", 20560, 3 },	-- 3x Alterac Valley Mark of Honor
+				{ "i", 20559, 3 },	-- 3x Arathi Basin Mark of Honor
+				{ "i", 20558, 3 },	-- 3x Warsong Gulch Mark of Honor
 			},
 			races = HORDE_ONLY,
-			repeatable = true,
 			lvl = 51,
+			repeatable = true,
 		}),
 	}),
 });

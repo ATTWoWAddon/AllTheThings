@@ -235,8 +235,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 74.4, 26.4, MAP.ORGRIMMAR },
 				cost = { { "i", 15997, 200 } },	-- 200x Thorium Shells
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 52,
+				repeatable = true,
 				groups = {
 					i(18042),	-- Thorium Headed Arrow
 				},
@@ -248,8 +248,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				maxReputation = { FACTION_DARKSPEAR_TROLLS, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(7837, {	-- Additional Runecloth [Orgrimmar]
 				sourceQuest = 7836,	-- A Donation of Runecloth
@@ -258,8 +258,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				maxReputation = { FACTION_ORGRIMMAR, EXALTED },
 				cost = { { "i", 14047, 20 } },	-- 20x Runecloth
 				races = HORDE_ONLY,
-				repeatable = true,
 				lvl = 50,
+				repeatable = true,
 			}),
 			q(2751, {	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
@@ -283,13 +283,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				qg = 5811,	-- Kamari <Journeyman Leatherworker>
 				coord = { 63.2, 44.4, MAP.ORGRIMMAR },
 				cost = { { "i", 4231, 2 } },	-- 2x Cured Light Hide
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
-				requireSkill = LEATHERWORKING,
 				lvl = 6,
+				requireSkill = LEATHERWORKING,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/5 Rough Lizard Hide
-						provider = { "i", 275720 },	-- Rough Lizard Hide
+						provider = { "i", 275720 },	-- Rough Lizard Hide (QI!)
 						crs = {
 							3131,	-- Lightning Hide
 							3130,	-- Thunder Lizard
@@ -306,8 +306,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 				qg = 5909,	-- Cazul
 				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
 			}),
 			q(4300, {	-- Bone-Bladed Weapons
@@ -318,7 +318,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 White Ravasaur Claw
-						provider = { "i", 11477 },	-- White Ravasaur Claw
+						provider = { "i", 11477 },	-- White Ravasaur Claw (QI!)
 						crs = {
 							9683,	-- Lar'korwi Mate
 							6505,	-- Ravasaur
@@ -335,13 +335,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2757, {	-- Booty Bay or Bust!
 				sourceQuest = 2756,	-- The Old Ways
-				qg = 7793,	-- Ox
-				qi = 8663,	-- Mithril Insignia
+				qg = 7793,	-- Ox <The Mithril Order>
 				coord = { 80.4, 23.2, MAP.ORGRIMMAR },
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
 				races = HORDE_ONLY,
 				lvl = 40,
+				qi = 8663,	-- Mithril Insignia (QI!)
 			}),
 			q(4511, {	-- Calm Before the Storm (2/2)
 				sourceQuest = 4509,	-- Calm Before the Storm (1/2)
@@ -367,7 +367,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Tablet of Verga
 						providers = {
-							{ "i", 6535 },	-- Tablet of Verga
+							{ "i", 6535 },	-- Tablet of Verga (QI!)
 							{ "o", 58595 },	-- Burning Blade Stash
 						},
 						coord = { 51.6, 9.7, MAP.DUROTAR },
@@ -376,30 +376,30 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2458, {	-- Deep Cover
 				sourceQuest = 2460,	-- The Shattered Salute
-				qg = 3401,	-- Shenthul
-				qi = 8051,	-- Flare Gun
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 20,
+				qi = 8051,	-- Flare Gun
 			}),
 			q(97249, {	-- Favorite Food
 				sourceQuest = 97246,	-- Meal Appeal
 				qg = 3368,	-- Borstan <Meat Vendor>
-				qi = 277284,	-- Migi's Lunch (PQI!)
 				coord = { 57.4, 53.4, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277284,	-- Migi's Lunch (PQI!)
 			}),
 			q(2378, {	-- Find the Shattered Hand
 				altQuests = { 2380 },	-- To Orgrimmar!
 				qg = 6467,	-- Mennet Carkad
 				coord = { 83.2, 69.0, MAP.UNDERCITY },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
+				classes = { ROGUE },
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(5652, {	-- Hex of Weakness [Orgrimmar]
 				altQuests = {
@@ -422,8 +422,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 					{ 49.01, 18.32, MAP.UNDERCITY },
 				},
-				classes = { PRIEST },
 				races = { TROLL },
+				classes = { PRIEST },
 				lvl = 10,
 				groups = {
 					{
@@ -440,7 +440,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Lieutenant's Insignia
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						provider = { "i", 14544 },	-- Lieutenant's Insignia (QI!)
 						crs = {
 							3198,	-- Burning Blade Apprentice
 							3197,	-- Burning Blade Fanatic
@@ -456,7 +456,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 9,
 				groups = {
 					objective(1, {	-- 0/1 Gauge Neeru Fireblade's reaction to you being a member of the Burning Blade
-						provider = { "i", 14544 },	-- Lieutenant's Insignia
+						provider = { "i", 14544 },	-- Lieutenant's Insignia (QI!)
 						coord = { 49.5, 50.6, MAP.ORGRIMMAR },
 						cr = 3216,	-- Neeru Fireblade
 					}),
@@ -464,12 +464,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2479, {	-- Hinott's Assistance (1/2)
 				sourceQuest = 2478,	-- Mission: Possible But Not Probable
-				qg = 3401,	-- Shenthul
-				qi = 8087,	-- Sample of Zanzil's Altered Mixture
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 20,
+				qi = 8087,	-- Sample of Zanzil's Altered Mixture (QI!)
 			}),
 			q(2754, {	-- Horns of Frenzy
 				description =
@@ -511,12 +511,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				qg = 5885,	-- Deino <Mage Trainer>
 				coord = { 38.6, 86.0, MAP.ORGRIMMAR },
 				maps = { MAP.ASHENVALE },
-				classes = { MAGE },
 				races = { UNDEAD, TROLL },
+				classes = { MAGE },
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/12 Laughing Sister's Hair
-						provider = { "i", 7270 },	-- Laughing Sister's Hair
+						provider = { "i", 7270 },	-- Laughing Sister's Hair (QI!)
 						cr = 4054,	-- Laughing Sister
 					}),
 				},
@@ -525,8 +525,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				sourceQuest = 1507,	-- Devourer of Souls [Orgrimmar]
 				qg = 5909,	-- Cazul
 				coord = { 47.2, 46.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 			}),
 			q(4494, {	-- March of the Silithid (H)
@@ -540,16 +540,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			q(97246, {	-- Meal Appeal
 				qg = 268701,	-- Thatog
 				coord = { 55.6, 72.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(1509, {	-- News of Dogran (1/2)
 				sourceQuest = 1508,	-- Blind Cazul
 				qg = 5910,	-- Zankaja
 				coord = { 37.0, 59.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = { ORC, UNDEAD },
+				classes = { WARLOCK },
 				lvl = 20,
 			}),
 			q(2752, {	-- On Iron Pauldrons
@@ -573,13 +573,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			q(97326, {	-- Rocks to Rests
 				qg = 268684,	-- Thra
 				coord = { 36.0, 28.2, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/8 Smooth Boulder
 						providers = {
-							{ "i", 277952 },	-- Smooth Boulder
+							{ "i", 277952 },	-- Smooth Boulder (QI!)
 							{ "o", 661446 },	-- Smooth Boulder
 							{ "o", 661448 },	-- Smooth Boulder
 							{ "o", 661449 },	-- Smooth Boulder
@@ -599,7 +599,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 				qgs = {
 					6018,	-- Ur'kyo <Priest Trainer>
-					4606,	-- Aelthalyste
+					4606,	-- Aelthalyste <Priest Trainer>
 					3044,	-- Miles Welsh <Priest Trainer>
 				},
 				coords = {
@@ -607,8 +607,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					{ 49.01, 18.32, MAP.UNDERCITY },
 					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
 				},
-				classes = { PRIEST },
 				races = { TROLL },
+				classes = { PRIEST },
 				lvl = 20,
 				groups = {
 					{
@@ -622,21 +622,21 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 85.0, 10.2, MAP.UNDERCITY },
 				races = { UNDEAD, TROLL },
 				classes = { MAGE },
-				isBreadcrumb = true,
 				lvl = 26,
+				isBreadcrumb = true,
 			}),
 			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
 				sourceQuest = 65610,	-- Wish You Were Here
 				altQuests = { 65597 },	-- The Binding (Incubus) [Undercity]
 				qg = 5875,	-- Gan'rul Bloodeye
 				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Incubus slain
 						provider = { "n", 185335 },	-- Summoned Incubus
-						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf
+						cost = { { "i", 190187, 1 } },	-- 1x Withered Scarf (QI!)
 					}),
 					recipe(713),	-- Summon Incubus
 					i(22243),	-- Small Soul Pouch
@@ -647,13 +647,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				altQuests = { 1474 },	-- The Binding (Succubus) [Undercity]
 				qg = 5875,	-- Gan'rul Bloodeye
 				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Summoned Succubus slain
 						provider = { "n", 5677 },	-- Summoned Succubus
-						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant
+						cost = { { "i", 6626, 1 } },	-- 1x Dogran's Pendant (QI!)
 					}),
 					recipe(712),	-- Summon Succubus
 					i(22243),	-- Small Soul Pouch
@@ -670,7 +670,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Summoned Voidwalker slain
 						provider = { "n", 5676 },	-- Summoned Voidwalker
-						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning
+						cost = { { "i", 7464, 1 } },	-- 1x Glyphs of Summoning (QI!)
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
@@ -700,7 +700,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Tazan's Satchel
-						provider = { "i", 7209 },	-- Tazan's Satchel
+						provider = { "i", 7209 },	-- Tazan's Satchel (QI!)
 						coord = { 63.8, 44.6, MAP.THE_BARRENS },
 						cr = 6494,	-- Tazan
 					}),
@@ -717,8 +717,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					objective(1, {	-- 0/1 Tazan's Logbook
 						providers = {
 							{ "i", 7295 },	-- Tazan's Logbook
-							{ "i", 7208 },	-- Tazan's Key
-							{ "i", 7209 },	-- Tazan's Satchel
+							{ "i", 7208 },	-- Tazan's Key (QI!)
+							{ "i", 7209 },	-- Tazan's Satchel (QI!)
 						},
 						coord = { 54.2, 68.2, MAP.ORGRIMMAR },
 						cr = 6466,	-- Gamon
@@ -728,29 +728,29 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(2460, {	-- The Shattered Salute
 				sourceQuest = 2380,	-- To Orgrimmar!
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 20,
 			}),
 			q(6611, {	-- To Gadgetzan You Go!
+				qg = 3399,	-- Zamja <Cooking Trainer>
 				coord = { 57.4, 53.6, MAP.ORGRIMMAR },
-				qg = 3399,	-- Zamja
 				requireSkill = COOKING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(2380, {	-- To Orgrimmar!
 				altQuests = { 2378 },	-- Find the Shattered Hand
-				qg = 3170,	-- Kaplak
+				qg = 3170,	-- Kaplak <Rogue Trainer>
 				coord = { 51.98, 43.70, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				classes = { ROGUE },
-				isBreadcrumb = true,
 				lvl = 16,
+				isBreadcrumb = true,
 			}),
 			q(2753, {	-- Trampled Under Foot
 				sourceQuest = 2752,	-- On Iron Pauldrons
@@ -782,8 +782,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					objective(1, {	-- 0/1 Xavian Water Sample
 						providers = {
-							{ "i", 7268 },	-- Xavian Water Sample
-							{ "i", 7269 },	-- Deino's Flask
+							{ "i", 7268 },	-- Xavian Water Sample (QI!)
+							{ "i", 7269 },	-- Deino's Flask (QI!)
 						},
 						coord = { 76.0, 41.0, MAP.ASHENVALE },
 					}),
@@ -791,11 +791,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(97275, {	-- Whuut's the Rush
 				qg = 3347,	-- Yelmak <Expert Alchemist>
-				qi = 277566,	-- Yelmak's Potion (PQI!)
 				coord = { 56.4, 33.2, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				qi = 277566,	-- Yelmak's Potion (PQI!)
 				groups = {
 					i(929),	-- Healing Potion
 					i(3385),	-- Lesser Mana Potion
@@ -804,15 +804,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			q(65610, {	-- Wish You Were Here
 				sourceQuest = 65601,	-- Love Hurts
 				altQuests = { 65593 },	-- Hearts of the Lovers
-				qg = 3363,	-- Magar <Tailoring Trainer>
+				qg = 3363,	-- Magar <Expert Tailor>
 				coord = { 63.6, 50.0, MAP.ORGRIMMAR },
 				maps = { MAP.ASHENVALE },
-				classes = { WARLOCK },
 				races = HORDE_ONLY,
+				classes = { WARLOCK },
 				lvl = 20,
 				groups = {
 					objective(1, {	-- 0/1 Withered Scarf
-						provider = { "i", 190232 },	-- Withered Scarf
+						provider = { "i", 190232 },	-- Withered Scarf (QI!)
 						crs = {
 							3782,	-- Shadethicket Stone Mover
 							3784,	-- Shadethicket Bark Ripper
@@ -823,51 +823,51 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			q(7660, {	-- Wolf Swapping - Arctic Wolf
 				description = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-				qg = 3362,	-- Ogunaro Wolfrunner
+				qg = 3362,	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
-				timeline = { REMOVED_1_4_0 },
 				cost = { { "i", 12351, 1 } },	-- 1x Arctic Wolf
 				races = HORDE_ONLY,
 				repeatable = true,
 				_drop = { "g" },
 				sym = { { "select", "itemID", 18796, 18798, 18797 } },
+				timeline = { REMOVED_1_4_0 },
 			}),
 			q(7661, {	-- Wolf Swapping - Red Wolf
 				description = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
-				qg = 3362,	-- Ogunaro Wolfrunner
+				qg = 3362,	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
-				timeline = { REMOVED_1_4_0 },
 				cost = { { "i", 12330, 1 } },	-- 1x Red Wolf (MOUNT!)
 				races = HORDE_ONLY,
 				repeatable = true,
 				_drop = { "g" },
 				sym = { { "select", "itemID", 18796, 18798, 18797 } },
+				timeline = { REMOVED_1_4_0 },
 			}),
 			q(2382, {	-- Wrenix of Ratchet
 				sourceQuest = 2379,	-- Zando'zan
 				qg = 3402,	-- Zando'zan
 				coord = { 42.8, 53.0, MAP.ORGRIMMAR },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 16,
 			}),
 			q(97242, {	-- Yelmak's Medley
 				sourceQuest = 97246,	-- Meal Appeal
 				qg = 3348,	-- Kor'geld <Alchemy Supplies>
 				coord = { 56.2, 34.2, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					objective(1, {	-- 0/2 Handful of Cattails
 						providers = {
-							{ "i", 277278 },	-- Handful of Cattails
+							{ "i", 277278 },	-- Handful of Cattails (QI!)
 							{ "o", 661093 },	-- Cattail
 						},
 					}),
 					objective(2, {	-- 0/4 Speargrass Cuttings
 						providers = {
-							{ "i", 277279 },	-- Speargrass Cuttings
+							{ "i", 277279 },	-- Speargrass Cuttings (QI!)
 							{ "o", 661092 },	-- Speargrass
 						},
 					}),
@@ -879,15 +879,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				requireSkill = FISHING,
 				learnedAt = 225,
 				races = HORDE_ONLY,
-				isBreadcrumb = true,
 				lvl = 35,
+				isBreadcrumb = true,
 			}),
 			q(2379, {	-- Zando'zan
 				sourceQuest = 2378,	-- Find the Shattered Hand
-				qg = 3401,	-- Shenthul
+				qg = 3401,	-- Shenthul <Rogue Trainer>
 				coord = { 43.0, 53.4, MAP.ORGRIMMAR },
-				classes = { ROGUE },
 				races = HORDE_ONLY,
+				classes = { ROGUE },
 				lvl = 16,
 			}),
 		}),
@@ -915,8 +915,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 		n(TREASURES, {
 			o(405149, {	-- Mural of Ta'zo
 				coord = { 38.7, 78.4, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(207972),	-- The Lessons of Ta'zo
 				},
@@ -929,7 +929,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					i(1179),	-- Ice Cold Milk
 					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
+					--i(1645),	-- Moonberry Juice
 					i(8766),	-- Morning Glory Dew
 					i(159),	-- Refreshing Spring Water
 					i(1708),	-- Sweet Nectar
@@ -978,7 +978,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3367, {	-- Felika <Trade Supplies>
+			n(3367, {	-- Felika <General Trade Goods Merchant>
 				description = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 				coords = {
 					{ 46.5, 36.6, MAP.ORGRIMMAR },
@@ -1002,7 +1002,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 47.6, 75.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {
-					{"select", "itemID",
+					{ "select", "itemID",
 					19031,	-- Frostwolf Battle Tabard
 					15197,	-- Scout's Tabard
 					15199,	-- Stone Guard's Herald
@@ -1013,12 +1013,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(5976),	-- Guild Tabard
 				},
 			}),
-			n(3358, {	-- Gorina <Mining Supplies>
+			n(3358, {	-- Gorina <Mining Supplier>
 				coord = { 73.2, 26.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{ "sub", "common_vendor", 4599 }},	-- Sarah Killan <Mining Supplies>
+				sym = { { "sub", "common_vendor", 4599 } },	-- Sarah Killan <Mining Supplies>
 			}),
-			n(3335, {	-- Hagrus <Reagents>
+			n(3335, {	-- Hagrus <Reagents Vendor>
 				coord = { 46.2, 46.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1033,7 +1033,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 				coord = { 62.8, 44.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2142,	-- Cuirboulli Belt
 					2143,	-- Cuirboulli Boots
 					2144,	-- Cuirboulli Bracers
@@ -1096,12 +1096,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3322, {	-- Kaja <Bow & Rifle Vendor>
+			n(3322, {	-- Kaja <Guns and Ammo Merchant>
 				coord = { 40.8, 49.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(3024),	-- Bkp 2700 Enforcer
-					i(3025),	-- Bkp 42 Ultra
+					i(3024),	-- BKP 2700 "Enforcer"
+					i(3025),	-- BKP 42 "Ultra"
 					i(3027),	-- Heavy Recurve Bow
 					i(2511),	-- Hunter's Boomstick
 					i(3023),	-- Large Bore Blunderbuss
@@ -1109,10 +1109,10 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(3026),	-- Reinforced Bow
 				},
 			}),
-			n(3331, {	-- Kareth
+			n(3331, {	-- Kareth <Blade Merchant>
 				coord = { 46.8, 63.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					2520,	-- Broadsword
 					1198,	-- Claymore
 					851,	-- Cutlass
@@ -1128,7 +1128,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2027,	-- Scimitar
 				}},
 			}),
-			n(5816, {	-- Katis
+			n(5816, {	-- Katis <Wand Merchant>
 				coord = { 45.8, 57.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1164,11 +1164,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				}),
 			}),
-			n(8122, {	-- Kizzak Sparks
-				coord = { 57.8, 56.6, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
+			n(8122, {	-- Kizzak Sparks <Holiday Fireworks Vendor>
 				description =
 					"This NPC is only available on July 4th (US) or September 30th (EU).",
+				coord = { 57.8, 56.6, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
 				groups = {
 					i(8626),	-- Blue Sparkler
 					i(8625),	-- White Sparkler
@@ -1187,10 +1187,10 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3360, {	-- Koru
+			n(3360, {	-- Koru <Mace & Staves Vendor>
 				coord = { 76.2, 37.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
 					928,	-- Long Staff
@@ -1675,7 +1675,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(845),	-- Tanned Leather Pants
 				},
 			}),
-			n(3330, {	-- Muragus
+			n(3330, {	-- Muragus <Staff Merchant>
 				coord = { 46.0, 57.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1709,7 +1709,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3317, {	-- Ollanus <Cloth Armor Merchant>
+			n(3317, {	-- Ollanus <Light Armor Merchant>
 				coord = { 60.6, 58.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1746,7 +1746,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(18248),	-- Red Skeletal Warhorse (MOUNT!)
 				}),
 			}),
-			n(3334, {	-- Rekkul
+			n(3334, {	-- Rekkul <Poison Vendor>
 				coord = { 44.0, 58.4, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 			}),
@@ -1854,7 +1854,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),
-			n(5817, {	-- Shimra <Trade Supplies>
+			n(5817, {	-- Shimra <General Trade Goods Merchant>
 				coord = { 47.8, 80.5, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 			}),
@@ -1862,25 +1862,25 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 76.0, 37.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
-					i(15905),	-- Brass Knuckles
 					i(2520),	-- Broadsword
 					i(1198),	-- Claymore
 					i(851),	-- Cutlass
 					i(922),	-- Dacian Falx
-					i(15904),	-- Deadly Fist Blades
 					i(2024),	-- Espadon
 					i(2528),	-- Falchion
 					i(2207),	-- Jambiya
 					i(2209),	-- Kris
-					i(15906),	-- Left-Handed Brass Knuckles
 					i(15909),	-- Left-Handed Blades
+					i(15906),	-- Left-Handed Brass Knuckles
 					i(15907),	-- Left-Handed Claw
 					i(923),	-- Longsword
 					i(2526),	-- Main Gauche
-					i(2208),	-- Poniad
+					i(2208),	-- Poniard
+					i(15904),	-- Right-Handed Blades
+					i(15905),	-- Right-Handed Brass Knuckles
+					i(15903),	-- Right-Handed Claw
 					i(2534),	-- Rondel
 					i(2027),	-- Scimitar
-					i(15903),	-- Slicing Claw
 				},
 			}),
 			n(3413, {	-- Sovik <Engineering Supplies>
@@ -1898,7 +1898,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3356, {	-- Sumi <Blacksmithing Supplies>
+			n(3356, {	-- Sumi <Blacksmithing Supplier>
 				coord = { 82.4, 23.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -1928,7 +1928,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(2145),	-- Cuirboulli Gloves
 					i(2146),	-- Cuirboulli Pants
 					i(2141),	-- Cuirboulli Vest
-					i(2613),	-- Double Stitched Robes
+					i(2613),	-- Double-Stitched Robes
 					i(2435),	-- Embroidered Armor
 					i(3587),	-- Embroidered Belt
 					i(2438),	-- Embroidered Boots
@@ -1953,7 +1953,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(2475),	-- Reinforced Leather Gloves
 					i(2472),	-- Reinforced Leather Pants
 					i(2470),	-- Reinforced Leather Vest
-					i(2614),	-- Robe Of Apprenticeship
+					i(2614),	-- Robe of Apprenticeship
 					i(3593),	-- Russet Belt
 					i(2432),	-- Russet Boots
 					i(3594),	-- Russet Bracers
@@ -2018,7 +2018,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3314, {	-- Urtharo <Weapon Merchant>
 				coord = { 47.4, 68.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					1198,	-- Claymore
 					851,	-- Cutlass
 					2207,	-- Jambiya
@@ -2032,7 +2032,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(1197),	-- Giant Mace
 					i(2134),	-- Hand Axe
 					i(2488),	-- Gladius
-					i(853),	-- Hatched
+					i(853),	-- Hatchet
 					i(2491),	-- Large Axe
 					i(2480),	-- Large Club
 					i(852),	-- Mace
@@ -2060,7 +2060,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
-			n(3400, {	-- Xen'to <Cooking Supplies>
+			n(3400, {	-- Xen'to <Cooking Supplier>
 				coord = { 57.6, 53.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -2068,7 +2068,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
-			n(3405, {	-- Zeal'aya <Herbalism Supplies>
+			n(3405, {	-- Zeal'aya <Herbalism Supplier>
 				coord = { 55.0, 39.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {
@@ -2078,7 +2078,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3409, {	-- Zendo'jian <Weapon Vendor>
 				coord = { 75.0, 36.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					853,	-- Hatchet
 					2507,	-- Laminated Recurve Bow
 					854,	-- Quarter Staff
