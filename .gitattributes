@@ -21,7 +21,7 @@
 # VS solution file
 *.sln       text eol=crlf
 # C# project file
-*.csproj    text eol=crlf
+*.csproj    text eol=lf
 # C# source code
 *.cs        text eol=crlf
 # text file
