@@ -112,6 +112,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						groups = {
 							objective(1, {	-- 0/2 Frostmane Bear Pendant
 								provider = { "i", 264356 },	-- Iceclaw Bear Pendant
+								crs = {
+									706,	-- Frostmane Troll Whelp
+									946,	-- Frostmane Novice
+								},
 								maps = { 428 },	-- Frostmane Hovel (Coldridge Valley)
 							}),
 						},
