@@ -1,0 +1,22 @@
+{
+  "progression:main": {
+    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+  },
+  "era:main": {
+    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+  },
+  "anniversary:main": {
+    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+  },
+  "sod:main": {
+    "gnomeregan.dungeon": { "status": "disabled", "windows": [] },
+    "gnomeregan.raid10": { "windows": [{ "from": "vanilla.2" }] }
+  },
+  "sod:replay": {
+    "gnomeregan.dungeon": { "status": "disabled", "windows": [] },
+    "gnomeregan.raid10": { "windows": [{ "from": "vanilla.2" }] }
+  },
+  "progression:replay": {
+    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+  }
+}
