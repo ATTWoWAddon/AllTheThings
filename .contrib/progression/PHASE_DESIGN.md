@@ -1,6 +1,6 @@
 # Phase scheduling and legacy-authoring retirement
 
-**Draft design. Implementation awaits maintainer approval.**
+**Design for maintainers · P1–P4.** The production migration awaits review. The separate executable comparison demonstrates P4 candidate inputs and the ordinary Retail default. [Files to edit, comparison fixtures and generated outputs, by stage](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#migration-stages-by-file)
 
 [Six dungeon and raid cases](#six-dungeon-and-raid-cases) · [Compare three Lua/JSON interfaces](#three-lua-and-json-authoring-options)
 
