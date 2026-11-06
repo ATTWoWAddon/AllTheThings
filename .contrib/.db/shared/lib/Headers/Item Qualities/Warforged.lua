@@ -16,6 +16,10 @@ WARFORGED = createHeader({
 	},
 });
 
+--- Wraps loot and applies the warforged bonus ID.
+---@param t ATTObject|ATTObjectArray # Loot fields or child groups.
+---@return ATTObject|nil # Warforged header, or nil if its ID is unavailable.
+---@return ATTObject|nil ... # additional # Additional unpacked values from the legacy nil-header-ID path.
 HEADER_WARFORGED = function(t)
 	return n(WARFORGED, bubbleDown({bonusID = 4746 }, t))
 end
