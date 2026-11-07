@@ -1224,6 +1224,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 						},
 					}),
 					i(281274),	-- Makeshift Stormcaller
+					i(287060),	-- Rezlak's Spare Knife
 				},
 			}),
 			q(6062, {	-- Taming the Beast (1/3)
