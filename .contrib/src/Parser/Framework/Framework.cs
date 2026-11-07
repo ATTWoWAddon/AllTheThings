@@ -2040,6 +2040,13 @@ namespace ATT
 #endif
         }
 
+        private static string GetInheritedLocaleValue(string locale, IDictionary<string, object> localeData, string englishValue)
+        {
+            if (locale == "tw" && localeData.TryGetValue("cn", out string cnValue)) return cnValue;
+            if (locale == "mx" && localeData.TryGetValue("es", out string esValue)) return esValue;
+            return englishValue;
+        }
+
         private static void CleanLocalizedField<T>(T key, string field, IDictionary<string, object> data, Dictionary<string, Dictionary<T, string>> localizationData)
         {
             if (data.TryGetValue(field, out var value))
@@ -2065,32 +2072,13 @@ namespace ATT
                         if (locale.Key == "en") continue;
 
                         string localizedValue = locale.Value.ToString();
-                        if (localizedValue != englishValue)
+                        string inheritedValue = GetInheritedLocaleValue(locale.Key, localeData, englishValue);
+                        if (localizedValue == inheritedValue) continue;
+                        if (!localizationData.TryGetValue(locale.Key, out sublocale))
                         {
-                            if (!localizationData.TryGetValue(locale.Key, out sublocale))
-                            {
-                                localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
-                            }
-                            // Clean up inherited values. (mx inherits from es and tw inherits from cn so don't include in the export data
-                            switch (locale.Key)
-                            {
-                                case "mx":
-                                    if (!localeData.TryGetValue("es", out string esValue) || localizedValue != esValue)
-                                    {
-                                        sublocale[key] = localizedValue;
-                                    }
-                                    break;
-                                case "tw":
-                                    if (!localeData.TryGetValue("cn", out string cnValue) || localizedValue != cnValue)
-                                    {
-                                        sublocale[key] = localizedValue;
-                                    }
-                                    break;
-                                default:
-                                    sublocale[key] = localizedValue;
-                                    break;
-                            }
+                            localizationData[locale.Key] = sublocale = new Dictionary<T, string>();
                         }
+                        sublocale[key] = localizedValue;
                     }
                 }
             }
@@ -4111,20 +4099,11 @@ setmetatable(_.HeaderConstants, {
                                 builder.Append("\t\t\ten = ");
                                 ExportStringValue(builder, enValue).AppendLine(",");
 
-                                // Also don't write identical es/mx or cn/tw values.
-                                if (textLocales.TryGetValue("es", out string esValue) && textLocales.TryGetValue("mx", out string mxValue) && esValue == mxValue)
-                                {
-                                    supportedLocales.Remove("tw");
-                                }
-                                if (textLocales.TryGetValue("cn", out string cnValue) && textLocales.TryGetValue("tw", out string twValue) && cnValue == twValue)
-                                {
-                                    supportedLocales.Remove("tw");
-                                }
-
                                 foreach (var localeKey in supportedLocales)
                                 {
                                     var localizedValue = textLocales[localeKey].ToString();
-                                    if (enValue == localizedValue || (localizedValue[0] == '[' && enValue == localizedValue.Substring(1, localizedValue.Length - 2))) continue;
+                                    var inheritedValue = GetInheritedLocaleValue(localeKey, textLocales, enValue);
+                                    if (inheritedValue == localizedValue || (localizedValue.Length >= 2 && localizedValue[0] == '[' && enValue == localizedValue.Substring(1, localizedValue.Length - 2))) continue;
                                     builder.Append("\t\t\t").Append(localeKey).Append(" = ");
                                     ExportStringValue(builder, localizedValue).AppendLine(",");
                                 }
