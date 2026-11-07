@@ -1143,6 +1143,7 @@ local InformationTypes = {
 		end,
 	});
 	CreateInformationType("sr", {
+		minBuild = 100000,
 		priority = 2.7,
 		isRecursive = true,
 		text = L.SHOW_SKYRIDING_CHECKBOX,
