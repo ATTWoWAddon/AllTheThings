@@ -1,0 +1,13 @@
+{
+  "cohorts": [
+    {
+      "id": "comparison-fixture-blackwing-lair",
+      "stage": "P3",
+      "sources": [
+        "1.6 Blackwing Lair.lua"
+      ]
+    }
+  ],
+  "schema": 1,
+  "defaultStage": "P1"
+}

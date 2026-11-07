@@ -1,0 +1,32 @@
+{
+  "$comment": "P2.2 authoring input for Blackwing Lair in anniversary. P3 and P4 reuse the same policy snapshot. These are snapshots for comparison.",
+  "milestones": [
+    "vanilla.launch",
+    "vanilla.1.raids",
+    "vanilla.2",
+    "vanilla.3",
+    "vanilla.4",
+    "vanilla.5.war-effort",
+    "vanilla.6"
+  ],
+  "content": {
+    "raid.bwl.common": {
+      "windows": [
+        {
+          "from": "vanilla.3"
+        }
+      ]
+    },
+    "raid.bwl.original": {
+      "windows": [
+        {
+          "from": "vanilla.3"
+        }
+      ]
+    },
+    "raid.bwl.draconic-for-dummies": {
+      "status": "unknown",
+      "windows": []
+    }
+  }
+}
