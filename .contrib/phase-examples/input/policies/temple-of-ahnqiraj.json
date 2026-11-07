@@ -1,0 +1,29 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "progression:main": {
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]}
+  },
+  "era:main": {
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]}
+  },
+  "anniversary:main": {
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]}
+  },
+  "sod:main": {
+    "aq40.common": {"windows": [{"from": "vanilla.6.raids"}]},
+    "aq40.original": {"status": "disabled", "windows": []},
+    "aq40.reworked": {"windows": [{"from": "vanilla.6.raids"}]}
+  },
+  "sod:replay": {
+    "aq40.common": {"windows": [{"from": "vanilla.6.raids"}]},
+    "aq40.original": {"status": "disabled", "windows": []},
+    "aq40.reworked": {"windows": [{"from": "vanilla.6.raids"}]}
+  },
+  "progression:replay": {
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]}
+  }
+}

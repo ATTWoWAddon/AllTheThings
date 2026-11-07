@@ -1,0 +1,4 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "milestones": ["vanilla.1", "vanilla.1.dire-maul", "vanilla.2", "vanilla.3", "vanilla.4", "vanilla.5.war-effort", "fixture.set2-open", "vanilla.6"]
+}

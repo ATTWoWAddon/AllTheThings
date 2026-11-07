@@ -1,0 +1,18 @@
+{
+  "$comment": "P4 authoring example for complete native ATT files. Select the blackwing-lair source before any Lua executes; paths are relative to this snapshot.",
+  "retail": {
+    "blackwing-lair": "retail.lua"
+  },
+  "progression:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "anniversary:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "era:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "sod:main": {
+    "blackwing-lair": "sod.lua"
+  }
+}

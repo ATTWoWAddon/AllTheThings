@@ -1,0 +1,8 @@
+{
+  "$comment": "Frozen comparison fixture (P2.2 shadow / P3 / P4): historical progression Nefarian inputs. Edit schedule.json for current releases. Keep this fixture fixed when the live schedule changes.",
+  "milestones": ["vanilla.2", "vanilla.3"],
+  "content": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] }
+  }
+}
