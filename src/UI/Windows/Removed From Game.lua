@@ -21,7 +21,7 @@ app:CreateWindow("Removed From Game", {
 					local results = app:BuildSearchResponse(app:GetDatabaseRoot().g, "u", 2);
 					if #results > 0 then
 						for i,result in ipairs(results) do
-							tinsert(g, result);
+							g[#g+1] = result
 						end
 						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;

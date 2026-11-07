@@ -27,7 +27,7 @@ app:CreateWindow("Class Specific Things", {
 					for classID=1,13,1 do
 						local classObject = app.CreateCharacterClass(classID);
 						if classObject.isValid then
-							tinsert(g, classObject);
+							g[#g+1] = classObject
 							classObject.g = app:BuildSearchFilteredResponse(filteredG, function(group)
 								if group.c and #group.c == 1 and containsValue(group.c, classID) then
 									return true;

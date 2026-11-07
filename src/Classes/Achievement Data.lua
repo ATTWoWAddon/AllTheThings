@@ -78,7 +78,7 @@ local function GetRelatedThingsForExaltedReputations(t, objects)
 		if not IgnoredReputationsForAchievements[factionID] then
 			for j,o in ipairs(g) do
 				if o.key == "factionID" then
-					tinsert(objects, o);
+					objects[#objects+1] = o
 					break;
 				end
 			end
@@ -92,14 +92,14 @@ end
 local function GetRelatedThingsForMounts(t, objects)
 	for spellID,spells in pairs(GetFieldContainer("mountID")) do
 		for i,spell in ipairs(spells) do
-			tinsert(objects, spell);
+			objects[#objects+1] = spell
 			break;
 		end
 	end
 end
 local function GetRelatedThingsForPets(t, objects)
 	for i,pets in pairs(GetFieldContainer("speciesID")) do
-		tinsert(objects, pets[1]);
+		objects[#objects+1] = pets[1]
 	end
 end
 local function GetRelatedThingsForQuest(t, objects)
@@ -109,7 +109,7 @@ end
 local function GetRelatedThingsForReputation(t, objects)
 	local faction = app.CreateFaction(t.asset);
 	if t.amount ~= 42000 then faction.minReputation = { t.asset, t.amount }; end
-	tinsert(objects, faction);
+	objects[#objects+1] = faction
 end
 local function GetRelatedThingsForSkillRanks(t, objects)
 	local spellID = t.spellID;
@@ -520,14 +520,14 @@ local function OnTooltipForAchievementData(t, tooltipInfo)
 				criteria.OnTooltip(criteria, criteriaInfo);
 			end
 			if #criteriaInfo > 0 then
-				tinsert(tooltipInfo, { left = " " });
+				tooltipInfo[#tooltipInfo+1] = { left = " " }
 				tinsert(tooltipInfo, {
 					left = "Total Criteria",
 					right = tostring(#criteriaInfo),
 					r = 0.8, g = 0.8, b = 1
 				});
 				for i,info in ipairs(criteriaInfo) do
-					tinsert(tooltipInfo, info);
+					tooltipInfo[#tooltipInfo+1] = info
 				end
 			end
 		else

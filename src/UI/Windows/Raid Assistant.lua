@@ -210,7 +210,7 @@ app:CreateWindow("RaidAssistant", {
 				if #g < 1 then
 					for i,option in ipairs(options) do
 						option.parent = t;
-						tinsert(g, option);
+						g[#g+1] = option
 					end
 					app.Sort(g, SortByTextAndPriority);
 					t.OnUpdate = nil;
@@ -449,7 +449,7 @@ app:CreateWindow("RaidAssistant", {
 							local threshold = app.CreateLootThreshold(i);
 							threshold.OnUpdate = app.AlwaysShowUpdate;
 							threshold.parent = data;
-							tinsert(g, threshold);
+							g[#g+1] = threshold
 						end
 					end
 					data.visible = true;
@@ -499,7 +499,7 @@ app:CreateWindow("RaidAssistant", {
 							method.description = L.CLICK_TO_CHANGE;
 							method.OnUpdate = app.AlwaysShowUpdate;
 							method.parent = data;
-							tinsert(g, method);
+							g[#g+1] = method
 						end
 					end
 					data.visible = true;

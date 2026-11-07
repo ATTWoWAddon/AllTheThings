@@ -191,7 +191,7 @@ app:CreateWindow("Import", {
 			local importedRows = {}
 			for _, row in ipairs(self.data.g) do
 				if not row.isButton then
-					tinsert(importedRows, row)
+					importedRows[#importedRows+1] = row
 				end
 			end
 			wipe(self.data.g)

@@ -343,7 +343,7 @@ app:CreateWindow("Tradeskills", {
 									end
 								end
 							end
-							tinsert(g, cache);
+							g[#g+1] = cache
 						end
 					end
 					if #g > 0 then

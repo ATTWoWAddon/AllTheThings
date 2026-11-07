@@ -383,7 +383,7 @@ app:CreateWindow("Tradeskills", {
 								charSpells[recipeID] = 1;
 								if not acctSpells[recipeID] then
 									acctSpells[recipeID] = 1;
-									tinsert(learned, recipeID);
+									learned[#learned+1] = recipeID
 								end
 							end
 						else

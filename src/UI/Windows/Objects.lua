@@ -210,7 +210,7 @@ app:CreateWindow("Objects", {
 					-- Cache and sort all of the objectIDs we reference in our DB.
 					local objectIDs = {};
 					for objectID,o in pairs(app.GetFieldContainer("objectID")) do
-						tinsert(objectIDs, tonumber(objectID));
+						objectIDs[#objectIDs+1] = tonumber(objectID)
 					end
 					app.Sort(objectIDs, app.SortDefaults.Values);
 

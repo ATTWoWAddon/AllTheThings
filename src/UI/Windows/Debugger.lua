@@ -691,7 +691,7 @@ app:CreateWindow("Debugger", {
 					OnClick = function(row, button)
 						local copy = {};
 						for i,o in ipairs(self.rawData) do
-							tinsert(copy, o);
+							copy[#copy+1] = o
 						end
 						if #copy < 1 then
 							app.print("There is nothing to clear.");

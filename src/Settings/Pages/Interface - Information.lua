@@ -409,18 +409,18 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		-- Account-Wide Quests
 		if app.AccountWideQuestsDB[id] then
 			if IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
+				knownBy[#knownBy+1] = {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"}
 			end
 		else
 			for _,character in pairs(ATTCharacterData) do
 				if not character.ignored and ((character.Quests and character.Quests[id])
 					-- perhaps expand into a separate information type instead for previously-completed quests
 					or (character.PriorQuests and character.PriorQuests[id])) then
-					tinsert(knownBy, character);
+					knownBy[#knownBy+1] = character
 				end
 			end
 			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"});
+				knownBy[#knownBy+1] = {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Previously completed on your Account"}
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -432,7 +432,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if id then
 		for _,character in pairs(ATTCharacterData) do
 			if character.Exploration and character.Exploration[id] then
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -444,7 +444,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if id then
 		for _,character in pairs(ATTCharacterData) do
 			if character.FirstCrafts and character.FirstCrafts[id] then
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -456,7 +456,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	if id then
 		for _,character in pairs(ATTCharacterData) do
 			if character.ProfessionNodes and character.ProfessionNodes[id] then
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -476,7 +476,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		-- Prior to Cata, Achievements were not tracked account wide
 		for guid,character in pairs(ATTCharacterData) do
 			if character.Achievements and character.Achievements[id] then
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 		end
 		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
@@ -520,7 +520,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 
 			-- Convert the GUID dictionary to the knownBy list.
 			for guid,character in pairs(knownByGUID) do
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 
 			-- All of this can be stored together.
@@ -583,7 +583,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			for guid,character in pairs(ATTCharacterData) do
 				knownByCache = character[cacheName] or character.Spells
 				if not character.ignored and knownByCache and knownByCache[id] then
-					tinsert(knownBy, character);
+					knownBy[#knownBy+1] = character
 				end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.KNOWN_BY);
@@ -660,7 +660,7 @@ local function ProcessForUsefulFor(t, reference, tooltipInfo)
 			end
 			-- Missing cached rank data must not imply that a character can learn the recipe.
 			if type(rank) == "number" and rank > 0 and rank >= learnedAt then
-				tinsert(knownBy, character);
+				knownBy[#knownBy+1] = character
 			end
 		end
 	end
@@ -699,7 +699,7 @@ local GetFixedItemSpecInfo = GetSpecializationInfo and function(itemID)
 					if numSpecializations and numSpecializations > 0 then
 						for i=1,numSpecializations,1 do
 							local specID = GetSpecializationInfo(i);
-							tinsert(specs, specID);
+							specs[#specs+1] = specID
 						end
 					end
 				end
@@ -804,7 +804,7 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 	Process = function(t, reference, tooltipInfo)
 		if #AppendedInformationTextEntries > 0 then
 			for i,entry in ipairs(AppendedInformationTextEntries) do
-				tinsert(tooltipInfo, entry);
+				tooltipInfo[#tooltipInfo+1] = entry
 			end
 			wipearray(AppendedInformationTextEntries);
 		end
@@ -812,7 +812,7 @@ local PostProcessor = CreateInformationType("__postprocessor", {
 });
 local function AppendInformationTextEntry(entry)
 	-- You should call this from within the Process function of an information text object.
-	tinsert(AppendedInformationTextEntries, entry);
+	AppendedInformationTextEntries[#AppendedInformationTextEntries+1] = entry
 end
 settings.AppendInformationTextEntry = AppendInformationTextEntry;
 local AccountWideIcon = app.GameBuildVersion >= 110005 and "|T6124644:0:0:0:0:64:64:4:60:4:60|t " or "|T413589:0:0:0:0:64:64:4:60:4:60|t "
@@ -829,7 +829,7 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local summaryText = app.GetProgressTextForTooltip(reference);
 			if summaryText then
-				tinsert(tooltipInfo, { summaryText = summaryText });
+				tooltipInfo[#tooltipInfo+1] = { summaryText = summaryText }
 				--[[
 				-- I don't remember what the original conditions for showing this were.
 				-- For now just disable it.
@@ -999,7 +999,7 @@ local InformationTypes = {
 						coord.r = 1;
 						coord.g = 1;
 						coord.b = 1;
-						tinsert(tooltipInfo, coord);
+						tooltipInfo[#tooltipInfo+1] = coord
 					end
 
 					local remainingCoords = count - t.maxcoords;
@@ -1094,7 +1094,7 @@ local InformationTypes = {
 					name = app.GetMapName(mapID);
 					if name and not uniques[name] then
 						uniques[name] = true;
-						tinsert(mapNames, name);
+						mapNames[#mapNames+1] = name
 					end
 				end
 				if #mapNames > 1 or (not onMyMap and #mapNames > 0) then
@@ -1880,7 +1880,7 @@ local function SetupInformationTypes()
 end
 settings.CreateInformationType = function(key, t)
 	local informationType = CreateInformationType(key, t);
-	tinsert(InformationTypes, informationType);
+	InformationTypes[#InformationTypes+1] = informationType
 	app.CallbackHandlers.DelayedCallback(SetupInformationTypes, 2)
 	return informationType;
 end

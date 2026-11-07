@@ -43,7 +43,7 @@ app:CreateWindow("Collected Sources", {
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
 							UnmarkNestedCollectible(result);
-							tinsert(g, result);
+							g[#g+1] = result
 						end
 						t.OnUpdate = nil;
 						self:AssignChildren();

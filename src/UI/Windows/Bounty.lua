@@ -23,7 +23,7 @@ app:CreateWindow("Bounty", {
 					local results = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "isBounty");
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
-							tinsert(g, result);
+							g[#g+1] = result
 						end
 						t.OnUpdate = nil;
 						self:AssignChildren();

@@ -129,7 +129,7 @@ app:CreateWindow("Item Filter", {
 				if #g < 1 then
 					for i,option in ipairs(options) do
 						option.parent = t.data;
-						tinsert(g, option);
+						g[#g+1] = option
 					end
 					if SearchSetup.value then
 						local results = app:BuildSearchResponseRetailStyle(SearchSetup.field, SearchSetup.value, SearchSetup.drop, SearchSetup.criteria)

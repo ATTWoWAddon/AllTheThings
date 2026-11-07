@@ -265,7 +265,7 @@ local function SendMessageChunks(method, target, detail, msg, chunksize)
 			else
 				chunk = msg:sub(i, j);
 			end
-			tinsert(chunks, chunk);
+			chunks[#chunks+1] = chunk
 		end
 		QueueSendChunks(method, target, detail, chunks);
 		-- app.PrintDebug("Generated " .. #chunks .. " chunks for encoded string!");
@@ -1883,7 +1883,7 @@ local function MergeCharacterData(character, row)
 			if subtotal > 0 then
 				local t = character.TimeStamps[field];
 				message = message .. "\n " .. field .. " |cffaaaaaa(" .. (t and date("%Y-%m-%d %H:%M:%S", t) or "??" ) .. ")|r: " .. subtotal;
-				tinsert(fields, field);
+				fields[#fields+1] = field
 			end
 		end
 	end
@@ -1934,7 +1934,7 @@ local function MergeTransferredCharacterData(row)
 				and character.lvl and character.lvl <= CurrentCharacter.lvl then
 				if (character.Deaths or 0) > 0 then
 					-- Any deaths means they're eligible
-					tinsert(eligibleCharacters, character);
+					eligibleCharacters[#eligibleCharacters+1] = character
 				else
 					local anyFields = false;
 					for i,field in ipairs(eligibleFields) do
@@ -2191,7 +2191,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 		local sortedFields = {};
 		for field,d in pairs(character) do
 			if not BlacklistedTooltipFields[field] and type(d) == "table" then
-				tinsert(sortedFields, field);
+				sortedFields[#sortedFields+1] = field
 			end
 		end
 		tsort(sortedFields);
@@ -2213,7 +2213,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				});
 			end
 		end
-		tinsert(tooltipInfo, { left = " " });
+		tooltipInfo[#tooltipInfo+1] = { left = " " }
 		tinsert(tooltipInfo, {
 			left = TOTAL,
 			right = tostring(total),
@@ -2236,7 +2236,7 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				left = L.ACCOUNT_MANAGEMENT_UNIGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
 			});
-			tinsert(tooltipInfo, { left = " " });
+			tooltipInfo[#tooltipInfo+1] = { left = " " }
 			tinsert(tooltipInfo, {
 				left = L.ACCOUNT_MANAGEMENT_IGNORED_DESC,
 				r = 1, g = 1, b = 1, wrap = true
@@ -2265,7 +2265,7 @@ local function OnTooltipForCharacterHeader(t, tooltipInfo)
 			end
 		end
 	end
-	tinsert(tooltipInfo, { left = " " });
+	tooltipInfo[#tooltipInfo+1] = { left = " " }
 	tinsert(tooltipInfo, {
 		left = L.ACCOUNT_MANAGEMENT_TOTAL_TIME_PLAYED,
 		right = GetTimePlayedString(AccountTotalTimePlayed)
@@ -2316,7 +2316,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	-- Show the Receive Queue
 	local receiving = pendingReceiveChunksForUser[identifier];
 	if receiving then
-		tinsert(tooltipInfo, { left = " " });
+		tooltipInfo[#tooltipInfo+1] = { left = " " }
 		tinsert(tooltipInfo, {
 			left = L.ACCOUNT_MANAGEMENT_RECEIVING,
 			r = 0.8, g = 0.8, b = 1
@@ -2337,7 +2337,7 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	-- Show the Send Queue
 	local sending = pendingSendChunksForUser[identifier];
 	if sending then
-		tinsert(tooltipInfo, { left = " " });
+		tooltipInfo[#tooltipInfo+1] = { left = " " }
 		tinsert(tooltipInfo, {
 			left = L.ACCOUNT_MANAGEMENT_SENDING,
 			r = 0.8, g = 0.8, b = 1
@@ -2519,7 +2519,7 @@ app:CreateWindow("Account Management", {
 							character.totalTimePlayed = characterData.totalTimePlayed;
 							character.saved = not characterData.ignored and 1;
 							character.lvl = characterData.lvl;
-							tinsert(g, character);
+							g[#g+1] = character
 						end
 					end
 
@@ -2626,7 +2626,7 @@ app:CreateWindow("Account Management", {
 				if #g < 1 then
 					for i,option in ipairs(options) do
 						option.parent = data;
-						tinsert(g, option);
+						g[#g+1] = option
 					end
 				end
 			end,

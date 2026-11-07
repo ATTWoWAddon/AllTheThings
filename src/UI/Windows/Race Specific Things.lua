@@ -28,7 +28,7 @@ app:CreateWindow("Race Specific Things", {
 					for raceID=1,50,1 do
 						if C_CreatureInfo_GetRaceInfo(raceID) then
 							local raceObject = app.CreateRace(raceID);
-							tinsert(g, raceObject);
+							g[#g+1] = raceObject
 							raceObject.g = app:BuildSearchFilteredResponse(filteredG, function(group)
 								if group.races and #group.races == 1 and containsValue(group.races, raceID) then
 									return true;

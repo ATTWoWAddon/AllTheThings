@@ -206,7 +206,7 @@ app:CreateWindow("Added With Patch", {
 						if MaxPatch then
 							local patchList = {};
 							for key,_ in pairs(FilteredPatches) do
-								tinsert(patchList, key);
+								patchList[#patchList+1] = key
 							end
 							table.sort(patchList);
 							local GetRelativeValue = app.GetRelativeValue

@@ -55,27 +55,27 @@ app:CreateWindow("Missing Quests", {
 				for id,_ in pairs(ATTAccountWideData.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
-						tinsert(MissingQuestsFromATT, id);
+						MissingQuestsFromATT[#MissingQuestsFromATT+1] = id
 					end
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] then
 						MissingQuestsFromQuestieDict[id] = true;
-						tinsert(MissingQuestsFromQuestie, id);
+						MissingQuestsFromQuestie[#MissingQuestsFromQuestie+1] = id
 					end
 				end
 				for id,_ in pairs(app.CurrentCharacter.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
-						tinsert(MissingQuestsFromATT, id);
+						MissingQuestsFromATT[#MissingQuestsFromATT+1] = id
 					end
 					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] then
 						MissingQuestsFromQuestieDict[id] = true;
-						tinsert(MissingQuestsFromQuestie, id);
+						MissingQuestsFromQuestie[#MissingQuestsFromQuestie+1] = id
 					end
 				end
 				for id,_ in pairs(QuestieDB.QuestPointers) do
 					if id < 90000 and not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
-						tinsert(MissingQuestsFromATT, id);
+						MissingQuestsFromATT[#MissingQuestsFromATT+1] = id
 					end
 				end
 
@@ -89,7 +89,7 @@ app:CreateWindow("Missing Quests", {
 						end
 						if shouldAdd then
 							MissingQuestsFromQuestieDict[id] = true;
-							tinsert(MissingQuestsFromQuestie, id);
+							MissingQuestsFromQuestie[#MissingQuestsFromQuestie+1] = id
 						end
 					end
 				end
@@ -122,7 +122,7 @@ app:CreateWindow("Missing Quests", {
 					end
 					quest.description = description;
 					quest.parent = parent;
-					tinsert(g, quest);
+					g[#g+1] = quest
 				end
 				if #g > 0 then parent.g = g; end
 
@@ -142,7 +142,7 @@ app:CreateWindow("Missing Quests", {
 					end
 					quest.description = description;
 					quest.parent = parent;
-					tinsert(g, quest);
+					g[#g+1] = quest
 				end
 				if #g > 0 then parent.g = g; end
 

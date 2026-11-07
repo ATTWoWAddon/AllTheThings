@@ -1694,7 +1694,7 @@ local function InternalBuildSearchFilteredResponse(groups, filter)
 						if not t then t = {}; end
 						local clone = app.CloneClassInstance(group, true);
 						clone.g = response;
-						tinsert(t, clone);
+						t[#t+1] = clone
 					end
 				end
 			end
@@ -2965,7 +2965,7 @@ function app:CreateWindowForAddon(addonName, definition)
 			definition.Commands = commands;
 		end
 		for i,cmd in ipairs({(","):split(cmdStr)}) do
-			tinsert(commands, cmd:trim());
+			commands[#commands+1] = cmd:trim()
 		end
 	end
 	return app:CreateWindow(GetAddOnMetadata(addonName, "X-Suffix") or addonName, definition);
@@ -3455,7 +3455,7 @@ local function BuildFlatSearchFunctionForClassTypes(key, fallbackText, ...)
 					local o = app.CloneClassInstance(__o);
 					o.sourceParent = __o.parent;
 					o.__o = __o;
-					tinsert(g, o);
+					g[#g+1] = o
 				end
 				if #g < 1 then
 					tinsert(g, app.CreateRawText(fallbackText or UNKNOWN, {
@@ -3497,7 +3497,7 @@ local DynamicCategoryHeaders = {
 	{ id = "toyID", name = TOY_BOX, icon = app.asset("Category_ToyBox") },
 };
 app.AddDynamicCategoryHeader = function(header)
-	tinsert(DynamicCategoryHeaders, header);
+	DynamicCategoryHeaders[#DynamicCategoryHeaders+1] = header
 end
 local TypeGroupOverridesForDynamicCategoryHeader = {
 	visible = true

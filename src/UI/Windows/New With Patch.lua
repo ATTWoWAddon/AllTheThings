@@ -70,7 +70,7 @@ app:CreateWindow("New With Patch", {
 					end
 					if results and #results > 0 then
 						for i,result in ipairs(results) do
-							tinsert(g, result);
+							g[#g+1] = result
 						end
 						tinsert(g, self.SearchAPI.BuildDynamicCategorySummaryForSearchResults(results));
 						t.OnUpdate = nil;

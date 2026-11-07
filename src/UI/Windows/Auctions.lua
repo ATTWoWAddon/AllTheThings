@@ -636,7 +636,7 @@ app:CreateWindow("Auctions", {
 				if #g < 1 then
 					for i,option in ipairs(data.options) do
 						option.g = {};
-						tinsert(g, option);
+						g[#g+1] = option
 						if option.Metas then
 							for j,meta in ipairs(option.Metas) do
 								data.metas[meta] = option;

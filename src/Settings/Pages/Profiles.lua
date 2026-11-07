@@ -176,7 +176,7 @@ profileSelector.OnRefresh = function()
 
 		for k,v in pairs(AllTheThingsProfiles.Profiles) do
 			-- app.PrintDebug("added",k)
-			tinsert(settingProfileItems, k == "Default" and DEFAULT or k)
+			settingProfileItems[#settingProfileItems+1] = k == "Default" and DEFAULT or k
 		end
 	end
 	-- sort the profiles

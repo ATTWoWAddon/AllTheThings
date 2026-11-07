@@ -110,7 +110,7 @@ local function PlotCachedCoords()
 								tinsert(root, app.CreateObject(objectID));
 							end
 						else
-							tinsert(root, group);
+							root[#root+1] = group
 						end
 					end
 
@@ -328,7 +328,7 @@ app.AddEventHandler("OnReady", function()
 							local hashes = { (">"):split(sourcePath) };
 							local ref = app.SearchForSourcePath(app:GetDatabaseRoot().g, hashes, 2, #hashes);
 							if ref then
-								tinsert(root, ref);
+								root[#root+1] = ref
 							else
 								---@diagnostic disable-next-line: undefined-field
 								hashes = { ("ID"):split(sourcePath) };

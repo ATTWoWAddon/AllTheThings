@@ -114,7 +114,7 @@ local function UpdateMissingAchievements(self)
 								local criteriaUID = select(10, GetAchievementCriteriaInfo(achievementID, j));
 								local criteriaObject = app.CreateAchievementCriteria(criteriaUID);
 								criteriaObject.parent = achievement;
-								tinsert(g, criteriaObject);
+								g[#g+1] = criteriaObject
 							end
 							achievement.g = g;
 						end

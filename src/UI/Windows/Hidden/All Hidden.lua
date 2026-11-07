@@ -37,7 +37,7 @@ app:CreateWindow("All-Hidden", {
 							local clone = app.CloneClassInstance(window.data);
 							clone.expanded = false;
 							clone.font = nil
-							tinsert(g, clone);
+							g[#g+1] = clone
 						end
 					end
 					self:AssignChildren();

@@ -119,10 +119,10 @@ app:CreateWindow("ItemFinder", {
 														for raceName,_ in pairs(racesByText) do
 															local race = app.RaceDB[raceName];
 															if type(race) == 'number' then
-																tinsert(races, race);
+																races[#races+1] = race
 															else
 																for _,raceID in pairs(race) do
-																	tinsert(races, raceID);
+																	races[#races+1] = raceID
 																end
 															end
 														end

@@ -28,7 +28,7 @@ app:CreateWindow("Season of Discovery", {
 					local results = app:BuildSearchFilteredResponse(app:GetDatabaseRoot().g, IsExclusiveToSod);
 					if #results > 0 then
 						for i,result in ipairs(results) do
-							tinsert(g, result);
+							g[#g+1] = result
 						end
 						t.OnUpdate = nil;
 						self:AssignChildren();

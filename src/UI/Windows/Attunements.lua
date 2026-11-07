@@ -191,7 +191,7 @@ app:CreateWindow("Attunements", {
 				}),
 			};
 			for i,attunement in ipairs(tbcAttunements) do
-				tinsert(attunements, attunement);
+				attunements[#attunements+1] = attunement
 			end
 		else
 			-- Season of Discovery Attunements
@@ -246,7 +246,7 @@ app:CreateWindow("Attunements", {
 				if #g < 1 and attunements then
 					for i,attunement in ipairs(attunements) do
 						attunement.parent = data;
-						tinsert(g, attunement);
+						g[#g+1] = attunement
 					end
 				end
 				data.visible = true;

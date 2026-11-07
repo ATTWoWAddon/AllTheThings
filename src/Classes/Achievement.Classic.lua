@@ -143,7 +143,7 @@ if GetAchievementCriteriaInfoByID then
 			if IsShiftKeyDown() then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					tinsert(tooltipInfo, { left = " " });
+					tooltipInfo[#tooltipInfo+1] = { left = " " }
 					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID, true)
 					if criteriaString then
 						tinsert(tooltipInfo, {
@@ -215,9 +215,9 @@ local function OnTooltipForAchievementCriteriaData(t, tooltipInfo)
 		local criteriaInfo = {};
 		t.data.OnTooltip(t.data, criteriaInfo);
 		if #criteriaInfo > 0 then
-			tinsert(tooltipInfo, { left = " " });
+			tooltipInfo[#tooltipInfo+1] = { left = " " }
 			for i,info in ipairs(criteriaInfo) do
-				tinsert(tooltipInfo, info);
+				tooltipInfo[#tooltipInfo+1] = info
 			end
 		end
 	end
@@ -410,7 +410,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 				end
 			end
 			if #criteriaDatas > 0 then
-				tinsert(tooltipInfo, { left = " " });
+				tooltipInfo[#tooltipInfo+1] = { left = " " }
 				tinsert(tooltipInfo, {
 					left = "Total Criteria",
 					right = tostring(#criteriaDatas),
