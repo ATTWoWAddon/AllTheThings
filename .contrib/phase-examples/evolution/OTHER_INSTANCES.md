@@ -4,7 +4,7 @@ The [Blackwing Lair walkthrough](blackwing-lair/) has files for all five steps. 
 
 **Local P1 copies** · [Blackrock Depths](p1/Blackrock%20Depths.lua) · [Demon Fall Canyon](p1/Demon%20Fall%20Canyon.lua) · [Dire Maul](p1/Dire%20Maul.lua) · [Temple of Ahn'Qiraj](p1/2.6%20Temple%20of%20Ahn%27Qiraj.lua) · [Gnomeregan](p1/Gnomeregan.lua). Each copy adds one identification line above the complete original. The pinned source links below use the original line numbers.
 
-At **P2.1**, add the indicated fields while retaining the legacy expressions. At **P2.2**, add the JSON and validate it in shadow. Both stages still ship the legacy result. At **P3**, the same annotated Lua feeds two separate compilations. The progress path takes its timing from the selected policy. The independent legacy comparison (the golden) uses the frozen source, build configuration and old timing rules. **P4** removes retired writers and guards after that comparison passes. The linked P1 databases are checked-in evidence. Each P3 paragraph describes a proposed acceptance check.
+At **P2.1**, add the indicated fields while retaining the legacy expressions. At **P2.2**, edit the instance’s rules in the [shared schedule](../schedule.json) and validate them in shadow. P3 and P4 use the same rules. Both stages still ship the legacy result. At **P3**, the same annotated Lua feeds two separate compilations. The progress path takes its timing from the selected policy. The independent legacy comparison (the golden) uses the frozen source, build configuration and old timing rules. **P4** removes retired writers and guards after that comparison passes. The linked P1 databases are checked-in evidence. Each P3 paragraph describes a proposed acceptance check.
 
 ## Blackrock Depths · Emperor Dagran Thaurissan → Emperor's Seal
 
@@ -17,11 +17,11 @@ i(11934)
 
 **P2.1.** Put `progressionKey = "brd.dungeon"` on instance `228` and `progressionKey = "brd.second-half"` on encounter `387`. Leave `11934` as an ordinary child. Retain the existing SoD item guards and phase writers for the legacy build.
 
-**P2.2.** Add both openings in [SoD main](../input/profiles/sod/main.json). These are entries in its `content` object.
+**P2.2.** In the [shared schedule](../schedule.json), add these two entries under `rules.blackrock-depths`.
 
 ```json
-{ "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
-  "brd.second-half": { "windows": [{ "from": "vanilla.4" }] } }
+{ "brd.dungeon": { "default": "start", "sod": "vanilla.3" },
+  "brd.second-half": { "default": "start", "sod": "vanilla.4" } }
 ```
 
 **P3.** The candidate gives the seal `sod:main:brd.dungeon` **and** `sod:main:brd.second-half`. At phase 3 the earlier Gerstahn route can open while the Emperor remains closed. At phase 4 the seal's schedule opens. The frozen SoD output has no explicit boss or seal phase at these records. The second-half rule needs its own reviewed expectation. The phase-four dungeon listing and the observation of the Emperor out of combat in the closed half support this specific encounter. [Legacy boss and seal][brd-output] · [Phase-four dungeon list](https://news.blizzard.com/en-us/article/24111477/season-of-discovery-phase-4-now-live) · [Phase-three observation](https://www.wowhead.com/news/latter-half-of-brd-inaccessible-bosses-hanging-out-at-grim-guzzler-338551)
@@ -44,15 +44,15 @@ applyclassicphase(SOD_PHASE_FIVE, n(232632, {
 
 **P2.1.** Add `flavors = { "sod" }` and `progressionKey = "dfc.dungeon"` to `inst(2784)`. Add `progressionKey = "dfc.azgaloth"` to `n(232632)`. Keep both phase writers, the file guard and the entrance requirements. Grimroot's extra drop `235787` gets its own key on the item.
 
-**P2.2.** The [SoD main profile](../input/profiles/sod/main.json) knows the boss and item milestones. The exact order of the entrance opening within phase 4 is unresolved.
+**P2.2.** Under `rules.demon-fall-canyon`, the [shared schedule](../schedule.json) records the two known SoD releases. The exact order of the entrance opening within phase 4 is unresolved.
 
 ```json
-{ "dfc.dungeon": { "status": "unknown", "windows": [] },
-  "dfc.azgaloth": { "windows": [{ "from": "vanilla.5" }] },
-  "dfc.ironwood-branch": { "windows": [{ "from": "vanilla.7" }] } }
+{ "dfc.dungeon": { "sod": "unknown" },
+  "dfc.azgaloth": { "sod": "vanilla.5" },
+  "dfc.ironwood-branch": { "sod": "vanilla.7" } }
 ```
 
-**P3.** The eye needs `sod:main:dfc.dungeon` and `sod:main:dfc.azgaloth`. The legacy comparison keeps the old root and boss writers. Its shipped boss carries `phase=1609`. The candidate's unknown parent blocks promotion even at phase 5. To exercise the child opening separately, the [synthetic replay](../input/profiles/sod/replay.json) supplies `fixture.dfc-open`. [Shipped dungeon][dfc-output-root] · [Shipped boss and eye][dfc-output-eye]
+**P3.** The eye needs `sod:main:dfc.dungeon` and `sod:main:dfc.azgaloth`. The legacy comparison keeps the old root and boss writers. Its shipped boss carries `phase=1609`. The candidate's unknown parent blocks promotion even at phase 5. To exercise the child opening separately, the [synthetic replay](../comparison.json) supplies `fixture.dfc-open`. [Shipped dungeon][dfc-output-root] · [Shipped boss and eye][dfc-output-eye]
 
 **P4.** The direct SoD instance keeps quest `84384`, provider item `228172` and level 55. Only the boss gets the phase-five key, so Grimroot's existing loot can retain its own schedule. [Candidate source](../input/sources.lua#L40-L66)
 
@@ -73,7 +73,7 @@ applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {
 
 **P2.1.** On `inst(230)`, add `progressionKey = "dire-maul.common"`. On the existing `n_conditional(16097)`, add `progressionKey = "dire-maul.isalien"`. Keep the phase constants and the conditional cost/quest branches.
 
-**P2.2.** In [Anniversary main](../input/profiles/anniversary/main.json), `dire-maul.common` opens at `vanilla.2` and the summon has `{ "windows": [{ "from": "vanilla.4" }] }`. In [historical progression](../input/profiles/progression/main.json), the summon has `{ "status": "unknown", "windows": [] }` pending a reviewed phase-five batch. [Anniversary Dungeon Set 2 release](https://news.blizzard.com/en-us/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live)
+**P2.2.** In `rules.dire-maul`, the [shared schedule](../schedule.json) opens the dungeon at `vanilla.2` on Anniversary. Its summon uses `{ "default": "unknown", "anniversary": "vanilla.4" }`. The historical progression opening still needs a reviewed phase-five batch. [Anniversary Dungeon Set 2 release](https://news.blizzard.com/en-us/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live)
 
 **P3.** On Anniversary the hammer needs both `anniversary:main:dire-maul.common` and `anniversary:main:dire-maul.isalien`. Compare against an independently pinned Anniversary build with its original summon rules. The [committed Vanilla summon][dm-output] shows the cost, provider and hammer for that build. It supplies no Anniversary build result.
 
@@ -97,7 +97,7 @@ applyclassicphase(SOD_PHASE_SIX, d(DIFFICULTY.SOD.PLAYER20, {
 
 **P2.1.** Add `aq40.common` as the instance's `progressionKey`. Mark the original acquisitions `aq40.original`. Add `flavors = { "sod" }` and `progressionKey = "aq40.reworked"` on the SoD difficulty. Keep the original guards, timelines and both phase writers.
 
-**P2.2.** In [SoD main](../input/profiles/sod/main.json), both `aq40.common` and `aq40.reworked` have `{ "windows": [{ "from": "vanilla.6.raids" }] }`. The original has `{ "status": "disabled", "windows": [] }`. [Blizzard's phase-six event order](https://news.blizzard.com/en-us/article/24154449/anniversary-celebration-at-the-november-trading-post-season-of-discovery-phase-6-the-war-within-audio-design-and-more)
+**P2.2.** In `rules.temple-of-ahnqiraj`, set the SoD opening on `aq40.common` to `vanilla.6.raids`. The rework uses `{ "sod": { "sameAs": "aq40.common" } }`. The original SoD route is explicitly `"disabled"`. [Shared schedule](../schedule.json) · [Blizzard's phase-six event order](https://news.blizzard.com/en-us/article/24154449/anniversary-celebration-at-the-november-trading-post-season-of-discovery-phase-6-the-war-within-audio-design-and-more)
 
 **P3.** The reworked drop needs `sod:main:aq40.common` and `sod:main:aq40.reworked`. Scepter, War Effort, end of collection and war all precede the raid opening. Compare the two historical loot lists independently. Test the finer opening against the event order as well as the old whole-phase result. [Legacy original boss][aq-output-old] · [Legacy reworked boss][aq-output-new]
 
@@ -120,7 +120,7 @@ applyclassicphase(SOD_PHASE_TWO, d(DIFFICULTY.SOD.PLAYER10, {
 
 **P2.1.** Add `progressionKey = "gnomeregan.dungeon"` to the original acquisition and `progressionKey = "gnomeregan.raid10"`, `flavors = { "sod" }` to the raid difficulty. Preserve the guard and the `SOD_PHASE_TWO` writer for the legacy build.
 
-**P2.2.** In [SoD main](../input/profiles/sod/main.json), `gnomeregan.dungeon` has `{ "status": "disabled", "windows": [] }` and `gnomeregan.raid10` has `{ "windows": [{ "from": "vanilla.2" }] }`.
+**P2.2.** In `rules.gnomeregan`, use `{ "default": "start", "sod": "disabled" }` for the original dungeon and `{ "sod": "vanilla.2" }` for the separate raid. [Shared schedule](../schedule.json)
 
 **P3.** Gizmoblade inherits only `sod:main:gnomeregan.raid10` in this example. It is future in phase 1 and scheduled open in phase 2. Compare against the old SoD raid with its level and build requirements. Check ordinary Retail separately for the flat dungeon route to `9449`. [Legacy raid difficulty][gn-output-raid] · [Legacy Menagerie and drop][gn-output-drop]
 

@@ -1,14 +1,14 @@
 # Nefarian · executable comparison of two loot routes
 
-**Comparison fixture · excerpts from P1–P4.** The [whole-file walkthrough](../README.md) contains the complete raid. This smaller run follows Nefarian's Head (`19003`) and two versions of Ashkandi through five snapshots. Each directory represents the **same working directory at a different point in the migration**. The copies let you diff each step. In the actual raid you would edit one Lua source and one set of policies. This walkthrough uses option A.
+**Comparison fixture · excerpts from P1–P4.** The [whole-file walkthrough](../README.md) contains the complete raid. This smaller run follows Nefarian's Head (`19003`) and two versions of Ashkandi through five snapshots. Each directory represents the **same working directory at a different point in the migration**. The copies let you diff each step. For current release timing, edit `rules.blackwing-lair` in the [shared schedule](../../../schedule.json). The executable excerpt uses the four frozen historical profiles under [p4/profiles](p4/profiles/) so the historical comparison stays reproducible. This walkthrough uses option A.
 
 | Snapshot | Open the Lua | What changed on disk since the previous step | Output authority for this source |
 |---|---|---|---|
 | **P1 excerpt** | [Selected lines](p1/sources.lua) | Extracted from the full P1 file, which uses `applyclassicphase` and SoD guards. | Legacy. [What the shipped SoD DB contains](p1/legacy-sod.md) |
 | **P2.1** | [Annotated source](p2.1/sources.lua) | Add four Lua fields and select P2.1 in the [migration control](p2.1/migration.json). | Legacy. A policy can still be missing. |
-| **P2.2** | [Same source](p2.2/sources.lua) | Add [SoD](p2.2/profiles/sod/main.json), [progression](p2.2/profiles/progression/main.json), [Anniversary](p2.2/profiles/anniversary/main.json) and [Era](p2.2/profiles/era/main.json) policies. Set the [stage](p2.2/migration.json) to P2.2. | Legacy. Validate the proposed progress output separately. |
-| **P3** | [Same source](p3/sources.lua) | The [control](p3/migration.json) changes one value. The [policy](p3/profiles/sod/main.json) and the Lua are byte-identical to P2.2. | Progress. Compare with an independent legacy golden. |
-| **P4** | [Rewritten source](p4/sources.lua) | Remove the old writers and guards. Keep the [policy](p4/profiles/sod/main.json) and advance the [control](p4/migration.json). | Progress. [Actual generated SoD Lua](p4/expected-sod.lua) |
+| **P2.2** | [Same source](p2.2/sources.lua) | Introduce the release rules. The verifier reads a temporary copy of the [frozen profiles](p4/profiles/). Set the [stage](p2.2/migration.json) to P2.2. | Legacy. Validate the proposed progress output separately. |
+| **P3** | [Same source](p3/sources.lua) | The [control](p3/migration.json) changes one value. The verifier gives the P3 projection the same frozen inputs and annotated Lua as P2.2. | Progress. Compare with an independent legacy golden. |
+| **P4** | [Rewritten source](p4/sources.lua) | Remove the old writers and guards. Use the [historical SoD input](p4/profiles/sod/main.json) directly and advance the [control](p4/migration.json). | Progress. [Actual generated SoD Lua](p4/expected-sod.lua) |
 
 ## P1 · what the maintainer starts with
 
@@ -39,9 +39,9 @@ Each hunk below shows a different location in [the annotated Lua](p2.1/sources.l
 +    progressionKey = "raid.bwl.sod20",
 ```
 
-## P2.1 → P2.2 · write the JSON
+## P2.1 → P2.2 · add the release policy
 
-`sources.lua` stays as it was. In the new [SoD profile](p2.2/profiles/sod/main.json), these are the three entries under `content`. The other profiles open the original raid at `vanilla.3`. The small catalogs include the two views needed for this comparison.
+P2.2 is the first stage that needs a release policy. A maintainer writes the four BWL keys in the [shared schedule](../../../schedule.json). This historical excerpt includes three of those keys. For the shadow run, the verifier copies the [frozen SoD profile](p4/profiles/sod/main.json) to its temporary input directory. Its expanded `content` looks like this:
 
 ```json
 {
@@ -60,7 +60,7 @@ This is the entire operational edit between the two directory snapshots:
 +      "stage": "P3",
 ```
 
-The temporary `migration.json` controls this one source group. Its `sources.lua` path is relative to the snapshot root. `profiles/sod/main.json` controls when the loot opens. At P2.2 the progress result is for comparison. At P3 it becomes the official result for the group. The old Lua expressions still exist so the legacy path can be compiled independently.
+The temporary `migration.json` controls this one source group. Its `sources.lua` path is relative to the snapshot root. The verifier copies the same frozen SoD profile into a separate temporary directory for this projection. At P2.2 the progress result is for comparison. At P3 it becomes the official result for the group. The old Lua expressions still exist so the legacy path can be compiled independently.
 
 | Nefarian source | Legacy evidence | Progress result in SoD |
 |---|---|---|
@@ -92,7 +92,7 @@ The [P4 Lua](p4/sources.lua) declares ordinary Nefarian directly under the insta
 +     timeline = { "added 1.15.4.56738" },
 ```
 
-The original key now covers the entire history difficulty. A child still needs the same two scopes on its acquisition route. The [generated module](p4/expected-sod.lua) shows both occurrences of `19003` in full, including the race restriction on the original. The four phased profiles retain their P2.2 policy files. Retail selects the ordinary source and reads no phase profile.
+The original key now covers the entire history difficulty. A child still needs the same two scopes on its acquisition route. The [generated module](p4/expected-sod.lua) shows both occurrences of `19003` in full, including the race restriction on the original. All three comparisons use the same four frozen profiles, stored only with this runnable P4 excerpt. Retail selects the ordinary source and reads no phase profile.
 
 ## Reproduce the comparison
 
