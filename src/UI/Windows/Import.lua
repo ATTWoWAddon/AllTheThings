@@ -75,11 +75,9 @@ app:CreateWindow("Import", {
 
 			-- if there were no raw ids parsed from the input, try to use the string as a global table reference :O
 			local keychain = {("."):split(str)}
-			local i = 1
 			local t
-			while i <= #keychain do
+			for i = 1, #keychain do
 				t = (t and t[keychain[i]]) or _G[keychain[i]]
-				i = i + 1
 			end
 			if t then
 				for id in pairs(t) do
