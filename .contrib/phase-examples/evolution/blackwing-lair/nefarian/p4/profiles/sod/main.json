@@ -1,0 +1,9 @@
+{
+  "$comment": "Comparison copy of the sod authoring input. Write once at P2.2 for shadow validation. P3 and P4 read the same rules.",
+  "milestones": ["vanilla.4", "vanilla.5"],
+  "content": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.5" }] },
+    "raid.bwl.original": { "status": "disabled", "windows": [] },
+    "raid.bwl.sod20": { "windows": [{ "from": "vanilla.5" }] }
+  }
+}
