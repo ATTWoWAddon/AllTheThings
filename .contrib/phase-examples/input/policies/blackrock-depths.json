@@ -1,39 +1,31 @@
 {
-  "$comment": "Authoring input (C): P2.2 shadow check; P3/P4 output after promotion. Blackrock Depths. Choose a flavor:profile row and match its Lua keys to milestones in ../catalogs/<flavor>/<profile>.json.",
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
   "progression:main": {
-    "brd.dungeon": { "windows": [{ "from": "start" }] },
-    "brd.second-half": { "windows": [{ "from": "start" }] }
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]}
   },
   "era:main": {
-    "brd.dungeon": { "windows": [{ "from": "start" }] },
-    "brd.second-half": { "windows": [{ "from": "start" }] }
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]}
   },
   "anniversary:main": {
-    "brd.dungeon": { "windows": [{ "from": "start" }] },
-    "brd.second-half": { "windows": [{ "from": "start" }] }
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]}
   },
   "sod:main": {
-    "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
-    "brd.second-half": {
-      "$comment": "Gate the Emperor and his loot together. Gerstahn and her drops can open earlier in the same dungeon.",
-      "windows": [{ "from": "vanilla.4" }]
-    },
-    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
-    "brd.angerforge-axe": {
-      "$comment": "Move this window to change the Battle Axe alone. Other Angerforge drops inherit their own route.",
-      "windows": [{ "from": "vanilla.4" }]
-    }
+    "brd.dungeon": {"windows": [{"from": "vanilla.3"}]},
+    "brd.second-half": {"windows": [{"from": "vanilla.4"}]},
+    "brd.enthralled-sphere": {"windows": [{"from": "vanilla.3"}]},
+    "brd.angerforge-axe": {"windows": [{"from": "vanilla.4"}]}
   },
   "sod:replay": {
-    "$comment": "Comparison fixture (P4): SoD replay with a test opening for Demon Fall Canyon.",
-    "brd.dungeon": { "windows": [{ "from": "vanilla.3" }] },
-    "brd.second-half": { "windows": [{ "from": "vanilla.4" }] },
-    "brd.enthralled-sphere": { "windows": [{ "from": "vanilla.3" }] },
-    "brd.angerforge-axe": { "windows": [{ "from": "vanilla.4" }] }
+    "brd.dungeon": {"windows": [{"from": "vanilla.3"}]},
+    "brd.second-half": {"windows": [{"from": "vanilla.4"}]},
+    "brd.enthralled-sphere": {"windows": [{"from": "vanilla.3"}]},
+    "brd.angerforge-axe": {"windows": [{"from": "vanilla.4"}]}
   },
   "progression:replay": {
-    "$comment": "Comparison fixture (P4): progression replay with a test opening for Dungeon Set 2.",
-    "brd.dungeon": { "windows": [{ "from": "start" }] },
-    "brd.second-half": { "windows": [{ "from": "start" }] }
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]}
   }
 }

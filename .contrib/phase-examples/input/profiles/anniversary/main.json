@@ -1,28 +1,16 @@
 {
-  "$comment": "Authoring input (A/B): P2.2 shadow check; P3/P4 output after promotion. Anniversary main. List milestones in release order. Launch and the first raid opening occupy separate positions.",
-  "milestones": [
-    "vanilla.launch",
-    "vanilla.1.raids",
-    "vanilla.2",
-    "vanilla.3",
-    "vanilla.4",
-    "vanilla.5.war-effort",
-    "vanilla.6"
-  ],
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "milestones": ["vanilla.launch", "vanilla.1.raids", "vanilla.2", "vanilla.3", "vanilla.4", "vanilla.5.war-effort", "vanilla.6"],
   "content": {
-    "$comment": "Each key matches progressionKey in Lua. A drop with no key inherits the rules of its ancestors.",
-    "brd.dungeon": { "windows": [{ "from": "start" }] },
-    "brd.second-half": { "windows": [{ "from": "start" }] },
-    "dire-maul.common": { "windows": [{ "from": "vanilla.2" }] },
-    "dire-maul.isalien": {
-      "$comment": "The Dungeon Set 2 summon opens after Dire Maul itself. Move this row to reschedule only Isalien.",
-      "windows": [{ "from": "vanilla.4" }]
-    },
-    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
-    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] },
-    "raid.bwl.draconic-for-dummies": { "status": "unknown", "windows": [] },
-    "aq40.common": { "status": "unknown", "windows": [] },
-    "aq40.original": { "windows": [{ "from": "start" }] },
-    "gnomeregan.dungeon": { "windows": [{ "from": "start" }] }
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []},
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]},
+    "dire-maul.common": {"windows": [{"from": "vanilla.2"}]},
+    "dire-maul.isalien": {"windows": [{"from": "vanilla.4"}]},
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]},
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
   }
 }
