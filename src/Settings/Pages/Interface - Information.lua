@@ -1723,6 +1723,7 @@ app.Settings.CreateInformationType("UniqueInformationTypeName", {
 
 local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
 local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
+local InformationCheckBoxes, InformationTypesInitialized = {}, false;
 local function SortInformationTypesByLocalizedName(a,b)
 	return a.textLower < b.textLower;
 end
@@ -1834,10 +1835,10 @@ buttonNone:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -8, 10)
 buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
 buttonAll:SetPoint("RIGHT", buttonDefault, "LEFT", -8, 0)
 
-settings.RefreshActiveInformationTypes = function()
-	SortInformationTypes()
-	RefreshActiveInformationTypes();
-
+local function RefreshInformationCheckBoxes()
+	for _,filter in pairs(InformationCheckBoxes) do
+		filter:Hide();
+	end
 	local last
 	local totalTypes = #SortedInformationTypesByName;
 	local perRow, offset, scale = 24, 250, 0.8;
@@ -1849,9 +1850,17 @@ settings.RefreshActiveInformationTypes = function()
 	local split2 = perRow * 2;
 	local split3 = perRow * 3;
 	for idNo,informationType in ipairs(SortedInformationTypesByName) do
-		local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
-		filter.informationTypeID = informationType.informationTypeID;
+		local key = informationType.informationTypeID;
+		local filter = InformationCheckBoxes[key];
+		if not filter then
+			filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
+			filter.informationTypeID = key;
+			InformationCheckBoxes[key] = filter;
+		end
+		filter:ClearAllPoints();
 		filter:SetScale(scale);
+		filter:SetChecked(settings:GetTooltipSetting(key));
+		filter:Show();
 		-- Column 1
 		if idNo == 1 then
 			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 0, 0)
@@ -1875,8 +1884,15 @@ settings.RefreshActiveInformationTypes = function()
 end
 
 local function SetupInformationTypes()
+	if not InformationTypesInitialized then return; end
 	SortInformationTypes()
 	RefreshActiveInformationTypes()
+	RefreshInformationCheckBoxes()
+	app.WipeSearchCache();
+end
+settings.RefreshActiveInformationTypes = function()
+	InformationTypesInitialized = true;
+	SetupInformationTypes();
 end
 settings.CreateInformationType = function(key, t)
 	local informationType = CreateInformationType(key, t);
