@@ -79,7 +79,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			app.CreateDynamicHeader("artifactID", SimpleHeaderGroup(app.HeaderConstants.ARTIFACTS)),
 
 			-- Azerite Essences
-			app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES)),
+			app.CreateDynamicHeader("azeriteessenceID", SimpleHeaderGroup(app.HeaderConstants.AZERITE_ESSENCES, { minBuild = 80200 })),
 
 			-- Battle Pets
 			app.CreateDynamicHeader("speciesID", {
@@ -92,6 +92,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Campsites
 			app.CreateDynamicHeader("campsiteID", {
+				minBuild = 110100,
 				name = WARBAND_SCENES,
 				icon = app.asset("Category_Campsites")
 			}),
@@ -103,7 +104,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			}),
 
 			-- Conduits
-			app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {suffix=EXPANSION_NAME8})),
+			app.CreateDynamicHeader("conduitID", SimpleHeaderGroup(app.HeaderConstants.CONDUITS, {minBuild = 90000, suffix=EXPANSION_NAME8})),
 
 			-- Currencies
 			app.CreateDynamicHeaderByValue("currencyID", {
@@ -114,6 +115,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Decor
 			app.CreateDynamicHeader("decorID", {
+				minBuild = 110207,
 				name = CATALOG_SHOP_TYPE_DECOR,
 				icon = app.asset("Category_Housing")
 			}),
@@ -127,6 +129,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- First Crafts
 			app.CreateDynamicHeader("firstcraftID", {
+				minBuild = 100000,
 				name = L.FIRST_CRAFTS_CHECKBOX,
 				icon = app.asset("Category_Professions")	-- TODO: Make a new icon
 			}),
@@ -156,7 +159,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			}),
 
 			-- Mount Mods
-			app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS)),
+			app.CreateDynamicHeader("mountmodID", SimpleHeaderGroup(app.HeaderConstants.MOUNT_MODS, { minBuild = 100000 })),
 
 			-- Pet Battles
 			app.CreateDynamicHeader("pb", SimpleHeaderGroup(app.HeaderConstants.PET_BATTLES, {dynamic_withsubgroups = true})),
@@ -171,12 +174,13 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 			-- Profession Nodes
 			app.CreateDynamicHeader("professionnodeID", {
+				minBuild = 100000,
 				name = L.PROFESSION_NODES_CHECKBOX,
 				icon = app.asset("Category_Professions")	-- TODO: Make a new icon
 			}),
 
 			-- Runeforge Powers
-			app.CreateDynamicHeader("runeforgepowerID", SimpleHeaderGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
+			app.CreateDynamicHeader("runeforgepowerID", SimpleHeaderGroup(app.HeaderConstants.LEGENDARIES, {minBuild = 90000, suffix=EXPANSION_NAME8})),
 
 			-- Titles
 			app.CreateDynamicHeader("titleID", {
@@ -231,6 +235,12 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 
 		},
 	});
+	for i = #dynamicHeader.g, 1, -1 do
+		local minBuild = dynamicHeader.g[i].minBuild;
+		if minBuild and app.GameBuildVersion < minBuild then
+			table.remove(dynamicHeader.g, i);
+		end
+	end
 	local rootData = app.GetDatabaseRoot()
 	app.NestObject(rootData, dynamicHeader)
 	dynamicHeader.parent = rootData;

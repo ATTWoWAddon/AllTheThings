@@ -1143,6 +1143,7 @@ local InformationTypes = {
 		end,
 	});
 	CreateInformationType("sr", {
+		minBuild = 100000,
 		priority = 2.7,
 		isRecursive = true,
 		text = L.SHOW_SKYRIDING_CHECKBOX,
@@ -1300,9 +1301,9 @@ local InformationTypes = {
 	CreateInformationType("bonusID", { text = L.BONUS_ID, priority = 6 }),
 	CreateInformationType("modID", { text = L.MOD_ID, priority = 6 }),
 	CreateInformationType("artID", { text = L.ART_ID, priority = 7 }),
-	CreateInformationType("campsiteID", { text = L.CAMPSITE_ID, priority = 7 }),
-	CreateInformationType("decorID", { text = L.DECOR_ID, priority = 7 }),
-	CreateInformationType("professionnodeID", { text = L.PROFESSION_NODE_ID, priority = 7 }),
+	CreateInformationType("campsiteID", { minBuild = 110100, text = L.CAMPSITE_ID, priority = 7 }),
+	CreateInformationType("decorID", { minBuild = 110207, text = L.DECOR_ID, priority = 7 }),
+	CreateInformationType("professionnodeID", { minBuild = 100000, text = L.PROFESSION_NODE_ID, priority = 7 }),
 	CreateInformationType("iconPath", { text = L.ICON_PATH, ShouldDisplayInExternalTooltips = false, priority = 7 }),
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 
@@ -1339,9 +1340,8 @@ local InformationTypes = {
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
 
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
-	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
-	CreateInformationType("azeriteessenceID", { text = L.AZERITE_ESSENCE_ID }),
-	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
+	CreateInformationType("azeriteessenceID", { minBuild = 80200, text = L.AZERITE_ESSENCE_ID }),
+	CreateInformationType("conduitID", { minBuild = 90000, text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,
 		limit = 25,
@@ -1414,14 +1414,14 @@ local InformationTypes = {
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
 	CreateInformationType("flightpathID", { text = L.FLIGHT_PATH_ID }),
-	CreateInformationType("followerID", { text = L.FOLLOWER_ID }),
+	CreateInformationType("followerID", { minBuild = 60000, text = L.FOLLOWER_ID }),
 	CreateInformationType("headerID", { text = L.HEADER_ID }),
-	CreateInformationType("illusionID", { text = L.ILLUSION_ID }),
+	CreateInformationType("illusionID", { minBuild = 70000, text = L.ILLUSION_ID }),
 	CreateInformationType("instanceID", { text = L.INSTANCE_ID }),
 	CreateInformationType("mapID", { text = L.MAP_ID }),
 	CreateInformationType("objectID", { text = L.OBJECT_ID }),
 	CreateInformationType("raceID", { text = L.RACE_ID }),
-	CreateInformationType("runeforgepowerID", { text = L.RUNEFORGE_POWER_ID }),
+	CreateInformationType("runeforgepowerID", { minBuild = 90000, text = L.RUNEFORGE_POWER_ID }),
 	CreateInformationType("savedInstanceID", { text = L.SAVED_INSTANCE_ID }),
 	CreateInformationType("setID", { text = L.SET_ID }),
 	CreateInformationType("speciesID", { text = L.SPECIES_ID }),
@@ -1696,6 +1696,15 @@ local InformationTypes = {
 		end,
 	}),
 };
+if app.GameBuildVersion >= 70000 then
+	tinsert(InformationTypes, CreateInformationType("artifactID", { text = L.ARTIFACT_ID }));
+end
+for i = #InformationTypes, 1, -1 do
+	local minBuild = InformationTypes[i].minBuild;
+	if minBuild and app.GameBuildVersion < minBuild then
+		tremove(InformationTypes, i);
+	end
+end
 settings.InformationTypes = InformationTypes;
 
 --[[

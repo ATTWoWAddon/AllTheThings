@@ -6,8 +6,8 @@ local L = app.L;
 if not app.IsRetail then return; end
 
 -- Global locals
-local ipairs, setmetatable, tonumber, tinsert, wipe
-	= ipairs, setmetatable, tonumber, tinsert, wipe
+local ipairs, setmetatable, tonumber, tinsert, tremove, wipe
+	= ipairs, setmetatable, tonumber, tinsert, tremove, wipe
 
 -- Local functions
 local IMPORT_TYPES = {}
@@ -123,22 +123,32 @@ app:CreateWindow("Import", {
 		local initialButtons = {
 			{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
-			{ id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
-			{ id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
+			{ minBuild = 80200, id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
-			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
+			{ minBuild = 110100, id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
-			{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
+			{ minBuild = 110207, id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
 			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
-			{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
-			{ id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
+			{ minBuild = 60000, id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
+			{ minBuild = 70000, id = "illusionID", name = L.FILTER_ID_TYPES[103], icon = app.asset("Category_Illusions") },
 			{ id = "modItemID", name = ITEMS, icon = 135276 },
 			{ id = "questID", name = TRACKER_HEADER_QUESTS, icon = app.asset("Interface_Quest_header") },
 			{ id = "spellID", name = SPELLS, icon = 135736 },
 			{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
 		}
+
+		if app.GameBuildVersion >= 70000 then
+			tinsert(initialButtons, 3, { id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
+		end
+
+		for i = #initialButtons, 1, -1 do
+			local minBuild = initialButtons[i].minBuild;
+			if minBuild and app.GameBuildVersion < minBuild then
+				tremove(initialButtons, i);
+			end
+		end
 
 		for _, info in ipairs(initialButtons) do
 			IMPORT_TYPES[info.id:lower()] = info.id

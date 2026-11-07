@@ -38,10 +38,12 @@ local function createColumn(stringTable, color, columnNo)
 
 	local stringText = color
 	for _, text in ipairs(stringTable) do
-		if columnNo == 1 or columnNo == 3 then
-			stringText = stringText .. text.title .. "\n"
-		else
-			stringText = stringText .. "/att " .. text.command .. ":ID\n"
+		if not text.minBuild or app.GameBuildVersion >= text.minBuild then
+			if columnNo == 1 or columnNo == 3 then
+				stringText = stringText .. text.title .. "\n"
+			else
+				stringText = stringText .. "/att " .. text.command .. ":ID\n"
+			end
 		end
 	end
 	string:SetText(stringText)
@@ -51,27 +53,29 @@ end
 
 local stringsOne = {
 	{ title = L.ACHIEVEMENT, command = "achievement" },
-	{ title = L.ARTIFACT, command = "artifact" },
-	{ title = L.AZERITE_ESSENCE, command = "azeriteessence" },
+	{ minBuild = 80200, title = L.AZERITE_ESSENCE, command = "azeriteessence" },
 	{ title = L.BATTLE_PET, command = "battlepet" },
 	{ title = L.CATEGORY, command = "category" },
 	{ title = L.CLASSES, command = "class" },
-	{ title = L.CONDUIT, command = "conduit" },
+	{ minBuild = 90000, title = L.CONDUIT, command = "conduit" },
 	{ title = L.CREATURE, command = "creature" },
 	{ title = L.CRITERIA, command = "criteriaid" },
 	{ title = L.CURRENCY, command = "currency" },
-	{ title = L.DECOR, command = "decor" },
+	{ minBuild = 110207, title = L.DECOR, command = "decor" },
 	{ title = L.DIFFICULTY, command = "difficulty" },
 	{ title = L.ENCOUNTER, command = "encounter" },
 	{ title = L.EXPLORATION, command = "exploration" },
 	{ title = L.FACTION, command = "faction" },
 	{ title = L.FLIGHT_PATHS, command = "flightpath" },
-	{ title = L.FOLLOWER, command = "follower" },
+	{ minBuild = 60000, title = L.FOLLOWER, command = "follower" },
 }
+if app.GameBuildVersion >= 70000 then
+	table.insert(stringsOne, 2, { title = L.ARTIFACT, command = "artifact" });
+end
 local stringsTwo = {
 	{ title = L.HEADER, command = "header" },
 	{ title = L.HEIRLOOM, command = "heirloomid" },
-	{ title = L.ILLUSION, command = "illusion" },
+	{ minBuild = 70000, title = L.ILLUSION, command = "illusion" },
 	{ title = L.ITEM, command = "item" },
 	{ title = L.MAP, command = "map" },
 	{ title = L.MOUNT_SPELL, command = "mount" },
@@ -80,7 +84,7 @@ local stringsTwo = {
 	{ title = L.PROFESSION, command = "profession" },
 	{ title = L.QUEST, command = "quest" },
 	{ title = L.RECIPE_SPELL, command = "recipe" },
-	{ title = L.RUNECARVING_POWER, command = "runeforgepower" },
+	{ minBuild = 90000, title = L.RUNECARVING_POWER, command = "runeforgepower" },
 	{ title = L.SOURCES, command = "source" },
 	{ title = L.SPELL, command = "spell" },
 	{ title = L.TITLE_COMMANDS_UI, command = "title" },
