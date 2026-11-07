@@ -280,6 +280,31 @@ if not C_QuestLog_IsComplete then
 	end
 end
 
+local GetQuestLogQuestText = GetQuestLogQuestText;
+local GetQuestLogSelection, SelectQuestLogEntry = GetQuestLogSelection, SelectQuestLogEntry;
+local function GetQuestLogText(questID)
+	if not GetQuestLogQuestText then return end
+	local questLogIndex = GetQuestLogIndexByID(questID);
+	if not questLogIndex or questLogIndex < 1 then return end
+	-- Modern clients and Forever use indexed text even if compatibility globals exist.
+	if not app.IsClassic or not GetQuestLogSelection or not SelectQuestLogEntry then
+		return GetQuestLogQuestText(questLogIndex);
+	end
+
+	local previousSelection = GetQuestLogSelection() or 0;
+	if previousSelection == questLogIndex then
+		return GetQuestLogQuestText();
+	end
+	local success, lore, objective = pcall(function()
+		SelectQuestLogEntry(questLogIndex);
+		return GetQuestLogQuestText();
+	end);
+	local restored, restoreError = pcall(SelectQuestLogEntry, previousSelection);
+	if not success then error(lore, 0) end
+	if not restored then error(restoreError, 0) end
+	return lore, objective;
+end
+
 -- Quest Links
 local GetQuestLinkForObject
 do
@@ -1624,6 +1649,10 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		-- TODO: need app.GetAutomaticHeaderData to provide name if not returned from server prior to using QuestNameDefault
 		return QuestNameFromID[t.questID] or RETRIEVING_DATA
 	end,
+	lore = function(t)
+		local lore = GetQuestLogText(t.questID);
+		if lore and lore ~= "" then return lore end
+	end,
 	icon = function(t)
 		-- TODO: need app.GetAutomaticHeaderData to provide icon
 		return app.GetIconFromProviders(t)
@@ -1907,28 +1936,18 @@ app.AddEventHandler("OnLoad", function()
 		Process = function(t, reference, tooltipInfo)
 			if reference.questID and not reference.objectiveID then
 				local objectified = false;
-				local questLogIndex = GetQuestLogIndexByID(reference.questID);
-				if questLogIndex then
-					local lore, objective = GetQuestLogQuestText(questLogIndex);
-					if lore and app.Settings:GetTooltipSetting("Lore") then
-						tooltipInfo[#tooltipInfo+1] = {
-							left = lore,
-							color = app.Colors.TooltipLore,
-							wrap = true,
-						}
-					end
-					if objective then
-						tooltipInfo[#tooltipInfo+1] = {
-							left = REQUIREMENTS,
-							r = 1, g = 1, b = 1,
-						}
-						tooltipInfo[#tooltipInfo+1] = {
-							left = objective,
-							r = 0.4, g = 0.8, b = 1,
-							wrap = true,
-						}
-						objectified = true;
-					end
+				local _, objective = GetQuestLogText(reference.questID);
+				if objective then
+					tooltipInfo[#tooltipInfo+1] = {
+						left = REQUIREMENTS,
+						r = 1, g = 1, b = 1,
+					}
+					tooltipInfo[#tooltipInfo+1] = {
+						left = objective,
+						r = 0.4, g = 0.8, b = 1,
+						wrap = true,
+					}
+					objectified = true;
 				end
 				if not reference.saved then
 					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
