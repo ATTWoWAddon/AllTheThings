@@ -11,7 +11,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	CharacterData = ATTCharacterData
 end);
 
--- Depends on Item.Retail
+-- Depends on Item.lua
 
 app.CreateEnsemble = app.ExtendClass("Item", "EnsembleItem", "itemID", {
 	IsClassIsolated = true,

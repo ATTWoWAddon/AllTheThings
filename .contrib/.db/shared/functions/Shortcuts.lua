@@ -3055,7 +3055,7 @@ model = function(displayID, t)
 	t --[[@as ATTObject]].displayID = displayID;
 	return t;
 end
--- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.Retail.lua)
+-- Converts a given Item/Mod/Bonus combination into the current modItemID format (should roughly match GetGroupItemIDWithModID from Item.lua)
 --- Encodes ItemID, ModID, and BonusID into the parser's modItemID numeric format.
 ---@param itemID? ItemID # Base item ID; defaults to 0 when omitted.
 ---@param modID? ModID # Item modifier ID to encode for Legion and later builds.

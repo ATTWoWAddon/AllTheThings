@@ -30,7 +30,7 @@ app:CreateWindow("ItemFinder", {
 					end
 				end
 			});
-			-- This class is also defined in Item.Retail though it is extremely different
+			-- This class is also defined in Item.lua though it is extremely different
 			local CreateItemHarvester = app.ExtendClass("Item", "ItemFinder.ItemHarvester", "itemID", {
 				IsClassIsolated = true,
 				collectible = app.ReturnTrue,
