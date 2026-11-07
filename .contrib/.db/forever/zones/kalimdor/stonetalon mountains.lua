@@ -616,9 +616,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 14,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					i(216619, {	-- Student Fodder
-						description = "This item gives you 4 bars of Rested Experience when consumed.",
-					}),
+					i(216619),	-- Student Fodder
 					i(217314),	-- Moonsight Rifle
 					i(217315),	-- Precision Bow
 					i(3463),	-- Silver Star

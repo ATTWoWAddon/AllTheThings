@@ -1152,6 +1152,8 @@ i(268503, 57);		-- Azure Whelpling
 i(282047, 5162);	-- Baby Crocolisk
 i(276275, 5094);	-- Bitter Baitling
 i(268502, 1563);	-- Bronze Whelpling
+i(280797, 4180);	-- Arctic Hare
+i(280801, 5157);	-- Brown Rabbit
 i(280794, 5154);	-- Brown Ground Squirrel
 i(282637, 5167);	-- Condor Hatchling
 i(280803, 5158);	-- Eagle Owl

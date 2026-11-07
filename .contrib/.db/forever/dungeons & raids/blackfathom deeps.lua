@@ -309,3 +309,8 @@ instanceroot(227, {	-- Blackfathom Deeps
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(909, {	-- Baron Aquanis (Completed alongside the current Baron Aquanis (6922) turn-in)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});

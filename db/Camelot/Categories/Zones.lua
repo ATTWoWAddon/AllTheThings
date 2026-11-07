@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
+local ach,ah,crit,exp,faction,flt,fp,h,i,m,mnt,n,o,p,prof,q,qo,r,s,title,toy=_.CreateAchievement,_.CreateHeader,_.CreateAchievementCriteria,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy;
 categories.Zones=
 h(-732,{mapID=947,SortPriority=10,g={
 m(1414,{icon=236807,isContinent=1,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",maps={1464},g={
@@ -3045,6 +3045,8 @@ qo(4,{providers={{"n",4674}}}),
 qo(5,{providers={{"n",4675}}}),
 s(310073,277514,{b=1,f=4,loc=42}),
 s(310074,277515,{b=1,f=20})}}),
+q(79229,{awp=16001,coords={
+[1443]={{47.5,54.6}}},lvl=30,providers={{"o",417353}}}),
 q(5763,{coords={
 [1443]={{25,72.2}}},lvl=28,maps={1434},qgs={11877},qis={14546},r=1}),
 q(92814,{cost={{"i",10008,1}},lvl=30,minReputation={92,3000},u=1,g={
@@ -6708,7 +6710,7 @@ qo(1,{crs={4041,4042,4044,4147},providers={{"i",5675}}}),
 s(158636,6677,{b=1,f=27})}}),
 q(79980,{awp=16001,coords={
 [1442]={{40.8,52.5}}},lvl=14,providers={{"o",424005}},sourceQuests={79192},g={
-i(216619,{b=1,description="This item gives you 4 bars of Rested Experience when consumed.",f=55,spellID=436432}),
+i(216619,{b=1,f=55,spellID=436432}),
 s(199521,217314,{b=1,f=31,lvl=23}),
 s(199522,217315,{b=1,f=32,lvl=23}),
 s(157327,3463,{b=1,f=36}),
@@ -12417,7 +12419,8 @@ s(314722,283253,{awp=16001,f=3})}}),
 n(14223,{coords={
 [1416]={{14.2,54.2},{27.6,41},{36.4,16.2}}}}),
 n(14221,{coords={
-[1416]={{60,44.6}}}}),
+[1416]={{60,44.6}}},g={
+s(314724,283255,{awp=16001,f=25})}}),
 n(14281,{coords={
 [1416]={{48.6,82.8},{58.6,70.2}}}}),
 n(2453,{coords={
@@ -14071,8 +14074,8 @@ mnt(23239,{itemID=18787,lvl=60}),
 mnt(23240,{itemID=18785,lvl=60})}})),
 n(1263,{coords={
 [1426]={{63.2,50.8}}},r=2,g={
-i(280797,{awp=16001,f=101,spellID=10712}),
-i(280801,{awp=16001,f=101,spellID=1309752}),
+p(4180,{awp=16001,itemID=280797,npcID=7559,spellID=10712}),
+p(5157,{awp=16001,itemID=280801,npcID=271993,spellID=1309752}),
 p(72,{itemID=8497,npcID=7560,spellID=10711})}})}),
 h(-63,{
 i(769),
@@ -14359,7 +14362,7 @@ q(58,{coords={
 qo(1,{providers={{"n",604}}}),
 i(3604,{b=1,f=113,spellID=14825}),
 i(1729,{b=1,f=113}),
-i(3605,{b=1,f=113,spellID=29417})}}),
+s(146738,3605,{b=1,f=113,spellID=29417})}}),
 q(1043,{coords={
 [1431]={{75.3,49.2}}},lvl=25,qgs={661},r=2,sourceQuests={1042},g={
 qo(1,{coords={
@@ -15337,7 +15340,7 @@ q(96626,{altQuests={96629,96634,96646,96655,96658,96661},awp=16001,coords={
 q(97917,{altQuests={96059,97901,97929,97940,97953,98284,98286},awp=16001,coords={
 [1429]={{44.91,63.34}}},lc={1,"spellID",1230643},lvl=4,qgs={263399},r=2,requireSkill=333,sourceQuests={95998},g={
 r(1230643,{learnedAt=20,requireSkill=333,skillID=2940})}}),
-q(98287,{altQuests={96058,97902,97918,97930,97941,97954,98285},lc={1,"spellID",1230656},lvl=4,r=2,requireSkill=202,sourceQuests={95998},u=1,g={
+q(98287,{altQuests={96058,97902,97918,97930,97941,97954,98285},awp=16001,lc={1,"spellID",1230656},lvl=4,r=2,requireSkill=202,sourceQuests={95998},g={
 r(1230656,{learnedAt=20,requireSkill=202,skillID=2941})}}),
 q(97918,{altQuests={96058,97902,97930,97941,97954,98285,98287},awp=16001,coords={
 [1429]={{44.91,63.34}}},lc={1,"spellID",1230656},lvl=4,qgs={263399},r=2,requireSkill=202,sourceQuests={95998},g={
@@ -16293,7 +16296,7 @@ qo(1,{coords={
 q(531,{coords={
 [1432]={{83.4,65.2}}},lvl=15,qgs={1187},qis={2713},r=2,sourceQuests={271},g={
 i(3574,{b=1,f=113,spellID=14824}),
-i(3573,{b=1,f=113,spellID=29418}),
+s(146737,3573,{b=1,f=113,spellID=29418}),
 i(270017,{awp=16001,b=1,f=113})}}),
 q(256,{coords={
 [1432]={{37.2,46.4}}},lvl=17,providers={{"o",256}},r=2,g={
@@ -20996,7 +20999,8 @@ exp(16663),
 exp(16625),
 exp(17676)}),
 h(-31,{
-faction(2758)}),
+faction(2758,{
+title(38,{description="Awarded automatically upon reaching Exalted with the Nightclaw Druids."})})}),
 h(-45,{
 q(93746,{coords={
 [2521]={{59,79.6}}},lvl=4,qgs={251968},r=1,sourceQuests={93738},g={
@@ -21549,6 +21553,7 @@ s(302639,263017,{f=6,loc=46,lvl=9})}}),
 n(256028,{coords={
 [2521]={{53.2,48}}},g={
 s(302632,263006,{b=1,f=5,loc=42,lvl=3}),
+s(302633,263007,{b=1,f=4,loc=42,lvl=6}),
 s(302631,263005,{b=1,f=6,loc=42,lvl=3})}})}),
 h(-55,{
 n(259843,{coords={

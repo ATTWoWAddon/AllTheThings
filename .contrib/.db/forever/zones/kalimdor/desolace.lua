@@ -627,6 +627,12 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(277515),	-- Dagger of Deals
 				},
 			}),
+			q(79229, {	-- Highway Robbery
+				provider = { "o", 417353 },	-- Extinguished Campfire
+				coord = { 47.5, 54.6, MAP.DESOLACE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+			}),
 			q(5763, {	-- Hunting in Stranglethorn
 				qg = 11877,	-- Roon Wildmane
 				qi = 14546,	-- Roon's Kodo Horn

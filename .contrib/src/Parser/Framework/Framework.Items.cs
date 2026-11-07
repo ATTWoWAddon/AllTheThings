@@ -947,11 +947,11 @@ namespace ATT
                 if (data.TryGetValue("f", out long f))
                 {
                     var filter = (Objects.Filters)f;
-                    // WoW Forever's client has appearances for Thrown weapons and Ammo, so only Forever builds keep their SourceIDs
+                    // WoW Forever's client has appearances for Thrown weapons, Ammo and Quivers (Bags), so only Forever builds keep their SourceIDs
                     bool includeThrownAndAmmo = PreProcessorTags.Contains("FOREVER");
                     if (
                         !((filter > Objects.Filters.Invalid && filter < Objects.Filters.Thrown)
-                            || (includeThrownAndAmmo && (filter == Objects.Filters.Thrown || filter == Objects.Filters.Ammo))
+                            || (includeThrownAndAmmo && (filter == Objects.Filters.Thrown || filter == Objects.Filters.Ammo || filter == Objects.Filters.Bag))
                             || filter == Objects.Filters.ProfessionEquipment
                             || filter == Objects.Filters.Quest)
                         || filter == Objects.Filters.Ring

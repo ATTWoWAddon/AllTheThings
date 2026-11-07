@@ -2,7 +2,7 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(COMMON_VENDOR_ITEMS, {
-	description = "Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, and thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants.",
+	description = "Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, and quivers by Bowyers and Fletchers.",
 	groups = {
 		filter(AMMO, {
 			i(11284),	-- Accurate Slugs
@@ -13,6 +13,11 @@ root(ROOTS.Character, n(COMMON_VENDOR_ITEMS, {
 			i(2512),	-- Rough Arrow
 			i(2515),	-- Sharp Arrow
 			i(3033),	-- Solid Shot
+		}),
+		filter(BAGS, {
+			i(2101),	-- Light Quiver
+			i(11362),	-- Medium Quiver
+			i(5439),	-- Small Quiver
 		}),
 		filter(THROWN, {
 			i(2946),	-- Balanced Throwing Dagger

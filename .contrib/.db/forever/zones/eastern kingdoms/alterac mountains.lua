@@ -747,6 +747,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			n(14221, {	-- Gravis Slipknot
 				coord = { 60.0, 44.6, MAP.ALTERAC_MOUNTAINS },
+				groups = {
+					i(283255, {	-- Syndicate Executioner's Slicer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14281, {	-- Jimmy the Bleeder
 				coords = {

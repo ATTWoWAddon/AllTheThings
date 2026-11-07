@@ -31,7 +31,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			exploration(17676),	-- Windsong Standing Stones
 		}),
 		n(FACTIONS, {
-			faction(FACTION_NIGHTCLAW_DRUIDS),
+			faction(FACTION_NIGHTCLAW_DRUIDS, {
+				groups = {
+					title(38, {	-- %s of the Nightclaw
+						description = "Awarded automatically upon reaching Exalted with the Nightclaw Druids.",
+					}),
+				},
+			}),
 		}),
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
@@ -1822,6 +1828,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 53.2, 48.0, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(263006),	-- Scout Ranger's Tunic
+					i(263007),	-- Skyseer's Vest
 					i(263005),	-- Thendal Watcher's Vest
 				},
 			}),
@@ -2240,6 +2247,12 @@ root(ROOTS.HiddenQuestTriggers, {
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
 	q(92542, {	-- Completed after accepting quest Falaath Village (92529)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(93175, {	-- Reported completed in southern Zephras Isle [66.2, 76.6]
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(93458, {	-- Completed by the 'Flag Tracking Quest' spell (1263980), reported at Vayn Moongaze (Nightclaw Druids) after the Unnerving Silence (94484) quests
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
 });

@@ -760,7 +760,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230656 },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					recipe(1230656),	-- Engineering: Reagent Bot
 				},
