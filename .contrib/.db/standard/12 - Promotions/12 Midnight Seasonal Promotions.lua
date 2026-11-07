@@ -199,8 +199,10 @@ root(ROOTS.Promotions, {
 				description =
 					-- #if BEFORE 12.1.0.69933
 					"McDonald's UK promotion. Available from 25th August 2026 until 28th September 2026.\n\nItem is redeemable for 1500 points in the McDonald's UK app. You can get 1000 points for the registration, then 1 point per 1p spent.",
-					-- #else
+					-- #else if BEFORE 12.1.5.70783
 					"McDonald's Australia promotion. Available until 22nd January 2027.\n\nItem is redeemable for 2000 points in the McDonald's Australia app.",
+					-- #else
+					"McDonald's Australia & Canada promotion. Available until 23rd November 2026 in Canada and 22nd January 2027 in Australia.\n\nItem is redeemable for 2000 points in the McDonald's app.",
 					-- #endif
 				timeline = { "added 12.1.0.69465", "removed 12.1.0.69933", "added 12.1.0.69933", "removed 12.1.7.99999" },
 				u = REAL_MONEY,
