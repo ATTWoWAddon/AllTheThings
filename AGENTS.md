@@ -16,15 +16,22 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 - For AI-assisted issues, add an `AI Assistance` section to the issue description. When using an existing issue form, place it in `Additional Context` or the equivalent free-text field.
 - Describe assistance and verification accurately. Do not claim human review, testing, or source verification that did not occur.
 
+## Git Branch Protection
+
+- `master` is a protected branch. Never force-push it, including with `--force-with-lease`.
+- If `upstream/master` advances, fetch and rebase local commits onto it, then push normally.
+
 ## Commit Messages and Attribution
 
 - Use the commit subject format `[<Category>] <summary>.`, ending with a period. Capitalize the first letter of the bracketed category. For example: `[Docs] Add draft ATT agent guidelines.`
-- Keep the complete commit subject at 50 characters or fewer, including the bracketed category, spaces, and final period.
-- When merging a PR, include its number in the resulting merge or squash commit subject. For custom squash titles, use `[<Category>] <summary> (#<PR number>).`; count the PR reference toward the 50-character limit and shorten the summary if needed. Do not rely on GitHub to append the PR number when supplying a custom title.
+- Aim for a complete commit subject of 50 characters or fewer; never exceed 72 characters. Count the bracketed category, spaces, any PR reference, and the final period.
+- When merging a PR, include its number in the resulting merge or squash commit subject. For custom squash titles, use `[<Category>] <summary> (#<PR number>).`; count the PR reference toward the subject length and shorten the summary if needed. Do not rely on GitHub to append the PR number when supplying a custom title.
 - Check the exact final subject, including the PR number, before merging, and verify the published subject afterward.
 - Describe the actual content or code changes and their resulting behavior in the subject and body. Omit references to user instructions or the agent's workflow.
 - Describe detailed changes in the commit body, separated from the subject by a blank line.
 - When the commit body contains multiple points, format them as a bulleted list using `*` or `-`.
+- Keep each commit-body bullet item at 80 characters or fewer, including its marker and spaces.
+- For database maintenance commits, identify the affected quests, NPCs, objects, items, or other records. Detailed field values, such as exact coordinates or cost quantities, do not need to be listed in the commit message.
 
 Every commit containing AI-assisted work must end with exactly one `Assisted-by:` trailer on a single line. Include every contributing model on that line, separated by a comma and a space. End the trailer with an ASCII period after the final model name; the period is punctuation, not part of a model name.
 
