@@ -10,17 +10,17 @@
 
 ## Migration stages by file
 
-P1–P4 describe how one group of source records is migrated. A, B and C are three possible file layouts. A name such as `vanilla.5` identifies a milestone on one flavor’s release schedule. Different groups can migrate independently.
+[Open Blackwing Lair before and after each edit](evolution/blackwing-lair/README.md). Start with the complete current raid file, then compare the annotated file and its three proposed P4 sources. The separate executable Nefarian excerpt follows both loot tables. P1–P4 are migration stages. A/B/C are alternative authoring interfaces. `vanilla.5` is an in-game milestone.
 
-| Migration stage | File to open for Blackwing Lair | What produces the database at that stage |
+| Step | Actual snapshot | What changes |
 |---|---|---|
-| **P1** | [Existing raid source](../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua). Look for `applyclassicphase(PHASE_THREE, ...)`. | The production Parser reads the existing phase writers. Freeze that build and its inputs for comparison. |
-| **P2.1 · Lua first** | [Lua additions in the design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#p21-add-the-lua-keys-before-writing-json). Add keys to the same raid source while keeping its old guards. | The legacy path still supplies output. A missing JSON rule can be recorded as pending. |
-| **P2.2 · JSON next** | [A/B profile](input/profiles/sod/main.json), or [C catalog](input/catalogs/sod/main.json) and [C instance rules](input/policies/blackwing-lair.json). | Write the rules and validate them separately. The official output still comes from the legacy path. |
-| **P3** | Reuse the P2.2 policy files. The [migration manifest and comparison design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) define which group advances. | The progress rules supply official output for that group. Independently compile the old Lua with its original phase writers to obtain the legacy golden. |
-| **P4 · executable example** | [Shared A/C raid source](input/sources.lua), or [B layout](input/layout.lua), [selection](input/selection.json) and [reworked loot](input/fragments/bwl.rework.lua). Keep the reviewed JSON. | Remove the old phase writers and flavor guards from that group. The example Parser emits a [SoD module](generated/sod-main.lua) using the proposed format. |
+| **P1** | [Original Lua](evolution/blackwing-lair/p1/1.6%20Blackwing%20Lair.lua) · [Shipped database](evolution/blackwing-lair/nefarian/p1/legacy-sod.md) | The existing raid uses `applyclassicphase` plus a SoD guard around the reworked difficulty. |
+| **P2.1** | [Complete annotated raid](evolution/blackwing-lair/p2.1/1.6%20Blackwing%20Lair.lua) | Add the keys and SoD applicability first. The old wrappers still supply official output. |
+| **P2.2** | [Lua](evolution/blackwing-lair/p2.2/1.6%20Blackwing%20Lair.lua) · [New SoD JSON](evolution/blackwing-lair/p2.2/profiles/sod/main.json) | Write release windows and validate them in shadow. |
+| **P3** | [Lua](evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) · [Stage switch](evolution/blackwing-lair/p3/migration.json) | The same Lua and JSON now supply official progress output. Keep the old writers for an independent legacy comparison. |
+| **P4** | [Rewritten Lua](evolution/blackwing-lair/p4/sod.lua) · [Generated Nefarian excerpt](evolution/blackwing-lair/nefarian/p4/expected-sod.lua) | Remove the guards and wrappers. Keep the reviewed policy and separate the original and reworked loot routes. |
 
-The standalone command exercises the **P4 candidate** and the ordinary **Retail default**. P1 and P2.1 point to the existing source and design excerpt. The P2.2 shadow run and the P3 legacy golden are specified in the design. The 21 modules from this comparison test equivalence across A/B/C. Retail takes the ordinary tree and has no release schedule.
+[Five more before-and-after examples](evolution/OTHER_INSTANCES.md) cover Blackrock Depths, Demon Fall Canyon, Dire Maul, Temple of Ahn’Qiraj and Gnomeregan. The [production design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) describes how different source groups advance independently.
 
 ## Run an example
 
