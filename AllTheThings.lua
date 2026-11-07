@@ -174,7 +174,7 @@ local function AddContainsData(group, tooltipInfo)
 	-- app.PrintDebug(entries and #entries,"contains entries")
 	if #entries > 0 then
 		local left, right;
-		tinsert(tooltipInfo, { left = L.CONTAINS });
+		tooltipInfo[#tooltipInfo+1] = { left = L.CONTAINS }
 		local item, entry;
 		for i=1,#entries do
 			item = entries[i];
@@ -309,11 +309,11 @@ local function AddContainsData(group, tooltipInfo)
 				end
 			end
 
-			tinsert(tooltipInfo, { left = item.prefix .. left, right = right });
+			tooltipInfo[#tooltipInfo+1] = { left = item.prefix .. left, right = right }
 		end
 
 		if ContainsExceeded > 0 then
-			tinsert(tooltipInfo, { left = (L.AND_MORE):format(ContainsExceeded) });
+			tooltipInfo[#tooltipInfo+1] = { left = (L.AND_MORE):format(ContainsExceeded) }
 		end
 	end
 	return working
@@ -574,9 +574,9 @@ local function GetSearchResults(method, paramA, paramB, options)
 					for i,j in ipairs(group) do
 						if j.rank == rank and RecursiveUnobtainableFilter(j) then
 							if j.mapID or j.parent == nil or j.parent.parent == nil then
-								tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+								regroup[#regroup+1] = setmetatable({["g"] = {}}, { __index = j })
 							else
-								tinsert(regroup, j);
+								regroup[#regroup+1] = j
 							end
 						end
 					end
@@ -584,9 +584,9 @@ local function GetSearchResults(method, paramA, paramB, options)
 					for i,j in ipairs(group) do
 						if j.rank == rank and RecursiveCharacterRequirementsFilter(j) and RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
 							if j.mapID or j.parent == nil or j.parent.parent == nil then
-								tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+								regroup[#regroup+1] = setmetatable({["g"] = {}}, { __index = j })
 							else
-								tinsert(regroup, j);
+								regroup[#regroup+1] = j
 							end
 						end
 					end
@@ -599,13 +599,13 @@ local function GetSearchResults(method, paramA, paramB, options)
 				if app.MODE_ACCOUNT then
 					for i,j in ipairs(group) do
 						if RecursiveUnobtainableFilter(j) then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+							regroup[#regroup+1] = setmetatable({["g"] = {}}, { __index = j })
 						end
 					end
 				else
 					for i,j in ipairs(group) do
 						if RecursiveCharacterRequirementsFilter(j) and RecursiveUnobtainableFilter(j) and RecursiveGroupRequirementsFilter(j) then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+							regroup[#regroup+1] = setmetatable({["g"] = {}}, { __index = j })
 						end
 					end
 				end
@@ -876,7 +876,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 		-- 	-- print("achieve group",#group.g)
 		-- 	for i=1,#group.g do
 		-- 		if group.g[i].key ~= "criteriaID" then
-		-- 			tinsert(noCrits, group.g[i]);
+		-- 			noCrits[#noCrits+1] = group.g[i]
 		-- 		end
 		-- 	end
 		-- 	group.g = noCrits;
@@ -1193,7 +1193,7 @@ local function BuildSourceParent(group)
 				-- 	local questRef;
 				-- 	for _,sq in ipairs(thing.sourceQuests) do
 				-- 		questRef = SearchForObject("questID", sq) or {["questID"] = sq};
-				-- 		tinsert(parents, questRef);
+				-- 		parents[#parents+1] = questRef
 				-- 	end
 				-- end
 			end

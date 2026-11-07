@@ -1282,7 +1282,7 @@ ATTSettingsObjectMixin = {
 			objects = {}
 			self.Objects = objects;
 		end
-		tinsert(objects, o);
+		objects[#objects+1] = o
 	end,
 	-- Allows an Object to Refresh all Objects
 	RefreshChildren = function(self)

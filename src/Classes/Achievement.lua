@@ -156,7 +156,7 @@ do
 				end
 			end
 			if #criteriaDatas > 0 then
-				tinsert(tooltipInfo, { left = " " });
+				tooltipInfo[#tooltipInfo+1] = { left = " " }
 				tinsert(tooltipInfo, {
 					left = "Total Criteria",
 					right = tostring(#criteriaDatas),

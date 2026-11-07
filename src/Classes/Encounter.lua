@@ -4,7 +4,7 @@ local _,app = ...;
 local EJ_GetEncounterInfo = EJ_GetEncounterInfo;
 if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then
 	local MAX_CREATURES_PER_ENCOUNTER = 9;
-	local tinsert, EJ_GetCreatureInfo = tinsert, EJ_GetCreatureInfo;
+	local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
 	local cache = app.CreateCache("encounterID");
 	local function CacheInfo(t, field)
 		local _t, id = cache.GetCached(t);
@@ -20,7 +20,7 @@ if EJ_GetEncounterInfo and app.GameBuildVersion >= 60000 then
 		for i=1,MAX_CREATURES_PER_ENCOUNTER do
 			displayInfo = select(4, EJ_GetCreatureInfo(i, id));
 			if displayInfo then
-				tinsert(displayInfos, displayInfo);
+				displayInfos[#displayInfos+1] = displayInfo
 			else
 				break;
 			end

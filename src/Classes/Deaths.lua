@@ -11,7 +11,7 @@ local function OnTooltipForDeathTracker(t, tooltipInfo)
 	for guid,character in pairs(ATTCharacterData) do
 		if character and character.Deaths and character.Deaths > 0 then
 			if not character.ignored then
-				tinsert(c, character);
+				c[#c+1] = character
 			end
 		end
 	end

@@ -287,7 +287,7 @@ setmetatable(EventInformation, { __index = function(t, id)
 				if subinfo and subinfo.times then
 					for j,schedule in ipairs(subinfo.times) do
 						schedule.subEventID = eventID;
-						tinsert(times, schedule);
+						times[#times+1] = schedule
 					end
 				end
 			end

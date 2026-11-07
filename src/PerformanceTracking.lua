@@ -7,8 +7,8 @@ local appName, app = ...;
 -- Tables should represent a scope nested within their parent table's scope, etc.
 -- Functions should use their containing Table scope with a key name
 
-local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable, getmetatable, tostring,rawget
-	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable, getmetatable, tostring,rawget
+local unpack, GetTimePreciseSec, pairs, ipairs, type, table_concat, rawset, setmetatable, getmetatable, tostring,rawget
+	= unpack, GetTimePreciseSec, pairs, ipairs, type, table.concat, rawset, setmetatable, getmetatable, tostring,rawget
 
 local debug = false
 print("Perf:Loading:debug:",debug)
@@ -55,7 +55,7 @@ app.PrintPerf = function()
 					line[2] = tostring(k);
 					line[3] = v.count;
 					line[4] = v.time;
-					tinsert(blob, table_concat(line, ","))
+					blob[#blob + 1] = table_concat(line, ",")
 				-- else print("Why is this a",type(v),typeKey,k,v)
 				end
 			end

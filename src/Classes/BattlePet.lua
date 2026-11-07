@@ -236,7 +236,7 @@ if C_PetJournal_GetPetStats then
 							if petID and owned and speciesID == s then
 								index = index + 1;
 								if index == 1 then
-									tinsert(tooltipInfo, { left = " " });
+									tooltipInfo[#tooltipInfo+1] = { left = " " }
 									tinsert(tooltipInfo, { left = app.L.OWNED_PETS });
 								end
 								health, maxHealth, power, speed, rarity = C_PetJournal_GetPetStats(petID);

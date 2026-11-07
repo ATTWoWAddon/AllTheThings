@@ -693,15 +693,15 @@ local function GenerateSourceQuestString(quest)
 		if quest.missingReqs or quest.prereqs then
 			local info = {};
 			for sq,c in pairs(quest.prereqs) do
-				tinsert(info, sq);
-				tinsert(info, c)
+				info[#info+1] = sq
+				info[#info+1] = c
 			end
 			return app.TableConcat(info, nil, nil, ":");
 		elseif quest.sourceQuests then
 			local info = {};
 			for _,sq in ipairs(quest.sourceQuests) do
-				tinsert(info, sq);
-				tinsert(info, IsQuestFlaggedCompleted(sq) and "1" or "0")
+				info[#info+1] = sq
+				info[#info+1] = IsQuestFlaggedCompleted(sq) and "1" or "0"
 			end
 			return app.TableConcat(info, nil, nil, ":");
 		end
@@ -2493,7 +2493,7 @@ local function NestSourceQuests(questChainRoot, group)
 				end
 
 				-- If the quest was valid, attach it.
-				if sourceQuest then tinsert(prereqs, sourceQuest); end
+				if sourceQuest then prereqs[#prereqs+1] = sourceQuest end
 			end
 		end
 
@@ -2501,7 +2501,7 @@ local function NestSourceQuests(questChainRoot, group)
 		sourceQuests = {};
 		if #prereqs > 0 then
 			for sourceQuestID,i in pairs(subSourceQuests) do
-				tinsert(sourceQuests, tonumber(sourceQuestID));
+				sourceQuests[#sourceQuests+1] = tonumber(sourceQuestID)
 			end
 			-- print("Shifted pre-reqs down & next sq layer",#prereqs)
 			-- app.PrintTable(sourceQuests)
@@ -2558,7 +2558,7 @@ local function NestSourceQuests(questChainRoot, group)
 			end
 			if lastprereq.g then
 				for i,data in ipairs(lastprereq.g) do
-					tinsert(g, data);
+					g[#g+1] = data
 				end
 			end
 			prereqs = g;

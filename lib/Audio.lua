@@ -62,7 +62,7 @@ function api:RegisterForSoundPackEvents(handler)
 	if type(handler) ~= "function" then
 		error("Invalid event handler '" .. tostring(handler) .. "'");
 	end
-	tinsert(EventHandlers, handler);
+	EventHandlers[#EventHandlers+1] = handler
 end
 function api:ReloadSoundPack()
 	api:ActivateSoundPack(AllTheThingsSavedVariables.CurrentSoundPack or "Default", true);
@@ -174,11 +174,11 @@ function app.AddSound(tableName, sound)
 	if not soundTable then
 		soundTable = {};
 		for i,snd in ipairs(DefaultSoundPack[tableName]) do
-			tinsert(soundTable, snd);
+			soundTable[#soundTable+1] = snd
 		end
 		deprecatedSoundPack[tableName] = soundTable;
 	end
-	tinsert(soundTable, sound);
+	soundTable[#soundTable+1] = sound
 end
 -- Allows clearing the Sounds for a given 'type' of Sound
 function app.ClearSounds(tableName)

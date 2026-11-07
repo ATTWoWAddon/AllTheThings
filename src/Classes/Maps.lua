@@ -665,7 +665,7 @@ local function InternalCheckExplorationForPlayerPosition()
 		-- app.PrintDebug("CheckPlayerExploration",mapID,pos.x,pos.y,app:SearchLink(app.SearchForObject("explorationID",areaID,"field")))
 		if not characterExploration[areaID] then
 			saved[areaID] = true
-			tinsert(newAreas, areaID);
+			newAreas[#newAreas+1] = areaID
 		end
 		if not ReportedAreas[areaID] then
 			if #app.SearchForField("explorationID", areaID) < 1 then
@@ -755,7 +755,7 @@ end
 local function PrintReportedAreaSummary()
 	local reportedAreas = {};
 	for areaID,o in pairs(ReportedAreas) do
-		tinsert(reportedAreas, o);
+		reportedAreas[#reportedAreas+1] = o
 	end
 	if #reportedAreas > 0 then
 		-- Create an information object.
@@ -774,12 +774,12 @@ local function PrintReportedAreaSummary()
 			for i,o in ipairs(areas) do
 				tinsert(info, "exploration(" .. o.explorationID .. "),\t-- " .. o.text);
 			end
-			tinsert(info, "");
+			info[#info+1] = ""
 		end
 
 		tinsert(info, "ver: "..app.Version);
 		tinsert(info, "build: "..app.GameBuildVersion);
-		tinsert(info, "```");	-- discord fancy box end
+		info[#info+1] = "```"	-- discord fancy box end
 
 		local popupID, text = "found-area-summary", "Summary";
 		app:SetupReportDialog(popupID, text, info);
@@ -930,7 +930,7 @@ local function HarvestExploration()
 								if #searchResults < 1 or ReportedAreas[areaID] then
 									PrintDiscordInformationForExploration(o);
 								end
-								tinsert(searchResults, o);
+								searchResults[#searchResults+1] = o
 							end
 						end
 					end

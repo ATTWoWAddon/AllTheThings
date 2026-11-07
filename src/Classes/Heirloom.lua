@@ -203,23 +203,23 @@ do
 
 		-- Rank 3 was added with Legion (7.2.5.24076)
 		if gameBuildVersion > 70205 then
-			tinsert(armorTokenItemIDs, 151614);		-- Weathered Heirloom Armor Casing
-			tinsert(weaponTokenItemIDs, 151615);		-- Weathered Heirloom Scabbard
+			armorTokenItemIDs[#armorTokenItemIDs+1] = 151614		-- Weathered Heirloom Armor Casing
+			weaponTokenItemIDs[#weaponTokenItemIDs+1] = 151615		-- Weathered Heirloom Scabbard
 
 			-- Rank 4 was added with BFA (8.1.5.29701)
 			if gameBuildVersion > 80105 then
-				tinsert(armorTokenItemIDs, 167731);		-- Battle-Hardened Heirloom Armor Casing
-				tinsert(weaponTokenItemIDs, 167732);		-- Battle-Hardened Heirloom Scabbard
+				armorTokenItemIDs[#armorTokenItemIDs+1] = 167731		-- Battle-Hardened Heirloom Armor Casing
+				weaponTokenItemIDs[#weaponTokenItemIDs+1] = 167732		-- Battle-Hardened Heirloom Scabbard
 
 				-- Rank 5 was added with Shadowlands (9.1.5.40871)
 				if gameBuildVersion > 90105 then
-					tinsert(armorTokenItemIDs, 187997);		-- Eternal Heirloom Armor Casing
-					tinsert(weaponTokenItemIDs, 187998);		-- Eternal Heirloom Scabbard
+					armorTokenItemIDs[#armorTokenItemIDs+1] = 187997		-- Eternal Heirloom Armor Casing
+					weaponTokenItemIDs[#weaponTokenItemIDs+1] = 187998		-- Eternal Heirloom Scabbard
 
 					-- Rank 6 was added with Dragonflight (10.1.0.49407)
 					if gameBuildVersion > 100100 then
-						tinsert(armorTokenItemIDs, 204336);		-- Awakened Heirloom Armor Casing
-						tinsert(weaponTokenItemIDs, 204337);		-- Awakened Heirloom Scabbard
+						armorTokenItemIDs[#armorTokenItemIDs+1] = 204336		-- Awakened Heirloom Armor Casing
+						weaponTokenItemIDs[#weaponTokenItemIDs+1] = 204337		-- Awakened Heirloom Scabbard
 					end
 				end
 			end

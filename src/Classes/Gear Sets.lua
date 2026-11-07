@@ -13,10 +13,10 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 
 -- Transmog is supported!
 -- Global locals
-local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
+local ipairs, select, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection_GetSourceInfo, C_TransmogSets_GetSetInfo, C_TransmogSets_GetAllSourceIDs
 	---@diagnostic disable-next-line: deprecated
-	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
+	= ipairs, select, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection.GetSourceInfo, C_TransmogSets.GetSetInfo, C_TransmogSets.GetAllSourceIDs;
 
 -- Gear Sets
@@ -157,11 +157,11 @@ local function BuildGearSetInformationForGroup(group)
 				local search = app.SearchForObject("sourceID", sourceID, "key");
 				if search then
 					search = app.CloneObject(search, true);
-					tinsert(g, search);
+					g[#g+1] = search
 				else
 					local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if otherSourceInfo then
-						tinsert(g, app.CreateItemSource(sourceID));
+						g[#g+1] = app.CreateItemSource(sourceID)
 					end
 				end
 			end

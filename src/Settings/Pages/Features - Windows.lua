@@ -19,14 +19,14 @@ end
 local function OnTooltipForWindowButton(self, tooltipInfo)
 	local window = self.Window;
 	UpdateButtonText(self, window);
-	tinsert(tooltipInfo, { left = self:GetText() });
-	tinsert(tooltipInfo, { left = " " });
+	tooltipInfo[#tooltipInfo+1] = { left = self:GetText() }
+	tooltipInfo[#tooltipInfo+1] = { left = " " }
 
 	-- Assign the Text Label and Tooltip
 	local data = window.data;
 	if data then
 		local summaryText = app.GetProgressTextForTooltip(data);
-		if summaryText then tinsert(tooltipInfo, { summaryText = summaryText }); end
+		if summaryText then tooltipInfo[#tooltipInfo+1] = { summaryText = summaryText } end
 		local description = data.description;
 		if description then tinsert(tooltipInfo, { left = "|cffffffff" .. description .. "|r\n\n", wrap = true }); end
 	end
@@ -46,7 +46,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		tinsert(tooltipInfo, { left = L.COMMANDS_LABEL .. " |cffcccccc\n  " .. app.TableConcat(commandTexts, nil, nil, "\n  ") .. "|r" });
 	end
 	if window.HasPendingUpdate then
-		tinsert(tooltipInfo, { left = " " });
+		tooltipInfo[#tooltipInfo+1] = { left = " " }
 		tinsert(tooltipInfo, {
 			left = L["UPDATES_PAUSED"],
 			right = L["MAIN_LIST_REQUIRES_REFRESH"],
@@ -60,7 +60,7 @@ local function RefreshWindowManager()
 		if not window.HideFromSettings then
 			app:GetWindow(suffix);
 			if window.IsTopLevel then
-				tinsert(topKeys, suffix);
+				topKeys[#topKeys+1] = suffix
 			else
 				keys[suffix] = window;
 			end
@@ -69,14 +69,14 @@ local function RefreshWindowManager()
 	for suffix,window in pairs(app.Windows) do
 		if not window.HideFromSettings then
 			if window.IsTopLevel then
-				tinsert(topKeys, suffix);
+				topKeys[#topKeys+1] = suffix
 			else
 				keys[suffix] = window;
 			end
 		end
 	end
 	for suffix,window in pairs(keys) do
-		tinsert(sortedList, suffix);
+		sortedList[#sortedList+1] = suffix
 	end
 	app.Sort(sortedList, app.SortDefaults.Strings);
 	for i,suffix in ipairs(topKeys) do
@@ -95,7 +95,7 @@ local function RefreshWindowManager()
 					button:SetScript("OnClick", OnClickForWindowButton);
 					button.OnTooltip = OnTooltipForWindowButton;
 					button:SetATTTooltip();
-					tinsert(WindowButtons, button);
+					WindowButtons[#WindowButtons+1] = button
 				end
 				button.Window = window;
 				button.Suffix = window.Suffix;

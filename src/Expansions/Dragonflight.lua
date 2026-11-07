@@ -332,7 +332,7 @@ do
 
 				local line = "AssignProfessionNode(" .. id .. ", " .. name .. ", " .. icon .. ") -- " .. professionName
 
-				tinsert(info, line)
+				info[#info+1] = line
 			end
 		end
 
