@@ -82,7 +82,7 @@ app:CreateWindow("Maps", {
 							end
 						end
 						mapObject.parent = parent;
-						tinsert(parent.g, mapObject);
+						parent.g[#parent.g+1] = mapObject
 					end
 
 					-- Sort the maps by number of relative maps, then by name if matching.

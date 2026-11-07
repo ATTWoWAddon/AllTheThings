@@ -3,8 +3,8 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local ipairs, pairs, tinsert, tonumber, tostring
-	= ipairs, pairs, tinsert, tonumber, tostring;
+local ipairs, pairs, tonumber, tostring
+	= ipairs, pairs, tonumber, tostring;
 
 -- Implementation
 local __SearchSetup = {

@@ -4,8 +4,8 @@ local L = app.L;
 
 -- Global locals
 if C_TransmogCollection then
-local ipairs, tinsert, C_TransmogCollection_GetSourceInfo
-	= ipairs, tinsert, C_TransmogCollection.GetSourceInfo;
+local ipairs, C_TransmogCollection_GetSourceInfo
+	= ipairs, C_TransmogCollection.GetSourceInfo;
 local function UnmarkNestedCollectible(group)
 	if group then
 		if not group.sourceID then

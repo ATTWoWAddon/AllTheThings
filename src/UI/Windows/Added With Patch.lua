@@ -1,8 +1,8 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-local tinsert, math_floor
-	= tinsert, math.floor;
+local math_floor
+	= math.floor;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Local functions

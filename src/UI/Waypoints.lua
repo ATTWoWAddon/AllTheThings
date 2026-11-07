@@ -334,7 +334,7 @@ app.AddEventHandler("OnReady", function()
 								hashes = { ("ID"):split(sourcePath) };
 								if #hashes == 3 then
 									ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
-									if ref then tinsert(root, ref); end
+									if ref then root[#root+1] = ref end
 								end
 							end
 						end

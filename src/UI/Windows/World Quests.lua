@@ -9,8 +9,8 @@ if not app.IsRetail then return; end
 if app.GameBuildVersion < 70000 then return; end
 
 -- Global locals
-local ipairs, pairs, tinsert, type, wipe
-	= ipairs, pairs, tinsert, type, wipe
+local ipairs, pairs, type, wipe
+	= ipairs, pairs, type, wipe
 
 -- Implementation
 app:CreateWindow("WorldQuests", {

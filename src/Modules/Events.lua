@@ -208,7 +208,7 @@ local function GetEventCache()
 									end
 									local schedule = CreateSchedule(event.startTime, event.endTime);
 									schedule.remappedID = eventID;
-									tinsert(t.times, schedule);
+									t.times[#t.times+1] = schedule
 
 									local finalID = remapping[remappedID];
 									if finalID then

@@ -924,7 +924,7 @@ local function HarvestExploration()
 								local o = app.CreateExploration(areaID);
 								o.mapID = mapID;
 								o.parent = explorationHeader;
-								tinsert(explorationHeader.g, o);
+								explorationHeader.g[#explorationHeader.g+1] = o
 								byExplorationID[areaID] = o;
 								local searchResults = app.SearchForField("explorationID", areaID);
 								if #searchResults < 1 or ReportedAreas[areaID] then

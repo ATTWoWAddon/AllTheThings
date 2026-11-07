@@ -699,7 +699,7 @@ app:CreateWindow("Auctions", {
 										if searchResults and #searchResults > 0 then
 											local craftedItem = app.CloneClassInstance(searchResults[1]);
 											craftedItem.OnClick = OnClickForAuctionItem;
-											tinsert(entry.g, craftedItem);
+											entry.g[#entry.g+1] = craftedItem
 										end
 									end
 								else

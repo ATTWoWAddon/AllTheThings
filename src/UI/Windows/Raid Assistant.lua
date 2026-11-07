@@ -7,8 +7,8 @@ local coroutine, ipairs, pairs, select, tinsert, wipe
 	= coroutine, ipairs, pairs, select, tinsert, wipe;
 local C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo
 	= C_Timer, GetLootThreshold, GetNumGroupMembers, GetRaidRosterInfo;
-local GetInstanceInfo, ResetInstances, UnitIsGroupLeader, InCombatLockdown
-	= GetInstanceInfo, ResetInstances, UnitIsGroupLeader, InCombatLockdown;
+local GetInstanceInfo, ResetInstances, UnitIsGroupLeader
+	= GetInstanceInfo, ResetInstances, UnitIsGroupLeader
 local GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID
 	= GetDifficultyInfo, GetDungeonDifficultyID, GetRaidDifficultyID, GetLegacyRaidDifficultyID;
 local GetLootSpecialization, GetNumSpecializations, GetSpecializationInfoByID
@@ -565,7 +565,7 @@ app:CreateWindow("RaidAssistant", {
 								else
 									member.isML = isML;
 								end
-								tinsert(data.g, member);
+								data.g[#data.g+1] = member
 							end
 						end
 					end

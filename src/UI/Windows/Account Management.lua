@@ -1266,7 +1266,7 @@ dser.numnumtbl = deserializeKV
 -- function ATTSerialize_comp(tbl)
 -- 	local keys = {};
 -- 	for index,v in pairs(tbl) do
--- 		if v and index then tinsert(keys, tonumber(index)); end
+-- 		if v and index then keys[#keys+1] = tonumber(index) end
 -- 	end
 -- 	local serialized = SerializeSequentialKeys(keys)
 -- 	app:ShowPopupDialogWithMultiLineEditBox(serialized, function(text)
@@ -1952,7 +1952,7 @@ local function MergeTransferredCharacterData(row)
 							end
 						end
 					end
-					if anyFields then tinsert(eligibleCharacters, character); end
+					if anyFields then eligibleCharacters[#eligibleCharacters+1] = character end
 				end
 			end
 		end
@@ -2841,12 +2841,12 @@ app:CreateWindow("Character Unique Data", {
 							summary.OnSetVisibility = app.ReturnTrue
 							summary.parent = unit
 							summary.sourceParent = unit
-							tinsert(unit.g, summary)
+							unit.g[#unit.g+1] = summary
 						end
 					end
 
 					wipe(data.g)
-					tinsert(data.g, unit)
+					data.g[#data.g+1] = unit
 					self:AssignChildren();
 
 					data._built = true

@@ -46,7 +46,7 @@ app:CreateWindow("Missing Quests", {
 					data.g = {};
 					for i,header in ipairs(data.options) do
 						header.parent = data;
-						tinsert(data.g, header);
+						data.g[#data.g+1] = header
 					end
 				end
 

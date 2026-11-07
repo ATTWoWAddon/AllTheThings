@@ -73,7 +73,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 									specialization.SortType = "name";
 									specialization.parent = data;
 									specialization.g = {};
-									tinsert(data.g, specialization);
+									data.g[#data.g+1] = specialization
 									specializations[spellID] = specialization;
 								end
 							end
@@ -154,13 +154,13 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 															event.parent = data;
 															event.e = e;
 															event.g = {};
-															tinsert(data.g, event);
+															data.g[#data.g+1] = event
 														end
 														recipe.parent = event;
 													end
 												end
 											end
-											tinsert(recipe.parent.g, recipe);
+											recipe.parent.g[#recipe.parent.g+1] = recipe
 											recipes[spellID] = recipe;
 										end
 									end
@@ -169,7 +169,7 @@ function app:CreateDynamicProfessionCategory(name, commands, professionID, speci
 
 							for expansionID,expansion in pairs(expansions) do
 								if #expansion.g > 0 then
-									tinsert(data.g, expansion);
+									data.g[#data.g+1] = expansion
 								end
 							end
 

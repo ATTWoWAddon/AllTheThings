@@ -3302,7 +3302,7 @@ local function AssignCategoryForResult(self, categories, result)
 				result.sourceQuests = {};
 			end
 			if not app.contains(result.sourceQuests, questID) then
-				tinsert(result.sourceQuests, questID);
+				result.sourceQuests[#result.sourceQuests+1] = questID
 			end
 		else
 			local sourceQuests = app.GetRelativeValue(o, "sourceQuests");
@@ -3310,12 +3310,12 @@ local function AssignCategoryForResult(self, categories, result)
 				if not result.sourceQuests then
 					result.sourceQuests = {};
 					for k,questID in ipairs(sourceQuests) do
-						tinsert(result.sourceQuests, questID);
+						result.sourceQuests[#result.sourceQuests+1] = questID
 					end
 				else
 					for k,questID in ipairs(sourceQuests) do
 						if not app.contains(result.sourceQuests, questID) then
-							tinsert(result.sourceQuests, questID);
+							result.sourceQuests[#result.sourceQuests+1] = questID
 						end
 					end
 				end
@@ -3405,7 +3405,7 @@ local function BuildCategorizedSearchFunctionForClassTypes(key, fallbackText, ..
 					AssignCategoryForResult(data, categories, o);
 				end
 				for key,category in pairs(categories) do
-					tinsert(data.g, category);
+					data.g[#data.g+1] = category
 					category.SortType = "name";
 					category.parent = data;
 				end

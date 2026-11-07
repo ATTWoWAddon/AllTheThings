@@ -207,7 +207,7 @@ app:CreateWindow("Import", {
 					return true
 				end,
 			})
-			tinsert(self.data.g, resetButton)
+			self.data.g[#self.data.g+1] = resetButton
 			app.ArrayAppend(self.data.g, importedRows)
 			self:Rebuild()
 		end

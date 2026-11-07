@@ -21,7 +21,7 @@ app:CreateWindow("Unsorted", {
 		self.AddUnsortedAchievement = function(self, achievement)
 			achievement = app.CloneClassInstance(achievement);
 			achievement.parent = achievementHeader;
-			tinsert(achievementHeader.g, achievement);
+			achievementHeader.g[#achievementHeader.g+1] = achievement
 			self:Update();
 		end
 		self:SetData(app.CreateRawText(app.Modules.Color.Colorize(L.UNSORTED, app.Colors.ChatLinkError), {
@@ -38,7 +38,7 @@ app:CreateWindow("Unsorted", {
 		}));
 		self:AddEventHandler("OnHiddenDataCached", function(self, categories)
 			self.data.g = categories.Unsorted or {};
-			tinsert(self.data.g, self.achievementHeader);
+			self.data.g[#self.data.g+1] = self.achievementHeader
 			app.CacheFields(self.data, true);
 			self:AssignChildren();
 		end);

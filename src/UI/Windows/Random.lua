@@ -7,7 +7,6 @@ local ipairs, tinsert, tremove, setmetatable, math_max, math_random, unpack, wip
 	= ipairs, tinsert, tremove, setmetatable, math.max, math.random, unpack, wipe;
 local C_Map_GetMapInfo
 	= C_Map.GetMapInfo
-local NestObject = app.NestObject
 
 -- Local Functions
 local SearchFilter;
@@ -215,7 +214,7 @@ app:CreateWindow("Random", {
 			if selected then
 				local clone = app.CloneClassInstance(selected);
 				clone.parent = self.data;
-				tinsert(self.data.g, clone);
+				self.data.g[#self.data.g+1] = clone
 			else
 				app.print(L.NOTHING_TO_SELECT_FROM);
 			end
@@ -275,7 +274,7 @@ app:CreateWindow("Random", {
 		})
 		self:SetData(self.defaultHeader);
 		for i,o in ipairs(self.data.options) do
-			tinsert(self.data.g, o);
+			self.data.g[#self.data.g+1] = o
 		end
 		self:AssignChildren();
 	end,

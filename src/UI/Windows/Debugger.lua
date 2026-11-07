@@ -670,7 +670,7 @@ app:CreateWindow("Debugger", {
 		-- skip clickable rows
 		for _,o in ipairs(self.data.g) do
 			if not o.OnClick then
-				tinsert(self.rawData, CleanObject(o));
+				self.rawData[#self.rawData+1] = CleanObject(o)
 			end
 		end
 		app.print("Debugger Data Saved");

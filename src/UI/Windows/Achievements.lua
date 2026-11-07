@@ -56,7 +56,7 @@ local function getAchievementCategory(categories, achievementCategoryID)
 
 		local p = getAchievementCategory(categories, c.parentCategoryID);
 		if not p.g then p.g = {}; end
-		tinsert(p.g, c);
+		p.g[#p.g+1] = c
 		c.parent = p;
 	end
 	return c;
@@ -105,7 +105,7 @@ local function UpdateMissingAchievements(self)
 						achievement.parent = getAchievementCategory(self.data.categories, -1);-- achievement.parentCategoryID);
 						achievement.description = L.ACHIEVEMENTS_NO_SOURCE;
 						if not achievement.u or achievement.u ~= 1 then
-							tinsert(achievement.parent.g, achievement);
+							achievement.parent.g[#achievement.parent.g+1] = achievement
 						end
 						local numCriteria = GetAchievementNumCriteria(achievementID);
 						if numCriteria > 0 then
@@ -206,7 +206,7 @@ app:CreateWindow("Achievements", {
 											achievement.sourceQuests = {};
 										end
 										if not contains(achievement.sourceQuests, questID) then
-											tinsert(achievement.sourceQuests, questID);
+											achievement.sourceQuests[#achievement.sourceQuests+1] = questID
 										end
 									else
 										local sourceQuests = GetRelativeValue(mostAccessibleSource, "sourceQuests");
@@ -214,12 +214,12 @@ app:CreateWindow("Achievements", {
 											if not achievement.sourceQuests then
 												achievement.sourceQuests = {};
 												for k,questID in ipairs(sourceQuests) do
-													tinsert(achievement.sourceQuests, questID);
+													achievement.sourceQuests[#achievement.sourceQuests+1] = questID
 												end
 											else
 												for k,questID in ipairs(sourceQuests) do
 													if not contains(achievement.sourceQuests, questID) then
-														tinsert(achievement.sourceQuests, questID);
+														achievement.sourceQuests[#achievement.sourceQuests+1] = questID
 													end
 												end
 											end
@@ -231,7 +231,7 @@ app:CreateWindow("Achievements", {
 							achievement.total = nil;
 							achievement.g = nil;
 							achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
-							tinsert(achievement.parent.g, achievement);
+							achievement.parent.g[#achievement.parent.g+1] = achievement
 							data.achievements[i] = achievement;
 						end
 					end
