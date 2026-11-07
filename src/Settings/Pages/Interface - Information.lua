@@ -1322,7 +1322,7 @@ local InformationTypes = {
 	CreateInformationType("visualID", { text = L.VISUAL_ID, priority = 7 }),
 
 	CreateInformationType("achievementID", { text = L.ACHIEVEMENT_ID, priority = 8,
-		GetValue = app.GameBuildVersion >= 30000 and GetValueForInformationType or function(t, reference)
+		GetValue = (app.GameBuildVersion >= 30000 or app.IsForever) and GetValueForInformationType or function(t, reference)
 			local value = GetValueForInformationType(t, reference);
 			if value then
 				if reference.sourceQuests then
