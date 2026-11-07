@@ -432,8 +432,63 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Total deaths in 20-player raids","Total deaths in 20-player raids",,64183,-1,-1,0,125,0,0,1,4,136243,0,235087,0,0,0,0
 "Total 40-player raids entered","Total 40-player raids entered",,64184,-1,-1,0,14807,0,0,1,4,136243,0,235097,0,0,0,0
 "Total deaths in 40-player raids","Total deaths in 40-player raids",,64185,-1,-1,0,125,0,0,1,5,136243,0,235099,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Westfall",,64195,-1,-1,0,15607,0,0,3145728,11,136243,0,235217,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Stormwind",,64196,-1,-1,0,15607,0,0,3145728,27,136243,0,235219,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Arathi",,64197,-1,-1,0,15607,0,0,3145728,28,136243,0,235221,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Wetlands",,64198,-1,-1,0,15607,0,0,3145728,29,136243,0,235223,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Badlands",,64199,-1,-1,0,15607,0,0,3145728,30,136243,0,235225,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Riverglades",,64200,-1,-1,0,15607,0,0,3145728,31,136243,0,235227,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Redridge",,64201,-1,-1,0,15607,0,0,3145728,32,136243,0,235229,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Hillsbrad",,64202,-1,-1,0,15607,0,0,3145728,33,136243,0,235231,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Duskwood",,64203,-1,-1,0,15607,0,0,3145728,34,136243,0,235233,0,0,0,0
 "Once earned, the player is no longer considered ""new"" and is allowed to choose between Exlie's Reach and the racial starting experience when creating a new character.","<Hidden> Completed New Player Experience (Account)",,64208,-1,-1,0,15425,0,0,11665412,62,136243,0,0,0,0,0,0
 "Times gathered around the campfire","Times camped",,64222,-1,-1,0,130,0,0,1,1,136243,0,235859,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Blasted Lands",,64236,-1,-1,0,15607,0,0,3145728,12,136243,0,235905,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Burning Steppes",,64237,-1,-1,0,15607,0,0,3145728,13,136243,0,235907,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Eastern Plaguelands",,64238,-1,-1,0,15607,0,0,3145728,14,136243,0,235910,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Ironforge",,64239,-1,-1,0,15607,0,0,3145728,25,136243,0,235913,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Loch Modan",,64240,-1,-1,0,15607,0,0,3145728,26,136243,0,235915,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Searing Gorge",,64241,-1,-1,0,15607,0,0,3145728,23,136243,0,235917,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Silverpine Forest",,64242,-1,-1,0,15607,0,0,3145728,24,136243,0,235920,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Stranglethorn (H)",,64243,-1,-1,0,15607,0,0,3145728,15,136243,0,235922,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Swamp of Sorrows",,64244,-1,-1,0,15607,0,0,3145728,19,136243,0,235926,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - The Hinterlands",,64245,-1,-1,0,15607,0,0,3145728,20,136243,0,235928,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Undercity",,64246,-1,-1,0,15607,0,0,3145728,21,136243,0,235931,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Western Plaguelands",,64247,-1,-1,0,15607,0,0,3145728,22,136243,0,235933,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Ashenvale (A)",,64248,-1,-1,0,15607,0,0,3145728,35,136243,0,235935,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Azshara",,64249,-1,-1,0,15607,0,0,3145728,39,136243,0,235939,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Darkshore",,64250,-1,-1,0,15607,0,0,3145728,40,136243,0,235942,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Desolace",,64251,-1,-1,0,15607,0,0,3145728,41,136243,0,235944,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Dustwallow Marsh",,64252,-1,-1,0,15607,0,0,3145728,42,136243,0,235947,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Felwood",,64253,-1,-1,0,15607,0,0,3145728,43,136243,0,235950,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Feralas (A)",,64254,-1,-1,0,15607,0,0,3145728,48,136243,0,235953,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Moonglade",,64255,-1,-1,0,15607,0,0,3145728,44,136243,0,235957,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Mount Hyjal",,64256,-1,-1,0,15607,0,0,3145728,45,136243,0,235960,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Orgrimmar",,64257,-1,-1,0,15607,0,0,3145728,55,136243,0,235963,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Silithus",,64258,-1,-1,0,15607,0,0,3145728,52,136243,0,235965,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Stonetalon Mountains",,64259,-1,-1,0,15607,0,0,3145728,53,136243,0,235968,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Tanaris",,64260,-1,-1,0,15607,0,0,3145728,54,136243,0,235971,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Teldrassil",,64261,-1,-1,0,15607,0,0,3145728,56,136243,0,235974,0,0,0,0
+,"Hidden: Flight Path Tracker - K - The Barrens (A)",,64262,-1,-1,0,15607,0,0,3145728,57,136243,0,235976,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Thousand Needles",,64263,-1,-1,0,15607,0,0,3145728,62,136243,0,235980,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Thunder Bluff",,64264,-1,-1,0,15607,0,0,3145728,63,136243,0,235982,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Un'Goro Crater",,64265,-1,-1,0,15607,0,0,3145728,64,136243,0,235984,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Winterspring",,64266,-1,-1,0,15607,0,0,3145728,65,136243,0,235986,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Feralas, Feathermoon",,64267,-1,-1,0,15607,0,0,3145728,50,136243,0,235989,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Feralas, Thalanaar",,64268,-1,-1,0,15607,0,0,3145728,51,136243,0,235991,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Mount Hyjal, Tainted Foothills",,64269,-1,-1,0,15607,0,0,3145728,47,136243,0,235993,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Mount Hyjal, Summit of Eternity",,64270,-1,-1,0,15607,0,0,3145728,46,136243,0,235995,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay",,64271,-1,-1,0,15607,0,0,3145728,18,136243,0,235997,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Stranglethorn, Grom'gol",,64272,-1,-1,0,15607,0,0,3145728,17,136243,0,236000,0,0,0,0
+,"Hidden: Flight Path Tracker - K - The Barrens, Crossroads",,64273,-1,-1,0,15607,0,0,3145728,61,136243,0,236002,0,0,0,0
+,"Hidden: Flight Path Tracker - K - The Barrens, Ratchet",,64274,-1,-1,0,15607,0,0,3145728,60,136243,0,236004,0,0,0,0
+,"Hidden: Flight Path Tracker - K - The Barrens, Camp Taurajo",,64275,-1,-1,0,15607,0,0,3145728,59,136243,0,236006,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Ashenvale, Splintertree Post",,64276,-1,-1,0,15607,0,0,3145728,38,136243,0,236008,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Ashenvale, Zoram'gar Outpost",,64277,-1,-1,0,15607,0,0,3145728,37,136243,0,236010,0,0,0,0
+,"Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay (A)",,64278,-1,-1,0,15607,0,0,3145728,16,136243,0,236012,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Feralas (H)",,64279,-1,-1,0,15607,0,0,3145728,49,136243,0,236018,0,0,0,0
+,"Hidden: Flight Path Tracker - K - Ashenvale (H)",,64280,-1,-1,0,15607,0,0,3145728,36,136243,0,236020,0,0,0,0
+,"Hidden: Flight Path Tracker - K - The Barrens (H)",,64281,-1,-1,0,15607,0,0,3145728,58,136243,0,236023,0,0,0,0
 "Arathi Basin bases assaulted","Arathi Basin bases assaulted",,64348,-1,-1,0,153,0,0,1,17,136243,0,236482,0,0,0,0
 "Arathi Basin bases defended","Arathi Basin bases defended",,64349,-1,-1,0,153,0,0,1,18,136243,0,236484,0,0,0,0
 "Darkspear Islands bases assaulted","Darkspear Islands bases assaulted",,64350,-1,-1,0,153,0,0,1,19,136243,0,236486,0,0,0,0
