@@ -691,7 +691,7 @@ checkboxCurrencyCalculation:AlignBelow(checkboxSpecializations)
 if app.IsClassic or app.IsForever then
 	local checkboxQuestObjectives = child:CreateCheckBox(L.OBJECTIVES_CHECKBOX,
 	function(self)
-		self:SetChecked(settings:Get("QuestObjectives"))
+		self:SetChecked(settings:Get("Thing:QuestObjectives"))
 		if not settings:GetTooltipSetting("Enabled") then
 			self:Disable()
 			self:SetAlpha(0.4)
@@ -701,7 +701,8 @@ if app.IsClassic or app.IsForever then
 		end
 	end,
 	function(self)
-		settings:Set("QuestObjectives", self:GetChecked())
+		settings:Set("Thing:QuestObjectives", self:GetChecked())
+		settings:UpdateMode(1)
 	end)
 	checkboxQuestObjectives:SetATTTooltip(L.OBJECTIVES_CHECKBOX_TOOLTIP)
 	checkboxQuestObjectives:AlignBelow(checkboxCurrencyCalculation)
