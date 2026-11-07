@@ -20,6 +20,8 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 
 - Use the commit subject format `[<Category>] <summary>.`, ending with a period. Capitalize the first letter of the bracketed category. For example: `[Docs] Add draft ATT agent guidelines.`
 - Keep the complete commit subject at 50 characters or fewer, including the bracketed category, spaces, and final period.
+- When merging a PR, include its number in the resulting merge or squash commit subject. For custom squash titles, use `[<Category>] <summary> (#<PR number>).`; count the PR reference toward the 50-character limit and shorten the summary if needed. Do not rely on GitHub to append the PR number when supplying a custom title.
+- Check the exact final subject, including the PR number, before merging, and verify the published subject afterward.
 - Describe the actual content or code changes and their resulting behavior in the subject and body. Omit references to user instructions or the agent's workflow.
 - Describe detailed changes in the commit body, separated from the subject by a blank line.
 - When the commit body contains multiple points, format them as a bulleted list using `*` or `-`.
