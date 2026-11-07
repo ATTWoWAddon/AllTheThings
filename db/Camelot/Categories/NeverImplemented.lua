@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local flt,fp,h,i,s=_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateItemSource;
+local flt,fp,h,i,q,s=_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateQuest,_.CreateItemSource;
 categories.NeverImplemented={
 h(-811,{
 flt(55,{
@@ -133,5 +133,7 @@ s(318163,289297,{c={5},f=28,spellID=1327993}),
 s(318164,289302,{c={1,2},f=25}),
 s(318165,289303,{c={3},f=32})})}),
 h(-32,{
-fp(3207)})}
+fp(3207)}),
+h(-45,{
+q(785,{description="A Classic beta quest that is still in the client's quest data but has no quest giver in WoW Forever."})})}
 end)

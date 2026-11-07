@@ -692,10 +692,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				requireSkill = TAILORING,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
-				lockCriteria = { 1, "spellID", 1229504 },
+				lockCriteria = { 1, "spellID", 1263425 },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					recipe(1263425),	-- Tailoring: Camp Chair
+					recipe(1263425),	-- Faction Banner (Alliance)
 				},
 			}),
 			q(98046, {	-- Crown of the Earth (1/2) [Forever]

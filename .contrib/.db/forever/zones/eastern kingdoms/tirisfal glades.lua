@@ -1026,7 +1026,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lockCriteria = { 1, "spellID", 1229504 },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					recipe(1263425),	-- Tailoring: Camp Chair
+					recipe(1229504),	-- Faction Banner (Horde)
 				},
 			}),
 			q(354, {	-- Deaths in the Family

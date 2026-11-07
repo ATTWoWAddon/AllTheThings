@@ -475,10 +475,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(4941),	-- Really Sticky Glue
 				},
 			}),
-			q(785, {	-- A Strategic Alliance
-				lvl = 5,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
 			q(809, {	-- Ak'Zeloth
 				sourceQuest = 829,	-- Neeru Fireblade
 				qg = 3216,	-- Neeru Fireblade
@@ -787,7 +783,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lockCriteria = { 1, "spellID", 1229504 },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					recipe(1263425),	-- Tailoring: Camp Chair
+					recipe(1229504),	-- Faction Banner (Horde)
 				},
 			}),
 			q(791, {	-- Carry Your Weight
@@ -956,6 +952,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(96877, {	-- Halikor's Hoof
 				provider = { "i", 275723 },	-- Halikor's Hoof
+				coords = {
+					{ 40.3, 30.0, MAP.DUROTAR },
+					{ 42.9, 23.2, MAP.DUROTAR },
+				},
 				cr = 266852,	-- Halikor
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,

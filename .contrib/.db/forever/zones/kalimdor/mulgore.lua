@@ -626,7 +626,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lockCriteria = { 1, "spellID", 1229504 },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					recipe(1263425),	-- Tailoring: Camp Chair
+					recipe(1229504),	-- Faction Banner (Horde)
 				},
 			}),
 			q(98427, {	-- Ceasing Operations
