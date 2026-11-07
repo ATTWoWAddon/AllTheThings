@@ -17,6 +17,7 @@ import tempfile
 
 HERE = Path(__file__).resolve().parent
 KIT = HERE / "nefarian"
+FROZEN_PROFILES = KIT / "p4/profiles"
 REPO = HERE.parents[3]
 SOURCE = REPO / ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua"
 LEGACY_REFERENCE = REPO / "db/VanillaSOD/Categories/Instances.lua"
@@ -139,11 +140,8 @@ def check_canonical_authoring():
     for stage, selection in (("p2.1", "P2.1"), ("p2.2", "P2.2"), ("p3", "P3"), ("p4", "P4")):
         names = ["retail.lua", "classic.lua", "sod.lua"] if stage == "p4" else ["1.6 Blackwing Lair.lua"]
         assert read_json(HERE / stage / "migration.json") == expected_manifest(selection, names), f"canonical manifest: {stage}"
-    assert not (HERE / "p2.1/profiles").exists(), "canonical P2.1 needs no JSON policy"
-    for flavor in FLAVORS:
-        policies = [(HERE / stage / f"profiles/{flavor}/main.json").read_bytes()
-                    for stage in ("p2.2", "p3", "p4")]
-        assert policies[0] == policies[1] == policies[2], f"canonical {flavor} policy changed between stages"
+    schedule = read_json(HERE.parents[1] / "schedule.json")
+    assert keys <= schedule["rules"]["blackwing-lair"].keys(), "shared schedule must cover the annotated raid"
     assert read_json(HERE / "p4/selection.json") == {
         "retail": {"blackwing-lair": "retail.lua"},
         "progression:main": {"blackwing-lair": "classic.lua"},
@@ -175,12 +173,8 @@ def check_focused_authoring(sources):
                 "id": "comparison-fixture-blackwing-lair", "sources": ["sources.lua"], "stage": selection,
             }],
         }, f"wrong fixture ownership/stage: {stage}"
-    for stage in ("p1", "p2.1"):
-        assert not (KIT / stage / "profiles").exists(), f"{stage} unexpectedly requires JSON"
-    for flavor in FLAVORS:
-        policies = [(KIT / stage / f"profiles/{flavor}/main.json").read_bytes()
-                    for stage in ("p2.2", "p3", "p4")]
-        assert policies[0] == policies[1] == policies[2], f"{flavor} policies changed between stages"
+    expected_profiles = {FROZEN_PROFILES / flavor / "main.json" for flavor in FLAVORS}
+    assert set(HERE.rglob("profiles/*/*.json")) == expected_profiles, "keep one frozen set of Nefarian inputs"
 
 
 ROUTE_CHECKS = '''local evaluate = dofile(arg[1])
@@ -281,6 +275,7 @@ def main():
     check_canonical_authoring()
     check_focused_authoring(sources)
     reference_hash = hashlib.sha256(LEGACY_REFERENCE.read_bytes()).digest()
+    frozen_profiles = {path: path.read_bytes() for path in FROZEN_PROFILES.glob("*/main.json")}
     with tempfile.TemporaryDirectory(prefix="bwl-evolution-") as temporary:
         temp = Path(temporary)
         run([args.lua, "-e", "assert(_VERSION == 'Lua 5.1')"])
@@ -299,7 +294,7 @@ def main():
         for stage in ("p2.2", "p3"):
             directory = temp / stage
             directory.mkdir()
-            shutil.copytree(KIT / stage / "profiles", directory / "profiles")
+            shutil.copytree(FROZEN_PROFILES, directory / "profiles")
             projected = directory / "sources.lua"
             run([args.lua, HERE / "project-sod.lua", selected_sources[stage], projected])
             projections[stage] = projected
@@ -335,6 +330,7 @@ def main():
         check.write_text(ROUTE_CHECKS, encoding="utf-8")
         run([args.lua, check, EVALUATOR, progress_outputs["p3"], outputs["sod:main"], changed_output,
              outputs["retail"], outputs["progression:main"], outputs["anniversary:main"], outputs["era:main"]])
+    assert all(path.read_bytes() == data for path, data in frozen_profiles.items()), "frozen Nefarian profiles changed"
     assert reference_hash == hashlib.sha256(LEGACY_REFERENCE.read_bytes()).digest(), "reviewed legacy reference changed"
     assert sources == {stage: (KIT / stage / "sources.lua").read_bytes() for stage in STAGES}, "source snapshots changed"
     print("BWL evolution: full source snapshot and focused comparison checks passed; legacy reference left unchanged")

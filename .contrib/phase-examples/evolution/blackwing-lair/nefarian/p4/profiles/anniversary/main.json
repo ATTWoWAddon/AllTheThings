@@ -1,5 +1,5 @@
 {
-  "$comment": "Comparison copy of the anniversary authoring input. Write once at P2.2 for shadow validation. P3 and P4 read the same rules.",
+  "$comment": "Frozen comparison fixture (P2.2 shadow / P3 / P4): historical anniversary Nefarian inputs. Edit schedule.json for current releases. Keep this fixture fixed when the live schedule changes.",
   "milestones": ["vanilla.2", "vanilla.3"],
   "content": {
     "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
