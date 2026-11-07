@@ -43,13 +43,27 @@ local BindTypes = {
 	ITEM_BIND_ON_EQUIP,
 	ITEM_BIND_ON_USE,
 	ITEM_BIND_QUEST,
+	[7] = ITEM_BIND_TO_ACCOUNT or ITEM_ACCOUNTBOUND,
+	[8] = ITEM_BIND_TO_BNETACCOUNT or ITEM_BNETACCOUNTBOUND,
+	[9] = ITEM_BIND_TO_ACCOUNT_UNTIL_EQUIP or ITEM_ACCOUNTBOUND_UNTIL_EQUIP,
 }
 local ConversionMethods = setmetatable({
 	filterID = function(val, reference)
 		return L.FILTER_ID_TYPES[val]
 	end,
-	b = function(val)
-		return BindTypes[val]
+	b = function(val, reference)
+		val = tonumber(val);
+		if not val or val == 0 then return; end
+		local item = app.ActiveRowReference;
+		if not (item and item.b) then item = reference; end
+		if val == 3 and item.itemID then
+			-- ATT also uses 3 for account-bound overrides; native item data disambiguates it.
+			local binding = select(14, GetItemInfo(item.rawlink or item.link or item.itemID));
+			if binding == nil then return tostring(val); end
+			val = binding;
+		end
+		-- Keep unfamiliar native binding codes visible when the client has no label.
+		return BindTypes[val] or (val > 0 and tostring(val) or nil);
 	end,
 	questID = function(questID, reference)
 		-- for questID, also check if there's an otherFactionQuestID (Bfa Warfront Rares)
