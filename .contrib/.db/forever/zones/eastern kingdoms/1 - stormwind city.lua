@@ -598,23 +598,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					recipe(1277370),	-- Divine Grace
 				},
 			}),
-			q(94775, {	-- Divine Grace
-				altQuests = {
-					94773,	-- Divine Grace
-					94776,	-- Divine Grace
-					94777,	-- Divine Grace
-					94778,	-- Divine Grace
-					94779,	-- Divine Grace
-				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				races = { HUMAN },
-				classes = { PRIEST },
-				lvl = 10,
-				groups = {
-					recipe(1277370),	-- Divine Grace
-				},
-			}),
 			q(94776, {	-- Divine Grace
 				altQuests = {
 					94773,	-- Divine Grace
@@ -640,25 +623,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					94778,	-- Divine Grace
 					94779,	-- Divine Grace
 				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				races = { HUMAN },
-				classes = { PRIEST },
-				lvl = 10,
-				groups = {
-					recipe(1277370),	-- Divine Grace
-				},
-			}),
-			q(94778, {	-- Divine Grace
-				altQuests = {
-					94773,	-- Divine Grace
-					94775,	-- Divine Grace
-					94776,	-- Divine Grace
-					94777,	-- Divine Grace
-					94779,	-- Divine Grace
-				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 11397,	-- Nara Meideros <Priest Trainer>
+				coord = { 20.4, 50.4, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,

@@ -440,6 +440,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(97281, {	-- A Simmering Storm
 				provider = { "i", 277661 },	-- Dull Storm Orb
+				coord = { 51.5, 21.6, MAP.DUROTAR },
 				crs = {
 					3118,	-- Dustwind Storm Witch
 					276194,	-- Dustwind Eggtender
@@ -1522,6 +1523,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(96876, {	-- Ukor's Lost Pack
 				provider = { "i", 275722 },	-- Ukor's Lost Pack
+				coord = { 49.5, 56.4, MAP.DUROTAR },
 				cr = 266851,	-- Ukorsbane
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,

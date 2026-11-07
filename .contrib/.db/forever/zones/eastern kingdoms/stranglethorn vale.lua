@@ -2018,8 +2018,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 28,
 			}),
 			q(97329, {	-- Where's the Key?
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Zimmix Sputterspark.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 268992,	-- Zimmix Sputterspark
+				coord = { 23.4, 12.6, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Primitive Key

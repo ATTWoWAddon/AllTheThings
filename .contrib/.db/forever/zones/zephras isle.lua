@@ -379,18 +379,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(5176),	-- Fire Totem
 				},
 			}),
-			q(98517, {	-- Call of Fire
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Sessaria Skystride or Aarnor Galestrike.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				races = { SKYBORNE_HORDE },
-				classes = { SHAMAN },
-				lvl = 10,
-				groups = {
-					objective(1, {	-- 0/1 Torch of the Dormant Flame
-						provider = { "i", 6653 },	-- Torch of the Dormant Flame
-					}),
-				},
-			}),
 			q(97963, {	-- Camping 101: Alchemy
 				sourceQuest = 96101,	-- The Great Outdoors [Zephras Isle]
 				altQuests = {

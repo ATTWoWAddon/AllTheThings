@@ -108,6 +108,20 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(7130),	-- Brutal Helm
 				},
 			}),
+			q(98517, {	-- Call of Fire
+				qg = 3032,	-- Beram Skychaser <Shaman Trainer>
+				coord = { 22.8, 19.4, MAP.THUNDER_BLUFF },
+				maps = { MAP.ZEPHRAS_ISLE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_HORDE },
+				classes = { SHAMAN },
+				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Torch of the Dormant Flame
+						provider = { "i", 6653 },	-- Torch of the Dormant Flame
+					}),
+				},
+			}),
 			q(1844, {	-- Chimaeric Horn
 				sourceQuest = 1840,	-- Orm Stonehoof and the Brutal Helm
 				qg = 6410,	-- Orm Stonehoof

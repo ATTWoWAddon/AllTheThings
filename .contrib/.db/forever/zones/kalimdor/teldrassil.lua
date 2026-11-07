@@ -76,6 +76,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					}),
 					q(97236, {	-- Fang of Githyiss
 						provider = { "i", 277190 },	-- Fang of Githyiss
+						coord = { 56.6, 26.0, MAP.TELDRASSIL },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						cr = 1994,	-- Githyiss the Vile
@@ -698,6 +699,25 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 					recipe(1263425),	-- Faction Banner (Alliance)
 				},
 			}),
+			q(94823, {	-- Confounding Flash
+				altQuests = {
+					94817,	-- Confounding Flash
+					94821,	-- Confounding Flash
+					94822,	-- Confounding Flash
+					94825,	-- Confounding Flash
+					94826,	-- Confounding Flash
+				},
+				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
+				coord = { 55.4, 56.8, MAP.TELDRASSIL },
+				maps = { MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277455),	-- Confounding Flash
+				},
+			}),
 			q(98046, {	-- Crown of the Earth (1/2) [Forever]
 				sourceQuest = 935,	-- Crown of the Earth (6/6) / The Waters of Teldrassil [CATA+]
 				qg = 3516,	-- Arch Druid Fandral Staghelm
@@ -821,6 +841,25 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						recipeID = 13908,	-- Desperate Prayer (Rank 1)
 						rank = 1,
 					},
+				},
+			}),
+			q(94775, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94778,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
+				coord = { 55.4, 56.8, MAP.TELDRASSIL },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
 				},
 			}),
 			q(2561, {	-- Druid of the Claw

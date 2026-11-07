@@ -400,23 +400,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					recipe(1277455),	-- Confounding Flash
 				},
 			}),
-			q(94823, {	-- Confounding Flash
-				altQuests = {
-					94817,	-- Confounding Flash
-					94821,	-- Confounding Flash
-					94822,	-- Confounding Flash
-					94825,	-- Confounding Flash
-					94826,	-- Confounding Flash
-				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Mims in Ironforge.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				races = { GNOME },
-				classes = { PRIEST },
-				lvl = 10,
-				groups = {
-					recipe(1277455),	-- Confounding Flash
-				},
-			}),
 			q(94825, {	-- Confounding Flash
 				altQuests = {
 					94817,	-- Confounding Flash
@@ -515,6 +498,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					r(13908, {	-- Desperate Prayer (Rank 1)
 						rank = 1,
 					}),
+				},
+			}),
+			q(94778, {	-- Divine Grace
+				altQuests = {
+					94773,	-- Divine Grace
+					94775,	-- Divine Grace
+					94776,	-- Divine Grace
+					94777,	-- Divine Grace
+					94779,	-- Divine Grace
+				},
+				qg = 11406,	-- High Priest Rohan <Priest Trainer>
+				coord = { 23.6, 7.0, MAP.IRONFORGE },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 10,
+				groups = {
+					recipe(1277370),	-- Divine Grace
 				},
 			}),
 			q(5675, {	-- Elune's Grace [Ironforge]

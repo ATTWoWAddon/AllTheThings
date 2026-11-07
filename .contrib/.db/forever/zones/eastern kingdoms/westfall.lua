@@ -1155,6 +1155,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				cr = 450,	-- Defias Renegade Mage
 			}),
 			i(255155, {	-- Precessive Autocognition Assembly (QS!)
+				coords = {
+					{ 38.6, 50.7, MAP.WESTFALL },	-- Harvest Watchers, Alexston Farmstead
+					{ 46.6, 67.0, MAP.WESTFALL },	-- Harvest Golems, Molsen Farm
+					{ 48.6, 33.2, MAP.WESTFALL },	-- Harvest Golems, Furlbrow's Pumpkin Farm
+					{ 56.4, 35.4, MAP.WESTFALL },	-- Harvest Golems, Saldean's Farm
+					{ 57.4, 19.6, MAP.WESTFALL },	-- Rusty Harvest Golems, Jangolode Mine
+				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
 					 36,	-- Harvest Golem
