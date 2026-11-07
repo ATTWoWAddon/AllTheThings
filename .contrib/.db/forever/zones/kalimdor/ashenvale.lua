@@ -1195,6 +1195,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 33.2, 21.8, MAP.ASHENVALE },
 				},
 				races = ALLIANCE_ONLY,
+				groups = {
+					i(284668, {	-- Apothecary's Concoction
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10641, {	-- Branch Snapper
 				coords = {
@@ -1221,6 +1226,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 9.6, 15.6, MAP.ASHENVALE },
 					{ 13.6, 19.6, MAP.ASHENVALE },
 					{ 11.2, 29.4, MAP.ASHENVALE },
+				},
+				groups = {
+					i(284704, {	-- Frostbitten Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(10644, {	-- Mist Howler
