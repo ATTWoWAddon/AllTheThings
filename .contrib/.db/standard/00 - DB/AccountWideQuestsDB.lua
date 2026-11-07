@@ -1559,6 +1559,7 @@ local AccountWideQuestsDB = {
 	79661,	-- Quest #79661*
 	79662,	-- Quest #79662*
 	79663,	-- Quest #79663*
+	79664,	-- Quest #79664*
 	79693,	-- Play Hearthstone!
 	79694,	-- Play Hearthstone!
 	79698,	-- Quest #79698*
@@ -2887,6 +2888,7 @@ local AccountWideQuestsDB = {
 	96474,	-- Prey: Something for Astalor
 	96496,	-- The Road Not Taken Twice
 	96497,	-- Spatial Reasoning
+	96503,	-- Prey: A Ghostly Nightmare
 	96525,	-- Prey: Out of Our Depth
 	96532,	-- Prey: Attending the Attendant
 	96534,	-- Preparing for Threats
@@ -2900,15 +2902,22 @@ local AccountWideQuestsDB = {
 	96788,	-- Quest #96788*
 	96790,	-- ??
 	96791,	-- Quest #96791*
+	96794,	-- Fury of the Dead
+	96802,	-- Sturdy Chest
 	96803,	-- Sturdy Chest
+	96804,	-- Sturdy Chest
+	96805,	-- Sturdy Chest
 	96806,	-- Sturdy Chest
 	96807,	-- Sturdy Chest
 	96809,	-- Exterior Manaforge Translocator
 	96845,	-- The Grappler
 	96936,	-- Accolades for the Umbral Contender
+	96960,	-- Watering Hole
+	96961,	-- Delve-O-Bot 7001: Midnight Software Update Chip
 	96966,	-- Looming Mutagenitor weekly reputation obtained.
 	96967,	-- Vassti, the Exalted Broodmother weekly reputation obtained.
 	96968,	-- Ss'akrithos weekly reputation obtained.
+	96969,	-- Bonus Reputation: Zul'jarra's Forces [Venom Lancer Ori'kassi]
 	96970,	-- Malformed Leviathan weekly reputation obtained.
 	96975,	-- Delver's Starter Kit
 	97041,	-- Quest #97041*
@@ -2921,6 +2930,7 @@ local AccountWideQuestsDB = {
 	97379,	-- Contract: Zul'jarra's Forces+
 	97380,	-- Contract: Zul'jarra's Forces++
 	97383,	-- Spirit Corrosion
+	97384,	-- More Spirit Corrosion
 	97616,	-- Corrosive Gifts: Corrosive Power
 	97640,	-- Vaults of Atal'Utek: One Coin Too Many
 	97661,	-- The Protection of the Med'jai
@@ -2928,13 +2938,19 @@ local AccountWideQuestsDB = {
 	97668,	-- The Watchful Gaze of Szarith
 	97669,	-- The Luck of the Bound Spirit
 	97670,	-- A Handful of Voidlight Marl
+	97672,	-- A Cluster of Voidlight Marl
 	97945,	-- In the Catalyst's Shadow
 	97978,	-- Prismatic Potential
 	97980,	-- Ula'tek
+	97981,	-- Umbral Blessings of the Catalyst
+	97982,	-- Ula'tek
 	97983,	-- Ula'tek
 	98014,	-- Ensemble: Venom-Cursed Dragonhawk's Rainment
 	98022,	-- Ensemble: Venom-Cursed Bear's Guard
+	98041,	-- Well Urned Rest
+	98043,	-- Fang Lover's
 	98044,	-- Nebulous Voidcache: Delver's Trove
+	98066,	-- Arsenal: Venom-Cursed Arms
 	98097,	-- The Coiled Altar
 	98204,	-- Cursed Keepsake
 	98217,	-- Insidious Venomstone
@@ -2951,10 +2967,12 @@ local AccountWideQuestsDB = {
 	98353,	-- Big Mon weekly reputation obtained.
 	98354,	-- Sss'alik weekly reputation obtained.
 	98355,	-- Destra weekly reputation obtained.
-	98388,	-- Into the Vaults of Atal'Utek
 	98379,	-- Ancient Depths, Ancient Venom
+	98388,	-- Into the Vaults of Atal'Utek
+	98390,	-- Ascending with Venomstones
 	98406,	-- A Curated Gift
 	98428,	-- Vaults of Atal'Utek: The Altar of Corrosion
+	98460,	-- Arsenal: Scout Team Seven Weapons
 	98515,	-- Vaults of Atal'Utek: A Toxic Tour
 	98602,	-- Sturdy Chest [The Labyrinth of Kindo'jan]
 	98603,	-- Sturdy Chest [The Labyrinth of Kindo'jan]
@@ -3009,7 +3027,9 @@ local AccountWideQuestsDB = {
 	98833,	-- You Remind Me of the Bird
 	98834,	-- The Way Forward...
 	98836,	-- ...Is Sometimes the Way Back
+	98842,	-- Quest #98842*
 	98848,	-- Delver's Cosmetic Surprise Bag
+	98967,	-- Kindo'jan
 	99222,	-- Bonus Reputation: Zul'jarra's Forces [Delve Completion]
 	99246,	-- First Weekly Warband Aqir Token
 	99251,	-- Second Weekly Warband Aqir Token

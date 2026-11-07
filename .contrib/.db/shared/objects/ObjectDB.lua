@@ -348635,6 +348635,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "遺失的日誌",
 		},
 	},
+	[654948] = {
+		readable = "Massive Treasure Trove",
+		text = {
+			en = "Massive Treasure Trove",
+			es = "Cofre del tesoro enorme",
+			mx = "Tesoro enorme",
+			de = "Gewaltige Schatzkammer",
+			fr = "Tas de trésors énorme",
+			pt = "Arca do Tesouro Gigantesca",
+			ru = "Огромный клад",
+		},
+	},
 	[654950] = {
 		readable = "Impressive Treasure Trove",
 		text = {
