@@ -160,10 +160,16 @@ instanceroot(316, {	-- Scarlet Monastery
 			i(10328),	-- Scarlet Chestpiece
 			i(10331),	-- Scarlet Gauntlets
 			i(10333),	-- Scarlet Wristguards
+			i(215373, {	-- Silver Hand Training Hammer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(5756),	-- Sliverblade
 			i(7761),	-- Steelclaw Reaver
 			i(5819),	-- Sunblaze Coif
 			i(1992),	-- Swampchill Fetish
+			i(215375, {	-- Tactician's Staff
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8225),	-- Tainted Pierce
 			i(8226),	-- The Butcher
 			i(7760),	-- Warchief Kilt

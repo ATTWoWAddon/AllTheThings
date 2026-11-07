@@ -238,7 +238,7 @@ n(3561,{coords={
 n(4173,{coords={
 [1457]={{63.3,66.3}}},r=2,sym={{"select","itemID",3027,3026}},g={
 s(160245,11303,{f=32,isLimited=1,lvl=11}),
-i(287063,{awp=16001,f=36,isLimited=1}),
+s(317958,287063,{awp=16001,f=36,isLimited=1}),
 s(160248,11306,{f=32,isLimited=1,lvl=27}),
 s(160250,11308,{f=32,isLimited=1,lvl=44})}}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{coords={
@@ -854,7 +854,7 @@ q(7833,{coords={
 [1454]={{37.8,87.6}}},cost={{"i",2592,60}},lvl=12,qgs={14727},r=1}),
 q(7341,{coords={
 [1454]={{74.4,26.4}}},cost={{"i",15997,200}},lvl=52,qgs={14182},r=1,repeatable=1,g={
-i(18042,{f=37,lvl=52})}}),
+s(163419,18042,{f=37,lvl=52})}}),
 q(7832,{coords={
 [1454]={{63.4,51}}},cost={{"i",14047,20}},lvl=50,maxReputation={530,42000},qgs={14726},r=1,repeatable=1,sourceQuests={7824}}),
 q(7837,{coords={
@@ -1731,7 +1731,7 @@ n(3015,{coords={
 [1456]={{46.8,45.8}}},r=1,sym={{"select","itemID",3027,3026}},g={
 s(160245,11303,{f=32,isLimited=1,lvl=11}),
 s(160249,11307,{f=32,isLimited=1,lvl=42}),
-i(287063,{awp=16001,f=36,isLimited=1}),
+s(317958,287063,{awp=16001,f=36,isLimited=1}),
 s(160248,11306,{f=32,isLimited=1,lvl=27})}}),
 n(3002,{coords={
 [1456]={{34.35,56.58}}},r=1,sym={{"sub","common_vendor",4599}}}),
@@ -2759,7 +2759,7 @@ q(98025,{awp=16001,coords={
 [1439]={{37.2,44.2}}},lvl=15,providers={{"o",175320}},r=2,g={
 qo(1,{coords={
 [1439]={{45.2,58.4}}},crs={270196},providers={{"i",281038}}}),
-i(287062,{f=36}),
+s(317956,287062,{f=36}),
 s(311873,281289,{b=1,f=3})}}),
 q(4740,{coords={
 [1439]={{37.2,44.2}}},lvl=15,providers={{"o",175320}},r=2,g={
@@ -2844,7 +2844,7 @@ i(5839,{crs={3660}}),
 i(279276,{awp=16001,crs={2181,2182,2183,271903},f=55,spellID=1306410,g={
 i(279277,{cost={{"i",279276,20}},f=55,spellID=1306411})}}),
 r(6692,{crs={2337},itemID=5773,learnedAt=145,requireSkill=197,skillID=2948}),
-i(5568,{crs={2156,2157},f=37,lvl=13})})}}),
+s(158195,5568,{crs={2156,2157},f=37,lvl=13})})}}),
 m(1443,{icon=236742,lore="Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",g={
 h(-12,{
 ach(848,{
@@ -3167,9 +3167,9 @@ qo(1,{coords={
 q(1370,{coords={
 [1443]={{36.2,79.2}}},lvl=30,minReputation={92,3000},qgs={5397},sourceQuests={1384},g={
 qo(1,{providers={{"i",6069},{"o",22245}}}),
-i(3463,{b=1,f=36}),
-i(3464,{f=37}),
-i(3465,{f=37})}}),
+s(157327,3463,{b=1,f=36}),
+s(157328,3464,{f=37}),
+s(157329,3465,{f=37})}}),
 q(1382,{coords={
 [1443]={{66.7,11}}},description="Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",lvl=30,qgs={5396},r=2}),
 q(93045,{lvl=35,minReputation={92,9000},r=1,sourceQuests={93044},u=1,g={
@@ -3631,7 +3631,7 @@ q(97282,{awp=16001,coords={
 [1411]={{46.4,23}}},lvl=7,qgs={3293},r=1,sourceQuests={97281},g={
 qo(1,{crs={3130,3131},providers={{"i",277665}}}),
 s(311864,281274,{b=1,f=28}),
-i(287060,{f=36})}}),
+s(317952,287060,{f=36})}}),
 q(6062,{c={3},coords={
 [1411]={{51.8,43.4}}},lvl=10,qgs={3171},races={2,5,8},sourceQuests={6068,6069,6070},g={
 qo(1,{crs={3099},providers={{"i",15917}}})}}),
@@ -5571,7 +5571,7 @@ q(745,{coords={
 qo(1,{providers={{"n",2949}}}),
 qo(2,{providers={{"n",2950}}}),
 qo(3,{providers={{"n",2951}}}),
-i(4960,{f=37})}}),
+s(157988,4960,{f=37})}}),
 q(99108,{awp=16001,coords={
 [1412]={{49.4,60.4}}},lvl=4,qgs={3063},r=1,g={
 qo(1,{coords={
@@ -6709,9 +6709,9 @@ q(79980,{awp=16001,coords={
 i(216619,{b=1,description="This item gives you 4 bars of Rested Experience when consumed.",f=55,spellID=436432}),
 s(199521,217314,{b=1,f=31,lvl=23}),
 s(199522,217315,{b=1,f=32,lvl=23}),
-i(3463,{b=1,f=36}),
-i(3464,{f=37}),
-i(3465,{f=37})}}),
+s(157327,3463,{b=1,f=36}),
+s(157328,3464,{f=37}),
+s(157329,3465,{f=37})}}),
 q(1068,{coords={
 [1413]={{35.28,27.84}}},lvl=13,qgs={4049},r=1,sourceQuests={1062},g={
 qo(1,{providers={{"n",4073}}}),
@@ -7987,7 +7987,7 @@ qo(1,{coords={
 [1413]={{43.2,78.2}}},providers={{"n",4128}}}),
 qo(2,{coords={
 [1413]={{43.2,78.4}}},providers={{"n",3238}}}),
-i(287064,{f=36}),
+s(317942,287064,{f=36}),
 s(311073,279391,{b=1,f=4,loc=40})}}),
 q(1503,{c={1},coords={
 [1413]={{57.23,30.34}}},lvl=10,qgs={5878},r=1,sourceQuests={1502},g={
@@ -8529,7 +8529,7 @@ s(157901,4771,{f=3,lvl=12})}}),
 n(5836,{coords={
 [1413]={{56.2,8.6}}},g={
 i(285366,{awp=16001,b=1,f=55}),
-i(285282,{awp=16001,f=36,lvl=13})}}),
+s(316382,285282,{awp=16001,f=36,lvl=13})}}),
 n(5835,{coords={
 [1413]={{56.6,8.6}}},g={
 s(316405,285351,{awp=16001,f=5,loc=44,lvl=16})}}),
@@ -8558,7 +8558,7 @@ s(158039,5112,{f=20,lvl=12})}}),
 n(5841,{coords={
 [1413]={{53,44.6},{53.4,37.4},{53.8,41.2},{54.6,48},{55.4,45.6},{55.6,39},{56.8,41.8}}},g={
 s(316397,285339,{awp=16001,b=1,f=6,loc=45,lvl=14}),
-i(285282,{awp=16001,f=36,lvl=13})}}),
+s(316382,285282,{awp=16001,f=36,lvl=13})}}),
 n(3253,{coords={
 [1413]={{42.6,70.6},{44.4,74},{44.6,70},{47.8,70.2}}},g={
 i(5138,{b=1,lvl=10,r=1}),
@@ -9186,7 +9186,7 @@ q(5151,{coords={
 qo(1,{coords={
 [1441]={{22.8,24.4}}},crs={10992},providers={{"i",12946}}}),
 i(15467,{b=1,f=52}),
-i(287066,{awp=16001,f=36})}}),
+s(317945,287066,{awp=16001,f=36})}}),
 q(1192,{coords={
 [1441]={{80,75.8}}},cost={{"i",5833,4}},lvl=29,qgs={4630},repeatable=1,sourceQuests={1194}}),
 q(1190,{coords={
@@ -9539,7 +9539,7 @@ qo(1,{providers={{"i",11104}}}),
 qo(2,{providers={{"i",11105}}}),
 qo(3,{providers={{"i",11106}}}),
 i(11108),
-i(3108,{f=36,lvl=22})}}),
+s(157137,3108,{f=36,lvl=22})}}),
 q(3908,{coords={
 [1449]={{44.6,8.2}}},lvl=47,maps={1452},qgs={8737},qis={11133},sourceQuests={3845}}),
 q(3962,{coords={
@@ -10148,7 +10148,7 @@ q(3483,{coords={
 [1455]={{71,94.2}}},lvl=45,qgs={8517},r=2,repeatable=1,sourceQuests={3451}})}}),
 q(7342,{coords={
 [1455]={{19.6,52.2}}},cost={{"i",15997,200}},lvl=52,qgs={14183},r=2,repeatable=1,g={
-i(18042,{f=37,lvl=52})}}),
+s(163419,18042,{f=37,lvl=52})}}),
 q(94789,{awp=16001,c={7},coords={
 [1455]={{47.2,12.2}}},lvl=30,maps={1417},qgs={258098},races={3},g={
 i(5178,{b=1})}}),
@@ -11567,7 +11567,7 @@ n(1298,{coords={
 [1453]={{58.6,69}}},r=2,sym={{"select","itemID",3027,3026}},g={
 s(160245,11303,{f=32,isLimited=1,lvl=11}),
 s(160249,11307,{f=32,isLimited=1,lvl=42}),
-i(287063,{awp=16001,f=36,isLimited=1}),
+s(317958,287063,{awp=16001,f=36,isLimited=1}),
 s(160248,11306,{f=32,isLimited=1,lvl=27})}}),
 n(1333,{coords={
 [1453]={{73.2,57.2}}},r=2,g={
@@ -12318,7 +12318,7 @@ q(533,{coords={
 qo(1,{crs={2240,2241},description="You can choose to bring Valik a drink or kill Syndicates until you get a missive to drop. Your choice.",providers={{"i",3601}}})}}),
 q(8249,{coords={
 [1416]={{84.4,80.3}}},cost={{"i",16885,5}},lvl=50,maxReputation={349,42000},qgs={6707},repeatable=1,g={
-i(20086,{b=1,f=36})}}),
+s(164139,20086,{b=1,f=36})}}),
 q(514,{coords={
 [1424]={{50.4,57}}},lvl=30,qgs={2277},qis={3521},r=2,sourceQuests={511}}),
 q(507,{coords={
@@ -15486,7 +15486,7 @@ q(11,{coords={
 qo(1,{crs={97,478},providers={{"i",782}}}),
 s(156730,2249,{b=1,f=8}),
 s(156723,2238,{b=1,f=4,loc=46}),
-i(287059,{awp=16001,f=36})}}),
+s(317951,287059,{awp=16001,f=36})}}),
 q(91751,{awp=16001,coords={
 [1429]={{46.2,62.2}}},lvl=5,qgs={6306},r=2,requireSkill=393,g={
 qo(1,{crs={118,1922},providers={{"i",247877}},requireSkill=393})}}),
@@ -15629,7 +15629,7 @@ n(268238,{awp=16001,coords={
 n(1198,{coords={
 [1429]={{83.2,66}}},r=2,g={
 s(160245,11303,{f=32,isLimited=1,lvl=11}),
-i(287063,{awp=16001,f=36,isLimited=1})}}),
+s(317958,287063,{awp=16001,f=36,isLimited=1})}}),
 n(66,{coords={
 [1429]={{41.8,67}}},r=2,g={
 r(7630,{isLimited=1,itemID=6270,learnedAt=60,requireSkill=197,skillID=2948}),
@@ -16204,7 +16204,7 @@ q(224,{coords={
 [1432]={{22.1,73.2}}},lvl=10,qgs={1089},r=2,g={
 qo(1,{providers={{"n",1161}}}),
 qo(2,{providers={{"n",1162}}}),
-i(287061,{awp=16001,f=36})}}),
+s(317946,287061,{awp=16001,f=36})}}),
 q(237,{coords={
 [1432]={{23.4,76.2}}},lvl=10,qgs={1091},r=2,sourceQuests={224},g={
 qo(1,{providers={{"n",1163}}}),
@@ -20630,7 +20630,7 @@ qo(1,{coords={
 [1437]={{54.2,54.2}}},crs={2091},providers={{"i",3625}}}),
 s(157176,3209,{b=1,f=26}),
 s(158357,6194,{b=1,f=21}),
-i(287067,{awp=16001,f=36})}}),
+s(317941,287067,{awp=16001,f=36})}}),
 q(470,{coords={
 [1437]={{11.8,58}}},lvl=19,qgs={2111},r=2,g={
 qo(1,{crs={1031,1032,1033},providers={{"i",3349}}}),
@@ -21656,7 +21656,7 @@ r(7753,{itemID=6328,requireSkill=185}),
 r(7751,{itemID=6325,requireSkill=185})}}),
 n(257422,{coords={
 [2521]={{59,75.5}}},sym={{"select","itemID",2488,2489,2490,2491,2492,2493,2494,2495,11303}},g={
-i(287063,{f=36,isLimited=1})}}),
+s(317958,287063,{f=36,isLimited=1})}}),
 n(251991,{coords={
 [2521]={{77.3,51.3}}},g={
 r(1257013,{itemID=253665,learnedAt=30,requireSkill=197,skillID=2948}),
