@@ -102,7 +102,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						lvl = 4,
 					}),
 					q(94373, {	-- Call of Earth (1/3)
-						sourceQuest = 98581,	-- Archaic Rune
+						sourceQuests = {
+							98581,	-- Archaic Rune
+							96243,	-- Call of Earth (Breadcrumb)
+						},
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
 						timeline = { TIMELINE.ADDED_1_60_1 },

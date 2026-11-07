@@ -370,7 +370,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
-				lvl = 10,
+				isBreadcrumb = true,
+				lvl = 4,
 			}),
 			q(94494, {	-- Call of Water
 				qg = 258098,	-- Eldrun Stormbreaker <Shaman Trainer>
