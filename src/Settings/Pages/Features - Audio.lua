@@ -171,7 +171,7 @@ end
 function WPDropDownDemo_Menu(frame, level, menuList)
 	local soundPacks = {};
 	for i, soundPack in pairs(app.Audio:GetAllSoundPacks()) do
-		tinsert(soundPacks, soundPack.name);
+		soundPacks[#soundPacks+1] = soundPack.name
 	end
 	table.sort(soundPacks);
 

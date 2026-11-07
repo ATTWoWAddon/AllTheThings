@@ -146,7 +146,7 @@ app.GroupBestMatchingItems = function(items, modItemID)
 		depth = ItemMatchDepth(item, modItemID);
 		if depth then
 			-- print("added refined item",depth,item.modItemID,item.key,item.key and item[item.key])
-			if refinedBuckets[depth] then refinedBuckets[depth][refinedBuckets[depth]+1] = item
+			if refinedBuckets[depth] then refinedBuckets[depth][#refinedBuckets[depth]+1] = item
 			else refinedBuckets[depth] = { item }; end
 		end
 	end
@@ -693,7 +693,7 @@ CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarves
 									local classes = {};
 									local _,list = (":"):split(text);
 									for i,className in ipairs({(","):split(list)}) do
-										classes[classes+1] = app.ClassInfoByClassName[className:trim()].classID
+										classes[#classes+1] = app.ClassInfoByClassName[className:trim()].classID
 									end
 									if #classes > 0 then
 										t.info.classes = classes;
@@ -708,10 +708,10 @@ CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarves
 											if not race then
 												print("Unknown Race",t.info.itemID,raceName:trim())
 											elseif type(race) == "number" then
-												races[races+1] = race
+												races[#races+1] = race
 											else -- Pandaren
 												for _,panda in pairs(race) do
-													races[races+1] = panda
+													races[#races+1] = panda
 												end
 											end
 										end

@@ -80,12 +80,12 @@ app.ChatCommands.Add("check-fps", function()
 			"```lua",
 		};
 		for mapID,missing in pairs(missingByMapID) do
-			info[info+1] = app.GetMapName(mapID) .. " (" .. mapID .. ")"
+			info[#info+1] = app.GetMapName(mapID) .. " (" .. mapID .. ")"
 			for flightpathID,text in pairs(missing) do
-				info[info+1] = " " .. flightpathID .. " -- " .. text
+				info[#info+1] = " " .. flightpathID .. " -- " .. text
 			end
 		end
-		info[info+1] = "```"	-- discord fancy box end
+		info[#info+1] = "```"	-- discord fancy box end
 
 		local popupID, text = "flight-master-summary", "Summary";
 		app:SetupReportDialog(popupID, text, info);

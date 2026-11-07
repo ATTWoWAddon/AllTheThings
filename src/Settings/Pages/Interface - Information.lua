@@ -1576,10 +1576,10 @@ local InformationTypes = {
 	CreateInformationType("Repeatables", { text = L.REPEATABLES_LABEL, priority = 10999, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			if reference.isWorldQuest then tinsert(tooltipInfo, { left = L.DURING_WQ_ONLY }); end
-			if reference.isDaily then tinsert(tooltipInfo, { left = L.COMPLETED_DAILY });
-			elseif reference.isWeekly then tinsert(tooltipInfo, { left = L.COMPLETED_WEEKLY });
-			elseif reference.isMonthly then tinsert(tooltipInfo, { left = L.COMPLETED_MONTHLY });
-			elseif reference.isYearly then tinsert(tooltipInfo, { left = L.COMPLETED_YEARLY });
+			if reference.isDaily then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_DAILY }
+			elseif reference.isWeekly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_WEEKLY }
+			elseif reference.isMonthly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_MONTHLY }
+			elseif reference.isYearly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_YEARLY }
 			elseif reference.repeatable then tinsert(tooltipInfo, { left = L.COMPLETED_MULTIPLE }); end
 		end,
 	}),
@@ -1638,7 +1638,7 @@ local InformationTypes = {
 					-- TODO: this is pretty out-dated, and should be revised for verbiage and qualification
 					-- currently it shows on BoA items which come from removed sources
 					-- if reference.u == app.PhaseConstants.REMOVED_FROM_GAME and not app.Modules.Filter.Filters.Bind(reference) and (reference.bonusID or 3524) ~= 3524 then
-					-- 	tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
+					-- 	tooltipInfo[#tooltipInfo+1] = { left = L.RECENTLY_MADE_OBTAINABLE }
 					-- end
 				end
 			end
@@ -1675,7 +1675,7 @@ local InformationTypes = {
 			if specs and #specs > 0 then
 				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
 			elseif reference.sourceID then
-				tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+				tooltipInfo[#tooltipInfo+1] = { right = L.NOT_AVAILABLE_IN_PL }
 			end
 		end or function(t, reference, tooltipInfo)
 			local specs = reference.specs;

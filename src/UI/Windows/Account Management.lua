@@ -2270,14 +2270,14 @@ local function OnTooltipForCharacterHeader(t, tooltipInfo)
 		left = L.ACCOUNT_MANAGEMENT_TOTAL_TIME_PLAYED,
 		right = GetTimePlayedString(AccountTotalTimePlayed)
 	});
-	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_CLASS });
+	tooltipInfo[#tooltipInfo+1] = { left = L.ACCOUNT_MANAGEMENT_BY_CLASS }
 	for class,total in pairs(ByClass) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateCharacterClass(class).text,
 			right = GetTimePlayedString(total)
 		});
 	end
-	tinsert(tooltipInfo, { left = L.ACCOUNT_MANAGEMENT_BY_RACE });
+	tooltipInfo[#tooltipInfo+1] = { left = L.ACCOUNT_MANAGEMENT_BY_RACE }
 	for race,total in pairs(ByRace) do
 		tinsert(tooltipInfo, {
 			left = "  " .. app.CreateRace(race).text,

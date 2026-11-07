@@ -100,14 +100,14 @@ local function PlotCachedCoords()
 						if creatureID then
 							if not rootByCreatureID[creatureID] then
 								rootByCreatureID[creatureID] = group;
-								tinsert(root, app.CreateNPC(creatureID));
+								root[#root+1] = app.CreateNPC(creatureID)
 							end
 						elseif objectID then
 							if not rootByObjectID[objectID] then
 								rootByObjectID[objectID] = group;
 								-- TODO: doing this drops the icon for some objects that reference their content to provide a
 								-- suitable .icon
-								tinsert(root, app.CreateObject(objectID));
+								root[#root+1] = app.CreateObject(objectID)
 							end
 						else
 							root[#root+1] = group

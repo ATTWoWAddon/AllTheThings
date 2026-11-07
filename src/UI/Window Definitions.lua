@@ -1651,7 +1651,7 @@ local function InternalBuildFlatSearchFilteredResponse(groups, filter, t)
 		for i,group in ipairs(groups) do
 			if not group.IgnoreBuildRequests then
 				if filter(group) then
-					tinsert(t, app.CloneClassInstance(group));
+					t[#t+1] = app.CloneClassInstance(group)
 				elseif group.g then
 					InternalBuildFlatSearchFilteredResponse(group.g, filter, t);
 				end
@@ -1687,7 +1687,7 @@ local function InternalBuildSearchFilteredResponse(groups, filter)
 			if not group.IgnoreBuildRequests then
 				if filter(group) then
 					if not t then t = {}; end
-					tinsert(t, app.CloneClassInstance(group));
+					t[#t+1] = app.CloneClassInstance(group)
 				else
 					local response = InternalBuildSearchFilteredResponse(group.g, filter);
 					if response then

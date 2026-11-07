@@ -105,7 +105,7 @@ app:CreateWindow("ItemFinder", {
 														local classes = {};
 														local _,list = (":"):split(text);
 														for i,className in ipairs({(","):split(list)}) do
-															tinsert(classes, app.ClassInfoByClassName[className:trim()].classID);
+															classes[#classes+1] = app.ClassInfoByClassName[className:trim()].classID
 														end
 														if #classes > 0 then
 															info.classes = classes;

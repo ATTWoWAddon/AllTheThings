@@ -26,7 +26,7 @@ local function BuildDiscordMapInfoTable(id, mapInfo)
 	while mapID do
 		mapInfo = C_Map_GetMapInfo(mapID)
 		if mapInfo then
-			tinsert(info, "> parentMapID:"..mapID.." ("..(mapInfo.name or "??")..")")
+			info[#info+1] = "> parentMapID:"..mapID.." ("..(mapInfo.name or "??")..")"
 			mapID = mapInfo.parentMapID;
 		else break
 		end
@@ -43,7 +43,7 @@ local function BuildDiscordMapInfoTable(id, mapInfo)
 	tinsert(info, "lq:"..(app.TableConcat(app.MostRecentQuestTurnIns or app.EmptyTable, nil, nil, "<") or ""));
 
 	local inInstance, instanceType = IsInInstance()
-	tinsert(info, "instance:"..(inInstance and "true" or "false")..":"..(instanceType or ""))
+	info[#info+1] = "instance:"..(inInstance and "true" or "false")..":"..(instanceType or "")
 	return info
 end
 local function ShowDiscordReportPopupForMapID(mapID)

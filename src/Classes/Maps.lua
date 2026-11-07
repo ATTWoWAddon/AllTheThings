@@ -770,15 +770,15 @@ local function PrintReportedAreaSummary()
 		end
 		for mapID,areas in pairs(areasByMapID) do
 			app.Sort(areas, app.SortDefaults.text);
-			tinsert(info, "-- " .. GetMapName(mapID) .. " (" .. mapID .. ")");
+			info[#info+1] = "-- " .. GetMapName(mapID) .. " (" .. mapID .. ")"
 			for i,o in ipairs(areas) do
 				tinsert(info, "exploration(" .. o.explorationID .. "),\t-- " .. o.text);
 			end
 			info[#info+1] = ""
 		end
 
-		tinsert(info, "ver: "..app.Version);
-		tinsert(info, "build: "..app.GameBuildVersion);
+		info[#info+1] = "ver: "..app.Version
+		info[#info+1] = "build: "..app.GameBuildVersion
 		info[#info+1] = "```"	-- discord fancy box end
 
 		local popupID, text = "found-area-summary", "Summary";

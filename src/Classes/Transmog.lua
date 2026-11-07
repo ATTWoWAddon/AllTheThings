@@ -1456,7 +1456,7 @@ if app.IsRetail then
 					return
 				end
 				local charName = charData.text or UNKNOWN
-				tinsert(tooltipInfo, { right = L.BOUND_ON:format(charName)});
+				tooltipInfo[#tooltipInfo+1] = { right = L.BOUND_ON:format(charName)}
 			end
 		});
 	end);

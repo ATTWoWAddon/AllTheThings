@@ -273,11 +273,10 @@ function ATTinserts(count)
 	app.PrintDebug("tinsert",count)
 	-- 0.214733 @ 1M
 	for i=1,count do
-		c[#c+1] = i
+		tinsert(c,i)
 	end
 	app.PrintDebugPrior("---")
 
-	local tinsert = tinsert
 	app.PrintDebug("t[#t+1]",count)
 	-- 0.087703 @ 1M
 	for i=1,count do
@@ -570,8 +569,8 @@ end
 
 function ATTclones(count)
 
-	local tinsert,ipairs
-		= tinsert,ipairs
+	local ipairs
+		= ipairs
 	local function CloneArray_ipairs(arr)
 		local clone = {};
 		for i,value in ipairs(arr) do

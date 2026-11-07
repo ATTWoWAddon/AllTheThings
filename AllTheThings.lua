@@ -38,8 +38,8 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
 --- @type function,function,function,function,function,function,function,function,function,function,function,function,function
-local print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math_floor,GetTime
-	= print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,tinsert,type,math.floor,GetTime
+local print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,type,math_floor,GetTime
+	= print,rawget,rawset,tostring,ipairs,pairs,tonumber,select,setmetatable,getmetatable,type,math.floor,GetTime
 
 -- Global WoW API Cache
 --- @type function

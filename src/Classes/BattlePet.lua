@@ -237,7 +237,7 @@ if C_PetJournal_GetPetStats then
 								index = index + 1;
 								if index == 1 then
 									tooltipInfo[#tooltipInfo+1] = { left = " " }
-									tinsert(tooltipInfo, { left = app.L.OWNED_PETS });
+									tooltipInfo[#tooltipInfo+1] = { left = app.L.OWNED_PETS }
 								end
 								health, maxHealth, power, speed, rarity = C_PetJournal_GetPetStats(petID);
 								tinsert(tooltipInfo, {
