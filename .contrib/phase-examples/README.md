@@ -1,12 +1,35 @@
 # Run the three phase interfaces
 
-**Comparison guide · P1–P4 migration and the runnable P4 example.** These six instances are written three ways so you can choose one interface. A data contributor would maintain the inputs for the chosen option. The parallel versions here let reviewers compare their output.
+**Edit [schedule.json](schedule.json) to change when a dungeon, boss or drop opens.** The six instances share this file. Lua owns the loot tables. The Parser receives expanded inputs generated from the schedule.
 
-| Label at the start of the file | Who edits it and why |
+## Change one opening
+
+These four entries are the whole Blackwing Lair schedule, under `rules.blackwing-lair`:
+
+```json
+{
+  "raid.bwl.common": { "default": "vanilla.3", "sod": "vanilla.5" },
+  "raid.bwl.original": { "default": { "sameAs": "raid.bwl.common" }, "sod": "disabled" },
+  "raid.bwl.sod20": { "sod": { "sameAs": "raid.bwl.common" } },
+  "raid.bwl.draconic-for-dummies": "unknown"
+}
+```
+
+To move the entire SoD opening, change only `"vanilla.5"` on the first line. The 20-player route follows that rule. To delay **only** the 20-player raid, replace its `sameAs` with the later milestone. The original 40-player loot stays disabled in SoD, and the date of the book remains unknown.
+
+| When you change… | Edit… |
 |---|---|
-| **Authoring input (A/B/C)** | The letter(s) name the option that uses the file. For **A**, edit `sources.lua` and `profiles/<flavor>/main.json`. For **B**, edit `layout.lua`, the selected `fragments/*.lua`, `selection.json` and the same profiles. For **C**, edit `sources.lua`, `catalogs/<flavor>/main.json` and `policies/<instance>.json`. All paths are under [input/](input). |
-| **Comparison fixture / Comparison tooling** | The `replay.json` files and `:replay` rows create synthetic openings for tests. The example compiler, workflow, evaluator, inspector and verifiers are maintained by developers of this comparison. |
-| **Generated** | The example Parser writes [SoD](generated/sod-main.lua) and [Retail](generated/retail.lua) Lua samples. Windows CI builds [Parser.exe](../.tools/Parser.exe) and writes the [build record](generated/build.json) beside the samples. Regenerate them after editing their sources. |
+| Which boss drops an item | The Lua source that owns the drop. An item opening with its boss inherits the boss's rules and needs no JSON entry. |
+| An independent opening, removal or reopening | One key under the instance in [schedule.json](schedule.json). Use `calendars` in the same file only when introducing or reordering a milestone. |
+| A synthetic replay or the Lua slots for comparison B | [comparison.json](comparison.json), used by the comparison tests and source-layout example. |
+
+After a schedule edit, run this from the repository root. It writes the 19 comparison inputs under `input/profiles/`, `input/catalogs/`, `input/policies/` and `input/selection.json`. Include the generated changes so the shipped Parser can read them directly. CI uses `--check` to catch stale copies.
+
+```console
+python .contrib/phase-examples/prepare.py
+```
+
+`default` applies to the four phased flavors in this example. `sameAs` copies another key's timing in the **same flavor and profile**. Both sources keep their own identities and ordinary acquisition conditions. Retail loads its ordinary sources and skips phase scheduling entirely. A SoD-only rule names `sod` explicitly. A retained Lua key without a matching rule fails validation.
 
 ## Migration stages by file
 
@@ -16,7 +39,7 @@
 |---|---|---|
 | **P1** | [Original Lua](evolution/blackwing-lair/p1/1.6%20Blackwing%20Lair.lua) · [Shipped database](evolution/blackwing-lair/nefarian/p1/legacy-sod.md) | The existing raid uses `applyclassicphase` plus a SoD guard around the reworked difficulty. |
 | **P2.1** | [Complete annotated raid](evolution/blackwing-lair/p2.1/1.6%20Blackwing%20Lair.lua) | Add the keys and SoD applicability first. The old wrappers still supply official output. |
-| **P2.2** | [Lua](evolution/blackwing-lair/p2.2/1.6%20Blackwing%20Lair.lua) · [New SoD JSON](evolution/blackwing-lair/p2.2/profiles/sod/main.json) | Write release windows and validate them in shadow. |
+| **P2.2** | [Lua](evolution/blackwing-lair/p2.2/1.6%20Blackwing%20Lair.lua) · [Shared schedule, including the SoD exceptions](schedule.json) | Write release windows and validate them in shadow. |
 | **P3** | [Lua](evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) · [Stage switch](evolution/blackwing-lair/p3/migration.json) | The same Lua and JSON now supply official progress output. Keep the old writers for an independent legacy comparison. |
 | **P4** | [Rewritten Lua](evolution/blackwing-lair/p4/sod.lua) · [Generated Nefarian excerpt](evolution/blackwing-lair/nefarian/p4/expected-sod.lua) | Remove the guards and wrappers. Keep the reviewed policy and separate the original and reworked loot routes. |
 
@@ -47,33 +70,32 @@ Inspect the two Ashkandis with `19364` and `230818`. The original stays disabled
 
 ## Choose an interface
 
-| Option | Where to edit loot | Where to move only the SoD opening | Tradeoff |
-|---|---|---|---|
-| **A. Source keys, one JSON per profile** | Add the item under the boss in [sources.lua](input/sources.lua). A new independent release gets its own `progressionKey`. | Edit [the SoD profile](input/profiles/sod/main.json). | Reviewing one flavor's schedule is easy. A maintainer comparing a raid across flavors opens several profiles. |
-| **B. Named groups, selected Lua files** | Add the item to the [reworked BWL fragment](input/fragments/bwl.rework.lua). [layout.lua](input/layout.lua) defines its position. | Edit [the same SoD profile](input/profiles/sod/main.json). To change which payload a slot loads, edit [selection.json](input/selection.json). | A context selects complete files before the Parser reads them. Moving a group involves both its slot and the fragment. |
-| **C. Source keys, one JSON per instance** | Use [the same Lua records as A](input/sources.lua). | Edit the `sod:main` row in [blackwing-lair.json](input/policies/blackwing-lair.json). The [SoD catalog](input/catalogs/sod/main.json) owns milestone order. | One file shows all versions of a raid. Reviewing an entire flavor's windows involves several instance files. |
+All three interfaces use the same authored schedule. Their generated formats are kept in the PR so the shipped Parser can run any example directly after checkout.
 
-For example, add an existing-phase Nefarian drop under encounter `1536` in its own difficulty; the item inherits its full route's keys. A later drop needs a new source key plus a window in the appropriate A/B profile or C instance file. Moving that drop in SoD leaves the original acquisition and the other profiles independent.
-
-A/B read only their profile-local rules. C reads only its milestone catalog and the matching context row from each instance policy file. In B, an explicit `null` slot excludes the group before reading its file; a selected fragment contributes its key to its children without adding a generated parent. All options reject malformed mappings and preserve the previous output if compilation fails.
+| Interface | Lua input to edit | Generated JSON consumed by the Parser |
+|---|---|---|
+| A · direct sources | [sources.lua](input/sources.lua) | [One schedule per profile](input/profiles/sod/main.json) |
+| B · selected source files | [layout.lua](input/layout.lua) and the relevant [fragment](input/fragments/bwl.rework.lua) | The same profile plus [a slot selection](input/selection.json). Excluded slots are skipped before their files are read. |
+| C · policies grouped by raid | [sources.lua](input/sources.lua), as in A | [Milestone catalog](input/catalogs/sod/main.json) and [one policy file per instance](input/policies/blackwing-lair.json) |
 
 ### Reading a release rule
 
-In the [SoD profile (A/B)](input/profiles/sod/main.json) and [Blackwing Lair policy (C)](input/policies/blackwing-lair.json), find `raid.bwl.sod20`. Its `windows` field opens the 20-player difficulty at `vanilla.5`. A drop under that difficulty inherits the opening. To release a single item later, give **only that occurrence** a `progressionKey` in Lua and add the same key to the chosen JSON policy.
+A milestone string opens a source from that milestone onward. `"start"` opens at the first view, `"disabled"` keeps a historical route closed, and `"unknown"` records an unconfirmed opening. All inherited scopes and other ordinary conditions still apply.
 
-The following **comparison fixture** shows how to write a temporary removal and reopening using existing SoD milestones. It illustrates the format with an invented schedule. To try it, replace just the value of `raid.bwl.sod20` in a working copy.
+For a removal and reopening, use explicit windows only on the affected key. For example, this **synthetic comparison** changes the SoD rework under `rules.blackwing-lair`. The first window closes at the scepter milestone and the second reopens the route at the raid milestone.
 
 ```json
 {
-  "$comment": "The first window closes at the scepter milestone. The second reopens the route when the raids unlock.",
-  "windows": [
-    { "from": "vanilla.5", "until": "vanilla.6.scepter" },
-    { "from": "vanilla.6.raids" }
-  ]
+  "raid.bwl.sod20": {
+    "sod": {
+      "windows": [
+        { "from": "vanilla.5", "until": "vanilla.6.scepter" },
+        { "from": "vanilla.6.raids" }
+      ]
+    }
+  }
 }
 ```
-
-`from` includes its milestone. `until` excludes its milestone. Omit it for an open-ended window. Write windows in release order, without overlaps. For a history-only route use `{ "status": "disabled", "windows": [] }`. For an unconfirmed opening use `{ "status": "unknown", "windows": [] }`. Use Lua `--` comments and a single string-valued `"$comment"` per JSON object wherever an editor needs a note. Both are consumed when the Parser writes the database.
 
 ## Six things to try
 
@@ -92,6 +114,7 @@ The `main` profiles retain evidence gaps. Demon Fall Canyon is known to open dur
 
 ```powershell
 python .contrib/phase-examples/verify.py --parser $parser --lua lua5.1 --output "$env:TEMP/att-phase-examples"
+python .contrib/phase-examples/verify_compact.py --parser $parser --lua lua5.1 --baseline-output "$env:TEMP/att-phase-examples"
 ```
 
 The runner calls the built Parser for A, B and C in seven contexts. The retained Lua modules are grouped by option, for example `A/sod-main.lua`, `B/retail.lua` and `C/progression-replay.lua`. The Lua 5.1 checks compare complete trees and evaluate each boundary. Negative inputs exercise missing keys beneath disabled owners, typos, unknown milestones, invalid windows and previous-output preservation. To build from source, run `dotnet build .contrib/src/Parser/Parser.csproj -c Release -p:Platform=x64` on Windows with .NET Framework 4.8 targeting support. The [Windows workflow](../../.github/workflows/PhaseExamples.yml) builds the actual Parser, runs the checks, and publishes `Parser.exe`, its SHA256 provenance file and all generated modules in the `phase-examples-windows` artifact.
