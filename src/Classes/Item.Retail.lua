@@ -13,6 +13,7 @@ local ItemEventListener = ItemEventListener
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetDetailedItemLevelInfo = app.WOWAPI.GetDetailedItemLevelInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local GetItemSpell = app.WOWAPI.GetItemSpell;
@@ -397,6 +398,9 @@ local itemFields = {
 	end,
 	q = function(t)
 		return cache.GetCachedField(t, "q");
+	end,
+	iLvl = function(t)
+		return GetDetailedItemLevelInfo(t.rawlink or t.link or t.itemID);
 	end,
 	b = function(t)
 		return cache.GetCachedField(t, "b") or 2;
