@@ -1,0 +1,8 @@
+{
+  "$comment": "Comparison copy of the era authoring input. Write once at P2.2 for shadow validation. P3 and P4 read the same rules.",
+  "milestones": ["vanilla.2", "vanilla.3"],
+  "content": {
+    "raid.bwl.common": { "windows": [{ "from": "vanilla.3" }] },
+    "raid.bwl.original": { "windows": [{ "from": "vanilla.3" }] }
+  }
+}
