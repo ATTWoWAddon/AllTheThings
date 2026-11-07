@@ -181,10 +181,18 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			}),
 			{	-- Great Bear Spirit
 				allianceQuestData = q(5929, {	-- Great Bear Spirit [A]
-					sourceQuest = 5921,	-- Moonglade [A]
+					sourceQuests = {
+						5921,	-- Moonglade [A]
+						94914,	-- Moonglade (Skyborne)
+					},
+					sourceQuestNumRequired = 1,
 				}),
 				hordeQuestData = q(5930, {	-- Great Bear Spirit [H]
-					sourceQuest = 5922,	-- Moonglade [H]
+					sourceQuests = {
+						5922,	-- Moonglade [H]
+						94913,	-- Moonglade (Skyborne)
+					},
+					sourceQuestNumRequired = 1,
 				}),
 				qg = 11802,	-- Dendrite Starblaze
 				coord = { 56.2, 30.4, MAP.MOONGLADE },
@@ -194,7 +202,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5923, {	-- Heeding the Call [Darnassus]
 				qg = 4218,	-- Denatharion <Druid Trainer>
 				coord = { 34.8, 7.8, MAP.DARNASSUS },
-				races = ALLIANCE_ONLY,
+				races = { NIGHTELF },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -202,7 +210,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5928, {	-- Heeding the Call [Mulgore]
 				qg = 3064,	-- Gennia Runetotem <Druid Trainer>
 				coord = { 48.4, 59.6, MAP.MULGORE },
-				races = HORDE_ONLY,
+				races = { TAUREN },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -210,7 +218,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5927, {	-- Heeding the Call [Orgrimmar]
 				qg = 6929,	-- Innkeeper Gryshka <Innkeeper>
 				coord = { 54.2, 68.4, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
+				races = { TAUREN },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -218,7 +226,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5924, {	-- Heeding the Call [Stormwind City]
 				qg = 5505,	-- Theridran <Druid Trainer>
 				coord = { 36.2, 64.2, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
+				races = { NIGHTELF },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -226,7 +234,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5925, {	-- Heeding the Call [Teldrassil]
 				qg = 3602,	-- Kal <Druid Trainer>
 				coord = { 56.0, 61.6, MAP.TELDRASSIL },
-				races = ALLIANCE_ONLY,
+				races = { NIGHTELF },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -234,7 +242,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(5926, {	-- Heeding the Call [Thunder Bluff]
 				qg = 6746,	-- Innkeeper Pala <Innkeeper>
 				coord = { 45.8, 64.4, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
+				races = { TAUREN },
 				classes = { DRUID },
 				isBreadcrumb = true,
 				lvl = 10,
@@ -264,24 +272,14 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 14,
 			}),
 			q(94913, {	-- Moonglade
-				sourceQuests = {
-					5926,	-- Heeding the Call [Thunder Bluff]
-					5927,	-- Heeding the Call [Orgrimmar]
-					5928,	-- Heeding the Call [Mulgore]
-				},
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.4, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
+				races = { SKYBORNE_HORDE },
 				classes = { DRUID },
 				lvl = 10,
 			}),
 			q(94914, {	-- Moonglade
-				sourceQuests = {
-					5923,	-- Heeding the Call [Darnassus]
-					5924,	-- Heeding the Call [Stormwind City]
-					5925,	-- Heeding the Call [Teldrassil]
-				},
 				qg = 5504,	-- Sheldras Moontree <Druid Trainer>
 				coord = { 21.0, 55.4, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },

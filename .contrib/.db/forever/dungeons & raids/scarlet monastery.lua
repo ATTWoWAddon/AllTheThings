@@ -141,11 +141,17 @@ instanceroot(316, {	-- Scarlet Monastery
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(215374, {	-- Ancestral Sword
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7759),	-- Archon Chestpiece
 			i(7728),	-- Beguiler Robes
 			i(7753),	-- Bloodspiller
 			i(7729),	-- Chesterfall Musket
 			i(7730),	-- Cobalt Crusher
+			i(215376, {	-- Crusader's Mace
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7752),	-- Dreamslayer
 			i(7736),	-- Fight Club
 			i(7755),	-- Flintrock Shoulders

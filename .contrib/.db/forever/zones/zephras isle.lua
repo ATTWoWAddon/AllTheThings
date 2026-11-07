@@ -1822,6 +1822,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 53.2, 48.0, MAP.ZEPHRAS_ISLE },
 				groups = {
 					i(263006),	-- Scout Ranger's Tunic
+					i(263005),	-- Thendal Watcher's Vest
 				},
 			}),
 		}),
