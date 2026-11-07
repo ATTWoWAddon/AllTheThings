@@ -1,6 +1,6 @@
 # Phase scheduling and legacy-authoring retirement
 
-**Design for maintainers · P1–P4.** The production migration awaits review. The separate executable comparison demonstrates P4 candidate inputs and the ordinary Retail default. [Files to edit, comparison fixtures and generated outputs, by stage](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#migration-stages-by-file)
+**Design for maintainers · P1–P4.** The production migration awaits review. The linked comparison follows the complete current raid file through P4 and executes the shadow and progress paths for Nefarian. [Files to edit, comparison fixtures and generated outputs, by stage](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#migration-stages-by-file)
 
 [Six dungeon and raid cases](#six-dungeon-and-raid-cases) · [Compare three Lua/JSON interfaces](#three-lua-and-json-authoring-options)
 
@@ -297,50 +297,25 @@ C would require one reviewed policy input per participating raid, selected expli
 
 ### Blackwing Lair through P1–P4
 
-Here **P1–P4 are the four migration stages**, not the raid's game-content phases. The existing Blackwing Lair source wraps the whole instance in `applyclassicphase(PHASE_THREE, ...)`; its separate SoD raid branch also uses `SOD_PHASE_FIVE`. In SoD the existing alias makes `PHASE_THREE` mean phase 5. The migration must preserve both source scopes rather than reuse another raid's example.
+**P1 is the complete raid file that exists today.** In the example its first line states the stage and original path. Removing that one label recovers every byte of the current 1,144-line file, including the SoD token table, quests, bosses and all loot. [Full P1 file](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p1/1.6%20Blackwing%20Lair.lua) · [Every stage side by side](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/README.md) · [Full P1 files and worked changes for five other instances](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/OTHER_INSTANCES.md)
 
-```lua
--- P1: existing source authority, abbreviated without changing the wrappers.
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
-    applyclassicphase(PHASE_THREE, {
-        inst(742, { -- Blackwing Lair
-            groups = {
-                -- Existing original/legacy-history groups remain here.
-                -- #if SEASON_OF_DISCOVERY
-                applyclassicphase(SOD_PHASE_FIVE,
-                    d(DIFFICULTY.SOD.PLAYER20, {
-                        timeline = { ADDED_1_15_4 },
-                        -- Existing SoD bosses, quests and rewards.
-                    })),
-                -- #endif
-            },
-        }),
-    })))
+| Transition | What the maintainer actually changes |
+|---|---|
+| P1 → P2.1 | Add keys to the existing BWL records. Keep the phase calls and season guards. Three shorthand child lists become explicit `groups` so the headers can carry their own keys. [Complete annotated Lua](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p2.1/1.6%20Blackwing%20Lair.lua) |
+| P2.1 → P2.2 | Write the [SoD profile](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p2.2/profiles/sod/main.json) and the other profiles. The legacy path still supplies official output. |
+| P2.2 → P3 | Change `"stage": "P2.2"` to `"stage": "P3"` in the [migration control](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p3/migration.json). The complete [Lua](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) and four policy files stay byte-identical. Progress supplies the candidate result while the old writers serve the independent legacy golden. |
+| P3 → P4 | Retire the old writers and flavor guards. The complete option B candidate selects the [ordinary Classic](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/classic.lua), [SoD](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/sod.lua) or [Retail default](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/retail.lua) source before evaluating it. Existing maps, quest prerequisites, item lists and intrinsic build conditions remain with their source. |
 
--- P2.1: add these input fields first; keep the P1 expressions and data.
--- No JSON file is required yet. P2.2 adds the policy files in section 2b.
--- On inst(742, ...):
-progressionKey = "raid.bwl.common",
--- On each top-level original acquisition group/boss (including the old quests):
-progressionKey = "raid.bwl.original",
--- On the separate SoD difficulty subtree:
-flavors = { "sod" },
-progressionKey = "raid.bwl.sod20",
--- On the existing later Draconic for Dummies source o(180667, ...):
-progressionKey = "raid.bwl.draconic-for-dummies",
+In P1 the SoD rework begins with `applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, ...))`. These are the added fields at that location in P2.1:
 
--- P3: keep the same annotated source for the isolated legacy golden.
--- Production ignores the old phase producers and exports, for example:
-progressionScopes = {
-    "sod:main:raid.bwl.common",
-    "sod:main:raid.bwl.sod20",
-},
-
--- P4: remove the old phase wrappers/assignments after the P3 gates pass.
--- In this candidate the original and reworked bosses/drops are direct Lua records.
--- Each keeps its own route. The SoD profile disables the former and opens
--- the latter at vanilla.5. Section 2b shows one possible representation.
+```diff
+ applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
++    flavors = { "sod" },
++    progressionKey = "raid.bwl.sod20",
+     timeline = { ADDED_1_15_4 },
 ```
+
+At P4 the selected native SoD source opens that same difficulty directly with `d(DIFFICULTY.SOD.PLAYER20, ...)`; its release comes from `raid.bwl.sod20`. In the smaller executable comparison, Nefarian's reworked sword `230818` inherits the common and reworked scopes. The original sword `19364` stays on the disabled 40-player route. These comparisons demonstrate the source change; promotion of the full raid still requires the unresolved book policy and the independent production golden. [Shipped legacy records](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/nefarian/p1/legacy-sod.md) · [Executable two-route comparison](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/nefarian/README.md) · [Generated Lua](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/nefarian/p4/expected-sod.lua)
 
 P2 contains two authoring steps: P2.1 adds Lua and reports pending policy keys; P2.2 writes/selects JSON and validates it in shadow. Both strip the new input fields from that cohort's official legacy output and keep its old guards/authority; another cohort may already contribute progress output to the same artifact. In P3 the source's old `PHASE_THREE`, nested `PHASE_FIVE`, `SOD_PHASE_FIVE`, recipe/cache values, and phase-driven callbacks cannot supply or repair production timing. Every old timing writer is suppressed before normalization/merge in the isolated progress projection for that cohort; legacy-owned cohorts and the independent golden retain their original behavior. In P4 remove those retired writers and authored flavor/season guards after safe source construction is established. Preserve raid data, intrinsic timelines and independent unavailable/event/level conditions. The complete BWL stage-by-stage output and validation table is in section 2b.
 
