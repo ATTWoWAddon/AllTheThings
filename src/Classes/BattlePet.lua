@@ -227,22 +227,40 @@ if C_PetJournal_GetPetStats then
 			Process = function(t, data, tooltipInfo)
 				local speciesID = data.speciesID;
 				if speciesID then
-					local totalPets, ownedPets = C_PetJournal_GetNumPets()
-					if ownedPets > 0 then
+					local totalPets = C_PetJournal_GetNumPets() or 0;
+					if totalPets > 0 then
 						local index = 0;
-						local petID, s, owned, customName, level, health, maxHealth, power, speed, rarity;
-						for i=1,ownedPets do
-							petID, s, owned, customName, level = C_PetJournal_GetPetInfoByIndex(i);
-							if petID and owned and speciesID == s then
+						for i=1,totalPets do
+							local petID, s, owned, customName, level, _, _, name, _, _, _, _, _, _, canBattle = C_PetJournal_GetPetInfoByIndex(i);
+							if owned and speciesID == s then
 								index = index + 1;
 								if index == 1 then
 									tooltipInfo[#tooltipInfo+1] = { left = " " }
 									tooltipInfo[#tooltipInfo+1] = { left = app.L.OWNED_PETS }
 								end
-								health, maxHealth, power, speed, rarity = C_PetJournal_GetPetStats(petID);
+								local health, maxHealth, power, speed, rarity;
+								if petID and canBattle ~= false then
+									health, maxHealth, power, speed, rarity = C_PetJournal_GetPetStats(petID);
+								end
+								local left = customName;
+								if not left or left == "" then left = name; end
+								if not left or left == "" then left = data.name; end
+								if not left or left == "" then left = UNKNOWN; end
+								local quality = rarity and _G["BATTLE_PET_BREED_QUALITY" .. rarity];
+								if level and quality then
+									left = LEVEL .. " " .. level .. " (" .. quality .. ")";
+								end
+								local right;
+								if health and maxHealth then
+									right = health .. " / " .. maxHealth;
+								end
+								if power and speed then
+									local stats = "[" .. power .. " | " .. speed .. "]";
+									right = right and (right .. " " .. stats) or stats;
+								end
 								tooltipInfo[#tooltipInfo+1] = {
-									left = LEVEL .. " " .. level .. " (" .. _G["BATTLE_PET_BREED_QUALITY" .. rarity] .. ")",
-									right = health .. " / " .. maxHealth .. " [" .. power .. " | " .. speed .. "]"
+									left = left,
+									right = right,
 								}
 							end
 						end
