@@ -79,6 +79,7 @@ local KeyMaps = setmetatable({
 	mountmod = "itemID",
 	n = "npcID",
 	npc = "npcID",
+	nonbattlepet = "speciesID",
 	o = "objectID",
 	object = "objectID",
 	pn = "professionnodeID",
