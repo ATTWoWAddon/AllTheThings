@@ -1131,7 +1131,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				coord = { 37.0, 34.4, MAP.LOCH_MODAN },
 				
 			}),
-			i(769),	-- Chunk of Boar Meat
 			i(2823, {	-- Mo'grosh Can Opener
 				cr = 1180,	-- Mo'grosh Brute
 				coords = {

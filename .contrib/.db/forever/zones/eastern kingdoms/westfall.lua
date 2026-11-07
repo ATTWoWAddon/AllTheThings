@@ -1021,7 +1021,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				lvl = 10,
 			}),
-			i(769),	-- Chunk of Boar Meat
 			i(2673, {	-- Coyote Meat
 				description = "Only drops from coyotes in Westfall.",
 				coord = { 49.4, 24.5, MAP.WESTFALL },	-- Furlbrow's Pumpkin Farm

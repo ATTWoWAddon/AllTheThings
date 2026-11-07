@@ -1921,9 +1921,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(769, {	-- Chunk of Boar Meat
-				cr = 113,	-- Stonetusk Boar
-			}),
 			i(247826, {	-- Croaky's Head (QS!)
 				coord = { 76.6, 86.8, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },

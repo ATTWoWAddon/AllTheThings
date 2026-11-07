@@ -3777,7 +3777,6 @@ mnt(10799,{itemID=8592,lvl=40})}}))}),
 h(-63,{
 i(4882,{coords={
 [1411]={{59.6,58.2}}},crs={3192},spellID=6529}),
-i(769),
 i(275724,{awp=16001,crs={3206,3207},description="You can continue to Disenchant these to level your enchanting well beyond skill level 40."}),
 i(5466,{crs={3125,3126,3127,3226,5823},description="Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",maps={1411}})})}}),
 m(1445,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",g={
@@ -5429,7 +5428,7 @@ h(-31,{
 faction(2787,{awp=16001})}),
 h(-45,{
 q(96294,{awp=16001,coords={
-[1412]={{33.4,22.4}}},lvl=23,providers={{"i",273658}},qgs={259118},r=1,g={
+[1412]={{33.4,22.4}}},lvl=23,providers={{"i",273658}},qgs={259118},races={2,5,8,96},g={
 qo(1,{providers={{"i",273659}}})}}),
 q(99197,{lvl=26,r=1,u=1}),
 q(99196,{awp=16001,coords={
@@ -5493,7 +5492,7 @@ q(743,{coords={
 [1412]={{47.4,62}}},lvl=5,qgs={2985},r=1,g={
 qo(1,{crs={2962,2963},providers={{"i",4751}}})}}),
 q(96259,{awp=16001,coords={
-[1412]={{33.4,22.4}}},lvl=23,qgs={259118},r=1,g={
+[1412]={{33.4,22.4}}},lvl=23,qgs={259118},races={2,5,8,96},g={
 qo(1,{providers={{"n",264079}}}),
 qo(2,{providers={{"n",264083}}})}}),
 q(99080,{awp=16001,coords={
@@ -5594,7 +5593,7 @@ qo(1,{providers={{"i",206345}}}),
 s(310185,277988,{b=1,f=20}),
 s(310186,278002,{b=1,f=23})}}),
 q(96260,{awp=16001,coords={
-[1412]={{32.4,20}}},lvl=23,qgs={264072},r=1,g={
+[1412]={{32.4,20}}},lvl=23,qgs={264072},races={2,5,8,96},g={
 qo(1,{crs={264081},providers={{"i",273181}}}),
 i(276892,{b=1,f=113}),
 i(276891,{b=1,f=113}),
@@ -5609,7 +5608,7 @@ q(761,{coords={
 [1412]={{48.7,59.3}}},lvl=4,qgs={2947},r=1,g={
 qo(1,{crs={2969,2970},providers={{"i",4769}}})}}),
 q(96241,{awp=16001,coords={
-[1412]={{32.4,20.6}}},lvl=23,qgs={264074},qis={273015},r=1,g={
+[1412]={{32.4,20.6}}},lvl=23,qgs={264074},qis={273015},races={2,5,8,96},g={
 qo(1,{crs={264096},description="Use the provided Toxin Extractor on Gnawed Corpses at Gloomrise.",providers={{"i",273001}}})}}),
 q(6061,{c={3},coords={
 [1412]={{47.8,55.6}}},lvl=10,qgs={3065},races={6},sourceQuests={6065,6066,6067},g={
@@ -14078,7 +14077,6 @@ p(4180,{awp=16001,itemID=280797,npcID=7559,spellID=10712}),
 p(5157,{awp=16001,itemID=280801,npcID=271993,spellID=1309752}),
 p(72,{itemID=8497,npcID=7560,spellID=10711})}})}),
 h(-63,{
-i(769),
 i(2886,{coords={
 [1426]={{46.6,59.8}}},crs={1125,1126,1127,1689},description="Only drops from Crag Boars in Dun Morogh."}),
 i(274268,{awp=16001,b=1,coords={
@@ -15641,7 +15639,6 @@ r(7630,{isLimited=1,itemID=6270,learnedAt=60,requireSkill=197,skillID=2948}),
 r(7751,{itemID=6325,requireSkill=185}),
 r(7753,{itemID=6328,requireSkill=185})}})}),
 h(-63,{
-i(769,{crs={113}}),
 i(247826,{awp=16001,b=1,coords={
 [1429]={{76.6,86.8}}},crs={248278},lvl=7}),
 i(247883,{awp=16001,crs={476},description="You can continue to Disenchant these to level your enchanting well beyond skill level 40."}),
@@ -16392,7 +16389,6 @@ s(158129,5319,{coords={
 i(3173),
 i(3172,{coords={
 [1432]={{37,34.4}}},crs={1190,1191,1192}}),
-i(769),
 s(156995,2823,{coords={
 [1432]={{76.6,16},{79.6,16}}},crs={1180},f=22,lvl=14}),
 s(156993,2821,{coords={
@@ -20441,7 +20437,6 @@ i(3172,{coords={
 s(156130,826,{coords={
 [1436]={{31.4,70.4},{48.8,62.6},{54.2,62},{55.4,69.4},{55.8,68.4}}},crs={124},f=21,lvl=10}),
 i(1357,{crs={126,127,171,391,456,458,513,515,517,519},lvl=10}),
-i(769),
 i(2673,{coords={
 [1436]={{49.4,24.5}}},crs={833,834},description="Only drops from coyotes in Westfall."}),
 s(156288,1394,{coords={

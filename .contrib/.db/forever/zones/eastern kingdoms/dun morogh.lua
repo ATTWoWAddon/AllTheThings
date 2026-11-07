@@ -1944,7 +1944,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(769),	-- Chunk of Boar Meat
 			i(2886, {	-- Crag Boar Rib
 				description = "Only drops from Crag Boars in Dun Morogh.",
 				crs = {

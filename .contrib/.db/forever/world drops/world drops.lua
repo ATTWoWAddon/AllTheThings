@@ -4315,14 +4315,13 @@ root(ROOTS.WorldDrops, {
 			description = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 		}),
 		i(769, {	-- Chunk of Boar Meat
-			coords = {
-				{ 46.6, 59.8, MAP.DUN_MOROGH },
-				{ 53.6, 59.6, MAP.DUROTAR },
-				{ 41.6, 88.0, MAP.ELWYNN_FOREST },	-- The Maclyre Vineyards
-				{ 55.0, 27.3, MAP.WESTFALL },	-- Saldean's Farm
-				{ 54.2, 42.6, MAP.WESTFALL },
-				{ 37.0, 34.4, MAP.LOCH_MODAN },
-				{ 32.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
+			maps = {
+				MAP.DUN_MOROGH,
+				MAP.DUROTAR,
+				MAP.ELWYNN_FOREST,
+				MAP.LOCH_MODAN,
+				MAP.REDRIDGE_MOUNTAINS,
+				MAP.WESTFALL,
 			},
 			crs = {
 				1125,	-- Crag Boar

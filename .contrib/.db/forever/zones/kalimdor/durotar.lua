@@ -1749,7 +1749,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, MAP.DUROTAR },
 			}),
-			i(769),	-- Chunk of Boar Meat
 			i(275724, {	-- Hexed Pendant
 				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
 				timeline = { TIMELINE.ADDED_1_60_1 },

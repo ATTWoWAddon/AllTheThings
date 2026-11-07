@@ -3476,13 +3476,7 @@ i(7081,{coords={
 [1451]={{20,25},{29,25},{32,16}}},crs={8667,9397,11744,11745,14455}}),
 i(3404,{coords={
 [1446]={{36.5,61.2},{47.1,42}}},crs={5428,5429,5430},description="Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages."}),
-i(769,{coords={
-[1411]={{53.6,59.6}},
-[1426]={{46.6,59.8}},
-[1429]={{41.6,88}},
-[1432]={{37,34.4}},
-[1433]={{32.2,71}},
-[1436]={{54.2,42.6},{55,27.3}}},crs={113,119,157,330,390,454,524,547,1125,1126,1127,1190,1191,1192,1689,3099,3100,3225},description="Drops from boars in the level bracket 5-20 like Goretusks in Westfall."}),
+i(769,{crs={113,119,157,330,390,454,524,547,1125,1126,1127,1190,1191,1192,1689,3099,3100,3225},description="Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",maps={1411,1426,1429,1432,1433,1436}}),
 i(7075,{coords={
 [1428]={{37,60},{62.3,46.8},{65,27}},
 [1446]={{48,48},{49,25}},
