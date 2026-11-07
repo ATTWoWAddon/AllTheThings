@@ -1410,7 +1410,7 @@ local InformationTypes = {
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),
 	CreateInformationType("displayID", { text = L.DISPLAY_ID }),
 	CreateInformationType("encounterID", { text = L.ENCOUNTER_ID }),
-	CreateInformationType("expansionID", { text = L.EXPANSION_ID }),
+	CreateInformationType("expansionID", { minBuild = 20000, text = L.EXPANSION_ID }),
 	CreateInformationType("explorationID", { text = L.EXPLORATION_ID }),
 	CreateInformationType("e", { text = L.EVENT_ID }),
 	CreateInformationType("flightpathID", { text = L.FLIGHT_PATH_ID }),
