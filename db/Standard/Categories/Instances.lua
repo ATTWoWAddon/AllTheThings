@@ -23484,7 +23484,7 @@ s(44688,86806,{b=1,f=23,lvl=35}),
 i(86810,{b=1,f=51,lvl=35})}})}})}}),
 d(119,{difficulties={1,2,3,4,5,6},g={
 h(-12,{
-ach(7933)}),
+ach(7933,{crs={64947},description="This takes place in the room of the boss Elegon. Do not clear the room until a Mogu'shan Warden has given you a flight through the discs above the gap."})}),
 h(-63,{
 i(86042,{b=1,f=53,lvl=35,spellID=126599}),
 i(86043,{b=1,f=53,lvl=35,spellID=126599}),
@@ -23492,8 +23492,8 @@ i(86044,{b=1,f=53,lvl=35,spellID=126605}),
 i(86045,{b=1,f=53,lvl=35,spellID=126606}),
 i(86046,{b=1,f=53,lvl=35,spellID=126597})}),
 e(679,{crs={59915,60043,60047,60051},g={
-ach(6823,{
-crit(19945,{achID=6932,id=1})})}}),
+ach(6823,{description="Canine Battle Pets added after MoP are often not recognised for this achievement.",g={
+crit(19945,{achID=6932,id=1})}})}}),
 e(689,{npcID=60009,g={
 ach(6674,{
 crit(19501,{achID=6674}),
@@ -30519,6 +30519,7 @@ o(214827,{coords={
 [454]={{58.5,57}}}})}})}),
 h(-63,{
 i(87806,{crs={61216,61239,61240,61242},spellID=128908}),
+i(89427,{b=1,cost={{"i",87806,1}},description="Contains some gold and a several green-quality gems."}),
 i(89428,{b=1,cost={{"i",87806,1}},description="Contains some gold and a several green-quality gems."})}),
 d(102,{difficulties={1,2},g={
 e(698,{npcID=61398,g={
@@ -30601,8 +30602,8 @@ e(698,{npcID=61398,g={
 ach(6756,{
 crit(19904,{achID=6925,id=3})}),
 gach(6766),
-ach(6736,{
-crit(15254,{achID=6927,id=10})}),
+ach(6736,{description="At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfere with the recognition of the achievement objective.",g={
+crit(15254,{achID=6927,id=10})}}),
 s(84482,144214,{awp=70105,b=1,f=26,lvl=32,modID=2}),
 s(84439,144154,{awp=70105,b=1,f=20,lvl=32,modID=2}),
 s(84436,144150,{awp=70105,b=1,f=29,lvl=32,modID=2}),
@@ -30664,6 +30665,7 @@ s(45088,87326,{b=1,f=7,loc=45}),
 s(45090,87328,{b=1,f=5,loc=45}),
 s(45092,87330,{b=1,f=7,loc=45})}})}),
 d(102,{difficulties={1,2},g={
+n(56747,{description="Do not attack the Azure Serpent until Gu Cloudstrike made immune of all damage, otherwise Gu might remain immune for the following ten minutes!"}),
 e(686,{npcID=56884,g={
 ach(6469)}})}}),
 d(1,{
@@ -30970,6 +30972,8 @@ s(45065,87303,{b=1,f=4,loc=44})}})}),
 h(-58,{
 n(59822,{
 i(88530,{f=55,lvl=32,spellID=128307}),
+i(81924,{f=55,lvl=32,spellID=1290929}),
+i(81923,{f=55,lvl=35,spellID=1290929}),
 i(80313,{f=55,lvl=32,spellID=115037}),
 i(88529,{f=55,lvl=32,spellID=128308}),
 i(88490,{f=55,lvl=32,spellID=128295}),

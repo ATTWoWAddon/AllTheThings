@@ -30377,7 +30377,7 @@ h(-46,{
 n(45785,{awp=40003,coords={
 [47]={{47.6,73},{48.4,70.4},{49.4,75.6},{50.6,72.8}}}}),
 n(771,{awp=100107,coords={
-[47]={{21.8,34}}},description="Wanders the Raven Hill Cemetary, spawns at the given coordinate.",g={
+[47]={{21.8,34}}},description="Wanders the Raven Hill Cemetery, spawns at the given coordinate.",g={
 s(1737,4465,{f=6,loc=44,lvl=12}),
 s(1736,4464,{f=6,loc=47,lvl=12})}}),
 n(45801,{awp=40003,coords={
@@ -34504,7 +34504,7 @@ s(1826,4723,{awp=100107,coords={
 r(6695,{awp=100107,coords={
 [25]={{49.6,10},{52.6,12},{53.6,14.8},{54.6,26.6},{55.2,23.6},{55.6,17.4},{58,23.8}}},crs={2242},description="This pattern is very rare. Expect 1000+ of kills before looting it.",itemID=5775,requireSkill=197,skillID=2540}),
 s(308,1485,{awp=100107,coords={
-[25]={{37.4,64.2},{39.6,64}}},crs={47859},description="This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",f=29,lvl=10}),
+[25]={{37.4,64.2},{39.6,64}}},crs={47859},description="This item only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that hasn't reached the quest progress trigger for this phasing, or using an Alliance alt.",f=29,lvl=10}),
 i(3745,{crs={2358},rwp=40003,spellID=3407,u=2}),
 s(341,1602,{awp=100107,coords={
 [25]={{44.6,22.6},{45.8,26.8},{47.2,28.6},{50.2,26}}},crs={2254},f=21,lvl=14}),
@@ -75123,7 +75123,7 @@ i(83092,{cost=200000000}),
 i(44499,{cost=30000000}),
 i(65893,{cost=30000000})}}),
 n(64028,{coords={
-[390]={{86.3,61.5}}},description="You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=2,g={
+[390]={{86.3,61.5}}},description="You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=2,g={
 s(46750,90049,{b=1,c={6},f=7,loc=45,lvl=35,rwp=60002,u=2}),
 s(46751,90050,{b=1,c={6},f=7,loc=47,lvl=35,rwp=60002,u=2}),
 s(46752,90051,{b=1,c={6},f=7,loc=42,lvl=35,rwp=60002,u=2}),
@@ -75213,7 +75213,7 @@ s(46847,90152,{b=1,c={1},f=7,loc=46,lvl=35,rwp=60002,u=2}),
 s(46848,90153,{b=1,c={1},f=7,loc=41,lvl=35,rwp=60002,u=2}),
 s(46849,90154,{b=1,c={1},f=7,loc=43,lvl=35,rwp=60002,u=2})}}),
 n(63994,{coords={
-[390]={{61.2,20.8}}},description="You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=1,g={
+[390]={{61.2,20.8}}},description="You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=1,g={
 s(46750,90049,{b=1,c={6},f=7,loc=45,lvl=35,rwp=60002,u=2}),
 s(46751,90050,{b=1,c={6},f=7,loc=47,lvl=35,rwp=60002,u=2}),
 s(46752,90051,{b=1,c={6},f=7,loc=42,lvl=35,rwp=60002,u=2}),
@@ -121947,7 +121947,7 @@ n(171327,{coords={
 i(182749,{b=1,spellID=340153}),
 crit(50616,{achID=14307,id=25})}}),
 n(160985,{coords={
-[1533]={{61.2,51}}},crs={160875},description="Requires 3 people to summon. After all 3 have channeled the incense, the vesper will ring and Sophia will appear. Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Radiance.",isDaily=1,questID=58320,g={
+[1533]={{61.2,51}}},crs={160875,174607},description="Requires 3 people to summon. After all 3 have channeled the incense, the vesper will ring and Sophia will appear. Protect her by defeating 2 waves of Forsworn attackers, and then the rare will spawn.\n\nAfter Nikara is defeated, Sophia will leave behind a chest called Sophia's Radiance.",isDaily=1,questID=58320,g={
 o(339625,{coords={
 [1533]={{61.3,50.4}}},g={
 s(114850,183608,{b=1,f=1,lvl=48})}}),
@@ -130011,7 +130011,7 @@ o(375402,{coords={
 [2029]={{43.8,37.6}}},cost={{"i",189863,1}},crs={184329,184485},questID=65500,sourceQuests={65346},g={
 crit(53265,{achID=15502,id=7})}})}}),
 o(375413,{coords={
-[1970]={{34.8,69.9}}},description="Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc to on it to get the chest.",questID=65523,g={
+[1970]={{34.8,69.9}}},description="Need to have completed Dealic Understanding. At 34.5, 70.5 there is a Coreless Aurelid(185282), use Popopoc on it to get the chest.",questID=65523,g={
 cq(65526,{b=1,itemID=190059,spellID=366696,g={
 crit(53288,{achID=15508,id=3})}}),
 crit(53061,{achID=15331,id=17}),
@@ -162649,7 +162649,8 @@ ah(41802,{type="a",g={
 ah(41802.01,{type="crit",g={
 q(86737,{coords={
 [2393]={{45.4,70.4}}},lvl=80,qgs={235787},sourceQuests={86735}}),
-q(94871,{description="Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",isBreadcrumb=1,lvl=80,nextQuests={86740},sourceQuests={86735}}),
+q(94871,{coords={
+[2393]={{45.4,70.4}}},description="Adventure Mode Exclusive Quest from the Scouting Map as you pick to quest in Eversong Woods.",isBreadcrumb=1,lvl=80,nextQuests={86740},sourceQuests={86735}}),
 q(86740,{coords={
 [2395]={{46.7,45.7}}},lvl=80,qgs={236743},sourceQuests={86737,94871},sqreq=1}),
 q(86739,{coords={

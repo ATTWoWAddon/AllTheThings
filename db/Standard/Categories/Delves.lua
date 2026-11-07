@@ -3798,6 +3798,9 @@ i(285065)}}),
 q(98962,{coords={
 [2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98963},g={
 i(285065)}}),
+q(98961,{coords={
+[2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98962},g={
+i(285065)}}),
 q(97241,{coords={
 [2647]={{77.9,62.7},{78,51.4},{79.7,55.2},{82.9,65.6},{84.3,54.1}}},providers={{"o",649924},{"o",649937},{"o",649938},{"o",649939},{"o",649940}}}),
 flt(50,{
@@ -3967,6 +3970,7 @@ o(696116,{coords={
 [2647]={{44.3,73.3}}},description="Spawns after finishing 'Dundun' event."}),
 o(654950,{coords={
 [2647]={{24.8,22.5}}},description="Spawns after finishing 'Jan'alai's' event."}),
+o(654948),
 o(677414,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(677417),
 o(677418,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),

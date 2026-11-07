@@ -7329,7 +7329,7 @@ n(164966,{awp=90100,coords={
 i(187133,{b=1,cost={{"c",1820,25}},e=16})}}),
 n(252232,{awp=120105,coords={
 [2351]={{51.6,54.6}},
-[2352]={{53.8,33.6}}},description="The exhange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",e=16,g={
+[2352]={{53.8,33.6}}},description="The exchange rate of candy to Tricky Treats changes daily and varies between neighborhoods.",e=16,g={
 i(33226,{b=1,cost={{"i",252990,1},{"i",253043,1},{"i",253042,1}},e=16,f=55,spellID=44436})}}),
 n(109688,{awp=70100,coords={
 [18]={{62.3,66.4}}},e=16,r=1})}}),

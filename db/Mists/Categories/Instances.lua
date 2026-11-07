@@ -27620,7 +27620,7 @@ e(698,{npcID=61398,g={
 ach(6756,{
 crit(19904,{achID=6925,id=3})}),
 gach(6766),
-ach(6736,{description="At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfer with the recognision of the achievemnt objective.",g={
+ach(6736,{description="At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfere with the recognition of the achievement objective.",g={
 crit(15254,{achID=6927,id=10})}}),
 s(272482,87542,{b=1,f=26,lvl=90,modID=2,q=4,rwp=70105}),
 s(268224,81253,{b=1,f=20,lvl=90,modID=2,q=3,rwp=70105}),

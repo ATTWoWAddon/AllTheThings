@@ -9008,6 +9008,7 @@ s(80890,123896,{f=7,loc=41,lvl=41,spellID=226221}),
 s(80891,123897,{f=7,loc=45,lvl=40,spellID=226221}),
 s(85958,146667,{awp=70200,c={1,2,6},f=7,loc=45,lvl=40,spellID=241330})}),
 h(-679,{awp=110207,g={
+de(28429,{awp=120105,itemID=282124,spellID=1313050}),
 de(4036,{itemID=247922,spellID=1245908}),
 de(4023,{itemID=247909,spellID=1245895}),
 de(1314,{itemID=245408,spellID=1238533})}}),
@@ -9114,7 +9115,6 @@ p(1886,{itemID=132519,npcID=106210,spellID=210696})}),
 h(-679,{awp=110207,g={
 de(11912,{itemID=258226,spellID=1263008}),
 de(11911,{itemID=258225,spellID=1263007}),
-de(28429,{awp=120105,itemID=282124,spellID=1313050}),
 de(28439,{awp=120105,itemID=282144,spellID=1313070})}}),
 flt(54,{
 i(136687,{f=54,lvl=45}),
@@ -9299,6 +9299,7 @@ s(89474,151588,{f=5,loc=40,lvl=45}),
 s(89475,151589,{f=6,loc=40,lvl=45}),
 s(89476,151590,{f=7,loc=40,lvl=45})}}),
 h(-679,{awp=110207,g={
+de(28430,{awp=120105,itemID=282126,spellID=1313052}),
 de(1746,{itemID=245557,spellID=1239014}),
 de(11913,{itemID=258227,spellID=1263009})}}),
 flt(52,{
@@ -9759,7 +9760,6 @@ s(105533,170389,{awp=80300,b=1,f=7,loc=45,requireSkill=164}),
 s(105530,170386,{awp=80300,b=1,f=7,loc=46,requireSkill=164})}),
 h(-679,{awp=110207,g={
 de(9046,{itemID=252397,spellID=1254613}),
-de(28472,{awp=120105,itemID=283291,spellID=1314636}),
 de(27609,{awp=120105,itemID=283299,spellID=1314644}),
 de(28633,{awp=120105,itemID=283303,spellID=1314648}),
 de(9048,{itemID=252399,spellID=1254615})}}),
@@ -10033,6 +10033,7 @@ p(2530,{awp=80100,b=1,itemID=165849,npcID=147619,spellID=286514})}),
 h(-679,{awp=110207,g={
 de(2436,{itemID=246604,spellID=1243040}),
 de(2329,{itemID=246486,spellID=1242334}),
+de(28472,{awp=120105,itemID=283291,spellID=1314636}),
 de(2340,{itemID=246500,spellID=1242364})}}),
 flt(50,{
 i(153597,{f=55,spellID=256153}),
@@ -11179,7 +11180,6 @@ r(338978,{learnedAt=100,providers={{"s",332074}},requireSkill=755,skillID=2757})
 flt(2,{
 s(113239,180760,{f=2,loc=40,lvl=48})}),
 h(-679,{awp=110207,g={
-de(28430,{awp=120105,itemID=282126,spellID=1313052}),
 de(14676,{itemID=262663,spellID=1269200}),
 de(14380,{itemID=260699,spellID=1266726})}}),
 flt(52,{

@@ -74206,7 +74206,7 @@ s(309585,276078,{awp=50500,b=1,cost={{"c",3407,30}},f=9,q=4,rwp=60002}),
 s(309584,276077,{awp=50500,b=1,cost={{"c",3407,30}},f=9,q=4,rwp=60002}),
 s(303982,265785,{awp=50500,b=1,cost={{"c",3407,30}},f=9,q=4,rwp=60002})}}),
 n(64028,{coords={
-[390]={{86.3,61.5}}},description="You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=2,g={
+[390]={{86.3,61.5}}},description="You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=2,g={
 s(273990,90049,{b=1,c={6},f=7,loc=45,lvl=90,q=4,rwp=60002}),
 s(273991,90050,{b=1,c={6},f=7,loc=47,lvl=90,q=4,rwp=60002}),
 s(273992,90051,{b=1,c={6},f=7,loc=42,lvl=90,q=4,rwp=60002}),
@@ -74296,7 +74296,7 @@ s(274087,90152,{b=1,c={1},f=7,loc=46,lvl=90,q=4,rwp=60002}),
 s(274088,90153,{b=1,c={1},f=7,loc=41,lvl=90,q=4,rwp=60002}),
 s(274089,90154,{b=1,c={1},f=7,loc=43,lvl=90,q=4,rwp=60002})}}),
 n(63994,{coords={
-[390]={{61.2,20.8}}},description="You can only buy items from this vendor if you have the Challenge Conquerer: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=1,g={
+[390]={{61.2,20.8}}},description="You can only buy items from this vendor if you have the Challenge Conqueror: Gold Feat of Strength on your toon. You can only buy the set for your class.",r=1,g={
 s(273990,90049,{b=1,c={6},f=7,loc=45,lvl=90,q=4,rwp=60002}),
 s(273991,90050,{b=1,c={6},f=7,loc=47,lvl=90,q=4,rwp=60002}),
 s(273992,90051,{b=1,c={6},f=7,loc=42,lvl=90,q=4,rwp=60002}),

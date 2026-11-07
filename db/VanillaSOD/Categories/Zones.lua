@@ -13543,7 +13543,7 @@ i(210568,{b=1,coords={
 i(210251,{b=1,c={4},coords={
 [1431]={{81,71}}},f=52,phase=1605,providers={{"o",410779}},q=1,rwp=20001}),
 i(210252,{b=1,c={4},coords={
-[1431]={{19.9,45.5}}},description="With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",f=55,phase=1605,providers={{"i",210250},{"i",210251}},q=2,rwp=20001,g={
+[1431]={{19.9,45.5}}},description="With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetery.",f=55,phase=1605,providers={{"i",210250},{"i",210251}},q=2,rwp=20001,g={
 r(424988)}})}),
 h(-58,{
 n(228,{coords={

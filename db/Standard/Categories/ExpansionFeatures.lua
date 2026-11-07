@@ -14789,7 +14789,7 @@ q(43788,{c={8},crs={99636},description="If this quest has a checkmark next to it
 q(43789,{c={8},crs={107808},description="If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",maps={634},sourceQuests={42011}}),
 q(43790,{c={8},crs={109819},description="If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",maps={641},sourceQuests={42011}}),
 q(43828,{c={8},description="If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",icon=1384069,isDaily=1,qgs={111704},sourceQuests={43787,43788,43789,43790,43791},g={
-q(43799,{c={8},crs={111107},description="The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",sourceQuests={43828}})}}),
+q(43799,{c={8},crs={111107},description="The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extremely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",sourceQuests={43828}})}}),
 q(43800,{c={8},coords={
 [634]={{60,55},{64.8,44.8},{66.6,53.8},{70.2,56.8},{70.8,37.8},{72.2,49.2},{76.8,62.6},{79.4,67.8}}},crs={111691},description="After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",sourceQuests={43799}}),
 q(43658,{c={8},crs={111704},description="Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",maps={37},sourceQuests={43800},g={
@@ -25228,7 +25228,7 @@ q(57903,{coords={
 [1707]={{37.9,67.5}}},customCollect={"SL_COV_KYR"},lvl=60,qgs={158773},sourceQuests={57901}})}}),
 h(-46,{customCollect={"SL_COV_KYR"},g={
 n(167078,{coords={
-[1533]={{41.8,55.4}}},description=" Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",isDaily=1,questID=60314,g={
+[1533]={{41.8,55.4}}},description="Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",isDaily=1,providers={{"o",356756}},questID=60314,g={
 i(182749,{b=1,spellID=340153}),
 crit(50600,{achID=14307,id=7})}})}}),
 h(-56,{customCollect={"SL_COV_KYR"},g={
@@ -25275,7 +25275,7 @@ crit(50664,{achID=14758,id=28})}})}})}}),
 h(-321,{customCollect={"SL_COV_KYR"},icon=3854014,g={
 h(-46,{customCollect={"SL_COV_KYR"},g={
 n(156340,{coords={
-[1533]={{24.5,22.7}}},crs={156339},description="Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",isDaily=1,questID=61634,g={
+[1533]={{24.5,22.7}}},crs={156339},description="Take the anima gateway and click the Black Bell. Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",isDaily=1,providers={{"o",356677}},questID=61634,g={
 p(3063,{b=1,customCollect={"SL_COV_KYR"},description="To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",itemID=184401,npcID=175562,spellID=345742}),
 s(115655,184365,{b=1,f=8,lvl=48}),
 crit(50618,{achID=14307,id=28})}})}})}})}}),
