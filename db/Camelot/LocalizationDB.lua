@@ -12507,6 +12507,7 @@ L.SYM_ROW_INFORMATION = "click derecho para ver contenido adicional que su fuent
 L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde el calabozo"
 L.THIS_IS_BREADCRUMB = "Esta es una misión de exploración optativa."
 L.TITLE_CORE = "Tropa "
+L.TITLE_DEBUG = "|c" .. _.DefaultColors.Red .. "Debug |r"
 L.TITLE_ID = "ID del Titulo"
 L.TITLE_INSANE = "|c" .. _.DefaultColors.Insane .. "Enfermo |r"
 L.TITLE_UNIQUE_APPEARANCE = "Única "
@@ -12643,6 +12644,8 @@ localize(ObjectNames, {
 	[693669] = "Parte de arma",
 	[693670] = "Escombros extraños",
 	[693674] = "Daga abandonada",
+	[694855] = "Overgrown Duskweed",
+	[694895] = "Glowing Crystal Fragment",
 })
 for key,value in pairs({
 	[2] = "Removido del juego",
@@ -14896,6 +14899,7 @@ L.CONTAINS_SLIDER_TOOLTIP = "使用該功能可以自訂指標提示中顯示的
 L.COORDINATES = "座標"
 L.COST = "花費"
 L.COST_DESC = "這裡面包含了獲得或購買這個物品所需要的物品"
+L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedade" .. BONUS_ROLL_REWARD_CURRENCY .. "|r"
 L.COST_TOTAL = "總花費"
 L.COST_TOTAL_DESC = "其中包含獲得或購買頂級分組內所有物品所需的直觀分類。\n\n注意：目前不包括藥劑/配方需求！"
 L.CREATURES_COUNT = "[%s 隻生物]"
@@ -15280,6 +15284,7 @@ L.PATREON_BUTTON_TOOLTIP = "點擊按鈕複製 URL 以進入 All The Things Patr
 L.PERCENTAGES_CHECKBOX = "顯示完成百分比"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比請啟用此選項。\n\n按完成度對組進行著色不受影響。"
 L.PERSONAL_LOOT_DESC = "每位玩家都有獨立的機會拾取對自己職業有用的物品…\n\n…或者像戒指這樣的無用之物。\n\n如果是自己一個人的話，點擊兩次就會自動創建一個隊伍。"
+L.PET_BATTLES = SHOW_PET_BATTLES_ON_MAP_TEXT
 L.PET_BATTLES_TOOLTIP = "此清單顯示所有寵物對戰內容，以及 ATT 資料庫中戰寵的取得方式。"
 L.PET_CAGE_TOOLTIPS_CHECKBOX = "寵物籠"
 L.PET_CAGE_TOOLTIPS_CHECKBOX_TOOLTIP = "啟用此選項以整合寵物籠工具提示。（啟用後，資訊會顯示於 TSM 的額外工具提示，或物品比較工具提示中。）"
@@ -15544,6 +15549,7 @@ L.SPELL_FINDER = "法術搜尋器"
 L.SPELL_ID = "法術 ID"
 L.SPELL_NAME = "法術名稱"
 L.SPLIT = "按難度"
+L.STRANGER_THINGS_LABEL = "Stranger Things"
 L.SUMMARIZE_CHECKBOX = "總結事物"
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "啟用該選項可在指標提示中總結事物。例如，如果一個事物可以變成另一個事物的商人，那麼在指標提示中顯示另一個事物，以提供其多種用途的可見性。如果一個事物作為許多其他事物的容器，這個選項將顯示該容器所包含的所有其他事物。\n\n我們建議你保持此設定開啟。"
 L.SWITCH_NO_NEXT_PROFILE = "沒有可切換的下一個設定檔。"
@@ -15704,6 +15710,7 @@ localize(L.HEADER_NAMES, {
 	[-796] = "起始裝備",
 	[-797] = "魔獸世界：永恆",
 	[-799] = "圖書館藏書",
+	[-800] = "Alliance Outrunners",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "術士可以教導他們的惡魔新技能，一些高等級的魔典只能從你陣營首都的惡魔訓練師那裡購買。",
@@ -16275,11 +16282,13 @@ localize(ObjectNames, {
 	[669176] = "發光的新月墜飾",
 	[670348] = "自釀啤酒花",
 	[671154] = "乾樹枝",
+	[673431] = "Vine-Wrapped Scroll",
 	[673476] = "被遺棄的訓練武器",
 	[673515] = "勇氣回憶",
 	[674126] = "隱密藏匿物",
 	[694855] = "生長過盛的暮色草",
 	[697118] = "風石岩層",
+	[100000000] = "Sentinax Portal",
 	[100000001] = "未點燃的火把",
 })
 for key,value in pairs({

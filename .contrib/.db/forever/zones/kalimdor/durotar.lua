@@ -428,6 +428,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				groups = {
 					objective(1, {	-- 0/3 Luminous Residue
 						provider = { "i", 247884 },	-- Luminous Residue
+						cost = {{ "i", 275724, 3 }},	-- Hexed Pendant
 					}),
 				},
 			}),
@@ -1746,6 +1747,14 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				coord = { 59.6, 58.2, MAP.DUROTAR },
 			}),
 			i(769),	-- Chunk of Boar Meat
+			i(275724, {	-- Hexed Pendant
+				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					3207,	-- Hexed Troll
+					3206,	-- Voodoo Troll
+				},
+			}),
 			i(5466, {	-- Scorpid Stinger
 				maps = { MAP.DUROTAR },
 				crs = {

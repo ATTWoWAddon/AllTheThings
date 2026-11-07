@@ -3457,7 +3457,7 @@ q(99048,{awp=16001,coords={
 [1411]={{52.2,43.2}}},lvl=9,qgs={3142},r=1}),
 q(96873,{awp=16001,coords={
 [1411]={{56.6,73.6}}},lvl=5,qgs={266881},r=1,requireSkill=333,g={
-qo(1,{providers={{"i",247884}},requireSkill=333})}}),
+qo(1,{cost={{"i",275724,3}},providers={{"i",247884}},requireSkill=333})}}),
 q(2161,{coords={
 [1411]={{52,68.2}}},qgs={6786},qis={7629},r=1}),
 q(97281,{awp=16001,crs={3118,276194},lvl=7,qss={277661},r=1}),
@@ -3768,6 +3768,7 @@ h(-63,{
 i(4882,{coords={
 [1411]={{59.6,58.2}}},crs={3192},spellID=6529}),
 i(769),
+i(275724,{awp=16001,crs={3206,3207},description="You can continue to Disenchant these to level your enchanting well beyond skill level 40."}),
 i(5466,{crs={3125,3126,3127,3226,5823},description="Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",maps={1411}})})}}),
 m(1445,{icon=236758,lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",g={
 h(-61,{isRaid=1,lvl=60,g={
