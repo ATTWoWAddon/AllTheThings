@@ -331,7 +331,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 259118,	-- Muln Earthfury (quest recipient)
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
+				races = exclude(TAUREN, HORDE_ONLY),
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/1 Bloody Parchment
@@ -688,7 +688,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 259118,	-- Muln Earthfury
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
+				races = exclude(TAUREN, HORDE_ONLY),
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/10 Gloomrise Hatchling slain
@@ -1096,7 +1096,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 264072,	-- Yorn Grimtotem
 				coord = { 32.4, 20.0, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
+				races = exclude(TAUREN, HORDE_ONLY),
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/3 Crystalline Silk
@@ -1144,7 +1144,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qi = 273015,	-- Toxin Extractor
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
+				races = exclude(TAUREN, HORDE_ONLY),
 				lvl = 23,	-- Required level; quest level 30.
 				groups = {
 					objective(1, {	-- 0/5 Gloomrise Toxin Sample
