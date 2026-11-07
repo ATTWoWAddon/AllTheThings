@@ -1649,3 +1649,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(99582, {	-- Obtained by acquiring the "Camp Benefits" buff for the first time while completing the tutorial quest 96605, "The Great Outdoors."
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
