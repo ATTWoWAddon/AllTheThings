@@ -151,35 +151,32 @@ local textSoundpack = child:CreateTextLabel("|cffFFFFFF"..L.SOUNDPACK)
 textSoundpack:SetPoint("LEFT", headerCelebrations, 0, 0)
 textSoundpack:SetPoint("TOP", checkboxPlayDeathSound, "BOTTOM", 0, -8)
 
-local dropdownSoundpack = CreateFrame("Frame", "dropdownSoundpack", child, "UIDropDownMenuTemplate")
-dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", -15, 0)
-UIDropDownMenu_SetWidth(dropdownSoundpack, 270) -- Use in place of dropDown:SetWidth
+local WOWAPI = app.WOWAPI
+local dropdownSoundpack, dropdownLeftOffset = WOWAPI.CreateDropdown("dropdownSoundpack", child, 270)
+dropdownSoundpack:SetPoint("TOPLEFT", textSoundpack, "BOTTOMLEFT", dropdownLeftOffset, 0)
 
--- Set the dropdown's current text to the active soundpack
-app.Audio:RegisterForSoundPackEvents(function(event, soundPack)
-	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
-end)
-
--- Change the active soundpack based on user selection
-local function WPDropDownDemo_OnClick(self, arg1)
-	app.Audio:ActivateSoundPack(arg1)
-	UIDropDownMenu_SetText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
-	app.Audio:PlayFanfare()
+local function RefreshSoundPackText()
+	WOWAPI.SetDropdownText(dropdownSoundpack, app.Audio:GetActiveSoundPack().name)
 end
 
--- Populate the dropdown menu with all existing soundpacks
-function WPDropDownDemo_Menu(frame, level, menuList)
-	local soundPacks = {};
-	for i, soundPack in pairs(app.Audio:GetAllSoundPacks()) do
-		tinsert(soundPacks, soundPack.name);
-	end
-	table.sort(soundPacks);
+-- Set the dropdown's current text to the active soundpack.
+app.Audio:RegisterForSoundPackEvents(RefreshSoundPackText)
 
-	local info = UIDropDownMenu_CreateInfo()
-	info.func = WPDropDownDemo_OnClick
-	for i, name in ipairs(soundPacks) do
-		info.text, info.arg1 = name, name
-		UIDropDownMenu_AddButton(info)
-	end
-end
-UIDropDownMenu_Initialize(dropdownSoundpack, WPDropDownDemo_Menu)
+-- Build the current choices when the menu opens so newly added packs appear.
+WOWAPI.SetupDropdownMenu(dropdownSoundpack,
+	function()
+		local soundPacks = {}
+		for _, soundPack in pairs(app.Audio:GetAllSoundPacks()) do
+			tinsert(soundPacks, soundPack.name)
+		end
+		table.sort(soundPacks)
+		return soundPacks
+	end,
+	function(name)
+		return app.Audio:GetActiveSoundPack().name == name
+	end,
+	function(name)
+		app.Audio:ActivateSoundPack(name)
+		app.Audio:PlayFanfare()
+	end)
+RefreshSoundPackText()
