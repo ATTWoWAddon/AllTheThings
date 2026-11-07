@@ -188,7 +188,7 @@ local function ProcessInformationType(t, reference, tooltipInfo)
 	if val then
 		local text = ConversionMethods[t.informationTypeID](val, reference)
 		if text then
-			tinsert(tooltipInfo, { left = t.text, right = text });
+			tooltipInfo[#tooltipInfo+1] = { left = t.text, right = text }
 		end
 	end
 end
@@ -360,18 +360,18 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			local function FlushGroup()
 				if #names > 0 then
 					local label = realm and faction and (realm .. ", " .. faction) or realm or faction;
-					tinsert(tooltipInfo, { left = "  " .. label .. " (" .. #names .. ")", r = 0.8, g = 0.8, b = 0.8 });
-					tinsert(tooltipInfo, { left = "    " .. table.concat(names, ", "), wrap = true, color = app.Colors.TooltipDescription });
+					tooltipInfo[#tooltipInfo+1] = { left = "  " .. label .. " (" .. #names .. ")", r = 0.8, g = 0.8, b = 0.8 }
+					tooltipInfo[#tooltipInfo+1] = { left = "    " .. table.concat(names, ", "), wrap = true, color = app.Colors.TooltipDescription }
 					wipearray(names);
 				end
 			end
 			for _,character in ipairs(knownBy) do
 				-- Account-wide completion notices are messages, rather than character records.
 				if not (character.name or character.realm or character.guid or character.factionID) then
-					tinsert(tooltipInfo, { left = kind:format(character.text or "???"), wrap = true, color = app.Colors.TooltipDescription });
+					tooltipInfo[#tooltipInfo+1] = { left = kind:format(character.text or "???"), wrap = true, color = app.Colors.TooltipDescription }
 				else
 					if not titleAdded then
-						tinsert(tooltipInfo, { left = kind:format(""), r = 1, g = 0.82, b = 0 });
+						tooltipInfo[#tooltipInfo+1] = { left = kind:format(""), r = 1, g = 0.82, b = 0 }
 						titleAdded = true;
 					end
 					local characterRealm = groupByRealm and GetCharacterRealmName(character) or nil;
@@ -390,7 +390,7 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 			for _,character in ipairs(knownBy) do
 				tinsert(names, GetCharacterDisplayName(character, realmName, normalizedRealmName));
 			end
-			tinsert(tooltipInfo, { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription });
+			tooltipInfo[#tooltipInfo+1] = { left = kind:format(table.concat(names, ", ")), wrap = true, color = app.Colors.TooltipDescription }
 		end
 		wipearray(knownBy);
 	end
@@ -546,7 +546,7 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 			for _,character in pairs(ATTCharacterData) do
 				if character.ActiveSkills and not character.ignored then
 					local skills = character.ActiveSkills[id];
-					if skills then tinsert(knownBy, { character, skills[1], skills[2] }); end
+					if skills then knownBy[#knownBy+1] = { character, skills[1], skills[2] } end
 				end
 			end
 			if #knownBy > 0 then
@@ -558,18 +558,18 @@ local function ProcessForKnownBy(t, reference, tooltipInfo)
 					function(a, b)
 					return a[2] > b[2];
 				end);
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.KNOWN_BY:format(""),
 					color = app.Colors.TooltipDescription,
-				});
+				}
 				local realmName, normalizedRealmName = GetRealmName(), GetNormalizedRealmName();
 				for i,data in ipairs(knownBy) do
 					local character = data[1];
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						---@diagnostic disable-next-line: undefined-field
 						left = "  " .. GetCharacterDisplayName(character, realmName, normalizedRealmName),
 						right = data[2] .. " / " .. data[3],
-					});
+					}
 				end
 				wipearray(knownBy);
 				return;
@@ -836,16 +836,16 @@ local InformationTypes = {
 				if reference.total and reference.total >= 2 then
 					-- if collecting this reference type, then show Collection State
 					if reference.collectible then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = L.COLLECTION_PROGRESS,
 							right = app.GetCollectionText(reference.collected or reference.saved),
-						});
+						}
 					-- if completion/tracking is available, show Completion State
 					elseif reference.trackable then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = L.TRACKING_PROGRESS,
 							right = app.GetCompletionText(reference.saved),
-						});
+						}
 					end
 				end
 				]]--
@@ -891,10 +891,10 @@ local InformationTypes = {
 						local ptext, gptext =
 							IsRetrievingConversionMethod(parent.text, reference),
 							IsRetrievingConversionMethod(grandparent.text, reference)
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = gptext,
 							right = ptext
-						});
+						}
 					end
 				end
 			end
@@ -914,16 +914,16 @@ local InformationTypes = {
 				end
 				-- i suppose a maxlvl of 1 might exist?
 				if maxlvl and maxlvl > 0 then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.REQUIRES_LEVEL,
 						right = tostring(minlvl) .. " to " .. tostring(maxlvl),
-					});
+					}
 				-- no point to show 'requires lvl 1'
 				elseif minlvl and minlvl > 1 then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.REQUIRES_LEVEL,
 						right = tostring(minlvl),
-					});
+					}
 				end
 			end
 		end,
@@ -932,10 +932,10 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local petBattleLvl = reference.petBattleLvl;
 			if petBattleLvl then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = LEVEL .. " (" .. L.PET_BATTLES .. ")",
 					right = tostring(petBattleLvl),
-				});
+				}
 			end
 		end,
 	}),
@@ -946,10 +946,10 @@ local InformationTypes = {
 			local qgs = reference.qgs;
 			if qgs then
 				for i,creatureID in ipairs(qgs) do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = (i == 1 and L.QUEST_GIVER),
 						right = ConversionMethods.creatureName(creatureID, reference),
-					});
+					}
 				end
 			end
 		end,
@@ -959,10 +959,10 @@ local InformationTypes = {
 			local qis = reference.qis
 			if qis then
 				for i=1,#qis do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = (i == 1 and L.QUEST_ITEMS),
 						right = ConversionMethods.itemNameAndIcon(qis[i], reference),
-					})
+					}
 				end
 			end
 		end,
@@ -975,7 +975,7 @@ local InformationTypes = {
 				local currentMapID = app.CurrentMapID;
 				if coords[currentMapID] then
 					for i,coord in ipairs(coords[currentMapID]) do
-						tinsert(coordList, { right = GetCoordString(coord[1], coord[2]) });
+						coordList[#coordList+1] = { right = GetCoordString(coord[1], coord[2]) }
 					end
 				end
 				local showMapID = app.Settings:GetTooltipSetting("mapID");
@@ -984,7 +984,7 @@ local InformationTypes = {
 						for i,coord in ipairs(coordsForMap) do
 							local str = app.GetMapName(mapID);
 							if showMapID then str = str .. " (" .. mapID .. ")"; end
-							tinsert(coordList, { right = str .. ": " .. GetCoordString(coord[1], coord[2]) });
+							coordList[#coordList+1] = { right = str .. ": " .. GetCoordString(coord[1], coord[2]) }
 						end
 					end
 				end
@@ -1004,10 +1004,10 @@ local InformationTypes = {
 
 					local remainingCoords = count - t.maxcoords;
 					if remainingCoords > 0 then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							right = (L.AND_MORE):format(remainingCoords),
 							r = 1, g = 1, b = 1
-						});
+						}
 					end
 				end
 			end
@@ -1017,11 +1017,11 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local playerCoord = reference.playerCoord;
 			if playerCoord then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = t.text,
 					right = GetCoordString(playerCoord[1], playerCoord[2]),
 					r = 1, g = 1, b = 1
-				});
+				}
 			end
 		end,
 	}),
@@ -1031,11 +1031,11 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local lore = reference.lore;
 			if lore then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = lore,
 					color = app.Colors.TooltipLore,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	}),
@@ -1048,24 +1048,24 @@ local InformationTypes = {
 				or GetRelativeValue(app.ActiveRowReference, "sharedDescription")
 			if description then
 				if sharedDescription then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = description.."\n"..sharedDescription,
 						color = app.Colors.TooltipDescription,
 						wrap = true,
-					});
+					}
 				else
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = description,
 						color = app.Colors.TooltipDescription,
 						wrap = true,
-					});
+					}
 				end
 			elseif sharedDescription then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = sharedDescription,
 					color = app.Colors.TooltipDescription,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	}),
@@ -1101,17 +1101,17 @@ local InformationTypes = {
 					-- If there's a description and it is visible, add some visual space.
 					local description = reference.description;
 					if description and app.Settings:GetTooltipSetting("description") then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = " ",
 							color = app.Colors.TooltipDescription,
 							wrap = true,
-						});
+						}
 					end
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text .. ": " .. app.TableConcat(mapNames, nil, nil, ", "),
 						color = app.Colors.TooltipDescription,
 						wrap = true,
-					});
+					}
 				end
 			end
 		end,
@@ -1122,10 +1122,10 @@ local InformationTypes = {
 		text = L.PET_BATTLES,
 		Process = function(t, reference, tooltipInfo)
 			if t.GetValue(t, reference) then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.REQUIRES_PETBATTLES,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	});
@@ -1135,10 +1135,10 @@ local InformationTypes = {
 		text = PVP,
 		Process = function(t, reference, tooltipInfo)
 			if t.GetValue(t, reference) then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.REQUIRES_PVP,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	});
@@ -1149,10 +1149,10 @@ local InformationTypes = {
 		text = L.SHOW_SKYRIDING_CHECKBOX,
 		Process = function(t, reference, tooltipInfo)
 			if t.GetValue(t, reference) then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.REQUIRES_SKYRIDING,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	});
@@ -1198,10 +1198,10 @@ local InformationTypes = {
 				if phase then
 					local buildVersion = phase.buildVersion;
 					if not buildVersion or app.GameBuildVersion < buildVersion or app.MODE_DEBUG then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = phase.description,
 							wrap = true,
-						});
+						}
 					end
 				end
 			end
@@ -1218,10 +1218,10 @@ local InformationTypes = {
 				if phase then
 					local buildVersion = phase.buildVersion;
 					if not buildVersion or app.GameBuildVersion < buildVersion or app.MODE_DEBUG then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = phase.description,
 							wrap = true,
-						});
+						}
 					end
 				end
 			end
@@ -1234,18 +1234,18 @@ local InformationTypes = {
 		ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			if reference.skipFill then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.SYM_ROW_SKIP_DESC,
 					r = 0.8, g = 0.8, b = 1,
 					wrap = true,
-				});
+				}
 			end
 			if reference.sym then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.SYM_ROW_INFORMATION,
 					r = 0.8, g = 0.8, b = 1,
 					wrap = true,
-				});
+				}
 			end
 		end,
 	});
@@ -1256,9 +1256,9 @@ local InformationTypes = {
 			local awp = t.GetValue(t, reference);
 			if awp then
 				if awp > app.GameBuildVersion then
-					tinsert(tooltipInfo, { left = Colorize(L.READDED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(awp)), app.Colors.AddedWithPatch)});
+					tooltipInfo[#tooltipInfo+1] = { left = Colorize(L.READDED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(awp)), app.Colors.AddedWithPatch)}
 				else
-					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(awp), app.Colors.AddedWithPatch)});
+					tooltipInfo[#tooltipInfo+1] = { left = t.text, right = Colorize(GetPatchString(awp), app.Colors.AddedWithPatch)}
 				end
 			end
 		end,
@@ -1269,9 +1269,9 @@ local InformationTypes = {
 			local rwp = t.GetValue(t, reference);
 			if rwp then
 				if app.GameBuildVersion < rwp then
-					tinsert(tooltipInfo, { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)});
+					tooltipInfo[#tooltipInfo+1] = { left = Colorize(L.REMOVED_WITH_PATCH_CLASSIC_FORMAT:format(GetPatchString(rwp)), app.Colors.RemovedWithPatch)}
 				else
-					tinsert(tooltipInfo, { left = t.text, right = Colorize(GetPatchString(rwp), app.Colors.RemovedWithPatch)});
+					tooltipInfo[#tooltipInfo+1] = { left = t.text, right = Colorize(GetPatchString(rwp), app.Colors.RemovedWithPatch)}
 				end
 			end
 		end,
@@ -1282,15 +1282,15 @@ local InformationTypes = {
 			if f then
 				local locName = ConversionMethods.filterID(reference.loc, reference)
 				if locName then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = ConversionMethods.filterID(f, reference) .. " / " .. locName,
-					});
+					}
 				else
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = ConversionMethods.filterID(f, reference),
-					});
+					}
 				end
 			end
 		end,
@@ -1331,10 +1331,10 @@ local InformationTypes = {
 			if not questID then return end
 
 			local account = app.AccountWideQuestsDB[questID]
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.QUEST_ID,
 				right = reference.questID.." "..(account and AccountWideIcon or "")..app.GetCompletionIcon(app.IsQuestFlaggedCompleted(questID)),
-			});
+			}
 		end
 	}),
 	CreateInformationType("factionID", { text = L.FACTION_ID, priority = 9 }),
@@ -1350,16 +1350,16 @@ local InformationTypes = {
 			if crs then
 				-- extreme amounts of creatures tagged, then only list a summary of how many...
 				if #crs > t.limit then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = CREATURE,
 						right = L.CREATURES_COUNT:format(#crs),
-					});
+					}
 				else
 					for i,creatureID in ipairs(crs) do
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = (i == 1 and CREATURE),
 							right = ConversionMethods.creatureName(creatureID, reference),
-						});
+						}
 					end
 				end
 			end
@@ -1372,15 +1372,15 @@ local InformationTypes = {
 			if providers then
 				local limit = t.limit
 				for i,provider in ipairs(providers) do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = (i == 1 and L.PROVIDERS),
 						right = ConversionMethods.provider(provider, reference),
-					});
+					}
 					limit = limit - 1
 					if limit <= 0 then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							right =  LFG_LIST_AND_MORE:format(#providers - limit),
-						});
+						}
 						break
 					end
 				end
@@ -1390,15 +1390,15 @@ local InformationTypes = {
 			if qss then
 				local limit = t.limit
 				for i,qs in ipairs(qss) do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = (i == 1 and L.PROVIDERS),
 						right = ConversionMethods.qs(qs, reference),
-					});
+					}
 					limit = limit - 1
 					if limit <= 0 then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							right =  LFG_LIST_AND_MORE:format(#qss - limit),
-						});
+						}
 						break
 					end
 				end
@@ -1440,15 +1440,15 @@ local InformationTypes = {
 				end
 				local str = app.TableConcat(classes_tbl, nil, nil, ", ")
 				if #classes_tbl > 4 then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text .. " " .. str,
 						wrap = true,
-					});
+					}
 				else
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = str,
-					});
+					}
 				end
 			end
 		end,
@@ -1459,20 +1459,20 @@ local InformationTypes = {
 			if r and r > 0 then
 				local usecolors = app.Settings:GetTooltipSetting("UseMoreColors");
 				if r == 2 then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = usecolors and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE
-					});
+					}
 				elseif r == 1 then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = usecolors and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE
-					});
+					}
 				else
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = t.text,
 						right = UNKNOWN
-					});
+					}
 				end
 			else
 				r = reference.races or reference.races_disp
@@ -1488,15 +1488,15 @@ local InformationTypes = {
 					end
 					local str = app.TableConcat(races_tbl, nil, nil, ", ")
 					if #races_tbl > 4 then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = t.text .. " " .. str,
 							wrap = true,
-						});
+						}
 					else
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = t.text,
 							right = str
-						});
+						}
 					end
 				end
 			end
@@ -1508,15 +1508,15 @@ local InformationTypes = {
 			if requireSkill then
 				local professionName = ConversionMethods.professionName(requireSkill, reference);
 				if learnedAt then professionName = professionName .. " (" .. learnedAt .. ")"; end
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.REQUIRES,
 					right = professionName,
-				});
+				}
 			elseif learnedAt then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.REQUIRES,
 					right = tostring(learnedAt),
-				});
+				}
 			end
 		end,
 	}),
@@ -1575,12 +1575,12 @@ local InformationTypes = {
 	-- Summary Information Types
 	CreateInformationType("Repeatables", { text = L.REPEATABLES_LABEL, priority = 10999, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
-			if reference.isWorldQuest then tinsert(tooltipInfo, { left = L.DURING_WQ_ONLY }); end
+			if reference.isWorldQuest then tooltipInfo[#tooltipInfo+1] = { left = L.DURING_WQ_ONLY } end
 			if reference.isDaily then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_DAILY }
 			elseif reference.isWeekly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_WEEKLY }
 			elseif reference.isMonthly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_MONTHLY }
 			elseif reference.isYearly then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_YEARLY }
-			elseif reference.repeatable then tinsert(tooltipInfo, { left = L.COMPLETED_MULTIPLE }); end
+			elseif reference.repeatable then tooltipInfo[#tooltipInfo+1] = { left = L.COMPLETED_MULTIPLE } end
 		end,
 	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
@@ -1593,10 +1593,10 @@ local InformationTypes = {
 				-- an item used for a faction which is repeatable
 				if reference.factionID and reference.repeatable then
 					local faction = app.LookupFactionData(reference.factionID)
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.ITEM_GIVES_REP .. faction.name.."'",
 						wrap = true,
-						color = app.Colors.TooltipDescription });
+						color = app.Colors.TooltipDescription }
 				end
 				-- Holiday drop description
 				if app.GameBuildVersion >= 100500 then	-- Dragonflight 10.0.5
@@ -1632,7 +1632,7 @@ local InformationTypes = {
 			if reference.u and (not reference.crs or reference.itemID or reference.sourceID) then
 				-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 				if reference.u == app.PhaseConstants.NEVER_IMPLEMENTED and app.GetRelativeValue(reference, "_missing") then
-					tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
+					tooltipInfo[#tooltipInfo+1] = { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError }
 				else
 					-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
 					-- TODO: this is pretty out-dated, and should be revised for verbiage and qualification
@@ -1652,7 +1652,7 @@ local InformationTypes = {
 	CreateInformationType("sourceIgnored", { text = "sourceIgnored", priority = 11001, HideCheckBox = true, ForceActive = true, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
 			if reference.sourceIgnored then
-				tinsert(tooltipInfo, { left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS, wrap = true });
+				tooltipInfo[#tooltipInfo+1] = { left = L.DOES_NOT_CONTRIBUTE_TO_PROGRESS, wrap = true }
 			end
 		end,
 	}),
@@ -1673,14 +1673,14 @@ local InformationTypes = {
 
 			-- specs is already filtered/sorted to only current class
 			if specs and #specs > 0 then
-				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
+				tooltipInfo[#tooltipInfo+1] = { right = app.GetSpecsString(specs, true, true) }
 			elseif reference.sourceID then
 				tooltipInfo[#tooltipInfo+1] = { right = L.NOT_AVAILABLE_IN_PL }
 			end
 		end or function(t, reference, tooltipInfo)
 			local specs = reference.specs;
 			if specs and #specs > 0 then
-				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
+				tooltipInfo[#tooltipInfo+1] = { right = app.GetSpecsString(specs, true, true) }
 			end
 		end,
 	}),
@@ -1901,13 +1901,13 @@ settings.CreateInformationType("ExclusionFilters", {
 			end
 		end
 		if #excludes > 0 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "Filter Checks",
-			});
-			tinsert(tooltipInfo, {
+			}
+			tooltipInfo[#tooltipInfo+1] = {
 				left = app.TableConcat(excludes, nil, nil, ", "),
 				wrap = true
-			});
+			}
 		end
 	end
 })
@@ -1929,13 +1929,13 @@ settings.CreateInformationType("ExclusionFiltersRow", {
 			end
 		end
 		if #excludes > 0 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "Row Filter Checks",
-			});
-			tinsert(tooltipInfo, {
+			}
+			tooltipInfo[#tooltipInfo+1] = {
 				left = app.TableConcat(excludes, nil, nil, ", "),
 				wrap = true
-			});
+			}
 		end
 	end
 })
@@ -1965,12 +1965,12 @@ settings.CreateInformationType("LinkSourceID", {
 				matchingSourceIDs = false
 			end
 		end
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = Colorize("Link Source", success and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError).." / "
 				..Colorize("Item Info", itemName and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError),
 			right = Colorize("RowSource:"..(rowSource or "?").." / Sourced:"..(source or "?").." / Checked:"..(sourceID or "?"),
 				matchingSourceIDs and app.Colors.ChatLinkHQT or app.Colors.ChatLinkError)
-		});
+		}
 	end
 })
 settings.CreateInformationType("modItemID", {
@@ -1990,10 +1990,10 @@ settings.CreateInformationType("bonuses", {
 	Process = function(t, data, tooltipInfo)
 		local bonuses = data.bonuses
 		if not bonuses or #bonuses < 1 then return end
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = "Item Bonuses",
 			right = app.TableConcat(bonuses, nil, nil, " | ")
-		});
+		}
 	end
 })
 settings.CreateInformationType("rawfields", {
@@ -2001,20 +2001,20 @@ settings.CreateInformationType("rawfields", {
 	text = "DEBUG: Raw Fields",
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "---------- Tooltip Data ----------",
-			});
-		tinsert(tooltipInfo, {
+			}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = "Self:",
 			right = tostring(data)
-		});
+		}
 		local link
 		for k, v in pairs(data) do
 			link = app:SearchLink(v)
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = tostring(k),
 				right = link and (link.." "..tostring(v)) or tostring(v)
-			});
+			}
 		end
 	end
 })
@@ -2024,20 +2024,20 @@ settings.CreateInformationType("rawfields-row", {
 	HideCheckBox = not app.Debugging,
 	Process = function(t, data, tooltipInfo)
 		if app.ActiveRowReference then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "---------- Row Data ----------",
-			});
-			tinsert(tooltipInfo, {
+			}
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "Row:",
 				right = tostring(app.ActiveRowReference)
-			});
+			}
 			local link
 			for k, v in pairs(app.ActiveRowReference) do
 				link = app:SearchLink(v)
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = tostring(k),
 					right = link and (link.." "..tostring(v)) or tostring(v)
-				});
+				}
 			end
 		end
 	end

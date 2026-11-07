@@ -1464,10 +1464,10 @@ local deserializers = setmetatable({
 				local encounterCount = #difficultyData;
 				for k=4,encounterCount,2 do
 					local encounterName = difficultyData[k]:gsub("%%3A", ":"):gsub("%%2C", ",");
-					tinsert(encounters, {
+					encounters[#encounters+1] = {
 						name = encounterName,
 						isKilled = difficultyData[k + 1] == "1" and true or false
-					});
+					}
 				end
 			end
 		end
@@ -1628,19 +1628,19 @@ local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed
 		local lastPlayedForCharacter = character.lastPlayed;
 		if not lastPlayedForCharacter then
 			-- No timestamp? This character might be corrupted.
-			tinsert(responses, { detail = "Request " .. guid, msg = "request," .. guid });	-- Request Full Character Copy
+			responses[#responses+1] = { detail = "Request " .. guid, msg = "request," .. guid }	-- Request Full Character Copy
 			app.print("Requesting full character copy for " .. character.text .. " since no timestamp was found.");
 		elseif lastPlayedForCharacter < lastPlayed then
 			-- The timestamp is newer than the copy we have. Send anything that is new.
-			tinsert(responses, { detail = "Update " .. character.text, msg = "request," .. guid .. "," .. lastPlayedForCharacter });	-- Request Diff
+			responses[#responses+1] = { detail = "Update " .. character.text, msg = "request," .. guid .. "," .. lastPlayedForCharacter }	-- Request Diff
 			app.print("Requesting character update for " .. character.text .. " since we have an older version than them.");
 		elseif shouldPrint then
 			-- Inform them that we have a newer version of the character than they do.
-			tinsert(responses, { detail = "Up to Date " .. guid, msg = "uptodate," .. guid });
+			responses[#responses+1] = { detail = "Up to Date " .. guid, msg = "uptodate," .. guid }
 		end
 	else
 		-- We don't have the character in our character data table.
-		tinsert(responses, { detail = "Request " .. guid, msg = "request," .. guid });	-- Request Full Character Copy
+		responses[#responses+1] = { detail = "Request " .. guid, msg = "request," .. guid }	-- Request Full Character Copy
 		app.print("Requesting full character copy for " .. guid .. " since we don't have any data on them.");
 	end
 end
@@ -1670,7 +1670,7 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 
 	-- If this wasn't sent as a response to a check request, send our own check request!
 	if not isResponding then
-		tinsert(responses, { detail = "Checking", msg = "check," .. GetSyncIdentityToken() .. ",1" });
+		responses[#responses+1] = { detail = "Checking", msg = "check," .. GetSyncIdentityToken() .. ",1" }
 	end
 
 	-- Generate the sync string
@@ -1681,7 +1681,7 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 			chars[guid] = true;
 		end
 	end
-	tinsert(responses, { detail = "Character List", msg = response });
+	responses[#responses+1] = { detail = "Character List", msg = response }
 	return true;
 end
 MESSAGE_HANDLERS.char = function(self, sender, content, responses)
@@ -1696,7 +1696,7 @@ MESSAGE_HANDLERS.chars = function(self, sender, content, responses)
 end
 MESSAGE_HANDLERS.link = function(self, sender, content, responses)
 	-- Generate the linked string, which gets the character ready on the other end and connects the bnet account
-	tinsert(responses, { detail = CurrentCharacter.text, msg = "linked," .. CurrentCharacter.guid .. "," .. CurrentCharacter.text .. "," .. CurrentCharacter.lastPlayed });
+	responses[#responses+1] = { detail = CurrentCharacter.text, msg = "linked," .. CurrentCharacter.guid .. "," .. CurrentCharacter.text .. "," .. CurrentCharacter.lastPlayed }
 	return true;
 end
 MESSAGE_HANDLERS.linked = function(self, sender, content, responses)
@@ -1805,7 +1805,7 @@ MESSAGE_HANDLERS.request = function(self, sender, content, responses)
 			app.PrintTable(value)
 		end
 	end
-	tinsert(responses, { detail = character.text, msg = rawData });
+	responses[#responses+1] = { detail = character.text, msg = rawData }
 end
 MESSAGE_HANDLERS.uptodate = function(self, sender, content, responses)
 	local guid = content[2];
@@ -2143,17 +2143,17 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 					RequestTimePlayed();
 				end
 			end
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = TIME_PLAYED_MSG,
 				right = GetTimePlayedString(totalTimePlayed)
-			});
+			}
 		end
 		local battleTag = character.battleTag;
 		if battleTag then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = BATTLETAG,
 				right = battleTag
-			});
+			}
 		end
 		local primeData = character.PrimeData;
 		if primeData then
@@ -2172,14 +2172,14 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 					character.build = nil;
 				end
 			end
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = primeData.modeString,
 				right = buildString,
 				r = 1, g = 1, b = 1
-			});
-			tinsert(tooltipInfo, {
+			}
+			tooltipInfo[#tooltipInfo+1] = {
 				summaryText = GetProgressColorText(primeData.progress, primeData.total),
-			});
+			}
 		end
 
 		local total = 0;
@@ -2206,46 +2206,46 @@ local function OnTooltipForCharacter(t, tooltipInfo)
 				end
 				total = total + subtotal;
 				local t = timestamps[field];
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = field .. " |cffaaaaaa(" .. (t and date("%Y-%m-%d %H:%M:%S", t) or "??" ) .. ")|r",
 					right = tostring(subtotal),
 					r = 1, g = 1, b = 1
-				});
+				}
 			end
 		end
 		tooltipInfo[#tooltipInfo+1] = { left = " " }
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = TOTAL,
 			right = tostring(total),
 			r = 1, g = 0.8, b = 0.8
-		});
-		tinsert(tooltipInfo, {
+		}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.ACCOUNT_MANAGEMENT_SYNC_CHARACTER_HINT,
 			r = 0.8, g = 1, b = 0.8
-		});
-		tinsert(tooltipInfo, {
+		}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.DELETE_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
-		});
-		tinsert(tooltipInfo, {
+		}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.ACCOUNT_MANAGEMENT_UNIQUE_DATA_HINT,
 			r = 1, g = 0.8, b = 0.8
-		});
+		}
 		if character.ignored then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.ACCOUNT_MANAGEMENT_UNIGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
-			});
+			}
 			tooltipInfo[#tooltipInfo+1] = { left = " " }
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.ACCOUNT_MANAGEMENT_IGNORED_DESC,
 				r = 1, g = 1, b = 1, wrap = true
-			});
+			}
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.ACCOUNT_MANAGEMENT_IGNORE_CHARACTER_HINT,
 				r = 1, g = 0.8, b = 0.8
-			});
+			}
 		end
 	end
 end
@@ -2266,44 +2266,44 @@ local function OnTooltipForCharacterHeader(t, tooltipInfo)
 		end
 	end
 	tooltipInfo[#tooltipInfo+1] = { left = " " }
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = L.ACCOUNT_MANAGEMENT_TOTAL_TIME_PLAYED,
 		right = GetTimePlayedString(AccountTotalTimePlayed)
-	});
+	}
 	tooltipInfo[#tooltipInfo+1] = { left = L.ACCOUNT_MANAGEMENT_BY_CLASS }
 	for class,total in pairs(ByClass) do
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = "  " .. app.CreateCharacterClass(class).text,
 			right = GetTimePlayedString(total)
-		});
+		}
 	end
 	tooltipInfo[#tooltipInfo+1] = { left = L.ACCOUNT_MANAGEMENT_BY_RACE }
 	for race,total in pairs(ByRace) do
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = "  " .. app.CreateRace(race).text,
 			right = GetTimePlayedString(total)
-		});
+		}
 	end
 end
 local function OnTooltipForLinkedAccount(t, tooltipInfo)
 	if t.unit then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.ACCOUNT_MANAGEMENT_LINKED_AS,
 			right = t.datalink,
-		});
-		tinsert(tooltipInfo, {
+		}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.LINKED_ACCOUNT_TOOLTIP,
 			r = 0.8, g = 0.8, b = 1, wrap = true
-		});
-		tinsert(tooltipInfo, {
+		}
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.DELETE_LINKED_CHARACTER,
 			r = 1, g = 0.8, b = 0.8
-		});
+		}
 	else
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.DELETE_LINKED_ACCOUNT,
 			r = 1, g = 0.8, b = 0.8
-		});
+		}
 	end
 end
 --- Appends send/receive chunk progress and the cancellation hint for this transport key.
@@ -2317,20 +2317,20 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	local receiving = pendingReceiveChunksForUser[identifier];
 	if receiving then
 		tooltipInfo[#tooltipInfo+1] = { left = " " }
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.ACCOUNT_MANAGEMENT_RECEIVING,
 			r = 0.8, g = 0.8, b = 1
-		});
+		}
 		for uid,data in pairs(receiving) do
 			local count = 0;
 			for key,ignored in pairs(data.chunks) do
 				count = count + 1;
 			end
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "  " .. uid,
 				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, data.count),
 				r = 0.8, g = 0.8, b = 0.8
-			});
+			}
 		end
 	end
 
@@ -2338,27 +2338,27 @@ local function OnTooltipForSyncQueue(t, tooltipInfo)
 	local sending = pendingSendChunksForUser[identifier];
 	if sending then
 		tooltipInfo[#tooltipInfo+1] = { left = " " }
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.ACCOUNT_MANAGEMENT_SENDING,
 			r = 0.8, g = 0.8, b = 1
-		});
+		}
 		for uid,data in pairs(sending) do
 			local count = 0;
 			for key,ignored in pairs(data.acks) do
 				count = count + 1;
 			end
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "  " .. uid .. ": " .. data.detail,
 				right = L.ACCOUNT_MANAGEMENT_CHUNK_PROGRESS:format(count, #data.chunks),
 				r = 0.8, g = 0.8, b = 0.8
-			});
+			}
 		end
 	end
 
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = L.ACCOUNT_MANAGEMENT_DELETE_SYNC_TARGET_HINT,
 		r = 1, g = 0.8, b = 0.8
-	});
+	}
 end
 --- Updates combined send/receive progress and makes the queue item visible.
 ---@param t ATTSyncQueueItem # Queue item containing the transport key.

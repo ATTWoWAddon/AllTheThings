@@ -136,21 +136,21 @@ if GetAchievementCriteriaInfoByID then
 	local function onTooltipForAchievementCriteria(t, tooltipInfo)
 		local achievementID = t.achievementID;
 		if achievementID then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.CRITERIA_FOR,
 				right = "|cffffff00[" .. (select(2, GetAchievementInfo(achievementID)) or RETRIEVING_DATA) .. "]|r",
-			});
+			}
 			if IsShiftKeyDown() then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
 					tooltipInfo[#tooltipInfo+1] = { left = " " }
 					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID, true)
 					if criteriaString then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = " [" .. criteriaUID .. "]: " .. tostring(criteriaString),
 							right = "(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed),
 							r = 1, g = 1, b = 1
-						});
+						}
 					end
 				end
 			end
@@ -191,24 +191,24 @@ end
 local function OnTooltipForAchievementCriteriaData(t, tooltipInfo)
 	local achievementID = t.achievementID;
 	if achievementID then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.CRITERIA_FOR,
 			right = t.achievementData.text or achievementID,
-		});
+		}
 	end
 	if not t.collectible and app.GameBuildVersion < 30000 then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = "\n \nCRIEVE NOTE: This cannot be collected prior to Wrath Classic as it lacks a permanent collectible state.",
 			r = 1, g = 0.6, b = 0.6,
 			wrap = true
-		});
+		}
 		local d = t.data.BrokenTypeDescription;
 		if d then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = d,
 				r = 1, g = 0.4, b = 0.4,
 				wrap = true
-			});
+			}
 		end
 	end
 	if IsShiftKeyDown() then
@@ -390,10 +390,10 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 				local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID);
 				if criteriaString and criteriaUID then
 					criteriaDatasByUID[criteriaUID] = true;
-					tinsert(criteriaDatas, {
+					criteriaDatas[#criteriaDatas+1] = {
 						" [" .. criteriaUID .. "]: " .. tostring(criteriaString),
 						"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
-					});
+					}
 				end
 			end
 			local totalCriteria = GetAchievementNumCriteria(achievementID) or 0;
@@ -402,26 +402,26 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 					---@diagnostic disable-next-line: redundant-parameter
 					local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaIndex, true);
 					if criteriaString and (not criteriaDatasByUID[criteriaUID] or criteriaUID == 0) then
-						tinsert(criteriaDatas, {
+						criteriaDatas[#criteriaDatas+1] = {
 							" [" .. criteriaUID .. " @ Index: " .. criteriaIndex .. "]: " .. tostring(criteriaString),
 							"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
-						});
+						}
 					end
 				end
 			end
 			if #criteriaDatas > 0 then
 				tooltipInfo[#tooltipInfo+1] = { left = " " }
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = "Total Criteria",
 					right = tostring(#criteriaDatas),
 					r = 0.8, g = 0.8, b = 1
-				});
+				}
 				for i,criteriaData in ipairs(criteriaDatas) do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = criteriaData[1],
 						right = criteriaData[2],
 						r = 1, g = 1, b = 1
-					});
+					}
 				end
 			end
 		end

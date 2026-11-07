@@ -454,9 +454,9 @@ app.AddEventHandler("OnLoad", function()
 					faction.rank = standingId;
 					local rankText = faction.rankText;
 					if offset ~= 0 then rankText = offset .. " " .. rankText; end
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.MINUMUM_STANDING_WITH_FACTION:format(rankText, faction.name),
-					});
+					}
 				end
 				if ma and (not mi or mi[1] ~= ma[1]) then
 					local faction = app.CreateFaction(ma[1]);
@@ -466,9 +466,9 @@ app.AddEventHandler("OnLoad", function()
 					faction.rank = standingId;
 					local rankText = faction.rankText;
 					if offset ~= 0 then rankText = offset .. " " .. rankText; end
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.MAXIMUM_STANDING_WITH_FACTION:format(rankText, faction.name),
-					});
+					}
 				end
 				if mi and ma and mi[1] == ma[1] then
 					-- Min Standing
@@ -488,9 +488,9 @@ app.AddEventHandler("OnLoad", function()
 					maxFaction.rank = standingId;
 					local maxRankText = maxFaction.rankText;
 					if offset ~= 0 then maxRankText = offset .. " " .. maxRankText; end
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.MIN_MAX_STANDING_WITH_FACTION:format(minRankText, maxRankText, faction.name);
-					});
+					}
 				end
 			end
 		end,

@@ -1911,22 +1911,22 @@ app.AddEventHandler("OnLoad", function()
 				if questLogIndex then
 					local lore, objective = GetQuestLogQuestText(questLogIndex);
 					if lore and app.Settings:GetTooltipSetting("Lore") then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = lore,
 							color = app.Colors.TooltipLore,
 							wrap = true,
-						});
+						}
 					end
 					if objective then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = REQUIREMENTS,
 							r = 1, g = 1, b = 1,
-						});
-						tinsert(tooltipInfo, {
+						}
+						tooltipInfo[#tooltipInfo+1] = {
 							left = objective,
 							r = 0.4, g = 0.8, b = 1,
 							wrap = true,
-						});
+						}
 						objectified = true;
 					end
 				end
@@ -1934,10 +1934,10 @@ app.AddEventHandler("OnLoad", function()
 					local objectives = C_QuestLog_GetQuestObjectives(reference.questID);
 					if objectives and #objectives > 0 then
 						if not objectified then
-							tinsert(tooltipInfo, {
+							tooltipInfo[#tooltipInfo+1] = {
 								left = REQUIREMENTS,
 								r = 1, g = 1, b = 1,
-							});
+							}
 						end
 						for i,objective in ipairs(objectives) do
 							local text = objective.text;
@@ -1957,12 +1957,12 @@ app.AddEventHandler("OnLoad", function()
 								reference.working = true;
 							end
 
-							tinsert(tooltipInfo, {
+							tooltipInfo[#tooltipInfo+1] = {
 								left = "  " .. text,
 								right = app.GetCompletionIcon(objective.finished),
 								r = 1, g = 1, b = 1,
 								wrap = true,
-							});
+							}
 						end
 					end
 				end
@@ -2506,14 +2506,14 @@ local function NestSourceQuests(questChainRoot, group)
 			-- print("Shifted pre-reqs down & next sq layer",#prereqs)
 			-- app.PrintTable(sourceQuests)
 			-- print("---")
-			tinsert(prereqs, {
+			prereqs[#prereqs+1] = {
 				text = L.UPON_COMPLETION,
 				description = L.UPON_COMPLETION_DESC,
 				icon = 135932,
 				visible = true,
 				expanded = true,
 				g = g,
-			});
+			}
 			g = prereqs;
 		end
 	end

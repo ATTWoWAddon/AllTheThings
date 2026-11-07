@@ -35,9 +35,9 @@ app:CreateWindow("Pet Battles", {
 			end,
 			OnTooltip = function(t, tooltipInfo)
 				if not app.Settings:Get("Show:PetBattles") then
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = app.Modules.Color.Colorize("WARNING: You have Pet Battles disabled in the Settings!\n\nThis window will likely be empty as a result.", app.Colors.TooltipWarning),
-					});
+					}
 				end
 			end,
 		}));

@@ -136,10 +136,10 @@ do
 				local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfoByID(achievementID, criteriaID);
 				if criteriaString and criteriaUID then
 					criteriaDatasByUID[criteriaUID] = true;
-					tinsert(criteriaDatas, {
+					criteriaDatas[#criteriaDatas+1] = {
 						" [" .. criteriaUID .. "]: " .. tostring(criteriaString),
 						"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
-					});
+					}
 				end
 			end
 			local totalCriteria = GetAchievementNumCriteria(achievementID) or 0;
@@ -148,26 +148,26 @@ do
 					---@diagnostic disable-next-line: redundant-parameter
 					local criteriaString, criteriaType, completed, _, _, _, _, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaIndex, true);
 					if criteriaString and (not criteriaDatasByUID[criteriaUID] or criteriaUID == 0) then
-						tinsert(criteriaDatas, {
+						criteriaDatas[#criteriaDatas+1] = {
 							" [" .. criteriaUID .. " @ Index: " .. criteriaIndex .. "]: " .. tostring(criteriaString),
 							"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
-						});
+						}
 					end
 				end
 			end
 			if #criteriaDatas > 0 then
 				tooltipInfo[#tooltipInfo+1] = { left = " " }
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = "Total Criteria",
 					right = tostring(#criteriaDatas),
 					r = 0.8, g = 0.8, b = 1
-				});
+				}
 				for i,criteriaData in ipairs(criteriaDatas) do
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = criteriaData[1],
 						right = criteriaData[2],
 						r = 1, g = 1, b = 1
-					});
+					}
 				end
 			end
 		end
@@ -310,10 +310,10 @@ do
 			Process = function(t, reference, tooltipInfo)
 				if reference.criteriaID and reference.achievementID then
 					local achievement = QuickAchievementCache[reference.achievementID]
-					tinsert(tooltipInfo, {
+					tooltipInfo[#tooltipInfo+1] = {
 						left = L.CRITERIA_FOR,
 						right = achievement.text or GetAchievementLink(reference.achievementID),
-					});
+					}
 				end
 			end
 		})
@@ -324,10 +324,10 @@ do
 				-- achievement progress. If it has a measurable statistic, show it under the achievement description
 				if reference.achievementID then
 					if reference.statistic then
-						tinsert(tooltipInfo, {
+						tooltipInfo[#tooltipInfo+1] = {
 							left = L.PROGRESS,
 							right = reference.statistic,
-						});
+						}
 					end
 				end
 			end

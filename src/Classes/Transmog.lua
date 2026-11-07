@@ -1106,7 +1106,7 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 		-- This typically happens on Items which can have a collectible SourceID, but not usable for Transmog
 		-- don't show the message on Sources which are explicitly non-collectible
 		if sourceGroup.collectible ~= false then
-			tinsert(info, { left = L.FORCE_REFRESH_REQUIRED, wrap = true, color = app.Colors.TooltipDescription });
+			info[#info+1] = { left = L.FORCE_REFRESH_REQUIRED, wrap = true, color = app.Colors.TooltipDescription }
 		end
 	end
 	local linkInfo, sourceFilter, otherFilter
@@ -1226,10 +1226,10 @@ local function CheckSourceInformation(sourceID, info, sourceGroup)
 			-- if this is true here, that means C_TransmogCollection_GetAllAppearanceSources() for this SourceID's VisualID
 			-- does not return this SourceID, so it doesn't get flagged by the refresh logic and we need to track it manually for
 			-- this Account as being 'collected'
-			tinsert(info, {
+			info[#info+1] = {
 				left = L.ADHOC_UNIQUE_COLLECTED_INFO,
 				color = app.Colors.ChatLinkError
-			});
+			}
 			-- if the tooltip immediately refreshes for whatever reason then
 			-- store this SourceID as being collected* so it can be properly collected* during force refreshes in the future without requiring a tooltip search
 			local uniqueSources = ATTAccountWideData.BrokenUniqueSources;
@@ -1244,14 +1244,14 @@ local function CheckSourceInformation(sourceID, info, sourceGroup)
 	if sourceInfo.categoryID > 0 and sourceGroup.missing then
 		local modItemID = app.GetGroupItemIDWithModID(sourceGroup)
 		-- Do not localize first part of the message, it is for contribs
-		tinsert(info, {
+		info[#info+1] = {
 			left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L.SOURCE_ID_MISSING,
 			color = app.Colors.ChatLinkError
-		});
-		tinsert(info, {
+		}
+		info[#info+1] = {
 			left = "["..modItemID.."]="..sourceID .. " -- " .. tostring(sourceInfo.visualID)..")",
 			color = app.Colors.SourceIgnored
-		});
+		}
 	end
 end
 local function BuildSourceInformationForPopout(group)

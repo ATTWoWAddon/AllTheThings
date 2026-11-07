@@ -164,11 +164,11 @@ else
 							end
 						end
 						if closestInstance then
-							tinsert(objects, {
+							objects[#objects+1] = {
 								objectID = objectID,
 								distance = closestDistance,
 								AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
-							});
+							}
 							closestInstance = nil;
 							closestDistance = 999999;
 						end

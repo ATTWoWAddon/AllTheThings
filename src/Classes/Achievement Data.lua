@@ -432,11 +432,11 @@ local ForSubAchievementFields = {	-- Type 8
 	end,
 };
 local function OnTooltipForCriteriaData(criteria, tooltipInfo)
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " [" .. criteria.__criteriaUID .. "]: " .. tostring(criteria.text),
 		right = "(" .. tostring(criteria.asset or "--") .. " @ " .. tostring(criteria.type) .. ") " .. tostring(criteria.progress) .. " / " .. tostring(criteria.total) .. " " .. app.GetCompletionIcon(criteria.collected),
 		r = 1, g = 1, b = 1
-	});
+	}
 end
 local CreateCriteriaType = app.CreateClass("CriteriaType", "__criteriaUID", {
 	RefreshCollectionOnly = true,
@@ -507,11 +507,11 @@ local function OnTooltipForAchievementData(t, tooltipInfo)
 	local criteriaData = t.criteriaData;
 	if #criteriaData > 0 then
 		if not t.collectible and app.GameBuildVersion < 30000 then
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "\n \nCRIEVE NOTE: This achievement cannot be collected prior to Wrath Classic as it lacks any permanent collectible criteria.",
 				r = 1, g = 0.6, b = 0.6,
 				wrap = true
-			});
+			}
 		end
 
 		if IsShiftKeyDown() then
@@ -521,21 +521,21 @@ local function OnTooltipForAchievementData(t, tooltipInfo)
 			end
 			if #criteriaInfo > 0 then
 				tooltipInfo[#tooltipInfo+1] = { left = " " }
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = "Total Criteria",
 					right = tostring(#criteriaInfo),
 					r = 0.8, g = 0.8, b = 1
-				});
+				}
 				for i,info in ipairs(criteriaInfo) do
 					tooltipInfo[#tooltipInfo+1] = info
 				end
 			end
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "Hold Shift to see all criteria associated with this achievement.",
 				r = 0.8, g = 0.8, b = 1,
 				wrap = true
-			});
+			}
 		end
 	end
 end

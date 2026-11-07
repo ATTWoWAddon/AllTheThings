@@ -28,7 +28,7 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		local summaryText = app.GetProgressTextForTooltip(data);
 		if summaryText then tooltipInfo[#tooltipInfo+1] = { summaryText = summaryText } end
 		local description = data.description;
-		if description then tinsert(tooltipInfo, { left = "|cffffffff" .. description .. "|r\n\n", wrap = true }); end
+		if description then tooltipInfo[#tooltipInfo+1] = { left = "|cffffffff" .. description .. "|r\n\n", wrap = true } end
 	end
 
 	local commandTexts = {}
@@ -43,15 +43,15 @@ local function OnTooltipForWindowButton(self, tooltipInfo)
 		end
 	end
 	if #commandTexts > 0 then
-		tinsert(tooltipInfo, { left = L.COMMANDS_LABEL .. " |cffcccccc\n  " .. app.TableConcat(commandTexts, nil, nil, "\n  ") .. "|r" });
+		tooltipInfo[#tooltipInfo+1] = { left = L.COMMANDS_LABEL .. " |cffcccccc\n  " .. app.TableConcat(commandTexts, nil, nil, "\n  ") .. "|r" }
 	end
 	if window.HasPendingUpdate then
 		tooltipInfo[#tooltipInfo+1] = { left = " " }
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L["UPDATES_PAUSED"],
 			right = L["MAIN_LIST_REQUIRES_REFRESH"],
 			r = 1, g = 0.4
-		});
+		}
 	end
 end
 local function RefreshWindowManager()

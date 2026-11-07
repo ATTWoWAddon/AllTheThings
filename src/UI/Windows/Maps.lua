@@ -3,8 +3,8 @@ local _, app = ...;
 local L = app.L;
 
 -- Global locals
-local ipairs, tinsert, pairs, tostring
-	= ipairs, tinsert, pairs, tostring;
+local ipairs, pairs, tostring
+	= ipairs, pairs, tostring;
 local C_Map_GetMapInfo
 	= C_Map.GetMapInfo;
 

@@ -583,30 +583,30 @@ app.AddEventHandler("OnLoad", function()
 						if nextEvent.remappedID then
 							local mapID = RemappedEventToMapID[nextEvent.remappedID];
 							if mapID then
-								tinsert(tooltipInfo, {
+								tooltipInfo[#tooltipInfo+1] = {
 									left = L.EVENT_WHERE,
 									right = app.GetMapName(mapID),
 									color = app.Colors.TooltipDescription,
-								});
+								}
 							end
 						end
 						if nextEvent.endTime then
-							tinsert(tooltipInfo, {
+							tooltipInfo[#tooltipInfo+1] = {
 								left = L.EVENT_START,
 								right = GetEventTimeString(nextEvent.startTime),
 								color = app.Colors.TooltipDescription,
-							});
-							tinsert(tooltipInfo, {
+							}
+							tooltipInfo[#tooltipInfo+1] = {
 								left = L.EVENT_END,
 								right = GetEventTimeString(nextEvent.endTime),
 								color = app.Colors.TooltipDescription,
-							});
+							}
 						else
-							tinsert(tooltipInfo, {
+							tooltipInfo[#tooltipInfo+1] = {
 								left = L.EVENT_ACTIVE,
 								right = GetEventTimeString(nextEvent.startTime),
 								color = app.Colors.TooltipDescription,
-							});
+							}
 						end
 					end
 				end
@@ -619,11 +619,11 @@ app.AddEventHandler("OnLoad", function()
 		Process = function(t, reference, tooltipInfo)
 			local e = reference.e;
 			if e then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = t.text,
 					right = GetEventName(e),
 					color = "FF00FFDE",
-				});
+				}
 			end
 		end,
 	});

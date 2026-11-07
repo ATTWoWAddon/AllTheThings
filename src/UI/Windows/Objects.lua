@@ -75,49 +75,49 @@ local function OnTooltipForObject(t, tooltipInfo)
 	-- Calculate the completion for each object.
 	local name = app.ObjectNames[t.objectID];
 	if name then
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.OBJECT_DEBUGGER_NAME,
 			right = name,
 			r = 1, g = 1, b = 1,
-		});
+		}
 	else
-		tinsert(tooltipInfo, {
+		tooltipInfo[#tooltipInfo+1] = {
 			left = L.OBJECT_DEBUGGER_NAME,
 			right = L.OBJECT_DEBUGGER_MISSING,
 			r = 1, g = 1, b = 1,
 			r2 = 1, g2 = 0.4, b2 = 0.4,
-		});
+		}
 	end
 
 	if checkIcons then
 		local icon = app.ObjectIcons[t.objectID];
 		if icon then
 			if invalidTextures[icon] then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.OBJECT_DEBUGGER_ICON,
 					right = L.OBJECT_DEBUGGER_INVALID,
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
-				});
-				tinsert(tooltipInfo, {
+				}
+				tooltipInfo[#tooltipInfo+1] = {
 					right = invalidTextures[icon],
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
-				});
+				}
 			else
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.OBJECT_DEBUGGER_ICON,
 					right = icon,
 					r = 1, g = 1, b = 1,
-				});
+				}
 			end
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.OBJECT_DEBUGGER_ICON,
 				right = L.OBJECT_DEBUGGER_MISSING,
 				r = 1, g = 1, b = 1,
 				r2 = 1, g2 = 0.4, b2 = 0.4,
-			});
+			}
 		end
 	end
 
@@ -125,31 +125,31 @@ local function OnTooltipForObject(t, tooltipInfo)
 		local model = t.model;
 		if model then
 			if invalidModels[model] then
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.OBJECT_DEBUGGER_MODEL,
 					right = L.OBJECT_DEBUGGER_INVALID,
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
-				});
-				tinsert(tooltipInfo, {
+				}
+				tooltipInfo[#tooltipInfo+1] = {
 					right = invalidModels[model],
 					r = 1, g = 1, b = 1,
 					r2 = 1, g2 = 0.4, b2 = 0.4,
-				});
+				}
 			else
-				tinsert(tooltipInfo, {
+				tooltipInfo[#tooltipInfo+1] = {
 					left = L.OBJECT_DEBUGGER_MODEL,
 					right = model,
 					r = 1, g = 1, b = 1,
-				});
+				}
 			end
 		else
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = L.OBJECT_DEBUGGER_MODEL,
 				right = L.OBJECT_DEBUGGER_MISSING,
 				r = 1, g = 1, b = 1,
 				r2 = 1, g2 = 0.4, b2 = 0.4,
-			});
+			}
 		end
 	end
 end

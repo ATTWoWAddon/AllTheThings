@@ -162,7 +162,7 @@ local function ConvertCoordsForGroup(group)
 					coordsForMap = {};
 					newCoords[coord[3]] = coordsForMap;
 				end
-				tinsert(coordsForMap, { coord[1], coord[2] });
+				coordsForMap[#coordsForMap+1] = { coord[1], coord[2] }
 			end
 			group.coords = newCoords;
 			--[[
@@ -838,17 +838,17 @@ app:CreateWindow("Debugger", {
 									local m = itemLink:match("currency:(%d+)");
 									if m then
 										-- Parse as a CURRENCY.
-										tinsert(cost, {"c", tonumber(m), itemValue});
+										cost[#cost+1] = {"c", tonumber(m), itemValue}
 									else
 										-- Parse as an ITEM.
-										tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
+										cost[#cost+1] = {"i", tonumber(itemLink:match("item:(%d+)")), itemValue}
 									end
 								end
 							end
 						end
 
 						-- Parse as an ITEM LINK.
-						tinsert(rawGroups, { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost });
+						rawGroups[#rawGroups+1] = { key = "itemID", ["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost }
 					end
 				end
 
@@ -884,12 +884,12 @@ app:CreateWindow("Debugger", {
 						if spellID then
 							local skillName, learnedAt, hasReq = GetTrainerServiceSkillReq(i);
 							local skillID = ATTC.SpellNameToSpellID[skillName];
-							tinsert(rawGroups, {
+							rawGroups[#rawGroups+1] = {
 								key = "recipeID",
 								recipeID = spellID,
 								learnedAt = learnedAt,
 								requireSkill = skillID
-							});
+							}
 						end
 					end
 				end
@@ -1070,20 +1070,20 @@ app:CreateWindow("Debugger", {
 			local rawGroups = {};
 			for i=1,GetNumQuestRewards(),1 do
 				local link = GetQuestItemLink("reward", i);
-				if link then tinsert(rawGroups, { key = "itemID", ["itemID"] = GetItemID(link) }); end
+				if link then rawGroups[#rawGroups+1] = { key = "itemID", ["itemID"] = GetItemID(link) } end
 			end
 			for i=1,GetNumQuestChoices(),1 do
 				local link = GetQuestItemLink("choice", i);
-				if link then tinsert(rawGroups, { key = "itemID", ["itemID"] = GetItemID(link) }); end
+				if link then rawGroups[#rawGroups+1] = { key = "itemID", ["itemID"] = GetItemID(link) } end
 			end
 			if GetNumQuestLogRewardSpells then
 				for i=1,GetNumQuestLogRewardSpells(questID),1 do
 					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
 					if spellID then
 						if isTradeskillSpell then
-							tinsert(rawGroups, { key = "recipeID", ["recipeID"] = spellID, ["name"] = name });
+							rawGroups[#rawGroups+1] = { key = "recipeID", ["recipeID"] = spellID, ["name"] = name }
 						else
-							tinsert(rawGroups, { key = "spellID", ["spellID"] = spellID, ["name"] = name });
+							rawGroups[#rawGroups+1] = { key = "spellID", ["spellID"] = spellID, ["name"] = name }
 						end
 					end
 				end
@@ -1092,7 +1092,7 @@ app:CreateWindow("Debugger", {
 				for i=1,GetNumQuestLogRewardCurrencies(questID),1 do
 					local name, texture, numItems, currencyId, quality = GetQuestLogRewardCurrencyInfo(i, questID);
 					if currencyId then
-						tinsert(rawGroups, { key = "currencyID", ["currencyID"] = currencyId, ["name"] = name, ["count"] = numItems or 1 });
+						rawGroups[#rawGroups+1] = { key = "currencyID", ["currencyID"] = currencyId, ["name"] = name, ["count"] = numItems or 1 }
 					end
 				end
 			end
@@ -1101,7 +1101,7 @@ app:CreateWindow("Debugger", {
 				for i=1,#objectives do
 					local objective = objectives[i];
 					if objective then
-						tinsert(rawGroups, { key = "objectiveID", ["objectiveID"] = i, ["name"] = objective.text, ["type"] = objective.type, ["numRequired"] = objective.numRequired });
+						rawGroups[#rawGroups+1] = { key = "objectiveID", ["objectiveID"] = i, ["name"] = objective.text, ["type"] = objective.type, ["numRequired"] = objective.numRequired }
 					end
 				end
 			end
@@ -1114,13 +1114,13 @@ app:CreateWindow("Debugger", {
 						print("  ", key, value);
 					end
 				elseif questStartItemID > 0 then
-					tinsert(providers, { "i", questStartItemID });
+					providers[#providers+1] = { "i", questStartItemID }
 				end
 			end
 			if npcID then
 				npcID = tonumber(npcID);
 				if ot == "GameObject" then
-					tinsert(providers, { "o", npcID });
+					providers[#providers+1] = { "o", npcID }
 				else
 					info.qgs = {npcID};
 				end
