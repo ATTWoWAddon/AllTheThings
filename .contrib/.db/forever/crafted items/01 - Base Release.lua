@@ -1831,6 +1831,17 @@ root(ROOTS.Craftables, {
 				},
 				description = "Can be found on uneven terrain and mountain sides.",
 			}),
+			o(656160, {	-- Wilted Peacebloom
+				maps = {
+					MAP.DUN_MOROGH,
+					MAP.DUROTAR,
+					MAP.ELWYNN_FOREST,
+					MAP.MULGORE,
+					MAP.TELDRASSIL,
+					MAP.TIRISFAL_GLADES,
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		{	-- Herbs:
 			i(8836, {	-- Arthas' Tears
@@ -2103,6 +2114,7 @@ root(ROOTS.Craftables, {
 				providers = {
 					{ "o", 1618 },	-- Peacebloom
 					{ "o", 3724 },	-- Peacebloom (The Barrens)
+					{ "o", 656160 },	-- Wilted Peacebloom
 				},
 			}),
 			i(8831, {	-- Purple Lotus

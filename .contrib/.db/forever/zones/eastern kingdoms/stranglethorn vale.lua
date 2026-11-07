@@ -868,8 +868,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95770, {	-- Locating the Lost City
-				-- TODO: Wowhead doesn't list the quest giver yet. Explore the Vile Reef and find the cavern entrance; Wowhead has no objective IDs yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				-- Contributor Report (Nov 7, 2026): accepted at 32.3, 27.9, right after The Gurubashi Legends of Old (95748).
+				sourceQuest = 95748,	-- The Gurubashi Legends of Old
+				qg = 2519,	-- Kin'weelay
+				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),

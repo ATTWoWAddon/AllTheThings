@@ -252,7 +252,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sourceQuest = 91758,	-- Follow That Kobold!
 						qg = 248415,	-- Tordrin Sternblade
 						qi = 247970,	-- Kobold Tracking Kit (PQI!)
-						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
+						coords = {
+							{ 48.9, 41.6, MAP.ELWYNN_FOREST },
+							{ 51.2, 40.9, MAP.ELWYNN_FOREST },
+						},
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						groups = {
