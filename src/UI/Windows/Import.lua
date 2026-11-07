@@ -6,8 +6,8 @@ local L = app.L;
 if not app.IsRetail then return; end
 
 -- Global locals
-local ipairs, setmetatable, tonumber, tinsert, tremove, wipe
-	= ipairs, setmetatable, tonumber, tinsert, tremove, wipe
+local ipairs, setmetatable, tonumber, tremove, wipe
+	= ipairs, setmetatable, tonumber, tremove, wipe
 
 -- Local functions
 local IMPORT_TYPES = {}
@@ -121,6 +121,7 @@ app:CreateWindow("Import", {
 		local initialButtons = {
 			{ id = "achievementID", name = ACHIEVEMENTS, icon = app.asset("Category_Achievements") },
 			{ id = "sourceID", name = WARDROBE, icon = 135276 },
+			{ minBuild = 70000, id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") },
 			{ minBuild = 80200, id = "azeriteessenceID", name = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE, icon = app.asset("Category_AzeriteEssences") },
 			{ id = "speciesID", name = AUCTION_CATEGORY_BATTLE_PETS, icon = app.asset("Category_PetJournal") },
 			{ minBuild = 110100, id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
@@ -136,10 +137,6 @@ app:CreateWindow("Import", {
 			{ id = "spellID", name = SPELLS, icon = 135736 },
 			{ id = "titleID", name = PAPERDOLL_SIDEBAR_TITLES, icon = app.asset("Category_Titles") },
 		}
-
-		if app.GameBuildVersion >= 70000 then
-			tinsert(initialButtons, 3, { id = "artifactID", name = ITEM_QUALITY6_DESC, icon = app.asset("Weapon_Type_Artifact") });
-		end
 
 		for i = #initialButtons, 1, -1 do
 			local minBuild = initialButtons[i].minBuild;
@@ -178,10 +175,12 @@ app:CreateWindow("Import", {
 		end
 
 		function self:ResetToInitialButtons()
-			wipe(self.data.g)
+			local g = self.data.g
+			wipe(g)
 			for _, b in ipairs(initialButtons) do
-				tinsert(self.data.g, ImportButton(b.id, b.name, b.icon))
+				g[#g+1] = ImportButton(b.id, b.name, b.icon)
 			end
+			self.data.SortType = "text"
 			self:Rebuild()
 		end
 
