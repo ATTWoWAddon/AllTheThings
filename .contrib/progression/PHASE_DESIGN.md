@@ -4,6 +4,21 @@
 
 [Six dungeon and raid cases](#six-dungeon-and-raid-cases) · [Compare three Lua/JSON interfaces](#three-lua-and-json-authoring-options)
 
+## What to edit for a release change
+
+In the executable example, the six instances share **one authored schedule**. Each independently scheduled occurrence keeps its key in Lua. The JSON records the ordinary timing once and names only flavor exceptions. At P2.2 authors add these rules, P3 consumes them for progress output, and P4 reuses them. [Editable schedule](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/schedule.json) · [Edit and regenerate](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#change-one-opening)
+
+```json
+{
+  "raid.bwl.common": { "default": "vanilla.3", "sod": "vanilla.5" },
+  "raid.bwl.original": { "default": { "sameAs": "raid.bwl.common" }, "sod": "disabled" },
+  "raid.bwl.sod20": { "sod": { "sameAs": "raid.bwl.common" } },
+  "raid.bwl.draconic-for-dummies": "unknown"
+}
+```
+
+Moving the SoD opening takes one edit to `raid.bwl.common.sod`. The reworked raid follows its timing while keeping its own loot and prerequisites. Retail reads its ordinary source without a schedule. The sample generator prepares all three comparison formats from that schedule. The longer production profile examples below also specify metadata such as localized milestone names and numeric IDs for the production design.
+
 ## Raid availability at a glance
 
 In Season of Discovery (SoD), players get the reworked Molten Core (MC) in the phase 4 raid batch and the reworked Blackwing Lair (BWL) in phase 5. The original 40-player routes stay disabled at every viewed milestone.
@@ -199,12 +214,12 @@ SoD `content["gnomeregan.raid10"]` is `{ "windows": [{ "from": "vanilla.2" }] }`
 
 ## Three Lua and JSON authoring options
 
-All three options must give the same result for BWL. In SoD, original Nefarian's Ashkandi (`19364`) stays disabled and reworked Nefarian's Ashkandi (`230818`) opens at `vanilla.5`. Retail loads ordinary compatible BWL. The options change which file a maintainer edits and how the Parser finds the right occurrence. The full profiles in section 2b illustrate A. B and C are alternative input designs with proposed paths and fields. The choice is open.
+All three options must give the same result for BWL. In SoD, original Nefarian's Ashkandi (`19364`) stays disabled and reworked Nefarian's Ashkandi (`230818`) opens at `vanilla.5`. Retail loads ordinary compatible BWL. The options change which file a maintainer edits and how the Parser finds the right occurrence. The full profiles in section 2b describe A’s expanded Parser-side contract. The executable comparison prepares each interface from the shared authoring format above. B and C are alternative input designs with proposed paths and fields. The choice is open.
 
 | Author's question | A · Keys on Lua records | B · Named Lua source groups | C · One policy file per raid |
 | --- | --- | --- | --- |
 | Where do I add an ordinary boss drop? | Under the boss in the BWL Lua file. It inherits the boss or difficulty key. | In the selected original or reworked Lua fragment. It inherits that group's key. | Under the boss in BWL Lua. Its stable occurrence key links to the raid's JSON. |
-| How do I delay only the SoD rework? | Edit `raid.bwl.sod20` in `sod/main.json`. | Edit that group's window in `sod/main.json`. Keep the same selected groups and layouts. | Edit only the `sod:main` entry in the BWL policy file. |
+| How do I delay only the SoD rework? | Set the SoD value of `raid.bwl.sod20` in the shared schedule. | Same edit. Keep the same selected groups and layouts. | Same edit. The generator updates the SoD row in the BWL policy file. |
 | What happens when I add a flavor? | Review Lua applicability, then map all applicable keys in its profile. | Choose its source roots/layout before evaluation, then map all retained group and child keys in its profile. | Add the profile's milestone catalog and review a policy row in each applicable raid file. |
 | What is easiest to review? | One flavor's whole schedule in one place. Flat original owners can repeat the same key. | Complete loot groups and early exclusion of their dependencies. Maintaining separate files and layout composition costs more. | One raid across flavors side by side. Reviewing a whole flavor requires reading several raid files. |
 
@@ -302,7 +317,7 @@ C would require one reviewed policy input per participating raid, selected expli
 | Transition | What the maintainer actually changes |
 |---|---|
 | P1 → P2.1 | Add keys to the existing BWL records. Keep the phase calls and season guards. Three shorthand child lists become explicit `groups` so the headers can carry their own keys. [Complete annotated Lua](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p2.1/1.6%20Blackwing%20Lair.lua) |
-| P2.1 → P2.2 | Write the [SoD profile](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p2.2/profiles/sod/main.json) and the other profiles. The legacy path still supplies official output. |
+| P2.1 → P2.2 | Write the [BWL rules once](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/schedule.json) and generate the required profile views. The legacy path still supplies official output. |
 | P2.2 → P3 | Change `"stage": "P2.2"` to `"stage": "P3"` in the [migration control](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p3/migration.json). The complete [Lua](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) and four policy files stay byte-identical. Progress supplies the candidate result while the old writers serve the independent legacy golden. |
 | P3 → P4 | Retire the old writers and flavor guards. The complete option B candidate selects the [ordinary Classic](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/classic.lua), [SoD](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/sod.lua) or [Retail default](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/p4/retail.lua) source before evaluating it. Existing maps, quest prerequisites, item lists and intrinsic build conditions remain with their source. |
 
@@ -476,7 +491,7 @@ For each pending key, report its source location, enclosing source scope/variant
 
 ### P2.2: write the complete JSON files
 
-These are complete JSON documents: all required root fields, the full **ordered** milestone catalog for each chosen profile, and every BWL key shown in the source walkthrough. There are no omitted fields, comments or ellipses inside the JSON. Each file is written once in P2.2; P3 uses the same reviewed policy as authority, and P4 keeps that JSON while removing legacy Lua timing. A change of authority is not a new JSON lifecycle property.
+The expanded production-design profiles below show all required root fields, the full **ordered** milestone catalog for each chosen profile, and every BWL key shown in the source walkthrough. There are no omitted fields, comments or ellipses inside the JSON. In the compact authoring proposal the schedule is written once at P2.2. P3 uses the reviewed policy as authority and P4 keeps it while removing legacy Lua timing. A change of authority is not a new JSON lifecycle property.
 
 **Coverage boundary:** these documents completely author the illustrated BWL subset, not every unrelated ATT acquisition. The existing real configurations load much more than BWL. Applying the examples to a real `main.json` must retain/add all other content policies; replacing that production file with only these BWL entries would fail complete coverage. An isolated validation fixture may contain exactly the illustrated sources, but no new source-glob or currently runnable target is assumed here.
 
