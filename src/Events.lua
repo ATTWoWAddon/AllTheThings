@@ -460,6 +460,10 @@ local function HandleEvent(eventName, ...)
 	end
 	QueueSequenceEvents(eventName, useRunner)
 end
+-- Install bounded dispatch timing only with the optional developer tracker.
+if app.__perf then
+	HandleEvent = app.__perf.CaptureFunction(HandleEvent, "dispatch", "events", { module = "events", minLevel = 2 });
+end
 app.HandleEvent = HandleEvent
 -- Provides a unique function per EventName which can be used in a Callback without interfering with other Callback Events
 local CallbackEventFunctions = setmetatable({}, { __index = function(t, eventName)

@@ -224,6 +224,9 @@ local function SearchForLink(link)
 	-- otherwise use our custom search by kind
 	return SearchByKindLink(cleanlink)
 end
+if app.__perf then
+	SearchForLink = app.__perf.CaptureFunction(SearchForLink, "link", "search", { module = "search", minLevel = 1 });
+end
 app.SearchForLink = SearchForLink;
 
 local SourceSearcher
@@ -488,6 +491,10 @@ local function RunRecursiveFilterCriteria(groups)
 		end
 	end
 end
+if app.__perf then
+	BuildClonedHierarchy = app.__perf.CaptureFunction(BuildClonedHierarchy, "clone", "search", { module = "search", minLevel = 2 });
+	RunRecursiveFilterCriteria = app.__perf.CaptureFunction(RunRecursiveFilterCriteria, "recursive_filter", "search", { module = "search", minLevel = 3 });
+end
 -- Builds ClonedHierarchyGroups from the cached container using groups which match a particular key and value
 local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 	-- app.PrintDebug("BSR:Cached",value)
@@ -502,6 +509,9 @@ local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 			end
 		end
 	end
+end
+if app.__perf then
+	BuildSearchResponseViaCacheContainer = app.__perf.CaptureFunction(BuildSearchResponseViaCacheContainer, "cached", "search", { module = "search", minLevel = 2 });
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field
 function app:BuildSearchResponseRetailStyle(field, value, drop, criteria)
@@ -564,6 +574,9 @@ function app:BuildTargettedSearchResponse(groups, field, value, drop, criteria)
 	return ClonedHierarchyGroups;
 end
 
+if app.__perf then
+	app.BuildTargettedSearchResponse = app.__perf.CaptureFunction(app.BuildTargettedSearchResponse, "build", "search", { module = "search", minLevel = 1 });
+end
 -- Performs the internal logic of searching ATT for a given command/link and then navigating ATT's UI to show the results
 app.SearchAndOpen = function(search)
 	local results = SearchForLink(search)

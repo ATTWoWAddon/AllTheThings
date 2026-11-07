@@ -14,6 +14,10 @@ local PlayerHasToy
 -- WoW API Cache
 ---@type function
 local GetCurrencyInfo = app.WOWAPI.GetCurrencyInfo;
+if app.__perf then
+	GetCurrencyInfo = app.__perf.CaptureFunction(GetCurrencyInfo, "currencyinfo", "costs.api", { module = "costs", minLevel = 6 });
+end
+
 
 -- App locals
 ---@type function,function,function,function,function
@@ -21,6 +25,9 @@ local GetRawField, GetRelativeByFunc, GetRelativeRawWithField, SearchForObject, 
 	= app.GetRawField, app.GetRelativeByFunc, app.GetRelativeRawWithField, app.SearchForObject, app.IsComplete
 ---@type function
 local GetItemCount = app.WOWAPI.GetItemCount
+if app.__perf then
+	GetItemCount = app.__perf.CaptureFunction(GetItemCount, "itemcount", "costs.api", { module = "costs", minLevel = 6 });
+end
 ---@type function,function,function,
 local IsSpellKnownHelper, CreateObject, FillGroups
 
@@ -125,6 +132,9 @@ local function CheckCollectible(ref, costid)
 			return CheckCollectible(clone, costid)
 		end
 	end
+end
+if app.__perf then
+	CheckCollectible = app.__perf.CaptureFunction(CheckCollectible, "collectible", "costs", { module = "costs", minLevel = 2 });
 end
 app.CheckCollectible = CheckCollectible;
 local ItemUnboundSetting, Filters_ItemUnbound
@@ -240,6 +250,9 @@ local function SetCostTotals(costs, isCost, refresh, costID, isOwnedCost, chainU
 	if chainUpdate then
 		UpdateRunner.Run(app.UpdateRawGroups, costs)
 	end
+end
+if app.__perf then
+	SetCostTotals = app.__perf.CaptureFunction(SetCostTotals, "totals", "costs.assign", { module = "costs", minLevel = 3 });
 end
 local function DoCollectibleCheckForItemRef(ref, itemID, itemUnbound)
 	-- Depth = 0
@@ -415,6 +428,14 @@ local function FinishCostAssignmentsForSpell(spellID, costs, refresh, chainUpdat
 	SetCostTotals(costs, isProv, refresh, spellID, chainUpdate)
 end
 
+if app.__perf then
+	DoCollectibleCheckForItemRef = app.__perf.CaptureFunction(DoCollectibleCheckForItemRef, "item", "costs.refs", { module = "costs", minLevel = 3 });
+	DoCollectibleCheckForCurrRef = app.__perf.CaptureFunction(DoCollectibleCheckForCurrRef, "currency", "costs.refs", { module = "costs", minLevel = 3 });
+	DoCollectibleCheckForSpellRef = app.__perf.CaptureFunction(DoCollectibleCheckForSpellRef, "spell", "costs.refs", { module = "costs", minLevel = 3 });
+	FinishCostAssignmentsForItem = app.__perf.CaptureFunction(FinishCostAssignmentsForItem, "item", "costs.assign", { module = "costs", minLevel = 2 });
+	FinishCostAssignmentsForCurr = app.__perf.CaptureFunction(FinishCostAssignmentsForCurr, "currency", "costs.assign", { module = "costs", minLevel = 2 });
+	FinishCostAssignmentsForSpell = app.__perf.CaptureFunction(FinishCostAssignmentsForSpell, "spell", "costs.assign", { module = "costs", minLevel = 2 });
+end
 ---@type function
 local UpdateCostGroup
 local function UpdateCostsByItemID(itemID, refresh, chainUpdate, refs)
@@ -513,6 +534,12 @@ local function UpdateCosts()
 	end
 end
 
+if app.__perf then
+	UpdateCostsByItemID = app.__perf.CaptureFunction(UpdateCostsByItemID, "item", "costs.update", { module = "costs", minLevel = 2 });
+	UpdateCostsByCurrencyID = app.__perf.CaptureFunction(UpdateCostsByCurrencyID, "currency", "costs.update", { module = "costs", minLevel = 2 });
+	UpdateCostsBySpellID = app.__perf.CaptureFunction(UpdateCostsBySpellID, "spell", "costs.update", { module = "costs", minLevel = 2 });
+	UpdateCosts = app.__perf.CaptureFunction(UpdateCosts, "refresh", "costs.queue", { module = "costs", minLevel = 1 });
+end
 local UpdateCostTypeFunc = setmetatable({
 	i = UpdateCostsByItemID,
 	c = UpdateCostsByCurrencyID,
@@ -599,6 +626,9 @@ UpdateCostGroup = function(c)
 	ReVerifyBlockedParent(c)
 	SendUpdatesToNextCostLinks(c, refresh)
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
+end
+if app.__perf then
+	UpdateCostGroup = app.__perf.CaptureFunction(UpdateCostGroup, "group", "costs.update", { module = "costs", minLevel = 1 });
 end
 app.AddEventHandler("OnSearchResultUpdate", UpdateCostGroup)
 
