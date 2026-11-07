@@ -22,6 +22,7 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 - Keep the complete commit subject at 50 characters or fewer, including the bracketed category, spaces, and final period.
 - Describe the actual content or code changes and their resulting behavior in the subject and body. Omit references to user instructions or the agent's workflow.
 - Describe detailed changes in the commit body, separated from the subject by a blank line.
+- When the commit body contains multiple points, format them as a bulleted list using `*` or `-`.
 
 Every commit containing AI-assisted work must end with exactly one `Assisted-by:` trailer on a single line. Include every contributing model on that line, separated by a comma and a space. End the trailer with an ASCII period after the final model name; the period is punctuation, not part of a model name.
 
