@@ -522,7 +522,12 @@ i(18423,{b=1,lvl=60,r=2}),
 i(18422,{b=1,lvl=60,r=1}),
 i(18705,{b=1,c={3},lvl=60}),
 i(17966,{b=1,f=113})})}}),
-inst(78793,{awp=16001,icon=409547,lvl=48}),
+inst(2994,{awp=16001,icon=409547,lvl=48,zoneTextAreaID=16620,g={
+e(3410,{npcID=255997}),
+e(3418,{npcID=257016}),
+e(3415,{npcID=256236}),
+e(3409,{npcID=255702,g={
+crit(116057,{achID=62033,awp=16001,id=5})}})}}),
 inst(227,{coords={
 [1440]={{14,11.1}}},icon=136325,lore="Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",lvl=19,mapID=221,zoneTextAreaID=719,g={
 h(-63,{
@@ -633,7 +638,15 @@ s(158721,6910,{f=4,loc=46}),
 s(158722,6911,{f=5,loc=45}),
 s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
-inst(78794,{awp=16001,icon=409547,lvl=55}),
+inst(2974,{awp=16001,icon=409547,lvl=55,zoneTextAreaID=16554,g={
+e(3315,{npcID=247195}),
+e(3316,{npcID=247206}),
+e(3327,{npcID=247209}),
+e(3322,{npcID=247198}),
+e(3334,{npcID=247234,g={
+crit(116055,{achID=62033,awp=16001,id=8})}}),
+e(3323,{npcID=247207}),
+e(3336,{npcID=247231})}}),
 inst(228,{coords={
 [35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",icon=136326,lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,zoneTextAreaID=1584,g={
 h(-31,{
@@ -1994,7 +2007,7 @@ i(9326,{b=1,crs={6212},lvl=28}),
 s(159398,9489,{crs={6212,6220,6227,6230,6232,6233,6234,7603},f=27}),
 s(159396,9487,{crs={6206,6207,6211,6212,6220,6223,6230,6232,6233,6234,6329,6391,7603},f=31}),
 s(159400,9491,{f=4,loc=44}),
-s(159402,9508,{crs={6212,6223,6230,6232,6233,6234},f=4,loc=42}),
+s(159402,9508,{crs={6212,6223,6230,6232,6233,6234},f=4,learnedAt=75,loc=42,requireSkill=202}),
 s(159397,9488,{crs={6206,6207,6211,6212,6223,6225,6226,6227,6230,6232,6233,6234,6329,7603},f=23}),
 s(159403,9509,{crs={6206,6207,6212,6218,6220,6223,6227,6230,6232,6233,6234,6329,6391,7603},f=5,loc=46,spellID=1293003}),
 i(9309,{description="These can drop from any mechanical unit in Gnomeregan.",r=2}),
@@ -2191,7 +2204,13 @@ e(3496,{npcID=261319,g={
 s(305019,270260,{b=1,f=5,loc=46,lvl=13}),
 s(305018,270256,{b=1,f=21,lvl=13}),
 s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
-inst(78792,{awp=16001,icon=409547,lvl=40}),
+inst(3039,{awp=16001,icon=409547,lvl=40,zoneTextAreaID=16842,g={
+e(3450,{npcID=258966}),
+e(3452,{npcID=258972}),
+e(3453,{npcID=259281}),
+e(3449,{npcID=258964}),
+e(3451,{npcID=258968,g={
+crit(116052,{achID=62032,awp=16001,id=10})}})}}),
 inst(3109,{icon=409547,u=1,zoneTextAreaID=17191}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},icon=136345,lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
@@ -3575,7 +3594,7 @@ s(158051,5198,{b=1,f=27,lvl=17,spellID=1322312}),
 s(158050,5197,{b=1,f=23,lvl=16}),
 i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883}),
 r(1262978,{awp=16001,itemID=273102})})}}),
-inst(78791,{awp=16001,icon=409547,lvl=35,g={
+inst(2970,{awp=16001,icon=409547,lvl=35,zoneTextAreaID=16550,g={
 h(-45,{
 q(96774,{coords={
 [1412]={{32.4,20.6}}},qgs={264074},r=1,g={
@@ -3595,8 +3614,25 @@ qo(4,{providers={{"i",270311}}})}}),
 q(95776,{r=1,u=1,g={
 qo(1,{providers={{"n",258924}}}),
 s(311501,279889,{f=4,loc=41}),
-s(311502,279888,{f=5,loc=46})}})})}}),
-inst(78795,{awp=16001,icon=409547,lvl=58}),
+s(311502,279888,{f=5,loc=46})}})}),
+e(3474,{npcID=258905}),
+e(3475,{npcID=258924}),
+e(3476,{npcID=260042}),
+e(3478,{crs={260213,268478}}),
+e(3511,{npcID=273738}),
+e(3479,{crs={260243,260274}})}}),
+inst(3001,{awp=16001,icon=409547,lvl=58,zoneTextAreaID=16667,g={
+e(3498,{npcID=253201}),
+e(3499,{crs={253214,262688}}),
+e(3500,{npcID=261812}),
+e(3501,{npcID=261813}),
+e(3507,{npcID=262127}),
+e(3503,{npcID=261974}),
+e(3597,{npcID=262297}),
+e(3505,{npcID=262081}),
+e(3600,{npcID=272561}),
+e(3502,{npcID=261809,g={
+crit(116056,{achID=62033,awp=16001,id=17})}})}}),
 inst(238,{coords={
 [1453]={{51.6,69.4}}},icon=136358,lore="The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",lvl=15,mapID=225,zoneTextAreaID=717,zoneTextNames={"Stormwind Stockade"},g={
 h(-45,{
@@ -3959,7 +3995,7 @@ s(159336,9406,{crs={4844,4845,4846},f=5,loc=42}),
 s(159355,9427,{f=23}),
 s(159314,9384,{crs={4844,4845,4846},f=20}),
 s(159351,9423,{f=24}),
-s(159321,9391,{crs={4844,4845,4846},f=24}),
+s(159321,9391,{c={1},crs={4844,4845,4846},f=24}),
 s(159356,9428,{crs={4844,4845,4846},f=5,loc=43})}),
 h(-46,{
 n(7057,{description="This guy spawns outside of the instance in the cave leading to the instance.",g={

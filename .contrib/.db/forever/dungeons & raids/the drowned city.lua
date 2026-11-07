@@ -1,12 +1,11 @@
 -----------------------------------------------------
 --  D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-instanceroot(78791, {	-- The Drowned City
-	-- TODO: Placeholder instance ID. The Drowned City isn't in the client's Map/AreaTable/DungeonEncounter data yet (checked through build 1.60.1.70450).
+instanceroot(2970, {	-- The Drowned City
 	-- Blizzard lists it for levels 35-40.
 	--lore = "",
 	icon = 409547,
-	--zoneTextAreaID = ,	-- The Drowned City
+	zoneTextAreaID = 16550,	-- The Drowned City
 	--coord = { , MAP.STRANGLETHORN_VALE },	-- Entrance in a cavern in the Vile Reef (see Locating the Lost City).
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 35,
@@ -83,22 +82,29 @@ instanceroot(78791, {	-- The Drowned City
 				},
 			}),
 		}),
-		--[[
-		-- TODO: Encounter IDs aren't in DungeonEncounter yet. Known bosses:
-		--   Var'Taka (258924), the kill target for The Only Good Brinescale...
-		--   260274 (name unknown), the final boss credited for "The Drowned City" in Experienced Spelunker (62032 / 64017).
-		e(, {	-- Var'Taka
+		e(3474, {	-- Zul'Alai
+			creatureID = 258905,	-- Zul'Alai
+		}),
+		e(3475, {	-- Var'Taka
 			creatureID = 258924,	-- Var'Taka
-			groups = {
-				--i(),	-- 
+		}),
+		e(3476, {	-- Captain Dreadrise
+			creatureID = 260042,	-- Captain Dreadrise
+		}),
+		e(3478, {	-- Deathless Guardians
+			crs = {
+				260213,	-- Deathless Guardian
+				268478,	-- Deathless Guardian
 			},
 		}),
-		e(, {	-- 
-			creatureID = 260274,	-- 
-			groups = {
-				--i(),	-- 
+		e(3511, {	-- Primeval Elemental
+			creatureID = 273738,	-- Primeval Elemental
+		}),
+		e(3479, {	-- Min'loth the Serpent
+			crs = {
+				260243,	-- Min'loth the Serpent
+				260274,	-- Min'loth the Serpent
 			},
 		}),
-		]]--
 	},
 });

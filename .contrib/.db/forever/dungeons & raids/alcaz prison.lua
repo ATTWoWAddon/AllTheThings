@@ -1,12 +1,11 @@
 -----------------------------------------------------
 --  D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-instanceroot(78793, {	-- Alcaz Prison
-	-- TODO: Placeholder instance ID. The dungeon isn't in the client's Map/AreaTable/DungeonEncounter data yet (checked through build 1.60.1.70450).
+instanceroot(2994, {	-- Alcaz Prison
 	-- Blizzard lists it for levels 48-53.
 	--lore = "",
 	icon = 409547,
-	--zoneTextAreaID = ,	-- Alcaz Prison
+	zoneTextAreaID = 16620,	-- Alcaz Prison
 	--coord = { 75.6, 17.6, MAP.DUSTWALLOW_MARSH },	-- Alcaz Island; verify the entrance.
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 48,
@@ -14,15 +13,19 @@ instanceroot(78793, {	-- Alcaz Prison
 		n(QUESTS, {
 			
 		}),
-		--[[
-		-- TODO: Encounter IDs aren't in DungeonEncounter yet. Known bosses:
-		--   255702 (name unknown), the final boss credited for "Alcaz Prison" in Master Spelunker (62033 / 64018).
-		e(, {	-- 
-			creatureID = ,	-- 
-			groups = {
-				--i(),	-- 
-			},
+		-- TODO: Overseer Wrex's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.
+		--e(3403),	-- Overseer Wrex
+		e(3410, {	-- Tidemistress Ca'zass
+			creatureID = 255997,	-- Tidemistress Ca'zass
 		}),
-		]]--
+		e(3418, {	-- Katerina the Cleaner
+			creatureID = 257016,	-- Katerina the Cleaner
+		}),
+		e(3415, {	-- The Questioner
+			creatureID = 256236,	-- The Questioner
+		}),
+		e(3409, {	-- Blazeroar
+			creatureID = 255702,	-- Blazeroar
+		}),
 	},
 });

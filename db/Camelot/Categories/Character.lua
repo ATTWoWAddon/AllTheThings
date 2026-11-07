@@ -370,13 +370,9 @@ ach(62355,{awp=16001,g={
 crit(112672,{achID=62053,id=2})}}),
 ach(62382,{awp=16001}),
 ach(62032,{awp=16001,g={
-crit(116053,{achID=62032,id=4,providers={{"n",260274}}}),
-crit(116052,{achID=62032,id=10,providers={{"n",258968}}})}}),
+crit(116053,{achID=62032,id=4,providers={{"n",260274}}})}}),
 ach(62033,{awp=16001,g={
-crit(116057,{achID=62033,id=5,providers={{"n",255702}}}),
-crit(550,{achID=62033,id=12,providers={{"n",10813}}}),
-crit(116056,{achID=62033,id=17,providers={{"n",261809}}}),
-crit(116055,{achID=62033,id=8,providers={{"n",247234}}})}}),
+crit(550,{achID=62033,id=12,providers={{"n",10813}}})}}),
 ach(62031,{awp=16001}),
 ach(64283,{awp=16001})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
