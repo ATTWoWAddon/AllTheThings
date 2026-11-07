@@ -2186,9 +2186,6 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				cr = 1166,	-- Stonesplinter Seer
 			})),
 			-- #endif
-			-- #if BEFORE 4.0.3
-			i(769),	-- Chunk of Boar Meat
-			-- #endif
 			i(2823, {	-- Mo'grosh Can Opener
 				coords = {
 					-- #if AFTER 10.1.7

@@ -4100,9 +4100,6 @@ maproot(KALIMDOR, DUROTAR, {
 				coord = { 59.6, 58.2, DUROTAR },
 				timeline = { DELETED_4_0_3 },
 			}),
-			-- #if BEFORE 4.0.3
-			i(769),	-- Chunk of Boar Meat
-			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(207590, {	-- Durotar Pig Meat
 				timeline = { REMOVED_2_0_1 },

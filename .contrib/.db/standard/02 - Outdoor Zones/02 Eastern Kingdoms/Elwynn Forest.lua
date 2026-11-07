@@ -3621,9 +3621,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 		})),
 		-- #endif
 		n(ZONE_DROPS, {
-			-- #if BEFORE CATA
-			i(769),	-- Chunk of Boar Meat
-			-- #endif
 			i(1307, {	-- Gold Pickup Schedule (QS!)
 				crs = {
 					-- #if AFTER CATA

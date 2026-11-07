@@ -4638,9 +4638,6 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			-- #if BEFORE 4.0.3
-			i(769),	-- Chunk of Boar Meat
-			-- #endif
 			i(2886, {	-- Crag Boar Rib
 				coords = {
 					{ 46.6, 59.8, DUN_MOROGH },

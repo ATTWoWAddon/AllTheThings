@@ -5029,13 +5029,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 41.6, 88.0, ELWYNN_FOREST },	-- The Maclyre Vineyards
 				{ 55.0, 27.3, WESTFALL },	-- Saldean's Farm
 				{ 54.2, 42.6, WESTFALL },
+				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
 				-- #if BEFORE 4.0.3
 				{ 37.0, 34.4, LOCH_MODAN },
-				{ 32.2, 71.0, REDRIDGE_MOUNTAINS },
 				-- #else
 				{ 56.3, 35.8, LOCH_MODAN },
 				-- #endif
 			},
+			-- #if AFTER 4.0.3
+			maps = { SILVERPINE_FOREST },
+			-- #endif
 			crs = {
 				1125,	-- Crag Boar
 				3099,	-- Dire Mottled Boar
@@ -5057,8 +5060,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1190,	-- Mountain Boar
 				390,	-- Porcine Entourage
 				-- #else
+				345,	-- Bellygrub
+				46575,	-- Darktusk Boar
+				50949,	-- Finn's Gambit
 				42357,	-- Hulking Goretusk
+				42504,	-- Mature Swine
 				44627,	-- Mudbelly Boar
+				50942,	-- Snoot the Rooter
+				42859,	-- Wild Mature Swine
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
 				208638,	-- Fyodi
