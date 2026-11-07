@@ -304,3 +304,6 @@ instanceroot(240, {	-- Wailing Caverns
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(3366),	-- The Glowing Shard - completed with quest 6981
+});
