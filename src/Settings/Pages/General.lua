@@ -791,7 +791,7 @@ function(self)
 	settings:UpdateMode(1)
 end)
 local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;
-if app.GameBuildVersion < 40000 then
+if app.GameBuildVersion < 40000 and not app.IsForever then
 	tooltip = tooltip .. "\n\n" .. L.UNOFFICIAL_SUPPORT_TOOLTIP;
 end
 if settings.ForceAccountWide.Transmog then
@@ -868,19 +868,19 @@ end
 local accwideCheckboxMounts =
 child:CreateAccountWideCheckbox("MOUNTS", "Mounts")
 	:AlignBelow(accwideCheckboxIllusions or accwideCheckboxHeirlooms or checkboxMainOnlyMode or accwideCheckboxTransmog, checkboxMainOnlyMode and accwideCheckboxTransmog)
-child:CreateTrackingCheckbox("MOUNTS", "Mounts", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
+child:CreateTrackingCheckbox("MOUNTS", "Mounts", app.IsForever or app.GameBuildVersion >= 30000)	-- Forever includes native collection support.
 	:AlignAfter(accwideCheckboxMounts)
 
 local accwideCheckboxBattlePets =
 child:CreateAccountWideCheckbox("BATTLE_PETS", "BattlePets")
 	:AlignBelow(accwideCheckboxMounts)
-child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath.
+child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets", app.IsForever or app.GameBuildVersion >= 30000)	-- Forever includes native collection support.
 	:AlignAfter(accwideCheckboxBattlePets)
 
 local accwideCheckboxToys =
 child:CreateAccountWideCheckbox("TOYS", "Toys")
 	:AlignBelow(accwideCheckboxBattlePets)
-child:CreateTrackingCheckbox("TOYS", "Toys", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
+child:CreateTrackingCheckbox("TOYS", "Toys", app.IsForever or app.GameBuildVersion >= 30000)	-- Forever includes native collection support.
 	:AlignAfter(accwideCheckboxToys)
 
 -- Campsites were added during The War Within
@@ -933,7 +933,7 @@ end
 
 local accwideCheckboxAchievements =
 child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
-child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements", app.GameBuildVersion >= 30000)	-- Official Support added with Wrath
+child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements", app.IsForever or app.GameBuildVersion >= 30000)	-- Forever includes native collection support.
 	:AlignAfter(accwideCheckboxAchievements)
 accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
 
