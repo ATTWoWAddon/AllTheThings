@@ -3596,11 +3596,11 @@ s(124425,11746,{b=1,f=7,loc=40,lvl=51,q=3}),
 s(132674,22275,{b=1,f=5,loc=47,lvl=51,q=3}),
 i(22400,{b=1,c={2,6},lvl=51,phase=15,q=3,rwp=50004}),
 i(22395,{b=1,c={2,7,11},lvl=51,phase=15,q=3,rwp=50004})}}),
-n(8929,{description="In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",sourceQuests={4003,4362},g={
-s(124963,12557,{awp=80100,b=1,f=7,loc=41,lvl=51,q=3,rwp=40003,u=2}),
-s(124960,12554,{awp=70302,b=1,f=4,loc=44,lvl=51,q=3,rwp=40003,u=2}),
-s(124962,12556,{awp=70302,b=1,f=4,loc=47,lvl=51,q=3,rwp=40003,u=2}),
-s(124959,12553,{awp=70302,b=1,f=5,loc=47,lvl=51,q=3,rwp=40003,u=2})}}),
+n(8929,{description="In order to be eligible for this loot, you need to have completed The Princess's Surprise or The Princess Saved?. Those quests were removed in 4.0.3, but characters who completed them before then still receive this loot.",sourceQuests={4004,4363},g={
+s(124963,12557,{awp=80100,b=1,f=7,loc=41,lvl=51,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(4363)or _.IsQuestFlaggedCompleted(4004)then	t.u=nil t.rwp=nil end	end,q=3,rwp=40003,u=2}),
+s(124960,12554,{awp=70302,b=1,f=4,loc=44,lvl=51,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(4363)or _.IsQuestFlaggedCompleted(4004)then	t.u=nil t.rwp=nil end	end,q=3,rwp=40003,u=2}),
+s(124962,12556,{awp=70302,b=1,f=4,loc=47,lvl=51,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(4363)or _.IsQuestFlaggedCompleted(4004)then	t.u=nil t.rwp=nil end	end,q=3,rwp=40003,u=2}),
+s(124959,12553,{awp=70302,b=1,f=5,loc=47,lvl=51,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(4363)or _.IsQuestFlaggedCompleted(4004)then	t.u=nil t.rwp=nil end	end,q=3,rwp=40003,u=2})}}),
 e(387,{npcID=9019,g={
 ach(642,{
 crit(3953,{achID=1283,awp=30002,id=1})}),

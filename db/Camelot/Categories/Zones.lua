@@ -1975,7 +1975,7 @@ q(1027,{coords={
 qo(1,{crs={3928},description="When you kill a slime, it can drop a Rusty Chest which can contain this item.",providers={{"i",5519},{"o",19021}}})}}),
 q(1028,{coords={
 [1440]={{53.5,46.3}}},lvl=18,qgs={3916},qis={5547},r=2,sourceQuests={1027},g={
-i(5462,{b=1,spellID=6405})}}),
+toy(5462,{b=1})}}),
 q(1055,{coords={
 [1440]={{56.38,49.24}}},lvl=18,providers={{"o",19024}},r=2,sourceQuests={1028}}),
 q(1029,{coords={
@@ -1994,7 +1994,7 @@ qo(2,{description="There's a trick to keep this item forever:\nBefore turning in
 s(158261,5815,{b=1,f=24}),
 s(163253,17046,{b=1,f=21}),
 i(1116,{b=1,f=52}),
-i(276242,{awp=16001,b=1,spellID=6405})}}),
+toy(276242,{awp=16001,b=1})}}),
 q(78093,{awp=16001,c={2},coords={
 [1440]={{89.4,77}}},lvl=22,providers={{"o",409315}},qis={209800},races={1,3},sourceQuests={78092},g={
 s(309944,277205,{b=1,f=3})}}),
@@ -10133,7 +10133,7 @@ i(270880,{b=1,spellID=1288298}),
 i(270881,{b=1,spellID=1288298}),
 i(270882,{b=1,spellID=1288298}),
 i(270883,{b=1,spellID=1288298}),
-i(270868,{b=1,spellID=1288261})}}),
+toy(270868,{b=1})}}),
 q(7812,{coords={
 [1455]={{74.1,48.1}}},cost={{"i",14047,20}},lvl=50,maxReputation={54,42000},qgs={14724},r=2,repeatable=1,sourceQuests={7811}}),
 q(7806,{coords={
@@ -12563,12 +12563,18 @@ prof(186,{
 o(2653,{learnedAt=75,requireSkill=186,g={
 i(4278,{requireSkill=186})}})})}),
 h(-45,{
+q(79677,{awp=16001,coords={
+[1417]={{57.6,74.6}}},lvl=26,maps={1424},qgs={217300},qis={283389},sourceQuests={79624},g={
+qo(1,{description="Drops from the wyverns north of Durnholde Keep in Hillsbrad Foothills.",providers={{"i",213526}}}),
+qo(2,{coords={
+[1417]={{21.3,84}}},providers={{"i",213527},{"o",422911}}})}}),
 q(96785,{awp=16001,c={4},coords={
 [1417]={{26.8,64.4}}},lvl=24,qgs={266847},qis={275706},g={
 qo(1,{coords={
 [1417]={{29.4,64.9}}},providers={{"i",275709},{"o",656405}}})}}),
 q(695,{coords={
 [1417]={{46.2,47.8}}},lvl=30,qgs={2788},qis={4529},r=2,sourceQuests={694}}),
+q(79624,{awp=16001,description="Bring the recipe to Skonk at 57.6, 74.6. The hidden path up to him starts at 57.3, 71.8.",lvl=32,qss={213422}}),
 q(696,{coords={
 [1417]={{46.65,47}}},lvl=30,qgs={2789},r=2,sourceQuests={695},g={
 qo(1,{coords={
@@ -12757,6 +12763,9 @@ q(669,{coords={
 [1417]={{32.2,81.4}}},lvl=35,maps={1434},qgs={2610},qis={4502},sourceQuests={668}}),
 q(670,{coords={
 [1434]={{27.2,77}}},lvl=35,qgs={2487},qis={4494},sourceQuests={669}}),
+q(79678,{awp=16001,coords={
+[1417]={{57.6,74.6}}},lvl=26,qgs={217300},sourceQuests={79677},g={
+s(195200,213105,{b=1,f=23,spellID=434488})}}),
 q(640,{coords={
 [1417]={{73.8,33.8}}},lvl=32,qgs={2703},r=1,sourceQuests={639},g={
 qo(1,{crs={2583,2584,2585},providers={{"i",4450}}})}}),
@@ -12922,6 +12931,7 @@ i(253711,{awp=16001,coords={
 [1417]={{67.8,79.4}}},crs={218032},lvl=30}),
 s(156928,2623,{coords={
 [1417]={{22.8,61.4}}},crs={2780,2781,2782},description="This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",f=4,loc=40}),
+i(213422,{awp=16001,description="Drops from ogres in Arathi Highlands."}),
 r(1244434,{awp=16001,coords={
 [1417]={{32.4,30.8}}},crs={2589},itemID=255723,learnedAt=175,requireSkill=129,skillID=2942}),
 i(1993,{crs={2567,2570},f=52,lvl=31}),

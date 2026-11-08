@@ -1020,8 +1020,8 @@ i(260804),
 i(260813)}),
 flt(102,{
 toy(17716),
-i(22728,{description="This might not be in the game, please @crieve if you craft it!",spellID=45440}),
-i(269900,{spellID=1286800})}),
+toy(22728,{description="This might not be in the game, please @crieve if you craft it!"}),
+toy(269900)}),
 flt(53,{
 i(16022,{f=53,lvl=50,requireSkill=202,spellID=19804}),
 i(7506,{f=53,requireSkill=202,spellID=8344}),
