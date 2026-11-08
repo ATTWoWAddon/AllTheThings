@@ -46,6 +46,14 @@ ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 	end
 end]];
 
+-- Princess Moira's loot was removed in 4.0.3, but characters who completed The Princess's Surprise or The Princess Saved? still receive it.
+local PRINCESS_MOIRA_LOOT_OnUpdate = [[function(t)
+	if _.IsQuestFlaggedCompleted(4363) or _.IsQuestFlaggedCompleted(4004) then
+		t.u = nil;
+		t.rwp = nil;
+	end
+end]];
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(228, {	-- Blackrock Depths
 		-- #if BEFORE MOP
@@ -3360,23 +3368,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				-- #if BEFORE 7.3.2
 				n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge> / Thaurissan High Priest
-					description = "In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue. (Removed in 4.0.3)",
+					description = "In order to be eligible for this loot, you need to have completed The Princess's Surprise or The Princess Saved?. Those quests were removed in 4.0.3, but characters who completed them before then still receive this loot.",
 					sourceQuests = {
-						4362,	-- The Fate of the Kingdom
-						4003,	-- The Royal Rescue
+						4363,	-- The Princess's Surprise
+						4004,	-- The Princess Saved?
 					},
 					groups = {
 						i(12557, {	-- Ebonsteel Spaulders
 							timeline = { REMOVED_4_0_3, ADDED_8_1_0 },
+							-- #if ANYCLASSIC
+							OnUpdate = PRINCESS_MOIRA_LOOT_OnUpdate,
+							-- #endif
 						}),
 						i(12554, {	-- Hands of the Exalted Herald
 							timeline = { REMOVED_4_0_3, ADDED_7_3_2 },
+							-- #if ANYCLASSIC
+							OnUpdate = PRINCESS_MOIRA_LOOT_OnUpdate,
+							-- #endif
 						}),
 						i(12556, {	-- High Priestess Boots
 							timeline = { REMOVED_4_0_3, ADDED_7_3_2 },
+							-- #if ANYCLASSIC
+							OnUpdate = PRINCESS_MOIRA_LOOT_OnUpdate,
+							-- #endif
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							timeline = { REMOVED_4_0_3, ADDED_7_3_2 },
+							-- #if ANYCLASSIC
+							OnUpdate = PRINCESS_MOIRA_LOOT_OnUpdate,
+							-- #endif
 						}),
 					},
 				}),
