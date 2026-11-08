@@ -1133,6 +1133,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(6097, {	-- Acolyte's Shirt
 			races_disp = { HUMAN, GNOME },
 		}),
+		i(6096, {	-- Apprentice's Shirt
+			description = "Starter Shirt for Gnome Mages.",
+			-- TODO: which other races' mages start with it.
+		}),
 		-- #endif
 		i(6125, {	-- Brawler's Harness
 			description = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",
