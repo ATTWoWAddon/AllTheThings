@@ -64,6 +64,22 @@ i(228502);	-- Piccolo of the Flaming Fire (Blizzard... Why did you duplicate thi
 i(276236);	-- Holstered Replica Ironforge Air Rifle
 i(289439);	-- Pouch of Violet Dust
 i(280740);	-- Shen'dorei Windwell
+i(269900);	-- Centaur Banner Deployment Device
+i(270868);	-- Dwarven Tradeskill Signpost
+i(270870);	-- Orcish Tradeskill Signpost
+i(276242);	-- Replica Dartol's Rod of Transformation
+i(276896);	-- Everlasting Silvermoon Shimmerwine
+i(288185);	-- Adventurer's Tent
+i(279471);	-- TODO: name (listed in Forever's Toy table)
+i(279519);	-- TODO: name (listed in Forever's Toy table)
+i(284164);	-- TODO: name (listed in Forever's Toy table)
+i(286203);	-- TODO: name (listed in Forever's Toy table)
+i(286573);	-- TODO: name (listed in Forever's Toy table)
+-- #if FOREVER
+-- Older items that Forever's Toy table lists as toys; gated so they stay items in the other flavours.
+i(5462);	-- Dartol's Rod of Transformation
+i(22728);	-- Steam Tonk Controller
+-- #endif
 
 -----------------
 -- PATCH 2.0.1 --
