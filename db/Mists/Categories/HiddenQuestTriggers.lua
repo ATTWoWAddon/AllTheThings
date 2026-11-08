@@ -27,6 +27,8 @@ hqt(10737)}}),
 inst(260,{savedInstanceID=547,g={
 hqt(11115)}}),
 m(12,{maps={1464},g={
+m(85,{maps={86},g={
+hqt(64033,{awp=20501,rwp=30400,u=2})}}),
 m(106,{petBattleLvl=3,g={
 hqt(9750)}})}}),
 m(1467,{
