@@ -1180,6 +1180,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 					}),
 				}),
 				n(QUESTS, {
+					q(32727, {	-- Contributed to Server Percentage Daily Tracking Quest
+						description = "Completed when you contribute to the Isle of Thunder's server-wide progress for the day.",
+						isDaily = true,
+					}),
 					q(32289),	-- Loot plans, kill boat captain
 					q(32723),	-- reuse me
 					q(32825),	-- Re-Use Me - triggers with HQT 'Choose Your Assignment' (questID 32720 & 32721)

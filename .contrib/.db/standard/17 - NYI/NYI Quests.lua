@@ -962,7 +962,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 5.2.0
 		expansion(EXPANSION.MOP, patch(2,0), {
 			q(32475, { name = "A Spark of Life", }),	-- A Spark of Life
-			q(32727, { name = "Contributed to Server Percentage Daily Tracking Quest", }),	-- Contributed to Server Percentage Daily Tracking Quest
 			q(32566, { name = "DEBUG: Eligible for All Quests", }),	-- DEBUG: Eligible for All Quests
 			q(32492, { name = "Destroy Cauldrons", }),	-- Destroy Cauldrons
 			q(32267, { name = "Destroy enemy portal near camp (streaming attackers, defended, enemy can use)", }),	-- Destroy enemy portal near camp (streaming attackers, defended, enemy can use)

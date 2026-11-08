@@ -651,7 +651,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 	prof(ENCHANTING, {
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			i(80433, {	-- Blood Spirit
-				description = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",
+				description = "Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of Endless Spring",
 			}),
 			i(74247),	-- Ethereal Shard
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(94289, {	-- Haunting Spirit
