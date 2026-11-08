@@ -3726,3 +3726,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(55296, {	-- Completed when turning in Chen's Empty Keg (2/3) (821)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
