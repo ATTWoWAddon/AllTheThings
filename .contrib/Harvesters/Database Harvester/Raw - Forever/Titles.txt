@@ -40,3 +40,5 @@
 38@@@%s of the Nightclaw
 39@@@%s the Harbinger of Darkness
 111@@@Bloodsail Admiral %s
+1.60.1.70862
+40@@@%s the Blacksmith

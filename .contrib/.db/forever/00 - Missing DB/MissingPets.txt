@@ -1,9 +1,5 @@
 1.60.1.69876
-pet(57),	-- Azure Whelpling
 pet(74),	-- Albino Snake
-pet(92),	-- Panda Cub
-pet(93),	-- Mini Diablo
-pet(94),	-- Zergling
 pet(107),	-- Murky
 pet(111),	-- White Baby Murloc
 pet(121),	-- Gurky
@@ -15,10 +11,8 @@ pet(757),	-- Tiny Green Dragon
 pet(758),	-- Tiny Red Dragon
 pet(1073),	-- Terky
 pet(1168),	-- Murki
-pet(1563),	-- Bronze Whelpling
 pet(1927),	-- White Tiger Cub
 pet(4172),	-- Cockatoo
-pet(4180),	-- Arctic Hare
 pet(4182),	-- Green Water Snake
 pet(4183),	-- Ribbon Snake
 pet(4184),	-- Scarlet Snake
@@ -29,11 +23,8 @@ pet(5008),	-- Mini Uber Diablo
 pet(5018),	-- Snowy Wolf Pup
 pet(5047),	-- Child of By'zaali
 pet(5069),	-- Wild Chicken
-pet(5094),	-- Bitter Baitling
-pet(5121),	-- Prairie Wolf Pup
 pet(5135),	-- Shadowgale Squirrel
 pet(5136),	-- Weevil K. Neevil
-pet(5138),	-- Pachimari
 pet(5139),	-- Galestrider Chick
 pet(5140),	-- Black Furbolg Pet
 pet(5141),	-- Brown Furbolg Pet
@@ -46,21 +37,23 @@ pet(5147),	-- Blue Ent Pet
 pet(5148),	-- Gray Ent Pet
 pet(5149),	-- Orange Ent Pet
 pet(5150),	-- Yellow Ent Pet
-pet(5151),	-- Plagued Cockroach
-pet(5152),	-- Undercity Cockroach
-pet(5153),	-- Jungle Boa
-pet(5154),	-- Brown Ground Squirrel
-pet(5155),	-- Red Ground Squirrel
-pet(5157),	-- Brown Rabbit
-pet(5159),	-- Panda Cub
-pet(5160),	-- Zergling
-pet(5161),	-- Mini Diablo
-pet(5167),	-- Condor Hatchling
-pet(5172),	-- Tallstrider Hatchling
 pet(5174),	-- Minfernal
 pet(5176),	-- Minimule
 1.60.1.70009
 pet(5183),	-- Spawn of Grubthor
+1.60.1.70245
+pet(5179),	-- Azurky
+1.60.1.70425
+pet(5200),	-- Viridian Lashling
+pet(5201),	-- Frosty Lashling
+pet(5202),	-- Wilted Lashling
+pet(5203),	-- Flowery Lashling
+1.60.1.70450
+pet(1248),	-- Blossoming Ancient
+pet(4630),	-- Gill'el
+pet(5080),	-- Pinky
+1.60.1.70862
+pet(5163),	-- Shen'dorei Wisp
 
 
 
@@ -69,7 +62,6 @@ Missing in PetDB.lua
 
 1.60.1.69876
 pet(4172),	-- Cockatoo
-pet(4180),	-- Arctic Hare
 pet(4182),	-- Green Water Snake
 pet(4183),	-- Ribbon Snake
 pet(4184),	-- Scarlet Snake
@@ -80,11 +72,8 @@ pet(5008),	-- Mini Uber Diablo
 pet(5018),	-- Snowy Wolf Pup
 pet(5047),	-- Child of By'zaali
 pet(5069),	-- Wild Chicken
-pet(5094),	-- Bitter Baitling
-pet(5121),	-- Prairie Wolf Pup
 pet(5135),	-- Shadowgale Squirrel
 pet(5136),	-- Weevil K. Neevil
-pet(5138),	-- Pachimari
 pet(5139),	-- Galestrider Chick
 pet(5140),	-- Black Furbolg Pet
 pet(5141),	-- Brown Furbolg Pet
@@ -97,18 +86,16 @@ pet(5147),	-- Blue Ent Pet
 pet(5148),	-- Gray Ent Pet
 pet(5149),	-- Orange Ent Pet
 pet(5150),	-- Yellow Ent Pet
-pet(5151),	-- Plagued Cockroach
-pet(5152),	-- Undercity Cockroach
-pet(5153),	-- Jungle Boa
-pet(5154),	-- Brown Ground Squirrel
-pet(5155),	-- Red Ground Squirrel
-pet(5157),	-- Brown Rabbit
-pet(5159),	-- Panda Cub
-pet(5160),	-- Zergling
-pet(5161),	-- Mini Diablo
-pet(5167),	-- Condor Hatchling
-pet(5172),	-- Tallstrider Hatchling
 pet(5174),	-- Minfernal
 pet(5176),	-- Minimule
 1.60.1.70009
 pet(5183),	-- Spawn of Grubthor
+1.60.1.70245
+pet(5179),	-- Azurky
+1.60.1.70425
+pet(5200),	-- Viridian Lashling
+pet(5201),	-- Frosty Lashling
+pet(5202),	-- Wilted Lashling
+pet(5203),	-- Flowery Lashling
+1.60.1.70862
+pet(5163),	-- Shen'dorei Wisp

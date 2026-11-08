@@ -61,7 +61,6 @@ i(537),	-- Dull Frenzy Scale
 i(555),	-- Rough Vulture Feathers
 i(556),	-- Buzzard Beak
 i(725),	-- Gnoll Paw
-i(730),	-- Murloc Eye
 i(734),	-- Deprecated Malakai's Medallion
 i(737),	-- Holy Spring Water
 i(738),	-- Sack of Barley
@@ -256,7 +255,6 @@ i(1186),	-- Deprecated Gnoll Taskmaster Whip
 i(1192),	-- Deprecated Overseer's Helm
 i(1193),	-- Banded Buckler
 i(1199),	-- Charged Soulstone
-i(1200),	-- Large Wooden Shield
 i(1212),	-- Gnoll Spittle
 i(1217),	-- Unknown Reward
 i(1221),	-- Underbelly Whelp Scale
@@ -324,8 +322,6 @@ i(1432),	-- Deprecated Patchwork Cloth Shoulderpads
 i(1435),	-- Deprecated Bridge Worker's Yoke
 i(1444),	-- Deprecated Inferno Stone
 i(1450),	-- Potion of Fervor
-i(1451),	-- Bottle of Zombie Juice
-i(1453),	-- Spectral Comb
 i(1464),	-- Buzzard Talon
 i(1467),	-- Spotted Sunfish
 i(1472),	-- Deprecated Polished Lakestone Charm
@@ -336,7 +332,6 @@ i(1487),	-- Conjured Pumpernickel
 i(1492),	-- Deprecated Recipe: Murloc Fin Soup
 i(1500),	-- Deprecated Calico Shoulderpads
 i(1508),	-- Deprecated Patched Leather Shoulderpads
-i(1518),	-- Ghost Hair Comb
 i(1519),	-- Bloodscalp Ear
 i(1520),	-- Troll Sweat
 i(1524),	-- Skullsplitter Tusk
@@ -358,7 +353,6 @@ i(1574),	-- Tome of Fire Ward
 i(1588),	-- Tablet of Molten Blast III
 i(1589),	-- Tablet of Spirit Armor III
 i(1591),	-- Tablet of Lightning Shield III
-i(1596),	-- Ghost Hair Thread
 i(1597),	-- Tablet of Lightning Storm
 i(1598),	-- Rot Blossom
 i(1599),	-- Deprecated [PH] Recipe: Zombie Juice
@@ -368,7 +362,6 @@ i(1619),	-- Tablet of Lightning Storm II
 i(1622),	-- Deprecated Foreman's Whip
 i(1623),	-- Raptor Skin Pouch
 i(1630),	-- Broken Electro-lantern
-i(1637),	-- Letter to Ello
 i(1638),	-- Deprecated Thornstone Chunk
 i(1641),	-- Codex of Shadow Word: Pain III
 i(1645),	-- Moonberry Juice
@@ -377,7 +370,6 @@ i(1649),	-- Deprecated Ham Sandwich
 i(1651),	-- Codex of Holy Word: Shield VI
 i(1654),	-- Deprecated Strangleslash Metal
 i(1655),	-- Deprecated Codex of Sustenance III
-i(1656),	-- Translated Letter
 i(1657),	-- Codex of Resurrection II
 i(1658),	-- Codex of Shadow Word: Pain IV
 i(1663),	-- Deprecated Stranglethorn Mine Map
@@ -436,7 +428,6 @@ i(1912),	-- Deprecated Reed Pipe
 i(1914),	-- Deprecated Miniature Silver Hammer
 i(1915),	-- Deprecated Bag of Teeth
 i(1918),	-- Deprecated Lockpick
-i(1922),	-- Supplies for Sven
 i(1923),	-- Ambassador's Satchel
 i(1924),	-- Deprecated Hollowed Wooden Tube
 i(1931),	-- Huge Gnoll Claw
@@ -476,19 +467,16 @@ i(2060),	-- Deprecated Chunk of Boar Meat
 i(2071),	-- Deprecated Mountain Spring Water
 i(2081),	-- Monster - Torch, Offhand
 i(2085),	-- Chunk of Flesh
-i(2101),	-- Light Quiver
 i(2102),	-- Small Ammo Pouch
 i(2103),	-- Test Arrow
 i(2104),	-- Deprecated Standard Shot
 i(2106),	-- Deprecated Worn Pants
 i(2107),	-- Deprecated Travel-worn Boots
-i(2113),	-- Calor's Note
 i(2115),	-- Deprecated Small White Pouch
 i(2128),	-- Scratched Claymore
 i(2133),	-- Small Shield
 i(2136),	-- Conjured Purified Water
 i(2147),	-- Monster - Sword, Falchion
-i(2161),	-- Book from Sven's Farm
 i(2162),	-- Sarah's Ring
 i(2170),	-- Deprecated Shield of the Spider Princess
 i(2176),	-- Monster - Staff, Ornate Priest Staff
@@ -511,7 +499,6 @@ i(2201),	-- Monster - Item, Vial Black
 i(2202),	-- Monster - Item, Mutton with Bite
 i(2206),	-- Deprecated Fine Pointed Dagger
 i(2239),	-- The Collector's Ring
-i(2250),	-- Dusky Crab Cakes
 i(2255),	-- Deprecated Thick Leather Gloves
 i(2275),	-- Deprecated Sentinel Coif
 i(2288),	-- Conjured Fresh Water
@@ -564,14 +551,10 @@ i(2500),	-- Light Hammer
 i(2501),	-- Wooden Warhammer
 i(2502),	-- Scuffed Dagger
 i(2503),	-- Adept Short Staff
-i(2512),	-- Rough Arrow
 i(2513),	-- Deprecated Iron Shot
 i(2514),	-- Depricated Sharp Arrow
-i(2515),	-- Sharp Arrow
-i(2516),	-- Light Shot
 i(2517),	-- Deprecated Standard Arrow
 i(2518),	-- Deprecated Solid Shot
-i(2519),	-- Heavy Shot
 i(2536),	-- Trogg Stone Tooth
 i(2550),	-- Monster - Bow, Short
 i(2551),	-- Monster - Crossbow
@@ -580,7 +563,6 @@ i(2554),	-- Deprecated Recipe: Elixir of Fortitude
 i(2557),	-- Monster - Mace2H, Ornate Metal Hammer
 i(2558),	-- Monster - Mace, Good Wooden Hammer
 i(2559),	-- Monster - Staff, Ornate Warlock Staff
-i(2560),	-- Jitters' Completed Journal
 i(2561),	-- Chok'sul's Head
 i(2573),	-- Deprecated Forest Silk Gloves
 i(2574),	-- Deprecated Trogg Vest
@@ -623,7 +605,6 @@ i(2708),	-- Monster - Item, Bouquet - White & Purple
 i(2709),	-- Monster - Item, Flower - Rose
 i(2710),	-- Monster - Item, Bouquet - Roses
 i(2711),	-- Monster - Dagger Badass
-i(2712),	-- Crate of Lightforge Ingots
 i(2714),	-- Monster - Item, Lantern - Square
 i(2715),	-- Monster - Item, Lantern - Round
 i(2716),	-- Monster - Item, Bottle - Green
@@ -685,7 +666,6 @@ i(2872),	-- Vicious Night Web Spider Venom
 i(2875),	-- Scarlet Insignia Ring
 i(2876),	-- Duskbat Pelt
 i(2884),	-- Monster - Dynamite, Lit
-i(2885),	-- Scarlet Crusade Documents
 i(2887),	-- Ruined Wolf Pelt
 i(2890),	-- Ruined Boar Pelt
 i(2891),	-- Letter to the City Architect
@@ -708,7 +688,6 @@ i(2932),	-- Torment Vine
 i(2939),	-- Crocolisk Tear
 i(2940),	-- Bloody Bear Paw
 i(2945),	-- (OLD)Medium Throwing Knife
-i(2946),	-- Balanced Throwing Dagger
 i(2948),	-- Deprecated Talisman of Cleansing
 i(2993),	-- Deprecated Inscribed Leather Helm
 i(2994),	-- Deprecated Seer's Monocle
@@ -726,16 +705,11 @@ i(3012),	-- Scroll of Agility
 i(3013),	-- Scroll of Protection
 i(3014),	-- Battleworn Axe
 i(3015),	-- Deprecated Chatter's Rock
-i(3016),	-- Gunther's Spellbook
-i(3017),	-- Sevren's Orders
 i(3028),	-- Longbow
 i(3029),	-- Depricated Whipwood Arrow
-i(3030),	-- Razor Arrow
 i(3031),	-- Depricated Razor Arrow
 i(3032),	-- Deprecated Impact Shot
-i(3033),	-- Solid Shot
 i(3034),	-- Deprecated BKP "Impact" Shot
-i(3035),	-- Laced Pumpkin
 i(3044),	-- OLDMonster - Mace, Standard Basic Offhand
 i(3046),	-- Deprecated Glinting Scale Crown
 i(3050),	-- Deprecated Winter Mail Leggings
@@ -750,7 +724,6 @@ i(3063),	-- Deprecated Deepwood Helm
 i(3064),	-- Deprecated Deepwood Pants
 i(3068),	-- Deprecated Silver-thread Cowl
 i(3077),	-- Deprecated Stonecloth Cowl
-i(3081),	-- Nether Gem
 i(3082),	-- Dargol's Skull
 i(3083),	-- Restabilization Cog
 i(3084),	-- Gyromechanic Gear
@@ -769,7 +742,6 @@ i(3099),	-- Tome of Ice Armor II
 i(3100),	-- Tome of Blizzard II
 i(3101),	-- Tome of Frost Nova III
 i(3102),	-- Tome of Arcane Intellect III
-i(3107),	-- Keen Throwing Knife
 i(3109),	-- (OLD)Wicked Throwing Dagger
 i(3110),	-- Tunnel Rat Ear
 i(3113),	-- Codex of Holy Word: Shield
@@ -789,13 +761,10 @@ i(3127),	-- Tablet of Shock III
 i(3128),	-- (OLD)Medium Throwing Axe
 i(3129),	-- Tablet of Lightning Bolt IV
 i(3130),	-- Tablet of Restoration IV
-i(3131),	-- Weighted Throwing Axe
 i(3132),	-- Tablet of Molten Blast IV
 i(3133),	-- Tablet of Mana Totem
 i(3134),	-- Grimoire of Curse of Mannoroth
-i(3135),	-- Sharp Throwing Axe
 i(3136),	-- (OLD)Heavy Throwing Axe
-i(3137),	-- Deadly Throwing Axe
 i(3138),	-- Grimoire of Shadow Bolt IV
 i(3139),	-- Grimoire of Demon Armor II
 i(3140),	-- Grimoire of Blood Boil II
@@ -815,7 +784,7 @@ i(3157),	-- Darksoul Shackle
 i(3159),	-- Deprecated Crusader's Mantle
 i(3162),	-- Notched Rib
 i(3163),	-- Blackened Skull
-i(3165),	-- Minor Quinn's Potion
+i(3164),	-- Discolored Worg Heart
 i(3167),	-- Thick Spider Hair
 i(3168),	-- Chipped Scale
 i(3169),	-- Chipped Bear Tooth
@@ -834,10 +803,7 @@ i(3219),	-- Deprecated Mantle of Nobility
 i(3221),	-- Deprecated Sage Mantle
 i(3226),	-- Deprecated Watchman Pauldrons
 i(3232),	-- Deprecated Drake-scale Leggings
-i(3234),	-- Deliah's Ring
 i(3236),	-- Rot Hide Ichor
-i(3237),	-- Sample Ichor
-i(3238),	-- Johaan's Findings
 i(3242),	-- OLDMonster - Chest, Plate Silver
 i(3243),	-- OLDMonster - Legs, Plate Silver
 i(3244),	-- OLDMonster - Feet, Plate Silver
@@ -845,8 +811,6 @@ i(3245),	-- OLDMonster - Hands, Plate Silver
 i(3246),	-- OLDMonster - Shoulder, Plate Silver
 i(3247),	-- OLDMonster - Waist, Plate Silver
 i(3249),	-- Conjured test Item
-i(3250),	-- Bethor's Scroll
-i(3252),	-- Deathstalker Report
 i(3253),	-- Grizzled Bear Heart
 i(3254),	-- Skittering Blood
 i(3255),	-- Berard's Journal
@@ -876,7 +840,6 @@ i(3348),	-- Giant Crocolisk Skin
 i(3349),	-- Sida's Bag
 i(3350),	-- Monster - Item, Bone
 i(3351),	-- Monster - Item, Rolling Pin
-i(3353),	-- Rune-inscribed Pendant
 i(3354),	-- Dalaran Pendant
 i(3361),	-- Monster - Mace, Spiked Heavy
 i(3362),	-- Monster - Item, Broom
@@ -905,15 +868,11 @@ i(3436),	-- Deprecated Quilted Mantle
 i(3438),	-- Ankh of Resurrection
 i(3441),	-- Deprecated Crippling Agent
 i(3459),	-- Deprecated Weathered Shoulderpads
-i(3460),	-- Johaan's Special Drink
 i(3467),	-- Dull Iron Key
-i(3468),	-- Renferrel's Findings
 i(3476),	-- Gray Bear Tongue
 i(3477),	-- Creeper Ichor
 i(3494),	-- Monster - Claw
-i(3495),	-- Elixir of Suffering
 i(3496),	-- Mountain Lion Blood
-i(3497),	-- Elixir of Pain
 i(3499),	-- Burnished Gold Key
 i(3500),	-- Deprecated Battered Lock
 i(3501),	-- Deprecated Rusted Lock
@@ -921,9 +880,7 @@ i(3502),	-- Mudsnout Blossoms
 i(3503),	-- Deprecated Forboding Document
 i(3504),	-- Deprecated Encrypted Letterr
 i(3505),	-- Alterac Signet Ring
-i(3506),	-- Mudsnout Composite
 i(3507),	-- Deprecated Test Fishliver Oil
-i(3508),	-- Mudsnout Mixture
 i(3509),	-- Daggerspine Scale
 i(3510),	-- Torn Fin Eye
 i(3513),	-- Deprecated Contract for the Magistrate
@@ -996,7 +953,6 @@ i(3648),	-- Warrior's Buckler
 i(3657),	-- Hillsbrad Town Registry
 i(3658),	-- Recovered Tome
 i(3659),	-- Worn Leather Book
-i(3660),	-- Tomes of Alterac
 i(3669),	-- Gelatinous Goo
 i(3670),	-- Large Slimy Bone
 i(3671),	-- Lifeless Skull
@@ -1021,7 +977,6 @@ i(3696),	-- Monster - Item, Vial Yellow
 i(3697),	-- Monster - Item, Potion Blue Offhand
 i(3698),	-- Monster - Item, Potion Green Offhand
 i(3699),	-- Monster - Item, Potion Red
-i(3701),	-- Darthalia's Sealed Commendation
 i(3702),	-- Bear Gall Bladder
 i(3704),	-- Rusted Iron Key
 i(3705),	-- Deprecated Rabid Fang
@@ -1031,10 +986,8 @@ i(3710),	-- Rod of Helcular
 i(3714),	-- Worn Stone Token
 i(3715),	-- Bracers of Earth Binding
 i(3716),	-- Murloc Head
-i(3717),	-- Sack of Murloc Heads
 i(3718),	-- Foreboding Plans
 i(3720),	-- Yeti Fur
-i(3721),	-- Farren's Report
 i(3722),	-- Familiar Hide
 i(3723),	-- Familiar Fang
 i(3724),	-- Familiar Claw
@@ -1768,7 +1721,6 @@ i(5435),	-- Shiny Dinglehopper
 i(5436),	-- Deprecated Pickpocket Undead 41-50
 i(5437),	-- Bathran's Hair
 i(5438),	-- OLDPlague Vials
-i(5439),	-- Small Quiver
 i(5440),	-- Bottle of Disease
 i(5441),	-- Small Shot Pouch
 i(5445),	-- Ring of Zoram
@@ -1781,9 +1733,7 @@ i(5451),	-- Crushed Elemental Bracer
 i(5453),	-- Deprecated Shattered Elemental Bracer
 i(5454),	-- Deprecated Split Elemental Bracer
 i(5455),	-- Divined Scroll
-i(5460),	-- Orendil's Cure
 i(5461),	-- Branch of Cenarius
-i(5463),	-- Glowing Gem
 i(5464),	-- Iron Shaft
 i(5475),	-- Wooden Key
 i(5481),	-- Satyr Horns
@@ -1793,7 +1743,6 @@ i(5493),	-- Elune's Tear
 i(5494),	-- Handful of Stardust
 i(5495),	-- Monster - Mace2H, Large Metal (1H, Special)
 i(5502),	-- Monster - Sword2H, Broadsword (1H, Special)
-i(5505),	-- Teronis' Journal
 i(5506),	-- Beady Eye Stalk
 i(5508),	-- Fallen Moonstone
 i(5509),	-- Healthstone
@@ -1817,11 +1766,9 @@ i(5535),	-- Compendium of the Fallen
 i(5536),	-- Mythology of the Titans
 i(5537),	-- Sarilus Foulborne's Head
 i(5538),	-- Vorrel's Wedding Ring
-i(5539),	-- Letter of Commendation
 i(5544),	-- Dal Bloodclaw's Skull
 i(5545),	-- Fast Test Polearm
 i(5546),	-- Fast Test Crossbow
-i(5547),	-- Reconstructed Rod
 i(5548),	-- Fast Test Bow
 i(5549),	-- Fast Test Dagger
 i(5550),	-- Fast Test Gun
@@ -1862,7 +1809,6 @@ i(5620),	-- Vial of Innocent Blood
 i(5621),	-- Tourmaline Phial
 i(5623),	-- Amethyst Phial
 i(5625),	-- Deprecated Band of the Order
-i(5628),	-- Zamah's Note
 i(5636),	-- Delicate Feather
 i(5638),	-- Toxic Fogger
 i(5639),	-- Filled Jade Phial
@@ -1934,7 +1880,6 @@ i(5713),	-- Tablet of Thunderbolt
 i(5714),	-- Tablet of Ensnaring Totem II
 i(5715),	-- Tablet of Lightning Storm III
 i(5716),	-- Tablet of Restoration VI
-i(5717),	-- Venture Co. Letters
 i(5718),	-- Venture Co. Engineering Plans
 i(5719),	-- Grimoire of Life Drain II
 i(5720),	-- Grimoire of Curse of Mannoroth II
@@ -1948,12 +1893,9 @@ i(5727),	-- Grimoire of Mana Funnel
 i(5728),	-- Grimoire of Rain of Fire II
 i(5729),	-- Grimoire of Fear III
 i(5730),	-- Book of Rejuvenation
-i(5733),	-- Unidentified Ore
 i(5734),	-- Super Reaper 6000 Blueprints
-i(5735),	-- Sealed Envelope
 i(5736),	-- Gerenzo's Mechanical Arm
 i(5737),	-- Covert Ops Plans: Alpha & Beta
-i(5738),	-- Covert Ops Pack
 i(5740),	-- Red Fireworks Rocket
 i(5741),	-- Rock Chip
 i(5745),	-- Monster - Trident, Wood Handle
@@ -1966,13 +1908,7 @@ i(5795),	-- Hardened Tortoise Shell
 i(5796),	-- Encrusted Tail Fin
 i(5797),	-- Indurium Flake
 i(5798),	-- Rocket Car Parts
-i(5799),	-- Kravel's Parts Order
-i(5800),	-- Kravel's Parts
-i(5802),	-- Delicate Car Parts
 i(5803),	-- Speck of Dream Dust
-i(5804),	-- Goblin Rumors
-i(5806),	-- Fool's Stout
-i(5807),	-- Fool's Stout Report
 i(5808),	-- Pridewing Venom Sac
 i(5809),	-- Highperch Venom Sac
 i(5811),	-- Frostmaw's Mane
@@ -1980,8 +1916,6 @@ i(5821),	-- Darkstalker Boots
 i(5822),	-- Hedgeseed Gauntlets
 i(5823),	-- Poisonous Mushroom
 i(5825),	-- Treshala's Pendant
-i(5826),	-- Kravel's Scheme
-i(5827),	-- Fizzle Brassbolts' Letter
 i(5828),	-- Ring of Uber Resists (TEST)
 i(5829),	-- Razor-sharp Beak
 i(5830),	-- Kenata's Head
@@ -1992,19 +1926,14 @@ i(5834),	-- Mok'Morokk's Snuff
 i(5835),	-- Mok'Morokk's Grog
 i(5836),	-- Mok'Morokk's Strongbox
 i(5837),	-- Steelsnap's Rib
-i(5838),	-- Kodo Skin Scroll
 i(5840),	-- Searing Tongue
 i(5841),	-- Searing Heart
 i(5842),	-- Unrefined Ore Sample
 i(5843),	-- Grenka's Claw
 i(5844),	-- Fragments of Rok'Alim
 i(5845),	-- Flank of Meat
-i(5846),	-- Korran's Sealed Note
 i(5847),	-- Mirefin Head
 i(5848),	-- Hollow Vulture Bone
-i(5849),	-- Crate of Crash Helmets
-i(5850),	-- Belgrom's Sealed Note
-i(5852),	-- Fuel Regulator Blueprints
 i(5853),	-- Intact Silithid Carapace
 i(5854),	-- Silithid Talon
 i(5855),	-- Silithid Heart
@@ -2014,18 +1943,14 @@ i(5858),	-- Goblin Prize Box
 i(5859),	-- Party Grenade
 i(5860),	-- Legacy of the Aspects
 i(5861),	-- Beginnings of the Undead Threat
-i(5862),	-- Seaforium Booster
 i(5863),	-- Guild Charter
-i(5865),	-- Modified Seaforium Booster
 i(5866),	-- Sample of Indurium Ore
-i(5868),	-- Filled Etched Phial
 i(5869),	-- Cloven Hoof
 i(5870),	-- Monster - Throwing Spear
 i(5871),	-- Large Hoof
 i(5874),	-- Harness: Black Ram
 i(5875),	-- Harness: Blue Ram
 i(5876),	-- Blueleaf Tuber
-i(5877),	-- Cracked Silithid Carapace
 i(5878),	-- Super Snuff
 i(5879),	-- Twilight Pendant
 i(5880),	-- Crate With Holes
@@ -2036,12 +1961,8 @@ i(5884),	-- Unpopped Darkmist Eye
 i(5896),	-- Theramore Guard Medallion UNUSED
 i(5897),	-- Snufflenose Owner's Manual
 i(5916),	-- Gnome Camera Key
-i(5917),	-- Spy's Report
-i(5918),	-- Defiant Orc Head
-i(5919),	-- Blackened Iron Shield
 i(5937),	-- Goblin Camera Key
 i(5938),	-- Pristine Crawler Leg
-i(5942),	-- Jeweled Pendant
 i(5945),	-- Deadmire's Tooth
 i(5949),	-- Scrap of Paper
 i(5950),	-- Reethe's Badge
@@ -2049,7 +1970,6 @@ i(5952),	-- Corrupted Brain Stem
 i(5953),	-- TEST SWORD
 i(5954),	-- TEST SWORD 2
 i(5959),	-- Acidic Venom Sac
-i(6016),	-- Wolf Heart Sample
 i(6036),	-- Rogue Test Dagger
 i(6065),	-- Khadgar's Essays on Dimensional Convergence
 i(6066),	-- Khan Dez'hepah's Head
@@ -2065,17 +1985,13 @@ i(6080),	-- Shadow Panther Heart
 i(6081),	-- Mire Lord Fungus
 i(6082),	-- Deepstrider Tumor
 i(6083),	-- Broken Tears
-i(6086),	-- Faustin's Truth Serum
 i(6088),	-- Monster - Torch, Ranged
-i(6089),	-- Zraedus's Brew
 i(6090),	-- OLDNoboru's Cudgel
-i(6091),	-- Crate of Power Stones
 i(6116),	-- Apprentice's Robe
 i(6130),	-- Trapper's Shirt
 i(6131),	-- Trapper's Pants
 i(6132),	-- Libram: Seal of Wisdom
 i(6133),	-- Libram: Seal of Fury
-i(6145),	-- Clarice's Pendant
 i(6146),	-- Sundried Driftwood
 i(6166),	-- Coyote Jawbone
 i(6168),	-- Sawtooth Snapper Claw
@@ -2083,13 +1999,11 @@ i(6169),	-- Unprepared Sawtooth Flank
 i(6170),	-- Wizards' Reagents
 i(6174),	-- Twain Random Sword
 i(6175),	-- Atal'ai Artifact
-i(6178),	-- Shipment to Nethergarde
 i(6182),	-- Dim Torch
 i(6183),	-- Unlit Poor Torch
 i(6184),	-- Monstrous Crawler Leg
 i(6190),	-- Draenethyst Shard
 i(6192),	-- Khan Hratha's Head
-i(6193),	-- Bundle of Atal'ai Artifacts
 i(6207),	-- PVP - Horde Tower Plans
 i(6208),	-- PVP - Alliance Tower Plans
 i(6209),	-- PVP - Horde Mine Deed
@@ -2110,7 +2024,6 @@ i(6236),	-- Monster - Item, Flower - Rose (White)
 i(6237),	-- Monster - Item, Flowers  - Boquet Roses (Black)
 i(6243),	-- Green Woolen Robe
 i(6244),	-- ggggfg
-i(6245),	-- Karnitol's Satchel
 i(6246),	-- Hatefury Claw
 i(6247),	-- Hatefury Horn
 i(6248),	-- Scorpashi Venom
@@ -2118,7 +2031,6 @@ i(6249),	-- Aged Kodo Hide
 i(6250),	-- Felhound Brain
 i(6251),	-- Nether Wing
 i(6252),	-- Doomwarder Blood
-i(6253),	-- Leftwitch's Package
 i(6254),	-- Monster - Shield, Ironforge
 i(6257),	-- Roc Gizzard
 i(6258),	-- Ironfur Liver
@@ -2135,7 +2047,6 @@ i(6283),	-- The Book of Ur
 i(6284),	-- Runes of Summoning
 i(6285),	-- Egalin's Grimoire
 i(6286),	-- Pure Hearts
-i(6287),	-- Atal'ai Tablet Fragment
 i(6288),	-- Atal'ai Tablet
 i(6293),	-- Dried Bat Blood
 i(6296),	-- Patch of Bat Hair
@@ -2313,7 +2224,6 @@ i(7209),	-- Tazan's Satchel
 i(7226),	-- Mage-tastic Gizmonitor
 i(7227),	-- Balnir Snapdragons
 i(7228),	-- Tigule's Strawberry Ice Cream
-i(7231),	-- Astor's Letter of Introduction
 i(7247),	-- Chest of Containment Coffers
 i(7248),	-- Twain TEST Cloak
 i(7249),	-- Charged Rift Gem
@@ -2330,7 +2240,6 @@ i(7275),	-- The Agamaggan Scrolls
 i(7291),	-- Infernal Orb
 i(7292),	-- Filled Containment Coffer
 i(7293),	-- Dalaran Mana Gem
-i(7294),	-- Andron's Ledger
 i(7295),	-- Tazan's Logbook
 i(7296),	-- Extinguished Torch
 i(7299),	-- Test - Magic Stone Helmet
@@ -2356,7 +2265,6 @@ i(7497),	-- Ivory Band
 i(7498),	-- Top of Gelkak's Key
 i(7499),	-- Middle of Gelkak's Key
 i(7500),	-- Bottom of Gelkak's Key
-i(7516),	-- Tabetha's Instructions
 i(7547),	-- Onyx Ring
 i(7548),	-- Onyx Choker
 i(7566),	-- Agamand Family Sword
@@ -2365,7 +2273,6 @@ i(7568),	-- Agamand Family Dagger
 i(7569),	-- Agamand Family Mace
 i(7586),	-- Tharnariun's Hope
 i(7612),	-- Monster - Axe, 2H Special NPC (Herod)
-i(7628),	-- Nondescript Letter
 i(7668),	-- Bloodstained Journal
 i(7675),	-- Defias Shipping Schedule
 i(7679),	-- Shrike Bat Fang
@@ -2384,7 +2291,6 @@ i(7769),	-- Filled Brown Waterskin
 i(7770),	-- Filled Blue Waterskin
 i(7771),	-- Filled Red Waterskin
 i(7809),	-- Easter Dress
-i(7811),	-- Remaining Drops of Purest Water
 i(7812),	-- Corrupt Manifestation's Bracers
 i(7826),	-- Monster - Staff, Special NPC (Whitemane)
 i(7846),	-- Crag Coyote Fang
@@ -2413,7 +2319,6 @@ i(8047),	-- Magenta Fungus Cap
 i(8048),	-- Emerald Dreamcatcher
 i(8049),	-- Gnarlpine Necklace
 i(8050),	-- Tallonkai's Jewel
-i(8051),	-- Flare Gun
 i(8052),	-- An'Alleum Power Stone
 i(8066),	-- Fizzule's Whistle
 i(8070),	-- Reward Voucher
@@ -2424,7 +2329,6 @@ i(8076),	-- Conjured Sweet Roll
 i(8077),	-- Conjured Mineral Water
 i(8078),	-- Conjured Sparkling Water
 i(8079),	-- Conjured Crystal Water
-i(8087),	-- Sample of Zanzil's Altered Mixture
 i(8088),	-- Platemail Belt
 i(8089),	-- Platemail Boots
 i(8090),	-- Platemail Bracers
@@ -2465,11 +2369,7 @@ i(8505),	-- Heavy Iron Lotterybox
 i(8506),	-- Mithril Lotterybox
 i(8507),	-- Heavy Mithril Lotterybox
 i(8508),	-- Large Fin
-i(8523),	-- Field Testing Kit
-i(8525),	-- Zinge's Purchase Order
 i(8526),	-- Violet Tragan
-i(8527),	-- Sealed Field Testing Kit
-i(8528),	-- Violet Powder
 i(8543),	-- Underwater Mushroom Cap
 i(8546),	-- Powerful Smelling Salts
 i(8547),	-- Formula: Powerful Smelling Salts
@@ -2481,15 +2381,12 @@ i(8587),	-- Centipaar Insect Parts
 i(8589),	-- Old Whistle of the Ivory Raptor
 i(8590),	-- Old Whistle of the Obsidian Raptor
 i(8593),	-- Scrimshank's Surveying Gear
-i(8594),	-- Insect Analysis Report
-i(8603),	-- Thistleshrub Dew
 i(8627),	-- Reins of the Night saber
 i(8628),	-- Reins of the Spotted Nightsaber
 i(8630),	-- Reins of the Bengal Tiger
 i(8633),	-- Reins of the Leopard
 i(8683),	-- Clara's Fresh Apple
 i(8684),	-- Hinterlands Honey Ripple
-i(8685),	-- Dran's Ripple Delivery
 i(8688),	-- Bind On Acquire Test Item
 i(8723),	-- Caliph Scorpidsting's Head
 i(8724),	-- Rin'ji's Secret
@@ -2906,10 +2803,8 @@ i(9237),	-- Woodpaw Gnoll Mane
 i(9238),	-- Uncracked Scarab Shell
 i(9242),	-- Ancient Tablet
 i(9244),	-- Stoley's Shipment
-i(9245),	-- Stoley's Bottle
 i(9246),	-- Firebeard's Head
 i(9247),	-- Hatecrest Naga Scale
-i(9248),	-- Mysterious Relic
 i(9254),	-- Cuergo's Treasure Map
 i(9261),	-- Lead Ore
 i(9263),	-- Troyas' Stave
@@ -2943,14 +2838,11 @@ i(9357),	-- A Parrot Skeleton
 i(9358),	-- A Head Rag
 i(9364),	-- Heavy Leaden Collection Phial
 i(9365),	-- High Potency Radioactive Fallout
-i(9368),	-- Jer'kai's Signet Ring
 i(9369),	-- Iridescent Sprite Darter Wing
 i(9370),	-- Gordunni Scroll
-i(9371),	-- Gordunni Orb
 i(9380),	-- Jang'thraze the Protector
 i(9417),	-- Archaedic Shard
 i(9421),	-- Major Healthstone
-i(9436),	-- Faranell's Parcel
 i(9437),	-- Untested Basilisk Sample
 i(9438),	-- Acceptable Scorpid Sample
 i(9439),	-- Untested Hyena Sample
@@ -2960,22 +2852,14 @@ i(9442),	-- Untested Scorpid Sample
 i(9443),	-- Used Monster Sample
 i(9451),	-- Bubbling Water
 i(9460),	-- Grimtotem Horn
-i(9462),	-- Crate of Grimtotem Horns
 i(9463),	-- Gordunni Cobalt
 i(9464),	-- Deprecated Orwin's Shovel
 i(9466),	-- Orwin's Shovel
-i(9468),	-- Sharpbeak's Feather
-i(9507),	-- A Carefully-packed Crate
 i(9528),	-- Edana's Dark Heart
 i(9529),	-- Internal Warrior Equipment Kit L25
 i(9532),	-- Internal Warrior Equipment Kit L30
 i(9537),	-- Neatly Wrapped Box
-i(9546),	-- Simple Scroll
-i(9559),	-- Encrypted Scroll
-i(9569),	-- Hallowed Scroll
 i(9572),	-- <UNUSED> Glyphic Rune
-i(9574),	-- Glyphic Scroll
-i(9578),	-- Tainted Scroll
 i(9589),	-- Encrusted Minerals
 i(9590),	-- Splintered Log
 i(9591),	-- Resilient Sinew
@@ -2990,8 +2874,6 @@ i(9618),	-- Wildkin Muisek Vessel
 i(9619),	-- Hippogryph Muisek Vessel
 i(9620),	-- Faerie Dragon Muisek Vessel
 i(9621),	-- Mountain Giant Muisek Vessel
-i(9628),	-- Neeru's Herb Pouch
-i(9629),	-- A Shrunken Head
 i(9659),	-- Monster - Mace, Tauren Spiked
 i(9685),	-- Will of the Mountain Giant
 i(9700),	-- Monster - Item, Sparkler Blue
@@ -2999,12 +2881,9 @@ i(9701),	-- Monster - Item, Sparkler Red
 i(9702),	-- Monster - Item, Sparkler White
 i(9888),	-- Deprecated Elven Protector
 i(10000),	-- Margol's Horn
-i(10005),	-- Margol's Gigantic Horn
-i(10022),	-- Proof of Deed
 i(10037),	-- DEPRECATED
 i(10049),	-- Diabolist's Blade
 i(10283),	-- Wolf Heart Samples
-i(10284),	-- Simple Flour
 i(10305),	-- Scroll of Protection IV
 i(10306),	-- Scroll of Spirit IV
 i(10307),	-- Scroll of Stamina IV
@@ -3030,10 +2909,6 @@ i(10478),	-- Roland's Mana Gem
 i(10509),	-- Heart of Flame
 i(10511),	-- Golem Oil
 i(10515),	-- Torch of Retribution
-i(10538),	-- Tablet of Beth'Amara
-i(10539),	-- Tablet of Jin'yael
-i(10540),	-- Tablet of Markri
-i(10541),	-- Tablet of Sael'hai
 i(10551),	-- Thorium Plated Dagger
 i(10552),	-- Symbol of Ragnaros
 i(10555),	-- Resist Test Item
@@ -3052,11 +2927,9 @@ i(10591),	-- Monster - Mace, Stormhammer
 i(10594),	-- [PH] Hakkar'i Urn
 i(10595),	-- Kum'isha's Junk
 i(10596),	-- Deprecated Rose Colored Goggles
-i(10597),	-- Head of Magus Rimtori
 i(10598),	-- Hetaera's Bloodied Head
 i(10599),	-- Hetaera's Beaten Head
 i(10600),	-- Hetaera's Bruised Head
-i(10610),	-- Hetaera's Blood
 i(10611),	-- Monster - Axe, Horde Badass 01
 i(10612),	-- Monster - Axe, Horde Badass 02
 i(10613),	-- Monster - Sword, Katana
@@ -3070,7 +2943,6 @@ i(10622),	-- Kadrak's Flag
 i(10639),	-- Hyacinth Mushroom
 i(10640),	-- Webwood Ichor
 i(10641),	-- Moonpetal Lily
-i(10643),	-- Sealed Letter to Ag'tor
 i(10647),	-- Engineer's Ink
 i(10648),	-- Blank Parchment
 i(10649),	-- Nightmare Shard
@@ -3078,10 +2950,6 @@ i(10650),	-- Plague-Infested Quilboar Mane
 i(10651),	-- Cracked Arcane Focusing Crystal
 i(10662),	-- Filled Egg of Hakkar
 i(10664),	-- A Note to Magus Rimtori
-i(10678),	-- Magatha's Note
-i(10679),	-- Andron's Note
-i(10680),	-- Jes'rimon's Note
-i(10681),	-- Xylem's Note
 i(10682),	-- Belnistrasz's Oathstone
 i(10683),	-- Explorer's Knapsack
 i(10684),	-- Colossal Parachute
@@ -3091,13 +2959,11 @@ i(10692),	-- Filled Vial Labeled #2
 i(10693),	-- Filled Vial Labeled #3
 i(10694),	-- Filled Vial Labeled #4
 i(10699),	-- Yeh'kinya's Bramble
-i(10712),	-- Cuely's Elixir
 i(10715),	-- Kim'Jael's Scope
 i(10717),	-- Kim'Jael's Compass
 i(10718),	-- Kim'Jael's Wizzlegoober
 i(10719),	-- Mobile Alarm
 i(10722),	-- Kim'Jael's Stuffed Chicken
-i(10738),	-- Shipment to Galvan
 i(10753),	-- Amulet of Grol
 i(10754),	-- Amulet of Sevine
 i(10755),	-- Amulet of Allistarj
@@ -3125,7 +2991,6 @@ i(11080),	-- Gor'tesh's Lopped Off Head
 i(11085),	-- Customer of the Month Coffer Key
 i(11087),	-- Monster - Sword2H, Ragglesnout X'Caliboar
 i(11099),	-- Dark Iron Ore
-i(11102),	-- Unhatched Sprite Darter Egg
 i(11104),	-- Large Compass
 i(11105),	-- Curled Map Parchment
 i(11106),	-- Lion-headed Key
@@ -3139,8 +3004,6 @@ i(11119),	-- Milly's Harvest
 i(11127),	-- Scavenged Goods
 i(11131),	-- Hive Wall Sample
 i(11132),	-- Unused Scraping Vial
-i(11133),	-- Linken's Training Sword
-i(11136),	-- Linken's Tempered Sword
 i(11141),	-- Bait
 i(11143),	-- Nugget Slug
 i(11149),	-- Samophlange Manual
@@ -3167,11 +3030,8 @@ i(11267),	-- Elemental Shard Sample
 i(11270),	-- Nixx's Signed Pledge
 i(11282),	-- Oglethorpe's Signed Pledge
 i(11283),	-- Overspark's Signed Pledge
-i(11284),	-- Accurate Slugs
-i(11285),	-- Jagged Arrow
 i(11286),	-- Thorium Shackles
 i(11314),	-- Monster - Claw Insect
-i(11316),	-- Bloodpetal
 i(11317),	-- Monster - Axe, 2H War C01 Blue Limited
 i(11319),	-- Unloaded Zapper
 i(11321),	-- Monster - Sword2H, Horde Massive
@@ -3179,7 +3039,6 @@ i(11322),	-- Monster - Sword2H, Horde Broad
 i(11323),	-- Monster - Sword2H, Horde Jagged
 i(11342),	-- Monster - Axe, 2H Pendulum of Doom
 i(11343),	-- Monster - Staff, Jeweled Red Staff
-i(11362),	-- Medium Quiver
 i(11363),	-- Medium Shot Pouch
 i(11364),	-- Tabard of Stormwind
 i(11365),	-- Monster - Staff, Badass Red Staff
@@ -3221,12 +3080,8 @@ i(11442),	-- Stormwind Deputy Kit
 i(11443),	-- Deprecated Grim Guzzler Boar
 i(11444),	-- Grim Guzzler Boar
 i(11446),	-- A Crumpled Up Note
-i(11462),	-- Discarded Knife
-i(11463),	-- Undelivered Parcel
-i(11466),	-- Raschal's Report
 i(11467),	-- Blackrock Medallion
 i(11470),	-- Tablet Transcript
-i(11471),	-- Fragile Sprite Darter Egg
 i(11472),	-- Silvermane Stalker Flank
 i(11473),	-- PX83-Enigmatron
 i(11476),	-- U'cha's Pelt
@@ -3243,7 +3098,6 @@ i(11508),	-- Gamemaster's Slippers
 i(11509),	-- Ravasaur Pheromone Gland
 i(11510),	-- Lar'korwi's Head
 i(11542),	-- Monster - Staff, Red Feathered
-i(11568),	-- Torwa's Pouch
 i(11569),	-- Preserved Threshadon Meat
 i(11570),	-- Preserved Pheromone Mixture
 i(11582),	-- Fel Salve
@@ -3287,7 +3141,6 @@ i(11837),	-- Gorishi Scent Gland
 i(11838),	-- Monster - Trident, Flame Wrath
 i(11844),	-- Pestlezugg's Un'Goro Report
 i(11885),	-- Shadowforge Torch
-i(11886),	-- Urgent Message
 i(11903),	-- Cat Carrier (Corrupted Kitten)
 i(11939),	-- Shiny Bracelet
 i(11940),	-- Sparkly Necklace
@@ -3297,7 +3150,6 @@ i(11943),	-- Deed to Thandol Span
 i(11947),	-- Filled Cursed Ooze Jar
 i(11949),	-- Filled Tainted Ooze Jar
 i(11954),	-- Filled Pure Sample Jar
-i(12060),	-- Shindrell's Note
 i(12063),	-- Monster - Trident, Wicked
 i(12064),	-- Gamemaster Hood
 i(12104),	-- Brindlethorn Tunic
@@ -3373,12 +3225,10 @@ i(12411),	-- Third Mosh'aru Tablet
 i(12412),	-- Fourth Mosh'aru Tablet
 i(12421),	-- Monster - Staff, White Jeweled
 i(12437),	-- Ridgewell's Crate
-i(12438),	-- Tinkee's Letter
 i(12440),	-- Magic Knucklebone (DND)
 i(12442),	-- Charm Pouch (DND)
 i(12443),	-- Knucklebone Pouch (DND)
 i(12444),	-- Uncracked Chillwind Horn
-i(12445),	-- Felnok's Package
 i(12446),	-- Anvilmar Musket
 i(12452),	-- Monster - Shield, Horde A02 Silver
 i(12453),	-- Monster - Shield, Horde A03 Triangle
@@ -3397,7 +3247,6 @@ i(12526),	-- TEST Challenge to Urok
 i(12530),	-- Spire Spider Egg
 i(12562),	-- Important Blackrock Documents
 i(12563),	-- Warlord Goretooth's Command
-i(12564),	-- Assassination Note
 i(12565),	-- Winna's Kitten Carrier
 i(12566),	-- Hardened Flasket
 i(12567),	-- Filled Flasket
@@ -3426,7 +3275,9 @@ i(12708),	-- Crossroads' Supply Crates
 i(12710),	-- Glowing Hunk of the Beast's Flesh
 i(12721),	-- Good Luck Half-Charm
 i(12723),	-- Good Luck Charm
-i(12724),	-- Janice's Parcel
+i(12725),	-- Plans: Enchanted Thorium Helm
+i(12726),	-- Plans: Enchanted Thorium Leggings
+i(12727),	-- Plans: Enchanted Thorium Breastplate
 i(12730),	-- Warosh's Scroll
 i(12732),	-- Incendia Agave
 i(12737),	-- Gloom Weed
@@ -3468,7 +3319,6 @@ i(12814),	-- Flame in a Bottle
 i(12815),	-- Beacon Torch
 i(12822),	-- Toxic Horror Droplet
 i(12829),	-- Winterfall Crate
-i(12842),	-- Crudely-written Log
 i(12847),	-- Soul Stained Pike
 i(12850),	-- Monster - Item, Bag - Black
 i(12851),	-- Monster - Item, Bag - Black Offhand
@@ -3509,8 +3359,6 @@ i(12900),	-- Annals of Darrowshire
 i(12901),	-- Monster - Mace2H, Golden Stone Hammer
 i(12902),	-- Monster - Sword2H, Luminous Evil Blade
 i(12904),	-- Shawn's Super Special Swami Hat
-i(12906),	-- Purified Moonwell Water
-i(12907),	-- Corrupt Moonwell Water
 i(12922),	-- Empty Canteen
 i(12923),	-- Awbee's Scale
 i(12924),	-- Ritual Candle
@@ -3579,7 +3427,6 @@ i(13194),	-- Felstone Field Cauldron Key
 i(13195),	-- Dalson's Tears Cauldron Key
 i(13196),	-- Gahrron's Withering Cauldron Key
 i(13197),	-- Writhing Haunt Cauldron Key
-i(13202),	-- Extended Annals of Darrowshire
 i(13207),	-- Shadow Lord Fel'dan's Head
 i(13214),	-- TestBoots - Puffed Mail Green
 i(13219),	-- Monster - Item, Holy Symbol Offhand
@@ -3614,7 +3461,6 @@ i(13338),	-- Monster - Staff, Feathered Invert
 i(13339),	-- Monster - Staff, Feathered Silver
 i(13341),	-- Monster - Item, Vial Yellow Offhand
 i(13343),	-- Pet Stone
-i(13347),	-- Crystal of Zin-Malor
 i(13362),	-- Letter from the Front
 i(13363),	-- Municipal Proclamation
 i(13364),	-- Ezra Grimm's Advertisement
@@ -3630,18 +3476,15 @@ i(13460),	-- Greater Holy Protection Potion
 i(13469),	-- Head of Weldon Barov
 i(13470),	-- Head of Alexi Barov
 i(13471),	-- The Deed to Brill
+i(13483),	-- Recipe: Transmute Fire to Earth
+i(13484),	-- Recipe: Transmute Earth to Water
 i(13500),	-- Recipe: Greater Holy Protection Potion
 i(13503),	-- Alchemist's Stone \\ Alchemists' Stone
 i(13504),	-- Monster - Sword, Doomguard
-i(13507),	-- Cliffwatcher Longhorn Report
 i(13517),	-- Recipe: Alchemist's Stone \\ Recipe: Alchemists' Stone
 i(13536),	-- Horn of Awakening
 i(13542),	-- Demon Box
 i(13543),	-- Krastinov's Bag of Horrors UNUSED
-i(13562),	-- Remains of Trey Lightforge
-i(13582),	-- Zergling Leash
-i(13583),	-- Panda Collar
-i(13584),	-- Diablo Stone
 i(13585),	-- Keepsake of Remembrance
 i(13586),	-- Test Crit Chest
 i(13602),	-- Greater Spellstone
@@ -3883,9 +3726,7 @@ i(14532),	-- Monster - Mace2H, Warhammer Jade
 i(14533),	-- Monster - Mace, Hammer Blue Mighty
 i(14534),	-- Monster - Axe, Metal Blue Badass
 i(14535),	-- Monster - Spear, Cool Blue
-i(14542),	-- Kravel's Crate
 i(14544),	-- Lieutenant's Insignia
-i(14546),	-- Roon's Kodo Horn
 i(14547),	-- Hand of Iruxos
 i(14550),	-- Bladebane Armguards
 i(14575),	-- Monster - Mace, Bashguud's Hammer
@@ -3949,14 +3790,14 @@ i(15002),	-- Nimboya's Pike
 i(15042),	-- Empty Termite Jar
 i(15043),	-- Plagueland Termites
 i(15044),	-- Barrel of Plagueland Termites
+i(15050),	-- Black Dragonscale Breastplate
+i(15064),	-- Warbear Harness
+i(15065),	-- Warbear Woolies
 i(15141),	-- Onyxia Scale Breastplate
 i(15208),	-- Cenarion Moondust
 i(15209),	-- Relic Bundle
 i(15292),	-- Green Kodo
 i(15293),	-- Teal Kodo
-i(15314),	-- Bundle of Relics
-i(15326),	-- Gleaming Throwing Axe
-i(15327),	-- Wicked Throwing Dagger
 i(15328),	-- Joseph's Key
 i(15409),	-- Refined Deeprock Salt
 i(15420),	-- Ironfeather
@@ -3965,16 +3806,15 @@ i(15460),	-- Monster - Gun, Shotgun
 i(15586),	-- Fast-growing Flower
 i(15688),	-- Magic Beans
 i(15696),	-- Ruined Tome
-i(15699),	-- Small Brown-wrapped Package
 i(15710),	-- Cenarion Lunardust
-i(15722),	-- Spraggle's Canteen
 i(15736),	-- Smokey's Special Compound
+i(15742),	-- Pattern: Warbear Harness
 i(15750),	-- Sceptre of Light
+i(15759),	-- Pattern: Black Dragonscale Breastplate
 i(15766),	-- Gem of the Serpent
 i(15767),	-- Hameya's Key
 i(15785),	-- Zaeldarr's Head
 i(15788),	-- Everlook Report
-i(15790),	-- Studies in Spirit Speaking
 i(15793),	-- A Chewed Bone
 i(15798),	-- Chipped Ogre Teeth
 i(15803),	-- Book of the Ancients
@@ -4078,23 +3918,15 @@ i(16185),	-- Test Arcane Resist Plate LockBox
 i(16186),	-- Test Arcane Resist Cloth LockBox
 i(16187),	-- Test Arcane Resist Leather LockBox
 i(16188),	-- Test Arcane Resist Mail LockBox
-i(16189),	-- Maggran's Reserve Letter
 i(16190),	-- Bloodfury Ripper's Remains
 i(16191),	-- Ornate Mirror
 i(16192),	-- Besseleth's Fang
 i(16205),	-- Gaea Seed
 i(16208),	-- Enchanted Gaea Seeds
-i(16209),	-- Podrig's Order
-i(16210),	-- Gordon's Crate
 i(16211),	-- Test Quality Modifier Chest
 i(16212),	-- TEST SWORD 3
 i(16213),	-- Test Quality Modifier Chest
 i(16263),	-- Laird's Response
-i(16282),	-- Bundle of Hides
-i(16283),	-- Ahanu's Leather Goods
-i(16303),	-- Ursangous's Paw
-i(16304),	-- Shadumbra's Head
-i(16305),	-- Sharptalon's Claw
 i(16308),	-- Northridge Crowbar
 i(16312),	-- Incendrites
 i(16313),	-- Felix's Chest
@@ -4128,7 +3960,6 @@ i(16404),	-- Knight-Captain's Plate Wristguards
 i(16405),	-- Knight-Lieutenant's Plate Boots
 i(16406),	-- Knight-Lieutenant's Plate Gauntlets
 i(16407),	-- Knight-Captain's Plate Girdle
-i(16408),	-- Befouled Water Globe
 i(16409),	-- Knight-Lieutenant's Lamellar Sabatons
 i(16410),	-- Knight-Lieutenant's Lamellar Gauntlets
 i(16411),	-- Knight-Captain's Lamellar Cinch
@@ -4217,13 +4048,11 @@ i(16742),	-- Warsong Saw Blades
 i(16743),	-- Logging Rope
 i(16744),	-- Warsong Oil
 i(16745),	-- Warsong Axe Shipment
-i(16746),	-- Warsong Report
 i(16747),	-- Broken Lock
 i(16748),	-- Padded Lining
 i(16763),	-- Warsong Runner Update
 i(16764),	-- Warsong Scout Update
 i(16765),	-- Warsong Outrider Update
-i(16783),	-- Bundle of Reports
 i(16784),	-- Sapphire of Aku'Mai
 i(16785),	-- Rexxar's Testament
 i(16790),	-- Damp Note
@@ -4245,12 +4074,19 @@ i(16972),	-- Karang's Banner
 i(16973),	-- Vial of Dire Water
 i(16974),	-- Empty Water Vial
 i(16976),	-- Murgut's Totem
+i(16982),	-- Corehound Boots
+i(16983),	-- Molten Helm
+i(16984),	-- Black Dragonscale Boots
+i(16989),	-- Fiery Chain Girdle
 i(16991),	-- Triage Bandage
 i(16999),	-- Royal Seal of Alexis
 i(17000),	-- Band of the Wraith
 i(17009),	-- Ambassador Malcin's Head
 i(17010),	-- Fiery Core
 i(17011),	-- Lava Core
+i(17013),	-- Dark Iron Leggings
+i(17015),	-- Dark Iron Reaver
+i(17016),	-- Dark Iron Destroyer
 i(17017),	-- Pattern: Flarecore Mantle
 i(17018),	-- Pattern: Flarecore Gloves
 i(17019),	-- Arcane Dust
@@ -4259,6 +4095,7 @@ i(17021),	-- Wild Berries
 i(17022),	-- Pattern: Corehound Boots
 i(17023),	-- Pattern: Molten Helm
 i(17024),	-- Wild Root
+i(17025),	-- Pattern: Black Dragonscale Boots
 i(17026),	-- Wild Thornroot
 i(17027),	-- Scented Candle
 i(17028),	-- Holy Candle
@@ -4274,15 +4111,20 @@ i(17037),	-- Hornbeam Seed
 i(17038),	-- Ironwood Seed
 i(17040),	-- Monster - Mace, Frying Pan
 i(17041),	-- Monster - Mace, Frying Pan w/ Eggs
+i(17049),	-- Plans: Fiery Chain Girdle
+i(17051),	-- Plans: Dark Iron Bracers
+i(17052),	-- Plans: Dark Iron Leggings
+i(17053),	-- Plans: Fiery Chain Shoulders
 i(17057),	-- Shiny Fish Scales
 i(17058),	-- Fish Oil
+i(17059),	-- Plans: Dark Iron Reaver
+i(17060),	-- Plans: Dark Iron Destroyer
 i(17073),	-- Earthshaker
 i(17111),	-- Blazefury Medallion
 i(17114),	-- Araj's Phylactery Shard
 i(17115),	-- Squirrel Token
 i(17116),	-- Squirrel Token
 i(17117),	-- Rat Catcher's Flute
-i(17118),	-- Carton of Mystery Meat
 i(17122),	-- ALEX BUG TEST ITEM
 i(17123),	-- Monster - Sword, Horde Troll
 i(17125),	-- Seal of Ravenholdt
@@ -4291,7 +4133,6 @@ i(17142),	-- Shard of the Defiler
 i(17162),	-- Eric Test Item A
 i(17163),	-- Eric Test Item B
 i(17182),	-- Sulfuras, Hand of Ragnaros
-i(17183),	-- Dented Buckler
 i(17185),	-- Round Buckler
 i(17193),	-- Sulfuron Hammer
 i(17195),	-- UNUSED ITEM
@@ -4319,11 +4160,9 @@ i(17333),	-- Aqual Quintessence
 i(17342),	-- JYoo Random Item Test
 i(17343),	-- Test Random Chest
 i(17345),	-- Silithid Goo
-i(17346),	-- Encrusted Silithid Object
 i(17347),	-- Syndicate Man Tracker (MURP)
 i(17353),	-- Stormpike Assault Orders
 i(17354),	-- Master Ryson's All Seeing Eye
-i(17355),	-- Rabine's Letter
 i(17362),	-- Ryson's Beacon
 i(17363),	-- Ryson's Beacon
 i(17364),	-- Scrying Scope
@@ -4388,6 +4227,7 @@ i(17756),	-- Shadowshard Fragment
 i(17758),	-- Amulet of Union
 i(17760),	-- Seed of Life
 i(17769),	-- Sagebrush Spaulders
+i(17771),	-- Elementium Bar
 i(17781),	-- The Pariah's Instructions
 i(17782),	-- Talisman of Binding Shard
 i(17783),	-- Talisman of Binding Fragment
@@ -4481,11 +4321,14 @@ i(18233),	-- Tear Stained Handkerchief
 i(18234),	-- Document from Boomstick Imports
 i(18236),	-- Gordok Chew Toy
 i(18237),	-- Mastiff Jawbone
+i(18251),	-- Core Armor Kit
 i(18252),	-- Pattern: Core Armor Kit
+i(18253),	-- Major Rejuvenation Potion
 i(18257),	-- Recipe: Major Rejuvenation Potion
 i(18259),	-- Formula: Enchant Weapon - Spell Power
 i(18260),	-- Formula: Enchant Weapon - Healing Power
 i(18262),	-- Elemental Sharpening Stone
+i(18263),	-- Flarecore Wraps
 i(18264),	-- Plans: Elemental Sharpening Stone
 i(18265),	-- Pattern: Flarecore Wraps
 i(18282),	-- Core Marksman Rifle
@@ -4500,9 +4343,33 @@ i(18300),	-- Hyjal Nectar
 i(18355),	-- Ferra's Collar
 i(18398),	-- Tidal Loop
 i(18399),	-- Ocean's Breeze
+i(18405),	-- Belt of the Archmage
+i(18407),	-- Felcloth Gloves
+i(18408),	-- Inferno Gloves
+i(18409),	-- Mooncloth Gloves
 i(18412),	-- Core Fragment
+i(18413),	-- Cloak of Warding
+i(18414),	-- Pattern: Belt of the Archmage
+i(18415),	-- Pattern: Felcloth Gloves
+i(18416),	-- Pattern: Inferno Gloves
+i(18417),	-- Pattern: Mooncloth Gloves
+i(18418),	-- Pattern: Cloak of Warding
 i(18419),	-- Monster - Axe, 2H Horde Red War Axe
+i(18486),	-- Mooncloth Robe
+i(18487),	-- Pattern: Mooncloth Robe
 i(18492),	-- Treated Ancient Blade
+i(18504),	-- Girdle of Insight
+i(18506),	-- Mongoose Boots
+i(18508),	-- Swift Flight Bracers
+i(18509),	-- Chromatic Cloak
+i(18510),	-- Hide of the Wild
+i(18511),	-- Shifting Cloak
+i(18514),	-- Pattern: Girdle of Insight
+i(18515),	-- Pattern: Mongoose Boots
+i(18516),	-- Pattern: Swift Flight Bracers
+i(18517),	-- Pattern: Chromatic Cloak
+i(18518),	-- Pattern: Hide of the Wild
+i(18519),	-- Pattern: Shifting Cloak
 i(18539),	-- Reliquary of Purity
 i(18540),	-- Sealed Reliquary of Purity
 i(18543),	-- Ring of Entropy
@@ -4516,7 +4383,7 @@ i(18583),	-- Warglaive of Azzinoth (Right)
 i(18584),	-- Warglaive of Azzinoth (Left)
 i(18589),	-- Dormant Wind Kissed Blade DEPRECATED
 i(18590),	-- Raging Beast's Blood
-i(18591),	-- Case of Blood
+i(18592),	-- Plans: Sulfuron Hammer
 i(18593),	-- Thorium Brotherhood Contract (OLD)
 i(18595),	-- Blood Opal
 i(18596),	-- Monster - Axe, Horde B01 Green
@@ -4529,22 +4396,23 @@ i(18624),	-- Flawless Fel Essence (Azshara)
 i(18625),	-- Kroshius' Infernal Core
 i(18626),	-- Fel Fire
 i(18627),	-- Gong of Dethmoora
+i(18628),	-- Thorium Brotherhood Contract
 i(18630),	-- Doomsday Flare
 i(18632),	-- Moonbrook Riot Taffy
 i(18633),	-- Styleen's Sour Suckerpop
 i(18635),	-- Bellara's Nutterbar
 i(18636),	-- Ruined Jumper Cables XL
+i(18637),	-- Major Recombobulator
 i(18642),	-- Jaina's Autograph
 i(18643),	-- Cairne's Hoofprint
 i(18644),	-- Monster - Staff, Ornate Jeweled Staff - Red Low Red Flame
 i(18646),	-- The Eye of Divinity
-i(18659),	-- Splinter of Nordrassil
+i(18655),	-- Schematic: Major Recombobulator
 i(18674),	-- Hardened Stone Band
 i(18675),	-- Military Ranks of the Horde & Alliance
 i(18678),	-- Tempestria's Frozen Necklace
 i(18679),	-- Frigid Ring
 i(18685),	-- Shadowy Potion OLD
-i(18688),	-- Imp in a Jar
 i(18703),	-- Ancient Petrified Leaf
 i(18708),	-- Petrified Bark
 i(18719),	-- The Traitor's Heart
@@ -4594,10 +4462,8 @@ i(18965),	-- Turtle Egg (Hawksbill)
 i(18966),	-- Turtle Egg (Leatherback)
 i(18967),	-- Turtle Egg (Olive)
 i(18968),	-- Ring of Critical Testing
-i(18969),	-- Pristine Yeti Hide
 i(18970),	-- Ring of Critical Testing 2
 i(18971),	-- Ring of Critical Testing 3
-i(18972),	-- Perfect Yeti Hide
 i(18982),	-- Ring of Critical Testing 4
 i(18983),	-- Monster - Sword, Longsword Exotic Black - Low Red Flame
 i(18985),	-- Monster - Sword, Long Silver - Green Pommel - High Black Glow
@@ -4619,19 +4485,26 @@ i(19016),	-- Vessel of Rebirth
 i(19017),	-- Essence of the Firelord
 i(19018),	-- Dormant Wind Kissed Blade
 i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
-i(19020),	-- Camp Mojache Zukk'ash Report
 i(19023),	-- Katoom's Best Lure
 i(19025),	-- Skylord Plume
 i(19033),	-- Slagtree's Lost Tools
 i(19034),	-- Lard's Lunch
 i(19036),	-- Final Message to the Wildhammer
 i(19043),	-- Heavy Timbermaw Belt
+i(19044),	-- Might of the Timbermaw
+i(19047),	-- Wisdom of the Timbermaw
+i(19048),	-- Heavy Timbermaw Boots
+i(19049),	-- Timbermaw Brawlers
+i(19050),	-- Mantle of the Timbermaw
 i(19051),	-- Girdle of the Dawn
+i(19052),	-- Dawn Treaders
 i(19053),	-- Monster - Item, Orb - A01 Blue
 i(19054),	-- Red Dragon Orb
 i(19055),	-- Green Dragon Orb
+i(19056),	-- Argent Boots
 i(19057),	-- Gloves of the Dawn
 i(19058),	-- Golden Mantle of the Dawn
+i(19059),	-- Argent Shoulders
 i(19060),	-- Warsong Gulch Enriched Ration
 i(19061),	-- Warsong Gulch Iron Ration
 i(19062),	-- Warsong Gulch Field Ration
@@ -4650,9 +4523,15 @@ i(19138),	-- Band of Sulfuras
 i(19140),	-- Cauterizing Band
 i(19147),	-- Ring of Spell Power
 i(19148),	-- Dark Iron Helm
+i(19149),	-- Lava Belt
+i(19156),	-- Flarecore Robe
+i(19157),	-- Chromatic Gauntlets
 i(19158),	-- TEST Sulfuras, Hand of Ragnaros
 i(19160),	-- Contest Winner's Tabard
+i(19162),	-- Corehound Belt
+i(19163),	-- Molten Belt
 i(19164),	-- Dark Iron Gauntlets
+i(19165),	-- Flarecore Leggings
 i(19166),	-- Black Amnesty
 i(19167),	-- Blackfury
 i(19168),	-- Blackguard
@@ -4677,6 +4556,7 @@ i(19198),	-- 3400 Test 2h Axe 63 blue
 i(19199),	-- 3500 Test 2h Axe 63 blue
 i(19200),	-- 3600 Test 2h Axe 63 blue
 i(19201),	-- 3700 Test 2h Axe 63 blue
+i(19202),	-- Pattern: Heavy Timbermaw Belt
 i(19203),	-- Plans: Girdle of the Dawn
 i(19205),	-- Plans: Gloves of the Dawn
 i(19206),	-- Plans: Dark Iron Helm
@@ -4688,10 +4568,15 @@ i(19211),	-- Plans: Blackguard
 i(19212),	-- Plans: Nightfall
 i(19213),	-- Silverwing Talisman of Merit
 i(19214),	-- Monster - Staff, Wooden Handle Spiral Head Dark
+i(19215),	-- Pattern: Wisdom of the Timbermaw
 i(19216),	-- Pattern: Argent Boots
 i(19217),	-- Pattern: Argent Shoulders
 i(19218),	-- Pattern: Mantle of the Timbermaw
+i(19219),	-- Pattern: Flarecore Robe
+i(19220),	-- Pattern: Flarecore Leggings
 i(19226),	-- Fast Test Fist
+i(19258),	-- Ace of Warlords
+i(19268),	-- Ace of Elementals
 i(19286),	-- Fast Test Ammo
 i(19287),	-- Darkmoon Card: Heroism
 i(19288),	-- Darkmoon Card: Blue Dragon
@@ -4700,7 +4585,10 @@ i(19290),	-- Darkmoon Card: Twisting Nether
 i(19313),	-- 1300 Test Dagger 63 blue
 i(19314),	-- 2000 Test Dagger 63 blue
 i(19322),	-- Warsong Mark of Honor
+i(19326),	-- Pattern: Might of the Timbermaw
+i(19327),	-- Pattern: Timbermaw Brawlers
 i(19328),	-- Pattern: Dawn Treaders
+i(19329),	-- Pattern: Golden Mantle of the Dawn
 i(19330),	-- Pattern: Lava Belt
 i(19331),	-- Pattern: Chromatic Gauntlets
 i(19332),	-- Pattern: Corehound Belt
@@ -4735,6 +4623,7 @@ i(19434),	-- Band of Dark Dominion
 i(19440),	-- Powerful Anti-Venom
 i(19442),	-- Formula: Powerful Anti-Venom
 i(19444),	-- Formula: Enchant Weapon - Strength
+i(19445),	-- Formula: Enchant Weapon - Agility
 i(19446),	-- Formula: Enchant Bracer - Mana Regeneration
 i(19447),	-- Formula: Enchant Bracer - Healing
 i(19448),	-- Formula: Enchant Weapon - Mighty Spirit
@@ -4792,6 +4681,14 @@ i(19622),	-- 1800 Test Dagger 63 blue
 i(19623),	-- Monster - Mace2H, Horde B01/B01 Orange
 i(19642),	-- iCoke Prize Voucher
 i(19662),	-- 3500 Test 2h Axe 80 purple
+i(19682),	-- Bloodvine Vest
+i(19683),	-- Bloodvine Leggings
+i(19684),	-- Bloodvine Boots
+i(19685),	-- Primal Batskin Jerkin
+i(19686),	-- Primal Batskin Gloves
+i(19687),	-- Primal Batskin Bracers
+i(19688),	-- Blood Tiger Breastplate
+i(19689),	-- Blood Tiger Shoulders
 i(19690),	-- Bloodsoul Breastplate
 i(19691),	-- Bloodsoul Shoulders
 i(19692),	-- Bloodsoul Gauntlets
@@ -5047,6 +4944,8 @@ i(20249),	-- 90 Green Warrior Pauldrons
 i(20250),	-- 90 Green Warrior Ring
 i(20251),	-- 90 Green Warrior Sabatons
 i(20252),	-- 90 Green Warrior Waistband
+i(20253),	-- Pattern: Warbear Harness
+i(20254),	-- Pattern: Warbear Woolies
 i(20256),	-- Warsong Gulch Ribbon of Sacrifice
 i(20267),	-- 90 Epic Rogue Belt
 i(20268),	-- 90 Epic Rogue Boots
@@ -5087,7 +4986,6 @@ i(20306),	-- 90 Green Rogue Pants
 i(20307),	-- 90 Green Rogue Ring
 i(20308),	-- 90 Green Rogue Spaulders
 i(20309),	-- 90 Green Rogue Tunic
-i(20310),	-- Flayed Demon Skin
 i(20311),	-- 63 Green Rogue Belt
 i(20312),	-- 63 Green Rogue Boots
 i(20313),	-- 63 Green Rogue Bow
@@ -5154,6 +5052,7 @@ i(20376),	-- Sand Skitterer Fang
 i(20377),	-- Rock Stalker Fang
 i(20378),	-- Twilight Tablet Fragment
 i(20379),	-- Noggle's Satchel
+i(20380),	-- Dreamscale Breastplate
 i(20381),	-- Dreamscale
 i(20383),	-- Head of the Broodlord Lashlayer
 i(20385),	-- Deathclasp's Pincer
@@ -5161,17 +5060,14 @@ i(20387),	-- Forsaken Stink Bomb Cluster
 i(20394),	-- Twilight Lexicon - Chapter 1
 i(20395),	-- Twilight Lexicon - Chapter 2
 i(20396),	-- Twilight Lexicon - Chapter 3
-i(20401),	-- Restored Twilight Tablet
 i(20402),	-- Agent of Nozdormu
 i(20403),	-- Proxy of Nozdormu
-i(20405),	-- Decoded Tablet Transcription
 i(20412),	-- Monster - Polearm, PVPAlliance_A01
 i(20415),	-- The War of the Shifting Sands
 i(20417),	-- Monster - Glaive - 2 Blade Silver (offhand)
 i(20423),	-- Sandy Scorpid Claw
 i(20445),	-- Test Defense Ring +120
 i(20446),	-- Test Defense Ring +80
-i(20453),	-- Geologist's Transcription Kit
 i(20454),	-- Hive'Zora Rubbing
 i(20455),	-- Hive'Ashi Rubbing
 i(20456),	-- Hive'Regal Rubbing
@@ -5179,15 +5075,19 @@ i(20457),	-- Hive'Ashi Silithid Brain
 i(20458),	-- Hive'Zora Silithid Brain
 i(20459),	-- Hive'Regal Silithid Brain
 i(20460),	-- Brann Bronzebeard's Lost Letter
-i(20461),	-- Brann Bronzebeard's Lost Letter
 i(20462),	-- Hallow's End Medallion
-i(20463),	-- Glyphed Crystal Prism
 i(20464),	-- Glyphs of Calling
 i(20465),	-- Crystal Unlocking Mechanism
 i(20466),	-- Vyral's Signet Ring
 i(20467),	-- Torn Recipe Page
 i(20468),	-- Monster - Item, Orb - A01 Green
 i(20475),	-- Soul Gem
+i(20476),	-- Sandstalker Bracers
+i(20477),	-- Sandstalker Gauntlets
+i(20478),	-- Sandstalker Breastplate
+i(20479),	-- Spitfire Breastplate
+i(20480),	-- Spitfire Gauntlets
+i(20481),	-- Spitfire Bracers
 i(20485),	-- Duke's Seal
 i(20487),	-- Lok'delar, Stave of the Ancient Keepers DEP
 i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
@@ -5202,13 +5102,18 @@ i(20496),	-- Darnassus Marzipan
 i(20497),	-- Thunder Bluff Marzipan
 i(20499),	-- Broken Silithid Chitin
 i(20502),	-- Ironbark Shield
-i(20516),	-- Bobbing Apple
 i(20519),	-- Southsea Pirate Hat
 i(20522),	-- Feral Staff
 i(20524),	-- Shadowhide Leggings
 i(20525),	-- Earthen Sigil
+i(20537),	-- Runed Stygian Boots
+i(20538),	-- Runed Stygian Leggings
+i(20539),	-- Runed Stygian Belt
 i(20541),	-- Decoded Twilight Text
 i(20545),	-- Decoded Twilight Text
+i(20546),	-- Pattern: Runed Stygian Leggings
+i(20547),	-- Pattern: Runed Stygian Boots
+i(20548),	-- Pattern: Runed Stygian Belt
 i(20549),	-- Darkrune Gauntlets
 i(20550),	-- Darkrune Breastplate
 i(20551),	-- Darkrune Helm
@@ -5239,7 +5144,6 @@ i(20605),	-- Rotten Eggs
 i(20609),	-- Voodoo Feathers
 i(20610),	-- Bloodshot Spider Eye
 i(20611),	-- Thick Black Claw
-i(20612),	-- Inert Scourgestone
 i(20613),	-- Rotting Wood
 i(20614),	-- Bloodvenom Essence
 i(20622),	-- Dragonheart Necklace
@@ -5272,8 +5176,6 @@ i(20737),	-- Singed Corestone
 i(20738),	-- Monster - Mace, Scepter of the Shifting Sands
 i(20739),	-- Deadwood Headdress Feather DEPRECATED
 i(20740),	-- Winterfall Spirit Beads DEPRECATED
-i(20741),	-- Deadwood Ritual Totem
-i(20742),	-- Winterfall Ritual Totem
 i(20747),	-- Lesser Mana Oil
 i(20748),	-- Brilliant Mana Oil
 i(20749),	-- Brilliant Wizard Oil
@@ -5282,12 +5184,14 @@ i(20754),	-- Formula: Lesser Mana Oil
 i(20755),	-- Formula: Wizard Oil
 i(20756),	-- Formula: Brilliant Wizard Oil
 i(20757),	-- Formula: Brilliant Mana Oil
+i(20761),	-- Recipe: Transmute Elemental Fire
 i(20763),	-- Broken Weapon
 i(20767),	-- Scum Covered Bag
 i(20770),	-- Bubbling Green Ichor
 i(20803),	-- Twilight Battle Orders
 i(20810),	-- Signed Field Duty Papers
 i(20814),	-- Master's Throwing Dagger
+i(20844),	-- Deadly Poison V
 i(20858),	-- Stone Scarab
 i(20859),	-- Gold Scarab
 i(20860),	-- Silver Scarab
@@ -5334,6 +5238,7 @@ i(20937),	-- Qiraji Encased Jewel
 i(20946),	-- Tactical Task Briefing III
 i(20949),	-- Magical Ledger
 i(20951),	-- Narain's Scrying Goggles
+i(21023),	-- Dirge's Kickin' Chimaerok Chops
 i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 i(21027),	-- Lakmaeran's Carcass
 i(21028),	-- 500 Pound Chicken
@@ -5449,6 +5354,7 @@ i(21273),	-- Blessed Qiraji Acolyte Staff
 i(21274),	-- Test Stackable Items
 i(21275),	-- Blessed Qiraji Augur Staff
 i(21276),	-- Blessed Qiraji Naturalist Staff UNUSED
+i(21278),	-- Stormshroud Gloves
 i(21279),	-- Tome of Fireball XII
 i(21280),	-- Tome of Arcane Missiles VIII
 i(21281),	-- Grimoire of Shadow Bolt X
@@ -5493,6 +5399,7 @@ i(21336),	-- Doomcaller's Trousers
 i(21337),	-- Doomcaller's Circlet
 i(21338),	-- Doomcaller's Footwraps
 i(21339),	-- Doomcaller's Handwraps [PH]
+i(21342),	-- Core Felcloth Bag
 i(21343),	-- Enigma Robes
 i(21344),	-- Enigma Boots
 i(21345),	-- Enigma Shoulderpads
@@ -5746,6 +5653,7 @@ i(21936),	-- Frozen Ectoplasm
 i(21937),	-- Scorched Ectoplasm
 i(21938),	-- Magma Core
 i(21984),	-- Left Piece of Lord Valthalak's Amulet
+i(21987),	-- Incendicite of Incendius
 i(22045),	-- Test QARaid Uber Ammo Lockbox
 i(22046),	-- Right Piece of Lord Valthalak's Amulet
 i(22048),	-- Lord Valthalak's Amulet
@@ -5781,6 +5689,8 @@ i(22197),	-- Heavy Obsidian Belt
 i(22198),	-- Jagged Obsidian Shield
 i(22199),	-- Monster - Axe, 2H Arcanite Reaper
 i(22201),	-- Reliquary of Purity
+i(22202),	-- Small Obsidian Shard
+i(22203),	-- Large Obsidian Shard
 i(22210),	-- Monster - Knuckle, B01 Red
 i(22211),	-- Monster - Knuckle, B01 Red Offhand
 i(22213),	-- Monster - Mace, Hand of Edward the Odd
@@ -5797,8 +5707,16 @@ i(22228),	-- Brilliant Sword of Zealotry
 i(22229),	-- Soul Ashes of the Banished
 i(22230),	-- Frightmaw Hide
 i(22233),	-- Zigris' Footlocker
+i(22248),	-- Enchanted Runecloth Bag
+i(22249),	-- Big Bag of Enchantment
+i(22251),	-- Cenarion Herb Bag
+i(22252),	-- Satchel of Cenarius
 i(22260),	-- Friendship Bracelet
 i(22273),	-- Moonshadow Hood
+i(22308),	-- Pattern: Enchanted Runecloth Bag
+i(22309),	-- Pattern: Big Bag of Enchantment
+i(22310),	-- Pattern: Cenarion Herb Bag
+i(22312),	-- Pattern: Satchel of Cenarius
 i(22316),	-- Test Relic
 i(22324),	-- Winter Kimchi
 i(22338),	-- Volcanic Ash
@@ -5842,6 +5760,7 @@ i(22388),	-- Plans: Titanic Leggings
 i(22389),	-- Plans: Sageblade
 i(22390),	-- Plans: Persuader
 i(22391),	-- Monster - Staff, Lord Valthalak
+i(22392),	-- Formula: Enchant 2H Weapon - Agility
 i(22393),	-- Codex: Prayer of Shadow Protection
 i(22396),	-- Totem of Life
 i(22399),	-- Idol of Health
@@ -5927,6 +5846,7 @@ i(22519),	-- Bindings of Faith
 i(22520),	-- The Phylactery of Kel'Thuzad
 i(22525),	-- Crypt Fiend Parts
 i(22527),	-- Core of Elements
+i(22528),	-- Dark Iron Scraps
 i(22529),	-- Savage Frond
 i(22589),	-- Atiesh, Greatstaff of the Guardian
 i(22593),	-- Writ of Safe Passage
@@ -5940,6 +5860,17 @@ i(22631),	-- Atiesh, Greatstaff of the Guardian
 i(22632),	-- Atiesh, Greatstaff of the Guardian
 i(22635),	-- Savage Guard
 i(22637),	-- Primal Hakkari Idol
+i(22652),	-- Glacial Vest
+i(22654),	-- Glacial Gloves
+i(22655),	-- Glacial Wrists
+i(22658),	-- Glacial Cloak
+i(22660),	-- Gaea's Embrace
+i(22661),	-- Polar Tunic
+i(22662),	-- Polar Gloves
+i(22663),	-- Polar Bracers
+i(22664),	-- Icy Scale Breastplate
+i(22665),	-- Icy Scale Bracers
+i(22666),	-- Icy Scale Gauntlets
 i(22669),	-- Icebane Breastplate
 i(22670),	-- Icebane Gauntlets
 i(22671),	-- Icebane Bracers
@@ -5967,9 +5898,16 @@ i(22737),	-- Atiesh, Greatstaff of the Guardian
 i(22738),	-- Monster - Sword, 1H Uber Demon Blade
 i(22739),	-- Tome of Polymorph: Turtle
 i(22754),	-- Eternal Quintessence
+i(22756),	-- Sylvan Vest
+i(22757),	-- Sylvan Crown
+i(22758),	-- Sylvan Shoulders
+i(22759),	-- Bramblewood Helm
+i(22760),	-- Bramblewood Boots
+i(22761),	-- Bramblewood Belt
 i(22765),	-- Mildewed Letter
 i(22772),	-- Pattern: Sylvan Shoulders
 i(22773),	-- Pattern: Sylvan Crown
+i(22774),	-- Pattern: Sylvan Vest
 i(22780),	-- White Murloc Egg
 i(22781),	-- Polar Bear Collar
 i(22805),	-- Naxxramas Sword 1H 1 [PH]
@@ -6084,7 +6022,6 @@ i(23224),	-- Summer Gift Package
 i(23227),	-- iCoke Gift Box Voucher
 i(23237),	-- Ring of the Eternal Flame
 i(23245),	-- [PH] Everburning Elixir
-i(23250),	-- Prismatic Shell
 i(23271),	-- QATest Darkmoon Faire Tickets
 i(23325),	-- [PH] Picnic Parcel
 i(23328),	-- Monster - Sword2H, Instructor Razuvious
@@ -6130,12 +6067,6 @@ i(24282),	-- Rogue's Diary
 i(24283),	-- An Antique Gun
 i(24358),	-- QATest +1000 Spell Dmg Ring
 i(33154),	-- Sinister Squashling
-i(34085),	-- Red Winter Clothes
-i(34086),	-- Winter Boots
-i(34087),	-- Green Winter Clothes
-i(34261),	-- Pattern: Green Winter Clothes
-i(34262),	-- Pattern: Winter Boots
-i(34319),	-- Pattern: Red Winter Clothes
 i(44803),	-- Spring Circlet
 i(46102),	-- Whistle of the Venomhide Ravasaur
 i(46362),	-- Venomhide Hatchling
@@ -6336,7 +6267,6 @@ i(207631),	-- Adder Pheromone
 i(207731),	-- Ominous Tome
 i(207732),	-- Makrura Leg
 i(207733),	-- Kul Tiran Skull
-i(207972),	-- The Lessons of Ta'zo
 i(207973),	-- Hound Jawbone
 i(207974),	-- Ominous Tome
 i(207975),	-- Severed Bat Head
@@ -6356,7 +6286,6 @@ i(208159),	-- Severed Troll Head
 i(208160),	-- Severed Wendigo Paw
 i(208180),	-- Rabbit Musk
 i(208183),	-- Apothecary Notes
-i(208185),	-- The Apothecary's Metaphysical Primer
 i(208192),	-- Dun Morogh Pig Meat
 i(208205),	-- Blackrat's Note
 i(208213),	-- Top-Right Map Piece
@@ -6404,7 +6333,6 @@ i(208773),	-- Fishing Harpoon
 i(208777),	-- Rune of the Sniper
 i(208778),	-- Rune of Quick Strike
 i(208799),	-- Spell Notes: Living Bomb
-i(208800),	-- Baxtan: On Destructive Magics
 i(208823),	-- Offering Coin
 i(208828),	-- Memory of a Broken Vow
 i(208833),	-- Malevolent Pie
@@ -6448,22 +6376,13 @@ i(209623),	-- Insignia of the Horde
 i(209624),	-- Insignia of the Horde
 i(209625),	-- Insignia of the Horde
 i(209626),	-- Insignia of the Horde
-i(209748),	-- Althalaxx Orb
 i(209778),	-- Summoner's Salt
 i(209779),	-- Mote of Mannoroth
-i(209800),	-- Orb Fragments
 i(209819),	-- Wyvern Taming Wand
 i(209836),	-- Althalaxx Orb
 i(209838),	-- Hypnotic Crystal
 i(209840),	-- Gnarled Wand of Wild Magic
 i(209841),	-- Wild Magic Essence
-i(209843),	-- Nar'thalas Almanac, Vol. 74
-i(209844),	-- The Dalaran Digest, Vol. 23
-i(209847),	-- Arcanic Systems Manual
-i(209848),	-- Goaz Scrolls
-i(209849),	-- Crimes Against Anatomy
-i(209850),	-- Runes of the Sorcerer-Kings
-i(209851),	-- Fury of the Land
 i(209852),	-- Rune of Kill Command
 i(209872),	-- Dragonslayer's Helm
 i(209873),	-- Dragonslayer's Shield
@@ -6480,7 +6399,6 @@ i(210080),	-- Voodoo Offering
 i(210137),	-- Rune of Wild Growth
 i(210138),	-- Dark Iron Ordinance
 i(210146),	-- Shredder Turbocharger
-i(210177),	-- Ataeric: On Arcane Curiosities
 i(210179),	-- Spell Notes: ILMEGAI SARRBES
 i(210183),	-- Horn of Xelthos
 i(210186),	-- Breaching Charge
@@ -6518,7 +6436,6 @@ i(210668),	-- Mote of Seismic Rage
 i(210708),	-- Elixir of Coalesced Regret
 i(210709),	-- Recipe: Elixir of Coalesced Regret
 i(210712),	-- Elixir of Insight
-i(210713),	-- Tortured Soul
 i(210724),	-- Hirzek's Staff
 i(210746),	-- Rune of Earth Shield
 i(210763),	-- Bough of Altek
@@ -6650,7 +6567,6 @@ i(212561),	-- Rune of Burning Darkness
 i(212562),	-- Rune of Healing Rage
 i(212568),	-- Wolfshead Trophy
 i(212748),	-- Tattered Note
-i(212792),	-- Eye of the Tempest
 i(213074),	-- Rune of Nourishing
 i(213086),	-- Rune of the Storm
 i(213090),	-- Rune of Synergy
@@ -6693,7 +6609,6 @@ i(213141),	-- Rune of Hope
 i(213142),	-- Prophecy of Imprisoned Malice
 i(213143),	-- Apocryphal Epiphany
 i(213144),	-- Luminous Epiphany
-i(213165),	-- Basilisks: Should Petrification be Feared?
 i(213369),	-- Faintly Glowing Leather
 i(213370),	-- Irradiated Leather Scraps
 i(213371),	-- Crate of Tainted Gniodine Solution
@@ -6704,7 +6619,6 @@ i(213379),	-- Hyperconductive Arcano-Filament
 i(213381),	-- Pile of Tarnished Gears
 i(213383),	-- Polished Truesilver Gears
 i(213391),	-- UNUSED Electrified Mithril Gauntlets
-i(213421),	-- Singed Note
 i(213426),	-- Ogre Lightning Rod
 i(213427),	-- Grime-Encrusted Salvage
 i(213443),	-- DEPRECATED ITEM
@@ -6724,7 +6638,6 @@ i(213554),	-- Vial of Crystal Water
 i(213558),	-- Elemental Salve
 i(213563),	-- Field Guide
 i(213564),	-- Scroll of Minor Evocation
-i(213565),	-- Entomology Starter Kit
 i(213583),	-- Brimstone Carving
 i(213594),	-- Idol of the Heckler
 i(213599),	-- Unsettling Vision
@@ -6817,12 +6730,6 @@ i(215458),	-- Enclosed Message
 i(215459),	-- Enclosed Message
 i(215460),	-- Enclosed Message
 i(215468),	-- Orders from the Grand Crusader
-i(215683),	-- Geomancy: The Stone-Cold Truth
-i(215815),	-- Defensive Magics 101
-i(215816),	-- A Web of Lies: Debunking Myths and Legends
-i(215817),	-- Demons and You
-i(215820),	-- Mummies: A Guide to the Unsavory Undead
-i(215822),	-- RwlRwlRwlRwl!
 i(215824),	-- A Luddite's Guide to Caring for Your Demonic Pet
 i(216491),	-- Shipment of Stranglethorn Lumber
 i(216492),	-- Whistle of the Mottled Raptor
@@ -7099,15 +7006,8 @@ i(220213),	-- Fel Lifeblood
 i(220214),	-- Infernal Chain Link
 i(220216),	-- Infernal Lasso
 i(220217),	-- Rune of the Ravenous
-i(220345),	-- Sanguine Sorcery
-i(220346),	-- Legends of the Tidesages
 i(220347),	-- The Liminal and the Arcane
-i(220348),	-- Everyday Etiquette
-i(220349),	-- Stonewrought Design
-i(220350),	-- Venomous Journeys
 i(220351),	-- Murky Air Sapta
-i(220352),	-- A Mind of Metal
-i(220353),	-- Conjurer's Codex
 i(220360),	-- Rune of Efflorescence
 i(220375),	-- Fragment of Air
 i(220446),	-- Otherworldly Treasure
@@ -7217,7 +7117,6 @@ i(221317),	-- Feralas Leycryst
 i(221318),	-- Azshara Leycryst
 i(221319),	-- Blackrock Leycryst
 i(221320),	-- Hinterlands Leycryst
-i(221324),	-- Brittle Key
 i(221325),	-- EZ-Splode Blasting Charge
 i(221326),	-- Sacred Stag Heart
 i(221336),	-- Schematic: Goblin Mining Helmet
@@ -7501,14 +7400,6 @@ i(228124),	-- Oneiric Epiphany
 i(228126),	-- Aperitive Epiphany
 i(228130),	-- Altruist Ward
 i(228131),	-- Altruist Ward
-i(228132),	-- Undead Potatoes
-i(228133),	-- Magma or Lava?
-i(228134),	-- Northern Kalimdor - A Comprehensive Guide
-i(228135),	-- A Study of the Light
-i(228136),	-- Ka-Boom!
-i(228138),	-- The Knight and the Lady
-i(228140),	-- Scourge: Undead Menace or Misunderstood?
-i(228141),	-- Necromancy 101
 i(228144),	-- Strange Note
 i(228189),	-- Gift of Gob
 i(228191),	-- Shimmering Molten Mineral
@@ -7853,10 +7744,7 @@ i(243266),	-- Fel-Tainted Giblets
 i(243299),	-- Big Bag o' Gold
 i(245675),	-- Gordok Inner Door Key
 i(245983),	-- Ursine Heirloom
-i(246164),	-- Skullthumper
-i(246165),	-- Driftwood Smasher
 i(246213),	-- Sturdy Lumber
-i(246265),	-- Salvaged Wooden Tower Shield
 i(246377),	-- Monster - Sword, 1h - Kirin Tor
 i(246680),	-- Mana-Siphoning Wand
 i(246683),	-- Treasure Trowel 3000
@@ -7894,48 +7782,8 @@ i(248002),	-- Picture Book: Fun with Elementals
 i(248003),	-- Geomancy for Curious Young Wizards
 i(248004),	-- Arcane Explainer: Magical Stuff in Simple Words
 i(248206),	-- Sealed Craftsman's Writ
-i(248549),	-- Waylaid Crate
 i(248584),	-- Monster - Sword, 2h - Kirin Tor
-i(248613),	-- Lightning in a Bottle
-i(248682),	-- Waylaid Crate: Apprentice Herbs
-i(248683),	-- Waylaid Crate: Apprentice Ore
-i(248684),	-- Waylaid Crate: Apprentice Textiles
-i(248685),	-- Waylaid Crate: Apprentice Curiosities
-i(248686),	-- Waylaid Crate: Journeyman Herbs
-i(248687),	-- Waylaid Crate: Journeyman Ore
-i(248688),	-- Waylaid Crate: Journeyman Textiles
-i(248689),	-- Waylaid Crate: Journeyman Curiosities
-i(248690),	-- Waylaid Crate: Earthly Expert Herbs
-i(248691),	-- Waylaid Crate: Flowering Expert Herbs
-i(248692),	-- Waylaid Crate: Expert Ore
-i(248693),	-- Waylaid Crate: Expert Textiles
-i(248694),	-- Waylaid Crate: Expert Curiosities
-i(248695),	-- Waylaid Crate: Earthly Artisan Herbs
-i(248696),	-- Waylaid Crate: Flowering Artisan Herbs
-i(248697),	-- Waylaid Crate: Artisan Ore
-i(248698),	-- Waylaid Crate: Artisan Textiles
-i(248699),	-- Waylaid Crate: Artisan Curiosities
-i(248702),	-- Waylaid Crate: Apprentice Fabrics
-i(248703),	-- Waylaid Crate: Apprentice Ingots
-i(248704),	-- Waylaid Crate: Apprentice Parts
-i(248705),	-- Waylaid Crate: Journeyman Fabrics
-i(248706),	-- Waylaid Crate: Journeyman Ingots
-i(248707),	-- Waylaid Crate: Journeyman Parts
-i(248708),	-- Waylaid Crate: Expert Fabrics
-i(248709),	-- Waylaid Crate: Expert Ingots
-i(248710),	-- Waylaid Crate: Expert Parts
-i(248711),	-- Waylaid Crate: Artisan Fabrics
-i(248712),	-- Waylaid Crate: Artisan Ingots
-i(248713),	-- Waylaid Crate: Artisan Parts
-i(248765),	-- Sealed Apprentice Crate
-i(248766),	-- Sealed Journeyman Crate
-i(248767),	-- Sealed Expert Crate
-i(248768),	-- Sealed Artisan Crate
 i(248769),	-- Sealed Elite Crate
-i(248770),	-- Sealed Apprentice Crate
-i(248771),	-- Sealed Journeyman Crate
-i(248772),	-- Sealed Expert Crate
-i(248773),	-- Sealed Artisan Crate
 i(248774),	-- Sealed Elite Crate
 i(248775),	-- Sealed Apprentice Crate
 i(248776),	-- Sealed Journeyman Crate
@@ -7947,13 +7795,11 @@ i(248821),	-- Demonsage
 i(248823),	-- Marefoil
 i(248824),	-- Fel Hide
 i(248825),	-- Fel Leather
-i(248930),	-- Quinn's Potion
 i(248975),	-- Seed of the Ancients
 i(249390),	-- Seals of the Sin'dorei
 i(249475),	-- Formula: Enchant Bracer - Minor Healing Power
 i(249487),	-- Formula: Twisted Nether Wand
 i(249488),	-- Formula: Enchant Bracer - Agility
-i(249489),	-- Formula: Enchant Bracer - Lesser Healing Power
 i(249511),	-- Formula: Enchant 2H Weapon - Lesser Agility
 i(249512),	-- Formula: Dreambough Wand
 i(249513),	-- Formula: Enchant 2H Weapon - Lesser Strength
@@ -7970,7 +7816,6 @@ i(249695),	-- Fel-Tainted Flesh
 i(249696),	-- Tusks of the Unbroken
 i(249697),	-- Claws of the Great Bear
 i(249698),	-- Feathered Charm Necklace
-i(249726),	-- Azerothium Bar
 i(249791),	-- Shiny Green Apple
 i(249792),	-- Sweetsour Grapes
 i(249793),	-- Wayward Pomegranate
@@ -7979,43 +7824,10 @@ i(249795),	-- Flame Papaya
 i(249796),	-- Hyjal Berries
 i(249802),	-- Grainy Fruit Pulp
 i(249803),	-- Tangy Fruit Pulp
-i(249865),	-- Peace Tea
-i(249866),	-- Royal Tea
-i(249867),	-- Root Tea
-i(249868),	-- Triage Tea
-i(249869),	-- Sunny Tea
-i(249870),	-- Sage's Tea
-i(249871),	-- Venomous Smoothie
-i(249872),	-- Slimy Smoothie
-i(249873),	-- Mrrggl Smrrthle
-i(249874),	-- Calcified Smoothie
-i(249875),	-- Spicy Smoothie
-i(249876),	-- Wicked Smoothie
-i(249880),	-- Recipe: Royal Tea
-i(249881),	-- Recipe: Root Tea
 i(249882),	-- Recipe: Triage Tea
 i(249883),	-- Recipe: Sunny Tea
 i(249884),	-- Recipe: Sage's Tea
-i(249895),	-- Frosty Lashling Bud
-i(249896),	-- Viridian Lashling Bud
 i(249900),	-- Regurgitated Seed Pod
-i(249905),	-- Scribbled I.O.U.
-i(250065),	-- Savory Stag Sliders
-i(250066),	-- Soaring Pamplona
-i(250067),	-- Bat Hachee
-i(250068),	-- Savory Turtle Stew
-i(250069),	-- Flank au Poivre
-i(250070),	-- Bear Bruscitti
-i(250071),	-- Steaming Stag Steak
-i(250072),	-- Swiftstrike Steak
-i(250073),	-- Raging Raptor Ribs
-i(250074),	-- Bear Brisket
-i(250075),	-- Prehistoric Pulled Raptor
-i(250076),	-- Raptor Rouladen
-i(250078),	-- Giant Scrambled Eggs
-i(250079),	-- Tasty Raptor Bites
-i(250080),	-- Breakfast Omelette
-i(250081),	-- Clam Linguine
 i(250101),	-- Summit Guardian Polearm
 i(250173),	-- Recipe: Savory Stag Sliders
 i(250174),	-- Recipe: Soaring Pamplona
@@ -8026,22 +7838,17 @@ i(250178),	-- Recipe: Bear Bruscitti
 i(250179),	-- Recipe: Steaming Stag Steak
 i(250180),	-- Recipe: Swiftstrike Steak
 i(250181),	-- Recipe: Raging Raptor Ribs
-i(250182),	-- Recipe: Bear Brisket
 i(250183),	-- Recipe: Prehistoric Pulled Raptor
 i(250184),	-- Recipe: Raptor Rouladen
 i(250186),	-- Recipe: Giant Scrambled Eggs
 i(250189),	-- Recipe: Clam Linguine
 i(250217),	-- Purveyor of Light
-i(250363),	-- Recipe: Draught of Predatory Senses
+i(250363),	-- Recipe: Potion of Predatory Senses \\ Recipe: Draught of Predatory Senses
 i(250368),	-- Recipe: Cleric's Elixir
 i(250370),	-- Recipe: Elixir of Fortitude
 i(250382),	-- Recipe: Elixir of Spirit
 i(250385),	-- Recipe: Elixir of Strength
 i(250389),	-- Recipe: Elixir of Intellect
-i(250588),	-- Blessed Plate Gauntlet
-i(250596),	-- Enriched Thorium Leggings
-i(250601),	-- Breastplate of Salvation
-i(250610),	-- Mithril Claymore
 i(250725),	-- Crate of Exotic Parts
 i(250744),	-- Firestarter Fir
 i(250773),	-- Nordrassil Root Cap
@@ -8055,7 +7862,6 @@ i(251279),	-- [DNT] Fragment of Air Essence REUSE
 i(251280),	-- [DNT] Fragment of Fire Essence REUSE
 i(251281),	-- [DNT] Fragment of Earth Essence REUSE
 i(251282),	-- [DNT] Fragment of Water Essence REUSE
-i(251291),	-- Heavy Thorium Bar
 i(251320),	-- Sachet of Spirit Powder \\ Satchet of Spirit Powder
 i(251332),	-- Plans: Gemmed Copper Boots
 i(251333),	-- Plans: Strange Copper Boots
@@ -8112,8 +7918,6 @@ i(251467),	-- Plans: Thorium Poleaxe
 i(251520),	-- Last Scrawlings of Edward Heartweaver
 i(251523),	-- The Friends We Made Along the Way
 i(251524),	-- Whimsyfin
-i(251525),	-- Savory Whimsyfin Delight
-i(251526),	-- Recipe: Savory Whimsyfin Delight
 i(251641),	-- Hyjal Venison Cut
 i(251723),	-- Charged Stone
 i(251735),	-- Pattern: Slimeslayer's Adaptive Robes
@@ -8145,7 +7949,6 @@ i(251760),	-- Plans: Earthweaver's Adaptive Links
 i(251761),	-- Plans: Earthweaver's Adaptive Waistguard
 i(251780),	-- Rabbit Carcass
 i(251781),	-- Head Scratcher's Scratchers
-i(251900),	-- Thendal Grove Gift Voucher
 i(251917),	-- Falorne's Homemade Tart
 i(251918),	-- Scrawny Ursera Claw
 i(251924),	-- Signet of Akir
@@ -8154,46 +7957,15 @@ i(251927),	-- Chipped Cirrusfly Stinger
 i(251928),	-- Torn Insect Wing
 i(251930),	-- Minor Essence of the Four Winds
 i(251931),	-- Depleted Windstone
-i(251941),	-- Scribbled Letter
 i(251960),	-- Yngwe's Axe
 i(251983),	-- Fel Infused Blossom
-i(252023),	-- Zaalanarr Sharp
-i(252026),	-- Gustberry Pie
-i(252027),	-- Gustberry Juice
-i(252029),	-- Hippogryph Flank
 i(252264),	-- "Gold"
-i(252434),	-- Defender's Leather Armor
-i(252435),	-- Totemic Leather Armor
-i(252445),	-- Defender's Leather Pants
-i(252446),	-- Totemic Leather Pants
-i(252455),	-- Defender's Leather Helm
-i(252456),	-- Totemic Leather Helm
-i(252459),	-- Prowler's Leather Belt
-i(252460),	-- Warden's Leather Belt
-i(252461),	-- Skirmisher's Leather Belt
-i(252490),	-- Brawler's Leather Armor
-i(252491),	-- Trapper's Leather Armor
-i(252492),	-- Stormrider's Leather Armor
-i(252493),	-- Wisdom's Leather Armor
-i(252500),	-- Brawler's Leather Pants
-i(252501),	-- Trapper's Leather Pants
-i(252502),	-- Stormrider's Leather Pants
-i(252503),	-- Wisdom's Leather Pants
-i(252512),	-- Brawler's Leather Helm
-i(252513),	-- Trapper's Leather Helm
-i(252514),	-- Stormrider's Leather Helm
-i(252515),	-- Wisdom's Leather Helm
-i(252520),	-- Skulker's Leather Belt
-i(252521),	-- Stalker's Leather Belt
-i(252522),	-- Skycaller's Leather Belt
-i(252523),	-- Mender's Leather Belt
 i(252665),	-- Head of Urs'anah
 i(252671),	-- Hoarder's Foot
 i(252673),	-- Shen'dar Village Offering Coffer
 i(252674),	-- Indari's Offering
 i(252675),	-- Taleen's Offering
 i(252678),	-- Demon Dust
-i(252766),	-- Pattern: Trapper's Leather Belt
 i(252843),	-- Pattern: Prowler's Leather Shoes
 i(252844),	-- Pattern: Skulker's Leather Shoes
 i(252845),	-- Pattern: Warden's Leather Shoes
@@ -8211,10 +7983,9 @@ i(252871),	-- Pattern: Mender's Leather Gauntlets
 i(252878),	-- Pattern: Blue Suede Pants
 i(252879),	-- Pattern: Wicked Leather Boots
 i(252880),	-- Pattern: Tooled Leather Gauntlets
-i(252881),	-- Pattern: Blue Suede Shoulder
+i(252881),	-- Pattern: Blue Suede Shoulders \\ Pattern: Blue Suede Shoulder
 i(252882),	-- Pattern: Tooled Leather Crown
-i(252883),	-- Pattern: Blue Suede Armor
-i(252884),	-- Pattern: Wicked Leather Shoulder
+i(252884),	-- Pattern: Wicked Leather Shoulders \\ Pattern: Wicked Leather Shoulder
 i(252885),	-- Pattern: Tooled Leather Bracers
 i(252886),	-- Pattern: Blue Suede Belt
 i(252887),	-- Pattern: Tooled Leather Epaulets
@@ -8235,12 +8006,12 @@ i(252909),	-- Pattern: Charged Scorpid Belt
 i(252914),	-- Pattern: Supple Scorpid Leggings
 i(252915),	-- Pattern: Charged Scorpid Helm
 i(252916),	-- Pattern: Supple Scorpid Bracers
-i(252917),	-- Pattern: Charged Scorpid Shoulder
+i(252917),	-- Pattern: Charged Scorpid Shoulders \\ Pattern: Charged Scorpid Shoulder
 i(252918),	-- Pattern: Stalker's Mail Gauntlets
 i(252919),	-- Pattern: Skycaller's Mail Gauntlets
 i(252920),	-- Pattern: Skirmisher's Mail Gauntlets
 i(252921),	-- Pattern: Mender's Mail Gauntlets
-i(252926),	-- Pattern: Supple Scorpid Shoulder
+i(252926),	-- Pattern: Supple Scorpid Shoulders \\ Pattern: Supple Scorpid Shoulder
 i(252927),	-- Pattern: Charged Scorpid Bracers
 i(252928),	-- Pattern: Heavy Scorpid Boots
 i(252929),	-- Pattern: Supple Scorpid Belt
@@ -8271,7 +8042,6 @@ i(253595),	-- Flutterfly Dust
 i(253596),	-- Blood-Stained Bandit Mask
 i(253597),	-- Lowlands Galestrider Tenderloin
 i(253710),	-- Bruuz's Dorsal Fin
-i(253711),	-- Goliath's Wristguards
 i(253884),	-- Template Item
 i(253886),	-- Pattern: Novice Arcanist's Sash
 i(253888),	-- Pattern: Novice Ardent's Sash
@@ -8317,7 +8087,6 @@ i(254140),	-- Pattern: Bottomless Reagent Bag
 i(254378),	-- Shriekling Talons
 i(254380),	-- Arcane-Infused Net
 i(254392),	-- Conqueror's Helm
-i(254432),	-- Carved Centaur Totem
 i(254546),	-- Jansen Stead Water Sample
 i(254547),	-- Molsen Farm Water Sample
 i(254548),	-- Longshore Murloc Gill
@@ -8330,7 +8099,6 @@ i(254676),	-- Suspicious Industrial Supplies
 i(254679),	-- Stillwind String
 i(254680),	-- Twin's Pact
 i(254681),	-- Pattern: Stormcloth Pants
-i(254682),	-- Pattern: Stormcloth Gloves
 i(254683),	-- Pattern: Stormcloth Vest
 i(254684),	-- Pattern: Stormcloth Headband
 i(254685),	-- Pattern: Stormcloth Shoulders
@@ -8347,7 +8115,6 @@ i(254842),	-- Well Cursed Bone
 i(254859),	-- Vicious Hook Talon
 i(254870),	-- Rudimentary Necromancy Staff
 i(254877),	-- Namida's Hoof
-i(255154),	-- Ruined Gyrostabilizer
 i(255403),	-- Enhanced Necromancy Staff
 i(255645),	-- Swollen Venom Sac \\ Swolen Venom Sac
 i(255656),	-- Pylon Fragment
@@ -8364,7 +8131,6 @@ i(255875),	-- Necromantic Garb
 i(255878),	-- Tear of Theradras
 i(255941),	-- Gelkis Necromantic Garb
 i(255945),	-- Accursed Skull
-i(256036),	-- Handful of Dirt
 i(256037),	-- Grass Clippings
 i(256038),	-- Rage of the Sleeper
 i(256039),	-- Rake of the Sleeper
@@ -8480,7 +8246,6 @@ i(260625),	-- Garnished Rice Cake
 i(260627),	-- Savory Shen'dralar Steak
 i(260628),	-- Stuffed Pumpkin
 i(260629),	-- Spectral Spirits
-i(260631),	-- Arcane Wine
 i(260632),	-- Slushberry Brandy
 i(260633),	-- Sip of Lemonale
 i(260704),	-- Polished Bronze Safety Goggles
@@ -8494,21 +8259,11 @@ i(262357),	-- Wind Hollow Essence
 i(262433),	-- Ketharas' Hyjal Stew
 i(262640),	-- Feed Satchel
 i(262668),	-- Wind-Infused Bough
-i(262764),	-- Durotar Supply and Logistics Tabard
-i(262766),	-- Reins of the Pack Kodo
-i(262801),	-- Barkskin Satchel
 i(262802),	-- Moonveil Moss
 i(262803),	-- Burrow Beetle Bits
 i(262816),	-- Intact Owl Body
 i(262818),	-- Bear Berries
-i(262887),	-- Sealed Apprentice's Writ
-i(262888),	-- Sealed Journeyman's Writ
-i(262889),	-- Sealed Expert's Writ
-i(262890),	-- Sealed Artisan's Writ
-i(262896),	-- Forger's Quill
-i(262902),	-- Forged Delivery Receipt
 i(262913),	-- Fel-Tainted Bear Heart
-i(262917),	-- Notarized Shipping Container
 i(263028),	-- Enchanted Harpy Amulet
 i(263029),	-- Empty Waterskin
 i(263030),	-- Filled Hyjal Waterskin
@@ -8524,159 +8279,7 @@ i(263439),	-- Deadwood Tribal Beads
 i(263930),	-- Farholde Scouting Report
 i(263931),	-- Crudely Fashioned Report
 i(263972),	-- Woodworker's Axe
-i(263973),	-- Beguiler's Blade
 i(263992),	-- Overseer's Keyring
-i(264011),	-- Craftsman's Writ: Elixir of Ogre's Strength
-i(264012),	-- Craftsman's Writ: Elixir of Wisdom
-i(264013),	-- Craftsman's Writ: Lesser Mana Potion
-i(264014),	-- Craftsman's Writ: Shadow Protection Potion
-i(264015),	-- Craftsman's Writ: Free Action Potion
-i(264016),	-- Craftsman's Writ: Elixir of Lesser Agility
-i(264017),	-- Craftsman's Writ: Lesser Troll's Blood Elixir
-i(264018),	-- Craftsman's Writ: Elixir of Defense
-i(264019),	-- Craftsman's Writ: Draught of Water Breathing
-i(264020),	-- Craftsman's Writ: Pearl-Handled Dagger
-i(264021),	-- Craftsman's Writ: Golden Rod
-i(264022),	-- Craftsman's Writ: Iridescent Hammer
-i(264023),	-- Craftsman's Writ: Silver Skeleton Key
-i(264024),	-- Craftsman's Writ: Heavy Bronze Mace
-i(264025),	-- Craftsman's Writ: Rough Bronze Leggings
-i(264026),	-- Craftsman's Writ: Green Iron Gauntlets
-i(264027),	-- Craftsman's Writ: Big Bronze Knife
-i(264028),	-- Craftsman's Writ: Green Iron Boots
-i(264029),	-- Craftsman's Writ: Ornate Spyglass
-i(264030),	-- Craftsman's Writ: Explosive Sheep
-i(264031),	-- Craftsman's Writ: Moonsight Rifle
-i(264032),	-- Craftsman's Writ: Minor Recombobulator
-i(264033),	-- Craftsman's Writ: Practice Lock
-i(264034),	-- Craftsman's Writ: Shadow Goggles
-i(264035),	-- Craftsman's Writ: Gnomish Universal Remote
-i(264036),	-- Craftsman's Writ: Big Bronze Bomb
-i(264037),	-- Craftsman's Writ: Crafted Solid Shot
-i(264038),	-- Craftsman's Writ: Heavy Leather Ball
-i(264039),	-- Craftsman's Writ: Fine Leather Pants
-i(264040),	-- Craftsman's Writ: Herbalist's Gloves
-i(264041),	-- Craftsman's Writ: Dark Leather Tunic
-i(264042),	-- Craftsman's Writ: Pilferer's Gloves
-i(264043),	-- Craftsman's Writ: Heavy Quiver
-i(264044),	-- Craftsman's Writ: Dark Leather Shoulders
-i(264045),	-- Craftsman's Writ: Barbaric Gloves
-i(264046),	-- Craftsman's Writ: Red Whelp Gloves
-i(264047),	-- Craftsman's Writ: Lesser Wizard's Robe
-i(264048),	-- Craftsman's Writ: Blue Overalls
-i(264049),	-- Craftsman's Writ: Azure Silk Hood
-i(264050),	-- Craftsman's Writ: Small Silk Pack
-i(264051),	-- Craftsman's Writ: Phoenix Pants
-i(264052),	-- Craftsman's Writ: Red Woolen Boots
-i(264053),	-- Craftsman's Writ: Colorful Kilt
-i(264054),	-- Craftsman's Writ: Greater Adept's Robe
-i(264055),	-- Craftsman's Writ: Spider Silk Slippers
-i(264056),	-- Craftsman's Writ: Frost Protection Potion
-i(264057),	-- Craftsman's Writ: Lesser Invisibility Potion
-i(264058),	-- Craftsman's Writ: Lesser Stoneshield Potion
-i(264059),	-- Craftsman's Writ: Nature Protection Potion
-i(264060),	-- Craftsman's Writ: Catseye Draught
-i(264061),	-- Craftsman's Writ: Great Rage Potion
-i(264062),	-- Craftsman's Writ: Mana Potion
-i(264063),	-- Craftsman's Writ: Fire Protection Potion
-i(264064),	-- Craftsman's Writ: Shadow Oil
-i(264065),	-- Craftsman's Writ: Goblin Rocket Fuel
-i(264066),	-- Craftsman's Writ: Elixir of Agility
-i(264067),	-- Craftsman's Writ: Wildvine Potion
-i(264068),	-- Craftsman's Writ: Steel Plate Helm
-i(264069),	-- Craftsman's Writ: Inlaid Mithril Cylinder
-i(264070),	-- Craftsman's Writ: Steel Weapon Chain
-i(264071),	-- Craftsman's Writ: Ornate Mithril Shoulders
-i(264072),	-- Craftsman's Writ: Blue Glittering Axe
-i(264073),	-- Craftsman's Writ: Moonsteel Broadsword
-i(264074),	-- Craftsman's Writ: Golden Scale Coif
-i(264075),	-- Craftsman's Writ: Solid Sharpening Stone
-i(264076),	-- Craftsman's Writ: Wicked Mithril Blade
-i(264077),	-- Craftsman's Writ: Truesilver Rod
-i(264078),	-- Craftsman's Writ: Golden Scale Gauntlets
-i(264079),	-- Craftsman's Writ: Heavy Mithril Axe
-i(264080),	-- Craftsman's Writ: Mechanical Dragonling
-i(264081),	-- Craftsman's Writ: Advanced Target Dummy
-i(264082),	-- Craftsman's Writ: Craftsman's Monocle
-i(264083),	-- Craftsman's Writ: Goblin Land Mine
-i(264084),	-- Craftsman's Writ: Catseye Ultra Goggles
-i(264085),	-- Craftsman's Writ: Unstable Trigger
-i(264086),	-- Craftsman's Writ: Flash Bomb
-i(264087),	-- Craftsman's Writ: Fire Goggles
-i(264088),	-- Craftsman's Writ: Mithril Frag Bomb
-i(264089),	-- Craftsman's Writ: Gyromatic Micro-Adjuster
-i(264090),	-- Craftsman's Writ: Mechanical Repair Kit
-i(264091),	-- Craftsman's Writ: Dark Iron Bomb
-i(264092),	-- Craftsman's Writ: Comfortable Leather Hat
-i(264093),	-- Craftsman's Writ: Guardian Cloak
-i(264094),	-- Craftsman's Writ: Dusky Bracers
-i(264095),	-- Craftsman's Writ: Wild Leather Helmet
-i(264096),	-- Craftsman's Writ: Wild Leather Shoulders
-i(264097),	-- Craftsman's Writ: Quickdraw Quiver
-i(264098),	-- Craftsman's Writ: Swift Boots
-i(264099),	-- Craftsman's Writ: Nightscape Shoulders
-i(264100),	-- Craftsman's Writ: Big Voodoo Mask
-i(264101),	-- Craftsman's Writ: Big Voodoo Robe
-i(264102),	-- Craftsman's Writ: Turtle Scale Breastplate
-i(264103),	-- Craftsman's Writ: Thick Leather Ammo Pouch
-i(264104),	-- Craftsman's Writ: Mageweave Bag
-i(264105),	-- Craftsman's Writ: Shadoweave Gloves
-i(264106),	-- Craftsman's Writ: Crimson Silk Robe
-i(264107),	-- Craftsman's Writ: Shadoweave Robe
-i(264108),	-- Craftsman's Writ: Enchanted Mageweave Pouch
-i(264109),	-- Craftsman's Writ: Star Belt
-i(264110),	-- Craftsman's Writ: Black Mageweave Vest
-i(264111),	-- Craftsman's Writ: Red Mageweave Pants
-i(264112),	-- Craftsman's Writ: Orange Martial Shirt
-i(264113),	-- Craftsman's Writ: White Bandit Mask
-i(264114),	-- Craftsman's Writ: Cindercloth Robe
-i(264115),	-- Craftsman's Writ: Earthen Silk Belt
-i(264116),	-- Craftsman's Writ: Potion of Demonslaying
-i(264117),	-- Craftsman's Writ: Dreamless Sleep Potion
-i(264118),	-- Craftsman's Writ: Greater Fire Protection Potion
-i(264119),	-- Craftsman's Writ: Draught of Detect Demon
-i(264120),	-- Craftsman's Writ: Gift of Arthas
-i(264121),	-- Craftsman's Writ: Flask of Chromatic Resistance
-i(264122),	-- Craftsman's Writ: Limited Invulnerability Potion
-i(264123),	-- Craftsman's Writ: Major Rejuvenation Potion
-i(264124),	-- Craftsman's Writ: Distilled Firewater
-i(264125),	-- Craftsman's Writ: Radiant Circlet
-i(264126),	-- Craftsman's Writ: Radiant Belt
-i(264127),	-- Craftsman's Writ: Orcish War Leggings
-i(264128),	-- Craftsman's Writ: Mithril Spurs
-i(264129),	-- Craftsman's Writ: Imperial Plate Chest
-i(264130),	-- Craftsman's Writ: Darkrune Gauntlets
-i(264131),	-- Craftsman's Writ: Huge Thorium Battleaxe
-i(264132),	-- Craftsman's Writ: Arcanite Skeleton Key
-i(264133),	-- Craftsman's Writ: Ebon Shiv
-i(264134),	-- Craftsman's Writ: Masterwork Target Dummy
-i(264135),	-- Craftsman's Writ: Green Lens
-i(264136),	-- Craftsman's Writ: Lifelike Mechanical Toad
-i(264137),	-- Craftsman's Writ: Gnomish Alarm-O-Bot
-i(264138),	-- Craftsman's Writ: Goblin Jumper Cables XL
-i(264139),	-- Craftsman's Writ: Field Repair Bot 74A
-i(264140),	-- Craftsman's Writ: Truesilver Transformer
-i(264141),	-- Craftsman's Writ: Sniper Scope
-i(264142),	-- Craftsman's Writ: Tranquil Mechanical Yeti
-i(264143),	-- Craftsman's Writ: Wicked Leather Pants
-i(264144),	-- Craftsman's Writ: Gordok Ogre Suit
-i(264145),	-- Craftsman's Writ: Volcanic Breastplate
-i(264146),	-- Craftsman's Writ: Runic Leather Headband
-i(264147),	-- Craftsman's Writ: Wicked Leather Bracers
-i(264148),	-- Craftsman's Writ: Chimeric Vest
-i(264149),	-- Craftsman's Writ: Heavy Scorpid Helm
-i(264150),	-- Craftsman's Writ: Runic Leather Bracers
-i(264151),	-- Craftsman's Writ: Frostsaber Boots
-i(264152),	-- Craftsman's Writ: Wizardweave Turban
-i(264153),	-- Craftsman's Writ: Runecloth Bag
-i(264154),	-- Craftsman's Writ: Runecloth Boots
-i(264155),	-- Craftsman's Writ: Tuxedo Jacket
-i(264156),	-- Craftsman's Writ: Felcloth Boots
-i(264157),	-- Craftsman's Writ: Cenarion Herb Bag
-i(264158),	-- Craftsman's Writ: Shadoweave Mask
-i(264159),	-- Craftsman's Writ: Ghostweave Vest
-i(264160),	-- Craftsman's Writ: Soul Pouch
-i(264163),	-- Taming Rod
 i(264207),	-- Schematic: SAF-T Bronze Bomb
 i(264208),	-- Schematic: SAF-T Jumbo Dynamite
 i(264210),	-- Schematic: Shafety Sheep
@@ -8711,21 +8314,16 @@ i(265358),	-- Stolen Ore
 i(265359),	-- Novice's Robe
 i(265360),	-- Novice's Pants
 i(265476),	-- Ripped Missive
-i(265732),	-- Unfilled Brown Waterskin
 i(265734),	-- Full Brown Waterskin
 i(265738),	-- Sootfur's Pelt
 i(265745),	-- Twilight Missive
-i(265747),	-- Unfilled Red Waterskin
 i(265748),	-- Full Red Waterskin
-i(265750),	-- Chogg's Head
 i(265751),	-- Zac's Head
-i(265772),	-- Unfilled Blue Waterskin
 i(265773),	-- Full Blue Waterskin
 i(265806),	-- Riverweed
 i(265808),	-- Sweetberry
 i(265810),	-- Treat for Snufflesnout
 i(265821),	-- Twilight Key
-i(265837),	-- Kilgar's Head
 i(265838),	-- Green Skeletal Horse
 i(265839),	-- Dark Skeletal Horse
 i(265840),	-- Purple Skeletal Horse
@@ -8734,17 +8332,11 @@ i(266148),	-- Farmers' Mementos
 i(266154),	-- Lumber Tree Seed
 i(266156),	-- Fresh Manure
 i(266157),	-- Jumbo Crawfish Shell
-i(266158),	-- Taming Rod
-i(266161),	-- Tree Sprouting Kit
 i(266251),	-- Discarded Doll
 i(266252),	-- Damaged Locket
-i(266253),	-- Taming Rod
-i(266254),	-- Taming Rod
 i(266424),	-- Twilight Page
 i(266425),	-- Twilight Charm
-i(266426),	-- Filled Crystal Catalyst
 i(266427),	-- Field Marshal's Log
-i(266428),	-- Marshal Ryan's Crest
 i(266433),	-- Abandoned Belongings
 i(266434),	-- Resaan's Heirloom
 i(266884),	-- Robbie's Hat
@@ -8757,7 +8349,7 @@ i(266997),	-- Fel Ash
 i(267001),	-- Ketharas' Empty Vial
 i(267003),	-- Ketharas' Filled Vial
 i(267073),	-- Twilight Finger Bone
-i(267079),	-- Concoction of Cleansing
+i(267079),	-- Staff of the Mountain \\ Concoction of Cleansing
 i(267086),	-- Eye of Mugg
 i(267087),	-- Head of Zarmok
 i(267089),	-- Krol'dok Compound Key
@@ -8765,22 +8357,16 @@ i(267091),	-- Cultist Ear
 i(267104),	-- Tome of Twilight
 i(267137),	-- Krol'dok Moulding
 i(267138),	-- Krol'dok Moulding
-i(267178),	-- Wheeler's Steed Feed
 i(267223),	-- Pawprint Tracing
 i(267224),	-- Tuft of Bloody Fur
 i(267225),	-- Gnawed Horse Skull
 i(267234),	-- Twilight Bangle
-i(267244),	-- Care Package
 i(267256),	-- Field Marshal's Log
-i(267263),	-- Bundle of Lion Pelts
 i(267266),	-- Mudfin Murloc Head
-i(267272),	-- Taming Rod
 i(267283),	-- Test Gear Bag
 i(267289),	-- Scarlet Dart Tuber
-i(267298),	-- Taming Rod
 i(267336),	-- Fluffy Wolf Fur
 i(267337),	-- Fresh Pine Needles
-i(267341),	-- Sweetpaw Jam
 i(267361),	-- Enchanted Silver Ingot
 i(267362),	-- Pyrewood Blacksmith's Hammer
 i(267412),	-- Fenris Isle Key
@@ -8796,8 +8382,6 @@ i(268035),	-- Satchel of Cursed Mementos
 i(268036),	-- Satchel of Mementos
 i(268052),	-- Barnacle Encrusted Blade
 i(268054),	-- A Curious Blade
-i(268109),	-- Musical Gustjumper
-i(268192),	-- Bundle of Blacksmithing Materials
 i(268298),	-- Concoction of Cleansing
 i(268312),	-- Monster - Mace1H, Basic Stone Hammer (Large)
 i(268336),	-- Improved Concoction of Cleansing
@@ -8805,23 +8389,15 @@ i(268341),	-- Rot-Covered Harpoon
 i(268344),	-- Saltwater Murloc Eye
 i(268345),	-- Sand Crawler Meat
 i(268346),	-- Eastsea Powder Keg
-i(268359),	-- Ott's Masterwork
-i(268415),	-- Commonplace Herb Seeds
-i(268416),	-- Uncommon Herb Seeds
 i(268417),	-- Unusual Herb Seeds
 i(268418),	-- Scarce Herb Seeds
 i(268421),	-- Southern Watch Gnoll Report
 i(268422),	-- Velvet of Kala'th's Horn
 i(268423),	-- Whisker of Shalla'kal
-i(268484),	-- Moonsilver Blade
-i(268502),	-- Tiny Bronze Whelpling
-i(268503),	-- Tiny Azure Whelpling
-i(268505),	-- Remote Explosive Charge
 i(268506),	-- Lamora's Loot
 i(268507),	-- Broken Staff
 i(268516),	-- Twilight Scouting Report
 i(268520),	-- Lamora's Key
-i(268521),	-- Swineherd's Staff
 i(268536),	-- Bundle of Hay
 i(268540),	-- Bloodied Insignia
 i(268549),	-- Bundle of Boar Meat
@@ -8829,33 +8405,23 @@ i(268558),	-- Trogg's Lucky Rock
 i(268559),	-- Leopard's Head
 i(268560),	-- Troll's Pendant
 i(268573),	-- Reanimator's Amulet
-i(268579),	-- Crest of Lordaeron
 i(268580),	-- Intact Limbs
 i(268581),	-- Scoutmaster's Eye
-i(268582),	-- Corrupted Totems
 i(268586),	-- Trapclaw's Pincer
 i(268632),	-- Beast Entrails
 i(268633),	-- Sea Monster's Head
-i(268646),	-- Amberhall's Soulstone
-i(268647),	-- Big Ball o' Bait
 i(268664),	-- Rotflesh Mushroom
 i(268675),	-- Refined Concoction of Cleansing
 i(268677),	-- Barkskin Purification Tonic
 i(268705),	-- Blood and Battle
 i(268796),	-- Smuggled Goods
 i(268801),	-- Bottle of Whispering Elixir
-i(268805),	-- Tazzik's Sweaty Shirt
-i(268810),	-- Ruzzgot's Shipment
-i(268811),	-- Friz's Secret Stash
 i(268812),	-- Whispering Horror Residue
 i(268813),	-- Fel Ash Sample
 i(268814),	-- Sludgy Bits
 i(268815),	-- Bone Fragments
-i(268816),	-- Surplus Crops
-i(268824),	-- The Friz Special
 i(268825),	-- Bottle of Whispers
 i(268829),	-- Chef's Hat
-i(268873),	-- Defender of the Barkskin
 i(268879),	-- Uber Diablo Stone
 i(268880),	-- "Secret" Bait
 i(268881),	-- Perishable Minor Healing Potion
@@ -8887,13 +8453,9 @@ i(269504),	-- Smoking Satchel
 i(269673),	-- Swift Regal Galestrider
 i(269682),	-- Regal Galestrider
 i(269715),	-- Savannah Lion Hide
-i(269716),	-- Keen Skinning Knife
-i(269717),	-- Wildgore Greatsword
-i(269718),	-- Bundle of Hides
 i(269719),	-- Trapped Game
 i(269739),	-- Bloody Tuft of Fur
 i(269741),	-- Scented Runewood Brooch
-i(269742),	-- Walton's Second-Favorite Gun
 i(269749),	-- Headhunter's Head
 i(269757),	-- Battered Zeppelin Parcel
 i(269758),	-- Quest Reward Placeholder
@@ -8905,48 +8467,17 @@ i(269810),	-- Scrapper's Salvage
 i(269830),	-- Snowy Wolf Pup
 i(269920),	-- Hyjal Owl Egg
 i(269944),	-- Bag of Enchanted Seeds
-i(269990),	-- Crystal Catalyst
-i(269997),	-- Bundle of Candles
 i(269998),	-- Sacred Stag Bundle
-i(270004),	-- Murloc-hide Gloves
-i(270010),	-- Raptorcrest Bracers
-i(270011),	-- Embroidered Leggings
-i(270014),	-- Deerhide Pants
-i(270020),	-- Gnollhide Pants
-i(270022),	-- Archaeologist's Gown
-i(270028),	-- Harpy Bangles
-i(270035),	-- Reclaimer's Robes
-i(270037),	-- Smouldering Leggings
-i(270038),	-- Runed Gauntlets
-i(270046),	-- Ethereal Mantle
-i(270048),	-- Uthil's Cudgel
-i(270049),	-- Mavoris's Warstaff
-i(270052),	-- Swamp Ring
-i(270056),	-- Stromgarde Librarian Leggings
-i(270057),	-- Stromgarde Operative Pants
-i(270065),	-- Farseer's Forgotten Shield
 i(270066),	-- Tower Boots
-i(270067),	-- Wild Headdress
-i(270068),	-- Stromgarde Bracers
-i(270069),	-- Mindslicer
-i(270070),	-- Madman's Blade
-i(270071),	-- Dark Hearted Hammer
-i(270072),	-- Alterac Assassin's Gloves
 i(270073),	-- Stromgarde Cuffs
 i(270076),	-- Tidal Bracers
 i(270077),	-- Undertow Legguards
-i(270079),	-- Witchdoctor's Dress
-i(270080),	-- Arathi Armbands
 i(270082),	-- Ceremonial Gown
 i(270083),	-- Blooded Pants
-i(270084),	-- Master Hunter's Wand
-i(270085),	-- Master Hunter's Spellsword
 i(270086),	-- Oversized Ogre's Mittens
 i(270087),	-- Thick Ogre's Belt
 i(270088),	-- Thane's Hammer
 i(270089),	-- Ironforge Agent's Gloves
-i(270090),	-- Beggar's Leggings
-i(270091),	-- Seadog's Battered Cuffs
 i(270092),	-- Blackwater Scimitar
 i(270093),	-- Blackwater Cap
 i(270094),	-- Black Whelp Boots
@@ -8976,7 +8507,6 @@ i(270226),	-- Golden Banana
 i(270270),	-- Scale of the Tidebender
 i(270275),	-- Cleansed Vilebranch Medallion
 i(270276),	-- Cleansed Vilebranch Icon
-i(270298),	-- Unholy Icon
 i(270302),	-- Chakuyak's Pelt
 i(270303),	-- Monster - Trident, Naga (Brass)
 i(270304),	-- Monster - Trident, Silver
@@ -8989,7 +8519,6 @@ i(270312),	-- Translated Tale of I'lalai
 i(270313),	-- Tale of I'lalai in Zandali
 i(270332),	-- Fredd's Head
 i(270333),	-- Voodoo-Infused Artifact
-i(270334),	-- Sweat-Stained Shirt
 i(270338),	-- Beacon of Moonlight
 i(270339),	-- Bundle of I'lalai Findings
 i(270340),	-- Savage Coast Report Bundle
@@ -8997,18 +8526,8 @@ i(270343),	-- I'lalai Fetish
 i(270428),	-- Monster - Glaive - Demonhunter Illidan
 i(270429),	-- Monster - Glaive - Demonhunter Illidan Offhand
 i(270435),	-- Rudolph Gelhardt's Head
-i(270436),	-- Rudolph Gelhardt's Head
-i(270868),	-- Dwarven Tradeskill Signpost
 i(270870),	-- Orcish Tradeskill Signpost
-i(270877),	-- Alchemy Sign
-i(270878),	-- Blacksmithing Sign
 i(270879),	-- Cooking Sign
-i(270880),	-- Enchanting Sign
-i(270881),	-- Engineering Sign
-i(270882),	-- Leatherworking Sign
-i(270883),	-- Tailoring Sign
-i(270887),	-- Advertising License Application
-i(270896),	-- Massive Pile of Forms
 i(270897),	-- Massive Pile of Completed Forms
 i(270931),	-- Monster - Mace, Thrall's Hammer (Doomhammer)
 i(271100),	-- Thicket Raptor Meat
@@ -9026,11 +8545,7 @@ i(271620),	-- Foreman's Crate
 i(271629),	-- Wood Bundle
 i(271630),	-- Makeshift Stickin' Spear
 i(271639),	-- Makeshift Stickin' Spear
-i(271646),	-- How to Make Friend
-i(271647),	-- Once Used Shoe
-i(271648),	-- Ogre Tooth Cleaner
 i(271650),	-- Crawler Spittle
-i(271653),	-- Goblin Degreaser
 i(271720),	-- Crocolisk Skin Gaiter
 i(271721),	-- Krol'dok Ogre Key
 i(271722),	-- Shen'dorei Magister's Belt
@@ -9053,16 +8568,6 @@ i(271739),	-- Shen'dorei Peacekeeper's Leggings
 i(271742),	-- Shen'dorei Peacekeeper's Vest
 i(271743),	-- Shen'dorei Peacekeeper's Pauldrons
 i(271744),	-- Ensemble: Shen'dorei Peacekeeper's Garb
-i(271746),	-- Shen'dorei Skyseer's Belt
-i(271747),	-- Shen'dorei Skyseer's Boots
-i(271748),	-- Shen'dorei Skyseer's Cloak
-i(271749),	-- Shen'dorei Skyseer's Robe
-i(271750),	-- Shen'dorei Skyseer's Gloves
-i(271751),	-- Shen'dorei Skyseer's Helm
-i(271752),	-- Shen'dorei Skyseer's Leggings
-i(271753),	-- Shen'dorei Skyseer's Vest
-i(271754),	-- Shen'dorei Skyseer's Pauldrons
-i(271755),	-- Ensemble: Shen'dorei Skyseer's Garb
 i(271756),	-- Al'Aketh Zealot's Belt
 i(271757),	-- Al'Aketh Zealot's Boots
 i(271758),	-- Al'Aketh Zealot's Cloak
@@ -9076,22 +8581,8 @@ i(271765),	-- Ensemble: Al'Aketh Zealot's Garb
 i(271770),	-- Explorers' League Cartographer's Kit
 i(271771),	-- Drained Crystal Fragment
 i(271776),	-- Glade Viper Venom
-i(271777),	-- Gnawed Skull
 i(271778),	-- Intact Tallstrider Beak
-i(271779),	-- Tallstrider Call
 i(271793),	-- Plains Buzzard Feather
-i(271794),	-- Centaur Spear
-i(271795),	-- Wanderer's Broadsword
-i(271796),	-- Blade of the Magram Clan
-i(271797),	-- Staff of Revelations
-i(271798),	-- Desperate Barrier
-i(271799),	-- Desert Crawler's Claw
-i(271800),	-- Scavenged Magram Armament
-i(271801),	-- Abandoned Ferocity
-i(271802),	-- Bludgeon of Betrayed Virtues
-i(271803),	-- Greatstaff of the Necrokhans
-i(271804),	-- Soulsplatter Mace
-i(271805),	-- Thrice-Damned Effigy
 i(271806),	-- Survivor's Amulet
 i(271807),	-- Weathered Necklace
 i(271808),	-- Scavenger's Ring
@@ -9099,7 +8590,6 @@ i(271809),	-- Desolate Band
 i(271810),	-- Corpsefeeder's Shedding
 i(271811),	-- Clacking Carapace Spaulders
 i(271812),	-- Discarded Circlet
-i(271822),	-- Frothing Mug
 i(271823),	-- Wildflower
 i(271828),	-- Ghostmaw's Fang
 i(271870),	-- Lump of Coal
@@ -9113,28 +8603,10 @@ i(271893),	-- Bad Rock
 i(271894),	-- Fiery Crystal
 i(271898),	-- Charged Crystal
 i(271902),	-- Noxious Crystal
-i(271903),	-- Enriched Seal
-i(271904),	-- Volunteer's Lucky Seal
-i(271905),	-- Enriched Seal
-i(271906),	-- Volunteer's Lucky Seal
-i(271908),	-- Theramore Signet
-i(271909),	-- Theramore Signet
-i(271910),	-- Theramore Signet
 i(271911),	-- Theramore Signet
 i(271912),	-- Moist Crystal
-i(271913),	-- Militant's Band
-i(271914),	-- Militant's Band
-i(271915),	-- Militant's Band
 i(271916),	-- Militant's Band
-i(271917),	-- Seal of the Expedition
-i(271918),	-- Seal of the Expedition
-i(271919),	-- Seal of the Expedition
 i(271920),	-- Seal of the Expedition
-i(271940),	-- Theramore Gauntlets
-i(271941),	-- Theramore Gauntlets
-i(271945),	-- Theramore Handwraps
-i(271946),	-- Theramore Handwraps
-i(271955),	-- Theramore Pauldrons
 i(271965),	-- Jewelcrafting Chisel
 i(271972),	-- Partially Digested Journal Page
 i(271992),	-- Phantasmal Blade
@@ -9159,37 +8631,8 @@ i(272025),	-- Dathrohan's Correspondence \\ Dathrohan's Correspondance
 i(272026),	-- Ysera's Tear
 i(272027),	-- Mark of Xavius
 i(272028),	-- Freya's Sigil
-i(272053),	-- Darkspear Islands Field Ration
-i(272054),	-- Darkspear Islands Iron Ration
-i(272055),	-- Darkspear Islands Enriched Ration
-i(272056),	-- Darkspear Islands Silk Bandage
-i(272057),	-- Darkspear Islands Mageweave Bandage
-i(272058),	-- Darkspear Islands Runecloth Bandage
-i(272059),	-- Darkspear Voodoo Seal
-i(272060),	-- Relentless Raider's Seal
-i(272061),	-- Darkspear Voodoo Seal
-i(272062),	-- Relentless Raider's Seal
-i(272064),	-- Insurgent's Band
-i(272065),	-- Insurgent's Band
-i(272066),	-- Insurgent's Band
-i(272067),	-- Insurgent's Band
-i(272068),	-- Darkspear Signet
-i(272069),	-- Darkspear Signet
-i(272070),	-- Darkspear Signet
-i(272071),	-- Darkspear Signet
-i(272072),	-- Darkspear Warding Pendant
-i(272073),	-- Darkspear Warding Pendant
-i(272074),	-- Darkspear Warding Pendant
-i(272075),	-- Darkspear Warding Pendant
-i(272095),	-- Raider Gauntlets
-i(272096),	-- Raider Gauntlets
-i(272097),	-- Raider Handwraps
-i(272098),	-- Raider Handwraps
-i(272105),	-- Darkspear Pauldrons
 i(272124),	-- Translated Tale of I'lalai
-i(272126),	-- Makeshift Bandages
 i(272127),	-- Drinking Water Sample
-i(272151),	-- Damaged Undermine Supply Crate
 i(272156),	-- Monster - Sword1H, Skyborne (Blue)
 i(272157),	-- Monster - Sword1H, Skyborne (Green)
 i(272158),	-- Monster - Sword 2H, Skyborne (Blue)
@@ -9218,40 +8661,7 @@ i(272190),	-- Gronok's Key
 i(272313),	-- Ancient Hilt
 i(272314),	-- Neutralizing Concoction
 i(272319),	-- Tattered Note
-i(272394),	-- Penitent's Cinch
-i(272395),	-- Assassin's Waistguard
-i(272396),	-- Shifter's Belt
-i(272397),	-- Ranger's Belt
-i(272398),	-- Caretaker's Cord
-i(272399),	-- Stormseeker's Girdle
-i(272401),	-- Elunite Cord
-i(272402),	-- Prophet's Waistcord
-i(272403),	-- Valiant's Waistguard
-i(272404),	-- Vindicator's Belt
-i(272405),	-- Redeemer's Waistcord
-i(272406),	-- Channeler's Ring
-i(272407),	-- Blessed Band of Light
-i(272408),	-- Cutthroat's Signet
-i(272409),	-- Ring of Awareness
-i(272410),	-- Windseeker's Belt
-i(272413),	-- Drape of Recovery
-i(272427),	-- Howling Idol
-i(272428),	-- Enraged Idol
-i(272429),	-- Idol of Synthesis
-i(272430),	-- Swarming Idol
-i(272431),	-- Tidal Totem
-i(272432),	-- Totem of the Storm
-i(272433),	-- Burning Totem
-i(272434),	-- Sentinel's Libram
-i(272435),	-- Libram of Law
-i(272436),	-- Libram of Economy
-i(272437),	-- Adaptive Combat Assistant
-i(272438),	-- Weakness Analyzer
-i(272439),	-- Serenity Field
-i(272440),	-- Defender's Grip Stabilizer
 i(272448),	-- Purified Kor Gem
-i(272449),	-- Scout's Tabard
-i(272450),	-- Stone Guard's Herald
 i(272451),	-- Sergeant's Cloak
 i(272452),	-- Premier High Warlord's Blade
 i(272453),	-- Premier Magus Footwraps
@@ -9556,7 +8966,6 @@ i(272855),	-- Premier Luminous Shoulders
 i(272925),	-- Ketharas' Note
 i(272932),	-- Parcel of Supplies
 i(272936),	-- Deadwood Key
-i(272941),	-- Thick Logs
 i(272973),	-- Drop of Stolen Life
 i(272974),	-- The Jewel of the Horizon
 i(272976),	-- Bent Wire
@@ -9565,11 +8974,7 @@ i(273001),	-- Gloomrise Toxin Sample
 i(273002),	-- Slime Ward - Fel Ash Experimentation Notes
 i(273008),	-- Fel-Slime Ooze
 i(273050),	-- Blackmaw Pouch
-i(273087),	-- Blueprint: Journeyman Campfire
-i(273098),	-- Blueprint: Field Guide
 i(273101),	-- Blueprint: Expert Campfire
-i(273102),	-- Blueprint: Cookie's Feast
-i(273109),	-- Blueprint: Trapper's Workbench
 i(273112),	-- Blueprint: Alchemy Laboratory
 i(273113),	-- Blueprint: Master Forge
 i(273115),	-- Blueprint: Iron Oven \\ Blueprint: Baker's Oven
@@ -9587,7 +8992,6 @@ i(273128),	-- Maker's Spark
 i(273129),	-- Essence of Anarchy
 i(273130),	-- Undeath Engine
 i(273131),	-- Bottled Screams
-i(273141),	-- Blueprint: Fishing Rack
 i(273164),	-- Tarnished Highfeather Bangle
 i(273166),	-- Monster - Sword1H, Skyborne (Blue - Glowing)
 i(273167),	-- Monster - Staff, Skyborne (White - Glow)
@@ -9882,6 +9286,7 @@ i(273611),	-- Enchant Bracer - Minor Intellect
 i(273612),	-- Enchant Bracer - Minor Healing Power
 i(273613),	-- Enchant Bracer - Lesser Agility
 i(273614),	-- Enchant Bracer - Agility
+i(273615),	-- Enchant Bracer - Lesser Healing Power
 i(273616),	-- Enchant Bracer - Greater Agility
 i(273617),	-- Enchant 2H Weapon - Lesser Agility
 i(273618),	-- Enchant 2H Weapon - Lesser Strength
@@ -9912,15 +9317,11 @@ i(273800),	-- Thomas's Ring
 i(273801),	-- Marn's Warding Incense
 i(273816),	-- Apprentice's Blouse
 i(273822),	-- Vengeance
-i(273845),	-- Ashen Crystal Vial
+i(273845),	-- Faintly Glowing Staff \\ Ashen Crystal Vial
 i(273857),	-- Enchanted Branch
 i(273878),	-- [DNT] Crafted Tier Piece Placeholder
 i(273883),	-- Ca'zass's Head
 i(274020),	-- Seal of Armorcrafting
-i(274021),	-- Barrens Headband
-i(274023),	-- Stolen Wastewander Cowl
-i(274024),	-- Fizzbolt's Fashionable Fedora
-i(274025),	-- Guardians of Hyjal Tabard
 i(274026),	-- Extravagant Extravaganza Coin
 i(274027),	-- Placeholder
 i(274028),	-- Blood Red Bandana
@@ -10026,15 +9427,14 @@ i(274286),	-- Durgen Dirgehammer's Head
 i(274287),	-- Grand Hippogryph Feather
 i(274288),	-- Oily Chimaera Hair
 i(274289),	-- Dwarven Heirloom
-i(274373),	-- Leather-bound Flask
-i(274379),	-- Rousing Seed Pod
+i(274373),	-- Barkskin Purification Tonic \\ Leather-bound Flask
 i(274383),	-- Kanai's Knife
 i(274384),	-- Illegible Dogtags
 i(274386),	-- Toy Soldier
 i(274389),	-- Schematic: Swiftfeather Arrow
 i(274390),	-- Schematic: Swiftstrike Shot
-i(274391),	-- Formula: Enchant Off-Hand - Superior Intellect
-i(274392),	-- Formula: Enchant Off-Hand - Excellent Spirit
+i(274391),	-- Formula: Enchant Off Hand - Superior Intellect \\ Formula: Enchant Off-Hand - Superior Intellect
+i(274392),	-- Formula: Enchant Off Hand - Excellent Spirit \\ Formula: Enchant Off-Hand - Excellent Spirit
 i(274395),	-- Formula: Enchant Shield - Excellent Stamina
 i(274396),	-- Fel Ash Experimentation Notes
 i(274400),	-- Formula: Enchant Shield - Critical Strike
@@ -10043,11 +9443,6 @@ i(274411),	-- Survivor's Torch
 i(274412),	-- Fel-Slime Crystal
 i(274413),	-- Bag of Ashen Warlock Bones
 i(274414),	-- Pristine Fel-Slime Crystal
-i(274415),	-- Recipe: Sweetpaw Jam
-i(274417),	-- Barkskin Baubles
-i(274418),	-- Burrow Barricade
-i(274419),	-- Bear Poking Stick
-i(274420),	-- Wisepaw Totem
 i(274424),	-- Formula: Enchant Gloves - Lotus Claw
 i(274426),	-- Enchant Gloves - Lotus Claw
 i(274429),	-- Monster Weapon
@@ -10057,9 +9452,7 @@ i(274461),	-- Monster - Glaive, Night Elf Huntress
 i(274463),	-- Tattered Note
 i(274466),	-- Monster - Polearm, 2H NightElf
 i(274480),	-- Monster - Staff, Druid of the Talon
-i(274483),	-- The Walks of Shaman
 i(274490),	-- Centaur Hoofwarmers
-i(274491),	-- Pattern: Centaur Hoofwarmers
 i(274501),	-- Monster - Sword, Golden Long
 i(274559),	-- Level 23 Cloth Gear
 i(274560),	-- Hyjal Summit Trash Weapon
@@ -10110,75 +9503,22 @@ i(274719),	-- Forgotten Trompers
 i(274720),	-- Abandoned Boots
 i(274721),	-- Tattered Sandals
 i(274725),	-- Blackthorne Documents
-i(274740),	-- Quilted Cloak
-i(274741),	-- Rumpled Kilt
-i(274742),	-- Ratchet Wristwraps
-i(274743),	-- Defective Samophlange
-i(274744),	-- Barrens Basher
-i(274750),	-- Reflective Wristguards
-i(274751),	-- Sunburn Spaulders
-i(274752),	-- Sandstorm Cover
-i(274753),	-- Jhordy's Misplaced Screwdriver
-i(274754),	-- Suspicious Spare Part
-i(274755),	-- Steamwheedle Grips
-i(274756),	-- Impractical Headwarmer
-i(274757),	-- Substandard Belt Chain
-i(274758),	-- Coldmetal Guard
-i(274759),	-- Everlook Pathcarver
-i(274760),	-- Everlook Delivery Bot
-i(274761),	-- Parachute-Priest Pager
 i(274776),	-- Uninfected Root Sample
 i(274795),	-- Embroidered Scabbard
 i(274799),	-- Ochre Skeletal Warhorse
 i(274800),	-- Fishing Trip
-i(274915),	-- Sacristan Band
-i(274916),	-- Verger Greaves
 i(274917),	-- Brittle Trap
-i(274918),	-- Warding Candle
-i(274919),	-- Neophyte's Wand
-i(274920),	-- Twilight Carver
-i(274922),	-- Riverglades Marsh Gas
-i(274926),	-- Matriarch Quiver
-i(274928),	-- Curly's Chopper
-i(274929),	-- Hurley's Felling Axe
-i(274935),	-- Tessa's Tonic
-i(274938),	-- Gnollhide Tunic
-i(274939),	-- Southern Watch Leggings
-i(274940),	-- Unbalanced Fighting Stick
-i(274941),	-- Bristle Hills Mystic Robe
-i(274942),	-- Bristlepelt Vest
-i(274943),	-- Gnoll Crusher Leggings
-i(274944),	-- Bloodsnout Striker
-i(274946),	-- Gnollblood Robe
 i(274947),	-- Scroll of Imbue Lesser Flame
-i(274948),	-- Bottle of Powderfuse Port
 i(274949),	-- Scrap of Horde Heraldry
-i(274955),	-- Clobrok's Block Rock
 i(274956),	-- Wild Chicken Egg
-i(274957),	-- Lumber Luggers
 i(274958),	-- Especially Delicious Berries
-i(274961),	-- Brute Slayer Band
-i(274963),	-- Rot-Covered Harpoon
 i(274964),	-- Mote of Unstable Magic
 i(274966),	-- Silvermoon Shimmerwine
 i(274968),	-- Premier Senior Sergeant's Insignia
-i(274971),	-- Briny Seafood Stew
-i(274972),	-- Recipe: Briny Seafood Stew
-i(274974),	-- Message in a Bottle
 i(274975),	-- Rog'mar Supply Crate
-i(274976),	-- Plain Ol' Paletusk
 i(274978),	-- Leafre's Ring of Great Resistance
 i(274979),	-- Hyjal Silphium
 i(274981),	-- Rog'mar Report
-i(275028),	-- Twilight Mine Light
-i(275042),	-- Farholde Keep Tabard
-i(275043),	-- Bloodmaster's Ring
-i(275044),	-- Bloodsport Band
-i(275045),	-- Ogre Horn Ring
-i(275046),	-- Twilight Overlord Drape
-i(275049),	-- Farholde Bastion
-i(275050),	-- Cloak of the Cult
-i(275051),	-- Twilight Barrier
 i(275067),	-- Scroll of Imbue Chillknife
 i(275069),	-- Scroll of Rat Familiar
 i(275291),	-- Staff of the Deeproar
@@ -10194,7 +9534,6 @@ i(275441),	-- Cremation Longbow
 i(275443),	-- Highly Toxic Strain
 i(275478),	-- Monster - Mace, Barrow Deeps
 i(275482),	-- Barton's Scouting Report
-i(275521),	-- Crest of Lordaeron
 i(275580),	-- Pattern: Venomspew Gloves
 i(275581),	-- Pattern: Venomspew Cord
 i(275582),	-- Pattern: Venomspew Footpads
@@ -10232,7 +9571,6 @@ i(275688),	-- Power Recycler
 i(275698),	-- Yaely's Mending Tool
 i(275700),	-- Glaive Thrower Muffler
 i(275701),	-- Copper Plated Pipe
-i(275706),	-- Syndicate Uniform
 i(275708),	-- Ghansurok Hide Tunic
 i(275709),	-- Stolen Funds
 i(275711),	-- Chimaera Wing Cape
@@ -10245,12 +9583,11 @@ i(275719),	-- Weathered Spine
 i(275720),	-- Rough Lizard Hide
 i(275722),	-- Ukor's Lost Pack
 i(275723),	-- Halikor's Hoof
-i(275724),	-- Hexed Pendant
 i(275729),	-- Rusty Propeller Blade
 i(275730),	-- Arcane Censer
-i(275736),	-- Horn of Ve'ho
-i(275737),	-- Horned Pauldron
-i(275738),	-- Jereman Band
+i(275736),	-- Horn of Ve'han \\ Horn of Ve'ho
+i(275737),	-- Hermit's Pauldron \\ Horned Pauldron
+i(275738),	-- Jereman's Bauble \\ Jereman Band
 i(275739),	-- Wild Wristguards
 i(275740),	-- Ring of Nature's Cycles
 i(275741),	-- Ketharas' Linked Belt
@@ -10268,8 +9605,6 @@ i(275843),	-- Tuft of Hair
 i(275851),	-- Necrotic Crystal Fragment
 i(275882),	-- Intercepted Shipment
 i(275891),	-- Dwarven Skull
-i(275892),	-- Short Stout
-i(275893),	-- Searing Gourd
 i(275894),	-- Ghastly Cloth
 i(275895),	-- Fading Echo
 i(275903),	-- Hol'anyee's Big Book of Big Lizards
@@ -10280,27 +9615,25 @@ i(275939),	-- Arcane Fragment
 i(275940),	-- Solidified Mana Shard
 i(275957),	-- Tuft of Fox Fur
 i(275958),	-- Abandoned Supplies
-i(275968),	-- Ferocious Watcher's Signet
-i(275969),	-- Brilliant Watcher's Signet
-i(275970),	-- Vigilant Watcher's Signet
-i(275971),	-- Stalwart Watcher's Signet
-i(275972),	-- Ferocious Watcher's Signet
-i(275973),	-- Brilliant Watcher's Signet
-i(275974),	-- Vigilant Watcher's Signet
-i(275975),	-- Stalwart Watcher's Signet
-i(275976),	-- Ferocious Watcher's Signet
-i(275977),	-- Brilliant Watcher's Signet
-i(275979),	-- Vigilant Watcher's Signet
-i(275980),	-- Stalwart Watcher's Signet
-i(275981),	-- Ferocious Watcher's Signet
-i(275982),	-- Brilliant Watcher's Signet
-i(275983),	-- Vigilant Watcher's Signet
-i(275984),	-- Stalwart Watcher's Signet
+i(275968),	-- Initiate's Signet of Ferocity \\ Ferocious Watcher's Signet
+i(275969),	-- Initiate's Signet of Brilliance \\ Brilliant Watcher's Signet
+i(275970),	-- Initiate's Signet of Resolve \\ Vigilant Watcher's Signet
+i(275971),	-- Initiate's Signet of Vigilance \\ Stalwart Watcher's Signet
+i(275972),	-- Tracker's Signet of Ferocity \\ Ferocious Watcher's Signet
+i(275973),	-- Tracker's Signet of Brilliance \\ Brilliant Watcher's Signet
+i(275974),	-- Tracker's Signet of Resolve \\ Vigilant Watcher's Signet
+i(275975),	-- Tracker's Signet of Vigilance \\ Stalwart Watcher's Signet
+i(275976),	-- Watcher's Signet of Ferocity \\ Ferocious Watcher's Signet
+i(275977),	-- Watcher's Signet of Brilliance \\ Brilliant Watcher's Signet
+i(275979),	-- Watcher's Signet of Resolve \\ Vigilant Watcher's Signet
+i(275980),	-- Watcher's Signet of Vigilance \\ Stalwart Watcher's Signet
+i(275981),	-- Warden's Signet of Ferocity \\ Ferocious Watcher's Signet
+i(275982),	-- Warden's Signet of Brilliance \\ Brilliant Watcher's Signet
+i(275983),	-- Warden's Signet of Resolve \\ Vigilant Watcher's Signet
+i(275984),	-- Warden's Signet of Vigilance \\ Stalwart Watcher's Signet
 i(275985),	-- Unsullied Owl Statuette
-i(275989),	-- Tome of Dalaran
 i(275991),	-- Galvinquam's Drinking Gourd
 i(275993),	-- White Kodo
-i(275994),	-- Captain Nials' Correspondence
 i(275996),	-- The Founding of Dalaran
 i(275997),	-- Cracked Sentry Core
 i(275998),	-- Galvinquam's Belongings
@@ -10312,25 +9645,15 @@ i(276067),	-- Lost Shipping Crate
 i(276068),	-- Cask of Powderfuse Port
 i(276070),	-- Chol'aruk's Head
 i(276087),	-- Nail
-i(276088),	-- Bracket
+i(276088),	-- Metal Bracket \\ Bracket
 i(276099),	-- Sawyer Family Ledger
 i(276100),	-- Felhound Spike
 i(276101),	-- Zizplink's Grocery List
-i(276102),	-- Bladewind
-i(276105),	-- Scoutmaster's Eyepatch
 i(276145),	-- Explosive Runeshard
 i(276158),	-- Crystallized Shard \\ Crystalized Shard
 i(276160),	-- Mana Fragment
 i(276235),	-- Seeping Slime Essence
-i(276242),	-- Replica Dartol's Rod of Transformation
 i(276271),	-- Monster - Staff, Skyborne (White)
-i(276272),	-- Master Angler's Fishing Hat
-i(276273),	-- Empty Fish Bucket
-i(276274),	-- Surfer Shoes
-i(276275),	-- Bitter Baitling
-i(276278),	-- Handful of Coins
-i(276279),	-- Small Bag of Coins
-i(276280),	-- Hefty Sack of Coins
 i(276332),	-- Abigail's Hope
 i(276333),	-- Sawyer Family Seal
 i(276334),	-- Hand-Hewn Buckler
@@ -10351,38 +9674,22 @@ i(276473),	-- Level 57 Hunter Supplies
 i(276474),	-- Level 60 Hunter Supplies
 i(276502),	-- Darkspear Battle Tabard
 i(276504),	-- Theramore Battle Tabard
-i(276542),	-- Pattern: Spiritcaller Kilt
-i(276543),	-- Pattern: Spiritcaller Gloves
-i(276544),	-- Pattern: Spiritcaller Mantle
-i(276545),	-- Pattern: Spiritcaller Boots
-i(276561),	-- Black Tome
 i(276614),	-- Zayus's Exorcism Censer
 i(276637),	-- Currency Wallet
 i(276719),	-- DNT HEAD
-i(276720),	-- Criminal's Pauldrons
 i(276721),	-- DNT CHEST
-i(276722),	-- Gnoll Shackles
-i(276723),	-- Wise Gauntlets
-i(276724),	-- Trophy Belt
 i(276725),	-- DNT LEGS
-i(276727),	-- Glistening Stompers
 i(276754),	-- Sunderbark Vigil
 i(276765),	-- Leafre's Ring of Precise Spell Power
 i(276782),	-- Distant Communication Device
 i(276783),	-- Spirit of Retribution
 i(276784),	-- Charger's Lost Soul
 i(276785),	-- Danitha's Satchel
-i(276886),	-- Chol'aruk's Trophy Sword
-i(276887),	-- Big Bad Basher
-i(276888),	-- Quilboar Toothpick
-i(276889),	-- Thornwoven Shield
 i(276890),	-- Zarla's Journal
 i(276893),	-- Blackmaw Ritual Totem
 i(276894),	-- Ancient Gurubashi Idol
 i(276896),	-- Everlasting Silvermoon Shimmerwine
 i(276897),	-- A Lesson in Destruction
-i(276898),	-- Salve and Salvation
-i(276899),	-- Knucklebound Thimble
 i(276900),	-- Denric's Dog Tags
 i(276901),	-- Uncle's Heroism
 i(276902),	-- Youngster's First Bow
@@ -10391,8 +9698,6 @@ i(276904),	-- Shimmerwine Spirits
 i(276909),	-- Corrupted Cat Figurine
 i(276916),	-- The Coldbringer's Eye
 i(277112),	-- Zum'rah's Head
-i(277113),	-- Apprentice's Herb Pouch
-i(277115),	-- Apprentice's Mining Pack
 i(277128),	-- Bloodtalon Matriarch Eggs \\ Bloodtalon Martriarch Eggs
 i(277129),	-- Fragment of the Firelands
 i(277135),	-- Forgotten Loa Idol
@@ -10413,33 +9718,22 @@ i(277197),	-- Cycles of Morality
 i(277198),	-- Gatehouse Shipment
 i(277199),	-- Pouch of Smoldering Incense
 i(277202),	-- Artifact Seeker's Pendant
-i(277205),	-- Cloak of the Divine Storm
-i(277206),	-- Brilliant Cloak
-i(277207),	-- Well-Weathered Cloak
-i(277208),	-- Determined Band
-i(277209),	-- Ponderous Loop
-i(277210),	-- Pyrewood Signet Ring
 i(277211),	-- Dudd's Thinkin' Cap
 i(277212),	-- Soulwoven Epaulets
-i(277214),	-- Crusty Cuffs
-i(277215),	-- Nimble Gloves
+i(277215),	-- Plain Handwraps \\ Nimble Gloves
 i(277216),	-- Cross-Stitched Cord
 i(277217),	-- Patchy Pants
 i(277219),	-- Solomon's Comfortable Hat
 i(277220),	-- Shabby Spaulders
 i(277221),	-- Grimtotem Naturalist's Tunic
-i(277222),	-- Feathered Cuffs
-i(277223),	-- Traveled Gloves
-i(277224),	-- Kurzen Headshrinker's Cinch
+i(277222),	-- War Painted Cuffs \\ Feathered Cuffs
 i(277225),	-- Feathered Leggings
 i(277227),	-- Magistrate's Chain Hood
 i(277228),	-- Snakescale Pauldrons
 i(277229),	-- Enduring Chain Vest
 i(277230),	-- Grayscale Bracers
 i(277231),	-- Conductive Gauntlets
-i(277232),	-- Jailer's Discarded Chain
 i(277233),	-- Clinking Mail Legguards
-i(277235),	-- Soldier's Visor
 i(277236),	-- Pauldrons of Vindication
 i(277237),	-- Inspiring Chestplate
 i(277238),	-- Shimmering Bracers
@@ -10450,11 +9744,9 @@ i(277242),	-- Silverrune Greaves
 i(277243),	-- Silverbane Slicer
 i(277244),	-- Guardian's Maulers
 i(277245),	-- Swampspine Crusher
-i(277246),	-- Ruby-Adorned Blade
 i(277248),	-- Notched Ritual Rib
 i(277250),	-- The Skullcracker
 i(277253),	-- Staff of Brutal Cunning
-i(277256),	-- Dudd's Second-Favorite Wand
 i(277257),	-- Raven Hill Crest
 i(277259),	-- Fermented Restoration Potion
 i(277267),	-- Faladiel's Heart
@@ -10462,13 +9754,7 @@ i(277269),	-- Kuramaa's Mask
 i(277277),	-- Olgra's Adornments
 i(277278),	-- Handful of Cattails
 i(277279),	-- Speargrass Cuttings
-i(277284),	-- Migi's Lunch
-i(277286),	-- Encroacher's Claim
-i(277288),	-- Pathfinder's Clearway
-i(277289),	-- Traveler's Shawl
-i(277329),	-- Torch of Eternal Flame
 i(277331),	-- Handful of Complicated Parts
-i(277332),	-- Scuffed Shipping Crate
 i(277483),	-- Scroll of Frog Familiar
 i(277484),	-- Scroll of Confuse Beast
 i(277485),	-- Scroll of Imbue Frost
@@ -10491,28 +9777,21 @@ i(277501),	-- Scroll of Imbue Greater Frost
 i(277502),	-- Scroll of Imbue Precision
 i(277503),	-- Scroll of Imbue Spellbreak
 i(277504),	-- Scroll of Wit
-i(277508),	-- Prairie Wolf Pup Carrier
-i(277514),	-- Aka'rai's Tattered Vestments
-i(277515),	-- Dagger of Deals
 i(277518),	-- Last Week's Ration
 i(277519),	-- Nelanna's Enchanted Jewel
 i(277533),	-- Fel Tainted Journal \\ Fel Tained Journal
-i(277534),	-- Arena Spoils
 i(277555),	-- Monster - Shield, Skyborne (Gray)
-i(277566),	-- Yelmak's Potion
 i(277648),	-- Stormwind Library Card
 i(277649),	-- Undercity Library Card
 i(277651),	-- Bundle of Scrolls
 i(277653),	-- Abandoned Training Weapon
 i(277661),	-- Dull Storm Orb
 i(277665),	-- Charged Thunder Lizard Organ
-i(277672),	-- Rough Copper Chain Boots
 i(277717),	-- Spectral Bear Tabard
 i(277718),	-- Reins of the Spectral Bear
 i(277844),	-- Mirage Mirror
 i(277845),	-- A Reasonably Large Bag
 i(277910),	-- Mysticbloom Seed
-i(277915),	-- Stonetalon Supply Satchel
 i(277917),	-- Stonetalon Supply Bundle
 i(277936),	-- Glittering Sunstone
 i(277950),	-- Wastewanderer Rations
@@ -10539,19 +9818,9 @@ i(278049),	-- Excavation Tools
 i(278066),	-- Level 60 Tradeskill Supplies
 i(278069),	-- Potion of Tradeskill Testing - Level 60
 i(278078),	-- Prepared Incense
-i(278079),	-- Bundle of Herbs
-i(278080),	-- Bundle of Dried Cedar Twigs
-i(278081),	-- Sinew Thread
-i(278083),	-- Ceremonial Flint and Tinder
 i(278091),	-- Hailspite Frostmoss
 i(278097),	-- Kuroma's Head
 i(278098),	-- Kamuro's Head
-i(278117),	-- Hard Boiled Eggs
-i(278118),	-- Rich Broth
-i(278119),	-- Bread with Butter
-i(278120),	-- Fruit Platter
-i(278121),	-- Smoked Sausage
-i(278122),	-- Carrot Salad
 i(278159),	-- Lean Worg Flank
 i(278160),	-- Twitching Spider Carcass
 i(278161),	-- Dark Iron Delight
@@ -10572,33 +9841,19 @@ i(278423),	-- Monster - Mining Pick
 i(278462),	-- Packaged Tonics
 i(278469),	-- Premier High Warlord's Barricade
 i(278515),	-- Mus'hale's Stolen Supplies
-i(278543),	-- Pouch of Tomb Dust
 i(278569),	-- Yesterday's Leftovers
 i(278744),	-- Mirage Mirror
 i(278796),	-- Condensed Elemental Fragment
 i(278797),	-- Crystallized Elemental Shard
 i(278836),	-- Head of Rend Blackhand
 i(278868),	-- Tremayne Family Blacksmithing Techniques
-i(279020),	-- Unstable Potion
 i(279023),	-- Inert Potion
 i(279046),	-- Cracked Crab Pincer
 i(279171),	-- Diplomatic Satchel
-i(279173),	-- Veteran Adventurer's Chestpiece
-i(279174),	-- Veteran Adventurer's Belt
-i(279175),	-- Veteran Adventurer's Legguards
-i(279176),	-- Veteran Adventurer's Boots
-i(279177),	-- Veteran Adventurer's Bracer
-i(279178),	-- Veteran Adventurer's Gloves
-i(279179),	-- Veteran Adventurer's Cloak
-i(279180),	-- Veteran Adventurer's Hood
-i(279181),	-- Veteran Adventurer's Shoulderpads
-i(279182),	-- Ensemble: Veteran Adventurer's Outdoor Wear
 i(279186),	-- Stormheart's Still-beating Heart
 i(279215),	-- Monster - Bow, Skyborne
 i(279225),	-- Vilebranch Totem
 i(279229),	-- Lost Gryphon Egg
-i(279263),	-- Depleted Thorium Sabatons
-i(279274),	-- Gleaming Crescent Necklace
 i(279295),	-- Formula: Torch of Light
 i(279296),	-- Formula: Steadfast Libram
 i(279297),	-- Formula: Libram of Infusion
@@ -10631,14 +9886,9 @@ i(279379),	-- Jar of Snow
 i(279380),	-- Ceramic Jar
 i(279383),	-- Stolen Freewind Supplies
 i(279385),	-- Pristine Crimson Scale
-i(279386),	-- Sealed Company Request
 i(279389),	-- Sack of Homebrew Hops
-i(279390),	-- Case of Fallrook Varietal
-i(279391),	-- Taurajo Headband
 i(279392),	-- Glimmer
 i(279393),	-- Frostfall
-i(279394),	-- Darthalia's Orders
-i(279395),	-- Apothecary Vials
 i(279415),	-- Ash of Asharell
 i(279450),	-- Fractured Insignia
 i(279464),	-- Monster Shoulder (DNT)
@@ -10648,7 +9898,6 @@ i(279467),	-- Monster Legs (DNT)
 i(279468),	-- Monster Feet (DNT)
 i(279470),	-- Monster Hand (DNT)
 i(279472),	-- Pristine Pesterhide Pelt
-i(279481),	-- Package of Pristine Pelts
 i(279505),	-- Jagged Orcish Sword
 i(279507),	-- Curved Orcish Dagger
 i(279591),	-- Marek's Croc-Hunting Knife
@@ -10656,23 +9905,8 @@ i(279601),	-- Intact Raptor Hide
 i(279913),	-- Ti'ik's Head
 i(279934),	-- Shed Dark Dragonscale
 i(279938),	-- Trapper's Workbench
-i(279945),	-- Sewing Machine
-i(279947),	-- Seed Hybridizer
-i(279948),	-- Rock Garden
-i(279952),	-- Molten Foundry
-i(279957),	-- Cookie's Feast
-i(279960),	-- Lodestone
-i(279961),	-- Journeyman Campfire Kit
-i(279962),	-- Incense Candle
-i(279964),	-- Greenhouse
-i(279965),	-- Fishing Rack
-i(279966),	-- Fishing Hut
-i(279967),	-- Fish Bowl
 i(279969),	-- Field Guide
-i(279974),	-- Expert Campfire Kit
 i(279979),	-- Camp Chair
-i(279981),	-- Basic Campfire Kit
-i(279982),	-- Iron Oven
 i(279991),	-- Dry Branch
 i(280087),	-- Soft Nightsaber Pelt
 i(280092),	-- Wyrmtail
@@ -10686,39 +9920,21 @@ i(280375),	-- Worgen Bits
 i(280390),	-- Carved Stone Trinket
 i(280391),	-- Carved Stone Trinket
 i(280402),	-- Rusty Dagger
-i(280404),	-- Lordaeron Forever Tabard
 i(280413),	-- Flintfire's Shipment
 i(280417),	-- Damaged Blue Crystal
 i(280426),	-- Sack of Fish
 i(280449),	-- Skyborne Tabard
-i(280456),	-- Weevil K. Neevil
 i(280459),	-- Crystal Infused Scale
 i(280502),	-- Relic of the Fang
 i(280504),	-- Mudsoaked Scrap
-i(280544),	-- Cerulean Prideclaw
-i(280604),	-- Rage of the Storm
-i(280605),	-- Tidebringer's Claw
-i(280607),	-- Lightning's Grasp
-i(280611),	-- Veteran Adventurer's Loyal Companion
-i(280614),	-- Pachimari
 i(280615),	-- Galestrider Chick
-i(280623),	-- Veteran Adventurer's Rucksack
 i(280679),	-- Relic of the Claw
 i(280680),	-- Relic of the Silent Shadow
 i(280686),	-- Rod of Deep Dominion
-i(280696),	-- Elementalist's Guard
-i(280697),	-- Plagued Cockroach
-i(280699),	-- Undercity Cockroach
-i(280703),	-- Jungle Boa
-i(280729),	-- Shen'dorei Tabard
-i(280740),	-- Shen'dorei Windwell
-i(280794),	-- Brown Ground Squirrel Whistle
-i(280795),	-- Red Ground Squirrel Whistle
 i(280806),	-- Stolen Explosives
 i(280839),	-- Blackrock Supplies \\ Stolen Supplies
 i(280841),	-- Stolen Weapon
 i(280911),	-- Spiked Collar
-i(280943),	-- Tome of Tremayne Family Blacksmithing Techniques
 i(281015),	-- Scroll: DOST OREM
 i(281016),	-- Scroll: FORGOT HOOF THUD
 i(281017),	-- Scroll: KEEP CLEF FOCI
@@ -10727,38 +9943,19 @@ i(281019),	-- Monster - Sword1H, Skyborne Back Sheathe (Blue) \\ Monster - Sword
 i(281020),	-- Monster - Shield, Skyborne (White)
 i(281030),	-- Treaty of Understanding
 i(281038),	-- Feather of Jai'vhanel
-i(281040),	-- Prepared Incense
-i(281041),	-- Bundle of Herbs
-i(281042),	-- Bundle of Dried Cedar Twigs
-i(281043),	-- Sinew Thread
-i(281044),	-- Ceremonial Flint and Tinder
 i(281046),	-- Raven Hill Tome
 i(281052),	-- Ombassa's Hide
-i(281166),	-- Panda Collar
-i(281167),	-- Zergling Leash
-i(281168),	-- Diablo Stone
 i(281228),	-- Filled Freshwater Phial
 i(281229),	-- Empty Phial
 i(281234),	-- Potion of Winterspring Shrouding
 i(281241),	-- Chillwind Chimaera Fur
 i(281242),	-- Winterspring Owl Feather
-i(281250),	-- Forest Oracle's Cloak
-i(281251),	-- Courier's Wristguards
-i(281252),	-- Harpy Claw Ring
-i(281258),	-- Essene's Hope
 i(281259),	-- Stonard Stompers
 i(281260),	-- Ancestral Waistcord
 i(281261),	-- Crystal-flecked Cord
 i(281262),	-- Crystal-flecked Waistguard
 i(281263),	-- Wicked Lich's Finger
 i(281264),	-- Ghastly Bow
-i(281265),	-- Roadwatcher's Confidence
-i(281266),	-- Furred Belt
-i(281269),	-- Mogra's Friendship Bracelet
-i(281270),	-- Thra's Friendship Bracelet
-i(281271),	-- Puk's Friendship Bracelet
-i(281272),	-- Brog's Friendship Bracelet
-i(281273),	-- Migi's Friendship Bracelet
 i(281275),	-- Mantle of Scaleslaying
 i(281276),	-- Pauldrons of Scaleslaying
 i(281277),	-- Shoulders of Scaleslaying
@@ -10770,33 +9967,19 @@ i(281282),	-- A Little Somethin'
 i(281286),	-- High Order Pendant
 i(281287),	-- Windshaper Pendant
 i(281288),	-- Shen'dorei Signet
-i(281289),	-- Swordfeather Cloak
-i(281290),	-- Replica Crescent Necklace
-i(281291),	-- Mathystra Channeling Orb
-i(281292),	-- Onu's Patience
-i(281293),	-- Weathered Deathstalker's Blade
-i(281294),	-- Expended Apothecary Vial
-i(281295),	-- Pelt Pants
 i(281298),	-- Ti'ik's Tattered Trousers
 i(281299),	-- Profane Ritual Robes
 i(281301),	-- Sacrificial Shackles
 i(281302),	-- Whelpscale Necklace
 i(281303),	-- Bleached Scale Vest
-i(281308),	-- Jameson's Backup Sword
-i(281309),	-- Razormaw Shorts
-i(281310),	-- Carnage Trousers
-i(281315),	-- Foulfur Gloves
 i(281316),	-- Glimmerchain Trousers
 i(281317),	-- Redstone Boots
 i(281323),	-- Spirit-buckle Belt
 i(281324),	-- Sailing Tunic
 i(281328),	-- Valory Family Crest
-i(281330),	-- Message from the Supreme Magister
 i(281331),	-- Windshaper Ritual Dagger
-i(281347),	-- Torn Page
 i(281348),	-- Parchment of Chaos
 i(281349),	-- Parchment of Darkness
-i(281350),	-- Keystone Fragment
 i(281352),	-- Ancient Runestone
 i(281356),	-- Burnt Page
 i(281358),	-- Stone Key
@@ -10816,7 +9999,6 @@ i(281636),	-- Museum Keeper's Chain
 i(281637),	-- Antique Bulwark
 i(281657),	-- Corrupted Riverglades Pendant
 i(281660),	-- Iron Star
-i(281673),	-- Loop of Sacrifice
 i(281675),	-- Lakeshire Firefighter's Headband
 i(281680),	-- Customer Service Care Package
 i(281685),	-- Restored Cloth Helm
@@ -10879,16 +10061,7 @@ i(282026),	-- Unyielding Battle Signet
 i(282028),	-- Broken Frond of Celastrus
 i(282046),	-- Gnome Skull
 i(282080),	-- Flame Seared Signet
-i(282283),	-- Malignant Root
-i(282286),	-- Shipwright's Satchel
 i(282294),	-- Guild Tabard
-i(282338),	-- Hallowed Memorandum
-i(282346),	-- Tainted Tablet
-i(282380),	-- Glyphic Parchment
-i(282418),	-- Humming Recall Crystal
-i(282419),	-- Crumpled Note
-i(282421),	-- Scribbled Note
-i(282422),	-- Simple Note
 i(282559),	-- Fallen Adventurer's Femur
 i(282719),	-- Monster - Bow, Skyborne (Gray)
 i(283389),	-- Skonk's List
@@ -10896,10 +10069,8 @@ i(284092),	-- Keystone Fragment
 i(284093),	-- Keystone Fragment
 i(284146),	-- Essene's Waterskin
 i(284150),	-- Essene's Spellbook
-i(284151),	-- Essene's Note
 i(284271),	-- Emergency Cache
 i(284583),	-- Coin Pouch
-i(284584),	-- Coin Pouch
 i(284585),	-- Coin Pouch
 i(284586),	-- Coin Pouch
 i(284597),	-- Monster - Mace, Thaurissan Hammer
@@ -10908,12 +10079,6 @@ i(284844),	-- Dragonmaw Dispatch
 i(284845),	-- Thicket Raptor Hide
 i(284870),	-- Schematic: Unsanctified Grenade
 i(284871),	-- Recipe: Transmute Legionite
-i(285168),	-- Theramore Basic Care Package
-i(285169),	-- Theramore Standard Care Package
-i(285170),	-- Theramore Advanced Care Package
-i(285171),	-- Darkspear Basic Care Package
-i(285172),	-- Darkspear Standard Care Package
-i(285173),	-- Darkspear Advanced Care Package
 i(285242),	-- Monster - 2H Mace, Barrow Deeps - Red
 i(285289),	-- Plans: Cracked Blacksmith Hammer
 i(285290),	-- Plans: Mithril Blacksmith Hammer
@@ -10949,11 +10114,9 @@ i(286085),	-- Schematic: Large Purple Rocket Cluster
 i(286086),	-- Schematic: Large White Rocket Cluster
 i(286087),	-- Schematic: Large Yellow Rocket Cluster
 i(286139),	-- Monster - 1H Mace, Barrow Deeps - Red
-i(286152),	-- Plated Armorfish
 i(286153),	-- Recipe: Plated Armorfish
 i(286205),	-- Half-Eaten Fish
 i(286209),	-- Shiny Junk
-i(286210),	-- A Winter Veil Gift
 i(286214),	-- Duskweed Petal
 i(286215),	-- Vial of Animal Blood
 i(286263),	-- Muradin Bronzebeard's Silver Coin
@@ -11011,20 +10174,13 @@ i(286415),	-- Reliquary of Tyr
 i(286424),	-- Monster - Sword, Scimitar Basic
 i(286425),	-- Monster - Sword, Scimitar Basic
 1.60.1.70009
-i(279045),	-- Thundris' Letter
-i(279048),	-- Alexston's Reply
 i(279082),	-- Gnarlpine Totem
-i(279275),	-- Clouded Water Globe
-i(279276),	-- Mathystral Amulet Fragment
-i(279277),	-- Mathystral Amulet
 i(279279),	-- Peerless Eye
 i(279378),	-- Lunar Pendant
-i(279598),	-- Menethil Statuette
 i(279821),	-- Khaz Modan Timber
 i(279822),	-- Khaz Modan Iron
 i(279915),	-- Nord'el
 i(279993),	-- Titanic Keystone
-i(280099),	-- Crimson Crate
 i(280103),	-- Razormaw Incisor
 i(280132),	-- Perfect Razormaw Egg
 i(280319),	-- Unruptured Stalker Gland
@@ -11047,8 +10203,6 @@ i(281036),	-- Barrens Operations Best Practices
 i(281037),	-- One "Gerenzo", of Stonetalon
 i(281039),	-- Mulgore Expansion Plans
 i(281048),	-- Clearcutter Key
-i(281240),	-- Tom's Gift
-i(281243),	-- Hollee's Note
 i(286017),	-- Dewy Lasher Frond
 i(286075),	-- Herak's Head
 i(286200),	-- Dillinger's Report
@@ -11060,8 +10214,101 @@ i(286269),	-- Glowing Crystal Fragment
 i(286326),	-- Riptear's Heart
 i(286647),	-- Depleted Crystal Heart
 i(286648),	-- Depleted Crystal Heart
-i(287090),	-- Sharpened Letter Opener
+i(287090),	-- Letter Opener \\ Sharpened Letter Opener
 1.60.1.70170
 i(286140),	-- Monster - Shield, Paladin
 i(287416),	-- Truskis' Cheesecake Slice
 i(287505),	-- Tender Strider Meat
+1.60.1.70245
+i(285352),	-- Tabard of Eternal Exploration
+i(285353),	-- Eternal Explorer's Backpack
+i(285354),	-- Azurky
+1.60.1.70291
+i(287963),	-- Roasted Quail
+i(287964),	-- Morning Glory Dew
+i(287966),	-- Minor Healing Potion
+i(287967),	-- Lesser Healing Potion
+i(287968),	-- Minor Mana Potion
+i(287969),	-- Lesser Mana Potion
+i(287971),	-- Woolen Bag
+i(287972),	-- Rumsey Rum Dark
+i(287973),	-- Tender Wolf Steak
+i(287974),	-- Grilled Squid
+i(287975),	-- Swiftness Potion
+i(287976),	-- Free Action Potion
+i(287977),	-- Greater Healing Potion
+i(287978),	-- Rough Sharpening Stone
+i(287979),	-- Lesser Wizard Oil
+i(287980),	-- Elemental Sharpening Stone
+i(287992),	-- Old Key
+1.60.1.70425
+i(250991),	-- Recipe: Greater Mender's Potion
+i(288336),	-- Blue Firework
+i(288337),	-- Green Firework
+i(288338),	-- Red Firework
+i(288339),	-- Red Streaks Firework
+i(288340),	-- Yellow Rose Firework
+1.60.1.70450
+i(98550),	-- Blossoming Ancient
+i(229368),	-- Gill'el
+i(244228),	-- Sash of the Tipsy Sage
+i(244229),	-- Angler's Mantle
+i(244230),	-- Strawhat of Frosted Currents
+i(244231),	-- Ensemble: Stillwater Fisher Attire
+i(244352),	-- Cloak of the Veiled Paws
+i(275818),	-- Pinky
+i(286724),	-- Verdant Sea Turtle
+i(286727),	-- Crimson Rooster
+i(286756),	-- Spectral Wolf Pack
+i(287620),	-- Rugged Totemic Backpack
+i(287621),	-- Gilded Blademaster's Chestpiece
+i(287622),	-- Gilded Blademaster's Belt
+i(287623),	-- Gilded Blademaster's Legguards
+i(287624),	-- Gilded Blademaster's Boots
+i(287625),	-- Gilded Blademaster's Gloves
+i(287626),	-- Gilded Blademaster's Banner
+i(287627),	-- Gilded Blademaster's Collar
+i(287628),	-- Gilded Blademaster's Shoulders
+i(287647),	-- Ensemble: Gilded Blademaster's Armor
+i(287648),	-- Gilded Blademaster's Greatsword
+i(288185),	-- Adventurer's Tent
+1.60.1.70862
+i(7190),	-- Scorched Rocket Boots
+i(249519),	-- Formula: Frozen Heart of the Mountain
+i(249520),	-- Formula: Molten Heart of the Mountain
+i(249521),	-- Formula: Dormant Heart of the Mountain
+i(251340),	-- Plans: Veteran's Chain Shirt
+i(251342),	-- Plans: Protector's Chain Shirt
+i(251343),	-- Plans: Acolyte's Chain Shirt
+i(251344),	-- Plans: Crusader's Chain Shirt
+i(251345),	-- Plans: Veteran's Chain Leggings
+i(251346),	-- Plans: Guard's Chain Leggings
+i(251347),	-- Plans: Protector's Chain Leggings
+i(251348),	-- Plans: Acolyte's Chain Leggings
+i(251349),	-- Plans: Crusader's Chain Leggings
+i(251350),	-- Plans: Veteran's Chain Helm
+i(251351),	-- Plans: Guard's Chain Helm
+i(251352),	-- Plans: Protector's Chain Helm
+i(251353),	-- Plans: Acolyte's Chain Helm
+i(251354),	-- Plans: Crusader's Chain Helm
+i(251395),	-- Plans: Shining Mithril Helm
+i(252771),	-- Pattern: Brawler's Leather Armor
+i(252772),	-- Pattern: Trapper's Leather Armor
+i(252773),	-- Pattern: Defender's Leather Armor
+i(252774),	-- Pattern: Totemic Leather Armor
+i(252775),	-- Pattern: Stormrider's Leather Armor
+i(252776),	-- Pattern: Wisdom's Leather Armor
+i(252792),	-- Pattern: Brawler's Leather Pants
+i(252793),	-- Pattern: Trapper's Leather Pants
+i(252794),	-- Pattern: Defender's Leather Pants
+i(252795),	-- Pattern: Totemic Leather Pants
+i(252796),	-- Pattern: Stormrider's Leather Pants
+i(252797),	-- Pattern: Wisdom's Leather Pants
+i(252814),	-- Pattern: Brawler's Leather Helm
+i(252815),	-- Pattern: Trapper's Leather Helm
+i(252816),	-- Pattern: Defender's Leather Helm
+i(252817),	-- Pattern: Totemic Leather Helm
+i(252818),	-- Pattern: Stormrider's Leather Helm
+i(252819),	-- Pattern: Wisdom's Leather Helm
+i(289559),	-- Enchant Boots - Speed
+i(289560),	-- Formula: Enchant Boots - Speed

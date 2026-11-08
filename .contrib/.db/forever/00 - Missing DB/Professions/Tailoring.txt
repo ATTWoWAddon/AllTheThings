@@ -10,6 +10,7 @@ r(12090),	-- Stormcloth Boots
 r(20848),	-- Flarecore Mantle
 r(20849),	-- Flarecore Gloves
 r(22759),	-- Flarecore Wraps
+r(22813),	-- Gordok Ogre Suit
 r(22866),	-- Belt of the Archmage
 r(22867),	-- Felcloth Gloves
 r(22868),	-- Inferno Gloves
@@ -27,6 +28,7 @@ r(24092),	-- Bloodvine Leggings
 r(24093),	-- Bloodvine Boots
 r(24901),	-- Runed Stygian Leggings
 r(24902),	-- Runed Stygian Belt
+r(24903),	-- Runed Stygian Boots
 r(26087),	-- Core Felcloth Bag
 r(27659),	-- Enchanted Runecloth Bag
 r(27660),	-- Big Bag of Enchantment
@@ -40,8 +42,6 @@ r(28210),	-- Gaea's Embrace
 r(28480),	-- Sylvan Vest
 r(28481),	-- Sylvan Crown
 r(28482),	-- Sylvan Shoulders
-r(44950),	-- Green Winter Clothes
-r(44958),	-- Red Winter Clothes
 r(428424),	-- Phoenix Bindings
 r(429351),	-- Extraplanar Spidersilk Boots
 r(435610),	-- Gneuro-Linked Arcano-Filament Monocle
@@ -165,8 +165,6 @@ Missing in Tailoring
 1.60.1.69876
 r(7636),	-- Green Woolen Robe
 r(8778),	-- Boots of Darkness
-r(44950),	-- Green Winter Clothes
-r(44958),	-- Red Winter Clothes
 r(428424),	-- Phoenix Bindings
 r(429351),	-- Extraplanar Spidersilk Boots
 r(435610),	-- Gneuro-Linked Arcano-Filament Monocle
@@ -269,7 +267,6 @@ r(1257493),	-- Ghostweave Hood
 r(1257494),	-- Earthenweave Crown
 r(1257495),	-- Bottomless Reagent Bag
 r(1263080),	-- Loom
-r(1263425),	-- Faction Banner
 r(1277784),	--
 r(1297120),	-- Venomspew Gloves
 r(1297121),	-- Venomspew Cord

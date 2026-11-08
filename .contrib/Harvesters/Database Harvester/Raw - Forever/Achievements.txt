@@ -453,3 +453,59 @@
 64350@@@Darkspear Islands bases assaulted
 64351@@@Darkspear Islands bases defended
 64352@@@Darkspear Islands flags captured
+1.60.1.70862
+64195@@@Hidden: Flight Path Tracker - EK - Westfall
+64196@@@Hidden: Flight Path Tracker - EK - Stormwind
+64197@@@Hidden: Flight Path Tracker - EK - Arathi
+64198@@@Hidden: Flight Path Tracker - EK - Wetlands
+64199@@@Hidden: Flight Path Tracker - EK - Badlands
+64200@@@Hidden: Flight Path Tracker - EK - Riverglades
+64201@@@Hidden: Flight Path Tracker - EK - Redridge
+64202@@@Hidden: Flight Path Tracker - EK - Hillsbrad
+64203@@@Hidden: Flight Path Tracker - EK - Duskwood
+64236@@@Hidden: Flight Path Tracker - EK - Blasted Lands
+64237@@@Hidden: Flight Path Tracker - EK - Burning Steppes
+64238@@@Hidden: Flight Path Tracker - EK - Eastern Plaguelands
+64239@@@Hidden: Flight Path Tracker - EK - Ironforge
+64240@@@Hidden: Flight Path Tracker - EK - Loch Modan
+64241@@@Hidden: Flight Path Tracker - EK - Searing Gorge
+64242@@@Hidden: Flight Path Tracker - EK - Silverpine Forest
+64243@@@Hidden: Flight Path Tracker - EK - Stranglethorn (H)
+64244@@@Hidden: Flight Path Tracker - EK - Swamp of Sorrows
+64245@@@Hidden: Flight Path Tracker - EK - The Hinterlands
+64246@@@Hidden: Flight Path Tracker - EK - Undercity
+64247@@@Hidden: Flight Path Tracker - EK - Western Plaguelands
+64248@@@Hidden: Flight Path Tracker - K - Ashenvale (A)
+64249@@@Hidden: Flight Path Tracker - K - Azshara
+64250@@@Hidden: Flight Path Tracker - K - Darkshore
+64251@@@Hidden: Flight Path Tracker - K - Desolace
+64252@@@Hidden: Flight Path Tracker - K - Dustwallow Marsh
+64253@@@Hidden: Flight Path Tracker - K - Felwood
+64254@@@Hidden: Flight Path Tracker - K - Feralas (A)
+64255@@@Hidden: Flight Path Tracker - K - Moonglade
+64256@@@Hidden: Flight Path Tracker - K - Mount Hyjal
+64257@@@Hidden: Flight Path Tracker - K - Orgrimmar
+64258@@@Hidden: Flight Path Tracker - K - Silithus
+64259@@@Hidden: Flight Path Tracker - K - Stonetalon Mountains
+64260@@@Hidden: Flight Path Tracker - K - Tanaris
+64261@@@Hidden: Flight Path Tracker - K - Teldrassil
+64262@@@Hidden: Flight Path Tracker - K - The Barrens (A)
+64263@@@Hidden: Flight Path Tracker - K - Thousand Needles
+64264@@@Hidden: Flight Path Tracker - K - Thunder Bluff
+64265@@@Hidden: Flight Path Tracker - K - Un'Goro Crater
+64266@@@Hidden: Flight Path Tracker - K - Winterspring
+64267@@@Hidden: Flight Path Tracker - K - Feralas, Feathermoon
+64268@@@Hidden: Flight Path Tracker - K - Feralas, Thalanaar
+64269@@@Hidden: Flight Path Tracker - K - Mount Hyjal, Tainted Foothills
+64270@@@Hidden: Flight Path Tracker - K - Mount Hyjal, Summit of Eternity
+64271@@@Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay
+64272@@@Hidden: Flight Path Tracker - EK - Stranglethorn, Grom'gol
+64273@@@Hidden: Flight Path Tracker - K - The Barrens, Crossroads
+64274@@@Hidden: Flight Path Tracker - K - The Barrens, Ratchet
+64275@@@Hidden: Flight Path Tracker - K - The Barrens, Camp Taurajo
+64276@@@Hidden: Flight Path Tracker - K - Ashenvale, Splintertree Post
+64277@@@Hidden: Flight Path Tracker - K - Ashenvale, Zoram'gar Outpost
+64278@@@Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay (A)
+64279@@@Hidden: Flight Path Tracker - K - Feralas (H)
+64280@@@Hidden: Flight Path Tracker - K - Ashenvale (H)
+64281@@@Hidden: Flight Path Tracker - K - The Barrens (H)

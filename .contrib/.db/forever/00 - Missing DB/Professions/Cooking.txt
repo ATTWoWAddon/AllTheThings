@@ -33,6 +33,7 @@ r(7828),	-- Rockscale Cod
 r(8238),	-- Savory Deviate Delight
 r(8607),	-- Smoked Bear Meat
 r(9513),	-- Thistle Tea
+r(13028),	-- Goldthorn Tea
 r(15853),	-- Lean Wolf Steak
 r(15855),	-- Roast Raptor
 r(15856),	-- Hot Wolf Ribs

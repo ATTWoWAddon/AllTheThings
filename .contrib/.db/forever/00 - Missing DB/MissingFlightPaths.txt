@@ -30,3 +30,5 @@ fp(3261),	-- Quest Path 11515: 1.60.0 - Shaman - Level 40 Quest - Thousand Needl
 fp(3262),	-- Quest Path 11517: 1.60.0 - Shaman - Level 40 Quest - Thousand Needles - A - 6 - Flight Back
 fp(3274),	-- Powderfuse Port, Riverglades
 fp(3275),	-- Powderfuse Port, Riverglades
+1.60.1.70630
+fp(3361),	-- Quest Path 12018: 1.60.1 - Zephras Isle - Spires Wind Bridge

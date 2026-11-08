@@ -53,7 +53,6 @@ exploration(141),	-- Teldrassil
 exploration(145),	-- Algaz Gate
 exploration(148),	-- Darkshore
 exploration(151),	-- Designer Island
-exploration(153),	-- Ruins of Lordaeron
 exploration(155),	-- Night Web's Hollow
 exploration(158),	-- Agamand Family Crypt
 exploration(163),	-- Gunther's Retreat
@@ -62,7 +61,6 @@ exploration(169),	-- Whispering Shore
 exploration(170),	-- Lordamere Lake
 exploration(173),	-- Faol's Rest
 exploration(187),	-- Darnassus UNUSED
-exploration(189),	-- Steelgrill's Depot
 exploration(195),	-- School of Necromancy
 exploration(196),	-- Uther's Tomb
 exploration(203),	-- Mardenholde Keep
@@ -110,7 +108,6 @@ exploration(343),	-- Camp Wurg
 exploration(349),	-- Wildhammer Keep
 exploration(352),	-- Zun'watha
 exploration(357),	-- Feralas
-exploration(358),	-- Brambleblade Ravine
 exploration(361),	-- Felwood
 exploration(364),	-- The Den
 exploration(365),	-- Burning Blade Coven
@@ -167,11 +164,8 @@ exploration(495),	-- DELETE ME
 exploration(500),	-- Moggle Point
 exploration(505),	-- West Point Tower
 exploration(506),	-- Lost Point
-exploration(510),	-- The Dragonmurk
 exploration(514),	-- Foothold Citadel
 exploration(515),	-- Ironclad Prison
-exploration(516),	-- Dustwallow Bay
-exploration(517),	-- Tidefury Cove
 exploration(541),	-- Marshal's Refuge
 exploration(542),	-- Fungal Rock
 exploration(597),	-- Ghost Walker Post
@@ -271,9 +265,7 @@ exploration(1640),	-- Spirit Rise
 exploration(1641),	-- Hunter Rise
 exploration(1658),	-- Cenarion Enclave
 exploration(1659),	-- Craftsmen's Terrace
-exploration(1660),	-- Warrior's Terrace
 exploration(1661),	-- The Temple Gardens
-exploration(1662),	-- Tradesmen's Terrace
 exploration(1718),	-- The Great Lift
 exploration(1742),	-- Spirit Den
 exploration(1757),	-- The Crimson Veil
@@ -287,7 +279,6 @@ exploration(1771),	-- Shrine of the Deceiver
 exploration(1779),	-- Draenil'dur Village
 exploration(1817),	-- Stagalbog Cave
 exploration(1837),	-- Witherbark Caverns
-exploration(1857),	-- Thoradin's Wall
 exploration(1880),	-- Featherbeard's Hovel
 exploration(1881),	-- Shindigger's Camp
 exploration(1887),	-- Bogen's Ledge
@@ -386,7 +377,6 @@ exploration(2597),	-- Alterac Valley
 exploration(2617),	-- Scrabblescrew's Camp
 exploration(2626),	-- Terrorweb Tunnel
 exploration(2637),	-- Kargathia Keep
-exploration(2657),	-- Valley of Bones
 exploration(2677),	-- Blackwing Lair
 exploration(2717),	-- Molten Core
 exploration(2757),	-- Shrine of the Fallen Warrior
@@ -505,7 +495,6 @@ exploration(15828),	-- The Burning of Andorhal
 exploration(15938),	-- Starfall Village
 exploration(16003),	-- Azshara
 exploration(16004),	-- Mount Hyjal
-exploration(16005),	-- Darkwhisper Gorge
 exploration(16006),	-- Xavian
 exploration(16007),	-- Satyrnaar
 exploration(16008),	-- Bough Shadow
@@ -602,7 +591,6 @@ exploration(16169),	-- Ashenvale
 exploration(16234),	-- Legashi Stronghold
 exploration(16236),	-- Scarlet Enclave
 exploration(16295),	-- The Scarab Dais
-exploration(16335),	-- New Avalon
 exploration(16361),	-- The Forbidding Sea
 exploration(16362),	-- Shadow Hold
 exploration(16369),	-- Prison
@@ -652,18 +640,9 @@ exploration(16611),	-- Ruins of Lordaeron
 exploration(16612),	-- King's Alley
 exploration(16614),	-- Lordaeron Graveyard
 exploration(16615),	-- Lordamere Overlook
-exploration(16616),	-- Whispering Forest
 exploration(16617),	-- Market Street
-exploration(16625),	-- Windsong Lake
-exploration(16626),	-- Gustberry Lowlands
-exploration(16628),	-- Valanaar Skydocks
-exploration(16629),	-- Shrine of Akir
-exploration(16630),	-- Rohashi Spires
-exploration(16631),	-- Shadowgale Forest
 exploration(16632),	-- Half-Pint Tavern
-exploration(16636),	-- Falaath Village
 exploration(16637),	-- Stomping Grounds
-exploration(16638),	-- Valanaar
 exploration(16650),	-- Tyler's Test Subzone (Desolace)
 exploration(16651),	-- Shen'dralas
 exploration(16653),	-- Battle for Gilneas
@@ -676,14 +655,9 @@ exploration(16659),	-- The Overlook
 exploration(16660),	-- Gilnean Coast
 exploration(16661),	-- Beneath the Double Rainbow
 exploration(16662),	-- Stormr's Test Map
-exploration(16663),	-- Windfield Orchard
 exploration(16672),	-- Shriekling Den
 exploration(16673),	-- Thendal Cave
 exploration(16674),	-- Bandit Hideout
-exploration(16675),	-- Magram Front
-exploration(16676),	-- Outcast Hideaway
-exploration(16677),	-- Bristleback Retreat
-exploration(16678),	-- Evenshade's Overlook
 exploration(16679),	-- Sanctum of Storms
 exploration(16720),	-- Nightclaw Cavern
 exploration(16728),	-- Eastwind Shore
@@ -691,7 +665,6 @@ exploration(16732),	-- Excavation Site: Wetlands
 exploration(16739),	-- Poacher's Den
 exploration(16740),	-- Martsirt
 exploration(16741),	-- Ironforge Submarine Facility
-exploration(16742),	-- Forlorn Gardens
 exploration(16744),	-- Southern Watch
 exploration(16756),	-- Ruins of Gilneas
 exploration(16757),	-- Gilneas City
@@ -705,13 +678,6 @@ exploration(16764),	-- The Blackwald
 exploration(16765),	-- Hayward Fishery
 exploration(16772),	-- Unused
 exploration(16820),	-- The Forbidding Sea
-exploration(16833),	-- Ruins of Ban'aethal
-exploration(16848),	-- Elderwild
-exploration(16849),	-- Summit of Eternity
-exploration(16853),	-- Tainted Foothills
-exploration(16866),	-- Dae'gun
-exploration(16867),	-- Shrine of Aviana
-exploration(16868),	-- Mourning's Rest
 exploration(16870),	-- Archimonde's Fall
 exploration(16876),	-- Whelgar's Excavation Site
 exploration(16877),	-- Lost Marsh
@@ -726,22 +692,13 @@ exploration(16985),	-- The Shaper's Terrace
 exploration(16986),	-- Pillar of Assimilation
 exploration(16988),	-- Rise of Spirits
 exploration(17044),	-- Gloomrise
-exploration(17045),	-- Skywatcher Plateau
-exploration(17050),	-- Felblood Scar
 exploration(17052),	-- Scalding Ridge
 exploration(17065),	-- Gilneas
 exploration(17066),	-- Shark-Infested Waters
-exploration(17144),	-- Malorne's Retreat
-exploration(17145),	-- Cradle of Tranquility
 exploration(17191),	-- Manor Mistmantle
 exploration(17203),	-- Stormwind Harbor
 exploration(17221),	-- Skywall
 exploration(17223),	-- Camp Gev'rek
-exploration(17674),	-- West Pylon Watchtower
-exploration(17675),	-- East Pylon Watchtower
-exploration(17676),	-- Windsong Standing Stones
-exploration(17677),	-- Overlook Standing Stones
-exploration(17684),	-- Fairweather Stables
 exploration(17707),	-- Old Dalaran Ruins
 exploration(17716),	-- Dragonmaw Retreat
 exploration(17732),	-- Excavation Site: Wetlands
@@ -751,3 +708,39 @@ exploration(17804),	-- Blackrock Spire
 exploration(17808),	-- Ashwood's Fall
 exploration(17809),	-- Forlorn Pit
 exploration(17824),	-- The Eventide
+1.60.1.70291
+exploration(17845),	-- Dreambound Pinnacle
+exploration(17847),	-- Twilight Hollow
+1.60.1.70425
+exploration(17852),	-- Hyjal Crater
+exploration(17853),	-- Sunken Hollow
+1.60.1.70862
+exploration(16550),	-- The Drowned City
+exploration(16554),	-- Blackmaw Hold
+exploration(16619),	-- Excavation Site - Bael Modan
+exploration(16620),	-- Alcaz Prison
+exploration(16667),	-- The Shaper's Terrace
+exploration(16842),	-- Krol'dok Stronghold
+exploration(16928),	-- Shaper's Plateau
+exploration(16929),	-- Pillar of Assimilation
+exploration(16930),	-- The Verdant Plains
+exploration(16931),	-- Lost Tar Pits
+exploration(16932),	-- Ruby Spring
+exploration(16933),	-- Walk of Communion
+exploration(16934),	-- The Highlands Causeway
+exploration(16935),	-- Watcher's Overlook
+exploration(16937),	-- Botanical Grounds
+exploration(17036),	-- Crystalline Highlands
+exploration(17037),	-- Sunken Hollow
+exploration(17038),	-- Flooded Shrine
+exploration(17039),	-- Deep Archives
+exploration(17040),	-- Altar of the Serpent
+exploration(17041),	-- Eternal Amphitheater
+exploration(17042),	-- Abyssal Dais
+exploration(17043),	-- The Unsinkable
+exploration(17046),	-- Ataal'Byzal
+exploration(17309),	-- Defiled Peak
+exploration(17310),	-- Festering Grotto
+exploration(17311),	-- Blackmaw Grove
+exploration(17312),	-- Blackmaw Stillwater
+exploration(17313),	-- Bonesnout's Thicket

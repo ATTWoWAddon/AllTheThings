@@ -32198,3 +32198,545 @@
 1327341@@@Dreamfall
 1327368@@@Fixate
 1327369@@@Fixate
+1.60.1.70862
+11069@@@Accelerant
+13732@@@Efficient Strikes
+13812@@@Explosive Trap
+14162@@@Coup de Grace
+14314@@@Explosive Trap
+14315@@@Explosive Trap
+16166@@@Lightning Mastery
+20575@@@Command
+20576@@@Command
+21563@@@Command
+29438@@@Precision
+36562@@@Dismiss Pet
+43869@@@You're a Zombie!
+43945@@@You're a ...! (Effects1)
+43948@@@Bite!
+43949@@@Lurch!
+43950@@@Retch!
+43958@@@You're Infected!
+43963@@@Wretched!
+43974@@@Infect!
+44305@@@You're a ...! (Effects2)
+44426@@@Zombie Explosion!
+45320@@@You're Re-infected!
+47912@@@You're a ...! (Parent)
+47913@@@You're a...! (NPC)
+48050@@@You're a ...! (Effects3)
+48198@@@Righteous Fire
+48199@@@Find Zombie
+48200@@@Healer Aura
+48309@@@Cure Infection
+48318@@@Retch!
+48953@@@Infect!
+50015@@@Zombie Spawn
+50146@@@Righteous Purge
+50817@@@Cure Nearby Units
+51230@@@Retch!
+51241@@@ZP - Retch! (Bunny Aura)
+51242@@@ZP - Retch! (Bunny)
+51244@@@Water Breathing
+54059@@@You're a ...! (Effects4)
+54145@@@You're a ...! (Effects5)
+54147@@@You're a ...! (Effects6)
+54162@@@You're a ...! (Effects7)
+55720@@@You're a...! (NPC)
+55721@@@You're a...! (NPC)
+55722@@@You're a...! (NPC)
+55723@@@You're a...! (NPC)
+55724@@@You're a...! (NPC)
+55725@@@You're a...! (NPC)
+55726@@@You're a...! (NPC)
+55727@@@You're a...! (NPC)
+55743@@@Lurch!
+56528@@@Zombie Explosion!
+56543@@@Wretched! IsIn Fog Checker
+56560@@@Beckoning Groan
+56608@@@Beckoned
+56781@@@Wretched, Infect.
+56787@@@Zombie Spawn
+57523@@@Wretched Zombie Healer
+57526@@@Lurch! Immunity Effect
+57596@@@Mangle!
+61454@@@Zombie Dies
+61473@@@ZP - Effects - Dispel Mechanics (DND)
+437009@@@Totemic Call
+1239570@@@Holy Shield
+1240568@@@Bell Turned On Dummy
+1259691@@@Attuned
+1259719@@@Artisan's Precision
+1263086@@@Boiling Scream
+1267176@@@Illusion
+1267189@@@Summon Arcane Companion
+1267192@@@Summon Watery Companion
+1267194@@@Summon Fiery Companion
+1270893@@@Charged
+1271375@@@Blizzard
+1271394@@@Blizzard
+1271419@@@Intruders!
+1271604@@@Searing Scales
+1271753@@@Shadowstep
+1271761@@@Grievous Garrote
+1275847@@@Reveal Form
+1277741@@@Command: Bite!
+1280011@@@Rending Whirl
+1280081@@@Force Compliance
+1280082@@@Force Compliance
+1280085@@@Force Compliance
+1280259@@@Convert
+1280262@@@Shadow Infusion
+1280265@@@Shadow Infusion
+1282071@@@Frightening Howl
+1282076@@@Command: Kill!
+1282082@@@Command: Kill!
+1282386@@@Mugg's Fury
+1282387@@@Mugg's Fury
+1282393@@@Set of Maces
+1282394@@@Set of Mauls
+1282396@@@Crushing Slam
+1282397@@@Crushing Slam
+1282504@@@Monstrous Slam
+1282511@@@Undying Oath
+1282517@@@Rotted Strike
+1282519@@@Rotted Strike
+1282611@@@Healing Wave
+1282615@@@Harpoon
+1282659@@@Harpoon
+1282746@@@Harpoon
+1282753@@@Harpoon
+1282842@@@Embrine
+1282843@@@Embrine
+1282844@@@Embrine
+1282845@@@Embrine
+1282860@@@Waterbolt Volley
+1282921@@@Blood Rite
+1283019@@@Poisoned Blood
+1283027@@@Poisoned Blood
+1283033@@@Blood Rite
+1283034@@@Bloodbolt
+1283073@@@Charge
+1283076@@@Strike
+1283081@@@Shield Slam
+1283083@@@Shield Spike
+1283086@@@Fireball
+1283087@@@Curse of Blood
+1283233@@@Deluge
+1283234@@@Deluge
+1283237@@@Deluge
+1283238@@@Deluge
+1283239@@@Deluge
+1283241@@@Deluge
+1283250@@@Drench
+1283266@@@Drain Blood
+1283269@@@Drain Blood
+1283295@@@Transform
+1283313@@@Poison Bolt Volley
+1283327@@@Fatal Bite
+1283347@@@Horrifying Presence
+1283348@@@Horrifying Presence
+1283361@@@Curse of Weakness
+1283362@@@Shadow Bolt
+1283364@@@Net
+1283365@@@Shadow Shot
+1283366@@@Shadow Shell
+1283390@@@Sunder Armor
+1283405@@@Muscle Tear
+1283407@@@Shield Charge
+1283409@@@Hex
+1283410@@@Frostbolt
+1283413@@@Cleave
+1283414@@@Mortal Strike
+1283416@@@Poisonous Stab
+1283419@@@Frost Armor
+1283420@@@Frostbolt
+1283421@@@Lightning Bolt
+1283422@@@Healing Wave
+1283423@@@Rend
+1283424@@@Knock Away
+1283425@@@War Stomp
+1283527@@@Navis Mortis
+1283531@@@Navis Mortis
+1283586@@@Profane Ritual
+1283679@@@Shoot
+1283680@@@Healing Wave
+1283681@@@Chain Lightning
+1283684@@@Permanent Feign Death
+1283849@@@Roll Dice!
+1283854@@@Seasalt Lager
+1283855@@@Brilliant Conflagration
+1283866@@@Fishing
+1283934@@@Fear
+1284543@@@Theramore Marine Disguise
+1285368@@@Gathering Intelligence
+1285369@@@Standing "Guard"
+1285370@@@DNT
+1285371@@@Remove Disguise
+1287127@@@Cosmetic Lightning
+1287151@@@Eating
+1287360@@@Threatening
+1287444@@@Stealth
+1287747@@@Berserk
+1287756@@@Fiery Talons
+1287872@@@Tail Lash
+1287876@@@Trihorn Charge
+1287879@@@Trihorn Charge
+1287886@@@Puncture
+1289213@@@Conjure Spirit
+1289276@@@Conjure Spirit
+1289279@@@(DNT) Spawn Visuals
+1289280@@@Souldrained
+1289302@@@Conjure Spirit
+1289322@@@Shadow Bolt
+1290463@@@Powerful Slam
+1290464@@@Sonic Screech
+1290472@@@Crystal Selection
+1290506@@@Energize
+1290507@@@Energize
+1290508@@@Energize
+1290509@@@Energize
+1290510@@@Energized
+1290511@@@Energized
+1290512@@@Energized
+1290513@@@Energized
+1290533@@@Thrash
+1290536@@@Rend
+1290818@@@Powering Up
+1290819@@@Powering Up
+1290822@@@Powering Up
+1290823@@@Powering Up
+1290858@@@Pylon Powered
+1290868@@@(DNT) Primeval Elemental Freeze Self
+1290947@@@Blood Bolt
+1290978@@@Waterbolt
+1290980@@@Freeze Water
+1290983@@@Freeze Water
+1291167@@@Blizzard
+1291168@@@Blizzard
+1291176@@@Blast Wave
+1291274@@@Poison Cloud
+1291301@@@Poison
+1291313@@@Poison Cloud
+1291380@@@Chain Lightning
+1291446@@@(DNT) Drowned City Pearl Channel Visuals
+1291448@@@Disrupt Barrier
+1291499@@@Dismissal
+1291515@@@Germinate
+1291516@@@Spores
+1291517@@@Germinate
+1291548@@@Germinate
+1291554@@@Blinded
+1291672@@@Regenesis
+1291692@@@Throw Dynamite
+1291712@@@Head Smash
+1291730@@@Pierce Armor
+1294310@@@Mortal Strike
+1294312@@@Mighty Blow
+1294313@@@Terrifying Roar
+1295543@@@Find Players
+1296130@@@Rending Whirl
+1299337@@@Disrupt Barrier
+1300699@@@(DNT) Beam Visuals
+1300715@@@Frostbolt
+1300716@@@Frost Nova
+1300979@@@(DNT) Unstable Components Cosmetic Aura
+1300992@@@Arcane Explosion
+1300993@@@Unstable Components
+1300996@@@Parrotmorph
+1301001@@@Arcane Fury
+1301011@@@Summon Arcane Wraith
+1301016@@@Frost Nova
+1301017@@@Arcane Idiocy
+1301019@@@Shrunk
+1301023@@@Keelhauler's Curse
+1301218@@@(DNT) Summon Crystal
+1301223@@@(DNT) Mount Vehicle
+1301264@@@(DNT) Cosmetic Aura
+1301265@@@Restorative Essence
+1301299@@@Blood Ritual
+1301343@@@(DNT) Deathless Marrow Intro Missiles
+1301411@@@(DNT) Deathless Marrow Intro Orb
+1301471@@@(DNT) Deathless Marrow Intro Orb
+1302039@@@Curse of Tongues
+1304536@@@Lightning Strike
+1304765@@@(DNT) Darkness Effect
+1304773@@@Transform
+1304886@@@(DNT) Death Transform
+1304898@@@(DNT) Death Transform
+1306734@@@Combine Insignias
+1306800@@@Alcaz Operative
+1306816@@@Bigger Rock to the Face
+1307404@@@[DNT] Teleport to The Drowned City
+1308151@@@Blue Transmutation
+1308153@@@Red Transmutation
+1308154@@@Yellow Transmutation
+1308155@@@Green Transmutation
+1308171@@@Blue Aura
+1308172@@@Red Aura
+1308174@@@Yellow Aura
+1308175@@@Green Aura
+1308215@@@Blue Transmutation
+1308216@@@Blue Infusion
+1308220@@@Red Transmutation
+1308221@@@Red Transmutation
+1308222@@@Yellow Transmutation
+1308223@@@Yellow Transmutation
+1308224@@@Green Transmutation
+1308225@@@Green Transmutation
+1309189@@@Deathblow
+1309967@@@Rock to the Face
+1310142@@@Lightning Strike
+1310146@@@Regenesis
+1310148@@@Regenesis
+1310151@@@Regenesis
+1310251@@@Roar
+1310266@@@Radiating Heat
+1310267@@@Radiating Heat
+1310315@@@Improved Whirlwind
+1310353@@@Frostbolt
+1310354@@@Frost Nova
+1310365@@@Poison Bolt Volley
+1310505@@@Desaturate
+1310506@@@Activate
+1310507@@@Activate
+1310508@@@Activate
+1310509@@@Activate
+1310512@@@Conflagration
+1310513@@@Chain Lightning
+1310514@@@Howling Blast
+1310515@@@Demoralizing Roar
+1310516@@@Lightning Strike
+1310728@@@Quick Getaway
+1310735@@@Unsealed Wrath
+1311505@@@Grounded Electroshocks
+1311844@@@(DNT) Min'loth Cosmetic Aura
+1313392@@@Summon Shen'dorei Wisp
+1313471@@@Fear
+1313504@@@Create Item
+1313543@@@Arcane Marker
+1313545@@@Arcane Marker
+1313580@@@Arcane Marker
+1313642@@@Create Item
+1313687@@@(DNT) Death Transform
+1313907@@@Dummy
+1313969@@@Opening
+1313978@@@Frigid Depths
+1313983@@@Frigid Depths
+1314003@@@Arcane Marker
+1314004@@@Arcane Marker
+1314017@@@Arcane Marker
+1314019@@@Arcane Marker
+1314025@@@Arcane Marker
+1314111@@@Arcane Marker
+1314190@@@Cleansing
+1314266@@@Create Item
+1314294@@@Tear of Anguish
+1314297@@@Cleansing
+1314330@@@Arcanum of Binding
+1314331@@@Arcanum of Binding
+1314699@@@Dummy
+1314742@@@Create Item
+1314761@@@Dummy
+1314774@@@Place Ancient Hilt
+1314794@@@Chilling Breath
+1314858@@@Chilling Breath
+1314917@@@Wield Eluvi'tor
+1314922@@@Dummy
+1314923@@@Binding
+1314930@@@Dummy
+1314931@@@Binding
+1314940@@@Dummy
+1314956@@@Beckon Ancient Spirit
+1314960@@@Dummy
+1314986@@@Create Item
+1315044@@@Dummy
+1315045@@@Dummy
+1315047@@@Dummy
+1315056@@@Ancient Wisdom
+1315067@@@Ancient Wisdom
+1315088@@@Ancient Wisdom
+1315234@@@Dummy
+1315246@@@Ping Pet
+1315261@@@Dummy
+1315309@@@Dummy
+1321040@@@Create Item
+1321097@@@Create Item
+1321504@@@Shen'dorei Spirit
+1323128@@@[DNT] FPT - Westfall
+1323129@@@[DNT] FPT - Arathi
+1323130@@@[DNT] FPT - Wetlands
+1323131@@@[DNT] FPT - Badlands
+1323132@@@[DNT] FPT - Riverglades
+1323133@@@[DNT] FPT - Redridge
+1323134@@@[DNT] FPT - Hillsbrad
+1323135@@@[DNT] FPT - Duskwood
+1323136@@@[DNT] FPT - Stormwind
+1324306@@@Arcane Jaunt
+1324335@@@[DNT] FPT - Ashenvale
+1324336@@@[DNT] FPT - Ashenvale, Splintertree Post
+1324337@@@[DNT] FPT - Ashenvale, Zoram'gar Outpost
+1324338@@@[DNT] FPT - Azshara
+1324339@@@[DNT] FPT - Blasted Lands
+1324340@@@[DNT] FPT - Burning Steppes
+1324341@@@[DNT] FPT - Darkshore
+1324342@@@[DNT] FPT - Desolace
+1324343@@@[DNT] FPT - Dustwallow Marsh
+1324344@@@[DNT] FPT - Eastern Plaguelands
+1324345@@@[DNT] FPT - Felwood
+1324346@@@[DNT] FPT - Feralas
+1324347@@@[DNT] FPT - Feralas, Feathermoon
+1324348@@@[DNT] FPT - Feralas,Thalanaar
+1324349@@@[DNT] FPT - Ironforge
+1324350@@@[DNT] FPT - Loch Modan
+1324351@@@[DNT] FPT - Moonglade
+1324352@@@[DNT] FPT - Mount Hyjal, Summit of Eternity
+1324353@@@[DNT] FPT - Mount Hyjal, Tainted Foothills
+1324354@@@[DNT] FPT - Orgrimmar
+1324355@@@[DNT] FPT - Searing Gorge
+1324356@@@[DNT] FPT - Silithus
+1324357@@@[DNT] FPT - Silverpine Forest
+1324358@@@[DNT] FPT - Stonetalon Mountains
+1324359@@@[DNT] FPT - Stranglethorn
+1324360@@@[DNT] FPT - Stranglethorn, Booty Bay
+1324361@@@[DNT] FPT - Stranglethorn, Grom'gol
+1324362@@@[DNT] FPT - Swamp of Sorrows
+1324363@@@[DNT] FPT - Tanaris
+1324364@@@[DNT] FPT - Teldrassil
+1324365@@@[DNT] FPT - The Barrens
+1324366@@@[DNT] FPT - The Barrens, Camp Taurajo
+1324367@@@[DNT] FPT - The Barrens, Crossroads
+1324368@@@[DNT] FPT - The Barrens, Ratchet
+1324369@@@[DNT] FPT - The Hinterlands
+1324370@@@[DNT] FPT - Thousand Needles
+1324371@@@[DNT] FPT - Thunder Bluff
+1324372@@@[DNT] FPT - Undercity
+1324373@@@[DNT] FPT - Un'Goro Crater
+1324374@@@[DNT] FPT - Western Plaguelands
+1324375@@@[DNT] FPT - Winterspring
+1324635@@@Wormhole
+1326619@@@Ancestral Spirit
+1327064@@@Hunger...
+1327078@@@Ravenous Claw
+1327079@@@Ravenous Claw
+1327082@@@You're Infected!
+1327211@@@Cosmetic Aura
+1327241@@@Void Bolt
+1327245@@@Warstomp
+1327248@@@Cleave
+1327251@@@Shadow Bolt Volley
+1327505@@@Arcane Bolt
+1327506@@@Arcane Bolt
+1327657@@@Frost Breath
+1327713@@@Terrifying Roar
+1327716@@@Cleave
+1327726@@@Rushing Charge
+1327736@@@Elixir of Endless Intellect
+1327737@@@Elixir of Endless Power
+1327738@@@Elixir of Endless Healing
+1327751@@@Elixir of Endless Rapidity
+1327753@@@Elixir of Endless Opportunity
+1327754@@@Scroll of Endless Fortitude
+1327836@@@Denial of the Call
+1327906@@@Camping
+1327926@@@Ultra Hogger
+1327961@@@Giga Hogger
+1327963@@@Cosmic Hogger
+1327978@@@Frenzy
+1327984@@@Manastorm
+1327987@@@Manastorm
+1327989@@@Chill
+1327990@@@Chill
+1327991@@@Call Anathema
+1327993@@@Call Benediction
+1328013@@@Cleave
+1328019@@@Mortal Strike
+1328022@@@Ding!
+1328028@@@Charge
+1328032@@@Elixir of Endless Mana
+1328034@@@Chain Lightning
+1328040@@@Hurricane
+1328041@@@Hurricane
+1328067@@@Summon Infernal
+1328068@@@Summon Infernal
+1328069@@@Summon Infernal
+1328117@@@Summon Infernal
+1328118@@@Elixir of Endless Growth
+1328119@@@Scroll of Endless Speed
+1328127@@@Elixir of Endless Experience
+1328198@@@Echo of Light
+1328206@@@Echo of Wisdom
+1328261@@@Caught Sheep
+1328348@@@Throw Violet Dust
+1328362@@@Violet Flames
+1328364@@@Violet Flames
+1328367@@@Violet Flames
+1328370@@@Turn Evil
+1328371@@@Violet Flames
+1328372@@@Turn Evil
+1328373@@@Turn Evil
+1328374@@@Turn Evil
+1328375@@@Violet Flames
+1328376@@@Violet Flames
+1328377@@@Violet Flames
+1328389@@@[DNT] Quest Cleanup
+1328544@@@Shieldsworn
+1328546@@@Stoicism
+1328548@@@Oath of Light
+1328550@@@Boundless Light
+1328551@@@Shieldsworn
+1328569@@@Holy Binding
+1328570@@@Holy Binding
+1328613@@@Predatory Discipline
+1328616@@@Lacerate
+1328617@@@Lacerate
+1328618@@@Ferocious Bite
+1328621@@@Bloom
+1328622@@@Bloom
+1328664@@@(DNT) Hide Mist
+1328666@@@(DNT) Hide Mist
+1328668@@@(DNT) Hide Mist
+1328669@@@(DNT) Hide Mist
+1328670@@@(DNT) Hide Mist
+1328671@@@(DNT) Hide Mist
+1328676@@@[DNT] Hunter Pet Scaling (Old Testing Backup)
+1328749@@@Emerald Stasis
+1328825@@@Poised
+1328826@@@Poised
+1328827@@@Poised
+1328829@@@Poised
+1328837@@@Boiling Scream
+1328846@@@Boiling Water
+1328862@@@Camping
+1328865@@@Boiling Scream
+1328891@@@Enrage
+1328904@@@Enrage
+1328906@@@Love Crazed
+1328911@@@Enrage
+1328913@@@Enrage
+1328947@@@Speed
+1328948@@@Enchant Boots - Speed
+1329183@@@Dummy
+1329256@@@Blood Splatter
+1329265@@@Composure
+1329282@@@Quick Getaway
+1329283@@@Shank
+1329284@@@Flash of Steel
+1329285@@@Boot Knife
+1329286@@@Boot Knife
+1329326@@@Ghostly Strike
+1329328@@@Venom
+1329549@@@Shank
+1329552@@@Counterspell - Silenced
+1329553@@@Counterspell - Silenced
+1329554@@@Reckless Swings
+1329555@@@Reckless Swings
+1330181@@@Portal to Dalaran
+1330423@@@Portal to Auberdine
+1330425@@@Portal to Stormwind
+1330426@@@Portal to Southshore
+1330427@@@Portal to Theramore
+1330428@@@Portal to Menethil
+1330429@@@Portal to Undercity
+1330430@@@Portal to Orgrimmar
+1330431@@@Portal to Grom'gol

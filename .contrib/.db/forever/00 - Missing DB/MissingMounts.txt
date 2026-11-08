@@ -56,7 +56,6 @@ mount(1301636),	-- Pack Kodo
 mount(1302661),	-- Spectral Bear
 mount(1303075),	-- Lavender Kodo
 mount(1303215),	-- Caravan Kodo
-mount(1309208),	-- Cerulean Prideclaw
 mount(1309246),	-- [PH] Purple Prideclaw
 mount(1309248),	-- [PH] Brown Prideclaw
 mount(1309250),	-- [PH] White Blue Prideclaw
@@ -73,7 +72,10 @@ mount(1309377),	-- Black Druid Moose Mount
 mount(1309379),	-- White Druid Moose Mount
 mount(1309380),	-- Green Druid Moose Mount
 mount(1309381),	-- Gray Druid Moose Mount
-mount(1309405),	-- Veteran Adventurer's Loyal Companion
+1.60.1.70450
+mount(1321200),	-- Verdant Sea Turtle
+mount(1321221),	-- Crimson Rooster
+mount(1321233),	-- Spectral Wolf Pack
 
 
 
@@ -104,7 +106,6 @@ mount(1301636),	-- Pack Kodo
 mount(1302661),	-- Spectral Bear
 mount(1303075),	-- Lavender Kodo
 mount(1303215),	-- Caravan Kodo
-mount(1309208),	-- Cerulean Prideclaw
 mount(1309246),	-- [PH] Purple Prideclaw
 mount(1309248),	-- [PH] Brown Prideclaw
 mount(1309250),	-- [PH] White Blue Prideclaw
@@ -121,4 +122,7 @@ mount(1309377),	-- Black Druid Moose Mount
 mount(1309379),	-- White Druid Moose Mount
 mount(1309380),	-- Green Druid Moose Mount
 mount(1309381),	-- Gray Druid Moose Mount
-mount(1309405),	-- Veteran Adventurer's Loyal Companion
+1.60.1.70450
+mount(1321200),	-- Verdant Sea Turtle
+mount(1321221),	-- Crimson Rooster
+mount(1321233),	-- Spectral Wolf Pack

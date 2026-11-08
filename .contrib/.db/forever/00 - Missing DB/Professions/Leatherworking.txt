@@ -1,10 +1,26 @@
 1.60.1.69876
 r(10550),	-- Nightscape Cloak
+r(19068),	-- Warbear Harness
+r(19080),	-- Warbear Woolies
+r(19085),	-- Black Dragonscale Breastplate
 r(19106),	-- Onyxia Scale Breastplate
 r(20853),	-- Corehound Boots
 r(20854),	-- Molten Helm
+r(20855),	-- Black Dragonscale Boots
 r(22727),	-- Core Armor Kit
+r(22815),	-- Gordok Ogre Suit
+r(22921),	-- Girdle of Insight
+r(22922),	-- Mongoose Boots
+r(22923),	-- Swift Flight Bracers
+r(22926),	-- Chromatic Cloak
+r(22927),	-- Hide of the Wild
+r(22928),	-- Shifting Cloak
+r(23628),	-- Heavy Timbermaw Belt
+r(23629),	-- Heavy Timbermaw Boots
+r(23703),	-- Might of the Timbermaw
+r(23704),	-- Timbermaw Brawlers
 r(23705),	-- Dawn Treaders
+r(23706),	-- Golden Mantle of the Dawn
 r(23707),	-- Lava Belt
 r(23708),	-- Chromatic Gauntlets
 r(23709),	-- Corehound Belt
@@ -31,7 +47,6 @@ r(28224),	-- Icy Scale Bracers
 r(28472),	-- Bramblewood Helm
 r(28473),	-- Bramblewood Boots
 r(28474),	-- Bramblewood Belt
-r(44953),	-- Winter Boots
 r(429354),	-- Void-Touched Leather Gloves
 r(429869),	-- Void-Touched Leather Gauntlets
 r(435819),	-- Faintly Glowing Leather
@@ -142,12 +157,12 @@ r(1254977),	-- Charged Scorpid Gauntlets
 r(1254978),	-- Supple Scorpid Belt
 r(1254979),	-- Heavy Scorpid Boots
 r(1254980),	-- Charged Scorpid Bracers
-r(1254981),	-- Supple Scorpid Shoulder
+r(1254981),	-- Supple Scorpid Shoulders \\ Supple Scorpid Shoulder
 r(1254986),	-- Mender's Mail Gauntlets
 r(1254987),	-- Skirmisher's Mail Gauntlets
 r(1254988),	-- Skycaller's Mail Gauntlets
 r(1254989),	-- Stalker's Mail Gauntlets
-r(1254990),	-- Charged Scorpid Shoulder
+r(1254990),	-- Charged Scorpid Shoulders \\ Charged Scorpid Shoulder
 r(1254991),	-- Supple Scorpid Bracers
 r(1254992),	-- Charged Scorpid Helm
 r(1254993),	-- Supple Scorpid Leggings
@@ -168,10 +183,10 @@ r(1255019),	-- Blue Suede Bracers
 r(1255020),	-- Tooled Leather Epaulets
 r(1255021),	-- Blue Suede Belt
 r(1255022),	-- Tooled Leather Bracers
-r(1255023),	-- Wicked Leather Shoulder
+r(1255023),	-- Wicked Leather Shoulders \\ Wicked Leather Shoulder
 r(1255024),	-- Blue Suede Armor
 r(1255025),	-- Tooled Leather Crown
-r(1255026),	-- Blue Suede Shoulder
+r(1255026),	-- Blue Suede Shoulders \\ Blue Suede Shoulder
 r(1255027),	-- Tooled Leather Gauntlets
 r(1255028),	-- Wicked Leather Boots
 r(1255029),	-- Blue Suede Pants
@@ -239,7 +254,6 @@ r(10656),	-- Dragonscale Leatherworking
 r(10658),	-- Elemental Leatherworking
 r(10660),	-- Tribal Leatherworking
 r(19106),	-- Onyxia Scale Breastplate
-r(44953),	-- Winter Boots
 r(429354),	-- Void-Touched Leather Gloves
 r(429869),	-- Void-Touched Leather Gauntlets
 r(435819),	-- Faintly Glowing Leather
@@ -350,12 +364,12 @@ r(1254977),	-- Charged Scorpid Gauntlets
 r(1254978),	-- Supple Scorpid Belt
 r(1254979),	-- Heavy Scorpid Boots
 r(1254980),	-- Charged Scorpid Bracers
-r(1254981),	-- Supple Scorpid Shoulder
+r(1254981),	-- Supple Scorpid Shoulders \\ Supple Scorpid Shoulder
 r(1254986),	-- Mender's Mail Gauntlets
 r(1254987),	-- Skirmisher's Mail Gauntlets
 r(1254988),	-- Skycaller's Mail Gauntlets
 r(1254989),	-- Stalker's Mail Gauntlets
-r(1254990),	-- Charged Scorpid Shoulder
+r(1254990),	-- Charged Scorpid Shoulders \\ Charged Scorpid Shoulder
 r(1254991),	-- Supple Scorpid Bracers
 r(1254992),	-- Charged Scorpid Helm
 r(1254993),	-- Supple Scorpid Leggings
@@ -376,10 +390,10 @@ r(1255019),	-- Blue Suede Bracers
 r(1255020),	-- Tooled Leather Epaulets
 r(1255021),	-- Blue Suede Belt
 r(1255022),	-- Tooled Leather Bracers
-r(1255023),	-- Wicked Leather Shoulder
+r(1255023),	-- Wicked Leather Shoulders \\ Wicked Leather Shoulder
 r(1255024),	-- Blue Suede Armor
 r(1255025),	-- Tooled Leather Crown
-r(1255026),	-- Blue Suede Shoulder
+r(1255026),	-- Blue Suede Shoulders \\ Blue Suede Shoulder
 r(1255027),	-- Tooled Leather Gauntlets
 r(1255028),	-- Wicked Leather Boots
 r(1255029),	-- Blue Suede Pants

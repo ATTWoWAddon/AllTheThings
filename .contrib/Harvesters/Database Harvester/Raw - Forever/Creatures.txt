@@ -186,3 +186,9 @@
 230834@@@Gill'el
 230859@@@Snowfang
 266912@@@Pinky
+1.60.1.70862
+249698@@@Frosty Lashling
+249699@@@Viridian Lashling
+249700@@@Flowery Lashling
+249702@@@Wilted Lashling
+273554@@@Shen'dorei Wisp

@@ -1377,3 +1377,33 @@
 1.60.1.70425
 17852@@@Hyjal Crater
 17853@@@Sunken Hollow
+1.60.1.70862
+16550@@@The Drowned City
+16554@@@Blackmaw Hold
+16619@@@Excavation Site - Bael Modan
+16620@@@Alcaz Prison
+16667@@@The Shaper's Terrace
+16842@@@Krol'dok Stronghold
+16928@@@Shaper's Plateau
+16929@@@Pillar of Assimilation
+16930@@@The Verdant Plains
+16931@@@Lost Tar Pits
+16932@@@Ruby Spring
+16933@@@Walk of Communion
+16934@@@The Highlands Causeway
+16935@@@Watcher's Overlook
+16937@@@Botanical Grounds
+17036@@@Crystalline Highlands
+17037@@@Sunken Hollow
+17038@@@Flooded Shrine
+17039@@@Deep Archives
+17040@@@Altar of the Serpent
+17041@@@Eternal Amphitheater
+17042@@@Abyssal Dais
+17043@@@The Unsinkable
+17046@@@Ataal'Byzal
+17309@@@Defiled Peak
+17310@@@Festering Grotto
+17311@@@Blackmaw Grove
+17312@@@Blackmaw Stillwater
+17313@@@Bonesnout's Thicket

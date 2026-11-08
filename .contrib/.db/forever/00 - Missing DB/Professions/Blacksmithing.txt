@@ -10,6 +10,7 @@ r(9950),	-- Ornate Mithril Gloves
 r(11643),	-- Golden Scale Gauntlets
 r(16660),	-- Dawnbringer Shoulders
 r(16742),	-- Enchanted Thorium Helm
+r(16744),	-- Enchanted Thorium Leggings
 r(16745),	-- Enchanted Thorium Breastplate
 r(16960),	-- Thorium Greatsword
 r(16965),	-- Bleakwood Hew
@@ -17,6 +18,12 @@ r(16967),	-- Inlaid Thorium Hammer
 r(16980),	-- Rune Edge
 r(16986),	-- Blood Talon
 r(16987),	-- Darkspear
+r(20872),	-- Fiery Chain Girdle
+r(20873),	-- Fiery Chain Shoulders
+r(20874),	-- Dark Iron Bracers
+r(20876),	-- Dark Iron Leggings
+r(20890),	-- Dark Iron Reaver
+r(20897),	-- Dark Iron Destroyer
 r(21161),	-- Sulfuron Hammer
 r(22757),	-- Elemental Sharpening Stone
 r(23632),	-- Girdle of the Dawn

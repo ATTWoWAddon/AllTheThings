@@ -8,6 +8,8 @@ r(7181),	--
 r(11447),	-- Draught of Water Walking
 r(11457),	--
 r(17556),	--
+r(17560),	-- Transmute: Fire to Earth
+r(17561),	-- Transmute: Earth to Water
 r(17579),	-- Greater Holy Protection Potion
 r(17632),	-- Alchemist's Stone
 r(22430),	-- Refined Scale of Onyxia
@@ -17,6 +19,7 @@ r(24365),	-- Mageblood Elixir
 r(24366),	-- Greater Dreamless Sleep Potion
 r(24367),	-- Living Action Potion
 r(24368),	-- Major Troll's Blood Elixir
+r(25146),	-- Transmute: Elemental Fire
 r(426607),	-- Elixir of Coalesced Regret
 r(435969),	-- Insulating Gniodine
 r(435971),	-- Mildly Irradiated Rejuvenation Potion
@@ -39,7 +42,7 @@ r(1240965),	-- Alchemy
 r(1240977),	-- Alchemy
 r(1244421),	-- Distilled Firewater
 r(1250775),	-- Revealing Draught
-r(1250776),	-- Draught of Predatory Senses
+r(1250776),	-- Potion of Predatory Senses \\ Draught of Predatory Senses
 r(1250781),	-- Cleric's Elixir
 r(1250783),	-- Elixir of Fortitude
 r(1250795),	-- Elixir of Spirit
@@ -99,7 +102,7 @@ r(1240965),	-- Alchemy
 r(1240977),	-- Alchemy
 r(1244421),	-- Distilled Firewater
 r(1250775),	-- Revealing Draught
-r(1250776),	-- Draught of Predatory Senses
+r(1250776),	-- Potion of Predatory Senses \\ Draught of Predatory Senses
 r(1250781),	-- Cleric's Elixir
 r(1250783),	-- Elixir of Fortitude
 r(1250795),	-- Elixir of Spirit

@@ -28,7 +28,7 @@ ach(40135),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
 ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
 ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
-ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
+ach(41010),	-- Rune Learned - Shared Acquisition - Leylines (50) \\ Rune Learned - Shared Acquisition - Ley Lines (50)
 ach(42133),	-- [DNT] Balnazzar Defeated
 ach(42186),	-- [DNT] Balnazzar Defeated (Backup Achievement)
 ach(61515),	-- 1.60.0 - Lost Ones Tracking Achievement <HIDDEN>
@@ -313,3 +313,67 @@ ach(64184),	-- Total 40-player raids entered
 ach(64185),	-- Total deaths in 40-player raids
 1.60.1.70170
 ach(64208),	-- <Hidden> Completed New Player Experience (Account)
+1.60.1.70291
+ach(64222),	-- Times camped
+1.60.1.70425
+ach(64348),	-- Arathi Basin bases assaulted
+ach(64349),	-- Arathi Basin bases defended
+ach(64350),	-- Darkspear Islands bases assaulted
+ach(64351),	-- Darkspear Islands bases defended
+ach(64352),	-- Darkspear Islands flags captured
+1.60.1.70862
+ach(64195),	-- Hidden: Flight Path Tracker - EK - Westfall
+ach(64196),	-- Hidden: Flight Path Tracker - EK - Stormwind
+ach(64197),	-- Hidden: Flight Path Tracker - EK - Arathi
+ach(64198),	-- Hidden: Flight Path Tracker - EK - Wetlands
+ach(64199),	-- Hidden: Flight Path Tracker - EK - Badlands
+ach(64200),	-- Hidden: Flight Path Tracker - EK - Riverglades
+ach(64201),	-- Hidden: Flight Path Tracker - EK - Redridge
+ach(64202),	-- Hidden: Flight Path Tracker - EK - Hillsbrad
+ach(64203),	-- Hidden: Flight Path Tracker - EK - Duskwood
+ach(64236),	-- Hidden: Flight Path Tracker - EK - Blasted Lands
+ach(64237),	-- Hidden: Flight Path Tracker - EK - Burning Steppes
+ach(64238),	-- Hidden: Flight Path Tracker - EK - Eastern Plaguelands
+ach(64239),	-- Hidden: Flight Path Tracker - EK - Ironforge
+ach(64240),	-- Hidden: Flight Path Tracker - EK - Loch Modan
+ach(64241),	-- Hidden: Flight Path Tracker - EK - Searing Gorge
+ach(64242),	-- Hidden: Flight Path Tracker - EK - Silverpine Forest
+ach(64243),	-- Hidden: Flight Path Tracker - EK - Stranglethorn (H)
+ach(64244),	-- Hidden: Flight Path Tracker - EK - Swamp of Sorrows
+ach(64245),	-- Hidden: Flight Path Tracker - EK - The Hinterlands
+ach(64246),	-- Hidden: Flight Path Tracker - EK - Undercity
+ach(64247),	-- Hidden: Flight Path Tracker - EK - Western Plaguelands
+ach(64248),	-- Hidden: Flight Path Tracker - K - Ashenvale (A)
+ach(64249),	-- Hidden: Flight Path Tracker - K - Azshara
+ach(64250),	-- Hidden: Flight Path Tracker - K - Darkshore
+ach(64251),	-- Hidden: Flight Path Tracker - K - Desolace
+ach(64252),	-- Hidden: Flight Path Tracker - K - Dustwallow Marsh
+ach(64253),	-- Hidden: Flight Path Tracker - K - Felwood
+ach(64254),	-- Hidden: Flight Path Tracker - K - Feralas (A)
+ach(64255),	-- Hidden: Flight Path Tracker - K - Moonglade
+ach(64256),	-- Hidden: Flight Path Tracker - K - Mount Hyjal
+ach(64257),	-- Hidden: Flight Path Tracker - K - Orgrimmar
+ach(64258),	-- Hidden: Flight Path Tracker - K - Silithus
+ach(64259),	-- Hidden: Flight Path Tracker - K - Stonetalon Mountains
+ach(64260),	-- Hidden: Flight Path Tracker - K - Tanaris
+ach(64261),	-- Hidden: Flight Path Tracker - K - Teldrassil
+ach(64262),	-- Hidden: Flight Path Tracker - K - The Barrens (A)
+ach(64263),	-- Hidden: Flight Path Tracker - K - Thousand Needles
+ach(64264),	-- Hidden: Flight Path Tracker - K - Thunder Bluff
+ach(64265),	-- Hidden: Flight Path Tracker - K - Un'Goro Crater
+ach(64266),	-- Hidden: Flight Path Tracker - K - Winterspring
+ach(64267),	-- Hidden: Flight Path Tracker - K - Feralas, Feathermoon
+ach(64268),	-- Hidden: Flight Path Tracker - K - Feralas, Thalanaar
+ach(64269),	-- Hidden: Flight Path Tracker - K - Mount Hyjal, Tainted Foothills
+ach(64270),	-- Hidden: Flight Path Tracker - K - Mount Hyjal, Summit of Eternity
+ach(64271),	-- Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay
+ach(64272),	-- Hidden: Flight Path Tracker - EK - Stranglethorn, Grom'gol
+ach(64273),	-- Hidden: Flight Path Tracker - K - The Barrens, Crossroads
+ach(64274),	-- Hidden: Flight Path Tracker - K - The Barrens, Ratchet
+ach(64275),	-- Hidden: Flight Path Tracker - K - The Barrens, Camp Taurajo
+ach(64276),	-- Hidden: Flight Path Tracker - K - Ashenvale, Splintertree Post
+ach(64277),	-- Hidden: Flight Path Tracker - K - Ashenvale, Zoram'gar Outpost
+ach(64278),	-- Hidden: Flight Path Tracker - EK - Stranglethorn, Booty Bay (A)
+ach(64279),	-- Hidden: Flight Path Tracker - K - Feralas (H)
+ach(64280),	-- Hidden: Flight Path Tracker - K - Ashenvale (H)
+ach(64281),	-- Hidden: Flight Path Tracker - K - The Barrens (H)

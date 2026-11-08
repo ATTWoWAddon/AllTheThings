@@ -3,6 +3,7 @@ r(22434),	--
 r(22749),	-- Enchant Weapon - Spell Power
 r(22750),	-- Enchant Weapon - Healing Power
 r(23799),	-- Enchant Weapon - Strength
+r(23800),	-- Enchant Weapon - Agility
 r(23801),	-- Enchant Bracer - Mana Regeneration
 r(23802),	-- Enchant Bracer - Healing Power
 r(23803),	-- Enchant Weapon - Mighty Spirit
@@ -22,6 +23,7 @@ r(25127),	-- Lesser Mana Oil
 r(25128),	-- Wizard Oil
 r(25129),	-- Brilliant Wizard Oil
 r(25130),	-- Brilliant Mana Oil
+r(27837),	-- Enchant 2H Weapon - Agility
 r(430409),	-- Blackfathom Mana Oil
 r(435481),	-- Enchant Weapon - Dismantle
 r(435903),	-- Enchant Chest - Retricutioner
@@ -71,7 +73,6 @@ r(1240981),	-- Enchanting
 r(1248459),	-- Enchant Bracer - Minor Healing Power
 r(1248461),	-- Twisted Nether Wand
 r(1248497),	-- Enchant Bracer - Agility
-r(1248498),	-- Enchant Bracer - Lesser Healing Power
 r(1248500),	-- Enchant Bracer - Greater Agility
 r(1248505),	-- Lesser Eternal Wand
 r(1248509),	-- Dreambough Wand
@@ -93,6 +94,8 @@ r(1306522),	-- Libram of Infusion
 r(1306523),	-- Totem of Urgency
 r(1306524),	-- Idol of Swiftness
 r(1306525),	-- Idol of the Ursine Twins
+1.60.1.70862
+r(1328948),	-- Enchant Boots - Speed
 
 
 
@@ -171,3 +174,5 @@ r(1306522),	-- Libram of Infusion
 r(1306523),	-- Totem of Urgency
 r(1306524),	-- Idol of Swiftness
 r(1306525),	-- Idol of the Ursine Twins
+1.60.1.70862
+r(1328948),	-- Enchant Boots - Speed

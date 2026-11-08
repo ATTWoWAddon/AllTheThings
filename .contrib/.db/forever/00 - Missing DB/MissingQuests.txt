@@ -9,14 +9,12 @@ q(260),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(352),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(406),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(462),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
-q(490),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(497),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(534),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant	 CLASSIC:<NYI> <TXT> Bloodstone Pendant	 TBC:<NYI> <TXT> Bloodstone Pendant	 WOTLK:<NYI> <TXT> Bloodstone Pendant	 CATA:	 MOP:
 q(612),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(636),	-- Legends of the Earth <NYI>	 CLASSIC:Legends of the Earth <NYI>	 TBC:Legends of the Earth <NYI>	 WOTLK:Legends of the Earth <NYI>	 CATA:	 MOP:
 q(708),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(785),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(787),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(807),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(810),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
@@ -25,9 +23,7 @@ q(814),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(820),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(839),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(856),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(909),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(912),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth	 CATA:Crown of the Earth	 MOP:Crown of the Earth
 q(946),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(988),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(989),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -83,7 +79,6 @@ q(3023),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP
 q(3064),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(3111),	-- <UNUSED> [DEPRECATED]	 CLASSIC:<UNUSED> [DEPRECATED]	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak	 CLASSIC:<NYI> <TXT><redux> Dreadmist Peak	 TBC:<NYI> <TXT><redux> Dreadmist Peak	 WOTLK:<NYI> <TXT><redux> Dreadmist Peak	 CATA:	 MOP:
-q(3366),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(3383),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(3384),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(3401),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
@@ -105,7 +100,6 @@ q(3623),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(3624),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run	 CLASSIC:<NYI> <TXT> The Gadgetzan Run	 TBC:<NYI> <TXT> The Gadgetzan Run	 WOTLK:<NYI> <TXT> The Gadgetzan Run	 CATA:	 MOP:
 q(3910),	-- <NYI> <TXT> The Un'Goro Run	 CLASSIC:<NYI> <TXT> The Un'Goro Run	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(3911),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven	 CLASSIC:<NYI> <TXT>The Tomb of the Seven	 TBC:<NYI> <TXT>The Tomb of the Seven	 WOTLK:<NYI> <TXT>The Tomb of the Seven	 CATA:	 MOP:
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!	 CLASSIC:<NYI> <TXT> Get those Hyenas!!!	 TBC:<NYI> <TXT> Get those Hyenas!!!	 WOTLK:<NYI> <TXT> Get those Hyenas!!!	 CATA:	 MOP:
 q(4541),	-- <NYI> <TXT>	 CLASSIC:<NYI> <TXT>	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -132,7 +126,6 @@ q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WO
 q(5653),	-- <NYI> Hex of Weakness	 CLASSIC:<NYI> Hex of Weakness	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
 q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
-q(5659),	-- <NYI> Touch of Weakness	 CLASSIC:<NYI> Touch of Weakness	 TBC:	 WOTLK:<NYI> Touch of Weakness	 CATA:	 MOP:
 q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
 q(5663),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
 q(5664),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -224,8 +217,12 @@ q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attuneme
 q(7521),	-- Thunderaan the Windseeker	 CLASSIC:Thunderaan the Windseeker	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7522),	-- Examine the Vessel	 CLASSIC:Examine the Vessel	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7561),	-- Rise, Thunderfury!	 CLASSIC:Rise, Thunderfury!	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(7604),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7632),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7633),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(7649),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(7650),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(7651),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7681),	-- Hunter test quest	 CLASSIC:Hunter test quest	 TBC:Hunter test quest	 WOTLK:Hunter test quest	 CATA:	 MOP:
 q(7682),	-- Hunter test quest2	 CLASSIC:Hunter test quest2	 TBC:Hunter test quest2	 WOTLK:Hunter test quest2	 CATA:	 MOP:
 q(7702),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -525,7 +522,6 @@ q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake 
 q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge	 CLASSIC:<UNUSED>Crystal Flake Throat Lozenge	 TBC:<UNUSED>Crystal Flake Throat Lozenge	 WOTLK:<UNUSED>Crystal Flake Throat Lozenge	 CATA:	 MOP:
 q(9414),	-- <UNUSED>Infused Bandages	 CLASSIC:<UNUSED>Infused Bandages	 TBC:<UNUSED>Infused Bandages	 WOTLK:<UNUSED>Infused Bandages	 CATA:	 MOP:
 q(9556),	-- To The Victor...	 CLASSIC:To The Victor...	 TBC:To The Victor...	 WOTLK:To The Victor...	 CATA:To The Victor...	 MOP:
-q(55296),	--
 q(60860),	-- WOTLK:Your Reward has Arrived!	 CATA:Your Reward has Arrived!	 MOP:Your Reward has Arrived!
 q(60863),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
 q(60864),	-- CLASSIC:[Never used]	 TBC:[Never used]	 WOTLK:[Never used]	 CATA:[Never used]	 MOP:[Never used]
@@ -601,12 +597,6 @@ q(77672),	-- 	 CLASSIC:The Lost Rune	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(77690),	-- CLASSIC:A Small Upgrade	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78023),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(78024),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(78088),	-- 	 CLASSIC:A Strange Artifact	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78089),	-- 	 CLASSIC:Advice From Stormwind	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78090),	-- 	 CLASSIC:A Second Opinion	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78091),	-- 	 CLASSIC:Earning Your Salt	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78092),	-- 	 CLASSIC:It Must Be Destroyed	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78093),	-- 	 CLASSIC:Return to Delgren	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78114),	-- 	 CLASSIC:Wild Wyvern Wrangling	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78121),	-- 	 CLASSIC:Wrangling a Wild Wyvern	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78132),	-- 	 CLASSIC:Dragonslayer's Helm	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -623,7 +613,6 @@ q(78198),	-- 	 CLASSIC:Secrets of the Loa	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78199),	-- 	 CLASSIC:Secrets of the Loa	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78229),	-- 	 CLASSIC:Trial of The Owls	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78242),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(78261),	-- 	 CLASSIC:The Horn of Xelthos	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78265),	-- 	 CLASSIC:Fish Oil	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78266),	-- 	 CLASSIC:Dark Iron Ordinance	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78267),	-- 	 CLASSIC:Shredder Turbochargers	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -637,7 +626,6 @@ q(78296),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(78297),	-- 	 CLASSIC:You've Got Yourself A Deal	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78304),	-- 	 CLASSIC:You've Got Yourself A Deal	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78306),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(78307),	-- 	 CLASSIC:The Horn of Xelthos	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78506),	-- 	 CLASSIC:Elemental Distress	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78537),	-- 	 CLASSIC:Elixir of Insight	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78561),	-- 	 CLASSIC:Elixir of Insight	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -654,10 +642,8 @@ q(78680),	-- 	 CLASSIC:Rumors Abound	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78681),	-- 	 CLASSIC:The Conjuring	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78682),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(78684),	-- 	 CLASSIC:Mysterious Traveler	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78699),	-- CLASSIC:The Eye of Bhossca	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78702),	-- 	 CLASSIC:Raszel Ander	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78823),	-- CLASSIC:Terror of the Desert Skies	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(78830),	-- CLASSIC:Terror of the Desert Skies	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78832),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(78907),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(78908),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -683,20 +669,12 @@ q(79080),	-- 	 CLASSIC:Sharing the Faith	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79090),	-- 	 CLASSIC:Repelling Invaders	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79098),	-- 	 CLASSIC:Clear the Forest!	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79099),	-- 	 CLASSIC:Baron Aquanis	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79229),	-- 	 CLASSIC:Highway Robbery	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79235),	-- 	 CLASSIC:On the Lam	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79236),	-- 	 CLASSIC:Cherry for Your Thoughts?	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79242),	-- 	 CLASSIC:No Honor Among Thieves	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79298),	-- CLASSIC:Tempting Fate	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79348),	-- CLASSIC:The Lost Ancient	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79358),	-- CLASSIC:Tattered Note	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79360),	-- CLASSIC:Elemental Aid	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79361),	-- CLASSIC:Power of da Wind	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79364),	-- CLASSIC:A Simple Container	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79365),	-- CLASSIC:With Wind Beneath Your Wings	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79366),	-- CLASSIC:Calm Before the Storm	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79377),	-- CLASSIC:The Lost Saplings	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79442),	-- CLASSIC:Catching Up	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79482),	-- CLASSIC:Stolen Winter Veil Treats	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79483),	-- CLASSIC:Stolen Winter Veil Treats	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79484),	-- CLASSIC:You're a Mean One...	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -707,7 +685,6 @@ q(79492),	-- CLASSIC:Metzen the Reindeer	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79495),	-- CLASSIC:Metzen the Reindeer	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79501),	-- CLASSIC:The Hero of the Day	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79502),	-- CLASSIC:The Hero of the Day	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79535),	-- CLASSIC:Basilisks: Should Petrification be Feared?	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79614),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(79615),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(79624),	-- 	 CLASSIC:Anyone Can Cook	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -729,12 +706,6 @@ q(79940),	-- 	 CLASSIC:A Lost Brother	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79942),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(79945),	-- 	 CLASSIC:Orders from the Grand Crusader	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79946),	-- 	 CLASSIC:A Brother In Need	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79947),	-- CLASSIC:Geomancy: The Stone-Cold Truth	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79948),	-- CLASSIC:Defensive Magics 101	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79949),	-- CLASSIC:A Web of Lies: Debunking Myths and Legends	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79950),	-- CLASSIC:Demons and You	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79951),	-- CLASSIC:Mummies: A Guide to the Unsavory Undead	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(79952),	-- CLASSIC:RwlRwlRwlRwl!	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79953),	-- CLASSIC:A Ludite's Guide to Caring for Your Demonic Pet	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(79961),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(79963),	-- 	 CLASSIC:By The Light's Grace	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -884,14 +855,7 @@ q(81917),	-- CLASSIC:Chains That Bind	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81919),	-- CLASSIC:Brought to Heel	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81924),	-- 	 CLASSIC:Wisdom of the Guardians	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81944),	-- 	 CLASSIC:A Newly Discovered Purpose...	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81947),	-- CLASSIC:Sanguine Sorcery	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81949),	-- CLASSIC:Legends of the Tidesages	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81951),	-- CLASSIC:The Liminal and the Arcane	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81952),	-- CLASSIC:Everyday Etiquette	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81953),	-- CLASSIC:Stonewrought Design	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81954),	-- CLASSIC:Venomous Journeys	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81955),	-- CLASSIC:A Mind of Metal	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81956),	-- CLASSIC:Conjurer's Codex	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81960),	-- CLASSIC:Clarifying Air	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81961),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(81968),	-- CLASSIC:Answering Air's Call	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1168,14 +1132,6 @@ q(84377),	-- 	 CLASSIC:End of the Dark Horde	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84383),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(84384),	-- 	 CLASSIC:Demonic Deceptions	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84394),	-- CLASSIC:Greater Friend of the Library	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84395),	-- CLASSIC:Undead Potatoes	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84396),	-- CLASSIC:Magma or Lava?	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84397),	-- CLASSIC:Northern Kalimdor - A Comprehensive Guide	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84398),	-- CLASSIC:A Study of the Light	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84399),	-- CLASSIC:Ka-Boom!	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84400),	-- CLASSIC:The Knight and the Lady	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84401),	-- CLASSIC:Scourge: Undead Menace or Misunderstood?	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84402),	-- CLASSIC:Necromancy 101	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84405),	-- CLASSIC:Lost Heirloom	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84406),	-- CLASSIC:Relic of Light	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84407),	-- CLASSIC:The Prize Within	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1370,12 +1326,9 @@ q(86443),	-- CLASSIC:The Nightmare Manifests	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86444),	-- CLASSIC:The Only Prescription	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86445),	-- CLASSIC:The Wrath of Neptulon	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86449),	-- CLASSIC:Treasure of the Timeless One	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(86574),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(86576),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86577),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86611),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86612),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(86613),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86615),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86616),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86620),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1388,7 +1341,6 @@ q(86724),	-- CLASSIC:Dust to Dust	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86725),	-- CLASSIC:Dust to Dust	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86746),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86752),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(86757),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86777),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86791),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86792),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1413,7 +1365,6 @@ q(86970),	-- 	 CLASSIC:Testing Our Hypothesis	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(86971),	-- CLASSIC:Curious Karazhan Curios!	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87283),	-- CLASSIC:The Violet Satchel	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87295),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(87318),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87346),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87360),	-- CLASSIC:The Fall of Kel'Thuzad	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87361),	-- CLASSIC:Laid to Rest	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1447,7 +1398,6 @@ q(87516),	-- CLASSIC:Decapitation Strike	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87517),	-- CLASSIC:Red = Dead	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87518),	-- CLASSIC:Fall of the Grand Crusader	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(87520),	-- CLASSIC:Antithesis of the Light	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(87760),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88717),	-- CLASSIC:Never at Rest	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88718),	-- CLASSIC:Never at Rest	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88729),	-- CLASSIC:Ramaladni's Icy Grasp	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1456,8 +1406,6 @@ q(88744),	-- CLASSIC:Under the Shadow	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88745),	-- CLASSIC:Shadows of Doom	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88748),	-- CLASSIC:Cracked Necrotic Crystal	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88749),	-- CLASSIC:Faint Necrotic Crystal	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(88757),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(88758),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88759),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88760),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(88761),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1622,11 +1570,6 @@ q(90813),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(90817),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(90854),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(90865),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91282),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91285),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91294),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91316),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91317),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91354),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(91488),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91497),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1659,18 +1602,11 @@ q(91760),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91762),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91770),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91794),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91858),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91859),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91860),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91861),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91862),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91877),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91881),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91882),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91883),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91917),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91920),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(91921),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91923),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(91952),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92008),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1691,7 +1627,6 @@ q(92094),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92100),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92101),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92102),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92109),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92111),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92147),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92169),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1708,18 +1643,13 @@ q(92346),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92433),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92446),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92449),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92454),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92479),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92480),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92490),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92500),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92519),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92521),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92525),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92526),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92527),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92533),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92542),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92543),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92545),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92548),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1736,30 +1666,14 @@ q(92609),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92612),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92639),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92702),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92707),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92726),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92743),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92754),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92755),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92814),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92817),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92818),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92822),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92823),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92833),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92841),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92842),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92844),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92846),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92847),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92858),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92859),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92867),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92872),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92873),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92878),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92893),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(92894),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92908),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92912),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(92913),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1773,39 +1687,16 @@ q(93014),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93015),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93016),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93030),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93034),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93035),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93037),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93041),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93044),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93045),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93054),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93058),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93062),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93066),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93072),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93122),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93123),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93125),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93126),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93127),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93128),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93129),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93156),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93163),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93166),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93167),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93173),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93174),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93175),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93176),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93188),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93196),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93197),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93224),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93225),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93226),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93227),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93269),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93314),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93316),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1817,17 +1708,11 @@ q(93404),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93406),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93407),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93422),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93429),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93430),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93443),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93444),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93450),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93451),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93458),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93460),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93462),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93464),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93465),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93510),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93521),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93546),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1839,7 +1724,6 @@ q(93572),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93574),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93580),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93584),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93585),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93594),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93601),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93604),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1858,20 +1742,14 @@ q(93659),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93660),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93661),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93662),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93663),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93678),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93679),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93684),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93685),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93689),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93732),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93733),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93747),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93759),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93773),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93786),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93787),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93788),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93825),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93826),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93827),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -1889,287 +1767,22 @@ q(93848),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93854),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93894),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93900),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93928),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(93952),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93971),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(93976),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94004),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94049),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94212),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94213),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94214),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94215),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94216),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94217),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94218),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94219),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94220),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94221),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94222),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94223),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94224),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94225),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94226),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94227),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94228),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94229),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94230),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94231),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94232),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94233),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94234),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94235),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94236),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94237),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94238),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94239),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94240),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94241),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94242),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94243),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94244),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94245),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94246),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94247),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94248),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94249),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94250),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94251),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94252),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94253),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94254),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94255),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94256),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94257),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94258),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94259),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94260),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94261),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94262),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94263),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94264),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94265),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94266),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94267),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94268),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94269),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94270),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94271),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94272),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94273),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94274),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94275),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94276),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94277),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94278),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94279),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94280),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94281),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94282),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94283),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94284),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94285),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94286),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94287),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94288),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94289),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94290),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94291),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94292),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94293),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94294),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94295),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94296),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94297),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94298),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94299),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94300),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94301),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94302),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94303),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94304),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94305),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94306),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94307),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94308),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94309),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94310),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94311),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94312),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94313),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94314),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94315),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94316),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94317),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94318),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94319),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94320),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94321),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94322),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94323),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94324),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94325),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94326),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94327),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94328),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94329),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94330),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94331),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94332),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94333),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94334),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94335),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94336),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94337),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94338),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94339),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94340),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94341),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94342),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94343),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94344),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94345),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94346),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94347),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94348),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94349),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94350),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94351),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94352),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94353),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94354),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94355),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94356),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94357),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94358),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94359),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94360),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94405),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94406),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94407),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94427),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94434),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94435),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94436),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94438),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94440),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94441),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94449),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94465),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94466),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94467),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94468),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94479),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94480),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94481),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94483),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94494),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94495),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94497),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94499),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94500),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94501),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94502),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94503),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94504),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94505),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94532),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94533),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94535),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94556),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94559),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94613),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94614),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94615),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94617),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94618),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94634),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94668),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94669),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94670),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94672),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94678),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94679),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94680),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94727),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94733),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94734),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94737),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94739),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94744),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94745),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94748),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94768),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94773),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94774),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94775),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94776),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94777),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94778),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94779),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94782),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94789),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94792),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94793),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94817),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94818),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94819),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94820),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94821),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94822),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94823),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94824),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94825),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94826),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94829),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94832),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94841),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94842),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94843),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94857),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94858),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94861),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94863),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94864),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94872),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94873),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94877),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94879),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94881),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94884),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94885),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94886),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94887),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94888),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94889),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94890),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94891),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94892),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94893),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94894),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94895),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94898),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94901),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94902),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94907),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94911),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94913),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94914),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94923),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94924),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94925),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94926),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94927),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94928),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94929),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94930),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94931),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94948),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94961),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94962),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94963),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94964),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94965),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94968),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94969),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94971),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2182,87 +1795,37 @@ q(94981),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94982),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94983),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94984),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94992),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94997),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(94998),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(94999),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95006),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95025),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95026),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95027),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95032),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95033),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95034),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95036),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95056),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95059),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95062),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95063),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95064),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95066),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95107),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95108),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95111),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95118),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95119),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95120),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95121),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95122),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95123),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95124),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95125),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95126),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95140),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95141),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95143),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95144),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95147),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95148),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95156),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95162),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95163),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95165),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95181),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95183),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95184),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95194),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95196),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95198),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95218),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95219),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95248),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95254),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95260),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95261),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95262),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95263),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95264),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95267),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95273),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95278),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95283),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95284),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95285),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95288),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95293),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95294),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95295),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95296),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95309),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95312),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95315),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95316),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95317),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95318),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95319),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95320),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95321),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95322),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95325),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95326),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95327),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95329),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95330),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95331),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95351),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95365),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2270,26 +1833,10 @@ q(95377),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95378),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95379),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95380),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95383),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95384),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95385),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95417),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95418),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95419),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95420),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95424),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95425),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95426),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95427),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95428),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95431),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95432),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95433),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95454),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95472),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95483),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95494),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95495),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95497),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95498),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95499),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2300,18 +1847,13 @@ q(95503),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95504),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95505),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95506),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95507),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95508),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95511),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95512),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95534),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95544),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95555),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95556),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95557),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95560),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95561),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95562),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95568),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95569),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95570),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2319,125 +1861,56 @@ q(95586),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95588),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95599),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95600),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95601),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95602),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95603),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95611),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95613),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95615),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95621),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95642),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95643),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95726),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95730),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95736),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95737),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95738),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95739),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95748),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95751),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95753),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95766),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95769),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95770),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95771),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95773),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95774),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95775),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95776),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95786),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95787),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95788),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95789),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95790),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95791),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95792),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95793),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95798),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95799),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95803),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95816),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95817),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95818),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95819),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95820),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95821),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95882),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95883),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95884),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95885),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95912),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95913),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95924),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95925),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95926),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95928),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95934),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95935),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95936),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95943),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95950),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95951),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95955),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95957),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95961),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95975),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95977),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95978),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95979),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95980),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95981),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95982),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95983),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95984),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95986),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95988),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95991),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(95992),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(95993),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96003),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96009),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96010),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96015),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96016),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96018),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96020),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96025),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96026),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96027),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96028),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96060),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96062),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96063),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96064),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96065),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96067),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96075),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96076),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96077),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96078),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96079),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96081),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96082),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96083),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96084),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96085),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96087),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96088),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96103),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96104),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96105),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96107),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96108),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96109),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96125),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96126),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96131),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96132),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96133),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96134),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96135),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96136),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96145),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96185),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96186),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2458,10 +1931,7 @@ q(96200),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96201),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96202),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96203),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96204),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96209),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96222),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96243),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96247),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96248),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96249),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2474,7 +1944,6 @@ q(96257),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96258),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96262),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96263),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96264),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96265),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96266),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96296),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2514,7 +1983,6 @@ q(96404),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96405),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96406),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96407),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96411),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96412),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96413),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96414),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2558,22 +2026,12 @@ q(96769),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96770),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96771),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96772),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96773),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96774),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96775),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96776),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96779),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96781),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96782),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96783),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96784),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96785),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96786),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96796),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96797),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96798),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96799),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(96800),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96811),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96812),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(96828),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2616,13 +2074,10 @@ q(97018),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97022),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97045),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97046),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97047),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97048),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97049),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97074),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97078),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97119),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97130),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97168),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97169),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97170),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2650,28 +2105,16 @@ q(97203),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97204),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97205),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97235),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97242),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97246),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97249),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97250),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97252),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97264),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97265),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97266),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97268),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97269),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97270),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97272),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97273),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97275),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97284),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97286),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97319),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97326),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97327),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97328),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97329),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97331),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97332),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97378),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97386),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2682,14 +2125,12 @@ q(97411),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97412),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97413),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97414),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97420),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97446),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97447),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97448),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97449),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97450),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97453),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97485),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97486),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97487),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97488),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2698,37 +2139,16 @@ q(97490),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97530),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97534),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97536),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97538),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97539),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97540),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97617),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97663),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97821),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97883),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97884),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97891),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97914),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97926),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97984),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(97985),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97986),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97987),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(97988),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98013),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98024),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98025),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98027),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98028),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98042),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98059),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98071),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98093),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98094),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98095),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98096),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98109),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98155),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98156),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98166),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98192),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98203),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2737,76 +2157,23 @@ q(98215),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98224),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98225),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98231),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98233),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98240),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98251),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98252),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98283),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98287),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98298),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98299),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98325),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98338),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98340),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98341),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98342),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98362),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98393),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98394),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98395),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98396),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98397),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98404),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98405),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98417),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98418),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98426),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98459),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98461),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98463),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98465),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98466),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98467),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98468),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98469),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98470),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98471),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98472),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98477),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98517),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98520),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98574),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98575),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98576),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98731),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98738),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98739),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98830),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98887),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98889),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98891),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98893),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98897),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98899),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98901),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98903),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98904),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98905),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98906),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98907),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98908),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98910),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98911),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98912),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98913),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98914),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98915),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98916),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98917),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98918),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(98919),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98977),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(98983),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99043),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99045),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99054),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2818,12 +2185,9 @@ q(99065),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99066),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99067),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99068),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(99145),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99187),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(99192),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99193),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99194),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(99197),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99198),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99199),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99201),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -2854,3 +2218,23 @@ q(99326),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99344),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99366),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(99367),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+1.60.1.70291
+q(99435),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+1.60.1.70425
+q(99600),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(99602),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(99670),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+1.60.1.70450
+q(90930),	-- CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(99470),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+1.60.1.70862
+q(93161),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(97029),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98563),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98642),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98715),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98724),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98745),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98746),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98748),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
+q(98749),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:

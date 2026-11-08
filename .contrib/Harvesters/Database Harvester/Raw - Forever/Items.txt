@@ -19370,3 +19370,87 @@
 287647@@@Ensemble: Gilded Blademaster's Armor
 287648@@@Gilded Blademaster's Greatsword
 288185@@@Adventurer's Tent
+1.60.1.70862
+7190@@@Scorched Rocket Boots
+249519@@@Formula: Frozen Heart of the Mountain
+249520@@@Formula: Molten Heart of the Mountain
+249521@@@Formula: Dormant Heart of the Mountain
+251340@@@Plans: Veteran's Chain Shirt
+251342@@@Plans: Protector's Chain Shirt
+251343@@@Plans: Acolyte's Chain Shirt
+251344@@@Plans: Crusader's Chain Shirt
+251345@@@Plans: Veteran's Chain Leggings
+251346@@@Plans: Guard's Chain Leggings
+251347@@@Plans: Protector's Chain Leggings
+251348@@@Plans: Acolyte's Chain Leggings
+251349@@@Plans: Crusader's Chain Leggings
+251350@@@Plans: Veteran's Chain Helm
+251351@@@Plans: Guard's Chain Helm
+251352@@@Plans: Protector's Chain Helm
+251353@@@Plans: Acolyte's Chain Helm
+251354@@@Plans: Crusader's Chain Helm
+251395@@@Plans: Shining Mithril Helm
+252771@@@Pattern: Brawler's Leather Armor
+252772@@@Pattern: Trapper's Leather Armor
+252773@@@Pattern: Defender's Leather Armor
+252774@@@Pattern: Totemic Leather Armor
+252775@@@Pattern: Stormrider's Leather Armor
+252776@@@Pattern: Wisdom's Leather Armor
+252792@@@Pattern: Brawler's Leather Pants
+252793@@@Pattern: Trapper's Leather Pants
+252794@@@Pattern: Defender's Leather Pants
+252795@@@Pattern: Totemic Leather Pants
+252796@@@Pattern: Stormrider's Leather Pants
+252797@@@Pattern: Wisdom's Leather Pants
+252814@@@Pattern: Brawler's Leather Helm
+252815@@@Pattern: Trapper's Leather Helm
+252816@@@Pattern: Defender's Leather Helm
+252817@@@Pattern: Totemic Leather Helm
+252818@@@Pattern: Stormrider's Leather Helm
+252819@@@Pattern: Wisdom's Leather Helm
+275968@@@Initiate's Signet of Ferocity
+275969@@@Initiate's Signet of Brilliance
+275970@@@Initiate's Signet of Resolve
+275971@@@Initiate's Signet of Vigilance
+275972@@@Tracker's Signet of Ferocity
+275973@@@Tracker's Signet of Brilliance
+275974@@@Tracker's Signet of Resolve
+275975@@@Tracker's Signet of Vigilance
+275976@@@Watcher's Signet of Ferocity
+275977@@@Watcher's Signet of Brilliance
+275979@@@Watcher's Signet of Resolve
+275980@@@Watcher's Signet of Vigilance
+275981@@@Warden's Signet of Ferocity
+275982@@@Warden's Signet of Brilliance
+275983@@@Warden's Signet of Resolve
+275984@@@Warden's Signet of Vigilance
+288896@@@Superior Healing Potion
+288897@@@Superior Mana Potion
+288898@@@Swiftness Potion
+288900@@@Earthshaker
+288926@@@Choker of the Fire Lord
+288927@@@Quick Strike Ring
+288928@@@Heavy Dark Iron Ring
+288929@@@Band of Sulfuras
+288930@@@Cauterizing Band
+288931@@@Ring of Spell Power
+289081@@@Noggenfogger Elixir
+289082@@@Elixir of Endless Intellect
+289083@@@Elixir of Endless Power
+289084@@@Elixir of Endless Healing
+289086@@@Elixir of Endless Rapidity
+289087@@@Elixir of Endless Opportunity
+289088@@@Scroll of Endless Fortitude
+289292@@@Hammer of Bestial Fury
+289294@@@Thunderfury, Blessed Blade of the Windseeker
+289295@@@Sulfuras, Hand of Ragnaros
+289296@@@Benediction
+289297@@@Anathema
+289303@@@Rhok'delar, Longbow of the Ancient Keepers
+289321@@@Elixir of Endless Mana
+289329@@@Elixir of Endless Growth
+289330@@@Scroll of Endless Speed
+289334@@@Elixir of Endless Experience
+289439@@@Pouch of Violet Dust
+289559@@@Enchant Boots - Speed
+289560@@@Formula: Enchant Boots - Speed

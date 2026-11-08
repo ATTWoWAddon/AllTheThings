@@ -2218,3 +2218,7 @@
 1.60.1.70425
 847@@@All Stats +1
 8734@@@Intellect +$k1
+1.60.1.70862
+8214@@@Defense +$k1
+8726@@@Luminarian's Binding
+8737@@@Speed Increase

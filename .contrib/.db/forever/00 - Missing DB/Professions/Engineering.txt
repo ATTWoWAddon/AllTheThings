@@ -14,6 +14,7 @@ r(19804),	-- Arcanite Dragonling
 r(22793),	-- Biznicks 247x128 Accurascope
 r(22795),	-- Core Marksman Rifle
 r(22797),	-- Force Reactive Disk
+r(23079),	-- Major Recombobulator
 r(24356),	-- Bloodvine Goggles
 r(24357),	-- Bloodvine Lens
 r(431362),	-- Soul Vessel

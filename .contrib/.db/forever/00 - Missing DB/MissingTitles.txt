@@ -37,6 +37,7 @@ title(34),	-- High Warlord %s
 title(35),	-- Knight-Captain %s
 title(36),	-- [DNT] Test %s
 title(37),	-- Master Angler %s
-title(38),	-- %s of the Nightclaw
 title(39),	-- %s the Harbinger of Darkness
 title(111),	-- Bloodsail Admiral %s
+1.60.1.70862
+title(40),	-- %s the Blacksmith
