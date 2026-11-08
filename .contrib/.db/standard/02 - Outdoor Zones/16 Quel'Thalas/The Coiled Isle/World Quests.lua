@@ -198,7 +198,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			groups = {
 				n(WORLD_QUESTS, {
 					q(96307),	-- Special Assignment: Wraith Wrath was unlocked
-					q(96492),	-- Special Assignment: Demand and Supply was unlocked
+					-- q(???),	-- Special Assignment: Demand and Supply was unlocked
 					q(95922),	-- Special Assignment: Face the Swarm was unlocked
 				}),
 			},

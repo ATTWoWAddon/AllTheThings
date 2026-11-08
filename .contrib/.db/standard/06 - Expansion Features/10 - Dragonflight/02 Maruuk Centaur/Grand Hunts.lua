@@ -322,6 +322,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					THE_WAKING_SHORES,
 				},
 				groups = {
+					container(200516, {	-- Grant Hunt Spoils [Common +]
+						providers = {
+							{ "i", 200468 },	-- Grant Hunt Spoils [Epic]
+							{ "i", 200513 },	-- Grand Hunt Spoils [Rare]
+							{ "i", 200515 },	-- Grand Hunt Spoils [Uncommon]
+							{ "i", 200516 },	-- Grant Hunt Spoils [Common]
+						},
+						groups = {
+							i(194094),	-- Bakar Companion Color: Black (CI!)
+							i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
+							i(194089),	-- Bakar Companion Color: Orange (CI!)
+							i(194093),	-- Bakar Companion Color: Brown (CI!)
+							i(194090),	-- Bakar Companion Color: White (CI!)
+							i(194095),	-- Ohuna Companion Color: Sepia (CI!)
+							i(193205),	-- Ohuna Companion Color: Brown (CI!)
+							i(194088),	-- Ohuna Companion Color: Dark (CI!)
+							i(194087),	-- Ohuna Companion Color: Red (CI!)
+							i(193360),	-- Centaur's Trophy Necklace
+							i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
+						},
+					}),
+					container(200515, {	-- Grant Hunt Spoils [Uncommon +]
+						providers = {
+							{ "i", 200468 },	-- Grant Hunt Spoils [Epic]
+							{ "i", 200513 },	-- Grand Hunt Spoils [Rare]
+							{ "i", 200515 },	-- Grand Hunt Spoils [Uncommon]
+						},
+						groups = {
+							i(200290),	-- Bakar Companion (PET!)
+							i(200276),	-- Ohuna Companion (PET!)
+						},
+					}),
 					i(194097),	-- Hunter's Fabulous Treasure
 					i(194108, {	-- Mighty Hunter's Horn
 						sourceID = 180922,
@@ -339,22 +371,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						isWeekly = true,
 						groups = {
 							i(200468, {	-- Grant Hunt Spoils [Epic]
-								i(200290),	-- Bakar Companion (PET!)
-								i(194094),	-- Bakar Companion Color: Black (CI!)
-								i(194093),	-- Bakar Companion Color: Brown (CI!)
-								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
-								i(194089),	-- Bakar Companion Color: Orange (CI!)
-								i(194090),	-- Bakar Companion Color: White (CI!)
 								i(215362, {	-- Cache of Storms
 									timeline = { ADDED_10_2_6_SEASON_FOUR },
 								}),
-								i(193360),	-- Centaur's Trophy Necklace
-								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
-								i(200276),	-- Ohuna Companion (PET!)
-								i(193205),	-- Ohuna Companion Color: Brown (CI!)
-								i(194088),	-- Ohuna Companion Color: Dark (CI!)
-								i(194087),	-- Ohuna Companion Color: Red (CI!)
-								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
 								i(192791),	-- Plainswalker Bearer (MOUNT!)
 							}),
 						},
@@ -364,16 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						sourceQuests = { 70906 },	-- 1st Weekly Grand Hunt
 						isWeekly = true,
 						groups = {
-							i(200513, {	-- Grand Hunt Spoils [Rare]
-								i(200290),	-- Bakar Companion (PET!)
-								i(194094),	-- Bakar Companion Color: Black (CI!)
-								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
-								i(194089),	-- Bakar Companion Color: Orange (CI!)
-								i(193360),	-- Centaur's Trophy Necklace
-								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
-								i(200276),	-- Ohuna Companion (PET!)
-								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
-							}),
+							i(200513),	-- Grand Hunt Spoils [Rare]
 						},
 					}),
 					q(71137, {
@@ -381,14 +391,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						sourceQuests = { 71136 },	-- 2nd Weekly Grand Hunt
 						isWeekly = true,
 						groups = {
-							i(200515, {	-- Grand Hunt Spoils [Uncommon]
-								i(200290),	-- Bakar Companion (PET!)
-								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
-								i(193360),	-- Centaur's Trophy Necklace
-								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
-								i(200276),	-- Ohuna Companion (PET!)
-								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
-							}),
+							i(200515),	-- Grand Hunt Spoils [Uncommon]
 						},
 					}),
 					q(70907, {
@@ -396,12 +399,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						sourceQuests = { 71137 },	-- 3rd Weekly Grand Hunt
 						repeatable = true,
 						groups = {
-							i(200516, {	-- Grant Hunt Spoils [Common]
-								i(194091),	-- Bakar Companion Color: Golden Brown (CI!)
-								i(193360),	-- Centaur's Trophy Necklace
-								i(194095),	-- Ohuna Companion Color: Sepia (CI!)
-								i(201732),	-- Pattern: Fierce Armor Kit (RECIPE!)
-							}),
+							i(200516),	-- Grant Hunt Spoils [Common]
 						},
 					}),
 				},

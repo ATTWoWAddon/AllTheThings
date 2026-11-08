@@ -264,7 +264,7 @@ root(ROOTS.HiddenQuestTriggers, m(MAP.MIDNIGHT.QUELTHALAS, {
 				q(95616),	-- Barrier A (accepted with 95639)
 				q(95617),	-- Barrier B (accepted with 95639)
 				q(95619),	-- Barrier C (accepted with 95639)
-				q(97503),	-- Unsure, procced when Serpent Summoning Ritual Event reached 20%
+				-- q(97503),	-- Unsure, procced when Serpent Summoning Ritual Event reached 20%
 			})),
 		}),
 	}),

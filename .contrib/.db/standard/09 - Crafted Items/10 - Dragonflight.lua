@@ -1913,9 +1913,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 			FirstCraft(71553, 383569);	-- Illusion Parchment: Whirling Breeze
 			FirstCraft(71529, 385197);	-- Scroll of Sales
 			-- Mysteries
-			FirstCraft(71554, 383563);	-- Blazing Fortune
-			FirstCraft(71554, 384948);	-- Flourishing Fortune
-			FirstCraft(71554, 384949);	-- Serene Fortune
+			FirstCraft(71554, 383563);	-- Blazing Fortune -- TODO: verify questID
+			FirstCraft(71554, 384948);	-- Flourishing Fortune -- TODO: verify questID
+			FirstCraft(71554, 384949);	-- Serene Fortune -- TODO: verify questID
 			FirstCraft(71521, 383512);	-- Bundle O' Cards: Dragon Isles
 			-- Contracts
 			FirstCraft(71579, 383592);	-- Contract: Artisan's Consortium

@@ -900,10 +900,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDE
 			FirstCraft(90311, 1229923);	-- Emergency Soul Link
 			FirstCraft(93228, 1261866);	-- Farstrider's Hawkeye
 			FirstCraft(90299, 1229919);	-- Kinetic Ankle Primers
-			FirstCraft(93231, 1261895);	-- Laced Zoomshots
+			FirstCraft(93231, 1261895);	-- Laced Zoomshots -- TODO: verify questID
 			FirstCraft(90306, 1229916);	-- Lucky Keychain
 			FirstCraft(93230, 1261893);	-- Smuggler's Lynxeye
-			FirstCraft(93231, 1261913);	-- Weighted Boomshots
+			FirstCraft(93231, 1261913);	-- Weighted Boomshots -- TODO: verify questID
 			FirstCraft(90304, 1229928);	-- Wormhole Generator: Quel'Thalas
 			-- Bots
 			FirstCraft(93236, 1261945);	-- B0P, Curator of Booms
