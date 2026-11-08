@@ -4747,7 +4747,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 			}),
 			-- #endif
 			-- #if ANYCLASSIC
-			-- #if BEFORE CATA
 			-- TODO: Finish this part.
 			n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
 				coord = { 41.6, 68.6, ORGRIMMAR },
@@ -4816,6 +4815,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					}),
 				},
 			}),
+			-- #if BEFORE CATA
 			n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 				description = "Found within the Hall of Legends.",
 				races = HORDE_ONLY,
