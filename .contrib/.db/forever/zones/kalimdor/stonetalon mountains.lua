@@ -919,12 +919,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				},
 				races = HORDE_ONLY,
 				groups = {
-					i(11101, {	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
-						isLimited = true,
-					}),
-					i(11039, {	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
-						isLimited = true,
-					}),
+					i(11101),	-- Formula: Enchant Bracer - Lesser Strength (RECIPE!)
+					i(11039),	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
 				},
 			}),
 			n(4085, {	-- Nizzik <Venture Armor Salesman>
