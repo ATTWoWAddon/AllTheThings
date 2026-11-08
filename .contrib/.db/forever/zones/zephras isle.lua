@@ -1812,6 +1812,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					{ 35.8, 56.2, MAP.ZEPHRAS_ISLE },
 				},
 				groups = {
+					i(285268),	-- Scout Ranger's Boots
 					i(285264),	-- Skyseer's Slippers
 					i(285269),	-- Thendal Watcher's Boots
 				},
