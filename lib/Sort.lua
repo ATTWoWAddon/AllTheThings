@@ -30,7 +30,10 @@ local function calculateSourceQuestDepth(group, text)
 	end
 	return 0;
 end
+local issecretvalue = app.WOWAPI.issecretvalue;
 local function toLowerString(value)
+	-- secret values can't be indexed; they sort as empty
+	if issecretvalue(value) then return ""; end
 	---@diagnostic disable-next-line: undefined-field
 	return tostring(value):lower();
 end
