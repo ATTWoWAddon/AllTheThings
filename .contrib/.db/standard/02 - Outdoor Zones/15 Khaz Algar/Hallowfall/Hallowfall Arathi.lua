@@ -1043,9 +1043,9 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 						}),
 					})),
 					-- Daily Treasures
-					n(TREASURES, sharedData({
+					n(TREASURES, bubbleDownFiltered({
 						isDaily = true,
-					},{
+					},FILTERFUNC_questID,{
 						o(437112, {	-- Clammer's Kit
 							-- when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
 							coord = { 61.9, 6.0, HALLOWFALL },
@@ -1084,177 +1084,185 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(224460),	-- The Lost Diary (QS!)
 							},
 						}),
-						o(434929, {	-- Radiant Remnant
-							coord = { 62.2, 31.7, HALLOWFALL },
-							questID = 80586,
-						}),
-						o(434561, {	-- Radiant Remnant
-							coord = { 65.6, 27.0, HALLOWFALL },
-							questID = 80550,
-						}),
-						o(434554, {	-- Radiant Remnant
-							coord = { 64.8, 28.9, HALLOWFALL },
-							questID = 80548,
-						}),
-						o(435009, {	-- Radiant Remnant
-							-- coord = { 61.3, 31.8, HALLOWFALL },	-- re-confirm, could not find
-							questID = 80591,
-						}),
-						o(434564, {	-- Radiant Remnant
-							coord = { 65.0, 30.2, HALLOWFALL },
-							questID = 80552,
-						}),
-						o(434926, {	-- Radiant Remnant
-							coord = { 64.0, 31.7, HALLOWFALL },
-							questID = 80583,
-						}),
-						o(454543, {	-- Radiant Remnant
-							coord = { 66.0, 28.2, HALLOWFALL },
-							questID = 83520,
-						}),
-						o(430340, {	-- Radiant Remnant
-							coord = { 65.4, 16.7, HALLOWFALL },
-							questID = 80342,
-						}),
-						o(430342, {	-- Radiant Remnant
-							coord = { 64.2, 16.4, HALLOWFALL },
-							questID = 80344,
-						}),
-						o(430337, {	-- Radiant Remnant
-							coord = { 66.4, 15.0, HALLOWFALL },
-							questID = 80339,
-						}),
-						o(430343, {	-- Radiant Remnant
-							coord = { 66.1, 17.9, HALLOWFALL },
-							questID = 80345,
-						}),
-						o(457303, {	-- Radiant Remnant
-							coord = { 63.8, 28.6, HALLOWFALL },
-							questID = 84344,
-						}),
-						o(454541, {	-- Radiant Remnant
-							-- coord = { 64.4, 30.2, HALLOWFALL },	-- re-confirm, could not find
-							questID = 83517,
-						}),
-						o(434566, {	-- Radiant Remnant
-							coord = { 64.4, 29.0, HALLOWFALL },
-							questID = 80554,
-						}),
-						o(434925, {	-- Radiant Remnant
-							coord = { 66.0, 32.4, HALLOWFALL },
-							questID = 80582,
-						}),
-						o(434565, {	-- Radiant Remnant
-							coord = { 65.7, 29.7, HALLOWFALL },
-							questID = 80553,
-						}),
-						o(434928, {	-- Radiant Remnant
-							coord = { 64.1, 30.6, HALLOWFALL },
-							questID = 80585,
-						}),
-						o(434932, {	-- Radiant Remnant
-							coord = { 63.1, 30.1, HALLOWFALL },
-							questID = 80589,
-						}),
-						o(451990, {	-- Radiant Remnant
-							coord = { 63.2, 27.4, HALLOWFALL },
-							questID = 82997,
-						}),
-						o(434286, {	-- Radiant Remnant
-							coord = { 66.0, 25.2, HALLOWFALL },
-							questID = 80337,
-						}),
-						o(434281, {	-- Radiant Remnant
-							coord = { 67.5, 25.5, HALLOWFALL },
-							questID = 80527,
-						}),
-						o(434289, {	-- Radiant Remnant
-							coord = { 66.9, 23.1, HALLOWFALL },
-							questID = 80535,
-						}),
-						o(434284, {	-- Radiant Remnant
-							coord = { 65.5, 23.4, HALLOWFALL },
-							questID = 80530,
-						}),
-						o(430344, {	-- Radiant Remnant
-							coord = { 65.8, 20.5, HALLOWFALL },
-							questID = 80346,
-						}),
-						o(434567, {	-- Radiant Remnant
-							coord = { 64.9, 26.3, HALLOWFALL },
-							questID = 80555,
-						}),
-						o(434568, {	-- Radiant Remnant
-							coord = { 63.8, 26.4, HALLOWFALL },
-							questID = 80556,
-						}),
-						o(434560, {	-- Radiant Remnant
-							-- coord = { 65.5, 28.3, HALLOWFALL },	-- re-confirm, could not find
-							questID = 80549,
-						}),
-						o(454542, {	-- Radiant Remnant
-							coord = { 64.4, 28.2, HALLOWFALL },
-							questID = 83518,
-						}),
-						o(434563, {	-- Radiant Remnant
-							coord = { 64.6, 26.8, HALLOWFALL },
-							questID = 80551,
-						}),
-						o(434288, {	-- Radiant Remnant
-							coord = { 64.3, 24.9, HALLOWFALL },
-							questID = 80534,
-						}),
-						o(434283, {	-- Radiant Remnant
-							coord = { 64.0, 24.4, HALLOWFALL },
-							questID = 80529,
-						}),
-						o(434930, {	-- Radiant Remnant
-							coord = { 62.5, 32.6, HALLOWFALL },
-							questID = 80587,
-						}),
-						o(430284, {	-- Radiant Remnant
-							coord = { 63.6, 20.9, HALLOWFALL },
-							questID = 80338,
-						}),
-						o(430358, {	-- Radiant Remnant
-							coord = { 63.6, 18.7, HALLOWFALL },
-							questID = 80348,
-						}),
-						o(430345, {	-- Radiant Remnant
-							coord = { 65.7, 16.5, HALLOWFALL },
-							questID = 80347,
-						}),
-						o(434927, {	-- Radiant Remnant
-							-- coord = { 63.8, 31.0, HALLOWFALL },	-- re-confirm, could not find
-							questID = 80584,
-						}),
-						o(434285, {	-- Radiant Remnant
-							coord = { 67.2, 26.6, HALLOWFALL },
-							questID = 80531,
-						}),
-						o(454021, {	-- Radiant Remnant
-							coord = { 70.7, 30.9, HALLOWFALL },
-							questID = 83367,
-						}),
-						o(454024, {	-- Radiant Remnant
-							coord = { 69.7, 29.9, HALLOWFALL },
-							questID = 83369,
-						}),
-						o(454023, {	-- Radiant Remnant
-							coord = { 69.3, 31.9, HALLOWFALL },
-							questID = 83368,
-						}),
-						o(430341, {	-- Radiant Remnant
-							coord = { 62.8, 20.7, HALLOWFALL },
-							questID = 80343,
-						}),
-						o(434924, {	-- Radiant Remnant
-							coord = { 64.4, 34.1, HALLOWFALL },
-							questID = 80581,
-						}),
-						o(430347, {	-- Radiant Remnant
-							coord = { 66.2, 16.6, HALLOWFALL },
-							questID = 80337,
+						o_repeated({
+							-- Drops
+							i(206350),	-- Radiant Remnant
+							-- Objects
+							o(434929, {	-- Radiant Remnant
+								coord = { 62.2, 31.7, HALLOWFALL },
+								questID = 80586,
+							}),
+							o(434561, {	-- Radiant Remnant
+								coord = { 65.6, 27.0, HALLOWFALL },
+								questID = 80550,
+							}),
+							o(434554, {	-- Radiant Remnant
+								coord = { 64.8, 28.9, HALLOWFALL },
+								questID = 80548,
+							}),
+							o(435009, {	-- Radiant Remnant
+								coord = { 61.4, 31.8, HALLOWFALL },	-- re-confirm, could not find, coords == wowhead
+								questID = 80591,
+							}),
+							o(434564, {	-- Radiant Remnant
+								coord = { 65.0, 30.2, HALLOWFALL },
+								questID = 80552,
+							}),
+							o(434926, {	-- Radiant Remnant
+								coord = { 64.0, 31.7, HALLOWFALL },
+								questID = 80583,
+							}),
+							o(454543, {	-- Radiant Remnant
+								coord = { 66.0, 28.2, HALLOWFALL },
+								questID = 83520,
+							}),
+							o(430340, {	-- Radiant Remnant
+								coord = { 65.4, 16.7, HALLOWFALL },
+								questID = 80342,
+							}),
+							o(430342, {	-- Radiant Remnant
+								coord = { 64.2, 16.4, HALLOWFALL },
+								questID = 80344,
+							}),
+							o(430337, {	-- Radiant Remnant
+								coord = { 66.4, 15.0, HALLOWFALL },
+								questID = 80339,
+							}),
+							o(430343, {	-- Radiant Remnant
+								coord = { 66.1, 17.9, HALLOWFALL },
+								questID = 80345,
+							}),
+							o(457303, {	-- Radiant Remnant
+								coord = { 63.8, 28.6, HALLOWFALL },
+								questID = 84344,
+							}),
+							o(454541, {	-- Radiant Remnant
+								coord = { 64.7, 30.7, HALLOWFALL },
+								questID = 83517,
+							}),
+							o(434566, {	-- Radiant Remnant
+								coord = { 64.4, 29.0, HALLOWFALL },
+								questID = 80554,
+							}),
+							o(434925, {	-- Radiant Remnant
+								coord = { 66.0, 32.4, HALLOWFALL },
+								questID = 80582,
+							}),
+							o(434565, {	-- Radiant Remnant
+								coord = { 65.7, 29.7, HALLOWFALL },
+								questID = 80553,
+							}),
+							o(434928, {	-- Radiant Remnant
+								coord = { 64.1, 30.6, HALLOWFALL },
+								questID = 80585,
+							}),
+							o(434932, {	-- Radiant Remnant
+								coord = { 63.1, 30.1, HALLOWFALL },
+								questID = 80589,
+							}),
+							o(451990, {	-- Radiant Remnant
+								coord = { 63.2, 27.4, HALLOWFALL },
+								questID = 82997,
+							}),
+							o(434281, {	-- Radiant Remnant
+								coord = { 67.5, 25.5, HALLOWFALL },
+								questID = 80527,
+							}),
+							o(434289, {	-- Radiant Remnant
+								coord = { 66.9, 23.1, HALLOWFALL },
+								questID = 80535,
+							}),
+							o(434284, {	-- Radiant Remnant
+								coord = { 65.5, 23.4, HALLOWFALL },
+								questID = 80530,
+							}),
+							o(430344, {	-- Radiant Remnant
+								coord = { 65.8, 20.5, HALLOWFALL },
+								questID = 80346,
+							}),
+							o(434567, {	-- Radiant Remnant
+								coord = { 64.9, 26.3, HALLOWFALL },
+								questID = 80555,
+							}),
+							o(434568, {	-- Radiant Remnant
+								coord = { 63.8, 26.4, HALLOWFALL },
+								questID = 80556,
+							}),
+							o(434560, {	-- Radiant Remnant
+								coord = { 66.1, 28.9, HALLOWFALL },
+								questID = 80549,
+							}),
+							o(454542, {	-- Radiant Remnant
+								coord = { 64.4, 28.2, HALLOWFALL },
+								questID = 83518,
+							}),
+							o(434563, {	-- Radiant Remnant
+								coord = { 64.6, 26.8, HALLOWFALL },
+								questID = 80551,
+							}),
+							o(434288, {	-- Radiant Remnant
+								coord = { 64.3, 24.9, HALLOWFALL },
+								questID = 80534,
+							}),
+							o(434283, {	-- Radiant Remnant
+								coord = { 64.0, 24.4, HALLOWFALL },
+								questID = 80529,
+							}),
+							o(434930, {	-- Radiant Remnant
+								coord = { 62.5, 32.6, HALLOWFALL },
+								questID = 80587,
+							}),
+							o(430284, {	-- Radiant Remnant
+								coord = { 63.6, 20.9, HALLOWFALL },
+								questID = 80338,
+							}),
+							o(430358, {	-- Radiant Remnant
+								coord = { 63.6, 18.7, HALLOWFALL },
+								questID = 80348,
+							}),
+							o(430345, {	-- Radiant Remnant
+								coord = { 65.7, 16.5, HALLOWFALL },
+								questID = 80347,
+							}),
+							o(434927, {	-- Radiant Remnant
+								coord = { 63.4, 30.9, HALLOWFALL },
+								questID = 80584,
+							}),
+							o(434285, {	-- Radiant Remnant
+								coord = { 67.2, 26.6, HALLOWFALL },
+								questID = 80531,
+							}),
+							o(454021, {	-- Radiant Remnant
+								coord = { 70.7, 30.9, HALLOWFALL },
+								questID = 83367,
+							}),
+							o(454024, {	-- Radiant Remnant
+								coord = { 69.7, 29.9, HALLOWFALL },
+								questID = 83369,
+							}),
+							o(454023, {	-- Radiant Remnant
+								coord = { 69.3, 31.9, HALLOWFALL },
+								questID = 83368,
+							}),
+							o(430341, {	-- Radiant Remnant
+								coord = { 62.8, 20.7, HALLOWFALL },
+								questID = 80343,
+							}),
+							o(434924, {	-- Radiant Remnant
+								coord = { 64.4, 34.1, HALLOWFALL },
+								questID = 80581,
+							}),
+							o_repeated({	-- Blizzard made two of them share a questID
+								questID = 80337,
+								groups = {
+									o(430347, {	-- Radiant Remnant
+										coord = { 66.1, 16.6, HALLOWFALL },
+									}),
+									o(434286, {	-- Radiant Remnant
+										coord = { 66.0, 25.2, HALLOWFALL },
+									}),
+								},
+							}),
 						}),
 					})),
 					n(VENDORS, {

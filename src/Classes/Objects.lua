@@ -87,6 +87,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 "AsGenericObjectContainer", {
 	__ignoreCaching = app.ReturnTrue,
 	trackable = function(t)
+		if t.questID then return true end
 		local g = t.g
 		local o
 		for i=1,#g do
@@ -95,6 +96,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		end
 	end,
 	repeatable = function(t)
+		if t.questID then return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly end
 		local g = t.g
 		local o
 		for i=1,#g do
@@ -103,6 +105,8 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		end
 	end,
 	saved = function(t)
+		local questID = t.questID
+		if questID and app.IsQuestFlaggedCompleted(questID) then return true end
 		local g = t.g
 		local o, anySaved
 		for i=1,#g do

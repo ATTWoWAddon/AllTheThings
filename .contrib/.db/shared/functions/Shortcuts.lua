@@ -2612,7 +2612,9 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 		-- Now we want the children of these generic groups to be 'special' since they require 'special' logic in the addon
 		for i,group in ipairs(t.groups or t.g --[[@as ATTObjectArray]]) do
 			if group.objectID then
-				group.type = "AsSubGenericObject"
+				if not group.type then
+					group.type = "AsSubGenericObject"
+				end
 			end
 		end
 		return t
