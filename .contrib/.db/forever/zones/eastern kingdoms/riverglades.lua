@@ -82,7 +82,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94928, {	-- A Few Furs for Friz
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
 				sourceQuest = 94925,	-- A Fur Trade
 				qi = 267263,	-- Bundle of Lion Pelts (PQI!)
 				races = ALLIANCE_ONLY,
@@ -168,7 +168,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94907, {	-- A Small Favor
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1, where Demar Brant and Ashe Amberhall both stand.
 				qi = 268646,	-- Amberhall's Soulstone (PQI!)
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -242,8 +242,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94858, {	-- All That's Left
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 52.7, 42.4, where Farmer Elbrim stands.
 				sourceQuest = 94829,	-- What We Lost
+				qg = 258697,	-- Farmer Elbrim
+				coord = { 52.8, 42.4, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -313,7 +315,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94961, {	-- Biting the Hand (1/2)
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 47.4, 51.2.
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/20 Twilight Finger Bone
@@ -328,7 +330,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94963, {	-- Biting the Hand (2/2)
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 47.3, 51.3.
 				sourceQuest = 94961,	-- Biting the Hand (1/2)
 				lvl = 36,
 				groups = {
@@ -550,7 +552,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95562, {	-- Cut Off the Heads
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 47.7, 47.2, where Apprentice Claire stands.
+				qg = 256831,	-- Apprentice Claire
+				coord = { 47.6, 47.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -707,7 +711,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94885, {	-- Field Marshal's Log
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 47.3, 51.1.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -717,8 +721,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95913, {	-- Fit for a Princess
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 63.8, 82.3, where Tessa Dawnbright stands.
 				sourceQuest = 95561,	-- Apple of My Eye
+				qg = 263089,	-- Tessa Dawnbright
+				coord = { 63.8, 82.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -934,7 +940,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94861, {	-- Helping Hands
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 41.4, 64.5, where If a Tree Falls, and No One Hears... (94857) was turned in.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -954,7 +960,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96009, {	-- High Stakes
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 63.4, 80.5, where Bertrand Ironbrow stands.
+				qg = 260070,	-- Bertrand Ironbrow <Foreman>
+				coord = { 63.4, 80.4, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -979,7 +987,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94857, {	-- If a Tree Falls, and No One Hears...
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 46.1, 71.0 and turned it in at 41.4, 64.5, where Helping Hands (94861) was accepted next.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1001,7 +1009,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96125, {	-- In Need of Relief
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
@@ -1176,7 +1184,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95329, {	-- Out in the Field
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1212,7 +1220,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95064, {	-- Preventative Measures
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1259,7 +1267,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95426, {	-- Rog'mar Supplies
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1287,7 +1295,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94887, {	-- Saving Marshal Ryan
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94885,	-- Field Marshal's Log
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -1513,8 +1521,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95961, {	-- Stepped Out
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 63.8, 82.3, where Tessa Dawnbright stands.
 				sourceQuest = 95913,	-- Fit for a Princess
+				qg = 263089,	-- Tessa Dawnbright
+				coord = { 63.8, 82.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1655,7 +1665,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 38,
 			}),
 			q(94886, {	-- The Western Front
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.6, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
@@ -1755,7 +1765,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95912, {	-- WANTED: Blademaster Kaijo
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.9, 81.1.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1768,7 +1778,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95991, {	-- WANTED: Ghostmaw [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.6, 80.8.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1833,7 +1843,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94829, {	-- What We Lost
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 52.7, 42.4, where Farmer Elbrim stands.
+				qg = 258697,	-- Farmer Elbrim
+				coord = { 52.8, 42.4, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1854,7 +1866,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(96081, {	-- Wound Dressings
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {

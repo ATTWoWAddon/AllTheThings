@@ -953,6 +953,15 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					i(7561),	-- Schematic: Goblin Jumper Cables (RECIPE!)
 				},
 			}),
+			n(262471, {	-- Xaphod Bizznox
+				coord = { 71.4, 99.4, MAP.STONETALON_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(8489, {	-- White Kitten (PET!)
+						isLimited = true,
+					}),
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(11151, {	-- Formula: Enchant Gloves - Herbalism

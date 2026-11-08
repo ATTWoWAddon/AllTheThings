@@ -1,4 +1,4 @@
-ExplorationPositions report  (build 1.60.1.70374)
+ExplorationPositions report  (build 1.60.1.70840)
 
 Overlay areas: 649
 Area/map pairs already harvested (used for validation): 85
