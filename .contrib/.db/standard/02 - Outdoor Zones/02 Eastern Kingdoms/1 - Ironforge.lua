@@ -1076,7 +1076,6 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 					i(10708),	-- Skullspell Orb
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5633, {	-- Returning Home [Ironforge]
 				altQuests = {
 					5627,	-- Returning Home [Darnassus]
@@ -1101,7 +1100,6 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(683, {	-- Sara Balloo's Plea
 				sourceQuest = 637,	-- Sully Balloo's Letter
 				qg = 2695,	-- Sara Balloo

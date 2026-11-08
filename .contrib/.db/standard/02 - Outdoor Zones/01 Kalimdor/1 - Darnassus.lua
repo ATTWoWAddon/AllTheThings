@@ -740,50 +740,6 @@ maproot(KALIMDOR, DARNASSUS, {
 					COOKING_AWARD,
 				},
 			})),
-			-- #if ANYCLASSIC
-			q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
-				altQuests = {
-					5629,	-- Returning Home [Teldrassil]
-					5630,	-- Returning Home [Dun Morogh]
-					5628,	-- Returning Home [Elwynn Forest]
-					5633,	-- Returning Home [Ironforge]
-					5631,	-- Returning Home [Stormwind City]
-					5632,	-- Returning Home [Stormwind City]
-					-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
-				},
-				qgs = {
-					11401,	-- Priestess Alathea <Priest Trainer>
-					3600,	-- Laurna Morninglight <Priest Trainer>
-					1226,	-- Maxan Anvol <Priest Trainer>
-					377,	-- Priestess Josetta <Priest Trainer>
-					5142,	-- Braenna Flintcrag <Priest Trainer>
-					5489,	-- Brother Joshua <Priest Trainer>
-					11397,	-- Nara Meideros <Priest Trainer>
-				},
-				coords = {
-					{ 39.2, 81.0, DARNASSUS },
-					{ 55.6, 56.8, TELDRASSIL },
-					{ 47.2, 52.2, DUN_MOROGH },
-					{ 43.4, 65.6, ELWYNN_FOREST },
-					{ 24.6, 9.2, IRONFORGE },
-					{ 38.6, 26.8, STORMWIND_CITY },
-					{ 20.8, 50.2, STORMWIND_CITY },
-				},
-				timeline = { REMOVED_3_0_2 },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 10,
-				-- #if BEFORE 3.0.2
-				groups = {
-					{
-						recipeID = 10797,	-- Starshards (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5627, {	-- Returning Home [Darnassus]
 				altQuests = {
 					5628,	-- Returning Home [Elwynn Forest]
@@ -792,6 +748,7 @@ maproot(KALIMDOR, DARNASSUS, {
 					5631,	-- Returning Home [Stormwind City]
 					5632,	-- Returning Home [Stormwind City]
 					5633,	-- Returning Home [Ironforge]
+					-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
 				},
 				qg = 11401,	-- Priestess Alathea <Priest Trainer>
 				coord = { 39.2, 81.0, DARNASSUS },
@@ -808,7 +765,6 @@ maproot(KALIMDOR, DARNASSUS, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			applyclassicphase(CATA_PHASE_ONE, q(29323, {	-- Stocking Up
 				qg = 4156,	-- Astaia
 				coord = { 49.0, 61.0, DARNASSUS },

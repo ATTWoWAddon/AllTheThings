@@ -1245,43 +1245,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					COOKING_AWARD,
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(5652, {	-- Hex of Weakness [Orgrimmar]
-				altQuests = {
-					5654,	-- Hex of Weakness [Durotar]
-					5655,	-- Hex of Weakness [Mulgore]
-					5656,	-- Hex of Weakness [Thunder Bluff]
-					5657,	-- Hex of Weakness [Undercity]
-				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					3044,	-- Miles Welsh <Priest Trainer>
-					4606,	-- Aelthalyste <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 54.2, 42.8, DUROTAR },
-					{ 47.0, 58.8, MULGORE },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-					{ 49.01, 18.32, UNDERCITY },
-				},
-				timeline = { REMOVED_2_4_1 },
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 10,
-				-- #if BEFORE 3.0.2
-				groups = {
-					{
-						recipeID = 9035,	-- Hex of Weakness (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5652, {	-- Hex of Weakness [Orgrimmar]
 				altQuests = {
 					5654,	-- Hex of Weakness [Durotar]
@@ -1304,7 +1267,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(5726, {	-- Hidden Enemies (1/5)
 				qg = 4949,	-- Thrall <Warchief>
 				coord = { 32.0, 37.8, ORGRIMMAR },

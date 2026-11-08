@@ -920,7 +920,6 @@ maproot(KALIMDOR, MULGORE, {
 					i(4970),	-- Rough-hewn Kodo Leggings
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5655, {	-- Hex of Weakness [Mulgore]
 				altQuests = {
 					5652,	-- Hex of Weakness [Orgrimmar]
@@ -943,7 +942,6 @@ maproot(KALIMDOR, MULGORE, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(24550, {	-- Journey into Thunder Bluff
 				sourceQuest = 24524,	-- Wildmane Cleansing
 				qg = 37024,	-- Una Wildmane

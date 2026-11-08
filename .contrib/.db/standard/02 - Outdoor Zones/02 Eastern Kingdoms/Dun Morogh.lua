@@ -3460,7 +3460,6 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 					i(10547),	-- Camping Knife
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5630, {	-- Returning Home [Dun Morogh]
 				altQuests = {
 					5627,	-- Returning Home [Darnassus]
@@ -3485,7 +3484,6 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			-- #if AFTER CATA
 			q(6391, {	-- Ride to Ironforge
 				sourceQuest = 6387,	-- Honor Students

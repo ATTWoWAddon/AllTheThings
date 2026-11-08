@@ -363,7 +363,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5656, {	-- Hex of Weakness [Thunder Bluff]
 				altQuests = {
 					5652,	-- Hex of Weakness [Orgrimmar]
@@ -386,7 +385,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(769, {	-- Kodo Hide Bag
 				description =
 					-- #if AFTER 8.0.1

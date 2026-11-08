@@ -2820,7 +2820,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = { HUMAN },
 				lvl = 10,
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5631, {	-- Returning Home [Stormwind City]
 				altQuests = {
 					5627,	-- Returning Home [Darnassus]
@@ -2845,8 +2844,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5632, {	-- Returning Home [Stormwind City]
 				altQuests = {
 					5627,	-- Returning Home [Darnassus]
@@ -2871,7 +2868,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(26442, {	-- Rock Lobster
 				qg = 5494,	-- Catherine Leland
 				coord = { 55.0, 69.6, STORMWIND_CITY },

@@ -2784,7 +2784,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5628, {	-- Returning Home [Elwynn Forest]
 				altQuests = {
 					5627,	-- Returning Home [Darnassus]
@@ -2809,7 +2808,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			-- #if BEFORE CATA
 			q(83, {	-- Red Linen Goods / Fine Linen Goods [CATA]
 				qg = 278,	-- Sara Timberlain

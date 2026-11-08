@@ -605,7 +605,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5657, {	-- Hex of Weakness [Undercity]
 				altQuests = {
 					5652,	-- Hex of Weakness [Orgrimmar]
@@ -628,7 +627,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(243, {	-- Into the Field
 				sourceQuest = 238,	-- Errand for Apothecary Zinge (2/2)
 				qg = 5204,	-- Apothecary Zinge

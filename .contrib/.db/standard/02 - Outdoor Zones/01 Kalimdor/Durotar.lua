@@ -2636,7 +2636,6 @@ maproot(KALIMDOR, DUROTAR, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5654, {	-- Hex of Weakness [Durotar]
 				altQuests = {
 					5652,	-- Hex of Weakness [Orgrimmar]
@@ -2659,7 +2658,6 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(25206, {	-- Ignoring the Warnings
 				sourceQuest = 25205,	-- The Wolf and The Kodo
 				qg = 39379,	-- Gor the Enforcer

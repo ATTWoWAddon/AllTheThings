@@ -605,7 +605,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 							-- #endif
 						},
 					}),
-					-- #if NOT ANYCLASSIC
 					q(5629, {	-- Returning Home [Teldrassil]
 						altQuests = {
 							5627,	-- Returning Home [Darnassus]
@@ -630,7 +629,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 						},
 						-- #endif
 					}),
-					-- #endif
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
 						qg = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
