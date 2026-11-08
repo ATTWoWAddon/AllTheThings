@@ -1326,15 +1326,15 @@ s(117905,2369,{f=4,loc=44,lvl=5,q=1}),
 s(117903,2366,{f=4,loc=46,lvl=5,q=1}),
 s(117902,2364,{f=4,loc=42,lvl=5,q=1})}}),
 n(12796,{description="Found within the Hall of Legends.",pvp=1,r=1,g={
-mnt(22718,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29466,lvl=60,q=4,r=1}),
-mnt(22718,{b=1,itemID=18247,lvl=55,q=4,r=1,rwp=20001,u=2}),
-mnt(22721,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29472,lvl=60,q=4,r=1}),
-mnt(22721,{b=1,itemID=18246,lvl=55,q=4,races={2,5,8,10},rwp=20001,u=2}),
-mnt(22724,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29469,lvl=60,q=4,r=1}),
-mnt(22724,{b=1,itemID=18245,lvl=55,q=4,r=1,rwp=20001,u=2}),
-mnt(22722,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29470,lvl=60,q=4,races={2,5,8,10}}),
-mnt(22722,{b=1,itemID=18248,lvl=55,q=4,races={2,5,8,10},rwp=20001,u=2}),
-mnt(35028,{awp=20300,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=34129,lvl=60,q=4,races={2,5,8,10}})}}),
+mnt(22718,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29466,lvl=60,pvp=1,q=4,r=1}),
+mnt(22718,{b=1,itemID=18247,lvl=55,pvp=1,q=4,r=1,rwp=20001,u=2}),
+mnt(22721,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29472,lvl=60,pvp=1,q=4,r=1}),
+mnt(22721,{b=1,itemID=18246,lvl=55,pvp=1,q=4,races={2,5,8,10},rwp=20001,u=2}),
+mnt(22724,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29469,lvl=60,pvp=1,q=4,r=1}),
+mnt(22724,{b=1,itemID=18245,lvl=55,pvp=1,q=4,r=1,rwp=20001,u=2}),
+mnt(22722,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29470,lvl=60,pvp=1,q=4,races={2,5,8,10}}),
+mnt(22722,{b=1,itemID=18248,lvl=55,pvp=1,q=4,races={2,5,8,10},rwp=20001,u=2}),
+mnt(35028,{awp=20300,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=34129,lvl=60,pvp=1,q=4,races={2,5,8,10}})}}),
 n(3334,{coords={
 [1454]={{44,58.4}}},r=1}),
 n(12799,{coords={
@@ -4557,7 +4557,6 @@ mnt(16084,{b=1,itemID=8586,lvl=60,q=4,races={2,5,8,10},rwp=10400,u=2})}}))}),
 h(-63,{
 i(4882,{coords={
 [1411]={{59.6,58.2}}},crs={3192},q=1,rwp=40003}),
-i(769,{q=1}),
 i(5466,{crs={3125,3126,3127,3226,5823},description="Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",maps={1411},q=1})})}}),
 m(1445,{lore="A hot, fetid swampland, underground springs feed Dustwallow Marsh and keep it eternally wet and muddy. Mosquitoes buzz in the air. Trees dip fronds into the waters. The climate is home to a variety of predators, including alligators and murlocs.\n\nBlack dragons dwell in the southern end of the swamp, and the creatures lair in such profusion that the area garners the name \"Wyrmbog.\" Dustwallow Marsh abuts the ocean on its east side, and the mixing of the waters makes a wide swath brackish. Off the coast is a rocky island, on which is perched the Alliance stronghold-city of Theramore.",maps={416},g={
 h(-61,{isRaid=1,lvl=60,g={
@@ -11753,15 +11752,15 @@ s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12784,{awp=20001,coords={
 [1453]={{71.9,55.6}}},r=2,sym={{"select","symselector",4},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{description="Found within the Champion's Hall.",pvp=1,r=2,g={
-mnt(22719,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29465,lvl=60,q=4,races={3,7}}),
-mnt(22719,{b=1,itemID=18243,lvl=55,q=4,races={3,7},rwp=20001,u=2}),
-mnt(48027,{awp=20400,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=35906,lvl=60,q=4,r=2}),
-mnt(22720,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29467,lvl=60,q=4,r=2}),
-mnt(22720,{b=1,itemID=18244,lvl=55,q=4,r=2,rwp=20001,u=2}),
-mnt(22717,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29468,lvl=60,q=4,r=2}),
-mnt(22717,{b=1,itemID=18241,lvl=55,q=4,r=2,rwp=20001,u=2}),
-mnt(22723,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29471,lvl=60,q=4,r=2}),
-mnt(22723,{b=1,itemID=18242,lvl=55,q=4,r=2,rwp=20001,u=2})}}),
+mnt(22719,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29465,lvl=60,pvp=1,q=4,races={3,7}}),
+mnt(22719,{b=1,itemID=18243,lvl=55,pvp=1,q=4,races={3,7},rwp=20001,u=2}),
+mnt(48027,{awp=20400,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=35906,lvl=60,pvp=1,q=4,r=2}),
+mnt(22720,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29467,lvl=60,pvp=1,q=4,r=2}),
+mnt(22720,{b=1,itemID=18244,lvl=55,pvp=1,q=4,r=2,rwp=20001,u=2}),
+mnt(22717,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29468,lvl=60,pvp=1,q=4,r=2}),
+mnt(22717,{b=1,itemID=18241,lvl=55,pvp=1,q=4,r=2,rwp=20001,u=2}),
+mnt(22723,{awp=20001,b=1,cost={{"i",20558,30},{"i",20559,30},{"i",20560,30}},itemID=29471,lvl=60,pvp=1,q=4,r=2}),
+mnt(22723,{b=1,itemID=18242,lvl=55,pvp=1,q=4,r=2,rwp=20001,u=2})}}),
 n(8666,{coords={
 [1453]={{64,38}}},r=2,g={
 p(46,{awp=11101,isLimited=1,itemID=8489,petTypeID=8,q=1,spellID=10679})}}),
@@ -11800,15 +11799,15 @@ n(1313,{coords={
 r(11476,{isLimited=1,itemID=9301,learnedAt=250,q=2,requireSkill=171})}}),
 n(12781,{coords={
 [1453]={{75.2,66.8}}},pvp=1,r=2,g={
-i(18606,{b=1,f=55,q=1}),
-i(18839,{b=1,f=55,lvl=35,q=1}),
-i(18841,{b=1,f=55,lvl=41,q=1}),
-i(31853,{awp=20001,b=1,f=55,lvl=61,q=1}),
-i(31855,{awp=20001,b=1,f=55,lvl=61,q=1}),
-i(32455,{awp=20001,f=55,lvl=55,q=1}),
-i(32453,{awp=20001,f=55,lvl=65,q=1}),
-s(127130,15198,{b=1,f=9,q=1}),
-s(127128,15196,{b=1,f=9,q=1})}}),
+i(18606,{b=1,f=55,pvp=1,q=1}),
+i(18839,{b=1,f=55,lvl=35,pvp=1,q=1}),
+i(18841,{b=1,f=55,lvl=41,pvp=1,q=1}),
+i(31853,{awp=20001,b=1,f=55,lvl=61,pvp=1,q=1}),
+i(31855,{awp=20001,b=1,f=55,lvl=61,pvp=1,q=1}),
+i(32455,{awp=20001,f=55,lvl=55,pvp=1,q=1}),
+i(32453,{awp=20001,f=55,lvl=65,pvp=1,q=1}),
+s(127130,15198,{b=1,f=9,pvp=1,q=1}),
+s(127128,15196,{b=1,f=9,pvp=1,q=1})}}),
 n(12805,{awp=10400,coords={
 [1453]={{73.8,53.4}}},r=2,rwp=30002,g={
 i(18664,{q=1,rwp=20001,u=2}),
@@ -13855,7 +13854,6 @@ n(1263,{coords={
 [1426]={{63.2,50.8}}},r=2,g={
 p(72,{awp=11101,itemID=8497,petTypeID=5,q=1,spellID=10711})}})}),
 h(-63,{
-i(769,{q=1}),
 i(2886,{coords={
 [1426]={{46.6,59.8}}},crs={1125,1126,1127,1689},description="Only drops from Crag Boars in Dun Morogh.",q=1}),
 s(117694,2067,{coords={
@@ -15150,7 +15148,6 @@ r(7630,{isLimited=1,itemID=6270,learnedAt=55,q=1,requireSkill=197}),
 r(7751,{itemID=6325,q=1,requireSkill=185}),
 r(7753,{itemID=6328,learnedAt=50,q=1,requireSkill=185})}})}),
 h(-63,{
-i(769,{q=1}),
 i(1307,{b=1,crs={97,100,448,478},lvl=7,q=1}),
 s(116992,778,{crs={476},f=21,lvl=2,q=1,rwp=40003}),
 s(117289,1389,{coords={
@@ -17466,7 +17463,6 @@ s(120367,5319,{coords={
 i(3173,{q=1}),
 i(3172,{coords={
 [1432]={{37,34.4}}},crs={1190,1191,1192},q=1}),
-i(769,{q=1}),
 s(118267,2823,{coords={
 [1432]={{76.6,16},{79.6,16}}},crs={1180},f=22,lvl=14,q=2,rwp=40003}),
 s(118265,2821,{coords={
@@ -18400,8 +18396,8 @@ q(603,{coords={
 [1416]={{18.8,78.5}}},lvl=32,qgs={2543},r=2,rwp=40003,sourceQuests={602}}),
 q(7838,{coords={
 [1434]={{29.6,47.4}}},cost={{"i",18706,12}},pvp=1,qgs={14508},repeatable=1,sourceQuests={7810},g={
-ach(396,{providers={{"i",19024}}}),
-i(19024,{b=1,f=53,lore="Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",q=3})}}),
+ach(396,{providers={{"i",19024}},pvp=1}),
+i(19024,{b=1,f=53,lore="Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",pvp=1,q=3})}}),
 q(7810,{coords={
 [1434]={{30.5,47.8}}},pvp=1,qss={18706}}),
 q(4621,{coords={
@@ -18846,12 +18842,12 @@ n(14492,{coords={
 h(-56,{
 o(179697,{coords={
 [1434]={{30.5,47.8}}},description="Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",pvp=1,g={
-ach(389),
-i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,q=2}),
-s(129615,18711,{f=6,loc=43,lvl=45,q=3}),
-s(129614,18710,{f=5,loc=43,lvl=45,q=3}),
-s(129616,18712,{f=7,loc=43,lvl=45,q=3}),
-s(129613,18709,{f=4,loc=43,lvl=45,q=3})}}),
+ach(389,{pvp=1}),
+i(18706,{b=1,f=53,lore="Keep this in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",lvl=35,pvp=1,q=2}),
+s(129615,18711,{f=6,loc=43,lvl=45,pvp=1,q=3}),
+s(129614,18710,{f=5,loc=43,lvl=45,pvp=1,q=3}),
+s(129616,18712,{f=7,loc=43,lvl=45,pvp=1,q=3}),
+s(129613,18709,{f=4,loc=43,lvl=45,pvp=1,q=3})}}),
 o(2744,{coords={
 [1434]={{25.8,28}}},g={
 i(4611,{q=1}),
@@ -20522,7 +20518,6 @@ i(3172,{coords={
 [1436]={{54.2,42.6}}},crs={157,454,547},maps={1433},q=1}),
 s(117024,826,{coords={
 [1436]={{31.4,70.4},{48.8,62.6},{54.2,62},{55.4,69.4},{55.8,68.4}}},crs={124},f=21,lvl=10,q=2,rwp=40003}),
-i(769,{q=1}),
 i(2673,{coords={
 [1436]={{49.4,24.5}}},crs={833,834},description="Only drops from coyotes in Westfall.",q=1}),
 s(117291,1394,{coords={
@@ -24093,21 +24088,21 @@ i(29292,{f=55,lvl=55,q=1})}}),
 q(10106,{coords={
 [1944]={{56.3,62.8}}},isDaily=1,lvl=58,pvp=1,qgs={18266},r=2,g={
 qo(1,{coords={
-[1944]={{39.9,48.4}}}}),
+[1944]={{39.9,48.4}}},pvp=1}),
 qo(2,{coords={
-[1944]={{35.6,51.4}}}}),
+[1944]={{35.6,51.4}}},pvp=1}),
 qo(3,{coords={
-[1944]={{40.4,56.7}}}}),
-i(24579,{b=1,f=55,q=1})}}),
+[1944]={{40.4,56.7}}},pvp=1}),
+i(24579,{b=1,f=55,pvp=1,q=1})}}),
 q(10110,{coords={
 [1944]={{55.9,39.2}}},isDaily=1,lvl=58,pvp=1,qgs={18267},r=1,g={
 qo(1,{coords={
-[1944]={{39.9,48.4}}}}),
+[1944]={{39.9,48.4}}},pvp=1}),
 qo(2,{coords={
-[1944]={{35.6,51.4}}}}),
+[1944]={{35.6,51.4}}},pvp=1}),
 qo(3,{coords={
-[1944]={{40.4,56.7}}}}),
-i(24581,{b=1,f=55,q=1})}}),
+[1944]={{40.4,56.7}}},pvp=1}),
+i(24581,{b=1,f=55,pvp=1,q=1})}}),
 q(10443,{coords={
 [1944]={{23.4,36.5}}},isBreadcrumb=1,lvl=61,nextQuests={9372},qgs={16796},r=2}),
 q(10442,{coords={
@@ -24579,12 +24574,12 @@ r(27032,{awp=20005,itemID=21992,learnedAt=330,q=1,requireSkill=129,rwp=30100}),
 r(27028,{awp=20005,itemID=22012,q=1,requireSkill=129,rwp=30100})}}),
 n(18267,{coords={
 [1944]={{55.9,39.2}}},pvp=1,r=1,g={
-i(27832,{b=1,cost={{"i",24581,15}},f=52,lvl=60,q=3}),
-i(27777,{b=1,cost={{"i",24581,10}},q=3}),
-i(27830,{b=1,cost={{"i",24581,15}},f=52,lvl=60,q=3}),
-i(28360,{b=1,cost={{"i",24581,10}},q=3}),
-i(27786,{b=1,cost={{"i",24581,10}},q=3}),
-i(24522,{b=1,cost={{"i",24581,5}},f=55,q=1})}}),
+i(27832,{b=1,cost={{"i",24581,15}},f=52,lvl=60,pvp=1,q=3}),
+i(27777,{b=1,cost={{"i",24581,10}},pvp=1,q=3}),
+i(27830,{b=1,cost={{"i",24581,15}},f=52,lvl=60,pvp=1,q=3}),
+i(28360,{b=1,cost={{"i",24581,10}},pvp=1,q=3}),
+i(27786,{b=1,cost={{"i",24581,10}},pvp=1,q=3}),
+i(24522,{b=1,cost={{"i",24581,5}},f=55,pvp=1,q=1})}}),
 n(18754,{coords={
 [1944]={{56.2,38.6}}},r=1}),
 n(18988,{coords={
@@ -24811,13 +24806,13 @@ n(19004,{coords={
 r(32665,{itemID=25848,learnedAt=350,q=1,requireSkill=333,rwp=50004})}}),
 n(18266,{coords={
 [1944]={{56.4,62.8}}},pvp=1,r=2,g={
-i(27833,{b=1,cost={{"i",24579,15}},f=52,lvl=60,q=3}),
-i(27812,{b=1,cost={{"i",24579,10}},q=3}),
-i(27834,{b=1,cost={{"i",24579,15}},f=52,lvl=60,q=3}),
-i(28361,{b=1,cost={{"i",24579,10}},q=3}),
-i(27809,{b=1,cost={{"i",24579,10}},q=3}),
-i(24520,{b=1,cost={{"i",24579,5}},f=55,q=1}),
-i(31799,{cost={{"i",4291,1},{"i",2931,1},{"i",28464,1}},q=1})}})}),
+i(27833,{b=1,cost={{"i",24579,15}},f=52,lvl=60,pvp=1,q=3}),
+i(27812,{b=1,cost={{"i",24579,10}},pvp=1,q=3}),
+i(27834,{b=1,cost={{"i",24579,15}},f=52,lvl=60,pvp=1,q=3}),
+i(28361,{b=1,cost={{"i",24579,10}},pvp=1,q=3}),
+i(27809,{b=1,cost={{"i",24579,10}},pvp=1,q=3}),
+i(24520,{b=1,cost={{"i",24579,5}},f=55,pvp=1,q=1}),
+i(31799,{cost={{"i",4291,1},{"i",2931,1},{"i",28464,1}},pvp=1,q=1})}})}),
 h(-63,{
 i(28552,{b=1,crs={16906},description="Must have started or completed |cFFFFD700Make Them Listen|r for this item to become available.",lvl=58,q=1,r=1}),
 i(23580,{b=1,coords={
@@ -25423,13 +25418,13 @@ s(141545,31199,{f=4,loc=45,lvl=66,q=3})}})}),
 h(-58,{
 n(21485,{coords={
 [1951]={{42.8,42.6}}},description="This vendor is only accessible when the Alliance controls Halaa.",pvp=1,r=2,sym={{"select","itemID",30749,30750}},g={
-r(31101,{awp=20103,b=1,isLimited=1,itemID=24208,learnedAt=350,q=3,requireSkill=755}),
-i(30598,{b=1,isLimited=1,q=3}),
-i(30599,{b=1,f=36,lvl=66,q=2,rwp=50004}),
-s(140943,30597,{b=1,f=26,isLimited=1,lvl=66,q=2}),
-mnt(39316,{b=1,cost={{"i",26044,15},{"i",26045,70}},itemID=28915,lvl=60,q=4}),
-mnt(34790,{b=1,cost={{"i",26044,20},{"i",26045,100}},itemID=29228,lvl=60,q=4}),
-s(140915,30569,{b=1,f=25,lvl=64,q=0})}}),
+r(31101,{awp=20103,b=1,isLimited=1,itemID=24208,learnedAt=350,pvp=1,q=3,requireSkill=755}),
+i(30598,{b=1,isLimited=1,pvp=1,q=3}),
+i(30599,{b=1,f=36,lvl=66,pvp=1,q=2,rwp=50004}),
+s(140943,30597,{b=1,f=26,isLimited=1,lvl=66,pvp=1,q=2}),
+mnt(39316,{b=1,cost={{"i",26044,15},{"i",26045,70}},itemID=28915,lvl=60,pvp=1,q=4}),
+mnt(34790,{b=1,cost={{"i",26044,20},{"i",26045,100}},itemID=29228,lvl=60,pvp=1,q=4}),
+s(140915,30569,{b=1,f=25,lvl=64,pvp=1,q=0})}}),
 n(21488,{coords={
 [1951]={{41.6,43.8}}},r=2,g={
 i(30612,{b=1,f=37,lvl=66,q=3,rwp=40001}),
@@ -25440,13 +25435,13 @@ r(26750,{isLimited=1,itemID=21894,learnedAt=345,q=1,requireSkill=197}),
 r(26779,{isLimited=1,itemID=21902,learnedAt=355,q=1,requireSkill=197})}}),
 n(21474,{coords={
 [1951]={{42.8,42.6}}},description="This vendor is only accessible when the Horde controls Halaa.",pvp=1,r=1,g={
-s(140916,30570,{b=1,f=26,isLimited=1,lvl=66,q=2}),
-r(31101,{awp=20103,b=1,isLimited=1,itemID=24208,learnedAt=350,q=3,requireSkill=755}),
-i(30571,{b=1,isLimited=1,q=3}),
-i(30568,{b=1,f=36,lvl=66,q=2,rwp=50004}),
-mnt(39316,{b=1,cost={{"i",26044,15},{"i",26045,70}},itemID=28915,lvl=60,q=4}),
-mnt(34790,{b=1,cost={{"i",26044,20},{"i",26045,100}},itemID=29228,lvl=60,q=4}),
-s(140915,30569,{b=1,f=25,lvl=64,q=0})}}),
+s(140916,30570,{b=1,f=26,isLimited=1,lvl=66,pvp=1,q=2}),
+r(31101,{awp=20103,b=1,isLimited=1,itemID=24208,learnedAt=350,pvp=1,q=3,requireSkill=755}),
+i(30571,{b=1,isLimited=1,pvp=1,q=3}),
+i(30568,{b=1,f=36,lvl=66,pvp=1,q=2,rwp=50004}),
+mnt(39316,{b=1,cost={{"i",26044,15},{"i",26045,70}},itemID=28915,lvl=60,pvp=1,q=4}),
+mnt(34790,{b=1,cost={{"i",26044,20},{"i",26045,100}},itemID=29228,lvl=60,pvp=1,q=4}),
+s(140915,30569,{b=1,f=25,lvl=64,pvp=1,q=0})}}),
 n(19015,{coords={
 [1951]={{55.2,37},{57,40}}},description="This vendor pats around Garadar.",minReputation={941,0},r=1,g={
 r(26750,{isLimited=1,itemID=21894,learnedAt=345,q=1,requireSkill=197}),
@@ -28488,15 +28483,15 @@ i(24245,{q=1})})}),
 h(-58,{
 n(18581,{coords={
 [1946]={{64.6,46.4}}},pvp=1,r=2,g={
-s(138278,27931,{b=1,cost={{"i",24579,15}},f=32,lvl=62,q=3}),
-s(138289,27942,{b=1,cost={{"i",24579,15}},f=27,lvl=62,q=3}),
-i(27929,{b=1,cost={{"i",24579,15}},f=36,lvl=62,q=3,rwp=50004}),
-i(27990,{b=1,cost={{"i",24579,15}},f=54,lvl=62,q=3,rwp=50004}),
-i(27983,{b=1,cost={{"i",24579,15}},f=54,lvl=62,q=3,rwp=50004}),
-i(27921,{b=1,c={1,3,4,11},cost={{"i",24579,30}},f=53,lvl=62,q=3}),
-i(27922,{b=1,c={5,8,9},cost={{"i",24579,30}},f=53,lvl=62,q=3}),
-i(27927,{b=1,c={2,7},cost={{"i",24579,30}},f=53,lvl=62,q=3}),
-i(27984,{b=1,cost={{"i",24579,15}},f=54,lvl=62,q=3,rwp=50004})}}),
+s(138278,27931,{b=1,cost={{"i",24579,15}},f=32,lvl=62,pvp=1,q=3}),
+s(138289,27942,{b=1,cost={{"i",24579,15}},f=27,lvl=62,pvp=1,q=3}),
+i(27929,{b=1,cost={{"i",24579,15}},f=36,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27990,{b=1,cost={{"i",24579,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27983,{b=1,cost={{"i",24579,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27921,{b=1,c={1,3,4,11},cost={{"i",24579,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27922,{b=1,c={5,8,9},cost={{"i",24579,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27927,{b=1,c={2,7},cost={{"i",24579,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27984,{b=1,cost={{"i",24579,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004})}}),
 n(19383,{coords={
 [1946]={{32.4,48}}},r=1,g={
 r(30318,{isLimited=1,itemID=23805,learnedAt=350,q=1,requireSkill=202}),
@@ -28572,15 +28567,15 @@ r(28549,{isLimited=1,itemID=22902,learnedAt=320,q=1,requireSkill=171}),
 r(28555,{b=1,isLimited=1,itemID=22907,learnedAt=340,q=1,requireSkill=171})}}),
 n(18564,{coords={
 [1946]={{33,49}}},pvp=1,r=1,g={
-s(138277,27930,{b=1,cost={{"i",24581,15}},f=32,lvl=62,q=3}),
-s(138286,27939,{b=1,cost={{"i",24581,15}},f=27,lvl=62,q=3}),
-i(27928,{b=1,cost={{"i",24581,15}},f=36,lvl=62,q=3,rwp=50004}),
-i(27989,{b=1,cost={{"i",24581,15}},f=54,lvl=62,q=3,rwp=50004}),
-i(27949,{b=1,cost={{"i",24581,15}},f=54,lvl=62,q=3,rwp=50004}),
-i(27920,{b=1,c={1,3,4,11},cost={{"i",24581,30}},f=53,lvl=62,q=3}),
-i(27924,{b=1,c={5,8,9},cost={{"i",24581,30}},f=53,lvl=62,q=3}),
-i(27926,{b=1,c={2,7},cost={{"i",24581,30}},f=53,lvl=62,q=3}),
-i(27947,{b=1,cost={{"i",24581,15}},f=54,lvl=62,q=3,rwp=50004})}}),
+s(138277,27930,{b=1,cost={{"i",24581,15}},f=32,lvl=62,pvp=1,q=3}),
+s(138286,27939,{b=1,cost={{"i",24581,15}},f=27,lvl=62,pvp=1,q=3}),
+i(27928,{b=1,cost={{"i",24581,15}},f=36,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27989,{b=1,cost={{"i",24581,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27949,{b=1,cost={{"i",24581,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004}),
+i(27920,{b=1,c={1,3,4,11},cost={{"i",24581,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27924,{b=1,c={5,8,9},cost={{"i",24581,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27926,{b=1,c={2,7},cost={{"i",24581,30}},f=53,lvl=62,pvp=1,q=3}),
+i(27947,{b=1,cost={{"i",24581,15}},f=54,lvl=62,pvp=1,q=3,rwp=50004})}}),
 n(18911,{coords={
 [1946]={{78,66}}},g={
 i(27532,{f=200,lvl=45,q=1,rank=5,requireSkill=356,rwp=30100}),

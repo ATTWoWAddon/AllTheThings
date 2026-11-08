@@ -470,10 +470,10 @@ crit(60239,{achID=1791,e=13,id=2,providers={{"s",39937}}}),
 crit(10391,{achID=1791,e=13,id=1,providers={{"s",8690}}}),
 crit(6674,{achID=1793,e=13,id=2})}}),
 ach(1786,{e=13,pvp=1,g={
-crit(6643,{achID=1786,e=13,maps={837,844,1366,1383,1461}}),
-crit(6642,{achID=1786,e=13,maps={1459}}),
-crit(6641,{achID=1786,e=13,maps={1956}}),
-crit(6644,{achID=1786,e=13,maps={859,1339,1460}})}}),
+crit(6643,{achID=1786,e=13,maps={837,844,1366,1383,1461},pvp=1}),
+crit(6642,{achID=1786,e=13,maps={1459},pvp=1}),
+crit(6641,{achID=1786,e=13,maps={1956},pvp=1}),
+crit(6644,{achID=1786,e=13,maps={859,1339,1460},pvp=1})}}),
 ach(275,{e=13,maps={1955},g={
 crit(9169,{achID=275,e=13,id=1,providers={{"i",32616}}}),
 crit(9167,{achID=275,e=13,id=1,providers={{"i",32622}}}),
@@ -939,8 +939,8 @@ i(44215,{e=1,f=51,lvl=30,q=3}),
 i(44213,{e=1,f=51,lvl=30,q=3})}}),
 q(29761,{awp=40300,coords={
 [407]={{47.3,78.9}}},cost={{"i",74034,12}},e=1,phase=42,pvp=1,qgs={55402},repeatable=1,sourceQuests={29760},g={
-ach(6024,{e=1}),
-i(74035,{b=1,e=1,f=53,lvl=85,q=4})}}),
+ach(6024,{e=1,pvp=1}),
+i(74035,{b=1,e=1,f=53,lvl=85,pvp=1,q=4})}}),
 q(7897,{coords={
 [407]={{49.6,60.8}}},e=1,qgs={14841},repeatable=1,rwp=40300,u=2,g={
 i(19182,{b=1,e=1,f=55,q=1,u=2})}}),
@@ -961,7 +961,7 @@ q(7942,{coords={
 i(19182,{b=1,e=1,f=55,q=1,u=2})}}),
 q(29760,{awp=40300,coords={
 [407]={{47.3,78.9}}},e=1,phase=42,providers={{"n",55402}},pvp=1,qss={74034},g={
-ach(6023,{e=1})}}),
+ach(6023,{e=1,pvp=1})}}),
 q(29512,{awp=40300,coords={
 [407]={{55,71.6}}},e=1,isMonthly=1,maxReputation={909,42000},qgs={14833},requireSkill=129,rwp=80001,g={
 qo(1,{e=1,providers={{"i",71978},{"n",54518}},requireSkill=129}),
@@ -1103,8 +1103,8 @@ cu(515,{e=1}),
 crit(18237,{achID=6020,e=1,id=1})}})}}),
 h(-303,{e=1,phase=42,pvp=1,g={
 o(209620,{coords={
-[407]={{44.6,78.9}}},e=1,g={
-i(74034,{awp=40300,b=1,e=1,f=53,lvl=85,q=3})}})}}),
+[407]={{44.6,78.9}}},e=1,pvp=1,g={
+i(74034,{awp=40300,b=1,e=1,f=53,lvl=85,pvp=1,q=3})}})}}),
 h(-47,{e=1,g={
 i(19422,{b=1,coords={
 [407]={{53.6,75.6}}},crs={14822},description="This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2  +25 Magical Resistance\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",e=1,q=1,repeatable=1,g={

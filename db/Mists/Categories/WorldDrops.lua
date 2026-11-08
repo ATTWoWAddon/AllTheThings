@@ -3459,7 +3459,8 @@ i(769,{coords={
 [27]={{46.6,59.8}},
 [37]={{41.6,88}},
 [48]={{56.3,35.8}},
-[52]={{54.2,42.6},{55,27.3}}},crs={113,119,157,330,454,524,547,1125,1689,3099,3100,42357,44627},description="Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",q=1}),
+[49]={{32.2,71}},
+[52]={{54.2,42.6},{55,27.3}}},crs={113,119,157,330,345,454,524,547,1125,1689,3099,3100,42357,42504,42859,44627,46575,50942,50949},description="Drops from boars in entry- and low level vanilla zones like Goretusks in Westfall.",maps={21},q=1}),
 i(7075,{coords={
 [15]={{32.5,53.8}},
 [36]={{18.2,44},{62.3,46.8}},

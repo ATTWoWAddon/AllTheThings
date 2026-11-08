@@ -3044,7 +3044,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=3,year=2027},{hour=10,minute=0,month=12,monthDay=7,weekday=3,year=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=1,weekday=1,year=2026},{hour=23,month=11,monthDay=1,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=8,weekday=1,year=2026},{hour=23,month=11,monthDay=8,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=15,weekday=1,year=2026},{hour=23,month=11,monthDay=15,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=22,weekday=1,year=2026},{hour=23,month=11,monthDay=22,weekday=1,year=2026}),
@@ -3096,7 +3095,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=10,weekday=1,year=2027},{hour=23,month=10,monthDay=10,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=17,weekday=1,year=2027},{hour=23,month=10,monthDay=17,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=24,weekday=1,year=2027},{hour=23,month=10,monthDay=24,weekday=1,year=2027}),
-	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027})
+	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027}),
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=7,weekday=1,year=2027},{hour=23,month=11,monthDay=7,weekday=1,year=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=3,year=2025},{hour=23,minute=59,month=3,monthDay=19,weekday=5,year=2026}),
@@ -25364,12 +25364,16 @@ L.QUEST_NAMES = {
 	[39693] = "The Path of Huln",
 	[39714] = "Where Are the Children?",
 	[39717] = "Scouting Mission Complete",
+	[39723] = "First Completion",
+	[39724] = "First Completion",
+	[39725] = "First Completion",
 	[39730] = "Scouting Mission Complete",
 	[39732] = "Scouting Mission Complete",
 	[39734] = "Scouting Mission Complete",
 	[39743] = "Valhallas Heroic Reward Quest",
 	[39744] = "Valhallas Reward Quest",
 	[39745] = "Khadgar Teleport",
+	[39750] = "First Completion",
 	[39770] = "Burn the Candle at Both Ends [NOT USED]",
 	[39785] = "[PH] Walrus Tusks",
 	[39794] = "Lord Maxwell Tyrosus Slotted",

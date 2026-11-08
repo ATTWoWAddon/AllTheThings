@@ -7463,13 +7463,10 @@ h(-46,{
 hqt(97333)})}),
 h(-45,{
 hqt(96935,{isWeekly=1}),
-hqt(93676,{isWeekly=1}),
-hqt(96967,{isWeekly=1}),
 hqt(97160,{isWeekly=1}),
 hqt(96363)}),
 h(-62,{
 hqt(96307),
-hqt(96492),
 hqt(95922)})}}),
 m(2437,{maps={2536,2583,2584},lvl=83,g={
 h(-45,{
@@ -7792,8 +7789,7 @@ hqt(95641,{repeatable=1}),
 hqt(95881,{repeatable=1}),
 hqt(95616,{repeatable=1}),
 hqt(95617,{repeatable=1}),
-hqt(95619,{repeatable=1}),
-hqt(97503,{repeatable=1})}})}})}})}}),
+hqt(95619,{repeatable=1})}})}})}})}}),
 prof(171,{awp=70003,g={
 x(7,{
 hqt(42083)})}}),

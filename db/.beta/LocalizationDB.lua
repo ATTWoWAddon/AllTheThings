@@ -727,6 +727,8 @@ L.OBJECT_DEBUGGER_NAME = "Name"
 L.OBJECT_ID = "Object ID"
 L.OBJECT_TYPE = "Object Type"
 L.OBJECTIVES = "Objectives"
+L.OBJECTIVES_CHECKBOX = "Quest Objectives"
+L.OBJECTIVES_CHECKBOX_TOOLTIP = "Enable this option to track the individual objectives of the quests you're currently on. Each objective counts as its own Thing while the quest is in your quest log, and is marked collected once you finish it. Quest tracking must also be enabled.\n\nIn tooltips, a quest you're on lists its objectives under Requirements, using the progress text from your quest log (e.g. '4/10 Kobold Vermin slain'), with a checkmark beside each one you've completed. If the quest log text isn't loaded yet, the objective shows as Retrieving Data until the game provides it."
 L.OBJECTS = "Objects"
 L.ONLY_OBTAINABLE_CHECKBOX = "Only Obtainable"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "Enable this option if you want to see only obtainable shared appearances."
@@ -2956,7 +2958,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=3,year=2027},{hour=10,minute=0,month=12,monthDay=7,weekday=3,year=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=1,weekday=1,year=2026},{hour=23,month=11,monthDay=1,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=8,weekday=1,year=2026},{hour=23,month=11,monthDay=8,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=15,weekday=1,year=2026},{hour=23,month=11,monthDay=15,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=22,weekday=1,year=2026},{hour=23,month=11,monthDay=22,weekday=1,year=2026}),
@@ -3008,7 +3009,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=10,weekday=1,year=2027},{hour=23,month=10,monthDay=10,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=17,weekday=1,year=2027},{hour=23,month=10,monthDay=17,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=24,weekday=1,year=2027},{hour=23,month=10,monthDay=24,weekday=1,year=2027}),
-	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027})
+	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027}),
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=7,weekday=1,year=2027},{hour=23,month=11,monthDay=7,weekday=1,year=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=3,year=2025},{hour=23,minute=59,month=3,monthDay=19,weekday=5,year=2026}),
@@ -10514,6 +10516,7 @@ local ObjectNames = {
 	[356596] = "Feather Cap",
 	[356597] = "Lacy Bell Morel",
 	[356607] = "Violet Frill",
+	[356677] = "Black Bell",
 	[356693] = "Baroness Vashj's Extravagant Tribute",
 	[356697] = "Alexandros Mograine's Extravagant Tribute",
 	[356700] = "Grandmaster Vole's Extravagant Tribute",
@@ -10530,6 +10533,7 @@ local ObjectNames = {
 	[356744] = "Rendle and Cudgelface's Extravagant Tribute",
 	[356748] = "Stonehead's Extravagant Tribute",
 	[356752] = "Cryptkeeper Kassir's Extravagant Tribute",
+	[356756] = "Horn of Courage",
 	[356757] = "Greed's Desire",
 	[356818] = "Penitence of Purity",
 	[356820] = "Large Lunarlight Pod",
@@ -11521,7 +11525,7 @@ local ObjectNames = {
 	[404314] = "Chipped Stone Tabled",
 	[404319] = "Time Lost Fragment",
 	[404337] = "Bar Tab Barrel",
-	[404432] = "Bload Soaked Book",
+	[404432] = "Blood Soaked Book",
 	[404480] = "Ragged Mantid Sword",
 	[404492] = "Gilded Vase",
 	[404849] = "Dreadsquall Nest",
@@ -19953,6 +19957,7 @@ local ObjectModels = {
 	[356596] = 3028727,
 	[356597] = 975399,
 	[356607] = 838721,
+	[356677] = 3522133,
 	[356693] = 3621781,
 	[356697] = 3621781,
 	[356700] = 3621781,
@@ -19969,6 +19974,7 @@ local ObjectModels = {
 	[356744] = 3595030,
 	[356748] = 3595030,
 	[356752] = 3595030,
+	[356756] = 3636396,
 	[356757] = 3595030,
 	[356818] = 2994771,
 	[356820] = 3053305,
@@ -24841,12 +24847,16 @@ L.QUEST_NAMES = {
 	[39693] = "The Path of Huln",
 	[39714] = "Where Are the Children?",
 	[39717] = "Scouting Mission Complete",
+	[39723] = "First Completion",
+	[39724] = "First Completion",
+	[39725] = "First Completion",
 	[39730] = "Scouting Mission Complete",
 	[39732] = "Scouting Mission Complete",
 	[39734] = "Scouting Mission Complete",
 	[39743] = "Valhallas Heroic Reward Quest",
 	[39744] = "Valhallas Reward Quest",
 	[39745] = "Khadgar Teleport",
+	[39750] = "First Completion",
 	[39770] = "Burn the Candle at Both Ends [NOT USED]",
 	[39785] = "[PH] Walrus Tusks",
 	[39794] = "Lord Maxwell Tyrosus Slotted",
@@ -32317,6 +32327,7 @@ localize(ObjectNames, {
 	[356596] = "Federkappe",
 	[356597] = "Flechthutmorchel",
 	[356607] = "Violettkäppchen",
+	[356677] = "Schwarze Glocke",
 	[356693] = "Baronin Vashjs extravaganter Tribut",
 	[356697] = "Alexandros Mograines extravaganter Tribut",
 	[356700] = "Großmeister Voles extravaganter Tribut",
@@ -32333,6 +32344,7 @@ localize(ObjectNames, {
 	[356744] = "Rendels und Knüppelfratzes extravaganter Tribut",
 	[356748] = "Steinkopfs extravaganter Tribut",
 	[356752] = "Grufthüter Kassirs extravaganter Tribut",
+	[356756] = "Horn des Mutes",
 	[356757] = "Verlangen der Gier",
 	[356818] = "Bußfertigkeit der Reinheit",
 	[356820] = "Große Mondlichtkapsel",
@@ -41009,6 +41021,7 @@ localize(ObjectNames, {
 	[356596] = "Chapeau à plume",
 	[356597] = "Verpe conique à dentelle",
 	[356607] = "Lamelle violette",
+	[356677] = "Cloche noire",
 	[356693] = "Tribut extravagant de la baronne Vashj",
 	[356697] = "Tribut extravagant d’Alexandros Mograine",
 	[356700] = "Tribut extravagant du grand maître Vole",
@@ -41025,6 +41038,7 @@ localize(ObjectNames, {
 	[356744] = "Tribut extravagant de Rondel et Férul",
 	[356748] = "Tribut extravagant de Tête-de-Caillasse",
 	[356752] = "Tribut extravagant du gardien de la crypte Kassir",
+	[356756] = "Cor du courage",
 	[356757] = "Désir de l’avidité",
 	[356818] = "Pénitence de la pureté",
 	[356820] = "Grande cosse de lumilune",
@@ -48897,6 +48911,7 @@ localize(ObjectNames, {
 	[356535] = "Collezione dell'Oratore Runico",
 	[356553] = "Cassa dell'Artigiano",
 	[356555] = "La Collana di Eurydea",
+	[356677] = "Campana Nera",
 	[356697] = "Tributo Smodato di Alexandros Mograine",
 	[356700] = "Tributo Smodato del Gran Maestro Vole",
 	[356705] = "Tributo Smodato dell'Architetto della Piaga Marileth",
@@ -48905,6 +48920,7 @@ localize(ObjectNames, {
 	[356728] = "Tributo Smodato di Mikanikos",
 	[356737] = "Tributo Smodato di Sika",
 	[356752] = "Tributo Smodato del Custode delle Cripte Kassir",
+	[356756] = "Corno del Coraggio",
 	[356757] = "Desiderio dell'Avidità",
 	[356818] = "Penitenza della Purezza",
 	[356820] = "Grosso Baccello della Luce Lunare",
@@ -56958,6 +56974,7 @@ localize(ObjectNames, {
 	[356596] = "Penarrufo",
 	[356597] = "Cogumelo Rendado",
 	[356607] = "Violetelo",
+	[356677] = "Sino Negro",
 	[356693] = "Tributo Extravagante da Baronesa Vashj",
 	[356697] = "Tributo Extravagante de Alexandros Mograine",
 	[356700] = "Tributo Extravagante do Grão-mestre Vole",
@@ -56974,6 +56991,7 @@ localize(ObjectNames, {
 	[356744] = "Tributo Extravagante de Rasgão e Cara-de-clava",
 	[356748] = "Tributo Extravagante de Cabeça-de-pedra",
 	[356752] = "Tributo Extravagante do Guardião da Cripta Kassir",
+	[356756] = "Chifre da Coragem",
 	[356757] = "Desejo da Ganância",
 	[356818] = "Penitência da Pureza",
 	[356820] = "Vagem de Lunalúmia Grande",
@@ -66011,6 +66029,7 @@ localize(ObjectNames, {
 	[356596] = "Перовик",
 	[356597] = "Ажурный сморчок",
 	[356607] = "Лиловый гребешок",
+	[356677] = "Черный колокол",
 	[356693] = "Экстравагантные дары баронессы Вайш",
 	[356697] = "Экстравагантные дары Александроса Могрейна",
 	[356700] = "Экстравагантные дары великого мастера Воула",
@@ -66027,6 +66046,7 @@ localize(ObjectNames, {
 	[356744] = "Экстравагантные дары Рендла и Дуборыла",
 	[356748] = "Экстравагантные дары Камнелба",
 	[356752] = "Экстравагантные дары хранителя склепа Каззира",
+	[356756] = "Рог Отваги",
 	[356757] = "Желание алчности",
 	[356818] = "Покаяние Чистоты",
 	[356820] = "Большой стручок луноцвета",
@@ -74092,6 +74112,7 @@ localize(ObjectNames, {
 	[356535] = "룬예언자의 보물",
 	[356553] = "제작자의 상자",
 	[356555] = "유리디아의 목걸이",
+	[356677] = "칠흑의 종",
 	[356697] = "알렉산드로스 모그레인의 호화로운 공물",
 	[356709] = "대신 문베리의 호화로운 공물",
 	[356712] = "사냥대장 코레인의 호화로운 공물",
@@ -74104,6 +74125,7 @@ localize(ObjectNames, {
 	[356744] = "렌들과 곤봉얼굴의 호화로운 공물",
 	[356748] = "바위머리의 호화로운 공물",
 	[356752] = "묘지지기 카시르의 호화로운 공물",
+	[356756] = "용기의 뿔피리",
 	[356757] = "탐욕의 갈망",
 	[356818] = "순수의 참회",
 	[356820] = "큰 달빛 깍지",
@@ -83014,6 +83036,7 @@ localize(ObjectNames, {
 	[356596] = "Almete emplumado",
 	[356597] = "Colmenilla de encaje",
 	[356607] = "Gola violeta",
+	[356677] = "Campana negra",
 	[356693] = "Tributo exorbitante de la baronesa Vashj",
 	[356697] = "Tributo exorbitante de Alexandros Mograine",
 	[356700] = "Tributo exorbitante del gran maestro Vole",
@@ -83030,6 +83053,7 @@ localize(ObjectNames, {
 	[356744] = "Tributo exorbitante de Rendle y Caragarrote",
 	[356748] = "Tributo exorbitante de Cabeza Pétrea",
 	[356752] = "Tributo exorbitante del guardacriptas Kassir",
+	[356756] = "Cuerno de coraje",
 	[356757] = "Deseo de avaricia",
 	[356818] = "Penitencia de pureza",
 	[356820] = "Vaina de luz lunar grande",
@@ -86282,6 +86306,7 @@ L.TELEPORT_TO_FROM_DUNGEON = "Teletransporte a/desde el calabozo"
 L.TELEPORT_TO_FROM_DUNGEON_DESC = "Haz click aquí para teletransportarte a/desde tu instancia actual.\n\nPuedes utilizar los escenarios de Mist of Pandaria para teletransportarte fuera de la instancia en la que te encuentras."
 L.THIS_IS_BREADCRUMB = "Esta es una misión de exploración optativa."
 L.TITLE_CORE = "Tropa "
+L.TITLE_DEBUG = "|c" .. _.DefaultColors.Red .. "Debug |r"
 L.TITLE_ID = "ID del Titulo"
 L.TITLE_INSANE = "|c" .. _.DefaultColors.Insane .. "Enfermo |r"
 L.TITLE_UNIQUE_APPEARANCE = "Única "
@@ -86570,6 +86595,7 @@ localize(ObjectNames, {
 	[231901] = "Pergaminos de ogro",
 	[231903] = "Informe de Barbajuerga",
 	[231961] = "Voluntad del genesaurio",
+	[232090] = "Spark's Stolen Supplies",
 	[232214] = "Botín de ogro",
 	[232215] = "Reserva personal de Gorr'thogg",
 	[232216] = "Botín de ogro",
@@ -86608,6 +86634,7 @@ localize(ObjectNames, {
 	[233506] = "Carrete perdido de Abu'gar",
 	[233507] = "Alijo olvidado de ogro",
 	[233513] = "Alijo de calavera olvidada",
+	[233520] = "Remains of Explorer Engineer Toldirk Ashlamp",
 	[233526] = "Antiguo cofre titán",
 	[233532] = "Daga tallada con hueso",
 	[233552] = "Contenedor de piedra avejentado",
@@ -87065,6 +87092,7 @@ localize(ObjectNames, {
 	[251008] = "Tablilla antigua Dreygrot",
 	[251034] = "Pila de Escritos Arcanos",
 	[251046] = "Cesta de ropas",
+	[251048] = "Matrix Punchograph 3005-E",
 	[251049] = "Frío del ébano",
 	[251052] = "Cofre del tesoro protegido",
 	[251107] = "Las Matarreyes",
@@ -88464,6 +88492,7 @@ localize(ObjectNames, {
 	[621707] = "Influencia de rojo y oro",
 	[621732] = "Consumo de luz",
 	[621734] = "Farola perdida",
+	[621762] = "Anar'alah Belore",
 	[623258] = "Arcón saqueado",
 	[623259] = "Arcón saqueado",
 	[628953] = "Madera sombraluna",
@@ -89153,6 +89182,7 @@ L.OBJECT_DEBUGGER_NAME = "名称"
 L.OBJECT_ID = "物体 ID"
 L.OBJECT_TYPE = "物体类型"
 L.OBJECTIVES = "目标"
+L.OBJECTIVES_CHECKBOX_TOOLTIP = "启用此选项可追踪你当前所接任务的各个目标。当任务在你的任务日志中时，每个目标都算作一个独立的事物，并在你完成后标记为已收集。任务追踪也必须启用。\n\n在鼠标提示中，你正在进行的任务会在「所需条件」下列出其目标，使用你任务日志中的进度文本（例如「已击杀 4/10 只狗头人害虫」），并在每个已完成的目标旁显示一个对勾。如果任务日志文本尚未加载，目标会显示为获取数据，直到游戏提供该文本。"
 L.OBJECTS = "物件"
 L.ONLY_OBTAINABLE_CHECKBOX = "仅可获得"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "如果只想查看可获得的共享外观，请启用此选项。"
@@ -94858,6 +94888,7 @@ localize(ObjectNames, {
 	[356555] = "欧律迪亚的项链",
 	[356596] = "羽帽",
 	[356597] = "丝钟龙葵",
+	[356677] = "黑色钟铃",
 	[356693] = "瓦丝琪女男爵的奢华礼品",
 	[356697] = "亚历山德罗斯·莫格莱尼的奢华礼品",
 	[356700] = "沃尔大师的奢华礼品",
@@ -94874,6 +94905,7 @@ localize(ObjectNames, {
 	[356744] = "伦德尔和棍脸的奢华礼品",
 	[356748] = "石首的奢华供品",
 	[356752] = "地穴看守者卡希尔的奢华礼品",
+	[356756] = "勇气号角",
 	[356757] = "贪婪之欲",
 	[356818] = "纯洁赎罪",
 	[356820] = "大型月光之荚",
@@ -97875,6 +97907,7 @@ L.CONTAINS_SLIDER_TOOLTIP = "使用該功能可以自訂指標提示中顯示的
 L.COORDINATES = "座標"
 L.COST = "花費"
 L.COST_DESC = "這裡面包含了獲得或購買這個物品所需要的物品"
+L.COST_TEXT = "|T" .. _.asset("Currency") .. ":0|t |cffdedade" .. BONUS_ROLL_REWARD_CURRENCY .. "|r"
 L.COST_TOTAL = "總花費"
 L.COST_TOTAL_DESC = "其中包含獲得或購買頂級分組內所有物品所需的直觀分類。\n\n注意：目前不包括藥劑/配方需求！"
 L.CREATURES_COUNT = "[%s 隻生物]"
@@ -98260,6 +98293,7 @@ L.PATREON_BUTTON_TOOLTIP = "點擊按鈕複製 URL 以進入 All The Things Patr
 L.PERCENTAGES_CHECKBOX = "顯示完成百分比"
 L.PERCENTAGES_CHECKBOX_TOOLTIP = "如果想查看每行的完成百分比請啟用此選項。\n\n按完成度對組進行著色不受影響。"
 L.PERSONAL_LOOT_DESC = "每位玩家都有獨立的機會拾取對自己職業有用的物品…\n\n…或者像戒指這樣的無用之物。\n\n如果是自己一個人的話，點擊兩次就會自動創建一個隊伍。"
+L.PET_BATTLES = SHOW_PET_BATTLES_ON_MAP_TEXT
 L.PET_BATTLES_TOOLTIP = "此清單顯示所有寵物對戰內容，以及 ATT 資料庫中戰寵的取得方式。"
 L.PET_CAGE_TOOLTIPS_CHECKBOX = "寵物籠"
 L.PET_CAGE_TOOLTIPS_CHECKBOX_TOOLTIP = "啟用此選項以整合寵物籠工具提示。（啟用後，資訊會顯示於 TSM 的額外工具提示，或物品比較工具提示中。）"
@@ -98522,6 +98556,7 @@ L.SPELL_FINDER = "法術搜尋器"
 L.SPELL_ID = "法術 ID"
 L.SPELL_NAME = "法術名稱"
 L.SPLIT = "按難度"
+L.STRANGER_THINGS_LABEL = "Stranger Things"
 L.SUMMARIZE_CHECKBOX = "總結事物"
 L.SUMMARIZE_CHECKBOX_TOOLTIP = "啟用該選項可在指標提示中總結事物。例如，如果一個事物可以變成另一個事物的商人，那麼在指標提示中顯示另一個事物，以提供其多種用途的可見性。如果一個事物作為許多其他事物的容器，這個選項將顯示該容器所包含的所有其他事物。\n\n我們建議你保持此設定開啟。"
 L.SWITCH_NO_NEXT_PROFILE = "沒有可切換的下一個設定檔。"
@@ -98665,6 +98700,7 @@ localize(L.HEADER_NAMES, {
 	[-37] = "暗月馬戲團",
 	[-38] = "時尚大考驗",
 	[-41] = "坐騎修飾",
+	[-46] = MAP_LEGEND_RARE,
 	[-49] = "戰役完成",
 	[-50] = "謎題",
 	[-52] = "馭天者競速",
@@ -98717,6 +98753,9 @@ localize(L.HEADER_NAMES, {
 	[-206] = "入侵：納迦",
 	[-207] = "入侵：海盜",
 	[-208] = "入侵：維酷人",
+	[-216] = ELITE,
+	[-219] = HEIRLOOMS,
+	[-221] = LOOT_JOURNAL_LEGENDARIES,
 	[-224] = "雷霆鑄造",
 	[-225] = "T3套裝",
 	[-228] = "戰鑄",
@@ -98789,11 +98828,18 @@ localize(L.HEADER_NAMES, {
 	[-372] = "狂性儲納所",
 	[-373] = "彈性 (5.4)",
 	[-374] = "廢料場",
+	[-376] = "Leeching Vaults",
+	[-377] = "Reliquary of Opulence",
+	[-378] = "Blood from Stone",
+	[-379] = "Audience with Arrogance",
+	[-380] = "Divergent",
 	[-383] = "地心之戰探究第一季",
 	[-384] = "地心之戰探究第二季",
 	[-385] = "地心之戰探究第三季",
 	[-386] = "奧卡茲島",
+	[-390] = "Kukuru's Cache",
 	[-391] = "襲擊黑暗之門",
+	[-393] = "Sargerei War Council",
 	[-395] = "業餘獵人",
 	[-396] = "被遺忘者死亡小隊",
 	[-397] = "狼人潛獵者",
@@ -98802,6 +98848,7 @@ localize(L.HEADER_NAMES, {
 	[-400] = "翡翠恩惠",
 	[-401] = "紀元邊境",
 	[-403] = "澤斯克拉密庫",
+	[-404] = "Sniffenseeking",
 	[-406] = "斷裂絲線合約",
 	[-407] = "夜暮激戰事件",
 	[-408] = "甦醒機械",
@@ -98814,9 +98861,40 @@ localize(L.HEADER_NAMES, {
 	[-422] = "要塞戰役",
 	[-423] = "鋼鐵入侵",
 	[-424] = "事件隨機判定",
+	[-425] = "Great Odyn and the Firelord",
+	[-426] = "The Wanderer and the Serpent",
+	[-427] = "Halls of Gold and Glory",
+	[-428] = "The Keeper's Eye",
+	[-429] = "First of the Val'kyr",
+	[-430] = "The Sealing of the Halls of Valor",
+	[-431] = "His Name Is Dragonblood",
+	[-432] = "The Last Words of Asgrim the Dreadkiller",
+	[-433] = "A Shieldmaiden's Creed",
+	[-434] = "The Prophecy of Rythas the Oracle",
+	[-435] = "The Lessons of the Blackfist",
+	[-436] = "Volund's Folly",
 	[-437] = "事件隨機判定",
+	[-438] = DUNGEON_FLOOR_NIGHTMARERAID8.." ".._.WOWAPI.GetSpellName(133137),
+	[-439] = DUNGEON_FLOOR_NIGHTMARERAID9.." ".._.WOWAPI.GetSpellName(133137),
+	[-440] = DUNGEON_FLOOR_NIGHTMARERAID7.." ".._.WOWAPI.GetSpellName(133137),
+	[-441] = DUNGEON_FLOOR_NIGHTMARERAID8.." ".._.WOWAPI.GetSpellName(78741),
+	[-442] = DUNGEON_FLOOR_NIGHTMARERAID9.." ".._.WOWAPI.GetSpellName(78741),
+	[-443] = DUNGEON_FLOOR_NIGHTMARERAID7.." ".._.WOWAPI.GetSpellName(78741),
 	[-445] = "失落區域",
 	[-446] = "腐化區域",
+	[-447] = "Broken Mirror",
+	[-448] = "Broken Mirror",
+	[-449] = "Broken Mirror",
+	[-450] = "Broken Mirror",
+	[-451] = "Broken Mirror",
+	[-452] = "Broken Mirror",
+	[-453] = "Broken Mirror",
+	[-454] = "Broken Mirror",
+	[-455] = "Broken Mirror",
+	[-456] = "Broken Mirror",
+	[-457] = "Broken Mirror",
+	[-458] = "Broken Mirror",
+	[-463] = "Clan Aylaag",
 	[-464] = "大狩獵",
 	[-465] = "伊斯凱拉釣魚",
 	[-468] = "夢境灌注",
@@ -98850,10 +98928,14 @@ localize(L.HEADER_NAMES, {
 	[-504] = "公關",
 	[-505] = "艾澤拉斯秘聞",
 	[-506] = "社群線索",
+	[-508] = "Uuna's World Tour",
 	[-511] = "公會商人",
 	[-514] = "《暗影之境》季節性促銷",
 	[-515] = "《巨龍崛起》季節性促銷",
 	[-516] = "《地心之戰》季節性促銷",
+	[-517] = "SteelSeries",
+	[-518] = "Razer",
+	[-519] = "Amazon Prime Gaming",
 	[-520] = "暴雪嘉年華",
 	[-522] = "英雄版",
 	[-523] = "史詩版",
@@ -98889,6 +98971,7 @@ localize(L.HEADER_NAMES, {
 	[-562] = "火鳥的挑戰",
 	[-563] = "打靶場",
 	[-564] = "痛扁豺狼人",
+	[-565] = "Dastardly Duos",
 	[-566] = "亡者節",
 	[-567] = "天空騎術競速",
 	[-569] = "東部王國杯",
@@ -98926,11 +99009,15 @@ localize(L.HEADER_NAMES, {
 	[-673] = "殺戮者高地",
 	[-674] = "至暗之夜探究第一季",
 	[-681] = "風瑪利昂襲擊",
+	[-686] = "Saltheril's Soiree",
 	[-687] = "團隊裝備轉換",
+	[-691] = "Treasures of Azeroth",
 	[-694] = "燃燒的遠征：經典週年紀念版 - 外域升級",
 	[-696] = "虛空傳送門",
+	[-700] = "Hati's Aftermath",
 	[-703] = "暗黑破壞神IV：憎恨之王",
 	[-705] = "訓練場",
+	[-708] = "Razer",
 	[-709] = "|cffFF0000『割碎者』歐格姆通常只會在進行每日任務「進攻鋼鐵軍火廠」時出現。自《軍臨天下》上線後，這個任務就未再開放；可購買的任務「Missive: Assault on the Iron Siegeworks」也無法使用。|r",
 	[-712] = "升級中角色",
 	[-713] = "最高等級角色",
@@ -98942,18 +99029,25 @@ localize(L.HEADER_NAMES, {
 	[-719] = "巨龍睦鄰活動",
 	[-720] = "機械地精睦鄰活動",
 	[-722] = "暗黑破壞神II：獄火重生 ─ 術士軍臨",
+	[-723] = "Elemental Invasions",
 	[-729] = "豐足",
 	[-738] = "哈拉尼爾的傳說",
 	[-745] = "社區郵政路線",
 	[-746] = "專業技能節點",
+	[-748] = "Fanta",
+	[-750] = "Phase Conduits",
+	[-760] = "Lunar New Year Adventure",
 	[-763] = "目前賽季",
 	[-765] = "Prey《至暗之夜》第 1 季",
 	[-771] = "頂級",
 	[-772] = "第一級",
 	[-773] = "第二級",
 	[-774] = "第三級",
+	[-776] = "Crimson Tide Treasure Trove",
+	[-778] = "Quicksand Secret Treasure Vault",
 	[-780] = "中國促銷活動（正式版）",
 	[-783] = "20週年禮包",
+	[-800] = "Alliance Outrunners",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "包含完成探究時獎勵的東西。",
@@ -104052,6 +104146,7 @@ localize(ObjectNames, {
 	[633820] = "被丟棄的卷軸",
 	[658087] = "豐足豐碩沉重的箱子",
 	[658088] = "豐足豐碩沉重的箱子",
+	[100000000] = "Sentinax Portal",
 })
 for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "聯盟篝火" end
 for i,objectID in ipairs(CANDY_BUCKETS) do ObjectNames[objectID] = "糖果桶" end

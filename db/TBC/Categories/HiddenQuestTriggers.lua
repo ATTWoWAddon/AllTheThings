@@ -69,8 +69,7 @@ hqt(95641,{repeatable=1}),
 hqt(95881,{repeatable=1}),
 hqt(95616,{repeatable=1}),
 hqt(95617,{repeatable=1}),
-hqt(95619,{repeatable=1}),
-hqt(97503,{repeatable=1})}})})})}),
+hqt(95619,{repeatable=1})}})})})}),
 prof(171),
 h(-521,{awp=10100,u=3,g={
 x(1,{u=3,g={
