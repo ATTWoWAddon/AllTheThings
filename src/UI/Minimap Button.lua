@@ -64,7 +64,7 @@ local function CreateMinimapButton()
 	local button = CreateFrame("Button", appName .. "-Minimap", Minimap);
 	button:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
 	button:SetPoint("CENTER", 0, 0);
-	button:SetFrameStrata("HIGH");
+	button:SetFrameStrata("MEDIUM");
 	button:SetMovable(true);
 	button:EnableMouse(true);
 	button:RegisterForDrag("LeftButton", "RightButton");
@@ -219,10 +219,11 @@ local function RegisterDataBrokers()
 				MinimapButton.border = nil
 			end
 			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"))
-			-- move the ATT button to highest level to match when created without LibDB smile
+			-- raise the ATT button within LibDBIcon's MEDIUM strata to match when created without LibDB smile
+			-- (HIGH drew it over bag frames once button collectors re-parented it)
 			MinimapButton:SetFixedFrameStrata(false)
 			MinimapButton:SetFixedFrameLevel(false)
-			MinimapButton:SetFrameStrata("HIGH")
+			MinimapButton:SetFrameStrata("MEDIUM")
 			MinimapButton:Raise()
 			MinimapButton:SetFixedFrameLevel(true)
 			MinimapButton:SetFixedFrameStrata(true)
