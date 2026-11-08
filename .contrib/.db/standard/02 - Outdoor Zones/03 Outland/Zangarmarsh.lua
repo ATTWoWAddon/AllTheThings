@@ -2106,6 +2106,18 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				n(18010, {	-- Maktu <Armor Merchant>
+					coord = { 41.6, 27.4, ZANGARMARSH },
+					races = ALLIANCE_ONLY,
+					groups = {
+						i(30777),	-- Aldor Heavy Belt
+						i(30771),	-- Heavy Draenic Bracers
+						i(30765),	-- Heavy Draenic Breastplate
+						i(30775),	-- Layered Bone Shield
+						i(30781),	-- Mag'hari Chain Vest
+						i(30784),	-- Worn Mag'hari Gauntlets
+					},
+				}),
 				n(19722, {	-- Muheru the Weaver <Tailoring Supplies>
 					coord = { 40.4, 28.2, ZANGARMARSH },
 					races = ALLIANCE_ONLY,
