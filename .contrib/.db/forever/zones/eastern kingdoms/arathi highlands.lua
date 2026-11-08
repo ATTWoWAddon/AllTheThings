@@ -81,6 +81,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(79677, {	-- A Quick Grocery Run
+				sourceQuest = 79624,	-- Anyone Can Cook
+				qg = 217300,	-- Skonk <Amateur Chef>
+				qi = 283389,	-- Skonk's List (PQI!)
+				coord = { 57.6, 74.6, MAP.ARATHI_HIGHLANDS },
+				maps = { MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 26,
+				groups = {
+					objective(1, {	-- 0/1 Hybrid Haunch
+						provider = { "i", 213526 },	-- Hybrid Haunch
+						description = "Drops from the wyverns north of Durnholde Keep in Hillsbrad Foothills.",
+						-- TODO: creature IDs and coord.
+					}),
+					objective(2, {	-- 0/1 Smuggler's Spice Blend
+						providers = {
+							{ "i", 213527 },	-- Smuggler's Spice Blend
+							{ "o", 422911 },	-- Sealed Barrel
+						},
+						coord = { 21.3, 84.0, MAP.ARATHI_HIGHLANDS },
+					}),
+				},
+			}),
 			q(96785, {	-- Ain't No Telling
 				qg = 266847,	-- Anastasia Miller
 				qi = 275706,	-- Syndicate Uniform (PQI!)
@@ -105,6 +128,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 46.2, 47.8, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+			}),
+			q(79624, {	-- Anyone Can Cook
+				qs = 213422,	-- Illegible Recipe (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				description = "Bring the recipe to Skonk at 57.6, 74.6. The hidden path up to him starts at 57.3, 71.8.",
+				lvl = 32,
 			}),
 			q(696, {	-- Attack on the Tower
 				sourceQuest = 695,	-- An Apprentice's Enchantment
@@ -814,6 +843,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 27.2, 77.0, MAP.STRANGLETHORN_VALE },
 				lvl = 35,
 			}),
+			q(79678, {	-- Taste Testing
+				sourceQuest = 79677,	-- A Quick Grocery Run
+				qg = 217300,	-- Skonk <Amateur Chef>
+				coord = { 57.6, 74.6, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 26,
+				groups = {
+					i(213105),	-- Shawarmageddon
+				},
+			}),
 			q(640, {	-- The Broken Sigil
 				sourceQuest = 639,	-- Sigil of Strom
 				qg = 2703,	-- Zengu
@@ -1370,6 +1409,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 				description = "This item is only naturally accessible to Horde players due to the allegiance of the creatures that drop this item.",
 				coord = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
+			}),
+			i(213422, {	-- Illegible Recipe (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				description = "Drops from ogres in Arathi Highlands.",
+				-- TODO: which ogres drop it (crs); a player accepted the quest at 33.0, 41.9.
 			}),
 			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },

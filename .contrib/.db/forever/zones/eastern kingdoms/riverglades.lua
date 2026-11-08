@@ -1564,7 +1564,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95260, {	-- Terrors From the Deep
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 72.3, 61.8.
 				lvl = 38,
 			}),
 			q(95326, {	-- The Big Payback
