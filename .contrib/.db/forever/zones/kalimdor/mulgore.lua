@@ -1064,6 +1064,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { ORC, TAUREN, TROLL },
+				classes = { WARRIOR, SHAMAN, DRUID },
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve

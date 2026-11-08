@@ -620,6 +620,21 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
+			q(98233, {	-- Sword in the Slime
+				qg = 271167,	-- Guard Jameson
+				coord = { 65.6, 45.4, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 36,
+				groups = {
+					objective(1, {	-- 0/1 Jameson's Training Sword
+						provider = { "i", 280203 },	-- Jameson's Training Sword
+						cr = 4392,	-- Corrosive Swamp Ooze
+						coord = { 53.0, 52.4, MAP.DUSTWALLOW_MARSH },
+					}),
+					i(281308),	-- Jameson's Backup Sword
+				},
+			}),
 			q(1253, {	-- The Black Shield (1/3) [A]
 				providers = {
 					{ "o", 20992 },	-- Black Shield

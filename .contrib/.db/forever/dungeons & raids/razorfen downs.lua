@@ -91,6 +91,19 @@ instanceroot(233, {	-- Razorfen Downs
 				},
 				lvl = 32,
 			}),
+			q(96773, {	-- The Coldbringer's Eye
+				qg = 20735,	-- Archmage Lan'dalock
+				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/1 The Coldbringer's Eye
+						provider = { "i", 276916 },	-- The Coldbringer's Eye
+						cr = 7358,	-- Amnennar the Coldbringer
+					}),
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(3172, {	-- Boar Intestines

@@ -1205,6 +1205,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				coords = {
 					{ 47.6, 46.6, MAP.ASHENVALE },
 				},
+				groups = {
+					i(284574, {	-- Snapped Branch Wand
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3736, {	-- Darkslayer Mordenthal
 				coords = {
@@ -1391,6 +1396,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				crs = {
 					3808,	-- Forsaken Dark Stalker
 				},
+			}),
+			i(6346, {	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 3715,	-- Wrathtail Sea Witch
 			}),
 			i(11151, {	-- Formula: Enchant Gloves - Herbalism (RECIPE!)
 				crs = {

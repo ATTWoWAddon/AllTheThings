@@ -564,12 +564,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				},
 			}),
 			q(86776, {	-- Ingredients for the Forge
-				-- CRIEVE NOTE: This might be a mining exclusive quest
+				-- Not offered to a Dwarf Tailor/Enchanter (#forever-reports, Nov 8, 2026). Humans can do it (done on a Human Warrior on beta).
 				qg = 167,	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { ARATHI_HIGHLANDS },
 				cost = {{ "i", 2841, 10 }},	-- Bronze Bar
+				requireSkill = MINING,
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 				groups = {

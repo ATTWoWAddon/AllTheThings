@@ -18,6 +18,25 @@ instanceroot(2970, {	-- The Drowned City
 				groups = {
 					objective(1, {	-- 0/1 Ancient Gurubashi Idol
 						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
+						crs = {
+							269586,	-- Deathless Marrow
+							273738,	-- Primeval Elemental
+						},
+					}),
+				},
+			}),
+			q(97130, {	-- Ancient Gurubashi Secrets
+				qg = 31439,	-- Archmage Timear
+				coord = { 15.4, 74.0, MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/1 Ancient Gurubashi Idol
+						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
+						crs = {
+							269586,	-- Deathless Marrow
+							273738,	-- Primeval Elemental
+						},
 					}),
 				},
 			}),
