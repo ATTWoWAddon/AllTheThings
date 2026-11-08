@@ -1184,6 +1184,41 @@ else
 	end
 end
 
+-- Abandon Quest
+-- Opens the game's own abandon confirmation popup for a quest in the player's quest log
+-- (the same flow as the quest log's Abandon button), so nothing is abandoned without confirmation.
+local function ShowAbandonQuestPopup(questID)
+	if not questID or not StaticPopup_Show then return end
+	local questLogIndex = GetQuestLogIndexByID(questID)
+	if not questLogIndex or questLogIndex < 1 then return end
+
+	---@diagnostic disable-next-line: undefined-global
+	local C_QuestLog_SetAbandonQuest, C_QuestLog_SetSelectedQuest, C_QuestLog_GetSelectedQuest = C_QuestLog.SetAbandonQuest, C_QuestLog.SetSelectedQuest, C_QuestLog.GetSelectedQuest
+	local title
+	if C_QuestLog_SetAbandonQuest and C_QuestLog_SetSelectedQuest then
+		-- Modern quest log API
+		local previousSelection = C_QuestLog_GetSelectedQuest and C_QuestLog_GetSelectedQuest()
+		C_QuestLog_SetSelectedQuest(questID)
+		C_QuestLog_SetAbandonQuest()
+		title = C_QuestLog.GetTitleForQuestID and C_QuestLog.GetTitleForQuestID(questID)
+		if previousSelection then C_QuestLog_SetSelectedQuest(previousSelection) end
+	else
+		-- Index-based quest log API
+		---@diagnostic disable-next-line: undefined-global
+		local SetAbandonQuest, GetAbandonQuestName = SetAbandonQuest, GetAbandonQuestName
+		if not SetAbandonQuest or not SelectQuestLogEntry then return end
+		local previousSelection = GetQuestLogSelection and GetQuestLogSelection() or 0
+		SelectQuestLogEntry(questLogIndex)
+		SetAbandonQuest()
+		title = GetAbandonQuestName and GetAbandonQuestName()
+		SelectQuestLogEntry(previousSelection)
+	end
+
+	if StaticPopup_Hide then StaticPopup_Hide("ABANDON_QUEST_WITH_ITEMS") end
+	StaticPopup_Show("ABANDON_QUEST", title or tostring(questID))
+end
+app.ShowAbandonQuestPopup = ShowAbandonQuestPopup
+
 -- Breadcrumb Checking
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
@@ -1195,11 +1230,17 @@ local function PrintBreadcrumbWarning(accepted, bc)
 	end
 
 	local acceptQuestID, bcQuestID = accepted.questID, bc.questID
-	app.print(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT:format(
+	local message = L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT:format(
 		acceptText,
 		app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
 		bcText,
-		app:Linkify(bcQuestID, app.Colors.ChatLink, "search:questID:"..bcQuestID)))
+		app:Linkify(bcQuestID, app.Colors.ChatLink, "search:questID:"..bcQuestID))
+	-- Offer a one-click way to abandon the accepted quest while it's in the quest log
+	local questLogIndex = GetQuestLogIndexByID(acceptQuestID)
+	if questLogIndex and questLogIndex > 0 then
+		message = message.." "..app:Linkify(ABANDON_QUEST or "Abandon Quest", app.Colors.ChatLinkError, "abandon:"..acceptQuestID)
+	end
+	app.print(message)
 	app.Audio:PlayRemoveSound()
 end
 

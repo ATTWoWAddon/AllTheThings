@@ -61,6 +61,13 @@ hooksecurefunc("SetItemRef", function(link, text)
 
 			app:CreateMiniListForGroup(group);
 			return true;
+		elseif data1 == "abandon" then
+			-- Opens the game's abandon confirmation for a quest in the quest log
+			local questID = tonumber(data2);
+			if questID and app.ShowAbandonQuestPopup then
+				app.ShowAbandonQuestPopup(questID);
+			end
+			return true;
 		elseif data1 == "dialog" then
 			-- Retrieves stored information for a report dialog and attempts to display the dialog if possible
 			local popup = reports[data2];
