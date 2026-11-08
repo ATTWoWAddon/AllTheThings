@@ -242,7 +242,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94858, {	-- All That's Left
-				-- Giver: Contributor Report accepted it at 52.7, 42.4, where Farmer Elbrim stands.
 				sourceQuest = 94829,	-- What We Lost
 				qg = 258697,	-- Farmer Elbrim
 				coord = { 52.8, 42.4, MAP.RIVERGLADES },
@@ -552,7 +551,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95562, {	-- Cut Off the Heads
-				-- Giver: Contributor Report accepted it at 47.7, 47.2, where Apprentice Claire stands.
 				qg = 256831,	-- Apprentice Claire
 				coord = { 47.6, 47.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -721,7 +719,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95913, {	-- Fit for a Princess
-				-- Giver: Contributor Report accepted it at 63.8, 82.3, where Tessa Dawnbright stands.
 				sourceQuest = 95561,	-- Apple of My Eye
 				qg = 263089,	-- Tessa Dawnbright
 				coord = { 63.8, 82.2, MAP.RIVERGLADES },
@@ -737,7 +734,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94615, {	-- Foal Play
-				-- Giver: the previous quest ends at Benjy Wheeler, who also takes this one in.
 				sourceQuest = 94613,	-- My Kingdom for a Horse
 				qg = 258317,	-- Benjy Wheeler
 				coord = { 54.6, 72.8, MAP.RIVERGLADES },
@@ -762,7 +758,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95943, {	-- Foreman's Plight
-				-- Giver: Contributor Report accepted it at 63.3, 80.6, where Bertrand Ironbrow stands.
 				qg = 260070,	-- Bertrand Ironbrow <Foreman>
 				coord = { 63.2, 80.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -960,7 +955,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96009, {	-- High Stakes
-				-- Giver: Contributor Report accepted it at 63.4, 80.5, where Bertrand Ironbrow stands.
 				qg = 260070,	-- Bertrand Ironbrow <Foreman>
 				coord = { 63.4, 80.4, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -992,7 +986,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95615, {	-- In Memoriam
-				-- Giver: Contributor Report accepted it at 61.7, 83.3, where Sister Rowland stands.
 				qg = 262031,	-- Sister Rowland
 				coord = { 61.8, 83.2, MAP.RIVERGLADES },
 				qi = 269997,	-- Bundle of Candles (PQI!)
@@ -1059,7 +1052,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95613, {	-- Keeping the Light On
-				-- Giver: Contributor Report accepted it at 61.7, 83.3, where Sister Rowland stands.
 				qg = 262031,	-- Sister Rowland
 				coord = { 61.8, 83.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -1206,7 +1198,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(96108, {	-- Poison Tips
-				-- Giver: the previous quest ends at Neza Bloodsnout, who also takes this one in.
 				sourceQuest = 96107,	-- Feathers for Fletching
 				qg = 258031,	-- Neza Bloodsnout
 				coord = { 60.4, 47.8, MAP.RIVERGLADES },
@@ -1393,7 +1384,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 38,
 			}),
 			q(95288, {	-- Smuggler's Paradise
-				-- Giver: Contributor Report accepted it at 77.1, 52.8, where Friz Frazzlespark stands.
 				sourceQuests = {
 					93976,	-- The Goblin Trader
 					94928,	-- A Few Furs for Friz
@@ -1523,7 +1513,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95961, {	-- Stepped Out
-				-- Giver: Contributor Report accepted it at 63.8, 82.3, where Tessa Dawnbright stands.
 				sourceQuest = 95913,	-- Fit for a Princess
 				qg = 263089,	-- Tessa Dawnbright
 				coord = { 63.8, 82.2, MAP.RIVERGLADES },
@@ -1542,7 +1531,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95156, {	-- Stuff 'Em and Stick 'Em
-				-- Giver: Contributor Report accepted it at 66.1, 79.6, where Ember Bladewhisper stands.
 				qg = 260080,	-- Ember Bladewhisper <Weapons Trainer>
 				coord = { 66.0, 79.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -1643,7 +1631,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95184, {	-- The Sharpest of Blades
-				-- Giver: Contributor Report accepted it at 66.1, 79.6, where Ember Bladewhisper stands.
 				qg = 260080,	-- Ember Bladewhisper <Weapons Trainer>
 				coord = { 66.0, 79.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
@@ -1845,7 +1832,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94829, {	-- What We Lost
-				-- Giver: Contributor Report accepted it at 52.7, 42.4, where Farmer Elbrim stands.
 				qg = 258697,	-- Farmer Elbrim
 				coord = { 52.8, 42.4, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
