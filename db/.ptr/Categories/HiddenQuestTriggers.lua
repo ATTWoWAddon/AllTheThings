@@ -216,6 +216,7 @@ hqt(32697),
 hqt(32698),
 hqt(32699)})}})}),
 h(-45,{
+hqt(32727,{description="Completed when you contribute to the Isle of Thunder's server-wide progress for the day.",isDaily=1}),
 hqt(32289),
 hqt(32723),
 hqt(32825),

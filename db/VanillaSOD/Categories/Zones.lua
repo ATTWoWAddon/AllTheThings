@@ -98,12 +98,7 @@ qo(1,{description="You must first have your Meditation buff and then use /pray o
 q(1692,{c={1},coords={
 [1457]={{57.4,34.8}}},lvl=10,qgs={4088},qis={6812},r=2,rwp=40003,sourceQuests={1686}}),
 q(5627,{altQuests={5628,5629,5630,5631,5632,5633},c={5},coords={
-[1426]={{47.2,52.2}},
-[1429]={{43.4,65.6}},
-[1438]={{55.6,56.8}},
-[1453]={{20.8,50.2},{38.6,26.8}},
-[1455]={{24.6,9.2}},
-[1457]={{39.2,81}}},lvl=10,qgs={377,1226,3600,5142,5489,11397,11401},races={4},rwp=30002,g={
+[1457]={{39.2,81}}},lvl=10,qgs={11401},races={4},rwp=30002,g={
 r(10797,{rank=1})}}),
 q(1710,{c={1},coords={
 [1457]={{59.2,45.4}}},lvl=20,maps={1441},qgs={6142},r=2,rwp=40003,sourceQuests={1703},g={
@@ -755,11 +750,7 @@ q(2458,{c={4},coords={
 q(2378,{altQuests={2380},c={4},coords={
 [1458]={{83.2,69}}},isBreadcrumb=1,lvl=16,nextQuests={2379},qgs={6467},r=1,rwp=40003}),
 q(5652,{altQuests={5654,5655,5656,5657},c={5},coords={
-[1411]={{54.2,42.8}},
-[1412]={{47,58.8}},
-[1454]={{35.6,87.6}},
-[1456]={{26,15.8}},
-[1458]={{49.01,18.32}}},lvl=10,qgs={3044,3706,4606,6018,11407},races={8},rwp=20401,g={
+[1454]={{35.6,87.6}}},lvl=10,qgs={6018},races={8},rwp=20401,g={
 r(9035,{rank=1})}}),
 q(5726,{coords={
 [1454]={{32,37.8}}},lvl=9,maps={1411},qgs={4949},r=1,rwp=40003,g={
@@ -1494,6 +1485,9 @@ q(768,{coords={
 [1456]={{44,44.6}}},cost={{"i",2318,12}},description="This quest becomes available at Skinning skill level 1 when the character level requirement is met.",lvl=4,qgs={3050},r=1,requireSkill=393,g={
 s(158270,5936,{b=1,f=5,loc=45,q=1,requireSkill=393}),
 s(157990,4962,{b=1,f=5,loc=44,q=1,requireSkill=393})}}),
+q(5656,{altQuests={5652,5654,5655,5657},c={5},coords={
+[1456]={{26,15.8}}},lvl=10,qgs={3044},races={8},rwp=20401,g={
+r(9035,{rank=1})}}),
 q(769,{coords={
 [1456]={{44,44.6}}},description="This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",lvl=5,qgs={3050},r=1,requireSkill=165,g={
 r(5244,{description="This recipe is not soulbound and can be mailed to Horde alts.",itemID=5083,learnedAt=40,q=2,requireSkill=165})}}),
@@ -3364,6 +3358,9 @@ q(1506,{altQuests={1478},c={9},coords={
 q(5648,{c={5},coords={
 [1411]={{54.2,42.8}}},lvl=5,qgs={3706},races={8},rwp=40003,sourceQuests={5649},g={
 s(162973,16606,{b=1,c={5},f=4,loc=42,q=2})}}),
+q(5654,{altQuests={5652,5655,5656,5657},c={5},coords={
+[1411]={{54.2,42.8}}},lvl=10,qgs={3706},races={8},rwp=20401,g={
+r(9035,{rank=1})}}),
 q(7664,{coords={
 [1411]={{55.2,75.6}}},cost={{"i",13317,1}},description="If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",qgs={7952},r=1,repeatable=1,rwp=10400,sym={{"select","itemID",18788,18789,18790}},u=2}),
 q(1884,{c={8},coords={
@@ -5233,6 +5230,9 @@ qo(1,{coords={
 [1412]={{34,46}}},cost={{"i",4702,1}},crs={2989,2990},providers={{"i",4703}}}),
 s(157995,4969,{b=1,f=6,loc=43,q=1}),
 s(157996,4970,{b=1,f=5,loc=46,q=1})}}),
+q(5655,{altQuests={5652,5654,5656,5657},c={5},coords={
+[1412]={{47,58.8}}},lvl=10,qgs={11407},races={8},rwp=20401,g={
+r(9035,{rank=1})}}),
 q(775,{coords={
 [1412]={{61.4,21}}},lvl=3,maps={1456},qgs={2994},r=1,rwp=40001,sourceQuests={773}}),
 q(766,{coords={
@@ -6940,6 +6940,9 @@ q(77571,{c={11},coords={
 qo(1,{crs={1989},providers={{"i",208414}}}),
 r(410061),
 s(156635,2127,{f=5,loc=42,q=1})}}),
+q(5629,{altQuests={5627,5628,5630,5631,5632,5633},c={5},coords={
+[1438]={{55.6,56.8}}},lvl=10,qgs={3600},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
 q(77573,{c={4},coords={
 [1438]={{59.6,38.6}}},lvl=2,phase=1605,qgs={3594},races={4},rwp=20001,g={
 qo(1,{coords={
@@ -9514,6 +9517,9 @@ q(3461,{coords={
 [1447]={{77.8,91.4}}},lvl=45,qgs={8392},qis={10445},r=2,rwp=40003,sourceQuests={3449},g={
 s(160132,10707,{b=1,f=7,loc=47,q=2}),
 s(160133,10708,{b=1,f=1,q=2})}}),
+q(5633,{altQuests={5627,5628,5629,5630,5631,5632},c={5},coords={
+[1455]={{24.6,9.2}}},lvl=10,qgs={5142},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
 q(683,{coords={
 [1455]={{63.5,67.2}}},lvl=25,qgs={2695},qis={4514},r=2,rwp=40003,sourceQuests={637}}),
 q(3641,{altQuests={3639,3643},coords={
@@ -10381,6 +10387,12 @@ q(1919,{c={8},coords={
 [1455]={{26.8,8.6}}},isBreadcrumb=1,lvl=15,nextQuests={1920},qgs={7312},races={1,7},rwp=40003}),
 q(6285,{coords={
 [1453]={{66.2,62.4}}},lvl=10,maps={1436},qgs={352},qis={16115},races={1},rwp=40003,sourceQuests={6261}}),
+q(5631,{altQuests={5627,5628,5629,5630,5632,5633},c={5},coords={
+[1453]={{38.6,26.8}}},lvl=10,qgs={5489},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
+q(5632,{altQuests={5627,5628,5629,5630,5631,5633},c={5},coords={
+[1453]={{20.8,50.2}}},lvl=10,qgs={11397},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
 q(78194,{c={5},coords={
 [1453]={{20.8,50.2}}},lvl=17,maps={1431},phase=1605,qgs={11397},races={1,3},rwp=20001,g={
 qo(1,{coords={
@@ -11032,6 +11044,9 @@ qo(1,{coords={
 [1421]={{46.6,84.2}}},crs={5682},providers={{"i",6312}}}),
 qo(2,{coords={
 [1437]={{50.6,12.6}}},crs={5683},providers={{"i",6313}}})}}),
+q(5657,{altQuests={5652,5654,5655,5656},c={5},coords={
+[1458]={{49.01,18.32}}},lvl=10,qgs={4606},races={8},rwp=20401,g={
+r(9035,{rank=1})}}),
 q(243,{coords={
 [1458]={{50.1,68}}},lvl=38,maps={1446},qgs={5204},qis={8523},r=1,rwp=40003,sourceQuests={238}}),
 q(1960,{c={8},coords={
@@ -12970,6 +12985,9 @@ q(320,{coords={
 s(156200,1011,{b=1,f=21,q=1}),
 s(156199,1010,{b=1,f=28,q=1}),
 s(160069,10547,{b=1,f=20,q=1})}}),
+q(5630,{altQuests={5627,5628,5629,5631,5632,5633},c={5},coords={
+[1426]={{47.2,52.2}}},lvl=10,qgs={1226},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
 q(2218,{c={4},coords={
 [1426]={{47.6,52.6}}},lvl=10,qgs={1234},r=2,rwp=40003}),
 q(466,{coords={
@@ -14536,6 +14554,9 @@ q(52,{coords={
 [1429]={{74,72.2}}},lvl=7,qgs={261},r=2,g={
 qo(1,{providers={{"n",118}}}),
 qo(2,{providers={{"n",822}}})}}),
+q(5628,{altQuests={5627,5629,5630,5631,5632,5633},c={5},coords={
+[1429]={{43.4,65.6}}},lvl=10,qgs={377},races={4},rwp=30002,g={
+r(10797,{rank=1})}}),
 q(83,{coords={
 [1429]={{79.5,68.7}}},lvl=4,qgs={278},r=2,rwp=40003,g={
 qo(1,{crs={116,473,474,583,880,881,6846,6866,6927},providers={{"i",1019}}}),

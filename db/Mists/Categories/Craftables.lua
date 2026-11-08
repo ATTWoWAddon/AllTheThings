@@ -6441,7 +6441,7 @@ i(74654,{f=55,lvl=85,q=1}),
 i(81401,{f=55,lvl=85,q=1})}}),
 prof(333,{phase=50,g={
 ah(13262,{type="s",g={
-i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring",q=3}),
+i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of Endless Spring",q=3}),
 i(74247,{q=3}),
 i(94289,{awp=50200,description="Can be obtained by disenchanting epics from Throne of Thunder",phase=52,q=3}),
 i(74250,{q=2}),

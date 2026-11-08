@@ -6753,7 +6753,7 @@ i(74654,{f=55,lvl=32,spellID=104294}),
 i(81401,{f=55,lvl=10,spellID=124240})}),
 prof(333,{
 ah(13262,{type="s",g={
-i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring"}),
+i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of Endless Spring"}),
 i(74247),
 i(94289,{awp=50200,description="Can be obtained by disenchanting epics from Throne of Thunder"}),
 i(74250),
