@@ -607,7 +607,7 @@ local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
 local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
 local function SetPortraitIcon(self, data)
 	local icon = data.icon;
-	if PortaitSettingsCache.ALL and PortaitSettingsCache[data.key] then
+	if PortaitSettingsCache.ALL and (not icon or PortaitSettingsCache[data.key]) then
 		local displayID = app.GetDisplayID(data);
 		if displayID then
 			if self.context ~= "displayID" or self.texture ~= displayID then
