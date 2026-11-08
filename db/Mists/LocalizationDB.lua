@@ -10799,6 +10799,7 @@ L.QUEST_NAMES = {
 	[32622] = "Intro Flight",
 	[32651] = "Intro Flight",
 	[32717] = "REUSE ME",
+	[32727] = "Contributed to Server Percentage Daily Tracking Quest",
 	[32758] = "Reader for the Dead Tongue",
 	[32910] = "reuse me",
 	[32949] = "Tracking Quest: Guru Kukuru",

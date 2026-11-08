@@ -1181,7 +1181,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, {
 				}),
 				n(QUESTS, {
 					q(32727, {	-- Contributed to Server Percentage Daily Tracking Quest
-						description = "Completed when you contribute to the Isle of Thunder's server-wide progress for the day.",
+						name = "Contributed to Server Percentage Daily Tracking Quest",
 						isDaily = true,
 					}),
 					q(32289),	-- Loot plans, kill boat captain
