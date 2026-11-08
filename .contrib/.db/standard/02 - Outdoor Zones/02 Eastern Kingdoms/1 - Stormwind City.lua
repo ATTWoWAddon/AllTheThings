@@ -812,6 +812,17 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			q(64028, {	-- A New Beginning [Stormwind City]
+				description = "Offered automatically to characters boosted to level 58.",
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+				groups = {
+					i(185964),	-- Azeroth Survival Kit
+				},
+			}),
+			-- #endif
 			q(335, {	-- A Noble Brew (1/2)
 				qg = 1435,	-- Zardeth of the Black Claw
 				coords = {
@@ -1436,6 +1447,25 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 			}),
+			-- #if ANYCLASSIC
+			q(64034, {	-- Combat Training [Stormwind City]
+				sourceQuest = 64031,	-- Tools for Survival [Stormwind City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			-- #endif
 			q(46274, {	-- Consoling the King
 				sourceQuest = 46272,	-- Summons to the Keep
 				qg = 119338,	-- Genn Greymane
@@ -1605,6 +1635,25 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			})),
+			-- #endif
+			-- #if ANYCLASSIC
+			q(64037, {	-- Eastern Plaguelands [Stormwind City]
+				sourceQuest = 64035,	-- Talented [Stormwind City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
 			-- #endif
 			q(25156, {	-- Elemental Goo
 				qg = 50480,	-- Isabel Jones
@@ -3104,6 +3153,25 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
+			-- #if ANYCLASSIC
+			q(64035, {	-- Talented [Stormwind City]
+				sourceQuest = 64034,	-- Combat Training [Stormwind City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			-- #endif
 			q(434, {	-- The Attack!
 				sourceQuest = 2746,	-- Items of Some Consequence
 				qg = 7766,	-- Tyrion
@@ -3270,6 +3338,26 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 			}),
+			-- #if ANYCLASSIC
+			q(64038, {	-- The Dark Portal [Stormwind City]
+				sourceQuest = 64035,	-- Talented [Stormwind City]
+				qgs = {
+					331,	-- Maginor Dumas <Master Mage>
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			-- #endif
 			q(7646, {	-- The Divination Scryer
 				sourceQuest = 7644,	-- Blessed Arcanite Barding
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -4142,6 +4230,25 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
+			-- #if ANYCLASSIC
+			q(64031, {	-- Tools for Survival [Stormwind City]
+				sourceQuest = 64028,	-- A New Beginning [Stormwind City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			-- #endif
 			q(26977, {	-- Twilight Investigation
 				sourceQuest = 26960,	-- My Son, the Prince
 				qg = 29611,	-- King Varian Wrynn <King of Stormwind>
