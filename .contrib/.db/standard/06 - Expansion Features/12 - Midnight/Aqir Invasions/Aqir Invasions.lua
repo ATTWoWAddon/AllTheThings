@@ -89,41 +89,107 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							minReputation = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 },
 						}),
 					}),
-					--[[title(XXX, {	--
-						minReputation = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 },
-					}),
-					n(QUESTS, sharedData({
-						provider = { "n", 266188 },	-- Estelia Archtender <Aqir Researcher>
-						coord = { 39.3, 80.3, MAP.MIDNIGHT.SILVERMOON_CITY },
-					}, bubbleDownRep(FACTION_AQIR_RESEARCH_ENCLAVE, {
-						{		-- Neutral --
-						}, {	-- Friendly --
-						}, {	-- Honored --
-						}, {	-- Revered --
-						}, {	-- Exalted --
-						},
-					}))),--]]
 					n(VENDORS, {
 						n(266188, {	-- Estelia Archtender <Aqir Researcher>
 							coord = { 39.3, 80.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 							groups = bubbleDownRep(FACTION_AQIR_RESEARCH_ENCLAVE, {
 								{		-- Neutral --
 								}, {	-- Friendly --
-									i(274927, { cost = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Wingreaver (PET!)
-									i(275873, { cost = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Dormant Brood Egg (DECOR!)
-									i(275869, { cost = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Nourished Brood Eggs (DECOR!)
+									i(274927, {	-- Aqir Wingreaver (PET!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 1500 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 1000 }
+											-- #endif
+										},
+									}),
+									i(275873, {	-- Dormant Brood Egg (DECOR!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 350 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 250 }
+											-- #endif
+										},
+									}),
+									i(275869, {	-- Nourished Brood Eggs (DECOR!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 350 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 250 }
+											-- #endif
+										},
+									}),
 								}, {	-- Honored --
-									i(274923, { cost = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Scuttler (PET!)
-									i(275879, { cost = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Dormant Brood Egg Cluster (DECOR!)
-									i(275867, { cost = { { "c", VOIDLIGHT_MARL, 250 } } }),	-- Nourished Brood Egg Cluster (DECOR!)
+									i(274923, {	-- Aqir Scuttler (PET!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 1550 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 1000 }
+											-- #endif
+										},
+									}),
+									i(275879, {	-- Dormant Brood Egg Cluster (DECOR!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 350 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 250 }
+											-- #endif
+										},
+									}),
+									i(275867, {	-- Nourished Brood Egg Cluster (DECOR!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 350 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 250 }
+											-- #endif
+										},
+									}),
 								}, {	-- Revered --
-									i(276927, { cost = { { "c", VOIDLIGHT_MARL, 2000 } } }),	-- Aqir Razorwing (PET!)
+									i(276927, {	-- Aqir Razorwing (PET!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 3000 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 2000 }
+											-- #endif
+										},
+									}),
 									i(275871, { cost = { { "c", VOIDLIGHT_MARL, 500 } } }),	-- Dormant Clutch of Brood Eggs (DECOR!)
 									i(275865, { cost = { { "c", VOIDLIGHT_MARL, 500 } } }),	-- Nourished Clutch of Brood Eggs (DECOR!)
 								}, {	-- Exalted --
-									i(280050, { cost = { { "c", VOIDLIGHT_MARL, 1000 } } }),	-- Aqir Hunter's Trophy (DECOR!)
-									i(276926, { cost = { { "c", VOIDLIGHT_MARL, 2500 } } }),	-- Corrupted Swarmer (MOUNT!)
-									i(275039, { cost = { { "c", VOIDLIGHT_MARL, 2500 } } }),	-- Curse of the Aqir (TOY!)
+									i(280050, {	-- Aqir Hunter's Trophy (DECOR!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 1500 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 1000 }
+											-- #endif
+										},
+									}),
+									i(276926, {	-- Corrupted Swarmer (MOUNT!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 3500 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 2500 }
+											-- #endif
+										},
+									}),
+									i(275039, {	-- Curse of the Aqir (TOY!)
+										cost = {
+											-- #if AFTER 12.1.7
+											{ "c", VOIDLIGHT_MARL, 3500 }
+											-- #else
+											{ "c", VOIDLIGHT_MARL, 2500 }
+											-- #endif
+										},
+									}),
 								},
 							}),
 						}),
