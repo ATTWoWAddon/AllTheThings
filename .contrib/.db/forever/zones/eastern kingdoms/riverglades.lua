@@ -834,7 +834,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96063, {	-- Gaseous Gold
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.2, 48.7.
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/8 Marsh Gas Vial
@@ -886,7 +886,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95988, {	-- Goes Down Smooth
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.8, 54.0, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1393,11 +1393,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 38,
 			}),
 			q(95288, {	-- Smuggler's Paradise
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- Giver: Contributor Report accepted it at 77.1, 52.8, where Friz Frazzlespark stands.
 				sourceQuests = {
 					93976,	-- The Goblin Trader
 					94928,	-- A Few Furs for Friz
 				},
+				qg = 255897,	-- Friz Frazzlespark <Specialty Goods>
+				coord = { 77.0, 52.8, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/8 Smuggled Goods
@@ -1803,7 +1805,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95120, {	-- WANTED: Old Rot-Chum
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.5, 53.9, the same spot as WANTED: Trapclaw (95254), which starts from the WANTED! poster (628948).
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Rot-Covered Harpoon

@@ -6805,8 +6805,8 @@ n(4083,{coords={
 r(7257,{b=1,isLimited=1,itemID=6055,learnedAt=210,requireSkill=171,skillID=2937})}}),
 n(12043,{coords={
 [1442]={{45.4,59.4}}},r=1,g={
-r(13536,{isLimited=1,itemID=11101,learnedAt=165,requireSkill=333,skillID=2940}),
-r(13419,{b=1,isLimited=1,itemID=11039,learnedAt=135,requireSkill=333,skillID=2940})}}),
+r(13536,{itemID=11101,learnedAt=165,requireSkill=333,skillID=2940}),
+r(13419,{b=1,itemID=11039,learnedAt=135,requireSkill=333,skillID=2940})}}),
 n(4085,{coords={
 [1442]={{62.6,40.2}}},g={
 s(157931,4827,{f=4,loc=45,lvl=23}),
@@ -17488,7 +17488,8 @@ qo(2,{providers={{"n",257926}}})}}),
 q(95602,{lvl=36,r=1,g={
 qo(1,{providers={{"n",272603}}})}}),
 q(95294,{lvl=38}),
-q(95288,{lvl=38,sourceQuests={93976,94928},g={
+q(95288,{coords={
+[2548]={{77,52.8}}},lvl=38,qgs={255897},sourceQuests={93976,94928},g={
 qo(1,{crs={257901,257910},providers={{"i",268796}}})}}),
 q(95293,{lvl=38,qis={268824},sourceQuests={95288}}),
 q(94533,{lvl=36,r=1,g={
