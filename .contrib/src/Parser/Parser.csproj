@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x64</Platforms>
+    <Platforms>x64;ARM64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>x64</PlatformTarget>
     <TargetFramework>net48</TargetFramework>
@@ -20,6 +20,20 @@
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
     <DebugType>none</DebugType>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>..\..\.builds\Parser\ARM64\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http" />
     <PackageReference Include="Csv" Version="[2.0.245]" />
@@ -27,6 +41,6 @@
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
   <Target Name="ValidateParserPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64'" Text="Parser supports only the x64 platform in this revision." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'ARM64'" Text="Parser supports x64 and ARM64 platforms." />
   </Target>
 </Project>
