@@ -1098,16 +1098,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
-			q(94895, {	-- Lost Shipping Crate
+			q(94841, {	-- Lost Shipping Crate [A] [Desolace]
+				provider = { "o", 656789 },	-- Lost Shipping Crate
+				qi = 276067,	-- Lost Shipping Crate (PQI!)
+				coord = { 64.6, 10.3, MAP.DESOLACE },
+				races = ALLIANCE_ONLY,
+				lvl = 36,
+			}),
+			q(93443, {	-- Lost Shipping Crate [A] [Stranglethorn Vale]
+				provider = { "o", 658116 },	-- Lost Shipping Crate
+				qi = 276067,	-- Lost Shipping Crate (PQI!)
+				coord = { 38.0, 3.0, MAP.STRANGLETHORN_VALE },
+				races = ALLIANCE_ONLY,
+				lvl = 36,
+			}),
+			q(94895, {	-- Lost Shipping Crate [H] [Desolace]
 				provider = { "o", 658115 },	-- Lost Shipping Crate
+				qi = 276067,	-- Lost Shipping Crate (PQI!)
 				coord = { 23.4, 72.6, MAP.DESOLACE },
 				races = HORDE_ONLY,
 				lvl = 36,
-				groups = {
-					objective(1, {	-- 0/1 Lost Shipping Crate
-						provider = { "i", 276067 },	-- Lost Shipping Crate
-					}),
-				},
+			}),
+			q(94930, {	-- Lost Shipping Crate [H] [Thousand Needles]
+				provider = { "o", 658117 },	-- Lost Shipping Crate
+				qi = 276067,	-- Lost Shipping Crate (PQI!)
+				coord = { 45.0, 49.2, MAP.THOUSAND_NEEDLES },
+				races = HORDE_ONLY,
+				lvl = 36,
 			}),
 			q(95330, {	-- Love Thy Neighbor
 				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 64.7, 82.9.
