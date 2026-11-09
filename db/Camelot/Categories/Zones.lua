@@ -5435,7 +5435,7 @@ h(-31,{
 faction(2787,{awp=16001})}),
 h(-45,{
 q(96294,{awp=16001,coords={
-[1412]={{33.4,22.4}}},lvl=23,providers={{"i",273658}},qgs={259118},races={2,5,8,96},g={
+[1412]={{33.4,22.4}}},lvl=23,qgs={259118},qss={273658},races={2,5,8,96},g={
 qo(1,{providers={{"i",273659}}})}}),
 q(99197,{lvl=26,r=1,u=1}),
 q(99196,{awp=16001,coords={
@@ -6690,7 +6690,8 @@ qo(1,{coords={
 [1440]={{62,51.2}}},crs={4273},providers={{"i",5686}}})}}),
 q(97538,{awp=16001,coords={
 [1456]={{54.14,47.05}}},lvl=20,qgs={3024},r=1,g={
-qo(1,{providers={{"i",278201}}})}}),
+qo(1,{coords={
+[1442]={{47.3,39.8}}},providers={{"i",278201},{"o",667362}}})}}),
 q(6523,{coords={
 [1442]={{73.51,85.68}}},lvl=12,qgs={11856},r=1}),
 q(1081,{coords={
@@ -7899,7 +7900,7 @@ s(158145,5346,{b=1,f=32}),
 s(158143,5344,{b=1,f=21}),
 s(158144,5345,{b=1,f=24})}}),
 q(819,{coords={
-[1413]={{37.9,16.1},{41.8,38.7},{43.8,12.2},{45,62.2},{54.7,37.2},{55.7,27.3},{55.8,20},{56.5,43.6},{57.1,9}}},lvl=11,providers={{"o",3238}},qis={4926},r=1}),
+[1413]={{37.9,16.1},{41.8,38.7},{43.8,12.2},{45,62.2},{54.7,37.2},{55.7,27.3},{55.8,20},{56.5,43.6},{57.1,9}}},lvl=11,providers={{"o",3238}},qss={4926},r=1}),
 q(821,{coords={
 [1413]={{62.27,38.39}}},lvl=11,qgs={3292},r=1,sourceQuests={819},g={
 qo(1,{crs={3241,3243,3415,3416,3425},providers={{"i",4893}}}),
@@ -12400,7 +12401,7 @@ q(521,{coords={
 i(4430,{b=1,f=51})}}),
 q(551,{coords={
 [1416]={{39.2,14.8}}},lvl=30,maps={1424},providers={{"o",1765}},qss={3706},r=2}),
-q(6681,{c={4},description="Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",lvl=24,qis={17126},qss={17125}}),
+q(6681,{c={4},description="Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",lvl=24,qis={17125},qss={17126}}),
 q(1713,{c={1},coords={
 [1416]={{80.4,66.8}}},lvl=30,qgs={6176},sourceQuests={1712},g={
 qo(1,{coords={
@@ -12637,7 +12638,8 @@ qo(1,{coords={
 [1417]={{29,64}}},crs={2783},providers={{"i",4510}}}),
 s(157800,4543,{b=1,f=5,loc=40}),
 s(157801,4545,{b=1,f=4,loc=43})}}),
-q(92867,{lvl=32,u=1,g={
+q(92867,{awp=16001,c={4},coords={
+[1417]={{27,57.2}}},description="Groundskeeper Lomar only talks to you while you wear the Syndicate Uniform from the rogue quest The Syndicate Sting.",lvl=32,qgs={219},g={
 qo(1,{coords={
 [1417]={{17.8,68.2}}},providers={{"n",2569}}}),
 qo(2,{coords={
@@ -12787,7 +12789,8 @@ s(158003,4977,{b=1,f=25}),
 s(304922,270079,{awp=16001,b=1,f=4,loc=42})}}),
 q(96786,{awp=16001,c={4},coords={
 [1417]={{26.8,64.4}}},lvl=24,maps={1416},qgs={266847},g={
-qo(1,{providers={{"i",275882}}}),
+qo(1,{coords={
+[1417]={{15.5,43}}},description="Take it from the box guarded by two Syndicate members at the southern end of Thoradin's Wall.",providers={{"i",275882}}}),
 qo(2,{providers={{"i",275706}}})}}),
 q(96016,{awp=16001,c={7},coords={
 [1417]={{59.8,27.4}}},lvl=30,maps={1416},qgs={259023},qis={212792},races={3},sourceQuests={96135},g={
@@ -22001,6 +22004,7 @@ s(316354,285238,{b=1,f=28,lvl=3}),
 s(316355,285239,{b=1,f=25,lvl=3})}}),
 n(259394,{coords={
 [2521]={{34.2,60},{35,57.8},{35.8,56.2}}},g={
+s(316370,285268,{f=5,loc=47,lvl=5}),
 s(316369,285264,{f=4,loc=47,lvl=5}),
 s(316371,285269,{f=6,loc=47,lvl=5})}}),
 n(259385,{coords={

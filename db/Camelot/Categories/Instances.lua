@@ -500,7 +500,7 @@ qo(4,{coords={
 i(18707,{b=1,cost={{"i",18724,1}},lvl=60,spellID=23192,g={
 s(163648,18713,{b=1,c={3},f=32,lvl=60})}}),
 s(163649,18715,{b=1,c={3},description="Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",f=28,lvl=60,sourceQuests={7634,7635,7636}})}}),
-q(7508,{c={1,2},lvl=60,maps={234},qgs={14368},qis={18513},sourceQuests={7507}}),
+q(7508,{c={1,2},lvl=60,maps={234},qgs={14368},qss={18513},sourceQuests={7507}}),
 q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},sourceQuests={7508},g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}}}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},spellID=22906}),
@@ -1066,7 +1066,7 @@ q(4983,{lvl=55,maps={1418},qgs={10257},qis={12652},r=1,sourceQuests={4982},g={
 s(162621,15858,{f=4,loc=44}),
 s(162622,15859,{f=6,loc=45})}}),
 q(7761,{coords={
-[1428]={{34.9,27.9}}},lvl=55,maps={33},providers={{"o",179880}},qgs={9046},qis={18987}}),
+[1428]={{34.9,27.9}}},lvl=55,maps={33},providers={{"o",179880}},qgs={9046},qss={18987}}),
 q(6602,{coords={
 [1443]={{40.8,78.6},{42.4,96.8},{49.6,56.4},{50.6,75.2},{52,39.4},{54,3.2},{55.6,66.6},{59.8,37.6},{62.8,22.6}}},lvl=55,qgs={10182},r=1,sourceQuests={6601},g={
 qo(1,{providers={{"i",16663}}}),
@@ -1249,7 +1249,7 @@ i(15867,{f=53,spellID=19638})}}),
 q(4769,{coords={
 [1458]={{49.8,68.2}}},isBreadcrumb=1,lvl=57,nextQuests={4768},qgs={5204},r=1}),
 q(4903,{coords={
-[1418]={{5.8,47.6}}},description="Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",lvl=55,qgs={9077},qis={12563},r=1,g={
+[1418]={{5.8,47.6}}},description="Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",lvl=55,qgs={9077},qss={12563},r=1,g={
 qo(1,{providers={{"n",9568}}}),
 qo(2,{providers={{"n",9196}}}),
 qo(3,{providers={{"n",9237}}}),
@@ -1623,7 +1623,7 @@ q(7492,{coords={
 [1454]={{46.6,64.6}},
 [1456]={{41.4,54.2}},
 [1458]={{69.2,49.2}}},isBreadcrumb=1,lvl=54,maps={1444},nextQuests={7489},qgs={10879,10880,10881},r=1}),
-q(7499,{c={1},lvl=54,maps={236,237,238},providers={{"n",14383}},qss={18357},g={
+q(7499,{c={1},lvl=54,maps={236,237,238},qgs={14383},qss={18357},g={
 i(18466,{f=53})}}),
 q(7631,{c={9},coords={
 [1428]={{12.6,31.6}}},lvl=60,maps={236,237,238},qgs={14436},qis={18818},sourceQuests={7629},g={
@@ -1640,13 +1640,13 @@ q(7494,{coords={
 [1457]={{39,63.6}}},isBreadcrumb=1,lvl=54,maps={1444},nextQuests={7488},qgs={2198,10877,10878},r=2}),
 q(5525,{cost={{"i",18250,1}},description="Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",lvl=54,maps={235},qgs={14338}}),
 q(7429,{cost={{"i",18250,1}},description="Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",lvl=54,maps={235},maxReputation={169,42000},qgs={14338},repeatable=1,sourceQuests={5525}}),
-q(7505,{c={7},lvl=54,maps={236,237,238},providers={{"n",14381}},qss={18363},g={
+q(7505,{c={7},lvl=54,maps={236,237,238},qgs={14381},qss={18363},g={
 i(18471,{f=53,spellID=1318476})}}),
-q(7498,{c={4},lvl=54,maps={236,237,238},providers={{"n",14383}},qss={18356},g={
+q(7498,{c={4},lvl=54,maps={236,237,238},qgs={14383},qss={18356},g={
 i(18465,{f=53})}}),
-q(7502,{c={9},lvl=54,maps={236,237,238},providers={{"n",14382}},qss={18360},g={
+q(7502,{c={9},lvl=54,maps={236,237,238},qgs={14382},qss={18360},g={
 i(18467,{f=53,spellID=1318479})}}),
-q(7504,{c={5},lvl=54,maps={236,237,238},providers={{"n",14381}},qss={18362},g={
+q(7504,{c={5},lvl=54,maps={236,237,238},qgs={14381},qss={18362},g={
 i(18469,{f=53,spellID=1318480})}}),
 q(7488,{coords={
 [1444]={{30.4,46.2}}},lvl=54,maps={239},qgs={7877},r=2,sourceQuests={7494},g={
@@ -1672,9 +1672,9 @@ q(5526,{coords={
 qo(1,{cost={{"i",18501,1},{"i",18539,1}},providers={{"i",18540}}}),
 s(163602,18535,{f=8}),
 s(163603,18536,{f=1})}}),
-q(7500,{c={8},lvl=54,maps={236,237,238},providers={{"n",14383}},qss={18358},g={
+q(7500,{c={8},lvl=54,maps={236,237,238},qgs={14383},qss={18358},g={
 i(18468,{f=53})}}),
-q(7506,{c={11},lvl=54,maps={236,237,238},providers={{"n",14381}},qss={18364},g={
+q(7506,{c={11},lvl=54,maps={236,237,238},qgs={14381},qss={18364},g={
 i(18470,{f=53,spellID=1318478})}}),
 q(5518,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,maps={235},qgs={14338},g={
 i(18258,{description="Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",lvl=55,spellID=22736})}}),
@@ -1683,9 +1683,9 @@ i(18258,{lvl=55,spellID=22736})}}),
 q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=56,maps={235},qgs={14322},g={
 i(18269,{b=1,f=55,spellID=22789}),
 i(18284,{b=1,f=55,spellID=22790})}}),
-q(7503,{c={3},lvl=54,maps={236,237,238},providers={{"n",14382}},qss={18361},g={
+q(7503,{c={3},lvl=54,maps={236,237,238},qgs={14382},qss={18361},g={
 i(18473,{f=53})}}),
-q(7501,{c={2},lvl=54,maps={236,237,238},providers={{"n",14382}},qss={18359},g={
+q(7501,{c={2},lvl=54,maps={236,237,238},qgs={14382},qss={18359},g={
 i(18472,{f=53,spellID=1318477})}}),
 q(7461,{lvl=56,maps={236,237,238},qgs={14358},g={
 qo(1,{providers={{"n",11496}}}),
@@ -3769,7 +3769,7 @@ s(164257,20255,{f=5,loc=47,spellID=17746})}}),
 q(3373,{description="Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",lvl=48,providers={{"o",148512}},qss={10454},g={
 i(10455,{f=53,spellID=12766})}}),
 q(3374,{coords={
-[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and _.WOWAPI.GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,providers={{"i",10589}},qgs={5353},sourceQuests={3373}}),
+[1435]={{13.7,71.7}}},cost={{"i",10455,1}},description="You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",lvl=48,OnUpdate=function(t)if not t.collected and _.IsQuestFlaggedCompleted(3373)and _.WOWAPI.GetItemCount(10455,true)<1 then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	t.description="|cffaa0000You have completed the previous quest, but deleted the item needed to complete this quest. As such, you'll be unable to complete the quest chain. Sorry!|r" end	end,qgs={5353},qss={10589},sourceQuests={3373}}),
 q(3528,{coords={
 [1446]={{66.8,22.4}}},lvl=40,qgs={8579},sourceQuests={4787},g={
 qo(1,{cost={{"i",10663,1},{"i",10465,1}},crs={8443},providers={{"i",10662}}}),
@@ -4124,7 +4124,7 @@ q(1491,{coords={
 [1413]={{62.4,37.6}}},lvl=13,qgs={3446},sourceQuests={865},g={
 qo(1,{crs={3638,3640,5763},providers={{"i",6464}}})}}),
 q(6981,{coords={
-[1413]={{63,37.2}}},providers={{"i",10441}},qgs={3442}})}}),
+[1413]={{63,37.2}}},qgs={3442},qss={10441}})}}),
 h(-56,{
 o(409692,{awp=16001,coords={
 [1413]={{52.83,54.7}}},g={
