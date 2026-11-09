@@ -85,27 +85,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									i(274927, {	-- Aqir Wingreaver (PET!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 1500 }
+											{ "c", VOIDLIGHT_MARL, 1500 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 1000 }
+											{ "c", VOIDLIGHT_MARL, 1000 },
 											-- #endif
 										},
 									}),
 									i(275873, {	-- Dormant Brood Egg (DECOR!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 350 }
+											{ "c", VOIDLIGHT_MARL, 350 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 250 }
+											{ "c", VOIDLIGHT_MARL, 250 },
 											-- #endif
 										},
 									}),
 									i(275869, {	-- Nourished Brood Eggs (DECOR!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 350 }
+											{ "c", VOIDLIGHT_MARL, 350 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 250 }
+											{ "c", VOIDLIGHT_MARL, 250 },
 											-- #endif
 										},
 									}),
@@ -113,27 +113,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									i(274923, {	-- Aqir Scuttler (PET!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 1550 }
+											{ "c", VOIDLIGHT_MARL, 1550 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 1000 }
+											{ "c", VOIDLIGHT_MARL, 1000 },
 											-- #endif
 										},
 									}),
 									i(275879, {	-- Dormant Brood Egg Cluster (DECOR!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 350 }
+											{ "c", VOIDLIGHT_MARL, 350 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 250 }
+											{ "c", VOIDLIGHT_MARL, 250 },
 											-- #endif
 										},
 									}),
 									i(275867, {	-- Nourished Brood Egg Cluster (DECOR!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 350 }
+											{ "c", VOIDLIGHT_MARL, 350 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 250 }
+											{ "c", VOIDLIGHT_MARL, 250 },
 											-- #endif
 										},
 									}),
@@ -141,9 +141,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									i(276927, {	-- Aqir Razorwing (PET!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 3000 }
+											{ "c", VOIDLIGHT_MARL, 3000 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 2000 }
+											{ "c", VOIDLIGHT_MARL, 2000 },
 											-- #endif
 										},
 									}),
@@ -153,27 +153,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									i(280050, {	-- Aqir Hunter's Trophy (DECOR!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 1500 }
+											{ "c", VOIDLIGHT_MARL, 1500 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 1000 }
+											{ "c", VOIDLIGHT_MARL, 1000 },
 											-- #endif
 										},
 									}),
 									i(276926, {	-- Corrupted Swarmer (MOUNT!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 3500 }
+											{ "c", VOIDLIGHT_MARL, 3500 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 2500 }
+											{ "c", VOIDLIGHT_MARL, 2500 },
 											-- #endif
 										},
 									}),
 									i(275039, {	-- Curse of the Aqir (TOY!)
 										cost = {
 											-- #if AFTER 12.1.7
-											{ "c", VOIDLIGHT_MARL, 3500 }
+											{ "c", VOIDLIGHT_MARL, 3500 },
 											-- #else
-											{ "c", VOIDLIGHT_MARL, 2500 }
+											{ "c", VOIDLIGHT_MARL, 2500 },
 											-- #endif
 										},
 									}),
