@@ -1,6 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Net;
 using System.Text;
+using System.Runtime.InteropServices;
+
+#if ATT_ANYCPU
+Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+{
+    Console.Error.WriteLine(
+        "IconID Converter requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+    return -1;
+}
+#endif
 
 var textureNamesToFileIDs = new Dictionary<string, string>();
 foreach (var line in LoadFromDatabase())
@@ -64,6 +75,10 @@ Console.WriteLine("DONE!");
 Console.ReadLine();
 
 string[] textureStarts = ["interface/", "interface\\", "world/", "world\\"];
+
+#if ATT_ANYCPU
+return 0;
+#endif
 int FindTextureStart(string contents, int startIndex)
 {
     int minIndex = -1;
