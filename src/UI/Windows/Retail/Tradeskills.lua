@@ -617,6 +617,12 @@ app:CreateWindow("Tradeskills", {
 						app.TradeskillTab:SetChecked(false)
 						app.TradeskillTab.Icon:SetTexture("Interface\\Addons\\AllTheThings\\assets\\logo_32x32")
 						app.TradeskillTab.Icon:SetSize(24, 24)
+
+						-- Restore the sidebar to the default Professions frame position
+						ProfessionsFrameTabSideBar:ClearAllPoints()
+						ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
+						ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")
+
 						self:Hide()
 					end
 
