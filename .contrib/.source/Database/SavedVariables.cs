@@ -85,6 +85,9 @@ namespace ATT
         /// <returns>The data in a more readable format.</returns>
         private static Dictionary<object, object> ParseFile(string filename)
         {
+#if ATT_ANYCPU
+            NativeLua.EnsureSupportedArchitecture();
+#endif
             // Read the First Line of the File to see if we've already worked on this file. (if so, we don't need to sync)
             foreach (var line in File.ReadLines(filename))
             {
@@ -101,6 +104,9 @@ namespace ATT
             Dictionary<object, object> data = null;
             try
             {
+#if ATT_ANYCPU
+                NativeLua.Preload();
+#endif
                 Lua lua = new Lua();
                 lua.DoFile(filename);
                 data = GlobalLuaTableToJSON(lua.GetTable("_G"));
@@ -253,6 +259,9 @@ namespace ATT
         /// <returns>The less raw data.</returns>
         public static Dictionary<object, object> Parse(DirectoryInfo root)
         {
+#if ATT_ANYCPU
+            NativeLua.EnsureSupportedArchitecture();
+#endif
             // Look for the SavedVariables folder.
             var savedVariablesFolder = root.GetDirectories("SavedVariables", SearchOption.TopDirectoryOnly).FirstOrDefault();
             if (savedVariablesFolder != null && savedVariablesFolder.Exists)
