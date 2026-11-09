@@ -793,7 +793,7 @@ ID,ZoneName,AreaName_lang,ContinentID,ParentAreaID,AreaBit,SoundProviderPref,Sou
 1978,MistyReedPost,"Misty Reed Post",0,8,792,0,0,0,2172,0,0,41,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1997,BloodvenomPost,"Bloodvenom Post ",1,361,793,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
 1998,TalonbranchGlade,"Talonbranch Glade ",1,361,794,0,0,0,2172,0,0,53,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
-2017,Stratholme,Stratholme,329,0,795,0,0,37,2172,0,0,0,0,0,0,1,1,-1,0,0,0,5251,0,0,0,0,0,0
+2017,Stratholme,Stratholme,329,0,795,0,0,37,2172,0,0,0,0,0,0,1,0,-1,0,0,0,5251,0,0,0,0,0,0
 2037,UNUSEDShadowfangKeep003,"UNUSEDShadowfang Keep 003",0,0,796,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,64,0,0,0,0,0
 2057,Scholomance,Scholomance,289,0,797,0,0,37,2172,15,0,0,0,0,0,0,1,-1,0,0,0,5248,0,0,0,0,0,0
 2077,TwilightVale,"Twilight Vale",1,148,798,0,0,0,2172,0,0,0,0,0,0,0,1,-1,0,0,0,0,1073741888,0,0,0,0,0
