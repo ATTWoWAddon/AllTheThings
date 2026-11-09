@@ -25,8 +25,19 @@ namespace ATT
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static int Main()
         {
+#if ATT_ANYCPU
+            try
+            {
+                NativeLua.EnsureSupportedArchitecture();
+            }
+            catch (PlatformNotSupportedException error)
+            {
+                MessageBox.Show(error.Message, "ATT Sync Tool", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return -1;
+            }
+#endif
             using (Mutex mutex = new Mutex(true, "ATT Sync Tool", out bool createdNew))
             {
                 if (createdNew)
@@ -49,6 +60,7 @@ namespace ATT
                     }
                 }
             }
+            return 0;
         }
     }
 }
