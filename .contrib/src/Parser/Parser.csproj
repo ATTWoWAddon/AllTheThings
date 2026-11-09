@@ -14,6 +14,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
     <DebugType>full</DebugType>
+    <OutputPath>..\..\.builds\Parser\x64\Debug\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
