@@ -165,10 +165,16 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				groups = {
 					objective(1, {	-- 0/15 Glittering Sunstone
 						provider = { "i", 277936 },	-- Glittering Sunstone
+						coord = { 33.0, 59.8, MAP.STONETALON_MOUNTAINS },
 						crs = {
-							4022,	-- Bloodfury Harpy
-							4023,	-- Bloodfury Roguefeather
-							4024,	-- Bloodfury Slayer
+							 4025,	-- Bloodfury Ambusher
+							 4022,	-- Bloodfury Harpy
+							12579,	-- Bloodfury Ripper
+							 4023,	-- Bloodfury Roguefeather
+							 4024,	-- Bloodfury Slayer
+							 4027,	-- Bloodfury Storm Witch
+							 4026,	-- Bloodfury Windcaller
+							 5930,	-- Sister Riven
 						},
 					}),
 					i(281252),	-- Harpy Claw Ring
