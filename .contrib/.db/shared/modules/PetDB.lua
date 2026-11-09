@@ -1168,6 +1168,7 @@ i(280795, 5155);	-- Red Ground Squirrel
 i(277714, 5122);	-- Spectral Bear Cub
 i(284176, 5172);	-- Tallstrider Hatchling
 i(280699, 5152);	-- Undercity Cockroach
+i(280456, 5136);	-- Weevil K. Neevil
 i(281167, 5160);	-- Zergling
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
 i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]
