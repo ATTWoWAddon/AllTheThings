@@ -358,8 +358,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(92867, {	-- Ground to Keep
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Groundskeeper Lomar (219) in Stromgarde Keep.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 219,	-- Groundskeeper Lomar
+				coord = { 27.0, 57.2, MAP.ARATHI_HIGHLANDS },
+				description = "Groundskeeper Lomar only talks to you while you wear the Syndicate Uniform from the rogue quest The Syndicate Sting.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
 				lvl = 32,
 				groups = {
 					objective(1, {	-- 0/5 Boulderfist Mauler slain
@@ -938,6 +941,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Intercepted Shipment
 						provider = { "i", 275882 },	-- Intercepted Shipment
+						coord = { 15.5, 43.0, MAP.ARATHI_HIGHLANDS },
+						description = "Take it from the box guarded by two Syndicate members at the southern end of Thoradin's Wall.",
+						-- TODO: object ID of the box.
 					}),
 					objective(2, {	-- 0/1 Syndicate Uniform
 						provider = { "i", 275706 },	-- Syndicate Uniform
