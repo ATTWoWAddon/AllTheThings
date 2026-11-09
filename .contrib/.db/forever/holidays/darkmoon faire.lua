@@ -7,9 +7,6 @@ local TIER_TWO_MAX_REPUTATION = { 909, NEUTRAL + 1050 };	-- Darkmoon Faire, must
 local TIER_THREE_MAX_REPUTATION = { 909, NEUTRAL + 1700 };	-- Darkmoon Faire, must be less than 1700 over Neutral
 local TIER_FOUR_MAX_REPUTATION = { 909, NEUTRAL + 2500 };	-- Darkmoon Faire, must be less than 2500 over Neutral
 local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2001 };	-- Darkmoon Faire, must be less than 2001 over Friendly
-local TATTERED_DARKMOON_PRIZE_TICKET = i(19182, {	-- Tattered Darkmoon Faire Prize Ticket
-	pb = IGNORED_VALUE,
-});
 
 -- This is what every online guide ever says, but they're incorrect.
 -- The "More" quests appear to be infinitely repeatable, with 0 reputation gains.
@@ -63,135 +60,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		n(QUESTS, {
-			q(7930, {	-- 5 Tickets - Darkmoon Flower
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 5 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				lvl = 6,
-				groups = {
-					i(19295),	-- Darkmoon Flower
-				},
-			}),
-			q(7931, {	-- 5 Tickets - Minor Darkmoon Prize
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 5 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				lvl = 15,
-				groups = {
-					i(19298, {	-- Minor Darkmoon Prize
-						description = "Contains a level 15-25 (usually uncommon quality) item.",
-					}),
-				},
-			}),
-			q(7935, {	-- 10 Tickets - Last Month's Mutton
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 10 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19292),	-- Last Month's Mutton
-				},
-			}),
-			q(7932, {	-- 12 Tickets - Lesser Darkmoon Prize
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 12 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19297, {	-- Lesser Darkmoon Prize
-						description = "Contains a level 25-40 (usually uncommon quality) item.",
-					}),
-				},
-			}),
-			q(7933, {	-- 40 Tickets - Greater Darkmoon Prize
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19296, {	-- Greater Darkmoon Prize
-						description = "Contains a level 40-55 (usually uncommon quality) item.",
-					}),
-				},
-			}),
-			q(9249, {	-- 40 Tickets - Schematic: Steam Tonk Controller
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				timeline = { CREATED_1_10_0, ADDED_2_0_3 },	-- This was not in WoW Classic.
-				cost = { { "i", 19182, 40 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(22729),	-- Schematic: Steam Tonk Controller (RECIPE!)
-				},
-			}),
-			q(7934, {	-- 50 Tickets - Darkmoon Storage Box
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 50 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19291),	-- Darkmoon Storage Box
-				},
-			}),
-			q(7936, {	-- 50 Tickets - Last Year's Mutton
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 50 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19293),	-- Last Year's Mutton
-				},
-			}),
-			q(7981, {	-- 1200 Tickets - Amulet of the Darkmoon
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19491),	-- Amulet of the Darkmoon
-				},
-			}),
-			q(7940, {	-- 1200 Tickets - Orb of the Darkmoon
-				qg = 14828,	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-				coords = {
-					{ 37.3, 37.7, MAP.MULGORE },
-					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
-				},
-				cost = { { "i", 19182, 1200 } },	-- Tattered Darkmoon Faire Prize Ticket
-				repeatable = true,
-				groups = {
-					i(19426),	-- Orb of the Darkmoon
-				},
-			}),
 			q(7885, {	-- Armor Kits [Tier 5]
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coords = {
@@ -203,7 +71,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7892, {	-- Big Black Mace [Tier 4]
@@ -217,7 +85,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 30,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7881, {	-- Carnival Boots [Tier 1]
@@ -230,7 +98,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7882, {	-- Carnival Jerkins [Tier 2]
@@ -244,7 +112,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 10,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7889, {	-- Coarse Weightstone [Tier 1]
@@ -257,7 +125,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7894, {	-- Copper Modulator [Tier 1]
@@ -270,7 +138,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 4363, 5 } },	-- Copper Modulator
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7884, {	-- Crocolisk Boy and the Bearded Murloc [Tier 4]
@@ -284,7 +152,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 30,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7903, {	-- Evil Bat Eyes [Tier 5]
@@ -298,7 +166,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(8222, {	-- Glowing Scorpid Blood [Tier 5]
@@ -312,7 +180,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7896, {	-- Green Fireworks [Tier 3]
@@ -326,7 +194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 20,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7891, {	-- Green Iron Bracers [Tier 3]
@@ -340,7 +208,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 20,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7890, {	-- Heavy Grinding Stone [Tier 2]
@@ -354,7 +222,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 10,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7897, {	-- Mechanical Repair Kits [Tier 4]
@@ -368,7 +236,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 30,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7941, {	-- More Armor Kits [Tier 5] (Not Really)
@@ -382,7 +250,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7943, {	-- More Bat Eyes [Tier 5] (Not Really)
@@ -396,7 +264,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7939, {	-- More Dense Grinding Stones [Tier 5] (Not Really)
@@ -410,7 +278,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(8223, {	-- More Glowing Scorpid Blood [Tier 5] (Not Really)
@@ -424,7 +292,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7942, {	-- More Thorium Widgets [Tier 5] (Not Really)
@@ -438,7 +306,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7893, {	-- Rituals of Strength [Tier 5]
@@ -452,7 +320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7899, {	-- Small Furry Paws [Tier 1]
@@ -465,7 +333,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 5134, 5 } },	-- Small Furry Paw
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7901, {	-- Soft Bushy Tails [Tier 3]
@@ -479,7 +347,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 20,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7946, {	-- Spawn of Jubjub
@@ -505,7 +373,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 6,
 				races = ALLIANCE_ONLY,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7926, {	-- The Darkmoon Faire [H]
@@ -515,7 +383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 6,
 				races = HORDE_ONLY,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7883, {	-- The World's Largest Gnome! [Tier 3]
@@ -529,7 +397,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 20,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7898, {	-- Thorium Widgets [Tier 5]
@@ -543,7 +411,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 40,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7900, {	-- Torn Bear Pelts [Tier 2]
@@ -557,7 +425,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 10,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7902, {	-- Vibrant Plumes [Tier 4]
@@ -571,7 +439,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 30,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7895, {	-- Whirring Bronze Gizmo [Tier 2]
@@ -585,7 +453,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				lvl = 10,
 				repeatable = true,
 				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
+					currency(515),	-- Darkmoon Prize Ticket
 				},
 			}),
 			q(7938, {	-- Your Fortune Awaits You... [Deadmines]
@@ -685,6 +553,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(11026),	-- Tree Frog (PET!)
 					i(11027, {	-- Wood Frog (PET!)
 						isLimited = true,
+					}),
+				},
+			}),
+			n(14828, {	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+				coords = {
+					{ 37.3, 37.7, MAP.MULGORE },
+					{ 41.6, 68.8, MAP.ELWYNN_FOREST },
+				},
+				groups = {
+					i(19491, {	-- Amulet of the Darkmoon
+						cost = { { "c", 515, 1200 } },	-- 1200x Darkmoon Prize Ticket
+					}),
+					i(19295, {	-- Darkmoon Flower
+						cost = { { "c", 515, 5 } },	-- 5x Darkmoon Prize Ticket
+					}),
+					i(19291, {	-- Darkmoon Storage Box
+						cost = { { "c", 515, 50 } },	-- 50x Darkmoon Prize Ticket
+					}),
+					i(19296, {	-- Greater Darkmoon Prize
+						description = "Contains a level 40-55 (usually uncommon quality) item.",
+						cost = { { "c", 515, 40 } },	-- 40x Darkmoon Prize Ticket
+					}),
+					i(19292, {	-- Last Month's Mutton
+						cost = { { "c", 515, 10 } },	-- 10x Darkmoon Prize Ticket
+					}),
+					i(19293, {	-- Last Year's Mutton
+						cost = { { "c", 515, 50 } },	-- 50x Darkmoon Prize Ticket
+					}),
+					i(19297, {	-- Lesser Darkmoon Prize
+						description = "Contains a level 25-40 (usually uncommon quality) item.",
+						cost = { { "c", 515, 12 } },	-- 12x Darkmoon Prize Ticket
+					}),
+					i(19298, {	-- Minor Darkmoon Prize
+						description = "Contains a level 15-25 (usually uncommon quality) item.",
+						cost = { { "c", 515, 5 } },	-- 5x Darkmoon Prize Ticket
+					}),
+					i(19426, {	-- Orb of the Darkmoon
+						cost = { { "c", 515, 1200 } },	-- 1200x Darkmoon Prize Ticket
+					}),
+					i(22729, {	-- Schematic: Steam Tonk Controller (RECIPE!)
+						cost = { { "c", 515, 40 } },	-- 40x Darkmoon Prize Ticket
 					}),
 				},
 			}),

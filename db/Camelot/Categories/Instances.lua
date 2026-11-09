@@ -1995,7 +1995,9 @@ i(273030,{f=52}),
 r(1262975,{itemID=273097}),
 i(270865,{b=1}),
 i(270866,{b=1}),
-crit(116054,{achID=62031,awp=16001,id=6})}})}}),
+crit(116054,{achID=62031,awp=16001,id=6})}}),
+h(-63,{
+s(317805,286985,{crs={260800,260803},f=5,loc=43})})}}),
 inst(231,{coords={
 [1426]={{18.4,38.6}}},icon=136336,lore="Located in Dun Morogh, the technological wonder known as Gnomeregan has been the gnomes' capital city for generations. Recently, a hostile race of mutant troggs infested several regions of Dun Morogh - including the great gnome city. In a desperate attempt to destroy the invading troggs, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Several gnomes sought shelter from the airborne pollutants as they waited for the troggs to die or flee. Unfortunately, though the troggs became irradiated from the toxic assault - their siege continued, unabated. Those gnomes who were not killed by noxious seepage were forced to flee, seeking refuge in the nearby dwarven city of Ironforge. There, High Tinker Mekkatorque set out to enlist brave souls to help his people reclaim their beloved city.\n\nIt is rumored that Mekkatorque's once-trusted advisor, Mekgineer Thermaplug, betrayed his people by allowing the invasion to happen. Now, his sanity shattered, Thermaplug remains in Gnomeregan - furthering his dark schemes and acting as the city's new techno-overlord.",lvl=19,mapID=226,zoneTextAreaID=133,g={
 h(-63,{

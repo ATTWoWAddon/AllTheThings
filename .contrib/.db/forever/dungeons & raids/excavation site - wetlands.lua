@@ -202,5 +202,13 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				i(270866),	-- Titan Relic (H) (QS!)
 			},
 		}),
+		n(ZONE_DROPS, {
+			i(286985, {	-- Thicket Bindings
+				crs = {
+					260800,	-- Thicket Lurker
+					260803,	-- Highland Spider
+				},
+			}),
+		}),
 	},
 });
