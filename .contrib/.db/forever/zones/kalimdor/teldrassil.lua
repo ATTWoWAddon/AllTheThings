@@ -846,10 +846,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			q(94775, {	-- Divine Grace
 				altQuests = {
 					94773,	-- Divine Grace
-					94776,	-- Divine Grace
 					94777,	-- Divine Grace
 					94778,	-- Divine Grace
-					94779,	-- Divine Grace
 				},
 				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
 				coord = { 55.4, 56.8, MAP.TELDRASSIL },

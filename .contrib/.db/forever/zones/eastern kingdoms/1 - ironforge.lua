@@ -504,9 +504,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				altQuests = {
 					94773,	-- Divine Grace
 					94775,	-- Divine Grace
-					94776,	-- Divine Grace
 					94777,	-- Divine Grace
-					94779,	-- Divine Grace
 				},
 				qg = 11406,	-- High Priest Rohan <Priest Trainer>
 				coord = { 23.6, 7.0, MAP.IRONFORGE },

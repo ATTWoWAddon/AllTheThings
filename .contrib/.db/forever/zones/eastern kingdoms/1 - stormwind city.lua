@@ -583,10 +583,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(94773, {	-- Divine Grace
 				altQuests = {
 					94775,	-- Divine Grace
-					94776,	-- Divine Grace
 					94777,	-- Divine Grace
 					94778,	-- Divine Grace
-					94779,	-- Divine Grace
 				},
 				qg = 376,	-- High Priestess Laurena <Priest Trainer>
 				coord = { 38.8, 26.4, MAP.STORMWIND_CITY },
@@ -598,51 +596,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					recipe(1277370),	-- Divine Grace
 				},
 			}),
-			q(94776, {	-- Divine Grace
-				altQuests = {
-					94773,	-- Divine Grace
-					94775,	-- Divine Grace
-					94777,	-- Divine Grace
-					94778,	-- Divine Grace
-					94779,	-- Divine Grace
-				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-				races = { HUMAN },
-				classes = { PRIEST },
-				lvl = 10,
-				groups = {
-					recipe(1277370),	-- Divine Grace
-				},
-			}),
 			q(94777, {	-- Divine Grace
 				altQuests = {
 					94773,	-- Divine Grace
 					94775,	-- Divine Grace
-					94776,	-- Divine Grace
 					94778,	-- Divine Grace
-					94779,	-- Divine Grace
 				},
 				qg = 11397,	-- Nara Meideros <Priest Trainer>
 				coord = { 20.4, 50.4, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { HUMAN },
-				classes = { PRIEST },
-				lvl = 10,
-				groups = {
-					recipe(1277370),	-- Divine Grace
-				},
-			}),
-			q(94779, {	-- Divine Grace
-				altQuests = {
-					94773,	-- Divine Grace
-					94775,	-- Divine Grace
-					94776,	-- Divine Grace
-					94777,	-- Divine Grace
-					94778,	-- Divine Grace
-				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to High Priestess Laurena in Stormwind.
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 10,
@@ -3085,4 +3047,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 		}),
 	},
+});
+root(ROOTS.HiddenQuestTriggers, {
+	q(94776, {	-- Divine Grace
+		description = "Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		classes = { PRIEST },
+		races = { HUMAN },
+	}),
+	q(94779, {	-- Divine Grace
+		description = "Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",
+		timeline = { TIMELINE.ADDED_1_60_1 },
+		classes = { PRIEST },
+		races = { HUMAN },
+	}),
 });
