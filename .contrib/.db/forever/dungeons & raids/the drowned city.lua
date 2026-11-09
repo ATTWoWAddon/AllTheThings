@@ -41,18 +41,30 @@ instanceroot(2970, {	-- The Drowned City
 				},
 			}),
 			q(95788, {	-- Magics of the Drowned City
-				-- TODO: Wowhead doesn't list the quest giver yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 2277,	-- Loremaster Dibbs
+				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
+				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/5 I'lalai Fetish
 						provider = { "i", 270343 },	-- I'lalai Fetish
 					}),
 				},
 			}),
+			q(95789, {	-- Shady Saltseers
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.0, 77.3 in Booty Bay, where several NPCs stand.
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/10 Voodoo-Infused Artifact
+						provider = { "i", 270333 },	-- Voodoo-Infused Artifact
+					}),
+					i(279882),	-- Rusted Troll War Belt
+					i(279930),	-- Saltseer's Helm
+				},
+			}),
 			q(95787, {	-- Take Two With Water
-				-- TODO: Wowhead doesn't list the quest giver yet. Use the hide and charcoal to make rubbings of the four tablets of I'lalai.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 2277,	-- Loremaster Dibbs
+				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 The First Tablet of I'lalai
@@ -98,6 +110,20 @@ instanceroot(2970, {	-- The Drowned City
 					}),
 					i(279889),	-- Naga Priestess's Mantle
 					i(279888),	-- Tidesoaked Leggings
+				},
+			}),
+			q(95791, {	-- The Saltseer Captain
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.0, 77.3 in Booty Bay, where several NPCs stand.
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/3 Saltseer Coroner slain
+						provider = { "n", 260353 },	-- Saltseer Coroner
+					}),
+					objective(2, {	-- 0/1 Captain Dreadrise slain
+						provider = { "n", 260042 },	-- Captain Dreadrise
+					}),
+					i(279883),	-- Mutinous Cuffs
+					i(279884),	-- South Seas Shroud
 				},
 			}),
 		}),

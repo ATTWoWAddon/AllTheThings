@@ -841,7 +841,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95322, {	-- Get the Goods
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.4, 74.1 in Booty Bay (Stranglethorn Vale), where I Know a Guy (95295) was turned in.
 				sourceQuest = 95295,	-- I Know a Guy
 				lvl = 36,
 				groups = {

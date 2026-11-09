@@ -213,9 +213,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 38,
 			}),
 			q(95786, {	-- An Acquaintance in Southshore
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Loremaster Dibbs in Southshore.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 37.8, 3.5 in the Rebel Camp, where Brother Nimetz, Corporal Sethman, Corporal Kaleb and Sergeant Yohwa all stand. Turned in to Loremaster Dibbs in Southshore.
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
