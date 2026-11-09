@@ -529,8 +529,12 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				lvl = 20,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
-					objective(1, {	-- Mirkweed Pods
-						provider = { "i", 278201 },	-- Mirkweed Pods (QI!)
+					objective(1, {	-- 0/30 Mirkweed Pods
+						providers = {
+							{ "i", 278201 },	-- Mirkweed Pods (QI!)
+							{ "o", 667362 },	-- Mirkweed
+						},
+						coord = { 47.3, 39.8, MAP.STONETALON_MOUNTAINS },
 					}),
 				},
 			}),
