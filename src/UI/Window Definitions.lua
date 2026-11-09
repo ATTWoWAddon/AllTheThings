@@ -533,6 +533,12 @@ local function ForceExpandGroupsRecursively(group, expanded)
 	local g = group.g
 	-- app.PrintDebug("EGR.F",app:SearchLink(group),expanded)
 	if not g then return end
+	-- groups marked 'collapsedByDefault' stay collapsed through the first forced expansion only (e.g. a new popout)
+	if expanded and group.collapsedByDefault then
+		group.collapsedByDefault = nil
+		group.expanded = nil
+		return
+	end
 	group.expanded = expanded
 	for i=1,#g do
 		ForceExpandGroupsRecursively(g[i], expanded);

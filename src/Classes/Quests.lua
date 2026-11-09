@@ -2360,13 +2360,40 @@ end)
 
 -- popout handler for Quest Items group
 local function AddQuestItems(group)
-	local qis = group.qis
-	if not qis then return end
-
-	local g = {}
-	for i=1,#qis do
-		g[#g + 1] = app.CreateItem(qis[i], {OnSetVisibility=app.AlwaysShowUpdate})
+	local g, added = {}, {}
+	local function AddQuestItem(itemID)
+		if not itemID or added[itemID] then return end
+		added[itemID] = true
+		g[#g + 1] = app.CreateItem(itemID, {OnSetVisibility=app.AlwaysShowUpdate})
 	end
+
+	local qis = group.qis
+	if qis then
+		for i=1,#qis do
+			AddQuestItem(qis[i])
+		end
+	end
+	-- items used by a quest are often listed as providers on the quest or on its objectives
+	local function AddProviderItems(providers)
+		if not providers then return end
+		for _,provider in ipairs(providers) do
+			if provider[1] == "i" then
+				AddQuestItem(provider[2])
+			end
+		end
+	end
+	if group.questID then
+		AddProviderItems(group.providers)
+		local children = group.g
+		if children then
+			for _,child in ipairs(children) do
+				if child.objectiveID then
+					AddProviderItems(child.providers)
+				end
+			end
+		end
+	end
+	if #g == 0 then return end
 
 	-- Show Quest Items
 	local questItems = app.CreateRawText(L.QUEST_ITEMS, {
@@ -2381,6 +2408,95 @@ local function AddQuestItems(group)
 	app.NestObject(group, questItems);
 end
 app.AddEventHandler("OnNewPopoutGroup", AddQuestItems)
+
+-- popout handler for Quest Mobs group: creatures (cr/crs) and NPC providers on a quest or its objectives
+local function AddQuestMobs(group)
+	if not group.questID then return end
+
+	local g, added = {}, {}
+	local function AddQuestMob(npcID)
+		if not npcID or npcID < 1 or added[npcID] then return end
+		added[npcID] = true
+		g[#g + 1] = app.CreateNPC(npcID, {OnSetVisibility=app.AlwaysShowUpdate})
+	end
+	local function AddMobsFrom(ref)
+		local crs = ref.crs
+		if crs then
+			for i=1,#crs do
+				AddQuestMob(crs[i])
+			end
+		end
+		local providers = ref.providers
+		if providers then
+			for _,provider in ipairs(providers) do
+				if provider[1] == "n" then
+					AddQuestMob(provider[2])
+				end
+			end
+		end
+	end
+
+	AddMobsFrom(group)
+	local children = group.g
+	if children then
+		for _,child in ipairs(children) do
+			if child.objectiveID then
+				AddMobsFrom(child)
+			end
+		end
+	end
+	if #g == 0 then return end
+
+	-- Show Quest Mobs
+	local questMobs = app.CreateRawText(L.QUEST_MOBS or "Quest Mobs", {
+		icon = app.asset("Interface_Zone_drop"),
+		collapsedByDefault = true,
+		-- shown only while Quest Objectives are enabled
+		OnUpdate = function(data)
+			data.visible = app.Settings.Collectibles.QuestObjectives and true or false
+			return true
+		end,
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+		skipFull = true,
+		skipContains = true,
+		SortPriority = -2.94,
+		g = g,
+	})
+	app.NestObject(group, questMobs);
+end
+app.AddEventHandler("OnNewPopoutGroup", AddQuestMobs)
+
+-- popout handler for Objectives group: keeps a quest's objectives off the root of the popout
+-- (registered after Quest Items/Mobs, which read the objectives from the root first)
+local function GroupQuestObjectives(group)
+	if not group.questID then return end
+	local children = group.g
+	if not children then return end
+
+	local objectives, others = {}, {}
+	for _,child in ipairs(children) do
+		if child.objectiveID then
+			objectives[#objectives + 1] = child
+		else
+			others[#others + 1] = child
+		end
+	end
+	if #objectives == 0 then return end
+	group.g = others
+
+	-- Show Objectives
+	-- no AlwaysShowUpdate: the header only shows while at least one of its objectives is visible
+	local questObjectives = app.CreateRawText(L.OBJECTIVES, {
+		icon = DefaultQuestIcon,
+		OnClick = app.UI.OnClick.IgnoreRightClick,
+		skipFull = true,
+		skipContains = true,
+		SortPriority = -2.96,
+		g = objectives,
+	})
+	app.NestObject(group, questObjectives);
+end
+app.AddEventHandler("OnNewPopoutGroup", GroupQuestObjectives)
 
 
 -- Quest Nesting Behaviours
