@@ -649,7 +649,7 @@ root(ROOTS.Instances, {
 				}),
 				q(8183, {	-- The Heart of Hakkar
 					description = "Turning this quest in will cause a world buff to drop for those on the island or in Booty Bay. Announce when you're going to do this for folks looking to get WBs for raid!",
-					provider = { "i", 19802 },	-- The Heart of Hakkar
+					qs = 19802,	-- The Heart of Hakkar (QS!)
 					maps = { MAP.STRANGLETHORN_VALE },
 					lvl = 58,
 					groups = {

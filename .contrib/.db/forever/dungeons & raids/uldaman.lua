@@ -319,7 +319,7 @@ instanceroot(239, {	-- Uldaman
 				},
 			}),
 			q(2198, {	-- The Shattered Necklace
-				provider = { "i", 7666 },	-- Shattered Necklace
+				qs = 7666,	-- Shattered Necklace (QS!)
 				races = ALLIANCE_ONLY,
 				lvl = 37,
 			}),

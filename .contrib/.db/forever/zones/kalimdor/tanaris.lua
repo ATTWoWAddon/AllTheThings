@@ -236,10 +236,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(2882, {	-- Cuergo's Gold
-				providers = {
-					{ "i",   9254 },	-- Cuergo's Treasure Map
-					{ "o", 142189 },	-- Inconspicuous Landmark
-				},
+				qs = 9254,	-- Cuergo's Treasure Map (QS!)
+				provider = { "o", 142189 },	-- Inconspicuous Landmark
 				coord = { 55.4, 92.2, MAP.TANARIS },
 				cost = {
 					{ "i", 9275, 1 },	-- Cuergo's Key
@@ -706,10 +704,8 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					379,	-- Slake That Thirst
 					-- 841,	-- Another Power Source?	-- Not required in 30403
 				},
-				providers = {
-					{ "i", 8524 },	-- Model 4711-FTZ Power Source
-					{ "i", 8523 },	-- Field Testing Kit
-				},
+				qs = 8524,	-- Model 4711-FTZ Power Source (QS!)
+				qi = 8523,	-- Field Testing Kit (PQI!)
 				coord = { 52.4, 28.4, MAP.TANARIS },
 				races = HORDE_ONLY,
 				lvl = 38,

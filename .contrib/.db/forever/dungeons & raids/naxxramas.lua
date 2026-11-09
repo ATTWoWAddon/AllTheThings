@@ -117,7 +117,7 @@ root(ROOTS.Instances, {
 							}),
 							q(9250, {	-- Frame of Atiesh
 								description = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
-								provider = { "i", 22727 },	-- Frame of Atiesh
+								qs = 22727,	-- Frame of Atiesh (QS!)
 								cost = { { "i", 22726, 40 } },	-- Splinter of Atiesh
 								classes = { PRIEST, MAGE, WARLOCK, DRUID },
 								lvl = 60,
@@ -1506,7 +1506,7 @@ root(ROOTS.Instances, {
 						}),
 						q(9233, {	-- Omarion's Handbook
 							description = "You must not have a profession above 270 skill for you to get this item from Omarion.",
-							provider = { "i", 22719 },	-- Omarion's Handbook
+							qs = 22719,	-- Omarion's Handbook (QS!)
 							minReputation = { FACTION_ARGENT_DAWN, REVERED },
 							lvl = 60,
 							OnUpdate = [[_.OnUpdateDB.OMARIONS_HANDBOOK]],
@@ -1626,7 +1626,7 @@ root(ROOTS.Instances, {
 							lvl = 60,
 						}),
 						q(9120, {	-- The Fall of Kel'Thuzad
-							provider = { "i", 22520 },	-- The Phylactery of Kel'Thuzad
+							qs = 22520,	-- The Phylactery of Kel'Thuzad (QS!)
 							lvl = 60,
 							groups = {
 								i(23206),	-- Mark of the Champion

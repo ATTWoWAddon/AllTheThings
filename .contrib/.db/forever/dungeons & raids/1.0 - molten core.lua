@@ -33,7 +33,7 @@ root(ROOTS.Instances, {
 					q(7785, {	-- Examine the Vessel
 						description = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 						qg = 14347,	-- Highlord Demitrian
-						provider = { "i", 19016 },	-- Vessel of Rebirth
+						qs = 19016,	-- Vessel of Rebirth (QS!)
 						coord = { 21.7, 8.6, MAP.SILITHUS },
 						cost = {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -79,7 +79,7 @@ root(ROOTS.Instances, {
 					q(7787, {	-- Rise, Thunderfury!
 						sourceQuest = 7786,	-- Thunderaan the Windseeker
 						qg = 14347,	-- Highlord Demitrian
-						provider = { "i", 19018 },	-- Dormant Wind Kissed Blade
+						qs = 19018,	-- Dormant Wind Kissed Blade (QS!)
 						coord = { 21.7, 8.6, MAP.SILITHUS },
 						classes = SWORD_CLASSES,
 						lvl = 60,

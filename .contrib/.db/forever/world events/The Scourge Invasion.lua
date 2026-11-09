@@ -133,17 +133,13 @@ root(ROOTS.WorldEvents, {
 					},
 				}),
 				q(9304, {	-- Document from the Front
-					providers = {
-						{ "i", 22975 },	-- A Smudged Document
-						{ "i", 22948 },	-- A Smudged Document
-					},
+					qs = 22975,	-- A Smudged Document (QS!)
+					qi = 22948,	-- A Smudged Document (PQI!)
 					lvl = 45,
 				}),
 				q(9301, {	-- Envelope from the Front
-					providers = {
-						{ "i", 22970 },	-- A Bloodstained Envelope
-						{ "i", 22930 },	-- A Bloodstained Envelope
-					},
+					qs = 22970,	-- A Bloodstained Envelope (QS!)
+					qi = 22930,	-- A Bloodstained Envelope (PQI!)
 					lvl = 45,
 				}),
 				q(9310, {	-- Faint Necrotic Crystal
@@ -269,10 +265,8 @@ root(ROOTS.WorldEvents, {
 					},
 				}),
 				q(9295, {	-- Letter from the Front
-					providers = {
-						{ "i", 22977 },	-- A Torn Letter
-						{ "i", 22932 },	-- A Torn Letter
-					},
+					qs = 22977,	-- A Torn Letter (QS!)
+					qi = 22932,	-- A Torn Letter (PQI!)
 					lvl = 45,
 				}),
 				q(9154, {	-- Light's Hope Chapel
@@ -353,24 +347,18 @@ root(ROOTS.WorldEvents, {
 					},
 				},
 				q(9302, {	-- Missive from the Front
-					providers = {
-						{ "i", 22973 },	-- A Crumpled Missive
-						{ "i", 22944 },	-- A Crumpled Missive
-					},
+					qs = 22973,	-- A Crumpled Missive (QS!)
+					qi = 22944,	-- A Crumpled Missive (PQI!)
 					lvl = 45,
 				}),
 				q(9299, {	-- Note from the Front
-					providers = {
-						{ "i", 22972 },	-- A Careworn Note
-						{ "i", 22945 },	-- A Careworn Note
-					},
+					qs = 22972,	-- A Careworn Note (QS!)
+					qi = 22945,	-- A Careworn Note (PQI!)
 					lvl = 45,
 				}),
 				q(9300, {	-- Page from the Front
-					providers = {
-						{ "i", 22974 },	-- A Ragged Page
-						{ "i", 22946 },	-- A Ragged Page
-					},
+					qs = 22974,	-- A Ragged Page (QS!)
+					qi = 22946,	-- A Ragged Page (PQI!)
 					lvl = 45,
 				}),
 				q(9085, {	-- Shadows of Doom
@@ -415,10 +403,8 @@ root(ROOTS.WorldEvents, {
 				},
 				q(9247, {	-- The Keeper's Call
 					description = "You should receive this in the mail at level 60.",
-					providers = {
-						{ "n", 16281 },	-- Keeper of the Rolls <The Argent Dawn>
-						{ "i", 22723 },	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
-					},
+					qg = 16281,	-- Keeper of the Rolls <The Argent Dawn>
+					qs = 22723,	-- A Letter from the Keeper of the Rolls [You get this in the mail.] (QS!)
 					coord = { 81.1, 60.5, MAP.EASTERN_PLAGUELANDS },
 					isYearly = true,
 					lvl = 60,

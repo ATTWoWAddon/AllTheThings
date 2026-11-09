@@ -80,11 +80,9 @@ instanceroot(229, {	-- Blackrock Spire
 				},
 			}),
 			q(7761, {	-- Blackhand's Command
-				providers = {
-					{ "n",   9046 },	-- Scarshield Quartermaster <Scarshield Legion>
-					{ "i",  18987 },	-- Blackhand's Command
-					{ "o", 179880 },	-- Drakkisath's Brand
-				},
+				qg = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
+				qs = 18987,	-- Blackhand's Command (QS!)
+				provider = { "o", 179880 },	-- Drakkisath's Brand
 				coord = { 34.9, 27.9, MAP.BURNING_STEPPES },
 				maps = { MAP.BLACKROCK_MOUNTAIN },
 				lvl = 55,
@@ -354,7 +352,7 @@ instanceroot(229, {	-- Blackrock Spire
 				},
 			}),
 			q(5089, {	-- General Drakkisath's Command
-				provider = { "i", 12780 },	-- General Drakkisath's Command
+				qs = 12780,	-- General Drakkisath's Command (QS!)
 				races = ALLIANCE_ONLY,
 				lvl = 55,
 			}),
@@ -816,10 +814,8 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 			q(4903, {	-- Warlord's Command
 				description = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
-				providers = {
-					{ "n", 9077 },	-- Warlord Goretooth <Kargath Expeditionary Force>
-					{ "i", 12563 },	-- Warlord Goretooth's Command
-				},
+				qg = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
+				qs = 12563,	-- Warlord Goretooth's Command (QS!)
 				coord = { 5.8, 47.6, MAP.BADLANDS },
 				races = HORDE_ONLY,
 				lvl = 55,

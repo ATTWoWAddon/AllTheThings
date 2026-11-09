@@ -697,7 +697,7 @@ root(ROOTS.Instances, {
 					}),
 				})),
 				q(8801, {	-- C'Thun's Legacy
-					provider = { "i", 21221 },	-- Eye of C'Thun
+					qs = 21221,	-- Eye of C'Thun (QS!)
 				}),
 				q(8789, {	-- Imperial Qiraji Armaments
 					qg = 15380,	-- Arygos

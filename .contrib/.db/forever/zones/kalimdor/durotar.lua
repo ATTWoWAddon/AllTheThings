@@ -439,7 +439,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				races = HORDE_ONLY,
 			}),
 			q(97281, {	-- A Simmering Storm
-				provider = { "i", 277661 },	-- Dull Storm Orb
+				qs = 277661,	-- Dull Storm Orb (QS!)
 				coord = { 51.5, 21.6, MAP.DUROTAR },
 				crs = {
 					3118,	-- Dustwind Storm Witch
@@ -524,7 +524,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(832, {	-- Burning Shadows
-				provider = { "i", 4903 },	-- Eye of Burning Shadow
+				qs = 4903,	-- Eye of Burning Shadow (QS!)
 				coord = { 51.78, 9.56, MAP.DUROTAR },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
@@ -952,7 +952,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(96877, {	-- Halikor's Hoof
-				provider = { "i", 275723 },	-- Halikor's Hoof
+				qs = 275723,	-- Halikor's Hoof (QS!)
 				coords = {
 					{ 40.3, 30.0, MAP.DUROTAR },
 					{ 42.9, 23.2, MAP.DUROTAR },
@@ -1278,7 +1278,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(830, {	-- The Admiral's Orders (1/2)
-				provider = { "i", 4881 },	-- Aged Envelope
+				qs = 4881,	-- Aged Envelope (QS!)
 				races = HORDE_ONLY,
 			}),
 			q(831, {	-- The Admiral's Orders (2/2)
@@ -1522,7 +1522,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				},
 			}),
 			q(96876, {	-- Ukor's Lost Pack
-				provider = { "i", 275722 },	-- Ukor's Lost Pack
+				qs = 275722,	-- Ukor's Lost Pack (QS!)
 				coord = { 49.5, 56.4, MAP.DUROTAR },
 				cr = 266851,	-- Ukorsbane
 				timeline = { TIMELINE.ADDED_1_60_1 },

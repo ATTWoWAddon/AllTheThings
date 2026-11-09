@@ -781,10 +781,8 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				lvl = 38,
 			}),
 			q(2978, {	-- The Gordunni Scroll
-				providers = {
-					{ "i",   9370 },	-- Gordunni Scroll
-					{ "o", 143980 },	-- Gordunni Scroll
-				},
+				qs = 9370,	-- Gordunni Scroll (QS!)
+				provider = { "o", 143980 },	-- Gordunni Scroll
 				coords = {
 					{ 75.2, 28.7, MAP.FERALAS },
 					{ 80.8, 35.0, MAP.FERALAS },

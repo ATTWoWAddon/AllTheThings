@@ -46,11 +46,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 						},
 					}),
 					q(781, {	-- Attack on Camp Narache
-						providers = {
-							{ "i", 4851 },	-- Dirt-stained Map
-							{ "o", 3076 },	-- Dirt-stained Map
-							{ "i", 4850 },	-- Bristleback Attack Plans
-						},
+						qs = 4851,	-- Dirt-stained Map (QS!)
+						qi = 4850,	-- Bristleback Attack Plans (PQI!)
+						provider = { "o", 3076 },	-- Dirt-stained Map
 						coord = { 63.3, 82.6, MAP.MULGORE },
 						races = HORDE_ONLY,
 						groups = {
@@ -327,7 +325,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		}),
 		n(QUESTS, {
 			q(96294, {	-- A Darker Truth
-				provider = { "i", 273658 },	-- Bloody Parchment (quest starter)
+				qs = 273658,	-- Bloody Parchment (QS!)
 				qg = 259118,	-- Muln Earthfury (quest recipient)
 				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -744,7 +742,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(98424, {	-- Fizsprocket's Notes
-				provider = { "i", 281031 },	-- Mulgore Expansion Plans
+				qs = 281031,	-- Mulgore Expansion Plans (QS!)
 				cr = 3051,	-- Supervisor Fizsprocket
 				coord = { 64.4, 43.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1228,7 +1226,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(770, {	-- The Demon Scarred Cloak
-				provider = { "i", 4854 },	-- Demon Scarred Cloak
+				qs = 4854,	-- Demon Scarred Cloak (QS!)
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {

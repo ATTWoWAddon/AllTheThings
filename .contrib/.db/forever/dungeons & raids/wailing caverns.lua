@@ -162,8 +162,8 @@ instanceroot(240, {	-- Wailing Caverns
 					},
 				}),
 				q(6981, {	-- The Glowing Shard
-					provider = { "i", 10441 },	-- Glowing Shard
 					qg = 3442,	-- Sputtervalve <Tinkers' Union>
+					qs = 10441,	-- Glowing Shard (QS!)
 					coord = { 63.0, 37.2, MAP.THE_BARRENS },
 				}),
 			},

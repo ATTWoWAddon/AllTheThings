@@ -128,7 +128,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 24,
 			}),
 			q(522, {	-- Assassin's Contract
-				provider = { "i", 3668 },	-- Assassin's Contract
+				qs = 3668,	-- Assassin's Contract (QS!)
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
@@ -642,10 +642,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 			}),
 			q(551, {	-- The Ensorcelled Parchment
-				providers = {
-					{ "i", 3706 },	-- Ensorcelled Parchment
-					{ "o", 1765 },	-- Worn Wooden Chest
-				},
+				qs = 3706,	-- Ensorcelled Parchment (QS!)
+				provider = { "o", 1765 },	-- Worn Wooden Chest
 				coord = { 39.2, 14.8, MAP.ALTERAC_MOUNTAINS },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
@@ -653,10 +651,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 			q(6681, {	-- The Manor, Ravenholdt
 				description = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
-				providers = {
-					{ "i", 17125 },	-- Seal of Ravenholdt
-					{ "i", 17126 },	-- Seal of Ravenholdt
-				},
+				qs = 17126,	-- Seal of Ravenholdt (QS!)
+				qi = 17125,	-- Seal of Ravenholdt (PQI!)
 				classes = { ROGUE },
 				lvl = 24,
 			}),

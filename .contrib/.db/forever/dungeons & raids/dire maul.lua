@@ -213,10 +213,8 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 54,
 			}),
 			q(7499, {	-- Codex of Defense
-				providers = {
-					{ "i", 18357 },	-- Codex of Defense
-					{ "n", 14383 },	-- Lorekeeper Kildrath
-				},
+				qg = 14383,	-- Lorekeeper Kildrath
+				qs = 18357,	-- Codex of Defense (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { WARRIOR },
 				lvl = 54,
@@ -263,10 +261,8 @@ instanceroot(230, {	-- Dire Maul
 			},
 			--[[ Commented Out until Confirmed
 			q(7649, {	-- Enchanted Thorium Platemail: Volume I
-				providers = {
-					{ "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
-					{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
-				},
+				qg = 14368,	-- Lorekeeper Lydros <House of Shen'dralar>
+				qs = 18769,	-- Enchanted Thorium Platemail (Volume I) (QS!)
 				maps = merge(CAPITAL_GARDENS_MAPS, {
 					MAP.BLACKROCK_SPIRE,
 				}),
@@ -280,10 +276,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7650, {	-- Enchanted Thorium Platemail: Volume II
-				providers = {
-					{ "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
-					{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
-				},
+				qg = 14368,	-- Lorekeeper Lydros <House of Shen'dralar>
+				qs = 18770,	-- Enchanted Thorium Platemail (Volume II) (QS!)
 				maps = merge(CAPITAL_GARDENS_MAPS, {
 					MAP.STRATHOLME,
 					MAP.SCHOLOMANCE,
@@ -299,10 +293,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7651, {	-- Enchanted Thorium Platemail: Volume III
-				providers = {
-					{ "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
-					{ "n", 14368 },	-- Lorekeeper Lydros <House of Shen'dralar>
-				},
+				qg = 14368,	-- Lorekeeper Lydros <House of Shen'dralar>
+				qs = 18771,	-- Enchanted Thorium Platemail (Volume III) (QS!)
 				maps = merge(CAPITAL_GARDENS_MAPS, {
 					MAP.BLACKROCK_SPIRE,
 					MAP.STRATHOLME,
@@ -352,10 +344,8 @@ instanceroot(230, {	-- Dire Maul
 				lvl = 54,
 			}),
 			q(7505, {	-- Frost Shock and You
-				providers = {
-					{ "i", 18363 },	-- Frost Shock and You
-					{ "n", 14381 },	-- Lorekeeper Javon
-				},
+				qg = 14381,	-- Lorekeeper Javon
+				qs = 18363,	-- Frost Shock and You (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { SHAMAN },
 				lvl = 54,
@@ -364,10 +354,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7498, {	-- Garona: A Study on Stealth and Treachery
-				providers = {
-					{ "i", 18356 },	-- Garona: A Study on Stealth and Treachery
-					{ "n", 14383 },	-- Lorekeeper Kildrath
-				},
+				qg = 14383,	-- Lorekeeper Kildrath
+				qs = 18356,	-- Garona: A Study on Stealth and Treachery (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { ROGUE },
 				lvl = 54,
@@ -376,10 +364,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7502, {	-- Harnessing Shadows
-				providers = {
-					{ "i", 18360 },	-- Harnessing Shadows
-					{ "n", 14382 },	-- Lorekeeper Mykos
-				},
+				qg = 14382,	-- Lorekeeper Mykos
+				qs = 18360,	-- Harnessing Shadows (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { WARLOCK },
 				lvl = 54,
@@ -388,10 +374,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7504, {	-- Holy Bologna: What the Light Won't Tell You
-				providers = {
-					{ "i", 18362 },	-- Holy Bologna: What the Light Won't Tell You
-					{ "n", 14381 },	-- Lorekeeper Javon
-				},
+				qg = 14381,	-- Lorekeeper Javon
+				qs = 18362,	-- Holy Bologna: What the Light Won't Tell You (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { PRIEST },
 				lvl = 54,
@@ -518,10 +502,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7500, {	-- The Arcanist's Cookbook
-				providers = {
-					{ "i", 18358 },	-- The Arcanist's Cookbook
-					{ "n", 14383 },	-- Lorekeeper Kildrath
-				},
+				qg = 14383,	-- Lorekeeper Kildrath
+				qs = 18358,	-- The Arcanist's Cookbook (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { MAGE },
 				lvl = 54,
@@ -530,10 +512,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7506, {	-- The Emerald Dream...
-				providers = {
-					{ "i", 18364 },	-- The Emerald Dream
-					{ "n", 14381 },	-- Lorekeeper Javon
-				},
+				qg = 14381,	-- Lorekeeper Javon
+				qs = 18364,	-- The Emerald Dream (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { DRUID },
 				lvl = 54,
@@ -593,10 +573,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7503, {	-- The Greatest Race of Hunters
-				providers = {
-					{ "i", 18361 },	-- The Greatest Race of Hunters
-					{ "n", 14382 },	-- Lorekeeper Mykos
-				},
+				qg = 14382,	-- Lorekeeper Mykos
+				qs = 18361,	-- The Greatest Race of Hunters (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { HUNTER },
 				lvl = 54,
@@ -605,10 +583,8 @@ instanceroot(230, {	-- Dire Maul
 				},
 			}),
 			q(7501, {	-- The Light and How To Swing It
-				providers = {
-					{ "i", 18359 },	-- The Light and How to Swing It
-					{ "n", 14382 },	-- Lorekeeper Mykos
-				},
+				qg = 14382,	-- Lorekeeper Mykos
+				qs = 18359,	-- The Light and How to Swing It (QS!)
 				maps = CAPITAL_GARDENS_MAPS,
 				classes = { PALADIN },
 				lvl = 54,

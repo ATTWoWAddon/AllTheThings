@@ -75,7 +75,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						classes = { HUNTER },
 					}),
 					q(97236, {	-- Fang of Githyiss
-						provider = { "i", 277190 },	-- Fang of Githyiss
+						qs = 277190,	-- Fang of Githyiss (QS!)
 						coord = { 56.6, 26.0, MAP.TELDRASSIL },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
@@ -1367,7 +1367,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				lvl = 4,
 			}),
 			q(927, {	-- The Moss-twined Heart
-				provider = { "i", 5179 },	-- Moss-twined Heart
+				qs = 5179,	-- Moss-twined Heart (QS!)
 				coord = { 52.0, 63.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				cr = 3535,	-- Blackmoss the Fetid

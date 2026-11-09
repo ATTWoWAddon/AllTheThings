@@ -589,10 +589,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7938, {	-- Your Fortune Awaits You... [Deadmines]
-				providers = {
-					{ "i", 19424 },	-- Sayge's Fortune #24
-					{ "o", 180024 },	-- Mysterious Deadmines Chest
-				},
+				qs = 19424,	-- Sayge's Fortune #24 (QS!)
+				provider = { "o", 180024 },	-- Mysterious Deadmines Chest
 				maps = { MAP.DEADMINES },
 				repeatable = true,
 				lvl = 10,
@@ -601,10 +599,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7937, {	-- Your Fortune Awaits You... [Elwynn Forest]
-				providers = {
-					{ "i", 19423 },	-- Sayge's Fortune #23
-					{ "o", 180025 },	-- Mysterious Eastvale Haystack
-				},
+				qs = 19423,	-- Sayge's Fortune #23 (QS!)
+				provider = { "o", 180025 },	-- Mysterious Eastvale Haystack
 				coord = { 84.7, 64.4, MAP.ELWYNN_FOREST },
 				repeatable = true,
 				lvl = 10,
@@ -613,10 +609,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7945, {	-- Your Fortune Awaits You... [Mulgore]
-				providers = {
-					{ "i",  19452 },	-- Sayge's Fortune #27
-					{ "o", 180056 },	-- Mysterious Tree Stump
-				},
+				qs = 19452,	-- Sayge's Fortune #27 (QS!)
+				provider = { "o", 180056 },	-- Mysterious Tree Stump
 				coord = { 35.0, 61.5, MAP.MULGORE },
 				repeatable = true,
 				lvl = 10,
@@ -625,10 +619,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7944, {	-- Your Fortune Awaits You... [Wailing Caverns]
-				providers = {
-					{ "i",  19443 },	-- Sayge's Fortune #25
-					{ "o", 180055 },	-- Mysterious Wailing Caverns Chest
-				},
+				qs = 19443,	-- Sayge's Fortune #25 (QS!)
+				provider = { "o", 180055 },	-- Mysterious Wailing Caverns Chest
 				maps = { MAP.WAILING_CAVERNS },
 				repeatable = true,
 				lvl = 10,

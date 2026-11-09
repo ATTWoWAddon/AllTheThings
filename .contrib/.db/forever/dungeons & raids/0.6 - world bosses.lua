@@ -39,7 +39,7 @@ root(ROOTS.Instances, {
 				groups = {
 					n(QUESTS, {
 						q(8446, {	-- Shrouded in Nightmare
-							provider = { "i", 20644 },
+							qs = 20644,	-- Nightmare Engulfed Object (QS!)
 							lvl = 60,
 						}),
 						q(8447, {	-- Waking Legends

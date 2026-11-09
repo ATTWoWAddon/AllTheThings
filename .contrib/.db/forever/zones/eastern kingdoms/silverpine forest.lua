@@ -546,10 +546,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(460, {	-- Resting in Pieces
-				providers = {
-					{ "i", 3317 },	-- A Talking Head
-					{ "o", 1599 },	-- Shallow Grave
-				},
+				qs = 3317,	-- A Talking Head (QS!)
+				provider = { "o", 1599 },	-- Shallow Grave
 				coord = { 65.2, 32.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 12,
@@ -773,7 +771,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				},
 			}),
 			q(95884, {	-- The Offering Stone
-				provider = { "i", 271343 },	-- Note Scrap (QS!)
+				qs = 271343,	-- Note Scrap (QS!)
 				coord = { 57.12, 71.02, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 20,

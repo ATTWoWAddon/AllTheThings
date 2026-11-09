@@ -490,10 +490,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(624, {	-- Cortello's Riddle (1/3)
-				providers = {
-					{ "i", 4056 },	-- Cortello's Riddle
-					{ "o", 2554 },	-- Cortello's Riddle
-				},
+				qs = 4056,	-- Cortello's Riddle (QS!)
+				provider = { "o", 2554 },	-- Cortello's Riddle
 				coords = {
 					{ 29.5, 89.3, MAP.STRANGLETHORN_VALE },
 					{ 33.6, 88.3, MAP.STRANGLETHORN_VALE },
@@ -916,7 +914,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(594, {	-- Message in a Bottle (1/2)
-				provider = { "i", 4098 },	-- Carefully Folded Note
+				qs = 4098,	-- Carefully Folded Note (QS!)
 				lvl = 45,
 			}),
 			q(630, {	-- Message in a Bottle (2/2)

@@ -65,7 +65,7 @@ instanceroot(760, {	-- Onyxia's Lair
 			}),
 			q(7507, {	-- Nostro's Compendium
 				description = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-				provider = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
+				qs = 18401,	-- Nostro's Compendium of Dragon Slaying (QS!)
 				maps = { MAP.DIRE_MAUL },
 				classes = { WARRIOR, PALADIN },
 				lvl = 60,
@@ -140,10 +140,8 @@ instanceroot(760, {	-- Onyxia's Lair
 			}),
 			q(7508, {	-- The Forging of Quel'Serrar
 				sourceQuest = 7507,	-- Nostro's Compendium
-				providers = {
-					{ "n", 14368 },	-- Lorekeeper Lydros
-					{ "i", 18513 },	-- A Dull and Flat Elven Blade
-				},
+				qg = 14368,	-- Lorekeeper Lydros
+				qs = 18513,	-- A Dull and Flat Elven Blade (QS!)
 				maps = { MAP.DIRE_MAUL },
 				classes = { WARRIOR, PALADIN },
 				lvl = 60,
@@ -197,13 +195,13 @@ instanceroot(760, {	-- Onyxia's Lair
 				},
 			}),
 			q(7495, {	-- Victory for the Alliance
-				provider = { "i", 18423 },	-- Head of Onyxia (A)
+				qs = 18423,	-- Head of Onyxia (A) (QS!)
 				maps = { MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 60,
 			}),
 			q(7490, {	-- Victory for the Horde
-				provider = { "i", 18422 },	-- Head of Onyxia (H)
+				qs = 18422,	-- Head of Onyxia (H) (QS!)
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				lvl = 60,

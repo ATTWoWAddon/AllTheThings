@@ -467,10 +467,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				},
 			}),
 			q(3181, {	-- The Horn of the Beast
-				providers = {
-					{ "i", 10000 },	-- Margol's Horn
-					{ "i", 10005 },	-- Margol's Gigantic Horn
-				},
+				qs = 10000,	-- Margol's Horn (QS!)
+				qi = 10005,	-- Margol's Gigantic Horn (PQI!)
 				coord = { 73.0, 77.2, MAP.SEARING_GORGE },
 				maps = { MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
@@ -478,10 +476,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				lvl = 40,
 			}),
 			q(4451, {	-- The Key to Freedom
-				providers = {
-					{ "i", 11818 },	-- Grimesilt Outhouse Key
-					{ "o", 173265 },	-- Wooden Outhouse
-				},
+				qs = 11818,	-- Grimesilt Outhouse Key (QS!)
+				provider = { "o", 173265 },	-- Wooden Outhouse
 				coord = { 65.6, 62.5, MAP.SEARING_GORGE },
 				lvl = 43,
 			}),

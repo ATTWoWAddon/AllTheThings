@@ -471,7 +471,7 @@ root(ROOTS.Instances, {
 					}),
 				})),
 				q(8791, {	-- The Fall of Ossirian
-					provider = { "i", 21220 },	-- Head of Ossirian the Unscarred
+					qs = 21220,	-- Head of Ossirian the Unscarred (QS!)
 					maps = { MAP.SILITHUS },
 					lvl = 60,
 					groups = {

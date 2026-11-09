@@ -52,8 +52,8 @@ root(ROOTS.WorldEvents, {
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger
 					sourceQuest = 8555,	-- The Charge of the Dragonflights
-					provider = { "i", 20949 },	-- Magical Ledger
 					qg = 15481,	-- Spirit of Azuregos
+					qs = 20949,	-- Magical Ledger (QS!)
 					coord = { 57.0, 85.6, MAP.AZSHARA },
 					lvl = 60,
 				}),

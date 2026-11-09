@@ -412,10 +412,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				},
 			}),
 			q(1423, {	-- The Lost Supplies
-				providers = {
-					{ "i", 6172 },	-- Lost Supplies
-					{ "o", 28604 },	-- Scattered Crate
-				},
+				qs = 6172,	-- Lost Supplies (QS!)
+				provider = { "o", 28604 },	-- Scattered Crate
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				lvl = 30,

@@ -539,10 +539,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(361, {	-- A Letter Undelivered
-				providers = {
-					{ "i", 2839 },	-- A Letter to Yvette
-					{ "i", 2837 },	-- Thurman's Letter
-				},
+				qs = 2839,	-- A Letter to Yvette (QS!)
+				qi = 2837,	-- Thurman's Letter (PQI!)
 				coord = { 61.6, 52.6, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 4,
@@ -1816,7 +1814,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				},
 			}),
 			q(95328, {	-- Whispering Horror Residue
-				provider = { "i", 268812 },	-- Whispering Horror Residue (QS!)
+				qs = 268812,	-- Whispering Horror Residue (QS!)
 				cr = 260396,	-- Whispering Horror
 				coord = { 8.6, 60.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,

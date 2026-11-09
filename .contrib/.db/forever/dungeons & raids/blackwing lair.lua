@@ -18,7 +18,7 @@ root(ROOTS.Instances, {
 			n(QUESTS,
 			{
 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
-					provider = { "i", 19003 },	-- Head of Nefarian
+					qs = 19003,	-- Head of Nefarian (QS!)
 					maps = { MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 				}),
@@ -38,7 +38,7 @@ root(ROOTS.Instances, {
 					},
 				}),
 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
-					provider = { "i", 19002 },	-- Head of Nefarian
+					qs = 19002,	-- Head of Nefarian (QS!)
 					maps = { MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
 				}),

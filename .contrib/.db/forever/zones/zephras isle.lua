@@ -1122,7 +1122,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					94486,	-- Feathers for Binding
 					94487,	-- Unwanted and Unworthy
 				},
-				provider = { "i", 265476 },	-- Ripped Missive (QS!)
+				qs = 265476,	-- Ripped Missive (QS!)
 				cr = 253622,	-- Commander Haalien
 				coord = { 65.4, 36.2, MAP.ZEPHRAS_ISLE },
 				lvl = 9,

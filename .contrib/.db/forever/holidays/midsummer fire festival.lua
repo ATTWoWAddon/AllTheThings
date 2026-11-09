@@ -223,10 +223,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				},
 			}),
 			q(9332, {	-- Stealing Darnassus's Flame
-				providers = {
-					{ "o", 181334 },	-- Flame of Darnassus
-					{ "i", 23184 },	-- Flame of Darnassus (Provided)
-				},
+				qs = 23184,	-- Flame of Darnassus (Provided) (QS!)
+				provider = { "o", 181334 },	-- Flame of Darnassus
 				coord = { 56.6, 92.3, MAP.TELDRASSIL },
 				maps = { MAP.DARNASSUS },
 				races = HORDE_ONLY,
@@ -235,10 +233,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9331, {	-- Stealing Ironforge's Flame
-				providers = {
-					{ "o", 181333 },	-- Flame of Ironforge
-					{ "i", 23183 },	-- Flame of Ironforge (Provided)
-				},
+				qs = 23183,	-- Flame of Ironforge (Provided) (QS!)
+				provider = { "o", 181333 },	-- Flame of Ironforge
 				coord = { 64.6, 24.8, MAP.IRONFORGE },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -246,10 +242,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9324, {	-- Stealing Orgrimmar's Flame
-				providers = {
-					{ "o", 181336 },	-- Flame of Orgrimmar
-					{ "i", 23179 },	-- Flame of Orgrimmar (Provided)
-				},
+				qs = 23179,	-- Flame of Orgrimmar (Provided) (QS!)
+				provider = { "o", 181336 },	-- Flame of Orgrimmar
 				coord = { 46.9, 38.7, MAP.ORGRIMMAR },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -257,10 +251,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9330, {	-- Stealing Stormwind's Flame
-				providers = {
-					{ "o", 181332 },	-- Flame of Stormwind
-					{ "i", 23182 },	-- Flame of Stormwind (Provided)
-				},
+				qs = 23182,	-- Flame of Stormwind (Provided) (QS!)
+				provider = { "o", 181332 },	-- Flame of Stormwind
 				coord = { 38.9, 62.3, MAP.STORMWIND_CITY },
 				races = HORDE_ONLY,
 				isYearly = true,
@@ -268,10 +260,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9326, {	-- Stealing the Undercity's Flame
-				providers = {
-					{ "o", 181335 },	-- Flame of the Undercity
-					{ "i", 23181 },	-- Flame of the Undercity (Provided)
-				},
+				qs = 23181,	-- Flame of the Undercity (Provided) (QS!)
+				provider = { "o", 181335 },	-- Flame of the Undercity
 				coord = { 62.6, 66.9, MAP.UNDERCITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
@@ -279,10 +269,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 				groups = FLAME_STEAL_REWARDS,
 			}),
 			q(9325, {	-- Stealing Thunder Bluff's Flame
-				providers = {
-					{ "o", 181337 },	-- Flame of Thunder Bluff
-					{ "i", 23180 },	-- Flame of Thunder Bluff (Provided)
-				},
+				qs = 23180,	-- Flame of Thunder Bluff (Provided) (QS!)
+				provider = { "o", 181337 },	-- Flame of Thunder Bluff
 				coord = { 21.1, 25.6, MAP.THUNDER_BLUFF },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
