@@ -6,6 +6,7 @@ using System.Text;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
 namespace Classic_Item_Detector
@@ -14,9 +15,24 @@ namespace Classic_Item_Detector
     {
         const string API_CALL = "/data/wow/item/{0}?locale=en_US&access_token={1}";
         static string API_KEY = null;
+#if ATT_ANYCPU
+        static HttpClient client;
+#else
         static HttpClient client = new HttpClient();
+#endif
         static void Main(string[] args)
         {
+#if ATT_ANYCPU
+            Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+            if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+            {
+                Console.Error.WriteLine(
+                    "Any CPU Classic Item Detector requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+                Environment.ExitCode = -1;
+                return;
+            }
+            client = new HttpClient();
+#endif
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
             Parse();
