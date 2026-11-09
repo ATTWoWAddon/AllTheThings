@@ -129,12 +129,26 @@ instanceroot(2970, {	-- The Drowned City
 		}),
 		e(3474, {	-- Zul'Alai
 			creatureID = 258905,	-- Zul'Alai
+			groups = {
+				i(274600),	-- Berserker Shackles
+				i(274598),	-- Bloodslash Axe
+				i(274599),	-- Oathbound Bracers
+			},
 		}),
 		e(3475, {	-- Var'Taka
 			creatureID = 258924,	-- Var'Taka
+			groups = {
+				i(274602),	-- Brinebelly Leggings
+				i(274601),	-- Harpoon of Command
+			},
 		}),
 		e(3476, {	-- Captain Dreadrise
 			creatureID = 260042,	-- Captain Dreadrise
+			groups = {
+				i(274605),	-- Briny Sash
+				i(274603),	-- Dreadfrost Saber
+				i(274604),	-- Frosty Blunderbuss
+			},
 		}),
 		e(3478, {	-- Deathless Guardians
 			crs = {
@@ -149,6 +163,10 @@ instanceroot(2970, {	-- The Drowned City
 			crs = {
 				260243,	-- Min'loth the Serpent
 				260274,	-- Min'loth the Serpent
+			},
+			groups = {
+				i(274608),	-- Maw of Min'loth
+				i(274609),	-- Serpentbane Crown
 			},
 		}),
 	},
