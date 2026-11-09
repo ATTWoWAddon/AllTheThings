@@ -28626,6 +28626,14 @@ n(19694,{coords={
 r(29606,{isLimited=1,itemID=23596,learnedAt=340,q=1,requireSkill=164}),
 r(29603,{isLimited=1,itemID=23594,learnedAt=335,q=1,requireSkill=164}),
 r(29605,{isLimited=1,itemID=23595,learnedAt=335,q=1,requireSkill=164})}}),
+n(18010,{coords={
+[1946]={{41.6,27.4}}},r=2,g={
+s(141123,30777,{f=7,loc=45,lvl=70,q=1}),
+s(141117,30771,{f=7,loc=43,lvl=70,q=1}),
+s(141111,30765,{f=7,loc=42,lvl=60,q=1}),
+s(141121,30775,{f=8,lvl=70,q=1}),
+s(141127,30781,{f=6,loc=42,lvl=70,q=1}),
+s(141130,30784,{f=6,loc=44,lvl=70,q=1})}}),
 n(19722,{coords={
 [1946]={{40.4,28.2}}},r=2,g={
 r(26776,{isLimited=1,itemID=21899,learnedAt=350,q=1,requireSkill=197}),

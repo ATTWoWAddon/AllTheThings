@@ -138,6 +138,7 @@ s(156039,25,{awp=10100,f=25,q=1}),
 s(156774,2362,{awp=10100,f=8,q=0})})}),
 flt(10,{
 s(158314,6097,{f=10,q=1,races_disp={1,7}}),
+s(158313,6096,{description="Starter Shirt for Gnome Mages.",f=10,q=1}),
 s(158325,6125,{description="Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",f=10,q=1,rwp=40003}),
 s(156051,49,{description="Former Starter Shirt for Human, Night Elf, Dwarf & Gnome Rogues",f=10,q=1,rwp=40003}),
 s(156054,53,{awp=10100,description="Former Starter Shirt for Priests.",f=10,q=1,rwp=40003}),

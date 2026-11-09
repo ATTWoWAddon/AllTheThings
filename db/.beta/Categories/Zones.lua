@@ -52107,6 +52107,14 @@ n(19694,{coords={
 r(29606,{isLimited=1,itemID=23596,requireSkill=164,skillID=2476}),
 r(29603,{isLimited=1,itemID=23594,requireSkill=164,skillID=2476}),
 r(29605,{isLimited=1,itemID=23595,requireSkill=164,skillID=2476})}}),
+n(18010,{coords={
+[102]={{41.6,27.4}}},r=2,g={
+s(13912,30777,{f=7,loc=45,lvl=27}),
+s(13906,30771,{f=7,loc=43,lvl=27}),
+s(13900,30765,{f=7,loc=42,lvl=27}),
+s(13910,30775,{f=8,lvl=27}),
+s(13916,30781,{f=6,loc=42,lvl=27}),
+s(13917,30784,{f=6,loc=44,lvl=27})}}),
 n(19722,{coords={
 [102]={{40.4,28.2}}},r=2,g={
 r(26776,{isLimited=1,itemID=21899,requireSkill=197,skillID=2539}),
