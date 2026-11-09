@@ -733,6 +733,36 @@ local function GenerateSourceQuestString(quest)
 	end
 	return "?";
 end
+-- Remembers who offered the quest in the most recent quest dialog, so that quest reports can name the quest giver
+local LastQuestDialog = {}
+local QuestGiverTypePrefixes = { Creature = "n", Vehicle = "n", GameObject = "o", Player = "player" }
+app.AddEventRegistration("QUEST_DETAIL", function(questStartItemID)
+	local questID = GetQuestID()
+	if not questID or questID == 0 then return end
+	local giver
+	if type(questStartItemID) == "number" and questStartItemID > 0 then
+		giver = "i:"..questStartItemID
+	else
+		local issecretvalue = app.WOWAPI.issecretvalue
+		local unit = UnitExists("questnpc") and "questnpc" or "npc"
+		local guid = UnitGUID(unit)
+		if guid and not issecretvalue(guid) then
+			local guidtype, _, _, _, _, id = ("-"):split(guid)
+			local prefix = QuestGiverTypePrefixes[guidtype]
+			if prefix == "player" then
+				giver = "shared by a player"
+			elseif prefix and tonumber(id) then
+				giver = prefix..":"..id
+				local name = UnitName(unit)
+				if name and not issecretvalue(name) then
+					giver = giver.." "..name
+				end
+			end
+		end
+	end
+	LastQuestDialog.questID = questID
+	LastQuestDialog.giver = giver
+end)
 local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, checks)
 	-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
 	local info = {
@@ -746,6 +776,10 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 		end
 	end
 	info.sq = GenerateSourceQuestString(questRef or id)
+	-- include the quest giver when the quest was just viewed or accepted through a quest dialog
+	if questChange ~= "completed" and LastQuestDialog.giver and LastQuestDialog.questID == id then
+		info.giver = LastQuestDialog.giver
+	end
 	return info;
 end
 local function SearchForQuestData(questID)
