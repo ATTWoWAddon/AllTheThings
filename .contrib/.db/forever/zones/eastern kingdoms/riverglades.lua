@@ -47,7 +47,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		}),
 		n(QUESTS, {
 			q(95123, {	-- A Blast Ye Scurvy Dogs!
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 259961,	-- Wharfmaster Whizzbuzz
+				coord = { 79.4, 52.6, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/5 Eastsea Powder Keg
@@ -70,7 +71,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95983, {	-- A Feast for Buzzards [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 61.6, 58.8 (no known NPC there).
 				qi = 271777,	-- Gnawed Skull (PQI!)
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -140,7 +141,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96015, {	-- A Miner Problem
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -230,7 +231,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95124, {	-- Admiral Lamora
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 259961,	-- Wharfmaster Whizzbuzz
+				coord = { 79.4, 52.6, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Admiral Lamora slain
@@ -262,7 +264,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(96126, {	-- An Ogre's Captive
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.7, 12.6 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -427,7 +429,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94890, {	-- Bring Me His Head [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.1 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -471,7 +473,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94889, {	-- Carving a Path [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -499,7 +501,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96083, {	-- Clerical Quarantine
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -577,7 +579,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94893, {	-- Delivering Closure
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94892,	-- Dying Wish
 				qi = 266428,	-- Marshal Ryan's Crest (PQI!)
 				races = ALLIANCE_ONLY,
@@ -595,7 +597,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96082, {	-- Doctor's Orderly
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0 (no known NPC there).
 				qi = 272126,	-- Makeshift Bandages (PQI!)
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -606,7 +608,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95957, {	-- Drink Up!
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.7, 54.0, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
 				sourceQuest = 95988,	-- Goes Down Smooth
 				qi = 271822,	-- Frothing Mug (PQI!)
 				races = ALLIANCE_ONLY,
@@ -944,7 +946,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95975, {	-- Her World
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.8, 54.1, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
 				sourceQuest = 95957,	-- Drink Up!
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -977,7 +979,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95295, {	-- I Know a Guy
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 255897,	-- Friz Frazzlespark <Specialty Goods>
+				coord = { 77.0, 52.8, MAP.RIVERGLADES },
 				lvl = 36,
 			}),
 			q(94857, {	-- If a Tree Falls, and No One Hears...
@@ -1031,7 +1034,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95261, {	-- It Takes Guts
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 79.9, 52.4, about 0.5 from Wharfmaster Whizzbuzz; 95260 was turned in there too, so likely another NPC.
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/15 Beast Entrails
@@ -1063,7 +1066,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95986, {	-- King of the Wild Plains [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
 				sourceQuest = 95984,	-- Song of the Strider [A]
 				qi = 271779,	-- Tallstrider Call (PQI!)
 				races = ALLIANCE_ONLY,
@@ -1141,7 +1144,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94888, {	-- No Soldier Left Behind
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1254,7 +1257,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96067, {	-- Rock 'em and Sock 'em
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.1, 48.7 (no known NPC there).
 				lvl = 36,
 			}),
 			q(95426, {	-- Rog'mar Supplies
@@ -1329,7 +1332,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95165, {	-- See Ya, Scallywags!
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 259961,	-- Wharfmaster Whizzbuzz
+				coord = { 79.4, 52.6, MAP.RIVERGLADES },
 				qi = 268505,	-- Remote Explosive Charge (PQI!)
 				lvl = 38,
 				groups = {
@@ -1345,8 +1349,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95296, {	-- Shipping and Handling (1/2)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95294,	-- Smuggler's Bargain
+				qg = 255897,	-- Friz Frazzlespark <Specialty Goods>
+				coord = { 77.0, 52.8, MAP.RIVERGLADES },
 				qi = 268811,	-- Friz's Secret Stash (PQI!)
 				lvl = 36,
 			}),
@@ -1402,8 +1407,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95293, {	-- Smuggler's Special
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95288,	-- Smuggler's Paradise
+				qg = 255897,	-- Friz Frazzlespark <Specialty Goods>
+				coord = { 77.0, 52.8, MAP.RIVERGLADES },
 				qi = 268824,	-- The Friz Special (PQI!)
 				lvl = 38,
 			}),
@@ -1436,7 +1442,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96084, {	-- Something's in the Water
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 262031,	-- Sister Rowland
+				coord = { 61.8, 83.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1449,7 +1456,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95984, {	-- Song of the Strider [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
 				sourceQuest = 95983,	-- A Feast for Buzzards [A]
 				races = ALLIANCE_ONLY,
 				lvl = 36,
@@ -1583,7 +1590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95267, {	-- The Monster Surfaces
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 79.8, 52.4, about 0.5 from Wharfmaster Whizzbuzz; 95260 was turned in there too, so likely another NPC.
 				qi = 268647,	-- Big Ball o' Bait (PQI!)
 				lvl = 38,
 				groups = {
@@ -1620,7 +1627,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95066, {	-- The Rog'mar Situation
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1685,7 +1692,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95122, {	-- Unchecked Expansion
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 259961,	-- Wharfmaster Whizzbuzz
+				coord = { 79.4, 52.6, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/8 Eastsea Raider slain
@@ -1743,7 +1751,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96085, {	-- Upstream Contamination
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 262031,	-- Sister Rowland
+				coord = { 61.8, 83.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {

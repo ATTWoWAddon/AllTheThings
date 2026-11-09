@@ -11,7 +11,20 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 	lvl = 40,
 	groups = {
 		n(QUESTS, {
-			
+			q(94984, {	-- Tome of Twilight
+				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1 in Riverglades, where Demar Brant and Ashe Amberhall both stand.
+				sourceQuest = 94907,	-- A Small Favor
+				races = ALLIANCE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/1 Tome of Twilight
+						provider = { "i", 267104 },	-- Tome of Twilight
+						cr = 258964,	-- Nar'gurk
+					}),
+					i(279854),	-- Twilight Initiate's Belt
+					i(279855),	-- Torn Cultist Cloak
+				},
+			}),
 		}),
 		e(3450, {	-- Slavecrusher Grox
 			creatureID = 258966,	-- Slavecrusher Grox
