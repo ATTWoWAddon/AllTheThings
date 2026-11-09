@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x64;ARM64</Platforms>
+    <Platforms>x64;ARM64;AnyCPU</Platforms>
     <Platform>x64</Platform>
     <TargetFramework>net10.0</TargetFramework>
     <OutputType>Exe</OutputType>
@@ -31,7 +31,18 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
     <DebugType>none</DebugType>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseAppHost>false</UseAppHost>
+    <OutputPath>..\..\.builds\CSVCleaner\AnyCPU\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
   <Target Name="ValidateCSVCleanerPlatform" BeforeTargets="PrepareForBuild">
-    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'ARM64'" Text="CSVCleaner supports x64 and ARM64 platforms." />
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="CSVCleaner supports x64, ARM64, and AnyCPU platforms." />
   </Target>
 </Project>
