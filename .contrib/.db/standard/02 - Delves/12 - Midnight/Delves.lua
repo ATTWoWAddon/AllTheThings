@@ -554,6 +554,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 			}),
 			i(262342, {	-- Spormilian (PET!)
 				providers = {
+					{ "o", 658087 },	-- Abundantly Bountiful Heavy Trunk
 					{ "o", 584515 },	-- Bountiful Heavy Trunk
 					{ "o", 584508 },	-- Nemesis Strongbox
 				},

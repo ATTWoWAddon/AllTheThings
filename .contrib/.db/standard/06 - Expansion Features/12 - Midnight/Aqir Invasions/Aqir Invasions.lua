@@ -23,10 +23,7 @@ local AQIR_INVASIONS = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 	n(AQIR_INVASIONS, {
 		timeline = { ADDED_12_1_5 },
-		maps = {
-			MAP.MIDNIGHT.EVERSONG_WOODS,
-			MAP.MIDNIGHT.ZULAMAN,
-		},
+		maps = { MAP.MIDNIGHT.EVERSONG_WOODS, MAP.MIDNIGHT.ZULAMAN },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(63659, {	-- Bane of the Swarm
@@ -41,13 +38,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			n(EVENT_COMPLETION, {
 				i(277283, {	-- Aqir Research Satchel
 					n(ARMOR, {
-						n(BACK, {
-						}),
 						filter(CLOTH, {
 							i(277885),	-- Veilweaver Trousers
 							i(277895),	-- Veilweaver's Shadowgown
-						}),
-						filter(FINGER_F, {
 						}),
 						filter(LEATHER, {
 							i(277888),	-- Veil of the Feral Rite
@@ -57,13 +50,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							i(277896),	-- Bloodtide Hauberk
 							i(277891),	-- Leviathan Bracerbands
 						}),
-						filter(NECK_F, {
-						}),
 						filter(PLATE, {
 							i(277898),	-- Duskhallow Vanguard Greaves
 							i(284219),	-- Granite Ritual Cuirass
-						}),
-						filter(TRINKET_F, {
 						}),
 					}),
 					n(WEAPONS, {
@@ -85,9 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				groups = {
 					faction(FACTION_AQIR_RESEARCH_ENCLAVE),
 					n(ACHIEVEMENTS, {
-						ach(63657, {	-- Aqir Research Associate
-							minReputation = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 },
-						}),
+						ach(63657, { minReputation = { FACTION_AQIR_RESEARCH_ENCLAVE, 5 } }),	-- Aqir Research Associate
 					}),
 					n(VENDORS, {
 						n(266188, {	-- Estelia Archtender <Aqir Researcher>
@@ -197,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							coord = { 39.4, 80.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 							groups = sharedData({
 								cost = { { "i", 286563, 1 } },	-- 1x Aqir Research Token
-							}, {	-- Exo Note: Not sure if these will be turned into items or will these remain as spells
+							}, {
 								spell(1320744),	-- Amani Tribe Voucher
 								spell(1320745),	-- Hara'ti Voucher
 								spell(1320747),	-- Silvermoon Court Voucher

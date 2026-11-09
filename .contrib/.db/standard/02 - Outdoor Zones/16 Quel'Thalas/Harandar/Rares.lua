@@ -165,3 +165,14 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 		}),
 	})),
 })
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
+	m(MAP.MIDNIGHT.QUELTHALAS, {
+		m(MAP.MIDNIGHT.HARANDAR, {
+			n(RARES, {
+				q(96972, { isWeekly = true }),	-- Killed Stumpy
+			}),
+		}),
+	}),
+}));
+

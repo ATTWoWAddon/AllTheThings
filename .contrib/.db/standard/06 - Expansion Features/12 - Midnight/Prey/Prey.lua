@@ -452,10 +452,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				{ 52.9, 42.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 				{ 68.4, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 			},
+			cr = 265151,	-- Haunted Brazier
 			questID = 98551,
-			isWeekly = true,
-			crs = { 265151 },	-- Haunted Brazier
 			cost = { { "i", 274422, 1 } },	-- Ossified Relic
+			isWeekly = true,
 			timeline = { ADDED_12_1_0 },
 			groups = {
 				i(263874),	-- Emerald-Encrusted Amani Ritual Skull (DECOR!)
@@ -794,6 +794,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
 			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
 			q(98504, { timeline = { ADDED_12_1_0 } }),	-- Completed together with 98548 (2nd per week renown) on turn-in of Prey: Kadani the Claw (Nightmare), weekly assumed
+			q(97809, { timeline = { ADDED_12_1_0 } }),	-- Related to killing Ral'kala
+			q(97810, { timeline = { ADDED_12_1_0 } }),	-- Related to killing Ral'kala
 		})),
 		-- One-Time
 		n(QUESTS, {
