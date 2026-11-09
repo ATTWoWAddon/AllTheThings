@@ -216,6 +216,13 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 			}),
+			q(97074, {	-- Learning to Ride
+				qg = 4753,	-- Jartsam <Nightsaber Riding Instructor>
+				coord = { 38.6, 16.0, MAP.DARNASSUS },
+				races = { NIGHTELF },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(4493, {	-- March of the Silithid (A)
 				sourceQuest = 162,	-- Rise of the Silithid (A)
 				qg = 7740,	-- Gracina Spiritmight
