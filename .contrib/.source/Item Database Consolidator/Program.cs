@@ -12,6 +12,18 @@ namespace ATT
     {
         static void Main(string[] args)
         {
+#if ATT_ANYCPU
+            try
+            {
+                NativeLua.Preload();
+            }
+            catch (PlatformNotSupportedException error)
+            {
+                Console.Error.WriteLine(error.Message);
+                Environment.ExitCode = -1;
+                return;
+            }
+#endif
             // DBContext / ItemDB
             var databaseFolder = "../.db/standard/00 - Item DB/.dynamic";
             Directory.CreateDirectory(databaseFolder);
