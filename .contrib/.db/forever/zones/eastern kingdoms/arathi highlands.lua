@@ -1426,9 +1426,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				coord = { 22.8, 61.4, MAP.ARATHI_HIGHLANDS },
 			}),
 			i(213422, {	-- Illegible Recipe (QS!)
+				crs = {
+					2562,	-- Boulderfist Ogre
+					2564,	-- Boulderfist Enforcer
+					2566,	-- Boulderfist Brute
+					2567,	-- Boulderfist Magus
+					2569,	-- Boulderfist Mauler
+					2570,	-- Boulderfist Shaman
+					2571,	-- Boulderfist Lord
+				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				description = "Drops from ogres in Arathi Highlands.",
-				-- TODO: which ogres drop it (crs); a player accepted the quest at 33.0, 41.9.
 			}),
 			i(255723, {	-- Manual: Greater Healing Potion (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
