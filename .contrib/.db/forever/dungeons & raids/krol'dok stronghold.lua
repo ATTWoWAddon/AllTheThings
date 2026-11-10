@@ -26,6 +26,11 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 					i(279853),	-- Stick No Rock
 				},
 			}),
+			q(94980, {	-- Krol'dok Moulding
+				qs = 267138,	-- Krol'dok Moulding (QS!)
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+			}),
 			q(94984, {	-- Tome of Twilight
 				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1 in Riverglades, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94907,	-- A Small Favor
@@ -85,6 +90,11 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 		}),
 		e(3451, {	-- Overseer Mugg
 			creatureID = 258968,	-- Overlord Mugg
+		}),
+		n(ZONE_DROPS, {
+			i(267138, {	-- Krol'dok Moulding (QS!)
+				cr = 259256,	-- Tunk
+			}),
 		}),
 	},
 });
