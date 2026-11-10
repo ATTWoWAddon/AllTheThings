@@ -907,6 +907,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)
 				cr = 2246,	-- Syndicate Assassin
 			}),
+			i(255727, {	-- Manual: Superior Poultice (RECIPE!)
+				cr = 2243,	-- Syndicate Sentry
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1993, {	-- Ogremind Ring
 				cr = 2255,	-- Crushridge Mage
 			}),
