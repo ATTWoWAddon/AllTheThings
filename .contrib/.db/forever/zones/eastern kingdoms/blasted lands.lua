@@ -443,6 +443,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 			i(10593, {	-- Imperfect Draenethyst Fragment (drops from pretty much the whole zone)
 				description = "A rare zone drop from any creature in the zone.",
 			}),
+			i(252928, {	-- Pattern: Heavy Scorpid Boots (RECIPE!)
+				cr = 6004,	-- Shadowsworn Cultist
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 				cr = 5981,	-- Portal Seeker
 			}),

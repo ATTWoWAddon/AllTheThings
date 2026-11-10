@@ -16,6 +16,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DEADWIND_PASS, {
 			exploration(2938),	-- Sleeping Gorge
 			exploration(2561),	-- The Vice
 		}),
+		n(TREASURES, {
+			o(694054, {	-- Recipe: Raw Plated Armorfish
+				coord = { 52.4, 34.4, MAP.DEADWIND_PASS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(286153),	-- Recipe: Plated Armorfish (RECIPE!)
+				},
+			}),
+		}),
 		n(ZONE_DROPS, {
 			i(16246, {	-- Formula: Enchant Bracer - Superior Strength (RECIPE!)
 				cr = 7372,	-- Deadwind Warlock

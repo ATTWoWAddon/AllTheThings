@@ -2744,11 +2744,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					2546,	-- Fleet Master Firallon
 				},
 			}),
+			i(254018, {	-- Pattern: Earthen Silk Gloves (RECIPE!)
+				cr = 701,	-- Bloodscalp Mystic
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254022, {	-- Pattern: Gilded Handwraps (RECIPE!)
+				cr = 873,	-- Saltscale Oracle
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 				cr = 1561,	-- Bloodsail Raider
 			}),
 			i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 				cr = 938,	-- Kurzen Commando
+			}),
+			i(251388, {	-- Plans: Hard Gold Leggings (RECIPE!)
+				cr = 937,	-- Kurzen Jungle Fighter
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1997, {	-- Pressed Felt Robe
 				cr = 701,	-- Bloodscalp Mystic

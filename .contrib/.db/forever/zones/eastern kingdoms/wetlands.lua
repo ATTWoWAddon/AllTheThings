@@ -1546,6 +1546,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			i(264208, {	-- Schematic: SAF-T Jumbo Dynamite (RECIPE!)
+				cr = 1054,	-- Dark Iron Demolitionist
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3076, {	-- Smoldering Boots
 				coords = {
 					{ 66.8, 53.2, MAP.WETLANDS },

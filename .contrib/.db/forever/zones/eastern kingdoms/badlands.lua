@@ -955,8 +955,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 				cr = 2719,	-- Dustbelcher Lord
 			}),
+			i(255726, {	-- Manual: Leather Tourniquet (RECIPE!)
+				cr = 2739,	-- Shadowforge Tunneler
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1993, {	-- Ogremind Ring
 				cr = 2907,	-- Dustbelcher Mystic
+			}),
+			i(254034, {	-- Pattern: Earthen Silk Shoulders (RECIPE!)
+				cr = 2907,	-- Dustbelcher Mystic
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251389, {	-- Plans: Hard Gold Coif (RECIPE!)
+				cr = 2906,	-- Dustbelcher Warrior
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251461, {	-- Plans: Mithril Claws (RECIPE!)
+				cr = 2893,	-- Stonevault Bonesnapper
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251394, {	-- Plans: Shining Mithril Boots (RECIPE!)
+				cr = 2894,	-- Stonevault Shaman
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(4616, {	-- Ryedol's Lucky Pick
 				collectible = false,	-- This is a quest item where you have to be on the quest to get it, keep it, and not turn it in for several years to get the transmog for.

@@ -587,6 +587,9 @@ instanceroot(231, {	-- Gnomeregan
 				i(274068, {	-- Thermaplugg Medal of Honor
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
+				i(274049, {	-- Schematic: 9-60 Battery Pack (RECIPE!)
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(6228, {	-- Dark Iron Ambassador

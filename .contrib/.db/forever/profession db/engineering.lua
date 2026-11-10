@@ -66,6 +66,7 @@ i(0, 3978);			-- Standard Scope
 i(0, 3932);			-- Target Dummy
 i(0, 12591);		-- Unstable Trigger
 i(0, 3942);			-- Whirring Bronze Gizmo
+i(0, 12716);		-- Goblin Mortar
 --- QUEST ---
 i(0, 1230656);		-- Reagent Bot
 i(0, 26011);		-- Tranquil Mechanical Yeti
@@ -175,6 +176,10 @@ i(264235, 1266938);	-- Ultralight Goblin Glider
 i(264232, 1266935);	-- Ultrasafe Rechargeable Battery
 i(16052, 19819);	-- Voice Amplification Modulator
 i(280321, 1308178);	-- Whimsical Waistwrap
+i(274049, 1293088);	-- 9-60 Battery Pack
+i(264207, 1266910);	-- SAF-T Bronze Bomb
+i(264208, 1266911);	-- SAF-T Jumbo Dynamite
+i(264215, 1266918);	-- SAF-T Bomb
 -- Gnomish Engineering
 i(0, GNOMISH_ENGINEERING, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
 i(18654, 23096, nil, GNOMISH_ENGINEERING);	-- Gnomish Alarm-o-Bot
@@ -208,18 +213,24 @@ i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
 i(22729, 28327);	-- Steam Tonk Controller
 --- UNKNOWN ---
 --[[
-r(1293088),	-- 9-60 Battery Pack
-i(274049),	-- Schematic: 9-60 Battery Pack
+r(13240),	-- The Mortar: Reloaded
+r(1226206),	-- Tinkerbox
+i(238782),	-- Schematic: Tinkerbox
+i(250400),	-- TODO: Item name not known yet.
+r(1226207),	-- Tinkerbox: Teleport
+i(238783),	-- Schematic: Tinkerbox: Teleport
+i(250401),	-- TODO: Item name not known yet.
+r(1235244),	-- Engineering
+r(1266939),	-- Gnomish Weather Machine
+i(264236),	-- Schematic: Gnomish Weather Machine
+r(1308182),	-- Serrated Strap
+i(280324),	-- Schematic: Serrated Strap
 r(1319154),	-- Small Purple Rocket
 r(1319155),	-- Small White Rocket
 r(1319156),	-- Small Yellow Rocket
 i(286076),	-- Schematic: Small Purple Rocket
 i(286077),	-- Schematic: Small White Rocket
 i(286078),	-- Schematic: Small Yellow Rocket
-r(1266910),	-- SAF-T Bronze Bomb
-i(264207),	-- Schematic: SAF-T Bronze Bomb
-r(1266911),	-- SAF-T Jumbo Dynamite
-i(264208),	-- Schematic: SAF-T Jumbo Dynamite
 r(1319157),	-- Large Purple Rocket
 r(1319158),	-- Large White Rocket
 r(1319159),	-- Large Yellow Rocket
@@ -234,8 +245,6 @@ r(1266916),	-- EZ-Thro Grenade
 i(264213),	-- Schematic: EZ-Thro Grenade
 r(1266917),	-- SAF-T Casing
 i(264214),	-- Schematic: SAF-T Casing
-r(1266918),	-- SAF-T Bomb
-i(264215),	-- Schematic: SAF-T Bomb
 i(286082),	-- Schematic: Purple Rocket Cluster
 i(286083),	-- Schematic: White Rocket Cluster
 i(286084),	-- Schematic: Yellow Rocket Cluster

@@ -1400,6 +1400,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2557,	-- Witherbark Shadow Hunter
 				},
 			}),
+			i(249487, {	-- Formula: Twisted Nether Wand (RECIPE!)
+				cr = 2567,	-- Boulderfist Magus
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3341, {	-- Gauntlets of Ogre Strength
 				cr = 2562,	-- Boulderfist Ogre
 				coords = {
@@ -1436,6 +1440,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2567,	-- Boulderfist Magus
 					2570,	-- Boulderfist Shaman
 				},
+			}),
+			i(251386, {	-- Plans: Hard Gold Boots (RECIPE!)
+				cr = 2586,	-- Syndicate Highwayman
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1297, {	-- Robes of the Shadowcaster
 				cr = 2577,	-- Dark Iron Shadowcaster

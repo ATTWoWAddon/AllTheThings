@@ -2151,6 +2151,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				cr = 276061,	-- Decrepit Harvester
 				coord = { 53.8, 56.2, MAP.TIRISFAL_GLADES },
 			}),
+			i(264207, {	-- Schematic: SAF-T Bronze Bomb (RECIPE!)
+				cr = 4281,	-- Scarlet Scout
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3319, {	-- Short Sabre
 				coords = {
 					{ 78.6, 60.6, MAP.TIRISFAL_GLADES },

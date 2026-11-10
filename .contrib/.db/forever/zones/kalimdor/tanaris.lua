@@ -1332,6 +1332,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
+			i(251397, {	-- Plans: Shining Mithril Gauntlet (RECIPE!)
+				cr = 7855,	-- Southsea Pirate
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(264215, {	-- Schematic: SAF-T Bomb (RECIPE!)
+				cr = 5616,	-- Wastewander Thief
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8483, {	-- Wastewander Water Pouch
 				crs = {
 					5623,	-- Wastewander Assassin

@@ -159,6 +159,9 @@ instanceroot(233, {	-- Razorfen Downs
 			i(10770),	-- Mordresh's Lifeless Skull
 			i(10769),	-- Glowing Eye of Mordresh
 			i(10771),	-- Deathmage Sash
+			i(252843, {	-- Pattern: Prowler's Leather Shoes (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		n(8567, {	-- Glutton
 			i(10772),	-- Glutton's Cleaver

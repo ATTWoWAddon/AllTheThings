@@ -182,26 +182,51 @@ i(249532, 1249154);	-- Totem of Thunder
 i(249508, 1249069);	-- Truesilver Conduit
 i(249509, 1249070);	-- Twisting Essence Jar
 i(17725, 21931);	-- Winter's Might
+i(274393, 1219579);	-- Enchant Off-Hand - Wisdom
+i(274394, 1219580);	-- Enchant 2H Weapon - Spellblasting
+i(249475, 1248459);	-- Enchant Bracer - Minor Healing Power
+i(249487, 1248461);	-- Twisted Nether Wand
+i(249511, 1248510);	-- Enchant 2H Weapon - Lesser Agility
+i(249513, 1248511);	-- Enchant 2H Weapon - Lesser Strength
+i(274424, 1294054);	-- Enchant Gloves - Lotus Claw
 --- UNKNOWN ---
 --[[
-i(249475),	-- Formula: Enchant Bracer - Minor Healing Power
-r(1248459),	-- Enchant Bracer - Minor Healing Power
-r(1248461),	-- Twisted Nether Wand
-i(249487),	-- Formula: Twisted Nether Wand
-r(1248510),	-- Enchant 2H Weapon - Lesser Agility
-i(249511),	-- Formula: Enchant 2H Weapon - Lesser Agility
+r(1217189),	-- Enchant Bracer - Spell Power
+i(235526),	-- TODO: Item name not known yet.
+i(273596),	-- Enchant Bracer - Spell Power
+r(1219577),	-- Enchant Off-Hand - Superior Intellect
+i(273598),	-- Enchant Off-Hand - Superior Intellect
+i(274391),	-- Formula: Enchant Off-Hand - Superior Intellect
+r(1219578),	-- Enchant Off-Hand - Excellent Spirit
+i(273599),	-- Enchant Off-Hand - Excellent Spirit
+i(274392),	-- Formula: Enchant Off-Hand - Excellent Spirit
+r(1219579),	-- Enchant Off-Hand - Wisdom
+i(273600),	-- Enchant Off-Hand - Wisdom
+r(1219580),	-- Enchant 2H Weapon - Spellblasting
+i(273601),	-- Enchant 2H Weapon - Spellblasting
+r(1219581),	-- Enchant Shield - Excellent Stamina
+i(273602),	-- Enchant Shield - Excellent Stamina
+i(274395),	-- Formula: Enchant Shield - Excellent Stamina
+r(1220623),	-- Enchant Shield - Critical Strike
+i(273605),	-- Enchant Shield - Critical Strike
+i(274400),	-- Formula: Enchant Shield - Critical Strike
+r(1231164),	-- Enchant Weapon - Grand Sorcerer
+i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
+i(273609),	-- Enchant Weapon - Grand Sorcerer
+r(1248497),	-- Enchant Bracer - Agility
+i(249488),	-- Formula: Enchant Bracer - Agility
+i(273614),	-- Enchant Bracer - Agility
+r(1328948),	-- Enchant Boots - Speed
+i(289559),	-- TODO: Item name not known yet.
+i(289560),	-- TODO: Item name not known yet.
 r(1248509),	-- Dreambough Wand
 i(249512),	-- Formula: Dreambough Wand
-r(1248511),	-- Enchant 2H Weapon - Lesser Strength
-i(249513),	-- Formula: Enchant 2H Weapon - Lesser Strength
 r(1248500),	-- Enchant Bracer - Greater Agility
 i(249514),	-- Formula: Enchant Bracer - Greater Agility
 r(1248505),	-- Lesser Eternal Wand
 i(249515),	-- Formula: Lesser Eternal Wand
 r(1248528),	-- Enchant Gloves - Advanced Skinning
 i(249516),	-- Formula: Enchant Gloves - Advanced Skinning
-r(1294054),	-- Enchant Gloves - Lotus Claw
-i(274424),	-- Formula: Enchant Gloves - Lotus Claw
 r(1248515),	-- Greater Eternal Wand
 i(249522),	-- Formula: Greater Eternal Wand
 r(1249107),	-- Frozen Heart of the Mountain

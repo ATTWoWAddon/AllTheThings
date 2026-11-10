@@ -662,6 +662,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					5846,	-- Dark Iron Taskmaster
 				},
 			}),
+			i(252859, {	-- Pattern: Blue Suede Shoes (RECIPE!)
+				cr = 5846,	-- Dark Iron Taskmaster
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14476, {	-- Pattern: Cindercloth Gloves (RECIPE!)
 				coords = {
 					{ 19.4, 36.6, MAP.SEARING_GORGE },

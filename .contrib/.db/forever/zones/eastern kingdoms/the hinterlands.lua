@@ -769,6 +769,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				coord = { 13.3, 43.4, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
 				groups = {
+					i(252942, {	-- Pattern: Forceful Rugged Armor Kit (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(8409, {	-- Pattern: Nightscape Shoulders (RECIPE!)
 						isLimited = true,
 					}),
@@ -805,6 +808,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			i(4589),	-- Long Elegant Feather
 			i(8704, {	-- OOX-09/HL Distress Beacon
 				description = "This item can drop off of any hostile creature in the zone. Rare and Elite creatures have higher drop chance.",
+			}),
+			i(254078, {	-- Pattern: Earthenweave Cord (RECIPE!)
+				cr = 4467,	-- Vilebranch Soothsayer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 				cr = 2644,	-- Vilebranch Hideskinner

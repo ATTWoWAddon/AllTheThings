@@ -1277,6 +1277,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 			}),
+			i(252866, {	-- Pattern: Blue Suede Gloves (RECIPE!)
+				cr = 7153,	-- Deadwood Warrior
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15752, {	-- Pattern: Living Leggings (RECIPE!)
 				coords = {
 					{ 62.6, 12.6, MAP.FELWOOD },
@@ -1287,8 +1291,20 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			i(15739, {	-- Pattern: Runic Leather Bracers
 				cr = 7112,	-- Jaedenar Cultist
 			}),
+			i(252865, {	-- Pattern: Tooled Leather Boots (RECIPE!)
+				cr = 7158,	-- Deadwood Shaman
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252879, {	-- Pattern: Wicked Leather Boots (RECIPE!)
+				cr = 9878,	-- Entropic Beast
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15744, {	-- Pattern: Wicked Leather Headband (RECIPE!)
 				cr = 7107,	-- Jadefire Trickster
+			}),
+			i(251442, {	-- Plans: Blessed Plate Bracers (RECIPE!)
+				cr = 7108,	-- Jadefire Betrayer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 				coords = {

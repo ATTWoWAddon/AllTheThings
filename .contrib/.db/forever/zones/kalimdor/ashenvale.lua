@@ -1397,6 +1397,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					3808,	-- Forsaken Dark Stalker
 				},
 			}),
+			i(249475, {	-- Formula: Enchant Bracer - Minor Healing Power (RECIPE!)
+				cr = 3725,	-- Dark Strand Cultist
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(6346, {	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 3715,	-- Wrathtail Sea Witch
@@ -1407,9 +1411,21 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					3919,	-- Withered Ancient
 				},
 			}),
+			i(251455, {	-- Plans: Bronze Dory (RECIPE!)
+				cr = 3727,	-- Dark Strand Enforcer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251456, {	-- Plans: Iron Fists (RECIPE!)
+				cr = 3771,	-- Bleakheart Hellcaller
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(250182, {	-- Recipe: Bear Brisket (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 3809,	-- Ashenvale Bear
+			}),
+			i(250368, {	-- Recipe: Cleric's Elixir (RECIPE!)
+				cr = 3757,	-- Xavian Hellcaller
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

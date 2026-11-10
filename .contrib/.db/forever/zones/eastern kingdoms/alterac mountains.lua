@@ -917,6 +917,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 				cr = 2434,	-- Shadowy Assassin
 			}),
+			i(251391, {	-- Plans: Hard Gold Pauldrons (RECIPE!)
+				cr = 2252,	-- Crushridge Ogre
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3745, {	-- Rune of Opening
 				cr = 2358,	-- Dalaran Summoner
 			}),

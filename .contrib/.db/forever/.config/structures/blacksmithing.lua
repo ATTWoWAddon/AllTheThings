@@ -190,6 +190,12 @@ BLACKSMITHING_RECIPES = {
 			i(251373, {	-- Plans: Acolyte's Silvered Chain Shirt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
 			}),
+			i(285291, {	-- Plans: Arcanite Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+			}),
+			i(285289, {	-- Plans: Cracked Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+			}),
 			i(251369, {	-- Plans: Crusader's Chain Belt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
 			}),
@@ -225,6 +231,9 @@ BLACKSMITHING_RECIPES = {
 			}),
 			i(251371, {	-- Plans: Guard's Silvered Chain Shirt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+			}),
+			i(285290, {	-- Plans: Mithril Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
 			}),
 			i(251357, {	-- Plans: Protector's Boots (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
@@ -384,6 +393,12 @@ BLACKSMITHING_RECIPES = {
 			i(251373, {	-- Plans: Acolyte's Silvered Chain Shirt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
 			}),
+			i(285291, {	-- Plans: Arcanite Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 90 }},
+			}),
+			i(285289, {	-- Plans: Cracked Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+			}),
 			i(251369, {	-- Plans: Crusader's Chain Belt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
 			}),
@@ -419,6 +434,9 @@ BLACKSMITHING_RECIPES = {
 			}),
 			i(251371, {	-- Plans: Guard's Silvered Chain Shirt (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},
+			}),
+			i(285290, {	-- Plans: Mithril Blacksmith Hammer (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 60 }},
 			}),
 			i(251357, {	-- Plans: Protector's Boots (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 30 }},

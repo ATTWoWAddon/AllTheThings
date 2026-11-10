@@ -1161,8 +1161,20 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			i(4639, {	-- Enchanted Sea Kelp
 				cr = 4363,	-- Mirefin Oracle
 			}),
+			i(249511, {	-- Formula: Enchant 2H Weapon - Lesser Agility (RECIPE!)
+				cr = 4329,	-- Firemane Scout
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 				cr = 4834,	-- Theramore Infiltrator
+			}),
+			i(254020, {	-- Pattern: Earthen Silk Cuffs (RECIPE!)
+				cr = 4359,	-- Mirefin Murloc
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251459, {	-- Plans: Mithril Shortsword (RECIPE!)
+				cr = 4362,	-- Mirefin Coastrunner
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12718, {	-- Plans: Runic Breastplate (RECIPE!)
 				crs = {
@@ -1175,6 +1187,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			i(12706, {	-- Plans: Runic Plate Shoulders (RECIPE!)
 				cr = 4366,	-- Strashaz Serpent Guard
+			}),
+			i(250184, {	-- Recipe: Raptor Rouladen (RECIPE!)
+				cr = 4357,	-- Bloodfen Lashtail
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(20766, {	-- Slimy Bag
 				crs = {

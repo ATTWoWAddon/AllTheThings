@@ -1102,6 +1102,22 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					4099,	-- Galak Marauder
 				},
 			}),
+			i(254000, {	-- Pattern: Earthen Leggings (RECIPE!)
+				cr = 4116,	-- Gravelsnout Surveyor
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251385, {	-- Plans: Hard Gold Cuirass (RECIPE!)
+				cr = 4101,	-- Screeching Roguefeather
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251457, {	-- Plans: Steel Spear (RECIPE!)
+				cr = 4151,	-- Saltstone Crystalhide
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250389, {	-- Recipe: Elixir of Intellect (RECIPE!)
+				cr = 4095,	-- Galak Mauler
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(729, {	-- Stringy Vulture Meat
 				crs = {
 					4158,	-- Salt Flats Vulture

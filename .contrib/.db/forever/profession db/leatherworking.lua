@@ -338,17 +338,59 @@ i(252782, 1255125);	-- Wisdom's Leather Gloves
 i(252803, 1255104);	-- Wisdom's Leather Hood
 i(252825, 1255082);	-- Wisdom's Leather Leggings
 i(252810, 1255097);	-- Wisdom's Leather Tunic
+i(276542, 1299914);	-- Spiritcaller Kilt
+i(276543, 1299915);	-- Spiritcaller Gloves
+i(276544, 1299916);	-- Spiritcaller Mantle
+i(276545, 1299917);	-- Spiritcaller Boots
+i(252883, 1255024);	-- Blue Suede Armor
+i(252866, 1255041);	-- Blue Suede Gloves
+i(252859, 1255048);	-- Blue Suede Shoes
+i(252942, 1254965);	-- Forceful Rugged Armor Kit
+i(252928, 1254979);	-- Heavy Scorpid Boots
+i(252871, 1255036);	-- Mender's Leather Gauntlets
+i(252847, 1255060);	-- Mender's Leather Shoes
+i(252899, 1255008);	-- Mender's Mail Boots
+i(252843, 1255064);	-- Prowler's Leather Shoes
+i(252898, 1255009);	-- Skirmisher's Mail Boots
+i(252844, 1255063);	-- Skulker's Leather Shoes
+i(252846, 1255061);	-- Skycaller's Leather Shoes
+i(252897, 1255010);	-- Skycaller's Mail Boots
+i(252896, 1255011);	-- Stalker's Mail Boots
+i(252865, 1255042);	-- Tooled Leather Boots
+i(252845, 1255062);	-- Warden's Leather Shoes
+i(252879, 1255028);	-- Wicked Leather Boots
 --- UNKNOWN ---
 --[[
+r(1255110),	-- Wisdom's Leather Pants
+i(252797),	-- TODO: Item name not known yet.
+r(1255111),	-- Stormrider's Leather Pants
+i(252796),	-- TODO: Item name not known yet.
+r(1255112),	-- Totemic Leather Pants
+i(252795),	-- TODO: Item name not known yet.
+r(1255113),	-- Defender's Leather Pants
+i(252794),	-- TODO: Item name not known yet.
+r(1255114),	-- Trapper's Leather Pants
+i(252793),	-- TODO: Item name not known yet.
+r(1255115),	-- Brawler's Leather Pants
+i(252792),	-- TODO: Item name not known yet.
+r(1255131),	-- Wisdom's Leather Armor
+i(252776),	-- TODO: Item name not known yet.
+r(1255132),	-- Stormrider's Leather Armor
+i(252775),	-- TODO: Item name not known yet.
+r(1255133),	-- Totemic Leather Armor
+i(252774),	-- TODO: Item name not known yet.
+r(1255134),	-- Defender's Leather Armor
+i(252773),	-- TODO: Item name not known yet.
+r(1255135),	-- Trapper's Leather Armor
+i(252772),	-- TODO: Item name not known yet.
+r(1255136),	-- Brawler's Leather Armor
+i(252771),	-- TODO: Item name not known yet.
 r(1254968),	-- Black Dragonscale Helm
 r(1254969),	-- Blue Dragonscale Helm
-r(1255024),	-- Blue Suede Armor
 r(1255021),	-- Blue Suede Belt
 r(1255019),	-- Blue Suede Bracers
-r(1255041),	-- Blue Suede Gloves
 r(1255017),	-- Blue Suede Hat
 r(1255029),	-- Blue Suede Pants
-r(1255048),	-- Blue Suede Shoes
 r(1255026),	-- Blue Suede Shoulder
 r(1254998),	-- Charged Scorpid Belt
 r(1254971),	-- Charged Scorpid Boots
@@ -359,24 +401,16 @@ r(1254973),	-- Charged Scorpid Leggings
 r(1254990),	-- Charged Scorpid Shoulder
 r(1254975),	-- Charged Scorpid Vest
 r(1255015),	-- Dawn Armor
-r(1254965),	-- Forceful Rugged Armor Kit
-r(1254979),	-- Heavy Scorpid Boots
 r(1255012),	-- Ironfeather Leggings
 r(1255016),	-- Living Crown
-r(1255036),	-- Mender's Leather Gauntlets
-r(1255060),	-- Mender's Leather Shoes
-r(1255008),	-- Mender's Mail Boots
 r(1254986),	-- Mender's Mail Gauntlets
 r(1306527),	-- Outlaw's Collar
 i(252939),	-- Pattern: Black Dragonscale Helm
 i(252938),	-- Pattern: Blue Dragonscale Helm
-i(252883),	-- Pattern: Blue Suede Armor
 i(252886),	-- Pattern: Blue Suede Belt
 i(252888),	-- Pattern: Blue Suede Bracers
-i(252866),	-- Pattern: Blue Suede Gloves
 i(252890),	-- Pattern: Blue Suede Hat
 i(252878),	-- Pattern: Blue Suede Pants
-i(252859),	-- Pattern: Blue Suede Shoes
 i(252881),	-- Pattern: Blue Suede Shoulder
 i(252909),	-- Pattern: Charged Scorpid Belt
 i(252936),	-- Pattern: Charged Scorpid Boots
@@ -387,28 +421,17 @@ i(252934),	-- Pattern: Charged Scorpid Leggings
 i(252917),	-- Pattern: Charged Scorpid Shoulder
 i(252932),	-- Pattern: Charged Scorpid Vest
 i(252892),	-- Pattern: Dawn Armor
-i(252942),	-- Pattern: Forceful Rugged Armor Kit
-i(252928),	-- Pattern: Heavy Scorpid Boots
 i(252895),	-- Pattern: Ironfeather Leggings
 i(252891),	-- Pattern: Living Crown
-i(252871),	-- Pattern: Mender's Leather Gauntlets
-i(252847),	-- Pattern: Mender's Leather Shoes
-i(252899),	-- Pattern: Mender's Mail Boots
 i(252921),	-- Pattern: Mender's Mail Gauntlets
 i(279302),	-- Pattern: Outlaw's Collar
 i(252940),	-- Pattern: Pristine Scorpid Leggings
 i(252867),	-- Pattern: Prowler's Leather Gauntlets
-i(252843),	-- Pattern: Prowler's Leather Shoes
 i(252937),	-- Pattern: Red Dragonscale Leggings
-i(252898),	-- Pattern: Skirmisher's Mail Boots
 i(252920),	-- Pattern: Skirmisher's Mail Gauntlets
 i(252868),	-- Pattern: Skulker's Leather Gauntlets
-i(252844),	-- Pattern: Skulker's Leather Shoes
 i(252870),	-- Pattern: Skycaller's Leather Gauntlets
-i(252846),	-- Pattern: Skycaller's Leather Shoes
-i(252897),	-- Pattern: Skycaller's Mail Boots
 i(252919),	-- Pattern: Skycaller's Mail Gauntlets
-i(252896),	-- Pattern: Stalker's Mail Boots
 i(252918),	-- Pattern: Stalker's Mail Gauntlets
 i(252929),	-- Pattern: Supple Scorpid Belt
 i(252908),	-- Pattern: Supple Scorpid Boots
@@ -419,7 +442,6 @@ i(252935),	-- Pattern: Supple Scorpid Sabatons
 i(252926),	-- Pattern: Supple Scorpid Shoulder
 i(252893),	-- Pattern: Timbermaw Tunic
 i(252858),	-- Pattern: Tooled Leather Belt
-i(252865),	-- Pattern: Tooled Leather Boots
 i(252885),	-- Pattern: Tooled Leather Bracers
 i(252882),	-- Pattern: Tooled Leather Crown
 i(252887),	-- Pattern: Tooled Leather Epaulets
@@ -427,23 +449,15 @@ i(252880),	-- Pattern: Tooled Leather Gauntlets
 i(252889),	-- Pattern: Tooled Leather Pants
 i(252894),	-- Pattern: Warbear Helm
 i(252869),	-- Pattern: Warden's Leather Gauntlets
-i(252845),	-- Pattern: Warden's Leather Shoes
-i(252879),	-- Pattern: Wicked Leather Boots
 i(252884),	-- Pattern: Wicked Leather Shoulder
 i(279307),	-- Pattern: Wild Leather Armor Kit
 r(1254967),	-- Pristine Scorpid Leggings
 r(1255040),	-- Prowler's Leather Gauntlets
-r(1255064),	-- Prowler's Leather Shoes
 r(1254970),	-- Red Dragonscale Leggings
-r(1255009),	-- Skirmisher's Mail Boots
 r(1254987),	-- Skirmisher's Mail Gauntlets
 r(1255039),	-- Skulker's Leather Gauntlets
-r(1255063),	-- Skulker's Leather Shoes
 r(1255037),	-- Skycaller's Leather Gauntlets
-r(1255061),	-- Skycaller's Leather Shoes
-r(1255010),	-- Skycaller's Mail Boots
 r(1254988),	-- Skycaller's Mail Gauntlets
-r(1255011),	-- Stalker's Mail Boots
 r(1254989),	-- Stalker's Mail Gauntlets
 r(1254978),	-- Supple Scorpid Belt
 r(1254999),	-- Supple Scorpid Boots
@@ -454,7 +468,6 @@ r(1254972),	-- Supple Scorpid Sabatons
 r(1254981),	-- Supple Scorpid Shoulder
 r(1255014),	-- Timbermaw Tunic
 r(1255049),	-- Tooled Leather Belt
-r(1255042),	-- Tooled Leather Boots
 r(1255022),	-- Tooled Leather Bracers
 r(1255025),	-- Tooled Leather Crown
 r(1255020),	-- Tooled Leather Epaulets
@@ -462,8 +475,6 @@ r(1255027),	-- Tooled Leather Gauntlets
 r(1255018),	-- Tooled Leather Pants
 r(1255013),	-- Warbear Helm
 r(1255038),	-- Warden's Leather Gauntlets
-r(1255062),	-- Warden's Leather Shoes
-r(1255028),	-- Wicked Leather Boots
 r(1255023),	-- Wicked Leather Shoulder
 r(1306532),	-- Wild Leather Armor Kit
 --cenario rep

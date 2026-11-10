@@ -255,6 +255,39 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					},
 				},
 			}),
+			q(89013, {	-- Gettin' Buzzed [A]
+				qg = 240482,	-- Berdun Cliffbrew <Innkeeper>
+				qi = 238501,	-- Pellet Gun (PQI!)
+				coord = { 12.4, 77.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/5 Wild Honey
+						provider = { "i", 238503 },	-- Wild Honey
+						cr = 236028,	-- Honey Wasp
+					}),
+					i(290333),	-- Berdun's Trusty Rifle
+					i(250955),	-- Potion of Beast Slaying
+					i(250999),	-- Recipe: Potion of Beast Slaying (RECIPE!)
+				},
+			}),
+			q(91608, {	-- Gettin' Buzzed [H]
+				-- TODO: Wowhead doesn't list the quest giver yet. The quest text names Kurll's Pellet Gun.
+				qi = 238501,	-- Pellet Gun (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/5 Wild Honey
+						provider = { "i", 238503 },	-- Wild Honey
+						cr = 236028,	-- Honey Wasp
+					}),
+					i(290333),	-- Berdun's Trusty Rifle
+					i(250955),	-- Potion of Beast Slaying
+					i(250999),	-- Recipe: Potion of Beast Slaying (RECIPE!)
+				},
+			}),
 			q(3563, {	-- Jes'rimon's Payment to Jediga
 				sourceQuest = 3541,	-- Delivery to Jes'rimon
 				qg = 8659,	-- Jes'rimon
@@ -751,6 +784,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 			i(15728, {	-- Pattern: Wicked Leather Bracers (RECIPE!)
 				cr = 6201,	-- Legashi Rogue
+			}),
+			i(251441, {	-- Plans: Imperial Plate Gauntlets (RECIPE!)
+				cr = 6199,	-- Blood Elf Reclaimer
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 				coords = {

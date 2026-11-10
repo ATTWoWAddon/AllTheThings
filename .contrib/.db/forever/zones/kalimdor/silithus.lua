@@ -2107,22 +2107,27 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			n(15179, {	-- Mishta <General Trade Goods Vendor>
 				coord = { 49.8, 36.4, MAP.SILITHUS },
-				--[[Commented out until confirmed
 				groups = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
+					-- Commented out recipes: not confirmed on the vendor yet.
 					{		-- Neutral
 					}, {	-- Friendly
-						i(22310),	-- Pattern: Cenarion Herb Bag (RECIPE!)
-						i(22772),	-- Pattern: Sylvan Shoulders (RECIPE!)
+						i(275583, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Swarmtender's Gloves (RECIPE!)
+						i(275580, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Venomspew Gloves (RECIPE!)
+						--i(22310),	-- Pattern: Cenarion Herb Bag (RECIPE!)
+						--i(22772),	-- Pattern: Sylvan Shoulders (RECIPE!)
 					}, {	-- Honored
-						i(22773),	-- Pattern: Sylvan Crown (RECIPE!)
+						i(275584, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Swarmtender's Cord (RECIPE!)
+						i(275585, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Swarmtender's Footpads (RECIPE!)
+						i(275581, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Venomspew Cord (RECIPE!)
+						i(275582, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Venomspew Footpads (RECIPE!)
+						--i(22773),	-- Pattern: Sylvan Crown (RECIPE!)
 					}, {	-- Revered
-						i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
-						i(22312),	-- Pattern: Satchel of Cenarius (RECIPE!)
-						i(22774),	-- Pattern: Sylvan Vest (RECIPE!)
+						--i(22683),	-- Pattern: Gaea's Embrace (RECIPE!)
+						--i(22312),	-- Pattern: Satchel of Cenarius (RECIPE!)
+						--i(22774),	-- Pattern: Sylvan Vest (RECIPE!)
 					}, {	-- Exalted
 					},
 				}),
-				--]]
 			}),
 			n(15176, {	-- Vargus <Blacksmith>
 				coord = { 51.2, 38.8, MAP.SILITHUS },

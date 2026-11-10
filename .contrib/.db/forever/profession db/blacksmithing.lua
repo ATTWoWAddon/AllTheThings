@@ -91,6 +91,16 @@ i(0, 19668);		-- Truesilver Skeleton Key
 i(0, 1252247);		-- Veteran's Chain Helm
 i(0, 1252242);		-- Veteran's Chain Leggings
 i(0, 1252237);		-- Veteran's Chain Shirt
+i(0, 3501);			-- Green Iron Bracers
+i(0, 3502);			-- Green Iron Helm
+i(0, 3506);			-- Green Iron Leggings
+i(0, 3508);			-- Green Iron Hauberk
+i(0, 7223);			-- Golden Scale Bracers
+i(0, 9916);			-- Steel Breastplate
+i(0, 9926);			-- Heavy Mithril Shoulder
+i(0, 9928);			-- Heavy Mithril Gauntlet
+i(0, 9931);			-- Mithril Plate Pants
+i(0, 9935);			-- Steel Plate Helm
 --- QUEST ---
 i(0, 9957);			-- Orcish War Leggings
 i(0, 9979);			-- Ornate Mithril Boots
@@ -287,40 +297,62 @@ i(251415, 1252312);	-- Warder's Sabatons
 i(251425, 1252322);	-- Warder's Waistguard
 i(251435, 1252332);	-- Warder's Wristguards
 i(8029, 9997);		-- Wicked Mithril Blade
+i(12698, 16660);	-- Dawnbringer Shoulders
+i(276984, 1301534);	-- Azure Skyforged Helm
+i(277673, 1302598);	-- Rough Copper Chain Boots
+i(251364, 1252261);	-- Crusader's Gloves
+i(251418, 1252315);	-- Officer's Gauntlet
+i(251419, 1252316);	-- Sentinel's Gauntlet
+i(251420, 1252317);	-- Warder's Gauntlet
+i(251421, 1252318);	-- Prefect's Gauntlet
+i(251422, 1252319);	-- Justicar's Gauntlet
+i(251456, 1252353);	-- Iron Fists
+i(251459, 1252356);	-- Mithril Shortsword
+i(251461, 1252358);	-- Mithril Claws
+i(251463, 1252360);	-- Mithril Stiletto
+i(251455, 1252352);	-- Bronze Dory
+i(251457, 1252354);	-- Steel Spear
+i(251464, 1252361);	-- Charged Mithril Battleaxe
+i(251341, 1252238);	-- Guard's Chain Shirt
+i(251385, 1252282);	-- Hard Gold Cuirass
+i(251389, 1252286);	-- Hard Gold Coif
+i(251391, 1252288);	-- Hard Gold Pauldrons
+i(251392, 1252289);	-- Shining Mithril Breastplate
+i(251387, 1252284);	-- Hard Gold Bracers
+i(251397, 1252294);	-- Shining Mithril Gauntlet
+i(251388, 1252285);	-- Hard Gold Leggings
+i(251386, 1252283);	-- Hard Gold Boots
+i(251398, 1252295);	-- Officer's Boots
+i(251399, 1252296);	-- Sentinel's Boots
+i(251400, 1252297);	-- Warder's Boots
+i(251401, 1252298);	-- Prefect's Boots
+i(251402, 1252299);	-- Justicar's Boots
+i(251394, 1252291);	-- Shining Mithril Boots
+i(251442, 1252339);	-- Blessed Plate Bracers
+i(251441, 1252338);	-- Imperial Plate Gauntlets
+i(285289, 1317962);	-- Cracked Blacksmith Hammer
+i(285290, 1317963);	-- Mithril Blacksmith Hammer
+i(285291, 1317964);	-- Arcanite Blacksmith Hammer
 --- UNKNOWN ---
 --[[
-r(1252353),	-- Iron Fists
-i(251456),	-- Plans: Iron Fists
-r(1252356),	-- Mithril Shortsword
-i(251459),	-- Plans: Mithril Shortsword
-r(1252358),	-- Mithril Claws
-i(251461),	-- Plans: Mithril Claws
-r(1252360),	-- Mithril Stiletto
-i(251463),	-- Plans: Mithril Stiletto
-r(1252352),	-- Bronze Dory
-i(251455),	-- Plans: Bronze Dory
-r(1252354),	-- Steel Spear
-i(251457),	-- Plans: Steel Spear
-r(1252361),	-- Charged Mithril Battleaxe
-i(251464),	-- Plans: Charged Mithril Battleaxe
+r(1224636),	-- Scarlet Soldier's Grips
+i(238326),	-- Plans: Scarlet Soldier's Grips
+i(250390),	-- TODO: Item name not known yet.
+r(1224637),	-- Scarlet Soldier's Waistguard
+i(238327),	-- Plans: Scarlet Soldier's Waistguard
+i(250391),	-- TODO: Item name not known yet.
+r(1224638),	-- Scarlet Soldier's Legplates
+i(238328),	-- Plans: Scarlet Soldier's Legplates
+i(250392),	-- TODO: Item name not known yet.
+r(1224639),	-- Scarlet Soldier's Stompers
+i(238329),	-- Plans: Scarlet Soldier's Stompers
+i(250393),	-- TODO: Item name not known yet.
+r(1252359),	-- Mithril Claymore
+i(251462),	-- Plans: Mithril Claymore
 r(1252364),	-- Thorium Poleaxe
 i(251467),	-- Plans: Thorium Poleaxe
-r(1252238),	-- Guard's Chain Shirt
-i(251341),	-- Plans: Guard's Chain Shirt
-r(1252282),	-- Hard Gold Cuirass
-i(251385),	-- Plans: Hard Gold Cuirass
-r(1252286),	-- Hard Gold Coif
-i(251389),	-- Plans: Hard Gold Coif
-r(1252288),	-- Hard Gold Pauldrons
-i(251391),	-- Plans: Hard Gold Pauldrons
 r(1252290),	-- Shining Mithril Pauldrons
 i(251393),	-- Plans: Shining Mithril Pauldrons
-r(1252289),	-- Shining Mithril Breastplate
-i(251392),	-- Plans: Shining Mithril Breastplate
-r(1252284),	-- Hard Gold Bracers
-i(251387),	-- Plans: Hard Gold Bracers
-r(1252294),	-- Shining Mithril Gauntlet
-i(251397),	-- Plans: Shining Mithril Gauntlet
 r(1252305),	-- Officer's Belt
 r(1252306),	-- Sentinel's Belt
 r(1252307),	-- Warder's Belt
@@ -331,12 +363,8 @@ i(251409),	-- Plans: Sentinel's Belt
 i(251410),	-- Plans: Warder's Belt
 i(251411),	-- Plans: Prefect's Belt
 i(251412),	-- Plans: Justicar's Belt
-r(1252285),	-- Hard Gold Leggings
-i(251388),	-- Plans: Hard Gold Leggings
 r(1252293),	-- Shining Mithril Pants
 i(251396),	-- Plans: Shining Mithril Pants
-r(1252283),	-- Hard Gold Boots
-i(251386),	-- Plans: Hard Gold Boots
 r(251418, 1252315),	-- Officer's Gauntlet
 r(251419, 1252316),	-- Sentinel's Gauntlet
 r(251420, 1252317),	-- Warder's Gauntlet
@@ -347,18 +375,6 @@ i(7984, 9950);		-- Ornate Mithril Gloves
 i(7975, 9933);		-- Heavy Mithril Pants
 i(7983, 9945);		-- Ornate Mithril Pants
 i(7981, 9818);		-- Barbaric Iron Boots
-r(1252295),	-- Officer's Boots
-r(1252296),	-- Sentinel's Boots
-r(1252297),	-- Warder's Boots
-r(1252298),	-- Prefect's Boots
-r(1252299),	-- Justicar's Boots
-i(251398),	-- Plans: Officer's Boots
-i(251399),	-- Plans: Sentinel's Boots
-i(251400),	-- Plans: Warder's Boots
-i(251401),	-- Plans: Prefect's Boots
-i(251402),	-- Plans: Justicar's Boots
-r(1252291),	-- Shining Mithril Boots
-i(251394),	-- Plans: Shining Mithril Boots
 r(1252347),	-- Champion's Legplates
 i(251450),	-- Plans: Champion's Legplates
 r(1252342),	-- Blessed Plate Helm
@@ -367,8 +383,6 @@ r(1252335),	-- Blessed Plate Pauldrons
 i(251438),	-- Plans: Blessed Plate Pauldrons
 r(1252343),	-- Blessed Plate Chest
 i(251446),	-- Plans: Blessed Plate Chest
-r(1252339),	-- Blessed Plate Bracers
-i(251442),	-- Plans: Blessed Plate Bracers
 r(1252337),	-- Blessed Plate Gauntlet
 i(251440),	-- Plans: Blessed Plate Gauntlet
 r(1252300),	-- Officer's Gloves
@@ -381,8 +395,6 @@ i(251404),	-- Plans: Sentinel's Gloves
 i(251405),	-- Plans: Warder's Gloves
 i(251406),	-- Plans: Prefect's Gloves
 i(251407),	-- Plans: Justicar's Gloves
-r(1252338),	-- Imperial Plate Gauntlets
-i(251441),	-- Plans: Imperial Plate Gauntlets
 r(1252341),	-- Blessed Plate Belt
 i(251444),	-- Plans: Blessed Plate Belt
 r(1252340),	-- Blessed Plate Leggings
@@ -393,12 +405,6 @@ r(1252350),	-- Breastplate of Salvation
 i(251453),	-- Plans: Breastplate of Salvation
 r(1252349),	-- Martyr's Legplates
 i(251452),	-- Plans: Martyr's Legplates
-r(1317962),	-- Cracked Blacksmith Hammer
-i(285289),	-- Plans: Cracked Blacksmith Hammer
-r(1317963),	-- Mithril Blacksmith Hammer
-i(285290),	-- Plans: Mithril Blacksmith Hammer
-r(1317964),	-- Arcanite Blacksmith Hammer
-i(285291),	-- Plans: Arcanite Blacksmith Hammer
 r(1263073),	-- Master Forge
 i(273113),	-- Blueprint: Master Forge
 -- new raid?

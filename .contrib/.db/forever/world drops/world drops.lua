@@ -3466,18 +3466,63 @@ root(ROOTS.WorldDrops, {
 			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
 			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
 			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
+			i(251341, {	-- Plans: Guard's Chain Shirt (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor
+					645,	-- Cookie
+					646,	-- Mr. Smite
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					11517,	-- Oggleflint
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 			i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
 			i(6045),	-- Plans: Iron Counterweight (RECIPE!)
 			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
 			i(3866),	-- Plans: Jade Serpentblade (RECIPE!)
+			i(251402, {	-- Plans: Justicar's Boots (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					4542,	-- High Inquisitor Fairbanks
+					7355,	-- Tuten'kash
+					7358,	-- Amnennar the Coldbringer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12717),	-- Plans: Lionheart Helm (RECIPE!)
 			i(3608),	-- Plans: Mighty Iron Hammer (RECIPE!)
 			i(7991),	-- Plans: Mithril Plate Shoulders (RECIPE!)
 			i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 			i(7989),	-- Plans: Mithril Spurs (RECIPE!)
+			i(251398, {	-- Plans: Officer's Boots (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					7357,	-- Mordresh Fire Eye
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
+			i(251401, {	-- Plans: Prefect's Boots (RECIPE!)
+				crs = {
+					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12685),	-- Plans: Radiant Belt (RECIPE!)
 			i(12697),	-- Plans: Radiant Boots (RECIPE!)
 			i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
@@ -3487,6 +3532,15 @@ root(ROOTS.WorldDrops, {
 			i(2881),	-- Plans: Runed Copper Breastplate (RECIPE!)
 			i(8028),	-- Plans: Runed Mithril Hammer (RECIPE!)
 			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
+			i(251399, {	-- Plans: Sentinel's Boots (RECIPE!)
+				crs = {
+					3976,	-- Scarlet Commander Mograine
+					6487,	-- Arcanist Doan
+					7354,	-- Ragglesnout
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
 			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
 			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
@@ -3505,6 +3559,14 @@ root(ROOTS.WorldDrops, {
 			i(12694),	-- Plans: Thorium Helm (RECIPE!)
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
+			i(251400, {	-- Plans: Warder's Boots (RECIPE!)
+				crs = {
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
 			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 			--[[Commented out until found
@@ -3595,15 +3657,89 @@ root(ROOTS.WorldDrops, {
 			i(252804, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
+			i(252847, {	-- Pattern: Mender's Leather Shoes (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					7354,	-- Ragglesnout
+					7356,	-- Plaguemaw the Rotting
+					7358,	-- Amnennar the Coldbringer
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252899, {	-- Pattern: Mender's Mail Boots (RECIPE!)
+				crs = {
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745),	-- Pattern: Runic Leather Belt (RECIPE!)
 			i(15731),	-- Pattern: Runic Leather Gauntlets (RECIPE!)
 			i(15765),	-- Pattern: Runic Leather Pants (RECIPE!)
+			i(252898, {	-- Pattern: Skirmisher's Mail Boots (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252844, {	-- Pattern: Skulker's Leather Shoes (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					7355,	-- Tuten'kash
+					7357,	-- Mordresh Fire Eye
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252846, {	-- Pattern: Skycaller's Leather Shoes (RECIPE!)
+				crs = {
+					3976,	-- Scarlet Commander Mograine
+					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252897, {	-- Pattern: Skycaller's Mail Boots (RECIPE!)
+				crs = {
+					6487,	-- Arcanist Doan
+					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252896, {	-- Pattern: Stalker's Mail Boots (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7604,	-- Sergeant Bly
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
+			i(252845, {	-- Pattern: Warden's Leather Shoes (RECIPE!)
+				crs = {
+					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
 			i(15757),	-- Pattern: Wicked Leather Pants (RECIPE!)
 			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
@@ -3611,6 +3747,15 @@ root(ROOTS.WorldDrops, {
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
+			i(254044, {	-- Pattern: Black Cord (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					6487,	-- Arcanist Doan
+					7358,	-- Amnennar the Coldbringer
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
 			i(14484),	-- Pattern: Brightcloth Cloak (RECIPE!)
@@ -3624,11 +3769,49 @@ root(ROOTS.WorldDrops, {
 			i(14496),	-- Pattern: Felcloth Hood (RECIPE!)
 			i(14506),	-- Pattern: Felcloth Robe (RECIPE!)
 			i(14508),	-- Pattern: Felcloth Shoulders (RECIPE!)
+			i(254042, {	-- Pattern: Fiery Cord (RECIPE!)
+				crs = {
+					4542,	-- High Inquisitor Fairbanks
+					7355,	-- Tuten'kash
+					7358,	-- Amnennar the Coldbringer
+					8567,	-- Glutton
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14474),	-- Pattern: Frostweave Gloves (RECIPE!)
 			i(14489),	-- Pattern: Frostweave Pants (RECIPE!)
 			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
 			i(14466),	-- Pattern: Frostweave Tunic (RECIPE!)
+			i(254040, {	-- Pattern: Frothing Cord (RECIPE!)
+				crs = {
+					3976,	-- Scarlet Commander Mograine
+					6487,	-- Arcanist Doan
+					7355,	-- Tuten'kash
+					7358,	-- Amnennar the Coldbringer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254038, {	-- Pattern: Gilded Cord (RECIPE!)
+				crs = {
+					3976,	-- Scarlet Commander Mograine
+					4542,	-- High Inquisitor Fairbanks
+					7355,	-- Tuten'kash
+					7358,	-- Amnennar the Coldbringer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
+			i(254046, {	-- Pattern: Golden Cord (RECIPE!)
+				crs = {
+					3976,	-- Scarlet Commander Mograine
+					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
 			i(7090),	-- Pattern: Green Silk Armor (RECIPE!)
 			i(5774),	-- Pattern: Green Silk Pack (RECIPE!)
@@ -3642,6 +3825,17 @@ root(ROOTS.WorldDrops, {
 			i(14501),	-- Pattern: Mooncloth Vest (RECIPE!)
 			i(4348),	-- Pattern: Phoenix Gloves (RECIPE!)
 			i(4349),	-- Pattern: Phoenix Pants (RECIPE!)
+			i(254048, {	-- Pattern: Radiant Cord (RECIPE!)
+				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					6487,	-- Arcanist Doan
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					10080,	-- Sandarr Dunereaver
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(2598),	-- Pattern: Red Linen Robe (RECIPE!)
 			i(6271),	-- Pattern: Red Linen Vest (RECIPE!)
 			i(10312),	-- Pattern: Red Mageweave Gloves (RECIPE!)

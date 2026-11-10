@@ -96,6 +96,7 @@ i(0, 8467);			-- White Woolen Dress
 i(0, 3757);			-- Woolen Bag
 i(0, 2401);			-- Woolen Boots
 i(0, 2402);			-- Woolen Cape
+i(0, 1229504);		-- Faction Banner
 --- QUEST ---
 i(0, 1263425);		-- Camp Chair
 i(0, 19435);		-- Mooncloth Boots
@@ -332,85 +333,76 @@ i(14485, 18421);	-- Wizardweave Leggings
 i(14500, 18446);	-- Wizardweave Robe
 i(14505, 18450);	-- Wizardweave Turban
 i(253668, 1257017);	-- Woolen Reagent Bag
+i(254044, 1257447);	-- Black Cord
+i(254000, 1257425);	-- Earthen Leggings
+i(254020, 1257435);	-- Earthen Silk Cuffs
+i(254018, 1257434);	-- Earthen Silk Gloves
+i(254016, 1257433);	-- Earthen Silk Hood
+i(254034, 1257442);	-- Earthen Silk Shoulders
+i(254078, 1257464);	-- Earthenweave Cord
+i(254122, 1257486);	-- Earthenweave Vest
+i(254042, 1257446);	-- Fiery Cord
+i(254040, 1257445);	-- Frothing Cord
+i(254038, 1257444);	-- Gilded Cord
+i(254022, 1257436);	-- Gilded Handwraps
+i(254046, 1257448);	-- Golden Cord
+i(254134, 1257492);	-- Mooncloth Reagent Bag
+i(254048, 1257449);	-- Radiant Cord
+i(254686, 12090);	-- Stormcloth Boots
+i(254682, 12063);	-- Stormcloth Gloves
+i(275580, 1297120);	-- Venomspew Gloves
+i(275581, 1297121);	-- Venomspew Cord
+i(275582, 1297122);	-- Venomspew Footpads
+i(275583, 1297123);	-- Swarmtender's Gloves
+i(275584, 1297124);	-- Swarmtender's Cord
+i(275585, 1297125);	-- Swarmtender's Footpads
 --- UNSURE ---
 i(0, 26086);		-- Felcloth Bag
 --[[
 -- unknown
-r(1257447),	-- Black Cord
 r(1257476),	-- Black Gloves
 i(273124),	-- Blueprint: Loom
 r(1257495),	-- Bottomless Reagent Bag
-r(1257425),	-- Earthen Leggings
-r(1257435),	-- Earthen Silk Cuffs
-r(1257434),	-- Earthen Silk Gloves
-r(1257433),	-- Earthen Silk Hood
-r(1257442),	-- Earthen Silk Shoulders
 r(1257432),	-- Earthen Silk Slippers
 r(1257472),	-- Earthenweave Boots
-r(1257464),	-- Earthenweave Cord
 r(1257494),	-- Earthenweave Crown
 r(1257491),	-- Earthenweave Cuffs
 r(1257463),	-- Earthenweave Gloves
 r(1257488),	-- Earthenweave Leggings
 r(1257485),	-- Earthenweave Mantle
-r(1257486),	-- Earthenweave Vest
 r(1306545),	-- Felblood Soul Bag
-r(1257446),	-- Fiery Cord
 r(1257475),	-- Fiery Gloves
-r(1257445),	-- Frothing Cord
 r(1257474),	-- Frothing Gloves
 r(1257490),	-- Ghostweave Boots
 r(1257462),	-- Ghostweave Cord
 r(1257493),	-- Ghostweave Hood
 r(1257489),	-- Ghostweave Mantle
-r(1257444),	-- Gilded Cord
 r(1257473),	-- Gilded Gloves
-r(1257436),	-- Gilded Handwraps
-r(1257448),	-- Golden Cord
 r(1257477),	-- Golden Gloves
 r(1263080),	-- Loom
-r(1257492),	-- Mooncloth Reagent Bag
-i(254044),	-- Pattern: Black Cord
 i(254102),	-- Pattern: Black Gloves
 i(254140),	-- Pattern: Bottomless Reagent Bag
-i(254000),	-- Pattern: Earthen Leggings
-i(254020),	-- Pattern: Earthen Silk Cuffs
-i(254018),	-- Pattern: Earthen Silk Gloves
-i(254016),	-- Pattern: Earthen Silk Hood
-i(254034),	-- Pattern: Earthen Silk Shoulders
 i(254014),	-- Pattern: Earthen Silk Slippers
 i(254094),	-- Pattern: Earthenweave Boots
-i(254078),	-- Pattern: Earthenweave Cord
 i(254138),	-- Pattern: Earthenweave Crown
 i(254132),	-- Pattern: Earthenweave Cuffs
 i(254076),	-- Pattern: Earthenweave Gloves
 i(254126),	-- Pattern: Earthenweave Leggings
 i(254120),	-- Pattern: Earthenweave Mantle
-i(254122),	-- Pattern: Earthenweave Vest
 i(279320),	-- Pattern: Felblood Soul Bag
-i(254042),	-- Pattern: Fiery Cord
 i(254100),	-- Pattern: Fiery Gloves
-i(254040),	-- Pattern: Frothing Cord
 i(254098),	-- Pattern: Frothing Gloves
 i(254130),	-- Pattern: Ghostweave Boots
 i(254074),	-- Pattern: Ghostweave Cord
 i(254136),	-- Pattern: Ghostweave Hood
 i(254128),	-- Pattern: Ghostweave Mantle
-i(254038),	-- Pattern: Gilded Cord
 i(254096),	-- Pattern: Gilded Gloves
-i(254022),	-- Pattern: Gilded Handwraps
-i(254046),	-- Pattern: Golden Cord
 i(254104),	-- Pattern: Golden Gloves
-i(254134),	-- Pattern: Mooncloth Reagent Bag
-i(254048),	-- Pattern: Radiant Cord
 i(254106),	-- Pattern: Radiant Gloves
-i(254686),	-- Pattern: Stormcloth Boots
-i(254682),	-- Pattern: Stormcloth Gloves
 i(254684),	-- Pattern: Stormcloth Headband
 i(254681),	-- Pattern: Stormcloth Pants
 i(254685),	-- Pattern: Stormcloth Shoulders
 i(254683),	-- Pattern: Stormcloth Vest
-r(1257449),	-- Radiant Cord
 r(1257478),	-- Radiant Gloves
 i(10324, 12090);	-- Stormcloth Boots
 i(10304, 12063);	-- Stormcloth Gloves
@@ -430,18 +422,6 @@ r(1306542),	-- Rime-encrusted Boots
 i(279315),	-- Pattern: Robes of Fiery Devastation
 r(1306540),	-- Robes of Fiery Devastation
 -- CC
-i(275580),	-- Pattern: Venomspew Gloves
-i(275581),	-- Pattern: Venomspew Cord
-i(275582),	-- Pattern: Venomspew Footpads
-i(275583),	-- Pattern: Swarmtender's Gloves
-i(275584),	-- Pattern: Swarmtender's Cord
-i(275585),	-- Pattern: Swarmtender's Footpads
-r(1297120),	-- Venomspew Gloves
-r(1297121),	-- Venomspew Cord
-r(1297122),	-- Venomspew Footpads
-r(1297123),	-- Swarmtender's Gloves
-r(1297124),	-- Swarmtender's Cord
-r(1297125),	-- Swarmtender's Footpads
 --- UNRELEASED CONTENT ---
 -- Dire Maul
 i(18414, 22866);	-- Belt of the Archmage

@@ -348,6 +348,9 @@ instanceroot(316, {	-- Scarlet Monastery
 					i(10330),	-- Scarlet Leggings
 				}),
 				n(6575, {	-- Scarlet Trainee
+					i(255730, {	-- Manual: Surgical Tourniquet (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(23192),	-- Tabard of the Scarlet Crusade
 				}),
 			},

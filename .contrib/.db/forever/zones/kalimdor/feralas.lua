@@ -1433,6 +1433,9 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				},
 				races = HORDE_ONLY,
 				groups = {
+					i(252942, {	-- Pattern: Forceful Rugged Armor Kit (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(7451, {	-- Pattern: Green Whelp Bracers (RECIPE!)
 						isLimited = true,
 					}),
@@ -1534,8 +1537,28 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					12803,	-- Lord Lakmaeran
 				},
 			}),
+			i(249513, {	-- Formula: Enchant 2H Weapon - Lesser Strength (RECIPE!)
+				cr = 5336,	-- Hatecrest Sorceress
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(255725, {	-- Manual: Superior Healing Potion (RECIPE!)
+				cr = 5236,	-- Gordunni Shaman
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8705, {	-- OOX-22/FE Distress Beacon
 				description = "This item has a chance to drop from any creature in Feralas.",
+			}),
+			i(254686, {	-- Pattern: Stormcloth Boots (RECIPE!)
+				cr = 5333,	-- Hatecrest Serpent Guard
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251464, {	-- Plans: Charged Mithril Battleaxe (RECIPE!)
+				cr = 5232,	-- Gordunni Brute
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(249882, {	-- Recipe: Triage Tea (RECIPE!)
+				cr = 5254,	-- Woodpaw Mystic
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

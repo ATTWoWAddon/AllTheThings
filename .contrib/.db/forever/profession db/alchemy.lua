@@ -46,6 +46,7 @@ i(0, 1249633);		-- Sulfuric Acid
 i(0, 1244648);		-- Superior Discolored Healing Potion
 i(0, 7841);			-- Swim Speed Potion
 i(0, 1249632);		-- Viridian Dye
+i(0, 1231583);		-- Major Discolored Healing Potion
 --- QUEST ---
 i(0, 1230564);		-- Mana Well
 i(0, 11452);		-- Restorative Potion
@@ -157,14 +158,20 @@ i(13485, 17562);	-- Transmute: Water to Air
 i(13487, 17564);	-- Transmute: Water to Undeath
 i(3831, 3451);		-- Troll's Blood Elixir
 i(9294, 11458);		-- Wildvine Potion
+i(250382, 1250795);	-- Elixir of Spirit
+i(250389, 1250802);	-- Elixir of Intellect
+i(250368, 1250781);	-- Cleric's Elixir
+i(250999, 1251753);	-- Potion of Beast Culling
+i(250998, 1251752);	-- Potion of Elemental Siphoning
 --[[
 --- UNKNOWN ---
-r(1250795),	-- Elixir of Spirit
-i(250382),	-- Recipe: Elixir of Spirit
-r(1250802),	-- Elixir of Intellect
-i(250389),	-- Recipe: Elixir of Intellect
-r(1250781),	-- Cleric's Elixir
-i(250368),	-- Recipe: Cleric's Elixir
+r(2365),	-- Draught of Tongues
+i(2556),	-- TODO: Item name not known yet.
+r(17632),	-- Alchemist's Stone
+i(13517),	-- Recipe: Alchemists' Stone
+r(24266),	-- Gurubashi Mojo Madness
+r(1250775),	-- Revealing Draught
+i(250362),	-- TODO: Item name not known yet.
 r(1250783),	-- Elixir of Fortitude
 i(250370),	-- Recipe: Elixir of Fortitude
 r(1250798),	-- Elixir of Strength
@@ -179,10 +186,6 @@ r(1251739),	-- Superior Frenzy Potion
 i(250986),	-- Recipe: Superior Frenzy Potion
 r(1244421),	-- Distilled Firewater
 i(236754),	-- Recipe: Distilled Firewater
-r(1251753),	-- Potion of Beast Culling
-i(250999),	-- Recipe: Potion of Beast Culling
-r(1251752),	-- Potion of Elemental Siphoning
-i(250998),	-- Recipe: Potion of Elemental Siphoning
 r(1263078),	-- Alchemy Laboratory
 i(273112),	-- Blueprint: Alchemy Laboratory
 r(1317279),	-- Transmute: Legionite

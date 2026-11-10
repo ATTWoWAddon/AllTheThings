@@ -871,6 +871,9 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					i(14481, {	-- Pattern: Runecloth Gloves (RECIPE!)
 						isLimited = true,
 					}),
+					i(250173, {	-- Recipe: Savory Stag Sliders (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
@@ -1012,6 +1015,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					10663,	-- Manaclaw
 					10664,	-- Scryer
 				},
+			}),
+			i(254122, {	-- Pattern: Earthenweave Vest (RECIPE!)
+				cr = 7523,	-- Suffering Highborne
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 				coords = {

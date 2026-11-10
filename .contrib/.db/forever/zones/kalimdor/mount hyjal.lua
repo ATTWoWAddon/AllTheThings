@@ -153,7 +153,15 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 						minReputation = { 2747, EXALTED },	-- Barkskin Burrow, Exalted.
 						cost = { { "i", 263439, 25 } },	-- 25x Deadwood Tribal Beads
 					}),
+					i(274424, {	-- Formula: Enchant Gloves - Lotus Claw (RECIPE!)
+						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
+					}),
 					i(256036),	-- Handful of Dirt
+					i(254134, {	-- Pattern: Mooncloth Reagent Bag (RECIPE!)
+						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
+					}),
 					i(274415, {	-- Recipe: Sweetpaw Jam (RECIPE!)
 						minReputation = { 2747, FRIENDLY },	-- Barkskin Burrow, Friendly.
 						cost = { { "i", 263439, 5 } },	-- 5x Deadwood Tribal Beads

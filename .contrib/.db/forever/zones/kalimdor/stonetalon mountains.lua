@@ -980,6 +980,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			i(6840, {	-- Galvanized Horn
 				cr = 6167,	-- Chimaera Matriarch
 			}),
+			i(250382, {	-- Recipe: Elixir of Spirit (RECIPE!)
+				cr = 4022,	-- Bloodfury Harpy
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(249880, {	-- Recipe: Royal Tea (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 4003,	-- Windshear Geomancer

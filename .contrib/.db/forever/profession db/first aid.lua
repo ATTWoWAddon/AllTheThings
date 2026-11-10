@@ -30,18 +30,14 @@ i(16112, 7929);		-- Heavy Silk Bandage
 i(255723, 1244434);	-- Greater Healing Potion
 i(255724, 1259343);	-- Clever Poultice
 i(16113, 10840);	-- Mageweave Bandage
+i(255727, 1259344);	-- Superior Poultice
 i(255728, 1259341);	-- Potent Anti-Venom
 i(255729, 1244436);	-- Major Healing Potion
+i(255726, 1259348);	-- Leather Tourniquet
+i(255725, 1244435);	-- Superior Healing Potion
+i(255730, 1259349);	-- Surgical Tourniquet
 --- UNKNOWN ---
 --[[
-r(1259348),	-- Leather Tourniquet
-r(1259344),	-- Superior Poultice
-i(255726),	-- Manual: Leather Tourniquet
-i(255727),	-- Manual: Superior Poultice
-i(255725),	-- Manual: Superior Healing Potion
-r(1244435),	-- Superior Healing Potion
-r(1259349),	-- Surgical Tourniquet
-i(255730),	-- Manual: Surgical Tourniquet
 i(255731),	-- Manual: Powerful Poultice
 r(1259345),	-- Powerful Poultice
 i(273118),	-- Blueprint: Plague Doctor's Laboratory

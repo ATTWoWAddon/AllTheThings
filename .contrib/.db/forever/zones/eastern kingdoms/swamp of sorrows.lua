@@ -765,6 +765,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					741,	-- Dreaming Whelp
 				},
 			}),
+			i(251463, {	-- Plans: Mithril Stiletto (RECIPE!)
+				cr = 759,	-- Lost One Hunter
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 	},
 });

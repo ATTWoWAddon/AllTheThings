@@ -1599,6 +1599,21 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					4684,	-- Nether Sorceress
 				},
 			}),
+			i(254016, {	-- Pattern: Earthen Silk Hood (RECIPE!)
+				cr = 4719,	-- Slitherblade Sea Witch
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251387, {	-- Plans: Hard Gold Bracers (RECIPE!)
+				cr = 4711,	-- Slitherblade Naga
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251392, {	-- Plans: Shining Mithril Breastplate (RECIPE!)
+				crs = {
+					11559,	-- Outcast Necromancer
+					253272,	-- Magram Necromancer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(6074, {	-- War Horn Mouthpiece
 				crs = {
 					6070,	-- Maraudine Khan Advisor
