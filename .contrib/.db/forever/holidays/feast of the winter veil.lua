@@ -448,10 +448,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 				lvl = 10,
 				groups = {
 					i(17727, {	-- Smokywood Pastures Gift Pack
-						i(2996),	-- Bolt of Linen Cloth
-						i(2840),	-- Copper Bar
-						i(2318),	-- Light Leather
-						i(785),	-- Mageroyal
+						sym = {{ "select", "itemID",
+							2996,	-- Bolt of Linen Cloth
+							2840,	-- Copper Bar
+							2318,	-- Light Leather
+							785,	-- Mageroyal
+						}},
 					}),
 					i(17685, {	-- Smokywood Pastures Sampler
 						i(17404),	-- Blended Bean Brew

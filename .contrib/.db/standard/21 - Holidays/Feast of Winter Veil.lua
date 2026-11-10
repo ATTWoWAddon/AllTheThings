@@ -2281,10 +2281,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			groups = {
 				i(17727, {	-- Smokywood Pastures Gift Pack
 					-- #if BEFORE 6.2.2.20395
-					i(2996),	-- Bolt of Linen Cloth
-					i(2840),	-- Copper Bar
-					i(2318),	-- Light Leather
-					i(785),	-- Mageroyal
+					sym = {{ "select", "itemID",
+						2996,	-- Bolt of Linen Cloth
+						2840,	-- Copper Bar
+						2318,	-- Light Leather
+						785,	-- Mageroyal
+					}},
 					-- #else
 					i(128647, {	-- Fizzy Apple Cider
 						timeline = { ADDED_6_2_2 },
