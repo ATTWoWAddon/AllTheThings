@@ -203,6 +203,26 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 			},
 		}),
 		n(ZONE_DROPS, {
+			i(286983, {	-- Ancient Cleaver
+				crs = {
+					260798,	-- Young Crocolisk
+					260799,	-- Young Riptooth
+					260800,	-- Thicket Lurker
+					260801,	-- Thicket Hunter
+					260803,	-- Highland Spider
+					260804,	-- Highland Lurker
+				},
+			}),
+			i(287068, {	-- Excavated Dagger
+				crs = {
+					260799,	-- Young Riptooth
+					260800,	-- Thicket Lurker
+					260801,	-- Thicket Hunter
+					260802,	-- Thicket Matriarch
+					260803,	-- Highland Spider
+					260810,	-- Highland Snapper
+				},
+			}),
 			i(286985, {	-- Thicket Bindings
 				crs = {
 					260800,	-- Thicket Lurker
