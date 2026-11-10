@@ -360,10 +360,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			q(92867, {	-- Ground to Keep
 				qg = 219,	-- Groundskeeper Lomar
 				coord = { 27.0, 57.2, MAP.ARATHI_HIGHLANDS },
-				description = "Groundskeeper Lomar only talks to you while you wear the Syndicate Uniform from the rogue quest The Syndicate Sting.",
+				description = "Horde rogues can also pick this up: while you wear the Syndicate Uniform from the rogue quest The Syndicate Sting, Groundskeeper Lomar treats you as Alliance.",
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				classes = { ROGUE },
+				races = ALLIANCE_ONLY,
 				lvl = 32,
+				OnInit = [[function(t)
+					if _.ClassIndex == ]] .. ROGUE .. [[ then
+						t.r = nil;
+						t.nmr = nil;
+					end
+					return t;
+				end]],
 				groups = {
 					objective(1, {	-- 0/5 Boulderfist Mauler slain
 						provider = { "n", 2569 },	-- Boulderfist Mauler

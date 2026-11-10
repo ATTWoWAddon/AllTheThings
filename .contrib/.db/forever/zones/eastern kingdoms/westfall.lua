@@ -351,17 +351,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ "i", 765, 5 },	-- Silverleaf
 					{ "i", 2447, 5 },	-- Peacebloom
 				},
+				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 				groups = {
+					i(118),	-- Minor Healing Potion
 					i(249905),	-- Scribbled I.O.U.
 				},
 			}),
 			q(92110, {	-- My First Real Potion
 				qg = 249713,	-- Odd Child
-				coord = { 41., 79.0, MAP.WESTFALL },
+				coord = { 41.0, 79.0, MAP.WESTFALL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
+				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 10,
 				groups = {
