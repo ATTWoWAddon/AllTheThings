@@ -40,6 +40,18 @@ instanceroot(2970, {	-- The Drowned City
 					}),
 				},
 			}),
+			q(95799, {	-- Findings for the Explorer's League
+				-- TODO: Prerequisite unconfirmed. A Contributor Report accepted it right after turning in Magics of the Drowned City (95788) and Take Two With Water (95787).
+				qg = 2277,	-- Loremaster Dibbs
+				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					i(279880),	-- Ancient Voodoo Pouch
+					i(279881),	-- Intrepid Explorer's Chainmail
+					i(272124),	-- Translated Tale of I'lalai
+				},
+			}),
 			q(95788, {	-- Magics of the Drowned City
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
@@ -126,6 +138,18 @@ instanceroot(2970, {	-- The Drowned City
 					i(279884),	-- South Seas Shroud
 				},
 			}),
+			q(95798, {	-- The Web of Magic
+				-- TODO: Prerequisite unconfirmed. A Contributor Report accepted it right after turning in Magics of the Drowned City (95788) and Take Two With Water (95787).
+				qg = 2277,	-- Loremaster Dibbs
+				qi = 270339,	-- Bundle of I'lalai Findings (PQI!)
+				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
+				races = ALLIANCE_ONLY,
+				lvl = 30,
+				groups = {
+					i(279878),	-- Apprentice Sorcerer's Slacks
+					i(279879),	-- Rune-Etched Epaulets
+				},
+			}),
 		}),
 		e(3474, {	-- Zul'Alai
 			creatureID = 258905,	-- Zul'Alai
@@ -158,6 +182,9 @@ instanceroot(2970, {	-- The Drowned City
 		}),
 		e(3511, {	-- Primeval Elemental
 			creatureID = 273738,	-- Primeval Elemental
+			groups = {
+				i(274611),	-- Robe of the Drowned
+			},
 		}),
 		e(3479, {	-- Min'loth the Serpent
 			crs = {
@@ -166,6 +193,7 @@ instanceroot(2970, {	-- The Drowned City
 			},
 			groups = {
 				i(274608),	-- Maw of Min'loth
+				i(274610),	-- Ritual-Binder's Gloves
 				i(274609),	-- Serpentbane Crown
 			},
 		}),
