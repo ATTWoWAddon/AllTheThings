@@ -1,30 +1,29 @@
 # ATT Contributor Tool Roadmap
 
-This document records the state of contributor tools on `master` as of
-November 10, 2026, and the work needed to reach the target platform matrix.
+This document records the state of the contributor tools and the work
+needed to reach the target platform matrix.
 A target platform is not considered supported until its build, dependencies,
 and tool behavior have been validated.
 
 ## Current State
 
-All 11 C# projects use SDK-style project files. They expose only `x64` as a
+All 10 C# projects use SDK-style project files. They expose only `x64` as a
 project platform. Projects remain split across source directories and target
-frameworks: five projects are under `.contrib/src/` and six under
-`.contrib/.source/`; four target `net10.0` and seven target `net48`.
+frameworks: five projects are under `.contrib/src/` and five under
+`.contrib/.source/`; three target `net10.0` and seven target `net481`.
 
 | Project | Source root | Target framework |
 | --- | --- | --- |
-| Parser | `.contrib/src/` | `net48` |
+| Parser | `.contrib/src/` | `net481` |
 | CSVCleaner | `.contrib/src/` | `net10.0` |
-| Blizzard API Harvester | `.contrib/src/` | `net48` |
-| Classic Item Detector | `.contrib/src/` | `net48` |
-| Item DB Compare Tool | `.contrib/src/` | `net48` |
+| Blizzard API Harvester | `.contrib/src/` | `net481` |
+| Classic Item Detector | `.contrib/src/` | `net481` |
+| Item DB Compare Tool | `.contrib/src/` | `net481` |
 | AssetDB Builder | `.contrib/.source/` | `net10.0` |
 | IconID Converter | `.contrib/.source/` | `net10.0` |
-| Skill Level Requirements | `.contrib/.source/` | `net10.0` |
-| ATT Sync Tool | `.contrib/.source/` | `net48` |
-| Database | `.contrib/.source/` | `net48` |
-| Item Database Consolidator | `.contrib/.source/` | `net48` |
+| ATT Sync Tool | `.contrib/.source/` | `net481` |
+| Database | `.contrib/.source/` | `net481` |
+| Item Database Consolidator | `.contrib/.source/` | `net481` |
 
 The projects use three separate solutions:
 `.contrib/src/Parser/Parser.sln`,
@@ -46,8 +45,9 @@ No checked-in `master` workflow validates ARM64, Linux, or macOS tool runs.
 ## Framework Policy
 
 Eligible tools moving off .NET Framework should target `net10.0` directly.
-The four tools already targeting `net10.0` retain that target; the seven
-`net48` projects need tool-specific migration decisions and validation.
+The three tools targeting `net10.0` retain that target. The seven remaining
+projects target .NET Framework 4.8.1 (`net481`). Their Windows executables
+require the [4.8.1 runtime](https://learn.microsoft.com/dotnet/framework/install/guide-for-developers).
 Preserve Windows behavior while changing framework, dependencies, or output
 layout, and keep those changes reviewable.
 
@@ -82,15 +82,15 @@ publish package.
 1. **Build from source on Windows x64.** Add CI builds for the existing
    project locations. Validate the resulting tools, especially Parser,
    against the behavior expected by workflows that use committed binaries.
-2. **Consolidate maintained source.** Move the six projects still under
+2. **Consolidate maintained source.** Move the five projects still under
    `.contrib/.source/` into `.contrib/src/`, and move the maintained Python
    and JavaScript sources out of `.contrib/.tools/`. Update references,
    solution paths, and script consumers as each move is made.
 3. **Unify build configuration.** Add a solution under `.contrib/src/` and
    share common build settings where they apply. Keep target frameworks
-   explicit per project while `net48` and `net10.0` coexist. Centralize
+   explicit per project while `net481` and `net10.0` coexist. Centralize
    NuGet versions only where this reduces duplicated maintenance.
-4. **Modernize remaining tools.** Migrate eligible `net48` command-line
+4. **Modernize remaining tools.** Migrate eligible `net481` command-line
    projects to `net10.0` with Windows output and behavior checks. Keep
    the Windows-specific exceptions below separate until redesigned.
 5. **Add platform builds and validation.** Resolve native dependencies,

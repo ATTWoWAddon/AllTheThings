@@ -4,7 +4,7 @@
     <Platforms>x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <OutputType>Exe</OutputType>
     <RootNamespace>ATT</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>

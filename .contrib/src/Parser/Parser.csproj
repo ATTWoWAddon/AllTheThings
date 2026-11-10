@@ -3,7 +3,7 @@
     <Platforms>x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>x64</PlatformTarget>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <OutputType>Exe</OutputType>
     <StartupObject>ATT.Program</StartupObject>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
