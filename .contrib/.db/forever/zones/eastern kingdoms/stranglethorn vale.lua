@@ -247,7 +247,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			q(97328, {	-- Anything of Value
 				provider = { "o", 661516 },	-- Thoroughly Scavenged Supplies
 				coord = { 31.4, 12.8, MAP.STRANGLETHORN_VALE },
-				-- TODO: Wowhead doesn't list the turn-in NPC yet (someone in Booty Bay).
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {

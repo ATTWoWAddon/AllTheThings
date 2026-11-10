@@ -533,6 +533,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
+					i(270066, {	-- Tower Boots
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(4975),	-- Vigilant Buckler
 					i(15104),	-- Wingborne Boots
 				},
