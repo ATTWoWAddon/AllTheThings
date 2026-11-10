@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x64</Platforms>
+    <Platforms>x64;ARM64;AnyCPU</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net48</TargetFramework>
@@ -11,8 +11,25 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64' Or '$(Platform)' == 'AnyCPU'">
+    <OutputPath>..\..\.builds\Item Database Consolidator\$(Platform)\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>$(DefineConstants);ATT_ANYCPU</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <Compile Include="..\NativeLua.cs" Link="NativeLua.cs" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
+  <Target Name="ValidateItemDatabaseConsolidatorPlatform" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="Item Database Consolidator supports x64, ARM64, and AnyCPU platforms." />
+  </Target>
+  <Target Name="RemoveUnsupportedAnyCpuLua" AfterTargets="CopyFilesToOutputDirectory" Condition="'$(Platform)' == 'AnyCPU'">
+    <Delete Files="$(TargetDir)lua54.dll;$(TargetDir)x86\lua54.dll" />
+  </Target>
 </Project>

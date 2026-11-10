@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Platforms>x64</Platforms>
+    <Platforms>x64;ARM64;AnyCPU</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
     <TargetFramework>net10.0</TargetFramework>
@@ -14,4 +14,19 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+    <RuntimeIdentifier>win-arm64</RuntimeIdentifier>
+    <OutputPath>..\..\.builds\AssetDB Builder\ARM64\$(Configuration)\</OutputPath>
+    <UseCommonOutputDirectory>false</UseCommonOutputDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseAppHost>false</UseAppHost>
+    <OutputPath>..\..\.builds\AssetDB Builder\AnyCPU\$(Configuration)\</OutputPath>
+    <UseCommonOutputDirectory>false</UseCommonOutputDirectory>
+    <DefineConstants>$(DefineConstants);ATT_ANYCPU</DefineConstants>
+  </PropertyGroup>
+  <Target Name="ValidateAssetDBBuilderPlatform" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(Platform)' != 'x64' and '$(Platform)' != 'ARM64' and '$(Platform)' != 'AnyCPU'" Text="AssetDB Builder supports x64, ARM64, and AnyCPU platforms." />
+  </Target>
 </Project>

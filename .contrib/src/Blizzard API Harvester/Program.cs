@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,7 +31,11 @@ namespace ATT
         const string API_CALL_SEARCH = "/data/wow/search/{0}?namespace=static-us&locale=en_US&_page={1}&_pageSize=1000";
 
         static string API_KEY = null;
+#if ATT_ANYCPU
+        static HttpClient Client;
+#else
         static HttpClient Client = InitClient();
+#endif
         static ConcurrentQueue<string> DataResults { get; } = new ConcurrentQueue<string>();
         static ConcurrentQueue<Tuple<int, string>> APIRequests { get; } = new ConcurrentQueue<Tuple<int, string>>();
         static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
@@ -83,6 +88,20 @@ namespace ATT
 
         static void Main(string[] args)
         {
+#if ATT_ANYCPU
+            Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+            if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+            {
+                Console.Error.WriteLine(
+                    "Any CPU Blizzard API Harvester requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+                Environment.ExitCode = -1;
+                return;
+            }
+#endif
+#if ATT_ANYCPU
+            Client = InitClient();
+#endif
+
             // can tell harvester to only parse existing data for a certain date
             string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
 

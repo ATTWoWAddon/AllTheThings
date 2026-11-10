@@ -1,6 +1,17 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ATT;
 using System.Text;
+using System.Runtime.InteropServices;
+
+#if ATT_ANYCPU
+Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+{
+    Console.Error.WriteLine(
+        "Skill Level Requirements requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+    return -1;
+}
+#endif
 
 // Make sure the Skill Level Requirements folder exists.
 var SkillLevelRequirementsFolderName = "../.db/standard/00 - Profession DB/Skill Level Requirements/";
@@ -120,3 +131,7 @@ foreach (string profession in new string[] { "Archaeology", "Cooking", "Fishing"
     Helper.Parse(pageString, sb, profession);
 }
 File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "11 - The War Within.lua"), sb.Append("-- #endif").ToString());
+
+#if ATT_ANYCPU
+return 0;
+#endif

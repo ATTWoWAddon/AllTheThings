@@ -1,6 +1,15 @@
 ﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+
+Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+{
+    Console.Error.WriteLine(
+        "CSVCleaner requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+    return -1;
+}
 
 if (args.Length == 0)
 {

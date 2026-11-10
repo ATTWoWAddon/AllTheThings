@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace ATT
@@ -24,11 +25,15 @@ namespace ATT
         }
         private static int ErrorCode => Errored ? -1 : 0;
 
+#if PARSER_ANYCPU
+        private static NLua.Lua lua;
+#else
         private static readonly NLua.Lua lua = new NLua.Lua();
+#endif
 
         private static int PreProcessorNestLevel = 0;
 
-        public static string CurrentSubFilename => lua.State?.Status == KeraLua.LuaStatus.OK ? lua?.GetString("CurrentSubFileName") : null;
+        public static string CurrentSubFilename => lua?.State?.Status == KeraLua.LuaStatus.OK ? lua?.GetString("CurrentSubFileName") : null;
 
         public static string CurrentImportFilename { get; set; }
 
@@ -236,6 +241,18 @@ namespace ATT
 
         static int Main(string[] args)
         {
+#if PARSER_ANYCPU
+            Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+            if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+            {
+                Console.Error.WriteLine(
+                    "Any CPU Parser requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+                return -1;
+            }
+            NativeLua.Preload();
+            lua = new NLua.Lua();
+#endif
+
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);

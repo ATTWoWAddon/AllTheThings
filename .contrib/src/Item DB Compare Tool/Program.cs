@@ -62,6 +62,16 @@ namespace ATT
 
         static void Main(string[] args)
         {
+#if ATT_ANYCPU
+            Architecture processArchitecture = RuntimeInformation.ProcessArchitecture;
+            if (processArchitecture != Architecture.X64 && processArchitecture != Architecture.Arm64)
+            {
+                Console.Error.WriteLine(
+                    "Any CPU Item DB Compare Tool requires an x64 or ARM64 process; detected " + processArchitecture + ".");
+                Environment.ExitCode = -1;
+                return;
+            }
+#endif
             // DB name for filtering DB comparisons
             string dbFilter = "itemDB";
 

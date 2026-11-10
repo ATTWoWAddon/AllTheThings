@@ -27,6 +27,9 @@ namespace ATT
         /// </summary>
         static Database()
         {
+#if ATT_ANYCPU
+            NativeLua.EnsureSupportedArchitecture();
+#endif
             UpdateInstallationFolderPathForWoW();
             SyncWithSavedVariables();
         }
