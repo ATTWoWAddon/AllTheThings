@@ -4,148 +4,406 @@
 
 -- #if ANYCLASSIC
 -- Wouter NOTE: level 58 boosts became available in Classic late into the Naxxramas patch, with the Dark Portal Pass for TBC
-root(ROOTS.Character, n(CLASS_TRIAL, {
-	expansion(EXPANSION.TBC, bubbleDown({ u = REAL_MONEY }, {
-		i(185964, {	-- Azeroth Survival Kit
-			timeline = { ADDED_1_13_7, REMOVED_3_4_0 },
-			groups = {
-				cl(DRUID, {
-					i(186055),	-- Communal Stave (Agi)
-					i(186026),	-- Communal Crown (Leather Agi/Spi)
-					i(186027),	-- Communal Pads (Leather Int)
-					i(186028),	-- Communal Tunic (Leather Stam)
-					i(186032),	-- Communal Bindings (Leather Int)
-					i(186033),	-- Communal Gloves (Leather Agi)
-					i(186029),	-- Communal Belt (Leather Agi)
-					i(186030),	-- Communal Legguards (Leather Int)
-					i(186031),	-- Communal Boots (Leather Agi)
-					i(186052),	-- Communal Idol of Wrath
-					i(186053),	-- Communal Idol of the Wild
-					i(186054),	-- Communal Idol of Life
-				}),
-				cl(HUNTER, {
-					i(186056),	-- Communal Bow
-					i(186034),	-- Communal Headguard (Mail Agi)
-					i(186035),	-- Communal Spaulders (Mail Agi)
-					i(186036),	-- Communal Armor (Mail Stam)
-					i(186040),	-- Communal Armguards (Mail Agi)
-					i(186041),	-- Communal Gauntlets (Mail Agi)
-					i(186037),	-- Communal Belt (Mail Agi)
-					i(186038),	-- Communal Leggings (Mail Agi)
-					i(186039),	-- Communal Boots (Mail Stam)
-				}),
-				cl(MAGE, {
-					i(186018),	-- Communal Cowl (Cloth Int)
-					i(186019),	-- Communal Mantle (Cloth Int)
-					i(186020),	-- Communal Armor (Cloth Int)
-					i(186024),	-- Communal Bracers (Cloth Int)
-					i(186025),	-- Communal Gloves (Cloth Int)
-					i(186021),	-- Communal Sash (Cloth Int)
-					i(186022),	-- Communal Pants (Cloth Int)
-					i(186023),	-- Communal Boots (Cloth Int)
-					i(186050),	-- Communal Wand (Int)
-				}),
-				cl(PALADIN, {
-					i(186086),	-- Communal Faceguard (Plate Int)
-					i(186088),	-- Communal Pauldrons (Plate Int)
-					i(185998),	-- Communal Chestguard (Plate Str)
-					i(186085),	-- Communal Plate Vambraces (Plate Int)
-					i(186001),	-- Communal Plate Gauntlets (Plate Stam/Crit)
-					i(186002),	-- Communal Plate Girdle (Plate Str)
-					i(186087),	-- Communal Plate Leggings (Plate Int)
-					i(186016),	-- Communal Plate Greaves (Plate Stam)
-					i(186065),	-- Communal Book of Healing
-					i(186066),	-- Communal Book of Protection
-					i(186067),	-- Communal Book of Righteousness
-				}),
-				cl(PRIEST, {
-					i(186018),	-- Communal Cowl (Cloth Int)
-					i(186019),	-- Communal Mantle (Cloth Int)
-					i(186020),	-- Communal Armor (Cloth Int)
-					i(186024),	-- Communal Bracers (Cloth Int)
-					i(186025),	-- Communal Gloves (Cloth Int)
-					i(186021),	-- Communal Sash (Cloth Int)
-					i(186022),	-- Communal Pants (Cloth Int)
-					i(186023),	-- Communal Boots (Cloth Int)
-					i(186050),	-- Communal Wand (Int)
-				}),
-				cl(ROGUE, {
-					i(186061),	-- Communal Blade (Agi 1H Sword)
-					i(186068),	-- Communal Shiv (Agi Dagger)
-					i(186078),	-- Communal Crown (Leather Agi)
-					i(186080),	-- Communal Pads (Leather Agi)
-					i(186028),	-- Communal Tunic (Leather Stam)
-					i(186076),	-- Communal Bindings (Leather Agi)
-					i(186033),	-- Communal Gloves (Leather Agi)
-					i(186029),	-- Communal Belt (Leather Agi)
-					i(186079),	-- Communal Legguards (Leather Agi)
-					i(186031),	-- Communal Boots (Leather Agi)
-					i(186069),	-- Communal Knives
-				}),
-				cl(SHAMAN, {
-					i(186070),	-- Communal Right Claw (Agi Fist MH)
-					i(186682),	-- Communal Left Claw (Agi Fist OH)
-					i(186081),	-- Communal Headguard (Mail Agi/Spi)
-					i(186083),	-- Communal Spaulders (Mail Int)
-					i(186036),	-- Communal Armor (Mail Stam)
-					i(186084),	-- Communal Armguards (Mail Int)
-					i(186041),	-- Communal Gauntlets (Mail Agi)
-					i(186037),	-- Communal Belt (Mail Agi)
-					i(186082),	-- Communal Leggings (Mail Agi/Spi)
-					i(186039),	-- Communal Boots (Mail Stam)
-					i(186071),	-- Communal Totem of Lightning
-					i(186072),	-- Communal Totem of Restoration
-					i(186073),	-- Communal Totem of the Storm
-				}),
-				cl(WARLOCK, {
-					i(186018),	-- Communal Cowl (Cloth Int)
-					i(186019),	-- Communal Mantle (Cloth Int)
-					i(186020),	-- Communal Armor (Cloth Int)
-					i(186024),	-- Communal Bracers (Cloth Int)
-					i(186025),	-- Communal Gloves (Cloth Int)
-					i(186021),	-- Communal Sash (Cloth Int)
-					i(186022),	-- Communal Pants (Cloth Int)
-					i(186023),	-- Communal Boots (Cloth Int)
-					i(186050),	-- Communal Wand (Int)
-				}),
-				cl(WARRIOR, {
-					i(185976),	-- Communal Faceguard (Plate Str)
-					i(185977),	-- Communal Pauldrons (Plate Str)
-					i(185998),	-- Communal Chestguard (Plate Str)
-					i(185999),	-- Communal Plate Vambraces (Plate Str)
-					i(186001),	-- Communal Plate Gauntlets (Plate Stam/Crit)
-					i(186002),	-- Communal Plate Girdle (Plate Str)
-					i(186015),	-- Communal Plate Leggings (Plate Str)
-					i(186016),	-- Communal Plate Greaves (Plate Stam)
-					i(186069),	-- Communal Knives
-				}),
-				-- Wouter NOTE: I have no clue to which classes some of these got assigned so I'm leaving them unsorted
-				i(186048),	-- Communal Dagger (Int)
-				i(186049),	-- Communal Rose (Spi)
-				i(186051),	-- Communal Staff (Int)
-				i(186057),	-- Communal Warmaul (Str 2H Mace)
-				i(186058),	-- Communal Sword (Str 1H Sword)
-				i(186060),	-- Communal Guardian (Tank 1H Sword)
-				i(186062),	-- Communal Smasher (Spi 1H Mace)
-				i(186063),	-- Communal Shield (Str)
-				i(186064),	-- Communal Buckler (Int)
-				i(186163),	-- Communal Guardian (Tank 1H Sword - duplicate?)
-				i(186074),	-- Communal Necklace (Stam)
-				i(186044),	-- Communal Cloak (Agi)
-				i(186045),	-- Communal Cloak (Also agi???)
-				i(186046),	-- Communal Cloak (Int)
-				i(186047),	-- Communal Cape (Str)
-				i(186075),	-- Communal Cloak (Also int???)
-				i(185981),	-- Communal Band of Onslaught
-				i(185982),	-- Communal Band of Dexterity
-				i(185983),	-- Communal Band of Wisdom
-				i(185984),	-- Communal Band of Durability
-				i(185985),	-- Communal Stone of Onslaught
-				i(185986),	-- Communal Stone of Durability
-				i(185987),	-- Communal Stone of Wisdom
-				i(185988),	-- Communal Stone of Stoicism
-			},
+root(ROOTS.Character, n(CLASS_TRIAL, bubbleDown({ u = REAL_MONEY }, {
+	expansion(EXPANSION.TBC, {
+		timeline = { ADDED_1_13_7, REMOVED_3_4_0 },
+		groups = {
+			q(64046, {	-- A New Beginning [Orgrimmar]
+				description = "Offered automatically to characters boosted to level 58.",
+				maps = { ORGRIMMAR },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+				groups = {
+					i(185964),	-- Azeroth Survival Kit
+				},
+			}),
+			q(64028, {	-- A New Beginning [STORMWIND_CITY City]
+				description = "Offered automatically to characters boosted to level 58.",
+				maps = { STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+				groups = {
+					i(185964),	-- Azeroth Survival Kit
+				},
+			}),
+			q(64047, {	-- A New Beginning [Thunder Bluff]
+				description = "Offered automatically to characters boosted to level 58.",
+				maps = { THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+				groups = {
+					i(185964),	-- Azeroth Survival Kit
+				},
+			}),
+			q(64050, {	-- Combat Training [Orgrimmar]
+				sourceQuest = 64048,	-- Tools for Survival [Orgrimmar]
+				qgs = {
+					3324,	-- Grol'dar <Warlock Trainer>
+					3328,	-- Ormok <Rogue Trainer>
+					3344,	-- Kardris Dreamseeker <Shaman Trainer>
+					3353,	-- Grezz Ragefist <Warrior Trainer>
+					3406,	-- Xor'juul <Hunter Trainer>
+					5885,	-- Deino <Mage Trainer>
+					5994,	-- Zayus <Priest Trainer>
+					23128,	-- Master Pyreanor <Paladin Trainer>
+				},
+				maps = { ORGRIMMAR },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+			}),
+			q(64034, {	-- Combat Training [STORMWIND_CITY City]
+				sourceQuest = 64031,	-- Tools for Survival [STORMWIND_CITY City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				maps = { STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			q(64051, {	-- Combat Training [Thunder Bluff]
+				sourceQuest = 64049,	-- Tools for Survival [Thunder Bluff]
+				qg = 3036,	-- Kym Wildmane <Druid Trainer>
+				maps = { THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+			}),
+			q(64064, {	-- Eastern Plaguelands [Orgrimmar]
+				sourceQuest = 64052,	-- Talented [Orgrimmar]
+				qgs = {
+					3324,	-- Grol'dar <Warlock Trainer>
+					3328,	-- Ormok <Rogue Trainer>
+					3344,	-- Kardris Dreamseeker <Shaman Trainer>
+					3353,	-- Grezz Ragefist <Warrior Trainer>
+					3406,	-- Xor'juul <Hunter Trainer>
+					5885,	-- Deino <Mage Trainer>
+					5994,	-- Zayus <Priest Trainer>
+					23128,	-- Master Pyreanor <Paladin Trainer>
+				},
+				maps = { ORGRIMMAR },
+				timeline = { REMOVED_2_5_1 },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+			}),
+			q(64037, {	-- Eastern Plaguelands [STORMWIND_CITY City]
+				sourceQuest = 64035,	-- Talented [STORMWIND_CITY City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				timeline = { REMOVED_2_5_1 },
+				maps = { STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			q(64128, {	-- Eastern Plaguelands [Thunder Bluff]
+				sourceQuest = 64053,	-- Talented [Thunder Bluff]
+				qg = 3036,	-- Kym Wildmane <Druid Trainer>
+				maps = { THUNDER_BLUFF },
+				timeline = { REMOVED_2_5_1 },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+			}),
+			q(64052, {	-- Talented [Orgrimmar]
+				sourceQuest = 64050,	-- Combat Training [Orgrimmar]
+				qgs = {
+					3324,	-- Grol'dar <Warlock Trainer>
+					3328,	-- Ormok <Rogue Trainer>
+					3344,	-- Kardris Dreamseeker <Shaman Trainer>
+					3353,	-- Grezz Ragefist <Warrior Trainer>
+					3406,	-- Xor'juul <Hunter Trainer>
+					5885,	-- Deino <Mage Trainer>
+					5994,	-- Zayus <Priest Trainer>
+					23128,	-- Master Pyreanor <Paladin Trainer>
+				},
+				maps = { ORGRIMMAR },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+			}),
+			q(64035, {	-- Talented [STORMWIND_CITY City]
+				sourceQuest = 64034,	-- Combat Training [STORMWIND_CITY City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				maps = { STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			q(64053, {	-- Talented [Thunder Bluff]
+				sourceQuest = 64051,	-- Combat Training [Thunder Bluff]
+				qg = 3036,	-- Kym Wildmane <Druid Trainer>
+				maps = { THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+			}),
+			q(64063, {	-- The Dark Portal [Orgrimmar]
+				sourceQuest = 64052,	-- Talented [Orgrimmar]
+				qgs = {
+					3324,	-- Grol'dar <Warlock Trainer>
+					3328,	-- Ormok <Rogue Trainer>
+					3344,	-- Kardris Dreamseeker <Shaman Trainer>
+					3353,	-- Grezz Ragefist <Warrior Trainer>
+					3406,	-- Xor'juul <Hunter Trainer>
+					5885,	-- Deino <Mage Trainer>
+					5994,	-- Zayus <Priest Trainer>
+					23128,	-- Master Pyreanor <Paladin Trainer>
+				},
+				maps = { ORGRIMMAR },
+				timeline = { ADDED_2_5_1 },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+			}),
+			q(64038, {	-- The Dark Portal [STORMWIND_CITY City]
+				sourceQuest = 64035,	-- Talented [STORMWIND_CITY City]
+				qgs = {
+					331,	-- Maginor Dumas <Master Mage>
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				maps = { STORMWIND_CITY },
+				timeline = { ADDED_2_5_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			q(64217, {	-- The Dark Portal [Thunder Bluff]
+				sourceQuest = 64053,	-- Talented [Thunder Bluff]
+				qg = 3036,	-- Kym Wildmane <Druid Trainer>
+				maps = { THUNDER_BLUFF },
+				timeline = { ADDED_2_5_1 },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+			}),
+			q(64048, {	-- Tools for Survival [Orgrimmar]
+				sourceQuest = 64046,	-- A New Beginning [Orgrimmar]
+				qgs = {
+					3324,	-- Grol'dar <Warlock Trainer>
+					3328,	-- Ormok <Rogue Trainer>
+					3344,	-- Kardris Dreamseeker <Shaman Trainer>
+					3353,	-- Grezz Ragefist <Warrior Trainer>
+					3406,	-- Xor'juul <Hunter Trainer>
+					5885,	-- Deino <Mage Trainer>
+					5994,	-- Zayus <Priest Trainer>
+					23128,	-- Master Pyreanor <Paladin Trainer>
+				},
+				maps = { ORGRIMMAR },
+				races = HORDE_ONLY,
+				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
+				lvl = 58,
+			}),
+			q(64031, {	-- Tools for Survival [STORMWIND_CITY City]
+				sourceQuest = 64028,	-- A New Beginning [STORMWIND_CITY City]
+				qgs = {
+					376,	-- High Priestess Laurena <Priest Trainer>
+					914,	-- Ander Germaine <Warrior Trainer>
+					928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					5495,	-- Ursula Deline <Warlock Trainer>
+					5497,	-- Jennea Cannon <Mage Trainer>
+					5505,	-- Theridran <Druid Trainer>
+					5515,	-- Einris Brightspear <Hunter Trainer>
+					13283,	-- Lord Tony Romano <Rogue Trainer>
+					20407,	-- Farseer Umbrua <Shaman Trainer>
+				},
+				maps = { STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+			}),
+			q(64049, {	-- Tools for Survival [Thunder Bluff]
+				sourceQuest = 64047,	-- A New Beginning [Thunder Bluff]
+				qg = 3036,	-- Kym Wildmane <Druid Trainer>
+				maps = { THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				classes = { DRUID },
+				lvl = 58,
+			}),
+			i(185964, {	-- Azeroth Survival Kit
+				groups = {
+					cl(DRUID, {
+						i(186055),	-- Communal Stave (Agi)
+						i(186026),	-- Communal Crown (Leather Agi/Spi)
+						i(186027),	-- Communal Pads (Leather Int)
+						i(186028),	-- Communal Tunic (Leather Stam)
+						i(186032),	-- Communal Bindings (Leather Int)
+						i(186033),	-- Communal Gloves (Leather Agi)
+						i(186029),	-- Communal Belt (Leather Agi)
+						i(186030),	-- Communal Legguards (Leather Int)
+						i(186031),	-- Communal Boots (Leather Agi)
+						i(186052),	-- Communal Idol of Wrath
+						i(186053),	-- Communal Idol of the Wild
+						i(186054),	-- Communal Idol of Life
+					}),
+					cl(HUNTER, {
+						i(186056),	-- Communal Bow
+						i(186034),	-- Communal Headguard (Mail Agi)
+						i(186035),	-- Communal Spaulders (Mail Agi)
+						i(186036),	-- Communal Armor (Mail Stam)
+						i(186040),	-- Communal Armguards (Mail Agi)
+						i(186041),	-- Communal Gauntlets (Mail Agi)
+						i(186037),	-- Communal Belt (Mail Agi)
+						i(186038),	-- Communal Leggings (Mail Agi)
+						i(186039),	-- Communal Boots (Mail Stam)
+					}),
+					cl(MAGE, {
+						i(186018),	-- Communal Cowl (Cloth Int)
+						i(186019),	-- Communal Mantle (Cloth Int)
+						i(186020),	-- Communal Armor (Cloth Int)
+						i(186024),	-- Communal Bracers (Cloth Int)
+						i(186025),	-- Communal Gloves (Cloth Int)
+						i(186021),	-- Communal Sash (Cloth Int)
+						i(186022),	-- Communal Pants (Cloth Int)
+						i(186023),	-- Communal Boots (Cloth Int)
+						i(186050),	-- Communal Wand (Int)
+					}),
+					cl(PALADIN, {
+						i(186086),	-- Communal Faceguard (Plate Int)
+						i(186088),	-- Communal Pauldrons (Plate Int)
+						i(185998),	-- Communal Chestguard (Plate Str)
+						i(186085),	-- Communal Plate Vambraces (Plate Int)
+						i(186001),	-- Communal Plate Gauntlets (Plate Stam/Crit)
+						i(186002),	-- Communal Plate Girdle (Plate Str)
+						i(186087),	-- Communal Plate Leggings (Plate Int)
+						i(186016),	-- Communal Plate Greaves (Plate Stam)
+						i(186065),	-- Communal Book of Healing
+						i(186066),	-- Communal Book of Protection
+						i(186067),	-- Communal Book of Righteousness
+					}),
+					cl(PRIEST, {
+						i(186018),	-- Communal Cowl (Cloth Int)
+						i(186019),	-- Communal Mantle (Cloth Int)
+						i(186020),	-- Communal Armor (Cloth Int)
+						i(186024),	-- Communal Bracers (Cloth Int)
+						i(186025),	-- Communal Gloves (Cloth Int)
+						i(186021),	-- Communal Sash (Cloth Int)
+						i(186022),	-- Communal Pants (Cloth Int)
+						i(186023),	-- Communal Boots (Cloth Int)
+						i(186050),	-- Communal Wand (Int)
+					}),
+					cl(ROGUE, {
+						i(186061),	-- Communal Blade (Agi 1H Sword)
+						i(186068),	-- Communal Shiv (Agi Dagger)
+						i(186078),	-- Communal Crown (Leather Agi)
+						i(186080),	-- Communal Pads (Leather Agi)
+						i(186028),	-- Communal Tunic (Leather Stam)
+						i(186076),	-- Communal Bindings (Leather Agi)
+						i(186033),	-- Communal Gloves (Leather Agi)
+						i(186029),	-- Communal Belt (Leather Agi)
+						i(186079),	-- Communal Legguards (Leather Agi)
+						i(186031),	-- Communal Boots (Leather Agi)
+						i(186069),	-- Communal Knives
+					}),
+					cl(SHAMAN, {
+						i(186070),	-- Communal Right Claw (Agi Fist MH)
+						i(186682),	-- Communal Left Claw (Agi Fist OH)
+						i(186081),	-- Communal Headguard (Mail Agi/Spi)
+						i(186083),	-- Communal Spaulders (Mail Int)
+						i(186036),	-- Communal Armor (Mail Stam)
+						i(186084),	-- Communal Armguards (Mail Int)
+						i(186041),	-- Communal Gauntlets (Mail Agi)
+						i(186037),	-- Communal Belt (Mail Agi)
+						i(186082),	-- Communal Leggings (Mail Agi/Spi)
+						i(186039),	-- Communal Boots (Mail Stam)
+						i(186071),	-- Communal Totem of Lightning
+						i(186072),	-- Communal Totem of Restoration
+						i(186073),	-- Communal Totem of the Storm
+					}),
+					cl(WARLOCK, {
+						i(186018),	-- Communal Cowl (Cloth Int)
+						i(186019),	-- Communal Mantle (Cloth Int)
+						i(186020),	-- Communal Armor (Cloth Int)
+						i(186024),	-- Communal Bracers (Cloth Int)
+						i(186025),	-- Communal Gloves (Cloth Int)
+						i(186021),	-- Communal Sash (Cloth Int)
+						i(186022),	-- Communal Pants (Cloth Int)
+						i(186023),	-- Communal Boots (Cloth Int)
+						i(186050),	-- Communal Wand (Int)
+					}),
+					cl(WARRIOR, {
+						i(185976),	-- Communal Faceguard (Plate Str)
+						i(185977),	-- Communal Pauldrons (Plate Str)
+						i(185998),	-- Communal Chestguard (Plate Str)
+						i(185999),	-- Communal Plate Vambraces (Plate Str)
+						i(186001),	-- Communal Plate Gauntlets (Plate Stam/Crit)
+						i(186002),	-- Communal Plate Girdle (Plate Str)
+						i(186015),	-- Communal Plate Leggings (Plate Str)
+						i(186016),	-- Communal Plate Greaves (Plate Stam)
+						i(186069),	-- Communal Knives
+					}),
+					-- Wouter NOTE: I have no clue to which classes some of these got assigned so I'm leaving them unsorted
+					i(186048),	-- Communal Dagger (Int)
+					i(186049),	-- Communal Rose (Spi)
+					i(186051),	-- Communal Staff (Int)
+					i(186057),	-- Communal Warmaul (Str 2H Mace)
+					i(186058),	-- Communal Sword (Str 1H Sword)
+					i(186060),	-- Communal Guardian (Tank 1H Sword)
+					i(186062),	-- Communal Smasher (Spi 1H Mace)
+					i(186063),	-- Communal Shield (Str)
+					i(186064),	-- Communal Buckler (Int)
+					i(186163),	-- Communal Guardian (Tank 1H Sword - duplicate?)
+					i(186074),	-- Communal Necklace (Stam)
+					i(186044),	-- Communal Cloak (Agi)
+					i(186045),	-- Communal Cloak (Also agi???)
+					i(186046),	-- Communal Cloak (Int)
+					i(186047),	-- Communal Cape (Str)
+					i(186075),	-- Communal Cloak (Also int???)
+					i(185981),	-- Communal Band of Onslaught
+					i(185982),	-- Communal Band of Dexterity
+					i(185983),	-- Communal Band of Wisdom
+					i(185984),	-- Communal Band of Durability
+					i(185985),	-- Communal Stone of Onslaught
+					i(185986),	-- Communal Stone of Durability
+					i(185987),	-- Communal Stone of Wisdom
+					i(185988),	-- Communal Stone of Stoicism
+				},
+			}),
+		},
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, bubbleDown({ u = REAL_MONEY }, {
+	m(KALIMDOR, {
+		m(ORGRIMMAR, {
+			q(64033, {	-- Completed together with A New Beginning [Orgrimmar] on a boosted level 58 character
+				timeline = { ADDED_1_13_7, REMOVED_3_4_0 },
+			}),
 		}),
-	})),
-}));
+	}),
+})));
 -- #endif

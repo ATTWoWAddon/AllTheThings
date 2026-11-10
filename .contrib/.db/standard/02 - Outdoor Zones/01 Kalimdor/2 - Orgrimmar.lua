@@ -777,18 +777,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = lvlsquish(80, 80, 30),
 			})),
-			-- #if ANYCLASSIC
-			q(64046, {	-- A New Beginning [Orgrimmar]
-				description = "Offered automatically to characters boosted to level 58.",
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-				groups = {
-					i(185964),	-- Azeroth Survival Kit
-				},
-			}),
-			-- #endif
 			q(25160, {	-- A Present for Lila
 				qg = 50482,	-- Marith Lazuria
 				coord = { 72.4, 34.6, ORGRIMMAR },
@@ -1089,25 +1077,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(67414),	-- Bag of Shiny Things
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(64050, {	-- Combat Training [Orgrimmar]
-				sourceQuest = 64048,	-- Tools for Survival [Orgrimmar]
-				qgs = {
-					3324,	-- Grol'dar <Warlock Trainer>
-					3328,	-- Ormok <Rogue Trainer>
-					3344,	-- Kardris Dreamseeker <Shaman Trainer>
-					3353,	-- Grezz Ragefist <Warrior Trainer>
-					3406,	-- Xor'juul <Hunter Trainer>
-					5885,	-- Deino <Mage Trainer>
-					5994,	-- Zayus <Priest Trainer>
-					23128,	-- Master Pyreanor <Paladin Trainer>
-				},
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-			}),
-			-- #endif
 			q(26226, {	-- Crawfish Creole
 				qg = 42506,	-- Marogg
 				coord = { 56.5, 62.5, ORGRIMMAR },
@@ -1220,25 +1189,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(64064, {	-- Eastern Plaguelands [Orgrimmar]
-				sourceQuest = 64052,	-- Talented [Orgrimmar]
-				qgs = {
-					3324,	-- Grol'dar <Warlock Trainer>
-					3328,	-- Ormok <Rogue Trainer>
-					3344,	-- Kardris Dreamseeker <Shaman Trainer>
-					3353,	-- Grezz Ragefist <Warrior Trainer>
-					3406,	-- Xor'juul <Hunter Trainer>
-					5885,	-- Deino <Mage Trainer>
-					5994,	-- Zayus <Priest Trainer>
-					23128,	-- Master Pyreanor <Paladin Trainer>
-				},
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-			}),
-			-- #endif
 			q(2378, {	-- Find the Shattered Hand
 				altQuests = { 2380 },	-- To Orgrimmar!
 				qg = 6467,	-- Mennet Carkad
@@ -1911,25 +1861,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				timeline = { ADDED_7_3_5, REMOVED_8_0_1 },
 				races = HORDE_ONLY,
 			}),
-			-- #if ANYCLASSIC
-			q(64052, {	-- Talented [Orgrimmar]
-				sourceQuest = 64050,	-- Combat Training [Orgrimmar]
-				qgs = {
-					3324,	-- Grol'dar <Warlock Trainer>
-					3328,	-- Ormok <Rogue Trainer>
-					3344,	-- Kardris Dreamseeker <Shaman Trainer>
-					3353,	-- Grezz Ragefist <Warrior Trainer>
-					3406,	-- Xor'juul <Hunter Trainer>
-					5885,	-- Deino <Mage Trainer>
-					5994,	-- Zayus <Priest Trainer>
-					23128,	-- Master Pyreanor <Paladin Trainer>
-				},
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-			}),
-			-- #endif
 			q(51796, {	-- The Battle for Lordaeron
 				sourceQuest = 53372,	-- Hour of Reckoning
 				qgs = {
@@ -2004,25 +1935,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					-- #endif
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(64063, {	-- The Dark Portal [Orgrimmar]
-				sourceQuest = 64052,	-- Talented [Orgrimmar]
-				qgs = {
-					3324,	-- Grol'dar <Warlock Trainer>
-					3328,	-- Ormok <Rogue Trainer>
-					3344,	-- Kardris Dreamseeker <Shaman Trainer>
-					3353,	-- Grezz Ragefist <Warrior Trainer>
-					3406,	-- Xor'juul <Hunter Trainer>
-					5885,	-- Deino <Mage Trainer>
-					5994,	-- Zayus <Priest Trainer>
-					23128,	-- Master Pyreanor <Paladin Trainer>
-				},
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-			}),
-			-- #endif
 			q(28805, {	-- The Eye of the Storm
 				sourceQuest = 28790,	-- A Personal Summons
 				qg = 45244,	-- Farseer Krogar
@@ -2176,25 +2088,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = 16,
 			}),
-			-- #if ANYCLASSIC
-			q(64048, {	-- Tools for Survival [Orgrimmar]
-				sourceQuest = 64046,	-- A New Beginning [Orgrimmar]
-				qgs = {
-					3324,	-- Grol'dar <Warlock Trainer>
-					3328,	-- Ormok <Rogue Trainer>
-					3344,	-- Kardris Dreamseeker <Shaman Trainer>
-					3353,	-- Grezz Ragefist <Warrior Trainer>
-					3406,	-- Xor'juul <Hunter Trainer>
-					5885,	-- Deino <Mage Trainer>
-					5994,	-- Zayus <Priest Trainer>
-					23128,	-- Master Pyreanor <Paladin Trainer>
-				},
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR, PALADIN, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK },
-				lvl = 58,
-			}),
-			-- #endif
 			-- #if NOT ANYCLASSIC
 			q(5662, {	-- Touch of Weakness [Orgrimmar]
 				altQuests = {
@@ -5462,14 +5355,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 		}),
 	}),
 }));
--- #if ANYCLASSIC
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TBC, {
-	m(KALIMDOR, {
-		m(ORGRIMMAR, {
-			q(64033, {	-- Completed together with A New Beginning [Orgrimmar] on a boosted level 58 character
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-			}),
-		}),
-	}),
-}));
--- #endif
