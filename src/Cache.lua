@@ -56,6 +56,10 @@ app.SearchForManyInAllCaches = function(field, ids)
 	end
 	return groups;
 end
+if app.__perf then
+	app.SearchForFieldInAllCaches = app.__perf.CaptureFunction(app.SearchForFieldInAllCaches, "single", "cache.search", { module = "cache", minLevel = 1 });
+	app.SearchForManyInAllCaches = app.__perf.CaptureFunction(app.SearchForManyInAllCaches, "many", "cache.search", { module = "cache", minLevel = 1 });
+end
 app.CreateDataCache = function(name)
 	-- Returns: An object which can be used for holding cached data by various keys allowing for quick updates of data states.
 	return AllCaches[name];
@@ -711,6 +715,9 @@ CacheFields = function(group, skipMapCaching, cacheName)
 	--print(("Cache Fields: %.3f %s"):format((GetTimePreciseSec() - start) * 1000, group.text));
 	return group;
 end
+if app.__perf then
+	CacheFields = app.__perf.CaptureFunction(CacheFields, "fields", "cache.build", { module = "cache", minLevel = 1 });
+end
 app.CacheFields = CacheFields;
 end
 do	-- FactionID Key Cache
@@ -1042,8 +1049,21 @@ end
 
 -- Performance Tracking for Caching
 if app.__perf then
-	app.__perf.CaptureTable(fieldConverters, "CacheFields");
+	app.__perf.CaptureTable(fieldConverters, "CacheFields", { module = "cache", minLevel = 3 });
+	local CaptureFunction = app.__perf.CaptureFunction;
+	local options = { module = "cache", minLevel = 3 };
+	---Register a generic field converter with the enabled performance tracker.
+	---@param field string Field name whose values are indexed into the active ATT data cache.
+	app.AddGenericFieldConverter = function(field)
+		---Index a group by one declared generic field.
+		---@param group table ATT group being indexed.
+		---@param value any Value used as the field-cache lookup key.
+		fieldConverters[field] = CaptureFunction(function(group, value)
+			CacheField(group, field, value);
+		end, field, "CacheFields", options);
+	end;
 end
+
 setmetatable(fieldConverters, {
 	__index = function(t, key)
 		--print("Ignoring Field Cache: ", key);

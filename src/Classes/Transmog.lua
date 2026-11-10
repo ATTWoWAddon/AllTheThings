@@ -42,6 +42,11 @@ local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection.GetAllAppearanceSources
+if app.__perf then
+	C_TransmogCollection_GetSourceInfo = app.__perf.CaptureFunction(C_TransmogCollection_GetSourceInfo, "sourceinfo", "transmog.api", { module = "transmog", minLevel = 6 });
+	C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = app.__perf.CaptureFunction(C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance, "known", "transmog.api", { module = "transmog", minLevel = 6 });
+end
+
 local C_TooltipInfo_GetItemByItemModifiedAppearanceID = C_TooltipInfo and C_TooltipInfo.GetItemByItemModifiedAppearanceID
 
 local ATTAccountWideData, AccountSources, CharacterData
@@ -823,6 +828,11 @@ local function RefreshAppearanceSources()
 		end
 	end
 	-- app.PrintDebugPrior("Completionist Refresh done")
+end
+if app.__perf then
+	CollectUniqueAppearances = app.__perf.CaptureFunction(CollectUniqueAppearances, "collect", "transmog.unique", { module = "transmog", minLevel = 1 });
+	RefreshAppearanceSources = app.__perf.CaptureFunction(RefreshAppearanceSources, "scan", "transmog.sources", { module = "transmog", minLevel = 1 });
+	MarkUniqueCollectedSourcesBySource = app.__perf.CaptureFunction(MarkUniqueCollectedSourcesBySource, "expand", "transmog.unique", { module = "transmog", minLevel = 2 });
 end
 -- These events are technically 'refresh' of collections, but they also cause different results on
 -- 'new settings' since they literally change the cached collection state of SourceIDs based on current
