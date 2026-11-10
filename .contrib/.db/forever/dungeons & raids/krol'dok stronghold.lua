@@ -25,6 +25,17 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 					i(279855),	-- Torn Cultist Cloak
 				},
 			}),
+			q(96771, {	-- Vengeance of the Highborne
+				qg = 268425,	-- Ranath Nightstride
+				coord = { 17.9, 66.0, MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 37,
+				groups = {
+					objective(1, {	-- 0/1 Zalfan Moonshadow slain
+						provider = { "n", 268423 },	-- Zalfan Moonshadow
+					}),
+				},
+			}),
 		}),
 		e(3450, {	-- Slavecrusher Grox
 			creatureID = 258966,	-- Slavecrusher Grox
