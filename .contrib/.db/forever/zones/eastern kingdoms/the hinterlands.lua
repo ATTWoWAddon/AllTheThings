@@ -198,6 +198,34 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 				},
 			}),
+			q(86620, {	-- Fledgling Rescue
+				qg = 5636,	-- Gryphon Master Talonaxe
+				coord = { 9.8, 44.5, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/6 Lost Gryphon Egg
+						providers = {
+							{ "i", 279229 },	-- Lost Gryphon Egg
+							{ "o", 669115 },	-- Lost Gryphon Egg
+						},
+						coords = {
+							{ 14.1, 51.4, MAP.THE_HINTERLANDS },
+							{ 14.9, 50.3, MAP.THE_HINTERLANDS },
+							{ 14.9, 50.5, MAP.THE_HINTERLANDS },
+							{ 15.3, 48.7, MAP.THE_HINTERLANDS },
+							{ 15.9, 49.5, MAP.THE_HINTERLANDS },
+							{ 16.7, 54.3, MAP.THE_HINTERLANDS },
+							{ 17.0, 52.4, MAP.THE_HINTERLANDS },
+							{ 17.2, 56.4, MAP.THE_HINTERLANDS },
+							{ 18.3, 47.3, MAP.THE_HINTERLANDS },
+							{ 18.5, 49.3, MAP.THE_HINTERLANDS },
+							{ 19.0, 47.2, MAP.THE_HINTERLANDS },
+						},
+					}),
+				},
+			}),
 			q(1450, {	-- Gryphon Master Talonaxe
 				sourceQuest = 1449,	-- To The Hinterlands
 				qg = 5635,	-- Falstad Wildhammer <High Thane>
@@ -532,6 +560,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						coord = { 14.0, 48.0, MAP.THE_HINTERLANDS },
 					}),
 					i(19119),	-- Owlbeast Hide Gloves
+				},
+			}),
+			q(86615, {	-- Treaty Obligations
+				qg = 270054,	-- Tove Redstone <Ambassador>
+				coord = { 11.8, 46.8, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Diplomatic Satchel
+						provider = { "i", 279171 },	-- Diplomatic Satchel
+					}),
 				},
 			}),
 			q(2880, {	-- Troll Necklace Bounty
