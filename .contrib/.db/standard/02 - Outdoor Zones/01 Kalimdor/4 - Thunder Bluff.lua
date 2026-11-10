@@ -155,18 +155,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				races = HORDE_ONLY,
 				lvl = 12,
 			}),
-			-- #if ANYCLASSIC
-			q(64047, {	-- A New Beginning [Thunder Bluff]
-				description = "Offered automatically to characters boosted to level 58.",
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 58,
-				groups = {
-					i(185964),	-- Azeroth Survival Kit
-				},
-			}),
-			-- #endif
 			q(7825, {	-- Additional Runecloth [Thunder Bluff]
 				sourceQuest = 7823,	-- A Donation of Runecloth
 				qg = 14728,	-- Rumstag Proudstrider
@@ -251,16 +239,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(64051, {	-- Combat Training [Thunder Bluff]
-				sourceQuest = 64049,	-- Tools for Survival [Thunder Bluff]
-				qg = 3036,	-- Kym Wildmane <Druid Trainer>
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 58,
-			}),
-			-- #endif
 			q(29364, {	-- Corn Mash
 				qg = 3026,	-- Aska Mistrunner
 				coord = { 51.2, 52.2, THUNDER_BLUFF },
@@ -719,26 +697,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				races = { TAUREN },
 				lvl = lvlsquish(10, 10, 1),
 			}),
-			-- #if ANYCLASSIC
-			q(64053, {	-- Talented [Thunder Bluff]
-				sourceQuest = 64051,	-- Combat Training [Thunder Bluff]
-				qg = 3036,	-- Kym Wildmane <Druid Trainer>
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 58,
-			}),
-			-- #endif
-			-- #if ANYCLASSIC
-			q(64217, {	-- The Dark Portal [Thunder Bluff]
-				sourceQuest = 64053,	-- Talented [Thunder Bluff]
-				qg = 3036,	-- Kym Wildmane <Druid Trainer>
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 58,
-			}),
-			-- #endif
 			q(1086, {	-- The Flying Machine Airport
 				sourceQuest = 1067,	-- Return to Thunder Bluff
 				qg = 3419,	-- Apothecary Zamah
@@ -830,16 +788,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					i(6740),	-- Azure Sash
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(64049, {	-- Tools for Survival [Thunder Bluff]
-				sourceQuest = 64047,	-- A New Beginning [Thunder Bluff]
-				qg = 3036,	-- Kym Wildmane <Druid Trainer>
-				timeline = { ADDED_2_5_1, REMOVED_3_4_0 },
-				races = HORDE_ONLY,
-				classes = { DRUID },
-				lvl = 58,
-			}),
-			-- #endif
 			-- #if NOT ANYCLASSIC
 			q(5663, {	-- Touch of Weakness [Thunder Bluff]
 				altQuests = {

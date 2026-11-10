@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,faction,flt,h,i,mnt,p,r,s,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
+local ach,ah,cl,faction,flt,h,i,mnt,p,q,r,s,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateExpansion;
 categories.Character=
 h(-731,{SortPriority=40,g={
 h(-12,{
@@ -37,8 +37,29 @@ ach(2143,{awp=20003,phase=17}),
 ach(2142),
 ach(2141)})}),
 h(-17,{awp=20003,g={
-x(2,{
-i(185964,{awp=11307,rwp=30400,u=3,g={
+x(2,{u=3,g={
+q(64046,{c={1,2,3,4,5,7,8,9},description="Offered automatically to characters boosted to level 58.",lvl=58,maps={1454},r=1,u=3,g={
+i(185964,{u=3})}}),
+q(64028,{description="Offered automatically to characters boosted to level 58.",lvl=58,maps={1453},r=2,u=3,g={
+i(185964,{u=3})}}),
+q(64047,{c={11},description="Offered automatically to characters boosted to level 58.",lvl=58,maps={1456},r=1,u=3,g={
+i(185964,{u=3})}}),
+q(64050,{c={1,2,3,4,5,7,8,9},lvl=58,maps={1454},qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,sourceQuests={64048},u=3}),
+q(64034,{lvl=58,maps={1453},qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,sourceQuests={64031},u=3}),
+q(64051,{c={11},lvl=58,maps={1456},qgs={3036},r=1,sourceQuests={64049},u=3}),
+q(64064,{c={1,2,3,4,5,7,8,9},lvl=58,maps={1454},qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=20501,sourceQuests={64052},u=2}),
+q(64037,{lvl=58,maps={1453},qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=20501,sourceQuests={64035},u=2}),
+q(64128,{c={11},lvl=58,maps={1456},qgs={3036},r=1,rwp=20501,sourceQuests={64053},u=2}),
+q(64052,{c={1,2,3,4,5,7,8,9},lvl=58,maps={1454},qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,sourceQuests={64050},u=3}),
+q(64035,{lvl=58,maps={1453},qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,sourceQuests={64034},u=3}),
+q(64053,{c={11},lvl=58,maps={1456},qgs={3036},r=1,sourceQuests={64051},u=3}),
+q(64063,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,maps={1454},qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,sourceQuests={64052},u=3}),
+q(64038,{awp=20501,lvl=58,maps={1453},qgs={331,376,914,928,5495,5497,5505,5515,13283,20407},r=2,sourceQuests={64035},u=3}),
+q(64217,{awp=20501,c={11},lvl=58,maps={1456},qgs={3036},r=1,sourceQuests={64053},u=3}),
+q(64048,{c={1,2,3,4,5,7,8,9},lvl=58,maps={1454},qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,sourceQuests={64046},u=3}),
+q(64031,{lvl=58,maps={1453},qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,sourceQuests={64028},u=3}),
+q(64049,{c={11},lvl=58,maps={1456},qgs={3036},r=1,sourceQuests={64047},u=3}),
+i(185964,{u=3,g={
 cl(11,{u=3,g={
 s(145543,186055,{f=28,lvl=58,q=2,u=3}),
 s(116794,186026,{f=5,loc=40,lvl=58,q=2,u=3}),
@@ -163,7 +184,7 @@ i(185984,{f=52,lvl=58,u=3}),
 i(185985,{f=53,lvl=58,q=2,u=3}),
 i(185986,{f=53,lvl=58,u=3}),
 i(185987,{f=53,lvl=58,q=2,u=3}),
-i(185988,{f=53,lvl=58,u=3})}})})}}),
+i(185988,{f=53,lvl=58,u=3})}})}})}}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{awp=10001,icon=374217,r=2}),
 faction(67,{awp=10001,icon=374221,r=1}),

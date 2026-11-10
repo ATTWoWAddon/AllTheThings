@@ -890,8 +890,6 @@ q(7833,{coords={
 q(7341,{coords={
 [1454]={{74.4,26.4}}},cost={{"i",15997,200}},lvl=52,qgs={14182},r=1,repeatable=1,rwp=40003,g={
 i(18042,{f=37,lvl=52,q=2})}}),
-q(64046,{awp=20501,c={1,2,3,4,5,7,8,9},description="Offered automatically to characters boosted to level 58.",lvl=58,r=1,rwp=30400,g={
-i(185964)}}),
 q(7832,{coords={
 [1454]={{63.4,51}}},cost={{"i",14047,20}},lvl=50,maxReputation={530,42000},qgs={14726},r=1,repeatable=1,rwp=40003,sourceQuests={7824}}),
 q(7837,{coords={
@@ -914,14 +912,12 @@ q(4511,{coords={
 s(124516,11870,{b=1,f=1,q=2}),
 s(124517,11871,{b=1,f=5,loc=41,q=2}),
 s(124518,11872,{b=1,f=7,loc=47,q=2})}}),
-q(64050,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=30400,sourceQuests={64048}}),
 q(1501,{altQuests={1473},c={9},coords={
 [1454]={{48.2,45.6}}},lvl=10,maps={1411},qgs={5875},races={2,5,8},rwp=40003,sourceQuests={1506},g={
 qo(1,{coords={
 [1411]={{51.6,9.7}}},providers={{"i",6535},{"o",58595}}})}}),
 q(2458,{c={4},coords={
 [1454]={{43,53.4}}},lvl=20,qgs={3401},qis={8051},r=1,rwp=40003,sourceQuests={2460}}),
-q(64064,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=30400,sourceQuests={64052}}),
 q(2378,{altQuests={2380},c={4},coords={
 [1458]={{83.2,69}}},isBreadcrumb=1,lvl=16,nextQuests={2379},qgs={6467},r=1,rwp=40003}),
 q(5652,{altQuests={5654,5655,5656,5657},c={5},coords={
@@ -962,7 +958,6 @@ q(5680,{altQuests={5642,5643},c={5},coords={
 [1458]={{49.01,18.32}}},lvl=20,qgs={3044,4606,6018},races={8},rwp=20401,u=2}),
 q(1943,{c={8},coords={
 [1458]={{85,10.2}}},isBreadcrumb=1,lvl=26,nextQuests={1944},qgs={4568},races={5,8},rwp=40003}),
-q(64052,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=30400,sourceQuests={64050}}),
 q(65604,{altQuests={65597},c={9},coords={
 [1454]={{48.2,45.6}}},lvl=20,qgs={5875},r=1,rwp=40003,sourceQuests={65610},g={
 qo(1,{cost={{"i",190187,1}},providers={{"n",185335}}}),
@@ -977,7 +972,6 @@ q(1504,{altQuests={1471},c={9},coords={
 [1454]={{48.2,45.6}}},lvl=10,qgs={5875},races={2,5,8},rwp=40003,sourceQuests={1501},g={
 qo(1,{cost={{"i",7464,1}},providers={{"n",5676}}}),
 r(697)}}),
-q(64063,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=30400,sourceQuests={64052}}),
 q(2756,{coords={
 [1454]={{80.6,23.2}}},cost={{"i",7922,4},{"i",7963,4}},learnedAt=210,lvl=40,qgs={7792},r=1,requireSkill=164,rwp=40003,g={
 r(9957,{learnedAt=230,requireSkill=164})}}),
@@ -996,7 +990,6 @@ q(6611,{coords={
 [1454]={{57.4,53.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610},qgs={3399},r=1,requireSkill=185}),
 q(2380,{altQuests={2378},c={4},coords={
 [1411]={{51.98,43.7}}},isBreadcrumb=1,lvl=16,nextQuests={2460},qgs={3170},r=1,rwp=40003}),
-q(64048,{awp=20501,c={1,2,3,4,5,7,8,9},lvl=58,qgs={3324,3328,3344,3353,3406,5885,5994,23128},r=1,rwp=30400,sourceQuests={64046}}),
 q(2753,{coords={
 [1454]={{79.4,22.4}}},cost={{"i",3842,2},{"i",3835,4},{"i",3836,4}},description="This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2752},g={
 r(9818,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7981,learnedAt=180,q=2,requireSkill=164})}}),
@@ -1825,8 +1818,6 @@ q(7821,{coords={
 [1456]={{43.2,42.8}}},cost={{"i",4306,60}},lvl=26,qgs={14728},r=1,rwp=40003}),
 q(7820,{coords={
 [1456]={{43.2,42.8}}},cost={{"i",2592,60}},lvl=12,qgs={14728},r=1,rwp=40003}),
-q(64047,{awp=20501,c={11},description="Offered automatically to characters boosted to level 58.",lvl=58,r=1,rwp=30400,g={
-i(185964)}}),
 q(7825,{coords={
 [1456]={{43.2,42.8}}},cost={{"i",14047,20}},lvl=50,maxReputation={81,42000},qgs={14728},r=1,repeatable=1,rwp=40003,sourceQuests={7823}}),
 q(936,{coords={
@@ -1841,7 +1832,6 @@ s(121776,7130,{b=1,c={1},f=6,loc=40,q=2})}}),
 q(1844,{c={1},coords={
 [1456]={{39,55.8}}},lvl=20,maps={1442},qgs={6410},r=1,rwp=40003,sourceQuests={1840},g={
 qo(1,{crs={6167},providers={{"i",6840}}})}}),
-q(64051,{awp=20501,c={11},lvl=58,qgs={3036},r=1,rwp=30400,sourceQuests={64049}}),
 q(1205,{coords={
 [1456]={{61.52,80.88}}},lvl=35,maps={1445},qgs={3441},r=1,g={
 qo(1,{coords={
@@ -1884,8 +1874,6 @@ qo(1,{coords={
 [1441]={{13.6,28}}},crs={4548},providers={{"i",5837}}})}}),
 q(6363,{coords={
 [1456]={{45.74,55.86}}},lvl=10,maps={1413},qgs={8359},qis={16283},races={6},sourceQuests={6362}}),
-q(64053,{awp=20501,c={11},lvl=58,qgs={3036},r=1,rwp=30400,sourceQuests={64051}}),
-q(64217,{awp=20501,c={11},lvl=58,qgs={3036},r=1,rwp=30400,sourceQuests={64053}}),
 q(1086,{coords={
 [1456]={{22.85,20.9}}},lvl=13,maps={1442},qgs={3419},r=1,rwp=40003,sourceQuests={1067},g={
 qo(1,{coords={
@@ -1903,7 +1891,6 @@ qo(1,{coords={
 [1441]={{42,35}}},providers={{"i",5869},{"o",20807}}}),
 s(121523,6739,{b=1,f=32,q=2}),
 s(121524,6740,{b=1,f=5,loc=45,q=2})}}),
-q(64049,{awp=20501,c={11},lvl=58,qgs={3036},r=1,rwp=30400,sourceQuests={64047}}),
 q(3761,{coords={
 [1456]={{78.4,28.4}}},cost={{"i",11018,20}},lvl=47,maps={1449},qgs={5769},r=1,rwp=40003,sourceQuests={936,3762,3784}}),
 q(264,{coords={
@@ -11187,8 +11174,6 @@ q(5645,{altQuests={5641,5647},c={5},coords={
 q(212,{coords={
 [1453]={{41.4,89.2}}},lvl=35,maps={1434},qgs={1141},r=2,rwp=40003,g={
 qo(1,{crs={690},providers={{"i",2476}}})}}),
-q(64028,{awp=20501,description="Offered automatically to characters boosted to level 58.",lvl=58,r=2,rwp=30400,g={
-i(185964)}}),
 q(335,{coords={
 [1453]={{26.4,78.4}}},lvl=25,maps={1431,1437},qgs={1435},r=2,rwp=40003,g={
 qo(1,{coords={
@@ -11243,7 +11228,6 @@ qo(2,{coords={
 [1431]={{74.2,77.8}}},crs={6170},providers={{"i",6845}}})}}),
 q(7642,{c={2},coords={
 [1453]={{51.6,12.2}}},cost={{"i",12360,6},{"i",14047,40},{"i",8836,10},{"i",13180,5},{"g",1500000}},lvl=60,maps={317},qgs={1416},r=2,rwp=40003,sourceQuests={7641}}),
-q(64034,{awp=20501,lvl=58,qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=30400,sourceQuests={64031}}),
 q(5634,{altQuests={5635,5636,5637,5638,5639,5640},c={5},coords={
 [1453]={{38.8,26.6}}},lvl=10,qgs={376},races={1,3},rwp=30002,g={
 r(13908,{rank=1})}}),
@@ -11252,7 +11236,6 @@ q(5638,{altQuests={5634,5635,5636,5637,5639,5640},c={5},coords={
 r(13908,{rank=1})}}),
 q(6261,{coords={
 [1453]={{74.2,47.6}}},lvl=10,qgs={1323},qis={16115},races={1},rwp=40003,sourceQuests={6281}}),
-q(64037,{awp=20501,lvl=58,qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=30400,sourceQuests={64035}}),
 q(5673,{altQuests={5672,5675},c={5},coords={
 [1453]={{38.8,26.6}}},lvl=20,qgs={376},races={4},rwp=30002,g={
 r(2651,{rank=1})}}),
@@ -11394,7 +11377,6 @@ q(1688,{c={9},coords={
 [1453]={{25.4,78.4}}},lvl=10,maps={1429},qgs={6122},races={1,7},rwp=40003,sourceQuests={1685,1715},g={
 qo(1,{coords={
 [1429]={{71,80.6}}},crs={881},providers={{"i",6810}}})}}),
-q(64035,{awp=20501,lvl=58,qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=30400,sourceQuests={64034}}),
 q(434,{coords={
 [1453]={{69.2,14.6}}},lvl=16,qgs={7766},r=2,rwp=40003,sourceQuests={2746},g={
 qo(1,{providers={{"n",1754}}}),
@@ -11415,7 +11397,6 @@ qo(1,{cost={{"i",6928,1}},providers={{"n",5676}}}),
 r(697)}}),
 q(392,{coords={
 [1453]={{41.2,58}}},lvl=16,qgs={1719},qis={8687},r=2,rwp=40003,sourceQuests={391}}),
-q(64038,{awp=20501,lvl=58,qgs={331,376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=30400,sourceQuests={64035}}),
 q(7646,{c={2},coords={
 [1453]={{37.6,32.6}}},cost={{"i",18335,1},{"i",12800,1}},lvl=60,qgs={928},r=2,rwp=40003,sourceQuests={7644}}),
 q(6182,{coords={
@@ -11515,7 +11496,6 @@ q(7639,{c={2},coords={
 [1455]={{25,8.2}}},lvl=60,qgs={11406},qis={18819},r=2,rwp=40003,sourceQuests={7637}}),
 q(1449,{coords={
 [1453]={{64.3,20.7}}},lvl=38,maps={1425},qgs={5384},r=2,rwp=40003,sourceQuests={1448}}),
-q(64031,{awp=20501,lvl=58,qgs={376,914,928,5495,5497,5505,5515,13283,20407},r=2,rwp=30400,sourceQuests={64028}}),
 q(1938,{c={8},coords={
 [1453]={{37.6,81.6}}},lvl=26,maps={1433},qgs={5694},r=2,rwp=40003,sourceQuests={1939},g={
 qo(1,{coords={
