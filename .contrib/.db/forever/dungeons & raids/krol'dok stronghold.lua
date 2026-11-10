@@ -26,9 +26,46 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 					i(279853),	-- Stick No Rock
 				},
 			}),
-			q(94980, {	-- Krol'dok Moulding
+			q(94981, {	-- Key Ingredients [A]
+				sourceQuest = 94980,	-- Krol'dok Moulding [A]
+				qg = 259250,	-- Alphonse Dumas <Journeyman Blacksmith>
+				coord = { 64.4, 82.0, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/4 Thick Leather
+						provider = { "i", 4304 },	-- Thick Leather
+					}),
+					objective(2, {	-- 0/12 Iron Bar
+						provider = { "i", 3575 },	-- Iron Bar
+					}),
+					i(267089),	-- Krol'dok Compound Key
+				},
+			}),
+			q(94974, {	-- Key Ingredients [H]
+				sourceQuest = 94973,	-- Krol'dok Moulding [H]
+				qg = 256657,	-- Kreza Darkthorn <Weaponsmith & Armorcrafter>
+				coord = { 59.8, 46.0, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/4 Thick Leather
+						provider = { "i", 4304 },	-- Thick Leather
+					}),
+					objective(2, {	-- 0/12 Iron Bar
+						provider = { "i", 3575 },	-- Iron Bar
+					}),
+					i(267089),	-- Krol'dok Compound Key
+				},
+			}),
+			q(94980, {	-- Krol'dok Moulding [A]
 				qs = 267138,	-- Krol'dok Moulding (QS!)
 				races = ALLIANCE_ONLY,
+				lvl = 38,
+			}),
+			q(94973, {	-- Krol'dok Moulding [H]
+				qs = 267137,	-- Krol'dok Moulding (QS!)
+				races = HORDE_ONLY,
 				lvl = 38,
 			}),
 			q(94984, {	-- Tome of Twilight
@@ -92,6 +129,9 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 			creatureID = 258968,	-- Overlord Mugg
 		}),
 		n(ZONE_DROPS, {
+			i(267137, {	-- Krol'dok Moulding (QS!)
+				cr = 259256,	-- Tunk
+			}),
 			i(267138, {	-- Krol'dok Moulding (QS!)
 				cr = 259256,	-- Tunk
 			}),
