@@ -303,9 +303,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			q(92872, {	-- Dutiful Steps
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Caretaker Alaric (2782) in the Stromgarde Keep crypt.
+				qg = 2782,	-- Caretaker Alaric
 				qi = 278543,	-- Pouch of Tomb Dust (PQI!)
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				coord = { 29.2, 59.6, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
 			}),
