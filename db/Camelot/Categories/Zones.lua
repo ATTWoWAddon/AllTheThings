@@ -485,7 +485,7 @@ n(3399,{coords={
 [1454]={{57.4,53.6}}},r=1,g={
 r(2550,{lvl=5,rank=1,requireSkill=185}),
 r(3102,{learnedAt=50,lvl=10,rank=2,requireSkill=185,rwp=80001}),
-r(818,{learnedAt=25,requireSkill=185}),
+r(1229737,{learnedAt=20,requireSkill=185,skillID=2939}),
 r(6499,{learnedAt=50,requireSkill=185,skillID=2939}),
 r(2538,{learnedAt=45,requireSkill=185,skillID=2939}),
 r(2541,{learnedAt=50,requireSkill=185,skillID=2939}),
@@ -4888,6 +4888,11 @@ qo(2,{coords={
 [1444]={{42.4,22}}},crs={7765},providers={{"i",9189}}}),
 s(159460,9656,{b=1,f=7,loc=44}),
 s(159461,9657,{b=1,f=5,loc=45})}}),
+q(92858,{awp=16001,coords={
+[1444]={{31.1,43.9}}},lvl=39,providers={{"o",581918}},r=2,g={
+qo(1,{coords={
+[1444]={{75,25}}},crs={222233},providers={{"i",254692}}}),
+s(310152,277253,{b=1,f=28})}}),
 q(2862,{coords={
 [1444]={{74.8,42.6}}},lvl=39,qgs={7875},r=1,g={
 qo(1,{crs={5249,5251,5253,5254,5255,5258},providers={{"i",9237}}})}}),
@@ -10676,7 +10681,7 @@ n(5482,{coords={
 [1453]={{78.2,53}}},r=2,g={
 r(2550,{lvl=5,rank=1,requireSkill=185}),
 r(3102,{learnedAt=50,lvl=10,rank=2,requireSkill=185,rwp=80001}),
-r(818,{learnedAt=25,requireSkill=185}),
+r(1229737,{learnedAt=20,requireSkill=185,skillID=2939}),
 r(6499,{learnedAt=50,requireSkill=185,skillID=2939}),
 r(2538,{learnedAt=45,requireSkill=185,skillID=2939}),
 r(2541,{learnedAt=50,requireSkill=185,skillID=2939}),

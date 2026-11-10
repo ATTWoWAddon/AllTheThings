@@ -1075,6 +1075,21 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					i(9657),	-- Vinehedge Cinch
 				},
 			}),
+			q(92858, {	-- WANTED: Ohk'zi
+				provider = { "o", 581918 },	-- WANTED!
+				coord = { 31.1, 43.9, MAP.FERALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/1 Staff of Ohk'zi
+						provider = { "i", 254692 },	-- Staff of Ohk'zi
+						coord = { 75.0, 25.0, MAP.FERALAS },
+						cr = 222233,	-- Ohk'zi
+					}),
+					i(277253),	-- Staff of Brutal Cunning
+				},
+			}),
 			q(2862, {	-- War on the Woodpaw
 				qg = 7875,	-- Hadoken Swiftstrider
 				coord = { 74.8, 42.6, MAP.FERALAS },
