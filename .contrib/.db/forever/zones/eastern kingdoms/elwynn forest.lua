@@ -22,8 +22,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						qi = 251941,	-- Scribbled Letter (PQI!)
 						coord = { 48.9, 41.6, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
-						races = { NIGHTELF },
-						classes = { WARRIOR },
+						races = { HUMAN },
+						classes = { HUNTER },
 					}),
 					q(783, {	-- A Threat Within
 						qg = 823,	-- Deputy Willem

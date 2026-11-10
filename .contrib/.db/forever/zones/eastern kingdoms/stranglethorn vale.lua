@@ -1185,8 +1185,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 45,
 			}),
 			q(97048, {	-- Returning to Port
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Captain Aransas in Booty Bay.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 218230,	-- Wendel Mathers
+				coord = { 44.2, 8.0, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {
 					i(277224),	-- Kurzen Headshrinker's Cinch
@@ -2801,6 +2802,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
 			q(614),	-- The Captain's Chest [Old] - completed with quest 8551
 			q(615, {timeline = { ADDED_1_12_1 }}),	-- The Captain's Cutlass [Old] - completed with quest 8553
 			q(620, {timeline = { ADDED_1_12_1 }}),	-- The Monogrammed Sash [Old] - completed with quest 8552
+			q(80056, {timeline = { TIMELINE.ADDED_1_60_1 }}),	-- completed when accepting Returning to Port (97048)
 		}),
 	}),
 }));
