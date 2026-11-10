@@ -384,7 +384,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 			}),
 			n(203593, {	-- Underlight Queen
 				coord = { 58.2, 69.1, ZARALEK_CAVERN },
-				questID = 75298,	-- Old QuestID: 75553
+				questID = 75297,	-- Old QuestID: 75553
 				groups = {
 					bo(75298, true),
 					i(205159),	-- Teardrop Moth (PET!)
