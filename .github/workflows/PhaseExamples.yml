@@ -41,6 +41,11 @@ jobs:
           powershell.exe -NoProfile -ExecutionPolicy Bypass -File .contrib/src/Parser/tests/CostMerge.Tests.ps1 -ParserPath "$env:RUNNER_TEMP/phase-parser/Parser.exe"
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
+      - name: Check Parser localization fallback
+        run: |
+          powershell.exe -NoProfile -ExecutionPolicy Bypass -File .contrib/src/Parser/tests/LocalizationFallback.Tests.ps1 -ParserPath "$env:RUNNER_TEMP/phase-parser/Parser.exe"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+
       - name: Build Lua 5.1.5 for the example checks
         run: |
           $archive = Join-Path $env:RUNNER_TEMP 'lua-5.1.5.tar.gz'
@@ -63,9 +68,9 @@ jobs:
       - name: Check generated phase inputs against the authored schedule
         run: python .contrib/phase-examples/prepare.py --check
 
-      - name: Compare Blackwing Lair migration snapshots with the shipped Parser
+      - name: Compare Blackwing Lair migration snapshots with the built Parser
         run: |
-          python .contrib/phase-examples/evolution/blackwing-lair/verify.py --parser .contrib/.tools/Parser.exe --lua "$env:RUNNER_TEMP/lua-5.1.5/src/lua51.exe"
+          python .contrib/phase-examples/evolution/blackwing-lair/verify.py --parser "$env:RUNNER_TEMP/phase-parser/Parser.exe" --lua "$env:RUNNER_TEMP/lua-5.1.5/src/lua51.exe"
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
       - name: Verify all authoring options with the built Parser
