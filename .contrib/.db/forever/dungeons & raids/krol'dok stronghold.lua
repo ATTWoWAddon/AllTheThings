@@ -11,10 +11,56 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 	lvl = 40,
 	groups = {
 		n(QUESTS, {
-			q(94982, {	-- Eye of Mugg
+			q(94975, {	-- A Token of Vengeance
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/15 Cultist Ear
+						provider = { "i", 267091 },	-- Cultist Ear
+						crs = {
+							258042,	-- Twilight Grunt
+							258100,	-- Twilight Warlock
+							258102,	-- Twilight Outrider
+							258104,	-- Twilight Lieutenant
+							258972,	-- Twilight Commander Zarmok
+							268423,	-- Zalfan Moonshadow
+						},
+					}),
+					i(267090),	-- Semblance of Twilight
+				},
+			}),
+			q(94998, {	-- Curios of Curiosity
+				sourceQuest = 94997,	-- Lingering Essence
+				qg = 257591,	-- Ashe Amberhall
+				qi = 268036,	-- Satchel of Mementos (PQI!)
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+				groups = {
+					i(279850),	-- Curio-Adorned Necklace
+				},
+			}),
+			q(94982, {	-- Eye of Mugg [A]
 				qg = 257558,	-- Demar Brant
 				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Eye of Mugg
+						provider = { "i", 267086 },	-- Eye of Mugg
+						cr = 258968,	-- Overseer Mugg
+					}),
+					i(279480),	-- Bigger Rock on Bigger Stick
+					i(279852),	-- Rock on Stick
+					i(279853),	-- Stick No Rock
+				},
+			}),
+			q(94968, {	-- Eye of Mugg [H]
+				qg = 256418,	-- Krom'rosh
+				coord = { 59.4, 45.4, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
 				lvl = 40,
 				groups = {
 					objective(1, {	-- 0/1 Eye of Mugg
@@ -68,7 +114,24 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				races = HORDE_ONLY,
 				lvl = 38,
 			}),
-			q(94984, {	-- Tome of Twilight
+			q(94969, {	-- Krol'dok No More!
+				-- TODO: Wowhead doesn't list the quest giver yet. It's an escort of Marcus Tilwell out of Krol'dok Stronghold; his NPC ID isn't known yet.
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
+					i(279851),	-- TODO: Item name not known yet.
+					i(279929),	-- TODO: Item name not known yet.
+				},
+			}),
+			q(94997, {	-- Lingering Essence
+				sourceQuest = 94983,	-- Twilight Mementos
+				qg = 258023,	-- Sergeant Riftan
+				qi = 268035,	-- Satchel of Cursed Mementos (PQI!)
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+			}),
+			q(94984, {	-- Tome of Twilight [A]
 				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1 in Riverglades, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94907,	-- A Small Favor
 				races = ALLIANCE_ONLY,
@@ -80,6 +143,20 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 					}),
 					i(279854),	-- Twilight Initiate's Belt
 					i(279855),	-- Torn Cultist Cloak
+				},
+			}),
+			q(94972, {	-- Tome of Twilight [H]
+				qg = 256710,	-- Tran'gul
+				coord = { 59.4, 44.0, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/1 Tome of Twilight
+						provider = { "i", 267104 },	-- Tome of Twilight
+						cr = 258964,	-- Nar'gurk
+					}),
+					i(279860),	-- Convert's Bindings
+					i(279859),	-- Indoctrinated Choker
 				},
 			}),
 			q(94983, {	-- Twilight Mementos
