@@ -2247,7 +2247,8 @@ s(311695,279851,{f=5,loc=42,spellID=1319427}),
 s(311696,279929,{f=6,loc=40,spellID=1319426})}}),
 q(94997,{coords={
 [2548]={{30.7,49.1}}},lvl=38,qgs={258023},qis={268035},r=2,sourceQuests={94983}}),
-q(94984,{lvl=39,r=2,sourceQuests={94907},g={
+q(94984,{coords={
+[2548]={{66.6,81}}},lvl=39,qgs={257591},r=2,sourceQuests={94907},g={
 qo(1,{crs={258964},providers={{"i",267104}}}),
 s(311700,279854,{f=5,loc=45}),
 s(311699,279855,{f=3})}}),
@@ -4405,7 +4406,8 @@ s(159383,9474,{f=5,loc=46})}}),
 n(7607,{description="You must talk to this NPC in order to enter the room with the last boss! If you are not fast enough, their whole party hearthstones out of the instance."}),
 n(7604,{description="These adventurers initially help you clear the gauntlet leading up to the previous boss, but then they turn on you. You don't have to fight them if no one in your party needs the quest item.",qgs={7605,7606,7608},g={
 i(8548,{f=55})}}),
-n(7797,{description="He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however."}),
+n(7797,{description="He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",g={
+s(308950,274654,{awp=16001,f=22})}}),
 e(489,{npcID=7267,g={
 s(160215,11086,{f=25,spellID=11654}),
 s(159387,9478,{f=21}),
