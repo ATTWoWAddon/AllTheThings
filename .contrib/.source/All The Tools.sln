@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATT Sync Tool", "ATT Sync Tool\ATT Sync Tool.csproj", "{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skill Level Requirements", "Skill Level Requirements\Skill Level Requirements.csproj", "{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item Database Consolidator", "Item Database Consolidator\Item Database Consolidator.csproj", "{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconID Converter", "IconID Converter\IconID Converter.csproj", "{327F1D35-980F-46B7-8FB7-4754702CEC92}"
@@ -54,20 +52,6 @@ Global
 		{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}.Release|x64.Build.0 = Release|x64
 		{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}.Retail|x64.ActiveCfg = Release|x64
 		{372B2DCF-17CA-43B4-B6EE-88F0D392C6D7}.Retail|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic Era|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic Era|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic TBC|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic TBC|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic Wrath|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic Wrath|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Classic|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Debug|x64.ActiveCfg = Debug|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Debug|x64.Build.0 = Debug|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Release|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Release|x64.Build.0 = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Retail|x64.ActiveCfg = Release|x64
-		{E051AD50-CD41-4A48-8371-8F0EDAFB2BF4}.Retail|x64.Build.0 = Release|x64
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Classic Era|x64.ActiveCfg = Release|x64
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Classic Era|x64.Build.0 = Release|x64
 		{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}.Classic TBC|x64.ActiveCfg = Release|x64
