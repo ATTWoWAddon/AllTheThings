@@ -6,40 +6,27 @@ The long-term goal is to keep all maintained tool source code in one location, p
 
 ## Framework Policy
 
-ATT tools will use a two-stage framework strategy.
-
-### Migration Target: .NET 8
-
-The initial modernization and cross-platform migration target is:
-
-```text
-net8.0
-```
-
-All tools being migrated from .NET Framework or older project structures should first target .NET 8.
-
-.NET 8 is the compatibility baseline for the migration effort.
-
-The purpose of this stage is to:
-
-- remove dependencies on .NET Framework where possible;
-- establish a common SDK-style project structure;
-- make command-line tools cross-platform;
-- establish Runtime Identifier-aware publishing;
-- consolidate common build and dependency configuration;
-- minimize unrelated framework changes during the migration.
-
-A tool should generally complete its .NET 8 migration before additional framework upgrades are considered.
-
-### Next-Generation Target: .NET 10
-
-The next-generation framework target is:
+ATT tools that can move off .NET Framework should target .NET 10:
 
 ```text
 net10.0
 ```
 
-.NET 10 should be treated as the target for the next major framework generation after the initial migration is complete.
+.NET 8 LTS reaches End of Support on November 10, 2026 (Pacific Time).
+.NET 10 LTS is supported through November 14, 2028. See the
+[official .NET support policy](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
+New migrations should target `net10.0` directly.
+
+The migration should:
+
+- remove dependencies on .NET Framework where possible;
+- establish a common SDK-style project structure;
+- make command-line tools cross-platform;
+- establish Runtime Identifier-aware publishing;
+- consolidate common build and dependency configuration.
+
+Keep framework, dependency, and publishing changes reviewable as separate steps
+where practical.
 
 The intended progression is:
 
@@ -47,58 +34,28 @@ The intended progression is:
 ```text
 Legacy .NET Framework / existing projects
                 ↓
-             .NET 8
+            .NET 10
        Migration Baseline
                 ↓
-            .NET 10
-      Next-Generation Baseline
+       Cross-Platform Build
 ```
 <!-- editorconfig-checker-enable -->
 
-The migration to .NET 8 and the transition to .NET 10 are intentionally treated as separate changes.
+## Migration Requirements
 
-The .NET 8 migration is primarily concerned with repository consolidation, portability, dependency cleanup, and reproducible cross-platform builds.
-
-The .NET 10 transition can then be performed on top of that common foundation without mixing a framework-generation upgrade into the initial migration.
-
-## Migration Schedule
-
-.NET 8 LTS reaches its official End of Support on:
-
-```text
-November 10, 2026
-```
-
-ATT's .NET 8 migration must therefore be completed no later than one month before the official End of Support date:
-
-```text
-Migration Deadline
-October 10, 2026
-```
-
-The schedule is:
-
-| Milestone | Date |
-| --- | --- |
-| .NET 8 migration deadline | **October 10, 2026** |
-| .NET 8 End of Support | **November 10, 2026** |
-| Next-generation framework | **.NET 10** |
-
-By **October 10, 2026**, tools within the cross-platform migration scope should:
+Tools within the cross-platform migration scope should:
 
 - have their maintained source code consolidated under the new source layout;
 - use SDK-style .NET projects where applicable;
-- target `net8.0`;
+- target `net10.0`;
 - build successfully from source without relying on previously committed executables;
 - support the applicable desktop Runtime Identifiers defined in this document;
 - package native dependencies according to the target Runtime Identifier;
 - use the new build and artifact structure rather than writing directly into `.contrib/.tools/`.
 
-Tools explicitly listed under **Temporarily Excluded Tools** are not required to meet the cross-platform portion of this deadline until their platform-specific dependencies are redesigned or removed.
-
-.NET 8 is a migration baseline rather than the final long-term framework target.
-
-After the .NET 8 migration is complete, development should proceed toward the .NET 10 next-generation baseline.
+Tools explicitly listed under **Temporarily Excluded Tools** are not required
+to meet the cross-platform requirements until their platform-specific
+dependencies are redesigned or removed.
 
 ## Supported Platforms
 
@@ -253,17 +210,15 @@ Common .NET build configuration should be moved to the root of the source tree r
 
 `Directory.Build.props` should contain common compiler and build settings.
 
-During the migration phase, the common target framework should default to:
+The common target framework for migrated .NET tools should default to:
 
 ```xml
-<TargetFramework>net8.0</TargetFramework>
+<TargetFramework>net10.0</TargetFramework>
 ```
 
 `Directory.Packages.props` may centrally manage shared NuGet dependency versions.
 
 Individual projects should contain only configuration specific to that tool.
-
-The later transition to .NET 10 should update the common framework baseline after the .NET 8 migration has stabilized.
 
 ## Build Output
 
@@ -415,13 +370,13 @@ They are simply outside the supported desktop platform matrix and are not requir
 
 ## Migration Target
 
-The first modernization milestone is:
+The modernization milestone is:
 
 <!-- editorconfig-checker-disable -->
 ```text
 Unified Source Layout
         +
-      .NET 8
+      .NET 10
         +
 Cross-Platform Build
         +
@@ -429,23 +384,8 @@ RID-Aware Publishing
 ```
 <!-- editorconfig-checker-enable -->
 
-This milestone must be reached by:
-
-```text
-October 10, 2026
-```
-
-The migration should prioritize getting the existing tools onto a common, reproducible .NET 8 build infrastructure before adopting .NET 10.
-
-## Next Generation
-
-After the .NET 8 migration is complete and stable, the next-generation baseline is:
-
-```text
-.NET 10
-```
-
-The .NET 10 transition should be handled as a separate framework upgrade rather than being mixed into the initial portability migration.
+The migration should prioritize a common, reproducible .NET 10 build
+infrastructure for maintained tools.
 
 ## Target Architecture
 
@@ -454,7 +394,7 @@ Legacy Tools
     ↓
 .contrib/src/
     ↓
-.NET 8 Migration Baseline
+.NET 10 Migration Baseline
     ↓
 Cross-Platform Build
     ↓
@@ -467,8 +407,6 @@ Cross-Platform Build
 ├── linux-arm64
 ├── osx-x64
 └── osx-arm64
-    ↓
-.NET 10 Next-Generation Baseline
 ```
 
 Windows-specific legacy tools may remain outside the cross-platform matrix temporarily, but new or migrated command-line tools should not introduce new operating-system-specific dependencies without a clear requirement.
