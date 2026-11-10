@@ -6,11 +6,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(createHeader({
 	constant = "HALLOWS_END_HEADER",
 	icon = [[~_.asset("Holiday_hallows_end")]],
 	eventID = EVENTS.HALLOWS_END,
-	eventSchedule = {
-		1,	-- Recurring
-		10, 18, 10, 0,	-- 10/18 at 10:00 AM
-		11, 1, 11, 0	-- 11/01 at 11:00 AM
-	},
 	text = {
 		en = "Hallow's End",
 		de = "Schlotternächte",

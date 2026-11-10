@@ -7,11 +7,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HARVEST_FESTIVAL, n(createHeader({
 	constant = "HARVEST_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Harvestfest")]],
 	eventID = EVENTS.HARVEST_FESTIVAL,
-	eventSchedule = {
-		1,	-- Recurring
-		9, 6, 10, 0,	-- 09/06 at 10:00 AM
-		9, 13, 10, 0	-- 09/13 at 10:00 AM
-	},
 	text = {
 		en = "Harvest Festival",
 		-- TODO: de = "",

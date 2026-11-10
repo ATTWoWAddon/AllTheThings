@@ -109,11 +109,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(createHeader({
 	constant = "LUNAR_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Lunar")]],
 	eventID = EVENTS.LUNAR_FESTIVAL,
-	eventSchedule = {
-		1,	-- Recurring
-		1, 28, 10, 0,	-- 01/28 at 10:00 AM
-		2, 18, 10, 0	-- 02/18 at 10:00 AM
-	},
 	text = {
 		en = "Lunar Festival",
 		de = "Mondfest",

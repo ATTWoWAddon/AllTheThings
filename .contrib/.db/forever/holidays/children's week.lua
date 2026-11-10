@@ -15,11 +15,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(createHeader({
 	constant = "CHILDRENS_WEEK_HEADER",
 	icon = [[~_.asset("Holiday_Children")]],
 	eventID = EVENTS.CHILDRENS_WEEK,
-	eventSchedule = {
-		1,	-- Recurring
-		5, 1, 0, 0,		-- 5/1 at 12 AM
-		5, 7, 23, 59	-- 5/7 at 11:59 PM
-	},
 	text = {
 		en = "Children's Week",
 		-- TODO: de = "",

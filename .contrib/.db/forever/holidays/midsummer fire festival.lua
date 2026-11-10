@@ -66,11 +66,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 	constant = "MIDSUMMER_FIRE_FESTIVAL_HEADER",
 	icon = [[~_.asset("Holiday_Midsummer")]],
 	eventID = EVENTS.MIDSUMMER_FIRE_FESTIVAL,
-	eventSchedule = {
-		1,	-- Recurring
-		6, 21, 10, 0,	-- 06/21 at 10:00 AM
-		7, 5, 10, 0		-- 07/05 at 10:00 AM
-	},
 	text = {
 		en = "Midsummer Fire Festival",
 		de = "Sonnenwendfest",
