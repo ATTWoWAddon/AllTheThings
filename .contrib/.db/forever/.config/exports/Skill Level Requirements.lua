@@ -2202,7 +2202,6 @@ for spellID,learnedAt in pairs({
 	[2539] = 10,	-- Spiced Wolf Meat
 	[1229737] = 20,	-- Basic Campfire
 	[6413] = 20,	-- Scorpid Surprise
-	[818] = 25,	-- Basic Campfire
 	[2795] = 25,	-- Beer Basted Boar Ribs
 	[1249957] = 25,	-- Peace Tea
 	[1270633] = 25,	-- Skywall Souffle

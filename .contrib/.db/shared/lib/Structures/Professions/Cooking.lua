@@ -38,7 +38,11 @@ CLASSIC_COOKING = {
 		rank = 4,
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264632, {timeline = {ADDED_8_0_1_LAUNCH}})),	-- Classic Cooking
+	-- #if FOREVER
+	r(1229737),	-- Basic Campfire Kit
+	-- #else
 	r(818),	-- Cooking Fire
+	-- #endif
 	r(6499),	-- Boiled Clams
 	r(46684, {timeline = {ADDED_4_1_0}}),	-- Charred Bear Kabobs
 	r(2538),	-- Charred Wolf Meat

@@ -5,7 +5,7 @@ local i = GetRecipeHelperForProfession(COOKING);
 --- TRAINER ---
 i(0, 2550);			-- Cooking (Apprentice)
 i(0, 2539);			-- Spiced Wolf Meat
-i(0, 1229737);		-- Basic Campfire
+i(0, 1229737);		-- Basic Campfire Kit
 i(0, 6499);			-- Boiled Clams
 i(0, 3102);			-- Cooking (Journeyman)
 i(0, 2541);			-- Coyote Steak
@@ -118,7 +118,6 @@ r(1255241),	-- Cleansing Stew
 i(252949),	-- TODO: Item name not known yet.
 r(8604),	-- Herb Baked Egg
 i(6891),	-- Recipe: Herb Baked Egg
-r(818),	-- Basic Campfire
 r(2538),	-- Charred Wolf Meat
 r(2540),	-- Roasted Boar Meat
 r(1270632),	-- Critter Cookie
