@@ -1709,6 +1709,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95748, {	-- The Gurubashi Legends of Old
+				sourceQuest = 629,	-- The Vile Reef
 				qg = 2519,	-- Kin'weelay
 				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },

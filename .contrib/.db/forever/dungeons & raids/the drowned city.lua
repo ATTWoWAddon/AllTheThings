@@ -15,6 +15,7 @@ instanceroot(2970, {	-- The Drowned City
 				qg = 264074,	-- Mazu'kon <Earthen Ring>
 				coord = { 32.4, 20.6, MAP.MULGORE },
 				races = HORDE_ONLY,
+				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Ancient Gurubashi Idol
 						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
@@ -79,44 +80,80 @@ instanceroot(2970, {	-- The Drowned City
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
+				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 The First Tablet of I'lalai
-						provider = { "i", 270308 },	-- The First Tablet of I'lalai
+						description = "Down the stairs to the left, where you first see the pool.",
+						providers = {
+							{ "i", 270308 },	-- The First Tablet of I'lalai
+							{ "o", 642943 },	-- The First Tablet of I'lalai
+						},
 					}),
 					objective(2, {	-- 0/1 The Second Tablet of I'lalai
-						provider = { "i", 270309 },	-- The Second Tablet of I'lalai
+						description = "To the left of Var'Taka.",
+						providers = {
+							{ "i", 270309 },	-- The Second Tablet of I'lalai
+							{ "o", 642944 },	-- The Second Tablet of I'lalai
+						},
 					}),
 					objective(3, {	-- 0/1 The Third Tablet of I'lalai
-						provider = { "i", 270310 },	-- The Third Tablet of I'lalai
+						description = "Near Captain Dreadrise, in the mouth of a skull.",
+						providers = {
+							{ "i", 270310 },	-- The Third Tablet of I'lalai
+							{ "o", 642945 },	-- The Third Tablet of I'lalai
+						},
 					}),
 					objective(4, {	-- 0/1 The Fourth Tablet of I'lalai
-						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai
+						description = "Behind Min'loth the Serpent, the last boss.",
+						providers = {
+							{ "i", 270311 },	-- The Fourth Tablet of I'lalai
+							{ "o", 642946 },	-- The Fourth Tablet of I'lalai
+						},
 					}),
 				},
 			}),
 			q(95775, {	-- The Drowned City
-				-- TODO: Wowhead doesn't list the quest giver yet. Use the hide and charcoal to make rubbings of the four tablets of I'lalai.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				sourceQuest = 95770,	-- Locating the Lost City
+				qg = 2519,	-- Kin'weelay
+				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
+				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 The First Tablet of I'lalai
-						provider = { "i", 270308 },	-- The First Tablet of I'lalai
+						description = "Down the stairs to the left, where you first see the pool.",
+						providers = {
+							{ "i", 270308 },	-- The First Tablet of I'lalai
+							{ "o", 642943 },	-- The First Tablet of I'lalai
+						},
 					}),
 					objective(2, {	-- 0/1 The Second Tablet of I'lalai
-						provider = { "i", 270309 },	-- The Second Tablet of I'lalai
+						description = "To the left of Var'Taka.",
+						providers = {
+							{ "i", 270309 },	-- The Second Tablet of I'lalai
+							{ "o", 642944 },	-- The Second Tablet of I'lalai
+						},
 					}),
 					objective(3, {	-- 0/1 The Third Tablet of I'lalai
-						provider = { "i", 270310 },	-- The Third Tablet of I'lalai
+						description = "Near Captain Dreadrise, in the mouth of a skull.",
+						providers = {
+							{ "i", 270310 },	-- The Third Tablet of I'lalai
+							{ "o", 642945 },	-- The Third Tablet of I'lalai
+						},
 					}),
 					objective(4, {	-- 0/1 The Fourth Tablet of I'lalai
-						provider = { "i", 270311 },	-- The Fourth Tablet of I'lalai
+						description = "Behind Min'loth the Serpent, the last boss.",
+						providers = {
+							{ "i", 270311 },	-- The Fourth Tablet of I'lalai
+							{ "o", 642946 },	-- The Fourth Tablet of I'lalai
+						},
 					}),
 				},
 			}),
 			q(95776, {	-- The Only Good Brinescale...
-				-- TODO: Wowhead doesn't list the quest giver yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 2464,	-- Commander Aggro'gosh
+				coord = { 32.2, 28.8, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
+				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Var'Taka slain
 						provider = { "n", 258924 },	-- Var'Taka
