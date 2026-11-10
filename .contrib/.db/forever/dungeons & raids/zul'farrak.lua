@@ -287,6 +287,11 @@ instanceroot(241, {	-- Zul'Farrak
 		}),
 		n(7797, {	-- Ruuzlu
 			description = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
+			groups = {
+				i(274654, {	-- Sandfury Guillotine
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+			},
 		}),
 		e(489, {	-- Chief Ukorz Sandscalp
 			creatureID = 7267,

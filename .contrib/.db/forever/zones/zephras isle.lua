@@ -1793,6 +1793,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 63.2, 61.9, MAP.ZEPHRAS_ISLE },	-- Walks around the area
 				groups = {
 					i(285254),	-- Scout Ranger's Gloves
+					i(285253),	-- Skyseer's Gloves
 					i(285255),	-- Thendal Watcher's Gloves
 				},
 			}),
