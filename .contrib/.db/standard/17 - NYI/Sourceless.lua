@@ -663,6 +663,11 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(86239),	-- Plunderstore related
 			}),
 
+			-- 11.1.0
+			expansion(EXPANSION.TWW, patch(1,0), {
+				q(88865),	-- Undermine related
+			}),
+
 			-- 11.1.7
 			expansion(EXPANSION.TWW, patch(1,7), {
 				q(87560),	-- Exile's Reach + Chromie Time related

@@ -233,6 +233,7 @@ root(ROOTS.Promotions, {
 			}),
 			n(DUNGEONS_AND_DRAGONS, sharedDataSelf({
 				timeline = { ADDED_12_1_5 },
+				u = REAL_MONEY,
 			}, {
 				i(281526),	-- Black Malice (MOUNT!)
 				i(284179);	-- Eyestalker (PET!)

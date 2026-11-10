@@ -1086,7 +1086,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 			q(1169, {	-- Identifying the Brood
 				qg = 4501,	-- Draz'Zilb
 				coord = { 37.0, 33.0, DUSTWALLOW_MARSH },
-				timeline = { REMOVED_4_0_3 },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1753,7 +1752,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 			q(1166, {	-- Overlord Mok'Morokk's Concern
 				qg = 4500,	-- Overlord Mok'Morokk
 				coord = { 36.2, 31.4, DUSTWALLOW_MARSH },
-				timeline = { REMOVED_4_0_3 },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {

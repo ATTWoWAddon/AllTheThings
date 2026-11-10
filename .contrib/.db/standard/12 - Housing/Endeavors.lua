@@ -379,7 +379,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			groups = {
 				n(271173, {	-- Timicky <Endeavor Vendor>
 					coords = {	-- Kobold Endeavor Vendors seem to have different coords than the others
-						-- FOUNDERS_POINT
+						{ 53.0, 38.2, FOUNDERS_POINT },
 						{ 54.9, 57.3, RAZORWIND_SHORES },
 					},
 					groups = {

@@ -516,6 +516,7 @@ i(235690, 82169);	-- Delver's Dirigible Schematic: Harpoon
 i(235698, 82194);	-- Delver's Dirigible Schematic: Horde Decal
 i(235689, 82186);	-- Delver's Dirigible Schematic: Kite
 i(235695, 82189);	-- Delver's Dirigible Schematic: Red Paint
+i(223510, 82177);	-- Delver's Dirigible Schematic: Template (MM!)
 i(235692, 82177);	-- Delver's Dirigible Schematic: Thrusters
 i(235691, 82191);	-- Delver's Dirigible Schematic: Yellow Paint
 i(238178, 88814);	-- Delver's Mana-Skimmer Schematic: Canister
