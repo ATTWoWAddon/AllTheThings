@@ -50,7 +50,7 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				groups = {
 					objective(1, {	-- 0/1 Eye of Mugg
 						provider = { "i", 267086 },	-- Eye of Mugg
-						cr = 258968,	-- Overseer Mugg
+						cr = 258968,	-- Overlord Mugg
 					}),
 					i(279480),	-- Bigger Rock on Bigger Stick
 					i(279852),	-- Rock on Stick
@@ -65,7 +65,7 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				groups = {
 					objective(1, {	-- 0/1 Eye of Mugg
 						provider = { "i", 267086 },	-- Eye of Mugg
-						cr = 258968,	-- Overseer Mugg
+						cr = 258968,	-- Overlord Mugg
 					}),
 					i(279480),	-- Bigger Rock on Bigger Stick
 					i(279852),	-- Rock on Stick
@@ -139,7 +139,7 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				groups = {
 					objective(1, {	-- 0/1 Tome of Twilight
 						provider = { "i", 267104 },	-- Tome of Twilight
-						cr = 258964,	-- Nar'gurk
+						cr = 258964,	-- Nar'gurk <The Corruptor>
 					}),
 					i(279854),	-- Twilight Initiate's Belt
 					i(279855),	-- Torn Cultist Cloak
@@ -153,7 +153,7 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				groups = {
 					objective(1, {	-- 0/1 Tome of Twilight
 						provider = { "i", 267104 },	-- Tome of Twilight
-						cr = 258964,	-- Nar'gurk
+						cr = 258964,	-- Nar'gurk <The Corruptor>
 					}),
 					i(279860),	-- Convert's Bindings
 					i(279859),	-- Indoctrinated Choker
@@ -192,25 +192,58 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 		}),
 		e(3450, {	-- Slavecrusher Grox
 			creatureID = 258966,	-- Slavecrusher Grox
+			groups = {
+				i(273101),	-- Blueprint: Expert Campfire (RECIPE!)
+				i(274997),	-- Chain of Binding
+				i(274996),	-- Resistance Breaker Spaulder
+				i(274995),	-- Slavecrusher Scepter
+			},
 		}),
 		e(3452, {	-- Twilight Commander Zarmok
 			creatureID = 258972,	-- Twilight Commander Zarmok
+			groups = {
+				i(274999),	-- Shadecaster's Leggings
+				i(274998),	-- Shadowlight Athame
+				i(275000),	-- Zarmok's Plated Signet
+			},
 		}),
 		e(3453, {	-- Handler Ashka
 			creatureID = 259281,	-- War Handler Ashka
+			groups = {
+				i(275001),	-- Bloodied Gutslicer
+				i(275002),	-- War Handler's Gaze
+				i(275003),	-- Worgbinder's Treads
+			},
 		}),
 		e(3449, {	-- Nar'gurk
-			creatureID = 258964,	-- Nar'gurk
+			creatureID = 258964,	-- Nar'gurk <The Corruptor>
+			groups = {
+				i(275004),	-- Chain of the Corruptor
+				i(275005),	-- Krol'dok Warplate Chest
+				i(275006),	-- Krol'dok Warplate Helmet
+			},
 		}),
 		e(3451, {	-- Overseer Mugg
 			creatureID = 258968,	-- Overlord Mugg
+			groups = {
+				i(275009),	-- Emblem of Slamming
+				i(271721),	-- Krol'dok Ogre Key
+				i(275008),	-- Mugg's Crosser
+				i(275007),	-- Mugg's Jabber
+				i(275010),	-- Strongly Scented Hood
+			},
+		}),
+		n(264773, {	-- Bossman Toof
+			i(286428),	-- Band of Bossman
+			i(286429),	-- Big-Belly Belt
+			i(286430),	-- Toofbreaker
 		}),
 		n(ZONE_DROPS, {
 			i(267137, {	-- Krol'dok Moulding (QS!)
-				cr = 259256,	-- Tunk
+				cr = 259256,	-- Tunk <Blacksmith>
 			}),
 			i(267138, {	-- Krol'dok Moulding (QS!)
-				cr = 259256,	-- Tunk
+				cr = 259256,	-- Tunk <Blacksmith>
 			}),
 		}),
 	},
