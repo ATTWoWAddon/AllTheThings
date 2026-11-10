@@ -234,7 +234,7 @@ s(163845,19293,{cost={{"c",515,50}},e=1,f=23,lvl=50}),
 i(19297,{cost={{"c",515,12}},description="Contains a level 25-40 (usually uncommon quality) item.",e=1,f=55,lvl=30}),
 i(19298,{cost={{"c",515,5}},description="Contains a level 15-25 (usually uncommon quality) item.",e=1,f=55,lvl=15}),
 i(19426,{b=1,cost={{"c",515,1200}},e=1,f=51,lvl=60}),
-r(28327,{b=1,cost={{"c",515,40}},e=1,itemID=22729,learnedAt=295,requireSkill=202,skillID=2941})}}),
+r(28327,{b=1,cost={{"c",515,40}},e=1,itemID=22729,learnedAt=275,requireSkill=202,skillID=2941})}}),
 n(14846,{coords={
 [1412]={{36.4,38}},
 [1429]={{41.2,69.8}}},e=1,g={
@@ -272,10 +272,10 @@ h(-19,{e=14,g={
 s(164648,21525,{b=1,crs={1853,10899,11486},e=14,f=4,loc=40,maps={234,250,476}}),
 s(164647,21524,{b=1,crs={9019,9237,10997},e=14,f=4,loc=40,maps={242,250,317}})}}),
 h(-39,{description="These recipes are mailed to characters with the corresponding profession(s) at the start of the event.",e=14,g={
-r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
+r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
 r(44950,{awp=16001,b=1,description="Horde Tailors receive this pattern in the mail.",e=14,itemID=34261,learnedAt=250,requireSkill=197,skillID=2948}),
 r(44958,{awp=16001,b=1,description="Alliance Tailors receive this pattern in the mail.",e=14,itemID=34319,learnedAt=250,requireSkill=197,skillID=2948}),
-r(44953,{awp=16001,b=1,e=14,itemID=34262,requireSkill=165,skillID=2945}),
+r(44953,{awp=16001,b=1,e=14,itemID=34262,learnedAt=285,requireSkill=165,skillID=2945}),
 toy(17712,{description="Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",e=14,sourceQuests={6984,7045}})}}),
 h(-45,{e=14,g={
 q(8744,{coords={
@@ -300,29 +300,29 @@ i(21241,{b=1,e=14,f=55,spellID=24355})}}),
 q(7045,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,qgs={13433},r=2,sourceQuests={7043},g={
 i(17726,{b=1,e=14,g={
-r(21931,{e=14,itemID=17725,learnedAt=210,requireSkill=333,skillID=2940}),
-r(21943,{e=14,itemID=17722,learnedAt=185,requireSkill=165,skillID=2945}),
-r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
+r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
+r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
+r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
 r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
-r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
+r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
 q(6984,{coords={
 [1454]={{53.2,66.6}}},e=14,isYearly=1,lvl=30,qgs={13418},r=1,sourceQuests={6983},g={
 i(17726,{b=1,e=14,g={
-r(21931,{e=14,itemID=17725,learnedAt=210,requireSkill=333,skillID=2940}),
-r(21943,{e=14,itemID=17722,learnedAt=185,requireSkill=165,skillID=2945}),
-r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
+r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
+r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
+r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
 r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
-r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
+r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
 q(8769,{coords={
 [1454]={{49.5,78.7}},
 [1455]={{33.6,66.5}}},e=14,isYearly=1,lvl=40,providers={{"o",180748}},qis={21327},g={
-r(21931,{e=14,itemID=17725,learnedAt=210,requireSkill=333,skillID=2940}),
-r(21943,{e=14,itemID=17722,learnedAt=185,requireSkill=165,skillID=2945}),
-r(21945,{e=14,itemID=17724,learnedAt=165,requireSkill=197,skillID=2948}),
+r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
+r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
+r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
 r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
-r(21923,{e=14,itemID=17709,learnedAt=210,requireSkill=171,skillID=2937}),
+r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941}),
 i(21325,{b=1,e=14,f=55,spellID=26067}),
 i(21213,{e=14,f=106,lvl=40,spellID=25860})}}),
@@ -707,7 +707,7 @@ h(-45,{e=18,g={
 q(8882,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=55,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),
-r(26443,{b=1,e=18,itemID=21737,learnedAt=295,requireSkill=202,skillID=2941})}}),
+r(26443,{b=1,e=18,itemID=21737,learnedAt=275,requireSkill=202,skillID=2941})}}),
 q(8880,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=45,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),
@@ -946,12 +946,12 @@ i(21640,{b=1,e=18})}}),
 q(8878,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=50,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),
-r(26403,{b=1,e=18,itemID=21722,learnedAt=220,requireSkill=197,skillID=2948}),
-r(26407,{b=1,e=18,itemID=21723,learnedAt=220,requireSkill=197,skillID=2948})}}),
+r(26403,{b=1,e=18,itemID=21722,learnedAt=250,requireSkill=197,skillID=2948}),
+r(26407,{b=1,e=18,itemID=21723,learnedAt=250,requireSkill=197,skillID=2948})}}),
 q(8877,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=45,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),
-r(26442,{b=1,e=18,itemID=21738,learnedAt=245,requireSkill=202,skillID=2941})}}),
+r(26442,{b=1,e=18,itemID=21738,learnedAt=225,requireSkill=202,skillID=2941})}}),
 q(98983,{e=18,qgs={275613},u=1}),
 q(8881,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=55,qgs={15909},repeatable=1,g={

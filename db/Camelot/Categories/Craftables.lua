@@ -833,7 +833,7 @@ toy(18984,{requireSkill=20222}),
 i(10646,{f=55,requireSkill=202,spellID=13241}),
 i(10586,{f=55,requireSkill=202,spellID=12562})}),
 flt(200,{
-r(11456,{description="This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",itemID=10644,learnedAt=225,requireSkill=171,skillID=2937})}),
+r(11456,{description="This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",itemID=10644,learnedAt=210,requireSkill=171,skillID=2937})}),
 flt(53,{
 i(10587,{b=1,f=53,requireSkill=20222,spellID=23134}),
 i(10727,{b=1,f=53,requireSkill=20222,spellID=13183}),
