@@ -429,7 +429,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94890, {	-- Bring Me His Head [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.1 (no known NPC there).
+				qg = 258023,	-- Sergeant Riftan
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1151,9 +1152,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94891, {	-- News to Farholde
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94890,	-- Bring Me His Head [A]
+				qg = 258023,	-- Sergeant Riftan
 				qi = 265837,	-- Kilgar's Head (PQI!)
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1666,8 +1668,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94894, {	-- The Twilight Threat
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 257558,	-- Demar Brant
 				qi = 265837,	-- Kilgar's Head (PQI!)
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
@@ -1681,6 +1684,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.6, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
+			}),
+			q(97332, {	-- Twice Misplaced Trust
+				qg = 4631,	-- Wharfmaster Lozgil
+				qi = 277974,	-- Twice Reordered Package (PQI!)
+				coord = { 26.2, 73.4, MAP.STRANGLETHORN_VALE },
+				lvl = 36,
+				groups = {
+					i(278019),	-- Apology Ring
+					i(2595),	-- Jug of Badlands Bourbon
+					i(278017),	-- Refunded Ring
+					i(278018),	-- Renegotiated Ring
+				},
 			}),
 			q(94680, {	-- Twilight Missives
 				-- TODO: Wowhead doesn't list the quest giver yet.

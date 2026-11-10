@@ -11,6 +11,21 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 	lvl = 40,
 	groups = {
 		n(QUESTS, {
+			q(94982, {	-- Eye of Mugg
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Eye of Mugg
+						provider = { "i", 267086 },	-- Eye of Mugg
+						cr = 258968,	-- Overseer Mugg
+					}),
+					i(279480),	-- Bigger Rock on Bigger Stick
+					i(279852),	-- Rock on Stick
+					i(279853),	-- Stick No Rock
+				},
+			}),
 			q(94984, {	-- Tome of Twilight
 				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1 in Riverglades, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94907,	-- A Small Favor
@@ -23,6 +38,25 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 					}),
 					i(279854),	-- Twilight Initiate's Belt
 					i(279855),	-- Torn Cultist Cloak
+				},
+			}),
+			q(94983, {	-- Twilight Mementos
+				qg = 258023,	-- Sergeant Riftan
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/8 Twilight Bangle
+						provider = { "i", 267234 },	-- Twilight Bangle
+						crs = {
+							258042,	-- Twilight Grunt
+							258100,	-- Twilight Warlock
+							258102,	-- Twilight Outrider
+							258104,	-- Twilight Lieutenant
+							258972,	-- Twilight Commander Zarmok
+							268423,	-- Zalfan Moonshadow
+						},
+					}),
 				},
 			}),
 			q(96771, {	-- Vengeance of the Highborne

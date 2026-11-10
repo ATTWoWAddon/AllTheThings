@@ -64,7 +64,8 @@ instanceroot(2970, {	-- The Drowned City
 				},
 			}),
 			q(95789, {	-- Shady Saltseers
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.0, 77.3 in Booty Bay, where several NPCs stand.
+				qg = 773,	-- Krazek
+				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/10 Voodoo-Infused Artifact
@@ -125,7 +126,8 @@ instanceroot(2970, {	-- The Drowned City
 				},
 			}),
 			q(95791, {	-- The Saltseer Captain
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.0, 77.3 in Booty Bay, where several NPCs stand.
+				qg = 773,	-- Krazek
+				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/3 Saltseer Coroner slain
