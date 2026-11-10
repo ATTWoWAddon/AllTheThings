@@ -7432,6 +7432,8 @@ hqt(94046),
 hqt(95146),
 hqt(94390),
 hqt(94391)}),
+h(-46,{
+hqt(96972,{isWeekly=1})}),
 h(-56,{
 hqt(93652)}),
 h(-58,{awp=120105,g={
@@ -7620,6 +7622,8 @@ hqt(93863,{isWeekly=1}),
 hqt(93864,{isWeekly=1}),
 hqt(97115,{isWeekly=1}),
 hqt(98504,{awp=120100,isWeekly=1}),
+hqt(97809,{awp=120100,isWeekly=1}),
+hqt(97810,{awp=120100,isWeekly=1}),
 hqt(91414),
 hqt(91415,{repeatable=1}),
 hqt(98337,{awp=120100}),

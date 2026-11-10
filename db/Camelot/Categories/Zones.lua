@@ -12679,7 +12679,8 @@ q(664,{coords={
 qo(1,{providers={{"n",2595}}}),
 qo(2,{providers={{"n",2596}}}),
 s(157797,4509,{b=1,f=5,loc=44})}}),
-q(92872,{lvl=32,qis={278543},r=2,u=1}),
+q(92872,{awp=16001,coords={
+[1417]={{29.2,59.6}}},lvl=32,qgs={2782},qis={278543},r=2}),
 q(96264,{awp=16001,c={7},coords={
 [1417]={{59.8,27.4}}},lvl=30,maps={301},qgs={259023},races={3},sourceQuests={94789},g={
 qo(1,{crs={4421},providers={{"i",274463}}})}}),
@@ -15181,8 +15182,8 @@ r(19833,{coords={
 m(1429,{icon=236761,lore="Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",g={
 m(425,{icon=236447,lore="Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",zoneTextAreaIDs={9,59,24,34},g={
 h(-45,{
-q(92479,{awp=16001,c={1},coords={
-[1429]={{48.9,41.6}}},qgs={197},qis={251941},races={4}}),
+q(92479,{awp=16001,c={3},coords={
+[1429]={{48.9,41.6}}},qgs={197},qis={251941},races={1}}),
 q(783,{coords={
 [1429]={{48.1,42.9}}},qgs={823},r=2}),
 q(92124,{awp=16001,coords={
@@ -18723,7 +18724,8 @@ q(607,{coords={
 [1434]={{26.9,73.6}}},lvl=30,qgs={2502},qis={3922},sourceQuests={606}}),
 q(3626,{coords={
 [1434]={{50.6,20.4}}},lvl=45,maps={1435},qgs={7802},sourceQuests={3625}}),
-q(97048,{lvl=30,u=1,g={
+q(97048,{awp=16001,coords={
+[1434]={{44.2,8}}},lvl=30,qgs={218230},g={
 s(309960,277224,{b=1,f=5,loc=45}),
 s(310131,277232,{b=1,f=6,loc=45}),
 s(309950,277214,{b=1,f=4,loc=43})}}),
@@ -21777,6 +21779,10 @@ qo(2,{coords={
 [2521]={{65.5,66.6}}},providers={{"n",270201}}})}}),
 q(92464,{coords={
 [2521]={{42.1,23.5}}},isBreadcrumb=1,lvl=2,nextQuests={92465},qgs={251361},sourceQuests={92461}}),
+q(97029,{coords={
+[2521]={{65.8,74.4}}},qgs={259012},r=1,g={
+qo(1,{providers={{"i",264501}}}),
+s(309603,276188,{f=25})}}),
 q(92484,{c={7},coords={
 [2521]={{42.1,23.5}}},lvl=2,qgs={251361},qis={282418},r=1,sourceQuests={92461}}),
 q(93963,{coords={
@@ -22131,6 +22137,9 @@ n(259843,{coords={
 [2521]={{51.4,72.2}}},description="Target the singing frogs on the rock at the top of the waterfall and use /sing (at least two frogs need to be on the rock). They disappear and a Musical Gustjumper appears on the log next to you; click it to get the pet.",g={
 i(268109,{f=101,spellID=1281641})}})}),
 h(-56,{
+o(618822,{coords={
+[2521]={{48.9,72.7},{50.4,44.3},{59.9,82.2}}},description="A small blue glow in the ground. It has several spawn points.",questID=94634,g={
+s(303379,264501,{f=25,spellID=1315226})}}),
 o(626718,{coords={
 [2521]={{35.5,22.5},{35.8,33.8},{35.9,24.7},{36.2,25.5},{37.8,24.6}}},g={
 i(252023,{f=55,spellID=433})}}),

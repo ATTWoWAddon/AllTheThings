@@ -26,11 +26,11 @@ inst(255,{savedInstanceID=269,g={
 hqt(10737)}}),
 inst(260,{savedInstanceID=547,g={
 hqt(11115)}}),
-m(12,{maps={1464},g={
-m(85,{maps={86},g={
-hqt(64033,{awp=20501,rwp=30400,u=2})}}),
+m(12,{maps={1464},u=3,g={
 m(106,{petBattleLvl=3,g={
-hqt(9750)}})}}),
+hqt(9750)}}),
+m(85,{maps={86},u=3,g={
+hqt(64033,{awp=11307,rwp=30400,u=2})}})}}),
 m(1467,{
 m(100,{petBattleLvl=17,g={
 h(-45,{
