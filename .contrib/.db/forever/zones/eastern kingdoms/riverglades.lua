@@ -1202,6 +1202,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
+			q(95144, {	-- Overseas Delivery
+				qg = 7733,	-- Innkeeper Fizzgrimble <Innkeeper>
+				qi = 276065,	-- Fizzgrimble's Mysterious Crate (PQI!)
+				coord = { 52.4, 27.8, MAP.TANARIS },
+				lvl = 36,
+			}),
 			q(95162, {	-- Paletusk Harvesting
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				races = HORDE_ONLY,
