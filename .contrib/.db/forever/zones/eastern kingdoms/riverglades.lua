@@ -57,8 +57,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94734, {	-- A Boar's Delight
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94733,	-- Our Ogre Friend
+				qg = 257058,	-- Gobam
+				coord = { 66.8, 17.2, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -71,26 +72,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95983, {	-- A Feast for Buzzards [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 61.6, 58.8 (no known NPC there).
+				qg = 263316,	-- Picked Carcass
 				qi = 271777,	-- Gnawed Skull (PQI!)
+				coord = { 61.6, 58.8, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(96103, {	-- A Feast for Buzzards [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 263316,	-- Picked Carcass
 				qi = 271777,	-- Gnawed Skull (PQI!)
+				coord = { 61.5, 58.7, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94928, {	-- A Few Furs for Friz
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
 				sourceQuest = 94925,	-- A Fur Trade
+				qg = 259352,	-- Watcher Cornelius
 				qi = 267263,	-- Bundle of Lion Pelts (PQI!)
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(94925, {	-- A Fur Trade
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -104,7 +109,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94480, {	-- A Gift From Our Enemies
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256418,	-- Krom'rosh
+				coord = { 59.4, 45.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -114,8 +120,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96109, {	-- A Hunter's Quiver
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 96108,	-- Poison Tips
+				qg = 258031,	-- Neza Bloodsnout
+				coord = { 60.4, 47.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -141,7 +148,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96015, {	-- A Miner Problem
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
+				qg = 258023,	-- Sergeant Riftan
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -155,8 +163,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94481, {	-- A Serving of Strength
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94480,	-- A Gift From Our Enemies
+				qg = 256655,	-- Gorg <Cook>
+				coord = { 58.6, 44.5, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -169,8 +178,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94907, {	-- A Small Favor
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1, where Demar Brant and Ashe Amberhall both stand.
+				qg = 257591,	-- Ashe Amberhall
 				qi = 268646,	-- Amberhall's Soulstone (PQI!)
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -202,8 +212,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94737, {	-- A Treat for a Friend
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94734,	-- A Boar's Delight
+				qg = 257058,	-- Gobam
+				coord = { 66.8, 17.2, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -259,12 +270,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95327, {	-- All's Well That Ends Well
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 3945,	-- Caravaneer Ruzzgot
 				qi = 268810,	-- Ruzzgot's Shipment (PQI!)
+				coord = { 27.4, 74.1, MAP.STRANGLETHORN_VALE },
 				lvl = 36,
 			}),
 			q(96126, {	-- An Ogre's Captive
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.7, 12.6 (no known NPC there).
+				qg = 259057,	-- Dunston Willis
+				coord = { 68.7, 12.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -294,7 +307,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(97884, {	-- Armory of Sunnyglade
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 5819,	-- Mirelle Tremayne
+				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -316,7 +330,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94961, {	-- Biting the Hand (1/2)
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 47.4, 51.2.
+				qg = 259158,	-- Fuzzle
+				coord = { 47.4, 51.2, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/20 Twilight Finger Bone
@@ -331,8 +346,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94963, {	-- Biting the Hand (2/2)
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 47.3, 51.3.
 				sourceQuest = 94961,	-- Biting the Hand (1/2)
+				qg = 259158,	-- Fuzzle
+				coord = { 47.3, 51.3, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Fuzzle slain
@@ -341,37 +357,43 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94668, {	-- Bloodmaster's Ring (1/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 255829,	-- Clugfist
+				coord = { 64.5, 14.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94670, {	-- Bloodmaster's Ring (2/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94669,	-- Pay to Play
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94739, {	-- Bloodmaster's Ring (3/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94670,	-- Bloodmaster's Ring (2/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94962, {	-- Bloodmaster's Ring (4/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94739,	-- Bloodmaster's Ring (3/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94964, {	-- Bloodmaster's Ring (5/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94962,	-- Bloodmaster's Ring (4/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(94965, {	-- Bloodmaster's Ring (6/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94737,	-- A Treat for a Friend
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -380,8 +402,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95063, {	-- Bloodmaster's Ring (7/7)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94965,	-- Bloodmaster's Ring (6/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -403,7 +426,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94748, {	-- Break Their Chains
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -417,7 +441,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94768, {	-- Bring Me His Head [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -442,7 +467,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94535, {	-- Bristle Hills Bandits
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256657,	-- Kreza Darkthorn <Weaponsmith & Armorcrafter>
+				coord = { 59.8, 46.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -458,7 +484,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94745, {	-- Carving a Path [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -474,7 +501,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94889, {	-- Carving a Path [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
+				qg = 258023,	-- Sergeant Riftan
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -490,7 +518,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95792, {	-- Clear 'em Out
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.2, 69.1.
+				qg = 262399,	-- Gelinda Coppergleam
+				coord = { 30.2, 69.1, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/8 Cinderscale Whelp slain
@@ -502,24 +531,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96083, {	-- Clerical Quarantine
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0 (no known NPC there).
+				qg = 263613,	-- Brother Lowley
+				coord = { 65.5, 79.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(95428, {	-- Clugfist's Decree
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 255829,	-- Clugfist
+				coord = { 64.5, 14.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(95312, {	-- Coming to Collect
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95383,	-- Shipping and Handling (2/2)
+				qg = 260857,	-- Tazzik
+				coord = { 67.3, 23.9, MAP.TANARIS },
 				lvl = 36,
 			}),
 			q(95472, {	-- Consolation Prize
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95321,	-- Tazzik's Dues
+				qg = 260857,	-- Tazzik
 				qi = 268805,	-- Tazzik's Sweaty Shirt (PQI!)
+				coord = { 67.3, 23.9, MAP.TANARIS },
 				lvl = 36,
 				groups = {
 					i(270334),	-- Sweat-Stained Shirt
@@ -569,7 +602,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95433, {	-- Death to the Executioner
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 260993,	-- Crag'rog
+				coord = { 27.4, 37.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -580,15 +614,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94893, {	-- Delivering Closure
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94892,	-- Dying Wish
+				qg = 257558,	-- Demar Brant
 				qi = 266428,	-- Marshal Ryan's Crest (PQI!)
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(94727, {	-- Digging for Answers
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94680,	-- Twilight Missives
+				qg = 256710,	-- Tran'gul
+				coord = { 59.4, 44.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -598,8 +634,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96082, {	-- Doctor's Orderly
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0 (no known NPC there).
+				qg = 263613,	-- Brother Lowley
 				qi = 272126,	-- Makeshift Bandages (PQI!)
+				coord = { 65.5, 79.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -609,15 +646,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95957, {	-- Drink Up!
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.7, 54.0, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
 				sourceQuest = 95988,	-- Goes Down Smooth
+				qg = 255894,	-- Innkeeper Zizplink <Innkeeper>
 				qi = 271822,	-- Frothing Mug (PQI!)
+				coord = { 78.8, 54.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(95163, {	-- Drive Them Back
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256728,	-- Na'zok
 				qi = 268521,	-- Swineherd's Staff (PQI!)
+				coord = { 70.6, 28.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -638,7 +677,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94927, {	-- Dunston Checks Out
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 259057,	-- Dunston Willis
+				-- TODO: coord. Wowhead shows them wandering around 66-69, 13-29.
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -648,14 +688,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94892, {	-- Dying Wish
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94887,	-- Saving Marshal Ryan
+				qg = 257250,	-- Marshal Ryan
 				qi = 266428,	-- Marshal Ryan's Crest (PQI!)
+				coord = { 26.2, 40.8, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(94672, {	-- Encroaching Twilight
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256710,	-- Tran'gul
+				coord = { 59.4, 44.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -671,8 +713,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94999, {	-- Eyes for the Watchman
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 43.5, 82.5.
+				qg = 259050,	-- Eleanor Holmsby
 				qi = 267244,	-- Care Package (PQI!)
+				coord = { 43.5, 82.5, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -832,7 +875,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96063, {	-- Gaseous Gold
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.2, 48.7.
+				qg = 263367,	-- Sleebo Fizzlespout
+				coord = { 68.2, 48.7, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/8 Marsh Gas Vial
@@ -842,8 +886,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95322, {	-- Get the Goods
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 27.4, 74.1 in Booty Bay (Stranglethorn Vale), where I Know a Guy (95295) was turned in.
 				sourceQuest = 95295,	-- I Know a Guy
+				qg = 3945,	-- Caravaneer Ruzzgot
+				coord = { 27.4, 74.1, MAP.STRANGLETHORN_VALE },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Bloodsail Trunk examined
@@ -852,7 +897,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94532, {	-- Gnoll Infestation [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258031,	-- Neza Bloodsnout
+				coord = { 60.4, 47.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -868,7 +914,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94678, {	-- Gnoll Infestation [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 39.5, 74.6.
+				qg = 259353,	-- Cedric Dalton <Watch Captain>
+				coord = { 39.5, 74.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -884,7 +931,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95988, {	-- Goes Down Smooth
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.8, 54.0, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
+				qg = 255894,	-- Innkeeper Zizplink <Innkeeper>
+				coord = { 78.8, 54.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -928,7 +976,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94923, {	-- Hats Off
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 43.4, 82.6.
+				qg = 259049,	-- Robbie Holmsby
+				coord = { 43.4, 82.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -938,7 +987,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94861, {	-- Helping Hands
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 41.4, 64.5, where If a Tree Falls, and No One Hears... (94857) was turned in.
+				qg = 258963,	-- Hurley
+				coord = { 41.4, 64.5, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -947,8 +997,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95975, {	-- Her World
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.8, 54.1, where Innkeeper Zizplink and Fimbo Greasemitz both stand.
 				sourceQuest = 95957,	-- Drink Up!
+				qg = 263120,	-- Gray Dawnbright
+				coord = { 78.8, 54.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -970,7 +1021,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94924, {	-- Hunting the Hunters
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.3, 63.8.
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.3, 63.8, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -985,7 +1037,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(94857, {	-- If a Tree Falls, and No One Hears...
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 46.1, 71.0 and turned it in at 41.4, 64.5, where Helping Hands (94861) was accepted next.
+				qg = 258935,	-- Curly
+				coord = { 46.1, 71.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1006,7 +1059,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96125, {	-- In Need of Relief
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
@@ -1025,7 +1079,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95278, {	-- It Is Time, Brother...
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1035,7 +1090,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95261, {	-- It Takes Guts
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 79.9, 52.4, about 0.5 from Wharfmaster Whizzbuzz; 95260 was turned in there too, so likely another NPC.
+				qg = 260231,	-- Argo Brinewhistle
+				coord = { 79.9, 52.4, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/15 Beast Entrails
@@ -1047,7 +1103,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94556, {	-- Jom-jom's Escape
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258048,	-- Jom-jom
+				-- TODO: coord. Wowhead shows them wandering around 64-77, 15-33.
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1067,9 +1124,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95986, {	-- King of the Wild Plains [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
 				sourceQuest = 95984,	-- Song of the Strider [A]
+				qg = 259352,	-- Watcher Cornelius
 				qi = 271779,	-- Tallstrider Call (PQI!)
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1080,9 +1138,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96105, {	-- King of the Wild Plains [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 96104,	-- Song of the Strider [H]
+				qg = 258031,	-- Neza Bloodsnout
 				qi = 271779,	-- Tallstrider Call (PQI!)
+				coord = { 60.4, 47.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1093,9 +1152,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95420, {	-- Land of Giants
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95418,	-- Spread the Word
+				qg = 256710,	-- Tran'gul
 				qi = 265750,	-- Chogg's Head (PQI!)
+				coord = { 59.4, 44.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
@@ -1128,13 +1188,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95330, {	-- Love Thy Neighbor
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 64.7, 82.9.
+				qg = 259863,	-- Cassandra Wheeler <Food & Drink>
 				qi = 268816,	-- Surplus Crops (PQI!)
+				coord = { 64.7, 82.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
 			q(95424, {	-- Might Makes Right
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 255829,	-- Clugfist
+				coord = { 64.5, 14.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1147,7 +1209,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94613, {	-- My Kingdom for a Horse
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.6, 81, where Demar Brant and Ashe Amberhall both stand.
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1163,7 +1226,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94888, {	-- No Soldier Left Behind
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 30.7, 49.0 (no known NPC there).
+				qg = 258023,	-- Sergeant Riftan
+				coord = { 30.7, 49.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1187,18 +1251,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95033, {	-- On the Other Side
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 263190,	-- Tan'jani
+				coord = { 58.2, 45.2, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
 			q(94733, {	-- Our Ogre Friend
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94964,	-- Bloodmaster's Ring (5/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(95329, {	-- Out in the Field
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
@@ -1209,7 +1276,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95162, {	-- Paletusk Harvesting
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256728,	-- Na'zok
+				coord = { 70.6, 28.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1220,8 +1288,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94669, {	-- Pay to Play
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 94668,	-- Bloodmaster's Ring (1/7)
+				qg = 257062,	-- Jezap Jinglesprocket <Fight Promoter>
+				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
@@ -1239,7 +1308,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95064, {	-- Preventative Measures
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1251,7 +1321,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95934, {	-- Proof of Profit
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 262399,	-- Gelinda Coppergleam
+				coord = { 30.2, 69.0, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Cubic Draconia
@@ -1272,7 +1343,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95432, {	-- Rise Up!
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 260993,	-- Crag'rog
+				coord = { 27.4, 37.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1282,11 +1354,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96067, {	-- Rock 'em and Sock 'em
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 68.1, 48.7 (no known NPC there).
+				qg = 263367,	-- Sleebo Fizzlespout
+				coord = { 68.1, 48.7, MAP.RIVERGLADES },
 				lvl = 36,
 			}),
 			q(95426, {	-- Rog'mar Supplies
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9.
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1296,7 +1370,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95431, {	-- Rumblings of Discontent
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258570,	-- Da'grosh
+				coord = { 33.4, 38.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 			}),
@@ -1314,8 +1389,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94887, {	-- Saving Marshal Ryan
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.0, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94885,	-- Field Marshal's Log
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1328,7 +1404,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94877, {	-- Saving Sunnyglade
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.6, 81, where Demar Brant and Ashe Amberhall both stand.
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1381,13 +1458,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95383, {	-- Shipping and Handling (2/2)
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95296,	-- Shipping and Handling (1/2)
+				qg = 260405,	-- Wharfmaster Steamfizzle
 				qi = 268811,	-- Friz's Secret Stash (PQI!)
+				coord = { 67.5, 23.0, MAP.TANARIS },
 				lvl = 36,
 			}),
 			q(94483, {	-- Show Them How It's Done
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256418,	-- Krom'rosh
+				coord = { 59.4, 45.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1400,7 +1479,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95602, {	-- Sickening Lights
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 260931,	-- Clubtoe
+				coord = { 49.8, 47.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1410,7 +1490,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95294, {	-- Smuggler's Bargain
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 260391,	-- Captain Haynes
+				coord = { 91.2, 39.6, MAP.RIVERGLADES },
 				lvl = 38,
 			}),
 			q(95288, {	-- Smuggler's Paradise
@@ -1439,7 +1520,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 38,
 			}),
 			q(94533, {	-- Snargl's Snout [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 258031,	-- Neza Bloodsnout
+				coord = { 60.4, 47.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1453,7 +1535,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94679, {	-- Snargl's Snout [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 39.5, 74.6.
+				qg = 259353,	-- Cedric Dalton <Watch Captain>
+				coord = { 39.5, 74.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1481,8 +1564,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95984, {	-- Song of the Strider [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
 				sourceQuest = 95983,	-- A Feast for Buzzards [A]
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1493,8 +1577,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96104, {	-- Song of the Strider [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 96103,	-- A Feast for Buzzards [H]
+				qg = 258031,	-- Neza Bloodsnout
+				coord = { 60.4, 47.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1505,8 +1590,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95148, {	-- Southern Watch Gnoll Report
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 39.5, 74.6.
 				sourceQuest = 95147,	-- The Lost Scout
+				qg = 259353,	-- Cedric Dalton <Watch Captain>
+				coord = { 39.5, 74.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1516,14 +1602,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95418, {	-- Spread the Word
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95427,	-- Twilight No More!
+				qg = 260931,	-- Clubtoe
 				qi = 265750,	-- Chogg's Head (PQI!)
+				coord = { 49.8, 47.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(95183, {	-- Step One: Rock
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 263440,	-- Hamur
+				coord = { 67.2, 21.6, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1533,8 +1621,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96026, {	-- Step Two: More Rock
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95183,	-- Step One: Rock
+				qg = 263440,	-- Hamur
+				coord = { 67.2, 21.6, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1574,8 +1663,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95321, {	-- Tazzik's Dues
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95312,	-- Coming to Collect
+				qg = 220984,	-- Fizbuz Mithril
+				coord = { 51.6, 27.5, MAP.TANARIS },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Tazzik confronted
@@ -1584,11 +1674,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95260, {	-- Terrors From the Deep
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 72.3, 61.8.
+				provider = { "o", 629761 },	-- Painted Hide
+				coord = { 72.3, 61.8, MAP.RIVERGLADES },
 				lvl = 38,
 			}),
 			q(95326, {	-- The Big Payback
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				provider = { "o", 630887 },	-- Venture Co. Ledger
+				coord = { 42.7, 18.5, MAP.STRANGLETHORN_VALE },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Ruzzgot's Shipment
@@ -1598,14 +1690,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(93976, {	-- The Goblin Trader
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 93788,	-- Borrowed Blades
+				qg = 256657,	-- Kreza Darkthorn <Weaponsmith & Armorcrafter>
 				qi = 263973,	-- Beguiler's Blade (PQI!)
+				coord = { 59.8, 46.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
 			q(95147, {	-- The Lost Scout
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 23.6, 67.9.
+				qg = 260026,	-- Scout Bolain
+				coord = { 23.6, 67.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1615,8 +1709,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95267, {	-- The Monster Surfaces
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 79.8, 52.4, about 0.5 from Wharfmaster Whizzbuzz; 95260 was turned in there too, so likely another NPC.
+				qg = 260231,	-- Argo Brinewhistle
 				qi = 268647,	-- Big Ball o' Bait (PQI!)
+				coord = { 79.8, 52.4, MAP.RIVERGLADES },
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Sea Monster's Head
@@ -1626,7 +1721,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95601, {	-- The Purple Ones
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 261208,	-- Twilight Brute
+				-- TODO: coord. Wowhead shows them wandering around 45-49, 47-52.
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1639,8 +1735,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95417, {	-- The Purple Ones
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95424,	-- Might Makes Right
+				qg = 260931,	-- Clubtoe
+				coord = { 49.8, 47.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
@@ -1652,7 +1749,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(95066, {	-- The Rog'mar Situation
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 59.5, 63.9 (unknown NPC, see 94924).
+				qg = 259352,	-- Watcher Cornelius
+				coord = { 59.5, 63.9, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1681,13 +1779,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 38,
 			}),
 			q(94744, {	-- The Wayward Warrior
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95428,	-- Clugfist's Decree
+				qg = 256418,	-- Krom'rosh
+				coord = { 59.4, 45.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 38,
 			}),
 			q(94886, {	-- The Western Front
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.6, 81.0, where Demar Brant and Ashe Amberhall both stand.
+				qg = 257558,	-- Demar Brant
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
@@ -1704,7 +1804,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(94680, {	-- Twilight Missives
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256710,	-- Tran'gul
+				coord = { 59.4, 44.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1715,8 +1816,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95427, {	-- Twilight No More!
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95601,	-- The Purple Ones
+				qg = 260931,	-- Clubtoe
+				coord = { 49.8, 47.0, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1779,7 +1881,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95425, {	-- Unworthy Champion
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 255829,	-- Clugfist
+				coord = { 64.5, 14.8, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
@@ -1801,7 +1904,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95912, {	-- WANTED: Blademaster Kaijo
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.9, 81.1.
+				provider = { "o", 707245 },	-- Wanted
+				coord = { 65.9, 81.1, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1814,7 +1918,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95991, {	-- WANTED: Ghostmaw [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.6, 80.8.
+				provider = { "o", 645166 },	-- WANTED!
+				coord = { 65.6, 80.8, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1839,7 +1944,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95120, {	-- WANTED: Old Rot-Chum
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 78.5, 53.9, the same spot as WANTED: Trapclaw (95254), which starts from the WANTED! poster (628948).
+				provider = { "o", 628948 },	-- WANTED!
+				coord = { 78.5, 53.9, MAP.RIVERGLADES },
 				lvl = 36,
 				groups = {
 					objective(1, {	-- 0/1 Rot-Covered Harpoon
@@ -1874,8 +1980,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(95325, {	-- We've Been Robbed!
-				-- TODO: Wowhead doesn't list the quest giver yet.
 				sourceQuest = 95322,	-- Get the Goods
+				qg = 3945,	-- Caravaneer Ruzzgot
+				coord = { 27.4, 74.1, MAP.STRANGLETHORN_VALE },
 				lvl = 36,
 			}),
 			q(94829, {	-- What We Lost
@@ -1901,7 +2008,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(96081, {	-- Wound Dressings
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 65.5, 79.0.
+				qg = 263613,	-- Brother Lowley
+				coord = { 65.5, 79.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 				groups = {

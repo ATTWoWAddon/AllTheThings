@@ -132,8 +132,9 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				lvl = 38,
 			}),
 			q(94984, {	-- Tome of Twilight [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 66.7, 81.1 in Riverglades, where Demar Brant and Ashe Amberhall both stand.
 				sourceQuest = 94907,	-- A Small Favor
+				qg = 257591,	-- Ashe Amberhall
+				coord = { 66.6, 81.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 39,
 				groups = {

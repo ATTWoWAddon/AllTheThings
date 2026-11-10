@@ -114,7 +114,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94256, {	-- Craftsman's Writ: Frost Protection Potion [Expert]
 							qs = 264056,	-- Craftsman's Writ: Frost Protection Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 2921,	-- Lotwil Veriatus
+							coord = { 25.8, 45.0, MAP.BADLANDS },
 							cost = { { "i", 6050, 1 } },	-- Frost Protection Potion
 							isDaily = true,
 						}),
@@ -188,7 +189,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94262, {	-- Craftsman's Writ: Mana Potion [Expert]
 							qs = 264062,	-- Craftsman's Writ: Mana Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262284,	-- Spek
+							coord = { 76.8, 54.2, MAP.RIVERGLADES },
 							cost = { { "i", 3827, 1 } },	-- Mana Potion
 							isDaily = true,
 						}),

@@ -64,7 +64,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 		n(QUESTS, {
 			q(93044, {	-- A Cleansing Cry
 				sourceQuest = 93041,	-- Facing the Truth
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 5397,	-- Uthek the Wise
+				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
@@ -98,7 +99,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(92754, {	-- A New Need for Shadow Protection
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Mirda in Magram Village.
+				qg = 253097,	-- Mirda
+				coord = { 70.5, 70.4, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
@@ -109,7 +111,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(93678, {	-- Abridged Notes on Draenethyst
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Magtoor at the Harborage in Swamp of Sorrows.
+				qg = 11863,	-- Azore Aldamort <The Argent Dawn>
+				coord = { 38.8, 27.2, MAP.DESOLACE },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				groups = {
@@ -316,7 +319,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(93226, {	-- Buying Friendship: Magram [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 5396,	-- Captain Pentigast
+				coord = { 66.4, 10.8, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -642,7 +646,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 28,
 			}),
 			q(92814, {	-- I Need a Tailor
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Molkar in Gelkis Village.
+				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
+				coord = { 35.6, 92.0, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
@@ -806,7 +811,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 			}),
 			q(92817, {	-- Leather Technique
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Talra in Gelkis Village.
+				qg = 253166,	-- Talra
+				coord = { 34.5, 87.0, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
@@ -823,7 +829,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				lvl = 30,
 			}),
 			q(92755, {	-- Mysterious Mysticism
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Halea in Gelkis Village.
+				qg = 253096,	-- Halea
+				coord = { 35.5, 92.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -1111,7 +1118,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(93045, {	-- Test Your Theory
 				sourceQuest = 93044,	-- A Cleansing Cry
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				qg = 5397,	-- Uthek the Wise
+				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,

@@ -213,7 +213,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 38,
 			}),
 			q(95786, {	-- An Acquaintance in Southshore
-				-- TODO: Wowhead doesn't list the quest giver yet. A Contributor Report accepted it at 37.8, 3.5 in the Rebel Camp, where Brother Nimetz, Corporal Sethman, Corporal Kaleb and Sergeant Yohwa all stand. Turned in to Loremaster Dibbs in Southshore.
+				qg = 739,	-- Brother Nimetz
+				coord = { 37.8, 3.6, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
@@ -598,8 +599,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95773, {	-- Enemies in the Water
-				-- TODO: Wowhead doesn't list the quest giver yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 2464,	-- Commander Aggro'gosh
+				coord = { 32.2, 28.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
 				groups = {
@@ -2084,8 +2086,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			q(97331, {	-- Zimmix's Great Escape
 				sourceQuest = 97329,	-- Where's the Key?
-				-- TODO: Wowhead doesn't list the quest giver yet. Escort Zimmix Sputterspark, then report to Wharfmaster Lozgil in Booty Bay; Wowhead has no escort IDs yet.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 268992,	-- Zimmix Sputterspark
+				coord = { 23.4, 12.6, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 			}),
 		}),

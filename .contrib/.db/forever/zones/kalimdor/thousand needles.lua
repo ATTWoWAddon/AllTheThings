@@ -116,7 +116,8 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				lvl = 35,
 			}),
 			q(96136, {	-- Call of Air
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Prate Cloudseer (5905) in Thousand Needles.
+				qg = 259119,	-- Alaana Stormwalker
+				coord = { 33.4, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },

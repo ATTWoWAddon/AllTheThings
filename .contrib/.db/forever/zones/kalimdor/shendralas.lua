@@ -272,7 +272,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 			}),
 			q(93058, {	-- Saving Our Own
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
+				qg = 253177,	-- Nerlokh
+				coord = { 20.8, 22.3, MAP.SHENDRALAS },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				races = HORDE_ONLY,

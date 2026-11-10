@@ -356,7 +356,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				lvl = 38,
 			}),
 			q(93430, {	-- Taking the Bait Back
-				-- TODO: Wowhead doesn't list the quest giver yet. Pelluk is the one whose lure was stolen.
+				qg = 254770,	-- Pelluk
+				coord = { 26.4, 30.5, MAP.SWAMP_OF_SORROWS },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 30,
 				groups = {
@@ -494,7 +495,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				},
 			}),
 			q(93464, {	-- The Visiting Mage
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Azore Aldamort in Desolace.
+				qg = 1776,	-- Magtoor
+				coord = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
 				maps = { MAP.DESOLACE },
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
