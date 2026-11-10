@@ -7,11 +7,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(createHeader({
 	constant = "NOBLEGARDEN_HEADER",
 	icon = [[~_.asset("Holiday_noblegarden")]],
 	eventID = EVENTS.NOBLEGARDEN,
-	eventSchedule = {
-		1,	-- Recurring
-		4, 17, 0, 0,	-- 04/17 at 12:00 AM
-		4, 18, 0, 0		-- 04/18 at 12:00 AM
-	},
 	text = {
 		en = "Noblegarden",
 		de = "Nobelgartenfest",

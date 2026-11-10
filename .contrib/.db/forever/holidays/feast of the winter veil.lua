@@ -15,11 +15,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 	constant = "FEAST_OF_WINTER_VEIL_HEADER",
 	icon = [[~_.asset("Holiday_winter_veil")]],
 	eventID = EVENTS.FEAST_OF_WINTER_VEIL,
-	eventSchedule = {
-		1,	-- Recurring
-		12, 16, 10, 0,	-- 12/16 at 10:00 AM
-		1, 2, 6, 0		-- 01/02 at 6 AM
-	},
 	text = {
 		en = WOWAPI_GetSpellName(21953),
 		cn = "冬幕节",	-- WOWAPI_GetSpellName(21953) == 冬幕大餐

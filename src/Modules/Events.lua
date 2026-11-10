@@ -105,7 +105,7 @@ end);
 -- find anything, while each of its 33 SetMonth calls synchronously runs every other addon's
 -- CALENDAR_UPDATE_EVENT_LIST handler (measured: 8 s in one frame with a calendar addon loaded).
 local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= ""
-	and app.GameBuildVersion >= 30000;
+	and (app.GameBuildVersion >= 30000 or app.IsForever);
 local function CreateTimeStamp(t)
 	-- os.time reads 'min', not 'minute' (Lua 5.1 manual, os.time): a 'minute' key is ignored and the
 	-- minute defaults to 0, so every timestamp built here snapped to the top of the hour. That made

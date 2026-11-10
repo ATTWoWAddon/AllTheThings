@@ -7,11 +7,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(createHeader({
 	constant = "LOVE_IS_IN_THE_AIR_HEADER",
 	icon = [[~_.asset("Holiday_love")]],
 	eventID = EVENTS.LOVE_IS_IN_THE_AIR,
-	eventSchedule = {
-		1,	-- Recurring
-		2, 6, 10, 0,	-- 02/06 at 10:00 AM
-		2, 20, 10, 0	-- 02/20 at 10:00 AM
-	},
 	text = {
 		en = "Love is in the Air",
 		de = "Liebe liegt in der Luft",
