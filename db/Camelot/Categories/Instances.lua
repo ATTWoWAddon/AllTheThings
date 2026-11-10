@@ -1734,7 +1734,7 @@ i(18603,{c={9},crs={11451,11452,11453,11454,11455,11456,11457}}),
 s(163450,18298,{crs={11451,11452,11454,11455,11456,11457},f=5,loc=46})}),
 n(14354,{description="Talk to him and then chase him. Eventually he will go up a ramp and become killable.",g={
 i(18249,{b=1,description="This key is required to enter the Gordok Commons and Capital Gardens.",spellID=3366}),
-r(22761,{b=1,itemID=18267,requireSkill=185}),
+r(22761,{b=1,itemID=18267,learnedAt=275,requireSkill=185,skillID=2939}),
 i(18261),
 i(18255,{f=55,lvl=45,spellID=1129})}}),
 n(14349,{
@@ -1932,7 +1932,7 @@ q(95697,{coords={
 qo(1,{crs={260325,260800,260801,271732},providers={{"i",271100}}}),
 i(280766,{b=1,f=53,spellID=1309685}),
 s(311589,280805,{f=20}),
-r(1250154,{b=1,itemID=250185,requireSkill=185}),
+r(1250154,{b=1,itemID=250185,learnedAt=75,requireSkill=185,skillID=2939}),
 i(250077,{f=55,lvl=5,spellID=1248383})}}),
 q(95663,{coords={
 [1417]={{74.4,35.6}}},lvl=24,maps={1437},qgs={2787},r=1}),
@@ -1985,14 +1985,14 @@ e(3481,{npcID=260325,g={
 s(308389,273025,{f=6,loc=47}),
 s(308390,273026,{f=5,loc=42}),
 s(308391,273027,{f=1}),
-r(1262980,{itemID=273106})}}),
+r(1262980,{itemID=273106,learnedAt=140,requireSkill=182,skillID=2944})}}),
 e(3644,{npcID=260808,g={
 i(270180)}}),
 e(3482,{npcID=260326,g={
 s(308393,273029,{f=31}),
 s(308392,273028,{f=6,loc=41}),
 i(273030,{f=52}),
-r(1262975,{itemID=273097}),
+r(1262975,{itemID=273097,learnedAt=140,requireSkill=186,skillID=2946}),
 i(270865,{b=1}),
 i(270866,{b=1}),
 crit(116054,{achID=62031,awp=16001,id=6})}}),
@@ -2132,7 +2132,8 @@ r(3959,{description="If you are an Engineer and have a 'Security DELTA Access Ca
 e(418,{npcID=6229,g={
 s(159368,9449,{b=1,f=24,lvl=29,spellID=13494}),
 s(159369,9450,{f=5,loc=47}),
-i(274068,{awp=16001,f=51})}}),
+i(274068,{awp=16001,f=51}),
+r(1293088,{awp=16001,itemID=274049,learnedAt=125,requireSkill=202,skillID=2941})}}),
 n(6228,{description="This is a Rare Creature and, as such, is not always present.",g={
 s(318001,5108,{f=5,loc=42,lvl=27}),
 s(159374,9456,{f=31}),
@@ -2208,28 +2209,88 @@ s(305018,270256,{b=1,f=21,lvl=13}),
 s(305020,270261,{b=1,f=4,loc=42,lvl=13})}})}}),
 inst(3039,{awp=16001,icon=409547,lvl=40,zoneTextAreaID=16842,g={
 h(-45,{
+q(94975,{coords={
+[2548]={{33.4,38}}},lvl=38,qgs={258570},r=1,g={
+qo(1,{crs={258042,258100,258102,258104,258972,268423},providers={{"i",267091}}}),
+i(267090,{f=51})}}),
+q(94998,{coords={
+[2548]={{66.6,81}}},lvl=38,qgs={257591},qis={268036},r=2,sourceQuests={94997},g={
+i(279850,{f=51})}}),
 q(94982,{coords={
 [2548]={{66.6,81}}},lvl=40,qgs={257558},r=2,g={
 qo(1,{crs={258968},providers={{"i",267086}}}),
 s(311104,279480,{f=24}),
 s(311621,279852,{f=23}),
 s(311634,279853,{f=28})}}),
+q(94968,{coords={
+[2548]={{59.4,45.4}}},lvl=40,qgs={256418},r=1,g={
+qo(1,{crs={258968},providers={{"i",267086}}}),
+s(311104,279480,{f=24}),
+s(311621,279852,{f=23}),
+s(311634,279853,{f=28})}}),
+q(94981,{coords={
+[2548]={{64.4,82}}},lvl=38,qgs={259250},r=2,sourceQuests={94980},g={
+qo(1,{providers={{"i",4304}}}),
+qo(2,{providers={{"i",3575}}}),
+i(267089,{b=1,spellID=3366})}}),
+q(94974,{coords={
+[2548]={{59.8,46}}},lvl=38,qgs={256657},r=1,sourceQuests={94973},g={
+qo(1,{providers={{"i",4304}}}),
+qo(2,{providers={{"i",3575}}}),
+i(267089,{b=1,spellID=3366})}}),
+q(94980,{lvl=38,qss={267138},r=2}),
+q(94973,{lvl=38,qss={267137},r=1}),
+q(94969,{lvl=40,r=2,g={
+s(311695,279851,{f=5,loc=42,spellID=1319427}),
+s(311696,279929,{f=6,loc=40,spellID=1319426})}}),
+q(94997,{coords={
+[2548]={{30.7,49.1}}},lvl=38,qgs={258023},qis={268035},r=2,sourceQuests={94983}}),
 q(94984,{lvl=39,r=2,sourceQuests={94907},g={
 qo(1,{crs={258964},providers={{"i",267104}}}),
 s(311700,279854,{f=5,loc=45}),
 s(311699,279855,{f=3})}}),
+q(94972,{coords={
+[2548]={{59.4,44}}},lvl=39,qgs={256710},r=1,g={
+qo(1,{crs={258964},providers={{"i",267104}}}),
+s(311701,279860,{f=4,loc=43}),
+i(279859,{f=51})}}),
 q(94983,{coords={
 [2548]={{30.7,49.1}}},lvl=38,qgs={258023},r=2,g={
 qo(1,{crs={258042,258100,258102,258104,258972,268423},providers={{"i",267234}}})}}),
 q(96771,{coords={
 [1416]={{17.9,66}}},lvl=37,qgs={268425},r=2,g={
 qo(1,{providers={{"n",268423}}})}})}),
-e(3450,{npcID=258966}),
-e(3452,{npcID=258972}),
-e(3453,{npcID=259281}),
-e(3449,{npcID=258964}),
+e(3450,{npcID=258966,g={
+r(1291341,{itemID=273101,learnedAt=200,requireSkill=185,skillID=2939}),
+s(309097,274997,{f=6,loc=45}),
+s(309096,274996,{f=6,loc=41}),
+s(309095,274995,{f=23})}}),
+e(3452,{npcID=258972,g={
+s(309099,274999,{f=4,loc=46}),
+s(309098,274998,{f=20}),
+i(275000,{f=52})}}),
+e(3453,{npcID=259281,g={
+s(309101,275001,{f=26}),
+s(309102,275002,{f=5,loc=40}),
+s(309103,275003,{f=7,loc=47})}}),
+e(3449,{npcID=258964,g={
+i(275004,{f=51}),
+s(309105,275005,{f=7,loc=42}),
+s(309106,275006,{f=7,loc=40})}}),
 e(3451,{npcID=258968,g={
-crit(116052,{achID=62032,awp=16001,id=10})}})}}),
+i(275009,{f=53,spellID=1315972}),
+i(271721,{b=1,spellID=3366}),
+s(309108,275008,{f=34}),
+s(309107,275007,{f=34}),
+s(309110,275010,{f=4,loc=40}),
+crit(116052,{achID=62032,awp=16001,id=10})}}),
+n(264773,{
+i(286428,{f=52}),
+s(317301,286429,{f=4,loc=45}),
+s(317302,286430,{f=23})}),
+h(-63,{
+i(267137,{b=1,crs={259256}}),
+i(267138,{b=1,crs={259256}})})}}),
 inst(3109,{icon=409547,u=1,zoneTextAreaID=17191}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},icon=136345,lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
@@ -2467,7 +2528,8 @@ r(130289)}}),
 n(7357,{
 s(160161,10770,{f=1}),
 i(10769,{f=51}),
-s(160162,10771,{f=4,loc=45})}),
+s(160162,10771,{f=4,loc=45}),
+r(1255064,{awp=16001,itemID=252843,learnedAt=200,requireSkill=165,skillID=2945})}),
 n(8567,{
 s(160163,10772,{f=21}),
 s(160164,10774,{f=5,loc=41})}),
@@ -2793,7 +2855,7 @@ n(3974,{
 s(158997,7710,{f=28}),
 s(159025,7756,{f=5,loc=44}),
 i(3456,{f=53,spellID=9515}),
-r(1262982,{awp=16001,itemID=273109}),
+r(1262982,{awp=16001,itemID=273109,learnedAt=300,requireSkill=393,skillID=2947}),
 s(308784,274292,{awp=16001,f=36})}),
 n(6487,{
 s(159001,7714,{f=20}),
@@ -2811,6 +2873,7 @@ s(159003,7718,{f=6,loc=41}),
 s(159996,10330,{f=6,loc=46}),
 crit(116060,{achID=62032,awp=16001,id=7})}),
 n(6575,{
+r(1259349,{awp=16001,itemID=255730,learnedAt=280,requireSkill=129,skillID=2942}),
 s(165204,23192,{f=9})})}}),
 h(-364,{cost={{"i",7146,1}},lvl=37,g={
 n(4542,{
@@ -3619,11 +3682,11 @@ p(44,{itemID=8490,npcID=7380,spellID=10677}),
 s(158051,5198,{b=1,f=27,lvl=17,spellID=1322312}),
 s(158050,5197,{b=1,f=23,lvl=16}),
 i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883}),
-r(1262978,{awp=16001,itemID=273102})})}}),
+r(1262978,{awp=16001,itemID=273102,learnedAt=140,requireSkill=185,skillID=2939})})}}),
 inst(2970,{awp=16001,icon=409547,lvl=35,zoneTextAreaID=16550,g={
 h(-45,{
 q(96774,{coords={
-[1412]={{32.4,20.6}}},qgs={264074},r=1,g={
+[1412]={{32.4,20.6}}},lvl=30,qgs={264074},r=1,g={
 qo(1,{crs={269586,273738},providers={{"i",276894}}})}}),
 q(97130,{coords={
 [1416]={{15.4,74}}},lvl=34,qgs={31439},r=2,g={
@@ -3642,17 +3705,19 @@ qo(1,{providers={{"i",270333}}}),
 s(311500,279882,{f=6,loc=45}),
 s(311499,279930,{f=5,loc=40})}}),
 q(95787,{coords={
-[1424]={{50.6,57.1}}},qgs={2277},r=2,g={
-qo(1,{providers={{"i",270308}}}),
-qo(2,{providers={{"i",270309}}}),
-qo(3,{providers={{"i",270310}}}),
-qo(4,{providers={{"i",270311}}})}}),
-q(95775,{r=1,u=1,g={
-qo(1,{providers={{"i",270308}}}),
-qo(2,{providers={{"i",270309}}}),
-qo(3,{providers={{"i",270310}}}),
-qo(4,{providers={{"i",270311}}})}}),
-q(95776,{r=1,u=1,g={
+[1424]={{50.6,57.1}}},lvl=30,qgs={2277},r=2,g={
+qo(1,{description="Down the stairs to the left, where you first see the pool.",providers={{"i",270308},{"o",642943}}}),
+qo(2,{description="To the left of Var'Taka.",providers={{"i",270309},{"o",642944}}}),
+qo(3,{description="Near Captain Dreadrise, in the mouth of a skull.",providers={{"i",270310},{"o",642945}}}),
+qo(4,{description="Behind Min'loth the Serpent, the last boss.",providers={{"i",270311},{"o",642946}}})}}),
+q(95775,{coords={
+[1434]={{32.2,27.8}}},lvl=30,qgs={2519},r=1,sourceQuests={95770},g={
+qo(1,{description="Down the stairs to the left, where you first see the pool.",providers={{"i",270308},{"o",642943}}}),
+qo(2,{description="To the left of Var'Taka.",providers={{"i",270309},{"o",642944}}}),
+qo(3,{description="Near Captain Dreadrise, in the mouth of a skull.",providers={{"i",270310},{"o",642945}}}),
+qo(4,{description="Behind Min'loth the Serpent, the last boss.",providers={{"i",270311},{"o",642946}}})}}),
+q(95776,{coords={
+[1434]={{32.2,28.8}}},lvl=30,qgs={2464},r=1,g={
 qo(1,{providers={{"n",258924}}}),
 s(311501,279889,{f=4,loc=41}),
 s(311502,279888,{f=5,loc=46})}}),
@@ -3893,7 +3958,8 @@ n(8580,{description="Summoned by activating the Atal'ai Statues in the proper or
 i(22444),
 s(160179,10799,{f=29}),
 s(160180,10800,{f=5,loc=43}),
-s(160178,10798,{f=7,loc=45})}})}}),
+s(160178,10798,{f=7,loc=45}),
+r(1255036,{awp=16001,itemID=252871,learnedAt=250,requireSkill=165,skillID=2945})}})}}),
 h(-367,{crs={5712,5713,5714,5715,5716,5717},g={
 s(160170,10783,{f=5,loc=41}),
 s(160174,10787,{f=4,loc=44}),
@@ -4199,7 +4265,7 @@ s(158158,5404,{b=1,f=5,loc=41,lvl=18}),
 s(160045,10412,{b=1,f=5,loc=45,lvl=16}),
 i(273088,{awp=16001,b=1,f=51,lvl=17}),
 i(6446,{b=1,f=113}),
-r(1262985,{awp=16001,itemID=273098})}}),
+r(1262985,{awp=16001,itemID=273098,learnedAt=140,requireSkill=393,skillID=2947})}}),
 e(477,{npcID=3653,g={
 s(160906,13245,{b=1,f=8,lvl=18}),
 s(158487,6447,{b=1,f=8,lvl=16}),
@@ -4227,7 +4293,7 @@ s(158497,6469,{b=1,f=32,lvl=19}),
 s(158290,5970,{b=1,f=4,loc=44,lvl=18}),
 s(160044,10411,{b=1,f=5,loc=47,lvl=17}),
 s(158490,6459,{b=1,f=6,loc=47,lvl=18}),
-r(1283400,{awp=16001,itemID=273087})}}),
+r(1283400,{awp=16001,itemID=273087,learnedAt=90,requireSkill=185,skillID=2939})}}),
 e(480,{npcID=5775,g={
 s(158617,6631,{b=1,f=28,lvl=18}),
 s(158616,6630,{b=1,f=8,lvl=19}),
