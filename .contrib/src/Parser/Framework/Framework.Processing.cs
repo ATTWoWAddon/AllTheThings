@@ -4991,9 +4991,34 @@ namespace ATT
                 && f == (long)Objects.Filters.Recipe)
             {
                 data.Remove("spellID");
-                data["recipeID"] = spellID;
-                LogDebug($"INFO: Classic Type Recipe Conversion =>recipeID ({spellID})");
+
+                // A recipe already linked by a Profession DB (i(itemID, recipeID)) wins over the Item's own SpellID
+                if (data.TryGetValue("recipeID", out long existingRecipeID) && existingRecipeID > 0)
+                {
+                    LogDebug($"INFO: Classic Type Recipe Conversion kept existing recipeID ({existingRecipeID}) over SpellID ({spellID})");
+                    return;
+                }
+
+                // A spell that teaches another spell (Learn Spell effect, e.g. 19886 Expert Cook -> 3413 Cooking) links to the learned spell
+                long recipeID = GetLearnedSpellID(spellID);
+                data["recipeID"] = recipeID;
+                LogDebug($"INFO: Classic Type Recipe Conversion =>recipeID ({recipeID}){(recipeID != spellID ? $" learned from SpellID ({spellID})" : "")}");
             }
+        }
+
+        /// <summary>
+        /// Returns the spell taught by the given spell's Learn Spell effect, or the spell itself if it has none
+        /// </summary>
+        private static long GetLearnedSpellID(long spellID)
+        {
+            foreach (SpellEffect spellEffect in WagoData.EnumerateForSpellID<SpellEffect>(spellID))
+            {
+                if (spellEffect.IsLearnSpell() && spellEffect.EffectTriggerSpell > 0)
+                {
+                    return spellEffect.EffectTriggerSpell;
+                }
+            }
+            return spellID;
         }
 
         private static void IncrementTypeUseCount(string key, decimal id)

@@ -197,6 +197,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 1220,"Lupine Axe",2,0,0,0,-1,15,0,0,0,20,0,16384,0,0,0,-1,-1
 1254,"Lesser Firestone",1,0,0,0,-1,0,0,0,0,28,66,24576,0,0,0,-1,-1
 1259,"JYoo test item",0,0,0,0,-1,0,0,0,0,1,0,24576,0,0,0,-1,-1
+1263,"Brain Hacker",4,0,0,0,-1,55,0,0,0,60,0,16384,0,0,0,-1,-1
 1264,Headbasher,3,0,0,0,-1,0,0,0,0,29,0,0,0,0,0,-1,-1
 1265,"Scorpion Sting",3,0,0,0,-1,34,0,0,0,39,0,16384,0,0,0,-1,-1
 1270,"Finely Woven Cloak",2,0,0,0,-1,0,0,0,0,15,0,24576,0,32,0,-1,-1
@@ -932,7 +933,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 2786,"Oiled Blunderbuss",0,0,0,0,-1,24,0,0,0,29,0,24580,0,0,0,-1,-1
 2787,"Trogg Dagger",1,0,0,0,-1,1,0,0,0,3,0,24580,0,0,0,-1,-1
 2800,"Black Velvet Robes",3,0,0,0,-1,21,0,0,0,26,0,16388,0,32,0,-1,-1
-2801,"Blade of Hanna",4,0,0,0,-1,59,0,0,0,64,0,16388,0,0,0,-1,-1
+2801,"Blade of Hanna",4,0,0,0,-1,59,0,0,0,64,0,4,0,0,0,-1,-1
 2805,"Yeti Fur Cloak",2,0,0,0,-1,0,0,0,0,34,0,24580,0,32,0,-1,-1
 2807,"Guillotine Axe",3,0,0,0,-1,18,0,0,0,23,0,4,0,0,0,-1,-1
 2809,"Monster - Mace, Spiked Basic",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
@@ -979,7 +980,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 2903,"Daryl's Hunting Bow",2,0,0,0,-1,0,0,0,0,15,0,24580,0,0,0,-1,-1
 2904,"Daryl's Hunting Rifle",2,0,0,0,-1,0,0,0,0,16,0,24580,0,0,0,-1,-1
 2905,"Goat Fur Cloak",1,0,0,0,-1,0,0,0,0,10,0,24580,0,32,0,-1,-1
-2906,"Darkshire Mail Leggings",3,0,0,0,-1,0,0,0,0,28,0,4,0,32,0,-1,-1
+2906,"Darkshire Mail Leggings",2,0,0,0,-1,0,0,0,0,28,0,4,0,32,0,-1,-1
 2907,"Dwarven Tree Chopper",2,0,0,0,-1,0,0,0,0,20,0,24580,0,0,0,-1,-1
 2908,Thornblade,2,0,0,0,-1,0,0,0,0,20,0,24580,0,0,0,-1,-1
 2910,"Gold Militia Boots",2,0,0,0,-1,0,0,0,0,25,0,24580,0,32,0,-1,-1
@@ -1757,7 +1758,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 4576,"Light Bow",2,0,0,0,-1,16,0,0,0,21,0,16388,0,0,0,-1,-1
 4577,"Compact Shotgun",2,0,0,0,-1,8,0,0,0,13,0,16388,0,0,0,-1,-1
 4616,"Ryedol's Lucky Pick",1,0,0,0,-1,0,0,0,0,1,2048,24580,0,0,0,-1,-1
-4643,"Grimsteel Cape",3,0,0,0,-1,0,0,0,0,35,0,4,0,32,0,-1,-1
+4643,"Grimsteel Cape",2,0,0,0,-1,0,0,0,0,35,0,4,0,32,0,-1,-1
 4652,"Salbac Shield",2,0,0,0,-1,0,0,0,0,45,0,24580,0,0,0,-1,-1
 4653,"Ironheel Boots",2,0,0,0,-1,0,0,0,0,45,0,24580,0,32,0,-1,-1
 4658,"Warrior's Cloak",1,0,0,0,-1,3,0,0,0,8,0,24580,0,32,0,-1,-1
@@ -1953,7 +1954,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 4994,"Monster - Item, Gizmo",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
 4996,"Test Item 1",0,0,529,5,-1,5,0,0,0,10,0,24580,0,0,0,-1,-1
 5016,"Artisan's Trousers",2,0,0,0,-1,0,0,0,0,35,0,24580,0,32,0,-1,-1
-5028,"Lord Sakrasis' Scepter",2,0,0,0,-1,42,0,0,0,47,0,16388,0,0,0,-1,-1
+5028,"Lord Sakrasis' Scepter",2,0,0,0,-1,42,0,0,0,47,0,4,0,0,0,-1,-1
 5040,"Shadow Hunter Knife",1,0,0,0,-1,27,0,0,0,32,0,24580,0,0,0,-1,-1
 5069,"Fire Wand",2,0,0,0,-1,7,0,0,0,12,0,16388,0,0,0,-1,-1
 5071,"Shadow Wand",2,0,0,0,-1,9,0,0,0,14,0,16388,0,0,0,-1,-1
@@ -2339,7 +2340,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 6331,"Howling Blade",3,0,0,0,-1,33,0,0,0,38,0,16388,0,0,0,-1,-1
 6333,"Spikelash Dagger",2,0,0,0,-1,19,0,0,0,24,0,16388,0,0,0,-1,-1
 6334,"Monster - Mace, Green",0,0,0,0,-1,1,0,0,0,1,0,24580,0,0,0,-1,-1
-6335,"Grizzled Boots",3,0,0,0,-1,0,0,0,0,28,0,4,0,32,0,-1,-1
+6335,"Grizzled Boots",2,0,0,0,-1,0,0,0,0,28,0,4,0,32,0,-1,-1
 6336,"Infantry Tunic",2,0,0,0,-1,8,0,0,0,13,0,16388,0,32,0,-1,-1
 6337,"Infantry Leggings",2,0,0,0,-1,7,0,0,0,12,0,16388,0,32,0,-1,-1
 6340,"Fenrus' Hide",3,0,0,0,-1,22,0,0,0,27,0,4,0,32,0,-1,-1
@@ -7049,6 +7050,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 18282,"Core Marksman Rifle",4,0,0,0,-1,60,0,0,0,65,0,24580,0,0,0,-1,-1
 18293,"Monster - Glaive - 2 Blade B03 Green",0,0,0,0,32767,1,0,0,0,1,0,24580,0,0,0,-1,-1
 18295,"Phasing Boots",3,0,0,0,-1,50,0,0,0,55,0,4,0,32,0,-1,-1
+18298,"Unbridled Leggings",3,0,0,0,-1,51,0,0,0,56,0,4,0,32,0,-1,-1
 18301,"Lethtendris's Wand",3,0,0,0,-1,53,0,0,0,58,0,4,0,0,0,-1,-1
 18303,"Nimble Buckler",2,0,0,0,-1,53,0,0,0,58,0,4,0,0,0,-1,-1
 18304,"Greenroot Mail",2,0,0,0,-1,53,0,0,0,58,0,4,0,32,0,-1,-1
@@ -7219,6 +7221,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 18695,"Spellbound Tome",3,0,0,0,-1,57,0,0,0,62,0,4,0,0,0,-1,-1
 18696,"Intricately Runed Shield",3,0,0,0,-1,57,0,0,0,62,0,4,0,0,0,-1,-1
 18698,"Tattered Leather Hood",3,0,0,0,-1,51,0,0,0,56,0,4,0,32,0,-1,-1
+18699,"Icy Tomb Spaulders",3,0,0,0,-1,52,0,0,0,57,0,4,0,32,0,-1,-1
 18700,"Malefic Bracers",3,0,0,0,-1,53,0,0,0,58,0,4,0,32,0,-1,-1
 18702,"Belt of the Ordained",3,0,0,0,-1,55,0,0,0,60,0,4,0,32,0,-1,-1
 18709,"Arena Wristguards",3,0,0,0,-1,45,0,0,0,50,0,16388,0,32,0,-1,-1
@@ -7245,6 +7248,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 18738,"Carapace Spine Crossbow",3,0,0,0,-1,56,0,0,0,61,0,4,0,0,0,-1,-1
 18739,"Chitinous Plate Legguards",3,0,0,0,-1,56,0,0,0,61,0,4,0,32,0,-1,-1
 18740,"Thuzadin Sash",3,0,0,0,-1,56,0,0,0,61,0,4,0,32,0,-1,-1
+18742,"Stratholme Militia Shoulderguard",3,0,0,0,-1,55,0,0,0,60,0,4,0,32,0,-1,-1
 18745,"Sacred Cloth Leggings",3,0,0,0,-1,52,0,0,0,57,0,4,0,32,0,-1,-1
 18747,"Item Properties Test",3,0,0,0,1535,58,0,0,0,63,32768,24580,0,32,0,-1,-1
 18762,"Shard of the Green Flame",3,0,0,0,-1,0,0,0,0,54,0,24580,0,0,0,-1,-1

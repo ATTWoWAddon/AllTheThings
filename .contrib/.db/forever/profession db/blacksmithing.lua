@@ -119,7 +119,7 @@ i(276955, 1301448);	-- Azure Skyforged Chain
 i(276952, 1301445);	-- Azure Skyforged Chainmail
 i(276954, 1301447);	-- Azure Skyforged Gauntlets
 i(276957, 1301450);	-- Azure Skyforged Greaves
-i(276984, 301534);	-- Azure Skyforged Helm
+i(276984, 1301534);	-- Azure Skyforged Helm
 i(276956, 1301449);	-- Azure Skyforged Legguards
 i(276985, 1301535);	-- Azure Skyforged Pauldrons
 i(276953, 1301446);	-- Azure Skyforged Wristguards
@@ -143,7 +143,6 @@ i(275601, 1297141);	-- Clutchlord's Grips
 i(275603, 1297143);	-- Clutchlord's Stompers
 i(275602, 1297142);	-- Clutchlord's Support
 i(3609, 3321);		-- Copper Chain Vest
-i(251364, 1252256);	-- Crusader's Boots
 i(251359, 1252256);	-- Crusader's Boots
 i(251369, 1252266);	-- Crusader's Chain Belt
 i(251384, 1252281);	-- Crusader's Silvered Chain Helm
@@ -298,7 +297,6 @@ i(251425, 1252322);	-- Warder's Waistguard
 i(251435, 1252332);	-- Warder's Wristguards
 i(8029, 9997);		-- Wicked Mithril Blade
 i(12698, 16660);	-- Dawnbringer Shoulders
-i(276984, 1301534);	-- Azure Skyforged Helm
 i(277673, 1302598);	-- Rough Copper Chain Boots
 i(251364, 1252261);	-- Crusader's Gloves
 i(251418, 1252315);	-- Officer's Gauntlet
