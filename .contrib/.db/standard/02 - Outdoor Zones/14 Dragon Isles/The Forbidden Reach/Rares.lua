@@ -20,7 +20,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 						200610,	-- Duzalgor <Guardian of the Noxious Brood>
 						200537,	-- Gahz'raxes
 						200717,	-- Galakhad
-						200721,	-- Grugoth the Hullcrusher <Scource of the Coast>
+						200721,	-- Grugoth the Hullcrusher <Scourge of the Coast>
 						200579,	-- Ishyra
 						200885,	-- Lady Shaz'ra
 						203353,	-- Loot Specialist <Venture Co. Acquisitions>
@@ -125,7 +125,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					i(204225),	-- Perfect Windfeather
 				},
 			}),
-			n(200721, {	-- Grugoth the Hullcrusher <Scource of the Coast>
+			n(200721, {	-- Grugoth the Hullcrusher <Scourge of the Coast>
 				coord = { 42.9, 90.6, THE_FORBIDDEN_REACH },
 				questID = 73154,
 				groups = {

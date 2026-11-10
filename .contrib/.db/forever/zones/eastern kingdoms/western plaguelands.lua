@@ -1153,7 +1153,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 					i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 					i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 					i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
-					i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
+					i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
 					i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
 					i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
 				},

@@ -288,7 +288,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 					o(339837, {	-- Powder Bag
 						i(174098),	-- Death Lotus Powder (QI!)
 					}),
-					o(353305, {	-- Stronebreaker Mallet
+					o(353305, {	-- Stonebreaker Mallet
 						i(174100),	-- Stonebreaker Mallet (QI!)
 					}),
 				},

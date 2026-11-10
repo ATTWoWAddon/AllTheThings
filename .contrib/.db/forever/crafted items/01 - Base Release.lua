@@ -1115,7 +1115,7 @@ root(ROOTS.Craftables, {
 				MAP.AZSHARA,
 			},
 		}),
-		i(13757, {	-- Lightening Eel
+		i(13757, {	-- Lightning Eel
 			coord = { 60.6, 71.7, MAP.SILITHUS },
 			description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 			maps_disp = {
@@ -2670,7 +2670,7 @@ root(ROOTS.Craftables, {
 							MAP.THOUSAND_NEEDLES,
 						},
 					}),
-					o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
+					o(105569, {	-- Silver Vein (The Barrens/Hillsbrad Foothills - Horde only)
 						-- Note: This node get removed at an unknown point between MOP and TWW.
 						coords = {
 							{ 27.5, 57.5, MAP.HILLSBRAD_FOOTHILLS },	-- Azureload Mine

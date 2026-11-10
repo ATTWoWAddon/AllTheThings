@@ -156,7 +156,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 			sourceQuests = { 84728 },	-- Reforged Anew
 			provider = { "n", 228074 },	-- Angorla
 			coord = { 71.0, 44.1, SIREN_ISLE },
-			-- TODO: This quest unlock WQs / daily stuff / bonus objectives but it is not account wide in 57361 build
+			-- TODO: This quest unlocks WQs / daily stuff / bonus objectives but it is not account wide in 57361 build
 		}),
 		q(84726, {	-- Uncovered Mysteries
 			sourceQuests = { 84725 },	-- The Circlet Calls

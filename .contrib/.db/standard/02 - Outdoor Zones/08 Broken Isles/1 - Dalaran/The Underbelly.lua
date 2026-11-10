@@ -64,7 +64,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, LEGION_THE_UNDERBELLY, {
 					2207,	-- Jambiya
 					2209,	-- Kris
 					923,	-- Longsword
-					2208,	-- Poniad
+					2208,	-- Poniard
 					2027,	-- Scimitar
 				}},
 			}),
@@ -106,7 +106,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, LEGION_THE_UNDERBELLY, {
 					2209,	-- Kris
 					923,	-- Longsword
 					2526,	-- Main Gauche
-					2208,	-- Poniad
+					2208,	-- Poniard
 					2534,	-- Rondel
 					2027,	-- Scimitar
 				}},

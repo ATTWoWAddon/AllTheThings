@@ -29,7 +29,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 			coord = { 41.8, 58.3, HALLOWFALL },	-- Caesper
 			cost = { { "i", 225238, 1 } },	-- Meaty Haunch
 			groups = {
-				o(453167, {	-- Disturbed Lyns Treasure
+				o(453167, {	-- Disturbed Lynx Treasure
 					questID = 83263,
 					groups = {
 						i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)

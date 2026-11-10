@@ -1063,7 +1063,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				n(QUESTS, sharedData({
 					isWeekly = true,
 				}, {
-					q(97521, {	-- A A Turtle Bade It to the Water
+					q(97521, {	-- A Turtle Bade It to the Water
 						qg = 268107,	-- Roga
 						coords = {
 							{ 52.9, 39.0, FOUNDERS_POINT },

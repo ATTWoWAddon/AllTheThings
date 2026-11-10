@@ -639,7 +639,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 				}),
 			}),
 			header(HEADERS.Object, 613392, {	-- Impenetrably Sealed Gourd
-				o(615936, {	-- Dangling Jub
+				o(615936, {	-- Dangling Jug
 					coord = { 27.1, 67.7, MAP.MIDNIGHT.HARANDAR },
 					groups = { i(260251) },	-- Mysterious Red Fluid
 				}),

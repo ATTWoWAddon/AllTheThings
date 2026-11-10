@@ -93,7 +93,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 				i(233831),	-- Minnow's Favorite Blade (COSMETIC!)
 			},
 		}),
-		o(494475, {	-- Rune-Speared Spear
+		o(494475, {	-- Rune-Seared Spear
 			coord = { 57.9, 78.5, SIREN_ISLE },
 			groups = {
 				i(232439),	-- Rune-Seared Spear (QS!)

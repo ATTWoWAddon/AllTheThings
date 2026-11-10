@@ -534,7 +534,7 @@ battleground(ALTERAC_VALLEY, {
 				races = HORDE_ONLY,
 				groups = {
 					i(19107),	-- Bloodseeker
-					i(20648),	-- Cold Forged Hamme
+					i(20648),	-- Cold Forged Hammer
 					i(19106),	-- Ice Barbed Spear
 					i(19108),	-- Wand of Biting Cold
 				},

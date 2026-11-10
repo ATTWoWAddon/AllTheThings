@@ -17,7 +17,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 					252246,	-- Sweet Beetle Wings (QI!)
 				},
 				groups = {
-					o(574619, {	-- Rick Loamy Soil
+					o(574619, {	-- Rich Loamy Soil
 						i(252257),	-- Rich Loamy Soil (QI!)
 					}),
 				},

@@ -34,7 +34,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.VOIDSTORM, {
 				questID = 93493,
 				groups = { i(266098) },	-- Faindel's Longbow (COSMETIC!)
 			}),
-			o(605169, {	-- Final Cluth of Predaxas
+			o(605169, {	-- Final Clutch of Predaxas
 				coord = { 49.9, 79.3, MAP.MIDNIGHT.VOIDSTORM },
 				questID = 93237,
 				groups = { i(257446) },	-- Reins of the Insatiable Shredclaw (MOUNT!)

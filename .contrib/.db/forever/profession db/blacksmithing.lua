@@ -504,9 +504,9 @@ i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 --- AXESMITH ---
 i(0, MASTER_AXESMITH, nil, MASTER_AXESMITH);	-- Master Axesmith
 i(12835, 16991, nil, MASTER_AXESMITH);	-- Annihilator
-i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reape
+i(12838, 16994, nil, MASTER_AXESMITH);	-- Arcanite Reaper
 
-i(12821, 16970, nil, MASTER_AXESMITH);	-- Dawn's Edger
+i(12821, 16970, nil, MASTER_AXESMITH);	-- Dawn's Edge
 --[[
 --- UNRELEASED CONTENT ---
 -- BRD
@@ -529,10 +529,10 @@ i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader
 --]]
 --- SWORDSMITH ---
 i(0, MASTER_SWORDSMITH, nil, MASTER_SWORDSMITH);		-- Master Swordsmith
-i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcani
+i(12834, 16990, nil, MASTER_SWORDSMITH);	-- Arcanite Champion
 i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier
 i(12830, 16985, nil, MASTER_SWORDSMITH);	-- Corruption
-i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguardte Champion
+i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguard
 --[[
 --- UNRELEASED CONTENT ---
 -- BRD

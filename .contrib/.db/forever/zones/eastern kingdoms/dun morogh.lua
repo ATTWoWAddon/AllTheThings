@@ -539,7 +539,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					i(1009),	-- Compact Hammer
 				},
 			}),
-			q(96408, {	-- A Vistor to Dun Morogh
+			q(96408, {	-- A Visitor to Dun Morogh
 				qg = 1376,	-- Beldin Steelgrill
 				coord = { 50.4, 49.1, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -938,7 +938,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				lvl = 2,
 			}),
 			q(96392, {	-- Farsen's Watch
-				sourceQuest = 96408,	-- A Vistor to Dun Morogh
+				sourceQuest = 96408,	-- A Visitor to Dun Morogh
 				qg = 264936,	-- Earthseer Farsen
 				coord = { 64.8, 58.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
@@ -1650,17 +1650,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 						coord = { 52.1, 44.1, MAP.DUN_MOROGH },
 					}),
-					objective(1, {	-- 0/1 Stoneavil's Rifle
+					objective(1, {	-- 0/1 Stoneanvil's Rifle
 						providers = {
-							{ "i", 286360 },	-- Stoneavil's Rifle
-							{ "o", 695277 },	-- Stoneavil's Rifle
+							{ "i", 286360 },	-- Stoneanvil's Rifle
+							{ "o", 695277 },	-- Stoneanvil's Rifle
 						},
 						coord = { 53.1, 58.8, MAP.DUN_MOROGH },
 					}),
-					objective(1, {	-- 0/1 Sunhammers's Rifle
+					objective(1, {	-- 0/1 Sunhammer's Rifle
 						providers = {
-							{ "i", 286359 },	-- Sunhammers's Rifle
-							{ "o", 695223 },	-- Sunhammers's Rifle
+							{ "i", 286359 },	-- Sunhammer's Rifle
+							{ "o", 695223 },	-- Sunhammer's Rifle
 						},
 						coord = { 59.9, 50.1, MAP.DUN_MOROGH },
 					}),

@@ -2728,7 +2728,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					coord = { 54.2, 55.4, TEROKKAR_FOREST },
 				}),
 				hbonfire(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn / Stranglethorn Vale
-					provider = { "o", 187944 },	-- Alliance BonfireA
+					provider = { "o", 187944 },	-- Alliance Bonfire
 					coords = {
 						-- #if AFTER CATA
 						{ 51.7, 67.3, THE_CAPE_OF_STRANGLETHORN },

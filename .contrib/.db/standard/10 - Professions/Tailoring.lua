@@ -1327,7 +1327,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 					i(226349),	-- Earthen Tape Measure
 				},
 			}),
-			o(455942, {	-- Eathen Sticher's Snips
+			o(455942, {	-- Earthen Stitcher's Snips
 				coord = { 64.2, 60.2, THE_RINGING_DEEPS },
 				questID = 83925,
 				groups = {

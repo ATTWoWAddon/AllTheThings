@@ -517,7 +517,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					},
 				}),
 				o(375486, {	-- Protoform Schematic
-					description = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",
+					description = "This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Fiery Brimstone (Toy).",
 					coord = { 57.9, 78.0, ZERETH_MORTIS },
 					groups = {
 						i(189446),	-- Schematic: Shelly

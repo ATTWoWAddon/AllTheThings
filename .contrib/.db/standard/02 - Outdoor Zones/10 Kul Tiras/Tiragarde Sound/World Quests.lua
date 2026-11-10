@@ -175,7 +175,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			q(53950, {	-- Explosive Relief (H, Faction Assault WQ)
 				races = HORDE_ONLY,
 				groups = {
-					o(307028, {	-- Azerite Gernades
+					o(307028, {	-- Azerite Grenades
 						i(164741),	-- Unstable Azerite Grenade
 					}),
 				},
