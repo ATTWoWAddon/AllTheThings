@@ -758,6 +758,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				lvl = 2,
 				isBreadcrumb = true,
 			}),
+			q(97029, {	-- Eluvi'ana
+				qg = 259012,	-- Ealaane Nimbuswalker <Ban'aethal Refugee>
+				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
+				races = HORDE_ONLY,
+				groups = {
+					objective(1, {	-- 0/1 Ancient Skyborne Blade
+						provider = { "i", 264501 },	-- Ancient Skyborne Blade
+					}),
+					i(276188),	-- Eluvi'ana
+				},
+			}),
 			q(92484, {	-- Embracing the Elements
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
@@ -1844,6 +1855,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 		}),
 		n(TREASURES, {
+			o(618822, {	-- Ancient Sword
+				description = "A small blue glow in the ground. It has several spawn points.",
+				coords = {
+					{ 48.9, 72.7, MAP.ZEPHRAS_ISLE },
+					{ 50.4, 44.3, MAP.ZEPHRAS_ISLE },	-- At the bottom of the big lake, next to a sunken log.
+					{ 59.9, 82.2, MAP.ZEPHRAS_ISLE },
+				},
+				questID = 94634,
+				groups = {
+					i(264501),	-- Ancient Skyborne Blade
+				},
+			}),
 			o(626718, {	-- Dented Chest
 				coords = {
 					{ 35.5, 22.5, MAP.ZEPHRAS_ISLE },
