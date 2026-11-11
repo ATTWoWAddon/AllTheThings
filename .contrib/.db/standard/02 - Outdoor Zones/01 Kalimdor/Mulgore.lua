@@ -904,9 +904,12 @@ maproot(KALIMDOR, MULGORE, {
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {
-					objective(1, {	-- 0/6 Broken Tools
-						provider = { "i", 4703 },	-- Broken Tools
-						cost = { { "i", 4702, 1 } },	-- Prospector's Pick
+					objective(1, {	-- 0/5 Broken Tools
+						providers = {
+							{ "i", 4703 },	-- Broken Tools
+							{ "o", 1685 },	-- Forge
+						},
+						cost = { { "i", 4702, 5 } },	-- Prospector's Pick
 						coord = { 34.0, 46.0, MULGORE },
 						crs = {
 							2990,	-- Bael'dun Appraiser
