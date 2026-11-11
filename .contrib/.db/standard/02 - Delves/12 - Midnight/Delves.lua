@@ -552,6 +552,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 					{ "o", 581922 },	-- Hidden Trove
 				},
 			}),
+			i(262390, {	-- Sporbie (PET!)
+				providers = {
+					{ "o", 658088 },	-- Abundantly Bountiful Heavy Trunk
+					{ "o", 584518 },	-- Bountiful Heavy Trunk
+					{ "o", 584508 },	-- Nemesis Strongbox
+				},
+			}),
 			i(262342, {	-- Spormilian (PET!)
 				providers = {
 					{ "o", 658087 },	-- Abundantly Bountiful Heavy Trunk
@@ -703,6 +710,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				{ "o", 584509 },	-- Nemesis Strongbox
 				{ "o", 623259 },	-- Pilfered Trunk
 				{ "o", 623258 },	-- Pilfered Trunk
+				-- Lab Boxes
+				{ "o", 673144 },	-- Bountiful Heavy Trunk
+				{ "o", 705959 },	-- Mislaid Treasure
 			},
 			groups = {
 				i(267080, {timeline = { ADDED_12_1_0 }}),	-- Amani Blueflame Chandelier (DECOR!)
@@ -758,7 +768,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				provider = { "i", 257387 },	-- Bountiful Heavy Trunk
 				VerifyLoot = {"armor","weapon","miscellaneous"},
 				groups = {
-					i(262390),	-- Sporbie (PET!)
 				},
 			}),
 			o(658088, {	-- Abundantly Bountiful Heavy Trunk
@@ -802,7 +811,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				VerifyLoot = {"armor","weapon","miscellaneous"},
 				groups = {
 					i(254869),	-- Chunk of Companion Experience (Epic)
-					i(262390),	-- Sporbie (PET!)
 					i(265366),	-- Twilight Executioner (COSMETIC!)
 				},
 			}),

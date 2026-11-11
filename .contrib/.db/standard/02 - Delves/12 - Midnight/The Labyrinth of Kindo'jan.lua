@@ -482,10 +482,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(689304, {	-- Ancestral Bounty
 					questID = 98758,
 					isWeekly = true,	-- assumed
+					sym = {{"select","itemID",
+						-- uncommented are confirmed 'special' drops
+						-- 264971,	-- Annihilation Rod (COSMETIC!)
+						264970,	-- Oblivion's Edge (COSMETIC!)
+						-- 265368,	-- Twilight Destroyer (COSMETIC!)
+						265366,	-- Twilight Executioner (COSMETIC!)
+						-- 265367,	-- Twilight Fang (COSMETIC!)
+					}},
 					groups = { i(280820) },	-- Loa-Blessed Victory (TOY!)
 				}),
 				o(676583, {	-- Ancient Keyper's Bag
 					description = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
+					coords = {
+						{ 28.7, 72.3, LABYRINTH_KINDOJAN },
+						{ 87.5, 68.7, LABYRINTH_KINDOJAN },
+					},
 					cr = 273788,	-- Keeper of the Key
 					groups = { i(282402) },	-- Archaic Amani Key
 				}),
@@ -504,7 +516,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(654950, {	-- Impressive Treasure Trove
 					description = "Spawns after finishing 'Jan'alai's' event.",
 					coord = { 24.8, 22.5, LABYRINTH_KINDOJAN },
-					-- Triggers hqt(86371),	-- Trovehunter's Bounty
 				}),
 				o(654948, {	-- Massive Treasure Trove
 				}),
@@ -544,17 +555,22 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			--n(VENDORS, {
 			--}),
 			n(ZONE_REWARDS, {
-				-- From Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
-				i(284052),	-- Amani Effigy (COSMETIC!)
-				i(252044),	-- Amani Horn Cup (DECOR!)
-				i(264484),	-- Blue Amani Tapestry (DECOR!)
-				i(284359),	-- Corroded Amani Sconce (DECOR!)
-				i(284057),	-- Effigy of Corrosion (COSMETIC!)
-				i(263321),	-- Frayed Amani Offering Basket (DECOR!)
-				i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
-				i(284054),	-- Hexdrinker's Shoulders (COSMETIC!)
-				i(244350),	-- Shattered Amani Ritual Urn (DECOR!)
-				i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
+				providers = {
+					{ "o", 705929 },	-- Mislaid Treasure
+				},
+				groups = {
+					-- From Sturdy Chests, Bountiful Trunks, and Mislaid Treasures, drop chance random
+					i(284052),	-- Amani Effigy (COSMETIC!)
+					i(252044),	-- Amani Horn Cup (DECOR!)
+					i(264484),	-- Blue Amani Tapestry (DECOR!)
+					i(284359),	-- Corroded Amani Sconce (DECOR!)
+					i(284057),	-- Effigy of Corrosion (COSMETIC!)
+					i(263321),	-- Frayed Amani Offering Basket (DECOR!)
+					i(284051),	-- Hexbearer's Pauldrons (COSMETIC!)
+					i(284054),	-- Hexdrinker's Shoulders (COSMETIC!)
+					i(244350),	-- Shattered Amani Ritual Urn (DECOR!)
+					i(264256),	-- Wall-Mounted Amani Animal Trophy (DECOR!)
+				},
 			}),
 		},
 	}),

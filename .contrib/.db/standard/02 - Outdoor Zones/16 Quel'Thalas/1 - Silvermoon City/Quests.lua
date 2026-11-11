@@ -310,6 +310,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 				q(93742, name(HEADERS.Currency, 3378, {timeline = { ADDED_12_0_1_SEASONSTART }})),	-- Looted Dawnlight Manaflux after Midnight Season 1: Catalyst Unbound
 				q(96662, {timeline = { ADDED_12_1_0 }}),	-- Accepting 96649 to do crest downgrade
 				q(98541, { timeline = { ADDED_12_1_0 } }),	-- Triggered when choosing to skip 'Legacy of the Amani' at Orweyna after 'The Preparations Are Complete' (92897); also completes every quest in the chapter
+				q(96493, name(HEADERS.Currency, 3465)),	-- first loot of Venomblight Manaflux
 			}),
 		}),
 	}),
