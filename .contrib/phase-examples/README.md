@@ -63,7 +63,7 @@ d(201, { -- SoD's 20-player BWL
 }),
 ```
 
-Neither drop needs its own JSON entry: both use the difficulty's rule and the enclosing raid's rule. Add a new key to a drop only when it needs an independent opening or removal.
+**Write a key once at the parent; its bosses and drops inherit it automatically.** Neither drop needs its own key or JSON entry. A child key adds an independent opening or removal condition **AND** all parent conditions; it never replaces them. [See the inheritance table and the complete fragment that shares one declaration across parallel records](evolution/blackwing-lair/FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
 
 **File to edit for timing: [schedule.json](schedule.json), inside `rules.blackwing-lair`.** This is the complete BWL rules object, not a replacement for the whole JSON file:
 

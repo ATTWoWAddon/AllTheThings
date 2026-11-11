@@ -6,6 +6,64 @@ These are the existing migration snapshots, not a claim that the production migr
 
 **Read down:** [P1](#p1-the-file-before-any-change) → [P2.1](#p1--p21-edit-the-lua-first) → [P2.2](#p21--p22-add-the-json) → [P3](#p22--p3-change-the-stage-value) → [P4](#p3--p4-replace-the-old-writers-and-flavor-guards).
 
+## Write a key once; children inherit it
+
+**`progressionKey` is optional on children.** The example Parser already carries every ancestor's rule down through `groups` / `g`.
+
+| What you write on a child | Rules that apply to that child and its descendants |
+|---|---|
+| No key | All inherited rules. No extra JSON entry to maintain. |
+| A different key | All inherited rules **AND** the new rule. |
+| The same key as an ancestor | The same rule once; the repeated annotation is unnecessary. |
+
+An independently timed boss or drop adds a condition. It cannot bypass a disabled ancestor. For the original BWL route in SoD, even an open book rule would leave the book unavailable through that route.
+
+### Parallel bosses and drops can share one declaration too
+
+In **option B**, [input/layout.lua](../../input/layout.lua) puts `group("bwl.classic-original")` under `inst(742)`, which declares `raid.bwl.common`. The selected fragment below declares `raid.bwl.original` once for its contents. The fragment envelope is removed during expansion; Nefarian and Treasures stay directly under the instance in the output.
+
+**Author-maintained P4 example input:** [input/fragments/bwl.classic-original.lua](../../input/fragments/bwl.classic-original.lua). This is the complete small comparison fragment, not the full native raid snapshot:
+
+```lua
+-- Authoring input (B): flat original Nefarian and book routes for Classic-compatible contexts; edit only if choosing B.
+-- P4: describes the source directly, after removing legacy phase writers and flavor guards.
+return {
+    progressionKey = "raid.bwl.original",  -- Original route; SoD explicitly disables this scope.
+    groups = {  -- Inherit the envelope's scope without generating an extra parent.
+        e(1536, {  -- Nefarian
+            crs = { 11583, 10162 },  -- NPC sources for this Nefarian occurrence.
+            groups = {
+                i(19003, {  -- Head of Nefarian
+                    races = { 1, 3, 4, 7 },  -- Original source race restriction.
+                }),
+                i(19364),  -- Ashkandi, Greatsword of the Brotherhood (original)
+            },
+        }),
+        {
+            headerID = -56,  -- Treasures
+            groups = {
+                o(180667, {  -- Draconic for Dummies
+                    progressionKey = "raid.bwl.draconic-for-dummies",  -- Independent book timing, even under a disabled ancestor.
+                    timeline = { "added 1.9.0.4937", "removed 4.0.3.13287" },
+                    groups = {
+                        i(21109),  -- Draconic for Dummies [Chapter VII]
+                    },
+                }),
+            },
+        },
+    },
+}
+```
+
+| Record | Effective rules in a phased context |
+|---|---|
+| Nefarian and both shown drops | `raid.bwl.common` AND `raid.bwl.original` |
+| Book and its item | `raid.bwl.common` AND `raid.bwl.original` AND `raid.bwl.draconic-for-dummies` |
+
+The [existing schedule](../../schedule.json) already has these rules. **Inheritance needs no additional JSON and no per-boss or per-item entries.** Authors write `progressionKey` only at rule boundaries; the Parser produces the accumulated `progressionScopes`. Retail ignores these phase keys and receives its selected ordinary records.
+
+The complete native snapshots below still annotate parallel original-route records individually because those records have no shared original-route parent. Their repetition is not a requirement for descendants. This example shows the existing B interface for avoiding that repetition without adding a visible parent; choosing it for the complete native migration remains an interface decision.
+
 ## P1: the file before any change
 
 **Existing Lua:** `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua`
