@@ -321,6 +321,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 				},
 			}),
+			q(86616, {	-- Repurposed Totems
+				qg = 270263,	-- Farseer Maret Firetend
+				coord = { 14.4, 42.6, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/12 Vilebranch Totem
+						providers = {
+							{ "i", 279225 },	-- Vilebranch Totem
+							{ "o", 669105 },	-- Vilebranch Totem
+						},
+						coords = {
+							{ 46.1, 65.5, MAP.THE_HINTERLANDS },
+							{ 46.2, 65.2, MAP.THE_HINTERLANDS },
+							{ 46.7, 66.3, MAP.THE_HINTERLANDS },
+							{ 46.9, 64.2, MAP.THE_HINTERLANDS },
+							{ 47.2, 67.9, MAP.THE_HINTERLANDS },
+							{ 47.7, 65.3, MAP.THE_HINTERLANDS },
+							{ 48.2, 68.4, MAP.THE_HINTERLANDS },
+							{ 48.4, 65.9, MAP.THE_HINTERLANDS },
+							{ 48.8, 67.4, MAP.THE_HINTERLANDS },
+						},
+						cr = 4467,	-- Vilebranch Soothsayer
+					}),
+				},
+			}),
 			q(836, {	-- Rescue OOX-09/HL!
 				sourceQuest = 485,	-- Find OOX-09/HL!
 				qg = 7806,	-- Homing Robot OOX-09/HL
