@@ -41,6 +41,9 @@ local function SendResponseMessage(msg, player)
 	end
 end
 
+-- Links from '? <link>' queries, by "type:id", so the answers can show the link instead of a bare ID
+local PendingQueryLinks = {};
+
 -- Player Progress Cache
 local PlayerProgressCacheByGUID = {};
 app.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
@@ -155,31 +158,16 @@ local function CHAT_MSG_ADDON(prefix, text, channel, sender, target, ...)
 			local guid = args[6];
 			if guid then PlayerProgressCacheByGUID[guid] = { tonumber(args[3]), tonumber(args[4]), args[5] }; end
 			app.print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
-		else
-			local response;
-			if a == "s" then
-				response = " ";
-				for i=3,#args,2 do
-					local b = tonumber(args[i]);
-					local c = tonumber(args[i + 1]);
-					response = response .. b .. ": " .. c .. " - ";
-				end
-			elseif a == "q" then
-				response = " ";
-				for i=3,#args,2 do
-					local b = tonumber(args[i]);
-					local c = tonumber(args[i + 1]);
-					response = response .. b .. ": " .. c .. " - ";
-				end
-			elseif a == "a" then
-				response = " ";
-				for i=3,#args,2 do
-					local b = tonumber(args[i]);
-					local c = tonumber(args[i + 1]);
-					response = response .. b .. ": " .. c .. " - ";
+		elseif a then
+			-- Answers to a typed or linked query: show each Thing with whether the sender has it
+			for i=3,#args,2 do
+				local b = tonumber(args[i]);
+				local c = tonumber(args[i + 1]);
+				if b and c then
+					local link = PendingQueryLinks[a .. ":" .. b] or (a .. ":" .. b);
+					app.print(sender .. ": " .. link .. " " .. (c > 0 and app.L.COLLECTED or app.L.NOT_COLLECTED));
 				end
 			end
-			if response then print(response .. sender); end
 		end
 	elseif cmd == "to" then	-- To Command
 		local myName = UnitName("player");
@@ -203,38 +191,81 @@ local function CHAT_MSG_ADDON(prefix, text, channel, sender, target, ...)
 		end
 	end
 end
-SLASH_ALLTHETHINGSGUILD1 = "/attguild";
-SlashCmdList.ALLTHETHINGSGUILD = function(cmd)
-	if not cmd or cmd == "" then
-		cmd = "?";
-	elseif cmd:sub(1,1) ~= "?" then
+-- Turns '? <link> [<link> ...]' into one query per type, e.g. "?\ts\t<sourceID>" for an item appearance.
+-- Returns nil when the command has no links, so typed queries ('? s:123', 's:123') keep working as before.
+local C_ToyBox_GetToyInfo = C_ToyBox and C_ToyBox.GetToyInfo
+local function BuildLinkQueries(cmd)
+	local links = cmd:match("^%?%s*(.*|H.+)$")
+	if not links then return end
+	local byType, order = {}, {}
+	local function Add(kind, id, link)
+		if not id then return end
+		if not byType[kind] then byType[kind] = {}; order[#order + 1] = kind end
+		byType[kind][#byType[kind] + 1] = id
+		PendingQueryLinks[kind .. ":" .. id] = link
+	end
+	for link in links:gmatch("|c[^|]*|H.-|h.-|h|r") do
+		local kind, id = link:match("|H(%a+):(%d+)")
+		id = tonumber(id)
+		if kind == "item" then
+			local sourceID = app.GetSourceID and app.GetSourceID(link)
+			if sourceID then
+				Add("s", sourceID, link)
+			elseif C_ToyBox_GetToyInfo and C_ToyBox_GetToyInfo(id) then
+				Add("toy", id, link)
+			else
+				app.print(link .. ": nothing to compare for this item (no appearance or toy).")
+			end
+		elseif kind == "battlepet" then
+			Add("p", id, link)
+		elseif kind == "quest" then
+			Add("q", id, link)
+		elseif kind == "achievement" then
+			Add("a", id, link)
+		elseif kind == "spell" then
+			Add("sp", id, link)
+		end
+	end
+	local queries = {}
+	for _,kind in ipairs(order) do
+		queries[#queries + 1] = "?\t" .. kind .. "\t" .. table.concat(byType[kind], "\t")
+	end
+	return queries
+end
+-- Builds the addon messages for a slash command's arguments (shared by /attguild, /attraid and /attu)
+local function BuildQueries(cmd)
+	if not cmd or cmd == "" then return { "?" } end
+	local linkQueries = BuildLinkQueries(cmd)
+	if linkQueries then return linkQueries end
+	if cmd:sub(1,1) ~= "?" then
 		cmd = "?\t" .. cmd:gsub(":","\t");
 	end
-	SendGuildMessage(cmd);
+	return { cmd }
+end
+SLASH_ALLTHETHINGSGUILD1 = "/attguild";
+SlashCmdList.ALLTHETHINGSGUILD = function(cmd)
+	for _,query in ipairs(BuildQueries(cmd)) do
+		SendGuildMessage(query);
+	end
 end
 SLASH_ALLTHETHINGSRAID1 = "/attraid";
 SLASH_ALLTHETHINGSRAID2 = "/attgroup";
 SLASH_ALLTHETHINGSRAID3 = "/attparty";
 SLASH_ALLTHETHINGSRAID4 = "/attinstance";
 SlashCmdList.ALLTHETHINGSRAID = function(cmd)
-	if not cmd or cmd == "" then
-		cmd = "?";
-	elseif cmd:sub(1,1) ~= "?" then
-		cmd = "?\t" .. cmd:gsub(":","\t");
+	for _,query in ipairs(BuildQueries(cmd)) do
+		SendGroupMessage(query);
 	end
-	SendGroupMessage(cmd);
 end
 SLASH_ALLTHETHINGSYOU1 = "/attu";
 SlashCmdList.ALLTHETHINGSYOU = function(cmd)
 	local name,server = UnitName("target");
 	if name then
 		if UnitIsPlayer("target") then
-			if not cmd or cmd == "" then
-				cmd = "?";
-			elseif cmd:sub(1,1) ~= "?" then
-				cmd = "?\t" .. cmd:gsub(":","\t");
+			local player = (server and server ~= "" and (name .. "-" .. server)) or name
+			for _,query in ipairs(BuildQueries(cmd)) do
+				SendResponseMessage(query, player);
 			end
-			SendResponseMessage(cmd, (server and server ~= "" and (name .. "-" .. server)) or name);
 		else
 			local guid = UnitGUID("target");
 			if guid and not app.WOWAPI.issecretvalue(guid) then
