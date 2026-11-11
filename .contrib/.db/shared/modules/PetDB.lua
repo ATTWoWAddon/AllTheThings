@@ -1160,6 +1160,7 @@ i(280803, 5158);	-- Eagle Owl
 i(275682, 5075);	-- Excitable Slime
 i(280703, 5153);	-- Jungle Boa
 i(281168, 5161);	-- Mini Diablo
+i(268109, 5005);	-- Musical Gustjumper
 i(280614, 5138);	-- Pachimari
 i(281166, 5159);	-- Panda Cub
 i(280697, 5151);	-- Plagued Cockroach
