@@ -920,6 +920,9 @@ do
 			entry.color = nil
 		end
 		local left, right = entry.left, entry.right
+		-- Rows built from secret text (e.g. a name the client keeps secret in instances) can't be compared, used as
+		-- keys or searched, so leave them out.
+		if issecretvalue(left) or issecretvalue(right) then return end
 		if not left and not right then return end
 		local leftText = left and (entry.r and (ColorCode(entry.r, entry.g, entry.b) .. left .. "|r") or left) or " "
 		local rightText = right and (entry.r2 and (ColorCode(entry.r2, entry.g2, entry.b2) .. right .. "|r")
@@ -928,8 +931,9 @@ do
 	end
 	-- The progress summary goes on the tooltip's first row, next to the unit name, like a normal ATT tooltip.
 	local function EntryToSummary(entry)
-		if entry.left or entry.right then return end
 		local summaryText = entry.summaryText
+		if issecretvalue(entry.left) or issecretvalue(entry.right) or issecretvalue(summaryText) then return end
+		if entry.left or entry.right then return end
 		if summaryText and summaryText ~= "" and summaryText ~= "---" then return summaryText end
 	end
 
