@@ -469,6 +469,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 							{ "i", 55242 },	-- Thelgen Seismic Record
 							{ "o", 203184 },	-- Thelgen Seismograph
 						},
+						coord = { 47.8, 66.0, WETLANDS },
 					}),
 				},
 			}),
@@ -1293,6 +1294,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 							{ "i", 55209 },	-- Mountaineer's Ale
 							{ "o", 203151 },	-- Mountaineer's Ale
 						},
+						coord = { 47.9, 74.3, WETLANDS },
 					}),
 				},
 			}),

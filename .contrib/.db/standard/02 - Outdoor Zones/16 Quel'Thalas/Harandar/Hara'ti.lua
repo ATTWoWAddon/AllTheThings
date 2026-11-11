@@ -16,10 +16,20 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 				minReputation = { FACTION_HARATI, 20 },	-- Hara'ti, Renown 20
 			}),
 			n(QUESTS, sharedData({
-				provider = { "n", 240407 },	-- Naynar <Renown Quartermaster>
-				coord = { 50.9, 50.7, MAP.MIDNIGHT.HARANDAR },
+				qgs = {
+					240407,	-- Naynar <Renown Quartermaster>
+					-- #if AFTER 12.1.5
+					276362,	-- Hara'ti Representative <Renown Quartermaster>
+					-- #endif
+				},
+				coords = {
+					{ 50.9, 50.7, MAP.MIDNIGHT.HARANDAR },
+					-- #if AFTER 12.1.5
+					{ 39.2, 80.1, MAP.MIDNIGHT.SILVERMOON_CITY },
+					-- #endif
+				},
 			}, bubbleDownRep(FACTION_HARATI, {
-				{		-- RENOWN 1 --
+				{	-- RENOWN 1 --
 				}, {	-- RENOWN 2 --
 				}, {	-- RENOWN 3 --
 				}, {	-- RENOWN 4 --

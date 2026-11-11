@@ -747,7 +747,27 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 							{ "i",  57245 },	-- Gigantic Catfish
 							{ "o", 203800 },	-- Barrel of Canal Fish
 						},
-						coord = { 56.8, 41.2, STORMWIND_CITY },
+						coords = {
+							{ 26.3, 20.4, STORMWIND_CITY },
+							{ 26.3, 46.8, STORMWIND_CITY },
+							{ 42.4, 73.1, STORMWIND_CITY },
+							{ 43.0, 71.3, STORMWIND_CITY },
+							{ 46.3, 56.4, STORMWIND_CITY },
+							{ 46.4, 58.2, STORMWIND_CITY },
+							{ 51.4, 26.2, STORMWIND_CITY },
+							{ 54.9, 68.4, STORMWIND_CITY },
+							{ 56.0, 42.5, STORMWIND_CITY },
+							{ 56.8, 41.3, STORMWIND_CITY },
+							{ 62.4, 15.4, STORMWIND_CITY },
+							{ 62.7, 50.4, STORMWIND_CITY },
+							{ 68.8, 65.1, STORMWIND_CITY },
+							{ 69.4, 40.9, STORMWIND_CITY },
+							{ 70.1, 11.0, STORMWIND_CITY },
+							{ 70.7, 43.4, STORMWIND_CITY },
+							{ 71.4, 22.4, STORMWIND_CITY },
+							{ 74.1, 50.3, STORMWIND_CITY },
+							{ 79.4, 59.2, STORMWIND_CITY },
+						},
 					}),
 					COOKING_AWARD,
 				},
@@ -3901,7 +3921,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				lvl = 38,
 			}),
 			-- #if ANYCLASSIC
-			
+
 			-- #endif
 			q(26977, {	-- Twilight Investigation
 				sourceQuest = 26960,	-- My Son, the Prince
