@@ -1,0 +1,45 @@
+{
+  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "owners": [
+    {
+      "line": 98,
+      "phase": "SOD_PHASE_TWO",
+      "key": "gnomeregan.raid10",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "216634"
+    },
+    {
+      "line": 127,
+      "phase": "SOD_PHASE_TWO",
+      "key": "gnomeregan.raid10",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "216661"
+    },
+    {
+      "line": 134,
+      "phase": "SOD_PHASE_TWO",
+      "key": "gnomeregan.raid10",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "216661"
+    },
+    {
+      "line": 135,
+      "phase": "SOD_PHASE_TWO",
+      "key": "gnomeregan.raid10",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "215430"
+    },
+    {
+      "line": 954,
+      "phase": "SOD_PHASE_TWO",
+      "key": "gnomeregan.raid10",
+      "kind": "constructor",
+      "constructor": "d",
+      "identity": "DIFFICULTY.SOD.PLAYER10"
+    }
+  ]
+}

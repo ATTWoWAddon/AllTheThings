@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-gnomeregan",
+      "stage": "P2.1",
+      "sources": [
+        "Gnomeregan.lua"
+      ]
+    }
+  ]
+}
