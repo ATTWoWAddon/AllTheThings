@@ -117,6 +117,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = HORDE_PALADINS,
 						classes = { PALADIN },
+						repeatable = true,
 						lvl = 20,
 						groups = {
 							objective(1, {	-- 0/1 Corrupted Kor Gem
