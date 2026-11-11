@@ -935,6 +935,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 86.6, 39.6, MAP.HILLSBRAD_FOOTHILLS },
 					{ 85.0, 47.6, MAP.HILLSBRAD_FOOTHILLS },
 				},
+				groups = {
+					i(282717, {	-- Durable Bearhide Pauldrons
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14279, {	-- Creepthess
 				coords = {
@@ -942,6 +947,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					{ 28.4, 63.4, MAP.HILLSBRAD_FOOTHILLS },
 					{ 35.2, 60.4, MAP.HILLSBRAD_FOOTHILLS },
 					{ 39.2, 51.6, MAP.HILLSBRAD_FOOTHILLS },
+				},
+				groups = {
+					i(282720, {	-- Spider Swarm
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14277, {	-- Lady Zephris
