@@ -1255,11 +1255,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Forge",
 			es = "Forja",
+			mx = "Forja",
 			de = "Schmiede",
+			fr = "Forge",
+			it = "Forgia",
 			pt = "Forja",
 			ru = "Горн",
 			ko = "가열로",
 			cn = "熔炉",
+			tw = "熔爐",
 		},
 	},
 	[1720] = {
