@@ -436,6 +436,12 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				repeatable = true,
 				lvl = 45,
 			}),
+			q(98096, {	-- Sisters In Duty
+				qg = 8396,	-- Sentinel Dalia Sunblade
+				coord = { 39.6, 88.9, MAP.DARNASSUS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 45,
+			}),
 			q(5535, {	-- Spiritual Unrest
 				qg = 11548,	-- Loth'atu
 				coord = { 11.4, 78.2, MAP.AZSHARA },

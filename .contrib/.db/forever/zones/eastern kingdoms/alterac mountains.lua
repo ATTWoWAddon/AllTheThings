@@ -119,6 +119,31 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
+			q(96609, {	-- A Taste of Home
+				qg = 29049,	-- Arille Azuregaze
+				coord = { 18.4, 65.8, MAP.ALTERAC_MOUNTAINS },
+				maps = { MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/10 Silvermoon Shimmerwine
+						provider = { "i", 274966 },	-- Silvermoon Shimmerwine
+						crs = {
+							8581,	-- Blood Elf Defender
+							6199,	-- Blood Elf Reclaimer
+							6198,	-- Blood Elf Surveyor
+							246920,	-- Blood Elf Arcanist
+							246991,	-- Magister Hawkhelm
+							247006,	-- Lieutenant Suncrest
+							247013,	-- Ranger Lydrea
+						},
+					}),
+					i(276896),	-- Everlasting Silvermoon Shimmerwine
+					i(276903),	-- Shimmerwine Shanker
+					i(276904),	-- Shimmerwine Spirits
+				},
+			}),
 			q(96783, {	-- A Way In
 				qg = 13085,	-- Myrokos Silentform
 				coord = { 85.0, 80.4, MAP.ALTERAC_MOUNTAINS },

@@ -1253,6 +1253,43 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					i(8404),	-- Pattern: Wild Leather Vest (RECIPE!)
 				},
 			},
+			q(81924, {	-- Wisdom of the Guardians
+				qg = 221985,	-- Tyrisius
+				coord = { 57.2, 69.0, MAP.FERALAS },
+				maps = { MAP.THE_HINTERLANDS, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { DRUID },
+				lvl = 40,
+				groups = {
+					objective(1, {	-- Guardian of Feralas
+						providers = {
+							{ "o", 441948 },	-- Shrine of the Warden
+							{ "n", 221935 },	-- Treant Avatar
+							{ "n", 222705 },	-- Blightbark <Guardian of Feralas>
+						},
+						coord = { 58.6, 52.2, MAP.FERALAS },
+						description = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukk'ash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
+					}),
+					objective(2, {	-- Guardian of the Hinterlands
+						providers = {
+							{ "o", 441946 },	-- Shrine of the Moon
+							{ "n", 221933 },	-- Moonkin Avatar
+							{ "n", 222704 },	-- Sagefeather <Guardian of the Hinterlands>
+						},
+						coord = { 66.2, 53.1, MAP.THE_HINTERLANDS },
+						description = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
+					}),
+					objective(3, {	-- Guardian of Azshara
+						providers = {
+							{ "o", 441947 },	-- Shrine of the Beast
+							{ "n", 221928 },	-- Hippogryph Avatar
+							{ "n", 222703 },	-- Whisperwing <Guardian of Azshara>
+						},
+						coord = { 34.6, 49.0, MAP.AZSHARA },
+						description = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loot the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
+					}),
+				},
+			}),
 			q(2902, {	-- Woodpaw Investigation
 				sourceQuest = 2863,	-- Alpha Strike
 				qg = 7875,	-- Hadoken Swiftstrider

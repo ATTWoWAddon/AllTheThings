@@ -134,6 +134,19 @@ instanceroot(241, {	-- Zul'Farrak
 					}),
 				},
 			}),
+			q(96770, {	-- The Witch Doctor's Head
+				qg = 20735,	-- Archmage Lan'dalock
+				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/1 Zum'rah's Head
+						provider = { "i", 277112 },	-- Zum'rah's Head
+						cr = 7271,	-- Witch Doctor Zum'rah
+					}),
+				},
+			}),
 			q(2846, {	-- Tiara of the Deep
 				sourceQuest = 2861,	-- Tabetha's Task
 				qg = 6546,	-- Tabetha

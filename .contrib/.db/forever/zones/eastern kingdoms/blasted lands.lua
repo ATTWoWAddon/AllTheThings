@@ -235,6 +235,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
+			q(96797, {	-- The Orphan
+				qg = 34365,	-- Orphan Matron Aria
+				coord = { 21.5, 72.6, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+			}),
 			q(7581, {	-- The Prison's Bindings
 				qg = 14463,	-- Daio the Decrepit
 				coord = { 34.0, 50.2, MAP.BLASTED_LANDS },
