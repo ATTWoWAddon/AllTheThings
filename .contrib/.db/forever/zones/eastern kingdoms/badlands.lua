@@ -498,6 +498,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
+			q(97617, {	-- Safety Checks
+				qg = 269577,	-- Dorgaron
+				coord = { 54.5, 12.8, MAP.BADLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/8 Unstudied Artifact
+						provider = { "i", 278402 },	-- Unstudied Artifact
+						crs = {
+							2740,	-- Shadowforge Darkweaver
+							2739,	-- Shadowforge Tunneler
+							2893,	-- Stonevault Bonesnapper
+							2894,	-- Stonevault Shaman
+						},
+					}),
+					objective(2, {	-- 0/1 Explorers' League Mining Helmet
+						providers = {
+							{ "i", 278403 },	-- Explorers' League Mining Helmet
+							{ "o", 667674 },	-- Explorers' League Supplies
+						},
+						coord = { 53.1, 34.4, MAP.BADLANDS },
+					}),
+					objective(3, {	-- 0/1 Pristine Mattock
+						providers = {
+							{ "i", 278404 },	-- Pristine Mattock
+							{ "o", 667676 },	-- Pristine Mattock
+						},
+						coord = { 49.2, 68.5, MAP.BADLANDS },
+					}),
+				},
+			}),
 			q(733, {	-- Scrounging
 				sourceQuest = 718,	-- Mirages
 				qg = 2860,	-- Sigrun Ironhew
