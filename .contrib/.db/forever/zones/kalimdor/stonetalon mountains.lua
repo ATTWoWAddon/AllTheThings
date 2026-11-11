@@ -600,6 +600,19 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(80001, {	-- Rekindle
+				sourceQuest = 79192,	-- Stepping Stones
+				provider = { "o", 424082 },	-- Firepit
+				coord = { 40.6, 52.4, STONETALON_MOUNTAINS },
+				cost = {
+					{ "i", 4470, 1 },	-- Simple Wood
+					{ "i", 4471, 1 },	-- Flint and Tinder
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(4471),	-- Flint and Tinder
+				},
+			}),
 			q(1078, {	-- Retrieval for Mauren
 				qg = 4078,	-- Collin Mauren
 				coord = { 53.0, 86.6, MAP.STORMWIND_CITY },
