@@ -894,9 +894,17 @@ do
 	end
 	-- A gate of 1 completes a glyph-free color code in front of the presentation; 0 truncates to empty text,
 	-- and WrapString then drops the whole fragment.
-	local function DisplayFragment(matches, presentation)
-		local token = C_StringUtil.TruncateWhenZero(C_CurveUtil.EvaluateColorValueFromBoolean(matches, 1, 0))
+	local function DisplayFragment(gate, presentation)
+		local token = C_StringUtil.TruncateWhenZero(gate)
 		return C_StringUtil.WrapString(token, "|c0000000", "|r" .. presentation)
+	end
+	-- 1 if the unit name matches any of the names, else 0 (possibly secret; only ever passed on to client APIs).
+	local function AnyNameMatches(unitName, names)
+		local gate = 0
+		for _,name in ipairs(names) do
+			gate = C_CurveUtil.EvaluateColorValueFromBoolean(Matches(unitName, name), 1, gate)
+		end
+		return gate
 	end
 
 	local function ColorCode(r, g, b)
@@ -904,6 +912,9 @@ do
 	end
 	-- Turns one of ATT's tooltipInfo entries into the left and right text of a row, with its colors inlined.
 	local function EntryToRow(entry)
+		-- Wrapped paragraphs (lore, descriptions, quest notes) can't wrap inside the single double line, where they
+		-- would stretch the tooltip and push the right column out of line, so leave them out.
+		if entry.wrap then return end
 		if entry.color then
 			entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color)
 			entry.color = nil
@@ -952,45 +963,89 @@ do
 	end
 
 	local NPCSearchOptions = { AppendSearchParams = { "none", true }, ForceDifficulty = true }
+	-- NPCs whose text still showed "Retrieving data" are searched again without the search cache, which would
+	-- otherwise hand back the same unfinished text
+	local FreshNPCSearchOptions = { AppendSearchParams = { "none", true }, ForceDifficulty = true, IgnoreCache = true }
+	local RetryNPCs = {}
+	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 	local CandidatesByMapID = {}
 	local function BuildCandidates(mapID)
 		local ids, count = {}, { 0 }
 		for _,group in ipairs(SearchForField("mapID", mapID) or app.EmptyTable) do
 			CollectNPCIDs(group, ids, count)
 		end
-		local candidates = {}
+		-- NPCs whose text is identical apart from their Creature ID (e.g. several "Mining Monkey" IDs) share one
+		-- candidate, so a shared name shows one block instead of one per ID.
+		local candidates, byContent, working = {}, {}, false
 		for npcID in pairs(ids) do
 			local name = app.NPCNameFromID[npcID]
 			-- Inside instances the client hands out NPC names as secrets too; CompareStrings accepts those, so keep them.
 			if issecretvalue(name) or (name and name ~= "") then
 				app.SetSkipLevel(1)
-				local ok, group = pcall(app.GetCachedSearchResults, SearchForObject, "npcID", npcID, NPCSearchOptions)
+				local options = RetryNPCs[npcID] and FreshNPCSearchOptions or NPCSearchOptions
+				local ok, group, groupWorking = pcall(app.GetCachedSearchResults, SearchForObject, "npcID", npcID, options)
 				app.SetSkipLevel(0)
+				-- Item names/links still loading ("Retrieving data"): build what we can, but don't keep this result
+				if ok and (groupWorking or (group and group.working)) then working = true end
 				local tooltipInfo = ok and group and TooltipInfoCache[group]
 				if tooltipInfo and #tooltipInfo > 0 then
 					-- Left and right columns keep the same number of lines, so each right value stays beside its left value.
-					local lefts, rights, summary = {}, {}, nil
+					-- The 'shared' columns leave out the Creature ID row, which is the only row that differs per ID.
+					local lefts, rights, sharedLefts, sharedRights, summary = {}, {}, {}, {}, nil
 					for _,entry in ipairs(tooltipInfo) do
 						local leftText, rightText = EntryToRow(entry)
 						if leftText then
 							lefts[#lefts + 1] = leftText
 							rights[#rights + 1] = rightText
+							if entry.left ~= L.CREATURE_ID then
+								sharedLefts[#sharedLefts + 1] = leftText
+								sharedRights[#sharedRights + 1] = rightText
+							end
 						end
 						summary = summary or EntryToSummary(entry)
 					end
+					-- Item names that hadn't loaded yet: keep what we have for now and retry this NPC fresh
+					local retrieving = false
+					for _,leftText in ipairs(lefts) do
+						if IsRetrieving(leftText) then retrieving = true break end
+					end
+					RetryNPCs[npcID] = retrieving or nil
+					if retrieving then working = true end
 					if #lefts > 0 or summary then
-						candidates[#candidates + 1] = {
-							name = name,
-							left = #lefts > 0 and table_concat(lefts, "\n") or nil,
-							right = #rights > 0 and table_concat(rights, "\n") or nil,
-							summary = summary,
-						}
+						local sharedLeft = #sharedLefts > 0 and table_concat(sharedLefts, "\n") or nil
+						local sharedRight = #sharedRights > 0 and table_concat(sharedRights, "\n") or nil
+						local key = (sharedLeft or "") .. "\0" .. (sharedRight or "") .. "\0" .. (summary or "")
+						local candidate = byContent[key]
+						if candidate then
+							-- A second ID with the same text: show the shared text without any one Creature ID
+							candidate.names[#candidate.names + 1] = name
+							candidate.left, candidate.right = sharedLeft, sharedRight
+						else
+							candidate = {
+								names = { name },
+								left = #lefts > 0 and table_concat(lefts, "\n") or nil,
+								right = #rights > 0 and table_concat(rights, "\n") or nil,
+								summary = summary,
+							}
+							byContent[key] = candidate
+							candidates[#candidates + 1] = candidate
+						end
 					end
 				end
 			end
 		end
-		CandidatesByMapID[mapID] = candidates
-		return candidates
+		-- Only keep a finished build; an unfinished one is rebuilt on the next hover
+		if not working then CandidatesByMapID[mapID] = candidates end
+		return candidates, working
+	end
+	-- Redraws a unit tooltip whose ATT text was still loading, so it picks up the finished data
+	local function RefreshUnitTooltip(tooltip)
+		if not tooltip:IsVisible() then return end
+		if tooltip.RefreshData then
+			tooltip:RefreshData()
+		else
+			app.ReshowGametooltip(tooltip)
+		end
 	end
 	-- Rebuild lazily after the map changes or ATT refreshes collection data.
 	local function WipeCandidates() wipe(CandidatesByMapID) end
@@ -1002,21 +1057,28 @@ do
 		-- Test for nil only after ruling out a secret: a secret name is never nil.
 		if not issecretvalue(unitName) and not unitName then app.PrintDebug("SecretUnitTooltip: no unit name") return end
 		if not CanSelect() then app.PrintDebug("SecretUnitTooltip: secret-safe APIs unavailable") return end
+		-- Skip Mythic+ keys: tooltips there should stay light, and every hover would compare against the whole map
+		if (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and C_ChallengeMode.IsChallengeModeActive())
+			or select(3, GetInstanceInfo()) == 8 then
+			return
+		end
 		local mapID = app.CurrentMapID
 		if not mapID then app.PrintDebug("SecretUnitTooltip: no current map") return end
-		local candidates = CandidatesByMapID[mapID] or BuildCandidates(mapID)
+		local candidates, working = CandidatesByMapID[mapID], false
+		if not candidates then candidates, working = BuildCandidates(mapID) end
+		if working then app.CallbackHandlers.DelayedCallback(RefreshUnitTooltip, 0.5, tooltip) end
 		if #candidates == 0 then return end
 		local leftOutput, rightOutput, summaryOutput, anyText, anySummary = "", "", "", false, false
 		for _,candidate in ipairs(candidates) do
-			local matches = Matches(unitName, candidate.name)
+			local gate = AnyNameMatches(unitName, candidate.names)
 			if candidate.left then
 				anyText = true
-				leftOutput = leftOutput .. DisplayFragment(matches, candidate.left)
-				rightOutput = rightOutput .. DisplayFragment(matches, candidate.right)
+				leftOutput = leftOutput .. DisplayFragment(gate, candidate.left)
+				rightOutput = rightOutput .. DisplayFragment(gate, candidate.right or " ")
 			end
 			if candidate.summary then
 				anySummary = true
-				summaryOutput = summaryOutput .. DisplayFragment(matches, candidate.summary)
+				summaryOutput = summaryOutput .. DisplayFragment(gate, candidate.summary)
 			end
 		end
 		-- Progress on the first row, next to the unit name (the name row's own text is secret, so it isn't measured).
