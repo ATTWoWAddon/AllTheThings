@@ -1,8 +1,21 @@
-# Start here: Blackwing Lair
+# Phase examples: Lua and JSON changes
 
-**Want to see the files evolve? [Open the complete P1 → P2.1 → P2.2 → P3 → P4 file comparison](evolution/blackwing-lair/FILE_EVOLUTION.md).** It shows the actual Lua and JSON diffs on one page, including steps where a file does not change.
+**Start with the instance you want to change.** Each page shows the complete original Lua, the actual edits at P2.1, the JSON to write at P2.2, and the complete final P4 files.
 
-**This branch is a runnable example, not a migration of the live addon database.** Start with one question: **why can SoD Nefarian drop the new Ashkandi in game phase 5, while the old Ashkandi remains unavailable?**
+| Raid or dungeon | Complete Lua / JSON comparison |
+|---|---|
+| Blackwing Lair | [P1 → P2.1 → P2.2 → P3 → P4](evolution/blackwing-lair/FILE_EVOLUTION.md) |
+| Blackrock Depths | [P1 → P2.1 → P2.2 → P3 → P4](evolution/blackrock-depths/FILE_EVOLUTION.md) |
+| Demon Fall Canyon | [P1 → P2.1 → P2.2 → P3 → P4](evolution/demon-fall-canyon/FILE_EVOLUTION.md) |
+| Dire Maul | [P1 → P2.1 → P2.2 → P3 → P4](evolution/dire-maul/FILE_EVOLUTION.md) |
+| Temple of Ahn'Qiraj | [P1 → P2.1 → P2.2 → P3 → P4](evolution/temple-of-ahnqiraj/FILE_EVOLUTION.md) |
+| Gnomeregan | [P1 → P2.1 → P2.2 → P3 → P4](evolution/gnomeregan/FILE_EVOLUTION.md) |
+
+[Which files are handwritten or generated?](evolution/README.md#which-files-do-i-edit) These pages show the proposed migration; this branch does not migrate the live addon database.
+
+## Run a small Blackwing Lair example
+
+The walkthrough below runs a smaller example: **why can SoD Nefarian drop the new Ashkandi in game phase 5, while the old Ashkandi remains unavailable?**
 
 Lua contains the two bosses' separate loot lists. One JSON file supplies their opening rules. The Parser combines them into a file you can inspect.
 
@@ -172,7 +185,7 @@ These directories are side-by-side snapshots of one raid at different points in 
 | **P3** | [Lua](evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) · [Stage switch](evolution/blackwing-lair/p3/migration.json) | The same Lua and JSON now supply official progress output. Keep the old writers for an independent legacy comparison. |
 | **P4** | [Rewritten Lua](evolution/blackwing-lair/p4/sod.lua) · [Generated Nefarian excerpt](evolution/blackwing-lair/nefarian/p4/expected-sod.lua) | Remove the guards and wrappers. Keep the reviewed policy and separate the original and reworked loot routes. |
 
-[Five more before-and-after examples](evolution/OTHER_INSTANCES.md) cover Blackrock Depths, Demon Fall Canyon, Dire Maul, Temple of Ahn’Qiraj and Gnomeregan. The [production design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) describes how different source groups advance independently.
+[All six complete file comparisons](evolution/README.md) include Blackrock Depths, Demon Fall Canyon, Dire Maul, Temple of Ahn’Qiraj and Gnomeregan. The [production design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) describes how different source groups advance independently.
 
 ## Choose an interface
 

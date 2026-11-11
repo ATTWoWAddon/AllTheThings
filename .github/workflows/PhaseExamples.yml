@@ -73,6 +73,11 @@ jobs:
           python .contrib/phase-examples/evolution/blackwing-lair/verify.py --parser "$env:RUNNER_TEMP/phase-parser/Parser.exe" --lua "$env:RUNNER_TEMP/lua-5.1.5/src/lua51.exe"
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
 
+      - name: Check five complete source migration snapshots
+        run: |
+          python .contrib/phase-examples/evolution/full-source/verify.py --lua "$env:RUNNER_TEMP/lua-5.1.5/src/lua51.exe"
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+
       - name: Verify all authoring options with the built Parser
         run: |
           python .contrib/phase-examples/verify.py --parser "$env:RUNNER_TEMP/phase-parser/Parser.exe" --lua "$env:RUNNER_TEMP/lua-5.1.5/src/lua51.exe" --output "$env:RUNNER_TEMP/phase-examples-result/generated"

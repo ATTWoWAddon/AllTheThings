@@ -1,10 +1,12 @@
-# Comparison guide / P1–P4 · Five more dungeon and raid sources
+# Record notes for five instances
 
-The [Blackwing Lair walkthrough](blackwing-lair/) has files for all five steps. Here, each case follows one acquisition from the existing P1 source to the runnable option A example. **P1 is the complete existing repository file** linked first in each case. The Lua blocks below condense selected lines from that P1 file or the P4 candidate. The full sources contain the remaining loot and eligibility conditions.
+For the actual files and edits, use the complete comparison pages below. This page explains selected records and their evidence. Its code blocks are excerpts.
+
+[Blackrock Depths](blackrock-depths/FILE_EVOLUTION.md) · [Demon Fall Canyon](demon-fall-canyon/FILE_EVOLUTION.md) · [Dire Maul](dire-maul/FILE_EVOLUTION.md) · [Temple of Ahn'Qiraj](temple-of-ahnqiraj/FILE_EVOLUTION.md) · [Gnomeregan](gnomeregan/FILE_EVOLUTION.md)
 
 **Local P1 copies** · [Blackrock Depths](p1/Blackrock%20Depths.lua) · [Demon Fall Canyon](p1/Demon%20Fall%20Canyon.lua) · [Dire Maul](p1/Dire%20Maul.lua) · [Temple of Ahn'Qiraj](p1/2.6%20Temple%20of%20Ahn%27Qiraj.lua) · [Gnomeregan](p1/Gnomeregan.lua). Each copy adds one identification line above the complete original. The pinned source links below use the original line numbers.
 
-At **P2.1**, add the indicated fields while retaining the legacy expressions. At **P2.2**, edit the instance’s rules in the [shared schedule](../schedule.json) and validate them in shadow. P3 and P4 use the same rules. Both stages still ship the legacy result. At **P3**, the same annotated Lua feeds two separate compilations. The progress path takes its timing from the selected policy. The independent legacy comparison (the golden) uses the frozen source, build configuration and old timing rules. **P4** removes retired writers and guards after that comparison passes. The linked P1 databases are checked-in evidence. Each P3 paragraph describes a proposed acceptance check.
+The P3 checks described below are proposed acceptance criteria. The saved sources and syntax checks do not establish an independent production legacy build comparison.
 
 ## Blackrock Depths · Emperor Dagran Thaurissan → Emperor's Seal
 
