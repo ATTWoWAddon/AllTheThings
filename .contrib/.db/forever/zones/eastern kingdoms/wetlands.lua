@@ -566,6 +566,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 28,
 			}),
 			q(305, {	-- In Search of The Excavation Team (1/2)
+				sourceQuest = 98461,	-- Unrequited Love
 				qg = 2096,	-- Tarrel Rockweaver
 				coord = { 11.5, 52.2, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
