@@ -94,15 +94,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/6 Hillsbrad Farmer slain
 						provider = { "n", 2266 },	-- Hillsbrad Farmer
+						coord = { 34.8, 44.6, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(2, {	-- 0/6 Hillsbrad Farmhand slain
 						provider = { "n", 2360 },	-- Hillsbrad Farmhand
+						coord = { 32.8, 40.7, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(3, {	-- 0/1 Farmer Ray slain
 						provider = { "n", 232 },	-- Farmer Ray
+						coord = { 33.0, 35.0, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(4, {	-- 0/1 Farmer Getz slain
 						provider = { "n", 2403 },	-- Farmer Getz
+						coord = { 35.2, 38.0, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 				},
 			}),
@@ -115,6 +119,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/15 Hillsbrad Peasant slain
 						provider = { "n", 2267 },	-- Hillsbrad Peasant
+						coord = { 30.2, 41.4, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 				},
 			}),
@@ -127,9 +132,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/1 Blacksmith Verringtan slain
 						provider = { "n", 2404 },	-- Blacksmith Verringtan
+						coord = { 32.2, 45.6, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(2, {	-- 0/4 Hillsbrad Apprentice Blacksmith slain
 						provider = { "n", 2265 },	-- Hillsbrad Apprentice Blacksmith
+						coord = { 32.1, 45.3, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(3, {	-- 0/1 Shipment of Iron
 						providers = {
@@ -153,6 +160,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(2, {	-- 0/5 Hillsbrad Councilman slain
 						provider = { "n", 2387 },	-- Hillsbrad Councilman
+						coord = { 30.2, 43.5, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(3, {	-- Hillsbrad Proclamation destroyed
 						provider = { "o", 1761 },	-- Hillsbrad Proclamation
@@ -180,6 +188,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 					objective(2, {	-- 0/10 Hillsbrad Miner slain
 						provider = { "n", 2269 },	-- Hillsbrad Miner
+						coord = { 27.8, 56.4, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 				},
 			}),
@@ -192,12 +201,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				groups = {
 					objective(1, {	-- 0/10 Dun Garok Mountaineer slain
 						provider = { "n", 2344 },	-- Dun Garok Mountaineer
+						coord = { 72.6, 79.8, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(2, {	-- 0/8 Dun Garok Rifleman slain
 						provider = { "n", 2345 },	-- Dun Garok Rifleman
+						coord = { 68.4, 75.8, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(3, {	-- 0/4 Dun Garok Priest slain
 						provider = { "n", 2346 },	-- Dun Garok Priest
+						coord = { 71.0, 78.6, MAP.HILLSBRAD_FOOTHILLS },
 					}),
 					objective(4, {	-- 0/1 Captain Ironhill slain
 						provider = { "n", 2304 },	-- Captain Ironhill
