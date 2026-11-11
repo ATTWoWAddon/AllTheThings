@@ -24,6 +24,18 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				coord = { 35.0, 46.5, MAP.SHENDRALAS },
 				lvl = 35,
 			}),
+			q(99257, {	-- A Heart of Crystal
+				qg = 255486,	-- Historian Biraxas
+				coord = { 45.8, 78.2, MAP.SHENDRALAS },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Depleted Crystal Heart
+						provider = { "i", 286647 },	-- Depleted Crystal Heart
+						coord = { 43.8, 34.4, MAP.SHENDRALAS },
+						cr = 252711,	-- Decrepit Pylon Protector
+					}),
+				},
+			}),
 			q(93062, {	-- Bone Burying
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -179,6 +191,18 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					objective(3, {	-- 0/8 Outcast Necromancer slain
 						provider = { "n", 11559 },	-- Outcast Necromancer
 						coord = { 22.6, 26.2, MAP.SHENDRALAS },
+					}),
+				},
+			}),
+			q(99258, {	-- Mana Mania
+				qg = 255486,	-- Historian Biraxas
+				qi = 286648,	-- Depleted Crystal Heart (PQI!)
+				coord = { 45.8, 78.2, MAP.SHENDRALAS },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Nascent Pylon Protector slain
+						provider = { "n", 276401 },	-- Nascent Pylon Protector
+						coord = { 37.6, 52.8, MAP.SHENDRALAS },
 					}),
 				},
 			}),
