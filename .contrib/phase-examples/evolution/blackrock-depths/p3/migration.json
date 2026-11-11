@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-blackrock-depths",
+      "stage": "P3",
+      "sources": [
+        "Blackrock Depths.lua"
+      ]
+    }
+  ]
+}

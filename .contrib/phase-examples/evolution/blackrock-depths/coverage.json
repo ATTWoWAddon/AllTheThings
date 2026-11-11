@@ -1,0 +1,1133 @@
+{
+  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "owners": [
+    {
+      "line": 78,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "q",
+      "identity": "84338"
+    },
+    {
+      "line": 280,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "q",
+      "identity": "82062"
+    },
+    {
+      "line": 2197,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227730"
+    },
+    {
+      "line": 2203,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "20754"
+    },
+    {
+      "line": 2206,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "20755"
+    },
+    {
+      "line": 2209,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22308"
+    },
+    {
+      "line": 2223,
+      "phase": "PHASE_THREE_ENCHANTS",
+      "key": "brd.enchants",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19444"
+    },
+    {
+      "line": 2228,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "20761"
+    },
+    {
+      "line": 2232,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228981"
+    },
+    {
+      "line": 2235,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "229008"
+    },
+    {
+      "line": 2238,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "229009"
+    },
+    {
+      "line": 2242,
+      "phase": "PHASE_THREE_ENCHANTS",
+      "key": "brd.enchants",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19448"
+    },
+    {
+      "line": 2245,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19219"
+    },
+    {
+      "line": 2246,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19330"
+    },
+    {
+      "line": 2248,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19206"
+    },
+    {
+      "line": 2254,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227826"
+    },
+    {
+      "line": 2262,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227842"
+    },
+    {
+      "line": 2270,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227823"
+    },
+    {
+      "line": 2278,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227839"
+    },
+    {
+      "line": 2286,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227830"
+    },
+    {
+      "line": 2294,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227831"
+    },
+    {
+      "line": 2302,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227821"
+    },
+    {
+      "line": 2310,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227833"
+    },
+    {
+      "line": 2318,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227829"
+    },
+    {
+      "line": 2326,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227840"
+    },
+    {
+      "line": 2334,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227828"
+    },
+    {
+      "line": 2342,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227827"
+    },
+    {
+      "line": 2350,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227834"
+    },
+    {
+      "line": 2358,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227825"
+    },
+    {
+      "line": 2366,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227838"
+    },
+    {
+      "line": 2374,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227832"
+    },
+    {
+      "line": 2382,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227841"
+    },
+    {
+      "line": 2390,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228924"
+    },
+    {
+      "line": 2398,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228925"
+    },
+    {
+      "line": 2406,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228926"
+    },
+    {
+      "line": 2414,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228927"
+    },
+    {
+      "line": 2422,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228928"
+    },
+    {
+      "line": 2430,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228929"
+    },
+    {
+      "line": 2438,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227820"
+    },
+    {
+      "line": 2446,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227835"
+    },
+    {
+      "line": 2454,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227824"
+    },
+    {
+      "line": 2462,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227836"
+    },
+    {
+      "line": 2470,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227837"
+    },
+    {
+      "line": 2478,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227822"
+    },
+    {
+      "line": 2489,
+      "phase": "PHASE_THREE_ENCHANTS",
+      "key": "brd.enchants",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19449"
+    },
+    {
+      "line": 2490,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19331"
+    },
+    {
+      "line": 2491,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19332"
+    },
+    {
+      "line": 2492,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19220"
+    },
+    {
+      "line": 2493,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19333"
+    },
+    {
+      "line": 2494,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19208"
+    },
+    {
+      "line": 2495,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19209"
+    },
+    {
+      "line": 2496,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19207"
+    },
+    {
+      "line": 2501,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19211"
+    },
+    {
+      "line": 2502,
+      "phase": "PHASE_FOUR_DARKIRON_RECIPES",
+      "key": "brd.dark-iron-recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "20040"
+    },
+    {
+      "line": 2503,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19210"
+    },
+    {
+      "line": 2504,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "brd.recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19212"
+    },
+    {
+      "line": 2513,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227902"
+    },
+    {
+      "line": 2535,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22528"
+    },
+    {
+      "line": 2558,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227903"
+    },
+    {
+      "line": 2562,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227904"
+    },
+    {
+      "line": 2613,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.enthralled-sphere",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223539"
+    },
+    {
+      "line": 2624,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22240"
+    },
+    {
+      "line": 2638,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22234"
+    },
+    {
+      "line": 2640,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22271"
+    },
+    {
+      "line": 2643,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22397"
+    },
+    {
+      "line": 2655,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223540"
+    },
+    {
+      "line": 2665,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223982"
+    },
+    {
+      "line": 2684,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223986"
+    },
+    {
+      "line": 2695,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227957"
+    },
+    {
+      "line": 2708,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223987"
+    },
+    {
+      "line": 2721,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227961"
+    },
+    {
+      "line": 2734,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227962"
+    },
+    {
+      "line": 2738,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22266"
+    },
+    {
+      "line": 2744,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227952"
+    },
+    {
+      "line": 2756,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22271"
+    },
+    {
+      "line": 2757,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22257"
+    },
+    {
+      "line": 2763,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223544"
+    },
+    {
+      "line": 2773,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22270"
+    },
+    {
+      "line": 2778,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227955"
+    },
+    {
+      "line": 2789,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223984"
+    },
+    {
+      "line": 2804,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223985"
+    },
+    {
+      "line": 2814,
+      "phase": "PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS",
+      "key": "brd.dungeon-set-2",
+      "kind": "constructor",
+      "constructor": "n_conditional",
+      "identity": "16059"
+    },
+    {
+      "line": 2828,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228700"
+    },
+    {
+      "line": 2845,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "n",
+      "identity": "223265"
+    },
+    {
+      "line": 2862,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22257"
+    },
+    {
+      "line": 2869,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "21987"
+    },
+    {
+      "line": 2884,
+      "phase": "PHASE_THREE_DMF_CARDS",
+      "key": "brd.darkmoon-cards",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19268"
+    },
+    {
+      "line": 2892,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22223"
+    },
+    {
+      "line": 2907,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223538"
+    },
+    {
+      "line": 2918,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223981"
+    },
+    {
+      "line": 2921,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223980"
+    },
+    {
+      "line": 2936,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22270"
+    },
+    {
+      "line": 2944,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "223983"
+    },
+    {
+      "line": 2954,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22241"
+    },
+    {
+      "line": 2963,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22242"
+    },
+    {
+      "line": 2995,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22256"
+    },
+    {
+      "line": 2996,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22205"
+    },
+    {
+      "line": 2997,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22254"
+    },
+    {
+      "line": 2998,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22255"
+    },
+    {
+      "line": 3036,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.angerforge-axe",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227948"
+    },
+    {
+      "line": 3049,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227940"
+    },
+    {
+      "line": 3076,
+      "phase": "TBC_PHASE_ONE",
+      "key": "brd.tbc-jewelcrafting",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "21956"
+    },
+    {
+      "line": 3080,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227964"
+    },
+    {
+      "line": 3090,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227965"
+    },
+    {
+      "line": 3101,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227967"
+    },
+    {
+      "line": 3130,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22275"
+    },
+    {
+      "line": 3139,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227901"
+    },
+    {
+      "line": 3167,
+      "phase": "SOD_PHASE_THREE",
+      "key": "brd.sod-phase-three-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "220168"
+    },
+    {
+      "line": 3173,
+      "phase": "TBC_PHASE_FOUR",
+      "key": "brd.dark-iron-brewer",
+      "kind": "constructor",
+      "constructor": "n",
+      "identity": "28067"
+    },
+    {
+      "line": 3199,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22212"
+    },
+    {
+      "line": 3200,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22204"
+    },
+    {
+      "line": 3211,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227934"
+    },
+    {
+      "line": 3214,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227973"
+    },
+    {
+      "line": 3217,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227970"
+    },
+    {
+      "line": 3220,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227971"
+    },
+    {
+      "line": 3223,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227972"
+    },
+    {
+      "line": 3260,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22245"
+    },
+    {
+      "line": 3270,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227963"
+    },
+    {
+      "line": 3281,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227960"
+    },
+    {
+      "line": 3292,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227941"
+    },
+    {
+      "line": 3302,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227958"
+    },
+    {
+      "line": 3312,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227956"
+    },
+    {
+      "line": 3323,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227959"
+    },
+    {
+      "line": 3338,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227974"
+    },
+    {
+      "line": 3342,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22208"
+    },
+    {
+      "line": 3348,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227978"
+    },
+    {
+      "line": 3362,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22400"
+    },
+    {
+      "line": 3365,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22395"
+    },
+    {
+      "line": 3416,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227981"
+    },
+    {
+      "line": 3427,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227982"
+    },
+    {
+      "line": 3438,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227991"
+    },
+    {
+      "line": 3448,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227984"
+    },
+    {
+      "line": 3458,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227988"
+    },
+    {
+      "line": 3468,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227985"
+    },
+    {
+      "line": 3478,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227980"
+    },
+    {
+      "line": 3488,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227986"
+    },
+    {
+      "line": 3492,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22204"
+    },
+    {
+      "line": 3508,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227987"
+    },
+    {
+      "line": 3512,
+      "phase": "PHASE_FIVE",
+      "key": "brd.later-loot",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22207"
+    },
+    {
+      "line": 3526,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227983"
+    },
+    {
+      "line": 3533,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "brd.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228722"
+    }
+  ]
+}
