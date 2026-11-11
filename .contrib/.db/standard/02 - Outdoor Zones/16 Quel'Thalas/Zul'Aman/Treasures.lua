@@ -17,7 +17,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				coord = { 32.1, 31.6, MAP.MIDNIGHT.ZULAMAN },
 				questID = 94628,
 			}),
-			o(620323, {	-- Tablet of Jan'alal
+			o(620323, {	-- Tablet of Jan'alai
 				coord = { 55.1, 17.6, MAP.MIDNIGHT.ZULAMAN },
 				questID = 94631,
 			}),

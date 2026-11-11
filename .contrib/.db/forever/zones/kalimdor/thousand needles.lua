@@ -52,7 +52,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				sourceQuest = 3841,	-- An Orphan Looking For a Home
 				qg = 9238,	-- Quentin
 				coord = { 78.4, 74.7, MAP.THOUSAND_NEEDLES },
-				cost = { { "i", 3825, 2 } },	-- Elixir of Fortitude
+				cost = { { "i", 3825, 2 } },	-- Elixir of Lesser Fortitude
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),

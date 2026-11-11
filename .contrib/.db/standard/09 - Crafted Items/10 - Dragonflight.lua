@@ -995,7 +995,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 			FirstCraft(71421, 389546);	-- Wafting Writ
 			-- Profession Tool Enchantments
 			FirstCraft(71416, 389508);	-- Draconic Deftness
-			FirstCraft(71417, 389513);	-- Draconic Finess
+			FirstCraft(71417, 389513);	-- Draconic Finesse
 			FirstCraft(71418, 389519);	-- Draconic Inspiration
 			FirstCraft(71419, 389525);	-- Draconic Perception
 			FirstCraft(71420, 389530);	-- Draconic Resourcefulness
@@ -2948,7 +2948,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 			FirstCraft(77454, 419009, ADDED_10_2_0);	-- Verdant Combatant's Resilient Shoulderpads
 			FirstCraft(77453, 419008, ADDED_10_2_0);	-- Verdant Combatant's Resilient Trousers
 			FirstCraft(77456, 419012, ADDED_10_2_0);	-- Verdant Combatant's Resilient Wristwraps
-			-- Decayed Patter
+			-- Decayed Patterns
 			FirstCraft(71715, 375151);	-- Acidic Hailstone Treads
 			FirstCraft(71686, 375142);	-- Slimy Expulsion Boots
 			FirstCraft(71687, 375143);	-- Toxic Thorn Footwraps

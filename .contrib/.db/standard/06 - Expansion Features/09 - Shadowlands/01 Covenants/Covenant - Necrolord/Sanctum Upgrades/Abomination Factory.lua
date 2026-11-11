@@ -965,7 +965,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										i(182497),	-- Stitched Wraith's Armguards
 										i(182506),	-- Stitched Conjurer's Wristwraps
 										i(182515),	-- Stitched Tactician's Bracers
-										o(357771, {	-- Burried Cache (Ardenweald version)
+										o(357771, {	-- Buried Cache (Ardenweald version)
 											coords = {
 												{ 49.6, 76.2, ARDENWEALD },
 												{ 50.7, 75.6, ARDENWEALD },
@@ -986,7 +986,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 												i(183760),	-- Venthyr Spectacles
 											},
 										}),
-										o(357937, {	-- Burried Cache (Revendreth version)
+										o(357937, {	-- Buried Cache (Revendreth version)
 											groups = {
 												i(183826),	-- Big Floppy Hat
 												i(183789),	-- Six-League Pack
@@ -1046,7 +1046,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										_drop = { "g", "isDaily" },	-- Superior Parts is included from API
 										groups = {
 											i(183043),	-- Call Toothpick (QI!)
-											o_repeated(sharedData({	-- Burried Cache
+											o_repeated(sharedData({	-- Buried Cache
 												isDaily = true,
 											},{
 												o(357771, {

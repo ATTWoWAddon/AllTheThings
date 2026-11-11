@@ -66,7 +66,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 					}),
 				},
 			}),
-			o(617534, {	-- Gilded Arnillary Sphere
+			o(617534, {	-- Gilded Armillary Sphere
 				coord = { 44.6, 45.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 				questID = 93908,
 				groups = {

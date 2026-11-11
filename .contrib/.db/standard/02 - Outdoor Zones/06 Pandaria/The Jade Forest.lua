@@ -1635,10 +1635,10 @@ maproot(PANDARIA, {
 					coord = { 30.7, 52.2, THE_JADE_FOREST },
 					races = HORDE_ONLY,
 					groups = {
-						objective(1, {	-- 0/7 Greeen Branch
+						objective(1, {	-- 0/7 Green Branch
 							providers = {
-								{ "i",  76333 },	-- Greeen Branch (QI!)
-								{ "o", 209903 },	-- Greeen Branch
+								{ "i",  76333 },	-- Green Branch (QI!)
+								{ "o", 209903 },	-- Green Branch
 							},
 							coord = { 30.0, 52.3, THE_JADE_FOREST },
 						}),

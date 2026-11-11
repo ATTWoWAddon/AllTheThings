@@ -140,7 +140,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 				i(234427),	-- Gorillion Fork
 			},
 		}),
-		o(474396, {	-- Muff's Atuo-Locker
+		o(474396, {	-- Muff's Auto-Locker
 			coord = { 75.1, 23.0, UNDERMINE },
 			questID = 85115,
 			groups = {

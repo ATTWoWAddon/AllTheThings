@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures,
 					races = HORDE_ONLY,
 					coord = { 38.2, 63.2, FROSTWALL },
 				}),
-				o(231064, {	-- Lady Sena's Other Materials Sash
+				o(231064, {	-- Lady Sena's Other Materials Stash
 					questID = 34937,
 					races = HORDE_ONLY,
 					coord = { 74.7, 56.8, FROSTWALL },

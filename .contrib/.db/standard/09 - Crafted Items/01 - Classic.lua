@@ -2768,7 +2768,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 			}),
-			i(13757, {	-- Lightening Eel
+			i(13757, {	-- Lightning Eel
 				coord = { 60.6, 71.7, SILITHUS },
 				description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 				maps_disp = {
@@ -6675,7 +6675,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						-- #if ANYCLASSIC
-						o(105569, {	-- Siler Vein (The Barrens/Hillsbrad Foothills - Horde only)
+						o(105569, {	-- Silver Vein (The Barrens/Hillsbrad Foothills - Horde only)
 							-- Note: This node get removed at an unknown point between MOP and TWW.
 							coords = {
 								-- #if AFTER CATA

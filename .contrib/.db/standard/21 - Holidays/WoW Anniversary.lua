@@ -3037,7 +3037,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									coord = { 42.2, 72.0, TANARIS },
 									groups = { i(227790) },	-- Cool Guts (QI!)
 								}),
-								o(459368, {	-- Half-Burried Chest
+								o(459368, {	-- Half-Buried Chest
 									provider = { "i", 208092 },	-- Torch of Pyrreth
 									coord = { 45.0, 64.6, TANARIS },
 									groups = { i(227775) },	-- Golden Chalice (QI!)
@@ -3933,7 +3933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								84426,	-- Waterlogged Celebration Crate
 								84767,	-- Charred Celebration Crate
 								85523,	-- Mildewed Celebration Crate
-								84773,	-- Crystalized Celebration Crate
+								84773,	-- Crystallized Celebration Crate
 								84625,	-- Surprisingly Pristine Celebration Crate
 								84909,	-- Ghostly Celebration Crate
 							},
@@ -4049,13 +4049,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						header(HEADERS.Quest, 84773, {
 							i(228985),	-- Shiny Ransom Note
-							o(466512, {	-- Crystalized Celebration Crate
+							o(466512, {	-- Crystallized Celebration Crate
 								description = "Inside Oshu'gun's central chamber in Nagrand (Outland).",
 								coord = {35.3, 74.7, NAGRAND },
-								groups = { i(228983) },	-- Crystalized Celebration Crate (QS!)
+								groups = { i(228983) },	-- Crystallized Celebration Crate (QS!)
 							}),
-							q(84773, {	-- Crystalized Celebration Crate
-								provider = { "i", 228983 },	-- Crystalized Celebration Crate
+							q(84773, {	-- Crystallized Celebration Crate
+								provider = { "i", 228983 },	-- Crystallized Celebration Crate
 							}),
 						}),
 						header(HEADERS.Quest, 84625, {

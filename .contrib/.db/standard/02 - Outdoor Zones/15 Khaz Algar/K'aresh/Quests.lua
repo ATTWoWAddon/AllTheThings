@@ -2321,8 +2321,8 @@ maproot(KHAZ_ALGAR, KARESH, {
 					coord = { 48.0, 57.4, KARESH },
 					repeatable = true,
 					groups = {
-						o(528358, {	-- Uncharged Cyrstal
-							i(239446),	-- Uncharged Cyrstal (QI!)
+						o(528358, {	-- Uncharged Crystal
+							i(239446),	-- Uncharged Crystal (QI!)
 						}),
 						--
 						i(239607),	-- Charged Crystal (QI!) (Reward, required for the Warrant)

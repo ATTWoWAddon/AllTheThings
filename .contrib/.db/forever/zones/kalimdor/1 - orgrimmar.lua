@@ -1123,7 +1123,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2209,	-- Kris
 					923,	-- Longsword
 					2526,	-- Main Gauche
-					2208,	-- Poniad
+					2208,	-- Poniard
 					2534,	-- Rondel
 					2027,	-- Scimitar
 				}},
@@ -1877,7 +1877,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(15907),	-- Left-Handed Claw
 					i(923),	-- Longsword
 					i(2526),	-- Main Gauche
-					i(2208),	-- Poniad
+					i(2208),	-- Poniard
 					i(2534),	-- Rondel
 					i(2027),	-- Scimitar
 					i(15903),	-- Slicing Claw
@@ -2032,7 +2032,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(1197),	-- Giant Mace
 					i(2134),	-- Hand Axe
 					i(2488),	-- Gladius
-					i(853),	-- Hatched
+					i(853),	-- Hatchet
 					i(2491),	-- Large Axe
 					i(2480),	-- Large Club
 					i(852),	-- Mace

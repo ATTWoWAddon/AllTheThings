@@ -4,7 +4,7 @@
 
 maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 	n(TREASURES, {
-		o(433773, {	-- Buried Treasire
+		o(433773, {	-- Buried Treasure
 			coord = { 50.8, 52.4, THE_RINGING_DEEPS },
 			questID = 80488,
 			groups = {

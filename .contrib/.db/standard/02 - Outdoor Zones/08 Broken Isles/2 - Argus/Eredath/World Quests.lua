@@ -63,7 +63,7 @@ maproot(BROKEN_ISLES, ARGUS, EREDATH, {
 				o(272009, {	-- Preserved Crystal Collection
 					i(151555),	-- Crystallized Memory (QI!)
 				}),
-				o(272010, {	-- Crystalized Memory
+				o(272010, {	-- Crystallized Memory
 					i(151555),	-- Crystallized Memory (QI!)
 				}),
 			},

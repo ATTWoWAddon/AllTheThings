@@ -393,7 +393,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						n(265445),	-- Mender Amatory <Blackstar Legion>
 					}),
 					n(TREASURES, {
-						o(655270, {	-- Dominaar Storage Vessel
+						o(655270, {	-- Domanaar Storage Vessel
 							description = "Spawns randomly throughout the zone.",
 							sym = {{"select","itemID",278027},{"pop"}},	-- TODO: use source tech eventually
 						}),

@@ -1207,7 +1207,7 @@ instanceroot(229, {	-- Blackrock Spire
 						provider = { "o", 175970 },	-- Unforged Runic Breastplate
 					}),
 					i(12834),	-- Plans: Arcanite Champion (RECIPE!)
-					i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
+					i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 					i(12837),	-- Plans: Masterwork Stormhammer (RECIPE!)
 					i(18048),	-- Mastersmith's Hammer
 					i(13502),	-- Handcrafted Mastersmith Girdle

@@ -632,7 +632,7 @@ root(ROOTS.Housing, {
 			i(277149),	-- Crude Pet Cage (DECOR!)
 			i(277163),	-- Loyal Companion's Plinth (DECOR!)
 			i(276246, {	-- Mechanically Indistinguishable Pepe (DECOR!)
-				description = "You can buy this decor after you have interracted with Pepe that is sitting on the Bulletin Board.",
+				description = "You can buy this decor after you have interacted with Pepe that is sitting on the Bulletin Board.",
 				cost = { { "c", 3363, 10 } },	-- 10x Community Coupons
 				decorID = 25546,	-- This item is not linked in Wago data to the proper decorID
 			}),

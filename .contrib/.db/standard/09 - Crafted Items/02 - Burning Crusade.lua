@@ -865,7 +865,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "o", 182951 },	-- Pure Water (fishing school)
 					{ "o", 182956 },	-- School of Darter
 					{ "o", 182953 },	-- Sporefish School
-					{ "o", 182952 },	-- Steam Pump Floatsam
+					{ "o", 182952 },	-- Steam Pump Flotsam
 				},
 				maps_disp = {
 					NAGRAND,
@@ -882,7 +882,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "o", 182951 },	-- Pure Water (fishing school)
 					{ "o", 182956 },	-- School of Darter
 					{ "o", 182953 },	-- Sporefish School
-					{ "o", 182952 },	-- Steam Pump Floatsam
+					{ "o", 182952 },	-- Steam Pump Flotsam
 				},
 				maps_disp = {
 					NAGRAND,
@@ -924,7 +924,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "o", 182951 },	-- Pure Water (fishing school)
 					{ "o", 182956 },	-- School of Darter
 					{ "o", 182953 },	-- Sporefish School
-					{ "o", 182952 },	-- Steam Pump Floatsam
+					{ "o", 182952 },	-- Steam Pump Flotsam
 				},
 				maps_disp = {
 					NAGRAND,
@@ -944,7 +944,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "o", 182951 },	-- Pure Water (fishing school)
 					{ "o", 182956 },	-- School of Darter
 					{ "o", 182953 },	-- Sporefish School
-					{ "o", 182952 },	-- Steam Pump Floatsam
+					{ "o", 182952 },	-- Steam Pump Flotsam
 				},
 				maps_disp = {
 					NAGRAND,
@@ -965,7 +965,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "o", 182951 },	-- Pure Water (fishing school)
 					{ "o", 182956 },	-- School of Darter
 					{ "o", 182953 },	-- Sporefish School
-					{ "o", 182952 },	-- Steam Pump Floatsam
+					{ "o", 182952 },	-- Steam Pump Flotsam
 				},
 				maps_disp = {
 					NAGRAND,

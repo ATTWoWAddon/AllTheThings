@@ -958,7 +958,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2209,	-- Kris
 					923,	-- Longsword
 					2526,	-- Main Gauche
-					2208,	-- Poniad
+					2208,	-- Poniard
 					2534,	-- Rondel
 					2027,	-- Scimitar
 				}},

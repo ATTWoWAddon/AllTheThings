@@ -476,7 +476,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}))),
 				n(TREASURES, {
 					o(505248, {	-- Rune Dispenser
-						description = "Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
+						description = "Interact with it for a 10% chance for a free Crystallized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",
 						questID	= 89350,
 						minReputation = { FACTION_GALLAGIO, 2 },
 						isWeekly = true,

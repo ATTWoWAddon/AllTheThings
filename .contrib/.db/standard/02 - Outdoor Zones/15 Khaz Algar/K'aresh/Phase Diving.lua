@@ -430,7 +430,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 						coord = { 36.7, 58.1, KARESH_TAZAVESH },
 						questID = 91649,
 					}),
-					o(558108, {	-- Multiversal Energy Dynamics and the Murmurration Paradox
+					o(558108, {	-- Multiversal Energy Dynamics and the Murmuration Paradox
 						coord = { 49.6, 26.8, KARESH },
 						questID = 91643,
 					}),

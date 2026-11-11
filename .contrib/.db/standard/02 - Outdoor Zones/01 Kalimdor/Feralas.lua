@@ -2206,7 +2206,7 @@ maproot(KALIMDOR, FERALAS, {
 				lvl = 40,
 			}),
 			q(25387, {	-- To Camp Mojache
-				sourceQuest = 25329,	-- Might of the Stonoemaul
+				sourceQuest = 25329,	-- Might of the Stonemaul
 				qg = 39656,	-- Orhan Ogreblade
 				coord = { 51.9, 48.0, FERALAS },
 				timeline = { ADDED_4_0_3 },

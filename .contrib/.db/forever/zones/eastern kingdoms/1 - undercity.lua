@@ -960,7 +960,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2207,	-- Jambiya
 					2209,	-- Kris
 					923,	-- Longsword
-					2208,	-- Poniad
+					2208,	-- Poniard
 					2027,	-- Scimitar
 				}},
 			}),
