@@ -462,6 +462,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(2759),	-- Green Hills of Stranglethorn - Chapter IV
 				},
 			}),
+			q(79236, {	-- Cherry for Your Thoughts?
+				sourceQuest = 79235,	-- On the Lam
+				qg = 215643,	-- Tokal
+				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Cherry Grog
+						provider = { "i", 4600 },	-- Cherry Grog
+						cr = 2832,	-- Nixxrax Fillamug <Food and Drink>
+					}),
+				},
+			}),
 			q(202, {	-- Colonel Kurzen
 				sourceQuest = 574,	-- Special Forces
 				qg = 469,	-- Lieutenant Doren
@@ -1018,6 +1031,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(277235),	-- Soldier's Visor
 					i(277223),	-- Traveled Gloves
 				},
+			}),
+			q(79235, {	-- On the Lam
+				sourceQuest = 79229,	-- Highway Robbery
+				qg = 11438,	-- Bibbly F'utzbuckle
+				coord = { 62.3, 39.0, MAP.DESOLACE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
 			}),
 			q(190, {	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
 				sourceQuest = 583,	-- Welcome to the Jungle
@@ -1579,6 +1599,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 1492,	-- Gorlash
 					}),
 					i(11469),	-- Bloodband Bracers
+					i(270100, {	-- Freebooter's Armband
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(8553, {	-- The Captain's Cutlass
