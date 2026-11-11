@@ -1381,7 +1381,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qi = 281139,	-- Thunderhorn's Report
 				coord = { 48.5, 60.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = { UNDEAD, TAUREN },
+				races = { TAUREN },
 				lvl = 4,
 				groups = {
 					i(3443),	-- Ceremonial Tomahawk
