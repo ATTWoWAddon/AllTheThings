@@ -1,0 +1,477 @@
+{
+  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "owners": [
+    {
+      "line": 146,
+      "phase": "PHASE_ONE_DIREMAUL",
+      "key": "dire-maul.common",
+      "kind": "list",
+      "constructor": "inst",
+      "identity": "230"
+    },
+    {
+      "line": 406,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "dire-maul.recipe-quests",
+      "kind": "constructor",
+      "constructor": "q",
+      "identity": "7649"
+    },
+    {
+      "line": 437,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "dire-maul.recipe-quests",
+      "kind": "constructor",
+      "constructor": "q",
+      "identity": "7650"
+    },
+    {
+      "line": 464,
+      "phase": "PHASE_THREE_RECIPES",
+      "key": "dire-maul.recipe-quests",
+      "kind": "constructor",
+      "constructor": "q",
+      "identity": "7651"
+    },
+    {
+      "line": 1152,
+      "phase": "PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS",
+      "key": "dire-maul.dungeon-set-2",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "21982"
+    },
+    {
+      "line": 1364,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228051"
+    },
+    {
+      "line": 1383,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228052"
+    },
+    {
+      "line": 1393,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228054"
+    },
+    {
+      "line": 1405,
+      "phase": "PHASE_THREE_DMF_CARDS",
+      "key": "dire-maul.darkmoon-cards",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19268"
+    },
+    {
+      "line": 1412,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228050"
+    },
+    {
+      "line": 1423,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228053"
+    },
+    {
+      "line": 1443,
+      "phase": "PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS",
+      "key": "dire-maul.isalien",
+      "kind": "constructor",
+      "constructor": "n_conditional",
+      "identity": "16097"
+    },
+    {
+      "line": 1468,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228066"
+    },
+    {
+      "line": 1495,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228056"
+    },
+    {
+      "line": 1506,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228055"
+    },
+    {
+      "line": 1520,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228699"
+    },
+    {
+      "line": 1532,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228057"
+    },
+    {
+      "line": 1609,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228060"
+    },
+    {
+      "line": 1619,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228058"
+    },
+    {
+      "line": 1629,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228059"
+    },
+    {
+      "line": 1660,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228060"
+    },
+    {
+      "line": 1670,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228058"
+    },
+    {
+      "line": 1680,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228059"
+    },
+    {
+      "line": 1736,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228060"
+    },
+    {
+      "line": 1746,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228058"
+    },
+    {
+      "line": 1756,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228059"
+    },
+    {
+      "line": 1790,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228477"
+    },
+    {
+      "line": 1800,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "227910"
+    },
+    {
+      "line": 1812,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228319"
+    },
+    {
+      "line": 1826,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228276"
+    },
+    {
+      "line": 1841,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228301"
+    },
+    {
+      "line": 1874,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228068"
+    },
+    {
+      "line": 1892,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228064"
+    },
+    {
+      "line": 1904,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228062"
+    },
+    {
+      "line": 1925,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228478"
+    },
+    {
+      "line": 1936,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228480"
+    },
+    {
+      "line": 1950,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228479"
+    },
+    {
+      "line": 1961,
+      "phase": "PHASE_THREE_DMF_CARDS",
+      "key": "dire-maul.darkmoon-cards",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "19258"
+    },
+    {
+      "line": 1977,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228065"
+    },
+    {
+      "line": 1990,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228474"
+    },
+    {
+      "line": 2002,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228070"
+    },
+    {
+      "line": 2014,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228484"
+    },
+    {
+      "line": 2027,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228469"
+    },
+    {
+      "line": 2037,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228486"
+    },
+    {
+      "line": 2049,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228473"
+    },
+    {
+      "line": 2072,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228303"
+    },
+    {
+      "line": 2100,
+      "phase": "PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS",
+      "key": "dire-maul.dungeon-set-2",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22224"
+    },
+    {
+      "line": 2144,
+      "phase": "PHASE_FIVE_RECIPES",
+      "key": "dire-maul.later-recipes",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "22309"
+    },
+    {
+      "line": 2146,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228067"
+    },
+    {
+      "line": 2165,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228061"
+    },
+    {
+      "line": 2196,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228063"
+    },
+    {
+      "line": 2206,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228468"
+    },
+    {
+      "line": 2216,
+      "phase": "SOD_PHASE_SEVEN",
+      "key": "dire-maul.ironwood-branch",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "235787"
+    },
+    {
+      "line": 2237,
+      "phase": "TBC_PHASE_ONE",
+      "key": "dire-maul.tbc-pet-training",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "24345"
+    },
+    {
+      "line": 2261,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228475"
+    },
+    {
+      "line": 2297,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228472"
+    },
+    {
+      "line": 2309,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228471"
+    },
+    {
+      "line": 2322,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228069"
+    },
+    {
+      "line": 2332,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dire-maul.sod-phase-four-additions",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "228470"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
+  "retail": {
+    "dire-maul": "retail.lua"
+  },
+  "progression:main": {
+    "dire-maul": "classic.lua"
+  },
+  "anniversary:main": {
+    "dire-maul": "classic.lua"
+  },
+  "era:main": {
+    "dire-maul": "classic.lua"
+  },
+  "sod:main": {
+    "dire-maul": "sod.lua"
+  }
+}

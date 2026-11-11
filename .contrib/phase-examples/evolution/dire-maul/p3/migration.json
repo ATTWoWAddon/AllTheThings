@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-dire-maul",
+      "stage": "P3",
+      "sources": [
+        "Dire Maul.lua"
+      ]
+    }
+  ]
+}
