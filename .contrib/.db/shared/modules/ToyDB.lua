@@ -77,7 +77,7 @@ i(286203);	-- TODO: name (listed in Forever's Toy table)
 i(286573);	-- TODO: name (listed in Forever's Toy table)
 -- #if FOREVER
 -- Older items that Forever's Toy table lists as toys; gated so they stay items in the other flavours.
-i(5462);	-- Dartol's Rod of Transformation
+-- i(5462);	-- Dartol's Rod of Transformation (no longer a toy in Forever; the toy is the Replica, 276242)
 i(22728);	-- Steam Tonk Controller
 -- #endif
 

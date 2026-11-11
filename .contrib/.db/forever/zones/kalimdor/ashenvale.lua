@@ -553,7 +553,6 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					}),
 					objective(2, {	-- 0/1 Dartol's Rod of Transformation
 						provider = { "i", 5462 },	-- Dartol's Rod of Transformation
-						description = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
 					}),
 					i(5815),	-- Glacial Stone
 					i(17046),	-- Gutterblade
