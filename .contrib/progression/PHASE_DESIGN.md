@@ -1,12 +1,40 @@
 # Phase scheduling and legacy-authoring retirement
 
-**Design for maintainers · P1–P4.** The production migration awaits review. The linked comparison follows the complete current raid file through P4 and executes the shadow and progress paths for Nefarian. [Files to edit, comparison fixtures and generated outputs, by stage](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#migration-stages-by-file)
+**Start with the files you would edit.** This document is the production design. The separate [runnable example](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md) lets you try the Lua/JSON split today. It does not migrate ATT's live database.
+
+## Which Lua and JSON do I actually edit?
+
+For the first runnable walkthrough, use interface A. All of these files are in the [examples PR #2739](https://github.com/ATTWoWAddon/AllTheThings/pull/2739), not this design-only PR.
+
+| What you want to change | Exact file to edit | What you change there |
+|---|---|---|
+| Which item Nefarian drops | [`.contrib/phase-examples/input/sources.lua`](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/input/sources.lua) | Find `inst(742)`, then the original Nefarian or SoD's `d(201)`. Edit that source's `groups` list. A drop using its boss's opening needs no new JSON entry. |
+| When the whole SoD BWL raid opens | [`.contrib/phase-examples/schedule.json`](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/schedule.json) | Change `rules.blackwing-lair["raid.bwl.common"].sod`. The reworked difficulty follows it through `sameAs`. |
+| When one new drop opens independently | The **same two files** | Add `progressionKey` to that drop in Lua, then add the matching rule under `rules.blackwing-lair` in the schedule. |
+
+After changing the schedule, run `python .contrib/phase-examples/prepare.py`. It updates the expanded JSON under `input/`. **You do not write a separate release rule in every generated JSON file.** [Follow the complete edit → generate → inspect walkthrough](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md).
+
+The table follows interface A. To change the SoD BWL loot across the full A/B/C comparison, also edit [`.contrib/phase-examples/input/fragments/bwl.rework.lua`](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/input/fragments/bwl.rework.lua), option B's handwritten copy of the reworked loot. `prepare.py` generates JSON. Authors keep that fragment and the A/C source in sync.
+
+For the eventual production migration, the starting file is **`.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua`**. The [full-file walkthrough](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/README.md) shows that exact file at P1 and the proposed edits through P4. Those stage directories are comparison copies, not extra production files to maintain. The final production Lua/JSON interface remains under review.
+
+### Which of the other JSON files are mine?
+
+| Files you see in the examples | How to maintain them |
+|---|---|
+| `schedule.json` | **Handwritten release schedule.** This is the timing file in the editing table above. |
+| `input/profiles/`, `input/catalogs/`, `input/policies/`, `input/selection.json` | **Generated Parser inputs.** Run `prepare.py` and include its changes. |
+| `comparison.json` | **Handwritten comparison setup.** Edit only when changing the synthetic replays or option B's source-file slots. |
+| `evolution/blackwing-lair/nefarian/p4/profiles/` | **Frozen comparison inputs.** Keep fixed while changing today's schedule. |
+| Full profile JSON farther down this document | **Proposed production format.** These are schema references with additional metadata, not extra files required to edit the runnable example, and not the current generator's exact output. |
+
+Read the [BWL schedule below](#what-to-edit-for-a-release-change) first. Continue with [the P1–P4 file changes](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/README.md) when you want to review migration. The rest of this document is the detailed design reference.
 
 [Six dungeon and raid cases](#six-dungeon-and-raid-cases) · [Compare three Lua/JSON interfaces](#three-lua-and-json-authoring-options)
 
 ## What to edit for a release change
 
-In the executable example, the six instances share **one authored schedule**. Each independently scheduled occurrence keeps its key in Lua. The JSON records the ordinary timing once and names only flavor exceptions. At P2.2 authors add these rules, P3 consumes them for progress output, and P4 reuses them. [Editable schedule](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/schedule.json) · [Edit and regenerate](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md#change-one-opening)
+**Handwritten JSON · `.contrib/phase-examples/schedule.json`, inside `rules.blackwing-lair`.** This is the complete BWL rules object; the actual file also contains the other five instances and the milestone lists. Keep those other sections when editing BWL.
 
 ```json
 {
@@ -17,26 +45,26 @@ In the executable example, the six instances share **one authored schedule**. Ea
 }
 ```
 
-Moving the SoD opening takes one edit to `raid.bwl.common.sod`. The reworked raid follows its timing while keeping its own loot and prerequisites. Retail reads its ordinary source without a schedule. The sample generator prepares all three comparison formats from that schedule. The longer production profile examples below also specify metadata such as localized milestone names and numeric IDs for the production design.
+Moving the SoD opening takes one edit to `raid.bwl.common.sod`. The reworked raid follows its timing while keeping its own loot and prerequisites. `default` supplies timing to the declared phased flavors without an override. **Retail reads its ordinary source without this schedule.** SoD-only source selection belongs to Lua or the selected-source layout, so the timing default cannot introduce reworked loot into Retail.
+
+The proposed migration introduces these rules at P2.2, uses them for progress output at P3, and keeps them at P4. P1–P4 name implementation stages; `vanilla.5` names an in-game opening. [Full migration requirements](#1-required-destination-and-four-stages)
 
 ## Raid availability at a glance
 
-In Season of Discovery (SoD), players get the reworked Molten Core (MC) in the phase 4 raid batch and the reworked Blackwing Lair (BWL) in phase 5. The original 40-player routes stay disabled at every viewed milestone.
+In the BWL example, SoD opens the reworked raid at `vanilla.5`. The original 40-player route stays disabled at every viewed milestone.
 
 | Raid source | Phase 4 begins <br>`vanilla.4` | Phase 4 raids <br>`vanilla.4.raids` | Phase 5 onward <br>`vanilla.5` | Retail default |
 | --- | --- | --- | --- | --- |
-| Original MC | Disabled | Disabled | Disabled | Ordinary MC |
-| Reworked MC | Future | **Open** | Open | Absent |
 | Original BWL | Disabled | Disabled | Disabled | Ordinary BWL |
 | Reworked BWL | Future | Future | **Open** | Absent |
 
-An open raid can still contain a later drop with its own conditions. Inspection can show compatible original records as history while both original SoD routes stay disabled. Retail uses its ordinary client-compatible sources and layout without a phase profile. Progression, Anniversary and Era open their original BWL routes at their own `vanilla.3`. [Four-profile BWL comparison](#generated-linkage-and-visible-behavior-in-each-flavor)
+An open raid can still contain a later drop with its own conditions. Inspection can show compatible original records as history while the original SoD route stays disabled. Retail uses its ordinary client-compatible sources and layout without a phase profile. Progression, Anniversary and Era open their original BWL routes at their own `vanilla.3`. [Four-profile BWL comparison](#generated-linkage-and-visible-behavior-in-each-flavor)
 
 ### One boss, two loot routes
 
 Both Nefarians use encounter `1536`, but they drop different versions of Ashkandi. The loot and opening results are agreed. How authors divide the work between Lua and JSON remains open.
 
-**Candidate Lua · the two sources inside BWL**
+**Proposed production Lua · schematic excerpt inside BWL.** This shows the key placement, not a complete replacement for the raid file. [Runnable Lua to edit](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/input/sources.lua) · [Full production-file evolution](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/README.md)
 
 ```lua
 inst(742, {
@@ -57,7 +85,7 @@ inst(742, {
 })
 ```
 
-**Candidate JSON · matching entries inside the SoD profile's `content` object**
+**Expanded Parser-side JSON · matching `content` entries, shown for reference.** For the runnable example, `prepare.py` generates this shape in `input/profiles/sod/main.json`. Edit the compact `schedule.json` above to change these timings.
 
 ```json
 {
@@ -475,7 +503,7 @@ These facts come from [the existing BWL source](https://github.com/ATTWoWAddon/A
 | --- | --- | --- | --- |
 | **P1: freeze the existing raid** | Preserve the whole-instance `PHASE_THREE`, later book `PHASE_FIVE`, SoD branch/quest `SOD_PHASE_FIVE`, original/SoD timelines and all guards. Capture each reviewed context's actual alias results. | Existing legacy source `phase`/conditions; no new profile or `progressionScopes`. | Pin four independent source/config/runtime baselines. An unverified progression/Anniversary Vanilla target is a missing baseline, not permission to run the current TBC config and call it Vanilla. |
 | **P2.1: annotate Lua first** | Add common, original, later-book and SoD-rework keys and the SoD applicability annotation. Keep every P1 expression/guard; JSON may be absent. | **Exactly BWL's isolated P1-owned legacy bytes**; strip new fields, with no new applicability/timing filter. | Validate annotations/no leaks and report pending keys with source locations. Expected absent policy does not block this legacy build/commit. |
-| **P2.2: write JSON next** | Add/select the four full JSON documents below and validate their mapping in shadow. | **Still BWL's P1-owned legacy bytes**; no policy controls its official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
+| **P2.2: write JSON next** | Write the BWL rules once in the shared schedule and validate the expanded mappings in shadow. The full JSON below describes the proposed production contract. | **Still BWL's P1-owned legacy bytes**; no policy controls its official output. | Explicit policy/schema/identity errors fail shadow validation. Missing mappings and unknown book timing block P3 promotion, not the already valid P2.1 authoring step. |
 | **P3: switch production authority** | The annotated authoring form still exists for the independent legacy run. The BWL progress projection suppresses its old phase writers and uses only the explicitly selected policy; source applicability is validated before side effects/merging. | Matching `app.ProgressionProfile` plus route `progressionScopes`; no authored `phase`, `progressionKey`, or `flavors`. Intrinsic timelines and raw `u` remain. | Compare original vs SoD Nefarian/head/quest routes and later book conditions at every relevant boundary. Poison old phase values: new output must not change. Removing the child key must fail, not fall back to the old phase. |
 | **P4: remove the old path** | Delete old phase writers and flavor/season guards after verifying that the direct acquisition data yields the required layout in every affected context. Preserve actual data and intrinsic timelines, including removed old quests/raid history. | Same progress-authoritative behavior as approved P3; the old golden is a pinned snapshot. | Zero flavor/season conditionals in the owned construction path; no source/cache contamination or same-ID loot union. Unresolved structural/technical selection blocks P4. Prove repeated phase writers redundant before removing them. |
 
@@ -489,7 +517,11 @@ P2.1 does **not** require any of the files below. In this candidate add the four
 
 For each pending key, report its source location, enclosing source scope/variant, existing build context and whether profile selection is still pending. For this example the list includes `raid.bwl.common`, `raid.bwl.original`, `raid.bwl.draconic-for-dummies`, and `raid.bwl.sod20` where that source exists. Do not guess windows from the old phase or create an empty/unphased placeholder file. Malformed keys, invalid `flavors` arrays/placement, and leaked input fields remain errors even without JSON. Tests at this step cover valid annotation handling, legacy byte equality, no leaks and the pending list.
 
-### P2.2: write the complete JSON files
+<a id="p22-write-the-complete-json-files"></a>
+
+### P2.2: expanded production profile reference
+
+**Reference format, not an additional authoring step for the runnable examples.** Authors edit the shared `schedule.json`; the example generator creates the Parser inputs. The four full documents below describe a proposed production profile with identity, display and evidence metadata beyond what that generator currently supports. They are not copies you must create or keep synchronized to try the BWL example.
 
 The expanded production-design profiles below show all required root fields, the full **ordered** milestone catalog for each chosen profile, and every BWL key shown in the source walkthrough. There are no omitted fields, comments or ellipses inside the JSON. In the compact authoring proposal the schedule is written once at P2.2. P3 uses the reviewed policy as authority and P4 keeps it while removing legacy Lua timing. A change of authority is not a new JSON lifecycle property.
 
@@ -1230,7 +1262,7 @@ Do not copy fictional changes into BWL's real schedule. Section 3 contains one c
 | Remove an existing drop | The full `example.original-drop` entry is `{ "windows": [{ "from": "4", "until": "4.2" }] }`. | Available at `4`; unavailable from `4.2`, without deleting its data or clearing intrinsic `u`. |
 | Remove and reopen a boss | The full `example.new-boss` entry has `[{"from":"4.1","until":"4.2"},{"from":"4.10"}]`. | Active, then removed, then reopened. Its child routes still require the dungeon window. |
 
-For actual BWL, edit the selected flavor's `content` entry only after evidence review. The candidate SoD rework requires both the shared instance and reworked difficulty to open at `vanilla.5`: moving only the child earlier would not open the raid earlier. An earlier opening requires reviewing all applicable ancestors; a later child opening affects that child scope. Never change the entire `phases[key].order` to reschedule one source. The original remains disabled even if either opening moves. A genuinely new milestone needs a new stable key and a reviewed unique order first. The unresolved book cannot be changed to a guessed confirmed window simply to make a coverage/golden check pass.
+For the runnable BWL example, edit `rules.blackwing-lair` in `schedule.json` after evidence review and regenerate the Parser inputs. In the expanded production reference, the corresponding rule is the selected flavor's `content` entry. The candidate SoD rework requires both the shared instance and reworked difficulty to open at `vanilla.5`: moving only the child earlier would not open the raid earlier. An earlier opening requires reviewing all applicable ancestors; a later child opening affects that child scope. Never change the entire `phases[key].order` to reschedule one source. The original remains disabled even if either opening moves. A genuinely new milestone needs a new stable key and a reviewed unique order first. The unresolved book cannot be changed to a guessed confirmed window simply to make a coverage/golden check pass.
 
 ### Four explicit configuration selections
 
