@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-temple-of-ahnqiraj",
+      "stage": "P2.2",
+      "sources": [
+        "2.6 Temple of Ahn'Qiraj.lua"
+      ]
+    }
+  ]
+}

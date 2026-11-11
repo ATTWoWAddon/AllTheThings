@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
+  "retail": {
+    "temple-of-ahnqiraj": "retail.lua"
+  },
+  "progression:main": {
+    "temple-of-ahnqiraj": "classic.lua"
+  },
+  "anniversary:main": {
+    "temple-of-ahnqiraj": "classic.lua"
+  },
+  "era:main": {
+    "temple-of-ahnqiraj": "classic.lua"
+  },
+  "sod:main": {
+    "temple-of-ahnqiraj": "sod.lua"
+  }
+}

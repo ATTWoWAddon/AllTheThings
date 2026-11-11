@@ -1,0 +1,45 @@
+{
+  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "owners": [
+    {
+      "line": 34,
+      "phase": "PHASE_FIVE",
+      "key": "aq40.common",
+      "kind": "list",
+      "constructor": "inst",
+      "identity": "744"
+    },
+    {
+      "line": 1292,
+      "phase": "CATA_PHASE_ONE",
+      "key": "aq40.greater-scarab-coffer-key",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "76402"
+    },
+    {
+      "line": 1578,
+      "phase": "PHASE_SIX",
+      "key": "aq40.atiesh-base",
+      "kind": "record",
+      "constructor": "itemID",
+      "identity": "22734"
+    },
+    {
+      "line": 1601,
+      "phase": "SOD_PHASE_SIX",
+      "key": "aq40.reworked",
+      "kind": "constructor",
+      "constructor": "d",
+      "identity": "DIFFICULTY.SOD.PLAYER20"
+    },
+    {
+      "line": 2355,
+      "phase": "PHASE_SIX",
+      "key": "aq40.atiesh-base",
+      "kind": "record",
+      "constructor": "itemID",
+      "identity": "22734"
+    }
+  ]
+}
