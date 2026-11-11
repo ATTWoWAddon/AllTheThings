@@ -37,8 +37,23 @@ local function toLowerString(value)
 	---@diagnostic disable-next-line: undefined-field
 	return tostring(value):lower();
 end
+-- While a merchant window is open, sources listed under that merchant sort first, so tooltips show that
+-- vendor's cost when several vendors sell the same Thing (not cached: it only applies while the window is open)
+local function IsSourcedByMerchant(source, npcID)
+	if npcID then
+		local parent = source.parent
+		while parent do
+			if parent.npcID == npcID then return true end
+			parent = parent.parent
+		end
+	end
+end
 local function calculateAccessibility(source)
-	return source.AccessibilityScore or 10000000;
+	local score = source.AccessibilityScore or 10000000
+	if IsSourcedByMerchant(source, app.CurrentMerchantNPCID) then
+		score = score - 1000000000
+	end
+	return score
 end
 local function defaultComparison(a,b)
 	-- If either object doesn't exist

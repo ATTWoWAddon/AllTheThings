@@ -902,8 +902,33 @@ local function GetSearchResults(method, paramA, paramB, options)
 
 	return group, group.working
 end
+-- Track the NPC whose merchant window is open, so searches can prefer that vendor's sources (see lib/Sort.lua)
+do
+	local issecretvalue = app.WOWAPI.issecretvalue
+	app.AddEventRegistration("MERCHANT_SHOW", function()
+		local guid = UnitGUID("npc")
+		local npcID
+		if guid and not issecretvalue(guid) then
+			local guidType, _, _, _, _, id = ("-"):split(guid)
+			if guidType == "Creature" or guidType == "Vehicle" then npcID = tonumber(id) end
+		end
+		app.CurrentMerchantNPCID = npcID
+	end)
+	app.AddEventRegistration("MERCHANT_CLOSED", function()
+		app.CurrentMerchantNPCID = nil
+	end)
+end
 app.GetCachedSearchResults = function(method, paramA, paramB, options)
 	-- app.print("GCSR",paramA,paramB,options and options.IgnoreCache)
+	-- Results can differ by open merchant, so cache them per merchant
+	local merchantNPCID = app.CurrentMerchantNPCID
+	if merchantNPCID then
+		local key = (paramB and paramA..":"..paramB or paramA) .. "@" .. merchantNPCID
+		if options and options.IgnoreCache then
+			return GetSearchResults(method, paramA, paramB, options)
+		end
+		return app.GetCachedData(key, GetSearchResults, method, paramA, paramB, options);
+	end
 	if options then
 		if options.IgnoreCache then
 			return GetSearchResults(method, paramA, paramB, options)
