@@ -4049,6 +4049,42 @@ maproot(KALIMDOR, ASHENVALE, {
 					3919,	-- Withered Ancient
 				},
 			}),
+			i(16645, {	-- Shredder Operating Manual - Page 1
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16646, {	-- Shredder Operating Manual - Page 2
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16647, {	-- Shredder Operating Manual - Page 3
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16648, {	-- Shredder Operating Manual - Page 4
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16649, {	-- Shredder Operating Manual - Page 5
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16650, {	-- Shredder Operating Manual - Page 6
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16651, {	-- Shredder Operating Manual - Page 7
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16652, {	-- Shredder Operating Manual - Page 8
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16653, {	-- Shredder Operating Manual - Page 9
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16654, {	-- Shredder Operating Manual - Page 10
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16655, {	-- Shredder Operating Manual - Page 11
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(16656, {	-- Shredder Operating Manual - Page 12
+				timeline = { REMOVED_4_0_3 },
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
 				timeline = { REMOVED_2_0_1 },
