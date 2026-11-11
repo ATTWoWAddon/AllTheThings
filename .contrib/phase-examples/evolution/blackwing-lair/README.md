@@ -9,20 +9,26 @@ Each directory represents the same raid at a successive migration stage. The cop
 | Stage | Complete source at this step | Other files added or changed | Which result would ship |
 |---|---|---|---|
 | **P1** | [1.6 Blackwing Lair.lua](p1/1.6%20Blackwing%20Lair.lua) | The starting raid uses the existing phase writers. [Actual SoD database records](nefarian/p1/legacy-sod.md) | Legacy. |
-| **P2.1** | [1.6 Blackwing Lair.lua](p2.1/1.6%20Blackwing%20Lair.lua) | Add source keys, identify the SoD rework, and select [P2.1](p2.1/migration.json). Keep every old phase writer and guard. | Legacy. No policy file yet. |
+| **P2.1** | [1.6 Blackwing Lair.lua](p2.1/1.6%20Blackwing%20Lair.lua) | Add one shared original scope and the independent keys, identify the SoD rework, and select [P2.1](p2.1/migration.json). Keep every old phase writer and guard. | Legacy. No policy file yet. |
 | **P2.2** | [1.6 Blackwing Lair.lua](p2.2/1.6%20Blackwing%20Lair.lua) | First write the Blackwing Lair rules in [schedule.json](../../schedule.json). Advance the [control file](p2.2/migration.json). | Legacy. Validate the proposed progress result separately. |
 | **P3** | [1.6 Blackwing Lair.lua](p3/1.6%20Blackwing%20Lair.lua) | The only change from P2.2 is one value in [migration.json](p3/migration.json). P3 reads the same Lua and the same four rules in the shared schedule. | Progress after the group's promotion gates pass. Independently compile the old path for the legacy golden. |
 | **P4** | [Ordinary Classic source](p4/classic.lua) · [SoD source](p4/sod.lua) · [Ordinary Retail source](p4/retail.lua) | [Select a complete source before running Lua](p4/selection.json). Retire the old phase writers and flavor guards. Continue reading [the shared schedule](../../schedule.json). | Progress for phased contexts. Retail retains its ordinary, unphased output. |
 
 ## P1 → P2.1 · what changes in the Lua
 
-These three locations show how to read the [annotated full file](p2.1/1.6%20Blackwing%20Lair.lua). The annotations name an acquisition route. They leave the phase numbers and item IDs where they were.
+These four locations show how to read the [annotated full file](p2.1/1.6%20Blackwing%20Lair.lua). The annotations name an acquisition route. They leave the phase numbers and item IDs where they were.
 
 ```diff
 @@ Whole instance
  root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, {
      inst(742, {
 +        progressionKey = "raid.bwl.common",
+
+@@ Original records share one authoring-only scope
++            {
++                progressionKey = "raid.bwl.original",
++                groups = {
+     -- The complete original quest, header and boss records move inside here.
 
 @@ Draconic for Dummies retains its later opening
  applyclassicphase(PHASE_FIVE, o(180667, {
@@ -34,7 +40,9 @@ These three locations show how to read the [annotated full file](p2.1/1.6%20Blac
 +    progressionKey = "raid.bwl.sod20",
 ```
 
-The original bosses and quest routes gain `raid.bwl.original`. For the achievements, treasures and zone-drop headers, put their child arrays in explicit `groups` tables so the new key belongs to the header record. The old Lua shorthand accepts only numeric child entries inside a bare child list.
+The entire original section shares one `raid.bwl.original` declaration. Its quests, headers, bosses and ordinary drops inherit it; the book alone adds its own rule. The scope closes before the SoD rework begins. Headers retain their original child-list syntax. [See the complete scope hierarchy and inheritance rules](FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
+
+For the P2 legacy path, the comparison verifier removes the added metadata and transparent scope before comparing the resulting source byte for byte with P1. This preserves every old writer and condition. It is a bounded source projection for this example, not an implementation of the production migration or an independent legacy golden.
 
 ## P2.1 → P2.2 → P3 · what changes outside the Lua
 

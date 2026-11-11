@@ -63,7 +63,7 @@ d(201, { -- SoD's 20-player BWL
 }),
 ```
 
-**Write a key once at the parent; its bosses and drops inherit it automatically.** Neither drop needs its own key or JSON entry. A child key adds an independent opening or removal condition **AND** all parent conditions; it never replaces them. [See the inheritance table and the complete fragment that shares one declaration across parallel records](evolution/blackwing-lair/FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
+**Write a key once at the parent; its bosses and drops inherit it automatically.** Neither drop needs its own key or JSON entry. A child key adds an independent opening or removal condition **AND** all parent conditions; it never replaces them. [See the complete raid scope and inheritance rules](evolution/blackwing-lair/FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
 
 **File to edit for timing: [schedule.json](schedule.json), inside `rules.blackwing-lair`.** This is the complete BWL rules object, not a replacement for the whole JSON file:
 

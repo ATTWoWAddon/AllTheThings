@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Comparison tooling: full BWL snapshots plus a secondary focused Nefarian sample.
 
-The canonical P1 payload is the entire current production file. Full annotated
-snapshots add metadata and make three implicit child arrays explicit. Separately, the focused P2.2 shadow /
+The canonical P1 payload is the entire current production file. A BWL-specific
+legacy projection removes the anonymous authoring scope and annotations.
+Separately, the focused P2.2 shadow /
 P3 progress comparison suppresses old phase writers and executes its actual SoD
 records with external policy. Neither is an independent legacy golden rerun.
 """
@@ -74,6 +75,47 @@ def selected(text, sod):
     return "\n".join(result) + "\n"
 
 
+def select_full_source(text, version, classic, sod):
+    """Select only directives used by the full BWL snapshots; reject others."""
+    versions = {"WRATH": (3, 0, 0), "CATA": (4, 0, 3), "WOD": (6, 0, 0),
+                "LEGION": (7, 0, 0), "BFA": (8, 0, 0),
+                "4.0.3": (4, 0, 3), "7.2.0": (7, 2, 0)}
+    def condition(expr):
+        if expr == "SEASON_OF_DISCOVERY": return sod
+        if expr == "ANYCLASSIC": return classic
+        match = re.fullmatch(r'(BEFORE|AFTER) ([A-Z0-9.]+)', expr)
+        assert match and match.group(2) in versions, f"unknown directive: {expr}"
+        boundary = versions[match.group(2)]
+        return version < boundary if match.group(1) == "BEFORE" else version >= boundary
+    active, stack, result = True, [], []
+    for line in text.splitlines():
+        directive = re.fullmatch(r'\s*--\s*#(if|elseif|else|endif)\s*(.*?)\s*', line, re.IGNORECASE)
+        if not directive:
+            if active: result.append(line)
+            continue
+        command, expr = directive.group(1).lower(), directive.group(2).upper()
+        if command == "if":
+            matched = condition(expr)
+            stack.append([active, matched])
+            active = active and matched
+        elif command == "elseif":
+            assert stack
+            matched = condition(expr)
+            parent, used = stack[-1]
+            active = parent and not used and matched
+            stack[-1][1] = used or matched
+        elif command == "else":
+            assert stack and not expr
+            parent, used = stack[-1]
+            active = parent and not used
+            stack[-1][1] = True
+        else:
+            assert stack and not expr
+            active = stack.pop()[0]
+    assert not stack, "unclosed directive"
+    return "\n".join(result) + "\n"
+
+
 
 def canonical_payload(stage):
     path = HERE / stage / "1.6 Blackwing Lair.lua"
@@ -85,31 +127,43 @@ def canonical_payload(stage):
     return payload
 
 
-def undo_group_envelopes(lines):
-    # Only these three native header constructors originally accepted implicit
-    # child arrays. The new key needs a map with explicit groups. Remove exactly
-    # their inserted delimiters; do not strip arbitrary groups from the source.
-    result = list(lines)
-    for name in (b"ACHIEVEMENTS", b"TREASURES", b"ZONE_DROPS"):
-        openings = [index for index, line in enumerate(result)
-                    if line.rstrip(b"\r\n") == b"\t\t\tn(" + name + b", {"]
-        assert len(openings) == 1, f"expected one native header {name.decode()}"
-        start = openings[0]
-        indent = result[start][:len(result[start]) - len(result[start].lstrip())]
-        ending = b"\r\n" if result[start].endswith(b"\r\n") else b"\n"
-        assert result[start + 1] == indent + b"\tgroups = {" + ending, "missing explicit header groups"
-        del result[start + 1]
-        stop = next(index for index in range(start + 1, len(result))
-                    if result[index] == indent + b"})," + ending)
-        assert result[stop - 1] == indent + b"\t}," + ending, "wrong inserted header closing delimiter"
-        del result[stop - 1]
-    return result
-
-
 def expected_manifest(stage, names):
     return {"schema": 1, "defaultStage": "P1", "cohorts": [{
         "id": "comparison-fixture-blackwing-lair", "sources": names, "stage": stage,
     }]}
+
+
+def project_legacy_source(annotated):
+    """Undo this BWL fixture's annotations; this is not a general Parser projection."""
+    # Undo only the one inserted anonymous scope and the exact conditional
+    # split around the original/reworked boundary before comparing to P1.
+    ending = b"\r\n" if b"\r\n" in annotated else b"\n"
+    opening = ending.join((b'\t\t\t-- Anonymous authoring scope; projection keeps its children flat.', b'\t\t\t{', b'\t\t\t\tprogressionKey = "raid.bwl.original",', b'\t\t\t\tgroups = {', b''))
+    closing = ending.join((b'\t\t\t\t},', b'\t\t\t},', b''))
+    assert annotated.count(opening) == annotated.count(closing) == 1, "scope delimiters changed"
+    before, remainder = annotated.split(opening, 1)
+    body, after = remainder.split(closing, 1)
+    lines = body.splitlines(keepends=True)
+    assert all(not line.strip() or line.startswith(b'\t\t') for line in lines), "scope indentation changed"
+    body = b''.join(line[2:] if line.strip() else line for line in lines)
+    boundary_end = b'\t\t\t-- #endif' + ending
+    boundary_start = b'\t\t\t-- #if SEASON_OF_DISCOVERY' + ending
+    assert body.endswith(boundary_end) and after.startswith(boundary_start), "scope boundary changed"
+    without_scope = before + body[:-len(boundary_end)] + after[len(boundary_start):]
+    original_lines = []
+    annotations = []
+    for line in without_scope.splitlines(keepends=True):
+        match = ANNOTATION.fullmatch(line.decode().rstrip("\r\n"))
+        if match:
+            annotations.append(match.group(1))
+        else:
+            original_lines.append(line)
+    assert sorted(annotations) == sorted([
+        'progressionKey = "raid.bwl.common"',
+        'progressionKey = "raid.bwl.draconic-for-dummies"',
+        'progressionKey = "raid.bwl.sod20"', 'flavors = { "sod" }',
+    ]), "unexpected annotations in legacy projection"
+    return b"".join(original_lines)
 
 
 def check_canonical_authoring():
@@ -122,16 +176,10 @@ def check_canonical_authoring():
         assert newline and header.startswith(b"--") and name.encode() in header
         assert body == (SOURCE.parent / name).read_bytes(), f"full P1 differs from production: {name}"
     annotated = canonical_payload("p2.1")
-    original_lines = []
-    keys, applicability = set(), 0
-    for line in annotated.splitlines(keepends=True):
-        match = ANNOTATION.fullmatch(line.decode().rstrip("\r\n"))
-        if match:
-            if match.group(2): keys.add(match.group(2))
-            else: applicability += 1
-        else:
-            original_lines.append(line)
-    assert b"".join(undo_group_envelopes(original_lines)) == production, "full P2.1 changes more than annotations and three header envelopes"
+    assert project_legacy_source(annotated) == production, "BWL legacy projection differs from P1"
+    keys = set(re.findall(rb'progressionKey\s*=\s*"(raid\.bwl\.[a-z0-9.-]+)"', annotated))
+    keys = {key.decode() for key in keys}
+    applicability = annotated.count(b'flavors = { "sod" }')
     assert keys == {"raid.bwl.common", "raid.bwl.original", "raid.bwl.sod20", "raid.bwl.draconic-for-dummies"}
     assert applicability >= 1, "full annotated snapshot needs explicit SoD source applicability"
     for stage in ("p2.2", "p3"):
@@ -279,6 +327,19 @@ def main():
     with tempfile.TemporaryDirectory(prefix="bwl-evolution-") as temporary:
         temp = Path(temporary)
         run([args.lua, "-e", "assert(_VERSION == 'Lua 5.1')"])
+        # Check full source syntax after selecting each known branch. These are
+        # syntax checks, not execution by the production source loader.
+        full = [("p2.1", canonical_payload("p2.1"))] + [
+            (flavor, (HERE / "p4" / (flavor + ".lua")).read_bytes())
+            for flavor in ("classic", "sod", "retail")]
+        for name, raw in full:
+            for version in ((1, 15, 0), (3, 0, 0), (4, 0, 3), (6, 0, 0),
+                            (7, 0, 0), (7, 2, 0), (8, 0, 0), (12, 0, 0)):
+                for classic, sod in ((False, False), (True, False), (True, True)):
+                    selected_path = temp / "full-selected.lua"
+                    selected_path.write_text(select_full_source(raw.decode("utf-8"), version, classic, sod), encoding="utf-8")
+                    run([args.lua, "-e", "assert(loadfile(" + json.dumps(str(selected_path)) + "))"])
+        print("Full BWL selected source syntax passed with Lua 5.1")
         selected_sources = {}
         for stage in ("p1", "p2.1", "p2.2", "p3"):
             for sod in (False, True):

@@ -1,6 +1,6 @@
 # Blackwing Lair: the actual file changes, P1 → P4
 
-**File evolution comparison.** Read the `-` lines as the old file and the `+` lines as the new file. Every diff below comes from the complete saved files; no changed hunk is omitted. The large original file and the other P4 flavors are folded away so you can follow the SoD changes on this page.
+**File evolution comparison.** Read the `-` lines as the old file and the `+` lines as the new file. Every diff below comes from the complete saved files; no changed hunk is omitted. The full original source, the P2 indentation diff and the other P4 flavors are expandable so you can follow the structural changes on this page.
 
 These are the existing migration snapshots, not a claim that the production migration is installed. P1–P4 are implementation steps, not in-game release phases. The folder names identify saved versions of one source; they are not five production copies to keep updating.
 
@@ -8,7 +8,26 @@ These are the existing migration snapshots, not a claim that the production migr
 
 ## Write a key once; children inherit it
 
-**`progressionKey` is optional on children.** The example Parser already carries every ancestor's rule down through `groups` / `g`.
+**The complete raid files now declare `raid.bwl.original` once.** All original quests, headers, bosses and drops sit inside that shared scope. The book keeps its additional key. The SoD rework sits outside the original scope so the original route's disabled rule cannot disable the rework.
+
+| Complete source | Where the author writes keys |
+|---|---|
+| [P2.1](p2.1/1.6%20Blackwing%20Lair.lua), [P2.2](p2.2/1.6%20Blackwing%20Lair.lua), [P3](p3/1.6%20Blackwing%20Lair.lua) | Instance: `raid.bwl.common`; shared original scope: `raid.bwl.original`; book: `raid.bwl.draconic-for-dummies`; reworked difficulty: `raid.bwl.sod20`. These three Lua files are identical. |
+| [P4 Classic](p4/classic.lua) | Instance, shared original scope and book: three key declarations in the entire file. |
+| [P4 SoD](p4/sod.lua) | Instance, shared original scope, book and reworked difficulty: four declarations in the entire file. |
+| [P4 Retail](p4/retail.lua) | Same three annotations as ordinary Classic; Retail strips them and reads no phase schedule. |
+
+```mermaid
+flowchart TD
+    instance["inst(742): raid.bwl.common"] --> original["Authoring scope: raid.bwl.original"]
+    original --> quests["Original quests: inherit"]
+    original --> bosses["Original bosses and loot: inherit"]
+    original --> book["Book: adds raid.bwl.draconic-for-dummies"]
+    instance --> rework["SoD d(201): raid.bwl.sod20"]
+    rework --> newloot["Reworked bosses and loot: inherit"]
+```
+
+The shared scope is a Lua table with **only** `progressionKey` and `groups` (or `g`). It has no record ID. The example Parser accumulates its condition, expands its children into the surrounding list, and omits the scope table from output. It creates no extra visible header. A record with an ID, timeline or any other field is not this pure envelope; its own structure and conditions remain.
 
 | What you write on a child | Rules that apply to that child and its descendants |
 |---|---|
@@ -16,53 +35,11 @@ These are the existing migration snapshots, not a claim that the production migr
 | A different key | All inherited rules **AND** the new rule. |
 | The same key as an ancestor | The same rule once; the repeated annotation is unnecessary. |
 
-An independently timed boss or drop adds a condition. It cannot bypass a disabled ancestor. For the original BWL route in SoD, even an open book rule would leave the book unavailable through that route.
+For an original BWL boss, the effective rules are `raid.bwl.common` AND `raid.bwl.original`. The book adds `raid.bwl.draconic-for-dummies` to both. An open book rule cannot bypass the disabled original route in SoD. The reworked route inherits `raid.bwl.common` and adds `raid.bwl.sod20`; it never inherits `raid.bwl.original`.
 
-### Parallel bosses and drops can share one declaration too
+**No JSON changes are needed.** The [shared schedule](../../schedule.json) already contains these four rules. Authors maintain keys at rule boundaries; the Parser produces the accumulated `progressionScopes`. The existing [small B fragment](../../input/fragments/bwl.classic-original.lua) uses the same scope shape in a separate file. The full raid now writes it inline, so this change adds no fragment files or selection entries.
 
-In **option B**, [input/layout.lua](../../input/layout.lua) puts `group("bwl.classic-original")` under `inst(742)`, which declares `raid.bwl.common`. The selected fragment below declares `raid.bwl.original` once for its contents. The fragment envelope is removed during expansion; Nefarian and Treasures stay directly under the instance in the output.
-
-**Author-maintained P4 example input:** [input/fragments/bwl.classic-original.lua](../../input/fragments/bwl.classic-original.lua). This is the complete small comparison fragment, not the full native raid snapshot:
-
-```lua
--- Authoring input (B): flat original Nefarian and book routes for Classic-compatible contexts; edit only if choosing B.
--- P4: describes the source directly, after removing legacy phase writers and flavor guards.
-return {
-    progressionKey = "raid.bwl.original",  -- Original route; SoD explicitly disables this scope.
-    groups = {  -- Inherit the envelope's scope without generating an extra parent.
-        e(1536, {  -- Nefarian
-            crs = { 11583, 10162 },  -- NPC sources for this Nefarian occurrence.
-            groups = {
-                i(19003, {  -- Head of Nefarian
-                    races = { 1, 3, 4, 7 },  -- Original source race restriction.
-                }),
-                i(19364),  -- Ashkandi, Greatsword of the Brotherhood (original)
-            },
-        }),
-        {
-            headerID = -56,  -- Treasures
-            groups = {
-                o(180667, {  -- Draconic for Dummies
-                    progressionKey = "raid.bwl.draconic-for-dummies",  -- Independent book timing, even under a disabled ancestor.
-                    timeline = { "added 1.9.0.4937", "removed 4.0.3.13287" },
-                    groups = {
-                        i(21109),  -- Draconic for Dummies [Chapter VII]
-                    },
-                }),
-            },
-        },
-    },
-}
-```
-
-| Record | Effective rules in a phased context |
-|---|---|
-| Nefarian and both shown drops | `raid.bwl.common` AND `raid.bwl.original` |
-| Book and its item | `raid.bwl.common` AND `raid.bwl.original` AND `raid.bwl.draconic-for-dummies` |
-
-The [existing schedule](../../schedule.json) already has these rules. **Inheritance needs no additional JSON and no per-boss or per-item entries.** Authors write `progressionKey` only at rule boundaries; the Parser produces the accumulated `progressionScopes`. Retail ignores these phase keys and receives its selected ordinary records.
-
-The complete native snapshots below still annotate parallel original-route records individually because those records have no shared original-route parent. Their repetition is not a requirement for descendants. This example shows the existing B interface for avoiding that repetition without adding a visible parent; choosing it for the complete native migration remains an interface decision.
+**P2 compatibility:** the example verifier projects the full annotated P2 source back to legacy input by removing precisely the new annotations and envelope and undoing its indentation and guard split. The resulting bytes must match the complete P1 source, including its old phase writers. This verifies source preservation; it does not install that projection in the production Parser or replace the independent legacy golden required for production promotion.
 
 ## P1: the file before any change
 
@@ -1225,7 +1202,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 
 ## P1 → P2.1: edit the Lua first
 
-**Edit 1 — Lua.** Before: [1.6 Blackwing Lair.lua](p1/1.6%20Blackwing%20Lair.lua); after: [1.6 Blackwing Lair.lua](p2.1/1.6%20Blackwing%20Lair.lua). Add the rule names and SoD applicability, retaining the old phase calls and flavor guards. This is the complete diff, including the three child-list conversions to explicit `groups` tables:
+**Edit 1 — Lua.** Before: [1.6 Blackwing Lair.lua](p1/1.6%20Blackwing%20Lair.lua); after: [1.6 Blackwing Lair.lua](p2.1/1.6%20Blackwing%20Lair.lua). Add the rule names and SoD applicability, retaining the old phase calls and flavor guards. Original records now share one transparent scope; ordinary headers keep their existing child-list syntax. The contents are indented inside that scope. This is the complete diff:
+
+<details>
+<summary>Open every P1 → P2.1 Lua change, including the shared scope and its indentation</summary>
 
 ```diff
 --- .contrib/phase-examples/evolution/blackwing-lair/p1/1.6 Blackwing Lair.lua
@@ -1244,146 +1224,853 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
  		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
  		-- #if BEFORE WRATH
  		zoneTextAreaID = 2677,	-- Blackwing Lair
-@@ -63,7 +64,10 @@
+@@ -61,427 +62,438 @@
+ 		isRaid = true,
+ 		lvl = lvlsquish(50, 50, 25),
  		groups = {
- 			-- #if AFTER 7.2.0
- 			n(ACHIEVEMENTS, {
-+				progressionKey = "raid.bwl.original",
-+				groups = {
- 				ach(11742, {timeline = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
-+				},
- 			}),
- 			-- #endif
- 			n(QUESTS,
-@@ -72,11 +76,13 @@
- 			-- #endif
+-			-- #if AFTER 7.2.0
+-			n(ACHIEVEMENTS, {
+-				ach(11742, {timeline = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
+-			}),
+-			-- #endif
+-			n(QUESTS,
+-			-- #if SEASON_OF_DISCOVERY
+-			sharedData({ timeline = { REMOVED_1_15_4 } },
+-			-- #endif
++			-- Anonymous authoring scope; projection keeps its children flat.
  			{
- 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
-+					progressionKey = "raid.bwl.original",
- 					provider = { "i", 19003 },	-- Head of Nefarian
- 					maps = { STORMWIND_CITY },
- 					races = ALLIANCE_ONLY,
- 				}),
- 				q(7782, {	-- The Lord of Blackrock [A] (2/2)
-+					progressionKey = "raid.bwl.original",
- 					sourceQuest = 7781,	-- The Lord of Blackrock [A]
- 					qgs = {
- 						-- #if AFTER LEGION
-@@ -106,11 +112,13 @@
- 					},
- 				}),
- 				q(7783, {	-- The Lord of Blackrock [H] (1/2)
-+					progressionKey = "raid.bwl.original",
- 					provider = { "i", 19002 },	-- Head of Nefarian
- 					maps = { ORGRIMMAR },
- 					races = HORDE_ONLY,
- 				}),
- 				q(7784, {	-- The Lord of Blackrock [H] (2/2)
-+					progressionKey = "raid.bwl.original",
- 					sourceQuest = 7783,	-- The Lord of Blackrock [H]
- 					qgs = {
- 						-- #if AFTER BFA
-@@ -151,7 +159,10 @@
- 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
- 			-- #endif
- 			n(TREASURES, {
+-				q(7781, {	-- The Lord of Blackrock [A] (1/2)
+-					provider = { "i", 19003 },	-- Head of Nefarian
+-					maps = { STORMWIND_CITY },
+-					races = ALLIANCE_ONLY,
+-				}),
+-				q(7782, {	-- The Lord of Blackrock [A] (2/2)
+-					sourceQuest = 7781,	-- The Lord of Blackrock [A]
+-					qgs = {
+-						-- #if AFTER LEGION
+-						107574,	-- Anduin Wrynn
+-						1750,	-- Grand Admiral Jes-Tereth
+-						-- #elseif AFTER WRATH
+-						29611,	-- King Varian Wrynn <King of Stormwind>
 +				progressionKey = "raid.bwl.original",
 +				groups = {
- 				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
-+					progressionKey = "raid.bwl.draconic-for-dummies",
- 					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
- 					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
- 					coord = { 32.0, 42.9, BLACKWING_LAIR },
-@@ -159,8 +170,11 @@
- 						i(21109),	-- Draconic for Dummies [Chapter VII]
- 					},
- 				})),
-+				},
- 			}),
- 			n(ZONE_DROPS, {
-+				progressionKey = "raid.bwl.original",
-+				groups = {
- 				i(18562, {	-- Elementium Ingot
- 					crs = {
- 						13996,	-- Blackwing Technician
-@@ -222,8 +236,10 @@
- 					cr = 12460,	-- Death Talon Wyrmguard
- 				}),
- 				i(19183),	-- Hourglass Sand
-+				},
- 			}),
- 			e(1529, {	-- Razorgore the Untamed
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 12435,
- 				groups = {
- 					i(93036, {	-- Untamed Hatchling (PET!)
-@@ -247,6 +263,7 @@
++					-- #if AFTER 7.2.0
++					n(ACHIEVEMENTS, {
++						ach(11742, {timeline = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
++					}),
++					-- #endif
++					n(QUESTS,
++					-- #if SEASON_OF_DISCOVERY
++					sharedData({ timeline = { REMOVED_1_15_4 } },
++					-- #endif
++					{
++						q(7781, {	-- The Lord of Blackrock [A] (1/2)
++							provider = { "i", 19003 },	-- Head of Nefarian
++							maps = { STORMWIND_CITY },
++							races = ALLIANCE_ONLY,
++						}),
++						q(7782, {	-- The Lord of Blackrock [A] (2/2)
++							sourceQuest = 7781,	-- The Lord of Blackrock [A]
++							qgs = {
++								-- #if AFTER LEGION
++								107574,	-- Anduin Wrynn
++								1750,	-- Grand Admiral Jes-Tereth
++								-- #elseif AFTER WRATH
++								29611,	-- King Varian Wrynn <King of Stormwind>
++								-- #else
++								1748,	-- Highlord Bolvar Fordragon
++								-- #endif
++							},
++							coords = {
++								-- #if AFTER LEGION
++								{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
++								{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
++								-- #elseif AFTER WRATH
++								{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
++								-- #else
++								{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
++								-- #endif
++							},
++							races = ALLIANCE_ONLY,
++							groups = {
++								i(19366),	-- Master Dragonslayer's Orb
++								i(19383),	-- Master Dragonslayer's Medallion
++								i(19384),	-- Master Dragonslayer's Ring
++							},
++						}),
++						q(7783, {	-- The Lord of Blackrock [H] (1/2)
++							provider = { "i", 19002 },	-- Head of Nefarian
++							maps = { ORGRIMMAR },
++							races = HORDE_ONLY,
++						}),
++						q(7784, {	-- The Lord of Blackrock [H] (2/2)
++							sourceQuest = 7783,	-- The Lord of Blackrock [H]
++							qgs = {
++								-- #if AFTER BFA
++								3144,	-- Eitrigg
++								-- #elseif AFTER LEGION
++								14720,	-- High Overlord Saurfang
++								-- #elseif AFTER WOD
++								86832,	-- Vol'jin <Warchief>
++								-- #elseif AFTER CATA
++								39605,	-- Garrosh Hellscream <Warchief>
++								-- #else
++								4949,	-- Thrall <Warchief>
++								-- #endif
++							},
++							coords = {
++								-- #if AFTER BFA
++								{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
++								-- #elseif AFTER CATA
++								{ 48.6, 71.0, ORGRIMMAR },	-- Saurfang, Vol'jin, Garrosh
++								-- #else
++								{ 32.0, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
++								-- #endif
++							},
++							races = HORDE_ONLY,
++							groups = {
++								i(19383),	-- Master Dragonslayer's Medallion
++								i(19366),	-- Master Dragonslayer's Orb
++								i(19384),	-- Master Dragonslayer's Ring
++							},
++						}),
++					}
++					-- #if SEASON_OF_DISCOVERY
++					)
++					-- #endif
++					),
++					-- #if SEASON_OF_DISCOVERY
++					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
++					d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
++					-- #endif
++					n(TREASURES, {
++						applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
++							progressionKey = "raid.bwl.draconic-for-dummies",
++							timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
++							description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
++							coord = { 32.0, 42.9, BLACKWING_LAIR },
++							groups = {
++								i(21109),	-- Draconic for Dummies [Chapter VII]
++							},
++						})),
++					}),
++					n(ZONE_DROPS, {
++						i(18562, {	-- Elementium Ingot
++							crs = {
++								13996,	-- Blackwing Technician
++								14401,	-- Master Elemental Shaper Krixix
++							},
++						}),
++						i(19434, {	-- Band of Dark Dominion
++							crs = {
++								12457,	-- Blackwing Spellbinder
++								12459,	-- Blackwing Warlock
++								12461,	-- Death Talon Overseer
++							},
++						}),
++						i(19437, {	-- Boots of Pure Thought
++							crs = {
++								12467,	-- Death Talon Captain
++								12463,	-- Death Talon Flamescale
++								12464,	-- Death Talon Seether
++								12465,	-- Death Talon Wyrmkin
++							},
++						}),
++						i(19436, {	-- Cloak of Draconic Might
++							crs = {
++								12467,	-- Death Talon Captain
++								12463,	-- Death Talon Flamescale
++								12464,	-- Death Talon Seether
++								12465,	-- Death Talon Wyrmkin
++							},
++						}),
++						i(19362, {	-- Doom's Edge
++							crs = {
++								12457,	-- Blackwing Spellbinder
++								12459,	-- Blackwing Warlock
++								12461,	-- Death Talon Overseer
++							},
++						}),
++						i(19354, {	-- Draconic Avenger
++							cr = 12460,	-- Death Talon Wyrmguard
++						}),
++						i(19358, {	-- Draconic Maul
++							crs = {
++								12467,	-- Death Talon Captain
++								12463,	-- Death Talon Flamescale
++								12464,	-- Death Talon Seether
++								12465,	-- Death Talon Wyrmkin
++							},
++						}),
++						i(19435, {	-- Essence Gatherer
++							crs = {
++								12457,	-- Blackwing Spellbinder
++								12459,	-- Blackwing Warlock
++								12461,	-- Death Talon Overseer
++							},
++						}),
++						i(19439, {	-- Interlaced Shadow Jerkin
++							cr = 12460,	-- Death Talon Wyrmguard
++						}),
++						i(19438, {	-- Ringo's Blizzard Boots
++							cr = 12460,	-- Death Talon Wyrmguard
++						}),
++						i(19183),	-- Hourglass Sand
++					}),
++					e(1529, {	-- Razorgore the Untamed
++						creatureID = 12435,
++						groups = {
++							i(93036, {	-- Untamed Hatchling (PET!)
++								timeline = { ADDED_5_1_0 },
++							}),
++							i(19334),	-- The Untamed Blade
++							i(19335),	-- Spineshatter
++							i(19370),	-- Mantle of the Blackwing Cabal
++							i(16926),	-- Bindings of Transcendence
++							i(16911),	-- Bloodfang Bracers
++							i(16959),	-- Bracelets of Wrath
++							i(16943),	-- Bracers of Ten Storms
++							i(16935),	-- Dragonstalker's Bracers
++							i(16951),	-- Judgment Bindings
++							i(16934),	-- Nemesis Bracers
++							i(16918),	-- Netherwind Bindings
++							i(16904),	-- Stormrage Bracers
++							i(19369),	-- Gloves of Rapid Evolution
++							i(19336),	-- Arcane-Infused Gem
++							i(19337),	-- The Black Book
++						},
++					}),
++					e(1530, {	-- Vaelastrasz the Corrupt
++						creatureID = 13020,
++						groups = {
++							i(19346),	-- Dragonfang Blade
++							i(19348),	-- Red Dragonscale Protector
++							i(19372),	-- Helm of Endless Rage
++							i(19371),	-- Pendant of the Fallen Dragon
++							i(16944),	-- Belt of Ten Storms
++							i(16925),	-- Belt of Transcendence
++							i(16910),	-- Bloodfang Belt
++							i(16936),	-- Dragonstalker's Belt
++							i(16952),	-- Judgment Belt
++							i(16933),	-- Nemesis Belt
++							i(16818),	-- Netherwind Belt
++							i(16903),	-- Stormrage Belt
++							i(16960),	-- Waistband of Wrath
++							i(19339),	-- Mind Quickening Gem
++							i(19340),	-- Rune of Metamorphosis
++						},
++					}),
++					e(1531, {	-- Broodlord Lashlayer
++						creatureID = 12017,
++						groups = {
++							i(93037, {	-- Death Talon Whelpguard (PET!)
++								timeline = { ADDED_5_1_0 },
++							}),
++							i(19351),	-- Maladath, Runed Blade of the Black Flight
++							i(19350),	-- Heartstriker
++							i(19373),	-- Black Brood Pauldrons
++							i(19374),	-- Bracers of Arcane Accuracy
++							i(16906),	-- Bloodfang Boots
++							i(16919),	-- Boots of Transcendence
++							i(16941),	-- Dragonstalker's Greaves
++							i(16949),	-- Greaves of Ten Storms
++							i(16957),	-- Judgment Sabatons
++							i(16927),	-- Nemesis Boots
++							i(16912),	-- Netherwind Boots
++							i(16965),	-- Sabatons of Wrath
++							i(16898),	-- Stormrage Boots
++							i(19341),	-- Lifegiving Gem
++							i(19342),	-- Venomous Totem
++						},
++					}),
++					e(1532, {	-- Firemaw
++						creatureID = 11983,
++						groups = {
++							i(19353),	-- Drake Talon Cleaver
++							i(19355),	-- Shadow Wing Focus Staff
++							i(19365),	-- Claw of the Black Drake
++							i(19394),	-- Drake Talon Pauldrons
++							i(19398),	-- Cloak of Firemaw
++							i(19399),	-- Black Ash Robe
++							i(16907),	-- Bloodfang Gloves
++							i(16940),	-- Dragonstalker's Gauntlets
++							i(16928),	-- Nemesis Gloves
++							i(16948),	-- Gauntlets of Ten Storms
++							i(16964),	-- Gauntlets of Wrath
++							i(16920),	-- Handguards of Transcendence
++							i(16956),	-- Judgment Gauntlets
++							i(16913),	-- Netherwind Gloves
++							i(16899),	-- Stormrage Handguards
++							i(19400),	-- Firemaw's Clutch
++							i(19396),	-- Taut Dragonhide Belt
++							i(19402),	-- Legguards of the Fallen Crusader
++							i(19401),	-- Primalist's Linked Legguards
++							i(19397),	-- Ring of Blackrock
++							i(19344),	-- Natural Alignment Crystal
++							i(19395),	-- Rejuvenating Gem
++							i(19343),	-- Scrolls of Blinding Light
++						},
++					}),
++					n(14401, {	-- Master Elemental Shaper Krixix
++						-- #if BEFORE WRATH
++						description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
++						groups = { r(22967) },	-- Smelt Elementium
+ 						-- #else
+-						1748,	-- Highlord Bolvar Fordragon
++						i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
+ 						-- #endif
+-					},
+-					coords = {
+-						-- #if AFTER LEGION
+-						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
+-						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
+-						-- #elseif AFTER WRATH
+-						{ 85.6, 31.8, STORMWIND_CITY },	-- King Varian Wrynn <King of Stormwind>
+-						-- #else
+-						{ 78.0, 18.0, STORMWIND_CITY },	-- Highlord Bolvar Fordragon
+-						-- #endif
+-					},
+-					races = ALLIANCE_ONLY,
+-					groups = {
+-						i(19366),	-- Master Dragonslayer's Orb
+-						i(19383),	-- Master Dragonslayer's Medallion
+-						i(19384),	-- Master Dragonslayer's Ring
+-					},
+-				}),
+-				q(7783, {	-- The Lord of Blackrock [H] (1/2)
+-					provider = { "i", 19002 },	-- Head of Nefarian
+-					maps = { ORGRIMMAR },
+-					races = HORDE_ONLY,
+-				}),
+-				q(7784, {	-- The Lord of Blackrock [H] (2/2)
+-					sourceQuest = 7783,	-- The Lord of Blackrock [H]
+-					qgs = {
+-						-- #if AFTER BFA
+-						3144,	-- Eitrigg
+-						-- #elseif AFTER LEGION
+-						14720,	-- High Overlord Saurfang
+-						-- #elseif AFTER WOD
+-						86832,	-- Vol'jin <Warchief>
+-						-- #elseif AFTER CATA
+-						39605,	-- Garrosh Hellscream <Warchief>
+-						-- #else
+-						4949,	-- Thrall <Warchief>
+-						-- #endif
+-					},
+-					coords = {
+-						-- #if AFTER BFA
+-						{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
+-						-- #elseif AFTER CATA
+-						{ 48.6, 71.0, ORGRIMMAR },	-- Saurfang, Vol'jin, Garrosh
+-						-- #else
+-						{ 32.0, 37.8, ORGRIMMAR },	-- Thrall <Warchief>
+-						-- #endif
+-					},
+-					races = HORDE_ONLY,
+-					groups = {
+-						i(19383),	-- Master Dragonslayer's Medallion
+-						i(19366),	-- Master Dragonslayer's Orb
+-						i(19384),	-- Master Dragonslayer's Ring
+-					},
+-				}),
+-			}
+-			-- #if SEASON_OF_DISCOVERY
+-			)
+-			-- #endif
+-			),
+-			-- #if SEASON_OF_DISCOVERY
+-			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+-			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+-			-- #endif
+-			n(TREASURES, {
+-				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
+-					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+-					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+-					coord = { 32.0, 42.9, BLACKWING_LAIR },
+-					groups = {
+-						i(21109),	-- Draconic for Dummies [Chapter VII]
+-					},
+-				})),
+-			}),
+-			n(ZONE_DROPS, {
+-				i(18562, {	-- Elementium Ingot
+-					crs = {
+-						13996,	-- Blackwing Technician
+-						14401,	-- Master Elemental Shaper Krixix
+-					},
+-				}),
+-				i(19434, {	-- Band of Dark Dominion
+-					crs = {
+-						12457,	-- Blackwing Spellbinder
+-						12459,	-- Blackwing Warlock
+-						12461,	-- Death Talon Overseer
+-					},
+-				}),
+-				i(19437, {	-- Boots of Pure Thought
+-					crs = {
+-						12467,	-- Death Talon Captain
+-						12463,	-- Death Talon Flamescale
+-						12464,	-- Death Talon Seether
+-						12465,	-- Death Talon Wyrmkin
+-					},
+-				}),
+-				i(19436, {	-- Cloak of Draconic Might
+-					crs = {
+-						12467,	-- Death Talon Captain
+-						12463,	-- Death Talon Flamescale
+-						12464,	-- Death Talon Seether
+-						12465,	-- Death Talon Wyrmkin
+-					},
+-				}),
+-				i(19362, {	-- Doom's Edge
+-					crs = {
+-						12457,	-- Blackwing Spellbinder
+-						12459,	-- Blackwing Warlock
+-						12461,	-- Death Talon Overseer
+-					},
+-				}),
+-				i(19354, {	-- Draconic Avenger
+-					cr = 12460,	-- Death Talon Wyrmguard
+-				}),
+-				i(19358, {	-- Draconic Maul
+-					crs = {
+-						12467,	-- Death Talon Captain
+-						12463,	-- Death Talon Flamescale
+-						12464,	-- Death Talon Seether
+-						12465,	-- Death Talon Wyrmkin
+-					},
+-				}),
+-				i(19435, {	-- Essence Gatherer
+-					crs = {
+-						12457,	-- Blackwing Spellbinder
+-						12459,	-- Blackwing Warlock
+-						12461,	-- Death Talon Overseer
+-					},
+-				}),
+-				i(19439, {	-- Interlaced Shadow Jerkin
+-					cr = 12460,	-- Death Talon Wyrmguard
+-				}),
+-				i(19438, {	-- Ringo's Blizzard Boots
+-					cr = 12460,	-- Death Talon Wyrmguard
+-				}),
+-				i(19183),	-- Hourglass Sand
+-			}),
+-			e(1529, {	-- Razorgore the Untamed
+-				creatureID = 12435,
+-				groups = {
+-					i(93036, {	-- Untamed Hatchling (PET!)
+-						timeline = { ADDED_5_1_0 },
+-					}),
+-					i(19334),	-- The Untamed Blade
+-					i(19335),	-- Spineshatter
+-					i(19370),	-- Mantle of the Blackwing Cabal
+-					i(16926),	-- Bindings of Transcendence
+-					i(16911),	-- Bloodfang Bracers
+-					i(16959),	-- Bracelets of Wrath
+-					i(16943),	-- Bracers of Ten Storms
+-					i(16935),	-- Dragonstalker's Bracers
+-					i(16951),	-- Judgment Bindings
+-					i(16934),	-- Nemesis Bracers
+-					i(16918),	-- Netherwind Bindings
+-					i(16904),	-- Stormrage Bracers
+-					i(19369),	-- Gloves of Rapid Evolution
+-					i(19336),	-- Arcane-Infused Gem
+-					i(19337),	-- The Black Book
+-				},
+-			}),
+-			e(1530, {	-- Vaelastrasz the Corrupt
+-				creatureID = 13020,
+-				groups = {
+-					i(19346),	-- Dragonfang Blade
+-					i(19348),	-- Red Dragonscale Protector
+-					i(19372),	-- Helm of Endless Rage
+-					i(19371),	-- Pendant of the Fallen Dragon
+-					i(16944),	-- Belt of Ten Storms
+-					i(16925),	-- Belt of Transcendence
+-					i(16910),	-- Bloodfang Belt
+-					i(16936),	-- Dragonstalker's Belt
+-					i(16952),	-- Judgment Belt
+-					i(16933),	-- Nemesis Belt
+-					i(16818),	-- Netherwind Belt
+-					i(16903),	-- Stormrage Belt
+-					i(16960),	-- Waistband of Wrath
+-					i(19339),	-- Mind Quickening Gem
+-					i(19340),	-- Rune of Metamorphosis
+-				},
+-			}),
+-			e(1531, {	-- Broodlord Lashlayer
+-				creatureID = 12017,
+-				groups = {
+-					i(93037, {	-- Death Talon Whelpguard (PET!)
+-						timeline = { ADDED_5_1_0 },
+-					}),
+-					i(19351),	-- Maladath, Runed Blade of the Black Flight
+-					i(19350),	-- Heartstriker
+-					i(19373),	-- Black Brood Pauldrons
+-					i(19374),	-- Bracers of Arcane Accuracy
+-					i(16906),	-- Bloodfang Boots
+-					i(16919),	-- Boots of Transcendence
+-					i(16941),	-- Dragonstalker's Greaves
+-					i(16949),	-- Greaves of Ten Storms
+-					i(16957),	-- Judgment Sabatons
+-					i(16927),	-- Nemesis Boots
+-					i(16912),	-- Netherwind Boots
+-					i(16965),	-- Sabatons of Wrath
+-					i(16898),	-- Stormrage Boots
+-					i(19341),	-- Lifegiving Gem
+-					i(19342),	-- Venomous Totem
+-				},
+-			}),
+-			e(1532, {	-- Firemaw
+-				creatureID = 11983,
+-				groups = {
+-					i(19353),	-- Drake Talon Cleaver
+-					i(19355),	-- Shadow Wing Focus Staff
+-					i(19365),	-- Claw of the Black Drake
+-					i(19394),	-- Drake Talon Pauldrons
+-					i(19398),	-- Cloak of Firemaw
+-					i(19399),	-- Black Ash Robe
+-					i(16907),	-- Bloodfang Gloves
+-					i(16940),	-- Dragonstalker's Gauntlets
+-					i(16928),	-- Nemesis Gloves
+-					i(16948),	-- Gauntlets of Ten Storms
+-					i(16964),	-- Gauntlets of Wrath
+-					i(16920),	-- Handguards of Transcendence
+-					i(16956),	-- Judgment Gauntlets
+-					i(16913),	-- Netherwind Gloves
+-					i(16899),	-- Stormrage Handguards
+-					i(19400),	-- Firemaw's Clutch
+-					i(19396),	-- Taut Dragonhide Belt
+-					i(19402),	-- Legguards of the Fallen Crusader
+-					i(19401),	-- Primalist's Linked Legguards
+-					i(19397),	-- Ring of Blackrock
+-					i(19344),	-- Natural Alignment Crystal
+-					i(19395),	-- Rejuvenating Gem
+-					i(19343),	-- Scrolls of Blinding Light
+-				},
+-			}),
+-			n(14401, {	-- Master Elemental Shaper Krixix
+-				-- #if BEFORE WRATH
+-				description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+-				groups = { r(22967) },	-- Smelt Elementium
+-				-- #else
+-				i(44956),	-- Goblin's Guide to Elementium (RECIPE!)
+-				-- #endif
+-			}),
+-			e(1533, {	-- Ebonroc
+-				creatureID = 14601,
+-				groups = {
+-					i(19353),	-- Drake Talon Cleaver
+-					i(19355),	-- Shadow Wing Focus Staff
+-					i(19368),	-- Dragonbreath Hand Cannon
+-					i(19394),	-- Drake Talon Pauldrons
+-					i(19405),	-- Malfurion's Blessed Bulwark
+-					i(16907),	-- Bloodfang Gloves
+-					i(16940),	-- Dragonstalker's Gauntlets
+-					i(19407),	-- Ebony Flame Gloves
+-					i(16948),	-- Gauntlets of Ten Storms
+-					i(16964),	-- Gauntlets of Wrath
+-					i(16920),	-- Handguards of Transcendence
+-					i(16956),	-- Judgment Gauntlets
+-					i(16928),	-- Nemesis Gloves
+-					i(16913),	-- Netherwind Gloves
+-					i(16899),	-- Stormrage Handguards
+-					i(19396),	-- Taut Dragonhide Belt
+-					i(19403),	-- Band of Forced Concentration
+-					i(19397),	-- Ring of Blackrock
+-					i(19345),	-- Aegis of Preservation
+-					i(19406),	-- Drake Fang Talisman
+-					i(19395),	-- Rejuvenating Gem
+-				},
+-			}),
+-			e(1534, {	-- Flamegor
+-				creatureID = 11981,
+-				groups = {
+-					i(19353),	-- Drake Talon Cleaver
+-					i(19357),	-- Herald of Woe
+-					i(19355),	-- Shadow Wing Focus Staff
+-					i(19367),	-- Dragon's Touch
+-					i(19394),	-- Drake Talon Pauldrons
+-					i(19430),	-- Shroud of Pure Thought
+-					i(16907),	-- Bloodfang Gloves
+-					i(16940),	-- Dragonstalker's Gauntlets
+-					i(16948),	-- Gauntlets of Ten Storms
+-					i(16964),	-- Gauntlets of Wrath
+-					i(16920),	-- Handguards of Transcendence
+-					i(16956),	-- Judgment Gauntlets
+-					i(16928),	-- Nemesis Gloves
+-					i(16913),	-- Netherwind Gloves
+-					i(16899),	-- Stormrage Handguards
+-					i(19396),	-- Taut Dragonhide Belt
+-					i(19433),	-- Emberweave Leggings
+-					i(19432),	-- Circle of Applied Force
+-					i(19397),	-- Ring of Blackrock
+-					i(19395),	-- Rejuvenating Gem
+-					i(19431),	-- Styleen's Impeding Scarab
+-				},
+-			}),
+-			e(1535, {	-- Chromaggus
+-				creatureID = 14020,
+-				groups = {
+-					i(93038, {	-- Chrominius (PET!)
+-						timeline = { ADDED_5_1_0 },
+-					}),
+-					i(19352),	-- Chromatically Tempered Sword
+-					i(19347),	-- Claw of Chromaggus
+-					i(19361),	-- Ashjre'thul, Crossbow of Smiting
+-					i(19349),	-- Elementium Reinforced Bulwark
+-					i(16832),	-- Bloodfang Spaulders
+-					i(16937),	-- Dragonstalker's Spaulders
+-					i(16945),	-- Epaulets of Ten Storms
+-					i(16953),	-- Judgment Spaulders
+-					i(16932),	-- Nemesis Spaulders
+-					i(16917),	-- Netherwind Mantle
+-					i(16924),	-- Pauldrons of Transcendence
+-					i(16961),	-- Pauldrons of Wrath
+-					i(16902),	-- Stormrage Pauldrons
+-					i(19389),	-- Taut Dragonhide Shoulderpads
+-					i(19386),	-- Elementium Threaded Cloak
+-					i(19390),	-- Taut Dragonhide Gloves
+-					i(19388),	-- Angelista's Grasp
+-					i(19392),	-- Girdle of the Fallen Crusader
+-					i(19393),	-- Primalist's Linked Waistguard
+-					i(19385),	-- Empowered Leggings
+-					i(19387),	-- Chromatic Boots
+-					i(19391),	-- Shimmering Geta
+-					-- #if AFTER WOD
+-					prof(SKINNING, {
+-						i(12607, {	-- Brilliant Chromatic Scale
+-							description = "Can only be obtained from Chromaggus.",
+-						}),
+-					}),
++					}),
++					e(1533, {	-- Ebonroc
++						creatureID = 14601,
++						groups = {
++							i(19353),	-- Drake Talon Cleaver
++							i(19355),	-- Shadow Wing Focus Staff
++							i(19368),	-- Dragonbreath Hand Cannon
++							i(19394),	-- Drake Talon Pauldrons
++							i(19405),	-- Malfurion's Blessed Bulwark
++							i(16907),	-- Bloodfang Gloves
++							i(16940),	-- Dragonstalker's Gauntlets
++							i(19407),	-- Ebony Flame Gloves
++							i(16948),	-- Gauntlets of Ten Storms
++							i(16964),	-- Gauntlets of Wrath
++							i(16920),	-- Handguards of Transcendence
++							i(16956),	-- Judgment Gauntlets
++							i(16928),	-- Nemesis Gloves
++							i(16913),	-- Netherwind Gloves
++							i(16899),	-- Stormrage Handguards
++							i(19396),	-- Taut Dragonhide Belt
++							i(19403),	-- Band of Forced Concentration
++							i(19397),	-- Ring of Blackrock
++							i(19345),	-- Aegis of Preservation
++							i(19406),	-- Drake Fang Talisman
++							i(19395),	-- Rejuvenating Gem
++						},
++					}),
++					e(1534, {	-- Flamegor
++						creatureID = 11981,
++						groups = {
++							i(19353),	-- Drake Talon Cleaver
++							i(19357),	-- Herald of Woe
++							i(19355),	-- Shadow Wing Focus Staff
++							i(19367),	-- Dragon's Touch
++							i(19394),	-- Drake Talon Pauldrons
++							i(19430),	-- Shroud of Pure Thought
++							i(16907),	-- Bloodfang Gloves
++							i(16940),	-- Dragonstalker's Gauntlets
++							i(16948),	-- Gauntlets of Ten Storms
++							i(16964),	-- Gauntlets of Wrath
++							i(16920),	-- Handguards of Transcendence
++							i(16956),	-- Judgment Gauntlets
++							i(16928),	-- Nemesis Gloves
++							i(16913),	-- Netherwind Gloves
++							i(16899),	-- Stormrage Handguards
++							i(19396),	-- Taut Dragonhide Belt
++							i(19433),	-- Emberweave Leggings
++							i(19432),	-- Circle of Applied Force
++							i(19397),	-- Ring of Blackrock
++							i(19395),	-- Rejuvenating Gem
++							i(19431),	-- Styleen's Impeding Scarab
++						},
++					}),
++					e(1535, {	-- Chromaggus
++						creatureID = 14020,
++						groups = {
++							i(93038, {	-- Chrominius (PET!)
++								timeline = { ADDED_5_1_0 },
++							}),
++							i(19352),	-- Chromatically Tempered Sword
++							i(19347),	-- Claw of Chromaggus
++							i(19361),	-- Ashjre'thul, Crossbow of Smiting
++							i(19349),	-- Elementium Reinforced Bulwark
++							i(16832),	-- Bloodfang Spaulders
++							i(16937),	-- Dragonstalker's Spaulders
++							i(16945),	-- Epaulets of Ten Storms
++							i(16953),	-- Judgment Spaulders
++							i(16932),	-- Nemesis Spaulders
++							i(16917),	-- Netherwind Mantle
++							i(16924),	-- Pauldrons of Transcendence
++							i(16961),	-- Pauldrons of Wrath
++							i(16902),	-- Stormrage Pauldrons
++							i(19389),	-- Taut Dragonhide Shoulderpads
++							i(19386),	-- Elementium Threaded Cloak
++							i(19390),	-- Taut Dragonhide Gloves
++							i(19388),	-- Angelista's Grasp
++							i(19392),	-- Girdle of the Fallen Crusader
++							i(19393),	-- Primalist's Linked Waistguard
++							i(19385),	-- Empowered Leggings
++							i(19387),	-- Chromatic Boots
++							i(19391),	-- Shimmering Geta
++							-- #if AFTER WOD
++							prof(SKINNING, {
++								i(12607, {	-- Brilliant Chromatic Scale
++									description = "Can only be obtained from Chromaggus.",
++								}),
++							}),
++							-- #endif
++						},
++					}),
++					e(1536, {	-- Nefarian
++						crs = {
++							11583,	-- Nefarian
++							10162,	-- Lord Victor Nefarius
++						},
++						groups = {
++							ach(685),	-- Blackwing Lair
++							ach(5057, {	-- Blackwing Lair Guild Run
++								timeline = { ADDED_4_0_3 },
++							}),
++							-- #if ANYCLASSIC
++							ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
++								timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
++							}),
++							-- #endif
++							i(19003, {	-- Head of Nefarian (A)
++								races = ALLIANCE_ONLY,
++							}),
++							i(19002, {	-- Head of Nefarian (H)
++								races = HORDE_ONLY,
++							}),
++							i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
++								timeline = { ADDED_8_2_0 },
++								classes = { PALADIN },
++							}),
++							i(19364),	-- Ashkandi, Greatsword of the Brotherhood
++							i(19356),	-- Staff of the Shadow Flame
++							i(19363),	-- Crul'shorukh, Edge of Chaos
++							i(19360),	-- Lok'amir il Romathis
++							i(19375),	-- Mish'undare, Circlet of the Mind Flayer
++							-- #if AFTER WRATH
++							i(16908),	-- Bloodfang Hood
++							i(16939),	-- Dragonstalker's Helm
++							i(16921),	-- Halo of Transcendence
++							i(16963),	-- Helm of Wrath
++							i(16947),	-- Helmet of Ten Storms
++							i(16955),	-- Judgment Crown
++							i(16929),	-- Nemesis Skullcap
++							i(16914),	-- Netherwind Crown
++							i(16900),	-- Stormrage Cover
++							-- #endif
++							i(19377),	-- Prestor's Talisman of Connivery
++							i(19378),	-- Cloak of the Brood Lord
++							i(16905),	-- Bloodfang Chestpiece
++							i(16950),	-- Breastplate of Ten Storms
++							i(16966),	-- Breastplate of Wrath
++							i(16942),	-- Dragonstalker's Breastplate
++							i(16958),	-- Judgment Breastplate
++							i(16931),	-- Nemesis Robes
++							i(16916),	-- Netherwind Robes
++							i(16923),	-- Robes of Transcendence
++							i(16897),	-- Stormrage Chestguard
++							i(19380),	-- Therazane's Link
++							i(19381),	-- Boots of the Shadow Flame
++							i(19376),	-- Archimtiros' Ring of Reckoning
++							i(19382),	-- Pure Elementium Band
++							i(19379),	-- Neltharion's Tear
++							i(17964),	-- Gray Sack of Gems
++							i(17969),	-- Red Sack of Gems
++							-- #IF AFTER 4.0.3
++							i(17963),	-- Green Sack of Gems
++							i(17965),	-- Yellow Sack of Gems
++							-- #ENDIF
++						},
++					}),
++					-- #if SEASON_OF_DISCOVERY
++					})),
+ 					-- #endif
  				},
- 			}),
- 			e(1530, {	-- Vaelastrasz the Corrupt
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 13020,
- 				groups = {
- 					i(19346),	-- Dragonfang Blade
-@@ -267,6 +284,7 @@
- 				},
- 			}),
- 			e(1531, {	-- Broodlord Lashlayer
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 12017,
- 				groups = {
- 					i(93037, {	-- Death Talon Whelpguard (PET!)
-@@ -290,6 +308,7 @@
- 				},
- 			}),
- 			e(1532, {	-- Firemaw
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 11983,
- 				groups = {
- 					i(19353),	-- Drake Talon Cleaver
-@@ -318,6 +337,7 @@
- 				},
- 			}),
- 			n(14401, {	-- Master Elemental Shaper Krixix
-+				progressionKey = "raid.bwl.original",
- 				-- #if BEFORE WRATH
- 				description = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
- 				groups = { r(22967) },	-- Smelt Elementium
-@@ -326,6 +346,7 @@
- 				-- #endif
- 			}),
- 			e(1533, {	-- Ebonroc
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 14601,
- 				groups = {
- 					i(19353),	-- Drake Talon Cleaver
-@@ -352,6 +373,7 @@
- 				},
- 			}),
- 			e(1534, {	-- Flamegor
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 11981,
- 				groups = {
- 					i(19353),	-- Drake Talon Cleaver
-@@ -378,6 +400,7 @@
- 				},
- 			}),
- 			e(1535, {	-- Chromaggus
-+				progressionKey = "raid.bwl.original",
- 				creatureID = 14020,
- 				groups = {
- 					i(93038, {	-- Chrominius (PET!)
-@@ -415,6 +438,7 @@
- 				},
- 			}),
- 			e(1536, {	-- Nefarian
-+				progressionKey = "raid.bwl.original",
- 				crs = {
- 					11583,	-- Nefarian
- 					10162,	-- Lord Victor Nefarius
-@@ -482,6 +506,8 @@
+-			}),
+-			e(1536, {	-- Nefarian
+-				crs = {
+-					11583,	-- Nefarian
+-					10162,	-- Lord Victor Nefarius
+-				},
+-				groups = {
+-					ach(685),	-- Blackwing Lair
+-					ach(5057, {	-- Blackwing Lair Guild Run
+-						timeline = { ADDED_4_0_3 },
+-					}),
+-					-- #if ANYCLASSIC
+-					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
+-						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+-					}),
+-					-- #endif
+-					i(19003, {	-- Head of Nefarian (A)
+-						races = ALLIANCE_ONLY,
+-					}),
+-					i(19002, {	-- Head of Nefarian (H)
+-						races = HORDE_ONLY,
+-					}),
+-					i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
+-						timeline = { ADDED_8_2_0 },
+-						classes = { PALADIN },
+-					}),
+-					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
+-					i(19356),	-- Staff of the Shadow Flame
+-					i(19363),	-- Crul'shorukh, Edge of Chaos
+-					i(19360),	-- Lok'amir il Romathis
+-					i(19375),	-- Mish'undare, Circlet of the Mind Flayer
+-					-- #if AFTER WRATH
+-					i(16908),	-- Bloodfang Hood
+-					i(16939),	-- Dragonstalker's Helm
+-					i(16921),	-- Halo of Transcendence
+-					i(16963),	-- Helm of Wrath
+-					i(16947),	-- Helmet of Ten Storms
+-					i(16955),	-- Judgment Crown
+-					i(16929),	-- Nemesis Skullcap
+-					i(16914),	-- Netherwind Crown
+-					i(16900),	-- Stormrage Cover
+-					-- #endif
+-					i(19377),	-- Prestor's Talisman of Connivery
+-					i(19378),	-- Cloak of the Brood Lord
+-					i(16905),	-- Bloodfang Chestpiece
+-					i(16950),	-- Breastplate of Ten Storms
+-					i(16966),	-- Breastplate of Wrath
+-					i(16942),	-- Dragonstalker's Breastplate
+-					i(16958),	-- Judgment Breastplate
+-					i(16931),	-- Nemesis Robes
+-					i(16916),	-- Netherwind Robes
+-					i(16923),	-- Robes of Transcendence
+-					i(16897),	-- Stormrage Chestguard
+-					i(19380),	-- Therazane's Link
+-					i(19381),	-- Boots of the Shadow Flame
+-					i(19376),	-- Archimtiros' Ring of Reckoning
+-					i(19382),	-- Pure Elementium Band
+-					i(19379),	-- Neltharion's Tear
+-					i(17964),	-- Gray Sack of Gems
+-					i(17969),	-- Red Sack of Gems
+-					-- #IF AFTER 4.0.3
+-					i(17963),	-- Green Sack of Gems
+-					i(17965),	-- Yellow Sack of Gems
+-					-- #ENDIF
+-				},
+-			}),
++			},
  			-- #if SEASON_OF_DISCOVERY
- 			})),
+-			})),
  			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
 +				flavors = { "sod" },
 +				progressionKey = "raid.bwl.sod20",
@@ -1391,6 +2078,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
  				groups = {
  					n(QUESTS, applyclassicphase(SOD_PHASE_FIVE, {
 ```
+
+</details>
 
 **Edit 2 — new comparison control:** [p2.1/migration.json](p2.1/migration.json). This file names the proposed migration stage for this raid. It is a control example; the branch does not install this switch in production. The source path is relative to the snapshot folder.
 
@@ -1612,63 +2301,65 @@ Before is the same complete P3 file shown above; after is the complete SoD file.
  	inst(742, {	-- Blackwing Lair
  		progressionKey = "raid.bwl.common",
  		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
-@@ -71,9 +64,7 @@
- 			}),
- 			-- #endif
- 			n(QUESTS,
--			-- #if SEASON_OF_DISCOVERY
- 			sharedData({ timeline = { REMOVED_1_15_4 } },
--			-- #endif
- 			{
- 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
- 					progressionKey = "raid.bwl.original",
-@@ -150,18 +141,14 @@
- 					},
- 				}),
- 			}
--			-- #if SEASON_OF_DISCOVERY
- 			)
--			-- #endif
- 			),
--			-- #if SEASON_OF_DISCOVERY
- 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
- 			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
--			-- #endif
- 			n(TREASURES, {
- 				progressionKey = "raid.bwl.original",
- 				groups = {
--				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
-+				o(180667, {	-- Draconic for Dummies
- 					progressionKey = "raid.bwl.draconic-for-dummies",
- 					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
- 					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-@@ -169,7 +156,7 @@
- 					groups = {
- 						i(21109),	-- Draconic for Dummies [Chapter VII]
- 					},
--				})),
-+				}),
- 				},
- 			}),
- 			n(ZONE_DROPS, {
-@@ -448,11 +435,9 @@
- 					ach(5057, {	-- Blackwing Lair Guild Run
- 						timeline = { ADDED_4_0_3 },
+@@ -72,9 +65,7 @@
  					}),
--					-- #if ANYCLASSIC
- 					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
- 						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
- 					}),
+ 					-- #endif
+ 					n(QUESTS,
+-					-- #if SEASON_OF_DISCOVERY
+ 					sharedData({ timeline = { REMOVED_1_15_4 } },
 -					-- #endif
- 					i(19003, {	-- Head of Nefarian (A)
- 						races = ALLIANCE_ONLY,
+ 					{
+ 						q(7781, {	-- The Lord of Blackrock [A] (1/2)
+ 							provider = { "i", 19003 },	-- Head of Nefarian
+@@ -147,16 +138,12 @@
+ 							},
+ 						}),
+ 					}
+-					-- #if SEASON_OF_DISCOVERY
+ 					)
+-					-- #endif
+ 					),
+-					-- #if SEASON_OF_DISCOVERY
+ 					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+ 					d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+-					-- #endif
+ 					n(TREASURES, {
+-						applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
++						o(180667, {	-- Draconic for Dummies
+ 							progressionKey = "raid.bwl.draconic-for-dummies",
+ 							timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+ 							description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+@@ -164,7 +151,7 @@
+ 							groups = {
+ 								i(21109),	-- Draconic for Dummies [Chapter VII]
+ 							},
+-						})),
++						}),
  					}),
-@@ -503,14 +488,12 @@
- 					-- #ENDIF
+ 					n(ZONE_DROPS, {
+ 						i(18562, {	-- Elementium Ingot
+@@ -430,11 +417,9 @@
+ 							ach(5057, {	-- Blackwing Lair Guild Run
+ 								timeline = { ADDED_4_0_3 },
+ 							}),
+-							-- #if ANYCLASSIC
+ 							ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
+ 								timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+ 							}),
+-							-- #endif
+ 							i(19003, {	-- Head of Nefarian (A)
+ 								races = ALLIANCE_ONLY,
+ 							}),
+@@ -485,18 +470,14 @@
+ 							-- #ENDIF
+ 						},
+ 					}),
+-					-- #if SEASON_OF_DISCOVERY
+ 					})),
+-					-- #endif
  				},
- 			}),
+ 			},
 -			-- #if SEASON_OF_DISCOVERY
- 			})),
 -			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
 -				flavors = { "sod" },
 +			d(DIFFICULTY.SOD.PLAYER20, {
@@ -1680,7 +2371,7 @@ Before is the same complete P3 file shown above; after is the complete SoD file.
  						cl(DRUID, {
  
  						}),
-@@ -683,7 +666,7 @@
+@@ -669,7 +650,7 @@
  								i(230839),	-- Master Dragonslayer's Ring
  							},
  						}),
@@ -1689,7 +2380,7 @@ Before is the same complete P3 file shown above; after is the complete SoD file.
  					n(ZONE_DROPS, {
  						i(18562, {	-- Elementium Ingot
  							crs = {
-@@ -1164,8 +1147,7 @@
+@@ -1150,8 +1131,7 @@
  						},
  					}),
  				},
@@ -1760,63 +2451,65 @@ Before is the same complete P3 file shown above; after is the complete SoD file.
  	inst(742, {	-- Blackwing Lair
  		progressionKey = "raid.bwl.common",
  		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
-@@ -71,9 +32,6 @@
- 			}),
- 			-- #endif
- 			n(QUESTS,
--			-- #if SEASON_OF_DISCOVERY
--			sharedData({ timeline = { REMOVED_1_15_4 } },
--			-- #endif
- 			{
- 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
- 					progressionKey = "raid.bwl.original",
-@@ -150,18 +108,11 @@
- 					},
- 				}),
- 			}
--			-- #if SEASON_OF_DISCOVERY
--			)
--			-- #endif
- 			),
--			-- #if SEASON_OF_DISCOVERY
--			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
--			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
--			-- #endif
- 			n(TREASURES, {
- 				progressionKey = "raid.bwl.original",
- 				groups = {
--				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
-+				o(180667, {	-- Draconic for Dummies
- 					progressionKey = "raid.bwl.draconic-for-dummies",
- 					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
- 					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-@@ -169,7 +120,7 @@
- 					groups = {
- 						i(21109),	-- Draconic for Dummies [Chapter VII]
- 					},
--				})),
-+				}),
- 				},
- 			}),
- 			n(ZONE_DROPS, {
-@@ -448,11 +399,9 @@
- 					ach(5057, {	-- Blackwing Lair Guild Run
- 						timeline = { ADDED_4_0_3 },
+@@ -72,9 +33,6 @@
  					}),
--					-- #if ANYCLASSIC
- 					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
- 						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
- 					}),
+ 					-- #endif
+ 					n(QUESTS,
+-					-- #if SEASON_OF_DISCOVERY
+-					sharedData({ timeline = { REMOVED_1_15_4 } },
 -					-- #endif
- 					i(19003, {	-- Head of Nefarian (A)
- 						races = ALLIANCE_ONLY,
+ 					{
+ 						q(7781, {	-- The Lord of Blackrock [A] (1/2)
+ 							provider = { "i", 19003 },	-- Head of Nefarian
+@@ -147,16 +105,9 @@
+ 							},
+ 						}),
+ 					}
+-					-- #if SEASON_OF_DISCOVERY
+-					)
+-					-- #endif
+ 					),
+-					-- #if SEASON_OF_DISCOVERY
+-					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+-					d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+-					-- #endif
+ 					n(TREASURES, {
+-						applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
++						o(180667, {	-- Draconic for Dummies
+ 							progressionKey = "raid.bwl.draconic-for-dummies",
+ 							timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+ 							description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+@@ -164,7 +115,7 @@
+ 							groups = {
+ 								i(21109),	-- Draconic for Dummies [Chapter VII]
+ 							},
+-						})),
++						}),
  					}),
-@@ -503,669 +452,6 @@
- 					-- #ENDIF
+ 					n(ZONE_DROPS, {
+ 						i(18562, {	-- Elementium Ingot
+@@ -430,11 +381,9 @@
+ 							ach(5057, {	-- Blackwing Lair Guild Run
+ 								timeline = { ADDED_4_0_3 },
+ 							}),
+-							-- #if ANYCLASSIC
+ 							ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
+ 								timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+ 							}),
+-							-- #endif
+ 							i(19003, {	-- Head of Nefarian (A)
+ 								races = ALLIANCE_ONLY,
+ 							}),
+@@ -485,673 +434,8 @@
+ 							-- #ENDIF
+ 						},
+ 					}),
+-					-- #if SEASON_OF_DISCOVERY
+-					})),
+-					-- #endif
  				},
- 			}),
+ 			},
 -			-- #if SEASON_OF_DISCOVERY
--			})),
 -			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
 -				flavors = { "sod" },
 -				progressionKey = "raid.bwl.sod20",
@@ -2544,63 +3237,65 @@ Before is the same complete P3 file shown above; after is the complete SoD file.
  	inst(742, {	-- Blackwing Lair
  		progressionKey = "raid.bwl.common",
  		lore = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
-@@ -71,9 +32,6 @@
- 			}),
- 			-- #endif
- 			n(QUESTS,
--			-- #if SEASON_OF_DISCOVERY
--			sharedData({ timeline = { REMOVED_1_15_4 } },
--			-- #endif
- 			{
- 				q(7781, {	-- The Lord of Blackrock [A] (1/2)
- 					progressionKey = "raid.bwl.original",
-@@ -150,18 +108,11 @@
- 					},
- 				}),
- 			}
--			-- #if SEASON_OF_DISCOVERY
--			)
--			-- #endif
- 			),
--			-- #if SEASON_OF_DISCOVERY
--			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
--			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
--			-- #endif
- 			n(TREASURES, {
- 				progressionKey = "raid.bwl.original",
- 				groups = {
--				applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
-+				o(180667, {	-- Draconic for Dummies
- 					progressionKey = "raid.bwl.draconic-for-dummies",
- 					timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
- 					description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
-@@ -169,7 +120,7 @@
- 					groups = {
- 						i(21109),	-- Draconic for Dummies [Chapter VII]
- 					},
--				})),
-+				}),
- 				},
- 			}),
- 			n(ZONE_DROPS, {
-@@ -448,11 +399,6 @@
- 					ach(5057, {	-- Blackwing Lair Guild Run
- 						timeline = { ADDED_4_0_3 },
+@@ -72,9 +33,6 @@
  					}),
--					-- #if ANYCLASSIC
--					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
--						timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
--					}),
+ 					-- #endif
+ 					n(QUESTS,
+-					-- #if SEASON_OF_DISCOVERY
+-					sharedData({ timeline = { REMOVED_1_15_4 } },
 -					-- #endif
- 					i(19003, {	-- Head of Nefarian (A)
- 						races = ALLIANCE_ONLY,
+ 					{
+ 						q(7781, {	-- The Lord of Blackrock [A] (1/2)
+ 							provider = { "i", 19003 },	-- Head of Nefarian
+@@ -147,16 +105,9 @@
+ 							},
+ 						}),
+ 					}
+-					-- #if SEASON_OF_DISCOVERY
+-					)
+-					-- #endif
+ 					),
+-					-- #if SEASON_OF_DISCOVERY
+-					-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+-					d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf(REMOVED_1_15_4, {
+-					-- #endif
+ 					n(TREASURES, {
+-						applyclassicphase(PHASE_FIVE, o(180667, {	-- Draconic for Dummies
++						o(180667, {	-- Draconic for Dummies
+ 							progressionKey = "raid.bwl.draconic-for-dummies",
+ 							timeline = { ADDED_1_9_0, REMOVED_4_0_3 },
+ 							description = "Located in Blackwing Lair on one of the tables on the ramp after the first wyrmguard overseer pull.",
+@@ -164,7 +115,7 @@
+ 							groups = {
+ 								i(21109),	-- Draconic for Dummies [Chapter VII]
+ 							},
+-						})),
++						}),
  					}),
-@@ -503,669 +449,6 @@
- 					-- #ENDIF
+ 					n(ZONE_DROPS, {
+ 						i(18562, {	-- Elementium Ingot
+@@ -430,11 +381,6 @@
+ 							ach(5057, {	-- Blackwing Lair Guild Run
+ 								timeline = { ADDED_4_0_3 },
+ 							}),
+-							-- #if ANYCLASSIC
+-							ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
+-								timeline = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
+-							}),
+-							-- #endif
+ 							i(19003, {	-- Head of Nefarian (A)
+ 								races = ALLIANCE_ONLY,
+ 							}),
+@@ -485,673 +431,8 @@
+ 							-- #ENDIF
+ 						},
+ 					}),
+-					-- #if SEASON_OF_DISCOVERY
+-					})),
+-					-- #endif
  				},
- 			}),
+ 			},
 -			-- #if SEASON_OF_DISCOVERY
--			})),
 -			applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
 -				flavors = { "sod" },
 -				progressionKey = "raid.bwl.sod20",
