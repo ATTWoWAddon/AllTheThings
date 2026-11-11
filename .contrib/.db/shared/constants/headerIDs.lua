@@ -628,6 +628,7 @@ HeaderAssignments = {
 	["The Blood Moon"] = -628,
 	["The Construct Quarter"] = -79,
 	["The Crimson Halls"] = -370,
+	["The Dawn Waker"] = -820,
 	["The Ember Court"] = -182,
 	["The Everbloom"] = -113,
 	["The Four Horsemen"] = -350,
@@ -799,4 +800,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -820
+NextHeaderID = -821

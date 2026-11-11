@@ -1251,6 +1251,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 43.8, 24.0, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
 			}),
+			q(93161, {	-- The Ancient Hilt
+				description = "Use a Night Watchman's Torch in the Ruins of Ban'aethal to uncover the hilt.",
+				provider = { "o", 676059 },	-- Ancient Hilt
+				qi = 272313,	-- Ancient Hilt (PQI!)
+				coord = { 58.1, 24.1, MAP.ZEPHRAS_ISLE },
+			}),
 			q(93735, {	-- The Broken Construct
 				sourceQuest = 92700,	-- The Grand Skyseer
 				races = HORDE_ONLY,
