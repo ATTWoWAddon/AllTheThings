@@ -613,6 +613,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(275011),	-- Thud Hammer
 				},
 			}),
+			q(94929, {	-- Deliver the Second Shipment
+				qg = 5476,	-- Watcher Biggs
+				qi = 266891,	-- Shipment to Farholde Keep (PQI!)
+				coord = { 26.8, 59.8, MAP.SWAMP_OF_SORROWS },
+				races = ALLIANCE_ONLY,
+				lvl = 36,
+			}),
 			q(94893, {	-- Delivering Closure
 				sourceQuest = 94892,	-- Dying Wish
 				qg = 257558,	-- Demar Brant
