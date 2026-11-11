@@ -14,6 +14,11 @@ _.ItemConversionDB=
 {BonusCatalysts={[8118]=2,[8131]=2,[8132]=2,[8133]=2,[8136]=2,[8821]=3,[8822]=3,[8823]=3,[8824]=3,[8825]=3,[9222]=6,[9223]=6,[9224]=6,[9225]=6,[9226]=6,[9505]=7,[9506]=7,[9507]=7,[9508]=7,[9509]=7,[10376]=8,[10377]=8,[10378]=8,[10379]=8,[10380]=8,[10870]=9,[10871]=9,[10872]=9,[10873]=9,[10874]=9,[11964]=10,[11965]=10,[11966]=10,[11967]=10,[11998]=10,[12239]=11,[12240]=11,[12241]=11,[12242]=11,[12243]=11,[13577]=12,[13662]=13},BonusUpgradeTracks={[8118]=974,[8131]=972,[8132]=978,[8133]=973,[8136]=973,[8821]=973,[8822]=973,[8823]=978,[8824]=972,[8825]=974,[9222]=973,[9223]=973,[9224]=978,[9225]=972,[9226]=974,[9505]=973,[9506]=973,[9507]=972,[9508]=974,[9509]=978,[10376]=973,[10377]=973,[10378]=972,[10379]=974,[10380]=978,[10870]=973,[10871]=972,[10872]=973,[10873]=974,[10874]=978,[11964]=973,[11965]=972,[11966]=973,[11967]=974,[11998]=978,[12239]=973,[12240]=972,[12241]=973,[12242]=974,[12243]=978,[13577]=973,[13662]=973}}
 _.NonOPAQDB=
 {62038,62042,62047,62049,62048,62050}
+_.OnInitDB=
+{
+	RegionExclusiveCN = function(t)if t.u ~=1 and GetCVar("portal")~="CN" then	_.AssignFieldValue(t,"u",1)end	return t end,
+	RegionExclusiveEU = function(t)if t.u ~=1 and GetCVar("portal")~="EU" then	_.AssignFieldValue(t,"u",1)end	return t end
+}
 _.OnTooltipDB=
 {
 	ForAlteracValley = function(t,tooltipInfo)local reputation=t.reputation if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill the General",389,42000)addRepInfo(tooltipInfo,reputation,"Kill a Captain",125,42000)addRepInfo(tooltipInfo,reputation,"Kill a Commander",12,42000)addRepInfo(tooltipInfo,reputation,"Kill an Air Master",5,42000)if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill a Guard (To Revered)",5,21000)end	end	end,

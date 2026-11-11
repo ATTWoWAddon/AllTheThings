@@ -65582,12 +65582,12 @@ gach(61621,{u=2}),
 mnt(1263635,{b=1,itemID=262914,lvl=10,u=2})}})}})}}),
 h(-19,{
 i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})})}}),
-h(-68,{awp=120001,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(757)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(758)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(759)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+h(-68,{awp=120001,g={(_.OnInitDB.RegionExclusiveCN)(
+flt(110,{(_.OnInitDB.RegionExclusiveCN)(
+title(756)),(_.OnInitDB.RegionExclusiveCN)(
+title(757)),(_.OnInitDB.RegionExclusiveCN)(
+title(758)),(_.OnInitDB.RegionExclusiveCN)(
+title(759)),(_.OnInitDB.RegionExclusiveCN)(
 title(760))})),
 h(-58,{
 n(197711,{coords={

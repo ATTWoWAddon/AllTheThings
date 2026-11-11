@@ -3153,12 +3153,14 @@ regionExclusive = function(region, t)
 	if t.OnInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
 	end
-	t.OnInit = [[function(t)
-	if GetCVar("portal") ~= "]] .. region .. [[" then
-		t.u = 1;
+	local OnInitName = "RegionExclusive" .. region;
+	ExportDB.OnInitDB[OnInitName] = [[~function(t)
+	if t.u ~= 1 and GetCVar("portal") ~= "]] .. region .. [[" then
+		_.AssignFieldValue(t, "u", 1);
 	end
 	return t;
 end]];
+	t.OnInit = [[_.OnInitDB.]]..OnInitName..[[]];
 	return t;
 end
 --- Marks an object unavailable in a specific WoW portal region.
@@ -3170,12 +3172,14 @@ regionUnavailable = function(region, t)
 	if t.OnInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
 	end
-	t.OnInit = [[function(t)
-	if GetCVar("portal") == "]] .. region .. [[" then
-		t.u = 1;
+	local OnInitName = "RegionUnavailable" .. region;
+	ExportDB.OnInitDB[OnInitName] = [[~function(t)
+	if t.u ~= 1 and GetCVar("portal") == "]] .. region .. [[" then
+		_.AssignFieldValue(t, "u", 1);
 	end
 	return t;
 end]];
+	t.OnInit = [[_.OnInitDB.]]..OnInitName..[[]];
 	return t;
 end
 
