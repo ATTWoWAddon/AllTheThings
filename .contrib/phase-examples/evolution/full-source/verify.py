@@ -14,6 +14,12 @@ sys.path.insert(0, str(HERE.parent.parent))
 import prepare
 
 
+def snapshot_text(raw):
+    # Match read_p1/read_text newline handling before comparing source tokens.
+    # Raw P1 bytes and P2/P3 byte equality are checked separately below.
+    return raw.decode('utf-8').replace('\r\n', '\n')
+
+
 def select_all(text, version, flavor):
     versions = {'TBC':(2,0,1), 'WRATH':(3,0,2), 'CATA':(4,0,3), 'MOP':(5,0,0),
                 'WOD':(6,0,2), 'LEGION':(7,0,3), 'BFA':(8,0,0), 'SL':(9,0,0), 'MID':(12,0,0)}
@@ -114,6 +120,14 @@ def main():
     assert ordinary_tokens('return { { progressionKey = "x", groups = { { itemID = 1 } } } }') == ordinary_tokens('return { { itemID = 1 } }')
     assert ordinary_tokens('return { { progressionKey = "x", groups = { { i(1) } } } }') != ordinary_tokens('return { i(1) }'), 'A nested list must not disappear during preservation checks'
     assert ordinary_tokens('i(1, { timeline = { "added 1.0" } })') != ordinary_tokens('i(1, { timeline = { "added 2.0" } })'), 'Ordinary conditions must remain part of preservation checks'
+    # Windows checkout gives P2's byte reader CRLF, including inside long
+    # strings. Compare the same source layout as the normalized P1/P4 readers,
+    # while still rejecting an ordinary long-string content change.
+    lf_source = b'return { OnTooltip = [[first line\nsecond line]] }\n'
+    crlf_source = lf_source.replace(b'\n', b'\r\n')
+    expected_tokens = ordinary_tokens(snapshot_text(lf_source))
+    assert ordinary_tokens(snapshot_text(crlf_source)) == expected_tokens, 'Windows snapshot line endings changed source comparison'
+    assert ordinary_tokens(snapshot_text(crlf_source.replace(b'second line', b'changed line'))) != expected_tokens, 'Long-string content changes must still be detected'
     contexts = ('retail', 'classic', 'sod')
     versions = ((1,13,4),(1,13,5),(1,15,3),(2,0,1),(3,0,2),(4,0,3),(4,3,0),
                 (5,2,0),(6,0,2),(7,0,3),(7,3,2),(7,3,5),(8,0,0),(9,0,0),(10,1,7),(12,0,0))
@@ -136,7 +150,7 @@ def main():
             assert snapshots[0] == snapshots[1] == snapshots[2], f'P2/P3 source changed: {case}'
             # Read the file being delivered; do not prove preservation by
             # replaying the generator's own stored inverse edit operations.
-            actual_p2 = snapshots[0].decode('utf-8')
+            actual_p2 = snapshot_text(snapshots[0])
             for flavor in contexts:
                 if case == 'demon-fall-canyon' and flavor != 'sod': continue
                 snapshot = (HERE.parent/case/'p4'/(flavor+'.lua')).read_text(encoding='utf-8')
