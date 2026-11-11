@@ -67,7 +67,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
@@ -102,7 +102,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253097,	-- Mirda
 				coord = { 70.5, 70.4, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 13459, 3 } },	-- Greater Shadow Protection Potion
 				groups = {
@@ -113,7 +113,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			q(93678, {	-- Abridged Notes on Draenethyst
 				qg = 11863,	-- Azore Aldamort <The Argent Dawn>
 				coord = { 38.8, 27.2, MAP.DESOLACE },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Azore's Transcription
@@ -322,7 +322,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5396,	-- Captain Pentigast
 				coord = { 66.4, 10.8, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, NEUTRAL },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
@@ -649,7 +649,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
 				coord = { 35.6, 92.0, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 10008, 1 } },	-- White Bandit Mask
 				groups = {
@@ -766,7 +766,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 93188,	-- Return to Orgrul
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn resurrected
@@ -814,7 +814,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253166,	-- Talra
 				coord = { 34.5, 87.0, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				cost = { { "i", 5739, 1 } },	-- Barbaric Harness
 				groups = {
@@ -832,7 +832,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253096,	-- Halea
 				coord = { 35.5, 92.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 				cost = { { "i", 11135, 3 } },	-- Greater Mystic Essence
@@ -1121,7 +1121,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {

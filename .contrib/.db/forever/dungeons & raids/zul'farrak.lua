@@ -143,6 +143,9 @@ instanceroot(241, {	-- Zul'Farrak
 					objective(1, {	-- 0/1 Tiara of the Deep
 						provider = { "i", 9234 },	-- Tiara of the Deep
 					}),
+					i(270098, {	-- Dank Shoulderpads
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(9527),	-- Spellshifter Rod
 					i(9531),	-- Gemshale Pauldrons
 				},
