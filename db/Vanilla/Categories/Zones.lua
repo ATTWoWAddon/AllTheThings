@@ -1936,7 +1936,19 @@ r(7828,{itemID=6369,learnedAt=175,q=1,requireSkill=185})}})}),
 h(-63,{
 s(156264,1351,{coords={
 [1440]={{75.8,73.6},{77.4,75.4}}},crs={3808},description="This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",f=4,loc=43,lvl=23,q=2,rwp=40003}),
-r(13617,{crs={3834,3919},itemID=11151,learnedAt=145,q=2,requireSkill=333,rwp=40300})})}}),
+r(13617,{crs={3834,3919},itemID=11151,learnedAt=145,q=2,requireSkill=333,rwp=40300}),
+i(16645,{q=1,rwp=40003}),
+i(16646,{q=1,rwp=40003}),
+i(16647,{q=1,rwp=40003}),
+i(16648,{q=1,rwp=40003}),
+i(16649,{q=1,rwp=40003}),
+i(16650,{q=1,rwp=40003}),
+i(16651,{q=1,rwp=40003}),
+i(16652,{q=1,rwp=40003}),
+i(16653,{q=1,rwp=40003}),
+i(16654,{q=1,rwp=40003}),
+i(16655,{q=1,rwp=40003}),
+i(16656,{q=1,rwp=40003})})}}),
 m(1447,{icon=236714,lore="A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",g={
 h(-12,{
 ach(852,{
@@ -4694,7 +4706,7 @@ qo(1,{crs={2962,2963},providers={{"i",4751}}})}}),
 q(746,{coords={
 [1412]={{47.5,60.2}}},lvl=6,qgs={2993},r=1,rwp=40003,g={
 qo(1,{coords={
-[1412]={{34,46}}},cost={{"i",4702,1}},crs={2989,2990},providers={{"i",4703}}}),
+[1412]={{34,46}}},cost={{"i",4702,5}},crs={2989,2990},providers={{"i",4703},{"o",1685}}}),
 s(157995,4969,{b=1,f=6,loc=43,q=1}),
 s(157996,4970,{b=1,f=5,loc=46,q=1})}}),
 q(5655,{altQuests={5652,5654,5656,5657},c={5},coords={

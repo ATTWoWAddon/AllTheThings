@@ -662,57 +662,6 @@ maproot(KALIMDOR, DARNASSUS, {
 					i(9601),	-- Cushioned Boots
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
-				qg = 211188,	-- Maethra Slagheart
-				coord = { 38.2, 89.2, DARNASSUS },
-				timeline = { REMOVED_2_0_1 },
-				maps = { ASHENVALE },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 17,
-				groups = {
-					objective(1, {	-- 0/7 Forsaken Herbalist slain
-						provider = { "n", 3733 },	-- Forsaken Herbalist
-						coord = { 32.0, 21.8, ASHENVALE },
-					}),
-					objective(2, {	-- 0/9 Forsaken Seeker slain
-						provider = { "n", 3732 },	-- Forsaken Seeker
-						coord = { 31.6, 23.8, ASHENVALE },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
-				description = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
-				sourceQuest = 78192,	-- Secrets of the Light (1/2)
-				qg = 211188,	-- Maethra Slagheart
-				coord = { 38.2, 89.2, DARNASSUS },
-				timeline = { REMOVED_2_0_1 },
-				maps = { STORMWIND_CITY },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 17,
-				groups = {
-					recipe(424035, {	-- Secrets of the Light
-						classes = { PRIEST },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
-				qg = 4092,	-- Lariia <Priest Trainer>
-				coord = { 40.0, 87.4, DARNASSUS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PRIEST },
-				races = { NIGHTELF },
-				lvl = 5,
-				groups = {
-					objective(1, {	-- Pray over the Supplicant
-						provider = { "n", 215095 },	-- Supplicant
-						description = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
-					}),
-				},
-			})),
-			-- #endif
 			q(1692, {	-- Smith Mathiel
 				sourceQuest = 1686,	-- The Shade of Elura
 				qg = 4088,	-- Elanaria
@@ -1298,10 +1247,6 @@ maproot(KALIMDOR, DARNASSUS, {
 					i(6275, {	-- Pattern: Greater Adept's Robe (RECIPE!)
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
-					applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
-					-- #endif
 					i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
 						isLimited = true,
 					}),
@@ -1660,24 +1605,6 @@ maproot(KALIMDOR, DARNASSUS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
-				description = "Use the musk and tame a Deer and then bring it to Relaeron.",
-				coord = { 39.8, 9.2, DARNASSUS },
-				cost = { { "i", 208607, 1 } },	-- 1x Deer Musk
-				maps = { TELDRASSIL },
-				crs = { 883 },	-- Deer
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(206032, {	-- Rune of Carve
-						classes = { HUNTER },
-						groups = {
-							recipe(425758),	-- Engrave Gloves - Carve
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(52643, {	-- Rissa Halding <Mining Supplies>
 				coord = { 50.25, 32.6, DARNASSUS },
 				races = ALLIANCE_ONLY,

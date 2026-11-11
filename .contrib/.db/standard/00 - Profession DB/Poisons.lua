@@ -1,14 +1,5 @@
 local i = GetRecipeHelperForProfession(POISONS);
 
--- #if SEASON_OF_DISCOVERY
-------------------
--- PATCH 1.15.2 --
-------------------
---- TRAINER ---
-i(0, 439503);	-- Atrophic Poison
-i(0, 439505);	-- Numbing Poison
-i(0, 439500);	-- Sebacious Poison
--- #endif
 
 -----------------
 --   CLASSIC   --

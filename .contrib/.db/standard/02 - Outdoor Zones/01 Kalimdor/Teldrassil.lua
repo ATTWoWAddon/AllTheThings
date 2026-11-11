@@ -118,42 +118,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 							-- #endif
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77568, {	-- A Hunter's Strength
-						qg = 3596,	-- Ayanna Everstride <Hunter Trainer>
-						coord = { 58.6, 40.6, TELDRASSIL },
-						timeline = { REMOVED_2_0_1 },
-						classes = { HUNTER },
-						races = { NIGHTELF },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
-								provider = { "i", 206168 },	-- Rune of the Chimera
-								coord = { 56.8, 26.6, TELDRASSIL },
-								cr = 1994,	-- Githyiss the Vile
-							}),
-							recipe(410121),	-- Engrave Gloves - Chimera Shot
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77575, {	-- Amidst the Shadowed Webs
-						qg = 3593,	-- Alyissia <Warrior Trainer>
-						coord = { 59.6, 38.4, TELDRASSIL },
-						timeline = { REMOVED_2_0_1 },
-						classes = { WARRIOR },
-						races = { NIGHTELF },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								provider = { "i", 204806 },	-- Rune of Victory Rush
-								coord = { 56.8, 31.6, TELDRASSIL },
-								cr = 1986,	-- Webwood Spider
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					-- #endif
 					q(26940, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Night Elf)
 						sourceQuest = 26841,	-- Forbidden Sigil
 						qg = 43006,	-- Rhyanda <Mage Trainer>
@@ -506,25 +470,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 							-- #endif
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77574, {	-- Meditation on Elune
-						qg = 3595,	-- Shanda <Priest Trainer>
-						coord = { 59.2, 40.4, TELDRASSIL },
-						timeline = { REMOVED_2_0_1 },
-						classes = { PRIEST },
-						races = { NIGHTELF },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
-								provider = { "i", 205951 },	-- Memory of a Troubled Acolyte
-								-- coord = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
-								description = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
-							}),
-							recipe(402862),	-- Engrave Gloves - Penance
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(28730, {	-- Precious Waters
 						sourceQuest = 28729,	-- Teldrassil: Crown of Azeroth
 						qg = 49479,	-- Dentaria Silverglade
@@ -565,24 +510,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 						timeline = { ADDED_4_0_3 },
 						races = PRIESTESS_OF_THE_MOON_RACES,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77571, {	-- Relics of the Kaldorei
-						qg = 3597,	-- Mardant Strongoak <Druid Trainer>
-						coord = { 58.6, 40.4, TELDRASSIL },
-						timeline = { REMOVED_2_0_1 },
-						classes = { DRUID },
-						races = { NIGHTELF },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Fury of Stormrage
-								provider = { "i", 208414 },	-- Lunar Idol
-								cr = 1989,	-- Grellkin
-							}),
-							recipe(410061),	-- Engrave Chest - Fury of Stormrage
-							i(2127),	-- Cracked Leather Vest
-						},
-					})),
-					-- #endif
 					q(26948, {	-- Rejuvenating Touch [Cata] / Moonfire [MoP+] (Night Elf)
 						sourceQuest = 3120,	-- Verdant Sigil
 						qg = 3597,	-- Mardant Strongoak <Druid Trainer>
@@ -629,27 +556,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 						},
 						-- #endif
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
-						qg = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
-						coord = { 59.6, 38.6, TELDRASSIL },
-						timeline = { REMOVED_2_0_1 },
-						classes = { ROGUE },
-						races = { NIGHTELF },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-								providers = {
-									{ "o", 406006 },	-- Idol
-									{ "i", 204795 },	-- Rune of Shadowstrike
-								},
-								coord = { 59.7, 42.6, TELDRASSIL },
-							}),
-							recipe(400105),	-- Engrave Gloves - Shadowstrike
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(28728, {	-- Signs of Things to Come
 						sourceQuest = 28727,	-- Vile Touch
 						qg = 49480,	-- Tarindrella (mobileNPC)
@@ -1064,79 +970,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
-				coord = { 41.6, 77.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					2011,	-- Gnarlpine Augur
-					2013,	-- Gnarlpine Avenger
-					2012,	-- Gnarlpine Pathfinder
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 208604, 1 },	-- Bottom-Left Map Piece
-					{ "i", 208603, 1 },	-- Bottom-Right Map Piece
-					{ "i", 208602, 1 },	-- Top-Left Map Piece
-					{ "i", 208601, 1 },	-- Top-Right Map Piece
-				},
-				classes = { ROGUE },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
-				coord = { 52.6, 49.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					2005,	-- Vicious Grell
-					2002,	-- Rascal Sprite
-					2004,	-- Dark Sprite
-					2003,	-- Shadow Sprite
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
-				coord = { 36.8, 37.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					2019,	-- Bloodfeather Fury
-					2021,	-- Bloodfeather Matriarch
-					2015,	-- Bloodfeather Harpy
-					2020,	-- Bloodfeather Wind Witch
-					2018,	-- Bloodfeather Sorceress
-					2017,	-- Bloodfeather Rogue
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
-				coord = { 46.6, 52.4, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					2010,	-- Gnarlpine Defender
-					2152,	-- Gnarlpine Ambusher
-					2009,	-- Gnarlpine Shaman
-					2011,	-- Gnarlpine Augur
-					2013,	-- Gnarlpine Avenger
-					2012,	-- Gnarlpine Pathfinder
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
-				coord = { 60.0, 64.4, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					2022,	-- Timberling
-					2027,	-- Timberling Trampler
-					2029,	-- Timberling Mire Beast
-					2030,	-- Elder Timberling
-					2025,	-- Timberling Bark Ripper
-				},
-			})),
-		}),
-		-- #endif
 		n(QUESTS, {
 			q(475, {	-- A Troubling Breeze
 				qg = 2078,	-- Athridas Bearmantle
@@ -1150,33 +983,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 				lvl = lvlsquish(4, 4, 1),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-				questID = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
-				qgs = {
-					6736,	-- Innkeeper Keldamyr <Innkeeper>
-					209872,	-- Syllart
-				},
-				coord = { 55.6, 59.8, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN, WARRIOR },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(204716, {	-- Rune of Frenzied Assault
-						classes = { WARRIOR },
-						groups = {
-							recipe(425447),	-- Engrave Pants - Frenzied Assault
-						},
-					}),
-					i(205683, {	-- Rune of Rebuke
-						classes = { PALADIN },
-						groups = {
-							recipe(425621),	-- Engrave Pants - Rebuke
-						},
-					}),
-				},
-			})),
-			-- #endif
 			-- #if BEFORE CATA
 			q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 				sourceQuest = 928,	-- Crown of the Earth (2/6)
@@ -2444,22 +2250,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(209812, {	-- Fallenroot Poacher
-				provider = { "n", 209811 },	-- Rustling Bush
-				description = "Cast Hunter's Mark on the bush to spawn the Rare Creature.",
-				coord = { 46.6, 46.4, TELDRASSIL },
-				classes = { HUNTER },
-				groups = {
-					i(206155, {	-- Rune of Marksmanship
-						classes = { HUNTER },
-						groups = {
-							recipe(410113),	-- Engrave Chest - Master Marksman
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(14431, {	-- Fury Shelda
 				coords = {
 					-- #if AFTER CATA
@@ -2494,21 +2284,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
-				description = "You can tame him and you still get the rune!",
-				coord = { 48.3, 31.4, TELDRASSIL },
-				cost = { { "i", 208608, 1 } },	-- Teldrassil Bird Meat
-				groups = {
-					i(205979, {	-- Rune of Flanking
-						classes = { HUNTER },
-						groups = {
-							recipe(425762),	-- Engrave Pants - Flanking Strike
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(14432, {	-- Threggil
 				coords = {
 					-- #if AFTER CATA
@@ -2525,22 +2300,6 @@ maproot(KALIMDOR, TELDRASSIL, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-				qg = 206248,	-- Wooden Effigy
-				qi = 208760,	-- Glade Crown
-				coord = { 66.8, 58.0, TELDRASSIL },
-				cost = { { "i", 208609, 3 } },	-- Glade Flower
-				groups = {
-					i(206963, {	-- Rune of Natural Potential
-						classes = { DRUID },
-						groups = {
-							recipe(416050),	-- Engrave Chest - Living Seed
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(14428, {	-- Uruson
 				coords = {
 					-- #if AFTER CATA
@@ -2560,118 +2319,7 @@ maproot(KALIMDOR, TELDRASSIL, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
-				provider = { "o", 392029 },	-- Swordsman's Reward
-				coords = {
-					{ 39.6, 37.6, TELDRASSIL },
-					{ 39.8, 69.6, TELDRASSIL },
-					{ 34.8, 76.8, TELDRASSIL },
-					{ 54.6, 66.0, TELDRASSIL },
-					{ 62.6, 71.8, TELDRASSIL },
-				},
-				groups = {
-					i(204441, {	-- Rune of Blood Frenzy
-						classes = { WARRIOR },
-						groups = {
-							recipe(403474),	-- Engrave Chest - Blood Frenzy
-						},
-					}),
-				},
-			})),
-			-- #endif
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
-				provider = { "n", 204827 },	-- Adventurer's Remains
-				coord = { 33.6, 35.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(210589, {	-- Echo of the Ancestors
-						classes = { SHAMAN },
-						groups = {
-							recipe(410099),	-- Engrave Pants - Ancestral Guidance
-						},
-					}),
-					i(205944, {	-- Reciprocal Epiphany
-						classes = { PRIEST },
-						groups = {
-							recipe(402848),	-- Engrave Pants - Prayer of Mending
-						},
-					}),
-					i(206264, {	-- Rune of Inspiration
-						classes = { PALADIN },
-						groups = {
-							recipe(410011),	-- Engrave Pants - Inspiration Exemplar
-						},
-					}),
-					i(206970, {	-- Rune of Life
-						classes = { DRUID },
-						groups = {
-							recipe(410033),	-- Engrave Pants - Lifebloom
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, o(407734, {	-- Gnarlpine Cache
-				coord = { 45.0, 61.4, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(205940, {	-- Memory of a Dark Purpose
-						classes = { PRIEST },
-						groups = {
-							recipe(425216),	-- Engrave Chest - Void Plague
-						},
-					}),
-					i(204809, {	-- Rune of Furious Thunder
-						classes = { WARRIOR },
-						groups = {
-							recipe(403476),	-- Engrave Pants - Furious Thunder
-						},
-					}),
-					i(203993, {	-- Rune of Slaughter
-						classes = { ROGUE },
-						groups = {
-							recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-				provider = { "o", 407352 },	-- Gnarlpine Stash
-				coord = { 37.9, 82.5, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 208749, 1 } },	-- Gnarlpine Stash Key
-				classes = { ROGUE },
-				groups = {
-					recipe(400081),	-- Engrave Pants - Between the Eyes
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
-				provider = { "o", 386675 },	-- Buried Treasure
-				coord = { 55.3, 90.8, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 208605, 1 } },	-- Teldrassil Treasure Map
-				classes = { ROGUE },
-				groups = {
-					recipe(400095),	-- Engrave Chest - Quick Draw
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
-				description = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
-				providers = {
-					{ "n", 207577 },	-- Lunar Stone
-					{ "o", 404433 },	-- Lunar Chest
-				},
-				coord = { 52.8, 78.8, TELDRASSIL },
-				classes = { DRUID },
-				groups = {
-					recipe(416044),	-- Engrave Gloves - Sunfire
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(44030, {	-- Draelan <Enchanting Supplies>
 				coord = { 39.0, 30.0, TELDRASSIL },
@@ -2733,120 +2381,11 @@ maproot(KALIMDOR, TELDRASSIL, {
 			i(5206, {	-- Bogling Root
 				cr = 3569,	-- Bogling
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(208607, {	-- Deer Musk
-				coords = {
-					{ 45.8, 58.2, TELDRASSIL },
-					{ 39.8, 80.4, TELDRASSIL },
-					{ 42.4, 79.2, TELDRASSIL },
-					{ 47.2, 52.8, TELDRASSIL },
-					{ 38.4, 80.8, TELDRASSIL },
-				},
-				classes = { HUNTER },
-				crs = {
-					2011,	-- Gnarlpine Augur
-					2012,	-- Gnarlpine Pathfinder
-					2152,	-- Gnarlpine Ambusher
-					2014,	-- Gnarlpine Totemic
-					2013,	-- Gnarlpine Avenger
-					2010,	-- Gnarlpine Defender
-					2009,	-- Gnarlpine Shaman
-				},
-			})),
-			-- #endif
 			i(7094, {	-- Driftwood Branch
 				coord = { 45.4, 24.6, TELDRASSIL },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 				cr = 2030,	-- Elder Timberling
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(208609, {	-- Glade Flower
-				description = "These are scattered throughout the zone.",
-				provider = { "o", 407247 },	-- Glade Flower
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
-				coord = { 45.6, 59.6, TELDRASSIL },
-				classes = { DRUID },
-				cr = 7318,	-- Rageclaw
-				groups = {
-					recipe(410025),	-- Engrave Gloves - Mangle
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-				coord = { 51.6, 51.6, TELDRASSIL },
-				classes = { PRIEST },
-				cr = 2038,	-- Lord Melenas
-				groups = {
-					recipe(402854),	-- Engrave Pants - Shared Pain
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
-				coord = { 52.6, 49.6, TELDRASSIL },
-				classes = { PRIEST },
-				crs = {
-					2005,	-- Vicious Grell
-					2002,	-- Rascal Sprite
-					2004,	-- Dark Sprite
-					2003,	-- Shadow Sprite
-				},
-				groups = {
-					recipe(402852),	-- Engrave Pants - Homunculi
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-				coord = { 45.6, 59.6, TELDRASSIL },
-				classes = { HUNTER },
-				cr = 7318,	-- Rageclaw
-				groups = {
-					recipe(410123),	-- Engrave Gloves - Explosive Shot
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
-				coord = { 51.6, 51.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				cr = 2038,	-- Lord Melenas
-				groups = {
-					recipe(400094),	-- Engrave Gloves - Mutilate
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208610, {	-- Severed Owl Head
-				coord = { 40.6, 53.6, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1996,	-- Strigid Screecher
-					1995,	-- Strigid Owl
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208612, {	-- Severed Spider Head
-				coord = { 59.8, 59.0, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1998,	-- Webwood Lurker
-					1999,	-- Webwood Venomfang
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208611, {	-- Severed Tiger Head
-				coord = { 40.4, 60.0, TELDRASSIL },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					2042,	-- Nightsaber
-					2043,	-- Nightsaber Stalker
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208608, {	-- Teldrassil Bird Meat
-				timeline = { REMOVED_2_0_1 },
-				classes = { HUNTER },
-				crs = {
-					1995,	-- Strigid Owl
-					1997,	-- Strigid Hunter
-					1996,	-- Strigid Screecher
-				},
-			})),
-			-- #endif
 		}),
 	},
 });

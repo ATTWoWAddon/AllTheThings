@@ -53,14 +53,6 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 -- #else
 		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 });
 -- #endif
--- #if SEASON_OF_DISCOVERY
-		if reputation < ]] .. HONORED .. [[ then
-			tinsert(tooltipInfo, { left = " " });
-			tinsert(tooltipInfo, { left = "Battle for Ashenvale PvP World Event:" });
-			addRepInfo(tooltipInfo, reputation, "  Defeat a Lieutenant (To Honored)", 200, ]] .. HONORED .. [[);
-			addRepInfo(tooltipInfo, reputation, "  Win the Battle (To Honored)", 600, ]] .. HONORED .. [[);
-		end
--- #endif
 	end
 end]];
 
@@ -572,71 +564,27 @@ battleground(WARSONG_GULCH, {
 				},
 				races = HORDE_ONLY,
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(211499, {	-- Trainee's Outrider Wolf
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(10, i(19505)),	-- Warsong Battle Tabard
 					moh(3, i(19566)),	-- Advisor's Gnarled Staff
 					moh(3, i(19567)),	-- Advisor's Gnarled Staff
 					moh(3, i(19568)),	-- Advisor's Gnarled Staff
 					moh(3, i(19569)),	-- Advisor's Gnarled Staff
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212584, {	-- Advisor's Gnarled Staff
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20425)),	-- Advisor's Gnarled Staff
 					moh(3, i(19550)),	-- Legionnaire's Sword
 					moh(3, i(19551)),	-- Legionnaire's Sword
 					moh(3, i(19552)),	-- Legionnaire's Sword
 					moh(3, i(19553)),	-- Legionnaire's Sword
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212586, {	-- Legionnaire's Sword
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20430)),	-- Legionnaire's Sword
 					moh(3, i(19558)),	-- Outrider's Bow
 					moh(3, i(19559)),	-- Outrider's Bow
 					moh(3, i(19560)),	-- Outrider's Bow
 					moh(3, i(19561)),	-- Outrider's Bow
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212585, {	-- Outrider's Bow
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20437)),	-- Outrider's Bow
 					moh(3, i(19542)),	-- Scout's Blade
 					moh(3, i(19543)),	-- Scout's Blade
 					moh(3, i(19544)),	-- Scout's Blade
 					moh(3, i(19545)),	-- Scout's Blade
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212587, {	-- Scout's Blade
-						minReputation = { FACTION_WARSONG_OUTRIDERS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20441)),	-- Scout's Blade
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
-						minReputation = { FACTION_WARSONG_OUTRIDERS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(1, i(19534)),	-- Scout's Medallion
 					moh(1, i(19535)),	-- Scout's Medallion
 					moh(1, i(19536)),	-- Scout's Medallion
@@ -659,14 +607,6 @@ battleground(WARSONG_GULCH, {
 					moh(1, i(19582)),	-- Windtalker's Wristguards
 					moh(1, i(19583)),	-- Windtalker's Wristguards
 					moh(1, i(19584)),	-- Windtalker's Wristguards
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(237820)),	-- Outrider's Silk Leggings
-					applyclassicphase(SOD_PHASE_SIX, i(237821)),	-- Outrider's Lizardhide Pants
-					applyclassicphase(SOD_PHASE_SIX, i(237822)),	-- Outrider's Leather Pants
-					applyclassicphase(SOD_PHASE_SIX, i(237823)),	-- Outrider's Mail Leggings
-					applyclassicphase(SOD_PHASE_SIX, i(237824)),	-- Outrider's Chain Leggings
-					applyclassicphase(SOD_PHASE_SIX, i(237826)),	-- Outrider's Plate Legguards
-					-- #else
 					applyclassicphase(PHASE_SIX, moh(2, i(22673))),	-- Outrider's Chain Leggings
 					applyclassicphase(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
 					applyclassicphase(PHASE_SIX, moh(2, i(22740))),	-- Outrider's Leather Pants
@@ -674,7 +614,6 @@ battleground(WARSONG_GULCH, {
 					applyclassicphase(PHASE_SIX, moh(2, i(22676))),	-- Outrider's Mail Leggings
 					applyclassicphase(PHASE_SIX, i(22651)),	-- Outrider's Plate Legguards [Currently Sold for Gold, may change in the future!]
 					applyclassicphase(PHASE_SIX, moh(2, i(22747))),	-- Outrider's Silk Leggings
-					-- #endif
 					moh(1, i(19518)),	-- Advisor's Ring
 					moh(1, i(19519)),	-- Advisor's Ring
 					moh(1, i(19520)),	-- Advisor's Ring
@@ -701,71 +640,27 @@ battleground(WARSONG_GULCH, {
 				},
 				races = ALLIANCE_ONLY,
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(211498, {	-- Trainee's Sentinel Nightsaber
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(10, i(19506)),	-- Silverwing Battle Tabard
 					moh(3, i(19570)),	-- Lorekeeper's Staff
 					moh(3, i(19571)),	-- Lorekeeper's Staff
 					moh(3, i(19572)),	-- Lorekeeper's Staff
 					moh(3, i(19573)),	-- Lorekeeper's Staff
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212580, {	-- Lorekeeper's Staff
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20434)),	-- Lorekeeper's Staff
 					moh(3, i(19562)),	-- Outrunner's Bow
 					moh(3, i(19563)),	-- Outrunner's Bow
 					moh(3, i(19564)),	-- Outrunner's Bow
 					moh(3, i(19565)),	-- Outrunner's Bow
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212581, {	-- Outrunner's Bow
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20438)),	-- Outrunner's Bow
 					moh(3, i(19554)),	-- Protector's Sword
 					moh(3, i(19555)),	-- Protector's Sword
 					moh(3, i(19556)),	-- Protector's Sword
 					moh(3, i(19557)),	-- Protector's Sword
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212582, {	-- Protector's Sword
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(20440)),	-- Protector's Sword
 					moh(3, i(20443)),	-- Sentinel's Blade
 					moh(3, i(19546)),	-- Sentinel's Blade
 					moh(3, i(19547)),	-- Sentinel's Blade
 					moh(3, i(19548)),	-- Sentinel's Blade
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(212583, {	-- Sentinel's Blade
-						minReputation = { FACTION_SILVERWING_SENTINELS, REVERED },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(3, i(19549)),	-- Sentinel's Blade
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
-						minReputation = { FACTION_SILVERWING_SENTINELS, FRIENDLY },
-						timeline = { REMOVED_2_0_1 },
-					})),
-					-- #endif
 					moh(1, i(19538)),	-- Sentinel's Medallion
 					moh(1, i(19539)),	-- Sentinel's Medallion
 					moh(1, i(19540)),	-- Sentinel's Medallion
@@ -788,14 +683,6 @@ battleground(WARSONG_GULCH, {
 					moh(1, i(19582)),	-- Windtalker's Wristguards
 					moh(1, i(19583)),	-- Windtalker's Wristguards
 					moh(1, i(19584)),	-- Windtalker's Wristguards
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(237814)),	-- Sentinel's Lamellar Legguards
-					applyclassicphase(SOD_PHASE_SIX, i(237815)),	-- Sentinel's Silk Leggings
-					applyclassicphase(SOD_PHASE_SIX, i(237817)),	-- Sentinel's Lizardhide Pants
-					applyclassicphase(SOD_PHASE_SIX, i(237818)),	-- Sentinel's Leather Pants
-					applyclassicphase(SOD_PHASE_SIX, i(237819)),	-- Sentinel's Chain Leggings
-					applyclassicphase(SOD_PHASE_SIX, i(237825)),	-- Sentinel's Plate Legguards
-					-- #else
 					applyclassicphase(PHASE_SIX, moh(2, i(22748))),	-- Sentinel's Chain Leggings
 					applyclassicphase(TBC_PHASE_ONE, moh(2, i(30497))),	-- Sentinel's Mail Leggings
 					applyclassicphase(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards [Currently Sold for Gold, may change in the future!]
@@ -803,7 +690,6 @@ battleground(WARSONG_GULCH, {
 					applyclassicphase(PHASE_SIX, moh(2, i(22750))),	-- Sentinel's Lizardhide Pants
 					applyclassicphase(PHASE_SIX, i(22672)),	-- Sentinel's Plate Legguards
 					applyclassicphase(PHASE_SIX, moh(2, i(22752))),	-- Sentinel's Silk Leggings
-					-- #endif
 					moh(1, i(19522)),	-- Lorekeeper's Ring
 					moh(1, i(19523)),	-- Lorekeeper's Ring
 					moh(1, i(19524)),	-- Lorekeeper's Ring

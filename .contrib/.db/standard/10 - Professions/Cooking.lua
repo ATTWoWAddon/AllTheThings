@@ -128,24 +128,10 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ requireSkill = COOKING },
 			-- #if NOT ANYCLASSIC
 			timeline = { ADDED_3_0_2 },
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			OnUpdate = [[function(t)
-				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-					t.u = nil; t.phase = ]] .. SOD_PHASE_THREE .. [[;
-				end
-			end]],
-			-- #endif
 		}),
 		ach(122, {	-- Expert Cook
 			-- #if NOT ANYCLASSIC
 			timeline = { ADDED_3_0_2 },
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			OnUpdate = [[function(t)
-				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-					t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-				end
-			end]],
 			-- #endif
 		}),
 		ach(121, {	-- Journeyman Cook

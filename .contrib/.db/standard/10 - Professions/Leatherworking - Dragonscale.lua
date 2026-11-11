@@ -93,9 +93,6 @@ profession(LEATHERWORKING, {
 							name = "Black Dragonscale Shoulders",
 							recipeID = 19094,
 							requireSkill = 10656,
-							-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_3 },
-							-- #endif
 						},
 						{
 							name = "Blue Dragonscale Shoulders",
@@ -103,14 +100,6 @@ profession(LEATHERWORKING, {
 							recipeID = 19089,
 							requireSkill = 10656,
 						},
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Hardened Black Dragonscale Shoulders",
-							recipeID = 461659,
-							requireSkill = 10656,
-							timeline = { ADDED_1_15_3 },
-						}),
-						-- #endif
 					}
 				},
 				{
@@ -121,9 +110,6 @@ profession(LEATHERWORKING, {
 							name = "Black Dragonscale Breastplate",
 							recipeID = 19085,
 							requireSkill = 10656,
-							-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_3 },
-							-- #endif
 						},
 						{
 							name = "Blue Dragonscale Breastplate",
@@ -141,14 +127,6 @@ profession(LEATHERWORKING, {
 							recipeID = 24703,
 							requireSkill = 10656,
 						}),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Hardened Black Dragonscale Breastplate",
-							recipeID = 461655,
-							requireSkill = 10656,
-							timeline = { ADDED_1_15_3 },
-						}),
-						-- #endif
 						{
 							name = "Green Dragonscale Breastplate",
 							recipeID = 19050,
@@ -192,23 +170,12 @@ profession(LEATHERWORKING, {
 							name = "Black Dragonscale Leggings",
 							recipeID = 19107,
 							requireSkill = 10656,
-							-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_3 },
-							-- #endif
 						},
 						{
 							name = "Blue Dragonscale Leggings",
 							recipeID = 24654,
 							requireSkill = 10656,
 						},
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Hardened Black Dragonscale Leggings",
-							recipeID = 461657,
-							requireSkill = 10656,
-							timeline = { ADDED_1_15_3 },
-						}),
-						-- #endif
 						{
 							name = "Green Dragonscale Leggings",
 							recipeID = 19060,
@@ -231,25 +198,13 @@ profession(LEATHERWORKING, {
 					name = "Cloaks",
 					categoryID = 259,
 					groups = {
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Brilliant Chromatic Cloak",
-							recipeID = 461653,
-							requireSkill = 10656,
-							timeline = { ADDED_1_15_3 },
-						}),
-						-- #endif
 						applyclassicphase(PHASE_ONE_DIREMAUL, {
 							name = "Chromatic Cloak",
 							recipeID = 22926,
 							requireSkill = 10656,
 							timeline = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
 								REMOVED_4_0_3,
 								ADDED_10_1_5,
-								-- #endif
 							},
 						}),
 					},

@@ -1654,25 +1654,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(214456, {	-- Dro'zem the Blasphemous
-				coords = {
-					{ 34.8,  7.6, REDRIDGE_MOUNTAINS },
-					{ 63.6, 42.4, REDRIDGE_MOUNTAINS },
-					{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
-					{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
-				},
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(211488, {	-- Rune of the Avenger
-						classes = { PALADIN },
-						groups = {
-							recipe(410008),	-- Engrave Pants - Avenger's Shield
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(147222, {	-- Gnollfeaster
 				coord = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
 				questID = 54214,
@@ -1703,20 +1684,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(214519, {	-- Incinerator Gar'im
-				coord = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(211477, {	-- Rune of Incinerate
-						classes = { WARLOCK },
-						groups = {
-							recipe(416015),	-- Engrave Pants - Incinerate
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(14271, {	-- Ribchaser
 				coords = {
 					-- #if AFTER CATA
@@ -1809,16 +1776,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
-				provider = { "o", 409754 },	-- Wall-Mounted Shield
-				coord = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(777, {	-- Amy Davenport <Tradeswoman>
 				coords = {
@@ -2283,17 +2240,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
-				coord = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PRIEST },
-				cr = 436,	-- Blackrock Shadowcaster
-				groups = {
-					recipe(425213),	-- Engrave Pants - Power Word: Barrier
-				},
-			})),
-			-- #endif
 			i(1219, {	-- Redridge Machete
 				cr = 424,	-- Redridge Poacher
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },

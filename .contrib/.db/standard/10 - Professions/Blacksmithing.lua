@@ -43,13 +43,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				description = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				altQuests = {
 					5301,	-- The Art of the Armorsmith [H]
-					-- #if SEASON_OF_DISCOVERY
-					82662,	-- The Way of the Weaponsmith [A]
-					82665,	-- The Way of the Weaponsmith [H]
-					-- #else
 					5284,	-- The Way of the Weaponsmith [A]
 					5302,	-- The Way of the Weaponsmith [H]
-					-- #endif
 				},
 				qg = 5164,	-- Grumnus Steelshaper
 				coord = { 50.2, 42.6, IRONFORGE },
@@ -64,13 +59,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				description = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				altQuests = {
 					5283,	-- The Art of the Armorsmith [A]
-					-- #if SEASON_OF_DISCOVERY
-					82662,	-- The Way of the Weaponsmith [A]
-					82665,	-- The Way of the Weaponsmith [H]
-					-- #else
 					5284,	-- The Way of the Weaponsmith [A]
 					5302,	-- The Way of the Weaponsmith [H]
-					-- #endif
 				},
 				qg = 11177,	-- Okothos Ironrager
 				coord = { 79.8, 23.8, ORGRIMMAR },
@@ -90,9 +80,6 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 				qg = 11146,	-- Ironus Coldsteel
 				coord = { 49.8, 45.0, IRONFORGE },
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_2 },
-				-- #endif
 				cost = {
 					{ "i", 3853, 4 },	-- Moonsteel Broadsword
 					{ "i", 3855, 4 },	-- Massive Iron Axe
@@ -110,9 +97,6 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 				qg = 11178,	-- Borgosh Corebender
 				coord = { 79.6, 23.6, ORGRIMMAR },
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_2 },
-				-- #endif
 				cost = {
 					{ "i", 3853, 4 },	-- Moonsteel Broadsword
 					{ "i", 3855, 4 },	-- Massive Iron Axe
@@ -121,44 +105,6 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82662, {	-- The Way of the Weaponsmith [A]
-				description = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-				altQuests = {
-					5283,	-- The Art of the Armorsmith [A]
-					5301,	-- The Art of the Armorsmith [H]
-					82665,	-- The Way of the Weaponsmith [H]
-				},
-				qg = 11146,	-- Ironus Coldsteel
-				coord = { 49.8, 45.0, IRONFORGE },
-				timeline = { ADDED_1_15_2 },
-				cost = {
-					{ "i", 217281, 4 },	-- Moonsteel Broadsword
-					{ "i", 3855, 4 },	-- Massive Iron Axe
-					{ "i", 7941, 2 },	-- Heavy Mithril Axe
-					{ "i", 7945, 2 },	-- Big Black Mace
-				},
-				races = ALLIANCE_ONLY,
-			})),
-			applyclassicphase(SOD_PHASE_THREE, q(82665, {	-- The Way of the Weaponsmith [H]
-				description = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
-				altQuests = {
-					5283,	-- The Art of the Armorsmith [A]
-					5301,	-- The Art of the Armorsmith [H]
-					82662,	-- The Way of the Weaponsmith [A]
-				},
-				qg = 11178,	-- Borgosh Corebender
-				coord = { 79.6, 23.6, ORGRIMMAR },
-				timeline = { ADDED_1_15_2 },
-				cost = {
-					{ "i", 217281, 4 },	-- Moonsteel Broadsword
-					{ "i", 3855, 4 },	-- Massive Iron Axe
-					{ "i", 7941, 2 },	-- Heavy Mithril Axe
-					{ "i", 7945, 2 },	-- Big Black Mace
-				},
-				races = HORDE_ONLY,
-			})),
-			-- #endif
 		})),
 	}),
 	expansion(EXPANSION.MOP, {

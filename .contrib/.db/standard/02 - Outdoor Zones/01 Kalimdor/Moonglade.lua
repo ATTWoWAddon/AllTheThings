@@ -584,27 +584,6 @@ maproot(KALIMDOR, MOONGLADE, {
 					}),
 				},
 			},
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78229, {	-- Trial of The Owls
-				qg = 12042,	-- Loganaar <Druid Trainer>
-				coord = { 52.4, 40.4, MOONGLADE },
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 210044, 1 },	-- Symbol of the First Owl
-					{ "i", 210043, 1 },	-- Symbol of the Second Owl
-					{ "i", 210026, 1 },	-- Symbol of the Third Owl
-				},
-				classes = { DRUID },
-				groups = {
-					i(210137, {	-- Rune of Wild Growth
-						classes = { DRUID },
-						groups = {
-							recipe(410028),	-- Engrave Gloves - Wild Growth
-						},
-					}),
-				},
-			})),
-			-- #endif
 			{	-- Trial of the Sea Lion
 				allianceQuestData = q(272, {	-- Trial of the Sea Lion [A]
 					sourceQuest = 29,	-- Trial of the Lake [A]
@@ -673,42 +652,6 @@ maproot(KALIMDOR, MOONGLADE, {
 				lvl = 54,
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(PROFESSIONS, {
-			applyclassicphase(SOD_PHASE_THREE, n(222188, {	-- Shadowy Figure
-				sourceQuest = 81986,	-- Waking the Nightmare
-				description = "She will only offer to teach you the recipes after you have collected an Inert Mantle of Nightmares once already by completing the Waking the Nightmare quest from ST.",
-				timeline = { ADDED_1_15_2 },
-				lvl = 50,
-				groups = {
-					recipe(446191),	-- Baleful Pauldrons
-					recipe(446186),	-- Cacophonous Chain Shoulderguards
-					recipe(446188),	-- Fearmonger's Shoulderguards
-					recipe(446226),	-- Flask of Everlasting Nightmares
-					recipe(448085),	-- Flask of Restless Dreams
-					r(446193, {	-- Fractured Mind Pauldrons (RECIPE!)
-						requireSkill = TAILORING,
-					}),
-					r(446194, {	-- Mantle of Insanity (RECIPE!)
-						requireSkill = TAILORING,
-					}),
-					recipe(446192),	-- Membrane of Dark Neurosis
-					recipe(446183),	-- Paranoia Mantle
-					recipe(451706),	-- Screaming Chain Pauldrons
-					recipe(446189),	-- Shoulderpads of Obsession
-					r(446195, {	-- Shoulderpads of the Deranged (RECIPE!)
-						requireSkill = TAILORING,
-					}),
-					recipe(446179),	-- Shoulderplates of Dread
-					recipe(446185),	-- Shrieking Spaulders
-					recipe(446236),	-- Void-Powered Invoker's Vambraces
-					recipe(446238),	-- Void-Powered Protector's Vambraces
-					recipe(446237),	-- Void-Powered Slayer's Vambraces
-					recipe(446190),	-- Wailing Chain Mantle
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(7940, {	-- Darnall <Tailoring Supplies>
 				coord = { 51.6, 33.2, MOONGLADE },

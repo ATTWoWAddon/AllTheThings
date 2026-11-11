@@ -9,16 +9,6 @@ inst = function(journalInstanceID, instanceID)	-- Declare a new function, inst.
 	InstanceDB[journalInstanceID] = instanceID;	-- Assign instanceID to journalInstanceID.
 end
 
--- #if SEASON_OF_DISCOVERY
--- Manually added.
-inst(2789, 2789);	-- The Tainted Scar
-inst(2791, 2791);	-- Storm Cliffs
-inst(2784, 2784);	-- Demon Fall Canyon
-inst(2804, 2804);	-- The Crystal Vale
-inst(2832, 2832);	-- Nightmare Grove
-inst(2875, 2875);	-- Karazhan Crypts
-
--- #endif
 
 -- #if FOREVER
 inst(3065, 3273);	-- Hall of Thanes

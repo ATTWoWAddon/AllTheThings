@@ -5,7 +5,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,h,i,mnt,n,q,qo,r,s=_.CreateAchievement,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
-h(-723,{awp=10400,lvl=60,phase=1608,rwp=40003,g={
+h(-723,{awp=10400,lvl=60,phase=1608,g={
 h(-19,{awp=10600,crs={14454,14457,14461,14464},phase=1609,g={
 i(19268,{q=3})}}),
 n(14464,{coords={
@@ -27,7 +27,7 @@ n(14454,{coords={
 r(26279,{itemID=21548,learnedAt=300,q=3,requireSkill=10658}),
 s(163625,18676,{f=6,loc=45,lvl=56,q=3}),
 s(163626,18677,{f=3,lvl=56,q=2})}})}}),
-h(-481,{maps={1454,1455},phase=1610,rwp=20001,g={
+h(-481,{maps={1454,1455},phase=1610,g={
 h(-210,{r=2,g={
 q(8811,{coords={
 [1453]={{55.2,64.7}},
@@ -407,7 +407,7 @@ i(21510,{b=1,description="Contains a random assortment of common, uncommon, and 
 i(21511,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 30-32.",q=1}),
 i(21512,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 40-42.",q=1}),
 i(21513,{b=1,description="Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",q=1})})}}),
-h(-483,{awp=10900,lvl=60,maps={75,1446},phase=1610,rwp=40003,g={
+h(-483,{awp=10900,lvl=60,maps={75,1446},phase=1610,g={
 h(-45,{
 q(8519,{coords={
 [1451]={{28.7,89.1}}},lvl=60,minReputation={910,0},providers={{"o",180633}},sourceQuests={8305}}),
@@ -517,15 +517,15 @@ q(8286,{coords={
 [1451]={{49.5,36.4}}},description="This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",lvl=60,qgs={15180}})}),
 h(-47,{
 i(20402,{b=1,cost={{"i",20403,1}},description="A friendly player can use their Proxy of Nozdormu to grant an undeputized player Agency to collect fragments. Oh joy. Enjoy the suffering.",q=2})})}}),
-h(-484,{maps={1419,1423,1428,1446,1447,1452},phase=1611,rwp=30003,g={
+h(-484,{maps={1419,1423,1428,1446,1447,1452},phase=1611,g={
 h(-12,{
-ach(2116,{providers={{"i",22999}},rwp=30002})}),
+ach(2116,{providers={{"i",22999}}})}),
 h(-45,{
 q(9094,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,30}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 s(284822,236713,{b=1,f=5,loc=44,q=4}),
 s(284823,236714,{b=1,f=7,loc=44,q=4}),
 s(284824,236715,{b=1,f=6,loc=44,q=4}),
@@ -544,7 +544,7 @@ q(9333,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,30}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 s(284822,236713,{b=1,f=5,loc=44,q=4}),
 s(284823,236714,{b=1,f=7,loc=44,q=4}),
 s(284824,236715,{b=1,f=6,loc=44,q=4}),
@@ -563,26 +563,26 @@ q(9318,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 i(23123,{b=1,lvl=50,q=2})}}),
 q(9334,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 i(23123,{b=1,lvl=50,q=2})}}),
 q(88746,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,8}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 i(238241,{b=1,lvl=50,q=2}),
 i(237810,{b=1,lvl=50,q=2})}}),
 q(88747,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 i(238241,{b=1,lvl=50,q=2}),
 i(237810,{b=1,lvl=50,q=2})}}),
 q(88748,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,g={
@@ -626,25 +626,25 @@ q(9321,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 i(13446,{f=55,lvl=45,q=1})}}),
 q(9336,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 i(13446,{f=55,lvl=45,q=1})}}),
 q(9337,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,15}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 i(13444,{f=55,lvl=49,q=1})}}),
 q(9320,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,15}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 i(13444,{f=55,lvl=49,q=1})}}),
 q(9302,{lvl=45,qis={22944},qss={22973}}),
 q(9299,{lvl=45,qis={22945},qss={22972}}),
@@ -658,13 +658,13 @@ q(9341,{coords={
 [1423]={{81,59.8}},
 [1453]={{54.7,62.2}},
 [1455]={{34,66.4}},
-[1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,phase=1611,qgs={16786},r=2,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1457]={{64.3,44.5}}},cost={{"i",22484,10}},lvl=50,qgs={16786},r=2,repeatable=1,sourceQuests={88744},g={
 s(165148,22999,{b=1,f=9,q=1})}}),
 q(9343,{coords={
 [1423]={{80.8,59.6}},
 [1454]={{52.5,73.7}},
 [1456]={{43.7,52.6}},
-[1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,phase=1611,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={88744},g={
+[1458]={{49.9,29.4}}},cost={{"i",22484,10}},lvl=50,qgs={16787},r=1,repeatable=1,sourceQuests={88744},g={
 s(165148,22999,{b=1,f=9,q=1})}}),
 q(9247,{coords={
 [1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},g={
@@ -699,21 +699,21 @@ s(287424,238348,{b=1,f=22,lvl=20,q=4}),
 s(287425,238349,{b=1,f=4,loc=46,lvl=20,q=4})}}),
 n(16143,{cost={{"i",22484,8}},description="To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",g={
 i(22484,{b=1,q=2}),
-i(236750,{b=1,lvl=60,phase=1611,q=1}),
-s(284817,236708,{b=1,f=7,loc=42,lvl=58,phase=1611,q=4}),
-s(284818,236709,{b=1,f=6,loc=42,lvl=58,phase=1611,q=4}),
-s(284827,236718,{b=1,f=4,loc=42,lvl=58,phase=1611,q=4}),
-s(284845,236736,{b=1,f=6,loc=42,lvl=58,phase=1611,q=4}),
-s(284816,236707,{b=1,f=5,loc=42,lvl=58,phase=1611,q=4}),
-s(284836,236727,{b=1,f=5,loc=42,lvl=58,phase=1611,q=4}),
-s(284830,236721,{b=1,f=4,loc=42,lvl=58,phase=1611,q=4}),
-s(284839,236730,{b=1,f=5,loc=42,lvl=58,phase=1611,q=4}),
-s(284851,236742,{b=1,f=6,loc=42,lvl=58,phase=1611,q=4}),
-s(284854,236745,{b=1,f=7,loc=42,lvl=58,phase=1611,q=4}),
-s(284833,236724,{b=1,f=4,loc=42,lvl=58,phase=1611,q=4}),
-s(284842,236733,{b=1,f=5,loc=42,lvl=58,phase=1611,q=4}),
-s(284848,236739,{b=1,f=6,loc=42,lvl=58,phase=1611,q=4}),
-s(284857,236748,{b=1,f=7,loc=42,lvl=58,phase=1611,q=4})}}),
+i(236750,{b=1,lvl=60,q=1}),
+s(284817,236708,{b=1,f=7,loc=42,lvl=58,q=4}),
+s(284818,236709,{b=1,f=6,loc=42,lvl=58,q=4}),
+s(284827,236718,{b=1,f=4,loc=42,lvl=58,q=4}),
+s(284845,236736,{b=1,f=6,loc=42,lvl=58,q=4}),
+s(284816,236707,{b=1,f=5,loc=42,lvl=58,q=4}),
+s(284836,236727,{b=1,f=5,loc=42,lvl=58,q=4}),
+s(284830,236721,{b=1,f=4,loc=42,lvl=58,q=4}),
+s(284839,236730,{b=1,f=5,loc=42,lvl=58,q=4}),
+s(284851,236742,{b=1,f=6,loc=42,lvl=58,q=4}),
+s(284854,236745,{b=1,f=7,loc=42,lvl=58,q=4}),
+s(284833,236724,{b=1,f=4,loc=42,lvl=58,q=4}),
+s(284842,236733,{b=1,f=5,loc=42,lvl=58,q=4}),
+s(284848,236739,{b=1,f=6,loc=42,lvl=58,q=4}),
+s(284857,236748,{b=1,f=7,loc=42,lvl=58,q=4})}}),
 h(-63,{crs={16141,16298,16299,16383},g={
 i(22484,{b=1,q=2}),
 i(22970,{b=1,lvl=45,q=1}),
@@ -723,20 +723,20 @@ i(22974,{b=1,lvl=45,q=1}),
 i(22975,{b=1,lvl=45,q=1}),
 i(22977,{b=1,lvl=45,q=1})}}),
 h(-46,{crs={14697,16379,16380},g={
-s(284825,236716,{f=4,loc=43,lvl=58,phase=1611,q=4}),
-s(284834,236725,{f=5,loc=43,lvl=58,phase=1611,q=4}),
-s(284819,236710,{f=6,loc=43,lvl=58,phase=1611,q=4}),
-s(284821,236712,{f=7,loc=43,lvl=58,phase=1611,q=4}),
-s(284849,236740,{f=6,loc=43,lvl=58,phase=1611,q=4}),
-s(284846,236737,{f=6,loc=43,lvl=58,phase=1611,q=4}),
-s(284852,236743,{f=7,loc=43,lvl=58,phase=1611,q=4}),
-s(284855,236746,{f=7,loc=43,lvl=58,phase=1611,q=4}),
-s(284843,236734,{f=6,loc=43,lvl=58,phase=1611,q=4}),
-s(284840,236731,{f=5,loc=43,lvl=58,phase=1611,q=4}),
-s(284837,236728,{f=5,loc=43,lvl=58,phase=1611,q=4}),
-s(284831,236722,{f=4,loc=43,lvl=58,phase=1611,q=4}),
-s(284820,236711,{f=5,loc=43,lvl=58,phase=1611,q=4}),
-s(284828,236719,{f=4,loc=43,lvl=58,phase=1611,q=4})}}),
+s(284825,236716,{f=4,loc=43,lvl=58,q=4}),
+s(284834,236725,{f=5,loc=43,lvl=58,q=4}),
+s(284819,236710,{f=6,loc=43,lvl=58,q=4}),
+s(284821,236712,{f=7,loc=43,lvl=58,q=4}),
+s(284849,236740,{f=6,loc=43,lvl=58,q=4}),
+s(284846,236737,{f=6,loc=43,lvl=58,q=4}),
+s(284852,236743,{f=7,loc=43,lvl=58,q=4}),
+s(284855,236746,{f=7,loc=43,lvl=58,q=4}),
+s(284843,236734,{f=6,loc=43,lvl=58,q=4}),
+s(284840,236731,{f=5,loc=43,lvl=58,q=4}),
+s(284837,236728,{f=5,loc=43,lvl=58,q=4}),
+s(284831,236722,{f=4,loc=43,lvl=58,q=4}),
+s(284820,236711,{f=5,loc=43,lvl=58,q=4}),
+s(284828,236719,{f=4,loc=43,lvl=58,q=4})}}),
 h(-47,{description="The reports are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",g={
 i(23196,{b=1,crs={16434,16436},description="1 Stamina for every 2 levels for 1 Hour.\n\nAvailable after 150 Battles won.",f=55,q=1}),
 i(23194,{b=1,crs={16384,16395},description="1 Stamina for every 6 levels for 1 Hour.\n\nAvailable after 50 Battles won.",f=55,q=1}),

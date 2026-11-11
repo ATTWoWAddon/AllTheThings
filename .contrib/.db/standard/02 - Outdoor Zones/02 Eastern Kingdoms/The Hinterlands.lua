@@ -2041,21 +2041,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(221828, {	-- Vengeful Spirit
-				description = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				groups = {
-					i(220165, {	-- Rune of Wrath
-						classes = { PALADIN },
-						groups = {
-							recipe(429249),	-- Engrave Helm - Wrath
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(8219, {	-- Zul'arek Hatefowler
 				coords = {
 					-- #if AFTER CATA
@@ -2180,30 +2165,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 				timeline = { REMOVED_2_3_0 },	-- Now taught by trainer, recipe removed from the game.
 				cr = 2642,	-- Vilebranch Shadowcaster
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(220912, {	-- Geode Hammer
-				provider = { "i", 220914 },	-- Broken Geode Hammer
-				description = "Wield this hammer until it breaks, revealing the rune inside!",
-				timeline = { ADDED_1_15_2 },
-				classes = { WARRIOR },
-				crs = {
-					2649,	-- Witherbark Scalper
-					2653,	-- Witherbark Sadist
-					2650,	-- Witherbark Zealot
-					2651,	-- Witherbark Hideskinner
-					2652,	-- Witherbark Venomblood
-					2654,	-- Witherbark Caller
-				},
-				groups = {
-					i(220913, {	-- Rune of Demolition
-						classes = { WARRIOR },
-						groups = {
-							recipe(427084),	-- Engrave Bracers - Wrecking Crew
-						},
-					}),
-				},
-			})),
-			-- #endif
 			-- #if BEFORE CATA
 			i(4589),	-- Long Elegant Feather
 			-- #endif
@@ -2219,12 +2180,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 					{ 61.2, 68.4, THE_HINTERLANDS },
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(13342, {	-- Pet Fish
-				timeline = { ADDED_1_15_2 },
-				cr = 221328,	-- Dreamwater Vicejaw
-			})),
-			-- #endif
 			-- #if BEFORE 4.0.3
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				description = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
@@ -2240,12 +2195,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 			i(8153, {	-- Wildvine
 				description = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221261, {	-- Wildwhisper Draught
-				description = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
-				timeline = { ADDED_1_15_2 },
-			})),
-			-- #endif
 		}),
 	},
 });

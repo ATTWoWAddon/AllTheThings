@@ -5,7 +5,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local cl,faction,h,i,n,q,qo,r,s=_.CreateCharacterClass,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.SeasonOfDiscovery=
 h(-632,{phase=1605,SortPriority=60,g={
-h(-31,{phase=1605,rwp=20001,g={
+h(-31,{phase=1605,g={
 faction(2586,{maps={1453,1455,1457},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<3000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Crafted]",450,3000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Gathered]",300,3000)tinsert(tooltipInfo,{left="PROTIP: Save higher iLvl Supply Shipments until later!",r=1,g=0.1,b=0.1,wrap=true})elseif reputation<9000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 2)]",800,9000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 1)]",650,9000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Gathered]",500,9000)elseif reputation<21000 and _.GameBuildVersion>=11501 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 4)]",1000,21000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 3)]",850,21000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Gathered]",700,21000)elseif reputation<42000 and _.GameBuildVersion>=11502 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 6)]",1850,42000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 5)]",1300,42000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Gathered]",950,42000)end	end	end,OnUpdate=function(t)t.minReputation={t.factionID,(_.GameBuildVersion==11500 and 9000)or(_.GameBuildVersion==11501 and 21000)or 42000}end,r=2}),
 faction(2587,{maps={1454,1456,1458},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<3000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Crafted]",450,3000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 10 - Gathered]",300,3000)tinsert(tooltipInfo,{left="PROTIP: Save higher iLvl Supply Shipments until later!",r=1,g=0.1,b=0.1,wrap=true})elseif reputation<9000 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 2)]",800,9000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Crafted (Tier 1)]",650,9000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 25 - Gathered]",500,9000)elseif reputation<21000 and _.GameBuildVersion>=11501 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 4)]",1000,21000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Crafted (Tier 3)]",850,21000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 40 - Gathered]",700,21000)elseif reputation<42000 and _.GameBuildVersion>=11502 then	addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 6)]",1850,42000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Crafted (Tier 5)]",1300,42000)addRepInfo(tooltipInfo,reputation,"A Full Shipment [iLvl 50 - Gathered]",950,42000)end	end	end,OnUpdate=function(t)t.minReputation={t.factionID,(_.GameBuildVersion==11500 and 9000)or(_.GameBuildVersion==11501 and 21000)or 42000}end,r=1})}}),(function(t)local rep=t.factionID for index,child in ipairs(t.g)do if child.minReputation then child.minReputation[1]=rep end end return t end)(
 h(-22,_.ResolveQuestData({aqd=
@@ -16,7 +16,7 @@ faction(2586,{coords={
 faction(2587,{coords={
 [1454]={{51.6,64.6}},
 [1456]={{39.8,53.4}},
-[1458]={{64.6,38.2}}},crs={214070,214096,214098}}),phase=1605,rwp=20001,g={
+[1458]={{64.6,38.2}}},crs={214070,214096,214098}}),phase=1605,g={
 i(211382,{b=1,cost=4746,f=113,minReputation={2586,3000},q=1}),
 s(194917,212588,{b=1,cost=1325,f=4,loc=44,lvl=12,minReputation={2586,3000},q=2}),
 s(194919,212590,{b=1,cost=2555,f=6,loc=45,lvl=12,minReputation={2586,3000},q=2}),
@@ -60,7 +60,7 @@ s(219697,223169,{b=2,cost=72562,f=5,loc=40,minReputation={2586,42000},phase=1607
 s(219699,223172,{b=2,cost=72562,f=6,loc=40,minReputation={2586,42000},phase=1607,q=3}),
 i(223186,{b=2,cost=5521,f=53,minReputation={2586,42000},phase=1607,q=3}),
 i(220639,{b=1,cost=83793,lvl=50,minReputation={2586,42000},phase=1607,q=4})}}))),
-h(-633,{c={8},phase=1605,rwp=20001,g={
+h(-633,{c={8},phase=1605,g={
 h(-47,{
 h(-634,{cost={{"i",211780,1},{"i",211787,1},{"i",211786,1},{"i",211785,1},{"i",211779,1}},g={
 i(3012,{f=55,lvl=10,q=1}),
@@ -173,7 +173,7 @@ i(211779,{b=1,c={8},q=1})}}),
 q(79094,{coords={
 [1458]={{73.6,33}}},maps={1454},providers={{"n",211022}},qss={207972},r=1,g={
 i(211779,{b=1,c={8},q=1})}})})}}),
-h(-637,{c={1},phase=1605,rwp=20001,g={
+h(-637,{c={1},phase=1605,g={
 i(204703,{b=1,c={1},cost={{"i",204690,1},{"i",204689,1},{"i",204688,1}},f=55,maps={1411,1412,1426,1453,1457,1458},q=2,g={
 r(403475)}}),
 n(209608,{c={1},coords={
@@ -206,7 +206,7 @@ n(203226,{c={1},coords={
 i(204688,{cost={{"i",204476,1}},f=55,q=1}),
 i(204689,{cost={{"i",204477,1}},f=55,q=1}),
 i(204690,{cost={{"i",204478,1}},f=55,q=1})}})}}),
-h(-638,{phase=1607,rwp=20001,g={
+h(-638,{phase=1607,g={
 h(-31,{
 faction(2641,{maps={220,1425,1431,1440,1444},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Defeat Incursion Dragon Bosses",200,42000)addRepInfo(tooltipInfo,reputation,"Incursion Kill Quests (Feralas & Hinterlands)",150,42000)addRepInfo(tooltipInfo,reputation,"Incursion Quests (Feralas & Hinterlands)",100,42000)addRepInfo(tooltipInfo,reputation,"Incursion Quests (Duskwood & Ashenvale)",75,42000)if _.GameBuildVersion>=11503 then addRepInfo(tooltipInfo,reputation,"Incursion Resource Quests",100,42000)end	local fight=t.fight if not fight then	fight=_.SearchForField("questID",82068)[1] t.fight=fight end	_.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo,"%s",fight,1000)addRepInfo(tooltipInfo,reputation," ",1000,42000)end	end})}),
 h(-45,{
@@ -929,7 +929,7 @@ i(220621,{b=1,cost={{"i",219927,75}},description="Allows you to see and pick res
 i(221440,{b=1,cost={{"i",219927,75}},f=52,lvl=50,minReputation={2641,42000},q=4}),
 i(221443,{b=1,cost={{"i",219927,75}},f=53,lvl=50,minReputation={2641,42000},q=4}),
 i(221442,{b=1,cost={{"i",219927,75}},f=53,lvl=50,minReputation={2641,42000},q=4})}})}}),
-h(-639,{phase=1605,rwp=20001,g={
+h(-639,{phase=1605,g={
 cl(11,{
 r(410061,{c={11}}),
 r(416050,{c={11}}),
@@ -1207,7 +1207,7 @@ h(-640,_.ResolveQuestData({aqd=
 [1429]={{44,66.2}}},crs={204256,209002}},c={9},hqd=
 {coords={
 [1411]={{54.6,41.6}},
-[1458]={{84,26}}},crs={208226,208682},maps={1420}},phase=1605,rwp=20001,g={
+[1458]={{84,26}}},crs={208226,208682},maps={1420}},phase=1605,g={
 i(205022,{b=1,c={9},cost={{"i",205019,1},{"i",205020,1}},f=55,q=2,g={
 r(403920)}}),
 r(445459,{b=1,description="Casting Drain Soul on any mob will reward you with this.",itemID=221978,phase=1607,q=1,g={
@@ -1284,7 +1284,7 @@ qo(1,{coords={
 [1423]={{86.8,39.4}}},providers={{"i",227685},{"n",227985}}}),
 r(440790),
 r(407788,{b=1,c={2},itemID=226399,lvl=25,q=2})}})}}),
-h(-644,{phase=1605,rwp=20001,g={
+h(-644,{phase=1605,g={
 h(-45,{
 q(88745,{coords={
 [1423]={{80.8,60.2}}},lvl=50,phase=1611,qgs={16361},g={
@@ -1297,7 +1297,7 @@ n(238376,{coords={
 i(236589,{b=1,c={11},cost={{"i",12844,5}},f=55,lvl=55,q=3}),
 i(236590,{b=1,c={11},cost={{"i",12844,5}},f=55,lvl=55,q=3}),
 i(236591,{b=1,c={11},cost={{"i",12844,5}},f=55,lvl=55,q=3}),
-i(12844,{b=1,cost={{"i",236397,50}},factionID=529,phase=1611,q=2,repeatable=1}),
+i(12844,{b=1,cost={{"i",236397,50}},phase=1611,q=2}),
 i(236869,{b=1,cost={{"i",12844,10}},f=113,lvl=60,phase=1611,q=4}),
 i(236864,{b=1,cost={{"i",12844,10}},f=113,lvl=60,phase=1611,q=4}),
 i(236623,{b=1,c={11},cost={{"i",12844,5}},f=55,lvl=55,phase=1611,q=3}),
@@ -1511,7 +1511,7 @@ faction(2586,{coords={
 faction(2587,{coords={
 [1454]={{51.6,64.6}},
 [1456]={{39.8,53.4}},
-[1458]={{64.6,38.2}}},crs={214070,214096,214098}}),phase=1605,rwp=20001,g={
+[1458]={{64.6,38.2}}},crs={214070,214096,214098}}),phase=1605,g={
 h(-45,{
 q(78612,{description="Grants 300 reputation.",lvl=9,maxReputation={2586,3000},qss={211365},repeatable=1}),
 q(78872,{description="Grants 450 reputation.",lvl=12,maxReputation={2586,3000},qss={211367},repeatable=1}),

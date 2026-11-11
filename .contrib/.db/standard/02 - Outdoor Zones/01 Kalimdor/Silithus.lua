@@ -1726,28 +1726,6 @@ maproot(KALIMDOR, SILITHUS, {
 					FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_FIVE, q(86674, {	-- The Perfect Poison
-				qg = 16091,	-- Dirk Thunderwood
-				coord = { 52.1, 39.1, SILITHUS },
-				maps = { RUINS_OF_AHNQIRAJ, ZULGURUB },
-				lvl = 60,
-				groups = {
-					objective(1, {	-- 0/1 Venoxis's Venom Sac
-						provider = { "i", 22216 },	-- Venoxis's Venom Sac
-					}),
-					objective(2, {	-- 0/1 Kurinnaxx's Venom Sac
-						provider = { "i", 22217 },	-- Kurinnaxx's Venom Sac
-					}),
-					i(234798),	-- Doomulus Prime
-					i(234799),	-- Fahrad's Reloading Repeater
-					i(234792),	-- Ravenholdt Slicer
-					i(234793),	-- Shivsprocket's Shiv
-					i(234800),	-- Simone's Cultivating Hammer
-					i(234797),	-- The Thunderwood Poker
-				},
-			})),
-			-- #else
 			applyclassicphase(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 				qg = 16091,	-- Dirk Thunderwood
 				coord = { 52.1, 39.1, SILITHUS },
@@ -1769,7 +1747,6 @@ maproot(KALIMDOR, SILITHUS, {
 					i(22380),	-- Simone's Cultivating Hammer
 				},
 			})),
-			-- #endif
 			q(28856, {	-- The Sands of Silithus
 				qg = 11118,	-- Innkeeper Vizzie
 				coord = { 59.8, 51.1, WINTERSPRING },
@@ -2779,32 +2756,6 @@ maproot(KALIMDOR, SILITHUS, {
 				})),
 			},
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226409, {	-- Rune of Dagger Specialization
-				provider = { "o", 457100 },	-- Renzik's Thoughts on "Fair" Fighting
-				coord = { 20.0, 85.1, SILITHUS },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-				groups = {
-					recipe(453690, {	-- Engrave Ring - Dagger Specialization
-						classes = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_FOUR, i(226411, {	-- Rune of Fist Weapon Specialization
-				provider = { "o", 457096 },	-- Be First: A Brawler's Guide to Boxing
-				coord = { 38.2, 45.5, SILITHUS },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
-				groups = {
-					recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
-						classes = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
-					}),
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(15293, {	-- Aendel Windspear
 				coords = {
@@ -2875,14 +2826,6 @@ maproot(KALIMDOR, SILITHUS, {
 						timeline = { REMOVED_5_0_4 },
 					})),
 					i(20754),	-- Formula: Lesser Mana Oil (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_SIX, i(234272, {	-- Formula: Enchanted Repellent (RECIPE!)
-						timeline = { ADDED_1_15_5 },
-					})),
-					applyclassicphase(SOD_PHASE_SIX, i(234271, {	-- Formula: Scroll: Wrath of the Swarm (RECIPE!)
-						timeline = { ADDED_1_15_5 },
-					})),
-					-- #endif
 					i(20755),	-- Formula: Wizard Oil (RECIPE!)
 					applyclassicphase(PHASE_FIVE_RECIPES, i(22308)),	-- Pattern: Enchanted Runecloth Bag (RECIPE!)
 				},
@@ -2898,23 +2841,7 @@ maproot(KALIMDOR, SILITHUS, {
 				groups = bubbleDownClassicRep(FACTION_CENARION_CIRCLE, {
 					{		-- Neutral
 					}, {	-- Friendly
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234260, {		-- Recipe: Elixir of Alacrity (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Honored
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234259, {		-- Recipe: Elixir of the Ironside (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234257, {		-- Recipe: Elixir of the Honey Badger (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234258, {		-- Recipe: Elixir of the Mage-Lord (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Revered
 					}, {	-- Exalted
 					},
@@ -2935,55 +2862,17 @@ maproot(KALIMDOR, SILITHUS, {
 							isLimited = true,
 						})),
 					}, {	-- Friendly
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234445, {		-- Pattern: Bolt of Qiraji Silk (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22310)),	-- Pattern: Cenarion Herb Bag (RECIPE!)
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22772,	{	-- Pattern: Sylvan Shoulders (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_5 },
-						-- #endif
 						})),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234314, {	-- Pattern: Sylvan Shoulders (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234263, {		-- Schematic: Obsidian Bomb (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Honored
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22773,	{	-- Pattern: Sylvan Crown (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_5 },
-						-- #endif
 						})),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234316, {	-- Pattern: Sylvan Crown (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234262, {		-- Schematic: The Fumigator (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Revered
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22683)),	-- Pattern: Gaea's Embrace (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(22312)),	-- Pattern: Satchel of Cenarius (RECIPE!)
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22774,	{	-- Pattern: Sylvan Vest (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_5 },
-						-- #endif
 						})),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234318, {	-- Pattern: Sylvan Vest (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234261, {	-- Schematic: Arcane Megabomb (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Exalted
 					},
 				}),
@@ -3001,20 +2890,7 @@ maproot(KALIMDOR, SILITHUS, {
 					}, {	-- Friendly
 						applyclassicphase(PHASE_FIVE, i(22209)),			-- Plans: Heavy Obsidian Belt (RECIPE!)
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234279, {		-- Plans: Obsidian Grinding Stone (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						applyclassicphase(SOD_PHASE_SIX, i(234280, {		-- Schematic: Obsidian Blasting Powder (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 					}, {	-- Honored
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_SIX, i(234278, {		-- Manual: Smelt Obsidian-Infused Thorium Bar (RECIPE!)
-							timeline = { ADDED_1_15_5 },
-						})),
-						-- #endif
 						applyclassicphase(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves (RECIPE!)
 						applyclassicphase(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt (RECIPE!)
 					}, {	-- Revered
@@ -3042,9 +2918,6 @@ maproot(KALIMDOR, SILITHUS, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234010)),	-- Ancient Sandworm Bile
-			-- #endif
 			i(20404, {	-- Encrypted Twilight Text
 				crs = {
 					15308,	-- Twilight Prophet <Twilight's Hammer>
@@ -3090,10 +2963,6 @@ maproot(KALIMDOR, SILITHUS, {
 					15759,	-- Supreme Silithid Flayer
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_SIX, i(234008)),	-- Qiraji Silk
-			applyclassicphase(SOD_PHASE_SIX, i(234011)),	-- Qiraji Stalker Venom
-			-- #endif
 			i(20408, {	-- Twilight Cultist Cowl
 				-- #if BEFORE 10.0.5
 				-- #if AFTER 4.0.3

@@ -14,12 +14,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(10038),	-- Stormcloth Shoulders
 				i(10020),	-- Stormcloth Vest
 
-				-- #if SEASON_OF_DISCOVERY
-				-- 1.15.3
-				expansion(EXPANSION.CLASSIC, patch(15,3), {
-					i(227856),	-- Synthetic Gordok Ogre Suit
-				}),
-				-- #endif
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.1.3
@@ -436,24 +430,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(22687),	-- Pattern: Glacial Wrists (RECIPE!)
 				i(21924),	-- Pattern: Runecloth Robe (RECIPE!)
 
-				-- #if SEASON_OF_DISCOVERY
-				-- 1.15.3
-				expansion(EXPANSION.CLASSIC, patch(15,3), {
-					-- With SpellID attached
-					i(228115),	-- Pattern: Synthetic Gordok Ogre Suit (RECIPE!)
-				}),
-
-				-- 1.15.6
-				expansion(EXPANSION.CLASSIC, patch(15,6), {
-					r(1223770),	-- Frosty Gloves (RECIPE!)
-					r(1223768),	-- Frosty Vest (RECIPE!)
-					r(1223772),	-- Frosty Wrists (RECIPE!)
-					r(1223762),	-- Glacial Cloak (RECIPE!)
-					r(1223764),	-- Glacial Gloves (RECIPE!)
-					r(1223760),	-- Glacial Vest (RECIPE!)
-					r(1223766),	-- Glacial Wrists (RECIPE!)
-				}),
-				-- #endif
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1

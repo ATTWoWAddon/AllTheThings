@@ -2,22 +2,20 @@
 ---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cat,h,i,prof,q,r,x=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateExpansion;
+local ach,cat,h,i,prof,q,r=_.CreateAchievement,_.CreateCategory,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe;
 categories.Professions=
 h(-44,{SortPriority=25,g={
-h(-12,{awp=10100,g={
-x(1,{
+h(-12,{
 ach(732),
 ach(731),
-ach(116)})}}),
-prof(171,{awp=10100,g={
-x(1,{requireSkill=171,g={
-h(-45,{awp=11507,phase=1612,requireSkill=171,g={
+ach(116)}),
+prof(171,{awp=11507,g={
+h(-45,{phase=1612,requireSkill=171,g={
 q(90560,{r=1,requireSkill=171,g={
 r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}}),
 q(90567,{r=2,requireSkill=171,g={
-r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}})}})}})}}),
-prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,rwp=30002,g={
+r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}})}})}}),
+prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,g={
 r(24493,{lvl=20,rank=1}),
 r(24497,{lvl=30,rank=2}),
 r(24500,{lvl=40,rank=3}),
@@ -85,7 +83,6 @@ r(14918,{lvl=30,rank=4}),
 r(14919,{lvl=40,rank=5}),
 r(14920,{lvl=50,rank=6}),
 r(14921,{lvl=60,rank=7}),
-r(24844,{awp=20001,lvl=10,rank=1,u=1}),
 r(25008,{crs={3247,3249,3424,3630,3631,5056,5756},lvl=15,rank=2}),
 r(25009,{crs={3472,4117,4118,4119},lvl=25,rank=3}),
 r(25010,{crs={5307,5308},lvl=41,rank=4}),
@@ -125,7 +122,7 @@ r(26090,{crs={1108,1114},lvl=32,rank=1}),
 r(26187,{crs={1557,5262},lvl=40,rank=2}),
 r(26188,{crs={6516,9622},lvl=52,rank=3})}}),
 prof(164,{
-prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5283,5301},g={
+prof(9788,{description="These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",sourceQuests={5283,5301},g={
 cat(218,{requireSkill=164,g={
 r(23636,{learnedAt=300,phase=1609,requireSkill=9788}),
 r(16742,{learnedAt=300,phase=1609,requireSkill=9788}),
@@ -163,12 +160,12 @@ r(16744,{learnedAt=300,phase=1609,requireSkill=9788}),
 r(27829,{learnedAt=300,phase=1610,requireSkill=9788})}}),
 cat(225,{requireSkill=164,g={
 r(24399,{learnedAt=300,phase=1609,requireSkill=9788})}})}}),
-prof(9787,{description="These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={82662,82665},g={
+prof(9787,{description="These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",sourceQuests={82662,82665},g={
 prof(17041,{description="These items can only be crafted by Master Axesmith specialized Weaponsmiths.",sourceQuests={5306},g={
 r(16991,{description="Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",learnedAt=300,requireSkill=17041,rwp=11500,u=2}),
 r(16994,{learnedAt=300,requireSkill=17041}),
 r(20897,{learnedAt=300,requireSkill=17041}),
-r(16970,{awp=70105,learnedAt=275,requireSkill=17041,rwp=40003}),
+r(16970,{learnedAt=275,requireSkill=17041}),
 r(23653,{learnedAt=300,phase=1609,requireSkill=17041,rwp=11500,u=2})}}),
 prof(17040,{description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={84496},g={
 r(23650,{learnedAt=300,phase=1609,requireSkill=17040}),
@@ -183,7 +180,7 @@ r(461718,{awp=11503,learnedAt=310,phase=1608,requireSkill=17040})}}),
 prof(17039,{description="These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",sourceQuests={5307},g={
 r(16990,{learnedAt=300,requireSkill=17039}),
 r(23652,{learnedAt=300,phase=1609,requireSkill=17039}),
-r(16978,{awp=70105,learnedAt=280,requireSkill=17039}),
+r(16978,{learnedAt=280,requireSkill=17039}),
 r(16985,{learnedAt=290,requireSkill=17039,rwp=11503,u=2}),
 r(20890,{learnedAt=300,requireSkill=17039}),
 r(461714,{learnedAt=315,phase=1608,requireSkill=17039,rwp=11503,u=2}),
@@ -192,23 +189,22 @@ r(27832,{learnedAt=300,phase=1610,requireSkill=17039})}}),
 cat(227,{description="These can be crafted by any Weaponsmith.",requireSkill=164,g={
 r(23638,{learnedAt=300,phase=1609,requireSkill=9787}),
 r(23639,{learnedAt=300,phase=1609,requireSkill=9787}),
-r(16965,{awp=70105,requireSkill=9787,u=1}),
+r(16965,{requireSkill=9787,u=1}),
 r(10011,{learnedAt=250,requireSkill=9787}),
 r(16986,{requireSkill=9787,u=1}),
 r(15292,{learnedAt=265,requireSkill=9787}),
 r(15294,{learnedAt=275,requireSkill=9787}),
-r(16987,{awp=70105,requireSkill=9787,u=1}),
+r(16987,{requireSkill=9787,u=1}),
 r(461716,{awp=11503,learnedAt=320,phase=1608,requireSkill=9787}),
 r(16995,{learnedAt=300,requireSkill=9787,rwp=11503,u=2}),
 r(10007,{learnedAt=245,requireSkill=9787}),
 r(10003,{learnedAt=235,requireSkill=9787}),
 r(10015,{learnedAt=260,requireSkill=9787})}})}}),
-x(1,{awp=10100,requireSkill=164,g={
 h(-45,{requireSkill=164,g={
 q(5283,{altQuests={5301,82662,82665},coords={
-[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164,rwp=40003}),
+[1455]={{50.2,42.6}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={5164},r=2,requireSkill=164}),
 q(5301,{altQuests={5283,82662,82665},coords={
-[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164,rwp=40003}),
+[1454]={{79.8,23.8}}},cost={{"i",7935,1},{"i",7936,2},{"i",7937,4}},description="Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",lvl=40,qgs={11177},r=1,requireSkill=164}),
 q(5284,{altQuests={5283,5301,5302},coords={
 [1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,qgs={11146},r=2,requireSkill=164,rwp=11502,u=2}),
 q(5302,{altQuests={5283,5284,5301},coords={
@@ -216,38 +212,33 @@ q(5302,{altQuests={5283,5284,5301},coords={
 q(82662,{altQuests={5283,5301,82665},awp=11502,coords={
 [1455]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",217281,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,phase=1607,qgs={11146},r=2,requireSkill=164}),
 q(82665,{altQuests={5283,5301,82662},awp=11502,coords={
-[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",217281,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,phase=1607,qgs={11178},r=1,requireSkill=164})}})}})}),
-prof(185,{awp=10100,g={
-x(1,{requireSkill=185,g={
+[1454]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",217281,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",lvl=40,phase=1607,qgs={11178},r=1,requireSkill=164})}})}),
+prof(185,{
 ach(123,{OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=nil t.phase=1607 end	end,requireSkill=185}),
 ach(122,{OnUpdate=function(t)if C_Seasons and C_Seasons.GetActiveSeason()==2 then	t.u=nil t.phase=1606 end	end,requireSkill=185}),
-ach(121,{requireSkill=185})}})}}),
+ach(121,{requireSkill=185})}),
 prof(333),
-prof(202,{awp=10100,g={
-x(1,{requireSkill=202,g={
+prof(202,{
 h(-47,{requireSkill=202,g={
-i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,rwp=40003,g={
+i(11423,{b=1,description="If you destroy your Gnome Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10790}},q=1,requireSkill=202,g={
 r(12607,{itemID=10603,learnedAt=220,q=2,requireSkill=202}),
 r(15633,{b=1,itemID=11827,learnedAt=205,q=2,requireSkill=20219}),
 r(12616,{itemID=10606,learnedAt=225,q=2,requireSkill=202})}}),
-i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,rwp=40003,g={
+i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",providers={{"i",10791}},q=1,requireSkill=202,g={
 r(3968,{itemID=4416,learnedAt=195,q=2,requireSkill=202}),
 r(3972,{itemID=4417,learnedAt=200,q=2,requireSkill=202}),
-r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}})}}),
-prof(129,{awp=10001,rwp=80001,g={
-x(1,{requireSkill=129,g={
+r(15628,{b=1,itemID=11828,learnedAt=205,q=2,requireSkill=20222})}})}})}),
+prof(129,{awp=10001,g={
 ach(131,{requireSkill=129}),
 ach(132,{requireSkill=129}),
-ach(133,{requireSkill=129})}})}}),
-prof(356,{awp=10100,g={
-x(1,{requireSkill=356,g={
+ach(133,{requireSkill=129})}}),
+prof(356,{
 ach(126,{requireSkill=356}),
 ach(127,{requireSkill=356}),
-ach(128,{requireSkill=356})}})}}),
+ach(128,{requireSkill=356})}),
 prof(182),
-prof(165,{awp=10100,g={
-x(1,{requireSkill=165,g={
-prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5141,5145},g={
+prof(165,{
+prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",sourceQuests={5141,5145},g={
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=300,requireSkill=10656,rwp=11503,u=2}),
 r(19089,{learnedAt=295,requireSkill=10656}),
@@ -274,7 +265,7 @@ r(20855,{learnedAt=300,requireSkill=10656})}}),
 cat(259,{requireSkill=165,g={
 r(461653,{awp=11503,learnedAt=320,phase=1608,requireSkill=10656}),
 r(22926,{learnedAt=300,phase=1608,requireSkill=10656,rwp=11503,u=2})}})}}),
-prof(10658,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5144,5146},g={
+prof(10658,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",sourceQuests={5144,5146},g={
 cat(251,{requireSkill=165,g={
 r(10632,{learnedAt=250,requireSkill=10658}),
 r(20854,{learnedAt=300,requireSkill=10658})}}),
@@ -301,7 +292,7 @@ r(19059,{learnedAt=270,requireSkill=10658,rwp=11503,u=2})}}),
 cat(259,{requireSkill=165,g={
 r(461690,{awp=11503,learnedAt=320,phase=1608,requireSkill=10658}),
 r(22928,{learnedAt=300,phase=1608,requireSkill=10658,rwp=11503,u=2})}})}}),
-prof(10660,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",rwp=40001,sourceQuests={5143,5148},g={
+prof(10660,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",sourceQuests={5143,5148},g={
 cat(251,{requireSkill=165,g={
 r(10621,{learnedAt=225,requireSkill=10660})}}),
 cat(252,{requireSkill=165,g={
@@ -329,7 +320,7 @@ r(20853,{learnedAt=295,requireSkill=10660}),
 r(19066,{learnedAt=275,requireSkill=10660})}}),
 cat(259,{requireSkill=165,g={
 r(22927,{learnedAt=300,phase=1608,requireSkill=10660})}})}}),
-h(-45,{lvl=40,requireSkill=165,rwp=40003,g={
+h(-45,{lvl=40,requireSkill=165,g={
 q(5141,{altQuests={5143,5144},coords={
 [1447]={{37.4,65.4}}},cost={{"i",8165,10},{"i",8204,2},{"i",8203,2}},learnedAt=225,lvl=40,qgs={7866},r=2,requireSkill=165}),
 q(5145,{altQuests={5146,5148},coords={
@@ -341,13 +332,12 @@ q(5146,{altQuests={5145,5148},coords={
 q(5143,{altQuests={5141,5144},coords={
 [1444]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7870},r=2,requireSkill=165,sourceQuests={2853}}),
 q(5148,{altQuests={5145,5146},coords={
-[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}})}}),
+[1434]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,lvl=40,qgs={7871},r=1,requireSkill=165,sourceQuests={2860}})}})}),
 prof(633,{awp=10100,c={4},description="Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",DontEnforceSkillRequirements=1,OnTooltip=_.OnTooltipDB.ForLockpicking,OnUpdate=_.OnUpdateDB.ForLockpicking,g={
 r(1804,{c={4},providers={{"i",5060}}}),
 r(921,{c={4}})}}),
-prof(186,{awp=10100,g={
-x(1,{requireSkill=186})}}),
-prof(40,{c={4},rwp=30002,g={
+prof(186),
+prof(40,{c={4},g={
 cat(2,{
 r(439503,{awp=11503,lvl=60,phase=1608}),
 r(6510,{lvl=34}),
@@ -375,12 +365,11 @@ r(13228,{lvl=40}),
 r(13229,{lvl=48}),
 r(13230,{lvl=56})})}}),
 prof(393),
-prof(197,{awp=10100,g={
-x(1,{requireSkill=197,g={
-q(90116,{awp=11507,coords={
+prof(197,{awp=11507,g={
+q(90116,{coords={
 [1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
 r(1227723,{b=1,itemID=239149,learnedAt=260,q=3,requireSkill=197})}}),
-q(90120,{awp=11507,coords={
+q(90120,{coords={
 [1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
-r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197})}})}})}})}})
+r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197})}})}})}})
 end)

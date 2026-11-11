@@ -2,54 +2,15 @@
 ---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local ah,h,hqt,inst,m,prof,x=_.CreateHeader,_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateProfession,_.CreateExpansion;
+local h,hqt,inst,m=_.CreateCustomHeader,_.CreateHQT,_.CreateInstance,_.CreateMap;
 categories.HiddenQuestTriggers={
-x(1,{awp=10100,g={
-h(-61,{
-hqt(78650)}),
 inst(760,{isRaid=1,savedInstanceID=249,g={
 hqt(76175)}}),
-hqt(934,{description="This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",r=2,rwp=10700,u=2}),
-m(1414,{maps={1464},g={
-m(1413,{
-hqt(55296)})}}),
-m(1415,{maps={1463},g={
-m(1434,{awp=11101,g={
-hqt(7908,{awp=11201}),
-hqt(618),
-hqt(614),
-hqt(615,{awp=11201}),
-hqt(620,{awp=11201})}})}}),
+h(-61,{
+hqt(78650)}),
 hqt(6842),
 hqt(9611),
-hqt(236)}}),
-m(2537,{
-m(2512,{
-m(2509,{
-ah(63598,{type="a",g={
-hqt(96041,{repeatable=1}),
-hqt(96037,{repeatable=1}),
-hqt(96032,{repeatable=1}),
-hqt(96042,{repeatable=1}),
-hqt(96039,{repeatable=1}),
-hqt(96043,{repeatable=1}),
-hqt(96034,{repeatable=1}),
-hqt(96036,{repeatable=1}),
-hqt(96035,{repeatable=1}),
-hqt(96040,{repeatable=1}),
-hqt(96033,{repeatable=1}),
-hqt(96038,{repeatable=1}),
-hqt(95639,{repeatable=1}),
-hqt(95640,{repeatable=1}),
-hqt(95641,{repeatable=1}),
-hqt(95881,{repeatable=1}),
-hqt(95616,{repeatable=1}),
-hqt(95617,{repeatable=1}),
-hqt(95619,{repeatable=1})}})})})}),
-prof(171),
-h(-521,{awp=10100,u=3,g={
-x(1,{u=3,g={
-hqt(91889,{awp=11505,rwp=30002,u=3})}})}}),
+hqt(236),
 h(-55,{
 hqt(909),
 hqt(3366),
@@ -283,5 +244,18 @@ hqt(11937),
 hqt(47465),
 hqt(47464),
 hqt(47466),
-hqt(28997)})}
+hqt(28997)}),
+h(-521,{awp=11505,u=3,g={
+hqt(91889,{u=3})}}),
+m(1415,{awp=11101,maps={1463},g={
+m(1434,{
+hqt(7908,{awp=11201}),
+hqt(618),
+hqt(614),
+hqt(615,{awp=11201}),
+hqt(620,{awp=11201})})}}),
+hqt(934,{description="This quest gets marked as completed when you complete the quest ' Crown of the Earth (5/6)' (7383).",r=2,rwp=10700,u=2}),
+m(1414,{maps={1464},g={
+m(1413,{
+hqt(55296)})}})}
 end)

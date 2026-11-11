@@ -310,14 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7355, {	-- Tuten'kash
 				timeline = { REMOVED_6_0_2 },
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217293)),	-- Silky Spider Cape
-					i(10776, {	-- Silky Spider Cape
-						timeline = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(10776),	-- Silky Spider Cape
-					-- #endif
 					i(10775),	-- Carapace of Tuten'kash
 					i(10777),	-- Arachnid Gloves
 				},
@@ -389,24 +382,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(7357, {	-- Mordresh Fire Eye
 				timeline = { REMOVED_6_0_2 },
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217291)),	-- Mordresh's Lifeless Skull
-					applyclassicphase(SOD_PHASE_TWO, i(217290)),	-- Glowing Eye of Mordresh
-					applyclassicphase(SOD_PHASE_TWO, i(217292)),	-- Deathmage Sash
-					i(10770, {	-- Mordresh's Lifeless Skull
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(10769, {	-- Glowing Eye of Mordresh
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(10771, {	-- Deathmage Sash
-						timeline = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(10770),	-- Mordresh's Lifeless Skull
 					i(10769),	-- Glowing Eye of Mordresh
 					i(10771),	-- Deathmage Sash
-					-- #endif
 				},
 			}),
 			-- #endif
@@ -457,19 +435,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217289)),	-- Deathchill Armor
-					applyclassicphase(SOD_PHASE_TWO, i(217288)),	-- Robes of the Lich
-					i(10764, {	-- Deathchill Armor
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(10762, {	-- Robes of the Lich
-						timeline = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(10764),	-- Deathchill Armor
 					i(10762),	-- Robes of the Lich
-					-- #endif
 					i(10765),	-- Bonefingers
 				},
 			}),

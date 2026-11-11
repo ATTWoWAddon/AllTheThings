@@ -183,9 +183,6 @@ root(ROOTS.WorldDrops, {
 					7450,	-- Pattern: Green Whelp Armor (RECIPE!)
 					4299,	-- Pattern: Guardian Armor (RECIPE!)
 					3867,	-- Plans: Golden Iron Destroyer (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					217286,	-- Plans: Golden Scale Leggings (RECIPE!)
-					-- #endif
 					3872,	-- Plans: Golden Scale Leggings (RECIPE!)
 					3611,	-- Plans: Green Iron Boots (RECIPE!)
 					3870,	-- Plans: Green Iron Shoulders (RECIPE!)

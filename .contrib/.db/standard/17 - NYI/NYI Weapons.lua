@@ -3,11 +3,6 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
-		-- #if SEASON_OF_DISCOVERY
-		i(231885),	-- Frostmourne
-		i(231887),	-- Test Dagger
-		i(232343),	-- QAEnchant Shield - Law of Nature
-		-- #endif
 		filter(BOWS, {
 			expansion(EXPANSION.CLASSIC, {
 				n(P1xx, {
@@ -555,11 +550,6 @@ root(ROOTS.NeverImplemented, {
 					i(22341),	-- Monster - Mace, Horde A04 Pale - Bone Wrench
 					i(22724),	-- Monster - Mace1H, Korth'azz
 					i(23583),	-- Monster - Sir Zeliek
-					-- #if SEASON_OF_DISCOVERY
-					i(215444),	-- Monster - Mace - Broken Pipes
-					i(217336),	-- Monster - Incubus Whip Mace1H
-					i(227802),	-- Monster - Torch
-					-- #endif
 				}),
 			}),
 			expansion(EXPANSION.WRATH, {
@@ -738,9 +728,6 @@ root(ROOTS.NeverImplemented, {
 				-- 1.x.x
 				n(P1xx, {
 					i(12986),	-- Monster - Spear, Broad Notched
-					-- #if SEASON_OF_DISCOVERY
-					i(204910),	-- Monster - Trident, Naga (Gold)
-					-- #endif
 				}),
 			}),
 			expansion(EXPANSION.TBC, {
@@ -1235,9 +1222,6 @@ root(ROOTS.NeverImplemented, {
 				n(P1xx, {
 					i(21555),	-- Monster - Mace2H, Alliance PvP
 					i(22346),	-- Monster - Mace2H, Unstoppable Force
-					-- #if SEASON_OF_DISCOVERY
-					i(228214),	-- Monster - Mace2H, Unstoppable Force
-					-- #endif
 				}),
 			}),
 			-- #if ANYCLASSIC
@@ -1304,11 +1288,6 @@ root(ROOTS.NeverImplemented, {
 					i(22596),	-- Monster - Sword2H, Horde A02
 					i(22709),	-- Monster - Sword2H, Corrupted Ashbringer
 					i(23328),	-- Monster - Sword2H, Instructor Razuvious
-					-- #if SEASON_OF_DISCOVERY
-					i(209526),	-- TEST Darkwater Talwar
-					i(215235),	-- 2hander Animation as 1hander test copy
-					i(228607),	-- Monster - Sword2H, Basic
-					-- #endif
 				}),
 			}),
 			expansion(EXPANSION.MOP, {

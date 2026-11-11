@@ -777,21 +777,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				-- #endif
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79940, {	-- A Lost Brother
-				sourceQuest = 79939,	-- The Broken Hammer
-				qg = 5492,	-- Katherine the Pure <Paladin Trainer>
-				coord = { 37.8, 31.6, STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 26,
-				groups = {
-					objective(1, {	-- Speak with Katherine and Learn More
-						provider = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-					}),
-				},
-			})),
-			-- #endif
 			q(212, {	-- A Meal Served Cold
 				qg = 1141,	-- Angus Stern
 				coords = {
@@ -889,16 +874,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				isDaily = true,
 				groups = JEWELCRAFTING_AWARD_GROUPS,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78090, {	-- A Second Opinion
-				sourceQuest = 78089,	-- Advice From Stormwind
-				qg = 5492,	-- Katherine the Pure <Paladin Trainer>
-				qi = 209748,	-- Althalaxx Orb
-				coord = { 37.4, 32.0, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-			})),
-			-- #endif
 			q(27106, {	-- A Villain Unmasked
 				sourceQuest = 27092,	-- Cataclysm in the Catacombs
 				provider = { "o", 205198 },	-- Pile of Explosives
@@ -1320,33 +1295,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-				questID = 75300,	-- Burly Brawl HQT
-				qgs = {
-					203475,	-- Liv Bradford <Bartender>
-					203478,	-- Stuart
-				},
-				coord = { 22.6, 64.7, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN, WARRIOR },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(204716, {	-- Rune of Frenzied Assault
-						classes = { WARRIOR },
-						groups = {
-							recipe(425447),	-- Engrave Pants - Frenzied Assault
-						},
-					}),
-					i(205683, {	-- Rune of Rebuke
-						classes = { PALADIN },
-						groups = {
-							recipe(425621),	-- Engrave Pants - Rebuke
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(1705, {	-- Burning Blood
 				sourceQuest = 1700,	-- Grimand Elmore
 				qg = 1416,	-- Grimand Elmore
@@ -1582,30 +1530,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				timeline = { ADDED_4_0_3 },
 				races = { HUMAN, KULTIRAN },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78091, {	-- Earning Your Salt
-				sourceQuest = 78090,	-- A Second Opinion
-				qg = 5495,	-- Ursula Deline <Warlock Trainer>
-				coord = { 26.2, 77.4, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { REDRIDGE_MOUNTAINS },
-				classes = { PALADIN },
-				groups = {
-					objective(1, {	-- 0/14 Summoner's Salt
-						provider = { "i", 209778 },	-- Summoner's Salt
-						crs = {
-							4463,	-- Blackrock Summoner
-							435,	-- Blackrock Champion
-							615,	-- Blackrock Tracker
-							4464,	-- Blackrock Gladiator
-							4462,	-- Blackrock Hunter
-							4065,	-- Blackrock Sentry
-							436,	-- Blackrock Shadowcaster
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(25156, {	-- Elemental Goo
 				qg = 50480,	-- Isabel Jones
 				coord = { 63.8, 61.2, STORMWIND_CITY },
@@ -2214,33 +2138,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78092, {	-- It Must Be Destroyed
-				sourceQuest = 78091,	-- Earning Your Salt
-				providers = {
-					{ "n",   5495 },	-- Ursula Deline <Warlock Trainer>
-					{ "i", 209748 },	-- Althalaxx Orb
-					{ "o",   409311 },	-- Spear of Mannoroth
-				},
-				coords = {
-					{ 26.2, 77.4, STORMWIND_CITY },
-					{ 89.5, 76.9, ASHENVALE },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-				groups = {
-					objective(1, {	-- 0/12 Mote of Mannoroth
-						provider = { "i", 209779 },	-- Mote of Mannoroth
-						crs = {
-							11697,	-- Mannoroc Lasher
-							6115,	-- Roaming Felguard
-							6073,	-- Searing Infernal
-							6071,	-- Legion Hound
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(2746, {	-- Items of Some Consequence
 				sourceQuest = 2745,	-- Infiltrating the Castle
 				qg = 7766,	-- Tyrion
@@ -2894,44 +2791,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				classes = { DEMONHUNTER },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78194, {	-- Secrets of Elune (1/2)
-				qg = 11397,	-- Nara Meideros <Priest Trainer>
-				coord = { 20.8, 50.2, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { DUSKWOOD },
-				classes = { PRIEST },
-				races = { DWARF, HUMAN },
-				lvl = 17,
-				groups = {
-					objective(1, {	-- 0/10 Dire Wolf Paw
-						provider = { "i", 210053 },	-- Dire Wolf Paw
-						coord = { 67.2, 27.2, DUSKWOOD },
-						crs = {
-							565,	-- Rabid Dire Wolf
-							213,	-- Starving Dire Wolf
-							628,	-- Black Ravager
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78195, {	-- Secrets of Elune (2/2)
-				description = "Completing this quest will allow you to meditate in the same manner as the night elves.",
-				sourceQuest = 78194,	-- Secrets of Elune (1/2)
-				qg = 11397,	-- Nara Meideros <Priest Trainer>
-				coord = { 20.8, 50.2, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { DARKSHORE },
-				classes = { PRIEST },
-				races = { DWARF, HUMAN },
-				lvl = 17,
-				groups = {
-					recipe(424036, {	-- Secrets of Elune
-						classes = { PRIEST },
-					}),
-				},
-			})),
-			-- #endif
 			q(393, {	-- Shadow of the Past
 				sourceQuest = 392,	-- The Curious Visitor
 				qg = 1646,	-- Baros Alexston <City Architect>
@@ -2947,23 +2806,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 16,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
-				qg = 1212,	-- Bishop Farthing
-				coord = { 39.2, 28.0, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { ELWYNN_FOREST },
-				classes = { PRIEST },
-				races = { DWARF, HUMAN },
-				lvl = 5,
-				groups = {
-					objective(1, {	-- Pray over the Supplicant
-						provider = { "n", 215062 },	-- Supplicant
-						description = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
-					}),
-				},
-			})),
-			-- #endif
 			q(2206, {	-- Snatch and Grab
 				sourceQuest = 2205,	-- Seek out SI:7
 				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -2988,46 +2830,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(7298),	-- Blade of Cunning
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81762, {	-- Some Good News
-				sourceQuest = 79970,	-- Aeonas the Vindicated
-				qg = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-				coord = { 37.6, 31.6, STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-				groups = {
-					objective(1, {	-- Speak with Katherine the Pure
-						provider = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-						coord = { 37.8, 31.6, STORMWIND_CITY },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Brother Romulus
-				readable = "Speak to Brother Romulus",
-				icon = 131038,
-				text = {
-					en = "Speak to Brother Romulus",
-					de = "Sprich mit Bruder Romulus",
-					es = "Habla con el Hermano Romulus",
-					mx = "Habla con el Hermano Romulus",
-					fr = "Parlez à Frère Romulus",
-					it = "Parla con Fratello Romulus",
-					ko = "로물루스 형제와 대화하세요",
-					pt = "Fale com o Irmão Romulus",
-					ru = "Поговорите с Брат Ромул",
-					cn = "与罗穆卢斯修士交谈",
-					tw = "與 Brother Romulus 交談",	-- TODO: verify it.
-				},
-			}), {
-				questID = 75939,	-- Brother Romulus HQT
-				qg = 205278,	-- Brother Romulus
-				coord = { 38.6, 28.8, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-			})),
-			-- #endif
 			q(343, {	-- Speaking of Fortitude
 				qg = 1444,	-- Brother Kristoff
 				coords = {
@@ -3528,22 +3330,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 28,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
-				qg = 5492,	-- Katherine the Pure <Paladin Trainer>
-				coord = { 37.4, 32.0, STORMWIND_CITY },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 48,
-				groups = {
-					i(228238, {	-- Testament of Divine Steed
-						spellID = 461607,	-- Divine Steed
-						f = RECIPES,
-					}),
-				},
-			})),
-			-- #endif
 			q(46728, {	-- The Nation of Kul Tiras
 				sourceQuest = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
 				qg = 120756,	-- Anduin Wyrnn
@@ -3570,13 +3356,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					{ 56.0, 16.0, STORMWIND_CITY },
 					-- #endif
 				},
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_1,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 6040, 6 } },	-- Golden Scale Bracers
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,
@@ -3591,23 +3371,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(80241, {	-- The Origins of Smithing
-				qg = 7798,	-- Hank the Hammer
-				coord = { 56.0, 16.0, STORMWIND_CITY },
-				timeline = { ADDED_1_15_1 },
-				cost = { { "i", 6040, 6 } },	-- Golden Scale Bracers
-				requireSkill = BLACKSMITHING,
-				learnedAt = 210,
-				races = ALLIANCE_ONLY,
-				lvl = 40,
-				groups = {
-					i(217274, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
-						description = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
-					}),
-				},
-			})),
-			-- #endif
 			q(543, {	-- The Perenolde Tiara
 				qg = 2285,	-- Count Remington Ridgewell
 				coords = {
@@ -4071,12 +3834,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			}),
 			q(7641, {	-- The Work of Grimand Elmore
 				sourceQuests = {
-					-- #if SEASON_OF_DISCOVERY
-					7670,	-- Lord Grayson Shadowbreaker [Ironforge]
-					7638,	-- Lord Grayson Shadowbreaker [Stormwind City]
-					-- #else
 					7640,	-- Exorcising Terrordale
-					-- #endif
 				},
 				qg = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 				coords = {
@@ -4334,21 +4092,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(3556),	-- Dread Mage Hat
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78297, {	-- You've Got Yourself A Deal [A]
-				sourceQuest = 78287,	-- Let Me Make You An Offer [A]
-				qg = 8383,	-- Master Wood
-				qi = 211448,	-- Signed Procurement Contract
-				coord = { 79.2, 47.6, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { THE_BARRENS },
-				races = ALLIANCE_ONLY,
-				lvl = 20,
-				groups = {
-					i(210210),	-- Grizzwerks Defense Industries Founder's Certificate
-				},
-			})),
-			-- #endif
 		}),
 		n(RARES, {
 			n(130828, {	-- Gordon MacKellar
@@ -4391,27 +4134,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
-				-- TODO: Try to get an objectID for this.
-				-- provider = { "o",  },	-- Summoning Circle
-				coord = { 25.8, 76.2, STORMWIND_CITY },
-				cost = {
-					{ "i", 204905, 1 },	-- Ominous Tome
-					{ "i", 204906, 1 },	-- Gnoll Blood
-					{ "i", 204907, 1 },	-- Wolf Jawbone
-				},
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(204912, {	-- Rune of Grace
-						classes = { WARLOCK },
-						groups = {
-							recipe(425477),	-- Engrave Pants - Demonic Grace
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(112958, {	-- Soulare of Andorhal
 				description = "Emote |cFFFFFFFF/tired|r at him to get the toy. Horde players can do this, too!",
 				coord = { 38.1, 64.4, STORMWIND_CITY },
@@ -4437,40 +4159,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					i(21107),	-- Draconic for Dummies [Chapter V]
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(205864, {	-- Charred Note
-				questID = 75940,	-- Charred Note HQT
-				sourceQuest = 75939,	-- Brother Romulus HQT
-				provider = { "o", 402215 },	-- Charred Note
-				coord = { 33.0, 24.75, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				maps = { DUSKWOOD },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205897, {	-- Rune of Martyrdom
-				questID = 75969,	-- Ada Gelhardt HQT
-				sourceQuest = 75940,	-- Charred Note HQT
-				provider = { "n", 205153 },	-- Ada Gelhardt
-				coord = { 4.3, 28.25, DUSKWOOD },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					recipe(410015),	-- Engrave Chest - Seal of Martyrdom
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-				description = "Looting the chest will spawn 2 muggers. Beware!",
-				provider = { "o", 386777 },	-- Dusty Chest
-				coord = { 61.9, 29.3, STORMWIND_CITY },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(400081),	-- Engrave Pants - Between the Eyes
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
 			n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
@@ -5377,24 +5065,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					})),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(213077, {	-- Elaine Compton <Supply Officer>
-				coord = { 54.8, 62.0, STORMWIND_CITY },
-				groups = bubbleDownClassicRep(AZEROTH_COMMERCE_AUTHORITY, {
-					{	-- Neutral
-					},
-					{	-- Friendly
-					},
-					{	-- Honored
-						i(211247),	-- Pattern: Phoenix Bindings (RECIPE!)
-					},
-					{	-- Revered
-					},
-					{	-- Exalted
-					},
-				}),
-			}),
-			-- #endif
 			n(483, {	-- Elaine Trias <Mistress of Cheese>
 				coords = {
 					-- #if AFTER WRATH
@@ -5530,21 +5200,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(6122, {	-- Gakin the Darkbinder
-				coord = { 25.6, 77.8, STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				groups = {
-					applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
-						cost = { { "i", 205183, 1 } },	-- Fel-Powered Artifact
-						classes = { WARLOCK },
-						groups = {
-							recipe(416009),	-- Engrave Chest - Demonic Tactics
-						},
-					})),
-				},
-			}),
-			-- #endif
 			n(164947, {	-- Gerald Black <Shady Dealer>
 				coord = { 78.8, 70.6, STORMWIND_CITY },
 				timeline = { ADDED_9_0_1 },
@@ -7125,21 +6780,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(17804, {	-- Squire Rowe
-				sourceQuest = 6502,	-- Drakefire Amulet
-				coord = { 70.6, 86.0, STORMWIND_CITY },
-				timeline = { ADDED_1_15_3 },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(226500),	-- Chipped Drakefire Amulet
-					i(228222, {	-- Handbook of Valor of Azeroth
-						spellID = 461475,	-- Valor of Azeroth
-						f = RECIPES,
-					}),
-				},
-			})),
-			-- #endif
 			-- #if AFTER MOP
 			-- Danny Donkey: The staves are added to Inscription Suppliers in 5.0.1.
 			n(30730, {	-- Stanly McCormick <Inscription Supplies>

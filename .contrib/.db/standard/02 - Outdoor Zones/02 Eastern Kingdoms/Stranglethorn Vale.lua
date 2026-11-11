@@ -91,47 +91,6 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	end
 end]];
 
--- #if SEASON_OF_DISCOVERY
-local bloodicon = function(item)	-- Assign an Atal'ai Blood Icon cost to an item.
-	applycost(item, { "i", 220636, 1 });
-	return item;
-end
-local ritualicon = function(item)	-- Assign an Atal'ai Ritual Icon cost to an item.
-	applycost(item, { "i", 220637, 1 });
-	return item;
-end
-
-local bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
-	applycost(item, { "i", 213168, cost });
-	return item;
-end
-local bloodcoin_s = function(cost, item)	-- Assign a Silver Blood Coin cost to an item.
-	applycost(item, { "i", 213169, cost });
-	return item;
-end
-local bloodcoin_g = function(cost, item)	-- Assign a Gold Blood Coin cost to an item.
-	applycost(item, { "i", 213170, cost });
-	return item;
-end
-
-local massacrecoin_c = function(cost, item)	-- Assign a Copper Massacre Coin cost to an item.
-	applycost(item, { "i", 221364, cost });
-	return item;
-end
-local massacrecoin_s = function(cost, item)	-- Assign a Silver Massacre Coin cost to an item.
-	applycost(item, { "i", 221365, cost });
-	return item;
-end
-local massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost to an item.
-	applycost(item, { "i", 221366, cost });
-	return item;
-end
-
-local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to an item.
-	applycost(item, { "i", 226404, cost });
-	return item;
-end
--- #endif
 
 maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 	lore = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
@@ -194,12 +153,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					THE_BARRENS,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634, {	-- Blood Moon
-				description = "This faction is probably not one that you can gain reputation with.",
-				timeline = { CREATED_1_15_1 },
-			}))),
-			-- #endif
 		}),
 		n(FLIGHT_PATHS, {
 			fp(18, {	-- Booty Bay, Stranglethorn
@@ -684,21 +637,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					i(2759),	-- Green Hills of Stranglethorn - Chapter IV
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79236, {	-- Cherry for Your Thoughts?
-				sourceQuest = 79235,	-- On The Lam
-				qg = 215643,	-- Tokal
-				coord = { 27.0, 77.2, STRANGLETHORN_VALE },
-				timeline = { ADDED_1_15_1 },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/1 Cherry Grog
-						provider = { "i", 4600 },	-- Cherry Grog
-						cr = 2832,	-- Nixxrax Fillamug <Food and Drink>
-					}),
-				},
-			})),
-			-- #endif
 			q(202, {	-- Colonel Kurzen
 				sourceQuest = 574,	-- Special Forces
 				qg = 469,	-- Lieutenant Doren
@@ -1496,19 +1434,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(83934, {	-- Show Me The Money!
-				qg = 227853,	-- Pix Xizzix
-				coord = { 28.4, 75.8, STRANGLETHORN_VALE },
-				timeline = { ADDED_1_15_3 },
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/1 Tarnished Undermine Real
-						provider = { "i", 226404 },	-- Tarnished Undermine Real
-					}),
-				},
-			})),
-			-- #endif
 			q(3643, {	-- Show Your Work
 				sourceQuest = 3642,	-- The Pledge of Secrecy
 				altQuests = { 3639, 3641 },	-- The Pledge of Secrecy
@@ -2508,54 +2433,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- Blood Moon
-			readable = "Blood Moon",
-			icon = 237513,
-			text = {
-				en = "Blood Moon",
-				de = "Blutmond",
-				es = "Luna Sangrienta",
-				mx = "Luna de sangre",
-				fr = "Lune de sang",
-				it = "Blood Moon",
-				ko = "핏빛 달",
-				pt = "Lua Sangrenta",
-				ru = "Кровавая луна",
-				cn = "鲜血之月",
-				tw = "血月",
-			},
-			description = {
-				en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
-				-- TODO: de = "",
-				es = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalariano.",
-				mx = "Este es un evento JcJ todos contra todos que se lleva a cabo en la Vega de Tuercespina durante 30 minutos, una vez cada 3 horas, a partir de la medianoche (hora del servidor).\n\nMata jugadores para recibir la mejora acumulable Sangre para el Loa de Sangre. Esta se acumula hasta 255 veces.\nRecibes 5 acumulaciones de Sangre por cada muerte.\nPuedes perder Sangre al morir.\nViaja a los altares de sangre |cffffffff(bandera roja en el mapa)|r para intercambiar acumulaciones de Sangre para el Loa de Sangre por Monedas de Sangre de Cobre, Plata y Oro. Simplemente acércate al altar y las monedas aparecerán automáticamente en tu inventario.\n\nPuedes optar por no participar en el evento hablando con un Emisario Zandalar.",
-				-- TODO: fr = "",
-				-- TODO: it = "",
-				-- TODO: ko = "",
-				-- TODO: pt = "",
-				-- TODO: ru = "",
-				cn = "这是一个在荆棘谷举行的自由对战 PvP 活动，每3小时从服务器时间午夜开始持续30分钟。\n\n击杀玩家以获得可叠加的鲜血之月增益效果——献给血之洛阿的鲜血。该效果最多可叠加255次。\n每次击杀可获得5层鲜血。\n死亡会失去鲜血。\n前往鲜血祭坛 |cffffffff（地图上的红色旗帜）|r，将献给血之洛阿的鲜血兑换为铜质鲜血硬币、银质鲜血硬币和金质鲜血硬币。只需走到祭坛旁，硬币就会自动出现在你的背包中。\n\n你可以通过与赞达拉使者交谈来选择退出该活动。",
-				tw = "這是一項在荊棘谷舉行的自由混戰 PvP 事件，每 3 小時（從伺服器時間午夜起算）舉辦一次，持續 30 分鐘。\n\n擊殺玩家可獲得可堆疊的 Blood for the Blood Loa 增益效果，最多可累積 255 層。\n每次擊殺獲得 5 層。\n死亡時可能會失去層數。\n前往鮮血祭壇 |cffffffff（地圖上的紅旗）|r，將 Blood for the Blood Loa 層數兌換成 Copper Blood Coin、Silver Blood Coin 或 Gold Blood Coin。走近祭壇後，硬幣會自動出現在背包中。\n\n可與 Zandalarian Emissary 交談以退出事件。",	-- TODO: verify it.
-			},
-		}), {
-			i(213168, {	-- Copper Blood Coin
-				description = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
-				timeline = { REMOVED_1_15_2 },
-			}),
-			bloodcoin_c(100, i(213169)),	-- Silver Blood Coin
-			bloodcoin_s(100, i(213170)),	-- Gold Blood Coin
-			applyclassicphase(SOD_PHASE_THREE, i(221364, {	-- Copper Massacre Coin
-				description = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
-			})),
-			applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
-			applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
-			i(216884, {	-- Bloodthirst Blade
-				description = "This drops from the troll boss during the Blood Moon event. It sadly cannot be equipped.",
-				cr = 218690,	-- Kha'damu <Chosen of the Blood Loa>
-			}),
-		}))),
-		-- #endif
 		n(TREASURES, {
 			pvp(o(179697, {	-- Arena Treasure Chest
 				description = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
@@ -2815,119 +2692,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, pvp(n(218115, {	-- Mai'zin <Gurubashi Bloodchanger>
-				coord = { 31.2, 48.4, STRANGLETHORN_VALE },
-				lvl = 40,
-				groups = {
-					applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(213169))),	-- Silver Blood Coin
-					applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(213170))),	-- Gold Blood Coin
-					bloodcoin_g(1, i(216972, {	-- Satchel of Silver Blood Coins
-						sym = {{ "select","itemID", 213169 }},	-- Silver Blood Coin
-						-- TODO: Check if this is still there.
-					})),
-					bloodcoin_s(1, i(216971, {	-- Satchel of Copper Blood Coins
-						sym = {{ "select","itemID", 213168 }},	-- Copper Blood Coin
-						-- TODO: Check if this is still there.
-					})),
-					applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(221368, {	-- Satchel of Silver Massacre Coins
-						sym = {{ "select","itemID", 221365 }},	-- Silver Massacre Coin
-					}))),
-					applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(221367, {	-- Satchel of Copper Massacre Coins
-						sym = {{ "select","itemID", 221364 }},	-- Copper Massacre Coin
-					}))),
-					applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(223283))),	-- Bloodstained Commendation
-					bloodcoin_c(25, i(216914, {	-- Bloodstained Commendation / Tarnished Commendation
-						timeline = { REMOVED_1_15_2 },
-					})),
-					bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
-					bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
-					bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
-
-					-- Phase 2
-					bloodcoin_s(2, i(216621)),	-- Blooddrenched Drape
-					bloodcoin_s(2, i(216620)),	-- Bloodrot Cloak
-					bloodcoin_s(2, i(216623)),	-- Cape of Hemostasis
-					bloodcoin_s(2, i(216622)),	-- Coagulated Cloak
-
-					-- Class Items (Blood Harvest)
-					applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(220173, {	-- Parasomnia
-						classes = { WARRIOR, PALADIN },
-						lvl = 50,
-					}))),
-					cl(DRUID, bubbleDown({ classes = { DRUID } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221446))),	-- Ritualist's Hammer
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221447))),	-- Ritualist's Bloodmoon Grimoire
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221448))),	-- Talisman of the Corrupted Grove
-						bloodcoin_s(15, i(216499)),	-- Bloodbark Crusher
-						bloodcoin_s(5, i(216498)),	-- Enchanted Sanguine Grimoire
-						bloodcoin_s(5, i(216500)),	-- Bloodbonded Grove Talisman
-					})),
-					cl(HUNTER, bubbleDown({ classes = { HUNTER } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221451))),	-- Bloodthirst Crossbow
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221450))),	-- Gurubashi Pit Fighter's Bow
-						bloodcoin_s(5, i(216516)),	-- Bloodlash Bow
-						bloodcoin_s(5, i(216513)),	-- Tigerblood Talisman
-						bloodcoin_s(3, i(216515)),	-- Sanguine Ammo Pouch
-						bloodcoin_s(3, i(216514)),	-- Sanguine Quiver
-					})),
-					cl(MAGE, bubbleDown({ classes = { MAGE } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221453))),	-- Band of Boiling Blood
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221452))),	-- Bloodfocused Arcane Band
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221454))),	-- Glacial Blood Band
-						bloodcoin_s(5, i(216510)),	-- Blood Resonance Circle
-						bloodcoin_s(5, i(216511)),	-- Emberblood Seal
-						bloodcoin_s(5, i(216512)),	-- Loop of Chilled Veins
-					})),
-					cl(PALADIN, bubbleDown({ classes = { PALADIN } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221456))),	-- Eclipsed Sanguine Saber
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221457))),	-- Libram of Draconic Destruction
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221455))),	-- Bloodlight Reverence
-						bloodcoin_s(15, i(216506)),	-- Bloodlight Avenger's Edge
-						bloodcoin_s(15, i(216504)),	-- Eclipsed Bloodlight Saber
-						bloodcoin_s(5, i(216505)),	-- Bloodlight Crusader's Radiance
-						bloodcoin_s(5, i(216607)),	-- Bloodlight Offering
-					})),
-					cl(PRIEST, bubbleDown({ classes = { PRIEST } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221459))),	-- Seal of the Sacrificed
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221458))),	-- Shadowy Band of Victory
-						bloodcoin_s(5, i(216518)),	-- Blood Covenant Seal
-						bloodcoin_s(5, i(216517)),	-- Sanguine Sanctuary
-						bloodcoin_s(5, i(216519)),	-- Sanguine Shadow Band
-					})),
-					cl(ROGUE, bubbleDown({ classes = { ROGUE } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221462))),	-- Bloodied Sword of Speed
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221460))),	-- Gurubashi Backstabber
-						bloodcoin_s(10, i(216520)),	-- Bloodharvest Blade
-						bloodcoin_s(5, i(216522)),	-- Blood Spattered Stiletto
-						bloodcoin_s(5, i(216521)),	-- Swift Sanguine Strikers
-					})),
-					cl(SHAMAN, bubbleDown({ classes = { SHAMAN } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221465))),	-- Corrupted Smashbringer
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221464))),	-- Totem of Fiery Precision
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221463))),	-- Ancestral Voodoo Doll
-						bloodcoin_s(15, i(216502)),	-- Bloodstorm War Totem
-						bloodcoin_s(5, i(216501)),	-- Bloodstorm Barrier
-						bloodcoin_s(5, i(216615)),	-- Ancestral Bloodstorm Beacon
-						bloodcoin_s(5, i(216503)),	-- Bloodstorm Jewel
-					})),
-					cl(WARLOCK, bubbleDown({ classes = { WARLOCK } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221467))),	-- Eye of the Bloodmoon
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221466))),	-- Loop of Burning Blood
-						bloodcoin_s(5, i(216508)),	-- Infernal Bloodcoil Band
-						bloodcoin_s(5, i(216507)),	-- Umbral Bloodseal
-						bloodcoin_s(5, i(216509)),	-- Infernal Pact Essence
-					})),
-					cl(WARRIOR, bubbleDown({ classes = { WARRIOR } }, {
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221469))),	-- Headhunter's Barbed Spear
-						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221468))),	-- Wall of Whispers
-						bloodcoin_s(15, i(216497)),	-- Exsanguinar
-						bloodcoin_s(15, i(216495)),	-- Sanguine Crusher
-						bloodcoin_s(10, i(216496)),	-- Sanguine Skullcrusher
-					})),
-				},
-			}))),
-			-- #endif
 			n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
 				coords = {
 					-- #if AFTER CATA
@@ -3004,186 +2768,9 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					i(16083, {	-- Expert Fishing - The Bass and You
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(227853, {	-- Pix Xizzix <Undermine Trader>
-				sourceQuest = 83934,	-- Show Me The Money!
-				coord = { 28.4, 75.8, STRANGLETHORN_VALE },
-				timeline = { ADDED_1_15_3 },
-				groups = {
-					cl(DRUID, {
-						real(50, i(226708)),	-- Wildheart Cowl
-						real(25, i(226710)),	-- Wildheart Spaulders
-						real(50, i(226715)),	-- Wildheart Vest
-						real(15, i(226714)),	-- Wildheart Bracers
-						real(25, i(226711)),	-- Wildheart Gloves
-						real(25, i(226712)),	-- Wildheart Belt
-						real(50, i(226709)),	-- Wildheart Kilt
-						real(25, i(226713)),	-- Wildheart Boots
-						real(25, i(232423)),	-- Idol of Nurture
-						real(25, i(232424)),	-- Idol of Cruelty
-						real(25, i(232390)),	-- Idol of Celestial Focus
-						real(25, i(232391)),	-- Idol of Feline Focus
-					}),
-					cl(HUNTER, {
-						real(50, i(226720)),	-- Beaststalker's Cap
-						real(25, i(226716)),	-- Beaststalker's Mantle
-						real(50, i(226723)),	-- Beaststalker's Tunic
-						real(15, i(226717)),	-- Beaststalker's Bindings
-						real(25, i(226721)),	-- Beaststalker's Gloves
-						real(25, i(226718)),	-- Beaststalker's Belt
-						real(50, i(226719)),	-- Beaststalker's Pants
-						real(25, i(226722)),	-- Beaststalker's Boots
-					}),
-					cl(MAGE, {
-						real(50, i(226728)),	-- Magister's Crown
-						real(25, i(226726)),	-- Magister's Mantle
-						real(50, i(226729)),	-- Magister's Robes
-						real(15, i(226725)),	-- Magister's Bindings
-						real(25, i(226731)),	-- Magister's Gloves
-						real(25, i(226724)),	-- Magister's Belt
-						real(50, i(226727)),	-- Magister's Leggings
-						real(25, i(226730)),	-- Magister's Boots
-					}),
-					cl(PALADIN, {
-						real(50, i(226733)),	-- Lightforge Helm
-						real(25, i(226735)),	-- Lightforge Spaulders
-						real(50, i(226734)),	-- Lightforge Breastplate
-						real(15, i(226739)),	-- Lightforge Bracers
-						real(25, i(226737)),	-- Lightforge Gauntlets
-						real(25, i(226732)),	-- Lightforge Belt
-						real(50, i(226736)),	-- Lightforge Legplates
-						real(25, i(226738)),	-- Lightforge Boots
-						real(25, i(232389)),	-- Libram of Plenty
-						real(25, i(232420)),	-- Libram of Wrath
-						real(25, i(232421)),	-- Libram of Avenging \\ Libram of Avengement
-					}),
-					cl(PRIEST, {
-						real(50, i(226746)),	-- Devout Crown
-						real(25, i(226741)),	-- Devout Mantle
-						real(50, i(226745)),	-- Devout Robe
-						real(15, i(226742)),	-- Devout Bracers
-						real(25, i(226740)),	-- Devout Gloves
-						real(25, i(226744)),	-- Devout Belt
-						real(50, i(226747)),	-- Devout Skirt
-						real(25, i(226743)),	-- Devout Sandals
-					}),
-					cl(ROGUE, {
-						real(50, i(226707)),	-- Shadowcraft Cap
-						real(25, i(226706)),	-- Shadowcraft Spaulders
-						real(50, i(226700)),	-- Shadowcraft Tunic
-						real(15, i(226704)),	-- Shadowcraft Bracers
-						real(25, i(226702)),	-- Shadowcraft Gloves
-						real(25, i(226701)),	-- Shadowcraft Belt
-						real(50, i(226705)),	-- Shadowcraft Pants
-						real(25, i(226703)),	-- Shadowcraft Boots
-					}),
-					cl(SHAMAN, {
-						real(50, i(226755)),	-- Coif of Elements
-						real(25, i(226753)),	-- Pauldrons of Elements
-						real(50, i(226749)),	-- Vest of Elements
-						real(15, i(226751)),	-- Bindings of Elements
-						real(25, i(226748)),	-- Gauntlets of Elements
-						real(25, i(226754)),	-- Cord of Elements
-						real(50, i(226750)),	-- Kilt of Elements
-						real(25, i(226752)),	-- Boots of Elements
-						real(25, i(232392)),	-- Totem of Relentless Thunder
-						real(25, i(232409)),	-- Totem of the Elements
-						real(25, i(232416)),	-- Totem of Astral Flow
-						real(25, i(232419)),	-- Totem of Conductive Currents
-					}),
-					cl(WARLOCK, {
-						real(50, i(226762)),	-- Dreadmist Mask
-						real(25, i(226756)),	-- Dreadmist Mantle
-						real(50, i(226757)),	-- Dreadmist Robe
-						real(15, i(226759)),	-- Dreadmist Bracers
-						real(25, i(226758)),	-- Dreadmist Wraps
-						real(25, i(226761)),	-- Dreadmist Belt
-						real(50, i(226760)),	-- Dreadmist Leggings
-						real(25, i(226763)),	-- Dreadmist Sandals
-					}),
-					cl(WARRIOR, {
-						real(50, i(226769)),	-- Helm of Valor
-						real(25, i(226768)),	-- Spaulders of Valor
-						real(50, i(226770)),	-- Breastplate of Valor
-						real(15, i(226766)),	-- Bracers of Valor
-						real(25, i(226771)),	-- Gauntlets of Valor
-						real(25, i(226765)),	-- Belt of Valor
-						real(50, i(226767)),	-- Legplates of Valor
-						real(25, i(226764)),	-- Boots of Valor
-					}),
-
-					-- Toys
-					real(25, i(228189)),	-- Gift of Gob (TOY!)
-
-					-- Weapons
-					real(50, i(228185)),	-- Broken Bottle of Goblino Noir
-					real(50, i(228168)),	-- Goblin Gear Grinder
-					real(50, i(228170)),	-- Makeshift South Sea Oar
-					real(50, i(228169)),	-- The Attitude Adjustor
-					real(50, i(220599)),	-- Drakestone of the Blood Prophet
-					real(50, i(220597)),	-- Drakestone of the Dream Harbinger
-					real(50, i(220598)),	-- Drakestone of the Nightmare Harbinger
-					real(50, i(228187)),	-- Stick of the South Sea
-
-					-- Armor
-					real(25, i(228184)),	-- Goblin Clothesline
-
-					-- Rings
-					real(25, i(228186)),	-- Abandoned Wedding Band
-					real(50, i(227284)),	-- Band of the Beast
-					real(50, i(227280)),	-- Craft of the Shadows
-					real(50, i(227279)),	-- Loop of the Magister
-					real(50, i(227282)),	-- Ring of the Dreaded Mist
-
-					-- Trinkets
-					real(50, i(227990)),	-- Hand of Injustice
-					real(50, i(228432)),	-- Whistle of the Beast
-
-					-- Librams
-					real(15, i(228182)),	-- Idol of Exsanguination (Bear)
-					real(15, i(228181)),	-- Idol of Exsanguination (Cat)
-					real(15, i(228183)),	-- Idol of the Grove
-					real(15, i(228180)),	-- Idol of the Swarm
-					real(15, i(228175)),	-- Libram of Holy Alacrity
-					real(15, i(228173)),	-- Libram of the Consecrated
-					real(15, i(228174)),	-- Libram of the Devoted
-					real(15, i(228178)),	-- Totem of Earthen Vitality
-					real(15, i(228177)),	-- Totem of Raging Fire
-					real(15, i(228179)),	-- Totem of the Plains
-					real(15, i(228176)),	-- Totem of Thunder
-
-					-- Bags
-					real(25, i(228171)),	-- Kezan Cash Carrier
-
-					-- Recipes
-					real(50, i(228121)),	-- Pattern: Leather-Reinforced Runecloth Bag (RECIPE!)
-					real(50, i(13522)),	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
-					real(50, i(13520)),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
-					real(50, i(13518)),	-- Recipe: Flask of Petrification (RECIPE!)
-					real(50, i(13521)),	-- Recipe: Flask of Supreme Power (RECIPE!)
-					real(50, i(13519)),	-- Recipe: Flask of the Titans (RECIPE!)
-
-					-- Reagents
-					real(5, i(226405, {	-- Damaged Undermine Supply Crate
-						description = "Contains random max level crafting materials.",
-					})),
-					real(10, i(17012)),	-- Core Leather
-					real(15, i(17010)),	-- Fiery Core
-					real(15, i(17011)),	-- Lava Core
-				},
-			})),
-			-- #endif
 			n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
 				coords = {
 					-- #if AFTER CATA
@@ -3258,75 +2845,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(214954, {	-- Rix Xizzix <Lost and Found>
-				coord = { 28.4, 75.8, STRANGLETHORN_VALE },
-				groups = {
-					applyclassicphase(SOD_PHASE_THREE, i(220688, {	-- Inert Mantle of Nightmares
-						sourceQuest = 81986,	-- Waking the Nightmare
-						cost = 100000,	-- 10g
-					})),
-					applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
-						description = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
-						-- sourceQuest = ,	--
-						cost = 10000,	-- 1g
-						classes = { PALADIN },
-						groups = {
-							recipe(429242),	-- Engrave Bracers - Light's Grace
-						},
-					})),
-					applyclassicphase(SOD_PHASE_THREE, i(19141, {	-- Luffa
-						sourceQuest = 7727,	-- Incendosaurs? Whateverosaur is More Like It
-						cost = 66451,	-- 6g 64s 51c
-					})),
-					applyclassicphase(SOD_PHASE_THREE, i(221418, {	-- Agamaggan's Roar
-						sourceQuest = 82043,	-- The Wild Gods
-						cost = 11500,	-- 1g 15s
-					})),
-					applyclassicphase(SOD_PHASE_THREE, i(11122, {	-- Carrot on a Stick
-						sourceQuest = 2770,	-- Gahz'rilla
-						cost = 28650,	-- 2g 86s 50c
-					})),
-					applyclassicphase(SOD_PHASE_THREE, i(10418, {	-- Glimmering Mithril Insignia
-						sourceQuest = 3321,	-- Did You Lose This?
-						cost = 65859,	-- 6g 58s 59c
-					})),
-					applyclassicphase(SOD_PHASE_TWO, i(2820, {	-- Nifty Stopwatch
-						sourceQuest = 778,	-- This Is Going to Be Hard
-						cost = 18650,	-- 1g 86s 50c
-					})),
-					applyclassicphase(SOD_PHASE_TWO, i(4984, {	-- Skull of Impending Doom
-						sourceQuest = 737,	-- Forbidden Knowledge
-						cost = 22520,	-- 2g 25s 20c
-					})),
-					i(211451, {	-- Acolyte's Void Pearl
-						sourceQuests = {
-							78916,	-- The Heart of the Void (A)
-							78917,	-- The Heart of the Void (H)
-						},
-						cost = 750000,	-- 75g
-					}),
-					i(211449, {	-- Avenger's Void Pearl
-						sourceQuests = {
-							78916,	-- The Heart of the Void (A)
-							78917,	-- The Heart of the Void (H)
-						},
-						cost = 750000,	-- 75g
-					}),
-					i(211450, {	-- Invoker's Void Pearl
-						sourceQuests = {
-							78916,	-- The Heart of the Void (A)
-							78917,	-- The Heart of the Void (H)
-						},
-						cost = 750000,	-- 75g
-					}),
-					i(211420, {	-- Shifting Scale Talisman
-						sourceQuest = 78909,	-- Shifting Scale Talisman
-						cost = 25000,	-- 2g 50s
-					}),
-				},
-			})),
-			-- #endif
 			n(1149, {	-- Uthok <General Supplies>
 				coords = {
 					-- #if AFTER CATA
@@ -3373,78 +2891,11 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 					i(7087, {	-- Pattern: Crimson Silk Cloak (RECIPE!)
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217258, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-						timeline = { ADDED_1_15_1 },
-						isLimited = true,
-					})),
-					-- #endif
 					i(14630, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_1 },
-						-- #endif
 						isLimited = true,
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, n(222413, {	-- Zalgo the Explorer <Purveyor of Lost Goods>
-				coord = { 28.4, 75.8, STRANGLETHORN_VALE },
-				groups = {
-					i(224409, {	-- Serpent's Striker (2.6 speed)
-						cost = { { "i", 220589, 1 } },	-- Serpent's Striker (1.5 speed)
-					}),
-					--[[
-					-- CRIEVE NOTE: Yeah, this is on the vendor, but also causes a stack overflow. Let's not.
-					i(220589, {	-- Serpent's Striker (1.5 speed)
-						cost = { { "i", 224409, 1 } },	-- Serpent's Striker (2.6 speed)
-					}),
-					]]
-					bloodicon(i(220642)),	-- Banished Martyr's Plate Armor
-					bloodicon(i(220643)),	-- Banished Martyr's Plate Legguards
-					bloodicon(i(220648)),	-- Banished Martyr's Plate Boots
-					ritualicon(i(220683)),	-- Benevolent Prophet's Vest
-					ritualicon(i(220684)),	-- Benevolent Prophet's Leggings
-					ritualicon(i(220685)),	-- Benevolent Prophet's Sandals
-					bloodicon(i(220676)),	-- Blood Corrupted Tunic
-					bloodicon(i(220678)),	-- Blood Corrupted Pants
-					bloodicon(i(220677)),	-- Blood Corrupted Boots
-					ritualicon(i(220779)),	-- Coagulated Bloodguard Tunic
-					ritualicon(i(220778)),	-- Coagulated Bloodguard Pants
-					ritualicon(i(220780)),	-- Coagulated Bloodguard Boots
-					bloodicon(i(220665)),	-- Corrupted Spiritweaver's Breastplate
-					bloodicon(i(220663)),	-- Corrupted Spiritweaver's Leggings
-					bloodicon(i(220664)),	-- Corrupted Spiritweaver's Sabatons
-					bloodicon(i(220666)),	-- Dread Hunter's Chainmail
-					bloodicon(i(220667)),	-- Dread Hunter's Chausses
-					bloodicon(i(220668)),	-- Dread Hunter's Greaves
-					ritualicon(i(220669)),	-- Exiled Prophet's Jerkin
-					ritualicon(i(220671)),	-- Exiled Prophet's Leather Pants
-					ritualicon(i(220670)),	-- Exiled Prophet's Slippers
-					ritualicon(i(220672)),	-- Lost Worshipper's Harness
-					ritualicon(i(220673)),	-- Lost Worshipper's Leggings
-					ritualicon(i(220675)),	-- Lost Worshipper's Treads
-					ritualicon(i(220680)),	-- Malevolent Prophet's Vest
-					ritualicon(i(220679)),	-- Malevolent Prophet's Leggings
-					ritualicon(i(220681)),	-- Malevolent Prophet's Sandals
-					ritualicon(i(220783)),	-- Nightmare Prophet's Vestments
-					ritualicon(i(220781)),	-- Nightmare Prophet's Leggings
-					ritualicon(i(220784)),	-- Nightmare Prophet's Sandals
-					bloodicon(i(220650)),	-- Obsessed Prophet's Chestplate
-					bloodicon(i(220651)),	-- Obsessed Prophet's Legguards
-					bloodicon(i(220652)),	-- Obsessed Prophet's Ornate Boots
-					bloodicon(i(220657)),	-- Ostracized Berserker's Hauberk
-					bloodicon(i(220658)),	-- Ostracized Berserker's Legplates
-					bloodicon(i(220659)),	-- Ostracized Berserker's Chain Greaves
-					bloodicon(i(220660)),	-- Shunned Devotee's Chainshirt
-					bloodicon(i(220661)),	-- Shunned Devotee's Legguards
-					bloodicon(i(220662)),	-- Shunned Devotee's Scale Boots
-					bloodicon(i(220653)),	-- Wailing Berserker's Chestplate
-					bloodicon(i(220654)),	-- Wailing Berserker's Legplates
-					bloodicon(i(220656)),	-- Wailing Berserker's Battleboots
-				},
-			})),
-			-- #endif
 			n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
 				coords = {
 					-- #if AFTER CATA
@@ -3458,17 +2909,8 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 						isLimited = true,
 					}),
 					i(12163, {	-- Plans: Moonsteel Broadsword (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_1 },
-						-- #endif
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217282, {	-- Plans: Moonsteel Broadsword (RECIPE!)
-						timeline = { ADDED_1_15_1 },
-						isLimited = true,
-					})),
-					-- #endif
 					i(12252, {	-- Staff of Protection
 						isLimited = true,
 					}),

@@ -231,94 +231,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pvp(n(PVP, {
-			applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant
-				readable = "Defeat a Lieutenant",
-				icon = 131013,
-				text = {
-					en = "Defeat a Lieutenant",
-					de = "Besiege einen Leutnant",
-					es = "Derrota a un Teniente",
-					mx = "Derrota a un Teniente",
-					fr = "Battre un Lieutenant",
-					it = "Sconfiggi un Tenente",
-					ko = "중위를 처치하세요",
-					pt = "Derrote um Tenente",
-					ru = "Победить лейтенанта",
-					cn = "击败一名中尉",
-					tw = "擊敗一名中尉",
-				},
-			}), {
-				aqd = {
-					crs = {
-						212730,	-- Tojara <Blademaster>
-						212801,	-- Jubei <Blademaster>
-						212802,	-- Moogul the Sly <Blademaster>
-					},
-					coords = {
-						{ 54.8, 54.8, ASHENVALE },
-						{ 22.0, 38.6, ASHENVALE },
-						{ 69.6, 63.6, ASHENVALE },
-					},
-					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
-				},
-				hqd = {
-					crs = {
-						212707,	-- Larodar <Keeper of the Grove>
-						212803,	-- Ceredwyn <Keeper of the Grove>
-						212804,	-- Centrius <Keeper of the Grove>
-					},
-					coords = {
-						{ 51.6, 54.8, ASHENVALE },
-						{ 74.0, 74.0, ASHENVALE },
-						{ 28.6, 28.8, ASHENVALE },
-					},
-					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
-				},
-				timeline = { REMOVED_2_0_1 },
-				repeatable = true,
-				groups = {
-					i(211813, {	-- Silverwing Sentinel Charm
-						races = HORDE_ONLY,
-					}),
-					i(211814, {	--
-						races = ALLIANCE_ONLY,
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Win the Battle
-				readable = "Win the Battle",
-				icon = [[~_.asset("Category_PvP")]],
-				text = {
-					en = "Win the Battle",
-					de = "Gewinne den Kampf",
-					es = "Gana la Batalla",
-					mx = "Gana la Batalla",
-					fr = "Gagnez la Bataille",
-					it = "Vinci la Battaglia",
-					ko = "전투에서 승리하세요",
-					pt = "Ganhe a Batalha",
-					ru = "Выиграй битву",
-					cn = "赢得战斗",
-					tw = "贏得戰鬥",
-				},
-			}), {
-				aqd = {
-					cr = 212969,	-- Kazragore <Far Seer>
-					coord = { 42.0, 67.0, ASHENVALE },
-					maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
-				},
-				hqd = {
-					cr = 212970,	-- Felore Moonray <Priestess of the Moon>
-					coord = { 50.5, 72.0, ASHENVALE },
-					maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
-				},
-				timeline = { REMOVED_2_0_1 },
-				repeatable = true,
-			})),
-		})),
-		-- #endif
 		-- #if AFTER CATA
 		n(PROFESSIONS, {
 			prof(FISHING, {
@@ -411,18 +323,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78088, {	-- A Strange Artifact
-				providers = {
-					{ "i", 209836 },	-- Althalaxx Orb
-					{ "n",   3663 },	-- Delgren the Purifier
-				},
-				coord = { 26.2, 38.6, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { DARKSHORE },
-				classes = { PALADIN },
-			})),
-			-- #endif
 			q(13919, {	-- A Trip to the Moonwell
 				sourceQuest = 26475,	-- Elune's Tear
 				qg = 3894,	-- Pelturas Whitemoon
@@ -430,17 +330,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78089, {	-- Advice From Stormwind
-				sourceQuest = 78088,	-- A Strange Artifact
-				qg = 3663,	-- Delgren the Purifier
-				qi = 209748,	-- Althalaxx Orb
-				coord = { 26.2, 38.6, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { STORMWIND_CITY },
-				classes = { PALADIN },
-			})),
-			-- #endif
 			q(26457, {	-- Agents of Destruction
 				qg = 17287,	-- Sentinel Luciel Starwhisper
 				coord = { 83.9, 62.7, ASHENVALE },
@@ -751,27 +640,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, pvp(q(79098, {	-- Clear the Forest!
-				providers = {
-					{ "i", 211813 },	-- Silverwing Sentinel Charm
-					{ "n", 212969 },	-- Kazragore <Far Seer>
-				},
-				coord = { 42.0, 67.0, ASHENVALE },
-				maxReputation = { FACTION_WARSONG_OUTRIDERS, HONORED },
-				timeline = { REMOVED_2_0_1 },
-				races = HORDE_ONLY,
-				-- #if AFTER 1.15.2
-				isDaily = true,
-				-- #else
-				isWeekly = true,
-				-- #endif
-				lvl = 18,
-				groups = {
-					i(211816),	-- Warsong Battle Drum
-				},
-			}))),
-			-- #endif
 			q(13985, {	-- Clear the Shrine
 				sourceQuest = 13982,	-- In a Bind
 				qg = 34599,	-- Bolyun
@@ -1070,64 +938,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78144, {	-- Alonso the Dragonslayer
-				sourceQuests = {
-					78132,	-- Dragonslayer's Helm
-					78134,	-- Dragonslayer's Lance
-					78133,	-- Dragonslayer's Shield
-				},
-				qg = 210995,	-- Alonso <Knight Errant>
-				coord = { 43.4, 70.4, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				groups = {
-					--[[
-					-- TODO: This might actually just be a follow the npc thing, he slays this little dragon.
-					-- and calls you his squire and asks you to watch. Haven't done this quest yet myself.
-					objective(1, {	-- Slay the Green Dragon Whelp?
-						provider = { "n", 211042 },	-- Green Dragon Whelp
-					}),
-					]]--
-					i(210015, {	-- Rune of Raging Blow
-						classes = { WARRIOR },
-						groups = {
-							recipe(425444),	-- Engrave Chest - Raging Blow
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78132, {	-- Dragonslayer's Helm
-				providers = {
-					{ "i", 209872 },	-- Dragonslayer's Helm
-					{ "n", 210995 },	-- Alonso <Knight Errant>
-				},
-				coord = { 43.4, 70.4, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { SHADOWFANG_KEEP },
-				classes = { WARRIOR },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78134, {	-- Dragonslayer's Lance
-				providers = {
-					{ "i", 209874 },	-- Dragonslayer's Lance
-					{ "n", 210995 },	-- Alonso <Knight Errant>
-				},
-				coord = { 43.4, 70.4, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { WETLANDS },
-				classes = { WARRIOR },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78133, {	-- Dragonslayer's Shield
-				providers = {
-					{ "i", 209873 },	-- Dragonslayer's Shield
-					{ "n", 210995 },	-- Alonso <Knight Errant>
-				},
-				coord = { 43.4, 70.4, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { REDRIDGE_MOUNTAINS },
-				classes = { WARRIOR },
-			})),
-			-- #endif
 			q(26476, {	-- Dryad Delivery
 				sourceQuest = 26475,	-- Elune's Tear
 				qg = 3691,	-- Raene Wolfrunner
@@ -1159,62 +969,6 @@ maproot(KALIMDOR, ASHENVALE, {
 					}),
 				},
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78506, {	-- Elemental Distress
-				sourceQuest = 78920,	-- Baron Aquanis (H)
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-				coord = { 11.6, 34.2, ASHENVALE },
-				maps = { STONETALON_MOUNTAINS },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 25,
-				groups = {
-					objective(1, {	-- 0/1 Mote of Seismic Rage
-						provider = { "i", 210668 },	-- Mote of Seismic Rage
-						coord = { 33.2, 69.8, STONETALON_MOUNTAINS },
-						crs = {
-							4034,	-- Enraged Stone Spirit
-							4035,	-- Furious Stone Spirit
-						},
-					}),
-					objective(2, {	-- 0/1 Mote of Infernal Rage
-						provider = { "i", 210667 },	-- Mote of Infernal Rage
-						coord = { 32.6, 67.7, STONETALON_MOUNTAINS },
-						crs = {
-							4038,	-- Burning Destroyer
-							4037,	-- Burning Ravager
-							4036,	-- Rogue Flame Spirit
-						},
-					}),
-					objective(3, {	-- 0/1 Mote of Torrential Rage
-						provider = { "i", 210665 },	-- Mote of Torrential Rage
-						coord = { 49.6, 71.2, ASHENVALE },
-						cr = 3917,	-- Befouled Water Elemental
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78537, {	-- Elixir of Insight (1/2)
-				sourceQuest = 78506,	-- Elemental Distress
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-				coord = { 11.6, 34.2, ASHENVALE },
-				cost = {
-					{ "i", 5996, 1 },	-- Elixir of Water Breathing
-					{ "i", 3383, 1 },	-- Elixir of Wisdom
-				},
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 25,
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78561, {	-- Elixir of Insight (2/2)
-				sourceQuest = 78537,	-- Elixir of Insight (1/2)
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-				qi = 210712,	-- Elixir of Insight
-				coord = { 11.6, 34.2, ASHENVALE },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 25,
-			})),
 			-- #endif
 			q(26475, {	-- Elune's Tear
 				sourceQuest = 26474,	-- Orendil's Cure
@@ -1409,32 +1163,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				lvl = { 19, 23 },
 				-- #endif
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
-				sourceQuest = 78561,	-- Elixir of Insight (2/2)
-				qg = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-				coord = { 11.6, 34.2, ASHENVALE },
-				maps = { THE_BARRENS },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 25,
-				groups = {
-					objective(1, {	-- 0/1 Hirzek's Staff
-						provider = { "i", 210724 },	-- Hirzek's Staff
-					}),
-					objective(2, {	-- 0/1 Hirzek slain
-						provider = { "n", 212694 },	-- Hirzek
-						coord = { 43.6, 78.8, THE_BARRENS },
-					}),
-					i(210746, {	-- Rune of Earth Shield
-						classes = { SHAMAN },
-						groups = {
-							recipe(410101),	-- Engrave Pants - Earth Shield
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(13880, {	-- Hot Lava
 				sourceQuests = {
 					13877,	-- Go With The Flow (A)
@@ -1725,17 +1453,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78684, {	-- Mysterious Traveler
-				sourceQuest = 78681,	-- The Conjuring
-				qg = 213444,	-- Mysterious Traveler
-				coord = { 79.0, 80.2, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				maps = { THE_BARRENS },
-				classes = { WARLOCK },
-				lvl = 20,
-			})),
-			-- #endif
 			q(13602, {	-- Naga of the Strand
 				qg = 3845,	-- Shindrell Swiftfire
 				coord = { 18.2, 20.4, ASHENVALE },
@@ -2283,34 +2000,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				races = ALLIANCE_ONLY,
 				groups = { i(23776) },	-- Warsong Lumber (QI!)
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, pvp(q(79090, {	-- Repelling Invaders
-				providers = {
-					{ "i", 211814 },	-- Warsong Outrider Mark
-					{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
-				},
-				coord = { 50.5, 72.0, ASHENVALE },
-				maxReputation = { FACTION_SILVERWING_SENTINELS, HONORED },
-				timeline = { REMOVED_2_0_1 },
-				races = ALLIANCE_ONLY,
-				-- #if AFTER 1.15.2
-				isDaily = true,
-				-- #else
-				isWeekly = true,
-				-- #endif
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/10 Warsong Lumber
-						providers = {
-							{ "i", 23776 },	-- Warsong Lumber
-							{ "o", 181686 },	-- Warsong Lumber Pile
-							{ "o", 181687 },	-- Lumber Pile
-						},
-					}),
-					i(211815),	-- Silverwing Battle Hymn
-				},
-			}))),
-			-- #endif
 			q(26456, {	-- Report from the Northern Front
 				sourceQuest = 13935,	-- Defend the Tree!
 				qg = 3880,	-- Sentinel Melyria Frostshadow
@@ -2404,23 +2093,6 @@ maproot(KALIMDOR, ASHENVALE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78093, {	-- Return to Delgren
-				sourceQuest = 78092,	-- It Must Be Destroyed
-				providers = {
-					{ "o", 409315 },	-- Shattered Orb
-					{ "i", 209800 },	-- Orb Fragments
-				},
-				coord = { 89.4, 77.0, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-				groups = {
-					recipe(410014, {	-- Engrave Chest - Divine Storm
-						classes = { PALADIN },
-					}),
-				},
-			})),
-			-- #endif
 			q(26479, {	-- Return to Raene
 				sourceQuest = 26478,	-- Playing Possum
 				qg = 3916,	-- Shael'dryn
@@ -2672,32 +2344,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to the Dead
-				readable = "Speak to the Dead",
-				icon = 131038,
-				text = {
-					en = "Speak to the Dead",
-					de = "Sprich mit den Toten",
-					es = "Hablar con los Muertos",
-					-- TODO: mx = "",
-					fr = "Parlez aux Morts",
-					it = "Parla con i Morti",
-					ko = "죽은 자와 대화",
-					pt = "Fale com os Mortos",
-					ru = "Поговорите с мертвыми",
-					cn = "与死者交谈",
-					tw = "與死者交談",
-				},
-			}), {
-				questID = 78907,	-- Dead Twilight Cultist HQT
-				qg = 212334,	-- Dead Twilight Cultist
-				coord = { 17.3, 26.7, ASHENVALE },
-				cost = { { "i", 210708, 1 } },	-- Elixir of Coalesced Regret
-				timeline = { REMOVED_2_0_1 },
-				OnUpdate = [[_.OnUpdateDB.SOD_FOR_CRAFTER]],
-			})),
-			-- #endif
 			q(13962, {	-- Stalemate
 				sourceQuest = 13958,	-- Condition Critical!
 				qg = 34518,	-- Thagg
@@ -3915,14 +3561,6 @@ maproot(KALIMDOR, ASHENVALE, {
 					i(16072, {	-- Expert Cookbook
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 				},
 			}),
@@ -3959,41 +3597,6 @@ maproot(KALIMDOR, ASHENVALE, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(211691, {	-- Spell Notes: Arcane Blast
-				description = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
-				--[[
-				-- TODO: Find the objectIDs and if there are any questIDs.
-				providers = {
-					{ "o",  },	-- Arcane Shard
-					{ "o",  },	-- Arcane Shard
-					{ "o",  },	-- Arcane Shard
-				},
-				]]--
-				coords = {
-					{ 13.0, 24.8, ASHENVALE },	-- Southern Crystal
-					{ 14.0, 19.8, ASHENVALE },	-- Middle Crystal
-					{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { MAGE },
-				groups = {
-					recipe(401757),	-- Engrave Gloves - Arcane Blast
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210044, {	-- Symbol of the First Owl
-				description = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
-				providers = {
-					{ "o", 410020 },	-- Owl Statue
-					{ "n", 211269 },	-- Summoned Wisp
-				},
-				coord = { 87.0, 43.2, ASHENVALE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { DRUID },
-			})),
-		}),
-		-- #endif
 		n(ZONE_DROPS, {
 			i(23777, {	-- Diabolical Plans [Alliance]
 				timeline = { ADDED_2_0_1 },
@@ -4085,68 +3688,6 @@ maproot(KALIMDOR, ASHENVALE, {
 			i(16656, {	-- Shredder Operating Manual - Page 12
 				timeline = { REMOVED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 209841, 1 },	-- Wild Magic Essence
-					{ "i", 11288, 1 },	-- Greater Magic Wand
-				},
-				classes = { HUNTER },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(211534, {	-- Primal Insight
-				coords = {
-					{ 37.6, 35.4, ASHENVALE },
-					{ 32.4, 42.2, ASHENVALE },
-					{ 54.6, 63.0, ASHENVALE },
-				},
-				classes = { PRIEST },
-				crs = {
-					3924,	-- Thistlefur Shaman
-					3922,	-- Thistlefur Totemic
-					3750,	-- Foulweald Totemic
-				},
-				groups = {
-					i(211531, {	-- Prophecy of Seven Visitors
-						description = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
-						coords = {
-							{ 38.0, 29.0, ASHENVALE },
-							{ 38.0, 26.0, ASHENVALE },
-						},
-						classes = { PRIEST },
-						groups = {
-							recipe(415997),	-- Engrave Chest - Strength of Soul
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
-				coords = {
-					{ 7.2, 13.2, DARKSHORE },
-					{ 14.0, 26.6, DARKSHORE },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { MAGE },
-				crs = {
-					3715,	-- Wrathtail Sea Witch
-					3717,	-- Wrathtail Sorceress
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(209841, {	-- Wild Magic Essence
-				coords = {
-					{ 33.6, 38.8, ASHENVALE },
-					{ 54.6, 63.0, ASHENVALE },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { HUNTER },
-				crs = {
-					3748,	-- Foulweald Shaman
-					3750,	-- Foulweald Totemic
-					3924,	-- Thistlefur Shaman
-					3922,	-- Thistlefur Totemic
-				},
-			})),
-			-- #endif
 		}),
 	},
 });

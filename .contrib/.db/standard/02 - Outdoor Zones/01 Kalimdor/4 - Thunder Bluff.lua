@@ -202,27 +202,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					i(7130),	-- Brutal Helm
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-				questID = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
-				qgs = {
-					207743,	-- Netali Proudwind <General Goods>
-					207754,	-- Mooart
-				},
-				coord = { 28.8, 19.2, THUNDER_BLUFF },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				races = HORDE_ONLY,
-				groups = {
-					i(204716, {	-- Rune of Frenzied Assault
-						classes = { WARRIOR },
-						groups = {
-							recipe(425447),	-- Engrave Pants - Frenzied Assault
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(1844, {	-- Chimaeric Horn
 				sourceQuest = 1840,	-- Orm Stonehoof and the Brutal Helm
 				qg = 6410,	-- Orm Stonehoof
@@ -596,76 +575,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					i(67414),	-- Bag of Shiny Things
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
-				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
-				qi = 206159,	-- Venture Co Disguise
-				coord = { 39.6, 65.6, THUNDER_BLUFF },
-				timeline = { REMOVED_2_0_1 },
-				maps = { MULGORE },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 6,
-				groups = {
-					objective(1, {	-- 0/5 Seaforium Mining Charge
-						providers = {
-							{ "i", 206157 },	-- Seaforium Mining Charge
-							{ "o", 403041 },	-- Blasting Supplies
-						},
-						coord = { 61.0, 47.0, MULGORE },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
-				sourceQuest = 76156,	-- Stalk With The Earthmother (1/3)
-				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
-				coord = { 39.6, 65.6, THUNDER_BLUFF },
-				timeline = { REMOVED_2_0_1 },
-				maps = { MULGORE },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 6,
-				groups = {
-					objective(1, {	-- 0/1 Pine Salve
-						providers = {
-							{ "i", 206175 },	-- Pine Salve
-							{ "o", 403105 },	-- Windfury Cone
-						},
-						cost = {
-							{ "i", 206176, 1 },	-- 1x Mortar and Pestle
-							{ "i", 206170, 8 },	-- 8x Windfury Cone
-						},
-						coord = { 53.48, 9.37, MULGORE },
-					}),
-					i(206177),	-- Pine Nut Butter
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
-				sourceQuest = 76160,	-- Stalk With The Earthmother (2/3)
-				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
-				coord = { 39.6, 65.6, THUNDER_BLUFF },
-				timeline = { REMOVED_2_0_1 },
-				classes = { SHAMAN },
-				races = HORDE_ONLY,
-				lvl = 6,
-				groups = {
-					objective(1, {	-- 0/1 Fish Chunks
-						providers = {
-							{ "i", 206345 },	-- Fish Chunks
-							{ "i", 206344 },	-- Knife Set
-						},
-						cost = { { "i", 6291, 1 } },	-- 1x Raw Brilliant Smallfish
-						coord = { 53.48, 9.37, THUNDER_BLUFF },
-					}),
-					recipe(674, {	-- Dual Wield
-						classes = { SHAMAN },
-					}),
-					recipe(410104, {	-- Engrave Gloves - Lava Lash
-						classes = { SHAMAN },
-					}),
-				},
-			})),
-			-- #endif
 			q(1131, {	-- Steelsnap
 				sourceQuest = 1130,	-- Melor Sends Word
 				qg = 3441,	-- Melor Stonehoof

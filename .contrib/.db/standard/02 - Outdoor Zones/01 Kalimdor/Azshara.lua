@@ -603,23 +603,6 @@ maproot(KALIMDOR, AZSHARA, {
 					}),
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81697, {	-- Defanged
-				sourceQuest = 81682,	-- The Old Champ
-				qg = 221400,	-- Kajind
-				coord = { 25.4, 66.2, AZSHARA },
-				timeline = { ADDED_1_15_2 },
-				classes = { WARRIOR },
-				lvl = 45,
-				groups = {
-					objective(1, {	-- 0/1 Kajind's Blade
-						provider = { "i", 219935 },	-- Kajind's Blade
-						coord = { 39.6, 71.2, AZSHARA },
-						cr = 221651,	-- Ceruleos
-					}),
-				},
-			})),
-			-- #endif
 			q(14146, {	-- Defend the Gates!
 				sourceQuest = 14135,	-- Up a Tree
 				timeline = { ADDED_4_0_3 },
@@ -1553,17 +1536,6 @@ maproot(KALIMDOR, AZSHARA, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81801, {	-- Return to the Arena
-				sourceQuest = 81697,	-- Defanged
-				qg = 221400,	-- Kajind
-				coord = { 25.4, 66.2, AZSHARA },
-				timeline = { ADDED_1_15_2 },
-				maps = { TANARIS },
-				classes = { WARRIOR },
-				lvl = 45,
-			})),
-			-- #endif
 			q(3421, {	-- Return Trip
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, AZSHARA },
@@ -2454,19 +2426,6 @@ maproot(KALIMDOR, AZSHARA, {
 					i(10714),	-- Crystallized Azsharite
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
-				provider = { "o", 457091 },	-- Chen's Training Manual
-				coord = { 76.9, 44.2, AZSHARA },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-				groups = {
-					recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
-						classes = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
-					}),
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
 			n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
@@ -2510,13 +2469,6 @@ maproot(KALIMDOR, AZSHARA, {
 			n(3621, {	-- Kurll
 				coord = { 21.8, 52.0, AZSHARA },
 				races = HORDE_ONLY,
-				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					i(231780, {	-- Tome of Conjure Water VIII
-						timeline = { ADDED_1_15_4 },
-					}),
-					-- #endif
-				},
 			}),
 			n(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>
 				coord = { 57.0, 50.6, AZSHARA },

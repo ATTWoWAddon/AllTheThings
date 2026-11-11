@@ -991,84 +991,6 @@ maproot(KALIMDOR, DUROTAR, {
 			maps = { 2 },	-- Burning Blade Coven
 			groups = {
 				n(QUESTS, {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77582, {	-- A Trial of Fitness [Orc]
-						qg = 3153,	-- Frang <Warrior Trainer>
-						coord = { 42.8, 69.4, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { ORC },
-						classes = { WARRIOR },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								providers = {
-									{ "i", 204806 },	-- Rune of Victory Rush
-									{ "o", 404911 },	-- Hidden Cache
-								},
-								coord = { 43.2, 69.6, DUROTAR },
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77588, {	-- A Trial of Fitness [Troll]
-						qg = 3153,	-- Frang <Warrior Trainer>
-						coord = { 42.8, 69.4, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { WARRIOR },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								providers = {
-									{ "i", 204806 },	-- Rune of Victory Rush
-									{ "o", 404911 },	-- Hidden Cache
-								},
-								coord = { 43.2, 69.6, DUROTAR },
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77583, {	-- Atop the Cliffs [Orc]
-						qg = 3155,	-- Rwag <Rogue Trainer>
-						coord = { 41.2, 68.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { ORC },
-						classes = { ROGUE },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-								providers = {
-									{ "o", 404911 },	-- Hidden Cache
-									{ "i", 204795 },	-- Rune of Shadowstrike
-								},
-								coord = { 43.2, 69.6, DUROTAR },
-							}),
-							recipe(400105),	-- Engrave Gloves - Shadowstrike
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77592, {	-- Atop the Cliffs [Troll]
-						qg = 3155,	-- Rwag <Rogue Trainer>
-						coord = { 41.2, 68.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { ROGUE },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-								providers = {
-									{ "o", 404911 },	-- Hidden Cache
-									{ "i", 204795 },	-- Rune of Shadowstrike
-								},
-								coord = { 43.2, 69.6, DUROTAR },
-							}),
-							recipe(400105),	-- Engrave Gloves - Shadowstrike
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(25149, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Orc)
 						sourceQuest = 25138,	-- Glyphic Parchment
 						qg = 39206,	-- Acrypha <Mage Trainer>
@@ -1410,54 +1332,6 @@ maproot(KALIMDOR, DUROTAR, {
 						races = HORDE_ONLY,
 						isBreadcrumb = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77584, {	-- Hunt for the Rune
-						qg = 3154,	-- Jen'shan <Hunter Trainer>
-						coord = { 42.8, 69.2, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { ORC },
-						classes = { HUNTER },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
-								provider = { "i", 206168 },	-- Rune of the Chimera
-								cr = 3124,	-- Scorpid Worker
-							}),
-							recipe(410121),	-- Engrave Gloves - Chimera Shot
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77585, {	-- Icons of Power [Orc]
-						qg = 3157,	-- Shikrik <Shaman Trainer>
-						coord = { 42.4, 69.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { ORC },
-						classes = { SHAMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
-								provider = { "i", 206381 },	-- Dyadic Icon
-							}),
-							recipe(410094),	-- Engrave Chest - Overload
-							i(2127),	-- Cracked Leather Vest
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77587, {	-- Icons of Power [Troll]
-						qg = 3157,	-- Shikrik <Shaman Trainer>
-						coord = { 42.4, 69.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { SHAMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
-								provider = { "i", 206381 },	-- Dyadic Icon
-							}),
-							recipe(410094),	-- Engrave Chest - Overload
-							i(2127),	-- Cracked Leather Vest
-						},
-					})),
-					-- #endif
 					q(25145, {	-- Immolate [Cata] / Corruption [MoP+] (Orc)
 						sourceQuest = 3090,	-- Tainted Parchment
 						qg = 3156,	-- Nartok <Warlock Trainer>
@@ -1572,24 +1446,6 @@ maproot(KALIMDOR, DUROTAR, {
 						timeline = { REMOVED_4_0_3 },
 						races = HORDE_ONLY,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77590, {	-- Rugged Terrain
-						qg = 3154,	-- Jen'shan <Hunter Trainer>
-						coord = { 42.8, 69.2, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { HUNTER },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
-								provider = { "i", 206168 },	-- Rune of the Chimera
-								cr = 3124,	-- Scorpid Worker
-							}),
-							recipe(410121),	-- Engrave Gloves - Chimera Shot
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(3089, {	-- Rune-Inscribed Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
@@ -1673,25 +1529,6 @@ maproot(KALIMDOR, DUROTAR, {
 						races = { TROLL },
 						classes = { WARRIOR },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77643, {	-- Spell Research
-						qg = 5884,	-- Mai'ah <Mage Trainer>
-						qi = 211809,	-- Comprehension Primer
-						coord = { 42.4, 69.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { MAGE },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-								provider = { "i", 203745 },	-- Spell Notes: Ice Lance
-							}),
-							recipe(401760),	-- Engrave Gloves - Ice Lance
-							i(211779),	-- Comprehension Charm
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(25139, {	-- Steady Shot (Orc)
 						sourceQuest = 3087,	-- Etched Parchment
 						qg = 39214,	-- Karranisha <Hunter Trainer>
@@ -1745,23 +1582,6 @@ maproot(KALIMDOR, DUROTAR, {
 							i(4920),	-- Battleworn Cape
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77586, {	-- Stolen Power
-						qg = 3156,	-- Nartok <Warlock Trainer>
-						coord = { 40.6, 68.4, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { ORC },
-						classes = { WARLOCK },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
-								provider = { "i", 205230 },	-- Rune of Haunting
-							}),
-							recipe(403919),	-- Engrave Gloves - Haunt
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(3090, {	-- Tainted Parchment
 						sourceQuest = 788,	-- Cutting Teeth
 						qg = 3143,	-- Gornek
@@ -1899,25 +1719,6 @@ maproot(KALIMDOR, DUROTAR, {
 							i(5778),	-- Primitive Walking Stick
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77642, {	-- Wisdom of the Loa
-						qg = 3707,	-- Ken'jai <Priest Trainer>
-						coord = { 42.4, 68.8, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = { TROLL },
-						classes = { PRIEST },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
-								provider = { "i", 205951 },	-- Memory of a Troubled Acolyte
-								description = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
-								coord = { 55.4, 72.6, DUROTAR },
-							}),
-							recipe(402862),	-- Engrave Gloves - Penance
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(25152, {	-- Your Place In The World
 						qg = 10176,	-- Kaltunk
 						coords = {
@@ -1939,49 +1740,6 @@ maproot(KALIMDOR, DUROTAR, {
 						isBreadcrumb = true,
 					}),
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				n(TREASURES, {
-					applyclassicphase(SOD_PHASE_ONE, o(404695, {	-- Waterlogged Stashbox
-						coord = { 43.0, 54.5, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						races = HORDE_ONLY,
-						groups = {
-							i(205230, {	-- Rune of Haunting
-								classes = { WARLOCK },
-							}),
-							i(203751, {	-- Spell Notes: CALE ENCI
-								classes = { MAGE },
-							}),
-						},
-					})),
-				}),
-				n(ZONE_DROPS, {
-					applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
-						coord = { 40.8, 64.0, DUROTAR },
-						timeline = { REMOVED_2_0_1 },
-						classes = { SHAMAN },
-						cr = 3124,	-- Scorpid Worker
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-						description = "This can also drop from any of the rare mobs in the zone.",
-						coord = { 40.6, 67.7, DUROTAR },
-						classes = { HUNTER },
-						cr = 3281,	-- Sarkoth
-						groups = {
-							recipe(410123),	-- Engrave Gloves - Explosive Shot
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-						description = "This can also drop from any of the rare mobs in the zone.",
-						coord = { 40.6, 67.7, DUROTAR },
-						classes = { WARRIOR },
-						cr = 3281,	-- Sarkoth
-						groups = {
-							recipe(403476),	-- Engrave Pants - Furious Thunder
-						},
-					})),
-				}),
-				-- #endif
 			},
 		}),
 		n(ACHIEVEMENTS, {
@@ -2122,73 +1880,6 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(207110, {	-- Durotar Treasure Map
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				cost = {
-					{ "i", 207106, 1 },	-- Bottom-Left Map Piece
-					{ "i", 207107, 1 },	-- Bottom-Right Map Piece
-					{ "i", 207108, 1 },	-- Top-Left Map Piece
-					{ "i", 207109, 1 },	-- Top-Right Map Piece
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207106, {	-- Bottom-Left Map Piece
-				coord = { 67.2, 85.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3206,	-- Voodoo Troll
-					3207,	-- Hexed Troll
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207107, {	-- Bottom-Right Map Piece
-				coord = { 43.0, 39.8, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3111,	-- Razormane Quilboar
-					3114,	-- Razormane Battleguard
-					3113,	-- Razormane Dustrunner
-					3112,	-- Razormane Scout
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
-				coord = { 53.0, 27.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3196,	-- Burning Blade Neophyte
-					3195,	-- Burning Blade Thug
-					3199,	-- Burning Blade Cultist
-					3197,	-- Burning Blade Fanatic
-					3198,	-- Burning Blade Apprentice
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
-				coord = { 53.0, 27.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3196,	-- Burning Blade Neophyte
-					3195,	-- Burning Blade Thug
-					3199,	-- Burning Blade Cultist
-					3197,	-- Burning Blade Fanatic
-					3198,	-- Burning Blade Apprentice
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207109, {	-- Top-Right Map Piece
-				coord = { 58.8, 55.4, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3129,	-- Kul Tiras Marine
-					3128,	-- Kul Tiras Sailor
-				},
-			})),
-		}),
-		-- #endif
 		n(QUESTS, {
 			q(2161, {	-- A Peon's Burden
 				qg = 6786,	-- Ukor
@@ -3733,32 +3424,6 @@ maproot(KALIMDOR, DUROTAR, {
 					{ 53.0, 7.2, DUROTAR },
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(208275, {	-- Frozen Makrura
-				coord = { 58.6, 45.6, DUROTAR },
-				classes = { MAGE, SHAMAN, WARLOCK },
-				groups = {
-					i(205228, {	-- Rune of Chaos Bolt
-						classes = { WARLOCK },
-						groups = {
-							recipe(403925),	-- Engrave Gloves - Chaos Bolt
-						},
-					}),
-					i(203748, {	-- Spell Notes: Burnout
-						classes = { MAGE },
-						groups = {
-							recipe(401759),	-- Engrave Chest - Burnout
-						},
-					}),
-					i(206388, {	-- Sulfurous Icon
-						classes = { SHAMAN },
-						groups = {
-							recipe(425344),	-- Engrave Gloves - Molten Blast
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(5826, {	-- Geolord Mottle
 				coords = {
 					{ 43.6, 40.8, DUROTAR },
@@ -3768,78 +3433,10 @@ maproot(KALIMDOR, DUROTAR, {
 					{ 43.8, 50.0, DUROTAR },
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
-				description = "You can tame him and you still get the rune!",
-				coord = { 69.1, 71.5, DUROTAR },
-				cost = { { "i", 207590, 1 } },	-- Durotar Pig Meat
-				groups = {
-					i(205979, {	-- Rune of Flanking
-						classes = { HUNTER },
-						groups = {
-							recipe(425762),	-- Engrave Pants - Flanking Strike
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
-				provider = { "n", 208179 },	-- Rustling Bush
-				description = "Cast Hunter's Mark on the bush to spawn the rare.",
-				coord = { 40.6, 52.0, DUROTAR },
-				classes = { HUNTER },
-				groups = {
-					i(206155, {	-- Rune of Marksmanship
-						classes = { HUNTER },
-						groups = {
-							recipe(410113),	-- Engrave Chest - Master Marksman
-						},
-					}),
-				},
-			})),
-			-- #endif
 			-- #if AFTER 4.0.3
 			n(5809, {	-- Sergeant Curtis
 				coord = { 59.6, 58.8, DUROTAR },
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
-				-- TODO: Try to get an objectID for this.
-				-- provider = { "o",  },	-- Summoning Circle
-				coord = { 67.6, 87.8, DUROTAR },
-				cost = {
-					{ "i", 207731, 1 },	-- Ominous Tome
-					{ "i", 207732, 1 },	-- Makrura Leg
-					{ "i", 207733, 1 },	-- Kul Tiran Skull
-				},
-				races = HORDE_ONLY,
-				groups = {
-					i(204912, {	-- Rune of Grace
-						classes = { WARLOCK },
-						groups = {
-							recipe(425477),	-- Engrave Pants - Demonic Grace
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
-				provider = { "o", 392029 },	-- Swordsman's Reward
-				coords = {
-					{ 37.0, 46.8, DUROTAR },
-					{ 41.0, 49.8, DUROTAR },
-					{ 55.0, 39.4, DUROTAR },
-					{ 56.4, 27.0, DUROTAR },
-					{ 56.8, 21.6, DUROTAR },
-				},
-				groups = {
-					i(204441, {	-- Rune of Blood Frenzy
-						classes = { WARRIOR },
-						groups = {
-							recipe(403474),	-- Engrave Chest - Blood Frenzy
-						},
-					}),
-				},
-			})),
 			-- #endif
 			n(5808, {	-- Warlord Kolkanis
 				coords = {
@@ -3879,39 +3476,6 @@ maproot(KALIMDOR, DUROTAR, {
 		}),
 		-- #endif
 		n(TREASURES, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
-				provider = { "n", 204827 },	-- Adventurer's Remains
-				coord = { 48.0, 79.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(210589, {	-- Echo of the Ancestors
-						classes = { SHAMAN },
-						groups = {
-							recipe(410099),	-- Engrave Pants - Ancestral Guidance
-						},
-					}),
-					i(205944, {	-- Reciprocal Epiphany
-						classes = { PRIEST },
-						groups = {
-							recipe(402848),	-- Engrave Pants - Prayer of Mending
-						},
-					}),
-					i(206264, {	-- Rune of Inspiration
-						classes = { PALADIN },
-						groups = {
-							recipe(410011),	-- Engrave Pants - Inspiration Exemplar
-						},
-					}),
-					i(206970, {	-- Rune of Life
-						classes = { DRUID },
-						groups = {
-							recipe(410033),	-- Engrave Pants - Lifebloom
-						},
-					}),
-				},
-			})),
-			-- #endif
 			o(3239, {	-- Benedict's Chest
 				coord = { 59.3, 57.7, DUROTAR },
 				timeline = { REMOVED_4_0_3 },
@@ -3920,65 +3484,8 @@ maproot(KALIMDOR, DUROTAR, {
 					i(4881),	-- Aged Envelope
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
-				-- provider = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
-				description = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
-				coords = {
-					{ 38.01, 35.53, DUROTAR },
-					{ 53.36, 50.48, DUROTAR },
-					{ 51.78, 56.39, DUROTAR },
-					{ 36.95, 45.53, DUROTAR },
-					{ 56.53, 28.37, DUROTAR },
-					{ 39.43, 50.06, DUROTAR },
-					{ 54.07, 55.82, DUROTAR },
-					{ 36.3, 9.8, DUROTAR },
-					{ 37.5, 52.5, DUROTAR },
-					{ 41.65, 55.98, DUROTAR },
-					{ 37.99, 60.04, DUROTAR },
-				},
-				classes = { SHAMAN },
-				groups = {
-					recipe(410098),	-- Engrave Chest - Shield Mastery
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
-				provider = { "o", 387466 },	-- Rusty Lockbox
-				coord = { 53.8, 27.2, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
-				provider = { "o", 386675 },	-- Buried Treasure
-				coord = { 62.1, 94.8, DUROTAR },
-				cost = { { "i", 207110, 1 } },	-- Durotar Treasure Map
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(400095),	-- Engrave Chest - Quick Draw
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(208036, {	-- Ba'so
-				coord = { 52.0, 58.4, DUROTAR },
-				races = HORDE_ONLY,
-				groups = {
-					i(203990, {	-- Rune of Mutilation
-						cost = { { "i", 207098, 1 } },	-- Note from Ba'so
-						classes = { ROGUE },
-						groups = {
-							recipe(400094),	-- Engrave Gloves - Mutilate
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(3881, {	-- Grimtak
 				coords = {
 					-- #if AFTER CATA
@@ -4015,23 +3522,6 @@ maproot(KALIMDOR, DUROTAR, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
-				description = "Use the pheromone and tame an adder and then bring it to Razzil.",
-				coord = { 52.2, 44.0, DUROTAR },
-				cost = { { "i", 207631, 1 } },	-- Adder Pheromone
-				crs = { 3300 },	-- Adder
-				races = HORDE_ONLY,
-				groups = {
-					i(206032, {	-- Rune of Carve
-						classes = { HUNTER },
-						groups = {
-							recipe(425758),	-- Engrave Gloves - Carve
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(5942, {	-- Zansoa <Fishing Supplies>
 				coords = {
 					-- #if AFTER CATA
@@ -4074,142 +3564,11 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(207631, {	-- Adder Pheromone
-				coords = {
-					{ 43.2, 40.4, DUROTAR },
-					{ 39.6, 52.6, DUROTAR },
-					{ 50.6, 49.6, DUROTAR },
-					{ 38.6, 55.0, DUROTAR },
-				},
-				classes = { HUNTER },
-				crs = {
-					3114,	-- Razormane Battleguard
-					3111,	-- Razormane Quilboar
-					3113,	-- Razormane Dustrunner
-					3112,	-- Razormane Scout
-					5824,	-- Captain Flat Tusk <Captain of the Battleguard>
-					5826,	-- Geolord Mottle
-				},
-			})),
-			-- #endif
 			i(4882, {	-- Benedict's Key
 				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, DUROTAR },
 				timeline = { DELETED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(207590, {	-- Durotar Pig Meat
-				timeline = { REMOVED_2_0_1 },
-				classes = { HUNTER },
-				crs = {
-					3099,	-- Dire Mottled Boar
-					3100,	-- Elder Mottled Boar
-					3225,	-- Corrupted Mottled Boar
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207733, {	-- Kul Tiran Skull
-				coord = { 57.6, 55.4, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					3128,	-- Kul Tiras Sailor
-					3129,	-- Kul Tiras Marine
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207732, {	-- Makrura Leg
-				coords = {
-					{ 53.8, 84.6, DUROTAR },
-					{ 60.8, 74.8, DUROTAR },
-					{ 61.6, 45.0, DUROTAR },
-					{ 64.4, 92.4, DUROTAR },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					3103,	-- Makrura Clacker
-					3104,	-- Makrura Shellhide
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
-				coord = { 59.2, 56.8, DUROTAR },
-				classes = { PRIEST },
-				races = HORDE_ONLY,
-				crs = {
-					3128,	-- Kul Tiras Sailor
-					3129,	-- Kul Tiras Marine
-				},
-				groups = {
-					recipe(425216),	-- Engrave Chest - Void Plague
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-				description = "This can also drop from any of the rare mobs in the zone.",
-				coord = { 67.6, 87.8, DUROTAR },
-				classes = { PRIEST },
-				cr = 3205,	-- Zalazane
-				groups = {
-					recipe(402854),	-- Engrave Pants - Shared Pain
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207731, {	-- Ominous Tome
-				coord = { 67.4, 83.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					3206,	-- Voodoo Troll
-					3207,	-- Hexed Troll
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
-				coords = {
-					{ 43.0, 39.4, DUROTAR },
-					{ 52.0, 21.6, DUROTAR },
-					{ 67.2, 85.6, DUROTAR },
-				},
-				classes = { PRIEST },
-				crs = {
-					3113,	-- Razormane Dustrunner
-					3118,	-- Dustwind Storm Witch
-					3206,	-- Voodoo Troll
-					3207,	-- Hexed Troll
-				},
-				groups = {
-					recipe(402852),	-- Engrave Pants - Homunculi
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
-				coord = { 51.2, 78.4, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					3119,	-- Kolkar Drudge
-					3120,	-- Kolkar Outrunner
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
-				coord = { 48.6, 32.4, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					3116,	-- Dustwind Pillager
-					3115,	-- Dustwind Harpy
-					3117,	-- Dustwind Savage
-					3118,	-- Dustwind Storm Witch
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
-				coord = { 50.0, 49.6, DUROTAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					3112,	-- Razormane Scout
-					3111,	-- Razormane Quilboar
-					3114,	-- Razormane Battleguard
-					3113,	-- Razormane Dustrunner
-				},
-			})),
-			-- #endif
 			i(5466, {	-- Scorpid Stinger
 				maps = { DUROTAR },
 				crs = {
@@ -4223,29 +3582,6 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials."
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
-				coords = {
-					{ 53.0, 27.6, DUROTAR },
-					{ 53.8, 9.6, DUROTAR },
-					{ 42.8, 26.4, DUROTAR },
-				},
-				classes = { MAGE },
-				crs = {
-					3196,	-- Burning Blade Neophyte
-					3195,	-- Burning Blade Thug
-					3197,	-- Burning Blade Fanatic
-					3198,	-- Burning Blade Apprentice
-					3199,	-- Burning Blade Cultist
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
-				description = "This can also drop from any of the rare mobs in the zone.",
-				coord = { 67.6, 87.8, DUROTAR },
-				classes = { MAGE },
-				cr = 3205,	-- Zalazane
-			})),
-			-- #endif
 		}),
 	},
 });

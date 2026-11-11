@@ -18,9 +18,6 @@ end
 
 -- TODO: move more BoA items here; especially if they are 'cost' items or contain BoP items
 
--- #if SEASON_OF_DISCOVERY
-i(226500);	-- Chipped Drakefire Amulet
--- #endif
 
 -- MOP
 -- #if ANYCLASSIC

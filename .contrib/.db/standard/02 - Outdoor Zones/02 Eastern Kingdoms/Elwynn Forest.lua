@@ -1206,26 +1206,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							-- #endif
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77619, {	-- Meditation on the Light
-						qg = 375,	-- Priestess Anetta <Priest Trainer>
-						coord = { 49.8, 39.6, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { PRIEST },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
-								provider = { "i", 205951 },	-- Memory of a Troubled Acolyte
-								coord = { 48.2, 30.2, ELWYNN_FOREST },
-								description = "Kneel (/kneel) inside Northshire Abbey to gain a Meditation buff, then use the Rune to complete the quest.",
-								cr = 80,	-- Kobold Laborer
-							}),
-							recipe(402862),	-- Engrave Gloves - Penance
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(3903, {	-- Milly Osworth
 						sourceQuest = 18,	-- Brotherhood of Thieves
 						qg = 823,	-- Deputy Willem
@@ -1263,24 +1243,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							}),
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77617, {	-- Relics of the Light
-						qg = 925,	-- Brother Sammuel <Paladin Trainer>
-						coord = { 50.4, 42.0, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { PALADIN },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Crusader Strike
-								provider = { "i", 205420 },	-- Libram of Judgement
-								cr = 38,	-- Defias Thug
-							}),
-							recipe(410002),	-- Engrave Gloves - Crusader Strike
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					-- #endif
 					q(54, {	-- Report to Goldshire
 						sourceQuests = {
 							-- #if AFTER CATA
@@ -1420,40 +1382,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							i(11192),	-- Outfitter Gloves
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77620, {	-- Spell Research
-						qg = 198,	-- Khelden Bremen <Mage Trainer>
-						qi = 211809,	-- Comprehension Primer
-						coord = { 49.6, 39.4, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { MAGE },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-								provider = { "i", 203745 },	-- Spell Notes: Ice Lance
-							}),
-							recipe(401760),	-- Engrave Gloves - Ice Lance
-							i(211779),	-- Comprehension Charm
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77621, {	-- Stolen Power
-						qg = 459,	-- Drusilla La Salle <Warlock Trainer>
-						coord = { 49.8, 42.6, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { WARLOCK },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
-								provider = { "i", 205230 },	-- Rune of Haunting
-							}),
-							recipe(403919),	-- Engrave Gloves - Haunt
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(3105, {	-- Tainted Letter
 						sourceQuest = 7,	-- Kobold Camp Cleanup
 						qg = 197,	-- Marshal McBride
@@ -1515,27 +1443,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							}),
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77616, {	-- The Lost Rune
-						qg = 911,	-- Llane Beshere <Warrior Trainer>
-						coord = { 50.2, 42.2, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { WARRIOR },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								providers = {
-									{ "i", 204806 },	-- Rune of Victory Rush
-									{ "o", 397987 },	-- Kobold Stashbox
-								},
-								coord = { 50.6, 27.2, ELWYNN_FOREST },
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					-- #endif
 					q(26918, {	-- The Power of the Light (Human)
 						sourceQuest = 3101,	-- Consecrated Letter
 						qg = 925,	-- Brother Sammuel <Paladin Trainer>
@@ -1888,23 +1795,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							}),
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77618, {	-- Thrice Stolen
-						qg = 915,	-- Jorik Kerridan <Rogue Trainer>
-						coord = { 50.6, 40.0, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						classes = { ROGUE },
-						races = { HUMAN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-								provider = { "i", 204795 },	-- Rune of Shadowstrike
-							}),
-							recipe(400105),	-- Engrave Gloves - Shadowstrike
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(33, {	-- Wolves Across the Border
 						sourceQuest = 5261,	-- Eagan Peltskinner
 						qg = 196,	-- Eagan Peltskinner
@@ -2001,23 +1891,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 						}},
 					}),
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				n(TREASURES, {
-					applyclassicphase(SOD_PHASE_ONE, o(387477, {	-- Defias Stashbox
-						coord = { 52.6, 51.8, ELWYNN_FOREST },
-						timeline = { REMOVED_2_0_1 },
-						races = ALLIANCE_ONLY,
-						groups = {
-							i(205230, {	-- Rune of Haunting
-								classes = { WARLOCK },
-							}),
-							i(204795, {	-- Rune of Shadowstrike
-								classes = { ROGUE },
-							}),
-						},
-					})),
-				}),
-				-- #endif
 				n(ZONE_DROPS, {
 					-- #if BEFORE 8.1.0.28724
 					i(2057, {	-- Pitted Defias Shortsword
@@ -2035,12 +1908,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 						-- #endif
 						timeline = { REMOVED_4_0_3 },	-- Moved to Gug Fatcandle
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(203751, {	-- Spell Notes: CALE ENCI
-						classes = { MAGE },
-						cr = 38,	-- Defias Thug
-					})),
-					-- #endif
 				}),
 			},
 		}),
@@ -2170,66 +2037,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
-				coords = {
-					{ 57.4, 48.6, ELWYNN_FOREST },
-					{ 71.0, 80.6, ELWYNN_FOREST },
-				},
-				timeline = { REMOVED_2_0_1 },
-				maps = { NORTHSHIRE_VALLEY },
-				classes = { ROGUE },
-				crs = {
-					103,	-- Garrick Padfoot
-					473,	-- Morgan the Collector
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 203787, 1 },	-- Bottom-Left Map Piece
-					{ "i", 203786, 1 },	-- Bottom-Right Map Piece
-					{ "i", 203785, 1 },	-- Top-Left Map Piece
-					{ "i", 203784, 1 },	-- Top-Right Map Piece
-				},
-				classes = { ROGUE },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
-				coord = { 26.2, 88.6, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				cr = 478,	-- Riverpaw Outrunner
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
-				coord = { 79.2, 57.4, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				cr = 46,	-- Murloc Forager
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
-				coord = { 68.8, 78.6, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					6866,	-- Defias Bodyguard
-					116,	-- Defias Bandit
-					 38,	-- Defias Thug
-					474,	-- Defias Rogue Wizard
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
-				coord = { 39.3, 80.4, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					 40,	-- Kobold Miner
-					475,	-- Kobold Tunneler
-					257,	-- Kobold Worker
-				},
-			})),
-		}),
-		-- #endif
 		n(QUESTS, {
 			q(5545, {	-- A Bundle of Trouble
 				qg = 10616,	-- Supervisor Raelen
@@ -3063,27 +2870,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 				timeline = { ADDED_5_1_0 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(204503, {	-- Dead Acolyte
-				coord = { 56.6, 57.6, ELWYNN_FOREST },
-				classes = { WARLOCK },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(205364, {	-- Acolyte's Knapsack
-						classes = { WARLOCK },
-						groups = {
-							i(205184),	-- Acolyte's Note
-							i(205181),	-- Unidentified Artifact
-						},
-					}),
-					i(205183, {	-- Fel-Powered Artifact
-						description = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
-						cost = { { "i", 205182, 1 } },	-- Powerless Artifact
-						classes = { WARLOCK },
-					}),
-				},
-			})),
-			-- #endif
 			n(472, {	-- Fedfennel
 				coords = {
 					-- #if AFTER CATA
@@ -3106,26 +2892,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(202060, {	-- Frozen Murloc
-				coord = { 77.0, 51.8, ELWYNN_FOREST },
-				classes = { MAGE, WARLOCK },
-				groups = {
-					i(205228, {	-- Rune of Chaos Bolt
-						classes = { WARLOCK },
-						groups = {
-							recipe(403925),	-- Engrave Gloves - Chaos Bolt
-						},
-					}),
-					i(203748, {	-- Spell Notes: Burnout
-						classes = { MAGE },
-						groups = {
-							recipe(401759),	-- Engrave Chest - Burnout
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(50926, {	-- Grizzled Ben
 				coord = { 27.2, 67.5, ELWYNN_FOREST },
 				timeline = { ADDED_5_1_0 },
@@ -3246,24 +3012,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
-				provider = { "o", 392029 },	-- Swordsman's Reward
-				coords = {
-					{ 25.6, 69.6, ELWYNN_FOREST },
-					{ 30.6, 74.2, ELWYNN_FOREST },
-					{ 38.4, 76.8, ELWYNN_FOREST },
-				},
-				groups = {
-					i(204441, {	-- Rune of Blood Frenzy
-						classes = { WARRIOR },
-						groups = {
-							recipe(403474),	-- Engrave Chest - Blood Frenzy
-						},
-					}),
-				},
-			})),
-			-- #endif
 		}),
 		-- #if BEFORE TBC
 		n(RIDING_TRAINER, {
@@ -3301,78 +3049,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					i(2057),	-- Pitted Defias Shortsword
 				},
 			}),
-		}),
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
-				provider = { "n", 204827 },	-- Adventurer's Remains
-				coord = { 52.2, 84.65, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(210589, {	-- Echo of the Ancestors
-						classes = { SHAMAN },
-						groups = {
-							recipe(410099),	-- Engrave Pants - Ancestral Guidance
-						},
-					}),
-					i(205944, {	-- Reciprocal Epiphany
-						classes = { PRIEST },
-						groups = {
-							recipe(402848),	-- Engrave Pants - Prayer of Mending
-						},
-					}),
-					i(206264, {	-- Rune of Inspiration
-						classes = { PALADIN },
-						groups = {
-							recipe(410011),	-- Engrave Pants - Inspiration Exemplar
-						},
-					}),
-					i(206970, {	-- Rune of Life
-						classes = { DRUID },
-						groups = {
-							recipe(410033),	-- Engrave Pants - Lifebloom
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203755, {	-- Archmage Theocritus's Research Journal
-				provider = { "o", 386759 },	-- Library Book
-				coord = { 65.4, 70.1, ELWYNN_FOREST },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
-				provider = { "o", 387466 },	-- Rusty Lockbox
-				coord = { 46.2, 62.1, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
-				provider = { "o", 386675 },	-- Buried Treasure
-				coord = { 80.3, 79.1, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 203750, 1 } },	-- Elwynn Treasure Map
-				classes = { ROGUE },
-				groups = {
-					recipe(400095),	-- Engrave Chest - Quick Draw
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(204989, {	-- Wounded Adventurer
-				coord = { 62.0, 47.32, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(205685, {	-- Rune of Aegis
-						classes = { PALADIN },
-						groups = {
-							recipe(425619),	-- Engrave Chest - Aegis
-						},
-					}),
-				},
-			})),
 		}),
 		-- #endif
 		n(VENDORS, {
@@ -3463,21 +3139,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					2493,	-- Wooden Mallet
 				}},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(201854, {	-- Cutty
-				coord = { 49.8, 52.0, ELWYNN_FOREST },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(203990, {	-- Rune of Mutilation
-						cost = { { "i", 203723, 1 } },	-- Cutty's Note
-						classes = { ROGUE },
-						groups = {
-							recipe(400094),	-- Engrave Gloves - Mutilate
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(6367, {	-- Donni Anthania <Crazy Cat Lady>
 				coord = { 44.2, 53.2, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
@@ -3547,18 +3208,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					799,	-- Rough Leather Vest
 				}},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(906, {	-- Maximillian Crowe <Warlock Trainer>
-				coord = { 44.4, 66.0, ELWYNN_FOREST },
-				races = ALLIANCE_ONLY,
-				groups = {
-					applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-						cost = { { "i", 205181, 1 } },	-- Unidentified Artifact
-						classes = { WARLOCK },
-					})),
-				},
-			}),
-			-- #endif
 			n(959, {	-- Morley Eberlein <Clothier>
 				coord = { 64.7, 69.5, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
@@ -3600,24 +3249,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_ONE, n(WILD_POLYMORPH, {
-			classes = { MAGE },
-			races = ALLIANCE_ONLY,
-			groups = {
-				i(203749, {	-- Spell Notes: Enlightenment
-					cost = { { "i", 204864, 6 } },	-- Azora Apprentice Notes
-					classes = { MAGE },
-					groups = {
-						recipe(415942),	-- Engrave Chest - Enlightenment
-					},
-				}),
-				i(204864, {	-- Azora Apprentice Notes
-					cr = 202093,	-- Polymorphed Apprentice
-				}),
-			},
-		})),
-		-- #endif
 		n(ZONE_DROPS, {
 			i(1307, {	-- Gold Pickup Schedule (QS!)
 				crs = {
@@ -3631,20 +3262,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
-				coords = {
-					{ 68.2, 38.2, ELWYNN_FOREST },
-					{ 27.0, 88.6, ELWYNN_FOREST },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					 97,	-- Riverpaw Runt
-					478,	-- Riverpaw Outrunner
-				},
-			})),
-			-- #endif
 			i(778, {	-- Kobold Excavation Pick
 				timeline = { REMOVED_4_0_3 },
 				-- #if AFTER 10.1.7
@@ -3674,102 +3291,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				timeline = { REMOVED_4_0_3 },
 				cr = 476,	-- Kobold Geomancer
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
-				coord = { 41.6, 78.8, ELWYNN_FOREST },
-				classes = { PRIEST },
-				cr = 327,	-- Goldtooth
-				groups = {
-					recipe(425216),	-- Engrave Chest - Void Plague
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-				description = "This can drop from any of the Rare Creatures in the zone.",
-				coords = {
-					{ 41.6, 79.2, ELWYNN_FOREST },
-					{ 63.6, 55.4, ELWYNN_FOREST },
-				},
-				classes = { PRIEST },
-				cr = 40,	-- Kobold Miner
-				groups = {
-					recipe(402854),	-- Engrave Pants - Shared Pain
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204905, {	-- Ominous Tome
-				coords = {
-					{ 71.0, 80.6, ELWYNN_FOREST },
-					{ 62.6, 54.2, ELWYNN_FOREST },
-					{ 74.0, 51.8, ELWYNN_FOREST },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					881,	-- Surena Caledon
-					476,	-- Kobold Geomancer
-					474,	-- Defias Rogue Wizard
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
-				coord = { 74.0, 51.8, ELWYNN_FOREST },
-				classes = { PRIEST },
-				cr = 474,	-- Defias Rogue Wizard
-				groups = {
-					recipe(402852),	-- Engrave Pants - Homunculi
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-				coord = { 41.6, 78.8, ELWYNN_FOREST },
-				classes = { WARRIOR },
-				crs = {
-					327,	-- Goldtooth
-					100,	-- Gruff Swiftbite
-					448,	-- Hogger
-				},
-				groups = {
-					recipe(403476),	-- Engrave Pants - Furious Thunder
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
-				coord = { 50.15, 62.81, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					448,	-- Hogger
-					478,	-- Riverpaw Outrunner
-					 97,	-- Riverpaw Runt
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204476, {	-- Severed Kobold Head
-				coord = { 39.0, 85.24, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					327,	-- Goldtooth
-					 40,	-- Kobold Miner
-					475,	-- Kobold Tunneler
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
-				coord = { 50.15, 62.81, ELWYNN_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					285,	-- Murloc
-					 46,	-- Murloc Forager
-					735,	-- Murloc Streamrunner
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
-				coord = { 62.6, 54.2, ELWYNN_FOREST },
-				classes = { MAGE },
-				cr = 476,	-- Kobold Geomancer
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
-				coord = { 26.6, 89.8, ELWYNN_FOREST },
-				classes = { MAGE },
-				cr = 448,	-- Hogger
-			})),
-			-- #endif
 			i(781, {	-- Stone Gnoll Hammer
 				coords = {
 					{ 28.0, 86.8, ELWYNN_FOREST },
@@ -3794,27 +3315,6 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 					880,	-- Erlan Drudgemoor
 				},
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
-				coords = {
-					{ 48.4, 39.0, ELWYNN_FOREST },
-					{ 41.6, 58.6, ELWYNN_FOREST },
-					{ 30.2, 72.6, ELWYNN_FOREST },
-					{ 62.0, 67.2, ELWYNN_FOREST },
-					{ 73.5, 63.6, ELWYNN_FOREST },
-					{ 80.6, 83.2, ELWYNN_FOREST },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					299,	-- Young Wolf
-					525,	-- Mangy Wolf
-					1922,	-- Gray Forest Wolf
-					 69,	-- Timber Wolf
-					118,	-- Prowler
-				},
-			})),
 			-- #endif
 		}),
 	},

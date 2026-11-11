@@ -176,7 +176,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
 
         - name: Database Parser for The Burning Crusade
           id: Parse-TBC

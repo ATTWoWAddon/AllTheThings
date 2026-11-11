@@ -1631,21 +1631,6 @@ maproot(EASTERN_KINGDOMS, BLASTED_LANDS, {
 			}),
 		}),
 		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226417, {	-- Rune of Shadow Specialization
-				provider = { "o", 457089 },	-- The Shadow Connection
-				coord = { 33.6, 48.7, BLASTED_LANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PRIEST, WARLOCK },
-				groups = {
-					recipe(453700, {	-- Engrave Ring - Shadow Specialization
-						classes = { PRIEST, WARLOCK },
-					}),
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			-- #if AFTER TBC
 			n(3546, {	-- Bernie Heisten <Food & Drink>

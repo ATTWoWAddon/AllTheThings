@@ -211,21 +211,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
-				coord = { 67.2, 52.2, STONETALON_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					3988,	-- Venture Co. Operator
-					4070,	-- Venture Co. Builder
-					3992,	-- Venture Co. Engineer
-					3993,	-- Venture Co. Machine Smith
-				},
-			})),
-		}),
-		-- #endif
 		n(PROFESSIONS, {
 			prof(FISHING, {
 				o(180662),	-- Schooner Wreckage
@@ -1139,25 +1124,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
-				qg = 4086,	-- Veenix <Venture Co. Merchant>
-				coord = { 58.2, 51.6, STONETALON_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				maps = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
-				classes = { ROGUE },
-				lockCriteria = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
-				lvl = 20,
-				groups = {
-					objective(1, {	-- 0/1 Venture Co. Work Order
-						provider = { "i", 210187 },	-- Venture Co. Work Order
-					}),
-					i(210186, {	-- Breaching Charge
-						description = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
-					}),
-				},
-			})),
-			-- #endif
 			q(25847, {	-- Grimtotem Supremacy
 				sourceQuest = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
 				qg = 11858,	-- Grundig Darkcloud
@@ -1911,23 +1877,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79980, {	-- Scramble
-				sourceQuest = 79192,	-- Stepping Stones
-				provider = { "o", 424005 },	-- Pocket Litter
-				coord = { 40.8, 52.5, STONETALON_MOUNTAINS },
-				timeline = { ADDED_1_15_1 },
-				lvl = 14,
-				groups = {
-					i(216619, {	-- Student Fodder
-						description = "This item gives you 4 bars of Rested Experience when consumed.",
-					}),
-					i(217314),	-- Moonsight Rifle
-					i(217315),	-- Precision Bow
-					i(3463),	-- Silver Star
-				},
-			})),
-			-- #endif
 			q(26009, {	-- Seek and Destroy
 				-- #if BEFORE 9.0.1
 				description = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
@@ -2397,19 +2346,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79974, {	-- Wet Job
-				sourceQuest = 79980,	-- Scramble
-				provider = { "o", 424012 },	-- Mound of Dirt
-				coord = { 39.6, 49.9, STONETALON_MOUNTAINS },
-				timeline = { ADDED_1_15_1 },
-				maps = { LOCH_MODAN },
-				lvl = 14,
-				groups = {
-					i(20709),	-- Rumsey Rum Light
-				},
-			})),
-			-- #endif
 			q(26044, {	-- Where Are the Parts?
 				sourceQuest = 26020,	-- Report to Bombgutz
 				qg = 40902,	-- Chief Blastgineer Bombgutz
@@ -2417,20 +2353,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78114, {	-- Wild Wyvern Wrangling
-				qg = 210845,	-- Jixo Madrocket <Amateur Daredevil>
-				coord = { 59.2, 62.4, STONETALON_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				maps = { ASHENVALE, WAILING_CAVERNS },
-				cost = {	-- You don't need to be on the quest to get these drops
-					{ "i", 209838, 1 },	-- Hypnotic Crystal
-					{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
-				},
-				classes = { HUNTER },
-				lvl = 15,
-			})),
-			-- #endif
 			q(25646, {	-- Windshear Mine Cleanup
 				sourceQuest = 25640,	-- Bombs Away: Windshear Mine
 				qg = 40973,	-- Sentinal Heliana
@@ -2481,27 +2403,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78121, {	-- Wrangling a Wild Wyvern
-				sourceQuest = 78114,	-- Wild Wyvern Wrangling
-				qg = 210845,	-- Jixo Madrocket <Amateur Daredevil>
-				coord = { 59.2, 62.4, STONETALON_MOUNTAINS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { HUNTER },
-				lvl = 15,
-				groups = {
-					i(209852, {	-- Rune of Kill Command
-						classes = { HUNTER },
-						groups = {
-							recipe(410111),	-- Engrave Pants - Kill Command
-						},
-					}),
-					i(209819, {	-- Wyvern Taming Wand
-						classes = { HUNTER },
-					}),
-				},
-			})),
-			-- #endif
 			q(25607, {	-- Ze Gnomecorder
 				qg = 40895,	-- Professor Xakxak Gyromate
 				coord = { 35.4, 71.1, ASHENVALE },
@@ -2600,19 +2501,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212837, {	-- Primordial Anomaly
-				coord = { 29.6, 72.0, STONETALON_MOUNTAINS },
-				groups = {
-					i(210811, {	-- Rune of Primordial Fury
-						classes = { SHAMAN },
-						groups = {
-							recipe(425343),	-- Engrave Pants - Shamanistic Rage
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(50343, {	-- Quall
 				coords = {
 					{ 60.0, 63.4, STONETALON_MOUNTAINS },
@@ -2689,14 +2577,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				timeline = { ADDED_5_2_0 },
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(209851, {	-- Fury of the Land
-				provider = { "o", 409711 },	-- Scrolls
-				coord = { 74.4, 85.7, STONETALON_MOUNTAINS },
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(9549, {	-- Borand <Bowyer>
 				coords = {
@@ -2890,21 +2770,6 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 			i(6840, {	-- Galvanized Horn
 				cr = 6167,	-- Chimaera Matriarch
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210534, {	-- Idol of the Wild
-				coord = { 80.6, 90.0, STONETALON_MOUNTAINS },
-				classes = { DRUID },
-				crs = {
-					11911,	-- Grimtotem Mercenary
-					11910,	-- Grimtotem Ruffian
-					11913,	-- Grimtotem Sorcerer
-					11912,	-- Grimtotem Brute
-				},
-				groups = {
-					recipe(410021),	-- Engrave Chest - Wild Strikes
-				},
-			})),
-			-- #endif
 		}),
 	},
 });

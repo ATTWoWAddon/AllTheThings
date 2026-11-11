@@ -1116,34 +1116,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				maxReputation = TIER_ONE_MAX_REPUTATION,
 				cost = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79595, {	-- Carnival Boots [Tier 1]
-				qg = 14833,	-- Chronos <He Who Never Forgets!>
-				coords = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
-				},
-				maxReputation = TIER_ONE_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 2309, 3 } },	-- Embossed Leather Boots
-				repeatable = true,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7882, {	-- Carnival Jerkins [Tier 2]
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
@@ -1160,35 +1138,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 2314, 3 } },	-- Toughened Leather Armor
 				lvl = 10,
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79592, {	-- Carnival Jerkins [Tier 2]
-				qg = 14833,	-- Chronos <He Who Never Forgets!>
-				coords = {
-					{ 43.5, 71.1, ELWYNN_FOREST },
-					{ 36.2, 35.2, MULGORE },
-				},
-				maxReputation = TIER_TWO_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 2314, 3 } },	-- Toughened Leather Armor
-				repeatable = true,
-				lvl = 10,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7889, {	-- Coarse Weightstone [Tier 1]
 				qg = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				-- #if AFTER 4.3.0
@@ -1204,34 +1159,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				maxReputation = TIER_ONE_MAX_REPUTATION,
 				cost = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79593, {	-- Coarse Weightstone [Tier 1]
-				qg = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
-				coords = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
-				},
-				maxReputation = TIER_ONE_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 3240, 10 } },	-- Coarse Weightstone
-				repeatable = true,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7894, {	-- Copper Modulator [Tier 1]
 				qg = 14841,	-- Rinling
 				-- #if AFTER 4.3.0
@@ -1247,34 +1180,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				maxReputation = TIER_ONE_MAX_REPUTATION,
 				cost = { { "i", 4363, 5 } },	-- Copper Modulator
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79594, {	-- Copper Modulator [Tier 1]
-				qg = 14841,	-- Rinling
-				coords = {
-					{ 41.7, 70.7, ELWYNN_FOREST },
-					{ 37.1, 37.2, MULGORE },
-				},
-				maxReputation = TIER_ONE_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 4363, 5 } },	-- Copper Modulator
-				repeatable = true,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7884, {	-- Crocolisk Boy and the Bearded Murloc [Tier 4]
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
@@ -1378,30 +1289,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(79330),	-- Relic of Chi-Ji
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82055, {	-- Darkmoon Dunes Deck
-				providers = {
-					{ "i", 221289 },	-- Dunes Deck
-					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
-				},
-				-- #if AFTER 4.3.0
-				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				-- #else
-				coords = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
-					-- #if AFTER TBC
-					{ 34.2, 34.4, TEROKKAR_FOREST },
-					-- #endif
-				},
-				-- #endif
-				maxReputation = DECK_MAX_REPUTATION,
-				repeatable = true,
-				groups = {
-					i(221309),	-- Darkmoon Card: Sandstorm
-				},
-			})),
-			-- #endif
 			applyclassicphase(CATA_PHASE_ONE, q(27667, {	-- Darkmoon Earthquake Deck
 				providers = {
 					{ "i", 62046 },	-- Earthquake Deck
@@ -1497,30 +1384,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(31859),	-- Darkmoon Card: Madness
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82056, {	-- Darkmoon Nightmares Deck
-				providers = {
-					{ "i", 221299 },	-- Nightmares Deck
-					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
-				},
-				-- #if AFTER 4.3.0
-				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				-- #else
-				coords = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
-					-- #if AFTER TBC
-					{ 34.2, 34.4, TEROKKAR_FOREST },
-					-- #endif
-				},
-				-- #endif
-				maxReputation = DECK_MAX_REPUTATION,
-				repeatable = true,
-				groups = {
-					i(221310),	-- Darkmoon Card: Torment
-				},
-			})),
-			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, q(13326, {	-- Darkmoon Nobles Deck
 				providers = {
 					{ "i", 44326 },	-- Nobles Deck
@@ -1579,30 +1442,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82057, {	-- Darkmoon Plagues Deck
-				providers = {
-					{ "i", 221280 },	-- Plagues Deck
-					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
-				},
-				-- #if AFTER 4.3.0
-				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				-- #else
-				coords = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
-					-- #if AFTER TBC
-					{ 34.2, 34.4, TEROKKAR_FOREST },
-					-- #endif
-				},
-				-- #endif
-				maxReputation = DECK_MAX_REPUTATION,
-				repeatable = true,
-				groups = {
-					i(221307),	-- Darkmoon Card: Decay
-				},
-			})),
-			-- #endif
 			applyclassicphase(PHASE_THREE_DMF_CARDS, q(7927, {	-- Darkmoon Portals Deck
 				providers = {
 					{ "i", 19277 },	-- Portals Deck
@@ -1770,30 +1609,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19287),	-- Darkmoon Card: Heroism
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82058, {	-- Darkmoon Wilds Deck
-				providers = {
-					{ "i", 221272 },	-- Wilds Deck
-					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
-				},
-				-- #if AFTER 4.3.0
-				coord = { 51.9, 60.9, DARKMOON_ISLAND },
-				-- #else
-				coords = {
-					{ 41.2, 69.8, ELWYNN_FOREST },
-					{ 36.4, 38.0, MULGORE },
-					-- #if AFTER TBC
-					{ 34.2, 34.4, TEROKKAR_FOREST },
-					-- #endif
-				},
-				-- #endif
-				maxReputation = DECK_MAX_REPUTATION,
-				repeatable = true,
-				groups = {
-					i(221308),	-- Darkmoon Card: Overgrowth
-				},
-			})),
-			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, q(13311, {	-- Demons Deck
 				providers = {
 					{ "i", 44158 },	-- Demons Deck
@@ -1969,35 +1784,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
 				lvl = 10,
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79590, {	-- Heavy Grinding Stone [Tier 2]
-				qg = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
-				coords = {
-					{ 40.5, 69.9, ELWYNN_FOREST },
-					{ 37.8, 39.8, MULGORE },
-				},
-				maxReputation = TIER_TWO_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
-				repeatable = true,
-				lvl = 10,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(29514, {	-- Herbs for Healing
 				qg = 14833,	-- Chronos <He Who Never Forgets!>
 				coord = { 55.0, 70.6, DARKMOON_ISLAND },
@@ -2378,34 +2170,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				maxReputation = TIER_ONE_MAX_REPUTATION,
 				cost = { { "i", 5134, 5 } },	-- Small Furry Paw
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79588, {	-- Small Furry Paws [Tier 1]
-				qg = 14829,	-- Yebb Neblegear
-				coords = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
-				},
-				maxReputation = TIER_ONE_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 5134, 5 } },	-- Small Furry Paw
-				repeatable = true,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7901, {	-- Soft Bushy Tails [Tier 3]
 				qg = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
@@ -2722,35 +2492,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 11407, 5 } },	-- Torn Bear Pelt
 				lvl = 10,
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79589, {	-- Torn Bear Pelts [Tier 2]
-				qg = 14829,	-- Yebb Neblegear
-				coords = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
-				},
-				maxReputation = TIER_TWO_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 11407, 5 } },	-- Torn Bear Pelt
-				repeatable = true,
-				lvl = 10,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(7902, {	-- Vibrant Plumes [Tier 4]
 				qg = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
@@ -2789,35 +2536,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				cost = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
 				lvl = 10,
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_5_0, ADDED_2_0_3, REMOVED_4_3_0 },
-				-- #else
 				timeline = { REMOVED_4_3_0 },
-				-- #endif
 				repeatable = true,
 				groups = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			-- CRIEVE NOTE: I don't know what the difference is.
-			-- Might be reputation maximums? The rep awarded is the same.
-			q(79591, {	-- Whirring Bronze Gizmo [Tier 2]
-				qg = 14841,	-- Rinling
-				coords = {
-					{ 41.6, 70.6, ELWYNN_FOREST },
-					{ 37.0, 37.4, MULGORE },
-				},
-				maxReputation = TIER_TWO_MAX_REPUTATION,
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
-				repeatable = true,
-				lvl = 10,
-				groups = {
-					TATTERED_DARKMOON_PRIZE_TICKET,
-				},
-			}),
-			-- #endif
 			q(29515, {	-- Writing the Future
 				qg = 14822,	-- Sayge
 				coord = { 53.2, 75.8, DARKMOON_ISLAND },
@@ -4137,20 +3861,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44157, 1 },	-- Five of Demons
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221289, {	-- Dunes Deck
-				cost = {
-					{ "i", 221290, 1 },	-- Ace of Dunes
-					{ "i", 221291, 1 },	-- Two of Dunes
-					{ "i", 221292, 1 },	-- Three of Dunes
-					{ "i", 221293, 1 },	-- Four of Dunes
-					{ "i", 221294, 1 },	-- Five of Dunes
-					{ "i", 221295, 1 },	-- Six of Dunes
-					{ "i", 221296, 1 },	-- Seven of Dunes
-					{ "i", 221297, 1 },	-- Eight of Dunes
-				},
-			})),
-			-- #endif
 			applyclassicphase(CATA_PHASE_ONE, i(62046, {	-- Earthquake Deck
 				timeline = { ADDED_4_0_3 },
 				cost = {
@@ -4225,20 +3935,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44147, 1 },	-- Five of Mages
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221299, {	-- Nightmares Deck
-				cost = {
-					{ "i", 221298, 1 },	-- Ace of Nightmares
-					{ "i", 221300, 1 },	-- Two of Nightmares
-					{ "i", 221301, 1 },	-- Three of Nightmares
-					{ "i", 221302, 1 },	-- Four of Nightmares
-					{ "i", 221303, 1 },	-- Five of Nightmares
-					{ "i", 221304, 1 },	-- Six of Nightmares
-					{ "i", 221305, 1 },	-- Seven of Nightmares
-					{ "i", 221306, 1 },	-- Eight of Nightmares
-				},
-			})),
-			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, i(44326, {	-- Nobles Deck
 				timeline = { ADDED_3_0_2 },
 				cost = {
@@ -4265,20 +3961,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 79298, 1 },	-- Eight of Oxen
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221280, {	-- Plagues Deck
-				cost = {
-					{ "i", 221281, 1 },	-- Ace of Plagues
-					{ "i", 221282, 1 },	-- Two of Plagues
-					{ "i", 221283, 1 },	-- Three of Plagues
-					{ "i", 221284, 1 },	-- Four of Plagues
-					{ "i", 221285, 1 },	-- Five of Plagues
-					{ "i", 221286, 1 },	-- Six of Plagues
-					{ "i", 221287, 1 },	-- Seven of Plagues
-					{ "i", 221288, 1 },	-- Eight of Plagues
-				},
-			})),
-			-- #endif
 			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19277, {	-- Portals Deck
 				cost = {
 					{ "i", 19276, 1 },	-- Ace of Portals
@@ -4411,20 +4093,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 19265, 1 },	-- Eight of Warlords
 				},
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, i(221272, {	-- Wilds Deck
-				cost = {
-					{ "i", 221271, 1 },	-- Ace of Wilds
-					{ "i", 221273, 1 },	-- Two of Wilds
-					{ "i", 221274, 1 },	-- Three of Wilds
-					{ "i", 221275, 1 },	-- Four of Wilds
-					{ "i", 221276, 1 },	-- Five of Wilds
-					{ "i", 221277, 1 },	-- Six of Wilds
-					{ "i", 221278, 1 },	-- Seven of Wilds
-					{ "i", 221279, 1 },	-- Eight of Wilds
-				},
-			})),
-			-- #endif
 		}),
 	},
 })));

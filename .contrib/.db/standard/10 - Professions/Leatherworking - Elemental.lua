@@ -93,13 +93,6 @@ profession(LEATHERWORKING, {
 							recipeID = 19061,
 							requireSkill = 10658,
 						},
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Masterwork Volcanic Shoulders",
-							recipeID = 461663,
-							requireSkill = 10658,
-						}),
-						-- #endif
 						{
 							name = "Stormshroud Shoulders",
 							timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
@@ -110,9 +103,6 @@ profession(LEATHERWORKING, {
 							name = "Volcanic Shoulders",
 							recipeID = 19101,
 							requireSkill = 10658,
-							-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_3 },
-							-- #endif
 						},
 					}
 				},
@@ -126,14 +116,6 @@ profession(LEATHERWORKING, {
 							recipeID = 19095,
 							requireSkill = 10658,
 						},
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Masterwork Volcanic Breastplate",
-							timeline = { ADDED_1_15_3 },
-							recipeID = 461661,
-							requireSkill = 10658,
-						}),
-						-- #endif
 						{
 							name = "Stormshroud Armor",
 							timeline = { ADDED_1_11_1, REMOVED_4_0_3 },
@@ -144,9 +126,6 @@ profession(LEATHERWORKING, {
 							name = "Volcanic Breastplate",
 							recipeID = 19076,
 							requireSkill = 10658,
-							-- #if SEASON_OF_DISCOVERY
-							timeline = { REMOVED_1_15_3 },
-							-- #endif
 						},
 					}
 				},
@@ -188,14 +167,6 @@ profession(LEATHERWORKING, {
 							recipeID = 19078,
 							requireSkill = 10658,
 						},
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Masterwork Volcanic Leggings",
-							recipeID = 461665,
-							requireSkill = 10658,
-							timeline = { ADDED_1_15_3 },
-						}),
-						-- #endif
 						{
 							name = "Stormshroud Pants",
 							recipeID = 19067,
@@ -204,11 +175,7 @@ profession(LEATHERWORKING, {
 						{
 							name = "Volcanic Leggings",
 							timeline = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
 								REMOVED_4_0_3, ADDED_10_1_7,
-								-- #endif
 							},
 							recipeID = 19059,
 							requireSkill = 10658,
@@ -219,22 +186,10 @@ profession(LEATHERWORKING, {
 					name = "Cloaks",
 					categoryID = 259,
 					groups = {
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, {
-							name = "Mastercrafted Shifting Cloak",
-							timeline = { ADDED_1_15_3 },
-							recipeID = 461690,
-							requireSkill = 10658,
-						}),
-						-- #endif
 						applyclassicphase(PHASE_ONE_DIREMAUL, {
 							name = "Shifting Cloak",
 							timeline = {
-								-- #if SEASON_OF_DISCOVERY
-								REMOVED_1_15_3,
-								-- #else
 								REMOVED_4_0_3, ADDED_10_1_5,
-								-- #endif
 							},
 							recipeID = 22928,
 							requireSkill = 10658,

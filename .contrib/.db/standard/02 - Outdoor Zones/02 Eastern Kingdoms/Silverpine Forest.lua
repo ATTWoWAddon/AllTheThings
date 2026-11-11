@@ -1499,22 +1499,6 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				},
 			}),
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(211875, {	-- Decayed Elemental
-				provider = { "i", 210253 },	-- Rot Totem
-				coord = { 46.0, 22.2, SILVERPINE_FOREST },
-				classes = { SHAMAN },
-				groups = {
-					i(208758, {	-- Earthen Rune
-						timeline = { REMOVED_2_0_1 },
-						classes = { SHAMAN },
-						groups = {
-							recipe(410107),	-- Engrave Pants - Way of Earth
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(47012, {	-- Effritus
 				coord = { 47.0, 69.4, SILVERPINE_FOREST },
 				timeline = { ADDED_4_0_3 },
@@ -1545,21 +1529,6 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(211736, {	-- Grizzled Protector
-				description = "Kill Ferocious Grizzled Bears until the protector appears.",
-				classes = { HUNTER },
-				crs = { 1778 },	-- Ferocious Grizzled Bear
-				groups = {
-					i(208701, {	-- Rune of Beast Mastery
-						classes = { HUNTER },
-						groups = {
-							recipe(410110),	-- Engrave Gloves - Beast Mastery
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(50330, {	-- Kree
 				coord = { 60.8, 6.4, SILVERPINE_FOREST },
 				timeline = { ADDED_5_1_0 },
@@ -1577,21 +1546,6 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(211146, {	-- Lost Adventurer
-				provider = { "n", 210802 },	-- Webbed Victim
-				coord = { 34.8, 7.8, SILVERPINE_FOREST },
-				races = HORDE_ONLY,
-				groups = {
-					i(208741, {	-- Rune of Endless Rage
-						classes = { WARRIOR },
-						groups = {
-							recipe(403489),	-- Engrave Gloves - Endless Rage
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(51037, {	-- Lost Gilnean Wardog
 				coord = { 59.0, 42.0, SILVERPINE_FOREST },
 				timeline = { ADDED_5_2_0 },
@@ -1652,20 +1606,6 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				},
 			}),
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212763, {	-- Sadistic Fiend
-				description = "Cast Curse of Recklessness on him.",
-				coord = { 58.2, 45.2, SILVERPINE_FOREST },
-				groups = {
-					i(208750, {	-- Rune of Channeling
-						classes = { WARLOCK },
-						groups = {
-							recipe(403932),	-- Engrave Chest - Master Channeler
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(1948, {	-- Snarlmane
 				coord = { 66.2, 25.0, SILVERPINE_FOREST },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -1678,72 +1618,11 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
-				provider = { "i", 210713 },	-- Tortured Soul
-				coord = { 59.4, 70.8, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				groups = {
-					i(208744, {	-- Rune of Shadowbolts
-						classes = { WARLOCK },
-						groups = {
-							recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(47023, {	-- Thule Ravenclaw
 				coord = { 50.2, 60.0, SILVERPINE_FOREST },
 				timeline = { ADDED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212809, {	-- Wailing Spirit
-				coord = { 60.2, 74.4, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(205905, {	-- Memory of a Devout Champion
-						classes = { PRIEST },
-						groups = {
-							recipe(425215),	-- Engrave Chest - Twisted Faith
-						},
-					}),
-				},
-			})),
-			-- #endif
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(210177, {	-- Ataeric: On Arcane Curiosities
-				provider = { "o", 410299 },	-- Arcane Secrets
-				coord = { 43.4, 41.2, SILVERPINE_FOREST },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
-				provider = { "o", 411674 },	-- Prophecy of a King's Demise
-				coord = { 65.8, 23.5, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { PRIEST },
-				groups = {
-					recipe(402849),	-- Engrave Gloves - Shadow Word - Death
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
-				description = "You will need to use Sprint to make the jump to the platform.",
-				provider = { "o", 409131 },	-- Rusty Chest
-				coord = { 45.2, 67.2, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(424984),	-- Engrave Gloves - Saber Slash
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(209844, {	-- The Dalaran Digest, Vol. 23
-				provider = { "o", 409501 },	-- Dalaran Digest
-				coord = { 63.5, 63.1, SILVERPINE_FOREST },
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 				coords = {
@@ -1988,75 +1867,6 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 					3530,	-- Pyrewood Tailor
 				},
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
-				description = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-				coord = { 66.2, 31.0, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				cr = 212598,	-- Recke Grinnes
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
-				coord = { 45.6, 22.6, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { SHAMAN },
-				cr = 1773,	-- Rot Hide Mystic
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
-				provider = { "i", 210696 },	-- Rot Bane
-				coord = { 66.2, 31.0, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1943,	-- Raging Rot Hide
-					1944,	-- Rot Hide Bruiser
-					1939,	-- Rot Hide Brute
-					1940,	-- Rot Hide Plague Weaver
-					1942,	-- Rot Hide Savage
-				},
-				groups = {
-					recipe(425443),	-- Engrave Gloves - Quick Strike
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
-				coord = { 50.8, 61.6, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { MAGE },
-				races = HORDE_ONLY,
-				cr = 1867,	-- Dalaran Apprentice
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
-				coord = { 58.6, 44.8, SILVERPINE_FOREST },
-				classes = { SHAMAN },
-				cr = 1972,	-- Grimson the Pale
-				groups = {
-					recipe(410097),	-- Engrave Gloves - Water Shield
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
-				description = "Use Life Tap in a safe area to summon the Tortured Soul.",
-				coord = { 59.4, 70.8, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					1974,	-- Ravenclaw Drudger
-					1973,	-- Ravenclaw Guardian
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
-				description = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-				coord = { 52.8, 27.4, SILVERPINE_FOREST },
-				timeline = { REMOVED_2_0_1 },
-				classes = { DRUID },
-				crs = {
-					1769,	-- Moonrage Whitescalp
-					1770,	-- Moonrage Darkrunner
-				},
-				groups = {
-					recipe(416049),	-- Engrave Gloves - Lacerate
-				},
-			})),
 			-- #endif
 		}),
 	},

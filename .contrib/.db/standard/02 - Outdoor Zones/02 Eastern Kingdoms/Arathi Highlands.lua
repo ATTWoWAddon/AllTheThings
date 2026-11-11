@@ -157,43 +157,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 			}),
 		}),
 		n(QUESTS, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79677, {	-- A Quick Grocery Run
-				sourceQuest = 79624,	-- Anyone Can Cook
-				qg = 217300,	-- Skonk <Amateur Chef>
-				coord = { 57.6, 74.6, ARATHI_HIGHLANDS },
-				timeline = { ADDED_1_15_1 },
-				maps = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, BADLANDS },
-				classes = { WARRIOR },
-				lvl = 26,
-				groups = {
-					objective(1, {	-- 0/1 Hybrid Haunch
-						provider = { "i", 213526 },	-- Hybrid Haunch
-						coord = { 83.0, 36.0, HILLSBRAD_FOOTHILLS },
-						cr = 2347,	-- Wild Gryphon
-					}),
-					objective(2, {	-- 0/1 Smuggler's Spice Blend
-						providers = {
-							{ "i", 213527 },	-- Smuggler's Spice Blend
-							{ "o", 422911 },	-- Sealed Barrel
-						},
-						coord = { 21.5, 83.9, ARATHI_HIGHLANDS },
-					}),
-					objective(3, {	-- 0/1 Balmy Brew
-						providers = {
-							{ "i", 213528 },	-- Balmy Brew
-							{ "o", 422919 },	-- Tapped Shadowforge Keg
-						},
-						coord = { 41.5, 28.1, BADLANDS },
-					}),
-					objective(4, {	-- 0/1 Viscous Venom
-						provider = { "i", 213529 },	-- Viscous Venom
-						coord = { 70.0, 72.0, SWAMP_OF_SORROWS },
-						cr = 769,	-- Deathstrike Tarantula
-					}),
-				},
-			})),
-			-- #endif
 			q(26081, {	-- Alina's Reward
 				sourceQuest = 26033,	-- Trol'kalar
 				qg = 41944,	-- Galen Trollbane
@@ -222,28 +185,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79624, {	-- Anyone Can Cook
-				providers = {
-					{ "i", 213422 },	-- Illegible Recipe
-					{ "n", 217300 },	-- Skonk <Amateur Chef>
-				},
-				coord = { 20.0, 67.4, ARATHI_HIGHLANDS },
-				timeline = { ADDED_1_15_1 },
-				maps = { ALTERAC_MOUNTAINS },
-				classes = { WARRIOR },
-				crs = {
-					2569,	-- Boulderfist Mauler
-					2254,	-- Crushridge Mauler
-					2570,	-- Boulderfist Shaman
-					2255,	-- Crushridge Mage
-					2256,	-- Crushridge Enforcer
-					2571,	-- Boulderfist Lord
-					2287,	-- Crushridge Warmonger
-				},
-				lvl = 26,
-			})),
-			-- #endif
 			q(696, {	-- Attack on the Tower
 				sourceQuest = 695,	-- An Apprentice's Enchantment
 				qg = 2789,	-- Skuerto
@@ -917,91 +858,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				timeline = { ADDED_4_0_3 },
 				isBreadcrumb = true,
 			},
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79242, {	-- No Honor Among Thieves
-				sourceQuest = 79236,	-- Cherry for Your Thoughts?
-				qg = 215643,	-- Tokal
-				coord = { 27.0, 77.2, STRANGLETHORN_VALE },
-				timeline = { ADDED_1_15_1 },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/1 Found Illari Duskfeather
-						provider = { "n", 215655 },	-- Illari Duskfeather
-						coord = { 93.8, 71.6, ARATHI_HIGHLANDS },
-					}),
-					objective(2, {	-- 0/1 Illari's Key
-						providers = {
-							{ "i", 212347 },	-- Illari's Key
-							{ "o", 423569 },	-- Dropped Pouch
-						},
-						coord = { 93.8, 71.6, ARATHI_HIGHLANDS },
-					}),
-					i(212553, {	-- Jewel-Encrusted Box
-						providers = {
-							{ "o", 418855 },	-- Illari's Loot Cache
-							{ "i", 212347 },	-- Illari's Key
-						},
-						coord = { 94.1, 69.3, ARATHI_HIGHLANDS },
-						groups = {
-							i(212552, {	-- Psychosophic Epiphany
-								classes = { PRIEST },
-								groups = {
-									recipe(431663),	-- Engrave Belt - Mind Spike
-								},
-							}),
-							i(212560, {	-- Rune of Ancestral Awakening
-								classes = { SHAMAN },
-								groups = {
-									recipe(425883),	-- Engrave Boots - Ancestral Awakening
-								},
-							}),
-							i(212561, {	-- Rune of Burning Darkness
-								classes = { WARLOCK },
-								groups = {
-									recipe(426452),	-- Engrave Belt - Shadow and Flame
-								},
-							}),
-							i(212548, {	-- Rune of Eclipse
-								classes = { DRUID },
-								groups = {
-									recipe(410029),	-- Engrave Belt - Eclipse
-								},
-							}),
-							i(212562, {	-- Rune of Healing Rage
-								classes = { WARRIOR },
-								groups = {
-									recipe(403467),	-- Engrave Boots - Enraged Regeneration
-								},
-							}),
-							i(212559, {	-- Rune of the Poisoned Blade
-								classes = { ROGUE },
-								groups = {
-									recipe(425102),	-- Engrave Belt - Poisoned Knife
-								},
-							}),
-							i(212549, {	-- Rune of the Trapper
-								classes = { HUNTER },
-								groups = {
-									recipe(410118),	-- Engrave Boots - Trap Launcher
-								},
-							}),
-							i(212551, {	-- Rune of Warfare
-								classes = { PALADIN },
-								groups = {
-									recipe(416031),	-- Engrave Boots - The Art of War
-								},
-							}),
-							i(208853, {	-- Spell Notes: Brain Freeze
-								classes = { MAGE },
-								groups = {
-									recipe(401752),	-- Engrave Boots - Brain Freeze
-								},
-							}),
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(681, {	-- Northfold Manor
 				qg = 2700,	-- Captain Nials
 				coord = { 45.9, 47.5, ARATHI_HIGHLANDS },
@@ -1441,25 +1297,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					i(4491),	-- Goggles of Gem Hunting / Do not convert to QI or it will give an error because it is an equippable item
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79678, {	-- Taste Testing
-				sourceQuest = 79677,	-- A Quick Grocery Run
-				qg = 217300,	-- Skonk <Amateur Chef>
-				coord = { 57.6, 74.6, ARATHI_HIGHLANDS },
-				timeline = { ADDED_1_15_1 },
-				classes = { WARRIOR },
-				lvl = 26,
-				groups = {
-					i(213103, {	--
-						classes = { WARRIOR },
-						groups = {
-							recipe(416004),	-- Engrave Belt - Blood Surge
-						},
-					}),
-					i(213105),	-- Shawarmageddon
-				},
-			})),
-			-- #endif
 			q(640, {	-- The Broken Sigil
 				sourceQuest = 639,	-- Sigil of Strom
 				qg = 2703,	-- Zengu
@@ -1660,22 +1497,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				maps = { BADLANDS },
 				lvl = 30,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79976, {	-- This Must Be The Place
-				sourceQuest = 79975,	-- Eagle's Fist
-				providers = {
-					{ "o", 406918 },	-- Messenger Bag
-					{ "o", 424006 },	-- Hastily Rolled-Up Satchel
-				},
-				coord = { 22.5, 24.2, ARATHI_HIGHLANDS },
-				timeline = { ADDED_1_15_1 },
-				lvl = 14,
-				groups = {
-					i(211527),	-- Cozy Sleeping Bag
-					i(216619),	-- Student Fodder
-				},
-			})),
-			-- #endif
 			q(26428, {	-- To Steal From Thieves
 				qg = 4486,	-- Genavie Callow
 				coord = { 13.7, 33.9, ARATHI_HIGHLANDS },
@@ -2046,15 +1867,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
-				provider = { "i", 216941 },	-- Ariden's Sigil
-				coord = { 60.0, 40.0, ARATHI_HIGHLANDS },
-				groups = {
-					i(216947),	-- Whirring Dalaran Relic
-				},
-			})),
-			-- #endif
 			n(2601, {	-- Foulbelly
 				coords = {
 					-- #if AFTER CATA
@@ -2220,34 +2032,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				timeline = { ADDED_5_2_0 },
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_TWO, i(213447, {	-- Rosary of the Light
-				description = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
-				timeline = { ADDED_1_15_1 },
-				cost = {
-					{ "i", 213448, 1 },	-- Divine Prayer Bead I
-					{ "i", 213449, 1 },	-- Divine Prayer Bead II
-					{ "i", 213450, 1 },	-- Divine Prayer Bead III
-				},
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(213128, {	-- Rune of Piety
-				providers = {
-					{ "i", 213447 },	-- Rosary of the Light
-					{ "n", 217387 },	-- Brother Atticus
-				},
-				coord = { 27.0, 57.0, ARATHI_HIGHLANDS },
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					recipe(426175),	-- Engrave Belt - Malleable Protection
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 				coords = {
@@ -2313,14 +2097,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					i(16084, {	-- Expert First Aid - Under Wraps (RECIPE!)
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 					i(16112, {	-- Manual: Heavy Silk Bandage (RECIPE!)
 						timeline = { REMOVED_3_1_0 },
@@ -2579,35 +2355,6 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 				},
 				cr = 2591,	-- Syndicate Magus
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(213444, {	-- Tarnished Prayer Bead I
-				description = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(213448),	-- Divine Prayer Bead I
-				},
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(213445, {	-- Tarnished Prayer Bead II
-				description = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(213449),	-- Divine Prayer Bead II
-				},
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(213446, {	-- Tarnished Prayer Bead III
-				description = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE CREATURE IS RUNNING AWAY. Judging the enemy before they run will not work.",
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(213450),	-- Divine Prayer Bead III
-				},
-			})),
-			-- #endif
 			i(4480, {	-- Thundering Charm
 				crs = {
 					2762,	-- Thundering Exile

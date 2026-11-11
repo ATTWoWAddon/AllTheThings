@@ -33,11 +33,9 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(20221, {		-- Chromatic Mount [Item: Foror's Fabled Steed] (MOUNT!)
 				displayID = 18164,
 			}),
-			-- #if NOT SEASON_OF_DISCOVERY
 			i(13325, {		-- Fluorescent Green Mechanostrider (MOUNT!)
 				displayID = 9475,
 			}),
-			-- #endif
 			i(12327, {		-- Golden Sabercat (MOUNT!)
 				displayID = 9714,
 			}),

@@ -14,6 +14,7 @@ namespace ATT
         {
             // DBContext / ItemDB
             var databaseFolder = "../.db/standard/00 - Item DB/.dynamic";
+            var seasonOfDiscoveryFolder = "../.db/season of discovery/00 - Item DB/.dynamic";
             Directory.CreateDirectory(databaseFolder);
             foreach (var file in Directory.GetFiles("../.raw/ItemDB"))
             {
@@ -29,8 +30,10 @@ namespace ATT
                     var dbFileName = lua.GetString("DBFileName");
                     var itemDB = ParseAsObject<long>(lua.GetTable("ItemDB"));
 
+                    // The Season of Discovery Item DB lives in the standalone Season of Discovery DB, which only the SOD build loads.
+                    var isSeasonOfDiscovery = dbContext == "SEASON_OF_DISCOVERY";
                     var builder = new StringBuilder();
-                    builder.Append("-- #if ").Append(dbContext).AppendLine();
+                    if (!isSeasonOfDiscovery) builder.Append("-- #if ").Append(dbContext).AppendLine();
                     builder.Append("_.ItemDB = {");
                     var sortedKeys = itemDB.Keys.ToList();
                     sortedKeys.Sort();
@@ -43,8 +46,11 @@ namespace ATT
                             builder.AppendLine().Append("[").Append(key).Append("]=").Append(subbuilder.ToString()).Append(",");
                         }
                     }
-                    builder.AppendLine().AppendLine("};").AppendLine("-- #endif");
-                    File.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
+                    builder.AppendLine().AppendLine("};");
+                    if (!isSeasonOfDiscovery) builder.AppendLine("-- #endif");
+                    var outputFolder = isSeasonOfDiscovery ? seasonOfDiscoveryFolder : databaseFolder;
+                    Directory.CreateDirectory(outputFolder);
+                    File.WriteAllText(Path.Combine(outputFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
                 }
             }
 

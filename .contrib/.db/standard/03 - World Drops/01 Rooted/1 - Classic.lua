@@ -2688,11 +2688,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(9385),	-- Archaic Defender
 			i(8199),	-- Battlefield Destroyer
 			i(15253),	-- Beheading Blade
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227691, {	-- Blade of Hanna
-				timeline = { CREATED_1_15_3 },
-			})),
-			-- #endif
 			i(2801),	-- Blade of Hanna
 			i(13043),	-- Blade of the Titans
 			i(1811),	-- Blunt Claymore
@@ -3372,55 +3367,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			description = "Drops from bears in vanilla zones and the dungeon Old Hillsbrad Foothills.",
 		}),
 		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
-			description = "'Black Sheep Wall'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
-			description = "'Claw'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
-			description = "This might just be a Simpsons quote.",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			description = "'Overwhelming Power'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
-			description = "'Time Soak'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
-			description = "'Ancient Hustle'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
-			description = "'Cow Level'",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
-			description = "This might just be a Pee Wee Herman quote.",
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213546, {	-- Scroll: SHOOBEEDOOP
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213547, {	-- Scroll: THAW WORDS
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213544, {	-- Scroll: TOPAZ YORAK
-			classes = { MAGE },
-		})),
-		applyclassicphase(SOD_PHASE_TWO, i(213543, {	-- Scroll: UPDOG
-			classes = { MAGE },
-		})),
-		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23199, {	-- Totem of the Storm [Phase 5/6]
 			timeline = { REMOVED_5_0_4 },
@@ -3443,15 +3389,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19235),	-- Seven of Beasts
 		i(19236),	-- Eight of Beasts
 
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
-		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
-		-- #endif
 
 		i(19269),	-- Two of Elementals
 		i(19270),	-- Three of Elementals
@@ -3461,23 +3398,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19274),	-- Seven of Elementals
 		i(19275),	-- Eight of Elementals
 
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
-		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
-
-		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
-		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
-		-- #endif
 
 		i(19278),	-- Two of Portals
 		i(19279),	-- Three of Portals
@@ -3495,15 +3415,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
 
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221275)),	-- Four of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221276)),	-- Five of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221277)),	-- Six of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221278)),	-- Seven of Wilds
-		applyclassicphase(SOD_PHASE_THREE, i(221279)),	-- Eight of Wilds
-		-- #endif
 	})),
 	filter(TOYS, {
 		i(1973),	-- Orb of Deception (TOY!)
@@ -3568,11 +3479,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
 				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					ADDED_1_15_3,
-					-- #else
 					CREATED_1_12_1, ADDED_2_0_1,
-					-- #endif
 				},
 			}),
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
@@ -3580,57 +3487,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3868),	-- Plans: Frost Tiger Blade (RECIPE!)
 			i(3610),	-- Plans: Gemmed Copper Gauntlets (RECIPE!)
 			i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217276, {	-- Plans: Golden Scale Boots (RECIPE!)
-				timeline = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217278, {	-- Plans: Golden Scale Cuirass (RECIPE!)
-				timeline = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217286, {	-- Plans: Golden Scale Leggings (RECIPE!)
-				timeline = { ADDED_1_15_1 },
-			})),
-			applyclassicphase(SOD_PHASE_TWO, i(217284, {	-- Plans: Golden Scale Shoulders (RECIPE!)
-				timeline = { ADDED_1_15_1 },
-			})),
-			-- #endif
-			i(3875, {	-- Plans: Golden Scale Boots (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3873, {	-- Plans: Golden Scale Cuirass (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3872, {	-- Plans: Golden Scale Leggings (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_1 },
-				-- #endif
-			}),
-			i(3871, {	-- Plans: Golden Scale Shoulders (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_1 },
-				-- #endif
-			}),
+			i(3875),	-- Plans: Golden Scale Boots (RECIPE!)
+			i(3873),	-- Plans: Golden Scale Cuirass (RECIPE!)
+			i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
+			i(3871),	-- Plans: Golden Scale Shoulders (RECIPE!)
 			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
 			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
 			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
 			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 			i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
-				timeline = { ADDED_1_15_3 },
-			})),
-			-- #endif
-			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
-				-- timeline = { REMOVED_1_15_3 },
-				-- #endif
-			}),
+			i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
 			i(6045),	-- Plans: Iron Counterweight (RECIPE!)
 			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
@@ -3656,24 +3523,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
 			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227905, {	-- Plans: Skyrider's Masterwork Stormhammer (RECIPE!)
-				timeline = { ADDED_1_15_3 },
-			})),
-			-- #endif
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
-			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
-				-- #if SEASON_OF_DISCOVERY
-				timeline = { REMOVED_1_15_3 },
-				-- #endif
-			}),
+			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
-				timeline = { ADDED_1_15_3 },
-			})),
-			-- #endif
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
 			i(12683),	-- Plans: Thorium Belt (RECIPE!)
 			i(12693),	-- Plans: Thorium Boots (RECIPE!)
@@ -3682,11 +3535,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
 			applyclassicphase(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228314, {	-- Plans: Warcrest of the Great Chief (RECIPE!)
-				timeline = { ADDED_1_15_3 },
-			})),
-			-- #endif
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
 			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)
@@ -3829,14 +3677,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter (RECIPE!)
-			i(4352, {	-- Pattern: Boots of the Enchanter (RECIPE!)
-				timeline = { REMOVED_1_15_1 },
-			}),
-			-- #else
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
-			-- #endif
 			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
 			i(14484, {	-- Pattern: Brightcloth Cloak (RECIPE!)
 				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
@@ -3849,18 +3690,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				timeline = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(10316),	-- Pattern: Colorful Kilt (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217251, {timeline = {ADDED_1_15_1}})),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			i(7084, {timeline = {REMOVED_1_15_1}}),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			-- #else
 			i(7084),	-- Pattern: Crimson Silk Shoulders (RECIPE!)
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(217249, {timeline = {ADDED_1_15_1}})),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			i(7086, {timeline = {REMOVED_1_15_1}}),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			-- #else
 			i(7086),	-- Pattern: Earthen Silk Belt (RECIPE!)
-			-- #endif
 			i(14492, {	-- Pattern: Felcloth Boots (RECIPE!)
 				timeline = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
@@ -3890,9 +3721,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4292),	-- Pattern: Green Woolen Bag (RECIPE!)
 			i(7092),	-- Pattern: Hands of Darkness (RECIPE!)
 			i(4346),	-- Pattern: Heavy Woolen Cloak (RECIPE!)
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(228318, {timeline = {ADDED_1_15_3}})),	-- Pattern: Incandescent Mooncloth Leggings (RECIPE!)
-			-- #endif
 			i(14499),	-- Pattern: Mooncloth Bag (RECIPE!)
 			i(14509),	-- Pattern: Mooncloth Circlet (RECIPE!)
 			i(14497),	-- Pattern: Mooncloth Leggings (RECIPE!)
@@ -5068,9 +4896,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				44627,	-- Mudbelly Boar
 				50942,	-- Snoot the Rooter
 				42859,	-- Wild Mature Swine
-				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				208638,	-- Fyodi
 				-- #endif
 			},
 			description =

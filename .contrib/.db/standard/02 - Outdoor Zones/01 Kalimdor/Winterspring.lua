@@ -594,11 +594,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				-- #if BEFORE TBC
 				altQuests = {
 					5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
-					-- #if SEASON_OF_DISCOVERY
-					84496,	-- Sweet Serenity [Master Hammersmith]
-					-- #else
 					5305,	-- Sweet Serenity [Master Hammersmith]
-					-- #endif
 				},
 				-- #endif
 				qg = 11193,	-- Seril Scourgebane
@@ -1347,11 +1343,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				-- #if BEFORE TBC
 				altQuests = {
 					5307,	-- Corruption [Master Swordsmith]
-					-- #if SEASON_OF_DISCOVERY
-					84496,	-- Sweet Serenity [Master Hammersmith]
-					-- #else
 					5305,	-- Sweet Serenity [Master Hammersmith]
-					-- #endif
 				},
 				-- #endif
 				qg = 11192,	-- Kilram
@@ -1455,38 +1447,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 					i(15789),	-- Deep River Cloak
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84496, {	-- Sweet Serenity
-				-- #if BEFORE 4.0.3
-				description = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
-				-- #endif
-				-- #if BEFORE TBC
-				altQuests = {
-					5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
-					5307,	-- Corruption [Master Swordsmith]
-				},
-				-- #endif
-				qg = 11191,	-- Lilith the Lithe
-				coord = { 61.2, 37.2, WINTERSPRING },
-				timeline = { ADDED_1_15_3 },
-				maps = { STRATHOLME },
-				requireSkill =
-					-- #if AFTER TBC
-					BLACKSMITHING,
-					-- #else
-					9787,	-- Weaponsmith
-					-- #endif
-				learnedAt = 250,
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Crimson Hammersmith's Apron
-						provider = { "i", 13351 },	-- Crimson Hammersmith's Apron
-						cr = 11120,	-- Crimson Hammersmith
-					}),
-					i(228311),	-- Plans: Finely-Enchanted Battlehammer (RECIPE!)
-				},
-			})),
-			-- #endif
 			q(5305, {	-- Sweet Serenity
 				-- #if BEFORE 4.0.3
 				description = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
@@ -1499,13 +1459,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 				-- #endif
 				qg = 11191,	-- Lilith the Lithe
 				coord = { 61.2, 37.2, WINTERSPRING },
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_3,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				maps = { STRATHOLME },
 				requireSkill =
 					-- #if AFTER TBC
@@ -2141,8 +2095,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 			n(50788, {	-- Quetzl
 				coord = { 67.0, 83.6, WINTERSPRING },
 				timeline = { ADDED_5_1_0 },
-				groups = {
-				},
 			}),
 			n(10200, {	-- Rak'shiri
 				coords = {
@@ -2207,30 +2159,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 					i(122224),	-- Music Roll: Mountains
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(226419, {	-- Rune of Feral Combat Specialization
-				provider = { "o", 457098 },	-- Finding Your Inner Feline: A Guide to Modern Druidism
-				coord = { 49.6, 8.8, WINTERSPRING },
-				timeline = { ADDED_1_15_3 },
-				classes = { DRUID },
-				groups = {
-					recipe(453703, {	-- Engrave Ring - Feral Combat Specialization
-						classes = { DRUID },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_FOUR, i(226415, {	-- Rune of Frost Specialization
-				provider = { "o", 457095 },	-- Elements for Dummies Volume I: Frost
-				coord = { 58.9, 59.9, WINTERSPRING },
-				timeline = { ADDED_1_15_3 },
-				classes = { HUNTER, SHAMAN, MAGE },
-				groups = {
-					recipe(453697, {	-- Engrave Ring - Frost Specialization
-						classes = { HUNTER, SHAMAN, MAGE },
-					}),
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
 			n(50129, {	-- Daleohm <Blacksmithing Supplies>
@@ -2274,13 +2202,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 			n(2303, {	-- Lyranne Feathersong <Food & Drink>
 				coord = { 52.0, 29.2, WINTERSPRING },
 				races = ALLIANCE_ONLY,
-				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					i(231780, {	-- Tome of Conjure Water VIII
-						timeline = { ADDED_1_15_4 },
-					}),
-					-- #endif
-				},
 			}),
 			n(52830, {	-- Michelle De Rum <Pet Collector>
 				coord = { 59.8, 51.6, WINTERSPRING },
@@ -2289,15 +2210,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 					i(69239),	-- Winterspring Cub (PET!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(228216, {	-- Numi
-				coord = { 61.2, 37.0, WINTERSPRING },
-				timeline = { "added 1.15.3" },
-				groups = {
-					i(227286),	-- Warmed Rumsey Rum with Cream
-				},
-			}),
-			-- #endif
 			n(11189, {	-- Qia <Trade Supplies>
 				coords = {
 					-- #if AFTER CATA

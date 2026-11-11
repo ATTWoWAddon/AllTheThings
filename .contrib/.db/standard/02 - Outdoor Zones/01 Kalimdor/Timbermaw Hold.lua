@@ -195,30 +195,12 @@ maproot(KALIMDOR, {
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, q(84777, {	-- Feathers for Nafien
-					sourceQuest = 8460,	-- Timbermaw Ally
-					qg = 15395,	-- Nafien
-					coord = { 64.8, 8.2, FELWOOD },
-					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
-					timeline = { ADDED_1_15_3 },
-					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
-					repeatable = true,
-					lvl = 45,
-				})),
-				-- #endif
 				q(8467, {	-- Feathers for Nafien
 					sourceQuest = 8460,	-- Timbermaw Ally
 					qg = 15395,	-- Nafien
 					coord = { 64.8, 8.2, FELWOOD },
 					maxReputation = { FACTION_TIMBERMAW_HOLD, EXALTED },
-					timeline = {
-						-- #if SEASON_OF_DISCOVERY
-						REMOVED_1_15_3,
-						-- #else
-						REMOVED_4_0_3,
-						-- #endif
-					},
+					timeline = { REMOVED_4_0_3 },
 					cost = { { "i", 21377, 5 } },	-- Deadwood Headdress Feather
 					repeatable = true,
 					lvl = 45,
@@ -476,106 +458,8 @@ maproot(KALIMDOR, {
 							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
-							-- #if SEASON_OF_DISCOVERY
-							-- EPIC CRAFTED ITEMS UPGRADES
-							applyclassicphase(SOD_PHASE_FOUR, i(227807, {	-- Dense Timbermaw Belt
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19043, 1 },	-- Heavy Timbermaw Belt
-									{ "i", 12360, 1 },	-- Arcanite Bar
-									{ "i", 21383, 20 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = BLACKSMITHING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227810, {	-- Dense Timbermaw Boots
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19048, 1 },	-- Heavy Timbermaw Boots
-									{ "i", 12360, 1 },	-- Arcanite Bar
-									{ "i", 21383, 25 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = BLACKSMITHING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227803, {	-- Dire Warbear Harness
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 15064, 1 },	-- Warbear Harness
-									{ "i", 15407, 2 },	-- Cured Rugged Hide
-									{ "i", 21383, 30 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = LEATHERWORKING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227804, {	-- Dire Warbear Woolies
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 15065, 1 },	-- Warbear Woolies
-									{ "i", 15407, 2 },	-- Cured Rugged Hide
-									{ "i", 21383, 30 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = LEATHERWORKING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227805, {	-- Ferocity of the Timbermaw
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19044, 1 },	-- Might of the Timbermaw
-									{ "i", 15407, 1 },	-- Cured Rugged Hide
-									{ "i", 21383, 20 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = LEATHERWORKING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227862, {	-- Incandescent Mooncloth Boots
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 15802, 1 },	-- Mooncloth Boots
-									{ "i", 14342, 1 },	-- Mooncloth
-									{ "i", 21383, 25 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = TAILORING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(228190, {	-- Knowledge of the Timbermaw
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19047, 1 },	-- Wisdom of the Timbermaw
-									{ "i", 14342, 1 },	-- Mooncloth
-									{ "i", 21383, 20 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = TAILORING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227808, {	-- Rugged Mantle of the Timbermaw
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19050, 1 },	-- Mantle of the Timbermaw
-									{ "i", 14342, 1 },	-- Mooncloth
-									{ "i", 21383, 25 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = TAILORING,
-								learnedAt = 290,
-							})),
-							applyclassicphase(SOD_PHASE_FOUR, i(227809, {	-- Studded Timbermaw Brawlers
-								timeline = { ADDED_1_15_3 },
-								cost = {
-									{ "i", 19049, 1 },	-- Timbermaw Brawlers
-									{ "i", 15407, 1 },	-- Cured Rugged Hide
-									{ "i", 21383, 20 },	-- Winterfall Spirit Beads
-								},
-								requireSkill = LEATHERWORKING,
-								learnedAt = 290,
-							})),
-							-- #endif
 						},
 						{	-- Revered
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_FOUR, i(228982, {	-- Formula: Enchant Shield - Law of Nature
-								timeline = { ADDED_1_15_3 },
-							})),
-							-- #endif
 							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)

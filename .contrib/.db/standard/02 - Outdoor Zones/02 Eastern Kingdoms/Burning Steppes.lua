@@ -2076,21 +2076,6 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226407, {	-- Rune of Axe Specialization
-				provider = { "o", 457101 },	-- The Rites of Mak'Gora
-				coord = { 40.0, 34.5, BURNING_STEPPES },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, PALADIN, HUNTER, SHAMAN },
-				groups = {
-					recipe(453688, {	-- Engrave Ring - Axe Specialization
-						classes = { WARRIOR, PALADIN, HUNTER, SHAMAN },
-					}),
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(1296, {	-- Felder Stover <Weaponsmith>
 				coord = { 72.9, 65.8, BURNING_STEPPES },
@@ -2235,17 +2220,6 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 					7027,	-- Blackrock Slayer
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(227908, {	-- Pattern: Masterwork Volcanic Leggings (RECIPE!)
-				description = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
-				coords = {
-					{ 83.6, 40.0, BURNING_STEPPES },
-					{ 80.4, 45.8, BURNING_STEPPES },
-				},
-				timeline = { ADDED_1_15_3 },
-				cr = 7035,	-- Firegut Brute
-			})),
-			-- #endif
 			i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 				description = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 				coords = {
@@ -2253,11 +2227,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 					{ 80.4, 45.8, BURNING_STEPPES },
 				},
 				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_3,
-					-- #else
 					REMOVED_4_0_3, ADDED_10_1_7,
-					-- #endif
 				},
 				cr = 7035,	-- Firegut Brute
 			}),

@@ -1609,28 +1609,6 @@ maproot(KALIMDOR, TANARIS, {
 					i(10418),	-- Glimmering Mithril Insignia
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81877, {	-- Fight Night
-				sourceQuest = 81801,	-- Return to the Arena
-				qg = 220984,	-- Fizbuz Mithril
-				coord = { 51.6, 27.6, TANARIS },
-				timeline = { ADDED_1_15_2 },
-				classes = { WARRIOR },
-				lvl = 45,
-				groups = {
-					objective(1, {	-- Arena Victory
-						provider = { "n", 221829 },	-- Kajind <Arena Champion>
-					}),
-					i(220164, {	-- Rune of the Gladiator
-						classes = { WARRIOR },
-						groups = {
-							recipe(416002),	-- Engrave Boots - Gladiator Stance
-						},
-					}),
-					i(219223),	-- Blademaster's Fury
-				},
-			})),
-			-- #endif
 			q(26887, {	-- Filling Our Pockets (A)
 				sourceQuests = {
 					25053,	-- To The Ground!
@@ -2766,16 +2744,6 @@ maproot(KALIMDOR, TANARIS, {
 					recipe(9972),	-- Ornate Mithril Breastplate
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81682, {	-- The Old Champ
-				qg = 220984,	-- Fizbuz Mithril
-				coord = { 51.6, 27.6, TANARIS },
-				timeline = { ADDED_1_15_2 },
-				maps = { AZSHARA },
-				classes = { WARRIOR },
-				lvl = 45,
-			})),
-			-- #endif
 			q(3638, {	-- The Pledge of Secrecy
 				sourceQuests = {
 					3526,	-- Goblin Engineering
@@ -3666,16 +3634,7 @@ maproot(KALIMDOR, TANARIS, {
 					-- #endif
 				},
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217280, {	-- Plans: Golden Scale Coif (RECIPE!)
-						timeline = { ADDED_1_15_1 },
-						isLimited = true,
-					})),
-					-- #endif
 					i(6047, {	-- Plans: Golden Scale Coif (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_1 },
-						-- #endif
 						isLimited = true,
 					}),
 				},
@@ -3738,20 +3697,9 @@ maproot(KALIMDOR, TANARIS, {
 					-- #endif
 				},
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe (RECIPE!)
-						timeline = { ADDED_1_15_1 },
-						isLimited = true,
-					})),
-					i(7088, {	-- Pattern: Crimson Silk Robe (RECIPE!)
-						timeline = { REMOVED_1_15_1 },
-						isLimited = true,
-					}),
-					-- #else
 					i(7088, {	-- Pattern: Crimson Silk Robe (RECIPE!)
 						isLimited = true,
 					}),
-					-- #endif
 					i(21358),	-- Pattern: Soul Pouch (RECIPE!)
 				},
 			}),

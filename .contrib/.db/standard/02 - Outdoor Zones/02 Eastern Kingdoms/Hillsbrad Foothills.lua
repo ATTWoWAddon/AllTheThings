@@ -3017,20 +3017,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 				coord = { 49.8, 50.6, HILLSBRAD_FOOTHILLS },
 			}),
 			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(211951, {	-- Koartul
-				coord = { 61.0, 32.8, HILLSBRAD_FOOTHILLS },
-				cost = { { "i", 210410, 1 } },	-- Freshwater Snapper Bait
-				groups = {
-					i(210596, {	-- Rune of Cobra Strikes
-						classes = { HUNTER },
-						groups = {
-							recipe(425759),	-- Engrave Chest - Cobra Strikes
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(14277, {	-- Lady Zephris
 				-- #if AFTER CATA
 				coord = { 54.6, 76.6, HILLSBRAD_FOOTHILLS },
@@ -3235,16 +3221,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 				},
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(210330, {	-- Hot Tip
-						cost = 7500,	-- 75s
-						classes = { ROGUE },
-						groups = {
-							i(210329),	-- Hillsbrad Treasure Map
-							i(210323),	-- Safe Combination
-						},
-					})),
-					-- #endif
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
 					}),
@@ -3471,16 +3447,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 					-- #endif
 				},
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(211487, {	-- Demolition Explosives
-						cost = 10000,	-- 1g
-						classes = { WARLOCK },
-					})),
-					applyclassicphase(SOD_PHASE_ONE, i(210410, {	-- Freshwater Snapper Bait
-						cost = 2000,	-- 20s
-						classes = { HUNTER },
-					})),
-					-- #endif
 					i(4829, {	-- Dreamer's Belt
 						isLimited = true,
 					}),
@@ -3502,11 +3468,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 					i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
-						isLimited = true,
-					})),
-					-- #endif
 					i(7561, {	-- Schematic: Goblin Jumper Cables (RECIPE!)
 						isLimited = true,
 					}),
@@ -3519,36 +3480,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, o(414658, {	-- Rubble
-				coord = { 79.7, 40.9, HILLSBRAD_FOOTHILLS },
-				cost = { { "i", 211487, 1 } },	-- Demolition Explosives
-				groups = {
-					applyclassicphase(SOD_PHASE_ONE, i(211476, {	-- Rune of Fires Wake
-						provider = { "o", 414713 },	-- Storage Locker
-						classes = { WARLOCK },
-						groups = {
-							recipe(403937),	-- Engrave Chest - Lake of Fire
-						},
-					})),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210026, {	-- Symbol of the Third Owl
-				description = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
-				providers = {
-					{ "o", 409942 },	-- Twin Owl Statue (West)
-					{ "o", 409949 },	-- Twin Owl Statue (East)
-				},
-				coords = {
-					{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
-					{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { DRUID },
-			})),
-		}),
-		-- #endif
 		-- #if NOT ANYCLASSIC
 		-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 		o(207279, {	-- Warchief's Command Board
@@ -3710,16 +3641,6 @@ Click Leave vehicle and repeat steps 3-8"]],
 				},
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(206387, {	-- Kajaric Icon
-				coord = { 65.6, 60.4, HILLSBRAD_FOOTHILLS },
-				classes = { SHAMAN },
-				cr = 2373,	-- Mudsnout Shaman
-				groups = {
-					recipe(410095),	-- Engrave Gloves - Lava Burst
-				},
-			})),
-			-- #endif
 			-- #if AFTER CATA
 			i(5775, {	-- Pattern: Black Silk Pack (RECIPE!)
 				-- #if AFTER 10.1.7

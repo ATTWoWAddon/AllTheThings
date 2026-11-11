@@ -234,24 +234,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 							}),
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
-						qg = 2123,	-- Dark Cleric Duesten <Priest Trainer>
-						coord = { 31.0, 66.0, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = { UNDEAD },
-						classes = { PRIEST },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
-								provider = { "i", 205951 },	-- Memory of a Troubled Acolyte
-								description = "Kneel (/kneel) at a Graveyard to gain a Meditation buff, then use the Rune to complete the quest.",
-							}),
-							recipe(402862),	-- Engrave Gloves - Penance
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					-- #endif
 					q(380, {	-- Night Web's Hollow
 						sourceQuest = 376,	-- The Damned
 						qg = 1570,	-- Executor Arren
@@ -485,35 +467,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 						races = { UNDEAD },
 						classes = { WARRIOR },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77671, {	-- Spell Research
-						qg = 2124,	-- Isabella <Mage Trainer>
-						qi = 211809,	-- Comprehension Primer
-						coord = { 30.8, 66.0, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = { UNDEAD },
-						classes = { MAGE },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-								provider = { "i", 203745 },	-- Spell Notes: Ice Lance
-							}),
-							recipe(401760),	-- Engrave Gloves - Ice Lance
-							i(211779),	-- Comprehension Charm
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					q(24967, {	-- Stab!
-						sourceQuest = 3096,	-- Encrypted Scroll
-						qg = 2122,	-- David Trias <Rogue Trainer>
-						-- #if BEFORE MOP
-						coord = { 32.6, 65.6, TIRISFAL_GLADES },
-						-- #endif
-						timeline = { ADDED_4_0_3, REMOVED_7_0_3 },
-						races = { UNDEAD },
-						classes = { ROGUE },
-					}),
-					-- #endif
 					q(3099, {	-- Tainted Scroll
 						sourceQuests = {
 							-- #if AFTER CATA
@@ -596,38 +549,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 						timeline = { ADDED_4_0_3 },
 						races = HORDE_ONLY,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77672, {	-- The Lost Rune [Warlock]
-						qg = 2126,	-- Maximillion <Warlock Trainer>
-						coord = { 30.8, 66.2, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = { UNDEAD },
-						classes = { WARLOCK },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
-								provider = { "i", 205230 },	-- Rune of Haunting
-							}),
-							recipe(403919),	-- Engrave Gloves - Haunt
-							i(711),	-- Tattered Cloth Gloves
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune [Warrior]
-						qg = 2119,	-- Dannal Stern <Warrior Trainer>
-						coord = { 32.6, 65.6, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = { UNDEAD },
-						classes = { WARRIOR },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								provider = { "i", 204806 },	-- Rune of Victory Rush
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					-- #endif
 					q(364, {	-- The Mindless Ones
 						sourceQuest = 363,	-- Rude Awakening
 						qg = 1569,	-- Shadow Priest Sarvis
@@ -690,25 +611,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 							-- #endif
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77669, {	-- The Scarlet Rune
-						qg = 2122,	-- David Trias <Rogue Trainer>
-						coord = { 32.6, 65.6, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = { UNDEAD },
-						classes = { ROGUE },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-								provider = { "i", 204795 },	-- Rune of Shadowstrike
-								coord = { 38.2, 68.4, TIRISFAL_GLADES },
-								cr = 1506,	-- Scarlet Convert
-							}),
-							recipe(400105),	-- Engrave Gloves - Shadowstrike
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(28608, {	-- The Shadow Grave
 						sourceQuest = 24959,	-- Fresh out of the Grave
 						qg = 1568,	-- Undertaker Mordo
@@ -830,23 +732,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 					}),
 				}),
 				-- #endif
-				-- #if SEASON_OF_DISCOVERY
-				n(TREASURES, {
-					applyclassicphase(SOD_PHASE_ONE, o(406736, {	-- Lost Stash
-						coord = { 24.7, 59.4, TIRISFAL_GLADES },
-						timeline = { REMOVED_2_0_1 },
-						races = HORDE_ONLY,
-						groups = {
-							i(205230, {	-- Rune of Haunting
-								classes = { WARLOCK },
-							}),
-							i(204806, {	-- Rune of Victory Rush
-								classes = { WARRIOR },
-							}),
-						},
-					})),
-				}),
-				-- #endif
 				n(ZONE_DROPS, {
 					i(3295, {	-- Deadman Blade
 						coords = {
@@ -909,13 +794,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						cr = 1507,	-- Scarlet Initiate
 					}),
-					-- #endif
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(203751, {	-- Spell Notes: CALE ENCI
-						coord = { 38.2, 68.4, TIRISFAL_GLADES },
-						classes = { MAGE },
-						cr = 1507,	-- Scarlet Initiate
-					})),
 					-- #endif
 					i(2754, {	-- Tarnished Bastard Sword
 						coords = {
@@ -1131,101 +1009,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				timeline = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 				cr = 1658,	-- Captain Dargol
 			}),
-		}),
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
-				coords = {
-					{ 58.8, 38.2, TIRISFAL_GLADES },
-					{ 53.0, 28.8, TIRISFAL_GLADES },
-					{ 46.0, 30.6, TIRISFAL_GLADES },
-					{ 52.8, 56.8, TIRISFAL_GLADES },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1674,	-- Rot Hide Gnoll
-					1534,	-- Wailing Ancestor
-					1523,	-- Cracked Skull Soldier
-					1522,	-- Darkeye Bonecaster
-					1526,	-- Ravaged Corpse
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
-				coords = {
-					{ 51.8, 67.4, TIRISFAL_GLADES },
-					{ 79.0, 26.0, TIRISFAL_GLADES },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1662,	-- Captain Perrine
-					1665,	-- Captain Melrache
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
-				coord = { 35.8, 43.4, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1545,	-- Vile Fin Muckdweller
-					1543,	-- Vile Fin Puddlejumper
-					1544,	-- Vile Fin Minor Oracle
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 208038, 1 },	-- Bottom-Left Map Piece
-					{ "i", 208037, 1 },	-- Bottom-Right Map Piece
-					{ "i", 208036, 1 },	-- Top-Left Map Piece
-					{ "i", 208035, 1 },	-- Top-Right Map Piece
-				},
-				classes = { ROGUE },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
-				coord = { 56.6, 44.4, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1941,	-- Rot Hide Graverobber
-					1675,	-- Rot Hide Mongrel
-					1674,	-- Rot Hide Gnoll
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
-				coord = { 35.8, 43.4, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1545,	-- Vile Fin Muckdweller
-					1543,	-- Vile Fin Puddlejumper
-					1544,	-- Vile Fin Minor Oracle
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
-				coord = { 37.4, 49.2, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1935,	-- Tirisfal Farmhand
-					1934,	-- Tirisfal Farmer
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
-				coord = { 32.8, 50.4, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					1535,	-- Scarlet Warrior
-					1536,	-- Scarlet Missionary
-					1538,	-- Scarlet Friar
-					1540,	-- Scarlet Vanguard
-					1537,	-- Scarlet Zealot
-					1539,	-- Scarlet Neophyte
-				},
-			})),
 		}),
 		-- #endif
 		n(QUESTS, {
@@ -1552,27 +1335,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-				questID = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
-				qgs = {
-					208920,	-- Penny Hawkins <Bartender>
-					208919,	-- Blueheart
-				},
-				coord = { 61.8, 52.0, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				races = HORDE_ONLY,
-				classes = { WARRIOR },
-				groups = {
-					i(204716, {	-- Rune of Frenzied Assault
-						classes = { WARRIOR },
-						groups = {
-							recipe(425447),	-- Engrave Pants - Frenzied Assault
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(24990, {	-- Darkhound Pounding
 				sourceQuests = {
 					24974,	-- Ever So Lonely
@@ -2523,27 +2285,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				},
 				timeline = { ADDED_5_2_0 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(208927, {	-- Dead Acolyte
-				coord = { 76.6, 44.8, TIRISFAL_GLADES },
-				classes = { WARLOCK },
-				races = HORDE_ONLY,
-				groups = {
-					i(208223, {	-- Acolyte's Knapsack
-						classes = { WARLOCK },
-						groups = {
-							i(208224),	-- Acolyte's Note
-							i(205181),	-- Unidentified Artifact
-						},
-					}),
-					i(205183, {	-- Fel-Powered Artifact
-						description = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
-						cost = { { "i", 205182, 1 } },	-- Powerless Artifact
-						classes = { WARLOCK },
-					}),
-				},
-			})),
-			-- #endif
 			n(1911, {	-- Deeb
 				-- #if AFTER CATA
 				coord = { 72.6, 25.8, TIRISFAL_GLADES },
@@ -2601,47 +2342,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				},
 				-- #endif
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(202060, {	-- Frozen Murloc
-				coord = { 66.2, 40.0, TIRISFAL_GLADES },
-				classes = { MAGE, WARLOCK },
-				groups = {
-					i(205228, {	-- Rune of Chaos Bolt
-						classes = { WARLOCK },
-						groups = {
-							recipe(403925),	-- Engrave Gloves - Chaos Bolt
-						},
-					}),
-					i(203748, {	-- Spell Notes: Burnout
-						classes = { MAGE },
-						groups = {
-							recipe(401759),	-- Engrave Chest - Burnout
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(208196, {	-- Gillgar
-				coord = { 27.2, 46.4, TIRISFAL_GLADES },
-				classes = { PRIEST, MAGE, WARRIOR },
-				groups = {
-					i(205940, {	-- Memory of a Dark Purpose
-						classes = { PRIEST },
-						groups = {
-							recipe(425216),	-- Engrave Chest - Void Plague
-						},
-					}),
-					i(204809, {	-- Rune of Furious Thunder
-						classes = { WARRIOR },
-						groups = {
-							recipe(403476),	-- Engrave Pants - Furious Thunder
-						},
-					}),
-					i(203753, {	-- Spell Notes: RING SEFF OSTROF
-						classes = { MAGE },
-					}),
-				},
-			})),
-			-- #endif
 			n(50930, {	-- Hibernus the Sleeper
 				coord = { 47.6, 70.2, TIRISFAL_GLADES },
 				timeline = { ADDED_5_1_0 },
@@ -2760,44 +2460,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 			}),
 		}),
 		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-				provider = { "o", 405201 },	-- Shipwreck Cache
-				coord = { 66.7, 24.6, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 208007, 1 } },	-- Shipwreck Cache Key
-				classes = { ROGUE },
-				groups = {
-					recipe(400081),	-- Engrave Pants - Between the Eyes
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
-				provider = { "o", 386675 },	-- Buried Treasure
-				coord = { 52.9, 54.0, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 208034, 1 } },	-- Tirisfal Treasure Map
-				classes = { ROGUE },
-				groups = {
-					recipe(400095),	-- Engrave Chest - Quick Draw
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
-				provider = { "o", 404941 },	-- Relic Coffer
-				coord = { 52.5, 25.8, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 208005, 1 } },	-- Agamand Relic Coffer Key
-				classes = { ROGUE },
-				groups = {
-					recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(208185, {	-- The Apothecary's Metaphysical Primer
-				provider = { "o", 405879 },	-- Apothecary Society Primer
-				coord = { 59.5, 52.3, TIRISFAL_GLADES },
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(2118, {	-- Abigail Shiel <Trade Supplies>
 				coords = {
@@ -2841,21 +2503,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(2310, {	-- Jamie Nore
-				coord = { 60.8, 50.4, TIRISFAL_GLADES },
-				races = HORDE_ONLY,
-				groups = {
-					applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
-						cost = { { "i", 208086, 1 } },	-- Forged Scarlet Memorandum
-						classes = { ROGUE },
-						groups = {
-							recipe(400094),	-- Engrave Gloves - Mutilate
-						},
-					})),
-				},
-			}),
-			-- #endif
 			n(3550, {	-- Martine Tramblay <Fishing Supplies>
 				coord = { 65.8, 59.6, TIRISFAL_GLADES },
 				races = HORDE_ONLY,
@@ -2864,18 +2511,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(2127, {	-- Rupert Boch <Warlock Trainer>
-				coord = { 61.6, 52.4, TIRISFAL_GLADES },
-				races = HORDE_ONLY,
-				groups = {
-					applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
-						cost = { { "i", 205181, 1 } },	-- Unidentified Artifact
-						classes = { WARLOCK },
-					})),
-				},
-			}),
-			-- #endif
 			n(3548, {	-- Selina Weston <Alchemy & Herbalism Supplies>
 				coords = {
 					-- #if AFTER CATA
@@ -2936,24 +2571,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		applyclassicphase(SOD_PHASE_ONE, n(WILD_POLYMORPH, {
-			races = HORDE_ONLY,
-			classes = { MAGE },
-			groups = {
-				i(203749, {	-- Spell Notes: Enlightenment
-					cost = { { "i", 208183, 6 } },	-- Apothecary Notes
-					classes = { MAGE },
-					groups = {
-						recipe(415942),	-- Engrave Chest - Enlightenment
-					},
-				}),
-				i(208183, {	-- Apothecary Notes
-					cr = 208712,	-- Odd Melon
-				}),
-			},
-		})),
-		-- #endif
 		n(141488, {	-- Zidormi
 			description = "If you get loaded into Tirisfal Glades by Zidormi and want to phase back into pre-BfA version of the zone, you can talk to this npc. However, if she does not give any options, try to traverse eastwards towards Western Plaguelands. At some point you should hopefully phase back into pre-BfA Tirisfal Glades.",
 			timeline = { ADDED_8_0_1 },
@@ -3021,21 +2638,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 					1934,	-- Tirisfal Farmer
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
-				coords = {
-					{ 59.4, 33.6, TIRISFAL_GLADES },
-					{ 56.2, 44.8, TIRISFAL_GLADES },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				crs = {
-					1675,	-- Rot Hide Mongrel
-					1941,	-- Rot Hide Graverobber
-					1674,	-- Rot Hide Gnoll
-				},
-			})),
-			-- #endif
 			i(3321, {	-- Gray Fur Booties
 				coords = {
 					{ 86.0, 38.2, TIRISFAL_GLADES },
@@ -3049,21 +2651,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				cr = 1549,	-- Ravenous Darkhound
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(207973, {	-- Hound Jawbone
-				coords = {
-					{ 44.8, 48.4, TIRISFAL_GLADES },
-					{ 55.4, 65.4, TIRISFAL_GLADES },
-					{ 85.0, 46.4, TIRISFAL_GLADES },
-				},
-				classes = { WARLOCK },
-				crs = {
-					1548,	-- Cursed Darkhound
-					1547,	-- Decrepit Darkhound
-					1549,	-- Ravenous Darkhound
-				},
-			})),
-			-- #endif
 			i(3331, {	-- Melrache's Cape
 				coord = { 79.4, 26.0, TIRISFAL_GLADES },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
@@ -3071,87 +2658,17 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				-- This item was given an description about how the NPC it drops from is friendly to the Alliance in pre-cata iterations of the game.
 				-- That information is incorrect unless someone can point to a specific patch where it would have merit. //Danny Donkey
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
-				coords = {
-					{ 40.6, 51.8, TIRISFAL_GLADES },
-					{ 36.8, 51.6, TIRISFAL_GLADES },
-				},
-				classes = { PRIEST },
-				crs = {
-					1934,	-- Tirisfal Farmer
-					1935,	-- Tirisfal Farmhand
-				},
-				groups = {
-					recipe(402854),	-- Engrave Pants - Shared Pain
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207974, {	-- Ominous Tome
-				coord = { 46.8, 35.0, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARLOCK },
-				cr = 1522,	-- Darkeye Bonecaster
-			})),
-			-- #endif
 			i(3332, {	-- Perrine's Boots
 				coord = { 51.6, 67.6, TIRISFAL_GLADES },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				cr = 1662,	-- Captain Perrine
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
-				coords = {
-					{ 34.0, 47.8, TIRISFAL_GLADES },
-					{ 51.6, 68.8, TIRISFAL_GLADES },
-					{ 80.0, 54.4, TIRISFAL_GLADES },
-				},
-				classes = { PRIEST },
-				crs = {
-					1535,	-- Scarlet Warrior
-					1536,	-- Scarlet Missionary
-					1537,	-- Scarlet Zealot
-				},
-				groups = {
-					recipe(402852),	-- Engrave Pants - Homunculi
-				},
-			})),
-			-- #endif
 			-- #if AFTER 10.1.7
 			i(3260, {	-- Scarlet Initiate Robes
 				coord = { 79.0, 32.2, TIRISFAL_GLADES },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				cr = 1539,	-- Scarlet Neophyte
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(207975, {	-- Severed Bat Head
-				coord = { 43.2, 53.0, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1553,	-- Greater Duskbat
-					1554,	-- Vampiric Duskbat
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
-				coord = { 59.2, 36.2, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1674,	-- Rot Hide Gnoll
-					1941,	-- Rot Hide Graverobber
-					1675,	-- Rot Hide Mongrel
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
-				coord = { 35.2, 42.0, TIRISFAL_GLADES },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					1545,	-- Vile Fin Muckdweller
-					1544,	-- Vile Fin Minor Oracle
-				},
-			})),
 			-- #endif
 			i(3319, {	-- Short Sabre
 				coords = {
@@ -3161,21 +2678,6 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				cr = 1529,	-- Bleeding Horror
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
-				coords = {
-					{ 34.0, 47.8, TIRISFAL_GLADES },
-					{ 51.6, 68.8, TIRISFAL_GLADES },
-					{ 80.0, 54.4, TIRISFAL_GLADES },
-				},
-				classes = { MAGE },
-				crs = {
-					1535,	-- Scarlet Warrior
-					1536,	-- Scarlet Missionary
-					1537,	-- Scarlet Zealot
-				},
-			})),
-			-- #endif
 			i(3328, {	-- Spider Web Robe
 				coord = { 86.6, 53.8, TIRISFAL_GLADES },
 				timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord

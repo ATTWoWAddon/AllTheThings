@@ -912,16 +912,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81765, {	-- Elrick, Paladin of the Silver Hand
-				sourceQuest = 81764,	-- The Mysterious Merchant
-				qg = 221575,	-- Elrick
-				coord = { 66.4, 45.4, DUSTWALLOW_MARSH },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-			})),
-			-- #endif
 			q(1271, {	-- Feast at the Blue Recluse
 				description = "Don't forget to loot all the food and drinks off the tables.",
 				sourceQuests = {
@@ -1233,13 +1223,7 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				sourceQuest = 1206,	-- Jarl Needs Eyes
 				qg = 4792,	-- "Swamp Eye" Jarl
 				coord = { 55.4, 26.2, DUSTWALLOW_MARSH },
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_0,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				-- #if BEFORE TBC
 				cost = { { "i", 3853, 1 } },	-- Moonsteel Broadsword
 				-- #endif
@@ -1255,20 +1239,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					i(9622),	-- Reedknot Ring
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(81570, {	-- Jarl Needs a Blade
-				sourceQuest = 1206,	-- Jarl Needs Eyes
-				qg = 4792,	-- "Swamp Eye" Jarl
-				coord = { 55.4, 26.2, DUSTWALLOW_MARSH },
-				timeline = { ADDED_1_15_1 },
-				cost = { { "i", 217281, 1 } },	-- Moonsteel Broadsword
-				lvl = 30,
-				groups = {
-					i(5016),	-- Artisan's Trousers
-					i(9622),	-- Reedknot Ring
-				},
-			})),
-			-- #endif
 			q(27184, {	-- Jarl Needs Eyes
 				sourceQuest = 27183,	-- Marsh Frog Legs
 				qg = 4792,	-- "Swamp Eye" Jarl
@@ -2595,25 +2565,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81766, {	-- The Bloody Missive
-				sourceQuest = 81764,	-- The Mysterious Merchant
-				providers = {
-					{ "i", 219930 },	-- Bloody Missive
-					{ "i", 219929 },	-- Bloody Missive
-					{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
-				},
-				coord = { 66.4, 45.4, DUSTWALLOW_MARSH },
-				maps = { STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				cr = 221575,	-- Elrick
-				lvl = 44,
-				groups = {
-					recipe(429251),	-- Engrave Helm - Fanaticism
-				},
-			})),
-			-- #endif
 			q(27416, {	-- The Brood of Onyxia (1/3)
 				sourceQuest = 27414,	-- Identifying the Brood
 				qg = 4501,	-- Draz'Zilb
@@ -2927,22 +2878,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					i(6757),	-- Jaina's Signet Ring
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81764, {	-- The Mysterious Merchant
-				sourceQuest = 81762,	-- Some Good News
-				qg = 5492,	-- Katherine the Pure <Paladin Trainer>
-				coord = { 37.8, 31.6, STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-				groups = {
-					objective(1, {	-- Travel to Theramore and find the mysterious merchant.
-						provider = { "n", 221575 },	-- Elrick
-						coord = { 66.4, 45.4, DUSTWALLOW_MARSH },
-					}),
-				},
-			})),
-			-- #endif
 			q(27246, {	-- The Orc Report
 				provider = { "o", 20985 },	-- Loose Dirt
 				coord = { 55.4, 25.9, DUSTWALLOW_MARSH },
@@ -3600,14 +3535,6 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					i(16084, {	-- Expert First Aid - Under Wraps (RECIPE!)
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 					i(16112, {	-- Manual: Heavy Silk Bandage (RECIPE!)
 						timeline = { REMOVED_3_1_0 },

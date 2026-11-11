@@ -2670,14 +2670,6 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 					i(16083, {	-- Expert Fishing - The Bass and You
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 				},
 			}),
@@ -2802,16 +2794,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 					i(7087, {	-- Pattern: Crimson Silk Cloak (RECIPE!)
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217258, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-						timeline = { ADDED_1_15_1 },
-						isLimited = true,
-					})),
-					-- #endif
 					i(14630, {	-- Pattern: Enchanter's Cowl (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_1 },
-						-- #endif
 						isLimited = true,
 					}),
 				},

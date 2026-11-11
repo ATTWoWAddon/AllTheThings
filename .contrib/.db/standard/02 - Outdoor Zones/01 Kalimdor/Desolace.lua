@@ -1057,14 +1057,6 @@ maproot(KALIMDOR, DESOLACE, {
 				lvl = { 29, 33 },
 				-- #endif
 			})),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79229, {	-- Highway Robbery
-				provider = { "o", 417353 },	-- Extinguished Campfire
-				coord = { 47.5, 54.6, DESOLACE },
-				timeline = { ADDED_1_15_1 },
-				lvl = 30,
-			})),
-			-- #endif
 			q(14378, {	-- Hunting Brendol
 				sourceQuests = {
 					14373,	-- Infernal Encroachment
@@ -1379,15 +1371,6 @@ maproot(KALIMDOR, DESOLACE, {
 				coord = { 38.8, 27.0, DESOLACE },
 				timeline = { ADDED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79235, {	-- On The Lam
-				sourceQuest = 79229,	-- Highway Robbery
-				qg = 11438,	-- Bibbly F'utzbuckle
-				coord = { 62.2, 38.8, DESOLACE },
-				timeline = { ADDED_1_15_1 },
-				lvl = 30,
-			})),
-			-- #endif
 			q(1373, {	-- Ongeku
 				sourceQuest = 1370,	-- Stealing Supplies
 				qg = 5397,	-- Uthek the Wise
@@ -1962,34 +1945,6 @@ maproot(KALIMDOR, DESOLACE, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79939, {	-- The Broken Hammer
-				sourceQuest = 78093,	-- Return to Delgren
-				providers = {
-					{ "i", 215441 },	-- Broken Hammer
-					{ "o", 423703 },	-- Broken Warhammer
-				},
-				coord = { 52.7, 84.8, DESOLACE },
-				maps = { STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 25,
-				groups = {
-					objective(1, {	-- 0/1 Torn Letter
-						provider = { "i", 216956 },	-- Torn Letter
-						coord = { 54.2, 78.0, DESOLACE },
-						crs = {
-							4668,	-- Burning Blade Summoner
-							4705,	-- Burning Blade Invoker
-						},
-					}),
-					objective(2, {	-- Find someone who can tell you about the hammer
-						provider = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-						coord = { 37.8, 31.6, STORMWIND_CITY },
-					}),
-				},
-			})),
-			-- #endif
 			q(1435, {	-- The Burning of Spirits
 				sourceQuest = 1433,	-- Alliance Relations (3/4)
 				qg = 4498,	-- Maurin Bonesplitter
@@ -2417,15 +2372,6 @@ maproot(KALIMDOR, DESOLACE, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
-				provider = { "i", 216941 },	-- Ariden's Sigil
-				coord = { 65.0, 25.0, DESOLACE },
-				groups = {
-					i(216950),	-- Creepy Dalaran Relic
-				},
-			})),
-			-- #endif
 			n(14228, {	-- Giggler
 				coords = {
 					-- #if AFTER CATA
@@ -2494,18 +2440,6 @@ maproot(KALIMDOR, DESOLACE, {
 			}),
 		}),
 		n(TREASURES, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, i(213513, {	-- Libram of Deliverance
-				provider = { "o", 423695 },	-- Libram of Deliverance
-				coord = { 66.5, 7.5, DESOLACE },
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					recipe(416028),	-- Engrave Boots - Sacred Shield
-				},
-			})),
-			-- #endif
 			o(176582, {	-- Shellfish Trap
 				-- #if AFTER CATA
 				sourceQuest = 14334,	-- Blubbergut
@@ -2652,14 +2586,6 @@ maproot(KALIMDOR, DESOLACE, {
 					i(16072, {	-- Expert Cookbook
 						timeline = { REMOVED_3_1_0 },
 						rank = 3,
-						-- #if SEASON_OF_DISCOVERY
-						OnUpdate = [[function(t)
-							if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-								t.u = nil; t.phase = ]] .. SOD_PHASE_TWO .. [[;
-							end
-							t.OnUpdate = nil;
-						end]],
-						-- #endif
 					}),
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)

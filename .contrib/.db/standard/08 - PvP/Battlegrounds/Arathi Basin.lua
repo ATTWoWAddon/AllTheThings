@@ -867,26 +867,6 @@ battleground(ARATHI_BASIN, {
 					i(20230),	-- Defiler's Standard Care Package
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79990, {	-- Stranglethorn Lumber (A)
-				qg = 14984,	-- Sergeant Maclear
-				coord = { 45.8, 45.4, ARATHI_HIGHLANDS },
-				maxReputation = { FACTION_THE_LEAGUE_OF_ARATHOR, EXALTED },
-				cost = { { "i", 216491, 1 } },	-- 1x Shipment of Stranglethorn Lumber
-				races = ALLIANCE_ONLY,
-				repeatable = true,
-				lvl = 26,
-			})),
-			applyclassicphase(SOD_PHASE_TWO, q(79991, {	-- Stranglethorn Lumber (H)
-				qg = 15022,	-- Deathstalker Mortis
-				coord = { 73.6, 29.8, ARATHI_HIGHLANDS },
-				maxReputation = { FACTION_THE_DEFILERS, EXALTED },
-				cost = { { "i", 216491, 1 } },	-- 1x Shipment of Stranglethorn Lumber
-				races = HORDE_ONLY,
-				repeatable = true,
-				lvl = 26,
-			})),
-			-- #endif
 			q(8122, {	-- Take Five Bases (Horde)
 				sourceQuest = 8121,	-- Take Four Bases (Horde)
 				qg = 15021,	-- Deathmaster Dwire

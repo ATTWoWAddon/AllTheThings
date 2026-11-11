@@ -72,30 +72,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(PROFESSIONS, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
-				providers = {
-					-- { "o",  },	-- Shard of Pure Light
-					{ "i", 211421 },	-- The Box
-				},
-				coord = { 88.6, 73.6, ALTERAC_MOUNTAINS },
-				groups = {
-					r(429351, {	-- Extraplanar Spidersilk Boots (RECIPE!)
-						requireSkill = TAILORING,
-					}),
-					r(429348, {	-- Shifting Silver Breastplate (RECIPE!)
-						requireSkill = BLACKSMITHING,
-					}),
-					r(429869, {	-- Void-Touched Leather Gauntlets (RECIPE!)
-						requireSkill = LEATHERWORKING,
-					}),
-					r(429354, {	-- Void-Touched Leather Gloves (RECIPE!)
-						requireSkill = LEATHERWORKING,
-					}),
-					i(211422),	-- Shard of the Void
-				},
-			})),
-			-- #endif
 			-- #if BEFORE CATA
 			prof(FISHING, {
 				o(180685),	-- Waterlogged Wreckage
@@ -156,35 +132,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(80453, {	-- Best Laid Plans
-				sourceQuest = 80411,	-- The Talisman of Kazdor
-				qg = 6707,	-- Fahrad <Grand Master Rogue>
-				qi = 217609,	-- Talisman of Kazdor
-				coord = { 84.4, 80.2, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_15_2 },
-				classes = { ROGUE },
-				lvl = 45,
-			})),
-			applyclassicphase(SOD_PHASE_THREE, q(80455, {	-- Biding Our Time
-				sourceQuest = 80454,	-- One Last Drop
-				provider = { "o", 410369 },	-- Dead Drop
-				coord = { 47.1, 71.1, SILVERPINE_FOREST },
-				timeline = { ADDED_1_15_2 },
-				maps = { ALTERAC_MOUNTAINS },
-				classes = { ROGUE },
-				lvl = 45,
-				groups = {
-					i(217736, {	-- Rune of the Coterie
-						classes = { ROGUE },
-						groups = {
-							recipe(432295),	-- Engrave Helm - Honor Among Thieves
-						},
-					}),
-					i(219343),	-- Filcher's Cowl
-				},
-			})),
-			-- #endif
 			q(506, {	-- Blackmoore's Legacy
 				sourceQuest = 503,	-- Gol'dir
 				qg = 2316,	-- Gol'dir
@@ -366,15 +313,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(80526, {	-- Fool Me Twice
-				qg = 6707,	-- Fahrad <Grand Master Rogue>
-				coord = { 84.4, 80.2, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_15_2 },
-				classes = { ROGUE },
-				lvl = 45,
-			})),
-			-- #endif
 			q(510, {	-- Foreboding Plans
 				providers = {
 					{ "o", 1738 },	-- Syndicate Documents
@@ -505,18 +443,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(80454, {	-- One Last Drop
-				sourceQuest = 80453,	-- Best Laid Plans
-				qg = 6777,	-- Zan Shivsproket <Speciality Engineer>
-				qi = 217737,	-- Modified Talisman
-				coord = { 86.0, 80.0, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_15_2 },
-				maps = { SILVERPINE_FOREST },
-				classes = { ROGUE },
-				lvl = 45,
-			})),
-			-- #endif
 			applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag
 				sourceQuest = 8233,	-- A Simple Request
 				qg = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
@@ -729,26 +655,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(80411, {	-- The Talisman of Kazdor
-				description = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
-				sourceQuest = 80526,	-- Fool Me Twice
-				qg = 6707,	-- Fahrad <Grand Master Rogue>
-				coord = { 84.4, 80.2, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_15_2 },
-				maps = { ZULFARRAK },
-				classes = { ROGUE },
-				lvl = 45,
-				groups = {
-					objective(1, {	-- 0/1 Talisman of Kazdor
-						providers = {
-							{ "i", 217609 },	-- Talisman of Kazdor
-							{ "o", 433596 },	-- Spellbound War Chest
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(535, {	-- Valik
 				altQuests = { 533 },	-- Infiltration (Can only be completed while on this quest)
 				qg = 2333,	-- Henchman Valik
@@ -853,26 +759,6 @@ maproot(EASTERN_KINGDOMS, ALTERAC_MOUNTAINS, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_TWO, i(213452, {	-- Dormant Holy Rune
-				description = "Once you have this rune in your inventory, use Divine Intervention on a healer friend. Have them resurrect you to receive the rune upon resurrection.",
-				provider = { "o", 423841 },	-- Frozen Remains
-				coord = { 39.7, 60.8, ALTERAC_MOUNTAINS },
-				timeline = { ADDED_1_15_1 },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(213132, {	-- Rune of the Guardian
-						classes = { PALADIN },
-						groups = {
-							recipe(416035),	-- Engrave Boots - Guarded by the Light
-						},
-					}),
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(2480, {	-- Bro'kin <Alchemy Supplies>
 				coord = { 38.0, 38.0, ALTERAC_MOUNTAINS },

@@ -13,14 +13,6 @@ profession(POISONS, {
 					recipeID = 26786,
 					lvl = 68,
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, {
-					name = "Atrophic Poison",
-					timeline = { ADDED_1_15_3 },
-					recipeID = 439503,
-					lvl = 60,
-				}),
-				-- #endif
 				-- #if BEFORE TBC
 				{
 					name = "Blinding Powder",
@@ -125,26 +117,6 @@ profession(POISONS, {
 					recipeID = 11400,
 					lvl = 52,
 				},
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_FOUR, {
-					name = "Numbing Poison",
-					timeline = { ADDED_1_15_3 },
-					recipeID = 439505,
-					lvl = 60,
-				}),
-				applyclassicphase(SOD_PHASE_FOUR, {
-					name = "Occult Poison I",
-					timeline = { ADDED_1_15_3 },
-					recipeID = 458822,
-					lvl = 60,
-				}),
-				applyclassicphase(SOD_PHASE_FOUR, {
-					name = "Sebacious Poison",
-					timeline = { ADDED_1_15_3 },
-					recipeID = 439500,
-					lvl = 60,
-				}),
-				-- #endif
 				{
 					name = "Wound Poison",
 					recipeID = 13220,

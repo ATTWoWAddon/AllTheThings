@@ -257,38 +257,6 @@ maproot(KALIMDOR, FELWOOD, {
 				coord = { 51.4, 80.4, FELWOOD },
 				timeline = { ADDED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
-				readable = "SOD - Aeonas: Journey to Felwood",
-				icon = 131039,
-				text = {
-					en = "Aeonas: Journey to Felwood",
-				},
-			}), {
-				qg = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-				questID = 81879,	-- Aeonas: Journey to Felwood HQT
-				sourceQuest = 81764,	-- The Mysterious Merchant
-				coord = { 37.6, 31.6, STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-			})),
-			applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Trust in a Friend
-				readable = "SOD - Aeonas: Trust in a Friend",
-				icon = 131038,
-				text = {
-					en = "Aeonas: Trust in a Friend",
-				},
-			}), {
-				qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-				questID = 81883,	-- Aeonas: Trust in a Friend HQT
-				sourceQuest = 81879,	-- Aeonas: Journey to Felwood HQT
-				coord = { 45.0, 52.0, FELWOOD },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-			})),
-			-- #endif
 			q(28150, {	-- An Arcane Ally
 				sourceQuests = {
 					28148,	-- Culling the Corrupted
@@ -851,29 +819,6 @@ maproot(KALIMDOR, FELWOOD, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84384, {	-- Demonic Deceptions
-				qg =  222408,	-- Shadowtooth Emissary
-				coord = { 51.6, 82.0, FELWOOD },
-				timeline = { ADDED_1_15_3 },
-				maps = { WINTERSPRING },
-				lvl = 55,
-				groups = {
-					objective(1, {	-- 0/6 Owlbeast Pineal Gland
-						provider = { "i", 227914 },	-- Owlbeast Pineal Gland
-						coord = { 65.6, 21.4, WINTERSPRING },
-						crs = {
-							7454,	-- Berserk Owlbeast
-							7452,	-- Crazed Owlbeast
-							7453,	-- Moontouched Owlbeast
-							7450,	-- Ragged Owlbeast
-							7451,	-- Raging Owlbeast
-						},
-					}),
-					i(228172),	-- Shadowtooth Illusion Ward
-				},
-			})),
-			-- #endif
 			q(28000, {	-- Do the Imp-Possible
 				sourceQuests = {
 					28150,	-- An Arcane Ally
@@ -1145,23 +1090,6 @@ maproot(KALIMDOR, FELWOOD, {
 					i(11875),	-- Breezecloud Bracers
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Gregory: You Can Trust Me... Probably.
-				readable = "SOD - Gregory: You Can Trust Me... Probably.",
-				icon = 131038,
-				text = {
-					en = "Gregory: You Can Trust Me... Probably.",
-				},
-			}), {
-				qg = 221636,	-- Gregory <Truthbearer>
-				questID = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
-				sourceQuest = 81883,	-- Aeonas: Trust in a Friend HQT
-				coord = { 44.6, 52.0, FELWOOD },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-			})),
-			-- #endif
 			q(4883, {	-- Guarding Secrets (2/2)
 				sourceQuest = 4882,	-- Guarding Secrets (1/2)
 				qs = 12558,	-- Blue-feathered Necklace
@@ -1305,53 +1233,6 @@ maproot(KALIMDOR, FELWOOD, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
-				sourceQuest = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
-				qg =  221636,	-- Gregory <Truthbearer>
-				coord = { 44.6, 52.0, FELWOOD },
-				maps = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-				groups = {
-					objective(1, {	-- 0/3 Fiery Infernal Core
-						provider = { "i", 220166 },	-- Fiery Infernal Core
-						coord = { 42.8, 43.6, FELWOOD },
-						crs = {
-							7135,	-- Infernal Bodyguard
-							7136,	-- Infernal Sentry
-							9878,	-- Entropic Beast
-							9879,	-- Entropic Horror
-						},
-					}),
-					objective(2, {	-- 0/1 Shimmering Grave Dust
-						providers = {
-							{ "i", 220167 },	-- Shimmering Grave Dust
-							{ "o", 441222 },	-- Grave Mound
-						},
-						description = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
-					}),
-					objective(3, {	-- 0/1 Triple-Brewed Molten Lager
-						provider = { "i", 220168 },	-- Triple-Brewed Molten Lager
-						description = "Sold by Plugger Spazzring in Blackrock Depths.",
-					}),
-					q(81944, {	-- A Newly Discovered Purpose...
-						qg = 214529,	-- Brave Stonetorch
-						coord = { 67.4, 14.8, HILLSBRAD_FOOTHILLS },
-						classes = { PALADIN },
-						races = ALLIANCE_ONLY,
-						lvl = 44,
-						groups = {
-							objective(4, {	-- 0/1 Symbol of Faith
-								questID = 81790,	-- Materials of Significance
-								provider = { "i", 220169 },	-- Symbol of Faith
-							}),
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(5085, {	-- Mystery Goo
 				sourceQuest = 5084,	-- Falling to Corruption
 				providers = {
@@ -2081,24 +1962,6 @@ maproot(KALIMDOR, FELWOOD, {
 				coord = { 48.7, 25.2, FELWOOD },
 				timeline = { ADDED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82135, {	-- The Price of Hope
-				sourceQuest = 81885,	-- The Ritual
-				qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-				qi = 221519,	-- Mannoroc Orb
-				coord = { 45.0, 52.0, FELWOOD },
-				maps = { STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-				groups = {
-					objective(1, {	-- 0/1 Withered Protector slain
-						provider = { "n", 7149 },	-- Withered Protector
-					}),
-					i(221518),	-- Whisper
-				},
-			})),
-			-- #endif
 			q(5385, {	-- The Remains of Trey Lightforge
 				sourceQuest = 5204,	-- Retribution of the Light
 				qg = 11020,	-- Remains of Trey Lightforge
@@ -2111,23 +1974,6 @@ maproot(KALIMDOR, FELWOOD, {
 					i(15705),	-- Tidecrest Blade
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(81885, {	-- The Ritual
-				sourceQuest = 81790,	-- Materials of Significance
-				qg =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-				coord = { 45.0, 52.0, FELWOOD },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 44,
-				groups = {
-					objective(1, {	-- Complete the Ritual
-						provider = { "n", 221636 },	-- Gregory
-						coord = { 44.6, 52.0, FELWOOD },
-					}),
-					recipe(410013),	-- Engrave Bracers - Hammer of the Righteous
-				},
-			})),
-			-- #endif
 			q(28337, {	-- The Shredders of Irontree
 				sourceQuest = 28384,	-- Into the Clearing
 				qg = 48493,	-- Alton Redding
@@ -2170,85 +2016,6 @@ maproot(KALIMDOR, FELWOOD, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, q(82043, {	-- The Wild Gods (1/2)
-				qg = 222408,	-- Shadowtooth Emissary
-				coord = { 51.4, 82.0, FELWOOD },
-				timeline = { ADDED_1_15_2 },
-				maps = { THE_HINTERLANDS, RAZORFEN_DOWNS },
-				cost = { { "i", 221261, 1 } },	-- Wildwhisper Draught
-				lvl = 40,
-				groups = {
-					i(221418),	-- Agamaggan's Roar
-				},
-			})),
-			applyclassicphase(SOD_PHASE_THREE, q(82044, {	-- The Wild Gods (2/2)
-				sourceQuest = 82043,	-- The Wild Gods (1/2)
-				qg = 222522,	-- Spirit of Agamaggan
-				timeline = { ADDED_1_15_2 },
-				maps = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
-				lvl = 40,
-				groups = {
-					objective(1, {	-- 0/3 Wild Offering
-						provider = { "i", 221262 },	-- Wild Offering
-						description = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
-					}),
-					i(222962, {	-- Hyjal's Wisdom
-						recipe(429247, {	-- Engrave Helm - Improved Sanctuary
-							classes = { PALADIN },
-						}),
-						i(221488, {	-- Resolute Epiphany
-							classes = { PRIEST },
-							groups = {
-								recipe(431650),	-- Engrave Helm - Divine Aegis
-							},
-						}),
-						i(221514, {	-- Rune of Firepower
-							classes = { HUNTER },
-							groups = {
-								recipe(416085),	-- Engrave Helm - Lock and Load
-							},
-						}),
-						i(221513, {	-- Rune of Potency
-							classes = { ROGUE },
-							groups = {
-								recipe(432293),	-- Engrave Helm - Combat Potency
-							},
-						}),
-						i(221516, {	-- Rune of Primal Energy
-							classes = { DRUID },
-							groups = {
-								recipe(431461),	-- Engrave Bracers - Improved Frenzied Regeneration
-							},
-						}),
-						i(221490, {	-- Rune of Riptide
-							classes = { SHAMAN },
-							groups = {
-								recipe(410105),	-- Engrave Bracers - Riptide
-							},
-						}),
-						i(221510, {	-- Rune of the Knight
-							classes = { WARRIOR },
-							groups = {
-								recipe(427082),	-- Engrave Bracers - Sword and Board
-							},
-						}),
-						i(221489, {	-- Rune of Vengeance
-							classes = { WARLOCK },
-							groups = {
-								recipe(426470),	-- Engrave Helm - Vengeance
-							},
-						}),
-						i(221487, {	-- Spell Notes: Advanced Warding
-							classes = { MAGE },
-							groups = {
-								recipe(401754),	-- Engrave Helm - Advanced Warding
-							},
-						}),
-					}),
-				},
-			})),
-			-- #endif
 			applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8421, {	-- The Wrong Stuff
 				sourceQuests = {
 					8419,	-- An Imp's Request
@@ -2692,21 +2459,6 @@ maproot(KALIMDOR, FELWOOD, {
 			}),
 		}),
 		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226416, {	-- Rune of Nature Specialization
-				provider = { "o", 457092 },	-- The Fury of Stormrage
-				coord = { 62.8, 7.5, FELWOOD },
-				timeline = { ADDED_1_15_3 },
-				classes = { HUNTER, ROGUE, SHAMAN, DRUID },
-				groups = {
-					recipe(453698, {	-- Engrave Ring - Nature Specialization
-						classes = { HUNTER, ROGUE, SHAMAN, DRUID },
-					}),
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(2806, {	-- Bale <General Goods>
 				coord = { 34.8, 53.2, FELWOOD },
@@ -2758,68 +2510,6 @@ maproot(KALIMDOR, FELWOOD, {
 					i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_THREE, n(222408, {	-- Shadowtooth Emissary
-				sourceQuest = 82044,	-- The Wild Gods (2/2)
-				coord = { 51.4, 82.0, FELWOOD },
-				timeline = { ADDED_1_15_2 },
-				lvl = 40,
-				groups = {
-					i(221491, {	-- Shadowtooth Bag
-						description = "Random non-Ace card from the new DMF decks.",
-						cost = { { "i", 221262, 10 } },	-- 10x Wild Offering
-						sym = {{ "select", "itemID",
-							221291,	-- Two of Dunes
-							221292,	-- Three of Dunes
-							221293,	-- Four of Dunes
-							221294,	-- Five of Dunes
-							221295,	-- Six of Dunes
-							221296,	-- Seven of Dunes
-							221297,	-- Eight of Dunes
-							221300,	-- Two of Nightmares
-							221301,	-- Three of Nightmares
-							221302,	-- Four of Nightmares
-							221303,	-- Five of Nightmares
-							221304,	-- Six of Nightmares
-							221305,	-- Seven of Nightmares
-							221306,	-- Eight of Nightmares
-							221282,	-- Two of Plagues
-							221283,	-- Three of Plagues
-							221284,	-- Four of Plagues
-							221285,	-- Five of Plagues
-							221286,	-- Six of Plagues
-							221287,	-- Seven of Plagues
-							221288,	-- Eight of Plagues
-							221273,	-- Two of Wilds
-							221274,	-- Three of Wilds
-							221275,	-- Four of Wilds
-							221276,	-- Five of Wilds
-							221277,	-- Six of Wilds
-							221278,	-- Seven of Wilds
-							221279,	-- Eight of Wilds
-						}},
-					}),
-					i(223197, {	-- Defender of the Wilds
-						cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
-					}),
-					i(223193, {	-- Crown of the Dreamweaver
-						cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
-					}),
-					i(223192, {	-- Cord of the Untamed
-						cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
-					}),
-					i(223196, {	-- Godslayer's Greaves
-						cost = { { "i", 221262, 15 } },	-- 15x Wild Offering
-					}),
-					i(223194, {	-- Band of the Wilds
-						cost = { { "i", 221262, 12 } },	-- 12x Wild Offering
-					}),
-					i(223195, {	-- Breadth of the Beast
-						cost = { { "i", 221262, 12 } },	-- 12x Wild Offering
-					}),
-				},
-			})),
-			-- #endif
 			n(14522, {	-- Ur'dan
 				sourceQuest = 7625,	-- Xorothian Stardust
 				coord = { 36.2, 44.6, FELWOOD },

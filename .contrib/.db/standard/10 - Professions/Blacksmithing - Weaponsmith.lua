@@ -3,13 +3,8 @@ profession(BLACKSMITHING, {
 	prof(9787, {	-- Weaponsmith
 		description = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
 		sourceQuests = {
-			-- #if SEASON_OF_DISCOVERY
-			82662,	-- The Way of the Weaponsmith [Alliance]
-			82665,	-- The Way of the Weaponsmith [Horde]
-			-- #else
 			5284,	-- The Way of the Weaponsmith [Alliance]
 			5302,	-- The Way of the Weaponsmith [Horde]
-			-- #endif
 		},
 		timeline = { REMOVED_4_0_1 },
 		groups = {
@@ -22,10 +17,6 @@ profession(BLACKSMITHING, {
 						name = "Annihilator",
 						recipeID = 16991,
 						requireSkill = 17041,
-						-- #if SEASON_OF_DISCOVERY
-						description = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
-						timeline = { REMOVED_1_15_0 },
-						-- #endif
 					},
 					{
 						name = "Arcanite Reaper",
@@ -47,9 +38,6 @@ profession(BLACKSMITHING, {
 						name = "Nightfall",
 						recipeID = 23653,
 						requireSkill = 17041,
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_0 },
-						-- #endif
 					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
@@ -132,11 +120,7 @@ profession(BLACKSMITHING, {
 			}),
 			prof(17040, {	-- Master Hammersmith
 				sourceQuests = {
-					-- #if SEASON_OF_DISCOVERY
-					84496,	-- Sweet Serenity [Master Hammersmith]
-					-- #else
 					5305,	-- Sweet Serenity [Master Hammersmith]
-					-- #endif
 				},
 				description = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				groups = {
@@ -148,24 +132,10 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						name = "Enchanted Battlehammer",
-						timeline = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
-							REMOVED_4_0_3,
-							-- #endif
-						},
+						timeline = { REMOVED_4_0_3 },
 						recipeID = 16973,
 						requireSkill = 17040,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Finely-Enchanted Battlehammer",
-						recipeID = 461733,
-						requireSkill = 17040,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Hammer of the Titans",
 						recipeID = 16988,
@@ -185,29 +155,11 @@ profession(BLACKSMITHING, {
 					{
 						name = "Serenity",
 						timeline = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
 							REMOVED_2_0_1, ADDED_3_0_2,
-							-- #endif
 						},
 						recipeID = 16983,
 						requireSkill = 17040,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Skyrider's Masterwork Stormhammer",
-						recipeID = 461647,
-						requireSkill = 17040,
-						timeline = { ADDED_1_15_3 },
-					}),
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Tranquility",
-						recipeID = 461718,
-						requireSkill = 17040,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
 						name = "Deep Thunder",
@@ -314,11 +266,7 @@ profession(BLACKSMITHING, {
 					{
 						name = "Corruption",
 						timeline = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
 							REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5,
-							-- #endif
 						},
 						recipeID = 16985,
 						requireSkill = 17039,
@@ -328,14 +276,6 @@ profession(BLACKSMITHING, {
 						recipeID = 20890,
 						requireSkill = 17039,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Desecration",
-						recipeID = 461714,
-						requireSkill = 17039,
-						timeline = { REMOVED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Frostguard",
 						recipeID = 16992,
@@ -474,21 +414,10 @@ profession(BLACKSMITHING, {
 						recipeID = 16987,
 						requireSkill = 9787,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Deadly Heartseeker",
-						recipeID = 461716,
-						requireSkill = 9787,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Heartseeker",
 						recipeID = 16995,
 						requireSkill = 9787,
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_3 },
-						-- #endif
 					},
 					-- #endif
 					applyclassicphase(WRATH_PHASE_ONE, {

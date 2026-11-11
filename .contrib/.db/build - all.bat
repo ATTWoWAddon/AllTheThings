@@ -1,6 +1,6 @@
 cd /d "..\.tools\"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
-"Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+"Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
 "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"

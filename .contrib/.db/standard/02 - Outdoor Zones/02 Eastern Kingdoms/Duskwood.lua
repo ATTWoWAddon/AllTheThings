@@ -118,19 +118,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		pickpocketing({
-			applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
-				coord = { 23.3, 72.8, DUSKWOOD },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				crs = {
-					215,	-- Defias Night Runner
-					909,	-- Defias Night Blade
-				},
-			})),
-		}),
-		-- #endif
 		n(QUESTS, {
 			q(26720, {	-- A Curse We Cannot Lift
 				-- #if AFTER 7.0.3
@@ -1834,29 +1821,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 			}),
 		}),
 		n(RARES, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212261, {	-- Awakened Lich
-				providers = {
-					{ "i", 210568 },	-- Decrepit Phylactery
-					{ "o", 411328 },	-- Slumbering Bones
-				},
-				coord = { 18.0, 38.6, DUSKWOOD },
-				groups = {
-					i(210569, {	-- Rune of Flagellation
-						classes = { WARRIOR },
-						groups = {
-							recipe(403480),	-- Engrave Chest - Flagellation
-						},
-					}),
-					i(211514, {	-- Spell Notes: Mass Regeneration
-						classes = { MAGE },
-						groups = {
-							recipe(415939),	-- Engrave Pants - Mass Regeneration
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(45785, {	-- Carved One
 				coords = {	-- pats in a circle, coords not exhaustive
 					{ 48.4, 70.4, DUSKWOOD },
@@ -1886,15 +1850,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 					i(4464),	-- Trouncing Boots
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
-				provider = { "i", 216941 },	-- Ariden's Sigil
-				coord = { 23.0, 47.0, DUSKWOOD },
-				groups = {
-					i(216946),	-- Glittering Dalaran Relic
-				},
-			})),
-			-- #endif
 			n(45801, {	-- Eliza <Bride of the Embalmer>
 				coord = { 27.6, 31.6, DUSKWOOD },
 				timeline = { ADDED_4_0_3 },
@@ -2059,39 +2014,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				timeline = { ADDED_4_0_3 },
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(209849, {	-- Crimes Against Anatomy
-				provider = { "o", 409735 },	-- Spellbook
-				coord = { 16.7, 28.5, DUSKWOOD },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
-				description = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
-				provider = { "o", 411348 },	-- Dusty Coffer
-				coord = { 26.0, 31.0, DUSKWOOD },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
-				provider = { "o", 410779 },	-- Offering Box
-				coord = { 81.0, 71.0, DUSKWOOD },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
-				description = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetery.",
-				providers = {
-					-- { "o",  },	-- TODO: Find ObjectID
-					{ "i", 210250 },	-- Engraved Gold Ring
-					{ "i", 210251 },	-- Engraved Silver Ring
-				},
-				coord = { 19.9, 45.5, DUSKWOOD },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(424988),	-- Engrave Gloves - Shiv
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(228, {	-- Avette Fellwood <Bowyer>
 				coord = { 73.2, 44.8, DUSKWOOD },
@@ -2184,11 +2106,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 					i(4827, {	-- Wizard's Belt
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret (RECIPE!)
-						isLimited = true,
-					})),
-					-- #endif
 					i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 						isLimited = true,
 					}),
@@ -2341,29 +2258,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(211528, {	-- Dark Insight
-				coords = {
-					{ 22.8, 68.0, DUSKWOOD },
-					{ 50.8, 75.0, DUSKWOOD },
-				},
-				classes = { PRIEST },
-				crs = {
-					910,	-- Defias Enchanter
-					909,	-- Defias Night Blade
-					215,	-- Defias Night Runner
-				},
-				groups = {
-					i(211490, {	-- Prophecy of a Thousand Lights
-						coord = { 90.0, 30.0, DUSKWOOD },
-						classes = { PRIEST },
-						groups = {
-							recipe(402859),	-- Engrave Gloves - Circle of Healing
-						},
-					}),
-				},
-			})),
-			-- #endif
 			i(2232, {	-- Dark Runner Boots
 				coords = {
 					-- #if AFTER 10.1.7
@@ -2510,19 +2404,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(211472, {	-- Libram of Banishment
-				coords = {
-					{ 22.8, 68.0, DUSKWOOD },
-					{ 50.8, 75.0, DUSKWOOD },
-				},
-				classes = { PALADIN },
-				cr = 215,	-- Defias Night Runner
-				groups = {
-					recipe(416037),	-- Engrave Pants - Exorcist
-				},
-			})),
-			-- #endif
 			i(897, {	-- Madwolf Bracers
 				coords = {
 					-- #if AFTER 10.1.7
@@ -2626,14 +2507,6 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				timeline = { REMOVED_4_0_3 },
 				cr = 412,	-- Stitches <Gift from the Embalmer>
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
-				coord = { 65.2, 27.8, DUSKWOOD },
-				timeline = { REMOVED_2_0_1 },
-				classes = { DRUID },
-				cr = 211200,	-- Agon
-			})),
 			-- #endif
 			i(899, {	-- Venom Web Fang
 				coords = {

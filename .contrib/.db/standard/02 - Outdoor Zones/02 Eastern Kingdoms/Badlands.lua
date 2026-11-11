@@ -1865,15 +1865,6 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 					-- #endif
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
-				provider = { "i", 216941 },	-- Ariden's Sigil
-				coord = { 58.0, 54.0, BADLANDS },
-				groups = {
-					i(216951),	-- Slippery Dalaran Relic
-				},
-			})),
-			-- #endif
 			n(50728, {	-- Deathstrike
 				coord = { 70.2, 53.8, BADLANDS },
 				timeline = { ADDED_5_1_0 },

@@ -111,23 +111,12 @@ profession(BLACKSMITHING, {
 						name = "Helm of the Great Chief",
 						recipeID = 16728,
 						requireSkill = 9788,
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_3 },
-						-- #endif
 					},
 					{
 						name = "Lionheart Helm",
 						recipeID = 16729,
 						requireSkill = 9788,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Warcrest of the Great Chief",
-						recipeID = 461739,
-						requireSkill = 9788,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Whitesoul Helm",
 						recipeID = 16724,
@@ -145,11 +134,7 @@ profession(BLACKSMITHING, {
 						recipeID = 16660,
 						requireSkill = 9788,
 						timeline = {
-							-- #if SEASON_OF_DISCOVERY
-							ADDED_1_15_3,
-							-- #else
 							CREATED_1_12_1, ADDED_2_0_3,
-							-- #endif
 						},
 					},
 					{
@@ -184,43 +169,18 @@ profession(BLACKSMITHING, {
 						name = "Fiery Plate Gauntlets",
 						recipeID = 16655,
 						requireSkill = 9788,
-						timeline = {
-							-- #if SEASON_OF_DISCOVERY
-							REMOVED_1_15_3,
-							-- #else
-							REMOVED_4_0_3,
-							-- #endif
-						},
+						timeline = { REMOVED_4_0_3 },
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Fiery Plate Gauntlets of the Hidden Technique",
-						recipeID = 461651,
-						requireSkill = 9788,
-						timeline = { REMOVED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Storm Gauntlets",
 						recipeID = 16661,
 						requireSkill = 9788,
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_3 },
-						-- #endif
 					},
 					{
 						name = "Stronghold Gauntlets",
 						recipeID = 16741,
 						requireSkill = 9788,
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Tempest Gauntlets",
-						recipeID = 461737,
-						requireSkill = 9788,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Truesilver Gauntlets",
 						timeline = { REMOVED_4_0_1 },
@@ -238,9 +198,6 @@ profession(BLACKSMITHING, {
 						name = "Dark Iron Plate",
 						recipeID = 15296,
 						requireSkill = 9788,
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_3 },
-						-- #endif
 					},
 					{
 						name = "Demon Forged Breastplate",
@@ -254,31 +211,11 @@ profession(BLACKSMITHING, {
 						recipeID = 16745,
 						requireSkill = 9788,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Invincible Mail",
-						recipeID = 461735,
-						requireSkill = 9788,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Invulnerable Mail",
 						recipeID = 16746,
 						requireSkill = 9788,
-						-- #if SEASON_OF_DISCOVERY
-						-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
-						-- timeline = { REMOVED_1_15_3 },
-						-- #endif
 					},
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, {
-						name = "Tempered Dark Iron Plate",
-						recipeID = 461667,
-						requireSkill = 9788,
-						timeline = { ADDED_1_15_3 },
-					}),
-					-- #endif
 					{
 						name = "Truesilver Breastplate",
 						timeline = { REMOVED_4_0_1 },

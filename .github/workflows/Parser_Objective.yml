@@ -34,7 +34,7 @@ jobs:
       - name: Database Parser for Season of Discovery
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic SOD.config"
+          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
         shell: cmd
 
       - name: Database Parser for The Burning Crusade

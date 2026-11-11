@@ -299,13 +299,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				sourceQuest = 4143,	-- Haze of Evil
 				qg = 9119,	-- Muigin
 				coord = { 42.9, 9.6, UNGORO_CRATER },
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_2,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 47,
 				groups = {
@@ -325,13 +319,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 					{ "o", 164958 },	-- Bloodpetal Sprout
 				},
 				coord = { 45.6, 8.6, UNGORO_CRATER },
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_2,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				races = HORDE_ONLY,
 				lvl = 47,
 				groups = {
@@ -841,8 +829,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 					}),
 					i(53563),	-- Stegodon Tusk Mace
 					i(53564),	-- Osteoderm Belt
-					i(53565, {
-					}),
+					i(53565),
 					i(156996, {	-- Tailspike Pike
 						timeline = { ADDED_7_3_5 },
 					}),

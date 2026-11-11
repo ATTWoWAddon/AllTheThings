@@ -50,25 +50,6 @@ maproot(KALIMDOR, MULGORE, {
 							}),
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77649, {	-- A Hunter's Strength
-						qg = 3061,	-- Lanka Farshot <Hunter Trainer>
-						coord = { 44.2, 75.8, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						classes = { HUNTER },
-						races = { TAUREN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
-								provider = { "i", 206168 },	-- Rune of the Chimera
-								coord = { 62.6, 79.8, MULGORE },
-								cr = 2954,	-- Bristleback Battleboar
-							}),
-							recipe(410121),	-- Engrave Gloves - Chimera Shot
-							i(2125),	-- Cracked Leather Gloves
-						},
-					})),
-					-- #endif
 					q(24857, {	-- Attack on Camp Narache
 						providers = {
 							{ "o", 3076 },	-- Dirt-stained Map
@@ -265,38 +246,6 @@ maproot(KALIMDOR, MULGORE, {
 						races = { TAUREN },
 						classes = { PRIEST },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
-						qg = 3062,	-- Meela Dawnstrider <Shaman Trainer>
-						coord = { 45.0, 76.0, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						classes = { SHAMAN },
-						races = { TAUREN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
-								provider = { "i", 206381 },	-- Dyadic Icon
-							}),
-							recipe(410094),	-- Engrave Chest - Overload
-							i(2127),	-- Cracked Leather Vest
-						},
-					})),
-					applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
-						qg = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
-						coord = { 44.0, 76.0, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						classes = { WARRIOR },
-						races = { TAUREN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-								provider = { "i", 204806 },	-- Rune of Victory Rush
-							}),
-							recipe(403470),	-- Engrave Gloves - Victory Rush
-							i(2385),	-- Tarnished Chain Gloves
-						},
-					})),
-					-- #endif
 					q(24861, {	-- Last Rites, First Rites
 						sourceQuest = 14460,	-- Rite of Honor
 						qg = 2981,	-- Chief Hawkwind
@@ -355,23 +304,6 @@ maproot(KALIMDOR, MULGORE, {
 						races = { TAUREN },
 						classes = { DRUID },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
-						qg = 3060,	-- Gart Mistrunner <Druid Trainer>
-						coord = { 45.0, 76.0, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						classes = { DRUID },
-						races = { TAUREN },
-						lvl = 2,
-						groups = {
-							objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Fury of Stormrage
-								provider = { "i", 208414 },	-- Lunar Idol
-							}),
-							recipe(410061),	-- Engrave Chest - Fury of Stormrage
-							i(2127),	-- Cracked Leather Vest
-						},
-					})),
-					-- #endif
 					q(14456, {	-- Rite of Courage
 						sourceQuest = 14458,	-- Go To Adana
 						qg = 36694,	-- Adana Thunderhorn
@@ -710,22 +642,6 @@ maproot(KALIMDOR, MULGORE, {
 						classes = { DRUID },
 					}),
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				n(TREASURES, {
-					applyclassicphase(SOD_PHASE_ONE, o(403102, {	-- Bristleback Loot Cache
-						coord = { 61.6, 76.0, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						groups = {
-							i(208414, {	-- Lunar Idol
-								classes = { DRUID },
-							}),
-							i(204806, {	-- Rune of Victory Rush
-								classes = { WARRIOR },
-							}),
-						},
-					})),
-				}),
-				-- #endif
 				n(ZONE_DROPS, {
 					i(1388, {	-- Crooked Staff
 						timeline = { REMOVED_4_0_3 },
@@ -740,14 +656,6 @@ maproot(KALIMDOR, MULGORE, {
 							-- #endif
 						},
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
-						coord = { 63.8, 81.0, MULGORE },
-						timeline = { REMOVED_2_0_1 },
-						classes = { SHAMAN },
-						cr = 2953,	-- Bristleback Shaman
-					})),
-					-- #endif
 					i(4951, {	-- Squealer's Belt
 						timeline = { REMOVED_4_0_3 },
 						-- #if AFTER 10.1.7
@@ -1896,21 +1804,6 @@ maproot(KALIMDOR, MULGORE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
-				description = "You can tame him and you still get the rune!",
-				coord = { 36.0, 57.0, MULGORE },
-				cost = { { "i", 205961, 1 } },	-- Mulgore Bird Meat
-				groups = {
-					i(205979, {	-- Rune of Flanking
-						classes = { HUNTER },
-						groups = {
-							recipe(425762),	-- Engrave Pants - Flanking Strike
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(5785, {	-- Sister Hatelash
 				coords = {
 					-- #if AFTER CATA
@@ -1953,54 +1846,6 @@ maproot(KALIMDOR, MULGORE, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(205700, {	-- Venture Co. Poacher
-				provider = { "n", 205692 },	-- Rustling Bush
-				description = "Cast Hunter's Mark on the bush to spawn the rare.",
-				coord = { 59.0, 54.6, MULGORE },
-				classes = { HUNTER },
-				groups = {
-					i(206155, {	-- Rune of Marksmanship
-						classes = { HUNTER },
-						groups = {
-							recipe(410113),	-- Engrave Chest - Master Marksman
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-				qg = 206248,	-- Wooden Effigy
-				qi = 206466,	-- Prairie Crown
-				coord = { 37.8, 49.6, MULGORE },
-				cost = { { "i", 206469, 3 } },	-- Prairie Flower
-				groups = {
-					i(206963, {	-- Rune of Natural Potential
-						classes = { DRUID },
-						groups = {
-							recipe(416050),	-- Engrave Chest - Living Seed
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
-				provider = { "o", 392029 },	-- Swordsman's Reward
-				coords = {
-					{ 45.6, 36.4, MULGORE },
-					{ 51.8, 39.2, MULGORE },
-					{ 37.8, 55.0, MULGORE },
-					{ 40.6, 53.8, MULGORE },
-					{ 60.2, 67.6, MULGORE },
-				},
-				groups = {
-					i(204441, {	-- Rune of Blood Frenzy
-						classes = { WARRIOR },
-						groups = {
-							recipe(403474),	-- Engrave Chest - Blood Frenzy
-						},
-					}),
-				},
-			})),
-			-- #endif
 		}),
 		-- #if BEFORE TBC
 		n(RIDING_TRAINER, {
@@ -2022,81 +1867,6 @@ maproot(KALIMDOR, MULGORE, {
 					}),
 				},
 			}),
-		}),
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
-				provider = { "n", 204827 },	-- Adventurer's Remains
-				coord = { 60.4, 33.6, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(210589, {	-- Echo of the Ancestors
-						classes = { SHAMAN },
-						groups = {
-							recipe(410099),	-- Engrave Pants - Ancestral Guidance
-						},
-					}),
-					i(205944, {	-- Reciprocal Epiphany
-						classes = { PRIEST },
-						groups = {
-							recipe(402848),	-- Engrave Pants - Prayer of Mending
-						},
-					}),
-					i(206264, {	-- Rune of Inspiration
-						classes = { PALADIN },
-						groups = {
-							recipe(410011),	-- Engrave Pants - Inspiration Exemplar
-						},
-					}),
-					i(206970, {	-- Rune of Life
-						classes = { DRUID },
-						groups = {
-							recipe(410033),	-- Engrave Pants - Lifebloom
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, o(404352, {	-- Artifact Storage
-				provider = { "i", 206975 },	-- Artifact Storage Key
-				coord = { 31.6, 49.5, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				groups = {
-					i(206388, {	-- Sulfurous Icon
-						classes = { SHAMAN },
-						groups = {
-							recipe(425344),	-- Engrave Gloves - Molten Blast
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
-				description = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
-				-- provider = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
-				coords = {
-					{ 54.07, 55.82, MULGORE },
-					{ 36.3, 9.8, MULGORE },
-					{ 37.5, 52.5, MULGORE },
-					{ 41.65, 55.98, MULGORE },
-					{ 38.0, 60.0, MULGORE },
-				},
-				classes = { SHAMAN },
-				groups = {
-					recipe(410098),	-- Engrave Chest - Shield Mastery
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
-				description = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
-				providers = {
-					{ "n", 207577 },	-- Lunar Stone
-					{ "o", 404433 },	-- Lunar Chest
-				},
-				coord = { 35.7, 69.6, MULGORE },
-				classes = { DRUID },
-				groups = {
-					recipe(416044),	-- Engrave Gloves - Sunfire
-				},
-			})),
 		}),
 		-- #endif
 		n(VENDORS, {
@@ -2148,23 +1918,6 @@ maproot(KALIMDOR, MULGORE, {
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
-				description = "Use the musk and tame a prairie dog and then bring it to Takoda.",
-				coord = { 46.2, 60.6, MULGORE },
-				cost = { { "i", 205995, 1 } },	-- Prairie Dog Musk
-				crs = { 2620 },	-- Prairie Dog
-				races = HORDE_ONLY,
-				groups = {
-					i(206032, {	-- Rune of Carve
-						classes = { HUNTER },
-						groups = {
-							recipe(425758),	-- Engrave Gloves - Carve
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(3081, {	-- Wunna Darkmane <Trade Goods>
 				coords = {
 					-- #if AFTER CATA
@@ -2179,107 +1932,5 @@ maproot(KALIMDOR, MULGORE, {
 				},
 			}),
 		}),
-		-- #if SEASON_OF_DISCOVERY
-		n(ZONE_DROPS, {
-			applyclassicphase(SOD_PHASE_ONE, i(206975, {	-- Artifact Storage Key
-				coord = { 33.8, 49.8, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				crs = {
-					2990,	-- Bael'dun Appraiser
-					2989,	-- Bael'dun Digger
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
-				coord = { 53.2, 29.6, MULGORE },
-				classes = { DRUID },
-				crs = {
-					2979,	-- Venture Co. Supervisor
-					3232,	-- Bristleback Interloper
-					2964,	-- Windfury Sorceress
-					2971,	-- Taloned Swoop
-					2960,	-- Prairie Wolf Alpha
-					3566,	-- Flatland Prowler
-					2965,	-- Windfury Matriarch
-				},
-				groups = {
-					recipe(410025),	-- Engrave Gloves - Mangle
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205961, {	-- Mulgore Bird Meat
-				timeline = { REMOVED_2_0_1 },
-				classes = { HUNTER },
-				crs = {
-					2956,	-- Adult Plainstrider
-					2969,	-- Wiry Swoop
-					2970,	-- Swoop
-					2957,	-- Elder Plainstrider
-					2971,	-- Taloned Swoop
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk
-				coords = {
-					{ 53.6, 72.6, MULGORE },
-					{ 31.2, 62.2, MULGORE },
-					{ 48.2, 74.0, MULGORE },
-					{ 30.8, 61.6, MULGORE },
-				},
-				classes = { HUNTER },
-				crs = {
-					2951,	-- Palemane Poacher
-					2950,	-- Palemane Skinner
-					2949,	-- Palemane Tanner
-					207515,	-- Lurkmane
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206469, {	-- Prairie Flower
-				description = "These are scattered throughout the zone.",
-				provider = { "o", 403718 },	-- Prairie Flower
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-				description = "This can drop from any of the Rare Creatures in the zone.",
-				coord = { 51.8, 20.0, MULGORE },
-				classes = { HUNTER },
-				cr = 3058,	-- Arra'chea
-				groups = {
-					recipe(410123),	-- Engrave Gloves - Explosive Shot
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-				description = "This can drop from any of the Rare Creatures in the zone.",
-				coord = { 30.8, 61.6, MULGORE },
-				classes = { WARRIOR },
-				cr = 207515,	-- Lurkmane
-				groups = {
-					recipe(403476),	-- Engrave Pants - Furious Thunder
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
-				coord = { 53.6, 73.6, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					2949,	-- Palemane Tanner
-					2950,	-- Palemane Skinner
-					2951,	-- Palemane Poacher
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
-				coord = { 33.6, 42.0, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				crs = {
-					2962,	-- Windfury Harpy
-					2963,	-- Windfury Wind Witch
-					2965,	-- Windfury Matriarch
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
-				coord = { 61.6, 22.4, MULGORE },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				cr = 3232,	-- Bristleback Interloper
-			})),
-		}),
-		-- #endif
 	},
 });

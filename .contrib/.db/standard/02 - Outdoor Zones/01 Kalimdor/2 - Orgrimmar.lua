@@ -991,27 +991,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 40,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
-				questID = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
-				qgs = {
-					3399,	-- Zamja <Cooking Trainer>
-					208023,	-- Gru'ark
-				},
-				coord = { 57.6, 53.6, ORGRIMMAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { WARRIOR },
-				races = HORDE_ONLY,
-				groups = {
-					i(204716, {	-- Rune of Frenzied Assault
-						classes = { WARRIOR },
-						groups = {
-							recipe(425447),	-- Engrave Pants - Frenzied Assault
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 				description = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
 				sourceQuest = 60123,	-- Burning Crusade: To Outland!
@@ -1703,51 +1682,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78196, {	-- Secrets of Undeath (1/2)
-				qg = 211229,	-- Dietrich Praice
-				coord = { 35.6, 87.8, ORGRIMMAR },
-				timeline = { REMOVED_2_0_1 },
-				maps = { ASHENVALE },
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 18,
-				groups = {
-					objective(1, {	-- 0/12 Shadeleaf
-						provider = { "i", 210045 },	-- Shadeleaf
-						coord = { 69.6, 63.0, ASHENVALE },
-						crs = {
-							3782,	-- Shadethicket Stone Mover
-							3784,	-- Shadethicket Bark Ripper
-							3783,	-- Shadethicket Raincaller
-							3781,	-- Shadethicket Wood Shaper
-						},
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, q(78197, {	-- Secrets of Undeath (2/2)
-				description = "Completing this quest will allow you to meditate in the same manner as the undead.",
-				sourceQuest = 78196,	-- Secrets of Undeath (1/2)
-				providers = {
-					{ "n", 211229 },	-- Dietrich Praice
-					{ "n",   6491 },	-- Spirit Healer
-					{ "i", 210056 },	-- Tincture of Waking Death
-				},
-				coords = {
-					{ 35.6, 87.8, ORGRIMMAR },
-					{ 56.2, 49.4, TIRISFAL_GLADES },
-				},
-				timeline = { REMOVED_2_0_1 },
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 18,
-				groups = {
-					recipe(424041, {	-- Secrets of Undeath
-						classes = { PRIEST },
-					}),
-				},
-			})),
-			-- #endif
 			-- #if ANYCLASSIC
 			q(5680, {	-- Shadowguard [Orgrimmar]
 				altQuests = {
@@ -1799,23 +1733,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
-				qg = 6018,	-- Ur'kyo <Priest Trainer>
-				coord = { 35.6, 87.6, ORGRIMMAR },
-				timeline = { REMOVED_2_0_1 },
-				maps = { DUROTAR },
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 5,
-				groups = {
-					objective(1, {	-- Pray over the Supplicant
-						provider = { "n", 215096 },	-- Supplicant
-						description = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
-					}),
-				},
-			})),
 			-- #endif
 			q(1943, {	-- Speak with Deino
 				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
@@ -2353,21 +2270,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = lvlsquish(35, 35, 15),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, q(78304, {	-- You've Got Yourself A Deal [H]
-				sourceQuest = 78288,	-- Let Me Make You An Offer [H]
-				qg = 3408,	-- Zel'mak <Warrior Trainer>
-				qi = 211448,	-- Signed Procurement Contract
-				coord = { 80.2, 29.6, ORGRIMMAR },
-				timeline = { REMOVED_2_0_1 },
-				maps = { THE_BARRENS },
-				races = HORDE_ONLY,
-				lvl = 20,
-				groups = {
-					i(210210),	-- Grizzwerks Defense Industries Founder's Certificate
-				},
-			})),
-			-- #endif
 			q(2379, {	-- Zando'zan
 				sourceQuest = 2378,	-- Find the Shattered Hand
 				-- #if AFTER TBC
@@ -2419,23 +2321,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					}),
 				},
 			}),
-		}),
-		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
-				provider = { "o", 404830 },	-- Dusty Chest
-				coord = { 55.9, 44.7, ORGRIMMAR },
-				timeline = { REMOVED_2_0_1 },
-				classes = { ROGUE },
-				groups = {
-					recipe(400081),	-- Engrave Pants - Between the Eyes
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(207972, {	-- The Lessons of Ta'zo
-				provider = { "o", 405149 },	-- Mural of Ta'zo
-				coord = { 38.7, 78.4, ORGRIMMAR },
-			})),
 		}),
 		-- #endif
 		n(VENDORS, {
@@ -2575,10 +2460,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(6274, {	-- Pattern: Blue Overalls (RECIPE!)
 						isLimited = true,
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord (RECIPE!)
-					applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle (RECIPE!)
-					-- #endif
 					i(10314, {	-- Pattern: Lavender Mageweave Shirt (RECIPE!)
 						isLimited = true,
 					}),
@@ -2726,21 +2607,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					i(25476),	-- Green Wind Rider (MOUNT!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(3144, {	-- Eitrigg
-				sourceQuest = 6602,	-- Blood of the Black Dragon Champion
-				coord = { 34.6, 38.6, ORGRIMMAR },
-				timeline = { ADDED_1_15_3 },
-				races = HORDE_ONLY,
-				groups = {
-					i(226500),	-- Chipped Drakefire Amulet
-					i(228222, {	-- Handbook of Valor of Azeroth
-						spellID = 461475,	-- Valor of Azeroth
-						f = RECIPES,
-					}),
-				},
-			})),
-			-- #endif
 			n(3367, {	-- Felika <Trade Supplies>
 				description = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 				coords = {
@@ -3171,24 +3037,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(214070, {	-- Jornah <Supply Officer>
-				coord = { 51.6, 64.6, ORGRIMMAR },
-				groups = bubbleDownClassicRep(DUROTAR_SUPPLY_AND_LOGISTICS, {
-					{	-- Neutral
-					},
-					{	-- Friendly
-					},
-					{	-- Honored
-						i(211247),	-- Pattern: Phoenix Bindings (RECIPE!)
-					},
-					{	-- Revered
-					},
-					{	-- Exalted
-					},
-				}),
-			}),
-			-- #endif
 			n(254606, {	-- Joruh <Battleground Decor Specialist>
 				coord = { 38.8, 72.0, ORGRIMMAR },
 				timeline = { ADDED_11_2_7 },

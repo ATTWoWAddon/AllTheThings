@@ -543,14 +543,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9431),	-- Papal Fez
 				i(9425),	-- Pendulum of Doom
 				i(9422),	-- Shadowforge Bushmaster
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, i(223537)),	-- Skullplate Bracers
-				i(9432, {	-- Skullplate Bracers
-					timeline = { REMOVED_1_15_2 },
-				}),
-				-- #else
 				i(9432),	-- Skullplate Bracers
-				-- #endif
 				i(9430),	-- Spaulders of a Lost Age
 				i(9406, {	-- Spirewind Fetter
 					crs = OUTDOOR_ULDAMAN_CRS,
@@ -714,24 +707,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(132736, {	-- Revelosh's Pauldrons
 						timeline = { ADDED_7_0_3 },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(217307)),	-- Revelosh's Spaulders
-					applyclassicphase(SOD_PHASE_TWO, i(217305)),	-- Revelosh's Armguards
-					applyclassicphase(SOD_PHASE_TWO, i(217304)),	-- Revelosh's Gloves
-					applyclassicphase(SOD_PHASE_TWO, i(217306)),	-- Revelosh's Boots
-					i(9389, {	-- Revelosh's Spaulders
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(9388, {	-- Revelosh's Armguards
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(9390, {	-- Revelosh's Gloves
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(9387, {	-- Revelosh's Boots
-						timeline = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(9389),	-- Revelosh's Spaulders
 					i(9388),	-- Revelosh's Armguards
 					i(9390),	-- Revelosh's Gloves
@@ -739,7 +714,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						timeline = { ADDED_7_3_0 },
 					}),
 					i(9387),	-- Revelosh's Boots
-					-- #endif
 				},
 			}),
 			-- #if BEFORE 4.1.0
@@ -761,14 +735,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						creatureID = 7228,
 						groups = {
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_TWO, i(217704)),	-- Ironshod Bludgeon
-							i(9408, {	-- Ironshod Bludgeon
-								timeline = { REMOVED_1_15_1 },
-							}),
-							-- #else
 							i(9408),	-- Ironshod Bludgeon
-							-- #endif
 							i(151398, {	-- Hood of the Idle Architect
 								timeline = { ADDED_7_3_0 },
 							}),
@@ -776,14 +743,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								timeline = { ADDED_7_3_0 },
 							}),
 							i(9409),	-- Ironaya's Bracers
-							-- #if SEASON_OF_DISCOVERY
-							applyclassicphase(SOD_PHASE_TWO, i(217303)),	-- Stoneweaver Leggings
-							i(9407, {	-- Stoneweaver Leggings
-								timeline = { REMOVED_1_15_1 },
-							}),
-							-- #else
 							i(9407),	-- Stoneweaver Leggings
-							-- #endif
 						},
 					}),
 			-- #if BEFORE 4.1.0
@@ -834,19 +794,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				creatureID = 4854,
 				groups = {
 					i(7670),	-- Shattered Necklace Sapphire
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_TWO, i(223536)),	-- Grimlock's Charge
-					applyclassicphase(SOD_PHASE_TWO, i(223535)),	-- Grimlock's Tribal Vestments
-					i(9416, {	-- Grimlock's Charge
-						timeline = { REMOVED_1_15_1 },
-					}),
-					i(9415, {	-- Grimlock's Tribal Vestments
-						timeline = { REMOVED_1_15_1 },
-					}),
-					-- #else
 					i(9416),	-- Grimlock's Charge
 					i(9415),	-- Grimlock's Tribal Vestments
-					-- #endif
 					i(151402, {	-- Grimlock's Jagged Wristguards
 						timeline = { ADDED_7_3_0 },
 					}),

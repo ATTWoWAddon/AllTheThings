@@ -730,22 +730,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				timeline = { REMOVED_4_0_3 },
 				lvl = 50,
 			},
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Bless the Fallen
-				readable = "SOD - PALADIN - Bless the Fallen",
-				icon = 131038,
-				text = {
-					en = "Bless the Fallen",
-				},
-			}), {
-				questID = 83756,	-- Bless the Fallen HQT
-				qg = 227519,	-- Fallen Knight
-				coord = { 44.6, 46.6, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-			})),
-			-- #endif
 			q(27202, {	-- Brother Against Brother
 				sourceQuest = 27205,	-- The Depravity of the Forsaken
 				qg = 45165,	-- Thurman Grant
@@ -810,23 +794,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Burn the Fallen Knight
-				readable = "SOD - PALADIN - Burn the Fallen Knight",
-				icon = 131038,
-				text = {
-					en = "Burn the Fallen Knight",
-				},
-			}), {
-				qg = 227519,	-- Fallen Knight
-				questID = 84004,	-- Burn the Fallen Knight HQT
-				sourceQuest = 83935,	-- Clearing the Path
-				coord = { 44.6, 46.6, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-			})),
-			-- #endif
 			applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 				qgs = {
 					5149,	-- Brandur Ironhammer <Paladin Trainer>
@@ -870,30 +837,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 					i(18182),	-- Chromatic Mantle of the Dawn
 				},
 			},
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(83935, {	-- Clearing the Path
-				sourceQuest = 83808,	-- In A Bind
-				qg = 227672,	-- Squire Cuthbert
-				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/5 Blighted Zombie slain
-						provider = { "n", 4475 },	-- Blighted Zombie
-						coord = { 47.0, 51.6, WESTERN_PLAGUELANDS },
-					}),
-					objective(2, {	-- 0/10 Skeletal Terror slain
-						provider = { "n", 1785 },	-- Skeletal Terror
-						coord = { 47.8, 49.8, WESTERN_PLAGUELANDS },
-					}),
-					objective(3, {	-- 0/10 Rotting Cadaver slain
-						provider = { "n", 4474 },	-- Rotting Cadaver
-						coord = { 46.4, 50.6, WESTERN_PLAGUELANDS },
-					}),
-				},
-			})),
-			-- #endif
 			q(5092, {	-- Clear the Way
 				sourceQuests = {
 					5066,	-- A Call to Arms: The Plaguelands! [Stormwind City]
@@ -1035,20 +978,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				repeatable = true,
 				lvl = 50,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(83936, {	-- Dalton's Quest
-				description = "Upon completing this quest, you will have a personal Squire.",
-				sourceQuest = 83822,	-- The Fallen Knight
-				qg = 227672,	-- Squire Cuthbert
-				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					i(226122),	-- Dalton's Horn
-				},
-			})),
-			-- #endif
 			q(9444, {	-- Defiling Uther's Tomb
 				sourceQuest = 9443,	-- The So-Called Mark of the Lightbringer
 				qg = 17099,	-- Mehlar Dawnblade
@@ -1285,25 +1214,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In A Bind
-				sourceQuest = 83756,	-- Bless the Fallen HQT
-				qg = 227672,	-- Squire Cuthbert
-				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Squire Cuthbert's Blade
-						providers = {
-							{ "i", 226201 },	-- Squire Cuthbert's Blade
-							{ "o", 455812 },	-- Squire Cuthbert's Blade
-						},
-						coord = { 45.7, 53.9, WESTERN_PLAGUELANDS },
-					}),
-				},
-			})),
-			-- #endif
 			applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
 				sourceQuest = 8414,	-- Dispelling Evil
 				qg = 1854,	-- High Priest Thel'danis
@@ -2113,23 +2023,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 					}),
 				},
 			},
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(83822, {	-- The Fallen Knight
-				sourceQuest = 83935,	-- Clearing the Path
-				qg = 227672,	-- Squire Cuthbert
-				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Fallen Knight Burned
-						provider = { "n", 227519 },	-- Fallen Knight
-						coord = { 44.6, 46.6, WESTERN_PLAGUELANDS },
-					}),
-					recipe(440792),	-- Engrave Cloak - Righteous Vengeance
-				},
-			})),
-			-- #endif
 			q(27084, {	-- The Farmers' Militia
 				sourceQuest = 27083,	-- The Battle Resumes!
 				qg = 44452,	-- Koltira Deathweaver
@@ -2940,34 +2833,6 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 			}),
 		}),
 		-- #endif
-		-- #if SEASON_OF_DISCOVERY
-		n(TREASURES, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226413, {	-- Rune of Arcane Specialization
-				provider = { "o", 457102 },	-- Elements for Dummies Volume III: Arcane
-				coord = { 47.3, 13.7, WESTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { HUNTER, MAGE, DRUID },
-				groups = {
-					recipe(453695, {	-- Engrave Ring - Arcane Specialization
-						classes = { HUNTER, MAGE, DRUID },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210322, {	-- Rune of Venom
-				provider = { "o", 410847 },	-- Rusty Safe
-				coord = { 59.4, 84.6, WESTERN_PLAGUELANDS },
-				timeline = { REMOVED_2_0_1 },
-				cost = {
-					{ "i", 210329, 1 },	-- Hillsbrad Treasure Map
-					{ "i", 210323, 1 },	-- Safe Combination
-				},
-				classes = { ROGUE },
-				groups = {
-					recipe(400102),	-- Engrave Pants - Envenom
-				},
-			})),
-		}),
-		-- #endif
 		n(VENDORS, {
 			n(11056, {	-- Alchemist Arbington
 				coord = { 42.6, 83.8, WESTERN_PLAGUELANDS },
@@ -3021,17 +2886,8 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 					i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 					i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 					i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
-					i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						timeline = { REMOVED_1_15_3 },
-						-- #endif
-					}),
+					i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 					i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
-						timeline = { ADDED_1_15_3 },
-					})),
-					-- #endif
 					i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
 				},
 			}),

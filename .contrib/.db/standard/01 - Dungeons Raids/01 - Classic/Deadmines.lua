@@ -604,9 +604,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5195, {	-- Gold-flecked Gloves
 						timeline = { REMOVED_4_0_3 },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(210178)),	-- Schematic: Shredder Autosalvage Unit (RECIPE!)
-					-- #endif
 				},
 			}),
 			n(1763, {	-- Gilnid <The Smelter>

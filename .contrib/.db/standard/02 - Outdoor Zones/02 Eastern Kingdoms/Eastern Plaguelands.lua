@@ -30,107 +30,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 	maps = { LIGHTS_HOPE_CHAPEL },
 	-- #endif
 	groups = {
-		-- #IF SEASON_OF_DISCOVERY
-		m(NEW_AVALON, {
-			lore = "New Avalon is located just east of Tyr's Hand in the Eastern Plaguelands. The town encompasses Scarlet Hold, the New Avalon Orchard, the Scarlet Tavern, the Chapel of the Crimson Flame, the New Avalon Town Hall, and the New Avalon Forge. The Scarlet Overlook and King's Harbor are located to the southeast, and Havenshire is to the north.",
-			groups = {
-				n(QUESTS, {
-					q(87459, {	-- Scarlet Activities
-						qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-						coord = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-					}),
-					q(87493, {	-- Unrest at Tyr's Hand
-						qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-						coord = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-						sourceQuest = 87459,	-- Scarlet Activities
-					}),
-					q(87497, {	-- The Schism
-						qg = 239032,	-- Commander Beatrix
-						coord = { 67.8, 83.2, EASTERN_PLAGUELANDS },
-						sourceQuest = 87493,	-- Unrest at Tyr's Hand
-					}),
-					q(89562, {	-- My Old Enemy
-						qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-						coord = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-						sourceQuest = 87497,	-- The Schism
-					}),
-					--••••• 5 Leonid's Burden Leonid's Burden
-					--•••••• 6 The Wrecked Caravan The Wrecked Caravan
-					--••••••• 7 Something New Something New
-					--•••••••• 8 Servants of Death Servants of Death
-					--••••••••• 9 A Personal Matter A Personal Matter
-					--•••••••••• 10 The Culling The Culling
-					--••••••••••• 11 Terrordale Terrordale
-					--•••••••••••• 12 Stomping Out The Infestation Stomping Out The Infestation
-					--••••••••••••• 13 Loss Loss
-					--•••••••••••••• 14 The Right Path The Right Path
-					-- The Scarlet Reclamation Questline
-					q(87498, {	-- The Scarlet Reclamation
-						qg = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
-						coord = { 81.6, 57.8, EASTERN_PLAGUELANDS },
-						sourceQuest = 87497,	-- The Schism
-					}),
-					--••••• 5 Gathering Intelligence Gathering Intelligence - Unlocks New Avalon New Avalon and Weakening The Defenses Weakening The Defenses
-
-					--•••••• 6 New Avalon New Avalon
-
-					--•••••• 6 Weakening The Defenses Weakening The Defenses
-					--••••••• 7 Report to Lord Tyrosus Report to Lord Tyrosus
-					--•••••••• 8 The Wrath of the Dawn The Wrath of the Dawn
-					--••••••••• 9 Decapitation Strike Decapitation Strike
-					--•••••••••• 10 Red = Dead Red = Dead
-					q(87518, {	-- Fall of the Grand Crusader
-						qg = 239337,	-- Lord Maxwell Tyrosus <The Argent Dawn>
-					--	coord = { 81.6, 57.8, SCARLET_ENCLAVE },
-						maps = { SCARLET_ENCLAVE },
-					--	sourceQuest = 87517,	-- Red = Dead
-						groups = {
-							i(243229),	-- Hearthstone of the Dawn
-						},
-					}),
-				}),
-				n(PROFESSIONS, {
-					prof(ENCHANTING, {
-						description = "Before you can enter the Mage Tower to pick up the books, you will need to complete a small puzzle. First use the Scarlet Insignia, to disguise yourself then head to the Mage Tower within New Avalon.\nRun through the Stone Arches, and you will get a buff called Mystical Refraction this allows you to see colored crystals in the area.\nYou need to blend the color of the crystals to match the Mage Tower Portal door. You blend these by running under the floating tree.\nOnce you have solved the puzzle, simply walk through the portal to enter the Mage Tower. Once inside you will be greeted with Distracted Scarlet Wizards who you must avoid.\nOnce in, you will find the books on the bookcases throughout.\nEach book equals a different enchanting formula. Once you have looted the book, disenchant it then use 15 Illusion Dust, and 1 Righteous Orb to learn the enchant.",
-						groups = {
-							i(242268, {	-- If You Give a Crusader an Enchant
-								i(241191),	-- Formula: Enchant Weapon - Grand Crusader
-							}),
-							i(242363, {	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
-								i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
-							}),
-							i(242267, {	-- From Arcanist to Archmage
-								i(241195),	-- Formula: Enchant 2H Weapon - Grand Arcanist
-							}),
-							i(242268, {	-- World of Wardcraft
-								i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
-							}),
-						},
-					}),
-				}),
-				n(VENDORS, {
-					n(28512),	-- Quartermaster Ozorg
-				}),
-				n(ZONE_DROPS, {
-					i(238309),	-- Pattern: Scarlet Infiltrator's Bracers
-					i(238310),	-- Pattern: Scarlet Infiltrator's Gloves
-					i(238311),	-- Pattern: Scarlet Infiltrator's Belt
-					i(238312),	-- Pattern: Scarlet Infiltrator's Trousers
-					i(238313),	-- Pattern: Scarlet Infiltrator's Shoes
-					i(238317),	-- Pattern: Scarlet Huntsman's Wristguards
-					i(238318),	-- Pattern: Scarlet Huntsman's Handguards
-					i(238319),	-- Pattern: Scarlet Huntsman's Clasp
-					i(238320),	-- Pattern: Scarlet Huntsman's Legguards
-					i(238321),	-- Pattern: Scarlet Huntsman's Boots
-					i(238325),	-- Plans: Scarlet Soldier's Protectors
-					i(238326),	-- Plans: Scarlet Soldier's Grips
-					i(238327),	-- Plans: Scarlet Soldier's Waistguard
-					i(238328),	-- Plans: Scarlet Soldier's Legplates
-					i(238329),	-- Plans: Scarlet Soldier's Stompers
-				}),
-			},
-		}),
-		-- #ENDIF
 		-- #if AFTER WRATH
 		m(THE_SCARLET_ENCLAVE, {
 			lore = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",
@@ -1617,20 +1516,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				coord = { 35.6, 68.9, EASTERN_PLAGUELANDS },
 				timeline = { ADDED_4_0_3 },
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84332, {	-- A Thane's Gratitude
-				sourceQuest = 84414,	-- Send Me On Me Way!
-				provider = { "o", 462236 },	-- Mysterious Chest
-				coord = { 27.4, 85.8, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					recipe(440788),	-- Engrave Cloak - Shield of Righteousness
-					i(227935),	-- Hammer of the Fallen Thane
-				},
-			})),
-			-- #endif
 			q(7621, {	-- A Warning
 				qg = 14494,	-- Eris Havenfire
 				coords = {
@@ -1644,26 +1529,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				classes = { PRIEST },
 				lvl = 60,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84330, {	-- A Wee Bit O' Necromancy
-				sourceQuest = 84319,	-- Oh No Ye Don't!
-				providers = {
-					{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
-					{ "n", 228619 },	-- Orthas <Dwarven Spirit>
-				},
-				coord = { 33.8, 28.8, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				maps = { STRATHOLME },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Necrotic Runestone
-						provider = { "i", 227690 },	-- Necrotic Runestone
-						cr = 10438,	-- Maleki the Pallid
-					}),
-				},
-			})),
-			-- #endif
 			q(27539, {	-- Add'em to the Pile
 				qg = 45831,	-- Crusader Kevin Frost
 				coord = { 27.7, 20.9, EASTERN_PLAGUELANDS },
@@ -3208,49 +3073,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84318, {	-- Oi!
-				providers = {
-					{ "n", 228620 },	-- Slack-Jawed Ghoul <Dwarf-Sized Ghoul>
-					{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
-					{ "n", 228619 },	-- Orthas <Dwarven Spirit>
-				},
-				coord = { 34.2, 80.4, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Ornate Warhammer
-						providers = {
-							{ "i", 227686 },	-- Ornate Warhammer
-							{ "o", 461639 },	-- Orthas' Hammer
-						},
-						coord = { 61.3, 69.2, EASTERN_PLAGUELANDS },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_FOUR, q(84319, {	-- Oh No Ye Don't!
-				sourceQuest = 84318,	-- Oi!
-				providers = {
-					{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
-					{ "n", 228619 },	-- Orthas <Dwarven Spirit>
-				},
-				coord = { 61.3, 69.2, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- 0/1 Partially-Digested Plate Armor
-						provider = { "i", 227689 },	-- Partially-Digested Plate Armor
-						coord = { 33.8, 28.8, EASTERN_PLAGUELANDS },
-						crs = {
-							8543,	-- Stitched Horror
-							8545,	-- Abomination
-						},
-					}),
-				},
-			})),
-			-- #endif
 			q(27373, {	-- Onward, to Light's Hope Chapel
 				sourceQuests = {
 					27372,	-- A Gift For Fiona
@@ -3520,22 +3342,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84414, {	-- Send Me On Me Way!
-				sourceQuest = 84330,	-- A Wee Bit O' Necromancy
-				qg = 229018,	-- Rotting Dwarf Corpse
-				coord = { 27.6, 86.0, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN },
-				lvl = 50,
-				groups = {
-					objective(1, {	-- Send Orthas' Spirit On His Way
-						provider = { "o", 462236 },	-- Mysterious Chest
-						coord = { 27.4, 85.8, EASTERN_PLAGUELANDS },
-					}),
-				},
-			})),
-			-- #endif
 			q(27458, {	-- Smokey and the Bandage
 				qg = 11033,	-- Smokey LaRue
 				coord = { 74.9, 53.5, EASTERN_PLAGUELANDS },
@@ -3566,29 +3372,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
-			-- #IF SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX, q(88724, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-				coords = {
-					{ 81.6, 60.0, EASTERN_PLAGUELANDS },
-				},
-				minReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
-				cost = {
-					{ "i", 22524, 6 },	-- Insignia of the Crusade
-					{ "i", 22523, 6 },	-- Insignia of the Dawn
-				},
-				repeatable = true,
-				lvl = 55,
-				groups = {
-					i(237284),	-- Supply Bag
-					i(237285),	-- Band of Resolution
-					i(237286),	-- Band of Piety
-					i(237287),	-- Verimonde's Last Resort
-					i(237288),	-- Sanctified Leather Helm
-					i(237289),	-- Leggings of the Plague Hunter
-				},
-			})),
-			-- #ELSE
 			applyclassicphase(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 				coords = {
@@ -3615,32 +3398,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					i(22689),	-- Sanctified Leather Helm
 				},
 			})),
-			-- #endif
-			-- #IF SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX, q(88721, {	-- Superior Armaments of Battle - Friend of the Dawn
-				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-				coords = {
-					{ 81.6, 60.0, EASTERN_PLAGUELANDS },
-				},
-				minReputation = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
-				maxReputation = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
-				timeline = { REMOVED_4_0_3 },
-				cost = {
-					{ "i", 22524, 30 },	-- Insignia of the Crusade
-					{ "i", 22523, 30 },	-- Insignia of the Dawn
-				},
-				repeatable = true,
-				lvl = 55,
-				groups = {
-					i(237284),	-- Supply Bag
-					i(237285),	-- Band of Resolution
-					i(237286),	-- Band of Piety
-					i(237287),	-- Verimonde's Last Resort
-					i(237288),	-- Sanctified Leather Helm
-					i(237289),	-- Leggings of the Plague Hunter
-				},
-			})),
-			-- #ELSE
 			applyclassicphase(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 				coords = {
@@ -3668,32 +3425,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					i(22689),	-- Sanctified Leather Helm
 				},
 			})),
-			-- #endif
-			-- #IF SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX, q(88722, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-				coords = {
-					{ 81.6, 60.0, EASTERN_PLAGUELANDS },
-				},
-				minReputation = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
-				maxReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
-				timeline = { REMOVED_4_0_3 },
-				cost = {
-					{ "i", 22524, 20 },	-- Insignia of the Crusade
-					{ "i", 22523, 20 },	-- Insignia of the Dawn
-				},
-				repeatable = true,
-				lvl = 55,
-				groups = {
-					i(237284),	-- Supply Bag
-					i(237285),	-- Band of Resolution
-					i(237286),	-- Band of Piety
-					i(237287),	-- Verimonde's Last Resort
-					i(237288),	-- Sanctified Leather Helm
-					i(237289),	-- Leggings of the Plague Hunter
-				},
-			})),
-			-- #else
 			applyclassicphase(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 				coords = {
@@ -3721,32 +3452,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					i(22689),	-- Sanctified Leather Helm
 				},
 			})),
-			-- #endif
-			-- #IF SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX, q(88723, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-				coords = {
-					{ 81.6, 60.0, EASTERN_PLAGUELANDS },
-				},
-				minReputation = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
-				maxReputation = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
-				timeline = { REMOVED_4_0_3 },
-				cost = {
-					{ "i", 22524, 7 },	-- Insignia of the Crusade
-					{ "i", 22523, 7 },	-- Insignia of the Dawn
-				},
-				repeatable = true,
-				lvl = 55,
-				groups = {
-					i(237284),	-- Supply Bag
-					i(237285),	-- Band of Resolution
-					i(237286),	-- Band of Piety
-					i(237287),	-- Verimonde's Last Resort
-					i(237288),	-- Sanctified Leather Helm
-					i(237289),	-- Leggings of the Plague Hunter
-				},
-			})),
-			-- #else
 			applyclassicphase(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 				qg = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 				coords = {
@@ -3774,7 +3479,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					i(22689),	-- Sanctified Leather Helm
 				},
 			})),
-			-- #endif
 			q(27370, {	-- Tarenar Sunstrike
 				qg = 45417,	-- Fiona
 				coord = { 9.0, 66.5, EASTERN_PLAGUELANDS },
@@ -3830,35 +3534,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					i(62966),	-- Emissary's Watch
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, q(84590, {	-- The Balance of Light and Shadow
-				sourceQuest = 7621,	-- A Warning
-				qg = 14494,	-- Eris Havenfire
-				qi = 228749,	-- Splinter of Nordrassil
-				coords = {
-					-- #if AFTER WRATH
-					{ 17.6, 14.1, EASTERN_PLAGUELANDS },
-					-- #else
-					{ 20.8, 18.4, EASTERN_PLAGUELANDS },
-					-- #endif
-				},
-				timeline = { ADDED_1_15_3 },
-				cost = {
-					{ "i", 18646, 1 },	-- The Eye of Divinity
-					{ "i", 18665, 1 },	-- The Eye of Shadow
-				},
-				classes = { PRIEST },
-				lvl = 60,
-				groups = {
-					ach(11297, {	-- The Balance of Light and Shadow
-						timeline = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
-						classes = { PRIEST },
-					}),
-					i(228336),	-- Anathema
-					i(228335),	-- Benediction
-				},
-			})),
-			-- #endif
 			q(7622, {	-- The Balance of Light and Shadow
 				sourceQuest = 7621,	-- A Warning
 				qg = 14494,	-- Eris Havenfire
@@ -3870,13 +3545,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					{ 20.8, 18.4, EASTERN_PLAGUELANDS },
 					-- #endif
 				},
-				timeline = {
-					-- #if SEASON_OF_DISCOVERY
-					REMOVED_1_15_3,
-					-- #else
-					REMOVED_4_0_3,
-					-- #endif
-				},
+				timeline = { REMOVED_4_0_3 },
 				cost = {
 					{ "i", 18646, 1 },	-- The Eye of Divinity
 					{ "i", 18665, 1 },	-- The Eye of Shadow
@@ -5166,30 +4835,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				},
 				groups = { i(12888) },	-- Pamela's Doll's Right Side (QI!)
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(226418, {	-- Rune of Holy Specialization
-				provider = { "o", 457094 },	-- The True Nature of the Light
-				coord = { 83.6, 78.1, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { PALADIN, PRIEST },
-				groups = {
-					recipe(453702, {	-- Engrave Ring - Holy Specialization
-						classes = { PALADIN, PRIEST },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_FOUR, i(226410, {	-- Rune of Ranged Weapon Specialization
-				provider = { "o", 457090 },	-- Famous (and Infamous) Rangers of Azeroth
-				coord = { 26.2, 74.8, EASTERN_PLAGUELANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, HUNTER, ROGUE },
-				groups = {
-					recipe(453692, {	-- Engrave Ring - Ranged Weapon Specialization
-						classes = { WARRIOR, HUNTER, ROGUE },
-					}),
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
 			n(12384, {	-- Agustus the Touched
@@ -5351,83 +4996,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 							cost = { { "g", 1500000 } },	-- 150g
 						}),
 
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
-							timeline = { ADDED_1_15_3 },
-							cost = { { "i", 13180, 1 } },	-- Stratholme Holy Water
-						})),
-						-- EPIC CRAFTED ITEMS UPGRADES
-						applyclassicphase(SOD_PHASE_FOUR, i(227816, {	-- Argent Elite Boots
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19056, 1 },	-- Argent Boots
-								{ "i", 12843, 2 },	-- Corruptor's Scourgestone
-								{ "i", 12753, 2 },	-- Skin of Shadow
-							},
-							requireSkill = TAILORING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227888, {	-- Argent Elite Shoulders
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19059, 1 },	-- Argent Shoulders
-								{ "i", 12843, 4 },	-- Corruptor's Scourgestone
-								{ "i", 12753, 3 },	-- Skin of Shadow
-							},
-							requireSkill = TAILORING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227815, {	-- Fine Dawn Treaders
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19052, 1 },	-- Dawn Treaders
-								{ "i", 12843, 3 },	-- Corruptor's Scourgestone
-								{ "i", 12753, 2 },	-- Skin of Shadow
-							},
-							requireSkill = LEATHERWORKING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227818, {	-- Glowing Mantle of the Dawn
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19058, 1 },	-- Golden Mantle of the Dawn
-								{ "i", 12843, 4 },	-- Corruptor's Scourgestone
-								{ "i", 12753, 3 },	-- Skin of Shadow
-							},
-							requireSkill = LEATHERWORKING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227814, {	-- Radiant Girdle of the Dawn
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19051, 1 },	-- Girdle of the Dawn
-								{ "i", 12843, 2 },	-- Corruptor's Scourgestone
-								{ "i", 12735, 2 },	-- Frayed Abomination Stitching
-							},
-							requireSkill = BLACKSMITHING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227817, {	-- Radiant Gloves of the Dawn
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 19057, 1 },	-- Gloves of the Dawn
-								{ "i", 12843, 3 },	-- Corruptor's Scourgestone
-								{ "i", 12735, 2 },	-- Frayed Abomination Stitching
-							},
-							requireSkill = BLACKSMITHING,
-							learnedAt = 290,
-						})),
-						applyclassicphase(SOD_PHASE_FOUR, i(227859, {	-- Shimmering Dawnbringer Shoulders
-							timeline = { ADDED_1_15_3 },
-							cost = {
-								{ "i", 12625, 1 },	-- Dawnbringer Shoulders
-								{ "i", 12843, 4 },	-- Corruptor's Scourgestone
-								{ "i", 12735, 3 },	-- Frayed Abomination Stitching
-							},
-							requireSkill = BLACKSMITHING,
-							learnedAt = 290,
-						})),
-						-- #endif
 					},
 					{	-- Revered
 						i(18171, {	-- Arcane Mantle of the Dawn
@@ -5473,12 +5041,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 						applyclassicphase(PHASE_THREE_ENCHANTS, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19217)),	-- Pattern: Argent Shoulders (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
-						-- #if SEASON_OF_DISCOVERY
-						-- CRIEVE NOTE: With SOD phase 4, they put this recipe directly on the vendor. Interesting.
-						applyclassicphase(SOD_PHASE_FOUR, i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-							timeline = { ADDED_1_15_3 },
-						})),
-						-- #endif
 						applyclassicphase(PHASE_THREE_RECIPES, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13810),	-- Blessed Sunfruit
 						i(13813),	-- Blessed Sunfruit Juice
@@ -5492,17 +5054,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 								5524,	-- Chromatic Mantle of the Dawn
 							},
 						}),
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_FOUR, i(227819, {	-- Blessed Flame Mantle of the Dawn
-							description = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
-							sourceQuests = {
-								5517,	-- Chromatic Mantle of the Dawn
-								5521,	-- Chromatic Mantle of the Dawn
-								5524,	-- Chromatic Mantle of the Dawn
-							},
-							timeline = { ADDED_1_15_3 },
-						})),
-						-- #endif
 					},
 				}),
 			}),

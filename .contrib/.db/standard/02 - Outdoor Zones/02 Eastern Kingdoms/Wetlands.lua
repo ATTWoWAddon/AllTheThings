@@ -818,28 +818,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, q(79945, {	-- Orders from the Grand Crusader
-				description = "Getting to this location is a real pain. From the Wetlands, swim along the coast around Dun Morogh until you reach the dock.",
-				sourceQuest = 79972,	-- Speak to Harold HQT
-				providers = {
-					{ "i", 215468 },	-- Orders from the Grand Crusader
-					{ "i", 216610 },	-- Orders from the Grand Crusader
-				},
-				coord = { 11.8, 75.7, DUN_MOROGH },
-				maps = { STORMWIND_CITY },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				cr = 218908,	-- Scarlet Crusade Assassin
-				lvl = 26,
-				groups = {
-					objective(1, {	-- Report back to Katherine the Pure
-						provider = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
-						coord = { 37.8, 31.6, STORMWIND_CITY },
-					}),
-				},
-			})),
-			-- #endif
 			q(294, {	-- Ormer's Revenge (1/3)
 				qg = 1078,	-- Ormer Ironbraid
 				coord = { 38.0, 51.2, WETLANDS },
@@ -991,23 +969,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_TWO, n(createHeader({	-- Speak to Harold
-				readable = "SOD - Aeonas Whereabouts",
-				icon = 131038,
-				text = {
-					en = "Speak to Harold",
-				},
-			}), {
-				qg = 3179,	-- Harold Riggs
-				questID = 79972,	-- Aeonas Whereabouts HQT
-				sourceQuest = 79940,	-- A Lost Brother
-				coord = { 8.1, 58.6, WETLANDS },
-				classes = { PALADIN },
-				races = ALLIANCE_ONLY,
-				lvl = 26,
-			})),
-			-- #endif
 			q(25850, {	-- Strike the Earth!
 				qg = 41412,	-- Ormer Ironbraid
 				coord = { 38.6, 39.5, WETLANDS },
@@ -1623,25 +1584,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 			}),
 		}),
 		n(RARES, {
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
-				coord = { 47.6, 64.6, WETLANDS },
-				groups = {
-					i(211205, {	-- Rune of Heart of the Lion
-						classes = { HUNTER },
-						groups = {
-							recipe(410115),	-- Engrave Chest - Heart of the Lion
-						},
-					}),
-					i(210573, {	-- Rune of Consuming Rage
-						classes = { WARRIOR },
-						groups = {
-							recipe(425446),	-- Engrave Pants - Consumed by Rage
-						},
-					}),
-				},
-			})),
-			-- #endif
 			n(50964, {	-- Chops
 				coord = { 58.0, 8.6, WETLANDS },
 				timeline = { ADDED_5_1_0 },
@@ -1828,12 +1770,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					i(13114),	-- Troll's Bane Leggings
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
-				provider = { "o", 409717 },	-- Scrolls
-				coord = { 33.6, 47.9, WETLANDS },
-			})),
-			-- #endif
 			o(202083, {	-- Razormaw Matriarch's Nest
 				coords = {
 					{ 69.9, 29.1, WETLANDS },
@@ -1844,29 +1780,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					i(48124),	-- Razormaw Hatchling (PET!)
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_FOUR, i(226408, {	-- Rune of Mace Specialization
-				provider = { "o", 457093 },	-- Blunt Justice: A Dwarf's Tale
-				coord = { 74.0, 69.2, WETLANDS },
-				timeline = { ADDED_1_15_3 },
-				classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
-				groups = {
-					recipe(453689, {	-- Engrave Ring - Mace Specialization
-						classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
-					}),
-				},
-			})),
-			applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
-				qg = 212209,	-- Vodyanoi
-				qi = 210499,	-- Marshroom
-				coord = { 31.0, 18.0, WETLANDS },
-				timeline = { REMOVED_2_0_1 },
-				classes = { DRUID },
-				groups = {
-					recipe(424718),	-- Engrave Pants - Starsurge
-				},
-			})),
-			-- #endif
 		}),
 		n(VENDORS, {
 			n(1450, {	-- Brahnmar <Armorer>
@@ -1909,13 +1822,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 			n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 				coord = { 46.6, 18.2, WETLANDS },
 				groups = {
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
-						timeline = { REMOVED_2_0_1 },
-						cost = 7500,	-- 75s
-						classes = { WARRIOR },
-					})),
-					-- #endif
 					i(4824, {	-- Blurred Axe
 						isLimited = true,
 					}),
@@ -1976,15 +1882,6 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					}),
 				},
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, n(212186, {	-- Grugimdern
-				coord = { 36.8, 15.2, WETLANDS },
-				classes = { DRUID },
-				groups = {
-					i(210499),	-- Marshroom
-				},
-			})),
-			-- #endif
 			n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 				coords = {
 					-- #if AFTER CATA

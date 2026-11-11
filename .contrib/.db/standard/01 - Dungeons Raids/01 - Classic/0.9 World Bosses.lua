@@ -1,4 +1,3 @@
--- #if NOT SEASON_OF_DISCOVERY
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
@@ -165,7 +164,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 }));
--- #endif
 
 -- #IF ANYCLASSIC
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
