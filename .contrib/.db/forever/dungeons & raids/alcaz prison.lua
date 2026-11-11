@@ -28,15 +28,37 @@ instanceroot(2994, {	-- Alcaz Prison
 		--e(3403),	-- Overseer Wrex
 		e(3410, {	-- Tidemistress Ca'zass
 			creatureID = 255997,	-- Tidemistress Ca'zass
+			groups = {
+				-- TODO: Ca'zass's Head (273883) is a quest item; find the quest it's for.
+				i(276737),	-- Cloak of the Tidemistress
+				i(276736),	-- Seascale Bracers
+				i(276735),	-- Tidesong Wand
+			},
 		}),
 		e(3418, {	-- Katerina the Cleaner
 			creatureID = 257016,	-- Katerina the Cleaner
+			groups = {
+				i(276739),	-- Cutthroat Chestguard
+				i(276738),	-- Katerina's Shanker
+				i(276740),	-- Sentimental Locket
+			},
 		}),
 		e(3415, {	-- The Questioner
 			creatureID = 256236,	-- The Questioner
+			groups = {
+				-- TODO: Ornate Shackle Key (274029) is a quest item; find the quest it's for.
+				i(276741),	-- Defias Enforcer's Shoulderpads
+				i(276743),	-- Fingerbreaker Stamp
+				i(276742),	-- Girdle of Extracted Answers
+			},
 		}),
 		e(3409, {	-- Blazeroar
 			creatureID = 255702,	-- Blazeroar
+			groups = {
+				i(276745),	-- Beastbond Robe
+				i(276746),	-- Defias Enforcer's Legguards
+				i(276744),	-- Zarla's Snack Pouch
+			},
 		}),
 	},
 });
