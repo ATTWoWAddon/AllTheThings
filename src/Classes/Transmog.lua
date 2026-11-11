@@ -25,23 +25,32 @@ local RETRIEVING_DATA
 	= RETRIEVING_DATA
 
 -- WoW API Cache
+---@type function
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+---@type function
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 
 -- Transmog is supported!
 -- Global locals
-local ipairs, select, tinsert, pairs, rawget,rawset
-	= ipairs, select, tinsert, pairs, rawget,rawset
+---@type function,function,function,function,function
+local ipairs, select, pairs, rawget,rawset
+	= ipairs, select, pairs, rawget,rawset
+---@type function,function
 local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
+---@type function
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+---@type table,function,function,function
 local L, contains, containsAny, SearchForField
 	= app.L, app.contains, app.containsAny, app.SearchForField
+---@type function,function
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
+---@type function,function
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection_GetAllAppearanceSources
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance,C_TransmogCollection.GetAllAppearanceSources
+---@type function
 local C_TooltipInfo_GetItemByItemModifiedAppearanceID = C_TooltipInfo and C_TooltipInfo.GetItemByItemModifiedAppearanceID
 
 local ATTAccountWideData, AccountSources, CharacterData
@@ -1035,6 +1044,7 @@ end
 local UnknownAppearancesCache = setmetatable({}, { __index = function(t, sourceID)
 	local sourceGroup = app.CreateItemSource(sourceID)
 	t[sourceID] = sourceGroup
+	sourceGroup.u = 1	-- assume NYI for unknown sources
 	return sourceGroup
 end})
 local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
@@ -1112,6 +1122,7 @@ local function AddSourceInformation(sourceID, info, sourceGroup)
 	local linkInfo, sourceFilter, otherFilter
 	local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
 	local onlyObtainable = app.Settings:GetTooltipSetting("OnlyShowObtainableSharedAppearances")
+	--- @type function
 	local FilterInGame = app.Modules.Filter.Filters.InGame
 	if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 		-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
