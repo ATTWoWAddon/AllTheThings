@@ -9291,7 +9291,7 @@ i(130172,{spellID=195693}),
 i(130183,{spellID=195693}),
 i(130176,{spellID=195693})}}),
 h(-26,{
-r(225902,{requireSkill=755,skillID=2518}),
+r(225902,{b=1,itemID=141311,lvl=10,requireSkill=755,skillID=2518}),
 r(225904,{b=1,itemID=141312,lvl=10,requireSkill=755,skillID=2518})}),
 h(-88,{awp=70300,g={
 s(89473,151587,{f=4,loc=40,lvl=45}),

@@ -5612,6 +5612,9 @@ r(126989,{learnedAt=75,requireSkill=773,skillID=2510}),
 r(127009,{learnedAt=75,requireSkill=773,skillID=2510}),
 r(127007,{learnedAt=75,requireSkill=773,skillID=2510})}})}})}}),
 x(6,{awp=60003,requireSkill=773,g={
+h(-45,{requireSkill=773,g={
+q(36239,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={114984},r=2,requireSkill=773}),
+q(36435,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},qss={115593},r=1,requireSkill=773})}}),
 flt(200,{requireSkill=773,g={
 cat(403,{requireSkill=773,g={
 r(176513,{requireSkill=773,u=5})}}),
@@ -5682,8 +5685,7 @@ r(192852,{learnedAt=20,requireSkill=773,skillID=2508})}}),
 q(39944,{coords={
 [627]={{41.6,37.2}}},lvl=10,qgs={92195},requireSkill=773,sourceQuests={39933}}),
 q(39945,{coords={
-[634]={{69.2,40.6}}},lvl=10,qgs={97748},requireSkill=773,sourceQuests={39944},g={
-i(129164,{requireSkill=773})}}),
+[634]={{69.2,40.6}}},lvl=10,qgs={97748},qis={129164},requireSkill=773,sourceQuests={39944}}),
 q(39946,{coords={
 [634]={{69.2,40.6}}},lvl=10,qgs={97748},requireSkill=773,sourceQuests={39944}}),
 q(39947,{coords={
@@ -5750,30 +5752,23 @@ q(49694,{awp=80105,coords={
 q(49944,{awp=80105,coords={
 [1165]={{42.3,39.7}}},lvl=10,qgs={130901},r=1,requireSkill=773,sourceQuests={49943}}),
 q(49873,{awp=80105,coords={
-[896]={{20.6,44}}},lvl=10,providers={{"o",279647}},requireSkill=773,sourceQuests={49694,49944},g={
-r(259665,{learnedAt=150,requireSkill=773,skillID=2507}),
-i(168046,{b=1,requireSkill=773}),
-i(156549,{requireSkill=773,spellID=259612})}}),
+[896]={{20.6,44}}},lvl=10,providers={{"o",279647}},qis={156549,168046},requireSkill=773,sourceQuests={49694,49944},g={
+r(259665,{learnedAt=150,requireSkill=773,skillID=2507})}}),
 q(49874,{awp=80105,coords={
-[896]={{20.7,44}}},lvl=10,maps={1407},qgs={131657},requireSkill=773,sourceQuests={49873},g={
-r(292012,{learnedAt=150,requireSkill=773,skillID=2507}),
-i(156509,{requireSkill=773})}}),
+[896]={{20.7,44}}},lvl=10,maps={1407},qgs={131657},qis={156509},requireSkill=773,sourceQuests={49873},g={
+r(292012,{learnedAt=150,requireSkill=773,skillID=2507})}}),
 q(49876,{awp=80105,coords={
 [896]={{20.6,44}}},lvl=10,qgs={131386},r=2,requireSkill=773,sourceQuests={49874}}),
 q(49946,{awp=80105,coords={
 [896]={{20.6,44}}},lvl=10,qgs={131386},r=1,requireSkill=773,sourceQuests={49874}}),
 q(49877,{awp=80105,coords={
-[864]={{27.6,52.3}}},lvl=10,maps={1038,1043},qgs={150318},requireSkill=773,sourceQuests={49876,49946},g={
-i(156512,{requireSkill=773})}}),
+[864]={{27.6,52.3}}},lvl=10,maps={1038,1043},qgs={150318},qis={156512},requireSkill=773,sourceQuests={49876,49946}}),
 q(49879,{awp=80105,coords={
 [864]={{27.6,52.3}}},lvl=10,providers={{"o",279645}},requireSkill=773,sourceQuests={49877},g={
 r(292322,{learnedAt=150,requireSkill=773,skillID=2507})}}),
 q(49878,{awp=80105,coords={
-[864]={{27.6,52.2}}},lvl=10,providers={{"o",279646}},requireSkill=773,sourceQuests={49877},g={
-r(292320,{learnedAt=150,requireSkill=773,skillID=2507}),
-i(156598,{requireSkill=773,spellID=259929}),
-i(156600,{requireSkill=773}),
-i(156601,{requireSkill=773,spellID=295356})}}),
+[864]={{27.6,52.2}}},lvl=10,providers={{"o",279646}},qis={156598,156600,156601},requireSkill=773,sourceQuests={49877},g={
+r(292320,{learnedAt=150,requireSkill=773,skillID=2507})}}),
 q(49881,{awp=80105,coords={
 [864]={{27.6,52.3}}},lvl=10,qgs={150318},requireSkill=773,sourceQuests={49878,49879}}),
 q(49882,{awp=80105,coords={
@@ -5824,20 +5819,16 @@ q(70188,{coords={
 [2023]={{51.8,33}}},cost={{"i",191784,1}},lvl=10,qgs={193110},repeatable=1,requireSkill=773,sourceQuests={69979},g={
 i(190456,{b=1})}}),
 q(66945,{coords={
-[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},requireSkill=773,g={
-i(194451,{requireSkill=773}),
+[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},qis={194451},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(66944,{coords={
-[2112]={{36.8,62.8}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191001},requireSkill=773,g={
-i(194321,{requireSkill=773}),
+[2112]={{36.8,62.8}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191001},qis={194321},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(72438,{coords={
-[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},requireSkill=773,g={
-i(201835,{requireSkill=773}),
+[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},qis={201835},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(66943,{coords={
-[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},requireSkill=773,g={
-i(194332,{requireSkill=773}),
+[2112]={{36.6,62.6}}},description="Requires 25 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={191000},qis={194332},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(70561,{coords={
 [2112]={{39.4,73.6}}},description="Requires 45 Skill.",isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={185540},requireSkill=773,g={
@@ -5866,12 +5857,10 @@ o(398829,{requireSkill=773,g={
 i(205124,{requireSkill=773})}}),
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(77889,{awp=100200,coords={
-[2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=773,g={
-i(208886,{requireSkill=773}),
+[2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},qis={208886},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}}),
 q(77914,{awp=100200,coords={
-[2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=773,g={
-i(208946,{requireSkill=773}),
+[2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},qis={208946},requireSkill=773,g={
 i(198607,{b=1,isWeekly=1,requireSkill=773,spellID=384426})}})}}),
 flt(200,{description="These are learned by specialization.",requireSkill=773,g={
 r(383533,{cost={{"c",2028,1}},learnedAt=50,requireSkill=773,skillID=2828}),
