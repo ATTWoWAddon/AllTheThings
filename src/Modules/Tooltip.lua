@@ -864,11 +864,189 @@ do
 	end
 end
 
-local function TryShowUnitTooltipInfo(self, guid)
+-- Secret Unit Tooltips (prototype)
+-- Inside instances, a unit's GUID and name can be secret: addon code may pass them to the client but may not read,
+-- compare or branch on them, so ATT cannot look up which NPC is under the cursor.
+-- Workaround (same technique as Questie's Forever tooltips): prebuild ATT's tooltip text for every NPC in the
+-- current map, then let secret-safe client APIs compare the secret unit name against each candidate's name and
+-- produce display text in which only the matching candidate's block is visible. Lua never learns which NPC matched.
+local SecretUnitTooltip = {}
+do
+	local Enum, C_Intl, C_StringUtil, C_CurveUtil = Enum, C_Intl, C_StringUtil, C_CurveUtil
+	local MAX_CANDIDATES = 120	-- Upper bound on NPCs per map, so a huge zone can't stall the tooltip
+
+	-- The selection only works if every secret-safe helper exists on this client.
+	local function CanSelect()
+		return Enum and Enum.CollationStrength and Enum.CollationStrength.Identical
+			and Enum.NormalizationForm and Enum.NormalizationForm.Nfc
+			and C_Intl and type(C_Intl.CompareStrings) == "function" and type(C_Intl.IsNormalized) == "function"
+			and C_StringUtil and type(C_StringUtil.TruncateWhenZero) == "function" and type(C_StringUtil.WrapString) == "function"
+			and C_CurveUtil and type(C_CurveUtil.EvaluateColorValueFromBoolean) == "function"
+	end
+
+	-- Equal strings compare as 0, which truncates to empty text. Any difference keeps a decomposed e + combining acute
+	-- accent, which is not NFC-normalized. So the marker is normalized only when the strings matched.
+	-- The result may be secret and must only be passed on to other client APIs, never branched on.
+	local function Matches(text, publicText)
+		local comparison = C_Intl.CompareStrings(text, publicText, Enum.CollationStrength.Identical)
+		local marker = C_StringUtil.WrapString(C_StringUtil.TruncateWhenZero(comparison), "e\204\129", "")
+		return C_Intl.IsNormalized(marker, Enum.NormalizationForm.Nfc)
+	end
+	-- A gate of 1 completes a glyph-free color code in front of the presentation; 0 truncates to empty text,
+	-- and WrapString then drops the whole fragment.
+	local function DisplayFragment(matches, presentation)
+		local token = C_StringUtil.TruncateWhenZero(C_CurveUtil.EvaluateColorValueFromBoolean(matches, 1, 0))
+		return C_StringUtil.WrapString(token, "|c0000000", "|r" .. presentation)
+	end
+
+	local function ColorCode(r, g, b)
+		return ("|cff%02x%02x%02x"):format((r or 1) * 255, (g or 1) * 255, (b or 1) * 255)
+	end
+	-- Turns one of ATT's tooltipInfo entries into the left and right text of a row, with its colors inlined.
+	local function EntryToRow(entry)
+		if entry.color then
+			entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color)
+			entry.color = nil
+		end
+		local left, right = entry.left, entry.right
+		if not left and not right then return end
+		local leftText = left and (entry.r and (ColorCode(entry.r, entry.g, entry.b) .. left .. "|r") or left) or " "
+		local rightText = right and (entry.r2 and (ColorCode(entry.r2, entry.g2, entry.b2) .. right .. "|r")
+			or (entry.r and (ColorCode(entry.r, entry.g, entry.b) .. right .. "|r")) or right) or " "
+		return leftText, rightText
+	end
+	-- The progress summary goes on the tooltip's first row, next to the unit name, like a normal ATT tooltip.
+	local function EntryToSummary(entry)
+		if entry.left or entry.right then return end
+		local summaryText = entry.summaryText
+		if summaryText and summaryText ~= "" and summaryText ~= "---" then return summaryText end
+	end
+
+	-- Collects the NPC IDs referenced anywhere under the current map's groups.
+	local function CollectNPCIDs(group, ids, count)
+		if count[1] >= MAX_CANDIDATES then return end
+		local function Add(id)
+			if type(id) == "number" and id > 0 and not ids[id] then ids[id] = true; count[1] = count[1] + 1 end
+		end
+		Add(group.npcID)
+		Add(group.creatureID)
+		Add(group.cr)
+		Add(group.qg)
+		for _,field in ipairs({ "crs", "qgs" }) do
+			local list = group[field]
+			if list then
+				for _,id in ipairs(list) do Add(id) end
+			end
+		end
+		-- Quest objectives point at their kill targets through { "n", id } providers.
+		local providers = group.providers
+		if providers then
+			for _,provider in ipairs(providers) do
+				if provider[1] == "n" then Add(provider[2]) end
+			end
+		end
+		local g = group.g
+		if g then
+			for _,child in ipairs(g) do CollectNPCIDs(child, ids, count) end
+		end
+	end
+
+	local NPCSearchOptions = { AppendSearchParams = { "none", true }, ForceDifficulty = true }
+	local CandidatesByMapID = {}
+	local function BuildCandidates(mapID)
+		local ids, count = {}, { 0 }
+		for _,group in ipairs(SearchForField("mapID", mapID) or app.EmptyTable) do
+			CollectNPCIDs(group, ids, count)
+		end
+		local candidates = {}
+		for npcID in pairs(ids) do
+			local name = app.NPCNameFromID[npcID]
+			-- Inside instances the client hands out NPC names as secrets too; CompareStrings accepts those, so keep them.
+			if issecretvalue(name) or (name and name ~= "") then
+				app.SetSkipLevel(1)
+				local ok, group = pcall(app.GetCachedSearchResults, SearchForObject, "npcID", npcID, NPCSearchOptions)
+				app.SetSkipLevel(0)
+				local tooltipInfo = ok and group and TooltipInfoCache[group]
+				if tooltipInfo and #tooltipInfo > 0 then
+					-- Left and right columns keep the same number of lines, so each right value stays beside its left value.
+					local lefts, rights, summary = {}, {}, nil
+					for _,entry in ipairs(tooltipInfo) do
+						local leftText, rightText = EntryToRow(entry)
+						if leftText then
+							lefts[#lefts + 1] = leftText
+							rights[#rights + 1] = rightText
+						end
+						summary = summary or EntryToSummary(entry)
+					end
+					if #lefts > 0 or summary then
+						candidates[#candidates + 1] = {
+							name = name,
+							left = #lefts > 0 and table_concat(lefts, "\n") or nil,
+							right = #rights > 0 and table_concat(rights, "\n") or nil,
+							summary = summary,
+						}
+					end
+				end
+			end
+		end
+		CandidatesByMapID[mapID] = candidates
+		return candidates
+	end
+	-- Rebuild lazily after the map changes or ATT refreshes collection data.
+	local function WipeCandidates() wipe(CandidatesByMapID) end
+	app.AddEventHandler("OnCurrentMapIDChanged", WipeCandidates)
+	app.AddEventHandler("OnRefreshComplete", WipeCandidates)
+
+	-- Adds the block of whichever candidate's name matches the secret unit name. Returns true if anything was added.
+	SecretUnitTooltip.TryAttach = function(tooltip, unitName)
+		-- Test for nil only after ruling out a secret: a secret name is never nil.
+		if not issecretvalue(unitName) and not unitName then app.PrintDebug("SecretUnitTooltip: no unit name") return end
+		if not CanSelect() then app.PrintDebug("SecretUnitTooltip: secret-safe APIs unavailable") return end
+		local mapID = app.CurrentMapID
+		if not mapID then app.PrintDebug("SecretUnitTooltip: no current map") return end
+		local candidates = CandidatesByMapID[mapID] or BuildCandidates(mapID)
+		if #candidates == 0 then return end
+		local leftOutput, rightOutput, summaryOutput, anyText, anySummary = "", "", "", false, false
+		for _,candidate in ipairs(candidates) do
+			local matches = Matches(unitName, candidate.name)
+			if candidate.left then
+				anyText = true
+				leftOutput = leftOutput .. DisplayFragment(matches, candidate.left)
+				rightOutput = rightOutput .. DisplayFragment(matches, candidate.right)
+			end
+			if candidate.summary then
+				anySummary = true
+				summaryOutput = summaryOutput .. DisplayFragment(matches, candidate.summary)
+			end
+		end
+		-- Progress on the first row, next to the unit name (the name row's own text is secret, so it isn't measured).
+		if anySummary then
+			local rightText = _G[SafeGetName(tooltip) .. "TextRight1"]
+			if rightText then
+				if tooltip.CloseButton then
+					-- The close button covers the right edge, so pad like a normal ATT tooltip does
+					summaryOutput = summaryOutput .. "     "
+				end
+				rightText:SetText(summaryOutput)
+				rightText:Show()
+			end
+		end
+		-- The line count can't depend on a secret, so this is always exactly one (possibly empty) double line,
+		-- holding the matching candidate's rows as multi-line left and right text.
+		-- No colors passed: uncolored rows use the tooltip's default text color, like ATT's normal AddDoubleLine rows.
+		if anyText then tooltip:AddDoubleLine(leftOutput, rightOutput) end
+		return true
+	end
+end
+app.SecretUnitTooltip = SecretUnitTooltip
+
+local function TryShowUnitTooltipInfo(self, guid, unitName)
 	if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L.GUID, guid) end
 
 	-- Account for Blizzard Shenanigans
 	if issecretvalue(guid) then
+		if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return true end
+		if SecretUnitTooltip.TryAttach(self, unitName) then return true end
 		if app.Settings:GetTooltipSetting("creatureID") then
 			if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
 			self:AddDoubleLine(L.CREATURE_ID, "<secret value???>");
@@ -1102,7 +1280,7 @@ if TooltipDataProcessor and (app.GameBuildVersion > 60000 or app.IsForever) then
 
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			if TryShowUnitTooltipInfo(self, id) then
+			if TryShowUnitTooltipInfo(self, id, target) then
 				return true;
 			end
 		end
