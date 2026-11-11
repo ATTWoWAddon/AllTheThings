@@ -2026,6 +2026,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 		}),
+		n(RARES, {
+			n(259801, {	-- Mosh'gra
+				coord = { 62.5, 36.0, MAP.RIVERGLADES },
+				groups = {
+					i(281676),	-- Rog'mar Trainee Shoulderpads
+				},
+			}),
+		}),
 		n(VENDORS, {
 			n(263230, {	-- Dorb <Rare Goods>
 				coord = { 63.8, 17.0, MAP.RIVERGLADES },

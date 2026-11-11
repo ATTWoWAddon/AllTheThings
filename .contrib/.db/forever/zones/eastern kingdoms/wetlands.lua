@@ -1098,10 +1098,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(98461, {	-- Unrequited Love
 				qg = 2913,	-- Archaeologist Hollee <Explorers' League>
 				coord = { 37.44, 41.84, MAP.DARKSHORE },
-				races = { DWARF, NIGHTELF, GNOME, SKYBORNE_ALLIANCE },
+				races = ALLIANCE_ONLY,
 				lvl = 18,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 281243,	-- Hollee's Note (QI!)
+				isBreadcrumb = true,
 			}),
 			q(464, {	-- War Banners
 				sourceQuest = 473,	-- Report to Captain Stoutfist
