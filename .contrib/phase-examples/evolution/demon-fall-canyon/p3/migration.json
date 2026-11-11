@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-demon-fall-canyon",
+      "stage": "P3",
+      "sources": [
+        "Demon Fall Canyon.lua"
+      ]
+    }
+  ]
+}

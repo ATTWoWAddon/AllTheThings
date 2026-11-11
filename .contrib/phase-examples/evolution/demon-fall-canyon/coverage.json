@@ -1,0 +1,29 @@
+{
+  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "owners": [
+    {
+      "line": 8,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dfc.dungeon",
+      "kind": "constructor",
+      "constructor": "inst",
+      "identity": "2784"
+    },
+    {
+      "line": 23,
+      "phase": "SOD_PHASE_SEVEN",
+      "key": "dfc.ironwood-branch",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "235787"
+    },
+    {
+      "line": 42,
+      "phase": "SOD_PHASE_FIVE",
+      "key": "dfc.azgaloth",
+      "kind": "constructor",
+      "constructor": "n",
+      "identity": "232632"
+    }
+  ]
+}
