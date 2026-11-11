@@ -11,7 +11,18 @@ instanceroot(2994, {	-- Alcaz Prison
 	lvl = 48,
 	groups = {
 		n(QUESTS, {
-			
+			q(96772, {	-- The Dragon's Journal
+				qg = 20735,	-- Archmage Lan'dalock
+				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				lvl = 46,
+				groups = {
+					objective(1, {	-- 0/1 Zarla's Journal
+						provider = { "i", 276890 },	-- Zarla's Journal
+						cr = 255702,	-- Blazeroar
+					}),
+				},
+			}),
 		}),
 		-- TODO: Overseer Wrex's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.
 		--e(3403),	-- Overseer Wrex
