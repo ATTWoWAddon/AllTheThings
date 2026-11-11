@@ -3,7 +3,6 @@ Functions used for object localization (all TODOs and simple sync when adding/re
 """
 
 import asyncio
-import fileinput
 import logging
 import re
 import sys
@@ -21,6 +20,17 @@ logging.basicConfig(
 
 CUSTOM_OBJECTS_CONST = 9000000
 LOCALES_DIR = Path("..", "..", "..", "locales")
+
+
+def _write_lines(filepath: Path, lines: list[str]) -> None:
+    text = "".join(lines).removeprefix("\ufeff")
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    lines = text.split("\n")
+    while lines and not lines[-1].strip(" \t"):
+        lines.pop()
+    text = "\n".join(lines) + "\n" if lines else ""
+    with open(filepath, "w", encoding="utf-8", newline="\n") as file:
+        file.write(text)
 
 
 class LangCode(Enum):
@@ -163,7 +173,7 @@ async def localize_objects(
     original_obj_names: dict[int, str],
 ) -> dict[int, str]:
     logging.info(f"Starting {lang_code}!")
-    with open(filepath, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8-sig") as file:
         lines = file.readlines()
 
     todo_dict = get_todo_lines(lines)
@@ -172,9 +182,8 @@ async def localize_objects(
 
     localized_dict = await get_localized_names(session, todo_dict, lang_code)
 
-    for line in fileinput.input(filepath, inplace=True, encoding="utf-8"):
+    for line_ind, line in enumerate(lines):
         old_line = line
-        line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
         if line_ind in localized_dict:
             obj_id = todo_dict[line_ind]
             # have to get name from Wowhead cause it might be name from non retail in this line
@@ -192,15 +201,16 @@ async def localize_objects(
                     f"\t--TODO: This was taken from {game_flavor.value} Wowhead\n",
                     line,
                 )
-        print(line, end="")  # this writes to file
+        lines[line_ind] = line
         if old_line != line:
             logging.info(line)
+    _write_lines(filepath, lines)
 
     return original_obj_names
 
 
 def sort_objects(filepath: Path) -> None:
-    with open(filepath, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8-sig") as file:
         lines = file.readlines()
     lines_copy = lines.copy()
 
@@ -243,12 +253,10 @@ def sort_objects(filepath: Path) -> None:
     )
 
     obj_ind = 0
-    for line in fileinput.input(filepath, inplace=True, encoding="utf-8"):
-        line_ind = fileinput.filelineno() - 1  # filelineno() indexing starts from 1
-        if first_obj_line <= line_ind <= last_obj_line:
-            line = lines_copy[sorted_list[obj_ind][0]]
-            obj_ind += 1
-        print(line, end="")  # this writes to file
+    for line_ind in range(first_obj_line, last_obj_line + 1):
+        lines[line_ind] = lines_copy[sorted_list[obj_ind][0]]
+        obj_ind += 1
+    _write_lines(filepath, lines)
 
 
 class Object(NamedTuple):
@@ -265,7 +273,7 @@ class ObjectsInfo(NamedTuple):
 
 async def get_objects_info(session: ClientSession, filepath: Path) -> ObjectsInfo:
     sort_objects(filepath)
-    with open(filepath, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8-sig") as file:
         lines = file.readlines()
 
     objects: list[Object] = []
@@ -311,8 +319,7 @@ async def get_objects_info(session: ClientSession, filepath: Path) -> ObjectsInf
     # replace all lines because we might have localized new objects
     localized_obj_lines = [i.line for i in objects]
     lines[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filepath, "w", encoding="utf-8") as file:
-        file.writelines(lines)
+    _write_lines(filepath, lines)
 
     objects = [obj for obj in objects if obj.name != "GetSpellInfo"]
 
@@ -385,9 +392,8 @@ async def sync_objects(
             logging.info(del_obj)
         del localized_objects[localized_ind:]
 
-    with open(filepath, encoding="utf-8") as file:
+    with open(filepath, encoding="utf-8-sig") as file:
         contents = file.readlines()
     localized_obj_lines = [i.line for i in localized_objects]
     contents[first_obj_line : last_obj_line + 1] = localized_obj_lines
-    with open(filepath, "w", encoding="utf-8") as file:
-        file.writelines(contents)
+    _write_lines(filepath, contents)
