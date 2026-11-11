@@ -1427,6 +1427,18 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				cr = 3757,	-- Xavian Hellcaller
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(16645),	-- Shredder Operating Manual - Page 1
+			i(16646),	-- Shredder Operating Manual - Page 2
+			i(16647),	-- Shredder Operating Manual - Page 3
+			i(16648),	-- Shredder Operating Manual - Page 4
+			i(16649),	-- Shredder Operating Manual - Page 5
+			i(16650),	-- Shredder Operating Manual - Page 6
+			i(16651),	-- Shredder Operating Manual - Page 7
+			i(16652),	-- Shredder Operating Manual - Page 8
+			i(16653),	-- Shredder Operating Manual - Page 9
+			i(16654),	-- Shredder Operating Manual - Page 10
+			i(16655),	-- Shredder Operating Manual - Page 11
+			i(16656),	-- Shredder Operating Manual - Page 12
 		}),
 	},
 });
