@@ -711,6 +711,7 @@ local QUANTUM_GROUP = sharedData({
 		},
 	}),
 });
+
 root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1209, {	-- Dawn of the Infinite
 		coord = { 61.0, 84.3, THALDRASZUS },
@@ -729,22 +730,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		groups = {
 			n(QUESTS, {
 				q(76140, {	-- Dawn of the Infinite
-					provider = { "n", 187669 },	-- Nozdormu
+					qg = 187669,	-- Nozdormu
 					coord = { 60.8, 38.9, VALDRAKKEN },
 					timeline = { REMOVED_11_0_0 },
 				}),
 				q(76141, {	-- Align in the Sand
-					sourceQuests = { 76140 },	-- Dawn of the Infinite
-					provider = { "n", 205706 },	-- Future Chromie
+					sourceQuest = 76140,	-- Dawn of the Infinite
+					qg = 205706,	-- Future Chromie
 					coord = { 52.3, 39.5, THALDRASZUS },
 				}),
 				q(76142, {	-- On Borrowed Time
-					sourceQuests = { 76140 },	-- Dawn of the Infinite
-					provider = { "n", 205706 },	-- Future Chromie
+					sourceQuest = 76140,	-- Dawn of the Infinite
+					qg = 205706,	-- Future Chromie
 					coord = { 52.3, 39.5, THALDRASZUS },
-					groups = {
-						i(206586),	-- Epoch Extractor (QI!)
-						i(206269),	-- Time-Lost Essence (QI!)
+					qis = {
+						206586,	-- Epoch Extractor (QI!)
+						206269,	-- Time-Lost Essence (QI!)
 					},
 				}),
 				q(76431),	-- Popped when Future Chromie and Chromie met
@@ -753,25 +754,23 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						76141,	-- Align in the Sand
 						76142,	-- On Borrowed Time
 					},
-					provider = { "n", 205707 },	-- Chromie
+					qg = 205707,	-- Chromie
 					coord = { 61.4, 79.7, THALDRASZUS },
-					groups = {
-						i(206369),	-- Time Trap (QI!)
-					},
+					qi = 206369,	-- Time Trap (QI!)
 				}),
 				q(76144, {	-- Morchie Mayhem
-					sourceQuests = { 76143 },	-- Chro-me?
-					provider = { "n", 205707 },	-- Chromie
+					sourceQuest = 76143,	-- Chro-me?
+					qg = 205707,	-- Chromie
 					coord = { 61.4, 79.7, THALDRASZUS },
 				}),
 				q(76145, {	-- Who's That Chromie?
-					sourceQuests = { 76144 },	-- Morchie Mayhem
-					provider = { "n", 206149 },	-- Chromie
+					sourceQuest = 76144,	-- Morchie Mayhem
+					qg = 206149,	-- Chromie
 					coord = { 62.1, 81.5, THALDRASZUS },
 				}),
 				q(76146, {	-- Dawn of the Infinite: Chrono-Lord Deios
-					sourceQuests = { 76145 },	-- Who's That Chromie?
-					provider = { "n", 205710 },	-- Chromie
+					sourceQuest = 76145,	-- Who's That Chromie?
+					qg = 205710,	-- Chromie
 					coord = { 62.2, 83.2, THALDRASZUS },
 					groups = {
 						-- Received if you already have the Toy
@@ -780,11 +779,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				q(76147, {	-- Rewind and Reconcile
-					provider = { "i", 206145 },	-- Mysterious Time Relic (QI!)
+					qs = 206145,	-- Mysterious Time Relic (QS!)
 					-- coord = { ??, ??, 2194 },	-- No coords since it dungeon
-					groups = {
-						i(208390),	-- Bronze Archive Stone
-					},
+					groups = { i(208390) },	-- Bronze Archive Stone
 				}),
 			}),
 			-- #if AFTER 10.1.7
@@ -794,20 +791,18 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					currency(SORIDORMIS_RECOGNITION),
 				}),
 				e(2521, {	-- Chronikar
-					crs = { 198995 },	-- Chronikar
+					cr = 198995,	-- Chronikar
 					groups = {
 						i(207828),	-- Bronze Defender's Vesture
 						i(207995),	-- Chronikar's Ceremonial Saber
 						i(207819),	-- Timeways Intruder's Greaves
 						i(207838),	-- Vigorous Sandstompers
 						i(207923),	-- Zealous Commander's Cuffs
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207991),	-- Double Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207991) })),	-- Double Time
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					crs = { 198996 },	-- Manifested Timeways
+					cr = 198996,	-- Manifested Timeways
 					groups = {
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
@@ -815,9 +810,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207898),	-- Mobius Strap
 						i(207851),	-- Timeway Sojourner's Bracelet
 						i(207858),	-- Unwinding Eon Girdle
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207996),	-- Nick of Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207996) })),	-- Nick of Time
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
@@ -833,9 +826,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207817),	-- Imbued Frostweave Slippers
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207817) })),	-- Imbued Frostweave Slippers
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
@@ -850,26 +841,22 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207897),	-- Mantle of Meticulous Plans
 						i(207528),	-- Prophetic Stonescales
 						i(207911),	-- Stonecracker Knuckles
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(208321),	-- Iridal, the Earth's Master
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(208321) })),	-- Iridal, the Earth's Master
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					crs = { 198998 },	-- Tyr, the Infinite Keeper
+					cr = 198998,	-- Tyr, the Infinite Keeper
 					groups = {
 						i(207927),	-- Crown of the Infinite Lord
 						i(207552),	-- Echoing Tyrstone
 						i(207950),	-- Marbled Oathstone Greatboots
 						i(207876),	-- Temple Acolyte's Uniform
 						i(207873),	-- Titanic Shouldersparks
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(208391),	-- The Infinite Hand
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(208391) })),	-- The Infinite Hand
 					},
 				}),
 				e(2536, {	-- Morchie
-					crs = { 198999 },	-- Morchie
+					cr = 198999,	-- Morchie
 					groups = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
@@ -877,9 +864,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207997),	-- Morchie's Distorted Spellblade
 						i(207946),	-- Reality-Warping Waistband
 						i(207579),	-- Time-Thief's Gambit
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207986),	-- Traveler's Timesplitter
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207986) })),	-- Traveler's Timesplitter
 					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
@@ -900,10 +885,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					crs = { 199000 },	-- Chrono-Lord Deios
+					cr = 199000,	-- Chrono-Lord Deios
 					groups = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
-						i(206145),	-- Mysterious Time Relic (QI!)
+						i(206145),	-- Mysterious Time Relic (QS!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
 						i(208103),	-- Highland Drake: Visage of the Infinite (MM!)
 						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (MM!)
@@ -915,9 +900,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207928),	-- Leggings of the New Dawn
 						i(207581),	-- Mirror of Fractured Tomorrows
 						i(207978),	-- Murozond's Timeless Scale
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207987),	-- Borrowed Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207987) })),	-- Borrowed Time
 					}),
 				}),
 			}),
@@ -927,31 +910,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						timeline = { REMOVED_10_2_0 },
 						groups = {
 							title(514),	-- <Name> of the Infinite
-							crit(60810, {	-- Chronikar
-								_encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60811, {	-- Manifested Timeways
-								_encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60812, {	-- Blight of Galakrond
-								_encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60813, {	-- Iridikron the Stonescaled
-								_encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60814, {	-- Tyr, the Infinite Keeper
-								_encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60815, {	-- Morchie
-								_encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
+							crit(60810, { _encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Chronikar
+							crit(60811, { _encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Manifested Timeways
+							crit(60812, { _encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Blight of Galakrond
+							crit(60813, { _encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Iridikron the Stonescaled
+							crit(60814, { _encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Tyr, the Infinite Keeper
+							crit(60815, { _encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Morchie
 							crit(60816, {	-- Time-Lost Battlefield
 								_encounter = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
 								-- _encounter = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 							}),
-							crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-								_encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
+							crit(60817, { _encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Chrono-Lord Deios and the Infinite Dragonflight
 						},
 					}),
 					ach(18706, sharedData({ timeline = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
@@ -970,16 +939,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
-					crs = { 198995 },	-- Chronikar
-					groups = {
-						ach(18589),	-- Crunch Time
-					},
+					cr = 198995,	-- Chronikar
+					groups = { ach(18589) },	-- Crunch Time
 				}),
 				e(2528, {	-- Manifested Timeways
-					crs = { 198996 },	-- Manifested Timeways
-					groups = {
-						ach(18556),	-- Chaotic Time
-					},
+					cr = 198996,	-- Manifested Timeways
+					groups = { ach(18556) },	-- Chaotic Time
 				}),
 				e(2535, {	-- Blight of Galakrond
 					crs = {
@@ -988,9 +953,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						201788,	-- Dazhak
 						201790,	-- Loszkeleth
 					},
-					groups = {
-						ach(18612),	-- A Slime in Need
-					},
+					groups = { ach(18612) },	-- A Slime in Need
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
 					crs = {
@@ -999,13 +962,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					crs = { 198998 },	-- Tyr, the Infinite Keeper
-					groups = {
-						ach(18539),	-- Back En-masse
-					},
+					cr = 198998,	-- Tyr, the Infinite Keeper
+					groups = { ach(18539) },	-- Back En-masse
 				}),
 				e(2536, {	-- Morchie
-					crs = { 198999 },	-- Morchie
+					cr = 198999,	-- Morchie
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
 					crs = {
@@ -1014,7 +975,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 				}),
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					crs = { 199000 },	-- Chrono-Lord Deios
+					cr = 199000,	-- Chrono-Lord Deios
 				}),
 			}),
 			-- #else
@@ -1024,31 +985,17 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						timeline = { REMOVED_10_2_0 },
 						groups = {
 							title(514),	-- <Name> of the Infinite
-							crit(60810, {	-- Chronikar
-								_encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60811, {	-- Manifested Timeways
-								_encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60812, {	-- Blight of Galakrond
-								_encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60813, {	-- Iridikron the Stonescaled
-								_encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60814, {	-- Tyr, the Infinite Keeper
-								_encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
-							crit(60815, {	-- Morchie
-								_encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
+							crit(60810, { _encounter = { 2521, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Chronikar
+							crit(60811, { _encounter = { 2528, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Manifested Timeways
+							crit(60812, { _encounter = { 2535, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Blight of Galakrond
+							crit(60813, { _encounter = { 2537, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Iridikron the Stonescaled
+							crit(60814, { _encounter = { 2526, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Tyr, the Infinite Keeper
+							crit(60815, { _encounter = { 2536, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Morchie
 							crit(60816, {	-- Time-Lost Battlefield
 								_encounter = { 2533, DIFFICULTY.DUNGEON.MYTHIC },	-- [A]
 								-- _encounter = { 2534, DIFFICULTY.DUNGEON.MYTHIC },	-- [H]
 							}),
-							crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-								_encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
-							}),
+							crit(60817, { _encounter = { 2538, DIFFICULTY.DUNGEON.MYTHIC } }),	-- Chrono-Lord Deios and the Infinite Dragonflight
 						},
 					}),
 					ach(18706, sharedData({ timeline = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
@@ -1067,7 +1014,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
-					crs = { 198995 },	-- Chronikar
+					cr = 198995,	-- Chronikar
 					groups = {
 						ach(18589),	-- Crunch Time
 						i(207828),	-- Bronze Defender's Vesture
@@ -1075,13 +1022,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207819),	-- Timeways Intruder's Greaves
 						i(207838),	-- Vigorous Sandstompers
 						i(207923),	-- Zealous Commander's Cuffs
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207991),	-- Double Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207991) })),	-- Double Time
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					crs = { 198996 },	-- Manifested Timeways
+					cr = 198996,	-- Manifested Timeways
 					groups = {
 						ach(18556),	-- Chaotic Time
 						i(207566),	-- Accelerating Sandglass
@@ -1090,9 +1035,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207898),	-- Mobius Strap
 						i(207851),	-- Timeway Sojourner's Bracelet
 						i(207858),	-- Unwinding Eon Girdle
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207996),	-- Nick of Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207996) })),	-- Nick of Time
 					},
 				}),
 				e(2535, {	-- Blight of Galakrond
@@ -1109,9 +1052,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207921),	-- Dazhak's Desiccated Wingbones
 						i(207992),	-- Fallen Drake's Bonesplitter
 						i(207912),	-- Loszkeleth's Blighted Skullhelm
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207817),	-- Imbued Frostweave Slippers
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207817) })),	-- Imbued Frostweave Slippers
 					},
 				}),
 				e(2537, {	-- Iridikron the Stonescaled
@@ -1126,13 +1067,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207897),	-- Mantle of Meticulous Plans
 						i(207528),	-- Prophetic Stonescales
 						i(207911),	-- Stonecracker Knuckles
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(208321),	-- Iridal, the Earth's Master
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(208321) })),	-- Iridal, the Earth's Master
 					},
 				}),
 				e(2526, {	-- Tyr, the Infinite Keeper
-					crs = { 198998 },	-- Tyr, the Infinite Keeper
+					cr = 198998,	-- Tyr, the Infinite Keeper
 					groups = {
 						ach(18539),	-- Back En-masse
 						i(207927),	-- Crown of the Infinite Lord
@@ -1140,13 +1079,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207950),	-- Marbled Oathstone Greatboots
 						i(207876),	-- Temple Acolyte's Uniform
 						i(207873),	-- Titanic Shouldersparks
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(208391),	-- The Infinite Hand
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(208391) })),	-- The Infinite Hand
 					},
 				}),
 				e(2536, {	-- Morchie
-					crs = { 198999 },	-- Morchie
+					cr = 198999,	-- Morchie
 					groups = {
 						i(207939),	-- Chronomancer's Stasis Shackles
 						i(207862),	-- Familiar's Frayed Gloves
@@ -1154,9 +1091,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207997),	-- Morchie's Distorted Spellblade
 						i(207946),	-- Reality-Warping Waistband
 						i(207579),	-- Time-Thief's Gambit
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207986),	-- Traveler's Timesplitter
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207986) })),	-- Traveler's Timesplitter
 					},
 				}),
 				e(2533, {	-- Time-Lost Battlefield [A]
@@ -1178,7 +1113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				--[[	Dont seem to be any difference in loot. Might just use one?
 				e(2534, {	-- Time-Lost Battlefield [H]
-					crs = { 203679 },	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
+					cr = 203679,	-- Anduin Lothar <Knight Champion of the Kingdom of Stormwind>
 					groups = {
 						i(207867),	-- Arathi Field Bandages
 						i(208000),	-- Cudgel of Bygone Victories
@@ -1193,10 +1128,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				}),
 				--]]
 				e(2538, {	-- Chrono-Lord Deios and the Infinite Dragonflight
-					crs = { 199000 },	-- Chrono-Lord Deios
+					cr = 199000,	-- Chrono-Lord Deios
 					groups = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
-						i(206145),	-- Mysterious Time Relic (QI!)
+						i(206145),	-- Mysterious Time Relic (QS!)
 						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
 						i(208103),	-- Highland Drake: Visage of the Infinite (MM!)
 						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (MM!)
@@ -1208,9 +1143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(207928),	-- Leggings of the New Dawn
 						i(207581),	-- Mirror of Fractured Tomorrows
 						i(207978),	-- Murozond's Timeless Scale
-						n(DIVERGENT, sharedData({ bonusID = 9526 }, {
-							i(207987),	-- Borrowed Time
-						})),
+						n(DIVERGENT, sharedData({ bonusID = 9526 }, { i(207987) })),	-- Borrowed Time
 					}),
 				}),
 			}),

@@ -231,6 +231,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					groups = { i(285065) },	-- Mythical Soul Fragment
 				}),
+				q(98960, {	-- Nalorakk's Rest
+					sourceQuest = 98961,	-- Jan'alai's Refuge
+					qg = 264886,	-- Wah'du <Servant of de Loa>
+					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					groups = { i(285065) },	-- Mythical Soul Fragment
+				}),
+				q(98566, {	-- Come to your Senses
+				}),
 				q(97241, {	-- Voices of Stone
 					providers = {
 						{ "o", 649924 },	-- Small Loa Figurine
