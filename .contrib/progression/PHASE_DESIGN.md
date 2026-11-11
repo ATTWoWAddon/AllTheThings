@@ -1,5 +1,7 @@
 # Phase scheduling and legacy-authoring retirement
 
+**File evolution, before and after: [Blackwing Lair from P1 through P4](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/evolution/blackwing-lair/FILE_EVOLUTION.md).** Read the complete Lua/JSON diffs on one page before the design details below.
+
 **Start with the files you would edit.** This document is the production design. The separate [runnable example](https://github.com/NORPG/AllTheThings/blob/codex/phase-interface-examples/.contrib/phase-examples/README.md) lets you try the Lua/JSON split today. It does not migrate ATT's live database.
 
 ## Which Lua and JSON do I actually edit?
