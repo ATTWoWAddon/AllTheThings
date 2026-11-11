@@ -358,7 +358,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			q(93430, {	-- Taking the Bait Back
 				qg = 254770,	-- Pelluk
 				coord = { 26.4, 30.5, MAP.SWAMP_OF_SORROWS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Lucky Lure
@@ -498,7 +498,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				qg = 1776,	-- Magtoor
 				coord = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
 				maps = { MAP.DESOLACE },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
