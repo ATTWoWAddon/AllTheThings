@@ -122,6 +122,7 @@ i(248741, 1247591);	-- Celestial Riding Crane
 i(248744, 1247597);	-- Celestial Riding Ox
 i(248743, 1247596);	-- Celestial Riding Serpent
 i(248742, 1247598);	-- Celestial Riding Tiger
+i(285349, 1318279);	-- Cerulean Drake
 i(0, 1257674);		-- Embertuft Groveglider
 i(275928, 1298510);	-- Fire Drake
 i(277652, 1302506);	-- Juvenile Frostwyrm
@@ -144,7 +145,6 @@ i(276082, 1298515);	-- Spectral Gryphon
 i(276081, 1298516);	-- Spectral Wind Rider
 i(276075, 1298512);	-- Stormcrow
 i(0, 1301737);		-- Sunflash Driftmoth
-
 
 --- NYI ---
 i(198632, 387319);	-- Big Battle Bear
