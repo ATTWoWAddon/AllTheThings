@@ -6,8 +6,8 @@ end
 local L = app.L
 
 -- Globals
-local select, tostring, ipairs, pairs, tinsert, tonumber
-	= select, tostring, ipairs, pairs, tinsert, tonumber;
+local select, tostring, ipairs, pairs, tonumber
+	= select, tostring, ipairs, pairs, tonumber;
 
 -- App & Module locals
 local SearchForField = app.SearchForField;

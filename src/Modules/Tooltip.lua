@@ -11,8 +11,8 @@ local issecretvalue = app.WOWAPI.issecretvalue;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math_sqrt, GameTooltip, table_concat
-	= ipairs, pairs, InCombatLockdown, pcall, tinsert, tostring, tonumber, math.sqrt, GameTooltip, table.concat
+local ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, math_sqrt, GameTooltip, table_concat
+	= ipairs, pairs, InCombatLockdown, pcall, tostring, tonumber, math.sqrt, GameTooltip, table.concat
 
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);

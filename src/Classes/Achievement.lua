@@ -7,8 +7,8 @@ end
 local L = app.L
 
 -- Globals
-local setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
-	= setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
+local setmetatable, rawget, select, tostring, ipairs, pairs, tonumber
+	= setmetatable, rawget, select, tostring, ipairs, pairs, tonumber
 
 -- WoW API Cache
 local GetAchievementNumCriteria,GetAchievementInfo,GetAchievementLink,GetAchievementCriteriaInfo,GetAchievementCategory,GetAchievementCriteriaInfoByID

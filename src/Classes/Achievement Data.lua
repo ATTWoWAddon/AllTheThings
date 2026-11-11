@@ -13,20 +13,18 @@ if not AchievementCriteriaData then return; end
 local WorldMapOverlayData = rawget(app.L, "WORLD_MAP_OVERLAY_DATA") or {};
 
 -- Globals
-local tostring, ipairs, pairs, tinsert
-	= tostring, ipairs, pairs, tinsert;
+local tostring, ipairs, pairs
+	= tostring, ipairs, pairs
 local math_min = math.min;
 
 -- App & Module locals
 local SearchForField, GetFieldContainer
 	= app.SearchForField, app.GetFieldContainer;
-local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local IsQuestFlaggedCompleted;
 local IsSpellKnownHelper;
 
 
 -- WoW API Cache
-local GetItemID = app.WOWAPI.GetItemID;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetPVPLifetimeStats = GetPVPLifetimeStats;
@@ -87,7 +85,7 @@ local function GetRelatedThingsForExaltedReputations(t, objects)
 end
 local function GetRelatedThingsForOwnItem(t, objects)
 	local searchResults = SearchForField("itemID", t.asset);
-	if searchResults then tinsert(objects, searchResults[1]); end
+	if searchResults then objects[#objects+1] = searchResults[1] end
 end
 local function GetRelatedThingsForMounts(t, objects)
 	for spellID,spells in pairs(GetFieldContainer("mountID")) do
@@ -104,7 +102,7 @@ local function GetRelatedThingsForPets(t, objects)
 end
 local function GetRelatedThingsForQuest(t, objects)
 	local searchResults = SearchForField("questID", t.asset);
-	if searchResults then tinsert(objects, searchResults[1]); end
+	if searchResults then objects[#objects+1] = searchResults[1] end
 end
 local function GetRelatedThingsForReputation(t, objects)
 	local faction = app.CreateFaction(t.asset);
@@ -115,12 +113,12 @@ local function GetRelatedThingsForSkillRanks(t, objects)
 	local spellID = t.spellID;
 	if spellID then
 		local searchResults = SearchForField("spellID", spellID);
-		if searchResults then tinsert(objects, searchResults[1]); end
+		if searchResults then objects[#objects+1] = searchResults[1] end
 	end
 end
 local function GetRelatedThingsForSpells(t, objects)
 	local searchResults = SearchForField("spellID", t.asset);
-	if searchResults then tinsert(objects, searchResults[1]); end
+	if searchResults then objects[#objects+1] = searchResults[1] end
 end
 local GetRelatedThingsForSkillID = setmetatable({
 	[777] = GetRelatedThingsForMounts,
