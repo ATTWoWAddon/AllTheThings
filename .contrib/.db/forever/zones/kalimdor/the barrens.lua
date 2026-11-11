@@ -2938,6 +2938,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ 46.6, 63.0, MAP.THE_BARRENS },
 					{ 44.8, 64.0, MAP.THE_BARRENS },
 				},
+				groups = {
+					i(286540, {	-- The Skyblade
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3672, {	-- Boahn <Druid of the Fang>
 				coord = { 49.1, 33.9, MAP.THE_BARRENS },
