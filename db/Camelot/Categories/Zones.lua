@@ -2216,7 +2216,19 @@ r(13617,{crs={3834,3919},itemID=11151,learnedAt=145,requireSkill=333,skillID=294
 r(1252352,{awp=16001,b=1,crs={3727},itemID=251455,learnedAt=95,requireSkill=164,skillID=2938}),
 r(1252353,{awp=16001,b=1,crs={3771},itemID=251456,learnedAt=130,requireSkill=164,skillID=2938}),
 r(1250151,{awp=16001,b=1,crs={3809},itemID=250182,learnedAt=175,requireSkill=185,skillID=2939}),
-r(1250781,{awp=16001,crs={3757},itemID=250368,learnedAt=145,requireSkill=171,skillID=2937})})}}),
+r(1250781,{awp=16001,crs={3757},itemID=250368,learnedAt=145,requireSkill=171,skillID=2937}),
+i(16645,{spellID=20529}),
+i(16646,{spellID=20529}),
+i(16647,{spellID=20529}),
+i(16648,{spellID=20529}),
+i(16649,{spellID=20530}),
+i(16650,{spellID=20530}),
+i(16651,{spellID=20530}),
+i(16652,{spellID=20530}),
+i(16653,{spellID=20531}),
+i(16654,{spellID=20531}),
+i(16655,{spellID=20531}),
+i(16656,{spellID=20531})})}}),
 m(1447,{icon=236714,lore="A shattered stretch of coastline on Kalimdor's northeast, Azshara was once the greatest night elf metropolis. The city fell millennia ago in the War of the Ancients, but a few ragged buildings perch on the cliffs overlooking similar ruins among the coral. The Horde has established a small outpost, Grim Ulang, in the area, but naga are a constant danger.",g={
 h(-12,{
 ach(852,{
@@ -5563,7 +5575,7 @@ qo(3,{coords={
 q(746,{coords={
 [1412]={{47.5,60.2}}},lvl=6,qgs={2993},r=1,g={
 qo(1,{coords={
-[1412]={{34,46}}},cost={{"i",4702,1}},crs={2989,2990},providers={{"i",4703}}}),
+[1412]={{34,46}}},cost={{"i",4702,5}},crs={2989,2990},providers={{"i",4703},{"o",1685}}}),
 s(157995,4969,{b=1,f=6,loc=43}),
 s(157996,4970,{b=1,f=5,loc=46})}}),
 q(98424,{awp=16001,coords={
@@ -5723,7 +5735,7 @@ q(756,{coords={
 qo(1,{crs={2959},providers={{"i",4801}}}),
 qo(2,{crs={3035},providers={{"i",4802}}})}}),
 q(98435,{awp=16001,coords={
-[1412]={{48.5,60.4}}},lvl=4,qgs={2948},qis={281139},races={5,6},sourceQuests={760},g={
+[1412]={{48.5,60.4}}},lvl=4,qgs={2948},qis={281139},races={6},sourceQuests={760},g={
 s(157311,3443,{b=1,f=21}),
 s(157989,4961,{b=1,f=28})}}),
 q(5661,{altQuests={5658,5660,5662,5663},c={5},coords={
@@ -17423,6 +17435,8 @@ q(95433,{coords={
 [2548]={{27.4,37}}},lvl=36,qgs={260993},r=1,g={
 qo(1,{providers={{"i",269351}}}),
 s(309111,275011,{f=24})}}),
+q(94929,{coords={
+[1435]={{26.8,59.8}}},lvl=36,qgs={5476},qis={266891},r=2}),
 q(94893,{coords={
 [2548]={{66.6,81}}},lvl=36,qgs={257558},qis={266428},r=2,sourceQuests={94892}}),
 q(94727,{coords={
@@ -17835,6 +17849,10 @@ q(94618,{coords={
 q(96081,{coords={
 [2548]={{65.5,79}}},lvl=36,qgs={263613},r=2,g={
 qo(1,{providers={{"i",4338}}})}})}),
+h(-46,{
+n(259801,{coords={
+[2548]={{62.5,36}}},g={
+s(312042,281676,{f=5,loc=41})}})}),
 h(-58,{
 n(263230,{coords={
 [2548]={{63.8,17}}},g={
@@ -18189,7 +18207,7 @@ qo(1,{coords={
 qo(2,{crs={641},providers={{"i",6994}}}),
 qo(3,{description="Found on the table next to Archmage Arugal in Shadowfang Keep.",providers={{"i",267361},{"o",629065}}}),
 q(95042,{c={2},coords={
-[1440]={{11.8,34.4}}},lvl=20,qgs={259649},races={5},g={
+[1440]={{11.8,34.4}}},lvl=20,qgs={259649},races={5},repeatable=1,g={
 qo(1,{crs={4802,4803,4805},providers={{"i",6995}}}),
 qo(4,{providers={{"i",272448}},questID=95036})}})}}),
 q(447,{coords={
@@ -18659,6 +18677,9 @@ i(2758)}}),
 q(342,{coords={
 [1434]={{35.7,10.5}}},cost={{"i",2751,1},{"i",2750,1},{"i",2749,1}},lvl=30,qgs={716},g={
 i(2759)}}),
+q(79236,{awp=16001,coords={
+[1434]={{27,77.2}}},lvl=30,qgs={215643},sourceQuests={79235},g={
+qo(1,{crs={2832},providers={{"i",4600}}})}}),
 q(202,{coords={
 [1434]={{38,3}}},lvl=30,qgs={469},r=2,sourceQuests={574},g={
 qo(1,{providers={{"n",939}}}),
@@ -18802,6 +18823,8 @@ qo(2,{providers={{"i",212347},{"o",423569}}}),
 i(277208,{b=1,f=52}),
 s(310134,277235,{b=1,f=7,loc=40}),
 s(309959,277223,{b=1,f=5,loc=44})}}),
+q(79235,{awp=16001,coords={
+[1443]={{62.3,39}}},lvl=30,qgs={11438},sourceQuests={79229}}),
 q(190,{coords={
 [1434]={{35.6,10.6}}},lvl=28,qgs={718},sourceQuests={583},g={
 qo(1,{providers={{"n",683}}})}}),
@@ -18952,7 +18975,8 @@ q(8551,{altQuests={614},coords={
 [1434]={{26.7,73.6}}},lvl=35,qgs={2500},g={
 qo(1,{coords={
 [1434]={{36.6,69.6}}},crs={1492},providers={{"i",3932}}}),
-s(160267,11469,{b=1,f=4,loc=43})}}),
+s(160267,11469,{b=1,f=4,loc=43}),
+s(304941,270100,{awp=16001,b=1,f=5,loc=43})}}),
 q(8553,{altQuests={615},coords={
 [1434]={{26.6,73.6}}},lvl=35,qgs={2500},sourceQuests={8552}}),
 q(1041,{coords={
@@ -19429,8 +19453,8 @@ qo(1,{coords={
 [1435]={{65.5,55.5}}},providers={{"i",6175},{"o",30854},{"o",30855},{"o",30856}}})}}),
 q(1444,{coords={
 [1425]={{33.6,75.2}}},lvl=38,qgs={5598},r=1,sourceQuests={1429}}),
-q(93430,{coords={
-[1435]={{26.4,30.5}}},lvl=30,qgs={254770},u=1,g={
+q(93430,{awp=16001,coords={
+[1435]={{26.4,30.5}}},lvl=30,qgs={254770},g={
 qo(1,{coords={
 [1435]={{43,39}}},crs={757},providers={{"i",258530}}})}}),
 q(1429,{coords={
@@ -19462,8 +19486,8 @@ q(2623,{coords={
 [1435]={{45,57.2}}},lvl=45,qgs={7643},r=1,sourceQuests={2622},g={
 qo(1,{coords={
 [1435]={{63.8,83.6}}},crs={950},providers={{"i",8463}}})}}),
-q(93464,{coords={
-[1435]={{26,31.4}}},lvl=30,maps={1443},qgs={1776},r=1,u=1}),
+q(93464,{awp=16001,coords={
+[1435]={{26,31.4}}},lvl=30,maps={1443},qgs={1776},r=1}),
 q(93585,{awp=16001,coords={
 [1435]={{22,50.6}}},lvl=30,qgs={255597},r=2}),
 q(1422,{coords={
@@ -20365,6 +20389,16 @@ o(405879,{awp=16001,coords={
 [1420]={{59.4,52.3}}},r=1,g={
 i(208185,{b=1})}})}),
 h(-58,{
+n(2135,{coords={
+[1420]={{60.2,53}}},r=1,g={
+s(156804,2398,{f=6,loc=42,lvl=5}),
+s(156805,2399,{f=6,loc=45,lvl=5}),
+s(156806,2400,{f=6,loc=46,lvl=5}),
+s(156807,2401,{f=6,loc=47,lvl=5}),
+s(156808,2402,{f=6,loc=43,lvl=5}),
+s(156809,2403,{f=6,loc=44,lvl=5}),
+s(163285,17185,{f=8,lvl=3}),
+s(156785,2376,{f=8,lvl=5})}}),
 n(2118,{coords={
 [1420]={{61,52.4}}},r=1,g={
 r(15935,{itemID=12226,requireSkill=185,skillID=2939})}}),
@@ -21525,7 +21559,7 @@ qo(1,{coords={
 i(281304,{b=1,f=52}),
 s(311893,281305,{b=1,f=3})}}),
 q(98461,{awp=16001,coords={
-[1439]={{37.44,41.84}}},lvl=18,qgs={2913},qis={281243},races={3,4,7,95}}),
+[1439]={{37.44,41.84}}},isBreadcrumb=1,lvl=18,qgs={2913},qis={281243},r=2}),
 q(464,{coords={
 [1437]={{9.8,57.4}}},lvl=23,qgs={2104},r=2,sourceQuests={473},g={
 qo(1,{crs={1034,1035,1036,1037,1038,1057,2091},providers={{"i",3337}}})}}),
@@ -22069,6 +22103,8 @@ q(96638,{altQuests={96627,96628,96630,96652,96656,96659},coords={
 [2521]={{42.6,23.6}}},isBreadcrumb=1,lvl=4,nextQuests={96101},qgs={251366},sourceQuests={92470}}),
 q(94414,{coords={
 [2521]={{43.8,24}}},lvl=2,qgs={257554}}),
+q(93161,{coords={
+[2521]={{58.1,24.1}}},description="Use a Night Watchman's Torch in the Ruins of Ban'aethal to uncover the hilt.",providers={{"o",676059}},qis={272313}}),
 q(93735,{coords={
 [2521]={{59,79.6}}},lvl=4,qgs={251968},r=1,sourceQuests={92700}}),
 q(93737,{coords={
@@ -22264,7 +22300,7 @@ s(302631,263005,{b=1,f=6,loc=42,lvl=3})}})}),
 h(-55,{
 n(259843,{coords={
 [2521]={{51.4,72.2}}},description="Target the singing frogs on the rock at the top of the waterfall and use /sing (at least two frogs need to be on the rock). They disappear and a Musical Gustjumper appears on the log next to you; click it to get the pet.",g={
-i(268109,{f=101,spellID=1281641})}})}),
+p(5005,{itemID=268109,npcID=259842,spellID=1281641})}})}),
 h(-56,{
 o(618822,{coords={
 [2521]={{48.9,72.7},{50.4,44.3},{59.9,82.2}}},description="A small blue glow in the ground. It has several spawn points.",questID=94634,g={

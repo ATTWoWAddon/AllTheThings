@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,cl,exp,faction,h,i,m,mnt,n,pvprank,q,qo,s=_.CreateAchievement,_.CreateCharacterClass,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource;
+local ach,cl,exp,faction,h,i,m,mnt,n,pvprank,q,qo,s,title=_.CreateAchievement,_.CreateCharacterClass,_.CreateExploration,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreatePVPRank,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource,_.CreateTitle;
 categories.PVP=
 h(-303,{pvp=1,SortPriority=55,g={
 h(-12,{
@@ -1209,20 +1209,48 @@ i(21568,{b=1,f=53,lvl=20,spellID=1315989}),
 i(21565,{b=1,f=53,lvl=40,spellID=1317443}),
 i(21566,{b=1,f=53,lvl=20,spellID=1315969})}})})}})}),
 h(-298,{maps={1459,1460,1461,2524},g={
-pvprank(1),
-pvprank(2),
-pvprank(3),
-pvprank(4),
-pvprank(5),
-pvprank(6),
-pvprank(7),
-pvprank(8),
-pvprank(9),
-pvprank(10),
-pvprank(11),
-pvprank(12),
-pvprank(13),
-pvprank(14)}}),
+pvprank(1,{
+title(8,{r=2}),
+title(21,{r=1})}),
+pvprank(2,{
+title(9,{r=2}),
+title(22,{r=1})}),
+pvprank(3,{
+title(10,{r=2}),
+title(23,{r=1})}),
+pvprank(4,{
+title(11,{r=2}),
+title(24,{r=1})}),
+pvprank(5,{
+title(12,{r=2}),
+title(25,{r=1})}),
+pvprank(6,{
+title(13,{r=2}),
+title(26,{r=1})}),
+pvprank(7,{
+title(14,{r=2}),
+title(27,{r=1})}),
+pvprank(8,{
+title(35,{r=2}),
+title(28,{r=1})}),
+pvprank(9,{
+title(15,{r=2}),
+title(29,{r=1})}),
+pvprank(10,{
+title(16,{r=2}),
+title(30,{r=1})}),
+pvprank(11,{
+title(17,{r=2}),
+title(31,{r=1})}),
+pvprank(12,{
+title(18,{r=2}),
+title(32,{r=1})}),
+pvprank(13,{
+title(19,{r=2}),
+title(33,{r=1})}),
+pvprank(14,{
+title(20,{r=2}),
+title(34,{r=1})})}}),
 h(-210,{r=2,symselector=4,g={
 h(-101,{
 s(163703,18825,{b=1,f=8,lvl=60,spellID=13959}),
