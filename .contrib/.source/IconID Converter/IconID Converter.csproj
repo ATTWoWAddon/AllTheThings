@@ -14,4 +14,7 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\src\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>

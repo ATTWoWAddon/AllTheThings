@@ -19,4 +19,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\TextFile.cs" Link="TextFile.cs" />
+  </ItemGroup>
 </Project>
