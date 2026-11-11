@@ -33,6 +33,8 @@ NOBLEGARDEN_HEADER = createHeader({
 	},
 });
 
+local NOBLEGARDEN_CHOCOLATE = 44791;
+
 local function BrightlyColoredEgg(groups)
 	local egg
 	-- #IF ANYCLASSIC
@@ -98,172 +100,140 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
 		timeline = { ADDED_4_3_0 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(151804, {	-- Black Tuxedo Pants
 		timeline = { ADDED_7_2_5 },
-		cost = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 25 } },
 	}),
 	i(164922, {	-- Blue Spring Circlet
 		timeline = { ADDED_8_1_5 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(164923, {	-- Brown Spring Circlet
 		timeline = { ADDED_8_1_5 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(151806, {	-- Elegant Dress
 		timeline = { ADDED_7_2_5 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(213073, {	-- Faded Floral Staff
 		timeline = { ADDED_11_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(213076, {	-- Orchid Bow-quet
 		timeline = { ADDED_11_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(213064, {	-- Paradise's Violet Axe
 		timeline = { ADDED_11_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(74283, {	-- Pink Spring Circlet
 		timeline = { ADDED_4_3_0 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(213070, {	-- Pristine Floral Stalk
 		timeline = { ADDED_11_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(44803, {	-- Spring Circlet
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(44800, {	-- Spring Robes
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
-	i(6833, {	-- White Tuxedo Shirt
-		cost = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
-	}),
+	i(6833, { cost = { { "i", NOBLEGARDEN_CHOCOLATE, 25 } } }),	-- White Tuxedo Shirt
 	i(213067, {	-- Violet Floral Edge
 		timeline = { ADDED_11_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(164924, {	-- Yellow Spring Circlet
 		timeline = { ADDED_8_1_5 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	-- Mounts
 	i(72145, {	-- Swift Springstrider (MOUNT!)
 		timeline = { ADDED_4_3_0 },
-		cost = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 500 } },
 	}),
 	-- Other
 	i(44792, {	-- Blossoming Branch
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 10 } },	-- 10x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 10 } },
 	}),
 	i(44818, {	-- Noblegarden Egg
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 5 } },	-- 5x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 5 } },
 	}),
 	i(45073, {	-- Spring Flowers
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 	i(44793, {	-- Tome of Polymorph: Rabbit (CI!)
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	-- Pets
 	i(212786, {	-- Lovely Duckling (PET!)
 		timeline = { ADDED_10_2_6 },
-		cost = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 250 } },
 	}),
 	i(141532, {	-- Noblegarden Bunny (PET!)
 		timeline = { ADDED_7_1_0 },
-		cost = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 200 } },
 	}),
 	i(116258, {	-- Mystical Spring Bouquet (PET!)
 		timeline = { ADDED_6_0_2 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	i(44794, {	-- Spring Rabbit (PET!)
 		timeline = { ADDED_3_1_0 },
-		cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 	}),
 	-- Toys
 	i(204675, {	-- A Drake's Big Basket of Eggs (TOY!)
 		timeline = { ADDED_10_0_7 },
-		cost = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 200 } },
 	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
 		timeline = { ADDED_8_1_5 },
-		cost = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 250 } },
 	}),
 	i(188694, {	-- Spring Florist's Pouch (TOY!)
 		timeline = { ADDED_9_1_5 },
-		cost = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
+		cost = { { "i", NOBLEGARDEN_CHOCOLATE, 50 } },
 	}),
 };
 
 root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	BrightlyColoredEgg({
-		i(44791, {	-- Noblegarden Chocolate
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(44806, {	-- Brightly Colored Shell Fragment
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(44792, {	-- Blossoming Branch
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(44803, {	-- Spring Circlet
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(45073, {	-- Spring Flowers
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(44794, {	-- Spring Rabbit (PET!)
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(44800, {	-- Spring Robes
-			timeline = { ADDED_3_1_0 },
-		}),
-		i(72145, {	-- Swift Springstrider (MOUNT!)
-			timeline = { ADDED_4_3_0 },
-		}),
-		i(19028, {	-- Elegant Dress
-			timeline = { ADDED_1_3_0, REMOVED_7_2_5 },
-		}),
-		i(6835, {	-- Black Tuxedo Pants
-			timeline = { ADDED_1_3_0, REMOVED_7_2_5 },
-		}),
-		i(6833, {	-- White Tuxedo Shirt
-			timeline = { ADDED_1_3_0 },
-		}),
+		i(NOBLEGARDEN_CHOCOLATE, { timeline = { ADDED_3_1_0 } }),
+		i(44806, { timeline = { ADDED_3_1_0 } }),	-- Brightly Colored Shell Fragment
+		i(44792, { timeline = { ADDED_3_1_0 } }),	-- Blossoming Branch
+		i(44803, { timeline = { ADDED_3_1_0 } }),	-- Spring Circlet
+		i(45073, { timeline = { ADDED_3_1_0 } }),	-- Spring Flowers
+		i(44794, { timeline = { ADDED_3_1_0 } }),	-- Spring Rabbit (PET!)
+		i(44800, { timeline = { ADDED_3_1_0 } }),	-- Spring Robes
+		i(72145, { timeline = { ADDED_4_3_0 } }),	-- Swift Springstrider (MOUNT!)
+		i(19028, { timeline = { ADDED_1_3_0, REMOVED_7_2_5 } }),	-- Elegant Dress
+		i(6835, { timeline = { ADDED_1_3_0, REMOVED_7_2_5 } }),	-- Black Tuxedo Pants
+		i(6833, { timeline = { ADDED_1_3_0 } }),	-- White Tuxedo Shirt
 		-- #if BEFORE 3.1.0.9733
-		i(7807, {	-- Candy Bar
-			timeline = { ADDED_1_3_0 },
-		}),
-		i(7808, {	-- Chocolate Square
-			timeline = { ADDED_1_3_0 },
-		}),
-		i(7806, {	-- Lollipop
-			timeline = { ADDED_1_3_0 },
-		}),
+		i(7807, { timeline = { ADDED_1_3_0 } }),	-- Candy Bar
+		i(7808, { timeline = { ADDED_1_3_0 } }),	-- Chocolate Square
+		i(7806, { timeline = { ADDED_1_3_0 } }),	-- Lollipop
 		-- #endif
-		i(155905, {	-- Cursed Rabbit's Foot
-			timeline = { ADDED_7_3_5 },
-		}),
+		i(155905, { timeline = { ADDED_7_3_5 } }),	-- Cursed Rabbit's Foot
 	}),
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
 		ach(2797, {	-- Noble Gardener (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
-			sym = {{"meta_achievement",
+			sym = { { "meta_achievement",
 				2676,	-- I Found One
 				2418,	-- Chocoholic
 				2436,	-- Desert Rose
@@ -272,16 +242,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2419,	-- Spring Fling (A)
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
-			}},
+			} },
 			timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 			races = ALLIANCE_ONLY,
-			groups = {
-				title(122),	-- <Name> the Noble
-			},
+			groups = { title(122) },	-- <Name> the Noble
 		}),
 		ach(2798, {	-- Noble Gardener (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
-			sym = {{"meta_achievement",
+			sym = { { "meta_achievement",
 				2676,	-- I Found One
 				2418,	-- Chocoholic
 				2436,	-- Desert Rose
@@ -296,14 +264,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				-- #endif
 				2420,	-- Noble Garden (H)
 				2422,	-- Shake Your Bunny-Maker
-			}},
+			} },
 			timeline = { ADDED_3_0_2 },
 			-- #if BEFORE MOP
 			races = HORDE_ONLY,
 			-- #endif
-			groups = {
-				title(122),	-- <Name> the Noble
-			},
+			groups = { title(122) },	-- <Name> the Noble
 		}),
 		ach(2576, {	-- Blushing Bride
 			cost = {
@@ -320,12 +286,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			timeline = { ADDED_3_0_2 },
 		}),
 		ach(2417, {	-- Chocolate Lover
-			cost = { { "i", 44791, 25 } },	-- 25 Noblegarden Chocolate
+			cost = { { "i", NOBLEGARDEN_CHOCOLATE, 25 } },
 			timeline = { ADDED_3_0_2 },
 			rank = 25,
 		}),
 		ach(2418, {	-- Chocoholic
-			cost = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
+			cost = { { "i", NOBLEGARDEN_CHOCOLATE, 100 } },
 			timeline = { ADDED_3_0_2 },
 			rank = 100,
 		}),
@@ -337,21 +303,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 			timeline = { ADDED_3_0_2 },
 			groups = {
-				crit(9139, {	-- Desolace
-					maps = { DESOLACE },
-				}),
-				crit(9142, {	-- Silithus
-					maps = { SILITHUS },
-				}),
-				crit(9140, {	-- Tanaris
-					maps = { TANARIS },
-				}),
-				crit(9138, {	-- The Badlands
-					maps = { BADLANDS },
-				}),
-				crit(9141, {	-- Thousand Needles
-					maps = { THOUSAND_NEEDLES },
-				}),
+				crit(9139, { maps = { DESOLACE } }),	-- Desolace
+				crit(9142, { maps = { SILITHUS } }),	-- Silithus
+				crit(9140, { maps = { TANARIS } }),	-- Tanaris
+				crit(9138, { maps = { BADLANDS } }),	-- The Badlands
+				crit(9141, { maps = { THOUSAND_NEEDLES } }),	-- Thousand Needles
 			},
 		}),
 		ach(249, {	-- Dressed for the Occasion
@@ -378,18 +334,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			timeline = { ADDED_3_0_2 },
 			races = ALLIANCE_ONLY,
 			groups = bubbleDown({ races = ALLIANCE_ONLY }, {
-				crit(9121, {	-- Azure Watch
-					maps = { AZUREMYST_ISLE },
-				}),
-				crit(9199, {	-- Dolanaar
-					maps = { TELDRASSIL },
-				}),
-				crit(9200, {	-- Goldshire
-					maps = { ELWYNN_FOREST },
-				}),
-				crit(9201, {	-- Kharanos
-					maps = { DUN_MOROGH },
-				}),
+				crit(9121, { maps = { AZUREMYST_ISLE } }),	-- Azure Watch
+				crit(9199, { maps = { TELDRASSIL } }),	-- Dolanaar
+				crit(9200, { maps = { ELWYNN_FOREST } }),	-- Goldshire
+				crit(9201, { maps = { DUN_MOROGH } }),	-- Kharanos
 			}),
 		}),
 		ach(2497, {	-- Spring Fling (H)
@@ -397,18 +345,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			timeline = { ADDED_3_0_2 },
 			races = HORDE_ONLY,
 			groups = bubbleDown({ races = HORDE_ONLY }, {
-				crit(9202, {	-- Bloodhoof Village
-					maps = { MULGORE },	-- Bloodhoof Village
-				}),
-				crit(9203, {	-- Brill
-					maps = { TIRISFAL_GLADES },
-				}),
-				crit(9204, {	-- Falconwing Square
-					maps = { EVERSONG_WOODS },
-				}),
-				crit(9205, {	-- Razor Hill
-					maps = { DUROTAR },
-				}),
+				crit(9202, { maps = { MULGORE } }),	-- Bloodhoof Village
+				crit(9203, { maps = { TIRISFAL_GLADES } }),	-- Brill
+				crit(9204, { maps = { EVERSONG_WOODS } }),	-- Falconwing Square
+				crit(9205, { maps = { DUROTAR } }),	-- Razor Hill
 			}),
 		}),
 		ach(2421, {	-- Noble Garden (A)
@@ -423,9 +363,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			maps = { SILVERMOON_CITY },
 			races = HORDE_ONLY,
 		}),
-		ach(20209, {	-- Quacked Killer
-			timeline = { ADDED_10_2_6 },
-		}),
+		ach(20209, { timeline = { ADDED_10_2_6 } }),	-- Quacked Killer
 		ach(2422, {	-- Shake Your Bunny-Maker
 			provider = { "i", 45073 },	-- Spring Flowers
 			timeline = { ADDED_3_0_2 },
@@ -454,11 +392,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 				coord = { 30.3, 91.4, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(210594, {	-- Noblegarden Trinket (QI!)
-						races = ALLIANCE_ONLY,
-					}),
-				},
+				groups = { a(i(210594)) },	-- Noblegarden Trinket (QS!)
 			}),
 			n(218738, {	-- Daetan Swiftplume
 				providers = {
@@ -468,11 +402,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				description = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 				coord = { 44.4, 35.1, DUROTAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(216932, {	-- Noblegarden Trinket (QI!)
-						races = HORDE_ONLY,
-					}),
-				},
+				groups = { h(i(216932)) },	-- Noblegarden Trinket (QS!)
 			}),
 			n(216836, {	-- Golden Egg
 				description = "A large golden egg will spawn somewhere nearby that you have to drag to the nest. It is about the same size as a player character and very easy to see. Multiple people can help drag the egg (more people makes it go faster). It works kinda similar to Tuskarr harpoon fishing.",
@@ -543,7 +473,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			isYearly = true,
 			groups = {
 				objective(1, {	-- 0/10 Noblegarden Chocolate
-					provider = { "i", 44791 },	-- Noblegarden Chocolate
+					provider = { "i", NOBLEGARDEN_CHOCOLATE },
 					cost = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
@@ -555,9 +485,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					-- #endif
 					-- #endif
 				}),
-				i(188698, {	-- Eagger Basket (TOY!)
-					timeline = { ADDED_9_1_5 },
-				}),
+				i(188698, { timeline = { ADDED_9_1_5 } }),	-- Eagger Basket (TOY!)
 				i(45067),	-- Egg Basket
 			},
 		}),
@@ -589,7 +517,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			isYearly = true,
 			groups = {
 				objective(1, {	-- 0/10 Noblegarden Chocolate
-					provider = { "i", 44791 },	-- Noblegarden Chocolate
+					provider = { "i", NOBLEGARDEN_CHOCOLATE },
 					cost = { { "i", 44802, 1 } },	-- Borrowed Egg Basket
 				}),
 				i(44802, {	-- Borrowed Egg Basket
@@ -601,9 +529,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					-- #endif
 					-- #endif
 				}),
-				i(188698, {	-- Eagger Basket (TOY!)
-					timeline = { ADDED_9_1_5 },
-				}),
+				i(188698, { timeline = { ADDED_9_1_5 } }),	-- Eagger Basket (TOY!)
 				i(45067),	-- Egg Basket
 			},
 		}),
@@ -763,7 +689,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	n(QUESTS, bubbleDownFiltered({
 		timeline = { ADDED_10_2_6 },
 		isYearly = true,
-	},FILTERFUNC_questID,{
+	}, FILTERFUNC_questID, {
 		q(79134, {	-- A Spring Awakening (A)
 			qgs = {
 				199261,	-- Holiday Enthusiast
@@ -842,9 +768,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			coord = { 42.0, 64.9, ELWYNN_FOREST },
 			races = ALLIANCE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
-			groups = {
-				i(212608),	-- Duck Potion (QI!)
-			},
+			qi = 212608,	-- Duck Potion (QI!)
 		}),
 		q(79577, {	-- Duck Tales (H)
 			sourceQuest = 79576,	-- A Fowl Concoction (H)
@@ -852,9 +776,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			coord = { 52.6, 41.1, DUROTAR },
 			races = HORDE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
-			groups = {
-				i(216488),	-- Duck Potion (QI!)
-			},
+			qi = 216488,	-- Duck Potion (QI!)
 		}),
 		q(79331, {	-- Just a Waddle Away (A)
 			sourceQuest = 79330,	-- Duck Tales (A)
@@ -862,7 +784,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			coord = { 42.0, 65.0, ELWYNN_FOREST },
 			races = ALLIANCE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
+			qi = 212608,	-- Duck Potion (QI!)
 			groups = {
+				o(420195, {	-- Golden Egg Heirloom
+					coord = { 30.4, 91.3, ELWYNN_FOREST },
+					groups = { i(212643) },	-- Golden Egg Heirloom (QI!)
+				}),
+				--
 				i(216881),	-- Duck Disguiser (TOY!)
 				i(216890),	-- Black Duck Disguise (CI!)
 				i(216897),	-- Brown Duck Disguise (CI!)
@@ -870,11 +798,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216900),	-- Pink Duck Disguise (CI!)
 				i(216901),	-- White Duck Disguise (CI!)
 				i(216902),	-- Yellow Duck Disguise (CI!)
-				i(212608),	-- Duck Potion (QI!)
-				o(420195, {	-- Golden Egg Heirloom
-					coord = { 30.4, 91.3, ELWYNN_FOREST },
-					groups = { i(212643) },	-- Golden Egg Heirloom (QI!)
-				}),
 			},
 		}),
 		q(79578, {	-- Just a Waddle Away (H)
@@ -883,7 +806,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			coord = { 52.6, 41.2, DUROTAR },
 			races = HORDE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
+			qi = 216488,	-- Duck Potion (QI!)
 			groups = {
+				o(424098, {	-- Golden Egg Heirloom
+					coord = { 44.5, 35.2, DUROTAR },
+					groups = { i(216489) },	-- Golden Egg Heirloom (QI!)
+				}),
+				--
 				i(216881),	-- Duck Disguiser (TOY!)
 				i(216890),	-- Black Duck Disguise (CI!)
 				i(216897),	-- Brown Duck Disguise (CI!)
@@ -891,18 +820,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				i(216900),	-- Pink Duck Disguise (CI!)
 				i(216901),	-- White Duck Disguise (CI!)
 				i(216902),	-- Yellow Duck Disguise (CI!)
-				i(216488),	-- Duck Potion (QI!)
-				o(424098, {	-- Golden Egg Heirloom
-					coord = { 44.5, 35.2, DUROTAR },
-					groups  = { i(216489) },	-- Golden Egg Heirloom (QI!)
-				}),
 			},
 		}),
 	})),
 	n(QUESTS, bubbleDownFiltered({
 		timeline = { ADDED_10_2_6 },
 		isDaily = true,
-	},FILTERFUNC_questID,{
+	}, FILTERFUNC_questID, {
 		q(78274, {	-- Quacking Down (A)
 			sourceQuest = 79331,	-- Just a Waddle Away (A)
 			qg = 211646,	-- Zinnia Brooks
@@ -918,13 +842,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			_drop = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(73192, {	-- Feathered Fiend (A)
-			provider = { "i", 210594 },	-- Noblegarden Trinket (QI!)
+			qs = 210594,	-- Noblegarden Trinket (QS!)
 			maps = ELWYNN_FOREST,
 			races = ALLIANCE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
 			groups = {
 				i(216874, {	-- Loot-Filled Basket
-					hqt(82543, {    -- Noble Flying Carpet Attempt (Daily Accountwide)
+					hqt(82543, {	-- Noble Flying Carpet Attempt (Daily Accountwide)
 						name = "Noble Flying Carpet Attempt (Daily Accountwide)",
 						isDaily = true,
 					}),
@@ -937,12 +861,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(216901),	-- White Duck Disguise (CI!)
 					i(216902),	-- Yellow Duck Disguise (CI!)
 					-- #endif
-					i(212705, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Attire
-					i(212706, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Belt
-					i(212707, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Boots
-					i(212713, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Dress
-					i(212987, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Pants
-					i(212717, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Sun Hat
+					i(212705, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Attire
+					i(212706, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Belt
+					i(212707, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Boots
+					i(212713, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Dress
+					i(212987, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Pants
+					i(212717, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
@@ -951,7 +875,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
-					sym = {{"select","itemID",
+					sym = { { "select", "itemID",
 						-- #if AFTER 12.0.1
 						216890,	-- Black Duck Disguise (CI!)
 						216897,	-- Brown Duck Disguise (CI!)
@@ -972,12 +896,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 						212711,	-- Spring Reveler's Turquoise Dress
 						212985,	-- Spring Reveler's Turquoise Pants
 						212715,	-- Spring Reveler's Turquoise Sun Hat
-					}},
+					} },
 				}),
 			},
 		}),
 		q(79558, {	-- Feathered Fiend (H)
-			provider = { "i", 216932 },	-- Noblegarden Trinket (QI!)
+			qs = 216932,	-- Noblegarden Trinket (QS!)
 			maps = DUROTAR,
 			races = HORDE_ONLY,
 			_drop = { "g" },	-- Drop Brightly Colored Egg
@@ -996,12 +920,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(216901),	-- White Duck Disguise (CI!)
 					i(216902),	-- Yellow Duck Disguise (CI!)
 					-- #endif
-					i(212705, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Attire
-					i(212706, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Belt
-					i(212707, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Boots
-					i(212713, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Dress
-					i(212987, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Pants
-					i(212717, {timeline = { ADDED_12_0_1_SEASONSTART }}),	-- Spring Reveler's Cornsilk Sun Hat
+					i(212705, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Attire
+					i(212706, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Belt
+					i(212707, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Boots
+					i(212713, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Dress
+					i(212987, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Pants
+					i(212717, { timeline = { ADDED_12_0_1_SEASONSTART } }),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212698),	-- Spring Reveler's Turquoise Attire
 					i(212699),	-- Spring Reveler's Turquoise Belt
 					i(212701),	-- Spring Reveler's Turquoise Boots
@@ -1010,7 +934,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 					i(212715),	-- Spring Reveler's Turquoise Sun Hat
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
-					sym = {{"select","itemID",
+					sym = { { "select", "itemID",
 						-- #if AFTER 12.0.1
 						216890,	-- Black Duck Disguise (CI!)
 						216897,	-- Brown Duck Disguise (CI!)
@@ -1031,7 +955,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 						212711,	-- Spring Reveler's Turquoise Dress
 						212985,	-- Spring Reveler's Turquoise Pants
 						212715,	-- Spring Reveler's Turquoise Sun Hat
-					}},
+					} },
 				}),
 			},
 		}),
