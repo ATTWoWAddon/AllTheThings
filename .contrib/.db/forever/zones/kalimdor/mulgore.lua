@@ -746,7 +746,6 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			q(98424, {	-- Fizsprocket's Notes
 				qs = 281031,	-- Mulgore Expansion Plans (QS!)
-				cr = 3051,	-- Supervisor Fizsprocket
 				coord = { 64.4, 43.6, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
@@ -769,9 +768,6 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 							{ "i", 281037 },	-- One "Gerenzo", of Stonetalon
 							{ "o", 673497 },	-- One "Gerenzo", of Stonetalon
 						},
-					}),
-					objective(4, {	-- 0/1 Mulgore Expansion Plans
-						provider = { "i", 281031 },	-- Mulgore Expansion Plans
 					}),
 				},
 			}),
@@ -1650,6 +1646,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 23,
+			}),
+			i(281031, {	-- Mulgore Expansion Plans
+				cr = 3051,	-- Supervisor Fizsprocket
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 5,
 			}),
 		}),
 	},
