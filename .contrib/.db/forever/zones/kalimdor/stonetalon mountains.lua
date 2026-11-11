@@ -959,6 +959,14 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					i(4835),	-- Elite Shoulders
 				},
 			}),
+			n(269152, {	-- Tylana Clawhoof <Kodo Mounts>
+				-- TODO: coord; her kodos stand around 46.2, 59.8.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				groups = {
+					i(277960),	-- Lavender Kodo (MOUNT!)
+				},
+			}),
 			n(4086, {	-- Veenix <Venture Co. Merchant>
 				coord = { 58.2, 51.6, MAP.STONETALON_MOUNTAINS },
 				groups = {

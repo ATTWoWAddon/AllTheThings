@@ -875,6 +875,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					i(8632),	-- Spotted Frostsaber (MOUNT!)
 					i(8629),	-- Striped Nightsaber (MOUNT!)
 					i(8631),	-- Striped Frostsaber (MOUNT!)
+					i(274706, {	-- Striped Dawnsaber (MOUNT!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18766),	-- Swift Frostsaber (MOUNT!)
 					i(18767),	-- Swift Mistsaber (MOUNT!)
 					i(18902),	-- Swift Stormsaber (MOUNT!)

@@ -1597,6 +1597,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				groups = {
 					i(15277),	-- Gray Kodo (MOUNT!)
 					i(15290),	-- Brown Kodo (MOUNT!)
+					i(275993, {	-- White Kodo (MOUNT!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18793),	-- Great White Kodo (MOUNT!)
 					i(18794),	-- Great Brown Kodo (MOUNT!)
 					i(18795),	-- Great Gray Kodo (MOUNT!)

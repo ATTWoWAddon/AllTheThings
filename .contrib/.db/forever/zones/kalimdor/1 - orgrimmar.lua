@@ -1697,6 +1697,9 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				groups = {
 					i(5668),	-- Brown Wolf (MOUNT!)
 					i(5665),	-- Dire Wolf (MOUNT!)
+					i(1041, {	-- Black Wolf (MOUNT!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18796),	-- Swift Brown Wolf (MOUNT!)
 					i(18797),	-- Swift Timber Wolf (MOUNT!)
 					i(18798),	-- Swift Gray Wolf (MOUNT!)
