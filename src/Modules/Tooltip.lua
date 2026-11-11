@@ -295,6 +295,7 @@ for i,guid in ipairs({
 	"Player-1091-08D77F91",	-- Lightag-Bloodscalp EU
 	"Player-1091-04FEE76F",	-- Tagrond-Bloodscalp EU
 	"Player-1091-0ADDA19E",	-- Gutentag-Bloodscalp EU
+	"Player-6949-000B9A0B", -- Fizzi SteamWrench EU (Forever)
 	-- Darkal
 	"Player-3391-0A512DEB",	-- Claella-Silvermoon EU
 	"Player-3391-07DAA0FA",	-- Cresaida-Silvermoon EU
