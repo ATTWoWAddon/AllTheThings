@@ -1,5 +1,7 @@
 # Blackwing Lair · how the full raid file changes
 
+**[Open the actual file-by-file evolution](FILE_EVOLUTION.md)** for the complete before/after diffs from P1 through P4, with the full handwritten JSON at the step where it is introduced. The text below explains those changes.
+
 **Comparison guide for maintainers, P1 → P4.** Open [the complete P1 Lua file](p1/1.6%20Blackwing%20Lair.lua) first. The first line identifies the stage and original path. Everything after it is the current [1,144-line ATT file](../../../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua), byte for byte. The token definitions, instance metadata, quests, other bosses and every loot entry are included.
 
 Each directory represents the same raid at a successive migration stage. The copies exist so you can compare versions side by side. For release changes, edit the four rules under `rules.blackwing-lair` in the [shared schedule](../../schedule.json). The migration controls below select the stage for this raid.

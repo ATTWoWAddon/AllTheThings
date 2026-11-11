@@ -1,5 +1,7 @@
 # Start here: Blackwing Lair
 
+**Want to see the files evolve? [Open the complete P1 → P2.1 → P2.2 → P3 → P4 file comparison](evolution/blackwing-lair/FILE_EVOLUTION.md).** It shows the actual Lua and JSON diffs on one page, including steps where a file does not change.
+
 **This branch is a runnable example, not a migration of the live addon database.** Start with one question: **why can SoD Nefarian drop the new Ashkandi in game phase 5, while the old Ashkandi remains unavailable?**
 
 Lua contains the two bosses' separate loot lists. One JSON file supplies their opening rules. The Parser combines them into a file you can inspect.
