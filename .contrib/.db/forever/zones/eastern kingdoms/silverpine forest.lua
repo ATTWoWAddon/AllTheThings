@@ -495,7 +495,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				groups = {
 					objective(1, {	-- 0/1 Old Fire-Eye slain
 						provider = { "n", 259897 },	-- Old Fire-Eye
-						coord = { 47.6, 84.8, MAP.SILVERPINE_FOREST },
+						coords = {
+							{ 43.4, 81.4, MAP.SILVERPINE_FOREST },
+							{ 46.4, 83.5, MAP.SILVERPINE_FOREST },
+							{ 49.2, 84.5, MAP.SILVERPINE_FOREST },
+							{ 49.6, 87.2, MAP.SILVERPINE_FOREST },
+							{ 50.4, 81.2, MAP.SILVERPINE_FOREST },
+						},
 					}),
 					objective(2, {	-- 0/1 Moonsilver Blade
 						provider = { "i", 268484 },	-- Moonsilver Blade
