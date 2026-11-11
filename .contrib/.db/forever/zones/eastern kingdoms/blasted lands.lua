@@ -63,6 +63,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					i(8423),	-- Cerebral Cortex Compound
 				},
 			}),
+			q(96798, {	-- Into the Darkness
+				sourceQuest = 96797,	-- The Orphan
+				qg = 266524,	-- Lieutenant Connar
+				coord = { 66.0, 19.4, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+			}),
 			q(2522, {	-- Kum'isha's Endeavors
 				sourceQuest = 2521,	-- To Serve Kum'isha
 				qg = 7363,	-- Kum'isha the Collector
