@@ -19,6 +19,11 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			exploration(2657),	-- Valley of Bones
 		}),
 		n(QUESTS, {
+			q(93016, {	-- A Brief History Lesson
+				qg = 253471,	-- Mordent Evenshade
+				coord = { 35.0, 46.5, MAP.SHENDRALAS },
+				lvl = 35,
+			}),
 			q(93062, {	-- Bone Burying
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -136,6 +141,19 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(96010, {	-- Fragments of the Pylons
+				qg = 253471,	-- Mordent Evenshade
+				coord = { 35.0, 46.5, MAP.SHENDRALAS },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Pylon Fragment
+						provider = { "i", 255656 },	-- Pylon Fragment
+					}),
+					objective(2, {	-- 0/1 Pylon Shard
+						provider = { "i", 255657 },	-- Pylon Shard
+					}),
+				},
+			}),
 			q(93125, {	-- Going Home
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -163,6 +181,11 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 						coord = { 22.6, 26.2, MAP.SHENDRALAS },
 					}),
 				},
+			}),
+			q(93394, {	-- Meeting the Magister
+				qg = 253471,	-- Mordent Evenshade
+				coord = { 35.0, 46.5, MAP.SHENDRALAS },
+				lvl = 35,
 			}),
 			q(92844, {	-- Mountain of Bones
 				sourceQuest = 92841,	-- Valley of Bones (Magram)
@@ -225,6 +248,20 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(96018, {	-- Powering the Pylons
+				qg = 253471,	-- Mordent Evenshade
+				qi = 271882,	-- Pile of Pylon Parts (PQI!)
+				coord = { 35.0, 46.5, MAP.SHENDRALAS },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Mana Sieve
+						provider = { "i", 255662 },	-- Mana Sieve
+					}),
+					objective(4, {	-- 0/1 Coalesced Mana Crystal
+						provider = { "i", 255667 },	-- Coalesced Mana Crystal
+					}),
+				},
+			}),
 			q(92873, {	-- Proof of Concept
 				sourceQuest = 92847,	-- Corrupting Tears
 				qg = 253136,	-- Orgrul
@@ -284,6 +321,15 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(92914, {	-- Strange Pylons
+				provider = { "o", 577959 },	-- Shen'dralar Pylon
+				coord = { 43.5, 34.1, MAP.SHENDRALAS },
+				lvl = 35,
+			}),
+			q(93644, {	-- Tattered Journal
+				qs = 260347,	-- Tattered Journal (QS!)
+				lvl = 35,
+			}),
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
@@ -310,6 +356,14 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
+			}),
+		}),
+		n(ZONE_DROPS, {
+			i(260347, {	-- Tattered Journal (QS!)
+				crs = {
+					253272,	-- Magram Necromancer
+					11559,	-- Outcast Necromancer
+				},
 			}),
 		}),
 	},
