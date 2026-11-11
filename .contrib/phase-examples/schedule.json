@@ -33,6 +33,34 @@
       "gnomeregan.raid10": { "sod": "vanilla.2" }
     }
   },
+  "fullSourceRules": {
+    "$comment": "Additional complete-source owners; unknown boundaries require independent review. These rules do not alter the compact examples.",
+    "blackrock-depths": {
+      "brd.sod-phase-three-additions": {"sod": "vanilla.3"},
+      "brd.sod-phase-four-additions": {"sod": "vanilla.4"},
+      "brd.enchants": "unknown",
+      "brd.recipes": "unknown",
+      "brd.dark-iron-recipes": "unknown",
+      "brd.darkmoon-cards": "unknown",
+      "brd.later-loot": "unknown",
+      "brd.dungeon-set-2": "unknown",
+      "brd.tbc-jewelcrafting": "unknown",
+      "brd.dark-iron-brewer": "unknown"
+    },
+    "dire-maul": {
+      "dire-maul.dungeon-set-2": "unknown",
+      "dire-maul.recipe-quests": "unknown",
+      "dire-maul.darkmoon-cards": "unknown",
+      "dire-maul.later-recipes": "unknown",
+      "dire-maul.sod-phase-four-additions": {"sod": "vanilla.4"},
+      "dire-maul.ironwood-branch": {"sod": "vanilla.7"},
+      "dire-maul.tbc-pet-training": "unknown"
+    },
+    "temple-of-ahnqiraj": {
+      "aq40.atiesh-base": "unknown",
+      "aq40.greater-scarab-coffer-key": "unknown"
+    }
+  },
   "calendars": {
     "progression": [
       "vanilla.1",

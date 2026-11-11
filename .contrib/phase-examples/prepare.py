@@ -145,7 +145,7 @@ def policy(value, milestones, where):
 
 
 def compile_inputs(schedule, comparison):
-    fields(schedule, ("calendars", "rules"), "schedule")
+    fields(schedule, ("calendars", "rules", "fullSourceRules"), "schedule")
     fields(comparison, ("replays", "slots"), "comparison")
     calendars = calendars_for(schedule["calendars"])
     require(isinstance(schedule["rules"], dict) and schedule["rules"], "Missing rules")
@@ -158,6 +158,18 @@ def compile_inputs(schedule, comparison):
             require(key not in rules, f"Duplicate rule across instances: {key}")
             validate_rule(value, key, calendars)
             rules[key], owners[key] = value, instance
+    # Full-source comparisons have additional unresolved owners. Validate their
+    # authoring here, but keep the compact example's profiles unchanged.
+    require(isinstance(schedule["fullSourceRules"], dict), "Invalid full-source rules")
+    full_keys = set()
+    for instance, entries in schedule["fullSourceRules"].items():
+        name(instance, "full-source instance")
+        require(isinstance(entries, dict) and entries, f"Empty full-source rules: {instance}")
+        for key, value in entries.items():
+            name(key, "full-source rule key")
+            require(key not in rules and key not in full_keys, f"Duplicate rule: {key}")
+            validate_rule(value, key, calendars)
+            full_keys.add(key)
     require(isinstance(comparison["replays"], dict), "Invalid replays")
     contexts = {flavor + ":main": (flavor, list(milestones), {}) for flavor, milestones in calendars.items()}
     for context, replay in comparison["replays"].items():
