@@ -1997,6 +1997,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 		}),
 		n(VENDORS, {
+			n(2135, {	-- Abe Winters <Apprentice Armorer>
+				coord = { 60.2, 53.0, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				groups = {
+					i(2398),	-- Light Chain Armor
+					i(2399),	-- Light Chain Belt
+					i(2400),	-- Light Chain Leggings
+					i(2401),	-- Light Chain Boots
+					i(2402),	-- Light Chain Bracers
+					i(2403),	-- Light Chain Gloves
+					i(17185),	-- Round Buckler
+					i(2376),	-- Worn Heater Shield
+				},
+			}),
 			n(2118, {	-- Abigail Shiel <Trade Supplies>
 				coord = { 61.0, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
