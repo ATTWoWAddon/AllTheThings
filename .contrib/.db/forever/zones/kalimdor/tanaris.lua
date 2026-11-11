@@ -333,6 +333,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(10826),	-- Staff of Lore
 				},
 			}),
+			q(97536, {	-- Gnomish Garbage
+				qg = 14743,	-- Jhordy Lapforge <Engineer>
+				qi = 278194,	-- Crate of Radioactive Refuse (PQI!)
+				coord = { 52.2, 26.8, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+			}),
 			q(3022, {	-- Handle With Care
 				qg = 7763,	-- Curgle Cranklehop
 				qi = 9507,	-- A Carefully-packed Crate

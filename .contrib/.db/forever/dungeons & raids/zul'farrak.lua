@@ -19,6 +19,9 @@ instanceroot(241, {	-- Zul'Farrak
 						provider = { "i", 8548 },	-- Divino-matic Rod
 					}),
 					i(9534),	-- Engineer's Guild Headpiece
+					i(270099, {	-- Magister Cowl
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(9533),	-- Masons Fraternity Ring
 				},
 			}),
