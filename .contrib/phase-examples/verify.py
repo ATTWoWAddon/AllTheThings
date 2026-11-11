@@ -80,6 +80,61 @@ def main():
         print(behavior.stdout.strip())
         print("21 native Lua outputs: full A/B/C equivalence and six-case Lua 5.1 behavior passed")
 
+        # Anonymous scopes must flatten while preserving every cumulative key.
+        # The direct child deliberately has its own key: treating the outer
+        # scope as a default would silently bypass the disabled ancestor.
+        scope_input = scratch / "anonymous-scope"
+        (scope_input / "profiles/sod").mkdir(parents=True)
+        (scope_input / "sources.lua").write_text('''return {
+    inst(742, { groups = {
+        { progressionKey = "original", groups = {
+            { progressionKey = "original", g = {
+                e(1536, { progressionKey = "later", groups = { i(19003) } }),
+            } },
+            { progressionKey = "original", timeline = { "added 1.0" }, groups = { i(19004) } },
+        } },
+        e(1537, { progressionKey = "rework", groups = { i(19005) } }),
+    } }),
+}''', encoding="utf-8")
+        (scope_input / "profiles/sod/main.json").write_text(json.dumps({
+            "milestones": ["vanilla.1"], "content": {
+                "original": {"status": "disabled", "windows": []},
+                "later": {"windows": [{"from": "vanilla.1"}]},
+                "rework": {"windows": [{"from": "vanilla.1"}]},
+            }}), encoding="utf-8")
+        scope_check = scratch / "scope-check.lua"
+        scope_check.write_text('''local phased, retail = dofile(arg[1]), dofile(arg[2])
+local evaluate = dofile(arg[3])
+local nodes = phased.groups[1].groups
+assert(#nodes == 3 and nodes[1].encounterID == 1536, "scope must flatten")
+assert(#nodes[1].progressionScopes == 2 and nodes[1].progressionScopes[1] == "sod:main:original" and nodes[1].progressionScopes[2] == "sod:main:later", "ancestor and child scopes must both survive, without duplicates")
+assert(nodes[2].timeline[1] == "added 1.0" and nodes[2].groups[1].itemID == 19004, "conditioned node must remain")
+assert(#nodes[3].progressionScopes == 1 and nodes[3].progressionScopes[1] == "sod:main:rework", "rework must not inherit original")
+assert(phased.policies[nodes[1].progressionScopes[1]].status == "disabled")
+local route = evaluate.find(phased, {itemID = 19003}, "vanilla.1", function() return true end)
+assert(not route.obtainable and #route.routes == 1 and route.routes[1].schedule == "disabled", "an open child cannot bypass the disabled ancestor")
+assert(#route.routes[1].scopeStates == 2 and route.routes[1].scopeStates[2].state == "active", "the child rule must also be evaluated")
+assert(evaluate.find(phased, {itemID = 19005}, "vanilla.1", function() return true end).obtainable, "the independent rework must remain open")
+local conditioned = evaluate.find(phased, {itemID = 19004}, "vanilla.1", function(node) return node.timeline == nil end)
+assert(not conditioned.routes[1].conditionsPass, "the visible parent's ordinary condition must remain")
+local r = retail.groups[1].groups
+assert(#r == 3 and r[1].encounterID == 1536 and r[2].timeline, "Retail must retain the flat ordinary shape")
+local function noScopes(nodes)
+    for _, node in ipairs(nodes) do
+        assert(not node.progressionScopes, "Retail must not retain scopes")
+        noScopes(node.groups or {})
+    end
+end
+noScopes(retail.groups)
+''', encoding="utf-8")
+        scope_outputs = []
+        for context in ("sod:main", "retail"):
+            target = scratch / (context.replace(":", "-") + "-scope.lua")
+            run(command + ["--phase-example", "A", scope_input, context, target])
+            scope_outputs.append(target)
+        run([args.lua, scope_check, *scope_outputs, HERE / "evaluate.lua"])
+        print("Anonymous scope inheritance, flat shape and Retail passed")
+
         # Exercise removal/reopening through the actual compiler, not only the
         # evaluator unit fixture. These are deliberately synthetic milestones.
         windows_input = scratch / "window-roundtrip"

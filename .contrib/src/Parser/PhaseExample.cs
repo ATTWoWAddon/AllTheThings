@@ -251,6 +251,16 @@ namespace ATT
                     if (!flavors.Contains(flavor)) continue;
                 }
                 var scopes2 = Scopes(node, context, inherited, used);
+                // A pure scope is an authoring-only ancestor, not an output node.
+                // Any additional field makes it an ordinary, visible record.
+                if (node.Count == 2 && node.ContainsKey("progressionKey") &&
+                    (node.ContainsKey("groups") || node.ContainsKey("g")))
+                {
+                    object children = node.TryGetValue("groups", out var groups) ? groups : node["g"];
+                    result.AddRange(TransformList(Arr(children, "groups"), root, selection, flavor, context,
+                        scopes2, used, usedSlots, stack));
+                    continue;
+                }
                 var copy = new Dictionary<string, object>();
                 foreach (var pair in node)
                 {
