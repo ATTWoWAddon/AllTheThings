@@ -341,6 +341,41 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
+			q(97534, {	-- Gritty Business
+				qg = 11756,	-- Quinn
+				coord = { 51.2, 27.8, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/7 Desert Debris
+						providers = {
+							{ "i", 278191 },	-- Desert Debris
+							{ "o", 666694 },	-- Gnomish Garbage
+						},
+						coords = {
+							{ 46.0, 24.2, MAP.TANARIS },
+							{ 47.9, 27.4, MAP.TANARIS },
+							{ 48.8, 28.3, MAP.TANARIS },
+							{ 51.0, 30.4, MAP.TANARIS },
+							{ 51.1, 31.9, MAP.TANARIS },
+							{ 52.6, 25.6, MAP.TANARIS },
+							{ 52.9, 30.4, MAP.TANARIS },
+							{ 52.9, 31.1, MAP.TANARIS },
+							{ 53.7, 27.9, MAP.TANARIS },
+							{ 54.0, 26.3, MAP.TANARIS },
+							{ 54.1, 29.2, MAP.TANARIS },
+							{ 54.4, 25.3, MAP.TANARIS },
+							{ 54.8, 26.0, MAP.TANARIS },
+							{ 55.2, 28.0, MAP.TANARIS },
+							{ 56.4, 25.6, MAP.TANARIS },
+							{ 57.5, 24.7, MAP.TANARIS },
+							{ 59.5, 23.2, MAP.TANARIS },
+							{ 61.2, 24.2, MAP.TANARIS },
+							{ 61.5, 25.3, MAP.TANARIS },
+						},
+					}),
+				},
+			}),
 			q(3022, {	-- Handle With Care
 				qg = 7763,	-- Curgle Cranklehop
 				qi = 9507,	-- A Carefully-packed Crate
