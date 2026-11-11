@@ -239,6 +239,7 @@ for i,guid in ipairs({
 	"Player-4372-0000390A",	-- Crieve-Atiesh
 	"Player-5117-014EE29A",	-- Crieve-Atiesh (Era)
 	"Player-5813-01CEF978",	-- Crieve-Wild Growth (SOD)
+	"Player-6929-00142E16",	-- Grieve Hoardkeeper
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
