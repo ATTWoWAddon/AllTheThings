@@ -1,14 +1,31 @@
 root = true
 
 [*]
+charset = utf-8
+end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
 indent_style = space
 indent_size = 4
 
 [*.lua]
-end_of_line = crlf
 indent_style = tab
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Visual Studio / MSBuild project files (legacy and SDK-style)
+[*.{csproj,vbproj,fsproj,vcxproj,vcxproj.filters,proj,projitems,shproj,sqlproj,props,targets,slnx}]
+indent_style = space
+indent_size = 2
+
+[*.{bat,cmd}]
+end_of_line = crlf
+
+# Raw Wago CSV fields include meaningful spaces in multiline localized text.
+[.contrib/.db/standard/.config/.wago/**.csv]
+trim_trailing_whitespace = false
 
 [.config/.exports/**]
 trim_trailing_whitespace = false
