@@ -3559,6 +3559,26 @@ root(ROOTS.WorldDrops, {
 			i(12694),	-- Plans: Thorium Helm (RECIPE!)
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
+			i(251340, {	-- Plans: Veteran's Chain Shirt (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor
+					645,	-- Cookie
+					646,	-- Mr. Smite
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					11517,	-- Oggleflint
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251400, {	-- Plans: Warder's Boots (RECIPE!)
 				crs = {
 					6487,	-- Arcanist Doan

@@ -8,7 +8,6 @@ root(ROOTS.Unsorted, {
 	i(249519),	-- Formula: Frozen Heart of the Mountain
 	i(249520),	-- Formula: Molten Heart of the Mountain
 	i(249521),	-- Formula: Dormant Heart of the Mountain
-	i(251340),	-- Plans: Veteran's Chain Shirt
 	i(251342),	-- Plans: Protector's Chain Shirt
 	i(251343),	-- Plans: Acolyte's Chain Shirt
 	i(251344),	-- Plans: Crusader's Chain Shirt

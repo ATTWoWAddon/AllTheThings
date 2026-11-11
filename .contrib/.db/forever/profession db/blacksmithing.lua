@@ -90,7 +90,6 @@ i(0, 14380);		-- Truesilver Rod
 i(0, 19668);		-- Truesilver Skeleton Key
 i(0, 1252247);		-- Veteran's Chain Helm
 i(0, 1252242);		-- Veteran's Chain Leggings
-i(0, 1252237);		-- Veteran's Chain Shirt
 i(0, 3501);			-- Green Iron Bracers
 i(0, 3502);			-- Green Iron Helm
 i(0, 3506);			-- Green Iron Leggings
@@ -312,6 +311,7 @@ i(251455, 1252352);	-- Bronze Dory
 i(251457, 1252354);	-- Steel Spear
 i(251464, 1252361);	-- Charged Mithril Battleaxe
 i(251341, 1252238);	-- Guard's Chain Shirt
+i(251340, 1252237);	-- Veteran's Chain Shirt
 i(251385, 1252282);	-- Hard Gold Cuirass
 i(251389, 1252286);	-- Hard Gold Coif
 i(251391, 1252288);	-- Hard Gold Pauldrons
