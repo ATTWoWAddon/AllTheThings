@@ -687,7 +687,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(130176),	-- Skystone
 		}),
 		n(DISCOVERY, {
-			r(225902),	-- Mass Prospect Leystone
+			i(141311),	-- Design: Mass Prospect Leystone
 			i(141312),	-- Design: Mass Prospect Felslate
 		}),
 		n(ARMOR, {

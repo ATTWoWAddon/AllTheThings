@@ -117,6 +117,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				races = HORDE_ONLY,
 				groups = appendGroups(BFA_MINING, {
 					r(265853),	-- Mining (Zandalari)
+					i(163837),	-- Forgotten Techniques of Zandalar
 				}),
 			}),
 		}),
@@ -126,6 +127,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				races = HORDE_ONLY,
 				groups = appendGroups(BFA_SKINNING, {
 					r(265871),	-- Skinning (Zandalari)
+					i(163839),	-- Forgotten Techniques of Zandalar
 				}),
 			}),
 		}),

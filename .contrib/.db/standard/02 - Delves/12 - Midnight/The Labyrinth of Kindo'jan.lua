@@ -511,6 +511,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				o(677414, {	-- Mislaid Curiosity
 					description = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
+				o(677416, {	-- Mislaid Curiosity
+					description = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
+				}),
 				o(677417, {	-- Mislaid Curiosity
 				}),
 				o(677418, {	-- Mislaid Curiosity

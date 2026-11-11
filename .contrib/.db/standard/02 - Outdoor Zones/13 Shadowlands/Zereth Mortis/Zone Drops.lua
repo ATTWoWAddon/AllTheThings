@@ -11,9 +11,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			}),
 			i(187707),	-- Progenitor Essentia
 			i(187704),	-- Protoflesh
-			i(192444, {	-- Resonating Disc
-				timeline = { ADDED_9_2_5 },
-			}),
+			i(192444, { timeline = { ADDED_9_2_5 } }),	-- Resonating Disc
 			i(190198),	-- Sandworn Chest Key Fragment
 			i(190197, {	-- Sandworn Chest Key
 				cost = { { "i", 190198, 5 } },	-- Sandworn Chest Key Fragment
@@ -28,9 +26,6 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					cr = 181407,	-- Mawsworn Striker
 				}),
 				i(190948, {	-- Staff of the Dormant Oracle
-					cr = 181407,	-- Mawsworn Striker
-				}),
-				i(190735, {	-- Varruth's Guillotine
 					cr = 181407,	-- Mawsworn Striker
 				}),
 			}),
@@ -91,6 +86,9 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				i(188050),	-- Ineffable Spire
 				i(188049),	-- Transcendant Gavel
 				i(188048),	-- Truthseeker's Staff
+				i(190735, {	-- Varruth's Guillotine
+					cr = 181407,	-- Mawsworn Striker
+				}),
 			}),
 			filter(RECIPES, {
 				i(189468, {	-- Schematic: Goldplate Bufonid
@@ -229,9 +227,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					},
 				}),
 				i(189155, {	-- Viperid Lattice
-					crs = {
-						181086,	-- Desert Viperid
-					},
+					cr = 181086,	-- Desert Viperid
 				}),
 				i(189156, {	-- Vombata Lattice
 					crs = {
@@ -260,9 +256,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					},
 				}),
 				i(189165, {	-- Glimmer of Predation
-					crs = {
-						181116,	-- Dematerializing Worldeater
-					},
+					cr = 181116,	-- Dematerializing Worldeater
 					coords = {
 						{ 40.4, 24.8, ZERETH_MORTIS },
 						{ 43.8, 23.6, ZERETH_MORTIS },
@@ -325,9 +319,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						183227,	-- Lost Rubble
 					},
 				}),
-				i(189176, {	-- Protoform Sentience Crown
-					description = "Drops from Automas, best farmed during the Dangerous State Daily.",
-				}),
+				i(189176, { description = "Drops from Automas, best farmed during the Dangerous State Daily." }),	-- Protoform Sentience Crown
 				i(189180, {	-- Wind's Infinite Call
 					crs = {
 						182096,	-- Enhanced Avian

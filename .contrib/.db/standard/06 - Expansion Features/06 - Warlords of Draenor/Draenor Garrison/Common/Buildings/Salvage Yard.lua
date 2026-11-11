@@ -41,6 +41,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 					}),
+					i(114119),	-- Crate of Salvage
 					i(139594),	-- Salvage Crate
 					i(114120, {	-- Big Crate of Salvage
 						timeline = { ADDED_6_0_2, REMOVED_7_0_3 },

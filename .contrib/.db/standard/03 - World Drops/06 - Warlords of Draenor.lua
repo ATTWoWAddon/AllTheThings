@@ -877,48 +877,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, {
 		}),
 	}),
 	filter(RECIPES, {
-		q(36239, {	-- A Mysterious Satchel
-			description = "This item can drop from any Draenor mob.",
-			provider = { "i", 114984 },	-- Mysterious Satchel
-			maps = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
-			requireSkill = INSCRIPTION,
-			races = ALLIANCE_ONLY,
-			lvl = 90,
-		}),
-		q(36435, {	-- Unintelligible Intelligence
-			description = "This item can drop from any Draenor mob.",
-			provider = { "i", 115593 },	-- Illegible Sootstained Notes
-			maps = {
-				FROSTFIRE_RIDGE,
-				GORGROND,
-				DRAENOR_NAGRAND,
-				DRAENOR_SHADOWMOON_VALLEY,
-				SPIRES_OF_ARAK,
-				TALADOR,
-			},
-			requireSkill = INSCRIPTION,
-			races = HORDE_ONLY,
-			lvl = 90,
-		}),
-		i(116438),	-- Burned-Out Hand Cannon
-		i(114972),	-- Cryptic Tome of Tailoring
-		i(114877),	-- Dirty Note
-		i(115507),	-- Drained Crystal Fragment
-		i(115008),	-- Enchanted Highmaul Bracer
-		i(114973),	-- Frostwolf Tailoring Kit
-		i(115278),	-- Gnomish Location Transponder
-		i(115287),	-- Intricate Crimson Pendant
-		i(113103),	-- Mysterious Flask
-		i(114984),	-- Mysterious Satchel
-		i(116173),	-- Tattered Frostwolf Shroud
 		DRAENOR_COOKING,
 		DRAENOR_FIRST_AID,
+	}),
+	filter(QUEST_ITEMS, {
+		h(i(116438)),	-- Burned-Out Hand Cannon (QS!)
+		a(i(114972)),	-- Cryptic Tome of Tailoring (QS!)
+		a(i(114877)),	-- Dirty Note (QS!)
+		a(i(115507)),	-- Drained Crystal Fragment (QS!)
+		h(i(115008)),	-- Enchanted Highmaul Bracer (QS!)
+		h(i(114973)),	-- Frostwolf Tailoring Kit (QS!)
+		a(i(115278)),	-- Gnomish Location Transponder (QS!)
+		h(i(115593)),	-- Illegible Sootstained Notes (QS!)
+		h(i(115287)),	-- Intricate Crimson Pendant (QS!)
+		a(i(113103)),	-- Mysterious Flask (QS!)
+		a(i(114984)),	-- Mysterious Satchel (QS!)
+		h(i(116173)),	-- Tattered Frostwolf Shroud (QS!)
 	}),
 }));

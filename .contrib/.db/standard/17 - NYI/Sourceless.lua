@@ -545,7 +545,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62381),	-- Encountered after swapping covenant to necrolord ??
 				q(62578),	--
 				q(62687),	--
-				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 				q(60693),	-- After q(59781), in Maldraxxus
 			}),
 
@@ -587,6 +586,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(72370),	-- "riding the airship to the dragon isles for the intro quest."
 				q(74047),	--
 				q(74064),	--
+				q(73935),	-- "Happened after completing a task during a grand hunt in the azure span. The task was killing animals."
 			}),
 
 			-- 10.0.5

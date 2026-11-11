@@ -966,6 +966,12 @@ maproot(DRAENOR, GORGROND, {
 						}),
 					},
 				}),
+				q(35487, {	-- We Burn the Dead
+					sourceQuest = 35430,	-- Cutter
+					qg = 82274,	-- Cutter
+					coord = { 43.7, 84.0, GORGROND },
+					races = HORDE_ONLY,
+				}),
 				n(BONUS_OBJECTIVES, {
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(36473, {	-- Affliction Ridge
@@ -2412,12 +2418,6 @@ maproot(DRAENOR, GORGROND, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			})),
-			q(35487, {	-- We Burn the Dead
-				sourceQuest = 35430,	-- Cutter
-				qg = 82274,	-- Cutter
-				coord = { 43.7, 84.0, GORGROND },
-				races = HORDE_ONLY,
-			}),
 			q(33548, {	-- We Die Laughing
 				sourceQuest = 33543,	-- The Laughing Skull
 				qg = 76987,	-- Kaz the Shrieker

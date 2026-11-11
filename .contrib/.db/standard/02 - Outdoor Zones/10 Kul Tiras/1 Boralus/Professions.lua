@@ -73,6 +73,7 @@ maproot(KUL_TIRAS, BORALUS, {
 				races = ALLIANCE_ONLY,
 				groups = appendGroups(BFA_HERBALISM, {
 					r(265831),	-- Herb Gathering (Kul Tiran)
+					i(163834),	-- Forgotten Techniques of Kul Tiras
 				}),
 			}),
 		}),
@@ -117,6 +118,7 @@ maproot(KUL_TIRAS, BORALUS, {
 				races = ALLIANCE_ONLY,
 				groups = appendGroups(BFA_MINING, {
 					r(265851),	-- Mining (Kul Tiran)
+					i(163836),	-- Forgotten Techniques of Kul Tiras
 				}),
 			}),
 		}),
@@ -126,6 +128,7 @@ maproot(KUL_TIRAS, BORALUS, {
 				races = ALLIANCE_ONLY,
 				groups = appendGroups(BFA_SKINNING, {
 					r(265869),	-- Skinning (Kul Tiran)
+					i(163838),	-- Forgotten Techniques of Kul Tiras
 				}),
 			}),
 		}),

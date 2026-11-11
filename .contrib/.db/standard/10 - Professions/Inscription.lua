@@ -4753,6 +4753,38 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 			}),
 		})),
 		applyclassicphase(WOD_PHASE_ONE, expansion(EXPANSION.WOD, {
+			n(QUESTS, {
+				q(36239, {	-- A Mysterious Satchel
+					description = "This item can drop from any Draenor mob.",
+					qs = 114984,	-- Mysterious Satchel (QS!)
+					maps = {
+						FROSTFIRE_RIDGE,
+						GORGROND,
+						DRAENOR_NAGRAND,
+						DRAENOR_SHADOWMOON_VALLEY,
+						SPIRES_OF_ARAK,
+						TALADOR,
+					},
+					requireSkill = INSCRIPTION,
+					races = ALLIANCE_ONLY,
+					lvl = 90,
+				}),
+				q(36435, {	-- Unintelligible Intelligence
+					description = "This item can drop from any Draenor mob.",
+					qs = 115593,	-- Illegible Sootstained Notes (QS!)
+					maps = {
+						FROSTFIRE_RIDGE,
+						GORGROND,
+						DRAENOR_NAGRAND,
+						DRAENOR_SHADOWMOON_VALLEY,
+						SPIRES_OF_ARAK,
+						TALADOR,
+					},
+					requireSkill = INSCRIPTION,
+					races = HORDE_ONLY,
+					lvl = 90,
+				}),
+			}),
 			filter(RECIPES, {
 				cat(403, {	-- Merchant Orders
 					r(176513, {	-- Draenor Merchant Order

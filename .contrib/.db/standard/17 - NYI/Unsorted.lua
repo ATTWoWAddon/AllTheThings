@@ -1957,12 +1957,6 @@ root(ROOTS.Unsorted, {
 				i(163783),	-- Mount Mugamba Spring Water \\ Mount Mugaba Spring Water
 				i(163785),	-- Canteen of Rivermarsh Rainwater
 				i(163786),	-- Filtered Gloomwater
-				i(163834),	-- Forgotten Techniques of Kul Tiras
-				i(163835),	-- Forgotten Techniques of Zandalar
-				i(163836),	-- Forgotten Techniques of Kul Tiras
-				i(163837),	-- Forgotten Techniques of Zandalar
-				i(163838),	-- Forgotten Techniques of Kul Tiras
-				i(163839),	-- Forgotten Techniques of Zandalar
 			}),
 			filter(QUEST_ITEMS, {
 				i(144031),	-- Hardened Shovel

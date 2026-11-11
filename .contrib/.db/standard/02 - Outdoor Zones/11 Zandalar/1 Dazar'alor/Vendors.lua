@@ -242,6 +242,7 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 							i(156649),	-- Zandalari Effigy Amulet (TOY!)	Note!! We don't mark the item as Horde since Alliance can actually use it
 						},
 					}),
+					i(163835),	-- Forgotten Techniques of Zandalar
 				},
 			}),
 			n(132114, {	-- Griftah <Amazing Amulets>

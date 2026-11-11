@@ -615,6 +615,7 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Azerite essences assembled with Focused Life Anima
 		q(62681),	-- Encountered after using Focused Life Anima to create Stabilizing Lens of the Focusing Iris (168622)
+		q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)??
 
 		-- Patch 8.3
 		q(55349),	-- Triggered shortly after "Network Diagnostics"

@@ -858,13 +858,14 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 						classes = { DEATHKNIGHT },
 						groups = {
 							i(40775),	-- Winged Steed of the Ebon Blade (MOUNT!)
-							i(136796, {	-- Necrophile Tome: Corpse Exploder (CI!)
-								timeline = { ADDED_7_0_3_LAUNCH },
-							}),
+							i(136796, { timeline = { ADDED_7_0_3_LAUNCH } }),	-- Necrophile Tome: Corpse Exploder (CI!)
 						},
 					}),
 					n(28500, {	-- Master Siegesmith Corvus
-						coord = { 50.8, 30.2, EASTERN_PLAGUELANDS },
+						coords = {
+							{ 50.8, 30.2, THE_SCARLET_ENCLAVE },
+							{ 83.6, 46.0, EASTERN_PLAGUELANDS },
+						},
 						classes = { DEATHKNIGHT },
 						groups = {
 							i(38645),	-- Bone-Plated Armor
@@ -892,27 +893,15 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 							i(38662),	-- Bladed Ebon Amulet
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 							i(38667),	-- Bloodbane's Gauntlets of Command
-							i(174485, {	-- Burning Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174662, {	-- Burning Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174485, { timeline = { ADDED_8_3_0 } }),	-- Burning Greatsword of the Ebon Blade
+							i(174662, { timeline = { ADDED_8_3_0 } }),	-- Burning Saber of the Ebon Blade
 							i(34657),	-- Choker of Damnation
 							i(38147),	-- Corrupted Band
-							i(174486, {	-- Crimson Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174659, {	-- Crimson Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174486, { timeline = { ADDED_8_3_0 } }),	-- Crimson Greatsword of the Ebon Blade
+							i(174659, { timeline = { ADDED_8_3_0 } }),	-- Crimson Saber of the Ebon Blade
 							i(38669),	-- Engraved Saronite Legplates
-							i(174488, {	-- Freezing Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174660, {	-- Freezing Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174488, { timeline = { ADDED_8_3_0 } }),	-- Freezing Greatsword of the Ebon Blade
+							i(174660, { timeline = { ADDED_8_3_0 } }),	-- Freezing Saber of the Ebon Blade
 							i(38633),	-- Greataxe of the Ebon Blade
 							i(38661),	-- Greathelm of the Scourge Champion
 							i(38632),	-- Greatsword of the Ebon Blade
@@ -929,12 +918,8 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 							i(38664),	-- Sky Darkener's Shroud of the Unholy
 							i(38674),	-- Soul Harvester's Charm
 							i(38668),	-- The Plaguebringer's Girdle
-							i(174487, {	-- Unholy Greatsword of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
-							i(174661, {	-- Unholy Saber of the Ebon Blade
-								timeline = { ADDED_8_3_0 },
-							}),
+							i(174487, { timeline = { ADDED_8_3_0 } }),	-- Unholy Greatsword of the Ebon Blade
+							i(174661, { timeline = { ADDED_8_3_0 } }),	-- Unholy Saber of the Ebon Blade
 							i(38671),	-- Valanar's Signet Ring
 						},
 					}),

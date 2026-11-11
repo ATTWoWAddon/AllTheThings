@@ -560,9 +560,9 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			coord = { 42.7, 28.4, LEGION_DALARAN },
 			timeline = { REMOVED_9_1_0 },
 			lvl = 45,
-			groups = {
-				i(136352),	-- Archmage Karlain's Imbued Silkweave Robe (QI!)
-				i(136351),	-- Handful of Obliterum Ash (QI!)
+			qis = {
+				136352,	-- Archmage Karlain's Imbued Silkweave Robe (QI!)
+				136351,	-- Handful of Obliterum Ash (QI!)
 			},
 		}),
 		q(45917, {	-- Following the Scent

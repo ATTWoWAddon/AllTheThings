@@ -986,7 +986,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 					59659,	-- Aerial Absolution
 					59678,	-- Sustain, In Vain
 				},
-				provider = { "n", 165716 },	-- Xandria <Paragon of Courage>
+				qgs = {
+					165716,	-- Xandria <Paragon of Courage>
+					165412,	-- Xandria <Paragon of Courage>
+				},
 				coord = { 30.0, 55.2, BASTION },
 			}),
 			q(58523, {	-- You're Dead To Me
