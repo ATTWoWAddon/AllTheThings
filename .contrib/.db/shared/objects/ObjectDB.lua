@@ -312451,6 +312451,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[424082] = {
 		readable = "Firepit",
+		model = 219237,
 		text = {
 			en = "Firepit",
 			es = "Fosa de lava",
@@ -334035,6 +334036,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[554626] = {
 		readable = "Lumber Pile",
+		model = 198340,
 		text = {
 			en = "Lumber Pile",
 			es = "Montón de madera",
@@ -339924,6 +339926,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[577959] = {
 		readable = "Shen'dralar Pylon",
+		model = 201638,
 		text = {
 			en = "Shen'dralar Pylon",
 			de = "Pylon der Shen'dralar",
@@ -340619,6 +340622,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[581918] = {
 		readable = "WANTED!",
+		model = 199421,
 		text = {
 			en = "WANTED!",
 			de = "GESUCHT!",
@@ -344778,6 +344782,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[621767] = {
 		readable = "Loamy Soil",
+		model = 204112,
 		text = {
 			en = "Loamy Soil",
 			de = "Lehmige Erde",
@@ -344785,6 +344790,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[621813] = {
 		readable = "Loose Soil",
+		model = 189528,
 		text = {
 			en = "Loose Soil",
 		},
@@ -344995,6 +345001,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[628948] = {
 		readable = "WANTED!",
+		model = 199421,
 		text = {
 			en = "WANTED!",
 			de = "GESUCHT!",
@@ -345148,18 +345155,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[629425] = {
 		readable = "Cannon Ammunition",
+		model = 198084,
 		text = {
 			en = "Cannon Ammunition",
 		},
 	},
 	[629426] = {
 		readable = "Cannon Ammunition",
+		model = 198084,
 		text = {
 			en = "Cannon Ammunition",
 		},
 	},
 	[629427] = {
 		readable = "Cannon Ammunition",
+		model = 198084,
 		text = {
 			en = "Cannon Ammunition",
 		},
@@ -345263,6 +345273,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[630887] = {
 		readable = "Venture Co. Ledger",
+		model = 198043,
 		text = {
 			en = "Venture Co. Ledger",
 			es = "Libro de contabilidad de Ventura y Cía.",
@@ -345517,6 +345528,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[639870] = {
 		readable = "Bloodsail Trunk",
+		model = 219372,
 		text = {
 			en = "Bloodsail Trunk",
 			es = "Baúl Velasangre",
@@ -345907,6 +345919,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[645164] = {
 		readable = "WANTED!",
+		model = 199421,
 		text = {
 			en = "WANTED!",
 			de = "GESUCHT!",
@@ -345917,6 +345930,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[645166] = {
 		readable = "WANTED!",
+		model = 199421,
 		text = {
 			en = "WANTED!",
 			de = "GESUCHT!",
@@ -349452,6 +349466,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[656789] = {
 		readable = "Lost Shipping Crate",
+		model = 198165,
 		text = {
 			en = "Lost Shipping Crate",
 			de = "Verlorene Transportkiste",
@@ -349597,6 +349612,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[658115] = {
 		readable = "Lost Shipping Crate",
+		model = 198165,
 		text = {
 			en = "Lost Shipping Crate",
 			de = "Verlorene Transportkiste",
@@ -349606,6 +349622,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[658116] = {
 		readable = "Lost Shipping Crate",
+		model = 198165,
 		text = {
 			en = "Lost Shipping Crate",
 			es = "Cajón de transporte perdido",
@@ -349617,6 +349634,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[658117] = {
 		readable = "Lost Shipping Crate",
+		model = 198165,
 		text = {
 			en = "Lost Shipping Crate",
 			es = "Cajón de transporte perdido",
@@ -349800,6 +349818,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[659376] = {
 		readable = "Black Tome",
+		model = 198025,
 		text = {
 			en = "Black Tome",
 			es = "Tomo negro",
@@ -350699,6 +350718,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[666694] = {
 		readable = "Gnomish Garbage",
+		model = 197644,
 		text = {
 			en = "Gnomish Garbage",
 			de = "Gnomischer Müll",
@@ -350988,6 +351008,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[669105] = {
 		readable = "Vilebranch Totem",
+		model = 190690,
 		text = {
 			en = "Vilebranch Totem",
 			de = "Totem der Vilebranch",
@@ -351694,6 +351715,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[673933] = {
 		readable = "Blisterweed",
+		model = 219440,
 		text = {
 			en = "Blisterweed",
 			es = "Hierba ampolla",
@@ -352156,6 +352178,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[677445] = {
 		readable = "Shrine of Coalescence",
+		model = 198781,
 		text = {
 			en = "Shrine of Coalescence",
 		},
@@ -352263,6 +352286,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[694054] = {
 		readable = "Recipe: Raw Plated Armorfish",
+		model = 198453,
 		text = {
 			en = "Recipe: Raw Plated Armorfish",
 			de = "Rezept: Roher Panzerfisch",
@@ -352272,6 +352296,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[694732] = {
 		readable = "Tomb Weed",
+		model = 204101,
 		text = {
 			en = "Tomb Weed",
 			es = "Tumbalíseas",
@@ -356168,6 +356193,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[707245] = {
 		readable = "Wanted",
+		model = 199424,
 		text = {
 			en = "Wanted",
 			de = "Gesucht",
@@ -356175,6 +356201,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	},
 	[707249] = {
 		readable = "Wanted",
+		model = 199424,
 		text = {
 			en = "Wanted",
 			de = "Gesucht",

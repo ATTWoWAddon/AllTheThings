@@ -268,25 +268,35 @@ namespace ATT
         /// Get the document from WoWZaming.
         /// </summary>
         /// <param name="objectJsonID">The object json ID.</param>
+        /// <param name="flavor">The WoWHead game flavor the display ID came from.</param>
         /// <returns></returns>
-        private static string GetDocumentFromWoWZaming(string objectJsonID)
+        private static string GetDocumentFromWoWZaming(string objectJsonID, string flavor = null)
         {
-            try
+            // https://wow.zamimg.com/modelviewer/live/meta/object/73228.json
+            // Display IDs from the Classic-based flavors (e.g. Forever) live under 'classic', and the same ID can mean a different model in 'live'
+            foreach (string viewer in string.IsNullOrEmpty(flavor) || flavor == "retail" ? new[] { "live", "classic" } : new[] { "classic", "live" })
             {
-                // https://wow.zamimg.com/modelviewer/live/meta/object/73228.json
-                using (WebClient webClient = new WebClient())
+                try
                 {
-                    string url = $"https://wow.zamimg.com/modelviewer/live/meta/object/{objectJsonID}.json";
-                    Trace.Write("Downloading: ");
-                    Trace.WriteLine(url);
-                    return Encoding.UTF8.GetString(webClient.DownloadData(url));
+                    using (WebClient webClient = new WebClient())
+                    {
+                        string url = $"https://wow.zamimg.com/modelviewer/{viewer}/meta/object/{objectJsonID}.json";
+                        Trace.Write("Downloading: ");
+                        Trace.WriteLine(url);
+                        return Encoding.UTF8.GetString(webClient.DownloadData(url));
+                    }
+                }
+                catch (WebException e) when ((e.Response as HttpWebResponse)?.StatusCode == HttpStatusCode.NotFound)
+                {
+                    Trace.WriteLine($"Not Found: {viewer} model viewer has no object display {objectJsonID}");
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(e);
+                    return string.Empty;
                 }
             }
-            catch (Exception e)
-            {
-                Trace.WriteLine(e);
-                return string.Empty;
-            }
+            return string.Empty;
         }
 
         /// <summary>
@@ -400,14 +410,15 @@ namespace ATT
         /// Parse the model ID from the document.
         /// </summary>
         /// <param name="document">The document.</param>
+        /// <param name="flavor">The WoWHead game flavor of the document.</param>
         /// <returns>The model ID or 0.</returns>
-        private static long ParseModelIDFromDocument(string document)
+        private static long ParseModelIDFromDocument(string document, string flavor = null)
         {
             if (document.Contains(NOT_FOUND_MESSAGE)) return 0;
             int index = document.IndexOf(DISPLAY_ID_START);
             if (index == -1) return 0;
             index += DISPLAY_ID_START.Length;
-            string displayDetailDocument = GetDocumentFromWoWZaming(document.Substring(index, document.IndexOf(DISPLAY_ID_END, index) - index));
+            string displayDetailDocument = GetDocumentFromWoWZaming(document.Substring(index, document.IndexOf(DISPLAY_ID_END, index) - index), flavor);
             if (string.IsNullOrEmpty(displayDetailDocument)) return 0;
             index = displayDetailDocument.IndexOf(MODEL_ID_START);
             if (index == -1) return 0;
@@ -603,7 +614,7 @@ namespace ATT
                 if (!hasModelID)
                 {
                     // Attempt to parse the model ID from the english document.
-                    long modelID = ParseModelIDFromDocument(englishDocument);
+                    long modelID = ParseModelIDFromDocument(englishDocument, gameFlavor);
                     if (modelID > 0)
                     {
                         Trace.Write(" model = ");
