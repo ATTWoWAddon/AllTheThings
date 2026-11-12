@@ -764,9 +764,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			})),
 			n(PVP_ELITE, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_5 },
 						groups = sharedData({
 							sourceAchievements = { 11698 },	-- Ferocious Elite
 							cost = { { "i", MOH, 50 } },
@@ -780,9 +781,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(147339),	-- Ferocious Gladiator's Tabard [A]
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						cl(DEATHKNIGHT, {
 							i(145622),	-- Ferocious Gladiator's Dreadcloak [A]
 							i(145646),	-- Ferocious Gladiator's Dreadplate Chestpiece [A]
@@ -915,18 +914,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145854),	-- Ferocious Gladiator's Plate Warboots [A]
 							i(145866),	-- Ferocious Gladiator's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145782),	-- Ferocious Gladiator's Band [A]
 						i(145780),	-- Ferocious Gladiator's Ring [A]
 						i(145784),	-- Ferocious Gladiator's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145746),	-- Ferocious Gladiator's Choker [A]
 						i(145742),	-- Ferocious Gladiator's Necklace [A]
 						i(145744),	-- Ferocious Gladiator's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145820),	-- Ferocious Gladiator's Accolade of Conquest [A]
 						i(145826),	-- Ferocious Gladiator's Accolade of Dominance [A]
 						i(145832),	-- Ferocious Gladiator's Accolade of Victory [A]
@@ -936,11 +935,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(145822),	-- Ferocious Gladiator's Insignia of Conquest [A]
 						i(145828),	-- Ferocious Gladiator's Insignia of Dominance [A]
 						i(145834),	-- Ferocious Gladiator's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_5 },
 						groups = sharedData({
 							sourceAchievements = { 11698 },	-- Ferocious Elite
 							cost = { { "i", MOH, 50 } },
@@ -954,9 +954,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(147338),	-- Ferocious Gladiator's Tabard [H]
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_5, REMOVED_7_3_0 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						cl(DEATHKNIGHT, {
 							i(145623),	-- Ferocious Gladiator's Dreadcloak [H]
 							i(145647),	-- Ferocious Gladiator's Dreadplate Chestpiece [H]
@@ -1089,18 +1087,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145855),	-- Ferocious Gladiator's Plate Warboots [H]
 							i(145867),	-- Ferocious Gladiator's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145783),	-- Ferocious Gladiator's Band [H]
 						i(145781),	-- Ferocious Gladiator's Ring [H]
 						i(145785),	-- Ferocious Gladiator's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145747),	-- Ferocious Gladiator's Choker [H]
 						i(145743),	-- Ferocious Gladiator's Necklace [H]
 						i(145745),	-- Ferocious Gladiator's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_5, REMOVED_7_3_0 }},{
 						i(145821),	-- Ferocious Gladiator's Accolade of Conquest [H]
 						i(145827),	-- Ferocious Gladiator's Accolade of Dominance [H]
 						i(145833),	-- Ferocious Gladiator's Accolade of Victory [H]
@@ -1110,7 +1108,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(145823),	-- Ferocious Gladiator's Insignia of Conquest [H]
 						i(145829),	-- Ferocious Gladiator's Insignia of Dominance [H]
 						i(145835),	-- Ferocious Gladiator's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 		},

@@ -65,8 +65,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(149756),	-- Dominant Combatant's Dreadcloak [A]
 						i(149780),	-- Dominant Combatant's Dreadplate Chestpiece [A]
@@ -199,18 +199,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(150000),	-- Dominant Combatant's Plate Wristplates [A]
 						i(149778),	-- Dominant Combatant's Cloak of Battle [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149916),	-- Dominant Combatant's Band [A]
 					i(149914),	-- Dominant Combatant's Ring [A]
 					i(149918),	-- Dominant Combatant's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149880),	-- Dominant Combatant's Choker [A]
 					i(149876),	-- Dominant Combatant's Necklace [A]
 					i(149878),	-- Dominant Combatant's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149954),	-- Dominant Combatant's Accolade of Conquest [A]
 					i(149960),	-- Dominant Combatant's Accolade of Dominance [A]
 					i(149966),	-- Dominant Combatant's Accolade of Victory [A]
@@ -220,10 +220,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149956),	-- Dominant Combatant's Insignia of Conquest [A]
 					i(149962),	-- Dominant Combatant's Insignia of Dominance [A]
 					i(149968),	-- Dominant Combatant's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(149757),	-- Dominant Combatant's Dreadcloak [H]
 						i(149781),	-- Dominant Combatant's Dreadplate Chestpiece [H]
@@ -356,18 +356,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(149989),	-- Dominant Combatant's Plate Warboots [H]
 						i(150001),	-- Dominant Combatant's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149917),	-- Dominant Combatant's Band [H]
 					i(149915),	-- Dominant Combatant's Ring [H]
 					i(149919),	-- Dominant Combatant's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149881),	-- Dominant Combatant's Choker [H]
 					i(149877),	-- Dominant Combatant's Necklace [H]
 					i(149879),	-- Dominant Combatant's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(149955),	-- Dominant Combatant's Accolade of Conquest [H]
 					i(149961),	-- Dominant Combatant's Accolade of Dominance [H]
 					i(149967),	-- Dominant Combatant's Accolade of Victory [H]
@@ -377,10 +377,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149957),	-- Dominant Combatant's Insignia of Conquest [H]
 					i(149963),	-- Dominant Combatant's Insignia of Dominance [H]
 					i(149969),	-- Dominant Combatant's Insignia of Victory [H]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
-				filter(RELICS_F, {
+			n(FACTION_HEADER_NEUTRAL, {
+				filter(RELICS_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(150306),	-- Alliance of Convenience
 					i(150357),	-- Battering Tempest
 					i(150316),	-- Battle-Tempered Hilt
@@ -411,12 +411,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(150320),	-- Tombweed Bloom
 					i(150309),	-- Torch of Competition
 					i(150317),	-- Unflinching Grit
-				}),
-			})),
+				})),
+			}),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(148402),	-- Dominant Gladiator's Dreadcloak [A]
 						i(148426),	-- Dominant Gladiator's Dreadplate Chestpiece [A]
@@ -549,18 +549,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148634),	-- Dominant Gladiator's Plate Warboots [A]
 						i(148646),	-- Dominant Gladiator's Plate Wristplates [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148562),	-- Dominant Gladiator's Band [A]
 					i(148560),	-- Dominant Gladiator's Ring [A]
 					i(148564),	-- Dominant Gladiator's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148526),	-- Dominant Gladiator's Choker [A]
 					i(148522),	-- Dominant Gladiator's Necklace [A]
 					i(148524),	-- Dominant Gladiator's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148600),	-- Dominant Gladiator's Accolade of Conquest [A]
 					i(148606),	-- Dominant Gladiator's Accolade of Dominance [A]
 					i(148612),	-- Dominant Gladiator's Accolade of Victory [A]
@@ -570,10 +570,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148602),	-- Dominant Gladiator's Insignia of Conquest [A]
 					i(148608),	-- Dominant Gladiator's Insignia of Dominance [A]
 					i(148614),	-- Dominant Gladiator's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(148403),	-- Dominant Gladiator's Dreadcloak [H]
 						i(148427),	-- Dominant Gladiator's Dreadplate Chestpiece [H]
@@ -706,18 +706,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148635),	-- Dominant Gladiator's Plate Warboots [H]
 						i(148647),	-- Dominant Gladiator's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148563),	-- Dominant Gladiator's Band [H]
 					i(148561),	-- Dominant Gladiator's Ring [H]
 					i(148565),	-- Dominant Gladiator's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148527),	-- Dominant Gladiator's Choker [H]
 					i(148523),	-- Dominant Gladiator's Necklace [H]
 					i(148525),	-- Dominant Gladiator's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148601),	-- Dominant Gladiator's Accolade of Conquest [H]
 					i(148607),	-- Dominant Gladiator's Accolade of Dominance [H]
 					i(148613),	-- Dominant Gladiator's Accolade of Victory [H]
@@ -727,10 +727,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148603),	-- Dominant Gladiator's Insignia of Conquest [H]
 					i(148609),	-- Dominant Gladiator's Insignia of Dominance [H]
 					i(148615),	-- Dominant Gladiator's Insignia of Victory [H]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
-				filter(RELICS_F, {
+			n(FACTION_HEADER_NEUTRAL, {
+				filter(RELICS_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(154060),	-- Alliance of Convenience
 					i(154079),	-- Battering Tempest
 					i(154070),	-- Battle-Tempered Hilt
@@ -761,13 +761,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(154074),	-- Tombweed Bloom
 					i(154063),	-- Torch of Competition
 					i(154071),	-- Unflinching Grit
-				}),
-			})),
+				})),
+			}),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					coord = { 29.6, 74.8, LEGION_DALARAN },
+					timeline = { ADDED_7_3_2 },
 					groups = sharedData({
 						sourceAchievements = { 12135 },	-- Dominant Elite
 						cost = { { "i", MOH, 50 } },
@@ -781,9 +782,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(149447),	-- Dominant Gladiator's Tabard [A]
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(148648),	-- Dominant Gladiator's Dreadcloak [A]
 						i(148672),	-- Dominant Gladiator's Dreadplate Chestpiece [A]
@@ -916,18 +915,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148880),	-- Dominant Gladiator's Plate Warboots [A]
 						i(148892),	-- Dominant Gladiator's Plate Wristplates [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148808),	-- Dominant Gladiator's Band [A]
 					i(148806),	-- Dominant Gladiator's Ring [A]
 					i(148810),	-- Dominant Gladiator's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148772),	-- Dominant Gladiator's Choker [A]
 					i(148768),	-- Dominant Gladiator's Necklace [A]
 					i(148770),	-- Dominant Gladiator's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148846),	-- Dominant Gladiator's Accolade of Conquest [A]
 					i(148852),	-- Dominant Gladiator's Accolade of Dominance [A]
 					i(148858),	-- Dominant Gladiator's Accolade of Victory [A]
@@ -937,11 +936,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148848),	-- Dominant Gladiator's Insignia of Conquest [A]
 					i(148854),	-- Dominant Gladiator's Insignia of Dominance [A]
 					i(148860),	-- Dominant Gladiator's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					coord = { 57.0, 27.8, LEGION_DALARAN },
+					timeline = { ADDED_7_3_2 },
 					groups = sharedData({
 						sourceAchievements = { 12135 },	-- Dominant Elite
 						cost = { { "i", MOH, 50 } },
@@ -955,9 +955,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(149446),	-- Dominant Gladiator's Tabard [H]
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					cl(DEATHKNIGHT, {
 						i(148649),	-- Dominant Gladiator's Dreadcloak [H]
 						i(148673),	-- Dominant Gladiator's Dreadplate Chestpiece [H]
@@ -1090,18 +1088,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148881),	-- Dominant Gladiator's Plate Warboots [H]
 						i(148893),	-- Dominant Gladiator's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148809),	-- Dominant Gladiator's Band [H]
 					i(148807),	-- Dominant Gladiator's Ring [H]
 					i(148811),	-- Dominant Gladiator's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148773),	-- Dominant Gladiator's Choker [H]
 					i(148769),	-- Dominant Gladiator's Necklace [H]
 					i(148771),	-- Dominant Gladiator's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(148847),	-- Dominant Gladiator's Accolade of Conquest [H]
 					i(148853),	-- Dominant Gladiator's Accolade of Dominance [H]
 					i(148859),	-- Dominant Gladiator's Accolade of Victory [H]
@@ -1111,10 +1109,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148849),	-- Dominant Gladiator's Insignia of Conquest [H]
 					i(148855),	-- Dominant Gladiator's Insignia of Dominance [H]
 					i(148861),	-- Dominant Gladiator's Insignia of Victory [H]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ timeline = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
-				filter(RELICS_F, {
+			n(FACTION_HEADER_NEUTRAL, {
+				filter(RELICS_F, with({timeline = { ADDED_7_3_2, REMOVED_7_3_5 }},{
 					i(155716),	-- "Borrowed Soul" Essence
 					i(155703),	-- Alliance of Convenience
 					i(155722),	-- Battering Tempest
@@ -1145,8 +1143,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(155717),	-- Tombweed Bloom
 					i(155706),	-- Torch of Competition
 					i(155714),	-- Unflinching Grit
-				}),
-			})),
+				})),
+			}),
 		}),
 	})),
 })));

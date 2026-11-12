@@ -64,9 +64,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			})),
 			n(PVP_COMBATANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -108,9 +109,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(145026),	-- Cruel Combatant's Dreadcloak [A]
 							i(145050),	-- Cruel Combatant's Dreadplate Chestpiece [A]
@@ -243,18 +242,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145258),	-- Cruel Combatant's Plate Warboots [A]
 							i(145270),	-- Cruel Combatant's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145186),	-- Cruel Combatant's Band [A]
 						i(145184),	-- Cruel Combatant's Ring [A]
 						i(145188),	-- Cruel Combatant's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145150),	-- Cruel Combatant's Choker [A]
 						i(145146),	-- Cruel Combatant's Necklace [A]
 						i(145148),	-- Cruel Combatant's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145224),	-- Cruel Combatant's Accolade of Conquest [A]
 						i(145230),	-- Cruel Combatant's Accolade of Dominance [A]
 						i(145236),	-- Cruel Combatant's Accolade of Victory [A]
@@ -264,11 +263,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(145226),	-- Cruel Combatant's Insignia of Conquest [A]
 						i(145232),	-- Cruel Combatant's Insignia of Dominance [A]
 						i(145238),	-- Cruel Combatant's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -310,9 +310,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(145027),	-- Cruel Combatant's Dreadcloak [H]
 							i(145051),	-- Cruel Combatant's Dreadplate Chestpiece [H]
@@ -445,18 +443,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145259),	-- Cruel Combatant's Plate Warboots [H]
 							i(145271),	-- Cruel Combatant's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145187),	-- Cruel Combatant's Band [H]
 						i(145185),	-- Cruel Combatant's Ring [H]
 						i(145189),	-- Cruel Combatant's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145151),	-- Cruel Combatant's Choker [H]
 						i(145147),	-- Cruel Combatant's Necklace [H]
 						i(145149),	-- Cruel Combatant's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(145225),	-- Cruel Combatant's Accolade of Conquest [H]
 						i(145231),	-- Cruel Combatant's Accolade of Dominance [H]
 						i(145237),	-- Cruel Combatant's Accolade of Victory [H]
@@ -466,7 +464,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(145227),	-- Cruel Combatant's Insignia of Conquest [H]
 						i(145233),	-- Cruel Combatant's Insignia of Dominance [H]
 						i(145239),	-- Cruel Combatant's Insignia of Victory [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_7_2_0, REMOVED_7_2_5 },
@@ -507,9 +505,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -551,9 +550,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(144534),	-- Cruel Gladiator's Dreadcloak [A]
 							i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece [A]
@@ -686,18 +683,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(144766),	-- Cruel Gladiator's Plate Warboots [A]
 							i(144778),	-- Cruel Gladiator's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144694),	-- Cruel Gladiator's Band [A]
 						i(144692),	-- Cruel Gladiator's Ring [A]
 						i(144696),	-- Cruel Gladiator's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144658),	-- Cruel Gladiator's Choker [A]
 						i(144654),	-- Cruel Gladiator's Necklace [A]
 						i(144656),	-- Cruel Gladiator's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144732),	-- Cruel Gladiator's Accolade of Conquest [A]
 						i(144738),	-- Cruel Gladiator's Accolade of Dominance [A]
 						i(144744),	-- Cruel Gladiator's Accolade of Victory [A]
@@ -707,11 +704,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144734),	-- Cruel Gladiator's Insignia of Conquest [A]
 						i(144740),	-- Cruel Gladiator's Insignia of Dominance [A]
 						i(144746),	-- Cruel Gladiator's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -753,9 +751,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(144535),	-- Cruel Gladiator's Dreadcloak [H]
 							i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece [H]
@@ -888,18 +884,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(144767),	-- Cruel Gladiator's Plate Warboots [H]
 							i(144779),	-- Cruel Gladiator's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144695),	-- Cruel Gladiator's Band [H]
 						i(144693),	-- Cruel Gladiator's Ring [H]
 						i(144697),	-- Cruel Gladiator's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144659),	-- Cruel Gladiator's Choker [H]
 						i(144655),	-- Cruel Gladiator's Necklace [H]
 						i(144657),	-- Cruel Gladiator's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144733),	-- Cruel Gladiator's Accolade of Conquest [H]
 						i(144739),	-- Cruel Gladiator's Accolade of Dominance [H]
 						i(144745),	-- Cruel Gladiator's Accolade of Victory [H]
@@ -909,13 +905,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144735),	-- Cruel Gladiator's Insignia of Conquest [H]
 						i(144741),	-- Cruel Gladiator's Insignia of Dominance [H]
 						i(144747),	-- Cruel Gladiator's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 			n(PVP_ELITE, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							u = ELITE_PVP_REQUIREMENT,
 						}, {
@@ -933,10 +930,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							sourceAchievements = {
 								11697,	-- Cruel Elite
@@ -983,9 +979,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(144780),	-- Cruel Gladiator's Dreadcloak [A]
 							i(144804),	-- Cruel Gladiator's Dreadplate Chestpiece [A]
@@ -1118,18 +1112,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145012),	-- Cruel Gladiator's Plate Warboots [A]
 							i(145024),	-- Cruel Gladiator's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144940),	-- Cruel Gladiator's Band [A]
 						i(144938),	-- Cruel Gladiator's Ring [A]
 						i(144942),	-- Cruel Gladiator's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144904),	-- Cruel Gladiator's Choker [A]
 						i(144900),	-- Cruel Gladiator's Necklace [A]
 						i(144902),	-- Cruel Gladiator's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144978),	-- Cruel Gladiator's Accolade of Conquest [A]
 						i(144984),	-- Cruel Gladiator's Accolade of Dominance [A]
 						i(144990),	-- Cruel Gladiator's Accolade of Victory [A]
@@ -1139,11 +1133,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144980),	-- Cruel Gladiator's Insignia of Conquest [A]
 						i(144986),	-- Cruel Gladiator's Insignia of Dominance [A]
 						i(144992),	-- Cruel Gladiator's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							u = ELITE_PVP_REQUIREMENT,
 						}, {
@@ -1161,10 +1156,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_3_0 },
 						groups = sharedData({
 							sourceAchievements = {
 								11697,	-- Cruel Elite
@@ -1211,9 +1205,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0, REMOVED_7_2_5 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						cl(DEATHKNIGHT, {
 							i(144781),	-- Cruel Gladiator's Dreadcloak [H]
 							i(144805),	-- Cruel Gladiator's Dreadplate Chestpiece [H]
@@ -1346,18 +1338,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(145013),	-- Cruel Gladiator's Plate Warboots [H]
 							i(145025),	-- Cruel Gladiator's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144941),	-- Cruel Gladiator's Band [H]
 						i(144939),	-- Cruel Gladiator's Ring [H]
 						i(144943),	-- Cruel Gladiator's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144905),	-- Cruel Gladiator's Choker [H]
 						i(144901),	-- Cruel Gladiator's Necklace [H]
 						i(144903),	-- Cruel Gladiator's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_2_0, REMOVED_7_2_5 }},{
 						i(144979),	-- Cruel Gladiator's Accolade of Conquest [H]
 						i(144985),	-- Cruel Gladiator's Accolade of Dominance [H]
 						i(144991),	-- Cruel Gladiator's Accolade of Victory [H]
@@ -1367,7 +1359,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(144981),	-- Cruel Gladiator's Insignia of Conquest [H]
 						i(144987),	-- Cruel Gladiator's Insignia of Dominance [H]
 						i(144993),	-- Cruel Gladiator's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 		},

@@ -60,9 +60,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
 						coord = { 75.0, 67.4, STORMWIND_CITY },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = {
 							filter(CLOTH, {
 								honor(700, i(172837)),	-- Corrupted Aspirant's Silk Cord [A]
@@ -143,23 +144,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					}),
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = {
 							moh(80, iensemble(184680)),	-- Arsenal: Corrupted Aspirant's Weapons [A]
 						},
 					}),
-					n(TREASURES, {
+					n(TREASURES, with({timeline = { ADDED_9_0_2_LAUNCH }},{
 						i(172857),	-- Corrupted Aspirant's Cape [A]
 						i(172856),	-- Corrupted Aspirant's Drape [A]
 						i(172854),	-- Corrupted Aspirant's Shawl [A]
-					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
-					filter(BACK_F, {
+					})),
+					filter(BACK_F, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172857),	-- Corrupted Aspirant's Cape [A]
 						i(172856),	-- Corrupted Aspirant's Drape [A]
 						i(172854),	-- Corrupted Aspirant's Shawl [A]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172837),	-- Corrupted Aspirant's Silk Cord [A]
 						i(172840),	-- Corrupted Aspirant's Silk Cuffs [A]
 						i(172823),	-- Corrupted Aspirant's Silk Gloves [A]
@@ -168,8 +168,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172834),	-- Corrupted Aspirant's Silk Mantle [A]
 						i(172813),	-- Corrupted Aspirant's Silk Robe [A]
 						i(172818),	-- Corrupted Aspirant's Silk Treads [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172839),	-- Corrupted Aspirant's Leather Belt [A]
 						i(172843),	-- Corrupted Aspirant's Leather Bindings [A]
 						i(172820),	-- Corrupted Aspirant's Leather Boots [A]
@@ -178,8 +178,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172831),	-- Corrupted Aspirant's Leather Legguards [A]
 						i(172832),	-- Corrupted Aspirant's Leather Spaulders [A]
 						i(172816),	-- Corrupted Aspirant's Leather Tunic [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172842),	-- Corrupted Aspirant's Chain Armbands [A]
 						i(172815),	-- Corrupted Aspirant's Chain Armor [A]
 						i(172824),	-- Corrupted Aspirant's Chain Gauntlets [A]
@@ -188,8 +188,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172819),	-- Corrupted Aspirant's Chain Sabatons [A]
 						i(172835),	-- Corrupted Aspirant's Chain Spaulders [A]
 						i(172838),	-- Corrupted Aspirant's Chain Waistguard [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172841),	-- Corrupted Aspirant's Plate Armguards [A]
 						i(172814),	-- Corrupted Aspirant's Plate Chestpiece [A]
 						i(172822),	-- Corrupted Aspirant's Plate Gauntlets [A]
@@ -198,8 +198,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172828),	-- Corrupted Aspirant's Plate Legguards [A]
 						i(172833),	-- Corrupted Aspirant's Plate Pauldrons [A]
 						i(172817),	-- Corrupted Aspirant's Plate Warboots [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172880),	-- Corrupted Aspirant's Chopper [A]
 						i(174013),	-- Corrupted Aspirant's Claw [A]
 						i(172878),	-- Corrupted Aspirant's Cleaver [A]
@@ -220,11 +220,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172862),	-- Corrupted Aspirant's Wand [A]
 						i(174019),	-- Corrupted Aspirant's War Staff [A]
 						i(172886),	-- Corrupted Aspirant's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(175050, {	-- Aneka Melae
 						coord = { 37.5, 71.4, ORGRIMMAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = {
 							filter(CLOTH, {
 								honor(700, i(172787)),	-- Corrupted Aspirant's Silk Cord [H]
@@ -305,23 +306,22 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					}),
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = {
 							moh(80, iensemble(184681)),	-- Arsenal: Corrupted Aspirant's Weapons [H]
 						},
 					}),
-					n(TREASURES, {
+					n(TREASURES, with({timeline = { ADDED_9_0_2_LAUNCH }},{
 						i(172853),	-- Corrupted Aspirant's Cape [H]
 						i(172852),	-- Corrupted Aspirant's Drape [H]
 						i(172850),	-- Corrupted Aspirant's Shawl [H]
-					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
-					filter(BACK_F, {
+					})),
+					filter(BACK_F, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172853),	-- Corrupted Aspirant's Cape [H]
 						i(172852),	-- Corrupted Aspirant's Drape [H]
 						i(172850),	-- Corrupted Aspirant's Shawl [H]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172787),	-- Corrupted Aspirant's Silk Cord [H]
 						i(172786),	-- Corrupted Aspirant's Silk Cuffs [H]
 						i(172782),	-- Corrupted Aspirant's Silk Gloves [H]
@@ -330,8 +330,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172785),	-- Corrupted Aspirant's Silk Mantle [H]
 						i(172780),	-- Corrupted Aspirant's Silk Robe [H]
 						i(172781),	-- Corrupted Aspirant's Silk Treads [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172794),	-- Corrupted Aspirant's Leather Belt [H]
 						i(172795),	-- Corrupted Aspirant's Leather Bindings [H]
 						i(172789),	-- Corrupted Aspirant's Leather Boots [H]
@@ -340,8 +340,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172792),	-- Corrupted Aspirant's Leather Legguards [H]
 						i(172793),	-- Corrupted Aspirant's Leather Spaulders [H]
 						i(172788),	-- Corrupted Aspirant's Leather Tunic [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172803),	-- Corrupted Aspirant's Chain Armbands [H]
 						i(172796),	-- Corrupted Aspirant's Chain Armor [H]
 						i(172798),	-- Corrupted Aspirant's Chain Gauntlets [H]
@@ -350,8 +350,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172797),	-- Corrupted Aspirant's Chain Sabatons [H]
 						i(172801),	-- Corrupted Aspirant's Chain Spaulders [H]
 						i(172802),	-- Corrupted Aspirant's Chain Waistguard [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172811),	-- Corrupted Aspirant's Plate Armguards [H]
 						i(172805),	-- Corrupted Aspirant's Plate Chestpiece [H]
 						i(172807),	-- Corrupted Aspirant's Plate Gauntlets [H]
@@ -360,8 +360,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172808),	-- Corrupted Aspirant's Plate Legguards [H]
 						i(172809),	-- Corrupted Aspirant's Plate Pauldrons [H]
 						i(172806),	-- Corrupted Aspirant's Plate Warboots [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172881),	-- Corrupted Aspirant's Chopper [H]
 						i(174012),	-- Corrupted Aspirant's Claw [H]
 						i(172879),	-- Corrupted Aspirant's Cleaver [H]
@@ -382,7 +382,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172863),	-- Corrupted Aspirant's Wand [H]
 						i(174018),	-- Corrupted Aspirant's War Staff [H]
 						i(172887),	-- Corrupted Aspirant's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
@@ -402,9 +402,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			}),
 			n(PVP_GLADIATOR, {symselector=SymSelector.BFA_PVP_SEASON_CORRUPTED_GLADIATOR}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -425,9 +426,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = ALLIANCE_ONLY }, {
-					filter(CLOTH, {
+					filter(CLOTH, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172641),	-- Corrupted Gladiator's Silk Amice [A]
 						i(172647),	-- Corrupted Gladiator's Silk Bracers [A]
 						i(172710),	-- Corrupted Gladiator's Silk Chestwrap [A]
@@ -450,8 +449,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172561),	-- Corrupted Gladiator's Silk Treads [A]
 						i(172636),	-- Corrupted Gladiator's Silk Trousers [A]
 						i(172702),	-- Corrupted Gladiator's Silk Vestments [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172650),	-- Corrupted Gladiator's Leather Armwraps [A]
 						i(172582),	-- Corrupted Gladiator's Leather Belt [A]
 						i(172586),	-- Corrupted Gladiator's Leather Bindings [A]
@@ -474,8 +473,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172559),	-- Corrupted Gladiator's Leather Tunic [A]
 						i(172623),	-- Corrupted Gladiator's Leather Vest [A]
 						i(172646),	-- Corrupted Gladiator's Leather Waistband [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172585),	-- Corrupted Gladiator's Chain Armbands [A]
 						i(172558),	-- Corrupted Gladiator's Chain Armor [A]
 						i(172622),	-- Corrupted Gladiator's Chain Chestguard [A]
@@ -498,8 +497,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172581),	-- Corrupted Gladiator's Chain Waistguard [A]
 						i(172649),	-- Corrupted Gladiator's Chain Wristguards [A]
 						i(172712),	-- Corrupted Gladiator's Chainmail [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172584),	-- Corrupted Gladiator's Plate Armguards [A]
 						i(172703),	-- Corrupted Gladiator's Plate Armor [A]
 						i(172711),	-- Corrupted Gladiator's Plate Breastplate [A]
@@ -521,8 +520,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172648),	-- Corrupted Gladiator's Plate Vambraces [A]
 						i(172560),	-- Corrupted Gladiator's Plate Warboots [A]
 						i(172678),	-- Corrupted Gladiator's Plate Warhelm [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172754),	-- Corrupted Gladiator's Chopper [A]
 						i(172778),	-- Corrupted Gladiator's Claw [A]
 						i(172770),	-- Corrupted Gladiator's Cleaver [A]
@@ -543,11 +542,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172760),	-- Corrupted Gladiator's Wand [A]
 						i(172776),	-- Corrupted Gladiator's War Staff [A]
 						i(172752),	-- Corrupted Gladiator's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -568,9 +568,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_3_0, REMOVED_9_0_1 }, races = HORDE_ONLY }, {
-					filter(CLOTH, {
+					filter(CLOTH, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172592),	-- Corrupted Gladiator's Silk Amice [H]
 						i(172593),	-- Corrupted Gladiator's Silk Bracers [H]
 						i(172706),	-- Corrupted Gladiator's Silk Chestwrap [H]
@@ -593,8 +591,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172524),	-- Corrupted Gladiator's Silk Treads [H]
 						i(172591),	-- Corrupted Gladiator's Silk Trousers [H]
 						i(172698),	-- Corrupted Gladiator's Silk Vestments [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172602),	-- Corrupted Gladiator's Leather Armwraps [H]
 						i(172537),	-- Corrupted Gladiator's Leather Belt [H]
 						i(172538),	-- Corrupted Gladiator's Leather Bindings [H]
@@ -617,8 +615,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172531),	-- Corrupted Gladiator's Leather Tunic [H]
 						i(172595),	-- Corrupted Gladiator's Leather Vest [H]
 						i(172601),	-- Corrupted Gladiator's Leather Waistband [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172546),	-- Corrupted Gladiator's Chain Armbands [H]
 						i(172539),	-- Corrupted Gladiator's Chain Armor [H]
 						i(172603),	-- Corrupted Gladiator's Chain Chestguard [H]
@@ -641,8 +639,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172545),	-- Corrupted Gladiator's Chain Waistguard [H]
 						i(172610),	-- Corrupted Gladiator's Chain Wristguards [H]
 						i(172708),	-- Corrupted Gladiator's Chainmail [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172554),	-- Corrupted Gladiator's Plate Armguards [H]
 						i(172701),	-- Corrupted Gladiator's Plate Armor [H]
 						i(172709),	-- Corrupted Gladiator's Plate Breastplate [H]
@@ -665,8 +663,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172618),	-- Corrupted Gladiator's Plate Vambraces [H]
 						i(172549),	-- Corrupted Gladiator's Plate Warboots [H]
 						i(172677),	-- Corrupted Gladiator's Plate Warhelm [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_3_0, REMOVED_9_0_1 }},{
 						i(172746),	-- Corrupted Gladiator's Chopper [H]
 						i(172779),	-- Corrupted Gladiator's Claw [H]
 						i(172771),	-- Corrupted Gladiator's Cleaver [H]
@@ -687,7 +685,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(172761),	-- Corrupted Gladiator's Wand [H]
 						i(172766),	-- Corrupted Gladiator's War Staff [H]
 						i(172749),	-- Corrupted Gladiator's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_3_0, REMOVED_9_0_1 },
