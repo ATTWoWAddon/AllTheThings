@@ -1151,6 +1151,7 @@ namespace ATT
             Consolidate_altQuests(data);
             Consolidate_awprwp(data);
             Consolidate_Heirloom(data);
+            Consolidate_teachSpell(data);
             CheckTrackableFields(data);
             CheckRequireSkill(data);
             Consolidate_ConflictingFields(data);
@@ -1173,6 +1174,35 @@ namespace ATT
             CheckExportDataRefs(data, "OnClick");
 
             Consolidate_TrackUsage(data);
+        }
+
+        /// <summary>
+        /// Recipes flagged with '_teachSpell' (e.g. Hunter Beast Training ranks) are known through the spell which teaches them
+        /// (a Learn Spell effect whose EffectTriggerSpell is the recipe), since the character never knows the recipe's own spell.
+        /// That teaching spell is exported as 'teachSpellID'.
+        /// </summary>
+        private static void Consolidate_teachSpell(IDictionary<string, object> data)
+        {
+            if (!data.ContainsKey("_teachSpell")) return;
+            if (data.ContainsKey("teachSpellID")) return;
+            if (!data.TryGetValue("recipeID", out long recipeID) || recipeID <= 0) return;
+
+            List<long> teachSpellIDs = WagoData.Enumerate<SpellEffect>(se => se.IsLearnSpell() && se.EffectTriggerSpell == recipeID)
+                .Select(se => se.SpellID)
+                .Distinct()
+                .ToList();
+            if (teachSpellIDs.Count == 1)
+            {
+                data["teachSpellID"] = teachSpellIDs[0];
+            }
+            else if (teachSpellIDs.Count == 0)
+            {
+                LogWarn($"No Learn Spell effect teaches Recipe {recipeID}", data);
+            }
+            else
+            {
+                LogWarn($"Multiple spells {ToJSON(teachSpellIDs)} teach Recipe {recipeID}", data);
+            }
         }
 
         private static void Consolidate_VerifySourcedReferences(Data data)

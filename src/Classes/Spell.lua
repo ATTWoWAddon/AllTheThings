@@ -329,6 +329,31 @@ do
 	},
 	function(t) return t.itemID end);
 	-- onrefresh handled by Spell
+	-- Recipes the character never knows directly (e.g. Hunter Beast Training ranks) carry the spell which teaches them
+	local function GetRecipesKnownByTeachSpell()
+		local known = {}
+		for id,groups in pairs(app.GetRawFieldContainer(KEY) or app.EmptyTable) do
+			for i=1,#groups do
+				local teachSpellID = groups[i].teachSpellID
+				if teachSpellID and IsSpellKnownHelper(teachSpellID) then
+					known[id] = true
+					break
+				end
+			end
+		end
+		return known
+	end
+	app.AddEventHandler("OnRefreshCollections", function()
+		app.SetBatchCached(CACHE, GetRecipesKnownByTeachSpell(), 1)
+	end);
+	-- Learning a teaching spell (e.g. taming a beast with a new ability rank) doesn't fire NEW_RECIPE_LEARNED for the recipe
+	app.AddEventRegistration("SPELLS_CHANGED", function()
+		for id in pairs(GetRecipesKnownByTeachSpell()) do
+			if not app.IsCached(CACHE, id) then
+				app.SetThingCollected("spellID", id, false, true)
+			end
+		end
+	end);
 	-- saved vars handled by Spell
 	app.AddEventRegistration("NEW_RECIPE_LEARNED", function(spellID, rank, previousSpellID)
 		if spellID then

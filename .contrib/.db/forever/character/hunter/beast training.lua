@@ -3,7 +3,8 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 	description = "Lets the Hunter train their pet with various abilities that they have learned.",
 	classes = { HUNTER },
 	lvl = 10,
-	groups = bubbleDown({ _drop = { "requireSkill" } }, {
+	-- _teachSpell: each rank is known through the spell that teaches it to the Hunter (exported as teachSpellID).
+	groups = bubbleDown({ _drop = { "requireSkill" }, _teachSpell = true }, {
 		{
 			recipeID = 24493,	-- Arcane Resistance [Rank 1]
 			rank = 1,
