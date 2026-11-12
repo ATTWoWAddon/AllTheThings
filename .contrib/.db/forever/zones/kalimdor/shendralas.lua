@@ -4,7 +4,7 @@
 
 maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 	--lore = "",
-	--icon = ,
+	icon = 132368,
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	groups = {
 		n(ACHIEVEMENTS, {
