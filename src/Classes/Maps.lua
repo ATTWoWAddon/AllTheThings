@@ -312,16 +312,14 @@ local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
 -- API never reports it (e.g. Undercity). This is only a display check; nothing is saved to the Exploration cache.
 local IsExploredByAchievementCriteria = app.EmptyFunction
 if (app.GameBuildVersion >= 30000 or app.IsForever) and GetAchievementCriteriaInfoByID then
-	local GetAchievementCriteriaInfoByID = GetAchievementCriteriaInfoByID
 	IsExploredByAchievementCriteria = function(t)
 		local g = t.g
 		if not g then return end
 		for i=1,#g do
 			local o = g[i]
 			local criteriaID = o.criteriaID
-			local achievementID = criteriaID and (o.achID or o.achievementID)
-			if achievementID and select(3, GetAchievementCriteriaInfoByID(achievementID, o.uid or criteriaID)) then
-				return true
+			if criteriaID then
+				return o.saved
 			end
 		end
 	end
