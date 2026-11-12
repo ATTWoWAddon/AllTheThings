@@ -66,9 +66,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 				}),
 			})),
 			n(PVP_COMBATANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -110,9 +111,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(135905),	-- Vindictive Combatant's Dreadcloak [A]
 							i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece [A]
@@ -245,18 +244,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(135898),	-- Vindictive Combatant's Plate Warboots [A]
 							i(135904),	-- Vindictive Combatant's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135912),	-- Vindictive Combatant's Band [A]
 						i(135908),	-- Vindictive Combatant's Ring [A]
 						i(135916),	-- Vindictive Combatant's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135915),	-- Vindictive Combatant's Choker [A]
 						i(135907),	-- Vindictive Combatant's Necklace [A]
 						i(135911),	-- Vindictive Combatant's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135918),	-- Vindictive Combatant's Accolade of Conquest [A]
 						i(135924),	-- Vindictive Combatant's Accolade of Dominance [A]
 						i(135927),	-- Vindictive Combatant's Accolade of Victory [A]
@@ -270,11 +269,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(135919),	-- Vindictive Combatant's Insignia of Conquest [A]
 						i(135925),	-- Vindictive Combatant's Insignia of Dominance [A]
 						i(135928),	-- Vindictive Combatant's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -316,9 +316,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(136018),	-- Vindictive Combatant's Dreadcloak [H]
 							i(135930),	-- Vindictive Combatant's Dreadplate Chestpiece [H]
@@ -451,18 +449,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(136011),	-- Vindictive Combatant's Plate Warboots [H]
 							i(136017),	-- Vindictive Combatant's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136025),	-- Vindictive Combatant's Band [H]
 						i(136021),	-- Vindictive Combatant's Ring [H]
 						i(136029),	-- Vindictive Combatant's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136028),	-- Vindictive Combatant's Choker [H]
 						i(136020),	-- Vindictive Combatant's Necklace [H]
 						i(136024),	-- Vindictive Combatant's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136031),	-- Vindictive Combatant's Accolade of Conquest [H]
 						i(136037),	-- Vindictive Combatant's Accolade of Dominance [H]
 						i(136040),	-- Vindictive Combatant's Accolade of Victory [H]
@@ -476,13 +474,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(136032),	-- Vindictive Combatant's Insignia of Conquest [H]
 						i(136038),	-- Vindictive Combatant's Insignia of Dominance [H]
 						i(136041),	-- Vindictive Combatant's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 						coord = { 29.6, 75.0, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -524,9 +523,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(135679),	-- Vindictive Gladiator's Dreadcloak [A]
 							i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece [A]
@@ -659,18 +656,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(135672),	-- Vindictive Gladiator's Plate Warboots [A]
 							i(135678),	-- Vindictive Gladiator's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135686),	-- Vindictive Gladiator's Band [A]
 						i(135682),	-- Vindictive Gladiator's Ring [A]
 						i(135690),	-- Vindictive Gladiator's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135689),	-- Vindictive Gladiator's Choker [A]
 						i(135681),	-- Vindictive Gladiator's Necklace [A]
 						i(135685),	-- Vindictive Gladiator's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135692),	-- Vindictive Gladiator's Accolade of Conquest [A]
 						i(135698),	-- Vindictive Gladiator's Accolade of Dominance [A]
 						i(135701),	-- Vindictive Gladiator's Accolade of Victory [A]
@@ -684,11 +681,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(135693),	-- Vindictive Gladiator's Insignia of Conquest [A]
 						i(135699),	-- Vindictive Gladiator's Insignia of Dominance [A]
 						i(135702),	-- Vindictive Gladiator's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119486, {	-- Apothecary Lee <Legion Gladiator>
 						coord = { 56.8, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -730,9 +728,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(135792),	-- Vindictive Gladiator's Dreadcloak [H]
 							i(135704),	-- Vindictive Gladiator's Dreadplate Chestpiece [H]
@@ -865,18 +861,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(135785),	-- Vindictive Gladiator's Plate Warboots [H]
 							i(135791),	-- Vindictive Gladiator's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135799),	-- Vindictive Gladiator's Band [H]
 						i(135795),	-- Vindictive Gladiator's Ring [H]
 						i(135803),	-- Vindictive Gladiator's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135802),	-- Vindictive Gladiator's Choker [H]
 						i(135794),	-- Vindictive Gladiator's Necklace [H]
 						i(135798),	-- Vindictive Gladiator's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(135805),	-- Vindictive Gladiator's Accolade of Conquest [H]
 						i(135811),	-- Vindictive Gladiator's Accolade of Dominance [H]
 						i(135814),	-- Vindictive Gladiator's Accolade of Victory [H]
@@ -890,13 +886,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(135806),	-- Vindictive Gladiator's Insignia of Conquest [H]
 						i(135812),	-- Vindictive Gladiator's Insignia of Dominance [H]
 						i(135815),	-- Vindictive Gladiator's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 			n(PVP_ELITE, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 						coord = { 29.6, 74.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = bubbleDown({
 							sourceAchievements = {
 								11578,	-- Vindictive Elite
@@ -943,9 +940,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_7_1_0 }, races = ALLIANCE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(136131),	-- Vindictive Gladiator's Dreadcloak [A]
 							i(136043),	-- Vindictive Gladiator's Dreadplate Chestpiece [A]
@@ -1078,18 +1073,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(136124),	-- Vindictive Gladiator's Plate Warboots [A]
 							i(136130),	-- Vindictive Gladiator's Plate Wristplates [A]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136138),	-- Vindictive Gladiator's Band [A]
 						i(136134),	-- Vindictive Gladiator's Ring [A]
 						i(136142),	-- Vindictive Gladiator's Signet [A]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136141),	-- Vindictive Gladiator's Choker [A]
 						i(136133),	-- Vindictive Gladiator's Necklace [A]
 						i(136137),	-- Vindictive Gladiator's Pendant [A]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136144),	-- Vindictive Gladiator's Accolade of Conquest [A]
 						i(136150),	-- Vindictive Gladiator's Accolade of Dominance [A]
 						i(136153),	-- Vindictive Gladiator's Accolade of Victory [A]
@@ -1103,11 +1098,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(136145),	-- Vindictive Gladiator's Insignia of Conquest [A]
 						i(136151),	-- Vindictive Gladiator's Insignia of Dominance [A]
 						i(136154),	-- Vindictive Gladiator's Insignia of Victory [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_2_0 }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 						coord = { 57.0, 27.8, LEGION_DALARAN },
+						timeline = { ADDED_7_2_0 },
 						groups = bubbleDown({
 							sourceAchievements = {
 								11578,	-- Vindictive Elite
@@ -1154,9 +1150,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_0_3, REMOVED_7_1_0 }, races = HORDE_ONLY }, {
-					n(CLASSES, {
+					n(CLASSES, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						cl(DEATHKNIGHT, {
 							i(136244),	-- Vindictive Gladiator's Dreadcloak [H]
 							i(136156),	-- Vindictive Gladiator's Dreadplate Chestpiece [H]
@@ -1289,18 +1283,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							i(136237),	-- Vindictive Gladiator's Plate Warboots [H]
 							i(136243),	-- Vindictive Gladiator's Plate Wristplates [H]
 						}),
-					}),
-					filter(FINGER_F, {
+					})),
+					filter(FINGER_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136251),	-- Vindictive Gladiator's Band [H]
 						i(136247),	-- Vindictive Gladiator's Ring [H]
 						i(136255),	-- Vindictive Gladiator's Signet [H]
-					}),
-					filter(NECK_F, {
+					})),
+					filter(NECK_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136254),	-- Vindictive Gladiator's Choker [H]
 						i(136246),	-- Vindictive Gladiator's Necklace [H]
 						i(136250),	-- Vindictive Gladiator's Pendant [H]
-					}),
-					filter(TRINKET_F, {
+					})),
+					filter(TRINKET_F, with({timeline = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }},{
 						i(136257),	-- Vindictive Gladiator's Accolade of Conquest [H]
 						i(136263),	-- Vindictive Gladiator's Accolade of Dominance [H]
 						i(136266),	-- Vindictive Gladiator's Accolade of Victory [H]
@@ -1314,7 +1308,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(136258),	-- Vindictive Gladiator's Insignia of Conquest [H]
 						i(136264),	-- Vindictive Gladiator's Insignia of Dominance [H]
 						i(136267),	-- Vindictive Gladiator's Insignia of Victory [H]
-					}),
+					})),
 				})),
 			}),
 		},
