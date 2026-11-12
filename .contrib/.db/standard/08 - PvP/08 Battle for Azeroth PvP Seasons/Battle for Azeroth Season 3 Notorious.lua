@@ -60,9 +60,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -83,15 +84,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167536),	-- Notorious Aspirant's Cape [A]
 						i(167535),	-- Notorious Aspirant's Drape [A]
 						i(167534),	-- Notorious Aspirant's Greatcloak [A]
 						i(167533),	-- Notorious Aspirant's Shawl [A]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167514),	-- Notorious Aspirant's Silk Cord [A]
 						i(167517),	-- Notorious Aspirant's Silk Cuffs [A]
 						i(167500),	-- Notorious Aspirant's Silk Gloves [A]
@@ -100,8 +99,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167511),	-- Notorious Aspirant's Silk Mantle [A]
 						i(167490),	-- Notorious Aspirant's Silk Robe [A]
 						i(167495),	-- Notorious Aspirant's Silk Treads [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167516),	-- Notorious Aspirant's Leather Belt [A]
 						i(167520),	-- Notorious Aspirant's Leather Bindings [A]
 						i(167497),	-- Notorious Aspirant's Leather Boots [A]
@@ -110,8 +109,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167508),	-- Notorious Aspirant's Leather Legguards [A]
 						i(167509),	-- Notorious Aspirant's Leather Spaulders [A]
 						i(167493),	-- Notorious Aspirant's Leather Tunic [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167519),	-- Notorious Aspirant's Chain Armbands [A]
 						i(167492),	-- Notorious Aspirant's Chain Armor [A]
 						i(167501),	-- Notorious Aspirant's Chain Gauntlets [A]
@@ -120,8 +119,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167496),	-- Notorious Aspirant's Chain Sabatons [A]
 						i(167512),	-- Notorious Aspirant's Chain Spaulders [A]
 						i(167515),	-- Notorious Aspirant's Chain Waistguard [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167518),	-- Notorious Aspirant's Plate Armguards [A]
 						i(167491),	-- Notorious Aspirant's Plate Chestpiece [A]
 						i(167499),	-- Notorious Aspirant's Plate Gauntlets [A]
@@ -130,8 +129,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167505),	-- Notorious Aspirant's Plate Legguards [A]
 						i(167510),	-- Notorious Aspirant's Plate Pauldrons [A]
 						i(167494),	-- Notorious Aspirant's Plate Warboots [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(169756),	-- Notorious Aspirant's Blade [A]
 						i(169754),	-- Notorious Aspirant's Cutter [A]
 						i(169748),	-- Notorious Aspirant's Gavel [A]
@@ -147,11 +146,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(169740),	-- Notorious Aspirant's Staff [A]
 						i(169738),	-- Notorious Aspirant's Wand [A]
 						i(170080),	-- Notorious Aspirant's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -172,15 +172,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167532),	-- Notorious Aspirant's Cape [H]
 						i(167531),	-- Notorious Aspirant's Drape [H]
 						i(167530),	-- Notorious Aspirant's Greatcloak [H]
 						i(167529),	-- Notorious Aspirant's Shawl [H]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167463),	-- Notorious Aspirant's Silk Cuffs [H]
 						i(167459),	-- Notorious Aspirant's Silk Gloves [H]
 						i(167460),	-- Notorious Aspirant's Silk Hood [H]
@@ -189,8 +187,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167457),	-- Notorious Aspirant's Silk Robe [H]
 						i(167458),	-- Notorious Aspirant's Silk Treads [H]
 						i(167464),	-- Notorious Aspirant's Silk Cord [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167471),	-- Notorious Aspirant's Leather Belt [H]
 						i(167472),	-- Notorious Aspirant's Leather Bindings [H]
 						i(167466),	-- Notorious Aspirant's Leather Boots [H]
@@ -199,8 +197,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167469),	-- Notorious Aspirant's Leather Legguards [H]
 						i(167470),	-- Notorious Aspirant's Leather Spaulders [H]
 						i(167465),	-- Notorious Aspirant's Leather Tunic [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167480),	-- Notorious Aspirant's Chain Armbands [H]
 						i(167473),	-- Notorious Aspirant's Chain Armor [H]
 						i(167475),	-- Notorious Aspirant's Chain Gauntlets [H]
@@ -209,8 +207,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167474),	-- Notorious Aspirant's Chain Sabatons [H]
 						i(167478),	-- Notorious Aspirant's Chain Spaulders [H]
 						i(167479),	-- Notorious Aspirant's Chain Waistguard [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167488),	-- Notorious Aspirant's Plate Armguards [H]
 						i(167482),	-- Notorious Aspirant's Plate Chestpiece [H]
 						i(167484),	-- Notorious Aspirant's Plate Gauntlets [H]
@@ -219,8 +217,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167485),	-- Notorious Aspirant's Plate Legguards [H]
 						i(167486),	-- Notorious Aspirant's Plate Pauldrons [H]
 						i(167483),	-- Notorious Aspirant's Plate Warboots [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(169757),	-- Notorious Aspirant's Blade [H]
 						i(169755),	-- Notorious Aspirant's Cutter [H]
 						i(169749),	-- Notorious Aspirant's Gavel [H]
@@ -236,7 +234,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(169741),	-- Notorious Aspirant's Staff [H]
 						i(169739),	-- Notorious Aspirant's Wand [H]
 						i(170082),	-- Notorious Aspirant's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_2_0, REMOVED_8_3_0 },
@@ -255,9 +253,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -278,15 +277,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = ALLIANCE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167373),	-- Notorious Gladiator's Cape [A]
 						i(167372),	-- Notorious Gladiator's Drape [A]
 						i(167371),	-- Notorious Gladiator's Greatcloak [A]
 						i(167370),	-- Notorious Gladiator's Shawl [A]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167352),	-- Notorious Gladiator's Silk Amice [A]
 						i(167429),	-- Notorious Gladiator's Silk Armor [A]
 						i(167358),	-- Notorious Gladiator's Silk Bracers [A]
@@ -312,8 +309,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167272),	-- Notorious Gladiator's Silk Treads [A]
 						i(167347),	-- Notorious Gladiator's Silk Trousers [A]
 						i(167413),	-- Notorious Gladiator's Silk Vestments [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167361),	-- Notorious Gladiator's Leather Armwraps [A]
 						i(167293),	-- Notorious Gladiator's Leather Belt [A]
 						i(167297),	-- Notorious Gladiator's Leather Bindings [A]
@@ -339,8 +336,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167270),	-- Notorious Gladiator's Leather Tunic [A]
 						i(167334),	-- Notorious Gladiator's Leather Vest [A]
 						i(167357),	-- Notorious Gladiator's Leather Waistband [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167296),	-- Notorious Gladiator's Chain Armbands [A]
 						i(167269),	-- Notorious Gladiator's Chain Armor [A]
 						i(167333),	-- Notorious Gladiator's Chain Chestguard [A]
@@ -366,8 +363,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167292),	-- Notorious Gladiator's Chain Waistguard [A]
 						i(167360),	-- Notorious Gladiator's Chain Wristguards [A]
 						i(167423),	-- Notorious Gladiator's Chainmail [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167295),	-- Notorious Gladiator's Plate Armguards [A]
 						i(167414),	-- Notorious Gladiator's Plate Armor [A]
 						i(167422),	-- Notorious Gladiator's Plate Breastplate [A]
@@ -393,8 +390,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167271),	-- Notorious Gladiator's Plate Warboots [A]
 						i(167389),	-- Notorious Gladiator's Plate Warhelm [A]
 						i(167454),	-- Notorious Gladiator's Shoulderplates [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(169720),	-- Notorious Gladiator's Bonegrinder [A]
 						i(169712),	-- Notorious Gladiator's Chopper [A]
 						i(171160),	-- Notorious Gladiator's Claw [A]
@@ -412,11 +409,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(171156),	-- Notorious Gladiator's Trident [A]
 						i(169718),	-- Notorious Gladiator's Wand [A]
 						i(169710),	-- Notorious Gladiator's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -437,15 +435,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_2_0, REMOVED_8_3_0 }, races = HORDE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167369),	-- Notorious Gladiator's Cape [H]
 						i(167368),	-- Notorious Gladiator's Drape [H]
 						i(167367),	-- Notorious Gladiator's Greatcloak [H]
 						i(167366),	-- Notorious Gladiator's Shawl [H]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167303),	-- Notorious Gladiator's Silk Amice [H]
 						i(167425),	-- Notorious Gladiator's Silk Armor [H]
 						i(167304),	-- Notorious Gladiator's Silk Bracers [H]
@@ -471,8 +467,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167235),	-- Notorious Gladiator's Silk Treads [H]
 						i(167302),	-- Notorious Gladiator's Silk Trousers [H]
 						i(167409),	-- Notorious Gladiator's Silk Vestments [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167313),	-- Notorious Gladiator's Leather Armwraps [H]
 						i(167248),	-- Notorious Gladiator's Leather Belt [H]
 						i(167249),	-- Notorious Gladiator's Leather Bindings [H]
@@ -498,8 +494,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167242),	-- Notorious Gladiator's Leather Tunic [H]
 						i(167306),	-- Notorious Gladiator's Leather Vest [H]
 						i(167312),	-- Notorious Gladiator's Leather Waistband [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167257),	-- Notorious Gladiator's Chain Armbands [H]
 						i(167250),	-- Notorious Gladiator's Chain Armor [H]
 						i(167314),	-- Notorious Gladiator's Chain Chestguard [H]
@@ -525,8 +521,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167256),	-- Notorious Gladiator's Chain Waistguard [H]
 						i(167321),	-- Notorious Gladiator's Chain Wristguards [H]
 						i(167419),	-- Notorious Gladiator's Chainmail [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(167265),	-- Notorious Gladiator's Plate Armguards [H]
 						i(167412),	-- Notorious Gladiator's Plate Armor [H]
 						i(167420),	-- Notorious Gladiator's Plate Breastplate [H]
@@ -552,8 +548,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(167260),	-- Notorious Gladiator's Plate Warboots [H]
 						i(167388),	-- Notorious Gladiator's Plate Warhelm [H]
 						i(167452),	-- Notorious Gladiator's Shoulderplates [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_2_0, REMOVED_8_3_0 }},{
 						i(169721),	-- Notorious Gladiator's Bonegrinder [H]
 						i(169704),	-- Notorious Gladiator's Chopper [H]
 						i(171161),	-- Notorious Gladiator's Claw [H]
@@ -571,7 +567,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(171154),	-- Notorious Gladiator's Staff [H]
 						i(169719),	-- Notorious Gladiator's Wand [H]
 						i(169707),	-- Notorious Gladiator's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_2_0, REMOVED_8_3_0 },

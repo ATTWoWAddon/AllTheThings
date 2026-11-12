@@ -65,9 +65,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					coord = { 29.6, 75.0, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						cost = { { "i", MOH, 12 } },
 					}, {
@@ -109,9 +110,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(149505),	-- Fierce Combatant's Dreadcloak [A]
 						i(149529),	-- Fierce Combatant's Dreadplate Chestpiece [A]
@@ -244,18 +243,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(149738),	-- Fierce Combatant's Plate Warboots [A]
 						i(149750),	-- Fierce Combatant's Plate Wristplates [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149666),	-- Fierce Combatant's Band [A]
 					i(149664),	-- Fierce Combatant's Ring [A]
 					i(149668),	-- Fierce Combatant's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149630),	-- Fierce Combatant's Choker [A]
 					i(149626),	-- Fierce Combatant's Necklace [A]
 					i(149628),	-- Fierce Combatant's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149704),	-- Fierce Combatant's Accolade of Conquest [A]
 					i(149710),	-- Fierce Combatant's Accolade of Dominance [A]
 					i(149716),	-- Fierce Combatant's Accolade of Victory [A]
@@ -265,11 +264,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149706),	-- Fierce Combatant's Insignia of Conquest [A]
 					i(149712),	-- Fierce Combatant's Insignia of Dominance [A]
 					i(149718),	-- Fierce Combatant's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					coord = { 56.8, 27.8, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						cost = { { "i", MOH, 12 } },
 					}, {
@@ -311,9 +311,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(149506),	-- Fierce Combatant's Dreadcloak [H]
 						i(149530),	-- Fierce Combatant's Dreadplate Chestpiece [H]
@@ -446,18 +444,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(149739),	-- Fierce Combatant's Plate Warboots [H]
 						i(149751),	-- Fierce Combatant's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149667),	-- Fierce Combatant's Band [H]
 					i(149665),	-- Fierce Combatant's Ring [H]
 					i(149669),	-- Fierce Combatant's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149631),	-- Fierce Combatant's Choker [H]
 					i(149627),	-- Fierce Combatant's Necklace [H]
 					i(149629),	-- Fierce Combatant's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(149705),	-- Fierce Combatant's Accolade of Conquest [H]
 					i(149711),	-- Fierce Combatant's Accolade of Dominance [H]
 					i(149717),	-- Fierce Combatant's Accolade of Victory [H]
@@ -467,7 +465,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(149707),	-- Fierce Combatant's Insignia of Conquest [H]
 					i(149713),	-- Fierce Combatant's Insignia of Dominance [H]
 					i(149719),	-- Fierce Combatant's Insignia of Victory [H]
-				}),
+				})),
 			})),
 			n(FACTION_HEADER_NEUTRAL, timelineSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
 				filter(RELICS_F, {
@@ -505,9 +503,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					coord = { 29.6, 75.0, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						cost = { { "i", MOH, 12 } },
 					}, {
@@ -549,9 +548,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(147909),	-- Fierce Gladiator's Dreadcloak [A]
 						i(147933),	-- Fierce Gladiator's Dreadplate Chestpiece [A]
@@ -684,18 +681,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148141),	-- Fierce Gladiator's Plate Warboots [A]
 						i(148153),	-- Fierce Gladiator's Plate Wristplates [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148069),	-- Fierce Gladiator's Band [A]
 					i(148067),	-- Fierce Gladiator's Ring [A]
 					i(148071),	-- Fierce Gladiator's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148033),	-- Fierce Gladiator's Choker [A]
 					i(148029),	-- Fierce Gladiator's Necklace [A]
 					i(148031),	-- Fierce Gladiator's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148107),	-- Fierce Gladiator's Accolade of Conquest [A]
 					i(148113),	-- Fierce Gladiator's Accolade of Dominance [A]
 					i(148119),	-- Fierce Gladiator's Accolade of Victory [A]
@@ -705,11 +702,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148109),	-- Fierce Gladiator's Insignia of Conquest [A]
 					i(148115),	-- Fierce Gladiator's Insignia of Dominance [A]
 					i(148121),	-- Fierce Gladiator's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					coord = { 56.8, 27.8, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						cost = { { "i", MOH, 12 } },
 					}, {
@@ -751,9 +749,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(147910),	-- Fierce Gladiator's Dreadcloak [H]
 						i(147934),	-- Fierce Gladiator's Dreadplate Chestpiece [H]
@@ -886,18 +882,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148142),	-- Fierce Gladiator's Plate Warboots [H]
 						i(148154),	-- Fierce Gladiator's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148070),	-- Fierce Gladiator's Band [H]
 					i(148068),	-- Fierce Gladiator's Ring [H]
 					i(148072),	-- Fierce Gladiator's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148034),	-- Fierce Gladiator's Choker [H]
 					i(148030),	-- Fierce Gladiator's Necklace [H]
 					i(148032),	-- Fierce Gladiator's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148108),	-- Fierce Gladiator's Accolade of Conquest [H]
 					i(148114),	-- Fierce Gladiator's Accolade of Dominance [H]
 					i(148120),	-- Fierce Gladiator's Accolade of Victory [H]
@@ -907,13 +903,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148110),	-- Fierce Gladiator's Insignia of Conquest [H]
 					i(148116),	-- Fierce Gladiator's Insignia of Dominance [H]
 					i(148122),	-- Fierce Gladiator's Insignia of Victory [H]
-				}),
+				})),
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					coord = { 29.6, 74.8, LEGION_DALARAN },
+					timeline = { ADDED_7_3_0 },
 					groups = sharedData({
 						u = ELITE_PVP_REQUIREMENT,
 					}, {
@@ -931,10 +928,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					coord = { 29.6, 74.8, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						sourceAchievements = {
 							12090,	-- Fierce Elite
@@ -982,9 +978,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = ALLIANCE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(148155),	-- Fierce Gladiator's Dreadcloak [A]
 						i(148179),	-- Fierce Gladiator's Dreadplate Chestpiece [A]
@@ -1117,18 +1111,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148387),	-- Fierce Gladiator's Plate Warboots [A]
 						i(148399),	-- Fierce Gladiator's Plate Wristplates [A]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148315),	-- Fierce Gladiator's Band [A]
 					i(148313),	-- Fierce Gladiator's Ring [A]
 					i(148317),	-- Fierce Gladiator's Signet [A]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148279),	-- Fierce Gladiator's Choker [A]
 					i(148275),	-- Fierce Gladiator's Necklace [A]
 					i(148277),	-- Fierce Gladiator's Pendant [A]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148353),	-- Fierce Gladiator's Accolade of Conquest [A]
 					i(148359),	-- Fierce Gladiator's Accolade of Dominance [A]
 					i(148365),	-- Fierce Gladiator's Accolade of Victory [A]
@@ -1138,11 +1132,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148355),	-- Fierce Gladiator's Insignia of Conquest [A]
 					i(148361),	-- Fierce Gladiator's Insignia of Dominance [A]
 					i(148367),	-- Fierce Gladiator's Insignia of Victory [A]
-				}),
+				})),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0 }, races = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					coord = { 57.0, 27.8, LEGION_DALARAN },
+					timeline = { ADDED_7_3_0 },
 					groups = sharedData({
 						u = ELITE_PVP_REQUIREMENT,
 					}, {
@@ -1160,10 +1155,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_0_1_LAUNCH }, races = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					coord = { 57.0, 27.8, LEGION_DALARAN },
+					timeline = { ADDED_8_0_1_LAUNCH },
 					groups = sharedData({
 						sourceAchievements = {
 							12090,	-- Fierce Elite
@@ -1211,9 +1205,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						}),
 					}),
 				}),
-			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 }, races = HORDE_ONLY }, {
-				n(CLASSES, {
+				n(CLASSES, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					cl(DEATHKNIGHT, {
 						i(148156),	-- Fierce Gladiator's Dreadcloak [H]
 						i(148180),	-- Fierce Gladiator's Dreadplate Chestpiece [H]
@@ -1346,18 +1338,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(148388),	-- Fierce Gladiator's Plate Warboots [H]
 						i(148400),	-- Fierce Gladiator's Plate Wristplates [H]
 					}),
-				}),
-				filter(FINGER_F, {
+				})),
+				filter(FINGER_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148316),	-- Fierce Gladiator's Band [H]
 					i(148314),	-- Fierce Gladiator's Ring [H]
 					i(148318),	-- Fierce Gladiator's Signet [H]
-				}),
-				filter(NECK_F, {
+				})),
+				filter(NECK_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148280),	-- Fierce Gladiator's Choker [H]
 					i(148276),	-- Fierce Gladiator's Necklace [H]
 					i(148278),	-- Fierce Gladiator's Pendant [H]
-				}),
-				filter(TRINKET_F, {
+				})),
+				filter(TRINKET_F, with({timeline = { ADDED_7_3_0, REMOVED_7_3_2 }},{
 					i(148354),	-- Fierce Gladiator's Accolade of Conquest [H]
 					i(148360),	-- Fierce Gladiator's Accolade of Dominance [H]
 					i(148366),	-- Fierce Gladiator's Accolade of Victory [H]
@@ -1367,7 +1359,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148356),	-- Fierce Gladiator's Insignia of Conquest [H]
 					i(148362),	-- Fierce Gladiator's Insignia of Dominance [H]
 					i(148368),	-- Fierce Gladiator's Insignia of Victory [H]
-				}),
+				})),
 			})),
 		}),
 	})),

@@ -61,9 +61,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				},
 			}),
 			n(PVP_ASPIRANT, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -84,15 +85,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165216),	-- Sinister Aspirant's Cape [A]
 						i(165215),	-- Sinister Aspirant's Drape [A]
 						i(165214),	-- Sinister Aspirant's Greatcloak [A]
 						i(165213),	-- Sinister Aspirant's Shawl [A]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165121),	-- Sinister Aspirant's Cuffs [A]
 						i(165118),	-- Sinister Aspirant's Cord [A]
 						i(165104),	-- Sinister Aspirant's Gloves [A]
@@ -101,8 +100,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165115),	-- Sinister Aspirant's Mantle [A]
 						i(165094),	-- Sinister Aspirant's Robe [A]
 						i(165099),	-- Sinister Aspirant's Treads [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165120),	-- Sinister Aspirant's Belt [A]
 						i(165124),	-- Sinister Aspirant's Bindings [A]
 						i(165101),	-- Sinister Aspirant's Boots [A]
@@ -111,8 +110,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165112),	-- Sinister Aspirant's Legguards [A]
 						i(165113),	-- Sinister Aspirant's Spaulders [A]
 						i(165097),	-- Sinister Aspirant's Tunic [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165123),	-- Sinister Aspirant's Chain Armbands [A]
 						i(165096),	-- Sinister Aspirant's Chain Armor [A]
 						i(165105),	-- Sinister Aspirant's Chain Gauntlets [A]
@@ -121,8 +120,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165100),	-- Sinister Aspirant's Chain Sabatons [A]
 						i(165116),	-- Sinister Aspirant's Chain Spaulders [A]
 						i(165119),	-- Sinister Aspirant's Chain Waistguard [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165122),	-- Sinister Aspirant's Plate Armguards [A]
 						i(165095),	-- Sinister Aspirant's Plate Chestpiece [A]
 						i(165103),	-- Sinister Aspirant's Plate Gauntlets [A]
@@ -131,8 +130,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165109),	-- Sinister Aspirant's Plate Legguards [A]
 						i(165114),	-- Sinister Aspirant's Plate Pauldrons [A]
 						i(165098),	-- Sinister Aspirant's Plate Warboots [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165206),	-- Sinister Aspirant's Bonecracker [A]
 						i(166478),	-- Sinister Aspirant's Greatsword [A]
 						i(165208),	-- Sinister Aspirant's Longbow [A]
@@ -145,11 +144,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(166903),	-- Sinister Aspirant's Slicer [A]
 						i(165200),	-- Sinister Aspirant's Staff [A]
 						i(165204),	-- Sinister Aspirant's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -170,15 +170,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165212),	-- Sinister Aspirant's Cape [H]
 						i(165211),	-- Sinister Aspirant's Drape [H]
 						i(165210),	-- Sinister Aspirant's Greatcloak [H]
 						i(165209),	-- Sinister Aspirant's Shawl [H]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165068),	-- Sinister Aspirant's Cuffs [H]
 						i(165067),	-- Sinister Aspirant's Cord [H]
 						i(165063),	-- Sinister Aspirant's Gloves [H]
@@ -187,8 +185,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165066),	-- Sinister Aspirant's Mantle [H]
 						i(165061),	-- Sinister Aspirant's Robe [H]
 						i(165062),	-- Sinister Aspirant's Treads [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165075),	-- Sinister Aspirant's Belt [H]
 						i(165076),	-- Sinister Aspirant's Bindings [H]
 						i(165070),	-- Sinister Aspirant's Boots [H]
@@ -197,8 +195,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165073),	-- Sinister Aspirant's Legguards [H]
 						i(165074),	-- Sinister Aspirant's Spaulders [H]
 						i(165069),	-- Sinister Aspirant's Tunic [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165084),	-- Sinister Aspirant's Chain Armbands [H]
 						i(165077),	-- Sinister Aspirant's Chain Armor [H]
 						i(165079),	-- Sinister Aspirant's Chain Gauntlets [H]
@@ -207,8 +205,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165078),	-- Sinister Aspirant's Chain Sabatons [H]
 						i(165082),	-- Sinister Aspirant's Chain Spaulders [H]
 						i(165083),	-- Sinister Aspirant's Chain Waistguard [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165092),	-- Sinister Aspirant's Plate Armguards [H]
 						i(165086),	-- Sinister Aspirant's Plate Chestpiece [H]
 						i(165088),	-- Sinister Aspirant's Plate Gauntlets [H]
@@ -217,8 +215,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165089),	-- Sinister Aspirant's Plate Legguards [H]
 						i(165090),	-- Sinister Aspirant's Plate Pauldrons [H]
 						i(165087),	-- Sinister Aspirant's Plate Warboots [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(166902),	-- Sinister Aspirant's Bonecracker [H]
 						i(165195),	-- Sinister Aspirant's Greatsword [H]
 						i(166812),	-- Sinister Aspirant's Mageblade [H]
@@ -231,7 +229,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165192),	-- Sinister Aspirant's Slicer [H]
 						i(165197),	-- Sinister Aspirant's Staff [H]
 						i(165193),	-- Sinister Aspirant's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
@@ -250,9 +248,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = ALLIANCE_ONLY }, {
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ races = ALLIANCE_ONLY }, {
 					n(143560, {	-- Marshal Gabriel <Second-in-Command>
 						coord = { 56.4, 25.8, BORALUS },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -273,15 +272,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = ALLIANCE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165051),	-- Sinister Gladiator's Cape [A]
 						i(165050),	-- Sinister Gladiator's Drape [A]
 						i(165049),	-- Sinister Gladiator's Greatcloak [A]
 						i(165048),	-- Sinister Gladiator's Shawl [A]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164897),	-- Sinister Gladiator's Silk Amice [A]
 						i(164903),	-- Sinister Gladiator's Silk Bracers [A]
 						i(166626),	-- Sinister Gladiator's Silk Chestwrap [A]
@@ -304,8 +301,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164817),	-- Sinister Gladiator's Silk Treads [A]
 						i(164892),	-- Sinister Gladiator's Silk Trousers [A]
 						i(166618),	-- Sinister Gladiator's Silk Vestments [A]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164906),	-- Sinister Gladiator's Leather Armwraps [A]
 						i(164838),	-- Sinister Gladiator's Leather Belt [A]
 						i(164842),	-- Sinister Gladiator's Leather Bindings [A]
@@ -328,8 +325,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164815),	-- Sinister Gladiator's Leather Tunic [A]
 						i(164879),	-- Sinister Gladiator's Leather Vest [A]
 						i(164902),	-- Sinister Gladiator's Leather Waistband [A]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164841),	-- Sinister Gladiator's Chain Armbands [A]
 						i(164814),	-- Sinister Gladiator's Chain Armor [A]
 						i(164878),	-- Sinister Gladiator's Chain Chestguard [A]
@@ -352,8 +349,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164837),	-- Sinister Gladiator's Chain Waistguard [A]
 						i(164905),	-- Sinister Gladiator's Chain Wristguards [A]
 						i(166628),	-- Sinister Gladiator's Chainmail [A]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164840),	-- Sinister Gladiator's Plate Armguards [A]
 						i(166619),	-- Sinister Gladiator's Plate Armor [A]
 						i(166627),	-- Sinister Gladiator's Plate Breastplate [A]
@@ -376,8 +373,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164904),	-- Sinister Gladiator's Plate Vambraces [A]
 						i(164816),	-- Sinister Gladiator's Plate Warboots [A]
 						i(166594),	-- Sinister Gladiator's Plate Warhelm [A]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165041),	-- Sinister Gladiator's Bonecracker [A]
 						i(166479),	-- Sinister Gladiator's Greatsword [A]
 						i(165043),	-- Sinister Gladiator's Longbow [A]
@@ -390,11 +387,12 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(166901),	-- Sinister Gladiator's Slicer [A]
 						i(165035),	-- Sinister Gladiator's Staff [A]
 						i(165039),	-- Sinister Gladiator's Warglaive [A]
-					}),
+					})),
 				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_9_0_2_LAUNCH }, races = HORDE_ONLY }, {
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ races = HORDE_ONLY }, {
 					n(143555, {	-- Xander Silberman <War Effort Coordinator>
 						coord = { 51.6, 58.2, ZULDAZAR },
+						timeline = { ADDED_9_0_2_LAUNCH },
 						groups = sharedData({
 							cost = { { "i", MOH, 12 } },
 						}, {
@@ -415,15 +413,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 							}),
 						}),
 					}),
-				})),
-				n(FACTION_HEADER_HORDE, bubbleDownSelf({ timeline = { ADDED_8_1_0, REMOVED_8_2_0 }, races = HORDE_ONLY }, {
-					filter(BACK_F, {
+					filter(BACK_F, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(165047),	-- Sinister Gladiator's Cape [H]
 						i(165046),	-- Sinister Gladiator's Drape [H]
 						i(165045),	-- Sinister Gladiator's Greatcloak [H]
 						i(165044),	-- Sinister Gladiator's Shawl [H]
-					}),
-					filter(CLOTH, {
+					})),
+					filter(CLOTH, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164848),	-- Sinister Gladiator's Silk Amice [H]
 						i(164849),	-- Sinister Gladiator's Silk Bracers [H]
 						i(166622),	-- Sinister Gladiator's Silk Chestwrap [H]
@@ -446,8 +442,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164780),	-- Sinister Gladiator's Silk Treads [H]
 						i(164847),	-- Sinister Gladiator's Silk Trousers [H]
 						i(166614),	-- Sinister Gladiator's Silk Vestments [H]
-					}),
-					filter(LEATHER, {
+					})),
+					filter(LEATHER, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164858),	-- Sinister Gladiator's Leather Armwraps [H]
 						i(164793),	-- Sinister Gladiator's Leather Belt [H]
 						i(164794),	-- Sinister Gladiator's Leather Bindings [H]
@@ -470,8 +466,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164787),	-- Sinister Gladiator's Leather Tunic [H]
 						i(164851),	-- Sinister Gladiator's Leather Vest [H]
 						i(164857),	-- Sinister Gladiator's Leather Waistband [H]
-					}),
-					filter(MAIL, {
+					})),
+					filter(MAIL, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164802),	-- Sinister Gladiator's Chain Armbands [H]
 						i(164795),	-- Sinister Gladiator's Chain Armor [H]
 						i(164859),	-- Sinister Gladiator's Chain Chestguard [H]
@@ -494,8 +490,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164801),	-- Sinister Gladiator's Chain Waistguard [H]
 						i(164866),	-- Sinister Gladiator's Chain Wristguards [H]
 						i(166624),	-- Sinister Gladiator's Chainmail [H]
-					}),
-					filter(PLATE, {
+					})),
+					filter(PLATE, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(164810),	-- Sinister Gladiator's Plate Armguards [H]
 						i(166617),	-- Sinister Gladiator's Plate Armor [H]
 						i(166625),	-- Sinister Gladiator's Plate Breastplate [H]
@@ -518,8 +514,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(164874),	-- Sinister Gladiator's Plate Vambraces [H]
 						i(164805),	-- Sinister Gladiator's Plate Warboots [H]
 						i(166593),	-- Sinister Gladiator's Plate Warhelm [H]
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, with({timeline = { ADDED_8_1_0, REMOVED_8_2_0 }},{
 						i(166900),	-- Sinister Gladiator's Bonecracker [H]
 						i(165030),	-- Sinister Gladiator's Greatsword [H]
 						i(166813),	-- Sinister Gladiator's Mageblade [H]
@@ -532,7 +528,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 						i(165027),	-- Sinister Gladiator's Slicer [H]
 						i(165032),	-- Sinister Gladiator's Staff [H]
 						i(165028),	-- Sinister Gladiator's Warglaive [H]
-					}),
+					})),
 				})),
 				n(FACTION_HEADER_NEUTRAL, {
 					timeline = { ADDED_8_1_0, REMOVED_8_2_0 },
