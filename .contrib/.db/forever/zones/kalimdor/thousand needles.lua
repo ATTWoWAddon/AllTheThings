@@ -326,21 +326,21 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 							{ "i",  12765 },	-- Secret Note #1
 							{ "o", 176344 },	-- Document Chest #1
 						},
-						coord = { 32.0, 33.0, MAP.THOUSAND_NEEDLES },
+						coord = { 31.8, 32.4, MAP.THOUSAND_NEEDLES },
 					}),
 					objective(2, {	-- 0/1 Secret Note #2
 						providers = {
 							{ "i",  12766 },	-- Secret Note #2
-							{ "o", 190483 },	-- Document Chest #2
+							{ "o", 654507 },	-- Document Chest #2
 						},
-						coord = { 34.0, 39.0, MAP.THOUSAND_NEEDLES },
+						coord = { 33.8, 39.9, MAP.THOUSAND_NEEDLES },
 					}),
 					objective(3, {	-- 0/1 Secret Note #3
 						providers = {
 							{ "i",  12768 },	-- Secret Note #3
-							{ "o", 190484 },	-- Document Chest #3
+							{ "o", 654508 },	-- Document Chest #3
 						},
-						coord = { 39.0, 41.0, MAP.THOUSAND_NEEDLES },
+						coord = { 39.3, 41.4, MAP.THOUSAND_NEEDLES },
 					}),
 					i(15457),	-- Desert Shoulders
 					i(15458),	-- Tundra Boots

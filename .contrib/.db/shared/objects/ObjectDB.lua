@@ -348801,6 +348801,32 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "充能水晶導體",
 		},
 	},
+	[654507] = {
+		readable = "Document Chest",
+		model = 196976,
+		text = {
+			en = "Document Chest",
+			es = "Cofre de documentos",
+			de = "Dokumententruhe",
+			fr = "Coffre de documents",
+			pt = "Baú de Documentos",
+			ru = "Ящик с документами",
+			cn = "文件箱",
+		},
+	},
+	[654508] = {
+		readable = "Document Chest",
+		model = 196976,
+		text = {
+			en = "Document Chest",
+			es = "Cofre de documentos",
+			de = "Dokumententruhe",
+			fr = "Coffre de documents",
+			pt = "Baú de Documentos",
+			ru = "Ящик с документами",
+			cn = "文件箱",
+		},
+	},
 	[654586] = {
 		readable = "Worn Tablet",
 		model = 6212412,
