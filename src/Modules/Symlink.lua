@@ -1122,3 +1122,86 @@ app.AddEventHandler("OnLoad", function()
 		SettingsTooltip = app.L.FILL_OBJECT_DATA_CHECKBOX_TOOLTIP,
 	})
 end)
+
+-- SymSelector References
+-- Lists the groups which pull in a symselector header through their 'sym' (e.g. the vendors which select a shared
+-- vendor armor set): in the popout of that header and of the Things under it, and (via AllTheThings.lua) as the
+-- Source Locations in the tooltip of the header itself.
+do
+	local GetRawField = app.GetRawField
+	-- How far up the parent chain a Thing can be from the header carrying the symselector
+	local MAX_SELECTOR_DEPTH = 4
+
+	-- Returns the groups which select the given symselector (or nil)
+	local function GetSymSelectorReferences(symselector)
+		return symselector and GetRawField("symselectorRef", symselector)
+	end
+	api.GetSymSelectorReferences = GetSymSelectorReferences
+
+	-- Returns the unique groups which select a symselector on the given group, its Sourced copies, or their parents (or nil)
+	local function GetReferencesForGroup(group)
+		local objects = { group }
+		local key = group.key
+		if key and group[key] then
+			app.ArrayAppend(objects, GetRawField(key, group[key]))
+		end
+		-- Items may be keyed by modItemID while their Sources are cached by itemID
+		if key ~= "itemID" and group.itemID then
+			app.ArrayAppend(objects, GetRawField("itemID", group.itemID))
+		end
+		local refs, seen, o, depth, selected
+		for i=1,#objects do
+			o, depth = objects[i], 0
+			while o and depth <= MAX_SELECTOR_DEPTH do
+				selected = GetSymSelectorReferences(o.symselector)
+				if selected then
+					for j=1,#selected do
+						local ref = selected[j]
+						if not seen then refs, seen = {}, {} end
+						if not seen[ref] then
+							seen[ref] = true
+							refs[#refs + 1] = ref
+						end
+					end
+				end
+				o, depth = o.parent, depth + 1
+			end
+		end
+		return refs
+	end
+	api.GetReferencesForGroup = GetReferencesForGroup
+
+	-- Popout: add a header listing the groups which select this Thing's (or its header's) symselector
+	app.AddEventHandler("OnNewPopoutGroup", function(group)
+		local refs = GetReferencesForGroup(group)
+		if not refs then return end
+		local header = app.CreateRawText(app.L.SYMSELECTOR_REFERENCES or "Also Available From", {
+			description = app.L.SYMSELECTOR_REFERENCES_DESC,
+			icon = 133784,
+			OnUpdate = app.AlwaysShowUpdate,
+			OnClick = app.UI.OnClick.IgnoreRightClick,
+			sourceIgnored = true,
+			skipFull = true,
+			SortPriority = -2.5,
+			g = {},
+		})
+		local clone, ref
+		local showAll = app.MODE_DEBUG_OR_ACCOUNT
+		for i=1,#refs do
+			ref = refs[i]
+			-- skip the ones for another race/faction unless showing everything (Account/Debug mode)
+			if showAll or not GetRelativeValue(ref, "nmr") then
+				-- the referencing group only, without its own contents or links (which would just repeat this Thing)
+				clone = app.CloneObject(ref, true)
+				clone.g = nil
+				clone.sym = nil
+				clone.parent = header
+				-- without contents the row would be hidden as empty
+				clone.OnUpdate = app.AlwaysShowUpdate
+				header.g[#header.g + 1] = clone
+			end
+		end
+		if #header.g == 0 then return end
+		app.NestObject(group, header, nil, 1)
+	end)
+end

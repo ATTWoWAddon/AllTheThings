@@ -503,11 +503,60 @@ app.AddEventHandler("OnLoad", function()
 		encounterID = false,
 		explorationID = false,
 	})
+	-- Lists the groups which select a symselector header (e.g. the vendors of a shared vendor armor set) as its Sources
+	local function AddSymSelectorSourceLines(tooltipInfo, reference)
+		local Symlink = app.Modules.Symlink
+		local refs = Symlink and Symlink.GetSymSelectorReferences and Symlink.GetSymSelectorReferences(reference.symselector)
+		if not refs or #refs == 0 then return end
+		local settings = app.Settings
+		if not settings:GetTooltipSetting("SourceLocations") then return end
+		local FilterCharacter = app.Modules.Filter.Filters.RecursiveCharacterRequirementsFilter
+		local showAll = app.MODE_DEBUG_OR_ACCOUNT
+		local texts = {}
+		local ref, text
+		for i=1,#refs do
+			ref = refs[i]
+			if ref.parent then
+				text = GenerateSourcePath(ref, 1)
+				if not FilterCharacter(ref) then
+					-- another race/faction: only listed when showing everything (Account/Debug mode)
+					if showAll then texts[#texts + 1] = text..NotCurrentCharacterTexture end
+				else
+					texts[#texts + 1] = text
+				end
+			end
+		end
+		if #texts == 0 then return end
+		app.Sort(texts, app.SortDefaults.Strings)
+		local maximum = settings:GetTooltipSetting("Locations")
+		local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping")
+		local count, left, right = 0
+		for i=1,#texts do
+			text = texts[i]
+			if i == 1 or texts[i - 1] ~= text then
+				count = count + 1
+				if count <= maximum then
+					left, right = DESCRIPTION_SEPARATOR:split(app.AbbreviateString(text))
+					tooltipInfo[#tooltipInfo + 1] = { left = left, right = right, wrap = wrap }
+				end
+			end
+		end
+		if count > maximum then
+			tooltipInfo[#tooltipInfo + 1] = { left = (L.AND_OTHER_SOURCES):format(count - maximum), wrap = wrap }
+		end
+		tooltipInfo.hasSourceLocations = true
+	end
 	app.Settings.CreateInformationType("SourceLocations", {
 		priority = 2.799,
 		text = "Source Locations",
 		HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
+			if reference.symselector then
+				if not tooltipInfo.hasSourceLocations then
+					AddSymSelectorSourceLines(tooltipInfo, reference)
+				end
+				return
+			end
 			local key = reference.key
 			local id = key == "itemID" and reference.modItemID or reference[key]
 			if key and id and SourceShowKeys[key] then
@@ -1097,6 +1146,10 @@ local function BuildSourceParent(group)
 							if isAchievement and KeepSourced[thing.key] then
 								NestObject(parent, thing, true)
 							end
+							break
+						-- or a header which is linked into other places by a symselector (e.g. a shared vendor armor set)
+						elseif parent.symselector then
+							parents[#parents + 1] = CreateObject(parent, true)
 							break
 						-- or a map
 						elseif parent.mapID then

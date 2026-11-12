@@ -958,6 +958,20 @@ end
 fieldConverters.symselector = function(group, value)
 	CacheField(group, "symselector", value);
 end
+-- Reverse lookup for symselector: caches each group whose sym selects a given symselector under 'symselectorRef',
+-- so the groups which pull in a shared header (e.g. vendors selecting a vendor armor set) can be listed for it.
+-- Referenced in Modules/Symlink (GetSymSelectorReferences)
+fieldConverters.sym = function(group, value)
+	local cmd
+	for i=1,#value do
+		cmd = value[i]
+		if type(cmd) == "table" and cmd[1] == "select" and cmd[2] == "symselector" then
+			for j=3,#cmd do
+				CacheField(group, "symselectorRef", cmd[j]);
+			end
+		end
+	end
+end
 end
 
 do	-- Async Runner keys
