@@ -1086,9 +1086,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 				}},
 				groups = {
-					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
-						isLimited = true,
-					}),
+					i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 				},
 			}),
 			n(5757, {	-- Lilly <Enchanting Supplies>
