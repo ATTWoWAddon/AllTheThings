@@ -298,6 +298,25 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(10418),	-- Glimmering Mithril Insignia
 				},
 			}),
+			q(97530, {	-- Dunemaul Dues
+				qg = 7882,	-- Security Chief Bilgewhizzle
+				coord = { 67.0, 23.8, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Brilliantly Polished Bangle
+						provider = { "i", 278186 },	-- Brilliantly Polished Bangle
+						crs = {
+							5472,	-- Dunemaul Enforcer
+							5474,	-- Dunemaul Brute
+							5471,	-- Dunemaul Ogre
+							5473,	-- Dunemaul Ogre Mage
+							5475,	-- Dunemaul Warlock
+						},
+					}),
+					i(281282),	-- A Little Somethin'
+				},
+			}),
 			q(351, {	-- Find OOX-17/TN!
 				description = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 				qi = 8623,	-- OOX-17/TN Distress Beacon
@@ -558,8 +577,11 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			q(97540, {	-- Oasis
 				qg = 5955,	-- Tooga
-				coord = { 41.2, 55.6, MAP.TANARIS },
-				description = "Offered by Tooga during Tooga's Quest, when he stops for a swim at the oasis by the ogres.",
+				coords = {
+					{ 41.2, 54.3, MAP.TANARIS },	-- Oasis
+					{ 66.6, 25.6, MAP.TANARIS },	-- End of the escort
+				},
+				description = "Offered by Tooga during Tooga's Quest, after a short scene when he stops for a swim at the oasis by the ogres. He offers it to every party member for only a few seconds, so accept it quickly. He also offers it again at the end of the escort.",
 				lvl = 40,
 				lockCriteria = { 1, "questID", 1560 },	-- Tooga's Quest
 				timeline = { TIMELINE.ADDED_1_60_1 },

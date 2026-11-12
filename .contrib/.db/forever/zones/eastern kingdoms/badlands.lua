@@ -1010,6 +1010,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				cr = 2894,	-- Stonevault Shaman
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(211269, {	-- Primitive Drawing (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					2701,	-- Dustbelcher Ogre
+					2715,	-- Dustbelcher Brute
+					2716,	-- Dustbelcher Wyrmhunter
+					2717,	-- Dustbelcher Mauler
+					2718,	-- Dustbelcher Shaman
+					2892,	-- Stonevault Seer
+					2893,	-- Stonevault Bonesnapper
+					2894,	-- Stonevault Shaman
+					2906,	-- Dustbelcher Warrior
+					2907,	-- Dustbelcher Mystic
+					6733,	-- Stonevault Basher
+				},
+			}),
 			i(4616, {	-- Ryedol's Lucky Pick
 				collectible = false,	-- This is a quest item where you have to be on the quest to get it, keep it, and not turn it in for several years to get the transmog for.
 				crs = {
