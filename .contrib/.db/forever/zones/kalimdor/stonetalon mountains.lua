@@ -642,7 +642,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					i(216619),	-- Student Fodder
 					i(217314),	-- Moonsight Rifle
 					i(217315),	-- Precision Bow
-					i(3463),	-- Silver Star
+					i(281660),	-- Iron Star
 					i(3464),	-- Feathered Arrow
 					i(3465),	-- Exploding Shot
 				},

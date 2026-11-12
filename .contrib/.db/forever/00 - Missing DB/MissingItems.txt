@@ -9848,7 +9848,6 @@ i(281631),	-- Collector's Edition Tabard
 i(281636),	-- Museum Keeper's Chain
 i(281637),	-- Antique Bulwark
 i(281657),	-- Corrupted Riverglades Pendant
-i(281660),	-- Iron Star
 i(281675),	-- Lakeshire Firefighter's Headband
 i(281680),	-- Customer Service Care Package
 i(281685),	-- Restored Cloth Helm
