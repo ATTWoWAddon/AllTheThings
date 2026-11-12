@@ -51,9 +51,9 @@ FUNCTION_TEMPLATES = {
 			if _.IsSpellKnownHelper(]]..spellID..[[) then
 				local n=t.name or RETRIEVING_DATA
 				if _.WOWAPI.GetSpellCooldown(]]..spellID..[[)>0 then
-					tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
+					tooltipInfo[#tooltipInfo+1] = { left = "Your "..n.." cooldown is unavailable." }
 				else
-					tinsert(tooltipInfo, { left = "Your "..n.." cooldown is available." });
+					tooltipInfo[#tooltipInfo+1] = { left = "Your "..n.." cooldown is available." }
 				end
 			end
 		end]]
@@ -179,9 +179,9 @@ ExportDB.OnTooltipDB = {
 		if _.IsSpellKnownHelper(s) then
 			local n=t.name or RETRIEVING_DATA
 			if _.WOWAPI.GetSpellCooldown(s)>0 then
-				tinsert(tooltipInfo, { left = "Your "..n.." cooldown is unavailable." });
+				tooltipInfo[#tooltipInfo+1] = { left = "Your "..n.." cooldown is unavailable." }
 			else
-				tinsert(tooltipInfo, { left = "Your "..n.." cooldown is available." });
+				tooltipInfo[#tooltipInfo+1] = { left = "Your "..n.." cooldown is available." }
 			end
 		end
 	end]],

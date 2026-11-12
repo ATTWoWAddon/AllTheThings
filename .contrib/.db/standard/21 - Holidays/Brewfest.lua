@@ -111,8 +111,8 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 	local item = _.SearchForField("itemID", itemID)[1];
 	local icon = "|T" .. item.icon .. ":0|t";
 	local link = item.link or RETRIEVING_DATA;
-	tinsert(tooltipInfo, { left = " " });
-	tinsert(tooltipInfo, { left = "One-Time Quests:" });
+	tooltipInfo[#tooltipInfo+1] = { left = " " }
+	tooltipInfo[#tooltipInfo+1] = { left = "One-Time Quests:" }
 	local coren = _.IsQuestFlaggedCompleted(12491);
 	tinsert(tooltipInfo, {
 		left = " " .. icon .. " 40 for Direbrew's Dire Brew",
@@ -139,8 +139,8 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 		right = _.GetCompletionIcon(back)
 	});
 
-	tinsert(tooltipInfo, { left = " " });
-	tinsert(tooltipInfo, { left = "Daily Quests:" });
+	tooltipInfo[#tooltipInfo+1] = { left = " " }
+	tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 	local barked = _.IsQuestFlaggedCompleted(11293);
 	tinsert(tooltipInfo, {
 		left = " " .. icon .. " 15 for Brewfest Barking",
@@ -152,8 +152,8 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 		left = " " .. icon .. " 10 for Dark Iron Invasion",
 		right = _.GetCollectionIcon(invasion)
 	});
-	tinsert(tooltipInfo, { left = " " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)" });
-	tinsert(tooltipInfo, { left = "** Log out in a rested location and it will be reset after 8 hours." });
+	tooltipInfo[#tooltipInfo+1] = { left = " " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)" }
+	tooltipInfo[#tooltipInfo+1] = { left = "** Log out in a rested location and it will be reset after 8 hours." }
 
 	local today = date("*t");
 	local start = time({day=20,month=9,year=today.year,hour=0,min=0,sec=0});
@@ -167,7 +167,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 		local secondsPerDay = 86400;
 		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
-		tinsert(tooltipInfo, { left = " " });
+		tooltipInfo[#tooltipInfo+1] = { left = " " }
 		tinsert(tooltipInfo, { left = "Currently", right = ]] .. WOWAPI_GetItemCount("itemID") .. [[ .. "x " .. icon .. " " .. link });
 		tinsert(tooltipInfo, { left = "Total Possible*", right = m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link });
 
@@ -179,7 +179,7 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0) + (25 * remaining);
 			tinsert(tooltipInfo, { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link });
 		end
-		tinsert(tooltipInfo, { left = "* Based on if you didn't miss a single day and only whole days count." });
+		tooltipInfo[#tooltipInfo+1] = { left = "* Based on if you didn't miss a single day and only whole days count." }
 	end
 end]];
 

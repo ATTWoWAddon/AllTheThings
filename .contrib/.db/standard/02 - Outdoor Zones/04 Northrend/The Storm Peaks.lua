@@ -60,7 +60,7 @@ ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 		end
 
 		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 		if viscousRep > 0 then
 			if not t.viscous then
 				local f = _.SearchForField("questID", 13006);

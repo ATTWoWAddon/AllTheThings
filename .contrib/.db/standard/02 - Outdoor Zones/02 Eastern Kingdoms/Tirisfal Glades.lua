@@ -4,7 +4,7 @@
 
 ExportDB.OnTooltipDB.ZidormiTravelArtID1136 = [[~function(t, tooltipInfo)
 					if t.parent.artID == 1136 then
-						tinsert(tooltipInfo, { left = "You need to speak to Zidormi to travel back to the past in order to collect these." });
+						tooltipInfo[#tooltipInfo+1] = { left = "You need to speak to Zidormi to travel back to the past in order to collect these." }
 					end
 				end]]
 

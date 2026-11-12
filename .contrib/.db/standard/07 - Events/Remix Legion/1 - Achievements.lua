@@ -11,7 +11,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		-- Added with Phase3 Legion Remix Release	-- Gold 5th Nov 2025
 			description = "Requires completion of all 12 Class Order Hall campaigns, including the Broken Shore Chapter up until you receive your Class Mount.\n\nDruids can skip some of the dungeon quests.\n\nRogues have to do every single quest, including getting every follower.",
 			OnTooltip = [[function(t, tooltipInfo)
-				tinsert(tooltipInfo, { left = " " });
+				tooltipInfo[#tooltipInfo+1] = { left = " " }
 				local index = #tooltipInfo + 1;
 				local progress,total = 0,0;
 				for i,id in pairs({-288,-272,3,7,6,0,8,4,9,5,2,1}) do

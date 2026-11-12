@@ -5,7 +5,7 @@
 ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 		local total = 0;
 		for i,questData in ipairs({
 			{ 27046, 250 },
@@ -26,7 +26,7 @@ ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 				for i,questID in ipairs({ 28390, 28391 }) do
 					for j,quest in ipairs(_.SearchForField("questID", questID)) do
 						if quest.questID == questID then
-							tinsert(glopmother, quest);
+							glopmother[#glopmother+1] = quest
 						end
 					end
 				end
@@ -41,7 +41,7 @@ ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 			for i,questID in ipairs({ 28488, 26710, 27048 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
-						tinsert(randomQuests, quest);
+						randomQuests[#randomQuests+1] = quest
 					end
 				end
 			end

@@ -5,7 +5,7 @@
 ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 		if not t.preparing then
 			local f = _.SearchForField("questID", 11945);
 			if f and #f > 0 then t.preparing = f[1]; end

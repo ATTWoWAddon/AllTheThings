@@ -1,6 +1,6 @@
 local Items = ItemDBConditional;
 
-ExportDB.OnTooltipDB.MusicRollItem = [[~function(t,tooltipInfo)tinsert(tooltipInfo,{left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC})end]]
+ExportDB.OnTooltipDB.MusicRollItem = [[~function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1] = {left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC}end]]
 
 local i = function(itemID, questID)
 	Items[itemID] = { questID = questID, type = "characterUnlockQuestID", OnTooltip = [[_.OnTooltipDB.MusicRollItem]] };

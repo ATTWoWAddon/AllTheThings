@@ -12,7 +12,7 @@ ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 		end
 		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", champion);
 	elseif reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 		local chicken = t.chicken;
 		if not chicken then
 			chicken = _.SearchForField("questID", 12702)[1];
@@ -26,7 +26,7 @@ ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 			for i,questID in ipairs({ 12758, 12734, 12741, 12732 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
-						tinsert(rejek, quest);
+						rejek[#rejek+1] = quest
 					end
 				end
 			end
@@ -41,7 +41,7 @@ ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 			for i,questID in ipairs({ 12703, 12760, 12759 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
-						tinsert(vekgar, quest);
+						vekgar[#vekgar+1] = quest
 					end
 				end
 			end
@@ -61,7 +61,7 @@ ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 		end
 		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", hand);
 	elseif reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 		local appeasing = t.appeasing;
 		if not appeasing then
 			appeasing = _.SearchForField("questID", 12704)[1];
@@ -75,7 +75,7 @@ ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 			for i,questID in ipairs({ 12761, 12762, 12705 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
-						tinsert(soodow, quest);
+						soodow[#soodow+1] = quest
 					end
 				end
 			end
@@ -90,7 +90,7 @@ ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 			for i,questID in ipairs({ 12735, 12737, 12736, 12726 }) do
 				for j,quest in ipairs(_.SearchForField("questID", questID)) do
 					if quest.questID == questID then
-						tinsert(soonee, quest);
+						soonee[#soonee+1] = quest
 					end
 				end
 			end
