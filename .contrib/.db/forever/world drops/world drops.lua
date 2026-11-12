@@ -3628,6 +3628,7 @@ root(ROOTS.WorldDrops, {
 			i(16055),	-- Schematic: Arcane Bomb (RECIPE!)
 			i(10601),	-- Schematic: Bright-Eye Goggles (RECIPE!)
 			i(10603),	-- Schematic: Catseye Ultra Goggles (RECIPE!)
+			i(4415),	-- Schematic: Craftsman's Monocle (RECIPE!)
 			i(6716),	-- Schematic: EZ-Thro Dynamite (RECIPE!)
 			i(4416),	-- Schematic: Goblin Land Mine (RECIPE!)
 			i(4417),	-- Schematic: Large Seaforium Charge (RECIPE!)
