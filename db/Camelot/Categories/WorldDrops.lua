@@ -3322,6 +3322,7 @@ prof(202,{
 r(19831,{itemID=16055,learnedAt=300,requireSkill=202,skillID=2941}),
 r(12587,{itemID=10601,learnedAt=175,requireSkill=202,skillID=2941}),
 r(12607,{itemID=10603,learnedAt=220,requireSkill=202,skillID=2941}),
+r(3966,{itemID=4415,learnedAt=185,requireSkill=202,skillID=2941}),
 r(8339,{itemID=6716,learnedAt=100,requireSkill=202,skillID=2941}),
 r(3968,{itemID=4416,learnedAt=195,requireSkill=202,skillID=2941}),
 r(3972,{itemID=4417,learnedAt=200,requireSkill=202,skillID=2941}),

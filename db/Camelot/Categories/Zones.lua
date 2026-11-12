@@ -920,6 +920,8 @@ r(9820,{description="This recipe can be sold on the Neutral Auction House to All
 q(1945,{c={8},coords={
 [1454]={{38.6,86}}},lvl=26,maps={1440},qgs={5885},races={5,8},sourceQuests={1944},g={
 qo(1,{crs={4054},providers={{"i",7270}}})}}),
+q(97194,{awp=16001,coords={
+[1454]={{69.2,13.2}}},lvl=40,qgs={4752},races={2}}),
 q(65601,{c={9},coords={
 [1454]={{47.2,46.6}}},lvl=20,qgs={5909},r=1,sourceQuests={1507}}),
 q(4494,{coords={
@@ -2172,7 +2174,8 @@ s(316208,284702,{awp=16001,f=25})}}),
 n(10640,{coords={
 [1440]={{50,60.2},{54.2,62.4},{56.6,62.8}}}}),
 n(10647,{coords={
-[1440]={{77.2,46.2},{78.4,42.6},{79,45.6}}}}),
+[1440]={{77.2,46.2},{78.4,42.6},{79,45.6}}},g={
+s(316206,284697,{awp=16001,f=4,loc=42})}}),
 n(10639,{coords={
 [1440]={{36.6,35.4}}}}),
 n(3792,{coords={
@@ -3622,6 +3625,8 @@ q(1884,{c={8},coords={
 [1411]={{56.2,75}}},lvl=10,qgs={5880},races={5,8},sourceQuests={1881,1883},g={
 s(158932,7508,{b=1,c={8},f=1,spellID=9252}),
 s(159407,9513,{b=1,c={8},f=28})}}),
+q(97200,{awp=16001,coords={
+[1411]={{55.2,75.4}}},lvl=40,qgs={7953},races={8}}),
 q(96821,{awp=16001,coords={
 [1411]={{55.95,73.92}}},qgs={3194},r=1,g={
 qo(1,{coords={
@@ -5606,6 +5611,8 @@ q(99411,{awp=16001,coords={
 [1412]={{47.2,57.6}}},lvl=5,qgs={277182},r=1,g={
 qo(1,{coords={
 [1412]={{46.2,63.2}}},crs={2956,2957,3068},providers={{"i",287505},{"n",277154}}})}}),
+q(97204,{awp=16001,coords={
+[1412]={{47.6,58.4}}},lvl=40,qgs={3690},races={6}}),
 q(99079,{awp=16001,coords={
 [1412]={{46.6,63}}},lvl=4,qgs={3222},r=1,g={
 qo(1,{coords={
@@ -5830,7 +5837,7 @@ h(-63,{
 i(273658,{awp=16001,b=1,coords={
 [1412]={{33.4,7.2},{33.6,6.8}}},crs={264082},lvl=30}),
 i(281031,{awp=16001,b=1,crs={3051},lvl=5})})}}),
-m(2652,{awp=16001,g={
+m(2652,{awp=16001,icon=132368,g={
 h(-12,{
 ach(63684,{
 crit(116914,{achID=62355,awp=16001,id=13})})}),
@@ -6831,7 +6838,7 @@ q(79980,{awp=16001,coords={
 i(216619,{b=1,f=55,spellID=436432}),
 s(199521,217314,{b=1,f=31,lvl=23}),
 s(199522,217315,{b=1,f=32,lvl=23}),
-s(157327,3463,{b=1,f=36}),
+s(312036,281660,{b=1,f=36}),
 s(157328,3464,{f=37}),
 s(157329,3465,{f=37})}}),
 q(1068,{coords={
@@ -6878,7 +6885,8 @@ q(1483,{coords={
 [1413]={{62.98,37.21}}},isBreadcrumb=1,lvl=16,nextQuests={1093},qgs={3442}})}),
 h(-46,{
 n(5915,{coords={
-[1442]={{28.2,12.8}}}}),
+[1442]={{28.2,12.8}}},g={
+s(316194,284459,{awp=16001,f=24})}}),
 n(5931,{coords={
 [1442]={{63.8,51.8},{67.6,45.4},{68,54}}},g={
 s(316190,284400,{awp=16001,f=6,loc=40})}}),
@@ -6892,9 +6900,11 @@ s(158241,5752,{f=20})}}),
 n(5916,{coords={
 [1442]={{30.2,14.8},{33.2,17.6},{36.2,18.8},{36.6,14.6}}}}),
 n(5930,{coords={
-[1442]={{29,73.6},{29.2,67},{36.8,68.8}}}}),
+[1442]={{29,73.6},{29.2,67},{36.8,68.8}}},g={
+s(316189,284399,{awp=16001,f=4,loc=41})}}),
 n(5928,{coords={
-[1442]={{45.8,38.8},{46.8,30.4},{49.6,35.6},{51.4,40.6},{51.6,36.8}}}}),
+[1442]={{45.8,38.8},{46.8,30.4},{49.6,35.6},{51.4,40.6},{51.6,36.8}}},g={
+s(316191,284401,{awp=16001,b=1,f=4,loc=40,lvl=24})}}),
 n(5932,{coords={
 [1442]={{60.4,51.4},{63,54.4},{64.2,57},{64.8,49.2}}},g={
 s(316188,284386,{awp=16001,b=1,f=20,lvl=19})}}),
@@ -8658,7 +8668,8 @@ n(5827,{coords={
 [1413]={{44.4,75.6},{44.8,79.4},{46,75.8},{46.6,67.4},{46.6,71.6},{47.4,65.6},{47.6,58.8},{48.6,63},{49,60.8},{49.6,58}}},g={
 s(316396,285338,{awp=16001,f=5,loc=46})}}),
 n(5851,{coords={
-[1413]={{49.6,83.8}}},r=1}),
+[1413]={{49.6,83.8}}},r=1,g={
+s(316399,285344,{awp=16001,f=8})}}),
 n(5849,{coords={
 [1413]={{47.6,85.6}}},r=1,g={
 s(157907,4785,{description="This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",f=4,loc=45})}}),
@@ -8693,7 +8704,8 @@ n(5828,{coords={
 [1413]={{62,33.6}}},g={
 i(285331,{awp=16001,b=1,f=51,lvl=20})}}),
 n(5848,{coords={
-[1413]={{49.4,84.4}}},r=1}),
+[1413]={{49.4,84.4}}},r=1,g={
+s(317360,286541,{awp=16001,f=1,spellID=1133})}}),
 n(3470,{coords={
 [1413]={{47.6,19.2}}},g={
 s(158038,5111,{f=3,lvl=12}),
@@ -11575,7 +11587,7 @@ n(1319,{coords={
 [1453]={{69.6,57.8}}},r=2,sym={{"select","itemID",2451,2448,2446,17189,17190,17192}},g={
 s(156831,2445,{f=8,lvl=17}),
 s(163288,17188,{f=8,lvl=14})}}),
-n(12777,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}},g={
+n(12777,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",6},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}},g={
 s(308246,272738,{b=1,c={1},cost={{"c",1792,6000},{"i",20560,15}},f=7,loc=40,lvl=55,pvp=1}),
 s(308249,272741,{b=1,c={1},cost={{"c",1792,4250},{"i",20559,10}},f=7,loc=41,lvl=55,pvp=1}),
 s(308453,273325,{b=1,c={1},cost={{"c",1792,4000},{"i",20559,10}},f=7,loc=45,lvl=55,pvp=1}),
@@ -11592,7 +11604,7 @@ i(275242,{b=1,cost={{"c",1792,2000}},lvl=60,pvp=1,spellID=1296351}),
 i(275229,{b=1,cost={{"c",1792,1500}},lvl=60,pvp=1,spellID=1296317}),
 i(275241,{b=1,cost={{"c",1792,2000}},lvl=60,pvp=1,spellID=1296350}),
 i(275238,{b=1,cost={{"c",1792,1750}},lvl=60,pvp=1,spellID=1296347})}}),
-n(12782,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}},g={
+n(12782,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select","symselector",6},{"find","headerID",-101},{"pop"}},g={
 s(308366,272858,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60,pvp=1}),
 s(308357,272849,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=29,lvl=60,pvp=1}),
 s(308356,272848,{b=1,cost={{"c",1792,15000},{"i",20560,20}},f=24,lvl=60,pvp=1}),
@@ -14033,6 +14045,10 @@ qo(1,{coords={
 s(162972,16605,{b=1,c={5},f=4,loc=42})}}),
 q(5626,{c={5},coords={
 [1426]={{28.6,66.4}}},isBreadcrumb=1,lvl=5,maps={427},nextQuests={5625},qgs={837},races={3}}),
+q(97018,{awp=16001,coords={
+[1426]={{63.8,50.2}}},lvl=40,qgs={4772},races={3}}),
+q(97188,{awp=16001,coords={
+[1426]={{49.2,48}}},lvl=40,qgs={7954},races={7}}),
 q(1679,{altQuests={1638,1678,1684},c={1},coords={
 [1426]={{47.2,52.6}}},lvl=10,qgs={1229},r=2}),
 q(95212,{awp=16001,coords={
@@ -15631,6 +15647,8 @@ q(60,{coords={
 [1429]={{43.3,65.7}}},lvl=3,qgs={253},r=2,g={
 qo(1,{crs={40,327,475,476},providers={{"i",772}}}),
 i(1434,{b=1,f=55,spellID=13424})}}),
+q(97170,{awp=16001,coords={
+[1429]={{84.2,65}}},lvl=40,qgs={4732},races={1}}),
 q(85,{coords={
 [1429]={{34.5,84.3}}},lvl=5,qgs={246},r=2}),
 q(147,{coords={
@@ -18641,8 +18659,8 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true})tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true})if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1})if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true})end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	local isHuman=_.RaceIndex==1 local repForDressing=isHuman and 11 or 10 if t.dressing.collected then repForDressing=0 end	local repForAdmiral=isHuman and 220 or 200 if t.admiral.collected then repForAdmiral=0 end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral if t.maxPossibleReputation<42000 then	t.locked=true end	end	end}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end})}),
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tooltipInfo[#tooltipInfo+1]={left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true}tooltipInfo[#tooltipInfo+1]={left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true}if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tooltipInfo[#tooltipInfo+1]={left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1}if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tooltipInfo[#tooltipInfo+1]={left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true}end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	local isHuman=_.RaceIndex==1 local repForDressing=isHuman and 11 or 10 if t.dressing.collected then repForDressing=0 end	local repForAdmiral=isHuman and 220 or 200 if t.admiral.collected then repForAdmiral=0 end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral if t.maxPossibleReputation<42000 then	t.locked=true end	end	end}),
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tooltipInfo[#tooltipInfo+1]={left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5}end	end})}),
 h(-32,{
 fp(18,{coords={
 [1434]={{26.8,77}}},crs={2858},r=1}),
@@ -19169,6 +19187,10 @@ qo(3,{coords={
 q(601,{coords={
 [1434]={{27.2,76.9}}},lvl=32,qgs={2496},r=2,sourceQuests={578},g={
 qo(1,{crs={691},providers={{"i",3923}}})}}),
+q(97453,{awp=16001,coords={
+[1434]={{32.8,28.4}}},lvl=33,qgs={269166},r=1,g={
+qo(1,{coords={
+[1434]={{33.6,27.7}}},providers={{"n",269175}}})}}),
 q(583,{coords={
 [1434]={{35.7,10.5}}},lvl=28,qgs={716}}),
 q(97329,{awp=16001,coords={
@@ -19690,7 +19712,7 @@ crit(1128,{achID=773,id=1})}),
 exp(1883,{
 crit(1120,{achID=773,id=1})})}),
 h(-31,{
-faction(471,{description="This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",minReputation={471,21000},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0)tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5})else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(9259,true))if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0})end	end	end	end,r=2})}),
+faction(471,{description="This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",minReputation={471,21000},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0)tooltipInfo[#tooltipInfo+1]={left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5}else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(9259,true))if remaining>0 then	tooltipInfo[#tooltipInfo+1]={left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0}end	end	end	end,r=2})}),
 h(-32,{
 fp(43,{coords={
 [1425]={{11,46}}},crs={8018},r=2}),
@@ -20279,6 +20301,8 @@ qo(3,{crs={1544,1545},providers={{"i",278244}}}),
 s(311871,281283,{b=1,f=4,loc=46}),
 s(316091,281284,{b=1,f=5,loc=42}),
 s(311872,281285,{b=1,f=6,loc=47})}}),
+q(97203,{awp=16001,coords={
+[1420]={{60,52.4}}},lvl=40,qgs={4773},races={5}}),
 q(98545,{awp=16001,coords={
 [1420]={{22,44.8}}},lvl=10,qgs={267008},qis={282065},races={5},sourceQuests={96896},g={
 s(313067,282064,{b=1,f=20}),
@@ -22115,6 +22139,8 @@ q(92462,{coords={
 qo(1,{providers={{"n",251169}}})}}),
 q(93036,{coords={
 [2521]={{45.6,45.4}}},lvl=5,qgs={251523},sourceQuests={92517}}),
+q(97205,{awp=16001,coords={
+[2521]={{53.8,81.2}}},lvl=40,qgs={265756},races={95,96}}),
 q(92682,{coords={
 [2521]={{46.6,81.8}}},lvl=5,qgs={252800},sourceQuests={92679},g={
 qo(1,{coords={

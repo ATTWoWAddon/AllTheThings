@@ -560,7 +560,7 @@ s(156743,2271,{f=28}),
 s(157289,3415,{f=28}),
 s(156335,1486,{f=4,loc=42})}),
 h(-45,{
-q(6564,{crs={4802},description="For this to drop, you need to be on the Essence of Aku'Mai quest.",lvl=17,qss={16790},r=1,sourceQuests={6563}}),
+q(6564,{crs={4802},lvl=17,qss={16790},r=1,sourceQuests={6563}}),
 q(6565,{coords={
 [1440]={{11.6,34.3}}},lvl=17,qgs={12736},r=1,sourceQuests={6564},g={
 qo(1,{providers={{"n",12902}}}),
@@ -1624,7 +1624,7 @@ crit(116050,{achID=62032,awp=16001,id=1})}})}}),
 inst(230,{icon=136333,lore="Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",lvl=44,mapID=234,zoneTextAreaIDs={2557,2577,3217},g={
 h(-31,{
 faction(809,{icon=133736,maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",200,42000)end	end}),
-faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true})local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1})addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000)end	end})}),
+faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true}local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tooltipInfo[#tooltipInfo+1]={left="To 11999 Honored:",r=1,g=1,b=1}addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",150,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",50,42000)end	end})}),
 h(-45,{
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1}),
 q(27118,{description="You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",lvl=42,maps={235},providers={{"o",179485}},repeatable=1}),

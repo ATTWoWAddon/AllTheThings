@@ -484,6 +484,7 @@ HeaderAssignments = {
 	["Plunderstorm"] = -476,
 	["Poor"] = -222,
 	["Portal Bridges"] = -761,
+	["Premier PvP Gear"] = -821,
 	["Prestige"] = -302,
 	["Prestige Rewards"] = -137,
 	["Prey"] = -671,
@@ -800,4 +801,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -821
+NextHeaderID = -822
