@@ -556,6 +556,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
+			q(97540, {	-- Oasis
+				qg = 5955,	-- Tooga
+				coord = { 41.2, 55.6, MAP.TANARIS },
+				description = "Offered by Tooga during Tooga's Quest, when he stops for a swim at the oasis by the ogres.",
+				lvl = 40,
+				lockCriteria = { 1, "questID", 1560 },	-- Tooga's Quest
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(4507, {	-- Pawn Captures Queen
 				sourceQuest = 4496,	-- Bungle in the Jungle
 				qg = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
