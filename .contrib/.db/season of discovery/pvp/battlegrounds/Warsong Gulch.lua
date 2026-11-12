@@ -42,7 +42,7 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
 		local repPerFlagCapture = 35;
 		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
-		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 });
+		tooltipInfo[#tooltipInfo+1] = { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 }
 		if reputation < ]] .. HONORED .. [[ then
 			tooltipInfo[#tooltipInfo+1] = { left = " " }
 			tooltipInfo[#tooltipInfo+1] = { left = "Battle for Ashenvale PvP World Event:" }

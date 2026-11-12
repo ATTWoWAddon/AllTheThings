@@ -49,9 +49,9 @@ ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 -- #endif
 		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
 -- #if BEFORE 6.0.2
-		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 });
+		tooltipInfo[#tooltipInfo+1] = { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 }
 -- #else
-		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 });
+		tooltipInfo[#tooltipInfo+1] = { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 }
 -- #endif
 	end
 end]];

@@ -114,44 +114,44 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 	tooltipInfo[#tooltipInfo+1] = { left = " " }
 	tooltipInfo[#tooltipInfo+1] = { left = "One-Time Quests:" }
 	local coren = _.IsQuestFlaggedCompleted(12491);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 40 for Direbrew's Dire Brew",
 		right = _.GetCompletionIcon(coren)
-	});
+	}
 
 	-- #if AFTER WRATH
 	local pink = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 40 for Pink Elekks On Parade",
 		right = _.GetCompletionIcon(pink)
-	});
+	}
 	-- #endif
 
 	local chucked = _.IsQuestFlaggedCompleted(12022);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 10 for Chug and Chuck",
 		right = _.GetCompletionIcon(chucked)
-	});
+	}
 
 	local back = _.IsQuestFlaggedCompleted(11122);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 10 for There And Back Again",
 		right = _.GetCompletionIcon(back)
-	});
+	}
 
 	tooltipInfo[#tooltipInfo+1] = { left = " " }
 	tooltipInfo[#tooltipInfo+1] = { left = "Daily Quests:" }
 	local barked = _.IsQuestFlaggedCompleted(11293);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 15 for Brewfest Barking",
 		right = _.GetCollectionIcon(barked)
-	});
+	}
 
 	local invasion = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
-	tinsert(tooltipInfo, {
+	tooltipInfo[#tooltipInfo+1] = {
 		left = " " .. icon .. " 10 for Dark Iron Invasion",
 		right = _.GetCollectionIcon(invasion)
-	});
+	}
 	tooltipInfo[#tooltipInfo+1] = { left = " " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)" }
 	tooltipInfo[#tooltipInfo+1] = { left = "** Log out in a rested location and it will be reset after 8 hours." }
 
@@ -168,16 +168,16 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 		local totalDays = math.floor(difftime(ends, start) / secondsPerDay);
 		local m = 60 + (25 * totalDays);
 		tooltipInfo[#tooltipInfo+1] = { left = " " }
-		tinsert(tooltipInfo, { left = "Currently", right = ]] .. WOWAPI_GetItemCount("itemID") .. [[ .. "x " .. icon .. " " .. link });
-		tinsert(tooltipInfo, { left = "Total Possible*", right = m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link });
+		tooltipInfo[#tooltipInfo+1] = { left = "Currently", right = ]] .. WOWAPI_GetItemCount("itemID") .. [[ .. "x " .. icon .. " " .. link }
+		tooltipInfo[#tooltipInfo+1] = { left = "Total Possible*", right = m .. " - " .. (m + (22 * totalDays)) .. "x " .. icon .. " " .. link }
 
 		local remaining = math.floor(difftime(ends, now) / secondsPerDay);
 		if remaining <= 1 then
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0);
-			tinsert(tooltipInfo, { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. link });
+			tooltipInfo[#tooltipInfo+1] = { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + 22) .. "x " .. icon .. " " .. link }
 		else
 			local baseAmount = (not barked and 15 or 0) + (not invasion and 10 or 0) + (25 * remaining);
-			tinsert(tooltipInfo, { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link });
+			tooltipInfo[#tooltipInfo+1] = { left = "Total Remaining*", right = baseAmount .. " - " .. (baseAmount + (22 * remaining)) .. "x " .. icon .. " " .. link }
 		end
 		tooltipInfo[#tooltipInfo+1] = { left = "* Based on if you didn't miss a single day and only whole days count." }
 	end

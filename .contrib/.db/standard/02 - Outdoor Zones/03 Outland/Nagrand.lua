@@ -23,7 +23,7 @@ end]];
 ExportDB.OnTooltipDB.ForKurenai = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		tinsert(tooltipInfo, { left = "Complete Quests in Orebor Harborage, Zangarmarsh.", r = 1, g = 1, b = 1 });
+		tooltipInfo[#tooltipInfo+1] = { left = "Complete Quests in Orebor Harborage, Zangarmarsh.", r = 1, g = 1, b = 1 }
 	elseif reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);
@@ -34,7 +34,7 @@ end]];
 ExportDB.OnTooltipDB.ForMaghar = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
-		tinsert(tooltipInfo, { left = "Complete Quests in Mag'har Post, Hellfire Peninsula.", r = 1, g = 1, b = 1 });
+		tooltipInfo[#tooltipInfo+1] = { left = "Complete Quests in Mag'har Post, Hellfire Peninsula.", r = 1, g = 1, b = 1 }
 	elseif reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);

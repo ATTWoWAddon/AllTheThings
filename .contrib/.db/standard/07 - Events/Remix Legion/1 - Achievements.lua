@@ -17,7 +17,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 				for i,id in pairs({-288,-272,3,7,6,0,8,4,9,5,2,1}) do
 					local cl = _.CreateCharacterClass(i);
 					local a,b,c = GetAchievementCriteriaInfoByID(42565,108648+id)
-					tinsert(tooltipInfo, { left = "|T" .. cl.icon .. ":0|t " .. cl.text, right = _.GetCollectionIcon(c) });
+					tooltipInfo[#tooltipInfo+1] = { left = "|T" .. cl.icon .. ":0|t " .. cl.text, right = _.GetCollectionIcon(c) }
 					if c then progress = progress + 1; end
 					total = total + 1;
 				end

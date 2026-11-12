@@ -351760,6 +351760,20 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Mislaid Curiosity",
 		},
 	},
+	[677416] = {
+		readable = "Mislaid Curiosity",
+		text = {
+			en = "Mislaid Curiosity",
+			es = "Curiosidad extraviada",
+			mx = "Curiosidad extraviada",
+			de = "Verlegte Kuriosität",
+			fr = "Curiosité fourvoyée",
+			pt = "Curiosidade Desviada",
+			ru = "Потерянная вещица",
+			ko = "잘못 놓인 진귀품",
+			tw = "亂放的珍品",
+		},
+	},
 	[677417] = {
 		readable = "Mislaid Curiosity",
 		text = {

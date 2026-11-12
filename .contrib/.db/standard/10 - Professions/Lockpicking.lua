@@ -36,7 +36,7 @@ ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 			end);
 			t.lpdata = data;
 		end
-		tinsert(tooltipInfo, { left = "Recommended Locations:", right = "Minimum" });
+		tooltipInfo[#tooltipInfo+1] = { left = "Recommended Locations:", right = "Minimum" }
 		local lastLearnedAt;
 		for i,o in ipairs(data) do
 			if o.learnedAt <= skills[2] then
@@ -49,7 +49,7 @@ ExportDB.OnTooltipDB.ForLockpicking = [[~function(t, tooltipInfo)
 				local text = "  " .. o.text;
 				mapID = _.GetBestMapForGroup(o, _.CurrentMapID);
 				if mapID then text = text .. " (" .. _.GetMapName(mapID) .. ")"; end
-				tinsert(tooltipInfo, { left = text, right = tostring(o.learnedAt), r = 1, g = 1, b = 1 });
+				tooltipInfo[#tooltipInfo+1] = { left = text, right = tostring(o.learnedAt), r = 1, g = 1, b = 1 }
 			end
 		end
 	end

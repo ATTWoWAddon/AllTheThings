@@ -23,11 +23,11 @@ local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 10 - Crafted]", 450, ]] .. FRIENDLY .. [[);
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 10 - Gathered]", 300, ]] .. FRIENDLY .. [[);
 
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = "PROTIP: Save higher iLvl Supply Shipments until later!",
 				r=1,g=0.1,b=0.1,
 				wrap = true
-			});
+			}
 		elseif reputation < ]] .. HONORED .. [[ then
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 25 - Crafted (Tier 2)]", 800, ]] .. HONORED .. [[);
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 25 - Crafted (Tier 1)]", 650, ]] .. HONORED .. [[);

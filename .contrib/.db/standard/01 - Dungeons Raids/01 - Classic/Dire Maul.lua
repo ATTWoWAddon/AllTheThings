@@ -113,12 +113,12 @@ local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	end
 end]];
 local OnTooltipForSteamweedle = [[function(t, tooltipInfo)
-	tinsert(tooltipInfo, { left = "This is a hidden reputation. It might not count towards reputation achievements.", r=1,g=1,b=1, wrap=true });
+	tooltipInfo[#tooltipInfo+1] = { left = "This is a hidden reputation. It might not count towards reputation achievements.", r=1,g=1,b=1, wrap=true }
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		if reputation < 20999 then
-			tinsert(tooltipInfo, { left = "To 11999 Honored:", r=1,g=1,b=1 });
+			tooltipInfo[#tooltipInfo+1] = { left = "To 11999 Honored:", r=1,g=1,b=1 }
 			addRepInfo(tooltipInfo, reputation, " Kill Venture Co. (STV)", 2.5, 20999);
 			addRepInfo(tooltipInfo, reputation, " Kill Southsea Pirates. (Tanaris & Barrens)", 2.5, 20999);
 		end

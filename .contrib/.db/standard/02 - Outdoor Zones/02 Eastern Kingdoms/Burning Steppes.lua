@@ -301,11 +301,11 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						OnTooltip = [[function(t, tooltipInfo)
 							local raceID = _.RaceID;
 							if raceID == ]] .. HUMAN .. [[ or raceID == ]] .. DWARF .. [[ or raceID == ]] .. DARKIRON .. [[ then
-								tinsert(tooltipInfo, { left = "Solution:", right = "2 Hides, 4 Muds, 2 Threads" });
+								tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "2 Hides, 4 Muds, 2 Threads" }
 							elseif raceID == ]] .. VOIDELF .. [[ then
-								tinsert(tooltipInfo, { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" });
+								tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" }
 							elseif raceID == ]] .. KULTIRAN .. [[ then
-								tinsert(tooltipInfo, { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" });
+								tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" }
 							end
 						end]],
 					}),
@@ -330,7 +330,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" }
 						end]],
 					}),
 				},
@@ -354,7 +354,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" }
 						end]],
 					}),
 				},
@@ -378,7 +378,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" }
 						end]],
 					}),
 				},
@@ -402,7 +402,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "2 Hides, 4 Muds, 2 Threads" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "2 Hides, 4 Muds, 2 Threads" }
 						end]],
 					}),
 				},
@@ -426,7 +426,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "4 Hides, 1 Mud, 3 Threads" }
 						end]],
 					}),
 				},
@@ -450,7 +450,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "1 Hide, 3 Muds, 4 Threads" }
 						end]],
 					}),
 				},
@@ -474,7 +474,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 						},
 						coord = { 45.4, 46.2, BURNING_STEPPES },
 						OnTooltip = [[function(t, tooltipInfo)
-							tinsert(tooltipInfo, { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" });
+							tooltipInfo[#tooltipInfo+1] = { left = "Solution:", right = "3 Hides, 2 Muds, 1 Thread" }
 						end]],
 					}),
 				},

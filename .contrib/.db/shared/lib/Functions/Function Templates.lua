@@ -147,14 +147,14 @@ ExportDB.OnTooltipDB = {
 		if reputation < 42000 then
 			-- #if AFTER TBC
 			if reputation < 20999 then
-				tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!", r = 1, g = 0.5, b = 0.5 });
+				tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!", r = 1, g = 0.5, b = 0.5 }
 				_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Kill Arathi Syndicate", 5, 20999);
 			else
-				tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
+				tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 }
 				_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 75, 42000, 5);
 			end
 			-- #else
-			tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
+			tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 }
 			_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 50, 42000, 5);
 			-- #endif
 		end
@@ -187,7 +187,7 @@ ExportDB.OnTooltipDB = {
 	end]],
 	-- TODO: use of this OnTooltip function should be converted into 'sourceAchievements' for proper integration with other logic
 	WithRequiredAchievement = [[~function(t, tooltipInfo)
-		if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
+		if t.ach then tooltipInfo[#tooltipInfo+1] = { left = _.L.REQUIRES, right = t.ach.text } end
 	end]],
 	ShowHonoredKeyComparison = [[~function(t, tooltipInfo)
 		local tooltip = _.ShowItemCompareTooltips(t.otherItemID);

@@ -65,16 +65,16 @@ ExportDB.OnTooltipDB.ForTimbermawHold = [[~function(t, tooltipInfo)
 		local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Winterfall Beads (x5) in Winterspring", repPerTurnIn, 42000);
 		local remaining = ((remainingTurnIns * 5) - ]] .. WOWAPI_GetItemCount(21383) .. [[ - ]] .. WOWAPI_GetItemCount(21377) .. [[);
 		if remaining > 0 then
-			tinsert(tooltipInfo, { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 });
+			tooltipInfo[#tooltipInfo+1] = { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 }
 		end
 		-- #if BEFORE CATA
 		-- #if BEFORE TBC
 		if reputation < ]] .. (HONORED - 1) .. [[ then
-			tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the totems or feathers until after Honored!", r = 1, g = 0.5, b = 0.5 });
+			tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Do NOT turn in the totems or feathers until after Honored!", r = 1, g = 0.5, b = 0.5 }
 		end
 		-- #else
 		if reputation < ]] .. (REVERED - 1) .. [[ then
-			tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the totems or feathers until after Revered!", r = 1, g = 0.5, b = 0.5 });
+			tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Do NOT turn in the totems or feathers until after Revered!", r = 1, g = 0.5, b = 0.5 }
 		end
 		-- #endif
 		-- #endif

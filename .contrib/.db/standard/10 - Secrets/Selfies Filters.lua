@@ -10,7 +10,7 @@ local SELFIE_FILTER = createHeader({
 	},
 });
 
-ExportDB.OnTooltipDB.SelfieFilter = [[~function(t,tooltipInfo)tinsert(tooltipInfo,{left=_.L.SELFIE_DESC..(select(2,_.WOWAPI.GetItemInfo(122674))or"Selfie Camera MkII").._.L.SELFIE_DESC_2..(_.NPCNameFromID[t.crs[1] ]or"???").."|r"..(t.maps and(" in |cffff8000".._.GetMapName(t.maps[1]).."|r.")or".")})end]]
+ExportDB.OnTooltipDB.SelfieFilter = [[~function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1] = {left=_.L.SELFIE_DESC..(select(2,_.WOWAPI.GetItemInfo(122674))or"Selfie Camera MkII").._.L.SELFIE_DESC_2..(_.NPCNameFromID[t.crs[1] ]or"???").."|r"..(t.maps and(" in |cffff8000".._.GetMapName(t.maps[1]).."|r.")or".")}end]]
 
 local function SelfieFilter(questID, spellID, t)
 	t = name(HEADERS.Spell, spellID, t or {})

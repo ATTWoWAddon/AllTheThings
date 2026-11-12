@@ -8,7 +8,7 @@ ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet*", 2.5, 42000);
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
-		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
+		tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 }
 	end
 end]];
 

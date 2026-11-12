@@ -36,12 +36,12 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 						local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 						if reputation < ]] .. (REVERED - 1) .. [[ then
 							addRepInfo(tooltipInfo, reputation, "Kill Trolls in the Hinterlands (Stops at Revered)", 5, ]] .. (REVERED - 1) .. [[, ]] .. NEUTRAL .. [[);
-							tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the necklaces until after Revered!", r = 1, g = 0.5, b = 0.5 });
+							tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Do NOT turn in the necklaces until after Revered!", r = 1, g = 0.5, b = 0.5 }
 						else
 							local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Troll Tribal Necklaces (x5)", 2, 42000);
 							local remaining = ((remainingTurnIns * 5) - ]] .. WOWAPI_GetItemCount(9259) .. [[);
 							if remaining > 0 then
-								tinsert(tooltipInfo, { left = "You need " .. remaining .. " more necklaces for Exalted.", r = 1, g = 1, b = 0 });
+								tooltipInfo[#tooltipInfo+1] = { left = "You need " .. remaining .. " more necklaces for Exalted.", r = 1, g = 1, b = 0 }
 							end
 						end
 					end

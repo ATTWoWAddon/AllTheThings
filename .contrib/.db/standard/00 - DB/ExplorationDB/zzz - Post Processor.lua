@@ -19,7 +19,7 @@ if explorationDB then
 						coordsForMap = {};
 						newCoords[mapID] = coordsForMap;
 					end
-					tinsert(coordsForMap, { coord[1], coord[2] });
+					coordsForMap[#coordsForMap+1] = { coord[1], coord[2] }
 				end
 			end
 			-- only re-assign if coords were actually converted

@@ -28,17 +28,17 @@ local OnTooltipForBloodsail = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 41999 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		tinsert(tooltipInfo, { left = "Reminder: Do all of the Goblin quests prior to starting this grind.", r = 1, g = 0.5, b = 0.5, wrap = true });
-		tinsert(tooltipInfo, { left = "Do NOT turn in the Bloodsail quests if you intend to get to Exalted!", r = 1, g = 0.5, b = 0.5, wrap = true });
+		tooltipInfo[#tooltipInfo+1] = { left = "Reminder: Do all of the Goblin quests prior to starting this grind.", r = 1, g = 0.5, b = 0.5, wrap = true }
+		tooltipInfo[#tooltipInfo+1] = { left = "Do NOT turn in the Bloodsail quests if you intend to get to Exalted!", r = 1, g = 0.5, b = 0.5, wrap = true }
 		if reputation < 20999 then
 			addRepInfo(tooltipInfo, reputation, "Kill Booty Bay Bruisers.", 25, 20999, ]] .. HATED .. [[);
 		else
 			local repPerKill, remaining = addRepInfo(tooltipInfo, reputation, "Kill Jazzrik.", 5, 41999, 21000);
-			tinsert(tooltipInfo, {
+			tooltipInfo[#tooltipInfo+1] = {
 				left = " 5.33 - 8.5 Minute respawn",
 				right = math.floor((remaining * 5.33) / 60.0) .. " - " .. math.ceil((remaining * 8.5) / 60.0) .. " Hours to go!",
 				r = 1, g = 1, b = 1
-			});
+			}
 			if not t.eventful then
 				t.eventful = true;
 				if DBM then
@@ -70,7 +70,7 @@ local OnTooltipForBloodsail = [[function(t, tooltipInfo)
 			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.admiral);
 		end
 		if t.maxPossibleReputation < 42000 then
-			tinsert(tooltipInfo, { left = "You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!", r = 1, g = 0.5, b = 0.5, wrap = true });
+			tooltipInfo[#tooltipInfo+1] = { left = "You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!", r = 1, g = 0.5, b = 0.5, wrap = true }
 		end
 	end
 end]];
@@ -80,7 +80,7 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet*", 2.5, 42000);
 		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
-		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
+		tooltipInfo[#tooltipInfo+1] = { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 }
 	end
 end]];
 
