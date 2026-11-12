@@ -1020,47 +1020,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5820, {	-- Gillian Moore
 				coord = { 70.6, 59.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2142,	-- Cuirboulli Belt
-					2143,	-- Cuirboulli Boots
-					2144,	-- Cuirboulli Bracers
-					2145,	-- Cuirboulli Gloves
-					2146,	-- Cuirboulli Pants
-					2141,	-- Cuirboulli Vest
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-					237,	-- Cured Leather Pants
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
-				groups = {
-					i(1839),	-- Rough Leather Belt
-					i(796),	-- Rough Leather Boots
-					i(1840),	-- Rough Leather Bracers
-					i(797),	-- Rough Leather Gloves
-					i(798),	-- Rough Leather Pants
-					i(799),	-- Rough Leather Vest
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_STUDDED,	-- Studded
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
+				},
+				sym = {
+					SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
+					{ "pop" },
 				},
 			}),
 			n(4556, {	-- Gordon Wendham
@@ -1131,48 +1106,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 				coord = { 64.0, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2371,	-- Battered Leather Belt
-					2373,	-- Battered Leather Boots
-					2374,	-- Battered Leather Bracers
-					2375,	-- Battered Leather Gloves
-					2370,	-- Battered Leather Harness
-					2372,	-- Battered Leather Pants
-					16059,	-- Common Brown Shirt
-					3428,	-- Common Gray Shirt
-					16060,	-- Common White Shirt
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-					3606,	-- Woven Belt
-					2367,	-- Woven Boots
-					3607,	-- Woven Bracers
-					2369,	-- Woven Gloves
-					2366,	-- Woven Pants
-					2364,	-- Woven Vest
-				}},
-				groups = {
-					i(1835),	-- Dirty Leather Belt
-					i(210),	-- Dirty Leather Boots
-					i(1836),	-- Dirty Leather Bracers
-					i(714),	-- Dirty Leather Gloves
-					i(209),	-- Dirty Leather Pants
-					i(85),	-- Dirty Leather Vest
-					i(3595),	-- Tattered Cloth Belt
-					i(195),	-- Tattered Cloth Boots
-					i(3596),	-- Tattered Cloth Bracers
-					i(711),	-- Tattered Cloth Gloves
-					i(194),	-- Tattered Cloth Pants
-					i(193),	-- Tattered Cloth Vest
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+						SymSelector.VENDOR_WOVEN,	-- Woven
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2370,	-- Battered Leather Harness
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Gray Shirt
+						16060,	-- Common White Shirt
+					},
+				},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_DIRTY_LEATHER,	-- Dirty Leather
+						SymSelector.VENDOR_TATTERED_CLOTH,	-- Tattered Cloth
+					},
+					{ "pop" },
 				},
 			}),
 			n(4574, {	-- Lizbeth Cromwell <Fishing Supplier>
@@ -1241,58 +1195,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5819, {	-- Mirelle Tremayne
 				coord = { 61.6, 28.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					2392,	-- Light Mail Armor
-					2393,	-- Light Mail Belt
-					2395,	-- Light Mail Boots
-					2396,	-- Light Mail Bracers
-					2397,	-- Light Mail Gloves
-					2394,	-- Light Mail Leggings
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(4592, {	-- Nathaniel Steenwick
 				coord = { 77.2, 50.2, MAP.UNDERCITY },
@@ -1340,46 +1262,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 				coord = { 70.6, 28.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui
@@ -1429,34 +1322,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					1202,	-- Wall Shield
 					2376,	-- Worn Heater Shield
 				}},
-				groups = {
-					i(2398),	-- Light Chain Armor
-					i(2399),	-- Light Chain Belt
-					i(2401),	-- Light Chain Boots
-					i(2402),	-- Light Chain Bracers
-					i(2403),	-- Light Chain Gloves
-					i(2400),	-- Light Chain Leggings
-					i(2387),	-- Rusted Chain Belt
-					i(2389),	-- Rusted Chain Boots
-					i(2390),	-- Rusted Chain Bracers
-					i(2391),	-- Rusted Chain Gloves
-					i(2388),	-- Rusted Chain Leggings
-					i(2386),	-- Rusted Chain Vest
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_LIGHT_CHAIN,	-- Light Chain
+						SymSelector.VENDOR_RUSTED_CHAIN,	-- Rusted Chain
+					},
+					{ "pop" },
 				},
 			}),
 			n(4560, {	-- Walter Ellingson
 				coord = { 62.8, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					17187,	-- Banded Buckler
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-					1202,	-- Wall Shield
-				}},
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						1202,	-- Wall Shield
+					},
+				},
 			}),
 			n(5754, {	-- Zane Bradford
 				coord = { 70.0, 27.2, MAP.UNDERCITY },

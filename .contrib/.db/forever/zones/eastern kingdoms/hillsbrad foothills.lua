@@ -1040,6 +1040,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					}),
 				},
 			}),
+			n(2264, {	-- Hillsbrad Tailor
+				coords = {
+					{ 35.4, 43.6, MAP.HILLSBRAD_FOOTHILLS },
+					{ 36.4, 44.2, MAP.HILLSBRAD_FOOTHILLS },
+					{ 36.4, 45.3, MAP.HILLSBRAD_FOOTHILLS },
+					{ 36.4, 45.6, MAP.HILLSBRAD_FOOTHILLS },
+					{ 36.7, 44.5, MAP.HILLSBRAD_FOOTHILLS },
+					{ 36.8, 44.2, MAP.HILLSBRAD_FOOTHILLS },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_KNITTED"),	-- Knitted
+					{ "pop" },
+				},
+			}),
 			n(2388, {	-- Innkeeper Shay <Innkeeper>
 				coord = { 62.6, 19.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
@@ -1049,6 +1064,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 			n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
 				coord = { 80.0, 39.0, MAP.HILLSBRAD_FOOTHILLS },
+				sym = {
+					SymSelector.select("VENDOR_CURED_LEATHER"),	-- Cured Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -1167,6 +1186,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(3543, {	-- Robert Aebischer <Superior Armorsmith>
 				coord = { 51.2, 57.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
+					{ "pop" },
+				},
 				groups = {
 					i(4797, {	-- Fiery Cloak
 						isLimited = true,

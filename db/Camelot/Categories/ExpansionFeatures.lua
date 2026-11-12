@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local cu,flt,h,i,n,p,prof,q,qo,s=_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-h(-554,{symselector=3,u=3,g={
+h(-554,{symselector=4,u=3,g={
 h(-88,{
 s(162989,16674,{b=1,f=6,loc=42,lvl=58}),
 s(163001,16686,{b=1,f=4,loc=40,lvl=57}),

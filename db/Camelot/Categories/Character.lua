@@ -375,28 +375,6 @@ ach(62033,{awp=16001,g={
 crit(550,{achID=62033,id=12,providers={{"n",10813}}})}}),
 ach(62031,{awp=16001}),
 ach(64283,{awp=16001})}),
-h(-22,{description="Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, and quivers by Bowyers and Fletchers.",g={
-flt(37,{
-s(160239,11284,{f=37,lvl=40}),
-s(156868,2519,{f=37,lvl=10}),
-s(160240,11285,{f=37,lvl=40}),
-s(156867,2516,{f=37}),
-s(157100,3030,{f=37,lvl=25}),
-s(156865,2512,{f=37}),
-s(156866,2515,{f=37,lvl=10}),
-s(157101,3033,{f=37,lvl=25})}),
-flt(113,{
-s(146735,2101,{f=113,spellID=29418}),
-s(146743,11362,{f=113,lvl=10,spellID=29418}),
-s(146739,5439,{f=113,spellID=29418})}),
-flt(36,{
-s(157042,2946,{f=36,lvl=3}),
-s(157141,3137,{f=36,lvl=22}),
-s(162233,15326,{f=36,lvl=35}),
-s(157136,3107,{f=36,lvl=11}),
-s(157140,3135,{f=36,lvl=11}),
-s(157139,3131,{f=36,lvl=3}),
-s(162234,15327,{f=36,lvl=35})})}}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(891,{icon=374217,r=2}),

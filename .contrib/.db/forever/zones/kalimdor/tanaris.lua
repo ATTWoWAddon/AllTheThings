@@ -1344,6 +1344,17 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(21358),	-- Pattern: Soul Pouch (RECIPE!)
 				},
 			}),
+			n(8129, {	-- Wrinkle Goodsteel <Superior Armor Crafter>
+				coord = { 50.8, 27.6, MAP.TANARIS },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(11206, {	-- Formula: Enchant Cloak - Lesser Agility (RECIPE!)

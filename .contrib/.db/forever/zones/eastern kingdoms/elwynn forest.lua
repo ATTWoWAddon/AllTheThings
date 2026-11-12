@@ -363,33 +363,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				n(VENDORS, {
 					n(190, {	-- Dermot Johns <Cloth & Leather Armor Merchant>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
-						sym = {{ "select", "itemID",
-							2122,	-- Cracked Leather Belt
-							2123,	-- Cracked Leather Boots
-							2124,	-- Cracked Leather Bracers
-							2125,	-- Cracked Leather Gloves
-							2126,	-- Cracked Leather Pants
-							2127,	-- Cracked Leather Vest
-							2121,	-- Thin Cloth Armor
-							3599,	-- Thin Cloth Belt
-							3600,	-- Thin Cloth Bracers
-							2119,	-- Thin Cloth Gloves
-							2120,	-- Thin Cloth Pants
-							2117,	-- Thin Cloth Shoes
-						}},
+						sym = {
+							{ "select", "symselector",
+								SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
+								SymSelector.VENDOR_THIN_CLOTH,	-- Thin Cloth
+							},
+							{ "pop" },
+						},
 					}),
 					n(1213, {	-- Godric Rothgar <Armorer & Shieldcrafter>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
-						sym = {{ "select", "itemID",
-							2129,	-- Large Round Shield
-							17184,	-- Small Shield
-							2380,	-- Tarnished Chain Belt
-							2383,	-- Tarnished Chain Boots
-							2384,	-- Tarnished Chain Bracers
-							2385,	-- Tarnished Chain Gloves
-							2381,	-- Tarnished Chain Leggings
-							2379,	-- Tarnished Chain Vest
-						}},
+						sym = {
+							SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
+							{ "pop" },
+							{ "select", "itemID",
+								2129,	-- Large Round Shield
+								17184,	-- Small Shield
+							},
+						},
 					}),
 					n(78, {	-- Janos Hammerknuckle <Weaponsmith>
 						coord = { 47.2, 41.8, MAP.ELWYNN_FOREST },
@@ -403,6 +394,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							2131,	-- Shortsword
 							2132,	-- Short Staff
 						}},
+					}),
+					n(1249, {	-- Quartermaster Hudson <Armorer & Shieldcrafter>
+						coord = { 25.2, 74.0, MAP.ELWYNN_FOREST },
+						races = ALLIANCE_ONLY,
+						sym = {
+							SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
+							{ "pop" },
+						},
+					}),
+					n(896, {	-- Veldan Lightfoot <Leather Armor Merchant>
+						coord = { 25.2, 73.8, MAP.ELWYNN_FOREST },
+						races = ALLIANCE_ONLY,
+						sym = {
+							{ "select", "symselector",
+								SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+								SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+							},
+							{ "pop" },
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1751,16 +1761,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(2046, {	-- Andrew Krighton <Armorer & Shieldcrafter>
 				coord = { 41.7, 65.9, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					1201,	-- Dull Heater Shield
-					2392,	-- Light Mail Armor
-					2393,	-- Light Mail Belt
-					2395,	-- Light Mail Boots
-					2396,	-- Light Mail Bracers
-					2397,	-- Light Mail Gloves
-					2394,	-- Light Mail Leggings
-					17186,	-- Small Targe
-				}},
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
+					{ "pop" },
+					{ "select", "itemID",
+						1201,	-- Dull Heater Shield
+						17186,	-- Small Targe
+					},
+				},
 			}),
 			n(844, {	-- Antonio Perelli <Traveling Salesman>
 				description = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest. If you cannot find him in this zone, check one of the other three.",
@@ -1863,32 +1871,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(74, {	-- Kurran Steele <Cloth & Leather Armor Merchant>
 				coord = { 41.4, 65.6, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-					1839,	-- Rough Leather Belt
-					796,	-- Rough Leather Boots
-					1840,	-- Rough Leather Bracers
-					797,	-- Rough Leather Gloves
-					798,	-- Rough Leather Pants
-					799,	-- Rough Leather Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+					},
+					{ "pop" },
+				},
 			}),
 			n(959, {	-- Morley Eberlein <Clothier>
 				coord = { 64.7, 69.5, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-				}},
+				sym = {
+					SymSelector.select("VENDOR_KNITTED"),	-- Knitted
+					{ "pop" },
+				},
 			}),
 			n(268238, {	-- Nordun Steadysight <Traveling Ranged Weapon Salesman>
 				coord = { 42.1, 66.6, MAP.ELWYNN_FOREST },

@@ -1435,6 +1435,17 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					}),
 				},
 			}),
+			n(1322, {	-- Maxton Strang <Mail Armor Merchant>
+				coords = {
+					{ 67.8, 8.4, MAP.DESOLACE },
+					{ 67.8, 8.6, MAP.DESOLACE },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_AUGMENTED_CHAIN"),	-- Augmented Chain
+					{ "pop" },
+				},
+			}),
 			n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
 				coord = { 35.6, 92.0, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },

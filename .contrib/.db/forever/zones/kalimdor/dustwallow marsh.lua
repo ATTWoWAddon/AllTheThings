@@ -1034,6 +1034,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			n(4886, {	-- Hans Weston <Armorer & Weaponsmith>
 				coord = { 64.6, 50.4, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
+					{ "pop" },
+				},
 				groups = {
 					i(12248, {	-- Daring Dirk
 						isLimited = true,
@@ -1062,6 +1066,14 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					i(11305, {	-- Dense Shortbow
 						isLimited = true,
 					}),
+				},
+			}),
+			n(4883, {	-- Krak <Armorer>
+				coord = { 36.4, 30.8, MAP.DUSTWALLOW_MARSH },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
+					{ "pop" },
 				},
 			}),
 			n(4888, {	-- Marie Holdston <Weaponsmith> / <Blacksmithing Trainer> [CATA+]

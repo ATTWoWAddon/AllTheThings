@@ -397,37 +397,36 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 					}),
 				}),
 				n(VENDORS, {
+					n(3162, {	-- Burdrak Harglhelm <Leather Armor Merchant>
+						coord = { 30.2, 45.2, MAP.DUN_MOROGH },
+						races = ALLIANCE_ONLY,
+						sym = {
+							SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
+							{ "pop" },
+						},
+					}),
 					n(836, {	-- Durnan Furcutter
 						coord = { 28.8, 66.4, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
-							2122,	-- Cracked Leather Belt
-							2123,	-- Cracked Leather Boots
-							2124,	-- Cracked Leather Bracers
-							2125,	-- Cracked Leather Gloves
-							2126,	-- Cracked Leather Pants
-							2127,	-- Cracked Leather Vest
-							2121,	-- Thin Cloth Armor
-							3599,	-- Thin Cloth Belt
-							3600,	-- Thin Cloth Bracers
-							2119,	-- Thin Cloth Gloves
-							2120,	-- Thin Cloth Pants
-							2117,	-- Thin Cloth Shoes
-						}},
+						sym = {
+							{ "select", "symselector",
+								SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
+								SymSelector.VENDOR_THIN_CLOTH,	-- Thin Cloth
+							},
+							{ "pop" },
+						},
 					}),
 					n(1104, {	-- Grundel Harkin <Armorer>
 						coord = { 28.8, 67.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
-							2129,	-- Large Round Shield
-							17184,	-- Small Shield
-							2380,	-- Tarnished Chain Belt
-							2383,	-- Tarnished Chain Boots
-							2384,	-- Tarnished Chain Bracers
-							2385,	-- Tarnished Chain Gloves
-							2381,	-- Tarnished Chain Leggings
-							2379,	-- Tarnished Chain Vest
-						}},
+						sym = {
+							SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
+							{ "pop" },
+							{ "select", "itemID",
+								2129,	-- Large Round Shield
+								17184,	-- Small Shield
+							},
+						},
 					}),
 					n(945, {	-- Rybrad Coldbank
 						coord = { 28.7, 67.7, MAP.DUN_MOROGH },
@@ -1826,44 +1825,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1240, {	-- Boran Ironclink
 				coord = { 45.2, 51.8, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2392),	-- Light Mail Armor
-					i(2393),	-- Light Mail Belt
-					i(2395),	-- Light Mail Boots
-					i(2396),	-- Light Mail Bracers
-					i(2397),	-- Light Mail Gloves
-					i(2394),	-- Light Mail Leggings
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
+					{ "pop" },
 				},
 			}),
 			n(1238, {	-- Gamili Frosthide
 				coord = { 45.2, 51.9, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2122,	-- Cracked Leather Belt
-					2123,	-- Cracked Leather Boots
-					2124,	-- Cracked Leather Bracers
-					2125,	-- Cracked Leather Gloves
-					2126,	-- Cracked Leather Pants
-					2127,	-- Cracked Leather Vest
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-					1839,	-- Rough Leather Belt
-					796,	-- Rough Leather Boots
-					1840,	-- Rough Leather Bracers
-					797,	-- Rough Leather Gloves
-					798,	-- Rough Leather Pants
-					799,	-- Rough Leather Vest
-					2121,	-- Thin Cloth Armor
-					3599,	-- Thin Cloth Belt
-					3600,	-- Thin Cloth Bracers
-					2119,	-- Thin Cloth Gloves
-					2120,	-- Thin Cloth Pants
-					2117,	-- Thin Cloth Shoes
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_THIN_CLOTH,	-- Thin Cloth
+					},
+					{ "pop" },
+				},
 			}),
 			n(1273, {	-- Grawn Thromwyn
 				coord = { 45.3, 52.1, MAP.DUN_MOROGH },

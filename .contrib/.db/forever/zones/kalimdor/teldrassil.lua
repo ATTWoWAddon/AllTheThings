@@ -328,38 +328,36 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				n(VENDORS, {
 					n(3592, {	-- Andiss
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
-							2129,	-- Large Round Shield
-							17184,	-- Small Shield
-							2380,	-- Tarnished Chain Belt
-							2383,	-- Tarnished Chain Boots
-							2384,	-- Tarnished Chain Bracers
-							2385,	-- Tarnished Chain Gloves
-							2381,	-- Tarnished Chain Leggings
-							2379,	-- Tarnished Chain Vest
-						}},
+						sym = {
+							SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
+							{ "pop" },
+							{ "select", "itemID",
+								2129,	-- Large Round Shield
+								17184,	-- Small Shield
+							},
+						},
+					}),
+					n(3611, {	-- Brannol Eaglemoon <Clothier>
+						coord = { 56.2, 60.2, MAP.TELDRASSIL },
+						races = ALLIANCE_ONLY,
+						sym = {
+							SymSelector.select("VENDOR_KNITTED"),	-- Knitted
+							{ "pop" },
+						},
 					}),
 					n(3591, {	-- Freja Nightwing
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
-							2122,	-- Cracked Leather Belt
-							2123,	-- Cracked Leather Boots
-							2124,	-- Cracked Leather Bracers
-							2125,	-- Cracked Leather Gloves
-							2126,	-- Cracked Leather Pants
-							2127,	-- Cracked Leather Vest
-						}},
+						sym = {
+							SymSelector.select("VENDOR_CRACKED_LEATHER"),	-- Cracked Leather
+							{ "pop" },
+						},
 					}),
 					n(3590, {	-- Janna Brightmoon
 						races = ALLIANCE_ONLY,
-						sym = {{ "select", "itemID",
-							2121,	-- Thin Cloth Armor
-							3599,	-- Thin Cloth Belt
-							3600,	-- Thin Cloth Bracers
-							2119,	-- Thin Cloth Gloves
-							2120,	-- Thin Cloth Pants
-							2117,	-- Thin Cloth Shoes
-						}},
+						sym = {
+							SymSelector.select("VENDOR_THIN_CLOTH"),	-- Thin Cloth
+							{ "pop" },
+						},
 					}),
 					n(3589, {	-- Keina
 						races = ALLIANCE_ONLY,
@@ -380,6 +378,28 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 							2132,	-- Short Staff
 							2131,	-- Shortsword
 						}},
+					}),
+					n(3613, {	-- Meri Ironweave <Armorer & Shieldcrafter>
+						coords = {
+							{ 56.2, 59.4, MAP.TELDRASSIL },
+							{ 56.2, 59.6, MAP.TELDRASSIL },
+						},
+						races = ALLIANCE_ONLY,
+						sym = {
+							SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
+							{ "pop" },
+						},
+					}),
+					n(3612, {	-- Sinda <Leather Armor Merchant>
+						coords = {
+							{ 56.2, 59.4, MAP.TELDRASSIL },
+							{ 56.2, 59.6, MAP.TELDRASSIL },
+						},
+						races = ALLIANCE_ONLY,
+						sym = {
+							SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
+							{ "pop" },
+						},
 					}),
 				}),
 			},

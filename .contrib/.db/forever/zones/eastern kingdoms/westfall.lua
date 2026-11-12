@@ -939,6 +939,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 				coord = { 43.4, 66.8, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4788, {	-- Agile Boots
 						isLimited = true,

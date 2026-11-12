@@ -968,6 +968,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(10858),	-- Plans: Solid Iron Maul (RECIPE!)
 				},
 			}),
+			n(1407, {	-- Sranda <Light Armor & Weapons Merchant>
+				coords = {
+					{ 3.0, 47.4, MAP.BADLANDS },
+					{ 3.0, 47.6, MAP.BADLANDS },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(2621, {	-- Cowl of Necromancy

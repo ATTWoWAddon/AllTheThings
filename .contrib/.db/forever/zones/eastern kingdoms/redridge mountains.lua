@@ -848,14 +848,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 				coord = { 83.2, 71.0, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-					237,	-- Cured Leather Pants
-				}},
+				sym = {
+					SymSelector.select("VENDOR_CURED_LEATHER"),	-- Cured Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -901,13 +897,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			n(956, {	-- Dorin Songblade <Armorer>
 				coord = { 25.8, 46.5, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(1853),	-- Scalemail Belt
-					i(287),	-- Scalemail Boots
-					i(1852),	-- Scalemail Bracers
-					i(718),	-- Scalemail Gloves
-					i(286),	-- Scalemail Pants
-					i(285),	-- Scalemail Vest
+				sym = {
+					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
+					{ "pop" },
 				},
 			}),
 			n(3091, {	-- Franklin Hamar <Tailoring Supplies>

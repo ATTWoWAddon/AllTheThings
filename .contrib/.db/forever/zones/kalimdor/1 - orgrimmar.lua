@@ -1040,48 +1040,20 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3316, {	-- Handor <Cloth & Leather Armor Merchant>
 				coord = { 62.8, 44.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2142,	-- Cuirboulli Belt
-					2143,	-- Cuirboulli Boots
-					2144,	-- Cuirboulli Bracers
-					2145,	-- Cuirboulli Gloves
-					2146,	-- Cuirboulli Pants
-					2141,	-- Cuirboulli Vest
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
+				},
 				groups = {
 					i(12256, {	-- Cindercloth Leggings
 						isLimited = true,
@@ -1661,25 +1633,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3321, {	-- Morgum <Leather Armor Merchant>
 				coord = { 56.0, 73.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+				},
 				groups = {
-					i(2371),	-- Battered Leather Belt
-					i(2373),	-- Battered Leather Boots
-					i(2374),	-- Battered Leather Bracers
-					i(2375),	-- Battered Leather Gloves
 					i(2370),	-- Battered Leather Harness
-					i(2372),	-- Battered Leather Pants
-					i(236),	-- Cured Leather Armor
-					i(1849),	-- Cured Leather Belt
-					i(238),	-- Cured Leather Boots
-					i(1850),	-- Cured Leather Bracers
-					i(239),	-- Cured Leather Gloves
-					i(237),	-- Cured Leather Pants
-					i(1843),	-- Tanned Leather Belt
-					i(843),	-- Tanned Leather Boots
-					i(1844),	-- Tanned Leather Bracers
-					i(844),	-- Tanned Leather Gloves
-					i(846),	-- Tanned Leather Jerkin
-					i(845),	-- Tanned Leather Pants
 				},
 			}),
 			n(3330, {	-- Muragus
@@ -1722,28 +1685,18 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3317, {	-- Ollanus <Cloth Armor Merchant>
 				coord = { 60.6, 58.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+						SymSelector.VENDOR_WOVEN,	-- Woven
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(3428),	-- Common Gray Shirt
 					i(16059),	-- Common Brown Shirt
 					i(16060),	-- Common White Shirt
-					i(837),	-- Heavy Weave Armor
-					i(3589),	-- Heavy Weave Belt
-					i(3590),	-- Heavy Weave Bracers
-					i(839),	-- Heavy Weave Gloves
-					i(838),	-- Heavy Weave Pants
-					i(840),	-- Heavy Weave Shoes
-					i(3597),	-- Thick Cloth Belt
-					i(3598),	-- Thick Cloth Bracers
-					i(203),	-- Thick Cloth Gloves
-					i(201),	-- Thick Cloth Pants
-					i(202),	-- Thick Cloth Shoes
-					i(200),	-- Thick Cloth Vest
-					i(3606),	-- Woven Belt
-					i(2367),	-- Woven Boots
-					i(3607),	-- Woven Bracers
-					i(2369),	-- Woven Gloves
-					i(2366),	-- Woven Pants
-					i(2364),	-- Woven Vest
 				},
 			}),
 			n(12796, {	-- Raider Bork <War Mount Quartermaster> [WRATH+] / Raider Bork <Mount Quartermaster>
@@ -1761,6 +1714,21 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 			}),
 			-- TODO: Finish this part.
+			n(3319, {	-- Sana <Mail Armor Merchant>
+				coords = {
+					{ 55.6, 73.6, MAP.ORGRIMMAR },
+					{ 55.8, 73.0, MAP.ORGRIMMAR },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_LIGHT_CHAIN,	-- Light Chain
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
+			}),
 			n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
 				coord = { 41.6, 68.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
@@ -1929,100 +1897,53 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3315, {	-- Tor'phan <Cloth & Leather Armor Merchant>
 				coord = { 62.6, 50.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(2617),	-- Burning Robes
 					i(2615),	-- Chromatic Robe
-					i(2142),	-- Cuirboulli Belt
-					i(2143),	-- Cuirboulli Boots
-					i(2144),	-- Cuirboulli Bracers
-					i(2145),	-- Cuirboulli Gloves
-					i(2146),	-- Cuirboulli Pants
-					i(2141),	-- Cuirboulli Vest
 					i(2613),	-- Double Stitched Robes
-					i(2435),	-- Embroidered Armor
-					i(3587),	-- Embroidered Belt
-					i(2438),	-- Embroidered Boots
-					i(3588),	-- Embroidered Bracers
-					i(2440),	-- Embroidered Gloves
-					i(3892),	-- Embroidered Hat
-					i(2437),	-- Embroidered Pants
-					i(2160),	-- Padded Armor
-					i(3591),	-- Padded Belt
-					i(2156),	-- Padded Boots
-					i(3592),	-- Padded Bracers
-					i(2158),	-- Padded Gloves
-					i(2159),	-- Padded Pants
 					i(12255, {	-- Pale Leggings
 						isLimited = true,
 					}),
 					i(2612),	-- Plain Robe
-					i(2471),	-- Reinforced Leather Belt
-					i(2473),	-- Reinforced Leather Boots
-					i(2474),	-- Reinforced Leather Bracers
-					i(3893),	-- Reinforced Leather Cap
-					i(2475),	-- Reinforced Leather Gloves
-					i(2472),	-- Reinforced Leather Pants
-					i(2470),	-- Reinforced Leather Vest
 					i(2614),	-- Robe Of Apprenticeship
-					i(3593),	-- Russet Belt
-					i(2432),	-- Russet Boots
-					i(3594),	-- Russet Bracers
-					i(2434),	-- Russet Gloves
-					i(3889),	-- Russet Hat
-					i(2431),	-- Russet Pants
-					i(2429),	-- Russet Vest
 					i(2616),	-- Shimmering Silk Robes
 					i(2618),	-- Silver Dress Robes
-					i(2464),	-- Studded Belt
-					i(2467),	-- Studded Boots
-					i(2468),	-- Studded Bracers
 					i(2463),	-- Studded Doublet
-					i(2469),	-- Studded Gloves
-					i(3890),	-- Studded Hat
-					i(2465),	-- Studded Pants
 				},
 			}),
 			n(5812, {	-- Tumi <Heavy Armor Merchant>
 				coord = { 82.4, 23.6, ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
 				groups = {
-					i(2419),	-- Augmented Chain Belt
-					i(2420),	-- Augmented Chain Boots
-					i(2421),	-- Augmented Chain Bracers
-					i(2422),	-- Augmented Chain Gloves
-					i(3891),	-- Augmented Chain Helm
-					i(2418),	-- Augmented Chain Leggings
-					i(2417),	-- Augmented Chain Vest
-					i(847),	-- Chainmail Armor
-					i(1845),	-- Chainmail Belt
-					i(849),	-- Chainmail Boots
-					i(1846),	-- Chainmail Bracers
-					i(850),	-- Chainmail Gloves
-					i(848),	-- Chainmail Pants
 					i(2451),	-- Crested Heater Shield
 					i(2448),	-- Heavy Pavise
 					i(2446),	-- Kite Shield
-					i(2392),	-- Light Mail Armor
-					i(2393),	-- Light Mail Belt
-					i(2395),	-- Light Mail Boots
-					i(2396),	-- Light Mail Bracers
-					i(2397),	-- Light Mail Gloves
-					i(2394),	-- Light Mail Leggings
 					i(17189),	-- Metal Buckler
 					i(17190),	-- Ornate Buckler
-					i(2148),	-- Polished Scale Belt
-					i(2149),	-- Polished Scale Boots
-					i(2150),	-- Polished Scale Bracers
-					i(2151),	-- Polished Scale Gloves
-					i(2152),	-- Polished Scale Leggings
-					i(2153),	-- Polished Scale Vest
 					i(17192),	-- Reinforced Targe
-					i(1853),	-- Scalemail Belt
-					i(287),	-- Scalemail Boots
-					i(1852),	-- Scalemail Bracers
-					i(718),	-- Scalemail Gloves
-					i(286),	-- Scalemail Pants
-					i(285),	-- Scalemail Vest
 				},
 			}),
 			n(3314, {	-- Urtharo <Weapon Merchant>

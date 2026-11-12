@@ -1586,6 +1586,28 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 		}),
 		n(VENDORS, {
+			n(3075, {	-- Bronk Steelrage <Armorer and Shieldcrafter>
+				coords = {
+					{ 43.8, 77.8, MAP.MULGORE },
+					{ 44.2, 77.4, MAP.MULGORE },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
+					{ "pop" },
+				},
+			}),
+			n(3080, {	-- Harant Ironbrace <Armorer and Shieldcrafter>
+				coords = {
+					{ 45.4, 62.0, MAP.MULGORE },
+					{ 45.8, 58.6, MAP.MULGORE },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
+					{ "pop" },
+				},
+			}),
 			n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 				coord = { 47.6, 58.4, MAP.MULGORE },
 				-- Available to Tauren without faction requirements.
@@ -1635,6 +1657,28 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}, {	-- Exalted
 					},
 				}),
+			}),
+			n(3079, {	-- Varg Windwhisper <Leather Armor Merchant>
+				coords = {
+					{ 45.2, 62.0, MAP.MULGORE },
+					{ 45.8, 58.6, MAP.MULGORE },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_BATTERED_LEATHER"),	-- Battered Leather
+					{ "pop" },
+				},
+			}),
+			n(3074, {	-- Varia Hardhide <Leather Armor Merchant>
+				coords = {
+					{ 43.8, 77.6, MAP.MULGORE },
+					{ 44.2, 77.2, MAP.MULGORE },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_DIRTY_LEATHER"),	-- Dirty Leather
+					{ "pop" },
+				},
 			}),
 			n(3081, {	-- Wunna Darkmane <Trade Goods>
 				coord = { 46.2, 58.2, MAP.MULGORE },

@@ -871,6 +871,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 			}),
+			n(275603, {	-- Bragund Brightlink <Mail Armor Merchant>
+				coords = {
+					{ 12.4, 71.0, MAP.ALTERAC_MOUNTAINS },
+					{ 12.6, 70.8, MAP.ALTERAC_MOUNTAINS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
+			}),
 			n(2480, {	-- Bro'kin <Alchemy Supplies>
 				coord = { 38.0, 38.0, MAP.ALTERAC_MOUNTAINS },
 				groups = {
@@ -910,6 +925,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 			}),
+			n(275596, {	-- Rafael Langrom <Leather Armor Merchant>
+				coord = { 12.6, 71.0, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
 				coord = { 47.3, 35.2, MAP.ALTERAC_MOUNTAINS },
 				groups = {
@@ -918,12 +945,52 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
+			n(251980, {	-- Rueben Lauren <Cloth Armor Merchant>
+				coord = { 15.8, 65.2, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_RUSSET,	-- Russet
+					},
+					{ "pop" },
+				},
+			}),
+			n(251981, {	-- Sheddle Glossgleam <Cobbler>
+				coords = {
+					{ 16.4, 65.4, MAP.ALTERAC_MOUNTAINS },
+					{ 16.4, 65.6, MAP.ALTERAC_MOUNTAINS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					840,	-- Heavy Weave Shoes
+					792,	-- Knitted Sandals
+					2149,	-- Polished Scale Boots
+					2467,	-- Studded Boots
+					202,	-- Thick Cloth Shoes
+					2117,	-- Thin Cloth Shoes
+				}},
+			}),
 			n(6779, {	-- Smudge Thunderwood <Poison Vendor>
 				coord = { 86.0, 79.6, MAP.ALTERAC_MOUNTAINS },
 				groups = {
 					i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
 						classes = { ROGUE },
 					}),
+				},
+			}),
+			n(275598, {	-- Valerie Langrom <Leather Armor Merchant>
+				coord = { 12.6, 71.0, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+					},
+					{ "pop" },
 				},
 			}),
 			n(256372, {	-- Windle Sparkshine

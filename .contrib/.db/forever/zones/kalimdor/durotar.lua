@@ -1715,11 +1715,52 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 		}),
 		n(VENDORS, {
+			n(3166, {	-- Cutac <Cloth & Leather Armor Merchant>
+				coord = { 53.0, 40.8, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+						SymSelector.VENDOR_WOVEN,	-- Woven
+					},
+					{ "pop" },
+				},
+			}),
 			n(3881, {	-- Grimtak
 				coord = { 51.2, 42.6, MAP.DUROTAR },
 				races = HORDE_ONLY,
 				groups = {
 					i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
+				},
+			}),
+			n(3160, {	-- Huklah <Cloth & Leather Armor Merchant>
+				coord = { 40.6, 67.8, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_DIRTY_LEATHER,	-- Dirty Leather
+						SymSelector.VENDOR_TATTERED_CLOTH,	-- Tattered Cloth
+					},
+					{ "pop" },
+				},
+			}),
+			n(3161, {	-- Rarc <Armorer & Shieldcrafter>
+				coords = {
+					{ 40.4, 67.8, MAP.DUROTAR },
+					{ 40.6, 67.8, MAP.DUROTAR },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
+					{ "pop" },
+				},
+			}),
+			n(3167, {	-- Wuark <Armorer & Shieldcrafter>
+				coord = { 52.0, 41.2, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
+					{ "pop" },
 				},
 			}),
 			n(5942, {	-- Zansoa <Fishing Supplies>

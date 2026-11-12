@@ -680,6 +680,13 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			}),
 			n(12023, {	-- Kharedon <Light Armor Merchant>
 				coord = { 56.6, 29.8, MAP.MOONGLADE },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12254, {	-- Well Oiled Cloak
 						isLimited = true,

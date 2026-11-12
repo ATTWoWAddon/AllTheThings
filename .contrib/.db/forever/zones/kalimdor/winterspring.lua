@@ -845,6 +845,16 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 		}),
 		n(VENDORS, {
+			n(11183, {	-- Blixxrak <Light Armor Merchant>
+				coord = { 61.6, 37.8, MAP.WINTERSPRING },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(11187, {	-- Himmik <Food & Drink>
 				coord = { 61.2, 39.0, MAP.WINTERSPRING },
 				groups = {
@@ -854,6 +864,17 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			n(2303, {	-- Lyranne Feathersong <Food & Drink>
 				coord = { 52.0, 29.2, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
+			}),
+			n(11182, {	-- Nixxrak <Heavy Armor Merchant>
+				coord = { 61.6, 37.8, MAP.WINTERSPRING },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+				},
 			}),
 			n(11189, {	-- Qia <Trade Supplies>
 				coord = { 61.2, 37.2, MAP.WINTERSPRING },

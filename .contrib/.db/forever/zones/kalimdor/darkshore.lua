@@ -1197,6 +1197,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 		}),
 		n(VENDORS, {
+			n(4187, {	-- Harlon Thornguard <Armorer & Shieldsmith>
+				coord = { 37.0, 41.2, MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
+			}),
 			n(4307, {	-- Heldan Galesong <Fisherman>
 				coord = { 37.0, 56.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -1217,6 +1225,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			n(4186, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
 				coord = { 37.0, 41.2, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
+				},
 				groups = {
 					i(5786),	-- Pattern: Murloc Scale Belt (RECIPE!)
 					i(5787),	-- Pattern: Murloc Scale Breastplate (RECIPE!)
@@ -1235,6 +1247,17 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					1198,	-- Claymore
 					2207,	-- Jambiya
 				}},
+			}),
+			n(4185, {	-- Shaldyn <Clothier>
+				coords = {
+					{ 38.0, 40.6, MAP.DARKSHORE },
+					{ 38.2, 40.4, MAP.DARKSHORE },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+					{ "pop" },
+				},
 			}),
 			n(4189, {	-- Valdaron <Tailoring Supplies>
 				coord = { 38.1, 40.6, MAP.DARKSHORE },

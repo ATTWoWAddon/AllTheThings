@@ -702,6 +702,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 				},
 			}),
+			n(980, {	-- Grimnal <Mail & Plate Merchant>
+				coords = {
+					{ 45.0, 50.2, MAP.SWAMP_OF_SORROWS },
+					{ 45.0, 50.6, MAP.SWAMP_OF_SORROWS },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+				},
+			}),
 			n(11874, {	-- Masat T'andr <Superior Leatherworker>
 				coord = { 26.5, 31.4, MAP.SWAMP_OF_SORROWS },
 				races = ALLIANCE_ONLY,
@@ -727,6 +741,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			n(984, {	-- Thralosh <Cloth & Leather Armor Merchant>
 				coord = { 45.0, 51.6, MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12256, {	-- Cindercloth Leggings
 						isLimited = true,

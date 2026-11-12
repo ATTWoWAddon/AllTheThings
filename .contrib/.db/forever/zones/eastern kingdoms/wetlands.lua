@@ -1256,16 +1256,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1450, {	-- Brahnmar <Armorer>
 				coord = { 11.6, 59.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2446,	-- Kite Shield
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
+					{ "pop" },
+					{ "select", "itemID",
+						2446,	-- Kite Shield
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(1441, {	-- Brak Durnad <Weaponsmith>
 				coord = { 11.6, 59.5, MAP.WETLANDS },

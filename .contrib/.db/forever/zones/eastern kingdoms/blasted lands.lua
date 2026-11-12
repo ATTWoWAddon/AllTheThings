@@ -415,6 +415,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					}),
 				},
 			}),
+			n(5508, {	-- Strumner Flintheel <Armor Crafter>
+				coords = {
+					{ 66.0, 17.2, MAP.BLASTED_LANDS },
+					{ 66.0, 17.6, MAP.BLASTED_LANDS },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+				},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(8394, {	-- Basilisk Brain

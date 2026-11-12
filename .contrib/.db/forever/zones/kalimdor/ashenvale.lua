@@ -1306,6 +1306,23 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 			}),
 		}),
 		n(VENDORS, {
+			n(3952, {	-- Aeolynn <Clothier>
+				coords = {
+					{ 34.4, 49.4, MAP.ASHENVALE },
+					{ 34.4, 49.6, MAP.ASHENVALE },
+					{ 34.6, 49.6, MAP.ASHENVALE },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
+			}),
 			n(3951, {	-- Bhaldaran Ravenshade <Bowyer>
 				coords = {
 					{ 50.3, 67.2, MAP.ASHENVALE },
@@ -1315,6 +1332,20 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(11305, {	-- Dense Shortbow
 						isLimited = true,
 					}),
+				},
+			}),
+			n(6028, {	-- Burkrum <Heavy Armor Merchant>
+				coords = {
+					{ 73.4, 60.4, MAP.ASHENVALE },
+					{ 73.6, 60.4, MAP.ASHENVALE },
+				},
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
 				},
 			}),
 			n(3954, {	-- Dalria <Trade Goods>
@@ -1367,6 +1398,22 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(16072, {	-- Expert Cookbook
 						rank = 3,
 					}),
+				},
+			}),
+			n(3953, {	-- Tandaan Lightmane <Leather Armor Merchant>
+				coords = {
+					{ 34.4, 49.8, MAP.ASHENVALE },
+					{ 34.6, 49.8, MAP.ASHENVALE },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
 				},
 			}),
 			n(3960, {	-- Ulthaan <Butcher>

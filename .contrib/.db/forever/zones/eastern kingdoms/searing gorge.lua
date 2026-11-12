@@ -644,6 +644,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			}),
 		}),
 		n(VENDORS, {
+			n(11703, {	-- Graw Cornerstone <Mail Armor Merchant>
+				coords = {
+					{ 41.4, 74.4, MAP.SEARING_GORGE },
+					{ 41.4, 74.8, MAP.SEARING_GORGE },
+					{ 41.6, 74.4, MAP.SEARING_GORGE },
+					{ 41.6, 74.8, MAP.SEARING_GORGE },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
+			}),
 			n(14624, {	-- Master Smith Burninate <The Thorium Brotherhood>
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
 			}),

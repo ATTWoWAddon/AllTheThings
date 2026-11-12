@@ -644,95 +644,35 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4164, {	-- Cylania
 				coord = { 56.8, 53.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-					2392,	-- Light Mail Armor
-					2393,	-- Light Mail Belt
-					2395,	-- Light Mail Boots
-					2396,	-- Light Mail Bracers
-					2397,	-- Light Mail Gloves
-					2394,	-- Light Mail Leggings
-					1839,	-- Rough Leather Belt
-					796,	-- Rough Leather Boots
-					1840,	-- Rough Leather Bracers
-					797,	-- Rough Leather Gloves
-					798,	-- Rough Leather Pants
-					799,	-- Rough Leather Vest
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+				},
 			}),
 			n(4236, {	-- Cyridan
 				coord = { 52.6, 77.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2142,	-- Cuirboulli Belt
-					2143,	-- Cuirboulli Boots
-					2144,	-- Cuirboulli Bracers
-					2145,	-- Cuirboulli Gloves
-					2146,	-- Cuirboulli Pants
-					2141,	-- Cuirboulli Vest
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-					237,	-- Cured Leather Pants
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					1839,	-- Rough Leather Belt
-					796,	-- Rough Leather Boots
-					1840,	-- Rough Leather Bracers
-					797,	-- Rough Leather Gloves
-					798,	-- Rough Leather Pants
-					799,	-- Rough Leather Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
-				groups = {
-					i(2122),	-- Cracked Leather Belt
-					i(2123),	-- Cracked Leather Boots
-					i(2124),	-- Cracked Leather Bracers
-					i(2125),	-- Cracked Leather Gloves
-					i(2126),	-- Cracked Leather Pants
-					i(2127),	-- Cracked Leather Vest
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_STUDDED,	-- Studded
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
 				},
 			}),
 			n(4180, {	-- Ealyshia Dewwhisper
@@ -886,64 +826,24 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4177, {	-- Melea
 				coord = { 55.6, 75.0, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					2392,	-- Light Mail Armor
-					2393,	-- Light Mail Belt
-					2395,	-- Light Mail Boots
-					2396,	-- Light Mail Bracers
-					2397,	-- Light Mail Gloves
-					2394,	-- Light Mail Leggings
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-					285,	-- Scalemail Vest
-				}},
-				groups = {
-					i(2380),	-- Tarnished Chain Belt
-					i(2383),	-- Tarnished Chain Boots
-					i(2384),	-- Tarnished Chain Bracers
-					i(2385),	-- Tarnished Chain Gloves
-					i(2381),	-- Tarnished Chain Leggings
-					i(2379),	-- Tarnished Chain Vest
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+						SymSelector.VENDOR_TARNISHED_CHAIN,	-- Tarnished Chain
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 			n(4171, {	-- Merelyssa
@@ -1072,56 +972,22 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4175, {	-- Vinasia <Cloth Armor Merchant>
 				coord = { 60.7, 72.5, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					3602,	-- Knitted Belt
-					3603,	-- Knitted Bracers
-					793,	-- Knitted Gloves
-					794,	-- Knitted Pants
-					792,	-- Knitted Sandals
-					795,	-- Knitted Tunic
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+						SymSelector.VENDOR_THIN_CLOTH,	-- Thin Cloth
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12256, {	-- Cindercloth Leggings
 						isLimited = true,
 					}),
-					i(2121),	-- Thin Cloth Armor
-					i(3600),	-- Thin Cloth Bracers
-					i(3599),	-- Thin Cloth Belt
-					i(2119),	-- Thin Cloth Gloves
-					i(2120),	-- Thin Cloth Pants
-					i(2117),	-- Thin Cloth Shoes
 				},
 			}),
 		}),

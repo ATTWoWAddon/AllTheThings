@@ -2007,6 +2007,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 		}),
 		n(VENDORS, {
+			n(1294, {	-- Aldric Moore <Mail Armor Merchant>
+				coords = {
+					{ 54.8, 55.2, MAP.STORMWIND_CITY },
+					{ 54.8, 55.6, MAP.STORMWIND_CITY },
+					{ 62.0, 67.2, MAP.STORMWIND_CITY },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
+			}),
 			n(258568, {	-- Antonio Bolero
 				coord = { 53.5, 81.8, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -2065,41 +2081,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
 				coord = { 53.6, 57.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(1302, {	-- Bernard Gump <Florist>
 				coord = { 69.6, 71.4, MAP.STORMWIND_CITY },
@@ -2156,28 +2154,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1291, {	-- Carla Granger <Cloth Armor Merchant>
 				coord = { 62.2, 67.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(16059),	-- Common Brown Shirt
 					i(3428),	-- Common Grey Shirt
 					i(16060),	-- Common White Shirt
-					i(837),	-- Heavy Weave Armor
-					i(3589),	-- Heavy Weave Belt
-					i(3590),	-- Heavy Weave Bracers
-					i(839),	-- Heavy Weave Gloves
-					i(838),	-- Heavy Weave Pants
-					i(840),	-- Heavy Weave Shoes
-					i(3602),	-- Knitted Belt
-					i(3603),	-- Knitted Bracers
-					i(793),	-- Knitted Gloves
-					i(794),	-- Knitted Pants
-					i(792),	-- Knitted Sandals
-					i(795),	-- Knitted Tunic
-					i(3597),	-- Thick Cloth Belt
-					i(3598),	-- Thick Cloth Bracers
-					i(203),	-- Thick Cloth Gloves
-					i(201),	-- Thick Cloth Pants
-					i(202),	-- Thick Cloth Shoes
-					i(200),	-- Thick Cloth Vest
 				},
 			}),
 			n(5494, {	-- Catherine Leland <Fishing Supplier>
@@ -2225,47 +2213,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1314, {	-- Duncan Cullen <Light Armor Merchant>
 				coord = { 53.2, 81.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+				},
 				groups = {
-					i(2142),	-- Cuirboulli Belt
-					i(2143),	-- Cuirboulli Boots
-					i(2144),	-- Cuirboulli Bracers
-					i(2145),	-- Cuirboulli Gloves
-					i(2146),	-- Cuirboulli Pants
-					i(2141),	-- Cuirboulli Vest
-					i(2435),	-- Embroidered Armor
-					i(3587),	-- Embroidered Belt
-					i(2438),	-- Embroidered Boots
-					i(3588),	-- Embroidered Bracers
-					i(2440),	-- Embroidered Gloves
-					i(3892),	-- Embroidered Hat
-					i(2437),	-- Embroidered Pants
-					i(2160),	-- Padded Armor
-					i(3591),	-- Padded Belt
-					i(2156),	-- Padded Boots
-					i(3592),	-- Padded Bracers
-					i(2158),	-- Padded Gloves
-					i(2159),	-- Padded Pants
-					i(2471),	-- Reinforced Leather Belt
-					i(2473),	-- Reinforced Leather Boots
-					i(2474),	-- Reinforced Leather Bracers
-					i(3893),	-- Reinforced Leather Cap
-					i(2475),	-- Reinforced Leather Gloves
-					i(2472),	-- Reinforced Leather Pants
-					i(2470),	-- Reinforced Leather Vest
-					i(3593),	-- Russet Belt
-					i(2432),	-- Russet Boots
-					i(3594),	-- Russet Bracers
-					i(2434),	-- Russet Gloves
-					i(3889),	-- Russet Hat
-					i(2431),	-- Russet Pants
-					i(2429),	-- Russet Vest
-					i(2464),	-- Studded Belt
-					i(2467),	-- Studded Boots
-					i(2468),	-- Studded Bracers
 					i(2463),	-- Studded Doublet
-					i(2469),	-- Studded Gloves
-					i(3890),	-- Studded Hat
-					i(2465),	-- Studded Pants
 				},
 			}),
 			n(483, {	-- Elaine Trias <Mistress of Cheese>
@@ -2472,25 +2432,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1295, {	-- Lara Moore <Leather Armor Merchant>
 				coord = { 62.2, 67.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(236),	-- Cured Leather Armor
-					i(1849),	-- Cured Leather Belt
-					i(238),	-- Cured Leather Boots
-					i(1850),	-- Cured Leather Bracers
-					i(239),	-- Cured Leather Gloves
-					i(237),	-- Cured Leather Pants
-					i(1839),	-- Rough Leather Belt
-					i(796),	-- Rough Leather Boots
-					i(1840),	-- Rough Leather Bracers
-					i(797),	-- Rough Leather Gloves
-					i(798),	-- Rough Leather Pants
-					i(799),	-- Rough Leather Vest
-					i(1843),	-- Tanned Leather Belt
-					i(843),	-- Tanned Leather Boots
-					i(1844),	-- Tanned Leather Bracers
-					i(844),	-- Tanned Leather Gloves
-					i(846),	-- Tanned Leather Jerkin
-					i(845),	-- Tanned Leather Pants
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
 				},
 			}),
 			n(12783, {	-- Lieutenant Karter <Mount Vendor>
@@ -2616,6 +2564,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(272695),	-- Knight's Colors
 				}),
 			}),
+			n(1339, {	-- Mayda Thane <Cobbler>
+				coords = {
+					{ 67.0, 43.2, MAP.STORMWIND_CITY },
+					{ 71.4, 57.8, MAP.STORMWIND_CITY },
+					{ 71.6, 57.8, MAP.STORMWIND_CITY },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2420,	-- Augmented Chain Boots
+					2426,	-- Brigandine Boots
+					2438,	-- Embroidered Boots
+					2473,	-- Reinforced Leather Boots
+					2432,	-- Russet Boots
+					2467,	-- Studded Boots
+				}},
+			}),
 			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
 				coord = { 76.8, 65.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
@@ -2689,41 +2653,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1323, {	-- Osric Strang <Heavy Armor Merchant>
 				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(5193, {	-- Rebecca Laughlin <Tabard Designer>
 				coord = { 64.0, 77.2, MAP.STORMWIND_CITY },
@@ -2742,22 +2688,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1320, {	-- Seoman Griffith <Leather Armor Merchant>
 				coord = { 72.0, 62.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
+				},
 			}),
 			n(1350, {	-- Theresa Moulaine <Robe Vendor>
 				coord = { 53.4, 58.0, MAP.STORMWIND_CITY },
@@ -2785,20 +2725,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 				coord = { 77.2, 61.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-					285,	-- Scalemail Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
 			}),
 			n(1309, {	-- Wynne Larson <Robe Merchant>
 				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },

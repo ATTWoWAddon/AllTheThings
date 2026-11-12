@@ -3324,6 +3324,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
+				sym = {
+					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
+					{ "pop" },
+				},
 				groups = {
 					i(4799, {	-- Antiquated Cloak
 						isLimited = true,
@@ -3354,11 +3358,15 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3486, {	-- Halija Whitestrider <Clothier>
 				coord = { 52.2, 31.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
-				sym = {{ "select", "itemID",
-					16059,	-- Common Brown Shirt
-					3428,	-- Common Grey Shirt
-					16060,	-- Common White Shirt
-				}},
+				sym = {
+					SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+					{ "pop" },
+					{ "select", "itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					},
+				},
 				groups = {
 					i(4790, {	-- Inferno Cloak
 						isLimited = true,
@@ -3402,6 +3410,17 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					2027,	-- Scimitar
 				}},
 			}),
+			n(3483, {	-- Jahan Hawkwing <Leather & Mail Armor Merchant>
+				coord = { 51.2, 29.0, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(248202, {	-- Jim'bek <Tailor>
 				coord = { 49.6, 29.6, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3411,6 +3430,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3683, {	-- Kiknikle <Stylish Clothier>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+					{ "pop" },
+				},
 				groups = {
 					i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 						isLimited = true,
@@ -3492,6 +3515,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3684, {	-- Pizznukle <Leather Armor Merchant>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4788, {	-- Agile Boots
 						isLimited = true,
@@ -3513,6 +3540,14 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(5640, {	-- Recipe: Rage Potion (RECIPE!)
 						isLimited = true,
 					}),
+				},
+			}),
+			n(10380, {	-- Sanuye Runetotem <Leather Armor Merchant>
+				coord = { 45.0, 59.0, MAP.THE_BARRENS },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
 				},
 			}),
 			n(8307, {	-- Tarban Hearthgrain <Baker>
@@ -3542,20 +3577,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
-				sym = {{ "select", "itemID",
-					200,	-- Thick Cloth Vest
-					3597,	-- Thick Cloth Belt
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					237,	-- Cured Leather Pants
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(4795, {	-- Bear Bracers
 						isLimited = true,
@@ -3571,6 +3599,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
 				coord = { 43.8, 12.2, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
+					{ "pop" },
+				},
 				groups = {
 					i(4799, {	-- Antiquated Cloak
 						isLimited = true,

@@ -1939,30 +1939,26 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(271478, {	-- Elaria Anvilwind
 				coord = { 59.5, 76.1, MAP.ZEPHRAS_ISLE },
+				sym = {
+					SymSelector.select("VENDOR_ZEPHRALI_MAIL"),	-- Zephrali (Mail)
+					{ "pop" },
+				},
 				groups = {
 					i(277083),	-- Zephrali Chain
 					i(277080),	-- Zephrali Chainmail
-					i(277082),	-- Zephrali Gauntlets
-					i(277085),	-- Zephrali Greaves
-					i(277084),	-- Zephrali Legguards
-					i(277081),	-- Zephrali Wristguards
 				},
 			}),
 			n(271483, {	-- Ergaan Eastwind
 				coord = { 59.7, 75.9, MAP.ZEPHRAS_ISLE },
+				sym = {
+					SymSelector.select("VENDOR_ZEPHRALI_LEATHER"),	-- Zephrali (Leather)
+					{ "pop" },
+				},
 				groups = {
 					i(277093),	-- Zephrali Armguards
-					i(277089),	-- Zephrali Belt
-					i(277091),	-- Zephrali Boots
-					i(277087),	-- Zephrali Bracers
-					i(277097),	-- Zephrali Footwraps
-					i(277088),	-- Zephrali Gloves
 					i(277086),	-- Zephrali Harness
-					i(277092),	-- Zephrali Jerkin
 					i(277094),	-- Zephrali Mitts
-					i(277096),	-- Zephrali Pants
 					i(277095),	-- Zephrali Strap
-					i(277090),	-- Zephrali Trousers
 				},
 			}),
 			n(271465, {	-- Falfaan Halfwind
@@ -1980,16 +1976,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251965, {	-- Fevrath Skyhammer
 				coord = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
-					2129,	-- Large Round Shield
-					17184,	-- Small Shield
-					2380,	-- Tarnished Chain Belt
-					2383,	-- Tarnished Chain Boots
-					2384,	-- Tarnished Chain Bracers
-					2385,	-- Tarnished Chain Gloves
-					2381,	-- Tarnished Chain Leggings
-					2379,	-- Tarnished Chain Vest
-				}},
+				sym = {
+					SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
+					{ "pop" },
+					{ "select", "itemID",
+						2129,	-- Large Round Shield
+						17184,	-- Small Shield
+					},
+				},
 			}),
 			n(265756, {	-- Genn Fairweather
 				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
@@ -2004,20 +1998,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251365, {	-- Jolee Brightmeadows
 				coord = { 43.5, 23.7, MAP.ZEPHRAS_ISLE },
-				sym = {{ "select", "itemID",
-					2122,	-- Cracked Leather Belt
-					2123,	-- Cracked Leather Boots
-					2124,	-- Cracked Leather Bracers
-					2125,	-- Cracked Leather Gloves
-					2126,	-- Cracked Leather Pants
-					2127,	-- Cracked Leather Vest
-					2121,	-- Thin Cloth Armor
-					3599,	-- Thin Cloth Belt
-					3600,	-- Thin Cloth Bracers
-					2119,	-- Thin Cloth Gloves
-					2120,	-- Thin Cloth Pants
-					2117,	-- Thin Cloth Shoes
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
+						SymSelector.VENDOR_THIN_CLOTH,	-- Thin Cloth
+					},
+					{ "pop" },
+				},
 			}),
 			n(257020, {	-- Nasalanna Windsinger <Enchanter>
 				coord = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
@@ -2059,16 +2046,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(271480, {	-- Taliaa Brightsky <Artisan Clothier>
 				coord = { 59.3, 76.2, MAP.ZEPHRAS_ISLE },
+				sym = {
+					SymSelector.select("VENDOR_ZEPHRALI_CLOTH"),	-- Zephrali (Cloth)
+					{ "pop" },
+				},
 				groups = {
 					i(273812),	-- Airy Magister's Shirt
 					i(273813),	-- Airy Peacekeeper's Shirt
 					i(273814),	-- Airy Skyseer's Shirt
-					i(277101),	-- Zephrali Cord
-					i(277099),	-- Zephrali Cuffs
-					i(277100),	-- Zephrali Handwraps
-					i(277102),	-- Zephrali Leggings
-					i(277103),	-- Zephrali Shoes
-					i(277098),	-- Zephrali Vest
 				},
 			}),
 			n(257421, {	-- Tephri Thriceforged <Weapon Merchant>

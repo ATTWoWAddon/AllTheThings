@@ -1015,6 +1015,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 				coord = { 44.6, 39.2, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4788, {	-- Agile Boots
 						isLimited = true,
@@ -1027,11 +1031,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			n(3554, {	-- Andrea Boynton <Clothier>
 				coord = { 44.6, 39.2, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					16059,	-- Common Brown Shirt
-					3428,	-- Common Grey Shirt
-					16060,	-- Common White Shirt
-				}},
+				sym = {
+					SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+					{ "pop" },
+					{ "select", "itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					},
+				},
 				groups = {
 					i(4782, {	-- Solstice Robe
 						isLimited = true,
@@ -1103,6 +1111,46 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(6346),	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 				},
 			}),
+			n(3529, {	-- Moonrage Armorer
+				coords = {
+					{ 45.3, 73.2, MAP.SILVERPINE_FOREST },
+					{ 46.4, 72.0, MAP.SILVERPINE_FOREST },
+					{ 46.4, 72.6, MAP.SILVERPINE_FOREST },
+					{ 46.6, 72.6, MAP.SILVERPINE_FOREST },
+					{ 46.9, 71.2, MAP.SILVERPINE_FOREST },
+					{ 47.0, 71.8, MAP.SILVERPINE_FOREST },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
+			}),
+			n(3533, {	-- Moonrage Leatherworker
+				coords = {
+					{ 43.9, 74.0, MAP.SILVERPINE_FOREST },
+					{ 44.0, 73.4, MAP.SILVERPINE_FOREST },
+					{ 44.6, 73.4, MAP.SILVERPINE_FOREST },
+				},
+				sym = {
+					SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
+					{ "pop" },
+				},
+			}),
+			n(3531, {	-- Moonrage Tailor
+				coords = {
+					{ 46.3, 72.4, MAP.SILVERPINE_FOREST },
+					{ 46.4, 72.6, MAP.SILVERPINE_FOREST },
+					{ 46.5, 72.3, MAP.SILVERPINE_FOREST },
+					{ 47.4, 72.5, MAP.SILVERPINE_FOREST },
+					{ 47.6, 72.3, MAP.SILVERPINE_FOREST },
+					{ 49.0, 71.8, MAP.SILVERPINE_FOREST },
+				},
+				sym = {
+					SymSelector.select("VENDOR_KNITTED"),	-- Knitted
+					{ "pop" },
+				},
+			}),
 			n(9553, {	-- Nadia Vernon <Bowyer>
 				coord = { 45.0, 39.4, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
@@ -1110,6 +1158,54 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					i(11304, {	-- Fine Longbow
 						isLimited = true,
 					}),
+				},
+			}),
+			n(3528, {	-- Pyrewood Armorer
+				coords = {
+					{ 46.4, 71.8, MAP.SILVERPINE_FOREST },
+					{ 46.4, 72.7, MAP.SILVERPINE_FOREST },
+					{ 46.5, 72.4, MAP.SILVERPINE_FOREST },
+					{ 46.6, 72.6, MAP.SILVERPINE_FOREST },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
+			}),
+			n(3532, {	-- Pyrewood Leatherworker
+				coords = {
+					{ 44.0, 73.9, MAP.SILVERPINE_FOREST },
+					{ 44.2, 73.4, MAP.SILVERPINE_FOREST },
+					{ 44.6, 73.4, MAP.SILVERPINE_FOREST },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
+					{ "pop" },
+				},
+			}),
+			n(3530, {	-- Pyrewood Tailor
+				coords = {
+					{ 45.8, 71.4, MAP.SILVERPINE_FOREST },
+					{ 46.2, 71.7, MAP.SILVERPINE_FOREST },
+					{ 46.4, 72.6, MAP.SILVERPINE_FOREST },
+					{ 46.5, 72.3, MAP.SILVERPINE_FOREST },
+					{ 46.6, 72.8, MAP.SILVERPINE_FOREST },
+					{ 47.7, 72.2, MAP.SILVERPINE_FOREST },
+				},
+				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_KNITTED"),	-- Knitted
+					{ "pop" },
+				},
+			}),
+			n(3553, {	-- Sebastian Meloche <Armorer>
+				coord = { 43.2, 41.2, MAP.SILVERPINE_FOREST },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
 				},
 			}),
 			n(3534, {	-- Wallace the Blind <Weaponsmith>

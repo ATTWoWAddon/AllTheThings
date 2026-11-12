@@ -2007,13 +2007,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(2135, {	-- Abe Winters <Apprentice Armorer>
 				coord = { 60.2, 53.0, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
+					{ "pop" },
+				},
 				groups = {
-					i(2398),	-- Light Chain Armor
-					i(2399),	-- Light Chain Belt
-					i(2400),	-- Light Chain Leggings
-					i(2401),	-- Light Chain Boots
-					i(2402),	-- Light Chain Bracers
-					i(2403),	-- Light Chain Gloves
 					i(17185),	-- Round Buckler
 					i(2376),	-- Worn Heater Shield
 				},
@@ -2025,12 +2023,32 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
 				},
 			}),
+			n(276067, {	-- Angus Hammerhand <Blacksmith>
+				coord = { 21.2, 45.8, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
+					{ "pop" },
+				},
+			}),
 			n(11057, {	-- Apothecary Dithers
 				coord = { 83.2, 69.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				groups = {
 					i(13320),	-- Arcane Quickener
 					i(13370),	-- Vitreous Focuser
+				},
+			}),
+			n(2113, {	-- Archibald Kava <Cloth & Leather Armor Merchant>
+				coord = { 32.4, 65.6, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_DIRTY_LEATHER,	-- Dirty Leather
+						SymSelector.VENDOR_TATTERED_CLOTH,	-- Tattered Cloth
+					},
+					{ "pop" },
 				},
 			}),
 			n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
@@ -2040,13 +2058,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(2116, {	-- Blacksmith Rand <Apprentice Armorer>
 				coord = { 32.4, 66.2, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
+					{ "pop" },
+				},
 				groups = {
-					i(2386),	-- Rusted Chain Vest
-					i(2387),	-- Rusted Chain Belt
-					i(2388),	-- Rusted Chain Leggings
-					i(2389),	-- Rusted Chain Boots
-					i(2390),	-- Rusted Chain Bracers
-					i(2391),	-- Rusted Chain Gloves
 					i(17183),	-- Dented Buckler
 					i(1200),	-- Large Wooden Shield
 				},
@@ -2054,10 +2070,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(3522, {	-- Constance Brisboise <Apprentice Clothier>
 				coord = { 52.6, 55.6, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_WOVEN"),	-- Woven
+					{ "pop" },
+				},
 				groups = {
 					i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 						isLimited = true,
 					}),
+				},
+			}),
+			n(2137, {	-- Eliza Callen <Leather Armor Merchant>
+				coord = { 60.4, 52.8, MAP.TIRISFAL_GLADES },
+				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_BATTERED_LEATHER"),	-- Battered Leather
+					{ "pop" },
 				},
 			}),
 			n(3550, {	-- Martine Tramblay <Fishing Supplies>

@@ -4269,7 +4269,7 @@ o(409692,{awp=16001,coords={
 i(209846,{b=1})}})}),
 h(-58,{
 n(5783,{coords={
-[1413]={{45.9,35.7}}},sym={{"select","itemID",1849,1850,236,238,239,237}},g={
+[1413]={{45.9,35.7}}},sym={{"select","symselector",3},{"pop"}},g={
 r(7953,{itemID=6474,learnedAt=65,requireSkill=165,skillID=2945}),
 r(7954,{itemID=6475,learnedAt=80,requireSkill=165,skillID=2945})}})}),
 h(-63,{

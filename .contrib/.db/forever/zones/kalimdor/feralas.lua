@@ -1479,6 +1479,17 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 				},
 			}),
+			n(10293, {	-- Dulciea Frostmoon <Cloth Armor Merchant>
+				coord = { 30.8, 43.2, MAP.FERALAS },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_RUSSET,	-- Russet
+					},
+					{ "pop" },
+				},
+			}),
 			n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
 				coords = {
 					{ 74.4, 42.8, MAP.FERALAS },
@@ -1531,6 +1542,17 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 				},
 			}),
+			n(1695, {	-- Rendow <Leather Armor Merchant>
+				coord = { 89.4, 45.8, MAP.FERALAS },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(8145, {	-- Sheendra Tallgrass <Trade Supplies>
 				coord = { 74.6, 42.8, MAP.FERALAS },
 				races = HORDE_ONLY,
@@ -1556,6 +1578,13 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
 				coord = { 74.6, 42.6, MAP.FERALAS },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12253, {	-- Brilliant Red Cloak
 						isLimited = true,

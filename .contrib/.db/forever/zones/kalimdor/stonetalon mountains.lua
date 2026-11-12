@@ -940,6 +940,17 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
+			n(4188, {	-- Illyanie <Cloth Armor Merchant>
+				coord = { 35.4, 7.0, MAP.STONETALON_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
+			}),
 			n(4083, {	-- Jeeda <Apprentice Witch Doctor>
 				coords = {
 					{ 47.6, 61.6, MAP.STONETALON_MOUNTAINS },
@@ -963,6 +974,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 			}),
 			n(4085, {	-- Nizzik <Venture Armor Salesman>
 				coord = { 62.6, 40.2, MAP.STONETALON_MOUNTAINS },
+				sym = {
+					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
+					{ "pop" },
+				},
 				groups = {
 					i(4827),	-- Wizard's Belt
 					i(4828),	-- Nightwind Belt
