@@ -552,3 +552,11 @@ do
 	app.AddGenericFieldConverter("criteriaID")
 	app.AddSimpleCollectibleSwap("AchievementCriteria", "Achievements")
 end
+
+-- Add a Quest LockCriteria based on achID & Achievement info
+app.AddEventHandler("OnLoad", function()
+	app.AddQuestLockCriteriaFuncs("achID",
+		function(achID) return select(4, GetAchievementInfo(achID)) end,
+		ACHIEVEMENT_UNLOCKED or "Achievement Earned",
+		function(achID) return select(2, GetAchievementInfo(achID)) end)
+end)

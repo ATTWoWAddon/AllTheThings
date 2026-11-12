@@ -1301,16 +1301,6 @@ end
 local LockedQuestCache, LockedBreadcrumbCache = {}, {}
 -- Lock Criteria for Complex Quest Locking
 local criteriaFuncs = {
-	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
-	-- The achievement functions would be cached more efficiently in that file and be able to version properly.
-	achID = function(achievementID)
-		return select(4, GetAchievementInfo(achievementID))
-	end,
-	label_achID = ACHIEVEMENT_UNLOCKED or "Achievement Earned",
-	text_achID = function(achievementID)
-		return select(2, GetAchievementInfo(achievementID));
-	end,
-
 	lvl = function(lvl)
 		return app.Level >= lvl;
 	end,
@@ -1407,6 +1397,24 @@ local criteriaFuncs = {
 		return group.link or group.text or RETRIEVING_DATA;
 	end,
 };
+-- Allows adding a lockCriteria for a specific 'lockID' (i.e. "toyID") if it doesn't already exist
+app.AddQuestLockCriteriaFuncs = function(lockIDName, lockIDfunc, label, textFunc)
+	local fail
+	if type(lockIDName) ~= "string" then fail = true app.report("AddQuestLockCriteriaFuncs failed","lockIDName must be a string") end
+	if type(lockIDfunc) ~= "function" then fail = true app.report("AddQuestLockCriteriaFuncs failed","lockIDfunc must be a function") end
+	if type(label) ~= "string" then fail = true app.report("AddQuestLockCriteriaFuncs failed","label must be a string") end
+	if type(textFunc) ~= "function" then fail = true app.report("AddQuestLockCriteriaFuncs failed","textFunc must be a function") end
+	if criteriaFuncs[lockIDName] then
+		fail = true
+		app.report("AddQuestLockCriteriaFuncs failed",lockIDName,"already exists as a defined Lock Criteria")
+	end
+
+	if fail then return end
+
+	criteriaFuncs[lockIDName] = lockIDfunc
+	criteriaFuncs["label_"..lockIDName] = label
+	criteriaFuncs["text_"..lockIDName] = textFunc
+end
 app.AddEventHandler("OnLoad", function()
 	criteriaFuncs.spellID = app.IsSpellKnownHelper
 end)
@@ -1535,7 +1543,6 @@ local function LockedAsBreadcrumb(t)
 	end
 end
 app.LockedAsQuest = LockedAsQuest;
-app.QuestLockCriteriaFunctions = criteriaFuncs;
 local function QuestWithReputationDescription(t)
 	if app.Settings.Collectibles.Reputations then
 		local factionID = t.maxReputation[1];
@@ -2230,7 +2237,6 @@ app.AddEventHandler("OnLoad", function()
 			if lockCriteria then
 				-- list the reasons this may become locked due to lock criteria
 				local critKey, critValue;
-				local critFuncs = app.QuestLockCriteriaFunctions;
 				local critFunc;
 				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.UNAVAILABLE_WARNING_FORMAT:format(lockCriteria[1]),
@@ -2239,10 +2245,10 @@ app.AddEventHandler("OnLoad", function()
 				for i=2,#lockCriteria,2 do
 					critKey = lockCriteria[i];
 					critValue = lockCriteria[i + 1];
-					critFunc = critFuncs[critKey];
+					critFunc = criteriaFuncs[critKey];
 					if critFunc then
-						local label = critFuncs["label_"..critKey];
-						local text = tostring(critFuncs["text_"..critKey](critValue))
+						local label = criteriaFuncs["label_"..critKey];
+						local text = tostring(criteriaFuncs["text_"..critKey](critValue))
 						-- TODO: probably a more general way to check this on lines that can be retrieving
 						if not reference.working and IsRetrieving(text) then
 							reference.working = true
@@ -2257,9 +2263,8 @@ app.AddEventHandler("OnLoad", function()
 			if altQuests then
 				-- list the reasons this may become locked due to altQuests specifically
 				local critValue;
-				local critFuncs = app.QuestLockCriteriaFunctions;
-				local critFunc = critFuncs.questID;
-				local label = critFuncs.label_questID;
+				local critFunc = criteriaFuncs.questID;
+				local label = criteriaFuncs.label_questID;
 				local text;
 				tooltipInfo[#tooltipInfo + 1] = {
 					left = L.UNAVAILABLE_WARNING_FORMAT:format(1),
@@ -2268,7 +2273,7 @@ app.AddEventHandler("OnLoad", function()
 				for i=1,#altQuests,1 do
 					critValue = altQuests[i];
 					if critFunc then
-						text = critFuncs.text_questID(critValue);
+						text = criteriaFuncs.text_questID(critValue);
 						tooltipInfo[#tooltipInfo + 1] = {
 							left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 						}
