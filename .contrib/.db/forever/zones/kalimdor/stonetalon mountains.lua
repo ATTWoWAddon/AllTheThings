@@ -807,6 +807,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				coords = {
 					{ 28.2, 12.8, MAP.STONETALON_MOUNTAINS },
 				},
+				groups = {
+					i(284459, {	-- Dendweller's Hammer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5931, {	-- Foreman Rigger
 				coords = {
@@ -858,6 +863,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ 29.2, 67.0, MAP.STONETALON_MOUNTAINS },
 					{ 29.0, 73.6, MAP.STONETALON_MOUNTAINS },
 				},
+				groups = {
+					i(284399, {	-- Seared Grove Shoulderpads
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5928, {	-- Sorrow Wing
 				coords = {
@@ -866,6 +876,11 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ 49.6, 35.6, MAP.STONETALON_MOUNTAINS },
 					{ 51.6, 36.8, MAP.STONETALON_MOUNTAINS },
 					{ 51.4, 40.6, MAP.STONETALON_MOUNTAINS },
+				},
+				groups = {
+					i(284401, {	-- Sorrow's Shroud
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(5932, {	-- Taskmaster Whipfang
