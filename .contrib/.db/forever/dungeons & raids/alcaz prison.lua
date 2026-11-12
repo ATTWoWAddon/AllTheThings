@@ -11,6 +11,18 @@ instanceroot(2994, {	-- Alcaz Prison
 	lvl = 48,
 	groups = {
 		n(QUESTS, {
+			q(95194, {	-- Our Man in Theramore
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				coord = { 78.4, 70.6, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+			}),
+			q(95263, {	-- Somber News
+				sourceQuest = 95262,	-- The Secret Prison
+				-- TODO: Wowhead doesn't list where it starts yet (inside the prison, after learning what became of Varian Wrynn). Turned in to Sully McCleary (260271).
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+			}),
 			q(96772, {	-- The Dragon's Journal
 				qg = 20735,	-- Archmage Lan'dalock
 				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
@@ -22,6 +34,40 @@ instanceroot(2994, {	-- Alcaz Prison
 						cr = 255702,	-- Blazeroar
 					}),
 				},
+			}),
+			q(96335, {	-- The Man in the Iron Chains
+				-- TODO: Wowhead doesn't list the quest giver yet (the prisoner in chains after Blazeroar).
+				description = "This quest is not offered if The Questioner is killed before it is picked up.",
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Ornate Shackle Key
+						provider = { "i", 274029 },	-- Ornate Shackle Key
+						cr = 256236,	-- The Questioner
+					}),
+				},
+			}),
+			q(95198, {	-- The Return of the King?
+				sourceQuest = 95196,	-- Watch Yer Back
+				description = "Use the disguise, then talk to the guard standing next to Archmage Tervosh at the top of Jaina's tower and relieve him. Don't get too close to Jaina, she sees through the disguise.",
+				qg = 260271,	-- Sully McCleary
+				qi = 269000,	-- SI:7 Disguise Kit (PQI!)
+				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+			}),
+			q(95262, {	-- The Secret Prison
+				sourceQuest = 95198,	-- The Return of the King?
+				qg = 260271,	-- Sully McCleary
+				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+			}),
+			q(95196, {	-- Watch Yer Back
+				sourceQuest = 95194,	-- Our Man in Theramore
+				qg = 260146,	-- Sully McCleary
+				coord = { 66.2, 45.2, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
 			}),
 		}),
 		-- TODO: Overseer Wrex's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.
@@ -46,7 +92,6 @@ instanceroot(2994, {	-- Alcaz Prison
 		e(3415, {	-- The Questioner
 			creatureID = 256236,	-- The Questioner
 			groups = {
-				-- TODO: Ornate Shackle Key (274029) is a quest item; find the quest it's for.
 				i(276741),	-- Defias Enforcer's Shoulderpads
 				i(276743),	-- Fingerbreaker Stamp
 				i(276742),	-- Girdle of Extracted Answers
