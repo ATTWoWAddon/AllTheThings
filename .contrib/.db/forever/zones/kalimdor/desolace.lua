@@ -1648,3 +1648,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(8458, {	-- Completes with The Corrupter (2/5) (1481)
+		races = HORDE_ONLY,
+	}),
+});
