@@ -25,7 +25,6 @@ instanceroot(227, {	-- Blackfathom Deeps
 		}),
 		n(QUESTS, {
 			q(6564, {	-- Allegiance to the Old Gods (1/2)
-				description = "For this to drop, you need to be on the Essence of Aku'Mai quest.",
 				sourceQuest = 6563,	-- The Essence of Aku'Mai [Pre-CATA]
 				qs = 16790,	-- Damp Note (QS!)
 				races = HORDE_ONLY,
