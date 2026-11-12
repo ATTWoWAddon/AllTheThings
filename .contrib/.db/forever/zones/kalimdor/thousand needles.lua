@@ -648,7 +648,17 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/8 Stolen Freewind Supplies
-						provider = { "i", 279383 },	-- Stolen Freewind Supplies
+						providers = {
+							{ "i", 279383 },	-- Stolen Freewind Supplies
+							{ "o", 670338 },	-- Stolen Freewind Supplies
+						},
+						coords = {
+							{ 26.4, 52.2, MAP.THOUSAND_NEEDLES },
+							{ 26.1, 56.0, MAP.THOUSAND_NEEDLES },
+							{ 27.0, 55.3, MAP.THOUSAND_NEEDLES },
+							{ 26.9, 47.2, MAP.THOUSAND_NEEDLES },
+							{ 28.0, 50.5, MAP.THOUSAND_NEEDLES },
+						},
 					}),
 				},
 			}),

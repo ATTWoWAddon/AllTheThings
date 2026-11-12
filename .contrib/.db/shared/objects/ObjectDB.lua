@@ -351146,6 +351146,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Snow",
 		},
 	},
+	[670338] = {
+		readable = "Stolen Freewind Supplies",
+		model = 200442,
+		text = {
+			en = "Stolen Freewind Supplies",
+			de = "Gestohlene Vorräte vom Freiwindposten",
+			fr = "Fournitures de Librevent volées",
+			pt = "Suprimentos de Vento Livre Roubados",
+			ru = "Украденные припасы Вольного Ветра",
+			cn = "失窃的乱风岗补给品",
+		},
+	},
 	[670348] = {
 		readable = "Homebrew Hops",
 		text = {
