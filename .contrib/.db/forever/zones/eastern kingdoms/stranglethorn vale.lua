@@ -2045,6 +2045,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(97453, {	-- Weed Whacked
+				qg = 269166,	-- Gemmil
+				coord = { 32.8, 28.4, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 33,
+				groups = {
+					objective(1, {	-- 0/6 Carnivorous Weed slain
+						provider = { "n", 269175 },	-- Carnivorous Weed
+						coord = { 33.6, 27.7, MAP.STRANGLETHORN_VALE },
+					}),
+				},
+			}),
 			q(583, {	-- Welcome to the Jungle
 				qg = 716,	-- Barnil Stonepot
 				coord = { 35.7, 10.5, MAP.STRANGLETHORN_VALE },
