@@ -771,6 +771,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					}),
 				},
 			}),
+			q(95143, {	-- Finding Tan'jani
+				qg = 2706,	-- Tor'gan
+				coord = { 74.6, 36.4, MAP.ARATHI_HIGHLANDS },
+				races = HORDE_ONLY,
+				lvl = 36,
+			}),
 			q(95913, {	-- Fit for a Princess
 				sourceQuest = 95561,	-- Apple of My Eye
 				qg = 263089,	-- Tessa Dawnbright
