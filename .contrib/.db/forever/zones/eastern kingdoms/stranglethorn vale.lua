@@ -1933,6 +1933,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(95385, {	-- Torn Mystical Scroll
+				qs = 217161,	-- Torn Mystical Scroll (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 35,
+				groups = {
+					i(277211),	-- Dudd's Thinkin' Cap
+				},
+			}),
 			q(9259, {	-- Traitor to the Bloodsail
 				qg = 16399,	-- Bloodsail Traitor
 				coord = { 31.8, 70.9, MAP.STRANGLETHORN_VALE },
@@ -2837,6 +2845,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					675,	-- Venture Co. Foreman
 					14492,	-- Verifonix <The Surveyor>
 				},
+			}),
+			i(217161, {	-- Torn Mystical Scroll (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 1564,	-- Bloodsail Warlock
 			}),
 			i(1996, {	-- Voodoo Band
 				cr = 660,	-- Bloodscalp Witch Doctor
