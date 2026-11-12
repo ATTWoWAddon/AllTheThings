@@ -24252,7 +24252,7 @@ q(7791,{coords={
 q(26190,{awp=40003,coords={
 [84]={{50.6,71.9}}},isDaily=1,qgs={42288},r=2,requireSkill=185,g={
 qo(1,{coords={
-[84]={{56.8,41.2}}},providers={{"i",57245},{"o",203800}},requireSkill=185}),
+[84]={{26.3,20.4},{26.3,46.8},{42.4,73.1},{43,71.3},{46.3,56.4},{46.4,58.2},{51.4,26.2},{54.9,68.4},{56,42.5},{56.8,41.3},{62.4,15.4},{62.7,50.4},{68.8,65.1},{69.4,40.9},{70.1,11},{70.7,43.4},{71.4,22.4},{74.1,50.3},{79.4,59.2}}},providers={{"i",57245},{"o",203800}},requireSkill=185}),
 cu(81,{requireSkill=185}),
 crit(15802,{achID=5474,awp=40200,id=2,phase=40,r=2})}}),
 q(5645,{altQuests={5641,5647},c={5},coords={
@@ -28771,35 +28771,35 @@ q(28427,{awp=40003,coords={
 q(28202,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={1,3},sourceQuests={28254},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)local raceID=_.RaceID if raceID==1 or raceID==3 or raceID==34 then	tinsert(tooltipInfo,{left="Solution:",right="2 Hides, 4 Muds, 2 Threads"})elseif raceID==29 then	tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})elseif raceID==32 then	tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end	end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)local raceID=_.RaceID if raceID==1 or raceID==3 or raceID==34 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="2 Hides, 4 Muds, 2 Threads"}elseif raceID==29 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}elseif raceID==32 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end	end,providers={{"i",63357},{"o",206947}}})}}),
 q(28203,{awp=40001,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={11,22,25},sourceQuests={28254},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28204,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={7},sourceQuests={28254},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="1 Hide, 3 Muds, 4 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="1 Hide, 3 Muds, 4 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28205,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={4},sourceQuests={28254},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28428,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={2,5},sourceQuests={28427},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="2 Hides, 4 Muds, 2 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="2 Hides, 4 Muds, 2 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28429,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={6,26},sourceQuests={28427},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28430,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={9},sourceQuests={28427},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="1 Hide, 3 Muds, 4 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="1 Hide, 3 Muds, 4 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28431,{awp=40003,coords={
 [36]={{45.4,46.3}}},qgs={48001},races={8,10},sourceQuests={28427},g={
 qo(1,{coords={
-[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})end,providers={{"i",63357},{"o",206947}}})}}),
+[36]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28279,{awp=40003,coords={
 [36]={{46.3,45.9}}},qgs={48110},r=2,sourceQuests={28266},g={
 qo(1,{providers={{"i",63390},{"n",48201}}})}}),
@@ -34109,24 +34109,32 @@ q(28733,{awp=40001,coords={
 [25]={{33.5,49.3}}},qgs={49687}}),
 q(527,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,u=2,g={
-qo(1,{providers={{"n",2266}},u=2}),
-qo(2,{providers={{"n",2360}},u=2}),
-qo(3,{providers={{"n",232}},u=2}),
-qo(4,{providers={{"n",2403}},u=2})}}),
+qo(1,{coords={
+[25]={{33,34.8}}},providers={{"n",2266}},u=2}),
+qo(2,{coords={
+[25]={{36.6,39.4}}},providers={{"n",2360}},u=2}),
+qo(3,{coords={
+[25]={{33,35}}},providers={{"n",232}},u=2}),
+qo(4,{coords={
+[25]={{35.2,38}}},providers={{"n",2403}},u=2})}}),
 q(528,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={527},u=2,g={
-qo(1,{providers={{"n",2267}},u=2})}}),
+qo(1,{coords={
+[25]={{30,42.8}}},providers={{"n",2267}},u=2})}}),
 q(529,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={528},u=2,g={
-qo(1,{providers={{"n",2404}},u=2}),
-qo(2,{providers={{"n",2265}},u=2}),
+qo(1,{coords={
+[25]={{32.2,45.2}}},providers={{"n",2404}},u=2}),
+qo(2,{coords={
+[25]={{32,45.6}}},providers={{"n",2265}},u=2}),
 qo(3,{coords={
 [25]={{32.1,45.4}}},providers={{"i",3564},{"o",1736}},u=2})}}),
 q(532,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={529},u=2,g={
 qo(1,{coords={
 [25]={{29.6,41.8}}},providers={{"n",2335}},u=2}),
-qo(2,{providers={{"n",2387}},u=2}),
+qo(2,{coords={
+[25]={{30,42.8}}},providers={{"n",2387}},u=2}),
 qo(3,{coords={
 [25]={{29.7,41.8}}},providers={{"o",1761}},u=2}),
 qo(4,{coords={
@@ -34135,12 +34143,16 @@ q(539,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={532},u=2,g={
 qo(1,{coords={
 [25]={{31,56.2}}},providers={{"n",2305}},u=2}),
-qo(2,{providers={{"n",2269}},u=2})}}),
+qo(2,{coords={
+[25]={{27.4,58}}},providers={{"n",2269}},u=2})}}),
 q(541,{coords={
 [25]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={539},u=2,g={
-qo(1,{providers={{"n",2344}},u=2}),
-qo(2,{providers={{"n",2345}},u=2}),
-qo(3,{providers={{"n",2346}},u=2}),
+qo(1,{coords={
+[25]={{70.6,79.8}}},providers={{"n",2344}},u=2}),
+qo(2,{coords={
+[25]={{71,80.4}}},providers={{"n",2345}},u=2}),
+qo(3,{coords={
+[25]={{71,78.6}}},providers={{"n",2346}},u=2}),
 qo(4,{coords={
 [25]={{72.6,80}}},providers={{"n",2304}},u=2})}}),
 q(550,{coords={
@@ -44440,7 +44452,8 @@ s(206243,59094,{b=1,f=5,loc=41,q=2}),
 s(206242,59093,{b=1,f=4,loc=43,q=2})}}),
 q(25734,{awp=40003,coords={
 [56]={{57.4,71.4}}},qgs={41129},r=2,sourceQuests={25726},g={
-qo(1,{providers={{"i",55242},{"o",203184}}})}}),
+qo(1,{coords={
+[56]={{47.8,66}}},providers={{"i",55242},{"o",203184}}})}}),
 q(25727,{awp=40003,coords={
 [56]={{57.5,71.7}}},qgs={41086},r=2,sourceQuests={25721},g={
 qo(1,{crs={41151},providers={{"i",55988}}}),
@@ -44650,7 +44663,8 @@ q(25803,{awp=40003,coords={
 [56]={{13.5,41.3}}},providers={{"o",261}},r=2,sourceQuests={25802}}),
 q(25395,{awp=40003,coords={
 [56]={{49.9,79.2}}},isBreadcrumb=1,nextQuests={25770},qgs={41075},r=2,sourceQuests={26137,28565},g={
-qo(1,{providers={{"i",55209},{"o",203151}}})}}),
+qo(1,{coords={
+[56]={{47.9,74.3}}},providers={{"i",55209},{"o",203151}}})}}),
 q(631,{coords={
 [56]={{49.9,18.2}}},lvl=28,qgs={1075},r=2,rwp=40003,u=2}),
 q(632,{coords={

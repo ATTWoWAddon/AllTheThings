@@ -1054,6 +1054,8 @@ L.SWITCH_NO_NEXT_PROFILE = "No next profile to switch to."
 L.SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location"
 L.SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object."
 L.SYMLINK = "Sym-Link"
+L.SYMSELECTOR_REFERENCES = "Also Available From"
+L.SYMSELECTOR_REFERENCES_DESC = "Places which also offer this through a shared listing, such as the vendors which sell a common vendor armor set."
 L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account."
 L.SYNC_PAGE = "Sync"
 L.TELEPORT_TO_FROM_DUNGEON = "Teleport to/from Dungeon"
@@ -13938,6 +13940,7 @@ local ObjectNames = {
 	[676760] = "Sturdy Chest",
 	[676761] = "Sturdy Chest",
 	[677414] = "Mislaid Curiosity",
+	[677416] = "Mislaid Curiosity",
 	[677417] = "Mislaid Curiosity",
 	[677418] = "Mislaid Curiosity",
 	[689304] = "Ancestral Bounty",
@@ -36016,6 +36019,7 @@ localize(ObjectNames, {
 	[673657] = "Schlangenhort",
 	[673863] = "Verknöchertes Relikt",
 	[675629] = "Zerbrochene Urne",
+	[677416] = "Verlegte Kuriosität",
 	[9999908] = "|cFFFFFFFFSchritt 1:|r Gather Consumables.",
 	[9999909] = "|cFFFFFFFFSchritt 2:|r Caverns of Consumption",
 	[9999910] = "|cFFFFFFFFSchritt 3:|r Fire Barrier",
@@ -44817,6 +44821,7 @@ localize(ObjectNames, {
 	[673657] = "Cache du serpent",
 	[673863] = "Relique ossifiée",
 	[675629] = "Urne brisée",
+	[677416] = "Curiosité fourvoyée",
 	[9000000] = "Pierre de vent sculptée",
 	[9999908] = "|cFFFFFFFFÉtape 1:|r Rassemblez les consommables.",
 	[9999909] = "|cFFFFFFFFÉtape 2:|r Caverns of Consumption",
@@ -60936,6 +60941,7 @@ localize(ObjectNames, {
 	[676759] = "Baú Resistente",
 	[676760] = "Baú Resistente",
 	[676761] = "Baú Resistente",
+	[677416] = "Curiosidade Desviada",
 	[701639] = "Tabuleta Amani",
 	[705929] = "Tesouro Mal Guardado",
 	[9999912] = "|cFFFFFFFFStep 5:|r Vigia Diligente",
@@ -70169,6 +70175,7 @@ localize(ObjectNames, {
 	[673657] = "Змеиное сокровище",
 	[673863] = "Окостеневшая реликвия",
 	[675629] = "Разбитая урна",
+	[677416] = "Потерянная вещица",
 	[9999908] = "|cFFFFFFFFШаг 1:|r Соберите Расходники.",
 	[9999909] = "|cFFFFFFFFШаг 2:|r Пещера Увядания",
 	[9999910] = "|cFFFFFFFFШаг 3:|r Огненный Барьер",
@@ -78009,6 +78016,7 @@ localize(ObjectNames, {
 	[673657] = "뱀의 비축품",
 	[673863] = "골화 성물",
 	[675629] = "깨진 단지",
+	[677416] = "잘못 놓인 진귀품",
 	[9999912] = "|cFFFFFFFFStep 5:|r 성실한 감시자",
 	[9999915] = "|cFFFFFFFFStep 8:|r 바위 감시병",
 	[9999917] = "|cFFFFFFFFStep 10:|r 이상한 돌",
@@ -87363,6 +87371,7 @@ localize(ObjectNames, {
 	[676759] = "Cofre robusto",
 	[676760] = "Cofre robusto",
 	[676761] = "Cofre robusto",
+	[677416] = "Curiosidad extraviada",
 	[705929] = "Tesoro extraviado",
 	[9999912] = "|cFFFFFFFFStep 5:|r Vigía diligente",
 	[9999915] = "|cFFFFFFFFStep 8:|r Vigía de piedra",
@@ -105763,6 +105772,7 @@ localize(ObjectNames, {
 	[673428] = "烏拉特克廢墟",
 	[673637] = "失蹤探險家的賞金",
 	[675629] = "破損的甕",
+	[677416] = "亂放的珍品",
 	[100000000] = "Sentinax Portal",
 })
 for i,objectID in ipairs(ALLIANCE_BONFIRES) do ObjectNames[objectID] = "聯盟篝火" end

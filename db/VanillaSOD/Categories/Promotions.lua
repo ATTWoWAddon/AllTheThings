@@ -6,8 +6,8 @@ local h,mnt,p,q,s,x=_.CreateCustomHeader,_.CreateMount,_.CreateSpecies,_.CreateQ
 categories.Promotions=
 h(-736,{SortPriority=90,g={
 h(-520,{awp=11101,g={
-p(107,{b=1,itemID=20371,petTypeID=1,q=1,spellID=24696,u=2})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(107,{b=1,itemID=20371,petTypeID=1,q=1,spellID=24696,u=2})}}),(_.OnInitDB.RegionExclusiveCN)(
+h(-782,{(_.OnInitDB.RegionExclusiveCN)(
 mnt(42777,{description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,u=2}))})),
 h(-521,{awp=10100,u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={

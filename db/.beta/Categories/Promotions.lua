@@ -238,7 +238,7 @@ crit(34632,{achID=664,awp=30002,id=3,u=2})}})}})}}),
 x(2,{awp=20003,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},rwp=30002,u=2}),
 p(131,{itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
-crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+crit(34633,{achID=665,awp=30002,id=3,u=2})}}),(_.OnInitDB.RegionExclusiveEU)(
 p(111,{description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,rwp=120007,u=3})}}),
@@ -1358,7 +1358,7 @@ h(-550,{awp=20403,rwp=30002,u=2,g={
 ach(1637,{providers={{"i",37297}},u=2}),
 p(179,{b=1,description="Win a battleground during the Spirit of Competition event to get this.",itemID=37297,npcID=27217,spellID=48406,u=2}),
 ach(1636,{providers={{"i",36941}},u=2}),
-s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	end	end,u=2}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+s(17489,36941,{b=1,description="Participate in a battleground during the Spirit of Competition event to get this.",f=9,OnUpdate=function(t)if _.IsQuestFlaggedCompleted(12187)then	if not settings.AccountWide.Quests then	t.u=2 else	t.u=nil end	end	end,u=2}),(_.OnInitDB.RegionExclusiveCN)(
 p(180,{b=1,description="Only available on Chinese realms.\n\nThroughout each day of the event in China, the code is mailed to 500 random players. Only players who have achieved various in-game milestones during the event are eligible for a chance to receive the code. Some milestones include having an Arena rating of 1650+, increasing reputation for certain Outland factions from less than revered to exalted, or raising a crafting profession from 350 or less to 375.",itemID=37298,npcID=27346,spellID=48408,u=2}))}}),
 h(-551,{awp=20001,u=10,g={
 flt(101,{u=10,g={
@@ -1618,7 +1618,7 @@ o(392032,{coords={
 o(405584,{coords={
 [2025]={{49.2,58.3}}},questID=75038,type="AsSubGenericObject"}),
 o(387722,{coords={
-[2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+[2025]={{57,66.7}}},questID=74852,type="AsSubGenericObject"})}})})}}),(_.OnInitDB.RegionExclusiveCN)(
 h(-780,{awp=110000,g={
 ach(40910,{description="Rewarded for aiding in the stress testing of the realms in China.",rwp=110005,u=2}),
 mnt(366962,{itemID=190231,lvl=10,u=2}),

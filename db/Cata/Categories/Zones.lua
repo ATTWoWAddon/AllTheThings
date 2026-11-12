@@ -5944,7 +5944,19 @@ i(23797,{awp=20001,b=1,crs={6073,6115,11697},lvl=19,q=1,r=1}),
 s(117259,1351,{awp=100107,coords={
 [1440]={{75.8,73.6},{77.4,75.4}}},crs={3808},f=4,loc=43,lvl=23,q=2,rwp=40003,u=2}),
 r(13617,{awp=40300,b=1,itemID=78343,learnedAt=145,q=2,requireSkill=333}),
-i(11151,{crs={3834,3919},f=200,q=2,requireSkill=333,rwp=40300,u=2})})}}),
+i(11151,{crs={3834,3919},f=200,q=2,requireSkill=333,rwp=40300,u=2}),
+i(16645,{q=1,rwp=40003,u=2}),
+i(16646,{q=1,rwp=40003,u=2}),
+i(16647,{q=1,rwp=40003,u=2}),
+i(16648,{q=1,rwp=40003,u=2}),
+i(16649,{q=1,rwp=40003,u=2}),
+i(16650,{q=1,rwp=40003,u=2}),
+i(16651,{q=1,rwp=40003,u=2}),
+i(16652,{q=1,rwp=40003,u=2}),
+i(16653,{q=1,rwp=40003,u=2}),
+i(16654,{q=1,rwp=40003,u=2}),
+i(16655,{q=1,rwp=40003,u=2}),
+i(16656,{q=1,rwp=40003,u=2})})}}),
 m(1447,{icon=236714,lore="Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",g={
 h(-12,{
 ach(4927,{awp=40003,r=1,sourceQuests={14155,14216,14295,14383,14388,14392,14422,14464,24434,24439,24449},g={
@@ -7008,6 +7020,27 @@ n(17246,{coords={
 r(25954,{itemID=21219,learnedAt=175,q=1,requireSkill=185}),
 r(25704,{itemID=21099,learnedAt=80,q=1,requireSkill=185})}})}),
 h(-63,{
+s(131493,21002,{f=4,loc=45,maps={467,1941,1943},q=0}),
+s(131494,21003,{f=4,loc=43,maps={467,1941,1943},q=0}),
+s(201184,21004,{f=3,maps={467,1941,1943},q=0}),
+s(131496,21005,{f=4,loc=44,maps={467,1941,1943},q=0}),
+s(131497,21006,{f=4,loc=46,maps={467,1941,1943},q=0}),
+s(131498,21007,{f=4,loc=42,maps={467,1941,1943},q=0}),
+s(131499,21008,{f=4,loc=47,maps={467,1941,1943},q=0}),
+s(131500,21009,{f=5,loc=45,maps={467,1941,1943},q=0}),
+s(131501,21010,{f=5,loc=47,maps={467,1941,1943},q=0}),
+s(131502,21011,{f=5,loc=43,maps={467,1941,1943},q=0}),
+s(131503,21012,{f=5,loc=44,maps={467,1941,1943},q=0}),
+s(131504,21013,{f=5,loc=46,maps={467,1941,1943},q=0}),
+s(131505,21014,{f=5,loc=42,maps={467,1941,1943},q=0}),
+s(131506,21015,{f=6,loc=45,maps={467,1941,1943},q=0}),
+s(131511,21020,{f=6,loc=47,maps={467,1941,1943},q=0}),
+s(131510,21019,{f=6,loc=43,maps={467,1941,1943},q=0}),
+s(131509,21018,{f=6,loc=44,maps={467,1941,1943},q=0}),
+s(131508,21017,{f=6,loc=46,maps={467,1941,1943},q=0}),
+s(131507,21016,{f=6,loc=42,maps={467,1941,1943},q=0}),
+s(131512,21021,{f=8,maps={467,1941,1943},q=0}),
+s(131513,21022,{f=8,maps={467,1941,1943},q=0}),
 i(23678,{b=1,coords={
 [1943]={{25.8,59.2},{26.8,48},{35.6,58.8},{45.6,45}}},crs={17202},lvl=5,q=1,r=2}),
 i(23850,{b=1,coords={
@@ -12995,7 +13028,7 @@ qo(1,{crs={2962,2963},providers={{"i",4751}}})}}),
 q(746,{coords={
 [1412]={{47.5,60.2}}},lvl=6,qgs={2993},r=1,rwp=40003,u=2,g={
 qo(1,{coords={
-[1412]={{34,46}}},cost={{"i",4702,1}},crs={2989,2990},providers={{"i",4703}},u=2}),
+[1412]={{34,46}}},cost={{"i",4702,5}},crs={2989,2990},providers={{"i",4703},{"o",1685}},u=2}),
 s(120068,4969,{b=1,f=6,loc=43,q=1,u=2}),
 s(120069,4970,{b=1,f=5,loc=46,q=1,u=2})}}),
 q(5655,{altQuests={5652,5654,5656,5657},c={5},coords={
@@ -22176,7 +22209,7 @@ q(7791,{coords={
 q(26190,{awp=40003,coords={
 [1453]={{50.6,71.9}}},isDaily=1,qgs={42288},r=2,requireSkill=185,g={
 qo(1,{coords={
-[1453]={{56.8,41.2}}},providers={{"i",57245},{"o",203800}},requireSkill=185}),
+[1453]={{26.3,20.4},{26.3,46.8},{42.4,73.1},{43,71.3},{46.3,56.4},{46.4,58.2},{51.4,26.2},{54.9,68.4},{56,42.5},{56.8,41.3},{62.4,15.4},{62.7,50.4},{68.8,65.1},{69.4,40.9},{70.1,11},{70.7,43.4},{71.4,22.4},{74.1,50.3},{79.4,59.2}}},providers={{"i",57245},{"o",203800}},requireSkill=185}),
 cu(402,{requireSkill=185}),
 crit(15802,{achID=5474,awp=40200,id=1,phase=40,r=2})}}),
 q(5645,{altQuests={5641,5647},c={5},coords={
@@ -26580,35 +26613,35 @@ q(28427,{awp=40003,coords={
 q(28202,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={1,3},sourceQuests={28254},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)local raceID=_.RaceID if raceID==1 or raceID==3 or raceID==34 then	tinsert(tooltipInfo,{left="Solution:",right="2 Hides, 4 Muds, 2 Threads"})elseif raceID==29 then	tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})elseif raceID==32 then	tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end	end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)local raceID=_.RaceID if raceID==1 or raceID==3 or raceID==34 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="2 Hides, 4 Muds, 2 Threads"}elseif raceID==29 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}elseif raceID==32 then	tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end	end,providers={{"i",63357},{"o",206947}}})}}),
 q(28203,{awp=40001,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={11,22},sourceQuests={28254},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28204,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={7},sourceQuests={28254},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="1 Hide, 3 Muds, 4 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="1 Hide, 3 Muds, 4 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28205,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={4},sourceQuests={28254},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28428,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={2,5},sourceQuests={28427},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="2 Hides, 4 Muds, 2 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="2 Hides, 4 Muds, 2 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28429,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={6},sourceQuests={28427},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="4 Hides, 1 Mud, 3 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="4 Hides, 1 Mud, 3 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28430,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={9},sourceQuests={28427},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="1 Hide, 3 Muds, 4 Threads"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="1 Hide, 3 Muds, 4 Threads"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28431,{awp=40003,coords={
 [1428]={{45.4,46.3}}},qgs={48001},races={8,10},sourceQuests={28427},g={
 qo(1,{coords={
-[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="Solution:",right="3 Hides, 2 Muds, 1 Thread"})end,providers={{"i",63357},{"o",206947}}})}}),
+[1428]={{45.4,46.2}}},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="Solution:",right="3 Hides, 2 Muds, 1 Thread"}end,providers={{"i",63357},{"o",206947}}})}}),
 q(28279,{awp=40003,coords={
 [1428]={{46.3,45.9}}},qgs={48110},r=2,sourceQuests={28266},g={
 qo(1,{providers={{"i",63390},{"n",48201}}})}}),
@@ -28665,7 +28698,8 @@ n(29587,{c={6},coords={
 [1423]={{84,49.8}}},g={
 mnt(54729,{b=1,c={6},itemID=40775,lvl=60,q=4})}}),
 n(28500,{c={6},coords={
-[1423]={{50.8,30.2}}},g={
+[124]={{50.8,30.2}},
+[1423]={{83.6,46}}},g={
 s(172116,38645,{f=7,loc=42,lvl=45,q=1}),
 s(172117,38646,{f=7,loc=45,lvl=45,q=1}),
 s(172118,38647,{f=7,loc=47,lvl=45,q=1}),
@@ -30710,27 +30744,27 @@ i(23553,{collectible=false,coords={
 [1941]={{54.8,79.6},{57.2,74},{60.8,68.8},{63,64.6}}},crs={15636},f=28,q=1}),
 i(23228,{b=1,coords={
 [1941]={{34.8,84},{35,84.6}}},crs={15409},lvl=7,q=1,r=1}),
-s(131493,21002,{f=4,loc=45,maps={467,1941},q=0}),
-s(131494,21003,{f=4,loc=43,maps={467,1941},q=0}),
-s(201184,21004,{f=3,maps={467,1941},q=0}),
-s(131496,21005,{f=4,loc=44,maps={467,1941},q=0}),
-s(131497,21006,{f=4,loc=46,maps={467,1941},q=0}),
-s(131498,21007,{f=4,loc=42,maps={467,1941},q=0}),
-s(131499,21008,{f=4,loc=47,maps={467,1941},q=0}),
-s(131500,21009,{f=5,loc=45,maps={467,1941},q=0}),
-s(131501,21010,{f=5,loc=47,maps={467,1941},q=0}),
-s(131502,21011,{f=5,loc=43,maps={467,1941},q=0}),
-s(131503,21012,{f=5,loc=44,maps={467,1941},q=0}),
-s(131504,21013,{f=5,loc=46,maps={467,1941},q=0}),
-s(131505,21014,{f=5,loc=42,maps={467,1941},q=0}),
-s(131506,21015,{f=6,loc=45,maps={467,1941},q=0}),
-s(131511,21020,{f=6,loc=47,maps={467,1941},q=0}),
-s(131510,21019,{f=6,loc=43,maps={467,1941},q=0}),
-s(131509,21018,{f=6,loc=44,maps={467,1941},q=0}),
-s(131508,21017,{f=6,loc=46,maps={467,1941},q=0}),
-s(131507,21016,{f=6,loc=42,maps={467,1941},q=0}),
-s(131512,21021,{f=8,maps={467,1941},q=0}),
-s(131513,21022,{f=8,maps={467,1941},q=0})})}}),
+s(131493,21002,{f=4,loc=45,maps={467,1941,1943},q=0}),
+s(131494,21003,{f=4,loc=43,maps={467,1941,1943},q=0}),
+s(201184,21004,{f=3,maps={467,1941,1943},q=0}),
+s(131496,21005,{f=4,loc=44,maps={467,1941,1943},q=0}),
+s(131497,21006,{f=4,loc=46,maps={467,1941,1943},q=0}),
+s(131498,21007,{f=4,loc=42,maps={467,1941,1943},q=0}),
+s(131499,21008,{f=4,loc=47,maps={467,1941,1943},q=0}),
+s(131500,21009,{f=5,loc=45,maps={467,1941,1943},q=0}),
+s(131501,21010,{f=5,loc=47,maps={467,1941,1943},q=0}),
+s(131502,21011,{f=5,loc=43,maps={467,1941,1943},q=0}),
+s(131503,21012,{f=5,loc=44,maps={467,1941,1943},q=0}),
+s(131504,21013,{f=5,loc=46,maps={467,1941,1943},q=0}),
+s(131505,21014,{f=5,loc=42,maps={467,1941,1943},q=0}),
+s(131506,21015,{f=6,loc=45,maps={467,1941,1943},q=0}),
+s(131511,21020,{f=6,loc=47,maps={467,1941,1943},q=0}),
+s(131510,21019,{f=6,loc=43,maps={467,1941,1943},q=0}),
+s(131509,21018,{f=6,loc=44,maps={467,1941,1943},q=0}),
+s(131508,21017,{f=6,loc=46,maps={467,1941,1943},q=0}),
+s(131507,21016,{f=6,loc=42,maps={467,1941,1943},q=0}),
+s(131512,21021,{f=8,maps={467,1941,1943},q=0}),
+s(131513,21022,{f=8,maps={467,1941,1943},q=0})})}}),
 m(1942,{awp=20003,icon=236765,lore="Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",lvl=10,maps={96},phase=17,g={
 h(-12,{
 ach(858,{
@@ -31631,24 +31665,32 @@ q(28733,{awp=40001,coords={
 [1424]={{33.5,49.3}}},qgs={49687}}),
 q(527,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,u=2,g={
-qo(1,{providers={{"n",2266}},u=2}),
-qo(2,{providers={{"n",2360}},u=2}),
-qo(3,{providers={{"n",232}},u=2}),
-qo(4,{providers={{"n",2403}},u=2})}}),
+qo(1,{coords={
+[1424]={{33,34.8}}},providers={{"n",2266}},u=2}),
+qo(2,{coords={
+[1424]={{36.6,39.4}}},providers={{"n",2360}},u=2}),
+qo(3,{coords={
+[1424]={{33,35}}},providers={{"n",232}},u=2}),
+qo(4,{coords={
+[1424]={{35.2,38}}},providers={{"n",2403}},u=2})}}),
 q(528,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={527},u=2,g={
-qo(1,{providers={{"n",2267}},u=2})}}),
+qo(1,{coords={
+[1424]={{30,42.8}}},providers={{"n",2267}},u=2})}}),
 q(529,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={528},u=2,g={
-qo(1,{providers={{"n",2404}},u=2}),
-qo(2,{providers={{"n",2265}},u=2}),
+qo(1,{coords={
+[1424]={{32.2,45.2}}},providers={{"n",2404}},u=2}),
+qo(2,{coords={
+[1424]={{32,45.6}}},providers={{"n",2265}},u=2}),
 qo(3,{coords={
 [1424]={{32.1,45.4}}},providers={{"i",3564},{"o",1736}},u=2})}}),
 q(532,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={529},u=2,g={
 qo(1,{coords={
 [1424]={{29.6,41.8}}},providers={{"n",2335}},u=2}),
-qo(2,{providers={{"n",2387}},u=2}),
+qo(2,{coords={
+[1424]={{30,42.8}}},providers={{"n",2387}},u=2}),
 qo(3,{coords={
 [1424]={{29.7,41.8}}},providers={{"o",1761}},u=2}),
 qo(4,{coords={
@@ -31657,12 +31699,16 @@ q(539,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={532},u=2,g={
 qo(1,{coords={
 [1424]={{31,56.2}}},providers={{"n",2305}},u=2}),
-qo(2,{providers={{"n",2269}},u=2})}}),
+qo(2,{coords={
+[1424]={{27.4,58}}},providers={{"n",2269}},u=2})}}),
 q(541,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={539},u=2,g={
-qo(1,{providers={{"n",2344}},u=2}),
-qo(2,{providers={{"n",2345}},u=2}),
-qo(3,{providers={{"n",2346}},u=2}),
+qo(1,{coords={
+[1424]={{70.6,79.8}}},providers={{"n",2344}},u=2}),
+qo(2,{coords={
+[1424]={{71,80.4}}},providers={{"n",2345}},u=2}),
+qo(3,{coords={
+[1424]={{71,78.6}}},providers={{"n",2346}},u=2}),
 qo(4,{coords={
 [1424]={{72.6,80}}},providers={{"n",2304}},u=2})}}),
 q(550,{coords={
@@ -41610,7 +41656,8 @@ s(206243,59094,{b=1,f=5,loc=41,q=2}),
 s(206242,59093,{b=1,f=4,loc=43,q=2})}}),
 q(25734,{awp=40003,coords={
 [1437]={{57.4,71.4}}},qgs={41129},r=2,sourceQuests={25726},g={
-qo(1,{providers={{"i",55242},{"o",203184}}})}}),
+qo(1,{coords={
+[1437]={{47.8,66}}},providers={{"i",55242},{"o",203184}}})}}),
 q(25727,{awp=40003,coords={
 [1437]={{57.5,71.7}}},qgs={41086},r=2,sourceQuests={25721},g={
 qo(1,{crs={41151},providers={{"i",55988}}}),
@@ -41820,7 +41867,8 @@ q(25803,{awp=40003,coords={
 [1437]={{13.5,41.3}}},providers={{"o",261}},r=2,sourceQuests={25802}}),
 q(25395,{awp=40003,coords={
 [1437]={{49.9,79.2}}},isBreadcrumb=1,nextQuests={25770},qgs={41075},r=2,sourceQuests={26137,28565},g={
-qo(1,{providers={{"i",55209},{"o",203151}}})}}),
+qo(1,{coords={
+[1437]={{47.9,74.3}}},providers={{"i",55209},{"o",203151}}})}}),
 q(631,{coords={
 [1437]={{49.9,18.2}}},lvl=28,qgs={1075},r=2,rwp=40003,u=2}),
 q(632,{coords={

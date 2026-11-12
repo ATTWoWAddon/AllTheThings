@@ -13262,24 +13262,32 @@ qo(4,{crs={2248,2249,2250,2251,2452,4504},providers={{"i",3720}}}),
 s(156983,2805,{b=1,f=3,q=2})}}),
 q(527,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,g={
-qo(1,{providers={{"n",2266}}}),
-qo(2,{providers={{"n",2360}}}),
-qo(3,{providers={{"n",232}}}),
-qo(4,{providers={{"n",2403}}})}}),
+qo(1,{coords={
+[1424]={{33,34.8}}},providers={{"n",2266}}}),
+qo(2,{coords={
+[1424]={{36.6,39.4}}},providers={{"n",2360}}}),
+qo(3,{coords={
+[1424]={{33,35}}},providers={{"n",232}}}),
+qo(4,{coords={
+[1424]={{35.2,38}}},providers={{"n",2403}}})}}),
 q(528,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={527},g={
-qo(1,{providers={{"n",2267}}})}}),
+qo(1,{coords={
+[1424]={{30,42.8}}},providers={{"n",2267}}})}}),
 q(529,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={528},g={
-qo(1,{providers={{"n",2404}}}),
-qo(2,{providers={{"n",2265}}}),
+qo(1,{coords={
+[1424]={{32.2,45.2}}},providers={{"n",2404}}}),
+qo(2,{coords={
+[1424]={{32,45.6}}},providers={{"n",2265}}}),
 qo(3,{coords={
 [1424]={{32.1,45.4}}},providers={{"i",3564},{"o",1736}}})}}),
 q(532,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={529},g={
 qo(1,{coords={
 [1424]={{29.6,41.8}}},providers={{"n",2335}}}),
-qo(2,{providers={{"n",2387}}}),
+qo(2,{coords={
+[1424]={{30,42.8}}},providers={{"n",2387}}}),
 qo(3,{coords={
 [1424]={{29.7,41.8}}},providers={{"o",1761}}}),
 qo(4,{coords={
@@ -13288,12 +13296,16 @@ q(539,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={532},g={
 qo(1,{coords={
 [1424]={{31,56.2}}},providers={{"n",2305}}}),
-qo(2,{providers={{"n",2269}}})}}),
+qo(2,{coords={
+[1424]={{27.4,58}}},providers={{"n",2269}}})}}),
 q(541,{coords={
 [1424]={{62.32,20.33}}},lvl=19,qgs={2215},r=1,rwp=40003,sourceQuests={539},g={
-qo(1,{providers={{"n",2344}}}),
-qo(2,{providers={{"n",2345}}}),
-qo(3,{providers={{"n",2346}}}),
+qo(1,{coords={
+[1424]={{70.6,79.8}}},providers={{"n",2344}}}),
+qo(2,{coords={
+[1424]={{71,80.4}}},providers={{"n",2345}}}),
+qo(3,{coords={
+[1424]={{71,78.6}}},providers={{"n",2346}}}),
 qo(4,{coords={
 [1424]={{72.6,80}}},providers={{"n",2304}}})}}),
 q(550,{coords={
@@ -14705,9 +14717,9 @@ crit(1222,{achID=781,id=1})}),
 exp(122,{
 crit(1219,{achID=781,id=1})})}),
 h(-31,{
-faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tinsert(tooltipInfo,{left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true})tinsert(tooltipInfo,{left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true})if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tinsert(tooltipInfo,{left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1})if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tinsert(tooltipInfo,{left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true})end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	local isHuman=_.RaceIndex==1 local repForDressing=isHuman and 11 or 10 if t.dressing.collected then repForDressing=0 end	local repForAdmiral=isHuman and 220 or 200 if t.admiral.collected then repForAdmiral=0 end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral if t.maxPossibleReputation<42000 then	t.locked=true end	end	end,g={
+faction(87,{crs={9179},icon=133694,maps={1418},OnTooltip=function(t,tooltipInfo)if not t.collectible then return end	local reputation=t.reputation if reputation<41999 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo tooltipInfo[#tooltipInfo+1]={left="Reminder: Do all of the Goblin quests prior to starting this grind.",r=1,g=0.5,b=0.5,wrap=true}tooltipInfo[#tooltipInfo+1]={left="Do NOT turn in the Bloodsail quests if you intend to get to Exalted!",r=1,g=0.5,b=0.5,wrap=true}if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Booty Bay Bruisers.",25,20999,-42000)else	local repPerKill,remaining=addRepInfo(tooltipInfo,reputation,"Kill Jazzrik.",5,41999,21000)tooltipInfo[#tooltipInfo+1]={left=" 5.33 - 8.5 Minute respawn",right=math.floor((remaining * 5.33)/ 60.0).." - "..math.ceil((remaining * 8.5)/ 60.0).." Hours to go!",r=1,g=1,b=1}if not t.eventful then	t.eventful=true if DBM then	local f=CreateFrame("FRAME",nil,UIParent)f:SetScript("OnEvent",function(self,e,...)(rawget(self,e)or print)(CombatLogGetCurrentEventInfo())end)f.COMBAT_LOG_EVENT_UNFILTERED=function(ts,subevent,...)if subevent=="UNIT_DIED" then	local guid=select(6,...)if select(6,("-"):split(guid))=="9179" then	DBM:CreatePizzaTimer(320,"Respawn (min)")DBM:CreatePizzaTimer(510,"Respawn (max)")end	end	end	f:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")f:SetPoint("BOTTOMLEFT",UIParent,"TOPLEFT",0,0)f:SetSize(1,1)f:Hide()end	end	end	else	if not t.dressing.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.dressing)end	if not t.admiral.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.admiral)end	if t.maxPossibleReputation<42000 then	tooltipInfo[#tooltipInfo+1]={left="You mistakenly completed both quests before reaching max Revered and are unable to complete Exalted Bloodsail until Wrath. For shame!",r=1,g=0.5,b=0.5,wrap=true}end	end	end,OnUpdate=function(t)if t.collectible then	if not t.dressing then	local f=_.SearchForField("questID",9272)if f and #f>0 then t.dressing=f[1] end	end	if not t.admiral then	local f=_.SearchForField("questID",4621)if f and #f>0 then t.admiral=f[1] end	end	local isHuman=_.RaceIndex==1 local repForDressing=isHuman and 11 or 10 if t.dressing.collected then repForDressing=0 end	local repForAdmiral=isHuman and 220 or 200 if t.admiral.collected then repForAdmiral=0 end	t.maxPossibleReputation=math.max(t.reputation,41999)+ repForDressing + repForAdmiral if t.maxPossibleReputation<42000 then	t.locked=true end	end	end,g={
 crit(58456,{achID=2336,id=7,phase=13})}}),
-faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5})end	end,g={
+faction(21,{icon=133784,maps={1413,1446},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000)addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000)tooltipInfo[#tooltipInfo+1]={left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5}end	end,g={
 crit(58454,{achID=2336,id=3,phase=13})}})}),
 h(-32,{
 fp(18,{coords={
@@ -15616,7 +15628,7 @@ crit(1128,{achID=773,id=1})}),
 exp(1883,{
 crit(1120,{achID=773,id=1})})}),
 h(-31,{
-faction(471,{description="You can grind to 11999/12000 by just killing trolls and then you can grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces. @Blackbear on the ATT Discord proposed for Classic Era that the goal for this should be Exalted. Be mad at him! :)",OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0)tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5})else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(9259,true))if remaining>0 then	tinsert(tooltipInfo,{left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0})end	end	end	end,r=2})}),
+faction(471,{description="You can grind to 11999/12000 by just killing trolls and then you can grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces. @Blackbear on the ATT Discord proposed for Classic Era that the goal for this should be Exalted. Be mad at him! :)",OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Trolls in the Hinterlands (Stops at Revered)",5,20999,0)tooltipInfo[#tooltipInfo+1]={left=" * PROTIP: Do NOT turn in the necklaces until after Revered!",r=1,g=0.5,b=0.5}else	local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Troll Tribal Necklaces (x5)",2,42000)local remaining=((remainingTurnIns * 5)- _.WOWAPI.GetItemCount(9259,true))if remaining>0 then	tooltipInfo[#tooltipInfo+1]={left="You need "..remaining.." more necklaces for Exalted.",r=1,g=1,b=0}end	end	end	end,r=2})}),
 h(-32,{
 fp(43,{coords={
 [1425]={{11,46}}},crs={8018},r=2}),

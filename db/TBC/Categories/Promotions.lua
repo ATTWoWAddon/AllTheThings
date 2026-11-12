@@ -31,7 +31,7 @@ p(92,{awp=11101,b=1,itemID=13583,petTypeID=8,q=3,spellID=17707,u=3}),
 p(94,{awp=11101,b=1,itemID=13582,petTypeID=5,q=3,spellID=17709,u=3})}})}})}}),
 q(63865,{awp=20501,coords={
 [1434]={{28.2,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,19046,19232},description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=30400,u=3,g={
-p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=3}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
+p(131,{b=1,itemID=25535,petTypeID=2,q=3,spellID=32298,u=3}),(_.OnInitDB.RegionExclusiveEU)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=3}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
 q(63450,{coords={
@@ -106,7 +106,7 @@ toy(32542,{awp=20100,b=1,q=3,u=2}),
 toy(34499,{awp=20300,b=1,q=3,u=2}),
 i(23714,{awp=20203,b=1,f=53,q=4,u=2}),
 toy(32566,{awp=20100,b=1,q=3,u=2}),
-toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-h(-782,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+toy(38578,{awp=20501,b=1,model=200314,modelScale=2,q=3,u=2})}})}}),(_.OnInitDB.RegionExclusiveCN)(
+h(-782,{(_.OnInitDB.RegionExclusiveCN)(
 mnt(42777,{b=1,description="Obtained if you paid 267$ to set up a 6 Month WoW Subscription between 25th January 2022 until 25th July 2022.",itemID=33225,lvl=60,q=4,u=2}))}))}})
 end)

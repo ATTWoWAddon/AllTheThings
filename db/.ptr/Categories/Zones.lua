@@ -6608,12 +6608,24 @@ n(12962,{coords={
 [63]={{10.8,33.8}}},r=1,g={
 r(20916,{itemID=17062,requireSkill=185,skillID=2548}),
 r(7828,{itemID=6369,requireSkill=185,skillID=2548})}})}),
-h(-63,{awp=20001,g={
-i(23777,{b=1,crs={6073,6115,11697},lvl=7,r=2}),
-i(23797,{b=1,crs={6073,6115,11697},lvl=7,r=1}),
+h(-63,{
+i(23777,{awp=20001,b=1,crs={6073,6115,11697},lvl=7,r=2}),
+i(23797,{awp=20001,b=1,crs={6073,6115,11697},lvl=7,r=1}),
 s(238,1351,{awp=100107,coords={
 [63]={{69.8,74.8},{71.8,70.8},{72.8,74.4},{73.6,79.6},{75.6,69.2},{77.2,73.8}}},crs={3928},f=4,loc=43,lvl=11}),
-r(13617,{awp=40300,b=1,itemID=78343,requireSkill=333,skillID=2494})}})}}),
+r(13617,{awp=40300,b=1,itemID=78343,requireSkill=333,skillID=2494}),
+i(16645,{rwp=40003,spellID=20529,u=2}),
+i(16646,{rwp=40003,spellID=20529,u=2}),
+i(16647,{rwp=40003,spellID=20529,u=2}),
+i(16648,{rwp=40003,spellID=20529,u=2}),
+i(16649,{rwp=40003,spellID=20530,u=2}),
+i(16650,{rwp=40003,spellID=20530,u=2}),
+i(16651,{rwp=40003,spellID=20530,u=2}),
+i(16652,{rwp=40003,spellID=20530,u=2}),
+i(16653,{rwp=40003,spellID=20531,u=2}),
+i(16654,{rwp=40003,spellID=20531,u=2}),
+i(16655,{rwp=40003,spellID=20531,u=2}),
+i(16656,{rwp=40003,spellID=20531,u=2})})}}),
 m(76,{icon=236714,lore="Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",petBattleLvl=3,lvl=5,g={
 h(-12,{
 ach(4927,{awp=40003,r=1,g={
@@ -7684,6 +7696,27 @@ n(17246,{coords={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
 r(25704,{itemID=21099,requireSkill=185,skillID=2548})}})}),
 h(-63,{
+s(8297,21002,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=45,maps={94,97,467}}),
+s(8298,21003,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=43,maps={94,97,467}}),
+s(8299,21004,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=3,maps={94,97,467}}),
+s(8300,21005,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=44,maps={94,97,467}}),
+s(8301,21006,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=46,maps={94,97,467}}),
+s(8302,21007,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=42,maps={94,97,467}}),
+s(8303,21008,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=4,loc=47,maps={94,97,467}}),
+s(8304,21009,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=45,maps={94,97,467}}),
+s(8305,21010,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=47,maps={94,97,467}}),
+s(8306,21011,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=43,maps={94,97,467}}),
+s(8307,21012,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=44,maps={94,97,467}}),
+s(8308,21013,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=46,maps={94,97,467}}),
+s(8309,21014,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=5,loc=42,maps={94,97,467}}),
+s(8310,21015,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=45,maps={94,97,467}}),
+s(8315,21020,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=47,maps={94,97,467}}),
+s(8314,21019,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=43,maps={94,97,467}}),
+s(8313,21018,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=44,maps={94,97,467}}),
+s(8312,21017,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=46,maps={94,97,467}}),
+s(8311,21016,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=6,loc=42,maps={94,97,467}}),
+s(8316,21021,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=8,maps={94,97,467}}),
+s(8317,21022,{description="This item seem to only drop easily for characters below level 14 within Azuremyst or Sunstrider Isle",f=8,maps={94,97,467}}),
 i(23678,{b=1,coords={
 [97]={{25.8,59.2},{26.8,48},{35.6,58.8},{45.6,45}}},crs={17202},lvl=3,r=2}),
 i(23850,{b=1,coords={
@@ -14083,10 +14116,12 @@ q(1656,{coords={
 q(743,{coords={
 [7]={{47.4,61.2}}},crs={2962,2963},qgs={2985},qis={4751},r=1}),
 q(746,{coords={
-[7]={{47.5,60.2}}},cost={{"i",4702,1}},crs={2989,2990},qgs={2993},qis={4703},r=1,rwp=40003,u=2,g={
+[7]={{47.5,60.2}}},cost={{"i",4702,5}},crs={2989,2990},qgs={2993},qis={4703},r=1,rwp=40003,u=2,g={
 s(75494,131213,{awp=70003,b=1,f=6,loc=46,rwp=70003,u=2}),
 s(1943,4969,{b=1,f=7,loc=43,u=2}),
-s(1944,4970,{b=1,f=5,loc=46,u=2})}}),
+s(1944,4970,{b=1,f=5,loc=46,u=2}),
+o(1685,{coords={
+[7]={{34,46}}}})}}),
 q(5655,{altQuests={5652,5654,5656,5657},c={5},coords={
 [7]={{47,58.8}}},qgs={11407},races={8},rwp=20401,u=2}),
 q(24550,{awp=40003,coords={
@@ -23828,7 +23863,7 @@ q(26190,{awp=40003,coords={
 cu(81,{requireSkill=185}),
 crit(15802,{achID=5474,awp=40200,id=2,r=2,requireSkill=185}),
 o(203800,{coords={
-[84]={{56.8,41.2}}},requireSkill=185})}}),
+[84]={{26.3,20.4},{26.3,46.8},{42.4,73.1},{43,71.3},{46.3,56.4},{46.4,58.2},{51.4,26.2},{54.9,68.4},{56,42.5},{56.8,41.3},{62.4,15.4},{62.7,50.4},{68.8,65.1},{69.4,40.9},{70.1,11},{70.7,43.4},{71.4,22.4},{74.1,50.3},{79.4,59.2}}},requireSkill=185})}}),
 q(46275,{awp=70200,coords={
 [84]={{49.8,45.2}}},lvl=45,qgs={119357},r=2,sourceQuests={46274},g={
 i(147442,{b=1,f=55})}}),
@@ -30730,7 +30765,8 @@ n(29587,{c={6},coords={
 mnt(54729,{b=1,c={6},itemID=40775,lvl=10}),
 cs(127344,{awp=70003,b=1,c={6},itemID=136796,lvl=10})}}),
 n(28500,{c={6},coords={
-[23]={{50.8,30.2}}},g={
+[23]={{83.6,46}},
+[124]={{50.8,30.2}}},g={
 s(18500,38645,{f=7,loc=42,lvl=20}),
 s(18501,38646,{f=7,loc=45,lvl=20}),
 s(18502,38647,{f=7,loc=47,lvl=20}),
@@ -32950,27 +32986,27 @@ s(9354,23553,{collectible=false,coords={
 [94]={{54.8,79.6},{57.2,74},{60.8,68.8},{63,64.6}}},crs={15636},f=28}),
 i(23228,{b=1,coords={
 [94]={{34.8,84},{35,84.6}}},crs={15409},lvl=3,r=1}),
-s(8297,21002,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=45,maps={94,467}}),
-s(8298,21003,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=43,maps={94,467}}),
-s(8299,21004,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=3,maps={94,467}}),
-s(8300,21005,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=44,maps={94,467}}),
-s(8301,21006,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=46,maps={94,467}}),
-s(8302,21007,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=42,maps={94,467}}),
-s(8303,21008,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=4,loc=47,maps={94,467}}),
-s(8304,21009,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=45,maps={94,467}}),
-s(8305,21010,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=47,maps={94,467}}),
-s(8306,21011,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=43,maps={94,467}}),
-s(8307,21012,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=44,maps={94,467}}),
-s(8308,21013,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=46,maps={94,467}}),
-s(8309,21014,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=5,loc=42,maps={94,467}}),
-s(8310,21015,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=45,maps={94,467}}),
-s(8315,21020,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=47,maps={94,467}}),
-s(8314,21019,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=43,maps={94,467}}),
-s(8313,21018,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=44,maps={94,467}}),
-s(8312,21017,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=46,maps={94,467}}),
-s(8311,21016,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=6,loc=42,maps={94,467}}),
-s(8316,21021,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=8,maps={94,467}}),
-s(8317,21022,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle.",f=8,maps={94,467}})})}}),
+s(8297,21002,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=45,maps={94,97,467}}),
+s(8298,21003,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=43,maps={94,97,467}}),
+s(8299,21004,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=3,maps={94,97,467}}),
+s(8300,21005,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=44,maps={94,97,467}}),
+s(8301,21006,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=46,maps={94,97,467}}),
+s(8302,21007,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=42,maps={94,97,467}}),
+s(8303,21008,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=4,loc=47,maps={94,97,467}}),
+s(8304,21009,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=45,maps={94,97,467}}),
+s(8305,21010,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=47,maps={94,97,467}}),
+s(8306,21011,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=43,maps={94,97,467}}),
+s(8307,21012,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=44,maps={94,97,467}}),
+s(8308,21013,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=46,maps={94,97,467}}),
+s(8309,21014,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=5,loc=42,maps={94,97,467}}),
+s(8310,21015,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=45,maps={94,97,467}}),
+s(8315,21020,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=47,maps={94,97,467}}),
+s(8314,21019,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=43,maps={94,97,467}}),
+s(8313,21018,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=44,maps={94,97,467}}),
+s(8312,21017,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=46,maps={94,97,467}}),
+s(8311,21016,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=6,loc=42,maps={94,97,467}}),
+s(8316,21021,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=8,maps={94,97,467}}),
+s(8317,21022,{description="This item seem to only drop easily for characters below level 14 within Sunstrider Isle and Azuremyst Isle",f=8,maps={94,97,467}})})}}),
 m(95,{awp=20003,coords={
 [23]={{53.8,8.6}}},crs={259326},icon=236765,lore="Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",maps={96},petBattleLvl=3,g={
 h(-12,{
@@ -33853,23 +33889,23 @@ s(954,2805,{b=1,f=3,u=2})}}),
 q(28733,{awp=40001,coords={
 [25]={{33.5,49.3}}},qgs={49687}}),
 q(527,{coords={
-[25]={{62.32,20.33}}},crs={232,2266,2360,2403},qgs={2215},r=1,rwp=40003,u=2}),
+[25]={{62.32,20.33}}},qgs={2215},r=1,rwp=40003,u=2}),
 q(528,{coords={
-[25]={{62.32,20.33}}},crs={2267},qgs={2215},r=1,rwp=40003,sourceQuests={527},u=2}),
+[25]={{62.32,20.33}}},qgs={2215},r=1,rwp=40003,sourceQuests={527},u=2}),
 q(529,{coords={
-[25]={{62.32,20.33}}},crs={2265,2404},qgs={2215},qis={3564},r=1,rwp=40003,sourceQuests={528},u=2,g={
+[25]={{62.32,20.33}}},qgs={2215},qis={3564},r=1,rwp=40003,sourceQuests={528},u=2,g={
 o(1736,{coords={
 [25]={{32.1,45.4}}}})}}),
 q(532,{coords={
-[25]={{62.32,20.33}}},crs={2387},qgs={2215},qis={3657},r=1,rwp=40003,sourceQuests={529},u=2,g={
+[25]={{62.32,20.33}}},qgs={2215},qis={3657},r=1,rwp=40003,sourceQuests={529},u=2,g={
 o(1759,{coords={
 [25]={{29.6,41.6}}},u=2}),
 o(1761,{coords={
 [25]={{29.7,41.8}}},u=2})}}),
 q(539,{coords={
-[25]={{62.32,20.33}}},crs={2269},qgs={2215},r=1,rwp=40003,sourceQuests={532},u=2}),
+[25]={{62.32,20.33}}},qgs={2215},r=1,rwp=40003,sourceQuests={532},u=2}),
 q(541,{coords={
-[25]={{62.32,20.33}}},crs={2344,2345,2346},qgs={2215},r=1,rwp=40003,sourceQuests={539},u=2}),
+[25]={{62.32,20.33}}},qgs={2215},r=1,rwp=40003,sourceQuests={539},u=2}),
 q(550,{coords={
 [25]={{62.32,20.33}}},maps={90},qgs={2215},qis={3701},r=1,rwp=40003,sourceQuests={541},u=2,g={
 s(1400,3761,{b=1,f=8,u=2}),
@@ -43757,7 +43793,8 @@ s(75732,131451,{awp=70003,b=1,f=6,loc=41})}}),
 q(25734,{awp=40003,coords={
 [56]={{57.4,71.4}}},lvl=10,qgs={41129},qis={55242},r=2,sourceQuests={25726},g={
 crit(38415,{achID=12429,awp=70305,id=1,r=2}),
-o(203184)}}),
+o(203184,{coords={
+[56]={{47.8,66}}}})}}),
 q(25727,{awp=40003,coords={
 [56]={{57.5,71.7}}},crs={41151},lvl=10,qgs={41086},qis={55988},r=2,sourceQuests={25721},g={
 s(29381,59072,{b=1,f=7,loc=43}),
@@ -43961,7 +43998,8 @@ q(25803,{awp=40003,coords={
 i(422,{f=55,lvl=7,spellID=435})}}),
 q(25395,{awp=40003,coords={
 [56]={{49.9,79.2}}},isBreadcrumb=1,lvl=10,nextQuests={25770},qgs={41075},qis={55209},r=2,sourceQuests={26137,28565},g={
-o(203151)}}),
+o(203151,{coords={
+[56]={{47.9,74.3}}}})}}),
 q(631,{coords={
 [56]={{49.9,18.2}}},qgs={1075},r=2,rwp=40003,u=2}),
 q(632,{coords={
@@ -80552,6 +80590,8 @@ q(35509,{coords={
 o(231961,{coords={
 [543]={{48.3,94.2},{57,24.6},{57.3,26},{57.4,24},{57.7,23.9},{57.8,26.6},{57.9,24.5},{58,23.3},{58,25.6},{58.3,21.7},{58.8,24.2},{59.3,22.7}}},g={
 i(112993)}})}}),
+q(35487,{coords={
+[543]={{43.7,84}}},lvl=15,qgs={82274},r=1,sourceQuests={35430}}),
 h(-14,{
 q(36473,{coords={
 [543]={{47.1,64.4}}},sourceQuests={35151},g={
@@ -81027,8 +81067,6 @@ q(49546,{awp=70305,coords={
 [90]={{44,35.4},{61.8,75.6},{66.5,49.8}},
 [110]={{62.5,60.5}},
 [125]={{48.7,39.6},{59.2,27.4}}},isBreadcrumb=1,lvl=15,nextQuests={33543},providers={{"o",206109},{"o",206116},{"o",207279},{"o",207323},{"o",207324},{"o",207325},{"o",208317}},r=1}),
-q(35487,{coords={
-[543]={{43.7,84}}},lvl=15,qgs={82274},r=1,sourceQuests={35430}}),
 q(33548,{coords={
 [543]={{39.3,71.9}}},lvl=15,qgs={76987},r=1,sourceQuests={33543},g={
 s(62093,112609,{b=1,f=7,loc=41}),
@@ -87750,9 +87788,7 @@ q(47059,{c={11},coords={
 q(47055,{c={8},coords={
 [635]={{22.2,39.6}}},lvl=45,qgs={90418,115465},sourceQuests={44821,47035}}),
 q(41778,{coords={
-[627]={{42.7,28.4}}},lvl=45,qgs={90463},rwp=90100,u=2,g={
-i(136352,{u=2}),
-i(136351,{u=2}),
+[627]={{42.7,28.4}}},lvl=45,qgs={90463},qis={136351,136352},rwp=90100,u=2,g={
 i(136342,{spellID=207520,u=2}),
 crit(29873,{achID=10585,u=2})}}),
 q(45917,{c={1,4,6,7,8,11},coords={
@@ -101395,6 +101431,7 @@ prof(182,{
 n(136096,{coords={
 [1161]={{71.5,4.9}}},r=2,g={
 r(265831,{requireSkill=182,skillID=2549}),
+i(163834,{b=1,f=55,requireSkill=182,spellID=280517}),
 r(193290,{requireSkill=182}),
 r(252424,{requireSkill=182,skillID=2549}),
 r(252411,{requireSkill=182,skillID=2549}),
@@ -101604,6 +101641,7 @@ prof(186,{
 n(136091,{coords={
 [1161]={{75.2,7.6}}},r=2,g={
 r(265851,{requireSkill=186,skillID=2565}),
+i(163836,{b=1,f=55,requireSkill=186,spellID=280519}),
 r(2656,{requireSkill=186}),
 r(253333,{requireSkill=186}),
 r(253342,{requireSkill=186}),
@@ -101614,6 +101652,7 @@ prof(393,{
 n(136061,{coords={
 [1161]={{75.7,13.4}}},r=2,g={
 r(265869,{requireSkill=393,skillID=2557}),
+i(163838,{b=1,f=55,requireSkill=393,spellID=280520}),
 r(257152,{requireSkill=393}),
 r(257146,{requireSkill=393}),
 r(257149,{requireSkill=393}),
@@ -109752,6 +109791,7 @@ prof(186,{
 n(122694,{coords={
 [1165]={{44.1,39}}},r=1,g={
 r(265853,{requireSkill=186,skillID=2565}),
+i(163837,{b=1,f=55,requireSkill=186,spellID=280519}),
 r(2656,{requireSkill=186}),
 r(253333,{requireSkill=186}),
 r(253342,{requireSkill=186}),
@@ -109762,6 +109802,7 @@ prof(393,{
 n(122699,{coords={
 [1165]={{43.8,34.4}}},r=1,g={
 r(265871,{requireSkill=393,skillID=2557}),
+i(163839,{b=1,f=55,requireSkill=393,spellID=280520}),
 r(257152,{requireSkill=393}),
 r(257146,{requireSkill=393}),
 r(257149,{requireSkill=393}),
@@ -110266,7 +110307,8 @@ r(253145,{awp=80105,b=1,itemID=168022,lvl=10,requireSkill=164,skillID=2437,sourc
 n(132130,{coords={
 [1165]={{42.2,35.8}}},r=1,g={
 i(156652,{description="Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF(57.1, 91.4)|r.",spellID=260648,g={
-toy(156649,{b=1})}})}}),
+toy(156649,{b=1})}}),
+i(163835,{b=1,f=55,requireSkill=182,spellID=280517})}}),
 n(132114,{coords={
 [1165]={{34.7,11.5},{37.8,14.7},{42.1,35.7},{53,89.9},{53.7,85.9},{57.1,91.4}}},r=1,g={
 i(156646,{f=55,lvl=2,spellID=260490}),
@@ -129043,7 +129085,7 @@ o(375371,{coords={
 [1970]={{67.4,40.2}}},description="Inside the building.",g={
 i(189460,{b=1,spellID=364521})}}),
 o(375486,{coords={
-[1970]={{57.9,78}}},description="This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Firey Brimstone (Toy).",g={
+[1970]={{57.9,78}}},description="This can only be reached with help of Warlock/Door of Shadows/Dimensional Translators/Fiery Brimstone (Toy).",g={
 i(189446,{b=1,spellID=364521})}}),
 o(375889,{coords={
 [1970]={{60.6,30.5}}},g={
@@ -130422,8 +130464,7 @@ i(190579,{b=1,lvl=10}),
 flt(2,{
 s(169557,190951,{crs={181407},f=25,lvl=60}),
 s(169556,190950,{crs={181407},f=23,lvl=60}),
-s(169554,190948,{crs={181407},f=28,lvl=60}),
-s(168977,190735,{crs={181407},f=26,lvl=60})}),
+s(169554,190948,{crs={181407},f=28,lvl=60})}),
 flt(3,{
 s(165445,188054,{f=3,lvl=60})}),
 flt(4,{
@@ -130475,7 +130516,8 @@ s(165439,188046,{f=23,lvl=60}),
 s(165433,188038,{f=8,lvl=60}),
 s(165443,188050,{f=28,lvl=60}),
 s(165442,188049,{f=23,lvl=60}),
-s(165441,188048,{f=28,lvl=60})}),
+s(165441,188048,{f=28,lvl=60}),
+s(168977,190735,{crs={181407},f=26,lvl=60})}),
 flt(200,{
 i(189468,{b=1,coords={
 [1970]={{49.8,72.6},{51.8,75.8},{74.4,60.6},{76.8,45.2},{77.2,52.8},{80.2,59.4},{80.6,46.8}}},crs={178803},spellID=364521}),
@@ -164062,28 +164104,35 @@ ach(62264,{minReputation={2704,20}})}),
 title(665,{minReputation={2704,20}}),
 h(-45,{
 q(92890,{coords={
-[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,4},qgs={240407}}),
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,4},qgs={240407,276362}}),
 q(93932,{coords={
-[2413]={{50.9,50.7}}},lvl=90,minReputation={2704,8},qgs={240407},rwp=120100,u=2,g={
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},lvl=90,minReputation={2704,8},qgs={240407,276362},rwp=120100,u=2,g={
 s(302653,263268,{b=1,f=6,loc=45,lvl=90,minReputation={2704,8},u=2}),
 s(302652,263267,{b=1,f=5,loc=45,lvl=90,minReputation={2704,8},u=2}),
 s(302654,263269,{b=1,f=7,loc=45,lvl=90,minReputation={2704,8},u=2}),
 s(302651,263265,{b=1,f=4,loc=45,lvl=90,minReputation={2704,8},u=2})}}),
 q(97624,{awp=120100,coords={
-[2413]={{50.9,50.7}}},minReputation={2704,8},qgs={240407},g={
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},minReputation={2704,8},qgs={240407,276362},g={
 s(302653,263268,{b=1,f=6,loc=45,lvl=90,minReputation={2704,8}}),
 s(302652,263267,{b=1,f=5,loc=45,lvl=90,minReputation={2704,8}}),
 s(302654,263269,{b=1,f=7,loc=45,lvl=90,minReputation={2704,8}}),
 s(302651,263265,{b=1,f=4,loc=45,lvl=90,minReputation={2704,8}})}}),
 q(94794,{coords={
-[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,10},qgs={240407},g={
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,10},qgs={240407,276362},g={
 i(264882,{f=55,minReputation={2704,10}})}}),
 q(92891,{coords={
-[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,13},qgs={240407}}),
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,13},qgs={240407,276362}}),
 q(92892,{coords={
-[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,18},qgs={240407}}),
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},lvl=80,minReputation={2704,18},qgs={240407,276362}}),
 q(89035,{coords={
-[2413]={{50.9,50.7}}},minReputation={2704,20},qgs={240407},repeatable=1,g={
+[2393]={{39.2,80.1}},
+[2413]={{50.9,50.7}}},minReputation={2704,20},qgs={240407,276362},repeatable=1,g={
 i(256055,{minReputation={2704,20}})}})}),
 h(-58,{
 n(240407,{coords={

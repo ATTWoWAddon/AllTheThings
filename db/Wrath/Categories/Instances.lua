@@ -3876,7 +3876,7 @@ ach(644,{maps={235,236,237,238,239}})}),
 h(-31,{
 faction(809,{maps={236,237,238},OnTooltip=function(t,tooltipInfo)local reputation=t.reputation if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Libram Turn Ins",500,42000)end	end,rwp=40003,g={
 crit(8825,{achID=2336,awp=30002,id=5,phase=13})}}),
-faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tinsert(tooltipInfo,{left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true})local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tinsert(tooltipInfo,{left="To 11999 Honored:",r=1,g=1,b=1})addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000)end	end})}),
+faction(169,{icon=133784,maps={235,1413,1434,1444,1446,1452},OnTooltip=function(t,tooltipInfo)tooltipInfo[#tooltipInfo+1]={left="This is a hidden reputation. It might not count towards reputation achievements.",r=1,g=1,b=1,wrap=true}local reputation=t.reputation if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo if reputation<20999 then	tooltipInfo[#tooltipInfo+1]={left="To 11999 Honored:",r=1,g=1,b=1}addRepInfo(tooltipInfo,reputation," Kill Venture Co. (STV)",2.5,20999)addRepInfo(tooltipInfo,reputation," Kill Southsea Pirates. (Tanaris & Barrens)",2.5,20999)end	addRepInfo(tooltipInfo,reputation,"Complete Zapping Quests (Feralas)",25,42000)addRepInfo(tooltipInfo,reputation,"Complete Free Knot! (Dire Maul)",350,42000)addRepInfo(tooltipInfo,reputation,"Complete The Gordok Ogre Suit (Dire Maul)",75,42000)end	end})}),
 h(-45,{
 q(1193,{cost={{"i",3829,1},{"i",15994,1}},description="Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",lvl=56,maps={235},providers={{"o",179485}},repeatable=1,rwp=40003}),
 q(7463,{c={8},lvl=60,maps={236,237,238,239},qgs={14368},rwp=40003,g={
@@ -13419,7 +13419,7 @@ q(24877,{isWeekly=1,lvl=80,qgs={38491},rwp=40001,g={
 qo(1,{providers={{"n",38494}}}),
 i(52006,{b=1,q=4})}})}),
 h(-47,{description="Rewarded for completing the Weekly Raid quests.",sourceQuests={24869,24870,24871,24872,24873,24874,24875,24876,24877,24878,24879,24880},g={
-i(52006,{b=1,q=4,rwp=40001,sym={{"select","itemID",50452,50020,50449,50001,49994,50015,50447,50453,36931,36919,36934,36928,36922,36925}}})}}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(52006,{b=1,q=4,rwp=40001,sym={{"select","itemID",50452,50020,50449,50001,49994,50015,50447,50453,36931,36919,36934,36928,36922,36925}}})}}),(_.OnInitDB.RegionExclusiveCN)(
 h(-55,{
 title(675,{description="Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ will grant you this title."}),
 title(674,{description="Submitting a Speedrun to https://wow.blizzard.cn/iccspeedrun/#/ and finishing in the Top 16 will grant you this title."}),

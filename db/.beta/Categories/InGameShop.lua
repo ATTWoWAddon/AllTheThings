@@ -32,7 +32,7 @@ p(3253,{awp=100105,itemID=190608,npcID=185611,spellID=367778,u=3}),
 p(2780,{awp=90005,npcID=158142,u=3}),
 p(1386,{awp=100100,itemID=109014,npcID=77137,spellID=155748,u=3,g={
 crit(24600,{achID=8917,id=3,u=3})}}),
-p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(4264,{awp=110105,b=1,itemID=208446,npcID=209163,spellID=419467,u=3}),(_.OnInitDB.RegionExclusiveCN)(
 p(4894,{awp=110207,itemID=252650,npcID=251511,spellID=1254822,u=3})),
 p(297,{awp=40003,b=1,itemID=68385,npcID=51600,spellID=95787,u=3}),
 p(3249,{awp=90205,b=1,itemID=190586,npcID=185586,spellID=367702,u=3}),
@@ -54,7 +54,7 @@ p(4591,{b=1,itemID=224260,npcID=224718,spellID=452223,u=3})}})}}),
 p(4684,{awp=110007,itemID=231310,npcID=232533,spellID=468228,u=3}),
 p(2051,{awp=70300,b=1,itemID=147900,npcID=122033,spellID=243499,u=3}),
 p(2184,{awp=80001,b=1,itemID=160587,npcID=138742,spellID=272771,u=3}),
-p(4568,{awp=110105,b=1,itemID=223498,npcID=223691,spellID=449280,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+p(4568,{awp=110105,b=1,itemID=223498,npcID=223691,spellID=449280,u=3}),(_.OnInitDB.RegionExclusiveCN)(
 p(4717,{awp=110007,itemID=233190,npcID=234439,spellID=473300,u=3})),
 p(156,{awp=90005,b=1,itemID=32588,npcID=23234,rwp=90105,spellID=40549,u=2}),
 p(2185,{awp=80001,b=1,itemID=160588,npcID=138741,rwp=100107,spellID=272772,u=2}),
@@ -648,14 +648,14 @@ toy(208883,{awp=110207,b=1,u=3}),
 toy(193588,{awp=100200,b=1,u=3}),
 toy(166779,{b=1,u=3})}}),
 i(122284,{awp=60102,b=1,u=3}),
-i(122270,{awp=60102,b=1,u=3}),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(235378,{awp=40003,b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",spellID=1216746,u=3,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(459784,{itemID=227362,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(35223,{b=1,f=55,spellID=46168,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(46779,{b=1,f=55,spellID=65745,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(42777,{itemID=49284,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(42776,{itemID=49283,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-i(45047,{b=1,f=55,spellID=62857,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-mnt(46197,{itemID=49285,lvl=10,u=3})),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+i(122270,{awp=60102,b=1,u=3}),(_.OnInitDB.RegionExclusiveCN)(
+i(235378,{awp=40003,b=1,description="Can be bought for ¥200 RMB (~$27 USD) in the Ingame Shop.\n\nYou can only purchase 12 boxes per year.",spellID=1216746,u=3,g={(_.OnInitDB.RegionExclusiveCN)(
+mnt(459784,{itemID=227362,lvl=10,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+i(35223,{b=1,f=55,spellID=46168,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+i(46779,{b=1,f=55,spellID=65745,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+mnt(42777,{itemID=49284,lvl=10,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+mnt(42776,{itemID=49283,lvl=10,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+i(45047,{b=1,f=55,spellID=62857,u=3})),(_.OnInitDB.RegionExclusiveCN)(
+mnt(46197,{itemID=49285,lvl=10,u=3})),(_.OnInitDB.RegionExclusiveCN)(
 mnt(46199,{itemID=49286,lvl=10,u=3}))}}))}})
 end)

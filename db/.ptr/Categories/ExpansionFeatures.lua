@@ -7383,6 +7383,7 @@ q(37045,{coords={
 i(118471),
 i(118473,{b=1,f=55,spellID=174798}),
 i(139593,{b=1,f=55,lvl=35,spellID=220971})}})}),
+i(114119,{b=1,f=55,spellID=168179}),
 i(139594,{b=1,f=55,spellID=220972}),
 i(114120,{awp=60002,b=1,f=55,lvl=40,rwp=70003,spellID=168180,u=2,g={
 s(17270,36533,{f=26,lvl=27,u=2}),
@@ -26656,7 +26657,7 @@ q(57649,{coords={
 [1536]={{50.8,24.4}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={164619},sourceQuests={58007},g={
 i(172371,{customCollect={"SL_COV_NEC"},spellID=320291})}}),
 q(59698,{coords={
-[1533]={{30,55.2}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={165716},sourceQuests={59659,59678}}),
+[1533]={{30,55.2}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={165412,165716},sourceQuests={59659,59678}}),
 q(58523,{coords={
 [1525]={{72,41.2}}},customCollect={"SL_COV_NEC"},lvl=60,qgs={161461},sourceQuests={58504}}),
 q(60111,{coords={

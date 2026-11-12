@@ -56477,13 +56477,10 @@ q(76140,{coords={
 q(76141,{coords={
 [2025]={{52.3,39.5}}},lvl=10,qgs={205706},sourceQuests={76140}}),
 q(76142,{coords={
-[2025]={{52.3,39.5}}},lvl=10,qgs={205706},sourceQuests={76140},g={
-i(206586,{spellID=413920}),
-i(206269)}}),
+[2025]={{52.3,39.5}}},lvl=10,qgs={205706},qis={206269,206586},sourceQuests={76140}}),
 q(76431),
 q(76143,{coords={
-[2025]={{61.4,79.7}}},lvl=10,qgs={205707},sourceQuests={76141,76142},g={
-i(206369,{spellID=413111})}}),
+[2025]={{61.4,79.7}}},lvl=10,qgs={205707},qis={206369},sourceQuests={76141,76142}}),
 q(76144,{coords={
 [2025]={{61.4,79.7}}},lvl=10,qgs={205707},sourceQuests={76143}}),
 q(76145,{coords={
@@ -58786,7 +58783,7 @@ q(89023,{lvl=70,minReputation={2685,19},qgs={235617}}),
 q(85471,{minReputation={2685,20},qgs={235617},repeatable=1,g={
 i(232463,{minReputation={2685,20}})}})}),
 h(-56,{
-o(505248,{description="Interact with for a 10% chance for a free Crystalized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",isWeekly=1,minReputation={2685,2},questID=89350,g={
+o(505248,{description="Interact with it for a 10% chance for a free Crystallized Augment Rune.\n\nAt renown 14, you are guaranteed at least one.",isWeekly=1,minReputation={2685,2},questID=89350,g={
 i(224572,{f=55,lvl=80,spellID=453250})}})}),
 h(-58,{
 n(235621,{
@@ -63996,12 +63993,12 @@ gach(61621),
 mnt(1263635,{b=1,itemID=262914,lvl=10})}})}})}}),
 h(-19,{
 i(258839,{b=1,description="Drops from the last boss of Mythic Dungeons. It contains various dungeon dropped profession recipes."})})}}),
-h(-68,{awp=120001,g={(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-flt(110,{(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(756)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(757)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(758)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
-title(759)),(function(t)if GetCVar("portal")~="CN" then	t.u=1 end	return t end)(
+h(-68,{awp=120001,g={(_.OnInitDB.RegionExclusiveCN)(
+flt(110,{(_.OnInitDB.RegionExclusiveCN)(
+title(756)),(_.OnInitDB.RegionExclusiveCN)(
+title(757)),(_.OnInitDB.RegionExclusiveCN)(
+title(758)),(_.OnInitDB.RegionExclusiveCN)(
+title(759)),(_.OnInitDB.RegionExclusiveCN)(
 title(760))})),
 h(-58,{
 n(197711,{coords={
