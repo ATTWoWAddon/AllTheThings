@@ -1,3 +1,19 @@
+-- Assigning a table to ObjectDB[id] only merges in missing keys (existing values are kept), so a conditional
+-- override of an existing object has to replace its fields directly.
+local function OverrideObject(objectID, data)
+	local o = ObjectDB[objectID];
+	for key,value in pairs(data) do
+		if key == "text" then
+			local text = o.text;
+			for locale,name in pairs(value) do
+				text[locale] = name;
+			end
+		else
+			o[key] = value;
+		end
+	end
+end
+
 -- PROGRAMMATIC OBJECT LOCALES
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
@@ -8,7 +24,7 @@ brightlyColoredEgg.text.en = WOWAPI_GetSpellName(61820);
 ObjectDB[226469].text.en = WOWAPI_GetSpellName(154259);
 
 -- #if BEFORE WRATH
-ObjectDB[176344] = {
+OverrideObject(176344, {
 	readable = "Document Chest",
 	icon = 134943,
 	model = 196976,
@@ -23,8 +39,8 @@ ObjectDB[176344] = {
 		ko = "문서함",
 		cn = "文件箱",
 	},
-};
-ObjectDB[190483] = {
+});
+OverrideObject(190483, {
 	readable = "Document Chest",
 	icon = 134943,
 	model = 196976,
@@ -39,8 +55,8 @@ ObjectDB[190483] = {
 		ko = "문서함",
 		cn = "文件箱",
 	},
-};
-ObjectDB[190484] = {
+});
+OverrideObject(190484, {
 	readable = "Document Chest",
 	icon = 134943,
 	model = 196976,
@@ -55,11 +71,11 @@ ObjectDB[190484] = {
 		ko = "문서함",
 		cn = "文件箱",
 	},
-};
+});
 -- #endif
 
 -- #if BEFORE CATA
-ObjectDB[256] = {
+OverrideObject(256, {
 	readable = "WANTED",
 	icon = 134939,
 	model = 199424,
@@ -74,13 +90,13 @@ ObjectDB[256] = {
 		ko = "현상 수배!",
 		cn = "通缉",
 	},
-};
+});
 -- #endif
 
 -- #if BEFORE MOP
 -- During Cataclysm Classic, the name of this object had extra spaces in it. Silly Blizzard.
 -- NOTE: Check this again during MOP.
-ObjectDB[206293] = {
+OverrideObject(206293, {
 	readable = "A.I.D.A. Terminal",
 	model = 201023,
 	text = {
@@ -94,7 +110,7 @@ ObjectDB[206293] = {
 		ko = "인공지능 단말기",
 		cn = "A. I. D.A.终端",
 	},
-};
+});
 -- #endif
 
 -- TODO: Change the headers for this stuff to a custom header and allow the object localizer to translate the object so it appears on the tooltip.
