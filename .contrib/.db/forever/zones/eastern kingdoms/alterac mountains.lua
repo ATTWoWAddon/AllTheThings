@@ -860,6 +860,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					},
 				}),
 			}),
+			n(30885, {	-- Blazik Fireclaw <Armor Quartermaster>
+				coord = { 16.0, 71.0, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {
+					SymSelector.select("PREMIER_PVP_ALLIANCE"),
+					{ "pop" },
+					{ "exclude", "headerID", WEAPONS },
+					{ "exclude", "itemID", 272698, 272699, 274969 },	-- Premier Sergeant's Cloak/Cape, Premier Master Sergeant's Insignia ("Dapper" Danik Blackshaft)
+				},
+				races = ALLIANCE_ONLY,
+			}),
 			n(2480, {	-- Bro'kin <Alchemy Supplies>
 				coord = { 38.0, 38.0, MAP.ALTERAC_MOUNTAINS },
 				groups = {
@@ -876,6 +887,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					i(260631),	-- Arcane Wine
 					i(285362),	-- Red Wine Glass
 				},
+			}),
+			n(32333, {	-- "Dapper" Danik Blackshaft <Officer Accessories Quartermaster>
+				coords = {
+					{ 16.0, 70.4, MAP.ALTERAC_MOUNTAINS },
+					{ 16.2, 70.6, MAP.ALTERAC_MOUNTAINS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {
+					{ "select", "npcID", 12781 },	-- Master Sergeant Biggins <Officer Accessories Quartermaster>
+					{ "pop" },
+				},
+				races = ALLIANCE_ONLY,
+			}),
+			n(32334, {	-- Nixi Fireclaw <Weapons Quartermaster>
+				coord = { 16.2, 71.2, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {
+					SymSelector.select("PREMIER_PVP_ALLIANCE"),
+					{ "find", "headerID", WEAPONS },	-- Premier Grand Marshal Weapons
+					{ "pop" },
+				},
+				races = ALLIANCE_ONLY,
 			}),
 			n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
 				coord = { 47.3, 35.2, MAP.ALTERAC_MOUNTAINS },

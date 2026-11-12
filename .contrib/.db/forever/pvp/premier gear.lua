@@ -11,28 +11,138 @@ root(ROOTS.PVP, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					n(WEAPONS, {
-						i(272838),	-- Premier Grand Marshal's Aegis
-						i(278468),	-- Premier Grand Marshal's Barricade
-						i(272848),	-- Premier Grand Marshal's Battle Hammer
-						i(272841),	-- Premier Grand Marshal's Bullseye
-						i(272851),	-- Premier Grand Marshal's Claymore
-						i(272858),	-- Premier Grand Marshal's Demolisher
-						i(272843),	-- Premier Grand Marshal's Dirk
-						i(272849),	-- Premier Grand Marshal's Glaive
-						i(272846),	-- Premier Grand Marshal's Hand Cannon
-						i(272839),	-- Premier Grand Marshal's Handaxe
-						i(272845),	-- Premier Grand Marshal's Left Hand Blade
-						i(272693),	-- Premier Grand Marshal's Longsword
-						i(272856),	-- Premier Grand Marshal's Mageblade
-						i(272847),	-- Premier Grand Marshal's Punisher
-						i(272842),	-- Premier Grand Marshal's Repeater
-						i(272844),	-- Premier Grand Marshal's Right Hand Blade
-						i(272850),	-- Premier Grand Marshal's Stave
-						i(272840),	-- Premier Grand Marshal's Sunderer
-						i(272859),	-- Premier Grand Marshal's Swiftblade
-						i(278158),	-- Premier Grand Marshal's Tome of Power
-						i(278157),	-- Premier Grand Marshal's Tome of Restoration
-						i(272857),	-- Premier Grand Marshal's Warhammer
+						i(272838, {	-- Premier Grand Marshal's Aegis
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 10500 },	-- x10500 Honor Points
+							},
+						}),
+						i(278468, {	-- Premier Grand Marshal's Barricade
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 10500 },	-- x10500 Honor Points
+							},
+						}),
+						i(272848, {	-- Premier Grand Marshal's Battle Hammer
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272841, {	-- Premier Grand Marshal's Bullseye
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272851, {	-- Premier Grand Marshal's Claymore
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272858, {	-- Premier Grand Marshal's Demolisher
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272843, {	-- Premier Grand Marshal's Dirk
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272849, {	-- Premier Grand Marshal's Glaive
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272846, {	-- Premier Grand Marshal's Hand Cannon
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272839, {	-- Premier Grand Marshal's Handaxe
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272845, {	-- Premier Grand Marshal's Left Hand Blade
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272693, {	-- Premier Grand Marshal's Longsword
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272856, {	-- Premier Grand Marshal's Mageblade
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272847, {	-- Premier Grand Marshal's Punisher
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272842, {	-- Premier Grand Marshal's Repeater
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272844, {	-- Premier Grand Marshal's Right Hand Blade
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(272850, {	-- Premier Grand Marshal's Stave
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272840, {	-- Premier Grand Marshal's Sunderer
+							cost = {
+								{ "i", 20560, 20 },	-- x20 Alterac Valley Mark of Honor
+								{ "c", 1792, 22500 },	-- x22500 Honor Points
+							},
+						}),
+						i(272859, {	-- Premier Grand Marshal's Swiftblade
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
+						i(278158, {	-- Premier Grand Marshal's Tome of Power
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 10500 },	-- x10500 Honor Points
+							},
+						}),
+						i(278157, {	-- Premier Grand Marshal's Tome of Restoration
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 10500 },	-- x10500 Honor Points
+							},
+						}),
+						i(272857, {	-- Premier Grand Marshal's Warhammer
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 12000 },	-- x12000 Honor Points
+							},
+						}),
 					}),
 					cl(DRUID, bubbleDownSelf({ classes = { DRUID } }, {
 						-- Epic set: Field Marshal's Refuge
@@ -334,20 +444,114 @@ root(ROOTS.PVP, {
 						i(272791),	-- Premier Knight-Captain's Plate Girdle
 
 						-- Rare set: Lieutenant Commander's Battlegear
-						i(272738),	-- Premier Plate Helm
-						i(272741),	-- Premier Plate Pauldrons
-						i(272739),	-- Premier Plate Chestguard
-						i(272717),	-- Premier Plate Gauntlets
-						i(272740),	-- Premier Plate Leggings
-						i(272716),	-- Premier Plate Boots
-						i(272828),	-- Premier Plate Wristguards
-						i(273325),	-- Premier Plate Girdle
+						i(272738, {	-- Premier Plate Helm
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272741, {	-- Premier Plate Pauldrons
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272739, {	-- Premier Plate Chestguard
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272717, {	-- Premier Plate Gauntlets
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272740, {	-- Premier Plate Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272716, {	-- Premier Plate Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272828, {	-- Premier Plate Wristguards
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(273325, {	-- Premier Plate Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 
-					-- TODO: confirm which faction sells which Sergeant's Cape/Cloak pair (assumed from the item ID range)
-					i(272699),	-- Premier Sergeant's Cape
-					i(272698),	-- Premier Sergeant's Cloak
-					i(274969),	-- Premier Master Sergeant's Insignia
+					i(275244, {	-- Premier Emboldened Belt Seal
+						cost = {
+							{ "c", 1792, 1500 },	-- x1500 Honor Points
+						},
+					}),
+					i(275238, {	-- Premier Emboldened Chest Seal
+						cost = {
+							{ "c", 1792, 2650 },	-- x2650 Honor Points
+						},
+					}),
+					i(275243, {	-- Premier Emboldened Feet Seal
+						cost = {
+							{ "c", 1792, 1500 },	-- x1500 Honor Points
+						},
+					}),
+					i(275239, {	-- Premier Emboldened Hands Seal
+						cost = {
+							{ "c", 1792, 2250 },	-- x2250 Honor Points
+						},
+					}),
+					i(275241, {	-- Premier Emboldened Head Seal
+						cost = {
+							{ "c", 1792, 2650 },	-- x2650 Honor Points
+						},
+					}),
+					i(275242, {	-- Premier Emboldened Legs Seal
+						cost = {
+							{ "c", 1792, 2650 },	-- x2650 Honor Points
+						},
+					}),
+					i(275229, {	-- Premier Emboldened Shoulder Seal
+						cost = {
+							{ "c", 1792, 2250 },	-- x2250 Honor Points
+						},
+					}),
+					i(275240, {	-- Premier Emboldened Wrist Seal
+						cost = {
+							{ "c", 1792, 1200 },	-- x1200 Honor Points
+						},
+					}),
+					i(272699, {	-- Premier Sergeant's Cape
+						cost = {
+							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 4500 },	-- x4500 Honor Points
+						},
+					}),
+					i(272698, {	-- Premier Sergeant's Cloak
+						cost = {
+							{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+							{ "c", 1792, 4500 },	-- x4500 Honor Points
+						},
+					}),
+					i(274969, {	-- Premier Master Sergeant's Insignia
+						cost = {
+							{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+							{ "c", 1792, 7500 },	-- x7500 Honor Points
+						},
+					}),
 				},
 			}),
 			n(FACTION_HEADER_HORDE, {
@@ -687,7 +891,6 @@ root(ROOTS.PVP, {
 						i(273324),	-- Premier Mortarplate Girdle
 					})),
 
-					-- TODO: confirm which faction sells which Sergeant's Cape/Cloak pair (assumed from the item ID range)
 					i(272589),	-- Premier Sergeant's Cape
 					i(272578),	-- Premier Sergeant's Cloak
 					i(274968),	-- Premier Senior Sergeant's Insignia
