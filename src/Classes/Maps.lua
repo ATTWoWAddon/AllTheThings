@@ -310,9 +310,11 @@ local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
 -- Wrath and later (and Forever) also track each area as a criteria of the zone's "Explore ..." achievement, which the
 -- Parser nests under the exploration (g). That gives a second way to see the area as explored when the map exploration
 -- API never reports it (e.g. Undercity). This is only a display check; nothing is saved to the Exploration cache.
-local IsExploredByAchievementCriteria = app.EmptyFunction
 if (app.GameBuildVersion >= 30000 or app.IsForever) and GetAchievementCriteriaInfoByID then
-	IsExploredByAchievementCriteria = function(t)
+	local function collected_ViaAchievementCriteria(t)
+		local collected = app.TypicalCharacterCollected(CACHE, t[KEY])
+		if collected then return collected end
+
 		local g = t.g
 		if not g then return end
 		for i=1,#g do
@@ -323,6 +325,15 @@ if (app.GameBuildVersion >= 30000 or app.IsForever) and GetAchievementCriteriaIn
 			end
 		end
 	end
+	local function SwapCollectedForExploration()
+		if app.Settings.AccountWide.Exploration then
+			app.SwapClassDefinitionMethod(CLASSNAME, "collected", collected_ViaAchievementCriteria)
+		else
+			app.SwapClassDefinitionMethod(CLASSNAME, "collected")
+		end
+	end
+	app.AddEventHandler("OnSettingsNeedsRefresh", SwapCollectedForExploration)
+	app.AddEventHandler("OnStartup", SwapCollectedForExploration)
 end
 app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
@@ -352,10 +363,9 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	collectible = app.ReturnTrue,
 	collected = function(t)
 		return app.TypicalCharacterCollected(CACHE, t[KEY])
-			or (IsExploredByAchievementCriteria(t) and 1)
 	end,
 	saved = function(t)
-		return app.IsCached(CACHE, t[KEY]) or IsExploredByAchievementCriteria(t)
+		return app.IsCached(CACHE, t[KEY])
 	end,
 	coords = function(t)
 		return ExplorationAreaPositionDB[t[KEY]];
