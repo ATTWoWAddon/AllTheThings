@@ -307,6 +307,25 @@ end));
 -- Exploration Class
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
 local KEY, CACHE, CLASSNAME = "explorationID", "Exploration", "Exploration"
+-- Wrath and later (and Forever) also track each area as a criteria of the zone's "Explore ..." achievement, which the
+-- Parser nests under the exploration (g). That gives a second way to see the area as explored when the map exploration
+-- API never reports it (e.g. Undercity). This is only a display check; nothing is saved to the Exploration cache.
+local IsExploredByAchievementCriteria = app.EmptyFunction
+if (app.GameBuildVersion >= 30000 or app.IsForever) and GetAchievementCriteriaInfoByID then
+	local GetAchievementCriteriaInfoByID = GetAchievementCriteriaInfoByID
+	IsExploredByAchievementCriteria = function(t)
+		local g = t.g
+		if not g then return end
+		for i=1,#g do
+			local o = g[i]
+			local criteriaID = o.criteriaID
+			local achievementID = criteriaID and (o.achID or o.achievementID)
+			if achievementID and select(3, GetAchievementCriteriaInfoByID(achievementID, o.uid or criteriaID)) then
+				return true
+			end
+		end
+	end
+end
 app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	CACHE = function() return CACHE end,
 	name = function(t)
@@ -335,9 +354,10 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	collectible = app.ReturnTrue,
 	collected = function(t)
 		return app.TypicalCharacterCollected(CACHE, t[KEY])
+			or (IsExploredByAchievementCriteria(t) and 1)
 	end,
 	saved = function(t)
-		return app.IsCached(CACHE, t[KEY])
+		return app.IsCached(CACHE, t[KEY]) or IsExploredByAchievementCriteria(t)
 	end,
 	coords = function(t)
 		return ExplorationAreaPositionDB[t[KEY]];
