@@ -2325,7 +2325,7 @@ app.AddEventRegistration("CRITERIA_UPDATE", RefreshAllQuestInfo)
 app.AddEventRegistration("BAG_NEW_ITEMS_UPDATED", softRefresh)
 app.AddEventRegistration("QUEST_WATCH_UPDATE", softRefresh)
 -- Classic has Objectives that need to be updated whereas Retail can just redraw the Quest group itself
-local QuestEventUpdateFunction = app.IsClassic and app.DirectGroupUpdate or app.DirectGroupRedraw
+local QuestEventUpdateFunction = (app.IsClassic or app.IsForever) and app.DirectGroupUpdate or app.DirectGroupRedraw
 app.AddEventRegistration("QUEST_ACCEPTED", function(questLogIndex, questID)
 	if not questID then questID = questLogIndex; end	-- NOTE: In Classic there's an extra parameter.
 	softRefresh();
