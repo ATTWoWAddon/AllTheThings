@@ -331,14 +331,14 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 					objective(2, {	-- 0/1 Secret Note #2
 						providers = {
 							{ "i",  12766 },	-- Secret Note #2
-							{ "o", 654507 },	-- Document Chest #2
+							{ "o", 654507 },	-- Document Chest
 						},
 						coord = { 33.8, 39.9, MAP.THOUSAND_NEEDLES },
 					}),
 					objective(3, {	-- 0/1 Secret Note #3
 						providers = {
 							{ "i",  12768 },	-- Secret Note #3
-							{ "o", 654508 },	-- Document Chest #3
+							{ "o", 654508 },	-- Document Chest
 						},
 						coord = { 39.3, 41.4, MAP.THOUSAND_NEEDLES },
 					}),
