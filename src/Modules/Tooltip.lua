@@ -1132,7 +1132,8 @@ local function TryShowUnitTooltipInfo(self, guid, unitName)
 		end
 	elseif t == "Creature" or t == "Vehicle" then
 		if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-		if spawn_uid then
+		-- Forever obfuscates the spawn timestamp in NPC GUIDs (since build 70425), so the Alive/Spawned math gives nonsense there
+		if spawn_uid and not app.IsForever then
 			local showAliveTime = app.Settings:GetTooltipSetting("Alive");
 			local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
 			if showAliveTime or showSpawnTime then
