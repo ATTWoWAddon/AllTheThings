@@ -1029,6 +1029,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				isBreadcrumb = true,
 				lvl = 5,
 			}),
+			q(97018, {	-- Learning to Ride (Dwarf)
+				qg = 4772,	-- Ultham Ironhorn <Ram Riding Instructor>
+				coord = { 63.8, 50.2, MAP.DUN_MOROGH },
+				races = { DWARF },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(97188, {	-- Learning to Ride (Gnome)
+				qg = 7954,	-- Binjy Featherwhistle <Mechanostrider Pilot>
+				coord = { 49.2, 48.0, MAP.DUN_MOROGH },
+				races = { GNOME },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(1679, {	-- Muren Stormpike
 				altQuests = {
 					1638,	-- A Warrior's Training

@@ -1238,6 +1238,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(1434),	-- Glowing Wax Stick
 				},
 			}),
+			q(97170, {	-- Learning to Ride
+				qg = 4732,	-- Randal Hunter <Horse Riding Instructor>
+				coord = { 84.2, 65.0, MAP.ELWYNN_FOREST },
+				races = { HUMAN },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(85, {	-- Lost Necklace
 				qg = 246,	-- "Auntie" Bernice Stonefield
 				coord = { 34.5, 84.3, MAP.ELWYNN_FOREST },

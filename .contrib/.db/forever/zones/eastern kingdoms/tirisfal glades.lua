@@ -1251,6 +1251,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(281285),	-- Finscale Soles
 				},
 			}),
+			q(97203, {	-- Learning to Ride
+				qg = 4773,	-- Velma Warnam <Undead Horse Riding Instructor>
+				coord = { 60.0, 52.4, MAP.TIRISFAL_GLADES },
+				races = { UNDEAD },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(98545, {	-- Leonid's Letter
 				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>

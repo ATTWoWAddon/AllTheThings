@@ -988,6 +988,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 			}),
+			q(97205, {	-- Learning to Ride
+				qg = 265756,	-- Genn Fairweather
+				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
+				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(92682, {	-- Make Yourself Useful
 				sourceQuest = 92679,	-- Blood Tithe
 				qg = 252800,	-- Aamelia Windfield

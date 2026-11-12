@@ -830,6 +830,13 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(97204, {	-- Learning to Ride
+				qg = 3690,	-- Kar Stormsinger <Kodo Riding Instructor>
+				coord = { 47.6, 58.4, MAP.MULGORE },
+				races = { TAUREN },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(99079, {	-- Longwalker Malah
 				qg = 3222,	-- Brave Wildrunner
 				coord = { 46.6, 63.0, MAP.MULGORE },

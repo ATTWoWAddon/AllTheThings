@@ -996,6 +996,13 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					i(9513),	-- Ley Staff
 				},
 			}),
+			q(97200, {	-- Learning to Ride
+				qg = 7953,	-- Xar'Ti <Raptor Riding Trainer>
+				coord = { 55.2, 75.4, MAP.DUROTAR },
+				races = { TROLL },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(96821, {	-- Legging It
 				qg = 3194,	-- Vel'rin Fang
 				coord = { 55.95, 73.92, MAP.DUROTAR },

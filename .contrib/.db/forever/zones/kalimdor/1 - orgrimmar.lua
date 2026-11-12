@@ -521,6 +521,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
+			q(97194, {	-- Learning to Ride
+				qg = 4752,	-- Kildar <Wolf Riding Instructor>
+				coord = { 69.2, 13.2, MAP.ORGRIMMAR },
+				races = { ORC },
+				lvl = 40,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(65601, {	-- Love Hurts
 				sourceQuest = 1507,	-- Devourer of Souls [Orgrimmar]
 				qg = 5909,	-- Cazul
