@@ -1,11 +1,7 @@
 1.60.1.69876
 i(5462),	-- Dartol's Rod of Transformation
-i(22728),	-- Steam Tonk Controller
 i(221315),	-- Traveler's Symbols
-i(269900),	-- Centaur Banner Deployment Device
-i(270868),	-- Dwarven Tradeskill Signpost
 i(270870),	-- Orcish Tradeskill Signpost
-i(276896),	-- Everlasting Silvermoon Shimmerwine
 i(279471),	--
 i(279519),	--
 i(284164),	--
@@ -13,8 +9,6 @@ i(286203),	--
 i(286573),	--
 1.60.1.70450
 i(288185),	-- Adventurer's Tent
-1.60.1.70862
-i(276242),	-- Replica Dartol's Rod of Transformation
 
 
 

@@ -3,8 +3,6 @@ r(1240952),	-- Skinning
 r(1240963),	-- Skinning
 r(1240974),	-- Skinning
 r(1240987),	-- Skinning
-r(1262982),	-- Trapper's Workbench
-r(1262985),	-- Field Guide
 r(1278068),	-- Tanning
 
 

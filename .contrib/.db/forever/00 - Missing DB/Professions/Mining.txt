@@ -11,7 +11,6 @@ r(1240962),	-- Mining
 r(1240973),	-- Mining
 r(1240986),	-- Mining
 r(1249637),	-- Smelt Azerothium
-r(1262975),	-- Rock Garden
 r(1263071),	-- Molten Foundry
 r(1306126),	-- Smelt Heavy Thorium
 

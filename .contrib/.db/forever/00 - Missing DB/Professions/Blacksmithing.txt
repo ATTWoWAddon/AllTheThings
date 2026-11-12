@@ -8,7 +8,6 @@ r(9942),	-- Mithril Plate Gloves
 r(9945),	-- Ornate Mithril Pants
 r(9950),	-- Ornate Mithril Gloves
 r(11643),	-- Golden Scale Gauntlets
-r(16660),	-- Dawnbringer Shoulders
 r(16742),	-- Enchanted Thorium Helm
 r(16744),	-- Enchanted Thorium Leggings
 r(16745),	-- Enchanted Thorium Breastplate
@@ -129,24 +128,8 @@ r(1240944),	-- Blacksmithing
 r(1240955),	-- Blacksmithing
 r(1240966),	-- Blacksmithing
 r(1240979),	-- Blacksmithing
-r(1252238),	-- Guard's Chain Shirt
-r(1252261),	-- Crusader's Gloves
-r(1252282),	-- Hard Gold Cuirass
-r(1252283),	-- Hard Gold Boots
-r(1252284),	-- Hard Gold Bracers
-r(1252285),	-- Hard Gold Leggings
-r(1252286),	-- Hard Gold Coif
-r(1252288),	-- Hard Gold Pauldrons
-r(1252289),	-- Shining Mithril Breastplate
 r(1252290),	-- Shining Mithril Pauldrons
-r(1252291),	-- Shining Mithril Boots
 r(1252293),	-- Shining Mithril Pants
-r(1252294),	-- Shining Mithril Gauntlet
-r(1252295),	-- Officer's Boots
-r(1252296),	-- Sentinel's Boots
-r(1252297),	-- Warder's Boots
-r(1252298),	-- Prefect's Boots
-r(1252299),	-- Justicar's Boots
 r(1252300),	-- Officer's Gloves
 r(1252301),	-- Sentinel's Gloves
 r(1252302),	-- Warder's Gloves
@@ -157,16 +140,9 @@ r(1252306),	-- Sentinel's Belt
 r(1252307),	-- Warder's Belt
 r(1252308),	-- Prefect's Belt
 r(1252309),	-- Justicar's Belt
-r(1252315),	-- Officer's Gauntlet
-r(1252316),	-- Sentinel's Gauntlet
-r(1252317),	-- Warder's Gauntlet
-r(1252318),	-- Prefect's Gauntlet
-r(1252319),	-- Justicar's Gauntlet
 r(1252335),	-- Blessed Plate Pauldrons
 r(1252336),	-- Blessed Plate Boots
 r(1252337),	-- Blessed Plate Gauntlet
-r(1252338),	-- Imperial Plate Gauntlets
-r(1252339),	-- Blessed Plate Bracers
 r(1252340),	-- Blessed Plate Leggings
 r(1252341),	-- Blessed Plate Belt
 r(1252342),	-- Blessed Plate Helm
@@ -175,14 +151,7 @@ r(1252347),	-- Champion's Legplates
 r(1252348),	-- Stalwart Helm
 r(1252349),	-- Martyr's Legplates
 r(1252350),	-- Breastplate of Salvation
-r(1252352),	-- Bronze Dory
-r(1252353),	-- Iron Fists
-r(1252354),	-- Steel Spear
-r(1252356),	-- Mithril Shortsword
-r(1252358),	-- Mithril Claws
 r(1252359),	-- Mithril Claymore
-r(1252360),	-- Mithril Stiletto
-r(1252361),	-- Charged Mithril Battleaxe
 r(1252364),	-- Thorium Poleaxe
 r(1252988),	-- Earthcrusher's Adaptive Chestplate
 r(1252989),	-- Earthcrusher's Adaptive Armguards
@@ -192,8 +161,6 @@ r(1253002),	-- Earthweaver's Adaptive Links
 r(1253003),	-- Earthweaver's Adaptive Waistguard
 r(1263073),	-- Master Forge
 r(1277780),	--
-r(1301534),	-- Azure Skyforged Helm
-r(1302598),	-- Rough Copper Chain Boots
 r(1306533),	-- Ironwood Blade
 r(1306534),	-- Forest Defender's Axe
 r(1306535),	-- Greenhammer
@@ -201,9 +168,6 @@ r(1306536),	-- Evergreen Shield
 r(1306537),	-- Depleted Thorium Sabatons
 r(1306538),	-- Heavy Thorium Gauntlets
 r(1306539),	-- Azerothium Legplates
-r(1317962),	-- Cracked Blacksmith Hammer
-r(1317963),	-- Mithril Blacksmith Hammer
-r(1317964),	-- Arcanite Blacksmith Hammer
 
 
 

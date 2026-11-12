@@ -143,7 +143,6 @@ r(1252997),	-- Beastmender's Adaptive Girdle
 r(1252998),	-- Dinomender's Adaptive Tunic
 r(1252999),	-- Dinomender's Adaptive Wrists
 r(1253000),	-- Dinomender's Adaptive Chain
-r(1254965),	-- Forceful Rugged Armor Kit
 r(1254967),	-- Pristine Scorpid Leggings
 r(1254968),	-- Black Dragonscale Helm
 r(1254969),	-- Blue Dragonscale Helm
@@ -155,7 +154,6 @@ r(1254975),	-- Charged Scorpid Vest
 r(1254976),	-- Supple Scorpid Helm
 r(1254977),	-- Charged Scorpid Gauntlets
 r(1254978),	-- Supple Scorpid Belt
-r(1254979),	-- Heavy Scorpid Boots
 r(1254980),	-- Charged Scorpid Bracers
 r(1254981),	-- Supple Scorpid Shoulders \\ Supple Scorpid Shoulder
 r(1254986),	-- Mender's Mail Gauntlets
@@ -168,10 +166,6 @@ r(1254992),	-- Charged Scorpid Helm
 r(1254993),	-- Supple Scorpid Leggings
 r(1254998),	-- Charged Scorpid Belt
 r(1254999),	-- Supple Scorpid Boots
-r(1255008),	-- Mender's Mail Boots
-r(1255009),	-- Skirmisher's Mail Boots
-r(1255010),	-- Skycaller's Mail Boots
-r(1255011),	-- Stalker's Mail Boots
 r(1255012),	-- Ironfeather Leggings
 r(1255013),	-- Warbear Helm
 r(1255014),	-- Timbermaw Tunic
@@ -184,26 +178,15 @@ r(1255020),	-- Tooled Leather Epaulets
 r(1255021),	-- Blue Suede Belt
 r(1255022),	-- Tooled Leather Bracers
 r(1255023),	-- Wicked Leather Shoulders \\ Wicked Leather Shoulder
-r(1255024),	-- Blue Suede Armor
 r(1255025),	-- Tooled Leather Crown
 r(1255026),	-- Blue Suede Shoulders \\ Blue Suede Shoulder
 r(1255027),	-- Tooled Leather Gauntlets
-r(1255028),	-- Wicked Leather Boots
 r(1255029),	-- Blue Suede Pants
-r(1255036),	-- Mender's Leather Gauntlets
 r(1255037),	-- Skycaller's Leather Gauntlets
 r(1255038),	-- Warden's Leather Gauntlets
 r(1255039),	-- Skulker's Leather Gauntlets
 r(1255040),	-- Prowler's Leather Gauntlets
-r(1255041),	-- Blue Suede Gloves
-r(1255042),	-- Tooled Leather Boots
-r(1255048),	-- Blue Suede Shoes
 r(1255049),	-- Tooled Leather Belt
-r(1255060),	-- Mender's Leather Shoes
-r(1255061),	-- Skycaller's Leather Shoes
-r(1255062),	-- Warden's Leather Shoes
-r(1255063),	-- Skulker's Leather Shoes
-r(1255064),	-- Prowler's Leather Shoes
 r(1255110),	-- Wisdom's Leather Pants
 r(1255111),	-- Stormrider's Leather Pants
 r(1255112),	-- Totemic Leather Pants
@@ -216,7 +199,6 @@ r(1255133),	-- Totemic Leather Armor
 r(1255134),	-- Defender's Leather Armor
 r(1255135),	-- Trapper's Leather Armor
 r(1255136),	-- Brawler's Leather Armor
-r(1255140),	-- Defender's Leather Belt
 r(1263079),	-- Sewing Machine
 r(1277783),	--
 r(1297126),	-- Bileblister Claws
@@ -231,10 +213,6 @@ r(1297134),	-- Scalegut Treaders
 r(1297135),	-- Broodwatcher's Clenchers
 r(1297136),	-- Broodwatcher's Belt
 r(1297137),	-- Broodwatcher's Treaders
-r(1299914),	-- Spiritcaller Kilt \\ Spiritcaller Leggings
-r(1299915),	-- Spiritcaller Gloves \\ Spiritcaller Grips
-r(1299916),	-- Spiritcaller Mantle \\ Spiritcaller Spaulders
-r(1299917),	-- Spiritcaller Boots \\ Spiritcaller Treads
 r(1306526),	-- Elderwild Waistcord
 r(1306527),	-- Outlaw's Collar
 r(1306528),	-- Elderwild Pants

@@ -17,14 +17,12 @@ pet(4182),	-- Green Water Snake
 pet(4183),	-- Ribbon Snake
 pet(4184),	-- Scarlet Snake
 pet(4185),	-- Elven Wisp
-pet(5005),	-- Musical Gustjumper
 pet(5006),	-- Corrupted Kitten
 pet(5008),	-- Mini Uber Diablo
 pet(5018),	-- Snowy Wolf Pup
 pet(5047),	-- Child of By'zaali
 pet(5069),	-- Wild Chicken
 pet(5135),	-- Shadowgale Squirrel
-pet(5136),	-- Weevil K. Neevil
 pet(5139),	-- Galestrider Chick
 pet(5140),	-- Black Furbolg Pet
 pet(5141),	-- Brown Furbolg Pet

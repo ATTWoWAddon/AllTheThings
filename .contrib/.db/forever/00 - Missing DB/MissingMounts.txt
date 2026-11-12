@@ -1,7 +1,6 @@
 1.60.1.69876
 mount(459),	-- Gray Wolf
 mount(468),	-- White Stallion
-mount(578),	-- Black Wolf
 mount(579),	-- Red Wolf
 mount(581),	-- Winter Wolf
 mount(6896),	-- Black Ram

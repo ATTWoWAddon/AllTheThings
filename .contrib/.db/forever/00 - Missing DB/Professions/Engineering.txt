@@ -54,13 +54,10 @@ r(1253004),	-- Sludge Suppressor
 r(1253005),	-- Enormous Tranquilizer Dart
 r(1253006),	-- G.R.R.-Nade
 r(1263083),	-- Anarchist's Workbench
-r(1266910),	-- SAF-T Bronze Bomb
-r(1266911),	-- SAF-T Jumbo Dynamite
 r(1266913),	-- Shafety Sheep
 r(1266915),	-- EZ-Thro Bronze Mortar
 r(1266916),	-- EZ-Thro Grenade
 r(1266917),	-- SAF-T Casing
-r(1266918),	-- SAF-T Bomb
 r(1266921),	-- EZ-Thro Tru-Trigger
 r(1266922),	-- Tru-Trigger Frag Bomb
 r(1266926),	-- SAF-T Tube
@@ -77,7 +74,6 @@ r(1266941),	-- SAF-T Nitro Boosts
 r(1266942),	-- EZ-Thro Magnetic Displacer
 r(1266943),	-- SAF-T Teleport
 r(1277782),	--
-r(1293088),	-- 9-60 Battery Pack
 r(1293849),	-- Swiftfeather Arrow
 r(1293850),	-- Swiftstrike Shot
 r(1306546),	-- SAF-T Ultra Precision Scope

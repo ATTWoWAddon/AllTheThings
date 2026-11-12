@@ -2,11 +2,9 @@
 r(7636),	-- Green Woolen Robe
 r(8778),	-- Boots of Darkness
 r(12062),	-- Stormcloth Pants
-r(12063),	-- Stormcloth Gloves
 r(12068),	-- Stormcloth Vest
 r(12083),	-- Stormcloth Headband
 r(12087),	-- Stormcloth Shoulders
-r(12090),	-- Stormcloth Boots
 r(20848),	-- Flarecore Mantle
 r(20849),	-- Flarecore Gloves
 r(22759),	-- Flarecore Wraps
@@ -109,22 +107,9 @@ r(1252981),	-- Slimeslayer's Adaptive Cord
 r(1252991),	-- Slimetender's Adaptive Tunic
 r(1252992),	-- Slimetender's Adaptive Bracers
 r(1252993),	-- Slimetender's Adaptive Belt
-r(1257425),	-- Earthen Leggings
 r(1257432),	-- Earthen Silk Slippers
-r(1257433),	-- Earthen Silk Hood
-r(1257434),	-- Earthen Silk Gloves
-r(1257435),	-- Earthen Silk Cuffs
-r(1257436),	-- Gilded Handwraps
-r(1257442),	-- Earthen Silk Shoulders
-r(1257444),	-- Gilded Cord
-r(1257445),	-- Frothing Cord
-r(1257446),	-- Fiery Cord
-r(1257447),	-- Black Cord
-r(1257448),	-- Golden Cord
-r(1257449),	-- Radiant Cord
 r(1257462),	-- Ghostweave Cord
 r(1257463),	-- Earthenweave Gloves
-r(1257464),	-- Earthenweave Cord
 r(1257472),	-- Earthenweave Boots
 r(1257473),	-- Gilded Gloves
 r(1257474),	-- Frothing Gloves
@@ -133,23 +118,15 @@ r(1257476),	-- Black Gloves
 r(1257477),	-- Golden Gloves
 r(1257478),	-- Radiant Gloves
 r(1257485),	-- Earthenweave Mantle
-r(1257486),	-- Earthenweave Vest
 r(1257488),	-- Earthenweave Leggings
 r(1257489),	-- Ghostweave Mantle
 r(1257490),	-- Ghostweave Boots
 r(1257491),	-- Earthenweave Cuffs
-r(1257492),	-- Mooncloth Reagent Bag
 r(1257493),	-- Ghostweave Hood
 r(1257494),	-- Earthenweave Crown
 r(1257495),	-- Bottomless Reagent Bag
 r(1263080),	-- Loom
 r(1277784),	--
-r(1297120),	-- Venomspew Gloves
-r(1297121),	-- Venomspew Cord
-r(1297122),	-- Venomspew Footpads
-r(1297123),	-- Swarmtender's Gloves
-r(1297124),	-- Swarmtender's Cord
-r(1297125),	-- Swarmtender's Footpads
 r(1306540),	-- Robes of Fiery Devastation
 r(1306541),	-- Mana-infused Cord
 r(1306542),	-- Rime-encrusted Boots
