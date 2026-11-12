@@ -609,6 +609,7 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					{ "i", 4471, 1 },	-- Flint and Tinder
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				repeatable = true,
 				groups = {
 					i(4471),	-- Flint and Tinder
 				},
