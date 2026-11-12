@@ -2059,24 +2059,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1315, {	-- Allan Hafgan <Staves Merchant>
 				coord = { 52.9, 75.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2527),	-- Battle Staff
-					i(2535),	-- War Staff
-				},
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2535,	-- War Staff
+				}},
 			}),
 			n(1312, {	-- Ardwyn Cailen <Wand Merchant>
 				coord = { 52.8, 75.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(5239),	-- Blackbone Wand
-					i(5210),	-- Burning Wand
-					i(5236),	-- Combustible Wand
-					i(5211),	-- Dusk Wand
-					i(5209),	-- Gloom Wand
-					i(5347),	-- Pestilent Wand
-					i(5238),	-- Pitchwood Wand
-					i(5208),	-- Smoldering Wand
-				},
+				sym = {{ "select", "itemID",
+					5239,	-- Blackbone Wand
+					5210,	-- Burning Wand
+					5236,	-- Combustible Wand
+					5211,	-- Dusk Wand
+					5209,	-- Gloom Wand
+					5347,	-- Pestilent Wand
+					5238,	-- Pitchwood Wand
+					5208,	-- Smoldering Wand
+				}},
 			}),
 			n(1349, {	-- Agustus Moulaine <Mail Armor Merchant>
 				coord = { 53.6, 57.8, MAP.STORMWIND_CITY },
@@ -2123,14 +2123,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					2451,	-- Crested Heater Shield
 					2448,	-- Heavy Pavise
 					2446,	-- Kite Shield
+					2445,	-- Large Metal Shield
 					17189,	-- Metal Buckler
 					17190,	-- Ornate Buckler
 					17192,	-- Reinforced Targe
+					17188,	-- Ringed Buckler
 				}},
-				groups = {
-					i(2445),	-- Large Metal Shield
-					i(17188),	-- Ringed Buckler
-				},
 			}),
 			n(12777, {	-- Captain Dirgehammer <Armor Quartermaster>
 				description = "Found within the Champion's Hall.",
@@ -2291,19 +2289,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
 				coord = { 73.2, 57.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2523),	-- Bullova
-					i(2521),	-- Flamberge
-					i(2531),	-- Great Axe
-					i(2525),	-- War Hammer
-					i(2533),	-- War Maul
-					i(2529),	-- Zweihander
-				},
+				sym = {{ "select", "itemID",
+					2523,	-- Bullova
+					2521,	-- Flamberge
+					2531,	-- Great Axe
+					2525,	-- War Hammer
+					2533,	-- War Maul
+					2529,	-- Zweihander
+				}},
 			}),
 			n(1348, {	-- Gregory Ardus <Staff & Mace Merchant>
 				coord = { 48.2, 54.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
+					2492,	-- Cudgel
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
@@ -2313,53 +2312,50 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					924,	-- Maul
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
+					2493,	-- Wooden Mallet
 				}},
-				groups = {
-					i(2492),	-- Cudgel
-					i(2493),	-- Wooden Mallet
-				},
 			}),
 			n(1289, {	-- Gunther Weller <Weapons Merchant>
 				coord = { 64.0, 68.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(926),	-- Battle Axe
-					i(2025),	-- Bearded Axe
-					i(1198),	-- Claymore
-					i(2029),	-- Cleaver
-					i(851),	-- Cutlass
-					i(922),	-- Dacian Falx
-					i(927),	-- Double Axe
-					i(2024),	-- Espadon
-					i(925),	-- Flail
-					i(1197),	-- Giant Mace
-					i(2030),	-- Gnarled Staff
-					i(2028),	-- Hammer
-					i(853),	-- Hatchet
-					i(15811),	-- Heavy Spear
-					i(2207),	-- Jambiya
-					i(2209),	-- Kris
-					i(923),	-- Longsword
-					i(928),	-- Long Staff
-					i(852),	-- Mace
-					i(924),	-- Maul
-					i(2208),	-- Poniard
-					i(854),	-- Quarter Staff
-					i(2027),	-- Scimitar
-					i(2026),	-- Rock Hammer
-					i(15810),	-- Short Spear
-					i(1196),	-- Tabar
-				},
+				sym = {{ "select", "itemID",
+					926,	-- Battle Axe
+					2025,	-- Bearded Axe
+					1198,	-- Claymore
+					2029,	-- Cleaver
+					851,	-- Cutlass
+					922,	-- Dacian Falx
+					927,	-- Double Axe
+					2024,	-- Espadon
+					925,	-- Flail
+					1197,	-- Giant Mace
+					2030,	-- Gnarled Staff
+					2028,	-- Hammer
+					853,	-- Hatchet
+					15811,	-- Heavy Spear
+					2207,	-- Jambiya
+					2209,	-- Kris
+					928,	-- Long Staff
+					923,	-- Longsword
+					852,	-- Mace
+					924,	-- Maul
+					2208,	-- Poniard
+					854,	-- Quarter Staff
+					2026,	-- Rock Hammer
+					2027,	-- Scimitar
+					15810,	-- Short Spear
+					1196,	-- Tabar
+				}},
 			}),
 			n(1324, {	-- Heinrich Stone <Blade Merchant>
 				coord = { 77.0, 57.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2520),	-- Broadsword
-					i(2528),	-- Falchion
-					i(2526),	-- Main Gauche
-					i(2534),	-- Rondel
-				},
+				sym = {{ "select", "itemID",
+					2520,	-- Broadsword
+					2528,	-- Falchion
+					2526,	-- Main Gauche
+					2534,	-- Rondel
+				}},
 			}),
 			n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 				coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
@@ -2403,12 +2399,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
 					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2530,	-- Francisca
 					2531,	-- Great Axe
 				}},
-				groups = {
-					i(2522),	-- Crescent Axe
-					i(2530),	-- Francisca
-				},
 			}),
 			n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
 				coord = { 76.4, 53.0, MAP.STORMWIND_CITY },
@@ -2481,18 +2475,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1297, {	-- Lina Stover <Bow & Gun Merchant>
 				coord = { 58.6, 68.8, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(3024),	-- Bkp 2700 Enforcer
-					i(3027),	-- Heavy Recurve Bow
-					i(2506),	-- Hornwood Recurve Bow
-					i(2511),	-- Hunter's Boomstick
-					i(2507),	-- Laminated Recurve Bow
-					i(3023),	-- Large Bore Blunderbuss
-					i(2509),	-- Ornate Blunderbuss
-					i(2505),	-- Polished Shortbow
-					i(3026),	-- Reinforced Bow
-					i(2504),	-- Worn Shortbow
-				},
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3027,	-- Heavy Recurve Bow
+					2506,	-- Hornwood Recurve Bow
+					2511,	-- Hunter's Boomstick
+					2507,	-- Laminated Recurve Bow
+					3023,	-- Large Bore Blunderbuss
+					2509,	-- Ornate Blunderbuss
+					2505,	-- Polished Shortbow
+					3026,	-- Reinforced Bow
+					2504,	-- Worn Shortbow
+				}},
 			}),
 			n(1299, {	-- Lisbeth Schneider <Clothier>
 				coord = { 58.2, 67.6, MAP.STORMWIND_CITY },
@@ -2512,18 +2506,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sym = {{ "select", "itemID",
 					926,	-- Battle Axe
 					2025,	-- Bearded Axe
-					2029,	-- Cleaver
 					1198,	-- Claymore
+					2029,	-- Cleaver
 					851,	-- Cutlass
 					922,	-- Dacian Falx
 					927,	-- Double Axe
 					2024,	-- Espadon
+					15808,	-- Fine Light Crossbow
 					925,	-- Flail
-					2030,	-- Gnarled Staff
 					1197,	-- Giant Mace
+					2030,	-- Gnarled Staff
 					853,	-- Hatchet
+					15809,	-- Heavy Crossbow
 					2207,	-- Jambiya
 					2209,	-- Kris
+					15807,	-- Light Crossbow
 					928,	-- Long Staff
 					852,	-- Mace
 					924,	-- Maul
@@ -2532,11 +2529,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
 				}},
-				groups = {
-					i(15808),	-- Fine Light Crossbow
-					i(15809),	-- Heavy Crossbow
-					i(15807),	-- Light Crossbow
-				},
 			}),
 			n(1313, {	-- Maria Lumere <Alchemy Supplies>
 				coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
@@ -2717,10 +2709,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
 					2509,	-- Ornate Blunderbuss
+					2510,	-- Solid Blunderbuss
 				}},
-				groups = {
-					i(2510),	-- Solid Blunderbuss
-				},
 			}),
 			n(1341, {	-- Wilhelm Strang <Mail Armor Merchant>
 				coord = { 77.2, 61.6, MAP.STORMWIND_CITY },

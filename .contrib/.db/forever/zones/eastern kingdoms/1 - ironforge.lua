@@ -1156,10 +1156,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sym = {
 					SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
 					{ "pop" },
-				},
-				groups = {
-					i(1201),	-- Dull Heater Shield
-					i(17186),	-- Small Targe
+					{ "select", "itemID",
+						1201,	-- Dull Heater Shield
+						17186,	-- Small Targe
+					},
 				},
 			}),
 			n(5125, {	-- Dolkin Craghelm
@@ -1182,25 +1182,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 36.6, 66.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
 					2492,	-- Cudgel
+					2139,	-- Dirk
+					2488,	-- Gladius
+					2134,	-- Hand Axe
+					2491,	-- Large Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+					2494,	-- Stiletto
+					2490,	-- Tomahawk
+					2489,	-- Two-handed Sword
+					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},
-				groups = {
-					i(1194),	-- Bastard Sword
-					i(2479),	-- Broad Axe
-					i(2130),	-- Club
-					i(2139),	-- Dirk
-					i(2488),	-- Gladius
-					i(2134),	-- Hand Axe
-					i(2491),	-- Large Axe
-					i(2480),	-- Large Club
-					i(2132),	-- Short Staff
-					i(2131),	-- Shortsword
-					i(2494),	-- Stiletto
-					i(2490),	-- Tomahawk
-					i(2489),	-- Two-Handed Sword
-					i(2495),	-- Walking Stick
-				},
 			}),
 			n(5160, {	-- Emrul Riknussun <Cooking Supplier>
 				coord = { 60.6, 38.2, MAP.IRONFORGE },
@@ -1231,9 +1229,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(4256, {	-- Golnir Bouldertoe <Mining Supplies>
 				coord = { 51.5, 26.3, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2901),	-- Mining Pick
-				},
+				sym = {{ "select", "itemID",
+					2901,	-- Mining Pick
+				}},
 			}),
 			n(258306, {	-- Granny Finespindle
 				coord = { 39.3, 33.7, MAP.IRONFORGE },
@@ -1362,16 +1360,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					928,	-- Long Staff
 					852,	-- Mace
 					924,	-- Maul
+					2532,	-- Morning Star
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
+					2524,	-- Truncheon
 					2525,	-- War Hammer
 					2533,	-- War Maul
 					2535,	-- War Staff
 				}},
-				groups = {
-					i(2532),	-- Morning Star
-					i(2524),	-- Truncheon
-				},
 			}),
 			n(5129, {	-- Lissyphus Finespindle
 				coord = { 54.6, 88.2, MAP.IRONFORGE },
@@ -1412,14 +1408,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sym = {
 					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						1202,	-- Wall Shield
+					},
 				},
 				groups = {
-					i(17187),	-- Banded Buckler
 					i(847),		-- Chainmail Armor
 					i(849),		-- Chainmail Boots
 					i(850),		-- Chainmail Gloves
 					i(848),		-- Chainmail Pants
-					i(1202),	-- Wall Shield
 				},
 			}),
 			n(5109, {	-- Myra Tyrngaarde <Bread Vendor>
@@ -1563,16 +1561,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					15808,	-- Fine Light Crossbow
 					15809,	-- Heavy Crossbow
 					2511,	-- Hunter's Boomstick
+					15909,	-- Left-Handed Blades
+					15906,	-- Left-Handed Brass Knuckles
+					15907,	-- Left-Handed Claw
 					15807,	-- Light Crossbow
 					2509,	-- Ornate Blunderbuss
+					15903,	-- Right-Handed Claw
 				}},
-				groups = {
-					i(15904),	-- Deadly Fist Blades
-					i(15906),	-- Left-Handed Brass Knuckles
-					i(15909),	-- Left-Handed Blades
-					i(15907),	-- Left-Handed Claw
-					i(15903),	-- Slicing Claw
-				},
 			}),
 			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 				coord = { 60.8, 44.2, MAP.IRONFORGE },

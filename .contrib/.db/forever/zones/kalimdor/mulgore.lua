@@ -1595,6 +1595,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				sym = {
 					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
 					{ "pop" },
+					{ "select", "itemID",
+						17183,	-- Dented Buckler
+						1200,	-- Large Wooden Shield
+					},
 				},
 			}),
 			n(3080, {	-- Harant Ironbrace <Armorer and Shieldcrafter>
@@ -1606,6 +1610,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				sym = {
 					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
 					{ "pop" },
+					{ "select", "itemID",
+						17185,	-- Round Buckler
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(3685, {	-- Harb Clawhoof <Kodo Mounts>

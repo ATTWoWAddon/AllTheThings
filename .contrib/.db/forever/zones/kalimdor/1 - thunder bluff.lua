@@ -486,6 +486,14 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
 				},
 			}),
 			n(3003, {	-- Fyr Mistrunner <Bread Vendor>
@@ -552,10 +560,8 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
+					2510,	-- Solid Blunderbuss
 				}},
-				groups = {
-					i(2510),	-- Solid Blunderbuss
-				},
 			}),
 			n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 				coord = { 41.6, 62.0, MAP.THUNDER_BLUFF },
@@ -782,12 +788,12 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8364, {	-- Pakwa <Bag Vendor>
 				coord = { 39.31, 64.28, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(4498),	-- Brown Leather Satchel
-					i(4497),	-- Heavy Brown Bag
-					i(4499),	-- Huge Brown Sack
-					i(4496),	-- Small Brown Pouch
-				},
+				sym = {{ "select", "itemID",
+					4498,	-- Brown Leather Satchel
+					4497,	-- Heavy Brown Bag
+					4499,	-- Huge Brown Sack
+					4496,	-- Small Brown Pouch
+				}},
 			}),
 			n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
 				coord = { 55.8, 47.0, MAP.THUNDER_BLUFF },

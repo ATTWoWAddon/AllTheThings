@@ -1590,6 +1590,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						provider = { "n", 2546 },	-- Fleet Master Firallon
 						coord = { 30.6, 90.6, MAP.STRANGLETHORN_VALE },
 					}),
+					i(270093, {	-- Blackwater Cap
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270092, {	-- Blackwater Scimitar
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(4138),	-- Blackwater Tunic
 				},
 			}),
@@ -2425,6 +2431,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sym = {
 					SymSelector.select("VENDOR_AUGMENTED_CHAIN"),	-- Augmented Chain
 					{ "pop" },
+					{ "select", "itemID",
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+					},
 				},
 			}),
 			n(2685, {	-- Mazk Snipeshot <Engineering Supplies>

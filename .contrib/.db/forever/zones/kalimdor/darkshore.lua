@@ -1203,6 +1203,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sym = {
 					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						1202,	-- Wall Shield
+					},
 				},
 			}),
 			n(4307, {	-- Heldan Galesong <Fisherman>

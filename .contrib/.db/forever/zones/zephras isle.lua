@@ -1963,16 +1963,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(271465, {	-- Falfaan Halfwind
 				coord = { 59.4, 75.8, MAP.ZEPHRAS_ISLE },
-				groups = {
-					i(277105),	-- Zephrali Blade
-					i(277107),	-- Zephrali Bludgeon
-					i(277110),	-- Zephrali Bow
-					i(277111),	-- Zephrali Crossbow
-					i(277109),	-- Zephrali Greatstaff
-					i(277104),	-- Zephrali Greatsword
-					i(277108),	-- Zephrali Knife
-					i(277106),	-- Zephrali Smasher
-				},
+				sym = {{ "select", "itemID",
+					277105,	-- Zephrali Blade
+					277107,	-- Zephrali Bludgeon
+					277110,	-- Zephrali Bow
+					277111,	-- Zephrali Crossbow
+					277109,	-- Zephrali Greatstaff
+					277104,	-- Zephrali Greatsword
+					277108,	-- Zephrali Knife
+					277106,	-- Zephrali Smasher
+				}},
 			}),
 			n(251965, {	-- Fevrath Skyhammer
 				coord = { 43.4, 23.5, MAP.ZEPHRAS_ISLE },

@@ -401,6 +401,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						sym = {
 							SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
 							{ "pop" },
+							{ "select", "itemID",
+								1201,	-- Dull Heater Shield
+								17186,	-- Small Targe
+							},
 						},
 					}),
 					n(896, {	-- Veldan Lightfoot <Leather Armor Merchant>

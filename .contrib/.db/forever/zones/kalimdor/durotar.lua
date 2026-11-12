@@ -1753,6 +1753,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sym = {
 					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
 					{ "pop" },
+					{ "select", "itemID",
+						17183,	-- Dented Buckler
+						1200,	-- Large Wooden Shield
+					},
 				},
 			}),
 			n(3167, {	-- Wuark <Armorer & Shieldcrafter>
@@ -1761,6 +1765,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sym = {
 					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
 					{ "pop" },
+					{ "select", "itemID",
+						2901,	-- Mining Pick
+						17185,	-- Round Buckler
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(5942, {	-- Zansoa <Fishing Supplies>

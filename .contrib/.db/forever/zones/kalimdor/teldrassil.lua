@@ -388,6 +388,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 						sym = {
 							SymSelector.select("VENDOR_LIGHT_MAIL"),	-- Light Mail
 							{ "pop" },
+							{ "select", "itemID",
+								1201,	-- Dull Heater Shield
+								17186,	-- Small Targe
+							},
 						},
 					}),
 					n(3612, {	-- Sinda <Leather Armor Merchant>

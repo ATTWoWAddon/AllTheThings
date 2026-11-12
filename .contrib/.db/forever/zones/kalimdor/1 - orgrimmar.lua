@@ -996,14 +996,14 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(4043, {	-- Galthuk <Two-Handed Weapons Merchant>
 				coord = { 76.0, 37.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(2523),	-- Bullova
-					i(2521),	-- Flamberge
-					i(2531),	-- Great Axe
-					i(2525),	-- War Hammer
-					i(2533),	-- War Maul
-					i(2529),	-- Zweihander
-				},
+				sym = {{ "select", "itemID",
+					2523,	-- Bullova
+					2521,	-- Flamberge
+					2531,	-- Great Axe
+					2525,	-- War Hammer
+					2533,	-- War Maul
+					2529,	-- Zweihander
+				}},
 			}),
 			n(5188, {	-- Garyl <Tabard Vendor>
 				coord = { 47.6, 75.6, MAP.ORGRIMMAR },
@@ -1078,13 +1078,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3322, {	-- Kaja <Bow & Rifle Vendor>
 				coord = { 40.8, 49.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					2511,	-- Hunter's Boomstick
+					3023,	-- Large Bore Blunderbuss
+					2509,	-- Ornate Blunderbuss
+				}},
 				groups = {
-					i(3024),	-- Bkp 2700 Enforcer
 					i(3025),	-- Bkp 42 Ultra
 					i(3027),	-- Heavy Recurve Bow
-					i(2511),	-- Hunter's Boomstick
-					i(3023),	-- Large Bore Blunderbuss
-					i(2509),	-- Ornate Blunderbuss
 					i(3026),	-- Reinforced Bow
 				},
 			}),
@@ -1110,16 +1112,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(5816, {	-- Katis
 				coord = { 45.8, 57.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(5239),	-- Blackbone Wand
-					i(5210),	-- Burning Wand
-					i(5236),	-- Combustible Wand
-					i(5211),	-- Dusk Wand
-					i(5209),	-- Gloom Wand
-					i(5347),	-- Pestilent Wand
-					i(5238),	-- Pitchwood Wand
-					i(5208),	-- Smoldering Wand
-				},
+				sym = {{ "select", "itemID",
+					5239,	-- Blackbone Wand
+					5210,	-- Burning Wand
+					5236,	-- Combustible Wand
+					5211,	-- Dusk Wand
+					5209,	-- Gloom Wand
+					5347,	-- Pestilent Wand
+					5238,	-- Pitchwood Wand
+					5208,	-- Smoldering Wand
+				}},
 			}),
 			n(3359, {	-- Kiro <War Harness Maker>
 				coord = { 66.8, 50.6, MAP.ORGRIMMAR },
@@ -1170,18 +1172,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 76.2, 37.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
+					2028,	-- Hammer
 					928,	-- Long Staff
 					852,	-- Mace
+					924,	-- Maul
 					854,	-- Quarter Staff
+					2026,	-- Rock Hammer
 				}},
-				groups = {
-					i(925),	-- Flail
-					i(2028),	-- Hammer
-					i(924),	-- Maul
-					i(2026),	-- Rock Hammer
-				},
 			}),
 			n(12792, {	-- Lady Palanseer <Armor Quartermaster>
 				description = "Found within the Hall of Legends.",
@@ -1648,10 +1648,10 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3330, {	-- Muragus
 				coord = { 46.0, 57.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(2527),	-- Battle Staff
-					i(2535),	-- War Staff
-				},
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2535,	-- War Staff
+				}},
 			}),
 			n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
 				coord = { 69.4, 12.4, MAP.ORGRIMMAR },
@@ -1727,6 +1727,14 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						2445,	-- Large Metal Shield
+						17188,	-- Ringed Buckler
+						17185,	-- Round Buckler
+						1202,	-- Wall Shield
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
@@ -1799,6 +1807,9 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 				description = "Found within the Hall of Legends.",
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					18826,	-- High Warlord's Shield Wall
+				}},
 				groups = {
 					i(18831),	-- High Warlord's Battle Axe
 					i(23464),	-- High Warlord's Battle Mace
@@ -1815,7 +1826,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(18840),	-- High Warlord's Razor
 					i(18835),	-- High Warlord's Recurve
 					i(18844),	-- High Warlord's Right Claw
-					i(18826),	-- High Warlord's Shield Wall
 					i(23466),	-- High Warlord's Spellblade
 					i(18860),	-- High Warlord's Street Sweeper
 					i(23468),	-- High Warlord's Tome of Destruction
@@ -1839,27 +1849,27 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3361, {	-- Shoma <Weapon Vendor>
 				coord = { 76.0, 37.8, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(15905),	-- Brass Knuckles
-					i(2520),	-- Broadsword
-					i(1198),	-- Claymore
-					i(851),	-- Cutlass
-					i(922),	-- Dacian Falx
-					i(15904),	-- Deadly Fist Blades
-					i(2024),	-- Espadon
-					i(2528),	-- Falchion
-					i(2207),	-- Jambiya
-					i(2209),	-- Kris
-					i(15906),	-- Left-Handed Brass Knuckles
-					i(15909),	-- Left-Handed Blades
-					i(15907),	-- Left-Handed Claw
-					i(923),	-- Longsword
-					i(2526),	-- Main Gauche
-					i(2208),	-- Poniard
-					i(2534),	-- Rondel
-					i(2027),	-- Scimitar
-					i(15903),	-- Slicing Claw
-				},
+				sym = {{ "select", "itemID",
+					2520,	-- Broadsword
+					1198,	-- Claymore
+					851,	-- Cutlass
+					922,	-- Dacian Falx
+					2024,	-- Espadon
+					2528,	-- Falchion
+					2207,	-- Jambiya
+					2209,	-- Kris
+					15909,	-- Left-Handed Blades
+					15906,	-- Left-Handed Brass Knuckles
+					15907,	-- Left-Handed Claw
+					923,	-- Longsword
+					2526,	-- Main Gauche
+					2208,	-- Poniard
+					15904,	-- Right-Handed Blades
+					15905,	-- Right-Handed Brass Knuckles
+					15903,	-- Right-Handed Claw
+					2534,	-- Rondel
+					2027,	-- Scimitar
+				}},
 			}),
 			n(3413, {	-- Sovik <Engineering Supplies>
 				coord = { 75.6, 25.2, MAP.ORGRIMMAR },
@@ -1936,47 +1946,45 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
 					},
 					{ "pop" },
-				},
-				groups = {
-					i(2451),	-- Crested Heater Shield
-					i(2448),	-- Heavy Pavise
-					i(2446),	-- Kite Shield
-					i(17189),	-- Metal Buckler
-					i(17190),	-- Ornate Buckler
-					i(17192),	-- Reinforced Targe
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
 				},
 			}),
 			n(3314, {	-- Urtharo <Weapon Merchant>
 				coord = { 47.4, 68.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
 					1198,	-- Claymore
+					2130,	-- Club
+					2492,	-- Cudgel
 					851,	-- Cutlass
+					2139,	-- Dirk
+					1197,	-- Giant Mace
+					2488,	-- Gladius
+					2134,	-- Hand Axe
+					853,	-- Hatchet
 					2207,	-- Jambiya
+					2491,	-- Large Axe
+					2480,	-- Large Club
+					852,	-- Mace
+					854,	-- Quarter Staff
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+					2494,	-- Stiletto
+					1196,	-- Tabar
+					2490,	-- Tomahawk
+					2489,	-- Two-handed Sword
+					2495,	-- Walking Stick
+					2493,	-- Wooden Mallet
 				}},
-				groups = {
-					i(1194),	-- Bastard Sword
-					i(2479),	-- Broad Axe
-					i(2130),	-- Club
-					i(2492),	-- Cudgel
-					i(2139),	-- Dirk
-					i(1197),	-- Giant Mace
-					i(2134),	-- Hand Axe
-					i(2488),	-- Gladius
-					i(853),	-- Hatchet
-					i(2491),	-- Large Axe
-					i(2480),	-- Large Club
-					i(852),	-- Mace
-					i(854),	-- Quarter Staff
-					i(2131),	-- Shortsword
-					i(2132),	-- Short Staff
-					i(2494),	-- Stiletto
-					i(1196),	-- Tabar
-					i(2490),	-- Tomahawk
-					i(2489),	-- Two-handed Sword
-					i(2495),	-- Walking Stick
-					i(2493),	-- Wooden Mallet
-				},
 			}),
 			n(8404, {	-- Xan'tish <Snake Vendor>
 				description = "This NPC walks around in a circle in the Valley of Spirits.",
@@ -2010,22 +2018,19 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				coord = { 75.0, 36.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					926,	-- Battle Axe
+					2025,	-- Bearded Axe
+					2029,	-- Cleaver
+					927,	-- Double Axe
+					2030,	-- Gnarled Staff
 					853,	-- Hatchet
 					2507,	-- Laminated Recurve Bow
+					928,	-- Long Staff
 					854,	-- Quarter Staff
 					3026,	-- Reinforced Bow
 					1196,	-- Tabar
 					2495,	-- Walking Stick
 				}},
-				groups = {
-					i(926),	-- Battle Axe
-					i(2025),	-- Bearded Axe
-					i(2029),	-- Cleaver
-					i(927),	-- Double Axe
-					i(2030),	-- Gnarled Staff
-					i(2507),	-- Laminated Recurve Bow
-					i(928),	-- Long Staff
-				},
 			}),
 		}),
 	},

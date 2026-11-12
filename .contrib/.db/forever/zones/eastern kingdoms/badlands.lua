@@ -980,6 +980,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						SymSelector.VENDOR_STUDDED,	-- Studded
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2528,	-- Falchion
+						2530,	-- Francisca
+						2531,	-- Great Axe
+						2532,	-- Morning Star
+						2534,	-- Rondel
+						2533,	-- War Maul
+						2535,	-- War Staff
+						2529,	-- Zweihander
+					},
 				},
 			}),
 		}),

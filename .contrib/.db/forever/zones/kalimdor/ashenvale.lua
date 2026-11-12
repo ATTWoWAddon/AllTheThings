@@ -1346,6 +1346,12 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17192,	-- Reinforced Targe
+					},
 				},
 			}),
 			n(3954, {	-- Dalria <Trade Goods>

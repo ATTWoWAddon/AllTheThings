@@ -2010,10 +2010,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sym = {
 					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
 					{ "pop" },
-				},
-				groups = {
-					i(17185),	-- Round Buckler
-					i(2376),	-- Worn Heater Shield
+					{ "select", "itemID",
+						17185,	-- Round Buckler
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(2118, {	-- Abigail Shiel <Trade Supplies>
@@ -2030,6 +2030,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sym = {
 					SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
 					{ "pop" },
+					{ "select", "itemID",
+						1198,	-- Claymore
+						2492,	-- Cudgel
+						851,	-- Cutlass
+						1197,	-- Giant Mace
+						2488,	-- Gladius
+						853,	-- Hatchet
+						2207,	-- Jambiya
+						2491,	-- Large Axe
+						852,	-- Mace
+						854,	-- Quarter Staff
+						17185,	-- Round Buckler
+						2494,	-- Stiletto
+						1196,	-- Tabar
+						2490,	-- Tomahawk
+						2489,	-- Two-handed Sword
+						2495,	-- Walking Stick
+						2493,	-- Wooden Mallet
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(11057, {	-- Apothecary Dithers
@@ -2061,10 +2081,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sym = {
 					SymSelector.select("VENDOR_RUSTED_CHAIN"),	-- Rusted Chain
 					{ "pop" },
-				},
-				groups = {
-					i(17183),	-- Dented Buckler
-					i(1200),	-- Large Wooden Shield
+					{ "select", "itemID",
+						17183,	-- Dented Buckler
+						1200,	-- Large Wooden Shield
+					},
 				},
 			}),
 			n(3522, {	-- Constance Brisboise <Apprentice Clothier>

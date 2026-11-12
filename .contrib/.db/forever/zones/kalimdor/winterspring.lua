@@ -874,6 +874,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 			n(11189, {	-- Qia <Trade Supplies>

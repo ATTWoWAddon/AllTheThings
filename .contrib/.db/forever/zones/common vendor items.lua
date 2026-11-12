@@ -15,8 +15,12 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			i(3033),	-- Solid Shot
 		}),
 		filter(BAGS, {
+			i(4498),	-- Brown Leather Satchel
+			i(4497),	-- Heavy Brown Bag
+			i(4499),	-- Huge Brown Sack
 			i(2101),	-- Light Quiver
 			i(11362),	-- Medium Quiver
+			i(4496),	-- Small Brown Pouch
 			i(5439),	-- Small Quiver
 		}),
 		filter(CLOTH, {
@@ -373,14 +377,163 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				},
 			}),
 		}),
-		filter(THROWN, {
-			i(2946),	-- Balanced Throwing Dagger
-			i(3137),	-- Deadly Throwing Axe
-			i(15326),	-- Gleaming Throwing Axe
-			i(3107),	-- Keen Throwing Knife
-			i(3135),	-- Sharp Throwing Axe
-			i(3131),	-- Weighted Throwing Axe
-			i(15327),	-- Wicked Throwing Dagger
+		filter(SHIELDS, {
+			i(17187),	-- Banded Buckler
+			i(2451),	-- Crested Heater Shield
+			i(17183),	-- Dented Buckler
+			i(1201),	-- Dull Heater Shield
+			i(2448),	-- Heavy Pavise
+			i(18826),	-- High Warlord's Shield Wall
+			i(2446),	-- Kite Shield
+			i(2445),	-- Large Metal Shield
+			i(2129),	-- Large Round Shield
+			i(1200),	-- Large Wooden Shield
+			i(17189),	-- Metal Buckler
+			i(17190),	-- Ornate Buckler
+			i(17192),	-- Reinforced Targe
+			i(17188),	-- Ringed Buckler
+			i(17185),	-- Round Buckler
+			i(17184),	-- Small Shield
+			i(17186),	-- Small Targe
+			i(1202),	-- Wall Shield
+			i(2376),	-- Worn Heater Shield
+		}),
+		n(WEAPONS, {
+			filter(DAGGERS, {
+				i(2139),	-- Dirk
+				i(2207),	-- Jambiya
+				i(2209),	-- Kris
+				i(2526),	-- Main Gauche
+				i(2208),	-- Poniard
+				i(2534),	-- Rondel
+				i(2494),	-- Stiletto
+				i(277108),	-- Zephrali Knife
+			}),
+			filter(FIST_WEAPONS, {
+				i(15909),	-- Left-Handed Blades
+				i(15906),	-- Left-Handed Brass Knuckles
+				i(15907),	-- Left-Handed Claw
+				i(15904),	-- Right-Handed Blades
+				i(15905),	-- Right-Handed Brass Knuckles
+				i(15903),	-- Right-Handed Claw
+			}),
+			filter(ONE_HANDED_AXES, {
+				i(2029),	-- Cleaver
+				i(2522),	-- Crescent Axe
+				i(927),	-- Double Axe
+				i(2530),	-- Francisca
+				i(2134),	-- Hand Axe
+				i(853),	-- Hatchet
+				i(2490),	-- Tomahawk
+			}),
+			filter(ONE_HANDED_MACES, {
+				i(2130),	-- Club
+				i(2492),	-- Cudgel
+				i(925),	-- Flail
+				i(16769),	-- Furbolg Medicine Totem
+				i(2028),	-- Hammer
+				i(852),	-- Mace
+				i(2532),	-- Morning Star
+				i(2524),	-- Truncheon
+				i(277107),	-- Zephrali Bludgeon
+			}),
+			filter(ONE_HANDED_SWORDS, {
+				i(2520),	-- Broadsword
+				i(851),	-- Cutlass
+				i(2528),	-- Falchion
+				i(2488),	-- Gladius
+				i(923),	-- Longsword
+				i(2027),	-- Scimitar
+				i(2131),	-- Shortsword
+				i(277105),	-- Zephrali Blade
+			}),
+			filter(TWO_HANDED_AXES, {
+				i(926),	-- Battle Axe
+				i(2025),	-- Bearded Axe
+				i(2479),	-- Broad Axe
+				i(2523),	-- Bullova
+				i(2531),	-- Great Axe
+				i(2491),	-- Large Axe
+				i(1196),	-- Tabar
+			}),
+			filter(TWO_HANDED_MACES, {
+				i(1197),	-- Giant Mace
+				i(2480),	-- Large Club
+				i(924),	-- Maul
+				i(2026),	-- Rock Hammer
+				i(2525),	-- War Hammer
+				i(2533),	-- War Maul
+				i(2493),	-- Wooden Mallet
+				i(277106),	-- Zephrali Smasher
+			}),
+			filter(TWO_HANDED_SWORDS, {
+				i(1194),	-- Bastard Sword
+				i(1198),	-- Claymore
+				i(922),	-- Dacian Falx
+				i(2024),	-- Espadon
+				i(2521),	-- Flamberge
+				i(2489),	-- Two-handed Sword
+				i(277104),	-- Zephrali Greatsword
+				i(2529),	-- Zweihander
+			}),
+			filter(POLEARMS, {
+				i(15811),	-- Heavy Spear
+				i(15810),	-- Short Spear
+			}),
+			filter(STAVES, {
+				i(2527),	-- Battle Staff
+				i(2030),	-- Gnarled Staff
+				i(928),	-- Long Staff
+				i(854),	-- Quarter Staff
+				i(2132),	-- Short Staff
+				i(2495),	-- Walking Stick
+				i(2535),	-- War Staff
+				i(277109),	-- Zephrali Greatstaff
+			}),
+			filter(BOWS, {
+				i(3027),	-- Heavy Recurve Bow
+				i(2506),	-- Hornwood Recurve Bow
+				i(2507),	-- Laminated Recurve Bow
+				i(2505),	-- Polished Shortbow
+				i(3026),	-- Reinforced Bow
+				i(2504),	-- Worn Shortbow
+				i(277110),	-- Zephrali Bow
+			}),
+			filter(CROSSBOWS, {
+				i(15808),	-- Fine Light Crossbow
+				i(15809),	-- Heavy Crossbow
+				i(15807),	-- Light Crossbow
+				i(277111),	-- Zephrali Crossbow
+			}),
+			filter(GUNS, {
+				i(3024),	-- BKP 2700 "Enforcer"
+				i(2511),	-- Hunter's Boomstick
+				i(3023),	-- Large Bore Blunderbuss
+				i(2509),	-- Ornate Blunderbuss
+				i(2510),	-- Solid Blunderbuss
+			}),
+			filter(THROWN, {
+				i(2946),	-- Balanced Throwing Dagger
+				i(3137),	-- Deadly Throwing Axe
+				i(15326),	-- Gleaming Throwing Axe
+				i(3107),	-- Keen Throwing Knife
+				i(3135),	-- Sharp Throwing Axe
+				i(3131),	-- Weighted Throwing Axe
+				i(15327),	-- Wicked Throwing Dagger
+			}),
+			filter(WANDS, {
+				i(5239),	-- Blackbone Wand
+				i(5210),	-- Burning Wand
+				i(5236),	-- Combustible Wand
+				i(5211),	-- Dusk Wand
+				i(5209),	-- Gloom Wand
+				i(5347),	-- Pestilent Wand
+				i(5238),	-- Pitchwood Wand
+				i(5208),	-- Smoldering Wand
+			}),
+			filter(MISC, {
+				i(2901),	-- Mining Pick
+			}),
 		}),
 	},
 }));

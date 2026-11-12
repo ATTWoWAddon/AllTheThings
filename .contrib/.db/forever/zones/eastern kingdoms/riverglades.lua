@@ -2155,6 +2155,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 						SymSelector.VENDOR_STUDDED,	-- Studded
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2527,	-- Battle Staff
+						2520,	-- Broadsword
+						2523,	-- Bullova
+						2522,	-- Crescent Axe
+						2521,	-- Flamberge
+						2448,	-- Heavy Pavise
+						2526,	-- Main Gauche
+						17189,	-- Metal Buckler
+						2524,	-- Truncheon
+						2525,	-- War Hammer
+					},
 				},
 			}),
 			n(263326, {	-- Madam Swyndle <Agent of the Black Market>

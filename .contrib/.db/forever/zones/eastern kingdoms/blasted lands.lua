@@ -427,6 +427,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 		}),

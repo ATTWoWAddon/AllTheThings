@@ -1124,6 +1124,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sym = {
 					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						1202,	-- Wall Shield
+					},
 				},
 			}),
 			n(3533, {	-- Moonrage Leatherworker
@@ -1171,6 +1175,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				sym = {
 					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						1202,	-- Wall Shield
+					},
 				},
 			}),
 			n(3532, {	-- Pyrewood Leatherworker

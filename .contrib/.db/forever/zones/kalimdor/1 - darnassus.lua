@@ -577,20 +577,23 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2029,	-- Cleaver
 					851,	-- Cutlass
 					922,	-- Dacian Falx
-					927,	-- Double Axe
 					15904,	-- Deadly Fist Blades
+					927,	-- Double Axe
 					2024,	-- Espadon
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
-					853,	-- Hatchet
 					2028,	-- Hammer
+					853,	-- Hatchet
 					2207,	-- Jambiya
 					2209,	-- Kris
 					2507,	-- Laminated Recurve Bow
+				15909,	-- Left-Handed Blades
+				15906,	-- Left-Handed Brass Knuckles
+				15907,	-- Left-Handed Claw
 					928,	-- Long Staff
-					924,	-- Maul
 					852,	-- Mace
+					924,	-- Maul
 					854,	-- Quarter Staff
 					3026,	-- Reinforced Bow
 					2026,	-- Rock Hammer
@@ -598,11 +601,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					15903,	-- Slicing Claw
 					1196,	-- Tabar
 				}},
-				groups = {
-					i(15906),	-- Left-Handed Brass Knuckles
-					i(15909),	-- Left-Handed Blades
-					i(15907),	-- Left-Handed Claw
-				},
 			}),
 			n(4240, {	-- Caynrus
 				coord = { 55.4, 74.6, MAP.DARNASSUS },
@@ -613,16 +611,14 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					2448,	-- Heavy Pavise
 					2446,	-- Kite Shield
 					2445,	-- Large Metal Shield
+					2129,	-- Large Round Shield
 					17189,	-- Metal Buckler
 					17190,	-- Ornate Buckler
 					17192,	-- Reinforced Targe
 					17188,	-- Ringed Buckler
+					17184,	-- Small Shield
 					17186,	-- Small Targe
 				}},
-				groups = {
-					i(2129),	-- Large Round Shield
-					i(17184),	-- Small Shield
-				},
 			}),
 			n(4216, {	-- Chardryn <Herbalism Supplies>
 				coord = { 49.55, 69.44, MAP.DARNASSUS },

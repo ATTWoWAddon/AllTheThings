@@ -1353,6 +1353,12 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 		}),

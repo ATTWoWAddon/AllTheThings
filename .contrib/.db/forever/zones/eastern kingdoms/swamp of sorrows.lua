@@ -714,6 +714,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 			n(11874, {	-- Masat T'andr <Superior Leatherworker>

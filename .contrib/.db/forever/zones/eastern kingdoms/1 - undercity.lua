@@ -923,21 +923,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					15808,	-- Fine Light Crossbow
 					925,	-- Flail
 					1197,	-- Giant Mace
 					2030,	-- Gnarled Staff
 					2028,	-- Hammer
+					15809,	-- Heavy Crossbow
+					15807,	-- Light Crossbow
 					928,	-- Long Staff
 					852,	-- Mace
 					924,	-- Maul
 					854,	-- Quarter Staff
 					2026,	-- Rock Hammer
 				}},
-				groups = {
-					i(15808),	-- Fine Light Crossbow
-					i(15809),	-- Heavy Crossbow
-					i(15807),	-- Light Crossbow
-				},
 			}),
 			n(4612, {	-- Boyle <Sludge Seller>
 				coord = { 56.2, 64.6, MAP.UNDERCITY },
@@ -994,12 +992,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2029,	-- Cleaver
 					927,	-- Double Axe
 					853,	-- Hatchet
+					15811,	-- Heavy Spear
+					15810,	-- Short Spear
 					1196,	-- Tabar
 				}},
-				groups = {
-					i(15811),	-- Heavy Spear
-					i(15810),	-- Short Spear
-				},
 			}),
 			n(4600, {	-- Geoffrey Hartwell
 				coord = { 58.4, 32.6, MAP.UNDERCITY },
@@ -1255,9 +1251,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4599, {	-- Sarah Killan <Mining Supplies>
 				coord = { 56.6, 37.3, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				groups = {
-					i(2901),	-- Mining Pick
-				},
+				sym = {{ "select", "itemID",
+					2901,	-- Mining Pick
+				}},
 			}),
 			n(5821, {	-- Sheldon Von Croy <Cloth Armor Merchant>
 				coord = { 70.6, 28.8, MAP.UNDERCITY },

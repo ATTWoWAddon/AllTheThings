@@ -235,9 +235,11 @@ maproot(MAP.KALIMDOR, {
 				n(11555, {	-- Gorn One Eye
 					coord = { 65.2, 2.6, MAP.FELWOOD },
 					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },
+					sym = {{ "select", "itemID",
+						16769,	-- Furbolg Medicine Totem
+					}},
 					groups = {
 						i(16768),	-- Furbolg Medicine Pouch
-						i(16769),	-- Furbolg Medicine Totem
 					},
 				}),
 				n(11557, {	-- Meilosh

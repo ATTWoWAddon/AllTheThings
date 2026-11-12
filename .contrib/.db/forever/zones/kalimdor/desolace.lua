@@ -1444,6 +1444,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sym = {
 					SymSelector.select("VENDOR_AUGMENTED_CHAIN"),	-- Augmented Chain
 					{ "pop" },
+					{ "select", "itemID",
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+					},
 				},
 			}),
 			n(253140, {	-- Molkar <Gelkis Clan Quartermaster>
