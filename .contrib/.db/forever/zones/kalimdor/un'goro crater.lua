@@ -442,6 +442,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				cost = { { "i", 11243, 1 } },	-- Videre Elixir
 				lvl = 47,
 			}),
+			q(87494, {	-- Microcrystal Contamination
+				qs = 280459,	-- Crystal Infused Scale (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(281261),	-- Crystal-flecked Cord
+					i(281262),	-- Crystal-flecked Waistguard
+				},
+			}),
 			q(4141, {	-- Muigin and Larion
 				qg = 9119,	-- Muigin
 				coord = { 42.9, 9.6, MAP.UNGORO_CRATER },
@@ -784,6 +792,22 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 		}),
 		n(ZONE_DROPS, {
 			i(11116),	-- A Mangled Journal
+			i(280459, {	-- Crystal Infused Scale (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				crs = {
+					9163,	-- Diemetradon
+					9164,	-- Elder Diemetradon
+					9165,	-- Fledgling Pterrordax
+					9167,	-- Frenzied Pterrordax
+					9166,	-- Pterrordax
+					6505,	-- Ravasaur
+					6507,	-- Ravasaur Hunter
+					6506,	-- Ravasaur Runner
+					6508,	-- Venomhide Ravasaur
+					9162,	-- Young Diemetradon
+					279811,	-- Young Diemetradon
+				},
+			}),
 			i(12809, {	-- Guardian Stone
 				cr = 6560,	-- Stone Guardian
 			}),
