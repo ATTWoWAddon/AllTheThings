@@ -114074,7 +114074,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224016,"Defeat the Third wave",224015,1,0,113000,0,16
 224017,"Claim the Shrines",0,0,4,0,0,0
 224019,"12.1.7 Lorewalking - Jaina - Hyjal - Step 3 (KRB)",0,0,4,0,0,0
-224020,,224019,1,0,113645,0,0
+224020,"Defeat Archimonde",224019,1,0,113645,0,0
 224021,"12.1.7 Lorewalking - jaina - Hyjal - Step 2 (KRB)",0,0,4,0,0,0
 224022,"Slay Demons",224021,20,0,113004,0,16
 224023,"12.1.7 Lorewalking - Titans - Halls of Stone (LAS)",0,0,4,0,0,0
@@ -114775,8 +114775,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 224827,"Drustvar Choc-O-Drop Designer",224817,1,0,118144,2,32
 224830,"Collect and deposit 10 ghosts in any neighborhood.",0,0,4,0,0,0
 224831,,224830,10,0,113458,0,1
-224832,"Use a power-up 3 times in the tree defense activity.",0,3,8,0,0,8193
-224833,,224832,1,0,113459,0,0
+224832,"Use a power-up 3 times in the tree defense activity.",0,3,5,0,0,8193
+224833,,224832,0,0,113459,0,0
 224834,"Wait for the pyres to be ignited",0,0,4,0,0,0
 224835,"Wait for the pyres to be ignited",224834,1,0,113460,0,0
 224836,"12.1 Delve - UlatekBoss - Tox'Atal - Defeat Boss",0,0,4,0,0,0
@@ -120549,7 +120549,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235820,,235819,2500,0,118712,0,1
 235821,"5000 Ducats acquired",0,0,4,0,0,8193
 235822,,235821,5000,0,118712,0,1
-235823,"Tale Completed on Heroic or Mythic",0,2,8,0,0,8193
+235823,"Tale Completed on Heroic",0,2,8,0,0,8193
 235824,"Greenthistle Wood Tale",235823,0,4,0,0,0
 235825,,235824,1,0,118713,0,0
 235826,,235824,1,0,118714,1,0
@@ -120563,7 +120563,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235834,"Greywake Expedition Tale",235823,0,4,0,3,0
 235835,,235834,1,0,118720,0,0
 235836,,235834,1,0,118721,1,0
-235837,"Tales Completed on Heroic or Mythic",0,6,8,0,0,8193
+235837,"Tales Completed on Heroic",0,6,8,0,0,8193
 235838,"Greenthistle Wood Tale",235837,0,4,0,0,0
 235839,,235838,1,0,118713,0,0
 235840,,235838,1,0,118714,1,0
@@ -120630,7 +120630,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 236099,,236096,1,0,118817,2,0
 236100,"Complete Omnium Unlock 6",0,0,4,0,0,0
 236101,"Sixth Omnium Point",236100,1,0,118818,0,32
-236102,"Complete Omnium Unlock 7",0,0,4,0,0,0
+236102,"Complete Omnium Unlock 7",0,1,8,0,0,0
 236103,"Seventh Omnium Point",236102,1,0,118819,0,32
 236222,"Use the /greet emote on Quillgrave citizens",0,0,4,0,0,1
 236223,"The Arcanist",236222,1,0,118907,0,0
@@ -120782,13 +120782,13 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 237045,Zul'jan,149897,1,0,119471,19,0
 237050,"Bow thrown",0,0,4,0,0,8193
 237051,,237050,0,0,119478,0,0
-237054,"Bells rung",0,5,8,0,0,1
+237054,"Bells rung",0,5,5,0,0,8193
 237055,,237054,0,0,119480,0,0
-237056,"Gifts given",0,3,8,0,0,1
+237056,"Gifts given",0,3,5,0,0,8193
 237057,,237056,0,0,119481,0,0
-237058,"Attackers punted",0,6,8,0,0,1
+237058,"Attackers punted",0,6,5,0,0,8193
 237059,,237058,0,0,119482,0,0
-237060,Pummeled,0,3,8,0,0,1
+237060,Pummeled,0,3,5,0,0,8193
 237061,,237060,0,0,119483,0,0
 237062,"Enchanted Snowflakes earned",0,200,5,0,0,8193
 237063,,237062,0,0,119484,0,1
@@ -120894,6 +120894,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 237318,,237311,1,0,117312,6,0
 237319,,237311,1,0,117316,7,0
 237320,,237311,1,0,117320,8,0
+237644,"Seventh Omnium Point",236102,1,0,119779,1,32
 12374,"Honor the flames of Kalimdor.",0,0,4,0,0,0
 5438,"Catch a fish in each of the specific nodes listed below.",0,0,4,0,0,0
 3835,"Win Alterac Valley while your team controls both mines.",0,0,4,0,0,0
@@ -121215,7 +121216,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 37588,"Explore The Stadium",0,0,4,0,0,4096
 37586,"Explore The Altar",0,0,4,0,0,4096
 37548,"Place a Work Order",0,0,4,0,0,4096
-65221,"Travel to Stormwind",0,1,8,0,0,4096
 37528,"Garrison - Attack - Stage 2 - Exit Primals",0,0,4,0,0,0
 37526,"Garrison - Attack - Stage 1 - Exit Primals",0,0,4,0,0,0
 37544,"New Criteria Tree",0,0,4,0,0,0
@@ -121355,6 +121355,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 67966,"Legion - Bonus Event Weekend - Timewalking (Wrath)",0,5,5,0,0,4096
 88471,"Legion - Bonus Event Weekend - Timewalking (Wrath)",0,5,5,0,0,4096
 140866,"Legion - Bonus Event Weekend - Timewalking (Wrath)",0,5,5,0,0,4096
+62847,"Travel to Stormwind",0,1,8,0,0,4096
 67973,"Legion - Bonus Event Weekend - Timewalking (Cata)",0,5,5,0,0,4096
 88478,"Legion - Bonus Event Weekend - Timewalking (Cata)",0,5,5,0,0,4096
 141059,"Legion - Bonus Event Weekend - Timewalking (Cata)",0,5,5,0,0,4096
@@ -121498,7 +121499,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 67038,"Defend Against Attackers",0,100,9,0,0,0
 85067,"Go to Hellfire Peninsula (H)",0,1,8,0,0,4096
 85051,"Go to Northrend (H)",0,1,8,0,0,4096
-62847,"Travel to Stormwind",0,1,8,0,0,4096
+65221,"Travel to Stormwind",0,1,8,0,0,4096
 85064,"Go to Hellfire Peninsula (A)",0,1,8,0,0,4096
 85047,"Go to Northrend (A)",0,1,8,0,0,4096
 63708,"Use the void portal.",0,0,4,0,0,0
@@ -121565,6 +121566,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 67953,"Travel to Theramore",0,1,8,0,0,4096
 68972,"Slay all of the invaders in the Nazmir world quest ""Don't Stalk Me, Troll"" in 60 seconds while not in a group.",0,0,4,0,0,0
 88462,"8.0 Bonus Event Weekend - World Quests",0,20,5,0,0,4096
+89637,"Evade the Tarragrue",0,0,4,0,0,2
 71196,"Ornamental Golden Blade",0,0,4,0,0,4096
 78381,"Ornamental Golden Blade",0,0,4,0,0,4096
 78425,"Ornamental Golden Blade",0,0,4,0,0,4096
@@ -121859,7 +121861,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89625,"Evade the Tarragrue",0,0,4,0,0,2
 89629,"Evade the Tarragrue",0,0,4,0,0,2
 89633,"Evade the Tarragrue",0,0,4,0,0,2
-89637,"Evade the Tarragrue",0,0,4,0,0,2
 89641,"Evade the Tarragrue",0,0,4,0,0,2
 89645,"Evade the Tarragrue",0,0,4,0,0,2
 89649,"Evade the Tarragrue",0,0,4,0,0,2
