@@ -2986,6 +2986,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
 				coord = { 49.6, 83.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				groups = {
+					i(285344, {	-- Guard Captain's Barrier
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(5849, {	-- Digger Flameforge <Excavation Specialist>
 				coord = { 47.6, 85.6, MAP.THE_BARRENS },
@@ -3091,6 +3096,11 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 				coord = { 49.4, 84.4, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				groups = {
+					i(286541, {	-- Bael'dun Tankard
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(3470, {	-- Rathorian
 				coord = { 47.6, 19.2, MAP.THE_BARRENS },

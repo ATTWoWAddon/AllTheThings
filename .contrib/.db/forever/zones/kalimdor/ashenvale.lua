@@ -1277,6 +1277,11 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 79.0, 45.6, MAP.ASHENVALE },
 					{ 77.2, 46.2, MAP.ASHENVALE },
 				},
+				groups = {
+					i(284697, {	-- Arcane Charged Robes
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10639, {	-- Rorgish Jowl
 				coords = {
