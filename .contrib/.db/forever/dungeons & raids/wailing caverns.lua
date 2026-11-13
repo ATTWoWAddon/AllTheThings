@@ -170,7 +170,7 @@ instanceroot(240, {	-- Wailing Caverns
 		}),
 		n(TREASURES, {
 			o(409692, {	-- Scrolls
-				coord = { 52.83, 54.70, MAP.THE_BARRENS },
+				coord = { 52.8, 54.7, MAP.KALIMDOR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(209846),	-- Secrets of the Dreamers
