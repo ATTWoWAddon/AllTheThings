@@ -26,6 +26,19 @@ instanceroot(233, {	-- Razorfen Downs
 					}),
 				},
 			}),
+			q(93604, {	-- Agamaggan's Blood
+				sourceQuest = 93601,	-- Passing the Blame
+				qg = 253527,	-- Kog'thug the Brave <Nomadic Bristleback Chief>
+				coord = { 72.6, 31.4, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Virulent Blood of Agamaggan
+						provider = { "i", 260237 },	-- Virulent Blood of Agamaggan
+						cr = 255669,	-- Virulent Blood of Agamaggan
+					}),
+				},
+			}),
 			q(6521, {	-- An Unholy Alliance (2/2)
 				sourceQuest = 6522,	-- An Unholy Alliance (1/2)
 				provider = { "n", 2425 },	-- Varimathras

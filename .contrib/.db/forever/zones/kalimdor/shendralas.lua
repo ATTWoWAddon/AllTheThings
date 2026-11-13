@@ -105,6 +105,15 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 				-- TODO: Wowhead doesn't list this quest's objectives yet (investigate centaur points of interest).
 			}),
+			q(93574, {	-- Corpsefeeder's Carapace
+				qs = 259893,	-- Corpsefeeder's Carapace (QS!)
+				lvl = 35,
+				groups = {
+					i(271810),	-- Corpsefeeder's Shedding
+					i(271811),	-- Clacking Carapace Spaulders
+					i(271812),	-- Discarded Circlet
+				},
+			}),
 			q(92847, {	-- Corrupting Tears
 				sourceQuests = {
 					92844,	-- Mountain of Bones
@@ -152,6 +161,19 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					objective(2, {	-- 0/1 Gelkis Necromantic Garb
 						provider = { "i", 255941 },	-- Gelkis Necromantic Garb
 					}),
+				},
+			}),
+			q(93341, {	-- Forlorn Gardens
+				qg = 254578,	-- Mithera
+				coord = { 53.0, 75.8, MAP.SHENDRALAS },
+				lvl = 35,
+			}),
+			q(93609, {	-- Forlorn Necklace
+				qs = 260247,	-- Forlorn Necklace (QS!)
+				lvl = 35,
+				groups = {
+					i(272185),	-- Amulet of Forgiveness
+					i(272184),	-- Amulet of Vengeance
 				},
 			}),
 			q(96010, {	-- Fragments of the Pylons
@@ -242,6 +264,29 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(93606, {	-- Not on Squealing Terms
+				-- TODO: Wowhead doesn't list where this starts yet; it provides the Virulent Blood of Agamaggan from Agamaggan's Blood (93604). Turned in to Quolga the Wise.
+				qi = 260237,	-- Virulent Blood of Agamaggan (PQI!)
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Benevolent Bouquet
+						provider = { "i", 260244 },	-- Benevolent Bouquet
+					}),
+					objective(2, {	-- 0/5 Vibrant Flower
+						providers = {
+							{ "i", 260245 },	-- Vibrant Flower
+							{ "o", 649374 },	-- Vibrant Flower
+						},
+						coord = { 63.5, 74.6, MAP.SHENDRALAS },
+						crs = {
+							254566,	-- Rowdy Rose
+							254567,	-- Terrible Tulip
+						},
+					}),
+					i(260247),	-- Forlorn Necklace (QS!)
+					i(271618),	-- Rejected Roses
+				},
+			}),
 			q(92846, {	-- Outcast Necromancers
 				sourceQuest = 92841,	-- Valley of Bones (Magram)
 				qg = 253136,	-- Orgrul
@@ -275,6 +320,12 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(93568, {	-- Partially Digested Collar
 				qs = 259461,	-- Partially Digested Collar (QS!)
+				lvl = 35,
+			}),
+			q(93601, {	-- Passing the Blame
+				sourceQuest = 93404,	-- Rot and Regret
+				qg = 254674,	-- Woodwyrd
+				coord = { 69.4, 71.8, MAP.SHENDRALAS },
 				lvl = 35,
 			}),
 			q(93450, {	-- Phantasmal Problems
@@ -428,8 +479,32 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 			}),
+			q(93362, {	-- What They've Done to My Peonies
+				qg = 254578,	-- Mithera
+				coord = { 53.0, 75.8, MAP.SHENDRALAS },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/4 Rowdy Rose slain
+						provider = { "n", 254566 },	-- Rowdy Rose
+					}),
+					objective(2, {	-- 0/4 Terrible Tulip slain
+						provider = { "n", 254567 },	-- Terrible Tulip
+					}),
+					objective(3, {	-- 0/20 Malevolent Marigold slain
+						provider = { "n", 254572 },	-- Malevolent Marigold
+					}),
+				},
+			}),
+			q(93594, {	-- Word of the Woods
+				qg = 254578,	-- Mithera
+				coord = { 53.0, 75.8, MAP.SHENDRALAS },
+				lvl = 35,
+			}),
 		}),
 		n(ZONE_DROPS, {
+			i(259893, {	-- Corpsefeeder's Carapace (QS!)
+				cr = 253394,	-- Corpsefeeder
+			}),
 			i(259461, {	-- Partially Digested Collar (QS!)
 				cr = 255207,	-- Prowler
 			}),

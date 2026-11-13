@@ -447,6 +447,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				coord = { 37.4, 40.2, MAP.DARKSHORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
 				lvl = 13,
 			}),
 			q(963, {	-- For Love Eternal
@@ -612,6 +613,7 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				qi = 279048,	-- Alexston's Reply (PQI!)
 				coord = { 57.7, 47.9, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 13,
 				groups = {
 					i(282286),	-- Shipwright's Satchel

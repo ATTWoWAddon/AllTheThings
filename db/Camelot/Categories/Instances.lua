@@ -505,7 +505,7 @@ q(7509,{c={1,2},lvl=60,maps={234},qgs={14368},sourceQuests={7508},g={
 qo(1,{cost={{"i",18488,1}},crs={10184},description="Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",providers={{"i",18492}}}),
 i(18488,{cost={{"i",18489,1}},description="Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",providers={{"o",179562}},spellID=22906}),
 i(18489,{b=1,description="Place this in front of Onyxia's Breath attack during 'The Forging of Quel'Serrar' quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deterioration time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",spellID=22905}),
-s(163483,18348,{f=25})}}),
+s(163483,18348,{c={1,2},f=25})}}),
 q(7497,{coords={
 [1453]={{67,85}}},learnedAt=300,lvl=60,qgs={14394},r=2,requireSkill=165,sourceQuests={7496},g={
 r(19093,{learnedAt=320,requireSkill=165,skillID=2945})}}),
@@ -2372,6 +2372,11 @@ q(7044,{coords={
 [1443]={{32.1,64}}},lvl=41,qgs={13697},g={
 qo(1,{providers={{"i",17703}}}),
 qo(2,{providers={{"i",17702}}})}}),
+q(93404,{awp=16001,coords={
+[2652]={{69.4,71.8}}},lvl=35,qgs={254674},sourceQuests={93594},g={
+qo(1,{providers={{"i",258296}}}),
+s(307854,272186,{b=1,f=5,loc=43}),
+s(307855,272187,{b=1,f=7,loc=45})}}),
 q(7066,{description="This quest becomes available after you defeat Princess Theradras.",lvl=39,maps={1450},qgs={12238},qis={17760}}),
 q(7070,{coords={
 [1445]={{66.4,49.3}}},lvl=39,qgs={4967},r=2,g={
@@ -2537,6 +2542,9 @@ q(6626,{coords={
 qo(1,{providers={{"n",7873}}}),
 qo(2,{providers={{"n",7874}}}),
 qo(3,{providers={{"n",7872}}})}}),
+q(93604,{awp=16001,coords={
+[2652]={{72.6,31.4}}},lvl=35,qgs={253527},sourceQuests={93601},g={
+qo(1,{crs={255669},providers={{"i",260237}}})}}),
 q(6521,{coords={
 [1458]={{56.3,92.2}}},lvl=28,maps={1413},qgs={2425},r=1,sourceQuests={6522},g={
 qo(1,{coords={
@@ -3379,8 +3387,8 @@ q(5862,{coords={
 q(5213,{coords={
 [1423]={{81.4,59.6}}},lvl=55,qgs={11035},sourceQuests={5212},g={
 qo(1,{providers={{"i",13176},{"o",176249}}}),
-i(19812,{f=53}),
-i(13209,{f=53})}}),
+i(19812,{f=53,spellID=24198}),
+i(13209,{f=53,spellID=23930})}}),
 q(5251,{coords={
 [1423]={{81.4,59.8}}},lvl=55,qgs={11039},g={
 qo(1,{providers={{"n",10811}}}),

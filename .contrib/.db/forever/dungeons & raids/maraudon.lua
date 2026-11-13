@@ -64,6 +64,20 @@ instanceroot(232, {	-- Maraudon
 					}),
 				},
 			}),
+			q(93404, {	-- Rot and Regret
+				sourceQuest = 93594,	-- Word of the Woods
+				qg = 254674,	-- Woodwyrd
+				coord = { 69.4, 71.8, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Vial of Earth Song Water
+						provider = { "i", 258296 },	-- Vial of Earth Song Water
+					}),
+					i(272186),	-- Overgrown Cuffs
+					i(272187),	-- Thornplated Cord
+				},
+			}),
 			q(7066, {	-- Seed of Life
 				description = "This quest becomes available after you defeat Princess Theradras.",
 				providers = {
