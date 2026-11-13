@@ -1,5 +1,5 @@
 {
-  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
+  "$comment": "Generated comparison selection; choose one complete source before Lua execution.",
   "retail": {
     "temple-of-ahnqiraj": "retail.lua"
   },

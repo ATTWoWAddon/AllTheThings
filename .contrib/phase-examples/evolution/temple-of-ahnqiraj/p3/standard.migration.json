@@ -1,12 +1,13 @@
 {
+  "$comment": "Generated proposed comparison control; select only this source alternative.",
   "schema": 1,
   "defaultStage": "P1",
   "cohorts": [
     {
       "id": "comparison-fixture-temple-of-ahnqiraj",
-      "stage": "P2.2",
+      "stage": "P3",
       "sources": [
-        "2.6 Temple of Ahn'Qiraj.lua"
+        "standard.lua"
       ]
     }
   ]
