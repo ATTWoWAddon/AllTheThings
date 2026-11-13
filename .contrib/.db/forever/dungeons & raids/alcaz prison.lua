@@ -35,7 +35,7 @@ instanceroot(2994, {	-- Alcaz Prison
 			}),
 			q(96337, {	-- More Valuable Than Gold
 				sourceQuest = 96335,	-- The Man in the Iron Chains
-				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID. Turned in at Connery's Trunk (611086) in Westfall [43.4, 67.9].
+				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID (Wowhead has two Mason Connery NPCs, 264770 and 264845, with no quests yet). Turned in at Connery's Trunk (611086) in Westfall [43.4, 67.9].
 				qi = 274077,	-- Mason's Note (PQI!)
 				maps = { MAP.WESTFALL },
 				lvl = 48,
@@ -102,6 +102,7 @@ instanceroot(2994, {	-- Alcaz Prison
 					objective(1, {	-- 0/1 Document Box
 						provider = { "i", 274041 },	-- Document Box
 					}),
+					i(279450),	-- Fractured Insignia
 				},
 			}),
 			q(96379, {	-- State Secrets [Steamwheedle]
@@ -110,12 +111,14 @@ instanceroot(2994, {	-- Alcaz Prison
 					96377,	-- State Secrets [A]
 					96376,	-- State Secrets [H]
 				},
-				-- TODO: Wowhead doesn't list where it starts or ends yet; it awards Steamwheedle Cartel reputation. Completed together with 96376 and 96377 when Sammy turned in 96377 (Contributor Report, Nov 12).
+				qg = 214954,	-- Rix Xizzix <Lost and Found>
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Document Box
 						provider = { "i", 274041 },	-- Document Box
 					}),
+					i(279450),	-- Fractured Insignia
 				},
 			}),
 			q(96772, {	-- The Dragon's Journal
@@ -131,7 +134,7 @@ instanceroot(2994, {	-- Alcaz Prison
 				},
 			}),
 			q(96335, {	-- The Man in the Iron Chains
-				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID.
+				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID (Wowhead has two Mason Connery NPCs, 264770 and 264845, with no quests yet).
 				description = "This quest is not offered if The Questioner is killed before it is picked up.",
 				lvl = 48,
 				groups = {
@@ -164,6 +167,11 @@ instanceroot(2994, {	-- Alcaz Prison
 				coord = { 66.2, 45.2, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 48,
+			}),
+		}),
+		n(REWARDS, {
+			i(279471, {	-- Alcaz Operative Insignia (TOY!)
+				cost = { { "i", 279450, 6 } },	-- 6x Fractured Insignia
 			}),
 		}),
 		-- TODO: Overseer Wrex's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.

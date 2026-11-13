@@ -70,7 +70,7 @@ i(270870);	-- Orcish Tradeskill Signpost
 i(276242);	-- Replica Dartol's Rod of Transformation
 i(276896);	-- Everlasting Silvermoon Shimmerwine
 i(288185);	-- Adventurer's Tent
-i(279471);	-- TODO: name (listed in Forever's Toy table)
+i(279471);	-- Alcaz Operative Insignia
 i(279519);	-- TODO: name (listed in Forever's Toy table)
 i(284164);	-- TODO: name (listed in Forever's Toy table)
 i(286203);	-- TODO: name (listed in Forever's Toy table)
