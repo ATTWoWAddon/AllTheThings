@@ -998,6 +998,7 @@ MobileDB.GameObject = {
 -- editorconfig-checker-enable
 	[101854] = true,	-- Herod's Door
 	[104591] = true,	-- Chapel Door
+	[106318] = true,	-- Battered Chest
 	[106319] = true,	-- Battered Chest
 	[111095] = true,	-- Tattered Chest
 	[113768] = true,	-- Brightly Colored Egg
