@@ -91,7 +91,8 @@ end
 
 local function OnUpdateForAttunement(t)
 	local requirements = t.attunementRequirements;
-	if #requirements < 1 then
+	-- Respect the character/account filters (e.g. a Classic phase that isn't released yet).
+	if #requirements < 1 or not app.GroupFilter(t) then
 		t.trackable = false;
 		t.visible = false;
 		return true;
@@ -123,6 +124,10 @@ local function OnUpdateForAttunement(t)
 	return true;
 end
 
+-- Availability fields copied onto each entry from the DB group or its ancestors.
+local InheritedEntryFields = { "phase", "u", "e", "awp", "rwp" };
+local GetRelativeValue = app.GetRelativeValue;
+
 -- Creates a fresh object for the window instead of reusing the DB group, so none of
 -- the group's contents (an instance's loot, costs or progress) can show up here.
 -- Wings are named after their instance: "Scarlet Monastery - Armory".
@@ -137,6 +142,10 @@ local function CreateAttunementEntry(group)
 		attunementRequirements = GetCharacterAttunements(group),
 		OnUpdate = OnUpdateForAttunement,
 	};
+	-- Keep the availability of the DB group (often inherited from its instance or header).
+	for _,field in ipairs(InheritedEntryFields) do
+		data[field] = GetRelativeValue(group, field);
+	end
 	local key = group.key;
 	if key == "instanceID" then
 		return app.CreateInstance(group.instanceID, data);
