@@ -62,7 +62,7 @@ def main():
             snapshot.write_bytes(content)
     manifest = (json.dumps(document, indent=2, ensure_ascii=False) + "\n").encode()
     if args.check:
-        assert MANIFEST.read_bytes() == manifest, "P1 source manifest drift"
+        assert MANIFEST.read_text(encoding="utf-8") == manifest.decode("utf-8"), "P1 source manifest drift"
         assert not (EVOLUTION / "demon-fall-canyon/p1/standard.lua").exists()
         print(f"P1: {len(document['sources'])} native sources match their payloads")
     else:
