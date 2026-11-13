@@ -1399,6 +1399,8 @@ if TooltipDataProcessor and (app.GameBuildVersion > 60000 or app.IsForever) then
 					local content = ttdata.lines;
 					if content and #content > 0 then
 						local text = content[1].leftText;
+						-- minimap mouseover text can be secret (12.0+), and splitting it errors
+						if not text or issecretvalue(text) then return true; end
 						local arr = { ("|"):split(text) };
 						if #arr == 3 then text = arr[3]:sub(2); end
 						local objectID = GetBestObjectIDForName(text);
