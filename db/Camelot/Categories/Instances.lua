@@ -1564,7 +1564,7 @@ s(160864,13142,{f=7,loc=45}),
 i(13098,{f=52}),
 i(22268,{f=53,spellID=1318931}),
 crit(3268,{achID=62033,awp=16001,id=10})})}})}}),
-inst(2959,{awp=16001,icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",zoneTextAreaID=16544,g={
+inst(2959,{attunement={{"i",277507}},awp=16001,icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",zoneTextAreaID=16544,g={
 h(-45,{
 q(92456,{awp=16001,coords={
 [1453]={{31.4,63}}},lvl=24,qgs={5502},r=2,g={

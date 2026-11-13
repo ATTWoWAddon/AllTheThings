@@ -6,6 +6,7 @@ instanceroot(2959, {	-- City of Dalaran
 	icon = [[~_.asset("cityofdalaran")]],
 	zoneTextAreaID = 16544,	-- City of Dalaran
 	--coord = { , MAP.ALTERAC_MOUNTAINS },
+	attunement = { { "i", 277507 } },	-- Dalaran Sewer Key
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	--lvl = 23,
 	groups = {
