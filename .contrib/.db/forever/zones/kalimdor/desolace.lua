@@ -68,7 +68,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(2, {	-- 0/3 Tear of Theradras
@@ -749,7 +748,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				},
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn slain
@@ -1122,7 +1120,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Dispel the Accursed Skull

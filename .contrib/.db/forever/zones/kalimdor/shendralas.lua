@@ -37,10 +37,12 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93062, {	-- Bone Burying
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 253177,	-- Nerlokh
+				coords = {
+					{ 58.4, 88.6, MAP.DESOLACE },
+					{ 20.8, 22.6, MAP.SHENDRALAS },
+				},
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/8 Haggard Bones laid to rest
@@ -100,7 +102,6 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					{ 20.8, 22.6, MAP.SHENDRALAS },
 				},
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				races = HORDE_ONLY,
 				lvl = 35,
 				-- TODO: Wowhead doesn't list this quest's objectives yet (investigate centaur points of interest).
 			}),
@@ -339,9 +340,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93058, {	-- Saving Our Own
 				qg = 253177,	-- Nerlokh
 				coord = { 20.8, 22.3, MAP.SHENDRALAS },
-				timeline = { TIMELINE.CREATED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
-				races = HORDE_ONLY,
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/5 Gelkis Captive rescued
