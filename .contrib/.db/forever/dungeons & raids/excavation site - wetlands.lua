@@ -83,6 +83,7 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				},
 			}),
 			q(98815, {	-- Highland Hides
+				sourceQuest = 484,	-- Young Crocolisk Skins
 				qg = 2094,	-- James Halloran
 				coord = { 8.6, 55.6, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,

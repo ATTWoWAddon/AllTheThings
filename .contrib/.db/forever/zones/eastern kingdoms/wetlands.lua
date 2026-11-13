@@ -355,6 +355,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 8.6, 55.6, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
 				lvl = 19,
 				qi = 280099,	-- Crimson Crate (QI!)
 			}),
@@ -387,6 +388,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				qi = 3347,	-- Bundle of Crocolisk Skins
 				coord = { 49.8, 39.4, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
 				lvl = 18,
 			}),
 			q(98291, {	-- Death to the Dragonmaw
@@ -698,7 +700,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 28,
 			}),
 			q(98245, {	-- Razormaw Needling
-				sourceQuests = { 98240 },	-- Crimson Crate Delivery
 				qg = 270637,	-- Howin Kindfeather
 				coord = { 49.3, 42.1, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
