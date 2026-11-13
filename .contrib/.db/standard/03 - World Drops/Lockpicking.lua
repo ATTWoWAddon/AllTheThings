@@ -250,15 +250,21 @@ root(ROOTS.WorldDrops, {
 					186145,	-- Stygian Thorn Loop
 				}},
 			}),
-			i(5758,	{	-- Mithril Lockbox
-				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-					timeline = { ADDED_10_1_7 },
-				}),
+			i(5758, {	-- Mithril Lockbox
+				timeline = { ADDED_1_1_0 },
+				groups = {
+					i(7678, {	-- Recipe: Thistle Tea (RECIPE!)
+						timeline = { ADDED_10_1_7 },
+					}),
+				},
 			}),
 			i(4632, {	-- Ornate Bronze Lockbox
-				i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
-					timeline = { ADDED_10_1_7 },
-				}),
+				timeline = { ADDED_1_1_0 },
+				groups = {
+					i(7678, {	-- Recipe: Thistle Tea (RECIPE!)
+						timeline = { ADDED_10_1_7 },
+					}),
+				},
 			}),
 			i(180532, {	-- Oxxein Lockbox
 				timeline = { ADDED_9_0_2_LAUNCH },
