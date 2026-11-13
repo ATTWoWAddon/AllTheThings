@@ -4,7 +4,9 @@ For the actual files and edits, use the complete comparison pages below. This pa
 
 [Blackrock Depths](blackrock-depths/FILE_EVOLUTION.md) · [Demon Fall Canyon](demon-fall-canyon/FILE_EVOLUTION.md) · [Dire Maul](dire-maul/FILE_EVOLUTION.md) · [Temple of Ahn'Qiraj](temple-of-ahnqiraj/FILE_EVOLUTION.md) · [Gnomeregan](gnomeregan/FILE_EVOLUTION.md)
 
-**Local P1 copies** · [Blackrock Depths](p1/Blackrock%20Depths.lua) · [Demon Fall Canyon](p1/Demon%20Fall%20Canyon.lua) · [Dire Maul](p1/Dire%20Maul.lua) · [Temple of Ahn'Qiraj](p1/2.6%20Temple%20of%20Ahn%27Qiraj.lua) · [Gnomeregan](p1/Gnomeregan.lua). Each copy adds one identification line above the complete original. The pinned source links below use the original line numbers.
+**Current P1 copies** · [Blackrock Depths](blackrock-depths/p1/) · [Demon Fall Canyon](demon-fall-canyon/p1/) · [Dire Maul](dire-maul/p1/) · [Temple of Ahn'Qiraj](temple-of-ahnqiraj/p1/) · [Gnomeregan](gnomeregan/p1/). Each directory separates the standard and standalone SoD source; Demon Fall Canyon has only SoD. Each copy adds one identification line above the exact production bytes. [Generated source provenance](full-source/sources.json) pins the current baseline at `195b274be460432481e33bb63bfaf9e68bfeec06`.
+
+The source links below point to that baseline's standalone SoD files. Links labelled legacy or shipped output retain the earlier frozen database at `6f7b562a`; they are historical comparison evidence, not fresh output from the rebased Parser. Code blocks abbreviate records to explain their owner; the complete comparison pages show every field.
 
 The P3 checks described below are proposed acceptance criteria. The saved sources and syntax checks do not establish an independent production legacy build comparison.
 
@@ -17,7 +19,7 @@ applyclassicphase(SOD_PHASE_FOUR, i(227983, { timeline = { ADDED_1_15_3 } }))
 i(11934)
 ```
 
-**P2.1.** Put `progressionKey = "brd.dungeon"` on instance `228` and `progressionKey = "brd.second-half"` on encounter `387`. Leave `11934` as an ordinary child. Retain the existing SoD item guards and phase writers for the legacy build.
+**P2.1.** Put `brd.dungeon` on the standard `inst(228)` record and the SoD record passed to `instanceroot(228)`; put `brd.second-half` on encounter `387`. Leave `11934` as an ordinary child. Apply the annotations separately to standard and SoD, retaining their existing phase writers and ordinary fields for the legacy comparison.
 
 **P2.2.** In the [shared schedule](../schedule.json), add these two entries under `rules.blackrock-depths`.
 
@@ -28,7 +30,7 @@ i(11934)
 
 **P3.** The candidate gives the seal `sod:main:brd.dungeon` **and** `sod:main:brd.second-half`. At phase 3 the earlier Gerstahn route can open while the Emperor remains closed. At phase 4 the seal's schedule opens. The frozen SoD output has no explicit boss or seal phase at these records. The second-half rule needs its own reviewed expectation. The phase-four dungeon listing and the observation of the Emperor out of combat in the closed half support this specific encounter. [Legacy boss and seal][brd-output] · [Phase-four dungeon list](https://news.blizzard.com/en-us/article/24111477/season-of-discovery-phase-4-now-live) · [Phase-three observation](https://www.wowhead.com/news/latter-half-of-brd-inaccessible-bosses-hanging-out-at-grim-guzzler-338551)
 
-**P4.** Under `inst(228)`, attach the rule once to the boss. [Candidate source](../input/sources.lua#L6-L39)
+**P4.** The smaller runnable fixture uses `inst(228)` and attaches the rule once to the boss. [Compact candidate source](../input/sources.lua#L6-L39)
 
 ```lua
 e(387, { creatureID = 9019, progressionKey = "brd.second-half", groups = { i(11934) } })
@@ -36,7 +38,7 @@ e(387, { creatureID = 9019, progressionKey = "brd.second-half", groups = { i(119
 
 ## Demon Fall Canyon · Azgaloth → Eye of the Observer
 
-**P1 · [Full Demon Fall Canyon source][dfc-file].** A file-wide SoD guard encloses the phase-four dungeon. Azgaloth and his eye are a separate addition. There is also a later drop on an existing boss, Grimroot. [Dungeon and Grimroot][dfc-root] · [Azgaloth and the eye][dfc-eye]
+**P1 · [Full Demon Fall Canyon source][dfc-file].** The standalone SoD file contains the phase-four `instanceroot(2784)` record; it has no standard counterpart. Azgaloth and his eye are a separate addition. There is also a later drop on an existing boss, Grimroot. [Dungeon and Grimroot][dfc-root] · [Azgaloth and the eye][dfc-eye]
 
 ```lua
 applyclassicphase(SOD_PHASE_FIVE, n(232632, {
@@ -44,7 +46,7 @@ applyclassicphase(SOD_PHASE_FIVE, n(232632, {
 }))
 ```
 
-**P2.1.** Add `flavors = { "sod" }` and `progressionKey = "dfc.dungeon"` to `inst(2784)`. Add `progressionKey = "dfc.azgaloth"` to `n(232632)`. Keep both phase writers, the file guard and the entrance requirements. Grimroot's extra drop `235787` gets its own key on the item.
+**P2.1.** Add `progressionKey = "dfc.dungeon"` to the record passed to `instanceroot(2784)`. A transparent scope around `n(232632)` adds `dfc.azgaloth`; another around item `235787` adds `dfc.ironwood-branch`. Keep all three legacy writers and the entrance requirements. File selection already limits this source to SoD.
 
 **P2.2.** Under `rules.demon-fall-canyon`, the [shared schedule](../schedule.json) records the two known SoD releases. The exact order of the entrance opening within phase 4 is unresolved.
 
@@ -69,17 +71,17 @@ n(232632, { progressionKey = "dfc.azgaloth", timeline = { "added 1.15.4.56738" }
 
 ```lua
 applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16097, {
-    provider = { "i", 22057 }, timeline = { REMOVED_4_0_3 }, groups = { i(22315) },
+    provider = { "i", 22057 }, groups = { i(22315) },
 }))
 ```
 
-**P2.1.** On `inst(230)`, add `progressionKey = "dire-maul.common"`. On the existing `n_conditional(16097)`, add `progressionKey = "dire-maul.isalien"`. Keep the phase constants and the conditional cost/quest branches.
+**P2.1.** Add `dire-maul.common` to the standard `inst(230)` record and the SoD record passed to `instanceroot(230)`. A transparent scope around `n_conditional(16097)` adds `dire-maul.isalien`. Keep each alternative's existing phase writers and cost/quest requirements.
 
 **P2.2.** In `rules.dire-maul`, the [shared schedule](../schedule.json) opens the dungeon at `vanilla.2` on Anniversary. Its summon uses `{ "default": "unknown", "anniversary": "vanilla.4" }`. The historical progression opening still needs a reviewed phase-five batch. [Anniversary Dungeon Set 2 release](https://news.blizzard.com/en-us/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live)
 
 **P3.** On Anniversary the hammer needs both `anniversary:main:dire-maul.common` and `anniversary:main:dire-maul.isalien`. Compare against an independently pinned Anniversary build with its original summon rules. The [committed Vanilla summon][dm-output] shows the cost, provider and hammer for that build. It supplies no Anniversary build result.
 
-**P4.** Classic-compatible profiles keep the cost of one Brazier of Beckoning. The Retail variant keeps quest `8996` and `u_sqs`. Each source retains its provider and removal timeline. [Both candidate records](../input/sources.lua#L67-L92)
+**P4.** Classic-compatible profiles keep the cost of one Brazier of Beckoning. The Retail variant keeps quest `8996` and `u_sqs`. Each source retains its own provider and timelines; the current standalone SoD source has no 4.0.3 removal on this summon. [Both candidate records](../input/sources.lua#L67-L92)
 
 ```lua
 n(16097, { flavors = { "progression", "anniversary", "era", "sod" }, progressionKey = "dire-maul.isalien",
@@ -89,7 +91,7 @@ n(16097, { flavors = { "progression", "anniversary", "era", "sod" }, progression
 
 ## Temple of Ahn'Qiraj · Reworked C'Thun → Death's Sting
 
-**P1 · [Full Temple of Ahn'Qiraj source][aq-file].** Instance `744` uses `PHASE_FIVE`. A SoD guard retains the original difficulty as removed history and introduces the reworked raid. C'Thun (`1551`) drops eye `21221` on both routes. The original Death's Sting is `21126`, the reworked drop is `233634`. [Instance][aq-root] · [Original difficulty][aq-history] · [Original loot][aq-old] · [SoD difficulty][aq-raid] · [SoD loot][aq-new]
+**P1 · [Full Temple of Ahn'Qiraj source][aq-file].** Instance `744` uses `PHASE_FIVE`. The standalone SoD source retains the original difficulty as removed history alongside the reworked raid. C'Thun (`1551`) drops eye `21221` on both routes. The original Death's Sting is `21126`, the reworked drop is `233634`. [Instance][aq-root] · [Original difficulty][aq-history] · [Original loot][aq-old] · [SoD difficulty][aq-raid] · [SoD loot][aq-new]
 
 ```lua
 applyclassicphase(SOD_PHASE_SIX, d(DIFFICULTY.SOD.PLAYER20, {
@@ -97,13 +99,13 @@ applyclassicphase(SOD_PHASE_SIX, d(DIFFICULTY.SOD.PLAYER20, {
 }))
 ```
 
-**P2.1.** Add `aq40.common` as the instance's `progressionKey`. Mark the original acquisitions `aq40.original`. Add `flavors = { "sod" }` and `progressionKey = "aq40.reworked"` on the SoD difficulty. Keep the original guards, timelines and both phase writers.
+**P2.1.** Add `aq40.common` to each alternative's instance record. Mark the original acquisition region `aq40.original`, leaving shared achievements and factions outside it. The SoD reworked difficulty adds `aq40.reworked` outside the original scope. Keep all existing timelines and phase writers; no extra flavor field is needed for the selected standalone source.
 
 **P2.2.** In `rules.temple-of-ahnqiraj`, set the SoD opening on `aq40.common` to `vanilla.6.raids`. The rework uses `{ "sod": { "sameAs": "aq40.common" } }`. The original SoD route is explicitly `"disabled"`. [Shared schedule](../schedule.json) · [Blizzard's phase-six event order](https://news.blizzard.com/en-us/article/24154449/anniversary-celebration-at-the-november-trading-post-season-of-discovery-phase-6-the-war-within-audio-design-and-more)
 
 **P3.** The reworked drop needs `sod:main:aq40.common` and `sod:main:aq40.reworked`. Scepter, War Effort, end of collection and war all precede the raid opening. Compare the two historical loot lists independently. Test the finer opening against the event order as well as the old whole-phase result. [Legacy original boss][aq-output-old] · [Legacy reworked boss][aq-output-new]
 
-**P4.** Under `inst(744)`, each difficulty owns its boss and loot. [Candidate sources](../input/sources.lua#L192-L233)
+**P4.** In the smaller runnable fixture, `inst(744)` contains each difficulty with its own boss and loot. [Compact candidate sources](../input/sources.lua#L192-L233)
 
 ```lua
 d(201, { flavors = { "sod" }, progressionKey = "aq40.reworked", timeline = { "added 1.15.5.57638" },
@@ -116,44 +118,44 @@ d(201, { flavors = { "sod" }, progressionKey = "aq40.reworked", timeline = { "ad
 
 ```lua
 applyclassicphase(SOD_PHASE_TWO, d(DIFFICULTY.SOD.PLAYER10, {
-    timeline = { ADDED_1_15_1, REMOVED_2_0_1 }, lvl = 40, groups = { n(218242, { groups = { i(213410) } }) },
+    timeline = { ADDED_1_15_1 }, lvl = 40, groups = { n(218242, { groups = { i(213410) } }) },
 }))
 ```
 
-**P2.1.** Add `progressionKey = "gnomeregan.dungeon"` to the original acquisition and `progressionKey = "gnomeregan.raid10"`, `flavors = { "sod" }` to the raid difficulty. Preserve the guard and the `SOD_PHASE_TWO` writer for the legacy build.
+**P2.1.** Add `gnomeregan.dungeon` to the standard instance and the SoD removed-dungeon record. The SoD raid and existing zone-drop writers use `gnomeregan.raid10` outside that disabled dungeon scope. Preserve the old writers; the separate hidden-quest root retains its original ownership.
 
 **P2.2.** In `rules.gnomeregan`, use `{ "default": "start", "sod": "disabled" }` for the original dungeon and `{ "sod": "vanilla.2" }` for the separate raid. [Shared schedule](../schedule.json)
 
 **P3.** Gizmoblade inherits only `sod:main:gnomeregan.raid10` in this example. It is future in phase 1 and scheduled open in phase 2. Compare against the old SoD raid with its level and build requirements. Check ordinary Retail separately for the flat dungeon route to `9449`. [Legacy raid difficulty][gn-output-raid] · [Legacy Menagerie and drop][gn-output-drop]
 
-**P4.** Instance `231` holds a direct SoD raid record alongside the original acquisition. The reduced fixture exercises the SoD opening and level threshold. The full source also has a 2.0.1 removal boundary to preserve in a production migration. [Candidate sources](../input/sources.lua#L234-L271)
+**P4.** The reduced fixture holds both acquisition routes under `inst(231)` and exercises the SoD opening and level threshold. The current standalone SoD raid has its `ADDED_1_15_1` timeline and level 40; do not restore the obsolete combined source's 2.0.1 removal boundary. [Candidate sources](../input/sources.lua#L234-L271)
 
 ```lua
 d(198, { flavors = { "sod" }, progressionKey = "gnomeregan.raid10", lvl = 40, timeline = { "added 1.15.1.53181" },
     groups = { n(218242, { groups = { i(213410) } }) } })
 ```
 
-[brd-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua
-[brd-sphere]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua#L2599-L2608
-[brd-boss]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua#L3384-L3390
-[brd-seals]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Blackrock%20Depths.lua#L3504-L3509
-[dfc-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Demon%20Fall%20Canyon.lua
-[dfc-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Demon%20Fall%20Canyon.lua#L1-L24
-[dfc-eye]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Demon%20Fall%20Canyon.lua#L41-L47
-[dm-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Dire%20Maul.lua
-[dm-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Dire%20Maul.lua#L145-L147
-[dm-summon]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Dire%20Maul.lua#L1442-L1465
-[aq-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua
-[aq-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L33-L35
-[aq-history]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1347-L1351
-[aq-old]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1564-L1585
-[aq-raid]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1598-L1606
-[aq-new]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L2350-L2363
-[gn-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua
-[gn-history]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L294-L299
-[gn-old]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L883-L887
-[gn-raid]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L951-L956
-[gn-loot]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/Gnomeregan.lua#L1633-L1637
+[brd-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Blackrock%20Depths.lua
+[brd-sphere]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Blackrock%20Depths.lua#L1184
+[brd-boss]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Blackrock%20Depths.lua#L1707
+[brd-seals]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Blackrock%20Depths.lua#L1765
+[dfc-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Demon%20Fall%20Canyon.lua
+[dfc-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Demon%20Fall%20Canyon.lua#L5
+[dfc-eye]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Demon%20Fall%20Canyon.lua#L39
+[dm-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Dire%20Maul.lua
+[dm-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Dire%20Maul.lua#L131
+[dm-summon]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Dire%20Maul.lua#L949
+[aq-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua
+[aq-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L27
+[aq-history]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1290
+[aq-old]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1469
+[aq-raid]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L1484
+[aq-new]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/2.6%20Temple%20of%20Ahn%27Qiraj.lua#L2244
+[gn-file]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Gnomeregan.lua
+[gn-history]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Gnomeregan.lua#L225
+[gn-old]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Gnomeregan.lua#L594
+[gn-raid]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Gnomeregan.lua#L634
+[gn-loot]: https://github.com/ATTWoWAddon/AllTheThings/blob/195b274be460432481e33bb63bfaf9e68bfeec06/.contrib/.db/season%20of%20discovery/dungeons%20%26%20raids/Gnomeregan.lua#L1293
 [brd-output]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/db/VanillaSOD/Categories/Instances.lua#L7283-L7304
 [dfc-output-root]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/db/VanillaSOD/Categories/Instances.lua#L7874-L7882
 [dfc-output-eye]: https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/db/VanillaSOD/Categories/Instances.lua#L7896-L7897

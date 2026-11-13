@@ -2,7 +2,7 @@
 
 **[Open the Phase Explorer GUI](../src/PhaseExplorer/README.md)** to browse a checkout's Lua/JSON dependencies, inherited bindings and opening rules.
 
-**Start with the instance you want to change.** Each page shows the complete original Lua, the actual edits at P2.1, the JSON to write at P2.2, and the complete final P4 files.
+**Start with the instance you want to change.** Each page shows the complete current standard and standalone SoD Lua sources, the actual edits at P2.1, the JSON to write at P2.2, and the complete final P4 files. Demon Fall Canyon has only a SoD source.
 
 | Raid or dungeon | Complete Lua / JSON comparison |
 |---|---|
@@ -181,11 +181,13 @@ These directories are side-by-side snapshots of one raid at different points in 
 
 | Step | Actual snapshot | What changes |
 |---|---|---|
-| **P1** | [Original Lua](evolution/blackwing-lair/p1/1.6%20Blackwing%20Lair.lua) · [Shipped database](evolution/blackwing-lair/nefarian/p1/legacy-sod.md) | The existing raid uses `applyclassicphase` plus a SoD guard around the reworked difficulty. |
-| **P2.1** | [Complete annotated raid](evolution/blackwing-lair/p2.1/1.6%20Blackwing%20Lair.lua) | Add the keys and SoD applicability first. The old wrappers still supply official output. |
-| **P2.2** | [Lua](evolution/blackwing-lair/p2.2/1.6%20Blackwing%20Lair.lua) · [Shared schedule, including the SoD exceptions](schedule.json) | Write release windows and validate them in shadow. |
-| **P3** | [Lua](evolution/blackwing-lair/p3/1.6%20Blackwing%20Lair.lua) · [Stage switch](evolution/blackwing-lair/p3/migration.json) | The same Lua and JSON now supply official progress output. Keep the old writers for an independent legacy comparison. |
-| **P4** | [Rewritten Lua](evolution/blackwing-lair/p4/sod.lua) · [Generated Nefarian excerpt](evolution/blackwing-lair/nefarian/p4/expected-sod.lua) | Remove the guards and wrappers. Keep the reviewed policy and separate the original and reworked loot routes. |
+| **P1** | [Standard](evolution/blackwing-lair/p1/standard.lua) · [Standalone SoD](evolution/blackwing-lair/p1/sod.lua) | Exact copies of the two current production alternatives. SoD already includes its original history and reworked raid. |
+| **P2.1** | [Standard](evolution/blackwing-lair/p2.1/standard.lua) · [SoD](evolution/blackwing-lair/p2.1/sod.lua) | Add inherited keys to each source separately; retain the old phase writers. |
+| **P2.2** | [Standard](evolution/blackwing-lair/p2.2/standard.lua) · [SoD](evolution/blackwing-lair/p2.2/sod.lua) · [Shared schedule](schedule.json) | Write release windows and compare the proposed result in shadow. Legacy remains authoritative. |
+| **P3** | [Standard](evolution/blackwing-lair/p3/standard.lua) · [SoD](evolution/blackwing-lair/p3/sod.lua) | The proposed stage switch makes the policy result authoritative after verification; the old writers remain for an independent legacy comparison. |
+| **P4** | [Retail](evolution/blackwing-lair/p4/retail.lua) · [Classic](evolution/blackwing-lair/p4/classic.lua) · [SoD](evolution/blackwing-lair/p4/sod.lua) | Select one complete source before Lua execution, remove old phase writers, and preserve separate acquisition routes. |
+
+The standard and SoD roots are alternatives, not layers to load together. P2/P3 comparison controls name one alternative each. [Source provenance](evolution/full-source/sources.json) is generated verification metadata, not another handwritten phase configuration.
 
 [All six complete file comparisons](evolution/README.md) include Blackrock Depths, Demon Fall Canyon, Dire Maul, Temple of Ahn’Qiraj and Gnomeregan. The [production design](https://github.com/NORPG/AllTheThings/blob/codex/flavor-phase/.contrib/progression/PHASE_DESIGN.md#migration-manifest) describes how different source groups advance independently.
 
@@ -245,7 +247,7 @@ python .contrib/phase-examples/verify.py --parser $parser --lua lua5.1 --output 
 python .contrib/phase-examples/verify_compact.py --parser $parser --lua lua5.1 --baseline-output "$env:TEMP/att-phase-examples"
 ```
 
-The runner calls the built Parser for A, B and C in seven contexts. The retained Lua modules are grouped by option, for example `A/sod-main.lua`, `B/retail.lua` and `C/progression-replay.lua`. The Lua 5.1 checks compare complete trees and evaluate each boundary. Negative inputs exercise missing keys beneath disabled owners, typos, unknown milestones, invalid windows and previous-output preservation. To build from source, run `dotnet build .contrib/src/Parser/Parser.csproj -c Release -p:Platform=x64` on Windows with .NET Framework 4.8 targeting support. The [Windows workflow](../../.github/workflows/PhaseExamples.yml) builds the actual Parser, runs the checks, and publishes `Parser.exe`, its SHA256 provenance file and all generated modules in the `phase-examples-windows` artifact.
+The runner calls the built Parser for A, B and C in seven contexts. The retained Lua modules are grouped by option, for example `A/sod-main.lua`, `B/retail.lua` and `C/progression-replay.lua`. The Lua 5.1 checks compare complete trees and evaluate each boundary. Negative inputs exercise missing keys beneath disabled owners, typos, unknown milestones, invalid windows and previous-output preservation. To build from source, run `dotnet build .contrib/src/Parser/Parser.csproj -c Release -p:Platform=x64` on Windows with .NET Framework 4.8.1 targeting support. The [Windows workflow](../../.github/workflows/PhaseExamples.yml) builds the actual Parser, runs the checks, and publishes `Parser.exe`, its SHA256 provenance file and all generated modules in the `phase-examples-windows` artifact. It also runs the [bounded current-source BWL regression](evolution/blackwing-lair/FILE_EVOLUTION.md#check-the-current-standalone-source-with-the-parser), which retains the current standalone owner tree and selected complete item calls. This is separate from full-source preservation checks and the frozen historical Nefarian regression.
 
 ### Using a generated module
 
@@ -273,7 +275,7 @@ Each phased module returns `context`, ordered `milestones`, fully namespaced `po
 
 ### Record evidence
 
-The IDs and representative source fields are taken from the repository's [Classic dungeon and raid data](../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic). The linked design includes source lines, limits and full-case tables. [Design PR #2734](https://github.com/ATTWoWAddon/AllTheThings/pull/2734)
+The IDs and representative source fields are taken from the repository's [standard dungeon and raid data](../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic) and [standalone SoD data](../.db/season%20of%20discovery/dungeons%20%26%20raids). The complete comparisons pin their source paths and hashes in generated [provenance metadata](evolution/full-source/sources.json). The linked design includes source lines, limits and full-case tables. [Design PR #2734](https://github.com/ATTWoWAddon/AllTheThings/pull/2734)
 
 - Blackrock Depths and Demon Fall Canyon: [SoD phase 3](https://worldofwarcraft.blizzard.com/en-gb/news/24078318), [Emperor observed out of combat in the closed half](https://www.wowhead.com/news/latter-half-of-brd-inaccessible-bosses-hanging-out-at-grim-guzzler-338551), [phase 4 dungeon list](https://news.blizzard.com/en-us/article/24111477/season-of-discovery-phase-4-now-live), [phase 5 added boss](https://worldofwarcraft.blizzard.com/en-us/news/24139952).
 - Dire Maul: [Classic content plan](https://us.forums.blizzard.com/en/wow/t/classic-content-plan/120346), [Anniversary Dungeon Set 2](https://news.blizzard.com/en-us/article/24194658/wow-classic-20th-anniversary-edition-phase-4-now-live).

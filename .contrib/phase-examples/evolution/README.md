@@ -1,6 +1,6 @@
 # Six complete Lua and JSON evolutions
 
-Choose an instance. Each page starts with its **whole existing Lua file**, shows the actual P2.1 edits, identifies the JSON entries to write at P2.2, and ends with the complete P4 files.
+Choose an instance. Each page starts with its **complete current standard and standalone SoD sources**, shows the actual P2.1 edits, identifies the JSON entries to write at P2.2, and ends with the complete P4 files. Demon Fall Canyon has only a SoD source.
 
 | Instance | Follow this change | File comparison |
 |---|---|---|
@@ -15,19 +15,31 @@ The pages follow the same sequence:
 
 | Step | What the author changes |
 |---|---|
-| **P1** | Nothing yet. Read the complete existing Lua. |
+| **P1** | Nothing yet. Read each complete current source alternative. |
 | **P2.1** | Add `progressionKey` to the relevant Lua parent or source. Keep the old phase calls. |
 | **P2.2** | Write the opening rules in [schedule.json](../schedule.json). The Lua stays the same. |
 | **P3** | Change the migration control from `P2.2` to `P3`. The Lua and timing rules stay the same. |
-| **P4** | Select complete Lua files for each flavor. Remove the old phase calls and flavor guards; retain version conditions and ordinary requirements. |
+| **P4** | Select one complete Lua file per flavor. Remove old phase calls and remaining flavor guards; retain version conditions and ordinary requirements. |
 
 These are migration steps, not game release phases. Each instance has its own control, so different instances can be at different steps.
 
 ## Which files do I edit?
 
-**For the proposed migration:** change the production Lua path shown at the start of the instance page, then write its rules in the one [schedule.json](../schedule.json). The page shows the complete result at each step. A key on a parent applies to its children; another child key adds another requirement.
+**For the proposed migration:** edit the production Lua alternative shown at the start of the instance page, then write its rules in the one [schedule.json](../schedule.json). A key on a parent applies to its children; another child key adds another requirement.
 
-**For this comparison kit:** the five new instances' stage copies and control files are generated. The Lua headers and the comparison pages identify their roles. The generator reproduces the proposed edits; it does not modify production data or install the migration controls. Blackwing Lair retains its existing saved snapshots.
+**For this comparison kit:** stage copies, controls and selection files are generated examples of those edits. They do not install a production migration switch. P2.1, P2.2 and P3 keep the same annotated Lua body; only the stage identification and comparison control change.
+
+The current baseline is master `195b274be460432481e33bb63bfaf9e68bfeec06`, after the standalone SoD split. Five instances have `p1/standard.lua` and `p1/sod.lua`; Demon Fall Canyon has only `p1/sod.lua`. The identifying first line is followed by the exact production bytes. SoD replaces the standard source root; its files already contain their applicable original history and reworked records. Never load both alternatives for the same build.
+
+| File | Role |
+|---|---|
+| Production Lua named in each page | Human-authored data and proposed key locations. |
+| [schedule.json](../schedule.json) | Handwritten opening, removal and reopening rules. |
+| Per-case P1 Lua | Generated comparison copies of unmodified production sources. |
+| P2.1/P2.2/P3 Lua and `*.migration.json` | Generated comparisons; each control names one source alternative. |
+| P4 Lua, `selection.json`, `migration.json` | Generated comparisons; select one scalar file path, or `null` for an absent source. |
+| [full-source/sources.json](full-source/sources.json) | Generated verification provenance: source commit, paths, alternatives and SHA-256. No phase rules to maintain here. |
+| Per-case `coverage.json` | Generated mapping from original phase writers to their owners and proposed keys. |
 
 There is one handwritten timing file:
 
@@ -36,18 +48,21 @@ There is one handwritten timing file:
 | `rules` | The 18 rules shared with the small runnable examples. |
 | `fullSourceRules` | 19 additional groups found in the complete sources. Four have explicit SoD windows; 15 remain `unknown`. |
 
-The five added sources contain 213 old phase calls. Repeated calls can use the same group rule; they do not need 213 timing entries. Unknown rules remain unresolved on the affected records. They are never treated as open, and those sources cannot be promoted until their timing is reviewed. Retail uses its ordinary source without a phase schedule.
+The eleven source alternatives contain 273 old phase calls, including six in Blackwing Lair. Repeated calls can use the same group rule; each occurrence does not need its own timing entry. Unknown rules remain unresolved on the affected records. They are never treated as open, and those sources cannot be promoted until their timing is reviewed. Retail uses its ordinary source without a phase schedule.
 
 ## Reproduce the comparison kit
 
 Run from the repository root with Lua 5.1:
 
 ```console
-python .contrib/phase-examples/evolution/full-source/generate.py
+python .contrib/phase-examples/evolution/full-source/source_sets.py --check
+python .contrib/phase-examples/evolution/full-source/generate.py --check
 python .contrib/phase-examples/evolution/full-source/verify.py --lua lua5.1
 python .contrib/phase-examples/prepare.py --check
 ```
 
-The checks preserve the original P1 bytes, compare the saved P2/P4 source tokens across branches, validate rule coverage, and check Lua 5.1 syntax. They do not execute these complete native files through the production Parser or supply the independent legacy build comparison required for promotion.
+The checks compare all P1 payloads with their current production alternatives, compare the saved P2/P4 source tokens for each selected flavor and version, validate writer ownership and route multiplicity, and check Lua 5.1 syntax. They do not execute these complete native files through the production Parser or supply the independent legacy build comparison required for promotion.
 
 [Run the smaller Parser example](../README.md#run-an-example) · [Record details and evidence](OTHER_INSTANCES.md)
+
+The [current standalone BWL Parser regression](blackwing-lair/FILE_EVOLUTION.md#check-the-current-standalone-source-with-the-parser) separately executes a bounded tree extracted from the current P2.2/P3/P4 files through the existing example API. It checks complete selected item calls and independently derived ordinary metadata. The historical Nefarian fixture remains a separate regression; neither test is a complete production parse.
