@@ -1656,4 +1656,16 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(8458, {	-- Completes with The Corrupter (2/5) (1481)
 		races = HORDE_ONLY,
 	}),
+	q(93655, {	-- Completed together with 93657, 93658 and 93659, near Nerlokh [54.1, 87.7]
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(93657, {	-- Completed together with 93655, 93658 and 93659, near Nerlokh [54.1, 87.7]
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(93658, {	-- Completed together with 93655, 93657 and 93659, near Nerlokh [54.1, 87.7]
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(93659, {	-- Completed together with 93655, 93657 and 93658, near Nerlokh [54.1, 87.7]
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });
