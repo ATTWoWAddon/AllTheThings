@@ -49,7 +49,7 @@ jobs:
       - name: Build Lua 5.1.5 for the example checks
         run: |
           $archive = Join-Path $env:RUNNER_TEMP 'lua-5.1.5.tar.gz'
-          curl.exe --fail --location --retry 3 https://www.lua.org/ftp/lua-5.1.5.tar.gz --output $archive
+          curl.exe --fail --location --retry 3 --retry-all-errors --connect-timeout 20 --max-time 60 --retry-max-time 180 https://www.lua.org/ftp/lua-5.1.5.tar.gz --output $archive
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           $expected = '2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333'
           if ((Get-FileHash $archive -Algorithm SHA256).Hash -ne $expected) { throw 'Unexpected Lua source digest' }
