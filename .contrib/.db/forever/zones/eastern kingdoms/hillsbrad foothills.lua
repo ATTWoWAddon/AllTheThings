@@ -914,6 +914,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				races = HORDE_ONLY,
 				lvl = 19,
 				groups = {
+					objective(1, {	-- 0/1 Western vial placed
+						coord = { 42.0, 30.0, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+					objective(2, {	-- 0/1 Northern vial placed
+						coord = { 71.0, 29.0, MAP.HILLSBRAD_FOOTHILLS },
+					}),
+					objective(3, {	-- 0/1 Southern vial placed
+						coord = { 73.0, 72.0, MAP.HILLSBRAD_FOOTHILLS },
+					}),
 					i(281294),	-- Expended Apothecary Vial
 					i(281293),	-- Weathered Deathstalker's Blade
 				},
