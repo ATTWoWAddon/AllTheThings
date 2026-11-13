@@ -523,6 +523,7 @@ HeaderAssignments = {
 	["Reliquary of Opulence"] = -377,
 	["Remix: Legion"] = -104,
 	["Remix: Mists of Pandaria"] = -105,
+	["Remix: Wrath of the Lich King"] = -822,
 	["Remote Zones"] = -721,
 	["Renown"] = -170,
 	["Renown 2: Moth Watching I"] = -739,
@@ -801,4 +802,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -822
+NextHeaderID = -823
