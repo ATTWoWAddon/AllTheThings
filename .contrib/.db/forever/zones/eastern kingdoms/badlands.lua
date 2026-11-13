@@ -666,6 +666,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 				},
 			}),
+			q(97663, {	-- Supplies and Studies
+				qg = 269647,	-- Mus'hale
+				coord = { 4.2, 46.2, MAP.BADLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/1 Mus'hale's Stolen Supplies
+						provider = { "i", 278515 },	-- Mus'hale's Stolen Supplies
+						crs = {
+							2715,	-- Dustbelcher Brute
+							2701,	-- Dustbelcher Ogre
+						},
+					}),
+					objective(2, {	-- 0/1 Small rock rubbing
+						provider = { "o", 668003 },	-- Etched Stone
+						coords = {
+							{ 31.5, 61.1, MAP.BADLANDS },
+							{ 31.8, 61.9, MAP.BADLANDS },
+						},
+					}),
+					objective(3, {	-- 0/1 Large rock rubbing
+						provider = { "o", 668004 },	-- Etched Stone
+						coords = {
+							{ 27.9, 60.8, MAP.BADLANDS },
+							{ 28.4, 59.9, MAP.BADLANDS },
+							{ 28.6, 59.9, MAP.BADLANDS },
+							{ 28.9, 60.6, MAP.BADLANDS },
+						},
+					}),
+				},
+			}),
 			q(692, {	-- The Lost Fragments
 				sourceQuest = 687,	-- Theldurin the Lost
 				qg = 2785,	-- Theldurin the Lost
