@@ -1,10 +1,14 @@
 using PhaseExplorer.Core;
 
 static void Check(bool condition, string message) { if (!condition) throw new Exception(message); }
+await VerifyWrappedInstanceRoots();
+if (args.Contains("--synthetic-only", StringComparer.Ordinal)) return;
 string root = args.Length == 0 ? Directory.GetCurrentDirectory() : Path.GetFullPath(args[0]);
 var index = await ProjectIndex.LoadAsync(root);
 Check(index.Files.Count > 6, "Discovery must not use a fixed six-case catalog");
 string basePath = Path.Combine(".contrib", "phase-examples", "evolution");
+await VerifyNativeSourceRoots(index, basePath);
+if (args.Contains("--native-only", StringComparer.Ordinal)) return;
 string Bwl(string f) => Path.Combine(basePath, "blackwing-lair", "p4", f);
 var bwl = index.GetDetail(Bwl("sod.lua"));
 Check(bwl.Diagnostics.Count == 0, "BWL should parse");
@@ -18,10 +22,17 @@ var gnomer = index.GetDetail(Path.Combine(basePath, "gnomeregan", "p4", "sod.lua
 var zone = gnomer.Nodes.Single(x => x.Label.StartsWith("i(216634)"));
 Check(zone.Bindings.Any(x => x.Key == "gnomeregan.raid10"), "Zone drop should inherit raid scope");
 Check(zone.Bindings.All(x => x.Key != "gnomeregan.dungeon"), "Zone drop must not inherit old dungeon");
+var standardGnomer = index.GetDetail(Path.Combine(basePath, "gnomeregan", "p4", "classic.lua"));
+var standardDungeon = standardGnomer.Nodes.Single(n => RecordKinds.Identity(n.Label) == ("231", "instanceID") && n.Bindings.Any(b => b.Key == "gnomeregan.dungeon"));
+Check(standardDungeon.Bindings.Count(b => b.Key == "gnomeregan.dungeon") == 1, "Structural standard dungeon key occurs once");
+var nativeGnomer = index.GetDetail(Path.Combine(".contrib", ".db", "standard", "01 - Dungeons Raids", "01 - Classic", "Gnomeregan.lua"));
+Check(nativeGnomer.Nodes.All(n => !n.Label.StartsWith("applyclassicphase(")), "Standard Gnomeregan has no invented legacy phase writer");
 var dfc = index.GetDetail(Path.Combine(basePath, "demon-fall-canyon", "p4", "sod.lua"));
 var branch = dfc.Nodes.First(x => x.Label.StartsWith("i(235787)"));
 Check(branch.Bindings.Any(x => x.Key == "dfc.dungeon") && branch.Bindings.Any(x => x.Key == "dfc.ironwood-branch"), "DFC parent and child must both apply");
 string schedule = index.ReadFile(Path.Combine(".contrib", "phase-examples", "schedule.json"));
+foreach (string flavor in new[] { "progression", "era", "anniversary" })
+    Check(Schedule.Resolve(schedule, "gnomeregan.dungeon", flavor, "start").State == "active", "Unphased standard dungeon remains available from start: " + flavor);
 Check(Schedule.Resolve(schedule, "raid.bwl.original", "sod").State == "disabled", "Disabled policy");
 Check(Schedule.Resolve(schedule, "raid.bwl.sod20", "sod").AliasPath.Contains("raid.bwl.common"), "Alias target");
 Check(Schedule.Resolve(schedule, "dfc.dungeon", "sod").State == "unknown", "Unknown is not disabled");
@@ -93,8 +104,11 @@ Check(Schedule.Resolve(index.ScheduleText(profilePolicy[0]), "raid.bwl.common", 
 Console.WriteLine("PASS — compiled Lua and expanded profile policies resolved from their own source.");
 
 // Complete-instance and transition coverage supplements the compact examples above.
-Check(heads.Single(n => n.Location.Line == 426).Bindings.Any(b => b.Key == "raid.bwl.original"), "BWL original source occurrence");
-Check(heads.Single(n => n.Location.Line == 1057).Bindings.Any(b => b.Key == "raid.bwl.sod20"), "BWL rework source occurrence");
+var originalHead = heads.Single(n => n.Bindings.Any(b => b.Key == "raid.bwl.original"));
+var reworkedHead = heads.Single(n => n.Bindings.Any(b => b.Key == "raid.bwl.sod20"));
+CheckSourceSpan(index, originalHead, "i(19002");
+CheckSourceSpan(index, reworkedHead, "i(19002");
+Check(originalHead.Location.Offset != reworkedHead.Location.Offset, "BWL routes keep separate current source spans");
 Check(gnomer.Nodes.Where(n => n.Label.StartsWith("i(216661)")).All(n => n.Bindings.Any(b => b.Key == "gnomeregan.raid10") && n.Bindings.All(b => b.Key != "gnomeregan.dungeon")), "Second Gnomeregan zone drop is outside the old dungeon");
 var aq = index.GetDetail(Path.Combine(basePath, "temple-of-ahnqiraj", "p4", "sod.lua"));
 var bases = aq.Nodes.Where(n => n.Label.StartsWith("record itemID=22734")).ToList();
@@ -106,11 +120,16 @@ var dm = index.GetDetail(Path.Combine(basePath, "dire-maul", "p4", "sod.lua"));
 Check(dm.Nodes.Single(n => n.Label.StartsWith("i(21982)")).Bindings.Select(b => b.Key).ToHashSet().IsSupersetOf(["dire-maul.common", "dire-maul.dungeon-set-2"]), "Dire Maul item inherits both scopes");
 foreach (string stageName in new[] { "p2.1", "p2.2", "p3" })
 {
-    var contextStage = Relations.Contexts(index, Path.Combine(basePath, "blackwing-lair", stageName, "1.6 Blackwing Lair.lua"));
-    Check(contextStage.Single().Stage == stageName.ToUpperInvariant(), "Migration manifest stage " + stageName);
+    foreach (string alternative in new[] { "standard", "sod" })
+    {
+        var contextStage = Relations.Contexts(index, Path.Combine(basePath, "blackwing-lair", stageName, alternative + ".lua"));
+        Check(contextStage.Single().Stage == stageName.ToUpperInvariant(), "Migration manifest stage " + stageName);
+        Check(Path.GetFileName(contextStage[0].Location.File) == alternative + ".migration.json", "Stage comes from the selected alternative's declared control");
+    }
 }
 var bwlConsumers = await index.FindSourceReferencesAsync(Bwl("sod.lua"));
 Check(bwlConsumers.Any(r => r.Location.File == Bwl("selection.json")) && bwlConsumers.Any(r => r.Location.File == Bwl("migration.json")), "Real BWL source links back to its selection and migration consumers");
+VerifySourceStages(index, basePath);
 Console.WriteLine("PASS — all six complete instances and migration stages verified.");
 
 string regressionRoot = Path.Combine(Path.GetTempPath(), "phase-explorer-regressions-" + Guid.NewGuid().ToString("N"));
@@ -216,5 +235,124 @@ if (args.Length > 1 && args[1] == "--benchmark")
         var watch = System.Diagnostics.Stopwatch.StartNew();
         var detail = index.GetDetail(file);
         Console.WriteLine($"BENCHMARK — {file}: {detail.Nodes.Count:N0} nodes, {detail.Diagnostics.Count} diagnostics, {watch.Elapsed.TotalSeconds:F2}s; managed memory {GC.GetTotalMemory(false) / 1024 / 1024:N0} MiB.");
+    }
+}
+
+static async Task VerifyWrappedInstanceRoots()
+{
+    string temporary = Path.Combine(Path.GetTempPath(), "phase-explorer-instance-roots-" + Guid.NewGuid().ToString("N"));
+    Directory.CreateDirectory(temporary);
+    try
+    {
+        File.WriteAllText(Path.Combine(temporary, "sod.lua"), """
+instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {
+    progressionKey = "dungeon",
+    groups = {
+        i(9, { progressionKey = "child" }),
+        { itemID = 10 },
+    },
+}))
+i(2784)
+n(2784)
+""");
+        File.WriteAllText(Path.Combine(temporary, "standard.lua"), "inst(2784, {})");
+        File.WriteAllText(Path.Combine(temporary, "unlisted.lua"), "inst(1, {})");
+        File.WriteAllText(Path.Combine(temporary, "sod.migration.json"), "{\"defaultStage\":\"P1\",\"cohorts\":[{\"stage\":\"P3\",\"sources\":[\"./sod.lua\"]}]}");
+        File.WriteAllText(Path.Combine(temporary, "standard.migration.json"), "{\"defaultStage\":\"P2.1\",\"cohorts\":[{\"stage\":\"P2.2\",\"sources\":[\"standard.lua\"]}]}");
+        var index = await ProjectIndex.LoadAsync(temporary);
+        var detail = index.GetDetail("sod.lua");
+        Check(detail.Diagnostics.Count == 0, "Phase-wrapped instance root parses");
+        var root = detail.Nodes.Single(n => n.Label.StartsWith("instanceroot(2784)"));
+        Check(RecordKinds.Identity(root.Label) == ("2784", "instanceID"), "instanceroot identifies an instance record");
+        Check(root.Bindings.Select(b => b.Key).ToHashSet().SetEquals(["legacy:SOD_PHASE_FOUR", "dungeon"]), "Wrapped root owns its phase and parent progression key");
+        Check(root.Bindings.All(b => b.Authored), "Wrapped root fields retain authored locations");
+        var child = detail.Nodes.Single(n => n.Label.StartsWith("i(9)"));
+        Check(child.Bindings.Select(b => b.Key).ToHashSet().SetEquals(["legacy:SOD_PHASE_FOUR", "dungeon", "child"]), "Wrapped instance and child scopes remain additive");
+        var sibling = detail.Nodes.Single(n => n.Label.StartsWith("record itemID=10"));
+        Check(sibling.Bindings.Any(b => b.Key == "dungeon") && sibling.Bindings.All(b => b.Key != "child"), "Sibling record does not inherit the child key");
+        var references = await index.FindTypedReferencesAsync("2784", domain: "instanceID");
+        Check(references.Count == 2 && references.All(r => r.Kind == "Instance occurrence"), "Instance roots and standard records exclude colliding item and NPC IDs");
+        Check(Relations.Contexts(index, "sod.lua").Single().Stage == "P3", "Named SoD control resolves its explicit relative cohort");
+        Check(Relations.Contexts(index, "standard.lua").Single().Stage == "P2.2", "Named standard control remains independent of SoD");
+        Check(Relations.Contexts(index, "unlisted.lua").Count == 0, "Named controls do not apply to an unrelated source");
+        Console.WriteLine("PASS — wrapped standalone instance identities and additive root/child scopes verified.");
+    }
+    finally { Directory.Delete(temporary, true); }
+}
+
+static void CheckSourceSpan(ProjectIndex index, SourceNode node, string prefix)
+{
+    string text = index.ReadFile(node.Location.File);
+    Check(text.AsSpan(node.Location.Offset).StartsWith(prefix), "Occurrence points at its current source constructor");
+    int line = 1 + text.AsSpan(0, node.Location.Offset).Count('\n');
+    int lineStart = text.LastIndexOf('\n', Math.Max(0, node.Location.Offset - 1)) + 1;
+    Check(node.Location.Line == line && node.Location.Column == node.Location.Offset - lineStart + 1, "Occurrence line and column match its current exact source span");
+}
+
+static async Task VerifyNativeSourceRoots(ProjectIndex index, string evolution)
+{
+    string manifestFile = Path.Combine(evolution, "full-source", "sources.json");
+    using var manifest = System.Text.Json.JsonDocument.Parse(index.ReadFile(manifestFile));
+    var entries = manifest.RootElement.GetProperty("sources").EnumerateArray().ToList();
+    Check(entries.Count == 11 && entries.Count(e => e.GetProperty("alternative").GetString() == "standard") == 5, "Source catalog contains five standard and six standalone SoD alternatives");
+    Dictionary<string, string> instanceIds = new() { ["blackwing-lair"] = "742", ["blackrock-depths"] = "228", ["demon-fall-canyon"] = "2784", ["dire-maul"] = "230", ["temple-of-ahnqiraj"] = "744", ["gnomeregan"] = "231" };
+    var metadata = index.GetDetail(manifestFile);
+    for (int i = 0; i < entries.Count; i++)
+    {
+        var entry = entries[i];
+        string caseName = entry.GetProperty("case").GetString()!;
+        string alternative = entry.GetProperty("alternative").GetString()!;
+        string sourceFile = entry.GetProperty("source").GetString()!.Replace('/', Path.DirectorySeparatorChar);
+        string p1File = Path.Combine(evolution, caseName, "p1", alternative + ".lua");
+        var native = index.GetDetail(sourceFile);
+        Check(native.Diagnostics.Count == 0, "Canonical source parses: " + sourceFile);
+        var roots = native.Nodes.Where(n => RecordKinds.Identity(n.Label) == (instanceIds[caseName], "instanceID")).ToList();
+        Check(roots.Count > 0, "Canonical alternative has its declared instance identity: " + sourceFile);
+        foreach (var root in roots) CheckSourceSpan(index, root, alternative == "sod" ? "instanceroot(" : "inst(");
+        var saved = index.GetDetail(p1File);
+        Check(saved.Nodes.Count(n => RecordKinds.Identity(n.Label) == (instanceIds[caseName], "instanceID")) == roots.Count, "P1 snapshot preserves every version-guarded instance occurrence");
+        if (caseName == "blackwing-lair")
+        {
+            int expected = alternative == "sod" ? 2 : 1;
+            Check(native.Nodes.Count(n => n.Label.StartsWith("i(19002)")) == expected, "Canonical BWL alternative retains its own acquisition-route count");
+            Check(saved.Nodes.Count(n => n.Label.StartsWith("i(19002)")) == expected, "P1 BWL alternative keeps the same acquisition-route count");
+        }
+        var fileNode = metadata.Nodes.Single(n => n.Location.Pointer == $"/sources/{i}/file");
+        Check(Relations.Outgoing(index, fileNode).Single().Location.File == sourceFile, "Provenance file link selects the exact production root");
+        var snapshotNode = metadata.Nodes.Single(n => n.Location.Pointer == $"/sources/{i}/snapshotFile");
+        Check(Relations.Outgoing(index, snapshotNode).Single().Location.File == p1File, "Provenance snapshot link selects the matching P1 alternative");
+    }
+    string sodBwl = entries.Single(e => e.GetProperty("case").GetString() == "blackwing-lair" && e.GetProperty("alternative").GetString() == "sod").GetProperty("source").GetString()!.Replace('/', Path.DirectorySeparatorChar);
+    int bwlEntry = entries.FindIndex(e => e.GetProperty("case").GetString() == "blackwing-lair" && e.GetProperty("alternative").GetString() == "sod");
+    var consumers = await index.FindSourceReferencesAsync(sodBwl);
+    Check(consumers.Any(r => r.Location.File == manifestFile && r.Location.Pointer == $"/sources/{bwlEntry}/file"), "Standalone production source links back to its exact provenance entry");
+    Check(!index.Files.Any(f => f.RelativePath == Path.Combine(evolution, "demon-fall-canyon", "p1", "standard.lua")), "DFC has no invented standard alternative");
+    Console.WriteLine("PASS — all eleven canonical/P1 alternatives, typed instance roots and exact provenance navigation verified.");
+}
+
+static void VerifySourceStages(ProjectIndex index, string evolution)
+{
+    using var manifest = System.Text.Json.JsonDocument.Parse(index.ReadFile(Path.Combine(evolution, "full-source", "sources.json")));
+    foreach (var entry in manifest.RootElement.GetProperty("sources").EnumerateArray())
+    {
+        string caseName = entry.GetProperty("case").GetString()!;
+        string alternative = entry.GetProperty("alternative").GetString()!;
+        foreach (string stage in new[] { "p1", "p2.1", "p2.2", "p3", "p4" })
+        {
+            var names = stage != "p4" ? new[] { alternative } : alternative == "sod" ? new[] { "sod" } : new[] { "classic", "retail" };
+            foreach (string name in names)
+            {
+                string source = Path.Combine(evolution, caseName, stage, name + ".lua");
+                var context = Relations.Contexts(index, source).Single();
+                Check(context.Stage == stage.ToUpperInvariant(), $"Actual source stage {caseName}/{stage}/{name}");
+                if (stage == "p1") continue;
+                Check(context.Location.Pointer?.EndsWith("/stage", StringComparison.Ordinal) == true, "Stage links to its exact declared cohort");
+                using var control = System.Text.Json.JsonDocument.Parse(index.ReadFile(context.Location.File));
+                string directory = Path.GetDirectoryName(context.Location.File)!;
+                Check(control.RootElement.GetProperty("cohorts").EnumerateArray().Any(cohort =>
+                    cohort.GetProperty("stage").GetString() == context.Stage && cohort.GetProperty("sources").EnumerateArray().Any(value =>
+                        Path.GetFullPath(Path.Combine(index.Root, directory, value.GetString()!)) == Path.GetFullPath(Path.Combine(index.Root, source)))), "Named source alternative owns the selected stage");
+            }
+        }
     }
 }

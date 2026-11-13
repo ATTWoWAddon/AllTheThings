@@ -14,7 +14,7 @@ public static class RecordKinds
         Add("objectID", "Object occurrence", "obj", "o");
         Add("achievementID", "Achievement occurrence", "ach");
         Add("achievementCategoryID", "Achievement category occurrence", "achcat");
-        Add("instanceID", "Instance occurrence", "inst");
+        Add("instanceID", "Instance occurrence", "inst", "instanceroot");
         Add("encounterID", "Encounter occurrence", "e");
         Add("difficultyID", "Difficulty occurrence", "d");
         Add("recipeID", "Recipe occurrence", "recipe", "r");

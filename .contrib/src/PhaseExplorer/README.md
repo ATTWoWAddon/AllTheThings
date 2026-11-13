@@ -29,6 +29,8 @@ The complete source graph stays in memory while a file is open. In the macOS ARM
 
 Legacy phase calls lead to their constant definitions. New progression keys lead to their flavor's schedule. **Stage** identifies the migration control that applies to the selected source, so files at different stages can coexist.
 
+The complete examples keep `standard.lua` and `sod.lua` as separate source alternatives. Open the file you want to inspect; changing **Flavor** evaluates its rules and does not merge or replace the source. P2/P3 **Stage** follows the matching `standard.migration.json` or `sod.migration.json`. **Source consumer** also connects each production source and P1 copy to generated `sources.json` provenance.
+
 ### Try Blackwing Lair
 
 Search for `19364` and choose its occurrence in `evolution/blackwing-lair/p4/sod.lua`. Under **Context**, choose `schedule.json` from `.contrib/phase-examples/`; then choose `sod` under **Flavor** and `vanilla.5` under **Milestone**. Its original route inherits `raid.bwl.original`, which is **disabled**. Then search for `230818` in the same file: the reworked route inherits `raid.bwl.sod20`, which opens at `vanilla.5`. Click either timing result to open its declaration.

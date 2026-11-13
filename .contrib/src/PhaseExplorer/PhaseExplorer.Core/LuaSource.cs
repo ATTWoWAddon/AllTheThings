@@ -98,6 +98,17 @@ internal static class LuaSource
             // Direct table keys belong to their constructor; the table still retains its own occurrence.
             var directKeys = tables.Values.Where(t => layout.Parents.ContainsKey(t.TokenIndex))
                 .GroupBy(t => layout.Parents[t.TokenIndex]).ToDictionary(g => g.Key, g => g.SelectMany(t => t.Keys).ToList());
+            // applyclassicphase returns the supplied record table. A constructor
+            // receiving that wrapped table owns its keys as well as its phase.
+            Dictionary<int, List<Key>> wrappedKeys = [];
+            foreach (var wrapper in calls.Where(c => tokens[c.TokenIndex].Text == "applyclassicphase"))
+            {
+                if (!layout.Parents.TryGetValue(wrapper.TokenIndex + 1, out int parent) || parent == 0 ||
+                    tokens[parent].Text != "(" || !RecordKinds.TryConstructor(tokens[parent - 1].Text, out _, out _)) continue;
+                if (!wrappedKeys.TryGetValue(parent, out var keys)) wrappedKeys[parent] = keys = [];
+                keys.AddRange(wrapper.Keys);
+                if (directKeys.TryGetValue(wrapper.TokenIndex + 1, out var tableKeys)) keys.AddRange(tableKeys);
+            }
             List<SourceNode> nodes = [];
             Stack<Span> ancestors = new();
             string Identity(Span span) => $"{file}:{span.Start}:{span.End}:{span.TokenIndex}";
@@ -116,6 +127,9 @@ internal static class LuaSource
                     bindings.Add(new(key.Value, lines.Location(key.Offset, key.Value.Length), key.Guard.Text, true));
                 if (directKeys.TryGetValue(span.TokenIndex + 1, out var owned))
                     foreach (var key in owned)
+                        bindings.Add(new(key.Value, lines.Location(key.Offset, key.Value.Length), key.Guard.Text, true));
+                if (wrappedKeys.TryGetValue(span.TokenIndex + 1, out var wrapped))
+                    foreach (var key in wrapped)
                         bindings.Add(new(key.Value, lines.Location(key.Offset, key.Value.Length), key.Guard.Text, true));
                 string label = span.Label;
                 string? metadata = MetadataAncestor(layout.Tables[span.TokenIndex], layout);

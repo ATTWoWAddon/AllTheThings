@@ -9,44 +9,72 @@ public static class Relations
 {
     public static IReadOnlyList<SourceContext> Contexts(ProjectIndex index, string source)
     {
-        List<SourceContext> result = []; string? directory = Path.GetDirectoryName(source);
+        string? directory = Path.GetDirectoryName(source);
+        string namedControl = Path.GetFileNameWithoutExtension(source) + ".migration.json";
         while (directory != null)
         {
-            string control = Path.Combine(directory, "migration.json");
-            if (index.Files.Any(x => x.RelativePath == control))
+            var controls = index.Files.Select(f => f.RelativePath).Where(path =>
+                Path.GetDirectoryName(path) == directory &&
+                (Path.GetFileName(path) == "migration.json" || path.EndsWith(".migration.json", StringComparison.OrdinalIgnoreCase)))
+                .OrderByDescending(path => Path.GetFileName(path) == namedControl).ToList();
+            List<SourceContext> matches = [], defaults = [];
+            foreach (string control in controls)
             {
                 try
                 {
-                    string text = index.ReadFile(control); using var doc = JsonDocument.Parse(text); string? selected = null;
-                    foreach (var cohort in doc.RootElement.GetProperty("cohorts").EnumerateArray())
+                    using var document = JsonDocument.Parse(index.ReadFile(control));
+                    var root = document.RootElement;
+                    if (root.TryGetProperty("cohorts", out var cohorts))
                     {
-                        if (!cohort.TryGetProperty("sources", out var sources)) continue;
-                        bool match = sources.EnumerateArray().Any(s =>
+                        int cohortIndex = 0;
+                        foreach (var cohort in cohorts.EnumerateArray())
                         {
-                            string? value = s.GetString();
-                            if (value == null) return false;
-                            return Path.GetFullPath(Path.Combine(index.Root, directory, value)) == Path.GetFullPath(Path.Combine(index.Root, source));
-                        });
-                        if (match) { selected = cohort.GetProperty("stage").GetString(); break; }
+                            bool applies = cohort.TryGetProperty("sources", out var sources) && sources.EnumerateArray().Any(value =>
+                                value.ValueKind == JsonValueKind.String && SameSource(index, directory, value.GetString()!, source));
+                            if (applies)
+                            {
+                                string? stage = cohort.GetProperty("stage").GetString();
+                                if (stage != null) matches.Add(Context(index, control, stage, $"/cohorts/{cohortIndex}/stage"));
+                            }
+                            cohortIndex++;
+                        }
                     }
-                    selected ??= doc.RootElement.TryGetProperty("defaultStage", out var defaultStage) ? defaultStage.GetString() : null;
-                    if (selected != null)
-                    {
-                        int at = Math.Max(0, text.IndexOf(JsonSerializer.Serialize(selected), StringComparison.Ordinal));
-                        string authority = selected switch { "P1" or "P2.1" => "legacy", "P2.2" => "legacy (shadow comparison)", "P3" => "policy (legacy golden comparison)", "P4" => "policy", _ => "unspecified" };
-                        result.Add(new(selected, SourceTools.Location(control, text, at, selected.Length + 2), authority));
-                    }
-                    return result;
+                    if ((Path.GetFileName(control) == "migration.json" || Path.GetFileName(control) == namedControl) &&
+                        root.TryGetProperty("defaultStage", out var defaultStage) && defaultStage.GetString() is string fallback)
+                        defaults.Add(Context(index, control, fallback, "/defaultStage"));
                 }
-                catch (Exception ex) when (ex is JsonException or InvalidOperationException or KeyNotFoundException or IOException or ArgumentException) { return result; }
+                catch (Exception error) when (error is JsonException or InvalidOperationException or KeyNotFoundException or IOException or ArgumentException) { }
             }
+            if (matches.Count > 0) return matches;
+            if (defaults.Count > 0) return [defaults[0]];
             if (directory.Length == 0) break;
             directory = Path.GetDirectoryName(directory) ?? "";
         }
-        using var reader = new StreamReader(index.FullPath(source)); string? first = reader.ReadLine();
-        if (first != null && System.Text.RegularExpressions.Regex.IsMatch(first, @"^--\s*P1\b"))
-            result.Add(new("P1", new(source, 1, 1, 0, first.Length), "legacy (source header)"));
-        return result;
+        using var reader = new StreamReader(index.FullPath(source));
+        string? first = reader.ReadLine();
+        return first != null && System.Text.RegularExpressions.Regex.IsMatch(first, @"^--\s*P1\b")
+            ? [new("P1", new(source, 1, 1, 0, first.Length), "legacy (source header)")] : [];
+    }
+
+    private static bool SameSource(ProjectIndex index, string directory, string relative, string source)
+    {
+        var comparison = OperatingSystem.IsWindows() ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
+        return string.Equals(Path.GetFullPath(Path.Combine(index.Root, directory, relative)),
+            Path.GetFullPath(Path.Combine(index.Root, source)), comparison);
+    }
+
+    private static SourceContext Context(ProjectIndex index, string control, string stage, string pointer)
+    {
+        var location = index.GetDetail(control).Nodes.First(n => n.Location.Pointer == pointer).Location;
+        string authority = stage switch
+        {
+            "P1" or "P2.1" => "legacy",
+            "P2.2" => "legacy (shadow comparison)",
+            "P3" => "policy (legacy golden comparison)",
+            "P4" => "policy",
+            _ => "unspecified"
+        };
+        return new(stage, location, authority);
     }
 
     public static IReadOnlyList<Relation> Selections(ProjectIndex index, string source)

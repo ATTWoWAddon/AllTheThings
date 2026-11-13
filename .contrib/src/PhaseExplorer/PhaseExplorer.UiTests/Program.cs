@@ -34,23 +34,28 @@ static async Task VerifyProjectControls(string root)
     Check(controls.Status.Text?.Contains("maximum 500") == true, "Search must disclose its result limit");
 
     const string bwl = "evolution/blackwing-lair/p4/sod.lua";
-    await SelectHit(controls, bwl, 426);
+    var index = await ProjectIndex.LoadAsync(root);
+    string bwlFile = index.Files.Single(f => f.RelativePath.Replace('\\', '/').EndsWith(bwl, StringComparison.Ordinal)).RelativePath;
+    var heads = index.GetDetail(bwlFile).Nodes.Where(n => n.Label.StartsWith("i(19002)")).ToList();
+    var expectedOriginal = heads.Single(n => n.Bindings.Any(b => b.Key == "raid.bwl.original"));
+    var expectedRework = heads.Single(n => n.Bindings.Any(b => b.Key == "raid.bwl.sod20"));
+    await SelectHit(controls, bwl, expectedOriginal.Location.Line);
     await Until(() => Rows(controls.Relations).Any(x => x.Contains("raid.bwl.original")), "original route bindings", controls);
     Check(controls.Source.IsReadOnly, "Source viewer must stay read-only");
     Check(controls.Source.SelectionEnd > controls.Source.SelectionStart, "Search result must select source text");
     var original = (SourceNode)((TreeViewItem)controls.Tree.SelectedItem!).Tag!;
-    Check(original.Label.StartsWith("i(19002)") && original.Location.Line == 426, "Search must select the original acquisition occurrence");
+    Check(original.Label.StartsWith("i(19002)") && original.Location == expectedOriginal.Location, "Search must select the original acquisition occurrence");
     await ChooseSchedule(controls, ".contrib/phase-examples/schedule.json", "sod", "vanilla.5");
     await Until(() => Rows(controls.Relations).Any(x => x.Contains("sod: disabled")), "original disabled policy", controls);
     Check(!Rows(controls.Relations).Any(x => x.StartsWith("Inherited AND:") && x.Contains("raid.bwl.sod20")), "Original route must not inherit the rework");
 
-    await SelectHit(controls, bwl, 1057);
+    await SelectHit(controls, bwl, expectedRework.Location.Line);
     await Until(() => Rows(controls.Relations).Any(x => x.Contains("raid.bwl.sod20")), "rework route bindings", controls);
     var rework = (SourceNode)((TreeViewItem)controls.Tree.SelectedItem!).Tag!;
     Check(rework.Id != original.Id && rework.Label.StartsWith("i(19002)"), "Identical game IDs need distinct source occurrences");
     Check(!Rows(controls.Relations).Any(x => x.StartsWith("Inherited AND:") && x.Contains("raid.bwl.original")), "Rework route must not inherit the original");
     Check(!Rows(controls.Relations).Any(x => x.StartsWith("Policy candidate:")), "Timing details must not bury bindings under every alternate context");
-    Check(controls.Results.SelectedItem?.ToString()?.StartsWith("blackwing-lair/p4 · sod.lua:1057") == true, "Search labels must show case and stage before the filename");
+    Check(controls.Results.SelectedItem?.ToString()?.StartsWith($"blackwing-lair/p4 · sod.lua:{expectedRework.Location.Line}") == true, "Search labels must show case and stage before the filename");
     Check(AncestorsExpanded(controls.Tree, rework), "Source navigation must reveal the selected tree occurrence");
 
     string? captureDirectory = Environment.GetEnvironmentVariable("PHASE_EXPLORER_UI_REPORTS");
@@ -65,7 +70,25 @@ static async Task VerifyProjectControls(string root)
     controls.Window.Height = 600;
     controls.Window.UpdateLayout();
     Check(controls.Context.Bounds.Width > 0 && controls.Milestone.Bounds.Width > 0, "Selectors must remain laid out at the minimum window size");
-    Console.WriteLine("PASS actual controls: discovery, typed input, search, source selection, expanded navigation, context/flavor/milestone and distinct BWL routes");
+    const string productionDfc = ".contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua";
+    object dfcFile = controls.Files.ItemsSource!.Cast<object>().Single(item =>
+        item.GetType().GetProperty("Path")!.GetValue(item)!.ToString()!.Replace('\\', '/') == productionDfc);
+    string provenanceFile = Path.Combine(root, ".contrib", "phase-examples", "evolution", "full-source", "sources.json");
+    using var provenanceDocument = System.Text.Json.JsonDocument.Parse(File.ReadAllText(provenanceFile));
+    var sourceEntries = provenanceDocument.RootElement.GetProperty("sources").EnumerateArray().ToList();
+    string provenancePointer = $"/sources/{sourceEntries.FindIndex(entry => entry.GetProperty("case").GetString() == "demon-fall-canyon" && entry.GetProperty("alternative").GetString() == "sod")}/file";
+    controls.Files.SelectedItem = dfcFile;
+    await Until(() => controls.Detail?.Nodes.Any(n => n.Location.File.Replace('\\', '/') == productionDfc && n.Label.StartsWith("instanceroot(2784)")) == true, "standalone production root file", controls);
+    controls.Window.UpdateLayout();
+    var instanceRoot = TreeItems(controls.Tree.Items).Single(item => item.Tag is SourceNode node && node.Label.StartsWith("instanceroot(2784)"));
+    controls.Tree.SelectedItem = instanceRoot;
+    await Until(() => controls.Selected.Text?.StartsWith("instanceroot(2784)") == true, "typed standalone instance selection", controls);
+    await Until(() => RelationLocations(controls.Relations).Any(location => location.File.Replace('\\', '/').EndsWith("full-source/sources.json", StringComparison.Ordinal) && location.Pointer == provenancePointer), "production source provenance consumer", controls);
+    Check(!Rows(controls.Relations).Any(row => row.StartsWith("Used by (Item occurrence):") || row.StartsWith("Used by (NPC occurrence):")), "Instance root does not claim other numeric ID domains");
+    object provenance = controls.Relations.ItemsSource!.Cast<object>().Single(row => RelationLocation(row)?.Pointer == provenancePointer);
+    controls.Relations.SelectedItem = provenance;
+    await Until(() => controls.Tree.SelectedItem is TreeViewItem { Tag: SourceNode node } && node.Location.Pointer == provenancePointer, "exact provenance entry navigation", controls);
+    Console.WriteLine($"PASS actual controls: current BWL route spans {expectedOriginal.Location.Line}/{expectedRework.Location.Line}, typed standalone roots and exact production provenance navigation");
 }
 
 static async Task VerifyArbitrarySources()
@@ -139,8 +162,8 @@ inst(1, { progressionKey = "parent", groups = {
 static async Task VerifyLargeJsonControls(string root)
 {
     using var controls = await Open(root);
-    const int expectedNodes = 1_912_700;
     const string suffix = ".contrib/.db/standard/00 - Item DB/itemDB.json";
+    int expectedNodes = await Task.Run(() => CountJsonNodes(Path.Combine(root, suffix.Replace('/', Path.DirectorySeparatorChar))));
     object file = controls.Files.ItemsSource!.Cast<object>().Single(item =>
         item.GetType().GetProperty("Path")!.GetValue(item)!.ToString()!.Replace('\\', '/').EndsWith(suffix, StringComparison.Ordinal));
     long before = Process.GetCurrentProcess().WorkingSet64;
@@ -163,6 +186,23 @@ static async Task<Controls> Open(string root)
     controls.Window.Show();
     await Until(() => Count(controls.Files.ItemsSource) > 0, "folder discovery", controls);
     return controls;
+}
+
+static int CountJsonNodes(string file)
+{
+    // Count properties and array values independently of the source graph parser.
+    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(File.ReadAllText(file));
+    var reader = new System.Text.Json.Utf8JsonReader(bytes);
+    var stack = new Stack<System.Text.Json.JsonTokenType>();
+    int nodes = 0;
+    while (reader.Read())
+    {
+        var token = reader.TokenType;
+        if (token is System.Text.Json.JsonTokenType.EndArray or System.Text.Json.JsonTokenType.EndObject) { stack.Pop(); continue; }
+        if (token == System.Text.Json.JsonTokenType.PropertyName || (stack.TryPeek(out var parent) && parent == System.Text.Json.JsonTokenType.StartArray)) nodes++;
+        if (token is System.Text.Json.JsonTokenType.StartArray or System.Text.Json.JsonTokenType.StartObject) stack.Push(token);
+    }
+    return nodes;
 }
 
 static async Task Search(Controls controls, string text, bool verifyInput = false)
