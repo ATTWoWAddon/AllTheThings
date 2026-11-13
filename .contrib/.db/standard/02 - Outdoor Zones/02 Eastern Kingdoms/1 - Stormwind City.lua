@@ -2585,7 +2585,14 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 							{ "i",  57246 },	-- Confectioners' Sugar
 							{ "o", 203801 },	-- Sack of Confectioner's Sugar
 						},
-						coord = { 77.6, 53.2, STORMWIND_CITY },
+						coords = {
+							{ 66.5, 31.3, STORMWIND_CITY },
+							{ 77.6, 53.2, STORMWIND_CITY },
+							{ 64.8, 71.1, STORMWIND_CITY },
+							{ 43.7, 72.9, STORMWIND_CITY },
+							{ 41.6, 81.5, STORMWIND_CITY },
+							{ 51.1, 96.5, STORMWIND_CITY },
+						},
 					}),
 					COOKING_AWARD,
 				},

@@ -1648,15 +1648,16 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 		}),
 		n(97012, {	-- Wanda Chanter <Wands>
 			coord = { 48.6, 73.8, LEGION_DALARAN },
-			sym = {
-				{"sub", "common_vendor", 28994},	-- Wanda Chanter (Dalaran Northrend)
-			},
+			sym = { { "sub", "common_vendor", 28994 } },	-- Wanda Chanter (Dalaran Northrend)
 		}),
 		n(107109, {	-- Xur'ios <Vaultkeeper of the Void>
 			coord = { 48.8, 13.5, LEGION_DALARAN },
 			groups = {
 				i(141713, {	-- Arcadian War Turtle (MOUNT!)
 					cost = { { "c", 1275, 150 } },	-- 150x Curious Coin
+				}),
+				i(141861, {	-- Boon of the Nether
+					cost = { { "c", 1275, 50 } },	-- 50x Curious Coin
 				}),
 				i(136702, {	-- Formula: Soul Fibril (RECIPE!)
 					cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
@@ -1667,10 +1668,10 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 				i(141862, {	-- Mote of Light (TOY!)
 					cost = { { "c", 1275, 50 } },	-- 50x Curious Coin
 				}),
-				i(136699, {	-- Plans: Flamespike (RECIPE!)
+				i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
 					cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 				}),
-				i(137935, {	-- Pattern: Leather Love Seat (RECIPE!)
+				i(136699, {	-- Plans: Flamespike (RECIPE!)
 					cost = { { "c", 1275, 1 } },	-- 1x Curious Coin
 				}),
 				i(137727, {	-- Schematic: Mecha-Bond Imprint Matrix (RECIPE!)

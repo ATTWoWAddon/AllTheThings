@@ -61,6 +61,8 @@ local THE_FROSTWING_HALLS = createHeader({
 	},
 });
 
+local PRIMORDIAL_SARONITE = 49908;
+
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(758, {	-- Icecrown Citadel
 		mapID = ICECROWN_CITADEL,
@@ -98,7 +100,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								coord = { 75.9, 20.8, DRAGONBLIGHT },
 							}),
 							objective(2, {	-- 0/25 Primordial Saronite
-								provider = { "i", 49908 },	-- Primordial Saronite
+								provider = { "i", PRIMORDIAL_SARONITE },
 							}),
 							objective(3, {	-- 0/1 Festergut's Acidic Blood
 								provider = { "i", 50226 },	-- Festergut's Acidic Blood
@@ -111,9 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					q(24743, {	-- Shadow's Edge
 						sourceQuest = 24545,	-- The Sacred and the Corrupt
 						qg = 37120,	-- Highlord Darion Mograine
-						groups = {
-							i(49888),	-- Shadow's Edge
-						},
+						groups = { i(49888) },	-- Shadow's Edge
 					}),
 					q(24547, {	-- A Feast of Souls
 						sourceQuest = 24743,	-- Shadow's Edge
@@ -178,8 +178,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						sourceQuest = 24548,	-- The Splintered Throne
 						qg = 37120,	-- Highlord Darion Mograine
 						groups = {
-							i(49623),	-- Shadowmourne
 							ach(4623, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }),	-- Shadowmourne
+							i(49623),	-- Shadowmourne
 						},
 					}),
 					q(24748, {	-- The Lich King's Last Stand
@@ -209,7 +209,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						description = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
 						sourceQuest = 24914,	-- Personal Property
 						qg = 37120,	-- Highlord Darion Mograine
-						cost = { { "i", 51317, 1 } },	-- Alexandros' Soul Shard
+						cost = { { "i", 51317, 1 } },	-- 1x Alexandros' Soul Shard
 						groups = {
 							i(52200, {	-- Crimson Deathcharger (MOUNT!)
 								b = 2,	-- Mounts don't inherently assign themselves as BoE, so the Ignore Filters for BoEs trigger wasn't picking this up.
@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						description = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
 						sourceQuest = 24914,	-- Personal Property
 						qg = 38606,	-- Lady Jaina Proudmoore
-						cost = { { "i", 51318, 1 } },	-- Jaina's Locket
+						cost = { { "i", 51318, 1 } },	-- 1x Jaina's Locket
 						groups = {
 							i(52251, {	-- Jaina's Locket
 								-- #if NOT ANYCLASSIC
@@ -234,28 +234,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						description = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
 						sourceQuest = 24914,	-- Personal Property
 						qg = 38607,	-- Muradin Bronzebeard
-						cost = { { "i", 51319, 1 } },	-- Arthas' Training Sword
-						groups = {
-							i(52201),	-- Muradin's Favor (TOY!)
-						},
+						cost = { { "i", 51319, 1 } },	-- 1x Arthas' Training Sword
+						groups = { i(52201) },	-- Muradin's Favor (TOY!)
 					}),
 					q(24918, {	-- Sylvanas' Vengeance
 						description = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
 						sourceQuest = 24914,	-- Personal Property
 						qg = 38609,	-- Lady Sylvanas Windrunner
-						cost = { { "i", 51321, 1 } },	-- Blood of Sylvanas
-						groups = {
-							i(52253),	-- Sylvanas' Music Box (TOY!)
-						},
+						cost = { { "i", 51321, 1 } },	-- 1x Blood of Sylvanas
+						groups = { i(52253) },	-- Sylvanas' Music Box (TOY!)
 					}),
 					q(24919, {	-- The Lightbringer's Redemption
 						description = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
 						sourceQuest = 24914,	-- Personal Property
 						qg = 38608,	-- Uther the Lightbringer
-						cost = { { "i", 51320, 1 } },	-- Badge of the Silver Hand
-						groups = {
-							i(52252),	-- Tabard of the Lightbringer
-						},
+						cost = { { "i", 51320, 1 } },	-- 1x Badge of the Silver Hand
+						groups = { i(52252) },	-- Tabard of the Lightbringer
 					}),
 				},
 			})),
@@ -364,21 +358,11 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 					groups = {
-						i(50375, {	-- Ashen Band of Courage
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-						i(50377, {	-- Ashen Band of Destruction
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-						i(52569, {	-- Ashen Band of Might
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-						i(50376, {	-- Ashen Band of Vengeance
-							classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						}),
-						i(50378, {	-- Ashen Band of Wisdom
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
+						i(50375, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }),	-- Ashen Band of Courage
+						i(50377, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }),	-- Ashen Band of Destruction
+						i(52569, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }),	-- Ashen Band of Might
+						i(50376, { classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER } }),	-- Ashen Band of Vengeance
+						i(50378, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }),	-- Ashen Band of Wisdom
 					},
 				}),
 				-- Quest Chain: Path of Courage
@@ -387,33 +371,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(50388, {	-- Ashen Band of Greater Courage
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(50388, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Greater Courage
 				}),
 				q(24834, {	-- Path of Courage (Revered)
 					sourceQuest = 24827,	-- Path of Courage (Honored)
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(50403, {	-- Ashen Band of Unmatched Courage
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(50403, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Unmatched Courage
 				}),
 				q(24835, {	-- Path of Courage (Exalted)
 					sourceQuest = 24834,	-- Path of Courage (Revered)
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(50404, {	-- Ashen Band of Endless Courage
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(50404, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Endless Courage
 				}),
 				-- Quest Chain: Path of Destruction
 				q(24828, {	-- Path of Destruction (Honored)
@@ -421,33 +393,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50384, {	-- Ashen Band of Greater Destruction
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50384, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Greater Destruction
 				}),
 				q(24823, {	-- Path of Destruction (Revered)
 					sourceQuest = 24828,	-- Path of Destruction [Honored]
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50397, {	-- Ashen Band of Unmatched Destruction
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50397, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Unmatched Destruction
 				}),
 				q(24829, {	-- Path of Destruction (Exalted)
 					sourceQuest = 24823,	-- Path of Destruction (Revered)
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50398, {	-- Ashen Band of Endless Destruction
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50398, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Endless Destruction
 				}),
 				-- Quest Chain: Path of Might
 				q(25239, {	-- Path of Might (Honored)
@@ -455,33 +415,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(52570, {	-- Ashen Band of Greater Might
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(52570, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Greater Might
 				}),
 				q(25240, {	-- Path of Might [Revered]
 					sourceQuest = 25239,	-- Path of Might [Honored]
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(52571, {	-- Ashen Band of Unmatched Might
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(52571, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Unmatched Might
 				}),
 				q(25242, {	-- Path of Might [Exalted]
 					sourceQuest = 25240,	-- Path of Might [Revered]
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-					groups = {
-						i(52572, {	-- Ashen Band of Endless Might
-							classes = { WARRIOR, PALADIN, DEATHKNIGHT },
-						}),
-					},
+					groups = { i(52572, { classes = { WARRIOR, PALADIN, DEATHKNIGHT } }) },	-- Ashen Band of Endless Might
 				}),
 				-- Quest Chain: Path of Vengeance
 				q(24826, {	-- Path of Vengeance [Honored]
@@ -489,11 +437,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-					groups = {
-						i(50387, {	-- Ashen Band of Greater Vengeance
-							classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						}),
-					},
+					groups = { i(50387, { classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER } }) },	-- Ashen Band of Greater Vengeance
 				}),
 				q(24832, {	-- Path of Vengeance [Revered]
 					sourceQuest = 24826,	-- Path of Vengeance [Honored]
@@ -501,9 +445,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					minReputation = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					groups = {
-						i(50401, {	-- Ashen Band of Unmatched Vengeance
-							classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						}),
+						i(50401, { classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER } }),	-- Ashen Band of Unmatched Vengeance
 					},
 				}),
 				q(24833, {	-- Path of Vengeance [Exalted]
@@ -511,11 +453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-					groups = {
-						i(50402, {	-- Ashen Band of Endless Vengeance
-							classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
-						}),
-					},
+					groups = { i(50402, { classes = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER } }) },	-- Ashen Band of Endless Vengeance
 				}),
 				-- Quest Chain: Path of Wisdom
 				q(24825, {	-- Path of Wisdom [Honored]
@@ -523,33 +461,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50386, {	-- Ashen Band of Greater Wisdom
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50386, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Greater Wisdom
 				}),
 				q(24830, {	-- Path of Wisdom [Revered]
 					sourceQuest = 24825,	-- Path of Wisdom [Honored]
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50399, {	-- Ashen Band of Unmatched Wisdom
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50399, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Unmatched Wisdom
 				}),
 				q(24831, {	-- Path of Wisdom [Exalted]
 					sourceQuest = 24830,	-- Path of Wisdom [Revered]
 					qg = 38316,	-- Ormus the Penitent
 					minReputation = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-					groups = {
-						i(50400, {	-- Ashen Band of Endless Wisdom
-							classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
-						}),
-					},
+					groups = { i(50400, { classes = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER } }) },	-- Ashen Band of Endless Wisdom
 				}),
 				q(24819, {	-- A Change of Heart
 					qg = 39509,	-- Aronen <Apprentice to Ormus>
@@ -942,66 +868,66 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				n(37687, {	-- Alchemist Finklestein
 					i(49959, {	-- Pattern: Bladeborn Leggings (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49958, {	-- Pattern: Blessed Cenarion Boots (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49954, {	-- Pattern: Deathfrost Boots (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49965, {	-- Pattern: Draconic Bonesplinter Legguards (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49963, {	-- Pattern: Earthsoul Boots (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49961, {	-- Pattern: Footpads of Impending Death (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49953, {	-- Pattern: Leggings of Woven Death (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49957, {	-- Pattern: Legwraps of Unleashed Nature (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49962, {	-- Pattern: Lightning-Infused Leggings (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49955, {	-- Pattern: Lightweave Leggings (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49966, {	-- Pattern: Rock-Steady Treads (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49956, {	-- Pattern: Sandals of Consecration (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49974, {	-- Plans: Boots of Kingly Upheaval (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(52023, {	-- Plans: Iceblade Arrow (RECIPE!)
 						timeline = { REMOVED_4_0_1 },
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49973, {	-- Plans: Pillars of Might (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49970, {	-- Plans: Protectors of Life (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 					i(52022, {	-- Plans: Shatter Rounds (RECIPE!)
 						timeline = { REMOVED_4_0_1 },
-						cost = { { "i", 49908, 1 } },	-- 1x Primordial Saronite
+						cost = { { "i", PRIMORDIAL_SARONITE, 1 } },
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
@@ -1061,7 +987,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50987)),	-- Malevolent Girdle
 						emof(95, i(50974)),	-- Meteor Chaser's Raiment
 						emof(50, i(50467)),	-- Might of the Ocean Serpent
-						emof(23, i(49908)),	-- Primordial Saronite
+						emof(23, i(PRIMORDIAL_SARONITE)),
 						emof(60, i(50358)),	-- Purified Lunar Dust
 						emof(50, i(50470)),	-- Recovered Scarlet Onsalught Cape
 						emof(50, i(50466)),	-- Sentinel's Winter Cloak
@@ -1146,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					-- #if BEFORE 4.0.1
 					currency(341),	-- Emblem of Frost
 					-- #endif
-					i(49908, {	-- Primordial Saronite
+					i(PRIMORDIAL_SARONITE, {
 						description = "Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",
 					}),
 				},

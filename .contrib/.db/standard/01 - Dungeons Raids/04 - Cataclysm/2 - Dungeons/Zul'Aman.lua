@@ -61,16 +61,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						}),
 					}),
 					n(VENDORS, {
-						-- #if BEFORE 4.1.0
 						n(52915, {	-- Harald
 							cost = { { "i", 33865, 1 } },	-- Amani Hex Stick
 							groups = {
 								i(33926, {	-- Sealed Scroll Case
+									-- #if BEFORE 4.1.0
 									description = "Can contain profession recipes.",	-- Only applies for the TBC version of Zul'Aman.
+									-- #endif
 								}),
 							},
 						}),
-						-- #endif
 						n(52924, {	-- Vol'jin (Not a Vendor, but a placeholder for information.)
 							description = "To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates.",
 						}),

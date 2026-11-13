@@ -1003,14 +1003,10 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
-			n(145837, {	-- Violet Shadowmend
+			n(145837, {	-- Violet Shadowmend <Gladiator Quartermaster>
 				coord = { 51.6, 57.8, ZULDAZAR },
 				races = HORDE_ONLY,
-				groups = {
-					-- i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
-					-- i(142380),	-- Dutiful Squire (PET!)
-					-- i(139776),	-- Horde Fanatic (PET!)
-				},
+				groups = { i(167862) },	-- Horde Glider Kit
 			}),
 			n(122698, {	-- Xanjo <Leatherworking Trainer>
 				coord = { 44.0, 34.6, DAZARALOR },

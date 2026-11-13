@@ -885,33 +885,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(152509),	-- Siren's Pollen
 			i(152506),	-- Star Moss
 			i(152508),	-- Winter's Kiss
-			i(168487, {timeline = {ADDED_8_2_0}}),	-- Zin'anthid
-			i(168919, {timeline = {ADDED_8_2_0}}),	-- Zin'anthid Tentacle
-			i(169596, {timeline = {ADDED_8_2_0}}),	-- Zin'anthid Tentacle
+			i(168487, { timeline = { ADDED_8_2_0 } }),	-- Zin'anthid
+			i(168919, { timeline = { ADDED_8_2_0 } }),	-- Zin'anthid Tentacle
+			i(169596, { timeline = { ADDED_8_2_0 } }),	-- Zin'anthid Tentacle
 		}),
 	}),
 	prof(INSCRIPTION, {
 		header(HEADERS.Spell, 382984, {	-- Kul Tiras and Zandalar Milling
 			i(153636),	-- Crimson Pigment
+			i(168662, { timeline = { ADDED_8_2_0 } }),	-- Maroon Pigment
 			i(153635),	-- Ultramarine Pigment
 			i(153669),	-- Viridescent Pigment
 		}),
 		filter(GLYPHS, {
-			i(170173, {timeline = {ADDED_8_2_5}}),	-- Glyph of Dire Bees
-			i(172449, {timeline = {ADDED_8_2_5}}),	-- Glyph of Lavish Servings
-			i(170165, {timeline = {ADDED_8_2_0}}),	-- Glyph of Steaming Fury
-			i(166664, {timeline = {ADDED_8_1_0}}),	-- Glyph of Storm's Wake
-			i(184100, {timeline = {ADDED_9_0_1}}),	-- Glyph of the Aerial Chameleon
-			i(184097, {timeline = {ADDED_9_0_1}}),	-- Glyph of the Aquatic Chameleon
-			i(170168, {timeline = {ADDED_8_2_0}}),	-- Glyph of the Cold Waves
-			i(170164, {timeline = {ADDED_8_2_0}}),	-- Glyph of the Dark Depths
-			i(184096, {timeline = {ADDED_9_0_1}}),	-- Glyph of the Swift Chameleon
-			i(166583, {timeline = {ADDED_8_1_0}}),	-- Glyph of the Tides
+			i(170173, { timeline = { ADDED_8_2_5 } }),	-- Glyph of Dire Bees
+			i(172449, { timeline = { ADDED_8_2_5 } }),	-- Glyph of Lavish Servings
+			i(170165, { timeline = { ADDED_8_2_0 } }),	-- Glyph of Steaming Fury
+			i(166664, { timeline = { ADDED_8_1_0 } }),	-- Glyph of Storm's Wake
+			i(184100, { timeline = { ADDED_9_0_1 } }),	-- Glyph of the Aerial Chameleon
+			i(184097, { timeline = { ADDED_9_0_1 } }),	-- Glyph of the Aquatic Chameleon
+			i(170168, { timeline = { ADDED_8_2_0 } }),	-- Glyph of the Cold Waves
+			i(170164, { timeline = { ADDED_8_2_0 } }),	-- Glyph of the Dark Depths
+			i(184096, { timeline = { ADDED_9_0_1 } }),	-- Glyph of the Swift Chameleon
+			i(166583, { timeline = { ADDED_8_1_0 } }),	-- Glyph of the Tides
 			i(162022),	-- Mark of the Dolphin (CI!)
 			i(162029),	-- Mark of the Humble Flyer (CI!)
 			i(162027),	-- Mark of the Tideskipper (CI!)
 		}),
-		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
+		n(DECOR, sharedDataSelf({ timeline = { ADDED_11_2_7 } }, {
 			i(252035),	-- Boralus Barrel (DECOR!)
 			i(252401),	-- Boralus Bookshelf (DECOR!)
 			i(283321, { timeline = { ADDED_12_1_5 } }),	-- Closed Vulpera Scroll (DECOR!)
@@ -925,51 +926,51 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(159940),	-- Honorable Combatant's Etched Vessel [H]
 			i(161934),	-- Inscribed Vessel of Mysticism [A]
 			i(153643),	-- Inscribed Vessel of Mysticism [H]
-			i(167942, {timeline = {ADDED_8_2_0}}),	-- Notorious Combatant's Etched Vessel [A]
-			i(167941, {timeline = {ADDED_8_2_0}}),	-- Notorious Combatant's Etched Vessel [H]
-			i(164697, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Etched Vessel [A]
-			i(164682, {timeline = {ADDED_8_1_0}}),	-- Sinister Combatant's Etched Vessel [H]
-			i(170316, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Etched Vessel [A]
-			i(170317, {timeline = {ADDED_8_3_0}}),	-- Uncanny Combatant's Etched Vessel [H]
+			i(167942, { timeline = { ADDED_8_2_0 } }),	-- Notorious Combatant's Etched Vessel [A]
+			i(167941, { timeline = { ADDED_8_2_0 } }),	-- Notorious Combatant's Etched Vessel [H]
+			i(164697, { timeline = { ADDED_8_1_0 } }),	-- Sinister Combatant's Etched Vessel [A]
+			i(164682, { timeline = { ADDED_8_1_0 } }),	-- Sinister Combatant's Etched Vessel [H]
+			i(170316, { timeline = { ADDED_8_3_0 } }),	-- Uncanny Combatant's Etched Vessel [A]
+			i(170317, { timeline = { ADDED_8_3_0 } }),	-- Uncanny Combatant's Etched Vessel [H]
 		}),
 		filter(MISC, {
-			i(156637, {timeline = {ADDED_8_1_5}}),	-- Blood Contract: Bloodguard
-			i(156638, {timeline = {ADDED_8_1_5}}),	-- Blood Contract: Bloodshed
-			i(156636, {timeline = {ADDED_8_1_5}}),	-- Blood Contract: Oblivion
-			i(156563, {timeline = {ADDED_8_1_5}}),	-- Blood Contract: Sacrifice
+			i(156637, { timeline = { ADDED_8_1_5 } }),	-- Blood Contract: Bloodguard
+			i(156638, { timeline = { ADDED_8_1_5 } }),	-- Blood Contract: Bloodshed
+			i(156636, { timeline = { ADDED_8_1_5 } }),	-- Blood Contract: Oblivion
+			i(156563, { timeline = { ADDED_8_1_5 } }),	-- Blood Contract: Sacrifice
 			i(153646),	-- Codex of the Quiet Mind
-			i(165016, {timeline = {ADDED_8_1_0}}),	-- Contract: 7th Legion
-			i(168956, {timeline = {ADDED_8_2_0}}),	-- Contract: Ankoan
+			i(165016, { timeline = { ADDED_8_1_0 } }),	-- Contract: 7th Legion
+			i(168956, { timeline = { ADDED_8_2_0 } }),	-- Contract: Ankoan
 			i(153668),	-- Contract: Champions of Azeroth
 			i(153662),	-- Contract: Order of Embers
 			i(153661),	-- Contract: Proudmoore Admiralty
-			i(172008, {timeline = {ADDED_8_3_0}}),	-- Contract: Rajani
-			i(168960, {timeline = {ADDED_8_2_0}}),	-- Contract: Rustbolt Resistance
+			i(172008, { timeline = { ADDED_8_3_0 } }),	-- Contract: Rajani
+			i(168960, { timeline = { ADDED_8_2_0 } }),	-- Contract: Rustbolt Resistance
 			i(153663),	-- Contract: Storm's Wake
 			i(153665),	-- Contract: Talanji's Expedition
-			i(165017, {timeline = {ADDED_8_1_0}}),	-- Contract: The Honorbound
+			i(165017, { timeline = { ADDED_8_1_0 } }),	-- Contract: The Honorbound
 			i(153667),	-- Contract: Tortollan Seekers
-			i(172010, {timeline = {ADDED_8_3_0}}),	-- Contract: Uldum Accord
-			i(168959, {timeline = {ADDED_8_2_0}}),	-- Contract: Unshackled
+			i(172010, { timeline = { ADDED_8_3_0 } }),	-- Contract: Uldum Accord
+			i(168959, { timeline = { ADDED_8_2_0 } }),	-- Contract: Unshackled
 			i(153666),	-- Contract: Voldunai
 			i(153664),	-- Contract: Zandalari Empire
-			i(162114, {timeline = {ADDED_8_0_1_LAUNCH, REMOVED_8_1_0}}),	-- Crimson Ink Well
-			i(165745, {timeline = {ADDED_8_1_0}}),	-- Crimson Ink Well
-			i(153670, {timeline = {ADDED_8_1_5}}),	-- Sanguine Feather Quill of Lana'thel
+			i(162114, { timeline = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }),	-- Crimson Ink Well
+			i(165745, { timeline = { ADDED_8_1_0 } }),	-- Crimson Ink Well
+			i(153670, { timeline = { ADDED_8_1_5 } }),	-- Sanguine Feather Quill of Lana'thel
 			i(159825),	-- Scroll of Unlocking
 			i(153647),	-- Tome of the Quiet Mind
-			i(165733, {timeline = {ADDED_8_1_5}}),	-- Vantus Rune: Crucible of Storms
-			i(165692, {timeline = {ADDED_8_1_0}}),	-- Vantus Rune: Battle of Dazar'alor
-			i(171203, {timeline = {ADDED_8_3_0}}),	-- Vantus Rune: Ny'alotha, the Waking City
-			i(168624, {timeline = {ADDED_8_2_0}}),	-- Vantus Rune: The Eternal Palace
+			i(165692, { timeline = { ADDED_8_1_0 } }),	-- Vantus Rune: Battle of Dazar'alor
+			i(165733, { timeline = { ADDED_8_1_5 } }),	-- Vantus Rune: Crucible of Storms
+			i(171203, { timeline = { ADDED_8_3_0 } }),	-- Vantus Rune: Ny'alotha, the Waking City
+			i(168624, { timeline = { ADDED_8_2_0 } }),	-- Vantus Rune: The Eternal Palace
 			i(153673),	-- Vantus Rune: Uldir
-			i(158201),	-- War-Scroll of Intellect
-			i(158204),	-- War-Scroll of Fortitude
 			i(158202),	-- War-Scroll of Battle Shout
+			i(158204),	-- War-Scroll of Fortitude
+			i(158201),	-- War-Scroll of Intellect
 		}),
 		filter(REAGENTS, {
 			i(158188),	-- Crimson Ink
-			i(168663, {timeline = {ADDED_8_2_0}}),	-- Maroon Ink
+			i(168663, { timeline = { ADDED_8_2_0 } }),	-- Maroon Ink
 			i(158187),	-- Ultramarine Ink
 			i(158189),	-- Viridescent Ink
 			i(153598),	-- Darkmoon Card of War
@@ -1011,10 +1012,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(159125),	-- Darkmoon Deck: Fathoms
 			i(159126),	-- Darkmoon Deck: Squalls
 			i(159127),	-- Darkmoon Deck: Tides
-			i(169302, {timeline = {ADDED_8_2_0}}),	-- Highborne Compendium of Mystical Bulwark
-			i(169328, {timeline = {ADDED_8_2_0}}),	-- Highborne Compendium of Storms
-			i(169321, {timeline = {ADDED_8_2_0}}),	-- Highborne Compendium of Sundering
-			i(169301, {timeline = {ADDED_8_2_0}}),	-- Highborne Compendium of Swirling Tides
+			i(169302, { timeline = { ADDED_8_2_0 } }),	-- Highborne Compendium of Mystical Bulwark
+			i(169328, { timeline = { ADDED_8_2_0 } }),	-- Highborne Compendium of Storms
+			i(169321, { timeline = { ADDED_8_2_0 } }),	-- Highborne Compendium of Sundering
+			i(169301, { timeline = { ADDED_8_2_0 } }),	-- Highborne Compendium of Swirling Tides
 		}),
 	}),
 	prof(JEWELCRAFTING, {

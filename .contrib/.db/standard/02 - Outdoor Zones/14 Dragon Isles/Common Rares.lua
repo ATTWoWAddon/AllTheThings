@@ -485,9 +485,6 @@ maproot(DRAGON_ISLES, {
 					i(200210, {	-- Amnesia
 						crs = RARE_GROUP_ONE,
 					}),
-					i(200138, {	-- Ancient Dancer's Longspear
-						crs = RARE_GROUP_ONE,
-					}),
 					i(200434, {	-- Anund's Mana-Singed Amice
 						crs = RARE_GROUP_SUNDER,
 					}),
@@ -603,6 +600,9 @@ maproot(DRAGON_ISLES, {
 					}),
 					i(200135, {	-- Corroded Greatsword
 						crs = RARE_GROUP_WATER,
+					}),
+					i(200138, {	-- Ancient Dancer's Longspear
+						crs = RARE_GROUP_ONE,
 					}),
 					i(200256, {	-- Darkmaul Soul Horn
 						crs = RARE_GROUP_SPECTRAL,

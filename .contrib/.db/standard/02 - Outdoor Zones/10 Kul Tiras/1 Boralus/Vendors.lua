@@ -369,13 +369,10 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 				races = ALLIANCE_ONLY,
 				groups = COMMON_BFA_PVP_RECIPES_S1_S2,
 			}),
-			n(145838, {	-- Marshal Frazer
+			n(145838, {	-- Marshal Frazer <Gladiator Quartermaster>
 				coord = { 56.4, 26.9, BORALUS },
 				races = ALLIANCE_ONLY,
-				groups = {
-					-- i(139775),	-- Alliance Enthusiast (PET!)
-					-- i(142379),	-- Dutiful Squire (PET!)
-				},
+				groups = { i(167861) },	-- Alliance Glider Kit
 			}),
 			n(143560, {	-- Marshal Gabriel
 				coord = { 56.2, 25.7, BORALUS },

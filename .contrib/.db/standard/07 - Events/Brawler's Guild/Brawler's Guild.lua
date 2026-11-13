@@ -543,7 +543,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					},
 				}),
 				q(32838, {	-- A Tale of Romance and Chivalry
-					provider = { "i", 97979 },	-- The Bear and the Lady Fair
+					qs = 97979,	-- The Bear and the Lady Fair (QS!)
 				}),
 				q(32839, {	-- The Bear and the Lady Fair
 					sourceQuest = 32838,	-- A Tale of Romance and Chivalry
@@ -606,7 +606,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					},
 				}),
 				q(32844, {	-- Secret of the Ooze
-					provider = { "i", 97982 },	-- Vial of Reddish Ooze
+					qs = 97982,	-- Vial of Reddish Ooze (QS!)
 				}),
 				q(32845, {	-- Splat
 					sourceQuest = 32844,	-- Secret of the Ooze

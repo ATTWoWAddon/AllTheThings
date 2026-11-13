@@ -98,7 +98,7 @@ maproot(DRAENOR, SPIRES_OF_ARAK, {
 			ach(9612),	-- Eggs in One Basket
 			ach(8941),	-- Explore Spires of Arak
 			ach(9613, {	-- Fish Gotta Swim, Birds Gotta Eat
-				cost = { { "i", 114238, 1 } },	-- Spiced Barbed Trout
+				cost = { { "i", 114238, 1 } },	-- 1x Spiced Barbed Trout
 			}),
 			ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
 				sym = {{ "achievement_criteria" }},

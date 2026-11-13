@@ -2476,8 +2476,6 @@ root(ROOTS.Unsorted, {
 			i(167856),	-- Plundered Ring
 			i(167857),	-- Plundered Necklace
 			i(167859),	-- Plundered Trinket
-			i(167861),	-- Alliance Glider Kit
-			i(167862),	-- Horde Glider Kit
 			i(167917),	-- Brawler's Coastal Healing Potion
 			i(167918),	-- Brawler's Battle Potion of Strength
 			i(167919),	-- Brawler's Battle Potion of Agility
@@ -2558,7 +2556,6 @@ root(ROOTS.Unsorted, {
 			i(168597),	-- REUSE ME [MTMM] \\ Vanguard's Bulwark
 			i(168630),	-- Chitterspine Meat
 			i(168655),	-- Greater Mystical Flask
-			i(168662),	-- Maroon Pigment
 			i(168797),	-- Stack of Undeliverable Mail
 			i(168812),	-- Air Freshner
 			i(168815),	-- Kelpberry Cask

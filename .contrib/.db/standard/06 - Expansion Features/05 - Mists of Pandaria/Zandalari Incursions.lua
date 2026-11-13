@@ -109,22 +109,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 			}),
 			n(69841, {	-- Zandalari Warbringer (Amber)
 				timeline = { ADDED_5_2_0 },
-				groups = {
-					i(94230),	-- Amber Primordial Direhorn (MOUNT!)
-				},
+				groups = { i(94230) },	-- Amber Primordial Direhorn (MOUNT!)
 			}),
 			n(69842, {	-- Zandalari Warbringer (Jade)
 				timeline = { ADDED_5_2_0 },
-				groups = {
-					i(94231),	-- Jade Primordial Direhorn (MOUNT!)
-				},
+				groups = { i(94231) },	-- Jade Primordial Direhorn (MOUNT!)
 			}),
 			n(69769, {	-- Zandalari Warbringer (Slate)
 				coord = { 38.8, 67.6, KRASARANG_WILDS },
 				timeline = { ADDED_5_2_0 },
-				groups = {
-					i(94229),	-- Slate Primordial Direhorn (MOUNT!)
-				},
+				groups = { i(94229) },	-- Slate Primordial Direhorn (MOUNT!)
 			}),
 		},
 	})),

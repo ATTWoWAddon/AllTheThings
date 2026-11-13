@@ -238,6 +238,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					groups = { i(285065) },	-- Mythical Soul Fragment
 				}),
 				q(98566, {	-- Come to your Senses
+					isRepeatable = true,
 				}),
 				q(97241, {	-- Voices of Stone
 					providers = {

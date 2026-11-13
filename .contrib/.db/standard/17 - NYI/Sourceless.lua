@@ -275,14 +275,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			}),
 		}),
 	}),
-	n(FOLLOWERS, {
-		expansion(EXPANSION.SL, {
-			-- 9.0.1
-			expansion(EXPANSION.SL, patch(0,1), {
-				follower(1208),	-- Nadjia the Mistblade
-			}),
-		}),
-	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
