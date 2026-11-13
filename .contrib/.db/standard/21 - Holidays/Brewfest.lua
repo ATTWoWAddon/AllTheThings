@@ -3363,13 +3363,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 							i(245947, {	-- Barrel Helm
 								cost = BREWFEST_TOKEN_COST(200),
 							}),
-							i(33047, {	-- Belbi's Eyesight Enhancing Romance Goggles
+							i(34008, {	-- Blix's Eyesight Enhancing Romance Goggles
 								-- #if BEFORE 10.0.5
 								collectible = false,	-- Needs marked because for some reason ATT thinks it is a collectible TODO: Look into this
 								-- #endif
 								timeline = { ADDED_2_2_0 },
 								cost = BREWFEST_TOKEN_COST(100),
-								races = ALLIANCE_ONLY,
+								races = HORDE_ONLY,
 							}),
 							i(169448, {	-- Bottomless Brewfest Stein
 								timeline = { ADDED_8_0_1 },
