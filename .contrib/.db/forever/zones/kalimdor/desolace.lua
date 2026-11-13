@@ -1653,6 +1653,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(8458, {	-- Completes with The Corrupter (2/5) (1481)
 		races = HORDE_ONLY,
 	}),
+	q(93654, {	-- Completed on its own near Nerlokh (Shen'dralas 20.8, 22.5)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 	q(93655, {	-- Completed together with 93657, 93658 and 93659, near Nerlokh [54.1, 87.7]
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
