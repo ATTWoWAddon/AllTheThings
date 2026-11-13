@@ -572,7 +572,7 @@ instanceroot(236, {	-- Stratholme
 					},
 				}),
 				n(16102, {	-- Sothos
-					creatureID = 16101,	-- Jarien
+					crs = { 16101 },	-- Jarien
 					description = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits. Unfortunately, after the modifications made to the instance with 4.0.3, these drops become truly unobtainable even with the brazier.",
 					cost = {{ "i", 22051, 1 }},	-- Brazier of Beckoning [Jarien & Sothos]
 					providers = {

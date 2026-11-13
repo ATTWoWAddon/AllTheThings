@@ -366,7 +366,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					{ 47.2, 12.2, MAP.IRONFORGE },
 					{ 47.4, 52.0, MAP.DUN_MOROGH },
 				},
-				maps = { MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },

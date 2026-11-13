@@ -216,6 +216,7 @@ instanceroot(2959, {	-- City of Dalaran
 			i(275989, {	-- Tome of Dalaran
 				description = "Use the Black Tome at the Leyline Focus next to Archmage Ataeric in the Ambermill Town Hall to create this. Use it on the purple ritual circle in the lower level of the City of Dalaran to summon Lyn the Ignored. It isn't consumed.",
 				provider = { "o", 672323 },	-- Leyline Focus
+				_allowObjectProvider = true,
 				coord = { 63.4, 64.3, MAP.SILVERPINE_FOREST },
 				cost = { { "i", 276561, 1 } },	-- Black Tome
 			}),

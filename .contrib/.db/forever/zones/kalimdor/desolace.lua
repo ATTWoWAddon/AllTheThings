@@ -83,6 +83,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sourceQuest = 1369,	-- Broken Tears
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
+				maps = { MAP.BADLANDS },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 30,
@@ -93,7 +94,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 							{ "o", 580100 },	-- Conqueror's Helm
 						},
 						coord = { 57.1, 40.1, MAP.BADLANDS },
-						maps = { MAP.BADLANDS },
 					}),
 				},
 			}),

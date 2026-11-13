@@ -108,6 +108,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						},
 						qg = 257446,	-- Teo Hammerstorm <Shaman Trainer>
 						coord = { 28.8, 66.2, MAP.DUN_MOROGH },
+						maps = { 428 },	-- Frostmane Hovel (Coldridge Valley)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_SHAMANS,
 						classes = { SHAMAN },
@@ -119,7 +120,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 									706,	-- Frostmane Troll Whelp
 									946,	-- Frostmane Novice
 								},
-								maps = { 428 },	-- Frostmane Hovel (Coldridge Valley)
 							}),
 						},
 					}),
