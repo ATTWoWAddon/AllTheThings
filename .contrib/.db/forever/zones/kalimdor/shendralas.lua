@@ -480,6 +480,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				lvl = 35,
 			}),
 			q(93362, {	-- What They've Done to My Peonies
+				sourceQuest = 93341,	-- Forlorn Gardens
 				qg = 254578,	-- Mithera
 				coord = { 53.0, 75.8, MAP.SHENDRALAS },
 				lvl = 35,
@@ -496,6 +497,7 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93594, {	-- Word of the Woods
+				sourceQuest = 93341,	-- Forlorn Gardens
 				qg = 254578,	-- Mithera
 				coord = { 53.0, 75.8, MAP.SHENDRALAS },
 				lvl = 35,
