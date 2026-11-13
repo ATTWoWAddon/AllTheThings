@@ -55,7 +55,7 @@ local EncounterToLoot = {
 	};
 	[ENTOMBED] = {
 		i(270912, {	-- Venomcast Idol
-			i(271504),	-- Searing Caldera of Calamity
+			i(271502),	-- Calamitous Echo's Ebon Greathorns
 			i(271493),	-- Skulking Viper's Hidepiercers
 			i(271484),	-- Hexing Grips of the Ophidian Oracle
 		}),
@@ -86,7 +86,7 @@ local EncounterToLoot = {
 	};
 	[VASHNIK] = {
 		i(270928, {	-- Venomcast Icon
-			i(271502),	-- Calamitous Echo's Ebon Greathorns
+			i(271504),	-- Searing Caldera of Calamity
 			i(271495),	-- Skulking Viper's Scuteplate
 			i(271486),	-- Fanged Raiment of the Ophidian Oracle
 		}),
