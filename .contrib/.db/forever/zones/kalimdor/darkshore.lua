@@ -1094,9 +1094,19 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					{ 40.0, 78.4, MAP.DARKSHORE },
 					{ 43.2, 86.0, MAP.DARKSHORE },
 				},
+				groups = {
+					i(284192, {	-- Furbolg Loincloth
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(2192, {	-- Firecaller Radison
 				coord = { 39.0, 86.4, MAP.DARKSHORE },
+				groups = {
+					i(284187, {	-- Crazed Firecaller's Cloak
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(7015, {	-- Flagglemurk the Cruel
 				coords = {
