@@ -11,6 +11,21 @@ instanceroot(2970, {	-- The Drowned City
 	lvl = 35,
 	groups = {
 		n(QUESTS, {
+			q(96078, {	-- A Tale Spun Around the Fire
+				sourceQuest = 95775,	-- The Drowned City
+				qg = 2519,	-- Kin'weelay
+				coord = { 32.2, 27.8, MAP.STRANGLETHORN_VALE },
+				maps = { MAP.DUROTAR },
+				races = HORDE_ONLY,
+				lvl = 30,
+				groups = {
+					i(279885),	-- Ceremonial Mallet
+					i(279887),	-- I'lalai Flayer
+					i(279886),	-- Sacrificial Sword
+					i(270313),	-- Tale of I'lalai in Zandali
+					i(270312),	-- Translated Tale of I'lalai
+				},
+			}),
 			q(96774, {	-- Ancient Gurubashi Idol
 				qg = 264074,	-- Mazu'kon <Earthen Ring>
 				coord = { 32.4, 20.6, MAP.MULGORE },
