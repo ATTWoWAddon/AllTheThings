@@ -42358,7 +42358,7 @@ ah(63325,{awp=120007,type="a",g={
 q(96410,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},sourceQuests={96233}}),
 q(96831,{coords={
-[2393]={{38.6,59.6},{40.2,72.2},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443,96444},qgs={265903},sourceQuests={96410}}),
+[2393]={{38.6,59.6},{40.2,72.2},{47.6,80.8},{47.8,51.4},{50.8,73.4}}},description="You can accept this quest from your Adventure Journal after first weekly reset, following the completion of the previous 'Seeking Knowledge' quest.",isBreadcrumb=1,isWeekly=1,nextQuests={96441,96442,96443,96444},qgs={265903},sourceQuests={96410}}),
 q(96441,{coords={
 [2649]={{60.4,10.4}}},qgs={264069},qis={274576},sourceQuests={96410,96831}}),
 hqt(97139,{coords={

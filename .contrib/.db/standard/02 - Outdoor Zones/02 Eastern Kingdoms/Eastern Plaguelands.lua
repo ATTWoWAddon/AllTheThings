@@ -35,10 +35,8 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 			lore = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",
 			icon = 135771,
 			groups = {
-				n(QUESTS, {
-					-- #If AFTER DF
-					_drop = { "classes", "c" },
-					-- #endif
+				-- Blizzard's quest data also allows Evokers on most of these quests, so drop it and use the header's classes
+				n(QUESTS, bubbleDownFiltered({ _drop = { "classes", "c" } }, FILTERFUNC_questID, {
 					classes = { DEATHKNIGHT },
 					groups = {
 						q(12593, {	-- In Service Of The Lich King
@@ -728,7 +726,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 							races = ALLIANCE_ONLY,
 						}),
 					},
-				}),
+				})),
 				prof(RUNEFORGING, {
 					timeline = { ADDED_3_0_2 },
 					classes = { DEATHKNIGHT },
