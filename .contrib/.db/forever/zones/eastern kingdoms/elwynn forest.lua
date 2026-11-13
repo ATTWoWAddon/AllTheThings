@@ -1626,7 +1626,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			}),
 			q(176, {	-- Wanted: "Hogger"
 				sourceQuest = 239,	-- Westbrook Garrison Needs Help!
-				provider = { "o", 68 },	-- Wanted Poster
+				providers = {
+					{ "o", 68 },	-- Wanted Poster
+					{ "o", 156561 },	-- Wanted Poster
+				},
 				coords = {
 					{ 24.5, 74.7, MAP.ELWYNN_FOREST },
 					{ 24.6, 78.2, MAP.ELWYNN_FOREST },
