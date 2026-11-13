@@ -357,7 +357,11 @@ local AttachTypicalSearchResults = function() end;
 			wipe(captured)
 			process(tooltip, key == "SocialProgress" and "Player-fixture" or "Creature-0-123-4-55-66-000001")
 			local label = key == "SocialProgress" and "Fixture Player" or fixture.app.L[key:upper()]
-			equal(captured[label] ~= nil, value, "Actual unit-tooltip consumer: " .. key)
+			local expected = value
+			-- Forever suppresses spawn-time rows even when their settings are enabled.
+			if fixture.app.IsForever and (key == "Alive" or key == "Spawned") then expected = false end
+			equal(captured[label] ~= nil, expected, "Actual unit-tooltip consumer: " .. key
+				.. " (build " .. fixture.app.GameBuildVersion .. ")")
 		end
 		controls[key]:Click(false)
 	end
