@@ -1964,9 +1964,9 @@ i(224374, 132036);	-- Thundering Ruby Cloud Serpent
 i(213604, 435125);	-- Tropical Riding Crane
 i(223285, 448851);	-- Underlight Corrupted Behemoth
 --- NYI ---
-i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
-i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
 i(223282, 448845);	-- Blue Old God Fish Mount
+i(223470, 449141);	-- Goldrinn Shrine Defender
+i(223460, 449133);	-- Winterspring Frostsaber
 
 ------------------
 -- PATCH 11.0.0 --

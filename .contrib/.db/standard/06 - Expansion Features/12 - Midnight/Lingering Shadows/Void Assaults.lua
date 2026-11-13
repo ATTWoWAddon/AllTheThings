@@ -509,6 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									coords = {
 										{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 										{ 40.2, 72.2, MAP.MIDNIGHT.SILVERMOON_CITY },
+										{ 47.6, 80.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 										{ 47.8, 51.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 										{ 50.8, 73.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 									},
