@@ -133,7 +133,8 @@ s(318163,289297,{c={5},f=28,spellID=1327993}),
 s(318164,289302,{c={1,2},f=25}),
 s(318165,289303,{c={3},f=32})})}),
 h(-32,{
-fp(3207)}),
+fp(3207,{collectible=false}),
+fp(3208,{collectible=false})}),
 h(-45,{
 q(785,{description="A Classic beta quest that is still in the client's quest data but has no quest giver in WoW Forever."})})}
 end)

@@ -21,6 +21,17 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			exploration(16849),	-- Summit of Eternity
 			exploration(16853),	-- Tainted Foothills
 		}),
+		n(FLIGHT_PATHS, {
+			fp(559, {	-- Summit of Eternity, Mount Hyjal
+				cr = 41861,	-- Fayran Elthas <Flight Master>
+				coord = { 68.6, 44.0, MAP.MOUNT_HYJAL },
+			}),
+			fp(3242, {	-- Tainted Foothills, Mount Hyjal
+				cr = 260626,	-- Bluebell <Flight Mistress>
+				coord = { 55.0, 82.8, MAP.MOUNT_HYJAL },
+				races = ALLIANCE_ONLY,
+			}),
+		}),
 		n(QUESTS, {
 			q(92521, {	-- The Demon Tower
 				-- Not yet available in game. Spy on Hnaz's imp at the tower with the captive satyr.

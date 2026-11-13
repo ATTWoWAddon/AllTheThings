@@ -261,7 +261,7 @@ r(1302604,{awp=16001,b=1,itemID=277716,learnedAt=30,requireSkill=165,skillID=294
 r(1255096,{awp=16001,itemID=252811,learnedAt=135,requireSkill=165,skillID=2945}),
 r(1255124,{awp=16001,itemID=252783,learnedAt=80,requireSkill=165,skillID=2945})}}),
 n(5191,{coords={
-[1457]={{70.4,23.2}}},r=2,sym={{"sub","common_vendor",5193}}}),
+[1457]={{70.4,23.2}}},r=2,sym={{"select","itemID",5976}}}),
 n(8665,{coords={
 [1457]={{69.8,45.4}}},r=2,g={
 p(68,{itemID=8500,npcID=7553,spellID=10707}),
@@ -1026,8 +1026,7 @@ n(3367,{coords={
 n(4043,{coords={
 [1454]={{76,37.2}}},r=1,sym={{"select","itemID",2523,2521,2531,2525,2533,2529}}}),
 n(5188,{coords={
-[1454]={{47.6,75.6}}},r=1,sym={{"select","itemID",19031,15197,15199,19505}},g={
-s(158293,5976,{f=9})}}),
+[1454]={{47.6,75.6}}},r=1,sym={{"select","itemID",5976}}}),
 n(3358,{coords={
 [1454]={{73.2,26.6}}},r=1,sym={{"sub","common_vendor",4599}}}),
 n(3335,{coords={
@@ -1599,7 +1598,7 @@ n(3016,{coords={
 n(2999,{coords={
 [1456]={{39.8,55.6}}},r=1}),
 n(5189,{coords={
-[1456]={{38,63}}},r=1,sym={{"sub","common_vendor",5188}}})})}}),
+[1456]={{38,63}}},r=1,sym={{"select","itemID",5976}}})})}}),
 m(1440,{icon=236713,lore="Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",g={
 h(-12,{
 ach(845,{
@@ -2618,9 +2617,11 @@ n(270294,{awp=16001,coords={
 [1439]={{59,22.9}}},cost={{"i",279277,1}},description="Combine 20 Mathystral Amulet Fragments into a Mathystral Amulet, then use it at the Fathom Stone at the bottom of the spiral staircase in the Ruins of Mathystra to summon him.",g={
 i(279275,{b=1,lvl=17})}}),
 n(2186,{coords={
-[1439]={{39.6,54},{40,78.4},{43.2,86}}}}),
+[1439]={{39.6,54},{40,78.4},{43.2,86}}},g={
+s(316082,284192,{awp=16001,f=4,loc=46,lvl=13})}}),
 n(2192,{coords={
-[1439]={{39,86.4}}}}),
+[1439]={{39,86.4}}},g={
+s(316081,284187,{awp=16001,f=3,lvl=16})}}),
 n(7015,{coords={
 [1439]={{36.8,72},{37.6,61.6}}},g={
 s(316080,284185,{awp=16001,f=6,loc=44,lvl=13})}}),
@@ -2732,11 +2733,11 @@ o(179491,{coords={
 [1443]={{36.9,24.1}}},learnedAt=150,requireSkill=633})}}),
 h(-45,{
 q(93044,{awp=16001,coords={
-[1443]={{36.2,79.2}}},lvl=35,minReputation={92,9000},qgs={5397},r=1,sourceQuests={93041},g={
+[1443]={{36.2,79.2}}},lvl=35,minReputation={92,9000},qgs={5397},sourceQuests={93041},g={
 qo(2,{coords={
 [1443]={{38.7,95.4}}},providers={{"i",255878},{"o",587299}}})}}),
 q(92743,{awp=16001,coords={
-[1443]={{74.8,68}}},lvl=30,minReputation={93,3000},qgs={5398},sourceQuests={1369},g={
+[1443]={{74.8,68}}},lvl=30,maps={1418},minReputation={93,3000},qgs={5398},sourceQuests={1369},g={
 qo(1,{coords={
 [1418]={{57.1,40.1}}},providers={{"i",254392},{"o",580100}}})}}),
 q(92754,{awp=16001,coords={
@@ -2924,7 +2925,7 @@ qo(1,{coords={
 [1443]={{66.6,79.8}}},crs={5601},providers={{"i",6072}}})}}),
 q(93128,{awp=16001,coords={
 [1443]={{58.4,88.6}},
-[2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},r=1,sourceQuests={93122},g={
+[2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},sourceQuests={93122},g={
 qo(1,{coords={
 [1443]={{66,80.4}}},providers={{"n",5601}}}),
 s(307706,271801,{b=1,f=22}),
@@ -3020,7 +3021,7 @@ s(157329,3465,{f=37})}}),
 q(1382,{coords={
 [1443]={{66.7,11}}},description="Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",lvl=30,qgs={5396},r=2}),
 q(93045,{awp=16001,coords={
-[1443]={{36.2,79.2}}},lvl=35,minReputation={92,9000},qgs={5397},r=1,sourceQuests={93044},g={
+[1443]={{36.2,79.2}}},lvl=35,minReputation={92,9000},qgs={5397},sourceQuests={93044},g={
 qo(1,{providers={{"i",256057}}}),
 s(307699,271794,{b=1,f=29}),
 s(307700,271795,{b=1,f=26}),
@@ -5106,6 +5107,11 @@ exp(16849,{
 crit(116900,{achID=62356,id=8})}),
 exp(16853,{
 crit(116899,{achID=62356,id=9})})}),
+h(-32,{
+fp(559,{coords={
+[2482]={{68.6,44}}},crs={41861}}),
+fp(3242,{coords={
+[2482]={{55,82.8}}},crs={260626},r=2})}),
 h(-45,{
 q(92521,{u=1})}),
 h(-58,{
@@ -5682,7 +5688,9 @@ q(99257,{coords={
 [2652]={{45.8,78.2}}},lvl=35,qgs={255486},g={
 qo(1,{coords={
 [2652]={{43.8,34.4}}},crs={252711},providers={{"i",286647}}})}}),
-q(93062,{lvl=35,minReputation={92,9000},r=1,u=1,g={
+q(93062,{coords={
+[1443]={{58.4,88.6}},
+[2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},g={
 qo(1,{coords={
 [2652]={{38.6,29.8}}},crs={253446},providers={{"i",258661}}})}}),
 q(92894,{coords={
@@ -5699,7 +5707,7 @@ qo(3,{coords={
 [2652]={{57,15.4}}},providers={{"n",253526}}})}}),
 q(93122,{coords={
 [1443]={{58.4,88.6}},
-[2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},r=1,sourceQuests={93058,93062}}),
+[2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},sourceQuests={93058,93062}}),
 q(92847,{coords={
 [2652]={{35.6,12}}},lvl=35,minReputation={93,9000},qgs={253136},r=2,sourceQuests={92844,92846},g={
 qo(1,{coords={
@@ -5744,6 +5752,7 @@ q(93037,{coords={
 [2652]={{20.8,22.6}}},lvl=35,minReputation={92,9000},qgs={253177},sourceQuests={93034},g={
 qo(1,{coords={
 [2652]={{22.6,26.2}}},crs={11559},providers={{"i",255875}}})}}),
+q(93568,{lvl=35,qss={259461}}),
 q(96018,{coords={
 [2652]={{35,46.5}}},lvl=35,qgs={253471},qis={271882},g={
 qo(1,{providers={{"i",255662}}}),
@@ -5761,7 +5770,7 @@ qo(1,{coords={
 [2652]={{36,23.7}}},providers={{"n",11561}}})}}),
 q(93188,{lvl=35,minReputation={93,9000},sourceQuests={93072,93129},u=1}),
 q(93058,{coords={
-[2652]={{20.8,22.3}}},lvl=35,minReputation={92,9000},qgs={253177},r=1,u=1,g={
+[2652]={{20.8,22.3}}},lvl=35,minReputation={92,9000},qgs={253177},g={
 qo(1,{providers={{"n",254825}}})}}),
 q(92914,{coords={
 [2652]={{43.5,34.1}}},lvl=35,providers={{"o",577959}}}),
@@ -5773,6 +5782,7 @@ q(93034,{coords={
 q(92841,{coords={
 [1443]={{74.8,68}}},lvl=35,minReputation={93,9000},qgs={5398},r=2,sourceQuests={92743}})}),
 h(-63,{
+i(259461,{b=1,crs={255207},lvl=35}),
 i(260347,{b=1,crs={11559,253272}})})}}),
 m(1451,{icon=236829,lore="Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",g={
 h(-12,{
@@ -6648,7 +6658,7 @@ s(158634,6675,{b=1,f=6,loc=43}),
 s(158635,6676,{b=1,f=8}),
 s(304889,270035,{awp=16001,b=1,f=4,loc=42})}}),
 q(80001,{awp=16001,coords={
-[1442]={{40.6,52.4}}},cost={{"i",4471,1},{"i",4470,1}},providers={{"o",424082}},sourceQuests={79192},g={
+[1442]={{40.6,52.4}}},cost={{"i",4471,1},{"i",4470,1}},providers={{"o",424082}},repeatable=1,sourceQuests={79192},g={
 i(4471)}}),
 q(1078,{coords={
 [1453]={{53,86.6}}},lvl=17,maps={1441},qgs={4078},r=2,g={
@@ -8217,8 +8227,6 @@ s(160366,11855,{b=1,f=1}),
 i(11147,{coords={
 [1413]={{60,4}}},crs={9336},spellID=13714}),
 i(11148,{crs={3283,3286},f=55,spellID=14199})}}),
-q(98094,{awp=16001,coords={
-[1424]={{62.33,20.45}}},lvl=19,qgs={2215},qis={279394},r=1}),
 q(2996,{c={9},coords={
 [1454]={{48.2,45.6}}},isBreadcrumb=1,lvl=30,nextQuests={1801},qgs={5875},races={2,5}}),
 q(1798,{c={9},coords={
@@ -9568,6 +9576,9 @@ q(4147,{coords={
 [1449]={{45.6,8.6}}},lvl=47,maps={1413},qgs={9118},r=1,sourceQuests={4145}}),
 q(3912,{coords={
 [1452]={{31.2,45.2}}},cost={{"i",11243,1}},lvl=47,qgs={9298},qis={11136},sourceQuests={3909}}),
+q(87494,{awp=16001,qss={280459},g={
+s(311853,281261,{b=1,f=5,loc=45}),
+s(311854,281262,{b=1,f=6,loc=45})}}),
 q(4141,{coords={
 [1449]={{42.9,9.6}}},lvl=47,qgs={9119},r=2,g={
 qo(1,{crs={6509,6510,6511,6512},providers={{"i",11316}}})}}),
@@ -9661,6 +9672,7 @@ n(12959,{coords={
 r(19084,{isLimited=1,itemID=15758,learnedAt=265,requireSkill=10660,skillID=2945})}})}),
 h(-63,{
 i(11116,{b=1,lvl=48}),
+i(280459,{awp=16001,b=1,crs={6505,6506,6507,6508,9162,9163,9164,9165,9166,9167,279811}}),
 i(12809,{crs={6560}}),
 i(20768,{crs={6557,6559,9477},sym={{"select","itemID",20769}}}),
 r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=290,requireSkill=10660,skillID=2945})})}}),
@@ -10389,7 +10401,7 @@ n(5121,{coords={
 n(5129,{coords={
 [1455]={{54.6,88.2}}},r=2,sym={{"select","symselector",9,23,25},{"pop"},{"select","itemID",2463}}}),
 n(5049,{coords={
-[1455]={{36.4,84.4}}},r=2,sym={{"sub","common_vendor",5193}}}),
+[1455]={{36.4,84.4}}},r=2,sym={{"select","itemID",5976}}}),
 n(5156,{coords={
 [1455]={{38.8,5.6}}},r=2,sym={{"select","itemID",2617,2615,2613,2612,2614,2616,2618}}}),
 n(5107,{coords={
@@ -11553,8 +11565,7 @@ s(163549,18456,{b=1,c={5,8,9},f=4,loc=43,lvl=58})}}),
 n(1323,{coords={
 [1453]={{77,61.2}}},r=2,sym={{"select","symselector",28,29,38,33},{"pop"},{"select","itemID",2451,2448,2446,17189,17190,17192}}}),
 n(5193,{coords={
-[1453]={{64,77.2}}},r=2,g={
-s(158293,5976,{f=9})}}),
+[1453]={{64,77.2}}},r=2,sym={{"select","itemID",5976}}}),
 n(277,{coords={
 [1453]={{59.4,77.2}}},r=2,g={
 i(1941)}}),
@@ -11816,7 +11827,7 @@ q(1978,{c={4},coords={
 [1458]={{83.2,69}}},lvl=10,qgs={6467},qis={7294},races={5},sourceQuests={1899},g={
 s(158814,7298,{b=1,c={4},f=20})}}),
 q(97985,{awp=16001,coords={
-[1458]={{48.4,70.8}}},lvl=25,maps={1441},qgs={270038},r=1,g={
+[1458]={{49.2,70.4}}},lvl=25,maps={1441},qgs={270038},r=1,g={
 qo(1,{coords={
 [1441]={{51.4,48.3}}},crs={270094},providers={{"i",279186}}})}}),
 q(1164,{coords={
@@ -11910,7 +11921,7 @@ n(4557,{coords={
 n(4580,{coords={
 [1458]={{71.4,28.4}}},r=1,sym={{"select","itemID",2617,2615,2613,2612,2614,2616,2618}}}),
 n(5190,{coords={
-[1458]={{69.3,44.8}}},r=1,sym={{"sub","common_vendor",5188}}}),
+[1458]={{69.3,44.8}}},r=1,sym={{"select","itemID",5976}}}),
 n(4577,{coords={
 [1458]={{70.6,30.1}}},r=1,g={
 r(7643,{isLimited=1,itemID=6275,learnedAt=90,requireSkill=197,skillID=2948}),
@@ -12926,6 +12937,13 @@ qo(1,{crs={92},providers={{"i",4627}}})}}),
 q(712,{coords={
 [1418]={{25.8,45}}},lvl=35,qgs={2921},sourceQuests={711},g={
 qo(1,{crs={2736},providers={{"i",4628}}})}}),
+q(97663,{awp=16001,coords={
+[1418]={{4.2,46.2}}},lvl=34,qgs={269647},r=1,g={
+qo(1,{crs={2701,2715},providers={{"i",278515}}}),
+qo(2,{coords={
+[1418]={{31.5,61.1},{31.8,61.9}}},providers={{"o",668003}}}),
+qo(3,{coords={
+[1418]={{27.9,60.8},{28.4,59.9},{28.6,59.9},{28.9,60.6}}},providers={{"o",668004}}})}}),
 q(692,{coords={
 [1418]={{51.4,76.9}}},lvl=30,qgs={2785},sourceQuests={687},g={
 qo(1,{crs={2791},providers={{"i",4518}}}),
@@ -13413,8 +13431,8 @@ r(688,{requireSkill=354})}}),
 q(3365,{coords={
 [1426]={{28.8,66.4}}},lvl=4,qgs={836},qis={10440},r=2,sourceQuests={3364}}),
 q(94373,{awp=16001,c={7},coords={
-[1426]={{28.8,66.2}}},lvl=4,qgs={257446},races={3},sourceQuests={96243,98581},g={
-qo(1,{crs={706,946},maps={428},providers={{"i",264356}}})}}),
+[1426]={{28.8,66.2}}},lvl=4,maps={428},qgs={257446},races={3},sourceQuests={96243,98581},g={
+qo(1,{crs={706,946},providers={{"i",264356}}})}}),
 q(94374,{awp=16001,c={7},coords={
 [1426]={{28.8,66.2}}},lvl=4,qgs={257446},qis={6635},races={3},sourceQuests={94373}}),
 q(94375,{awp=16001,c={7},coords={
@@ -13460,9 +13478,9 @@ q(3110,{c={5},coords={
 q(3364,{coords={
 [1426]={{25,76}}},lvl=4,qgs={12738},qis={10439},r=2}),
 q(282,{altQuests={287},coords={
-[1426]={{25,75.8}}},qgs={786},qis={2619},r=2,sourceQuests={218}}),
+[1426]={{25,75.8}}},isBreadcrumb=1,nextQuests={420},qgs={786},qis={2619},r=2,sourceQuests={218}}),
 q(420,{altQuests={287},coords={
-[1426]={{33.4,71.8}}},qgs={1965},qis={2619},r=2,sourceQuests={282}}),
+[1426]={{33.4,71.8}}},isBreadcrumb=1,nextQuests={287,98322},qgs={1965},qis={2619},r=2,sourceQuests={282}}),
 q(3112,{c={1},coords={
 [1426]={{29.9,71.2}}},qgs={658},qis={9544},races={7},sourceQuests={179}}),
 q(3106,{c={1},coords={
@@ -15364,7 +15382,7 @@ q(76,{coords={
 q(94793,{awp=16001,c={3},coords={
 [1429]={{41.14,66.32}}},lvl=10,qgs={251507},r=2,sourceQuests={94864}}),
 q(176,{coords={
-[1429]={{24.5,74.7},{24.6,78.2}}},lvl=5,providers={{"o",68}},r=2,sourceQuests={239},g={
+[1429]={{24.5,74.7},{24.6,78.2}}},lvl=5,providers={{"o",68},{"o",156561}},r=2,sourceQuests={239},g={
 qo(1,{coords={
 [1429]={{26.6,89.8}}},crs={448},providers={{"i",1931}}}),
 s(158306,6085,{b=1,f=5,loc=42}),
@@ -15731,6 +15749,8 @@ q(542,{coords={
 [1424]={{50.6,57.1}}},lvl=20,maps={1453},qgs={2277},qis={3660},r=2,sourceQuests={540}}),
 q(1067,{coords={
 [1424]={{61.4,19.2}}},lvl=13,maps={1456},qgs={2216,5588},r=1,sourceQuests={1066}}),
+q(98094,{awp=16001,coords={
+[1424]={{62.33,20.45}}},lvl=19,qgs={2215},qis={279394},r=1,sourceQuests={528}}),
 q(555,{coords={
 [1424]={{51.8,58.7}}},cost={{"i",3713,1},{"i",3712,10}},lvl=28,qgs={2430},r=2,requireSkill=185,g={
 r(3400,{itemID=3737,learnedAt=175,requireSkill=185,skillID=2939}),
@@ -15768,7 +15788,13 @@ r(3397,{b=1,itemID=3734,learnedAt=110,requireSkill=185,skillID=2939})}}),
 q(494,{coords={
 [1424]={{20.79,47.41}}},lvl=19,qgs={2214},r=1}),
 q(98095,{awp=16001,coords={
-[1424]={{64,53.8}}},lvl=19,qgs={270438},qis={279395},r=1,g={
+[1424]={{64,53.8}}},lvl=19,qgs={270438},qis={279395},r=1,sourceQuests={98094},g={
+qo(1,{coords={
+[1424]={{42,30}}}}),
+qo(2,{coords={
+[1424]={{71,29}}}}),
+qo(3,{coords={
+[1424]={{73,72}}}}),
 s(311884,281294,{b=1,f=1}),
 s(311885,281293,{b=1,f=25})}}),
 q(549,{coords={
@@ -21059,12 +21085,12 @@ s(157368,3558,{b=1,f=4,loc=42}),
 s(156245,1273,{b=1,f=6,loc=42}),
 s(156737,2263,{b=1,f=25,learnedAt=100,requireSkill=182})}}),
 q(98208,{awp=16001,coords={
-[1437]={{8,55.9}}},lvl=22,qgs={270844},g={
+[1437]={{8,55.9}}},lvl=22,qgs={270844},r=2,g={
 qo(1,{coords={
 [1437]={{12.2,63.8}}},providers={{"i",279915},{"o",670962}}}),
 s(311905,281318,{b=1,f=1})}}),
 q(98209,{awp=16001,coords={
-[1437]={{8,55.9}}},lvl=22,maps={1439},qgs={270844},qis={279924},sourceQuests={98208}}),
+[1437]={{8,55.9}}},lvl=22,maps={1439},qgs={270844},qis={279924},r=2,sourceQuests={98208}}),
 q(88756,{awp=16001,coords={
 [1437]={{50,18.2}}},lvl=27,qgs={1073},r=2,g={
 qo(1,{coords={
@@ -21099,13 +21125,13 @@ q(293,{coords={
 [1437]={{10.6,60.5}}},lvl=22,maps={1453},qgs={1217},r=2,sourceQuests={292},g={
 s(157040,2943,{b=1,f=1})}}),
 q(98240,{awp=16001,coords={
-[1437]={{8.6,55.6}}},lvl=19,qgs={2094},qis={280099},r=2,sourceQuests={98072}}),
+[1437]={{8.6,55.6}}},isBreadcrumb=1,lvl=19,qgs={2094},qis={280099},r=2,sourceQuests={98072}}),
 q(98072,{awp=16001,coords={
 [1437]={{8.5,55.7}}},lvl=19,qgs={2094},r=2,sourceQuests={471},g={
 qo(1,{coords={
 [1437]={{61.8,31.2},{65.4,43},{68.8,45.6}}},crs={1042,1043,1044,1069},providers={{"i",279385}}})}}),
 q(469,{coords={
-[1437]={{49.8,39.4}}},lvl=18,qgs={2093},qis={3347},r=2}),
+[1437]={{49.8,39.4}}},isBreadcrumb=1,lvl=18,qgs={2093},qis={3347},r=2}),
 q(98291,{awp=16001,coords={
 [1437]={{49.3,42.1}}},lvl=22,qgs={270637},r=2,g={
 qo(1,{coords={
@@ -21126,7 +21152,7 @@ q(470,{coords={
 qo(1,{crs={1031,1032,1033},providers={{"i",3349}}}),
 i(3352,{b=1,f=113})}}),
 q(472,{coords={
-[1437]={{10.8,55.9}}},lvl=25,qgs={2097},r=2}),
+[1437]={{10.8,55.9}}},isBreadcrumb=1,lvl=25,qgs={2097},r=2}),
 q(277,{coords={
 [1437]={{56.3,40.4}}},lvl=20,qgs={1244},r=2,sourceQuests={276},g={
 qo(1,{crs={1009,1010,1011,1012,1013,1014,14425},providers={{"i",2611}}})}}),
@@ -21201,7 +21227,7 @@ s(304893,270039,{awp=16001,b=1,f=5,loc=41})}}),
 q(634,{coords={
 [1437]={{49.9,18.2}}},lvl=28,qgs={1075},r=2,sourceQuests={633}}),
 q(98245,{awp=16001,coords={
-[1437]={{49.3,42.1}}},lvl=21,qgs={270637},r=2,sourceQuests={98240},g={
+[1437]={{49.3,42.1}}},lvl=21,qgs={270637},r=2,g={
 qo(1,{coords={
 [1437]={{69.6,33.5}}},crs={1018,1019},providers={{"i",280103}}})}}),
 q(281,{coords={
@@ -21462,7 +21488,7 @@ s(158411,6315,{coords={
 p(58,{crs={1042,1044,1069},itemID=8499,npcID=7544,spellID=10697}),
 s(156103,756,{coords={
 [1437]={{48,18.6},{61.2,25.4}}},crs={1053},f=22})})}})}}),
-h(-22,{description="Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, quivers by Bowyers and Fletchers, and basic armor sets by armor and clothing merchants.",g={
+h(-22,{description="Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, quivers by Bowyers and Fletchers, basic armor sets by armor and clothing merchants, and the Guild Tabard by Tabard Vendors.",g={
 flt(37,{
 s(160239,11284,{f=37,lvl=40}),
 s(156868,2519,{f=37,lvl=10}),
@@ -21726,6 +21752,8 @@ s(163284,17184,{f=8}),
 s(163286,17186,{f=8,lvl=3}),
 s(156227,1202,{f=8,lvl=12}),
 s(156785,2376,{f=8,lvl=5})}),
+flt(9,{
+s(158293,5976,{f=9})}),
 h(-101,{
 flt(20,{
 s(156643,2139,{f=20}),
