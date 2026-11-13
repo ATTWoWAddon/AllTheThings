@@ -1,0 +1,64 @@
+name: Phase Explorer
+
+on:
+  push:
+    branches: ['**']
+    paths:
+      - '.contrib/src/PhaseExplorer/**'
+      - '.contrib/phase-examples/**'
+      - '.github/workflows/PhaseExplorer.yml'
+  pull_request:
+    paths:
+      - '.contrib/src/PhaseExplorer/**'
+      - '.contrib/phase-examples/**'
+      - '.github/workflows/PhaseExplorer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            rid: win-x64
+          - os: ubuntu-latest
+            rid: linux-x64
+          - os: macos-latest
+            rid: osx-arm64
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - name: Build desktop application
+        run: dotnet build .contrib/src/PhaseExplorer/PhaseExplorer.App -c Release
+      - name: Verify source relationships
+        run: dotnet run --project .contrib/src/PhaseExplorer/PhaseExplorer.Tests -c Release -- .
+      - name: Verify desktop controls
+        run: dotnet run --project .contrib/src/PhaseExplorer/PhaseExplorer.UiTests -c Release -- .
+      - name: Publish standalone application
+        run: dotnet publish .contrib/src/PhaseExplorer/PhaseExplorer.App -c Release -r ${{ matrix.rid }} --self-contained true -o phase-explorer-publish
+      - name: Package macOS application
+        if: runner.os == 'macOS'
+        run: |
+          python3 .contrib/src/PhaseExplorer/package-macos.py phase-explorer-publish phase-explorer-package/ATT-Phase-Explorer.app
+          mkdir -p phase-explorer-artifact
+          tar -czf phase-explorer-artifact/phase-explorer-${{ matrix.rid }}.tar.gz -C phase-explorer-package ATT-Phase-Explorer.app
+      - name: Package Windows and Linux files
+        if: runner.os != 'macOS'
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path phase-explorer-artifact
+          tar -czf phase-explorer-artifact/phase-explorer-${{ matrix.rid }}.tar.gz -C phase-explorer-publish .
+      - uses: actions/upload-artifact@v7
+        with:
+          name: phase-explorer-${{ matrix.rid }}
+          path: phase-explorer-artifact/
+          if-no-files-found: error
