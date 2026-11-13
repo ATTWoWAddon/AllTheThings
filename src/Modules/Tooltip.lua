@@ -1042,21 +1042,6 @@ do
 		if not working then CandidatesByMapID[mapID] = candidates end
 		return candidates, working
 	end
-	-- Redraws a unit tooltip whose ATT text was still loading, so it picks up the finished data
-	local function RefreshUnitTooltip(tooltip)
-		if not tooltip:IsVisible() then return end
-		-- Refreshing from addon code taints the tooltip: Blizzard's unit handlers then fail on a secret
-		-- unit token (e.g. while carrying a passenger). Skip it; the text is rebuilt on the next hover.
-		if tooltip.GetUnit then
-			local _, unit = tooltip:GetUnit()
-			if issecretvalue(unit) then return end
-		end
-		if tooltip.RefreshData then
-			tooltip:RefreshData()
-		else
-			app.ReshowGametooltip(tooltip)
-		end
-	end
 	-- Rebuild lazily after the map changes or ATT refreshes collection data.
 	local function WipeCandidates() wipe(CandidatesByMapID) end
 	app.AddEventHandler("OnCurrentMapIDChanged", WipeCandidates)
@@ -1076,7 +1061,8 @@ do
 		if not mapID then app.PrintDebug("SecretUnitTooltip: no current map") return end
 		local candidates, working = CandidatesByMapID[mapID], false
 		if not candidates then candidates, working = BuildCandidates(mapID) end
-		if working then app.CallbackHandlers.DelayedCallback(RefreshUnitTooltip, 0.5, tooltip) end
+		-- No delayed redraw while the text is still loading: redrawing a tooltip of secret data from addon code
+		-- taints it and Blizzard's line handlers then fail on secret values. The next hover shows the finished text.
 		if #candidates == 0 then return end
 		local leftOutput, rightOutput, summaryOutput, anyText, anySummary = "", "", "", false, false
 		for _,candidate in ipairs(candidates) do
