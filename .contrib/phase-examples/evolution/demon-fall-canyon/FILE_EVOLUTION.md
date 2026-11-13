@@ -2,225 +2,243 @@
 
 [All six instances](../README.md) · [The shared schedule](../../schedule.json)
 
-Open the dungeon, add Azgaloth later, and add a new item to Grimroot later still. Those are three distinct changes, so they use three keys.
+**Maintainer comparison guide.** P1 copies unmodified production source. Later Lua and control files are generated comparisons of proposed edits; the P2/P3 controls do not install a production migration loader.
 
-**Read down:** P1 → P2.1 → P2.2 → P3 → P4. These are migration steps, not game release phases. Each step below shows the file you would change and a complete saved version of the result.
+Open the dungeon, add Azgaloth later, and add a new drop on Grimroot later still. These are three distinct requirements.
 
-## P1 — start with the existing Lua file
+**Read down:** P1 → P2.1 → P2.2 → P3 → P4. These are migration steps, not game release phases. Open the complete source and diff blocks at each step.
 
-**Lua source:** `.contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Demon Fall Canyon.lua`
+## P1 — read the current source alternatives
 
-**Saved P1 copy:** [Demon Fall Canyon.lua](../p1/Demon%20Fall%20Canyon.lua). Its first line identifies the copy; everything after that line is byte-for-byte the current production source. **No new JSON yet.**
+Baseline: master `195b274be460432481e33bb63bfaf9e68bfeec06`. Each saved P1 adds an identifying first line, followed by the exact bytes of the corresponding production file. No phase configuration is introduced at P1.
+
+| Alternative | Current human-authored production source | Complete P1 copy |
+|---|---|---|
+
+| Standalone SoD | `.contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua` | [sod.lua](p1/sod.lua) |
+
+
+
+There is no standard source for this dungeon. Non-SoD selections remain `null`.
+
+[sources.json](../full-source/sources.json) records generated verification provenance: the source commit, paths, alternatives and hashes. It is not another handwritten phase configuration.
 
 <details>
-<summary>Read the whole P1 file</summary>
+<summary>Read the complete P1 sod.lua</summary>
 
 ```lua
--- P1 | Full authoring source at the start of migration. Original: .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Demon Fall Canyon.lua
--- #if SEASON_OF_DISCOVERY
+-- P1 comparison: unmodified human-authored source from .contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua.
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_FOUR, inst(2784, {	-- Demon Fall Canyon
-		lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
-		zoneTextAreaID = 435,	-- Demon Fall Canyon
-		sourceQuest = 84384,	-- Demonic Deceptions
-		provider = { "i", 228172 },	-- Shadowtooth Illusion Ward
-		coord = { 84.5, 75.0, ASHENVALE },
-		timeline = { ADDED_1_15_3 },
-		lvl = 55,
-		groups = {
-			n(226923, {	-- Grimroot <The Mourning Guardian>
-				i(228082),	-- Warsong Axe
-				i(228079),	-- Cloak of Leaves
-				i(228080),	-- Resin Loop
-				i(228081),	-- Germinating Poisonseed
-				i(228083),	-- Gloaming Treeheart
-				applyclassicphase(SOD_PHASE_SEVEN, i(235787, {	-- Ancient Ironwood Branch (QI!)
-					timeline = { ADDED_1_15_6 },
-				})),
-			}),
-			n(228022, {	-- The Destructor's Wraith
-				i(228075),	-- Spear of Destiny
-				i(228077),	-- Dreambough
-				i(228074),	-- Hands of Temptation
-				i(228076),	-- Burning Ring of Fire
-				i(228078),	-- Accursed Chalice
-				i(18665),	-- The Eye of Shadow
-			}),
-			n(226922, {	-- Zilbagob
-				i(228086),	-- Repurposed Shredderblade
-				i(228088),	-- Shredder Operator's Dogtags
-				i(228085),	-- Phaseshifted Legion Band
-				i(228087),	-- Supercharged Silver Moebius
-				i(228084),	-- Miniaturized Fire Extinguisher
-			}),
-			applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
-				timeline = { ADDED_1_15_4 },
-				groups = {
-					i(231913),	-- Eye of the Observer
-					i(231911),	-- Signet of the Legion General
-					i(231910),	-- Heart of Azgaloth
-					i(231912),	-- Blade of the Pit
-					i(231460),	-- Planebreaker of Azgaloth
-					i(4213, {	-- Grimoire of Doom
-						classes = { WARLOCK },
-						groups = {
-							recipe(18540),	-- Ritual of Doom
-						},
-					}),	
-				},
-			})), 
-			n(227140, {	-- Pyranis
-				i(228090),	-- Cenarion Ritual Dagger
-				i(228092),	-- Druidic Mantle
-				i(228091),	-- Thorned Boots
-				i(228093),	-- Dark Heart of Darkness
-				i(228089),	-- Woodcarved Moonstalker
-			}),
-			n(227019, {	-- Diathorus the Seeker
-				i(228094),	-- Dreadlord's Blade
-				i(228107),	-- Fallen Huntress' Longbow
-				i(228106),	-- Shield of Life and Death
-				i(228104),	-- Robes of Elune
-				i(228103),	-- Nathrezim's Greaves
-				i(18665),	-- The Eye of Shadow
-			}),
-			n(227028, {	-- Hellscream's Phantom
-				i(228410),	-- Dreadblade of the Destructor
-				i(228108),	-- Shadow of Gorehowl
-				i(228111),	-- Mask of the Godslayer
-				i(228112),	-- Nightmare Gown
-				i(228109),	-- Legguards of Sacrifice
-				i(228113),	-- Cold Embrace
-				i(228126, {	-- Aperitive Epiphany
-					classes = { PRIEST },
+instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {	-- Demon Fall Canyon
+	lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+	zoneTextAreaID = 435,	-- Demon Fall Canyon
+	sourceQuest = 84384,	-- Demonic Deceptions
+	provider = { "i", 228172 },	-- Shadowtooth Illusion Ward
+	coord = { 84.5, 75.0, ASHENVALE },
+	timeline = { ADDED_1_15_3 },
+	lvl = 55,
+	groups = {
+		n(226923, {	-- Grimroot <The Mourning Guardian>
+			i(228082),	-- Warsong Axe
+			i(228079),	-- Cloak of Leaves
+			i(228080),	-- Resin Loop
+			i(228081),	-- Germinating Poisonseed
+			i(228083),	-- Gloaming Treeheart
+			applyclassicphase(SOD_PHASE_SEVEN, i(235787, {	-- Ancient Ironwood Branch (QI!)
+				timeline = { ADDED_1_15_6 },
+			})),
+		}),
+		n(228022, {	-- The Destructor's Wraith
+			i(228075),	-- Spear of Destiny
+			i(228077),	-- Dreambough
+			i(228074),	-- Hands of Temptation
+			i(228076),	-- Burning Ring of Fire
+			i(228078),	-- Accursed Chalice
+			i(18665),	-- The Eye of Shadow
+		}),
+		n(226922, {	-- Zilbagob
+			i(228086),	-- Repurposed Shredderblade
+			i(228088),	-- Shredder Operator's Dogtags
+			i(228085),	-- Phaseshifted Legion Band
+			i(228087),	-- Supercharged Silver Moebius
+			i(228084),	-- Miniaturized Fire Extinguisher
+		}),
+		applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
+			timeline = { ADDED_1_15_4 },
+			groups = {
+				i(231913),	-- Eye of the Observer
+				i(231911),	-- Signet of the Legion General
+				i(231910),	-- Heart of Azgaloth
+				i(231912),	-- Blade of the Pit
+				i(231460),	-- Planebreaker of Azgaloth
+				i(4213, {	-- Grimoire of Doom
+					classes = { WARLOCK },
 					groups = {
-						recipe(402857),	-- Engrave Cloak - Vampiric Touch
+						recipe(18540),	-- Ritual of Doom
 					},
-				}),
+				}),	
+			},
+		})), 
+		n(227140, {	-- Pyranis
+			i(228090),	-- Cenarion Ritual Dagger
+			i(228092),	-- Druidic Mantle
+			i(228091),	-- Thorned Boots
+			i(228093),	-- Dark Heart of Darkness
+			i(228089),	-- Woodcarved Moonstalker
+		}),
+		n(227019, {	-- Diathorus the Seeker
+			i(228094),	-- Dreadlord's Blade
+			i(228107),	-- Fallen Huntress' Longbow
+			i(228106),	-- Shield of Life and Death
+			i(228104),	-- Robes of Elune
+			i(228103),	-- Nathrezim's Greaves
+			i(18665),	-- The Eye of Shadow
+		}),
+		n(227028, {	-- Hellscream's Phantom
+			i(228410),	-- Dreadblade of the Destructor
+			i(228108),	-- Shadow of Gorehowl
+			i(228111),	-- Mask of the Godslayer
+			i(228112),	-- Nightmare Gown
+			i(228109),	-- Legguards of Sacrifice
+			i(228113),	-- Cold Embrace
+			i(228126, {	-- Aperitive Epiphany
+				classes = { PRIEST },
+				groups = {
+					recipe(402857),	-- Engrave Cloak - Vampiric Touch
+				},
 			}),
-		},
-	})),
+		}),
+	},
 }));
--- #endif
 ```
 
 </details>
 
-## P1 → P2.1 — add the keys to that Lua
+## P1 → P2.1 — add keys to each Lua alternative
 
-**Author’s change:** edit the Lua source above. Keep its old phase calls. Add a key to the parent whose records share one opening; a child only needs another key when it has another rule.
+**Author edits:** the production source above. Keep every existing legacy phase writer, ordinary requirement and acquisition route. Add a key where a rule belongs; a child inherits all ancestor rules and adds its own through **AND**. A pure `progressionKey` + `groups` envelope shares a rule without adding a visible output header.
 
-**Saved result:** [p2.1/Demon Fall Canyon.lua](p2.1/Demon%20Fall%20Canyon.lua) — a generated comparison copy showing those proposed edits.
+### Standalone SoD
 
-**Read these changed lines first.** They are exact hunks from the complete diff below. `-` is the old line; `+` is its replacement.
-
-```diff
-@@ -39,7 +40,7 @@
- 				i(228087),	-- Supercharged Silver Moebius
- 				i(228084),	-- Miniaturized Fire Extinguisher
- 			}),
--			applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
-+			applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
- 				timeline = { ADDED_1_15_4 },
- 				groups = {
- 					i(231913),	-- Eye of the Observer
-```
-
-Descendants inherit the parent’s key. An additional child key combines with the parent rule using **AND**; it cannot bypass a closed parent. A pure `progressionKey` + `groups` table shares a rule across siblings and adds no visible output header.
-
-<details>
-<summary>Show every changed Lua line: P1 → P2.1</summary>
+**Saved result:** [p2.1/sod.lua](p2.1/sod.lua), a generated comparison. The first changed lines below are exact hunks from the full diff.
 
 ```diff
---- .contrib/phase-examples/evolution/p1/Demon Fall Canyon.lua
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p2.1/Demon Fall Canyon.lua
-@@ -1,11 +1,12 @@
---- P1 | Full authoring source at the start of migration. Original: .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Demon Fall Canyon.lua
-+-- Generated comparison snapshot (P2.1 / P2.2 / P3): complete annotated source.
-+-- Generated by evolution/full-source/generate.py; edit schedule.json for release timing.
- -- #if SEASON_OF_DISCOVERY
+--- p1/sod.lua
++++ p2.1/sod.lua
+@@ -1,9 +1,11 @@
+--- P1 comparison: unmodified human-authored source from .contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua.
++-- P2.1 generated comparison: complete standalone SoD source.
++-- Generated by evolution/full-source/generate_sets.py.
  -----------------------------------------------------
  --   D U N G E O N S  &  R A I D S  M O D U L E    --
  -----------------------------------------------------
  
- root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
--	applyclassicphase(SOD_PHASE_FOUR, inst(2784, {	-- Demon Fall Canyon
-+	applyclassicphase(SOD_PHASE_FOUR, { progressionKey = "dfc.dungeon", groups = { inst(2784, {	-- Demon Fall Canyon
- 		lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
- 		zoneTextAreaID = 435,	-- Demon Fall Canyon
- 		sourceQuest = 84384,	-- Demonic Deceptions
-@@ -20,9 +21,9 @@
- 				i(228080),	-- Resin Loop
- 				i(228081),	-- Germinating Poisonseed
- 				i(228083),	-- Gloaming Treeheart
--				applyclassicphase(SOD_PHASE_SEVEN, i(235787, {	-- Ancient Ironwood Branch (QI!)
-+				applyclassicphase(SOD_PHASE_SEVEN, { progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
- 					timeline = { ADDED_1_15_6 },
--				})),
-+				}) } }),
- 			}),
- 			n(228022, {	-- The Destructor's Wraith
- 				i(228075),	-- Spear of Destiny
-@@ -39,7 +40,7 @@
- 				i(228087),	-- Supercharged Silver Moebius
- 				i(228084),	-- Miniaturized Fire Extinguisher
- 			}),
--			applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
-+			applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
- 				timeline = { ADDED_1_15_4 },
- 				groups = {
- 					i(231913),	-- Eye of the Observer
-@@ -54,7 +55,7 @@
- 						},
- 					}),	
- 				},
--			})), 
-+			}) } }), 
- 			n(227140, {	-- Pyranis
- 				i(228090),	-- Cenarion Ritual Dagger
- 				i(228092),	-- Druidic Mantle
-@@ -85,6 +86,6 @@
- 				}),
- 			}),
- 		},
--	})),
-+	}) } }),
- }));
- -- #endif
+ instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {	-- Demon Fall Canyon
++	progressionKey = "dfc.dungeon",
+ 	lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+ 	zoneTextAreaID = 435,	-- Demon Fall Canyon
+ 	sourceQuest = 84384,	-- Demonic Deceptions
+@@ -18,9 +20,9 @@
+ 			i(228080),	-- Resin Loop
+ 			i(228081),	-- Germinating Poisonseed
+ 			i(228083),	-- Gloaming Treeheart
+-			applyclassicphase(SOD_PHASE_SEVEN, i(235787, {	-- Ancient Ironwood Branch (QI!)
++			applyclassicphase(SOD_PHASE_SEVEN, { progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
+ 				timeline = { ADDED_1_15_6 },
+-			})),
++			}) } }),
+ 		}),
+ 		n(228022, {	-- The Destructor's Wraith
+ 			i(228075),	-- Spear of Destiny
+@@ -37,7 +39,7 @@
+ 			i(228087),	-- Supercharged Silver Moebius
+ 			i(228084),	-- Miniaturized Fire Extinguisher
+ 		}),
+-		applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
++		applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
+ 			timeline = { ADDED_1_15_4 },
+ 			groups = {
+ 				i(231913),	-- Eye of the Observer
+```
+
+<details>
+<summary>Show every P1 → P2.1 change in sod.lua</summary>
+
+```diff
+--- p1/sod.lua
++++ p2.1/sod.lua
+@@ -1,9 +1,11 @@
+--- P1 comparison: unmodified human-authored source from .contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua.
++-- P2.1 generated comparison: complete standalone SoD source.
++-- Generated by evolution/full-source/generate_sets.py.
+ -----------------------------------------------------
+ --   D U N G E O N S  &  R A I D S  M O D U L E    --
+ -----------------------------------------------------
+ 
+ instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {	-- Demon Fall Canyon
++	progressionKey = "dfc.dungeon",
+ 	lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+ 	zoneTextAreaID = 435,	-- Demon Fall Canyon
+ 	sourceQuest = 84384,	-- Demonic Deceptions
+@@ -18,9 +20,9 @@
+ 			i(228080),	-- Resin Loop
+ 			i(228081),	-- Germinating Poisonseed
+ 			i(228083),	-- Gloaming Treeheart
+-			applyclassicphase(SOD_PHASE_SEVEN, i(235787, {	-- Ancient Ironwood Branch (QI!)
++			applyclassicphase(SOD_PHASE_SEVEN, { progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
+ 				timeline = { ADDED_1_15_6 },
+-			})),
++			}) } }),
+ 		}),
+ 		n(228022, {	-- The Destructor's Wraith
+ 			i(228075),	-- Spear of Destiny
+@@ -37,7 +39,7 @@
+ 			i(228087),	-- Supercharged Silver Moebius
+ 			i(228084),	-- Miniaturized Fire Extinguisher
+ 		}),
+-		applyclassicphase(SOD_PHASE_FIVE, n(232632, {	-- Azgaloth <Lord of the Pit>
++		applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
+ 			timeline = { ADDED_1_15_4 },
+ 			groups = {
+ 				i(231913),	-- Eye of the Observer
+@@ -52,7 +54,7 @@
+ 					},
+ 				}),	
+ 			},
+-		})), 
++		}) } }), 
+ 		n(227140, {	-- Pyranis
+ 			i(228090),	-- Cenarion Ritual Dagger
+ 			i(228092),	-- Druidic Mantle
 ```
 
 </details>
 
-**Control setting:** `stage: "P2.1"` in [migration.json](p2.1/migration.json). This generated comparison control shows the proposed setting; the production Parser does not yet consume it. `sources` is relative to its folder.
+**Proposed control:** [p2.1/sod.migration.json](p2.1/sod.migration.json). It names only this alternative; `sources` is relative to the control file. Do not combine the alternative controls into one input build.
 
-```diff
---- /dev/null
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p2.1/migration.json
-@@ -0,0 +1,13 @@
-+{
-+  "schema": 1,
-+  "defaultStage": "P1",
-+  "cohorts": [
-+    {
-+      "id": "comparison-fixture-demon-fall-canyon",
-+      "stage": "P2.1",
-+      "sources": [
-+        "Demon Fall Canyon.lua"
-+      ]
-+    }
-+  ]
-+}
+```json
+{
+  "$comment": "Generated proposed comparison control; select only this source alternative.",
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-demon-fall-canyon",
+      "stage": "P2.1",
+      "sources": [
+        "sod.lua"
+      ]
+    }
+  ]
+}
 ```
 
-## P2.1 → P2.2 — write the timing in JSON
+## P2.1 → P2.2 — write timing in JSON
 
-**Lua: unchanged** — [the P2.2 copy](p2.2/Demon%20Fall%20Canyon.lua) is identical to P2.1.
-
-**Author edits:** [.contrib/phase-examples/schedule.json](../../schedule.json). The entries below are handwritten timing rules. Put them at `rules.demon-fall-canyon` in that file:
+**Lua body: unchanged** — [sod.lua](p2.2/sod.lua). The identification comment names the new stage. **Author edits:** [schedule.json](../../schedule.json). Put these entries at the named locations in that one handwritten file:
 
 ```json
 {
@@ -240,12 +258,10 @@ Descendants inherit the parent’s key. An additional child key combines with th
 }
 ```
 
-The existing `rules` entries cover this complete source. It needs no entries in `fullSourceRules`.
-
-`unknown` means the opening is unresolved. It never means open. An unresolved child rule affects that child’s source, while all parent requirements still apply. Retail does not read a phase schedule.
+`rules` is shared with the smaller runnable examples; `fullSourceRules` covers additional complete-source owners where present. `unknown` remains unresolved and blocks promotion of the affected source. Retail reads no phase schedule.
 
 <details>
-<summary>Read the complete schedule.json, including the other instances</summary>
+<summary>Read the complete handwritten schedule.json</summary>
 
 ```json
 {
@@ -353,262 +369,250 @@ The existing `rules` entries cover this complete source. It needs no entries in 
 
 </details>
 
-**Control change:** [P2.1](p2.1/migration.json) → [P2.2](p2.2/migration.json). The proposed migration still ships the legacy result and compares the new result separately.
+**Proposed control change:** P2.1 → P2.2. Legacy output remains authoritative while the new rule result is compared separately.
 
 ```diff
---- .contrib/phase-examples/evolution/demon-fall-canyon/p2.1/migration.json
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p2.2/migration.json
-@@ -4,7 +4,7 @@
+--- p2.1/sod.migration.json
++++ p2.2/sod.migration.json
+@@ -5,7 +5,7 @@
    "cohorts": [
      {
        "id": "comparison-fixture-demon-fall-canyon",
 -      "stage": "P2.1",
 +      "stage": "P2.2",
        "sources": [
-         "Demon Fall Canyon.lua"
+         "sod.lua"
        ]
 ```
 
-## P2.2 → P3 — change the stage value
+## P2.2 → P3 — change the proposed stage
 
-**Lua: unchanged** — [the P3 copy](p3/Demon%20Fall%20Canyon.lua) still matches P2.1 and P2.2. **Timing JSON: unchanged.** Only the setting shown in the generated [migration.json](p3/migration.json) changes:
+**Lua body and timing JSON: unchanged.** The [P3 directory](p3/) contains the same annotated source alternatives. Change only each alternative’s stage in its generated comparison control:
 
 ```diff
---- .contrib/phase-examples/evolution/demon-fall-canyon/p2.2/migration.json
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p3/migration.json
-@@ -4,7 +4,7 @@
+--- p2.2/sod.migration.json
++++ p3/sod.migration.json
+@@ -5,7 +5,7 @@
    "cohorts": [
      {
        "id": "comparison-fixture-demon-fall-canyon",
 -      "stage": "P2.2",
 +      "stage": "P3",
        "sources": [
-         "Demon Fall Canyon.lua"
+         "sod.lua"
        ]
 ```
 
-This proposed stage makes the new result authoritative after the source passes its migration checks. Unknown timing still prevents promotion of the affected source. The old Lua calls remain available for the independent legacy comparison.
+This proposed switch makes the policy result authoritative after the source passes its migration checks. The unchanged old phase calls remain for an independent legacy comparison. These control files demonstrate the intended switch; they do not establish production promotion.
 
-## P3 → P4 — select a complete source for each flavor
+## P3 → P4 — select one complete source per flavor
 
-Only SoD selects a Lua file. The other flavors select null. The SoD file keeps the entrance quest, provider item, level requirement and every boss.
-
-**Remove:** the old `applyclassicphase` calls and flavor/season `#if` branches. **Keep:** version branches, timelines, quests, costs, loot and other ordinary requirements. **Timing JSON: unchanged.**
-
-**Author’s Lua change:** split the source into the selected files below. Each linked file is a complete generated comparison of the proposed final source.
+**Timing JSON: unchanged.** Remove the old phase writers and any remaining flavor guards from the selected alternative. Keep ordinary version guards, timelines, quests, costs, providers and all acquisition routes. The standard and standalone SoD sources remain separate.
 
 ### SoD
 
-**Before:** [complete P3 Lua](p3/Demon%20Fall%20Canyon.lua). **After:** [p4/sod.lua](p4/sod.lua).
+**Before:** [p3/sod.lua](p3/sod.lua). **After:** [p4/sod.lua](p4/sod.lua), the complete generated comparison for this flavor.
 
 <details>
 <summary>Read the complete final sod.lua</summary>
 
 ```lua
--- Generated comparison snapshot (P4): complete sod source.
--- Generated by evolution/full-source/generate.py; edit schedule.json for release timing.
+-- P4 generated comparison: complete standalone SoD source.
+-- Generated by evolution/full-source/generate_sets.py.
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	{ progressionKey = "dfc.dungeon", groups = { inst(2784, {	-- Demon Fall Canyon
-		lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
-		zoneTextAreaID = 435,	-- Demon Fall Canyon
-		sourceQuest = 84384,	-- Demonic Deceptions
-		provider = { "i", 228172 },	-- Shadowtooth Illusion Ward
-		coord = { 84.5, 75.0, ASHENVALE },
-		timeline = { ADDED_1_15_3 },
-		lvl = 55,
-		groups = {
-			n(226923, {	-- Grimroot <The Mourning Guardian>
-				i(228082),	-- Warsong Axe
-				i(228079),	-- Cloak of Leaves
-				i(228080),	-- Resin Loop
-				i(228081),	-- Germinating Poisonseed
-				i(228083),	-- Gloaming Treeheart
-				{ progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
-					timeline = { ADDED_1_15_6 },
-				}) } },
-			}),
-			n(228022, {	-- The Destructor's Wraith
-				i(228075),	-- Spear of Destiny
-				i(228077),	-- Dreambough
-				i(228074),	-- Hands of Temptation
-				i(228076),	-- Burning Ring of Fire
-				i(228078),	-- Accursed Chalice
-				i(18665),	-- The Eye of Shadow
-			}),
-			n(226922, {	-- Zilbagob
-				i(228086),	-- Repurposed Shredderblade
-				i(228088),	-- Shredder Operator's Dogtags
-				i(228085),	-- Phaseshifted Legion Band
-				i(228087),	-- Supercharged Silver Moebius
-				i(228084),	-- Miniaturized Fire Extinguisher
-			}),
-			{ progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
-				timeline = { ADDED_1_15_4 },
-				groups = {
-					i(231913),	-- Eye of the Observer
-					i(231911),	-- Signet of the Legion General
-					i(231910),	-- Heart of Azgaloth
-					i(231912),	-- Blade of the Pit
-					i(231460),	-- Planebreaker of Azgaloth
-					i(4213, {	-- Grimoire of Doom
-						classes = { WARLOCK },
-						groups = {
-							recipe(18540),	-- Ritual of Doom
-						},
-					}),	
-				},
-			}) } }, 
-			n(227140, {	-- Pyranis
-				i(228090),	-- Cenarion Ritual Dagger
-				i(228092),	-- Druidic Mantle
-				i(228091),	-- Thorned Boots
-				i(228093),	-- Dark Heart of Darkness
-				i(228089),	-- Woodcarved Moonstalker
-			}),
-			n(227019, {	-- Diathorus the Seeker
-				i(228094),	-- Dreadlord's Blade
-				i(228107),	-- Fallen Huntress' Longbow
-				i(228106),	-- Shield of Life and Death
-				i(228104),	-- Robes of Elune
-				i(228103),	-- Nathrezim's Greaves
-				i(18665),	-- The Eye of Shadow
-			}),
-			n(227028, {	-- Hellscream's Phantom
-				i(228410),	-- Dreadblade of the Destructor
-				i(228108),	-- Shadow of Gorehowl
-				i(228111),	-- Mask of the Godslayer
-				i(228112),	-- Nightmare Gown
-				i(228109),	-- Legguards of Sacrifice
-				i(228113),	-- Cold Embrace
-				i(228126, {	-- Aperitive Epiphany
-					classes = { PRIEST },
+instanceroot(2784, {	-- Demon Fall Canyon
+	progressionKey = "dfc.dungeon",
+	lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+	zoneTextAreaID = 435,	-- Demon Fall Canyon
+	sourceQuest = 84384,	-- Demonic Deceptions
+	provider = { "i", 228172 },	-- Shadowtooth Illusion Ward
+	coord = { 84.5, 75.0, ASHENVALE },
+	timeline = { ADDED_1_15_3 },
+	lvl = 55,
+	groups = {
+		n(226923, {	-- Grimroot <The Mourning Guardian>
+			i(228082),	-- Warsong Axe
+			i(228079),	-- Cloak of Leaves
+			i(228080),	-- Resin Loop
+			i(228081),	-- Germinating Poisonseed
+			i(228083),	-- Gloaming Treeheart
+			{ progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
+				timeline = { ADDED_1_15_6 },
+			}) } },
+		}),
+		n(228022, {	-- The Destructor's Wraith
+			i(228075),	-- Spear of Destiny
+			i(228077),	-- Dreambough
+			i(228074),	-- Hands of Temptation
+			i(228076),	-- Burning Ring of Fire
+			i(228078),	-- Accursed Chalice
+			i(18665),	-- The Eye of Shadow
+		}),
+		n(226922, {	-- Zilbagob
+			i(228086),	-- Repurposed Shredderblade
+			i(228088),	-- Shredder Operator's Dogtags
+			i(228085),	-- Phaseshifted Legion Band
+			i(228087),	-- Supercharged Silver Moebius
+			i(228084),	-- Miniaturized Fire Extinguisher
+		}),
+		{ progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
+			timeline = { ADDED_1_15_4 },
+			groups = {
+				i(231913),	-- Eye of the Observer
+				i(231911),	-- Signet of the Legion General
+				i(231910),	-- Heart of Azgaloth
+				i(231912),	-- Blade of the Pit
+				i(231460),	-- Planebreaker of Azgaloth
+				i(4213, {	-- Grimoire of Doom
+					classes = { WARLOCK },
 					groups = {
-						recipe(402857),	-- Engrave Cloak - Vampiric Touch
+						recipe(18540),	-- Ritual of Doom
 					},
-				}),
+				}),	
+			},
+		}) } }, 
+		n(227140, {	-- Pyranis
+			i(228090),	-- Cenarion Ritual Dagger
+			i(228092),	-- Druidic Mantle
+			i(228091),	-- Thorned Boots
+			i(228093),	-- Dark Heart of Darkness
+			i(228089),	-- Woodcarved Moonstalker
+		}),
+		n(227019, {	-- Diathorus the Seeker
+			i(228094),	-- Dreadlord's Blade
+			i(228107),	-- Fallen Huntress' Longbow
+			i(228106),	-- Shield of Life and Death
+			i(228104),	-- Robes of Elune
+			i(228103),	-- Nathrezim's Greaves
+			i(18665),	-- The Eye of Shadow
+		}),
+		n(227028, {	-- Hellscream's Phantom
+			i(228410),	-- Dreadblade of the Destructor
+			i(228108),	-- Shadow of Gorehowl
+			i(228111),	-- Mask of the Godslayer
+			i(228112),	-- Nightmare Gown
+			i(228109),	-- Legguards of Sacrifice
+			i(228113),	-- Cold Embrace
+			i(228126, {	-- Aperitive Epiphany
+				classes = { PRIEST },
+				groups = {
+					recipe(402857),	-- Engrave Cloak - Vampiric Touch
+				},
 			}),
-		},
-	}) } },
-}));
+		}),
+	},
+});
 ```
 
 </details>
 
 <details>
-<summary>Show every changed Lua line: P3 → sod.lua</summary>
+<summary>Show every P3 sod → P4 sod change</summary>
 
 ```diff
---- .contrib/phase-examples/evolution/demon-fall-canyon/p3/Demon Fall Canyon.lua
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p4/sod.lua
-@@ -1,12 +1,11 @@
---- Generated comparison snapshot (P2.1 / P2.2 / P3): complete annotated source.
-+-- Generated comparison snapshot (P4): complete sod source.
- -- Generated by evolution/full-source/generate.py; edit schedule.json for release timing.
---- #if SEASON_OF_DISCOVERY
+--- p3/sod.lua
++++ p4/sod.lua
+@@ -1,10 +1,10 @@
+--- P3 generated comparison: complete standalone SoD source.
++-- P4 generated comparison: complete standalone SoD source.
+ -- Generated by evolution/full-source/generate_sets.py.
  -----------------------------------------------------
  --   D U N G E O N S  &  R A I D S  M O D U L E    --
  -----------------------------------------------------
  
- root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
--	applyclassicphase(SOD_PHASE_FOUR, { progressionKey = "dfc.dungeon", groups = { inst(2784, {	-- Demon Fall Canyon
-+	{ progressionKey = "dfc.dungeon", groups = { inst(2784, {	-- Demon Fall Canyon
- 		lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
- 		zoneTextAreaID = 435,	-- Demon Fall Canyon
- 		sourceQuest = 84384,	-- Demonic Deceptions
-@@ -21,9 +20,9 @@
- 				i(228080),	-- Resin Loop
- 				i(228081),	-- Germinating Poisonseed
- 				i(228083),	-- Gloaming Treeheart
--				applyclassicphase(SOD_PHASE_SEVEN, { progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
-+				{ progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
- 					timeline = { ADDED_1_15_6 },
--				}) } }),
-+				}) } },
+-instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {	-- Demon Fall Canyon
++instanceroot(2784, {	-- Demon Fall Canyon
+ 	progressionKey = "dfc.dungeon",
+ 	lore = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+ 	zoneTextAreaID = 435,	-- Demon Fall Canyon
+@@ -20,9 +20,9 @@
+ 			i(228080),	-- Resin Loop
+ 			i(228081),	-- Germinating Poisonseed
+ 			i(228083),	-- Gloaming Treeheart
+-			applyclassicphase(SOD_PHASE_SEVEN, { progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
++			{ progressionKey = "dfc.ironwood-branch", groups = { i(235787, {	-- Ancient Ironwood Branch (QI!)
+ 				timeline = { ADDED_1_15_6 },
+-			}) } }),
++			}) } },
+ 		}),
+ 		n(228022, {	-- The Destructor's Wraith
+ 			i(228075),	-- Spear of Destiny
+@@ -39,7 +39,7 @@
+ 			i(228087),	-- Supercharged Silver Moebius
+ 			i(228084),	-- Miniaturized Fire Extinguisher
+ 		}),
+-		applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
++		{ progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
+ 			timeline = { ADDED_1_15_4 },
+ 			groups = {
+ 				i(231913),	-- Eye of the Observer
+@@ -54,7 +54,7 @@
+ 					},
+ 				}),	
+ 			},
+-		}) } }), 
++		}) } }, 
+ 		n(227140, {	-- Pyranis
+ 			i(228090),	-- Cenarion Ritual Dagger
+ 			i(228092),	-- Druidic Mantle
+@@ -85,4 +85,4 @@
  			}),
- 			n(228022, {	-- The Destructor's Wraith
- 				i(228075),	-- Spear of Destiny
-@@ -40,7 +39,7 @@
- 				i(228087),	-- Supercharged Silver Moebius
- 				i(228084),	-- Miniaturized Fire Extinguisher
- 			}),
--			applyclassicphase(SOD_PHASE_FIVE, { progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
-+			{ progressionKey = "dfc.azgaloth", groups = { n(232632, {	-- Azgaloth <Lord of the Pit>
- 				timeline = { ADDED_1_15_4 },
- 				groups = {
- 					i(231913),	-- Eye of the Observer
-@@ -55,7 +54,7 @@
- 						},
- 					}),	
- 				},
--			}) } }), 
-+			}) } }, 
- 			n(227140, {	-- Pyranis
- 				i(228090),	-- Cenarion Ritual Dagger
- 				i(228092),	-- Druidic Mantle
-@@ -86,6 +85,5 @@
- 				}),
- 			}),
- 		},
--	}) } }),
-+	}) } },
- }));
---- #endif
+ 		}),
+ 	},
+-}));
++});
 ```
 
 </details>
 
-### Add the file selection
+### Select the source before Lua execution
 
-**New setting shown in:** [p4/selection.json](p4/selection.json), a generated comparison file. The proposed loader selects the source before executing Lua. `null` selects no source for that instance.
+**Generated comparison:** [p4/selection.json](p4/selection.json). Each value is one file path, or `null` when the source is absent. This does not load the standard source underneath the SoD source.
 
-```diff
---- /dev/null
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p4/selection.json
-@@ -0,0 +1,18 @@
-+{
-+  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
-+  "retail": {
-+    "demon-fall-canyon": null
-+  },
-+  "progression:main": {
-+    "demon-fall-canyon": null
-+  },
-+  "anniversary:main": {
-+    "demon-fall-canyon": null
-+  },
-+  "era:main": {
-+    "demon-fall-canyon": null
-+  },
-+  "sod:main": {
-+    "demon-fall-canyon": "sod.lua"
-+  }
-+}
+```json
+{
+  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
+  "retail": {
+    "demon-fall-canyon": null
+  },
+  "progression:main": {
+    "demon-fall-canyon": null
+  },
+  "anniversary:main": {
+    "demon-fall-canyon": null
+  },
+  "era:main": {
+    "demon-fall-canyon": null
+  },
+  "sod:main": {
+    "demon-fall-canyon": "sod.lua"
+  }
+}
 ```
 
-### Update the control’s source list
+The P4 migration control lists the available candidates; the selection above chooses which one enters a build. Here is the complete proposed [p4/migration.json](p4/migration.json):
 
-```diff
---- .contrib/phase-examples/evolution/demon-fall-canyon/p3/migration.json
-+++ .contrib/phase-examples/evolution/demon-fall-canyon/p4/migration.json
-@@ -4,9 +4,9 @@
-   "cohorts": [
-     {
-       "id": "comparison-fixture-demon-fall-canyon",
--      "stage": "P3",
-+      "stage": "P4",
-       "sources": [
--        "Demon Fall Canyon.lua"
-+        "sod.lua"
-       ]
-     }
-   ]
+```json
+{
+  "$comment": "Generated proposed comparison control; select one P4 source with selection.json.",
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-demon-fall-canyon",
+      "stage": "P4",
+      "sources": [
+        "sod.lua"
+      ]
+    }
+  ]
+}
 ```
 
-## Key locations in the complete source
+## Key locations in the complete sources
 
 | Record or group | Key | What inherits it |
 |---|---|---|
@@ -617,7 +621,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 | Grimroot’s item `235787` | `dfc.ironwood-branch` | Only this later addition; Grimroot’s existing loot keeps the dungeon rule. |
 
 ```text
-inst(2784) — dfc.dungeon
+SoD instanceroot(2784) — dfc.dungeon
 ├─ Grimroot
 │  ├─ existing loot — inherits dfc.dungeon
 │  └─ item(235787) — adds dfc.ironwood-branch
@@ -625,27 +629,19 @@ inst(2784) — dfc.dungeon
    └─ all his loot — inherits both parent rules
 ```
 
-## Reproduce and check these files
+## Reproduce and check the comparison
 
-The generator reproduces the comparison copies for this PR. Ordinary database maintenance still edits the Lua source itself; it does not require editing this Python tool. The production migration and stage switch remain proposed.
-
-| File | Maintained by |
-|---|---|
-| [schedule.json](../../schedule.json) | Author: edit the timing rules here. |
-| [full-source/generate.py](../full-source/generate.py) | Comparison setup: the proposed Lua edits and original-writer mappings. |
-| Stage Lua, `migration.json`, `selection.json` | Generator: saved complete versions for this comparison. |
-| [coverage.json](coverage.json) | Generator: all 3 original writer calls, with their source lines and replacement keys. |
-
-From the repository root, using Lua 5.1:
+Authors change production Lua and the shared schedule. The comparison tools generate these saved alternatives, controls, provenance and coverage files. Their role is identified at the top of each file.
 
 ```console
-python .contrib/phase-examples/evolution/full-source/generate.py
+python .contrib/phase-examples/evolution/full-source/source_sets.py --check
+python .contrib/phase-examples/evolution/full-source/generate.py --check
 python .contrib/phase-examples/evolution/full-source/verify.py --lua lua5.1
 python .contrib/phase-examples/prepare.py --check
 ```
 
-The checks compare P1’s raw payload with production, require identical P2.1/P2.2/P3 Lua, and read the saved P2/P4 files to compare all ordinary source tokens against P1 after selecting each branch. They also check key coverage and Lua 5.1 syntax across client versions and flavors. They do **not** execute these complete native files through the production Parser or establish an independent legacy golden.
+[coverage.json](coverage.json) maps every legacy writer to its original source alternative, owner and proposed key. The checks compare P1 bytes with production and compare actual saved P2/P4 ordinary source tokens after flavor/version selection. They also check source selection, route multiplicity and Lua 5.1 syntax. These static checks do not execute every complete native file through the production Parser or supply an independent production legacy golden.
 
-The expanded full-file diffs contain every changed hunk; the short P2.1 view selects exact hunks from that full diff. Line endings are normalized for Markdown. `/dev/null` means the file is absent at the preceding migration step.
+The full diff blocks include every changed hunk. Markdown normalizes line endings for display; the source checks retain exact P1 byte provenance.
 
 [Choose another instance](../README.md)

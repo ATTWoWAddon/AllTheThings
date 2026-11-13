@@ -1,16 +1,16 @@
 {
-  "$comment": "Generated comparison coverage: original P1 line, legacy writer and authoring scope key.",
+  "$comment": "Generated standalone SoD source owner coverage.",
   "owners": [
     {
-      "line": 8,
+      "line": 6,
       "phase": "SOD_PHASE_FOUR",
       "key": "dfc.dungeon",
-      "kind": "constructor",
-      "constructor": "inst",
+      "kind": "instance-record",
+      "constructor": "instanceroot",
       "identity": "2784"
     },
     {
-      "line": 23,
+      "line": 21,
       "phase": "SOD_PHASE_SEVEN",
       "key": "dfc.ironwood-branch",
       "kind": "constructor",
@@ -18,7 +18,7 @@
       "identity": "235787"
     },
     {
-      "line": 42,
+      "line": 40,
       "phase": "SOD_PHASE_FIVE",
       "key": "dfc.azgaloth",
       "kind": "constructor",
