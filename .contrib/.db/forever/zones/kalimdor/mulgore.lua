@@ -1488,7 +1488,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					{ 44.2, 41.2, MAP.MULGORE },
 				},
 				groups = {
-					i(4854, {	-- Demon Scarred Cloak
+					i(4854, {	-- Demon Scarred Cloak (QS!)
 						races = HORDE_ONLY,
 					}),
 				},
