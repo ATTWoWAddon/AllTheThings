@@ -35,8 +35,9 @@ instanceroot(2994, {	-- Alcaz Prison
 			}),
 			q(96337, {	-- More Valuable Than Gold
 				sourceQuest = 96335,	-- The Man in the Iron Chains
-				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID. Turned in at Connery's Trunk (611086); find where it is.
+				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID. Turned in at Connery's Trunk (611086) in Westfall [43.4, 67.9].
 				qi = 274077,	-- Mason's Note (PQI!)
+				maps = { MAP.WESTFALL },
 				lvl = 48,
 				groups = {
 					objective(1, {	-- 0/1 Find Mason Connery's Treasure
