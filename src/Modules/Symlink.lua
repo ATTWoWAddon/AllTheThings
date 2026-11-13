@@ -953,6 +953,34 @@ local function GetNpcIDForDrops(group)
 	-- Fyrakk Assaults uses two headers with 'crs' test that when changing this check
 	return group.npcID or ((group.encounterID or group.isWorldQuest) and group.crs and group.crs[1])
 end
+-- A search result for an NPC/Object (tooltip or popout) already lists every reference to it directly, so the NPC/OBJECT
+-- Fillers would add the same groups a second time (e.g. a Zone Drop listed once plainly and again under its 'Zone Drop' header)
+-- Returns a set of the hashes of the direct children of the group, if any
+local function GetDirectChildHashes(group)
+	local g = group.g
+	if not g then return end
+	local hashes, h
+	for i=1,#g do
+		h = g[i].hash
+		if h then
+			if hashes then hashes[h] = true
+			else hashes = { [h] = true } end
+		end
+	end
+	return hashes
+end
+-- Removes the direct children of the group whose hash is in the given set
+local function RemoveDirectChildren(group, hashes)
+	local g = group.g
+	if not g then return end
+	local h
+	for i=#g,1,-1 do
+		h = g[i].hash
+		if h and hashes[h] then
+			tremove(g, i)
+		end
+	end
+end
 
 app.AddEventHandler("OnLoad", function()
 	local Fill = app.Modules.Fill
@@ -998,6 +1026,10 @@ app.AddEventHandler("OnLoad", function()
 		local npcGroups = SearchForField("npcID", npcID);
 		if not npcGroups or #npcGroups == 0 then return end
 
+		-- skip groups already nested directly (i.e. the search result for this NPC), and drop the plain copy
+		-- of any group which is about to be re-added under its header
+		local existing, dupes = GetDirectChildHashes(group), nil
+
 		-- see if there's a difficulty wrapping the fill group
 		local difficultyID = GetRelativeValue(group, "difficultyID");
 		if difficultyID then
@@ -1008,8 +1040,10 @@ app.AddEventHandler("OnLoad", function()
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
 					if NPCFillThings[npcGroup.key] and npcGroup.providers then
+						if existing and existing[npcGroup.hash] then
+							-- already listed directly
 						-- app.PrintDebug("IsThingDrop.Diff",group.hash,"<==",npcGroup.hash)
-						if groups then groups[#groups + 1] = CreateObject(npcGroup)
+						elseif groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
 					else
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
@@ -1019,6 +1053,10 @@ app.AddEventHandler("OnLoad", function()
 							npcDiff = GetRelativeValue(npcGroup, "difficultyID");
 							-- copy the header under the NPC groups
 							if not npcDiff or npcDiff == difficultyID then
+								if existing and existing[npcGroup.hash] then
+									if dupes then dupes[npcGroup.hash] = true
+									else dupes = { [npcGroup.hash] = true } end
+								end
 								-- wrap the npcGroup in the matching header if it is not a header
 								if not npcGroup.headerID then
 									npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
@@ -1031,6 +1069,7 @@ app.AddEventHandler("OnLoad", function()
 					end
 				end
 			end
+			if dupes then RemoveDirectChildren(group, dupes) end
 			return groups;
 		else
 			-- app.PrintDebug("FillNPC")
@@ -1039,8 +1078,10 @@ app.AddEventHandler("OnLoad", function()
 				npcGroup = npcGroups[i]
 				if npcGroup.hash ~= group.hash then
 					if NPCFillThings[npcGroup.key] and npcGroup.providers then
+						if existing and existing[npcGroup.hash] then
+							-- already listed directly
 						-- app.PrintDebug("IsThingDrop",group.hash,"<==",npcGroup.hash)
-						if groups then groups[#groups + 1] = CreateObject(npcGroup)
+						elseif groups then groups[#groups + 1] = CreateObject(npcGroup)
 						else groups = { CreateObject(npcGroup) }; end
 					else
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
@@ -1048,6 +1089,10 @@ app.AddEventHandler("OnLoad", function()
 						-- where headerID is allowed
 						if headerID then
 							-- copy the header under the NPC groups
+							if existing and existing[npcGroup.hash] then
+								if dupes then dupes[npcGroup.hash] = true
+								else dupes = { [npcGroup.hash] = true } end
+							end
 							-- wrap the npcGroup in the matching header if it is not a header
 							if not npcGroup.headerID then
 								npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
@@ -1059,6 +1104,7 @@ app.AddEventHandler("OnLoad", function()
 					end
 				end
 			end
+			if dupes then RemoveDirectChildren(group, dupes) end
 			return groups;
 		end
 	end,
@@ -1083,6 +1129,9 @@ app.AddEventHandler("OnLoad", function()
 		local objectGroups = SearchForField("objectID", objectID);
 		if not objectGroups or #objectGroups == 0 then return end
 
+		-- skip groups already nested directly (i.e. the search result for this Object)
+		local existing = GetDirectChildHashes(group)
+
 		-- see if there's a difficulty wrapping the fill group
 		local difficultyID = GetRelativeValue(group, "difficultyID");
 		if difficultyID then
@@ -1092,7 +1141,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#objectGroups do
 				objGroup = objectGroups[i]
 				objID = objGroup.objectID
-				if not objID or objID ~= objectID then
+				if (not objID or objID ~= objectID) and not (existing and existing[objGroup.hash]) then
 					objDiff = GetRelativeValue(objGroup, "difficultyID");
 					if not objDiff or objDiff == difficultyID then
 						-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",objGroup.hash)
@@ -1108,7 +1157,7 @@ app.AddEventHandler("OnLoad", function()
 			for i=1,#objectGroups do
 				objGroup = objectGroups[i]
 				objID = objGroup.objectID
-				if not objID or objID ~= objectID then
+				if (not objID or objID ~= objectID) and not (existing and existing[objGroup.hash]) then
 					-- app.PrintDebug("IsDrop",group.hash,"<==",objGroup.hash)
 					if groups then groups[#groups + 1] = CreateObject(objGroup)
 					else groups = { CreateObject(objGroup) }; end
