@@ -1,5 +1,7 @@
 # Phase examples: Lua and JSON changes
 
+**[Open the Phase Explorer GUI](../src/PhaseExplorer/README.md)** to browse a checkout's Lua/JSON dependencies, inherited bindings and opening rules.
+
 **Start with the instance you want to change.** Each page shows the complete original Lua, the actual edits at P2.1, the JSON to write at P2.2, and the complete final P4 files.
 
 | Raid or dungeon | Complete Lua / JSON comparison |
