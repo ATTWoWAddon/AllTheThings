@@ -5022,6 +5022,10 @@ q(7042,{coords={
 [87]={{33.2,67.8}}},e=14,isYearly=1,maps={1416},qgs={13433},r=2,rwp=40003,u=2}),
 q(6963,{coords={
 [85]={{52.4,77}}},e=14,isYearly=1,maps={1416},qgs={13418},r=1,rwp=40003,u=2}),
+q(29382,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70928},r=2,u=2,g={
+i(70931,{e=14})}}),
+q(29383,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70932},r=1,u=2,g={
+i(70931,{e=14})}}),
 q(7063,{coords={
 [87]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,qgs={2916},qis={17735},r=2,sourceQuests={7062}}),
 q(7061,{coords={

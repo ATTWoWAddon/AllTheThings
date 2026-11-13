@@ -140,6 +140,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 						}),
 					},
 				}),
+				q(27546, {	-- Speak with Captain Anton
+					qg = 45702,	-- Erunak Stonespeaker <The Earthen Ring>
+					coord = { 62.5, 75.5, STORMWIND_CITY },
+					-- TODO: Merrymeir thinks there is a Horde counterpart; not found on Wowhead yet.
+					races = ALLIANCE_ONLY,
+				}),
 				q(25415, {	-- Spreading The Word (A)
 					sourceQuest = 25290,	-- Infiltrating the Cult (A)
 					qg = 40098,	-- Overseer Sylandra
@@ -595,6 +601,89 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 						}),
 						objective(2, {	-- Read the Warchief's Proclamation
 							provider = { "i", 62493 },	-- Warchief's Proclamation
+						}),
+					},
+				}),
+				-- Invasion Quests
+				q(25773, {	-- A Natural Occurrence (A)
+					qg = 40220,	-- Mysterious Device
+					qi = 56008,	-- Rift Shard (PQI!)
+					races = ALLIANCE_ONLY,
+					lvl = 30,
+				}),
+				q(25571, {	-- A Natural Occurrence (H)
+					qg = 40220,	-- Mysterious Device
+					qi = 56008,	-- Rift Shard (PQI!)
+					races = HORDE_ONLY,
+					lvl = 30,
+				}),
+				q(27137, {	-- Earth Girls Aren't So Easy (A)
+					description = "Blizzard marked this quest obsolete.",
+					qg = 45009,	-- King Magni Bronzebeard
+					races = ALLIANCE_ONLY,
+				}),
+				q(27138, {	-- Earth Girls Aren't So Easy (H)
+					description = "Blizzard marked this quest obsolete.",
+					qg = 45046,	-- Garrosh Hellscream
+					races = HORDE_ONLY,
+				}),
+				q(27122, {	-- Fired Up and Not So Good To Go. (A)
+					qg = 45009,	-- King Magni Bronzebeard
+					races = ALLIANCE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Grand Ambassador Flamelash slain
+							provider = { "n", 41110 },	-- Grand Ambassador Flamelash
+						}),
+					},
+				}),
+				q(27127, {	-- Fired Up and Not So Good To Go. (H)
+					qg = 45046,	-- Garrosh Hellscream
+					races = HORDE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Grand Ambassador Flamelash slain
+							provider = { "n", 41110 },	-- Grand Ambassador Flamelash
+						}),
+					},
+				}),
+				q(27207, {	-- This Blows (A)
+					qg = 42443,	-- King Varian Wrynn
+					races = ALLIANCE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Prince Sarsarun slain
+							provider = { "n", 45214 },	-- Prince Sarsarun
+						}),
+					},
+				}),
+				q(27209, {	-- This Blows (H)
+					qg = 42600,	-- Cairne Bloodhoof
+					races = HORDE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Prince Sarsarun slain
+							provider = { "n", 45214 },	-- Prince Sarsarun
+						}),
+					},
+				}),
+				q(26054, {	-- Water They Up To? (A)
+					qg = 42443,	-- King Varian Wrynn
+					races = ALLIANCE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Kai'ju Gahz'rilla slain
+							provider = { "n", 40961 },	-- Kai'ju Gahz'rilla
+						}),
+					},
+				}),
+				q(26990, {	-- Water They Up To? (H)
+					qg = 42600,	-- Cairne Bloodhoof
+					races = HORDE_ONLY,
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Kai'ju Gahz'rilla slain
+							provider = { "n", 40961 },	-- Kai'ju Gahz'rilla
 						}),
 					},
 				}),

@@ -47,6 +47,8 @@ qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",52707}},u=2
 q(25254,{coords={
 [1454]={{52.9,72.4}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={39448},r=1,sourceQuests={25228},u=2,g={
 qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",52706}},u=2})}}),
+q(27546,{coords={
+[1453]={{62.5,75.5}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45702},r=2,u=2}),
 q(25415,{coords={
 [1429]={{31.3,65}}},OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40098},r=2,sourceQuests={25290},u=2,g={
 qo(1,{coords={
@@ -169,7 +171,23 @@ qo(2,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",62315}},u=2
 q(27801,{coords={
 [1454]={{52.9,72.4}}},description="Activated with phase 3 of the Elemental Unrest.",OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={39448},r=1,u=2,g={
 qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",38067},{"n",39343},{"n",39632},{"n",46491}},u=2}),
-qo(2,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",62493}},u=2})}})}}),
+qo(2,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",62493}},u=2})}}),
+q(25773,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40220},qis={56008},r=2,u=2}),
+q(25571,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40220},qis={56008},r=1,u=2}),
+q(27137,{description="Blizzard marked this quest obsolete.",OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45009},r=2,u=2}),
+q(27138,{description="Blizzard marked this quest obsolete.",OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45046},r=1,u=2}),
+q(27122,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45009},r=2,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",41110}},u=2})}}),
+q(27127,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45046},r=1,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",41110}},u=2})}}),
+q(27207,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={42443},r=2,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",45214}},u=2})}}),
+q(27209,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={42600},r=1,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",45214}},u=2})}}),
+q(26054,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={42443},r=2,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",40961}},u=2})}}),
+q(26990,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={42600},r=1,u=2,g={
+qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",40961}},u=2})}})}}),
 n(44822,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,u=2,g={
 s(179893,53496,{b=1,f=8,lvl=80,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,q=4,u=2}),
 i(53499,{b=1,f=51,lvl=80,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,q=4,u=2}),
