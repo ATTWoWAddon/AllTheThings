@@ -140,7 +140,7 @@ def argument_owner(text):
         if kind != 'constructor' or constructor != 'inst':
             raise ValueError('Unsupported phase list owner')
         return 'list', constructor, identity
-    if len(stream) < 4 or stream[0].text not in ('i', 'q', 'n', 'n_conditional', 'd', 'inst'):
+    if len(stream) < 4 or stream[0].text not in ('i', 'q', 'n', 'o', 'n_conditional', 'd', 'inst'):
         raise ValueError('Unsupported phase constructor')
     if stream[1].text != '(' or ends[1] != len(stream) - 1:
         raise ValueError('Unsupported phase expression')
