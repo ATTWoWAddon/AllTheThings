@@ -207,6 +207,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						description = "Buying the Renowned cloaks will remove this quest from being available!",
 						provider = { "n", 187700 },	-- Pathfinder Jab
 						coord = { 47.3, 83.4, THE_WAKING_SHORES },
+						lockCriteria = { 4,	-- locked once all four cloak appearances are learned (bought from the vendor)
+							"sourceID", 182306,	-- Renowned Expeditioner's Cape
+							"sourceID", 182307,	-- Renowned Expeditioner's Cloak
+							"sourceID", 182308,	-- Renowned Expeditioner's Drape
+							"sourceID", 182309,	-- Renowned Expeditioner's Shawl
+						},
 						groups = {
 							i(199873),	-- Renowned Expeditioner's Cape
 							i(199874),	-- Renowned Expeditioner's Cloak

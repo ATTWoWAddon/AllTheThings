@@ -32243,7 +32243,7 @@ q(72024,{coords={
 [2022]={{47.1,82.6}}},lvl=60,minReputation={2507,3},qgs={189226},rwp=110000,u=2,g={
 i(198863,{b=1,minReputation={2507,3},u=2})}}),
 q(70812,{coords={
-[2022]={{47.3,83.4}}},description="Buying the Renowned cloaks will remove this quest from being available!",lvl=10,minReputation={2507,4},qgs={187700},g={
+[2022]={{47.3,83.4}}},description="Buying the Renowned cloaks will remove this quest from being available!",lc={4,"sourceID",182306,"sourceID",182307,"sourceID",182308,"sourceID",182309},lvl=10,minReputation={2507,4},qgs={187700},g={
 s(182306,199873,{f=3,minReputation={2507,4}}),
 s(182307,199874,{f=3,minReputation={2507,4}}),
 s(182309,199876,{f=3,minReputation={2507,4}}),
