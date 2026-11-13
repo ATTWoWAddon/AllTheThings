@@ -817,6 +817,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 						coord = { 25.0, 75.8, DUN_MOROGH },
 						timeline = { REMOVED_4_0_3 },
 						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(420, {	-- Senir's Observations (2/2)
 						sourceQuest = 282,	-- Senir's Observations (1/2)
@@ -826,6 +827,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 						coord = { 33.4, 71.8, DUN_MOROGH },
 						timeline = { REMOVED_4_0_3 },
 						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(3112, {	-- Simple Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters

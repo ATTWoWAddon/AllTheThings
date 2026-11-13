@@ -294,6 +294,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qi = 2619,	-- Grelin's Report (PQI!)
 						coord = { 25.0, 75.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(420, {	-- Senir's Observations (2/2)
 						sourceQuest = 282,	-- Senir's Observations (1/2)
@@ -302,6 +303,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						qi = 2619,	-- Grelin's Report (PQI!)
 						coord = { 33.4, 71.8, MAP.DUN_MOROGH },
 						races = ALLIANCE_ONLY,
+						isBreadcrumb = true,
 					}),
 					q(3112, {	-- Simple Memorandum
 						sourceQuest = 179,	-- Dwarven Outfitters
