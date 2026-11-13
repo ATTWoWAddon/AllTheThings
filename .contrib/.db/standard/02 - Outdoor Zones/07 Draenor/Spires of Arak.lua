@@ -97,7 +97,9 @@ maproot(DRAENOR, SPIRES_OF_ARAK, {
 			}),
 			ach(9612),	-- Eggs in One Basket
 			ach(8941),	-- Explore Spires of Arak
-			ach(9613),	-- Fish Gotta Swim, Birds Gotta Eat
+			ach(9613, {	-- Fish Gotta Swim, Birds Gotta Eat
+				cost = { { "i", 114238, 1 } },	-- Spiced Barbed Trout
+			}),
 			ach(9601, {		-- King of the Monsters (Lost Veil Anzu)
 				sym = {{ "achievement_criteria" }},
 			}),
@@ -2036,6 +2038,12 @@ maproot(DRAENOR, SPIRES_OF_ARAK, {
 				questID = 36433,
 				icon = 1002596,
 				coord = { 56.3, 45.3, SPIRES_OF_ARAK },
+			}),
+			o(233805, {	-- Spiced Barbed Trout
+				description = "Spawns when you kill a Darting Swift Feather that has the Caught Fish buff.",
+				cr = 84013,	-- Darting Swift Feather
+				coord = { 54.4, 10.3, SPIRES_OF_ARAK },
+				groups = { i(114238) },	-- Spiced Barbed Trout
 			}),
 			o(234471, {	-- Spray-O-Matic 5000 XT
 				questID = 36365,

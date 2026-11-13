@@ -83565,7 +83565,7 @@ crit(27550,{achID=9923,id=4,r=1})}}),
 ach(9612,{providers={{"s",175872}}}),
 ach(8941,{
 crit(24637,{achID=8935,id=5})}),
-ach(9613,{providers={{"s",168349}}}),
+ach(9613,{cost={{"i",114238,1}},providers={{"s",168349}}}),
 ach(9601),
 ach(9072,{sourceQuests={37177},g={
 title(278,{gender=2}),
@@ -84491,6 +84491,9 @@ i(199097,{b=1})}}),
 o(235135,{coords={
 [542]={{56.3,45.3}}},description="Requires archaeology.",icon=1002596,questID=36433,g={
 crit(26955,{achID=9728,id=128})}}),
+o(233805,{coords={
+[542]={{54.4,10.3}}},crs={84013},description="Spawns when you kill a Darting Swift Feather that has the Caught Fish buff.",g={
+i(114238,{b=1,f=55,spellID=168349})}}),
 o(234471,{coords={
 [542]={{59.7,81.5}}},questID=36365,g={
 crit(26933,{achID=9728,id=106})}}),

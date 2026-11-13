@@ -1564,6 +1564,7 @@ MobileDB.GameObject = {
 	[233249] = true,	-- Finalize Garrison Plot
 	[233250] = true,	-- Finalize Garrison Plot
 	[233251] = true,	-- Finalize Garrison Plot
+	[233805] = true,	-- Spiced Barbed Trout
 	[233899] = true,	-- XD-57 "Bullseye" Guided Rocket Kit
 	[234105] = true,	-- Arakkoa Archaeology Find
 	[234106] = true,	-- Ogre Archaeology Find
