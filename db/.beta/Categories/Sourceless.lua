@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local flt,follower,h,i,mm,q,s,x=_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
+local flt,h,i,mm,q,s,x=_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMountMod,_.CreateQuest,_.CreateItemSource,_.CreateExpansion;
 categories.Sourceless={
 h(-88,{awp=40003,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(4,{
@@ -190,10 +190,6 @@ mm(207775,{b=1,questID=77146})}})}),
 x(11,{awp=110002,g={
 x(11.0000001,{awp=110000,g={
 mm(223510,{b=1,qis={235692},questID=82177})}})}})}}),
-h(-33,{awp=90002,g={
-x(9,{
-x(9.0001,{awp=90001,g={
-follower(1208)}})})}}),
 h(-101,{awp=60003,sharedDescription="If you obtain this item, please provide as much information as you can about how and where you got it.",g={
 x(6,{
 x(6.0002,{awp=60002,g={

@@ -15463,21 +15463,26 @@ q(24757,{crs={36853},lvl=30,qgs={37120},qis={49888},sourceQuests={24756}}),
 q(24548,{description="These can drop from any of the bosses on 25-Man Normal or Heroic. You need 50 of these, so this quest will take you several weeks to finish.",lvl=30,qgs={37120},qis={50274},sourceQuests={24757}}),
 q(24912,{lvl=30,qgs={37120},sourceQuests={24548}}),
 q(24549,{lvl=30,qgs={37120},sourceQuests={24548},g={
-s(24303,49623,{b=1,c={1,2,6},f=22,lvl=30,spellID=71903}),
-ach(4623,{c={1,2,6}})}}),
+ach(4623,{c={1,2,6}}),
+s(24303,49623,{b=1,c={1,2,6},f=22,lvl=30,spellID=71903})}}),
 q(24748,{crs={36597},lvl=30,qgs={37120},sourceQuests={24549}}),
-i(51315,{b=1,c={1,2,6},description="Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",lvl=30,providers={{"i",51316}},qgs={36597},questID=24914,sourceQuests={24549},g={
-i(51317,{b=1,description="Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",lvl=30,questID=24915,g={
+q(24914,{c={1,2,6},description="Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",lvl=30,qss={51315},sourceQuests={24549},g={
+i(51316,{b=1,g={
+i(51317,{b=1}),
+i(51319,{b=1}),
+i(51320,{b=1}),
+i(51321,{b=1}),
+i(51318,{b=1})}})}}),
+q(24915,{cost={{"i",51317,1}},description="Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",lvl=30,qgs={37120},sourceQuests={24914},g={
 mnt(73313,{b=2,itemID=52200,lvl=10})}}),
-i(51319,{b=1,description="Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",lvl=30,questID=24917,g={
-toy(52201,{lvl=10})}}),
-i(51320,{b=1,description="Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",lvl=30,questID=24919,g={
-s(25723,52252,{f=9,lvl=30,spellID=73326})}}),
-i(51321,{b=1,description="Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",lvl=30,questID=24918,g={
-toy(52253,{lvl=10})}}),
-i(51318,{b=1,description="Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",lvl=30,questID=24916,g={
+q(24916,{cost={{"i",51318,1}},description="Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",lvl=30,qgs={38606},sourceQuests={24914},g={
 i(52251,{collectible=false,lvl=30,spellID=73324})}}),
-i(51316,{b=1})}})}}),
+q(24917,{cost={{"i",51319,1}},description="Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",lvl=30,qgs={38607},sourceQuests={24914},g={
+toy(52201,{lvl=10})}}),
+q(24918,{cost={{"i",51321,1}},description="Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",lvl=30,qgs={38609},sourceQuests={24914},g={
+toy(52253,{lvl=10})}}),
+q(24919,{cost={{"i",51320,1}},description="Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",lvl=30,qgs={38608},sourceQuests={24914},g={
+s(25723,52252,{f=9,lvl=30,spellID=73326})}})}}),
 h(-12,{awp=30002,g={
 ach(4602,{
 mnt(72808,{b=1,itemID=51954,lvl=10})}),
@@ -16735,7 +16740,8 @@ s(24490,50012,{b=1,f=21,lvl=30,modID=1}),
 s(24716,50426,{b=1,f=20,lvl=30,modID=1}),
 s(24480,49997,{b=1,f=23,lvl=30,modID=1}),
 s(24718,50428,{b=1,f=23,lvl=30,modID=1}),
-s(24467,49981,{b=1,f=33,lvl=30,modID=1})}})})}),
+s(24467,49981,{b=1,f=33,lvl=30,modID=1}),
+i(51315,{b=1})}})})}),
 d(6,{
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},g={
 i(50274,{b=1,modID=1})}}),
@@ -16986,7 +16992,8 @@ s(24839,50737,{b=1,f=21,lvl=30,modID=1}),
 s(24838,50736,{b=1,f=20,lvl=30,modID=1}),
 s(24840,50738,{b=1,f=23,lvl=30,modID=1}),
 s(24836,50734,{b=1,f=23,lvl=30,modID=1}),
-s(24835,50733,{b=1,f=33,lvl=30,modID=1})}})})})}}),
+s(24835,50733,{b=1,f=33,lvl=30,modID=1}),
+i(51315,{b=1})}})})})}}),
 inst(761,{awp=30305,coords={
 [115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,mapID=200,savedInstanceID=724,g={
 h(-45,{
@@ -21774,6 +21781,8 @@ o(181665,{
 s(9403,23923,{f=20,lvl=6,modID=2}),
 s(13186,29518,{f=25,lvl=8,modID=2})})}),
 h(-58,{
+n(52915,{cost={{"i",33865,1}},g={
+i(33926,{b=1,f=55,modID=2})}}),
 n(52924,{description="To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates."})}),
 h(-63,{
 s(35568,69801,{crs={23542,23580,23581,23582,23584,23586,23596,23597,23774,23834,24043,24059,24064,24065,24138,24175,24374,24530,24549},f=7,loc=43,lvl=32,modID=2}),
@@ -64153,7 +64162,7 @@ i(270170,{f=53,modID=4,spellID=1295833,up=3})}})}}),
 ah(3317,{type="d",g={
 e(2874,{crs={258557,258558},g={
 i(270912,{c={3,7,13},modID=4,spellID=1289285,g={
-s(307069,271504,{c={13},f=6,loc=42,modID=4,up=3}),
+s(307053,271502,{c={13},f=6,loc=44,modID=4,up=3}),
 s(306981,271493,{c={3},f=6,loc=44,modID=4,up=3}),
 s(306909,271484,{c={7},f=6,loc=44,modID=4,up=3})}}),
 i(270911,{c={4,10,11,12},modID=4,spellID=1289285,g={
@@ -64179,7 +64188,7 @@ s(304382,268224,{f=7,loc=46,modID=4,up=3}),
 s(304398,268228,{f=4,loc=43,modID=4,up=3})}}),
 e(2882,{npcID=259181,g={
 i(270928,{c={3,7,13},modID=4,spellID=1289287,g={
-s(307053,271502,{c={13},f=6,loc=44,modID=4,up=3}),
+s(307069,271504,{c={13},f=6,loc=42,modID=4,up=3}),
 s(306997,271495,{c={3},f=6,loc=42,modID=4,up=3}),
 s(306924,271486,{c={7},f=6,loc=42,modID=4,up=3})}}),
 i(270927,{c={4,10,11,12},modID=4,spellID=1289287,g={
@@ -64344,7 +64353,7 @@ s(306246,270930,{f=34,modID=3,up=5}),
 s(304425,268235,{f=5,loc=42,modID=3,up=5})}}),
 e(2874,{crs={258557,258558},g={
 i(270912,{c={3,7,13},modID=3,spellID=1289285,g={
-s(307068,271504,{c={13},f=6,loc=42,modID=3,up=5}),
+s(307052,271502,{c={13},f=6,loc=44,modID=3,up=5}),
 s(306980,271493,{c={3},f=6,loc=44,modID=3,up=5}),
 s(306908,271484,{c={7},f=6,loc=44,modID=3,up=5})}}),
 i(270911,{c={4,10,11,12},modID=3,spellID=1289285,g={
@@ -64370,7 +64379,7 @@ s(304381,268224,{f=7,loc=46,modID=3,up=5}),
 s(304397,268228,{f=4,loc=43,modID=3,up=5})}}),
 e(2882,{npcID=259181,g={
 i(270928,{c={3,7,13},modID=3,spellID=1289287,g={
-s(307052,271502,{c={13},f=6,loc=44,modID=3,up=5}),
+s(307068,271504,{c={13},f=6,loc=42,modID=3,up=5}),
 s(306996,271495,{c={3},f=6,loc=42,modID=3,up=5}),
 s(306925,271486,{c={7},f=6,loc=42,modID=3,up=5})}}),
 i(270927,{c={4,10,11,12},modID=3,spellID=1289287,g={
@@ -64550,7 +64559,7 @@ s(306542,270930,{f=34,modID=5,up=6}),
 s(304427,268235,{f=5,loc=42,modID=5,up=6})}}),
 e(2874,{crs={258557,258558},g={
 i(270912,{c={3,7,13},modID=5,spellID=1289285,g={
-s(307070,271504,{c={13},f=6,loc=42,modID=5,up=6}),
+s(307054,271502,{c={13},f=6,loc=44,modID=5,up=6}),
 s(306982,271493,{c={3},f=6,loc=44,modID=5,up=6}),
 s(306910,271484,{c={7},f=6,loc=44,modID=5,up=6})}}),
 i(270911,{c={4,10,11,12},modID=5,spellID=1289285,g={
@@ -64576,7 +64585,7 @@ s(304383,268224,{f=7,loc=46,modID=5,up=6}),
 s(304399,268228,{f=4,loc=43,modID=5,up=6})}}),
 e(2882,{npcID=259181,g={
 i(270928,{c={3,7,13},modID=5,spellID=1289287,g={
-s(307054,271502,{c={13},f=6,loc=44,modID=5,up=6}),
+s(307070,271504,{c={13},f=6,loc=42,modID=5,up=6}),
 s(306998,271495,{c={3},f=6,loc=42,modID=5,up=6}),
 s(306926,271486,{c={7},f=6,loc=42,modID=5,up=6})}}),
 i(270927,{c={4,10,11,12},modID=5,spellID=1289287,g={
@@ -64739,7 +64748,7 @@ s(304428,268235,{f=5,loc=42,modID=6})}}),
 e(2874,{crs={258557,258558},g={
 ach(63524),
 i(270912,{c={3,7,13},modID=6,spellID=1289285,g={
-s(307071,271504,{c={13},f=6,loc=42,modID=6}),
+s(307055,271502,{c={13},f=6,loc=44,modID=6}),
 s(306983,271493,{c={3},f=6,loc=44,modID=6}),
 s(306911,271484,{c={7},f=6,loc=44,modID=6})}}),
 i(270911,{c={4,10,11,12},modID=6,spellID=1289285,g={
@@ -64766,7 +64775,7 @@ s(304400,268228,{f=4,loc=43,modID=6})}}),
 e(2882,{npcID=259181,g={
 ach(63526),
 i(270928,{c={3,7,13},modID=6,spellID=1289287,g={
-s(307055,271502,{c={13},f=6,loc=44,modID=6}),
+s(307071,271504,{c={13},f=6,loc=42,modID=6}),
 s(306999,271495,{c={3},f=6,loc=42,modID=6}),
 s(306927,271486,{c={7},f=6,loc=42,modID=6})}}),
 i(270927,{c={4,10,11,12},modID=6,spellID=1289287,g={

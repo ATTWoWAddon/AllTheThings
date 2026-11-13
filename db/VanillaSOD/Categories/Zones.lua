@@ -12770,9 +12770,9 @@ s(156791,2385,{f=6,loc=44,q=1})}}),
 q(3364,{coords={
 [1426]={{25,75.8}}},lvl=4,qgs={12738},qis={10439},r=2}),
 q(282,{altQuests={287},coords={
-[1426]={{25,75.8}}},qgs={786},qis={2619},r=2,sourceQuests={218}}),
+[1426]={{25,75.8}}},isBreadcrumb=1,nextQuests={420},qgs={786},qis={2619},r=2,sourceQuests={218}}),
 q(420,{altQuests={287},coords={
-[1426]={{33.4,71.8}}},qgs={1965},qis={2619},r=2,sourceQuests={282}}),
+[1426]={{33.4,71.8}}},isBreadcrumb=1,nextQuests={287},qgs={1965},qis={2619},r=2,sourceQuests={282}}),
 q(3112,{c={1},coords={
 [1426]={{29.8,71.2}}},qgs={658},qis={9544},races={7},sourceQuests={179}}),
 q(3106,{c={1},coords={

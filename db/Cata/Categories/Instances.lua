@@ -14637,8 +14637,8 @@ q(24548,{description="These can drop from any of the bosses on 25-Man Normal or 
 qo(1,{providers={{"i",50274}}})}}),
 q(24912,{qgs={37120},sourceQuests={24548}}),
 q(24549,{qgs={37120},sourceQuests={24548},g={
-s(178057,49623,{b=1,c={1,2,6},f=22,lvl=80,q=5}),
-ach(4623,{c={1,2,6}})}}),
+ach(4623,{c={1,2,6}}),
+s(178057,49623,{b=1,c={1,2,6},f=22,lvl=80,q=5})}}),
 q(24748,{qgs={37120},sourceQuests={24549},g={
 qo(1,{providers={{"n",36597}}})}}),
 q(24914,{description="Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",qss={51315},sourceQuests={24549},g={
@@ -21392,6 +21392,8 @@ o(181665,{
 s(134301,23923,{f=20,lvl=12,q=1}),
 s(139864,29518,{f=25,lvl=16,q=1})})}),
 h(-58,{
+n(52915,{cost={{"i",33865,1}},g={
+i(33926,{b=1,f=55,q=3})}}),
 n(52924,{description="To open the gates you have to tell Vol'jin you are ready to open the gates, and then click ONCE on the gong when it becomes interactable. Your character will keep auto-hitting it, and Vol'jin will open the gates."})}),
 h(-63,{
 s(212409,69801,{crs={23542,23580,23581,23582,23584,23586,23596,23597,23774,23834,24043,24059,24064,24065,24138,24175,24374,24530,24549},f=7,loc=43,lvl=85,q=4}),

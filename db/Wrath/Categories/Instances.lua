@@ -13296,8 +13296,8 @@ q(24548,{description="These can drop from any of the bosses on 25-Man Normal or 
 qo(1,{providers={{"i",50274}}})}}),
 q(24912,{qgs={37120},sourceQuests={24548}}),
 q(24549,{qgs={37120},sourceQuests={24548},g={
-s(178057,49623,{b=1,c={1,2,6},f=22,lvl=80,q=5}),
-ach(4623,{c={1,2,6}})}}),
+ach(4623,{c={1,2,6}}),
+s(178057,49623,{b=1,c={1,2,6},f=22,lvl=80,q=5})}}),
 q(24748,{qgs={37120},sourceQuests={24549},g={
 qo(1,{providers={{"n",36597}}})}}),
 q(24914,{description="Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",qss={51315},sourceQuests={24549},g={

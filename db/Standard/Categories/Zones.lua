@@ -24178,7 +24178,7 @@ q(26192,{awp=40003,coords={
 cu(81,{requireSkill=185}),
 crit(15804,{achID=5474,awp=40200,id=4,r=2,requireSkill=185}),
 o(203801,{coords={
-[84]={{77.6,53.2}}},requireSkill=185})}}),
+[84]={{41.6,81.5},{43.7,72.9},{51.1,96.5},{64.8,71.1},{66.5,31.3},{77.6,53.2}}},requireSkill=185})}}),
 q(334,{coords={
 [84]={{58.1,67.5}}},qgs={1428},qis={2760},r=2}),
 q(27044,{awp=40003,coords={
@@ -83549,7 +83549,7 @@ s(63947,114980,{f=28}),
 s(63946,114979,{f=28}),
 s(63945,114978,{f=28})}})}),
 h(-63,{
-i(97979,{b=1,crs={79681,81541,81542,81543,81605,81858,84888,84945,85168,86024},lvl=40,rwp=70003,u=2}),
+i(97979,{b=1,crs={79681,81541,81542,81543,81605,81858,84888,84945,85168,86024},lvl=40}),
 p(1428,{b=1,crs={82261,82262},description="Can be found on the islands southwest of Socrethar's Rise.",itemID=113554,npcID=83562,spellID=167336})})}}),
 m(542,{icon=1060981,lore="Spires of Arak is a zone in southern Draenor. Previously known only as Arak, it once contained a single massive spire that dominated the forested landscape, before it was sundered by the destruction of the Apexis' Breath of Rukhmar. It is the homeland of arakkoa, who rule over the land from the Skyreach, a majestic palace situated atop the largest spire in the area. Their society, however underwent a great schism between the winged arakkoa and the wingless, who are considered lesser beings by their winged brethren. Many of the wingless arakkoa flee the Spires and pour into Talador, while the Iron Horde's Shattered Hand clan strengthens their presence. Many Azerothians also have built their bases along the coast, such as the Steamwheedle Cartel or the Alliance expedition led by Admiral Taylor.",petBattleLvl=25,lvl=30,g={
 h(-12,{
@@ -85700,7 +85700,7 @@ i(124636,{b=1,f=52,lvl=40,spellID=187615,u=2}),
 i(124637,{b=1,f=52,lvl=40,spellID=187613,u=2}),
 i(124638,{b=1,f=52,lvl=40,spellID=187612,u=2})}})}),
 h(-63,{
-i(97979,{b=1,crs={83004,83011,83020,83021,86190,87341},lvl=40,rwp=70003,u=2})})}}),
+i(97979,{b=1,crs={83004,83011,83020,83021,86190,87341},lvl=40})})}}),
 m(534,{icon=1048305,lore="Tanaan Jungle is a zone in eastern Draenor. It is seat of the Iron Horde's dominion over Draenor and home to the Bleeding Hollow clan, as well as the recently constructed Dark Portal that serves as a time-space gateway between Draenor and Azeroth. The Azerothian expedition mounts a counter-offensive against Iron Horde's operations in their homeworld in a desperate bid to shut down the gateway, with heavy losses that force the remnants to escape elsewhere in order to find allies.",petBattleLvl=25,lvl=40,g={
 h(-12,{
 ach(10068,{r=2,g={
@@ -88780,11 +88780,12 @@ n(97012,{coords={
 n(107109,{coords={
 [627]={{48.8,13.5}}},g={
 mnt(227956,{cost={{"c",1275,150}},itemID=141713,lvl=10}),
+i(141861,{b=1,cost={{"c",1275,50}},f=55,spellID=228139}),
 r(209507,{b=1,cost={{"c",1275,1}},itemID=136702,lvl=10,requireSkill=333,skillID=2487}),
 i(141860,{b=1,cost={{"c",1275,50}},f=55,spellID=228214}),
 toy(141862,{b=1,cost={{"c",1275,50}}}),
-r(209499,{b=1,cost={{"c",1275,1}},itemID=136699,lvl=10,requireSkill=164,skillID=2454}),
 r(194779,{b=1,cost={{"c",1275,1}},itemID=137935,lvl=10,requireSkill=165,skillID=2526}),
+r(209499,{b=1,cost={{"c",1275,1}},itemID=136699,lvl=10,requireSkill=164,skillID=2454}),
 r(209646,{b=1,cost={{"c",1275,1}},itemID=137727,lvl=10,requireSkill=202,skillID=2500}),
 r(209511,{b=1,cost={{"c",1275,1}},itemID=136706,lvl=10,requireSkill=773,skillID=2508})}})}),
 h(-60,{
@@ -102393,7 +102394,8 @@ r(269729,{b=1,cost={{"i",137642,4}},itemID=163023,lvl=10,pvp=1,requireSkill=202,
 r(269741,{b=1,cost={{"i",137642,2}},itemID=162353,lvl=10,pvp=1,requireSkill=773,skillID=2507}),
 r(269742,{b=1,cost={{"i",137642,4}},itemID=162354,lvl=10,pvp=1,requireSkill=773,skillID=2507})}}),
 n(145838,{coords={
-[1161]={{56.4,26.9}}},r=2}),
+[1161]={{56.4,26.9}}},r=2,g={
+i(167861,{f=55,spellID=294383})}}),
 n(143560,{coords={
 [1161]={{56.2,25.7}}},pvp=1,r=2,g={
 i(168920,{b=1,cost={{"i",137642,5}},f=55,lvl=50,pvp=1,sourceQuests={56499,56500},spellID=299506}),
@@ -110542,7 +110544,8 @@ n(125311,{coords={
 i(156655,{description="Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",spellID=260649,g={
 toy(156649,{b=1})}})}}),
 n(145837,{coords={
-[862]={{51.6,57.8}}},r=1}),
+[862]={{51.6,57.8}}},r=1,g={
+i(167862,{f=55,spellID=294384})}}),
 n(122698,{coords={
 [1165]={{44,34.6}}},r=1,g={
 i(160059),
@@ -126938,7 +126941,7 @@ s(115062,183970,{crs={165270},f=20,lvl=56}),
 i(183423,{b=1,c={1,2,6},lvl=50,spellID=341507,g={
 s(114597,183421,{cost={{"i",183422,1}},f=7,loc=47,lvl=48})}}),
 i(178557,{coords={
-[1525]={{57.2,68.4}}},crs={158796},customCollect={"SL_COV_VEN"},sourceQuests={57727}}),
+[1525]={{57.2,68.4}}},crs={158796},sourceQuests={57727}}),
 i(180595,{b=1,customCollect={"SL_COV_KYR"}}),
 s(110952,177772,{f=4,loc=45,lvl=50}),
 s(110949,177769,{f=4,loc=44,lvl=50}),
@@ -145853,7 +145856,6 @@ h(-88,{
 i(200448,{b=1,crs={193118,193152,193181,193226,193241,193634,194392},f=51,lvl=60}),
 s(182357,200165,{b=1,crs={187111,193143,193243,193256,193722,196010},f=8,lvl=60}),
 i(200210,{b=1,crs={187745,193188,193214,193220,193664,193688,196165,201554,201555},f=51,lvl=60}),
-s(182347,200138,{b=1,crs={187745,193188,193214,193220,193664,193688,196165,201554,201555},f=29,lvl=60}),
 s(182917,200434,{b=1,crs={193196,197009,201553,201555,201561},f=4,loc=41,lvl=60}),
 i(200217,{b=1,crs={186827,186859,190985,190986,192737,193120,193126,193152,193234,193288,193668,193708,193853,194240,195093,195915,197557},f=53,lvl=60,spellID=389175}),
 s(182918,200435,{b=1,crs={193118,193152,193181,193226,193241,193634,194392},f=4,loc=46,lvl=60}),
@@ -145893,6 +145895,7 @@ i(200172,{b=1,crs={191354,193165,193171,193173,193176,193209,193258,193647,19365
 h(-101,{
 s(182401,200237,{b=1,crs={193188,193885,196165},f=8,lvl=60}),
 s(182344,200135,{b=1,crs={186962,187945,193175,193238,193634,193645,193655,193677,193682,193691,193706,193710,193724,193896,194225,194392,195286,196056,197411,201556,201559},f=26,lvl=60}),
+s(182347,200138,{b=1,crs={187745,193188,193214,193220,193664,193688,196165,201554,201555},f=29,lvl=60}),
 s(182413,200256,{b=1,crs={187559,193154,193178,193256,193691},f=1,lvl=60}),
 s(182438,200303,{b=1,crs={187745,193664,193688,194402,195300,201550,201552},f=28,lvl=60}),
 s(182922,200439,{b=1,crs={187209,190991,191354,193165,193171,193173,193215,193658,193668,193669,201545,201556,201557,201558,201559},f=1,lvl=60}),

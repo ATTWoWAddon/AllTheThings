@@ -1516,7 +1516,7 @@ crit(118025,{achID=63441,id=52})}}),
 n(266665,{crs={256645},description="This Souvenir can be found in the back of Communal Cart.",maps={2351},g={
 crit(118026,{achID=63441,id=53})}}),
 n(266666,{coords={
-[2351]={{67.8,55.5}}},description="On a turtle who may waddle around a bit...",g={
+[2351]={{67.8,55.5}}},crs={266840},description="On a turtle who may waddle around a bit...",g={
 crit(118027,{achID=63441,id=54})}}),
 n(266667,{coords={
 [2351]={{52.6,73.1}}},description="Area wide spawn. If you don't see the Souvenir, do as the area vignette states: 'Stay a While and Glisten'. Sit in middle Beach Chair and Relax. Nearby geyser will spit out the Souvenir... Eventually...",g={

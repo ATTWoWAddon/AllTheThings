@@ -1126,9 +1126,9 @@ q(8768,{coords={
 [1454]={{49.6,78.2}},
 [1455]={{33.6,66.3}}},e=14,isYearly=1,lvl=20,providers={{"o",180747}},qis={21310},g={
 p(119,{awp=10804,e=14,itemID=21301,petTypeID=1,q=1,spellID=26533}),
+p(117,{awp=10804,e=14,itemID=21309,petTypeID=7,q=1,spellID=26045}),
 p(118,{awp=10804,e=14,itemID=21308,petTypeID=5,q=1,spellID=26529}),
 p(120,{awp=10804,e=14,itemID=21305,petTypeID=1,q=1,spellID=26541}),
-p(117,{awp=10804,e=14,itemID=21309,petTypeID=7,q=1,spellID=26045}),
 crit(6255,{achID=1689,awp=30002,e=14,id=1})}}),
 q(8767,{awp=10804,c={1,2,3,4,6},description="Given prior to 2015 exclusively to non-spell casters.",e=14,isYearly=1,maps={1454,1455},providers={{"o",180746}},qis={21270},rwp=60203,g={
 i(21235,{b=1,e=14,f=55,q=1}),
@@ -1140,13 +1140,13 @@ q(8769,{awp=10804,coords={
 [1454]={{49.5,78.7}},
 [1455]={{33.6,66.5}}},e=14,isYearly=1,lvl=40,providers={{"o",180748}},qis={21327},g={
 r(21931,{e=14,itemID=17725,learnedAt=190,q=2,requireSkill=333}),
+i(21325,{b=1,e=14,f=55,q=2}),
 r(21943,{e=14,itemID=17722,learnedAt=190,q=2,requireSkill=165}),
 r(21945,{e=14,itemID=17724,learnedAt=190,q=1,requireSkill=197}),
 r(21913,{e=14,itemID=17706,learnedAt=190,q=2,requireSkill=164}),
+i(21213,{e=14,f=106,lvl=20,q=2}),
 r(21923,{e=14,itemID=17709,learnedAt=190,q=1,requireSkill=171}),
 r(21940,{e=14,itemID=17720,learnedAt=190,q=2,requireSkill=202}),
-i(21325,{b=1,e=14,f=55,q=2}),
-i(21213,{e=14,f=106,lvl=20,q=2}),
 crit(6256,{achID=1689,awp=30002,e=14,id=1})}}),
 q(7045,{coords={
 [1455]={{33.4,67}}},e=14,isYearly=1,lvl=30,qgs={13433},r=2,sourceQuests={7043},g={
@@ -1230,11 +1230,9 @@ q(8799,{awp=10804,coords={
 [1454]={{53.2,66.6}}},cost={{"i",8150,1},{"g",50000}},description="Requires Cooking Skill Level 300",e=14,isYearly=1,lvl=40,qgs={13418},r=1,requireSkill=185,rwp=40300,sourceQuests={8746},g={
 i(21213,{e=14,f=106,lvl=20,q=2,requireSkill=185})}}),
 q(7062,{coords={
-[1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},r=2,g={
-i(17735,{e=14,q=1})}}),
+[1455]={{30.2,59.8}}},e=14,isYearly=1,lvl=10,qgs={1365},qis={17735},r=2}),
 q(6964,{coords={
-[1454]={{51,71.1}}},e=14,isYearly=1,lvl=10,qgs={9550},r=1,g={
-i(17735,{e=14,q=1})}}),
+[1454]={{51,71.1}}},e=14,isYearly=1,lvl=10,qgs={9550},qis={17735},r=1}),
 q(7025,{coords={
 [1455]={{33.2,65.8}}},cost={{"i",1179,1},{"i",17197,5}},e=14,isYearly=1,lvl=10,qgs={13444},r=2,g={
 i(17727,{b=1,e=14,q=1,sym={{"select","itemID",2996,2840,2318,785}}}),
