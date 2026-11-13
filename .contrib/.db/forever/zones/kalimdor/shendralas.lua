@@ -392,3 +392,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(93656, {	-- Completed together with Powering the Pylons (96018)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
