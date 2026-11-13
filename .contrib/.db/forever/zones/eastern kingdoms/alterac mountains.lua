@@ -695,6 +695,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(96603, {	-- Unstable Magic
+				qg = 252085,	-- Archmage Celindra
+				qi = 275730,	-- Arcane Censer (PQI!)
+				coord = { 14.2, 60.0, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/10 Mote of Unstable Magic
+						provider = { "i", 274964 },	-- Mote of Unstable Magic
+						-- TODO: Wowhead doesn't list where the motes come from yet.
+					}),
+				},
+			}),
 			q(535, {	-- Valik
 				altQuests = { 533 },	-- Infiltration (Can only be completed while on this quest)
 				qg = 2333,	-- Henchman Valik
