@@ -808,14 +808,14 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		-- #if BEFORE TBC
 		OnUpdate = [[function(t)
 			if t.collectible and _.Level >= 60 then
-				local i, spellID = 1, select(10, UnitBuff("player", 1));
-				while spellID do
-					if spellID == 364001 then
+				local i, aura = 1, _.WOWAPI.GetBuffDataByIndex("player", 1);
+				while aura do
+					if aura.spellId == 364001 then
 						t:SetAchievementCollected(t.achievementID, true);
 						return false;
 					end
 					i = i + 1;
-					spellID = select(10, UnitBuff("player", i));
+					aura = _.WOWAPI.GetBuffDataByIndex("player", i);
 				end;
 				t:SetAchievementCollected(t.achievementID, false);
 			end
