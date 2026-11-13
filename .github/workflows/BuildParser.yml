@@ -20,8 +20,20 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    name: ${{ matrix.os }} / ${{ matrix.dotnet.framework }}
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        dotnet:
+          - sdk: '8.0.x'
+            framework: net8.0
+          - sdk: '9.0.x'
+            framework: net9.0
+          - sdk: '10.0.x'
+            framework: net10.0
     defaults:
       run:
         shell: pwsh
@@ -32,42 +44,44 @@ jobs:
           persist-credentials: false
 
       - name: Set up .NET SDK
+        id: dotnet
         uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: '10.0.x'
+          dotnet-version: ${{ matrix.dotnet.sdk }}
 
       - name: Build Parser
+        env:
+          DOTNET_SDK_VERSION: ${{ steps.dotnet.outputs.dotnet-version }}
+          TARGET_FRAMEWORK: ${{ matrix.dotnet.framework }}
         run: |
-          dotnet build .contrib/src/Parser/Parser.csproj --configuration Release -p:Platform=x64 --output (Join-Path $env:RUNNER_TEMP 'parser') --nologo
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $project = Join-Path $env:GITHUB_WORKSPACE '.contrib/src/Parser/Parser.csproj'
+          $sdkDirectory = Join-Path $env:RUNNER_TEMP 'parser-sdk'
+          $outputDirectory = Join-Path $env:RUNNER_TEMP "parser/$env:TARGET_FRAMEWORK"
+          New-Item -ItemType Directory -Path $sdkDirectory -Force | Out-Null
+          @{ sdk = @{ version = $env:DOTNET_SDK_VERSION; rollForward = 'disable' } } |
+            ConvertTo-Json | Set-Content -LiteralPath (Join-Path $sdkDirectory 'global.json')
 
-      - name: Run Parser tests
-        run: |
-          $PSNativeCommandUseErrorActionPreference = $false
-          $parserPath = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
-          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
-            throw "The newly built Parser was not found: $parserPath"
+          Push-Location $sdkDirectory
+          try {
+            $actualSdk = dotnet --version
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            if ($actualSdk -ne $env:DOTNET_SDK_VERSION) {
+              throw "Expected .NET SDK $env:DOTNET_SDK_VERSION, but selected $actualSdk."
+            }
+            Write-Host "Building $env:TARGET_FRAMEWORK with .NET SDK $actualSdk"
+
+            $buildProperties = @("-p:TargetFrameworks=$env:TARGET_FRAMEWORK", '-p:Platform=x64', '-p:UseAppHost=false')
+            dotnet restore $project @buildProperties --nologo
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            dotnet build $project @buildProperties --configuration Release --framework $env:TARGET_FRAMEWORK --no-restore --output $outputDirectory --nologo
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+            $runtime = Get-Content -LiteralPath (Join-Path $outputDirectory 'Parser.runtimeconfig.json') -Raw | ConvertFrom-Json
+            if ($runtime.runtimeOptions.tfm -ne $env:TARGET_FRAMEWORK) {
+              throw "Expected output target $env:TARGET_FRAMEWORK, but found $($runtime.runtimeOptions.tfm)."
+            }
+            Write-Host "Built $($runtime.runtimeOptions.tfm) for $($runtime.runtimeOptions.framework.name) $($runtime.runtimeOptions.framework.version)"
           }
-
-          $tests = @(Get-ChildItem -LiteralPath '.contrib/src/Parser/tests' -Filter '*.Tests.ps1' -File | Sort-Object Name)
-          if ($tests.Count -eq 0) {
-            throw 'No Parser test suites were found.'
-          }
-
-          $results = [ordered]@{}
-          foreach ($test in $tests) {
-            Write-Host "::group::$($test.Name)"
-            & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $test.FullName -ParserPath $parserPath
-            $results[$test.Name] = $LASTEXITCODE
-            Write-Host '::endgroup::'
-          }
-
-          Write-Host 'Parser test results:'
-          foreach ($result in $results.GetEnumerator()) {
-            Write-Host "$($result.Key): exit $($result.Value)"
-          }
-
-          $failures = @($results.Values | Where-Object { $_ -ne 0 })
-          if ($failures.Count -gt 0) {
-            throw "$($failures.Count) of $($tests.Count) Parser test suites failed."
+          finally {
+            Pop-Location
           }
