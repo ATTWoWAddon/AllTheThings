@@ -1008,17 +1008,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(5188, {	-- Garyl <Tabard Vendor>
 				coord = { 47.6, 75.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {
-					{"select", "itemID",
-					19031,	-- Frostwolf Battle Tabard
-					15197,	-- Scout's Tabard
-					15199,	-- Stone Guard's Herald
-					19505,	-- Warsong Battle Tabard (H)
-					},
-				},
-				groups = {
-					i(5976),	-- Guild Tabard
-				},
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 			n(3358, {	-- Gorina <Mining Supplies>
 				coord = { 73.2, 26.6, MAP.ORGRIMMAR },

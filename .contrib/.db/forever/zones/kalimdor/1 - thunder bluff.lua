@@ -867,8 +867,8 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 			n(5189, {	-- Thrumn <Tabard Vendor>
 				coord = { 38.0, 63.0, MAP.THUNDER_BLUFF },
-				sym = { {"sub", "common_vendor", 5188} },	-- Garyl <Tabard Vendor>
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 		}),
 	},

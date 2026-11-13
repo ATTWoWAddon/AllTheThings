@@ -2666,9 +2666,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5193, {	-- Rebecca Laughlin <Tabard Designer>
 				coord = { 64.0, 77.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(5976),	-- Guild Tabard
-				},
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 			n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 				coord = { 59.4, 77.2, MAP.STORMWIND_CITY },

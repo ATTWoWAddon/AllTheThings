@@ -1171,9 +1171,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				}},
 			}),
 			n(5190, {	-- Merill Pleasance <Tabard Vendor>
-				sym = { {"sub", "common_vendor", 5188 } },	-- Garyl <Tabard Vendor>
 				coord = { 69.3, 44.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 			n(4577, {	-- Millie Gregorian <Tailoring Supplies>
 				coord = { 70.6, 30.1, MAP.UNDERCITY },

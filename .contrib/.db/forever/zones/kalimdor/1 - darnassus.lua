@@ -918,8 +918,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			}),
 			n(5191, {	-- Shalumon <Tabard Vendor>
 				coord = { 70.4, 23.2, MAP.DARNASSUS },
-				sym = {{ "sub", "common_vendor", 5193 }},	-- Rebecca Laughlin <Tabard Designer>
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 			n(8665, {	-- Shylenai <Owl Trainer>
 				coord = { 69.8, 45.4, MAP.DARNASSUS },

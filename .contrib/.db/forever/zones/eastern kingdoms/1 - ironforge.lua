@@ -1385,8 +1385,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 			n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
 				coord = { 36.4, 84.4, MAP.IRONFORGE },
-				sym = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID", 5976 }},	-- Guild Tabard
 			}),
 			n(5156, {	-- Maeva Snowbraid
 				coord = { 38.8, 5.6, MAP.IRONFORGE },

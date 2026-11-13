@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
-	description = "Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, quivers by Bowyers and Fletchers, and basic armor sets by armor and clothing merchants.",
+	description = "Sold by vendors all over Azeroth: ammunition by most General Goods and General Supplies vendors, Bowyers and Gunsmiths, thrown weapons by most General Goods and General Supplies vendors and Thrown Weapons Merchants, quivers by Bowyers and Fletchers, basic armor sets by armor and clothing merchants, and the Guild Tabard by Tabard Vendors.",
 	groups = {
 		filter(AMMO, {
 			i(11284),	-- Accurate Slugs
@@ -397,6 +397,9 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			i(17186),	-- Small Targe
 			i(1202),	-- Wall Shield
 			i(2376),	-- Worn Heater Shield
+		}),
+		filter(TABARDS, {
+			i(5976),	-- Guild Tabard
 		}),
 		n(WEAPONS, {
 			filter(DAGGERS, {
