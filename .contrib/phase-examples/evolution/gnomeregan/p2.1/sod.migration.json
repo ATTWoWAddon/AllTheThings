@@ -1,12 +1,13 @@
 {
+  "$comment": "Generated proposed comparison control; select only this source alternative.",
   "schema": 1,
   "defaultStage": "P1",
   "cohorts": [
     {
       "id": "comparison-fixture-gnomeregan",
-      "stage": "P2.2",
+      "stage": "P2.1",
       "sources": [
-        "Gnomeregan.lua"
+        "sod.lua"
       ]
     }
   ]
