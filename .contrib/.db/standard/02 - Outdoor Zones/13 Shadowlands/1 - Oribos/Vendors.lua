@@ -32,13 +32,15 @@ maproot(SHADOWLANDS, ORIBOS, {
 				coord = { 47.6, 77.2, ORIBOS },
 				sym = {{"select","npcID",160470},	-- Adjutant Nikos <Ascended Quartermaster>
 							{"isnt","repeatable"},	-- Not Paragon quest
-							{"pop"}},
+							{"pop"},
+							{"isnt","decorID"}},	-- Decor is only sold by the zone quartermaster
 			}),
 			n(176368, {	-- Archivist Leonara <Avowed Quartermaster>
 				coord = { 46.1, 77.7, ORIBOS },
 				sym = {{"select","npcID",173705},	-- Archivist Janeera <Avowed Quartermaster>
 							{"isnt","repeatable"},	-- Not Paragon quest
-							{"pop"}},
+							{"pop"},
+							{"isnt","decorID"}},	-- Decor is only sold by the zone quartermaster
 			}),
 			n(182864, {	-- Au'Dara
 				description = "Next to the flightmaster.",
@@ -177,13 +179,15 @@ maproot(SHADOWLANDS, ORIBOS, {
 				coord = { 47.8, 77.9, ORIBOS },
 				sym = {{"select","npcID",173003},	-- Nalcorn Talsen <Undying Army Quartermaster>
 							{"isnt","repeatable"},	-- Not Paragon quest
-							{"pop"}},
+							{"pop"},
+							{"isnt","decorID"}},	-- Decor is only sold by the zone quartermaster
 			}),
 			n(176066, {	-- Darvel the Frugal <Court of Harvesters Quartermaster>
 				coord = { 46.6, 77.2, ORIBOS },
 				sym = {{"select","npcID",156822},	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 							{"isnt","repeatable"},	-- Not Paragon quest
-							{"pop"}},
+							{"pop"},
+							{"isnt","decorID"}},	-- Decor is only sold by the zone quartermaster
 			}),
 			n(156690, {	-- Distributor Au'nagl
 				coord = { 47.0, 23.6, ORIBOS },
@@ -349,7 +353,8 @@ maproot(SHADOWLANDS, ORIBOS, {
 				coord = { 47.0, 76.8, ORIBOS },
 				sym = {{"select","npcID",158556},	-- Aithlyn <Wild Hunt Quartermaster>
 							{"isnt","repeatable"},	-- Not Paragon quest
-							{"pop"}},
+							{"pop"},
+							{"isnt","decorID"}},	-- Decor is only sold by the zone quartermaster
 			}),
 			n(188377, {	-- So'turu <Fence of the First Ones>
 				coord = { 67.0, 32.2, ORIBOS },

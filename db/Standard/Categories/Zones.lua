@@ -119565,9 +119565,9 @@ i(186684,{awp=90100,collectible=false,f=200,spellID=354583}),
 de(28110,{awp=120105,cost={{"c",1813,200}},itemID=284216,spellID=1315492}),
 i(180970,{b=1,description="Take this to Ta'ruca in Revendreth |cffffffff(51.1, 78.5)|r."})}}),
 n(176064,{coords={
-[1670]={{47.6,77.2}}},sym={{"select","npcID",160470},{"isnt","repeatable"},{"pop"}}}),
+[1670]={{47.6,77.2}}},sym={{"select","npcID",160470},{"isnt","repeatable"},{"pop"},{"isnt","decorID"}}}),
 n(176368,{coords={
-[1670]={{46.1,77.7}}},sym={{"select","npcID",173705},{"isnt","repeatable"},{"pop"}}}),
+[1670]={{46.1,77.7}}},sym={{"select","npcID",173705},{"isnt","repeatable"},{"pop"},{"isnt","decorID"}}}),
 n(182864,{awp=90105,coords={
 [1670]={{59.7,70.6}}},description="Next to the flightmaster.",g={
 i(188174,{cost={{"c",1602,375}},f=55,lvl=60,pvp=1,rwp=90200,spellID=361864,u=2,g={
@@ -119586,9 +119586,9 @@ i(190184,{b=2,cost=5000000,lvl=60,questID=65623,sourceAchievements={14834},spell
 toy(187869,{b=1,cost=100000000}),
 i(188673,{cost={{"c",1813,10000}},spellID=362986})}}),
 n(176067,{coords={
-[1670]={{47.8,77.9}}},sym={{"select","npcID",173003},{"isnt","repeatable"},{"pop"}}}),
+[1670]={{47.8,77.9}}},sym={{"select","npcID",173003},{"isnt","repeatable"},{"pop"},{"isnt","decorID"}}}),
 n(176066,{coords={
-[1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"}}}),
+[1670]={{46.6,77.2}}},sym={{"select","npcID",156822},{"isnt","repeatable"},{"pop"},{"isnt","decorID"}}}),
 n(156690,{coords={
 [1670]={{47,23.6}}},g={
 s(112899,180136,{b=1,f=57,requireSkill=356,spellID=8083})}}),
@@ -119644,7 +119644,7 @@ i(191301,{awp=90200,b=1,cost={{"i",199202,1}},lvl=60,rwp=100002,u=2,g={
 cu(1979,{u=2})}}),
 i(191299,{awp=90200,b=1,cost={{"i",199202,1}},f=55,rwp=100002,spellID=370356,u=2})}}),
 n(176065,{coords={
-[1670]={{47,76.8}}},sym={{"select","npcID",158556},{"isnt","repeatable"},{"pop"}}}),
+[1670]={{47,76.8}}},sym={{"select","npcID",158556},{"isnt","repeatable"},{"pop"},{"isnt","decorID"}}}),
 n(188377,{awp=90205,coords={
 [1670]={{67,32.2}}},rwp=100002,u=2}),
 n(188386,{awp=90205,coords={
