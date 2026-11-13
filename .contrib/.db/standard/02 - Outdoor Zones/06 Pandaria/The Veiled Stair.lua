@@ -2,6 +2,24 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
+-- #if AFTER WOD
+-- The Blacktalon Quartermaster only sells these to characters with the matching Wrathion chapter achievement from the
+-- original Mists of Pandaria quest chain. Keep the Legendary Cloak exception only if an account character has it;
+-- MoP: Remix characters can reach Ordos and the legendary cloaks, but not these.
+local BLACKTALON_QUARTERMASTER_OnUpdate = [[function(t)
+	local achievements = ATTAccountWideData.Achievements
+	local ids = t.sourceAchievements or { t.sourceAchievement }
+	for i=1,#ids do
+		local id = ids[i]
+		if achievements[id] then
+			t.u = ]] .. TEMP_MOP_LEGENDARY_CLOAK_PHASE .. [[;
+			return
+		end
+	end
+	t.u = ]] .. REMOVED_FROM_GAME .. [[;
+end]];
+-- #endif
+
 maproot(PANDARIA, THE_VEILED_STAIR, {
 	icon = 656543,
 	groups = {
@@ -106,6 +124,7 @@ maproot(PANDARIA, THE_VEILED_STAIR, {
 						cost = 100000000,	-- 10,000g
 						-- #if AFTER WOD
 						u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+						OnUpdate = BLACKTALON_QUARTERMASTER_OnUpdate,
 						-- #endif
 					}, {
 						i(89873),	-- Crystallized Dread
@@ -129,6 +148,7 @@ maproot(PANDARIA, THE_VEILED_STAIR, {
 						cost = 25000000,	-- 2,500g
 						-- #if AFTER WOD
 						u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+						OnUpdate = BLACKTALON_QUARTERMASTER_OnUpdate,
 						-- #endif
 					}, {
 						i(93403),	-- Eye of the Black Prince
@@ -152,6 +172,7 @@ maproot(PANDARIA, THE_VEILED_STAIR, {
 						cost = 100000000,	-- 10,000g
 						-- #if AFTER WOD
 						u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+						OnUpdate = BLACKTALON_QUARTERMASTER_OnUpdate,
 						-- #endif
 					}, {
 						i(98149),	-- Cranewing Cloak
@@ -167,6 +188,7 @@ maproot(PANDARIA, THE_VEILED_STAIR, {
 							timeline = { ADDED_5_4_0 },
 							-- #if AFTER WOD
 							u = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+							OnUpdate = BLACKTALON_QUARTERMASTER_OnUpdate,
 							-- #endif
 						}),
 					}),
