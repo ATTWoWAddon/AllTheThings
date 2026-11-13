@@ -381,11 +381,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										filter(FINGER_F, {
 											i(180351),	-- Worn Ring of Piety
 										}),
-										n(WEAPONS, {
-											i(180336),	-- Faintly Smoldering Torch
-											i(180335),	-- Sturdy Pitch Fork
-											i(180337),	-- Sturdy Pitch Fork / 10.0.7: Rusty Hand Sickle
-										}),
+										-- Faintly Smoldering Torch (180336), Sturdy Pitch Fork (180335) and Rusty Hand Sickle (180337) are generic Revendreth treasure loot, sourced in Revendreth > Treasures
 									},
 								}),
 							},

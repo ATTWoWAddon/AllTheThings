@@ -126403,11 +126403,11 @@ s(112985,180401,{b=1,f=25,lvl=48})}}),
 o(351542,{coords={
 [1525]={{74,61.9}}},description="Destroy the |cFFFFFFFFCracked Crate|r in the small alcove at |cFFFFFFFF74.6, 62.6|r. Turn the |cFFFFFFFFHidden Valve|r found inside, and find the treasure in the hidden chamber that opens up in the floor.",isDaily=1,questID=60199,g={
 s(112978,180393,{b=1,f=5,loc=41,lvl=48}),
-s(112970,180336,{customCollect={"SL_COV_VEN"},f=23,lvl=50}),
+s(112970,180336,{f=23,lvl=50}),
 s(112979,180394,{b=1,f=4,loc=46,lvl=48}),
 i(180386,{b=1}),
-s(112969,180335,{customCollect={"SL_COV_VEN"},f=28,lvl=50}),
-s(112971,180337,{customCollect={"SL_COV_VEN"},f=21,lvl=50})}}),
+s(112969,180335,{f=28,lvl=50}),
+s(112971,180337,{f=21,lvl=50})}}),
 o(353210,{coords={
 [1525]={{50.3,49}}},g={
 i(180173,{b=1,spellID=107829})}}),
@@ -126510,10 +126510,10 @@ o(353792,{coords={
 [1525]={{57,69.7},{58.2,71.2},{58.3,67.8},{59.5,70.3},{59.8,78.7},{60.2,79.6},{61.3,75.8},{61.9,75.1},{62,79.7},{75.6,68.8},{76.6,67.6},{76.8,64.7},{77,69.1},{77.5,67.8},{77.8,71},{78.1,66.4},{78.1,66.5}}},isDaily=1,g={
 s(112978,180393,{b=1,f=5,loc=41,lvl=48}),
 s(112979,180394,{b=1,f=4,loc=46,lvl=48}),
-s(112970,180336,{customCollect={"SL_COV_VEN"},f=23,lvl=50}),
+s(112970,180336,{f=23,lvl=50}),
 i(180386,{b=1}),
-s(112969,180335,{customCollect={"SL_COV_VEN"},f=28,lvl=50}),
-s(112971,180337,{customCollect={"SL_COV_VEN"},f=21,lvl=50})}}),
+s(112969,180335,{f=28,lvl=50}),
+s(112971,180337,{f=21,lvl=50})}}),
 o(357584,{coords={
 [1525]={{70.1,60}}},questID=62164,g={
 s(110987,177807,{f=35,lvl=50}),

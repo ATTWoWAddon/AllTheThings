@@ -30532,11 +30532,7 @@ s(113349,181026,{b=1,customCollect={"SL_COV_VEN"},f=7,loc=46,lvl=50}),
 s(113350,181027,{b=1,customCollect={"SL_COV_VEN"},f=7,loc=41,lvl=50}),
 s(113352,181029,{b=1,customCollect={"SL_COV_VEN"},f=7,loc=43,lvl=50})}}),
 flt(52,{customCollect={"SL_COV_VEN"},g={
-i(180351,{customCollect={"SL_COV_VEN"},f=52,lvl=50})}}),
-h(-101,{customCollect={"SL_COV_VEN"},g={
-s(112970,180336,{customCollect={"SL_COV_VEN"},f=23,lvl=50}),
-s(112969,180335,{customCollect={"SL_COV_VEN"},f=28,lvl=50}),
-s(112971,180337,{customCollect={"SL_COV_VEN"},f=21,lvl=50})}})}})}})}})}}),
+i(180351,{customCollect={"SL_COV_VEN"},f=52,lvl=50})}})}})}})}})}}),
 h(-47,{customCollect={"SL_COV_VEN"},g={
 i(183699,{b=1,customCollect={"SL_COV_VEN"},description="Only Obtainable from Theotar Soulbind.",spellID=342058})}}),
 h(-58,{customCollect={"SL_COV_VEN"},g={
