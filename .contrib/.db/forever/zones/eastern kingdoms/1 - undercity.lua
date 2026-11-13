@@ -756,7 +756,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(97985, {	-- Thundering Hearts
 				qg = 270038,	-- Calder Gray <Understudy of the Royal Apothecary Society>
-				coord = { 48.4, 70.8, MAP.UNDERCITY },
+				coord = { 49.2, 70.4, MAP.UNDERCITY },
 				maps = { MAP.THOUSAND_NEEDLES },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
