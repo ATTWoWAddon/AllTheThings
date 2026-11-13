@@ -51,6 +51,19 @@ instanceroot(2994, {	-- Alcaz Prison
 				races = ALLIANCE_ONLY,
 				lvl = 48,
 			}),
+			q(95264, {	-- Shaw Needs To Know
+				sourceQuest = 95263,	-- Somber News
+				qg = 260271,	-- Sully McCleary
+				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
+				maps = { MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+				groups = {
+					i(279833),	-- Courier's Clasp
+					i(279474),	-- Dustwallow Dirk
+					i(279831),	-- Fatebound Buckler
+				},
+			}),
 			q(95263, {	-- Somber News
 				sourceQuest = 95262,	-- The Secret Prison
 				-- TODO: Starts from a Perfumed Note object in the prison (Sammy's Contributor Report, Nov 12); find its objectID. Turned in to Sully McCleary (260271).
