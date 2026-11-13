@@ -33,6 +33,18 @@ instanceroot(2994, {	-- Alcaz Prison
 					i(279825),	-- Theramore Defender's Gauntlets
 				},
 			}),
+			q(96337, {	-- More Valuable Than Gold
+				sourceQuest = 96335,	-- The Man in the Iron Chains
+				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID. Turned in at Connery's Trunk (611086); find where it is.
+				qi = 274077,	-- Mason's Note (PQI!)
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Find Mason Connery's Treasure
+						provider = { "o", 653847 },	-- Loose Floorboard
+					}),
+					i(274041),	-- Document Box
+				},
+			}),
 			q(95194, {	-- Our Man in Theramore
 				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
 				coord = { 78.4, 70.6, MAP.STORMWIND_CITY },
@@ -41,7 +53,7 @@ instanceroot(2994, {	-- Alcaz Prison
 			}),
 			q(95263, {	-- Somber News
 				sourceQuest = 95262,	-- The Secret Prison
-				-- TODO: Wowhead doesn't list where it starts yet (inside the prison, after learning what became of Varian Wrynn). Turned in to Sully McCleary (260271).
+				-- TODO: Starts from a Perfumed Note object in the prison (Sammy's Contributor Report, Nov 12); find its objectID. Turned in to Sully McCleary (260271).
 				races = ALLIANCE_ONLY,
 				lvl = 48,
 			}),
@@ -58,7 +70,7 @@ instanceroot(2994, {	-- Alcaz Prison
 				},
 			}),
 			q(96335, {	-- The Man in the Iron Chains
-				-- TODO: Wowhead doesn't list the quest giver yet (the prisoner in chains after Blazeroar).
+				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID.
 				description = "This quest is not offered if The Questioner is killed before it is picked up.",
 				lvl = 48,
 				groups = {
@@ -78,6 +90,7 @@ instanceroot(2994, {	-- Alcaz Prison
 				lvl = 48,
 			}),
 			q(95262, {	-- The Secret Prison
+				-- TODO: Turned in at the Perfumed Note object in the prison (Sammy's Contributor Report, Nov 12).
 				sourceQuest = 95198,	-- The Return of the King?
 				qg = 260271,	-- Sully McCleary
 				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
