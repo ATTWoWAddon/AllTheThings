@@ -191,55 +191,70 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 						},
 					}),
-					i(51315, {	-- Sealed Chest
-						questID = 24914,	-- Personal Property
+					q(24914, {	-- Personal Property
 						description = "Dropped by the Lich King on 25-Man difficulty while on the quest |cFFefc400The Lich King's Last Stand|r. Only your first kill will trigger the item to drop. You do NOT need to have Shadowmourne equipped.\n\nThis item contains a lot of BoE cosmetic items that sell very well. During its time, this was used to reward other members of the raid for assisting the guild master (more than likely) with Shadowmourne for the many months it took to complete the quest chain.\n\nIn addition to being very rewarding, these quests were some of the most treasured throughout World of Warcraft's long history.",
 						sourceQuest = 24549,	-- Shadowmourne...
-						qg = 36597,	-- The Lich King
-						provider = { "i", 51316 },	-- Unsealed Chest
+						qs = 51315,	-- Sealed Chest (QS!)
 						groups = {
-							i(51317, {	-- Alexandros' Soul Shard
-								questID = 24915,	-- Mograine's Reunion
-								description = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
-								groups = {
-									i(52200, {	-- Crimson Deathcharger (MOUNT!)
-										b = 2,	-- Mounts don't inherently assign themselves as BoE, so the Ignore Filters for BoEs trigger wasn't picking this up.
-									}),
-								},
+							i(51316, {	-- Unsealed Chest
+								i(51317),	-- Alexandros' Soul Shard
+								i(51319),	-- Arthas' Training Sword
+								i(51320),	-- Badge of the Silver Hand
+								i(51321),	-- Blood of Sylvanas
+								i(51318),	-- Jaina's Locket
 							}),
-							i(51319, {	-- Arthas' Training Sword
-								questID = 24917,	-- Muradin's Lament
-								description = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
-								groups = {
-									i(52201)	-- Muradin's Favor (TOY!)
-								},
+						},
+					}),
+					q(24915, {	-- Mograine's Reunion
+						description = "Alexandros: Darion, my son. At last I am able to lay my eyes upon you again. The Lich King tormented me without end, Darion. Endlessly he sought to break my will, to force me to serve him, to bind me to his blade. Finally, when events demanded his full attention, he left me. The one memory I clung to Darion, the one thought that kept me from giving in, it was your sacrifice, my son. That again saved me from eternal peril.\n\nDarion: Father, father, I… I feared for your sanity, father, for you, I would give my life a thousand times.",
+						sourceQuest = 24914,	-- Personal Property
+						qg = 37120,	-- Highlord Darion Mograine
+						cost = { { "i", 51317, 1 } },	-- Alexandros' Soul Shard
+						groups = {
+							i(52200, {	-- Crimson Deathcharger (MOUNT!)
+								b = 2,	-- Mounts don't inherently assign themselves as BoE, so the Ignore Filters for BoEs trigger wasn't picking this up.
 							}),
-							i(51320, {	-- Badge of the Silver Hand
-								questID = 24919,	-- The Lightbringer's Redemption
-								description = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
-								groups = {
-									i(52252)	-- Tabard of the Lightbringer
-								},
+						},
+					}),
+					q(24916, {	-- Jaina's Locket
+						description = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
+						sourceQuest = 24914,	-- Personal Property
+						-- TODO: Wowhead doesn't list who takes the locket yet.
+						cost = { { "i", 51318, 1 } },	-- Jaina's Locket
+						groups = {
+							i(52251, {	-- Jaina's Locket
+								-- #if NOT ANYCLASSIC
+								ignoreSource = true,
+								collectible = false
+								-- #endif
 							}),
-							i(51321, {	-- Blood of Sylvanas
-								questID = 24918,	-- Sylvanas' Vengeance
-								description = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
-								groups = {
-									i(52253)	-- Sylvanas' Music Box (TOY!)
-								},
-							}),
-							i(51318, {	-- Jaina's Locket
-								questID = 24916,	-- Jaina's Locket
-								description = "Jaina: What's this?\nHe... he kept it.. all this time he kept it!\n<Cries> I knew!\n<Cries> I sensed a part of him still alive... trapped... struggling. Oh Arthas!\nPerhaps he might someday remember from what he once was...\nBy the Light may he at last find rest, free from the icy grip of that terrible blade!",
-								groups = {
-									i(52251, {	-- Jaina's Locket
-										-- #if NOT ANYCLASSIC
-										ignoreSource = true,
-										collectible = false
-										-- #endif
-									}),
-								},
-							}),
+						},
+					}),
+					q(24917, {	-- Muradin's Lament
+						description = "Muradin: Oh lad, how I missed those endless days in Lordaeron, sharpening your skill with this dull blade. Forging you into a weapon meant to withstand the demands of a great destiny. Heh… You sure put them skills to use, didn't you lad?\n\nIf only I'd been able to stop you that day, how different things migha' been. If only I'da never discovered that accursed blade. Farewell, Arthas, my brother.",
+						sourceQuest = 24914,	-- Personal Property
+						-- TODO: Wowhead doesn't list who takes the sword yet.
+						cost = { { "i", 51319, 1 } },	-- Arthas' Training Sword
+						groups = {
+							i(52201),	-- Muradin's Favor (TOY!)
+						},
+					}),
+					q(24918, {	-- Sylvanas' Vengeance
+						description = "Sylvanas: So, it is done. I had not dared to trust my senses. Too many times has the Lich King made me to be a fool. Finally, he has been made to pay for the atrocities he imposed upon my people.\n\nMay Azeroth never fail to remember the horrible price we paid for our weakness, for our pride. But what now, Hero? What of those freed from his grasp but still shackled to their mortal coils?\n\nLeave me. I have much to ponder.",
+						sourceQuest = 24914,	-- Personal Property
+						-- TODO: Wowhead doesn't list who takes the vial yet.
+						cost = { { "i", 51321, 1 } },	-- Blood of Sylvanas
+						groups = {
+							i(52253),	-- Sylvanas' Music Box (TOY!)
+						},
+					}),
+					q(24919, {	-- The Lightbringer's Redemption
+						description = "Uther: Arthas... Alas, hero of Azeroth. You give me a greater gift than you know. Long have I struggled to forgive the prince for his terrible transgressions. My soul has been wracked with unbearable anxiety, dark thoughts, distancing me from the light.\n\nI recall clearly... the gleam of pride in his eye as he stood before me, eager to defeat the enemies of the light... eager to defend his people, no matter the cost. It is this memory of Arthas that I choose to keep in my heart.\n\nI shall always be in your debt, friend. Thank you.",
+						sourceQuest = 24914,	-- Personal Property
+						-- TODO: Wowhead doesn't list who takes the badge yet.
+						cost = { { "i", 51320, 1 } },	-- Badge of the Silver Hand
+						groups = {
+							i(52252),	-- Tabard of the Lightbringer
 						},
 					}),
 				},
@@ -2154,6 +2169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(49997),	-- Mithrios, Bronzebeard's Legacy
 							i(50428),	-- Royal Scepter of Terenas II
 							i(49981),	-- Fal'inrush, Defender of Quel'Thalas
+							i(51315),	-- Sealed Chest (QS!)
 						},
 					}),
 				}),
@@ -2516,6 +2532,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50738),	-- Mithrios, Bronzebeard's Legacy
 							i(50734),	-- Royal Scepter of Terenas II
 							i(50733),	-- Fal'inrush, Defender of Quel'Thalas
+							i(51315),	-- Sealed Chest (QS!)
 						},
 					}),
 				}),
