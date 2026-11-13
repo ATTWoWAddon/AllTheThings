@@ -1980,14 +1980,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
-			q(98094, {	-- Scout Support
-				qg = 2215,	-- High Executor Darthalia
-				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
-				races = HORDE_ONLY,
-				lvl = 19,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 279394,	-- Darthalia's Orders (QI!)
-			}),
 			q(2996, {	-- Seeking Strahad (Orgrimmar)
 				qg = 5875,	-- Gan'rul Bloodeye
 				coord = { 48.2, 45.6, MAP.ORGRIMMAR },

@@ -739,6 +739,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				races = HORDE_ONLY,
 				lvl = 13,
 			}),
+			q(98094, {	-- Scout Support
+				sourceQuest = 528,	-- Battle of Hillsbrad (2/7)
+				qg = 2215,	-- High Executor Darthalia
+				qi = 279394,	-- Darthalia's Orders (PQI!)
+				coord = { 62.33, 20.45, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 19,
+			}),
 			{	-- Soothing Turtle Bisque
 				allianceQuestData = q(555, {	-- Soothing Turtle Bisque (A)
 					qg = 2430,	-- Chef Jessen
@@ -897,7 +906,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				lvl = 19,
 			}),
 			q(98095, {	-- Valuable Vantages
-				-- TODO: Wowhead lists Scout Support (98094) as the previous quest, but it isn't in the Forever DB yet.
+				sourceQuest = 98094,	-- Scout Support
 				qg = 270438,	-- Deathstalker Masoj
 				qi = 279395,	-- Apothecary Vials (PQI!)
 				coord = { 64.0, 53.8, MAP.HILLSBRAD_FOOTHILLS },
