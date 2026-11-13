@@ -1483,7 +1483,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			maps = { IRONFORGE, ORGRIMMAR },
 			lvl = 10,
 			_drop = { "g" },
-			groups = { i(70923, { timeline = { ADDED_4_2_0 } }) },	-- Gaudy Winter Veil Sweater
+			groups = {
+				i(70923, { timeline = { ADDED_4_2_0 } }),	-- Gaudy Winter Veil Sweater
+				a(i(70928, { timeline = REMOVED_4_2_0 } )),	-- Gift Receipt [A] (QS!)
+				h(i(70932, { timeline = REMOVED_4_2_0 } )),	-- Gift Receipt [H] (QS!)
+			},
 		}),
 		q(32106, {	-- A Winter Veil Gift (2012)
 			description = "Gift from 2012.",
@@ -1980,23 +1984,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			description = "Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",
 			qs = 70928,	-- Gift Receipt (QS!)
 			cost = { { "i", 70923, 1 } },	-- Gaudy Winter Veil Sweater
-			timeline = { ADDED_4_2_0 },
-			u = REMOVED_FROM_GAME,	-- this quest isn't available anymore, but don't know when it was 'removed'
+			timeline = { ADDED_4_2_0, REMOVED_4_2_0 },
 			races = ALLIANCE_ONLY,
-			groups = {
-				i(70931),	-- Scrooge's Payoff
-			},
+			groups = { i(70931) },	-- Scrooge's Payoff
 		}),
 		q(29383, {	-- Thanks, But No Thanks (Horde)
 			description = "Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",
 			qs = 70932,	-- Gift Receipt (QS!)
 			cost = { { "i", 70923, 1 } },	-- Gaudy Winter Veil Sweater
-			timeline = { ADDED_4_2_0 },
-			u = REMOVED_FROM_GAME,	-- this quest isn't available anymore, but don't know when it was 'removed'
+			timeline = { ADDED_4_2_0, REMOVED_4_2_0 },
 			races = HORDE_ONLY,
-			groups = {
-				i(70931),	-- Scrooge's Payoff
-			},
+			groups = { i(70931) },	-- Scrooge's Payoff
 		}),
 		q(7063, {	-- The Feast of Winter Veil (Alliance)
 			sourceQuest = 7062,	-- The Reason for the Season (Alliance)

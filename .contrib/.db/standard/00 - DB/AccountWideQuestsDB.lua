@@ -1896,7 +1896,8 @@ local AccountWideQuestsDB = {
 	84690,	-- Crypt Lord's Severed Thread
 	84691,	-- Executor's Severed Thread
 	84693,	-- Weaver's Lair Profession Table flag?, shown on i(228946)
-	84948,
+	84734,	-- ??
+	84948,	-- ??
 	84951,	-- Bilgewater Cartel Weekly Contract
 	84952,	-- Steamwheedle Cartel Weekly Contract
 	84953,	-- Venture Co. Weekly Contract

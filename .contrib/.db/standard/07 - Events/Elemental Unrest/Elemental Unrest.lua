@@ -618,12 +618,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, { expansion(EXPANSION.CATA, { app
 					lvl = 30,
 				}),
 				q(27137, {	-- Earth Girls Aren't So Easy (A)
-					description = "Blizzard marked this quest obsolete.",
 					qg = 45009,	-- King Magni Bronzebeard
 					races = ALLIANCE_ONLY,
 				}),
 				q(27138, {	-- Earth Girls Aren't So Easy (H)
-					description = "Blizzard marked this quest obsolete.",
 					qg = 45046,	-- Garrosh Hellscream
 					races = HORDE_ONLY,
 				}),

@@ -819,7 +819,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 11.2.0
 		expansion(EXPANSION.TWW, patch(2,0), {
 			n(ARMOR, {
-				i(245526),	-- Bloodmarked Phasebound Visor
 				i(244806),	-- Renowned Explorer's Versatile Vest
 				i(245951),	-- Wildhammer's Portable Forge
 			}),
@@ -1249,7 +1248,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(264969, {sourceID = 303634}),	-- Extinction Voulge
 				i(260737),	-- Forest Dweller's Dawn Staff
 				i(260736),	-- Forest Dweller's Mossy Staff
-				i(260739),	-- Forest Dweller's Night Staff
 				i(246726),	-- Greatsword of Returning Light
 				i(258405),	-- Lil' Black Whirlwind
 				i(260754),	-- Lil' Blue Claw
