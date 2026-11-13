@@ -84,6 +84,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						},
 					}),
 					i(2805),	-- Yeti Fur Cloak
+					i(287069, {	-- Yeti Skinner
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(527, {	-- Battle of Hillsbrad (1/7)

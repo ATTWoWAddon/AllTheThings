@@ -1204,6 +1204,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					{ 81.0, 70.0, MAP.REDRIDGE_MOUNTAINS },
 				},
 			}),
+			i(20576, {	-- Pattern: Black Whelp Tunic (RECIPE!)
+				cr = 441,	-- Black Dragon Whelp
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(250188, {	-- Recipe: Breakfast Omelet (RECIPE!)
 				coords = {
 					{ 46.4, 34.6, MAP.REDRIDGE_MOUNTAINS },	-- Northside

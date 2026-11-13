@@ -91,11 +91,24 @@ instanceroot(233, {	-- Razorfen Downs
 				},
 				lvl = 32,
 			}),
-			q(96773, {	-- The Coldbringer's Eye
+			q(96773, {	-- The Coldbringer's Eye [A]
 				qg = 20735,	-- Archmage Lan'dalock
 				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				lvl = 34,
+				groups = {
+					objective(1, {	-- 0/1 The Coldbringer's Eye
+						provider = { "i", 276916 },	-- The Coldbringer's Eye
+						cr = 7358,	-- Amnennar the Coldbringer
+					}),
+				},
+			}),
+			q(97196, {	-- The Coldbringer's Eye [H]
+				qg = 264078,	-- Sutara Plainstalker <Quartermaster>
+				coord = { 34.4, 22.8, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				lvl = 34,
 				groups = {
 					objective(1, {	-- 0/1 The Coldbringer's Eye

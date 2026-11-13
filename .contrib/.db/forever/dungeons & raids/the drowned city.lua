@@ -220,9 +220,13 @@ instanceroot(2970, {	-- The Drowned City
 			},
 		}),
 		e(3511, {	-- Primeval Elemental
-			creatureID = 273738,	-- Primeval Elemental
+			crs = {
+				263886,	-- Primeval Elemental
+				273738,	-- Primeval Elemental
+			},
 			groups = {
 				i(274611),	-- Robe of the Drowned
+				i(274612),	-- Waterlogged Burial Shroud
 			},
 		}),
 		e(3479, {	-- Min'loth the Serpent

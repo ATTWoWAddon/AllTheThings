@@ -1671,6 +1671,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 2624,	-- Gazban
 					}),
 					i(4120),	-- Robe of Crystal Waters
+					i(270076, {	-- Tidal Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270077, {	-- Undertow Legguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(568, {	-- The Defense of Grom'gol (1/2)

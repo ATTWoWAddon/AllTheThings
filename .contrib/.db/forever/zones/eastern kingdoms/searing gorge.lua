@@ -626,6 +626,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ 45.6, 38.8, MAP.SEARING_GORGE },
 					{ 41.6, 44.8, MAP.SEARING_GORGE },
 				},
+				groups = {
+					i(282094, {	-- Blackheart's Vest
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(8278, {	-- Smoldar
 				coords = {

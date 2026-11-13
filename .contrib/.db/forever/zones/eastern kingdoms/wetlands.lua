@@ -451,6 +451,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			q(472, {	-- Fall of Dun Modr
 				qg = 2097,	-- Harlo Barnaby
 				coord = { 10.8, 55.9, MAP.WETLANDS },
+				lockCriteria = { 1, "questID", 304 },	-- A Grim Task
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 25,

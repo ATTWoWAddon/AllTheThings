@@ -92,6 +92,20 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				timeline = { REMOVED_1_7_0 },
 				lvl = 45,
 			}),
+			q(89038, {	-- A Monumental Task
+				sourceQuest = 89037,	-- Murloc Thieves
+				qg = 239831,	-- Saria Fairmoon
+				coord = { 50.4, 42.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Mark of the Queen
+						provider = { "i", 238517 },	-- Mark of the Queen
+						-- TODO: Wowhead doesn't list where the Mark of the Queen is yet (among the ruins of the Ravencrest Monument).
+					}),
+				},
+			}),
 			q(3564, {	-- Andron's Payment to Jediga
 				sourceQuest = 3542,	-- Delivery to Andron Gant
 				qg = 6522,	-- Andron Gant
@@ -288,6 +302,45 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					i(250999),	-- Recipe: Potion of Beast Slaying (RECIPE!)
 				},
 			}),
+			q(88884, {	-- Highborne Tablets
+				sourceQuest = 88917,	-- Slithering Looters
+				qg = 239831,	-- Saria Fairmoon
+				coord = { 50.4, 42.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Tablet of Creation
+						providers = {
+							{ "i", 238244 },	-- Tablet of Creation
+							{ "o", 524260 },	-- Highborne Tablet
+						},
+						coord = { 49.2, 49.5, MAP.AZSHARA },
+					}),
+					objective(2, {	-- 0/1 Tablet of Manipulation
+						providers = {
+							{ "i", 238245 },	-- Tablet of Manipulation
+							{ "o", 524284 },	-- Highborne Tablet
+						},
+						coord = { 48.9, 55.3, MAP.AZSHARA },
+					}),
+					objective(3, {	-- 0/1 Tablet of Power
+						providers = {
+							{ "i", 238246 },	-- Tablet of Power
+							{ "o", 524298 },	-- Highborne Tablet
+						},
+						coord = { 49.9, 63.8, MAP.AZSHARA },
+					}),
+				},
+			}),
+			q(89470, {	-- Ill Tidings
+				-- TODO: Starts at object 527828, where Your Final Reward (89053) ends; confirm whether it requires 89053.
+				provider = { "o", 527828 },
+				qi = 239609,	-- Saria's Knapsack (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+			}),
 			q(3563, {	-- Jes'rimon's Payment to Jediga
 				sourceQuest = 3541,	-- Delivery to Jes'rimon
 				qg = 8659,	-- Jes'rimon
@@ -407,11 +460,36 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(88821, {	-- Making Contact
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+			}),
 			q(3503, {	-- Meeting with the Master
 				qg = 8395,	-- Sanath Lim-yo
 				coord = { 28.0, 50.0, MAP.AZSHARA },
 				repeatable = true,
 				lvl = 45,
+			}),
+			q(89037, {	-- Murloc Thieves
+				sourceQuest = 88884,	-- Highborne Tablets
+				qg = 239831,	-- Saria Fairmoon
+				coord = { 50.4, 42.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Memory Crystal
+						provider = { "i", 238385 },	-- Memory Crystal
+						coord = { 89.2, 31.8, MAP.AZSHARA },
+						cr = 239971,	-- Razorgill
+					}),
+					i(260180),	-- Scout's Dagger
+					i(260181),	-- Sentinel's Plate
+					i(260182),	-- Elunar Belt
+				},
 			}),
 			q(8255, {	-- Of Coursers We Know
 				sourceQuest = 8254,	-- Cenarion Aid
@@ -430,10 +508,56 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(88809, {	-- Preserving Eldarath
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/12 Eldarath Relic
+						provider = { "i", 280608 },	-- Eldarath Relic
+						crs = {
+							6196,	-- Spitelash Myrmidon
+							6194,	-- Spitelash Serpent Guard
+							6195,	-- Spitelash Siren
+						},
+					}),
+					objective(2, {	-- 0/1 Lord Sarthiss' Head
+						provider = { "i", 280610 },	-- Lord Sarthiss' Head
+						coord = { 35.6, 57.4, MAP.AZSHARA },
+						cr = 239939,	-- Lord Sarthiss
+					}),
+				},
+			}),
+			q(88812, {	-- Reclaiming Ravencrest
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				qi = 238449,	-- Nullifying Ward (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/5 Spitelash Battlemaster slain
+						provider = { "n", 7885 },	-- Spitelash Battlemaster
+					}),
+					objective(2, {	-- 0/5 Spitelash Enchantress slain
+						provider = { "n", 7886 },	-- Spitelash Enchantress
+					}),
+					-- TODO: Wowhead doesn't list the three Naga Power Stones near the Ravencrest Monument yet (objectives 3-5).
+				},
+			}),
 			q(3421, {	-- Return Trip
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
 				repeatable = true,
+				lvl = 45,
+			}),
+			q(88857, {	-- Saving a Sentinel
+				qg = 222478,	-- Sentinel Keldara Sunblade
+				coord = { 20.5, 60.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 45,
 			}),
 			q(98096, {	-- Sisters In Duty
@@ -441,6 +565,43 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				coord = { 39.6, 88.9, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 45,
+			}),
+			q(88807, {	-- Slay the Spitelash
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/8 Spitelash Warrior slain
+						provider = { "n", 6190 },	-- Spitelash Warrior
+					}),
+					objective(2, {	-- 0/8 Spitelash Screamer slain
+						provider = { "n", 6193 },	-- Spitelash Screamer
+					}),
+				},
+			}),
+			q(88917, {	-- Slithering Looters
+				sourceQuest = 88821,	-- Making Contact
+				qg = 239831,	-- Saria Fairmoon
+				coord = { 50.4, 42.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Staff of Archmage Selwyn
+						providers = {
+							{ "i", 238347 },	-- Staff of Archmage Selwyn
+							{ "o", 524759 },	-- Sesspira's Hoard
+						},
+						coord = { 40.9, 50.5, MAP.AZSHARA },
+					}),
+					objective(2, {	-- 0/1 Lady Sesspira's Key
+						provider = { "i", 238345 },	-- Lady Sesspira's Key
+						coord = { 36.4, 52.8, MAP.AZSHARA },
+						cr = 239942,	-- Lady Sesspira
+					}),
+				},
 			}),
 			q(5535, {	-- Spiritual Unrest
 				qg = 11548,	-- Loth'atu
@@ -494,6 +655,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				coord = { 60.8, 66.4, MAP.AZSHARA },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 45,
+			}),
+			q(88813, {	-- The Head of the Serpent
+				sourceQuests = {
+					88809,	-- Preserving Eldarath
+					88812,	-- Reclaiming Ravencrest
+				},
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Krellian's Head
+						provider = { "i", 238057 },	-- Krellian's Head
+						cr = 8408,	-- Warlord Krellian
+					}),
+					i(260208),	-- Prelate's Orb
+					i(260209),	-- Truesong's Hammer
+				},
 			}),
 			q(8151, {	-- The Hunter's Charm
 				allianceQuestData = {
@@ -624,6 +804,19 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				coord = { 29.2, 40.2, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+			}),
+			q(89053, {	-- Your Final Reward
+				sourceQuest = 89038,	-- A Monumental Task
+				qg = 239831,	-- Saria Fairmoon
+				coord = { 50.4, 42.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					i(260201),	-- Highborne Memory Crystal
+					i(260205),	-- Highborne Research Tablet
+					i(260207),	-- Staff of Archmage Selwyn
+				},
 			}),
 		}),
 		n(RARES, {

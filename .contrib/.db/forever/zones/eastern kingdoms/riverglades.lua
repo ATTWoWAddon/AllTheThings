@@ -1653,6 +1653,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
+			q(95955, {	-- Stick 'Em
+				sourceQuest = 95951,	-- Fetch 'n' Fletch
+				qg = 263190,	-- Tan'jani
+				qi = 271639,	-- Makeshift Stickin' Spear (PQI!)
+				coord = { 58.2, 45.2, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
+				lvl = 36,
+				groups = {
+					objective(1, {	-- 0/10 Freshwater Crocolisk impaled
+						provider = { "n", 259046 },	-- Freshwater Crocolisk
+					}),
+				},
+			}),
 			q(94931, {	-- Stolen Saws
 				qg = 256438,	-- Halligan Turner <Foreman>
 				coord = { 41.0, 62.8, MAP.RIVERGLADES },

@@ -11,7 +11,25 @@ instanceroot(2974, {	-- Blackmaw Hold
 	lvl = 55,
 	groups = {
 		n(QUESTS, {
-			
+			q(92345, {	-- Beneath Nordrassil
+				qg = 239822,	-- Commander Truesong
+				coord = { 11.8, 78.2, MAP.AZSHARA },
+				maps = { MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+			}),
+			q(92344, {	-- Get to the Roots of It
+				sourceQuest = 92345,	-- Beneath Nordrassil
+				qg = 4217,	-- Mathrengyl Bearwalker
+				coord = { 35.2, 8.0, MAP.DARNASSUS },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/10 Nordrassil Root Cap
+						provider = { "i", 250773 },	-- Nordrassil Root Cap
+					}),
+				},
+			}),
 		}),
 		e(3315, {	-- Withermaw
 			creatureID = 247195,	-- Withermaw
