@@ -738,7 +738,7 @@ maproot(KALIMDOR, MULGORE, {
 				},
 			}),
 			q(770, {	-- The Demon Scarred Cloak
-				provider = { "i", 4854 },	-- Demon Scarred Cloak
+				qs = 4854,	-- Demon Scarred Cloak (QS!)
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {
@@ -922,7 +922,7 @@ maproot(KALIMDOR, MULGORE, {
 					{ 44.2, 41.2, MULGORE },
 				},
 				groups = {
-					i(4854, {	-- Demon Scarred Cloak
+					i(4854, {	-- Demon Scarred Cloak (QS!)
 						races = HORDE_ONLY,
 					}),
 				},
