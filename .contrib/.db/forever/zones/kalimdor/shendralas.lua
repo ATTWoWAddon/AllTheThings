@@ -272,6 +272,10 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(93568, {	-- Partially Digested Collar
+				qs = 259461,	-- Partially Digested Collar (QS!)
+				lvl = 35,
+			}),
 			q(96018, {	-- Powering the Pylons
 				qg = 253471,	-- Mordent Evenshade
 				qi = 271882,	-- Pile of Pylon Parts (PQI!)
@@ -383,6 +387,9 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(259461, {	-- Partially Digested Collar (QS!)
+				cr = 255207,	-- Prowler
+			}),
 			i(260347, {	-- Tattered Journal (QS!)
 				crs = {
 					253272,	-- Magram Necromancer
