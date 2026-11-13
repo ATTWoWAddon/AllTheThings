@@ -1,18 +1,18 @@
 # Nefarian · executable comparison of two loot routes
 
-**Comparison fixture · excerpts from P1–P4.** The [whole-file walkthrough](../README.md) contains the complete raid. This smaller run follows Nefarian's Head (`19003`) and two versions of Ashkandi through five snapshots. Each directory represents the **same working directory at a different point in the migration**. The copies let you diff each step. For current release timing, edit `rules.blackwing-lair` in the [shared schedule](../../../schedule.json). The executable excerpt uses the four frozen historical profiles under [p4/profiles](p4/profiles/) so the historical comparison stays reproducible. This walkthrough uses option A.
+**Historical executable fixture · P1–P4 at source pin `6f7b562aad5d78ffbc0d608e9627932d90272827`.** This excerpt retains the earlier mixed source and frozen profiles for Parser regression checks. It is not the current P1 baseline. The [complete-source walkthrough](../README.md) uses current standard and standalone SoD alternatives at `195b274`. This smaller run follows Nefarian's Head (`19003`) and two versions of Ashkandi through five snapshots. Each directory represents the **same working directory at a different point in the migration**. The copies let you diff each step. For current release timing, edit `rules.blackwing-lair` in the [shared schedule](../../../schedule.json). The executable excerpt uses the four frozen historical profiles under [p4/profiles](p4/profiles/) so the historical comparison stays reproducible. This walkthrough uses option A.
 
 | Snapshot | Open the Lua | What changed on disk since the previous step | Output authority for this source |
 |---|---|---|---|
-| **P1 excerpt** | [Selected lines](p1/sources.lua) | Extracted from the full P1 file, which uses `applyclassicphase` and SoD guards. | Legacy. [What the shipped SoD DB contains](p1/legacy-sod.md) |
+| **P1 excerpt** | [Selected lines](p1/sources.lua) | Extracted from the pinned historical source, which used `applyclassicphase` and SoD guards. | Legacy. [What the shipped SoD DB contains](p1/legacy-sod.md) |
 | **P2.1** | [Annotated source](p2.1/sources.lua) | Add four Lua fields and select P2.1 in the [migration control](p2.1/migration.json). | Legacy. A policy can still be missing. |
 | **P2.2** | [Same source](p2.2/sources.lua) | Introduce the release rules. The verifier reads a temporary copy of the [frozen profiles](p4/profiles/). Set the [stage](p2.2/migration.json) to P2.2. | Legacy. Validate the proposed progress output separately. |
 | **P3** | [Same source](p3/sources.lua) | The [control](p3/migration.json) changes one value. The verifier gives the P3 projection the same frozen inputs and annotated Lua as P2.2. | Progress. Compare with an independent legacy golden. |
 | **P4** | [Rewritten source](p4/sources.lua) | Remove the old writers and guards. Use the [historical SoD input](p4/profiles/sod/main.json) directly and advance the [control](p4/migration.json). | Progress. [Actual generated SoD Lua](p4/expected-sod.lua) |
 
-## P1 · what the maintainer starts with
+## Historical P1 · the pinned starting excerpt
 
-Open the [selected P1 lines](p1/sources.lua). Its body is copied from the [original raid file](https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua#L45). The outer `applyclassicphase(PHASE_THREE, ...)` covers the instance. In a SoD build, the original encounter acquires this additional parent:
+Open the [selected P1 lines](p1/sources.lua). Its body is copied from the [pinned historical raid file](https://github.com/ATTWoWAddon/AllTheThings/blob/6f7b562aad5d78ffbc0d608e9627932d90272827/.contrib/.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua#L45). The outer `applyclassicphase(PHASE_THREE, ...)` covers the instance. In a SoD build, the original encounter acquires this additional parent:
 
 ```lua
 -- #if SEASON_OF_DISCOVERY
@@ -53,14 +53,14 @@ P2.2 is the first stage that needs a release policy. A maintainer writes the fou
 
 ## P2.2 → P3 · switch which result ships
 
-This is the entire operational edit between the two directory snapshots:
+This is the complete proposed stage-control edit between the two fixture snapshots:
 
 ```diff
 -      "stage": "P2.2",
 +      "stage": "P3",
 ```
 
-The temporary `migration.json` controls this one source group. Its `sources.lua` path is relative to the snapshot root. The verifier copies the same frozen SoD profile into a separate temporary directory for this projection. At P2.2 the progress result is for comparison. At P3 it becomes the official result for the group. The old Lua expressions still exist so the legacy path can be compiled independently.
+The temporary `migration.json` controls this one source group. Its `sources.lua` path is relative to the snapshot root. The verifier copies the same frozen SoD profile into a separate temporary directory for this projection. In the proposed migration, P2.2 compares the policy result and P3 makes it authoritative after promotion checks. These fixture controls do not install that switch in the production Parser. The old Lua expressions still exist so the legacy path can be compiled independently.
 
 | Nefarian source | Legacy evidence | Progress result in SoD |
 |---|---|---|

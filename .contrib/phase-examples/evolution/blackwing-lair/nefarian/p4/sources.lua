@@ -1,4 +1,4 @@
--- Comparison excerpt (P4 / Option A): direct BWL records for the same sampled head and weapons.
+-- Historical comparison excerpt (P4 / Option A): direct BWL records for the same sampled head and weapons.
 -- The four phased contexts use JSON scopes; the ordinary Retail default reads no phase JSON.
 -- This slice omits the same unrelated metadata/prerequisites, rewards and caches as P1/P2.1.
 -- Literal race lists and timeline strings resolve the pinned constants for each selected context.

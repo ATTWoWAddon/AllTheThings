@@ -1,0 +1,14 @@
+{
+  "$comment": "Generated proposed comparison control; select only this source alternative.",
+  "schema": 1,
+  "defaultStage": "P1",
+  "cohorts": [
+    {
+      "id": "comparison-fixture-blackwing-lair",
+      "stage": "P3",
+      "sources": [
+        "standard.lua"
+      ]
+    }
+  ]
+}

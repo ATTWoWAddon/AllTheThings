@@ -1,4 +1,4 @@
--- Comparison excerpt (P1): existing Blackwing Lair slice; not the full instance.
+-- Historical comparison excerpt (P1): existing Blackwing Lair slice; not the full instance.
 -- Pinned ATT source: 6f7b562aad5d78ffbc0d608e9627932d90272827.
 -- .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua
 -- Selected source lines: 45-46, 54, 57, 62, 148-151, 416-421, 431-433, 441, 479-485,

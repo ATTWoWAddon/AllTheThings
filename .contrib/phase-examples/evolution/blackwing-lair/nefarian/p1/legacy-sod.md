@@ -1,6 +1,6 @@
-# P1 · what the legacy Parser shipped for Nefarian
+# Historical P1 · shipped Nefarian records
 
-**Comparison reference for P1–P3.** These fields come from the committed Season of Discovery database at `6f7b562a`. The full records include additional fields. Use this reference to compare the two loot sources independently.
+**Frozen comparison reference for the historical P1–P3 fixture.** These fields come from the committed Season of Discovery database at `6f7b562a`. The full records include additional fields. Use this reference to compare the two loot sources independently. It is not output from the rebased Parser or the current standalone SoD source.
 
 | Selected legacy output | Where to look |
 |---|---|

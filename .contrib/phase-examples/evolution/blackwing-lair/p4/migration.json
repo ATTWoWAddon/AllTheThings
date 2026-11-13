@@ -1,4 +1,7 @@
 {
+  "$comment": "Generated proposed comparison control; select one P4 source with selection.json.",
+  "schema": 1,
+  "defaultStage": "P1",
   "cohorts": [
     {
       "id": "comparison-fixture-blackwing-lair",
@@ -9,7 +12,5 @@
         "sod.lua"
       ]
     }
-  ],
-  "schema": 1,
-  "defaultStage": "P1"
+  ]
 }

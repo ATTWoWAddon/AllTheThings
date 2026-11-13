@@ -1,52 +1,36 @@
-# Blackwing Lair · how the full raid file changes
+# Blackwing Lair · how the complete sources change
 
-**[Open the actual file-by-file evolution](FILE_EVOLUTION.md)** for the complete before/after diffs from P1 through P4, with the full handwritten JSON at the step where it is introduced. The text below explains those changes.
+**[Open the full Lua and JSON evolution](FILE_EVOLUTION.md)** for the complete P1 sources, every changed Lua line, and the JSON introduced at each step.
 
-**Comparison guide for maintainers, P1 → P4.** Open [the complete P1 Lua file](p1/1.6%20Blackwing%20Lair.lua) first. The first line identifies the stage and original path. Everything after it is the current [1,144-line ATT file](../../../.db/standard/01%20-%20Dungeons%20Raids/01%20-%20Classic/1.6%20Blackwing%20Lair.lua), byte for byte. The token definitions, instance metadata, quests, other bosses and every loot entry are included.
+**Maintainer comparison guide, P1 → P4.** Start with the current [standard source](p1/standard.lua) and [standalone SoD source](p1/sod.lua). Each adds an identifying first line above the exact production bytes. Their paths and hashes are recorded in generated [source provenance](../full-source/sources.json). The standard file has the ordinary raid; the SoD file already contains its original history and reworked raid. These are alternative inputs, not layers to load together.
 
-Each directory represents the same raid at a successive migration stage. The copies exist so you can compare versions side by side. For release changes, edit the four rules under `rules.blackwing-lair` in the [shared schedule](../../schedule.json). The migration controls below select the stage for this raid.
+The saved versions demonstrate proposed migration edits. They do not install a P2/P3 migration switch in the production Parser. Release timing stays in the four rules under `rules.blackwing-lair` in [schedule.json](../../schedule.json); provenance and comparison controls are not extra schedules.
 
-| Stage | Complete source at this step | Other files added or changed | Which result would ship |
+| Stage | Complete source alternatives | What changes | Proposed output authority |
 |---|---|---|---|
-| **P1** | [1.6 Blackwing Lair.lua](p1/1.6%20Blackwing%20Lair.lua) | The starting raid uses the existing phase writers. [Actual SoD database records](nefarian/p1/legacy-sod.md) | Legacy. |
-| **P2.1** | [1.6 Blackwing Lair.lua](p2.1/1.6%20Blackwing%20Lair.lua) | Add one shared original scope and the independent keys, identify the SoD rework, and select [P2.1](p2.1/migration.json). Keep every old phase writer and guard. | Legacy. No policy file yet. |
-| **P2.2** | [1.6 Blackwing Lair.lua](p2.2/1.6%20Blackwing%20Lair.lua) | First write the Blackwing Lair rules in [schedule.json](../../schedule.json). Advance the [control file](p2.2/migration.json). | Legacy. Validate the proposed progress result separately. |
-| **P3** | [1.6 Blackwing Lair.lua](p3/1.6%20Blackwing%20Lair.lua) | The only change from P2.2 is one value in [migration.json](p3/migration.json). P3 reads the same Lua and the same four rules in the shared schedule. | Progress after the group's promotion gates pass. Independently compile the old path for the legacy golden. |
-| **P4** | [Ordinary Classic source](p4/classic.lua) · [SoD source](p4/sod.lua) · [Ordinary Retail source](p4/retail.lua) | [Select a complete source before running Lua](p4/selection.json). Retire the old phase writers and flavor guards. Continue reading [the shared schedule](../../schedule.json). | Progress for phased contexts. Retail retains its ordinary, unphased output. |
+| **P1** | [Standard](p1/standard.lua) · [SoD](p1/sod.lua) | Read the current sources and legacy phase writers. | Legacy. |
+| **P2.1** | [Standard](p2.1/standard.lua) · [SoD](p2.1/sod.lua) | Add inherited keys, retaining ordinary fields and all old phase writers. Each alternative has its own control. | Legacy; timing rules may still be absent. |
+| **P2.2** | [Standard](p2.2/standard.lua) · [SoD](p2.2/sod.lua) | Write the shared schedule; keep the Lua body unchanged. | Legacy; compare the proposed policy result separately. |
+| **P3** | [Standard](p3/standard.lua) · [SoD](p3/sod.lua) | Change each selected alternative's stage value. The Lua body and schedule stay unchanged. | Policy after the group's promotion checks pass, with an independent legacy golden. |
+| **P4** | [Retail](p4/retail.lua) · [Classic](p4/classic.lua) · [SoD](p4/sod.lua) | [Choose one source](p4/selection.json) before Lua execution; retire its old phase writers and remaining flavor guards. | Policy in phased contexts; ordinary output in Retail. |
 
-## P1 → P2.1 · what changes in the Lua
+## P1 → P2.1 · write keys at their owners
 
-These four locations show how to read the [annotated full file](p2.1/1.6%20Blackwing%20Lair.lua). The annotations name an acquisition route. They leave the phase numbers and item IDs where they were.
+Both alternatives give the instance `raid.bwl.common`. One transparent scope encloses the original quest, boss and loot records with `raid.bwl.original`. The later book adds `raid.bwl.draconic-for-dummies`. The SoD reworked difficulty is outside the original scope and adds `raid.bwl.sod20`.
 
-```diff
-@@ Whole instance
- root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE, {
-     inst(742, {
-+        progressionKey = "raid.bwl.common",
+| Record | Effective requirements |
+|---|---|
+| Original boss and ordinary drops | `raid.bwl.common` AND `raid.bwl.original` |
+| Book object `180667` | Both original-route keys AND `raid.bwl.draconic-for-dummies` |
+| SoD reworked boss and drops | `raid.bwl.common` AND `raid.bwl.sod20` |
 
-@@ Original records share one authoring-only scope
-+            {
-+                progressionKey = "raid.bwl.original",
-+                groups = {
-     -- The complete original quest, header and boss records move inside here.
+A child key adds a requirement; it cannot bypass its parent. A pure `progressionKey` plus `groups` table shares a condition across siblings without adding a visible output header. The full comparison preserves original constructor shapes, timelines, providers and loot. [Inspect the exact edits and inheritance](FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
 
-@@ Draconic for Dummies retains its later opening
- applyclassicphase(PHASE_FIVE, o(180667, {
-+    progressionKey = "raid.bwl.draconic-for-dummies",
+The generated [standard control](p2.1/standard.migration.json) names only `standard.lua`; the [SoD control](p2.1/sod.migration.json) names only `sod.lua`. Both source paths are relative to their control file. Choose the applicable alternative, rather than collecting both controls into one build.
 
-@@ SoD's reworked 20-player difficulty
- applyclassicphase(SOD_PHASE_FIVE, d(DIFFICULTY.SOD.PLAYER20, {
-+    flavors = { "sod" },
-+    progressionKey = "raid.bwl.sod20",
-```
+## P2.1 → P2.2 → P3 · one schedule, separate stage controls
 
-The entire original section shares one `raid.bwl.original` declaration. Its quests, headers, bosses and ordinary drops inherit it; the book alone adds its own rule. The scope closes before the SoD rework begins. Headers retain their original child-list syntax. [See the complete scope hierarchy and inheritance rules](FILE_EVOLUTION.md#write-a-key-once-children-inherit-it).
-
-For the P2 legacy path, the comparison verifier removes the added metadata and transparent scope before comparing the resulting source byte for byte with P1. This preserves every old writer and condition. It is a bounded source projection for this example, not an implementation of the production migration or an independent legacy golden.
-
-## P2.1 → P2.2 → P3 · what changes outside the Lua
-
-Open [schedule.json](../../schedule.json) at `rules.blackwing-lair`. At P2.2 a maintainer writes this section once. The shadow build checks the schedule while the legacy phase writers still determine official output.
+At P2.2, write these four entries under `rules.blackwing-lair` in [schedule.json](../../schedule.json):
 
 ```json
 {
@@ -57,33 +41,41 @@ Open [schedule.json](../../schedule.json) at `rules.blackwing-lair`. At P2.2 a m
 }
 ```
 
-To move the whole SoD opening, change only `raid.bwl.common.sod`. The rework follows it through `sameAs`. The original stays disabled in SoD, and the book keeps its own unresolved rule. P3 and P4 both refer back to this file. From any full stage directory its relative path is `../../../schedule.json`.
+Move the whole SoD opening by changing `raid.bwl.common.sod`. The rework follows through `sameAs`. The original remains disabled in SoD; the book remains unresolved. `sameAs` shares timing, not loot. Retail reads no phase schedule.
 
-Here is the entire P2.2 → P3 file diff, from the proposed one-group migration control:
+P2.2 still ships the legacy result in the proposed migration. P3 changes the selected source's control from `"stage": "P2.2"` to `"stage": "P3"`. The Lua body and timing rules are unchanged. The example stage comments identify each saved comparison.
 
-```diff
--      "stage": "P2.2",
-+      "stage": "P3",
+At P3, promotion requires an independently compiled legacy result and reviewed expectations for the whole source group. The unresolved book still prevents promotion of its affected path. Merely changing the comparison control does not prove those requirements.
+
+## P3 → P4 · retain the selected source
+
+`retail.lua` and `classic.lua` derive from the annotated standard source, resolving its remaining flavor choices while retaining ordinary version conditions. `sod.lua` derives only from the standalone SoD source.
+
+The original SoD route keeps removed difficulty 9, its timeline and race restriction, and Ashkandi `19364`. The reworked route keeps difficulty 201, its token costs, quests and Ashkandi `230818`. Shared item IDs such as `19002` and `19003` remain distinct acquisitions. The original route's disabled rule cannot disable the rework.
+
+The P4 selector still uses one file path per context. The migration control lists the available candidates; it does not itself load all three files. [Read the full selection and control JSON](FILE_EVOLUTION.md#select-the-source-before-lua-execution).
+
+## Check the current standalone source with the Parser
+
+[verify_current_parser.py](../full-source/verify_current_parser.py) extracts a bounded owner tree from the actual saved BWL P2.2, P3 and P4 SoD files. It retains `instanceroot(742)`, the original 40-player and reworked 20-player difficulties, Nefarian, and the complete item calls for `19002`, `19003`, `19364` and `230818`. [project-current-bwl.lua](../full-source/project-current-bwl.lua) converts that selected tree for the existing `--phase-example` API.
+
+The regression compares policy projections from all three stages. Expected ordinary metadata comes independently from the current production SoD file and shared race/timeline constants. It checks distinct routes, additive keys, opening transitions and the original Horde restriction; deliberately removing that restriction must fail.
+
+From the repository root on Windows with .NET Framework 4.8.1 targeting support and Lua 5.1:
+
+```powershell
+dotnet build .contrib/src/Parser/Parser.csproj -c Release -p:Platform=x64 "-p:OutputPath=$env:TEMP/att-phase-parser"
+if ($LASTEXITCODE) { throw 'Parser build failed' }
+python .contrib/phase-examples/evolution/full-source/verify_current_parser.py --parser "$env:TEMP/att-phase-parser/Parser.exe" --lua lua5.1 --output "$env:TEMP/att-current-bwl"
 ```
 
-At P3 the progress projection suppresses the old phase writes and applies the reviewed rules. The separate legacy projection keeps those calls. The old SoD database stores `phase=1609` on instance 742. In the progress projection the reworked Nefarian drop carries both `sod:main:raid.bwl.common` and `sod:main:raid.bwl.sod20`. The source group in each control file is relative to that snapshot's root.
-
-## P3 → P4 · where the old conditionals go
-
-The full-file example shows option B: select complete ATT-native source files before executing their helpers. The three files let you inspect everything the selected flavor would read. Retail and ordinary Classic differ on the original source's `ANYCLASSIC` content. The SoD file contains its token table, deprecated 40-player history and reworked 20-player raid. Conditions tied to a client version still guard the records that used them.
-
-| Find this in the P3 Lua | Follow it into the complete P4 files |
-|---|---|
-| Outer `applyclassicphase(PHASE_THREE, ...)` | The instance keeps its provider, maps, quest prerequisite and `raid.bwl.common`. The shared schedule supplies the window. |
-| Original Nefarian and the conditional 40-player wrapper | The [Classic file](p4/classic.lua) keeps the original encounter flat. The [SoD file](p4/sod.lua) keeps its removed difficulty 9, timeline, race restriction and original Ashkandi `19364`. |
-| `applyclassicphase(SOD_PHASE_FIVE, d(...PLAYER20, ...))` | Only the [SoD file](p4/sod.lua) has difficulty 201, the reworked loot including `230818`, the token costs and the separate quest sources. |
-| Later book `applyclassicphase(PHASE_FIVE, o(180667, ...))` | The book and its own timeline remain. Its key selects the single book rule shared by the phased contexts. |
-
-These are full native source **candidates**. Production promotion of the entire raid still requires an independent legacy golden, complete build/eligibility checks and evidence for the unresolved book opening. The ordinary Retail file illustrates its default output outside the Classic migration.
+The output directory retains each stage's selected source, projection and compiled Lua, plus `current-source.json` with source and Parser hashes. This is a bounded current-source regression, not execution of the complete production raid or a new migration loader. The separate [historical Nefarian fixture](nefarian/README.md) remains pinned to its earlier source and profiles.
 
 ## Run the focused comparison
 
-The [Nefarian walkthrough](nefarian/README.md) uses a **separate teaching excerpt** to execute the P2.2 shadow, P3 progress and direct P4 paths. Its two occurrences of Head of Nefarian, plus the two swords, make a small enough sample to inspect in the [actual generated Lua](nefarian/p4/expected-sod.lua). The verifier reuses four [frozen historical profiles](nefarian/p4/profiles/) for the excerpt. Keep those inputs fixed when editing the live schedule. The comparison adapter only accepts this fixture's constructors. The full native files above include the rest of the raid and use ATT's normal source language.
+The [Nefarian walkthrough](nefarian/README.md) is a separate executable excerpt. It follows Head of Nefarian and the two swords through the shadow, policy and direct P4 paths. Its frozen profiles and historical shipped database evidence are distinct from the current full-source baseline.
+
+From the repository root on Windows, with Python and Lua 5.1:
 
 ```powershell
 $kit = '.contrib/phase-examples/evolution/blackwing-lair'
@@ -91,6 +83,6 @@ $parser = Resolve-Path '.contrib/.tools/Parser.exe'
 python "$kit/verify.py" --parser $parser --lua lua5.1
 ```
 
-To inspect every changed line locally, run `git diff --no-index -- p1 p2.1` or `git diff --no-index -- p2.2 p3` from this directory. [Full P1 files and worked records for the other five instances](../OTHER_INSTANCES.md)
+The full-source checks compare every selected source alternative, writer owner and ordinary source token. They do not execute the whole native raid through the production Parser or establish production promotion.
 
-The [previous version](https://github.com/NORPG/AllTheThings/tree/bdaf592bde27657ab84938b0e496837c859b426a/.contrib/phase-examples/evolution/blackwing-lair) preserves the separate expanded JSON files at each stage.
+[Other five instances and record evidence](../OTHER_INSTANCES.md)

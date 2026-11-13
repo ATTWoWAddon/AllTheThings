@@ -1,4 +1,4 @@
--- Comparison excerpt (P2.1 / P2.2 / P3): same annotated Lua for all three stages.
+-- Historical comparison excerpt (P2.1 / P2.2 / P3): same annotated Lua for all three stages.
 -- Original phase writers and guards remain; only scope keys and applicability are added.
 -- Pinned ATT source: 6f7b562aad5d78ffbc0d608e9627932d90272827.
 -- .contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua
