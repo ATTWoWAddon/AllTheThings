@@ -71,6 +71,53 @@ instanceroot(2994, {	-- Alcaz Prison
 				races = ALLIANCE_ONLY,
 				lvl = 48,
 			}),
+			q(96377, {	-- State Secrets [A]
+				sourceQuest = 96337,	-- More Valuable Than Gold
+				altQuests = {
+					96376,	-- State Secrets [H]
+					96379,	-- State Secrets [Steamwheedle]
+				},
+				qg = 6946,	-- Renzik "The Shiv" <SI:7 Operative>
+				coord = { 78.4, 71.0, MAP.STORMWIND_CITY },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Document Box
+						provider = { "i", 274041 },	-- Document Box
+					}),
+					i(279450),	-- Fractured Insignia
+				},
+			}),
+			q(96376, {	-- State Secrets [H]
+				sourceQuest = 96337,	-- More Valuable Than Gold
+				altQuests = {
+					96377,	-- State Secrets [A]
+					96379,	-- State Secrets [Steamwheedle]
+				},
+				qg = 3230,	-- Nazgrel <Advisor to Thrall>
+				coord = { 32.4, 36.0, MAP.ORGRIMMAR },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Document Box
+						provider = { "i", 274041 },	-- Document Box
+					}),
+				},
+			}),
+			q(96379, {	-- State Secrets [Steamwheedle]
+				sourceQuest = 96337,	-- More Valuable Than Gold
+				altQuests = {
+					96377,	-- State Secrets [A]
+					96376,	-- State Secrets [H]
+				},
+				-- TODO: Wowhead doesn't list where it starts or ends yet; it awards Steamwheedle Cartel reputation. Completed together with 96376 and 96377 when Sammy turned in 96377 (Contributor Report, Nov 12).
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/1 Document Box
+						provider = { "i", 274041 },	-- Document Box
+					}),
+				},
+			}),
 			q(96772, {	-- The Dragon's Journal
 				qg = 20735,	-- Archmage Lan'dalock
 				coord = { 15.4, 73.8, MAP.ALTERAC_MOUNTAINS },
