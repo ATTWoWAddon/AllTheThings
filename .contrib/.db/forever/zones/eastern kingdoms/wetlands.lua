@@ -204,6 +204,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				qg = 270844,	-- Sylessa Duskwhisper
 				coord = { 8.0, 55.9, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 22,
 				groups = {
 					objective(1, {	-- Nord'el
@@ -223,6 +224,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 8.0, 55.9, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				maps = { MAP.DARKSHORE },
+				races = ALLIANCE_ONLY,
 				lvl = 22,
 			}),
 			q(88756, {	-- Bring Back a Bang
