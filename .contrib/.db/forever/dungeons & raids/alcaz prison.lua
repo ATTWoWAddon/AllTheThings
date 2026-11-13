@@ -11,6 +11,28 @@ instanceroot(2994, {	-- Alcaz Prison
 	lvl = 48,
 	groups = {
 		n(QUESTS, {
+			q(96381, {	-- A Bit of Wet Work
+				sourceQuest = 95198,	-- The Return of the King?
+				qg = 260271,	-- Sully McCleary
+				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/15 Strashaz Soldier slain
+						cr = 255995,	-- Strashaz Soldier
+					}),
+					objective(2, {	-- 0/8 Strashaz Enchantress slain
+						cr = 255373,	-- Strashaz Enchantress
+					}),
+					objective(3, {	-- 0/1 Ca'zass's Head
+						provider = { "i", 273883 },	-- Ca'zass's Head
+						cr = 255997,	-- Tidemistress Ca'zass
+					}),
+					i(279826),	-- Marshdweller's Pants
+					i(279829),	-- Naga Scale Spaulders
+					i(279825),	-- Theramore Defender's Gauntlets
+				},
+			}),
 			q(95194, {	-- Our Man in Theramore
 				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
 				coord = { 78.4, 70.6, MAP.STORMWIND_CITY },
@@ -75,7 +97,6 @@ instanceroot(2994, {	-- Alcaz Prison
 		e(3410, {	-- Tidemistress Ca'zass
 			creatureID = 255997,	-- Tidemistress Ca'zass
 			groups = {
-				-- TODO: Ca'zass's Head (273883) is a quest item; find the quest it's for.
 				i(276737),	-- Cloak of the Tidemistress
 				i(276736),	-- Seascale Bracers
 				i(276735),	-- Tidesong Wand
