@@ -452,6 +452,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				qg = 2097,	-- Harlo Barnaby
 				coord = { 10.8, 55.9, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
 				lvl = 25,
 			}),
 			q(277, {	-- Fire Taboo
