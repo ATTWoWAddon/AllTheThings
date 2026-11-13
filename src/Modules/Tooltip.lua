@@ -1045,6 +1045,12 @@ do
 	-- Redraws a unit tooltip whose ATT text was still loading, so it picks up the finished data
 	local function RefreshUnitTooltip(tooltip)
 		if not tooltip:IsVisible() then return end
+		-- Refreshing from addon code taints the tooltip: Blizzard's unit handlers then fail on a secret
+		-- unit token (e.g. while carrying a passenger). Skip it; the text is rebuilt on the next hover.
+		if tooltip.GetUnit then
+			local _, unit = tooltip:GetUnit()
+			if issecretvalue(unit) then return end
+		end
 		if tooltip.RefreshData then
 			tooltip:RefreshData()
 		else
