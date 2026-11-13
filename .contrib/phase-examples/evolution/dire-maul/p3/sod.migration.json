@@ -1,12 +1,13 @@
 {
+  "$comment": "Generated proposed comparison control; select only this source alternative.",
   "schema": 1,
   "defaultStage": "P1",
   "cohorts": [
     {
       "id": "comparison-fixture-dire-maul",
-      "stage": "P2.2",
+      "stage": "P3",
       "sources": [
-        "Dire Maul.lua"
+        "sod.lua"
       ]
     }
   ]
