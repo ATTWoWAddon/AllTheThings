@@ -639,6 +639,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					{ 81.0, 57.8, MAP.SWAMP_OF_SORROWS },
 					{ 77.2, 65.8, MAP.SWAMP_OF_SORROWS },
 				},
+				groups = {
+					i(282008, {	-- Wyrmak's Cuirass
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(763, {	-- Lost One Chieftain
 				coords = {
