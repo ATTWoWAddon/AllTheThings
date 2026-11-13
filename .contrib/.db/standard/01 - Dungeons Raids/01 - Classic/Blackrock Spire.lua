@@ -1551,7 +1551,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 		-- #endif
 		n(UPPER_BLACKROCK_SPIRE, {
 			-- #if BEFORE 3.0.8
-			cost = { { "i", 12344, 1 } },	-- Seal of Ascension
+			attunement = { { "i", 12344 } },	-- Seal of Ascension
 			-- #endif
 			groups = {
 				-- #if AFTER WRATH

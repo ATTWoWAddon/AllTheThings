@@ -1313,7 +1313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				coord = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				maps = GORDOK_COMMONS_MAPS,
 				-- #if BEFORE 4.0.3
-				cost = { { "i", 18249, 1 } },	-- Crescent Key
+				attunement = { { "i", 18249 } },	-- Crescent Key
 				-- #endif
 				groups = {
 					n(ZONE_DROPS, {
@@ -1580,7 +1580,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				coord = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
 				maps = CAPITAL_GARDENS_MAPS,
 				-- #if BEFORE 4.0.3
-				cost = { { "i", 18249, 1 } },	-- Crescent Key
+				attunement = { { "i", 18249 } },	-- Crescent Key
 				-- #endif
 				groups = {
 					n(VENDORS, {

@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(SCARLET_MONASTERY_ARMORY_HEADER, {
 						timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
 						-- #if BEFORE 4.0.3
-						cost = { { "i", 7146, 1 } },	-- The Scarlet Key
+						attunement = { { "i", 7146 } },	-- The Scarlet Key
 						-- #endif
 						lvl = 35,
 						groups = {
@@ -492,7 +492,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(SCARLET_MONASTERY_CATHEDRAL_HEADER, {
 						timeline = { REMOVED_5_0_4, ADDED_10_1_7 },
 						-- #if BEFORE 4.0.3
-						cost = { { "i", 7146, 1 } },	-- The Scarlet Key
+						attunement = { { "i", 7146 } },	-- The Scarlet Key
 						-- #endif
 						lvl = 37,
 						groups = {

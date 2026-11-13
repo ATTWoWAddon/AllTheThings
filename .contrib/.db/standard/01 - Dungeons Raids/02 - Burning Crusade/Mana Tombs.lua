@@ -291,10 +291,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance in order to access this mode.",
-				cost = {
-					{ "i", 30633, 1 },	-- Auchenai Key
+				attunement = {
+					{ "i", 30633 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265845, 1 },	-- Communal Auchenai Key
+					{ "i", 265845 },	-- Communal Auchenai Key
 					-- #endif
 				},
 				-- #endif

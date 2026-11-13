@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 		zoneTextAreaID = 2677,	-- Blackwing Lair
 		-- #endif
 		-- #if BEFORE WOD
-		sourceQuest = 7761,	-- Blackhand's Command
+		attunement = { { "q", 7761 } },	-- Blackhand's Command
 		-- #endif
 		provider = { "o", 179879 },	-- Orb of Command
 		mapID = BLACKWING_LAIR,

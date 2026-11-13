@@ -515,8 +515,8 @@ s(129489,18544,{b=1,f=5,loc=44,lvl=60,q=4,u=2}),
 s(129948,19134,{b=1,f=5,loc=45,lvl=60,q=4,u=2}),
 s(129947,19133,{b=1,f=4,loc=46,lvl=60,q=4,u=2}),
 i(18543,{b=1,f=52,lvl=60,q=4,u=2})}})}}),
-inst(741,{coords={
-[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,sourceQuests={7848},zoneTextAreaID=2717,g={
+inst(741,{attunement={{"q",7848}},coords={
+[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,zoneTextAreaID=2717,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c={1,2,7,11},providers={{"i",17182}}}),
 s(128780,17182,{b=1,c={1,2,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5})}}),
@@ -833,8 +833,8 @@ i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
 i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,phase=15,q=4,rwp=40003})}})}}),
-inst(760,{coords={
-[1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
+inst(760,{attunement={{"i",16309}},coords={
+[1445]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
 h(-45,{awp=10001,g={
 q(7635,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,sourceQuests={7633},g={
@@ -906,8 +906,8 @@ s(128752,17078,{awp=10001,b=1,f=3,lvl=60,q=4,rwp=100000}),
 i(18813,{awp=10001,b=1,f=52,lvl=60,q=4,rwp=100000}),
 i(17064,{awp=10001,b=1,f=53,lvl=60,q=4,rwp=100000}),
 i(21108,{awp=10900,b=1,phase=15,q=4,rwp=40003})})}}),
-inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},zoneTextAreaID=2677,g={
+inst(742,{attunement={{"q",7761}},awp=10600,coords={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,zoneTextAreaID=2677,g={
 h(-45,{
 q(7781,{maps={1453},qss={19003},r=2}),
 q(7782,{coords={
@@ -2231,7 +2231,7 @@ s(133129,22730,{b=1,f=4,loc=45,lvl=60,q=4}),
 s(132019,21582,{b=1,f=4,loc=45,lvl=60,q=4}),
 i(21596,{b=1,f=52,lvl=60,q=4}),
 i(21579,{b=1,f=53,lvl=60,q=4})}})}}),
-inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},phase=16,rwp=30002,savedInstanceID=533,sourceQuests={9121},zoneTextAreaID=3456,g={
+inst(754,{attunement={{"q",9121},{"q",9122},{"q",9123}},awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},phase=16,rwp=30002,savedInstanceID=533,zoneTextAreaID=3456,g={
 ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}}}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},g={
@@ -3644,7 +3644,7 @@ s(128388,16679,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003}),
 i(13143,{b=1,f=52,lvl=56,q=4}),
 i(13164,{b=1,f=53,lvl=56,q=3,rwp=40003}),
 i(22321,{b=1,f=53,lvl=56,phase=15,q=3})}})}),
-h(-354,{cost={{"i",12344,1}},g={
+h(-354,{attunement={{"i",12344}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814},q=3,rwp=60002}),
 r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333,rwp=60002}),
@@ -3940,8 +3940,8 @@ s(129266,18318,{b=1,f=6,loc=47,lvl=54,q=3}),
 i(18314,{b=1,f=52,lvl=54,q=3}),
 i(18315,{b=1,f=52,lvl=54,q=3}),
 crit(545,{achID=644,id=1})}})}}),
-h(-356,{coords={
-[1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,g={
+h(-356,{attunement={{"i",18249}},coords={
+[1444]={{62.48,24.48}}},mapID=235,g={
 h(-63,{
 i(18250,{b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003})}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",g={
@@ -4034,8 +4034,8 @@ s(129426,18481,{b=1,f=24,lvl=55,q=2}),
 i(18500,{b=1,f=52,lvl=56,q=3}),
 s(129483,18538,{b=1,f=22,lvl=58,q=4}),
 s(129476,18531,{b=1,f=24,lvl=57,q=3})}})}}),
-h(-357,{coords={
-[1444]={{60.32,30.17}}},cost={{"i",18249,1}},mapID=236,maps={237,238},g={
+h(-357,{attunement={{"i",18249}},coords={
+[1444]={{60.32,30.17}}},mapID=236,maps={237,238},g={
 h(-58,{
 n(14371,{
 r(22902,{itemID=18487,learnedAt=300,q=1,requireSkill=197})})}),
@@ -4647,7 +4647,7 @@ s(122101,7711,{b=1,f=4,loc=42,lvl=33,q=3}),
 i(34227,{awp=20300,b=1,f=52,lvl=29,q=4}),
 o(103821,{rwp=40003,g={
 i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",q=2})}})})}}),
-h(-363,{cost={{"i",7146,1}},lvl=35,rwp=50004,g={
+h(-363,{attunement={{"i",7146}},lvl=35,rwp=50004,g={
 n(3975,{
 s(122107,7717,{b=1,f=22,lvl=37,q=3}),
 s(122109,7719,{b=1,f=6,loc=40,lvl=37,q=3}),
@@ -4655,7 +4655,7 @@ s(122108,7718,{b=1,f=6,loc=41,lvl=37,q=3}),
 s(123649,10330,{b=1,f=6,loc=46,lvl=38,q=3})}),
 n(6575,{
 s(133591,23192,{b=1,f=9,q=2})})}}),
-h(-364,{cost={{"i",7146,1}},lvl=37,rwp=50004,g={
+h(-364,{attunement={{"i",7146}},lvl=37,rwp=50004,g={
 n(4542,{
 s(130231,19507,{b=1,f=4,loc=41,lvl=36,q=2}),
 s(130232,19508,{b=1,f=5,loc=43,lvl=36,q=2}),
@@ -4721,8 +4721,8 @@ s(122429,8226,{f=25,lvl=26,q=3}),
 s(122145,7760,{f=5,loc=46,lvl=34,q=3}),
 s(122116,7727,{f=5,loc=41,lvl=27,q=3}),
 s(122142,7757,{f=28,lvl=32,q=3})})}}),
-inst(246,{coords={
-[1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
+inst(246,{attunement={{"i",13704}},coords={
+[1422]={{69.07,72.96}}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
 h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7668},g={
@@ -5288,8 +5288,8 @@ s(132727,22328,{b=1,f=7,loc=46,lvl=58,q=3}),
 i(22334,{b=1,f=52,lvl=57,q=3})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",phase=16,rwp=30002,g={
 s(133135,22736,{b=1,collectible=false,description="He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",f=25,lvl=60,q=5})}})}}),
-h(-366,{coords={
-[1423]={{48.18,21.9}}},cost={{"i",12382,1}},providers={{"o",175369}},g={
+h(-366,{attunement={{"i",12382}},coords={
+[1423]={{48.18,21.9}}},providers={{"o",175369}},g={
 h(-63,{
 r(20033,{crs={10398},itemID=16248,learnedAt=295,q=2,requireSkill=333}),
 r(19092,{crs={10406},itemID=15768,learnedAt=300,q=2,requireSkill=165,rwp=20005,u=2}),
@@ -6128,8 +6128,8 @@ s(141075,30729,{b=1,f=3,lvl=70,q=4}),
 s(141076,30730,{b=1,f=5,loc=42,lvl=70,q=4}),
 s(141071,30725,{b=1,f=4,loc=44,lvl=70,q=4}),
 s(141073,30727,{b=1,f=4,loc=46,lvl=70,q=4})}})}}),
-inst(745,{coords={
-[1430]={{46.87,74.69}}},cost={{"i",24490,1}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=70,mapID=350,maps={351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,zoneTextAreaID=2562,g={
+inst(745,{attunement={{"i",24490}},coords={
+[1430]={{46.87,74.69}}},description="The best route for a full clear:\n1. Turn right immediately after going through the Gatehouse Door and enter the Servant's Quarters.\n2. From the western bat room goes a passage up to the Guest Chambers. Ignore the passage to the right until this section is cleared.\n3. Ignore the Opera Hall, go downstairs through the ballroom to Moroes and further through the kitchen and stables for Attumen the Huntsman. Here you will also find the practical vendor Koren (requires Honored with The Violet Eye).\n4. Back to the Gatehouse and upstairs to the Opera Hall, from here is the raid linear to last boss.",isLockoutShared=1,isRaid=1,lore="Karazhan is an abandoned citadel located on a nexus of ley lines in southern Deadwind Pass. The tower is best known for its last known occupant - Medivh, the last Guardian of Tirisfal. After Medivh was killed by Khadgar, Anduin Lothar, and Garona, the tower sealed itself off from the rest of the world. But recently, Karazhan has reawakened - an evil presence has taken the tower as its own, its halls crawling with spirits and demons, and Medivh's presence is still alive and well, even decades after his death.",lvl=70,mapID=350,maps={351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366},savedInstanceID=532,zoneTextAreaID=2562,g={
 h(-12,{
 ach(960,{minReputation={967,42000}})}),
 h(-31,{
@@ -6562,8 +6562,8 @@ i(23441,{q=3}),
 i(23439,{q=3}),
 i(23438,{q=3}),
 i(23437,{q=3})}})}})}}),
-inst(748,{coords={
-[1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,phase=18,savedInstanceID=548,sourceQuests={10901},zoneTextAreaID=3607,g={
+inst(748,{attunement={{"q",10901}},coords={
+[1946]={{50.2,41},{51.9,32.9}}},isLockoutShared=1,isRaid=1,lore="Whoever controls the water controls Outland.\n\nThese are the words of Lord Illidan Stormrage to his most trusted lieutenant, Lady Vashj. Shortly after the Third War, when Illidan requested the aid of the naga, a group of naga led by Lady Vashj answered his call. Ever since, Vashj has displayed a fierce dedication to Illidan.\n\nNow the naga witch carefully monitors Coilfang's operations from her seat of power within Serpentshrine Cavern. Far more at home here among the waters of the reservoir than locked within the cold stone walls of Black Temple, Vashj maintains a close eye on her minions and personally oversees the draining of Zangarmarsh.\n\nWhether her loyalties belong to Illidan alone, however, remains to be seen.",lvl=68,mapID=332,phase=18,savedInstanceID=548,zoneTextAreaID=3607,g={
 h(-45,{awp=20100,g={
 q(10944,{coords={
 [332]={{48,18.2}}},description="After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",maps={1948},qgs={22820},sourceQuests={10708}})}}),
@@ -6676,8 +6676,8 @@ i(30621,{b=1,f=53,lvl=70,q=4}),
 i(32895,{b=1,lvl=70,q=4,rwp=40003,g={
 i(32897,{q=2})}}),
 i(29906,{f=55,q=1})}})}}),
-inst(749,{coords={
-[1953]={{73.73,63.71}}},isLockoutShared=1,isRaid=1,lore="With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",lvl=70,mapID=334,phase=18,savedInstanceID=550,sourceQuests={10888},g={
+inst(749,{attunement={{"q",10888}},coords={
+[1953]={{73.73,63.71}}},isLockoutShared=1,isRaid=1,lore="With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",lvl=70,mapID=334,phase=18,savedInstanceID=550,g={
 h(-45,{
 q(11007,{qss={32405},g={
 i(30018,{b=1,f=51,q=4}),
@@ -6784,9 +6784,9 @@ s(140657,30311,{collectible=false,crs={21272},f=25,lvl=70,q=5}),
 i(32896,{b=1,lvl=70,q=4,rwp=40003,g={
 i(32897,{q=2})}}),
 i(29905,{f=55,q=1})}})}}),
-inst(750,{coords={
+inst(750,{attunement={{"q",10445}},coords={
 [75]={{36,16.1}},
-[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lore="The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",lvl=70,mapID=329,phase=19,savedInstanceID=534,sourceQuests={10445},zoneTextAreaID=3606,g={
+[1446]={{64.7,49.9}}},isLockoutShared=1,isRaid=1,lore="The Battle of Mount Hyjal was the final bloody conflict that concluded the Third War. The battle was the culmination of years of fighting between the various mortal forces of Azeroth and the demonic and undead armies of the Burning Legion, and saw the demons' invasion end in decisive failure.\n\nSpecifically, the event took place as part of the invasion of Kalimdor phase of the war, where Archimonde struck directly at the World Tree Nordrassil on Mount Hyjal as part of his endgame. The battle began when a mortal coalition of night elves, Alliance, and New Horde elements arrayed themselves before the World Tree to halt Archimonde's advance. Though they were unable to stand against the Legion indefinitely, they aimed to buy time for Malfurion Stormrage to prepare a proper defense.",lvl=70,mapID=329,phase=19,savedInstanceID=534,zoneTextAreaID=3606,g={
 h(-12,{
 ach(959,{maps={75},minReputation={990,42000}})}),
 h(-31,{
@@ -7092,8 +7092,8 @@ s(141259,30913,{b=1,f=4,loc=42,lvl=70,q=4}),
 s(141250,30904,{b=1,f=7,loc=42,lvl=70,q=4}),
 s(141258,30912,{b=1,f=4,loc=46,lvl=70,q=4}),
 s(141249,30903,{b=1,f=7,loc=46,lvl=70,q=4})}})}}),
-inst(751,{awp=20100,coords={
-[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=339,maps={340,341,342,343,344,345,346,759},phase=19,savedInstanceID=564,sourceQuests={10985},g={
+inst(751,{attunement={{"q",10985}},awp=20100,coords={
+[1948]={{71,46.5}}},isRaid=1,lore="When Illidan the Betrayer fled to Outland after the Third War, he ousted the Temple's ruler - the pit lord Magtheridon - and claimed his throne as the lord of the blasted world. Following his defeat at the hands of Arthas Menethil, Illidan returned to the Black Temple where he resides to this day. Neither his activities nor mental state are known at this time. While Malfurion has stated that Illidan has become mad and delusional, believing that he killed Arthas and accomplished the mission Kil'jaeden had sent him on.\n\nDespite the bitter retribution of his enemies, Illidan has begun to tighten his grip on Outland from within the profaned sanctum, where he awaits any and all who would challenge his rule.",lvl=70,mapID=339,maps={340,341,342,343,344,345,346,759},phase=19,savedInstanceID=564,g={
 h(-12,{
 ach(958,{minReputation={1012,42000}})}),
 h(-31,{
@@ -7639,7 +7639,7 @@ s(137759,27412,{b=1,f=28,lvl=65,q=3}),
 s(137761,27414,{b=1,f=6,loc=40,lvl=65,q=3}),
 i(27413,{b=1,f=52,lvl=65,q=3}),
 s(137758,27411,{b=1,f=4,loc=47,lvl=65,q=3})}})}),
-d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30633},{"i",265845}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18371,18373},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30587,{b=1,q=4}),
@@ -7732,8 +7732,8 @@ s(134441,24063,{b=1,f=5,loc=45,lvl=60,q=3}),
 s(134533,24155,{b=1,f=28,lvl=60,q=3}),
 i(24154,{b=1,f=52,lvl=60,q=3})}})}),
 d(2,_.ResolveQuestData({aqd=
-{cost={{"i",265830,1},{"i",30622,1}}},description="You need to have a key to the instance in order to access this mode.",hqd=
-{cost={{"i",265826,1},{"i",30637,1}}},lvl=70,g={
+{attunement={{"i",30622},{"i",265830}}},description="You need to have a key to the instance in order to access this mode.",hqd=
+{attunement={{"i",30637},{"i",265826}}},lvl=70,g={
 h(-19,{crs={17306,17307,17308},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30593,{b=1,q=4}),
@@ -7856,7 +7856,7 @@ s(144625,34796,{b=1,f=5,loc=42,lvl=70,q=3}),
 s(144626,34797,{b=1,f=28,lvl=70,q=3}),
 s(144631,34809,{b=1,f=5,loc=47,lvl=70,q=4}),
 s(144629,34807,{b=1,f=7,loc=47,lvl=70,q=4})}})}),
-d(2,{description="You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",lvl=70,sourceQuests={11492},g={
+d(2,{attunement={{"q",11492}},description="You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",lvl=70,g={
 h(-19,{
 toy(35275,{b=1,crs={24560,24664,24723,24744},lvl=70,q=3})}),
 e(530,{npcID=24723,g={
@@ -7948,7 +7948,7 @@ s(136304,25957,{b=1,f=4,loc=47,lvl=64,q=3}),
 i(25962,{b=1,f=52,lvl=64,q=3}),
 i(28490,{q=1}),
 r(28572,{b=1,itemID=22921,learnedAt=360,q=2,requireSkill=171})}})}),
-d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30633},{"i",265845}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18341,18343,18344,22927},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30584,{b=1,q=4}),
@@ -8071,7 +8071,7 @@ s(137781,27434,{b=1,f=5,loc=41,lvl=66,q=3}),
 s(137780,27433,{b=1,f=4,loc=41,lvl=66,q=3}),
 i(27432,{b=1,f=52,lvl=66,q=3}),
 r(31078,{b=1,itemID=24173,learnedAt=370,q=4,requireSkill=755})}})}),
-d(2,{cost={{"i",30635,1},{"i",265849,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",265849},{"i",30635}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17848,17862,18096},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30589,{b=1,q=4}),
@@ -8179,7 +8179,7 @@ i(27925,{b=1,f=52,lvl=68,q=3}),
 s(138283,27936,{b=1,f=6,loc=46,lvl=68,q=3}),
 i(27632,{q=1}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003})}})}),
-d(2,{cost={{"i",265845,1},{"i",30633,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30633},{"i",265845}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18472,18473,23035},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30552,{b=1,q=4}),
@@ -8224,8 +8224,8 @@ i(23572,{b=1,phase=17,q=3}),
 i(27632,{q=1}),
 i(33834,{q=1}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003})}})}})}}),
-inst(253,{coords={
-[1952]={{39.63,73.55}}},cost={{"i",27991,1}},lore="Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",lvl=65,mapID=260,savedInstanceID=555,zoneTextAreaID=3789,g={
+inst(253,{attunement={{"i",27991}},coords={
+[1952]={{39.63,73.55}}},lore="Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",lvl=65,mapID=260,savedInstanceID=555,zoneTextAreaID=3789,g={
 h(-45,{
 q(10178,{coords={
 [1952]={{39.9,72.3}}},lvl=68,qgs={19496},rwp=40300}),
@@ -8299,7 +8299,7 @@ s(138255,27908,{b=1,f=5,loc=46,lvl=70,q=3}),
 s(138256,27909,{b=1,f=6,loc=46,lvl=70,q=3}),
 s(138249,27902,{b=1,f=4,loc=47,lvl=70,q=3}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197})}})}),
-d(2,{cost={{"i",27991,1},{"i",265845,1},{"i",30633,1}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30633},{"i",265845}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18667,18708,18731,18732},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30559,{b=1,q=4}),
@@ -8349,8 +8349,8 @@ r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197}),
 i(23572,{b=1,phase=17,q=3}),
 i(33840,{q=1}),
 i(31722,{q=1})}})}})}}),
-inst(254,{coords={
-[1953]={{74.42,57.72}}},cost={{"i",31084,1}},lore="The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",lvl=65,mapID=269,maps={270,271},savedInstanceID=552,zoneTextAreaID=3846,g={
+inst(254,{attunement={{"i",31084}},coords={
+[1953]={{74.42,57.72}}},lore="The Arcatraz is a prison where the naaru jailed the most terrifying and dangerous creatures they encountered on their journeys. When Kael'thas and his followers took the Keep, he sent a warden and guards to the Arcatraz. Kael's blood elves, however, were corruptible and the prisoners have begun to break free...",lvl=65,mapID=269,maps={270,271},savedInstanceID=552,zoneTextAreaID=3846,g={
 h(-45,{
 q(10706,{lvl=68,qgs={21962},sourceQuests={10705}}),
 q(10882,{coords={
@@ -8417,7 +8417,7 @@ s(138577,28231,{b=1,f=6,loc=42,lvl=70,q=3}),
 s(138752,28406,{b=1,f=4,loc=47,lvl=70,q=3}),
 i(28407,{b=1,f=52,lvl=70,q=3}),
 i(28418,{b=1,f=53,lvl=70,q=3})}})}),
-d(2,{cost={{"i",30634,1},{"i",31084,1},{"i",265847,1}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",265847},{"i",30634}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={20870,20885,20886,20912},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30582,{b=1,q=4}),
@@ -8463,8 +8463,8 @@ i(28407,{b=1,f=52,lvl=70,q=3}),
 i(28418,{b=1,f=53,lvl=70,q=3}),
 i(23572,{b=1,phase=17,q=3}),
 i(33861,{q=1})}})}})}}),
-inst(255,{coords={
-[75]={{37.2,83.3}}},description="You must have obtained the quest \"The Black Morass\" in order to enter.",lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,sourceQuests={10296},zoneTextAreaID=2366,g={
+inst(255,{attunement={{"q",10296}},coords={
+[75]={{37.2,83.3}}},description="You must have obtained the quest \"The Black Morass\" in order to enter.",lore="The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",lvl=65,mapID=273,savedInstanceID=269,zoneTextAreaID=2366,g={
 h(-45,{
 q(10298,{lvl=66,qgs={20201},rwp=40300,sourceQuests={10297},g={
 i(29320,{b=1,f=52,q=3}),
@@ -8513,7 +8513,7 @@ s(138324,27977,{b=1,f=7,loc=46,lvl=68,q=3}),
 s(138186,27839,{b=1,f=7,loc=46,lvl=70,q=3}),
 s(138220,27873,{b=1,f=5,loc=46,lvl=70,q=3}),
 i(28190,{b=1,f=53,lvl=70,q=3})}})}),
-d(2,{cost={{"i",30635,1},{"i",265849,1}},description="You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",lvl=70,sourceQuests={10296},g={
+d(2,{attunement={{"i",265849},{"i",30635}},description="You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",lvl=70,sourceQuests={10296},g={
 h(-19,{crs={17879,17880,17881},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30558,{b=1,q=4}),
@@ -8604,8 +8604,8 @@ s(134774,24397,{b=1,f=4,loc=42,lvl=61,q=3}),
 s(134773,24396,{b=1,f=5,loc=42,lvl=61,q=3}),
 s(134772,24395,{b=1,f=4,loc=45,lvl=61,q=3})}})}),
 d(2,_.ResolveQuestData({aqd=
-{cost={{"i",265830,1},{"i",30622,1}}},description="You need to have a key to the instance in order to access this mode.",hqd=
-{cost={{"i",265826,1},{"i",30637,1}}},lvl=70,g={
+{attunement={{"i",30622},{"i",265830}}},description="You need to have a key to the instance in order to access this mode.",hqd=
+{attunement={{"i",30637},{"i",265826}}},lvl=70,g={
 h(-19,{crs={17377,17380,17381},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30601,{b=1,q=4}),
@@ -8698,7 +8698,7 @@ s(138693,28347,{b=1,f=5,loc=46,lvl=70,q=3}),
 s(138687,28341,{b=1,f=28,lvl=70,q=3}),
 r(31454,{b=1,itemID=24311,learnedAt=375,q=4,requireSkill=197}),
 i(31085,{q=1})}})}),
-d(2,{cost={{"i",30634,1},{"i",265847,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",265847},{"i",30634}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17975,17976,17977,17978,17980},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30574,{b=1,q=4}),
@@ -8804,7 +8804,7 @@ s(138632,28286,{b=1,f=31,lvl=70,q=3}),
 s(138550,28204,{b=1,f=5,loc=42,lvl=70,q=3}),
 r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197}),
 i(31086,{q=1})}})}),
-d(2,{cost={{"i",30634,1},{"i",265847,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",265847},{"i",30634}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={19219,19220,19221},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30566,{b=1,q=4}),
@@ -8845,8 +8845,8 @@ r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197}),
 i(23572,{b=1,phase=17,q=3}),
 i(31086,{q=1}),
 i(33860,{q=1})}})}})}}),
-inst(259,{coords={
-[1944]={{47.66,51.98}}},cost={{"i",28395,1}},lore="For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",lvl=65,mapID=246,savedInstanceID=540,zoneTextAreaID=3714,g={
+inst(259,{attunement={{"i",28395}},coords={
+[1944]={{47.66,51.98}}},lore="For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",lvl=65,mapID=246,savedInstanceID=540,zoneTextAreaID=3714,g={
 h(-45,{
 q(10763,{coords={
 [1944]={{51.1,60.3}}},lvl=68,qgs={21209},r=2,rwp=40003,sourceQuests={10762},g={
@@ -8949,8 +8949,8 @@ i(27529,{b=1,f=53,lvl=70,q=3}),
 s(137883,27536,{b=1,f=4,loc=44,lvl=70,q=3}),
 s(137881,27534,{b=1,f=1,lvl=70,q=3})}})}),
 d(2,_.ResolveQuestData({aqd=
-{cost={{"i",28395,1},{"i",265830,1},{"i",30622,1}}},description="You need to have 2 keys to the instance in order to access this mode.",hqd=
-{cost={{"i",28395,1},{"i",265826,1},{"i",30637,1}}},lvl=70,g={
+{attunement={{"i",30622},{"i",265830}}},description="You need to have 2 keys to the instance in order to access this mode.",hqd=
+{attunement={{"i",30637},{"i",265826}}},lvl=70,g={
 h(-19,{crs={16807,16808,16809,20923},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30547,{b=1,q=4}),
@@ -9047,7 +9047,7 @@ s(134739,24362,{b=1,f=3,lvl=62,q=3}),
 s(134740,24363,{b=1,f=7,loc=42,lvl=62,q=3}),
 s(134742,24365,{b=1,f=5,loc=44,lvl=62,q=3}),
 s(134741,24364,{b=1,f=7,loc=46,lvl=62,q=3})}})}),
-d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30623},{"i",265843}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17941,17942,17991},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30603,{b=1,q=4}),
@@ -9140,7 +9140,7 @@ s(138142,27795,{b=1,f=4,loc=45,lvl=70,q=3}),
 s(138221,27874,{b=1,f=6,loc=46,lvl=70,q=3}),
 i(27805,{b=1,f=52,lvl=70,q=3}),
 r(31456,{b=1,itemID=24313,learnedAt=375,q=4,requireSkill=197})}})}),
-d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30623},{"i",265843}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17796,17797,17798},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30551,{b=1,q=4}),
@@ -9228,7 +9228,7 @@ s(134838,24463,{b=1,f=7,loc=41,lvl=63,q=3}),
 s(134856,24481,{b=1,f=4,loc=42,lvl=63,q=3}),
 s(134840,24465,{b=1,f=6,loc=42,lvl=63,q=3}),
 s(134841,24466,{b=1,f=5,loc=46,lvl=63,q=3})}})}),
-d(2,{cost={{"i",265843,1},{"i",30623,1}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
+d(2,{attunement={{"i",30623},{"i",265843}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17770,17826,17882,18105},g={
 i(29434,{b=1,lvl=70,q=4}),
 i(30606,{b=1,q=4}),

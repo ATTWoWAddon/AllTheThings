@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		zoneTextAreaID = 3606,	-- Hyjal Summit
 		-- #endif
 		-- #if BEFORE WRATH
-		sourceQuest = 10445,	-- The Vials of Eternity
+		attunement = { { "q", 10445 } },	-- The Vials of Eternity
 		-- #endif
 		mapID = THE_BATTLE_FOR_MOUNT_HYJAL,
 		coords = {

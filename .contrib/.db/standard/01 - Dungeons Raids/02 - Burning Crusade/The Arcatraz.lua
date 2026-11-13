@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			271,	-- Containment Core
 		},
 		-- #if BEFORE CATA
-		cost = { { "i", 31084, 1 } },	-- Key to the Arcatraz
+		attunement = { { "i", 31084 } },	-- Key to the Arcatraz
 		-- #endif
 		lvl = lvlsquish(65, 65, 25),
 		groups = {
@@ -248,12 +248,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have 2 keys to the instance in order to access this mode.",
-				cost = {
+				attunement = {
 					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265847, 1 },	-- Communal Warpforged Key
+					{ "i", 265847 },	-- Communal Warpforged Key
 					-- #endif
-					{ "i", 31084, 1 },	-- Key to the Arcatraz
-					{ "i", 30634, 1 },	-- Warpforged Key
+					{ "i", 30634 },	-- Warpforged Key
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),

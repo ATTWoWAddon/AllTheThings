@@ -10,7 +10,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		zoneTextAreaID = 2717,	-- Molten Core
 		-- #endif
 		-- #if BEFORE 5.4.0
-		sourceQuest = 7848,	-- Attunement to the Core
+		attunement = { { "q", 7848 } },	-- Attunement to the Core
 		-- #endif
 		mapID = MOLTEN_CORE,
 		coord = { 54.18, 83.25, BLACKROCK_MOUNTAIN },

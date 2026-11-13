@@ -1419,6 +1419,36 @@ local InformationTypes = {
 			end
 		end,
 	}),
+	CreateInformationType("attunement", { text = L.ATTUNEMENTS,
+		-- attunement = { { "i", itemID }, { "q", questID } }: what grants entry to this group (a key, a quest...)
+		-- Unlike 'cost', these are requirements only, so they never count or fill as costs.
+		Process = function(t, reference, tooltipInfo)
+			local attunements = reference.attunement
+			if not attunements then return end
+			local a, attType, attID, text, done
+			for i=1,#attunements do
+				a = attunements[i]
+				attType, attID = a[1], a[2] or 0
+				if attType == "i" then
+					text = ConversionMethods.itemNameAndIcon(attID, reference)
+					done = GetItemCount(attID, true) > 0
+				elseif attType == "q" then
+					local quest = app.SearchForObject("questID", attID, "field") or app.CreateQuest(attID)
+					text = IsRetrievingConversionMethod(quest and quest.text, reference)
+					if app.Settings:GetTooltipSetting("questID") then
+						text = text .. " (" .. attID .. ")"
+					end
+					done = app.IsQuestFlaggedCompleted(attID)
+				else
+					text, done = UNKNOWN, nil
+				end
+				tooltipInfo[#tooltipInfo+1] = {
+					left = (i == 1 and L.ATTUNEMENTS),
+					right = text .. " " .. app.GetCompletionIcon(done),
+				}
+			end
+		end,
+	}),
 	CreateInformationType("criteriaID", { text = L.CRITERIA_ID }),
 	CreateInformationType("currencyID", { text = L.CURRENCY_ID }),
 	CreateInformationType("difficultyID", { text = L.DIFFICULTY_ID }),

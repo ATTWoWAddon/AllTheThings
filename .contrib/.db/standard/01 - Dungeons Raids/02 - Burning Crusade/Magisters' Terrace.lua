@@ -345,7 +345,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				description = "You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",
-				sourceQuest = 11492,	-- Hard to Kill
+				attunement = { { "q", 11492 } },	-- Hard to Kill
 				lvl = lvlsquish(70, 70, 30),
 			}).AddGroups({
 				n(COMMON_BOSS_DROPS, {

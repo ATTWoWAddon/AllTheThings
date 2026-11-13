@@ -835,7 +835,7 @@ instanceroot(230, {	-- Dire Maul
 		DIREMAUL_SUBMAP(235, GORDOK_COMMONS, {		-- Gordok Commons (North)
 			coord = { 62.48, 24.48, MAP.FERALAS },	-- Dire Maul [North]
 			maps = GORDOK_COMMONS_MAPS,
-			cost = {{ "i", 18249, 1 }},	-- Crescent Key
+			attunement = { { "i", 18249 } },	-- Crescent Key
 			groups = {
 				n(ZONE_DROPS, {
 					i(18250, {	-- Gordok Shackle Key
@@ -1017,7 +1017,7 @@ instanceroot(230, {	-- Dire Maul
 		DIREMAUL_SUBMAP(236, CAPITAL_GARDENS, {		-- Capital Gardens (West)
 			coord = { 60.32, 30.17, MAP.FERALAS },	-- Dire Maul [West]
 			maps = CAPITAL_GARDENS_MAPS,
-			cost = {{ "i", 18249, 1 }},	-- Crescent Key
+			attunement = { { "i", 18249 } },	-- Crescent Key
 			groups = {
 				n(VENDORS, {
 					n(14371, {	-- Shen'dralar Provisioner

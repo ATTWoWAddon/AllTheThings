@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			366,	-- Netherspace
 		},
 		-- #if BEFORE 4.2.0
-		cost = { { "i", 24490, 1 } },	-- The Master's Key
+		attunement = { { "i", 24490 } },	-- The Master's Key
 		-- #endif
 		sharedLockout = 1,
 		isRaid = true,

@@ -482,8 +482,8 @@ s(163607,18544,{b=1,f=5,loc=44,lvl=60,q=4}),
 s(163815,19134,{b=1,f=5,loc=45,lvl=60,q=4}),
 s(163814,19133,{b=1,f=4,loc=46,lvl=60,q=4}),
 i(18543,{b=1,f=52,lvl=60,q=4})}})}}),
-inst(741,{coords={
-[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,sourceQuests={7848},zoneTextAreaID=2717,g={
+inst(741,{attunement={{"q",7848}},coords={
+[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,zoneTextAreaID=2717,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c={1,2,7,11},providers={{"i",17182}}}),
 s(163282,17182,{b=1,c={1,2,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5})}}),
@@ -800,8 +800,8 @@ i(18815,{b=1,f=53,lvl=60,q=4}),
 i(17082,{b=1,f=53,lvl=60,q=4}),
 i(17982,{b=1,f=52,lvl=60,q=3,rwp=10400,u=2}),
 i(21110,{awp=10900,b=1,phase=15,q=4,rwp=40003})}})}}),
-inst(760,{coords={
-[1445]={{52.3,76.2}}},cost={{"i",16309,1}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
+inst(760,{attunement={{"i",16309}},coords={
+[1445]={{52.3,76.2}}},isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,savedInstanceID=249,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
 h(-45,{awp=10001,g={
 q(7635,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},rwp=40003,sourceQuests={7633},g={
@@ -873,8 +873,8 @@ s(163271,17078,{awp=10001,b=1,f=3,lvl=60,q=4,rwp=100000}),
 i(18813,{awp=10001,b=1,f=52,lvl=60,q=4,rwp=100000}),
 i(17064,{awp=10001,b=1,f=53,lvl=60,q=4,rwp=100000}),
 i(21108,{awp=10900,b=1,phase=15,q=4,rwp=40003})})}}),
-inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},zoneTextAreaID=2677,g={
+inst(742,{attunement={{"q",7761}},awp=10600,coords={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,zoneTextAreaID=2677,g={
 h(-45,{
 q(7781,{maps={1453},qss={19003},r=2}),
 q(7782,{coords={
@@ -2197,7 +2197,7 @@ s(165054,22730,{b=1,f=4,loc=45,lvl=60,q=4}),
 s(164669,21582,{b=1,f=4,loc=45,lvl=60,q=4}),
 i(21596,{b=1,f=52,lvl=60,q=4}),
 i(21579,{b=1,f=53,lvl=60,q=4})}})}}),
-inst(754,{awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},phase=16,rwp=30002,savedInstanceID=533,sourceQuests={9121},zoneTextAreaID=3456,g={
+inst(754,{attunement={{"q",9121},{"q",9122},{"q",9123}},awp=11100,isRaid=1,lore="An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",lvl=60,mapID=162,maps={163,164,165,166,167},phase=16,rwp=30002,savedInstanceID=533,zoneTextAreaID=3456,g={
 ah(22631,{c={5,8,9,11},isRaid=1,lore="Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Buff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",maps={75},type="i",g={
 ach(425,{c={5,8,9,11},providers={{"i",22589},{"i",22630},{"i",22631},{"i",22632}}}),
 q(9251,{c={5,8,9,11},lvl=60,maps={320},qgs={15192},sourceQuests={9250},g={
@@ -3604,7 +3604,7 @@ s(162994,16679,{b=1,f=6,loc=41,lvl=55,q=3,rwp=40003}),
 i(13143,{b=1,f=52,lvl=56,q=4}),
 i(13164,{b=1,f=53,lvl=56,q=3,rwp=40003}),
 i(22321,{b=1,f=53,lvl=56,phase=15,q=3})}})}),
-h(-354,{cost={{"i",12344,1}},g={
+h(-354,{attunement={{"i",12344}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814},q=3,rwp=60002}),
 r(20030,{crs={10317},itemID=16247,learnedAt=295,q=2,requireSkill=333,rwp=60002}),
@@ -3900,8 +3900,8 @@ s(163464,18318,{b=1,f=6,loc=47,lvl=54,q=3}),
 i(18314,{b=1,f=52,lvl=54,q=3}),
 i(18315,{b=1,f=52,lvl=54,q=3}),
 crit(545,{achID=644,id=1})}})}}),
-h(-356,{coords={
-[1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,g={
+h(-356,{attunement={{"i",18249}},coords={
+[1444]={{62.48,24.48}}},mapID=235,g={
 h(-63,{
 i(18250,{b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",q=2,rwp=40003})}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",g={
@@ -3994,8 +3994,8 @@ s(163563,18481,{b=1,f=24,lvl=55,q=2}),
 i(18500,{b=1,f=52,lvl=56,q=3}),
 s(163604,18538,{b=1,f=22,lvl=58,q=4}),
 s(163598,18531,{b=1,f=24,lvl=57,q=3})}})}}),
-h(-357,{coords={
-[1444]={{60.32,30.17}}},cost={{"i",18249,1}},mapID=236,maps={237,238},g={
+h(-357,{attunement={{"i",18249}},coords={
+[1444]={{60.32,30.17}}},mapID=236,maps={237,238},g={
 h(-58,{
 n(14371,{
 r(22902,{itemID=18487,learnedAt=300,q=1,requireSkill=197})})}),
@@ -4605,7 +4605,7 @@ s(158999,7712,{b=1,f=4,loc=41,lvl=33,q=2}),
 s(158998,7711,{b=1,f=4,loc=42,lvl=33,q=2}),
 o(103821,{rwp=40003,g={
 i(7146,{b=1,description="Found in the chest after killing Arcanist Doan.",q=2})}})})}}),
-h(-363,{cost={{"i",7146,1}},lvl=35,rwp=50004,g={
+h(-363,{attunement={{"i",7146}},lvl=35,rwp=50004,g={
 n(3975,{
 s(159002,7717,{b=1,f=22,lvl=37,q=3}),
 s(159004,7719,{b=1,f=6,loc=40,lvl=37,q=3}),
@@ -4613,7 +4613,7 @@ s(159003,7718,{b=1,f=6,loc=41,lvl=37,q=3}),
 s(159996,10330,{b=1,f=6,loc=46,lvl=38,q=3})}),
 n(6575,{
 s(165204,23192,{b=1,f=9,q=1})})}}),
-h(-364,{cost={{"i",7146,1}},lvl=37,rwp=50004,g={
+h(-364,{attunement={{"i",7146}},lvl=37,rwp=50004,g={
 n(4542,{
 s(163925,19507,{b=1,f=4,loc=41,lvl=36,q=2}),
 s(163926,19508,{b=1,f=5,loc=43,lvl=36,q=2}),
@@ -4679,8 +4679,8 @@ s(159196,8226,{f=25,lvl=26,q=3}),
 s(159029,7760,{f=5,loc=46,lvl=34,q=3}),
 s(159010,7727,{f=5,loc=41,lvl=27,q=3}),
 s(159026,7757,{f=28,lvl=32,q=3})})}}),
-inst(246,{coords={
-[1422]={{69.07,72.96}}},cost={{"i",13704,1}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
+inst(246,{attunement={{"i",13704}},coords={
+[1422]={{69.07,72.96}}},lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,maps={306,307,308,309},savedInstanceID=289,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
 h(-45,{awp=10300,rwp=50004,g={
 q(8259,{altQuests={8258},awp=10700,c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,phase=14,qgs={13417},r=1,rwp=40003,sourceQuests={7668},g={
@@ -5246,8 +5246,8 @@ s(164904,22328,{b=1,f=7,loc=46,lvl=58,q=3}),
 i(22334,{b=1,f=52,lvl=57,q=3})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",phase=16,rwp=30002,g={
 s(165056,22736,{b=1,collectible=false,description="He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",f=25,lvl=60,q=5})}})}}),
-h(-366,{coords={
-[1423]={{48.18,21.9}}},cost={{"i",12382,1}},providers={{"o",175369}},g={
+h(-366,{attunement={{"i",12382}},coords={
+[1423]={{48.18,21.9}}},providers={{"o",175369}},g={
 h(-63,{
 r(20033,{crs={10398},itemID=16248,learnedAt=295,q=2,requireSkill=333}),
 r(19092,{crs={10406},itemID=15768,learnedAt=300,q=2,requireSkill=165,rwp=20005}),

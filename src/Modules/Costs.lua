@@ -391,6 +391,11 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh, chainUpdate)
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),owned == 1 and "PROV OWNED" or "PROV MISSING")
 	end
 	isCost = isCost or isProv
+	-- Attunement items (instance keys) are needed until the character has one, but never buy anything
+	if not isCost and GetRawField("itemIDAsAttunement", itemID) and GetItemCount(itemID, true, nil, true, true) == 0 then
+		isCost = true
+		owned, total = 0, 1
+	end
 	local isOwnedCost = (isCost and owned >= total) or nil
 	SetCostTotals(costs, isCost, refresh, itemID, isOwnedCost, chainUpdate)
 end
@@ -500,6 +505,14 @@ local function UpdateCosts()
 	-- Get all itemIDAsCost entries
 	for itemID,refs in pairs(app.GetFieldContainer("itemIDAsCost")) do
 		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false, refs)
+	end
+
+	-- Get all itemIDAsAttunement entries which are not also costs
+	local itemCosts = app.GetFieldContainer("itemIDAsCost")
+	for itemID,_ in pairs(app.GetFieldContainer("itemIDAsAttunement")) do
+		if not rawget(itemCosts, itemID) then
+			UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, false)
+		end
 	end
 
 	-- Get all currencyIDAsCost entries

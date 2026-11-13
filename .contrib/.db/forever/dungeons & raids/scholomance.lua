@@ -9,7 +9,7 @@ instanceroot(246, {	-- Scholomance
 		5505,	-- The Key to Scholomance [Alliance]
 		5511,	-- The Key to Scholomance [Horde]
 	},
-	cost = {{"i", 13704, 1}},	-- Skeleton Key
+	attunement = { { "i", 13704 } },	-- Skeleton Key
 	mapID = MAP.SCHOLOMANCE,
 	coord = { 69.07, 72.96, MAP.WESTERN_PLAGUELANDS },
 	lvl = 55,

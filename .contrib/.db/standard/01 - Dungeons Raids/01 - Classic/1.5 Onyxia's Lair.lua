@@ -51,8 +51,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			6502,	-- Alliance Attunement Quest
 			6602,	-- Horde Attunement Quest
 		},
-		cost = {
-			{ "i", 16309, 1 },	-- Drakefire Amulet
+		attunement = {
+			{ "i", 16309 },	-- Drakefire Amulet
 		},
 		-- #endif
 		mapID = ONYXIAS_LAIR,

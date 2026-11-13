@@ -252,11 +252,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance in order to access this mode.",
-				cost = {
+				attunement = {
 					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265849, 1 },	-- Communal Key of Time
+					{ "i", 265849 },	-- Communal Key of Time
 					-- #endif
-					{ "i", 30635, 1 },	-- Key of Time
+					{ "i", 30635 },	-- Key of Time
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),

@@ -27243,9 +27243,9 @@ s(205261,57541,{b=1,f=3,q=1})}})}}),
 q(3364,{coords={
 [1426]={{25,75.8}}},lvl=4,qgs={12738},qis={10439},r=2,rwp=40003,u=2}),
 q(282,{altQuests={287},coords={
-[1426]={{25,75.8}}},qgs={786},qis={2619},r=2,rwp=40003,sourceQuests={218},u=2}),
+[1426]={{25,75.8}}},isBreadcrumb=1,nextQuests={420},qgs={786},qis={2619},r=2,rwp=40003,sourceQuests={218},u=2}),
 q(420,{altQuests={287},coords={
-[1426]={{33.4,71.8}}},qgs={1965},qis={2619},r=2,rwp=40003,sourceQuests={282},u=2}),
+[1426]={{33.4,71.8}}},isBreadcrumb=1,nextQuests={287},qgs={1965},qis={2619},r=2,rwp=40003,sourceQuests={282},u=2}),
 q(3112,{c={1},coords={
 [1426]={{35.8,66.2}}},qgs={37087},qis={9544},races={7},rwp=40003,sourceQuests={179},u=2}),
 q(3106,{c={1},coords={

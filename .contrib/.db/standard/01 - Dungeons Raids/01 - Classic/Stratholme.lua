@@ -954,7 +954,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				},
 				-- #if BEFORE 4.0.3
-				cost = { { "i", 12382, 1 } },	-- Key to the City
+				attunement = { { "i", 12382 } },	-- Key to the City
 				-- #endif
 				groups = {
 					n(ZONE_DROPS, {

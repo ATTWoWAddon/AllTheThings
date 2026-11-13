@@ -611,7 +611,7 @@ instanceroot(236, {	-- Stratholme
 			coords = {
 				{ 48.18, 21.90, MAP.EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 			},
-			cost = { { "i", 12382, 1 } },	-- Key to the City
+			attunement = { { "i", 12382 } },	-- Key to the City
 			groups = {
 				n(ZONE_DROPS, {
 					i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)

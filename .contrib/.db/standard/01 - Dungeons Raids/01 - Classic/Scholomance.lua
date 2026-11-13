@@ -1823,7 +1823,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			5505,	-- The Key to Scholomance [Alliance]
 			5511,	-- The Key to Scholomance [Horde]
 		},
-		cost = { { "i", 13704, 1 } },	-- Skeleton Key
+		attunement = { { "i", 13704 } },	-- Skeleton Key
 		-- #endif
 		mapID = SCHOLOMANCE,
 		coord = { 69.07, 72.96, WESTERN_PLAGUELANDS },

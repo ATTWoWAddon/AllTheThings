@@ -466,8 +466,8 @@ crit(116080,{achID=62034,id=10,providers={{"n",250074}}}),
 crit(116072,{achID=62034,id=11,providers={{"n",250082}}}),
 crit(116071,{achID=62034,id=12,providers={{"n",250078}}}),
 crit(116070,{achID=62034,id=13,providers={{"n",250079}}})})})}}),
-inst(760,{coords={
-[1445]={{52.3,76.2}}},cost={{"i",16309,1}},icon=329121,isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
+inst(760,{attunement={{"i",16309}},coords={
+[1445]={{52.3,76.2}}},icon=329121,isRaid=1,lore="Onyxia is the daughter of the mighty dragon Deathwing, and sister of the scheming Nefarian, Lord of Blackrock Spire.\n\nIt is said that Onyxia delights in corrupting the mortal races by meddling in their political affairs. To this end it is believed that she takes on various humanoid forms and uses her charm and power to influence delicate matters between the different races. Some believe that Onyxia has even assumed an alias once used by her father - the title of the royal House Prestor. When not meddling in mortal concerns, Onyxia resides in a fiery cave below the Dragonmurk, a dismal swamp located within Dustwallow Marsh. There she is guarded by her kin, the remaining members of the insidious black dragonflight.",lvl=60,mapID=248,sourceQuests={6502,6602},zoneTextAreaID=2159,g={
 h(-45,{
 q(7635,{c={3},coords={
 [1448]={{47,24.48}}},cost={{"i",18705,1}},lvl=60,qgs={14525},g={
@@ -1458,7 +1458,7 @@ i(13143,{f=52,spellID=17252}),
 i(13164,{b=1,f=53,lvl=56,spellID=17275}),
 i(22321,{f=53,spellID=27656}),
 crit(18534,{achID=62033,awp=16001,id=9})}})}),
-h(-354,{cost={{"i",12344,1}},g={
+h(-354,{attunement={{"i",12344}},g={
 h(-63,{
 i(12607,{crs={10442,10447,10814}}),
 r(20030,{crs={10317},itemID=16247,learnedAt=295,requireSkill=333,skillID=2940}),
@@ -1843,8 +1843,8 @@ i(18314,{f=52}),
 s(163474,18328,{f=3}),
 s(163473,18327,{f=4,loc=45}),
 crit(545,{achID=62033,awp=16001,id=14})}})}}),
-h(-356,{coords={
-[1444]={{62.48,24.48}}},cost={{"i",18249,1}},mapID=235,g={
+h(-356,{attunement={{"i",18249}},coords={
+[1444]={{62.48,24.48}}},mapID=235,g={
 h(-63,{
 i(18250,{b=1,crs={11441,11444,11445,11448,11450,14321,14323,14325,14326,14351},description="NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away."})}),
 h(-19,{crs={14321,14323,14326},description="The following items can drop from any of the guards.",g={
@@ -1924,8 +1924,8 @@ s(163563,18481,{f=24}),
 i(18500,{f=52}),
 s(163604,18538,{f=22}),
 s(163598,18531,{f=24})}})}}),
-h(-357,{coords={
-[1444]={{60.32,30.17}}},cost={{"i",18249,1}},mapID=236,maps={237,238},g={
+h(-357,{attunement={{"i",18249}},coords={
+[1444]={{60.32,30.17}}},mapID=236,maps={237,238},g={
 h(-58,{
 n(14371)}),
 h(-63,{
@@ -2942,7 +2942,7 @@ s(158998,7711,{f=4,loc=42}),
 s(308785,274293,{awp=16001,f=33}),
 s(308786,274294,{awp=16001,f=4,loc=47}),
 crit(116059,{achID=62032,awp=16001,id=6})})}}),
-h(-363,{cost={{"i",7146,1}},lvl=35,g={
+h(-363,{attunement={{"i",7146}},lvl=35,g={
 n(3975,{
 s(159002,7717,{f=22}),
 s(159004,7719,{f=6,loc=40}),
@@ -2952,7 +2952,7 @@ crit(116060,{achID=62032,awp=16001,id=7})}),
 n(6575,{
 r(1259349,{awp=16001,itemID=255730,learnedAt=280,requireSkill=129,skillID=2942}),
 s(165204,23192,{f=9})})}}),
-h(-364,{cost={{"i",7146,1}},lvl=37,g={
+h(-364,{attunement={{"i",7146}},lvl=37,g={
 n(4542,{
 s(163925,19507,{f=4,loc=41}),
 s(163926,19508,{f=5,loc=43}),
@@ -2967,8 +2967,8 @@ n(3977,{
 s(159006,7721,{f=23}),
 i(7722,{f=51}),
 s(159005,7720,{f=4,loc=40,spellID=1293540})})}})}}),
-inst(246,{coords={
-[1422]={{69.07,72.96}}},cost={{"i",13704,1}},icon=136355,lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
+inst(246,{attunement={{"i",13704}},coords={
+[1422]={{69.07,72.96}}},icon=136355,lore="The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",lvl=55,mapID=476,sourceQuests={5505,5511},zoneTextAreaID=2057,g={
 h(-45,{
 q(8259,{altQuests={8258},c={7},coords={
 [1454]={{38.7,35.9}}},lvl=55,qgs={13417},races={2,6,8,96},sourceQuests={7668},g={
@@ -3543,8 +3543,8 @@ s(164904,22328,{f=7,loc=46}),
 i(22334,{f=52})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",g={
 s(165056,22736,{collectible=false,description="He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",f=25,spellID=28347})}})}}),
-h(-366,{coords={
-[1423]={{48.18,21.9}}},cost={{"i",12382,1}},providers={{"o",175369}},g={
+h(-366,{attunement={{"i",12382}},coords={
+[1423]={{48.18,21.9}}},providers={{"o",175369}},g={
 h(-63,{
 r(20033,{crs={10398},itemID=16248,learnedAt=295,requireSkill=333,skillID=2940}),
 r(19092,{crs={10406},itemID=15768,learnedAt=275,requireSkill=165,skillID=2945}),
@@ -3762,6 +3762,13 @@ i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883}),
 r(1262978,{awp=16001,itemID=273102,learnedAt=140,requireSkill=185,skillID=2939})})}}),
 inst(2970,{awp=16001,icon=409547,lvl=35,zoneTextAreaID=16550,g={
 h(-45,{
+q(96078,{coords={
+[1434]={{32.2,27.8}}},lvl=30,maps={1411},qgs={2519},r=1,sourceQuests={95775},g={
+s(311498,279885,{f=24}),
+s(311497,279887,{f=21}),
+s(311496,279886,{f=25}),
+i(270313),
+i(270312)}}),
 q(96774,{coords={
 [1412]={{32.4,20.6}}},lvl=30,qgs={264074},r=1,g={
 qo(1,{crs={269586,273738},providers={{"i",276894}}})}}),

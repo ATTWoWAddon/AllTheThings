@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		coord = { 37.2, 83.3, CAVERNS_OF_TIME },
 		-- #if BEFORE 4.2.0
 		description = "You must have obtained the quest \"The Black Morass\" in order to enter.",
-		sourceQuest = 10296,	-- The Black Morass
+		attunement = { { "q", 10296 } },	-- The Black Morass
 		-- #endif
 		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(65, 65, 25),
@@ -170,11 +170,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",
-				cost = {
+				attunement = {
 					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265849, 1 },	-- Communal Key of Time
+					{ "i", 265849 },	-- Communal Key of Time
 					-- #endif
-					{ "i", 30635, 1 },	-- Key of Time
+					{ "i", 30635 },	-- Key of Time
 				},
 				sourceQuest = 10296,	-- The Black Morass
 				-- #endif

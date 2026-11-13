@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 		zoneTextAreaID = 3607,	-- Serpentshrine Cavern
 		-- #endif
 		-- #if BEFORE WRATH
-		sourceQuest = 10901,	-- The Cudgel of Kar'desh
+		attunement = { { "q", 10901 } },	-- The Cudgel of Kar'desh
 		-- #endif
 		mapID = SERPENTSHRINE_CAVERN,
 		coords = {

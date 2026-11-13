@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		mapID = AUCHINDOUN_SHADOW_LABYRINTH,
 		coord = { 39.63, 73.55, TEROKKAR_FOREST },	-- Shadow Labyrinth, Terokkar Forest
 		-- #if BEFORE CATA
-		cost = { { "i", 27991, 1 } },	-- Shadow Labyrinth Key
+		attunement = { { "i", 27991 } },	-- Shadow Labyrinth Key
 		-- #endif
 		timeline = { ADDED_2_0_3 },
 		lvl = lvlsquish(65, 65, 20),
@@ -279,12 +279,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have 2 keys to the instance in order to access this mode.",
-				cost = {
-					{ "i", 30633, 1 },	-- Auchenai Key
+				attunement = {
+					{ "i", 30633 },	-- Auchenai Key
 					-- #if CLASSIC_ANNIVERSARY
-					{ "i", 265845, 1 },	-- Communal Auchenai Key
+					{ "i", 265845 },	-- Communal Auchenai Key
 					-- #endif
-					{ "i", 27991, 1 },	-- Shadow Labyrinth Key
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),

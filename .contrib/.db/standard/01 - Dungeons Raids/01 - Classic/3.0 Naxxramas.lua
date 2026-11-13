@@ -47,7 +47,11 @@ applyclassicphase(PHASE_SIX,
 		-- #endif
 		-- #if BEFORE WRATH
 		zoneTextAreaID = 3456,	-- Naxxramas
-		sourceQuest = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+		attunement = {
+			{ "q", 9121 },	-- The Dread Citadel - Naxxramas [Honored]
+			{ "q", 9122 },	-- The Dread Citadel - Naxxramas [Revered]
+			{ "q", 9123 },	-- The Dread Citadel - Naxxramas [Exalted]
+		},
 		-- #endif
 		mapID = NAXXRAMAS,
 		timeline = { ADDED_1_11_0, REMOVED_3_0_2 },

@@ -835,6 +835,17 @@ fieldConverters.cost = function(group, value)
 		end
 	end
 end
+-- Attunements (requirements to enter, never costs): cache the groups so the Attunements window can find them,
+-- and the attunement items so the Costs module keeps them visible until the character has one.
+fieldConverters.attunement = function(group, value)
+	CacheField(group, "attunement", true);
+	for i=1,#value do
+		local attunement = value[i];
+		if attunement[1] == "i" then
+			CacheField(group, "itemIDAsAttunement", attunement[2]);
+		end
+	end
+end
 fieldConverters.currencyID = function(group, value)
 	CacheField(group, "currencyID", value);
 end

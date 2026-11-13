@@ -445,6 +445,7 @@ local TooltipSettingsBase = {
 		["requireSkill"] = true,
 		["petBattleLvl"] = true,
 		["providers"] = true,
+		["attunement"] = true,
 		["nextEvent"] = true,
 		["spellName"] = true,
 		["coords"] = true,

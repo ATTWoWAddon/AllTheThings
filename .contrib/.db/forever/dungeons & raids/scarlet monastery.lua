@@ -338,7 +338,7 @@ instanceroot(316, {	-- Scarlet Monastery
 			},
 		}),
 		n(SCARLET_MONASTERY_ARMORY_HEADER, {
-			cost = {{"i", 7146, 1}},	-- The Scarlet Key
+			attunement = { { "i", 7146 } },	-- The Scarlet Key
 			lvl = 35,
 			groups = {
 				n(3975, {	-- Herod
@@ -356,7 +356,7 @@ instanceroot(316, {	-- Scarlet Monastery
 			},
 		}),
 		n(SCARLET_MONASTERY_CATHEDRAL_HEADER, {
-			cost = { { "i", 7146, 1 } },	-- The Scarlet Key
+			attunement = { { "i", 7146 } },	-- The Scarlet Key
 			lvl = 37,
 			groups = {
 				n(4542, {	-- High Inquisitor Fairbanks

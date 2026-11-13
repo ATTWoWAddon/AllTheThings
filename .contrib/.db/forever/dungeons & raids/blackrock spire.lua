@@ -1142,7 +1142,7 @@ instanceroot(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(UPPER_BLACKROCK_SPIRE, {
-			cost = {{ "i", 12344, 1}},	-- Seal of Ascension
+			attunement = { { "i", 12344 } },	-- Seal of Ascension
 			groups = {
 				n(ZONE_DROPS, {
 					i(12607, {	-- Brilliant Chromatic Scale //Danny Donkey: This is an ordinary drop from these mobs, not from Skinning.

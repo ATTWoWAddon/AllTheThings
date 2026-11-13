@@ -500,8 +500,8 @@ s(129489,18544,{b=1,f=5,loc=44,lvl=60,q=4,u=2}),
 s(129948,19134,{b=1,f=5,loc=45,lvl=60,q=4,u=2}),
 s(129947,19133,{b=1,f=4,loc=46,lvl=60,q=4,u=2}),
 i(18543,{b=1,f=52,lvl=60,q=4,u=2})}})}}),
-inst(741,{coords={
-[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,sourceQuests={7848},g={
+inst(741,{attunement={{"q",7848}},coords={
+[33]={{54.18,83.25}}},crs={14387},isLockoutShared=1,isRaid=1,lore="The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",lvl=50,mapID=232,savedInstanceID=409,g={
 ah(17182,{isRaid=1,type="i",g={
 ach(429,{c={1,2,6,7,11},providers={{"i",17182}}}),
 s(128780,17182,{b=1,c={1,2,6,7,11},cost={{"i",17193,1},{"i",17204,1}},f=24,lvl=60,q=5})}}),
@@ -997,8 +997,8 @@ s(128752,17078,{b=1,f=3,lvl=60,q=4}),
 i(18813,{b=1,f=52,lvl=60,q=4}),
 i(17064,{b=1,f=53,lvl=60,q=4}),
 i(21108,{awp=10900,b=1,phase=15,q=4,rwp=40003,u=2})})}})}}),
-inst(742,{awp=10600,coords={
-[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,sourceQuests={7761},g={
+inst(742,{attunement={{"q",7761}},awp=10600,coords={
+[33]={{64.2,71}}},isLockoutShared=1,isRaid=1,lore="In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",lvl=50,mapID=287,maps={288,289,290},phase=13,providers={{"o",179879}},savedInstanceID=469,g={
 h(-45,{
 q(7781,{maps={1453},qss={19003},r=2}),
 q(7782,{coords={
@@ -9119,7 +9119,7 @@ s(144625,34796,{b=1,f=5,loc=42,lvl=70,q=3}),
 s(144626,34797,{b=1,f=28,lvl=70,q=3}),
 s(144631,34809,{b=1,f=5,loc=47,lvl=70,q=4}),
 s(144629,34807,{b=1,f=7,loc=47,lvl=70,q=4})}})}),
-d(2,{description="You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",lvl=70,sourceQuests={11492},g={
+d(2,{attunement={{"q",11492}},description="You must completed the 'Hard to Kill' quest chain on Normal Mode before Heroic Mode becomes available.",lvl=70,g={
 h(-19,{
 toy(35275,{b=1,crs={24560,24664,24723,24744},lvl=70,q=3})}),
 e(530,{npcID=24723,g={
