@@ -277,6 +277,18 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				qs = 259461,	-- Partially Digested Collar (QS!)
 				lvl = 35,
 			}),
+			q(93450, {	-- Phantasmal Problems
+				qg = 254717,	-- Vindael
+				coord = { 42.0, 78.8, MAP.SHENDRALAS },
+				qi = 258734,	-- Unfinished Masterwork Sword (PQI!)
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Phantasmal Blade
+						provider = { "i", 258735 },	-- Phantasmal Blade
+						-- TODO: Wowhead doesn't say yet how the sword is ushered into the spirit realm.
+					}),
+				},
+			}),
 			q(96018, {	-- Powering the Pylons
 				qg = 253471,	-- Mordent Evenshade
 				qi = 271882,	-- Pile of Pylon Parts (PQI!)
@@ -348,6 +360,19 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(93546, {	-- Spectral Iron Ore
+				sourceQuest = 93450,	-- Phantasmal Problems
+				qg = 254717,	-- Vindael
+				coord = { 42.0, 78.8, MAP.SHENDRALAS },
+				qi = 259229,	-- Vindael's Spectral Pickaxe (PQI!)
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/10 Spectral Iron Ore
+						provider = { "i", 259226 },	-- Spectral Iron Ore
+						-- TODO: Mined from Spectral Iron Deposits around Shen'dralas; Wowhead doesn't list the object yet.
+					}),
+				},
+			}),
 			q(92914, {	-- Strange Pylons
 				provider = { "o", 577959 },	-- Shen'dralar Pylon
 				coord = { 43.5, 34.1, MAP.SHENDRALAS },
@@ -356,6 +381,25 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			q(93644, {	-- Tattered Journal
 				qs = 260347,	-- Tattered Journal (QS!)
 				lvl = 35,
+			}),
+			q(96060, {	-- Tempered Expectations
+				sourceQuest = 93546,	-- Spectral Iron Ore
+				qg = 254717,	-- Vindael
+				coord = { 42.0, 78.8, MAP.SHENDRALAS },
+				qi = 271992,	-- Phantasmal Blade (PQI!)
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/8 Shen'dralas wildlife slain with the blade
+						crs = {
+							263681,	-- Bear
+							255174,	-- Blind Screecher
+							255207,	-- Prowler
+						},
+					}),
+					i(272179),	-- Greatsword of Great Pasts
+					i(272181),	-- Phantasmal Shiv
+					i(272180),	-- Spectral Magister's Commission
+				},
 			}),
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
