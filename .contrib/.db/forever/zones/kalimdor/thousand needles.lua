@@ -115,10 +115,10 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
 			}),
-			q(96136, {	-- Call of Air
+			q(96136, {	-- Call of Air [Skyborne]
 				qg = 259119,	-- Alaana Stormwalker
 				coord = { 33.4, 22.4, MAP.MULGORE },
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_HORDE },
 				classes = { SHAMAN },
 				lvl = 30,
@@ -164,7 +164,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				sourceQuests = {
 					1531,	-- Call of Air [Orgrimmar]
 					1532,	-- Call of Air [Thunder Bluff]
-					96136,	-- Call of Air
+					96136,	-- Call of Air [Skyborne]
 				},
 				qg = 4722,	-- Rau Cliffrunner
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
