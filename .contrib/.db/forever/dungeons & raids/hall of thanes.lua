@@ -24,7 +24,6 @@ instanceroot(3065, {	-- Hall of Thanes
 			q(96403, {	-- Important Heirlooms
 				qg = 265003,	-- Thom Filch
 				coord = { 32.4, 44.8, MAP.IRONFORGE },
-				races = ALLIANCE_ONLY,
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/8 Dwarven Heirloom
