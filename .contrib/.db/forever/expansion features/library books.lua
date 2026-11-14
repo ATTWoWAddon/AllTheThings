@@ -101,6 +101,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
 				provider = { "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
+				qg = 211033,	-- Garion Wendell <Librarian>
+				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -109,6 +111,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79092, {	-- Archmage Theocritus's Research Journal
 				provider = { "i", 203755 },	-- Archmage Theocritus's Research Journal
+				qg = 211033,	-- Garion Wendell <Librarian>
+				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -117,6 +121,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79096, {	-- Ataeric: On Arcane Curiosities
 				provider = { "i", 210177 },	-- Ataeric: On Arcane Curiosities
+				qg = 211022,	-- Owen Thadd <Librarian>
+				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				groups = {
@@ -286,6 +292,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				provider = { "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
+				qg = 211033,	-- Garion Wendell <Librarian>
+				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { WESTFALL, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -294,6 +302,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(78148, {	-- Runes of the Sorceror-Kings
 				provider = { "i", 209850 },	-- Runes of the Sorcerer-Kings
+				qg = 211033,	-- Garion Wendell <Librarian>
+				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -338,6 +348,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79095, {	-- The Apothecary's Metaphysical Primer
 				provider = { "i", 208185 },	-- The Apothecary's Metaphysical Primer
+				qg = 211022,	-- Owen Thadd <Librarian>
+				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				groups = {
@@ -361,6 +373,8 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79094, {	-- The Lessons of Ta'zo
 				provider = { "i", 207972 },	-- The Lessons of Ta'zo
+				qg = 211022,	-- Owen Thadd <Librarian>
+				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {

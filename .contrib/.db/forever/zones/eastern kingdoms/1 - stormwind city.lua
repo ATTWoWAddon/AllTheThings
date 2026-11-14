@@ -1360,7 +1360,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(579, {	-- Stormwind Library
 				qg = 2504,	-- Donyal Tovald <Librarian>
 				qi = 3898,	-- Library Scrip
-				coord = { 84.6, 24.2, MAP.STORMWIND_CITY },
+				coord = { 75.2, 30.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
