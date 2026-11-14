@@ -18,8 +18,12 @@ namespace ATT
             private readonly string text;
             private int pos;
 
+            /// <summary>Initialize a strict reader for one JSON text.</summary>
+            /// <param name="text">Complete JSON input to parse strictly.</param>
             public JsonReader(string text) { this.text = text; }
 
+            /// <summary>Read one value and reject trailing non-whitespace input.</summary>
+            /// <returns>The sole parsed JSON value: object, array, string, double, boolean or null.</returns>
             public object Read()
             {
                 object result = Value();
@@ -28,11 +32,15 @@ namespace ATT
                 return result;
             }
 
+            /// <summary>Advance over JSON whitespace.</summary>
             private void Space()
             {
                 while (pos < text.Length && " \t\r\n".IndexOf(text[pos]) >= 0) pos++;
             }
 
+            /// <summary>Consume the requested character after whitespace when present.</summary>
+            /// <param name="character">JSON punctuation to consume after whitespace.</param>
+            /// <returns>True if the character was consumed; otherwise false after skipping whitespace.</returns>
             private bool Take(char character)
             {
                 Space();
@@ -41,11 +49,15 @@ namespace ATT
                 return true;
             }
 
+            /// <summary>Require the requested character at the current input position.</summary>
+            /// <param name="character">JSON punctuation to consume after whitespace.</param>
             private void Expect(char character)
             {
                 if (!Take(character)) throw Error("Expected JSON '" + character + "' at " + pos);
             }
 
+            /// <summary>Decode a quoted JSON string and reject invalid escapes or control characters.</summary>
+            /// <returns>Decoded string contents without quotes.</returns>
             private string String()
             {
                 Expect('"');
@@ -82,6 +94,8 @@ namespace ATT
                 throw Error("Unterminated JSON string");
             }
 
+            /// <summary>Read a JSON scalar, object or array and reject invalid numbers.</summary>
+            /// <returns>An object, array, string, finite double, boolean or null.</returns>
             private object Value()
             {
                 Space();
@@ -105,6 +119,8 @@ namespace ATT
                 return value;
             }
 
+            /// <summary>Read unique object properties and consume a validated documentation comment.</summary>
+            /// <returns>Unique string-keyed properties with a validated $comment removed.</returns>
             private Dictionary<string, object> Object()
             {
                 var result = new Dictionary<string, object>();
@@ -126,6 +142,8 @@ namespace ATT
                 return result;
             }
 
+            /// <summary>Read the elements of a JSON array in order.</summary>
+            /// <returns>Parsed array entries in source order.</returns>
             private List<object> Array()
             {
                 var result = new List<object>();

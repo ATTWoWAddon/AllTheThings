@@ -15,8 +15,12 @@ namespace ATT
             private readonly string text;
             private int pos;
 
+            /// <summary>Initialize a reader for the declarative Lua subset.</summary>
+            /// <param name="text">Complete declarative Lua input beginning with return.</param>
             public LiteralParser(string text) { this.text = text; }
 
+            /// <summary>Read a return expression and reject trailing input without executing Lua.</summary>
+            /// <returns>The returned declarative value, without executing a Lua VM.</returns>
             public object Read()
             {
                 if (Ident() != "return") throw Error("Expected return");
@@ -26,6 +30,7 @@ namespace ATT
                 return result;
             }
 
+            /// <summary>Skip whitespace and line comments.</summary>
             private void Space()
             {
                 while (pos < text.Length)
@@ -44,6 +49,9 @@ namespace ATT
                 }
             }
 
+            /// <summary>Consume the requested character after whitespace when present.</summary>
+            /// <param name="character">Lua punctuation to consume after whitespace and line comments.</param>
+            /// <returns>True if the character was consumed; otherwise false after trivia.</returns>
             private bool Take(char character)
             {
                 Space();
@@ -52,11 +60,15 @@ namespace ATT
                 return true;
             }
 
+            /// <summary>Require the requested character at the current input position.</summary>
+            /// <param name="character">Lua punctuation to consume after whitespace and line comments.</param>
             private void Expect(char character)
             {
                 if (!Take(character)) throw Error("Expected '" + character + "' at offset " + pos);
             }
 
+            /// <summary>Read an identifier from the literal input.</summary>
+            /// <returns>The identifier at the current reader position.</returns>
             private string Ident()
             {
                 Space();
@@ -67,6 +79,8 @@ namespace ATT
                 return text.Substring(start, pos - start);
             }
 
+            /// <summary>Decode a quoted string using the supported Lua escapes.</summary>
+            /// <returns>Decoded string contents using only the explicitly supported escapes.</returns>
             private string String()
             {
                 Space();
@@ -99,6 +113,8 @@ namespace ATT
                 throw Error("Unterminated Lua string");
             }
 
+            /// <summary>Read a supported literal, named group placeholder or whitelisted constructor.</summary>
+            /// <returns>A literal scalar/table, whitelisted constructor record or named Slot.</returns>
             private object Value()
             {
                 Space();
@@ -122,6 +138,8 @@ namespace ATT
                 return Constructor(name);
             }
 
+            /// <summary>Read a finite number using invariant decimal formatting.</summary>
+            /// <returns>The finite double represented by the supported decimal spelling.</returns>
             private double Number()
             {
                 int start = pos++;
@@ -132,6 +150,9 @@ namespace ATT
                 return result;
             }
 
+            /// <summary>Read a whitelisted constructor with a positive integral ID and optional object data.</summary>
+            /// <param name="name">Whitelisted ATT constructor name whose opening parenthesis follows.</param>
+            /// <returns>Object data containing the constructor’s positive integral identity field.</returns>
             private Dictionary<string, object> Constructor(string name)
             {
                 if (!Constructors.TryGetValue(name, out string field)) throw Error("Unsupported identifier: " + name);
@@ -146,6 +167,8 @@ namespace ATT
                 return data;
             }
 
+            /// <summary>Read an array or object table, rejecting mixed, duplicate and sparse entries.</summary>
+            /// <returns>A string-keyed object or ordered list; an empty table is represented as a list.</returns>
             private object Table()
             {
                 Expect('{');

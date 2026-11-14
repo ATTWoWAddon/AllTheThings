@@ -237,6 +237,7 @@ namespace ATT
 
         static int Main(string[] args)
         {
+            //! @brief Dispatch the opt-in comparison before starting the ordinary Parser pipeline.
             if (args.Length > 0 && args[0] == "--phase-example")
                 return PhaseExample.Run(args);
 
