@@ -26,10 +26,6 @@ root(ROOTS.Character, {
 		ach(62031, {	-- Novice Spelunker
 			timeline = { TIMELINE.ADDED_1_60_1 },
 		}),
-		ach(64283, {	-- Played in the WoW: Forever Beta
-			-- CRIEVE NOTE: This might not make it into Live, it was granted as a way to instantly give players a large number of Legacy Points.
-			timeline = { TIMELINE.ADDED_1_60_1 },
-		}),
 	}),
 	cl(DRUID, {
 		n(ACHIEVEMENTS, {
