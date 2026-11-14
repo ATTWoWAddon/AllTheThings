@@ -334511,6 +334511,23 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "太陽果",
 		},
 	},
+	[556670] = {
+		readable = "WANTED",
+		icon = 134939,
+		text = {
+			en = "WANTED",
+			es = "SE BUSCA",
+			mx = "SE BUSCA",
+			de = "GESUCHT",
+			fr = "AVIS DE RECHERCHE",
+			it = "WANTED",
+			pt = "PROCURA-SE",
+			ru = "РАЗЫСКИВАЕТСЯ",
+			ko = "현상 수배!",
+			cn = "通缉",
+			tw = "通緝",
+		},
+	},
 	[556704] = {
 		readable = "Darkpine Lumber",
 		model = 6922313,
