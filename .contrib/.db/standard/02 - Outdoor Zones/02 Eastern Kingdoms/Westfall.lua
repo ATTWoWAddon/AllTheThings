@@ -1523,7 +1523,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 			n(572, {	-- Leprithus
 				description =
 					-- #if AFTER CATA
-					"Spawns once a day at approximately 20:00/8 PM server time.",
+					"Spawns once a day in the evening, between about 20:00/8 PM and 22:00/10 PM server time.",
 					-- #else
 					"Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
