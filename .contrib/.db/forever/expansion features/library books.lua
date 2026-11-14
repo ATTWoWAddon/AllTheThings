@@ -58,6 +58,22 @@ local allBookSourceQuests = {
 	84395,	-- Undead Potatoes
 	81954,	-- Venomous Journeys
 };
+local LibraryBooksOnInit = 
+[[function(t)
+	local g=t.g;
+	for i=1,#g,1 do
+		local o = g[i];
+		if not o.qgs then
+			o.qgs = t.qgs;
+		end
+		if not o.coords then
+			o.coords = t.coords;
+		end
+	end
+	t.qgs = nil;
+	t.coords = nil;
+	return t;
+end]];
 root(ROOTS.ExpansionFeatures, {
 	n(LIBRARY_BOOKS_HEADER, {	-- Library Books
 		aqd = {
@@ -68,10 +84,38 @@ root(ROOTS.ExpansionFeatures, {
 			qg = 211022,	-- Owen Thadd <Librarian>
 			coord = { 73.6, 33.0, UNDERCITY },
 		},
+		OnInit = LibraryBooksOnInit,	-- CRIEVE NOTE: I'm applying the quest giver and coordinate dynamically to reduce memory footprint.
 		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
+			q(78150, {	-- Friend of the Library
+				sourceQuests = allBookSourceQuests,
+				sourceQuestNumRequired = 10,
+				groups = {
+					i(277203),	-- Scholarly Pendant
+					i(277204),	-- Erudite's Amulet
+				},
+			}),
+			q(79536, {	-- Greater Friend of the Library (1/2)
+				sourceQuests = allBookSourceQuests,
+				sourceQuestNumRequired = 20,
+				lvl = 20,
+				groups = {
+					i(281634),	-- Field Researcher's Loop
+					i(281635),	-- Philanthropist's Ring
+				},
+			}),
+			q(82208, {	-- Greater Friend of the Library (2/2)
+				sourceQuests = allBookSourceQuests,
+				sourceQuestNumRequired = 25,
+				lvl = 30,
+				groups = {
+					i(277254),	-- Truthseeker's Bow
+					i(277258),	-- Crest of Elucidation
+					i(277260),	-- Researcher's Night Light
+				},
+			}),
 			q(81955, {	-- A Mind of Metal
-				provider = { "i", 220352 },	-- A Mind of Metal
+				qs = 220352,	-- A Mind of Metal (QS!)
 				maps = { SEARING_GORGE },
 				groups = {
 					i(211779),	-- Comprehension Charm
@@ -79,8 +123,15 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84398, {	-- A Study of the Light
 				provider = { "i", 228135 },	-- A Study of the Light
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { EASTERN_PLAGUELANDS },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -101,8 +152,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
 				provider = { "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
-				qg = 211033,	-- Garion Wendell <Librarian>
-				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { IRONFORGE },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -111,8 +160,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79092, {	-- Archmage Theocritus's Research Journal
 				provider = { "i", 203755 },	-- Archmage Theocritus's Research Journal
-				qg = 211033,	-- Garion Wendell <Librarian>
-				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -121,8 +168,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79096, {	-- Ataeric: On Arcane Curiosities
 				provider = { "i", 210177 },	-- Ataeric: On Arcane Curiosities
-				qg = 211022,	-- Owen Thadd <Librarian>
-				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				groups = {
@@ -185,14 +230,6 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(78150, {	-- Friend of the Library
-				sourceQuests = allBookSourceQuests,
-				sourceQuestNumRequired = 10,
-				groups = {
-					i(277203),	-- Scholarly Pendant
-					i(277204),	-- Erudite's Amulet
-				},
-			}),
 			q(78149, {	-- Fury of the Land
 				provider = { "i", 209851 },	-- Fury of the Land
 				maps = { STONETALON_MOUNTAINS },
@@ -214,29 +251,17 @@ root(ROOTS.ExpansionFeatures, {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
-			q(79536, {	-- Greater Friend of the Library (1/2)
-				sourceQuests = allBookSourceQuests,
-				sourceQuestNumRequired = 20,
-				lvl = 20,
-				groups = {
-					i(281634),	-- Field Researcher's Loop
-					i(281635),	-- Philanthropist's Ring
-				},
-			}),
-			q(82208, {	-- Greater Friend of the Library (2/2)
-				sourceQuests = allBookSourceQuests,
-				sourceQuestNumRequired = 25,
-				lvl = 30,
-				groups = {
-					i(277254),	-- Truthseeker's Bow
-					i(277258),	-- Crest of Elucidation
-					i(277260),	-- Researcher's Night Light
-				},
-			}),
 			q(84399, {	-- Ka-Boom!
 				provider = { "i", 228136 },	-- Ka-Boom!
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { WINTERSPRING },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -250,8 +275,15 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84396, {	-- Magma or Lava?
 				provider = { "i", 228133 },	-- Magma or Lava?
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { BURNING_STEPPES },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -272,16 +304,30 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84402, {	-- Necromancy 101
 				provider = { "i", 228141 },	-- Necromancy 101
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { WESTERN_PLAGUELANDS },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
 			q(84397, {	-- Northern Kalimdor - A Comprehensive Guide
 				provider = { "i", 228134 },	-- Northern Kalimdor - A Comprehensive Guide
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { FELWOOD },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -292,8 +338,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79093, {	-- Rumi of Gnomeregan: The Collected Works
 				provider = { "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
-				qg = 211033,	-- Garion Wendell <Librarian>
-				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { WESTFALL, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -302,8 +346,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(78148, {	-- Runes of the Sorceror-Kings
 				provider = { "i", 209850 },	-- Runes of the Sorcerer-Kings
-				qg = 211033,	-- Garion Wendell <Librarian>
-				coord = { 49.0, 86.4, STORMWIND_CITY },
 				maps = { LOCH_MODAN },
 				races = ALLIANCE_ONLY,
 				groups = {
@@ -326,8 +368,15 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84401, {	-- Scourge: Undead Menace or Misunderstood?
 				provider = { "i", 228140 },	-- Scourge: Undead Menace or Misunderstood?
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { EASTERN_PLAGUELANDS },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
@@ -348,8 +397,6 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(79095, {	-- The Apothecary's Metaphysical Primer
 				provider = { "i", 208185 },	-- The Apothecary's Metaphysical Primer
-				qg = 211022,	-- Owen Thadd <Librarian>
-				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				groups = {
@@ -365,16 +412,21 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84400, {	-- The Knight and the Lady
 				provider = { "i", 228138 },	-- The Knight and the Lady
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { EASTERN_PLAGUELANDS },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
 			}),
 			q(79094, {	-- The Lessons of Ta'zo
 				provider = { "i", 207972 },	-- The Lessons of Ta'zo
-				qg = 211022,	-- Owen Thadd <Librarian>
-				coord = { 73.6, 33.0, UNDERCITY },
 				maps = { ORGRIMMAR },
 				races = HORDE_ONLY,
 				groups = {
@@ -383,8 +435,15 @@ root(ROOTS.ExpansionFeatures, {
 			}),
 			q(84395, {	-- Undead Potatoes
 				provider = { "i", 228132 },	-- Undead Potatoes
+				aqd = {
+					qg = 5497,	-- Jennea Cannon <Mage Trainer>
+					coord = { 49.5, 85.8, STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 7825,	-- Oran Snakewrithe
+					coord = { 73.3, 32.4, UNDERCITY },
+				},
 				maps = { WESTERN_PLAGUELANDS },
-				-- TODO: Wowhead lists Jennea Cannon (5497) as the quest giver for this book instead of the librarians. Confirm in game.
 				groups = {
 					i(211779),	-- Comprehension Charm
 				},
