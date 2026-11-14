@@ -509,7 +509,7 @@ h(-12,{
 ach(955,{maps={1447},minReputation={749,42000}})}),
 h(-31,{
 faction(749,{coords={
-[1447]={{79.2,73.6}}},icon=135861,qgs={13278}})}),
+[1447]={{79.2,73.6}}},crs={13278},icon=135861})}),
 h(-45,{
 q(7486,{coords={
 [1447]={{79.2,73.6}}},lvl=55,providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},g={
@@ -6086,7 +6086,7 @@ s(159385,9476,{b=1,f=7,loc=41,lvl=45,q=3})}}),
 n(7795,{
 i(9234,{q=1}),
 i(10661,{q=1})}),
-e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
+e(483,{attunement={{"i",9240}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707,{q=1}),
 s(159379,9467,{b=1,f=20,lvl=42,q=2}),
 s(159380,9469,{b=1,f=6,loc=42,lvl=43,q=3})}})}})}})}})

@@ -1,8 +1,10 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local flt,fp,h,i,q,s=_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateQuest,_.CreateItemSource;
+local ach,flt,fp,h,i,q,s=_.CreateAchievement,_.CreateFilter,_.CreateFlightPath,_.CreateCustomHeader,_.CreateItem,_.CreateQuest,_.CreateItemSource;
 categories.NeverImplemented={
+h(-12,{
+ach(64283)}),
 h(-811,{
 flt(55,{
 i(288896,{f=55,spellID=4042}),

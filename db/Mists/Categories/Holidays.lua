@@ -1786,7 +1786,9 @@ crit(13256,{achID=1689,e=14,id=10})}}),
 q(28878,{awp=40003,description="Gift from 2010.",e=14,lvl=10,maps={85,87},providers={{"o",187236}},qis={67443},rwp=40200,u=2,g={
 toy(46709,{b=1,e=14,q=3,u=2})}}),
 q(29385,{awp=40200,description="Gift from 2011.",e=14,lvl=10,maps={85,87},providers={{"o",187236}},qis={70938},rwp=50100,u=2,g={
-s(213173,70923,{b=1,e=14,f=2,loc=42,q=2,u=2})}}),
+s(213173,70923,{b=1,e=14,f=2,loc=42,q=2,u=2}),
+i(70928,{b=1,e=14,q=1,r=2,rwp=40200,u=2}),
+i(70932,{b=1,e=14,q=1,r=1,rwp=40200,u=2})}}),
 q(32106,{awp=50100,description="Gift from 2012.",e=14,lvl=10,maps={85,87},providers={{"o",187236}},qis={90892},rwp=50400,u=2,g={
 toy(90888,{b=1,e=14,q=2,u=2}),
 toy(90883,{b=1,e=14,q=2,u=2})}}),
@@ -1830,10 +1832,10 @@ q(7042,{coords={
 [87]={{33.2,67.8}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13433},r=2,rwp=40003,u=2}),
 q(6963,{coords={
 [85]={{52.4,77}}},e=14,isYearly=1,lvl=30,maps={1416},qgs={13418},r=1,rwp=40003,u=2}),
-q(29382,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70928},r=2,u=2,g={
-i(70931,{e=14,q=1})}}),
-q(29383,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70932},r=1,u=2,g={
-i(70931,{e=14,q=1})}}),
+q(29382,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70928},r=2,rwp=40200,u=2,g={
+i(70931,{e=14,q=1,u=2})}}),
+q(29383,{awp=40200,cost={{"i",70923,1}},description="Exchanges the Gaudy Winter Veil Sweater for gold at a Smokywood Pastures merchant.",e=14,qss={70932},r=1,rwp=40200,u=2,g={
+i(70931,{e=14,q=1,u=2})}}),
 q(7063,{coords={
 [87]={{77.2,11.8}}},e=14,isYearly=1,lvl=10,qgs={2916},qis={17735},r=2,sourceQuests={7062}}),
 q(7061,{coords={

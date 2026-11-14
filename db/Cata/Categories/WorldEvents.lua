@@ -174,8 +174,8 @@ qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",38067},{"n"
 qo(2,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"i",62493}},u=2})}}),
 q(25773,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40220},qis={56008},r=2,u=2}),
 q(25571,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={40220},qis={56008},r=1,u=2}),
-q(27137,{description="Blizzard marked this quest obsolete.",OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45009},r=2,u=2}),
-q(27138,{description="Blizzard marked this quest obsolete.",OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45046},r=1,u=2}),
+q(27137,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45009},r=2,u=2}),
+q(27138,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45046},r=1,u=2}),
 q(27122,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45009},r=2,u=2,g={
 qo(1,{OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,providers={{"n",41110}},u=2})}}),
 q(27127,{lvl=30,OnUpdate=_.OnUpdateDB.RemovedWithPhase40_40003,qgs={45046},r=1,u=2,g={

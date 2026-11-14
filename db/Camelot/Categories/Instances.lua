@@ -532,9 +532,26 @@ qo(3,{crs={255997},providers={{"i",273883}}}),
 s(311356,279826,{f=4,loc=46}),
 s(311358,279829,{f=6,loc=41}),
 s(311355,279825,{f=7,loc=44})}}),
+q(96332,{awp=16001,coords={
+[1445]={{70.3,19.1}}},lvl=48,qgs={260383},r=1,g={
+qo(1,{providers={{"n",255995}}}),
+qo(2,{providers={{"n",255373}}}),
+qo(3,{providers={{"i",273883}}}),
+s(311354,279824,{f=7,loc=44}),
+s(311356,279826,{f=4,loc=46}),
+s(311358,279829,{f=6,loc=41})}}),
+q(96369,{awp=16001,lvl=48,r=1,sourceQuests={95454}}),
+q(96334,{awp=16001,coords={
+[1445]={{70.3,19.1}}},lvl=48,qgs={260383},r=1,g={
+qo(1,{providers={{"i",274028}}}),
+s(311095,279448,{f=5,loc=40}),
+s(311102,279473,{f=4,loc=45})}}),
 q(96337,{lvl=48,maps={1436},qis={274077},sourceQuests={96335},g={
 qo(1,{providers={{"o",653847}}}),
 i(274041)}}),
+q(95309,{awp=16001,coords={
+[1445]={{70.3,19.1}}},lvl=48,qgs={260383},r=1,sourceQuests={95285},g={
+qo(1)}}),
 q(95194,{coords={
 [1453]={{78.4,70.6}}},lvl=48,qgs={332},r=2}),
 q(95264,{coords={
@@ -558,12 +575,19 @@ i(279450,{lvl=40,spellID=1306734})}}),
 q(96772,{coords={
 [1416]={{15.4,73.8}}},lvl=46,qgs={20735},r=2,g={
 qo(1,{crs={255702},providers={{"i",276890}}})}}),
+q(95454,{awp=16001,lvl=48,r=1,g={
+qo(1),
+qo(2)}}),
 q(96335,{description="This quest is not offered if The Questioner is killed before it is picked up.",lvl=48,g={
 qo(1,{crs={256236},providers={{"i",274029}}})}}),
 q(95198,{coords={
 [1445]={{63.4,42.4}}},description="Use the disguise, then talk to the guard standing next to Archmage Tervosh at the top of Jaina's tower and relieve him. Don't get too close to Jaina, she sees through the disguise.",lvl=48,qgs={260271},qis={269000},r=2,sourceQuests={95196}}),
 q(95262,{coords={
 [1445]={{63.4,42.4}}},lvl=48,qgs={260271},r=2,sourceQuests={95198}}),
+q(95483,{awp=16001,lvl=48,r=1,sourceQuests={96369},g={
+s(311361,279831,{f=8}),
+i(279833,{f=51}),
+s(311103,279474,{f=20})}}),
 q(95196,{coords={
 [1445]={{66.2,45.2}}},lvl=48,qgs={260146},r=2,sourceQuests={95194}})}),
 h(-47,{
@@ -697,11 +721,46 @@ s(158720,6909,{f=26}),
 crit(18526,{achID=62032,awp=16001,id=2})})}}),
 inst(2974,{awp=16001,icon=409547,lvl=55,zoneTextAreaID=16554,g={
 h(-45,{
+q(92070,{awp=16001,lvl=47,g={
+qo(1,{providers={{"i",249698}}}),
+i(279893,{f=51})}}),
 q(92345,{coords={
 [1447]={{11.8,78.2}}},lvl=45,maps={1457},qgs={239822},r=2}),
+q(97173,{awp=16001,coords={
+[1416]={{15.4,73.8}}},lvl=52,qgs={31439},r=2,g={
+qo(1,{providers={{"i",276893}}})}}),
+q(97198,{awp=16001,coords={
+[1412]={{33.4,22.4}}},lvl=52,qgs={259118},r=1,g={
+qo(1,{providers={{"i",276893}}})}}),
+q(97327,{awp=16001,coords={
+[1447]={{42,38.8}}},lvl=55,qgs={235903},g={
+qo(1,{providers={{"i",273050}}})}}),
+q(92065,{awp=16001,coords={
+[1447]={{42.4,20.2}}},lvl=47,qgs={236573},sourceQuests={86814},g={
+qo(1,{providers={{"i",249692}}}),
+i(260216,{f=52}),
+i(260217,{f=52}),
+i(260218,{f=52}),
+i(260219,{f=52})}}),
+q(92069,{awp=16001,coords={
+[1447]={{42.4,42.6}}},lvl=45,qgs={8405},g={
+qo(1,{providers={{"i",249697}}}),
+qo(2,{providers={{"i",249696}}}),
+s(302095,260213,{f=34}),
+s(302096,260214,{f=28}),
+s(302097,260215,{f=24})}}),
 q(92344,{coords={
 [1457]={{35.2,8}}},lvl=45,qgs={4217},r=2,sourceQuests={92345},g={
-qo(1,{providers={{"i",250773}}})}})}),
+qo(1,{providers={{"i",250773}}})}}),
+q(92343,{awp=16001,coords={
+[1456]={{75.6,31.2}}},lvl=45,qgs={5770},r=1,sourceQuests={92346},g={
+qo(1,{providers={{"i",250773}}})}}),
+q(92066,{awp=16001,coords={
+[1447]={{41.4,20}}},lvl=47,qgs={249853},g={
+qo(1,{providers={{"i",249694}}}),
+qo(2,{providers={{"i",249693}}}),
+s(311478,279891,{f=3,spellID=1308520}),
+s(311479,279892,{f=3,spellID=1308531})}})}),
 e(3315,{npcID=247195}),
 e(3316,{npcID=247206}),
 e(3327,{npcID=247209}),
@@ -763,6 +822,9 @@ q(6645,{cost={{"i",17012,2}},lvl=60,maxReputation={59,42000},qgs={12944},repeata
 q(6642,{cost={{"i",11370,10}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
 q(6643,{cost={{"i",17010,1}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
 q(6644,{cost={{"i",17011,1}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
+q(97197,{awp=16001,coords={
+[1412]={{33.4,22.4}}},lvl=46,qgs={259119},r=1,g={
+qo(1,{providers={{"i",277129}}})}}),
 q(4122,{coords={
 [1418]={{5.9,47.6}}},lvl=52,qgs={9080},qis={11286},r=1,sourceQuests={4082}}),
 q(4126,{coords={
@@ -1130,6 +1192,9 @@ s(162621,15858,{f=4,loc=44}),
 s(162622,15859,{f=6,loc=45})}}),
 q(7761,{coords={
 [1428]={{34.9,27.9}}},lvl=55,maps={33},providers={{"o",179880}},qgs={9046},qss={18987}}),
+q(98325,{awp=16001,coords={
+[1418]={{5.8,47.4}}},lvl=55,qgs={9077},r=1,g={
+qo(1)}}),
 q(6602,{coords={
 [1443]={{40.8,78.6},{42.4,96.8},{49.6,56.4},{50.6,75.2},{52,39.4},{54,3.2},{55.6,66.6},{59.8,37.6},{62.8,22.6}}},lvl=55,qgs={10182},r=1,sourceQuests={6601},g={
 qo(1,{providers={{"i",16663}}}),
@@ -1564,7 +1629,8 @@ s(160864,13142,{f=7,loc=45}),
 i(13098,{f=52}),
 i(22268,{f=53,spellID=1318931}),
 crit(3268,{achID=62033,awp=16001,id=10})})}})}}),
-inst(2959,{attunement={{"i",277507}},awp=16001,icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",zoneTextAreaID=16544,g={
+inst(2959,{attunement={{"i",277507}},awp=16001,coords={
+[1416]={{9.1,60}}},icon=_.asset("cityofdalaran"),lore="The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",zoneTextAreaID=16544,g={
 h(-45,{
 q(92456,{awp=16001,coords={
 [1453]={{31.4,63}}},lvl=24,qgs={5502},r=2,g={
@@ -1636,7 +1702,7 @@ e(3311,{npcID=247126,g={
 s(308394,273033,{f=33}),
 s(308397,273036,{f=4,loc=43}),
 i(273032,{f=52})}}),
-e(3310,{cost={{"i",275989,1}},description="Summoned by using the Tome of Dalaran on the purple ritual circle in the lower level of the dungeon.",npcID=247032,g={
+e(3310,{attunement={{"i",275989}},description="Summoned by using the Tome of Dalaran on the purple ritual circle in the lower level of the dungeon.",npcID=247032,g={
 s(308412,273053,{f=20}),
 s(308414,273055,{f=8}),
 s(308413,273054,{f=5,loc=44})}}),
@@ -2234,7 +2300,7 @@ qo(1,{providers={{"n",261306}}}),
 s(311432,279899,{b=1,f=3}),
 s(311435,279900,{b=1,f=5,loc=46})}}),
 q(96403,{coords={
-[1455]={{32.4,44.8}}},lvl=10,qgs={265003},r=2,g={
+[1455]={{32.4,44.8}}},lvl=10,qgs={265003},g={
 qo(1,{providers={{"i",274289},{"o",457387}}}),
 s(311433,279898,{b=1,f=1}),
 s(311429,280096,{b=1,f=4,loc=44})}}),
@@ -2370,6 +2436,9 @@ inst(3109,{icon=409547,u=1,zoneTextAreaID=17191}),
 inst(232,{coords={
 [1443]={{35.7,55.5}}},icon=136345,lore="Protected by the fierce Maraudine centaur, Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose. The subterranean tunnels are populated by the vicious, long-dead ghosts of the Centaur Khans, as well as Theradras' own raging, elemental minions.",lvl=41,mapID=280,zoneTextAreaID=2100,g={
 h(-45,{
+q(96776,{awp=16001,coords={
+[1412]={{32.6,24}}},lvl=43,qgs={268557},r=1,g={
+qo(1,{providers={{"i",277140}}})}}),
 q(7065,{coords={
 [1443]={{63.8,10.6}}},lvl=45,qgs={13698},r=2,g={
 qo(1,{providers={{"n",12201}}}),
@@ -2571,12 +2640,14 @@ q(3341,{coords={
 [1458]={{74,32.8}}},lvl=37,qgs={2308},r=1,g={
 qo(1,{providers={{"i",10420}}}),
 s(160191,10823,{f=25}),
-i(10824,{f=51})}}),
+i(10824,{f=51}),
+i(270081,{awp=16001,f=52})}}),
 q(3636,{coords={
 [1453]={{39.6,27.4}}},lvl=39,qgs={1284},r=2,g={
 qo(1,{providers={{"n",7358}}}),
 s(160191,10823,{f=25}),
-i(10824,{f=51})}}),
+i(10824,{f=51}),
+i(270081,{awp=16001,f=52})}}),
 q(3525,{lvl=32,providers={{"o",152097}},qgs={8516},sourceQuests={3523},g={
 i(10710,{f=52})}}),
 q(3523,{lvl=32,qgs={8516},qis={10682}}),
@@ -2608,7 +2679,8 @@ s(160165,10775,{f=7,loc=42}),
 s(160167,10777,{f=5,loc=44})}),
 n(7356,{sourceQuests={3525},g={
 s(160158,10766,{f=27}),
-s(160152,10760,{f=5,loc=44,spellID=1293783})}}),
+s(160152,10760,{f=5,loc=44,spellID=1293783}),
+s(308856,274380,{awp=16001,f=4,loc=43})}}),
 n(8696,{description="The only source of acquiring Goldthorn Tea.",g={
 r(130289)}}),
 n(7357,{
@@ -2618,7 +2690,8 @@ s(160162,10771,{f=4,loc=45}),
 r(1255064,{awp=16001,itemID=252843,learnedAt=200,requireSkill=165,skillID=2945})}),
 n(8567,{
 s(160163,10772,{f=21}),
-s(160164,10774,{f=5,loc=41})}),
+s(160164,10774,{f=5,loc=41}),
+i(274385,{awp=16001,f=51})}),
 n(7354,{description="This is a rare spawn that is not always present.",g={
 s(160151,10758,{f=26}),
 s(160159,10767,{f=8}),
@@ -2630,6 +2703,7 @@ s(160155,10763,{f=7,loc=40}),
 s(160156,10764,{f=6,loc=42}),
 s(160154,10762,{f=4,loc=42}),
 s(160157,10765,{f=5,loc=44}),
+s(308857,274381,{awp=16001,f=28}),
 crit(18530,{achID=62033,awp=16001,id=1})})}}),
 inst(234,{coords={
 [1413]={{40.94,94.55}}},icon=136353,lore="Ten thousand years ago - during the War of the Ancients, the mighty demigod, Agamaggan, came forth to battle the Burning Legion. Though the colossal boar fell in combat, his actions helped save Azeroth from ruin. Yet over time, in the areas where his blood fell, massive thorn-ridden vines sprouted from the earth.\n\nThe quillboar - believed to be the mortal offspring of the mighty god, came to occupy these regions and hold them sacred. The heart of these thorn-colonies was known as the Razorfen. The great mass of Razorfen Kraul was conquered by the old crone, Charlga Razorflank. Under her rule, the shamanistic quillboar stage attacks on rival tribes as well as Horde villages. Some speculate that Charlga has even been negotiating with agents of the Scourge - aligning her unsuspecting tribe with the ranks of the Undead for some insidious purpose.",lvl=17,mapID=301,zoneTextAreaID=491,g={
@@ -3842,8 +3916,52 @@ s(308918,274612,{f=3})}}),
 e(3479,{crs={260243,260274},g={
 s(308914,274608,{f=8,spellID=1295064}),
 s(308916,274610,{f=5,loc=44}),
-s(308915,274609,{f=6,loc=40,spellID=1295039})}})}}),
+s(308915,274609,{f=6,loc=40,spellID=1295039})}}),
+n(264172,{description="This is a rare spawn that is not always present.",g={
+s(317390,286662,{f=4,loc=44}),
+s(317389,286658,{f=6,loc=45})}})}}),
 inst(3001,{awp=16001,icon=409547,lvl=58,zoneTextAreaID=16667,g={
+h(-45,{
+q(95928,{awp=16001,coords={
+[1412]={{34.8,22}}},lvl=55,qgs={263445},r=1,g={
+qo(1,{providers={{"i",271894}}}),
+qo(2,{providers={{"i",271898}}}),
+qo(3,{providers={{"i",271902}}}),
+qo(4,{providers={{"i",271912}}}),
+s(311475,279904,{f=6,loc=41}),
+s(311455,279906,{f=5,loc=47})}}),
+q(95790,{awp=16001,lvl=55,r=2,g={
+qo(1,{providers={{"i",271972}}}),
+s(311472,279931,{f=4,loc=40}),
+s(311473,279901,{f=7,loc=46})}}),
+q(97049,{awp=16001,coords={
+[1458]={{47.6,73}}},lvl=55,qgs={10136},r=1,g={
+qo(1,{providers={{"i",276235}}}),
+s(311476,279932,{f=4,loc=40}),
+s(311477,279902,{f=7,loc=46})}}),
+q(95925,{awp=16001,coords={
+[1455]={{71.4,16.2}}},lvl=55,qgs={8256},qis={271770},r=2,g={
+qo(1),
+qo(2),
+qo(3),
+qo(4),
+qo(5),
+s(311451,279908,{f=21}),
+s(311449,279910,{f=29}),
+s(311453,279912,{f=1})}}),
+q(95924,{awp=16001,coords={
+[1455]={{71.4,16.2}}},lvl=55,qgs={8256},r=2,g={
+qo(1,{providers={{"n",261813}}}),
+qo(2,{providers={{"n",253215}}}),
+qo(3,{providers={{"n",261786}}}),
+s(311471,279903,{f=6,loc=41}),
+s(311454,279905,{f=5,loc=47})}}),
+q(95926,{awp=16001,coords={
+[1458]={{48.4,69.4}}},lvl=55,qgs={2055},r=1,g={
+qo(1,{providers={{"i",271771}}}),
+s(311451,279908,{f=21}),
+s(311449,279910,{f=29}),
+s(311453,279912,{f=1})}})}),
 e(3498,{npcID=253201}),
 e(3499,{crs={253214,262688}}),
 e(3500,{npcID=261812}),
@@ -4266,12 +4384,18 @@ qo(1,{questID=2240,r=2}),
 e(469,{npcID=7228,g={
 s(159338,9408,{f=28}),
 s(159339,9409,{f=6,loc=43}),
-s(159337,9407,{f=4,loc=46})}})}}),
+s(159337,9407,{f=4,loc=46}),
+s(308894,274484,{awp=16001,f=22,spellID=1294234})}})}}),
 e(748,{npcID=7023,g={
-i(8053)}}),
+i(8053),
+s(308895,274485,{awp=16001,f=22}),
+s(308873,274428,{awp=16001,f=7,loc=42}),
+s(308875,274430,{awp=16001,f=22,spellID=1294064}),
+s(308872,274425,{awp=16001,f=27,spellID=1294055})}}),
 e(470,{npcID=7206,g={
 s(159341,9411,{f=6,loc=41}),
-s(159340,9410,{f=7,loc=44})}}),
+s(159340,9410,{f=7,loc=44}),
+s(308876,274431,{awp=16001,f=28})}}),
 e(471,{npcID=7291,g={
 s(159348,9419,{f=23,spellID=1293980}),
 s(159342,9412,{f=31}),
@@ -4287,6 +4411,7 @@ i(7672),
 s(159347,9418,{f=26}),
 s(159343,9413,{f=24}),
 i(11118,{f=52}),
+s(308877,274432,{awp=16001,f=28}),
 crit(18531,{achID=62033,awp=16001,id=2})}})}}),
 inst(240,{coords={
 [1413]={{45.9,35.7}},
@@ -4451,7 +4576,10 @@ s(159417,9527,{f=28}),
 s(159418,9531,{f=7,loc=41})}}),
 q(3042,{coords={
 [1446]={{51.4,28.8}}},lvl=40,qgs={7804},g={
-qo(1,{providers={{"i",9523}}})}})}),
+qo(1,{providers={{"i",9523}}})}}),
+q(96775,{awp=16001,coords={
+[1412]={{32.4,20.6}}},lvl=42,qgs={264074},r=1,g={
+qo(1,{providers={{"i",277112}}})}})}),
 h(-55,{
 i(9240,{b=1,coords={
 [1425]={{59,79.6}}},cost={{"i",9241,1}},crs={7995},description="The Sacred Mallet drops from Qiaga the Keeper on top of the Altar of Zul in Hinterlands. You then bring it to the top of Jintha'alor and use it near the altar to turn into the Mallet of Zul'Farrak so you can summon Gahz'rilla in Zul'Farrak.",spellID=11434}),
@@ -4500,7 +4628,7 @@ s(308948,274652,{awp=16001,f=8}),
 i(10661),
 s(308947,274651,{awp=16001,f=7,loc=42,spellID=1294668}),
 s(308949,274653,{awp=16001,f=6,loc=45})}}),
-e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
+e(483,{attunement={{"i",9240}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707),
 s(159379,9467,{f=20,spellID=1294477}),
 s(159380,9469,{f=6,loc=42}),

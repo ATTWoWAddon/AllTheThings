@@ -530,7 +530,7 @@ h(-12,{
 ach(955,{maps={76},minReputation={749,42000}})}),
 h(-31,{
 faction(749,{coords={
-[76]={{79.2,73.6}}},icon=135861,qgs={13278}})}),
+[76]={{79.2,73.6}}},crs={13278},icon=135861})}),
 h(-45,{
 q(7486,{coords={
 [76]={{79.2,73.6}}},lvl=55,providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},u=2,g={
@@ -8062,7 +8062,7 @@ s(138933,28587,{b=1,f=22,lvl=70,q=4}),
 s(138934,28588,{b=1,f=27,lvl=70,q=4}),
 s(138932,28586,{b=1,f=4,loc=40,lvl=70,q=4}),
 s(138931,28585,{b=1,f=4,loc=47,lvl=70,q=4})}})}}),
-n(17225,{description="Once you have completed the quest chain, you can summon him on the Master's Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},sourceQuests={9644},g={
+n(17225,{attunement={{"q",9644}},description="Once you have completed the quest chain, you can summon him on the Master's Terrace by clicking on the Urn on the ground.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"o",194092}},g={
 s(138950,28604,{b=1,f=28,lvl=70,q=4}),
 s(138957,28611,{b=1,f=8,lvl=70,q=4}),
 s(138952,28606,{b=1,f=8,lvl=70,q=4}),
@@ -20567,7 +20567,7 @@ i(74749,{c={4},coords={
 [85]={{57.6,65.6}}},cost={{"i",74246,1},{"g",100000000}},description="Just log out for 12 hours. Read a book or something!",q=1,qgs={57800,57801},g={
 i(74748,{c={4},q=1})}}),
 i(74750,{c={4},coords={
-[241]={{29,25}}},cost={{"i",74748,1}},q=1,qgs={55488},g={
+[241]={{29,25}}},cost={{"i",74748,1}},providers={{"n",55488}},q=1,g={
 i(74752,{c={4},q=1})}})}}),
 q(30093,{c={4},coords={
 [217]={{70,40.8}}},crs={57802},qgs={57770},sourceQuests={30092}}),

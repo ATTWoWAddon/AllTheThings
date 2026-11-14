@@ -4831,7 +4831,7 @@ h(-46,{
 n(5787,{coords={
 [1412]={{40.6,15.8}}}}),
 n(3056,{coords={
-[1412]={{32,26},{32.8,19.2},{34,29.2},{37,42.6},{37.4,17.8},{39.6,13.8},{44.2,41.2},{50.6,15}}},g={
+[1412]={{32,26},{32.8,19.2},{34,29.2},{37,42.6},{37.4,17.8},{39.6,13.8},{44.2,41.2},{50.6,15}}},description="For this rare mob to appear at one of its random spawn points, you must first speak to Skorn Whitecloud in Bloodhoof Village. It will then appear within 5 to 30 minutes.",g={
 s(157943,4854,{b=1,f=3,lvl=6,q=1,r=1})}}),
 n(3068,{coords={
 [1412]={{34.8,42.2},{39.4,44.2},{44.4,42.9},{51.2,43.6},{56.6,44}}},g={

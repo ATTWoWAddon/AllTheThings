@@ -67736,16 +67736,16 @@ o(214439,{coords={
 r(126655,{b=1,itemID=87266,lvl=87,q=1,requireSkill=185}),
 crit(20909,{achID=7284,id=13})}}),
 o(213651,{coords={
-[418]={{42.3,91.9}}},description="On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",icon=644388,questID=31410,g={
-s(271513,86122,{b=1,description="Recommended to be in a Strength DPS Spec to guarantee this item.",f=7,loc=47,lvl=86,q=3}),
-s(271506,86115,{b=1,description="Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",f=5,loc=47,lvl=86,q=3}),
-s(271508,86117,{b=1,description="Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",f=4,loc=47,lvl=86,q=3}),
-s(271507,86116,{b=1,description="Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",f=6,loc=47,lvl=86,q=3}),
-s(271514,86123,{b=1,description="Recommended to be in a Strength Tank Spec to guarantee this item.",f=7,loc=47,lvl=86,q=3}),
-s(271509,86118,{b=1,description="Recommended to be a Priest (ingame class) to guarantee this item.",f=4,loc=47,lvl=86,q=3}),
-s(271510,86119,{b=1,description="Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",f=5,loc=47,lvl=86,q=3}),
-s(271511,86120,{b=1,description="Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",f=6,loc=47,lvl=86,q=3}),
-s(271512,86121,{b=1,description="Recommended to be a Paladin in Holy Spec to guarantee this item.",f=7,loc=47,lvl=86,q=3}),
+[418]={{42.3,91.9}}},description="On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest follow the personal loot rule and is based on your current spec, IGNORING your Loot Spec.",icon=644388,questID=31410,g={
+s(271513,86122,{b=1,description="Required to be in a Strength DPS Spec to obtain this item.",f=7,loc=47,lvl=86,q=3}),
+s(271506,86115,{b=1,description="Required to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to obtain this item.",f=5,loc=47,lvl=86,q=3}),
+s(271508,86117,{b=1,description="Required to be in a Cloth DPS Spec (Mage/Warlock) to obtain this item.",f=4,loc=47,lvl=86,q=3}),
+s(271507,86116,{b=1,description="Required to be in a Mail Agility Spec (Hunter/Enhancement) to obtain this item.",f=6,loc=47,lvl=86,q=3}),
+s(271514,86123,{b=1,description="Required to be in a Strength Tank Spec to obtain this item.",f=7,loc=47,lvl=86,q=3}),
+s(271509,86118,{b=1,description="Required to be a Priest (ingame class) to obtain this item.",f=4,loc=47,lvl=86,q=3}),
+s(271510,86119,{b=1,description="Required to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to obtain this item.",f=5,loc=47,lvl=86,q=3}),
+s(271511,86120,{b=1,description="Required to be in a Mail Intellect Spec (Elemental/Restoration) to obtain this item.",f=6,loc=47,lvl=86,q=3}),
+s(271512,86121,{b=1,description="Required to be a Paladin in Holy Spec to obtain this item.",f=7,loc=47,lvl=86,q=3}),
 crit(20908,{achID=7284,id=12})}}),
 o(211993,{coords={
 [418]={{52.4,87.6}}},g={

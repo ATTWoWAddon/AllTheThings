@@ -542,7 +542,7 @@ h(-12,{
 ach(955,{maps={1447},minReputation={749,42000}})}),
 h(-31,{
 faction(749,{coords={
-[1447]={{79.2,73.6}}},icon=135861,qgs={13278}})}),
+[1447]={{79.2,73.6}}},crs={13278},icon=135861})}),
 h(-45,{
 q(7486,{coords={
 [1447]={{79.2,73.6}}},lvl=55,providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},g={
@@ -6096,7 +6096,7 @@ s(122918,9476,{b=1,f=7,loc=41,lvl=45,q=3})}}),
 n(7795,{
 i(9234,{q=1}),
 i(10661,{q=1})}),
-e(483,{cost={{"i",9240,1}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
+e(483,{attunement={{"i",9240}},description="Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",npcID=7273,providers={{"o",141832}},g={
 i(8707,{q=1}),
 s(122909,9467,{b=1,f=20,lvl=42,q=3}),
 s(122911,9469,{b=1,f=6,loc=42,lvl=43,q=3})}})}})}}),
@@ -6381,7 +6381,7 @@ s(138933,28587,{b=1,f=22,lvl=70,q=4}),
 s(138934,28588,{b=1,f=27,lvl=70,q=4}),
 s(138932,28586,{b=1,f=4,loc=40,lvl=70,q=4}),
 s(138931,28585,{b=1,f=4,loc=47,lvl=70,q=4})}})}}),
-n(17225,{description="Requires the completion of a complex questline to be summoned via the Blackened Urn.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"i",24140},{"o",194092}},sourceQuests={9644},g={
+n(17225,{attunement={{"q",9644}},description="Requires the completion of a complex questline to be summoned via the Blackened Urn.",lore="Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",providers={{"i",24140},{"o",194092}},g={
 s(138950,28604,{b=1,f=28,lvl=70,q=4}),
 s(138957,28611,{b=1,f=8,lvl=70,q=4}),
 s(138952,28606,{b=1,f=8,lvl=70,q=4}),

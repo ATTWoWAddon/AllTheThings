@@ -373,8 +373,7 @@ ach(62032,{awp=16001,g={
 crit(116053,{achID=62032,id=4,providers={{"n",260243}}})}}),
 ach(62033,{awp=16001,g={
 crit(550,{achID=62033,id=12,providers={{"n",10813}}})}}),
-ach(62031,{awp=16001}),
-ach(64283,{awp=16001})}),
+ach(62031,{awp=16001})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(891,{icon=374217,r=2}),
