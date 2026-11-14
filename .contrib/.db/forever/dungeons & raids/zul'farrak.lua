@@ -259,6 +259,9 @@ instanceroot(241, {	-- Zul'Farrak
 			creatureID = 7795,
 			groups = {
 				i(9234),	-- Tiara of the Deep
+				i(274652, {	-- Wall of Water
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				i(10661),	-- Second Mosh'aru Tablet
 			},
 		}),
