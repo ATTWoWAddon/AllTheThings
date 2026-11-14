@@ -71,6 +71,9 @@ instanceroot(233, {	-- Razorfen Downs
 					}),
 					i(10823),	-- Vanquisher's Sword
 					i(10824),	-- Amberglow Talisman
+					i(270081, {	-- Purified Ring
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(3636, {	-- Bring the Light
@@ -84,6 +87,9 @@ instanceroot(233, {	-- Razorfen Downs
 					}),
 					i(10823),	-- Vanquisher's Sword
 					i(10824),	-- Amberglow Talisman
+					i(270081, {	-- Purified Ring
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(3525, {	-- Extinguishing the Idol
@@ -173,6 +179,9 @@ instanceroot(233, {	-- Razorfen Downs
 			groups = {
 				i(10766),	-- Plaguerot Sprig
 				i(10760),	-- Swine Fists
+				i(274380, {	-- Decaying Flesh Bands
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(8696, {	-- Henry Stern
@@ -192,6 +201,9 @@ instanceroot(233, {	-- Razorfen Downs
 		n(8567, {	-- Glutton
 			i(10772),	-- Glutton's Cleaver
 			i(10774),	-- Fleshhide Shoulders
+			i(274385, {	-- Abomination Chain
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		n(7354, {	-- Ragglesnout
 			description = "This is a rare spawn that is not always present.",
@@ -208,6 +220,9 @@ instanceroot(233, {	-- Razorfen Downs
 			i(10764),	-- Deathchill Armor
 			i(10762),	-- Robes of the Lich
 			i(10765),	-- Bonefingers
+			i(274381, {	-- Coldbringer Spine
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 	},
 });
