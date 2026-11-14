@@ -329,6 +329,17 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					}),
 				},
 			}),
+			q(81570, {	-- Jarl Needs a Blade (Moonsteel Broadsword 217281)
+				qg = 4792,	-- "Swamp Eye" Jarl
+				coord = { 55.4, 26.2, MAP.DUSTWALLOW_MARSH },
+				cost = { { "i", 217281, 1 } },	-- Moonsteel Broadsword
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 30,
+				groups = {
+					i(5016),	-- Artisan's Trousers
+					i(9622),	-- Reedknot Ring
+				},
+			}),
 			q(1206, {	-- Jarl Needs Eyes
 				sourceQuest = 1218,	-- Marsh Frog Legs (TBC+) / Soothing Spices (Classic)
 				qg = 4792,	-- "Swamp Eye" Jarl

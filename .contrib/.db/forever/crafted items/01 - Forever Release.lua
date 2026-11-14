@@ -527,7 +527,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			description = "Gathered from Peacebloom and Silverleaf.",
 		}),
 		i(268416, {	-- Uncommon Herb Seeds
-			description = "Gathered from Briarthorn.",
+			description = "Gathered from Briarthorn and Stranglekelp.",
 		}),
 		n(COMMON_VENDOR_ITEMS, {
 			i(277113, {	-- Apprentice's Herb Pouch

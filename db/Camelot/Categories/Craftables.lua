@@ -1307,7 +1307,7 @@ i(279964,{f=55,spellID=1307248}),
 i(279962,{f=55,spellID=1307251}),
 i(279947,{f=55,spellID=1307387})}),
 i(268415,{description="Gathered from Peacebloom and Silverleaf.",spellID=1282398}),
-i(268416,{description="Gathered from Briarthorn.",spellID=1282736}),
+i(268416,{description="Gathered from Briarthorn and Stranglekelp.",spellID=1282736}),
 h(-22,{
 i(277113,{b=1,description="Can be bought from General Goods and Trade Supplies vendors around the world.",f=113})})}}),
 prof(165,{awp=16001,g={

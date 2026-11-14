@@ -1768,6 +1768,7 @@ _.FlightPathNames = {
 	[86] = "Eastwall Tower, Eastern Plaguelands",
 	[87] = "Crown Guard Tower, Eastern Plaguelands",
 	[559] = "Summit of Eternity, Mount Hyjal",
+	[3203] = "Rog'mar, Riverglades",
 	[3207] = "zzOLDRiverglades, Farholde Keep",
 	[3208] = "zzOLDPowderfuse Port, Riverglades",
 	[3242] = "Tainted Foothills, Mount Hyjal",

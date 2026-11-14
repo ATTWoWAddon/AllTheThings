@@ -12,7 +12,6 @@ instanceroot(3065, {	-- Hall of Thanes
 		n(QUESTS, {
 			q(96395, {	-- An Ancient Grudge
 				qg = 265002,	-- Ghostly Attendant
-				races = ALLIANCE_ONLY,
 				lvl = 10,
 				groups = {
 					objective(1, {	-- 0/1 Faldrim Anvilmar slain

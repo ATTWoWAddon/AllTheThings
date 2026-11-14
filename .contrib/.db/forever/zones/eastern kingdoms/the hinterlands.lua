@@ -476,6 +476,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					}),
 					i(9651),	-- Gryphon Rider's Stormhammer
 					i(9652),	-- Gryphon Rider's Leggings
+					i(270112, {	-- Gryphon Rider's Crop
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270276, {	-- Cleansed Vilebranch Icon
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270275, {	-- Cleansed Vilebranch Medallion
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(7849, {	-- Separation Anxiety

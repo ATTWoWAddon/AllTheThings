@@ -2229,7 +2229,7 @@ crit(18529,{achID=62032,awp=16001,id=3})}})}}),
 inst(3065,{awp=16001,coords={
 [1455]={{50,50}}},icon=_.asset("hallofthanes"),lore="Hidden beneath the High Seat of Ironforge, the Hall of Thanes is part of the legendary \"Old Ironforge\", forever incapable of access in Classic Azeroth until WoW: Forever. The Hall of Thanes is the resting place of the Legendary Dwarves of the Eastern Kingdoms, but has recently been invaded by the hostile Dark Iron Dwarves",lvl=13,zoneTextAreaID=16919,g={
 h(-45,{
-q(96395,{lvl=10,qgs={265002},r=2,g={
+q(96395,{lvl=10,qgs={265002},g={
 qo(1,{providers={{"n",261306}}}),
 s(311432,279899,{b=1,f=3}),
 s(311435,279900,{b=1,f=5,loc=46})}}),
@@ -3971,7 +3971,8 @@ q(1446,{coords={
 [1425]={{33.6,75.2}}},lvl=38,qgs={5598},g={
 qo(1,{providers={{"i",6212}}}),
 s(160220,11124,{f=6,loc=40}),
-s(160219,11123,{f=4,loc=46})}}),
+s(160219,11123,{f=4,loc=46}),
+s(304955,270115,{awp=16001,f=5,loc=46})}}),
 q(8236,{c={4},coords={
 [1447]={{29.6,40.6}}},lvl=50,maps={1424},qgs={8379},sourceQuests={8235},g={
 qo(1,{crs={5719},providers={{"i",20022}}}),
@@ -3987,7 +3988,8 @@ q(3528,{coords={
 qo(1,{cost={{"i",10663,1},{"i",10465,1}},crs={8443},providers={{"i",10662}}}),
 s(160147,10749,{f=7,loc=40}),
 s(160148,10750,{f=20}),
-s(160149,10751,{f=4,loc=40})}}),
+s(160149,10751,{f=4,loc=40}),
+s(304957,270117,{awp=16001,f=5,loc=40})}}),
 q(8232,{c={3},coords={
 [1447]={{42.2,42.6}}},lvl=50,qgs={8405},sourceQuests={8231},g={
 qo(1,{crs={5719},providers={{"i",20019}}}),

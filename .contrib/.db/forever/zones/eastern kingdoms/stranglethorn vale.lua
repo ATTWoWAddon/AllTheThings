@@ -911,6 +911,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 818,	-- Mai'Zoth
 					}),
 					i(4125),	-- Tranquil Orb
+					i(270096, {	-- Rebel Breastplate
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270097, {	-- Archer's Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(3645, {	-- Membership Card Renewal [H]

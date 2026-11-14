@@ -207,6 +207,9 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 					}),
 					i(11124),	-- Helm of Exile
 					i(11123),	-- Rainstrider Leggings
+					i(270115, {	-- Leggings of Freedom and Sorrow
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(8236, {	-- The Azure Key
@@ -264,6 +267,9 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 					i(10749),	-- Avenguard Helm
 					i(10750),	-- Lifeforce Dirk
 					i(10751),	-- Gemburst Circlet
+					i(270117, {	-- Shapeshifter's Helm
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(8232, {	-- The Green Drake
