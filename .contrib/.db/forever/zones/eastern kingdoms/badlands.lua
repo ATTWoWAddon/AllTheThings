@@ -326,6 +326,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(4623),	-- Lesser Stoneshield Potion
 				},
 			}),
+			q(97821, {	-- Mirage Mirror
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 37,
+				groups = {
+					objective(1, {	-- 0/1 Mirage Mirror
+						provider = { "i", 277844 },	-- Mirage Mirror
+					}),
+					i(277844),	-- Mirage Mirror
+				},
+			}),
 			q(718, {	-- Mirages
 				qg = 2860,	-- Sigrun Ironhew
 				coord = { 53.8, 43.3, MAP.BADLANDS },

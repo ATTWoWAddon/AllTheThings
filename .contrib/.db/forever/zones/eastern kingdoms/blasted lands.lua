@@ -41,6 +41,38 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					i(8411),	-- Lung Juice Cocktail
 				},
 			}),
+			q(96799, {	-- A Heavy Responsibility
+				sourceQuest = 96811,	-- Escaping the Shadows
+				qg = 266524,	-- Lieutenant Connar
+				coord = { 66.0, 19.4, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1),	-- 0/1 Speak with Sergeant Danneth
+				},
+			}),
+			q(87295, {	-- Deflective Surface
+				qg = 3546,	-- Bernie Heisten
+				coord = { 63.4, 16.8, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 46,
+				groups = {
+					objective(1, {	-- 0/10 Redstone Basilisk Scale
+						provider = { "i", 280181 },	-- Redstone Basilisk Scale
+					}),
+				},
+			}),
+			q(96811, {	-- Escaping the Shadows
+				qg = 266508,	-- Sergeant Danneth
+				coord = { 66.6, 31.4, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1),	-- 0/1 Escort Sergeant Danneth
+				},
+			}),
 			q(3501, {	-- Everything Counts In Large Amounts
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
@@ -243,6 +275,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
+			q(91882, {	-- The Grand Alliance
+				qg = 7826,	-- Ambassador Ardalan
+				coord = { 67.4, 19.2, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
 			q(96797, {	-- The Orphan
 				qg = 34365,	-- Orphan Matron Aria
 				coord = { 21.5, 72.6, MAP.ALTERAC_MOUNTAINS },
@@ -279,12 +317,45 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					}),
 				},
 			}),
+			q(96812, {	-- Thicker Than Water
+				sourceQuest = 96799,	-- A Heavy Responsibility
+				qg = 266593,	-- Sergeant Danneth
+				coord = { 65.2, 15.4, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					i(276900),	-- Denric's Dog Tags
+					i(276901),	-- Uncle's Heroism
+					i(276902),	-- Youngster's First Bow
+				},
+			}),
 			q(2521, {	-- To Serve Kum'isha
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
 				cost = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
 				lvl = 45,
 				groups = {
+					i(10752),	-- Emerald Encrusted Chest
+				},
+			}),
+			q(93685, {	-- To Serve Kum'isha
+				sourceQuest = 93684,	-- The Found One
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Flawless Draenethyst Sphere
+						provider = { "i", 8244 },	-- Flawless Draenethyst Sphere
+					}),
+				},
+			}),
+			q(93572, {	-- To Serve The Draenei
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 45,
+				groups = {
+					objective(1),	-- 0/1 Protect the draenei refugees as they pass through Kum'isha's rift
 					i(10752),	-- Emerald Encrusted Chest
 				},
 			}),

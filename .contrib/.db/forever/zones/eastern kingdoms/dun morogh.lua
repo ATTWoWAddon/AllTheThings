@@ -1347,6 +1347,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				races = ALLIANCE_ONLY,
 				lvl = 8,
 			}),
+			q(99207, {	-- Swift as the Wind
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { GNOME },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
+			q(99209, {	-- Swift as the Wind
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { DWARF },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(6064, {	-- Taming the Beast (1/3)
 				sourceQuests = {
 					6074,	-- The Hunter's Path [Ironforge]

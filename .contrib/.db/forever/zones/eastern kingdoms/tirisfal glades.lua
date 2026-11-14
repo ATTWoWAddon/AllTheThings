@@ -451,6 +451,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			},
 		}),
 		n(QUESTS, {
+			q(97319, {	-- A Cousin Abroad
+				qg = 10839,	-- Argent Officer Garush
+				coord = { 83.2, 68.4, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 55,
+			}),
 			q(94427, {	-- A Lesson in Divinity
 				qg = 246378,	-- Danitha Morr
 				coord = { 22.05, 44.7, MAP.TIRISFAL_GLADES },
@@ -601,6 +608,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				races = HORDE_ONLY,
 				lvl = 6,
 			}),
+			q(94971, {	-- A Paladin's Steed
+				sourceQuest = 97022,	-- Report to Danitha
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 40,
+			}),
 			q(404, {	-- A Putrid Task
 				qg = 1496,	-- Deathguard Dillinger
 				coord = { 58.21, 51.45, MAP.TIRISFAL_GLADES },
@@ -640,6 +656,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 9,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 270436,	-- Rudolph Gelhardt's Head (QI!)
+			}),
+			q(97174, {	-- A Worthy Endeavor
+				qg = 246344,	-- Alodan the Hopeful
+				coord = { 21.8, 45.2, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
+			}),
+			q(97177, {	-- Acts of Mercy
+				sourceQuest = 97175,	-- Due Sacrifice
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 276614,	-- Zayus's Exorcism Censer (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
 			}),
 			q(1821, {	-- Agamand Heirlooms
 				sourceQuest = 1820,	-- Speak with Coleman
@@ -1115,6 +1148,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
+			q(97175, {	-- Due Sacrifice
+				sourceQuest = 97174,	-- A Worthy Endeavor
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				cost = { { "g", 1500000 } },	-- 150g
+				lvl = 60,
+			}),
 			q(365, {	-- Fields of Grief (1/2)
 				qg = 1519,	-- Deathguard Simmer
 				coord = { 40.9, 54.2, MAP.TIRISFAL_GLADES },
@@ -1323,6 +1366,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(246164),	-- Skullthumper
 					i(246165),	-- Driftwood Smasher
 				},
+			}),
+			q(97178, {	-- Ott of Tarren Mill
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				lvl = 60,
 			}),
 			q(99141, {	-- Patience
 				qg = 1515,	-- Executor Zygand
@@ -1541,6 +1591,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					i(279939),	-- Collecting Basket
 				},
 			}),
+			q(99208, {	-- Swift as the Wind
+				qg = 4773,	-- Velma Warnam
+				coord = { 60.0, 52.4, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(95314, {	-- That Shadowvale Green Elixir
 				qg = 2132,	-- Carolai Anise <Journeyman Alchemist>
 				coord = { 59.4, 52.3, MAP.TIRISFAL_GLADES },
@@ -1650,6 +1710,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
+			q(93030, {	-- The Knight of Mourning
+				qg = 276110,	-- Knight of Mourning
+				coord = { 17.6, 67.4, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1),	-- 0/1 Listen to the Knight's Tale
+				},
+			}),
 			q(357, {	-- The Lich's Identity
 				sourceQuest = 405,	-- The Prodigal Lich
 				qg = 1498,	-- Bethor Iceshard
@@ -1720,6 +1790,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				lvl = 5,
 				groups = {
 					i(5940),	-- Bone Buckler
+				},
+			}),
+			q(99187, {	-- The Reliquary of Tyr
+				sourceQuest = 93030,	-- The Knight of Mourning
+				qg = 276110,	-- Knight of Mourning
+				coord = { 17.6, 67.4, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Reliquary of Tyr
+						provider = { "i", 286415 },	-- Reliquary of Tyr
+					}),
+					i(286408),	-- Sword of Mourning
 				},
 			}),
 			q(91317, {	-- The Tarnished

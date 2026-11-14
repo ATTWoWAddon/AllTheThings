@@ -377,6 +377,16 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					}),
 				},
 			}),
+			q(99205, {	-- Swift as the Wind
+				qg = 4753,	-- Jartsam
+				coord = { 38.4, 15.8, MAP.DARNASSUS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { NIGHTELF },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(2518, {	-- Tears of the Moon
 				sourceQuest = 2519,	-- The Temple of the Moon
 				qg = 7313,	-- Priestess A'moora

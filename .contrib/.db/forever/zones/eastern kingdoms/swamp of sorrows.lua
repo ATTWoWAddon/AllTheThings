@@ -300,6 +300,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 				},
 			}),
+			q(87451, {	-- Memories of Rockard
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 280390,	-- Carved Stone Trinket (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					i(281259),	-- Stonard Stompers
+					i(281260),	-- Ancestral Waistcord
+				},
+			}),
 			q(93176, {	-- My Little Friends
 				qg = 217412,	-- Amaryllis Webb
 				qi = 213565,	-- Entomology Starter Kit (PQI!)
@@ -394,6 +405,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				qg = 7572,	-- Fallen Hero of the Horde
 				coord = { 34.3, 66.2, MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
+				lvl = 45,
+			}),
+			q(93684, {	-- The Found One
+				sourceQuest = 93679,	-- Visions of Another
+				qg = 1776,	-- Magtoor
+				coord = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 45,
 			}),
 			q(1421, {	-- The Lost Caravan
@@ -569,6 +587,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 						coord = { 40.6, 30.2, MAP.BLASTED_LANDS },
 						cr = 7667,	-- Lady Sevine
 					}),
+				},
+			}),
+			q(93679, {	-- Visions of Another
+				qg = 1776,	-- Magtoor
+				coord = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 45,
+				groups = {
+					objective(1),	-- 0/1 Watch Onku's vision with Magtoor
 				},
 			}),
 			q(8424, {	-- War on the Shadowsworn

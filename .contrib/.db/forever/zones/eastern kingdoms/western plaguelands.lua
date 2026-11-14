@@ -76,6 +76,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				isBreadcrumb = true,
 				lvl = 50,
 			}),
+			q(92842, {	-- A Cousin Abroad
+				qg = 10840,	-- Argent Officer Pureheart
+				coord = { 43.0, 83.6, MAP.WESTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
 			q(4971, {	-- A Matter of Time
 				qg = 10667,	-- Chromie
 				coord = { 39.4, 66.8, MAP.WESTERN_PLAGUELANDS },

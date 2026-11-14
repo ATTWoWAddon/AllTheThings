@@ -1862,6 +1862,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					}),
 				},
 			}),
+			q(95181, {	-- Twilight Scouting Report
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 268516,	-- Twilight Scouting Report (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 36,
+			}),
 			q(95122, {	-- Unchecked Expansion
 				qg = 259961,	-- Wharfmaster Whizzbuzz
 				coord = { 79.4, 52.6, MAP.RIVERGLADES },

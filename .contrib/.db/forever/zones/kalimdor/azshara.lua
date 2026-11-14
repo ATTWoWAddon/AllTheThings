@@ -106,6 +106,26 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(91500, {	-- An Explosive Gambit
+				sourceQuest = 91497,	-- Seals of the Sin'dorei
+				qg = 247449,	-- Sin'dorei Tome of Summoning
+				qi = 249390,	-- Seals of the Sin'dorei (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/1 Head of Magus Rimtori
+						provider = { "i", 10597 },	-- Head of Magus Rimtori
+					}),
+				},
+			}),
+			q(86804, {	-- An Unlikely Source
+				sourceQuest = 86799,	-- Encroaching Corruption
+				qg = 235906,	-- Elder Bramblesnap
+				coord = { 41.6, 19.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+			}),
 			q(3564, {	-- Andron's Payment to Jediga
 				sourceQuest = 3542,	-- Delivery to Andron Gant
 				qg = 6522,	-- Andron Gant
@@ -128,6 +148,13 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 						i(10831),	-- Fel Orb
 					}),
 				},
+			}),
+			q(92346, {	-- Beneath Nordrassil
+				qg = 8587,	-- Jediga
+				coord = { 22.4, 51.4, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
 			}),
 			q(3504, {	-- Betrayed (1/4)
 				qg = 4485,	-- Belgrom Rockmaul
@@ -211,6 +238,36 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(89015, {	-- Deadliest Catch [A]
+				qg = 240482,	-- Berdun Cliffbrew
+				coord = { 12.6, 77.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Mammoth Shark Steak
+						provider = { "i", 238507 },	-- Mammoth Shark Steak
+					}),
+					i(260210),	-- A Bigger Shield
+					i(260211),	-- Panic Hands
+					i(260212),	-- Bad Hat
+				},
+			}),
+			q(91611, {	-- Deadliest Catch [H]
+				qg = 3621,	-- Kurll
+				coord = { 21.8, 52.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Mammoth Shark Steak
+						provider = { "i", 238507 },	-- Mammoth Shark Steak
+					}),
+					i(260210),	-- A Bigger Shield
+					i(260211),	-- Panic Hands
+					i(260212),	-- Bad Hat
+				},
+			}),
 			q(3542, {	-- Delivery to Andron Gant
 				sourceQuest = 3517,	-- Stealing Knowledge
 				qg = 8587,	-- Jediga
@@ -242,6 +299,33 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				coord = { 22.4, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
+			}),
+			q(91877, {	-- Demon Hunter's Hunter
+				qg = 7783,	-- Loramus Thalipedes
+				coord = { 60.8, 66.4, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
+			q(86799, {	-- Encroaching Corruption
+				qg = 235909,	-- Furze
+				coord = { 45.2, 22.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+			}),
+			q(86926, {	-- Felfire Burn, Cauldron Bubble
+				sourceQuest = 86925,	-- Toil and Trouble
+				provider = { "o", 506307 },	-- Legashi Cauldron
+				coord = { 57.7, 21.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/5 Satyrweed
+						provider = { "i", 235470 },	-- Satyrweed
+					}),
+					objective(2, {	-- 0/1 Fel Mote
+						provider = { "i", 235471 },	-- Fel Mote
+					}),
+				},
 			}),
 			q(9364, {	-- Fragmented Magic
 				sourceQuest = 9362,	-- Warlord Krellian
@@ -333,6 +417,30 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(89001, {	-- Home on the Range [A]
+				qg = 240482,	-- Berdun Cliffbrew
+				coord = { 12.6, 77.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/5 Mosshoof Hide
+						provider = { "i", 238463 },	-- Mosshoof Hide
+					}),
+				},
+			}),
+			q(91488, {	-- Home on the Range [H]
+				qg = 3621,	-- Kurll
+				coord = { 21.8, 52.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/5 Mosshoof Hide
+						provider = { "i", 238463 },	-- Mosshoof Hide
+					}),
+				},
+			}),
 			q(89470, {	-- Ill Tidings
 				-- TODO: Starts at object 527828, where Your Final Reward (89053) ends; confirm whether it requires 89053.
 				provider = { "o", 527828 },
@@ -395,6 +503,44 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 							6196,	-- Spitelash Myrmidon
 							6195,	-- Spitelash Siren
 						},
+					}),
+				},
+			}),
+			q(86796, {	-- Later, Satyr
+				qg = 237007,	-- Graal
+				coord = { 65.8, 14.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1),	-- 0/1 Help Graal break out of Legashi Stronghold
+				},
+			}),
+			q(91685, {	-- Ley of the Land
+				qg = 247473,	-- Izvi Gildfizz
+				qi = 247238,	-- Mana-Siphoning Wand (PQI!)
+				coord = { 22.4, 51.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Tear of Mennar
+						provider = { "i", 246938 },	-- Tear of Mennar
+					}),
+					i(260172),	-- Assassin's Dagger
+					i(260178),	-- Honor Guard's Plate
+					i(260179),	-- Barkwoven Belt
+				},
+			}),
+			q(91568, {	-- Long Walks on the Beach
+				qg = 247473,	-- Izvi Gildfizz
+				qi = 246683,	-- Treasure Trowel 3000 (PQI!)
+				coord = { 22.4, 51.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/10 Highborne Treasure Fragment
+						provider = { "i", 246684 },	-- Highborne Treasure Fragment
 					}),
 				},
 			}),
@@ -467,11 +613,32 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				races = ALLIANCE_ONLY,
 				lvl = 47,
 			}),
+			q(86777, {	-- Master Feardred
+				qg = 236770,	-- Korsa
+				coord = { 62.8, 21.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Feardred's Amulet
+						provider = { "i", 235334 },	-- Feardred's Amulet
+					}),
+					i(259892),	-- Feardred's Cleansed Amulet
+					i(260166),	-- Rageroar's Best Club
+					i(260167),	-- Adventurer's Lost Boots
+				},
+			}),
 			q(3503, {	-- Meeting with the Master
 				qg = 8395,	-- Sanath Lim-yo
 				coord = { 28.0, 50.0, MAP.AZSHARA },
 				repeatable = true,
 				lvl = 45,
+			}),
+			q(86791, {	-- Missing Blackmaw Scouts
+				sourceQuest = 86752,	-- Report to Rageroar
+				qg = 236573,	-- Gatekeeper Rageroar
+				coord = { 42.4, 20.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
 			}),
 			q(89037, {	-- Murloc Thieves
 				sourceQuest = 88884,	-- Highborne Tablets
@@ -506,6 +673,44 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 						provider = { "i", 20027 },	-- Healthy Courser Gland
 						cr = 8761,	-- Mosshoof Courser
 					}),
+				},
+			}),
+			q(90813, {	-- Pay Dirt! [A]
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Humongous Crystal
+						provider = { "i", 243203 },	-- Humongous Crystal
+					}),
+					i(243299),	-- Big Bag o' Gold
+				},
+			}),
+			q(91607, {	-- Pay Dirt! [H]
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Humongous Crystal
+						provider = { "i", 246888 },	-- Humongous Crystal
+					}),
+					i(243299),	-- Big Bag o' Gold
+				},
+			}),
+			q(86813, {	-- Potential Panacea
+				sourceQuest = 86812,	-- Transmuted Tincture
+				qg = 235906,	-- Elder Bramblesnap
+				qi = 235510,	-- Bramblesnap's Panacea (PQI!)
+				coord = { 41.6, 19.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1),	-- 0/1 Panacea administered
+					i(260171),	-- Timbermaw Prayer Beads
+					i(260168),	-- Mourner's Shroud
+					i(260169),	-- Amice of Sorrow
 				},
 			}),
 			q(88809, {	-- Preserving Eldarath
@@ -547,11 +752,49 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					-- TODO: Wowhead doesn't list the three Naga Power Stones near the Ravencrest Monument yet (objectives 3-5).
 				},
 			}),
+			q(86752, {	-- Report to Rageroar
+				qg = 235903,	-- Ekkal
+				coord = { 42.0, 38.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+			}),
+			q(86797, {	-- Return to Rageroar
+				sourceQuest = 86777,	-- Master Feardred
+				qg = 236770,	-- Korsa
+				coord = { 62.8, 21.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+			}),
 			q(3421, {	-- Return Trip
 				qg = 8399,	-- Nyrill <Xylem's Apprentice>
 				coord = { 26.4, 46.2, MAP.AZSHARA },
 				repeatable = true,
 				lvl = 45,
+			}),
+			q(91531, {	-- Revenge Exacted
+				sourceQuest = 91500,	-- An Explosive Gambit
+				qg = 8576,	-- Ag'tor Bloodfist
+				qi = 10597,	-- Head of Magus Rimtori (PQI!)
+				coord = { 22.2, 51.4, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+				groups = {
+					i(10709),	-- Pyrestone Orb
+					i(11120),	-- Belgrom's Hammer
+					i(287075),	-- Belgrom's Revenge
+				},
+			}),
+			q(86927, {	-- Running Firewater
+				sourceQuest = 86926,	-- Felfire Burn, Cauldron Bubble
+				provider = { "o", 506307 },	-- Legashi Cauldron
+				qi = 235472,	-- Legashi Firewater (PQI!)
+				coord = { 57.7, 21.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					i(236754),	-- Recipe: Distilled Firewater
+				},
 			}),
 			q(88857, {	-- Saving a Sentinel
 				qg = 222478,	-- Sentinel Keldara Sunblade
@@ -559,6 +802,51 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 45,
+			}),
+			q(90789, {	-- Scalebeard
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { MAGE },
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Prismatic Shell
+						provider = { "i", 23250 },	-- Prismatic Shell
+					}),
+				},
+			}),
+			q(91497, {	-- Seals of the Sin'dorei
+				sourceQuest = 3505,	-- Betrayed
+				qg = 247449,	-- Sin'dorei Tome of Summoning
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/1 Seal of the Warden
+						provider = { "i", 246725 },	-- Seal of the Warden
+					}),
+					objective(2, {	-- 0/1 Seal of the Warrior
+						provider = { "i", 246721 },	-- Seal of the Warrior
+					}),
+					objective(3, {	-- 0/1 Seal of the Ranger
+						provider = { "i", 246722 },	-- Seal of the Ranger
+					}),
+				},
+			}),
+			q(91538, {	-- Sin'dorei Tome of Summoning
+				qg = 247449,	-- Sin'dorei Tome of Summoning
+				qi = 246770,	-- Sin'dorei Tome of Summoning (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+			}),
+			q(91547, {	-- Sin'dorei Tome of Summoning
+				sourceQuest = 91538,	-- Sin'dorei Tome of Summoning
+				qg = 8587,	-- Jediga
+				qi = 246770,	-- Sin'dorei Tome of Summoning (PQI!)
+				coord = { 22.4, 51.4, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
 			}),
 			q(98096, {	-- Sisters In Duty
 				qg = 8396,	-- Sentinel Dalia Sunblade
@@ -717,6 +1005,24 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(86746, {	-- The Legashi Threat
+				qg = 235903,	-- Ekkal
+				coord = { 42.0, 38.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/5 Legashi Satyr slain
+						provider = { "n", 6200 },	-- Legashi Satyr
+					}),
+					objective(2, {	-- 0/5 Legashi Rogue slain
+						provider = { "n", 6201 },	-- Legashi Rogue
+					}),
+					objective(3, {	-- 0/5 Legashi Hellcaller slain
+						provider = { "n", 6202 },	-- Legashi Hellcaller
+					}),
+				},
+			}),
 			q(3509, {	-- The Name of the Beast (1/3)
 				sourceQuest = 3508,	-- Breaking the Ward
 				qg = 7783,	-- Loramus Thalipedes
@@ -767,6 +1073,54 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					}),
 				},
 			}),
+			q(86792, {	-- Thinning Their Forces
+				qg = 236770,	-- Korsa
+				coord = { 62.8, 21.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/6 Legashi Hellraiser slain
+						provider = { "n", 236874 },	-- Legashi Hellraiser
+					}),
+					objective(2, {	-- 0/4 Legashi Soulstealer slain
+						provider = { "n", 236867 },	-- Legashi Soulstealer
+					}),
+					objective(3, {	-- 0/2 Legashi Blackguard slain
+						provider = { "n", 236876 },	-- Legashi Blackguard
+					}),
+				},
+			}),
+			q(86798, {	-- Timbermaw Reinforcements
+				sourceQuest = 86797,	-- Return to Rageroar
+				qg = 236573,	-- Gatekeeper Rageroar
+				coord = { 42.4, 20.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+			}),
+			q(86925, {	-- Toil and Trouble
+				sourceQuest = 86804,	-- An Unlikely Source
+				provider = { "o", 506307 },	-- Legashi Cauldron
+				coord = { 57.7, 21.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Legashi Firewater Recipe
+						provider = { "i", 235645 },	-- Legashi Firewater Recipe
+					}),
+				},
+			}),
+			q(86812, {	-- Transmuted Tincture
+				sourceQuest = 86927,	-- Running Firewater
+				qg = 235906,	-- Elder Bramblesnap
+				qi = 235509,	-- Satyrweed Tincture (PQI!)
+				coord = { 41.6, 19.6, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1),	-- 0/3 Satyrweed Tincture tested
+					i(255731),	-- Manual: Powerful Poultice
+				},
+			}),
 			q(9362, {	-- Warlord Krellian
 				qg = 8379,	-- Archmage Xylem
 				coord = { 29.6, 40.6, MAP.AZSHARA },
@@ -795,6 +1149,31 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 							6347,	-- Young Wavethrasher
 						},
 					}),
+				},
+			}),
+			q(89228, {	-- Winter Frontier Fishery [A]
+				qg = 240482,	-- Berdun Cliffbrew
+				coord = { 12.6, 77.2, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/10 Raw Winter Squid
+						provider = { "i", 13755 },	-- Raw Winter Squid
+					}),
+				},
+			}),
+			q(91610, {	-- Winter Frontier Fishery [H]
+				qg = 3621,	-- Kurll
+				coord = { 21.8, 52.0, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/10 Raw Winter Squid
+						provider = { "i", 13755 },	-- Raw Winter Squid
+					}),
+					i(259890),	-- Deep-Sea Waders
 				},
 			}),
 			q(3565, {	-- Xylem's Payment to Jediga

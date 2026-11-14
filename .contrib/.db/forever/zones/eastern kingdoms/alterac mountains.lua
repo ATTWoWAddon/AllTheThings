@@ -74,6 +74,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(QUESTS, {
+			q(99193, {	-- A Donation of Mageweave [A]
+				qg = 276170,	-- Belanaa Windveil
+				coord = { 11.6, 57.8, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				races = ALLIANCE_ONLY,
+				lvl = 40,
+			}),
+			q(99194, {	-- A Donation of Runecloth
+				qg = 276170,	-- Belanaa Windveil
+				coord = { 11.6, 57.8, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				lvl = 50,
+			}),
 			q(99192, {	-- A Donation of Silk
 				-- Not yet available in game.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -84,13 +99,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				qg = 276170,	-- Belanaa Windveil
 				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 12,
-				groups = {
-					objective(1, {	-- 0/60 Wool Cloth
-						provider = { "i", 2592 },	-- Wool Cloth
-					}),
-				},
 			}),
 			q(8233, {	-- A Simple Request
 				allianceQuestData = {

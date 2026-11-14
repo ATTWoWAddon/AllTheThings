@@ -344,6 +344,29 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				races = HORDE_ONLY,
 				lvl = 54,
 			}),
+			q(95006, {	-- Stolen Power
+				sourceQuest = 96209,	-- The Ancient, Orokai
+				qg = 216289,	-- Orokai
+				coord = { 41.0, 43.6, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 54,
+				groups = {
+					objective(1),	-- 0/1 Events Observed
+					objective(2, {	-- 0/1 Concoction of Cleansing
+						provider = { "i", 268298 },	-- Concoction of Cleansing
+					}),
+					objective(3, {	-- 0/1 Ketharas' Note
+						provider = { "i", 272925 },	-- Ketharas' Note
+					}),
+				},
+			}),
+			q(96209, {	-- The Ancient, Orokai
+				sourceQuest = 92612,	-- Aid from Moonglade
+				qg = 11802,	-- Dendrite Starblaze
+				coord = { 56.2, 30.4, MAP.MOONGLADE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 54,
+			}),
 			q(98340, {	-- The Great Cat Spirit
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },

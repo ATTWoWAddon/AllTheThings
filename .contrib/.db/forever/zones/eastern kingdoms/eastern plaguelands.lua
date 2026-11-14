@@ -110,6 +110,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				classes = { PRIEST },
 				lvl = 60,
 			}),
+			q(97986, {	-- Argent Arbiter
+				qg = 16284,	-- Argent Medic
+				coord = { 80.6, 57.8, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 53,
+			}),
 			q(5503, {	-- Argent Dawn Commission
 				qg = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 				coord = { 81.4, 59.8, MAP.EASTERN_PLAGUELANDS },
@@ -146,6 +152,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					i(22523),	-- Insignia of the Dawn
 				},
+			}),
+			q(98109, {	-- Bleeding Edge
+				sourceQuest = 97986,	-- Argent Arbiter
+				qg = 2614,	-- Argent Medic
+				coord = { 40.6, 35.4, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 53,
 			}),
 			q(5543, {	-- Blood Tinged Skies
 				qg = 1855,	-- Tirion Fordring
@@ -605,6 +618,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
+			q(97988, {	-- Orgrimmar's Windshapers
+				qg = 11706,	-- Adon
+				coord = { 58.4, 17.2, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 53,
+				groups = {
+					i(281287),	-- Windshaper Pendant
+					i(281288),	-- Shen'dorei Signet
+				},
+			}),
 			q(5149, {	-- Pamela's Doll
 				sourceQuests = {
 					5142,	-- Little Pamela
@@ -658,6 +682,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				groups = {
 					i(22524),	-- Insignia of the Crusade
 					i(22523),	-- Insignia of the Dawn
+				},
+			}),
+			q(97987, {	-- Stormwind's High Order
+				sourceQuest = 98109,	-- Bleeding Edge
+				qg = 11706,	-- Adon
+				coord = { 58.4, 17.2, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 53,
+				groups = {
+					i(281286),	-- High Order Pendant
+					i(281288),	-- Shen'dorei Signet
 				},
 			}),
 			q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn

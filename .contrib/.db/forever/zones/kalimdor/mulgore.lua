@@ -337,6 +337,22 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
+			q(99198, {	-- A Donation of Mageweave [H]
+				qg = 276171,	-- Oura Stormspinner
+				coord = { 34.2, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 4338, 60 }},	-- Mageweave Cloth
+				races = HORDE_ONLY,
+				lvl = 40,
+			}),
+			q(99199, {	-- A Donation of Runecloth
+				qg = 276171,	-- Oura Stormspinner
+				coord = { 34.2, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				races = HORDE_ONLY,
+				lvl = 50,
+			}),
 			q(99197, {	-- A Donation of Silk
 				-- Not yet available in game.
 				timeline = { TIMELINE.CREATED_1_60_1 },
@@ -347,13 +363,9 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				qg = 276171,	-- Oura Stormspinner
 				coord = { 34.2, 22.4, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 2592, 60 }},	-- Wool Cloth
 				races = HORDE_ONLY,
 				lvl = 12,
-				groups = {
-					objective(1, {	-- 0/60 Wool Cloth
-						provider = { "i", 2592 },	-- Wool Cloth
-					}),
-				},
 			}),
 			q(833, {	-- A Sacred Burial
 				qg = 3233,	-- Lorekeeper Raintotem
@@ -1129,6 +1141,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					i(4964),	-- Goblin Smasher
 				},
 			}),
+			q(99202, {	-- Swift as the Wind
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { TAUREN },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(761, {	-- Swoop Hunting
 				qg = 2947,	-- Harken Windtotem
 				coord = { 48.7, 59.3, MAP.MULGORE },
@@ -1423,6 +1444,19 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				groups = {
 					recipe(6991),	-- Feed Pet
 					recipe(982),	-- Revive Pet
+				},
+			}),
+			q(98477, {	-- Unstable Magic
+				qg = 272633,	-- Nuara Tremorhoof
+				qi = 281371,	-- Elemental Attractor (PQI!)
+				coord = { 33.4, 22.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/10 Mote of Unstable Magic
+						provider = { "i", 274964 },	-- Mote of Unstable Magic
+					}),
 				},
 			}),
 			q(760, {	-- Wildmane Cleansing

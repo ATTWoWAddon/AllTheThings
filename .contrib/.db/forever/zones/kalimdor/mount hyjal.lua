@@ -33,6 +33,44 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			}),
 		}),
 		n(QUESTS, {
+			q(96622, {	-- A Rest Without Pain
+				qg = 244512,	-- Ortak Lomgok
+				coord = { 13.0, 52.8, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 54,
+				groups = {
+					objective(1),	-- 0/1 Poultice Delivered to Enho
+					objective(2),	-- 0/1 Poultice Delivered to Maruke
+					i(255729),	-- Manual: Major Healing Potion
+				},
+			}),
+			q(92612, {	-- Aid from Moonglade
+				qg = 256222,	-- Ketharas
+				qi = 272925,	-- Ketharas' Note (PQI!)
+				coord = { 73.2, 81.8, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 54,
+			}),
+			q(94832, {	-- Belle's Ring
+				qg = 244517,	-- Sefira Everbright
+				qi = 273798,	-- Ring of the Fallen Soldier (PQI!)
+				coord = { 15.6, 54.6, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+			}),
+			q(96674, {	-- Ewe Wandered Off
+				qg = 248419,	-- Mirt
+				coord = { 15.8, 52.6, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 54,
+				groups = {
+					objective(1),	-- 0/6 Escaped Sheep
+					i(275827),	-- Wool-Stitched Waistband
+				},
+			}),
 			q(92521, {	-- The Demon Tower
 				-- Not yet available in game. Spy on Hnaz's imp at the tower with the captive satyr.
 				timeline = { TIMELINE.CREATED_1_60_1 },

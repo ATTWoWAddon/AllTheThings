@@ -155,6 +155,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				repeatable = true,
 				lvl = 40,
 			}),
+			q(93163, {	-- Heart of the Obliterator
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Heart of the Obliterator
+						provider = { "i", 257126 },	-- Heart of the Obliterator
+					}),
+				},
+			}),
 			q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
 				qg = 14627,	-- Hansel Heavyhands
 				coord = { 38.6, 27.8, MAP.SEARING_GORGE },

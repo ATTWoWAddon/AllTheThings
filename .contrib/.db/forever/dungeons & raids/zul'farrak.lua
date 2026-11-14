@@ -176,6 +176,18 @@ instanceroot(241, {	-- Zul'Farrak
 					}),
 				},
 			}),
+			q(96775, {	-- Zum'rah's Head
+				qg = 264074,	-- Mazu'kon
+				coord = { 32.4, 20.6, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 42,
+				groups = {
+					objective(1, {	-- 0/1 Zum'rah's Head
+						provider = { "i", 277112 },	-- Zum'rah's Head
+					}),
+				},
+			}),
 		}),
 		n(SPECIAL, {
 			i(9240, {	-- Mallet of Zul'Farrak

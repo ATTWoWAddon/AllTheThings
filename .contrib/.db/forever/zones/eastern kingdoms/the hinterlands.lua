@@ -702,6 +702,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					i(19121),	-- Deep Woodlands Cloak
 				},
 			}),
+			q(98203, {	-- Witch Doctor Ti'ik
+				qg = 270780,	-- Qujo
+				coord = { 77.8, 78.0, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Ti'ik's Head
+						provider = { "i", 279913 },	-- Ti'ik's Head
+					}),
+					i(281298),	-- Ti'ik's Tattered Trousers
+					i(281299),	-- Profane Ritual Robes
+					i(281301),	-- Sacrificial Shackles
+				},
+			}),
 			q(2988, {	-- Witherbark Cages
 				qg = 5636,	-- Gryphon Master Talonaxe
 				coord = { 9.8, 44.5, MAP.THE_HINTERLANDS },

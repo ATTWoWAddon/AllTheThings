@@ -312,6 +312,13 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					}),
 				},
 			}),
+			q(92020, {	-- Hol'anyee's Big Book of Big Lizards
+				qg = 9271,	-- Hol'anyee Marshal
+				qi = 275903,	-- Hol'anyee's Big Book of Big Lizards (PQI!)
+				coord = { 43.8, 7.2, MAP.UNGORO_CRATER },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
 			q(3844, {	-- It's a Secret to Everybody (1/3)
 				provider = { "o", 161505 },	-- A Wrecked Raft
 				coord = { 63.1, 68.5, MAP.UNGORO_CRATER },

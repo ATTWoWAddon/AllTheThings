@@ -252,6 +252,28 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 			}),
+			q(97270, {	-- Brawl at the Maul
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 277556,	-- Razza's Heart (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
+			q(99233, {	-- Brawl at the Maul
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 277557,	-- Skarr's Broken Gauntlet (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
+			q(95555, {	-- Corrupted Nature
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 40,
+				groups = {
+					objective(1, {	-- 0/1 Diseased Nature Staff
+						provider = { "i", 221976 },	-- Diseased Nature Staff
+					}),
+				},
+			}),
 			q(2979, {	-- Dark Ceremony
 				sourceQuest = 2978,	-- The Gordunni Scroll
 				qg = 7777,	-- Rok Orhan
@@ -489,6 +511,21 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
 				lvl = 47,
+			}),
+			q(92878, {	-- Lost for Words
+				qg = 11752,	-- Blaise Montgomery
+				coord = { 74.8, 44.0, MAP.FERALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 36,
+				groups = {
+					objective(1, {	-- 0/1 Namida's Hoof
+						provider = { "i", 254877 },	-- Namida's Hoof
+					}),
+					i(277220),	-- Shabby Spaulders
+					i(277216),	-- Cross-Stitched Cord
+					i(277221),	-- Grimtotem Naturalist's Tunic
+				},
 			}),
 			{	-- Master of the Wild Leather
 				allianceQuestData = q(2853, {	-- Master of the Wild Leather [A]

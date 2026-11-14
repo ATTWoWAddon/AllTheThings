@@ -261,6 +261,25 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				repeatable = true,
 				lvl = 50,
 			}),
+			q(97411, {	-- An Earnest Proposition [H]
+				qg = 230317,	-- Mokvar
+				coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				cost = { { "g", 200000 } },	-- 20g
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/15 Silithus Venom Sample
+						provider = { "i", 22381 },	-- Silithus Venom Sample
+					}),
+					objective(2, {	-- 0/1 Lightforge Bracers
+						provider = { "i", 16722 },	-- Lightforge Bracers
+					}),
+					i(226985),	-- Soulforge Wristguards
+					i(226977),	-- Soulforge Bindings
+					i(226970),	-- Soulforge Bracers
+				},
+			}),
 			q(2751, {	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -577,6 +596,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
+			q(91735, {	-- Remote Contact
+				qg = 8659,	-- Jes'rimon
+				coord = { 55.6, 34.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+			}),
 			q(97326, {	-- Rocks to Rests
 				qg = 268684,	-- Thra
 				coord = { 36.0, 28.2, MAP.ORGRIMMAR },
@@ -632,6 +658,15 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = 26,
 			}),
+			q(99201, {	-- Swift as the Wind
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { TROLL },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(65604, {	-- The Binding (Incubus) [Orgrimmar]
 				sourceQuest = 65610,	-- Wish You Were Here
 				altQuests = { 65597 },	-- The Binding (Incubus) [Undercity]
@@ -681,6 +716,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 					recipe(697),	-- Summon Voidwalker
 				},
+			}),
+			q(95283, {	-- The Missing Kor'kron
+				qg = 3144,	-- Eitrigg
+				coord = { 34.2, 39.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
 			}),
 			q(2756, {	-- The Old Ways
 				qg = 7792,	-- Aturk the Anvil
@@ -776,6 +818,23 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(7981, {	-- Plans: Barbaric Iron Boots (RECIPE!)
 						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 					}),
+				},
+			}),
+			q(91548, {	-- Vek'zol
+				sourceQuest = 91547,	-- Sin'dorei Tome of Summoning
+				qg = 3326,	-- Zevrost
+				qi = 246778,	-- Sin'dorei Tome of Summoning (PQI!)
+				coord = { 48.2, 45.6, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/1 Heart of Vek'zol
+						provider = { "i", 246780 },	-- Heart of Vek'zol
+					}),
+					i(260186),	-- Darkblade
+					i(260195),	-- Headdress of the Damned
+					i(260196),	-- Belt of Shadows
 				},
 			}),
 			q(1944, {	-- Waters of Xavian

@@ -281,6 +281,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					i(279388),	-- Brewer's Bracers
 				},
 			}),
+			q(97179, {	-- Collection of Goods
+				sourceQuest = 97178,	-- Ott of Tarren Mill
+				qg = 3539,	-- Ott
+				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				cost = { { "g", 1500000 } },	-- 150g
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/5 Stratholme Holy Water
+						provider = { "i", 13180 },	-- Stratholme Holy Water
+					}),
+					objective(2, {	-- 0/10 Arthas' Tears
+						provider = { "i", 8836 },	-- Arthas' Tears
+					}),
+					objective(3, {	-- 0/40 Runecloth
+						provider = { "i", 14047 },	-- Runecloth
+					}),
+					objective(4, {	-- 0/6 Arcanite Bar
+						provider = { "i", 12360 },	-- Arcanite Bar
+					}),
+				},
+			}),
 			q(564, {	-- Costly Menace
 				qg = 2382,	-- Darren Malvew
 				coord = { 52.4, 56.0, MAP.HILLSBRAD_FOOTHILLS },

@@ -401,6 +401,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					recipe(355),	-- Taunt
 				},
 			}),
+			q(96438, {	-- Battle at the Mannoroc Coven
+				qg = 5492,	-- Katherine the Pure
+				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+			}),
 			q(1640, {	-- Beat Bartleby
 				sourceQuest = 1639,	-- Bartleby the Drunk
 				qg = 6090,	-- Bartleby
@@ -927,6 +935,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 						coord = { 36.3, 54.6, MAP.WESTFALL },
 					}),
+				},
+			}),
+			q(96476, {	-- In Search of Aeonas
+				qg = 5492,	-- Katherine the Pure
+				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_PALADINS,
+				lvl = 45,
+				groups = {
+					objective(1),	-- 0/1 Look for signs of Aeonas at the Emerald Sanctuary
+					objective(2),	-- 0/1 Follow Aeonas's trail in Felwood
 				},
 			}),
 			q(2759, {	-- In Search of Galvan
@@ -1474,6 +1494,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 79.8, 38.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 56,
+			}),
+			q(99435, {	-- The Great Masquerade
+				qg = 17804,	-- Squire Rowe
+				coord = { 70.2, 85.2, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 50,
+				groups = {
+					objective(1),	-- 0/1 Reginald's March
+					objective(2),	-- 0/1 Reginald's March
+				},
 			}),
 			q(394, {	-- The Head of the Beast
 				sourceQuest = 434,	-- The Attack!

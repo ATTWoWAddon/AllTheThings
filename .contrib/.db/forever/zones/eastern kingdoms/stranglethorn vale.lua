@@ -792,6 +792,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 				},
 			}),
+			q(96076, {	-- In Demand - Ancient Elven Curiosities
+				qg = 227853,	-- Pix Xizzix
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Felvine Seed
+						provider = { "i", 272020 },	-- Felvine Seed
+					}),
+					objective(2, {	-- 0/1 Earthstone Diamond Pinky Ring
+						provider = { "i", 272022 },	-- Earthstone Diamond Pinky Ring
+					}),
+					objective(3, {	-- 0/1 Ancient Memento
+						provider = { "i", 272021 },	-- Ancient Memento
+					}),
+					i(271994),	-- Undermine Satchel
+				},
+			}),
 			q(201, {	-- Investigate the Camp
 				qg = 773,	-- Krazek
 				coord = { 26.95, 77.21, MAP.STRANGLETHORN_VALE },
@@ -1036,6 +1054,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(277208),	-- Determined Band
 					i(277235),	-- Soldier's Visor
 					i(277223),	-- Traveled Gloves
+				},
+			}),
+			q(97405, {	-- Noise Complaints
+				qg = 8679,	-- Knaz Blunderflame
+				coord = { 51.0, 35.2, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/3 Mosh'Ogg Spellcrafter slain
+						provider = { "n", 710 },	-- Mosh'Ogg Spellcrafter
+					}),
+					objective(2, {	-- 0/3 Mosh'Ogg Warmonger slain
+						provider = { "n", 709 },	-- Mosh'Ogg Warmonger
+					}),
+					objective(3, {	-- 0/3 Mosh'Ogg Mauler slain
+						provider = { "n", 678 },	-- Mosh'Ogg Mauler
+					}),
+					objective(4, {	-- 0/3 Mosh'Ogg Shaman slain
+						provider = { "n", 679 },	-- Mosh'Ogg Shaman
+					}),
+					i(277979),	-- Mauler's Mutton
+					i(277980),	-- Ogre Bone
+					i(277981),	-- Souvenir Ogre Tooth
 				},
 			}),
 			q(79235, {	-- On the Lam
@@ -1818,6 +1860,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				altQuests = { 620 },	-- The Monogrammed Sash [Old]
 				provider = { "i", 3985 },	-- Monogrammed Sash
 				lvl = 35,
+			}),
+			q(97386, {	-- The Offense of Grom'gol
+				qg = 2464,	-- Commander Aggro'gosh
+				coord = { 32.2, 28.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/3 Mosh'Ogg Spellcrafter slain
+						provider = { "n", 710 },	-- Mosh'Ogg Spellcrafter
+					}),
+					objective(2, {	-- 0/3 Mosh'Ogg Warmonger slain
+						provider = { "n", 709 },	-- Mosh'Ogg Warmonger
+					}),
+					objective(3, {	-- 0/3 Mosh'Ogg Mauler slain
+						provider = { "n", 678 },	-- Mosh'Ogg Mauler
+					}),
+					objective(4, {	-- 0/3 Mosh'Ogg Shaman slain
+						provider = { "n", 679 },	-- Mosh'Ogg Shaman
+					}),
+					i(277979),	-- Mauler's Mutton
+					i(277980),	-- Ogre Bone
+					i(277981),	-- Souvenir Ogre Tooth
+				},
 			}),
 			q(3642, {	-- The Pledge of Secrecy
 				sourceQuests = {

@@ -222,6 +222,22 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
+			q(97378, {	-- Mirrorscale
+				qg = 3441,	-- Melor Stonehoof
+				coord = { 61.4, 80.6, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Mirrorscale's Wing
+						provider = { "i", 277972 },	-- Mirrorscale's Wing
+					}),
+					i(281275),	-- Mantle of Scaleslaying
+					i(281276),	-- Pauldrons of Scaleslaying
+					i(281277),	-- Shoulders of Scaleslaying
+					i(281278),	-- Shoulderplates of Scaleslaying
+				},
+			}),
 			q(3782, {	-- Morrowgrain Research (1/2)
 				sourceQuest = 3761,	-- Un'Goro Soil
 				qg = 5769,	-- Arch Druid Hamuul Runetotem
@@ -252,6 +268,13 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				groups = {
 					i(11887),	-- Cenarion Circle Cache
 				},
+			}),
+			q(91737, {	-- Remote Contact
+				qg = 4046,	-- Magatha Grimtotem
+				coord = { 70.2, 30.8, MAP.THUNDER_BLUFF },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
 			}),
 			q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
 				sourceQuest = 6363,	-- Tal the Wind Rider Master

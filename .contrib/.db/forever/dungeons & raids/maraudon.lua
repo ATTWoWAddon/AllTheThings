@@ -32,6 +32,18 @@ instanceroot(232, {	-- Maraudon
 	lvl = 41,
 	groups = {
 		n(QUESTS, {
+			q(96776, {	-- An'she's Radiance
+				qg = 268557,	-- Olana Brighthoof
+				coord = { 32.6, 24.0, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 43,
+				groups = {
+					objective(1, {	-- 0/1 An'she's Radiance
+						provider = { "i", 277140 },	-- An'she's Radiance
+					}),
+				},
+			}),
 			{	-- Corruption of Earth and Seed
 				allianceQuestData = q(7065, {	-- Corruption of Earth and Seed (A)
 					qg = 13698,	-- Keeper Marandis

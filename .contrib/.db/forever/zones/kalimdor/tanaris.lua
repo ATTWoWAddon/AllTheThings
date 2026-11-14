@@ -210,6 +210,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
+			q(95753, {	-- Challenge of the Desert Wolf
+				qg = 222856,	-- Odd Totem
+				coord = { 43.0, 41.2, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { SHAMAN },
+				races = ALLIANCE_SHAMANS,
+				lvl = 37,
+			}),
 			q(6610, {	-- Clamlette Surprise
 				sourceQuests = {
 					6611,	-- To Gadgetzan You Go!
@@ -315,6 +323,15 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 						},
 					}),
 					i(281282),	-- A Little Somethin'
+				},
+			}),
+			q(96912, {	-- Field of Honor: Week 1
+				qg = 267525,	-- Wizzik Dustfizz
+				coord = { 51.8, 27.0, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Win 10 duels
 				},
 			}),
 			q(351, {	-- Find OOX-17/TN!

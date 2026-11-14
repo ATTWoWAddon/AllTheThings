@@ -1528,6 +1528,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 				},
 			}),
+			q(99206, {	-- Swift as the Wind
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { HUMAN },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(94792, {	-- Taming the Beast
 				qg = 251507,	-- Josephine Carson <Hunter Trainer>
 				coord = { 41.14, 66.32, MAP.ELWYNN_FOREST },

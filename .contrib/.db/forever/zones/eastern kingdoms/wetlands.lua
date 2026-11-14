@@ -151,6 +151,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					}),
 				},
 			}),
+			q(96449, {	-- Aeonas's Secret Refuge
+				qg = 3179,	-- Harold Riggs
+				coord = { 8.0, 58.4, MAP.WETLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1),	-- 0/1 Ride the Old Dinghy
+				},
+			}),
 			q(98282, {	-- Alchemical Hazards
 				qg = 1480,	-- Caitlin Grassman
 				coord = { 11.9, 58.8, MAP.WETLANDS },

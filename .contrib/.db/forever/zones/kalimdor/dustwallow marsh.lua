@@ -107,6 +107,18 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					}),
 				},
 			}),
+			q(98231, {	-- Active Ingredient
+				qg = 270727,	-- Gizzix Grimegurgle
+				coord = { 41.0, 75.6, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/10 Wyrmtail
+						provider = { "i", 280092 },	-- Wyrmtail
+					}),
+				},
+			}),
 			q(6625, {	-- Alliance Trauma
 				qg = 5150,	-- Nissa Firestone
 				coord = { 54.8, 58.6, MAP.IRONFORGE },
@@ -175,6 +187,18 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				coord = { 68.0, 48.1, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+			}),
+			q(98215, {	-- Dragon Scales, Post Burnt Tails
+				qg = 270723,	-- Drazzit Dripvalve
+				coord = { 41.0, 75.8, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/20 Shed Dark Dragonscale
+						provider = { "i", 279934 },	-- Shed Dark Dragonscale
+					}),
+				},
 			}),
 			q(1271, {	-- Feast at the Blue Recluse
 				description = "Don't forget to loot all the food and drinks off the tables.",
@@ -585,6 +609,17 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				isBreadcrumb = true,
 				lvl = 35,
 			}),
+			q(95285, {	-- Right Place, Wrong Time
+				sourceQuest = 95284,	-- The Elite of the Elite
+				qg = 260383,	-- Sergeant Ulka
+				coord = { 70.3, 19.1, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1),	-- 0/1 Speak with Sergeant Ulka
+				},
+			}),
 			q(7541, {	-- Service to the Horde
 				sourceQuest = 1262,	-- Report to Zor
 				qg = 4047,	-- Zor Lonetree
@@ -594,6 +629,18 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				groups = {
 					i(18585),	-- Band of Allegiance
 					i(18586),	-- Lonetree's Circle
+				},
+			}),
+			q(98192, {	-- Skin Careful, Skin Sharp
+				qg = 4883,	-- Krak
+				coord = { 36.4, 30.8, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/8 Intact Raptor Hide
+						provider = { "i", 279601 },	-- Intact Raptor Hide
+					}),
 				},
 			}),
 			q(1218, {	-- Soothing Spices (Classic) / Marsh Frog Legs (TBC+)
@@ -767,6 +814,14 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
+			q(95284, {	-- The Elite of the Elite
+				sourceQuest = 95283,	-- The Missing Kor'kron
+				qg = 4791,	-- Nazeer Bloodpike
+				coord = { 35.2, 30.6, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+			}),
 			q(1955, {	-- The Exorcism
 				sourceQuest = 1954,	-- The Infernal Orb
 				qg = 6546,	-- Tabetha
@@ -913,6 +968,23 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					recipe(10846, {	-- First Aid (Artisan)
 						rank = 4,
 					}),
+				},
+			}),
+			q(98205, {	-- Whelps are the Worst!
+				qg = 270723,	-- Drazzit Dripvalve
+				coord = { 41.0, 75.8, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 39,
+				groups = {
+					objective(1, {	-- 0/8 Searing Hatchling slain
+						provider = { "n", 4323 },	-- Searing Hatchling
+					}),
+					objective(2, {	-- 0/8 Searing Whelp slain
+						provider = { "n", 4324 },	-- Searing Whelp
+					}),
+					i(281302),	-- Whelpscale Necklace
+					i(281303),	-- Bleached Scale Vest
 				},
 			}),
 		}),

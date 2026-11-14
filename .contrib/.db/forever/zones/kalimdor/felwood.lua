@@ -88,6 +88,20 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					}),
 				},
 			}),
+			q(86577, {	-- A Sampling of Putrescence
+				qg = 10920,	-- Kelek Skykeeper
+				coord = { 51.0, 81.8, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/8 Putrescent Bear Organs
+						provider = { "i", 277958 },	-- Putrescent Bear Organs
+					}),
+					objective(2, {	-- 0/10 Putrescent Wolf Organs
+						provider = { "i", 277959 },	-- Putrescent Wolf Organs
+					}),
+				},
+			}),
 			q(5202, {	-- A Strange Red Key
 				qi = 13140,	-- Blood Red Key
 				crs = {
@@ -149,6 +163,34 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 						providers = { "i", 11169 },	-- Book of Aquor
 						coord = { 70.0, 49.0, MAP.TANARIS },
 						cr = 9453,	-- Aquementas
+					}),
+				},
+			}),
+			q(86814, {	-- Blackmaw Counter-Offensive
+				sourceQuest = 87346,	-- Chieftain Bloodmaw
+				qg = 11555,	-- Gorn One Eye
+				qi = 235518,	-- Timbermaw War Banner (PQI!)
+				coord = { 65.2, 2.6, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Prince Halanox slain
+						provider = { "n", 235892 },	-- Prince Halanox
+					}),
+					i(260183),	-- Sacred Bangle
+					i(260184),	-- Cliff Walker's Cinch
+					i(260185),	-- Hippogryph Hide Boots
+				},
+			}),
+			q(87346, {	-- Chieftain Bloodmaw
+				sourceQuest = 86798,	-- Timbermaw Reinforcements
+				qg = 11555,	-- Gorn One Eye
+				coord = { 65.2, 2.6, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/1 Bloodmaw's Basher
+						provider = { "i", 236631 },	-- Bloodmaw's Basher
 					}),
 				},
 			}),
@@ -964,6 +1006,22 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					}),
 				},
 			}),
+			q(86611, {	-- Stag Lord's Bauble [A]
+				provider = { "o", 661778 },	-- Statue of Malorne
+				qi = 277973,	-- Stag Lord's Bauble (PQI!)
+				coord = { 42.0, 47.4, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 48,
+			}),
+			q(86612, {	-- Stag Lord's Bauble [H]
+				provider = { "o", 661778 },	-- Statue of Malorne
+				qi = 277973,	-- Stag Lord's Bauble (PQI!)
+				coord = { 42.0, 47.4, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+			}),
 			q(4421, {	-- The Corruption of the Jadefire
 				qg = 9116,	-- Eridan Bluewind
 				coord = { 51.4, 81.5, MAP.FELWOOD },
@@ -997,6 +1055,12 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(15706),	-- Hunt Tracker Blade
 					i(15705),	-- Tidecrest Blade
 				},
+			}),
+			q(91952, {	-- The Source of the Corruption
+				qg = 10922,	-- Greta Mosshoof
+				coord = { 51.2, 82.2, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
 			}),
 			q(8421, {	-- The Wrong Stuff
 				sourceQuests = {

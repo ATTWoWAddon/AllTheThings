@@ -87,6 +87,16 @@ instanceroot(229, {	-- Blackrock Spire
 				maps = { MAP.BLACKROCK_MOUNTAIN },
 				lvl = 55,
 			}),
+			q(98325, {	-- Blood and Thunder
+				qg = 9077,	-- Warlord Goretooth
+				coord = { 5.8, 47.4, MAP.BADLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1),	-- 0/1 Speak to Warlord Goretooth to serve the Kargath Expeditionary Force
+				},
+			}),
 			q(6602, {	-- Blood of the Black Dragon Champion
 				sourceQuest = 6601,	-- Ascension...
 				qg = 10182,	-- Rexxar <Champion of the Horde>

@@ -468,6 +468,33 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					i(12455),	-- Juju Ember
 				},
 			}),
+			q(97264, {	-- Shardtooth Pulling
+				qg = 11718,	-- Sarna Brownhorn
+				coord = { 58.2, 12.8, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/12 Elder Shardtooth slain
+						provider = { "n", 7445 },	-- Elder Shardtooth
+					}),
+				},
+			}),
+			q(92859, {	-- Shroud of the Winter Wilds
+				qg = 11188,	-- Evie Whirlbrew
+				coord = { 60.8, 37.8, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/5 Chillwind Chimaera Fur
+						provider = { "i", 281241 },	-- Chillwind Chimaera Fur
+					}),
+					objective(2, {	-- 0/5 Winterspring Owl Feather
+						provider = { "i", 281242 },	-- Winterspring Owl Feather
+					}),
+					i(281234),	-- Potion of Winterspring Shrouding
+				},
+			}),
 			q(5056, {	-- Shy-Rotam
 				sourceQuest = 5055,	-- Brumeran of the Chillwind
 				qg = 10303,	-- Storm Shadowhoof
@@ -627,6 +654,23 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				isBreadcrumb = true,
 				lvl = 53,
 			}),
+			q(97404, {	-- Too Bad to Bear
+				qg = 11718,	-- Sarna Brownhorn
+				coord = { 58.2, 12.8, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/1 Kuroma's Head
+						provider = { "i", 278097 },	-- Kuroma's Head
+					}),
+					objective(2, {	-- 0/1 Kamuro's Head
+						provider = { "i", 278098 },	-- Kamuro's Head
+					}),
+					i(281539),	-- Bear Fur Cowl
+					i(281538),	-- Matriarch's Mantle
+				},
+			}),
 			q(5086, {	-- Toxic Horrors
 				sourceQuest = 5085,	-- Mystery Goo
 				qg = 9298,	-- Donova Snowden
@@ -685,6 +729,18 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 							{ "i", 12891 },	-- Jaron's Pick
 						},
 						coord = { 52.0, 41.0, MAP.WINTERSPRING },
+					}),
+				},
+			}),
+			q(97403, {	-- Two-Headed Ravagers
+				qg = 11751,	-- Rilan Howard
+				coord = { 58.2, 12.8, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/15 Chillwind Ravager slain
+						provider = { "n", 7449 },	-- Chillwind Ravager
 					}),
 				},
 			}),

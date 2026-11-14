@@ -237,6 +237,18 @@ instanceroot(228, {	-- Blackrock Depths
 				repeatable = true,
 				lvl = 60,
 			}),
+			q(97197, {	-- Fragment of the Firelands
+				qg = 259119,	-- Alaana Stormwalker
+				coord = { 33.4, 22.4, MAP.MULGORE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 46,
+				groups = {
+					objective(1, {	-- 0/1 Fragment of the Firelands
+						provider = { "i", 277129 },	-- Fragment of the Firelands
+					}),
+				},
+			}),
 			q(4122, {	-- Grark Lorkrub
 				sourceQuests = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 				providers = {

@@ -516,6 +516,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				races = HORDE_ONLY,
 				lvl = 9,
 			}),
+			q(91734, {	-- Remote Contact
+				qg = 6522,	-- Andron Gant
+				coord = { 54.8, 75.6, MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 44,
+			}),
 			q(1959, {	-- Report to Anastasia
 				qgs = {
 					7311,	-- Uthel'nay <Mage Trainer>
@@ -529,6 +536,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				classes = { MAGE },
 				isBreadcrumb = true,
 				lvl = 15,
+			}),
+			q(97022, {	-- Report to Danitha
+				qg = 260093,	-- Garen Largo
+				coord = { 47.6, 14.8, MAP.UNDERCITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { UNDEAD },
+				classes = { PALADIN },
+				lvl = 40,
 			}),
 			q(6324, {	-- Return to Podrig
 				sourceQuest = 6322,	-- Michael Garrett

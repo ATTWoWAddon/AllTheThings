@@ -243,6 +243,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				repeatable = true,
 				lvl = 50,
 			}),
+			q(97447, {	-- An Earnest Proposition [A]
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				cost = { { "g", 200000 } },	-- 20g
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/15 Winterspring Blood Sample
+						provider = { "i", 21928 },	-- Winterspring Blood Sample
+					}),
+					objective(2, {	-- 0/1 Bindings of Elements
+						provider = { "i", 16671 },	-- Bindings of Elements
+					}),
+					i(227001),	-- Bindings of The Five Thunders
+					i(227009),	-- Bracers of The Five Thunders
+					i(227017),	-- Bands of The Five Thunders
+				},
+			}),
 			q(3450, {	-- An Easy Pickup
 				sourceQuest = 3448,	-- Passing the Burden
 				qg = 8507,	-- Tymor
@@ -738,6 +756,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 					i(7507),	-- Arcane Orb
 					i(9514),	-- Arcane Staff
+				},
+			}),
+			q(97168, {	-- Material Assistance
+				qg = 258098,	-- Eldrun Stormbreaker
+				coord = { 47.4, 13.6, MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { SHAMAN },
+				races = ALLIANCE_SHAMANS,
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/1 Azerothian Diamond
+						provider = { "i", 12800 },	-- Azerothian Diamond
+					}),
+					objective(2, {	-- 0/1 Pristine Black Diamond
+						provider = { "i", 18335 },	-- Pristine Black Diamond
+					}),
 				},
 			}),
 			q(3647, {	-- Membership Card Renewal [A]

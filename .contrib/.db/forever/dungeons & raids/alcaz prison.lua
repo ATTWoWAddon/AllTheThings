@@ -33,6 +33,48 @@ instanceroot(2994, {	-- Alcaz Prison
 					i(279825),	-- Theramore Defender's Gauntlets
 				},
 			}),
+			q(96332, {	-- A Little Payback
+				qg = 260383,	-- Sergeant Ulka
+				coord = { 70.3, 19.1, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/15 Strashaz Soldier slain
+						provider = { "n", 255995 },	-- Strashaz Soldier
+					}),
+					objective(2, {	-- 0/8 Strashaz Enchantress slain
+						provider = { "n", 255373 },	-- Strashaz Enchantress
+					}),
+					objective(3, {	-- 0/1 Ca'zass's Head
+						provider = { "i", 273883 },	-- Ca'zass's Head
+					}),
+					i(279824),	-- Kor'kron Battle Gauntlets
+					i(279826),	-- Marshdweller's Pants
+					i(279829),	-- Naga Scale Spaulders
+				},
+			}),
+			q(96369, {	-- Bad News for Folkar
+				sourceQuest = 95454,	-- The Honor of the Kor'kron
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+			}),
+			q(96334, {	-- Blood Red Bandanas
+				qg = 260383,	-- Sergeant Ulka
+				coord = { 70.3, 19.1, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1, {	-- 0/8 Blood Red Bandana
+						provider = { "i", 274028 },	-- Blood Red Bandana
+					}),
+					i(279448),	-- Bloodsplattered Bandana
+					i(279473),	-- Makeshift Belt
+				},
+			}),
 			q(96337, {	-- More Valuable Than Gold
 				sourceQuest = 96335,	-- The Man in the Iron Chains
 				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID (Wowhead has two Mason Connery NPCs, 264770 and 264845, with no quests yet). Turned in at Connery's Trunk (611086) in Westfall [43.4, 67.9].
@@ -44,6 +86,17 @@ instanceroot(2994, {	-- Alcaz Prison
 						provider = { "o", 653847 },	-- Loose Floorboard
 					}),
 					i(274041),	-- Document Box
+				},
+			}),
+			q(95309, {	-- No Orc Left Behind
+				sourceQuest = 95285,	-- Right Place, Wrong Time
+				qg = 260383,	-- Sergeant Ulka
+				coord = { 70.3, 19.1, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1),	-- 0/1 Find Commander Folkar
 				},
 			}),
 			q(95194, {	-- Our Man in Theramore
@@ -133,6 +186,16 @@ instanceroot(2994, {	-- Alcaz Prison
 					}),
 				},
 			}),
+			q(95454, {	-- The Honor of the Kor'kron
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					objective(1),	-- 0/1 Find Varian Wrynn
+					objective(2),	-- 0/1 Read the note on the ground
+				},
+			}),
 			q(96335, {	-- The Man in the Iron Chains
 				-- TODO: Given by Mason Connery at the end of the dungeon (Sammy's Contributor Report, Nov 12); find his creatureID (Wowhead has two Mason Connery NPCs, 264770 and 264845, with no quests yet).
 				description = "This quest is not offered if The Questioner is killed before it is picked up.",
@@ -160,6 +223,18 @@ instanceroot(2994, {	-- Alcaz Prison
 				coord = { 63.4, 42.4, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 48,
+			}),
+			q(95483, {	-- Thrall Needs to Know
+				sourceQuest = 96369,	-- Bad News for Folkar
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 48,
+				groups = {
+					i(279831),	-- Fatebound Buckler
+					i(279833),	-- Courier's Clasp
+					i(279474),	-- Dustwallow Dirk
+				},
 			}),
 			q(95196, {	-- Watch Yer Back
 				sourceQuest = 95194,	-- Our Man in Theramore
