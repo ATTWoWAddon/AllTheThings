@@ -1223,34 +1223,34 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				coord = { 42.3, 91.9, KRASARANG_WILDS },
 				icon = 644388,
 				questID = 31410,
-				description = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",
+				description = "On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest follow the personal loot rule and is based on your current spec, IGNORING your Loot Spec.",
 				groups = {
 					i(86122, {	-- Plankwalking Greaves
-						description = "Recommended to be in a Strength DPS Spec to guarantee this item.",
+						description = "Required to be in a Strength DPS Spec to obtain this item.",
 					}),
 					i(86115, {	-- Swashbuckling Boots
-						description = "Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",
+						description = "Required to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to obtain this item.",
 					}),
 					i(86117, {	-- Seafarer's Treads of Precision
-						description = "Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",
+						description = "Required to be in a Cloth DPS Spec (Mage/Warlock) to obtain this item.",
 					}),
 					i(86116, {	-- Agile Seafarer's Jackboots
-						description = "Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",
+						description = "Required to be in a Mail Agility Spec (Hunter/Enhancement) to obtain this item.",
 					}),
 					i(86123, {	-- Seafarer's Sturdy Boots
-						description = "Recommended to be in a Strength Tank Spec to guarantee this item.",
+						description = "Required to be in a Strength Tank Spec to obtain this item.",
 					}),
 					i(86118, {	-- Seafaring Advisor's Slippers
-						description = "Recommended to be a Priest (ingame class) to guarantee this item.",
+						description = "Required to be a Priest (ingame class) to obtain this item.",
 					}),
 					i(86119, {	-- Seafarer's Boots of Meditation
-						description = "Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",
+						description = "Required to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to obtain this item.",
 					}),
 					i(86120, {	-- Seafaring Sabatons of Meditation
-						description = "Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",
+						description = "Required to be in a Mail Intellect Spec (Elemental/Restoration) to obtain this item.",
 					}),
 					i(86121, {	-- Radiant Seafarer's Boots
-						description = "Recommended to be a Paladin in Holy Spec to guarantee this item.",
+						description = "Required to be a Paladin in Holy Spec to obtain this item.",
 					}),
 				},
 			}),
