@@ -8,6 +8,7 @@ local WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE = FUNCTION_TEMPLATES.GenerateOnUpdateRem
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(756, {	-- The Eye of Eternity
+		lore = "Deep within the Nexus of Coldarra, at a confluence of ley lines where the world's magic flows, lies the Eye of Eternity: The seat of power for Malygos the Spell-Weaver and the blue dragonflight. Driven mad by grief, the Aspect of Magic has awakened to a world he believes has abused magic recklessly, and so he has begun siphoning all latent arcane energy into the Focusing Iris within his sanctum, intent on hoarding it from the 'unworthy'. His war against the Kirin Tor has already begun, and only by breaching his domain can the Nexus War be ended before all magic is bound to his will.",
 		mapID = THE_EYE_OF_ETERNITY,
 		coord = { 27.5, 26.6, BOREAN_TUNDRA },	-- The Eye of Eternity (Coldarra)
 		-- #if AFTER WOD

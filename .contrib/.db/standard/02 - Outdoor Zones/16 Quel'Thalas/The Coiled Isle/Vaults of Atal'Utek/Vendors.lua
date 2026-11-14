@@ -16,6 +16,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 			},
 		}),
 		n(272751, {	-- Skull of Er'inye <Venomous Goods>
+			sourceQuest = 98388,	-- Into the Vaults of Atal'Utek
 			coord = { 51.2, 62.4, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 			groups = {
 				iensemble(279358, {	-- Arsenal: Venom-Cursed Arms (COSMETIC!)

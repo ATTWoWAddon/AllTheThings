@@ -11,6 +11,7 @@ end
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_TWO, {
 	inst(759, {	-- Ulduar
+		lore = "Beneath the storm-wracked mountains of the Storm Peaks lies a titan fortress whose gates were never meant to open. Ulduar is a prison built by Titans to contain Yogg-Saron, the Old God of Death, whose whispers bleed through the stone and into the dreams of Northrend. For millennia the facility held, but the prison weakens, and its keepers have fallen silent. Now champions descend into the ancient halls to confront the horror the titans could not destroy, before its influence spreads beyond the reach of any cell.",
 		mapID = ULDUAR,
 		coord = { 41.5, 17.9, THE_STORM_PEAKS },
 		timeline = { ADDED_3_1_0 },

@@ -3221,6 +3221,7 @@ MobileDB.GameObject = {
 	[523286] = true,	-- Wild Refulgent Copper
 	[523287] = true,	-- Voidbound Refulgent Copper
 	[523288] = true,	-- Umbral Tin
+	[523289] = true,	-- Rich Umbral Tin
 	[523290] = true,	-- Umbral Tin Seam
 	[523291] = true,	-- Primal Umbral Tin
 	[523293] = true,	-- Voidbound Umbral Tin

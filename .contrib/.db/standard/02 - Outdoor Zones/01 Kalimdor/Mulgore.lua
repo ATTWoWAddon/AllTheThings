@@ -1768,10 +1768,10 @@ maproot(KALIMDOR, MULGORE, {
 				-- #endif
 				coords = {
 					-- #if AFTER CATA
-                        { 42.2, 15.4, MULGORE },
-                        { 44.4, 15.0, MULGORE },
-                        { 44.8, 16.4, MULGORE },
-                        { 44.0, 17.6, MULGORE },
+					{ 42.2, 15.4, MULGORE },
+					{ 44.4, 15.0, MULGORE },
+					{ 44.8, 16.4, MULGORE },
+					{ 44.0, 17.6, MULGORE },
 					-- #else
 					{ 50.6, 15.0, MULGORE },
 					{ 39.6, 13.8, MULGORE },

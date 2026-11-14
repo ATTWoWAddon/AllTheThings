@@ -65,6 +65,7 @@ local PRIMORDIAL_SARONITE = 49908;
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR, {
 	inst(758, {	-- Icecrown Citadel
+		lore = "Perched upon the frozen glacier of Icecrown, the Icecrown Citadel rises as the Scourge's greatest fortress. A spire of saronite and ice built around the Frozen Throne itself. Deep within its fissure sits the Lich King, master of the undead, who commands his countless minions from the throne that once held the spirit of Ner'zhul. It is the last bastion of his power, and the final hurdle for those who would see the Scourge ended.",
 		mapID = ICECROWN_CITADEL,
 		coord = { 53.7, 87.0, ICECROWN },
 		timeline = { ADDED_3_3_0 },

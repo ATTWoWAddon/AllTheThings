@@ -19,7 +19,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 				},
 			}),
 			q(97669, {	-- The Luck of the Bound Spirit
-				provider = { "i", 278536 },	-- Mummified Lynx's Paw (QS!)
+				qs = 278536,	-- Mummified Lynx's Paw (QS!)
 				coords = {
 					{ 41.7, 53.6, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 					{ 52.5, 53.9, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
@@ -30,17 +30,17 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 				groups = { spell(1305107) },	-- Run of the Vaults
 			}),
 			q(97661, {	-- The Protection of the Med'jai
-				provider = { "i", 278517 },	-- Lost Med'jai Amulet (QS!)
+				qs = 278517,	-- Lost Med'jai Amulet (QS!)
 				coord = { 36.26, 23.70, 2638 },	-- Profaned Mausoleum
 				groups = { spell(1305071) },	-- Spiritual Protection
 			}),
 			q(97668, {	-- The Watchful Gaze of Szarith
-				provider = { "i", 278534 },	-- Eye of Szarith (QS!)
+				qs = 278534,	-- Eye of Szarith (QS!)
 				coord = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
 				groups = { spell(1305084) },	-- Broodmaster
 			}),
 			q(97662, {	-- The Winds of Tok'jara
-				provider = { "i", 278523 },	-- Feather of Tok'jara (QS!)
+				qs = 278523,	-- Feather of Tok'jara (QS!)
 				coord = { 48.50, 25.76, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				groups = { spell(1305075) },	-- Spectral Winds
 			}),
@@ -60,13 +60,13 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 				qg = 262880,	-- Er'inye
 				coord = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				isDaily = true,
-				groups = { i(278470) },	-- Malefic Venom (QI!)
+				qi = 278470,	-- Malefic Venom (QI!)
 			}),
 			q(96640, {	-- Bounty of the Cursed
 				qg = 262880,	-- Er'inye
 				coord = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 				isDaily = true,
-				groups = { i(275060) },	-- Forgotten Relic (QI!)
+				qi = 275060,	-- Forgotten Relic (QI!)
 			}),
 		}),
 		q(98388, {	-- Into the Vaults of Atal'Utek
@@ -147,9 +147,9 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 				q(95952, {	-- Temple Patrol: Breath and Bile
 					qg = 263472,	-- Er'inye
 					coord = { 44.4, 53.1, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
-					groups = {
-						i(271864),	-- Rotten Pneuma (QI!)
-						i(271863),	-- Ophidian Bile (QI!)
+					qis = {
+						271864,	-- Rotten Pneuma (QI!)
+						271863,	-- Ophidian Bile (QI!)
 					},
 				}),
 				q(95573, {	-- Temple Patrol: Broken Bonds

@@ -1427,6 +1427,7 @@ local DEATHS_BARGAINING_CHIP = 206576;
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 inst(754, {	-- Naxxramas
+	lore = "Naxxramas looms above the Dragonblight. A necropolis of black stone and frozen plague, torn from the earth and bound to the will of the Scourge. Within its halls, Kel'Thuzad commands the undead host, weaving plague and death from the citadel's frozen heart. It is a fortress of despair, its shadow falling upon Wintergarde Keep and its corridors echoing with the whispers of the damned, and with the cold promise of what awaits those who dare breach its gates.",
 	-- #if AFTER 10.1.5
 	description = "Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",
 	-- #endif

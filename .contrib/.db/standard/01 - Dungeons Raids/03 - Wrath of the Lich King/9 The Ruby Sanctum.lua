@@ -4,6 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, {
 	inst(761, {	-- The Ruby Sanctum
+		lore = "Beneath Wyrmrest Temple, the Ruby Sanctum has long stood as the red dragonflight's most sacred chamber. Home to its largest clutch of eggs and the future of the brood. But its guardians lie slain and its wards shattered: the black dragonflight has breached the sanctum, led by Halion, the Twilight Destroyer, a herald of Deathwing come to shatter the Wyrmrest Accord and crush any who stand in his master's path. The red flight's future now rests on those who descend into its halls.",
 		mapID = THE_RUBY_SANCTUM,
 		coord = { 61.2, 52.7, DRAGONBLIGHT },
 		-- #if AFTER CATA

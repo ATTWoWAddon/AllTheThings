@@ -241,6 +241,7 @@ local SARTH_25MAN_LOOT = d(SARTH_25MAN_DIFFICULTY_ID, {
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(755, {	-- The Obsidian Sanctum
+		lore = "Deep beneath Wyrmrest Temple lies the Obsidian Sanctum. A black dragonflight domain of living stone and shadow, meant as a refuge for the brood's eggs. But something else now stirs in the dark: a clutch of twilight dragon eggs, pulsing with a power never meant to be born. Sartharion the Onyx Guardian stands watch over them, and the Wyrmrest Accord seeks to see the twilight ended before it can hatch.",
 		mapID = THE_OBSIDIAN_SANCTUM,
 		coord = { 60.0, 56.7, DRAGONBLIGHT },
 		-- #if AFTER WOD

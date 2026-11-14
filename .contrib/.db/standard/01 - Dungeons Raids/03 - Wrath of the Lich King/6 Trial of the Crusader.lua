@@ -4,6 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_THREE, {
 	inst(757, {	-- Trial of the Crusader
+		lore = "In the shadow of Icecrown Citadel, the Argent Crusade has raised the Crusaders' Coliseum. A ring of consecrated stone where the Horde and Alliance are tested to forge champions for the march on the Lich King's gates.",
 		mapID = TRIAL_OF_THE_CRUSADER,
 		coord = { 75.0, 21.8, ICECROWN },	-- Trial of the Crusader (Argent Tournament Grounds)
 		timeline = { ADDED_3_2_0 },

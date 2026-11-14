@@ -51,9 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			6502,	-- Alliance Attunement Quest
 			6602,	-- Horde Attunement Quest
 		},
-		attunement = {
-			{ "i", 16309 },	-- Drakefire Amulet
-		},
+		attunement = { { "i", 16309 } },	-- Drakefire Amulet
 		-- #endif
 		mapID = ONYXIAS_LAIR,
 		coord = { 52.3, 76.2, DUSTWALLOW_MARSH },

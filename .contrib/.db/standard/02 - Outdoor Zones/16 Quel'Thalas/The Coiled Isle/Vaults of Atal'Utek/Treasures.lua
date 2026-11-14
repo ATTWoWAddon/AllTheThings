@@ -57,7 +57,13 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 		}),
 		-- Altar of Corrosion unlocks
 		o(649651, {	-- Eye of Szarith
-			coord = { 68.60, 15.66, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+			coords = {
+				-- #if AFTER 12.1.5
+				{ 67.9, 30.0, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+				-- #else
+				{ 68.6, 15.7, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
+				-- #endif
+			},
 			cost = { { "i", 280003, 1 } },	-- 1x Excising Knife
 			groups = { i(278534) },	-- Eye of Szarith (QS!/QI!)
 		}),
@@ -67,7 +73,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 			groups = { i(278523) },	-- Feather of Tok'jara (QS!/QI!)
 		}),
 		o(671508, {	-- Jin'tal's Reliquary
-			coord = { 36.6, 25.3, 2638 },	-- Profaned Mausoleum
+			coord = { 36.9, 22.8, 2638 },	-- Profaned Mausoleum
 			cost = { { "i", 280005, 1 } },	-- 1x Dispelling Charm
 			groups = { i(278517) },	-- Lost Med'jai Amulet (QS!/QI!)
 		}),

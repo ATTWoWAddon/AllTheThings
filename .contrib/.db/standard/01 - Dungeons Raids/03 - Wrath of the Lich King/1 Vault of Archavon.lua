@@ -4,6 +4,7 @@
 
 root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
 	inst(753, {	-- Vault of Archavon
+		lore = "Overlooking the frozen plains of the Great Dragonblight and the inhospitable wastes of Borean Tundra lies a region known to the denizens of Northrend as Wintergrasp. Seated atop a high plateau, Wintergrasp has remained undisturbed for ages, its icy winds howling unheard amongst the ancient titan fortifications that dot the landscape. The fortress with its domed watchtowers guards the entrance to the Vault of Archavon, which contains titan relics of untold power, protected by ancient giants. It is their task to protect the artifacts, and they are bitter about the intrusion by both sides.\n\nHowever, an abundance of elemental materials and its strategically important titan fortifications are making Wintergrasp the focus of a vicious tug-of-war between the Horde and the Alliance. And then there are the persistent rumors of an ancient titan vault beneath Wintergrasp's keep. One can only marvel at the thought of what treasures may be waiting there...",
 		mapID = VAULT_OF_ARCHAVON,
 		coord = { 50.0, 11.9, WINTERGRASP },
 		-- #if NOT ANYCLASSIC
