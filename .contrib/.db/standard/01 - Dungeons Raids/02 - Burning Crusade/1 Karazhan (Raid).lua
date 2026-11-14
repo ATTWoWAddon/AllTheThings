@@ -869,7 +869,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				lore = "Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",
 				-- #if BEFORE 7.1
-				sourceQuest = 9644,	-- Nightbane
+				attunement = { { "q", 9644 } },	-- Nightbane
 				-- #endif
 				providers = {
 					{ "o", 194092 },	-- Blackened Urn
