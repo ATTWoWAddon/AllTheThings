@@ -38,6 +38,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				coord = { 60.6, 81.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 			}),
+			fp(3203, {	-- Rog'mar, Riverglades
+				cr = 255993,	-- Grakna <Wind Rider Master>
+				coord = { 59.4, 45.0, MAP.RIVERGLADES },
+				races = HORDE_ONLY,
+			}),
 		}),
 		n(PROFESSIONS, {
 			n(260562, {	-- Melbin Powderfuse <Master Goblin Engineer>
