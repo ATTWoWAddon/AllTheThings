@@ -219,18 +219,36 @@ instanceroot(241, {	-- Zul'Farrak
 				i(9481),	-- The Minotaur
 				i(2040),	-- Troll Protector
 				i(9482),	-- Witch Doctor's Cane
+				i(274659, {	-- Bloodsand Belt
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274660, {	-- Sandarr's Shoulders
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(10082, {	-- Zerillis
 			description = "This is a Rare Creature and, as such, is not always present.",
 			groups = {
 				i(12470),	-- Sandstalker Ankleguards
+				i(274658, {	-- Dune Hacker
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		e(485, {	-- Theka the Martyr
 			creatureID = 7272,
 			groups = {
 				i(10660),	-- First Mosh'aru Tablet
+				i(274638, {	-- Sandfury Pauldrons
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274639, {	-- Sacrificial Chain Vest
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274641, {	-- Theka's Last Breath
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		e(484, {	-- Antu'sul
@@ -247,6 +265,9 @@ instanceroot(241, {	-- Zul'Farrak
 			groups = {
 				i(18082),	-- Zum'rah's Vexing Cane
 				i(18083),	-- Jumanza Grips
+				i(274642, {	-- Blood Ritual Ring
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(10081, {	-- Dustwraith
@@ -263,6 +284,12 @@ instanceroot(241, {	-- Zul'Farrak
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 				i(10661),	-- Second Mosh'aru Tablet
+				i(274651, {	-- Zealot Plate
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274653, {	-- Deep Ritual Girdle
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		e(483, {	-- Gahz'rilla
@@ -274,6 +301,9 @@ instanceroot(241, {	-- Zul'Farrak
 				i(8707),	-- Gahz'rilla's Electrified Scale
 				i(9467),	-- Gahz'rilla Fang
 				i(9469),	-- Gahz'rilla Scale Armor
+				i(274657, {	-- Hydra Leather Legs
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(7796, {	-- Nekrum Gutchewer
@@ -281,6 +311,15 @@ instanceroot(241, {	-- Zul'Farrak
 			groups = {
 				i(9471, {	-- Nekrum's Medallion
 					races = ALLIANCE_ONLY,
+				}),
+				i(274643, {	-- Gutcutter Hatchet
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274644, {	-- Undying Headdress
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274645, {	-- Desert Ziggurat Drape
+					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			},
 		}),
@@ -305,12 +344,24 @@ instanceroot(241, {	-- Zul'Farrak
 			},
 			groups = {
 				i(8548),	-- Divino-matic Rod
+				i(274646, {	-- Arch of the Covenant
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274647, {	-- Farraki Kris
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274648, {	-- The Desert Rose
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(7797, {	-- Ruuzlu
 			description = "He's linked to Chief Ukorz Sandscalp, and both are immune to CC. It's generally preferred to kill Ruuzlu first, however.",
 			groups = {
 				i(274654, {	-- Sandfury Guillotine
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274655, {	-- Peacekeeper Wand
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
 			},
