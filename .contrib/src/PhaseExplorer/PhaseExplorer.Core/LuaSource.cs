@@ -5,10 +5,27 @@ namespace PhaseExplorer.Core;
 
 internal static class LuaSource
 {
+    /// <summary>A lexical token and its character span in the source.</summary>
+    /// <param name="Text">Verbatim non-comment token spelling.</param>
+    /// <param name="Start">Inclusive zero-based character offset.</param>
+    /// <param name="End">Exclusive zero-based character offset.</param>
     internal record Token(string Text, int Start, int End);
     private static readonly HashSet<string> Keywords = ["and", "break", "do", "else", "elseif", "end", "false", "for", "function", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"];
+    /// <summary>Directive text and branch choices used to compare conditional scopes.</summary>
+    /// <param name="Text">Human-readable directive branch path.</param>
+    /// <param name="Branches">Conditional identity to selected branch ordinal.</param>
     private record Guard(string Text, IReadOnlyDictionary<int, int> Branches);
+    /// <summary>An authored phase key with its source offset and conditional guard.</summary>
+    /// <param name="Value">Authored phase key or legacy-prefixed identifier.</param>
+    /// <param name="Offset">Character offset of the key declaration.</param>
+    /// <param name="Guard">Conditional branch path guarding the key.</param>
     private record Key(string Value, int Offset, Guard Guard);
+    /// <summary>A source occurrence span with its label, guard and opening token.</summary>
+    /// <param name="start">Inclusive zero-based source character offset.</param>
+    /// <param name="end">Exclusive source character offset.</param>
+    /// <param name="label">Occurrence label displayed in the source tree.</param>
+    /// <param name="guard">Lexical directive branch path guarding this span.</param>
+    /// <param name="tokenIndex">Opening token index used to associate ownership and keys.</param>
     private sealed class Span(int start, int end, string label, Guard guard, int tokenIndex)
     {
         public int Start { get; } = start;
@@ -18,8 +35,19 @@ internal static class LuaSource
         public int TokenIndex { get; } = tokenIndex;
         public List<Key> Keys { get; } = [];
     }
+    /// <summary>Matched delimiters, parent tables and metadata ownership for a token stream.</summary>
+    /// <param name="Pairs">Opening-token to closing-token delimiter map.</param>
+    /// <param name="Parents">Opening-token to enclosing-opening-token map.</param>
+    /// <param name="Tables">Containing table index per token; -1 outside tables.</param>
+    /// <param name="Metadata">Table openers assigned to non-child metadata fields.</param>
     private sealed record Layout(Dictionary<int, int> Pairs, Dictionary<int, int> Parents, int[] Tables, Dictionary<int, string> Metadata);
 
+    /// <summary>Index source occurrences and phase bindings without executing Lua.</summary>
+    /// <remarks>Inheritance follows lexical ownership, excludes non-child metadata and rejects conflicting directive branches. Guards are preserved for inspection; this scanner does not evaluate gameplay conditions or implement the complete Lua grammar.</remarks>
+    /// <param name="file">Project-relative source path stored in returned locations.</param>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="cancellation">Token checked during scanning; cancellation propagates to the caller.</param>
+    /// <returns>Lexically located occurrences and bindings, or a format diagnostic.</returns>
     public static Detail Parse(string file, string text, CancellationToken cancellation = default)
     {
         try
@@ -29,10 +57,16 @@ internal static class LuaSource
             var layout = Delimiters(tokens, cancellation);
             var lines = new LineMap(file, text);
             var guards = Conditions(text, comments);
+            //! @brief Find the directive guard applying at a character offset.
+            //! @param offset Zero-based UTF-16 character offset in the source text.
+            //! @return Directive text and branch identities active at that source line.
             Guard At(int offset) => guards.GetValueOrDefault(lines.Line(offset)) ?? new("", new Dictionary<int, int>());
             List<Span> calls = [];
             Dictionary<int, Span> tables = [];
 
+            //! @brief Create or reuse an occurrence span for a table opener.
+            //! @param token Index of a matched table opener in the current token stream.
+            //! @return The single occurrence span associated with that table opener.
             Span Table(int token)
             {
                 if (tables.TryGetValue(token, out var existing)) return existing;
@@ -111,6 +145,9 @@ internal static class LuaSource
             }
             List<SourceNode> nodes = [];
             Stack<Span> ancestors = new();
+            //! @brief Build an occurrence identity from the file and lexical span.
+            //! @param span Source occurrence whose lexical coordinates define its unique identity.
+            //! @return A file-and-span identity that keeps repeated game IDs as distinct occurrences.
             string Identity(Span span) => $"{file}:{span.Start}:{span.End}:{span.TokenIndex}";
             foreach (var span in all)
             {
@@ -143,6 +180,10 @@ internal static class LuaSource
         catch (FormatException ex) { return new([], [ex.Message]); }
     }
 
+    /// <summary>Match lexical delimiters and track table ownership for source analysis.</summary>
+    /// <param name="tokens">Lexical tokens, with comments and whitespace already removed.</param>
+    /// <param name="cancellation">Token checked during scanning; cancellation propagates to the caller.</param>
+    /// <returns>Delimiter matches, containing tables, parents and metadata fields.</returns>
     private static Layout Delimiters(List<Token> tokens, CancellationToken cancellation)
     {
         Dictionary<int, int> pairs = [], parents = [];
@@ -181,6 +222,12 @@ internal static class LuaSource
         return new(pairs, parents, tables, metadata);
     }
 
+    /// <summary>Recognize a field assignment and locate its value token.</summary>
+    /// <param name="tokens">Lexical tokens, with comments and whitespace already removed.</param>
+    /// <param name="i">Index of the candidate bare or bracketed field name.</param>
+    /// <param name="name">Receives the field name, unquoted for bracketed string keys.</param>
+    /// <param name="value">Receives the candidate value-token index; use it only when true is returned.</param>
+    /// <returns>True when a following assignment and candidate value are present.</returns>
     private static bool TryField(List<Token> tokens, int i, out string name, out int value)
     {
         name = tokens[i].Text;
@@ -191,6 +238,12 @@ internal static class LuaSource
         return value < tokens.Count && tokens[equals].Text == "=";
     }
 
+    /// <summary>Find the end of the first argument while skipping nested delimiters.</summary>
+    /// <param name="tokens">Lexical tokens, with comments and whitespace already removed.</param>
+    /// <param name="pairs">Opening-to-closing delimiter indices for skipping nested expressions.</param>
+    /// <param name="start">First candidate token after the opening argument parenthesis.</param>
+    /// <param name="finish">Closing parenthesis index limiting the argument scan.</param>
+    /// <returns>The first top-level comma or table opener, otherwise the closing-parenthesis index.</returns>
     private static int FirstArgumentEnd(List<Token> tokens, Dictionary<int, int> pairs, int start, int finish)
     {
         for (int i = start; i < finish; i++)
@@ -201,6 +254,12 @@ internal static class LuaSource
         return finish;
     }
 
+    /// <summary>Extract an adjacent line comment for an occurrence label.</summary>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="comments">Ordered line-comment character spans returned by the lexer.</param>
+    /// <param name="offset">Zero-based UTF-16 character offset in the source text.</param>
+    /// <param name="lines">Line map used to require the comment and occurrence to share a line.</param>
+    /// <returns>A same-line comment prefixed for display, or an empty string.</returns>
     private static string CommentSuffix(string text, List<(int Start, int End)> comments, int offset, LineMap lines)
     {
         // Binary search avoids a scan over every comment for every constructor.
@@ -210,6 +269,11 @@ internal static class LuaSource
             ? "  " + text[(comments[low].Start + 2)..comments[low].End].Trim() : "";
     }
 
+    /// <summary>Check whether a table is nested in metadata before the given boundary.</summary>
+    /// <param name="table">Enclosing table-token index, or -1 when no table owns the token.</param>
+    /// <param name="boundary">Ancestor table at which to stop; -1 searches all enclosing tables.</param>
+    /// <param name="layout">Matched delimiters, table parents and non-child metadata owners.</param>
+    /// <returns>True when non-child metadata is encountered before the boundary.</returns>
     private static bool HasMetadataAncestor(int table, int boundary, Layout layout)
     {
         while (table >= 0 && table != boundary)
@@ -219,6 +283,10 @@ internal static class LuaSource
         }
         return false;
     }
+    /// <summary>Find the enclosing non-child metadata field, if present.</summary>
+    /// <param name="table">Enclosing table-token index, or -1 when no table owns the token.</param>
+    /// <param name="layout">Matched delimiters, table parents and non-child metadata owners.</param>
+    /// <returns>The nearest enclosing non-child metadata field, or null.</returns>
     private static string? MetadataAncestor(int table, Layout layout)
     {
         while (table >= 0)
@@ -228,8 +296,18 @@ internal static class LuaSource
         }
         return null;
     }
+    /// <summary>Reject phase scope and child branches that choose conflicting conditional alternatives.</summary>
+    /// <param name="scope">Guard attached to the potential ancestor phase binding.</param>
+    /// <param name="child">Guard attached to the descendant source occurrence.</param>
+    /// <returns>False only when both guards choose different branches of the same conditional.</returns>
     private static bool Compatible(Guard scope, Guard child) => !scope.Branches.Any(b => child.Branches.TryGetValue(b.Key, out int branch) && branch != b.Value);
 
+    /// <summary>Locate typed constructor and metadata references to a symbol in Lua source.</summary>
+    /// <param name="file">Project-relative source path stored in returned locations.</param>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="symbol">Exact code token or decoded string value to classify as a reference.</param>
+    /// <param name="cancellation">Token checked during scanning; cancellation propagates to the caller.</param>
+    /// <returns>Classified code references, retaining record ID namespaces and source spans.</returns>
     public static IReadOnlyList<Relation> References(string file, string text, string symbol, CancellationToken cancellation = default)
     {
         List<Relation> result = [];
@@ -287,9 +365,22 @@ internal static class LuaSource
         return result;
     }
 
+    /// <summary>Recognize provider and cost metadata fields.</summary>
+    /// <param name="field">Field name to classify as provider or cost metadata.</param>
+    /// <returns>True for provider/providers/cost/costs.</returns>
     private static bool IsReferenceField(string field) => field is "provider" or "providers" or "cost" or "costs";
+    /// <summary>Recognize a Lua identifier excluding reserved words.</summary>
+    /// <param name="text">Candidate token text, checked against Lua identifier syntax and keywords.</param>
+    /// <returns>True for a non-keyword identifier accepted by the lexical scanner.</returns>
     private static bool IsIdentifier(string text) => text.Length > 0 && (char.IsLetter(text[0]) || text[0] == '_') && text.All(c => char.IsLetterOrDigit(c) || c == '_') && !Keywords.Contains(text);
+    /// <summary>Recognize supported quoted or long-bracket string tokens.</summary>
+    /// <param name="token">Candidate token text checked for quoted or long-bracket string syntax.</param>
+    /// <returns>True for supported quoted or long-bracket token spelling.</returns>
     private static bool IsString(string token) => token.Length >= 2 && (token[0] is '\'' or '"' || LongOpen(token, 0, out _, out _));
+    /// <summary>Extract string content from a supported Lua string token.</summary>
+    /// <remarks>This lexical helper decodes n/r/t escapes and escaped characters; it does not execute Lua or implement its complete escape grammar.</remarks>
+    /// <param name="token">Quoted or long-bracket string token from the lexer.</param>
+    /// <returns>String contents with long-bracket leading newlines removed and basic escapes decoded.</returns>
     private static string Unquote(string token)
     {
         if (LongOpen(token, 0, out int header, out string ending)) return token[header..^ending.Length].TrimStart('\r', '\n');
@@ -303,6 +394,11 @@ internal static class LuaSource
         return result.ToString();
     }
 
+    /// <summary>Tokenize Lua source while skipping comments and preserving character offsets.</summary>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="lineComments">Optional accumulator for line comments; long comments are skipped.</param>
+    /// <param name="cancellation">Token checked during scanning; cancellation propagates to the caller.</param>
+    /// <returns>Non-comment tokens with original start/end character offsets.</returns>
     internal static List<Token> Lex(string text, List<(int Start, int End)>? lineComments = null, CancellationToken cancellation = default)
     {
         List<Token> result = [];
@@ -352,6 +448,12 @@ internal static class LuaSource
         return result;
     }
 
+    /// <summary>Recognize a Lua long-bracket opener and its matching terminator.</summary>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="at">Character index at which a long-bracket opener may begin.</param>
+    /// <param name="width">Receives opener length, or zero when no opener is present.</param>
+    /// <param name="ending">Receives the matching long-bracket terminator, or an empty string.</param>
+    /// <returns>True when a long-bracket opener and matching terminator spelling are recognized.</returns>
     private static bool LongOpen(string text, int at, out int width, out string ending)
     {
         width = 0; ending = "";
@@ -362,6 +464,10 @@ internal static class LuaSource
         return true;
     }
 
+    /// <summary>Track conditional directive branches for each source line.</summary>
+    /// <param name="text">Source text whose character offsets are retained.</param>
+    /// <param name="comments">Ordered line-comment character spans returned by the lexer.</param>
+    /// <returns>One-based source lines mapped to their active directive branch identities.</returns>
     private static Dictionary<int, Guard> Conditions(string text, List<(int Start, int End)> comments)
     {
         Dictionary<int, Guard> result = [];
@@ -395,12 +501,23 @@ internal sealed class LineMap
 {
     private readonly string file;
     private readonly List<int> starts = [0];
+    /// <summary>Build line-start offsets for a source file.</summary>
+    /// <param name="file">Project-relative source path stored in returned locations.</param>
+    /// <param name="text">Source text whose character offsets are retained.</param>
     public LineMap(string file, string text)
     {
         this.file = file;
         for (int i = 0; i < text.Length; i++) if (text[i] == '\n') starts.Add(i + 1);
     }
+    /// <summary>Convert a character offset to its one-based line.</summary>
+    /// <param name="offset">Zero-based UTF-16 character offset in the source text.</param>
+    /// <returns>One-based line number containing the offset.</returns>
     public int Line(int offset) { int i = starts.BinarySearch(offset); return i >= 0 ? i + 1 : ~i; }
+    /// <summary>Construct a location using the source character offset and optional JSON pointer.</summary>
+    /// <param name="offset">Zero-based UTF-16 character offset in the source text.</param>
+    /// <param name="length">Length of the source selection in UTF-16 characters.</param>
+    /// <param name="pointer">Escaped JSON pointer identifying the exact value, or null for Lua.</param>
+    /// <returns>One-based line/column plus the original character span and optional pointer.</returns>
     public SourceLocation Location(int offset, int length, string? pointer = null)
     {
         int line = Line(offset);

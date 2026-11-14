@@ -2,11 +2,25 @@ using System.Text.Json;
 
 namespace PhaseExplorer.Core;
 
+/// <summary>A navigable relationship with an optional condition and record domain.</summary>
+/// <param name="Kind">Reference or navigation classification.</param>
+/// <param name="Label">Displayed symbol or relation description.</param>
+/// <param name="Location">Exact navigation target.</param>
+/// <param name="Condition">Optional lexical guard text.</param>
+/// <param name="Domain">Optional ID namespace, keeping equal numbers in different domains separate.</param>
 public record Relation(string Kind, string Label, SourceLocation Location, string Condition = "", string? Domain = null);
+/// <summary>A migration stage, its source location and displayed authority.</summary>
+/// <param name="Stage">Declared migration stage or P1 header fallback.</param>
+/// <param name="Location">Location of the stage declaration.</param>
+/// <param name="Authority">Displayed legacy/policy authority derived from that stage.</param>
 public record SourceContext(string Stage, SourceLocation Location, string Authority);
 
 public static class Relations
 {
+    /// <summary>Find applicable migration cohorts or the nearest default stage, falling back to a P1 source header.</summary>
+    /// <param name="index">Read-only index containing the inspected sources and control files.</param>
+    /// <param name="source">Indexed relative source path whose migration or selection controls are inspected.</param>
+    /// <returns>Matching cohorts, the nearest default, a P1 header fallback, or an empty list.</returns>
     public static IReadOnlyList<SourceContext> Contexts(ProjectIndex index, string source)
     {
         string? directory = Path.GetDirectoryName(source);
@@ -56,6 +70,12 @@ public static class Relations
             ? [new("P1", new(source, 1, 1, 0, first.Length), "legacy (source header)")] : [];
     }
 
+    /// <summary>Compare a control-relative source path with the indexed source using platform path case rules.</summary>
+    /// <param name="index">Read-only index containing the inspected sources and control files.</param>
+    /// <param name="directory">Project-relative directory containing the migration control.</param>
+    /// <param name="relative">Source path declared relative to that control directory.</param>
+    /// <param name="source">Indexed relative source path whose migration or selection controls are inspected.</param>
+    /// <returns>Whether both paths identify the same file under platform case rules.</returns>
     private static bool SameSource(ProjectIndex index, string directory, string relative, string source)
     {
         var comparison = OperatingSystem.IsWindows() ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
@@ -63,6 +83,13 @@ public static class Relations
             Path.GetFullPath(Path.Combine(index.Root, source)), comparison);
     }
 
+    /// <summary>Locate a migration stage and label its authority for the displayed context.</summary>
+    /// <remarks>The label describes the authored stage contract; it does not run a legacy or policy comparison.</remarks>
+    /// <param name="index">Read-only index containing the inspected sources and control files.</param>
+    /// <param name="control">Indexed migration JSON file containing the stage declaration.</param>
+    /// <param name="stage">Authored P1-P4 stage label used to describe authority.</param>
+    /// <param name="pointer">Non-null escaped JSON pointer locating the stage declaration in the migration control.</param>
+    /// <returns>Located stage plus its displayed legacy/policy authority label.</returns>
     private static SourceContext Context(ProjectIndex index, string control, string stage, string pointer)
     {
         var location = index.GetDetail(control).Nodes.First(n => n.Location.Pointer == pointer).Location;
@@ -77,6 +104,10 @@ public static class Relations
         return new(stage, location, authority);
     }
 
+    /// <summary>Describe each context selection in the source directory, including absent and alternate selections.</summary>
+    /// <param name="index">Read-only index containing the inspected sources and control files.</param>
+    /// <param name="source">Indexed relative source path whose migration or selection controls are inspected.</param>
+    /// <returns>Located selections including selected, absent and alternate sources.</returns>
     public static IReadOnlyList<Relation> Selections(ProjectIndex index, string source)
     {
         List<Relation> result = []; string? directory = Path.GetDirectoryName(source);
@@ -105,6 +136,10 @@ public static class Relations
         return result;
     }
 
+    /// <summary>Resolve supported source-path and policy-alias links from a JSON scalar node.</summary>
+    /// <param name="index">Read-only index containing the inspected sources and control files.</param>
+    /// <param name="node">Selected JSON occurrence whose scalar may declare a source or alias link.</param>
+    /// <returns>Navigable indexed source targets and sameAs policy declarations.</returns>
     public static IReadOnlyList<Relation> Outgoing(ProjectIndex index, SourceNode node)
     {
         List<Relation> result = [];

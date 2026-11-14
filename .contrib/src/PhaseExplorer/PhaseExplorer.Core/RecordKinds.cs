@@ -6,6 +6,7 @@ namespace PhaseExplorer.Core;
 public static class RecordKinds
 {
     private static readonly Dictionary<string, (string Domain, string Kind)> Constructors = new(StringComparer.Ordinal);
+    /// <summary>Register the supported ATT shortcut names and their occurrence domains.</summary>
     static RecordKinds()
     {
         Add("itemID", "Item occurrence", "item", "i", "ig");
@@ -47,16 +48,28 @@ public static class RecordKinds
         Add("missionID", "Mission occurrence", "mission");
         Add("pvpRankID", "PvP rank occurrence", "pvprank");
     }
+    /// <summary>Associate each shortcut name with its domain and occurrence label.</summary>
+    /// <param name="domain">ID field namespace associated with each shortcut.</param>
+    /// <param name="kind">Human-readable occurrence classification.</param>
+    /// <param name="names">ATT shortcut names registered for this same ID namespace.</param>
     private static void Add(string domain, string kind, params string[] names)
     {
         foreach (string name in names) Constructors.Add(name, (domain, kind));
     }
+    /// <summary>Look up a shortcut and return its domain and occurrence label when recognized.</summary>
+    /// <param name="name">ATT shortcut identifier to look up.</param>
+    /// <param name="domain">Receives the ID namespace, or an empty string for an unknown shortcut.</param>
+    /// <param name="kind">Receives the occurrence label, or an empty string for an unknown shortcut.</param>
+    /// <returns>True when a shortcut is registered; false leaves both outputs empty.</returns>
     public static bool TryConstructor(string name, out string domain, out string kind)
     {
         if (Constructors.TryGetValue(name, out var record)) { domain = record.Domain; kind = record.Kind; return true; }
         domain = kind = "";
         return false;
     }
+    /// <summary>Extract a typed record identity from a supported Lua or JSON display label.</summary>
+    /// <param name="label">Lua constructor, direct record or JSON scalar label produced by the source parsers.</param>
+    /// <returns>Numeric symbol and ID namespace, or null when the label is not a supported record.</returns>
     public static (string Symbol, string Domain)? Identity(string label)
     {
         int reference = label.IndexOf(": ", StringComparison.Ordinal);

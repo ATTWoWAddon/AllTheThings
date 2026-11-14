@@ -2,10 +2,23 @@ using System.Text.Json;
 
 namespace PhaseExplorer.Core;
 
+/// <summary>Resolved flavor state, window description, alias path and optional diagnostic.</summary>
+/// <param name="Flavor">Flavor whose calendar and rule were inspected.</param>
+/// <param name="State">ordinary, missing, error, unknown, disabled, scheduled, active, future or removed.</param>
+/// <param name="Description">Formatted release windows or a state explanation.</param>
+/// <param name="AliasPath">Ordered sameAs targets followed during resolution.</param>
+/// <param name="Diagnostic">Input failure detail, or null when resolution did not fail.</param>
 public record ScheduleResult(string Flavor, string State, string Description, IReadOnlyList<string> AliasPath, string? Diagnostic);
 
 public static class Schedule
 {
+    /// <summary>Resolve a flavor rule and aliases, then classify its half-open windows at an optional milestone. Retail returns ordinary; missing or invalid rules remain distinct.</summary>
+    /// <remarks>Window starts are inclusive and ends exclusive. This result describes one schedule scope; acquisition also requires every inherited scope and the route’s ordinary source conditions.</remarks>
+    /// <param name="json">Schedule-shaped JSON with calendars and grouped rule declarations.</param>
+    /// <param name="key">Policy key resolved through any sameAs aliases.</param>
+    /// <param name="flavor">Calendar and flavor rule selector; retail uses ordinary availability.</param>
+    /// <param name="milestone">Viewed milestone, or null to describe scheduled windows without evaluating a view.</param>
+    /// <returns>Schedule state, window description, followed aliases and any input diagnostic.</returns>
     public static ScheduleResult Resolve(string json, string key, string flavor, string? milestone = null)
     {
         try
@@ -63,10 +76,18 @@ public static class Schedule
         catch (Exception ex) when (ex is JsonException or InvalidOperationException or KeyNotFoundException or ArgumentException)
         { return new(flavor, "error", "", [], ex.Message); }
     }
+    /// <summary>List a flavor calendar in order, including its start boundary.</summary>
+    /// <param name="json">Schedule-shaped JSON with calendars and grouped rule declarations.</param>
+    /// <param name="flavor">Registered calendar name or alias; unlike Resolve, this helper does not special-case Retail.</param>
+    /// <returns>Milestone keys in calendar order, prefixed by the synthetic start boundary.</returns>
     public static IReadOnlyList<string> Milestones(string json, string flavor)
     {
         using var doc = JsonDocument.Parse(json); return Calendar(doc.RootElement, flavor).OrderBy(x => x.Value).Select(x => x.Key).ToList();
     }
+    /// <summary>Follow calendar aliases and map boundaries to their order; reject cycles.</summary>
+    /// <param name="root">Parsed schedule root containing calendars.</param>
+    /// <param name="flavor">Registered calendar name or alias; unlike Resolve, this helper does not special-case Retail.</param>
+    /// <returns>Calendar positions beginning with start at zero; cycles and duplicate keys throw.</returns>
     private static Dictionary<string, int> Calendar(JsonElement root, string flavor)
     {
         var calendars = root.GetProperty("calendars"); HashSet<string> visited = [];
