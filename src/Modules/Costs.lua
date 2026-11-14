@@ -116,6 +116,11 @@ local function CheckCollectible(ref, costid)
 		-- PrintDebug(costid, "Purchase via collectibleAsCost",RefSearch,FilterRequirement(ref) == 1 and "VISIBLE" or FilterRequirement(ref) == 2 and "ACCOUNT" or "FILTERED")
 		return GetRecursiveFilterRequirement(ref, ExtraFilters)
 	end
+	-- Used to make an attunement item (instance key) which the character doesn't have yet
+	local refItemID = ref.itemID
+	if refItemID and GetRawField("itemIDAsAttunement", refItemID) and GetItemCount(refItemID, true, nil, true, true) == 0 then
+		return GetRecursiveFilterRequirement(ref, ExtraFilters)
+	end
 	-- NPC/Sym are Filler checks
 	if not ref.__FillGroups then
 		local clone = CreateObject(ref, true)
