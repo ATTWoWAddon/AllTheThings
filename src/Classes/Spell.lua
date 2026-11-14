@@ -263,12 +263,14 @@ do
 			end
 
 			-- If we know a higher rank of the spell, then flag all lower ranks of the spell as collected.
+			-- Spells already cached for the character count too: pet spells are only detected while the pet is out.
+			local IsCached = app.IsCached
 			for spellName,rankedSpell in pairs(RankedSpellNames) do
 				--print("Max Rank", spellName, rankedSpell.max);
 				for i=rankedSpell.max,1,-1 do
 					local id = rankedSpell[i];
 					if id then
-						if saved[id] then
+						if saved[id] or IsCached(CACHE, id) then
 							--print(" ", i, id, true);
 							for j=i-1,1,-1 do
 								id = rankedSpell[j];
