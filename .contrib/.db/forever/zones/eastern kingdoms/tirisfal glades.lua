@@ -1750,7 +1750,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 5482,	-- Doom Weed
 				qg = 10665,	-- Junior Apothecary Holland <Royal Apothecary Society>
 				coord = { 57.5, 49.0, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = HORDE_ONLY,
 				lvl = 5,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
