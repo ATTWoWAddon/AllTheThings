@@ -1235,17 +1235,43 @@ local function BuildSourceParent(group)
 						end
 					end
 				end
-				-- Things tagged with qss should show the quest starters as a Source
+				-- Things tagged with qss should show where the quest starters are obtained as a Source
+				-- (e.g. the object a book is looted from, with the book nested inside),
+				-- or the quest starter itself when it has no known source
 				if thing.qss then
 					for _,id in ipairs(thing.qss) do
-						-- app.PrintDebug("Root Provider",type,id);
-						local pRef = SearchForObject("itemID", id, "field");
-						if pRef then
-							pRef = CreateObject(pRef, true);
-							parents[#parents + 1] = pRef
-						else
-							pRef = app.CreateItem(id);
-							parents[#parents + 1] = pRef
+						local found
+						local items = SearchForField("itemID", id)
+						if items then
+							for _,item in ipairs(items) do
+								local itemParent = item.parent
+								while itemParent do
+									local itemParentKey = itemParent.key
+									if itemParentKey and itemParent[itemParentKey] and itemParent.hash ~= groupHash
+										and (thingKeys[itemParentKey] or itemParent.npcID) then
+										local pRef = CreateObject(itemParent, true)
+										local itemRef = CreateObject(item, true)
+										-- always show the quest starter and its source, even when the starter isn't collectible
+										itemRef.OnSetVisibility = app.AlwaysShowUpdate
+										pRef._showAsSource = true
+										NestObject(pRef, itemRef, true)
+										parents[#parents + 1] = pRef
+										found = true
+										break
+									end
+									itemParent = itemParent.parent
+								end
+							end
+						end
+						if not found then
+							local pRef = SearchForObject("itemID", id, "field");
+							if pRef then
+								pRef = CreateObject(pRef, true);
+								parents[#parents + 1] = pRef
+							else
+								pRef = app.CreateItem(id);
+								parents[#parents + 1] = pRef
+							end
 						end
 					end
 				end
@@ -1302,7 +1328,7 @@ local function BuildSourceParent(group)
 		for _,parent in ipairs(parents) do
 			-- if there's nothing nested under the parent, then force it to be visible
 			-- otherwise the visibility can be driven by the nested thing
-			parent.OnSetVisibility = not parent.g and app.AlwaysShowUpdate or nil	-- TODO: filter actual unobtainable sources...
+			parent.OnSetVisibility = (not parent.g or parent._showAsSource) and app.AlwaysShowUpdate or nil	-- TODO: filter actual unobtainable sources...
 		end
 		PriorityNestObjects(sourceGroup, parents, nil, app.Modules.Filter.Filters.RecursiveCharacterRequirementsFilter, app.Modules.Filter.Filters.RecursiveGroupRequirementsFilter);
 		NestObject(group, sourceGroup, nil, 1);

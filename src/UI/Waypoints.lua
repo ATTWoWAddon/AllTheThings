@@ -105,9 +105,17 @@ local function PlotCachedCoords()
 						elseif objectID then
 							if not rootByObjectID[objectID] then
 								rootByObjectID[objectID] = group;
-								-- TODO: doing this drops the icon for some objects that reference their content to provide a
-								-- suitable .icon
-								root[#root+1] = app.CreateObject(objectID)
+								local object = app.CreateObject(objectID)
+								-- objects without an icon of their own use the icon of their content (e.g. the book they hold),
+								-- which the sourced object provides through its children; the fresh object has none
+								if not app.ObjectIcons[objectID] then
+									local source = group.objectID == objectID and group or SearchForObject("objectID", objectID, "field")
+									local icon = source and source.icon
+									if icon then
+										object.icon = icon
+									end
+								end
+								root[#root+1] = object
 							end
 						else
 							root[#root+1] = group
@@ -164,6 +172,24 @@ local function TryAddGroupWaypoints(group)
 		end
 	end
 end
+-- Quests started by an item (qss) also plot where that item is obtained:
+-- the closest coordinates on each place the item is sourced (e.g. the object a book is looted from)
+local function TryAddQuestStarterWaypoints(group)
+	local qss = group.qss;
+	if not qss then return end
+	for _,itemID in ipairs(qss) do
+		for _,o in ipairs(SearchForObject("itemID", itemID, "field", true)) do
+			local source = o;
+			while source do
+				if source.coords then
+					TryAddGroupWaypoints(source);
+					break;
+				end
+				source = source.sourceParent or source.parent;
+			end
+		end
+	end
+end
 local function AddTomTomParentCoords(group)
 	-- app.PrintDebug("WP:ParentChain")
 	local parent = group.sourceParent or group.parent;
@@ -187,6 +213,7 @@ local function AddNestedTomTomWaypoints(group, depth, rootOnly)
 		if depth == 0 or (not group.saved and not group.missingSourceQuests) then
 			-- app.PrintDebug("WP:Group",app:SearchLink(group))
 			TryAddGroupWaypoints(group);
+			TryAddQuestStarterWaypoints(group);
 		end
 		-- sub-groups coords?
 		if not rootOnly then

@@ -613,7 +613,8 @@ local SetPortraitTextureFromDisplayID = SetPortraitTextureFromCreatureDisplayID;
 local PortaitSettingsCache = setmetatable({}, {__index = app.ReturnTrue });
 local function SetPortraitIcon(self, data)
 	local icon = data.icon;
-	if PortaitSettingsCache.ALL and (not icon or PortaitSettingsCache[data.key]) then
+	-- Quests started by an item show that item's icon rather than the quest giver's portrait
+	if PortaitSettingsCache.ALL and (not icon or PortaitSettingsCache[data.key]) and not (icon and data.qss) then
 		local displayID = app.GetDisplayID(data);
 		if displayID then
 			if self.context ~= "displayID" or self.texture ~= displayID then
