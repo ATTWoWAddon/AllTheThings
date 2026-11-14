@@ -255,5 +255,12 @@ instanceroot(2970, {	-- The Drowned City
 				i(274609),	-- Serpentbane Crown
 			},
 		}),
+		n(264172, {	-- Umbra
+			description = "This is a rare spawn that is not always present.",
+			groups = {
+				i(286662),	-- Deep-Dweller's Grips
+				i(286658),	-- Umbral Scaled Belt
+			},
+		}),
 	},
 });
