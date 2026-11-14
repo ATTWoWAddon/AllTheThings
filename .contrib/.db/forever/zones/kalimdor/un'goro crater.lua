@@ -693,6 +693,19 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					}),
 				},
 			}),
+			q(87492, {	-- Uncanny Crystal
+				qg = 9619,	-- Torwa Pathfinder
+				coord = { 71.6, 76.0, MAP.UNGORO_CRATER },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 50,
+				groups = {
+					objective(1, {	-- 0/1 Damaged Blue Crystal
+						provider = { "i", 280417 },	-- Damaged Blue Crystal
+						-- TODO: Wowhead doesn't list where the crystal is yet ("not far from" Torwa).
+					}),
+				},
+			}),
 			q(4502, {	-- Volcanic Activity
 				qg = 8496,	-- Liv Rizzlefix
 				coord = { 62.4, 38.6, MAP.THE_BARRENS },
