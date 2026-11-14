@@ -144,16 +144,16 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			races = ALLIANCE_ONLY,
 			groups = { i(128687) },	-- Royal Summons (QI!)
 		}),
-		q(50318, {	-- A Timely Summons from Northrend
+		applyevent(EVENTS.TIMEWALKING_NORTHREND_DUNGEON_EVENT, q(50318, {	-- A Timely Summons from Northrend
 			provider = { "n", 111246 },	-- Archmage Timear
 			coord = { 63.8, 55.2, LEGION_DALARAN },
 			isBreadcrumb = true,
-		}),
-		q(47663, {	-- A Timely Summons from Shattrath
+		})),
+		applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, q(47663, {	-- A Timely Summons from Shattrath
 			provider = { "n", 111246 },	-- Archmage Timear
 			coord = { 63.8, 55.2, LEGION_DALARAN },
 			isBreadcrumb = true,
-		}),
+		})),
 		q(49472, {	-- A Titanic Effort
 			sourceQuest = 49474,	-- The Cursed Shard
 			timeline = {

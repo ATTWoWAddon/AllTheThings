@@ -67586,16 +67586,16 @@ o(214439,{coords={
 r(126655,{b=1,itemID=87266,lvl=10,requireSkill=185}),
 crit(20909,{achID=7284,id=13})}}),
 o(213651,{coords={
-[418]={{42.3,91.9}}},description="On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest may follow the personal loot rule and be based on your current spec, NOT your Loot Spec.",icon=644388,questID=31410,g={
-s(44273,86122,{b=1,description="Recommended to be in a Strength DPS Spec to guarantee this item.",f=7,loc=47,lvl=30}),
-s(44266,86115,{b=1,description="Recommended to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to guarantee this item.",f=5,loc=47,lvl=30}),
-s(44268,86117,{b=1,description="Recommended to be in a Cloth DPS Spec (Mage/Warlock) to guarantee this item.",f=4,loc=47,lvl=30}),
-s(44267,86116,{b=1,description="Recommended to be in a Mail Agility Spec (Hunter/Enhancement) to guarantee this item.",f=6,loc=47,lvl=30}),
-s(44274,86123,{b=1,description="Recommended to be in a Strength Tank Spec to guarantee this item.",f=7,loc=47,lvl=30}),
-s(44269,86118,{b=1,description="Recommended to be a Priest (ingame class) to guarantee this item.",f=4,loc=47,lvl=30}),
-s(44270,86119,{b=1,description="Recommended to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to guarantee this item.",f=5,loc=47,lvl=30}),
-s(44271,86120,{b=1,description="Recommended to be in a Mail Intellect Spec (Elemental/Restoration) to guarantee this item.",f=6,loc=47,lvl=30}),
-s(44272,86121,{b=1,description="Recommended to be a Paladin in Holy Spec to guarantee this item.",f=7,loc=47,lvl=30}),
+[418]={{42.3,91.9}}},description="On the bottom level of the ship. You will have to go down two sets of stairs.\nThis chest follow the personal loot rule and is based on your current spec, IGNORING your Loot Spec.",icon=644388,questID=31410,g={
+s(44273,86122,{b=1,description="Required to be in a Strength DPS Spec to obtain this item.",f=7,loc=47,lvl=30}),
+s(44266,86115,{b=1,description="Required to be in a Leather Agility Spec (Rogue/Feral/Guardian/Brewmaster/Windwalker) to obtain this item.",f=5,loc=47,lvl=30}),
+s(44268,86117,{b=1,description="Required to be in a Cloth DPS Spec (Mage/Warlock) to obtain this item.",f=4,loc=47,lvl=30}),
+s(44267,86116,{b=1,description="Required to be in a Mail Agility Spec (Hunter/Enhancement) to obtain this item.",f=6,loc=47,lvl=30}),
+s(44274,86123,{b=1,description="Required to be in a Strength Tank Spec to obtain this item.",f=7,loc=47,lvl=30}),
+s(44269,86118,{b=1,description="Required to be a Priest (ingame class) to obtain this item.",f=4,loc=47,lvl=30}),
+s(44270,86119,{b=1,description="Required to be in a Leather Intellect Spec (Mistweaver/Balance/Restoration) to obtain this item.",f=5,loc=47,lvl=30}),
+s(44271,86120,{b=1,description="Required to be in a Mail Intellect Spec (Elemental/Restoration) to obtain this item.",f=6,loc=47,lvl=30}),
+s(44272,86121,{b=1,description="Required to be a Paladin in Holy Spec to obtain this item.",f=7,loc=47,lvl=30}),
 crit(20908,{achID=7284,id=12})}}),
 o(211993,{coords={
 [418]={{52.4,87.6}}},g={
@@ -87699,9 +87699,9 @@ q(38035,{coords={
 [627]={{29.2,47.2}}},lvl=10,qgs={96644},r=2,sourceQuests={39735,44700},g={
 i(128687,{spellID=191405})}}),
 q(50318,{coords={
-[627]={{63.8,55.2}}},isBreadcrumb=1,qgs={111246}}),
+[627]={{63.8,55.2}}},e=562,isBreadcrumb=1,qgs={111246}}),
 q(47663,{coords={
-[627]={{63.8,55.2}}},isBreadcrumb=1,qgs={111246}}),
+[627]={{63.8,55.2}}},e=559,isBreadcrumb=1,qgs={111246}}),
 q(49472,{awp=70305,lvl=45,rwp=80001,sourceQuests={49474},u=2,g={
 i(154879,{b=1,lvl=45,spellID=257327,u=2})}}),
 q(49473,{awp=70305,lvl=45,repeatable=1,rwp=80001,sourceQuests={49472},u=2,g={
@@ -106833,7 +106833,7 @@ n(140398,{coords={
 [942]={{31.7,55.1}}},questID=53624})}),
 h(-55,{
 hqt(53111,{an="n:143128",coords={
-[1161]={{52.7,47.9},{55.5,62.9},{58.1,66.3},{72.4,73.3}}},description="Obtain an |cFFFfffffAnnealed Honey Amulet|r from mobs in the Mildenhall Meadery area in Stormsong Valley (|cFFFfffff69.2, 68.8|r). It has a low droprate, so be patient!\n\nTrack down Rosaline Mildenhall in Boralus, listen to her story, give her the amulet, and accept the letter she gives you.\n\nRosaline can be found in one of the following locations: (|cFFFfffff51.5, 48.0|r), (|cFFFfffff55.5, 62.5|r), (|cFFFfffff58.1, 66.3|r), or (|cFFFfffff72.4, 73.3|r). If you can't enter the building to speak to her, you can use /tar and set an 'interact with target' keybind.",qgs={143128},qis={163699},r=2,g={
+[1161]={{52.7,47.9},{55.5,62.9},{58.1,66.3},{72.4,73.3}}},cost={{"i",163699,1}},description="Obtain an |cFFFfffffAnnealed Honey Amulet|r from mobs in the Mildenhall Meadery area in Stormsong Valley (|cFFFfffff69.2, 68.8|r). It has a low droprate, so be patient!\n\nTrack down Rosaline Mildenhall in Boralus, listen to her story, give her the amulet, and accept the letter she gives you.\n\nRosaline can be found in one of the following locations: (|cFFFfffff51.5, 48.0|r), (|cFFFfffff55.5, 62.5|r), (|cFFFfffff58.1, 66.3|r), or (|cFFFfffff72.4, 73.3|r). If you can't enter the building to speak to her, you can use /tar and set an 'interact with target' keybind.",qgs={143128},r=2,g={
 i(163702,{b=1})}}),
 hqt(53200,{an="n:131793",coords={
 [942]={{68.8,65.2}}},description="Give the letter to Ancel Mildenhall in Stormsong Valley at (|cFFFfffff68.8, 65.2|r), and he will offer you |cFFFFD700Bumbles the Bee|r.",qgs={143128},qis={163702},r=2,sourceQuests={53111}}),
@@ -106841,12 +106841,10 @@ q(53347,{coords={
 [942]={{68.8,65.2}}},lvl=30,qgs={131793},races={1,3,4,7,11,22,24,25,29,30,32,34,37,52,85,86},sourceQuests={53200},g={
 i(163780,{lvl=45})}}),
 q(53371,{coords={
-[942]={{71,69.2}}},description="Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",isDaily=1,lvl=30,qgs={132647},races={1,3,4,7,11,22,24,25,29,30,32,34,37,52,85,86},sourceQuests={53347},g={
+[942]={{71,69.2}}},description="Complete this daily quest 7 times to receive the Bumbles pet in your mailbox.",isDaily=1,lvl=30,qgs={132647},qis={156825,163720},races={1,3,4,7,11,22,24,25,29,30,32,34,37,52,85,86},sourceQuests={53347},g={
 ach(13062,{r=2,g={
 crit(71359,{achID=41206,awp=110007,id=7})}}),
-p(2442,{b=1,itemID=163776,npcID=143730,spellID=280157}),
-i(163720,{spellID=280093}),
-i(156825)}})}),
+p(2442,{b=1,itemID=163776,npcID=143730,spellID=280157})}})}),
 h(-56,{
 o(293350,{coords={
 [942]={{44.44,73.53}}},questID=52429,g={
@@ -136426,7 +136424,7 @@ n(201664,{coords={
 toy(206993,{b=1})}})}),
 h(-58,{
 n(207463,{coords={
-[2025]={{52.1,81.4}}},qis={208449},sourceQuests={75986},g={
+[2025]={{52.1,81.4}}},providers={{"i",208449}},sourceQuests={75986},g={
 i(208448,{b=1,description="Timer starts right after you buy it.",f=55,spellID=419543})}}),
 n(209220,{coords={
 [2025]={{52.2,80.8}}},sourceQuests={76258,76356},g={
