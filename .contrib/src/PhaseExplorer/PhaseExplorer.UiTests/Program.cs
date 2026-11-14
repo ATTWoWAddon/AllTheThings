@@ -24,6 +24,9 @@ await session.Dispatch(async () =>
     return 0;
 }, CancellationToken.None);
 
+//! @brief Exercise search, source navigation and phase selectors against the example project.
+//! @param root Repository or temporary project directory opened by the verification.
+//! @return A task completing when example-project navigation and selector assertions pass.
 static async Task VerifyProjectControls(string root)
 {
     using var controls = await Open(root);
@@ -91,6 +94,8 @@ static async Task VerifyProjectControls(string root)
     Console.WriteLine($"PASS actual controls: current BWL route spans {expectedOriginal.Location.Line}/{expectedRework.Location.Line}, typed standalone roots and exact production provenance navigation");
 }
 
+//! @brief Exercise navigation and references in an independent temporary source tree.
+//! @return A task completing when independent-project control assertions pass.
 static async Task VerifyArbitrarySources()
 {
     string temporary = Path.Combine(Path.GetTempPath(), "phase-explorer-ui-" + Guid.NewGuid().ToString("N"));
@@ -159,6 +164,9 @@ inst(1, { progressionKey = "parent", groups = {
     finally { Directory.Delete(temporary, true); }
 }
 
+//! @brief Exercise navigation and lazy tree loading for large JSON input.
+//! @param root Repository or temporary project directory opened by the verification.
+//! @return A task completing when large-JSON navigation and lazy-control assertions pass.
 static async Task VerifyLargeJsonControls(string root)
 {
     using var controls = await Open(root);
@@ -180,6 +188,9 @@ static async Task VerifyLargeJsonControls(string root)
     Console.WriteLine($"PASS real JSON controls: {expectedNodes:N0} graph nodes; {materialized} materialized tree controls; {controls.Source.Text?.Length:N0} source characters; {watch.Elapsed.TotalSeconds:F2}s; working set {before / 1048576:N0}→{process.WorkingSet64 / 1048576:N0} MiB; peak {peak}");
 }
 
+//! @brief Open an explorer window and wait for its source index.
+//! @param root Repository or temporary project directory opened by the verification.
+//! @return A task yielding an open window after its source files have been discovered.
 static async Task<Controls> Open(string root)
 {
     var controls = new Controls(new MainWindow(root) { Width = 1280, Height = 720 });
@@ -188,6 +199,9 @@ static async Task<Controls> Open(string root)
     return controls;
 }
 
+//! @brief Count JSON nodes independently for comparison with the displayed index.
+//! @param file JSON file whose property and array-entry count is checked independently.
+//! @return Number of properties and array entries counted directly with Utf8JsonReader.
 static int CountJsonNodes(string file)
 {
     // Count properties and array values independently of the source graph parser.
@@ -205,6 +219,11 @@ static int CountJsonNodes(string file)
     return nodes;
 }
 
+//! @brief Enter a search query and wait for displayed results.
+//! @param controls Open headless explorer window and its captured controls.
+//! @param text Search query typed into the actual search control.
+//! @param verifyInput Whether to recheck that the query survives the completed search.
+//! @return A task completing when the search button has produced matching rows.
 static async Task Search(Controls controls, string text, bool verifyInput = false)
 {
     controls.Query.Focus();
@@ -217,6 +236,11 @@ static async Task Search(Controls controls, string text, bool verifyInput = fals
     if (verifyInput) Check(controls.Query.Text == text, "Search must retain the typed query");
 }
 
+//! @brief Select a matching search result and wait for its source location.
+//! @param controls Open headless explorer window and its captured controls.
+//! @param suffix Forward-slash path suffix identifying the intended result or context.
+//! @param line One-based source line identifying the exact search occurrence.
+//! @return A task completing when the exact searched occurrence is selected in the source tree.
 static async Task SelectHit(Controls controls, string suffix, int line)
 {
     object hit = controls.Results.ItemsSource!.Cast<object>().FirstOrDefault(x =>
@@ -229,6 +253,12 @@ static async Task SelectHit(Controls controls, string suffix, int line)
         node.Location.File.Replace('\\', '/').EndsWith(suffix, StringComparison.Ordinal) && node.Location.Line == line, "search result navigation", controls);
 }
 
+//! @brief Choose the requested schedule, flavor and milestone in the controls.
+//! @param controls Open headless explorer window and its captured controls.
+//! @param suffix Forward-slash path suffix identifying the intended result or context.
+//! @param flavor Flavor value selected in the actual context controls.
+//! @param milestone Milestone value selected after the flavor has updated.
+//! @return A task completing after all requested selector values are available and selected.
 static async Task ChooseSchedule(Controls controls, string suffix, string flavor, string milestone)
 {
     await Until(() => controls.Context.ItemsSource?.Cast<object>().Any(x => x.ToString()!.Replace('\\', '/').EndsWith(suffix, StringComparison.Ordinal)) == true, "context candidates", controls);
@@ -239,6 +269,10 @@ static async Task ChooseSchedule(Controls controls, string suffix, string flavor
     controls.Milestone.SelectedItem = milestone;
 }
 
+//! @brief Check that the selected occurrence’s ancestor chain is expanded.
+//! @param tree Materialized source tree whose ancestor expansion is inspected.
+//! @param selected Source occurrence whose complete parent chain must be expanded.
+//! @return Whether every materialized parent of the selected occurrence is expanded.
 static bool AncestorsExpanded(TreeView tree, SourceNode selected)
 {
     var items = TreeItems(tree.Items).Where(i => i.Tag is SourceNode).ToList();
@@ -252,6 +286,9 @@ static bool AncestorsExpanded(TreeView tree, SourceNode selected)
     return true;
 }
 
+//! @brief Enumerate materialized tree items recursively.
+//! @param roots Materialized tree item sequence to enumerate recursively.
+//! @return The already materialized rows and their descendants; lazy branches are not expanded.
 static IEnumerable<TreeViewItem> TreeItems(IEnumerable roots)
 {
     foreach (var item in roots.OfType<TreeViewItem>())
@@ -261,11 +298,32 @@ static IEnumerable<TreeViewItem> TreeItems(IEnumerable roots)
     }
 }
 
+//! @brief Read the optional location carried by a relation row.
+//! @param row Relation display row whose optional Location property is read.
+//! @return The row’s SourceLocation, or null for a non-navigable relation.
 static SourceLocation? RelationLocation(object row) => row.GetType().GetProperty("Location")?.GetValue(row) as SourceLocation;
+//! @brief Collect navigable locations from displayed relation rows.
+//! @param list List control containing the displayed relation rows.
+//! @return Navigable locations carried by the current relation items.
 static IEnumerable<SourceLocation> RelationLocations(ListBox list) => list.ItemsSource?.Cast<object>().Select(RelationLocation).OfType<SourceLocation>() ?? [];
+//! @brief Count displayed elements, treating a null sequence as empty.
+//! @param value Nullable enumerable whose elements are counted; null counts as zero.
+//! @return Number of sequence elements, or zero for null.
 static int Count(IEnumerable? value) => value?.Cast<object>().Count() ?? 0;
+//! @brief Read relation labels for assertions.
+//! @param list List control containing the displayed relation rows.
+//! @return Display strings for current relation items, or an empty list.
 static List<string> Rows(ListBox list) => list.ItemsSource?.Cast<object>().Select(x => x.ToString() ?? "").ToList() ?? [];
+//! @brief Fail the UI verification with the supplied diagnostic when an expectation is false.
+//! @param condition Expectation that must hold or a test exception is raised.
+//! @param message Failure diagnostic identifying the violated expectation.
 static void Check(bool condition, string message) { if (!condition) throw new Exception(message); }
+//! @brief Poll a UI condition and fail with control state if it does not become true.
+//! @param condition Predicate repeatedly polled while the dispatcher processes pending UI work.
+//! @param name Condition label included in the timeout diagnostic.
+//! @param controls Open headless explorer window and its captured controls.
+//! @return A task completing when the condition holds; timeout throws with current UI state.
+//! @exception TimeoutException The predicate has not become true after 60 seconds.
 static async Task Until(Func<bool> condition, string name, Controls controls)
 {
     var watch = Stopwatch.StartNew();
@@ -282,6 +340,8 @@ static async Task Until(Func<bool> condition, string name, Controls controls)
     }
 }
 
+/// <summary>Expose window controls to the headless verification harness.</summary>
+/// <param name="window">Open headless window whose private controls are exposed to assertions.</param>
 sealed class Controls(MainWindow window) : IDisposable
 {
     public MainWindow Window { get; } = window;
@@ -298,12 +358,21 @@ sealed class Controls(MainWindow window) : IDisposable
     public TextBlock Selected { get; } = Field<TextBlock>(window, "selected");
     public TextBlock SourceLabel { get; } = Field<TextBlock>(window, "sourceLabel");
     public Detail? Detail => Field<Detail?>(Window, "currentDetail");
+    /// <summary>Close the test window.</summary>
     public void Dispose() => Window.Close();
+    /// <summary>Access a named private window control for the headless test harness.</summary>
+    /// <typeparam name="T">Expected private field type.</typeparam>
+    /// <param name="value">Non-null window or object declaring the requested private instance field.</param>
+    /// <param name="name">Exact private instance field name declared by the object’s runtime type.</param>
+    /// <returns>The named private field cast to the requested type.</returns>
     private static T Field<T>(object value, string name) => (T)value.GetType().GetField(name, BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(value)!;
 }
 
 public sealed class HarnessApplication : Application
 {
+    /// <summary>Configure Avalonia for headless UI verification.</summary>
+    /// <returns>Avalonia builder configured for real Skia rendering in a headless session.</returns>
     public static AppBuilder BuildAvaloniaApp() => AppBuilder.Configure<HarnessApplication>().UseSkia().UseHeadless(new AvaloniaHeadlessPlatformOptions { UseHeadlessDrawing = false });
+    /// <summary>Install the Fluent theme in the headless application.</summary>
     public override void Initialize() => Styles.Add(new FluentTheme());
 }

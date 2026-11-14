@@ -1,5 +1,8 @@
 using PhaseExplorer.Core;
 
+//! @brief Fail the core verification with the supplied diagnostic when an expectation is false.
+//! @param condition Expectation that must hold or a test exception is raised.
+//! @param message Failure diagnostic identifying the violated expectation.
 static void Check(bool condition, string message) { if (!condition) throw new Exception(message); }
 await VerifyWrappedInstanceRoots();
 if (args.Contains("--synthetic-only", StringComparer.Ordinal)) return;
@@ -9,6 +12,9 @@ Check(index.Files.Count > 6, "Discovery must not use a fixed six-case catalog");
 string basePath = Path.Combine(".contrib", "phase-examples", "evolution");
 await VerifyNativeSourceRoots(index, basePath);
 if (args.Contains("--native-only", StringComparer.Ordinal)) return;
+//! @brief Locate a P4 Blackwing Lair fixture relative to the indexed root.
+//! @param f Filename within the P4 Blackwing Lair fixture directory.
+//! @return Project-relative path to the requested P4 Blackwing Lair file.
 string Bwl(string f) => Path.Combine(basePath, "blackwing-lair", "p4", f);
 var bwl = index.GetDetail(Bwl("sod.lua"));
 Check(bwl.Diagnostics.Count == 0, "BWL should parse");
@@ -238,6 +244,8 @@ if (args.Length > 1 && args[1] == "--benchmark")
     }
 }
 
+//! @brief Verify occurrence and inherited phase indexing for wrapped instance roots.
+//! @return A task completing when wrapped-root inheritance assertions pass.
 static async Task VerifyWrappedInstanceRoots()
 {
     string temporary = Path.Combine(Path.GetTempPath(), "phase-explorer-instance-roots-" + Guid.NewGuid().ToString("N"));
@@ -280,6 +288,10 @@ n(2784)
     finally { Directory.Delete(temporary, true); }
 }
 
+//! @brief Check that an indexed occurrence points back to the expected source text.
+//! @param index Loaded project index used by these source assertions.
+//! @param node Exact indexed occurrence whose source span is checked.
+//! @param prefix Expected source spelling at the occurrence start.
 static void CheckSourceSpan(ProjectIndex index, SourceNode node, string prefix)
 {
     string text = index.ReadFile(node.Location.File);
@@ -289,6 +301,10 @@ static void CheckSourceSpan(ProjectIndex index, SourceNode node, string prefix)
     Check(node.Location.Line == line && node.Location.Column == node.Location.Offset - lineStart + 1, "Occurrence line and column match its current exact source span");
 }
 
+//! @brief Check indexed roots and bindings against the native source alternatives.
+//! @param index Loaded project index used by these source assertions.
+//! @param evolution Project-relative evolution directory containing the stage fixtures.
+//! @return A task completing when native source-root assertions pass.
 static async Task VerifyNativeSourceRoots(ProjectIndex index, string evolution)
 {
     string manifestFile = Path.Combine(evolution, "full-source", "sources.json");
@@ -330,6 +346,9 @@ static async Task VerifyNativeSourceRoots(ProjectIndex index, string evolution)
     Console.WriteLine("PASS — all eleven canonical/P1 alternatives, typed instance roots and exact provenance navigation verified.");
 }
 
+//! @brief Verify source-stage contexts and their migration control locations.
+//! @param index Loaded project index used by these source assertions.
+//! @param evolution Project-relative evolution directory containing the stage fixtures.
 static void VerifySourceStages(ProjectIndex index, string evolution)
 {
     using var manifest = System.Text.Json.JsonDocument.Parse(index.ReadFile(Path.Combine(evolution, "full-source", "sources.json")));

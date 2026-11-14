@@ -7,6 +7,11 @@ import shutil
 from pathlib import Path
 
 
+## @brief Wrap a published macOS apphost in a Launch Services application bundle.
+# @param publish Publish directory containing the apphost and managed files.
+# @param destination Destination ending in .app, outside publish.
+# @param runtime_root Optional runtime directory for a framework-dependent build.
+# @exception ValueError A required file, apphost, destination or runtime is invalid.
 def package(publish: Path, destination: Path, runtime_root: Path | None) -> None:
     publish = publish.resolve(strict=True)
     destination = destination.resolve()
@@ -48,6 +53,7 @@ def package(publish: Path, destination: Path, runtime_root: Path | None) -> None
     print(destination)
 
 
+## @brief Read bundle paths and optional runtime root from the command line.
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("publish", type=Path, help="macOS dotnet publish output directory")

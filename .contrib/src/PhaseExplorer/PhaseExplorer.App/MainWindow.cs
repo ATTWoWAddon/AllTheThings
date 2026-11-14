@@ -46,13 +46,24 @@ public sealed class MainWindow : Window
     private bool updatingSelectors;
     private TabControl? leftTabs;
 
-    private record FileItem(string Path) { public override string ToString() => ShortPath(Path); }
+    /// <summary>Display an indexed path in the file list.</summary>
+    /// <param name="Path">Full indexed relative path retained for navigation.</param>
+    private record FileItem(string Path) { /** @brief Display a shortened file path. @return The last three components of the indexed path. */ public override string ToString() => ShortPath(Path); }
+    /// <summary>Identify the next page of a lazily populated tree branch.</summary>
+    /// <param name="Parent">Parent occurrence identity; empty for the root list.</param>
+    /// <param name="Offset">Zero-based next child index for the 250-row page.</param>
     private record MoreChildren(string Parent, int Offset);
+    /// <summary>Show the last three components of a file path.</summary>
+    /// <param name="path">Indexed relative path whose display label or source is requested.</param>
+    /// <returns>The last three path components joined with forward slashes.</returns>
     private static string ShortPath(string path)
     {
         string[] parts = path.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
         return string.Join('/', parts.TakeLast(3));
     }
+    /// <summary>Disambiguate schedule names using the shortest unique directory suffix.</summary>
+    /// <param name="path">Indexed relative path whose display label or source is requested.</param>
+    /// <returns>A filename plus a distinguishing directory suffix, or the original path.</returns>
     private string ContextLabel(string path)
     {
         var candidates = context.ItemsSource?.Cast<string>().ToList() ?? [];
@@ -65,8 +76,12 @@ public sealed class MainWindow : Window
         }
         return path;
     }
+    /// <summary>Display a source search hit with a shortened path and snippet.</summary>
+    /// <param name="Hit">Exact search hit, including source location and display snippet.</param>
     private record HitItem(SearchHit Hit)
     {
+        /// <summary>Format the source path, line and bounded snippet of a search hit.</summary>
+        /// <returns>The label shown for this file, search hit or relation row.</returns>
         public override string ToString()
         {
             string[] parts = Hit.Location.File.Split(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
@@ -75,8 +90,13 @@ public sealed class MainWindow : Window
             return $"{route} · {parts[^1]}:{Hit.Location.Line}\n{snippet}";
         }
     }
-    private record RelationItem(string Label, SourceLocation? Location = null) { public override string ToString() => Label; }
+    /// <summary>Display a relation and its optional navigation target.</summary>
+    /// <param name="Label">Text displayed in the relationship list.</param>
+    /// <param name="Location">Optional target; null rows are informational.</param>
+    private record RelationItem(string Label, SourceLocation? Location = null) { /** @brief Display the relation label. @return The informational or navigable relationship label. */ public override string ToString() => Label; }
 
+    /// <summary>Construct the explorer controls and connect navigation, selection and cancellation handlers.</summary>
+    /// <param name="root">Initial source directory; null leaves the window waiting for a folder.</param>
     public MainWindow(string? root)
     {
         Title = "ATT Phase Explorer"; Width = 1450; Height = 900; MinWidth = 900; MinHeight = 600;
@@ -131,11 +151,17 @@ public sealed class MainWindow : Window
         if (root != null) Opened += async (_, _) => await LoadRoot(root);
     }
 
+    /// <summary>Prompt for a local folder and load it when selected.</summary>
+    /// <param name="sender">Folder-picker button event sender.</param>
+    /// <param name="e">Folder-picker click event.</param>
     private async void OpenFolder(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         var picked = await StorageProvider.OpenFolderPickerAsync(new FolderPickerOpenOptions { Title = "Open source folder", AllowMultiple = false });
         if (picked.Count > 0 && picked[0].TryGetLocalPath() is string path) await LoadRoot(path);
     }
+    /// <summary>Cancel prior work and asynchronously replace the current index and views.</summary>
+    /// <param name="root">Directory to scan and install as the new read-only project index.</param>
+    /// <returns>A task completing after the replacement index and views are installed or a diagnostic is shown.</returns>
     private async Task LoadRoot(string root)
     {
         loadCancel?.Cancel(); searchCancel?.Cancel(); referenceCancel?.Cancel(); fileCancel?.Cancel(); nodeCancel?.Cancel(); loadCancel = new(); var token = loadCancel.Token;
@@ -155,6 +181,8 @@ public sealed class MainWindow : Window
         catch (OperationCanceledException) { }
         catch (Exception ex) { status.Text = "Scan failed: " + ex.Message; }
     }
+    /// <summary>Search the current index and display bounded results and read diagnostics.</summary>
+    /// <returns>A task completing after bounded search results or a failure diagnostic are displayed.</returns>
     private async Task Search()
     {
         if (index == null || string.IsNullOrWhiteSpace(query.Text)) return;
@@ -171,6 +199,10 @@ public sealed class MainWindow : Window
         catch (OperationCanceledException) { }
         catch (Exception ex) { status.Text = "Search failed: " + ex.Message; }
     }
+    /// <summary>Create a wrapped, truncated list label with its full tooltip.</summary>
+    /// <param name="text">Display label shown in a list row.</param>
+    /// <param name="tooltip">Full text available on hover, or null for no tooltip.</param>
+    /// <returns>A three-line wrapped label with an optional full tooltip.</returns>
     private static TextBlock Label(string text, string? tooltip)
     {
         var label = new TextBlock { Text = text, TextTrimming = TextTrimming.CharacterEllipsis, TextWrapping = TextWrapping.Wrap, MaxLines = 3 };
@@ -178,6 +210,9 @@ public sealed class MainWindow : Window
         return label;
     }
 
+    /// <summary>Load source detail off the UI thread and discard results superseded by a newer selection.</summary>
+    /// <param name="path">Indexed relative path whose display label or source is requested.</param>
+    /// <returns>True if the requested file is current; false for missing index, cancellation, supersession or failure.</returns>
     private async Task<bool> OpenFile(string path)
     {
         if (index == null) return false;
@@ -223,6 +258,9 @@ public sealed class MainWindow : Window
         catch (Exception ex) { status.Text = "Cannot open " + path + ": " + ex.Message; return false; }
     }
 
+    /// <summary>Create or reuse a source occurrence row and defer loading its children until expanded.</summary>
+    /// <param name="node">Exact source occurrence whose tree row is created or reused.</param>
+    /// <returns>The cached or newly created tree row for this exact occurrence.</returns>
     private TreeViewItem Materialize(SourceNode node)
     {
         if (treeItems.TryGetValue(node.Id, out var existing)) return existing;
@@ -241,6 +279,9 @@ public sealed class MainWindow : Window
         return item;
     }
 
+    /// <summary>Append one page of up to 250 child occurrences and a continuation row when needed.</summary>
+    /// <param name="parent">Parent occurrence identity; an empty string selects root rows.</param>
+    /// <param name="offset">Zero-based child-list index where the next 250-row page begins.</param>
     private void PopulateChildren(string parent, int offset = 0)
     {
         if (!children.TryGetValue(parent, out var list)) return;
@@ -255,6 +296,9 @@ public sealed class MainWindow : Window
         if (offset + 250 < list.Count) items.Add(new TreeViewItem { Header = $"Load next 250 ({list.Count - offset - 250:N0} remaining)…", Tag = new MoreChildren(parent, offset + 250) });
     }
 
+    /// <summary>Materialize and expand the ancestor chain for a source occurrence.</summary>
+    /// <param name="node">Exact occurrence whose parent chain must be visible.</param>
+    /// <returns>The requested row, attached beneath its expanded ancestor chain.</returns>
     private TreeViewItem Reveal(SourceNode node)
     {
         var item = Materialize(node);
@@ -269,6 +313,9 @@ public sealed class MainWindow : Window
         return item;
     }
 
+    /// <summary>Display and select a source location, using an excerpt for large files.</summary>
+    /// <param name="location">Location in the currently loaded file to reveal and select.</param>
+    /// <returns>The absolute character position selected in the complete source text.</returns>
     private int SelectSource(SourceLocation location)
     {
         int line = Math.Clamp(location.Line - 1, 0, lineStarts.Length - 1);
@@ -292,6 +339,8 @@ public sealed class MainWindow : Window
         return position;
     }
 
+    /// <summary>Reveal the containing occurrence and select its source after lazy tree layout completes.</summary>
+    /// <param name="location">Location in the currently loaded file to reveal and select.</param>
     private void Navigate(SourceLocation location)
     {
         int position = SelectSource(location);
@@ -316,6 +365,8 @@ public sealed class MainWindow : Window
         }, DispatcherPriority.Loaded);
     }
 
+    /// <summary>Inspect a selected occurrence and report asynchronous inspection errors.</summary>
+    /// <param name="node">Selected source occurrence; null leaves the current display unchanged.</param>
     private async void ShowNode(SourceNode? node)
     {
         try { await ShowNodeCore(node); }
@@ -327,6 +378,10 @@ public sealed class MainWindow : Window
         }
     }
 
+    /// <summary>Show phase bindings, context candidates and relationships for the current occurrence; combine inherited bindings as AND.</summary>
+    /// <remarks>Timing remains unresolved for guarded or legacy bindings. Separate source occurrences keep separate routes; the display does not decide character eligibility or merge routes by game ID.</remarks>
+    /// <param name="node">Selected source occurrence; null leaves the current display unchanged.</param>
+    /// <returns>A task completing after selected-context timing and relationship rows are refreshed.</returns>
     private async Task ShowNodeCore(SourceNode? node)
     {
         if (index == null || node == null || currentDetail == null) return;
@@ -428,6 +483,10 @@ public sealed class MainWindow : Window
         foreach (var diagnostic in index.OperationDiagnostics) relationRows.Add(new("Read diagnostic: " + diagnostic));
         referenceNodeId = node.Id; _ = FindReferences(node, bindings);
     }
+    /// <summary>Find source consumers and typed references without applying results to a superseded selection.</summary>
+    /// <param name="node">Non-null selected occurrence whose source file and ID or key determine reverse references.</param>
+    /// <param name="bindings">Authored and inherited keys used when selecting a reference-search symbol.</param>
+    /// <returns>A task completing after relevant consumers and typed references are appended, unless superseded.</returns>
     private async Task FindReferences(SourceNode node, IReadOnlyList<Binding> bindings)
     {
         referenceCancel?.Cancel(); referenceCancel = new(); var cancellation = referenceCancel.Token;
