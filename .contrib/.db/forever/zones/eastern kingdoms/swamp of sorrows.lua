@@ -590,6 +590,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				},
 			}),
 			q(93679, {	-- Visions of Another
+				sourceQuest = 93678,	-- Abridged Notes on Draenethyst
 				qg = 1776,	-- Magtoor
 				coord = { 26.0, 31.4, MAP.SWAMP_OF_SORROWS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
