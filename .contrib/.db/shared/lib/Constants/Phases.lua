@@ -1,4 +1,5 @@
 -- Create a Phase. Returns a UNIQUE ID, starting at 1.
+--- Initializes phase registries and the phase registration helper.
 (function()
 --if not NextPhaseID then
 	NextPhaseID = 1;
@@ -15,6 +16,34 @@ local defaultStateColors = {
 	"FFAAFFAA",
 	"FFAAFFAA",
 };
+--- Mutable phase metadata registered by the Parser.
+---@class ATTPhaseDefinition
+---@field text string|ATTLocalizationStringTable # Display text or localized text with an English value.
+---@field readable? string # Readable name used for phase lookup.
+---@field constant? string # Unique constant name for the phase.
+---@field phaseID? ATTPhaseID # Explicit ID, or nil to use an existing or newly allocated ID.
+---@field state? integer # Availability state used for default description colors.
+---@field color? string # Color applied to uncolored description strings.
+---@field export? boolean # Whether the phase is exported.
+---@field filepath? string # Parser source file that registered the phase.
+---@field description? table<string, string> # Localized description strings.
+---@field lore? table<string, string> # Localized lore strings.
+---@field minimumBuildVersion? integer # Minimum client build associated with the phase.
+---@field buildVersion? integer # Client build associated with the phase.
+---@field originalTimelines? ATTPatchVersion[] # Original release patch versions.
+---@field release? integer # Release time as a Unix timestamp.
+--- Classic phase helpers require localized text.
+---@class ATTClassicPhaseDefinition: ATTPhaseDefinition
+---@field text ATTLocalizationStringTable # Localized Classic phase text used to format descriptions.
+--- Season of Discovery phase data requires a minimum build.
+---@class ATTSODPhaseDefinition: ATTClassicPhaseDefinition
+---@field minimumBuildVersion integer # Minimum client build used when preparing the season phase.
+--- Compact Classic phase metadata keyed by phase ID.
+---@alias ATTClassicPhaseRecord { [2]?: string, [3]: string, [4]?: integer, [5]?: integer, [6]?: string }
+
+--- Registers a phase and returns its ID when valid.
+---@param data? ATTPhaseDefinition # Phase definition to validate and register.
+---@return ATTPhaseID|nil # Assigned phase ID, or nil for invalid input.
 createPhase = function(data)
 	if not data then
 		print("INVALID PHASE: You must pass data into the createPhase function.");
@@ -478,6 +507,9 @@ local defaultLore = {
 	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
 };
 -- #if ANYCLASSIC
+--- Registers a Classic phase with localized descriptions.
+---@param data ATTClassicPhaseDefinition # Classic phase definition with localized text.
+---@return ATTPhaseID|nil # Registered phase ID, or nil if validation fails.
 local function createClassicPhase(data)
 	local description = data.description;
 	if not description then
@@ -512,10 +544,15 @@ local function createClassicPhase(data)
 	return createPhase(data);
 end
 -- #else
+--- Returns the declared phase ID for the non-Classic branch.
+---@param data ATTClassicPhaseDefinition # Classic phase definition with localized text.
+---@return ATTPhaseID|nil # Declared phase ID, or nil if none was supplied.
 local function createClassicPhase(data)
 	return data.phaseID;
 end
 -- #endif
+--- Converts compact phase entries into Classic phase definitions.
+---@param phases table<ATTPhaseID, ATTClassicPhaseRecord> # Phase IDs mapped to compact text and build records.
 local function convertClassicPhases(phases)
 	for phaseID,phaseData in pairs(phases) do
 		local data = {
@@ -1184,6 +1221,9 @@ CurrentClassicExpansion = {
 		cn = "探索赛季",
 	},
 };
+--- Prepares a Season of Discovery definition and delegates to the active phase helper.
+---@param data ATTSODPhaseDefinition # Phase definition with a minimum build.
+---@return ATTPhaseID|nil # Phase ID, or nil after failed validation or an omitted non-Classic ID.
 local function createClassicPhaseForSOD(data)
 	-- #if NOT SEASON_OF_DISCOVERY
 	-- If for some reason the du-*ehem* "smartest individuals" at Blizzard decide to copy this bloat to other versions, you'll want to remove this if statement and then burst into raging tears. Godspeed.  - Crieve
