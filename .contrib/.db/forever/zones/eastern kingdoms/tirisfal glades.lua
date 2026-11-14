@@ -620,7 +620,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 96899,	-- Bandarion Keep
 				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -683,7 +683,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 246389,	-- Hilda the Breaker <Paladin Trainer>
 				coord = { 22.0, 47.2, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
@@ -1262,7 +1262,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 267008,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 				coord = { 22.0, 44.8, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				qi = 282065,	-- Sealed Letter (QI!)
@@ -1692,7 +1692,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 259190,	-- Ephram Barbaro <Stable Master>
 				coord = { 20.2, 46.4, MAP.TIRISFAL_GLADES },
-				races = { UNDEAD },
+				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
