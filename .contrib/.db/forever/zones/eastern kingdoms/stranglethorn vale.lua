@@ -1097,14 +1097,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(95384, {	-- Partial Mystical Notes
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Dudd Fizzlescroll in Booty Bay.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qs = 213127,	-- Partial Mystical Notes (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 32,
 				groups = {
-					objective(1, {	-- 0/1 Partial Mystical Notes
-						provider = { "i", 213127 },	-- Partial Mystical Notes
-						cr = 780,	-- Skullsplitter Mystic
-					}),
 					i(277256),	-- Dudd's Second-Favorite Wand
 				},
 			}),
@@ -2828,6 +2824,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					1564,	-- Bloodsail Warlock
 					2546,	-- Fleet Master Firallon
 				},
+			}),
+			i(213127, {	-- Partial Mystical Notes (QS!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 780,	-- Skullsplitter Mystic
 			}),
 			i(254018, {	-- Pattern: Earthen Silk Gloves (RECIPE!)
 				cr = 701,	-- Bloodscalp Mystic
