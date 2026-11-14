@@ -204,7 +204,7 @@ insert_final_newline = true
 
 # Windows PowerShell 5.1 uses the UTF-8 BOM to recognize non-ASCII text.
 # Keep this encoding consistent even when these scripts are ASCII-only.
-[/{.contrib/.tools/GameObjectCache-to-ObjectDB.ps1,.contrib/src/Parser/tests/CostMerge.Tests.ps1}]
+[/{.contrib/.tools/GameObjectCache-to-ObjectDB.ps1,.contrib/src/Parser/tests/CostMerge.Tests.ps1,.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1}]
 charset = utf-8-bom
 end_of_line = lf
 indent_style = tab

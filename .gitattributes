@@ -148,6 +148,7 @@ docs export-ignore
 # Windows PowerShell 5.1 scripts
 /.contrib/.tools/GameObjectCache-to-ObjectDB.ps1 text eol=lf
 /.contrib/src/Parser/tests/CostMerge.Tests.ps1 text eol=lf
+/.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1 text eol=lf
 # Windows harvester batch scripts
 /.contrib/Harvesters/*.bat text eol=crlf
 /.contrib/Harvesters/DBs/*.bat text eol=crlf

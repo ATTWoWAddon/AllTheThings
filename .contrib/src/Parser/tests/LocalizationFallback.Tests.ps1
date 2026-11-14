@@ -10,8 +10,8 @@ The test uses synthetic data in a temporary directory and does not run a full pa
 #>
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory = $true)]
-    [string] $ParserPath
+	[Parameter(Mandatory = $true)]
+	[string] $ParserPath
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -21,14 +21,14 @@ $compiler = Join-Path $env:WINDIR 'Microsoft.NET\Framework64\v4.0.30319\csc.exe'
 if (!(Test-Path -LiteralPath $compiler -PathType Leaf)) { throw 'The x64 .NET Framework C# compiler was not found.' }
 $fixture = Join-Path ([IO.Path]::GetTempPath()) ('ATT-LocaleFallback-' + [Guid]::NewGuid().ToString('N'))
 try {
-    [void] [IO.Directory]::CreateDirectory($fixture)
-    $parserCopy = Join-Path $fixture 'Parser.exe'
-    Copy-Item -LiteralPath $resolvedParser -Destination $parserCopy
-    Get-ChildItem -LiteralPath $parserDirectory -Filter '*.dll' -File | Copy-Item -Destination $fixture
-    $testHost = Join-Path $fixture 'LocalizationFallback.Tests.exe'
-    $parserConfig = $resolvedParser + '.config'
-    if (Test-Path -LiteralPath $parserConfig -PathType Leaf) { Copy-Item -LiteralPath $parserConfig -Destination ($testHost + '.config') }
-    $testSource = @'
+	[void] [IO.Directory]::CreateDirectory($fixture)
+	$parserCopy = Join-Path $fixture 'Parser.exe'
+	Copy-Item -LiteralPath $resolvedParser -Destination $parserCopy
+	Get-ChildItem -LiteralPath $parserDirectory -Filter '*.dll' -File | Copy-Item -Destination $fixture
+	$testHost = Join-Path $fixture 'LocalizationFallback.Tests.exe'
+	$parserConfig = $resolvedParser + '.config'
+	if (Test-Path -LiteralPath $parserConfig -PathType Leaf) { Copy-Item -LiteralPath $parserConfig -Destination ($testHost + '.config') }
+	$testSource = @'
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -189,20 +189,20 @@ internal static class LocalizationFallbackTests
     }
 }
 '@
-    $sourcePath = Join-Path $fixture 'LocalizationFallback.Tests.cs'
-    [IO.File]::WriteAllText($sourcePath, $testSource, [Text.Encoding]::UTF8)
-    & $compiler /nologo /target:exe /platform:x64 "/out:$testHost" $sourcePath
-    if ($LASTEXITCODE -ne 0) { throw "Failed to compile locale fallback test host: $LASTEXITCODE" }
-    $arguments = @(('"' + $parserCopy + '"'), ('"' + (Join-Path $fixture 'data') + '"'))
-    $process = Start-Process -FilePath $testHost -ArgumentList $arguments -WorkingDirectory $fixture -NoNewWindow -PassThru
-    try {
-        [void] $process.Handle
-        if (!$process.WaitForExit(45000)) {
-            $process.Kill()
-            throw 'Locale fallback tests exceeded the 45-second timeout.'
-        }
-        if ($process.ExitCode -ne 0) { throw "Locale fallback tests failed: $($process.ExitCode)" }
-    } finally { $process.Dispose() }
+	$sourcePath = Join-Path $fixture 'LocalizationFallback.Tests.cs'
+	[IO.File]::WriteAllText($sourcePath, $testSource, [Text.Encoding]::UTF8)
+	& $compiler /nologo /target:exe /platform:x64 "/out:$testHost" $sourcePath
+	if ($LASTEXITCODE -ne 0) { throw "Failed to compile locale fallback test host: $LASTEXITCODE" }
+	$arguments = @(('"' + $parserCopy + '"'), ('"' + (Join-Path $fixture 'data') + '"'))
+	$process = Start-Process -FilePath $testHost -ArgumentList $arguments -WorkingDirectory $fixture -NoNewWindow -PassThru
+	try {
+		[void] $process.Handle
+		if (!$process.WaitForExit(45000)) {
+			$process.Kill()
+			throw 'Locale fallback tests exceeded the 45-second timeout.'
+		}
+		if ($process.ExitCode -ne 0) { throw "Locale fallback tests failed: $($process.ExitCode)" }
+	} finally { $process.Dispose() }
 } finally {
-    if (Test-Path -LiteralPath $fixture) { Remove-Item -LiteralPath $fixture -Recurse -Force }
+	if (Test-Path -LiteralPath $fixture) { Remove-Item -LiteralPath $fixture -Recurse -Force }
 }
