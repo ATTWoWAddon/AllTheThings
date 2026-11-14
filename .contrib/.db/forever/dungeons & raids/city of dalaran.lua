@@ -5,7 +5,7 @@ instanceroot(2959, {	-- City of Dalaran
 	lore = "The City of Dalaran features us clearing out the threats that have overrun the beloved city of mages after the Magic barrier surrounding the city was cleared. Dalaran was one of the original cities in Azeroth and was ruled by the Kirin Tor, a council of wizards who housed some of the most impressive libraries and research facilities in all of Azeroth within the Dalaran walls. ",
 	icon = [[~_.asset("cityofdalaran")]],
 	zoneTextAreaID = 16544,	-- City of Dalaran
-	--coord = { , MAP.ALTERAC_MOUNTAINS },
+	coord = { 9.1, 60.0, MAP.ALTERAC_MOUNTAINS },
 	attunement = { { "i", 277507 } },	-- Dalaran Sewer Key
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	--lvl = 23,
