@@ -667,6 +667,8 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				maps = { MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				isBreadcrumb = true,
+				lockCriteria = { 1, "questID", 95647 },	-- Lost in the Thicket Things
 				lvl = 24,
 			}),
 			q(24, {		-- Shadumbra's Head
