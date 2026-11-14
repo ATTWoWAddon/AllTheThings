@@ -4,6 +4,7 @@ assert(_VERSION == "Lua 5.1", "Lua 5.1 is required")
 local input = assert(arg[1], "selected source path required")
 local output = assert(arg[2], "literal output path required")
 
+---@type table<string, any> Bounded fixture globals, including constructor callbacks.
 local environment = {
     ROOTS = { Instances = "instances" },
     EXPANSION = { CLASSIC = "classic" },
@@ -17,6 +18,10 @@ local environment = {
 }
 local captured
 for name, field in pairs({ inst = "instanceID", e = "encounterID", i = "itemID", d = "difficultyID" }) do
+    ---Attach the constructor identity to a projected source node.
+    ---@param id integer
+    ---@param data table|nil
+    ---@return table
     environment[name] = function(id, data)
         data = data or {}
         assert(data[field] == nil, "constructor identity already present")
@@ -27,8 +32,19 @@ end
 
 -- Retired production timing never enters the projection. The actual source
 -- still calls its original wrappers; only their timing behavior is suppressed.
+---Discard retired phase timing while retaining the wrapped payload.
+---@param _ any
+---@param payload any
+---@return any
 environment.applyclassicphase = function(_, payload) return payload end
+---Retain expansion-wrapped data without projecting expansion timing.
+---@param _ any
+---@param payload any
+---@return any
 environment.expansion = function(_, payload) return payload end
+---Capture the single projected fixture root.
+---@param _ any
+---@param payload table
 environment.root = function(_, payload)
     assert(captured == nil, "the bounded fixture must have exactly one root")
     captured = payload
@@ -36,8 +52,14 @@ end
 
 -- Match the used helper's array-to-groups normalization and recursive history
 -- event. These intrinsic timelines remain ordinary conditions on the routes.
+---Wrap children and propagate their intrinsic timeline event recursively.
+---@param event string
+---@param children table[]
+---@return table
 environment.bubbleDownTimelineEventSelf = function(event, children)
     local wrapper = { groups = children }
+    ---Add the timeline event once to the wrapper and each descendant.
+    ---@param node table
     local function apply(node)
         node.timeline = node.timeline or {}
         local present = false
@@ -51,6 +73,9 @@ environment.bubbleDownTimelineEventSelf = function(event, children)
     return wrapper
 end
 setmetatable(environment, {
+    ---Reject globals outside the bounded fixture environment.
+    ---@param _ table
+    ---@param key any
     __index = function(_, key) error("unsupported fixture global: " .. tostring(key)) end,
 })
 local source = assert(loadfile(input))
@@ -58,6 +83,10 @@ setfenv(source, environment)
 source()
 assert(type(captured) == "table" and #captured == 1, "expected one sampled BWL instance")
 
+---Serialize the bounded projection as a deterministic Lua literal.
+---@param value any
+---@param depth integer
+---@return string
 local function literal(value, depth)
     local kind = type(value)
     if kind == "string" then return string.format("%q", value) end
@@ -66,7 +95,12 @@ local function literal(value, depth)
     local keys = {}
     for key in pairs(value) do keys[#keys + 1] = key end
     if #keys == 0 then return "{}" end
-    table.sort(keys, function(a, b)
+    table.sort(keys,
+        ---Order unlike key types consistently before ordering their values.
+        ---@param a any
+        ---@param b any
+        ---@return boolean
+        function(a, b)
         if type(a) ~= type(b) then return type(a) < type(b) end
         return a < b
     end)

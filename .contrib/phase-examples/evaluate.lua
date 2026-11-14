@@ -1,11 +1,54 @@
 -- Comparison tooling (P4 example / Retail default): evaluate a generated phase database with a caller-supplied character eligibility check.
 -- It does not change ATT runtime settings or decide client/quest eligibility.
+---@alias PhaseExampleState "active"|"removed"|"future"|"unknown"|"disabled"
+
+---@class PhaseExampleWindow
+---@field from string Inclusive opening milestone, or start before the first milestone.
+---@field until? string Exclusive closing milestone; nil leaves the window open.
+
+---@class PhaseExamplePolicy
+---@field status? "unknown"|"disabled" Explicit non-scheduled state; requires empty windows.
+---@field windows PhaseExampleWindow[] Ordered, non-overlapping alternatives within this scope.
+
+---@class PhaseExampleNode
+---@field groups? PhaseExampleNode[] Child occurrences belonging to this acquisition route.
+---@field progressionScopes? string[] Qualified scopes; every inherited scope must pass.
+---@field [string] any Ordinary source identities and eligibility metadata are retained.
+
+---@class PhaseExampleDatabase
+---@field context string Retail or a compiled flavor:profile context.
+---@field milestones string[] Ordered milestone keys, excluding the reserved start boundary.
+---@field policies table<string, PhaseExamplePolicy> Qualified policy keys; empty for Retail.
+---@field groups PhaseExampleNode[] Root acquisition occurrences, never merged by game ID.
+
+---@class PhaseExampleScopeState
+---@field key string Qualified policy key contributing to the route.
+---@field state PhaseExampleState State at the viewed milestone.
+
+---@class PhaseExampleRoute
+---@field nodes PhaseExampleNode[] Complete root-to-match path, retaining original node references.
+---@field scopeStates PhaseExampleScopeState[] Every distinct inherited scope, including closed scopes.
+---@field schedule PhaseExampleState Most restrictive inherited scope state; active with no scopes.
+---@field conditionsPass boolean Whether the caller accepted every node on this path.
+---@field obtainable boolean Active schedule AND all ordinary conditions for this route.
+
+---@class PhaseExampleFindResult
+---@field obtainable boolean Whether any complete route is obtainable.
+---@field routes PhaseExampleRoute[] Separate matching acquisition occurrences, including closed routes.
+
+---@class PhaseExampleEvaluator
 local M = {}
 
+--- Raise a phase-example validation error at the caller.
+---@param message string Failure detail; this helper always raises.
 local function fail(message)
     error("phase example: " .. message, 3)
 end
 
+--- Validate and return a table containing consecutive positive integer keys.
+---@param value any
+---@param label string
+---@return any[] value The same validated table; element types are checked by its caller.
 local function denseArray(value, label)
     if type(value) ~= "table" then fail(label .. " must be an array") end
     local count = 0
@@ -19,6 +62,11 @@ local function denseArray(value, label)
     return value
 end
 
+--- Validate the compiled context and milestone order used for a query.
+---@param data PhaseExampleDatabase Compiled example database.
+---@param view string|nil Milestone; ignored for Retail.
+---@return table<string, integer> order
+---@return integer|nil viewed Nil for Retail.
 local function prepare(data, view)
     if type(data) ~= "table" or type(data.context) ~= "string" then
         fail("compiled module must name its context")
@@ -42,6 +90,12 @@ local function prepare(data, view)
     return order, order[view]
 end
 
+--- Evaluate a policy at a milestone using half-open, ordered windows.
+---@param policy PhaseExamplePolicy
+---@param key string
+---@param order table<string, integer>
+---@param viewed integer
+---@return PhaseExampleState state Inclusive starts and exclusive ends determine scheduled states.
 local function state(policy, key, order, viewed)
     if type(policy) ~= "table" then fail("missing policy " .. key) end
     local windows = denseArray(policy.windows, "windows for " .. key)
@@ -73,19 +127,32 @@ local function state(policy, key, order, viewed)
 end
 
 -- Pure schedule query. Availability still requires all ordinary source conditions.
+--- Return a phased scope’s schedule state, independent of ordinary eligibility.
+---@param data PhaseExampleDatabase Compiled example database.
+---@param key string Qualified policy key.
+---@param view string Milestone key.
+---@return PhaseExampleState state
 function M.scopeState(data, key, view)
     local order, viewed = prepare(data, view)
     if not viewed then fail("Retail has no scheduled scopes") end
+    -- The preceding validation rejects Retail and missing views.
+    ---@cast viewed integer
     return state(data.policies[key], key, order, viewed)
 end
 
 local priority = { active = 0, removed = 1, future = 2, unknown = 3, disabled = 4 }
 
 -- Return complete matching acquisition routes, including closed routes for inspection.
--- condition(node, ancestors) MUST independently decide that node's ordinary
+-- condition(node, ancestors, index) MUST independently decide that node's ordinary
 -- requirements, including client/timeline, u, level, quests, faction and costs.
 -- It is called for every ancestor and the matching node, even on a closed route.
 -- Inspecting a returned route never changes its obtainable flag.
+--- Find matching paths and combine every inherited scope and ordinary condition.
+---@param data PhaseExampleDatabase Compiled example database.
+---@param query table<string, any>|fun(node: PhaseExampleNode, path: PhaseExampleNode[]): boolean Nonempty field match or predicate.
+---@param view string|nil Milestone, or nil for Retail.
+---@param condition fun(node: PhaseExampleNode, path: PhaseExampleNode[], index: integer): boolean Check each path node’s ordinary eligibility; called even for closed routes.
+---@return PhaseExampleFindResult result AND within each route; OR across complete routes.
 function M.find(data, query, view, condition)
     if type(condition) ~= "function" then fail("an ordinary-condition predicate is required") end
     local matches
@@ -93,6 +160,9 @@ function M.find(data, query, view, condition)
         matches = query
     elseif type(query) == "table" then
         if not next(query) then fail("query must identify a source") end
+        --- Match every field supplied by the table query.
+        ---@param node PhaseExampleNode Current source occurrence compared with the table query.
+        ---@return boolean
         matches = function(node)
             for key, value in pairs(query) do
                 if node[key] ~= value then return false end
@@ -105,6 +175,8 @@ function M.find(data, query, view, condition)
     local order, viewed = prepare(data, view)
     local result = { obtainable = false, routes = {} }
     local path, ancestry = {}, {}
+    --- Traverse acquisition paths while detecting cycles on the active ancestry.
+    ---@param nodes PhaseExampleNode[] Child occurrences on the active ancestry path.
     local function visit(nodes)
         denseArray(nodes, "node groups")
         for _, node in ipairs(nodes) do
@@ -127,6 +199,8 @@ function M.find(data, query, view, condition)
                     if not passed then route.conditionsPass = false end
                     if ancestor.progressionScopes then
                         if not viewed then fail("Retail node contains progression scopes") end
+                        -- A scheduled scope requires a validated phased view.
+                        ---@cast viewed integer
                         for _, key in ipairs(denseArray(ancestor.progressionScopes, "progressionScopes")) do
                             if type(key) ~= "string" or key == "" then fail("invalid progression scope") end
                             if not seenScopes[key] then

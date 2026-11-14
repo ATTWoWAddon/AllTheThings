@@ -7,10 +7,14 @@ end
 local here = arg[0]:match("^(.*[/\\])") or "./"
 local evaluate = dofile(here .. "evaluate.lua")
 local data = dofile(arg[1])
+---@type string|nil Milestone key; the CLI dash selects ordinary Retail evaluation.
 local view = arg[2]
 if view == "-" then view = nil end
 
-local result = evaluate.find(data, { itemID = tonumber(arg[3]) }, view, function()
+local result = evaluate.find(data, { itemID = tonumber(arg[3]) }, view,
+    --- Treat ordinary eligibility as satisfied so this display isolates schedule state.
+    ---@return boolean eligible Always true for this schedule-only display.
+    function()
     return true -- Compare scheduling with all ordinary requirements satisfied.
 end)
 print(("Context %s | view %s | item %s"):format(data.context, view or "ordinary default", arg[3]))
