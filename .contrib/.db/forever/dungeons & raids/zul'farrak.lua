@@ -296,7 +296,7 @@ instanceroot(241, {	-- Zul'Farrak
 			creatureID = 7273,
 			description = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
 			provider = { "o", 141832 },	-- Gong of Zul'Farrak
-			cost = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
+			attunement = { { "i", 9240 } },	-- Mallet of Zul'Farrak
 			groups = {
 				i(8707),	-- Gahz'rilla's Electrified Scale
 				i(9467),	-- Gahz'rilla Fang

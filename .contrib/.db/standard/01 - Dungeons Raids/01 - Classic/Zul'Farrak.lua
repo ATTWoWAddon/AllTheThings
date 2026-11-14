@@ -445,7 +445,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if BEFORE 3.0.8
 				description = "Someone in your party must have the Mallet of Zul'Farrak to summon this boss!\n\nIf you have it, simply bang the Gong of Zul'Farrak. (after first confirming with your party...)",
 				provider = { "o", 141832 },	-- Gong of Zul'Farrak
-				cost = { { "i", 9240, 1 } },	-- Mallet of Zul'Farrak
+				attunement = { { "i", 9240 } },	-- Mallet of Zul'Farrak
 				-- #endif
 				groups = {
 					i(204406, {	-- Ancient Design: Square Holders (RECIPE!)
