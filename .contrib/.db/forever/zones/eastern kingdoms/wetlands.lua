@@ -356,6 +356,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,
+				lockCriteria = { 1, "questID", 98245 },	-- Razormaw Needling
 				lvl = 19,
 				qi = 280099,	-- Crimson Crate (QI!)
 			}),
