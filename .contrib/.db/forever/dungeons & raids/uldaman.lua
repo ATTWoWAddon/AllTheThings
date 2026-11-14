@@ -503,6 +503,9 @@ instanceroot(239, {	-- Uldaman
 						i(9408),	-- Ironshod Bludgeon
 						i(9409),	-- Ironaya's Bracers
 						i(9407),	-- Stoneweaver Leggings
+						i(274484, {	-- Axe of Inevitable Ruin
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 			},
@@ -511,6 +514,18 @@ instanceroot(239, {	-- Uldaman
 			creatureID = 7023,
 			groups = {
 				i(8053),	-- Obsidian Power Source
+				i(274485, {	-- Axe of Lingering Dread
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274428, {	-- Dark Golem Breastplate
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274430, {	-- Rock Sentinel Slicer
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
+				i(274425, {	-- White Obsidian Wand
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		e(470, {	-- Ancient Stone Keeper
@@ -518,6 +533,9 @@ instanceroot(239, {	-- Uldaman
 			groups = {
 				i(9411),	-- Rockshard Pauldrons
 				i(9410),	-- Cragfists
+				i(274431, {	-- Sandstorm Staff
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		e(471, {	-- Galgann Firehammer
@@ -545,6 +563,9 @@ instanceroot(239, {	-- Uldaman
 				i(9418),	-- Stoneslayer
 				i(9413),	-- The Rockpounder
 				i(11118),	-- Archaedic Stone
+				i(274432, {	-- Stone Keeper Spire
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 	},
