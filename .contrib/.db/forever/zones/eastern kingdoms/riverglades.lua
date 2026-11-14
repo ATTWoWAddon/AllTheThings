@@ -2058,6 +2058,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 		}),
 		n(RARES, {
+			n(259758, {	-- Gul'gash
+				coords = {
+					{ 84.5, 24.5, MAP.RIVERGLADES },
+					{ 84.4, 27.4, MAP.RIVERGLADES },
+					{ 86.1, 30.6, MAP.RIVERGLADES },
+					{ 84.6, 33.4, MAP.RIVERGLADES },
+				},
+				groups = {
+					i(281648),	-- Gul'gash's Greathammer
+				},
+			}),
 			n(259801, {	-- Mosh'gra
 				coord = { 62.5, 36.0, MAP.RIVERGLADES },
 				groups = {
