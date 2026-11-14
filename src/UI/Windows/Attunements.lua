@@ -1,7 +1,6 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-if app.GameBuildVersion <= 40000 then
 
 -- Global locals
 local ipairs = ipairs;
@@ -33,6 +32,13 @@ local function IsAttunementMet(attunement)
 	elseif attType == "q" then
 		return app.IsQuestFlaggedCompleted(id);
 	end
+end
+
+-- Returns whether the given attunement requirement passes the current filters
+-- (e.g. a quest removed from the game in this flavour no longer grants entry).
+local function IsRequirementAvailable(attunement)
+	local match = FindBestMatch(attunement[1] == "q" and "questID" or "itemID", attunement[2]);
+	return not match or app.GroupFilter(match);
 end
 
 -- Returns the attunement requirements of the group that apply to the current character.
@@ -92,7 +98,14 @@ end
 local function OnUpdateForAttunement(t)
 	local requirements = t.attunementRequirements;
 	-- Respect the character/account filters (e.g. a Classic phase that isn't released yet).
-	if #requirements < 1 or not app.GroupFilter(t) then
+	local available;
+	for _,attunement in ipairs(requirements) do
+		if IsRequirementAvailable(attunement) then
+			available = true;
+			break;
+		end
+	end
+	if not available or not app.GroupFilter(t) then
 		t.trackable = false;
 		t.visible = false;
 		return true;
@@ -178,6 +191,12 @@ local function BuildAttunements()
 	return attunements;
 end
 
+-- Whether the loaded DB has any attunements. The window is only available when it does.
+local function HasAttunements()
+	local groups = app.SearchForField("attunement", true);
+	return groups and #groups > 0;
+end
+
 -- Implementation
 app:CreateWindow("Attunements", {
 	IsDynamicCategory = true,
@@ -186,6 +205,12 @@ app:CreateWindow("Attunements", {
 		"attattuned",
 		"attunements",
 	},
+	OnCommand = function(self, args, params)
+		if not HasAttunements() then
+			app.print(L.ATTUNEMENTS .. ":", NONE);
+			return true;
+		end
+	end,
 	OnInit = function(self, handlers)
 		local attunements;
 		local attunementsHeader = app.CreateRawText(L.ATTUNEMENTS, {
@@ -204,7 +229,7 @@ app:CreateWindow("Attunements", {
 						g[#g+1] = attunement
 					end
 				end
-				data.visible = true;
+				data.visible = #g > 0;
 			end
 		});
 		self:SetData(attunementsHeader);
@@ -214,4 +239,3 @@ app:CreateWindow("Attunements", {
 		end
 	end,
 });
-end
