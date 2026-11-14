@@ -168,3 +168,9 @@ docs export-ignore
 "/.contrib/Harvesters/Exploration Mapping/*.py" text eol=lf
 "/.contrib/Harvesters/WoWHead Harvester/*.js" text eol=lf
 /.contrib/Harvesters/OpenItems.html text eol=lf
+
+# Database developer tools
+/.contrib/.db/*.bat text eol=crlf
+/.contrib/.db/**/*.bat text eol=crlf
+/.contrib/.db/*.py text eol=lf
+/.contrib/.db/**/*.py text eol=lf
