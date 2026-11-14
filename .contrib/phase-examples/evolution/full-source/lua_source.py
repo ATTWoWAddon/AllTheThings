@@ -17,6 +17,10 @@ class Token:
     end: int
 
 
+## @brief Tokenize bounded Lua text, ignoring comments and retaining character offsets.
+# @param text Lua source text from the bounded source forms used by the comparison kit.
+# @return Non-comment Token objects with verbatim spelling and character start/end offsets.
+# @exception ValueError A quoted string or long comment/string is unterminated.
 def tokens(text):
     result = []
     pos = 0
@@ -64,6 +68,10 @@ def tokens(text):
     return result
 
 
+## @brief Locate legacy phase calls and their argument spans without executing Lua.
+# @param text Lua source text from the bounded source forms used by the comparison kit.
+# @return Tuples of phase name, prefix start, argument start/end and complete call end.
+# @exception ValueError A legacy phase call is outside the supported balanced forms.
 def phase_calls(text):
     """Return (phase, prefix start, argument start, argument end, call end)."""
     stream = tokens(text)
@@ -98,6 +106,10 @@ def phase_calls(text):
     return calls
 
 
+## @brief Match nested delimiters in a token stream and reject unbalanced input.
+# @param stream Tokens returned by tokens(), retaining original source offsets.
+# @return Opening-token index to matching closing-token index.
+# @exception ValueError A delimiter is mismatched or unclosed.
 def delimiters(stream):
     """Match lexical delimiters without treating strings or comments as code."""
     stack, result = [], {}
@@ -114,6 +126,10 @@ def delimiters(stream):
     return result
 
 
+## @brief Classify supported phase argument owners in the saved sources.
+# @param text Lua source text from the bounded source forms used by the comparison kit.
+# @return Owner kind, constructor/field name and identity spelling for a supported owner.
+# @exception ValueError The owner is not one of the reviewed source forms.
 def argument_owner(text):
     """Classify only the argument forms present in the frozen five sources."""
     stream = tokens(text)
@@ -151,6 +167,11 @@ def argument_owner(text):
     return 'constructor', stream[0].text, identity
 
 
+## @brief Canonicalize ordinary source tokens after removing supported phase wrappers and keys.
+# @param text Lua source text from the bounded source forms used by the comparison kit.
+# @return Remaining token spellings after removing only supported phase machinery.
+# @exception ValueError A phase wrapper, scope or key field has an unsupported shape.
+# @details Call after selecting client conditional branches. The comparison preserves constructor nesting and every ordinary field; it is not a general Lua semantic equivalence check.
 def ordinary_tokens(text):
     """Canonicalize actual source, independent of the generator's edit history.
 

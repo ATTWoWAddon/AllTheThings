@@ -28,6 +28,8 @@ CALLS = {'instanceroot', 'applyclassicphase', 'd', 'e',
 
 class Projection:
     """Prune unrelated records while retaining selected current owner expressions."""
+    ## @brief Tokenize selected source and identify the BWL items retained in the projection.
+    # @param source Flavor/client-selected current BWL source, kept for verbatim item extraction.
     def __init__(self, source):
         self.source = source
         self.stream = tokens(source)
@@ -39,12 +41,24 @@ class Projection:
                          and self.stream[i + 3].text in (',', ')')}
         self.retained = []
 
+    ## @brief Return the original source span covered by the token range.
+    # @param end Exclusive token index within the projection source.
+    # @param start Inclusive token index within the projection source.
+    # @return Exact original characters covering the half-open token range.
     def raw(self, start, end):
         return self.source[self.stream[start].start:self.stream[end - 1].end]
 
+    ## @brief Check whether a token range contains a selected item occurrence.
+    # @param end Exclusive token index within the projection source.
+    # @param start Inclusive token index within the projection source.
+    # @return Whether any selected item constructor begins inside the token range.
     def contains(self, start, end):
         return any(start <= index < end for index in self.selected)
 
+    ## @brief Yield top-level comma- or semicolon-separated entries in a token range.
+    # @param end Exclusive token index within the projection source.
+    # @param start Inclusive token index within the projection source.
+    # @return Iterator of half-open token ranges separated only at the current nesting level.
     def entries(self, start, end):
         index = start
         while index < end:
@@ -55,6 +69,10 @@ class Projection:
                 yield first, index
             index += 1
 
+    ## @brief Retain relevant metadata fields and descendants leading to selected items.
+    # @param end Exclusive token index within the projection source.
+    # @param start Inclusive token index within the projection source.
+    # @return Rebuilt table retaining supported metadata and selected descendant owner spines.
     def table(self, start, end):
         rows = []
         for first, last in self.entries(start + 1, end - 1):
@@ -71,6 +89,10 @@ class Projection:
                 rows.append(self.expression(first, last))
         return '{\n' + ',\n'.join(rows) + '\n}'
 
+    ## @brief Retain selected owner calls and preserve complete item calls verbatim.
+    # @param end Exclusive token index within the projection source.
+    # @param start Inclusive token index within the projection source.
+    # @return Projected owner expression, with complete selected item calls copied verbatim.
     def expression(self, start, end):
         if self.stream[start].text == '{':
             assert self.ends[start] + 1 == end, 'Unexpected table suffix'
@@ -89,6 +111,8 @@ class Projection:
             arguments.append(self.expression(first, last) if self.contains(first, last) else self.raw(first, last))
         return name + '(' + ',\n'.join(arguments) + ')'
 
+    ## @brief Project the unique current BWL root and validate selected item occurrences.
+    # @return Bounded Lua owner-projection source with a provenance banner.
     def run(self):
         roots = [i for i in range(len(self.stream) - 3)
                  if [token.text for token in self.stream[i:i + 4]] == ['instanceroot', '(', '742', ',']]
@@ -100,6 +124,9 @@ class Projection:
         return '-- Bounded current standalone BWL owner projection; not a complete P1.\n' + result + '\n'
 
 
+## @brief Read expected metadata and item tokens from the hash-verified canonical source.
+# @return Independent canonical metadata/provenance plus selected item token lists.
+# @details Expected race/timeline constants are read independently from the canonical repository inputs at the selected Vanilla SoD view, rather than copied from the projection environment.
 def canonical_metadata():
     """Read independent expected fields directly from the selected canonical input."""
     catalog = json.loads((HERE / 'sources.json').read_text(encoding='utf-8'))
@@ -134,10 +161,18 @@ def canonical_metadata():
     timeline_file = shared / 'lib/Constants/Timelines.lua'
     constants.update({name: json.loads(value) for name, value in re.findall(r'^(\w+)\s*=\s*("[^"\n]*")\s*;', timeline_file.read_text(encoding='utf-8'), re.M)})
 
+    ## @brief Locate selected constructor calls in the canonical token stream.
+    # @param identity Numeric ID expected in the canonical constructor call.
+    # @param name Supported constructor or field name to locate.
+    # @return Token indices of constructor calls with the exact expected ID.
     def calls(name, identity):
         return [i for i in range(len(stream) - 3) if [token.text for token in stream[i:i + 4]] == [name, '(', str(identity), ','] or
                 (name == 'i' and [token.text for token in stream[i:i + 4]] == [name, '(', str(identity), ')'])]
 
+    ## @brief Locate a named field value within a canonical table.
+    # @param name Supported constructor or field name to locate.
+    # @param table Opening table-token index in the canonical stream.
+    # @return Value-token index of the named direct field; missing fields raise AssertionError.
     def field(table, name):
         index = table + 1
         while index < ends[table]:
@@ -146,6 +181,9 @@ def canonical_metadata():
             index = ends[index] + 1 if index in ends else index + 1
         raise AssertionError('Missing canonical field: ' + name)
 
+    ## @brief Decode supported canonical metadata literals using independently read constants.
+    # @param index First token of a supported canonical metadata literal.
+    # @return Supported integer, string, list or independently resolved constant value.
     def literal(index):
         value = stream[index].text
         if value == '{':
@@ -184,6 +222,9 @@ def canonical_metadata():
     return metadata, leaves
 
 
+## @brief Serialize supported expected metadata values as Lua literals.
+# @param value String, integer, list or string-keyed map of expected metadata.
+# @return Lua literal text for the expected metadata subset.
 def lua_literal(value):
     if isinstance(value, str): return json.dumps(value, ensure_ascii=False)
     if isinstance(value, list): return '{' + ','.join(lua_literal(item) for item in value) + '}'
@@ -191,6 +232,10 @@ def lua_literal(value):
     return str(value)
 
 
+## @brief Run a subprocess and assert success or the requested rejection diagnostic.
+# @param command Executable and argument tokens for the verification subprocess.
+# @param rejected Required stderr fragment for a rejected command; None requires success.
+# @return Captured subprocess stdout after the required success or rejection check.
 def run(command, *, rejected=None):
     result = subprocess.run([str(value) for value in command], capture_output=True, text=True)
     if rejected is not None:
@@ -205,6 +250,10 @@ assert(_VERSION == 'Lua 5.1')
 local evaluate = dofile(arg[1])
 local data = dofile(arg[2])
 local expected = dofile(arg[3])
+---Compare canonical metadata recursively without depending on table identity.
+---@param a any
+---@param b any
+---@return boolean
 local function equal(a, b)
     if type(a) ~= type(b) then return false end
     if type(a) ~= 'table' then return a == b end
@@ -216,8 +265,15 @@ assert(data.groups[1].instanceID == 742)
 assert(equal(data.groups[1].provider, expected.rootProvider), 'canonical root provider changed')
 assert(equal(data.groups[1].timeline, expected.rootTimeline), 'canonical root timeline changed')
 assert(data.groups[1].sourceQuest == expected.rootSourceQuest, 'canonical ordinary prerequisite changed')
+---Find the projected routes for an item at a milestone.
+---@param id integer
+---@param milestone string
+---@return table
 local function route(id, milestone)
-    return evaluate.find(data, {itemID=id}, milestone, function() return true end)
+    return evaluate.find(data, {itemID=id}, milestone,
+        ---Ignore ordinary conditions when checking progression schedules.
+        ---@return boolean
+        function() return true end)
 end
 local heads = route(19002, 'vanilla.5')
 assert(#heads.routes == 2, 'current Horde head must have two distinct routes')
@@ -231,10 +287,15 @@ assert(route(19364, 'vanilla.5').routes[1].schedule == 'disabled')
 assert(route(230818, 'vanilla.4').routes[1].schedule == 'future')
 assert(route(230818, 'vanilla.5').obtainable)
 local found = {}
+---Collect target items by inherited difficulty and check encounter sources.
+---@param node table
+---@param difficulty integer|nil
 local function visit(node, difficulty)
     difficulty = node.difficultyID or difficulty
     if node.encounterID == 1536 then assert(equal(node.crs, expected.encounterCrs), 'canonical encounter sources changed') end
     if node.itemID == 19002 then
+        -- Each selected head is below a retained original or reworked difficulty owner.
+        ---@cast difficulty integer
         found[difficulty] = node
     end
     for _, child in ipairs(node.groups or {}) do visit(child, difficulty) end
@@ -247,6 +308,7 @@ print('Current standalone BWL: two head routes, distinct swords, additive keys a
 '''
 
 
+## @brief Compare bounded stage projections and Parser output with canonical metadata.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--parser', type=Path, required=True)
@@ -296,7 +358,7 @@ def main():
         print(run([args.lua, check, EXAMPLES / 'evaluate.lua', output / 'p4/compiled.lua', expected_file]).strip())
         damaged = output / 'missing-ordinary-race.lua'
         damaged.write_text('local data = dofile(' + json.dumps(str(output / 'p4/compiled.lua'), ensure_ascii=False) + ')\n' +
-                           'local function visit(node) if node.itemID == 19002 then node.races = nil end; for _, child in ipairs(node.groups or {}) do visit(child) end end\n' +
+                           '---Remove the target item race restriction recursively.\n---@param node table\nlocal function visit(node) if node.itemID == 19002 then node.races = nil end; for _, child in ipairs(node.groups or {}) do visit(child) end end\n' +
                            'visit(data.groups[1]); return data\n', encoding='utf-8')
         run([args.lua, check, EXAMPLES / 'evaluate.lua', damaged, expected_file], rejected='canonical Horde restriction')
         print('Canonical metadata loss rejection passed; this is a bounded example-API result, not a full production parse')

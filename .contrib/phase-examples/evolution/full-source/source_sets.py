@@ -28,6 +28,8 @@ CASES = {
 MANIFEST = HERE / "sources.json"
 
 
+## @brief Yield existing case, source alternative and native path combinations.
+# @return Iterator of case name, native alternative and production-relative source path.
 def entries():
     for case, filename in CASES.items():
         for alternative, root in ROOTS.items():
@@ -36,6 +38,7 @@ def entries():
             yield case, alternative, f"{root}/{filename}"
 
 
+## @brief Generate or verify P1 snapshots and their source hash manifest.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")

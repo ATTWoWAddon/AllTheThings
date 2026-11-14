@@ -19,6 +19,10 @@ PHASE_KEYS = {
  'gnomeregan': {'SOD_PHASE_TWO':'gnomeregan.raid10'},
 }
 
+## @brief Read a P1 source after verifying its line endings are uniform.
+# @param path P1 snapshot whose raw bytes and line endings are checked before decoding.
+# @return UTF-8 source normalized to LF for transformation.
+# @exception AssertionError The snapshot mixes LF and CRLF line endings.
 def read_p1(path):
     raw = path.read_bytes()
     ending = b'\r\n' if b'\r\n' in raw else b'\n'
@@ -28,6 +32,11 @@ def read_p1(path):
 
 
 
+## @brief Select season and classic branches while preserving client-version directives.
+# @param flavor Selected source view: sod, classic or retail.
+# @param text LF-normalized Lua source to select without executing it.
+# @return Selected Lua text retaining unresolved client-version directives.
+# @exception AssertionError Flavor guards are unbalanced or mix unsupported branches.
 def select_flavor(text, flavor):
     """Resolve season/classic guards only; preserve all client-version guards."""
     lines = text.splitlines(keepends=True)
@@ -69,9 +78,19 @@ def select_flavor(text, flavor):
 
 
 
+## @brief Select supported flavor and client-version branches from source text.
+# @param flavor Selected source view: sod, classic or retail.
+# @param text LF-normalized Lua source to select without executing it.
+# @param version Three-integer client version used for BEFORE/AFTER comparisons.
+# @return Lua text containing only branches active for the chosen flavor and client version.
+# @exception AssertionError A directive, version boundary or guard nesting is unsupported.
+# @details BEFORE excludes its boundary; AFTER includes it. Only the explicitly supported version names and three-part versions are accepted.
 def select_all(text, version, flavor):
     versions = {'TBC':(2,0,1), 'WRATH':(3,0,2), 'CATA':(4,0,3), 'MOP':(5,0,0),
                 'WOD':(6,0,2), 'LEGION':(7,0,3), 'BFA':(8,0,0), 'SL':(9,0,0), 'MID':(12,0,0)}
+    ## @brief Evaluate a supported flavor or version directive for this selection.
+    # @param expr Supported flavor or version expression from a conditional directive.
+    # @return Whether the directive is active for the enclosing selection.
     def test(expr):
         if expr == 'SEASON_OF_DISCOVERY': return flavor == 'sod'
         if expr == 'NOT SEASON_OF_DISCOVERY': return flavor != 'sod'

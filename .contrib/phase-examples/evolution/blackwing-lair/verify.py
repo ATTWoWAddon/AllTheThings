@@ -29,16 +29,24 @@ HISTORICAL_P1_SHA256 = "5a77f5e2c5f6996cc51ecdf666e92d547e5abd2c8533ae82c49e27e4
 ANNOTATION = re.compile(r'^\s*(progressionKey\s*=\s*"(raid\.bwl\.(?:common|original|sod20|draconic-for-dummies))"|flavors\s*=\s*\{\s*"sod"\s*\})\s*,\s*(?:--.*)?$')
 
 
+## @brief Run a verification command and fail on a nonzero exit.
+# @param command Executable and argument tokens; path-like values are converted to strings.
 def run(command):
     subprocess.run([str(part) for part in command], check=True)
 
 
+## @brief Extract the source body beginning at the root call.
+# @param raw Pinned source bytes, including its identifying header.
+# @return List of source byte lines beginning at the actual root call.
 def source_body(raw):
     lines = raw.splitlines()
     start = next(index for index, line in enumerate(lines) if line.startswith(b"root("))
     return lines[start:]
 
 
+## @brief Reject duplicate JSON fields and consume a validated documentation comment.
+# @param pairs Ordered JSON property pairs supplied by object_pairs_hook.
+# @return Unique object fields with a validated reserved $comment consumed.
 def json_object(pairs):
     result = {}
     for key, value in pairs:
@@ -49,10 +57,17 @@ def json_object(pairs):
     return result
 
 
+## @brief Read strict JSON using duplicate-key validation.
+# @param path UTF-8 JSON fixture path.
+# @return Decoded fixture value with duplicate fields rejected.
 def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"), object_pairs_hook=json_object)
 
 
+## @brief Select the supported SoD conditional branch in a focused source fixture.
+# @param sod Whether the SoD-only branch is selected.
+# @param text Focused source text with only the supported SoD guards.
+# @return Selected source with normalized LF line endings and a final newline.
 def selected(text, sod):
     active, stack, result = True, [], []
     for line in text.splitlines():
@@ -72,6 +87,8 @@ def selected(text, sod):
     return "\n".join(result) + "\n"
 
 
+## @brief Check pinned P1 bytes, staged annotations and migration ownership.
+# @param sources Stage name to raw focused source bytes, including the immutable P1 sample.
 def check_focused_authoring(sources):
     p1_body = source_body(sources["p1"])
     normalized = sources["p1"].replace(b"\r\n", b"\n")
@@ -100,17 +117,31 @@ def check_focused_authoring(sources):
 ROUTE_CHECKS = '''local evaluate = dofile(arg[1])
 local p3, p4 = dofile(arg[2]), dofile(arg[3])
 local changed, ordinary = dofile(arg[4]), dofile(arg[5])
+---Assert recursive equality of the effective route data.
+---@param a any
+---@param b any
 local function equal(a, b)
     assert(type(a) == type(b), "route data type changed")
     if type(a) ~= "table" then assert(a == b, "route data changed"); return end
     for k, v in pairs(a) do equal(v, b[k]) end
     for k in pairs(b) do assert(a[k] ~= nil, "route data added") end
 end
+---Find all routes for an item at the requested milestone.
+---@param data table
+---@param id integer
+---@param view string|nil Milestone, or nil for the ordinary Retail comparison.
+---@return PhaseExampleFindResult
 local function query(data, id, view)
-    return evaluate.find(data, {itemID=id}, view, function() return true end)
+    return evaluate.find(data, {itemID=id}, view,
+        ---Accept every ordinary condition while comparing progression routes.
+        ---@return boolean
+        function() return true end)
 end
 -- Timelines are recursively materialized by the old source helper. Compare
 -- their effective route conditions, while preserving exact source data fields.
+---Collect stable path fields and deduplicated effective conditions.
+---@param route table
+---@return table
 local function signature(route)
     local result = {path={}, timelines={}, scopes={}}
     local timelines, scopes = {}, {}
@@ -185,6 +216,7 @@ print("Actual annotated SoD projection matches P4 loot routes; four profiles and
 '''
 
 
+## @brief Compare focused projected and P4 routes without altering frozen fixtures.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--parser", type=Path, required=True)
@@ -206,6 +238,10 @@ def main():
                 run([args.lua, "-e", "assert(loadfile(" + json.dumps(str(path), ensure_ascii=False) + "))"])
                 if sod: selected_sources[stage] = path
 
+        ## @brief Compile a temporary example input for one context.
+        # @param context Flavor:profile context compiled by the shared Parser command.
+        # @param directory Temporary example input directory.
+        # @param output Destination for this isolated compiled Lua module.
         def compile_input(directory, context, output):
             run(args.launcher + [args.parser.resolve(), "--phase-example", "A", directory, context, output])
 

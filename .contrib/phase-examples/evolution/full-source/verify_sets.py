@@ -29,6 +29,8 @@ EXPECTED_WRITERS = {
 
 class PolicyCatalog:
     """Resolve complete-source policies without adding them to compact output."""
+    ## @brief Validate compact and full-source rules and check reviewed timing assumptions.
+    # @param schedule Reviewed compact and full-source rule document.
     def __init__(self, schedule):
         prepare.compile_inputs(schedule, prepare.read_json(EVOLUTION.parent / "comparison.json"))
         self.calendars = prepare.calendars_for(schedule["calendars"])
@@ -55,11 +57,18 @@ class PolicyCatalog:
                           if prepare.for_flavor(value, flavor) is not prepare.MISSING}
             self.resolve(applicable, flavor)
 
+    ## @brief Resolve the requested policy keys for a flavor, preserving Retail’s empty schedule.
+    # @param flavor Flavor whose applicability and calendar determine expanded policies.
+    # @param keys Requested unqualified policy-key set; every key must exist in the catalog.
+    # @return Expanded policies for exactly the requested keys; Retail returns an empty map.
     def resolve(self, keys, flavor):
         assert keys <= self.rules.keys(), f"Missing full-source policies: {keys - self.rules.keys()}"
         if flavor == "retail":
             return {}
         resolved, visiting = {}, set()
+        ## @brief Resolve an applicable alias and reject missing or cyclic references.
+        # @param key Applicable policy key to resolve through sameAs aliases.
+        # @return Expanded status/windows policy after resolving applicable aliases.
         def visit(key):
             assert key in self.rules and key not in visiting, f"Missing or cyclic full-source alias: {flavor}:{key}"
             if key in resolved:
@@ -77,6 +86,9 @@ class PolicyCatalog:
         return {key: visit(key) for key in sorted(keys)}
 
 
+## @brief Find actual direct phase assignments while ignoring strings and comments.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Character offsets of actual direct phase field assignments.
 def direct_phase_fields(source):
     """Find authored phase fields without reading comments/strings as code."""
     stream = tokens(source)
@@ -93,6 +105,9 @@ def direct_phase_fields(source):
     return fields
 
 
+## @brief Find retired flavor directives only in Lua line comments.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Character offsets of real line-comment SoD/ANYCLASSIC directives.
 def flavor_directives(source):
     """Only actual line comments can carry retired flavor directives."""
     found, i = [], 0
@@ -132,6 +147,9 @@ def flavor_directives(source):
     return found
 
 
+## @brief Map token delimiters, parent expressions and enclosing tables.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Tokens, delimiter pairs, parent indices and nearest enclosing tables.
 def lexical_layout(source):
     stream = tokens(source)
     ends = delimiters(stream)
@@ -147,6 +165,11 @@ def lexical_layout(source):
     return stream, ends, parents, table
 
 
+## @brief Classify a legacy writer’s source owner, including instance and inherited-list wrappers.
+# @param call Phase-call tuple: phase, prefix start, argument start/end and call end.
+# @param layout Token stream, delimiter pairs, parent indices and containing-table mapping.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Owner kind, constructor and ID spelling for this actual writer.
 def call_owner(source, call, layout):
     _, start, begin, end, _ = call
     stream, ends, parents, _ = layout
@@ -166,6 +189,10 @@ def call_owner(source, call, layout):
     return argument_owner(" ".join(ordinary_tokens(source[begin:end])))
 
 
+## @brief Locate literal progression keys and their enclosing table spans.
+# @param layout Token stream, delimiter pairs, parent indices and containing-table mapping.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Enclosing table start/end, literal key and owner-token tuples.
 def authored_scopes(source, layout):
     stream, ends, _, tables = layout
     scopes = []
@@ -181,6 +208,12 @@ def authored_scopes(source, layout):
     return scopes
 
 
+## @brief Find keys enclosing a writer or attached directly to its argument owner.
+# @param call Phase-call tuple: phase, prefix start, argument start/end and call end.
+# @param layout Token stream, delimiter pairs, parent indices and containing-table mapping.
+# @param scopes Authored scope spans and keys returned by authored_scopes().
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return Scope keys enclosing the writer or attached directly to its argument owner.
 def writer_keys(source, call, layout, scopes):
     """Keys enclosing the writer, or directly authored on its argument owner."""
     _, start, begin, end, _ = call
@@ -205,6 +238,14 @@ def writer_keys(source, call, layout, scopes):
 
 
 
+## @brief Map each native writer to its reviewed key, including owner-specific exceptions.
+# @param alternative Native standard or sod source alternative.
+# @param case_name Reviewed instance case owning this legacy writer.
+# @param constructor Actual owner shortcut used to distinguish child-specific exceptions.
+# @param identity Owner ID spelling; phase constants alone do not identify an owner.
+# @param phase Actual legacy phase constant from the writer.
+# @return Reviewed key for the complete owner tuple, including child exceptions.
+# @details Two owners sharing a legacy phase constant may require different keys. Match the full case/alternative/phase/constructor/identity tuple before using a phase-wide mapping.
 def expected_writer_key(case_name, alternative, phase, constructor, identity):
     # These three child exceptions have independent keys even when another
     # owner shares the same phase constant. Never classify by phase alone.
@@ -223,6 +264,7 @@ def expected_writer_key(case_name, alternative, phase, constructor, identity):
     return PHASE_KEYS[case_name][phase]
 
 
+## @brief Verify writer coverage, stage ownership and policy applicability across source alternatives.
 def check_complete_contract():
     catalog = PolicyCatalog(prepare.read_json(EVOLUTION.parent / "schedule.json"))
     all_keys, writer_total, p4_total = set(), 0, 0
@@ -278,6 +320,7 @@ def check_complete_contract():
 
 
 
+## @brief Check rejection of unreviewed timing, invalid aliases and descendant-only keys.
 def check_rejected_contracts():
     schedule = prepare.read_json(EVOLUTION.parent / "schedule.json")
     changed_unknown = copy.deepcopy(schedule)
@@ -299,6 +342,7 @@ def check_rejected_contracts():
     assert "child" not in writer_keys(descendant, phase_calls(descendant)[0], layout, authored_scopes(descendant, layout)), "A child's key cannot cover its parent's writer"
 
 
+## @brief Exercise lexical safeguards against misleading comments, strings and nested lists.
 def check_lexical_guards():
     assert len(direct_phase_fields('return { phase = 1, ["phase"] = 2 }')) == 2
     assert not direct_phase_fields('-- phase = 1\nlocal text = [=[phase = 2]=]\nif obj.phase == 1 then end')
@@ -317,9 +361,20 @@ def check_lexical_guards():
 LUA_CHECK = r'''
 assert(_VERSION == "Lua 5.1")
 local seen = {}
-local env = setmetatable({}, { __index = function() return 0 end })
+local env = setmetatable({}, { __index =
+    ---Resolve unrelated fixture constants to a harmless placeholder.
+    ---@return integer
+    function() return 0 end })
+---Pass through the payload while ignoring legacy phase timing.
+---@param _ any
+---@param value any
+---@return any
 env.applyclassicphase = function(_, value) return value end
 for _, name in ipairs({"n", "i", "q", "recipe"}) do
+    ---Record constructor identity and normalize array children into groups.
+    ---@param id integer
+    ---@param value table|nil
+    ---@return table
     env[name] = function(id, value)
         value = value or {}
         if #value > 0 then
@@ -330,6 +385,9 @@ for _, name in ipairs({"n", "i", "q", "recipe"}) do
         return value
     end
 end
+---Capture the expected instance root for scope traversal.
+---@param id integer
+---@param value table
 env.instanceroot = function(id, value)
     assert(id == 2784)
     env.result = value
@@ -337,6 +395,9 @@ end
 local chunk = assert(loadfile(arg[1]))
 setfenv(chunk, env)
 chunk()
+---Accumulate inherited progression keys for selected source records.
+---@param node any
+---@param scopes table<string, boolean>
 local function visit(node, scopes)
     if type(node) ~= "table" then return end
     local current = {}
@@ -356,6 +417,11 @@ assert(seen[226923]["dfc.dungeon"] and not seen[226923]["dfc.ironwood-branch"])
 '''
 
 
+## @brief Extract effective scope paths for a selected item from the source fixture.
+# @param identity Owner ID spelling; phase constants alone do not identify an owner.
+# @param source Selected Lua source whose real code tokens and owners are inspected.
+# @return One inherited key path per matching item occurrence; repeated IDs remain separate.
+# @details This lexical check follows actual owner ancestry and keeps each acquisition occurrence independent; it does not merge sources by item ID.
 def item_scopes(source, identity):
     """Inspect lexical owner ancestry in the actual selected source snapshot."""
     stream = tokens(source)
@@ -376,6 +442,7 @@ def item_scopes(source, identity):
     return found
 
 
+## @brief Verify generated full-source sets, preservation and policy coverage.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--lua", default="lua5.1")

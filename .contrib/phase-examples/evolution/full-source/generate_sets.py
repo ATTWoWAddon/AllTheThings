@@ -10,6 +10,10 @@ from lua_source import argument_owner, delimiters, phase_calls, tokens
 from source_sets import EVOLUTION
 
 
+## @brief Map the standalone instance and later child phase owners into proposed scopes.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def demon_fall_canyon(source, projected):
     """Annotate the exact current instance and its two later child owners."""
     owners = {
@@ -46,6 +50,11 @@ def demon_fall_canyon(source, projected):
     return source, coverage
 
 
+## @brief Map phase writers and structural dungeon owners for one native alternative.
+# @param alternative Native source alternative: standard or sod.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def blackrock_depths(source, alternative, projected):
     """Map each native writer and the two structural dungeon owners."""
     calls = phase_calls(source)
@@ -93,6 +102,11 @@ def blackrock_depths(source, alternative, projected):
     return source, coverage
 
 
+## @brief Map phase writers and the instance owner while preserving source alternatives.
+# @param alternative Native source alternative: standard or sod.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def dire_maul(source, alternative, projected):
     calls = phase_calls(source)
     assert len(calls) == {"standard": 11, "sod": 55}[alternative]
@@ -143,6 +157,11 @@ def dire_maul(source, alternative, projected):
     return source, coverage
 
 
+## @brief Map raid writers and the ordinary dungeon owner in one native alternative.
+# @param alternative Native source alternative: standard or sod.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def gnomeregan(source, alternative, projected):
     calls = phase_calls(source)
     assert len(calls) == {"standard": 0, "sod": 5}[alternative]
@@ -172,6 +191,11 @@ def gnomeregan(source, alternative, projected):
     return source, coverage
 
 
+## @brief Map phase owners and separate original from reworked raid children.
+# @param alternative Native source alternative: standard or sod.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def temple_of_ahnqiraj(source, alternative, projected):
     calls = phase_calls(source)
     assert len(calls) == {"standard": 3, "sod": 4}[alternative]
@@ -232,6 +256,11 @@ def temple_of_ahnqiraj(source, alternative, projected):
     return source, coverage
 
 
+## @brief Map original and reworked BWL owners while retaining inherited nested scopes.
+# @param alternative Native source alternative: standard or sod.
+# @param projected True removes legacy phase writers for P4; false retains them alongside the new keys.
+# @param source LF-normalized complete P1 source for the selected native alternative.
+# @return Transformed source and reviewed writer-to-owner coverage records.
 def blackwing_lair(source, alternative, projected):
     calls = phase_calls(source)
     assert len(calls) == {"standard": 2, "sod": 4}[alternative]
@@ -301,6 +330,8 @@ def blackwing_lair(source, alternative, projected):
     return source, coverage
 
 
+## @brief Build staged comparison sources, selections and owner coverage for every case.
+# @return Relative path-component tuples mapped to generated Lua or JSON text.
 def outputs():
     case = "demon-fall-canyon"
     source = read_p1(EVOLUTION / case / "p1/sod.lua")
@@ -335,6 +366,11 @@ def outputs():
     return result
 
 
+## @brief Build staged outputs from separate standard and SoD source alternatives.
+# @param case Reviewed instance case name used to locate separate P1 alternatives.
+# @param transform Case-specific owner transformation returning source text and coverage records.
+# @return Generated staged sources, controls and owner coverage for this case.
+# @details Standard and SoD remain separate source alternatives. P4 selects one full source before execution; this generator never overlays one alternative onto another.
 def dual_outputs(case, transform):
     result = {}
     alternatives = {}
@@ -372,6 +408,7 @@ def dual_outputs(case, transform):
     return result
 
 
+## @brief Generate staged comparison files or check their contents for drift.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
