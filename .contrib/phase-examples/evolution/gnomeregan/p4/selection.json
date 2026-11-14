@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose one complete source before Lua execution.",
+  "retail": {
+    "gnomeregan": "retail.lua"
+  },
+  "progression:main": {
+    "gnomeregan": "classic.lua"
+  },
+  "anniversary:main": {
+    "gnomeregan": "classic.lua"
+  },
+  "era:main": {
+    "gnomeregan": "classic.lua"
+  },
+  "sod:main": {
+    "gnomeregan": "sod.lua"
+  }
+}

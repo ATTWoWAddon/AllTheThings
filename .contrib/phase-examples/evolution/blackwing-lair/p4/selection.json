@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose one complete source before Lua execution.",
+  "retail": {
+    "blackwing-lair": "retail.lua"
+  },
+  "progression:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "anniversary:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "era:main": {
+    "blackwing-lair": "classic.lua"
+  },
+  "sod:main": {
+    "blackwing-lair": "sod.lua"
+  }
+}

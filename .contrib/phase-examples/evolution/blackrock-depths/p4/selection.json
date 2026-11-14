@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose one complete source before Lua execution.",
+  "retail": {
+    "blackrock-depths": "retail.lua"
+  },
+  "progression:main": {
+    "blackrock-depths": "classic.lua"
+  },
+  "anniversary:main": {
+    "blackrock-depths": "classic.lua"
+  },
+  "era:main": {
+    "blackrock-depths": "classic.lua"
+  },
+  "sod:main": {
+    "blackrock-depths": "sod.lua"
+  }
+}

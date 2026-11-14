@@ -1,4 +1,5 @@
-﻿using ATT.DB;
+﻿// Shared production Parser entry point. Only --phase-example runs the P4 interface comparison and Retail default.
+using ATT.DB;
 using ATT.DB.Types;
 using System;
 using System.Collections.Generic;
@@ -236,6 +237,10 @@ namespace ATT
 
         static int Main(string[] args)
         {
+            //! @brief Dispatch the opt-in comparison before starting the ordinary Parser pipeline.
+            if (args.Length > 0 && args[0] == "--phase-example")
+                return PhaseExample.Run(args);
+
             // Setup tracing to the console.
             Tracer.OnWrite += Console.Write;
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);

@@ -1,0 +1,35 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "progression:main": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  },
+  "era:main": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  },
+  "anniversary:main": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  },
+  "sod:main": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.5"}]},
+    "raid.bwl.original": {"status": "disabled", "windows": []},
+    "raid.bwl.sod20": {"windows": [{"from": "vanilla.5"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  },
+  "sod:replay": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.5"}]},
+    "raid.bwl.original": {"status": "disabled", "windows": []},
+    "raid.bwl.sod20": {"windows": [{"from": "vanilla.5"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  },
+  "progression:replay": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$comment": "Generated comparison selection; choose the complete source before Lua execution.",
+  "retail": {
+    "demon-fall-canyon": null
+  },
+  "progression:main": {
+    "demon-fall-canyon": null
+  },
+  "anniversary:main": {
+    "demon-fall-canyon": null
+  },
+  "era:main": {
+    "demon-fall-canyon": null
+  },
+  "sod:main": {
+    "demon-fall-canyon": "sod.lua"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$comment": "Generated standalone SoD source owner coverage.",
+  "owners": [
+    {
+      "line": 6,
+      "phase": "SOD_PHASE_FOUR",
+      "key": "dfc.dungeon",
+      "kind": "instance-record",
+      "constructor": "instanceroot",
+      "identity": "2784"
+    },
+    {
+      "line": 21,
+      "phase": "SOD_PHASE_SEVEN",
+      "key": "dfc.ironwood-branch",
+      "kind": "constructor",
+      "constructor": "i",
+      "identity": "235787"
+    },
+    {
+      "line": 40,
+      "phase": "SOD_PHASE_FIVE",
+      "key": "dfc.azgaloth",
+      "kind": "constructor",
+      "constructor": "n",
+      "identity": "232632"
+    }
+  ]
+}

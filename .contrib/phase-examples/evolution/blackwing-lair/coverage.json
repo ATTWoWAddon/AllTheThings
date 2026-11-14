@@ -1,0 +1,57 @@
+{
+  "$comment": "Generated writer owner coverage for each native source alternative.",
+  "alternatives": {
+    "standard": [
+      {
+        "line": 9,
+        "phase": "PHASE_THREE",
+        "key": "raid.bwl.common",
+        "kind": "list",
+        "constructor": "inst",
+        "identity": "742"
+      },
+      {
+        "line": 107,
+        "phase": "PHASE_FIVE",
+        "key": "raid.bwl.draconic-for-dummies",
+        "kind": "constructor",
+        "constructor": "o",
+        "identity": "180667"
+      }
+    ],
+    "sod": [
+      {
+        "line": 39,
+        "phase": "PHASE_THREE",
+        "key": "raid.bwl.common",
+        "kind": "instance-record",
+        "constructor": "instanceroot",
+        "identity": "742"
+      },
+      {
+        "line": 101,
+        "phase": "PHASE_FIVE",
+        "key": "raid.bwl.draconic-for-dummies",
+        "kind": "constructor",
+        "constructor": "o",
+        "identity": "180667"
+      },
+      {
+        "line": 386,
+        "phase": "SOD_PHASE_FIVE",
+        "key": "raid.bwl.sod20",
+        "kind": "constructor",
+        "constructor": "d",
+        "identity": "DIFFICULTY.SOD.PLAYER20"
+      },
+      {
+        "line": 389,
+        "phase": "SOD_PHASE_FIVE",
+        "key": "raid.bwl.sod20",
+        "kind": "inherited-list",
+        "constructor": "n",
+        "identity": "QUESTS"
+      }
+    ]
+  }
+}

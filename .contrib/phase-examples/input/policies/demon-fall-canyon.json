@@ -1,0 +1,13 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "sod:main": {
+    "dfc.dungeon": {"status": "unknown", "windows": []},
+    "dfc.azgaloth": {"windows": [{"from": "vanilla.5"}]},
+    "dfc.ironwood-branch": {"windows": [{"from": "vanilla.7"}]}
+  },
+  "sod:replay": {
+    "dfc.dungeon": {"windows": [{"from": "fixture.dfc-open"}]},
+    "dfc.azgaloth": {"windows": [{"from": "vanilla.5"}]},
+    "dfc.ironwood-branch": {"windows": [{"from": "vanilla.7"}]}
+  }
+}

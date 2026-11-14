@@ -1,0 +1,105 @@
+{
+  "$comment": "Generated P1 verification and provenance metadata; not phase configuration.",
+  "sourceCommit": "195b274be460432481e33bb63bfaf9e68bfeec06",
+  "sources": [
+    {
+      "case": "blackwing-lair",
+      "alternative": "standard",
+      "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+      "file": "../../../.db/standard/01 - Dungeons Raids/01 - Classic/1.6 Blackwing Lair.lua",
+      "snapshot": "blackwing-lair/p1/standard.lua",
+      "snapshotFile": "../blackwing-lair/p1/standard.lua",
+      "sha256": "dafe92eec34200e87a49667a79cd7f766fb97b2a4f8da4bdb780006d2b59152f"
+    },
+    {
+      "case": "blackwing-lair",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/1.6 Blackwing Lair.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/1.6 Blackwing Lair.lua",
+      "snapshot": "blackwing-lair/p1/sod.lua",
+      "snapshotFile": "../blackwing-lair/p1/sod.lua",
+      "sha256": "c3c47c49b363d1f382b2410a51b23d3978ad31c43a7ad26b9e34d7b8e371c63c"
+    },
+    {
+      "case": "blackrock-depths",
+      "alternative": "standard",
+      "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Blackrock Depths.lua",
+      "file": "../../../.db/standard/01 - Dungeons Raids/01 - Classic/Blackrock Depths.lua",
+      "snapshot": "blackrock-depths/p1/standard.lua",
+      "snapshotFile": "../blackrock-depths/p1/standard.lua",
+      "sha256": "4567b8962e2c61b5beb2bdcbcb7a2420ea21b3ae47d75e936900f4163b58b247"
+    },
+    {
+      "case": "blackrock-depths",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/Blackrock Depths.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/Blackrock Depths.lua",
+      "snapshot": "blackrock-depths/p1/sod.lua",
+      "snapshotFile": "../blackrock-depths/p1/sod.lua",
+      "sha256": "520c00fc41eeb8ee2d5908db8ad3e3e59047e77a92d5bd132bb735668b02833e"
+    },
+    {
+      "case": "demon-fall-canyon",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/Demon Fall Canyon.lua",
+      "snapshot": "demon-fall-canyon/p1/sod.lua",
+      "snapshotFile": "../demon-fall-canyon/p1/sod.lua",
+      "sha256": "4e94fc3062860e10780fc14b1acdfda47a2935dc4542dc29a61aae1ecc4c47cb"
+    },
+    {
+      "case": "dire-maul",
+      "alternative": "standard",
+      "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Dire Maul.lua",
+      "file": "../../../.db/standard/01 - Dungeons Raids/01 - Classic/Dire Maul.lua",
+      "snapshot": "dire-maul/p1/standard.lua",
+      "snapshotFile": "../dire-maul/p1/standard.lua",
+      "sha256": "00192a272310e99daae557f2353916e51fb448869342e77ccffecb8d6af6d14c"
+    },
+    {
+      "case": "dire-maul",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/Dire Maul.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/Dire Maul.lua",
+      "snapshot": "dire-maul/p1/sod.lua",
+      "snapshotFile": "../dire-maul/p1/sod.lua",
+      "sha256": "ecd6160a663a65f3ef7cf1fb6099c8a492c704e503d00df0e3075c715a6f3104"
+    },
+    {
+      "case": "temple-of-ahnqiraj",
+      "alternative": "standard",
+      "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+      "file": "../../../.db/standard/01 - Dungeons Raids/01 - Classic/2.6 Temple of Ahn'Qiraj.lua",
+      "snapshot": "temple-of-ahnqiraj/p1/standard.lua",
+      "snapshotFile": "../temple-of-ahnqiraj/p1/standard.lua",
+      "sha256": "56ec1ba91db33597fd94b5f2371ad4c5232c07d2d4d9b31cf10f15a998dc0274"
+    },
+    {
+      "case": "temple-of-ahnqiraj",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/2.6 Temple of Ahn'Qiraj.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/2.6 Temple of Ahn'Qiraj.lua",
+      "snapshot": "temple-of-ahnqiraj/p1/sod.lua",
+      "snapshotFile": "../temple-of-ahnqiraj/p1/sod.lua",
+      "sha256": "c52e859978fc951ecb1079be67bbabec36b9148ef68972dec6644e535f322123"
+    },
+    {
+      "case": "gnomeregan",
+      "alternative": "standard",
+      "source": ".contrib/.db/standard/01 - Dungeons Raids/01 - Classic/Gnomeregan.lua",
+      "file": "../../../.db/standard/01 - Dungeons Raids/01 - Classic/Gnomeregan.lua",
+      "snapshot": "gnomeregan/p1/standard.lua",
+      "snapshotFile": "../gnomeregan/p1/standard.lua",
+      "sha256": "4232734c458345bd14e0a5ad8d87a785b8e2778d98ddf3e20b38880fba241c83"
+    },
+    {
+      "case": "gnomeregan",
+      "alternative": "sod",
+      "source": ".contrib/.db/season of discovery/dungeons & raids/Gnomeregan.lua",
+      "file": "../../../.db/season of discovery/dungeons & raids/Gnomeregan.lua",
+      "snapshot": "gnomeregan/p1/sod.lua",
+      "snapshotFile": "../gnomeregan/p1/sod.lua",
+      "sha256": "9a633953cde6790e5cecd2e3a4ea0b143a3b18b553cdcb0a9937343606cd47b9"
+    }
+  ]
+}

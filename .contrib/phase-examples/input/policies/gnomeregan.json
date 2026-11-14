@@ -1,0 +1,23 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "progression:main": {
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
+  },
+  "era:main": {
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
+  },
+  "anniversary:main": {
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
+  },
+  "sod:main": {
+    "gnomeregan.dungeon": {"status": "disabled", "windows": []},
+    "gnomeregan.raid10": {"windows": [{"from": "vanilla.2"}]}
+  },
+  "sod:replay": {
+    "gnomeregan.dungeon": {"status": "disabled", "windows": []},
+    "gnomeregan.raid10": {"windows": [{"from": "vanilla.2"}]}
+  },
+  "progression:replay": {
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$comment": "Comparison fixture · P4. These replay milestones are synthetic. Slot lists select option B Lua files before reading them.",
+  "replays": {
+    "sod:replay": {
+      "after": "vanilla.4.raids",
+      "insert": "fixture.dfc-open",
+      "rules": { "dfc.dungeon": "fixture.dfc-open" }
+    },
+    "progression:replay": {
+      "after": "vanilla.5.war-effort",
+      "insert": "fixture.set2-open",
+      "rules": { "dire-maul.isalien": "fixture.set2-open" }
+    }
+  },
+  "slots": {
+    "brd.gerstahn-sod": ["sod"],
+    "brd.angerforge-sod": ["sod"],
+    "dfc.instance": ["sod"],
+    "dire-maul.classic": ["progression", "era", "anniversary", "sod"],
+    "dire-maul.retail": ["retail"],
+    "bwl.classic-original": ["progression", "era", "anniversary"],
+    "bwl.retail": ["retail"],
+    "bwl.history": ["sod"],
+    "bwl.rework": ["sod"],
+    "aq40.original": ["retail", "progression", "era", "anniversary"],
+    "aq40.history": ["sod"],
+    "aq40.rework": ["sod"],
+    "gnomeregan.normal": ["retail", "progression", "era", "anniversary"],
+    "gnomeregan.history": ["sod"],
+    "gnomeregan.raid": ["sod"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$comment": "Generated Parser input (P2.2–P4). Edit schedule.json for releases; comparison.json holds only the replay and slot fixtures. Run prepare.py to regenerate.",
+  "milestones": ["vanilla.launch", "vanilla.1.raids", "vanilla.2", "vanilla.3", "vanilla.4", "vanilla.5.war-effort", "vanilla.6"],
+  "content": {
+    "raid.bwl.common": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.original": {"windows": [{"from": "vanilla.3"}]},
+    "raid.bwl.draconic-for-dummies": {"status": "unknown", "windows": []},
+    "brd.dungeon": {"windows": [{"from": "start"}]},
+    "brd.second-half": {"windows": [{"from": "start"}]},
+    "dire-maul.common": {"windows": [{"from": "vanilla.2"}]},
+    "dire-maul.isalien": {"windows": [{"from": "vanilla.4"}]},
+    "aq40.common": {"status": "unknown", "windows": []},
+    "aq40.original": {"windows": [{"from": "start"}]},
+    "gnomeregan.dungeon": {"windows": [{"from": "start"}]}
+  }
+}

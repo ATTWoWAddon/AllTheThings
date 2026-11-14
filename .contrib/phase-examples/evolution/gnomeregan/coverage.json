@@ -1,0 +1,48 @@
+{
+  "$comment": "Generated writer owner coverage for each native source alternative.",
+  "alternatives": {
+    "standard": [],
+    "sod": [
+      {
+        "line": 66,
+        "phase": "SOD_PHASE_TWO",
+        "key": "gnomeregan.raid10",
+        "kind": "constructor",
+        "constructor": "i",
+        "identity": "216634"
+      },
+      {
+        "line": 91,
+        "phase": "SOD_PHASE_TWO",
+        "key": "gnomeregan.raid10",
+        "kind": "constructor",
+        "constructor": "i",
+        "identity": "216661"
+      },
+      {
+        "line": 98,
+        "phase": "SOD_PHASE_TWO",
+        "key": "gnomeregan.raid10",
+        "kind": "constructor",
+        "constructor": "i",
+        "identity": "216661"
+      },
+      {
+        "line": 99,
+        "phase": "SOD_PHASE_TWO",
+        "key": "gnomeregan.raid10",
+        "kind": "constructor",
+        "constructor": "i",
+        "identity": "215430"
+      },
+      {
+        "line": 635,
+        "phase": "SOD_PHASE_TWO",
+        "key": "gnomeregan.raid10",
+        "kind": "constructor",
+        "constructor": "d",
+        "identity": "DIFFICULTY.SOD.PLAYER10"
+      }
+    ]
+  }
+}
