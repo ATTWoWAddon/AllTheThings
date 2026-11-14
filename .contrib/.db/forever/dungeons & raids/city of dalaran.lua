@@ -261,7 +261,7 @@ instanceroot(2959, {	-- City of Dalaran
 		}),
 		e(3310, {	-- Lyn the Ignored
 			description = "Summoned by using the Tome of Dalaran on the purple ritual circle in the lower level of the dungeon.",
-			cost = { { "i", 275989, 1 } },	-- Tome of Dalaran
+			attunement = { { "i", 275989 } },	-- Tome of Dalaran
 			creatureID = 247032,	-- Lyn the Ignored
 			groups = {
 				i(273053),	-- Tendonscraper Dagger
