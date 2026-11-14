@@ -1142,6 +1142,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				lvl = 24,
 			}),
 			q(484, {	-- Young Crocolisk Skins
+				sourceQuest = 469,	-- Daily Delivery
 				qg = 2094,	-- James Halloran
 				coord = { 8.5, 55.7, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
