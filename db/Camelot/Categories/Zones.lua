@@ -9199,8 +9199,8 @@ q(4881,{coords={
 [1441]={{21.2,32}}},crs={10617},description="The item that starts this quest is dropped by Galak Messengers.",lvl=23,qis={12564},r=1}),
 q(1118,{coords={
 [1441]={{78.8,77.3}}},lvl=35,maps={1434},qgs={4452},qis={5826},sourceQuests={1117}}),
-q(96136,{c={7},coords={
-[1412]={{33.4,22.4}}},lvl=30,qgs={259119},races={96},u=1,g={
+q(96136,{awp=16001,c={7},coords={
+[1412]={{33.4,22.4}}},lvl=30,qgs={259119},races={96},g={
 i(5178,{b=1,description="You must keep this in your bags forever."})}}),
 q(1531,{c={7},coords={
 [1454]={{37.8,37.4}}},lvl=30,qgs={5892},races={2,6,8,96},g={
@@ -11313,7 +11313,7 @@ q(343,{coords={
 q(353,{coords={
 [1453]={{59.7,33.8}}},qgs={1416},qis={2806},r=2,sourceQuests={1097}}),
 q(579,{coords={
-[1453]={{84.6,24.2}}},qgs={2504},qis={3898},r=2,repeatable=1,g={
+[1453]={{75.2,30.2}}},qgs={2504},qis={3898},r=2,repeatable=1,g={
 i(3899),
 i(2154,{b=1})}}),
 q(1688,{c={9},coords={
@@ -12266,7 +12266,7 @@ q(535,{altQuests={533},coords={
 [1416]={{57.15,69.5}}},cost={{"i",3703,1}},lvl=29,qgs={2333},r=1,g={
 i(3601)}}),
 q(566,{coords={
-[1424]={{62.61,20.76}}},lvl=35,providers={{"o",1763}},r=1,sourceQuests={549},g={
+[1424]={{62.61,20.76}}},lvl=35,providers={{"o",556670}},r=1,sourceQuests={549},g={
 qo(1,{coords={
 [1416]={{56,26.2}}},crs={2306},providers={{"i",3626}}}),
 s(156716,2231,{b=1,f=4,loc=42})}}),
@@ -15894,7 +15894,7 @@ qo(3,{coords={
 s(311884,281294,{b=1,f=1}),
 s(311885,281293,{b=1,f=25})}}),
 q(549,{coords={
-[1424]={{62.61,20.76}}},lvl=17,providers={{"o",1763}},r=1,g={
+[1424]={{62.61,20.76}}},lvl=17,providers={{"o",556670}},r=1,g={
 qo(1,{providers={{"n",2260}}}),
 qo(2,{providers={{"n",2261}}}),
 s(309754,276720,{awp=16001,b=1,f=6,loc=41})}})}),
@@ -20205,7 +20205,7 @@ qo(2,{providers={{"n",259433}}}),
 qo(3,{coords={
 [1420]={{11.4,64.2},{11.6,64.2}}},crs={259431},providers={{"i",270435}}})}}),
 q(99142,{awp=16001,coords={
-[1420]={{57.5,49}}},lvl=5,qgs={10665},races={5},sourceQuests={5482},g={
+[1420]={{57.5,49}}},lvl=5,qgs={10665},r=1,sourceQuests={5482},g={
 qo(1,{coords={
 [1420]={{76.6,62}}},providers={{"i",286204},{"o",694732}}})}}),
 q(91294,{awp=16001,c={2},coords={
