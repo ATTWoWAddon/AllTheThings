@@ -762,7 +762,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
 				provider = { "n", 212209 },	-- Vodyanoi
-				qi = 210499,	-- Marshroom
+				provider = { "i", 210499 },	-- Marshroom
 				coord = { 31.0, 18.0, WETLANDS },
 				classes = { DRUID },
 				groups = { recipe(424718) },	-- Engrave Pants - Starsurge

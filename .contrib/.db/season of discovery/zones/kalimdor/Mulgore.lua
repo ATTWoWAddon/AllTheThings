@@ -988,23 +988,19 @@ maproot(KALIMDOR, MULGORE, {
 				groups = {
 					i(206155, {	-- Rune of Marksmanship
 						classes = { HUNTER },
-						groups = {
-							recipe(410113),	-- Engrave Chest - Master Marksman
-						},
+						groups = { recipe(410113) },	-- Engrave Chest - Master Marksman
 					}),
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-				qg = 206248,	-- Wooden Effigy
-				qi = 206466,	-- Prairie Crown
+				provider = { "n", 206248 },	-- Wooden Effigy
+				provider = { "i", 206466 },	-- Prairie Crown
 				coord = { 37.8, 49.6, MULGORE },
 				cost = { { "i", 206469, 3 } },	-- Prairie Flower
 				groups = {
 					i(206963, {	-- Rune of Natural Potential
 						classes = { DRUID },
-						groups = {
-							recipe(416050),	-- Engrave Chest - Living Seed
-						},
+						groups = { recipe(416050) },	-- Engrave Chest - Living Seed
 					}),
 				},
 			})),

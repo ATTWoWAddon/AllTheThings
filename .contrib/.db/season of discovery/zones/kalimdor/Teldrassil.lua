@@ -1390,15 +1390,13 @@ maproot(KALIMDOR, TELDRASSIL, {
 			}),
 			applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
 				provider = { "n", 206248 },	-- Wooden Effigy
-				qi = 208760,	-- Glade Crown
+				provider = { "i", 208760 },	-- Glade Crown
 				coord = { 66.8, 58.0, TELDRASSIL },
 				cost = { { "i", 208609, 3 } },	-- Glade Flower
 				groups = {
 					i(206963, {	-- Rune of Natural Potential
 						classes = { DRUID },
-						groups = {
-							recipe(416050),	-- Engrave Chest - Living Seed
-						},
+						groups = { recipe(416050) },	-- Engrave Chest - Living Seed
 					}),
 				},
 			})),

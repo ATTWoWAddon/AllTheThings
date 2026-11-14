@@ -809,7 +809,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
 				description = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
 				provider = { "n", 1224 },	-- Young Threshadon
-				qi = 208855,	-- Rainbow Fin Albacore Chum
+				cost = { { "i", 208855, 1 } },	-- 1x Rainbow Fin Albacore Chum
 				coord = { 44.8, 39.2, LOCH_MODAN },
 				classes = { DRUID },
 				groups = { recipe(416049) },	-- Engrave Gloves - Lacerate

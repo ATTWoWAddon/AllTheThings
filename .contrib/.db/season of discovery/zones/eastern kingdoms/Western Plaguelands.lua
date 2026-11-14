@@ -505,13 +505,13 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 			q(5050, {	-- Good Luck Charm
 				allianceQuestData = {
 					qg = 3520,	-- Ol' Emma
-					qi = 12721,	-- Good Luck Half-Charm
+					qi = 12721,	-- Good Luck Half-Charm (QI!)
 					sourceQuest = 5048,	-- Good Natured Emma
 					coord = { 52.4, 41.8, STORMWIND_CITY },
 				},
 				hordeQuestData = {
 					qg = 8403,	-- Jeremiah Payson <Cockroach Vendor>
-					qi = 12721,	-- Good Luck Half-Charm
+					qi = 12721,	-- Good Luck Half-Charm (QI!)
 					sourceQuest = 5049,	-- The Jeremiah Blues
 					coord = { 67.4, 43.8, UNDERCITY },
 				},

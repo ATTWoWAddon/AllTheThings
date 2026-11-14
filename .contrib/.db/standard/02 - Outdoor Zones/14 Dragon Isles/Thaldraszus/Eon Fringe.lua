@@ -290,16 +290,14 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						},
 						questID = 75479,
 						isDaily = true,
-						groups = {
-							i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
-						},
+						groups = { i(206993) },	-- Investi-gator's Pocketwatch (TOY!)
 					}),
 				}),
 				n(VENDORS, {
 					n(207463, {	-- Bartender Blob
 						sourceQuests = { 75986 },	-- Feats Per Minute
 						coord = { 52.1, 81.4, THALDRASZUS },
-						qi = 208449,	-- Melly's Metronographer+++ (QI!)
+						provider = { "i", 208449 },	-- Melly's Metronographer+++ (QI!)
 						groups = {
 							i(208448, {	-- Infinitea
 								description = "Timer starts right after you buy it."

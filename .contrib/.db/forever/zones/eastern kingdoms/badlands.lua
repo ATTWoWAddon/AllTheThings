@@ -267,27 +267,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				coord = { 42.39, 52.93, MAP.BADLANDS },
 				requireSkill = ENGINEERING,
 				lvl = 30,
-				groups = {
-					i(6672),	-- Schematic: Flash Bomb (RECIPE!)
-				},
+				groups = { i(6672) },	-- Schematic: Flash Bomb (RECIPE!)
 			}),
 			q(737, {	-- Forbidden Knowledge
 				allianceQuestData = {
 					qg = 2786,	-- Gerrig Bonegrip
-					qi = 4647,	-- Yagyin's Digest
+					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 735,	-- The Star, the Hand and the Heart [A]
 					coord = { 50.8, 5.6, MAP.IRONFORGE },
 				},
 				hordeQuestData = {
 					qg = 2934,	-- Keeper Bel'dugur
-					qi = 4647,	-- Yagyin's Digest
+					qi = 4647,	-- Yagyin's Digest (QI!)
 					sourceQuest = 736,	-- The Star, the Hand and the Heart [H]
 					coord = { 53.7, 54.5, MAP.UNDERCITY },
 				},
 				lvl = 30,
-				groups = {
-					i(4984),	-- Skull of Impending Doom
-				},
+				groups = { i(4984) },	-- Skull of Impending Doom
 			}),
 			q(714, {	-- Gyro... What?
 				sourceQuest = 713,	-- Coolant Heads Prevail
