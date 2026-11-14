@@ -654,6 +654,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					{ 85.4, 87.0, MAP.SWAMP_OF_SORROWS },
 					{ 83.4, 93.6, MAP.SWAMP_OF_SORROWS },
 				},
+				groups = {
+					i(282004, {	-- Flesheater's Scales
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1063, {	-- Jade <Victim of the Nightmare>
 				description = "Spawns outside of the entrance to the Sunken Temple.",
