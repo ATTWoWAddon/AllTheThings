@@ -931,7 +931,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				},
 			}),
 			q(549, {	-- WANTED: Syndicate Personnel
-				provider = { "o", 1763 },	-- WANTED
+				provider = { "o", 556670 },	-- WANTED
 				coord = { 62.61, 20.76, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 17,
