@@ -191,6 +191,17 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				},
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(287007),	-- Stretched Footpads
+			i(287008),	-- Ogre Magi's Mantle
+			i(287009),	-- Twilight Enforcer's Legs
+			i(287011),	-- Guise of Battle
+			i(287012),	-- Krol'dok Warplate Gauntlets
+			i(287013),	-- Krol'dok Warplate Legplates
+			i(287014),	-- Krol'dok Warplate Pauldrons
+			i(287015),	-- Supreme Smasher
+			i(287016),	-- Shadow-Seer Orb
+		}),
 		e(3450, {	-- Slavecrusher Grox
 			creatureID = 258966,	-- Slavecrusher Grox
 			groups = {
