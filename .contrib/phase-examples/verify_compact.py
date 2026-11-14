@@ -17,20 +17,34 @@ from verify import CONTEXTS, OPTIONS, run
 HERE = Path(__file__).resolve().parent
 
 
+## @brief Read files below a directory into a relative-path and bytes mapping.
+# @param directory Isolated input or fixture directory to inspect or regenerate.
+# @return Relative file paths mapped to their original bytes.
 def contents(directory):
     return {str(path.relative_to(directory)): path.read_bytes()
             for path in directory.rglob("*") if path.is_file()}
 
 
+## @brief Capture directory timestamps and file bytes for before-and-after comparison.
+# @param directory Isolated input or fixture directory to inspect or regenerate.
+# @return Relative paths mapped to nanosecond modification time and file bytes, or None for directories.
+# @details The mapping captures timestamps and original bytes, including the directory itself; it does not compute a digest.
 def fingerprint(directory):
     return {str(path.relative_to(directory)): (path.stat().st_mtime_ns, path.read_bytes() if path.is_file() else None)
             for path in [directory, *directory.rglob("*")]}
 
 
+## @brief Write a JSON fixture in the expected UTF-8 form.
+# @param path Destination JSON fixture path.
+# @param value JSON-serializable fixture value.
 def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+## @brief Find the rules group that owns a compact schedule key.
+# @param key Rule key whose owning rules group is requested.
+# @param schedule Compact schedule document whose rules groups are searched.
+# @return The rules group containing key, rather than the rule value itself.
 def rule(schedule, key):
     return next(entries for entries in schedule["rules"].values() if key in entries)
 
@@ -38,8 +52,15 @@ def rule(schedule, key):
 CHECK_LUA = '''local evaluate = dofile(arg[1])
 local data = dofile(arg[2])
 local mode = arg[3]
+---Find an item route at the requested compact-schedule milestone.
+---@param id integer
+---@param view string
+---@return table
 local function item(id, view)
-    return evaluate.find(data, {itemID=id}, view, function() return true end)
+    return evaluate.find(data, {itemID=id}, view,
+        ---Accept ordinary conditions when testing schedule windows.
+        ---@return boolean
+        function() return true end)
 end
 local prefix = data.context .. ":"
 local common = data.policies[prefix .. "raid.bwl.common"]
@@ -82,6 +103,13 @@ assert(sawUnknown, "independent book evidence cannot disappear under a disabled 
 '''
 
 
+## @brief Check generation, invalid compact inputs and resulting example compilation.
+# @param baseline_output Optional existing A/B/C output directory; None compiles a fresh baseline.
+# @param command Executable prefix for invoking the actual Parser or shared-source harness.
+# @param comparison_path Replay and slot comparison JSON path.
+# @param input_dir Baseline authored example input copied into each temporary case.
+# @param lua Lua 5.1 executable used for route evaluation.
+# @param schedule_path Reviewed compact schedule JSON path.
 def verify_compact(command, lua, input_dir, schedule_path, comparison_path, baseline_output=None):
     schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
     comparison = json.loads(comparison_path.read_text(encoding="utf-8"))
@@ -90,6 +118,10 @@ def verify_compact(command, lua, input_dir, schedule_path, comparison_path, base
     with tempfile.TemporaryDirectory(prefix="att-compact-authoring-") as temporary:
         scratch = Path(temporary)
 
+        ## @brief Create an isolated copy of an input fixture.
+        # @param name Unique temporary case name.
+        # @param source Input directory copied into the isolated case.
+        # @return Isolated case directory containing copied inputs, schedule and comparison JSON.
         def case(name, source=input_dir):
             directory = scratch / name
             directory.mkdir()
@@ -98,10 +130,18 @@ def verify_compact(command, lua, input_dir, schedule_path, comparison_path, base
             write_json(directory / "comparison.json", copy.deepcopy(comparison))
             return directory
 
+        ## @brief Run compact input preparation and assert the expected outcome.
+        # @param check Whether preparation should verify drift without publishing.
+        # @param directory Isolated input or fixture directory to inspect or regenerate.
+        # @param succeeds Whether compact preparation must exit successfully.
+        # @return CompletedProcess from preparation with its exit status checked.
         def generate(directory, succeeds=True, check=False):
             return run(prepare + ["--schedule", directory / "schedule.json", "--comparison", directory / "comparison.json",
                                   "--output", directory / "input"] + (["--check"] if check else []), succeeds=succeeds)
 
+        ## @brief Compile all supported example contexts from a generated input.
+        # @param directory Isolated input or fixture directory to inspect or regenerate.
+        # @param output Directory retaining the compiled A/B/C modules by context.
         def compile_all(directory, output):
             for context in CONTEXTS:
                 for option in OPTIONS:
@@ -169,6 +209,11 @@ def verify_compact(command, lua, input_dir, schedule_path, comparison_path, base
                         assert (output / relative).read_bytes() == (generated_outputs / relative).read_bytes(), "SoD edit changed another flavor/Retail"
                     assertions += 1
 
+        ## @brief Assert that a modified schedule or comparison is rejected without publishing changes.
+        # @param change_comparison Optional callback mutating only the copied replay/slot fixture.
+        # @param change_schedule Optional callback mutating only the copied compact schedule.
+        # @param name Unique temporary case name.
+        # @param raw_schedule Optional raw JSON replacing the copied schedule, including malformed cases.
         def rejected(name, change_schedule=None, change_comparison=None, raw_schedule=None):
             nonlocal assertions
             bad = case(name, base / "input")
@@ -268,6 +313,7 @@ def verify_compact(command, lua, input_dir, schedule_path, comparison_path, base
     print(f"Compact authoring: {assertions} checks passed, including native alias/window/coverage behavior")
 
 
+## @brief Parse verifier arguments and run compact generation checks.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--parser", type=Path, required=True)

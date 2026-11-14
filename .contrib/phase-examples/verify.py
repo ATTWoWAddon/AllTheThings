@@ -24,6 +24,10 @@ EXPECTED_HEADERS = {
 }
 
 
+## @brief Run a command and assert whether it succeeded as expected.
+# @param command Executable and argument tokens; stdout and stderr are captured as text.
+# @param succeeds Whether a zero exit code is required.
+# @return CompletedProcess with captured stdout, stderr and the asserted exit status.
 def run(command, *, succeeds=True):
     result = subprocess.run([str(value) for value in command], capture_output=True, text=True)
     if (result.returncode == 0) != succeeds:
@@ -31,6 +35,12 @@ def run(command, *, succeeds=True):
     return result
 
 
+## @brief Locate the policy input containing a context and key for the selected interface.
+# @param context Flavor:profile context used by this compile or policy lookup.
+# @param key Unqualified policy key whose owning input is requested.
+# @param option Proposed interface A, B or C.
+# @param root Copied example input directory containing the selected interface files.
+# @return Owning JSON path, complete document and mutable context policy map.
 def policy_file(root, option, context, key):
     if option != "C":
         path = root / "profiles" / (context.replace(":", "/") + ".json")
@@ -43,6 +53,7 @@ def policy_file(root, option, context, key):
     raise AssertionError(f"No policy {context}:{key}")
 
 
+## @brief Exercise the three example interfaces, malformed inputs and route invariants.
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--parser", type=Path, required=True, help="actual Parser.exe, or the shared-source local harness DLL")
@@ -111,14 +122,26 @@ assert(#nodes[1].progressionScopes == 2 and nodes[1].progressionScopes[1] == "so
 assert(nodes[2].timeline[1] == "added 1.0" and nodes[2].groups[1].itemID == 19004, "conditioned node must remain")
 assert(#nodes[3].progressionScopes == 1 and nodes[3].progressionScopes[1] == "sod:main:rework", "rework must not inherit original")
 assert(phased.policies[nodes[1].progressionScopes[1]].status == "disabled")
-local route = evaluate.find(phased, {itemID = 19003}, "vanilla.1", function() return true end)
+local route = evaluate.find(phased, {itemID = 19003}, "vanilla.1",
+    ---Accept ordinary conditions while checking inherited scopes.
+    ---@return boolean
+    function() return true end)
 assert(not route.obtainable and #route.routes == 1 and route.routes[1].schedule == "disabled", "an open child cannot bypass the disabled ancestor")
 assert(#route.routes[1].scopeStates == 2 and route.routes[1].scopeStates[2].state == "active", "the child rule must also be evaluated")
-assert(evaluate.find(phased, {itemID = 19005}, "vanilla.1", function() return true end).obtainable, "the independent rework must remain open")
-local conditioned = evaluate.find(phased, {itemID = 19004}, "vanilla.1", function(node) return node.timeline == nil end)
+assert(evaluate.find(phased, {itemID = 19005}, "vanilla.1",
+    ---Accept ordinary conditions for the independent route.
+    ---@return boolean
+    function() return true end).obtainable, "the independent rework must remain open")
+local conditioned = evaluate.find(phased, {itemID = 19004}, "vanilla.1",
+    ---Reject nodes with an ordinary timeline condition.
+    ---@param node table
+    ---@return boolean
+    function(node) return node.timeline == nil end)
 assert(not conditioned.routes[1].conditionsPass, "the visible parent's ordinary condition must remain")
 local r = retail.groups[1].groups
 assert(#r == 3 and r[1].encounterID == 1536 and r[2].timeline, "Retail must retain the flat ordinary shape")
+---Assert that Retail output contains no progression scopes at any depth.
+---@param nodes table[]
 local function noScopes(nodes)
     for _, node in ipairs(nodes) do
         assert(not node.progressionScopes, "Retail must not retain scopes")
@@ -166,6 +189,10 @@ noScopes(retail.groups)
 
         # Compare inputs that differ only in reserved comments at every object
         # level, including selection, catalog, policy, and window objects.
+        ## @brief Add documentation comments recursively for input-consumption checks.
+        # @param documented Whether to add reserved comments at every object level.
+        # @param value JSON fixture value to copy recursively with reserved comments.
+        # @return A recursively copied JSON value with comments added only when requested.
         def with_comments(value, documented):
             if isinstance(value, dict):
                 result = {key: with_comments(child, documented) for key, child in value.items()
@@ -195,6 +222,12 @@ noScopes(retail.groups)
         print("Documented JSON matches comment-free output for all options and contexts")
 
         count = 0
+        ## @brief Compile a mutated fixture and require rejection, optionally checking its diagnostic.
+        # @param context Flavor:profile context used by this compile or policy lookup.
+        # @param diagnostic Optional expected case-insensitive stderr fragment.
+        # @param mutate Callback that changes only this case’s copied input directory.
+        # @param name Unique temporary case name used in failure diagnostics.
+        # @param option Proposed interface A, B or C.
         def rejected(name, option, mutate, context="sod:main", diagnostic=None):
             nonlocal count
             case = scratch / name
@@ -212,7 +245,14 @@ noScopes(retail.groups)
                 raise AssertionError(f"{name}: temporary output leaked")
             count += 1
 
+        ## @brief Produce a fixture mutation for a selected policy.
+        # @param change Callback receiving the mutable policy map and selected key.
+        # @param key Unqualified policy key whose owning input is requested.
+        # @param option Proposed interface A, B or C.
+        # @return Mutation callback applying the chosen change to one copied policy input.
         def edit_policy(option, key, change):
+            ## @brief Apply the supplied policy change to this copied fixture.
+            # @param case Isolated copied input directory to mutate.
             def mutate(case):
                 path, document, policies = policy_file(case, option, "sod:main", key)
                 change(policies, key)
@@ -238,6 +278,9 @@ noScopes(retail.groups)
             }
             for name, (key, change) in cases.items():
                 rejected(f"{option}-{name}", option, edit_policy(option, key, change))
+            ## @brief Introduce a duplicate field into the selected JSON input.
+            # @param case Isolated copied input directory to mutate.
+            # @param option Proposed interface A, B or C.
             def duplicate(case, option=option):
                 path, _, _ = policy_file(case, option, "sod:main", "raid.bwl.sod20")
                 text = path.read_text(encoding="utf-8")
@@ -247,6 +290,9 @@ noScopes(retail.groups)
                 path.write_text(text, encoding="utf-8")
             rejected(f"{option}-duplicate-json", option, duplicate, diagnostic="duplicate")
 
+        ## @brief Replace text in a copied profile fixture.
+        # @param text Replacement profile JSON text, including deliberately invalid fixtures.
+        # @return Mutation callback writing the supplied text into the copied SoD main profile.
         def replace_profile(text):
             return lambda case: (case / "profiles/sod/main.json").write_text(text, encoding="utf-8")
         for index, value in enumerate((None, True, 1, [], {})):
@@ -266,6 +312,8 @@ noScopes(retail.groups)
         for index, invalid in enumerate(("01", "+1", "1.", ".1", "1e", "NaN", "Infinity")):
             rejected(f"json-number-{index}", "A", replace_profile('{"milestones":[' + invalid + '],"content":{}}'))
 
+        ## @brief Remove the selected fragment from a copied input.
+        # @param case Isolated copied input directory to mutate.
         def selected_fragment_missing(case):
             path = case / "selection.json"
             document = json.loads(path.read_text(encoding="utf-8"))
@@ -274,12 +322,16 @@ noScopes(retail.groups)
             selected[slot] = "fragments/not-present.lua"
             path.write_text(json.dumps(document), encoding="utf-8")
         rejected("B-missing-selected-fragment", "B", selected_fragment_missing)
+        ## @brief Add a selection without a corresponding group slot.
+        # @param case Isolated copied input directory to mutate.
         def unused_selection(case):
             path = case / "selection.json"
             document = json.loads(path.read_text(encoding="utf-8"))
             document["sod:main"]["typo-unused"] = None
             path.write_text(json.dumps(document), encoding="utf-8")
         rejected("B-unused-selection", "B", unused_selection, diagnostic="unused")
+        ## @brief Remove a required group selection.
+        # @param case Isolated copied input directory to mutate.
         def missing_selection(case):
             path = case / "selection.json"
             document = json.loads(path.read_text(encoding="utf-8"))
@@ -289,9 +341,13 @@ noScopes(retail.groups)
         rejected("unknown-context", "A", lambda case: None, context="unknown:main")
         rejected("reserved-start-milestone", "A", replace_profile('{"milestones":["start"],"content":{}}'), diagnostic="boundary")
         rejected("duplicate-milestone", "A", replace_profile('{"milestones":["vanilla.1","vanilla.1"],"content":{}}'), diagnostic="duplicate")
+        ## @brief Introduce a duplicate Lua field in a source fixture.
+        # @param case Isolated copied input directory to mutate.
         def duplicate_lua(case):
             (case / "sources.lua").write_text('return { inst(1, { itemID=2, itemID=3 }) }', encoding="utf-8")
         rejected("duplicate-lua-field", "A", duplicate_lua, context="retail", diagnostic="duplicate")
+        ## @brief Insert an unsupported Lua side effect into a source fixture.
+        # @param case Isolated copied input directory to mutate.
         def attempted_effect(case):
             # Even an excluded expression is never executed: arbitrary calls are
             # outside the literal grammar and fail before output publication.
