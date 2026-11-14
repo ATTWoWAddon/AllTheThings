@@ -777,34 +777,24 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				provider = { "o", 408004 },	-- Tangled Blight Pile
 				coord = { 71.8, 21.6, LOCH_MODAN },
 				classes = { DRUID },
-				groups = {
-					recipe(410023),	-- Engrave Pants - Savage Roar
-				},
+				groups = { recipe(410023) },	-- Engrave Pants - Savage Roar
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
 				coord = { 36.6, 20.8, LOCH_MODAN },
 				cost = { { "i", 208823, 1 } },	-- Offering Coin
 				classes = { PRIEST },
-				groups = {
-					recipe(425215),	-- Engrave Chest - Twisted Faith
-				},
+				groups = { recipe(425215) },	-- Engrave Chest - Twisted Faith
 			})),
 			applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
 				coord = { 54.2, 27.0, LOCH_MODAN },
-				groups = {
-					i(208754, {	-- Spell Notes: TENGI RONEERA
-						classes = { MAGE },
-					}),
-				},
+				groups = { i(208754, { classes = { MAGE } }) },	-- Spell Notes: TENGI RONEERA
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 				description = "/kneel at the statue for the rune.",
 				provider = { "n", 209908 },	-- Heretic Idol
 				coord = { 71.8, 27.6, LOCH_MODAN },
 				classes = { PRIEST },
-				groups = {
-					recipe(402849),	-- Engrave Gloves - Shadow Word - Death
-				},
+				groups = { recipe(402849) },	-- Engrave Gloves - Shadow Word - Death
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
 				provider = { "o", 408014 },	-- Gnomish Tome
@@ -814,27 +804,21 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				provider = { "o", 407918 },	-- Empty Trophy Display
 				coord = { 83.6, 65.5, LOCH_MODAN },
 				classes = { HUNTER },
-				groups = {
-					recipe(410110),	-- Engrave Gloves - Beast Mastery
-				},
+				groups = { recipe(410110) },	-- Engrave Gloves - Beast Mastery
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
 				description = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
-				qg = 1224,	-- Young Threshadon
+				provider = { "n", 1224 },	-- Young Threshadon
 				qi = 208855,	-- Rainbow Fin Albacore Chum
 				coord = { 44.8, 39.2, LOCH_MODAN },
 				classes = { DRUID },
-				groups = {
-					recipe(416049),	-- Engrave Gloves - Lacerate
-				},
+				groups = { recipe(416049) },	-- Engrave Gloves - Lacerate
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 				provider = { "o", 407731 },	-- Stonemason's Toolbox
 				coord = { 46.5, 12.7, LOCH_MODAN },
 				classes = { ROGUE },
-				groups = {
-					recipe(424984),	-- Engrave Gloves - Saber Slash
-				},
+				groups = { recipe(424984) },	-- Engrave Gloves - Saber Slash
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
 				provider = { "o", 409731 },	-- Scrolls
@@ -845,9 +829,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				groups = {
 					i(208851, {	-- Libram of Justice
 						classes = { PALADIN },
-						groups = {
-							recipe(410001),	-- Engrave Gloves - Hand of Reckoning
-						},
+						groups = { recipe(410001) },	-- Engrave Gloves - Hand of Reckoning
 					}),
 				},
 			})),

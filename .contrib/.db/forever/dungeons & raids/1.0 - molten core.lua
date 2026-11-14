@@ -92,7 +92,7 @@ root(ROOTS.Instances, {
 			n(FACTIONS, {
 				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					icon = 135861,
-					qg = 13278,	-- Duke Hydraxis
+					cr = 13278,	-- Duke Hydraxis
 					coord = { 79.2, 73.6, MAP.AZSHARA },
 				}),
 			}),

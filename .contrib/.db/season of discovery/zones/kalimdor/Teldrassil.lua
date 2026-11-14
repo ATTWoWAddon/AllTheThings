@@ -1376,9 +1376,7 @@ maproot(KALIMDOR, TELDRASSIL, {
 				groups = {
 					i(205979, {	-- Rune of Flanking
 						classes = { HUNTER },
-						groups = {
-							recipe(425762),	-- Engrave Pants - Flanking Strike
-						},
+						groups = { recipe(425762) },	-- Engrave Pants - Flanking Strike
 					}),
 				},
 			})),
@@ -1388,12 +1386,10 @@ maproot(KALIMDOR, TELDRASSIL, {
 					{ 52.0, 50.6, TELDRASSIL },
 					{ 52.6, 52.4, TELDRASSIL },
 				},
-				groups = {
-					i(18610),	-- Keen Machete
-				},
+				groups = { i(18610) },	-- Keen Machete
 			}),
 			applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
-				qg = 206248,	-- Wooden Effigy
+				provider = { "n", 206248 },	-- Wooden Effigy
 				qi = 208760,	-- Glade Crown
 				coord = { 66.8, 58.0, TELDRASSIL },
 				cost = { { "i", 208609, 3 } },	-- Glade Flower

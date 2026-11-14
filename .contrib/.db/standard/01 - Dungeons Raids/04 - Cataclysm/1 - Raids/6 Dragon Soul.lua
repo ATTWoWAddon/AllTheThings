@@ -48,17 +48,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 									{ "g", 100000000 },	-- 10k gold
 									{ "i", 74246, 1 },	-- Cryptomancer's Decoder Ring
 								},
-								groups = {
-									i(74748),	-- Charged Decoder Ring
-								},
+								groups = { i(74748) },	-- Charged Decoder Ring
 							}),
 							i(74750, {	-- Singed Cipher
-								qg = 55488,	-- Corastrasza
+								provider = { "n", 55488 },	-- Corastrasza
 								coord = { 29.0, 25.0, TWILIGHT_HIGHLANDS },
 								cost = { { "i", 74748, 1 } },	-- Charged Decoder Ring
-								groups = {
-									i(74752),	-- Solved Cipher
-								},
+								groups = { i(74752) },	-- Solved Cipher
 							}),
 						},
 					}),

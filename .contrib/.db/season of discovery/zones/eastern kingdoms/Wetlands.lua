@@ -758,20 +758,14 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 				coord = { 74.0, 69.2, WETLANDS },
 				timeline = { ADDED_1_15_3 },
 				classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
-				groups = {
-					recipe(453689, {	-- Engrave Ring - Mace Specialization
-						classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
-					}),
-				},
+				groups = { recipe(453689, { classes = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID } }) },	-- Engrave Ring - Mace Specialization
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
-				qg = 212209,	-- Vodyanoi
+				provider = { "n", 212209 },	-- Vodyanoi
 				qi = 210499,	-- Marshroom
 				coord = { 31.0, 18.0, WETLANDS },
 				classes = { DRUID },
-				groups = {
-					recipe(424718),	-- Engrave Pants - Starsurge
-				},
+				groups = { recipe(424718) },	-- Engrave Pants - Starsurge
 			})),
 		}),
 		n(VENDORS, {
