@@ -1763,6 +1763,9 @@ maproot(KALIMDOR, MULGORE, {
 				},
 			}),
 			n(3056, {	-- Ghost Howl
+				-- #if BEFORE CATA
+				description = "For this rare mob to appear at one of its random spawn points, you must first speak to Skorn Whitecloud in Bloodhoof Village. It will then appear within 5 to 30 minutes.",
+				-- #endif
 				coords = {
 					-- #if AFTER CATA
                         { 42.2, 15.4, MULGORE },
