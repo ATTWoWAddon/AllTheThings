@@ -12038,9 +12038,11 @@ q(6002,{c={11},coords={
 qo(1,{coords={
 [1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}},u=2})}}),
 q(5929,{c={11},coords={
-[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2}),
+[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2,g={
+qo(1,{providers={{"n",11956}},u=2})}}),
 q(5930,{c={11},coords={
-[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=1,rwp=40003,sourceQuests={5922},u=2}),
+[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=1,rwp=40003,sourceQuests={5922},u=2,g={
+qo(1,{providers={{"n",11956}},u=2})}}),
 q(5923,{c={11},coords={
 [1457]={{34.8,7.8}}},isBreadcrumb=1,lvl=10,nextQuests={5921,6121},qgs={4218},r=2,rwp=40003,u=2}),
 q(5924,{c={11},coords={
@@ -41438,7 +41440,7 @@ n(573,{coords={
 i(933,{awp=100107,f=113,q=1,rwp=40003,u=2}),
 s(119593,4434,{awp=100107,f=4,loc=46,lvl=15,q=2,rwp=40003,u=2})}}),
 n(572,{coords={
-[1436]={{41.7,29.3}}},description="Spawns once a day at approximately 20:00/8 PM server time.",g={
+[1436]={{41.7,29.3}}},description="Spawns once a day in the evening, between about 20:00/8 PM and 22:00/10 PM server time.",g={
 s(117287,1387,{awp=100107,f=26,lvl=14,q=2,rwp=40003,u=2}),
 s(117249,1314,{awp=100107,f=5,loc=44,lvl=15,q=2,rwp=40003,u=2})}}),
 n(1424,{coords={

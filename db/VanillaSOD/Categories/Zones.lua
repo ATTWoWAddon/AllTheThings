@@ -4956,9 +4956,11 @@ r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCh
 r(6795),
 r(6807,{rank=1})}}),
 q(5929,{c={11},coords={
-[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,sourceQuests={5921}}),
+[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,sourceQuests={5921},g={
+qo(1,{providers={{"n",11956}}})}}),
 q(5930,{c={11},coords={
-[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=1,sourceQuests={5922}}),
+[1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=1,sourceQuests={5922},g={
+qo(1,{providers={{"n",11956}}})}}),
 q(5923,{c={11},coords={
 [1457]={{34.8,7.8}}},isBreadcrumb=1,lvl=10,nextQuests={5921,6121},qgs={4218},r=2}),
 q(5924,{c={11},coords={

@@ -11218,7 +11218,7 @@ mnt(59976,{b=1,itemID=44164,lvl=70,q=4,rwp=30100,u=2})}}),
 ach(1289),
 ach(1288)}}),
 inst(753,{awp=30002,coords={
-[123]={{50,11.9}}},isRaid=1,lvl=80,mapID=156,savedInstanceID=624,g={
+[123]={{50,11.9}}},isRaid=1,lore="Overlooking the frozen plains of the Great Dragonblight and the inhospitable wastes of Borean Tundra lies a region known to the denizens of Northrend as Wintergrasp. Seated atop a high plateau, Wintergrasp has remained undisturbed for ages, its icy winds howling unheard amongst the ancient titan fortifications that dot the landscape. The fortress with its domed watchtowers guards the entrance to the Vault of Archavon, which contains titan relics of untold power, protected by ancient giants. It is their task to protect the artifacts, and they are bitter about the intrusion by both sides.\n\nHowever, an abundance of elemental materials and its strategically important titan fortifications are making Wintergrasp the focus of a vicious tug-of-war between the Horde and the Alliance. And then there are the persistent rumors of an ancient titan vault beneath Wintergrasp's keep. One can only marvel at the thought of what treasures may be waiting there...",lvl=80,mapID=156,savedInstanceID=624,g={
 h(-19,{crs={31125,33993,35013,38433},description="These can drop from any of the bosses on any difficulty.",g={
 ach(2081,{providers={{"i",43959},{"i",44083}}}),
 mnt(61465,{b=1,itemID=43959,lvl=40,q=4,r=2}),
@@ -12232,7 +12232,7 @@ s(173171,40577,{b=1,c={2},f=7,loc=46,lvl=80,modID=1,q=4}),
 s(173161,40567,{b=1,c={6},f=7,loc=46,lvl=80,modID=1,q=4}),
 s(201680,40556,{b=1,c={6},f=7,loc=46,lvl=80,modID=1,q=4})}})})}}),
 inst(754,{awp=30002,coords={
-[115]={{87.4,51.1}}},isRaid=1,mapID=162,maps={163,164,165,166,167},savedInstanceID=533,g={
+[115]={{87.4,51.1}}},isRaid=1,lore="Naxxramas looms above the Dragonblight. A necropolis of black stone and frozen plague, torn from the earth and bound to the will of the Scourge. Within its halls, Kel'Thuzad commands the undead host, weaving plague and death from the citadel's frozen heart. It is a fortress of despair, its shadow falling upon Wintergarde Keep and its corridors echoing with the whispers of the damned, and with the cold promise of what awaits those who dare breach its gates.",mapID=162,maps={163,164,165,166,167},savedInstanceID=533,g={
 d(3,{lvl=80,g={
 h(-12,{
 ach(578),
@@ -12727,7 +12727,7 @@ s(173022,40403,{b=1,f=3,lvl=80,q=4}),
 s(201667,40398,{b=1,f=4,loc=46,lvl=80,q=4}),
 i(40399,{b=1,f=52,lvl=80,q=4})}})})}})}}),
 inst(755,{awp=30002,coords={
-[115]={{60,56.7}}},isRaid=1,lvl=80,mapID=155,savedInstanceID=615,g={
+[115]={{60,56.7}}},isRaid=1,lore="Deep beneath Wyrmrest Temple lies the Obsidian Sanctum. A black dragonflight domain of living stone and shadow, meant as a refuge for the brood's eggs. But something else now stirs in the dark: a clutch of twilight dragon eggs, pulsing with a power never meant to be born. Sartharion the Onyx Guardian stands watch over them, and the Wyrmrest Accord seeks to see the twilight ended before it can hatch.",lvl=80,mapID=155,savedInstanceID=615,g={
 d(3,{
 h(-12,{
 ach(624,{
@@ -12804,7 +12804,7 @@ i(40432,{b=1,f=53,lvl=80,q=4}),
 i(43345,{b=1,f=113,q=4}),
 i(43346,{b=1,description="Contains gold.",q=4})}})}})}}),
 inst(756,{awp=30002,coords={
-[114]={{27.5,26.6}}},isRaid=1,lvl=80,mapID=141,savedInstanceID=616,g={
+[114]={{27.5,26.6}}},isRaid=1,lore="Deep within the Nexus of Coldarra, at a confluence of ley lines where the world's magic flows, lies the Eye of Eternity: The seat of power for Malygos the Spell-Weaver and the blue dragonflight. Driven mad by grief, the Aspect of Magic has awakened to a world he believes has abused magic recklessly, and so he has begun siphoning all latent arcane energy into the Focusing Iris within his sanctum, intent on hoarding it from the 'unworthy'. His war against the Kirin Tor has already begun, and only by breaching his domain can the Nexus War be ended before all magic is bound to his will.",lvl=80,mapID=141,savedInstanceID=616,g={
 d(3,{
 h(-45,{
 q(13384,{coords={
@@ -12882,7 +12882,7 @@ i(40531,{b=1,f=53,lvl=80,modID=1,q=4}),
 i(44651,{q=1}),
 crit(5890,{achID=1658,id=4})}})})}}),
 inst(759,{awp=30100,coords={
-[120]={{41.5,17.9}}},isRaid=1,lvl=80,mapID=147,maps={148,149,150,151,152},phase=31,savedInstanceID=603,g={
+[120]={{41.5,17.9}}},isRaid=1,lore="Beneath the storm-wracked mountains of the Storm Peaks lies a titan fortress whose gates were never meant to open. Ulduar is a prison built by Titans to contain Yogg-Saron, the Old God of Death, whose whispers bleed through the stone and into the dreams of Northrend. For millennia the facility held, but the prison weakens, and its keepers have fallen silent. Now champions descend into the ancient halls to confront the horror the titans could not destroy, before its influence spreads beyond the reach of any cell.",lvl=80,mapID=147,maps={148,149,150,151,152},phase=31,savedInstanceID=603,g={
 ah(46017,{c={2,5,7,10,11},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",isRaid=1,phase=3101,type="i",g={
 ach(3142,{c={2,5,7,10,11},providers={{"i",46017}},sourceQuests={13629}}),
 q(13622,{cost={{"i",45038,30}},qss={45039}}),
@@ -13664,7 +13664,7 @@ i(45530,{b=1,f=52,lvl=80,modID=1,q=4}),
 i(45522,{b=1,f=53,lvl=80,modID=1,q=4}),
 crit(9967,{achID=2893})}})}})}}),
 inst(757,{awp=30200,coords={
-[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=172,maps={173},phase=32,savedInstanceID=649,g={
+[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,lore="In the shadow of Icecrown Citadel, the Argent Crusade has raised the Crusaders' Coliseum. A ring of consecrated stone where the Horde and Alliance are tested to forge champions for the march on the Lich King's gates.",lvl=80,mapID=172,maps={173},phase=32,savedInstanceID=649,g={
 h(-12,{
 ach(3917),
 ach(3918),
@@ -15092,7 +15092,7 @@ s(176781,47526,{b=1,f=23,lvl=80,modID=1,q=4,r=2,u=2}),
 s(176763,47506,{b=1,f=25,lvl=80,modID=1,q=4,r=2,u=2}),
 s(176780,47525,{b=1,f=28,lvl=80,modID=1,q=4,r=1,u=2})}})}})})}}),
 inst(758,{awp=30300,coords={
-[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=186,maps={187,188,189,190,191,192,193},phase=33,savedInstanceID=631,g={
+[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,lore="Perched upon the frozen glacier of Icecrown, the Icecrown Citadel rises as the Scourge's greatest fortress. A spire of saronite and ice built around the Frozen Throne itself. Deep within its fissure sits the Lich King, master of the undead, who commands his countless minions from the throne that once held the spirit of Ner'zhul. It is the last bastion of his power, and the final hurdle for those who would see the Scourge ended.",lvl=80,mapID=186,maps={187,188,189,190,191,192,193},phase=33,savedInstanceID=631,g={
 ah(49623,{c={1,2,6},description="These quests can only be completed on 25-Man Normal or Heroic difficulty.",isRaid=1,lvl=80,phase=3301,type="i",g={
 q(24545,{maps={115},minReputation={1156,3000},qgs={37120},g={
 qo(1,{coords={
@@ -16537,7 +16537,7 @@ s(178683,50734,{b=1,f=23,lvl=80,modID=1,q=4}),
 s(178682,50733,{b=1,f=33,lvl=80,modID=1,q=4}),
 i(51315,{b=1,q=4})}})})})}}),
 inst(761,{awp=30305,coords={
-[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,lvl=80,mapID=200,phase=3302,savedInstanceID=724,g={
+[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,lore="Beneath Wyrmrest Temple, the Ruby Sanctum has long stood as the red dragonflight's most sacred chamber. Home to its largest clutch of eggs and the future of the brood. But its guardians lie slain and its wards shattered: the black dragonflight has breached the sanctum, led by Halion, the Twilight Destroyer, a herald of Deathwing come to shatter the Wyrmrest Accord and crush any who stand in his master's path. The red flight's future now rests on those who descend into its halls.",lvl=80,mapID=200,phase=3302,savedInstanceID=724,g={
 h(-45,{
 q(26013,{coords={
 [115]={{59.7,54.6}}},qgs={27990},sourceQuests={26012}}),

@@ -6860,7 +6860,7 @@ s(26192,53437,{b=1,f=7,loc=42}),
 s(75642,131361,{awp=70003,b=1,f=6,loc=45})}}),
 q(9364,{c={8},coords={
 [76]={{29.6,40.6}}},crs={6190,6193,6194,6195,6196,16479},lvl=30,qgs={8379},qis={23250},rwp=40003,sourceQuests={9362},u=2,g={
-r(28272,{c={8},itemID=4142,requireSkill=904,u=2})}}),
+r(28272,{c={8},itemID=4142,u=2})}}),
 q(14130,{awp=40003,coords={
 [76]={{55.4,52.1}}},lvl=5,qgs={35867},r=1,sourceQuests={14407}}),
 q(14324,{awp=40003,crs={36130},lvl=5,qis={49174},r=1,sourceQuests={14323},g={
@@ -12756,9 +12756,9 @@ q(6001,{c={11},coords={
 q(6002,{c={11},coords={
 [88]={{76.4,27.6}}},cost={{"i",15710,1}},maps={10},qgs={3033},r=1,rwp=40003,sourceQuests={5932},u=2}),
 q(5929,{c={11},coords={
-[80]={{56.2,30.4}}},qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2}),
+[80]={{56.2,30.4}}},crs={11956},qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2}),
 q(5930,{c={11},coords={
-[80]={{56.2,30.4}}},qgs={11802},r=1,rwp=40003,sourceQuests={5922},u=2}),
+[80]={{56.2,30.4}}},crs={11956},qgs={11802},r=1,rwp=40003,sourceQuests={5922},u=2}),
 q(5923,{c={11},coords={
 [89]={{34.8,7.8}}},isBreadcrumb=1,nextQuests={5921,6121},qgs={4218},r=2,rwp=40003,u=2}),
 q(5924,{c={11},coords={
@@ -43580,7 +43580,7 @@ n(573,{coords={
 i(933,{awp=100107,f=113}),
 s(1719,4434,{awp=100107,f=4,loc=46,lvl=7})}}),
 n(572,{coords={
-[52]={{41.7,29.3}}},description="Spawns once a day at approximately 20:00/8 PM server time.",g={
+[52]={{41.7,29.3}}},description="Spawns once a day in the evening, between about 20:00/8 PM and 22:00/10 PM server time.",g={
 s(258,1387,{awp=100107,f=26,lvl=7}),
 s(235,1314,{awp=100107,f=5,loc=44,lvl=7})}}),
 n(1424,{coords={
@@ -56293,7 +56293,7 @@ n(29494,{coords={
 [125]={{49.6,72.6}}},g={
 s(21545,44655,{f=28,lvl=27})}}),
 n(32712,{description="This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",g={
-r(28272,{c={8},requireSkill=904})}}),
+r(28272,{c={8}})}}),
 n(32419,{coords={
 [125]={{67.4,32.2}}},description="Umbiwa is walking around in the Tavern.",r=1,sym={{"sub","common_vendor",32420}}}),
 n(28991,{coords={
@@ -88735,7 +88735,7 @@ n(93543,{coords={
 [627]={{39.6,35.1}}},g={
 i(139599,{b=1,f=52,lvl=40,spellID=220989})}}),
 n(97529,{description="Wanders around the city.",g={
-r(28272,{c={8},requireSkill=904})}}),
+r(28272,{c={8}})}}),
 n(108468,{coords={
 [627]={{43.2,46.6}}},description="This vendor is not always present.",g={
 mnt(213115,{b=1,cost=20000000000,itemID=137570,lvl=10}),
@@ -165995,11 +165995,9 @@ q(98428,{coords={
 q(96643,{coords={
 [2509]={{51.2,62.8}}},isDaily=1,qgs={262880},sourceQuests={98388}}),
 q(96644,{coords={
-[2509]={{51.2,62.8}}},isDaily=1,qgs={262880},sourceQuests={98388},g={
-i(278470)}}),
+[2509]={{51.2,62.8}}},isDaily=1,qgs={262880},qis={278470},sourceQuests={98388}}),
 q(96640,{coords={
-[2509]={{51.2,62.8}}},isDaily=1,qgs={262880},g={
-i(275060)}})}}),
+[2509]={{51.2,62.8}}},isDaily=1,qgs={262880},qis={275060}})}}),
 q(98388,{coords={
 [2509]={{47.2,60.8},{53.9,39.5}}},qgs={262798,271885},g={
 o(675629,{
@@ -166028,9 +166026,7 @@ q(95972,{coords={
 [2509]={{43.9,30.1}}},qgs={263346},repeatable=1,g={
 crit(116189,{achID=63598,id=10})}}),
 q(95952,{coords={
-[2509]={{44.4,53.1}}},qgs={263472},repeatable=1,g={
-i(271864),
-i(271863),
+[2509]={{44.4,53.1}}},qgs={263472},qis={271863,271864},repeatable=1,g={
 crit(116184,{achID=63598,id=6})}}),
 q(95573,{coords={
 [2509]={{49.4,56.9}}},qgs={261995},repeatable=1,g={
@@ -166132,13 +166128,13 @@ o(668602,{coords={
 [2509]={{56.5,22.9}}},questID=98040,g={
 crit(116418,{achID=63610,id=12})}})}}),
 o(649651,{coords={
-[2613]={{68.6,15.66}}},cost={{"i",280003,1}},g={
+[2613]={{67.9,30}}},cost={{"i",280003,1}},g={
 i(278534)}}),
 o(671500,{coords={
 [2509]={{48.5,25.76}}},cost={{"i",280006,1}},g={
 i(278523)}}),
 o(671508,{coords={
-[2638]={{36.6,25.3}}},cost={{"i",280005,1}},g={
+[2638]={{36.9,22.8}}},cost={{"i",280005,1}},g={
 i(278517)}}),
 o(671498,{coords={
 [2509]={{41.7,53.6},{42.7,12.5},{47.5,38.5},{52.5,53.9},{53.5,18.5}}},cost={{"i",280004,1}},description="Will only show up once you have looted the Corroded Key, in one of 5 random locations",g={
@@ -166154,7 +166150,7 @@ n(262880,{coords={
 i(281223,{cost={{"i",273000,1}},f=55,g={
 cu(3448)}})}}),
 n(272751,{coords={
-[2509]={{51.2,62.4}}},g={
+[2509]={{51.2,62.4}}},sourceQuests={98388},g={
 en(279358,{cost={{"c",3448,25000}},questID=98066,spellID=1306601,sym={{"select","sourceID",308585,308586,308587,308588,308589,308597,310113,310114,310115,310116,310117,310118,310119,310120,310121,310122,310123,310124,310125}},tmogSetID=5915}),
 en(279230,{cost={{"c",3448,10000}},questID=98022,spellID=1306358,sym={{"select","sourceID",308592,308582,308583,310084,310082,310087,310081,310083,310086,310080,310085,311032}},tmogSetID=5830}),
 en(279224,{cost={{"c",3448,10000}},questID=98014,spellID=1306321,sym={{"select","sourceID",308590,308579,310108,310106,310111,310105,310107,310110,310104,310109,308591,311029}},tmogSetID=5827}),

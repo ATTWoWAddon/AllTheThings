@@ -7859,6 +7859,8 @@ qo(1,{crs={7855,7856,7857,7858,7883,8203,15685},providers={{"i",20519}}})}}),
 q(648,{coords={
 [1446]={{60.2,64.6}}},lvl=43,qgs={7784},sourceQuests={351},g={
 s(159448,9643,{b=1,f=8}),
+s(304943,270102,{awp=16001,b=1,f=5,loc=43}),
+s(304944,270103,{awp=16001,b=1,f=6,loc=43}),
 s(159449,9644,{b=1,f=1})}}),
 q(864,{coords={
 [1446]={{52.4,28.4}}},lvl=38,maps={1458},qgs={7407},qis={8527},r=1,sourceQuests={654},g={
@@ -13325,7 +13327,8 @@ q(673,{coords={
 qo(1,{coords={
 [1417]={{29,64}}},crs={2783},providers={{"i",4510}}}),
 s(157800,4543,{b=1,f=5,loc=40}),
-s(157801,4545,{b=1,f=4,loc=43})}}),(function(t)if _.ClassIndex==4 then	t.r=nil t.nmr=nil end	return t end)(
+s(157801,4545,{b=1,f=4,loc=43}),
+s(304916,270073,{awp=16001,b=1,f=6,loc=43})}}),(function(t)if _.ClassIndex==4 then	t.r=nil t.nmr=nil end	return t end)(
 q(92867,{awp=16001,coords={
 [1417]={{27,57.2}}},description="Horde rogues can also pick this up: while you wear the Syndicate Uniform from the rogue quest The Syndicate Sting, Groundskeeper Lomar treats you as Alliance.",lvl=32,qgs={219},r=2,g={
 qo(1,{coords={
@@ -20484,6 +20487,7 @@ qo(1,{coords={
 [1425]={{46.1,65.5},{46.2,65.2},{46.7,66.3},{46.9,64.2},{47.2,67.9},{47.7,65.3},{48.2,68.4},{48.4,65.9},{48.8,67.4}}},crs={4467},providers={{"i",279225},{"o",669105}}})}}),
 q(836,{coords={
 [1425]={{49.4,37.6}}},lvl=43,qgs={7806},sourceQuests={485},g={
+s(304942,270101,{awp=16001,b=1,f=5,loc=47}),
 s(159450,9645,{b=1,f=4,loc=47}),
 s(159451,9646,{b=1,f=7,loc=47})}}),
 q(7847,{coords={
@@ -21176,8 +21180,7 @@ s(314749,283460,{f=5,loc=45,lvl=7})}}),
 n(274300,{awp=16001,coords={
 [1420]={{16,67.2},{17.4,68.8},{19.2,64.8},{19.4,64.4},{19.6,70.6},{19.8,65}}}}),
 n(276061,{awp=16001,coords={
-[1420]={{52,55},{52.8,56.4},{53,58.6}}},g={
-i(255154)}}),
+[1420]={{52,55},{52.8,56.4},{53,58.6}}}}),
 n(1911,{coords={
 [1420]={{58.8,27.2},{62.6,28.6}}},g={
 s(157727,4303,{f=23,lvl=9})}}),
@@ -21756,7 +21759,8 @@ s(157259,3344,{b=1,f=4,loc=45}),
 s(157258,3342,{b=1,f=10}),
 i(2842)}}),
 q(3861,{cost={{"i",11109,1}},description="Simply target any Chicken and spam |cFFFFD700/chicken|r at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",maps={1413,1420,1424,1429,1431,1433,1436,1445},qgs={620},r=2,repeatable=1,g={
-p(5004,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",itemID=11110,npcID=7392,spellID=13548})}}),
+o(161513,{
+p(5004,{b=1,description="A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",itemID=11110,npcID=7392,spellID=13548})})}}),
 q(6281,{coords={
 [1436]={{56.4,52.6}}},lvl=10,maps={1453},qgs={523},qis={15998},races={1},sourceQuests={6181}}),
 q(1076,{coords={
@@ -21775,7 +21779,7 @@ r(2542,{itemID=2697,learnedAt=50,requireSkill=185,skillID=2939})}}),
 q(92909,{awp=16001,coords={
 [1436]={{51.6,32.2}}},lvl=8,qgs={253395},r=2,g={
 qo(1,{providers={{"i",255007}}}),
-qo(2,{providers={{"i",255010}}})}}),
+qo(2,{crs={36,114,115},providers={{"i",255010}}})}}),
 q(92910,{awp=16001,lvl=8,qss={255155},r=2,requireSkill=202}),
 q(92911,{awp=16001,coords={
 [1436]={{51.6,32.2}}},cost={{"i",4405,1},{"i",4363,4},{"i",255007,8}},lvl=8,qgs={253395},r=2,requireSkill=202,sourceQuests={92910},g={
@@ -22006,7 +22010,6 @@ i(723),
 i(731,{crs={157,454}}),
 i(1401,{crs={501},f=55,lvl=4,spellID=833}),
 s(156613,2087,{crs={830},f=5,loc=42,lvl=8}),
-i(255010,{awp=16001,crs={36,114,115}}),
 i(1274,{crs={36,114,115,480,573}}),
 s(156614,2088,{crs={831},f=20,lvl=10}),
 i(2091,{coords={
