@@ -5557,7 +5557,11 @@ namespace ATT
             {
                 if (Objects.SKILL_ID_CONVERSION_TABLE.TryGetValue(requiredSkill, out long newRequiredSkill))
                 {
-                    data["requireSkill"] = newRequiredSkill;
+                    // Skill lines converted to 0 (e.g. class talent trees and pet families) are not a requirement
+                    if (newRequiredSkill == 0)
+                        data.Remove("requireSkill");
+                    else
+                        data["requireSkill"] = newRequiredSkill;
                 }
                 else
                 {

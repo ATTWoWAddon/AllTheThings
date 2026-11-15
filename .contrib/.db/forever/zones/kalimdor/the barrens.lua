@@ -2267,8 +2267,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						provider = { "n", 6238 },	-- Big Will
 						coord = { 68.6, 48.6, MAP.THE_BARRENS },
 					}),
-					recipe(2458, { _drop = { "requireSkill" }}),	-- Berserker Stance
-					--recipe(20252, { _drop = { "requireSkill" }}),	-- Intercept (Rank 1)
+					recipe(2458),	-- Berserker Stance
+					--recipe(20252),	-- Intercept (Rank 1)
 				},
 			}),
 			q(905, {	-- The Angry Scytheclaws
