@@ -1959,9 +1959,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					{ 53.0, 58.6, MAP.TIRISFAL_GLADES },
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = {
-					i(255154),	-- Ruined Gyrostabilizer
-				},
 			}),
 			n(1911, {	-- Deeb
 				coords = {
