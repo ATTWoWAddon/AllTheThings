@@ -11,6 +11,7 @@ on:
 permissions:
   issues: write
 
+# Serialize updates for each issue so overlapping events do not race to label it.
 concurrency:
   group: issue-flavor-triage-${{ github.event.issue.number || github.run_id }}
   cancel-in-progress: false
@@ -35,6 +36,8 @@ jobs:
           import subprocess
           from pathlib import Path
 
+          # Keep form choices explicit: environments and free-text mentions must not
+          # select labels. The two headings cover the existing issue-form variants.
           FLAVORS = {
               "Retail": "flavor:retail",
               "Classic Progression (MoP)": "flavor:progression",
@@ -49,6 +52,8 @@ jobs:
           HEADINGS = {"WoW Flavor", "Which WoW Flavors Does This Proposal Apply To?"}
 
 
+          # Read exactly one Flavor section outside fenced code, accepting only
+          # known choices. Reject ambiguous or malformed input instead of guessing.
           def parse_flavors(body):
               sections, current, fence = [], None, None
               for line in (body or "").splitlines():
@@ -81,8 +86,9 @@ jobs:
               return sorted({FLAVORS[value] for value in values if value in FLAVORS})
 
 
+          # Use gh for authenticated JSON requests and flatten paginated responses.
+          # Pass payloads through stdin, never through shell-interpolated issue text.
           def api(path, *, labels=None, paginate=False):
-              # No shell, no interpolated issue text, no downloaded code or dependencies.
               command = ["gh", "api", path, "--method", "GET" if labels is None else "POST"]
               if paginate:
                   command += ["--paginate", "--slurp"]
@@ -96,6 +102,9 @@ jobs:
               return [item for page in data for item in page] if paginate else data
 
 
+          # Classify only open, never-classified issues using their latest body.
+          # Existing labels and label history preserve maintainer edits and removals;
+          # missing repository labels stop the update rather than creating new ones.
           def triage(repo, number, request=api):
               base = f"repos/{repo}"
               issue_path = f"{base}/issues/{number}"
@@ -119,6 +128,8 @@ jobs:
               print("Added: " + ", ".join(labels))
 
 
+          # Exercise form parsing and label-protection decisions without network
+          # access. A failed assertion stops the run before any real issue mutation.
           def self_test():
               print("Running offline self-tests; all API calls below are mocked.")
               def body(value):
@@ -160,6 +171,8 @@ jobs:
               print("Flavor parser and mocked API self-tests passed.")
 
 
+          # Always validate the rules first. Only supported issue events reach the
+          # live API; manual dispatch remains an offline diagnostic test run.
           if __name__ == "__main__":
               self_test()
               if os.environ.get("GITHUB_EVENT_NAME") == "issues":
