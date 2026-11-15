@@ -1017,5 +1017,15 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				9622,	-- U'cha (Gorilla, 55, Un'Goro Crater)
 			},
 		},
+		
+		{
+			recipeID = 1310612,	-- Trickster's Dance [Rank 1]
+			rank = 1,
+			lvl = 20,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				277645,	-- Gray Fox (Fox, 22-23, Duskwood)
+			},
+		},
 	}),
 })})});
