@@ -533,6 +533,9 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 
 root(ROOTS.HiddenQuestTriggers, {
 	inst(237, {	-- The Temple of Atal'hakkar
+		q(96185, {	-- Completed in the temple after killing Atal'alarion (Sammy's report, Nov 14)
+			timeline = { TIMELINE.ADDED_1_60_1 },
+		}),
 		q(96186, {	-- Completed in the temple, likely after killing the troll bosses (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
 		}),
