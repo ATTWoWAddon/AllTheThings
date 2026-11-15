@@ -826,7 +826,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			q(97222, {	-- Gatehouse Goods
 				sourceQuest = 97220,	-- Philmor's Favor
 				qg = 483,	-- Elaine Trias <Mistress of Cheese>
-				coord = { 60.4, 63.4, MAP.STORMWIND_CITY },
+				coord = { 66.4, 73.6, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
