@@ -545,6 +545,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(96188, {	-- Completed in the temple after killing the two dragons before the final boss (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
 		}),
+		q(96189, {	-- Completed in the temple after killing the Shade of Eranikus (Sammy's report, Nov 14)
+			timeline = { TIMELINE.ADDED_1_60_1 },
+		}),
 		q(96190, {	-- Completed in the temple after killing the Avatar of Hakkar (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
 		}),
