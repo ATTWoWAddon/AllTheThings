@@ -647,6 +647,12 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 43,
 				groups = {
 					i(9643),	-- Optomatic Deflector
+					i(270102, {	-- Projectile Redirectors
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270103, {	-- Reloading Assist Armbands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(9644),	-- Thermotastic Egg Timer
 				},
 			}),
