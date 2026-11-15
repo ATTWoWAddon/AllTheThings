@@ -156,9 +156,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 				groups = {
-					i(11110, {	-- Westfall Chicken (PET!)
-						provider = { "o", 161513 },	-- Farm Chicken Egg
-						description = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+					o(161513, {	-- Farm Chicken Egg
+						i(11110, {	-- Westfall Chicken (PET!)
+							description = "A Horde player can get this pet if they have an Alliance character complete the quest itself and allow the Horde player to loot the egg.",
+						}),
 					}),
 				},
 			}),
