@@ -206,6 +206,11 @@ maproot(KALIMDOR, MOONGLADE, {
 				timeline = { REMOVED_4_0_3 },
 				classes = { DRUID },
 				lvl = 10,
+				groups = {
+					objective(1, {	-- 0/1 Seek out the Great Bear Spirit and learn what it has to share with you about the nature of the bear.
+						provider = { "n", 11956 },	-- Great Bear Spirit
+					}),
+				},
 			},
 			q(5923, {	-- Heeding the Call [Darnassus]
 				qg = 4218,	-- Denatharion <Druid Trainer>
