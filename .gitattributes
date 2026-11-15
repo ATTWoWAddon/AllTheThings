@@ -181,3 +181,6 @@ docs export-ignore
 /.contrib/.db/**/*.bat text eol=crlf
 /.contrib/.db/*.py text eol=lf
 /.contrib/.db/**/*.py text eol=lf
+
+/.contrib/.raw/ItemDB/*.lua text eol=crlf
+/.contrib/.raw/ItemDB/README.txt text eol=lf

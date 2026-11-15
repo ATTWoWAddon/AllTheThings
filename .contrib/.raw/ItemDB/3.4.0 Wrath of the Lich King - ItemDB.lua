@@ -545435,7 +545435,7 @@ for i,o in pairs(ItemDB) do
 			end
 		end
 	end
-	
+
 	-- This part only exists for us to find weird items.
 	if o.otherRequirements then
 		o.otherRequirements = nil;
