@@ -1530,6 +1530,7 @@ localize(L.HEADER_NAMES, {
 	[-782] = "CN Promotions (Classic)",
 	[-800] = "Alliance Outrunners",
 	[-813] = "Tricks and Treats of Northrend",
+	[-823] = "Moonwell",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -1569,6 +1570,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
+	[-823] = "Tailors make Mooncloth while standing at a Moonwell. Coordinates are for select Moonwells around the world.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1751,6 +1753,7 @@ localize(L.HEADER_ICONS, {
 	[-782] = _.asset("expansion_wotlk"),
 	[-800] = 236449,
 	[-813] = 133982,
+	[-823] = 134754,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

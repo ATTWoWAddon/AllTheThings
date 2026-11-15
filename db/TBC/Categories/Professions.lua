@@ -623,8 +623,14 @@ r(13229,{lvl=48}),
 r(13230,{lvl=56}),
 r(27283,{awp=20003,lvl=64,phase=17})})}}),
 prof(393),
-prof(197,{awp=20003,g={
-x(2,{requireSkill=197,g={
+prof(197,{
+h(-823,{coords={
+[1440]={{60,72}},
+[1453]={{21,53}},
+[1457]={{38.7,85.2}},
+[1942]={{13.13,26.23}},
+[1952]={{45.02,23.54}}},requireSkill=197,sym={{"select","itemID",14342}}}),
+x(2,{awp=20003,requireSkill=197,g={
 h(-45,{awp=20005,phase=17,requireSkill=197,rwp=40003,g={
 q(10831,{altQuests={10832,10833},coords={
 [1955]={{66.5,69.3}}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={1946},qgs={22208},requireSkill=197,g={
@@ -642,5 +648,5 @@ r(26801,{requireSkill=197})}}),
 q(10832,{altQuests={10831,10833},coords={
 [1955]={{66.6,68.4}}},description="Upon finishing this quest, you will become a Spellfire Tailor.",lvl=60,maps={1953},qgs={22213},requireSkill=197,g={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197}),
-r(26797,{requireSkill=197})}})}})}})}})}})
+r(26797,{requireSkill=197})}})}})}})})}})
 end)

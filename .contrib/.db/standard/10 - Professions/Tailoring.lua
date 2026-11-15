@@ -10,6 +10,29 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 		ach(18885),	-- Quite the Quilt I
 		ach(18903),	-- Ton of Tops (automated)
 	})),
+	n(MOONWELL, {
+		coords = {
+			-- #if BEFORE 4.0.3
+			{ 38.7, 85.2, DARNASSUS },	-- Temple of the Moon
+			{ 21.0, 53.0, STORMWIND_CITY },	-- The Park
+			{ 60.0, 72.0, ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but redundant on practicality.)
+			-- #else
+			{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
+			{ 57.11, 37.52, WETLANDS },	-- Greenwarden's Grove
+			{ 48.05, 18.54, DARNASSUS },	-- The Howling Oak
+			{ 10.77, 74.71, AZSHARA },	-- Talrendis Point
+			{ 49.06, 33.58, DUSKWOOD },	-- Twlight Grove (exists pre 4.0.3, but this area is then infested with world bosses.)
+			-- #endif
+			-- #if AFTER 2.0.1
+			{ 13.13, 26.23, GHOSTLANDS },	-- Shalandis Isle
+			{ 45.02, 23.54, TEROKKAR_FOREST },	-- Cenarion Thicket
+			-- #endif
+		},
+		-- #if BEFORE 2.4.3
+		OnTooltip = FUNCTION_TEMPLATES.GenerateOnTooltipSpellCooldownRemaining(18560),	-- Mooncloth
+		-- #endif
+		sym = { { "select", "itemID", 14342 } },	-- Mooncloth
+	}),
 	expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 		n(ACHIEVEMENTS, {
 			ach(17499, {	-- Renowned Tailoring Specialist

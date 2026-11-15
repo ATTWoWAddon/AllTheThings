@@ -1824,8 +1824,5 @@ i(14048,{q=1}),
 i(4305,{q=1}),
 i(2997,{q=1}),
 i(213379,{awp=11501,phase=1606,q=3}),
-i(14342,{coords={
-[1440]={{60,72}},
-[1453]={{21,53}},
-[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world.",q=1})})})}})
+i(14342,{q=1})})})}})
 end)

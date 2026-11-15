@@ -3838,14 +3838,7 @@ root(ROOTS.Craftables, {
 			i(14048),	-- Bolt of Runecloth
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
-			i(14342, {	-- Mooncloth
-				description = "Coordinates are for select Moonwells around the world.",
-				coords = {
-					{ 43.10, 80.27, MAP.DARNASSUS },	-- Temple of the Moon
-					{ 21.0, 53.0, MAP.STORMWIND_CITY },	-- The Park
-					{ 60.0, 72.0, MAP.ASHENVALE },	-- Moonwell of Cleansing
-				},
-			}),
+			i(14342),	-- Mooncloth
 		}),
 	}),
 });

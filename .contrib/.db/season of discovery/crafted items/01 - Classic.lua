@@ -4561,14 +4561,7 @@ root(ROOTS.Craftables, {
 			i(4305),	-- Bolt of Silk Cloth
 			i(2997),	-- Bolt of Woolen Cloth
 			applyclassicphase(SOD_PHASE_TWO, i(213379, {timeline = { ADDED_1_15_1 }})),	-- Hyperconductive Arcano-Filament
-			i(14342, {	-- Mooncloth
-				description = "Coordinates are for select Moonwells around the world.",
-				coords = {
-					{ 43.10, 80.27, DARNASSUS },	-- Temple of the Moon
-					{ 21.0, 53.0, STORMWIND_CITY },	-- The Park
-					{ 60.0, 72.0, ASHENVALE },	-- Moonwell of Cleansing (exists after 4.0.3, but redundant on practicality.)
-				},
-			}),
+			i(14342),	-- Mooncloth
 		}),
 	}),
 });

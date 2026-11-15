@@ -2778,8 +2778,15 @@ r(53344,{requireSkill=960}),
 r(70164,{awp=30300,requireSkill=960,rwp=60002}),
 r(62158,{awp=30008,requireSkill=960})}}),
 prof(393),
-prof(197,{awp=20003,g={
-x(2,{requireSkill=197,g={
+prof(197,{
+h(-823,{coords={
+[47]={{49.06,33.58}},
+[56]={{57.11,37.52}},
+[76]={{10.77,74.71}},
+[89]={{43.1,80.27},{48.05,18.54}},
+[95]={{13.13,26.23}},
+[108]={{45.02,23.54}}},requireSkill=197,sym={{"select","itemID",14342}}}),
+x(2,{awp=20003,requireSkill=197,g={
 h(-45,{awp=20005,phase=17,requireSkill=197,rwp=40003,u=2,g={
 q(10831,{altQuests={10832,10833},coords={
 [111]={{66.5,69.3}}},description="Upon finishing this quest, you will become a Mooncloth Tailor.",lvl=60,maps={102},qgs={22208},requireSkill=197,u=2,g={
@@ -2799,5 +2806,5 @@ q(10832,{altQuests={10831,10833},coords={
 qo(1,{cost={{"i",31742,1}},crs={22408},providers={{"i",31741}},requireSkill=197,u=2}),
 r(26797,{requireSkill=197,u=2})}})}})}}),
 x(3,{awp=30003,requireSkill=197}),
-x(4,{awp=40003,requireSkill=197})}})}})
+x(4,{awp=40003,requireSkill=197})})}})
 end)

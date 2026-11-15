@@ -13,4 +13,13 @@ profession(TAILORING, {
 			timeline = { TIMELINE.ADDED_1_60_1 },
 		}),
 	}),
+	n(MOONWELL, {
+		coords = {
+			{ 38.7, 85.2, MAP.DARNASSUS },	-- Temple of the Moon
+			{ 35.6, 66.0, MAP.STORMWIND_CITY },	-- The Park
+			{ 60.0, 72.0, MAP.ASHENVALE },	-- Moonwell of Cleansing
+		},
+		OnTooltip = FUNCTION_TEMPLATES.GenerateOnTooltipSpellCooldownRemaining(18560),	-- Mooncloth
+		sym = { { "select", "itemID", 14342 } },	-- Mooncloth
+	}),
 });

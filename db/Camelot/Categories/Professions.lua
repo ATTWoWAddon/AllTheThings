@@ -70,5 +70,9 @@ prof(197,{
 h(-12,{requireSkill=197,g={
 ach(62030,{awp=16001,requireSkill=197}),
 ach(62029,{awp=16001,requireSkill=197}),
-ach(62028,{awp=16001,requireSkill=197})}})})}})
+ach(62028,{awp=16001,requireSkill=197})}}),
+h(-823,{coords={
+[1440]={{60,72}},
+[1453]={{35.6,66}},
+[1457]={{38.7,85.2}}},OnTooltip=_.OnTooltipDB.SpellCooldownRemaining_18560,requireSkill=197,sym={{"select","itemID",14342}}})})}})
 end)

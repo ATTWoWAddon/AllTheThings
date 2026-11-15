@@ -59,6 +59,30 @@ FUNCTION_TEMPLATES = {
 		end]]
 		return [[_.OnTooltipDB.]]..OnTooltipName..[[]]
 	end,
+	-- Generates an OnTooltip function into ExportDB.OnTooltipDB which shows whether a known SpellID
+	-- (including profession recipes) is ready, or how long until its cooldown is over
+	GenerateOnTooltipSpellCooldownRemaining = function(spellID)
+		local OnTooltipName = "SpellCooldownRemaining_"..spellID
+		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
+			local s = ]]..spellID..[[
+			if not (_.CurrentCharacter.Spells[s] or _.IsSpellKnownHelper(s)) then return end
+			local start, duration
+			if C_Spell and C_Spell.GetSpellCooldown then
+				local info = C_Spell.GetSpellCooldown(s)
+				if info then start, duration = info.startTime, info.duration end
+			else
+				start, duration = GetSpellCooldown(s)
+			end
+			local n = _.WOWAPI.GetSpellName(s) or RETRIEVING_DATA
+			local remaining = (start and start > 0 and duration) and (start + duration - GetTime()) or 0
+			if remaining > 0 then
+				tooltipInfo[#tooltipInfo+1] = { left = n, right = SecondsToTime(remaining), r = 1, g = 0.5, b = 0.5 }
+			else
+				tooltipInfo[#tooltipInfo+1] = { left = n, right = "Ready", r = 0.5, g = 1, b = 0.5 }
+			end
+		end]]
+		return [[_.OnTooltipDB.]]..OnTooltipName..[[]]
+	end,
 	-- Generates an OnUpdate function into ExportDB.OnUpdateDB to assign the 'visible' field of the group to true based
 	-- on whether the player is currently on the related QuestID
 	-- Note: This is bad, don't use this! It overrides Filter logic.

@@ -1440,6 +1440,7 @@ localize(L.HEADER_NAMES, {
 	[-736] = BATTLE_PET_SOURCE_8,
 	[-782] = "CN Promotions (Classic)",
 	[-800] = "Alliance Outrunners",
+	[-823] = "Moonwell",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1484,6 +1485,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-736] = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.",
 	[-782] = "These promotions are limited to the Classic & Titanforged Chinese Realms.",
 	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
+	[-823] = "Tailors make Mooncloth while standing at a Moonwell. Coordinates are for select Moonwells around the world.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1639,6 +1641,7 @@ localize(L.HEADER_ICONS, {
 	[-736] = _.asset("category_promo"),
 	[-782] = _.asset("expansion_wotlk"),
 	[-800] = 236449,
+	[-823] = 134754,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

@@ -2368,10 +2368,7 @@ i(4339),
 i(14048),
 i(4305),
 i(2997),
-i(14342,{coords={
-[1440]={{60,72}},
-[1453]={{21,53}},
-[1457]={{43.1,80.27}}},description="Coordinates are for select Moonwells around the world."})}),
+i(14342)}),
 flt(50,{
 i(279973,{f=55,r=2,requireSkill=197,spellID=1307239}),
 i(279972,{f=55,r=1,requireSkill=197,spellID=1307240}),

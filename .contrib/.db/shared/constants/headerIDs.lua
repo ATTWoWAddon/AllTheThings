@@ -423,6 +423,7 @@ HeaderAssignments = {
 	["Miscellaneous"] = -547,
 	["Missions"] = -116,
 	["Monster Hunting"] = -637,
+	["Moonwell"] = -823,
 	["MoP Classic Sha-Infused Heroic Pack"] = -527,
 	["Mount Mods"] = -41,
 	["Mythic Raid Vendor"] = -348,
@@ -802,4 +803,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -823
+NextHeaderID = -824

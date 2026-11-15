@@ -3908,7 +3908,7 @@ q(1258,{coords={
 qo(1,{crs={922,1088},providers={{"i",5938}}}),
 s(158694,6801,{b=1,description="This gets completely removed. To be safe, keep this in your bank on an alt forever.",f=4,loc=42})}}),
 q(98231,{awp=16001,coords={
-[1445]={{41,75.6}}},lvl=39,qgs={270727},r=1,g={
+[1445]={{41,75.6}}},lvl=39,qgs={270727},g={
 qo(1,{providers={{"i",280092}}})}}),
 q(6625,{coords={
 [1455]={{54.8,58.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6624},qgs={5150},r=2,requireSkill=129}),
@@ -3932,7 +3932,7 @@ s(160128,10703,{b=1,f=20})}}),
 q(1285,{coords={
 [1445]={{68,48.1}}},lvl=30,qgs={4948},r=2,sourceQuests={1259}}),
 q(98215,{awp=16001,coords={
-[1445]={{41,75.8}}},lvl=39,qgs={270723},r=1,g={
+[1445]={{41,75.8}}},lvl=39,qgs={270723},g={
 qo(1,{providers={{"i",279934}}})}}),
 q(1271,{coords={
 [1453]={{51.8,93.7}}},description="Don't forget to loot all the food and drinks off the tables.",lvl=30,qgs={1141},r=2,sourceQuests={1222,1258},g={
@@ -4136,7 +4136,7 @@ q(6624,{coords={
 qo(1,{crs={12936,12937,12938},providers={{"i",16991}},requireSkill=129}),
 r(10846,{learnedAt=200,rank=4,requireSkill=129})}}),
 q(98205,{awp=16001,coords={
-[1445]={{41,75.8}}},lvl=39,qgs={270723},r=1,g={
+[1445]={{41,75.8}}},lvl=39,qgs={270723},g={
 qo(1,{providers={{"n",4323}}}),
 qo(2,{providers={{"n",4324}}}),
 i(281302,{b=1,f=51}),
@@ -11856,6 +11856,15 @@ q(92749,{awp=16001,coords={
 q(5645,{altQuests={5641,5647},c={5},coords={
 [1453]={{38.8,26.4}}},lvl=20,maps={1455},qgs={376},races={3},g={
 r(6346)}}),
+q(82084,_.ResolveQuestData({aqd=
+{coords={
+[1453]={{48.8,86.6}}},qgs={211033}},awp=16001,c={8},hqd=
+{coords={
+[1458]={{73.6,33}}},qgs={211022}},lvl=42,maps={1425,1444},g={
+qo(1,{crs={2927,2928,2929},providers={{"i",221359}}}),
+qo(2,{crs={5244,5245,5246,5247},providers={{"i",221361}}}),
+qo(3,{crs={7286},providers={{"i",221360}}}),
+s(219209,221344,{b=1,c={8},f=1})}})),
 q(212,{coords={
 [1453]={{51.8,93.7}}},lvl=35,maps={1434},qgs={1141},r=2,g={
 qo(1,{crs={690},providers={{"i",2476}}})}}),
@@ -11976,7 +11985,7 @@ q(1717,{c={9},coords={
 q(1685,{altQuests={1715},c={9},coords={
 [1429]={{44.4,66.2}}},isBreadcrumb=1,lvl=10,nextQuests={1688},qgs={6121},races={1,7}}),
 q(97222,{awp=16001,coords={
-[1453]={{60.4,63.4}}},lvl=9,qgs={483},r=2,sourceQuests={97220},g={
+[1453]={{66.4,73.6}}},lvl=9,qgs={483},r=2,sourceQuests={97220},g={
 qo(1,{coords={
 [1453]={{66.4,74.8}}},providers={{"i",277198}}}),
 i(414,{f=55,lvl=5,spellID=434})}}),
@@ -17479,7 +17488,8 @@ s(157777,4446,{f=20}),
 s(157778,4447,{f=3})}}),
 n(14269,{coords={
 [1433]={{28.2,58.2},{46.2,59.6},{50.2,61.4},{63.6,62.6},{71.6,64.6},{73.2,71.2},{75.8,67.4}}},g={
-r(8782,{itemID=7091,learnedAt=125,requireSkill=197,skillID=2948})}}),
+r(8782,{itemID=7091,learnedAt=125,requireSkill=197,skillID=2948}),
+s(313043,281926,{awp=16001,f=4,loc=43})}}),
 n(14272,{coords={
 [1433]={{36.4,66.8},{43.4,30},{49.2,33},{54.6,37.2}}},g={
 s(313036,281925,{awp=16001,f=27,lvl=15})}}),
@@ -19355,7 +19365,7 @@ s(157673,4117,{b=1,f=4,loc=45})}}),
 q(623,{coords={
 [1434]={{27.4,76.8}}},lvl=38,maps={1445},qgs={2494},qis={4028},r=2,sourceQuests={617}}),
 q(95786,{awp=16001,coords={
-[1434]={{37.8,3.6}}},lvl=30,maps={1424},qgs={739},r=2,g={
+[1434]={{37.8,3.6}}},lvl=30,maps={1424},qgs={739},r=2,sourceQuests={205},g={
 qo(1,{providers={{"i",270340}}})}}),
 q(3721,{coords={
 [1434]={{28.2,76.2}}},lvl=30,qgs={7406},sourceQuests={648,836,2767},g={
@@ -19840,7 +19850,8 @@ q(600,{coords={
 [1434]={{27.1,77.2}}},lvl=30,qgs={2498},sourceQuests={605},g={
 qo(1,{crs={674,675,676,677,4723,14492},providers={{"i",3917}}}),
 s(158081,5253,{b=1,f=27}),
-s(157684,4128,{b=1,f=24})}}),
+s(157684,4128,{b=1,f=24}),
+s(317953,287071,{awp=16001,f=36})}}),
 q(609,{coords={
 [1434]={{27.8,77.1}}},lvl=30,qgs={2501},sourceQuests={607},g={
 qo(1,{coords={

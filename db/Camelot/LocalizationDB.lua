@@ -1347,6 +1347,7 @@ localize(L.HEADER_NAMES, {
 	[-818] = "Forever Seasonal Promotions",
 	[-820] = "The Dawn Waker",
 	[-821] = "Premier PvP Gear",
+	[-823] = "Moonwell",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1381,6 +1382,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-818] = "These promotions happened during World of Warcraft: Forever.\n\nThey are listed in the order of their first appearance.",
 	[-820] = "A secret chain that starts with the Ancient Heirloom on Zephras Isle and leads across Kalimdor to cleanse a befouled water globe. The community hasn't found its end yet, so the last steps may change.",
 	[-821] = "Upgraded versions of the honor rank gear, bought from the PvP quartermasters.",
+	[-823] = "Tailors make Mooncloth while standing at a Moonwell. Coordinates are for select Moonwells around the world.",
 })
 localize(L.HEADER_LORE, {
 	[-318] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
@@ -1484,6 +1486,7 @@ localize(L.HEADER_ICONS, {
 	[-818] = 1120721,
 	[-820] = 7789512,
 	[-821] = 132691,
+	[-823] = 134754,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

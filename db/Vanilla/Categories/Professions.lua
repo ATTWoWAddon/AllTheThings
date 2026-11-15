@@ -344,5 +344,9 @@ r(13228,{lvl=40}),
 r(13229,{lvl=48}),
 r(13230,{lvl=56})})}}),
 prof(393),
-prof(197)}})
+prof(197,{
+h(-823,{coords={
+[1440]={{60,72}},
+[1453]={{21,53}},
+[1457]={{38.7,85.2}}},OnTooltip=_.OnTooltipDB.SpellCooldownRemaining_18560,requireSkill=197,sym={{"select","itemID",14342}}})})}})
 end)
