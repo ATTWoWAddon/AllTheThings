@@ -350834,6 +350834,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Makellose Kreuzhacke",
 		},
 	},
+	[667686] = {
+		readable = "Packaged Tonics",
+		text = {
+			en = "Packaged Tonics",
+		},
+	},
 	[668297] = {
 		readable = "Unadorned Stake",
 		model = 203114,

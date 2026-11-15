@@ -1139,8 +1139,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Packaged Tonics
-						provider = { "i", 278462 },	-- Packaged Tonics
-						-- TODO: picked up at Jorell's lab in Go'shek Farm; Wowhead doesn't list the object yet.
+						providers = {
+							{ "i", 278462 },	-- Packaged Tonics
+							{ "o", 667686 },	-- Packaged Tonics
+						},
+						coord = { 60.1, 59.2, MAP.ARATHI_HIGHLANDS },
 					}),
 				},
 			}),
@@ -1416,7 +1419,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				},
 			}),
 			i(253711, {	-- Goliath's Wristguards (QS!)
+				description = "Drops from the Witherbark Goliath, who is summoned by striking the gong in the Witherbark's den with a Witherbark Mallet. Each kill drops the Wristguards for only one person, so a group needs a kill (and a mallet) for each member.",
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = { { "i", 216483, 1 } },	-- Witherbark Mallet
 				cr = 218032,	-- Witherbark Goliath
 				coord = { 67.8, 79.4, MAP.ARATHI_HIGHLANDS },
 			}),
@@ -1479,6 +1484,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2572,	-- Drywhisker Kobold
 					2573,	-- Drywhisker Surveyor
 				},
+			}),
+			i(216483, {	-- Witherbark Mallet
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 2554,	-- Witherbark Axe Thrower
 			}),
 		}),
 	},
