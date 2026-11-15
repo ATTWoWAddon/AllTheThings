@@ -384,11 +384,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			}),
 			q(1665, {	-- Bartleby's Mug
 				sourceQuest = 1640,	-- Beat Bartleby
-				altQuests = {
-					--1665,	-- Bartleby's Mug
-					1678,	-- Vejrek
-					1683,	-- Vorlus Vilehoof
-				},
 				qg = 6090,	-- Bartleby
 				qi = 6781,	-- Bartleby's Mug
 				coord = { 76.8, 52.5, MAP.STORMWIND_CITY },

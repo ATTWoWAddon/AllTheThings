@@ -497,11 +497,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					1684,	-- Elanaria
 					1679,	-- Muren Stormpike
 				},
-				altQuests = {
-					1665,	-- Bartleby's Mug
-					1678,	-- Vejrek
-					--1683,	-- Vorlus Vilehoof
-				},
 				qg = 4088,	-- Elanaria
 				coord = { 57.3, 34.6, MAP.DARNASSUS },
 				maps = { MAP.TELDRASSIL },

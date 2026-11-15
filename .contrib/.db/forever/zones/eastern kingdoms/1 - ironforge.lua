@@ -1070,11 +1070,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					1684,	-- Elanaria
 					1679,	-- Muren Stormpike
 				},
-				altQuests = {
-					1665,	-- Bartleby's Mug
-					--1678,	-- Vejrek
-					1683,	-- Vorlus Vilehoof
-				},
 				qg = 6114,	-- Muren Stormpike
 				coord = { 70.6, 90.4, MAP.IRONFORGE },
 				maps = { MAP.DUN_MOROGH },
