@@ -573,7 +573,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						},
 					}),
 					objective(2, {	-- 0/6 Vial of Animal Blood
-						providers = { "i", 286215 },	-- Vial of Animal Blood
+						provider = { "i", 286215 },	-- Vial of Animal Blood
 						coords = {
 							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
 							{ 42.4, 73.0, MAP.ELWYNN_FOREST },
@@ -1486,13 +1486,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
-					objective(1, {	-- 0/4 Murloc Streamrunner slain
-						providers = { "n", 735 },	-- Murloc Streamrunner
-						coord = { 52.8, 64.6, MAP.ELWYNN_FOREST },
-					}),
-					objective(2, {	-- 0/7 Murloc slain
-						providers = { "n", 285 },	-- Murloc
+					objective(1, {	-- 0/7 Murloc slain
+						provider = { "n", 285 },	-- Murloc
 						coord = { 56.4, 65.6, MAP.ELWYNN_FOREST },
+					}),
+					objective(2, {	-- 0/4 Murloc Streamrunner slain
+						provider = { "n", 735 },	-- Murloc Streamrunner
+						coord = { 52.8, 64.6, MAP.ELWYNN_FOREST },
 					}),
 				},
 			}),

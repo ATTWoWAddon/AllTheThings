@@ -160,7 +160,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 						i(11169),	-- Book of Aquor
 					}),
 					i(11522, {	-- Silver Totem of Aquementas
-						providers = { "i", 11169 },	-- Book of Aquor
+						provider = { "i", 11169 },	-- Book of Aquor
 						coord = { 70.0, 49.0, MAP.TANARIS },
 						cr = 9453,	-- Aquementas
 					}),
