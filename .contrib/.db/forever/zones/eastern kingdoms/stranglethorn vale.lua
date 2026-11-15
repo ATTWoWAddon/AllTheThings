@@ -213,6 +213,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 38,
 			}),
 			q(95786, {	-- An Acquaintance in Southshore
+				sourceQuest = 205,	-- Troll Witchery
 				qg = 739,	-- Brother Nimetz
 				coord = { 37.8, 3.6, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.HILLSBRAD_FOOTHILLS },

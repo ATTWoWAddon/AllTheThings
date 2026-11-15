@@ -69,6 +69,7 @@ instanceroot(2970, {	-- The Drowned City
 				},
 			}),
 			q(95788, {	-- Magics of the Drowned City
+				sourceQuest = 95786,	-- An Acquaintance in Southshore
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
@@ -92,6 +93,7 @@ instanceroot(2970, {	-- The Drowned City
 				},
 			}),
 			q(95787, {	-- Take Two With Water
+				sourceQuest = 95786,	-- An Acquaintance in Southshore
 				qg = 2277,	-- Loremaster Dibbs
 				coord = { 50.6, 57.1, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
