@@ -258,6 +258,9 @@ instanceroot(239, {	-- Uldaman
 				groups = {
 					i(9626),	-- Dwarven Charge
 					i(9627),	-- Explorers' League Lodestar
+					i(270078, {	-- Guardian Staff
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2398, {	-- The Lost Dwarves

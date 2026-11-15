@@ -2095,6 +2095,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					}),
 					i(5253),	-- Goblin Igniter
 					i(4128),	-- Silver Spade
+					i(287071, {	-- Goblin Switchblade
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(609, {	-- Voodoo Dues

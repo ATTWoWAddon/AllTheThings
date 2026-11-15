@@ -800,6 +800,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				},
 				groups = {
 					i(7091),	-- Pattern: Truefaith Gloves (RECIPE!)
+					i(281926, {	-- Bound Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14272, {	-- Snarlflare
