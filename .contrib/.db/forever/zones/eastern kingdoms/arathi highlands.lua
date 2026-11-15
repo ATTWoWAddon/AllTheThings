@@ -369,6 +369,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					}),
 					i(4543),	-- White Drakeskin Cap
 					i(4545),	-- Radiant Silver Bracers
+					i(270073, {	-- Stromgarde Cuffs
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(92867, {	-- Ground to Keep
