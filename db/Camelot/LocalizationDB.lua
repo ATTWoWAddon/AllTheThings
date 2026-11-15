@@ -2725,6 +2725,7 @@ local ObjectNames = {
 	[667362] = "Mirkweed",
 	[667674] = "Explorers' League Supplies",
 	[667676] = "Pristine Mattock",
+	[667686] = "Packaged Tonics",
 	[668482] = "Gnarlpine Totem",
 	[668493] = "Gnarlpine Totem",
 	[669105] = "Vilebranch Totem",

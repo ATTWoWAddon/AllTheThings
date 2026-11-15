@@ -197,7 +197,7 @@ ach(62005,{awp=16001}),
 ach(62003,{awp=16001})}),
 prof(633,{c={4},description="Lockpicking needs to be leveled up by practicing on lockboxes found in the world and junkboxes looted by using your pickpocket ability on appropriately leveled mobs.",DontEnforceSkillRequirements=1,OnTooltip=_.OnTooltipDB.ForLockpicking,OnUpdate=_.OnUpdateDB.ForLockpicking,g={
 r(1804,{c={4},providers={{"i",5060}},requireSkill=633}),
-r(921,{c={4},requireSkill=39})}}),
+r(921,{c={4}})}}),
 prof(40,{c={4},g={
 r(6510,{learnedAt=170,lvl=34,skillID=2988}),
 r(3420,{learnedAt=125,lvl=20,skillID=2988}),

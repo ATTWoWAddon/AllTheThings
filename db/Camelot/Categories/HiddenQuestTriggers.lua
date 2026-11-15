@@ -1,13 +1,20 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
-local hqt,m,x=_.CreateHQT,_.CreateMap,_.CreateExpansion;
+local hqt,inst,m,x=_.CreateHQT,_.CreateInstance,_.CreateMap,_.CreateExpansion;
 categories.HiddenQuestTriggers={
 hqt(98338,{awp=16001}),
 hqt(99582,{awp=16001}),
 hqt(98289,{awp=16001}),
 hqt(909,{awp=16001}),
 hqt(3911,{awp=16001,description="Unused duplicate of 'The Last Element' (7201) with no quest giver. Likely gets marked as completed alongside 7201."}),
+inst(237,{
+hqt(96185,{awp=16001,isDaily=1}),
+hqt(96186,{awp=16001,isDaily=1}),
+hqt(96187,{awp=16001,isDaily=1}),
+hqt(96188,{awp=16001,isDaily=1}),
+hqt(96189,{awp=16001,isDaily=1}),
+hqt(96190,{awp=16001,isDaily=1})}),
 hqt(3366),
 hqt(94776,{awp=16001,c={5},description="Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",races={1}}),
 hqt(94779,{awp=16001,c={5},description="Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",races={1}}),
