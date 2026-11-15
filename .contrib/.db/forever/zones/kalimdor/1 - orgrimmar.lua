@@ -1856,9 +1856,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 				description = "Found within the Hall of Legends.",
 				races = HORDE_ONLY,
-				sym = {{ "select", "itemID",
-					18826,	-- High Warlord's Shield Wall
-				}},
 				groups = {
 					i(18831),	-- High Warlord's Battle Axe
 					i(23464),	-- High Warlord's Battle Mace
@@ -1875,6 +1872,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(18840),	-- High Warlord's Razor
 					i(18835),	-- High Warlord's Recurve
 					i(18844),	-- High Warlord's Right Claw
+					i(18826),	-- High Warlord's Shield Wall
 					i(23466),	-- High Warlord's Spellblade
 					i(18860),	-- High Warlord's Street Sweeper
 					i(23468),	-- High Warlord's Tome of Destruction

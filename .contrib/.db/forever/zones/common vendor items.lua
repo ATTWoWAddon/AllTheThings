@@ -383,7 +383,6 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			i(17183),	-- Dented Buckler
 			i(1201),	-- Dull Heater Shield
 			i(2448),	-- Heavy Pavise
-			i(18826),	-- High Warlord's Shield Wall
 			i(2446),	-- Kite Shield
 			i(2445),	-- Large Metal Shield
 			i(2129),	-- Large Round Shield
@@ -433,7 +432,6 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(2130),	-- Club
 				i(2492),	-- Cudgel
 				i(925),	-- Flail
-				i(16769),	-- Furbolg Medicine Totem
 				i(2028),	-- Hammer
 				i(852),	-- Mace
 				i(2532),	-- Morning Star
