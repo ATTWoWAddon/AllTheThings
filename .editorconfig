@@ -115,8 +115,8 @@ tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Root Markdown documentation
-[/{AGENTS.md,README.md}]
+# Markdown documentation
+[/{AGENTS.md,CLAUDE.md,README.md,docs/deprecated-wow-api-audit.md}]
 charset = utf-8
 end_of_line = lf
 indent_style = space

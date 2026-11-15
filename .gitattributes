@@ -128,12 +128,16 @@ docs export-ignore
 /.pre-commit-config.yaml text eol=lf
 /AGENTS.md text eol=lf
 /AllTheThings.toc text eol=lf
+/CLAUDE.md text eol=lf
 /LICENSE text eol=lf
 "/Link ATT to WoW.bat" text eol=crlf
 "/Link ATT to WoW.sh" text eol=lf
 /README.md text eol=lf
 /_config.yml text eol=lf
 /setup.cfg text eol=lf
+
+# Documentation
+/docs/deprecated-wow-api-audit.md text eol=lf
 
 # VS Code workspace configuration
 /.vscode/*.json text eol=lf
