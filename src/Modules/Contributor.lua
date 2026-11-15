@@ -515,6 +515,7 @@ end
 local MobileDB = {}
 MobileDB.Creature = {
 -- editorconfig-checker-disable
+	   [620] = true,	-- Chicken
 	   [715] = true,	-- Hemet Nesingwary Jr.
 	   [718] = true,	-- Sir S. J. Erlgadin
 	   [951] = true,	-- Brother Paxton
