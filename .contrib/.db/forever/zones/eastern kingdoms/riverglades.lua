@@ -1296,12 +1296,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			q(95162, {	-- Paletusk Harvesting
 				qg = 256728,	-- Na'zok
 				coord = { 70.6, 28.0, MAP.RIVERGLADES },
+				cost = { { "i", 769, 10 } },	-- Chunk of Boar Meat
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
-					objective(1, {	-- 0/10 Chunk of Boar Meat
-						provider = { "i", 769 },	-- Chunk of Boar Meat
-					}),
 					i(274977),	-- Recipe: Plain Ol' Paletusk
 				},
 			}),
@@ -1642,12 +1640,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				sourceQuest = 95183,	-- Step One: Rock
 				qg = 263440,	-- Hamur
 				coord = { 67.2, 21.6, MAP.RIVERGLADES },
+				cost = { { "i", 3241, 10 } },	-- Heavy Weightstone
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
-					objective(1, {	-- 0/10 Heavy Weightstone
-						provider = { "i", 3241 },	-- Heavy Weightstone
-					}),
 					i(251460),	-- Plans: Mithril Warhammer
 				},
 			}),
