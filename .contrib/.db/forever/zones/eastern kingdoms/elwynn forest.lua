@@ -561,18 +561,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
-					objective(1, {	-- 0/18 Duskweed Petal
-						providers = {
-							{ "i", 286214 },	-- Duskweed Petal
-							{ "o", 694855 },	-- Overgrown Duskweed
-						},
-						coords = {
-							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
-							{ 42.4, 73.0, MAP.ELWYNN_FOREST },
-							{ 63.4, 79.4, MAP.ELWYNN_FOREST },
-						},
-					}),
-					objective(2, {	-- 0/6 Vial of Animal Blood
+					objective(1, {	-- 0/6 Vial of Animal Blood
 						provider = { "i", 286215 },	-- Vial of Animal Blood
 						coords = {
 							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
@@ -582,6 +571,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						crs = {
 							113,	-- Stonetusk Boar
 							822,	-- Young Forest Bear
+						},
+					}),
+					objective(2, {	-- 0/18 Duskweed Petal
+						providers = {
+							{ "i", 286214 },	-- Duskweed Petal
+							{ "o", 694855 },	-- Overgrown Duskweed
+						},
+						coords = {
+							{ 33.0, 86.6, MAP.ELWYNN_FOREST },
+							{ 42.4, 73.0, MAP.ELWYNN_FOREST },
+							{ 63.4, 79.4, MAP.ELWYNN_FOREST },
 						},
 					}),
 					i(286733, { collectible = false }),	-- Fightin' Fish
