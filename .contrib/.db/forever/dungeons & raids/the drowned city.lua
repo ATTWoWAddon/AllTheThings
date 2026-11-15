@@ -35,6 +35,7 @@ instanceroot(2970, {	-- The Drowned City
 					objective(1, {	-- 0/1 Ancient Gurubashi Idol
 						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
 						crs = {
+							260202,	-- Deathless Marrow
 							269586,	-- Deathless Marrow
 							273738,	-- Primeval Elemental
 						},
@@ -50,6 +51,7 @@ instanceroot(2970, {	-- The Drowned City
 					objective(1, {	-- 0/1 Ancient Gurubashi Idol
 						provider = { "i", 276894 },	-- Ancient Gurubashi Idol
 						crs = {
+							260202,	-- Deathless Marrow
 							269586,	-- Deathless Marrow
 							273738,	-- Primeval Elemental
 						},
@@ -220,6 +222,7 @@ instanceroot(2970, {	-- The Drowned City
 			groups = {
 				i(274602),	-- Brinebelly Leggings
 				i(274601),	-- Harpoon of Command
+				i(274613),	-- Priestess Cloak
 			},
 		}),
 		e(3476, {	-- Captain Dreadrise
@@ -256,6 +259,11 @@ instanceroot(2970, {	-- The Drowned City
 				i(274610),	-- Ritual-Binder's Gloves
 				i(274609),	-- Serpentbane Crown
 			},
+		}),
+		n(260202, {	-- Deathless Marrow
+			i(274606),	-- Bloodspine Staff
+			i(274614),	-- Knucklebone Ring
+			i(274607),	-- Viscera Spaulders
 		}),
 		n(264172, {	-- Umbra
 			description = "This is a rare spawn that is not always present.",
