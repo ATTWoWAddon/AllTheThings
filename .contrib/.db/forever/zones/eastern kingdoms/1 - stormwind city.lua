@@ -211,6 +211,44 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					recipe(6346),	-- Fear Ward
 				},
 			}),
+			q(82084, {	-- A Lesson in Literacy
+				aqd = {
+					qg = 211033,	-- Garion Wendell <Librarian>
+					coord = { 48.8, 86.6, MAP.STORMWIND_CITY },
+				},
+				hqd = {
+					qg = 211022,	-- Owen Thadd <Librarian>
+					coord = { 73.6, 33.0, MAP.UNDERCITY },
+				},
+				maps = { MAP.FERALAS, MAP.THE_HINTERLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { MAGE },
+				lvl = 42,
+				groups = {
+					objective(1, {	-- 0/1 Pristine Owlbeast Quill
+						provider = { "i", 221359 },	-- Pristine Owlbeast Quill
+						crs = {
+							2927,	-- Vicious Owlbeast
+							2928,	-- Primitive Owlbeast
+							2929,	-- Savage Owlbeast
+						},
+					}),
+					objective(2, {	-- 0/5 Zukk'ash Resin
+						provider = { "i", 221361 },	-- Zukk'ash Resin
+						crs = {
+							5244,	-- Zukk'ash Stinger
+							5245,	-- Zukk'ash Wasp
+							5246,	-- Zukk'ash Worker
+							5247,	-- Zukk'ash Tunneler
+						},
+					}),
+					objective(3, {	-- 0/8 Farraki Papyrus
+						provider = { "i", 221360 },	-- Farraki Papyrus
+						cr = 7286,	-- Zul'Farrak Zombie
+					}),
+					i(221344),	-- Personal Spellbook
+				},
+			}),
 			q(212, {	-- A Meal Served Cold
 				qg = 1141,	-- Angus Stern
 				coord = { 51.8, 93.7, MAP.STORMWIND_CITY },
