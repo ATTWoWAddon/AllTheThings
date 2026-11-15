@@ -111,7 +111,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				qg = 270727,	-- Gizzix Grimegurgle
 				coord = { 41.0, 75.6, MAP.DUSTWALLOW_MARSH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/10 Wyrmtail
@@ -192,7 +191,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				qg = 270723,	-- Drazzit Dripvalve
 				coord = { 41.0, 75.8, MAP.DUSTWALLOW_MARSH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/20 Shed Dark Dragonscale
@@ -974,7 +972,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				qg = 270723,	-- Drazzit Dripvalve
 				coord = { 41.0, 75.8, MAP.DUSTWALLOW_MARSH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/8 Searing Hatchling slain
