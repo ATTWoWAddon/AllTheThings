@@ -973,6 +973,13 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 				},
 			}),
+			q(95599, {	-- The Old Key
+				description = "Use the key on the Old Chest at 79.2, 49.5.",
+				qs = 287992,	-- Old Key (QS!)
+				-- TODO: Old Key source unknown. A Contributor Report accepted the quest at 76.5, 48.2 (Camp Mojache).
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 35,
+			}),
 			q(2866, {	-- The Ruins of Solarsal
 				qg = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
 				coord = { 30.2, 46.0, MAP.FERALAS },
