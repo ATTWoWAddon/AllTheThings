@@ -535,21 +535,27 @@ root(ROOTS.HiddenQuestTriggers, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		q(96185, {	-- Completed in the temple after killing Atal'alarion (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 		q(96186, {	-- Completed in the temple, likely after killing the troll bosses (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 		q(96187, {	-- Completed in the temple after killing the first two dragon bosses (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 		q(96188, {	-- Completed in the temple after killing the two dragons before the final boss (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 		q(96189, {	-- Completed in the temple after killing the Shade of Eranikus (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 		q(96190, {	-- Completed in the temple after killing the Avatar of Hakkar (Sammy's report, Nov 14)
 			timeline = { TIMELINE.ADDED_1_60_1 },
+			isDaily = true,
 		}),
 	}),
 });
