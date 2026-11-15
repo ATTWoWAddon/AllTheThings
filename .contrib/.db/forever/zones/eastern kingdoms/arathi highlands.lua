@@ -92,8 +92,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					objective(1, {	-- 0/1 Hybrid Haunch
 						provider = { "i", 213526 },	-- Hybrid Haunch
-						description = "Drops from the wyverns north of Durnholde Keep in Hillsbrad Foothills.",
-						-- TODO: creature IDs and coord.
+						coord = { 84.7, 38.9, MAP.HILLSBRAD_FOOTHILLS },
+						crs = {
+							2473,	-- Granistad
+							2474,	-- Kurdros
+							2347,	-- Wild Gryphon
+						},
 					}),
 					objective(2, {	-- 0/1 Smuggler's Spice Blend
 						providers = {
@@ -309,6 +313,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 32,
+				groups = {
+					objective(1, {	-- 0/1 Pouch of Tomb Dust thrown into the sea behind Stromgarde
+						description = "Use the pouch from the cliffs behind Stromgarde Keep: go around the left side of the keep and turn right before the cave. You don't need to go into the water.",
+						coords = {
+							{ 17.6, 71.9, MAP.ARATHI_HIGHLANDS },
+							{ 19.8, 71.3, MAP.ARATHI_HIGHLANDS },
+						},
+					}),
+				},
 			}),
 			q(96264, {	-- Elemental Aid
 				sourceQuest = 94789,	-- Call of Air
