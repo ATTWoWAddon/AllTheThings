@@ -1324,6 +1324,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 29.6, 13.0, MAP.DESOLACE },
 					{ 30.8, 19.8, MAP.DESOLACE },
 				},
+				groups = {
+					i(284713, {	-- Accursed Legguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(11688, {	-- Cursed Centaur
 				coords = {
@@ -1339,6 +1344,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 67.2, 23.4, MAP.DESOLACE },
 					{ 63.8, 34.8, MAP.DESOLACE },
 				},
+				groups = {
+					i(284712, {	-- Hyena Hide Helm
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14227, {	-- Hissperak
 				coords = {
@@ -1349,6 +1359,11 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 46.6, 54.4, MAP.DESOLACE },
 					{ 43.8, 61.8, MAP.DESOLACE },
 				},
+				groups = {
+					i(284707, {	-- Basilisk Sinew Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14226, {	-- Kaskk
 				coords = {
@@ -1358,12 +1373,22 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 52.0, 85.8, MAP.DESOLACE },
 					{ 57.0, 74.6, MAP.DESOLACE },
 				},
+				groups = {
+					i(284708, {	-- Demonstrike Emblem
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(14225, {	-- Prince Kellen
 				coords = {
 					{ 74.6, 13.4, MAP.DESOLACE },
 					{ 76.4, 18.6, MAP.DESOLACE },
 					{ 77.8, 23.2, MAP.DESOLACE },
+				},
+				groups = {
+					i(284717, {	-- Royal Satyr Slicer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 		}),
