@@ -315129,6 +315129,12 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "守护神龛",
 		},
 	},
+	[442688] = {
+		readable = "Old Crate",
+		text = {
+			en = "Old Crate",
+		},
+	},
 	[442718] = {
 		readable = "Elemental Pearl",
 		model = 2358261,
