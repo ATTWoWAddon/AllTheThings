@@ -354,8 +354,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				coord = { 49.4, 37.6, MAP.THE_HINTERLANDS },
 				lvl = 43,
 				groups = {
+					i(270101, {	-- Gnomish Floatation Device
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(9645),	-- Gnomish Inventor Boots
-					i(9646),	-- Gnomish Water Winking Device
+					i(9646),	-- Gnomish Water Sinking Device
 				},
 			}),
 			q(7847, {	-- Return to Primal Torntusk
