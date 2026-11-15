@@ -242,6 +242,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					}),
 					objective(2, {	-- 0/5 Harvester Gyrostabilizer
 						provider = { "i", 255010 },	-- Harvester Gyrostabilizer
+						crs = {
+							 36,	-- Harvest Golem
+							114,	-- Harvest Watcher
+							115,	-- Harvest Reaper
+						},
 					}),
 				},
 			}),
@@ -1089,14 +1094,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			i(2087, {	-- Hard Crawler Carapace
 				cr = 830,	-- Sand Crawler
-			}),
-			i(255010, {	-- Harvester Gyrostabilizer
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				crs = {
-					 36,	-- Harvest Golem
-					114,	-- Harvest Watcher
-					115,	-- Harvest Reaper
-				},
 			}),
 			i(1274, {	-- Hops
 				crs = {
