@@ -14,6 +14,7 @@
 /src/**/*.lua  text eol=lf
 /tests/*.lua     text eol=lf
 /locales/*.lua   text eol=lf
+/.contrib/Standard.lua text eol=lf
 # project config / tool config
 *.config    text eol=crlf
 # WOW addon filelist
@@ -123,6 +124,7 @@ docs export-ignore
 /.editorconfig text eol=lf
 /.gitattributes text eol=lf
 /.gitignore text eol=lf
+/.codegraph/.gitignore text eol=lf
 /.luarc.json text eol=lf
 /.pkgmeta text eol=lf
 /.pre-commit-config.yaml text eol=lf
