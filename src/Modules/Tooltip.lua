@@ -266,9 +266,10 @@ for i,guid in ipairs({
 	-- Crieve
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing) US
 	-- Myrhial
-	"Player-3702-0A145B62",	-- Xynara-ArgentDawn EU
+	"Player-3702-0A145B62",	-- Xynara-ArgentDawn EU (Retail)
 	"Player-4454-039A32B4",	-- Myrhial-Mirage Raceway (Classic)
 	"Player-5825-01FD365B",	-- Anysil-Wild Growth (SoD)
+	"Player-6944-0004F0D2",	-- Elleynna Whispergale (Forever)
 	-- Tag
 	"Player-1091-04F6F553",	-- Tag-Bloodscalp EU
 	"Player-1091-0A44C31D",	-- Potentag-Bloodscalp EU
