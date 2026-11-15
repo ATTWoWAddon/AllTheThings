@@ -1023,6 +1023,7 @@ MobileDB.GameObject = {
 	[153464] = true,	-- Large Solid Chest
 	[154357] = true,	-- Glinting Mud (q:26508)
 	[161460] = true,	-- The Shadowforge Lock
+	[161513] = true,	-- Farm Chicken Egg
 	[164658] = true,	-- Blue Power Crystal
 	[164659] = true,	-- Green Power Crystal
 	[164660] = true,	-- Red Power Crystal
