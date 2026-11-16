@@ -534,6 +534,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 root(ROOTS.HiddenQuestTriggers, {
 	currency(3469, {	-- Tarnished Undermine Real
 		inst(237, {	-- The Temple of Atal'hakkar
+			mapID = MAP.SUNKEN_TEMPLE,
 			timeline = { TIMELINE.ADDED_1_60_1 },
 			groups = sharedData({
 				isDaily = true,
