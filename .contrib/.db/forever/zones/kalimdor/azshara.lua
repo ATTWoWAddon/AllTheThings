@@ -515,6 +515,25 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					objective(1),	-- 0/1 Help Graal break out of Legashi Stronghold
 				},
 			}),
+			q(86747, {	-- Legashi Horns
+				sourceQuest = 86746,	-- The Legashi Threat
+				-- TODO: Giver unknown. Wowhead lists only the turn-in, Ekkal (235903) at 42.0, 38.8; a Contributor Report completed it there right after The Legashi Threat.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 47,
+				groups = {
+					objective(1, {	-- 0/5 Severed Legashi Horn
+						provider = { "i", 235256 },	-- Severed Legashi Horn
+						crs = {
+							6200,	-- Legashi Satyr
+							6201,	-- Legashi Rogue
+							6202,	-- Legashi Hellcaller
+							236867,	-- Legashi Soulstealer
+							236874,	-- Legashi Hellraiser
+							236876,	-- Legashi Blackguard
+						},
+					}),
+				},
+			}),
 			q(91685, {	-- Ley of the Land
 				qg = 247473,	-- Izvi Gildfizz
 				qi = 247238,	-- Mana-Siphoning Wand (PQI!)
