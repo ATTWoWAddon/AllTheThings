@@ -59,10 +59,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				cost = { { "i", 19807, 40 } },	-- Speckled Tastyfish
 				_drop = { "g" },	-- API lists all quest rewards despite not being available in classic
 				requireSkill = FISHING,
-				repeatable = true,
+				isWeekly = true,
 				groups = {
 					i(19970),	-- Arcanite Fishing Pole
-					i(19979),	-- Hook of the Master Angler
+					i(274026, {	-- Extravagant Extravaganza Coin
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					title(1313, {	-- Master Angler <Name>
+						description = "Granted by the Master Angler! aura for the week after winning the contest.",
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						collectible = false,
+					}),
 				},
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
@@ -148,6 +155,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 					}),
 					i(276280, {	-- Hefty Sack of Coins
 						cost = { { "i", 19807, 10 } },	-- 10x Speckled Tastyfish
+					}),
+					i(19979, {	-- Hook of the Master Angler
+						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
 					}),
 					i(276272, {	-- Master Angler's Fishing Hat
 						cost = { { "i", 274026, 1 } },	-- 1x Extravagant Extravaganza Coin
