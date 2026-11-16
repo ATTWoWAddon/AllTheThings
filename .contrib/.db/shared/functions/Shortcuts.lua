@@ -696,10 +696,10 @@ end
 -- Appends together multiple arrays of groups (into the first provided group). This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
 --- Appends multiple group arrays into the first destination array.
 ---@overload fun<T>(g: T[]): T[]
----@overload fun(g: ATTObjectArray, ...: ATTObjectArray|nil): ATTObjectArray # Preserves field checks when appending object arrays.
----@param g? any[] # Destination array, created from nil when additional arrays are supplied.
+---@overload fun(g?: ATTObjectArray, ...: ATTObjectArray|nil): ATTObjectArray|nil # Preserves field checks for object arrays, including nullable destinations.
+---@param g? any[] # Destination array, created from nil when additional arguments are supplied.
 ---@param ... any[]|nil # Arrays to append in order; nil arguments are skipped.
----@return any[]|nil # Destination array, or nil if no arrays were supplied.
+---@return any[]|nil # Destination array, or nil when g is nil and no additional arguments are supplied.
 appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then

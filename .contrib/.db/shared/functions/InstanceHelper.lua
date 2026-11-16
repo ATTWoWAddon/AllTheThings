@@ -34,7 +34,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	---@field Coords? table<ATTInstanceBossID, ATTRawCoordinates> # Boss coordinate inputs accepted by Parser normalization.
 	---@field BossObjects? table<ATTInstanceBossID, ObjectID[]> # Object providers to attach to each boss.
 	---@field LFRQueueNPC? ATTObject # NPC and coordinate fields copied to applicable LFR difficulties.
-	---@field UpgradeMapping? table<DifficultyID, number> # Difficulty upgrade encoding; zero skips upgrades.
+	---@field UpgradeMapping? table<DifficultyID, number|ATTIgnoredValue> # Difficulty upgrades; zero skips and IGNORED_VALUE propagates unchanged.
 	---@field ExtraLoots? ATTInstanceExtraLoot[] # Additional callbacks and boss-keyed loot data.
 	---@field BossOnly fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Builds boss metadata without loot.
 	---@field Boss fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Adds regular and extra loot to a boss.
