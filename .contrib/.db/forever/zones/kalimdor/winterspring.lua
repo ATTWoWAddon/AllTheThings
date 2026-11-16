@@ -869,6 +869,11 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					{ 39.8, 36.4, MAP.WINTERSPRING },
 					{ 45.0, 38.0, MAP.WINTERSPRING },
 				},
+				groups = {
+					i(285284, {	-- Balanced Knives
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10200, {	-- Rak'shiri
 				coords = {

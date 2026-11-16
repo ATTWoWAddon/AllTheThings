@@ -59,6 +59,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					i(11910),	-- Bejeweled Legguards
 					i(11911),	-- Treetop Leggings
 					i(11913),	-- Clayridge Helm
+					i(270122, {	-- Yesterday's Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(4142, {	-- A Visit to Gregan
