@@ -1014,7 +1014,7 @@ maproot(KALIMDOR, TANARIS, {
 			}),
 			q(2864, {	-- Tran'rek
 				qg = 773,	-- Krazek
-				coord = { 51.6, 26.8, STRANGLETHORN_VALE },
+				coord = { 27.0, 77.2, STRANGLETHORN_VALE },
 				isBreadcrumb = true,
 				lvl = 40,
 			}),
