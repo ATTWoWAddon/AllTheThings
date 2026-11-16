@@ -1371,14 +1371,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				lvl = 10,
 			}),
 			q(96825, {	-- This Fruit Could Bite Back
-				qgs = {
-					3191,	-- Cook Torka
-					3881,	-- Grimtak
-				},
-				coords = {
-					{ 51.11, 42.45, MAP.DUROTAR },
-					{ 51.2, 42.6, MAP.DUROTAR },
-				},
+				qg = 3191,	-- Cook Torka
+				coord = { 51.11, 42.45, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 3,
