@@ -249,6 +249,88 @@ instanceroot(2994, {	-- Alcaz Prison
 				cost = { { "i", 279450, 6 } },	-- 6x Fractured Insignia
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(287017, {	-- Chaplain's Mitre
+				crs = {
+					255267,	-- Slavering Hound
+					255995,	-- Strashaz Soldier
+				},
+			}),
+			i(287018, {	-- Compound Gloves
+				crs = {
+					255271,	-- Defias Truthfinder
+					255373,	-- Strashaz Enchantress
+					255995,	-- Strashaz Soldier
+				},
+			}),
+			i(287020, {	-- Defias Enforcer's Chest
+				crs = {
+					255262,	-- Alcaz Chaplain
+					255267,	-- Slavering Hound
+					255271,	-- Defias Truthfinder
+					255276,	-- Defias Mercenary
+					255309,	-- Defias Bounty Hunter
+					255364,	-- Renegade Conjurer
+					255373,	-- Strashaz Enchantress
+					255377,	-- Alcaz Jailer
+					255995,	-- Strashaz Soldier
+					271784,	-- Alcaz Jailer
+				},
+			}),
+			i(287019, {	-- Defias Enforcer's Mask
+				crs = {
+					255262,	-- Alcaz Chaplain
+					255267,	-- Slavering Hound
+					255271,	-- Defias Truthfinder
+					255276,	-- Defias Mercenary
+					255309,	-- Defias Bounty Hunter
+					255364,	-- Renegade Conjurer
+					255373,	-- Strashaz Enchantress
+					255995,	-- Strashaz Soldier
+					271784,	-- Alcaz Jailer
+				},
+			}),
+			i(287021, {	-- Defias Enforcer's Prowlers
+				crs = {
+					255262,	-- Alcaz Chaplain
+					255267,	-- Slavering Hound
+					255271,	-- Defias Truthfinder
+					255276,	-- Defias Mercenary
+					255309,	-- Defias Bounty Hunter
+					255364,	-- Renegade Conjurer
+					255373,	-- Strashaz Enchantress
+					255377,	-- Alcaz Jailer
+					255995,	-- Strashaz Soldier
+					271784,	-- Alcaz Jailer
+				},
+			}),
+			i(287025, {	-- Enchantresses' Spire
+				cr = 255373,	-- Strashaz Enchantress
+			}),
+			i(287023, {	-- Iron-Wrought Cuffs
+				crs = {
+					255262,	-- Alcaz Chaplain
+					255271,	-- Defias Truthfinder
+					255373,	-- Strashaz Enchantress
+					255377,	-- Alcaz Jailer
+					255995,	-- Strashaz Soldier
+				},
+			}),
+			i(287024, {	-- Mark of Captivity
+				crs = {
+					255262,	-- Alcaz Chaplain
+					255267,	-- Slavering Hound
+					255309,	-- Defias Bounty Hunter
+					271780,	-- Defias Mercenary
+				},
+			}),
+			i(287022, {	-- Spaulders of Containment
+				crs = {
+					255271,	-- Defias Truthfinder
+					255995,	-- Strashaz Soldier
+				},
+			}),
+		}),
 		e(3403, {	-- Overseer Wrex
 			creatureID = 255391,	-- Overseer Wrex
 			groups = {
