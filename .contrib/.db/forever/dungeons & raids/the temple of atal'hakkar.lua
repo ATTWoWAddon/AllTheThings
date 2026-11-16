@@ -530,25 +530,3 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 		}),
 	},
 });
-
-root(ROOTS.HiddenQuestTriggers, {
-	header(HEADERS.Currency, 3469, {	-- Tarnished Undermine Real
-		symselector = SymSelector.FOREVER_TARNISHED_UNDERMINE_REAL,
-		groups = {
-			inst(237, {	-- The Temple of Atal'hakkar
-				mapID = MAP.SUNKEN_TEMPLE,
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				groups = sharedData({
-					isDaily = true,
-				},{
-					hqt(96185, name(HEADERS.NPC, 8580)),	-- Atal'alarion
-					hqt(96186, name(HEADERS.NPC, 5710)),	-- Jammal'an the Prophet (and Ogom the Wretched; "the 2 troll bosses, I think")
-					hqt(96187, name(HEADERS.NPC, 5721)),	-- Dreamscythe (and Weaver)
-					hqt(96188, name(HEADERS.NPC, 5719)),	-- Morphaz (and Hazzas)
-					hqt(96189, name(HEADERS.NPC, 5709)),	-- Shade of Eranikus
-					hqt(96190, name(HEADERS.NPC, 8443)),	-- Avatar of Hakkar
-				}),
-			}),
-		},
-	}),
-});

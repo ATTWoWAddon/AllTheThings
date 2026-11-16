@@ -969,10 +969,13 @@ do
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, options)
 	-- app.print("GCSR",paramA,paramB,options and options.IgnoreCache)
+	-- Tooltip info is cached per search group, and some tooltips change while a modifier key is held,
+	-- so cache results separately per modifier state
+	local modifier = IsModifierKeyDown() and "+mod" or ""
 	-- Results can differ by open merchant, so cache them per merchant
 	local merchantNPCID = app.CurrentMerchantNPCID
 	if merchantNPCID then
-		local key = (paramB and paramA..":"..paramB or paramA) .. "@" .. merchantNPCID
+		local key = (paramB and paramA..":"..paramB or paramA) .. "@" .. merchantNPCID .. modifier
 		if options and options.IgnoreCache then
 			return GetSearchResults(method, paramA, paramB, options)
 		end
@@ -986,10 +989,10 @@ app.GetCachedSearchResults = function(method, paramA, paramB, options)
 		-- probably long enough that any repeated use is smoother, but short enough that user actions would typically result in fresh lookups
 		if options.ShortCache then
 			local time = math_floor(GetTime() / 10)
-			return app.GetCachedData((paramB and paramA..":"..paramB or paramA)..time, GetSearchResults, method, paramA, paramB, options);
+			return app.GetCachedData((paramB and paramA..":"..paramB or paramA)..time..modifier, GetSearchResults, method, paramA, paramB, options);
 		end
 	end
-	return app.GetCachedData(paramB and paramA..":"..paramB or paramA, GetSearchResults, method, paramA, paramB, options);
+	return app.GetCachedData((paramB and paramA..":"..paramB or paramA)..modifier, GetSearchResults, method, paramA, paramB, options);
 end
 end	-- Search results Lib
 

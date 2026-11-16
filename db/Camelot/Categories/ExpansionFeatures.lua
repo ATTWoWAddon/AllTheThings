@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local cu,flt,h,i,n,p,prof,q,qo,s=_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource;
+local cu,flt,h,hqt,i,inst,n,p,prof,q,qo,s=_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateItemSource;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
 h(-554,{symselector=4,u=3,g={
@@ -655,5 +655,54 @@ q(84395,_.ResolveQuestData({aqd=
 [1458]={{73.3,32.4}}},qgs={7825}},maps={1422},qss={228132},g={
 i(211779,{b=1,c={8}})}})),
 q(81954,{maps={1425},qss={220350},g={
-i(211779,{b=1,c={8}})}})}})))}})
+i(211779,{b=1,c={8}})}})}}))),
+h(-825,{
+h(-824,{
+cu(3469,{maps={220},OnTooltip=function(t,tooltipInfo)if not IsShiftKeyDown()then	tooltipInfo[#tooltipInfo+1]={left="Hold Shift to see the daily boss kills that award this currency.",r=0.6,g=0.8,b=1,wrap=true}return end	local results=t.g if not results then return end	tooltipInfo[#tooltipInfo+1]={left=" "}local function hasQuest(g)for i=1,#g do	local o=g[i] if o.questID or(o.g and hasQuest(o.g))then return true end	end	return false end	local function allSaved(g)for i=1,#g do	local o=g[i] if o.questID then	if not o.saved then return false end	elseif o.g and not o.itemID and not allSaved(o.g)then	return false end	end	return true end	local function add(g,indent)for i=1,#g do	local o=g[i] if o.questID then	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or("Quest #"..o.questID)),right=_.GetCompletionIcon(o.saved)}elseif o.g and not o.itemID and hasQuest(o.g)then	if allSaved(o.g)then	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or UNKNOWN),right=(COMPLETE or "Complete").." ".._.GetCompletionIcon(true)}else	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or UNKNOWN)}add(o.g,indent.."  ")end	end	end	end	add(results,"")end,g={
+inst(237,{mapID=220,g={
+hqt(96185,{an="n:8580",isDaily=1}),
+hqt(96186,{an="n:5710",isDaily=1}),
+hqt(96187,{an="n:5721",isDaily=1}),
+hqt(96188,{an="n:5719",isDaily=1}),
+hqt(96189,{an="n:5709",isDaily=1}),
+hqt(96190,{an="n:8443",isDaily=1})}})}})}),
+h(-58,{
+n(227853,{coords={
+[1434]={{28.5,75.8}}},g={
+i(272151,{b=1,cost={{"c",3469,5}}}),
+s(307941,272393,{b=1,c={8},cost={{"c",3469,100}},f=4,loc=45,lvl=60}),
+s(307942,272394,{b=1,c={5},cost={{"c",3469,100}},f=4,loc=45,lvl=60}),
+s(307943,272395,{b=1,c={4},cost={{"c",3469,100}},f=5,loc=45,lvl=60}),
+s(307944,272396,{b=1,c={11},cost={{"c",3469,100}},f=5,loc=45,lvl=60}),
+s(307945,272397,{b=1,c={3},cost={{"c",3469,100}},f=6,loc=45,lvl=60}),
+s(307946,272398,{b=1,c={11},cost={{"c",3469,100}},f=5,loc=45,lvl=60}),
+s(307947,272399,{b=1,c={7},cost={{"c",3469,100}},f=6,loc=45,lvl=60}),
+s(307948,272401,{b=1,c={11},cost={{"c",3469,100}},f=5,loc=45,lvl=60}),
+s(307949,272402,{b=1,c={7},cost={{"c",3469,100}},f=6,loc=45,lvl=60}),
+s(307950,272403,{b=1,c={1},cost={{"c",3469,100}},f=7,loc=45,lvl=60}),
+s(307951,272404,{b=1,c={2},cost={{"c",3469,100}},f=7,loc=45,lvl=60}),
+s(307952,272405,{b=1,c={2},cost={{"c",3469,100}},f=7,loc=45,lvl=60}),
+i(272406,{b=1,cost={{"c",3469,75}},f=52,lvl=60}),
+i(272407,{b=1,cost={{"c",3469,75}},f=52,lvl=60}),
+i(272408,{b=1,cost={{"c",3469,75}},f=52,lvl=60}),
+i(272409,{b=1,cost={{"c",3469,75}},f=52,lvl=60}),
+s(307953,272410,{b=1,c={7},cost={{"c",3469,100}},f=6,loc=45,lvl=60}),
+s(307954,272411,{b=1,cost={{"c",3469,75}},f=3,lvl=60}),
+s(307955,272413,{b=1,cost={{"c",3469,75}},f=3,lvl=60}),
+s(307956,272414,{b=1,cost={{"c",3469,75}},f=3,lvl=60}),
+s(307957,272415,{b=1,cost={{"c",3469,75}},f=3,lvl=60}),
+i(272427,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291059}),
+i(272428,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291060}),
+i(272429,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291075}),
+i(272430,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291061}),
+i(272431,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291076}),
+i(272432,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291078}),
+i(272433,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291077}),
+i(272434,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291083}),
+i(272435,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291086}),
+i(272436,{b=1,cost={{"c",3469,50}},f=54,lvl=60,spellID=1291089}),
+i(272437,{b=1,cost={{"c",3469,125}},f=53,lvl=60,spellID=1291097}),
+i(272438,{b=1,cost={{"c",3469,125}},f=53,lvl=60,spellID=1291101}),
+i(272439,{b=1,cost={{"c",3469,125}},f=53,lvl=60,spellID=1291103}),
+i(272440,{b=1,cost={{"c",3469,125}},f=53,lvl=60,spellID=1291105})}})})})}})
 end)

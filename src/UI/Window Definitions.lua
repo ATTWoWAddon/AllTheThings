@@ -1443,6 +1443,8 @@ local function CreateRow(container, rows, i)
 	row:SetScript("OnClick", RowOnClick);
 	row:SetScript("OnEnter", RowOnEnter);
 	row:SetScript("OnLeave", RowOnLeave);
+	-- GameTooltip calls its owner's UpdateTooltip each tick; RowOnEnter rebuilds when the modifier state changes
+	row.UpdateTooltip = RowOnEnter;
 	row:EnableMouse(true);
 
 	-- Label is the text information you read.

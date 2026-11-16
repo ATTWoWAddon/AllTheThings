@@ -1348,6 +1348,8 @@ localize(L.HEADER_NAMES, {
 	[-820] = "The Dawn Waker",
 	[-821] = "Premier PvP Gear",
 	[-823] = "Moonwell",
+	[-824] = "Currencies",
+	[-825] = "Undermine Trader",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1487,6 +1489,8 @@ localize(L.HEADER_ICONS, {
 	[-820] = 7789512,
 	[-821] = 132691,
 	[-823] = 134754,
+	[-824] = 133784,
+	[-825] = 133799,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -2622,6 +2626,7 @@ local ObjectNames = {
 	[441946] = "Shrine of the Moon",
 	[441947] = "Shrine of the Beast",
 	[441948] = "Shrine of the Warden",
+	[442688] = "Old Crate",
 	[457387] = "Dwarven Heirloom",
 	[463206] = "Book",
 	[463207] = "Book",
