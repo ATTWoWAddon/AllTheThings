@@ -99,6 +99,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				i(271130),	-- Venom Infusion
 			}),
 			mapped(n(DELVE_COMPLETION, {
+				n(ARMOR, {symselector=SymSelector.MID_DELVES_S2_ARMOR}),
+				n(WEAPONS, {symselector=SymSelector.MID_DELVES_S2_WEAPONS}),
 				n(ARMOR, {
 					filter(BACK_F, {
 						providers = DATAGROUP.MID.DELVES.JEWELRY_PROVIDERS,

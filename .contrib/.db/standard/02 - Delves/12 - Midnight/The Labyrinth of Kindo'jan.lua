@@ -261,7 +261,9 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 			}),
 			n(REWARDS, {
-				i(285801),	-- Heroic Soul Fragment
+				i(285801, {	-- Heroic Soul Fragment
+					sym = {{ "select", "symselector", SymSelector.MID_DELVES_S2_ARMOR, SymSelector.MID_DELVES_S2_WEAPONS }},
+				}),
 			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
