@@ -139,7 +139,7 @@
 --- Parser data node containing identifiers, shared metadata, and optional child groups.
 --- Intentionally non-exact: parser objects are an extensible data model and
 --- may carry module/flavor-specific fields outside this central shortcut schema.
----@class ATTObject
+---@class ATTObjectMetadata
 ---@field groups? ATTObjectArray # Nested parser objects.
 ---@field g? ATTObjectArray # Legacy alias for `groups`; normalized by parser helpers.
 ---@field type? string # Parser object type override.
@@ -272,7 +272,6 @@
 ---@field learnedAt? integer # Skill level at which the recipe is learned.
 ---@field lockCriteria? { [1]: integer, [integer]: string|integer } # Lock criteria: a match count followed by key/value pairs, e.g. `{ 1, "questID", 12345 }`. Keys seen in data: questID, lvl, factionID, achID, spellID, sourceID, toyID, renownID, decorID.
 ---@field OnUpdate? string # Lua source of a `function(t)` stored as a string, e.g. `[[function(t) ... end]]`. Run when the group updates.
----@field lore? string # Lore text for the group.
 ---@field allianceQuestData? table # Alliance-specific quest data (short form: aqd).
 ---@field aqd? table # Alias for `allianceQuestData`.
 ---@field hordeQuestData? table # Horde-specific quest data (short form: hqd).
@@ -300,6 +299,10 @@
 ---@field _DATAGROUP? string # Group key used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field _DATAGROUPS? string[] # Group keys used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field [integer] ATTObject # Array-style group entries.
+
+--- Ordinary parser object with plain group lore.
+---@class ATTObject: ATTObjectMetadata
+---@field lore? string # Lore text for the group.
 
 --- Object input for helpers that append to an existing provider list.
 ---@class ATTProviderListObject: ATTObject
@@ -457,7 +460,8 @@
 ---@field [string] any # Additional localization metadata.
 
 --- Shared fields used by both raw header definitions and processed header data.
----@class ATTHeaderDefinitionBase: ATTObject
+---@class ATTHeaderDefinitionBase: ATTObjectMetadata
+---@field lore? string|ATTLocalizationStringTable # Header lore as plain text or localized text with English.
 ---@field readable string # Human-readable parser label.
 ---@field text string|ATTLocalizationStringTable # Localized header text.
 ---@field constant? string # Unique header constant.
