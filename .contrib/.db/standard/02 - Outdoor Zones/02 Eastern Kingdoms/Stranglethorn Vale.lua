@@ -2967,6 +2967,51 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 			}),
 			i(2799),	-- Gorilla Fang
+			i(2725, {	-- Green Hills of Stranglethorn - Page 1
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2728, {	-- Green Hills of Stranglethorn - Page 4
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2730, {	-- Green Hills of Stranglethorn - Page 6
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2732, {	-- Green Hills of Stranglethorn - Page 8
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2734, {	-- Green Hills of Stranglethorn - Page 10
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2735, {	-- Green Hills of Stranglethorn - Page 11
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2738, {	-- Green Hills of Stranglethorn - Page 14
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2740, {	-- Green Hills of Stranglethorn - Page 16
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2742, {	-- Green Hills of Stranglethorn - Page 18
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2744, {	-- Green Hills of Stranglethorn - Page 20
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2745, {	-- Green Hills of Stranglethorn - Page 21
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2748, {	-- Green Hills of Stranglethorn - Page 24
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2749, {	-- Green Hills of Stranglethorn - Page 25
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2750, {	-- Green Hills of Stranglethorn - Page 26
+				timeline = { REMOVED_4_0_3 },
+			}),
+			i(2751, {	-- Green Hills of Stranglethorn - Page 27
+				timeline = { REMOVED_4_0_3 },
+			}),
 			i(1986, {	-- Gutrender
 				timeline = { REMOVED_4_0_3, ADDED_7_3_5 },
 				cr = 709,	-- Mosh'Ogg Warmonger
