@@ -2735,7 +2735,7 @@ local function BuildWindow(suffix)
 		end,
 	});
 
-	if not definition.IgnoreQuestUpdates and app.IsClassic then
+	if not definition.IgnoreQuestUpdates and (app.IsClassic or app.IsForever) then
 		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
 		-- The delay is refreshed to its full duration if multiple calls are made in the same frame.
 		local delays = {};
