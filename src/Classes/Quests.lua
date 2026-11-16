@@ -1927,7 +1927,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
 			or (ObjectiveHasCreature(t) and GetCreatureObjectiveIcon())
-			or t.parent.icon or 311226;
+			or (t.parent and t.parent.icon) or 311226;
 	end,
 	model = function(t)
 		if t.providers then
@@ -1974,7 +1974,8 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	end,
 	collected = function(t)
 		-- If the parent is collected, return immediately.
-		local collected = t.parent.collected;
+		local parent = t.parent;
+		local collected = parent and parent.collected;
 		if collected then return collected; end
 
 		-- Check to see if the objective was completed.
@@ -1993,7 +1994,8 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	end,
 	saved = function(t)
 		-- If the parent is saved, return immediately.
-		local saved = t.parent.saved;
+		local parent = t.parent;
+		local saved = parent and parent.saved;
 		if saved then return saved; end
 
 		-- Check to see if the objective was completed.
