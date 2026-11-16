@@ -1,6 +1,108 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
+-- Dungeon bosses that drop the shared armor recipe sets (union of what Wowhead has recorded)
+local CHEST_RECIPE_BOSSES = {	-- Chain Shirt plans and Leather Armor patterns
+	643,	-- Sneed
+	644,	-- Rhahk'Zor
+	645,	-- Cookie
+	646,	-- Mr. Smite
+	647,	-- Captain Greenskin
+	1763,	-- Gilnid
+	3586,	-- Miner Johnson
+	3653,	-- Kresh
+	3669,	-- Lord Cobrahn
+	3671,	-- Lady Anacondra
+	3864,	-- Fel Steed
+	3865,	-- Shadow Charger
+	3914,	-- Rethilgore <The Cell Keeper>
+	5912,	-- Deviate Faerie Dragon
+	11517,	-- Oggleflint
+	11518,	-- Jergosh the Invoker
+	11519,	-- Bazzalan
+	11520,	-- Taragaman the Hungerer
+	255699,	-- Lordaeron Captain
+};
+local LEGS_RECIPE_BOSSES = {	-- Chain Leggings plans and Leather Pants patterns
+	639,	-- Edwin VanCleef <Defias Kingpin>
+	1696,	-- Targorr the Dread
+	3654,	-- Mutanus the Devourer
+	3670,	-- Lord Pythas
+	3673,	-- Lord Serpentis
+	3674,	-- Skum
+	3865,	-- Shadow Charger
+	3872,	-- Deathsworn Captain
+	3886,	-- Razorclaw the Butcher
+	3887,	-- Baron Silverlaine
+	3927,	-- Wolf Master Nandos
+	4274,	-- Fenrus the Devourer
+	4275,	-- Archmage Arugal
+	4278,	-- Commander Springvale
+	4279,	-- Odo the Blindwatcher
+	4831,	-- Lady Sarevess
+	4887,	-- Ghamoo-ra
+	5775,	-- Verdan the Everliving
+};
+local HEAD_RECIPE_BOSSES = {	-- Chain Helm plans and Leather Helm patterns
+	1663,	-- Dextren Ward
+	1666,	-- Kam Deepfury
+	1716,	-- Bazil Thredd
+	1717,	-- Hamhock
+	1720,	-- Bruegal Ironknuckle
+	3974,	-- Houndmaster Loksey
+	3983,	-- Interrogator Vishas
+	4420,	-- Overlord Ramtusk
+	4421,	-- Charlga Razorflank
+	4422,	-- Agathelos the Raging
+	4424,	-- Aggem Thorncurse
+	4425,	-- Blind Hunter
+	4428,	-- Death Speaker Jargba
+	4543,	-- Bloodmage Thalnos
+	4829,	-- Aku'mai
+	4830,	-- Old Serra'kis
+	4832,	-- Twilight Lord Kelris
+	4842,	-- Earthcaller Halmgar
+	6168,	-- Roogug
+	6228,	-- Dark Iron Ambassador
+	6229,	-- Crowd Pummeler 9-60
+	6235,	-- Electrocutioner 6000
+	6243,	-- Gelihast
+	6488,	-- Fallen Champion
+	6489,	-- Ironspine
+	6490,	-- Azshir the Sleepless
+	7079,	-- Viscous Fallout
+	7361,	-- Grubbis
+	7800,	-- Mekgineer Thermaplugg
+	12876,	-- Baron Aquanis
+	12902,	-- Lorgus Jett
+};
+local FEET_AND_WAIST_RECIPE_BOSSES = {	-- boot/shoe plans and patterns and the Cord patterns
+	3975,	-- Herod
+	3976,	-- Scarlet Commander Mograine
+	3977,	-- High Inquisitor Whitemane
+	4542,	-- High Inquisitor Fairbanks
+	4854,	-- Grimlok
+	6487,	-- Arcanist Doan
+	6906,	-- Baelog
+	6907,	-- Eric "The Swift"
+	6910,	-- Revelosh
+	7023,	-- Obsidian Sentinel
+	7206,	-- Ancient Stone Keeper
+	7228,	-- Ironaya
+	7272,	-- Theka the Martyr
+	7291,	-- Galgann Firehammer
+	7354,	-- Ragglesnout
+	7355,	-- Tuten'kash
+	7356,	-- Plaguemaw the Rotting
+	7357,	-- Mordresh Fire Eye
+	7358,	-- Amnennar the Coldbringer
+	7604,	-- Sergeant Bly
+	7796,	-- Nekrum Gutchewer
+	8567,	-- Glutton
+	10080,	-- Sandarr Dunereaver
+	10081,	-- Dustwraith
+	10082,	-- Zerillis
+};
 root(ROOTS.WorldDrops, {
 	pickpocketing(true, {
 		description = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
@@ -3451,163 +3553,30 @@ root(ROOTS.WorldDrops, {
 		prof(BLACKSMITHING, {
 			i(273086, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Anvil (RECIPE!)
 			i(251353, {	-- Plans: Acolyte's Chain Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6488,	-- Fallen Champion
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251348, {	-- Plans: Acolyte's Chain Leggings (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251343, {	-- Plans: Acolyte's Chain Shirt (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor
-					645,	-- Cookie
-					646,	-- Mr. Smite
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					11517,	-- Oggleflint
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(251454, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Brass Knuckles (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(251354, {	-- Plans: Crusader's Chain Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					6168,	-- Roogug
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251349, {	-- Plans: Crusader's Chain Leggings (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251344, {	-- Plans: Crusader's Chain Shirt (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor
-					645,	-- Cookie
-					646,	-- Mr. Smite
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-					255699,	-- Lordaeron Captain
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
@@ -3624,84 +3593,15 @@ root(ROOTS.WorldDrops, {
 			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
 			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
 			i(251351, {	-- Plans: Guard's Chain Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251346, {	-- Plans: Guard's Chain Leggings (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251341, {	-- Plans: Guard's Chain Shirt (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor
-					645,	-- Cookie
-					646,	-- Mr. Smite
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
@@ -3711,25 +3611,7 @@ root(ROOTS.WorldDrops, {
 			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)
 			i(3866),	-- Plans: Jade Serpentblade (RECIPE!)
 			i(251402, {	-- Plans: Justicar's Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7796,	-- Nekrum Gutchewer
-					10081,	-- Dustwraith
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12717),	-- Plans: Lionheart Helm (RECIPE!)
@@ -3738,135 +3620,24 @@ root(ROOTS.WorldDrops, {
 			i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 			i(7989),	-- Plans: Mithril Spurs (RECIPE!)
 			i(251398, {	-- Plans: Officer's Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10081,	-- Dustwraith
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 			i(251401, {	-- Plans: Prefect's Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251352, {	-- Plans: Protector's Chain Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6488,	-- Fallen Champion
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251347, {	-- Plans: Protector's Chain Leggings (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251342, {	-- Plans: Protector's Chain Shirt (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor
-					645,	-- Cookie
-					646,	-- Mr. Smite
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					11517,	-- Oggleflint
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12685),	-- Plans: Radiant Belt (RECIPE!)
@@ -3879,31 +3650,7 @@ root(ROOTS.WorldDrops, {
 			i(8028),	-- Plans: Runed Mithril Hammer (RECIPE!)
 			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
 			i(251399, {	-- Plans: Sentinel's Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
@@ -3925,109 +3672,19 @@ root(ROOTS.WorldDrops, {
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
 			i(251350, {	-- Plans: Veteran's Chain Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6488,	-- Fallen Champion
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251345, {	-- Plans: Veteran's Chain Leggings (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251340, {	-- Plans: Veteran's Chain Shirt (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor
-					645,	-- Cookie
-					646,	-- Mr. Smite
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-					255699,	-- Lordaeron Captain
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251400, {	-- Plans: Warder's Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
@@ -4099,81 +3756,15 @@ root(ROOTS.WorldDrops, {
 			i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
 			i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
 			i(252771, {	-- Pattern: Brawler's Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252814, {	-- Pattern: Brawler's Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6489,	-- Ironspine
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252792, {	-- Pattern: Brawler's Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(15737),	-- Pattern: Chimeric Boots (RECIPE!)
@@ -4184,83 +3775,15 @@ root(ROOTS.WorldDrops, {
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
 			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
 			i(252773, {	-- Pattern: Defender's Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252816, {	-- Pattern: Defender's Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6228,	-- Dark Iron Ambassador
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252794, {	-- Pattern: Defender's Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(7452),	-- Pattern: Dusky Boots (RECIPE!)
@@ -4280,53 +3803,11 @@ root(ROOTS.WorldDrops, {
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
 			i(252847, {	-- Pattern: Mender's Leather Shoes (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252899, {	-- Pattern: Mender's Mail Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
@@ -4335,395 +3816,67 @@ root(ROOTS.WorldDrops, {
 			i(15731),	-- Pattern: Runic Leather Gauntlets (RECIPE!)
 			i(15765),	-- Pattern: Runic Leather Pants (RECIPE!)
 			i(252898, {	-- Pattern: Skirmisher's Mail Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252844, {	-- Pattern: Skulker's Leather Shoes (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252846, {	-- Pattern: Skycaller's Leather Shoes (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252897, {	-- Pattern: Skycaller's Mail Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252896, {	-- Pattern: Stalker's Mail Boots (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					8567,	-- Glutton
-					10081,	-- Dustwraith
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
 			i(252775, {	-- Pattern: Stormrider's Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252818, {	-- Pattern: Stormrider's Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6488,	-- Fallen Champion
-					6489,	-- Ironspine
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252796, {	-- Pattern: Stormrider's Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(252774, {	-- Pattern: Totemic Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252817, {	-- Pattern: Totemic Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					6168,	-- Roogug
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252795, {	-- Pattern: Totemic Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252772, {	-- Pattern: Trapper's Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252815, {	-- Pattern: Trapper's Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6489,	-- Ironspine
-					6490,	-- Azshir the Sleepless
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252793, {	-- Pattern: Trapper's Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(252845, {	-- Pattern: Warden's Leather Shoes (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
@@ -4731,108 +3884,22 @@ root(ROOTS.WorldDrops, {
 			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
 			i(12716),	-- Pattern: Helm of the Great Chief (RECIPE!)
 			i(252776, {	-- Pattern: Wisdom's Leather Armor (RECIPE!)
-				crs = {
-					643,	-- Sneed
-					644,	-- Rhahk'Zor <The Foreman>
-					645,	-- Cookie <The Ship's Cook>
-					646,	-- Mr. Smite <The Ship's First Mate>
-					647,	-- Captain Greenskin
-					1763,	-- Gilnid <The Smelter>
-					3586,	-- Miner Johnson
-					3653,	-- Kresh
-					3669,	-- Lord Cobrahn
-					3671,	-- Lady Anacondra
-					3864,	-- Fel Steed
-					3865,	-- Shadow Charger
-					3914,	-- Rethilgore <The Cell Keeper>
-					5912,	-- Deviate Faerie Dragon
-					11517,	-- Oggleflint <Ragefire Chieftain>
-					11518,	-- Jergosh the Invoker
-					11519,	-- Bazzalan
-					11520,	-- Taragaman the Hungerer
-				},
+				crs = CHEST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252819, {	-- Pattern: Wisdom's Leather Helm (RECIPE!)
-				crs = {
-					1663,	-- Dextren Ward
-					1666,	-- Kam Deepfury
-					1716,	-- Bazil Thredd
-					1717,	-- Hamhock
-					1720,	-- Bruegal Ironknuckle
-					3974,	-- Houndmaster Loksey
-					3983,	-- Interrogator Vishas
-					4420,	-- Overlord Ramtusk
-					4421,	-- Charlga Razorflank
-					4422,	-- Agathelos the Raging
-					4424,	-- Aggem Thorncurse
-					4425,	-- Blind Hunter
-					4428,	-- Death Speaker Jargba
-					4543,	-- Bloodmage Thalnos
-					4829,	-- Aku'mai
-					4830,	-- Old Serra'kis
-					4832,	-- Twilight Lord Kelris
-					4842,	-- Earthcaller Halmgar
-					6168,	-- Roogug
-					6229,	-- Crowd Pummeler 9-60
-					6235,	-- Electrocutioner 6000
-					6243,	-- Gelihast
-					6488,	-- Fallen Champion
-					7079,	-- Viscous Fallout
-					7361,	-- Grubbis
-					7800,	-- Mekgineer Thermaplugg
-					12876,	-- Baron Aquanis
-					12902,	-- Lorgus Jett
-				},
+				crs = HEAD_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252797, {	-- Pattern: Wisdom's Leather Pants (RECIPE!)
-				crs = {
-					639,	-- Edwin VanCleef <Defias Kingpin>
-					1696,	-- Targorr the Dread
-					3654,	-- Mutanus the Devourer
-					3670,	-- Lord Pythas
-					3673,	-- Lord Serpentis
-					3674,	-- Skum
-					3865,	-- Shadow Charger
-					3872,	-- Deathsworn Captain
-					3886,	-- Razorclaw the Butcher
-					3887,	-- Baron Silverlaine
-					3927,	-- Wolf Master Nandos
-					4274,	-- Fenrus the Devourer
-					4275,	-- Archmage Arugal
-					4278,	-- Commander Springvale
-					4279,	-- Odo the Blindwatcher
-					4831,	-- Lady Sarevess
-					4887,	-- Ghamoo-ra
-					5775,	-- Verdan the Everliving
-				},
+				crs = LEGS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)
 			i(254044, {	-- Pattern: Black Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
@@ -4849,29 +3916,7 @@ root(ROOTS.WorldDrops, {
 			i(14506),	-- Pattern: Felcloth Robe (RECIPE!)
 			i(14508),	-- Pattern: Felcloth Shoulders (RECIPE!)
 			i(254042, {	-- Pattern: Fiery Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14474),	-- Pattern: Frostweave Gloves (RECIPE!)
@@ -4879,81 +3924,16 @@ root(ROOTS.WorldDrops, {
 			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
 			i(14466),	-- Pattern: Frostweave Tunic (RECIPE!)
 			i(254040, {	-- Pattern: Frothing Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6907,	-- Eric "The Swift"
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-					10081,	-- Dustwraith
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(254038, {	-- Pattern: Gilded Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6910,	-- Revelosh
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7272,	-- Theka the Martyr
-					7291,	-- Galgann Firehammer
-					7354,	-- Ragglesnout
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10081,	-- Dustwraith
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
 			i(254046, {	-- Pattern: Golden Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-					10081,	-- Dustwraith
-					10082,	-- Zerillis
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
@@ -4970,28 +3950,7 @@ root(ROOTS.WorldDrops, {
 			i(4348),	-- Pattern: Phoenix Gloves (RECIPE!)
 			i(4349),	-- Pattern: Phoenix Pants (RECIPE!)
 			i(254048, {	-- Pattern: Radiant Cord (RECIPE!)
-				crs = {
-					3975,	-- Herod
-					3976,	-- Scarlet Commander Mograine
-					3977,	-- High Inquisitor Whitemane
-					4542,	-- High Inquisitor Fairbanks
-					4854,	-- Grimlok
-					6487,	-- Arcanist Doan
-					6906,	-- Baelog
-					6907,	-- Eric "The Swift"
-					7023,	-- Obsidian Sentinel
-					7206,	-- Ancient Stone Keeper
-					7228,	-- Ironaya
-					7291,	-- Galgann Firehammer
-					7355,	-- Tuten'kash
-					7356,	-- Plaguemaw the Rotting
-					7357,	-- Mordresh Fire Eye
-					7358,	-- Amnennar the Coldbringer
-					7604,	-- Sergeant Bly
-					7796,	-- Nekrum Gutchewer
-					8567,	-- Glutton
-					10080,	-- Sandarr Dunereaver
-				},
+				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2598),	-- Pattern: Red Linen Robe (RECIPE!)
