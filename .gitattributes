@@ -184,3 +184,10 @@ docs export-ignore
 
 /.contrib/.raw/ItemDB/*.lua text eol=crlf
 /.contrib/.raw/ItemDB/README.txt text eol=lf
+
+/.contrib/.db/forever/*.lua text eol=lf
+/.contrib/.db/forever/**/*.lua text eol=lf
+
+# Preserve generated Forever Lua output in CRLF.
+/.contrib/.db/forever/.config/exploration/ExplorationPositions.lua text eol=crlf
+"/.contrib/.db/forever/.config/exports/Skill Level Requirements.lua" text eol=crlf

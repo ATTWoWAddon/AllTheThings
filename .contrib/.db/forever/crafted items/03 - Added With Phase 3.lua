@@ -31,7 +31,7 @@ root(ROOTS.Craftables, {
 			i(19051),	-- Girdle of the Dawn
 			i(19057),	-- Gloves of the Dawn
 			i(19043),	-- Heavy Timbermaw Belt
-			
+
 		}),
 	}),
 	--]]

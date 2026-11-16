@@ -25,7 +25,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 4,
 			lvl = 50,
 		},
-		
+
 		{
 			recipeID = 17253,	-- Bite [Rank 1]
 			rank = 1,
@@ -351,7 +351,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				7445,	-- Elder Shardtooth (Bear, 57-58, Winterspring)
 			},
 		},
-		
+
 		{
 			recipeID = 1742,	-- Cower [Rank 1]
 			rank = 1,
@@ -549,7 +549,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 4,
 			lvl = 50,
 		},
-		
+
 		{
 			recipeID = 24446,	-- Frost Resistance [Rank 1]
 			rank = 1,
@@ -665,7 +665,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 10,
 			lvl = 60,
 		},
-		
+
 		{
 			recipeID = 2649,	-- Growl [Rank 1]
 			rank = 1,
@@ -701,7 +701,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 7,
 			lvl = 60,
 		},
-		
+
 		{
 			recipeID = 24844,	-- Lightning Breath [Rank 1]
 			timeline = { CREATED_1_0_1, ADDED_2_0_1 },	-- No known training sources. :(
@@ -813,7 +813,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 10,
 			lvl = 60,
 		},
-		
+
 		{
 			recipeID = 24492,	-- Nature Resistance [Rank 1]
 			rank = 1,
@@ -834,7 +834,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 4,
 			lvl = 50,
 		},
-		
+
 		{
 			recipeID = 24450,	-- Prowl [Rank 1]
 			rank = 1,
@@ -864,7 +864,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				7432,	-- Frostsaber Stalker (Cat, 59-60, Winterspring)
 			},
 		},
-		
+
 		{
 			recipeID = 24640,	-- Scorpid Poison [Rank 1]
 			rank = 1,
@@ -917,7 +917,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				11737,	-- Stonelash Flayer (Scorpid, 58-59, Silithus)
 			},
 		},
-		
+
 		{
 			recipeID = 24423,	-- Screech [Rank 1]
 			rank = 1,
@@ -955,7 +955,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				7456,	-- Winterspring Screecher (Owl, 57-59, Winterspring)
 			},
 		},
-		
+
 		{
 			recipeID = 24488,	-- Shadow Resistance [Rank 1]
 			rank = 1,
@@ -976,7 +976,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			rank = 4,
 			lvl = 50,
 		},
-		
+
 		{
 			recipeID = 26064,	-- Shell Shield [Rank 1]
 			rank = 1,
@@ -989,7 +989,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				2408,	-- Snapjaw (Turtle, 30-31, Hillsbrad Foothills)
 			},
 		},
-		
+
 		{
 			recipeID = 26090,	-- Thunderstomp [Rank 1]
 			rank = 1,
@@ -1017,7 +1017,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				9622,	-- U'cha (Gorilla, 55, Un'Goro Crater)
 			},
 		},
-		
+
 		{
 			recipeID = 1310612,	-- Trickster's Dance [Rank 1]
 			rank = 1,

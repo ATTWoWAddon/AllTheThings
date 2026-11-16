@@ -1116,7 +1116,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 					1192,	-- Elder Mountain Boar
 				},
 				coord = { 37.0, 34.4, MAP.LOCH_MODAN },
-				
+
 			}),
 			i(2823, {	-- Mo'grosh Can Opener
 				cr = 1180,	-- Mo'grosh Brute

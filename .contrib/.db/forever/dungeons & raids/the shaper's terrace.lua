@@ -11,7 +11,7 @@ instanceroot(3001, {	-- The Shaper's Terrace
 	lvl = 58,
 	groups = {
 		n(QUESTS, {
-			
+
 			q(95928, {	-- Crystalline Elements
 				qg = 263445,	-- Mayena Earthseeker
 				coord = { 34.8, 22.0, MAP.MULGORE },

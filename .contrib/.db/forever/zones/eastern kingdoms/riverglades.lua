@@ -2117,7 +2117,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				}},
 				groups = bubbleDownClassicRep(2827, {	-- Powderfuse
 					{	-- Neutral
-						
+
 					}, {	-- Friendly
 						i(276200),	-- Crawler's Clackers
 						i(276202),	-- Disengagement Ring

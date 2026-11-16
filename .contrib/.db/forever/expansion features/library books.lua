@@ -58,7 +58,7 @@ local allBookSourceQuests = {
 	84395,	-- Undead Potatoes
 	81954,	-- Venomous Journeys
 };
-local LibraryBooksOnInit = 
+local LibraryBooksOnInit =
 [[function(t)
 	local g=t.g;
 	for i=1,#g,1 do

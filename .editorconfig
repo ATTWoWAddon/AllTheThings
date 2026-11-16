@@ -396,3 +396,33 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Forever Lua database files
+[/.contrib/.db/forever/**.lua]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve the generated exploration output format.
+[/.contrib/.db/forever/.config/exploration/ExplorationPositions.lua]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve the generated export output format.
+[/.contrib/.db/forever/.config/exports/Skill Level Requirements.lua]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = false

@@ -40,7 +40,7 @@ TAILORING_RECIPES = {
 			r(2963),	-- Bolt of Linen Cloth
 			r(2964),	-- Bolt of Woolen Cloth
 		}),
-		
+
 	};
 	JOURNEYMAN = {
 		r(3909, {	-- Tailoring (Journeyman)

@@ -4722,6 +4722,7 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(730, {	-- Murloc Eye
 			crs = {
+				-- editorconfig-checker-disable -- Preserve numeric alignment.
 				 4819,	-- Blindlight Muckdweller
 				 4818,	-- Blindlight Murloc
 				 4820,	-- Blindlight Oracle
@@ -4774,6 +4775,7 @@ root(ROOTS.WorldDrops, {
 				 1767,	-- Vile Fin Shredder
 				 1958,	-- Vile Fin Tidecaller
 				 1768,	-- Vile Fin Tidehunter
+				-- editorconfig-checker-enable
 			},
 			description = "Drops from murlocs in the level bracket 10-30 like murlocs along the Westfall coast.",
 		}),

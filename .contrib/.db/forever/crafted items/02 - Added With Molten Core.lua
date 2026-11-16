@@ -25,7 +25,7 @@ root(ROOTS.Craftables, {
 		n(WEAPON_ENCHANTMENTS, {
 			i(18283),	-- Biznicks 247x128 Accurascope
 		}),
-	}), 
+	}),
 	prof(LEATHERWORKING, {
 		filter(MISC, {
 			i(18251),	-- Core Armor Kit

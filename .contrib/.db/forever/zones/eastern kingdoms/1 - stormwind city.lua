@@ -674,9 +674,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					objective(1, {	-- 0/14 Summoner's Salt
 						provider = { "i", 209778 },	-- Summoner's Salt
 						crs = {
+							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							4463,	-- Blackrock Summoner
 							 435,	-- Blackrock Champion
 							 615,	-- Blackrock Tracker
+							-- editorconfig-checker-enable
 						},
 					}),
 				},
@@ -1053,10 +1055,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					objective(1, {	-- 0/12 Mote of Mannoroth
 						provider = { "i", 209779 },	-- Mote of Mannoroth
 						crs = {
+							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							 6073,	-- Searing Infernal
 							 6115,	-- Felguard
 							11697,	-- Mannoroc Lasher
 							 6071,	-- Legion Hound
+							-- editorconfig-checker-enable
 						},
 					}),
 				},
