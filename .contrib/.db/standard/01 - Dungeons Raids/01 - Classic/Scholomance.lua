@@ -977,9 +977,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			"This boss was summoned using the Brazier of Beckoning in Ras Frostwhisper's room, which is currently inaccessible.",
 			-- #endif
 		-- #if BEFORE 6.0.2
-		cost = {
-			{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
-		},
+		cost = { { "i", 22052, 1 } },	-- Brazier of Beckoning [Kormok]
 		-- #endif
 
 		-- #if AFTER 10.1.5
@@ -996,9 +994,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 		groups = {
 			i(22332),	-- Blade of Necromancy
 			i(22333),	-- Hammer of Divine Might
-			i(22303, {	-- Ironweave Pants
-				timeline = { REMOVED_4_0_3 },
-			}),
+			i(22303, { timeline = { REMOVED_4_0_3 } }),	-- Ironweave Pants
 			i(22326),	-- Amalgam's Band
 			i(22331),	-- Band of the Steadfast Hero
 		},

@@ -2287,6 +2287,7 @@ i(217162);	-- Necklace of Kobold Teeth
 i(227324);	-- Nerub'ar Nectar
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
+i(224155);	-- Peeled Fungal Scale
 i(220240);	-- Night's Litany
 i(213258);	-- Odorant Oddity
 i(225809);	-- Oiled Pigment Pouch

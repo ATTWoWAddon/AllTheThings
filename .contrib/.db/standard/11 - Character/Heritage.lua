@@ -1083,7 +1083,11 @@ root(ROOTS.Character, n(HERITAGE, {
 				coord = { 50.0, 60.0, VALLEY_OF_TRIALS },
 				isBreadcrumb = true,
 				groups = {
-					i(202402),	-- Bag of Cactus Apples
+					o(384774, {	-- Bag of Cactus Apples
+						coord = { { 49.8, 60.2, VALLEY_OF_TRIALS } },
+						groups = { i(202402) },	-- Bag of Cactus Apples (QI!)
+					}),
+					--
 					i(202401),	-- Cactus Apple Surprise
 				},
 			}),

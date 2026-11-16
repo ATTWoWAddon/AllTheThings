@@ -412,17 +412,17 @@ local QUANTUM_GROUP = sharedData({
 		i(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			bonusID = 451,
 			modID = 0,
-			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (HC)	(NYI)
 			bonusID = 1,
 			modID = 0,
-			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		i(186414, {	-- Rae'shalare, Death's Whisper (M)		(NYI)
 			bonusID = 450,
 			modID = 0,
-			timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
+			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(115294),	-- Spectral Longbow						(NYI)
 

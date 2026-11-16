@@ -879,6 +879,7 @@ MobileDB.Creature = {
 	[197631] = true,	-- Rowie
 	[197915] = true,	-- Lindormi
 	[199261] = true,	-- Holiday Enthusiast
+	[201361] = true,	-- Durak
 	-- #if BEFORE 10.2.7
 	[205127] = true,	-- Newsy
 	-- #endif
@@ -2371,6 +2372,8 @@ MobileDB.GameObject = {
 	[316399] = true,	-- Azerite Chest (q:54644)
 	[316434] = true,	-- Azerite Chest (q:54664)
 	[316440] = true,	-- Azerite Chest (q:54681)
+	[316707] = true,	-- Expedition Strongbox [Grong]
+	[316871] = true,	-- Treasure of the Zandalari [King Rastakhan]
 	[322020] = true,	-- Pile of Coins (Armored Vaultbot)
 	[322065] = true,	-- Reinforced Cage (q:54959)
 	[322358] = true,	-- Waterlogged Alliance Crate (q:57331)

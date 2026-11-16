@@ -62,9 +62,19 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 			}),
 			q(93649, {	-- Got the Gall
 				coord = { 29.4, 50.4, MAP.MIDNIGHT.THE_COILED_ISLE },
-				qis = {
-					260424,	-- Lumpy Gallstone (QI!)
-					269918,	-- Venom-Corroded Gallstone (QI!)
+				qi = 269918,	-- Venom-Corroded Gallstone (QI!)
+				groups = {
+					o(642119, {	-- Cliffdweller Corpse
+						coords = {
+							{ 28.0, 52.4, MAP.MIDNIGHT.THE_COILED_ISLE },
+							{ 28.7, 51.9, MAP.MIDNIGHT.THE_COILED_ISLE },
+							{ 28.9, 50.3, MAP.MIDNIGHT.THE_COILED_ISLE },
+							{ 29.2, 52.5, MAP.MIDNIGHT.THE_COILED_ISLE },
+							{ 29.5, 51.6, MAP.MIDNIGHT.THE_COILED_ISLE },
+							{ 30.5, 48.2, MAP.MIDNIGHT.THE_COILED_ISLE },
+						},
+						groups = { i(260424) },	-- Lumpy Gallstone (QI!)
+					}),
 				},
 			}),
 			q(96329, {	-- Hexes and Hoaxes

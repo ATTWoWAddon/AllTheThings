@@ -59,10 +59,15 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 			q(93046, {	-- Nestled Belongings
 				coord = { 31.3, 85.5, MAP.MIDNIGHT.HARANDAR },
 				qis = {
-					256145,	-- Bird Whistle (QI!)
 					256144,	-- Bone Comb (QI!)
 					256138,	-- Har'old (QI!)
 					256143,	-- Wooden Spoon (QI!)
+				},
+				groups = {
+					o(587413, {	-- Petalwing Nest
+						coord = { 34.8, 85.5, MAP.MIDNIGHT.HARANDAR },
+						groups = { i(256145) },	-- Bird Whistle (QI!)
+					}),
 				},
 			}),
 			q(91927, {	-- Ooze Booting
