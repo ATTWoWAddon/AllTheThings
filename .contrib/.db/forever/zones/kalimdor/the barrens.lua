@@ -3263,24 +3263,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 		}),
 		n(VENDORS, {
-			n(248196, {	-- Apothecary Durelle <Alchemist>
-				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = ALCHEMY_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
-			}),
-			n(248199, {	-- Beneris <Enchanting>
-				coord = { 49.6, 29.8, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = ENCHANTING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
-			}),
-			n(248200, {	-- Fizzlefuse <Opportunist Engineer>
-				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = ENGINEERING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
-			}),
 			n(3495, {	-- Gagsprocket <Engineering Goods>
 				coord = { 62.7, 36.3, MAP.THE_BARRENS },
 				groups = {
@@ -3288,31 +3270,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						isLimited = true,
 					}),
 				},
-			}),
-			n(256384, {	-- Gishah <Supply Officer>
-				coord = { 49.4, 29.4, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = {
-					i(270887, {	-- Advertising License Application (QS!)
-						minReputation = { 2587, HONORED },	-- Durotar Supply and Logistics, Honored.
-						cost = { { "c", 3402, 1200 } },	-- x1200 Merchant's Favor
-					}),
-					i(262764, {	-- Durotar Supply and Logistics Tabard
-						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
-						cost = { { "c", 3402, 200 } },	-- x200 Merchant's Favor
-					}),
-					i(284664, {	-- Packmule Treat
-						minReputation = { 2587, REVERED },	-- Durotar Supply and Logistics, Revered.
-						cost = { { "c", 3402, 1500 } },	-- x1500 Merchant's Favor
-					}),
-				},
-			}),
-			n(248197, {	-- Gor'mak <Blacksmith>
-				coord = { 49.8, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = BLACKSMITHING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 				coord = { 62.2, 38.4, MAP.THE_BARRENS },
@@ -3413,12 +3370,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ "pop" },
 				},
 			}),
-			n(248202, {	-- Jim'bek <Tailor>
-				coord = { 49.6, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = TAILORING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
-			}),
 			n(3683, {	-- Kiknikle <Stylish Clothier>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
@@ -3486,23 +3437,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						isLimited = true,
 					}),
 				},
-			}),
-			n(256400, {	-- Okamache <Kodo Handler>
-				coord = { 49.6, 28.8, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = {
-					i(262766, {	-- Reins of the Pack Kodo (MOUNT!)
-						minReputation = { 2587, EXALTED },	-- Durotar Supply and Logistics, Exalted.
-						cost = { { "c", 3402, 6000 } },	-- x6000 Merchant's Favor
-					}),
-				},
-			}),
-			n(248201, {	-- Pawani <Leatherworker>
-				coord = { 49.6, 29.6, MAP.THE_BARRENS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				groups = LEATHERWORKING_RECIPES.MERCHANTS_FAVOR_RECIPES_HORDE,
 			}),
 			n(3684, {	-- Pizznukle <Leather Armor Merchant>
 				coord = { 41.8, 38.6, MAP.THE_BARRENS },
