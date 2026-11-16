@@ -380,6 +380,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					i(10742),	-- Dragonflight Leggings
 					i(10743),	-- Drakefire Headguard
 					i(10744),	-- Axe of the Ebon Drake
+					i(270114, {	-- Dragonscale Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(3379, {	-- Shadoweaver
