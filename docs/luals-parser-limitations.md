@@ -122,3 +122,39 @@ defines Classic and non-Classic implementations of helpers in mutually exclusive
 branches. Treating both branches as ordinary Lua may infer the wrong behavior
 for a particular configuration. This is a source-based risk; the fixture does
 not demonstrate a LuaLS diagnostic for those helpers.
+
+## Approaches to flavor-aware analysis
+
+| Approach | Benefit | Main limitation |
+| --- | --- | --- |
+| Analyze raw sources | No transformation or source mapping is required. | LuaLS sees every conditional branch; selecting files alone cannot select branches within a file. |
+| Generate an isolated analysis workspace | An explicit configuration can supply a selected view without an editor plugin. | A generator needs Parser-equivalent selection, import handling and mappings back to original sources. Its output can become stale. |
+| Use an opt-in [`OnSetText` plugin](https://luals.github.io/wiki/plugins/#onsettext) | LuaLS can analyze transformed text while retaining the original document URI. | The plugin needs compatible transformations and position mapping, and an import can introduce text originating from another URI. |
+
+These are alternatives to evaluate, not interchangeable analysis contexts. LuaLS
+[`workspace.library`](https://luals.github.io/wiki/settings/#workspacelibrary)
+adds files to the semantic environment even when diagnostics for library files
+are disabled; it is not a separate namespace. An analysis workspace should
+include only one appropriate copy of each definition, rather than loading both
+raw and generated files or mixing incompatible flavor-specific definitions.
+
+For generated files, navigation and diagnostics need a mapping from generated
+URIs and positions to the original files, including imported files. For the
+plugin approach, the documented diff-table form uses byte offsets. In LuaLS
+3.19.2, the [file processing implementation](https://github.com/LuaLS/lua-language-server/blob/3.19.2/script/files.lua)
+records diff information for a successfully merged diff table; returning a
+whole replacement string does not provide that same diff mapping. Even a mapped
+original URI does not identify the source of text imported from another file.
+Any mapping needs verification for multibyte text, CRLF, removed or inserted
+text, and diagnostic related locations.
+
+A plugin failure or unsuccessful diff merge can leave LuaLS analyzing the
+original text. A diagnostic report alone therefore does not prove that a flavor
+transformation was applied. A future integration should make the applied
+profile observable and track source, imports, Parser version and effective
+config so changed inputs cannot silently reuse stale output.
+
+No generator or plugin is adopted here. Before adopting either, compare its
+selection and error behavior with the actual Parser for the same isolated
+configuration, including imports; the manually selected fixture above is not
+such an equivalence test.
