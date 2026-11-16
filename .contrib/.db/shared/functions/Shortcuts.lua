@@ -139,7 +139,7 @@
 --- Parser data node containing identifiers, shared metadata, and optional child groups.
 --- Intentionally non-exact: parser objects are an extensible data model and
 --- may carry module/flavor-specific fields outside this central shortcut schema.
----@class ATTObject
+---@class ATTObjectMetadata
 ---@field groups? ATTObjectArray # Nested parser objects.
 ---@field g? ATTObjectArray # Legacy alias for `groups`; normalized by parser helpers.
 ---@field type? string # Parser object type override.
@@ -226,7 +226,7 @@
 ---@field coord? ATTRawCoordinates|ATTIgnoredValue # Single map-coordinate tuple.
 ---@field coords? ATTRawCoordinates # Map-coordinate tuples.
 ---@field provider? ATTProvider|ATTIgnoredValue # Single typed reference providing this content.
----@field providers? ATTProvider[] # Typed references providing this content.
+---@field providers? ATTProvider|ATTProvider[] # Raw provider tuple or a list of provider tuples.
 ---@field cost? number|ATTCost[] # Copper amount or a list of cost entries.
 ---@field timeline? ATTTimelineEvent[]|ATTIgnoredValue # Patch events describing when the object is created, added, removed, or deleted.
 ---@field _defaulttimeline? ATTTimelineEvent[] # Parser fallback timeline used when no explicit timeline is supplied.
@@ -272,7 +272,6 @@
 ---@field learnedAt? integer # Skill level at which the recipe is learned.
 ---@field lockCriteria? { [1]: integer, [integer]: string|integer } # Lock criteria: a match count followed by key/value pairs, e.g. `{ 1, "questID", 12345 }`. Keys seen in data: questID, lvl, factionID, achID, spellID, sourceID, toyID, renownID, decorID.
 ---@field OnUpdate? string # Lua source of a `function(t)` stored as a string, e.g. `[[function(t) ... end]]`. Run when the group updates.
----@field lore? string # Lore text for the group.
 ---@field allianceQuestData? table # Alliance-specific quest data (short form: aqd).
 ---@field aqd? table # Alias for `allianceQuestData`.
 ---@field hordeQuestData? table # Horde-specific quest data (short form: hqd).
@@ -301,6 +300,14 @@
 ---@field _DATAGROUPS? string[] # Group keys used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field [integer] ATTObject # Array-style group entries.
 
+--- Ordinary parser object with plain group lore.
+---@class ATTObject: ATTObjectMetadata
+---@field lore? string # Lore text for the group.
+
+--- Object input for helpers that append to an existing provider list.
+---@class ATTProviderListObject: ATTObject
+---@field providers? ATTProvider[] # Existing providers must be a list of tuples.
+
 --- Achievement parser object supporting a shared achievement ID or an Alliance/Horde pair.
 ---@class ATTAchievementObject: ATTObject
 ---@field achievementID? AchievementID # Achievement ID represented by this object.
@@ -326,6 +333,7 @@
 --- NPC parser object used to group an NPC's sourced content.
 ---@class ATTNPCObject: ATTObject
 ---@field npcID NPCID # NPC ID represented by this object.
+---@field SortPriority? number # Parser root-category sort priority when used as a root header.
 
 --- Creature parser object identified by a creature entry ID.
 ---@class ATTCreatureObject: ATTObject
@@ -355,6 +363,14 @@
 ---@class ATTHeaderObject: ATTObject
 ---@field headerID ATTHeaderID # ATT header ID represented by this object.
 ---@field SortPriority? number # Parser root-category sort priority.
+
+--- Header returned by helpers that maintain a provider list.
+---@class ATTProviderListHeader: ATTHeaderObject
+---@field providers ATTProvider[] # Provider list created or extended by the helper.
+
+--- Item returned by helpers that maintain a provider list.
+---@class ATTProviderListItem: ATTItemObject
+---@field providers ATTProvider[] # Provider list created or extended by the helper.
 
 --- Profession parser object identified by a profession skill line.
 ---@class ATTProfessionObject: ATTObject
@@ -444,7 +460,8 @@
 ---@field [string] any # Additional localization metadata.
 
 --- Shared fields used by both raw header definitions and processed header data.
----@class ATTHeaderDefinitionBase: ATTObject
+---@class ATTHeaderDefinitionBase: ATTObjectMetadata
+---@field lore? string|ATTLocalizationStringTable # Header lore as plain text or localized text with English.
 ---@field readable string # Human-readable parser label.
 ---@field text string|ATTLocalizationStringTable # Localized header text.
 ---@field constant? string # Unique header constant.
@@ -1306,10 +1323,20 @@ icon = function(path)
 	print("ICON: " .. path);
 	error("The icon function has been deprecated");
 end
+-- LuaLS generic-wrapper workaround (3.19.2):
+-- The bound on T already expresses the intended input constraint; a T-only
+-- parameter is valid. LuaLS does not consistently use that bound as field
+-- context for table literals. The concrete alternatives below restore field
+-- checks while retaining subtype inference. They compensate for incomplete
+-- generic support; ATT's runtime and generic syntax do not require them.
+-- Recheck with T alone after LuaLS changes; remove these alternatives only
+-- when subtype inference and object/child-array field checks both pass.
+-- See https://luals.github.io/wiki/annotations/#generic
 --- Applies an event ID to all nested data.
+---@generic T: ATTObject|ATTObjectArray
 ---@param eventID EventID # Event identifier to propagate through the `e` field.
----@param data ATTObject|ATTObjectArray # Object tree or child array receiving the event association.
----@return ATTObject|ATTObjectArray # The original object or array with the event ID propagated recursively.
+---@param data T|ATTObject|ATTObjectArray # Object tree or child array receiving the event association.
+---@return T # The original object or array with the event ID propagated recursively.
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
@@ -1482,10 +1509,12 @@ bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns a Champion's Seal cost and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Champion's Seals required.
----@param item ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with its Champion's Seal cost and Classic Wrath phase-two requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
+---@return T # The original object with its Champion's Seal cost and Classic Wrath phase-two requirement.
 champ = function(cost, item)							-- Assigns a Champion's Seal cost and the Classic Wrath phase-two requirement.
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
@@ -1550,50 +1579,60 @@ defilersscourgestone = function(cost, item)				-- Assigns a Defiler's Scourgesto
 	-- #endif
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Conquest cost before Cataclysm and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Conquest required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Conquest cost and Classic Wrath phase-two requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Conquest cost and Classic Wrath phase-two requirement.
 emoc = function(cost, item)								-- Assigns an Emblem of Conquest cost before Cataclysm and the Classic Wrath phase-two requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Frost cost before Cataclysm and the Classic Wrath phase-four requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Frost required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 4 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Frost cost and Classic Wrath phase-four requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 4 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Frost cost and Classic Wrath phase-four requirement.
 emof = function(cost, item)								-- Assigns an Emblem of Frost cost before Cataclysm and the Classic Wrath phase-four requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 341, cost });	-- Emblem of Frost
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_FOUR, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Heroism cost before Cataclysm and the Classic Wrath phase-one requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Heroism required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Heroism cost and Classic Wrath phase-one requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Heroism cost and Classic Wrath phase-one requirement.
 emoh = function(cost, item)								-- Assigns an Emblem of Heroism cost before Cataclysm and the Classic Wrath phase-one requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 101, cost });	-- Emblem of Heroism
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_ONE, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Triumph cost before Cataclysm and the Classic Wrath phase-three requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Triumph required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 3 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Triumph cost and Classic Wrath phase-three requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 3 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Triumph cost and Classic Wrath phase-three requirement.
 emot = function(cost, item)								-- Assigns an Emblem of Triumph cost before Cataclysm and the Classic Wrath phase-three requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 301, cost });	-- Emblem of Triumph
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_THREE, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Valor cost before Cataclysm and the Classic Wrath phase-one requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Valor required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Valor cost and Classic Wrath phase-one requirement.
+---@param item T|ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Valor cost and Classic Wrath phase-one requirement.
 emov = function(cost, item)								-- Assigns an Emblem of Valor cost before Cataclysm and the Classic Wrath phase-one requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
@@ -1721,9 +1760,11 @@ venture = function(cost, item)							-- Assigns a Venture Coin currency cost bef
 	-- #endif
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns a Champion's Writ cost and the Classic Wrath phase-two requirement.
----@param item ATTObject # Object receiving a cost of one Champion's Writ and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with one Champion's Writ as its cost and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
+---@param item T|ATTObject # Object receiving a cost of one Champion's Writ and Classic Wrath phase 2.
+---@return T # The original object with one Champion's Writ as its cost and the Classic Wrath phase-two requirement.
 writ = function(item)									-- Assigns a Champion's Writ cost and the Classic Wrath phase-two requirement.
 	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
 	return applyclassicphase(WRATH_PHASE_TWO, item);
@@ -1939,9 +1980,11 @@ cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
 	end;
 	return struct("classID", id, t);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Challenge Master requirement.
----@return ATTObject|ATTObjectArray # The original object or array with Challenge Master requirements propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T|ATTObject|ATTObjectArray # Object tree or child array receiving the Challenge Master requirement.
+---@return T # The original object or array with Challenge Master requirements propagated.
 challengemaster = function(t)							-- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD)
 	return bubbleDown({ cm = true }, t);
 end
@@ -2076,9 +2119,11 @@ end
 e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	return struct("encounterID", id, t);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content as requiring Elite PvP gameplay.
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Elite PvP requirement.
----@return ATTObject|ATTObjectArray # The original object or array marked as requiring Elite PvP gameplay.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Elite PvP requirement.
+---@return T # The original object or array marked as requiring Elite PvP gameplay.
 elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
 	return bubbleDown({
 		pvp = true,
@@ -2429,11 +2474,13 @@ itemDropHQT = function(itemID, questID, t)
 end
 --- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 ---@param id ItemID # Item ID of the container that provides the listed contents.
----@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
----@return ATTHeaderObject # Reward-container header using the specified display item.
+---@param t? ATTProviderListObject|ATTObjectArray # Metadata or child objects; any singular provider must be a tuple.
+---@return ATTProviderListHeader # Reward-container header using the specified display item.
 container = function(id, t)								-- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 	local bag = header(HEADERS.Item, id, t);
-	local providers = bag.providers;
+	--- The header constructor preserves the list-shaped providers required of its metadata.
+	---@type ATTProvider[]|nil
+	local providers = bag.providers --[[@as ATTProvider[]|nil]];
 	if not providers then
 		providers = {};
 		bag.providers = providers;
@@ -2443,13 +2490,14 @@ container = function(id, t)								-- This function helps build an item containe
 		providers[#providers + 1] = bag.provider;
 		bag.provider = nil;
 	end
-	return bag;
+	--- A provider list was either supplied or created above.
+	return bag --[[@as ATTProviderListHeader]];
 end
 --- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'.
 ---@param recipeID RecipeID # Salvage recipe spell ID added as a provider.
 ---@param displayItemID ItemID # Item ID used for the salvage recipe display and container provider.
----@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
----@return ATTHeaderObject # Salvage-recipe header paired with its visible display item.
+---@param t? ATTProviderListObject|ATTObjectArray # Metadata or child objects; any singular provider must be a tuple.
+---@return ATTProviderListHeader # Salvage-recipe header paired with its visible display item.
 salvagerecipe = function(recipeID, displayItemID, t)	-- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'
 	local item = container(displayItemID, t)
 	local providers = item.providers
@@ -2651,9 +2699,11 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 	end
 	print("Could not find a group with an objectID value");
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Pet Battle (bubbleDown pb filter).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the pet-battle filter.
----@return ATTObject|ATTObjectArray # The original object or array with the pet-battle flag propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the pet-battle filter.
+---@return T # The original object or array with the pet-battle flag propagated.
 petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
 	return bubbleDown({ pb = true }, t);
 end
@@ -2672,9 +2722,11 @@ professionnode = function(id, t)						-- Create a PROFESSION NODE Object
 	return struct("professionnodeID", id, t);
 end
 pn = professionnode;
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content as requiring PvP gameplay.
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the PvP requirement.
----@return ATTObject|ATTObjectArray # The original object or array marked as requiring PvP gameplay.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the PvP requirement.
+---@return T # The original object or array marked as requiring PvP gameplay.
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ pvp = true }, t);
 end
@@ -2756,9 +2808,11 @@ sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellI
 	i.type = "ensembleSpellID"
 	return i
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Skyriding (bubbleDown sr filter).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Skyriding requirement.
----@return ATTObject|ATTObjectArray # The original object or array with the Skyriding requirement propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Skyriding requirement.
+---@return T # The original object or array with the Skyriding requirement propagated.
 skyriding = function(t)									-- Skyriding (bubbleDown sr filter)
 	return bubbleDown({ sr = true }, t);
 end
@@ -2897,12 +2951,12 @@ end
 -- Note: If additional table data is provided it must be the last param
 --- Creates a gathered item with the supplied object providers.
 ---@param itemID ItemID # Base item ID.
----@param ... ObjectID|ATTObject|ATTObjectArray # World object provider IDs, optionally followed by object fields or child objects as the final argument.
----@return ATTItemObject # Gathered item object with the supplied world-object providers.
+---@param ... ObjectID|ATTProviderListObject|ATTObjectArray # World object IDs, optionally followed by metadata with list-shaped providers or child objects.
+---@return ATTProviderListItem # Gathered item object with the supplied world-object providers.
 i_gathered = function(itemID, ...)
 	local t
 	local params = {...}
-	---@type ObjectID|ATTObject|ATTObjectArray|nil
+	---@type ObjectID|ATTProviderListObject|ATTObjectArray|nil
 	local last = params[#params]
 	if type(last) == "table" then
 		t = i(itemID, last)
@@ -2912,6 +2966,8 @@ i_gathered = function(itemID, ...)
 		t = i(itemID)
 	end
 	local providers = t.providers
+	--- The item constructor preserves the list-shaped providers required of its metadata.
+	---@cast providers ATTProvider[]|nil
 	if not providers then
 		providers = {}
 		t.providers = providers
@@ -2920,7 +2976,8 @@ i_gathered = function(itemID, ...)
 	for i=1,#params do
 		providers[#providers + 1] = { "o", params[i] }
 	end
-	return t
+	--- A provider list was either supplied or created above.
+	return t --[[@as ATTProviderListItem]]
 end
 -- Outdoor Zones Headers with Filters
 --- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
@@ -2955,7 +3012,8 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 	end
 	t = togroups(t);
 	t.timeline = timeline;
-	return petbattle(n(PET_BATTLES, t));
+	--- A registered PET_BATTLES header ID selects the numeric-ID constructor path.
+	return petbattle(n(PET_BATTLES, t) --[[@as ATTHeaderObject|ATTNPCObject]]);
 end
 --- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
 ---@param skipRequirement boolean|nil # Whether to omit the Rogue class restriction in the two-argument form.
@@ -3526,14 +3584,16 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 end
 
 -- Assign a Root Category Header
+---@type table<string|integer, ATTHeaderObject|ATTNPCObject>
 local rootCategoryHeaders = {};
----@type table<string|integer, ATTHeaderObject>
+---@type table<string|integer, ATTHeaderObject|ATTNPCObject>
 RootCategoryHeaders = rootCategoryHeaders;	-- This is global, so that it can be found by Parser!
---- Assigns a header object to a root category with a parser sort priority.
+--- Assigns a header or NPC object to a root category with a parser sort priority.
 ---@param priority number # Parser sort priority assigned to the root-category header.
 ---@param category string|integer # Name or numeric key of the root category receiving the header.
----@param headerID ATTHeaderID # ATT header ID to assign to the root category.
+---@param headerID ATTHeaderID|NPCID|CreatureID # Negative header ID or positive NPC ID for this root category.
 ---@param data? ATTObject|ATTObjectArray # Header metadata and optional child objects; children are moved into the root category.
+---@return ATTHeaderObject|ATTNPCObject # Created header or NPC object on successful registration.
 assignRootCategoryHeader = function(priority, category, headerID, data)
 	if not headerID or type(headerID) ~= "number" then
 		print("ROOT CATEGORY: " .. category);
@@ -3542,6 +3602,8 @@ assignRootCategoryHeader = function(priority, category, headerID, data)
 		error("ERROR: ROOT CATEGORY HEADER " .. category .. " ALREADY ASSIGNED. Please double check that the root category definitions are unique.");
 	end
 	data = n(headerID, data or {});
+	--- Required numeric IDs select the constructor result, not the legacy omitted-ID unpack path.
+	---@cast data ATTHeaderObject|ATTNPCObject
 	data.SortPriority = priority;
 	data.timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] };
 	rootCategoryHeaders[category] = data;

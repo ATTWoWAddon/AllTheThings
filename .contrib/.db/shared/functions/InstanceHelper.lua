@@ -36,9 +36,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	---@field LFRQueueNPC? ATTObject # NPC and coordinate fields copied to applicable LFR difficulties.
 	---@field UpgradeMapping? table<DifficultyID, number|ATTIgnoredValue> # Difficulty upgrades; zero skips and IGNORED_VALUE propagates unchanged.
 	---@field ExtraLoots? ATTInstanceExtraLoot[] # Additional callbacks and boss-keyed loot data.
-	---@field BossOnly fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Builds boss metadata without loot.
-	---@field Boss fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Adds regular and extra loot to a boss.
-	---@field BossWithHeader fun(id: ATTInstanceBossID, headerFunc: ATTInstanceHeaderBuilder, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Wraps regular loot in a header.
+	---@field BossOnly fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Builds metadata; configured BossObjects for this boss require existing providers to be a list.
+	---@field Boss fun(id: ATTInstanceBossID, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Adds loot; configured BossObjects for this boss require existing providers to be a list.
+	---@field BossWithHeader fun(id: ATTInstanceBossID, headerFunc: ATTInstanceHeaderBuilder, t?: ATTObject|ATTObjectArray): ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Wraps loot; configured BossObjects for this boss require existing providers to be a list.
 	---@field BossWorldQuest fun(id: ATTInstanceBossID, questID: QuestID, t?: ATTObject|ATTObjectArray): ATTQuestObject # Builds a world quest for a boss.
 	---@field Difficulty fun(id: DifficultyID|DifficultyID[], t?: ATTObject|ATTObjectArray): ATTInstanceDifficulty # Builds a difficulty and records its original ID or list.
 	---@field CommonBossDrops fun(groups?: ATTObjectArray): ATTHeaderObject # Creates a common-drops header referencing all bosses.
@@ -53,6 +53,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		appendAllGroups(ALL_BOSSES, v)
 	end
 	--- Builds encounter metadata and configured providers without adding loot.
+	--- When BossObjects supplies entries for this boss, existing providers must be a list.
 	---@param id ATTInstanceBossID # Boss key.
 	---@param t? ATTObject|ATTObjectArray # Extra fields or child groups.
 	---@return ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Boss metadata with creature, coordinate, and object-provider fields.
@@ -71,6 +72,8 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 			local bossObjects = helper.BossObjects[id]
 			if bossObjects then
 				local bossProviders = encounter.providers
+				--- Configured BossObjects require list-shaped providers; constructors preserve that input.
+				---@cast bossProviders ATTProvider[]|nil
 				if not bossProviders then
 					bossProviders = {}
 					encounter.providers = bossProviders
@@ -83,6 +86,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		return encounter
 	end
 	--- Builds a boss and adds regular loot plus any extra-loot callbacks.
+	--- When BossObjects supplies entries for this boss, existing providers must be a list.
 	---@param id ATTInstanceBossID # Boss key present in the loot map.
 	---@param t? ATTObject|ATTObjectArray # Extra fields or child groups.
 	---@return ATTEncounterObject|ATTNPCObject|ATTHeaderObject # Boss object after adding configured extra and regular loot.
@@ -141,6 +145,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		end
 	end
 	--- Wraps a clone of regular boss loot using the supplied header function.
+	--- When BossObjects supplies entries for this boss, existing providers must be a list.
 	---@param id ATTInstanceBossID # Boss key present in the loot map.
 	---@param headerFunc ATTInstanceHeaderBuilder # Creates the loot wrapper.
 	---@param t? ATTObject|ATTObjectArray # Extra fields or child groups.

@@ -21,9 +21,11 @@ else
 -- I don't want a root header for this, instead, use the objectID to look it up.
 ----------------------------------------------------------------------------------------------
 --- Objects used for board providers accept individual coordinate tuples.
+--- A supplied singular provider must be a tuple; list merging appends it unchanged.
 ---@class ATTWarBoardObject: ATTObject
 ---@field coord? Coord # Single coordinate tuple.
 ---@field coords? Coord[] # List of coordinate tuples.
+---@field providers? ATTProvider[] # Existing quest or board providers must be a list of tuples.
 
 --- Adds board providers and coordinates selected by a quest's maps.
 ---@generic T: ATTWarBoardObject
