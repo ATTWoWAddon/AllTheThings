@@ -456,6 +456,17 @@ local function Check_coords(objRef, maxCoordDistance)
 	if not coords then return end
 
 	local relCoords = not objRef.coords
+	-- app.RealMapID only refreshes after zone events, so right after a map change it can still hold the previous map
+	-- check the live map as well, in addition to the real map
+	local liveMapID = C_Map.GetBestMapForUnit("player")
+	if not coords[mapID] and liveMapID and liveMapID ~= mapID and coords[liveMapID] then
+		local pos = C_Map.GetPlayerMapPosition(liveMapID, "player")
+		if pos then
+			px, py = pos:GetXY()
+			px, py = px * 100, py * 100
+			mapID = liveMapID
+		end
+	end
 	local dist, sameMap
 	local closest = 9999
 	maxCoordDistance = maxCoordDistance or MapPrecisionOverrides[mapID] or 1
@@ -482,6 +493,9 @@ local function Check_coords(objRef, maxCoordDistance)
 	else
 		local reportData = BuildGenericReportData(objRef, id)
 		reportData.MissingMap = "No Coordinates on current Map!"
+		if liveMapID ~= mapID then
+			reportData.MissingMap = ("No Coordinates on current Map! (RealMapID: %s, Live mapID: %s)"):format(tostring(mapID), tostring(liveMapID))
+		end
 		AddReportData(objRef.__type,id,reportData)
 		return 1
 	end
