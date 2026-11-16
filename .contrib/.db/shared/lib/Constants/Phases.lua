@@ -35,7 +35,7 @@ local defaultStateColors = {
 
 --- Classic phases require localized text for formatted descriptions and lore.
 ---@class ATTClassicPhaseDefinition: ATTPhaseDefinition
----@field text table<string, string> # Locale-indexed names including English.
+---@field text ATTLocalizationStringTable # Locale-indexed names, including required English text.
 
 --- Season of Discovery phases require a minimum build version.
 ---@class ATTSodPhaseDefinition: ATTClassicPhaseDefinition
