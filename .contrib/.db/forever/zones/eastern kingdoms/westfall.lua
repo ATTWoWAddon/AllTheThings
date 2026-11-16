@@ -243,11 +243,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					objective(2, {	-- 0/5 Harvester Gyrostabilizer
 						provider = { "i", 255010 },	-- Harvester Gyrostabilizer
 						crs = {
-							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							 36,	-- Harvest Golem
 							114,	-- Harvest Watcher
 							115,	-- Harvest Reaper
-							-- editorconfig-checker-enable
 						},
 					}),
 				},
@@ -1078,12 +1076,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			i(255007, {	-- Golem Isospring
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher
 					115,	-- Harvest Reaper
 					480,	-- Rusty Harvest Golem
-					-- editorconfig-checker-enable
 				},
 			}),
 			i(723),	-- Goretusk Liver
@@ -1101,13 +1097,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			}),
 			i(1274, {	-- Hops
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					573,	-- Foe Reaper 4000
 					 36,	-- Harvest Golem
 					115,	-- Harvest Reaper
 					114,	-- Harvest Watcher
 					480,	-- Rusty Harvest Golem
-					-- editorconfig-checker-enable
 				},
 			}),
 			i(2088, {	-- Long Crawler Limb
@@ -1175,11 +1169,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 36,	-- Harvest Golem
 					114,	-- Harvest Watcher
 					480,	-- Rusty Harvest Golem
-					-- editorconfig-checker-enable
 				},
 			}),
 			i(821, {	-- Riverpaw Leather Vest
@@ -1209,9 +1201,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					{ 47.6, 67.6, MAP.WESTFALL },
 				},
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 36,	-- Harvest Golem
-					-- editorconfig-checker-enable
 				},
 			}),
 			i(1933, {	-- Staff of Conjuring

@@ -519,23 +519,19 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				coord = { 68.8, 78.6, ELWYNN_FOREST },
 				classes = { ROGUE },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					6866,	-- Defias Bodyguard
 					116,	-- Defias Bandit
 					 38,	-- Defias Thug
 					474,	-- Defias Rogue Wizard
-					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
 				coord = { 39.3, 80.4, ELWYNN_FOREST },
 				classes = { ROGUE },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 40,	-- Kobold Miner
 					475,	-- Kobold Tunneler
 					257,	-- Kobold Worker
-					-- editorconfig-checker-enable
 				},
 			})),
 		}),
@@ -1500,10 +1496,8 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 				classes = { WARLOCK },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 97,	-- Riverpaw Runt
 					478,	-- Riverpaw Outrunner
-					-- editorconfig-checker-enable
 				},
 			})),
 			i(778, {	-- Kobold Excavation Pick
@@ -1585,33 +1579,27 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				coord = { 50.15, 62.81, ELWYNN_FOREST },
 				classes = { WARRIOR },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					448,	-- Hogger
 					478,	-- Riverpaw Outrunner
 					 97,	-- Riverpaw Runt
-					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(204476, {	-- Severed Kobold Head
 				coord = { 39.0, 85.24, ELWYNN_FOREST },
 				classes = { WARRIOR },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					327,	-- Goldtooth
 					 40,	-- Kobold Miner
 					475,	-- Kobold Tunneler
-					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
 				coord = { 50.15, 62.81, ELWYNN_FOREST },
 				classes = { WARRIOR },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					285,	-- Murloc
 					 46,	-- Murloc Forager
 					735,	-- Murloc Streamrunner
-					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
@@ -1657,13 +1645,11 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				},
 				classes = { WARLOCK },
 				crs = {
-					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					299,	-- Young Wolf
 					525,	-- Mangy Wolf
 					1922,	-- Gray Forest Wolf
 					 69,	-- Timber Wolf
 					118,	-- Prowler
-					-- editorconfig-checker-enable
 				},
 			})),
 		}),

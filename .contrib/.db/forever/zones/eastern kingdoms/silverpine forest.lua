@@ -907,12 +907,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					objective(1, {	-- 0/6 Discolored Worg Heart
 						provider = { "i", 3164 },	-- Discolored Worg Heart
 						crs = {
-							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							 1765,	-- Worg
 							 1766,	-- Mottled Worg
 							 1923,	-- Bloodsnout Worg
 							12431,	-- Gorefang
-							-- editorconfig-checker-enable
 						},
 					}),
 				},

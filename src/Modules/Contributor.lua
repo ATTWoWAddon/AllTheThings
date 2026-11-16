@@ -368,7 +368,6 @@ api.AddReportData = AddReportData
 -- 5) Then add 0.1 to that number and insert it into this table for the mapID
 -- Effectively, this number should represent 2x the Interaction Coord Distance for a given map
 local MapPrecisionOverrides = {
--- editorconfig-checker-disable
 	  [24] = 2,	-- Light's Hope Chapel
 	  [46] = 3,	-- Karazhan Catacombs
 	 [555] = 2,	-- Cavern of Lost Spirits
@@ -402,7 +401,6 @@ local MapPrecisionOverrides = {
 	 [887] = 7,	-- The Vindicaar, Antoran Wastes Lower
 	 [940] = 7,	-- The Vindicaar
 	 [942] = 0.30,	-- Stormsong Valley
--- editorconfig-checker-enable
 	[1021] = 1,	-- Chamber of Heart
 	[1164] = 6,	-- Dazar'alor Hall of Chroniclers
 	[1176] = 3,	-- Breath Of Pa'ku
@@ -514,7 +512,6 @@ end
 -- either by following the player or having player-based decisions that cause them to have any coordinates
 local MobileDB = {}
 MobileDB.Creature = {
--- editorconfig-checker-disable
 	   [620] = true,	-- Chicken
 	   [715] = true,	-- Hemet Nesingwary Jr.
 	   [718] = true,	-- Sir S. J. Erlgadin
@@ -743,7 +740,6 @@ MobileDB.Creature = {
 	 [98519] = true,	-- Initiate Da-Nel
 	 [98648] = true,	-- Allari the Souleater
 	 [99343] = true,	-- Kor'vas Bloodthorn
--- editorconfig-checker-enable
 	[100786] = true,	-- Snowfeather
 	[101061] = true,	-- Archdruid Hamuul Runetotem
 	[101344] = true,	-- Hooded Priestess (Horde)
@@ -930,7 +926,6 @@ MobileDB.Creature = {
 -- but also quests objects that are not sourced elsewhere..
 -- Legend: q - Quest, dq - Daily Quest, wq - World Quest, [A] - Alliance, [H] - Horde
 MobileDB.GameObject = {
--- editorconfig-checker-disable
 		[57] = true,	-- Bloodscalp Lore Tablet (q:26744)
 	   [119] = true,	-- Abercrombie's Crate (q:26680)
 	   [276] = true,	-- Shimmerweed Basket (q:315)
@@ -996,7 +991,6 @@ MobileDB.GameObject = {
 	 [75299] = true,	-- Large Solid Chest
 	 [75300] = true,	-- Large Solid Chest
 	 [97701] = true,	-- Torch
--- editorconfig-checker-enable
 	[101854] = true,	-- Herod's Door
 	[104591] = true,	-- Chapel Door
 	[106318] = true,	-- Battered Chest

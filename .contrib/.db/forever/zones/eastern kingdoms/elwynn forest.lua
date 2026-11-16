@@ -635,10 +635,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 							{ 61.4, 52.8, MAP.ELWYNN_FOREST },
 						},
 						crs = {
-							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							475,	-- Kobold Tunneler
 							 40,	-- Kobold Miner
-							-- editorconfig-checker-enable
 						},
 					}),
 					i(279936),	-- Book Bag

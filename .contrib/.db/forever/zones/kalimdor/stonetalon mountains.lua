@@ -167,7 +167,6 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 						provider = { "i", 277936 },	-- Glittering Sunstone
 						coord = { 33.0, 59.8, MAP.STONETALON_MOUNTAINS },
 						crs = {
-							-- editorconfig-checker-disable -- Preserve numeric alignment.
 							 4025,	-- Bloodfury Ambusher
 							 4022,	-- Bloodfury Harpy
 							12579,	-- Bloodfury Ripper
@@ -176,7 +175,6 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 							 4027,	-- Bloodfury Storm Witch
 							 4026,	-- Bloodfury Windcaller
 							 5930,	-- Sister Riven
-							-- editorconfig-checker-enable
 						},
 					}),
 					i(281252),	-- Harpy Claw Ring
