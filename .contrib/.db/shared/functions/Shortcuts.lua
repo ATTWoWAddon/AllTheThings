@@ -326,6 +326,7 @@
 --- NPC parser object used to group an NPC's sourced content.
 ---@class ATTNPCObject: ATTObject
 ---@field npcID NPCID # NPC ID represented by this object.
+---@field SortPriority? number # Parser root-category sort priority when used as a root header.
 
 --- Creature parser object identified by a creature entry ID.
 ---@class ATTCreatureObject: ATTObject
@@ -3526,14 +3527,16 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 end
 
 -- Assign a Root Category Header
+---@type table<string|integer, ATTHeaderObject|ATTNPCObject>
 local rootCategoryHeaders = {};
----@type table<string|integer, ATTHeaderObject>
+---@type table<string|integer, ATTHeaderObject|ATTNPCObject>
 RootCategoryHeaders = rootCategoryHeaders;	-- This is global, so that it can be found by Parser!
---- Assigns a header object to a root category with a parser sort priority.
+--- Assigns a header or NPC object to a root category with a parser sort priority.
 ---@param priority number # Parser sort priority assigned to the root-category header.
 ---@param category string|integer # Name or numeric key of the root category receiving the header.
----@param headerID ATTHeaderID # ATT header ID to assign to the root category.
+---@param headerID ATTHeaderID|NPCID|CreatureID # Negative header ID or positive NPC ID for this root category.
 ---@param data? ATTObject|ATTObjectArray # Header metadata and optional child objects; children are moved into the root category.
+---@return ATTHeaderObject|ATTNPCObject # Created header or NPC object on successful registration.
 assignRootCategoryHeader = function(priority, category, headerID, data)
 	if not headerID or type(headerID) ~= "number" then
 		print("ROOT CATEGORY: " .. category);
@@ -3542,6 +3545,8 @@ assignRootCategoryHeader = function(priority, category, headerID, data)
 		error("ERROR: ROOT CATEGORY HEADER " .. category .. " ALREADY ASSIGNED. Please double check that the root category definitions are unique.");
 	end
 	data = n(headerID, data or {});
+	--- Required numeric IDs select the constructor result, not the legacy omitted-ID unpack path.
+	---@cast data ATTHeaderObject|ATTNPCObject
 	data.SortPriority = priority;
 	data.timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] };
 	rootCategoryHeaders[category] = data;
