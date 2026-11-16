@@ -19,3 +19,24 @@ coordinates derived from LSP UTF-16 start positions; a tab counts as one charact
 has only the type mismatch. These expectations describe this isolated setup;
 they do not describe the diagnostics enabled in the repository's normal LuaLS
 configuration.
+
+## Run the fixture checks
+
+From the repository root, provide paths to a Lua 5.1 interpreter and LuaLS
+3.19.2. No local executable paths are assumed:
+
+```sh
+python3 .contrib/src/Parser/tests/LuaLS/verify.py --lua /path/to/lua5.1 --lua-ls /path/to/lua-language-server
+python3 .contrib/src/Parser/tests/LuaLS/verify.py --lua /path/to/lua5.1 --lua-ls /path/to/lua-language-server --reverse
+```
+
+The script checks the tool versions, compiles each example using Lua 5.1, and
+runs LuaLS in separate temporary workspaces. It checks each reported file URI,
+diagnostic code and start position against `expected.json`, including the type
+error control. LuaLS may exit nonzero when expected diagnostics are present;
+the script reads the report instead of treating that exit status as success or
+failure on its own. Temporary workspaces, metadata and logs are removed after
+the run.
+
+These checks cover only the isolated fixture behavior. They do not invoke the
+Parser, validate its preprocessing, or test Windows import paths.

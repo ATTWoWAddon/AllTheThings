@@ -158,3 +158,19 @@ No generator or plugin is adopted here. Before adopting either, compare its
 selection and error behavior with the actual Parser for the same isolated
 configuration, including imports; the manually selected fixture above is not
 such an equivalence test.
+
+## Compatibility with the Parser
+
+The [fixture checks](../.contrib/src/Parser/tests/LuaLS/README.md) exercise Lua
+5.1 syntax and LuaLS diagnostics on small isolated examples. They do not run the
+Parser or establish that a transformation matches it. This guide and those
+fixtures leave Parser code and settings unchanged.
+
+A future transformer must be compared with the actual, version-pinned Parser
+preprocessing implementation for the same effective settings, including nested
+and alternate branches, tags, phase and patch boundaries, unknown commands, and
+imports. Compare both output and error behavior in separately initialized
+processes for each configuration. Import files and directories also require
+Windows path checks. Validate diagnostic and navigation positions against
+original files, including imported content; matching selected text alone is not
+enough. These Parser and Windows checks have not been run by the fixture script.
