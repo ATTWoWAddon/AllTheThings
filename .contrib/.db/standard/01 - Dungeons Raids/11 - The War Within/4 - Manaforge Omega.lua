@@ -444,28 +444,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				ach(41599, {	-- Heroic: Manaforge Omega
 					crit(103289, {	-- Plexus Sentinel
-						_encounter = { PLEXUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { PLEXUS, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103290, {	-- Loom'ithar
-						_encounter = { LOOMITHAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { LOOMITHAR, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103291, {	-- Soulbinder Naazindhri
-						_encounter = { NAAZINDHRI, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { NAAZINDHRI, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103292, {	-- Forgeweaver Araz
-						_encounter = { ARAZ, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ARAZ, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103293, {	-- The Soul Hunters
-						_encounter = { HUNTERS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { HUNTERS, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103294, {	-- Fractillus
-						_encounter = { FRACTILLUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { FRACTILLUS, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103295, {	-- Nexus-King Salhadaar
-						_encounter = { SALHADAAR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SALHADAAR, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(103296, {	-- Dimensius, the All-Devouring
-						_encounter = { DIMENSIUS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { DIMENSIUS, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(41600),	-- Mythic: Manaforge Omega (automated)
