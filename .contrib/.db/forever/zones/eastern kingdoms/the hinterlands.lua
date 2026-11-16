@@ -830,6 +830,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					{ 24.2, 57.4, MAP.THE_HINTERLANDS },
 					{ 32.8, 57.6, MAP.THE_HINTERLANDS },
 				},
+				groups = {
+					i(284063, {	-- Witherbark Hatecleaver
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(TREASURES, {
