@@ -924,7 +924,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251670),	-- Battered Wearable Pot Lid
 				i(249718),	-- Bronze Food Fanatic Backpack
 				i(252741),	-- Camo Winter Toque
-				i(252715),	-- Deep Winter Toque
 				i(249719),	-- Fine Food Fanatic Backpack
 				i(235903),	-- Gold Lightforged Chestguard
 				i(249717),	-- Golden Food Fanatic Backpack
