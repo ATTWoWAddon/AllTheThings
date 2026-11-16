@@ -3691,8 +3691,12 @@ root(ROOTS.WorldDrops, {
 					1763,	-- Gilnid
 					3586,	-- Miner Johnson
 					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
 					3864,	-- Fel Steed
 					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
 					11517,	-- Oggleflint
 					11518,	-- Jergosh the Invoker
 					11519,	-- Bazzalan
@@ -3710,9 +3714,21 @@ root(ROOTS.WorldDrops, {
 				crs = {
 					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7291,	-- Galgann Firehammer
 					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7796,	-- Nekrum Gutchewer
+					10081,	-- Dustwraith
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -3724,17 +3740,52 @@ root(ROOTS.WorldDrops, {
 			i(251398, {	-- Plans: Officer's Boots (RECIPE!)
 				crs = {
 					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
+					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10081,	-- Dustwraith
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 			i(251401, {	-- Plans: Prefect's Boots (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -3829,10 +3880,29 @@ root(ROOTS.WorldDrops, {
 			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
 			i(251399, {	-- Plans: Sentinel's Boots (RECIPE!)
 				crs = {
+					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
 					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
 					8567,	-- Glutton
+					10080,	-- Sandarr Dunereaver
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -3919,23 +3989,44 @@ root(ROOTS.WorldDrops, {
 					646,	-- Mr. Smite
 					647,	-- Captain Greenskin
 					1763,	-- Gilnid
+					3586,	-- Miner Johnson
 					3653,	-- Kresh
 					3669,	-- Lord Cobrahn
 					3671,	-- Lady Anacondra
 					3864,	-- Fel Steed
 					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
 					11517,	-- Oggleflint
 					11518,	-- Jergosh the Invoker
 					11519,	-- Bazzalan
 					11520,	-- Taragaman the Hungerer
+					255699,	-- Lordaeron Captain
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251400, {	-- Plans: Warder's Boots (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4191,21 +4282,50 @@ root(ROOTS.WorldDrops, {
 			i(252847, {	-- Pattern: Mender's Leather Shoes (RECIPE!)
 				crs = {
 					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
 					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
 					8567,	-- Glutton
+					10080,	-- Sandarr Dunereaver
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252899, {	-- Pattern: Mender's Mail Boots (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7291,	-- Galgann Firehammer
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7796,	-- Nekrum Gutchewer
 					8567,	-- Glutton
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4217,33 +4337,99 @@ root(ROOTS.WorldDrops, {
 			i(252898, {	-- Pattern: Skirmisher's Mail Boots (RECIPE!)
 				crs = {
 					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252844, {	-- Pattern: Skulker's Leather Shoes (RECIPE!)
 				crs = {
 					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
+					6487,	-- Arcanist Doan
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7354,	-- Ragglesnout
 					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					8567,	-- Glutton
+					10080,	-- Sandarr Dunereaver
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252846, {	-- Pattern: Skycaller's Leather Shoes (RECIPE!)
 				crs = {
+					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252897, {	-- Pattern: Skycaller's Mail Boots (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
 					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4251,11 +4437,24 @@ root(ROOTS.WorldDrops, {
 				crs = {
 					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
 					7604,	-- Sergeant Bly
 					8567,	-- Glutton
+					10081,	-- Dustwraith
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4502,9 +4701,28 @@ root(ROOTS.WorldDrops, {
 			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(252845, {	-- Pattern: Warden's Leather Shoes (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7354,	-- Ragglesnout
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4597,8 +4815,22 @@ root(ROOTS.WorldDrops, {
 			i(254044, {	-- Pattern: Black Cord (RECIPE!)
 				crs = {
 					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
 					8567,	-- Glutton
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -4618,10 +4850,27 @@ root(ROOTS.WorldDrops, {
 			i(14508),	-- Pattern: Felcloth Shoulders (RECIPE!)
 			i(254042, {	-- Pattern: Fiery Cord (RECIPE!)
 				crs = {
+					3975,	-- Herod
+					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
+					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
 					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
 					8567,	-- Glutton
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4631,31 +4880,79 @@ root(ROOTS.WorldDrops, {
 			i(14466),	-- Pattern: Frostweave Tunic (RECIPE!)
 			i(254040, {	-- Pattern: Frothing Cord (RECIPE!)
 				crs = {
+					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6907,	-- Eric "The Swift"
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
 					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
+					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10080,	-- Sandarr Dunereaver
+					10081,	-- Dustwraith
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(254038, {	-- Pattern: Gilded Cord (RECIPE!)
 				crs = {
+					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
+					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6910,	-- Revelosh
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7272,	-- Theka the Martyr
+					7291,	-- Galgann Firehammer
+					7354,	-- Ragglesnout
 					7355,	-- Tuten'kash
+					7356,	-- Plaguemaw the Rotting
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10081,	-- Dustwraith
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
 			i(254046, {	-- Pattern: Golden Cord (RECIPE!)
 				crs = {
+					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
 					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
 					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
+					10080,	-- Sandarr Dunereaver
+					10081,	-- Dustwraith
+					10082,	-- Zerillis
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4676,9 +4973,23 @@ root(ROOTS.WorldDrops, {
 				crs = {
 					3975,	-- Herod
 					3976,	-- Scarlet Commander Mograine
+					3977,	-- High Inquisitor Whitemane
+					4542,	-- High Inquisitor Fairbanks
+					4854,	-- Grimlok
 					6487,	-- Arcanist Doan
+					6906,	-- Baelog
+					6907,	-- Eric "The Swift"
+					7023,	-- Obsidian Sentinel
+					7206,	-- Ancient Stone Keeper
+					7228,	-- Ironaya
+					7291,	-- Galgann Firehammer
+					7355,	-- Tuten'kash
 					7356,	-- Plaguemaw the Rotting
 					7357,	-- Mordresh Fire Eye
+					7358,	-- Amnennar the Coldbringer
+					7604,	-- Sergeant Bly
+					7796,	-- Nekrum Gutchewer
+					8567,	-- Glutton
 					10080,	-- Sandarr Dunereaver
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
