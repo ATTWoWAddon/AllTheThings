@@ -19,7 +19,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 					crs = 63617,	-- Taoshi
 				}),
 				crit(20461, {
-					crs = 61625,	-- Protector Yi
+					crs = 62546,	-- Protector Yi
 				}),
 				crit(20454, {
 					crs = 62380,	-- Snow Blossom
