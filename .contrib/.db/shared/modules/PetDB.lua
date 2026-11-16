@@ -1012,6 +1012,11 @@ end
 local Pets = root("_petDB");
 local Items = ItemDBConditional;
 local SpeciesDB = SpeciesDB
+--- Registers an item-backed pet and its species when IDs are positive.
+---@param itemID ItemID # Source item ID; zero skips the entry.
+---@param speciesID BattlePetSpeciesID # Primary species ID, or zero to clear it.
+---@param altSpeciesID? BattlePetSpeciesID # Optional alternate species ID.
+---@return ATTObject|nil # Item entry, or nil when the item ID is not positive.
 local i = function(itemID, speciesID, altSpeciesID)
 	if itemID < 1 then return end
 	local item = Items[itemID];
@@ -1027,6 +1032,10 @@ local i = function(itemID, speciesID, altSpeciesID)
 	end
 	return item;
 end
+--- Registers a pet obtained from a creature.
+---@param creatureID CreatureID # Creature entry ID.
+---@param speciesID BattlePetSpeciesID # Pet species ID.
+---@return ATTBattlePetObject|nil # Pet entry, or nil if either ID is not positive.
 local n = function(creatureID, speciesID)
 	if creatureID < 1 or speciesID < 1 then return end
 	local pet = { speciesID = speciesID, npcID = creatureID, ignoreBonus = true };

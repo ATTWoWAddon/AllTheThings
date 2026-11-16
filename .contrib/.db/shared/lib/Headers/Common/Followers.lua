@@ -10,6 +10,8 @@ FOLLOWERS = createHeader({
 	},
 });
 
+--- Wraps follower groups after marking their contents unlearnable.
+---@param t ATTObject|ATTObjectArray # Follower data or child groups.
 n_TrainingFollowers = function(t)
 	return n(FOLLOWERS, bubbleDown({
 		-- collectible = false,	-- no real reason to explicitly make these uncollectible since they're unlearnable anyway

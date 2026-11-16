@@ -24,6 +24,8 @@ COMMON_VENDOR_ITEMS = createHeader({
 });
 
 -- Expects a table with 'crs' (Vendor NPCIDs) and 'groups' (Common Vendor Items)
+--- Creates common vendor items and propagates their vendors and timeline.
+---@param t ATTObject # Data with `crs` and child groups.
 n_CommonVendorItems = function(t)
 	if not t.crs then
 		error("n_CommonVendors: No NPCs specified in 'crs'");

@@ -16,6 +16,8 @@ WARFORGED = createHeader({
 	},
 });
 
+--- Wraps groups after propagating the Warforged bonus ID.
+---@param t ATTObject|ATTObjectArray # Fields or groups to mark.
 HEADER_WARFORGED = function(t)
 	return n(WARFORGED, bubbleDown({bonusID = 4746 }, t))
 end

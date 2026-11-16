@@ -1,5 +1,9 @@
 -- Map Constants
 local mapMetatable = {
+	--- Resolves and caches a legacy global map value; an unknown name raises an error.
+	---@param t table # Map table being indexed.
+	---@param mapKey string|number # Missing map key.
+	---@return any # Existing truthy global value; unknown map names do not return normally.
 	__index = function(t, mapKey)
 		local globalMapID = _G[mapKey];
 		if globalMapID then

@@ -1,5 +1,8 @@
 -- Assigning a table to ObjectDB[id] only merges in missing keys (existing values are kept), so a conditional
 -- override of an existing object has to replace its fields directly.
+--- Replaces ObjectDB fields, merging supplied text entries by locale.
+---@param objectID ObjectID # Object entry to update.
+---@param data table<string, any> # Fields to replace; text must be a locale table.
 local function OverrideObject(objectID, data)
 	local o = ObjectDB[objectID];
 	for key,value in pairs(data) do

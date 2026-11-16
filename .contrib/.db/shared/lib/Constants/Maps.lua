@@ -6,6 +6,8 @@
 -- The UiMapID is widely used in Cata Classic/Retail, almost all dungeons/outdoor areas have UiMapID, but in Classic Era/SoD, only outdoor areas have UiMapID.
 -- Please do not confuse UiMapID with the ID in the Map table, see the Map table in https://wago.tools/db2/Map?build=11.0.7.58238.
 
+--- Resolves legacy global map names or creates namespaces for missing string keys.
+--- Missing non-string keys return no value.
 MAP = SelfAutoTable({}, function(t, key)
 	-- safety catch for using old map name globals as a MAP identifier without them being converted yet
 	local globalMapID = rawget(_G, key)
