@@ -1308,9 +1308,10 @@ icon = function(path)
 	error("The icon function has been deprecated");
 end
 --- Applies an event ID to all nested data.
+---@generic T: ATTObject|ATTObjectArray
 ---@param eventID EventID # Event identifier to propagate through the `e` field.
----@param data ATTObject|ATTObjectArray # Object tree or child array receiving the event association.
----@return ATTObject|ATTObjectArray # The original object or array with the event ID propagated recursively.
+---@param data T # Object tree or child array receiving the event association.
+---@return T # The original object or array with the event ID propagated recursively.
 applyevent = function(eventID, data)
 	if not eventID then
 		print("INVALID EVENT ID PASSED TO APPLYHOLIDAY");
@@ -1484,9 +1485,10 @@ bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	return item;
 end
 --- Assigns a Champion's Seal cost and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Champion's Seals required.
----@param item ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with its Champion's Seal cost and Classic Wrath phase-two requirement.
+---@param item T # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
+---@return T # The original object with its Champion's Seal cost and Classic Wrath phase-two requirement.
 champ = function(cost, item)							-- Assigns a Champion's Seal cost and the Classic Wrath phase-two requirement.
 	applycost(item, { "c", 241, cost });	-- Champion's Seal
 	return applyclassicphase(WRATH_PHASE_TWO, item);
@@ -1552,9 +1554,10 @@ defilersscourgestone = function(cost, item)				-- Assigns a Defiler's Scourgesto
 	return item;
 end
 --- Assigns an Emblem of Conquest cost before Cataclysm and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Conquest required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Conquest cost and Classic Wrath phase-two requirement.
+---@param item T # Object receiving the cost and the Wrath phase 2 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Conquest cost and Classic Wrath phase-two requirement.
 emoc = function(cost, item)								-- Assigns an Emblem of Conquest cost before Cataclysm and the Classic Wrath phase-two requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
@@ -1562,9 +1565,10 @@ emoc = function(cost, item)								-- Assigns an Emblem of Conquest cost before 
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 --- Assigns an Emblem of Frost cost before Cataclysm and the Classic Wrath phase-four requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Frost required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 4 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Frost cost and Classic Wrath phase-four requirement.
+---@param item T # Object receiving the cost and the Wrath phase 4 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Frost cost and Classic Wrath phase-four requirement.
 emof = function(cost, item)								-- Assigns an Emblem of Frost cost before Cataclysm and the Classic Wrath phase-four requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 341, cost });	-- Emblem of Frost
@@ -1572,9 +1576,10 @@ emof = function(cost, item)								-- Assigns an Emblem of Frost cost before Cat
 	return applyclassicphase(WRATH_PHASE_FOUR, item);
 end
 --- Assigns an Emblem of Heroism cost before Cataclysm and the Classic Wrath phase-one requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Heroism required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Heroism cost and Classic Wrath phase-one requirement.
+---@param item T # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Heroism cost and Classic Wrath phase-one requirement.
 emoh = function(cost, item)								-- Assigns an Emblem of Heroism cost before Cataclysm and the Classic Wrath phase-one requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 101, cost });	-- Emblem of Heroism
@@ -1582,9 +1587,10 @@ emoh = function(cost, item)								-- Assigns an Emblem of Heroism cost before C
 	return applyclassicphase(WRATH_PHASE_ONE, item);
 end
 --- Assigns an Emblem of Triumph cost before Cataclysm and the Classic Wrath phase-three requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Triumph required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 3 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Triumph cost and Classic Wrath phase-three requirement.
+---@param item T # Object receiving the cost and the Wrath phase 3 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Triumph cost and Classic Wrath phase-three requirement.
 emot = function(cost, item)								-- Assigns an Emblem of Triumph cost before Cataclysm and the Classic Wrath phase-three requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 301, cost });	-- Emblem of Triumph
@@ -1592,9 +1598,10 @@ emot = function(cost, item)								-- Assigns an Emblem of Triumph cost before C
 	return applyclassicphase(WRATH_PHASE_THREE, item);
 end
 --- Assigns an Emblem of Valor cost before Cataclysm and the Classic Wrath phase-one requirement.
+---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Valor required before patch 4.0.1.
----@param item ATTObject # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
----@return ATTObject # The original object with a pre-Cataclysm Emblem of Valor cost and Classic Wrath phase-one requirement.
+---@param item T # Object receiving the cost and the Wrath phase 1 flag in Classic builds.
+---@return T # The original object with a pre-Cataclysm Emblem of Valor cost and Classic Wrath phase-one requirement.
 emov = function(cost, item)								-- Assigns an Emblem of Valor cost before Cataclysm and the Classic Wrath phase-one requirement.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 102, cost });	-- Emblem of Valor
@@ -1723,8 +1730,9 @@ venture = function(cost, item)							-- Assigns a Venture Coin currency cost bef
 	return item;
 end
 --- Assigns a Champion's Writ cost and the Classic Wrath phase-two requirement.
----@param item ATTObject # Object receiving a cost of one Champion's Writ and the Wrath phase 2 flag in Classic builds.
----@return ATTObject # The original object with one Champion's Writ as its cost and the Classic Wrath phase-two requirement.
+---@generic T: ATTObject
+---@param item T # Object receiving a cost of one Champion's Writ and the Wrath phase 2 flag in Classic builds.
+---@return T # The original object with one Champion's Writ as its cost and the Classic Wrath phase-two requirement.
 writ = function(item)									-- Assigns a Champion's Writ cost and the Classic Wrath phase-two requirement.
 	applycost(item, { "i", 46114, 1 });	-- 1x Champion's Writ
 	return applyclassicphase(WRATH_PHASE_TWO, item);
@@ -1941,8 +1949,9 @@ cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
 --- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Challenge Master requirement.
----@return ATTObject|ATTObjectArray # The original object or array with Challenge Master requirements propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T # Object or child groups whose nested content receives the Challenge Master requirement.
+---@return T # The original object or array with Challenge Master requirements propagated.
 challengemaster = function(t)							-- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD)
 	return bubbleDown({ cm = true }, t);
 end
@@ -2078,8 +2087,9 @@ e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	return struct("encounterID", id, t);
 end
 --- Flag all nested content as requiring Elite PvP gameplay.
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Elite PvP requirement.
----@return ATTObject|ATTObjectArray # The original object or array marked as requiring Elite PvP gameplay.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T # Object or child groups whose nested content receives the Elite PvP requirement.
+---@return T # The original object or array marked as requiring Elite PvP gameplay.
 elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
 	return bubbleDown({
 		pvp = true,
@@ -2653,8 +2663,9 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 	print("Could not find a group with an objectID value");
 end
 --- Pet Battle (bubbleDown pb filter).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the pet-battle filter.
----@return ATTObject|ATTObjectArray # The original object or array with the pet-battle flag propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T # Object or child groups whose nested content receives the pet-battle filter.
+---@return T # The original object or array with the pet-battle flag propagated.
 petbattle = function(t)									-- Pet Battle (bubbleDown pb filter)
 	return bubbleDown({ pb = true }, t);
 end
@@ -2674,8 +2685,9 @@ professionnode = function(id, t)						-- Create a PROFESSION NODE Object
 end
 pn = professionnode;
 --- Flag all nested content as requiring PvP gameplay.
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the PvP requirement.
----@return ATTObject|ATTObjectArray # The original object or array marked as requiring PvP gameplay.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T # Object or child groups whose nested content receives the PvP requirement.
+---@return T # The original object or array marked as requiring PvP gameplay.
 pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
 	return bubbleDown({ pvp = true }, t);
 end
@@ -2758,8 +2770,9 @@ sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellI
 	return i
 end
 --- Skyriding (bubbleDown sr filter).
----@param t ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Skyriding requirement.
----@return ATTObject|ATTObjectArray # The original object or array with the Skyriding requirement propagated.
+---@generic T: ATTObject|ATTObjectArray
+---@param t T # Object or child groups whose nested content receives the Skyriding requirement.
+---@return T # The original object or array with the Skyriding requirement propagated.
 skyriding = function(t)									-- Skyriding (bubbleDown sr filter)
 	return bubbleDown({ sr = true }, t);
 end
@@ -2956,7 +2969,8 @@ petbattles = function(timeline, t)						-- Creates a PET_BATTLES header with pet
 	end
 	t = togroups(t);
 	t.timeline = timeline;
-	return petbattle(n(PET_BATTLES, t));
+	--- A registered PET_BATTLES header ID selects the numeric-ID constructor path.
+	return petbattle(n(PET_BATTLES, t) --[[@as ATTHeaderObject|ATTNPCObject]]);
 end
 --- Creates a LOCKPICKING header with Rogue Class Filtering on it. Use this with Outdoor Zones.
 ---@param skipRequirement boolean|nil # Whether to omit the Rogue class restriction in the two-argument form.
