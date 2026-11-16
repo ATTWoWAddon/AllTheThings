@@ -762,7 +762,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			q(93196, {	-- Khan Jehn (Magram)
 				sourceQuest = 93188,	-- Return to Orgrul
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 253136,	-- Orgrul
+				coord = { 35.6, 12.8, MAP.SHENDRALAS },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 35,

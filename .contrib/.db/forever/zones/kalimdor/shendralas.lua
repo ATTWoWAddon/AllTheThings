@@ -190,16 +190,18 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93125, {	-- Going Home
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nerlokh near the Valley of Bones.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 254040,	-- Rokren
+				coord = { 40.8, 65.1, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				-- TODO: Escort Rokren out of the Outcast Hideaway; Wowhead has no IDs for the escort yet.
 			}),
 			q(93072, {	-- Long-Term Solutions
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 253851,	-- Hagiak
+				coord = { 59.2, 54.0, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {
@@ -265,7 +267,8 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93606, {	-- Not on Squealing Terms
-				-- TODO: Wowhead doesn't list where this starts yet; it provides the Virulent Blood of Agamaggan from Agamaggan's Blood (93604). Turned in to Quolga the Wise.
+				qg = 253527,	-- Kog'thug the Brave <Nomadic Bristleback Chief>
+				coord = { 72.6, 31.4, MAP.SHENDRALAS },
 				qi = 260237,	-- Virulent Blood of Agamaggan (PQI!)
 				lvl = 35,
 				groups = {
@@ -395,8 +398,9 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					93072,	-- Long-Term Solutions
 					93129,	-- Threat of Starvation
 				},
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Orgrul.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 253851,	-- Hagiak
+				coord = { 59.2, 54.0, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 			}),
@@ -454,8 +458,9 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			}),
 			q(93129, {	-- Threat of Starvation
 				sourceQuest = 93066,	-- Bristleback Retreat
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Hagiak at the Magram Front.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 253851,	-- Hagiak
+				coord = { 59.2, 54.0, MAP.SHENDRALAS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },
 				lvl = 35,
 				groups = {

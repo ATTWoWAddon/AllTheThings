@@ -20,19 +20,22 @@ root(ROOTS.ExpansionFeatures, {
 					prof(ALCHEMY, {
 						q(94260, {	-- Craftsman's Writ: Catseye Draught [Expert]
 							qs = 264060,	-- Craftsman's Writ: Catseye Draught (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262143,	-- Scout Raroul
+							coord = { 72.4, 52.4, MAP.FERALAS },
 							cost = { { "i", 10592, 1 } },	-- Catseye Draught
 							isDaily = true,
 						}),
 						q(94324, {	-- Craftsman's Writ: Distilled Firewater [Artisan]
 							qs = 264124,	-- Craftsman's Writ: Distilled Firewater (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262041,	-- Bor'dorc
+							coord = { 64.8, 33.0, MAP.WINTERSPRING },
 							cost = { { "i", 246948, 1 } },	-- Distilled Firewater
 							isDaily = true,
 						}),
 						q(94319, {	-- Craftsman's Writ: Draught of Detect Demon [Artisan]
 							qs = 264119,	-- Craftsman's Writ: Draught of Detect Demon (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257743,	-- Hastings
+							coord = { 47.2, 75.0, MAP.DEADWIND_PASS },
 							cost = { { "i", 9233, 1 } },	-- Draught of Detect Demon
 							isDaily = true,
 						}),
@@ -51,7 +54,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94266, {	-- Craftsman's Writ: Elixir of Agility [Expert]
 							qs = 264066,	-- Craftsman's Writ: Elixir of Agility (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262388,	-- Juo
+							coord = { 80.0, 55.4, MAP.THE_HINTERLANDS },
 							cost = { { "i", 8949, 1 } },	-- Elixir of Agility
 							isDaily = true,
 						}),
@@ -95,7 +99,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94263, {	-- Craftsman's Writ: Fire Protection Potion [Expert]
 							qs = 264063,	-- Craftsman's Writ: Fire Protection Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262294,	-- Durganon
+							coord = { 41.0, 58.4, MAP.SEARING_GORGE },
 							cost = { { "i", 6049, 1 } },	-- Fire Protection Potion
 							isDaily = true,
 						}),
@@ -127,13 +132,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94265, {	-- Craftsman's Writ: Goblin Rocket Fuel [Expert]
 							qs = 264065,	-- Craftsman's Writ: Goblin Rocket Fuel (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 5594,	-- Alchemist Pestlezugg
+							coord = { 50.8, 27.0, MAP.TANARIS },
 							cost = { { "i", 9061, 1 } },	-- Goblin Rocket Fuel
 							isDaily = true,
 						}),
 						q(94261, {	-- Craftsman's Writ: Great Rage Potion [Expert]
 							qs = 264061,	-- Craftsman's Writ: Great Rage Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11802,	-- Dendrite Starblaze
+							coord = { 56.2, 30.4, MAP.MOONGLADE },
 							cost = { { "i", 5633, 1 } },	-- Great Rage Potion
 							isDaily = true,
 						}),
@@ -145,7 +152,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94257, {	-- Craftsman's Writ: Lesser Invisibility Potion [Expert]
 							qs = 264057,	-- Craftsman's Writ: Lesser Invisibility Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 13717,	-- Centaur Pariah
+							coord = { 50.4, 86.6, MAP.DESOLACE },
 							cost = { { "i", 3823, 1 } },	-- Lesser Invisibility Potion
 							isDaily = true,
 						}),
@@ -161,7 +169,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94258, {	-- Craftsman's Writ: Lesser Stoneshield Potion [Expert]
 							qs = 264058,	-- Craftsman's Writ: Lesser Stoneshield Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 4503,	-- Mudcrush Durtfeet
+							coord = { 35.0, 38.2, MAP.DUSTWALLOW_MARSH },
 							cost = { { "i", 4623, 1 } },	-- Lesser Stoneshield Potion
 							isDaily = true,
 						}),
@@ -196,7 +205,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94259, {	-- Craftsman's Writ: Nature Protection Potion [Expert]
 							qs = 264059,	-- Craftsman's Writ: Nature Protection Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 10922,	-- Greta Mosshoof
+							coord = { 51.2, 82.2, MAP.FELWOOD },
 							cost = { { "i", 6052, 1 } },	-- Nature Protection Potion
 							isDaily = true,
 						}),
@@ -208,7 +218,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94264, {	-- Craftsman's Writ: Shadow Oil [Expert]
 							qs = 264064,	-- Craftsman's Writ: Shadow Oil (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262306,	-- Mukomonji
+							coord = { 62.2, 52.8, MAP.SWAMP_OF_SORROWS },
 							cost = { { "i", 3824, 1 } },	-- Shadow Oil
 							isDaily = true,
 						}),
@@ -224,7 +235,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94267, {	-- Craftsman's Writ: Wildvine Potion [Expert]
 							qs = 264067,	-- Craftsman's Writ: Wildvine Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 9272,	-- Spark Nilminer
+							coord = { 43.6, 7.4, MAP.UNGORO_CRATER },
 							cost = { { "i", 9144, 1 } },	-- Wildvine Potion
 							isDaily = true,
 						}),
@@ -245,7 +257,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94272, {	-- Craftsman's Writ: Blue Glittering Axe [Expert]
 							qs = 264072,	-- Craftsman's Writ: Blue Glittering Axe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262143,	-- Scout Raroul
+							coord = { 72.4, 52.4, MAP.FERALAS },
 							cost = { { "i", 7942, 1 } },	-- Blue Glittering Axe
 							isDaily = true,
 						}),
@@ -270,13 +283,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94274, {	-- Craftsman's Writ: Golden Scale Coif [Expert]
 							qs = 264074,	-- Craftsman's Writ: Golden Scale Coif (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262284,	-- Spek
+							coord = { 76.8, 54.0, MAP.RIVERGLADES },
 							cost = { { "i", 3837, 1 } },	-- Golden Scale Coif
 							isDaily = true,
 						}),
 						q(94278, {	-- Craftsman's Writ: Golden Scale Gauntlets [Expert]
 							qs = 264078,	-- Craftsman's Writ: Golden Scale Gauntlets (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7801,	-- Gilveradin Sunchaser
+							coord = { 26.6, 48.4, MAP.THE_HINTERLANDS },
 							cost = { { "i", 9366, 1 } },	-- Golden Scale Gauntlets
 							isDaily = true,
 						}),
@@ -303,7 +318,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94279, {	-- Craftsman's Writ: Heavy Mithril Axe [Expert]
 							qs = 264079,	-- Craftsman's Writ: Heavy Mithril Axe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 9619,	-- Torwa Pathfinder
+							coord = { 71.6, 76.0, MAP.UNGORO_CRATER },
 							cost = { { "i", 7941, 1 } },	-- Heavy Mithril Axe
 							isDaily = true,
 						}),
@@ -321,7 +337,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94269, {	-- Craftsman's Writ: Inlaid Mithril Cylinder [Expert]
 							qs = 264069,	-- Craftsman's Writ: Inlaid Mithril Cylinder (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11438,	-- Bibbly F'utzbuckle
+							coord = { 62.2, 38.8, MAP.DESOLACE },
 							cost = { { "i", 9060, 1 } },	-- Inlaid Mithril Cylinder
 							isDaily = true,
 						}),
@@ -340,7 +357,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94273, {	-- Craftsman's Writ: Moonsteel Broadsword [Expert]
 							qs = 264073,	-- Craftsman's Writ: Moonsteel Broadsword (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 12024,	-- Meliri
+							coord = { 51.2, 42.2, MAP.MOONGLADE },
 							cost = { { "i", 3853, 1 } },	-- Moonsteel Broadsword
 							isDaily = true,
 						}),
@@ -386,37 +404,42 @@ root(ROOTS.ExpansionFeatures, {
 						q(94223, {	-- Craftsman's Writ: Silver Skeleton Key [Journeyman]
 							qs = 264023,	-- Craftsman's Writ: Silver Skeleton Key (QS!)
 							coord = { 26.2, 36.2, MAP.DUSKWOOD },
-							-- TODO: Wowhead doesn't name the customer yet.
+							coord = { 26.1, 36.2, MAP.DUSKWOOD },	-- Battered Trunk (object 642320)
 							cost = { { "i", 15869, 1 } },	-- Silver Skeleton Key
 							isDaily = true,
 						}),
 						q(94275, {	-- Craftsman's Writ: Solid Sharpening Stone [Expert]
 							qs = 264075,	-- Craftsman's Writ: Solid Sharpening Stone (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14624,	-- Master Smith Burninate
+							coord = { 38.6, 28.4, MAP.SEARING_GORGE },
 							cost = { { "i", 7964, 1 } },	-- Solid Sharpening Stone
 							isDaily = true,
 						}),
 						q(94268, {	-- Craftsman's Writ: Steel Plate Helm [Expert]
 							qs = 264068,	-- Craftsman's Writ: Steel Plate Helm (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257429,	-- Furious Shadowforge Digger
+							coord = { 44.4, 11.4, MAP.BADLANDS },
 							cost = { { "i", 7922, 1 } },	-- Steel Plate Helm
 							isDaily = true,
 						}),
 						q(94270, {	-- Craftsman's Writ: Steel Weapon Chain [Expert]
 							qs = 264070,	-- Craftsman's Writ: Steel Weapon Chain (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 270919,	-- Ugbert
+							coord = { 40.8, 28.0, MAP.DUSTWALLOW_MARSH },
 							cost = { { "i", 6041, 1 } },	-- Steel Weapon Chain
 							isDaily = true,
 						}),
 						q(94277, {	-- Craftsman's Writ: Truesilver Rod [Expert]
 							qs = 264077,	-- Craftsman's Writ: Truesilver Rod (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7408,	-- Spigot Operator Luglunket
+							coord = { 52.4, 28.4, MAP.TANARIS },
 							cost = { { "i", 11144, 1 } },	-- Truesilver Rod
 							isDaily = true,
 						}),
 						q(94276, {	-- Craftsman's Writ: Wicked Mithril Blade [Expert]
 							qs = 264076,	-- Craftsman's Writ: Wicked Mithril Blade (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262306,	-- Mukomonji
+							coord = { 62.2, 52.8, MAP.SWAMP_OF_SORROWS },
 							cost = { { "i", 7943, 1 } },	-- Wicked Mithril Blade
 							isDaily = true,
 						}),
@@ -424,7 +447,8 @@ root(ROOTS.ExpansionFeatures, {
 					prof(ENGINEERING, {
 						q(94281, {	-- Craftsman's Writ: Advanced Target Dummy [Expert]
 							qs = 264081,	-- Craftsman's Writ: Advanced Target Dummy (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11438,	-- Bibbly F'utzbuckle
+							coord = { 62.2, 38.8, MAP.DESOLACE },
 							cost = { { "i", 4392, 1 } },	-- Advanced Target Dummy
 							isDaily = true,
 						}),
@@ -440,7 +464,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94284, {	-- Craftsman's Writ: Catseye Ultra Goggles [Expert]
 							qs = 264084,	-- Craftsman's Writ: Catseye Ultra Goggles (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262143,	-- Scout Raroul
+							coord = { 72.4, 52.4, MAP.FERALAS },
 							cost = { { "i", 10501, 1 } },	-- Catseye Ultra Goggles
 							isDaily = true,
 						}),
@@ -456,7 +481,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94282, {	-- Craftsman's Writ: Craftsman's Monocle [Expert]
 							qs = 264082,	-- Craftsman's Writ: Craftsman's Monocle (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262072,	-- The Ravenous
+							coord = { 54.0, 56.4, MAP.DUSTWALLOW_MARSH },
 							cost = { { "i", 4393, 1 } },	-- Craftsman's Monocle
 							isDaily = true,
 						}),
@@ -481,13 +507,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94287, {	-- Craftsman's Writ: Fire Goggles [Expert]
 							qs = 264087,	-- Craftsman's Writ: Fire Goggles (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262294,	-- Durganon
+							coord = { 41.0, 58.4, MAP.SEARING_GORGE },
 							cost = { { "i", 10500, 1 } },	-- Fire Goggles
 							isDaily = true,
 						}),
 						q(94286, {	-- Craftsman's Writ: Flash Bomb [Expert]
 							qs = 264086,	-- Craftsman's Writ: Flash Bomb (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262284,	-- Spek
+							coord = { 76.8, 54.0, MAP.RIVERGLADES },
 							cost = { { "i", 4852, 1 } },	-- Flash Bomb
 							isDaily = true,
 						}),
@@ -515,7 +543,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94283, {	-- Craftsman's Writ: Goblin Land Mine [Expert]
 							qs = 264083,	-- Craftsman's Writ: Goblin Land Mine (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11019,	-- Jessir Moonbow
+							coord = { 51.2, 82.0, MAP.FELWOOD },
 							cost = { { "i", 4395, 1 } },	-- Goblin Land Mine
 							isDaily = true,
 						}),
@@ -527,7 +556,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94289, {	-- Craftsman's Writ: Gyromatic Micro-Adjuster [Expert]
 							qs = 264089,	-- Craftsman's Writ: Gyromatic Micro-Adjuster (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14743,	-- Jhordy Lapforge
+							coord = { 52.2, 26.8, MAP.TANARIS },
 							cost = { { "i", 10498, 1 } },	-- Gyromatic Micro-Adjustor
 							isDaily = true,
 						}),
@@ -551,7 +581,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94290, {	-- Craftsman's Writ: Mechanical Repair Kit [Expert]
 							qs = 264090,	-- Craftsman's Writ: Mechanical Repair Kit (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 5634,	-- Rhapsody Shindigger
+							coord = { 26.8, 48.4, MAP.THE_HINTERLANDS },
 							cost = { { "i", 11590, 1 } },	-- Mechanical Repair Kit
 							isDaily = true,
 						}),
@@ -564,7 +595,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94288, {	-- Craftsman's Writ: Mithril Frag Bomb [Expert]
 							qs = 264088,	-- Craftsman's Writ: Mithril Frag Bomb (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262379,	-- Bullets Bigblast
+							coord = { 70.0, 41.4, MAP.SWAMP_OF_SORROWS },
 							cost = { { "i", 10514, 1 } },	-- Mithril Frag Bomb
 							isDaily = true,
 						}),
@@ -625,7 +657,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94285, {	-- Craftsman's Writ: Unstable Trigger [Expert]
 							qs = 264085,	-- Craftsman's Writ: Unstable Trigger (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 12029,	-- Narianna
+							coord = { 53.2, 42.6, MAP.MOONGLADE },
 							cost = { { "i", 10560, 1 } },	-- Unstable Trigger
 							isDaily = true,
 						}),
@@ -643,13 +676,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94300, {	-- Craftsman's Writ: Big Voodoo Mask [Expert]
 							qs = 264100,	-- Craftsman's Writ: Big Voodoo Mask (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262306,	-- Mukomonji
+							coord = { 62.2, 52.8, MAP.SWAMP_OF_SORROWS },
 							cost = { { "i", 8201, 1 } },	-- Big Voodoo Mask
 							isDaily = true,
 						}),
 						q(94301, {	-- Craftsman's Writ: Big Voodoo Robe [Expert]
 							qs = 264101,	-- Craftsman's Writ: Big Voodoo Robe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 8579,	-- Yeh'kinya
+							coord = { 67.0, 22.4, MAP.TANARIS },
 							cost = { { "i", 8200, 1 } },	-- Big Voodoo Robe
 							isDaily = true,
 						}),
@@ -661,7 +696,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94292, {	-- Craftsman's Writ: Comfortable Leather Hat [Expert]
 							qs = 264092,	-- Craftsman's Writ: Comfortable Leather Hat (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 2888,	-- Garek
+							coord = { 61.8, 54.2, MAP.BADLANDS },
 							cost = { { "i", 8174, 1 } },	-- Comfortable Leather Hat
 							isDaily = true,
 						}),
@@ -684,7 +720,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94294, {	-- Craftsman's Writ: Dusky Bracers [Expert]
 							qs = 264094,	-- Craftsman's Writ: Dusky Bracers (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262072,	-- The Ravenous
+							coord = { 54.0, 56.4, MAP.DUSTWALLOW_MARSH },
 							cost = { { "i", 7378, 1 } },	-- Dusky Bracers
 							isDaily = true,
 						}),
@@ -703,7 +740,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94293, {	-- Craftsman's Writ: Guardian Cloak [Expert]
 							qs = 264093,	-- Craftsman's Writ: Guardian Cloak (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11863,	-- Azore Aldamort
+							coord = { 38.8, 27.2, MAP.DESOLACE },
 							cost = { { "i", 5965, 1 } },	-- Guardian Cloak
 							isDaily = true,
 						}),
@@ -739,7 +777,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94299, {	-- Craftsman's Writ: Nightscape Shoulders [Expert]
 							qs = 264099,	-- Craftsman's Writ: Nightscape Shoulders (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14628,	-- Evonice Sootsmoker
+							coord = { 38.4, 27.8, MAP.SEARING_GORGE },
 							cost = { { "i", 8192, 1 } },	-- Nightscape Shoulders
 							isDaily = true,
 						}),
@@ -752,7 +791,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94297, {	-- Craftsman's Writ: Quickdraw Quiver [Expert]
 							qs = 264097,	-- Craftsman's Writ: Quickdraw Quiver (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 12029,	-- Narianna
+							coord = { 53.2, 42.6, MAP.MOONGLADE },
 							cost = { { "i", 8217, 1 } },	-- Quickdraw Quiver
 							isDaily = true,
 						}),
@@ -765,7 +805,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94350, {	-- Craftsman's Writ: Runic Leather Bracers [Artisan]
 							qs = 264150,	-- Craftsman's Writ: Runic Leather Bracers (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262016,	-- Fallen Adventurer
+							coord = { 38.0, 72.6, MAP.WESTERN_PLAGUELANDS },
 							cost = { { "i", 15092, 1 } },	-- Runic Leather Bracers
 							isDaily = true,
 						}),
@@ -777,19 +818,22 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94298, {	-- Craftsman's Writ: Swift Boots [Expert]
 							qs = 264098,	-- Craftsman's Writ: Swift Boots (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262284,	-- Spek
+							coord = { 76.8, 54.0, MAP.RIVERGLADES },
 							cost = { { "i", 7391, 1 } },	-- Swift Boots
 							isDaily = true,
 						}),
 						q(94303, {	-- Craftsman's Writ: Thick Leather Ammo Pouch [Expert]
 							qs = 264103,	-- Craftsman's Writ: Thick Leather Ammo Pouch (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 12959,	-- Nergal
+							coord = { 43.2, 7.8, MAP.UNGORO_CRATER },
 							cost = { { "i", 8218, 1 } },	-- Thick Leather Ammo Pouch
 							isDaily = true,
 						}),
 						q(94302, {	-- Craftsman's Writ: Turtle Scale Breastplate [Expert]
 							qs = 264102,	-- Craftsman's Writ: Turtle Scale Breastplate (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262388,	-- Juo
+							coord = { 80.0, 55.4, MAP.THE_HINTERLANDS },
 							cost = { { "i", 8189, 1 } },	-- Turtle Scale Breastplate
 							isDaily = true,
 						}),
@@ -813,13 +857,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94295, {	-- Craftsman's Writ: Wild Leather Helmet [Expert]
 							qs = 264095,	-- Craftsman's Writ: Wild Leather Helmet (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 10924,	-- Ivy Leafrunner
+							coord = { 50.8, 81.6, MAP.FELWOOD },
 							cost = { { "i", 8214, 1 } },	-- Wild Leather Helmet
 							isDaily = true,
 						}),
 						q(94296, {	-- Craftsman's Writ: Wild Leather Shoulders [Expert]
 							qs = 264096,	-- Craftsman's Writ: Wild Leather Shoulders (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262143,	-- Scout Raroul
+							coord = { 72.4, 52.4, MAP.FERALAS },
 							cost = { { "i", 8210, 1 } },	-- Wild Leather Shoulders
 							isDaily = true,
 						}),
@@ -837,7 +883,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94310, {	-- Craftsman's Writ: Black Mageweave Vest [Expert]
 							qs = 264110,	-- Craftsman's Writ: Black Mageweave Vest (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262284,	-- Spek
+							coord = { 76.8, 54.0, MAP.RIVERGLADES },
 							cost = { { "i", 9998, 1 } },	-- Black Mageweave Vest
 							isDaily = true,
 						}),
@@ -859,7 +906,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94314, {	-- Craftsman's Writ: Cindercloth Robe [Expert]
 							qs = 264114,	-- Craftsman's Writ: Cindercloth Robe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 5598,	-- Atal'ai Exile
+							coord = { 33.6, 75.2, MAP.THE_HINTERLANDS },
 							cost = { { "i", 10042, 1 } },	-- Cindercloth Robe
 							isDaily = true,
 						}),
@@ -873,19 +921,22 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94306, {	-- Craftsman's Writ: Crimson Silk Robe [Expert]
 							qs = 264106,	-- Craftsman's Writ: Crimson Silk Robe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 6546,	-- Tabetha
+							coord = { 46.0, 57.0, MAP.DUSTWALLOW_MARSH },
 							cost = { { "i", 7063, 1 } },	-- Crimson Silk Robe
 							isDaily = true,
 						}),
 						q(94315, {	-- Craftsman's Writ: Earthen Silk Belt [Expert]
 							qs = 264115,	-- Craftsman's Writ: Earthen Silk Belt (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 9273,	-- Petra Grossen
+							coord = { 43.6, 7.2, MAP.UNGORO_CRATER },
 							cost = { { "i", 7061, 1 } },	-- Earthen Silk Belt
 							isDaily = true,
 						}),
 						q(94308, {	-- Craftsman's Writ: Enchanted Mageweave Pouch [Expert]
 							qs = 264108,	-- Craftsman's Writ: Enchanted Mageweave Pouch (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14470,	-- Impsy
+							coord = { 41.4, 44.8, MAP.FELWOOD },
 							cost = { { "i", 22246, 1 } },	-- Enchanted Mageweave Pouch
 							isDaily = true,
 						}),
@@ -926,13 +977,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94304, {	-- Craftsman's Writ: Mageweave Bag [Expert]
 							qs = 264104,	-- Craftsman's Writ: Mageweave Bag (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 2817,	-- Rigglefuzz
+							coord = { 42.4, 52.8, MAP.BADLANDS },
 							cost = { { "i", 10050, 1 } },	-- Mageweave Bag
 							isDaily = true,
 						}),
 						q(94312, {	-- Craftsman's Writ: Orange Martial Shirt [Expert]
 							qs = 264112,	-- Craftsman's Writ: Orange Martial Shirt (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262379,	-- Bullets Bigblast
+							coord = { 70.0, 41.4, MAP.SWAMP_OF_SORROWS },
 							cost = { { "i", 10052, 1 } },	-- Orange Martial Shirt
 							isDaily = true,
 						}),
@@ -946,7 +999,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94311, {	-- Craftsman's Writ: Red Mageweave Pants [Expert]
 							qs = 264111,	-- Craftsman's Writ: Red Mageweave Pants (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14634,	-- Lookout Captain Lolo Longstriker
+							coord = { 37.6, 26.6, MAP.SEARING_GORGE },
 							cost = { { "i", 10009, 1 } },	-- Red Mageweave Pants
 							isDaily = true,
 						}),
@@ -972,7 +1026,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94305, {	-- Craftsman's Writ: Shadoweave Gloves [Expert]
 							qs = 264105,	-- Craftsman's Writ: Shadoweave Gloves (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 13656,	-- Willow
+							coord = { 62.2, 39.6, MAP.DESOLACE },
 							cost = { { "i", 10023, 1 } },	-- Shadoweave Gloves
 							isDaily = true,
 						}),
@@ -984,7 +1039,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94307, {	-- Craftsman's Writ: Shadoweave Robe [Expert]
 							qs = 264107,	-- Craftsman's Writ: Shadoweave Robe (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 9116,	-- Eridan Bluewind
+							coord = { 51.2, 81.6, MAP.FELWOOD },
 							cost = { { "i", 10004, 1 } },	-- Shadoweave Robe
 							isDaily = true,
 						}),
@@ -1017,7 +1073,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94309, {	-- Craftsman's Writ: Star Belt [Expert]
 							qs = 264109,	-- Craftsman's Writ: Star Belt (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11795,	-- Mylentha Riverbend
+							coord = { 51.8, 32.8, MAP.MOONGLADE },
 							cost = { { "i", 4329, 1 } },	-- Star Belt
 							isDaily = true,
 						}),
@@ -1029,7 +1086,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94313, {	-- Craftsman's Writ: White Bandit Mask [Expert]
 							qs = 264113,	-- Craftsman's Writ: White Bandit Mask (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 6568,	-- Vizzklick
+							coord = { 51.0, 27.4, MAP.TANARIS },
 							cost = { { "i", 10008, 1 } },	-- White Bandit Mask
 							isDaily = true,
 						}),

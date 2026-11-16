@@ -1202,8 +1202,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(97420, {	-- Reduce, Reuse, Reconcile
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Knaz Blunderflame.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 2687,	-- Gnaz Blunderflame <Engineering Supplies>
+				coord = { 51.0, 35.2, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 31,
 				groups = {

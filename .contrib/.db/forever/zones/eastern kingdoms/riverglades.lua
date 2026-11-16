@@ -732,13 +732,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				lvl = 36,
 			}),
 			q(93971, {	-- Farholde Scouting Report
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qs = 263930,	-- Farholde Scouting Report (QS!)
+				-- TODO: Wowhead doesn't show where the Farholde Scouting Report drops yet. Turned in to Krom'rosh (256418) at Rog'mar.
 				races = HORDE_ONLY,
 				lvl = 36,
 				groups = {
-					objective(1, {	-- 0/1 Farholde Scouting Report
-						provider = { "i", 263930 },	-- Farholde Scouting Report
-					}),
 					i(275041),	-- Bloodied Sash
 					i(275040),	-- Head-Harvest Crossbow
 				},

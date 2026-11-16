@@ -371,7 +371,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				},
 			}),
 			q(91608, {	-- Gettin' Buzzed [H]
-				-- TODO: Wowhead doesn't list the quest giver yet. The quest text names Kurll's Pellet Gun.
+				qg = 3621,	-- Kurll
+				coord = { 21.8, 52.0, MAP.AZSHARA },
 				qi = 238501,	-- Pellet Gun (PQI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
