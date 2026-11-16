@@ -100,7 +100,7 @@ if C_AuctionHouse then
 		-- Attempt to search manually with the link.
 		local link = reference.link or reference.silentLink;
 		if link then
-			AuctionHouseFrame.SearchBar.SearchBox:SetText(GetItemInfo(link))
+			AuctionHouseFrame.SearchBar.SearchBox:SetText("\"" .. GetItemInfo(link) .. "\"")
 			AuctionHouseFrame.SearchBar:StartSearch();
 		end
 	end
@@ -596,6 +596,11 @@ app:CreateWindow("Auctions", {
 					description = L.AUCTIONS_OTHER_ITEMS_DESC,
 					SortPriority = 2,
 				}),
+				app.CreateRawText(INVTYPE_PROFESSION_GEAR, {
+					Metas = { "ProfessionGear" },
+					icon = 7427775,
+					SortPriority = 2,
+				}),
 				app.CreateCustomHeader(app.HeaderConstants.QUESTS, {	-- Quest
 					Metas = { "ItemAsHQT" },
 					description = L.AUCTIONS_QUEST_ITEMS_DESC,
@@ -659,6 +664,9 @@ app:CreateWindow("Auctions", {
 							end
 							if key == "itemID" and searchResult.sourceID then
 								key = "sourceID";
+							end
+							if key == "sourceID" and searchResult.requireSkill then
+								__type = "ProfessionGear"
 							end
 							value = searchResult[key];
 
