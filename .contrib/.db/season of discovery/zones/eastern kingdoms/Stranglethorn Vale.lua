@@ -2936,6 +2936,21 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 			}),
 			i(2799),	-- Gorilla Fang
+			i(2725),	-- Green Hills of Stranglethorn - Page 1
+			i(2728),	-- Green Hills of Stranglethorn - Page 4
+			i(2730),	-- Green Hills of Stranglethorn - Page 6
+			i(2732),	-- Green Hills of Stranglethorn - Page 8
+			i(2734),	-- Green Hills of Stranglethorn - Page 10
+			i(2735),	-- Green Hills of Stranglethorn - Page 11
+			i(2738),	-- Green Hills of Stranglethorn - Page 14
+			i(2740),	-- Green Hills of Stranglethorn - Page 16
+			i(2742),	-- Green Hills of Stranglethorn - Page 18
+			i(2744),	-- Green Hills of Stranglethorn - Page 20
+			i(2745),	-- Green Hills of Stranglethorn - Page 21
+			i(2748),	-- Green Hills of Stranglethorn - Page 24
+			i(2749),	-- Green Hills of Stranglethorn - Page 25
+			i(2750),	-- Green Hills of Stranglethorn - Page 26
+			i(2751),	-- Green Hills of Stranglethorn - Page 27
 			i(1986, {	-- Gutrender
 				cr = 709,	-- Mosh'Ogg Warmonger
 			}),
