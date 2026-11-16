@@ -2758,6 +2758,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				cr = 937,	-- Kurzen Jungle Fighter
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251395, {	-- Plans: Shining Mithril Helm (RECIPE!)
+				cr = 1907,	-- Naga Explorer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1997, {	-- Pressed Felt Robe
 				cr = 701,	-- Bloodscalp Mystic
 			}),

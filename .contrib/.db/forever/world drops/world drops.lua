@@ -3450,9 +3450,166 @@ root(ROOTS.WorldDrops, {
 		}),
 		prof(BLACKSMITHING, {
 			i(273086, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Blueprint: Anvil (RECIPE!)
+			i(251353, {	-- Plans: Acolyte's Chain Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6488,	-- Fallen Champion
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251348, {	-- Plans: Acolyte's Chain Leggings (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251343, {	-- Plans: Acolyte's Chain Shirt (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor
+					645,	-- Cookie
+					646,	-- Mr. Smite
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					11517,	-- Oggleflint
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(251454, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Plans: Brass Knuckles (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
+			i(251354, {	-- Plans: Crusader's Chain Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					6168,	-- Roogug
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251349, {	-- Plans: Crusader's Chain Leggings (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251344, {	-- Plans: Crusader's Chain Shirt (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor
+					645,	-- Cookie
+					646,	-- Mr. Smite
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+					255699,	-- Lordaeron Captain
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12698),	-- Plans: Dawnbringer Shoulders (RECIPE!)
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
@@ -3466,6 +3623,64 @@ root(ROOTS.WorldDrops, {
 			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
 			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
 			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
+			i(251351, {	-- Plans: Guard's Chain Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251346, {	-- Plans: Guard's Chain Leggings (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251341, {	-- Plans: Guard's Chain Shirt (RECIPE!)
 				crs = {
 					643,	-- Sneed
@@ -3523,6 +3738,86 @@ root(ROOTS.WorldDrops, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251352, {	-- Plans: Protector's Chain Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6488,	-- Fallen Champion
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251347, {	-- Plans: Protector's Chain Leggings (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251342, {	-- Plans: Protector's Chain Shirt (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor
+					645,	-- Cookie
+					646,	-- Mr. Smite
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					11517,	-- Oggleflint
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12685),	-- Plans: Radiant Belt (RECIPE!)
 			i(12697),	-- Plans: Radiant Boots (RECIPE!)
 			i(12689),	-- Plans: Radiant Breastplate (RECIPE!)
@@ -3559,6 +3854,63 @@ root(ROOTS.WorldDrops, {
 			i(12694),	-- Plans: Thorium Helm (RECIPE!)
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
+			i(251350, {	-- Plans: Veteran's Chain Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6488,	-- Fallen Champion
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251345, {	-- Plans: Veteran's Chain Leggings (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251340, {	-- Plans: Veteran's Chain Shirt (RECIPE!)
 				crs = {
 					643,	-- Sneed
@@ -3677,6 +4029,39 @@ root(ROOTS.WorldDrops, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252814, {	-- Pattern: Brawler's Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6489,	-- Ironspine
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252792, {	-- Pattern: Brawler's Leather Pants (RECIPE!)
 				crs = {
 					639,	-- Edwin VanCleef <Defias Kingpin>
@@ -3726,6 +4111,41 @@ root(ROOTS.WorldDrops, {
 					11518,	-- Jergosh the Invoker
 					11519,	-- Bazzalan
 					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252816, {	-- Pattern: Defender's Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6228,	-- Dark Iron Ambassador
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -3863,6 +4283,39 @@ root(ROOTS.WorldDrops, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252818, {	-- Pattern: Stormrider's Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6488,	-- Fallen Champion
+					6489,	-- Ironspine
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252796, {	-- Pattern: Stormrider's Leather Pants (RECIPE!)
 				crs = {
 					639,	-- Edwin VanCleef <Defias Kingpin>
@@ -3910,6 +4363,39 @@ root(ROOTS.WorldDrops, {
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252817, {	-- Pattern: Totemic Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					6168,	-- Roogug
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252795, {	-- Pattern: Totemic Leather Pants (RECIPE!)
 				crs = {
 					639,	-- Edwin VanCleef <Defias Kingpin>
@@ -3953,6 +4439,39 @@ root(ROOTS.WorldDrops, {
 					11518,	-- Jergosh the Invoker
 					11519,	-- Bazzalan
 					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252815, {	-- Pattern: Trapper's Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6489,	-- Ironspine
+					6490,	-- Azshir the Sleepless
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
@@ -4013,6 +4532,39 @@ root(ROOTS.WorldDrops, {
 					11518,	-- Jergosh the Invoker
 					11519,	-- Bazzalan
 					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252819, {	-- Pattern: Wisdom's Leather Helm (RECIPE!)
+				crs = {
+					1663,	-- Dextren Ward
+					1666,	-- Kam Deepfury
+					1716,	-- Bazil Thredd
+					1717,	-- Hamhock
+					1720,	-- Bruegal Ironknuckle
+					3974,	-- Houndmaster Loksey
+					3983,	-- Interrogator Vishas
+					4420,	-- Overlord Ramtusk
+					4421,	-- Charlga Razorflank
+					4422,	-- Agathelos the Raging
+					4424,	-- Aggem Thorncurse
+					4425,	-- Blind Hunter
+					4428,	-- Death Speaker Jargba
+					4543,	-- Bloodmage Thalnos
+					4829,	-- Aku'mai
+					4830,	-- Old Serra'kis
+					4832,	-- Twilight Lord Kelris
+					4842,	-- Earthcaller Halmgar
+					6168,	-- Roogug
+					6229,	-- Crowd Pummeler 9-60
+					6235,	-- Electrocutioner 6000
+					6243,	-- Gelihast
+					6488,	-- Fallen Champion
+					7079,	-- Viscous Fallout
+					7361,	-- Grubbis
+					7800,	-- Mekgineer Thermaplugg
+					12876,	-- Baron Aquanis
+					12902,	-- Lorgus Jett
 				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),

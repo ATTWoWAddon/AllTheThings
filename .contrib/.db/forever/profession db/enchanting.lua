@@ -92,6 +92,7 @@ i(16245, 20023);	-- Enchant Boots - Greater Agility
 i(16215, 20020);	-- Enchant Boots - Greater Stamina
 i(11167, 13687);	-- Enchant Boots - Lesser Spirit
 i(6377, 7867);		-- Enchant Boots - Minor Agility
+i(289560, 1328948);	-- Enchant Boots - Speed
 i(16220, 20024);	-- Enchant Boots - Spirit
 i(11223, 13931);	-- Enchant Bracer - Deflection
 i(16214, 20008);	-- Enchant Bracer - Greater Intellect
@@ -216,9 +217,6 @@ i(273609),	-- Enchant Weapon - Grand Sorcerer
 r(1248497),	-- Enchant Bracer - Agility
 i(249488),	-- Formula: Enchant Bracer - Agility
 i(273614),	-- Enchant Bracer - Agility
-r(1328948),	-- Enchant Boots - Speed
-i(289559),	-- TODO: Item name not known yet.
-i(289560),	-- TODO: Item name not known yet.
 r(1248509),	-- Dreambough Wand
 i(249512),	-- Formula: Dreambough Wand
 r(1248500),	-- Enchant Bracer - Greater Agility

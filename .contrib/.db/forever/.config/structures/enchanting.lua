@@ -219,6 +219,9 @@ ENCHANTING_RECIPES = {
 			i(274394, {	-- Formula: Enchant 2H Weapon - Spellblasting (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
 			}),
+			i(289560, {	-- Formula: Enchant Boots - Speed (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
+			}),
 			i(274399, {	-- Formula: Enchant Cloak - Agility (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
 			}),
@@ -346,6 +349,9 @@ ENCHANTING_RECIPES = {
 			}),
 			i(274394, {	-- Formula: Enchant 2H Weapon - Spellblasting (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 240 }},
+			}),
+			i(289560, {	-- Formula: Enchant Boots - Speed (RECIPE!)
+				cost = {{ "c", MERCHANTS_FAVOR, 180 }},
 			}),
 			i(274399, {	-- Formula: Enchant Cloak - Agility (RECIPE!)
 				cost = {{ "c", MERCHANTS_FAVOR, 240 }},

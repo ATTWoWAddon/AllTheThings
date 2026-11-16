@@ -1078,6 +1078,9 @@ instanceroot(229, {	-- Blackrock Spire
 					i(13244),	-- Gilded Gauntlets
 					i(16715),	-- Wildheart Boots
 					i(13213),	-- Smolderweb's Eye
+					i(249521, {	-- Formula: Dormant Heart of the Mountain (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			e(392, {	-- Urok Doomhowl
@@ -1181,6 +1184,9 @@ instanceroot(229, {	-- Blackrock Spire
 					i(12927),	-- Truestrike Shoulders
 					i(16672),	-- Gauntlets of Elements
 					i(12926),	-- Flaming Band
+					i(249520, {	-- Formula: Molten Heart of the Mountain (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(23320, {	-- Tablet of Flame Shock VI
 						spellID = 29228,	-- Flame Shock VI
 						classes = { SHAMAN },
