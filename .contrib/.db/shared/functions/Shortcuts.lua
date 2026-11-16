@@ -226,7 +226,7 @@
 ---@field coord? ATTRawCoordinates|ATTIgnoredValue # Single map-coordinate tuple.
 ---@field coords? ATTRawCoordinates # Map-coordinate tuples.
 ---@field provider? ATTProvider|ATTIgnoredValue # Single typed reference providing this content.
----@field providers? ATTProvider[] # Typed references providing this content.
+---@field providers? ATTProvider|ATTProvider[] # Raw provider tuple or a list of provider tuples.
 ---@field cost? number|ATTCost[] # Copper amount or a list of cost entries.
 ---@field timeline? ATTTimelineEvent[]|ATTIgnoredValue # Patch events describing when the object is created, added, removed, or deleted.
 ---@field _defaulttimeline? ATTTimelineEvent[] # Parser fallback timeline used when no explicit timeline is supplied.
@@ -301,6 +301,10 @@
 ---@field _DATAGROUPS? string[] # Group keys used by constructors to register the object in DATAGROUP and IDGROUP.
 ---@field [integer] ATTObject # Array-style group entries.
 
+--- Object input for helpers that append to an existing provider list.
+---@class ATTProviderListObject: ATTObject
+---@field providers? ATTProvider[] # Existing providers must be a list of tuples.
+
 --- Achievement parser object supporting a shared achievement ID or an Alliance/Horde pair.
 ---@class ATTAchievementObject: ATTObject
 ---@field achievementID? AchievementID # Achievement ID represented by this object.
@@ -356,6 +360,14 @@
 ---@class ATTHeaderObject: ATTObject
 ---@field headerID ATTHeaderID # ATT header ID represented by this object.
 ---@field SortPriority? number # Parser root-category sort priority.
+
+--- Header returned by helpers that maintain a provider list.
+---@class ATTProviderListHeader: ATTHeaderObject
+---@field providers ATTProvider[] # Provider list created or extended by the helper.
+
+--- Item returned by helpers that maintain a provider list.
+---@class ATTProviderListItem: ATTItemObject
+---@field providers ATTProvider[] # Provider list created or extended by the helper.
 
 --- Profession parser object identified by a profession skill line.
 ---@class ATTProfessionObject: ATTObject
@@ -2440,11 +2452,13 @@ itemDropHQT = function(itemID, questID, t)
 end
 --- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 ---@param id ItemID # Item ID of the container that provides the listed contents.
----@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
----@return ATTHeaderObject # Reward-container header using the specified display item.
+---@param t? ATTProviderListObject|ATTObjectArray # Metadata or child objects; any singular provider must be a tuple.
+---@return ATTProviderListHeader # Reward-container header using the specified display item.
 container = function(id, t)								-- This function helps build an item container for a "sack" or "bag" or some other type of reward structure.
 	local bag = header(HEADERS.Item, id, t);
-	local providers = bag.providers;
+	--- The header constructor preserves the list-shaped providers required of its metadata.
+	---@type ATTProvider[]|nil
+	local providers = bag.providers --[[@as ATTProvider[]|nil]];
 	if not providers then
 		providers = {};
 		bag.providers = providers;
@@ -2454,13 +2468,14 @@ container = function(id, t)								-- This function helps build an item containe
 		providers[#providers + 1] = bag.provider;
 		bag.provider = nil;
 	end
-	return bag;
+	--- A provider list was either supplied or created above.
+	return bag --[[@as ATTProviderListHeader]];
 end
 --- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'.
 ---@param recipeID RecipeID # Salvage recipe spell ID added as a provider.
 ---@param displayItemID ItemID # Item ID used for the salvage recipe display and container provider.
----@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.
----@return ATTHeaderObject # Salvage-recipe header paired with its visible display item.
+---@param t? ATTProviderListObject|ATTObjectArray # Metadata or child objects; any singular provider must be a tuple.
+---@return ATTProviderListHeader # Salvage-recipe header paired with its visible display item.
 salvagerecipe = function(recipeID, displayItemID, t)	-- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'
 	local item = container(displayItemID, t)
 	local providers = item.providers
@@ -2911,12 +2926,12 @@ end
 -- Note: If additional table data is provided it must be the last param
 --- Creates a gathered item with the supplied object providers.
 ---@param itemID ItemID # Base item ID.
----@param ... ObjectID|ATTObject|ATTObjectArray # World object provider IDs, optionally followed by object fields or child objects as the final argument.
----@return ATTItemObject # Gathered item object with the supplied world-object providers.
+---@param ... ObjectID|ATTProviderListObject|ATTObjectArray # World object IDs, optionally followed by metadata with list-shaped providers or child objects.
+---@return ATTProviderListItem # Gathered item object with the supplied world-object providers.
 i_gathered = function(itemID, ...)
 	local t
 	local params = {...}
-	---@type ObjectID|ATTObject|ATTObjectArray|nil
+	---@type ObjectID|ATTProviderListObject|ATTObjectArray|nil
 	local last = params[#params]
 	if type(last) == "table" then
 		t = i(itemID, last)
@@ -2926,6 +2941,8 @@ i_gathered = function(itemID, ...)
 		t = i(itemID)
 	end
 	local providers = t.providers
+	--- The item constructor preserves the list-shaped providers required of its metadata.
+	---@cast providers ATTProvider[]|nil
 	if not providers then
 		providers = {}
 		t.providers = providers
@@ -2934,7 +2951,8 @@ i_gathered = function(itemID, ...)
 	for i=1,#params do
 		providers[#providers + 1] = { "o", params[i] }
 	end
-	return t
+	--- A provider list was either supplied or created above.
+	return t --[[@as ATTProviderListItem]]
 end
 -- Outdoor Zones Headers with Filters
 --- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.
