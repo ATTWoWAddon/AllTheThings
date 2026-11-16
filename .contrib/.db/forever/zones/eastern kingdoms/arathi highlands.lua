@@ -1080,6 +1080,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				groups = {
 					i(4508),	-- Blood-tinged Armor
 					i(4507),	-- Pit Fighter's Shield
+					i(270082, {	-- Ceremonial Gown
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270083, {	-- Blooded Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(638, {	-- Trollbane
