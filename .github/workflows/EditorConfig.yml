@@ -175,3 +175,40 @@ jobs:
         shell: pwsh
         run: |
           & ./.github/scripts/Check-EditorConfig.ps1 -Group sod-database -VerboseChecker
+
+
+      - name: Check Standard database core Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-database-core -VerboseChecker
+
+      - name: Check Standard dungeons and raids Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-dungeons -VerboseChecker
+
+      - name: Check Standard delves Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-delves -VerboseChecker
+
+      - name: Check Standard zones Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-zones -VerboseChecker
+
+      - name: Check Standard expansion features Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-expansion-features -VerboseChecker
+
+      - name: Check remaining Standard Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-other -VerboseChecker

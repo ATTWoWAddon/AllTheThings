@@ -241,4 +241,3 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 		q(),	--
 	}),
 }));--]]
-

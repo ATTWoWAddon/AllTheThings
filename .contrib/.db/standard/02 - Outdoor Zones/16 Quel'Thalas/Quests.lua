@@ -1012,7 +1012,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 						sourceQuest = 95303,	-- Security Training
 						qg = 260668,	-- Brann Bronzebeard
 						coord = { 68.4, 62.5, 2603 },	-- Hall of the Keepers, Uldaman
-						groups = { 
+						groups = {
 							o(639242, {	-- Tyr's Security Disc
 								coord = { 69.5, 62.2, 2603 },	-- Hall of the Keepers, Uldaman
 								groups = { i(275924) },	-- Tyr's Security Disc (QI!)

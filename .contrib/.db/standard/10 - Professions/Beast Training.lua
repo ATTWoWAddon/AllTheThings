@@ -31,7 +31,7 @@ profession(261, {	-- Beast Training
 			rank = 5,
 			lvl = 60,
 		}),
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 35699,	-- Avoidance [Rank 1]
 			rank = 1,
@@ -42,7 +42,7 @@ profession(261, {	-- Beast Training
 			rank = 2,
 			lvl = 60,
 		}),
-		
+
 		{
 			recipeID = 17253,	-- Bite [Rank 1]
 			rank = 1,
@@ -432,13 +432,13 @@ profession(261, {	-- Beast Training
 				20671,	-- Ripfang Lynx (Cat, 68-69, Netherstorm)
 			},
 		}),
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 25076,	-- Cobra Reflexes [Rank 1]
 			lvl = 30,
 			cr = 731,	-- King Bangalash (Cat, 43, Stranglethorn Vale)
 		}),
-		
+
 		{
 			recipeID = 1742,	-- Cower [Rank 1]
 			rank = 1,
@@ -652,7 +652,7 @@ profession(261, {	-- Beast Training
 				-- #endif
 			},
 		},
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 34890,	-- Fire Breath [Rank 1]
 			rank = 1,
@@ -700,7 +700,7 @@ profession(261, {	-- Beast Training
 			rank = 5,
 			lvl = 60,
 		}),
-		
+
 		{
 			recipeID = 24446,	-- Frost Resistance [Rank 1]
 			rank = 1,
@@ -784,7 +784,7 @@ profession(261, {	-- Beast Training
 				-- #endif
 			},
 		},
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 35299,	-- Gore [Rank 1]
 			rank = 1,
@@ -925,7 +925,7 @@ profession(261, {	-- Beast Training
 			rank = 11,
 			lvl = 70,
 		}),
-		
+
 		{
 			recipeID = 2649,	-- Growl [Rank 1]
 			rank = 1,
@@ -966,7 +966,7 @@ profession(261, {	-- Beast Training
 			rank = 8,
 			lvl = 70,
 		}),
-		
+
 		{
 			recipeID = 24844,	-- Lightning Breath [Rank 1]
 			timeline = { CREATED_1_0_1, ADDED_2_0_1 },
@@ -1105,7 +1105,7 @@ profession(261, {	-- Beast Training
 			rank = 11,
 			lvl = 70,
 		}),
-		
+
 		{
 			recipeID = 24492,	-- Nature Resistance [Rank 1]
 			rank = 1,
@@ -1131,7 +1131,7 @@ profession(261, {	-- Beast Training
 			rank = 5,
 			lvl = 60,
 		}),
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 35388,	-- Poison Spit [Rank 1]
 			rank = 1,
@@ -1162,7 +1162,7 @@ profession(261, {	-- Beast Training
 				19784,	-- Coilskar Cobra (Serpent, 68, Shadowmoon Valley)
 			},
 		}),
-		
+
 		{
 			recipeID = 24450,	-- Prowl [Rank 1]
 			rank = 1,
@@ -1195,7 +1195,7 @@ profession(261, {	-- Beast Training
 				-- #endif
 			},
 		},
-		
+
 		{
 			recipeID = 24640,	-- Scorpid Poison [Rank 1]
 			rank = 1,
@@ -1263,7 +1263,7 @@ profession(261, {	-- Beast Training
 				21864,	-- Scorchshell Pincer (Scorpid, 68-69, Shadowmoon Valley)
 			},
 		}),
-		
+
 		{
 			recipeID = 24423,	-- Screech [Rank 1]
 			rank = 1,
@@ -1315,7 +1315,7 @@ profession(261, {	-- Beast Training
 				21042,	-- Dire Raven (Carrion Bird, 67-68, Blade's Edge Mountains)
 			},
 		}),
-		
+
 		{
 			recipeID = 24488,	-- Shadow Resistance [Rank 1]
 			rank = 1,
@@ -1341,7 +1341,7 @@ profession(261, {	-- Beast Training
 			rank = 5,
 			lvl = 60,
 		}),
-		
+
 		{
 			recipeID = 26064,	-- Shell Shield [Rank 1]
 			rank = 1,
@@ -1358,7 +1358,7 @@ profession(261, {	-- Beast Training
 				-- #endif
 			},
 		},
-		
+
 		{
 			recipeID = 26090,	-- Thunderstomp [Rank 1]
 			rank = 1,
@@ -1395,7 +1395,7 @@ profession(261, {	-- Beast Training
 			lvl = 60,
 		}),
 		-- #endif
-		
+
 		applyclassicphase(TBC_PHASE_ONE, {
 			recipeID = 35348,	-- Warp
 			crs = {

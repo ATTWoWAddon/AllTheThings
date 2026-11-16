@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local function bo(questID)
-    return { questID = questID, isDaily = true };
+	return { questID = questID, isDaily = true };
 end
 
 maproot(SHADOWLANDS, THE_MAW, {

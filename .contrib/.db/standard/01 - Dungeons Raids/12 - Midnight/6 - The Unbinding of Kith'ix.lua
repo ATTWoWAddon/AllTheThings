@@ -18,7 +18,7 @@ local EncounterToLoot = {
 		i(281239),	-- Corroded Hulk's Skullcap
 		i(281236),	-- Leggings of Palpable Terror
 		i(280617),	-- Lightbearer's Shield Fragment
-        i(280799),	-- Lu'selama, Light's Justice
+		i(280799),	-- Lu'selama, Light's Justice
 		i(281056),	-- Sanctified Knight's Phoenixblade
 		i(280835),	-- Sigil of the Impending Eclipse
 		i(281215),	-- Twisted Horror's Tendril

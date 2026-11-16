@@ -13,17 +13,17 @@ local EncounterToCRS = {
 ------ EncounterToLoot ------
 local EncounterToLoot = {
 	[NYMRISSA] = {
-        i(268266),	-- Alluring Bubbleband
-        i(268247),	-- Breakwater Boots
-        i(268262),	-- Bubblefin Splash Guard
-        i(268232),	-- Cincture of the Abyssal Grotto
-        i(268244),	-- Forgotten Grotto Girdle
-        i(268263),	-- Frostscale's Mystic Frond
-        i(268238),	-- Grips of Swirling Fury
-        i(268217),	-- Rising Tide Wristguards
-        i(268226),	-- Swelling Sea Spaulders
-        i(268221),	-- Tidebound Sorcereress's Robes
-        i(268199),	-- Tidepiercer's Bubble Popper
+		i(268266),	-- Alluring Bubbleband
+		i(268247),	-- Breakwater Boots
+		i(268262),	-- Bubblefin Splash Guard
+		i(268232),	-- Cincture of the Abyssal Grotto
+		i(268244),	-- Forgotten Grotto Girdle
+		i(268263),	-- Frostscale's Mystic Frond
+		i(268238),	-- Grips of Swirling Fury
+		i(268217),	-- Rising Tide Wristguards
+		i(268226),	-- Swelling Sea Spaulders
+		i(268221),	-- Tidebound Sorcereress's Robes
+		i(268199),	-- Tidepiercer's Bubble Popper
 		i(270167),	-- Wavecaller's Seastone
 	};
 };
@@ -67,7 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				BossOnly(NYMRISSA, {
 					ach(63683),	-- Nymrissa Wavecaller
 					i(274708),	-- Nebulous Voidcache: Nymrissa Wavecaller
-                    i(279112),	-- Clumped Asteroidea (DECOR!)
+					i(279112),	-- Clumped Asteroidea (DECOR!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.WORLD).AddGroupsWithUpgrades({

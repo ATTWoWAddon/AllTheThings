@@ -458,9 +458,59 @@ insert_final_newline = true
 
 # EditorConfig CI path-group runner
 [/.github/scripts/Check-EditorConfig.ps1]
+charset = utf-8-bom
+end_of_line = lf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Standard Lua database files
+[/.contrib/.db/standard/**.lua]
 charset = utf-8
 end_of_line = lf
 indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve the generated skill requirement outputs.
+[/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/{01 - Classic.lua,02 - TBC.lua,03 - Wrath.lua,04 - Cataclysm.lua,05 - Mists of Pandaria.lua,10 - Dragonflight.lua,11 - The War Within.lua}]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve generated dynamic item outputs without BOMs.
+[/.contrib/.db/standard/00 - Item DB/.dynamic/{01 - Classic Era.lua,02 - TBC.lua,03 - Wrath.lua,04 - Cataclysm.lua,09 - Shadowlands.lua}]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve native CRLF line endings for generated Standard Lua outputs.
+[/.contrib/.db/standard/{00 - DB/AssetDB/TBC.lua,00 - Item DB/.dynamic/05 - Mists of Pandaria.lua}]
+charset = utf-8
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve the imported TWW exploration data format.
+[/.contrib/.db/standard/00 - DB/ExplorationDB/ExplorationDB - TWW.lua]
+charset = utf-8
+end_of_line = crlf
+indent_style = space
 indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true

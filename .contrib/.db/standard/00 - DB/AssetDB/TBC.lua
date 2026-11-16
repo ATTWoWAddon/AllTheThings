@@ -1,4 +1,4 @@
-﻿-- #if TBC
+-- #if TBC
 GlobalDBs.AssetDB = {
 [21]=1,
 [53183]=1,

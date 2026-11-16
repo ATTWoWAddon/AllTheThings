@@ -70,5 +70,3 @@ i(0, 1243803);		-- Mechagnome Sustenance Distributor
 i(0, 1243801);		-- Mechagon Armory Rack
 i(0, 1243788);		-- Mechanical Gnomish Lamppost
 i(0, 1243793);		-- Perpetual Motion Crate
-
-

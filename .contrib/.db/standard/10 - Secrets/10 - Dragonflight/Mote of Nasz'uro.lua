@@ -9,7 +9,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 		timeline = { ADDED_10_1_0 },
 		groups = {
 			n(REWARDS, {
-				maps = { 
+				maps = {
 					OHNAHRAN_PLAINS,
 					THALDRASZUS,
 					THE_AZURE_SPAN,

@@ -90,7 +90,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 			pet(730, {	-- Tolai Hare Pup (PET!)
 				description = "Respawns after some minutes as long as their Tolai Hare parent is still alive. Can be found spread through the grassy plains of Kun-Lai Summit, and common as secondary pets.",
 				coords = {
-					{ 44.2, 79.9, KUN_LAI_SUMMIT },	-- The Yaungol Advance 
+					{ 44.2, 79.9, KUN_LAI_SUMMIT },	-- The Yaungol Advance
 					{ 44.0, 70.4, KUN_LAI_SUMMIT },	-- Kota Basecamp, east of
 					{ 64.2, 25.4, KUN_LAI_SUMMIT },	-- Zouchin Village, south of
 					{ 75.3, 15.6, KUN_LAI_SUMMIT },	-- Isle of Reckonning

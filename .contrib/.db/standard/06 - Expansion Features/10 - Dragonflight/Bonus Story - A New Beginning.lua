@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
-	n(QUESTS, {		
+	n(QUESTS, {
 		-- Under Ohn'Ahran Plains
 	}),
 }));

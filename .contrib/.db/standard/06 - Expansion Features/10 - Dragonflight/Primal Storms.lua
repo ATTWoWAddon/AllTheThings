@@ -6,7 +6,7 @@ local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
 local function bo(questID, isWeekly)
-    return { questID = questID, isWeekly = isWeekly };
+	return { questID = questID, isWeekly = isWeekly };
 end
 
 local ELEMENTAL_OVERFLOW = 2118;

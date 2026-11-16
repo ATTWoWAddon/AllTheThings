@@ -64,7 +64,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			races = ALLIANCE_ONLY,
 			timeline = { ADDED_8_0_1_LAUNCH },
 			groups = {
-	            header(HEADERS.NPC, 143925, {	-- Dark Iron Mole Machine
+				header(HEADERS.NPC, 143925, {	-- Dark Iron Mole Machine
 					icon = 1786409,
 					coord = { 61.44, 24.35, 1186 },	-- Shadowforge City
 					groups = {

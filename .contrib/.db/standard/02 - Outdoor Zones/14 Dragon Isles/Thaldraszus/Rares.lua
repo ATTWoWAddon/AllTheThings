@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local function bo(questID, isDaily)
-    return { questID = questID, isDaily = isDaily };
+	return { questID = questID, isDaily = isDaily };
 end
 
 maproot(DRAGON_ISLES, THALDRASZUS, {

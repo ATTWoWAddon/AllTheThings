@@ -411,11 +411,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						frags(45, i(77973)),	-- Starcatcher Compass
 						frags(45, i(77981)),	-- Windward Heart
 						frags(45, i(77979)),	-- Vial of Shadows
-						
+
 						-- Mounts
 						-- CRIEVE NOTE: This mount doesn't appear to be on the vendor directly.
 						-- frags(250, i(69224)),	-- Pureblood Fire Hawk (MOUNT!) [Smoldering Egg of Millagazor]
-						
+
 						-- All BoP random statted items (aka Flickering gear) from Heroic Firelands.
 						-- 	This gear will be purchased via a satchel, and the item stats will be generated once the item is removed from the bag.
 						-- 	The satchel also contains a chance to drop one the following mounts:

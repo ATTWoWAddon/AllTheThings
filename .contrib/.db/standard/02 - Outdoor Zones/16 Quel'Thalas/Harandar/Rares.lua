@@ -175,4 +175,3 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		}),
 	}),
 }));
-

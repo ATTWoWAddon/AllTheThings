@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param(
 	[Parameter(Mandatory = $true)]
 	[ValidateSet(
@@ -6,7 +6,9 @@ param(
 		'root-metadata', 'root-policy', 'root-scripts', 'editor-and-hooks',
 		'github-yaml', 'powershell', 'db-sync', 'contributor-tools',
 		'harvesters', 'dotnet-projects', 'database-scripts', 'codegraph',
-		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database'
+		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database',
+		'standard-database-core', 'standard-dungeons', 'standard-delves',
+		'standard-zones', 'standard-expansion-features', 'standard-other'
 	)]
 	[string]$Group,
 	[switch]$VerboseChecker
@@ -144,6 +146,46 @@ $groups = @{
 		Pathspecs = @(
 			':(glob).contrib/.db/season of discovery/*.lua',
 			':(glob).contrib/.db/season of discovery/**/*.lua'
+		)
+		Minimum = 1
+	}
+	'standard-database-core' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/standard/.config/**/*.lua',
+			':(glob).contrib/.db/standard/00 - DB/**/*.lua',
+			':(glob).contrib/.db/standard/00 - Item DB/**/*.lua',
+			':(glob).contrib/.db/standard/00 - Profession DB/**/*.lua'
+		)
+		Minimum = 1
+	}
+	'standard-dungeons' = @{
+		Pathspecs = @(':(glob).contrib/.db/standard/01 - Dungeons Raids/**/*.lua')
+		Minimum = 1
+	}
+	'standard-delves' = @{
+		Pathspecs = @(':(glob).contrib/.db/standard/02 - Delves/**/*.lua')
+		Minimum = 1
+	}
+	'standard-zones' = @{
+		Pathspecs = @(':(glob).contrib/.db/standard/02 - Outdoor Zones/**/*.lua')
+		Minimum = 1
+	}
+	'standard-expansion-features' = @{
+		Pathspecs = @(':(glob).contrib/.db/standard/06 - Expansion Features/**/*.lua')
+		Minimum = 1
+	}
+	'standard-other' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/standard/*.lua',
+			':(glob).contrib/.db/standard/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/.config/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/00 - DB/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/00 - Item DB/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/00 - Profession DB/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/01 - Dungeons Raids/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/02 - Delves/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/02 - Outdoor Zones/**/*.lua',
+			':(exclude,glob).contrib/.db/standard/06 - Expansion Features/**/*.lua'
 		)
 		Minimum = 1
 	}

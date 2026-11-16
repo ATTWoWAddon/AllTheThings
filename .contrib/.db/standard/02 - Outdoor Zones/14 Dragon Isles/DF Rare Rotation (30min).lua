@@ -3,7 +3,7 @@
 ---------------------------------------------------
 
 local function bo(questID, isDaily)
-    return { questID = questID, isDaily = isDaily };
+	return { questID = questID, isDaily = isDaily };
 end
 
 local DF_RARE_ROTATION = createHeader({

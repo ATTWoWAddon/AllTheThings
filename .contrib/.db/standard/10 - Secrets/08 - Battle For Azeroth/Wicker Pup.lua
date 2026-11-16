@@ -10,7 +10,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 		timeline = { ADDED_8_0_1_LAUNCH },
 		groups = {
 			n(REWARDS, {
-				maps = { 
+				maps = {
 					DRUSTVAR,
 				},
 				groups = {

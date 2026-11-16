@@ -1,5 +1,5 @@
 -- When you encounter a bonusID or modID that needs a sourceID assignment,
--- you can lookup the sourceID in game and then look at the 
+-- you can lookup the sourceID in game and then look at the
 -- ItemModifiedAppearance table in WAGO to find the ID to use here.
 root("ItemAppearanceModifierIDs_BonusID", {
 	[1] = 1,

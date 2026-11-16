@@ -3,5 +3,5 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, applyclassicphase(LEGION_PHASE_ONE, expansion(EXPANSION.LEGION, {
-	
+
 })));

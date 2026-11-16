@@ -11,7 +11,7 @@ end
 maproot(DRAGON_ISLES, EMERALD_DREAM, {
 	timeline = { ADDED_10_2_0 },
 	groups = {
-		-- #if BEFORE TWW 
+		-- #if BEFORE TWW
 		-- Blizz forgot to allow S3/S4 items to be converted after S4 ended, so only raid items can be converted now. Jan 2025 ~Gold
 		o(382621, {	-- Revival Catalyst Console
 			description = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",

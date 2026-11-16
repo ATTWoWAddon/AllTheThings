@@ -199,3 +199,26 @@ docs export-ignore
 # Preserve generated Season of Discovery Lua outputs in CRLF.
 "/.contrib/.db/season of discovery/00 - Item DB/.dynamic/01 - Classic SOD.lua" text eol=crlf
 "/.contrib/.db/season of discovery/profession db/Skill Level Requirements.lua" text eol=crlf
+
+# Standard Lua database files
+/.contrib/.db/standard/*.lua text eol=lf
+/.contrib/.db/standard/**/*.lua text eol=lf
+
+# Preserve generated Standard Lua output in CRLF.
+"/.contrib/.db/standard/00 - Item DB/.dynamic/01 - Classic Era.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Item DB/.dynamic/02 - TBC.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Item DB/.dynamic/03 - Wrath.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Item DB/.dynamic/04 - Cataclysm.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Item DB/.dynamic/05 - Mists of Pandaria.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Item DB/.dynamic/09 - Shadowlands.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/01 - Classic.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/02 - TBC.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/03 - Wrath.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/04 - Cataclysm.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/05 - Mists of Pandaria.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/10 - Dragonflight.lua" text eol=crlf
+"/.contrib/.db/standard/00 - Profession DB/Skill Level Requirements/11 - The War Within.lua" text eol=crlf
+"/.contrib/.db/standard/00 - DB/AssetDB/TBC.lua" text eol=crlf
+
+# Preserve the imported TWW exploration data format in CRLF.
+"/.contrib/.db/standard/00 - DB/ExplorationDB/ExplorationDB - TWW.lua" text eol=crlf

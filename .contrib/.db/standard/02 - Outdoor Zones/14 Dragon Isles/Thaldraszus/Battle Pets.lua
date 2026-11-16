@@ -33,7 +33,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					coords = {
 						{ 48.4, 56.0, THALDRASZUS },
 						{ 68.6, 52.0, THALDRASZUS },
-						{ 37.0, 33.0, THE_AZURE_SPAN }, 
+						{ 37.0, 33.0, THE_AZURE_SPAN },
 					},
 				}),
 				pet(3336, {	-- Vorquin Runt (PET!)
