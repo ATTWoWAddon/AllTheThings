@@ -304,7 +304,7 @@ maproot(SHADOWLANDS, BASTION, {
 				isDaily = true,
 			}),
 			o(354289, {	-- Windsmith's Tools
-				description = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFEtherwyrms|r across Bastion.\nAlthough they do drop from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure, the best place to farm the flute is killing |cFFFFFFFFUnsettled Etherwyrms|r in the cave below |cFFFFFFFFForgefire Outputs|r (55.7, 42.9). After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
+				description = "The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFEtherwyrms|r across Bastion.\nAlthough they do drop from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure, the best place to farm the flute is killing |cFFFFFFFFAgitated Etherwyrms|r in the cave below |cFFFFFFFFForgefire Outputs|r (55.7, 42.9). After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",
 				coord = { 35.8, 48.1, BASTION },
 				questID = 61053,
 				crs = {
