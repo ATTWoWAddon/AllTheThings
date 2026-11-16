@@ -61,6 +61,8 @@ If you just updated and are getting tons of errors, completely close your game a
 ## Contributors
 Thank you to the contributors for the work they do and the users who have submitted suggestions and bugs in Discord or on the forums! View and follow [our contributors here](https://github.com/ATTWoWAddon/AllTheThings/graphs/contributors)!
 
+For Parser data analysis, see the [LuaLS and Parser limitations guide](docs/luals-parser-limitations.md).
+
 ## Special Thanks
 - AmiYuy -- Has helped many times with different aspects of the addon.
 - Sweetlie -- Helped with models for the addon.

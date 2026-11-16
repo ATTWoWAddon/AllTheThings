@@ -174,3 +174,40 @@ processes for each configuration. Import files and directories also require
 Windows path checks. Validate diagnostic and navigation positions against
 original files, including imported content; matching selected text alone is not
 enough. These Parser and Windows checks have not been run by the fixture script.
+
+## Limits of annotations
+
+Annotations help describe expected shapes, but they do not execute the Parser,
+select conditional branches, or reproduce its loaded global state. Parser
+files can depend on globals initialized by other files and on the per-file values
+set by [`ParseLUAFile`](../.contrib/src/Parser/Program.cs#L1097-L1109). They can
+also build and mutate flexible data structures: for example,
+[`root`](../.contrib/.db/shared/functions/Shortcuts.lua#L3492-L3525) processes
+and merges data into a previously registered category. A static type cannot
+by itself establish the contents or validity of that accumulated state.
+
+Named aliases such as [`ItemID` and `QuestID`](../.contrib/.db/shared/functions/Shortcuts.lua#L10-L25)
+document the intended kind of value, but both are `integer` aliases; the
+annotation alone cannot distinguish their numeric domains or verify an ID
+against game data. Imported content and transformed source positions also need
+provenance and mapping as described above. More annotations do not make these
+runtime and source-selection questions disappear.
+
+## Investigating a diagnostic
+
+1. Check the file, effective configuration, phase and patch, and whether the
+   diagnostic comes from raw or transformed text. Confirm that all referenced
+   declarations belong to the intended flavor and that a transformation, if
+   used, actually ran.
+2. For code inside a Parser conditional, inspect the branches and determine
+   which one the Parser selects for that configuration. If the diagnostic
+   combines mutually exclusive branches, it may be a conditional-analysis
+   false positive. A hand-selected example can illustrate the cause but does
+   not prove the Parser produced that view.
+3. Check the remaining code and reported type or value independently. A real
+   error can coexist with a conditional false positive, as the fixture's
+   retained type mismatch demonstrates. Use Parser execution and appropriate
+   source evidence when the question depends on runtime state or data validity.
+
+This guide does not enable repository-wide diagnostics or establish full database
+analysis coverage; those are separate tasks.
