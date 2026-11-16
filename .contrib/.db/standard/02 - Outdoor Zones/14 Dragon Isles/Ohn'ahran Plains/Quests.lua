@@ -1407,46 +1407,51 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				coord = { 71.8, 78.7, OHNAHRAN_PLAINS },
 			}),
 			n(BONUS_OBJECTIVES, {	-- All of these are One-Time
-				q(69968, {	-- Prozela Galeshot
-					provider = { "n", 193669 },	-- Prozela Galeshot
-					coord = { 59.9, 66.9, OHNAHRAN_PLAINS },
-				}),
-				q(69851, {	-- Ripsaw the Stalker
-					provider = { "n", 193153 },	-- Ripsaw the Stalker
-					coord = { 26.3, 65.4, OHNAHRAN_PLAINS },
-				}),
-				q(70783, {	-- Skaara
-					provider = { "n", 192949 },	-- Skaara
-					coord = { 44.9, 49.2, OHNAHRAN_PLAINS },
-				}),
-				q(69837, {	-- Sunscale Behemoth
-					provider = { "n", 193133 },	-- Sunscale Behemoth
-					coord = { 63.2, 48.6, OHNAHRAN_PLAINS },
-				}),
-				q(69852, {	-- Territorial Coastling
-					provider = { "n", 193163 },	-- Territorial Coastling
-					coord = { 22.7, 67.6, OHNAHRAN_PLAINS },
-				}),
-				q(65892, {	-- The Sundered Asunder
-					description = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
-					-- sourceQuests = {  },	--
-					coord = { 64.0, 17.8, OHNAHRAN_PLAINS },
-					lockCriteria = { 1, "lvl", 71 },
-				}),
-				q(66421, {	-- The Storm Scar
-					sourceQuests = { 66331 },	-- The Primalist Front
-					coord = { 25.7, 40.5, OHNAHRAN_PLAINS },
-				}),
-				q(66970, {	-- Ty'foon the Ascended
-					provider = { "n", 191354 },	-- Ty'foon the Ascended
-					coord = { 26.1, 34.2, OHNAHRAN_PLAINS },
-				}),
-				q(72364, {	-- Zarizz
-					provider = { "n", 193140 },	-- Zarizz
-					coord = { 30.3, 62.1, OHNAHRAN_PLAINS },
-					isDaily = true,
-					-- Note: this is not a one time quest according to Errors reports.
-				}),
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Maruukai Endeavor) can scale Ohn'ahran Plains up to the current level cap. While one is active, the level-locked Bonus Objectives here can be completed again.",
+				-- #endif
+				groups = {
+					q(69968, {	-- Prozela Galeshot
+						provider = { "n", 193669 },	-- Prozela Galeshot
+						coord = { 59.9, 66.9, OHNAHRAN_PLAINS },
+					}),
+					q(69851, {	-- Ripsaw the Stalker
+						provider = { "n", 193153 },	-- Ripsaw the Stalker
+						coord = { 26.3, 65.4, OHNAHRAN_PLAINS },
+					}),
+					q(70783, {	-- Skaara
+						provider = { "n", 192949 },	-- Skaara
+						coord = { 44.9, 49.2, OHNAHRAN_PLAINS },
+					}),
+					q(69837, {	-- Sunscale Behemoth
+						provider = { "n", 193133 },	-- Sunscale Behemoth
+						coord = { 63.2, 48.6, OHNAHRAN_PLAINS },
+					}),
+					q(69852, {	-- Territorial Coastling
+						provider = { "n", 193163 },	-- Territorial Coastling
+						coord = { 22.7, 67.6, OHNAHRAN_PLAINS },
+					}),
+					q(65892, {	-- The Sundered Asunder
+						description = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
+						-- sourceQuests = {  },	--
+						coord = { 64.0, 17.8, OHNAHRAN_PLAINS },
+						lockCriteria = { 1, "lvl", 71 },
+					}),
+					q(66421, {	-- The Storm Scar
+						sourceQuests = { 66331 },	-- The Primalist Front
+						coord = { 25.7, 40.5, OHNAHRAN_PLAINS },
+					}),
+					q(66970, {	-- Ty'foon the Ascended
+						provider = { "n", 191354 },	-- Ty'foon the Ascended
+						coord = { 26.1, 34.2, OHNAHRAN_PLAINS },
+					}),
+					q(72364, {	-- Zarizz
+						provider = { "n", 193140 },	-- Zarizz
+						coord = { 30.3, 62.1, OHNAHRAN_PLAINS },
+						isDaily = true,
+						-- Note: this is not a one time quest according to Errors reports.
+					}),
+				},
 			}),
 		}),
 	},

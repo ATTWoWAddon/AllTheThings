@@ -1923,22 +1923,27 @@ maproot(ZANDALAR, VOLDUN, {
 					a(i(161301)),	-- Storm's Wake Mace
 				},
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = HORDE_ONLY,
-			},{
-				-- TODO: probably can't do after a certain level?
-				q(47647, {	-- Monsters of Zem'lan
-					sourceQuests = {
-						51054,	-- Overdue Mutiny
-					},
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = HORDE_ONLY,
+				},{
+					-- TODO: probably can't do after a certain level?
+					q(47647, {	-- Monsters of Zem'lan
+						sourceQuests = {
+							51054,	-- Overdue Mutiny
+						},
+					}),
+					q(50805, {	-- Skycaller Shutdown
+						sourceQuests = {
+							50751,	-- Sanctuary Under Siege
+						},
+					}),
 				}),
-				q(50805, {	-- Skycaller Shutdown
-					sourceQuests = {
-						50751,	-- Sanctuary Under Siege
-					},
-				}),
-			})),
+			}),
 		}),
 	},
 });

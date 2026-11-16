@@ -2094,19 +2094,24 @@ maproot(ZANDALAR, ZULDAZAR, {
 				provider = { "n", 149006 },	-- Jani
 				races = HORDE_ONLY,
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = HORDE_ONLY,
-			},{
-				-- TODO: Check SQ, also probably can't do after a certain level
-				q(47527),	-- Rituals of Heresy
-				q(47797, {	-- Occupation Hazard
-					sourceQuest = 47737,	-- The Temple of Rezan
-					coord = { 73.6, 26.3, ZULDAZAR },
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = HORDE_ONLY,
+				},{
+					-- TODO: Check SQ, also probably can't do after a certain level
+					q(47527),	-- Rituals of Heresy
+					q(47797, {	-- Occupation Hazard
+						sourceQuest = 47737,	-- The Temple of Rezan
+						coord = { 73.6, 26.3, ZULDAZAR },
+					}),
+					q(49918),	-- Gorilla Gorge
+					q(50178),	-- Trouble in the Rootway
 				}),
-				q(49918),	-- Gorilla Gorge
-				q(50178),	-- Trouble in the Rootway
-			})),
+			}),
 			n(BONUS_OBJECTIVES, {	-- Neither faction or level 50 restricted
 				q(49315),	-- Dreadpearl Collusion
 			}),

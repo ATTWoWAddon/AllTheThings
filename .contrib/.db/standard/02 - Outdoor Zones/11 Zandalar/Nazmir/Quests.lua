@@ -1584,58 +1584,63 @@ maproot(ZANDALAR, NAZMIR, {
 				races = HORDE_ONLY,
 				lvl = 120,
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = HORDE_ONLY,
-			},{
-				-- TODO: probably can't do after a certain level?
-				q(48934, {	-- Mark of the Damned
-					sourceQuests = {
-						47247,	-- That Which Haunts the Dead
-						47491,	-- Remnants of the Damned
-					},
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = HORDE_ONLY,
+				},{
+					-- TODO: probably can't do after a certain level?
+					q(48934, {	-- Mark of the Damned
+						sourceQuests = {
+							47247,	-- That Which Haunts the Dead
+							47491,	-- Remnants of the Damned
+						},
+					}),
+					q(47996, {	-- Mawfiend Extermination
+						sourceQuests = {
+							47924,	-- Profanity Filter
+						},
+					}),
+					q(48093, {	-- Nagating the Threat
+						description = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
+					}),
+					q(48588, {	-- Purge the Infection
+						sourceQuests = {
+							48584,	-- The Blood of My Enemies
+							48590,	-- My Head and Shoulders
+						},
+					}),
+					q(50080, {	-- Raiding the Raiders
+						description = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
+						sourceQuests = { 50083 },	-- The Crawg Ma'da
+						groups = {
+							i(157029),	-- Bag of Zandalari Supplies (QI!)
+						},
+					}),
+					q(48852, {	-- Stopping Zardax
+						sourceQuests = { 48854 },	-- Offer of Power
+					}),
+					q(47756, {	-- The Libation's Liberation
+						sourceQuests = {
+							47631,	-- Rendezvous with the Libation
+						},
+					}),
+					q(51689, {	-- Tortollan Rescue
+						sourceQuests = {
+							49125,	-- Negative Blood
+						},
+					}),
+					q(49406, {	-- Zalamar Slaughter
+						sourceQuests = {
+							49078,	-- Poisoning the Brood
+							48800,	-- Mark of the Bat
+						},
+					}),
 				}),
-				q(47996, {	-- Mawfiend Extermination
-					sourceQuests = {
-						47924,	-- Profanity Filter
-					},
-				}),
-				q(48093, {	-- Nagating the Threat
-					description = "This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",
-				}),
-				q(48588, {	-- Purge the Infection
-					sourceQuests = {
-						48584,	-- The Blood of My Enemies
-						48590,	-- My Head and Shoulders
-					},
-				}),
-				q(50080, {	-- Raiding the Raiders
-					description = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
-					sourceQuests = { 50083 },	-- The Crawg Ma'da
-					groups = {
-						i(157029),	-- Bag of Zandalari Supplies (QI!)
-					},
-				}),
-				q(48852, {	-- Stopping Zardax
-					sourceQuests = { 48854 },	-- Offer of Power
-				}),
-				q(47756, {	-- The Libation's Liberation
-					sourceQuests = {
-						47631,	-- Rendezvous with the Libation
-					},
-				}),
-				q(51689, {	-- Tortollan Rescue
-					sourceQuests = {
-						49125,	-- Negative Blood
-					},
-				}),
-				q(49406, {	-- Zalamar Slaughter
-					sourceQuests = {
-						49078,	-- Poisoning the Brood
-						48800,	-- Mark of the Bat
-					},
-				}),
-			})),
+			}),
 		}),
 	},
 });

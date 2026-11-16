@@ -1710,36 +1710,41 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 				coord = { 46.1, 33.4, DRUSTVAR },
 				races = ALLIANCE_ONLY,
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = ALLIANCE_ONLY,
-			},{
-				q(48525, {	-- Break Them to Splinters
-					sourceQuest = 48519,	-- Hope They Can't Swim
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = ALLIANCE_ONLY,
+				},{
+					q(48525, {	-- Break Them to Splinters
+						sourceQuest = 48519,	-- Hope They Can't Swim
+					}),
+					q(48474, {	-- Crypt Keepers
+						description = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+						sourceQuest = 48475,	-- Seeing Spirits
+					}),
+					q(47969, {	-- Fallhaven's Curse
+						description = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
+						sourceQuest = 47968,	-- Signs and Portents
+					}),
+					q(48181),	-- Nooooope
+					q(48680, {	-- Not the Bees!
+						sourceQuest = 48678,	-- Questionable Offerings
+					}),
+					q(50959),	-- Plundering Pirates
+					q(50448, {	-- Reclaiming Corlain
+						sourceQuest = 50253,	-- An Improved Arsenal
+					}),
+					q(45972, {	-- The Accursed Thicket
+						sourceQuest = 47428,	-- Kitty?
+					}),
+					q(50091, {	-- Village Repair
+						sourceQuest = 49939,	-- So Long, Sister
+					}),
 				}),
-				q(48474, {	-- Crypt Keepers
-					description = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
-					sourceQuest = 48475,	-- Seeing Spirits
-				}),
-				q(47969, {	-- Fallhaven's Curse
-					description = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
-					sourceQuest = 47968,	-- Signs and Portents
-				}),
-				q(48181),	-- Nooooope
-				q(48680, {	-- Not the Bees!
-					sourceQuest = 48678,	-- Questionable Offerings
-				}),
-				q(50959),	-- Plundering Pirates
-				q(50448, {	-- Reclaiming Corlain
-					sourceQuest = 50253,	-- An Improved Arsenal
-				}),
-				q(45972, {	-- The Accursed Thicket
-					sourceQuest = 47428,	-- Kitty?
-				}),
-				q(50091, {	-- Village Repair
-					sourceQuest = 49939,	-- So Long, Sister
-				}),
-			})),
+			}),
 --[[	raw quest list to check against
 			-- Unknown
 			q(50195, {	-- Bilgemaul's Brigade

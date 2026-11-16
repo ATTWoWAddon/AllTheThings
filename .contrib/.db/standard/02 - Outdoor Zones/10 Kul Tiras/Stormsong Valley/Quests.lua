@@ -1877,21 +1877,26 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					i(158680),	-- Rikal's Ritual Beads
 				},
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = ALLIANCE_ONLY,
-			},{
-				q(50779, {	-- A Clean Slate
-					description = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
-					sourceQuest = 50777,	-- The Storm Awakens
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = ALLIANCE_ONLY,
+				},{
+					q(50779, {	-- A Clean Slate
+						description = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
+						sourceQuest = 50777,	-- The Storm Awakens
+					}),
+					q(51534, {	-- The Battle for Brennadam
+						sourceQuest = 51401,	-- Carry On
+					}),
+					q(50133, {	-- Weed Whacking
+						sourceQuest = 49755,	-- Heavy Artillery
+					}),
 				}),
-				q(51534, {	-- The Battle for Brennadam
-					sourceQuest = 51401,	-- Carry On
-				}),
-				q(50133, {	-- Weed Whacking
-					sourceQuest = 49755,	-- Heavy Artillery
-				}),
-			})),
+			}),
 		}),
 	},
 });

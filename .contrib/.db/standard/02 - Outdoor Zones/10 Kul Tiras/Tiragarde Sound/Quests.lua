@@ -1695,25 +1695,30 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 					}),
 				},
 			}),
-			n(BONUS_OBJECTIVES, sharedData({
-				lockCriteria = { 1, "lvl", 50 },
-				races = ALLIANCE_ONLY,
-			},{
-				q(49300, {	-- Creature Corruption
-					sourceQuest = 48366,	-- Paddle to Safety
+			n(BONUS_OBJECTIVES, {
+				-- #if AFTER MID
+				description = "Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",
+				-- #endif
+				groups = sharedData({
+					lockCriteria = { 1, "lvl", 50 },
+					races = ALLIANCE_ONLY,
+				},{
+					q(49300, {	-- Creature Corruption
+						sourceQuest = 48366,	-- Paddle to Safety
+					}),
+					q(49739, {	-- Enemies at the Gate
+						description = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
+						sourceQuest = 49736,	-- For Kul Tiras!
+					}),
+					q(50009, {	-- Shipwreck Recovery Crew
+						sourceQuest = 50026,	-- Save our Shipmates
+					}),
+					q(49529, {	-- Spring Cleaning
+						description = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
+						sourceQuest = 49897,	-- Making Mysteries
+					}),
 				}),
-				q(49739, {	-- Enemies at the Gate
-					description = "You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",
-					sourceQuest = 49736,	-- For Kul Tiras!
-				}),
-				q(50009, {	-- Shipwreck Recovery Crew
-					sourceQuest = 50026,	-- Save our Shipmates
-				}),
-				q(49529, {	-- Spring Cleaning
-					description = "You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",
-					sourceQuest = 49897,	-- Making Mysteries
-				}),
-			})),
+			}),
 			-- Want to see q49310 The Prophet's Ploy? Its under Boralus>Quests
 --[[	raw quest list to check against
 			-- Unknown
