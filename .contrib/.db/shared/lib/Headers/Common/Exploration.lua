@@ -17,6 +17,8 @@ EXPLORATION = createHeader({
 		tw = "探索",
 	},
 });
+--- Wraps exploration groups under the exploration header.
+---@param g? ATTObject|ATTObjectArray # Fields or groups for the header.
 explorationHeader = function(g)
 	return n(EXPLORATION, g);
 end

@@ -1,5 +1,9 @@
 -- #if BEFORE 4.0.1
 if true then
+--- Adds the default post-Cataclysm timeline when none is supplied.
+---@generic T: ATTObject
+---@param t T # Object to update.
+---@return T # The same object.
 local helper = function(t)
 	if not t.timeline then t.timeline = { ADDED_4_0_1 }; end
 	return t;
@@ -16,6 +20,16 @@ else
 -- The helper function will link the respective providers to the quests in their respective zones.
 -- I don't want a root header for this, instead, use the objectID to look it up.
 ----------------------------------------------------------------------------------------------
+--- Objects used for board providers accept individual coordinate tuples.
+---@class ATTWarBoardObject: ATTObject
+---@field coord? Coord # Single coordinate tuple.
+---@field coords? Coord[] # List of coordinate tuples.
+
+--- Adds board providers and coordinates selected by a quest's maps.
+---@generic T: ATTWarBoardObject
+---@param boards table<UiMapID, ATTWarBoardObject> # Board data indexed by map ID.
+---@param t T # Quest object; must have a quest ID.
+---@return T # The same quest object.
 local helper = function(boards, t)	-- Assigns board provider data based on the maps assigned to the object.
 	-- #if BEFORE 4.0.1
 	-- Pre-Cata, ignore all war board information.
@@ -439,6 +453,10 @@ local HEROS_CALL_BOARDS = {
 	}),
 	-- #endif
 };
+--- Adds Hero's Call board providers to a quest.
+---@generic T: ATTWarBoardObject
+---@param t T # Quest object with a quest ID.
+---@return T # The same quest object.
 heroscall = function(t)	-- Assigns Hero's Call Board provider data based on the maps assigned to the object.
 	return helper(HEROS_CALL_BOARDS, t);
 end
@@ -619,6 +637,10 @@ local WARCHIEFS_COMMAND_BOARDS = {
 	}),
 	-- #endif
 };
+--- Adds Warchief's Command board providers to a quest.
+---@generic T: ATTWarBoardObject
+---@param t T # Quest object with a quest ID.
+---@return T # The same quest object.
 warchiefscommand = function(t)	-- Assigns Warchief's Command Board provider data based on the maps assigned to the object.
 	return helper(WARCHIEFS_COMMAND_BOARDS, t);
 end

@@ -1,4 +1,5 @@
 -- Create a Phase. Returns a UNIQUE ID, starting at 1.
+--- Initializes phase registration, identifier allocation, and localized formatting.
 (function()
 --if not NextPhaseID then
 	NextPhaseID = 1;
@@ -15,6 +16,34 @@ local defaultStateColors = {
 	"FFAAFFAA",
 	"FFAAFFAA",
 };
+--- A phase definition consumed by the parser's phase registry.
+---@class ATTPhaseDefinition
+---@field text string|table<string, string> # Display text; a string requires an explicit readable key.
+---@field readable? string # Stable key; derived from English text when omitted.
+---@field constant? string # Optional exported constant name.
+---@field phaseID? ATTPhaseID # Explicit phase ID, otherwise assigned during registration.
+---@field state? integer # State selecting the default description color.
+---@field color? string # Override for the description color.
+---@field description? table<string, string> # Localized descriptions.
+---@field lore? table<string, string> # Localized lore.
+---@field minimumBuildVersion? integer # Earliest applicable build.
+---@field buildVersion? integer # Specific build associated with the phase.
+---@field originalTimelines? string[] # Original patch-version strings.
+---@field release? integer # Release timestamp.
+---@field export? boolean # Whether the phase is exported.
+---@field filepath? string # Source file recorded by registration.
+
+--- Classic phases require localized text for formatted descriptions and lore.
+---@class ATTClassicPhaseDefinition: ATTPhaseDefinition
+---@field text table<string, string> # Locale-indexed names including English.
+
+--- Season of Discovery phases require a minimum build version.
+---@class ATTSodPhaseDefinition: ATTClassicPhaseDefinition
+---@field minimumBuildVersion integer # Minimum build used for flavor conversion.
+
+--- Validates and registers a phase, allocating an ID if necessary.
+---@param data? ATTPhaseDefinition # Phase definition, or nil for an invalid request.
+---@return ATTPhaseID|nil # Assigned ID, or nil when validation fails.
 createPhase = function(data)
 	if not data then
 		print("INVALID PHASE: You must pass data into the createPhase function.");
@@ -478,6 +507,9 @@ local defaultLore = {
 	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
 };
 -- #if ANYCLASSIC
+--- Prepares a Classic phase or returns its existing ID on other clients.
+---@param data ATTClassicPhaseDefinition # Classic phase with localized text.
+---@return ATTPhaseID|nil # Registered or existing ID; nil when unavailable.
 local function createClassicPhase(data)
 	local description = data.description;
 	if not description then
@@ -512,10 +544,15 @@ local function createClassicPhase(data)
 	return createPhase(data);
 end
 -- #else
+--- Prepares a Classic phase or returns its existing ID on other clients.
+---@param data ATTClassicPhaseDefinition # Classic phase with localized text.
+---@return ATTPhaseID|nil # Registered or existing ID; nil when unavailable.
 local function createClassicPhase(data)
 	return data.phaseID;
 end
 -- #endif
+--- Converts legacy phase tuples into phase definitions.
+---@param phases table<ATTPhaseID, table> # Tuples keyed by phase ID, including text and optional build metadata.
 local function convertClassicPhases(phases)
 	for phaseID,phaseData in pairs(phases) do
 		local data = {
@@ -1184,6 +1221,9 @@ CurrentClassicExpansion = {
 		cn = "探索赛季",
 	},
 };
+--- Adjusts a Season of Discovery phase for the active flavor and delegates registration.
+---@param data ATTSodPhaseDefinition # Phase including its minimum build.
+---@return ATTPhaseID|nil # Registered or existing ID; nil when unavailable.
 local function createClassicPhaseForSOD(data)
 	-- #if NOT SEASON_OF_DISCOVERY
 	-- If for some reason the du-*ehem* "smartest individuals" at Blizzard decide to copy this bloat to other versions, you'll want to remove this if statement and then burst into raging tears. Godspeed.  - Crieve

@@ -1,5 +1,8 @@
 local Items = ItemDBConditional;
 local MountDB = MountDB;
+--- Registers a mount and, when positive, its source item.
+---@param itemID ItemID # Source item ID, or zero when absent.
+---@param spellID MountID # Mount spell ID; nonpositive values are skipped.
 local i = function(itemID, spellID)
 	local item = { mountID = spellID, ignoreBonus = true, _wipe = { "spellID" } }
 	if itemID > 0 then
