@@ -47,8 +47,14 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 						sym = SYM.SHADOWLANDS.ALL_CONDUITS,
 					}),
 				}, {	-- Friendly
-					i(284498, { cost = { { "c", ANIMA, 300 } } }),	-- Maldraxxi Anima Crystal (DECOR!)
-					i(284506, { cost = { { "c", ANIMA, 300 } } }),	-- Suspended Lich Scroll (DECOR!)
+					i(284498, {	-- Maldraxxi Anima Crystal (DECOR!)
+						cost = { { "c", ANIMA, 300 } },
+						timeline = { ADDED_12_1_5 },
+					}),
+					i(284506, {	-- Suspended Lich Scroll (DECOR!)
+						cost = { { "c", ANIMA, 300 } },
+						timeline = { ADDED_12_1_5 },
+					}),
 				}, {	-- Honored
 					i(184741),	-- Apprentice Necromancer's Gloves
 					i(184740),	-- Fortified Jawcrackers

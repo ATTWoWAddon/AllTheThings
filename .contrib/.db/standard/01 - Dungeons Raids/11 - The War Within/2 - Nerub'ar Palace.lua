@@ -357,28 +357,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				ach(40245, {	-- Heroic: Nerub-ar Palace
 					crit(67572, {	-- Ulgrax the Devourer
-						_encounter = { ULGRAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ULGRAX, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67573, {	-- The Bloodborne Horror
-						_encounter = { BLOODBOUND_HORROR, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { BLOODBOUND_HORROR, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67574, {	-- Sikran, Captain of the Sureki
-						_encounter = { SIKRAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SIKRAN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67575, {	-- Rasha'nan
-						_encounter = { RASHANAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { RASHANAN, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67576, {	-- Broodtwister Ovi'nax
-						_encounter = { OVINAX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { OVINAX, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67577, {	-- Nexus-Princess Ky'veza
-						_encounter = { KYVEZA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { KYVEZA, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67578, {	-- The Silken Court
-						_encounter = { SILKEN_COURT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { SILKEN_COURT, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(67579, {	-- Queen Ansurek
-						_encounter = { ANSUREK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { ANSUREK, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(40246, {	-- Mythic: Nerub-ar Palace

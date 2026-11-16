@@ -3231,6 +3231,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 						cost = { { "g", 10000000 } },	-- 1,000g
 					}),
 					i(246108, {	-- Embellished Dwarven Tome (DECOR!)
+						description = "You can receive a faction rep discount by purchasing this item from |cFFFFFFFFCraw MacGraw|r.",
 						minReputation = { FACTION_WILDHAMMER_CLAN, HONORED },
 						cost = { { "g", 20000000 } },	-- 2,000g
 					}),
@@ -3238,6 +3239,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 						cost = { { "g", 15000000 } },	-- 1,500g
 					}),
 					i(246425, {	-- Round Dwarven Table (DECOR!)
+						description = "You can receive a faction rep discount by purchasing this item from |cFFFFFFFFCraw MacGraw|r.",
 						minReputation = { FACTION_WILDHAMMER_CLAN, FRIENDLY },
 						cost = { { "g", 4000000 } },	-- 400g
 					}),

@@ -361,28 +361,28 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				ach(41223, {	-- Heroic: Liberation of Undermine
 					crit(71704, {	-- Vexie and the Geargrinders
-						_encounter = { VEXIE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { VEXIE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71705, {	-- Cauldron of Carnage
-						_encounter = { CARNAGE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { CARNAGE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71706, {	-- Rik Reverb <Official Gallywix Hype Man>
-						_encounter = { RIK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { RIK, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71707, {	-- Stix Bunkjunker
-						_encounter = { STIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { STIX, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71708, {	-- Sprocketmonger Lockenstock
-						_encounter = { LOCKENSTOCK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { LOCKENSTOCK, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71709, {	-- One-Armed Bandit
-						_encounter = { BANDIT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { BANDIT, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71710, {	-- Mug'Zee, Heads of Security
-						_encounter = { MUGZEE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { MUGZEE, DIFFICULTY.RAID.HEROIC },
 					}),
 					crit(71711, {	-- Chrome King Gallywix
-						_encounter = { GALLYWIX, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						_encounter = { GALLYWIX, DIFFICULTY.RAID.HEROIC },
 					}),
 				}),
 				ach(41224, {	-- Mythic: Liberation of Undermine
