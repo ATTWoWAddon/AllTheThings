@@ -1892,6 +1892,22 @@ local createQuest = app.CreateClass("Quest", "questID", {
 );
 
 app.CreateQuest = createQuest;
+-- Icon for creature objectives: Questie's slay icon when Questie is loaded, otherwise a sword (INV_Sword_04)
+local function GetCreatureObjectiveIcon()
+	local questie = _G.Questie
+	local icons = questie and questie.icons
+	return (icons and icons.slay) or 135274
+end
+-- Whether an objective is tied to a creature (an NPC provider or a cr/crs list)
+local function ObjectiveHasCreature(t)
+	if t.crs or t.cr then return true end
+	local providers = t.providers
+	if providers then
+		for i=1,#providers do
+			if providers[i][1] == "n" then return true end
+		end
+	end
+end
 app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	name = function(t)
 		local questID = t.questID;
@@ -1910,6 +1926,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	icon = function(t)
 		return app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
+			or (ObjectiveHasCreature(t) and GetCreatureObjectiveIcon())
 			or t.parent.icon or 311226;
 	end,
 	model = function(t)
