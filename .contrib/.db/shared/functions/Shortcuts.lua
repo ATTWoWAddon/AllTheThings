@@ -1323,6 +1323,15 @@ icon = function(path)
 	print("ICON: " .. path);
 	error("The icon function has been deprecated");
 end
+-- LuaLS generic-wrapper workaround (3.19.2):
+-- The bound on T already expresses the intended input constraint; a T-only
+-- parameter is valid. LuaLS does not consistently use that bound as field
+-- context for table literals. The concrete alternatives below restore field
+-- checks while retaining subtype inference. They compensate for incomplete
+-- generic support; ATT's runtime and generic syntax do not require them.
+-- Recheck with T alone after LuaLS changes; remove these alternatives only
+-- when subtype inference and object/child-array field checks both pass.
+-- See https://luals.github.io/wiki/annotations/#generic
 --- Applies an event ID to all nested data.
 ---@generic T: ATTObject|ATTObjectArray
 ---@param eventID EventID # Event identifier to propagate through the `e` field.
@@ -1500,6 +1509,7 @@ bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
 	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns a Champion's Seal cost and the Classic Wrath phase-two requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Champion's Seals required.
@@ -1569,6 +1579,7 @@ defilersscourgestone = function(cost, item)				-- Assigns a Defiler's Scourgesto
 	-- #endif
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Conquest cost before Cataclysm and the Classic Wrath phase-two requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Conquest required before patch 4.0.1.
@@ -1580,6 +1591,7 @@ emoc = function(cost, item)								-- Assigns an Emblem of Conquest cost before 
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Frost cost before Cataclysm and the Classic Wrath phase-four requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Frost required before patch 4.0.1.
@@ -1591,6 +1603,7 @@ emof = function(cost, item)								-- Assigns an Emblem of Frost cost before Cat
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_FOUR, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Heroism cost before Cataclysm and the Classic Wrath phase-one requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Heroism required before patch 4.0.1.
@@ -1602,6 +1615,7 @@ emoh = function(cost, item)								-- Assigns an Emblem of Heroism cost before C
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_ONE, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Triumph cost before Cataclysm and the Classic Wrath phase-three requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Triumph required before patch 4.0.1.
@@ -1613,6 +1627,7 @@ emot = function(cost, item)								-- Assigns an Emblem of Triumph cost before C
 	-- #endif
 	return applyclassicphase(WRATH_PHASE_THREE, item);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns an Emblem of Valor cost before Cataclysm and the Classic Wrath phase-one requirement.
 ---@generic T: ATTObject
 ---@param cost number # Number of Emblems of Valor required before patch 4.0.1.
@@ -1745,6 +1760,7 @@ venture = function(cost, item)							-- Assigns a Venture Coin currency cost bef
 	-- #endif
 	return item;
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Assigns a Champion's Writ cost and the Classic Wrath phase-two requirement.
 ---@generic T: ATTObject
 ---@param item T|ATTObject # Object receiving a cost of one Champion's Writ and Classic Wrath phase 2.
@@ -1964,6 +1980,7 @@ cl = function(id, spec, t)								-- Create a CHARACTER CLASS Object
 	end;
 	return struct("classID", id, t);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content to require achieving Challenge Master FoS (Realm Best times for Challenge Modes in MoP and WoD).
 ---@generic T: ATTObject|ATTObjectArray
 ---@param t T|ATTObject|ATTObjectArray # Object tree or child array receiving the Challenge Master requirement.
@@ -2102,6 +2119,7 @@ end
 e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	return struct("encounterID", id, t);
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content as requiring Elite PvP gameplay.
 ---@generic T: ATTObject|ATTObjectArray
 ---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Elite PvP requirement.
@@ -2681,6 +2699,7 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 	end
 	print("Could not find a group with an objectID value");
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Pet Battle (bubbleDown pb filter).
 ---@generic T: ATTObject|ATTObjectArray
 ---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the pet-battle filter.
@@ -2703,6 +2722,7 @@ professionnode = function(id, t)						-- Create a PROFESSION NODE Object
 	return struct("professionnodeID", id, t);
 end
 pn = professionnode;
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Flag all nested content as requiring PvP gameplay.
 ---@generic T: ATTObject|ATTObjectArray
 ---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the PvP requirement.
@@ -2788,6 +2808,7 @@ sensemble = function(spellID, t)						-- Create an Ensemble directly from SpellI
 	i.type = "ensembleSpellID"
 	return i
 end
+-- LuaLS generic-wrapper workaround: see the note above applyevent.
 --- Skyriding (bubbleDown sr filter).
 ---@generic T: ATTObject|ATTObjectArray
 ---@param t T|ATTObject|ATTObjectArray # Object or child groups whose nested content receives the Skyriding requirement.
