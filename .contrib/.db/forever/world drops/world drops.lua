@@ -3655,6 +3655,51 @@ root(ROOTS.WorldDrops, {
 			i(8387),	-- Pattern: Big Voodoo Mask (RECIPE!)
 			i(8389),	-- Pattern: Big Voodoo Pants (RECIPE!)
 			i(8386),	-- Pattern: Big Voodoo Robe (RECIPE!)
+			i(252771, {	-- Pattern: Brawler's Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252792, {	-- Pattern: Brawler's Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15737),	-- Pattern: Chimeric Boots (RECIPE!)
 			i(15746),	-- Pattern: Chimeric Leggings (RECIPE!)
 			i(15755),	-- Pattern: Chimeric Vest (RECIPE!)
@@ -3662,6 +3707,51 @@ root(ROOTS.WorldDrops, {
 			i(7360),	-- Pattern: Dark Leather Gloves (RECIPE!)
 			i(4296),	-- Pattern: Dark Leather Shoulders (RECIPE!)
 			i(2409),	-- Pattern: Dark Leather Tunic (RECIPE!)
+			i(252773, {	-- Pattern: Defender's Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252794, {	-- Pattern: Defender's Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7452),	-- Pattern: Dusky Boots (RECIPE!)
 			i(7449),	-- Pattern: Dusky Leather Leggings (RECIPE!)
 			i(2406),	-- Pattern: Fine Leather Boots (RECIPE!)
@@ -3750,7 +3840,145 @@ root(ROOTS.WorldDrops, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
+			i(252775, {	-- Pattern: Stormrider's Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252796, {	-- Pattern: Stormrider's Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
+			i(252774, {	-- Pattern: Totemic Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252795, {	-- Pattern: Totemic Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252772, {	-- Pattern: Trapper's Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252793, {	-- Pattern: Trapper's Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(252845, {	-- Pattern: Warden's Leather Shoes (RECIPE!)
@@ -3765,6 +3993,52 @@ root(ROOTS.WorldDrops, {
 			i(15757),	-- Pattern: Wicked Leather Pants (RECIPE!)
 			i(12691),	-- Pattern: Wildthorn Mail (RECIPE!)
 			i(12716),	-- Pattern: Helm of the Great Chief (RECIPE!)
+			i(252776, {	-- Pattern: Wisdom's Leather Armor (RECIPE!)
+				crs = {
+					643,	-- Sneed
+					644,	-- Rhahk'Zor <The Foreman>
+					645,	-- Cookie <The Ship's Cook>
+					646,	-- Mr. Smite <The Ship's First Mate>
+					647,	-- Captain Greenskin
+					1763,	-- Gilnid <The Smelter>
+					3586,	-- Miner Johnson
+					3653,	-- Kresh
+					3669,	-- Lord Cobrahn
+					3671,	-- Lady Anacondra
+					3864,	-- Fel Steed
+					3865,	-- Shadow Charger
+					3914,	-- Rethilgore <The Cell Keeper>
+					5912,	-- Deviate Faerie Dragon
+					11517,	-- Oggleflint <Ragefire Chieftain>
+					11518,	-- Jergosh the Invoker
+					11519,	-- Bazzalan
+					11520,	-- Taragaman the Hungerer
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252797, {	-- Pattern: Wisdom's Leather Pants (RECIPE!)
+				crs = {
+					639,	-- Edwin VanCleef <Defias Kingpin>
+					1696,	-- Targorr the Dread
+					3654,	-- Mutanus the Devourer
+					3670,	-- Lord Pythas
+					3673,	-- Lord Serpentis
+					3674,	-- Skum
+					3865,	-- Shadow Charger
+					3872,	-- Deathsworn Captain
+					3886,	-- Razorclaw the Butcher
+					3887,	-- Baron Silverlaine
+					3927,	-- Wolf Master Nandos
+					4274,	-- Fenrus the Devourer
+					4275,	-- Archmage Arugal
+					4278,	-- Commander Springvale
+					4279,	-- Odo the Blindwatcher
+					4831,	-- Lady Sarevess
+					4887,	-- Ghamoo-ra
+					5775,	-- Verdan the Everliving
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders (RECIPE!)

@@ -22,18 +22,6 @@ root(ROOTS.Unsorted, {
 	i(251353),	-- Plans: Acolyte's Chain Helm
 	i(251354),	-- Plans: Crusader's Chain Helm
 	i(251395),	-- Plans: Shining Mithril Helm
-	i(252771),	-- Pattern: Brawler's Leather Armor
-	i(252772),	-- Pattern: Trapper's Leather Armor
-	i(252773),	-- Pattern: Defender's Leather Armor
-	i(252774),	-- Pattern: Totemic Leather Armor
-	i(252775),	-- Pattern: Stormrider's Leather Armor
-	i(252776),	-- Pattern: Wisdom's Leather Armor
-	i(252792),	-- Pattern: Brawler's Leather Pants
-	i(252793),	-- Pattern: Trapper's Leather Pants
-	i(252794),	-- Pattern: Defender's Leather Pants
-	i(252795),	-- Pattern: Totemic Leather Pants
-	i(252796),	-- Pattern: Stormrider's Leather Pants
-	i(252797),	-- Pattern: Wisdom's Leather Pants
 	i(252814),	-- Pattern: Brawler's Leather Helm
 	i(252815),	-- Pattern: Trapper's Leather Helm
 	i(252816),	-- Pattern: Defender's Leather Helm

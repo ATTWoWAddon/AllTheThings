@@ -112,11 +112,13 @@ i(8386, 10520);		-- Big Voodoo Robe
 i(7289, 9070);		-- Black Whelp Cloak
 i(252761, 1255146);	-- Black Whelp Slippers
 i(20576, 24940);	-- Black Whelp Tunic
+i(252771, 1255136);	-- Brawler's Leather Armor
 i(252765, 1255142);	-- Brawler's Leather Belt
 i(252786, 1255121);	-- Brawler's Leather Boots
 i(252777, 1255130);	-- Brawler's Leather Gloves
 i(252798, 1255109);	-- Brawler's Leather Hood
 i(252820, 1255087);	-- Brawler's Leather Legguards
+i(252792, 1255115);	-- Brawler's Leather Pants
 i(252805, 1255102);	-- Brawler's Leather Tunic
 i(276937, 1301430);	-- Cloudy Gustwoven Belt
 i(276939, 1301432);	-- Cloudy Gustwoven Boots
@@ -139,11 +141,13 @@ i(252762, 1255145);	-- Dark Leather Boots
 i(7360, 3765);		-- Dark Leather Gloves
 i(4296, 3769);		-- Dark Leather Shoulders
 i(2409, 2169);		-- Dark Leather Tunic
+i(252773, 1255134);	-- Defender's Leather Armor
 i(252767, 1255140);	-- Defender's Leather Belt
 i(252788, 1255119);	-- Defender's Leather Boots
 i(252779, 1255128);	-- Defender's Leather Gloves
 i(252800, 1255107);	-- Defender's Leather Hood
 i(252822, 1255085);	-- Defender's Leather Kilt
+i(252794, 1255113);	-- Defender's Leather Pants
 i(252807, 1255100);	-- Defender's Leather Tunic
 i(6476, 7955);		-- Deviate Scale Belt
 i(6474, 7953);		-- Deviate Scale Cloak
@@ -277,22 +281,26 @@ i(252922, 1254985);	-- Stalker's Mail Belt
 i(252904, 1255003);	-- Stalker's Mail Bracers
 i(252910, 1254997);	-- Stalker's Mail Sabatons
 i(252900, 1255007);	-- Stalker's Mail Shoulder
+i(252775, 1255132);	-- Stormrider's Leather Armor
 i(252769, 1255138);	-- Stormrider's Leather Belt
 i(252790, 1255117);	-- Stormrider's Leather Boots
 i(252781, 1255126);	-- Stormrider's Leather Gloves
 i(252802, 1255105);	-- Stormrider's Leather Hood
 i(252824, 1255083);	-- Stormrider's Leather Kilt
+i(252796, 1255111);	-- Stormrider's Leather Pants
 i(252809, 1255098);	-- Stormrider's Leather Tunic
 i(252933, 1254974);	-- Supple Scorpid Vest
 i(7453, 9208);		-- Swift Boots
 i(273096, 1263031);	-- Tanning Rack
 i(5788, 6704);		-- Thick Murloc Armor
 i(252877, 1255030);	-- Tooled Leather Armor
+i(252774, 1255133);	-- Totemic Leather Armor
 i(252768, 1255139);	-- Totemic Leather Belt
 i(252789, 1255118);	-- Totemic Leather Boots
 i(252780, 1255127);	-- Totemic Leather Gloves
 i(252801, 1255106);	-- Totemic Leather Hood
 i(252823, 1255084);	-- Totemic Leather Leggings
+i(252795, 1255112);	-- Totemic Leather Pants
 i(252808, 1255099);	-- Totemic Leather Tunic
 i(8399, 10554);		-- Tough Scorpid Boots
 i(8397, 10533);		-- Tough Scorpid Bracers
@@ -301,11 +309,13 @@ i(8398, 10542);		-- Tough Scorpid Gloves
 i(8402, 10570);		-- Tough Scorpid Helm
 i(8401, 10568);		-- Tough Scorpid Leggings
 i(8400, 10564);		-- Tough Scorpid Shoulders
+i(252772, 1255135);	-- Trapper's Leather Armor
 i(252766, 1255141);	-- Trapper's Leather Belt
 i(252787, 1255120);	-- Trapper's Leather Boots
 i(252778, 1255129);	-- Trapper's Leather Gloves
 i(252799, 1255108);	-- Trapper's Leather Hood
 i(252821, 1255086);	-- Trapper's Leather Legguards
+i(252793, 1255114);	-- Trapper's Leather Pants
 i(252806, 1255101);	-- Trapper's Leather Tunic
 i(8385, 10509);		-- Turtle Scale Gloves
 i(252829, 1255078);	-- Warden's Leather Belt
@@ -332,11 +342,13 @@ i(273971, 1292940);	-- Wildstalker's Greaves
 i(273968, 1292937);	-- Wildstalker's Legguards
 i(273970, 1292939);	-- Wildstalker's Spaulders
 i(34262, 44953);	-- Winter Boots
+i(252776, 1255131);	-- Wisdom's Leather Armor
 i(252770, 1255137);	-- Wisdom's Leather Belt
 i(252791, 1255116);	-- Wisdom's Leather Boots
 i(252782, 1255125);	-- Wisdom's Leather Gloves
 i(252803, 1255104);	-- Wisdom's Leather Hood
 i(252825, 1255082);	-- Wisdom's Leather Leggings
+i(252797, 1255110);	-- Wisdom's Leather Pants
 i(252810, 1255097);	-- Wisdom's Leather Tunic
 i(276542, 1299914);	-- Spiritcaller Kilt
 i(276543, 1299915);	-- Spiritcaller Gloves
@@ -361,30 +373,6 @@ i(252845, 1255062);	-- Warden's Leather Shoes
 i(252879, 1255028);	-- Wicked Leather Boots
 --- UNKNOWN ---
 --[[
-r(1255110),	-- Wisdom's Leather Pants
-i(252797),	-- TODO: Item name not known yet.
-r(1255111),	-- Stormrider's Leather Pants
-i(252796),	-- TODO: Item name not known yet.
-r(1255112),	-- Totemic Leather Pants
-i(252795),	-- TODO: Item name not known yet.
-r(1255113),	-- Defender's Leather Pants
-i(252794),	-- TODO: Item name not known yet.
-r(1255114),	-- Trapper's Leather Pants
-i(252793),	-- TODO: Item name not known yet.
-r(1255115),	-- Brawler's Leather Pants
-i(252792),	-- TODO: Item name not known yet.
-r(1255131),	-- Wisdom's Leather Armor
-i(252776),	-- TODO: Item name not known yet.
-r(1255132),	-- Stormrider's Leather Armor
-i(252775),	-- TODO: Item name not known yet.
-r(1255133),	-- Totemic Leather Armor
-i(252774),	-- TODO: Item name not known yet.
-r(1255134),	-- Defender's Leather Armor
-i(252773),	-- TODO: Item name not known yet.
-r(1255135),	-- Trapper's Leather Armor
-i(252772),	-- TODO: Item name not known yet.
-r(1255136),	-- Brawler's Leather Armor
-i(252771),	-- TODO: Item name not known yet.
 r(1254968),	-- Black Dragonscale Helm
 r(1254969),	-- Blue Dragonscale Helm
 r(1255021),	-- Blue Suede Belt
