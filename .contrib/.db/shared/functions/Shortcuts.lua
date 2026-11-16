@@ -143,6 +143,7 @@
 ---@field groups? ATTObjectArray # Nested parser objects.
 ---@field g? ATTObjectArray # Legacy alias for `groups`; normalized by parser helpers.
 ---@field type? string # Parser object type override.
+---@field nomerge? boolean # Prevents merging with matching objects when true.
 ---@field text? string|ATTLocalizationStringTable # Display/localization text.
 ---@field description? string|ATTLocalizationStringTable # Description/localization data.
 ---@field name? string # Display name.
@@ -1319,9 +1320,11 @@ applyevent = function(eventID, data)
 end
 -- #if ANYCLASSIC
 --- Applies a Classic release phase to the provided data for Classic builds.
+---@generic T: ATTObject|ATTObjectArray|nil
+---@overload fun(phase?: ATTPhaseID): nil # Returns nil when the object is omitted.
 ---@param phase? ATTPhaseID # Classic release phase to assign, or nil.
----@param t? ATTObject|ATTObjectArray # Object tree receiving the Classic phase, or nil.
----@return ATTObject|ATTObjectArray|nil # Updated object, or nil when omitted.
+---@param t T # Object tree receiving the Classic phase, or nil.
+---@return T # The original input, including nil.
 applyclassicphase = function(phase, t)
 	if t then
 		local data = { phase = phase };
@@ -1347,9 +1350,11 @@ ifclassic = function(classicValue, value)
 end
 -- #else
 --- Applies a Classic release phase to the provided data for Classic builds.
+---@generic T: ATTObject|ATTObjectArray|nil
+---@overload fun(phase?: ATTPhaseID): nil # Returns nil when the object is omitted.
 ---@param phase? ATTPhaseID # Classic release phase to assign, or nil.
----@param data ATTObject|ATTObjectArray # Object tree receiving the Classic phase, or returned unchanged in other builds.
----@return ATTObject|ATTObjectArray # The input returned unchanged in non-Classic builds.
+---@param data T # Object tree returned unchanged in non-Classic builds, or nil.
+---@return T # The original input, including nil.
 applyclassicphase = function(phase, data)
 	return data;
 end
