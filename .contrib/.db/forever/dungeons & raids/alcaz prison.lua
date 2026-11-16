@@ -249,8 +249,14 @@ instanceroot(2994, {	-- Alcaz Prison
 				cost = { { "i", 279450, 6 } },	-- 6x Fractured Insignia
 			}),
 		}),
-		-- TODO: Overseer Wrex's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.
-		--e(3403),	-- Overseer Wrex
+		e(3403, {	-- Overseer Wrex
+			creatureID = 255391,	-- Overseer Wrex
+			groups = {
+				i(276732),	-- Alcaz Willcrusher
+				i(276733),	-- Grips of Control
+				i(276734),	-- Wrex's Pinky Ring
+			},
+		}),
 		e(3410, {	-- Tidemistress Ca'zass
 			creatureID = 255997,	-- Tidemistress Ca'zass
 			groups = {
