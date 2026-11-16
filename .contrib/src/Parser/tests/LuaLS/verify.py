@@ -5,6 +5,7 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -29,6 +30,8 @@ def file_path(uri):
         raise RuntimeError(f"Unexpected report URI: {uri}")
     # Preserve a UNC authority on Windows and decode URL escapes before comparing.
     path = ("//" + parts.netloc if parts.netloc else "") + parts.path
+    # Windows detects drive letters before decoding URL escapes.
+    path = re.sub(r"^/([A-Za-z])%3[aA](?=/|$)", r"/\1:", path)
     return Path(url2pathname(path)).resolve()
 
 
