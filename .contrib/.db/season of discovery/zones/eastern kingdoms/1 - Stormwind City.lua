@@ -2058,7 +2058,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				lvl = 38,
 			}),
-			
+
 			q(1938, {	-- Ur's Treatise on Shadow Magic
 				sourceQuest = 1939,	-- High Sorcerer Andromath
 				qg = 5694,	-- High Sorcerer Andromath

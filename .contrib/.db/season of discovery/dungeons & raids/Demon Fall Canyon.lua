@@ -49,9 +49,9 @@ instanceroot(2784, applyclassicphase(SOD_PHASE_FOUR, {	-- Demon Fall Canyon
 					groups = {
 						recipe(18540),	-- Ritual of Doom
 					},
-				}),	
+				}),
 			},
-		})), 
+		})),
 		n(227140, {	-- Pyranis
 			i(228090),	-- Cenarion Ritual Dagger
 			i(228092),	-- Druidic Mantle

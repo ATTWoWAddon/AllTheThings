@@ -59,11 +59,13 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				coord = { 48.6, 48.6, WESTFALL },
 				classes = { ROGUE },
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					590,	-- Defias Looter
 					121,	-- Defias Pathstalker
 					589,	-- Defias Pillager
 					 95,	-- Defias Smuggler
 					504,	-- Defias Trapper
+					-- editorconfig-checker-enable
 				},
 				groups = {
 					i(209030, {	-- Equipment Stash Key
@@ -1088,12 +1090,14 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				},
 				classes = { WARRIOR },
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					449,	-- Defias Knuckleduster
 					590,	-- Defias Looter
 					589,	-- Defias Pillager
 					121,	-- Defias Pathstalker
 					 95,	-- Defias Smuggler
 					504,	-- Defias Trapper
+					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
@@ -1118,11 +1122,13 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 			}),
 			i(1274, {	-- Hops
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					573,	-- Foe Reaper 4000
 					 36,	-- Harvest Golem
 					115,	-- Harvest Reaper
 					114,	-- Harvest Watcher
 					480,	-- Rusty Harvest Golem
+					-- editorconfig-checker-enable
 				},
 			}),
 			applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
@@ -1166,12 +1172,14 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				},
 				classes = { DRUID },
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					449,	-- Defias Knuckleduster
 					590,	-- Defias Looter
 					589,	-- Defias Pillager
 					121,	-- Defias Pathstalker
 					 95,	-- Defias Smuggler
 					504,	-- Defias Trapper
+					-- editorconfig-checker-enable
 				},
 			})),
 			i(732, {	-- Okra
@@ -1251,7 +1259,9 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 					{ 47.6, 67.6, WESTFALL },
 				},
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 36,	-- Harvest Golem
+					-- editorconfig-checker-enable
 				},
 			}),
 			applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
@@ -1295,10 +1305,12 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 					{ 63.6, 60.2, WESTFALL },
 				},
 				crs = {
+					-- editorconfig-checker-disable -- Preserve numeric alignment.
 					 36,	-- Harvest Golem
 					115,	-- Harvest Reaper
 					114,	-- Harvest Watcher
 					480,	-- Rusty Harvest Golem
+					-- editorconfig-checker-enable
 				},
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA

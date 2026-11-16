@@ -2980,7 +2980,7 @@ root("ItemSpeciesDB", {
 	[141530] = {
 		petTypeID = 8,
 	},
-	
+
 	-- Pets added to Classic exclusively
 	[209877] = {
 		petTypeID = 7,

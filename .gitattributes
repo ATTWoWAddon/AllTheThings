@@ -191,3 +191,10 @@ docs export-ignore
 # Preserve generated Forever Lua output in CRLF.
 /.contrib/.db/forever/.config/exploration/ExplorationPositions.lua text eol=crlf
 "/.contrib/.db/forever/.config/exports/Skill Level Requirements.lua" text eol=crlf
+
+# Season of Discovery Lua data files
+"/.contrib/.db/season of discovery/*.lua" text eol=lf
+"/.contrib/.db/season of discovery/**/*.lua" text eol=lf
+# Preserve generated Season of Discovery Lua outputs in CRLF.
+"/.contrib/.db/season of discovery/00 - Item DB/.dynamic/01 - Classic SOD.lua" text eol=crlf
+"/.contrib/.db/season of discovery/profession db/Skill Level Requirements.lua" text eol=crlf
