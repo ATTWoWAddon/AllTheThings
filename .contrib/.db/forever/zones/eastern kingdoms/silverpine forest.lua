@@ -703,9 +703,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				races = HORDE_ONLY,
 				lvl = 10,
 			}),
-			q(78699, {	-- The Eye of Bhossca
+			q(78676, {	-- The Eye of Bhossca (1/2)
 				sourceQuest = 78307,	-- The Horn of Xelthos (2/2)
 				description = "After completing The Horn of Xelthos, reach level 30 and enter a major city to receive a letter from 'C'. You can then pick this up at the Dead Drop in Silverpine Forest.",
+				provider = { "o", 410369 },	-- Dead Drop
+				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 25,
+				groups = {
+					objective(1, {	-- 0/1 Eye of Bhossca
+						provider = { "i", 210953 },	-- Eye of Bhossca
+					}),
+				},
+			}),
+			q(78699, {	-- The Eye of Bhossca (2/2)
+				sourceQuest = 78676,	-- The Eye of Bhossca (1/2)
 				provider = { "o", 410369 },	-- Dead Drop
 				coord = { 47.1, 71.1, MAP.SILVERPINE_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
