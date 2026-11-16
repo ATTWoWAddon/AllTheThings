@@ -1,0 +1,43 @@
+{
+    "lua_version": "5.1",
+    "lua_ls_version": "3.19.2",
+    "coordinates": "1-based display coordinates derived from LSP UTF-16 start positions; tabs count as one character",
+    "cases": {
+        "raw": [
+            {
+                "file": "phase-text.lua",
+                "code": "duplicate-index",
+                "line": 3,
+                "column": 3
+            },
+            {
+                "file": "phase-text.lua",
+                "code": "duplicate-index",
+                "line": 5,
+                "column": 3
+            },
+            {
+                "file": "phase-text.lua",
+                "code": "assign-type-mismatch",
+                "line": 19,
+                "column": 7
+            }
+        ],
+        "after-df": [
+            {
+                "file": "phase-text.lua",
+                "code": "assign-type-mismatch",
+                "line": 19,
+                "column": 7
+            }
+        ],
+        "before-df": [
+            {
+                "file": "phase-text.lua",
+                "code": "assign-type-mismatch",
+                "line": 19,
+                "column": 7
+            }
+        ]
+    }
+}

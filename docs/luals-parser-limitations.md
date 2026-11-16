@@ -101,3 +101,24 @@ assignments. The resulting line numbers can differ from those in the original
 files, and the current processing path does not emit a source map. Diagnostics
 on processed text must not be assumed to point to the corresponding original
 file and line.
+
+## Conditional code in static analysis
+
+The Parser selects only one branch of a conditional, while LuaLS sees the
+unprocessed source as ordinary Lua. For example,
+[`Phases.lua`](../.contrib/.db/shared/lib/Constants/Phases.lua#L304-L318)
+assigns the `en` key in both sides of an `AFTER DF` conditional. In a small
+[isolated fixture](../.contrib/src/Parser/tests/LuaLS/README.md), LuaLS 3.19.2
+reports two `duplicate-index` diagnostics on the raw slice. Each manually
+selected branch removes those two diagnostics while retaining an intentional
+`assign-type-mismatch` control. The selected views are hand-edited examples,
+not output from the Parser; the experiment does not validate preprocessing.
+The fixture enables diagnostics independently of the repository's normal
+configuration, which disables `duplicate-index`.
+
+Conditional definitions can also affect inferred behavior: for example,
+[`Shortcuts.lua`](../.contrib/.db/shared/functions/Shortcuts.lua#L1348-L1395)
+defines Classic and non-Classic implementations of helpers in mutually exclusive
+branches. Treating both branches as ordinary Lua may infer the wrong behavior
+for a particular configuration. This is a source-based risk; the fixture does
+not demonstrate a LuaLS diagnostic for those helpers.

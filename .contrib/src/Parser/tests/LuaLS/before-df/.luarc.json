@@ -1,0 +1,10 @@
+{
+    "runtime.version": "Lua 5.1",
+    "diagnostics.enable": true,
+    "workspace.checkThirdParty": false,
+    "diagnostics.disable": [],
+    "diagnostics.unusedLocalExclude": [
+        "intentionalTypeError"
+    ],
+    "workspace.library": []
+}
