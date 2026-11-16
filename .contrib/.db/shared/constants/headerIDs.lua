@@ -621,7 +621,6 @@ HeaderAssignments = {
 	["Talebound Store"] = -817,
 	["Tanks"] = -314,
 	["Tankworks"] = -126,
-	["Tarnished Undermine Real"] = -824,
 	["TBC Classic Anniversary Edition - Outland Upgrade"] = -694,
 	["TBC Classic Deluxe Edition"] = -524,
 	["Temple of Ahn'Qiraj Hardmode"] = -69,
@@ -804,4 +803,4 @@ HeaderAssignments = {
 	["Zskera Vaults"] = -403,
 	["Zul'Gurub Hakkar Hardmode"] = -697,
 }
-NextHeaderID = -825
+NextHeaderID = -824

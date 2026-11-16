@@ -532,7 +532,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 });
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(TARNISHED_UNDERMINE_REAL, {
+	header(HEADERS.Currency, 3469, {	-- Tarnished Undermine Real
 		symselector = SymSelector.FOREVER_TARNISHED_UNDERMINE_REAL,
 		groups = {
 			inst(237, {	-- The Temple of Atal'hakkar
