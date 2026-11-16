@@ -1,0 +1,177 @@
+name: EditorConfig Check
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    env:
+      GIT_CONFIG_COUNT: 2
+      GIT_CONFIG_KEY_0: core.autocrlf
+      GIT_CONFIG_VALUE_0: 'false'
+      GIT_CONFIG_KEY_1: core.longpaths
+      GIT_CONFIG_VALUE_1: 'true'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Install editorconfig-checker 4.0.2
+        id: install-checker
+        uses: editorconfig-checker/action-editorconfig-checker@51f63319f592f97930c73d9c46184d20bd206393
+        with:
+          version: v4.0.2
+
+      - name: Verify checker version
+        id: setup
+        shell: pwsh
+        run: |
+          $checker = Get-Command 'editorconfig-checker' -CommandType Application -ErrorAction Stop |
+            Select-Object -First 1
+          $version = (& $checker.Source --version 2>&1 | Out-String).Trim()
+          if ($LASTEXITCODE -ne 0 -or $version -notmatch '(^|\s)v?4\.0\.2($|\s)') {
+            throw "Expected editorconfig-checker 4.0.2; got '$version'."
+          }
+          Write-Host "Using editorconfig-checker $version"
+
+      - name: Check addon runtime Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group runtime-lua -VerboseChecker
+
+      - name: Check Lua tests
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group lua-tests -VerboseChecker
+
+      - name: Check Lua locales
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group lua-locales -VerboseChecker
+
+      - name: Check XML
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group xml -VerboseChecker
+
+      - name: Check documentation
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group documentation -VerboseChecker
+
+      - name: Check root package metadata
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group root-metadata -VerboseChecker
+
+      - name: Check root policy and configuration
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group root-policy -VerboseChecker
+
+      - name: Check root scripts
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group root-scripts -VerboseChecker
+
+      - name: Check VS Code and Git hooks
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group editor-and-hooks -VerboseChecker
+
+      - name: Check GitHub YAML
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          $note = 'Existing inline checker exclusions in Parser_with_new_CD.yml remain active; the excluded section is not checked.'
+          Write-Host $note
+          if (-not [string]::IsNullOrEmpty($env:GITHUB_STEP_SUMMARY)) {
+            [System.IO.File]::AppendAllText($env:GITHUB_STEP_SUMMARY, "- $note`n`n", [System.Text.UTF8Encoding]::new($false))
+          }
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group github-yaml -VerboseChecker
+
+      - name: Check PowerShell scripts
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group powershell -VerboseChecker
+
+      - name: Check database sync tools
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group db-sync -VerboseChecker
+
+      - name: Check contributor tools
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group contributor-tools -VerboseChecker
+
+      - name: Check harvesters
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group harvesters -VerboseChecker
+
+      - name: Check .NET project files
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group dotnet-projects -VerboseChecker
+
+      - name: Check database build scripts
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group database-scripts -VerboseChecker
+
+      - name: Check CodeGraph configuration
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group codegraph -VerboseChecker
+
+      - name: Check Standard addon helper
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-addon -VerboseChecker
+
+      - name: Check raw ItemDB inputs
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group raw-itemdb -VerboseChecker
+
+      - name: Check Forever database Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group forever-database -VerboseChecker
+
+      - name: Check Season of Discovery database Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group sod-database -VerboseChecker

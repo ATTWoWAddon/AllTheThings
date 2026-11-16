@@ -150,6 +150,7 @@ docs export-ignore
 
 # GitHub Actions workflows
 /.github/workflows/*.yml text eol=lf
+/.github/scripts/Check-EditorConfig.ps1 text eol=lf
 
 # Windows PowerShell 5.1 scripts
 /.contrib/.tools/GameObjectCache-to-ObjectDB.ps1 text eol=lf
