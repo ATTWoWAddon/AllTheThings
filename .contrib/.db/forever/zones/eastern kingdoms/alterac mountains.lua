@@ -90,8 +90,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				lvl = 50,
 			}),
 			q(99192, {	-- A Donation of Silk
-				-- Not yet available in game.
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				qg = 276170,	-- Belanaa Windveil
+				coord = { 11.6, 57.9, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {{ "i", 4306, 60 }},	-- Silk Cloth
 				races = ALLIANCE_ONLY,
 				lvl = 26,
 			}),
