@@ -253,7 +253,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/8 Stolen Shipment
-						provider = { "i", 277953 },	-- Stolen Shipment
+						providers = {
+							{ "i", 277953 },	-- Stolen Shipment
+							{ "o", 661518 },	-- Stolen Shipment
+						},
+						coords = {
+							{ 22.8, 11.1, MAP.STRANGLETHORN_VALE },
+							{ 23.2, 13.0, MAP.STRANGLETHORN_VALE },
+							{ 23.4, 8.1, MAP.STRANGLETHORN_VALE },
+							{ 24.4, 12.8, MAP.STRANGLETHORN_VALE },
+							{ 25.8, 9.4, MAP.STRANGLETHORN_VALE },
+							{ 25.9, 11.5, MAP.STRANGLETHORN_VALE },
+						},
 					}),
 				},
 			}),
