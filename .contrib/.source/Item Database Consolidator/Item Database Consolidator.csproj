@@ -3,12 +3,13 @@
     <Platforms>x64</Platforms>
     <Platform>x64</Platform>
     <PlatformTarget>$(Platform)</PlatformTarget>
-    <TargetFramework>net481</TargetFramework>
+    <TargetFramework Condition="'$(BuildNet10)' != 'true'">net481</TargetFramework>
+    <TargetFramework Condition="'$(BuildNet10)' == 'true'">net10.0</TargetFramework>
     <OutputType>Exe</OutputType>
     <RootNamespace>ATT</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <OutputPath>..\..\.tools\</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendTargetFrameworkToOutputPath Condition="'$(TargetFramework)' == 'net481'">false</AppendTargetFrameworkToOutputPath>
     <ApplicationIcon>att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
