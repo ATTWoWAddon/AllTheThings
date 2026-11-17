@@ -26,6 +26,7 @@ battleground(169, applyclassicphase(WRATH_PHASE_THREE, {	-- Isle of Conquest
 				groups = {
 					i(49052, {	-- Tabard of Conquest
 						races = ALLIANCE_ONLY,
+						pvp = true,	-- also sold by tabard vendors
 					}),
 				},
 			}),
@@ -48,6 +49,7 @@ battleground(169, applyclassicphase(WRATH_PHASE_THREE, {	-- Isle of Conquest
 				groups = {
 					i(49054, {	-- Tabard of Conquest
 						races = HORDE_ONLY,
+						pvp = true,	-- also sold by tabard vendors
 					}),
 				},
 			}),
