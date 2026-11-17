@@ -12,6 +12,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 			currency(TARNISHED_UNDERMINE_REAL, {	-- Tarnished Undermine Real
 				maps = {
 					MAP.BLACKROCK_DEPTHS,
+					MAP.BLACKROCK_SPIRE,
 					MAP.SUNKEN_TEMPLE,
 				},
 				OnTooltip = [[function(t, tooltipInfo)
@@ -65,6 +66,16 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						},{
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
 							hqt(83937, name(HEADERS.NPC, 9019)),	-- Emperor Dagran Thaurissan
+						}),
+					}),
+					inst(229, {	-- Blackrock Spire
+						mapID = MAP.BLACKROCK_SPIRE,
+						groups = sharedData({
+							isDaily = true,
+						},{
+							hqt(83947, name(HEADERS.NPC, 9196)),	-- Highlord Omokk
+							hqt(83950, name(HEADERS.NPC, 10596)),	-- Mother Smolderweb
+							hqt(83952, name(HEADERS.NPC, 10268)),	-- Gizrul the Slavener
 						}),
 					}),
 					inst(237, {	-- The Temple of Atal'hakkar
