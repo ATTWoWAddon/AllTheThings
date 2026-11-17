@@ -190,8 +190,12 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93125, {	-- Going Home
+				sourceQuests = {
+					93058,	-- Saving Our Own
+					93062,	-- Bone Burying
+				},
 				qg = 254040,	-- Rokren
-				coord = { 40.8, 65.1, MAP.SHENDRALAS },
+				coord = { 34.1, 78.0, MAP.SHENDRALAS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },
 				lvl = 35,
