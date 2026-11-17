@@ -893,7 +893,6 @@ iq(230262, 85222);				-- Bronze Celebration Titles: Pandaria Enthusiast
 iq(229827, 85014);				-- Bronze Celebration Titles: Plaguelands Survivor
 iq(230267, 85227);				-- Bronze Celebration Titles: Shadowlands Enthusiast
 iq(230265, 85225);				-- Bronze Celebration Titles: Zandalar Enthusiast
-ihqt(226241, 83824);			-- Shredded Green Hills of Stranglethorn
 
 ------------------
 -- PATCH 11.0.7 --

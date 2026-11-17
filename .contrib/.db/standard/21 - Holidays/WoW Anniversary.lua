@@ -3246,7 +3246,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							provider = { "n", 231433 },	-- Raenie Fizzlebog
 							coord = { 63.1, 52.0, TANARIS },
 							groups = {
-								i(226241),	-- Shredded Green Hills of Stranglethorn (QI!/CI!)
+								i(226241),	-- Shredded Green Hills of Stranglethorn (QI!)
 								i(226362),	-- Torn Note (Black Market)
 								i(226364),	-- Torn Note (Fiona Caravan)
 								o(456039, {	-- Crumpled Letter
