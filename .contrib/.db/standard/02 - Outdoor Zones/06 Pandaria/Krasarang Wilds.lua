@@ -140,16 +140,19 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 		}),
 		petbattles({
 			n(66733, {	-- Mo'ruk <Grand Master Pet Tamer>
-				coord = { 65.0, 42.7, KRASARANG_WILDS },
+				coords = {
+					{ 65.0, 42.7, KRASARANG_WILDS },
+					-- #if AFTER 11.0.5
+					{ 62.1, 49.5, TANARIS },
+					-- #endif
+				},
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 25,
 				groups = {
 					q(31954, {	-- Grand Master Mo'ruk
 						sourceAchievement = 6606,	-- Taming Pandaria
 						isDaily = true,
-						groups = {
-							i(89125),	-- Sack of Pet Supplies
-						},
+						groups = { i(89125) },	-- Sack of Pet Supplies
 					}),
 				},
 			}),

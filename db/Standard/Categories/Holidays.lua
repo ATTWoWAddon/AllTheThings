@@ -17806,7 +17806,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,rwp=110007,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+i(233014,{awp=120105,b=1,e=242,f=55,lvl=80,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}}}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

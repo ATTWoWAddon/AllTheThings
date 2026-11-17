@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 		n(VENDORS, {
 			n(186449, {	-- Arvik
 				coord = { 12.9, 48.8, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 14 ------
 					199885,	-- Reinforced Fisherman's Vambraces
 					199884,	-- Tuskarr Crafter's Bindings
@@ -37,11 +37,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199890,	-- Tuskarr Crafter's Mantle
 					199891,	-- Tuskarr Sharkguard Shoulderguards
 					199888,	-- Tuskarr Trapper's Spaulders
-				}},
+				} },
 			}),
 			n(186186, {	-- Hanu
 				coord = { 12.9, 48.7, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 24 ------
 					199879,	-- Tuskarr Fisherman's Dagger
 					199881,	-- Tuskarr Fisherman's Harpoon
@@ -49,38 +49,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199878,	-- Tuskarr Timber Splitter
 					199883,	-- Tuskarr Sharktooth Bolt-Thrower
 					199882,	-- Tuskarr Mystic's Stave
-				}},
+				} },
 			}),
 			n(186564, {	-- Jiq
 				description = "Runs around in the village.",
 				coord = { 13.5, 48.7, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 9 ------
 					193837,	-- Backswimmer Timbertooth (PET!)
 					193225,	-- Whiskuk (PET!)
-				}},
+				} },
 			}),
 			n(186547, {	-- Lil Ki
 				coord = { 13.5, 48.7, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 4 ------
 					199892,	-- Tuskarr Traveling Soup Pot (TOY!)
 					199650,	-- Whale Bone Tea Set (TOY!)
 					200749,	-- Tuskarr Clobbering Board
 					200748,	-- Tuskarr Ulu Knife
-				}},
+				} },
 			}),
 			n(194318, {	-- Kiopo <The Eldest>
 				coord = { 24.4, 70.8, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 26 ------
 					199899,	-- Iskaara Tug Sled (TOY!)
 					198827,	-- Magical Snow Sled (TOY!)
-				}},
+				} },
 			}),
 			n(196016, {	-- Lontupit
 				coord = { 14.0, 49.3, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
+					------ RENOWN 11------
+					284255,	-- Pattern: Beloved Ottuk Plushie (RECIPE!)
+					284256,	-- Pattern: Beloved Ottuuuuuuk Plushie (RECIPE!)
 					------ RENOWN 12 ------
 					199877,	-- Ensemble: Tuskarr Trader's Leather Armor
 					------ RENOWN 23 ------
@@ -99,17 +102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199543,	-- Azure Depths Shoulderguards
 					199897,	-- Blue-Covered Beanbag (TOY!)
 					199872,	-- Tuskarr Trader's Cloak
-				}},
-				groups = {
-					i(284255, {	-- Pattern: Beloved Ottuk Plushie (RECIPE!)
-						minReputation = { FACTION_ISKAARA_TUSKARR, 11 },
-						timeline = { ADDED_12_1_5 }
-					}),
-					i(284256, {	-- Pattern: Beloved Ottuuuuuuk Plushie (RECIPE!)
-						minReputation = { FACTION_ISKAARA_TUSKARR, 11 },
-						timeline = { ADDED_12_1_5 }
-					}),
-				},
+				} },
 			}),
 			n(193006, {	-- Murik
 				coord = { 13.16, 49.2, THE_AZURE_SPAN },
@@ -201,19 +194,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							},
 						}),
 					}, {	-- RENOWN 7 --
-						i(197101, {	-- Highland Drake: Bushy Brow (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
+						i(197101, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Highland Drake: Bushy Brow (MM!)
 						i(197155, {	-- Highland Drake: Finned Neck (MM!)
 							timeline = { ADDED_10_0_7 },
 							cost = { { "c", DRAGON_SUPPLIES, 50 } },
 						}),
-						i(197114, {	-- Highland Drake: Multi-Horned Head (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(197132, {	-- Highland Drake: Spiked Cheek (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
+						i(197114, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Highland Drake: Multi-Horned Head (MM!)
+						i(197132, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Highland Drake: Spiked Cheek (MM!)
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 						i(193837, {	-- Backswimmer Timbertooth (PET!)
@@ -231,28 +218,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							},
 						}),
 					}, {	-- RENOWN 10 --
-						i(194611, {	-- Design: Energized Ysemerald (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(194726, {	-- Design: Kalu'ak Figurine (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(194610, {	-- Design: Keen Ysemerald (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(194603, {	-- Design: Radiant Alexstraszite (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(194602, {	-- Design: Sensei's Alexstraszite (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(199816, {	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
-						i(199815, {	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 50 } },
-						}),
+						i(194611, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Design: Energized Ysemerald (RECIPE!)
+						i(194726, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Design: Kalu'ak Figurine (RECIPE!)
+						i(194610, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Design: Keen Ysemerald (RECIPE!)
+						i(194603, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Design: Radiant Alexstraszite (RECIPE!)
+						i(194602, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Design: Sensei's Alexstraszite (RECIPE!)
+						i(199816, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
+						i(199815, { cost = { { "c", DRAGON_SUPPLIES, 50 } } }),	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
 					}, {	-- RENOWN 11 --
+						i(284255, { timeline = { ADDED_12_1_5 } }),	-- Pattern: Beloved Ottuk Plushie (RECIPE!)
+						i(284256, { timeline = { ADDED_12_1_5 } }),	-- Pattern: Beloved Ottuuuuuuk Plushie (RECIPE!)
 					}, {	-- RENOWN 12 --
 						iensemble(199877, {	-- Ensemble: Tuskarr Trader's Leather Armor
 							cost = {
@@ -268,47 +243,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							},
 						}),
 					}, {	-- RENOWN 13 --
-						i(198894, {	-- Technique: Highland Drake: Black Hair (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 25 } },
-						}),
-						i(197153, {	-- Highland Drake: Bladed Tail (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 100 } },
-						}),
-						i(197139, {	-- Highland Drake: Large Spotted Pattern (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 100 } },
-						}),
-						i(197123, {	-- Highland Drake: Thorn Horns (MM!)
-							cost = { { "c", DRAGON_SUPPLIES, 100 } },
-						}),
+						i(198894, { cost = { { "c", DRAGON_SUPPLIES, 25 } } }),	-- Technique: Highland Drake: Black Hair (RECIPE!)
+						i(197153, { cost = { { "c", DRAGON_SUPPLIES, 100 } } }),	-- Highland Drake: Bladed Tail (MM!)
+						i(197139, { cost = { { "c", DRAGON_SUPPLIES, 100 } } }),	-- Highland Drake: Large Spotted Pattern (MM!)
+						i(197123, { cost = { { "c", DRAGON_SUPPLIES, 100 } } }),	-- Highland Drake: Thorn Horns (MM!)
 					}, {	-- RENOWN 14 --
-						i(199885, {	-- Reinforced Fisherman's Vambraces
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199884, {	-- Tuskarr Crafter's Bindings
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199886, {	-- Tuskarr Sharkguard Wristguards
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199887, {	-- Tuskarr Trapper's Bracers
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
+						i(199885, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Reinforced Fisherman's Vambraces
+						i(199884, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Crafter's Bindings
+						i(199886, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Sharkguard Wristguards
+						i(199887, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Trapper's Bracers
 					}, {	-- RENOWN 15 --
-						i(194634, {	-- Design: Idol of the Dreamer (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 400 } },
-						}),
-						i(194633, {	-- Design: Idol of the Spell-Weaver (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 400 } },
-						}),
-						i(193875, {	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 400 } },
-						}),
-						i(193876, {	-- Pattern: Snowball Makers (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 400 } },
-						}),
-						i(198102, {	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 400 } },
-						}),
+						i(194634, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Design: Idol of the Dreamer (RECIPE!)
+						i(194633, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Design: Idol of the Spell-Weaver (RECIPE!)
+						i(193875, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
+						i(193876, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Pattern: Snowball Makers (RECIPE!)
+						i(198102, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
 					}, {	-- RENOWN 16 --
 						i(199855, {	-- Burgandy Fisherman's Pack
 							cost = {
@@ -457,22 +406,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}, {	-- RENOWN 20 --
 					}, {	-- RENOWN 21 --
 					}, {	-- RENOWN 22 --
-						i(199889, {	-- Tuskarr Boneplate Pauldrons
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199890, {	-- Tuskarr Crafter's Mantle
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199891, {	-- Tuskarr Sharkguard Shoulderguards
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
-						i(199888, {	-- Tuskarr Trapper's Spaulders
-							cost = { { "c", DRAGON_SUPPLIES, 150 } },
-						}),
+						i(199889, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Boneplate Pauldrons
+						i(199890, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Crafter's Mantle
+						i(199891, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Sharkguard Shoulderguards
+						i(199888, { cost = { { "c", DRAGON_SUPPLIES, 150 } } }),	-- Tuskarr Trapper's Spaulders
 					}, {	-- RENOWN 23 --
-						i(194311, {	-- Pattern: Tuskarr Bean Bag (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 750 } },
-						}),
+						i(194311, { cost = { { "c", DRAGON_SUPPLIES, 750 } } }),	-- Pattern: Tuskarr Bean Bag (RECIPE!)
 						i(199897, {	-- Blue-Covered Beanbag (TOY!)
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 100 },
@@ -524,9 +463,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							},
 						}),
 					}, {	-- RENOWN 25 --
-						i(198940, {	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
-							cost = { { "c", DRAGON_SUPPLIES, 200 } },
-						}),
+						i(198940, { cost = { { "c", DRAGON_SUPPLIES, 200 } } }),	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
 						i(198872, {	-- Brown Scouting Ottuk (MOUNT!)
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 750 },
@@ -701,7 +638,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			}),
 			n(196544, {	-- Norukk
 				coord = { 12.9, 48.6, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 7 ------
 					197101,	-- Highland Drake: Bushy Brow (MM!)
 					197155,	-- Highland Drake: Finned Neck (MM!)
@@ -716,19 +653,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					197139,	-- Highland Drake: Large Spotted Pattern (MM!)
 					197153,	-- Highland Drake: Bladed Tail (MM!)
 					203350,	-- Winding Slitherdrake: Blue Scales (MM!)
-				}},
+				} },
 			}),
 			n(186554, {	-- Nunvuq
 				coord = { 13.9, 49.2, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 17 ------
 					199894,	-- Fisherman's Folly Rack (TOY!)
 					199896,	-- Rubbery Fish Head (TOY!)
-				}},
+				} },
 			}),
 			n(196018, {	-- Omapurita
 				coord = { 14.0, 49.3, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 6 ------
 					199538,	-- Azure Ear Warmer
 					199531,	-- Red Stocking Cap
@@ -737,11 +674,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199533,	-- Green Stocking Cap
 					199537,	-- Forest Green Ear Warmer
 					199535,	-- Crimson Ear Warmer
-				}},
+				} },
 			}),
 			n(194059, {	-- Rokkutuk <Lead Craftsman>
 				coord = { 13.8, 50.0, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 10 ------
 					194611,	-- Design: Energized Ysemerald (RECIPE!)
 					194726,	-- Design: Kalu'ak Figurine (RECIPE!)
@@ -750,6 +687,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					194602,	-- Design: Sensei's Alexstraszite (RECIPE!)
 					199816,	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
 					199815,	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
+					------ RENOWN 11------
+					284255,	-- Pattern: Beloved Ottuk Plushie (RECIPE!)
+					284256,	-- Pattern: Beloved Ottuuuuuuk Plushie (RECIPE!)
 					------ RENOWN 13 ------
 					198894,	-- Technique: Highland Drake: Black Hair (RECIPE!)
 					------ RENOWN 15 ------
@@ -770,34 +710,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					------ RENOWN 30 ------
 					198940,	-- Technique: Contract: Iskaara Tuskarr (RECIPE!)
 					197981,	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
-				}},
+				} },
 			}),
 			n(187680, {	-- Scaps
 				sourceQuests = { 66223 },	-- Can We Keep It?
 				coord = { 12.9, 48.6, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 29 ------
 					198337,	-- Azure Paw Pack
 					198338,	-- Black Paw Pack
 					198339,	-- Dark Paw Pack
 					198340,	-- Red Paw Pack
 					198341,	-- Tan Paw Pack
-				}},
+				} },
 			}),
 			n(186462, {	-- Tatto
 				coord = { 13.8, 49.7, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 25 ------
 					198872,	-- Brown Scouting Ottuk (MOUNT!)
 					200118,	-- Yellow Scouting Ottuk (MOUNT!)
 					------ RENOWN 30 ------
 					201426,	-- Brown War Ottuk (MOUNT!)
 					201425,	-- Yellow War Ottuk (MOUNT!)
-				}},
+				} },
 			}),
 			n(187869, {	-- Tikukk
 				coord = { 12.7, 50.3, THE_AZURE_SPAN },
-				sym = {{"select","itemID",
+				sym = { { "select", "itemID",
 					------ RENOWN 26 ------
 					199855,	-- Burgandy Fisherman's Pack
 					199863,	-- Burgandy Tuskarr Backpack
@@ -811,7 +751,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199853,	-- Tan Fisherman's Pack
 					199861,	-- Tan Tuskarr Backpack
 					199857,	-- Tan Tuskarr Trader's Pack
-				}},
+				} },
 			}),
 		}),
 	}),
