@@ -4201,6 +4201,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 				q(85419),	-- Acquire 4 Deviate Fish for (85195) Pirate Gastronomy.
 				q(85420),	-- Acquire 2 Nettlefish for (85195) Pirate Gastronomy.
 				q(85421),	-- Acquire 3 Furious Crawdads for (85195) Pirate Gastronomy.
+				q(83824, name(HEADERS.Item, 226241)),	-- Rebinding the Shredded Green Hills of Stranglethorn (spell 458507) during (83825) Restoring A Grand Tale.
 				q(84617, name(HEADERS.Achievement, 40873)),	-- Accepting Harder Puzzles from Alyx. This unlocks notes on the bulletin board next to Alyx.
 			}),
 			q(84309),	-- Bonus chance for Reins of the Heavenly Onyx Cloud Serpent from Sha of Anger on first kill per day
