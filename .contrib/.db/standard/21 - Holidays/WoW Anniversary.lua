@@ -2045,7 +2045,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					timeline = { ADDED_8_2_5, REMOVED_9_0_1 },
 					lvl = 60,
 				}),
-				q(57300, {	-- Soldier of Time
+				pvp(q(57300, {	-- Soldier of Time
 					qgs = {
 						-- #if AFTER 11.0.5
 						223882,	-- Izaik Kadarov
@@ -2063,7 +2063,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					timeline = { ADDED_8_2_5, REMOVED_8_2_5, ADDED_11_0_2 },
 					isWeekly = true,
 					_drop = { "g" },	-- drop MoH to remove this quest from the popout
-				}),
+				})),
 			}),
 			n(VENDORS, {
 				n(158061, {	-- Historian Ma'di
@@ -2423,7 +2423,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 					}),
 					n(VENDORS, {
-						timeline = {REMOVED_11_0_7},
+						timeline = { REMOVED_11_0_7 },
 						groups = {
 							-- TODO: maybe once I have figured out better 'Sources' tech to list things with a Source and then assign alternate Sources
 							-- this can be cleaned up again while maintaining proper 'cost' links
@@ -3738,7 +3738,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					groups = {
 						ach(40977),	-- Codex Editor: Ahn'Qiraj
 						i(233014, {	-- Bronze Celebration Cache of Treasures
-							timeline = { REMOVED_11_0_7 },
+							timeline = { REMOVED_11_0_7, ADDED_12_1_5 },
 							sym = SYM_ALL_BRD_DROPS,
 						}),
 						-- #IF AFTER 11.2.5
@@ -3796,12 +3796,60 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							}),
 						}), {	-- Recurring Content
 							i(208572, { cost = { { "c", TIMEWARPED_BADGE, 5000 } } }),	-- Azure Worldchiller (MOUNT!)
-							i(228785, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Bulwark
-							i(228788, { cost = { { "c", BRONZE_TOKEN, 15 } } }),	-- Coldflame Edged Crest
-							i(228789, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Ring (TOY!)
-							i(228786, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Winged Crown
-							i(228784, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame's Edge
-							i(228781, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Lil'Doomy (PET!)
+							i(228785, {	-- Coldflame Bulwark
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 100 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 10 },
+									-- #endif
+								},
+							}),
+							i(228788, {	-- Coldflame Edged Crest
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 150 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 15 },
+									-- #endif
+								},
+							}),
+							i(228789, {	-- Coldflame Ring (TOY!)
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 100 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 10 },
+									-- #endif
+								},
+							}),
+							i(228786, {	-- Coldflame Winged Crown
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 100 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 10 },
+									-- #endif
+								},
+							}),
+							i(228784, {	-- Coldflame's Edge
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 100 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 10 },
+									-- #endif
+								},
+							}),
+							i(228781, {	-- Lil'Doomy (PET!)
+								cost = {
+									-- #if AFTER 11.2.5
+									{ "c", TIMEWARPED_BADGE, 100 },
+									-- #else
+									{ "c", BRONZE_TOKEN, 10 },
+									-- #endif
+								},
+							}),
 						}),
 				}),
 				n(231352, {	-- Notary Grably <Titles of Olde>
