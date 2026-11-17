@@ -19176,6 +19176,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "白蟻桶",
 		},
 	},
+	[177525] = {
+		readable = "Moonkin Stone",
+		text = {
+			en = "Moonkin Stone",
+			es = "Piedra de lechúcico lunar",
+			mx = "Piedra de lechúcico lunar",
+			de = "Moonkinstein",
+			fr = "Pierre des séléniens",
+			pt = "Pedra Luniscante",
+			ru = "Камень лунного совуха",
+			ko = "달빛야수 비석",
+			cn = "月夜枭兽之石",
+			tw = "月夜梟獸之石",
+		},
+	},
 	[177544] = {
 		readable = "Joseph's Chest",
 		icon = 132594,

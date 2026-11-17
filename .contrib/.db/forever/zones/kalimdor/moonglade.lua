@@ -116,6 +116,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(6001, {	-- Body and Heart [A]
 				sourceQuest = 5931,	-- Back to Darnassus
 				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+				qi = 15208,	-- Cenarion Moondust
 				coord = { 35.2, 8.0, MAP.DARNASSUS },
 				maps = { MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
@@ -123,7 +124,11 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
-						provider = { "n", 12138 },	-- Lunaclaw
+						providers = {
+							{ "n", 12138 },	-- Lunaclaw
+							{ "n", 12144 },	-- Lunaclaw Spirit
+							{ "o", 177525 },	-- Moonkin Stone
+						},
 						cost = { { "i", 15208, 1 } },	-- Cenarion Moondust
 						coord = { 43.0, 45.0, MAP.DARKSHORE },
 					}),
@@ -149,6 +154,7 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 			q(6002, {	-- Body and Heart [H]
 				sourceQuest = 5932,	-- Back to Thunder Bluff
 				qg = 3033,	-- Turak Runetotem <Druid Trainer>
+				qi = 15710,	-- Cenarion Lunardust
 				coord = { 76.4, 27.6, MAP.THUNDER_BLUFF },
 				maps = { MAP.THE_BARRENS },
 				races = HORDE_ONLY,
@@ -156,7 +162,11 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				lvl = 10,
 				groups = {
 					objective(1, {	-- Face Lunaclaw and earn the strength of body and heart it possesses.
-						provider = { "n", 12138 },	-- Lunaclaw
+						providers = {
+							{ "n", 12138 },	-- Lunaclaw
+							{ "n", 12144 },	-- Lunaclaw Spirit
+							{ "o", 177525 },	-- Moonkin Stone
+						},
 						cost = { { "i", 15710, 1 } },	-- Cenarion Lunardust
 						coord = { 42.0, 60.0, MAP.THE_BARRENS },
 					}),
