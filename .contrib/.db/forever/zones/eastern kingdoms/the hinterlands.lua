@@ -370,6 +370,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				groups = {
 					i(19114),	-- Highland Bow
 					i(19115),	-- Flask of Forest Mojo
+					i(270111, {	-- Forest Troll Leggings
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1451, {	-- Rhapsody Shindigger

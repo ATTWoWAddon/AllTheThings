@@ -693,6 +693,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						},
 					}),
 					i(4130),	-- Smotts' Compass
+					i(270110, {	-- First Mate's Armguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(627, {	-- Favor for Krazek

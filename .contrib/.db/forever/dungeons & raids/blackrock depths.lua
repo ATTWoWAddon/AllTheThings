@@ -119,6 +119,9 @@ instanceroot(228, {	-- Blackrock Depths
 					i(12018),	-- Conservator Helm
 					i(12021),	-- Shieldplate Sabatons
 					i(12041),	-- Windshear Leggings
+					i(270118, {	-- Cindercloth Gown
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(3981, {	-- Commander Gor'shak
@@ -559,6 +562,9 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					i(11962),	-- Manacle Cuffs
 					i(11866),	-- Nagmara's Whipping Belt
+					i(270120, {	-- Boots of Requite
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(4004, {	-- The Princess Saved?
