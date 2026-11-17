@@ -113,6 +113,10 @@ docs export-ignore
 *.ogg binary
 *.wav binary
 *.ico binary
+*.dll binary
+*.dylib binary
+*.exe binary
+*.so binary
 
 # VS solution files
 *.sln       text eol=crlf
