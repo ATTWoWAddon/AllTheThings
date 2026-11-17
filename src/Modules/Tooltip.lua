@@ -981,7 +981,7 @@ do
 		end
 		-- NPCs whose text is identical apart from their Creature ID (e.g. several "Mining Monkey" IDs) share one
 		-- candidate, so a shared name shows one block instead of one per ID.
-		local candidates, byContent, working = {}, {}, false
+		local candidates, byContent, byName, working = {}, {}, {}, false
 		for npcID in pairs(ids) do
 			local name = app.NPCNameFromID[npcID]
 			-- Inside instances the client hands out NPC names as secrets too; CompareStrings accepts those, so keep them.
@@ -1021,18 +1021,45 @@ do
 						local sharedRight = #sharedRights > 0 and table_concat(sharedRights, "\n") or nil
 						local key = (sharedLeft or "") .. "\0" .. (sharedRight or "") .. "\0" .. (summary or "")
 						local candidate = byContent[key]
+						local left = #lefts > 0 and table_concat(lefts, "\n") or nil
+						local right = #rights > 0 and table_concat(rights, "\n") or nil
+						local secretName = issecretvalue(name)
+						local named = not secretName and byName[name]
 						if candidate then
 							-- A second ID with the same text: show the shared text without any one Creature ID
-							candidate.names[#candidate.names + 1] = name
-							candidate.left, candidate.right = sharedLeft, sharedRight
+							-- (a block merged by name already holds this text, so it stays as it is)
+							if not candidate.merged then
+								candidate.names[#candidate.names + 1] = name
+								candidate.left, candidate.right = sharedLeft, sharedRight
+							end
+						elseif named then
+							-- Another ID with the same name but different text (e.g. one NPC per flight point):
+							-- one block for the name, holding every ID's rows, with their progress added up
+							named.left = named.left and left and (named.left .. "\n" .. left) or named.left or left
+							named.right = named.right and right and (named.right .. "\n" .. right) or named.right or right
+							named.merged = true
+							named.progress = named.progress + (group.progress or 0)
+							named.total = named.total + (group.total or 0)
+							if named.total > 0 then
+								named.summary = app.Modules.Color.GetProgressColorText(named.progress, named.total)
+							else
+								named.summary = named.summary or summary
+							end
+							byContent[key] = named
 						else
 							candidate = {
 								names = { name },
-								left = #lefts > 0 and table_concat(lefts, "\n") or nil,
-								right = #rights > 0 and table_concat(rights, "\n") or nil,
+								left = left,
+								right = right,
 								summary = summary,
+								progress = group.progress or 0,
+								total = group.total or 0,
+								-- A secret name can't be merged with others of the same name, so several blocks may show
+								-- for one unit; start each on its own line so they don't run together
+								separator = secretName and "\n" or "",
 							}
 							byContent[key] = candidate
+							if not secretName then byName[name] = candidate end
 							candidates[#candidates + 1] = candidate
 						end
 					end
@@ -1070,12 +1097,12 @@ do
 			local gate = AnyNameMatches(unitName, candidate.names)
 			if candidate.left then
 				anyText = true
-				leftOutput = leftOutput .. DisplayFragment(gate, candidate.left)
-				rightOutput = rightOutput .. DisplayFragment(gate, candidate.right or " ")
+				leftOutput = leftOutput .. DisplayFragment(gate, candidate.separator .. candidate.left)
+				rightOutput = rightOutput .. DisplayFragment(gate, candidate.separator .. (candidate.right or " "))
 			end
 			if candidate.summary then
 				anySummary = true
-				summaryOutput = summaryOutput .. DisplayFragment(gate, candidate.summary)
+				summaryOutput = summaryOutput .. DisplayFragment(gate, (candidate.separator ~= "" and " " or "") .. candidate.summary)
 			end
 		end
 		-- Progress on the first row, next to the unit name (the name row's own text is secret, so it isn't measured).
