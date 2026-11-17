@@ -14,6 +14,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		isRaid = true,
 		lvl = lvlsquish(68, 68, 30),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		groups = {
+			-- #if BEFORE CATA
+			n(COMMON_BOSS_DROPS, {
+				crs = {
+					18831,	-- High King Maulgar
+					19044,	-- Gruul the Dragonkiller
+				},
+				groups = {
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+				},
+			}),
+			-- #endif
 			e(1564, {	-- High King Maulgar
 				creatureID = 18831,
 				groups = {

@@ -204,6 +204,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				i(32428),	-- Heart of Darkness
 				i(32897),	-- Mark of the Illidari
 			}),
+			-- #if BEFORE CATA
+			n(COMMON_BOSS_DROPS, {
+				crs = {
+					22887,	-- High Warlord Naj'entus
+					22898,	-- Supremus
+					22841,	-- Shade of Akama
+					22871,	-- Teron Gorefiend
+					22948,	-- Gurtogg Bloodboil
+					23418,	-- Reliquary of Souls
+					22947,	-- Mother Shahraz
+					23426,	-- The Illidari Council
+					22917,	-- Illidan Stormrage
+				},
+				groups = {
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+				},
+			}),
+			-- #endif
 			-- #if AFTER 7.2.5.23910
 			d(DIFFICULTY.RAID.NORMAL, {
 				lvl = 68,

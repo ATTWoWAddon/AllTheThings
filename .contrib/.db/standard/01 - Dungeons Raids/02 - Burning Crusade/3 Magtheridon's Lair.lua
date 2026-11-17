@@ -99,6 +99,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(32386, {	-- Magtheridon's Head
 						races = HORDE_ONLY,
 					}),
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+					-- #endif
 					i(29754, {	-- Chestguard of the Fallen Champion
 						classes = { PALADIN, ROGUE, SHAMAN },
 					}),

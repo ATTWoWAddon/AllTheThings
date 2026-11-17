@@ -200,7 +200,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 						groups = {
 							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE(1),
+							applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
 							-- #endif
 							i(30574),	-- Brutal Tanzanite
 							i(30572),	-- Imperial Tanzanite

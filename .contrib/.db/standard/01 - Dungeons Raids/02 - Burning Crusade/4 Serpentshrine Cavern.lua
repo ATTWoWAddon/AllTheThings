@@ -68,6 +68,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE CATA
+			n(COMMON_BOSS_DROPS, {
+				crs = {
+					21216,	-- Hydross the Unstable
+					21217,	-- The Lurker Below
+					21215,	-- Leotheras the Blind
+					17603,	-- Grandmother
+					21214,	-- Fathom-Lord Karathress
+					21213,	-- Morogrim Tidewalker
+					21212,	-- Lady Vashj
+				},
+				groups = {
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+				},
+			}),
+			-- #endif
 			e(1567, {	-- Hydross the Unstable
 				creatureID = 21216,
 				groups = {

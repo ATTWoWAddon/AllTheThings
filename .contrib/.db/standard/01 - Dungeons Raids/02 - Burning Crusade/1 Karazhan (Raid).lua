@@ -706,6 +706,35 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}),
 				},
 			}),
+			-- #if BEFORE CATA
+			n(COMMON_BOSS_DROPS, {
+				crs = {
+					16152,	-- Attumen the Huntsman
+					15687,	-- Moroes
+					16457,	-- Maiden of Virtue
+					17603,	-- Grandmother
+					17521,	-- The Big Bad Wolf
+					17534,	-- Julianne
+					17533,	-- Romulo
+					17535,	-- Dorothee
+					17548,	-- Tito
+					17543,	-- Strawman
+					17547,	-- Tinhead
+					17546,	-- Roar
+					18168,	-- The Crone
+					17225,	-- Nightbane
+					15691,	-- The Curator
+					15688,	-- Terestian Illhoof
+					16524,	-- Shade of Aran
+					15689,	-- Netherspite
+					16816,	-- Echo of Medivh
+					15690,	-- Prince Malchezaar
+				},
+				groups = {
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+				},
+			}),
+			-- #endif
 			e(1553, {	-- Attumen The Huntsman
 				crs = {
 					16151,	-- Midnight
