@@ -156,14 +156,54 @@ root(ROOTS.PVP, {
 						i(273398),	-- Premier Knight-Captain's Dreamhide Waistguard
 
 						-- Rare set: Lieutenant Commander's Refuge
-						i(273374),	-- Premier Dreamhide Headguard
-						i(273375),	-- Premier Dreamhide Shoulders
-						i(273380),	-- Premier Dreamhide Tunic
-						i(273377),	-- Premier Dreamhide Gloves
-						i(273373),	-- Premier Dreamhide Leggings
-						i(273379),	-- Premier Dreamhide Footwraps
-						i(272834),	-- Premier Dreamhide Armsplints
-						i(273378),	-- Premier Dreamhide Girdle
+						i(273374, {	-- Premier Dreamhide Headguard
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(273375, {	-- Premier Dreamhide Shoulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(273380, {	-- Premier Dreamhide Tunic
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(273377, {	-- Premier Dreamhide Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(273373, {	-- Premier Dreamhide Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(273379, {	-- Premier Dreamhide Footwraps
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272834, {	-- Premier Dreamhide Armsplints
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(273378, {	-- Premier Dreamhide Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Sanctuary
 						i(272760),	-- Premier Field Marshal's Beasthide Helmet
@@ -176,14 +216,54 @@ root(ROOTS.PVP, {
 						i(272756),	-- Premier Knight-Captain's Beasthide Waistguard
 
 						-- Rare set: Lieutenant Commander's Sanctuary
-						i(272733),	-- Premier Beasthide Shroud
-						i(272732),	-- Premier Beasthide Epaulets
-						i(272730),	-- Premier Beasthide Tunic
-						i(272709),	-- Premier Beasthide Gloves
-						i(272731),	-- Premier Beasthide Leggings
-						i(272705),	-- Premier Beasthide Footwraps
-						i(272707),	-- Premier Beasthide Armsplints
-						i(272711),	-- Premier Beasthide Girdle
+						i(272733, {	-- Premier Beasthide Shroud
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272732, {	-- Premier Beasthide Epaulets
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272730, {	-- Premier Beasthide Tunic
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272709, {	-- Premier Beasthide Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272731, {	-- Premier Beasthide Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272705, {	-- Premier Beasthide Footwraps
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272707, {	-- Premier Beasthide Armsplints
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272711, {	-- Premier Beasthide Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Wildhide
 						i(273394),	-- Premier Field Marshal's Lunarhide Helmet
@@ -196,14 +276,54 @@ root(ROOTS.PVP, {
 						i(273390),	-- Premier Knight-Captain's Lunarhide Waistguard
 
 						-- Rare set: Lieutenant Commander's Wildhide
-						i(272669),	-- Premier Lunarhide Headguard
-						i(272670),	-- Premier Lunarhide Shoulders
-						i(273371),	-- Premier Lunarhide Tunic
-						i(273368),	-- Premier Lunarhide Gloves
-						i(272656),	-- Premier Lunarhide Leggings
-						i(273370),	-- Premier Lunarhide Footwraps
-						i(272835),	-- Premier Lunarhide Armsplints
-						i(273369),	-- Premier Lunarhide Girdle
+						i(272669, {	-- Premier Lunarhide Headguard
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272670, {	-- Premier Lunarhide Shoulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(273371, {	-- Premier Lunarhide Tunic
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(273368, {	-- Premier Lunarhide Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272656, {	-- Premier Lunarhide Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(273370, {	-- Premier Lunarhide Footwraps
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272835, {	-- Premier Lunarhide Armsplints
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(273369, {	-- Premier Lunarhide Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(HUNTER, bubbleDownSelf({ classes = { HUNTER } }, {
 						-- Epic set: Field Marshal's Pursuit
@@ -217,14 +337,54 @@ root(ROOTS.PVP, {
 						i(272773),	-- Premier Knight-Captain's Chainmail Girdle
 
 						-- Rare set: Lieutenant Commander's Pursuit
-						i(272737),	-- Premier Chainmail Helmet
-						i(272736),	-- Premier Chainmail Pauldrons
-						i(272734),	-- Premier Chainmail Hauberk
-						i(272715),	-- Premier Chainmail Gauntlets
-						i(272735),	-- Premier Chainmail Leggings
-						i(272713),	-- Premier Chainmail Boots
-						i(272830),	-- Premier Chainmail Armguards
-						i(272712),	-- Premier Chainmail Girdle
+						i(272737, {	-- Premier Chainmail Helmet
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272736, {	-- Premier Chainmail Pauldrons
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272734, {	-- Premier Chainmail Hauberk
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272715, {	-- Premier Chainmail Gauntlets
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272735, {	-- Premier Chainmail Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272713, {	-- Premier Chainmail Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272830, {	-- Premier Chainmail Armguards
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272712, {	-- Premier Chainmail Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(MAGE, bubbleDownSelf({ classes = { MAGE } }, {
 						-- Epic set: Field Marshal's Regalia
@@ -238,14 +398,54 @@ root(ROOTS.PVP, {
 						i(272748),	-- Premier Knight-Captain's Silk Sash
 
 						-- Rare set: Lieutenant Commander's Regalia
-						i(272725),	-- Premier Silk Crown
-						i(272724),	-- Premier Silk Spaulders
-						i(272722),	-- Premier Silk Raiment
-						i(272703),	-- Premier Silk Gloves
-						i(272723),	-- Premier Silk Leggings
-						i(272701),	-- Premier Silk Boots
-						i(272702),	-- Premier Silk Cuffs
-						i(272700),	-- Premier Silk Sash
+						i(272725, {	-- Premier Silk Crown
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272724, {	-- Premier Silk Spaulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272722, {	-- Premier Silk Raiment
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272703, {	-- Premier Silk Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272723, {	-- Premier Silk Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272701, {	-- Premier Silk Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272702, {	-- Premier Silk Cuffs
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272700, {	-- Premier Silk Sash
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(PALADIN, bubbleDownSelf({ classes = { PALADIN } }, {
 						-- Epic set: Field Marshal's Aegis
@@ -259,14 +459,54 @@ root(ROOTS.PVP, {
 						i(273328),	-- Premier Knight-Captain's Luminous Belt
 
 						-- Rare set: Lieutenant Commander's Aegis
-						i(272854),	-- Premier Luminous Headguard
-						i(272855),	-- Premier Luminous Shoulders
-						i(272852),	-- Premier Luminous Breastplate
-						i(273363),	-- Premier Luminous Gauntlets
-						i(272853),	-- Premier Luminous Leggings
-						i(273365),	-- Premier Luminous Sabatons
-						i(273364),	-- Premier Luminous Armsplints
-						i(273366),	-- Premier Luminous Cinch
+						i(272854, {	-- Premier Luminous Headguard
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272855, {	-- Premier Luminous Shoulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272852, {	-- Premier Luminous Breastplate
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(273363, {	-- Premier Luminous Gauntlets
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272853, {	-- Premier Luminous Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(273365, {	-- Premier Luminous Sabatons
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(273364, {	-- Premier Luminous Armsplints
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(273366, {	-- Premier Luminous Cinch
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Vindication
 						i(272783),	-- Premier Field Marshal's Chevalier Faceguard
@@ -279,14 +519,54 @@ root(ROOTS.PVP, {
 						i(272779),	-- Premier Knight-Captain's Chevalier Belt
 
 						-- Rare set: Lieutenant Commander's Vindication
-						i(272743),	-- Premier Chevalier Headguard
-						i(272745),	-- Premier Chevalier Shoulders
-						i(272742),	-- Premier Chevalier Breastplate
-						i(272719),	-- Premier Chevalier Gauntlets
-						i(272744),	-- Premier Chevalier Leggings
-						i(272718),	-- Premier Chevalier Sabatons
-						i(272721),	-- Premier Chevalier Armsplints
-						i(272720),	-- Premier Chevalier Cinch
+						i(272743, {	-- Premier Chevalier Headguard
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272745, {	-- Premier Chevalier Shoulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272742, {	-- Premier Chevalier Breastplate
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272719, {	-- Premier Chevalier Gauntlets
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272744, {	-- Premier Chevalier Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272718, {	-- Premier Chevalier Sabatons
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272721, {	-- Premier Chevalier Armsplints
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272720, {	-- Premier Chevalier Cinch
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(PRIEST, bubbleDownSelf({ classes = { PRIEST } }, {
 						-- Epic set: Field Marshal's Investiture
@@ -300,14 +580,54 @@ root(ROOTS.PVP, {
 						i(273428),	-- Premier Knight-Captain's Mooncloth Sash
 
 						-- Rare set: Lieutenant Commander's Investiture
-						i(272677),	-- Premier Mooncloth Hood
-						i(272678),	-- Premier Mooncloth Mantle
-						i(273448),	-- Premier Mooncloth Robes
-						i(273445),	-- Premier Mooncloth Gloves
-						i(273447),	-- Premier Mooncloth Leggings
-						i(273443),	-- Premier Mooncloth Boots
-						i(273444),	-- Premier Mooncloth Cuffs
-						i(273449),	-- Premier Mooncloth Cord
+						i(272677, {	-- Premier Mooncloth Hood
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272678, {	-- Premier Mooncloth Mantle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(273448, {	-- Premier Mooncloth Robes
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(273445, {	-- Premier Mooncloth Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(273447, {	-- Premier Mooncloth Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(273443, {	-- Premier Mooncloth Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(273444, {	-- Premier Mooncloth Cuffs
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(273449, {	-- Premier Mooncloth Cord
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Raiment
 						i(272818),	-- Premier Field Marshal's Voidcloth Headdress
@@ -320,14 +640,54 @@ root(ROOTS.PVP, {
 						i(272825),	-- Premier Knight-Captain's Voidcloth Sash
 
 						-- Rare set: Lieutenant Commander's Raiment
-						i(272814),	-- Premier Voidcloth Diadem
-						i(272817),	-- Premier Voidcloth Amice
-						i(272816),	-- Premier Voidcloth Robes
-						i(272812),	-- Premier Voidcloth Gloves
-						i(272815),	-- Premier Voidcloth Leggings
-						i(272810),	-- Premier Voidcloth Boots
-						i(272811),	-- Premier Voidcloth Cuffs
-						i(272813),	-- Premier Voidcloth Cord
+						i(272814, {	-- Premier Voidcloth Diadem
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272817, {	-- Premier Voidcloth Amice
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272816, {	-- Premier Voidcloth Robes
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272812, {	-- Premier Voidcloth Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272815, {	-- Premier Voidcloth Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272810, {	-- Premier Voidcloth Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272811, {	-- Premier Voidcloth Cuffs
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272813, {	-- Premier Voidcloth Cord
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
 						-- Epic set: Field Marshal's Vestments
@@ -341,14 +701,54 @@ root(ROOTS.PVP, {
 						i(272767),	-- Premier Knight-Captain's Leather Cinch
 
 						-- Rare set: Lieutenant Commander's Vestments
-						i(272727),	-- Premier Leather Veil
-						i(272729),	-- Premier Leather Spaulders
-						i(272726),	-- Premier Leather Armor
-						i(272708),	-- Premier Leather Gauntlets
-						i(272728),	-- Premier Leather Legguards
-						i(272704),	-- Premier Leather Boots
-						i(272706),	-- Premier Leather Bracers
-						i(272710),	-- Premier Leather Belt
+						i(272727, {	-- Premier Leather Veil
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272729, {	-- Premier Leather Spaulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272726, {	-- Premier Leather Armor
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272708, {	-- Premier Leather Gauntlets
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272728, {	-- Premier Leather Legguards
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272704, {	-- Premier Leather Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272706, {	-- Premier Leather Bracers
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272710, {	-- Premier Leather Belt
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(SHAMAN, bubbleDownSelf({ classes = { SHAMAN } }, {
 						-- Epic set: Field Marshal's Earthshaker
@@ -362,14 +762,54 @@ root(ROOTS.PVP, {
 						i(274185),	-- Premier Knight-Captain's Flatmail Waistband
 
 						-- Rare set: Lieutenant Commander's Earthshaker
-						i(274196),	-- Premier Flatmail Headguard
-						i(274181),	-- Premier Flatmail Shoulders
-						i(274194),	-- Premier Flatmail Hauberk
-						i(274177),	-- Premier Flatmail Grips
-						i(274180),	-- Premier Flatmail Leggings
-						i(274192),	-- Premier Flatmail Greaves
-						i(274182),	-- Premier Flatmail Wristguards
-						i(274214),	-- Premier Flatmail Girdle
+						i(274196, {	-- Premier Flatmail Headguard
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274181, {	-- Premier Flatmail Shoulders
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(274194, {	-- Premier Flatmail Hauberk
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(274177, {	-- Premier Flatmail Grips
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274180, {	-- Premier Flatmail Leggings
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274192, {	-- Premier Flatmail Greaves
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274182, {	-- Premier Flatmail Wristguards
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(274214, {	-- Premier Flatmail Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Thunderfist
 						i(274203),	-- Premier Field Marshal's Scalemail Helm
@@ -382,14 +822,54 @@ root(ROOTS.PVP, {
 						i(274200),	-- Premier Knight-Captain's Scalemail Waistband
 
 						-- Rare set: Lieutenant Commander's Thunderfist
-						i(274178),	-- Premier Scalemail Helm
-						i(274197),	-- Premier Scalemail Pauldrons
-						i(274179),	-- Premier Scalemail Chestpiece
-						i(274193),	-- Premier Scalemail Vices
-						i(274195),	-- Premier Scalemail Legguards
-						i(274176),	-- Premier Scalemail Walkers
-						i(274215),	-- Premier Scalemail Wristguards
-						i(274225),	-- Premier Scalemail Girdle
+						i(274178, {	-- Premier Scalemail Helm
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274197, {	-- Premier Scalemail Pauldrons
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(274179, {	-- Premier Scalemail Chestpiece
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(274193, {	-- Premier Scalemail Vices
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274195, {	-- Premier Scalemail Legguards
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274176, {	-- Premier Scalemail Walkers
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274215, {	-- Premier Scalemail Wristguards
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(274225, {	-- Premier Scalemail Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 
 						-- Epic set: Field Marshal's Wartide
 						i(274211),	-- Premier Field Marshal's Linkmail Helm
@@ -402,14 +882,54 @@ root(ROOTS.PVP, {
 						i(274208),	-- Premier Knight-Captain's Linkmail Waistband
 
 						-- Rare set: Lieutenant Commander's Wartide
-						i(274218),	-- Premier Linkmail Helm
-						i(274222),	-- Premier Linkmail Pauldrons
-						i(274219),	-- Premier Linkmail Chestpiece
-						i(274220),	-- Premier Linkmail Vices
-						i(274221),	-- Premier Linkmail Legguards
-						i(274217),	-- Premier Linkmail Walkers
-						i(274223),	-- Premier Linkmail Wristguards
-						i(274224),	-- Premier Linkmail Girdle
+						i(274218, {	-- Premier Linkmail Helm
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274222, {	-- Premier Linkmail Pauldrons
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(274219, {	-- Premier Linkmail Chestpiece
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(274220, {	-- Premier Linkmail Vices
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274221, {	-- Premier Linkmail Legguards
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(274217, {	-- Premier Linkmail Walkers
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(274223, {	-- Premier Linkmail Wristguards
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(274224, {	-- Premier Linkmail Girdle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(WARLOCK, bubbleDownSelf({ classes = { WARLOCK } }, {
 						-- Epic set: Field Marshal's Threads
@@ -423,14 +943,54 @@ root(ROOTS.PVP, {
 						i(272809),	-- Premier Knight-Captain's Dreadweave Sash
 
 						-- Rare set: Lieutenant Commander's Threads
-						i(272671),	-- Premier Dreadweave Cowl
-						i(272801),	-- Premier Dreadweave Mantle
-						i(272800),	-- Premier Dreadweave Robe
-						i(272796),	-- Premier Dreadweave Gloves
-						i(272657),	-- Premier Dreadweave Legguards
-						i(272794),	-- Premier Dreadweave Boots
-						i(272795),	-- Premier Dreadweave Bracers
-						i(272797),	-- Premier Dreadweave Belt
+						i(272671, {	-- Premier Dreadweave Cowl
+							cost = {
+								{ "i", 20560, 15 },	-- x15 Alterac Valley Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272801, {	-- Premier Dreadweave Mantle
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6350 },	-- x6350 Honor Points
+							},
+						}),
+						i(272800, {	-- Premier Dreadweave Robe
+							cost = {
+								{ "i", 20559, 15 },	-- x15 Arathi Basin Mark of Honor
+								{ "c", 1792, 9350 },	-- x9350 Honor Points
+							},
+						}),
+						i(272796, {	-- Premier Dreadweave Gloves
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272657, {	-- Premier Dreadweave Legguards
+							cost = {
+								{ "i", 20558, 15 },	-- x15 Warsong Gulch Mark of Honor
+								{ "c", 1792, 9000 },	-- x9000 Honor Points
+							},
+						}),
+						i(272794, {	-- Premier Dreadweave Boots
+							cost = {
+								{ "i", 274895, 10 },	-- x10 Darkspear Islands Mark of Honor
+								{ "c", 1792, 7500 },	-- x7500 Honor Points
+							},
+						}),
+						i(272795, {	-- Premier Dreadweave Bracers
+							cost = {
+								{ "i", 20558, 10 },	-- x10 Warsong Gulch Mark of Honor
+								{ "c", 1792, 4500 },	-- x4500 Honor Points
+							},
+						}),
+						i(272797, {	-- Premier Dreadweave Belt
+							cost = {
+								{ "i", 20559, 10 },	-- x10 Arathi Basin Mark of Honor
+								{ "c", 1792, 6000 },	-- x6000 Honor Points
+							},
+						}),
 					})),
 					cl(WARRIOR, bubbleDownSelf({ classes = { WARRIOR } }, {
 						-- Epic set: Field Marshal's Battlegear

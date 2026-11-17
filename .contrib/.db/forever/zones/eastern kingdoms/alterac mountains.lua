@@ -939,6 +939,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				sym = {
 					{ "select", "npcID", 12781 },	-- Master Sergeant Biggins <Officer Accessories Quartermaster>
 					{ "pop" },
+					{ "exclude", "itemID", 15198 },	-- Knight's Colors (Biggins only)
 				},
 				races = ALLIANCE_ONLY,
 			}),
