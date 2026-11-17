@@ -1073,7 +1073,7 @@ instanceroot(228, {	-- Blackrock Depths
 							--i(22255),	-- Magma Forged Band \\Commented out until confirmed
 							--i(22256),	-- Mana Shaping Handwraps \\Commented out until confirmed
 							i(11923),	-- The Hammer of Grace
-							--i(22254),	-- Wand of Eternal Light \\Commented out until confirmed
+							i(22254),	-- Wand of Eternal Light
 							i(11920),	-- Wraith Scythe
 						},
 					}),
