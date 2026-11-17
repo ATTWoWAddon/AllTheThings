@@ -942,6 +942,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				},
 				groups = {
 					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
 					i(32285),	-- Design: Flashing Crimson Spinel (RECIPE!)
 					i(32296, {timeline = { ADDED_2_1_0, REMOVED_4_0_3 }}),	-- Design: Great Lionseye (RECIPE!)
 					i(32303),	-- Design: Inscribed Pyrestone (RECIPE!)

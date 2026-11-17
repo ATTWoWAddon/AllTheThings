@@ -75,6 +75,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				i(30028),	-- Seventh Ring of the Tirisfalen
 				i(30183),	-- Nether Vortex
 			}),
+			-- #if BEFORE CATA
+			n(COMMON_BOSS_DROPS, {
+				crs = {
+					19514,	-- Al'ar
+					19516,	-- Void Reaver
+					18805,	-- High Astromancer Solarian
+					19622,	-- Kael'thas Sunstrider
+				},
+				groups = {
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+				},
+			}),
+			-- #endif
 			e(1573, {	-- Al'ar
 				creatureID = 19514,
 				groups = {
