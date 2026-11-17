@@ -335,3 +335,7 @@ instanceroot(232, {	-- Maraudon
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(7069),	-- <UNUSED>, completes with Corruption of Earth and Seed (7065) [A]
+});
