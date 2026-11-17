@@ -305158,10 +305158,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Windfury Cone",
 			es = "Bellota Viento Furioso",
+			mx = "Cono de viento furioso",
 			de = "Windzornzapfen",
 			fr = "Cône de Furie-des-vents",
+			pt = "Cone de Fúria dos Ventos",
 			ru = "Шишка неистовства ветра",
 			ko = "질풍의 솔방울",
+			cn = "风怒球果",
+			tw = "風怒錐果",
 		},
 	},
 	[403337] = {

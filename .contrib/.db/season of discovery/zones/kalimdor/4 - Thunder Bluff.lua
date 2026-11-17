@@ -319,6 +319,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
 				sourceQuest = 76156,	-- Stalk With The Earthmother (1/3)
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+				qi = 206176,	-- Mortar and Pestle
 				coord = { 39.6, 65.6, THUNDER_BLUFF },
 				maps = { MULGORE },
 				classes = { SHAMAN },
