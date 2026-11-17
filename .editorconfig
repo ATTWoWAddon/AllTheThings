@@ -46,8 +46,8 @@ tab_width = unset
 trim_trailing_whitespace = unset
 insert_final_newline = unset
 
-# Binary asset extensions (BLP, OGG, WAV)
-[**.{blp,ogg,wav}]
+# Binary asset extensions (ICO, BLP, OGG, WAV)
+[**.{blp,ogg,wav,ico}]
 charset = unset
 end_of_line = unset
 indent_style = unset

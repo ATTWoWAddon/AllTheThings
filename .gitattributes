@@ -112,6 +112,7 @@ docs export-ignore
 *.blp binary
 *.ogg binary
 *.wav binary
+*.ico binary
 
 # VS solution files
 *.sln       text eol=crlf
