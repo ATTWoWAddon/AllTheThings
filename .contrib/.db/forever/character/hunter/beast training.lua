@@ -482,6 +482,52 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		},
 
 		{
+			recipeID = 1264758,	-- Dismember [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				1693,	-- Loch Crocolisk (Crocolisk, 14-15, Loch Modan)
+				270693,	-- Daggerfang (Crocolisk, 15, Loch Modan)
+				1417,	-- Young Wetlands Crocolisk (Crocolisk, 21-22, Wetlands)
+				1400,	-- Wetlands Crocolisk (Crocolisk, 23-24, Wetlands)
+			},
+		},
+		{
+			recipeID = 1264927,	-- Dismember [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				1150,	-- River Crocolisk (Crocolisk, 30-31, Stranglethorn Vale)
+				1151,	-- Saltwater Crocolisk (Crocolisk, 35-36, Stranglethorn Vale)
+				1084,	-- Young Sawtooth Crocolisk (Crocolisk, 35-36, Swamp of Sorrows)
+			},
+		},
+		{
+			recipeID = 1264929,	-- Dismember [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				4342,	-- Drywallow Vicejaw (Crocolisk, 36-37, Dustwallow Marsh)
+				259046,	-- Freshwater Crocolisk (Crocolisk, 38-39, Riverglades)
+			},
+		},
+		{
+			recipeID = 1264930,	-- Dismember [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1264933,	-- Dismember [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+
+		{
 			recipeID = 23145,	-- Dive [Rank 1]
 			rank = 1,
 			lvl = 30,
@@ -526,6 +572,52 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 				7455,	-- Winterspring Owl (Owl, 54-56, Winterspring)
 				2931,	-- Zaricotl (Carrion Bird, 55, Badlands)
 				7456,	-- Winterspring Screecher (Owl, 57-59, Winterspring)
+			},
+		},
+
+		{
+			recipeID = 1265899,	-- Dust Cloud [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				3246,	-- Fleeting Plainstrider (Tallstrider, 12-13, The Barrens)
+				2322,	-- Foreststrider (Tallstrider, 14-16, Darkshore)
+				2172,	-- Strider Clutchmother (Tallstrider, 20, Darkshore)
+			},
+		},
+		{
+			recipeID = 1265901,	-- Dust Cloud [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				4724,	-- Sandstrider (Tallstrider, 30-31, Desolace)
+			},
+		},
+		{
+			recipeID = 1265902,	-- Dust Cloud [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				263348,	-- Roving Tallstrider (Tallstrider, 37-38, Riverglades)
+				4725,	-- Crazed Sandstrider (Tallstrider, 37-39, Desolace)
+			},
+		},
+		{
+			recipeID = 1265903,	-- Dust Cloud [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1265904,	-- Dust Cloud [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				272392,	-- Giant Moonstrider (Tallstrider, 60, Moonglade)
 			},
 		},
 
@@ -763,6 +855,52 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		},
 
 		{
+			recipeID = 1265054,	-- Mine! [Rank 1]
+			rank = 1,
+			lvl = 10,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				276101,	-- Nightscreech (Owl, 10, Teldrassil)
+				270298,	-- Child of Jai'vhanel (Owl, 10-12, Darkshore)
+				270196,	-- Jai'vhanel (Owl, 12, Darkshore)
+			},
+		},
+		{
+			recipeID = 1265055,	-- Mine! [Rank 2]
+			rank = 2,
+			lvl = 20,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1265056,	-- Mine! [Rank 3]
+			rank = 3,
+			lvl = 30,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				272389,	-- Marsh Owl (Owl, 34-36, Alterac Mountains)
+			},
+		},
+		{
+			recipeID = 1265057,	-- Mine! [Rank 4]
+			rank = 4,
+			lvl = 40,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				7097,	-- Ironbeak Owl (Owl, 48-49, Felwood)
+				7455,	-- Winterspring Owl (Owl, 54-56, Winterspring)
+			},
+		},
+		{
+			recipeID = 1265058,	-- Mine! [Rank 5]
+			rank = 5,
+			lvl = 50,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				7456,	-- Winterspring Screecher (Owl, 57-60, Winterspring)
+			},
+		},
+
+		{
 			recipeID = 24545,	-- Natural Armor [Rank 1]
 			rank = 1,
 			lvl = 10,
@@ -836,6 +974,54 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		},
 
 		{
+			recipeID = 1264735,	-- Pinch [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				2232,	-- Tide Crawler (Crab, 12-14, Darkshore)
+				830,		-- Sand Crawler (Crab, 13-14, Westfall)
+				2235,	-- Reef Crawler (Crab, 15-17, Darkshore)
+				1216,	-- Shore Crawler (Crab, 17-18, Westfall)
+				2236,	-- Raging Reef Crawler (Crab, 20-21, Darkshore)
+			},
+		},
+		{
+			recipeID = 1264736,	-- Pinch [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				12347,	-- Enraged Reef Crawler (Crab, 30-32, Desolace)
+			},
+		},
+		{
+			recipeID = 1264739,	-- Pinch [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				255901,	-- Sand Crawler (Crab, 36-37, Riverglades)
+				922,		-- Silt Crawler (Crab, 40-41, Swamp of Sorrows)
+			},
+		},
+		{
+			recipeID = 1264741,	-- Pinch [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				256807,	-- Shore Crawler (Crab, 39-40, Riverglades)
+			},
+		},
+		{
+			recipeID = 1264742,	-- Pinch [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+
+		{
 			recipeID = 24450,	-- Prowl [Rank 1]
 			rank = 1,
 			lvl = 32,
@@ -862,6 +1048,61 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			crs = {
 				2522,	-- Jaguero Stalker (Cat, 50, Stranglethorn Vale)
 				7432,	-- Frostsaber Stalker (Cat, 59-60, Winterspring)
+			},
+		},
+
+		{
+			recipeID = 1265065,	-- Savage Rend [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				3255,	-- Sunscale Screecher (Raptor, 13-15, The Barrens)
+			},
+		},
+		{
+			recipeID = 1265066,	-- Savage Rend [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				1015,	-- Highland Raptor (Raptor, 23-24, Wetlands)
+				1016,	-- Highland Lashtail (Raptor, 24-25, Wetlands)
+				1021,	-- Mottled Screecher (Raptor, 24-25, Wetlands)
+				1017,	-- Highland Scytheclaw (Raptor, 25-26, Wetlands)
+				1022,	-- Mottled Scytheclaw (Raptor, 25-26, Wetlands)
+				1023,	-- Mottled Razormaw (Raptor, 26-27, Wetlands)
+				1018,	-- Highland Razormaw (Raptor, 27-28, Wetlands)
+				1019,	-- Elder Razormaw (Raptor, 29, Wetlands)
+				855,		-- Young Stranglethorn Raptor (Raptor, 30-31, Stranglethorn Vale)
+				685,		-- Stranglethorn Raptor (Raptor, 33-34, Stranglethorn Vale)
+				856,		-- Young Lashtail Raptor (Raptor, 33-34, Stranglethorn Vale)
+			},
+		},
+		{
+			recipeID = 1265067,	-- Savage Rend [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				2561,	-- Highland Fleshstalker (Raptor, 36-37, Arathi Highlands)
+				4355,	-- Bloodfen Scytheclaw (Raptor, 37-38, Dustwallow Marsh)
+				687,		-- Jungle Stalker (Raptor, 40-41, Stranglethorn Vale)
+			},
+		},
+		{
+			recipeID = 1265068,	-- Savage Rend [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1265069,	-- Savage Rend [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				6508,	-- Venomhide Ravasaur (Raptor, 50-51, Un'Goro Crater)
 			},
 		},
 
@@ -991,6 +1232,143 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 		},
 
 		{
+			recipeID = 1264478,	-- Sonic Blast [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				10357,	-- Ressan the Needler (Bat, 11-12, Tirisfal Glades)
+				277882,	-- Foothills Duskbat (Bat, 12-13, Silverpine Forest / Undercity / Tirisfal Glades)
+			},
+		},
+		{
+			recipeID = 1264479,	-- Sonic Blast [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				277881,	-- Bloodwing Bat (Bat, 24-26, Hillsbrad Foothills)
+			},
+		},
+		{
+			recipeID = 1264480,	-- Sonic Blast [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1264481,	-- Sonic Blast [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				255174,	-- Blind Screecher (Bat, 41-42, Shen'dralas)
+				8600,	-- Plaguebat (Bat, 53-55, Eastern Plaguelands)
+			},
+		},
+		{
+			recipeID = 1264482,	-- Sonic Blast [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+
+		{
+			recipeID = 1264494,	-- Swipe [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				1797,	-- Giant Grizzled Bear (Bear, 12-13, Silverpine Forest)
+				259388,	-- Mystmane (Bear, 13, Zephras Isle)
+				1188,	-- Grizzled Black Bear (Bear, 13-14, Loch Modan)
+				12432,	-- Old Vicejaw (Bear, 14, Silverpine Forest)
+			},
+		},
+		{
+			recipeID = 1264497,	-- Swipe [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				2356,	-- Elder Gray Bear (Bear, 25-26, Hillsbrad Foothills / Alterac Mountains / Arathi Highlands)
+				271334,	-- Maddened Rotclaw (Bear, 25-26, Wetlands)
+				14280,	-- Big Samras (Bear, 27, Hillsbrad Foothills)
+			},
+		},
+		{
+			recipeID = 1264498,	-- Swipe [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				5268,	-- Ironfur Bear (Bear, 41-42, Feralas)
+			},
+		},
+		{
+			recipeID = 1264501,	-- Swipe [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				8958,	-- Angerclaw Mauler (Bear, 49-50, Felwood)
+			},
+		},
+		{
+			recipeID = 1264502,	-- Swipe [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				10806,	-- Ursius (Bear, 56, Winterspring)
+				251199,	-- Head Scratcher (Bear, 60, Mount Hyjal)
+			},
+		},
+
+		{
+			recipeID = 1265038,	-- Tendon Rip [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				4127,	-- Hecklefang Hyena (Hyena, 15-16, The Barrens)
+			},
+		},
+		{
+			recipeID = 1265039,	-- Tendon Rip [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				4250,	-- Galak Packhound (Hyena, 24, Thousand Needles)
+				4248,	-- Pesterhide Hyena (Hyena, 26-27, Thousand Needles)
+				4249,	-- Pesterhide Snarler (Hyena, 28-29, Thousand Needles / Feralas)
+				14228,	-- Giggler (Hyena, 34, Desolace)
+			},
+		},
+		{
+			recipeID = 1265040,	-- Tendon Rip [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				5426,	-- Blisterpaw Hyena (Hyena, 44-45, Tanaris)
+			},
+		},
+		{
+			recipeID = 1265041,	-- Tendon Rip [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+		{
+			recipeID = 1265042,	-- Tendon Rip [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
+		},
+
+		{
 			recipeID = 26090,	-- Thunderstomp [Rank 1]
 			rank = 1,
 			lvl = 32,
@@ -1025,7 +1403,64 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			timeline = { TIMELINE.ADDED_1_60_1 },
 			crs = {
 				277645,	-- Gray Fox (Fox, 22-23, Duskwood)
+				249474,	-- Rustleaf Fox (Fox, 56-57, Mount Hyjal)
 			},
+		},
+
+		{
+			recipeID = 1265843,	-- Web [Rank 1]
+			rank = 1,
+			lvl = 12,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				1780,	-- Moss Stalker (Spider, 12-13, Silverpine Forest)
+				1184,	-- Cliff Lurker (Spider, 13-14, Loch Modan)
+				4007,	-- Deepmoss Venomspitter (Spider, 17-18, Stonetalon Mountains)
+				539,		-- Pygmy Venom Web Spider (Spider, 18-19, Duskwood / Elwynn Forest / Westfall)
+				217,		-- Venom Web Spider (Spider, 19-20, Duskwood / Elwynn Forest / Westfall)
+				3819,	-- Wildthorn Stalker (Spider, 20-21, Ashenvale)
+				1111,	-- Leech Stalker (Spider, 21-22, Wetlands)
+			},
+		},
+		{
+			recipeID = 1265878,	-- Web [Rank 2]
+			rank = 2,
+			lvl = 24,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				930,		-- Black Widow Hatchling (Spider, 20-25, Duskwood)
+				2349,	-- Giant Moss Creeper (Spider, 24-25, Hillsbrad Foothills / Alterac Mountains / Silverpine Forest)
+				3820,	-- Wildthorn Venomspitter (Spider, 24-25, Ashenvale)
+				949,		-- Carrion Recluse (Spider, 25-26, Duskwood)
+			},
+		},
+		{
+			recipeID = 1265880,	-- Web [Rank 3]
+			rank = 3,
+			lvl = 36,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				858,		-- Sorrow Spinner (Spider, 36-37, Swamp of Sorrows / Blasted Lands)
+				4414,	-- Darkfang Venomspitter (Spider, 37-38, Dustwallow Marsh)
+			},
+		},
+		{
+			recipeID = 1265881,	-- Web [Rank 4]
+			rank = 4,
+			lvl = 48,
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			crs = {
+				5858,	-- Searing Lava Spider (Spider, 47-49, Searing Gorge)
+				1822,	-- Venom Mist Lurker (Spider, 50-51, Western Plaguelands / Tirisfal Glades)
+				1821,	-- Carrion Lurker (Spider, 52-53, Western Plaguelands)
+				11738,	-- Sand Skitterer (Spider, 55-56, Silithus)
+			},
+		},
+		{
+			recipeID = 1265883,	-- Web [Rank 5]
+			rank = 5,
+			lvl = 60,
+			timeline = { TIMELINE.CREATED_1_60_1 },	-- TODO: no beast teaches this rank on Wowhead yet
 		},
 	}),
 })})});
