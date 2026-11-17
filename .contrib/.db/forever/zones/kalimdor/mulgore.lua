@@ -1059,7 +1059,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
-			q(76156, {	-- Stalk With The Earthmother
+			q(76156, {	-- Stalk With The Earthmother 1/3
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
 				races = { ORC, TAUREN, TROLL },
@@ -1073,7 +1073,7 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					}),
 				},
 			}),
-			q(76160, {	-- Stalk With The Earthmother
+			q(76160, {	-- Stalk With The Earthmother 2/3
 				sourceQuest = 76156,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem
 				qi = 206176,	-- Mortar and Pestle
@@ -1084,15 +1084,19 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/1 Pine Salve
-						provider = { "i", 206175 },	-- Pine Salve
-					}),
-					objective(2, {	-- 0/8 Windfury Cone
-						provider = { "i", 206170 },	-- Windfury Cone
+						providers = {
+							{ "i", 206175 },	-- Pine Salve
+							{ "o", 403105 },	-- Windfury Cone
+						},
+						costs = {
+							{ { "i", 206176, 1 } },	-- Mortar and Pestle
+							{ { "i", 206170, 8 } },	-- Windfury Cone
+						},
 					}),
 					i(206177),	-- Pine Nut Butter
 				},
 			}),
-			q(76240, {	-- Stalk With The Earthmother
+			q(76240, {	-- Stalk With The Earthmother 3/3
 				sourceQuest = 76160,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
