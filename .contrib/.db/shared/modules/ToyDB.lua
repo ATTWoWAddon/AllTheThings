@@ -74,7 +74,7 @@ i(276896);	-- Everlasting Silvermoon Shimmerwine
 i(288185);	-- Adventurer's Tent
 i(279471);	-- Alcaz Operative Insignia
 i(279519);	-- TODO: name (listed in Forever's Toy table)
-i(284164);	-- TODO: name (listed in Forever's Toy table)
+i(284164);	-- Scarlet Hearthstone
 i(286203);	-- TODO: name (listed in Forever's Toy table)
 i(286573);	-- TODO: name (listed in Forever's Toy table)
 -- #if FOREVER

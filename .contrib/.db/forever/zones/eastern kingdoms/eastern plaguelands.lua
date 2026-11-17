@@ -1118,6 +1118,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					{ 80.6, 85.6, MAP.EASTERN_PLAGUELANDS },
 					{ 88.4, 86.6, MAP.EASTERN_PLAGUELANDS },
 				},
+				groups = {
+					i(284164, {	-- Scarlet Hearthstone (TOY!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(10826, {	-- Lord Darkscythe
 				coords = {
