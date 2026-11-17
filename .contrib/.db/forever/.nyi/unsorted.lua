@@ -23,4 +23,10 @@ root(ROOTS.Unsorted, {
 	i(275983),	-- Warden's Signet of Resolve
 	i(275984),	-- Warden's Signet of Vigilance
 	i(289559),	-- Enchant Boots - Speed
+
+	-- 1.60.1.70959 (new in ItemSearchName)
+	i(282700),	-- Shadow Scalper
+	i(284270),	-- Ancient Giant's Gaze
+	i(286641),	-- Cannibal's Cleaver
+	i(286645),	-- Reforged Atal'ai Spear
 });
