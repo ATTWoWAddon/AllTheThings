@@ -24,10 +24,9 @@ battleground(169, applyclassicphase(WRATH_PHASE_THREE, {	-- Isle of Conquest
 				}},
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(49052, {	-- Tabard of Conquest
+					pvp(i(49052, {	-- Tabard of Conquest
 						races = ALLIANCE_ONLY,
-						pvp = true,	-- also sold by tabard vendors
-					}),
+					})),
 				},
 			}),
 			ach(3957, {	-- Master of Isle of Conquest (H)
@@ -47,10 +46,9 @@ battleground(169, applyclassicphase(WRATH_PHASE_THREE, {	-- Isle of Conquest
 				}},
 				races = HORDE_ONLY,
 				groups = {
-					i(49054, {	-- Tabard of Conquest
+					pvp(i(49054, {	-- Tabard of Conquest
 						races = HORDE_ONLY,
-						pvp = true,	-- also sold by tabard vendors
-					}),
+					})),
 				},
 			}),
 			ach(3845, {	-- Isle of Conquest All-Star
