@@ -61,49 +61,37 @@ local WOW_ANNIVERSARY_FOUR = createHeader({
 	readable = "WoW's 4th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(2398),
-	},
+	text = { en = WOWAPI_GetAchievementName(2398) },
 });
 local WOW_ANNIVERSARY_FIVE = createHeader({
 	readable = "WoW's 5th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(4400),
-	},
+	text = { en = WOWAPI_GetAchievementName(4400) },
 });
 local WOW_ANNIVERSARY_SIX = createHeader({
 	readable = "WoW's 6th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(5512),
-	},
+	text = { en = WOWAPI_GetAchievementName(5512) },
 });
 local WOW_ANNIVERSARY_SEVEN = createHeader({
 	readable = "WoW's 7th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(5863),
-	},
+	text = { en = WOWAPI_GetAchievementName(5863) },
 });
 local WOW_ANNIVERSARY_EIGHT = createHeader({
 	readable = "WoW's 8th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(6131),
-	},
+	text = { en = WOWAPI_GetAchievementName(6131) },
 });
 local WOW_ANNIVERSARY_NINE = createHeader({
 	readable = "WoW's 9th Anniversary",
 	icon = 133783,
 	-- eventID = ,	--
-	text = {
-		en = WOWAPI_GetAchievementName(7853),
-	},
+	text = { en = WOWAPI_GetAchievementName(7853) },
 });
 local WOW_ANNIVERSARY_TEN = createHeader({
 	readable = "WoW's 10th Anniversary",
@@ -114,9 +102,7 @@ local WOW_ANNIVERSARY_TEN = createHeader({
 		2014, 11, 21,	-- 11/21/2014
 		2015, 01, 05,	-- 01/05/2015
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(8820),
-	},
+	text = { en = WOWAPI_GetAchievementName(8820) },
 });
 local WOW_ANNIVERSARY_ELEVEN = createHeader({
 	readable = "WoW's 11th Anniversary",
@@ -127,9 +113,7 @@ local WOW_ANNIVERSARY_ELEVEN = createHeader({
 		2015, 11, 16,	-- 11/16/2015
 		2015, 11, 30,	-- 11/30/2015
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(10058),
-	},
+	text = { en = WOWAPI_GetAchievementName(10058) },
 });
 local WOW_ANNIVERSARY_TWELVE = createHeader({
 	readable = "WoW's 12th Anniversary",
@@ -140,9 +124,7 @@ local WOW_ANNIVERSARY_TWELVE = createHeader({
 		2016, 11, 16,	-- 11/16/2016
 		2016, 11, 30,	-- 11/30/2016
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(10741),
-	},
+	text = { en = WOWAPI_GetAchievementName(10741) },
 });
 local WOW_ANNIVERSARY_THIRTEEN = createHeader({
 	readable = "WoW's 13th Anniversary",
@@ -153,9 +135,7 @@ local WOW_ANNIVERSARY_THIRTEEN = createHeader({
 		2017, 11, 16,	-- 11/16/2017
 		2017, 11, 30,	-- 11/30/2017
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(11848),
-	},
+	text = { en = WOWAPI_GetAchievementName(11848) },
 });
 local WOW_ANNIVERSARY_FOURTEEN = createHeader({
 	readable = "WoW's 14th Anniversary",
@@ -166,9 +146,7 @@ local WOW_ANNIVERSARY_FOURTEEN = createHeader({
 		2018, 11, 16,	-- 11/16/2018
 		2018, 11, 30,	-- 11/30/2018
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(12827),
-	},
+	text = { en = WOWAPI_GetAchievementName(12827) },
 });
 local WOW_ANNIVERSARY_FIFTEEN = createHeader({
 	readable = "WoW's 15th Anniversary",
@@ -179,9 +157,7 @@ local WOW_ANNIVERSARY_FIFTEEN = createHeader({
 		2019, 11, 5,	-- 11/05/2019
 		2020, 01, 7,	-- 01/07/2020
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(13917),
-	},
+	text = { en = WOWAPI_GetAchievementName(13917) },
 });
 local WOW_ANNIVERSARY_SIXTEEN = createHeader({
 	readable = "WoW's 16th Anniversary",
@@ -192,9 +168,7 @@ local WOW_ANNIVERSARY_SIXTEEN = createHeader({
 		2020, 11, 1,	-- 11/01/2020
 		2020, 11, 22,	-- 11/22/2020
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(14271),
-	},
+	text = { en = WOWAPI_GetAchievementName(14271) },
 });
 local WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 	readable = "WoW's 17th Anniversary",
@@ -205,9 +179,7 @@ local WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 		2021, 11, 15,	-- 11/15/2021
 		2021, 12, 06,	-- 12/06/2021
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(14942),
-	},
+	text = { en = WOWAPI_GetAchievementName(14942) },
 });
 local WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 	readable = "WoW's 18th Anniversary",
@@ -218,9 +190,7 @@ local WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 		2022, 11, 6,	-- 11/06/2022
 		2022, 11, 27,	-- 11/27/2022
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(15218),
-	},
+	text = { en = WOWAPI_GetAchievementName(15218) },
 });
 local WOW_ANNIVERSARY_NINETEEN = createHeader({
 	readable = "WoW's 19th Anniversary",
@@ -231,9 +201,7 @@ local WOW_ANNIVERSARY_NINETEEN = createHeader({
 		2023, 11, 16,	-- 11/16/2023
 		2023, 12, 7,	-- 12/07/2023
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(18702),
-	},
+	text = { en = WOWAPI_GetAchievementName(18702) },
 });
 local WOW_ANNIVERSARY_TWENTY = createHeader({
 	readable = "WoW's 20th Anniversary",
@@ -244,9 +212,7 @@ local WOW_ANNIVERSARY_TWENTY = createHeader({
 		2024, 10, 22,	-- 10/22/2024
 		2025, 01, 07,	-- 01/07/2025
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(41220),
-	},
+	text = { en = WOWAPI_GetAchievementName(41220) },
 });
 WOW_ANNIVERSARY_TWENTYONE = createHeader({
 	readable = "WoW's 21st Anniversary",
@@ -257,9 +223,7 @@ WOW_ANNIVERSARY_TWENTYONE = createHeader({
 		2025, 11, 16,	-- 11/16/2025
 		2025, 12, 07,	-- 12/07/2025
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(61406),
-	},
+	text = { en = WOWAPI_GetAchievementName(61406) },
 });
 WOW_ANNIVERSARY_TWENTYTWO = createHeader({
 	readable = "WoW's 22nd Anniversary",
@@ -270,9 +234,7 @@ WOW_ANNIVERSARY_TWENTYTWO = createHeader({
 		2026, 11, 17,	-- 11/17/2026
 		2026, 12, 8,	-- 12/08/2026
 	},
-	text = {
-		en = WOWAPI_GetAchievementName(63714),
-	},
+	text = { en = WOWAPI_GetAchievementName(63714) },
 });
 
 local BRONZE_TOKEN = 3100;
@@ -481,8 +443,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			-- #endif
 		},
 		groups = {
-			ach(2398),	-- 4th Anniversary
-			i(44819),	-- Baby Blizzard Bear (PET!)
+			ach(2398, {	-- 4th Anniversary
+				i(44819),	-- Baby Blizzard Bear (PET!)
+			}),
 		},
 	}),
 	n(WOW_ANNIVERSARY_FIVE, {
@@ -494,9 +457,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			-- #endif
 		},
 		groups = {
-			ach(4400),	-- 5th Anniversary
-			i(49362),	-- Onyxian Whelpling (PET!)
-		}
+			ach(4400, {	-- 5th Anniversary
+				i(49362),	-- Onyxian Whelpling (PET!)
+			}),
+		},
 	}),
 	n(WOW_ANNIVERSARY_SIX, {
 		timeline = {
@@ -506,9 +470,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ADDED_4_0_1, REMOVED_4_2_2,
 			-- #endif
 		},
-		groups = {
-			ach(5512),	-- 6th Anniversary
-		},
+		groups = { ach(5512) },	-- 6th Anniversary
 	}),
 	n(WOW_ANNIVERSARY_SEVEN, {
 		timeline = {
@@ -520,7 +482,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		groups = {
 			ach(5863),	-- 7th Anniversary
-			i(71134),	-- Celebration Package
+			n(MAILBOX, { i(71134) }),	-- Celebration Package
 		},
 	}),
 	n(WOW_ANNIVERSARY_EIGHT, {
@@ -533,7 +495,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		groups = {
 			ach(6131),	-- 8th Anniversary
-			i(71134),	-- Celebration Package
+			n(MAILBOX, { i(71134) }),	-- Celebration Package
 		},
 	}),
 	n(WOW_ANNIVERSARY_NINE, {
@@ -546,9 +508,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		},
 		groups = {
 			ach(7853),	-- 9th Anniversary
-			n(MAILBOX, {
-				i(90918),	-- Celebration Package
-			}),
+			n(MAILBOX, { i(90918) }),	-- Celebration Package
 		},
 	}),
 	n(WOW_ANNIVERSARY_TEN, {
@@ -565,31 +525,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			ach(9729, {	-- Victory in Hillsbrad (Alliance)
 				races = ALLIANCE_ONLY,
-				groups = {
-					title(280),	-- <Name>, Tarren Mill Terror
-				},
+				groups = { title(280) },	-- <Name>, Tarren Mill Terror
 			}),
 			ach(9566, {	-- Victory in Hillsbrad (Horde)
 				races = HORDE_ONLY,
-				groups = {
-					title(281),	-- <Name>, Southshore Slayer
-				},
+				groups = { title(281) },	-- <Name>, Southshore Slayer
 			}),
-			n(MAILBOX, {
-				i(107224),	-- Celebration Package
-			}),
+			n(MAILBOX, { i(107224) }),	-- Celebration Package
 			e(1528, {	-- Ragnaros
 				crs = { 11502 },	-- Ragnaros
 				groups = {
 					ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
 						i(115484),	-- Core Hound (MOUNT!)
 					}),
-					i(118574),	-- Hatespark the Tiny (PET!)
-					i(118572),	-- Illusion: Flames of Ragnaros (ILLUSION!)
+					i(118940),	-- Crown of Desolation
+					i(118939),	-- Crown of Destruction
 					i(118942),	-- Crown of Power
 					i(118941),	-- Crown of Woe
-					i(118939),	-- Crown of Destruction
-					i(118940),	-- Crown of Desolation
+					i(118574),	-- Hatespark the Tiny (PET!)
+					i(118572),	-- Illusion: Flames of Ragnaros (ILLUSION!)
 				},
 			}),
 		},
@@ -626,31 +580,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ADDED_7_0_3,
 			-- #endif
 		},
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_7_0_3, REMOVED_7_2_5 },
 		}, {	-- One-Time Content
 			ach(10741),	-- 12th Anniversary
 			n(MAILBOX, {
 				i(139284, {	-- Anniversary Gift
 					i(139285),	-- Celebration Package
-					i(139410),	-- Letter from the Timewalker [Horde]
-					i(139409),	-- Letter from the Timewalker [Alliance]
+					h(i(139410)),	-- Letter from the Timewalker [H] (QS!)
+					a(i(139409)),	-- Letter from the Timewalker [A] (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(QUESTS, {
 				q(43472, {	-- The Historians
-					provider = { "i", 139410 },	-- Letter from the Timewalker [Horde]
+					qs = 139410,	-- Letter from the Timewalker [H]
 					coord = { 36.4, 74.4, ORGRIMMAR },
-					timeline = {ADDED_7_0_3, REMOVED_7_2_5},
+					timeline = { ADDED_7_0_3, REMOVED_7_2_5 },
 					races = HORDE_ONLY,
 					isYearly = true,
 				}),
 				q(43471, {	-- The Historians
-					provider = { "i", 139409 },	-- Letter from the Timewalker [Alliance]
+					qs = 139409,	-- Letter from the Timewalker [A]
 					coord = { 84.6, 25.0, STORMWIND_CITY },
-					timeline = {ADDED_7_0_3, REMOVED_7_2_5},
+					timeline = { ADDED_7_0_3, REMOVED_7_2_5 },
 					races = ALLIANCE_ONLY,
 					isYearly = true,
 				}),
@@ -683,51 +636,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 			}),
 			n(VENDORS, {
-				n(110035, {	-- Historian Jupa [Horde]
+				n(110035, {	-- Historian Jupa [H]
 					coord = { 36.6, 74.6, ORGRIMMAR },
 					races = HORDE_ONLY,
 					groups = {
-						i(136925, {	-- Corgi Pup (PET!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(128506, {	-- Celebration Wand - Gnoll
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(128505, {	-- Celebration Wand - Murloc
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
+						i(136925, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Corgi Pup (PET!)
+						i(128506, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Gnoll
+						i(128505, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Murloc
+						i(128510, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Exquisite Costume Set: "Edwin VanCleef"
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-							groups = {
-								ach(10335),	-- Did Someone Say...?
-							},
+							groups = { ach(10335) },	-- Did Someone Say...?
 						}),
 					},
 				}),
-				n(110034, {	-- Historian Llore [Alliance]
+				n(110034, {	-- Historian Llore [A]
 					coord = { 84.6, 25.0, STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(136925, {	-- Corgi Pup (PET!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(128506, {	-- Celebration Wand - Gnoll
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(128505, {	-- Celebration Wand - Murloc
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
+						i(136925, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Corgi Pup (PET!)
+						i(128506, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Gnoll
+						i(128505, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Murloc
+						i(128510, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Exquisite Costume Set: "Edwin VanCleef"
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-							groups = {
-								ach(10335),	-- Did Someone Say...?
-							},
+							groups = { ach(10335) },	-- Did Someone Say...?
 						}),
 					},
 				}),
@@ -742,30 +675,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ADDED_7_2_5
 			-- #endif
 		},
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_7_2_5, REMOVED_7_2_5 },
 		}, {	-- One-Time Content
 			ach(11848),	-- 13th Anniversary
 			n(MAILBOX, {
 				i(147876, {	-- Anniversary Gift
 					i(147877),	-- Celebration Package
-					i(147881),	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
-					i(147880),	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-					i(139410),	-- Letter from the Timewalker [Horde]
-					i(139409),	-- Letter from the Timewalker [Alliance]
+					h(i(147881)),	-- A Slightly More Urgent Letter from the Timewalkers [H] (QS!)
+					a(i(147880)),	-- A Slightly More Urgent Letter from the Timewalkers [A] (QS!)
+					h(i(139410)),	-- Letter from the Timewalker [H] (QS!)
+					a(i(139409)),	-- Letter from the Timewalker [A] (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(QUESTS, {
 				q(47251, {	-- Interesting Things
-					provider = { "i", 147881 },	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
+					qs = 147881,	-- A Slightly More Urgent Letter from the Timewalkers [H] (QS!)
 					coord = { 36.4, 74.4, ORGRIMMAR },
 					timeline = { ADDED_7_2_5, REMOVED_7_2_5 },
 					races = HORDE_ONLY,
 				}),
 				q(47252, {	-- Interesting Things
-					provider = { "i", 147880 },	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
+					qs = 147880,	-- A Slightly More Urgent Letter from the Timewalkers [A] (QS!)
 					coord = { 84.6, 25.0, STORMWIND_CITY },
 					timeline = { ADDED_7_2_5, REMOVED_7_2_5 },
 					races = ALLIANCE_ONLY,
@@ -776,14 +708,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					timeline = { ADDED_7_2_5, REMOVED_11_0_5 },
 					races = ALLIANCE_ONLY,
 					isDaily = true,
-					sym = {{"select","npcID",
+					sym = { { "select", "npcID",
 						121818,	-- Lord Kazzak [Blasted Lands - Always up]
 						121820,	-- Azuregos [Azshara - Always Up]
 						121911,	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
 						121912,	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
 						121821,	-- Lethon [The Hinterlands - 3rd Rotation]
 						121913,	-- Emeriss [Duskwood - 4th Rotation]
-					}},
+					} },
 				}),
 				q(47254, {	-- The Originals [Horde]
 					qgs = {
@@ -804,51 +736,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					races = HORDE_ONLY,
 					-- #endif
 					isDaily = true,
-					sym = {{"select","npcID",
+					sym = { { "select", "npcID",
 						121818,	-- Lord Kazzak [Blasted Lands - Always up]
 						121820,	-- Azuregos [Azshara - Always Up]
 						121911,	-- Taerar [Ashenvale - 1st Rotation] [1st one in 2017]
 						121912,	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
 						121821,	-- Lethon [The Hinterlands - 3rd Rotation]
 						121913,	-- Emeriss [Duskwood - 4th Rotation]
-					}},
+					} },
 				}),
 			}),
 			n(VENDORS, {
-				n(110035, {	-- Historian Jupa [Horde]
+				n(110035, {	-- Historian Jupa [H]
 					coord = { 36.6, 74.6, ORGRIMMAR },
 					races = HORDE_ONLY,
 					groups = {
-						i(147885, {	-- Bronze-Tinted Sunglasses
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(147883, {	-- Celebration Wand - Quillboar
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147882, {	-- Celebration Wand - Trogg
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-						}),
+						i(147885, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Bronze-Tinted Sunglasses
+						i(147883, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Quillboar
+						i(147882, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Trogg
+						i(147884, { cost = { { "c", TIMEWARPED_BADGE, 50 } } }),	-- Tranquil Mechanical Yeti Costume
 					},
 				}),
-				n(110034, {	-- Historian Llore [Alliance]
+				n(110034, {	-- Historian Llore [A]
 					races = ALLIANCE_ONLY,
 					coord = { 84.6, 25.0, STORMWIND_CITY },
 					groups = {
-						i(147885, {	-- Bronze-Tinted Sunglasses
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(147883, {	-- Celebration Wand - Quillboar
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147882, {	-- Celebration Wand - Trogg
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-						}),
+						i(147885, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Bronze-Tinted Sunglasses
+						i(147883, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Quillboar
+						i(147882, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Trogg
+						i(147884, { cost = { { "c", TIMEWARPED_BADGE, 50 } } }),	-- Tranquil Mechanical Yeti Costume
 					},
 				}),
 			}),
@@ -860,16 +776,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					coord = { 48.76, 83.82, AZSHARA },
 					groups = {
 						i(150424),	-- Cold Snap
-						i(150428),	-- Eskhandar's Left Claw
-						i(150423),	-- Fang of the Mystics
-						i(150421),	-- Typhoon
 						i(150419),	-- Crystal Adorned Crown
 						i(150417),	-- Drape of Benediction
+						i(150428),	-- Eskhandar's Left Claw
+						i(150423),	-- Fang of the Mystics
 						i(150544),	-- Mana-Frosted Pauldrons
-						i(150543),	-- Sapphire-Encrusted Tunic
-						i(150422),	-- Unmelting Ice Girdle
-						i(150425),	-- Snowblind Shoes
 						i(150545),	-- Ring of Ancient Arcana
+						i(150543),	-- Sapphire-Encrusted Tunic
+						i(150425),	-- Snowblind Shoes
+						i(150421),	-- Typhoon
+						i(150422),	-- Unmelting Ice Girdle
 					},
 				}),
 				n(121818, {	-- Lord Kazzak [Blasted Lands - Always up]
@@ -879,16 +795,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					coord = { 32.42, 48.21, BLASTED_LANDS },
 					groups = {
 						i(150383),	-- Amberseal Keeper
-						i(150427),	-- Empyrean Demolisher
-						i(150379),	-- Infernal Headcage
-						i(150426),	-- Blazefury Medallion
-						i(150380),	-- Eskhandar's Pelt
 						i(150386),	-- Blacklight Bracer
+						i(150426),	-- Blazefury Medallion
 						i(150382),	-- Doomhide Gauntlets
-						i(150381),	-- Flayed Doomguard Belt
+						i(150427),	-- Empyrean Demolisher
+						i(150380),	-- Eskhandar's Pelt
 						i(150385),	-- Fel-Infused Leggings
+						i(150381),	-- Flayed Doomguard Belt
+						i(150379),	-- Infernal Headcage
+						i(230011, { timeline = { ADDED_11_0_5 } }),	-- Lil'Kaz (PET!)
 						i(150384),	-- Ring of Entropy
-						i(230011, {timeline = { ADDED_11_0_5 }}),	-- Lil'Kaz (PET!)
 					},
 				}),
 				n(DRAGONS_OF_NIGHTMARE, {
@@ -904,40 +820,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								121912,	-- Ysondre
 							},
 							groups = {
+								i(150407),	-- Dragonheart Necklace
+								prof(SKINNING, { i(20381) }),	-- Dreamscale
 								i(150429),	-- Emerald Dragonfang
+								i(150411),	-- Green Dragonskin Cloak
 								i(150412),	-- Hammer of Bestial Fury
+								i(150388),	-- Hibernation Crystal
+								i(150392),	-- Mindtear Band
 								i(150393),	-- Nightmare Blade
 								i(150403),	-- Polished Ironwood Crossbow
-								i(150408),	-- Staff of Rampant Growth
-								i(150411),	-- Green Dragonskin Cloak
-								i(150392),	-- Mindtear Band
 								i(150404),	-- Ring of the Unliving
-								i(150388),	-- Hibernation Crystal
-								i(150407),	-- Dragonheart Necklace
-								prof(SKINNING, {
-									i(20381),	-- Dreamscale
-								}),
+								i(150408),	-- Staff of Rampant Growth
 							},
 						}),
 						n(121913, {	-- Emeriss [Duskwood - 4th Rotation]
 							isRaid = true,
 							coord = { 46.54, 39.73, DUSKWOOD },
 							groups = {
+								i(150410),	-- Acid Inscribed Greaves
+								i(150406),	-- Boots of the Endless Moor
 								i(150405),	-- Circlet of Restless Dreams
 								i(150415),	-- Dragonspur Wraps
 								i(150416),	-- Gloves of Delusional Power
-								i(150410),	-- Acid Inscribed Greaves
-								i(150406),	-- Boots of the Endless Moor
 							},
 						}),
 						n(121821, {	-- Lethon [The Hinterlands - 3rd Rotation]
 							isRaid = true,
 							coord = { 62.87, 25.2, THE_HINTERLANDS },
 							groups = {
-								i(150401),	-- Deviate Growth Cap
 								i(150399),	-- Black Bark Wristbands
-								i(150402),	-- Gauntlets of the Shining Light
 								i(150398),	-- Dark Heart Pants
+								i(150401),	-- Deviate Growth Cap
+								i(150402),	-- Gauntlets of the Shining Light
 								i(150400),	-- Malignant Footguards
 							},
 						}),
@@ -945,23 +859,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							isRaid = true,
 							coord = { 93.8, 40.8, ASHENVALE },
 							groups = {
-								i(150395),	-- Unnatural Leather Spaulders
-								i(150413),	-- Dragonbone Wristguards
 								i(150414),	-- Ancient Corroded Leggings
-								i(150390),	-- Strangely Glyphed Legplates
+								i(150413),	-- Dragonbone Wristguards
 								i(150394),	-- Mendicant's Slippers
+								i(150390),	-- Strangely Glyphed Legplates
+								i(150395),	-- Unnatural Leather Spaulders
 							},
 						}),
 						n(121912, {	-- Ysondre [Feralas - 2nd Rotation] [1st one in 2018]
 							isRaid = true,
 							coord = { 50.93, 11.91, FERALAS },
 							groups = {
-								i(150409),	-- Trance Stone
 								i(150387),	-- Acid Inscribed Pauldrons
-								i(150391),	-- Jade Inlaid Vestments
 								i(150397),	-- Belt of the Dark Bog
-								i(150389),	-- Leggings of the Demented Mind
 								i(150396),	-- Boots of Fright
+								i(150391),	-- Jade Inlaid Vestments
+								i(150389),	-- Leggings of the Demented Mind
+								i(150409),	-- Trance Stone
 							},
 						}),
 					},
@@ -984,32 +898,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(MAILBOX, {
 				i(162637, {	-- Anniversary Gift
 					i(162636),	-- Celebration Package
-					i(147881),	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
-					i(147880),	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-					i(139410),	-- Letter from the Timewalker [Horde]
-					i(139409),	-- Letter from the Timewalker [Alliance]
+					h(i(147881)),	-- A Slightly More Urgent Letter from the Timewalkers [H] (QS!)
+					a(i(147880)),	-- A Slightly More Urgent Letter from the Timewalkers [A] (QS!)
+					h(i(139410)),	-- Letter from the Timewalker [H] (QS!)
+					a(i(139409)),	-- Letter from the Timewalker [A] (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(VENDORS, {
 				n(110035, {	-- Historian Jupa [Horde]
 					coord = { 36.6, 74.6, ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = {
-						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-					},
+					groups = { i(158149, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }) },	-- Overtuned Corgi Goggles (TOY!)
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
 					coord = { 84.6, 25.0, STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = {
-						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-					},
+					groups = { i(158149, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }) },	-- Overtuned Corgi Goggles (TOY!)
 				}),
 			}),
 		}),
@@ -1054,37 +959,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								creatureID = 21212,	-- Lady Vashj
 								groups = {
 									-- Old Token Items
+									i(171919),	-- Cataclysm Headguard
+									i(171920),	-- Cataclysm Headpiece
+									i(171921),	-- Cataclysm Helm
+									i(171917),	-- Cowl of the Avatar
+									i(171922),	-- Cowl of Tirisfall
 									i(171912),	-- Crystalforge Faceguard
 									i(171914),	-- Crystalforge Greathelm
 									i(171913),	-- Crystalforge War-Helm
 									i(171916),	-- Deathmantle Helm
-									i(171919),	-- Cataclysm Headguard
-									i(171920),	-- Cataclysm Headpiece
-									i(171921),	-- Cataclysm Helm
+									i(171910),	-- Destroyer Battle-Helm
+									i(171911),	-- Destroyer Greathelm
+									i(171918),	-- Hood of the Avatar
+									i(171923),	-- Hood of the Corruptor
 									i(171925),	-- Nordrassil Headdress
 									i(171924),	-- Nordrassil Headguard
 									i(171926),	-- Nordrassil Headpiece
-									i(171917),	-- Cowl of the Avatar
-									i(171918),	-- Hood of the Avatar
-									i(171910),	-- Destroyer Battle-Helm
-									i(171911),	-- Destroyer Greathelm
 									i(171915),	-- Rift Stalker Helm
-									i(171922),	-- Cowl of Tirisfall
-									i(171923),	-- Hood of the Corruptor
 									--
-									i(171481),	-- Glorious Gauntlets of Crestfall
-									i(171471),	-- Krakken-Heart Breastplate
-									i(171472),	-- Fang of Vashj
-									i(171474),	-- Serpent Spine Longbow
-									i(171477),	-- Lightfathom Scepter
-									i(171480),	-- Runetotem's Mantle
-									i(171476),	-- Vestments of the Sea-Witch
 									i(171475),	-- Belt of One-Hundred Deaths
 									i(171473),	-- Cobta-Lash Boots
-									i(171479),	-- Coral Band of the Revived
-									i(171478),	-- Ring of Endless Coils
-									i(171482),	-- Prism of Inner Calm
 									i(97554),	-- Coilfang Stalker (PET!)
+									i(171479),	-- Coral Band of the Revived
+									i(171472),	-- Fang of Vashj
+									i(171481),	-- Glorious Gauntlets of Crestfall
+									i(171471),	-- Krakken-Heart Breastplate
+									i(171477),	-- Lightfathom Scepter
+									i(171482),	-- Prism of Inner Calm
+									i(171478),	-- Ring of Endless Coils
+									i(171480),	-- Runetotem's Mantle
+									i(171474),	-- Serpent Spine Longbow
+									i(171476),	-- Vestments of the Sea-Witch
 								},
 							}),
 							e(1576, {	-- Kael'thas Sunstrider
@@ -1098,22 +1003,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171895),	-- Crystalforge Chestguard
 									i(171897),	-- Crystalforge Chestpiece
 									i(171889),	-- Deathmantle Chestguard
+									i(171899),	-- Deathmantle Chestguard
 									i(171894),	-- Destroyer Breastplate
 									i(171893),	-- Destroyer Chestguard
-									i(171899),	-- Deathmantle Chestguard
 									i(171907),	-- Nordrassil Chestguard
 									i(171909),	-- Nordrassil Chestpiece
 									i(171908),	-- Nordrassil Chestplate
 									i(171901),	-- Shroud of the Avatar
 									i(171900),	-- Vestments of the Avatar
 									--
-									i(171898),	-- Rift Stalker Hauberk
-									i(171906),	-- Robe of the Corruptor
-									i(171905),	-- Robes of Tirisfal
+									i(32458),	-- Ashes of Al'ar (MOUNT!)
 									i(171494),	-- Band of the Ranger-General
 									i(171487),	-- Crown of the Sun
 									i(171484),	-- Gauntlets of the Sun King
 									i(171492),	-- Leggings of Murderous Intent
+									i(171898),	-- Rift Stalker Hauberk
+									i(171906),	-- Robe of the Corruptor
+									i(171905),	-- Robes of Tirisfal
 									i(171493),	-- Rod of the Sun King
 									i(171489),	-- Royal Cloak of the Sunstriders
 									i(171495),	-- Royal Gauntlets of Silvermoon
@@ -1122,7 +1028,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171491),	-- Thalassian Wildercloak
 									i(171485),	-- The Nexus Key
 									i(171490),	-- Twinblade of the Phoenix
-									i(32458),	-- Ashes of Al'ar (MOUNT!)
 								},
 							}),
 							e(1581, {	-- Archimonde
@@ -1132,12 +1037,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									-- Old Token Items
 									i(171942),	-- Cowl of Absolution
 									i(171941),	-- Cowl of the Tempest
+									i(171932),	-- Gronnstalker's Helmet
 									i(171943),	-- Hood of Absolution
 									i(171940),	-- Hood of the Malefic
 									i(171929),	-- Lightbringer Faceguard
 									i(171930),	-- Lightbringer Greathelm
 									i(171931),	-- Lightbringer War-Helm
-									i(171932),	-- Gronnstalker's Helmet
 									i(171927),	-- Onslaught Battle-Helm
 									i(171928),	-- Onslaught Greathelm
 									i(171935),	-- Skyshatter Cover
@@ -1148,19 +1053,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171939),	-- Thunderheart Headguard
 									i(171937),	-- Thunderheart Helmet
 									--
-									i(171502),	-- Apostle of Argus
-									i(171496),	-- Cataclysm's Edge
-									i(171504),	-- Tempest of Chaos
-									i(171500),	-- Bristleblitz Striker
 									i(171503),	-- Antonidas' Aegis of Rapt Concentration
-									i(171505),	-- Scepter of Purification
+									i(171502),	-- Apostle of Argus
+									i(171500),	-- Bristleblitz Striker
+									i(171496),	-- Cataclysm's Edge
+									i(122112),	-- Hyjal Wisp (PET!)
+									i(171506),	-- Leggings of Eternity
+									i(171497),	-- Legguards of Endless Rage
 									i(171501),	-- Mail of Fevered Pursuit
 									i(171499),	-- Midnight Chestguard
 									i(171507),	-- Robes of Rhonin
 									i(171498),	-- Savior's Grasp
-									i(171506),	-- Leggings of Eternity
-									i(171497),	-- Legguards of Endless Rage
-									i(122112),	-- Hyjal Wisp (PET!)
+									i(171505),	-- Scepter of Purification
+									i(171504),	-- Tempest of Chaos
 								},
 							}),
 						}),
@@ -1197,252 +1102,106 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							e(1623, {	-- Anub'arak
 								creatureID = 34564,	-- Anub'arak
 								groups = {
-									i(171615, {	-- Aegis of the Coliseum
-										races = HORDE_ONLY,
-									}),
-									i(171616, {	-- Anguish
-										races = HORDE_ONLY,
-									}),
-									i(171560, {	-- Archon Glaive
-										races = ALLIANCE_ONLY,
-									}),
-									i(171604, {	-- Ardent Guard
-										races = HORDE_ONLY,
-									}),
-									i(171583, {	-- Argent Resolve
-										races = ALLIANCE_ONLY,
-									}),
-									i(171525, {	-- Armbands of Dark Determination
-										races = HORDE_ONLY,
-									}),
-									i(171557, {	-- Armbands of the Ashen Saint
-										races = ALLIANCE_ONLY,
-									}),
-									i(171581, {	-- Baelgun's Heavy Crossbow
-										races = ALLIANCE_ONLY,
-									}),
-									i(171527, {	-- Band of the Traitor King
-										races = HORDE_ONLY,
-									}),
-									i(171543, {	-- Band of Deplorable violence
-										races = ALLIANCE_ONLY,
-									}),
-									i(171548, {	-- Belt of Deathly Dominion
-										races = ALLIANCE_ONLY,
-									}),
-									i(171614, {	-- Belt of the Eternal
-										races = HORDE_ONLY,
-									}),
-									i(171556, {	-- Belt of the Forgotten Martyr
-										races = ALLIANCE_ONLY,
-									}),
-									i(171536, {	-- Bindings of the Ashen Saint
-										races = HORDE_ONLY,
-									}),
-									i(171610, {	-- Blackhorn Bludgeon
-										races = HORDE_ONLY,
-									}),
-									i(171533, {	-- Boots of the Icy Floe
-										races = HORDE_ONLY,
-									}),
-									i(171547, {	-- Bracers of Dark Determination
-										races = ALLIANCE_ONLY,
-									}),
-									i(171529, {	-- Breeches of the Deepening Void
-										races = HORDE_ONLY,
-									}),
-									i(171595, {	-- Bulwark of the Royal Guard
-										races = ALLIANCE_ONLY,
-									}),
-									i(171558, {	-- Chestguard of Flowing Elements
-										races = ALLIANCE_ONLY,
-									}),
-									i(171585, {	-- Chestguard of the Warden
-										races = ALLIANCE_ONLY,
-									}),
-									i(171597, {	-- Cinch of the Undying
-										races = ALLIANCE_ONLY,
-									}),
-									i(171589, {	-- Cold Convergence
-										races = ALLIANCE_ONLY,
-									}),
-									i(171584, {	-- Crusader's Glory
-										races = ALLIANCE_ONLY,
-									}),
-									i(171537, {	-- Cuirass of Flowing Elements
-										races = HORDE_ONLY,
-									}),
-									i(171612, {	-- Darkmaw Crossbow
-										races = HORDE_ONLY,
-									}),
-									i(171555, {	-- Footpads of the Icy Floe
-										races = HORDE_ONLY,
-									}),
-									i(171594, {	-- Fordragon Blades
-										races = ALLIANCE_ONLY,
-									}),
-									i(171608, {	-- Forsaken Bonecarver
-										races = HORDE_ONLY,
-									}),
-									i(171603, {	-- Frostblade Hatchet
-										races = HORDE_ONLY,
-									}),
-									i(171542, {	-- Gauntlets of Bitter Reprisal
-										races = HORDE_ONLY,
-									}),
-									i(171535, {	-- Girdle of the Forgotten Martyr
-										races = HORDE_ONLY,
-									}),
-									i(171561, {	-- Gloves of Bitter Reprisal
-										races = ALLIANCE_ONLY,
-									}),
-									i(171562, {	-- Gloves of the Lifeless Touch
-										races = ALLIANCE_ONLY,
-									}),
-									i(171546, {	-- Greaves of the 7th Legion
-										races = ALLIANCE_ONLY,
-									}),
-									i(171524, {	-- Greaves of the Saronite Citadel
-										races = HORDE_ONLY,
-									}),
-									i(171538, {	-- Handwraps of the Lifeless Touch
-										races = HORDE_ONLY,
-									}),
-									i(171541, {	-- Hellion Glaive
-										races = HORDE_ONLY,
-									}),
-									i(171526, {	-- Hellscream Slicer
-										races = HORDE_ONLY,
-									}),
-									i(171587, {	-- Helmet of the Crypt Lord
-										races = ALLIANCE_ONLY,
-									}),
-									i(171602, {	-- Helm of the Crypt Lord
-										races = HORDE_ONLY,
-									}),
-									i(171530, {	-- Leggings of the Awakening
-										races = HORDE_ONLY,
-									}),
-									i(171553, {	-- Leggings of the Deepening Void
-										races = ALLIANCE_ONLY,
-									}),
-									i(171531, {	-- Leggings of the Lurking Threat
-										races = HORDE_ONLY,
-									}),
-									i(171551, {	-- Legguards of the Lurking Threat
-										races = ALLIANCE_ONLY,
-									}),
-									i(171607, {	-- Legplates of Redeemed Blood
-										races = HORDE_ONLY,
-									}),
-									i(171596, {	-- Legplates of the Immortal Spider
-										races = ALLIANCE_ONLY,
-									}),
-									i(171592, {	-- Legplates of the Silver Hand
-										races = ALLIANCE_ONLY,
-									}),
-									i(171552, {	-- Legwraps of the Awakening
-										races = HORDE_ONLY,
-									}),
-									i(171539, {	-- Lurid Manifestation
-										races = HORDE_ONLY,
-									}),
-									i(171599, {	-- Mace of the Earthborn Chieftain
-										races = HORDE_ONLY,
-									}),
-									i(171540, {	-- Maiden's Adoration
-										races = HORDE_ONLY,
-									}),
-									i(171559, {	-- Maiden's Favor
-										races = ALLIANCE_ONLY,
-									}),
-									i(171532, {	-- Might of the Nerub
-										races = HORDE_ONLY,
-									}),
-									i(171554, {	-- Misery's End
-										races = ALLIANCE_ONLY,
-									}),
-									i(171606, {	-- Pauldrons of the Shadow Hunter
-										races = HORDE_ONLY,
-									}),
-									i(171591, {	-- Pauldrons of the Timeless Hunter
-										races = ALLIANCE_ONLY,
-									}),
-									i(171605, {	-- Perdition
-										races = HORDE_ONLY,
-									}),
-									i(171600, {	-- Pride of the Kor'kron
-										races = HORDE_ONLY,
-									}),
-									i(171528, {	-- Reign of the Dead
-										races = HORDE_ONLY,
-									}),
-									i(171549, {	-- Reign of the Unliving
-										races = ALLIANCE_ONLY,
-									}),
-									i(171611, {	-- Robes of the Sleepless
-										races = HORDE_ONLY,
-									}),
-									i(171545, {	-- Signet of the Traitor King
-										races = ALLIANCE_ONLY,
-									}),
-									i(171609, {	-- Shoulderpads of the Snow Bandit
-										races = HORDE_ONLY,
-									}),
-									i(171593, {	-- Spaulders of the Snow Bandit
-										races = ALLIANCE_ONLY,
-									}),
-									i(171601, {	-- Stoneskin Chestplate
-										races = HORDE_ONLY,
-									}),
-									i(171544, {	-- Stormpike Cleaver
-										races = ALLIANCE_ONLY,
-									}),
-									i(171550, {	-- Strength of the Nerub
-										races = ALLIANCE_ONLY,
-									}),
-									i(171534, {	-- Suffering's End
-										races = HORDE_ONLY,
-									}),
-									i(171613, {	-- Sunwalker Legguards
-										races = HORDE_ONLY,
-									}),
-									i(171590, {	-- The Grinder
-										races = ALLIANCE_ONLY,
-									}),
-									i(171582, {	-- The Lion's Maw
-										races = ALLIANCE_ONLY,
-									}),
-									i(171598, {	-- Vestments of the Sleepless
-										races = ALLIANCE_ONLY,
-									}),
-									i(171586, {	-- Vigilant Ward
-										races = ALLIANCE_ONLY,
-									}),
-									i(171523, {	-- Waistguard of Deathly Dominion
-										races = HORDE_ONLY,
-									}),
-									i(171588, {	-- Westfall Saber
-										races = ALLIANCE_ONLY,
-									}),
+									h(i(171615)),	-- Aegis of the Coliseum
+									h(i(171616)),	-- Anguish
+									a(i(171560)),	-- Archon Glaive
+									h(i(171604)),	-- Ardent Guard
+									a(i(171583)),	-- Argent Resolve
+									h(i(171525)),	-- Armbands of Dark Determination
+									a(i(171557)),	-- Armbands of the Ashen Saint
+									a(i(171581)),	-- Baelgun's Heavy Crossbow
+									a(i(171543)),	-- Band of Deplorable violence
+									h(i(171527)),	-- Band of the Traitor King
+									a(i(171548)),	-- Belt of Deathly Dominion
+									h(i(171614)),	-- Belt of the Eternal
+									a(i(171556)),	-- Belt of the Forgotten Martyr
+									h(i(171536)),	-- Bindings of the Ashen Saint
+									h(i(171610)),	-- Blackhorn Bludgeon
+									h(i(171533)),	-- Boots of the Icy Floe
+									a(i(171547)),	-- Bracers of Dark Determination
+									h(i(171529)),	-- Breeches of the Deepening Void
+									a(i(171595)),	-- Bulwark of the Royal Guard
+									a(i(171558)),	-- Chestguard of Flowing Elements
+									a(i(171585)),	-- Chestguard of the Warden
+									a(i(171597)),	-- Cinch of the Undying
+									a(i(171589)),	-- Cold Convergence
+									a(i(171584)),	-- Crusader's Glory
+									h(i(171537)),	-- Cuirass of Flowing Elements
+									h(i(171612)),	-- Darkmaw Crossbow
+									h(i(171555)),	-- Footpads of the Icy Floe
+									a(i(171594)),	-- Fordragon Blades
+									h(i(171608)),	-- Forsaken Bonecarver
+									h(i(171603)),	-- Frostblade Hatchet
+									h(i(171542)),	-- Gauntlets of Bitter Reprisal
+									h(i(171535)),	-- Girdle of the Forgotten Martyr
+									a(i(171561)),	-- Gloves of Bitter Reprisal
+									a(i(171562)),	-- Gloves of the Lifeless Touch
+									a(i(171546)),	-- Greaves of the 7th Legion
+									h(i(171524)),	-- Greaves of the Saronite Citadel
+									h(i(171538)),	-- Handwraps of the Lifeless Touch
+									h(i(171541)),	-- Hellion Glaive
+									h(i(171526)),	-- Hellscream Slicer
+									h(i(171602)),	-- Helm of the Crypt Lord
+									a(i(171587)),	-- Helmet of the Crypt Lord
+									h(i(171530)),	-- Leggings of the Awakening
+									a(i(171553)),	-- Leggings of the Deepening Void
+									h(i(171531)),	-- Leggings of the Lurking Threat
+									a(i(171551)),	-- Legguards of the Lurking Threat
+									h(i(171607)),	-- Legplates of Redeemed Blood
+									a(i(171596)),	-- Legplates of the Immortal Spider
+									a(i(171592)),	-- Legplates of the Silver Hand
+									h(i(171552)),	-- Legwraps of the Awakening
+									h(i(171539)),	-- Lurid Manifestation
+									h(i(171599)),	-- Mace of the Earthborn Chieftain
+									h(i(171540)),	-- Maiden's Adoration
+									a(i(171559)),	-- Maiden's Favor
+									h(i(171532)),	-- Might of the Nerub
+									a(i(171554)),	-- Misery's End
 									i(142085),	-- Nerubian Swarmer (PET!)
+									h(i(171606)),	-- Pauldrons of the Shadow Hunter
+									a(i(171591)),	-- Pauldrons of the Timeless Hunter
+									h(i(171605)),	-- Perdition
+									h(i(171600)),	-- Pride of the Kor'kron
+									h(i(171528)),	-- Reign of the Dead
+									a(i(171549)),	-- Reign of the Unliving
+									h(i(171611)),	-- Robes of the Sleepless
+									h(i(171609)),	-- Shoulderpads of the Snow Bandit
+									a(i(171545)),	-- Signet of the Traitor King
+									a(i(171593)),	-- Spaulders of the Snow Bandit
+									h(i(171601)),	-- Stoneskin Chestplate
+									a(i(171544)),	-- Stormpike Cleaver
+									a(i(171550)),	-- Strength of the Nerub
+									h(i(171534)),	-- Suffering's End
+									h(i(171613)),	-- Sunwalker Legguards
+									a(i(171590)),	-- The Grinder
+									a(i(171582)),	-- The Lion's Maw
+									a(i(171598)),	-- Vestments of the Sleepless
+									a(i(171586)),	-- Vigilant Ward
+									h(i(171523)),	-- Waistguard of Deathly Dominion
+									a(i(171588)),	-- Westfall Saber
 								},
 							}),
 							e(1636, {	-- The Lich King
 								creatureID = 36597,	-- The Lich King
 								groups = {
-									i(172021),	-- Marks of Sanctification Purse
 									i(171571),	-- Archus, Greatstaff of Antonidas
 									i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+									i(142098),	-- Drudge Ghoul (PET!)
 									i(171563),	-- Fal'inrush, Defender of Quel'Thalas
 									i(171566),	-- Glorenzelg, High-Blade of the Silver Hand
 									i(171576),	-- Halion, Staff of Forgotten Love
 									i(171565),	-- Havoc's Call, Blade of Lordaeron Kings
 									i(171568),	-- Heaven's Fall, Kryss of a Thousand Lies
+									i(50818),	-- Invincible (MOUNT!)
+									i(172021),	-- Marks of Sanctification Purse
 									i(171564),	-- Mithrios, Bronzebeard's Legacy
+									i(122229),	-- Music Roll: Invincible
 									i(171567),	-- Oathbinder, Charge of the Ranger-General
 									i(171578),	-- Pugius, Fist of Defiance
 									i(171570),	-- Royal Scepter of Terenas II
+									i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+										sourceQuest = 38990,	-- The Call of Icecrown
+									}),
 									i(171577),	-- Stormfury, Dark Blade of the Betrayer
 									i(171574),	-- Tainted Twig of Nordrassil
 									i(171580),	-- Tel'thas, Dagger of the Blood King
@@ -1450,12 +1209,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171575),	-- Valius, Gavel of the Lightbringer
 									i(171573),	-- Warmace of Menethil
 									i(171579),	-- Windrunner's Heartseeker
-									i(50818),	-- Invincible (MOUNT!)
-									i(142098),	-- Drudge Ghoul (PET!)
-									i(122229),	-- Music Roll: Invincible
-									i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
-										sourceQuest = 38990,	-- The Call of Icecrown
-									}),
 								},
 							}),
 						}),
@@ -1464,39 +1217,39 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								creatureID = 43324,
 								groups = {
 									-- Old tier Items
-									i(171856),	-- Shadowflame Mantle
-									i(171872),	-- Reinforced Sapphirium Shoulderguards
-									i(171870),	-- Reinforced Sapphirium Pauldrons
-									i(171873),	-- Reinforced Sapphirium Mantle
-									i(171857),	-- Mercurial Shoulderwraps
-									i(171858),	-- Mercurial Mantle
-									i(171866),	-- Spaulders of the Raging Elements
-									i(171865),	-- Shoulderwraps of the Raging Elements
-									i(171864),	-- Mantle of the Raging Elements
-									i(171863),	-- Lightning-Charged Spaulders
-									i(171868),	-- Earthen Shoulderguards
-									i(171867),	-- Earthen Pauldrons
-									i(171862),	-- Wind Dancer's Spaulders
-									i(171861),	-- Stormrider's Spaulders
-									i(171860),	-- Stormrider's Shoulderwraps
-									i(171859),	-- Stormrider's Mantle
-									i(171871),	-- Magma Plated Shoulderguards
-									i(171869),	-- Magma Plated Pauldrons
-									i(17155),	-- Firelord's Mantle
-									i(171842),	-- Shalug'doom, the Axe of Unmaking
 									i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
-									i(171854),	-- Twilight's Hammer
-									i(171845),	-- Helm of Maddening Whispers
-									i(171846),	-- Membrane of C'Thun
 									i(171844),	-- Battleplate of the Apocalypse
-									i(171849),	-- Shackles of the End of Days
-									i(171850),	-- Hands of the Twilight Council
 									i(171843),	-- Coil of Ten-Thousand Screams
-									i(171851),	-- Kilt of the Forgotten Battle
-									i(171848),	-- Treads of Hideous Transformation
-									i(171853),	-- Signet of the Fifth Circle
-									i(171852),	-- Fall of Mortality
+									i(171867),	-- Earthen Pauldrons
+									i(171868),	-- Earthen Shoulderguards
 									i(152972),	-- Faceless Minion (PET!)
+									i(171852),	-- Fall of Mortality
+									i(17155),	-- Firelord's Mantle
+									i(171850),	-- Hands of the Twilight Council
+									i(171845),	-- Helm of Maddening Whispers
+									i(171851),	-- Kilt of the Forgotten Battle
+									i(171863),	-- Lightning-Charged Spaulders
+									i(171869),	-- Magma Plated Pauldrons
+									i(171871),	-- Magma Plated Shoulderguards
+									i(171864),	-- Mantle of the Raging Elements
+									i(171846),	-- Membrane of C'Thun
+									i(171858),	-- Mercurial Mantle
+									i(171857),	-- Mercurial Shoulderwraps
+									i(171873),	-- Reinforced Sapphirium Mantle
+									i(171870),	-- Reinforced Sapphirium Pauldrons
+									i(171872),	-- Reinforced Sapphirium Shoulderguards
+									i(171849),	-- Shackles of the End of Days
+									i(171856),	-- Shadowflame Mantle
+									i(171842),	-- Shalug'doom, the Axe of Unmaking
+									i(171865),	-- Shoulderwraps of the Raging Elements
+									i(171853),	-- Signet of the Fifth Circle
+									i(171866),	-- Spaulders of the Raging Elements
+									i(171859),	-- Stormrider's Mantle
+									i(171860),	-- Stormrider's Shoulderwraps
+									i(171861),	-- Stormrider's Spaulders
+									i(171848),	-- Treads of Hideous Transformation
+									i(171854),	-- Twilight's Hammer
+									i(171862),	-- Wind Dancer's Spaulders
 								},
 							}),
 							e(174, {	-- Nefarian's End
@@ -1506,48 +1259,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								},
 								groups = {
 									-- Old tier Items
-									i(171875),	-- Shadowflame Hood
-									i(171889),	-- Reinforced Sapphirium Helmet
-									i(171892),	-- Reinforced Sapphirium Headguard
-									i(171891),	-- Reinforced Sapphirium Faceguard
-									i(171876),	-- Mercurial Hood
-									i(171877),	-- Mercurial Cowl
-									i(171882),	-- Lightning-Charged Headguard
-									i(171885),	-- Helmet of the Raging Elements
-									i(171884),	-- Headpiece of the Raging Elements
-									i(171883),	-- Faceguard of the Raging Elements
-									i(171886),	-- Earthen Helemt
 									i(171887),	-- Earthen Faceguard
-									i(171881),	-- Wind Dancer's Helmet
-									i(171878),	-- Stormrider's Helm
-									i(171880),	-- Stormrider's Headpiece
-									i(171879),	-- Stormrider's Cover
+									i(171886),	-- Earthen Helemt
+									i(171883),	-- Faceguard of the Raging Elements
+									i(171874),	-- Firelord's Hood
+									i(171884),	-- Headpiece of the Raging Elements
+									i(171885),	-- Helmet of the Raging Elements
+									i(171882),	-- Lightning-Charged Headguard
 									i(171890),	-- Magma Plated Faceguard
 									i(171888),	-- Magma Plated Helmet
-									i(171874),	-- Firelord's Hood
+									i(171877),	-- Mercurial Cowl
+									i(171876),	-- Mercurial Hood
+									i(171891),	-- Reinforced Sapphirium Faceguard
+									i(171892),	-- Reinforced Sapphirium Headguard
+									i(171889),	-- Reinforced Sapphirium Helmet
+									i(171875),	-- Shadowflame Hood
+									i(171879),	-- Stormrider's Cover
+									i(171880),	-- Stormrider's Headpiece
+									i(171878),	-- Stormrider's Helm
+									i(171881),	-- Wind Dancer's Helmet
 									--
-									i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
-									i(171638),	-- Andoros, Fist of the Dragon King
-									i(171633),	-- Crul'korak, the Lightning's Arc
 									i(171634),	-- Akmin-Kurai, Dominion's Shield
-									i(171632),	-- Rage of Ages
-									i(171629),	-- Mantle of Nefarius
-									i(171630),	-- Pauldrons of the Apocalypse
-									i(171627),	-- Spaulders of the Scarred Lady
-									i(171637),	-- Shadow of Dread
-									i(171636),	-- Shadowblaze Robes
+									i(171638),	-- Andoros, Fist of the Dragon King
 									i(171635),	-- Belt of the Blackhand
 									i(171628),	-- Belt of the Nightmare
-									i(171631),	-- Prestor's Talisman of Machination
+									i(171633),	-- Crul'korak, the Lightning's Arc
+									i(171629),	-- Mantle of Nefarius
 									i(122195),	-- Music Roll: Legends of Azeroth
+									i(171630),	-- Pauldrons of the Apocalypse
+									i(171631),	-- Prestor's Talisman of Machination
+									i(171632),	-- Rage of Ages
+									i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+									i(171637),	-- Shadow of Dread
+									i(171636),	-- Shadowblaze Robes
+									i(171627),	-- Spaulders of the Scarred Lady
 								},
 							}),
 							e(198, {	-- Ragnaros
 								creatureID = 52409,
 								groups = {
-									i(69224),	-- Pureblood Fire Hawk (MOUNT!)
+									i(171725),	-- Arathar, the Eye of Flame
 									i(171804),	-- Balespider's Hood
+									i(171726),	-- Choker of the Vanquished Lord
 									i(171794),	-- Cowl of the Cleansing Flame
+									i(171728),	-- Crown of Flame
 									i(171770),	-- Dark Phoenix Helmet
 									i(171736),	-- Elementium Deathplate Faceguard
 									i(171740),	-- Elementium Deathplate Helmet
@@ -1555,6 +1310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171815),	-- Erupting Volcanic Headpiece
 									i(171825),	-- Erupting Volcanic Helmet
 									i(171761),	-- Faceguard of the Molten Giant
+									i(171730),	-- Fingers of Incineration
 									i(171809),	-- Firehawk Hood
 									i(171774),	-- Flamewaker's Headguard
 									i(171785),	-- Helmet of the Molten Giant
@@ -1562,20 +1318,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171765),	-- Immolation Faceguard
 									i(171790),	-- Immolation Headguard
 									i(171780),	-- Immolation Helmet
+									i(171727),	-- Ko'gun, Hammer of the Firelord
+									i(171729),	-- Majordomo's Chain of Office
+									i(171646),	-- Matrix Restabilizer
 									i(171754),	-- Obsidian Arborweave Cover
 									i(171744),	-- Obsidian Arborweave Headpiece
 									i(171749),	-- Obsidian Arborweave Helm
+									i(171663),	-- Pauldrons of Roaring Flame
+									i(69224),	-- Pureblood Fire Hawk (MOUNT!)
 									i(171732),	-- Sho'ravon, Greatstaff of Annihilation
 									i(171731),	-- Sho'ravon, Greatstaff of Annihilation (Heroic, confirmed drop)
 									i(171724),	-- Sulfuras, the Extinguished Hand
-									i(171727),	-- Ko'gun, Hammer of the Firelord
-									i(171725),	-- Arathar, the Eye of Flame
-									i(171728),	-- Crown of Flame
-									i(171726),	-- Choker of the Vanquished Lord
-									i(171663),	-- Pauldrons of Roaring Flame
-									i(171730),	-- Fingers of Incineration
-									i(171729),	-- Majordomo's Chain of Office
-									i(171646),	-- Matrix Restabilizer
 									i(171640),	-- Variable Pulse Lightning Capacitor
 									i(171647),	-- Vessel of Acceleration
 								},
@@ -1588,21 +1341,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(172014, {	-- Anniversary Gift
 					i(172013),	-- Celebration Firework
 					i(172015),	-- Celebration Package
-					i(171177),	-- Invitation from the Timewalkers
+					i(171177),	-- Invitation from the Timewalkers (QS!)
 					i(172016),	-- Lil' Nefarian (PET!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			m(1537, {	-- Alterac Valley
 				icon = 236711,	-- Alterac Valley
 				groups = {
-					ach(13928, {	-- Alterac Valley of Olde (A)
-						races = ALLIANCE_ONLY,
-					}),
-					ach(13930, {	-- Alterac Valley of Olde (H)
-						races = HORDE_ONLY,
-					}),
+					a(ach(13928)),	-- Alterac Valley of Olde (A)
+					h(ach(13930)),	-- Alterac Valley of Olde (H)
 					n(QUESTS, {
 						q(57302, {	-- Alterac Valley Graveyards
 							qg = 159811,	-- Sergeant Durgen Stormpike
@@ -1725,12 +1473,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							timeline = { ADDED_9_1_5 },
 							isYearly = true,	-- presumably
 							groups = {
-								i(172022, {	-- Stormpike Battle Ram (MOUNT!)
-									races = ALLIANCE_ONLY,
-								}),
-								i(172023, {	-- Frostwolf Snarler (MOUNT!)
-									races = HORDE_ONLY,
-								}),
+								a(i(172022)),	-- Stormpike Battle Ram (MOUNT!)
+								h(i(172023)),	-- Frostwolf Snarler (MOUNT!)
 							},
 						}),
 						q(57320, {	-- Launch the Attack!
@@ -1845,9 +1589,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 					n(VENDORS, {
 						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-							coords = {
-								{ 58.1, 33.6, HILLSBRAD_FOOTHILLS },
-							},
+							coord = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 							races = HORDE_ONLY,
 							groups = {
 								n(BACK, {
@@ -2278,16 +2020,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						-- #if AFTER 11.0.5
 						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-							crs = { 229711 },	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-							coords = {
-								{ 62.8, 51.1, TANARIS },
-							},
+							cr = 229711,	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+							coord = { 62.8, 51.1, TANARIS },
 						}),
 						n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
-							crs = { 229710 },	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
-							coords = {
-								{ 62.7, 51.0, TANARIS },
-							},
+							cr = 229710,	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+							coord = { 62.7, 51.0, TANARIS },
 						}),
 						-- #endif
 					}),
@@ -2295,7 +2033,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			n(QUESTS, {
 				q(57249, {	-- A Timely Invitation
-					provider = { "i", 171177 },	-- Invitation from the Timewalkers
+					qs = 171177,	-- Invitation from the Timewalkers (QS!)
 					coord = { 53.6, 54.8, CAVERNS_OF_TIME },
 					timeline = { ADDED_8_2_5, REMOVED_11_0_5 },
 					isYearly = true,
@@ -2331,39 +2069,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				n(158061, {	-- Historian Ma'di
 					coord = { 50.7, 41.1, CAVERNS_OF_TIME },
 					groups = {
-						i(147885, {	-- Bronze-Tinted Sunglasses
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(128506, {	-- Celebration Wand - Gnoll
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(128505, {	-- Celebration Wand - Murloc
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147883, {	-- Celebration Wand - Quillboar
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(147882, {	-- Celebration Wand - Trogg
-							cost = { { "c", TIMEWARPED_BADGE, 25 } },
-						}),
-						i(136925, {	-- Corgi Pup (PET!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
+						i(147885, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Bronze-Tinted Sunglasses
+						i(128506, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Gnoll
+						i(128505, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Murloc
+						i(147883, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Quillboar
+						i(147882, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Celebration Wand - Trogg
+						i(136925, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Corgi Pup (PET!)
+						i(128510, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Exquisite Costume Set: "Edwin VanCleef"
 						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-							groups = {
-								ach(10335),	-- Did Someone Say...?
-							},
+							groups = { ach(10335) },	-- Did Someone Say...?
 						}),
-						i(158149, {	-- Overtuned Corgi Goggles (TOY!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(147884, {	-- Tranquil Mechanical Yeti Costume
-							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-						}),
+						i(158149, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Overtuned Corgi Goggles (TOY!)
+						i(147884, { cost = { { "c", TIMEWARPED_BADGE, 50 } } }),	-- Tranquil Mechanical Yeti Costume
 					},
 				}),
 				n(158192, {	-- Leeroy Jenkins
@@ -2391,7 +2109,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	}),
 	n(WOW_ANNIVERSARY_SIXTEEN, {
 		timeline = { ADDED_9_0_1 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_9_0_1, REMOVED_9_0_1 },
 		}, {	-- One-Time Content
 			ach(14271),	-- 16th Anniversary
@@ -2399,26 +2117,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(178513, {	-- Anniversary Gift
 					i(172013),	-- Celebration Firework
 					i(178512),	-- Celebration Package
-					i(171177),	-- Invitation from the Timewalkers
+					i(171177),	-- Invitation from the Timewalkers (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(VENDORS, {
 				n(158061, {	-- Historian Ma'di
 					coord = { 50.7, 41.1, CAVERNS_OF_TIME },
-					groups = {
-						i(178514, {	-- Crafted Cloak of War
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-					},
+					groups = { i(178514, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }) },	-- Crafted Cloak of War
 				}),
 			}),
 		}),
 	}),
 	n(WOW_ANNIVERSARY_SEVENTEEN, {
 		timeline = { ADDED_9_1_5 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_9_1_5, REMOVED_9_1_5 },
 		}, {	-- One-Time Content
 			ach(14942),	-- WoW's 17th Anniversary
@@ -2426,11 +2139,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(185906, {	-- Anniversary Gift
 					i(185907),	-- Celebration Package
 					i(172013),	-- Celebration Firework
-					i(171177),	-- Invitation from the Timewalkers
+					i(171177),	-- Invitation from the Timewalkers (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(QUESTS, {
 				-- #if BEFORE 11.0.5
 				q(60215, {	-- Doomwalkin' Has Come Knockin'
@@ -2449,11 +2161,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(VENDORS, {
 				n(158061, {	-- Historian Ma'di
 					coord = { 50.7, 41.1, CAVERNS_OF_TIME },
-					groups = {
-						i(186556, {	-- Timeless Mechanical Dragonling (PET!)
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-					},
+					groups = { i(186556, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }) },	-- Timeless Mechanical Dragonling (PET!)
 				}),
 			}),
 			n(WORLD_BOSSES, {
@@ -2509,7 +2217,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	}),
 	n(WOW_ANNIVERSARY_EIGHTEEN, {
 		timeline = { ADDED_10_0_0 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_10_0_0, REMOVED_10_0_2_LAUNCH },
 		}, {	-- One-Time Content
 			ach(15218),	-- WoW's 18th Anniversary
@@ -2517,26 +2225,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(187710, {	-- Anniversary Gift
 					i(187709),	-- Celebration Package
 					i(172013),	-- Celebration Firework
-					i(171177),	-- Invitation from the Timewalkers
+					i(171177),	-- Invitation from the Timewalkers (QS!)
 				}),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(VENDORS, {
 				n(158061, {	-- Historian Ma'di
 					coord = { 50.7, 41.1, CAVERNS_OF_TIME },
-					groups = {
-						i(186469, {	-- Illidari Doomhawk (MOUNT!)
-							cost = { { "c", TIMEWARPED_BADGE, 5000 } },
-						}),
-					},
+					groups = { i(186469, { cost = { { "c", TIMEWARPED_BADGE, 5000 } } }) },	-- Illidari Doomhawk (MOUNT!)
 				}),
 			}),
 		}),
 	}),
 	n(WOW_ANNIVERSARY_NINETEEN, {
 		timeline = { ADDED_10_2_0 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_10_2_0, REMOVED_10_2_0 },
 		}, {	-- One-Time Content
 			ach(18702),	-- WoW's 19th Anniversary
@@ -2544,15 +2247,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(208211, {	-- Anniversary Gift
 					i(208210),	-- Celebration Package
 					i(172013),	-- Celebration Firework
-					i(171177),	-- Invitation from the Timewalkers
+					i(171177),	-- Invitation from the Timewalkers (QS!)
 					i(208543, {	-- Lil' Frostwing (PET!)
 						ach(19192),	-- Lil' Frostwing
 					}),
 				}),
 			}),
-		}),
-		{	-- Recurring Content
-			-- empty
+		}), {	-- Recurring Content
 		}),
 	}),
 	n(WOW_ANNIVERSARY_TWENTY, {
@@ -2569,14 +2270,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(REWARDS, {
 				currency(BRONZE_TOKEN),
 			}),
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(ACHIEVEMENTS, {
 				ach(40976, {	-- A Cool Twenty Years
-					maps = {TANARIS},
-					groups = {
-						i(228760),	-- Coldflame Tempest (MOUNT!)
-					},
+					maps = { TANARIS },
+					groups = { i(228760) },	-- Coldflame Tempest (MOUNT!)
 				}),
 				ach(41015, {	-- A Dark Iron Past
 					maps = {
@@ -2589,32 +2287,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				ach(41000),	-- A Timewalking Journey Back to a Classic Dungeon Time (automated)
 				achpart(40994, 40995),	-- An Original (automated) / The Originals (full)
 				ach(40993, {	-- Avid Listener
-					maps = {TANARIS},
+					maps = { TANARIS },
 					groups = {
 						crit(70553),	-- Listen to 'The Heroes of the Scarab Wall' story
 						crit(70555),	-- Listen to 'The Mercy of Baine Bloodhoof' story
 						crit(70554),	-- Listen to 'The Tragedy of Thassarian' story
 					},
 				}),
-				achpart(40990, 40991, {maps = {TANARIS}}),	-- Balloonist / Frequent Flyer (full)
-				ach(40984, {maps = {TANARIS}}),	-- Big Fan
+				achpart(40990, 40991, { maps = { TANARIS } }),	-- Balloonist / Frequent Flyer (full)
+				ach(40984, { maps = { TANARIS } }),	-- Big Fan
 				ach(41033),	-- Classy Dresser
-				ach(40987, {maps = {TANARIS}}),	-- Fashion Critic
+				ach(40987, { maps = { TANARIS } }),	-- Fashion Critic
 				ach(40991, {	-- Frequent Flyer
-					maps = {TANARIS},
+					maps = { TANARIS },
 					groups = {
-						crit(70549, {crs={225017}}),	-- Bronze Balloon
-						crit(70550, {crs={228529}}),	-- Dark Blue Balloon
-						crit(70548, {crs={225252}}),	-- Gold Balloon
-						crit(70551, {crs={228530}}),	-- Light Blue Balloon
+						crit(70549, { crs = { 225017 } }),	-- Bronze Balloon
+						crit(70550, { crs = { 228529 } }),	-- Dark Blue Balloon
+						crit(70548, { crs = { 225252 } }),	-- Gold Balloon
+						crit(70551, { crs = { 228530 } }),	-- Light Blue Balloon
 					},
 				}),
-				ach(40985, {maps = {TANARIS}}),	-- I Have That One!
-				ach(40986, {maps = {TANARIS}}),	-- Mount Master
-				ach(40992, {maps = {TANARIS}}),	-- Peanut Gallery
+				ach(40985, { maps = { TANARIS } }),	-- I Have That One!
+				ach(40986, { maps = { TANARIS } }),	-- Mount Master
+				ach(40992, { maps = { TANARIS } }),	-- Peanut Gallery
 				ach(40989, {	-- Pet Mischief
 					provider = { "i", 224157 },	-- Pet Mirror
-					maps = {TANARIS},
+					maps = { TANARIS },
 				}),
 				ach(40988, {	-- Photo Op!
 					crs = {
@@ -2643,15 +2341,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						226191,	-- Waking Shores
 						226190,	-- Azure Span
 					},
-					maps = {TANARIS},
+					maps = { TANARIS },
 				}),
 				ach(40997),	-- The Gatecrashers (automated)
 				ach(40995),	-- The Originals (automated)
-				ach(41038, {timeline = {REMOVED_11_0_7}}),	-- Token Collector
+				ach(41038, { timeline = { REMOVED_11_0_7 } }),	-- Token Collector
 				ach(41013),	-- Upgraded Apparel
 				ach(40661, {	-- Zoomies!
 					provider = { "i", 224157 },	-- Pet Mirror
-					crs = { 227559 },	-- Zoomy Treat
+					cr = 227559,	-- Zoomy Treat
 					coords = {
 						{ 61.9, 50.1, TANARIS },
 						{ 61.8, 49.9, TANARIS },
@@ -2672,45 +2370,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				groups = {
 					n(ACHIEVEMENTS, {
 						ach(40999, {	-- You're in Your Blackrock Depths
-							crit(70642, {	-- Lord Roccor
-								_encounter = { ROCCOR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70571, {	-- High Interrogator Gerstahn
-								_npc = { GERSTAHN },
-							}),
-							crit(70643, {	-- Bael'Gar
-								_encounter = { BAELGAR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70572, {	-- Houndmaster Grebmar
-								_npc = { GREBMAR },
-							}),
-							crit(70644, {	-- Lord Incendius
-								_encounter = { INCENDIUS, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70575, {	-- Fineous Darkvire
-								_npc = { DARKVIRE },
-							}),
-							crit(70576, {	-- Phalanx
-								_npc = { PHALANX },
-							}),
-							crit(70645, {	-- Golem Lord Argelmach
-								_encounter = { ARGELMACH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70578, {	-- The Seven
-								_encounter = { THE_SEVEN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70646, {	-- General Angerforge
-								_encounter = { ANGERFORGE, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70647, {	-- Ambassador Flamelash
-								_encounter = { FLAMELASH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
-							crit(70581, {	-- Pyromancer Loregrain
-								_npc = { LOREGRAIN },
-							}),
-							crit(70648, {	-- Emperor Dagran Thaurissan
-								_encounter = { DAGRAN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
-							}),
+							crit(70642, { _encounter = { ROCCOR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Lord Roccor
+							crit(70571, { _npc = { GERSTAHN } }),	-- High Interrogator Gerstahn
+							crit(70643, { _encounter = { BAELGAR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Bael'Gar
+							crit(70572, { _npc = { GREBMAR } }),	-- Houndmaster Grebmar
+							crit(70644, { _encounter = { INCENDIUS, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Lord Incendius
+							crit(70575, { _npc = { DARKVIRE } }),	-- Fineous Darkvire
+							crit(70576, { _npc = { PHALANX } }),	-- Phalanx
+							crit(70645, { _encounter = { ARGELMACH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Golem Lord Argelmach
+							crit(70578, { _encounter = { THE_SEVEN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- The Seven
+							crit(70646, { _encounter = { ANGERFORGE, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- General Angerforge
+							crit(70647, { _encounter = { FLAMELASH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Ambassador Flamelash
+							crit(70581, { _npc = { LOREGRAIN } }),	-- Pyromancer Loregrain
+							crit(70648, { _encounter = { DAGRAN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC } }),	-- Emperor Dagran Thaurissan
 						}),
 					}),
 					n(QUESTS, {
@@ -2732,11 +2404,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							},
 							timeline = { REMOVED_11_0_7 },
 							isWeekly = true,
-							groups = {
-								i(232471, {	-- Cache of Dark Iron Treasures
-									sym = SYM_ALL_BRD_DROPS,
-								}),
-							},
+							groups = { i(232471, { sym = SYM_ALL_BRD_DROPS }) },	-- Cache of Dark Iron Treasures
 						}),
 						q(84735, {	-- Truth of the Dark Irons
 							provider = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
@@ -2920,9 +2588,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(231403),	-- Kindling Stave
 							i(231402),	-- Searingscale Leggings
 						}),
-						Boss(DAGRAN, {
-							i(224278),	-- Timewarped Ironforge Blueprints (QI!)
-						}),
+						Boss(DAGRAN, { i(224278) }),	-- Timewarped Ironforge Blueprints (QI!)
 					}),
 					Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 						CommonBossDrops({
@@ -2967,26 +2633,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					n(ACHIEVEMENTS, {
 						ach(40870, {	-- Azeroth's Greatest Detective
 							-- Meta Achievement
-							sym = {{"meta_achievement",
+							sym = { { "meta_achievement",
 								40871,	-- Assistant to the Assistant Guest Relations Manager
 								40873,	-- Crate Insurance Agent
 								40872,	-- I Saved the Party and All I Got Was This Lousy Hat
 								40979,	-- No Crate Left Behind
-							}},
-							groups = {
-								title(571),	-- Detective <Name>
-							},
+							} },
+							groups = { title(571) },	-- Detective <Name>
 						}),
 					}),
 					n(QUESTS, {
 						-- Tutorial Questline
 						q(84143, {	-- Lost and Busy
-							provider = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
+							qg = 226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 							coord = { 63.0, 50.2, TANARIS },
 						}),
 						q(84144, {	-- Tat Big Meanie
 							sourceQuest = 84143,	-- Lost and Busy
-							provider = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
+							qg = 226684,	-- Maru <Junior Secret Sleuf>
 							coord = { 63.2, 52.4, TANARIS },
 							groups = {
 								o(456767, {	-- Red Hair
@@ -2999,9 +2663,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									coord = { 62.0, 51.5, TANARIS },
 									groups = { i(227363) },	-- Hear Historic Tales at the Storyteller Stage! (QI!)
 								}),
-								n(226775, {	-- Ratts <Former Event Coordinator>
-									coord = { 64.0, 51.7, TANARIS },
-								}),
+								n(226775, { coord = { 64.0, 51.7, TANARIS } }),	-- Ratts <Former Event Coordinator>
 								o(456820, {	-- Strange Torch
 									provider = { "i", 207730 },	-- Idol of Ohn'ahra
 									coord = { 63.7, 47.8, TANARIS },
@@ -3012,19 +2674,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						q(84419, {	-- To da Ruins!
 							sourceQuest = 84144,	-- Tat Big Meanie
-							provider = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
+							qg = 226684,	-- Maru <Junior Secret Sleuf>
 							coord = { 63.2, 52.4, TANARIS },
 						}),
 						q(84393, {	-- Da Stick of Revealing
 							sourceQuest = 84419,	-- To da Ruins!
-							provider = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
+							qg = 229062,	-- Maru <Junior Secret Sleuf>
 							coord = { 35.1, 78.2, TANARIS },
 							groups = { i(208092) },	-- Torch of Pyrreth
 						}),
 						q(84363, {	-- Tweasure Hunt
 							description = "Activate Torch of Pyrreth at each of the Dig Sites.",
 							sourceQuest = 84393,	-- Da Stick of Revealing
-							provider = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
+							qg = 229062,	-- Maru <Junior Secret Sleuf>
 							coord = { 37.2, 78.9, TANARIS },
 							groups = {
 								o(459333, {	-- Jeweled Eye
@@ -3051,7 +2713,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						q(84521, {	-- Thoughtful Pursuits
 							sourceQuest = 84363,	-- Tweasure Hunt
-							provider = { "n", 226766 },	-- Benatauk <Unco Benny>
+							qg = 226766,	-- Benatauk <Unco Benny>
 							coord = { 63.3, 52.4, TANARIS },
 							groups = {
 								i(228617),	-- Benatauk's Clue Book (QI!)
@@ -3072,13 +2734,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						q(84868, {	-- A Whiff of Help
 							sourceQuest = 84521,	-- Thoughtful Pursuits
-							provider = { "n", 226766 },	-- Benatauk <Unco Benny>
+							qg = 226766,	-- Benatauk <Unco Benny>
 							coord = { 63.3, 52.4, TANARIS },
-							groups = {
-								hqt(83831, {	-- Triggered on turn in of (84868) A Whiff of Help. Unlocks secret quests accountwide.
-									name = "Complete the Guest Relations tutorial quest chain."
-								}),
-							},
+							groups = { hqt(83831, { name = "Complete the Guest Relations tutorial quest chain." }) },	-- Triggered on turn in of (84868) A Whiff of Help. Unlocks secret quests accountwide.
 						}),
 					}),
 					n(VENDORS, {
@@ -3160,31 +2818,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							provider = { "n", 226796 },	-- Athektin Jones
 							coord = { 63.9, 51.7, TANARIS },
 							groups = {
-								n(226805, {	-- Ellanoir
-									coord = { 63.8, 51.0, TANARIS },
-								}),
-								n(226804, {	-- Duryllin
-									coord = { 63.8, 51.1, TANARIS },
-								}),
-								n(226803, {	-- Juddson Rakes
-									coord = { 63.8, 51.1, TANARIS },
-								}),
+								n(226805, { coord = { 63.8, 51.0, TANARIS } }),	-- Ellanoir
+								n(226804, { coord = { 63.8, 51.1, TANARIS } }),	-- Duryllin
+								n(226803, { coord = { 63.8, 51.1, TANARIS } }),	-- Juddson Rakes
 								n(226810, {	-- Herrkrop
 									provider = { "i", 208092 },	-- Torch of Pyrreth
 									coord = { 66.2, 40.6, TANARIS },
 								}),
-								n(226812, {	-- Scrapes
-									coord = { 66.2, 40.7, TANARIS },
-								}),
-								n(228477, {	-- Nat Pagle
-									coord = { 66.2, 40.7, TANARIS },
-								}),
-								n(226814, {	-- Julia Henning
-									coord = { 65.7, 41.3, TANARIS },
-								}),
-								n(226796, {	-- Athelton Jones
-									coord = { 66.3, 40.6, TANARIS },
-								}),
+								n(226812, { coord = { 66.2, 40.7, TANARIS } }),	-- Scrapes
+								n(228477, { coord = { 66.2, 40.7, TANARIS } }),	-- Nat Pagle
+								n(226814, { coord = { 65.7, 41.3, TANARIS } }),	-- Julia Henning
+								n(226796, { coord = { 66.3, 40.6, TANARIS } }),	-- Athelton Jones
 							},
 						}),
 						q(84278, {	-- Tracking Quest
@@ -3195,24 +2839,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 							},
 							coord = { 63.0, 50.2, TANARIS },
+							qi = 227551,	-- Note from Rexxar (QI!)
 							groups = {
-								i(227551),	-- Note from Rexxar (QI!)
-								o(457025, {	-- Pre-Calibrated Goblin Transport Vessel
-									coord = { 68.0, 40.8, TANARIS },
-								}),
-								n(226952, {	-- Rexxar
-									coord = { 77.3, 46.2, BOREAN_TUNDRA },
-								}),
+
+								o(457025, { coord = { 68.0, 40.8, TANARIS } }),	-- Pre-Calibrated Goblin Transport Vessel
+								n(226952, { coord = { 77.3, 46.2, BOREAN_TUNDRA } }),	-- Rexxar
 							},
 						}),
 						q(84296, {	-- The Trail's Gone Cold
 							description = "1. Locate 3 diary pages around the marked shed and then go to Sholazar Basin.\n2. Interact with the Mounted Spyglass atop the Glimmering Pillar and then head to Icecrown.\n3. Summon Rexxar with your Spirit's Whistle and tell him about a shapeshifter.",
 							sourceQuest = 84278,	-- Tracking Quest
-							provider = { "n", 226952 },	-- Rexxar
+							qg = 226952,	-- Rexxar
 							coord = { 77.3, 46.2, BOREAN_TUNDRA },
-							crs = { 228550 },	-- Rexxar
+							cr = 228550,	-- Rexxar
+							qi = 227664,	-- Spirit's Whistle (QI!)
 							groups = {
-								i(227664),	-- Spirit's Whistle (QI!)
 								o(457156, {	-- Torn Note
 									coord = { 85.9, 34.0, BOREAN_TUNDRA },
 									groups = { i(227665) },	-- Torn Diary, Page 4 (QI!)
@@ -3227,12 +2868,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									coord = { 88.1, 34.6, BOREAN_TUNDRA },
 									groups = { i(227671) },	-- Torn Diary, Page 6 (QI!)
 								}),
-								o(457197, {	-- Mounted Spyglass
-									coord = { 49.7, 36.0, SHOLAZAR_BASIN },
-								}),
-								n(228634, {	-- Scrapes
-									coord = { 16.0, 58.8, ICECROWN },
-								}),
+								o(457197, { coord = { 49.7, 36.0, SHOLAZAR_BASIN } }),	-- Mounted Spyglass
+								n(228634, { coord = { 16.0, 58.8, ICECROWN } }),	-- Scrapes
 							},
 						}),
 						q(84334, {	-- Warn the Detective
@@ -3252,21 +2889,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							},
 							coord = { 61.0, 50.6, TANARIS },
 							groups = {
-								n(227731, {	-- Addie Fizzlebog
-									coord = { 63.5, 51.7, TANARIS },
-								}),
-								n(228250, {	-- Hemet Nesingwary Sr.
-									coord = { 62.5, 51.9, TANARIS },
-								}),
-								n(158192, {	-- Leeroy Jenkins
-									coord = { 63.3, 52.3, TANARIS },
-								}),
-								n(228661, {	-- Athelton Jones (!)
-									coord = { 63.3, 52.3, TANARIS },
-								}),
-								n(228663, {	-- Y'illiya Xennin
-									coord = { 60.0, 62.5, TANARIS },
-								}),
+								n(227731, { coord = { 63.5, 51.7, TANARIS } }),	-- Addie Fizzlebog
+								n(228250, { coord = { 62.5, 51.9, TANARIS } }),	-- Hemet Nesingwary Sr.
+								n(158192, { coord = { 63.3, 52.3, TANARIS } }),	-- Leeroy Jenkins
+								n(228661, { coord = { 63.3, 52.3, TANARIS } }),	-- Athelton Jones (!)
+								n(228663, { coord = { 60.0, 62.5, TANARIS } }),	-- Y'illiya Xennin
 							},
 						}),
 						-- Chapter 2
@@ -3276,7 +2903,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							}),
 								hordeQuestData = q(85024, {	-- Toy Trouble [H]
 							}),
-							provider = { "n", 232404 },	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
+							qg = 232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 							sourceQuest = 84336,	-- Spot The Difference
 							coord = { 63.0, 50.2, TANARIS },
 						},
@@ -3304,23 +2931,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								hordeQuestData = q(85025, {	-- Operation Toy Rescue [H]
 								description = "Talk to Yennu in Iskaara, find a note in Dragonscale Basecamp, and find their ball near Maruukai then return. Pet Nuts in Dazar'Alor, follow the fur sheddings to a Plush Toy, and give it to him.",
 								sourceQuest = 85024,	-- Toy Trouble [H]
+								qi = 229991,	-- My Journal: Operation Toy Rescue (QI!)
 								groups = {
-									i(229991),	-- My Journal: Operation Toy Rescue (QI!)
-									n(54227, {	-- Nuts
-										coord = { 56.3, 31.7, DAZARALOR },
-									}),
+									n(54227, { coord = { 56.3, 31.7, DAZARALOR } }),	-- Nuts
 									o(470229, {	-- Plush Toy
 										coord = { 56.4, 21.3, DAZARALOR },
 										groups = { i(229908) },	-- Plush Toy (QI!)
 									}),
 								},
 							}),
-							provider = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
+							qg = 226684,	-- Maru <Junior Secret Sleuf>
 							coord = { 63.2, 52.4, TANARIS },
 							groups = {
-								n(229847, {	-- Yennu
-									coord = { 13.4, 48.9, THE_AZURE_SPAN },
-								}),
+								n(229847, { coord = { 13.4, 48.9, THE_AZURE_SPAN } }),	-- Yennu
 								o(465234, {	-- Missing Page from Yennu's Snackbook
 									description = "Inside a cart in Dragonscale Basecamp.",
 									coord = { 47.0, 83.5, THE_WAKING_SHORES },
@@ -3351,8 +2974,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							allianceQuestData = q(84756, {	-- The Toy Thief [A]
 								description = "Talk to Maru, suspect a dog, then visit Urban Planner Volrath in Boralus.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
 								sourceQuest = 84755,	-- The Final Toy [A]
+									qi = 229992,	-- My Journal: Operation Toy Rescue (QI!)
 									groups = {
-										i(229992),	-- My Journal: Operation Toy Rescue (QI!)
 										n(142178, {	-- Urban Planner Volrath
 											coord = { 43.2, 73.7, BORALUS },
 											groups = { i(232364) },	-- Bakar Sketch (QI!)
@@ -3362,8 +2985,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							hordeQuestData = q(85043, {	-- The Toy Thief [H]
 								description = "Talk to Maru, suspect a dog, then visit Matan in Dazar'alor.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
 								sourceQuest = 85042,	-- The Final Toy [H]
+									qi = 229997,	-- My Journal: Operation Toy Rescue (QI!)
 									groups = {
-										i(229997),	-- My Journal: Operation Toy Rescue (QI!)
 										o(472068, {	-- Bakar Sketch
 											coord = { 57.0, 22.2, DAZARALOR },
 											groups = { i(229196) },	-- Bakar Sketch (QI!)
@@ -3405,16 +3028,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(85060, {	-- Pirate Foods and Superstitions
 							description = "Talk to Kelsey Yance in the Old Port Authority building or Mrs. Gant in a room on the lowest level of Booty Bay. Collect the Boonful Banquet from a barrel in the same room as Mrs. Gant then show it to Scowling Rosa who paths around the wharf.",
 							sourceQuest = 85047,	-- A Pirate Predicament
-							provider = { "n", 231413 },	-- Bonenose
+							qg = 231413,	-- Bonenose
 							coord = { 60.9, 44.7, TANARIS },
+							qi = 231263,	-- My Journal: The Case of the Superstitious and Hungry Pirates (QI!)
 							groups = {
-								i(231263),	-- My Journal: The Case of the Superstitious and Hungry Pirates (QI!)
-								n(2664, {	-- Kelsey Yance <Cook>
-									coord = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
-								}),
-								n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
-									coord = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
-								}),
+								n(2664, { coord = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN } }),	-- Kelsey Yance <Cook>
+								n(54232, { coord = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN } }),	-- Mrs. Gant <Cooking Trainer & Supplies>
 								o(473934, {	-- Property of Cooktholomew
 									description = "On the bottom floor of a building in Booty Bay by some bunks.",
 									coord = { 42.9, 72.9, THE_CAPE_OF_STRANGLETHORN },
@@ -3434,7 +3053,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(85195, {	-- Pirate Gastronomy
 							description = "Acquire the required ingredients then talk to Bottlenose in Tanaris. Visit Hrothgar's Landing to grab the last ingredient.",
 							sourceQuest = 85208,	-- A Pirate Missive
-							provider = { "n", 105637 },	-- Scowling Rosa <Texts and Specialty Goods>
+							qg = 105637,	-- Scowling Rosa <Texts and Specialty Goods>
 							cost = {
 								{ "i", 160711, 2 },	-- Aromatic Fish Oil
 								{ "i", 33823, 5 },	-- Bloodfin Catfish
@@ -3446,13 +3065,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								{ "i", 2452, 2 },	-- Swiftthistle
 								{ "i", 74846, 2 },	-- Witchberries
 							},
+							qis = {
+								229968,	-- Boonful Banquet (QI!)
+								230235,	-- Rosa's Notes on Boonful Banquet (QI!)
+								231263,	-- The Case of the Superstitious and Hungry Pirates (QI!)
+							},
 							groups = {
-								i(229968),	-- Boonful Banquet (QI!)
-								i(230235),	-- Rosa's Notes on Boonful Banquet (QI!)
-								i(231263),	-- The Case of the Superstitious and Hungry Pirates (QI!)
-								n(231413, {	-- Bottlenose
-									coord = { 60.9, 44.7, TANARIS },
-								}),
+								n(231413, { coord = { 60.9, 44.7, TANARIS } }),	-- Bottlenose
 								o(469985, {	-- Ice Block
 									description = "In the mountains of Hrothgar's Landing in Icecrown, contains the secret ingredient fish and must be visited for quest completion, even if you grab the fish elsewhere.",
 									coord = { 55.4, 10.7, 170 },	-- Hrothgar's Landing
@@ -3472,10 +3091,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(85476, {	-- Buried Tweasure
 							description = "Find clues in the Ruins of Uldum, by a rock to the east of Dunemaul Compound, to the left of Zul'Farakk's entrance, then talk to Yennu in the Gadgetzan inn.",
 							sourceQuest = 85475,	-- Secret in the Sands
-							provider = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
+							qg = 226684,	-- Maru <Junior Secret Sleuf>
 							coord = { 63.2, 52.4, TANARIS },
+							qis = {
+								231808,	-- Ancient Treasure Notes (QI!)
+								231819,	-- Celebratory Fireworks (QI!)
+								231820,	-- Festive Balloons (QI!)
+							},
 							groups = {
-								i(231808),	-- Ancient Treasure Notes (QI!)
 								o(476815, {	-- Ancient Treasure Note
 									description = "In the back right of the Ruins of Uldum in the Valley of the Watchers.",
 									coord = { 37.6, 84.1, TANARIS },
@@ -3491,10 +3114,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								}),
 								n(232863, {	-- Yennu
 									description = "Inside Gadgetzan's Inn.",
-									coord = {  52.7, 26.9, TANARIS },
+									coord = { 52.7, 26.9, TANARIS },
 								}),
-								i(231819),	-- Celebratory Fireworks (QI!)
-								i(231820),	-- Festive Balloons (QI!)
 							},
 						}),
 						q(85502, {	-- Festive Reflections
@@ -3508,8 +3129,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(85503, {	-- A Surprising Investigation
 							description = "Speak to the time-displaced visitors, toss letters to eventgoers, speak to Bonenose at the north camp again, then head a bit northeast up the beach to celebrate with Alyx.",
 							sourceQuest = 85502,	-- Festive Reflections
-							provider = { "n", 226796 },	-- Athelton Jones
+							qg = 226796,	-- Athelton Jones
 							coord = { 61.0, 50.7, TANARIS },
+							qi = 231905,	-- Letters (QI!)
 							groups = {
 								n(233000, {	-- Big Kinook
 									description = "By the mole machine.",
@@ -3531,10 +3153,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									description = "On the fashion frenzy stage.",
 									coord = { 63.0, 49.2, TANARIS },
 								}),
-								i(231905),	-- Letters (QI!)
-								n(231413, {	-- Bottlenose
-									coord = { 60.9, 44.7, TANARIS },
-								}),
+								n(231413, { coord = { 60.9, 44.7, TANARIS } }),	-- Bottlenose
 							},
 						}),
 					}),
@@ -3701,9 +3320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							coord = { 61.9, 50.5, TANARIS },
 							groups = {
 								i(228750),	-- My Journal: The Case of the Fur-Getting Wikket (QI!)
-								n(229775, {	-- Sully "The Pickle" McLeary
-									coord = { 63.1, 49.4, TANARIS },
-								}),
+								n(229775, { coord = { 63.1, 49.4, TANARIS } }),	-- Sully "The Pickle" McLeary
 								n(229776, {
 									provider = { "i", 208092 },	-- Torch of Pyrreth
 									coord = { 43.4, 68.8, THE_JADE_FOREST },
@@ -3722,8 +3339,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 							},
 							coord = { 63.0, 50.2, TANARIS },
+							qi = 228302,	-- My Journal: Nola's Last Wish (QI!)
 							groups = {
-								i(228302),	-- My Journal: Nola's Last Wish (QI!)
 								n(229102, {	-- Lashk
 									description = "Near the story time stage.",
 									coord = { 63.9, 53.5, TANARIS },
@@ -3752,7 +3369,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84933, {	-- From Ashes to Wisdom
 							description = "Summon Voidfire with the provided whistle then talk to him in the following locations:\nNear the Ruins of Thaurissan in the Burning Steppes (61.4, 28.7)\nNear the Scar of the Worldbreaker in the Badlands (33.1, 53.0)\nNear the Twilight Breach north of Victor's Point in the Twilight Highlands (38.3, 49.1)\nIn the Quel'Dormir Gardens by the Ruins of Vash'jir in the Shimmering Expanse (38.8, 66.9)",
 							sourceQuest = 84932,	-- A Legacy of Destruction
-							provider = { "n", 231029 },	-- Voidfire
+							qg = 231029,	-- Voidfire
 							coords = {
 								{ 61.7, 49.8, TANARIS },
 								{ 61.4, 28.7, BURNING_STEPPES },
@@ -3760,7 +3377,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								{ 38.3, 49.1, TWILIGHT_HIGHLANDS },
 								{ 38.8, 66.9, VASHJIR_SHIMMERING_EXPANSE },
 							},
-							groups = { i(231292) },	-- Whelpling Whistle (QI!)
+							qi = 231292,	-- Whelpling Whistle (QI!)
 						}),
 						-- The Case of a Feathered Friend
 						q(84923, {	-- A Bird's Tale
@@ -3775,10 +3392,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84924, {	-- A Bird's Tail
 							description = "Interact with four feathers hidden around Spires of Arak, Shattrath, Nagrand and Frostfire Ridge in Draenor.",
 							sourceQuest = 84923,	-- A Bird's Tale
-							provider = { "n", 228273 },	-- Reshad
+							qg = 228273,	-- Reshad
 							coord = { 64.2, 51.3, TANARIS },
+							qi = 229958,	-- Decorated Feather (QI!)
 							groups = {
-								i(229958),	-- Decorated Feather (QI!)
 								o(469568, {	-- Burnt Feather
 									description = "On the alignment controls device atop the Windswept Terrace spire in Spires of Arak directly south of Veil Terokk.",
 									coord = { 45.8, 53.6, SPIRES_OF_ARAK },
@@ -3814,10 +3431,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84469, {	-- Battle Pet Bingo
 							description = "Interact with the Jumping Spider in the Bamboo Wilds in Jade Forest and the Summit Kid atop Neverest Pinnacl in Kun'Lai Summit.",
 							sourceQuest = 84506,	-- Pet Pursuit
-							provider = { "n", 228276 },	-- Jepetto Joybuzz
+							qg = 228276,	-- Jepetto Joybuzz
 							coord = { 62.2, 49.7, TANARIS },
+							qi = 228328,	-- Bingo Card (QI!)
 							groups = {
-								i(228328),	-- Bingo Card (QI!)
 								o(464213, {	-- Jumping Spider
 									description = "In the Bamboo Wilds, northeast of Pearlfin Village in the Jade Forest.",
 									coord = { 64.0, 80.8, THE_JADE_FOREST },
@@ -3837,26 +3454,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 							},
 							coord = { 63.0, 50.2, TANARIS },
+							qi = 231810,	-- Alyx's Lost & Found Notes (QI!)
 							groups = {
-								i(231810),	-- Alyx's Lost & Found Notes (QI!)
 								o(477139, {	-- Lost & Found
 									coord = { 63.0, 50.2, TANARIS },
 									groups = {
-										i(231761, {	-- Crude Ivory Locket (QI!)
-											description = "Return this to Mankrik, found by Bartender Bob's stall to the right of the Story Time stage.",
-										}),
-										i(231764, {	-- Jade Amulet (QI!)
-											description = "Return this to John J. Keeshan, found south-east of the Mount Mania stage next to Ariok.",
-										}),
-										i(231763, {	-- Potion Bottle (QI!)
-											description = "Return this to Marin Noggenfogger, who paths around the grounds.",
-										}),
+										i(231761, { description = "Return this to Mankrik, found by Bartender Bob's stall to the right of the Story Time stage." }),	-- Crude Ivory Locket (QI!)
+										i(231764, { description = "Return this to John J. Keeshan, found south-east of the Mount Mania stage next to Ariok." }),	-- Jade Amulet (QI!)
+										i(231763, { description = "Return this to Marin Noggenfogger, who paths around the grounds." }),	-- Potion Bottle (QI!)
 										i(231762, {	-- Tiny Mechanical Mouse (QI!)
 											description = "Return this to Oglethorpe Obnoticus who paths around the grounds but frequently stops by Moira Thaurissan and the Dark Iron mole machine.",
 										}),
-										i(231765, {	-- Well-Worn Almanac (QI!)
-											description = "Return this to Farmer Yoon, found south of the Mount Mania stage.",
-										}),
+										i(231765, { description = "Return this to Farmer Yoon, found south of the Mount Mania stage." }),	-- Well-Worn Almanac (QI!)
 									},
 								}),
 								n(228249, {	-- Mankrik
@@ -3894,7 +3503,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84912, {	-- The Show Must Go On
 							description = "Collect the Mask of the Trickster and the Play Script from on and behind the stage, and the Prop Sword and Conductor's Baton from near the venue entrance.",
 							sourceQuest = 84985,	-- Not Ready on Set
-							provider = { "n", 171743 },	-- Dapperdew
+							qg = 171743,	-- Dapperdew
 							coord = { 41.5, 44.8, ARDENWEALD },
 							groups = {
 								i(229387),	-- Trickster's Riddles (QI!)
@@ -3957,7 +3566,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								},
 							}),
 							q(83794, {	-- Soggy Celebration Crate
-								provider = { "i", 226200 },	-- Soggy Celebration Crate
+								qs = 226200,	-- Soggy Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 85574, {
@@ -3974,7 +3583,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(232263) },	-- Hazy Celebration Crate (QS!)
 							}),
 							q(85574, {	-- Hazy Celebration Crate
-								provider = { "i", 232263 },	-- Hazy Celebration Crate
+								qs = 232263,	-- Hazy Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84624, {
@@ -3985,7 +3594,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(228768) },	-- Water-Resistant Receipt
 							}),
 							q(84624, {	-- Sandy Celebration Crate
-								provider = { "i", 228767 },	-- Sandy Celebration Crate
+								qs = 228767,	-- Sandy Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84470, {
@@ -3996,7 +3605,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(228322) },	-- Dirt-Caked Celebration Crate (QS!)
 							}),
 							q(84470, {	-- Dirt-Caked Celebration Crate
-								provider = { "i", 228322 },	-- Dirt-Caked Celebration Crate
+								qs = 228322,	-- Dirt-Caked Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 83931, {
@@ -4006,7 +3615,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(226375) },	-- Battered Celebration Crate (QS!)
 							}),
 							q(83931, {	-- Battered Celebration Crate
-								provider = { "i", 226375 },	-- Battered Celebration Crate
+								qs = 226375,	-- Battered Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84426, {
@@ -4017,7 +3626,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(228212) },	-- Waterlogged Celebration Crate (QS!)
 							}),
 							q(84426, {	-- Waterlogged Celebration Crate
-								provider = { "i", 228212 },	-- Waterlogged Celebration Crate
+								qs = 228212,	-- Waterlogged Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84767, {
@@ -4028,7 +3637,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(228976) },	-- Charred Celebration Crate (QS!)
 							}),
 							q(84767, {	-- Charred Celebration Crate
-								provider = { "i", 228976 },	-- Charred Celebration Crate
+								qs = 228976,	-- Charred Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 85523, {
@@ -4040,22 +3649,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							o(478090, {	-- Mildewed Celebration Crate
 								description = "In a corner within Eldreth Row by the exterior of Dire Maul.\nVisible only with a buff, obtained from the Potion of Truth.",
 								provider = { "o", 505260 },	-- Potion of Truth
-								coord = {60.4, 35.4, FERALAS },
+								coord = { 60.4, 35.4, FERALAS },
 								groups = { i(231886) },	-- Mildewed Celebration Crate (QS!)
 							}),
 							q(85523, {	-- Mildewed Celebration Crate
-								provider = { "i", 231886 },	-- Mildewed Celebration Crate
+								qs = 231886,	-- Mildewed Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84773, {
 							i(228985),	-- Shiny Ransom Note
 							o(466512, {	-- Crystallized Celebration Crate
 								description = "Inside Oshu'gun's central chamber in Nagrand (Outland).",
-								coord = {35.3, 74.7, NAGRAND },
+								coord = { 35.3, 74.7, NAGRAND },
 								groups = { i(228983) },	-- Crystallized Celebration Crate (QS!)
 							}),
 							q(84773, {	-- Crystallized Celebration Crate
-								provider = { "i", 228983 },	-- Crystallized Celebration Crate
+								qs = 228983,	-- Crystallized Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84625, {
@@ -4076,7 +3685,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(228770) },	-- Surprisingly Pristine Celebration Crate (QS!)
 							}),
 							q(84625, {	-- Surprisingly Pristine Celebration Crate
-								provider = { "i", 228770 },	-- Surprisingly Pristine Celebration Crate
+								qs = 228770,	-- Surprisingly Pristine Celebration Crate (QS!)
 							}),
 						}),
 						header(HEADERS.Quest, 84909, {
@@ -4087,7 +3696,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = { i(229367) },	-- Ghostly Celebration Crate (QS!)
 							}),
 							q(84909, {	-- Ghostly Celebration Crate
-								provider = { "i", 229367 },	-- Ghostly Celebration Crate
+								qs = 229367,	-- Ghostly Celebration Crate (QS!)
 							}),
 						}),
 					}),
@@ -4108,21 +3717,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					isYearly = true,
 				}),
 				q(84254, {	-- Meet and Greet
-					provider = { "n", 223877 },	-- Yllana <Event Coordinator>
+					qg = 223877,	-- Yllana <Event Coordinator>
 					coord = { 62.9, 50.7, TANARIS },
 				}),
 				q(84489, {	-- Shopping Squee!
-					sourceQuests = { 84254 },	-- Meet and Greet
-					provider = { "n", 223877 },	-- Yllana <Event Coordinator>
+					sourceQuest = 84254,	-- Meet and Greet
+					qg = 223877,	-- Yllana <Event Coordinator>
 					coord = { 62.9, 50.7, TANARIS },
 				}),
 				q(84616, {	-- Celebrate Good Fun!
-					provider = { "n", 223877 },	-- Yllana <Event Coordinator>
+					qg = 223877,	-- Yllana <Event Coordinator>
 					coord = { 62.9, 50.7, TANARIS },
 					isDaily = true
 				}),
 				q(82783, {	-- Chromie's Codex
-					provider = { "n", 226368 },	-- Chromie
+					qg = 226368,	-- Chromie
 					coord = { 62.6, 50.0, TANARIS },
 					maps = { 2354 },	-- Silithus
 					isWeekly = true,
@@ -4141,9 +3750,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(TREASURES, {
 				o(455795, {	-- Pet Box
 					coord = { 62.0, 50.1, TANARIS },
-					groups = {
-						i(224157),	-- Pet Mirror
-					},
+					groups = { i(224157) },	-- Pet Mirror
 				}),
 			}),
 			n(VENDORS, {
@@ -4163,12 +3770,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(224570),	-- Commendation of the Zandalar Tribe
 						})),
 						filter(MISC, {
-							i(224190, {	-- Kreeg's Hardy Draught
-								cost = { { "c", TIMEWARPED_BADGE, 25 } },
-							}),
-							i(225378, {	-- Mohawk Grenade
-								cost = { { "c", TIMEWARPED_BADGE, 200 } },
-							}),
+							i(224190, { cost = { { "c", TIMEWARPED_BADGE, 25 } } }),	-- Kreeg's Hardy Draught
+							i(225378, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Mohawk Grenade
 						}),
 					},
 				}),
@@ -4178,50 +3781,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						sharedData({
 							timeline = { ADDED_11_0_5, REMOVED_11_0_7 },
 						}, {	-- One-Time Content
-							i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
+							i(229828, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- 20th Anniversary Balloon Chest (TOY!)
 							i(232598, {	-- Bag of Timewarped Badges
 								cost = { { "c", BRONZE_TOKEN, 1 } },
-								groups = {
-									currency(TIMEWARPED_BADGE),
-								},
+								groups = { currency(TIMEWARPED_BADGE) },
 							}),
 							i(235505, {	-- Satchel of Timewarped Badges
 								cost = { { "c", BRONZE_TOKEN, 5 } },
-								groups = {
-									currency(TIMEWARPED_BADGE),
-								},
+								groups = { currency(TIMEWARPED_BADGE) },
 							}),
 							i(235506, {	-- Box of Timewarped Badges
 								cost = { { "c", BRONZE_TOKEN, 25 } },
-								groups = {
-									currency(TIMEWARPED_BADGE),
-								},
+								groups = { currency(TIMEWARPED_BADGE) },
 							}),
-						}),
-						{	-- Recurring Content
-							i(208572, {	-- Azure Worldchiller (MOUNT!)
-								cost = { { "c", TIMEWARPED_BADGE, 5000 } },
-							}),
-							i(228785, {	-- Coldflame Bulwark
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
-							i(228788, {	-- Coldflame Edged Crest
-								cost = { { "c", BRONZE_TOKEN, 15 } },
-							}),
-							i(228789, {	-- Coldflame Ring (TOY!)
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
-							i(228786, {	-- Coldflame Winged Crown
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
-							i(228784, {	-- Coldflame's Edge
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
-							i(228781, {	-- Lil'Doomy (PET!)
-								cost = { { "c", BRONZE_TOKEN, 10 } },
-							}),
+						}), {	-- Recurring Content
+							i(208572, { cost = { { "c", TIMEWARPED_BADGE, 5000 } } }),	-- Azure Worldchiller (MOUNT!)
+							i(228785, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Bulwark
+							i(228788, { cost = { { "c", BRONZE_TOKEN, 15 } } }),	-- Coldflame Edged Crest
+							i(228789, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Ring (TOY!)
+							i(228786, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame Winged Crown
+							i(228784, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Coldflame's Edge
+							i(228781, { cost = { { "c", BRONZE_TOKEN, 10 } } }),	-- Lil'Doomy (PET!)
 						}),
 				}),
 				n(231352, {	-- Notary Grably <Titles of Olde>
@@ -4229,93 +3809,63 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					groups = {
 						i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(587),	-- Broken Isles Enthusiast <Name>
-							},
+							groups = { title(587) },	-- Broken Isles Enthusiast <Name>
 						}),
 						i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(584),	-- Cataclsym Enthusiast <Name>
-							},
+							groups = { title(584) },	-- Cataclsym Enthusiast <Name>
 						}),
 						i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(581),	-- Classic Enthusiast <Name>
-							},
+							groups = { title(581) },	-- Classic Enthusiast <Name>
 						}),
 						i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(586),	-- Draenor Enthusias <Name>
-							},
+							groups = { title(586) },	-- Draenor Enthusias <Name>
 						}),
 						i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(591),	-- Dragon Isles Enthusiast <Name>
-							},
+							groups = { title(591) },	-- Dragon Isles Enthusiast <Name>
 						}),
 						i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(577),	-- Grizzly Hills Hiker <Name>
-							},
+							groups = { title(577) },	-- Grizzly Hills Hiker <Name>
 						}),
 						i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(596),	-- Karazhan Graduate <Name>
-							},
+							groups = { title(596) },	-- Karazhan Graduate <Name>
 						}),
 						i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(589),	-- Kul Tiras Enthusiast <Name>
-							},
+							groups = { title(589) },	-- Kul Tiras Enthusiast <Name>
 						}),
 						i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(595),	-- Molten Core Prospector <Name>
-							},
+							groups = { title(595) },	-- Molten Core Prospector <Name>
 						}),
 						i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(583),	-- Northrend Enthusiast <Name>
-							},
+							groups = { title(583) },	-- Northrend Enthusiast <Name>
 						}),
 						i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(582),	-- Outland Enthusiast <Name>
-							},
+							groups = { title(582) },	-- Outland Enthusiast <Name>
 						}),
 						i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(585),	-- Pandaria Enthusiast <Name>
-							},
+							groups = { title(585) },	-- Pandaria Enthusiast <Name>
 						}),
 						i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(578),	-- Plaguelands Survivor <Name>
-							},
+							groups = { title(578) },	-- Plaguelands Survivor <Name>
 						}),
 						i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(590),	-- Shadowlands Enthusiast <Name>
-							},
+							groups = { title(590) },	-- Shadowlands Enthusiast <Name>
 						}),
 						i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(588),	-- Zuldazar Enthusiast <Name>
-							},
+							groups = { title(588) },	-- Zuldazar Enthusiast <Name>
 						}),
 					},
 				}),
@@ -4326,15 +3876,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						cost = { { "c", BRONZE_TOKEN, 10 } },
 					}, {
 						i(44819),	-- Baby Blizzard Bear (PET!)
-						i(115484, {	-- Core Hound Chain (MOUNT!)
-							cost = { { "c", BRONZE_TOKEN, 20 } },
-						}),
+						i(115484, { cost = { { "c", BRONZE_TOKEN, 20 } } }),	-- Core Hound Chain (MOUNT!)
 						i(118574),	-- Hatespark the Tiny (PET!)
 						i(172016),	-- Lil' Nefarian (PET!)
 						i(115301),	-- Molten Corgi (PET!)
-						i(172012, {	-- Obsidian Worldbreaker (MOUNT!)
-							cost = { { "c", BRONZE_TOKEN, 20 } },
-						}),
+						i(172012, { cost = { { "c", BRONZE_TOKEN, 20 } } }),	-- Obsidian Worldbreaker (MOUNT!)
 						i(49362),	-- Onyxian Whelpling (PET!)
 					}),
 				}),
@@ -4344,45 +3890,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					groups = sharedData({
 						cost = { { "c", BRONZE_TOKEN, 60 } },
 					}, {
-						iensemble(228205, {	-- Ensemble: Pale Rider's Eternal Armor
-							classes = { DEATHKNIGHT },
-						}),
-						iensemble(228206, {	-- Ensemble: Netherwalker's Eternal Armor
-							classes = { DEMONHUNTER },
-						}),
-						iensemble(228199, {	-- Ensemble: Eternal Stormrage Armor
-							classes = { DRUID },
-						}),
-						iensemble(228207, {	-- Ensemble: Earth-Warder's Eternal Armor
-							classes = { EVOKER },
-						}),
-						iensemble(228200, {	-- Ensemble: Dragonstalker's Eternal Armor
-							classes = { HUNTER },
-						}),
-						iensemble(228201, {	-- Ensemble: Eternal Netherwind Regalia
-							classes = { MAGE },
-						}),
-						iensemble(228208, {	-- Ensemble: Eternal Battlegear of the August Acolyte
-							classes = { MONK },
-						}),
-						iensemble(228198, {	-- Ensemble: Eternal Judgment Armor
-							classes = { PALADIN },
-						}),
-						iensemble(228204, {	-- Ensemble: Eternal Vestments of Transcendence
-							classes = { PRIEST },
-						}),
-						iensemble(228202, {	-- Ensemble: Eternal Bloodfang Armor
-							classes = { ROGUE },
-						}),
-						iensemble(228203, {	-- Ensemble: Eternal Ten Storms
-							classes = { SHAMAN },
-						}),
-						iensemble(228209, {	-- Ensemble: Eternal Nemesis Raiment
-							classes = { WARLOCK },
-						}),
-						iensemble(228197, {	-- Ensemble: Eternal Battlegear of Wrath
-							classes = { WARRIOR },
-						}),
+						iensemble(228205, { classes = { DEATHKNIGHT } }),	-- Ensemble: Pale Rider's Eternal Armor
+						iensemble(228206, { classes = { DEMONHUNTER } }),	-- Ensemble: Netherwalker's Eternal Armor
+						iensemble(228199, { classes = { DRUID } }),	-- Ensemble: Eternal Stormrage Armor
+						iensemble(228207, { classes = { EVOKER } }),	-- Ensemble: Earth-Warder's Eternal Armor
+						iensemble(228200, { classes = { HUNTER } }),	-- Ensemble: Dragonstalker's Eternal Armor
+						iensemble(228201, { classes = { MAGE } }),	-- Ensemble: Eternal Netherwind Regalia
+						iensemble(228208, { classes = { MONK } }),	-- Ensemble: Eternal Battlegear of the August Acolyte
+						iensemble(228198, { classes = { PALADIN } }),	-- Ensemble: Eternal Judgment Armor
+						iensemble(228204, { classes = { PRIEST } }),	-- Ensemble: Eternal Vestments of Transcendence
+						iensemble(228202, { classes = { ROGUE } }),	-- Ensemble: Eternal Bloodfang Armor
+						iensemble(228203, { classes = { SHAMAN } }),	-- Ensemble: Eternal Ten Storms
+						iensemble(228209, { classes = { WARLOCK } }),	-- Ensemble: Eternal Nemesis Raiment
+						iensemble(228197, { classes = { WARRIOR } }),	-- Ensemble: Eternal Battlegear of Wrath
 					}),
 				}),
 			}),
@@ -4391,11 +3911,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					isRaid = true,
 					questID = 84282,
 					isDaily = true,
-					coord = { 33.7, 55.6 , TANARIS },
-					maps = {
-						74,	-- Caverns of Time Entrance
-						CAVERNS_OF_TIME,
-					},
+					coord = { 33.7, 55.6, TANARIS },
+					maps = { 74, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 					groups = {
 						filter(MOUNTS, {
 							i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
@@ -4407,11 +3924,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 						filter(CLOTH, {
 							i(227591),	-- Gloves of the Burning Scroll
-							i(227590),	-- Leggings of the Burning Scroll
 							i(227586),	-- Guardian Serpent Gloves
 							i(227587),	-- Guardian Serpent Leggings
-							i(227588),	-- Sha-Skin Gloves
-							i(227589),	-- Sha-Skin Leggings
+							i(227590),	-- Leggings of the Burning Scroll
 							i(227635),	-- Malevolent Gladiator's Cord of Accuracy
 							i(227634),	-- Malevolent Gladiator's Cord of Cruelty
 							i(227636),	-- Malevolent Gladiator's Cord of Meditation
@@ -4427,12 +3942,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227626),	-- Malevolent Gladiator's Treads of Alacrity
 							i(227625),	-- Malevolent Gladiator's Treads of Cruelty
 							i(227627),	-- Malevolent Gladiator's Treads of Meditation
+							i(227588),	-- Sha-Skin Gloves
+							i(227589),	-- Sha-Skin Leggings
 						}),
 						filter(LEATHER, {
 							i(227565),	-- Eternal Blossom Grips
 							i(227564),	-- Eternal Blossom Legguards
-							i(227598),	-- Red Crane Grips
-							i(227599),	-- Red Crane Leggings
 							i(227561),	-- Gloves of the Thousandfold Blades
 							i(227560),	-- Legguards of the Thousandfold Blades
 							i(227613),	-- Malevolent Gladiator's Armwraps of Accuracy
@@ -4446,16 +3961,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227607),	-- Malevolent Gladiator's Ironskin Legguards
 							i(227603),	-- Malevolent Gladiator's Leather Gloves
 							i(227606),	-- Malevolent Gladiator's Leather Legguards
-							i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
 							i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
+							i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
 							i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
 							i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
+							i(227598),	-- Red Crane Grips
+							i(227599),	-- Red Crane Leggings
 						}),
 						filter(MAIL, {
 							i(227556),	-- Firebird's Gloves
 							i(227557),	-- Firebird's Kilt
-							i(227559),	-- Yaungol Slayer's Gloves
-							i(227558),	-- Yaungol Slayer's Legguards
 							i(227624),	-- Malevolent Gladiator's Armbands of Prowess
 							i(227617),	-- Malevolent Gladiator's Chain Gauntlets
 							i(227619),	-- Malevolent Gladiator's Chain Leggings
@@ -4466,14 +3981,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227615),	-- Malevolent Gladiator's Sabatons of Cruelty
 							i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
 							i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
+							i(227559),	-- Yaungol Slayer's Gloves
+							i(227558),	-- Yaungol Slayer's Legguards
 						}),
 						filter(PLATE, {
+							i(227573),	-- Gauntlets of Resounding Rings
 							i(227575),	-- Gauntlets of the Lost Catacomb
 							i(227574),	-- Greaves of the Lost Catacomb
-							i(227573),	-- Gauntlets of Resounding Rings
 							i(227572),	-- Legplates of Resounding Rings
-							i(227577),	-- White Tiger Gauntlets
-							i(227576),	-- White Tiger Legplates
 							i(227657),	-- Malevolent Gladiator's Armplates of Alacrity
 							i(227656),	-- Malevolent Gladiator's Armplates of Proficiency
 							i(227655),	-- Malevolent Gladiator's Bracers of Prowess
@@ -4485,10 +4000,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
 							i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 							i(227649),	-- Malevolent Gladiator's Ornamented Legplates
-							i(227651),	-- Malevolent Gladiator's Plate Legguards
 							i(227648),	-- Malevolent Gladiator's Plate Gauntlets
+							i(227651),	-- Malevolent Gladiator's Plate Legguards
 							i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
 							i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
+							i(227577),	-- White Tiger Gauntlets
+							i(227576),	-- White Tiger Legplates
 						}),
 					},
 				}),
@@ -4498,25 +4015,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					questID = 84256,
 					isDaily = true,
 					coord = { 46.0, 28.9, TANARIS },
-					maps = {
-						74,	-- Caverns of Time Entrance
-						CAVERNS_OF_TIME,
-					},
+					maps = { 74, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 					groups = {
 						filter(MOUNTS, {
 							a(i(43959)),	-- Reins of the Grand Black War Mammoth (A) (MOUNT!)
 							h(i(44083)),	-- Reins of the Grand Black War Mammoth (H) (MOUNT!)
 						}),
 						filter(CLOTH, {
-							i(227244),	-- Heroes' Gloves of Faith
-							i(227254),	-- Heroes' Leggings of Faith
-							i(227264),	-- Heroes' Robe of Faith
-							i(227242),	-- Heroes' Frostfire Gloves
-							i(227252),	-- Heroes' Frostfire Leggings
-							i(227262),	-- Heroes' Frostfire Robe
-							i(227243),	-- Heroes' Plagueheart Gloves
-							i(227253),	-- Heroes' Plagueheart Leggings
-							i(227263),	-- Heroes' Plagueheart Robe
 							i(227231),	-- Hateful Gladiator's Felweave Handguards
 							i(227221),	-- Hateful Gladiator's Felweave Raiment
 							i(227241),	-- Hateful Gladiator's Felweave Trousers
@@ -4526,45 +4031,45 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227230),	-- Hateful Gladiator's Silk Handguards
 							i(227220),	-- Hateful Gladiator's Silk Raiment
 							i(227240),	-- Hateful Gladiator's Silk Trousers
+							i(227242),	-- Heroes' Frostfire Gloves
+							i(227252),	-- Heroes' Frostfire Leggings
+							i(227262),	-- Heroes' Frostfire Robe
+							i(227244),	-- Heroes' Gloves of Faith
+							i(227254),	-- Heroes' Leggings of Faith
+							i(227243),	-- Heroes' Plagueheart Gloves
+							i(227253),	-- Heroes' Plagueheart Leggings
+							i(227263),	-- Heroes' Plagueheart Robe
+							i(227264),	-- Heroes' Robe of Faith
 						}),
 						filter(LEATHER, {
-							i(227266),	-- Heroes' Bonescythe Breastplate
-							i(227246),	-- Heroes' Bonescythe Gauntlets
-							i(227256),	-- Heroes' Bonescythe Legplates
-							i(227245),	-- Heroes' Dreamwalker Handgrips
-							i(227255),	-- Heroes' Dreamwalker Legguards
-							i(227265),	-- Heroes' Dreamwalker Raiments
 							i(227227),	-- Hateful Gladiator's Kodohide Gloves
 							i(227237),	-- Hateful Gladiator's Kodohide Legguards
 							i(227215),	-- Hateful Gladiator's Kodohide Robes
 							i(227228),	-- Hateful Gladiator's Leather Gloves
 							i(227238),	-- Hateful Gladiator's Leather Legguards
 							i(227214),	-- Hateful Gladiator's Leather Tunic
+							i(227266),	-- Heroes' Bonescythe Breastplate
+							i(227246),	-- Heroes' Bonescythe Gauntlets
+							i(227256),	-- Heroes' Bonescythe Legplates
+							i(227245),	-- Heroes' Dreamwalker Handgrips
+							i(227255),	-- Heroes' Dreamwalker Legguards
+							i(227265),	-- Heroes' Dreamwalker Raiments
 						}),
 						filter(MAIL, {
-							i(227247),	-- Heroes' Cryptstalker Handguards
-							i(227257),	-- Heroes' Cryptstalker Legguards
-							i(227267),	-- Heroes' Cryptstalker Tunic
-							i(227248),	-- Heroes' Earthshatter Handguards
-							i(227258),	-- Heroes' Earthshatter Legguards
-							i(227268),	-- Heroes' Earthshatter Tunic
 							i(227213),	-- Hateful Gladiator's Chain Armor
 							i(227226),	-- Hateful Gladiator's Chain Gauntlets
 							i(227236),	-- Hateful Gladiator's Chain Leggings
 							i(227212),	-- Hateful Gladiator's Ringmail Armor
 							i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 							i(227235),	-- Hateful Gladiator's Ringmail Leggings
+							i(227247),	-- Heroes' Cryptstalker Handguards
+							i(227257),	-- Heroes' Cryptstalker Legguards
+							i(227267),	-- Heroes' Cryptstalker Tunic
+							i(227248),	-- Heroes' Earthshatter Handguards
+							i(227258),	-- Heroes' Earthshatter Legguards
+							i(227268),	-- Heroes' Earthshatter Tunic
 						}),
 						filter(PLATE, {
-							i(227269),	-- Heroes' Dreadnaught Battleplate
-							i(227249),	-- Heroes' Dreadnaught Gauntlets
-							i(227259),	-- Heroes' Dreadnaught Legplates
-							i(227251),	-- Heroes' Redemption Gloves
-							i(227261),	-- Heroes' Redemption Greaves
-							i(227271),	-- Heroes' Redemption Tunic
-							i(227270),	-- Heroes' Scourgeborne Battleplate
-							i(227250),	-- Heroes' Scourgeborne Gauntlets
-							i(227260),	-- Heroes' Scourgeborne Legplates
 							i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
 							i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
 							i(227233),	-- Hateful Gladiator's Dreadplate Legguards
@@ -4574,6 +4079,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(227210),	-- Hateful Gladiator's Plate Chestpiece
 							i(227222),	-- Hateful Gladiator's Plate Gauntlets
 							i(227232),	-- Hateful Gladiator's Plate Legguards
+							i(227269),	-- Heroes' Dreadnaught Battleplate
+							i(227249),	-- Heroes' Dreadnaught Gauntlets
+							i(227259),	-- Heroes' Dreadnaught Legplates
+							i(227251),	-- Heroes' Redemption Gloves
+							i(227261),	-- Heroes' Redemption Greaves
+							i(227271),	-- Heroes' Redemption Tunic
+							i(227270),	-- Heroes' Scourgeborne Battleplate
+							i(227250),	-- Heroes' Scourgeborne Gauntlets
+							i(227260),	-- Heroes' Scourgeborne Legplates
 						}),
 					},
 				}),
@@ -4582,48 +4096,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	}),
 	n(WOW_ANNIVERSARY_TWENTYONE, {
 		timeline = { ADDED_11_2_5 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_11_2_5, "removed 11.2.7.64743" },
 		}, {	-- One-Time Content
 			ach(61406),	-- WoW's 21st Anniversary
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			n(VENDORS, {
 				n(231352, {	-- Notary Grably <Titles of Olde>
 					coord = { 63.3, 50.7, TANARIS },
 					groups = {
 						i(249242, {	-- Bronze Celebration Titles: Khaz Algar Enthusiast (CI!)
 							cost = { { "c", TIMEWARPED_BADGE, 100 } },
-							groups = {
-								title(645),	-- Khaz Algar Enthusiast <Name>
-							},
+							groups = { title(645) },	-- Khaz Algar Enthusiast <Name>
 						}),
 					},
 				}),
 				n(223902, {	-- Traeya <Armor Vendor>
 					coord = { 63.1, 50.9, TANARIS },
 					groups = {
-						i(253154, {	-- Loyal Watchman's Gauntlets
-							cost = { { "c", TIMEWARPED_BADGE, 20 } },
-						}),
-						i(253155, {	-- Loyal Watchman's Belt
-							cost = { { "c", TIMEWARPED_BADGE, 20 } },
-						}),
-						i(253156, {	-- Loyal Watchman's Boots
-							cost = { { "c", TIMEWARPED_BADGE, 30 } },
-						}),
-						i(253157, {	-- Loyal Watchman's Trousers
-							cost = { { "c", TIMEWARPED_BADGE, 30 } },
-						}),
-						i(253158, {	-- Loyal Watchman's Cuirass
-							cost = { { "c", TIMEWARPED_BADGE, 30 } },
-						}),
-						i(253159, {	-- Loyal Watchman's Spaulders
-							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-						}),
-						i(253160, {	-- Loyal Watchman's Helm
-							cost = { { "c", TIMEWARPED_BADGE, 50 } },
-						}),
+						i(253155, { cost = { { "c", TIMEWARPED_BADGE, 20 } } }),	-- Loyal Watchman's Belt
+						i(253156, { cost = { { "c", TIMEWARPED_BADGE, 30 } } }),	-- Loyal Watchman's Boots
+						i(253158, { cost = { { "c", TIMEWARPED_BADGE, 30 } } }),	-- Loyal Watchman's Cuirass
+						i(253154, { cost = { { "c", TIMEWARPED_BADGE, 20 } } }),	-- Loyal Watchman's Gauntlets
+						i(253160, { cost = { { "c", TIMEWARPED_BADGE, 50 } } }),	-- Loyal Watchman's Helm
+						i(253159, { cost = { { "c", TIMEWARPED_BADGE, 50 } } }),	-- Loyal Watchman's Spaulders
+						i(253157, { cost = { { "c", TIMEWARPED_BADGE, 30 } } }),	-- Loyal Watchman's Trousers
 					},
 				}),
 			}),
@@ -4631,12 +4128,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	}),
 	n(WOW_ANNIVERSARY_TWENTYTWO, {
 		timeline = { ADDED_12_1_5 },
-		groups = appendAllGroups({},sharedData({
+		groups = appendAllGroups({}, sharedData({
 			timeline = { ADDED_12_1_5, REMOVED_12_1_7 },
 		}, {	-- One-Time Content
 			ach(63714),	-- WoW's 22nd Anniversary
-		}),
-		{	-- Recurring Content
+		}), {	-- Recurring Content
 			-- TBD
 		}),
 	}),

@@ -7,9 +7,9 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 	groups = {
 		n(138706, bubbleDownSelf({	-- Mission Command Table
 			races = HORDE_ONLY,
-		},{
+		}, {
 			modelScale = 3,
-			crs = { 147244 },	-- Dazar'alor: The Great Seal Location
+			cr = 147244,	-- Dazar'alor: The Great Seal Location
 			coords = {
 				{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
 				{ 58.42, 70.63, HALL_OF_CHRONICLERS },
@@ -17,47 +17,32 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 			groups = {
 				ach(12869, {	-- Azeroth at War: After Lordaron
 					_doautomation = true,
-					groups = {
-						i(245467, {	-- Lordaeron Banded Crate (DECOR!)
-							timeline = { ADDED_11_2_7 },
-						}),
-					},
+					groups = { i(245467, { timeline = { ADDED_11_2_7 } }) },	-- Lordaeron Banded Crate (DECOR!)
 				}),
 				ach(12870, {	-- Azeroth at War: Kalimdor on Fire
 					_doautomation = true,
-					groups = {
-						i(245483, {	-- Lordaeron Spiked Weapon Rack (DECOR!)
-							timeline = { ADDED_11_2_7 },
-						}),
-					},
+					groups = { i(245483, { timeline = { ADDED_11_2_7 } }) },	-- Lordaeron Spiked Weapon Rack (DECOR!)
 				}),
 				ach(12867, {	-- Azeroth at War: The Barrens
 					_doautomation = true,
-					groups = {
-						i(245463, {	-- Lordaeron Banded Barrel (DECOR!)
-							timeline = { ADDED_11_2_7 },
-						}),
-					},
+					groups = { i(245463, { timeline = { ADDED_11_2_7 } }) },	-- Lordaeron Banded Barrel (DECOR!)
 				}),
-				i(POLISHED_PET_CHARM, {races=IGNORED_VALUE}),	-- Polished Pet Charm
-				i(149503, {races=IGNORED_VALUE}),	-- Stolen Gift
+				i(POLISHED_PET_CHARM, { races = IGNORED_VALUE }),	-- Polished Pet Charm
+				i(149503, { races = IGNORED_VALUE }),	-- Stolen Gift
 				mission(2078),	-- Azeroth Bleeds
 				mission(2087),	-- Explore the Roost
 				mission(1878, {	-- The Shadow War
 					i(160983),	-- Recruitment Orders
 				}),
 				mission(2122, {	-- A Shady Character
-					provider = { "i", 166242 },	-- A Shady Message [H]
+					qs = 166242,	-- A Shady Message [H] (QS!)
 					timeline = { ADDED_8_1_0 },
 					groups = {
 						i(166243),	-- Investigation Results
-						q(54447, {	-- A Shady Character
+						pvp(q(54447, {	-- A Shady Character
 							pb = true,
-							pvp = true,
-							groups = {
-								i(166244),	-- Token of Shadiness (QI!)
-							},
-						}),
+							qi = 166244,	-- Token of Shadiness (QI!)
+						})),
 					},
 				}),
 				mi(1956),	-- Barren Supplies

@@ -38,10 +38,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				ach(63724),	-- Knock Knock
 				ach(63715, {	-- Let Me Solo Him: Kindo'jan
-					timeline = { "removed 12.1.5.99999" },
-					groups = {
-						i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
-					},
+					timeline = { REMOVED_12_2_0 },
+					groups = { i(283363) },	-- Loa-Blessed Wayfarer (MOUNT!)
 				}),
 				ach(63718, {	-- Lock and Key
 					description = "Each run randomly selects one out of five special rooms to be a 'Locked Room' and three of them as spawn points for Hexmasks. The final room will be empty.",
@@ -73,9 +71,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				ach(63721),	-- The Labyrinth of Kindo'jan
 				ach(64118, {	-- The Labyrinth of Kindo'jan: One-Champion Army
 					timeline = { REMOVED_12_1_7 },
-					groups = {
-						title(802),	-- Lone Raider <Name>
-					},
+					groups = { title(802) },	-- Lone Raider <Name>
 				}),
 				ach(63727),	-- Treasures Upon Treasures (10 Oddities)
 				ach(63728),	-- A Few More Can't Hurt (50 Oddities)
@@ -113,7 +109,6 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					coord = { 20.2, 46.8, LABYRINTH_KINDOJAN },
 					cr = 273571,	-- Kinduru <Herald of de Loa>
 				}),
-				-- TODO: is this bugged, i cannot unlock it. no connected FPs kek
 				fp(3308, {	-- Central Chamber
 					coord = { 44.1, 46.8, LABYRINTH_KINDOJAN },
 					cr = 273569,	-- Kinduru <Herald of de Loa>
@@ -140,8 +135,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 			})),
 			n(FLIGHT_PATHS, sharedData({
-				-- Exo Note: These show up on the Flight Map as places where you can land. They are not actual Flight Path collectibles.
-				collectible = false,
+				collectible = false,	-- These show up on the Flight Map as places where you can land. They are not actual Flight Path collectibles.
 			}, {
 				fp(3301),	-- Entrance to The Reliquary
 				fp(3305),	-- Entrance to Halazzi's Lair
@@ -157,7 +151,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 			n(QUESTS, {
 				q(99312, {	-- On the Trail of Kindo'jan
 					description = "This quest is obtained from Any Delve. In order not to lose Quest Completion, go back to the Labyrinth entrance and pick up the Quest from the Tablet.",
-					provider = { "i", 287078 },	-- Ancient Amani Tablet (QS!)
+					qs = 287078,	-- Ancient Amani Tablet (QS!)
 					isBreadcrumb = true,
 				}),
 				q(99306, {	-- The Labyrinth of Kindo'jan
@@ -261,9 +255,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 			}),
 			n(REWARDS, {
-				i(285801, {	-- Heroic Soul Fragment
-					sym = {{ "select", "symselector", SymSelector.MID_DELVES_S2_ARMOR, SymSelector.MID_DELVES_S2_WEAPONS }},
-				}),
+				i(285801, { sym = { { "select", "symselector", SymSelector.MID_DELVES_S2_ARMOR, SymSelector.MID_DELVES_S2_WEAPONS } } }),	-- Heroic Soul Fragment
 			}),
 			n(TREASURES, {
 				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries

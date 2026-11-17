@@ -26,6 +26,8 @@ local BURDEN_OF_ETERNITY = createHeader({
 	},
 });
 
+local TIMELESS_COIN = 777;
+
 maproot(PANDARIA, {
 	applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, m(TIMELESS_ISLE, {
 		lore = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
@@ -38,80 +40,42 @@ maproot(PANDARIA, {
 				groups = {
 					n(ACHIEVEMENTS, {
 						ach(8519, {	-- Celestial Family
-							crit(23600, {	-- Xu-Fu, Cub of Xuen
-								provider = { "i", 101771 },
-							}),
-							crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
-								provider = { "i", 102145 },
-							}),
-							crit(23720, {	-- Yu'la, Broodling of Yu'lon
-								provider = { "i", 102147 },
-							}),
-							crit(23721, {	-- Zao, Calfling of Niuzao
-								provider = { "i", 102146 },
-							}),
+							crit(23600, { provider = { "i", 101771 } }),	-- Xu-Fu, Cub of Xuen
+							crit(23719, { provider = { "i", 102145 } }),	-- Chi-Chi, Hatchling of Chi-Ji
+							crit(23720, { provider = { "i", 102147 } }),	-- Yu'la, Broodling of Yu'lon
+							crit(23721, { provider = { "i", 102146 } }),	-- Zao, Calfling of Niuzao
 						}),
 						petbattle(ach(8518)),	-- Master of the Master
 						ach(8410),	-- The Celestial Tournament
 					}),
 					petbattles({
-						n(71933, {	-- Blingtron 4000
-							coord = { 34.8, 59.6, 571 },
-						}),
-						n(71927, {	-- Chen Stormstout
-							coord = { 34.8, 59.6, 571 },
-						}),
-						n(72285, {	-- Chi-Chi, Hatchling of Chi-Ji
-							coord = { 38.0, 55.2, 571 },
-						}),
-						n(71934, {	-- Dr. Ion Goldbloom <Jurassic Expedition>
-							coord = { 34.8, 59.6, 571 },
-						}),
-						n(71926, {	-- Lorewalker Cho
-							coord = { 34.8, 59.6, 571 },
-						}),
-						n(71930, {	-- Shademaster Kiryn
-							coord = { 37.8, 57.2, 571 },
-						}),
-						n(71929, {	-- Sully "The Pickle" McLeary <SI:7>
-							coord = { 37.8, 57.2, 571 },
-						}),
-						n(71931, {	-- Taran Zhu <Lord of the Shado-Pan>
-							coord = { 37.8, 57.2, 571 },
-						}),
-						n(71932, {	-- Wise Mari <Waterspeaker>
-							coord = { 37.8, 57.2, 571 },
-						}),
-						n(71924, {	-- Wrathion <The Black Prince>
-							coord = { 37.8, 57.2, 571 },
-						}),
-						n(72009, {	-- Xu-Fu, Cub of Xuen
-							coord = { 39.8, 55.2, 571 },
-						}),
-						n(72291, {	-- Yu'la, Broodling of Yu'lon
-							coord = { 39.0, 56.4, 571 },
-						}),
-						n(72290, {	-- Zao, Calfling of Niuzao
-							coord = { 39.0, 53.8, 571 },
-						}),
+						n(71933, { coord = { 34.8, 59.6, 571 } }),	-- Blingtron 4000
+						n(71927, { coord = { 34.8, 59.6, 571 } }),	-- Chen Stormstout
+						n(72285, { coord = { 38.0, 55.2, 571 } }),	-- Chi-Chi, Hatchling of Chi-Ji
+						n(71934, { coord = { 34.8, 59.6, 571 } }),	-- Dr. Ion Goldbloom <Jurassic Expedition>
+						n(71926, { coord = { 34.8, 59.6, 571 } }),	-- Lorewalker Cho
+						n(71930, { coord = { 37.8, 57.2, 571 } }),	-- Shademaster Kiryn
+						n(71929, { coord = { 37.8, 57.2, 571 } }),	-- Sully "The Pickle" McLeary <SI:7>
+						n(71931, { coord = { 37.8, 57.2, 571 } }),	-- Taran Zhu <Lord of the Shado-Pan>
+						n(71932, { coord = { 37.8, 57.2, 571 } }),	-- Wise Mari <Waterspeaker>
+						n(71924, { coord = { 37.8, 57.2, 571 } }),	-- Wrathion <The Black Prince>
+						n(72009, { coord = { 39.8, 55.2, 571 } }),	-- Xu-Fu, Cub of Xuen
+						n(72291, { coord = { 39.0, 56.4, 571 } }),	-- Yu'la, Broodling of Yu'lon
+						n(72290, { coord = { 39.0, 53.8, 571 } }),	-- Zao, Calfling of Niuzao
 					}),
 					n(QUESTS, {
 						q(33137, {	-- The Celestial Tournament
 							qg = 73082,	-- Master Li
 							coord = { 34.8, 59.6, TIMELESS_ISLE },
 							isWeekly = true,
-							groups = {
-								i(101529),	-- Celestial Coin
-							},
+							groups = { i(101529) },	-- Celestial Coin
 						}),
 						q(33136, {	-- The Rainy Day is Here
 							description = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
 							sourceQuest = 33137,	-- The Celestial Tournament
 							qg = 73082,	-- Master Li
 							coord = { 34.8, 59.6, TIMELESS_ISLE },
-							groups = {
-								i(101529),	-- Celestial Coin
-							},
+							groups = { i(101529) },	-- Celestial Coin
 						}),
 					}),
 					n(VENDORS, {
@@ -224,64 +188,64 @@ maproot(PANDARIA, {
 				i(101891, {	-- Amaranthine Cowl
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102287, 1 },	-- Timeless Cloth Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102287, 1 },	-- 1x Timeless Cloth Helm
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101897, {	-- Amaranthine Shoulderpads
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102289, 1 },	-- 1x Timeless Cloth Spaulders
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101895, {	-- Amaranthine Robes
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102284, 1 },	-- Timeless Cloth Robes
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102284, 1 },	-- 1x Timeless Cloth Robes
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101899, {	-- Amaranthine Wristwraps
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102321, 1 },	-- Timeless Cloth Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102321, 1 },	-- 1x Timeless Cloth Bracers
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101892, {	-- Amaranthine Handwraps
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102286, 1 },	-- Timeless Cloth Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102286, 1 },	-- 1x Timeless Cloth Gloves
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101890, {	-- Amaranthine Cord
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102290, 1 },	-- Timeless Cloth Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102290, 1 },	-- 1x Timeless Cloth Belt
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101893, {	-- Amaranthine Leggings
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102288, 1 },	-- Timeless Cloth Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102288, 1 },	-- 1x Timeless Cloth Leggings
 					},
 					classes_display = { PRIEST },
 				}),
 				i(101896, {	-- Amaranthine Sandals
 					description = "Any Priest spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102285, 1 },	-- Timeless Cloth Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102285, 1 },	-- 1x Timeless Cloth Boots
 					},
 					classes_display = { PRIEST },
 				}),
@@ -297,56 +261,56 @@ maproot(PANDARIA, {
 				i(101906, {	-- Cloudscorcher Shoulderpads
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102289, 1 },	-- 1x Timeless Cloth Spaulders
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101904, {	-- Cloudscorcher Robes
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102284, 1 },	-- Timeless Cloth Robes
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102284, 1 },	-- 1x Timeless Cloth Robes
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101907, {	-- Cloudscorcher Wristwraps
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102321, 1 },	-- Timeless Cloth Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102321, 1 },	-- 1x Timeless Cloth Bracers
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101902, {	-- Cloudscorcher Handwraps
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102286, 1 },	-- Timeless Cloth Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102286, 1 },	-- 1x Timeless Cloth Gloves
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101900, {	-- Cloudscorcher Belt
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102290, 1 },	-- Timeless Cloth Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102290, 1 },	-- 1x Timeless Cloth Belt
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101903, {	-- Cloudscorcher Leggings
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102288, 1 },	-- Timeless Cloth Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102288, 1 },	-- 1x Timeless Cloth Leggings
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
 				i(101905, {	-- Cloudscorcher Sandals
 					description = "Any Mage/Warlock spec.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102285, 1 },	-- Timeless Cloth Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102285, 1 },	-- 1x Timeless Cloth Boots
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
@@ -356,64 +320,64 @@ maproot(PANDARIA, {
 				i(101953, {	-- Cranefeather Hood
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102280, 1 },	-- Timeless Leather Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102280, 1 },	-- 1x Timeless Leather Helm
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101955, {	-- Cranefeather Shoulders
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102282, 1 },	-- Timeless Leather Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102282, 1 },	-- 1x Timeless Leather Spaulders
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101954, {	-- Cranefeather Jerkin
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102277, 1 },	-- 1x Timeless Leather Chestpiece
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101949, {	-- Cranefeather Bindings
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102322, 1 },	-- Timeless Leather Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102322, 1 },	-- 1x Timeless Leather Bracers
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101952, {	-- Cranefeather Gloves
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102279, 1 },	-- Timeless Leather Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102279, 1 },	-- 1x Timeless Leather Gloves
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101956, {	-- Cranefeather Waistband
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102283, 1 },	-- Timeless Leather Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102283, 1 },	-- 1x Timeless Leather Belt
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101951, {	-- Cranefeather Britches
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102281, 1 },	-- Timeless Leather Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102281, 1 },	-- 1x Timeless Leather Leggings
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
 				i(101950, {	-- Cranefeather Boots
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102278, 1 },	-- Timeless Leather Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102278, 1 },	-- 1x Timeless Leather Boots
 					},
 					classes_display = LEATHER_CLASSES,
 				}),
@@ -421,64 +385,64 @@ maproot(PANDARIA, {
 				i(101874, {	-- Fire-Chanter Hood
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102280, 1 },	-- Timeless Leather Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102280, 1 },	-- 1x Timeless Leather Helm
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101876, {	-- Fire-Chanter Shoulders
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102282, 1 },	-- Timeless Leather Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102282, 1 },	-- 1x Timeless Leather Spaulders
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101875, {	-- Fire-Chanter Jerkin
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102277, 1 },	-- 1x Timeless Leather Chestpiece
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101870, {	-- Fire-Chanter Bindings
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102322, 1 },	-- Timeless Leather Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102322, 1 },	-- 1x Timeless Leather Bracers
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101873, {	-- Fire-Chanter Gloves
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102279, 1 },	-- Timeless Leather Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102279, 1 },	-- 1x Timeless Leather Gloves
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101877, {	-- Fire-Chanter Waistband
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102283, 1 },	-- Timeless Leather Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102283, 1 },	-- 1x Timeless Leather Belt
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101872, {	-- Fire-Chanter Britches
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102281, 1 },	-- Timeless Leather Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102281, 1 },	-- 1x Timeless Leather Leggings
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
 				i(101871, {	-- Fire-Chanter Boots
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102278, 1 },	-- Timeless Leather Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102278, 1 },	-- 1x Timeless Leather Boots
 					},
 					classes_display = LEATHER_CLASSES_INTELLECT,
 				}),
@@ -488,64 +452,64 @@ maproot(PANDARIA, {
 				i(101931, {	-- Crimsonscale Helm
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102273, 1 },	-- Timeless Mail Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102273, 1 },	-- 1x Timeless Mail Helm
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101933, {	-- Crimsonscale Spaulders
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102275, 1 },	-- Timeless Mail Shoulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102275, 1 },	-- 1x Timeless Mail Shoulders
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101934, {	-- Crimsonscale Vest
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102270, 1 },	-- 1x Timeless Mail Chestpiece
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101928, {	-- Crimsonscale Bracers
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102323, 1 },	-- Timeless Mail Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102323, 1 },	-- 1x Timeless Mail Bracers
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101929, {	-- Crimsonscale Gauntlets
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102272, 1 },	-- Timeless Mail Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102272, 1 },	-- 1x Timeless Mail Gloves
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101927, {	-- Crimsonscale Belt
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102276, 1 },	-- Timeless Mail Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102276, 1 },	-- 1x Timeless Mail Belt
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101932, {	-- Crimsonscale Legguards
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102274, 1 },	-- Timeless Mail Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102274, 1 },	-- 1x Timeless Mail Leggings
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
 				i(101930, {	-- Crimsonscale Greaves
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102271, 1 },	-- Timeless Mail Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102271, 1 },	-- 1x Timeless Mail Boots
 					},
 					classes_display = MAIL_CLASSES_AGILITY,
 				}),
@@ -553,64 +517,64 @@ maproot(PANDARIA, {
 				i(101923, {	-- Ordon Legend-Keeper Helm
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102273, 1 },	-- Timeless Mail Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102273, 1 },	-- 1x Timeless Mail Helm
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101925, {	-- Ordon Legend-Keeper Spaulders
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102275, 1 },	-- Timeless Mail Shoulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102275, 1 },	-- 1x Timeless Mail Shoulders
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101926, {	-- Ordon Legend-Keeper Vest
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102270, 1 },	-- 1x Timeless Mail Chestpiece
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101920, {	-- Ordon Legend-Keeper Bracers
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102323, 1 },	-- Timeless Mail Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102323, 1 },	-- 1x Timeless Mail Bracers
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101921, {	-- Ordon Legend-Keeper Gauntlets
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102272, 1 },	-- Timeless Mail Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102272, 1 },	-- 1x Timeless Mail Gloves
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101919, {	-- Ordon Legend-Keeper Belt
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102276, 1 },	-- Timeless Mail Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102276, 1 },	-- 1x Timeless Mail Belt
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101924, {	-- Ordon Legend-Keeper Legguards
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102274, 1 },	-- Timeless Mail Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102274, 1 },	-- 1x Timeless Mail Leggings
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
 				i(101922, {	-- Ordon Legend-Keeper Greaves
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102271, 1 },	-- Timeless Mail Boots
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102271, 1 },	-- 1x Timeless Mail Boots
 					},
 					classes_display = MAIL_CLASSES_HEALER,
 				}),
@@ -620,64 +584,64 @@ maproot(PANDARIA, {
 				i(101882, {	-- Cliffbreaker Helm
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102266, 1 },	-- Timeless Plate Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102266, 1 },	-- 1x Timeless Plate Helm
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101885, {	-- Cliffbreaker Pauldrons
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102268, 1 },	-- Timeless Plate Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102268, 1 },	-- 1x Timeless Plate Spaulders
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101878, {	-- Cliffbreaker Breastplate
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102263, 1 },	-- 1x Timeless Plate Chestpiece
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101888, {	-- Cliffbreaker Vambraces
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102320, 1 },	-- Timeless Plate Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102320, 1 },	-- 1x Timeless Plate Bracers
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101880, {	-- Cliffbreaker Gauntlets
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102265, 1 },	-- Timeless Plate Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102265, 1 },	-- 1x Timeless Plate Gloves
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101881, {	-- Cliffbreaker Girdle
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102269, 1 },	-- Timeless Plate Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102269, 1 },	-- 1x Timeless Plate Belt
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101883, {	-- Cliffbreaker Legplates
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102267, 1 },	-- Timeless Plate Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102267, 1 },	-- 1x Timeless Plate Leggings
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101886, {	-- Cliffbreaker Sabatons
 					description = "Set loot spec to DPS.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102264, 1 },	-- Timeless Plate Boot
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102264, 1 },	-- 1x Timeless Plate Boot
 					},
 					classes_display = PLATE_CLASSES,
 				}),
@@ -685,64 +649,64 @@ maproot(PANDARIA, {
 				i(101942, {	-- Elder Tortoiseshell Helm
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102266, 1 },	-- Timeless Plate Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102266, 1 },	-- 1x Timeless Plate Helm
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101945, {	-- Elder Tortoiseshell Pauldrons
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102268, 1 },	-- Timeless Plate Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102268, 1 },	-- 1x Timeless Plate Spaulders
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101938, {	-- Elder Tortoiseshell Breastplate
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102263, 1 },	-- 1x Timeless Plate Chestpiece
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101948, {	-- Elder Tortoiseshell Vambraces
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102320, 1 },	-- Timeless Plate Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102320, 1 },	-- 1x Timeless Plate Bracers
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101940, {	-- Elder Tortoiseshell Gauntlets
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102265, 1 },	-- Timeless Plate Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102265, 1 },	-- 1x Timeless Plate Gloves
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101941, {	-- Elder Tortoiseshell Girdle
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102269, 1 },	-- Timeless Plate Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102269, 1 },	-- 1x Timeless Plate Belt
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101943, {	-- Elder Tortoiseshell Legplates
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102267, 1 },	-- Timeless Plate Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102267, 1 },	-- 1x Timeless Plate Leggings
 					},
 					classes_display = PLATE_CLASSES,
 				}),
 				i(101946, {	-- Elder Tortoiseshell Sabatons
 					description = "Set loot spec to Tank.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102264, 1 },	-- Timeless Plate Boot
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102264, 1 },	-- 1x Timeless Plate Boot
 					},
 					classes_display = PLATE_CLASSES,
 				}),
@@ -750,64 +714,64 @@ maproot(PANDARIA, {
 				i(101911, {	-- Everbright Helm
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102266, 1 },	-- Timeless Plate Helm
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102266, 1 },	-- 1x Timeless Plate Helm
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101913, {	-- Everbright Pauldrons
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102268, 1 },	-- Timeless Plate Spaulders
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102268, 1 },	-- 1x Timeless Plate Spaulders
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101908, {	-- Everbright Breastplate
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102263, 1 },	-- 1x Timeless Plate Chestpiece
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101915, {	-- Everbright Vambraces
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102320, 1 },	-- Timeless Plate Bracers
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102320, 1 },	-- 1x Timeless Plate Bracers
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101909, {	-- Everbright Gauntlets
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102265, 1 },	-- Timeless Plate Gloves
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102265, 1 },	-- 1x Timeless Plate Gloves
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101910, {	-- Everbright Girdle
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102269, 1 },	-- Timeless Plate Belt
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102269, 1 },	-- 1x Timeless Plate Belt
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101912, {	-- Everbright Legplates
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102267, 1 },	-- Timeless Plate Leggings
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102267, 1 },	-- 1x Timeless Plate Leggings
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
 				i(101914, {	-- Everbright Sabatons
 					description = "Set loot spec to Healer.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102264, 1 },	-- Timeless Plate Boot
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102264, 1 },	-- 1x Timeless Plate Boot
 					},
 					classes_display = PLATE_CLASSES_HEALER,
 				}),
@@ -816,40 +780,40 @@ maproot(PANDARIA, {
 				i(101889, {	-- Amaranthine Cloak
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102318, 1 },	-- Timeless Cloak
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102318, 1 },	-- 1x Timeless Cloak
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101879, {	-- Cliffbreaker Drape
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102318, 1 },	-- Timeless Cloak
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102318, 1 },	-- 1x Timeless Cloak
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101939, {	-- Elder Tortoiseshell Drape
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102318, 1 },	-- Timeless Cloak
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102318, 1 },	-- 1x Timeless Cloak
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101935, {	-- Kiln-Stoker Cloak
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102318, 1 },	-- Timeless Cloak
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102318, 1 },	-- 1x Timeless Cloak
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101917, {	-- Warmsun Cloak
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102318, 1 },	-- Timeless Cloak
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102318, 1 },	-- 1x Timeless Cloak
 					},
 					classes_display = AGILITY_CLASSES,
 				}),
@@ -858,40 +822,40 @@ maproot(PANDARIA, {
 				i(101894, {	-- Amaranthine Necklace
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 104345, 1 },	-- Timeless Lavalliere
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 104345, 1 },	-- 1x Timeless Lavalliere
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101884, {	-- Cliffbreaker Neck
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 104345, 1 },	-- Timeless Lavalliere
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 104345, 1 },	-- 1x Timeless Lavalliere
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101944, {	-- Elder Tortoiseshell Neck
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 104345, 1 },	-- Timeless Lavalliere
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 104345, 1 },	-- 1x Timeless Lavalliere
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101936, {	-- Kiln-Stoker Collar
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 104345, 1 },	-- Timeless Lavalliere
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 104345, 1 },	-- 1x Timeless Lavalliere
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101916, {	-- Warmsun Choker
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 104345, 1 },	-- Timeless Lavalliere
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 104345, 1 },	-- 1x Timeless Lavalliere
 					},
 					classes_display = AGILITY_CLASSES,
 				}),
@@ -900,40 +864,40 @@ maproot(PANDARIA, {
 				i(101898, {	-- Amaranthine Signet
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102291, 1 },	-- Timeless Signet
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102291, 1 },	-- 1x Timeless Signet
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101887, {	-- Cliffbreaker Seal
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102291, 1 },	-- Timeless Signet
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102291, 1 },	-- 1x Timeless Signet
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101947, {	-- Elder Tortoiseshell Seal
 					description = "Set loot spec to Strength.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102291, 1 },	-- Timeless Signet
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102291, 1 },	-- 1x Timeless Signet
 					},
 					classes_display = STRENGTH_CLASSES,
 				}),
 				i(101937, {	-- Kiln-Stoker Ring
 					description = "Set loot spec to Intellect.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102291, 1 },	-- Timeless Signet
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102291, 1 },	-- 1x Timeless Signet
 					},
 					classes_display = INTELLECT_CLASSES,
 				}),
 				i(101918, {	-- Warmsun Ring
 					description = "Set loot spec to Agility.",
 					cost = {
-						{ "i", 103982, 1 },	-- Burden of Eternity
-						{ "i", 102291, 1 },	-- Timeless Signet
+						{ "i", 103982, 1 },	-- 1x Burden of Eternity
+						{ "i", 102291, 1 },	-- 1x Timeless Signet
 					},
 					classes_display = AGILITY_CLASSES,
 				}),
@@ -989,44 +953,36 @@ maproot(PANDARIA, {
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
 				}),
 				q(33337, {	-- A Vision in Time
-					sourceQuests = { 33338 },	-- Empowering the Hourglass
+					sourceQuest = 33338,	-- Empowering the Hourglass
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105930),	-- Vision of Time
-					},
+					qi = 105930,	-- Vision of Time (QI!)
 				}),
 				q(33378, {	-- Courting Destiny
-					sourceQuests = { 33377 },	-- Hidden Threads
+					sourceQuest = 33377,	-- Hidden Threads
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105934),	-- Vision of Time
-					},
+					qi = 105934,	-- Vision of Time (QI!)
 				}),
 				q(33342, {	-- Drive Back The Flame
-					sourceQuests = { 33341 },	-- Wayshrines Of The Celestials
+					sourceQuest = 33341,	-- Wayshrines Of The Celestials
 					qg = 73303,	-- Emperor Shaohao
 				}),
 				q(33338, {	-- Empowering the Hourglass
-					sourceQuests = { 33336 },	-- The Essence of Time
+					sourceQuest = 33336,	-- The Essence of Time
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
 					isWeekly = true,
-					groups = {
-						i(105715),	-- Epoch Stone (QI!)
-					},
+					groups = { i(105715) },	-- Epoch Stone (QI!)
 				}),
 				q(33377, {	-- Hidden Threads
-					sourceQuests = { 33376 },	-- Seeking Fate
+					sourceQuest = 33376,	-- Seeking Fate
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105933),	-- Vision of Time
-					},
+					qi = 105933,	-- Vision of Time (QI!)
 				}),
 				q(33332, {	-- Hints From The Past
-					sourceQuests = { 33228 },	-- Time In Your Hands
+					sourceQuest = 33228,	-- Time In Your Hands
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
 				}),
@@ -1049,9 +1005,7 @@ maproot(PANDARIA, {
 					coord = { 80.6, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
 					races = HORDE_ONLY,
 					isBreadcrumb = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
-					groups = {
-						i(104110),	-- Curious Bronze Timepiece (QI!)
-					},
+					qi = 104110,	-- Curious Bronze Timepiece (QI!)
 				}),
 				q(33222, {	-- Little Tommy Newcomer
 					qg = 73626,	-- Little Tommy Newcomer
@@ -1059,15 +1013,13 @@ maproot(PANDARIA, {
 					isDaily = true,
 				}),
 				q(33379, {	-- One Final Turn
-					sourceQuests = { 33378 },	-- Courting Destiny
+					sourceQuest = 33378,	-- Courting Destiny
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105935),	-- Vision of Time
-					},
+					qi = 105935,	-- Vision of Time (QI!)
 				}),
 				q(33374, {	-- Path of the Mistwalker
-					sourceQuests = { 33341 },	-- Wayshrines Of The Celestials
+					sourceQuest = 33341,	-- Wayshrines Of The Celestials
 					qg = 73303,	-- Emperor Shaohao
 					coord = { 42.8, 55.6, TIMELESS_ISLE },
 					isDaily = true,
@@ -1078,12 +1030,10 @@ maproot(PANDARIA, {
 					},
 				}),
 				q(33375, {	-- Refining The Vision
-					sourceQuests = { 33337 },	-- A Vision in Time
+					sourceQuest = 33337,	-- A Vision in Time
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105931),	-- Vision of Time
-					},
+					qi = 105931,	-- Vision of Time (QI!)
 				}),
 				q(32974, {	-- Rolo's Riddle #1
 					description = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
@@ -1115,15 +1065,13 @@ maproot(PANDARIA, {
 					},
 				}),
 				q(33376, {	-- Seeking Fate
-					sourceQuests = { 33375 },	-- Refining The Vision
+					sourceQuest = 33375,	-- Refining The Vision
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105932),	-- Vision of Time
-					},
+					qi = 105932,	-- Vision of Time (QI!)
 				}),
 				q(33334, {	-- Strong Enough To Survive
-					sourceQuests = { 33333 },	-- Timeless Treasures
+					sourceQuest = 33333,	-- Timeless Treasures
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
 					isWeekly = true,
@@ -1134,20 +1082,16 @@ maproot(PANDARIA, {
 						33374,	-- Path of the Mistwalker
 					},
 					qg = 73303,	-- Emperor Shaohao
-					groups = {
-						i(103982),	-- Burden of Eternity
-					},
+					groups = { i(103982) },	-- Burden of Eternity
 				}),
 				q(33336, {	-- The Essence of Time
-					sourceQuests = { 33161 },	-- A Timeless Tour
+					sourceQuest = 33161,	-- A Timeless Tour
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
-					groups = {
-						i(105715),	-- Epoch Stone (QI!)
-					},
+					qi = 105715,	-- Epoch Stone (QI!)
 				}),
 				q(33335, {	-- The Last Emperor
-					sourceQuests = { 33228 },	-- Time In Your Hands
+					sourceQuest = 33228,	-- Time In Your Hands
 					qg = 72870,	-- Kairoz
 					coords = { 34.6, 53.6, TIMELESS_ISLE },
 				}),
@@ -1166,25 +1110,25 @@ maproot(PANDARIA, {
 					},
 				}),
 				q(33160, {	-- Time Keeper Kairoz
-					sourceQuests = { 33231 },	-- Journey to the Timeless Isle
+					sourceQuest = 33231,	-- Journey to the Timeless Isle
 					qg = 73348,	-- Watcher Lara <The Timewalkers>
 					races = ALLIANCE_ONLY,
 				}),
 				q(33156, {	-- Time Keeper Kairoz
-					sourceQuests = { 33232 },	-- Journey to the Timeless Isle
+					sourceQuest = 33232,	-- Journey to the Timeless Isle
 					qg = 73353,	-- Watcher Alundra <The Timewalkers>
 					races = HORDE_ONLY,
 				}),
 				q(33340, {	-- Timeless Nutriment
-					sourceQuests = { 33335 },	-- The Last Emperor
+					sourceQuest = 33335,	-- The Last Emperor
 					qg = 73303,	-- Emperor Shaohao
 				}),
 				q(33333, {	-- Timeless Treasures
-					sourceQuests = { 33332 },	-- Hints From The Past
+					sourceQuest = 33332,	-- Hints From The Past
 					qg = 72870,	-- Kairoz
 				}),
 				q(33341, {	-- Wayshrines Of The Celestials
-					sourceQuests = { 33340 },	-- Timeless Nutriment
+					sourceQuest = 33340,	-- Timeless Nutriment
 					qg = 73303,	-- Emperor Shaohao
 				}),
 			}),
@@ -1202,21 +1146,13 @@ maproot(PANDARIA, {
 						{ 56.6, 35.9, TIMELESS_ISLE },
 						{ 48.4, 33.3, TIMELESS_ISLE },
 					},
-					groups = {
-						i(86574, {	-- Elxir of Ancient Knowledge
-							u = REMOVED_FROM_GAME,	-- removed around Legion prepatch
-						}),
-					},
+					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elxir of Ancient Knowledge
 				}),
 				n(73666, {	-- Archiereus of Flame
 					description = "This is the summonable version of this rare. It drops more things.",
 					coord = { 34.6, 31.6, TIMELESS_ISLE },
-					cost = { { "i", 103684, 1 } },	-- Scroll of Challenge
-					groups = {
-						i(86574, {	-- Elixir of Ancient Knowledge
-							timeline = { REMOVED_7_0_3 },
-						}),
-					},
+					cost = { { "i", 103684, 1 } },	-- 1s Scroll of Challenge
+					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elixir of Ancient Knowledge
 				}),
 				n(72775, {	-- Bufo
 					questID = 33301,
@@ -1229,9 +1165,7 @@ maproot(PANDARIA, {
 					},
 					groups = {
 						i(104169),	-- Gulp Froglet (PET!)
-						i(104241, {	-- Technique: Glyph of Rain of Frogs
-							timeline = { REMOVED_7_0_3 },
-						}),
+						i(104241, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Rain of Frogs
 					},
 				}),
 				n(73171, {	-- Champion of the Black Flame
@@ -1254,9 +1188,7 @@ maproot(PANDARIA, {
 					description = "Click on Conspicuously Empty Shell to spawn Chelon.",
 					coord = { 25.2, 35.8, TIMELESS_ISLE },
 					isDaily = true,
-					groups = {
-						i(86584),	-- Hardened Shell (TOY!)
-					},
+					groups = { i(86584) },	-- Hardened Shell (TOY!)
 				}),
 				n(73175, {	-- Cinderfall
 					questID = 33310,
@@ -1277,9 +1209,7 @@ maproot(PANDARIA, {
 						{ "n", 73297 },	-- Fishgorged Crane (Dead)
 						{ "n", 72095 },	-- Fishgorged Crane
 					},
-					groups = {
-						i(104268),	-- Pristine Stalker Hide
-					},
+					groups = { i(104268) },	-- Pristine Stalker Hide
 				}),
 				n(73281, {	-- Dread Ship Vazuvius
 					questID = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week. Need to check on another day if both fire off still
@@ -1290,9 +1220,7 @@ maproot(PANDARIA, {
 					description = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
 					coord = { 26.5, 27.8, TIMELESS_ISLE },
 					isDaily = true,
-					groups = {
-						i(104294),	-- Rime of the Time-Lost Mariner (TOY!)
-					},
+					groups = { i(104294) },	-- Rime of the Time-Lost Mariner (TOY!)
 				}),
 				n(73158, {	-- Emerald Gander
 					description = "Travel around the area where the Celestial bosses spawn and kill Brilliant Windfeathers — whenever one respawns, there's a chance it will respawn as an Emerald Gander instead of the normal mob.",
@@ -1305,18 +1233,12 @@ maproot(PANDARIA, {
 						{ 36.4, 46.3, TIMELESS_ISLE },
 						{ 36.7, 84.0, TIMELESS_ISLE },
 					},
-					groups = {
-						i(104287),	-- Windfeather Plume
-					},
+					groups = { i(104287) },	-- Windfeather Plume
 				}),
 				n(73279, {	-- Evermaw <Gnawing Hunger of the Deep>
 					questID = 33313,
 					isDaily = true,
-					groups = {
-						i(104115, {	-- Mist-Filled Spirit Lantern
-							description = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius.",
-						}),
-					},
+					groups = { i(104115, { description = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius." }) },	-- Mist-Filled Spirit Lantern
 				}),
 				n(73172, {	-- Flintlord Gairan
 					questID = 33309,
@@ -1328,17 +1250,13 @@ maproot(PANDARIA, {
 						{ 44.2, 33.8, TIMELESS_ISLE },
 						{ 40.6, 27.2, TIMELESS_ISLE },
 					},
-					groups = {
-						i(104298),	-- Ordon Death Chime
-					},
+					groups = { i(104298) },	-- Ordon Death Chime
 				}),
 				n(73282, {	-- Garnia
 					questID = 33300,
 					isDaily = true,
 					coord = { 64.6, 28.6, TIMELESS_ISLE },
-					groups = {
-						i(104159),	-- Ruby Droplet (PET!)
-					},
+					groups = { i(104159) },	-- Ruby Droplet (PET!)
 				}),
 				n(72970, {	-- Golganarr
 					questID = 33315,
@@ -1357,9 +1275,7 @@ maproot(PANDARIA, {
 						{ 20.6, 43.2, TIMELESS_ISLE },
 						{ 26.6, 72.4, TIMELESS_ISLE },
 					},
-					groups = {
-						i(86584),	-- Hardened Shell (TOY!)
-					},
+					groups = { i(86584) },	-- Hardened Shell (TOY!)
 				}),
 				n(72909, {	-- Gu'chi the Swarmbringer
 					questID = 33294,
@@ -1389,8 +1305,8 @@ maproot(PANDARIA, {
 					description = "Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",
 					questID = 33303,
 					isDaily = true,
-					provider = { "n", 72841 },	-- Death Adder
-					coords = {	-- listing basically all the coordinates, just because they're so spread out!
+					cr = 72841,	-- Death Adder
+					coords = {
 						{ 30.8, 36.2, TIMELESS_ISLE },
 						{ 29.0, 43.6, TIMELESS_ISLE },
 						{ 25.8, 46.6, TIMELESS_ISLE },
@@ -1414,7 +1330,7 @@ maproot(PANDARIA, {
 					description = "Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",
 					questID = 33296,
 					isDaily = true,
-					provider = { "n", 72844 },	-- Ironfur Great Bull
+					cr = 72844,	-- Ironfur Great Bull
 					coords = {
 						{ 43.8, 43.8, TIMELESS_ISLE },
 						{ 41.1, 37.6, TIMELESS_ISLE },
@@ -1423,9 +1339,7 @@ maproot(PANDARIA, {
 						{ 31.6, 58.8, TIMELESS_ISLE },
 						{ 34.2, 71.0, TIMELESS_ISLE },
 					},
-					groups = {
-						i(89770),	-- Tuft of Yak Fur
-					},
+					groups = { i(89770) },	-- Tuft of Yak Fur
 				}),
 				n(73169, {	-- Jakur of Ordon
 					questID = 33306,
@@ -1442,9 +1356,7 @@ maproot(PANDARIA, {
 					isDaily = true,
 					provider = { "n", 72151 },	-- Lin Longpaw
 					coord = { 33.8, 85.8, TIMELESS_ISLE },
-					groups = {
-						i(104035),	-- Giant Purse of Timeless Coins
-					},
+					groups = { i(104035) },	-- Giant Purse of Timeless Coins
 				}),
 				n(73277, {	-- Leafmender
 					questID = 33298,
@@ -1453,9 +1365,7 @@ maproot(PANDARIA, {
 					groups = {
 						i(104156),	-- Ashleaf Spriteling (PET!)
 						i(104289),	-- Faintly-Glowing Herb
-						i(104222, {	-- Technique: Glyph of One with Nature
-							timeline = { REMOVED_7_0_3 },
-						}),
+						i(104222, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of One with Nature
 					},
 				}),
 				n(73166, {	-- Monstrous Spineclaw
@@ -1513,9 +1423,7 @@ maproot(PANDARIA, {
 						71824,	-- Angry Sprite
 						71826,	-- Scary Sprite
 					},
-					groups = {
-						i(104160),	-- Dandelion Frolicker (PET!)
-					},
+					groups = { i(104160) },	-- Dandelion Frolicker (PET!)
 				}),
 				n(72048, {	-- Rattleskew
 					-- no daily questID popped. may have a one-time questID?
@@ -1536,9 +1444,7 @@ maproot(PANDARIA, {
 					groups = {
 						i(104313),	-- Golden Moss
 						i(104312),	-- Strange Glowing Mushroom
-						i(104210, {	-- Technique: Glyph of Regenerative Magic
-							timeline = { REMOVED_7_0_3 },
-						}),
+						i(104210, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Regenerative Magic
 					},
 				}),
 				n(71864, {	-- Spelurk
@@ -1551,14 +1457,12 @@ maproot(PANDARIA, {
 					description = "Use the Cloudstrike ability from the Cloudstrike Family Helm to break down the caved in rocks. If you AFK inside the cave or Mage Blink / Warrior Leap through the rocks, you can interact with the Rock-breaking Hammer to open the way.",
 					coord = { 59.5, 48.9, TIMELESS_ISLE },
 					isDaily = true,
-					groups = {
-						i(104320),	-- Cursed Talisman
-					},
+					groups = { i(104320) },	-- Cursed Talisman
 				}),
 				n(73704, {	-- Stinkbraid
 					questID = 33305,
 					isDaily = true,
-					coord = { 71.2, 82.6, TIMELESS_ISLE },	-- mapID needs verification
+					coord = { 71.2, 82.6, TIMELESS_ISLE },
 				}),
 				n(72769, {	-- Spirit of Jadefire
 					questID = 33293,
@@ -1584,9 +1488,7 @@ maproot(PANDARIA, {
 					questID = 33304,
 					isDaily = true,
 					coord = { 54.2, 42.8, TIMELESS_ISLE },
-					groups = {
-						i(104268),	-- Pristine Stalker Hide
-					},
+					groups = { i(104268) },	-- Pristine Stalker Hide
 				}),
 				n(73173, {	-- Urdur the Cauterizer
 					questID = 33308,
@@ -1611,9 +1513,7 @@ maproot(PANDARIA, {
 					isDaily = true,
 					coord = { 53.5, 56.4, 555 },	-- Cavern of Lost Spirits
 					description = "Daily Lockout\nTraverse the cave to the skeleton at the end within 5 minutes without touching any ghosts.",
-					groups = {
-						ach(8743),	-- Zarhym Altogether
-					},
+					groups = { ach(8743) },	-- Zarhym Altogether
 				}),
 				n(72245, {	-- Zesqua
 					questID = 33316,
@@ -1621,9 +1521,7 @@ maproot(PANDARIA, {
 					coord = { 47.0, 87.4, TIMELESS_ISLE },	-- mapID needs verification
 					groups = {
 						i(104303),	-- Rain Stone
-						i(104225, {	-- Technique: Glyph of Condensation
-							timeline = { REMOVED_7_0_3 },
-						}),
+						i(104225, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Condensation
 					},
 				}),
 				n(71919, {	-- Zhu-Gon the Sour
@@ -1635,9 +1533,7 @@ maproot(PANDARIA, {
 					questID = 32959,
 					isDaily = true,
 					coord = { 37.8, 77.2, TIMELESS_ISLE },
-					groups = {
-						i(104167),	-- Skunky Alemental (PET!)
-					},
+					groups = { i(104167) },	-- Skunky Alemental (PET!)
 				}),
 			}),
 			n(TREASURES, {
@@ -1655,9 +1551,7 @@ maproot(PANDARIA, {
 				o(221673, {	-- Blazing Chest
 					questID = 33210,	-- One-Time Chest - Blazing Chest
 					coord = { 47.3, 26.9, TIMELESS_ISLE },
-					groups = {
-						i(103982),	-- Burden of Eternity
-					},
+					groups = { i(103982) },	-- Burden of Eternity
 				}),
 				o(221725, {	-- Charged Crystal
 					coords = {
@@ -1682,9 +1576,7 @@ maproot(PANDARIA, {
 				o(222796),	-- Cloudstrike Family Helm
 				o(222685, {	-- Crane Nest
 					modelScale = 2.3,
-					groups = {
-						i(104157),	-- Azure Crane Chick (PET!)
-					},
+					groups = { i(104157) },	-- Azure Crane Chick (PET!)
 				}),
 				o(222686),	-- Eerie Crystal
 				o(222689),	-- Fiery Altar of Ordos
@@ -1997,183 +1889,103 @@ maproot(PANDARIA, {
 					isWeekly = true,
 					questID = 32957,
 					coord = { 40.4, 92.9, TIMELESS_ISLE },
-					cost = { { "i", 104015, 1 } },	-- Barnacle Encrusted Key
+					cost = { { "i", 104015, 1 } },	-- 1s Barnacle Encrusted Key
 					cr = 71920,	-- Cursed Hozen Swabby
 					groups = {
 						crit(24021, {	-- Sunken Treasure
 							achievementID = 8727,	-- Where There's Pirates, There's Booty
 						}),
-						i(134024, {	-- Cursed Swabby Helmet (TOY!)
-							timeline = { ADDED_7_0_3 },
-						}),
-						i(104038, {	-- Cursed Swabby Helmet (TOY!)
-							timeline = { ADDED_5_4_0, DELETED_7_0_3 },
-						}),
+						i(134024, { timeline = { ADDED_7_0_3 } }),	-- Cursed Swabby Helmet (TOY!)
+						i(104038, { timeline = { ADDED_5_4_0, DELETED_7_0_3 } }),	-- Cursed Swabby Helmet (TOY!)
 					},
 				}),
 			}),
 			n(VENDORS, {
 				n(73656, {	-- Crafter Kwon <Arms & Armor Repairs>
 					coord = { 38.5, 46.4, TIMELESS_ISLE },
-					sym = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
+					sym = { { "select", "npcID", 56705 }, { "pop" } },	-- Singegruff <Adventuring Supplies>
 				}),
 				n(73657, {	-- Great Chef Woo <Food & Drink>
 					description = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
 					coord = { 41.8, 63.7, TIMELESS_ISLE },
 					groups = sharedData({
 						repeatable = true,
-						groups = {
-							currency(777),	-- Timeless Coins
-						},
-					},{
+						groups = { currency(TIMELESS_COIN) },
+					}, {
 						q(33235, {	-- Great Turtle Meat
-							cost = { { "i", 104265, 1 } },	-- Great Turtle Meat
+							cost = { { "i", 104265, 1 } },	-- 1x Great Turtle Meat
 						}),
 						q(33236, {	-- Heavy Yak Flank
-							cost = { { "i", 104266, 1 } },	-- Heavy Yak Flank
+							cost = { { "i", 104266, 1 } },	-- 1x Heavy Yak Flank
 						}),
 						q(33234, {	-- Meaty Crane Leg
-							cost = { { "i", 104264, 1 } },	-- Meaty Crane Leg
+							cost = { { "i", 104264, 1 } },	-- 1x Meaty Crane Leg
 						}),
 						q(33239, {	-- Pristine Firestorm Egg
-							cost = { { "i", 104257, 1 } },	-- Pristine Firestorm Egg
+							cost = { { "i", 104257, 1 } },	-- 1x Pristine Firestorm Egg
 						}),
 						q(33238, {	-- Thick Tiger Haunch
-							cost = { { "i", 104267, 1 } },	-- Thick Tiger Haunch
+							cost = { { "i", 104267, 1 } },	-- 1z Thick Tiger Haunch
 						}),
 					}),
 				}),
 				n(73819, {	-- Ku-Mo <Hand-Made Kites>
 					coord = { 41.1, 63.8, TIMELESS_ISLE },
 					groups = {
-						i(104333, {	-- Flimsy Sky Lantern
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(104346, {	-- Golden Glider
-							cost = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
-						}),
-						i(104332, {	-- Sky Lantern (PET!)
-							cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
+						i(104333, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Flimsy Sky Lantern
+						i(104346, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Golden Glider
+						i(104332, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Sky Lantern (PET!)
 					},
 				}),
 				n(72007, {	-- Master Kukuru
-					i(101538, {	-- Kukuru's Cache Key
-						cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-					}),
+					i(101538, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Kukuru's Cache Key
 				}),
 				n(73305, {	-- Mistweaver Ai <Timeless Artifacts>
 					coord = { 42.6, 55.7, TIMELESS_ISLE },
 					groups = {
-						i(103989, {	-- Alacrity of Xuen
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
-						i(103982, {	-- Burden of Eternity
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
-						i(105921, {	-- Cloudscorcher Greatstaff
-							cost = { { "c", 777, 20000 } },	-- 20,000x Timeless Coin
-						}),
-						i(103988, {	-- Contemplation of Chi-Ji
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
-						i(105923, {	-- Contemplation of Shaohao
-							cost = { { "c", 777, 20000 } },	-- 20,000x Timeless Coin
-						}),
-						i(105919, {	-- Daylight Protectorate
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						i(103986, {	-- Discipline of Xuen
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
-						i(105927, {	-- Featherdraw Longbow
-							cost = { { "c", 777, 20000 } },	-- 20,000x Timeless Coin
-						}),
-						i(105924, {	-- Hozen Can Opener
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						currency(752, {	-- Mogu Rune of Fate
-							cost = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
-						}),
-						i(105926, {	-- Ordon Sacrificial Dagger
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						i(105920, {	-- Pandaren Peace Offering
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						i(104014, {	-- Pouch of Timeless Coins (was purchased via valor points)
-							timeline = { REMOVED_6_0_2 },
-						}),
-						i(103990, {	-- Resolve of Niuzao
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
-						i(105929, {	-- Scavenged Pandaren Dagger
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						i(105922, {	-- Shield of the Eternal Noon
-							cost = { { "c", 777, 10000 } },	-- 10,000x Timeless Coin
-						}),
-						i(103977, {	-- Time-Worn Journal
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(104013, {	-- Timeless Cloth Armor Cache
-							cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
-						i(104012, {	-- Timeless Leather Armor Cache
-							cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
-						i(104010, {	-- Timeless Mail Armor Cache
-							cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
-						i(104009, {	-- Timeless Plate Armor Cache
-							cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
-						i(105925, {	-- Yak-Herder's Longstaff
-							cost = { { "c", 777, 20000 } },	-- 20,000x Timeless Coin
-						}),
-						i(103987, {	-- Yu'lon's Bite
-							cost = { { "c", 777, 50000 } },	-- 50,000x Timeless Coin
-						}),
+						i(103989, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Alacrity of Xuen
+						i(103982, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Burden of Eternity
+						i(105921, { cost = { { "c", TIMELESS_COIN, 20000 } } }),	-- Cloudscorcher Greatstaff
+						i(103988, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Contemplation of Chi-Ji
+						i(105923, { cost = { { "c", TIMELESS_COIN, 20000 } } }),	-- Contemplation of Shaohao
+						i(105919, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Daylight Protectorate
+						i(103986, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Discipline of Xuen
+						i(105927, { cost = { { "c", TIMELESS_COIN, 20000 } } }),	-- Featherdraw Longbow
+						i(105924, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Hozen Can Opener
+						currency(752, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Mogu Rune of Fate
+						i(105926, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Ordon Sacrificial Dagger
+						i(105920, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Pandaren Peace Offering
+						i(104014, { timeline = { REMOVED_6_0_2 } }),	-- Pouch of Timeless Coins (was purchased via valor points)
+						i(103990, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Resolve of Niuzao
+						i(105929, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Scavenged Pandaren Dagger
+						i(105922, { cost = { { "c", TIMELESS_COIN, 10000 } } }),	-- Shield of the Eternal Noon
+						i(103977, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Time-Worn Journal
+						i(104013, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Timeless Cloth Armor Cache
+						i(104012, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Timeless Leather Armor Cache
+						i(104010, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Timeless Mail Armor Cache
+						i(104009, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Timeless Plate Armor Cache
+						i(105925, { cost = { { "c", TIMELESS_COIN, 20000 } } }),	-- Yak-Herder's Longstaff
+						i(103987, { cost = { { "c", TIMELESS_COIN, 50000 } } }),	-- Yu'lon's Bite
 					},
 				}),
 				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
 					coord = { 42.6, 54.6, TIMELESS_ISLE },
 					groups = bubbleDownClassicRep(FACTION_EMPEROR_SHAOHAO, {
-						{		-- Neutral
+						{	-- Neutral
 						}, {	-- Friendly
-							i(103683, {	-- Mask of Anger
-								cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103681, {	-- Mask of Doubt
-								cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103679, {	-- Mask of Fear
-								cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103680, {	-- Mask of Hatred
-								cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103682, {	-- Mask of Violence
-								cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
+							i(103683, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Mask of Anger
+							i(103681, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Mask of Doubt
+							i(103679, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Mask of Fear
+							i(103680, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Mask of Hatred
+							i(103682, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Mask of Violence
 						}, {	-- Honored
-							i(103684, {	-- Scroll of Challenge
-								cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-							}),
-							i(103678, {	-- Time-Lost Artifact
-								cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-							}),
+							i(103684, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Scroll of Challenge
+							i(103678, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Time-Lost Artifact
 						}, {	-- Revered
-							i(103685, {	-- Celestial Defender's Medallion (TOY!)
-								cost = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
-							}),
-							i(104295, {	-- Harmonious Purcupette (PET!)
-								cost = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-							}),
+							i(103685, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Celestial Defender's Medallion (TOY!)
+							i(104295, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Harmonious Purcupette (PET!)
 						}, {	-- Exalted
-							i(87774, {	-- Heavenly Golden Cloud Serpent (MOUNT!)
-								cost = { { "c", 777, 100000 } },	-- 100,000x Timeless Coin
-							}),
+							i(87774, { cost = { { "c", TIMELESS_COIN, 100000 } } }),	-- Heavenly Golden Cloud Serpent (MOUNT!)
 						},
 					}),
 				}),
@@ -2185,216 +1997,88 @@ maproot(PANDARIA, {
 					},
 					timeline = { ADDED_11_1_0 },
 					groups = {
-						i(221818),	-- Astral Emperor's Serpentling (PET!)
-						i(235782, {	-- Battleplate of Winged Triumph
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
+						i(221818, {	-- Astral Emperor's Serpentling (PET!)
+							sourceAchievement = 20003,	-- Timeless Isle
 						}),
-						i(235743, {	-- Breastplate of the Lost Catacomb
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235764, {	-- Breastplate of the Witch Doctor
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235783, {	-- Breastplate of Winged Triumph
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235758, {	-- Cap of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235744, {	-- Chestguard of the Lost Catacomb
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235784, {	-- Chestguard of Winged Triumph
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235770, {	-- Chronomancer Leggings
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235766, {	-- Chronomancer Pants
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235765, {	-- Chronomancer Shirt
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235768, {	-- Chronomancer Trousers
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235767, {	-- Chronomancer Vest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235756, {	-- Cover of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235722, {	-- Cover of the Thousandfold Blades
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235718, {	-- Crown of the Burning Scroll
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
+						i(235782, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Battleplate of Winged Triumph
+						i(235743, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Breastplate of the Lost Catacomb
+						i(235764, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Breastplate of the Witch Doctor
+						i(235783, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Breastplate of Winged Triumph
+						i(235758, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Cap of the Haunted Forest
+						i(235744, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Chestguard of the Lost Catacomb
+						i(235784, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Chestguard of Winged Triumph
+						i(235770, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Chronomancer Leggings
+						i(235766, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Chronomancer Pants
+						i(235765, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Chronomancer Shirt
+						i(235768, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Chronomancer Trousers
+						i(235767, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Chronomancer Vest
+						i(235756, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Cover of the Haunted Forest
+						i(235722, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Cover of the Thousandfold Blades
+						i(235718, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Crown of the Burning Scroll
 						iensemble(235716),	-- Ensemble: Cloak of Infinite Potential
-						iensemble(215198, {	-- Ensemble: Timeworn Dreadful Mooncloth Regalia
-							cost = { { "c", TIMEWARPED_BADGE, 4000 } },
+						iensemble(215198, { cost = { { "c", TIMEWARPED_BADGE, 4000 } } }),	-- Ensemble: Timeworn Dreadful Mooncloth Regalia
+						iensemble(215200, { cost = { { "c", TIMEWARPED_BADGE, 4000 } } }),	-- Ensemble: Timeworn Malevolent Mooncloth Regalia
+						i(235726, { cost = { { "c", TIMEWARPED_BADGE, 200 } } }),	-- Eternal Blossom Bindings
+						i(235728, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Eternal Blossom Jerkin
+						i(235729, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Eternal Blossom Mantle
+						i(235727, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Eternal Blossom Tunic
+						i(235730, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Eternal Blossom Tunic
+						i(235749, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Firebird's Breastplate
+						i(235745, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Firebird's Cuirass
+						i(235746, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Firebird's Legguards
+						i(235748, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Firebird's Legwraps
+						i(235747, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Firebird's Shirt
+						i(235760, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Helm of the Haunted Forest
+						i(235717, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Hood of the Burning Scroll
+						i(220765, {	-- Illusion: Sha Corruption (ILLUSION!)
+							sourceAchievement = 19878,	-- Dread Wastes
 						}),
-						iensemble(215200, {	-- Ensemble: Timeworn Malevolent Mooncloth Regalia
-							cost = { { "c", TIMEWARPED_BADGE, 4000 } },
+						i(235781, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Jerkin of Seven Sacred Seals
+						i(235759, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Jerkin of the Haunted Forest
+						i(235776, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Leggings of the Shattered Vale
+						i(235771, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Leggings of the Ternion Glory
+						i(235778, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Legguards of the Shattered Vale
+						i(235721, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Mantle of the Thousandfold Blades
+						i(235719, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Mitts of the Burning Scroll
+						i(221817, {	-- Muskpaw Calf (PET!)
+							sourceAchievement = 19877,	-- Townlong Steppes
 						}),
-						i(235726, {	-- Eternal Blossom Bindings
-							cost = { { "c", TIMEWARPED_BADGE, 200 } },
-						}),
-						i(235728, {	-- Eternal Blossom Jerkin
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235729, {	-- Eternal Blossom Mantle
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235727, {	-- Eternal Blossom Tunic
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235730, {	-- Eternal Blossom Tunic
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235749, {	-- Firebird's Breastplate
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235745, {	-- Firebird's Cuirass
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235746, {	-- Firebird's Legguards
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235748, {	-- Firebird's Legwraps
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235747, {	-- Firebird's Shirt
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235760, {	-- Helm of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235717, {	-- Hood of the Burning Scroll
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(220765),	-- Illusion: Sha Corruption (ILLUSION!)
-						i(235781, {	-- Jerkin of Seven Sacred Seals
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235759, {	-- Jerkin of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235776, {	-- Leggings of the Shattered Vale
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235771, {	-- Leggings of the Ternion Glory
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235778, {	-- Legguards of the Shattered Vale
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235721, {	-- Mantle of the Thousandfold Blades
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235719, {	-- Mitts of the Burning Scroll
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(221817),	-- Muskpaw Calf (PET!)
-						i(235777, {	-- Pants of the Shattered Vale
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235773, {	-- Pants of the Ternion Glory
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235725, {	-- Red Crane Cover
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235723, {	-- Red Crane Legguards
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235724, {	-- Red Crane Spaulders
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235763, {	-- Robeguard of the Witch Doctor
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235735, {	-- Sha-Skin Amice
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235733, {	-- Sha-Skin Mantle
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235731, {	-- Sha-Skin Mitts
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235734, {	-- Sha-Skin Shirt
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235732, {	-- Sha-Skin Vestment
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235769, {	-- Shirt of the Chronomancer
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235774, {	-- Shirt of the Horned Nightmare
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235755, {	-- Shirt of the Thousandfold Hells
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235772, {	-- Trousers of the Ternion Glory
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235779, {	-- Tunic of Seven Sacred Seals
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235780, {	-- Vest of Seven Sacred Seals
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235757, {	-- Vest of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235761, {	-- Vest of the Haunted Forest
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235754, {	-- Vest of the Thousandfold Hells
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235775, {	-- Vestments of the Shattered Vale
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235762, {	-- Vestments of the Witch Doctor
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235752, {	-- Warhelm of Resounding Rings
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235739, {	-- White Tiger Greaves
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235740, {	-- White Tiger Legplates
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235742, {	-- White Tiger Shoulderguards
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235741, {	-- White Tiger Spaulders
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
-						i(235750, {	-- Yaungol Slayer's Belt
-							cost = { { "c", TIMEWARPED_BADGE, 700 } },
-						}),
-						i(235751, {	-- Yaungol Slayer's Spaulders
-							cost = { { "c", TIMEWARPED_BADGE, 800 } },
-						}),
+						i(235777, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Pants of the Shattered Vale
+						i(235773, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Pants of the Ternion Glory
+						i(235725, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Red Crane Cover
+						i(235723, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Red Crane Legguards
+						i(235724, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Red Crane Spaulders
+						i(235763, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Robeguard of the Witch Doctor
+						i(235735, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Sha-Skin Amice
+						i(235733, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Sha-Skin Mantle
+						i(235731, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Sha-Skin Mitts
+						i(235734, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Sha-Skin Shirt
+						i(235732, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Sha-Skin Vestment
+						i(235769, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Shirt of the Chronomancer
+						i(235774, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Shirt of the Horned Nightmare
+						i(235755, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Shirt of the Thousandfold Hells
+						i(235772, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Trousers of the Ternion Glory
+						i(235779, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Tunic of Seven Sacred Seals
+						i(235780, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vest of Seven Sacred Seals
+						i(235757, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vest of the Haunted Forest
+						i(235761, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vest of the Haunted Forest
+						i(235754, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vest of the Thousandfold Hells
+						i(235775, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vestments of the Shattered Vale
+						i(235762, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Vestments of the Witch Doctor
+						i(235752, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Warhelm of Resounding Rings
+						i(235739, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- White Tiger Greaves
+						i(235740, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- White Tiger Legplates
+						i(235742, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- White Tiger Shoulderguards
+						i(235741, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- White Tiger Spaulders
+						i(235750, { cost = { { "c", TIMEWARPED_BADGE, 700 } } }),	-- Yaungol Slayer's Belt
+						i(235751, { cost = { { "c", TIMEWARPED_BADGE, 800 } } }),	-- Yaungol Slayer's Spaulders
 					},
 				}),
 				n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 					coord = { 74.9, 44.9, TIMELESS_ISLE },
 					groups = {
-						i(102467, {	-- Censer of Eternal Agony (TOY!)
-							cost = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
-						}),
-						i(102463, {	-- Fire-Watcher's Oath
-							cost = { { "c", 777, 100 } },	-- 100x Timeless Coin
-						}),
+						i(102467, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Censer of Eternal Agony (TOY!)
+						i(102463, { cost = { { "c", TIMELESS_COIN, 100 } } }),	-- Fire-Watcher's Oath
 						pvp(i(102464, {	-- Black Ash
 							cost = { { "c", 789, 1 } },	-- 1x Bloody Coin
 						})),
@@ -2425,24 +2109,14 @@ maproot(PANDARIA, {
 						{ 35.0, 52.8, TIMELESS_ISLE },
 					},
 					groups = {
-						i(103786, {	-- "Dapper Gentleman" Costume
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(103795, {	-- "Dread Pirate" Costume
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(103789, {	-- "Little Princess" Costume
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(103797, {	-- Big Pink Bow
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
-						i(71153, {	-- Magical Pet Biscuit
-							cost = { { "c", 777, 500 } },	-- 500x Timeless Coin
-						}),
+						i(103786, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- "Dapper Gentleman" Costume
+						i(103795, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- "Dread Pirate" Costume
+						i(103789, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- "Little Princess" Costume
+						i(103797, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Big Pink Bow
+						i(71153, { cost = { { "c", TIMELESS_COIN, 500 } } }),	-- Magical Pet Biscuit
 						i(104230, {	-- Technique: Glyph of Shifted Appearances
 							timeline = { REMOVED_6_0_2 },
-							cost = { { "c", 777, 4000 } },	-- 4000x Timeless Coin
+							cost = { { "c", TIMELESS_COIN, 4000 } },
 						}),
 					},
 				}),
@@ -2454,9 +2128,7 @@ maproot(PANDARIA, {
 				n(72877, {	-- Ashleaf Sprite
 					i(106130),	-- Big Bag of Herbs
 					i(104289),	-- Faintly-Glowing Herb
-					i(104222, {	-- Technique: Glyph of One with Nature
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104222, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of One with Nature
 				}),
 				n(72897, {	-- Blazebound Chanter
 					i(104304),	-- Blizzard Stone
@@ -2468,23 +2140,17 @@ maproot(PANDARIA, {
 				n(72895, {	-- Burning Berserker
 					i(106130),	-- Big Bag of Herbs
 					i(86566),	-- Forager's Gloves
-					i(104232, {	-- Technique: Glyph of Headhunting
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104232, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Headhunting
 				}),
 				n(72807, {	-- Crag Stalker
-					i(104279, {	-- Technique: Glyph of the Lean Pack
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104279, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of the Lean Pack
 				}),
 				n(72876, {	-- Crimsonscale Firestorm
 					i(104286),	-- Quivering Firestorm Egg
 				}),
 				n(72771, {	-- Damp Shambler
 					i(104312),	-- Strange Glowing Mushroom
-					i(104210, {	-- Technique: Glyph of Regenerative Magic
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104210, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Regenerative Magic
 				}),
 				n(72841, {	-- Death Adder
 					i(104292),	-- Partially-Digested Meal
@@ -2496,26 +2162,18 @@ maproot(PANDARIA, {
 				n(72896, {	-- Eternal Kilnmaster
 					i(104297),	-- Blazing Sigil of Ordos
 					i(104309),	-- Eternal Kiln (TOY!)
-					i(104217, {	-- Technique: Glyph of Impaling Throws
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(104217, { timeline = { REMOVED_6_0_2 } }),	-- Technique: Glyph of Impaling Throws
 				}),
 				n(73162, {	-- Foreboding Flame
 					i(104261),	-- Glowing Blue Ash
 					i(104166),	-- Ominous Flame (PET!)
 					i(104227),	-- Technique: Glyph of Pillar of Light
 				}),
-				i(104265, {	-- Great Turtle Meat
-					description = "Can be turned in for 50 Timeless Coins.",
-				}),
+				i(104265, { description = "Can be turned in for 50 Timeless Coins." }),	-- Great Turtle Meat
 				n(72777, {	-- Gulp Frog
-					i(104241, {	-- Technique: Glyph of Rain of Frogs
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104241, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of Rain of Frogs
 				}),
-				i(104266, {	-- Heavy Yak Flank
-					description = "Can be turned in for 50 Timeless Coins.",
-				}),
+				i(104266, { description = "Can be turned in for 50 Timeless Coins." }),	-- Heavy Yak Flank
 				n(72898, {	-- High Priest of Ordos
 					i(104329),	-- Ash-Covered Horn (TOY!)
 				}),
@@ -2524,39 +2182,27 @@ maproot(PANDARIA, {
 					i(104164),	-- Jademist Dancer (PET!)
 					i(104224),	-- Technique: Glyph of Evaporation
 				}),
-				i(104264, {	-- Meaty Crane Leg
-					description = "Can be turned in for 20 Timeless Coins.",
-				}),
+				i(104264, { description = "Can be turned in for 20 Timeless Coins." }),	-- Meaty Crane Leg
 				n(72888, {	-- Molten Guardian
 					i(104328),	-- Cauterizing Core
 				}),
 				n(72875, {	-- Ordon Candlekeeper
 					i(86565),	-- Battle Horn (TOY!)
-					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(104209, { timeline = { REMOVED_6_0_2 } }),	-- Technique: Glyph of Loud Horn
 				}),
 				n(72894, {	-- Ordon Fire-Watcher
 					i(104297),	-- Blazing Sigil of Ordos
 					i(104296),	-- Ordon Ceremonial Robes
-					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { REMOVED_6_0_2 },
-					}),
+					i(104209, { timeline = { REMOVED_6_0_2 } }),	-- Technique: Glyph of Loud Horn
 				}),
 				n(72892, {	-- Ordon Oathguard
-					i(104209, {	-- Technique: Glyph of Loud Horn
-						timeline = { REMOVED_6_0_2 },
-					}),
-					i(104244, {	-- Technique: Glyph of the Watchful Eye
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104209, { timeline = { REMOVED_6_0_2 } }),	-- Technique: Glyph of Loud Horn
+					i(104244, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of the Watchful Eye
 					i(104330),	-- Warped Warning Sign
 				}),
 				n(72805, {	-- Primal Stalker
 					i(104268),	-- Pristine Stalker Hide
-					i(104279, {	-- Technique: Glyph of the Lean Pack
-						timeline = { REMOVED_7_0_3 },
-					}),
+					i(104279, { timeline = { REMOVED_7_0_3 } }),	-- Technique: Glyph of the Lean Pack
 				}),
 				i(104257, {	-- Pristine Firestorm Egg
 					description = "Can be turned in for 500 Timeless Coins.",

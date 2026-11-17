@@ -182,9 +182,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 					sourceQuests = { 58086 },	-- The Master of Lies
 				}),
 			}),
-			ach(14512, {	-- Tour of Duty: Revendreth
-				pvp = true,
-			}),
+			pvp(ach(14512)),	-- Tour of Duty: Revendreth
 			ach(14314, {	-- Treasures of Revendreth
 				crit(50076, {	-- Lost Quill
 					_quests = { 61990 },

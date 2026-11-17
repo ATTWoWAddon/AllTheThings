@@ -207,9 +207,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				}),
 			}),
 			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- The Undying Army
-			ach(14513, {	-- Tour of Duty: Maldraxxus
-				pvp = true,
-			}),
+			pvp(ach(14513)),	-- Tour of Duty: Maldraxxus
 			ach(14312, {	-- Treasures of Maldraxxus
 				crit(50063, {	-- Ornate Bone Shield
 					_quests = { 59358 },

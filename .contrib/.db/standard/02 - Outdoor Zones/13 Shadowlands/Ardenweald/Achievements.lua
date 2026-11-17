@@ -139,9 +139,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 				coord = { 65.6, 24.6, ARDENWEALD },
 				provider = { "i", 183902 },	-- 1x A Faintly Glowing Seed
 			}),
-			ach(14511, {	-- Tour of Duty: Ardenweald
-				pvp = true,
-			}),
+			pvp(ach(14511)),	-- Tour of Duty: Ardenweald
 			ach(14313, {	-- Treasures of Ardenweald
 				sym = {{ "achievement_criteria" }},
 			}),

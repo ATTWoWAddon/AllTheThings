@@ -35,12 +35,8 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 
 local LOVE_TOKEN = 49927;
 local BOUQUET_RED = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(22206));	-- Bouquet of Red Roses
-local BOUQUET_EBON = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(44731, {	-- Bouquet of Ebon Roses
-	timeline = { ADDED_3_0_3 },
-}));
-local POUCH_OF_RED_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188693, {	-- Pouch of Red Rose Petals
-	timeline = { ADDED_9_1_5 },
-}));
+local BOUQUET_EBON = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(44731, { timeline = { ADDED_3_0_3 } }));	-- Bouquet of Ebon Roses
+local POUCH_OF_RED_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188693, { timeline = { ADDED_9_1_5 } }));	-- Pouch of Red Rose Petals
 local POUCH_OF_EBON_ROSE_PETALS = applyevent(EVENTS.LOVE_IS_IN_THE_AIR, i(188692, {	-- Pouch of Ebon Rose Petals
 	timeline = { ADDED_9_1_5 },
 	-- #if AFTER 10.2.5
@@ -75,7 +71,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			groups = {
 				ach(1707, {	-- Fool For Love (A)
 					-- Meta Achievement should symlink the contained Achievements from Source
-					sym = {{"meta_achievement",
+					sym = { { "meta_achievement",
 						260,	-- Charming
 						1188,	-- Shafted!
 						1279,	-- Flirt With Disaster [Alliance]
@@ -88,16 +84,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						1701,	-- Be Mine!
 						1703,	-- My Love is Like a Red, Red Rose
 						1704,	-- I Pitied The Fool
-					}},
+					} },
 					timeline = { REMOVED_5_0_4 },
 					races = ALLIANCE_ONLY,
-					groups = {
-						title(103),	-- the Love Fool
-					},
+					groups = { title(103) },	-- the Love Fool
 				}),
 				ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
 					-- Meta Achievement should symlink the contained Achievements from Source
-					sym = {{"meta_achievement",
+					sym = { { "meta_achievement",
 						-- #if BEFORE 10.2.5
 						260,	-- Charming
 						-- #endif
@@ -122,13 +116,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						1701,	-- Be Mine!
 						1703,	-- My Love is Like a Red, Red Rose
 						1704,	-- I Pitied The Fool
-					}},
+					} },
 					-- #if BEFORE MOP
 					races = HORDE_ONLY,
 					-- #endif
-					groups = {
-						title(103),	-- the Love Fool
-					},
+					groups = { title(103) },	-- the Love Fool
 				}),
 				ach(1701, {	-- Be Mine!
 					crit(6324, {	-- Be Mine!
@@ -200,7 +192,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				}),
 				ach(1699, {	-- Fistful of Love
 					cost = { { "i", 22218, 11 } },	-- 11x Handful of Rose Petals (minimum)
-					sym = {{ "achievement_criteria" }},
+					sym = { { "achievement_criteria" } },
 				}),
 				ach(1279, {	-- Flirt With Disaster [Alliance]
 					providers = {
@@ -227,7 +219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					races = HORDE_ONLY,
 				}),
 				ach(1704, {	-- I Pitied The Fool
-					sym = {{ "achievement_criteria" }},
+					sym = { { "achievement_criteria" } },
 					cost = { { "i", 22261, 5 } },	-- 5x Love Fool
 					maps = {
 						ARATHI_BASIN,
@@ -430,9 +422,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				ach(9394, {	-- They Really Love Me! (50)
 					provider = { "i", 116648 },	-- Manufactured Love Prism
 					timeline = { ADDED_6_0_2 },
-					groups = {
-						i(116651),	-- True Love Prism (TOY!)
-					},
+					groups = { i(116651) },	-- True Love Prism (TOY!)
 				}),
 				ach(9393, {	-- Beacon of Love (25)
 					provider = { "i", 116648 },	-- Manufactured Love Prism
@@ -1453,6 +1443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 38066,	-- Inspector Snip Snagglebolt
 				coord = { 32.2, 50.1, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				qi = 210332,	-- O.D.I.E.'s Remote Control (QI!)
 				groups = {
 					i(LOVE_TOKEN),
 					i(210658),	-- Discarded Perfume Bottle
@@ -1463,21 +1454,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						i(210413),	-- Map of Shadowfang Keep Security (QI!)
 					}),
 					o(410999, {	-- Memo from Apothecary Hummel
-						i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
+						i(210417),	-- Memo from Apothecary Hummel (QI!)
 					}),
-					i(213091),	-- Memo from Apothecary Hummel [book] (awarded to player after turn in this quest)
-					i(210332),	-- O.D.I.E.'s Remote Control (QI!)
+					i(213091),	-- Memo from Apothecary Hummel
 				},
 			}),
 			q(78337, {	-- An Unwelcome Gift (A)
 				sourceQuest = 78332,	-- I Smell Trouble (A)
 				qg = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(LOVE_TOKEN),
-					i(210688),	-- Manufacturing Oil
-					i(211208),	-- O.D.I.E.'s Remote Control (QI!)
-				},
+				qi = 211208,	-- O.D.I.E.'s Remote Control (QI!)
+				groups = { i(LOVE_TOKEN), i(210688) },	-- Manufacturing Oil
 			}),
 			q(78729, {	-- Raising a Stink (A)
 				sourceQuest = 78337,	-- An Unwelcome Gift (A)
@@ -1495,7 +1482,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						coord = { 45.7, 68.5, SILVERPINE_FOREST },
 						groups = {
 							i(210431),	-- Artisanal Bon-Bombs (QI!)
-							i(211127),	-- Note from Bang Sparknozzle (QI!) [book]
+							i(211127),	-- Note from Bang Sparknozzle (QI!)
 						},
 					}),
 				},
@@ -1535,6 +1522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 37172,	-- Detective Snap Snagglebolt
 				coord = { 41.6, 17.7, DUROTAR },
 				races = HORDE_ONLY,
+				qi = 211778,	-- O.D.I.E.'s Remote Control (QI!)
 				groups = {
 					i(LOVE_TOKEN),
 					i(210658),	-- Discarded Perfume Bottle
@@ -1545,20 +1533,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						i(210413),	-- Map of Shadowfang Keep Security (QI!)
 					}),
 					o(410999, {	-- Memo from Apothecary Hummel
-						i(210417),	-- Memo from Apothecary Hummel (QI!) [book]
+						i(210417),	-- Memo from Apothecary Hummel (QI!
 					}),
-					i(213091),	-- Memo from Apothecary Hummel [book] (awarded to player after turn in this quest)
-					i(211778),	-- O.D.I.E.'s Remote Control (QI!)
+					i(213091),	-- Memo from Apothecary Hummel
 				},
 			}),
 			q(78983, {	-- An Unwelcome Gift (H)
 				sourceQuest = 78982,	-- I Smell Trouble (H)
 				qg = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 				races = HORDE_ONLY,
-				groups = {
-					i(LOVE_TOKEN),
-					i(211781),	-- O.D.I.E.'s Remote Control (QI!)
-				},
+				qi = 211781,	-- O.D.I.E.'s Remote Control (QI!)
+				groups = { i(LOVE_TOKEN) },
 			}),
 			q(78978, {	-- Raising a Stink (H)
 				sourceQuest = 78983,	-- I Smell Trouble (H)
@@ -1574,10 +1559,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(LOVE_TOKEN),
 					o(413126, {	-- Box of Artisanal Goods
 						coord = { 45.7, 68.5, SILVERPINE_FOREST },
-						groups = {
-							i(210431),	-- Artisanal Bon-Bombs (QI!)
-							i(211782),	-- Note from Zikky (QI!) [book]
-						},
+						qi = 210431,	-- Artisanal Bon-Bombs (QI!)
+						groups = { i(211782) },	-- Note from Zikky
 					}),
 				},
 			}),
@@ -1594,18 +1577,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 212677,	-- Gabbo Blinkwink
 				coord = { 34.3, 51.6, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(211923),	-- Sealed Letter (QI!)
-					i(211922),	-- Bouquet of Flowers (QI!)
+				qis = {
+					211923,	-- Sealed Letter (QI!)
+					211922,	-- Bouquet of Flowers (QI!)
 				},
 			}),
 			q(78988, {	-- Getaway to Scenic Feralas! (H)
 				qg = 214497,	-- Aurora Vabsley
 				coord = { 41.5, 16.1, DUROTAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(211923),	-- Sealed Letter (QI!)
-					i(211922),	-- Bouquet of Flowers (QI!)
+				qis = {
+					211923,	-- Sealed Letter (QI!)
+					211922,	-- Bouquet of Flowers (QI!)
 				},
 			}),
 			q(78565, {	-- Getaway to Scenic Grizzly Hills! (A)
@@ -1672,17 +1655,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				qg = 212677,	-- Gabbo Blinkwink
 				coord = { 34.3, 51.6, ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(210743),	-- Borrowed Camera (QI!)
-				},
+				qi = 210743,	-- Borrowed Camera (QI!)
 			}),
 			q(78987, {	-- Getaway to Scenic Nagrand! (H)
 				qg = 214497,	-- Aurora Vabsley
 				coord = { 41.5, 16.1, DUROTAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(210743),	-- Borrowed Camera (QI!)
-				},
+				qi = 210743,	-- Borrowed Camera (QI!)
 			}),
 			q(78724, {	-- Loving Yourself, Your Way (A)
 				sourceQuest = 78664,	-- The Gift of Self-Care (A)
@@ -1795,7 +1774,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(145293),	-- War of the Three Hammers
 					i(145314),	-- Wrath of Soulflayer
 					i(203932),	-- Sentient Book
-					-- got tired of clicking books kek
 				},
 			}),
 			q(78991, {	-- The Gift of Relaxation (H)
@@ -1864,7 +1842,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(145293),	-- War of the Three Hammers
 					i(145314),	-- Wrath of Soulflayer
 					i(203932),	-- Sentient Book
-					-- got tired of clicking books kek
 				},
 			}),
 			q(78674, {	-- The Gift of Relief (A)
@@ -1939,21 +1916,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				-- #if BEFORE 3.3.2.11403
 				i(22261),	-- Love Fool
 				-- #endif
-				i(34258, {	-- Lovely Fireworks
-					timeline = { ADDED_2_3_0 },
-				}),
+				i(34258, { timeline = { ADDED_2_3_0 } }),	-- Lovely Fireworks
 				-- #if BEFORE 3.3.2.11403
-				i(22279, {	-- Lovely Black Dress
-					timeline = { REMOVED_7_2_5 },
-				}),
-				i(34480, {	-- Romantic Picnic Basket (TOY!)
-					timeline = { ADDED_2_4_0 },
-				}),
+				i(22279, { timeline = { REMOVED_7_2_5 } }),	-- Lovely Black Dress
+				i(34480, { timeline = { ADDED_2_4_0 } }),	-- Romantic Picnic Basket (TOY!)
 				i(22200),	-- Silver Shafted Arrow
 				i(22235),	-- Peddlefeet (PET!)
-				i(22259, {	-- Unbestowed Friendship Bracelet
-					timeline = { REMOVED_3_3_2 },
-				}),
+				i(22259, { timeline = { REMOVED_3_3_2 } }),	-- Unbestowed Friendship Bracelet
 				-- #endif
 			},
 		}),
@@ -1993,24 +1962,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				timeline = { ADDED_10_2_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(210318, {	-- Chocolate Bon-Bomb
-						cost = { { "i", LOVE_TOKEN, 1 } },
-					}),
-					i(22261, {	-- Love Fool
-						cost = { { "i", LOVE_TOKEN, 10 } },
-					}),
-					i(34258, {	-- Lovely Fireworks
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(116648, {	-- Manufactured Love Prism
-						cost = { { "i", LOVE_TOKEN, 40 } },
-					}),
-					i(211976, {	-- Pink Brightbursts
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(144339, {	-- Sturdy Love Fool (TOY!)
-						cost = { { "i", LOVE_TOKEN, 100 } },
-					}),
+					i(210318, { cost = { { "i", LOVE_TOKEN, 1 } } }),	-- Chocolate Bon-Bomb
+					i(22261, { cost = { { "i", LOVE_TOKEN, 10 } } }),	-- Love Fool
+					i(34258, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Lovely Fireworks
+					i(116648, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Manufactured Love Prism
+					i(211976, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Pink Brightbursts
+					i(144339, { cost = { { "i", LOVE_TOKEN, 100 } } }),	-- Sturdy Love Fool (TOY!)
 				},
 			}),
 			n(213094, {	-- Bimble Longberry
@@ -2019,9 +1976,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(210928),	-- Healthy Body Package
-					i(239015, {	-- Rock Candy Package
-						timeline = { ADDED_11_0_7 },
-					}),
+					i(239015, { timeline = { ADDED_11_0_7 } }),	-- Rock Candy Package
 				},
 			}),
 			n(214482, {	-- Grogg Skullsmasher <Fruit Vendor>
@@ -2031,9 +1986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				groups = {
 					i(210821),	-- Berry Chocolate Tart
 					i(210819),	-- Chocolate-Covered Cherries
-					i(239015, {	-- Rock Candy Package
-						timeline = { ADDED_11_0_7 },
-					}),
+					i(239015, { timeline = { ADDED_11_0_7 } }),	-- Rock Candy Package
 				},
 			}),
 			n(214493, {	-- Guo Plumpaw
@@ -2044,9 +1997,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(210841),	-- Buttered Oysters
 					i(210929),	-- Comfort Food Package
 					i(210842),	-- Fresh Fig
-					i(239015, {	-- Rock Candy Package
-						timeline = { ADDED_11_0_7 },
-					}),
+					i(239015, { timeline = { ADDED_11_0_7 } }),	-- Rock Candy Package
 				},
 			}),
 			n(214488, {	-- Hana Breezeheart <Flower Vendor>
@@ -2054,63 +2005,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				timeline = { ADDED_10_2_5 },
 				races = HORDE_ONLY,
 				groups = {
-					i(211359, {	-- Eternal Black Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211358, {	-- Eternal Blue Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211357, {	-- Eternal Orange Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211355, {	-- Eternal Pink Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211354, {	-- Eternal White Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211352, {	-- Eternal Yellow Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(22218, {	-- Handful of Rose Petals
-						cost = { { "i", LOVE_TOKEN, 2 } },
-					}),
-					i(50163, {	-- Lovely Rose
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211363, {	-- Rose of Dreams Fulfilled
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211351, {	-- Rose of Friendship
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211362, {	-- Rose of Independence
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211361, {	-- Rose of Joy
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211360, {	-- Rose of Purity
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211264, {	-- Rose of Romance
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211364, {	-- Rose of Tragedy
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(210965, {	-- Single-Use Bouquet
-						cost = { { "i", LOVE_TOKEN, 1 } },
-					}),
+					i(211359, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Black Rose
+					i(211358, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Blue Rose
+					i(211357, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Orange Rose
+					i(211355, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Pink Rose
+					i(211354, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal White Rose
+					i(211352, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Yellow Rose
+					i(22218, { cost = { { "i", LOVE_TOKEN, 2 } } }),	-- Handful of Rose Petals
+					i(50163, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Lovely Rose
+					i(211363, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Dreams Fulfilled
+					i(211351, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Friendship
+					i(211362, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Independence
+					i(211361, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Joy
+					i(211360, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Purity
+					i(211264, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Romance
+					i(211364, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Tragedy
+					i(210965, { cost = { { "i", LOVE_TOKEN, 1 } } }),	-- Single-Use Bouquet
 				},
 			}),
 			n(214861, {	-- Jeremiah Payson <Crunchy Sweets> [Need HORDE Version]
 				coord = { 41.2, 17.5, DUROTAR },
 				timeline = { ADDED_10_2_5 },
 				races = HORDE_ONLY,
-				groups = {
-					i(211810),	-- Chocolate-Covered Crunchies
-				},
+				groups = { i(211810) },	-- Chocolate-Covered Crunchies
 			}),
 			n(211812, {	-- Kiera Torres <Lovely Prizes and Heirlooms>
 				coord = { 32.2, 50.4, ELWYNN_FOREST },
@@ -2118,39 +2035,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				races = ALLIANCE_ONLY,
 				groups = {
 					filter(BATTLE_PETS, {
-						i(205156, {	-- Heartseeker Moth (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
+						i(205156, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Heartseeker Moth (PET!)
 						i(232923, {	-- Living Rose (PET!)
 							timeline = { ADDED_11_0_7 },
 							cost = { { "i", LOVE_TOKEN, 40 } },
 						}),
-						i(116155, {	-- Lovebird Hatchling (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						i(22235, {	-- Peddlefeet (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
+						i(116155, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Lovebird Hatchling (PET!)
+						i(22235, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Peddlefeet (PET!)
 					}),
 					n(HEIRLOOMS, {
-						i(122339, {	-- Ancient Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 200 } },
-						}),
-						i(204337, {	-- Awakened Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(187998, {	-- Eternal Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(122341, {	-- Timeworn Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(151615, {	-- Weathered Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
+						i(122339, { cost = { { "i", LOVE_TOKEN, 200 } } }),	-- Ancient Heirloom Scabbard
+						i(204337, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Awakened Heirloom Scabbard
+						i(167732, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Battle-Hardened Heirloom Scabbard
+						i(187998, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Eternal Heirloom Scabbard
+						i(122341, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Timeworn Heirloom Scabbard
+						i(151615, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Weathered Heirloom Scabbard
 					}),
 					filter(MISC, {
 						i(21813, {	-- Bag of Heart Candies
@@ -2166,9 +2065,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								i(21823),	-- Heart Candy (Hot lips!)
 							},
 						}),
-						i(22200, {	-- Silver Shafted Arrow
-							cost = { { "i", LOVE_TOKEN, 5 } },
-						}),
+						i(22200, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Silver Shafted Arrow
 						i(50160, {	-- Lovely Dress Box
 							cost = { { "i", LOVE_TOKEN, 20 } },
 							groups = {
@@ -2191,32 +2088,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						}),
 					}),
 					filter(MOUNTS, {
-						i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(72146, {	-- Swift Lovebird (MOUNT!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
+						i(210973, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Heartseeker Mana Ray (MOUNT!)
+						i(72146, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Swift Lovebird (MOUNT!)
 					}),
 					filter(TOYS, {
-						i(210975, {	-- Date Simulation Modulator (TOY!)
-							cost = { { "i", LOVE_TOKEN, 100 } },
-						}),
-						i(210974, {	-- Eyes For You Only (TOY!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						i(211864, {	-- Exquisite Love Boat (TOY!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(142341, {	-- Love Boat (TOY!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
-							cost = { { "i", LOVE_TOKEN, 150 } },
-						}),
-						i(34480, {	-- Romantic Picnic Basket (TOY!)
-							cost = { { "i", LOVE_TOKEN, 10 } },
-						}),
+						i(210975, { cost = { { "i", LOVE_TOKEN, 100 } } }),	-- Date Simulation Modulator (TOY!)
+						i(210974, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Eyes For You Only (TOY!)
+						i(211864, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Exquisite Love Boat (TOY!)
+						i(142341, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Love Boat (TOY!)
+						i(165670, { cost = { { "i", LOVE_TOKEN, 150 } } }),	-- Peddlefeet's Lovely Hearthstone (TOY!)
+						i(34480, { cost = { { "i", LOVE_TOKEN, 10 } } }),	-- Romantic Picnic Basket (TOY!)
 					}),
 					filter(COSMETIC, {
 						timeline = { ADDED_11_0_7 },
@@ -2266,52 +2147,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				timeline = { ADDED_3_3_2, REMOVED_10_2_5 },
 				groups = {
 					i(122339, {	-- Ancient Heirloom Scabbard
-						cost = { { "i", LOVE_TOKEN, 200 } },	-- 200x Love Token
+						cost = { { "i", LOVE_TOKEN, 200 } },
 						timeline = { ADDED_6_1_0 },
 					}),
 					i(167732, {	-- Battle-Hardened Heirloom Scabbard
-						cost = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
+						cost = { { "i", LOVE_TOKEN, 450 } },
 						timeline = { ADDED_8_1_5 },
 					}),
 					i(187998, {	-- Eternal Heirloom Scabbard
-						cost = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
+						cost = { { "i", LOVE_TOKEN, 450 } },
 						timeline = { ADDED_9_1_5 },
 					}),
 					i(122341, {	-- Timeworn Heirloom Scabbard
-						cost = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
+						cost = { { "i", LOVE_TOKEN, 450 } },
 						timeline = { ADDED_6_1_0 },
 					}),
 					i(151615, {	-- Weathered Heirloom Scabbard
-						cost = { { "i", LOVE_TOKEN, 450 } },	-- 450x Love Token
+						cost = { { "i", LOVE_TOKEN, 450 } },
 						timeline = { ADDED_7_2_5 },
 					}),
 					i(50161, {	-- Dinner Suit Box
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
+						cost = { { "i", LOVE_TOKEN, 20 } },
 						groups = {
-							i(151765, {	-- Blue Dinner Suit
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(151764, {	-- Purple Dinner Suit
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(151766, {	-- Red Dinner Suit
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(22281, {	-- Blue Dinner Suit
-								timeline = { REMOVED_7_2_5 },
-							}),
-							i(22282, {	-- Purple Dinner Suit
-								timeline = { REMOVED_7_2_5 },
-							}),
-							i(22277, {	-- Red Dinner Suit
-								timeline = { REMOVED_7_2_5 },
-							}),
+							i(151765, { timeline = { ADDED_7_2_5 } }),	-- Blue Dinner Suit
+							i(151764, { timeline = { ADDED_7_2_5 } }),	-- Purple Dinner Suit
+							i(151766, { timeline = { ADDED_7_2_5 } }),	-- Red Dinner Suit
+							i(22281, { timeline = { REMOVED_7_2_5 } }),	-- Blue Dinner Suit
+							i(22282, { timeline = { REMOVED_7_2_5 } }),	-- Purple Dinner Suit
+							i(22277, { timeline = { REMOVED_7_2_5 } }),	-- Red Dinner Suit
 						},
 					}),
 					i(50160, {	-- Lovely Dress Box
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 20 } },	-- 20x Love Token
+						cost = { { "i", LOVE_TOKEN, 20 } },
 						groups = {
 							ach(1694, {	-- Lovely Luck Is On Your Side
 								providers = {
@@ -2322,86 +2191,70 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								-- #endif
 								},
 							}),
-							i(151770, {	-- Lovely Black Dress
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(151768, {	-- Lovely Blue Dress
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(151767, {	-- Lovely Purple Dress
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(151769, {	-- Lovely Red Dress
-								timeline = { ADDED_7_2_5 },
-							}),
-							i(22279, {	-- Lovely Black Dress
-								timeline = { REMOVED_7_2_5 },
-							}),
-							i(22278, {	-- Lovely Blue Dress
-								timeline = { REMOVED_7_2_5 },
-							}),
-							i(22280, {	-- Lovely Purple Dress
-								timeline = { REMOVED_7_2_5 },
-							}),
-							i(22276, {	-- Lovely Red Dress
-								timeline = { REMOVED_7_2_5 },
-							}),
+							i(151770, { timeline = { ADDED_7_2_5 } }),	-- Lovely Black Dress
+							i(151768, { timeline = { ADDED_7_2_5 } }),	-- Lovely Blue Dress
+							i(151767, { timeline = { ADDED_7_2_5 } }),	-- Lovely Purple Dress
+							i(151769, { timeline = { ADDED_7_2_5 } }),	-- Lovely Red Dress
+							i(22279, { timeline = { REMOVED_7_2_5 } }),	-- Lovely Black Dress
+							i(22278, { timeline = { REMOVED_7_2_5 } }),	-- Lovely Blue Dress
+							i(22280, { timeline = { REMOVED_7_2_5 } }),	-- Lovely Purple Dress
+							i(22276, { timeline = { REMOVED_7_2_5 } }),	-- Lovely Red Dress
 						},
 					}),
 					i(142341, {	-- Love Boat (TOY!)
 						timeline = { ADDED_7_1_0 },
-						cost = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
+						cost = { { "i", LOVE_TOKEN, 270 } },
 					}),
 					i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
 						timeline = { ADDED_8_1_0 },
-						cost = { { "i", LOVE_TOKEN, 150 } },	-- 150x Love Token
+						cost = { { "i", LOVE_TOKEN, 150 } },
 					}),
 					i(34480, {	-- Romantic Picnic Basket (TOY!)
 						timeline = { ADDED_2_4_0 },
-						cost = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
+						cost = { { "i", LOVE_TOKEN, 10 } },
 					}),
 					i(144339, {	-- Sturdy Love Fool (TOY!)
 						timeline = { ADDED_7_1_5 },
-						cost = { { "i", LOVE_TOKEN, 100 } },	-- 100x Love Token
+						cost = { { "i", LOVE_TOKEN, 100 } },
 					}),
 					i(116155, {	-- Lovebird Hatchling (PET!)
 						timeline = { ADDED_6_0_2 },
-						cost = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
+						cost = { { "i", LOVE_TOKEN, 40 } },
 					}),
 					i(22235, {	-- Peddlefeet (PET!)
-						cost = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
+						cost = { { "i", LOVE_TOKEN, 40 } },
 					}),
 					i(72146, {	-- Swift Lovebird (MOUNT!)
 						timeline = { ADDED_4_3_0 },
-						cost = { { "i", LOVE_TOKEN, 270 } },	-- 270x Love Token
+						cost = { { "i", LOVE_TOKEN, 270 } },
 					}),
 					i(49859, {	-- "Bravado" Cologne
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49857, {	-- "Enchantress" Perfume
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49858, {	-- "Forever" Perfume
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49861, {	-- "STALWART" Cologne
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49856, {	-- "VICTORY" Perfume
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49860, {	-- "Wizardry" Cologne
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
 					i(49909, {	-- Box of Chocolates
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
+						cost = { { "i", LOVE_TOKEN, 10 } },
 						groups = {
 							i(22236),	-- Buttermilk Delight
 							i(22237),	-- Dark Desire
@@ -2410,7 +2263,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						},
 					}),
 					i(21813, {	-- Bag of Heart Candies
-						cost = { { "i", LOVE_TOKEN, 2 } },	-- 2x Love Token
+						cost = { { "i", LOVE_TOKEN, 2 } },
 						groups = {
 							i(21816),	-- Heart Candy (Be Mine!)
 							i(21817),	-- Heart Candy (I LOVE YOU)
@@ -2422,33 +2275,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							i(21823),	-- Heart Candy (Hot lips!)
 						},
 					}),
-					i(22218, {	-- Handful of Rose Petals
-						cost = { { "i", LOVE_TOKEN, 2 } },	-- 2x Love Token
-					}),
+					i(22218, { cost = { { "i", LOVE_TOKEN, 2 } } }),	-- Handful of Rose Petals
 					i(22261, {	-- Love Fool
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 10 } },	-- 10x Love Token
+						cost = { { "i", LOVE_TOKEN, 10 } },
 					}),
 					i(34258, {	-- Lovely Fireworks
 						timeline = { ADDED_2_3_0 },
-						cost = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
+						cost = { { "i", LOVE_TOKEN, 5 } },
 					}),
 					i(50163, {	-- Lovely Rose
 						timeline = { ADDED_3_3_2 },
-						cost = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
+						cost = { { "i", LOVE_TOKEN, 5 } },
 					}),
-					i(22200, {	-- Silver Shafted Arrow
-						cost = { { "i", LOVE_TOKEN, 5 } },	-- 5x Love Token
-					}),
+					i(22200, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Silver Shafted Arrow
 					i(116648, {	-- Manufactured Love Prism
 						timeline = { ADDED_6_0_2 },
-						cost = { { "i", LOVE_TOKEN, 40 } },	-- 40x Love Token
+						cost = { { "i", LOVE_TOKEN, 40 } },
 					}),
 					i(134860, {	-- Peddlefeet's Buffing Creme
 						timeline = { ADDED_7_0_3 },
-						cost = { { "i", LOVE_TOKEN, 1 } },	-- 1x Love Token
+						cost = { { "i", LOVE_TOKEN, 1 } },
 					}),
-					i(LOVE_TOKEN, {	-- Love Token
+					i(LOVE_TOKEN, {
 						timeline = { ADDED_3_3_0, REMOVED_10_2_5 },
 						cost = { { "i", 49916, 1 } },	-- 1x Lovely Charm Bracelet
 					}),
@@ -2460,39 +2309,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				races = HORDE_ONLY,
 				groups = {
 					filter(BATTLE_PETS, {
-						i(205156, {	-- Heartseeker Moth (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
+						i(205156, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Heartseeker Moth (PET!)
 						i(232923, {	-- Living Rose (PET!)
 							timeline = { ADDED_11_0_7 },
 							cost = { { "i", LOVE_TOKEN, 40 } },
 						}),
-						i(116155, {	-- Lovebird Hatchling (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						i(22235, {	-- Peddlefeet (PET!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
+						i(116155, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Lovebird Hatchling (PET!)
+						i(22235, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Peddlefeet (PET!)
 					}),
 					n(HEIRLOOMS, {
-						i(122339, {	-- Ancient Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 200 } },
-						}),
-						i(204337, {	-- Awakened Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(187998, {	-- Eternal Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(122341, {	-- Timeworn Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
-						i(151615, {	-- Weathered Heirloom Scabbard
-							cost = { { "i", LOVE_TOKEN, 450 } },
-						}),
+						i(122339, { cost = { { "i", LOVE_TOKEN, 200 } } }),	-- Ancient Heirloom Scabbard
+						i(204337, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Awakened Heirloom Scabbard
+						i(167732, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Battle-Hardened Heirloom Scabbard
+						i(187998, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Eternal Heirloom Scabbard
+						i(122341, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Timeworn Heirloom Scabbard
+						i(151615, { cost = { { "i", LOVE_TOKEN, 450 } } }),	-- Weathered Heirloom Scabbard
 					}),
 					filter(MISC, {
 						i(21813, {	-- Bag of Heart Candies
@@ -2508,9 +2339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 								i(21823),	-- Heart Candy (Hot lips!)
 							},
 						}),
-						i(22200, {	-- Silver Shafted Arrow
-							cost = { { "i", LOVE_TOKEN, 5 } },
-						}),
+						i(22200, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Silver Shafted Arrow
 						i(50160, {	-- Lovely Dress Box
 							cost = { { "i", LOVE_TOKEN, 20 } },
 							groups = {
@@ -2533,32 +2362,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 						}),
 					}),
 					filter(MOUNTS, {
-						i(210973, {	-- Heartseeker Mana Ray (MOUNT!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(72146, {	-- Swift Lovebird (MOUNT!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
+						i(210973, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Heartseeker Mana Ray (MOUNT!)
+						i(72146, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Swift Lovebird (MOUNT!)
 					}),
 					filter(TOYS, {
-						i(210975, {	-- Date Simulation Modulator (TOY!)
-							cost = { { "i", LOVE_TOKEN, 100 } },
-						}),
-						i(210974, {	-- Eyes For You Only (TOY!)
-							cost = { { "i", LOVE_TOKEN, 40 } },
-						}),
-						i(211864, {	-- Exquisite Love Boat (TOY!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(142341, {	-- Love Boat (TOY!)
-							cost = { { "i", LOVE_TOKEN, 270 } },
-						}),
-						i(165670, {	-- Peddlefeet's Lovely Hearthstone (TOY!)
-							cost = { { "i", LOVE_TOKEN, 150 } },
-						}),
-						i(34480, {	-- Romantic Picnic Basket (TOY!)
-							cost = { { "i", LOVE_TOKEN, 10 } },
-						}),
+						i(210975, { cost = { { "i", LOVE_TOKEN, 100 } } }),	-- Date Simulation Modulator (TOY!)
+						i(210974, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Eyes For You Only (TOY!)
+						i(211864, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Exquisite Love Boat (TOY!)
+						i(142341, { cost = { { "i", LOVE_TOKEN, 270 } } }),	-- Love Boat (TOY!)
+						i(165670, { cost = { { "i", LOVE_TOKEN, 150 } } }),	-- Peddlefeet's Lovely Hearthstone (TOY!)
+						i(34480, { cost = { { "i", LOVE_TOKEN, 10 } } }),	-- Romantic Picnic Basket (TOY!)
 					}),
 					filter(COSMETIC, {
 						timeline = { ADDED_11_0_7 },
@@ -2609,18 +2422,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 							i(22238),	-- Very Berry Cream
 						},
 					}),
-					i(239015, {	-- Rock Candy Package
-						timeline = { ADDED_11_0_7 },
-					}),
+					i(239015, { timeline = { ADDED_11_0_7 } }),	-- Rock Candy Package
 				},
 			}),
 			n(212886, {	-- Melanie Charles <Bountiful Brews>
 				coord = { 34.2, 50.6, ELWYNN_FOREST },
 				timeline = { ADDED_10_2_5 },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(210927),	-- Fruity Cocktail Flight
-				},
+				groups = { i(210927) },	-- Fruity Cocktail Flight
 			}),
 			n(214493, {	-- Ming Plumpaw <Lovely Snacks> [Need Alliance Version]
 				coord = { 41.1, 17.8, DUROTAR },
@@ -2630,9 +2439,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					i(210841),	-- Buttered Oysters
 					i(210929),	-- Comfort Food Package
 					i(210842),	-- Fresh Fig
-					i(239015, {	-- Rock Candy Package
-						timeline = { ADDED_11_0_7 },
-					}),
+					i(239015, { timeline = { ADDED_11_0_7 } }),	-- Rock Candy Package
 				},
 			}),
 			n(211810, {	-- Ronathan Graham <Fruit Vendor>
@@ -2650,95 +2457,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				timeline = { ADDED_10_2_5 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(211359, {	-- Eternal Black Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211358, {	-- Eternal Blue Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211357, {	-- Eternal Orange Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211355, {	-- Eternal Pink Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211354, {	-- Eternal White Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(211352, {	-- Eternal Yellow Rose
-						cost = { { "i", LOVE_TOKEN, 20 } },
-					}),
-					i(22218, {	-- Handful of Rose Petals
-						cost = { { "i", LOVE_TOKEN, 2 } },
-					}),
-					i(50163, {	-- Lovely Rose
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211363, {	-- Rose of Dreams Fulfilled
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211351, {	-- Rose of Friendship
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211362, {	-- Rose of Independence
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211361, {	-- Rose of Joy
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211360, {	-- Rose of Purity
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211264, {	-- Rose of Romance
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(211364, {	-- Rose of Tragedy
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(210965, {	-- Single-Use Bouquet
-						cost = { { "i", LOVE_TOKEN, 1 } },
-					}),
+					i(211359, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Black Rose
+					i(211358, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Blue Rose
+					i(211357, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Orange Rose
+					i(211355, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Pink Rose
+					i(211354, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal White Rose
+					i(211352, { cost = { { "i", LOVE_TOKEN, 20 } } }),	-- Eternal Yellow Rose
+					i(22218, { cost = { { "i", LOVE_TOKEN, 2 } } }),	-- Handful of Rose Petals
+					i(50163, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Lovely Rose
+					i(211363, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Dreams Fulfilled
+					i(211351, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Friendship
+					i(211362, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Independence
+					i(211361, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Joy
+					i(211360, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Purity
+					i(211264, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Romance
+					i(211364, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Rose of Tragedy
+					i(210965, { cost = { { "i", LOVE_TOKEN, 1 } } }),	-- Single-Use Bouquet
 				},
 			}),
 			n(215109, {	-- Ugawa <Bountiful Brews>
 				coord = { 40.8, 17.8, DUROTAR },
 				timeline = { ADDED_10_2_5 },
 				races = HORDE_ONLY,
-				groups = {
-					i(210927),	-- Fruity Cocktail Flight
-				},
+				groups = { i(210927) },	-- Fruity Cocktail Flight
 			}),
 			n(212587, {	-- Wobbley Sugarfizz <House of Chocolates>
 				coord = { 33.5, 50.1, ELWYNN_FOREST },
 				timeline = { ADDED_10_2_5 },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(210695),	-- Delightful Chocolate Sample
-				},
+				groups = { i(210695) },	-- Delightful Chocolate Sample
 			}),
 			n(214489, {	-- Zikky <Lovely Novelties>
 				coord = { 41.0, 17.2, DUROTAR },
 				timeline = { ADDED_10_2_5 },
 				races = HORDE_ONLY,
 				groups = {
-					i(210318, {	-- Chocolate Bon-Bomb
-						cost = { { "i", LOVE_TOKEN, 1 } },
-					}),
-					i(22261, {	-- Love Fool
-						cost = { { "i", LOVE_TOKEN, 10 } },
-					}),
-					i(34258, {	-- Lovely Fireworks
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(116648, {	-- Manufactured Love Prism
-						cost = { { "i", LOVE_TOKEN, 40 } },
-					}),
-					i(211976, {	-- Pink Brightbursts
-						cost = { { "i", LOVE_TOKEN, 5 } },
-					}),
-					i(144339, {	-- Sturdy Love Fool (TOY!)
-						cost = { { "i", LOVE_TOKEN, 100 } },
-					}),
+					i(210318, { cost = { { "i", LOVE_TOKEN, 1 } } }),	-- Chocolate Bon-Bomb
+					i(22261, { cost = { { "i", LOVE_TOKEN, 10 } } }),	-- Love Fool
+					i(34258, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Lovely Fireworks
+					i(116648, { cost = { { "i", LOVE_TOKEN, 40 } } }),	-- Manufactured Love Prism
+					i(211976, { cost = { { "i", LOVE_TOKEN, 5 } } }),	-- Pink Brightbursts
+					i(144339, { cost = { { "i", LOVE_TOKEN, 100 } } }),	-- Sturdy Love Fool (TOY!)
 				},
 			}),
 			n(214480, {	-- Zin'boja <De Chocolate Den>
@@ -3227,21 +2986,15 @@ for i,o in ipairs({
 		},
 		-- #endif
 		groups = {
-			ach(4624, {	-- Tough Love (Shadowfang Keep)
-				timeline = { ADDED_3_0_2 },
-			}),
+			ach(4624, { timeline = { ADDED_3_0_2 } }),	-- Tough Love (Shadowfang Keep)
 			o(202947, {	-- Cologne Neutralizer
 				i(49352),	-- Cologne Neutralizer
 			}),
 			o(202948, {	-- Perfume Neutralizer
 				i(49351),	-- Perfume Neutralizer
 			}),
-			i(50320, {	-- Faded Lovely Greeting Card [A]
-				timeline = { ADDED_3_3_2 },
-			}),
-			i(49641, {	-- Faded Lovely Greeting Card [H]
-				timeline = { ADDED_3_3_2 },
-			}),
+			i(50320, { timeline = { ADDED_3_3_2 } }),	-- Faded Lovely Greeting Card [A]
+			i(49641, { timeline = { ADDED_3_3_2 } }),	-- Faded Lovely Greeting Card [H]
 
 			-- #if BEFORE CATA
 			i(54537, {	-- Heart-Shaped Box
@@ -3254,21 +3007,11 @@ for i,o in ipairs({
 				timeline = { ADDED_3_3_0 },
 				filterID = MOUNTS,
 			}),
-			i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-				timeline = { ADDED_3_3_0 },
-			}),
-			i(49715, {	-- Forever-Lovely Rose
-				timeline = { ADDED_3_3_0 },
-			}),
-			i(50446, {	-- Toxic Wasteling (PET!)
-				timeline = { ADDED_3_3_0 },
-			}),
-			i(50741, {	-- Vile Fumigator's Mask
-				timeline = { ADDED_3_3_0 },
-			}),
-			i(50471, {	-- The Heartbreaker (TOY!)
-				timeline = { ADDED_3_3_0 },
-			}),
+			i(50250, { timeline = { ADDED_3_3_0 } }),	-- X-45 Heartbreaker (MOUNT!)
+			i(49715, { timeline = { ADDED_3_3_0 } }),	-- Forever-Lovely Rose
+			i(50446, { timeline = { ADDED_3_3_0 } }),	-- Toxic Wasteling (PET!)
+			i(50741, { timeline = { ADDED_3_3_0 } }),	-- Vile Fumigator's Mask
+			i(50471, { timeline = { ADDED_3_3_0 } }),	-- The Heartbreaker (TOY!)
 			-- #else
 			i(54537, {	-- Heart-Shaped Box
 				-- #if BEFORE 10.0.5
@@ -3292,81 +3035,51 @@ for i,o in ipairs({
 						timeline = { ADDED_3_3_0 },
 						filterID = MOUNTS,
 					}),
-					hqt(74957, {    -- X-45 Heartbreaker Attempt (Daily Accountwide)
+					hqt(74957, {	-- X-45 Heartbreaker Attempt (Daily Accountwide)
 						name = "X-45 Heartbreaker Attempt (Daily Accountwide)",
 						timeline = { ADDED_10_0_5 },
 						isDaily = true,
 						description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
-						groups = {
-							i(211413),	-- X-45 Heartbreaker (MOUNT!)
-						},
+						groups = { i(211413) },	-- X-45 Heartbreaker (MOUNT!)
 					}),
-					hqt(86172, {    -- Love Witch's Sweeper Attempt (Daily Accountwide)
+					hqt(86172, {	-- Love Witch's Sweeper Attempt (Daily Accountwide)
 						name = "Love Witch's Sweeper Attempt (Daily Accountwide)",
 						timeline = { ADDED_11_0_7 },
 						isDaily = true,
 						description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
-						groups = {
-							i(236043),	-- Love Witch's Sweeper (MOUNT!)
-						},
+						groups = { i(236043) },	-- Love Witch's Sweeper (MOUNT!)
 					}),
-					hqt(79104, {    -- Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)
+					hqt(79104, {	-- Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)
 						name = "Renewed Proto-Drake: Love Armor Attempt (Daily Accountwide)",
 						timeline = { ADDED_10_2_5 },
 						isDaily = true,
 						description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
-						groups = {
-							i(211438),	-- Renewed Proto-Drake: Love Armor (Item)
-						},
+						groups = { i(211812) },	-- Renewed Proto-Drake: Love Armor
 					}),
-					hqt(93466, {    -- Spring Butterfly Attempt (Daily Accountwide)
+					hqt(93466, {	-- Spring Butterfly Attempt (Daily Accountwide)
 						name = "Spring Butterfly Attempt (Daily Accountwide)",
 						timeline = { ADDED_12_0_0 },
 						isDaily = true,
 						description = "This item is only eligible to drop for the first attempt per day per Warband, but every eligible failed attempt increases the drop chance.\n\nYou can increase your chances by using additional (starter edition) licenses on your Battle.net account. These allow you to queue with up to 5 characters at the same time, by logging into multiple instances of the game simultaneously.",
-						groups = {
-							i(256312),	-- Spring Butterfly (MOUNT!)
-						},
+						groups = { i(256312) },	-- Spring Butterfly (MOUNT!)
 					}),
-					i(50250, {	-- X-45 Heartbreaker (MOUNT!)
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(49715, {	-- Forever-Lovely Rose
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(50446, {	-- Toxic Wasteling (PET!)
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(50741, {	-- Vile Fumigator's Mask
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(50471, {	-- The Heartbreaker (TOY!)
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(211812, {	-- Renewed Proto-Drake: Love Armor (MM!)
-						timeline = { ADDED_10_2_5 },
-					}),
-					i(232926, {	-- Love Witch's Sweeper (MOUNT!)
-						timeline = { ADDED_11_0_7 },
-					}),
-					i(235658, {	-- Spring Butterfly (MOUNT!)
-						timeline = { ADDED_12_0_0 },
-					}),
+					i(50250, { timeline = { ADDED_3_3_0 } }),	-- X-45 Heartbreaker (MOUNT!)
+					i(49715, { timeline = { ADDED_3_3_0 } }),	-- Forever-Lovely Rose
+					i(50446, { timeline = { ADDED_3_3_0 } }),	-- Toxic Wasteling (PET!)
+					i(50741, { timeline = { ADDED_3_3_0 } }),	-- Vile Fumigator's Mask
+					i(50471, { timeline = { ADDED_3_3_0 } }),	-- The Heartbreaker (TOY!)
+					i(211812, { timeline = { ADDED_10_2_5 } }),	-- Renewed Proto-Drake: Love Armor (MM!)
+					i(232926, { timeline = { ADDED_11_0_7 } }),	-- Love Witch's Sweeper (MOUNT!)
+					i(235658, { timeline = { ADDED_12_0_0 } }),	-- Spring Butterfly (MOUNT!)
 				},
 			}),
 			-- #endif
 			i(147907, {	-- Heart-Shaped Carton
 				timeline = { ADDED_7_2_5 },
 				groups = {
-					i(49715, {	-- Forever-Lovely Rose
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(50446, {	-- Toxic Wasteling (PET!)
-						timeline = { ADDED_3_3_0 },
-					}),
-					i(50741, {	-- Vile Fumigator's Mask
-						timeline = { ADDED_3_3_0 },
-					}),
+					i(49715, { timeline = { ADDED_3_3_0 } }),	-- Forever-Lovely Rose
+					i(50446, { timeline = { ADDED_3_3_0 } }),	-- Toxic Wasteling (PET!)
+					i(50741, { timeline = { ADDED_3_3_0 } }),	-- Vile Fumigator's Mask
 					-- i(50471, {	-- The Heartbreaker (TOY!)	-- doesn't seem to be possible from the lower-level box
 					-- 	timeline = { ADDED_3_3_0 },
 					-- }),
@@ -3374,130 +3087,56 @@ for i,o in ipairs({
 			}),
 
 			-- Legion+
-			i(143908, {	-- Choker of the Pure Heart [Level 110]
-				timeline = { ADDED_7_0_3 },
-			}),
-			i(143906, {	-- Heartbreak Charm [Level 110]
-				timeline = { ADDED_7_0_3 },
-			}),
-			i(143907, {	-- Shard of Pirouetting Happiness [Level 110]
-				timeline = { ADDED_7_0_3 },
-			}),
-			i(143909, {	-- Sweet Perfume Brooch [Level 110]
-				timeline = { ADDED_7_0_3 },
-			}),
-			i(143905, {	-- Winking Eye of Love [Level 110]
-				timeline = { ADDED_7_0_3 },
-			}),
+			i(143908, { timeline = { ADDED_7_0_3 } }),	-- Choker of the Pure Heart [Level 110]
+			i(143906, { timeline = { ADDED_7_0_3 } }),	-- Heartbreak Charm [Level 110]
+			i(143907, { timeline = { ADDED_7_0_3 } }),	-- Shard of Pirouetting Happiness [Level 110]
+			i(143909, { timeline = { ADDED_7_0_3 } }),	-- Sweet Perfume Brooch [Level 110]
+			i(143905, { timeline = { ADDED_7_0_3 } }),	-- Winking Eye of Love [Level 110]
 
 			-- Warlords of Draenor
-			i(117369, {	-- Choker of the Pure Heart [Level 100]
-				timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
-			}),
-			i(117366, {	-- Heartbreak Charm [Level 100]
-				timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
-			}),
-			i(117370, {	-- Shard of Pirouetting Happiness [Level 100]
-				timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
-			}),
-			i(117368, {	-- Sweet Perfume Brooch [Level 100]
-				timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
-			}),
-			i(117367, {	-- Winking Eye of Love [Level 100]
-				timeline = { ADDED_6_0_2, REMOVED_7_0_3 },
-			}),
+			i(117369, { timeline = { ADDED_6_0_2, REMOVED_7_0_3 } }),	-- Choker of the Pure Heart [Level 100]
+			i(117366, { timeline = { ADDED_6_0_2, REMOVED_7_0_3 } }),	-- Heartbreak Charm [Level 100]
+			i(117370, { timeline = { ADDED_6_0_2, REMOVED_7_0_3 } }),	-- Shard of Pirouetting Happiness [Level 100]
+			i(117368, { timeline = { ADDED_6_0_2, REMOVED_7_0_3 } }),	-- Sweet Perfume Brooch [Level 100]
+			i(117367, { timeline = { ADDED_6_0_2, REMOVED_7_0_3 } }),	-- Winking Eye of Love [Level 100]
 
 			-- Mists of Pandaria
-			i(93394, {	-- Choker of the Pure Heart [Level 90]
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(93391, {	-- Heartbreak Charm [Level 90]
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(93395, {	-- Shard of Pirouetting Happiness [Level 90]
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(93393, {	-- Sweet Perfume Brooch [Level 90]
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
-			i(93392, {	-- Winking Eye of Love [Level 90]
-				timeline = { ADDED_5_0_4, REMOVED_6_0_2 },
-			}),
+			i(93394, { timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }),	-- Choker of the Pure Heart [Level 90]
+			i(93391, { timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }),	-- Heartbreak Charm [Level 90]
+			i(93395, { timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }),	-- Shard of Pirouetting Happiness [Level 90]
+			i(93393, { timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }),	-- Sweet Perfume Brooch [Level 90]
+			i(93392, { timeline = { ADDED_5_0_4, REMOVED_6_0_2 } }),	-- Winking Eye of Love [Level 90]
 
 			-- Cata
 			-- #if ANYCLASSIC
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238334, {	-- Heartbreak Charm [Level 85, 378 ilvl]
-				timeline = { ADDED_4_4_2, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238337, {	-- Choker of the Pure Heart [Level 85, 378 ilvl]
-				timeline = { ADDED_4_4_2, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238338, {	-- Shard of Pirouetting Happiness [Level 85, 378 ilvl]
-				timeline = { ADDED_4_4_2, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238336, {	-- Sweet Perfume Brooch [Level 85, 378 ilvl]
-				timeline = { ADDED_4_4_2, REMOVED_5_0_4 },
-			})),
-			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238335, {	-- Winking Eye of Love [Level 85, 378 ilvl]
-				timeline = { ADDED_4_4_2, REMOVED_5_0_4 },
-			})),
-			i(68176, {	-- Heartbreak Charm [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_4_4_2 },
-			}),
-			i(68173, {	-- Choker of the Pure Heart [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_4_4_2 },
-			}),
-			i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_4_4_2 },
-			}),
-			i(68174, {	-- Sweet Perfume Brooch [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_4_4_2 },
-			}),
-			i(68175, {	-- Winking Eye of Love [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_4_4_2 },
-			}),
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238334, { timeline = { ADDED_4_4_2, REMOVED_5_0_4 } })),	-- Heartbreak Charm [Level 85, 378 ilvl]
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238337, { timeline = { ADDED_4_4_2, REMOVED_5_0_4 } })),	-- Choker of the Pure Heart [Level 85, 378 ilvl]
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238338, { timeline = { ADDED_4_4_2, REMOVED_5_0_4 } })),	-- Shard of Pirouetting Happiness [Level 85, 378 ilvl]
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238336, { timeline = { ADDED_4_4_2, REMOVED_5_0_4 } })),	-- Sweet Perfume Brooch [Level 85, 378 ilvl]
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(238335, { timeline = { ADDED_4_4_2, REMOVED_5_0_4 } })),	-- Winking Eye of Love [Level 85, 378 ilvl]
+			i(68176, { timeline = { ADDED_4_0_1, REMOVED_4_4_2 } }),	-- Heartbreak Charm [Level 85]
+			i(68173, { timeline = { ADDED_4_0_1, REMOVED_4_4_2 } }),	-- Choker of the Pure Heart [Level 85]
+			i(68172, { timeline = { ADDED_4_0_1, REMOVED_4_4_2 } }),	-- Shard of Pirouetting Happiness [Level 85]
+			i(68174, { timeline = { ADDED_4_0_1, REMOVED_4_4_2 } }),	-- Sweet Perfume Brooch [Level 85]
+			i(68175, { timeline = { ADDED_4_0_1, REMOVED_4_4_2 } }),	-- Winking Eye of Love [Level 85]
 			-- #else
-			i(68176, {	-- Heartbreak Charm [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_5_0_4 },
-			}),
-			i(68173, {	-- Choker of the Pure Heart [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_5_0_4 },
-			}),
-			i(68172, {	-- Shard of Pirouetting Happiness [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_5_0_4 },
-			}),
-			i(68174, {	-- Sweet Perfume Brooch [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_5_0_4 },
-			}),
-			i(68175, {	-- Winking Eye of Love [Level 85]
-				timeline = { ADDED_4_0_1, REMOVED_5_0_4 },
-			}),
+			i(68176, { timeline = { ADDED_4_0_1, REMOVED_5_0_4 } }),	-- Heartbreak Charm [Level 85]
+			i(68173, { timeline = { ADDED_4_0_1, REMOVED_5_0_4 } }),	-- Choker of the Pure Heart [Level 85]
+			i(68172, { timeline = { ADDED_4_0_1, REMOVED_5_0_4 } }),	-- Shard of Pirouetting Happiness [Level 85]
+			i(68174, { timeline = { ADDED_4_0_1, REMOVED_5_0_4 } }),	-- Sweet Perfume Brooch [Level 85]
+			i(68175, { timeline = { ADDED_4_0_1, REMOVED_5_0_4 } }),	-- Winking Eye of Love [Level 85]
 			-- #endif
 
 			-- Wrath
-			i(51808, {	-- Choker of the Pure Heart [Level 80]
-				timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-			}),
-			i(51805, {	-- Heartbreak Charm [Level 80]
-				timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-			}),
-			i(51806, {	-- Shard of Pirouetting Happiness [Level 80]
-				timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-			}),
-			i(51807, {	-- Sweet Perfume Brooch [Level 80]
-				timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-			}),
-			i(51804, {	-- Winking Eye of Love [Level 80]
-				timeline = { ADDED_3_0_2, REMOVED_4_0_1 },
-			}),
+			i(51808, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Choker of the Pure Heart [Level 80]
+			i(51805, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Heartbreak Charm [Level 80]
+			i(51806, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Shard of Pirouetting Happiness [Level 80]
+			i(51807, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Sweet Perfume Brooch [Level 80]
+			i(51804, { timeline = { ADDED_3_0_2, REMOVED_4_0_1 } }),	-- Winking Eye of Love [Level 80]
 			--[[
 			i(21813),	-- Bag of Heart Candies
-			i(49909, {	-- Box of Chocolates
-				timeline = { ADDED_3_3_2 },
-			}),
-			i(34258, {	-- Lovely Fireworks
-				timeline = { ADDED_2_3_0 },
-			}),
+			i(49909, { timeline = { ADDED_3_3_2 } }),	-- Box of Chocolates
+			i(34258, { timeline = { ADDED_2_3_0 } }),	-- Lovely Fireworks
 			]]--
 		},
 	})),
@@ -3550,9 +3189,7 @@ for i,o in ipairs({
 			maps = { HALLS_OF_STONE },
 			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(27975, {	-- Maiden of Grief
-						BOUQUET_EBON
-					}),
+					n(27975, { BOUQUET_EBON }),	-- Maiden of Grief
 				}),
 			},
 		}),
@@ -3560,9 +3197,7 @@ for i,o in ipairs({
 			maps = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
-					n(23953, {	-- Prince Keleseth
-						BOUQUET_RED,
-					}),
+					n(23953, { BOUQUET_RED }),	-- Prince Keleseth
 				}),
 			},
 		}),
@@ -3573,16 +3208,10 @@ for i,o in ipairs({
 			maps = { 283, 284 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
-					n(39679, {	-- Corla, Herald of Twilight
-						BOUQUET_RED,
-						POUCH_OF_RED_ROSE_PETALS,
-					}),
+					n(39679, { BOUQUET_RED, POUCH_OF_RED_ROSE_PETALS }),	-- Corla, Herald of Twilight
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(39679, {	-- Corla, Herald of Twilight
-						BOUQUET_RED,
-						POUCH_OF_RED_ROSE_PETALS,
-					}),
+					n(39679, { BOUQUET_RED, POUCH_OF_RED_ROSE_PETALS }),	-- Corla, Herald of Twilight
 				}),
 			},
 		}),
@@ -3590,12 +3219,8 @@ for i,o in ipairs({
 			maps = { 401, 402, 403, 404, 405, 406 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(54445, {	-- Echo of Jaina
-						BOUQUET_RED,
-					}),
-					n(54123, {	-- Echo of Sylvanas
-						BOUQUET_EBON
-					}),
+					n(54445, { BOUQUET_RED }),	-- Echo of Jaina
+					n(54123, { BOUQUET_EBON }),	-- Echo of Sylvanas
 				}),
 			},
 		})),
@@ -3603,14 +3228,10 @@ for i,o in ipairs({
 			maps = { 293 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
-					n(40319, {	-- Drahga Shadowburner
-						BOUQUET_RED,
-					}),
+					n(40319, { BOUQUET_RED }),	-- Drahga Shadowburner
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(40319, {	-- Drahga Shadowburner
-						BOUQUET_RED,
-					}),
+					n(40319, { BOUQUET_RED }),	-- Drahga Shadowburner
 				}),
 			},
 		}),
@@ -3618,9 +3239,7 @@ for i,o in ipairs({
 			maps = { 399, 400 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(54968, {	-- Asira Dawnslayer
-						BOUQUET_RED,
-					}),
+					n(54968, { BOUQUET_RED }),	-- Asira Dawnslayer
 				}),
 			},
 		})),
@@ -3636,10 +3255,7 @@ for i,o in ipairs({
 			},
 			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(46964, {	-- Lord Godfrey
-						BOUQUET_EBON,
-						BOUQUET_RED,
-					}),
+					n(46964, { BOUQUET_EBON, BOUQUET_RED }),	-- Lord Godfrey
 				}),
 			},
 		}),
@@ -3647,10 +3263,7 @@ for i,o in ipairs({
 			maps = { 292 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(47626, {	-- Admiral Ripsnarl
-						BOUQUET_EBON,
-						BOUQUET_RED,
-					}),
+					n(47626, { BOUQUET_EBON, BOUQUET_RED }),	-- Admiral Ripsnarl
 				}),
 			},
 		}),
@@ -3658,14 +3271,10 @@ for i,o in ipairs({
 			maps = { 324 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
-					n(42333, {	-- High Priestess Azil
-						BOUQUET_RED,
-					}),
+					n(42333, { BOUQUET_RED }),	-- High Priestess Azil
 				}),
 				d(DIFFICULTY.DUNGEON.HEROIC, {
-					n(42333, {	-- High Priestess Azil
-						BOUQUET_RED,
-					}),
+					n(42333, { BOUQUET_RED }),	-- High Priestess Azil
 				}),
 			},
 		}),
@@ -3677,14 +3286,10 @@ for i,o in ipairs({
 			maps = { 574, 575, 576 },
 			groups = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
-					cr(75509, e(1139, {	-- Sadana Bloodfury
-						BOUQUET_EBON
-					})),
+					cr(75509, e(1139, { BOUQUET_EBON })),	-- Sadana Bloodfury
 				}),
 				--[[d(DIFFICULTY.DUNGEON.MYTHIC, {
-					cr(75509, e(1139, {	-- Sadana Bloodfury
-						BOUQUET_EBON
-					})),
+					cr(75509, e(1139, { BOUQUET_EBON })),	-- Sadana Bloodfury
 				}),]]--
 			},
 		}),
@@ -3695,44 +3300,34 @@ for i,o in ipairs({
 		inst(1194, {	-- Tazavesh, the Veiled Market
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2455, {	-- So'leah
-					crs = { 177269 },	-- So'leah
-					groups = {
-						POUCH_OF_EBON_ROSE_PETALS,
-					},
+					cr = 177269,	-- So'leah
+					groups = { POUCH_OF_EBON_ROSE_PETALS },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2455, {	-- So'leah
-					crs = { 177269 },	-- So'leah
-					groups = {
-						POUCH_OF_EBON_ROSE_PETALS,
-					},
+					cr = 177269,	-- So'leah
+					groups = { POUCH_OF_EBON_ROSE_PETALS },
 				}),
 			}),
 		}),
 		inst(1183, {	-- Plaguefall
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2423, {	-- Domina Venomblade
-					crs = { 164266 },	-- Domina Venomblade
-					groups = {
-						POUCH_OF_EBON_ROSE_PETALS,
-					},
+					cr = 164266,	-- Domina Venomblade
+					groups = { POUCH_OF_EBON_ROSE_PETALS },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				e(2423, {	-- Domina Venomblade
-					crs = { 164266 },	-- Domina Venomblade
-					groups = {
-						POUCH_OF_EBON_ROSE_PETALS,
-					},
+					cr = 164266,	-- Domina Venomblade
+					groups = { POUCH_OF_EBON_ROSE_PETALS },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2423, {	-- Domina Venomblade
-					crs = { 164266 },	-- Domina Venomblade
-					groups = {
-						POUCH_OF_EBON_ROSE_PETALS,
-					},
+					cr = 164266,	-- Domina Venomblade
+					groups = { POUCH_OF_EBON_ROSE_PETALS },
 				}),
 			}),
 		}),

@@ -7,37 +7,28 @@ maproot(KUL_TIRAS, BORALUS, {
 	groups = {
 		n(138704, bubbleDownSelf({	-- Mission Command Table
 			races = ALLIANCE_ONLY,
-		},{
+		}, {
 			modelScale = 2,
 			groups = {
-				ach(12898, {	-- Azeroth at War: After Lordaron
-					_doautomation = true,
-				}),
-				ach(12899, {	-- Azeroth at War: Kalimdor on Fire
-					_doautomation = true,
-				}),
-				ach(12896, {	-- Azeroth at War: The Barrens
-					_doautomation = true,
-				}),
-				i(POLISHED_PET_CHARM, {races=IGNORED_VALUE}),	-- Polished Pet Charm
-				i(149503, {races=IGNORED_VALUE}),	-- Stolen Gift
+				ach(12898, { _doautomation = true }),	-- Azeroth at War: After Lordaron
+				ach(12899, { _doautomation = true }),	-- Azeroth at War: Kalimdor on Fire
+				ach(12896, { _doautomation = true }),	-- Azeroth at War: The Barrens
+				i(POLISHED_PET_CHARM, { races = IGNORED_VALUE }),	-- Polished Pet Charm
+				i(149503, { races = IGNORED_VALUE }),	-- Stolen Gift
 				mission(2078),	-- Azeroth Bleeds
 				mission(2087),	-- Explore the Roost
 				mission(1877, {	-- The Shadow War
 					i(160982),	-- Recruitment Orders
 				}),
 				mission(2121, {	-- A Shady Character
-					provider = { "i", 165944 },	-- A Shady Message [A]
+					qs = 165944,	-- A Shady Message [A] (QS!)
 					timeline = { ADDED_8_1_0 },
 					groups = {
 						i(165945),	-- Investigation Results
-						q(54424, {	-- A Shady Character
+						pvp(q(54424, {	-- A Shady Character
 							pb = true,
-							pvp = true,
-							groups = {
-								i(165946),	-- Token of Shadiness (QI!)
-							},
-						}),
+							qi = 165946,	-- Token of Shadiness (QI!)
+						})),
 					},
 				}),
 				mi(1918),	-- Barren Supplies
