@@ -1201,10 +1201,10 @@ instanceroot(228, {	-- Blackrock Depths
 				groups = {
 					i(22275),	-- Firemoss Boots
 					i(11746),	-- Golem Skull Helm
-					--i(22208),	-- Lavastone Hammer \\Commented out until confirmed
-					--i(22400),	-- Libram of Truth \\Commented out until confirmed
+					i(22208),	-- Lavastone Hammer
+					i(22400),	-- Libram of Truth
 					i(11935),	-- Magmus Stone
-					--i(22395),	-- Totem of Rage \\Commented out until confirmed
+					i(22395),	-- Totem of Rage
 				},
 			}),
 			n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge> / Thaurissan High Priest
