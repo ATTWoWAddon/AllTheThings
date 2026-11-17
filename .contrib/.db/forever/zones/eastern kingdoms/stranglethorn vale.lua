@@ -689,6 +689,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 								provider = { "i", 3935 },	-- Smotts' Cutlass
 								coord = { 32.5, 81.9, MAP.STRANGLETHORN_VALE },
 								cr = 1494,	-- Negolash
+								groups = {
+									i(3935),	-- Smotts' Cutlass
+								},
 							}),
 						},
 					}),
