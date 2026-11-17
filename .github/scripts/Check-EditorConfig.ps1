@@ -8,7 +8,9 @@ param(
 		'harvesters', 'dotnet-projects', 'database-scripts', 'codegraph',
 		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database',
 		'standard-database-core', 'standard-dungeons', 'standard-delves',
-		'standard-zones', 'standard-expansion-features', 'standard-other'
+		'standard-zones', 'standard-expansion-features', 'standard-other',
+		'shared-core', 'shared-headers', 'shared-structures',
+		'shared-strings-settings', 'shared-strings-ui', 'shared-strings-other'
 	)]
 	[string]$Group,
 	[switch]$VerboseChecker
@@ -189,6 +191,66 @@ $groups = @{
 		)
 		Minimum = 1
 	}
+
+	'shared-core' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/*.lua',
+			':(glob).contrib/.db/shared/**/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Headers/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Headers/**/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Structures/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Structures/**/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/.main.lua')
+		Minimum = 1
+	}
+	'shared-headers' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/lib/Headers/*.lua',
+			':(glob).contrib/.db/shared/lib/Headers/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/lib/Headers/Achievements/Family Battler.lua')
+		Minimum = 1
+	}
+	'shared-structures' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/lib/Structures/*.lua',
+			':(glob).contrib/.db/shared/lib/Structures/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/lib/Structures/Currencies/Badge of Justice.lua')
+		Minimum = 1
+	}
+	'shared-strings-settings' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/lib/Strings/Settings/*.lua',
+			':(glob).contrib/.db/shared/lib/Strings/Settings/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/lib/Strings/Settings/About/ABOUT_BOTTOM.lua')
+		Minimum = 1
+	}
+	'shared-strings-ui' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/lib/Strings/UI/*.lua',
+			':(glob).contrib/.db/shared/lib/Strings/UI/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/lib/Strings/UI/Classic Window Logic/OTHER_ROW_INSTRUCTIONS.lua')
+		Minimum = 1
+	}
+	'shared-strings-other' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/shared/lib/Strings/*.lua',
+			':(glob).contrib/.db/shared/lib/Strings/**/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/Settings/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/Settings/**/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/UI/*.lua',
+			':(exclude,glob).contrib/.db/shared/lib/Strings/UI/**/*.lua'
+		)
+		Required = @('.contrib/.db/shared/lib/Strings/AllTheThings/ACCOUNT_MANAGEMENT.lua')
+		Minimum = 1
+	}
+
 }
 
 function Invoke-NativeProcess {
@@ -243,6 +305,33 @@ function Get-TrackedPaths {
 	@($sortedPaths)
 }
 
+
+function Assert-SharedGroupCoverage {
+	$sharedGroups = @(
+		'shared-core', 'shared-headers', 'shared-structures',
+		'shared-strings-settings', 'shared-strings-ui', 'shared-strings-other'
+	)
+	$allSharedPaths = @(Get-TrackedPaths -Pathspecs @(
+		':(glob).contrib/.db/shared/*.lua',
+		':(glob).contrib/.db/shared/**/*.lua'
+	))
+	$seen = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
+	foreach ($sharedGroup in $sharedGroups) {
+		$groupPaths = @(Get-TrackedPaths -Pathspecs $groups[$sharedGroup].Pathspecs)
+		foreach ($path in $groupPaths) {
+			if (-not $seen.Add($path)) {
+				throw "Shared Lua path is selected more than once: '$path'"
+			}
+		}
+	}
+	$missing = @($allSharedPaths | Where-Object { -not $seen.Contains($_) })
+	$extra = @($seen | Where-Object { $allSharedPaths -cnotcontains $_ })
+	if ($missing.Count -gt 0 -or $extra.Count -gt 0) {
+		throw "Shared Lua group coverage mismatch: $($missing.Count) missing, $($extra.Count) extra."
+	}
+	Write-Host "Shared Lua group coverage: $($seen.Count) tracked files, exact-once."
+}
+
 function Write-GroupSummary {
 	param(
 		[string]$Name,
@@ -282,6 +371,9 @@ try {
 	$minimum = if ($definition.ContainsKey('Minimum')) { [int]$definition.Minimum } else { 1 }
 	if ($allPaths.Count -lt $minimum) {
 		throw "Group '$Group' selected $($allPaths.Count) tracked files; at least $minimum are required."
+	}
+	if ($Group.StartsWith('shared-', [System.StringComparison]::OrdinalIgnoreCase)) {
+		Assert-SharedGroupCoverage
 	}
 	$checkerCommand = Get-Command 'editorconfig-checker' -CommandType Application -ErrorAction Stop |
 		Select-Object -First 1

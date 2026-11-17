@@ -69,7 +69,7 @@ SNOWSTORMS = createHeader({
 		tw = "冰雪風暴",
 	},
 });
- 
+
 THUNDERSTORMS = createHeader({
 	readable = "Thunderstorms",
 	icon = 132845,

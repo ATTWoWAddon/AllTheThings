@@ -1304,10 +1304,10 @@ end
 ---@param i? integer # First array index to unpack; defaults to 1.
 ---@return any ... # Consecutive array values from the requested index, stopping at the first nil.
 unpack = function(t, i)
-  i = i or 1
-  if t[i] ~= nil then
-	return t[i], unpack(t, i + 1)
-  end
+	i = i or 1
+	if t[i] ~= nil then
+		return t[i], unpack(t, i + 1)
+	end
 end
 
 -- Helper Functions
@@ -2958,7 +2958,7 @@ r_withQuest = function(recipeID, questID, added, description, maps)
 	if maps then
 		t.maps = maps;
 	end
-    return t
+	return t
 end
 -- Creates a simple 'gathered' Item which has a set of object providers
 -- Note: If additional table data is provided it must be the last param

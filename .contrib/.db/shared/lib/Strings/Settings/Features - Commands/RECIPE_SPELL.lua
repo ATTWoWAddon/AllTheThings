@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Recipe (spell)",
 		ru = "Рецепт (spell)",
-        cn = "配方（法术）",
+		cn = "配方（法术）",
 		tw = "配方（法術）",
 	},
 })

@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Mount (spell)",
 		ru = "Средство передвижения (spell)",
-        cn = "坐骑（法术）",
+		cn = "坐骑（法术）",
 		tw = "坐騎（法術）",
 	},
 })

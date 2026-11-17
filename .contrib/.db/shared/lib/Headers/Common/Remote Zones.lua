@@ -2,7 +2,7 @@ REMOTE_ZONES = createHeader({
 	readable = "Remote Zones",
 	constant = "REMOTE_ZONES",
 	export = true,
-	icon = 
+	icon =
 		-- #if AFTER 5.4.2
 		450908,
 		-- #else

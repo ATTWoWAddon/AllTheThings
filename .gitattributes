@@ -222,3 +222,10 @@ docs export-ignore
 
 # Preserve the imported TWW exploration data format in CRLF.
 "/.contrib/.db/standard/00 - DB/ExplorationDB/ExplorationDB - TWW.lua" text eol=crlf
+
+# Shared Lua files
+"/.contrib/.db/shared/*.lua" text eol=lf
+"/.contrib/.db/shared/**/*.lua" text eol=lf
+# Preserve generated shared Lua outputs in CRLF.
+"/.contrib/.db/shared/constants/headerIDs.lua" text eol=crlf
+"/.contrib/.db/shared/objects/ObjectDB.lua" text eol=crlf

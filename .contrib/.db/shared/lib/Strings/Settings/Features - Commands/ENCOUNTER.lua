@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Encounter",
 		ru = "Бой",
-        cn = "战斗",
+		cn = "战斗",
 		tw = "遭遇戰",
 	},
 })

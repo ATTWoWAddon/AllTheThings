@@ -5,7 +5,7 @@ createLocalizationString({
 	text = {
 		en = "Header",
 		ru = "Шапка",
-        cn = "标头",
+		cn = "标头",
 		tw = "標題",
 	},
 })

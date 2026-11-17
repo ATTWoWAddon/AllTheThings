@@ -154,7 +154,6 @@ for key,value in pairs({
 end
 
 
-
 -- CONDITIONAL OBJECT LOCALES
 -- #if BEFORE TBC
 ObjectDB[68].text.ko = "현상수배 전단";	-- Wanted Poster

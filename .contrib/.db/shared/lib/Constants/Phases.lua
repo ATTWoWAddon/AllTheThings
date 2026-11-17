@@ -1546,7 +1546,6 @@ PHASE_SIX_SILITHYST = SOD_PHASE_SEVEN;	-- TODO: Confirm this.
 -- #endif
 
 
-
 -- TBC Classic Phases
 CurrentClassicExpansion = {
 	text = {
@@ -3485,7 +3484,6 @@ WOD_PHASE_TWO = 61;
 WOD_PHASE_THREE = 62;
 
 
-
 -- Legion Classic Phases
 CurrentClassicExpansion = {
 	text = {
@@ -3500,7 +3498,6 @@ CurrentClassicExpansion = {
 LEGION_PHASE_ONE = 70;
 LEGION_PHASE_TWO = 71;
 LEGION_PHASE_THREE = 72;
-
 
 
 -- Battle for Azeroth Phases
@@ -3519,7 +3516,6 @@ BFA_PHASE_TWO = 81;
 BFA_PHASE_THREE = 82;
 
 
-
 -- Shadowlands Phases
 CurrentClassicExpansion = {
 	text = {
@@ -3534,7 +3530,6 @@ CurrentClassicExpansion = {
 SL_PHASE_ONE = 90;
 SL_PHASE_TWO = 91;
 SL_PHASE_THREE = 92;
-
 
 
 -- Dragonflight Phases
@@ -3553,7 +3548,6 @@ DF_PHASE_TWO = 101;
 DF_PHASE_THREE = 102;
 
 
-
 -- The War Within Phases
 CurrentClassicExpansion = {
 	text = {
@@ -3570,7 +3564,6 @@ TWW_PHASE_TWO = 111;
 TWW_PHASE_THREE = 112;
 
 -- Done defining Phases for Classic
-
 
 
 -- Defining Phases for Forever

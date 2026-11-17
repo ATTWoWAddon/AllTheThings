@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	--[[ -- TEMPLATE
 	[00000] = {
 		readable = "TEMPLATE",

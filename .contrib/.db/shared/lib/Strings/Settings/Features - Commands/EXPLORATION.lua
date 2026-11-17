@@ -4,7 +4,7 @@ createLocalizationString({
 	export = true,
 	text = {
 		en = "Exploration",
-        cn = "探索",
+		cn = "探索",
 		tw = "探索",
 	},
 })

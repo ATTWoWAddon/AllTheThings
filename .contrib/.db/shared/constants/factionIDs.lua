@@ -1,7 +1,6 @@
 --- Factions
 
 
-
 -- Allows defining the max 'rank' associated with a Faction (i.e. 8 for Exalted, 6 many Friendships, 15/20/25 various Renowns)
 MAX_FACTION_RANKS = {}
 

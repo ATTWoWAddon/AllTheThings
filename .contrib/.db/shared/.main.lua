@@ -60,9 +60,9 @@ do
 ---@param path? string # Current path for conflict messages.
 ---@param options? ATTDatabaseContainerOptions # Optional merge settings.
 local function RecursivelyMergeData(t, c, path, options)
-    path = path or ""  -- used for error reporting
+	path = path or ""  -- used for error reporting
 
-    for key, tval in pairs(t) do
+	for key, tval in pairs(t) do
 		local ttype = type(tval)
 		local cval
 		-- if a table is merging in, then pull the key directly, otherwise use rawget so that auto-table metatables
@@ -75,33 +75,33 @@ local function RecursivelyMergeData(t, c, path, options)
 		-- if cval then
 		-- 	print("Merge DB table - ",path,"@",key,"exists",cval,"assign",tval)
 		-- end
-        local currentPath = path .. tostring(key)
+		local currentPath = path .. tostring(key)
 
-        if cval == nil then
-            -- Key does not exist in c → copy it
-            c[key] = tval
-        else
-            -- Key exists → check types
-            local ctype = type(cval)
+		if cval == nil then
+			-- Key does not exist in c → copy it
+			c[key] = tval
+		else
+			-- Key exists → check types
+			local ctype = type(cval)
 
-            if ttype ~= ctype then
-                error("Type mismatch at " .. currentPath ..
-                      " (exists=" .. ttype .. ", assign=" .. ctype .. ")")
-            elseif ttype == "table" then
-                -- Both are tables → recurse
-                RecursivelyMergeData(tval, cval, currentPath .. ".", options)
-            else
-                -- Both exist and are non-table values → check conflict
-                if tval ~= cval then
+			if ttype ~= ctype then
+				error("Type mismatch at " .. currentPath ..
+					" (exists=" .. ttype .. ", assign=" .. ctype .. ")")
+			elseif ttype == "table" then
+				-- Both are tables → recurse
+				RecursivelyMergeData(tval, cval, currentPath .. ".", options)
+			else
+				-- Both exist and are non-table values → check conflict
+				if tval ~= cval then
 					if not options or not options.IgnoreValueConflicts then
 						print("WARN: Value conflict at " .. currentPath ..
 							" (exists=" .. tostring(cval) ..
 							", assign=" .. tostring(tval) .. ")")
 					end
-                end
-            end
-        end
-    end
+				end
+			end
+		end
+	end
 end
 local dataEntryMeta = {
 	--- Lazily creates a localization table for the text key.
@@ -231,7 +231,7 @@ local autotable__index = function(t, key)
 	local val = SetAutoTable()
 	rawset(t, key, val)
 	return val
- end
+end
 --- Creates an export table that lazily creates nested tables.
 ---@return table # New export table.
 SetAutoTable = function()

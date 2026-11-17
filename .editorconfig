@@ -515,3 +515,23 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Shared Lua files
+[/.contrib/.db/shared/**.lua]
+charset = utf-8
+end_of_line = lf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Preserve generated shared Lua outputs.
+[/.contrib/.db/shared/{constants/headerIDs.lua,objects/ObjectDB.lua}]
+charset = utf-8-bom
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true

@@ -212,3 +212,39 @@ jobs:
         shell: pwsh
         run: |
           & ./.github/scripts/Check-EditorConfig.ps1 -Group standard-other -VerboseChecker
+
+      - name: Check shared core Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-core -VerboseChecker
+
+      - name: Check shared header Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-headers -VerboseChecker
+
+      - name: Check shared structure Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-structures -VerboseChecker
+
+      - name: Check shared settings strings Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-strings-settings -VerboseChecker
+
+      - name: Check shared UI strings Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-strings-ui -VerboseChecker
+
+      - name: Check remaining shared strings Lua
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-strings-other -VerboseChecker

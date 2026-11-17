@@ -576,7 +576,7 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ timeli
 
 CATA_GNOMISH_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, sharedData({ timeline = { ADDED_4_0_3_LAUNCH } }, {
 	r(84413),	-- De-Weaponized Mechanical Companion
-    r(95705),	-- Gnomish Gravity Well
+	r(95705),	-- Gnomish Gravity Well
 }));
 
 CLASSIC_CATA_ENGINEERING = appendGroups(CLASSIC_ENGINEERING,
@@ -699,19 +699,19 @@ MOP_GNOMISH_ENGINEERING = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ tim
 
 ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
 -- #if AFTER 3.0.3
-    appendGroups(WRATH_GNOMISH_ENGINEERING,
-    -- #if AFTER 4.0.3
-        appendGroups(CATA_GNOMISH_ENGINEERING,
-        -- #if AFTER 5.0.4
-        MOP_GNOMISH_ENGINEERING
-        -- #else
-            {}
-        -- #endif
-        )
-    -- #else
+	appendGroups(WRATH_GNOMISH_ENGINEERING,
+	-- #if AFTER 4.0.3
+		appendGroups(CATA_GNOMISH_ENGINEERING,
+		-- #if AFTER 5.0.4
+		MOP_GNOMISH_ENGINEERING
+		-- #else
+			{}
+		-- #endif
+		)
+	-- #else
 		{}
-    -- #endif
-    )
+	-- #endif
+	)
 -- #else
 	{}
 -- #endif
