@@ -10,6 +10,8 @@ This guide helps you connect to GitHub with an SSH key so you can clone, pull, a
 
 These are setup instructions, not a record of changes to your keys or account settings. Examples follow official documentation; the workflow and 1Password import were not tested for this guide. Replace uppercase placeholders with your values. See the [SSH login terminology appendix](#appendix--ssh-login-terminology) for definitions.
 
+Using **Sourcetree**? Configure your chosen key route below, then follow the [Sourcetree SSH guide](github-ssh-sourcetree.md) for client selection, account settings, remote URLs, and GUI verification.
+
 ## Choose one key source
 
 Choose once. Read the key-choice guidance and check the tools below, then open only your selected route, complete it in order, and continue to the shared completion steps. Native ssh-agent (a background program that handles key-use requests), macOS Keychain (the system's protected credential store), global defaults, and GitHub's command-line interface (CLI) are optional conveniences.
