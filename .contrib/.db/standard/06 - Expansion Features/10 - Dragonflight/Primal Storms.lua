@@ -5,9 +5,6 @@
 local SymRaidVault = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1200,DiffID,ClassID}};
 end
-local function bo(questID, isWeekly)
-	return { questID = questID, isWeekly = isWeekly };
-end
 
 local ELEMENTAL_OVERFLOW = 2118;
 
@@ -320,28 +317,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					n(193650, {	-- Emblazion <Progeny of Fire>
 						questID = 73991,
 						groups = {
-							bo(69955, true),
+							bo(69955, nil, true),
 							i(200307),	-- Viciously Hooked Cleaver
 						},
 					}),
 					n(193648, {	-- Infernum
 						questID = 74005,
 						groups = {
-							bo(69954, true),
+							bo(69954, nil, true),
 							i(200150),	-- Infernum's Furnace
 						},
 					}),
 					n(193675, {	-- Kain Firebrand
 						questID = 74006,
 						groups = {
-							bo(69970, true),
+							bo(69970, nil, true),
 							i(200155),	-- Haphazardly Welded Protector
 						},
 					}),
 					n(193686, {	-- Neela Firebane
 						questID = 74016,
 						groups = {
-							bo(69975, true),
+							bo(69975, nil, true),
 							i(200181),	-- Blade of Blazing Torment
 						},
 					}),
@@ -362,27 +359,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					n(193644, {	-- Bouldron
 						questID = 73986,
 						groups = {
-							bo(69951, true),
+							bo(69951, nil, true),
 							i(200231),	-- Flaming Stonescale Bulwark
 						},
 					}),
 					n(193654, {	-- Gravlion <Progeny of Earth>
 						questID = 73998,
 						groups = {
-							bo(69960, true),
+							bo(69960, nil, true),
 						},
 					}),
 					n(193652, {	-- Grizzlerock
 						questID = 73999,
 						groups = {
-							bo(69956, true),
+							bo(69956, nil, true),
 							i(200145),	-- Hilted Monolith
 						},
 					}),
 					n(193680, {	-- Zurgaz Corebreaker
 						questID = 74039,
 						groups = {
-							bo(69972, true),
+							bo(69972, nil, true),
 						},
 					}),
 				})),
@@ -402,14 +399,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					n(193645, {	-- Crystalus
 						questID = 73989,
 						groups = {
-							bo(69952, true),
+							bo(69952, nil, true),
 							i(200301),	-- Reclaimed Tuskarr Harpoon
 						},
 					}),
 					n(193655, {	-- Frozion <Progeny of Water>
 						questID = 73993,
 						groups = {
-							bo(69961, true),
+							bo(69961, nil, true),
 							i(200311),	-- Bonespike Mallet
 						},
 					}),
@@ -421,7 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						},
 						questID = 74009,
 						groups = {
-							bo(69971, true),
+							bo(69971, nil, true),
 							i(200250),	-- Frost Tipped Glaive
 						},
 					}),
@@ -434,7 +431,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					n(193682, {	-- Rouen Icewind
 						questID = 74027,
 						groups = {
-							bo(69973, true),
+							bo(69973, nil, true),
 						},
 					}),
 				})),
@@ -455,28 +452,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					n(193653, {	-- Gaelzion <Progeny of Air>
 						questID = 73995,
 						groups = {
-							bo(69959, true),
+							bo(69959, nil, true),
 							i(200180),	-- Crystallized Lightning Staff
 						},
 					}),
 					n(193647, {	-- Karantun
 						questID = 74007,
 						groups = {
-							bo(69953, true),
+							bo(69953, nil, true),
 							i(200170),	-- Stormbringer Bow
 						},
 					}),
 					n(193684, {	-- Pipspark Thundersnap
 						questID = 74022,
 						groups = {
-							bo(69974, true),
+							bo(69974, nil, true),
 							i(200741),	-- Pipspark's Prestigious Pendant of Protection
 						},
 					}),
 					n(193674, {	-- Voraazka
 						questID = 74038,
 						groups = {
-							bo(69969, true),
+							bo(69969, nil, true),
 							i(200136),	-- Monsoonic Armguards
 						},
 					}),

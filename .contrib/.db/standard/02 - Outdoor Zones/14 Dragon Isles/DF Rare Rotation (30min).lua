@@ -2,10 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local function bo(questID, isDaily)
-	return { questID = questID, isDaily = isDaily };
-end
-
 local DF_RARE_ROTATION = createHeader({
 	readable = "DF Rare Rotation",
 	icon = 237274,

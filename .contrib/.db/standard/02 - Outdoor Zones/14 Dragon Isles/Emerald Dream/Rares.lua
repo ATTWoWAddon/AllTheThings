@@ -2,10 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local function bo(questID, isDaily)
-	return { questID = questID, isDaily = isDaily };
-end
-
 maproot(DRAGON_ISLES, EMERALD_DREAM, {
 	timeline = { ADDED_10_2_0 },
 	groups = {

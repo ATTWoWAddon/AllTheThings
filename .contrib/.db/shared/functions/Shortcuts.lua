@@ -2745,6 +2745,19 @@ quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
 q = quest;												-- Create a QUEST Object (alternative shortcut)
+
+--- Builds a bonus-objective quest record with optional reset flags.
+---@param questID QuestID # Quest ID associated with the bonus objective.
+---@param isDaily? boolean # Daily-reset flag when isWeekly is omitted.
+---@param isWeekly? boolean # Weekly-reset flag; when supplied, isDaily is ignored.
+---@return ATTQuestObject # Bonus-objective quest record with its reset flag.
+bo = function(questID, isDaily, isWeekly)
+	if isWeekly ~= nil then
+		return { questID = questID, isWeekly = isWeekly };
+	end
+	return { questID = questID, isDaily = isDaily };
+end
+
 --- Create a QUEST Object flagged with the NYI unobtainable flag.
 ---@param id QuestID # Quest ID.
 ---@param t? ATTObject|ATTObjectArray # Optional object fields or an array of child objects.

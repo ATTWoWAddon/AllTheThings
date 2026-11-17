@@ -2,10 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local function bo(questID, isDaily)
-	return { questID = questID, isDaily = isDaily };
-end
-
 local ADAMANT_SCALES = 193214;
 local AWAKENED_FROST = 190329;
 local DRACONIUM_ORE = 188658;

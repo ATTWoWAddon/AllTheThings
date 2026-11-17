@@ -2,10 +2,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-local function bo(questID)
-	return { questID = questID, isDaily = true };
-end
-
 maproot(SHADOWLANDS, THE_MAW, {
 	timeline = { ADDED_9_0_2_LAUNCH },
 	groups = {
@@ -70,7 +66,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186616, {	-- Bindings of Screaming Death
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(61136),	-- Agonix bonus objective
+					bo(61136, true),	-- Agonix bonus objective
 				},
 			}),
 			n(170787, {	-- Akros <Death's Hammer>
@@ -80,7 +76,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186617, {	-- Death's Hammer Stompers
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(60920),	-- Akros bonus objective
+					bo(60920, true),	-- Akros bonus objective
 				},
 			}),
 			n(170301, {	-- Apholeias, Herald of Loss
@@ -160,7 +156,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63373,
 				groups = {
 					i(186619),	-- Bloodspattered Shoulders of the Flayer
-					bo(59230),	-- Dartanos bonus objective
+					bo(59230, true),	-- Dartanos bonus objective
 				},
 			}),
 			n(162844, {	-- Dath Rezara
@@ -171,7 +167,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(183067),	-- Korrath's Grimoire: Belidir
 					i(183068),	-- Korrath's Grimoire: Gyadrek
 					i(186620),	-- Rezara's Fencing Grips
-					bo(61140),	-- Dath Rezara bonus objective
+					bo(61140, true),	-- Dath Rezara bonus objective
 				},
 			}),
 			n(179779, {	-- Deomen the Vortex
@@ -201,7 +197,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186622, {	-- Robe of Drifting Sorrow
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(59183),	-- Drifting Sorrow bonus objective
+					bo(59183, true),	-- Drifting Sorrow bonus objective
 				},
 			}),
 			n(170774, {	-- Eketra <The Impaler>
@@ -255,7 +251,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63385,
 				groups = {
 					i(186224),	-- Beastwarren Houndmaster's Treads
-					bo(62209),	-- Houndmaster Vasanok bonus objective
+					bo(62209, true),	-- Houndmaster Vasanok bonus objective
 				},
 			}),
 			n(162965, {	-- Huwerath
@@ -280,7 +276,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63381,
 				groups = {
 					i(186624),	-- Death Wing Drape
-					bo(60903),	-- Krala bonus objective
+					bo(60903, true),	-- Krala bonus objective
 				},
 			}),
 			n(171316, {	-- Malevolent Stygia
@@ -290,7 +286,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186625, {	-- Hood of Malevolence
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(61125),	-- Malevolent Stygia bonus objective
+					bo(61125, true),	-- Malevolent Stygia bonus objective
 				},
 			}),
 			n(162849, {	-- Morguliax <Lord of Decapitation>
@@ -330,7 +326,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63413,
 				groups = {
 					i(183061),	-- Wailing Coin
-					bo(62618),	-- Odalrik bonus objective
+					bo(62618, true),	-- Odalrik bonus objective
 				},
 			}),
 			n(162845, {	-- Orrholyn <Lord of Bloodletting>
@@ -340,7 +336,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186626, {	-- Bloodwicking Bands
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(60991),	-- Orrholyn bonus objective
+					bo(60991, true),	-- Orrholyn bonus objective
 				},
 			}),
 			n(172577, {	-- Orophea
@@ -366,7 +362,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				groups = {
 					i(186627),	-- Belt of Ten Thousand Tails
 					i(183136),	-- Incendiary Mawrat
-					bo(63044),	-- Ratgusher bonus objective
+					bo(63044, true),	-- Ratgusher bonus objective
 				},
 			}),
 			n(162829, {	-- Razkazzar
@@ -374,7 +370,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63374,
 				groups = {
 					i(186628),	-- Razkazzar's Axe Grippers
-					bo(60992),	-- Razkazzar bonus objective
+					bo(60992, true),	-- Razkazzar bonus objective
 				},
 			}),
 			n(172521, {	-- Sanngror the Torturer
@@ -413,7 +409,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186240, {	-- Broodmotherhide Cloak
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(62211),	-- Skittering Broodmother bonus objective
+					bo(62211, true),	-- Skittering Broodmother bonus objective
 				},
 			}),
 			n(166398, {	-- Soulforger Rhovus
@@ -431,7 +427,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				questID = 63377,
 				groups = {
 					i(186630),	-- Spark-Deflecting Girdle
-					bo(59441),	-- Soulsmith Yol-Mattar bonus objective
+					bo(59441, true),	-- Soulsmith Yol-Mattar bonus objective
 				},
 			}),
 			n(156203, {	-- Stygian Incinerator
@@ -441,7 +437,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					i(186631, {	-- Emberfused Band
 						timeline = { ADDED_9_1_0 },
 					}),
-					bo(62539),	-- Stygian Incinerator bonus objective
+					bo(62539, true),	-- Stygian Incinerator bonus objective
 				},
 			}),
 			n(170302, {	-- Talaporas, Herald of Pain
@@ -493,7 +489,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 					n(174812, {	-- Rune of Cruelty (3)
 						description = "Click 3rd.",
 					}),
-					bo(61728),	-- Valis bonus objective
+					bo(61728, true),	-- Valis bonus objective
 				},
 			}),
 			n(172862, {	-- Yero the Skittish
