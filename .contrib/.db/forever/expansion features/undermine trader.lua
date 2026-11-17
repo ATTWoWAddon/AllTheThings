@@ -10,7 +10,10 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 	groups = {
 		n(CURRENCIES, {
 			currency(TARNISHED_UNDERMINE_REAL, {	-- Tarnished Undermine Real
-				maps = { MAP.SUNKEN_TEMPLE },
+				maps = {
+					MAP.BLACKROCK_DEPTHS,
+					MAP.SUNKEN_TEMPLE,
+				},
 				OnTooltip = [[function(t, tooltipInfo)
 					if not IsShiftKeyDown() then
 						tooltipInfo[#tooltipInfo+1] = { left = "Hold Shift to see the daily boss kills that award this currency.", r = 0.6, g = 0.8, b = 1, wrap = true };
@@ -55,6 +58,14 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 					add(results, "");
 				end]],
 				groups = {
+					inst(228, {	-- Blackrock Depths
+						mapID = MAP.BLACKROCK_DEPTHS,
+						groups = sharedData({
+							isDaily = true,
+						},{
+							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
+						}),
+					}),
 					inst(237, {	-- The Temple of Atal'hakkar
 						mapID = MAP.SUNKEN_TEMPLE,
 						groups = sharedData({
