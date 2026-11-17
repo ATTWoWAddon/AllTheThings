@@ -155,6 +155,7 @@ s(302524,262840,{awp=120100,description="Available with the purchase of anything
 s(302506,262822,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=46,rwp=120100,u=2}),
 s(302543,262859,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=42,rwp=120100,u=2}),
 de(15144,{awp=120105,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 13th, 10:00 a.m. & November 3rd, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263294,rwp=120105,spellID=1270362,u=2}),
+s(298517,252715,{awp=120105,description="Available with any purchase from the Blizzard Gear Store between Nov. 16, 2026 (12pm ET) and Nov. 23, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=40,rwp=120105,u=3}),
 h(-819,{awp=120105,u=3,g={
 mnt(1311627,{itemID=281526,u=3}),
 p(5173,{itemID=284179,npcID=274350,spellID=1315275,u=3}),

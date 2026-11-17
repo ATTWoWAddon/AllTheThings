@@ -8936,7 +8936,7 @@ r(370710,{description="Drops from Earthen World Creatures.",itemID=191580,requir
 r(370707,{description="Drops from Fiery World Creatures.",itemID=191578,requireSkill=171,skillID=2823}),
 r(416149,{b=1,description="You must be a mage or get one to help you. The mage character needs to have DF cooking and a rare quality Chef's Splendid Rolling Pin equipped with the special tooltip \"Whenever you gain Well Fed, you conjure a DF Dessert from among the recipes you have learned.\" and at least 1 DF dessert recipe learned. The engineer needs DF engineering skill leveled to 50, 1 Light Parchment and 1 Engineer's Ink. If the engineer is close enough to the mage when they get the Well Fed buff, the engineer will get the recipe.",itemID=207461,requireSkill=202,skillID=2827}),
 r(383545,{itemID=198876,requireSkill=773,skillID=2828})}),
-h(-101,{symselector=9,g={
+h(-101,{symselector=11,g={
 s(181873,199020,{f=31,lvl=60}),
 s(181882,199032,{f=8,lvl=60}),
 s(181880,199027,{f=26,lvl=60}),

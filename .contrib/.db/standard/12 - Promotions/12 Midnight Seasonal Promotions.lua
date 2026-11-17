@@ -233,7 +233,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(252715, {	-- Deep Winter Toque (COSMETIC!)
 				description = "Available with any purchase from the Blizzard Gear Store between Nov. 16, 2026 (12pm ET) and Nov. 23, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
-				timeline = { ADDED_12_1_5 },
+				timeline = { ADDED_12_1_5, "removed 12.1.5.99999" },
 				u = REAL_MONEY,
 			}),
 			n(DUNGEONS_AND_DRAGONS, sharedDataSelf({

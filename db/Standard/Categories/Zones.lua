@@ -3504,7 +3504,7 @@ n(133261,{awp=70305,coords={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
 r(25704,{itemID=21099,requireSkill=185,skillID=2548})}}),
 n(12795,{coords={
-[85]={{38.2,72.6}}},r=1,sym={{"select","symselector",4},{"pop"},{"exclude","headerID",-101}}}),
+[85]={{38.2,72.6}}},r=1,sym={{"select","symselector",6},{"pop"},{"exclude","headerID",-101}}}),
 n(50323,{awp=40003,coords={
 [85]={{50,58.6}}},r=1,g={
 s(32513,64906,{b=1,f=3,lvl=15,minReputation={1133,42000},r=1}),
@@ -5036,7 +5036,7 @@ s(32516,64909,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32517,64910,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32515,64908,{b=1,f=3,lvl=15,minReputation={76,42000},r=1})}}),
 n(12794,{coords={
-[85]={{38.6,72.8}}},r=1,sym={{"select","symselector",4},{"find","headerID",-101},{"pop"}}}),
+[85]={{38.6,72.8}}},r=1,sym={{"select","symselector",6},{"find","headerID",-101},{"pop"}}}),
 n(46708,{awp=40001,coords={
 [85]={{56.6,61.2}}},r=1,g={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
@@ -12752,9 +12752,13 @@ q(5931,{c={11},coords={
 q(5932,{c={11},coords={
 [80]={{56.2,30.4}}},maps={88},qgs={11802},r=1,rwp=40003,sourceQuests={5930},u=2}),
 q(6001,{c={11},coords={
-[89]={{35.2,8}}},cost={{"i",15208,1}},maps={62},qgs={4217},r=2,rwp=40003,sourceQuests={5931},u=2}),
+[89]={{35.2,8}}},cost={{"i",15208,1}},maps={62},qgs={4217},qis={15208},r=2,rwp=40003,sourceQuests={5931},u=2,g={
+o(177525,{coords={
+[62]={{43,45}}}})}}),
 q(6002,{c={11},coords={
-[88]={{76.4,27.6}}},cost={{"i",15710,1}},maps={10},qgs={3033},r=1,rwp=40003,sourceQuests={5932},u=2}),
+[88]={{76.4,27.6}}},cost={{"i",15710,1}},maps={10},qgs={3033},qis={15710},r=1,rwp=40003,sourceQuests={5932},u=2,g={
+o(177525,{coords={
+[10]={{42,60}}}})}}),
 q(5929,{c={11},coords={
 [80]={{56.2,30.4}}},crs={11956},qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2}),
 q(5930,{c={11},coords={
@@ -18298,7 +18302,7 @@ q(1560,{coords={
 s(3366,9638,{b=1,f=6,loc=43,u=2}),
 i(9642,{b=1,f=52,u=2})}}),
 q(2864,{coords={
-[224]={{51.6,26.8}}},isBreadcrumb=1,nextQuests={2865},qgs={773},rwp=40003,u=2}),
+[224]={{27,77.2}}},isBreadcrumb=1,nextQuests={2865},qgs={773},rwp=40003,u=2}),
 q(24955,{awp=40003,coords={
 [71]={{44.5,52.6}}},lvl=15,qgs={38849},r=1,sourceQuests={24905},g={
 i(52038,{spellID=72984})}}),
@@ -25457,7 +25461,7 @@ toy(97921,{awp=70100,b=1}),
 i(138382,{awp=70003}),
 s(80190,138385,{awp=70003,f=10})}}),
 n(12784,{awp=20001,coords={
-[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","symselector",5},{"find","headerID",-101},{"pop"}}}),
+[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","symselector",7},{"find","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [84]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"i",137642,15}},itemID=29465,lvl=10,pvp=1,r=2}),
@@ -25899,7 +25903,7 @@ i(1941)}}),
 n(1320,{coords={
 [84]={{72,62.2}}},r=2,sym={{"select","itemID",2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465}}}),
 n(12785,{awp=20001,coords={
-[84]={{75.4,67}}},r=2,sym={{"select","symselector",5},{"pop"},{"exclude","headerID",-101}}}),
+[84]={{75.4,67}}},r=2,sym={{"select","symselector",7},{"pop"},{"exclude","headerID",-101}}}),
 n(8665,{awp=80001,coords={
 [84]={{56,3.22}}},r=2,rwp=100205,u=2,g={
 p(68,{itemID=8500,npcID=7553,spellID=10707,u=2}),
@@ -41452,9 +41456,9 @@ n(50433,{coords={
 n(253227,{awp=110207,coords={
 [241]={{49.6,29.6}}},r=2,g={
 de(2244,{cost=10000000,itemID=246427,spellID=1242111}),
-de(1998,{cost=20000000,itemID=246108,minReputation={1174,9000},spellID=1240795}),
+de(1998,{cost=20000000,description="You can receive a faction rep discount by purchasing this item from |cFFFFFFFFCraw MacGraw|r.",itemID=246108,minReputation={1174,9000},spellID=1240795}),
 de(2245,{cost=15000000,itemID=246428,spellID=1242112}),
-de(2242,{cost=4000000,itemID=246425,minReputation={1174,3000},spellID=1242109})}}),
+de(2242,{cost=4000000,description="You can receive a faction rep discount by purchasing this item from |cFFFFFFFFCraw MacGraw|r.",itemID=246425,minReputation={1174,3000},spellID=1242109})}}),
 n(49605,{coords={
 [241]={{43.8,57.8}}},r=2,g={
 s(21537,44643,{f=32,lvl=27}),
@@ -72896,39 +72900,33 @@ q(33211,{isDaily=1,lvl=30,qgs={73570}}),
 q(33161,{coords={
 [554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33156,33160}}),
 q(33337,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33338},g={
-i(105930,{spellID=149370})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105930},sourceQuests={33338}}),
 q(33378,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33377},g={
-i(105934,{spellID=149374})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105934},sourceQuests={33377}}),
 q(33342,{lvl=30,qgs={73303},sourceQuests={33341}}),
 q(33338,{coords={
 [554]={{34.6,53.6}}},isDaily=1,isWeekly=1,lvl=30,qgs={72870},sourceQuests={33336},g={
 i(105715)}}),
 q(33377,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33376},g={
-i(105933,{spellID=149373})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105933},sourceQuests={33376}}),
 q(33332,{coords={
 [554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33228},g={
 i(103977)}}),
 q(33231,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,lvl=30,nextQuests={33160},qgs={73691},r=2,sourceQuests={33229,33230}}),
 q(33232,{coords={
-[390]={{80.6,33}}},isBreadcrumb=1,lvl=30,nextQuests={33156},qgs={73691},r=1,sourceQuests={33229,33230},g={
-i(104110,{spellID=147985})}}),
+[390]={{80.6,33}}},isBreadcrumb=1,lvl=30,nextQuests={33156},qgs={73691},qis={104110},r=1,sourceQuests={33229,33230}}),
 q(33222,{coords={
 [554]={{34.7,60.3}}},isDaily=1,qgs={73626}}),
 q(33379,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33378},g={
-i(105935,{spellID=149375})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105935},sourceQuests={33378}}),
 q(33374,{coords={
 [554]={{42.8,55.6}}},isDaily=1,lvl=30,qgs={73303},sourceQuests={33341},g={
 i(103642,{b=1,f=55,lvl=32,spellID=147226}),
 i(103643,{b=1,f=55,lvl=32,spellID=147476}),
 i(103641,{b=1,f=55,lvl=32,spellID=147055})}}),
 q(33375,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33337},g={
-i(105931,{spellID=149371})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105931},sourceQuests={33337}}),
 q(32974,{description="The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",lvl=30,providers={{"o",222684}},qss={102225}}),
 q(32975,{coords={
 [554]={{49.4,69.3}}},description="Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",lvl=30,qgs={72751},sourceQuests={32974}}),
@@ -72940,15 +72938,13 @@ i(104012,{b=2,spellID=148103}),
 i(104010,{b=2,spellID=148099}),
 i(104009,{b=2,spellID=147597})}}),
 q(33376,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33375},g={
-i(105932,{spellID=149372})}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105932},sourceQuests={33375}}),
 q(33334,{coords={
 [554]={{34.6,53.6}}},isDaily=1,isWeekly=1,lvl=30,qgs={72870},sourceQuests={33333}}),
 q(33343,{lvl=30,qgs={73303},sourceQuests={33342,33374},g={
 i(103982,{b=1,lvl=35,spellID=147343})}}),
 q(33336,{coords={
-[554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33161},g={
-i(105715)}}),
+[554]={{34.6,53.6}}},lvl=30,qgs={72870},qis={105715},sourceQuests={33161}}),
 q(33335,{coords={
 [554]={{34.6,53.6}}},lvl=30,qgs={72870},sourceQuests={33228}}),
 q(33228,{coords={
@@ -72965,7 +72961,7 @@ q(33341,{lvl=30,qgs={73303},sourceQuests={33340}})}),
 h(-46,{
 n(73174,{coords={
 [554]={{48.4,33.3},{56.6,35.9},{58.1,25}}},isDaily=1,questID=33312,g={
-i(86574,{f=55,spellID=127250,u=2}),
+i(86574,{f=55,rwp=70003,spellID=127250,u=2}),
 crit(24139,{achID=8714,id=31}),
 crit(65655,{achID=20002,awp=100207,e=437,id=13,rwp=110002,u=2})}}),
 n(73666,{coords={
@@ -73049,13 +73045,13 @@ mnt(148476,{b=1,itemID=104269,lvl=10}),
 crit(23984,{achID=8714,id=27}),
 crit(65647,{achID=20002,awp=100207,e=437,id=6,rwp=110002,u=2})}}),
 n(73163,{coords={
-[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,providers={{"n",72841}},questID=33303,g={
+[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},crs={72841},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,questID=33303,g={
 p(1330,{b=1,itemID=104161,npcID=73364,spellID=148052}),
 i(104292,{b=1}),
 crit(23989,{achID=8714,id=18}),
 crit(65652,{achID=20002,awp=100207,e=437,id=11,rwp=110002,u=2})}}),
 n(73160,{coords={
-[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,providers={{"n",72844}},questID=33296,g={
+[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},crs={72844},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,questID=33296,g={
 i(89770,{b=1,lvl=10,spellID=130895}),
 crit(23968,{achID=8714,id=2}),
 crit(65676,{achID=20001,awp=100207,e=437,id=13,rwp=110002,u=2})}}),
@@ -73413,7 +73409,7 @@ p(1346,{b=1,cost={{"c",777,7500}},itemID=104295,minReputation={1492,21000},npcID
 mnt(127164,{b=1,cost={{"c",777,100000}},itemID=87774,lvl=10,minReputation={1492,42000}})}}),
 n(237817,{awp=110100,coords={
 [554]={{42.7,56.6},{42.8,52.6},{43.2,54.1}}},g={
-p(4580,{b=1,itemID=221818,npcID=223810,spellID=449626}),
+p(4580,{b=1,itemID=221818,npcID=223810,sourceAchievements={20003},spellID=449626}),
 s(267129,235782,{cost={{"c",1166,800}},f=7,loc=42}),
 s(267090,235743,{cost={{"c",1166,800}},f=7,loc=42}),
 s(267111,235764,{cost={{"c",1166,800}},f=6,loc=42}),
@@ -73517,7 +73513,7 @@ s(267095,235748,{cost={{"c",1166,700}},f=6,loc=46}),
 s(267094,235747,{cost={{"c",1166,800}},f=6,loc=42}),
 s(267107,235760,{cost={{"c",1166,800}},f=5,loc=40}),
 s(267064,235717,{cost={{"c",1166,800}},f=4,loc=40}),
-ill(7322,{b=1,itemID=220765,questID=82000}),
+ill(7322,{b=1,itemID=220765,questID=82000,sourceAchievements={19878}}),
 s(267128,235781,{cost={{"c",1166,800}},f=5,loc=42}),
 s(267106,235759,{cost={{"c",1166,800}},f=5,loc=42}),
 s(267123,235776,{cost={{"c",1166,700}},f=5,loc=46}),
@@ -73525,7 +73521,7 @@ s(267118,235771,{cost={{"c",1166,700}},f=4,loc=46}),
 s(267125,235778,{cost={{"c",1166,700}},f=5,loc=46}),
 s(267068,235721,{cost={{"c",1166,800}},f=5,loc=41}),
 s(267066,235719,{cost={{"c",1166,700}},f=4,loc=44}),
-p(4579,{b=1,itemID=221817,npcID=223785,spellID=449550}),
+p(4579,{b=1,itemID=221817,npcID=223785,sourceAchievements={19877},spellID=449550}),
 s(267124,235777,{cost={{"c",1166,700}},f=5,loc=46}),
 s(267120,235773,{cost={{"c",1166,700}},f=4,loc=46}),
 s(267072,235725,{cost={{"c",1166,800}},f=5,loc=40}),
@@ -73895,7 +73891,7 @@ crit(21254,{achID=7479,id=2})}}),
 ach(7298,{
 crit(20453,{achID=7298,id=1,providers={{"n",62354}}}),
 crit(20456,{achID=7298,id=2,providers={{"n",63617}}}),
-crit(20461,{achID=7298,id=3,providers={{"n",61625}}}),
+crit(20461,{achID=7298,id=3,providers={{"n",62546}}}),
 crit(20454,{achID=7298,id=4,providers={{"n",62380}}}),
 crit(20457,{achID=7298,id=5,providers={{"n",63618}}}),
 crit(20460,{achID=7298,id=6,providers={{"n",62550}}}),
@@ -101009,10 +101005,9 @@ gm(2078,{r=2}),
 gm(2087,{r=2}),
 gm(1877,{r=2,g={
 i(160982,{b=1,f=55,r=2,spellID=276681})}}),
-gm(2121,{awp=80100,providers={{"i",165944}},r=2,g={
+gm(2121,{awp=80100,qss={165944},r=2,g={
 i(165945,{b=1,f=55,r=2,spellID=287033}),
-q(54424,{lvl=50,pb=1,pvp=1,qss={165945},r=2,g={
-i(165946,{r=2})}})}}),
+q(54424,{lvl=50,pb=1,pvp=1,qis={165946},qss={165945},r=2})}}),
 gm(1918,{r=2,g={
 crit(41151,{achID=12896,id=13,r=2})}}),
 gm(1917,{r=2,g={
@@ -101735,7 +101730,7 @@ i(169900,{b=1,cost={{"i",169590,15}},description="The amount of |cff9832dfBurgeo
 i(169899,{b=1,cost={{"i",169590,15}},description="Requires reaching Elite rating in PvP and opening your next weekly chest.\n",f=55,lvl=50,pvp=1,spellID=303835,u=2})}}),
 q(54978,{coords={
 [1161]={{70.4,27}}},isWeekly=1,lvl=50,pvp=1,qgs={135614},r=2,g={
-i(167100,{b=1,modID=53,pvp=1,sym={{"select","symselector",6},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
+i(167100,{b=1,modID=53,pvp=1,sym={{"select","symselector",8},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
 q(52944,{coords={
 [1161]={{56.4,26}}},isWeekly=1,lvl=50,pvp=1,qgs={143559},r=2,g={
 i(167744,{b=1,pvp=1,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}}}),
@@ -102554,7 +102549,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","symselector",7},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",9},{"pop"}},u=2}),
 i(164261,{b=1,pvp=1,r=2,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -103632,7 +103627,7 @@ q(50530,{coords={
 [896]={{24.5,56.6}}},lvl=20,qgs={133098},r=2,sourceQuests={50370}}),
 q(48942,{coords={
 [896]={{46.1,33.4}}},lvl=20,qgs={127715},r=2,sourceQuests={48941}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(48525,{lc={1,"lvl",50},r=2,sourceQuests={48519}}),
 q(48474,{description="You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",lc={1,"lvl",50},r=2,sourceQuests={48475}}),
 q(47969,{description="You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",lc={1,"lvl",50},r=2,sourceQuests={47968}}),
@@ -103641,7 +103636,7 @@ q(48680,{lc={1,"lvl",50},r=2,sourceQuests={48678}}),
 q(50959,{lc={1,"lvl",50},r=2}),
 q(50448,{lc={1,"lvl",50},r=2,sourceQuests={50253}}),
 q(45972,{lc={1,"lvl",50},r=2,sourceQuests={47428}}),
-q(50091,{lc={1,"lvl",50},r=2,sourceQuests={49939}})})}),
+q(50091,{lc={1,"lvl",50},r=2,sourceQuests={49939}})}})}),
 h(-46,{
 o(277333,{coords={
 [896]={{43.3,36.3}}},crs={128181},modelScale=2,questID=49137,g={
@@ -106664,10 +106659,10 @@ i(133510)}}),
 q(50773,{coords={
 [942]={{34.9,47.7}}},lvl=30,qgs={131014},r=2,sourceQuests={50645,50649},g={
 i(158680,{b=1,f=53,spellID=268566})}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(50779,{description="You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",lc={1,"lvl",50},r=2,sourceQuests={50777}}),
 q(51534,{lc={1,"lvl",50},r=2,sourceQuests={51401}}),
-q(50133,{lc={1,"lvl",50},r=2,sourceQuests={49755}})})}),
+q(50133,{lc={1,"lvl",50},r=2,sourceQuests={49755}})}})}),
 h(-46,{
 n(137025,{coords={
 [942]={{29.5,69.6}}},questID=51298,g={
@@ -108380,11 +108375,11 @@ o(325907,{coords={
 [895]={{65.9,66.4}}},g={
 i(168218)}}),
 crit(46307,{achID=13700,awp=80200,id=5,r=1})}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(49300,{lc={1,"lvl",50},r=2,sourceQuests={48366}}),
 q(49739,{description="You must accept |cffffff9aFor Kul Tiras!|r in order for this Bonus Objective to become active.",lc={1,"lvl",50},r=2,sourceQuests={49736}}),
 q(50009,{lc={1,"lvl",50},r=2,sourceQuests={50026}}),
-q(49529,{description="You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",lc={1,"lvl",50},r=2,sourceQuests={49897}})})}),
+q(49529,{description="You must accept |cffffff00Making Mysteries|r in order for this Bonus Objective to become available.",lc={1,"lvl",50},r=2,sourceQuests={49897}})}})}),
 h(-46,{
 n(132182,{awp=80001,coords={
 [895]={{75.2,78.4}}},questID=50156,g={
@@ -109159,10 +109154,9 @@ gm(2078,{r=1}),
 gm(2087,{r=1}),
 gm(1878,{r=1,g={
 i(160983,{b=1,f=55,r=1,spellID=276682})}}),
-gm(2122,{awp=80100,providers={{"i",166242}},r=1,g={
+gm(2122,{awp=80100,qss={166242},r=1,g={
 i(166243,{b=1,f=55,r=1,spellID=287115}),
-q(54447,{lvl=50,pb=1,pvp=1,qss={166243},r=1,g={
-i(166244,{r=1})}})}}),
+q(54447,{lvl=50,pb=1,pvp=1,qis={166244},qss={166243},r=1})}}),
 gm(1956,{r=1,g={
 crit(41108,{achID=12867,id=13,r=1})}}),
 gm(1955,{r=1,g={
@@ -110558,7 +110552,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","symselector",7},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",9},{"pop"}},u=2}),
 i(164262,{b=1,pvp=1,r=1,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -111465,7 +111459,7 @@ q(48823,{coords={
 i(152727,{spellID=252718})}}),
 q(54145,{coords={
 [863]={{39.5,27}}},lvl=50,qgs={146824},r=1,sourceQuests={53779}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(48934,{lc={1,"lvl",50},r=1,sourceQuests={47247,47491}}),
 q(47996,{lc={1,"lvl",50},r=1,sourceQuests={47924}}),
 q(48093,{description="This Bonus Objective pops up after accepting |cffffff00A Krag'wa's Chosen|r.",lc={1,"lvl",50},r=1}),
@@ -111475,7 +111469,7 @@ i(157029)}}),
 q(48852,{lc={1,"lvl",50},r=1,sourceQuests={48854}}),
 q(47756,{lc={1,"lvl",50},r=1,sourceQuests={47631}}),
 q(51689,{lc={1,"lvl",50},r=1,sourceQuests={49125}}),
-q(49406,{lc={1,"lvl",50},r=1,sourceQuests={48800,49078}})})}),
+q(49406,{lc={1,"lvl",50},r=1,sourceQuests={48800,49078}})}})}),
 h(-46,{
 n(133505,{coords={
 [863]={{53,72.1}}},description="Light all 5 braziers in the area to summon.",questID=50339}),
@@ -113045,9 +113039,9 @@ s(92300,155431,{b=1,f=23,r=1}),
 s(97179,161290,{b=1,f=24,r=2}),
 s(97193,161304,{b=1,f=23,r=2}),
 s(97190,161301,{b=1,f=23,r=2})}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(47647,{lc={1,"lvl",50},r=1,sourceQuests={51054}}),
-q(50805,{lc={1,"lvl",50},r=1,sourceQuests={50751}})})}),
+q(50805,{lc={1,"lvl",50},r=1,sourceQuests={50751}})}})}),
 h(-46,{
 n(135852,{coords={
 [864]={{49.78,79.4}}},questID=51058,g={
@@ -114715,13 +114709,13 @@ crit(40036,{achID=12479,id=5,r=1})}),
 crit(44207,{achID=12481,id=2,r=1})}}),
 q(54756,{lvl=10,qss={166507},r=1}),
 q(54757,{lvl=10,qgs={149006},r=1,sourceQuests={54756}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Tortollan Endeavor) can scale Kul Tiras and Zandalar up to the current level cap. While one is active, these Bonus Objectives can be completed again above level 50.",g={
 q(47527,{lc={1,"lvl",50},r=1}),
 q(47797,{coords={
 [862]={{73.6,26.3}}},lc={1,"lvl",50},r=1,sourceQuests={47737}}),
 q(49918,{lc={1,"lvl",50},r=1}),
 q(50178,{lc={1,"lvl",50},r=1}),
-q(49315)})}),
+q(49315)}})}),
 h(-46,{
 n(129961,{coords={
 [862]={{80.88,21.31}}},questID=50280,g={
@@ -119177,7 +119171,7 @@ q(65775,{awp=90200,coords={
 h(-58,{pvp=1,g={
 n(164095,{coords={
 [1670]={{36,58.6}}},pvp=1,g={
-h(-221,{pvp=1,symselector=8,g={
+h(-221,{pvp=1,symselector=10,g={
 rfl(202,{b=1,cost={{"c",1792,1500}},itemID=183246,pvp=1,spellID=342040}),
 rfl(67,{b=1,c={3},cost={{"c",1792,1500}},itemID=183252,pvp=1,spellID=342040}),
 rfl(8,{b=1,c={8},cost={{"c",1792,1500}},itemID=183268,pvp=1,spellID=342040}),
@@ -119792,7 +119786,7 @@ faction(2464),
 h(-58,{
 n(162447,{coords={
 [1565]={{59.6,52.9}}},g={
-i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 h(-167,{
 i(187871,{awp=90105,b=1,cost={{"c",1885,25},{"c",1813,15000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
 i(187881,{awp=90105,b=1,cost={{"c",1885,50},{"c",1813,25000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
@@ -122169,7 +122163,7 @@ crit(50048,{achID=14311,id=2})}}),
 o(353876,{coords={
 [1533]={{57.2,92.7}}},isDaily=1,questID=60882}),
 o(354289,{coords={
-[1533]={{35.8,48.1}}},cost={{"i",180536,1}},crs={170009},description="The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure. After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",questID=61053,g={
+[1533]={{35.8,48.1}}},cost={{"i",180536,1}},crs={159610,170009},description="The |cff0070ddBroken Kyrian Flute|r drops from |cFFFFFFFFEtherwyrms|r across Bastion.\nAlthough they do drop from |cFFFFFFFFUnsettled Etherwyrms|r near the treasure, the best place to farm the flute is killing |cFFFFFFFFAgitated Etherwyrms|r in the cave below |cFFFFFFFFForgefire Outputs|r (55.7, 42.9). After you've found the flute, use the |cFFFFFFFFWindsmith's Tools|r at the forge to restore it.",questID=61053,g={
 i(180064,{b=1,spellID=329289}),
 crit(50055,{achID=14311,id=9})}})}),
 h(-58,{
@@ -123700,7 +123694,7 @@ i(187613,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 i(186984,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 cq(64339,{b=1,cost={{"c",1931,100}},itemID=186714,minReputation={2472,2},spellID=356208}),
 cq(64307,{b=1,cost={{"c",1931,800}},itemID=187145,minReputation={2472,2},spellID=356226}),
-i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 i(186718,{b=1,cost={{"c",1931,50}},minReputation={2472,3}}),
 i(186470,{b=1,cost={{"c",1931,2500}},minReputation={2472,4},spellID=353824,g={
 r(343676,{learnedAt=200,minReputation={2472,4},requireSkill=171,skillID=2750}),
@@ -123732,7 +123726,7 @@ i(187077,{cost={{"c",1828,300}},spellID=355776}),
 i(191031,{awp=90200,cost={{"c",1906,300}},spellID=368867}),
 i(187532,{b=1,cost={{"c",1767,2500}},lvl=60,spellID=358498}),
 i(187134,{b=1,cost={{"c",1906,1000}},f=55,spellID=356613}),
-i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","symselector",8},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
+i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
 n(179321,{coords={
 [1961]={{63.5,23.3}}},g={
 i(188156,{awp=90105,b=2,cost={{"c",1767,750}},f=55,lvl=60,minReputation={2470,3000},spellID=361698,sym={{"sub","korthian_armaments","INVTYPE_FINGER"},{"sub","korthian_armaments","INVTYPE_TRINKET"}}}),
@@ -124914,8 +124908,8 @@ n(173003,{coords={
 [1536]={{50.6,53.4}}},g={
 i(183112,{b=1,cost={{"i",163036,250}},minReputation={2410,0},spellID=340714}),
 i(190644,{awp=90200,b=1,cost={{"c",2009,10000}},lvl=60,minReputation={2410,0},questID=70704,sourceAchievements={14834},spellID=367898,sym={{"select","symselector",1},{"pop"}},type="ihqt"}),
-de(28559,{cost={{"c",1813,300}},itemID=284498,minReputation={2410,3000},spellID=1316199}),
-de(28546,{cost={{"c",1813,300}},itemID=284506,minReputation={2410,3000},spellID=1316207}),
+de(28559,{awp=120105,cost={{"c",1813,300}},itemID=284498,minReputation={2410,3000},spellID=1316199}),
+de(28546,{awp=120105,cost={{"c",1813,300}},itemID=284506,minReputation={2410,3000},spellID=1316207}),
 s(115827,184741,{b=1,f=4,loc=44,lvl=60,minReputation={2410,9000}}),
 s(115826,184740,{b=1,f=7,loc=44,lvl=60,minReputation={2410,9000}}),
 i(217596,{awp=100206,b=1,c={6},f=111,lvl=50,minReputation={2410,9000},spellID=440346}),
@@ -135512,7 +135506,7 @@ q(70368,{coords={
 [2023]={{71.8,78.7}}},description="This quest requires that you have no primary professions learned. Both versions complete at the same time.",lvl=10,qgs={192498}}),
 q(70370,{coords={
 [2023]={{71.8,78.7}}},description="This quest requires that you have at least one open primary profession slot. Both versions complete at the same time.",lvl=10,qgs={192498}}),
-h(-14,{
+h(-14,{description="Housing Endeavors (e.g. the Maruukai Endeavor) can scale Ohn'ahran Plains up to the current level cap. While one is active, the level-locked Bonus Objectives here can be completed again.",g={
 q(69968,{coords={
 [2023]={{59.9,66.9}}},qgs={193669}}),
 q(69851,{coords={
@@ -135530,7 +135524,7 @@ q(66421,{coords={
 q(66970,{coords={
 [2023]={{26.1,34.2}}},lvl=62,qgs={191354}}),
 q(72364,{coords={
-[2023]={{30.3,62.1}}},isDaily=1,qgs={193140}})})}),
+[2023]={{30.3,62.1}}},isDaily=1,qgs={193140}})}})}),
 h(-46,{
 n(193168,{coords={
 [2023]={{72.5,56.2}}},isDaily=1,questID=73903}),
@@ -146270,7 +146264,7 @@ i(209837,{awp=100200,b=1,lvl=70,spellID=423532}),
 i(209839,{awp=100200,b=1,lvl=70,spellID=423537}),
 i(217243,{awp=100206,b=1,lvl=70,spellID=439060}),
 i(217242,{awp=100206,b=1,lvl=70,spellID=439058}),
-i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","symselector",9}},g={
+i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","symselector",11}},g={
 i(202172,{b=1})}}),
 flt(4,{
 s(179951,191989,{b=1,f=4,loc=45,lvl=60}),
@@ -165653,7 +165647,10 @@ q(91785,{coords={
 q(92583,{coords={
 [2413]={{71.8,64.4}}},isWorldQuest=1}),
 q(93046,{coords={
-[2413]={{31.3,85.5}}},isWorldQuest=1,qis={256138,256143,256144,256145}}),
+[2413]={{31.3,85.5}}},isWorldQuest=1,qis={256138,256143,256144},g={
+o(587413,{coords={
+[2413]={{34.8,85.5}}},g={
+i(256145)}})}}),
 q(91927,{coords={
 [2413]={{61.2,56.6}}},isWorldQuest=1}),
 q(91937,{coords={
@@ -167433,7 +167430,10 @@ q(93648,{coords={
 o(615902,{
 i(260417)})}}),
 q(93649,{coords={
-[2512]={{29.4,50.4}}},isWorldQuest=1,qis={260424,269918}}),
+[2512]={{29.4,50.4}}},isWorldQuest=1,qis={269918},g={
+o(642119,{coords={
+[2512]={{28,52.4},{28.7,51.9},{28.9,50.3},{29.2,52.5},{29.5,51.6},{30.5,48.2}}},g={
+i(260424)}})}}),
 q(96329,{coords={
 [2512]={{52.2,43.4}},
 [2642]={{65.9,23.5}}},isWorldQuest=1}),
