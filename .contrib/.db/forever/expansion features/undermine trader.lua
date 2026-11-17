@@ -64,6 +64,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							isDaily = true,
 						},{
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
+							hqt(83937, name(HEADERS.NPC, 9019)),	-- Emperor Dagran Thaurissan
 						}),
 					}),
 					inst(237, {	-- The Temple of Atal'hakkar
