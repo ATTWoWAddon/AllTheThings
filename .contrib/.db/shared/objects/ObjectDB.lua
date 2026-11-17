@@ -305105,10 +305105,13 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Blasting Supplies",
 			es = "Suministros explosivos",
+			mx = "Suministros explosivos",
 			de = "Sprengvorräte",
 			fr = "Fournitures pour dynamitage",
+			pt = "Suprimentos de Demolição",
 			ru = "Припасы для взрывов",
 			ko = "발파용 보급품",
+			tw = "爆炸補給品",
 		},
 	},
 	[403081] = {
