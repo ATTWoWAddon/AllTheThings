@@ -568,6 +568,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					}),
 					i(19128),	-- Seared Mail Vest
 					i(19127),	-- Charred Leather Tunic
+					i(270113, {	-- Singed Cloth Robe
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(7722, {	-- What the Flux?
