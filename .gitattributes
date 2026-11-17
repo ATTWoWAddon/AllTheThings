@@ -229,3 +229,7 @@ docs export-ignore
 # Preserve generated shared Lua outputs in CRLF.
 "/.contrib/.db/shared/constants/headerIDs.lua" text eol=crlf
 "/.contrib/.db/shared/objects/ObjectDB.lua" text eol=crlf
+
+# Normalize Parser input configuration files to LF.
+/.contrib/.db/*.config text eol=lf
+/.contrib/.db/**/*.config text eol=lf

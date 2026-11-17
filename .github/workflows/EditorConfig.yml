@@ -248,3 +248,9 @@ jobs:
         shell: pwsh
         run: |
           & ./.github/scripts/Check-EditorConfig.ps1 -Group shared-strings-other -VerboseChecker
+
+      - name: Check Parser input configs
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group parser-config -VerboseChecker

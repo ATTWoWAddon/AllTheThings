@@ -10,7 +10,8 @@ param(
 		'standard-database-core', 'standard-dungeons', 'standard-delves',
 		'standard-zones', 'standard-expansion-features', 'standard-other',
 		'shared-core', 'shared-headers', 'shared-structures',
-		'shared-strings-settings', 'shared-strings-ui', 'shared-strings-other'
+		'shared-strings-settings', 'shared-strings-ui', 'shared-strings-other',
+		'parser-config'
 	)]
 	[string]$Group,
 	[switch]$VerboseChecker
@@ -249,6 +250,19 @@ $groups = @{
 		)
 		Required = @('.contrib/.db/shared/lib/Strings/AllTheThings/ACCOUNT_MANAGEMENT.lua')
 		Minimum = 1
+	}
+
+	'parser-config' = @{
+		Pathspecs = @(
+			':(glob).contrib/.db/*.config',
+			':(glob).contrib/.db/**/*.config'
+		)
+		Required = @(
+			'.contrib/.db/shared/.config/root.config',
+			'.contrib/.db/shared/.config/debug.config',
+			'.contrib/.db/standard/.config/retail/retail.config'
+		)
+		Minimum = 23
 	}
 
 }
