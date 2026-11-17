@@ -2251,3 +2251,7 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(6842),	-- <UNUSED> - completes with 'Umber, Archivist' (6844)
+});
