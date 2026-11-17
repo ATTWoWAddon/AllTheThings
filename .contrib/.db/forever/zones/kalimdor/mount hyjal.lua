@@ -149,6 +149,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(92612, {	-- Aid from Moonglade
+				sourceQuest = 96131,	-- An Oldstone But An Old Friend
 				qg = 256222,	-- Ketharas
 				qi = 272925,	-- Ketharas' Note (PQI!)
 				coord = { 73.2, 81.8, MAP.MOUNT_HYJAL },
@@ -166,6 +167,14 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 						provider = { "n", 264306 },	-- Awakened Fel Ash Slime
 					}),
 				},
+			}),
+			q(96131, {	-- An Oldstone But An Old Friend
+				sourceQuest = 96321,	-- The Dying God
+				qg = 257753,	-- Curious Crow
+				qi = 273845,	-- Faintly Glowing Staff (PQI!)
+				coord = { 48.2, 85.8, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 54,
 			}),
 			q(90487, {	-- Ancient Allies
 				qg = 256222,	-- Ketharas
