@@ -1945,3 +1945,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(96452, {	-- TODO: unknown trigger; completed at 21.7, 56.9 in Mount Hyjal (Contributor Report)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
