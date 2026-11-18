@@ -710,7 +710,7 @@ instanceroot(743, applyclassicphase(PHASE_FIVE, {	-- Ruins of Ahn'Qiraj
 				i(21498),	-- Qiraji Sacrificial Dagger
 				i(21499),	-- Vestments of the Shifting Sands
 				i(21502),	-- Sand Reaver Wristguards
-				i(21501),	-- Toughened Silithis Hide Gloves
+				i(21501),	-- Toughened Silithid Hide Gloves
 				i(21503),	-- Belt of the Sand Reaver
 				i(21500),	-- Belt of the Inquisition
 			},
@@ -742,7 +742,7 @@ instanceroot(743, applyclassicphase(PHASE_FIVE, {	-- Ruins of Ahn'Qiraj
 						15385,	-- Colonel Zarran
 					},
 					groups = {
-						i(21806),	-- Gavel of Qiraji Athority
+						i(21806),	-- Gavel of Qiraji Authority
 						i(21809),	-- Fury of the Forgotten Swarm
 						i(21810),	-- Treads of the Wandering Nomad
 					},
@@ -795,11 +795,11 @@ instanceroot(743, applyclassicphase(PHASE_FIVE, {	-- Ruins of Ahn'Qiraj
 			groups = {
 				i(21471),	-- Talon of Furious Concentration
 				i(21455),	-- Southwind Helm
-				i(21472),	-- Dustwind Turbin
+				i(21472),	-- Dustwind Turban
 				i(21474),	-- Chitinous Shoulderguards
 				i(21468),	-- Mantle of Maz'Nadir
 				i(21470),	-- Cloak of the Savior
-				i(21467),	-- Thick Silithis Chestguard
+				i(21467),	-- Thick Silithid Chestguard
 				i(21469),	-- Gauntlets of Southwind
 				i(21479),	-- Gauntlets of the Immovable
 				i(21475),	-- Legplates of the Destroyer

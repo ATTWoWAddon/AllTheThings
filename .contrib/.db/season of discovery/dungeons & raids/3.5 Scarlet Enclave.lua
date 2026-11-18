@@ -263,7 +263,7 @@ instanceroot(2856, applyclassicphase(SOD_PHASE_EIGHT, {	-- Scarlet Enclave
 							i(239529),	-- Dawnstalker Breastplate
 							i(239530),	-- Dawnstalker Greaves
 							i(239531),	-- Dawnstalker Gauntlets
-							i(239532),	-- Dawnstalker Viso
+							i(239532),	-- Dawnstalker Visor
 							-- Ranged
 							i(239537),	-- Dawnstalker Boots
 							i(239538),	-- Dawnstalker Girdle

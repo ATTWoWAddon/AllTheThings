@@ -1711,7 +1711,7 @@ instanceroot(228, {	-- Blackrock Depths
 					applyclassicphase(SOD_PHASE_FOUR, i(227981, {	-- Dreadforge Retaliatior
 						timeline = { ADDED_1_15_3 },
 					})),
-					i(11931, {	-- Dreadforge Retaliatior
+					i(11931, {	-- Dreadforge Retaliator
 						timeline = { REMOVED_1_15_3 },
 					}),
 					applyclassicphase(SOD_PHASE_FOUR, i(227982, {	-- Guiding Stave of Wisdom
