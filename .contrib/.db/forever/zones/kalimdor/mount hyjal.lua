@@ -1956,6 +1956,20 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(273828, {	-- Recoiling Gnarlybark Staff
+				crs = {
+					264570,	-- Blackthorne Adept
+					275174,	-- Blackthorne Priest
+				},
+			}),
+			i(273832, {	-- Wicked Ritualist's Kris
+				crs = {
+					249551,	-- Blackthorne Cultist
+					275173,	-- Blackthorne Outrunner
+				},
+			}),
+		}),
 	},
 });
 
