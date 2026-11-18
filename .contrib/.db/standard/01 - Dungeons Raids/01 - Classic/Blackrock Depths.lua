@@ -2691,7 +2691,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_FIVE, i(22208)),	-- Lavastone Hammer
 						i(11935),	-- Magmus Stone
 						i(11746),	-- Golem Skull Helm
-						i(151411, {	-- Molten-Warden Leggings
+						i(151411, {	-- Molten-Warder Leggings
 							timeline = { ADDED_7_3_0 },
 						}),
 						i(22275),	-- Firemoss Boots

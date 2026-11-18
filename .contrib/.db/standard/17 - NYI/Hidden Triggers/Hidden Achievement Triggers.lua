@@ -3472,9 +3472,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40652),	-- Goldie Baronbottom kills (Normal Cinderbrew Meadery)
 			ach(40653),	-- Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
 			ach(40654),	-- Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
-			ach(40657),	-- Prioress Murrapray kills (Normal Priory of the Sacred Flame)
-			ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
-			ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
+			ach(40657),	-- Prioress Murrpray kills (Normal Priory of the Sacred Flame)
+			ach(40658),	-- Prioress Murrpray kills (Heroic Priory of the Sacred Flame)
+			ach(40659),	-- Prioress Murrpray kills (Mythic Priory of the Sacred Flame)
 			ach(40706),	-- Izo, the Grand Splicer kills (Normal City of Threads)
 			ach(40709),	-- Izo, the Grand Splicer kills (Heroic City of Threads)
 			ach(40710),	-- Izo, the Grand Splicer kills (Mythic City of Threads)
@@ -3601,14 +3601,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41308),	-- Rik Reverb (Normal Liberation of Undermine)
 			ach(41309),	-- Rik Reverb (Heroic Liberation of Undermine)
 			ach(41310),	-- Rik Reverb (Mythic Liberation of Undermine)
-			ach(41311),	-- Stix Bunkumker (Raid Finder Liberation of Undermine)
-			ach(41312),	-- Stix Bunkumker (Normal Liberation of Undermine)
-			ach(41313),	-- Stix Bunkumker (Heroic Liberation of Undermine)
-			ach(41314),	-- Stix Bunkumker (Mythic Liberation of Undermine)
-			ach(41315),	-- Sprocketmonger Locknstock (Raid Finder Liberation of Undermine)
-			ach(41316),	-- Sprocketmonger Locknstock (Normal Liberation of Undermine)
-			ach(41317),	-- Sprocketmonger Locknstock (Heroic Liberation of Undermine)
-			ach(41318),	-- Sprocketmonger Locknstock (Mythic Liberation of Undermine)
+			ach(41311),	-- Stix Bunkjunker (Raid Finder Liberation of Undermine)
+			ach(41312),	-- Stix Bunkjunker (Normal Liberation of Undermine)
+			ach(41313),	-- Stix Bunkjunker (Heroic Liberation of Undermine)
+			ach(41314),	-- Stix Bunkjunker (Mythic Liberation of Undermine)
+			ach(41315),	-- Sprocketmonger Lockenstock (Raid Finder Liberation of Undermine)
+			ach(41316),	-- Sprocketmonger Lockenstock (Normal Liberation of Undermine)
+			ach(41317),	-- Sprocketmonger Lockenstock (Heroic Liberation of Undermine)
+			ach(41318),	-- Sprocketmonger Lockenstock (Mythic Liberation of Undermine)
 			ach(41319),	-- The One-Armed Bandit (Raid Finder Liberation of Undermine)
 			ach(41320),	-- The One-Armed Bandit (Normal Liberation of Undermine)
 			ach(41321),	-- The One-Armed Bandit (Heroic Liberation of Undermine)
@@ -3739,7 +3739,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41987),	-- Highest Kill Score
 			ach(41988),	-- Highest Time Score
 			ach(41989),	-- Highest Survival Score
-			ach(41990),	-- Total Killl Score
+			ach(41990),	-- Total Kill Score
 			ach(41991),	-- Total Gears Grabbed
 			ach(41992),	-- Total Goblin Zappers Killed
 			ach(41993),	-- Total Pyro Machines Destroyed

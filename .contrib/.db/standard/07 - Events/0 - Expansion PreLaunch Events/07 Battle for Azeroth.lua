@@ -550,7 +550,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						i(162782),	-- Gravewalker's Bindings
 						i(162775),	-- Gravewalker's Chestplate
 						i(162777),	-- Gravewalker's Clutches
-						i(162778),	-- Gravewalker's Facegaurd
+						i(162778),	-- Gravewalker's Faceguard
 						i(162779),	-- Gravewalker's Greaves
 						i(162781),	-- Gravewalker's Plated Girdle
 						i(163010),	-- Gravewalker's Runeblade

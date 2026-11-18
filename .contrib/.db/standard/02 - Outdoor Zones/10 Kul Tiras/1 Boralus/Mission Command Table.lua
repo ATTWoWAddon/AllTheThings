@@ -10,7 +10,7 @@ maproot(KUL_TIRAS, BORALUS, {
 		}, {
 			modelScale = 2,
 			groups = {
-				ach(12898, { _doautomation = true }),	-- Azeroth at War: After Lordaron
+				ach(12898, { _doautomation = true }),	-- Azeroth at War: After Lordaeron
 				ach(12899, { _doautomation = true }),	-- Azeroth at War: Kalimdor on Fire
 				ach(12896, { _doautomation = true }),	-- Azeroth at War: The Barrens
 				i(POLISHED_PET_CHARM, { races = IGNORED_VALUE }),	-- Polished Pet Charm

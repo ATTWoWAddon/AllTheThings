@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures,
 						ach(9133),	-- On a Mission
 						ach(9134),	-- On a Few Missions
 						ach(9138),	-- On a Lot of Missions
-						ach(9139),	-- On a Massive Numbeer of Missions
+						ach(9139),	-- On a Massive Number of Missions
 						ach(9140),	-- On A Metric Ton of Missions
 						ach(9146),	-- Patrolling Mission Specialist
 						ach(9523, {	-- Patrolling Draenor
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures,
 									i(114378),	-- Robes of Hooded Nightmares
 									i(114375),	-- Chestguard of Falling Leaves
 									i(114376),	-- Element-Binder Chestguard
-									i(114377),	-- Brestplate of Grievous Storms
+									i(114377),	-- Breastplate of Grievous Storms
 								},
 							}),
 							i(114057, {	-- Munificent Bracers
@@ -606,7 +606,7 @@ root(ROOTS.ExpansionFeatures,
 							i(124583),	-- Felcast Trousers
 						}),
 						i(127779, {	-- Baleful Cloth Treads
-							i(124571),	-- Felcast Sandles
+							i(124571),	-- Felcast Sandals
 						}),
 						i(127794, {	-- Baleful Leather Hood
 							i(124580),	-- Bladefang Hood

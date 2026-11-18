@@ -94,7 +94,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 				groups = {
 					i(52923),	-- Rocket-Fuel Soaked Bracers
 					i(52968),	-- Orbital Leggings
-					i(131845),	-- Oribital Greaves
+					i(131845),	-- Orbital Greaves
 					i(52939),	-- Cage-Launcher's Plate
 				},
 			}),

@@ -500,7 +500,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						i(236904, {	-- Void-Touched Lantern
 							cost = { { "c", DISPLACED_CORRUPTED_MEMENTOS, 500 } },
 						}),
-						i(236888, {	-- Void-Touched Occular
+						i(236888, {	-- Void-Touched Ocular
 							cost = { { "c", DISPLACED_CORRUPTED_MEMENTOS, 500 } },
 						}),
 						i(236891, {	-- Void-Touched Polearm

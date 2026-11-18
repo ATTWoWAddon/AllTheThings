@@ -41,7 +41,7 @@ local EncounterToLoot = {
 		i(159240),	-- Rixxa's Sweat-Wicking Cuffs
 		i(159305),	-- Corrosive Handler's Gloves
 		i(158341),	-- Chemical Blaster's Legguards
-		i(159451),	-- Leadplate Leegguards
+		i(159451),	-- Leadplate Legguards
 		i(159235),	-- Deranged Alchemist's Slippers
 	},
 	[MOGUL] = {
@@ -293,7 +293,7 @@ local INSTANCE_GROUPS = {
 		}),
 		BossOnly(RIXXA),
 		BossOnly(MOGUL, {
-			ach(12846),	-- Mythic: The MOTHERELODE!!
+			ach(12846),	-- Mythic: The MOTHERLODE!!
 			ach(13006),	-- Mythic: The MOTHERLODE!! Guild Run
 			ach(12854),	-- Ready for Raiding VI
 			i(161135),	-- Schematic: Mecha-Mogul Mk2 (RECIPE!)

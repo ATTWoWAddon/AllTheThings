@@ -780,7 +780,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 						i(160440),	-- Unsanctified Storm Silver Ore (QI!)
 					},
 				}),
-				q(52014, {	-- Ritualistic Prepartions [H]
+				q(52014, {	-- Ritualistic Preparations [H]
 					description = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
 					provider = { "n", 122694 },	-- Secott the Goldsmith
 					coords = {

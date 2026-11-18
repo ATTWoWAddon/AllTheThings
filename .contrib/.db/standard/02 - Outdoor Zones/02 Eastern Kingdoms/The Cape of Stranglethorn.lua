@@ -543,7 +543,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 					i(61572),	-- Belt of Supremacy
 					i(61574),	-- Sea Baron's Breastplate
 					i(61576),	-- Pirate's Musket
-					i(131563, {	-- Cord of Supremecy
+					i(131563, {	-- Cord of Supremacy
 						timeline = { ADDED_7_0_3 },
 					}),
 				},
@@ -1428,7 +1428,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 					i(61543),	-- Dask's Cloak
 					i(61544),	-- Leggings with Mysterious Stains
 					i(61545),	-- Glass Encrusted Boots
-					i(131608, {	-- Pantaloons with Myserious Stains
+					i(131608, {	-- Pantaloons with Mysterious Stains
 						timeline = { ADDED_7_0_3 },
 					}),
 				},

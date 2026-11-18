@@ -259,21 +259,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						i(193876, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Pattern: Snowball Makers (RECIPE!)
 						i(198102, { cost = { { "c", DRAGON_SUPPLIES, 400 } } }),	-- Recipe: Impossibly Sharp Cutting Knife (RECIPE!)
 					}, {	-- RENOWN 16 --
-						i(199855, {	-- Burgandy Fisherman's Pack
+						i(199855, {	-- Burgundy Fisherman's Pack
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },
 								{ "i", ALIERON_SEAMOTH, 5 },
 							},
 						}),
-						i(199863, {	-- Burgandy Tuskarr Backpack
+						i(199863, {	-- Burgundy Tuskarr Backpack
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },
 								{ "i", RESILIENT_LEATHER, 10 },
 							},
 						}),
-						i(199859, {	-- Burgandy Tuskarr Traders Pack
+						i(199859, {	-- Burgundy Tuskarr Trader's Pack
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 500 },
 								{ "i", TALLSTRIDER_SINEW, 5 },

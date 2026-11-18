@@ -352,7 +352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							provider = { "i", 197347 },	-- Renewed Proto-Drake: Silver and Blue Armor (MM!)
 						}),
 						crit(56252, {	-- Silver and Purple Armor
-							provider = { "i", 197350 },	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+							provider = { "i", 197350 },	-- Renewed Proto-Drake: Silver and Purple Armor (MM!)
 						}),
 						crit(56253, {	-- Gold and Red Armor
 							provider = { "i", 197351 },	-- Renewed Proto-Drake: Gold and Red Armor (MM!)

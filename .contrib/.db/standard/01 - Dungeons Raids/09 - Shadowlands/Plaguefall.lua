@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(183486),	-- Well-Honed Instincts
 						-- Items
 						i(178762),	-- Blightborne Chain Legguards
-						i(178760),	-- Disgested Interrogator's Gaze
+						i(178760),	-- Digested Interrogator's Gaze
 						i(178773),	-- Plague Handler's Greathelm
 						i(178770),	-- Slimy Consumptive Organ
 						i(178756),	-- Stradama's Misplaced Slippers

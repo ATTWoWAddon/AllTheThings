@@ -89,7 +89,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					},
 				}),
 				ach(19789),	-- Relic Rescuer
-				ach(19685, {	-- Tenured Archiviest
+				ach(19685, {	-- Tenured Archivist
 					minReputation = { FACTION_AZEROTHIAN_ARCHIVES, 5 },
 				}),
 				ach(19788),	-- Tome Comber

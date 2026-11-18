@@ -126,7 +126,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 					i(214008),	-- Gloves of the Dynast
 					i(214006),	-- Leggings of the Dynast
 					i(214005),	-- Mantle of the Dynast
-					i(214004),	-- Sash of the Dynastr
+					i(214004),	-- Sash of the Dynast
 					i(214009),	-- Slippers of the Dynast
 					-- i(220980),	-- Vest of the Dynast (does this drop? Gold 27.05.2024). Remove	-- if it can drop
 					i(214010),	-- Vestment of the Dynast

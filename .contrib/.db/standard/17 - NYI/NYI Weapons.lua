@@ -372,7 +372,7 @@ root(ROOTS.NeverImplemented, {
 					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
 					i(189337),	-- 10.0 Zone Uncommon Template <Descriptor> Gun
 					i(201232),	-- Bonedust Spreader
-					i(200176),	-- Missingway Hand Canno
+					i(200176),	-- Missingway Hand Cannon
 				}),
 			}),
 		}),

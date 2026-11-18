@@ -92,7 +92,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						groups = {
 							i(249625),	-- Elder Mossveil
 							i(249624),	-- Osseoclad Paledrape
-							i(249628),	-- Rampant Bramblecloack
+							i(249628),	-- Rampant Bramblecloak
 							i(249619),	-- Sprawling Mycoshroud
 						},
 					}),

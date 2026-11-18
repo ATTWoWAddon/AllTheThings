@@ -115,7 +115,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(138155),	-- Felforged Helmet
 				i(138157),	-- Felforged Pauldrons
 				i(138152),	-- Felforged Chestplate
-				i(138159),	-- Felforged Vambracers
+				i(138159),	-- Felforged Vambraces
 				i(138153),	-- Felforged Gauntlets
 				i(138154),	-- Felforged Waistplate
 				i(138156),	-- Felforged Legplates

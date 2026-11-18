@@ -15,7 +15,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				{ 58.42, 70.63, HALL_OF_CHRONICLERS },
 			},
 			groups = {
-				ach(12869, {	-- Azeroth at War: After Lordaron
+				ach(12869, {	-- Azeroth at War: After Lordaeron
 					_doautomation = true,
 					groups = { i(245467, { timeline = { ADDED_11_2_7 } }) },	-- Lordaeron Banded Crate (DECOR!)
 				}),

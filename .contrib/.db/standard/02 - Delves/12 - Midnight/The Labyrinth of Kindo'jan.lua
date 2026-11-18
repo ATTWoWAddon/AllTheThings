@@ -75,7 +75,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				}),
 				ach(63727),	-- Treasures Upon Treasures (10 Oddities)
 				ach(63728),	-- A Few More Can't Hurt (50 Oddities)
-				ach(63722, {	-- Who's Labyrinth?
+				ach(63722, {	-- Whose Labyrinth?
 					title(799),	-- Maze Runner <Name>
 				}),
 			}),

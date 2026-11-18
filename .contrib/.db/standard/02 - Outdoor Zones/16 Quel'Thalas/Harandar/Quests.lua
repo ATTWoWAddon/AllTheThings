@@ -477,7 +477,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 					coord = { 32.0, 61.4, MAP.MIDNIGHT.HARANDAR },
 					groups = {
 						i(256213),	-- Alndust-Touched Gloves
-						i(256197),	-- Gauntlets of the Innoculated
+						i(256197),	-- Gauntlets of the Inoculated
 						i(256205),	-- Hopeful Haranir's Grasps
 						i(256221),	-- Rallied Haranir's Mitts
 					},
@@ -523,7 +523,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 						i(256214),	-- Boots of Infinite Gravity
 						i(256222),	-- Hazy Penumbral Treads
 						i(256206),	-- Neverending Vortex Stompers
-						i(256198),	-- Warbots of the Colossal Behemoths
+						i(256198),	-- Warboots of the Colossal Behemoths
 					},
 				}),
 				q(86890, {	-- Tell the People What You Have Seen

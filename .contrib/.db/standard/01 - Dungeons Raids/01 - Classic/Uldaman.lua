@@ -796,10 +796,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(7670),	-- Shattered Necklace Sapphire
 					i(9416),	-- Grimlock's Charge
 					i(9415),	-- Grimlock's Tribal Vestments
-					i(151402, {	-- Grimlock's Jagged Wristguards
+					i(151402, {	-- Grimlok's Jagged Wristguards
 						timeline = { ADDED_7_3_0 },
 					}),
-					i(132735, {	-- Grimlock's Chain Chaps
+					i(132735, {	-- Grimlok's Chain Chaps
 						timeline = { ADDED_7_0_3},
 					}),
 					i(9414),	-- Oilskin Leggings

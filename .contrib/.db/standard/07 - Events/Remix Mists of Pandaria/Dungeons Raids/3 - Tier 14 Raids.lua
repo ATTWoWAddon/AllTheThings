@@ -463,7 +463,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 					i(215638),	-- Fist of Shek'zeer
 					i(215729),	-- Galvanized Stormcrusher
 					i(215853),	-- Gao-Rei, Staff of the Protector
-					i(215634),	-- Gara'kal, Claw of the Spiribinder
+					i(215634),	-- Gara'kal, Claw of the Spiritbinder
 					i(216565),	-- Gaze of the Ancient (MSV HC)
 					i(215698),	-- Grand Imperial Rifle (HoF HC, player confirmed as HC drop)
 					i(215969),	-- Greatsword of the Iron Legion

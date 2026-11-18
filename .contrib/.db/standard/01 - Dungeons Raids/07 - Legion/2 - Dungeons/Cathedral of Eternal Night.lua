@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(144490),	-- Corruption-Fused Stompers
 					i(144468),	-- Felpruner's Shroud
 					i(144470),	-- Grovetender's Handwraps
-					i(144497),	-- Petrified Hust Girdle
+					i(144497),	-- Petrified Husk Girdle
 					i(144477),	-- Splinters of Agronox
 					i(144483),	-- Spore-Coated Vest
 					i(144498),	-- Vambraces of Fel Crust
@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(144481),	-- Ring of Fel Domination
 					i(144474),	-- Sheer Felwoven Hosiery
 					i(144489),	-- Shoulderguards of Legion Domination
-					i(144500),	-- Two-Toed Trashstompers
+					i(144500),	-- Two-Toed Thrashstompers
 					i(144466),	-- Gore-Flecked Feaster Fang
 					i(144467),	-- Vial of Eternal Moon
 				})),
@@ -127,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(144490),	-- Corruption-Fused Stompers
 						i(144468),	-- Felpruner's Shroud
 						i(144470),	-- Grovetender's Handwraps
-						i(144497),	-- Petrified Hust Girdle
+						i(144497),	-- Petrified Husk Girdle
 						i(144477),	-- Splinters of Agronox
 						i(144483),	-- Spore-Coated Vest
 						i(144498),	-- Vambraces of Fel Crust
@@ -161,7 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(144481),	-- Ring of Fel Domination
 						i(144474),	-- Sheer Felwoven Hosiery
 						i(144489),	-- Shoulderguards of Legion Domination
-						i(144500),	-- Two-Toed Trashstompers
+						i(144500),	-- Two-Toed Thrashstompers
 						i(144466),	-- Gore-Flecked Feaster Fang
 						i(144467),	-- Vial of Eternal Moon
 					})),

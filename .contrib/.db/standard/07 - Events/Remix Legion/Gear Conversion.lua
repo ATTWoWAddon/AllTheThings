@@ -11,7 +11,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(170604),	-- Heart-Lesion Runeblade
 				}),
 				cl(DEATHKNIGHT, BLOOD, {
-					i(153717),	-- Heart-Lession Greatsword
+					i(153717),	-- Heart-Lesion Greatsword
 					i(153737),	-- Heart-Lesion Faceguard
 					i(153739),	-- Heart-Lesion Amulet
 					i(153744),	-- Heart-Lesion Shoulderguards
@@ -157,7 +157,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			cl(HUNTER, {
 				i(218130, {	-- Adventurer's Footlocker
 					i(170638),	-- Trailseeker Shotgun
-					i(170639),	-- Trailseekeer Spear
+					i(170639),	-- Trailseeker Spear
 				}),
 				cl(HUNTER, BEAST_MASTERY, {
 					i(153813),	-- Trailseeker Shotgun

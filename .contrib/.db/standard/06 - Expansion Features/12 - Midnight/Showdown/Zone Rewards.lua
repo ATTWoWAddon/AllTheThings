@@ -69,7 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(274820),	-- Cloak of the Voracious Gorger
 						i(274818),	-- Drape of Intense Darkness
 						i(274821),	-- Drape of the Hal'hadar Assassin
-						i(274819),	-- Fungle Fold Frock
+						i(274819),	-- Fungal Fold Frock
 					}),
 					filter(CLOTH, {
 						i(274835),	-- Bands of Pincher Sinew
@@ -113,7 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(282426),	-- Draenic Drive Chain
 					}),
 					filter(PLATE, {
-						i(274857),	-- Chitonous Broodmother's Spaulders
+						i(274857),	-- Chitinous Broodmother's Spaulders
 						i(274853),	-- Creature Crushers
 						i(274858),	-- Domanaar Battle Belt
 						i(274856),	-- Felguard's Frozen Greaves

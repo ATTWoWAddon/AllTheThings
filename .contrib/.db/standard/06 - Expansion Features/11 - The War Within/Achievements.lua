@@ -373,7 +373,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 			},
 		}),
-		ach(40107, {	-- Harbinger of the Weatherd
+		ach(40107, {	-- Harbinger of the Weathered
 			-- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if preferred but this is good enough.
 			timeline = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
@@ -467,7 +467,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				iensemble(246737, {	-- K'areshi Voidstone (CI!)
 					--[[d(DIFFICULTY.RAID.LFR, bubbleDown({ bonusID = 6894, modID = 0, }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {
@@ -526,7 +526,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					})),
 					d(DIFFICULTY.RAID.NORMAL, bubbleDown({ bonusID = 6895, modID = 0, }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {
@@ -585,7 +585,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					})),
 					d(DIFFICULTY.RAID.HEROIC, bubbleDown({ bonusID = 6896, modID = 0, }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {
@@ -644,7 +644,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					})),
 					d(DIFFICULTY.RAID.MYTHIC, bubbleDown({ bonusID = 6897, modID = 0, }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {
@@ -703,7 +703,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					})),
 					n(PVP_GLADIATOR, bubbleDown({ bonusID = 6898 }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {
@@ -762,7 +762,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					})),
 					n(PVP_ELITE, bubbleDown({ bonusID = 8107 }, {
 						cl(DEATHKNIGHT, {
-							i(237626),	-- Hollow Senintel's Perches
+							i(237626),	-- Hollow Sentinel's Perches
 							i(237628),	-- Hollow Sentinel's Stonemask
 						}),
 						cl(DEMONHUNTER, {

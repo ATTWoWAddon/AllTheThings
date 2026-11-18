@@ -931,7 +931,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								}),
 								i(136900),	-- Hateful Eye (PET!)
 								i(141971),	-- Cowl of the Doomed Ritual
-								i(141974),	-- Shoulderpads of the Doome Ritual
+								i(141974),	-- Shoulderpads of the Doomed Ritual
 								i(141973),	-- Robe of the Doomed Ritual
 								i(141970),	-- Handwraps of the Doomed Ritual
 								i(141972),	-- Leggings of the Doomed Ritual

@@ -18,7 +18,7 @@ root(ROOTS.Character, n(GEAR_UPDATE, with({ timeline = { ADDED_10_1_5, REMOVED_1
 				i(170604),	-- Heart-Lesion Runeblade
 			}),
 			cl(DEATHKNIGHT, BLOOD, {
-				i(153717),	-- Heart-Lession Greatsword
+				i(153717),	-- Heart-Lesion Greatsword
 				i(153737),	-- Heart-Lesion Faceguard
 				i(153739),	-- Heart-Lesion Amulet
 				i(153744),	-- Heart-Lesion Shoulderguards

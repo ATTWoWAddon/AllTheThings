@@ -52,7 +52,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 									i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
 								},
 							}),
-							i(190458),	-- Atrophy's Omnious Bulwark
+							i(190458),	-- Atrophy's Ominous Bulwark
 							i(190102),	-- Chains of Infectious Serrations
 							i(190103),	-- Pillar of Noxious Dissemination
 							i(190126),	-- Rotculler's Encroaching Shears
@@ -192,7 +192,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				groups = {
 					i(189960),	-- Crouching Legs of the Bufonid
 					i(190001),	-- Gorkek's Glistening Throatguard
-					i(189926),	-- Posion-Licked Spaulders
+					i(189926),	-- Poison-Licked Spaulders
 				},
 			}),
 			n(178563, {	-- Hadeon the Stonebreaker <Scarabid Prime>
@@ -349,7 +349,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				questID = 65580,
 				groups = {
 					i(190006),	-- Anima-Siphoning Sword
-					i(189921),	-- Devourer's Insaitable Grips
+					i(189921),	-- Devourer's Insatiable Grips
 					i(189913),	-- Engulfer's Tightening Cinch
 					i(187847),	-- Design: Devourer Essence Stone (RECIPE!)
 				},

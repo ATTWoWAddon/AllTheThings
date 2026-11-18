@@ -506,7 +506,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(188917),	-- Footwraps of the Grand Upwelling
 							i(188916),	-- Grips of the Grand Upwelling
 							i(188911),	-- Legguards of the Grand Upwelling
-							i(188914),	-- Tassets of the Grand Upwelling
+							i(188914),	-- Tassels of the Grand Upwelling
 							i(188915),	-- Waistwrap of the Grand Upwelling
 						}),
 						cl(PALADIN, {
@@ -647,7 +647,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 								i(188917),	-- Footwraps of the Grand Upwelling
 								i(188916),	-- Grips of the Grand Upwelling
 								i(188911),	-- Legguards of the Grand Upwelling
-								i(188914),	-- Tassets of the Grand Upwelling
+								i(188914),	-- Tassels of the Grand Upwelling
 								i(188915),	-- Waistwrap of the Grand Upwelling
 							}),
 							cl(PALADIN, {

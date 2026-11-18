@@ -103,7 +103,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				})),
 				cr(91808, e(1479, {	-- Serpentrix
 					i(134239),	-- Brinewashed Leather Grips
-					i(134228),	-- Coraplate Pauldrons
+					i(134228),	-- Coralplate Pauldrons
 					i(134465),	-- Hydra Scale Sabatons
 					i(134256),	-- Sea Stalker's Leggings
 					i(134260),	-- Seawitch Hood
@@ -174,7 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 					cr(91808, e(1479, {	-- Serpentrix
 						i(134239),	-- Brinewashed Leather Grips
-						i(134228),	-- Coraplate Pauldrons
+						i(134228),	-- Coralplate Pauldrons
 						i(134465),	-- Hydra Scale Sabatons
 						i(134256),	-- Sea Stalker's Leggings
 						i(134260),	-- Seawitch Hood
@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					})),
 					cr(91808, e(1479, {	-- Serpentrix
 						i(134239),	-- Brinewashed Leather Grips
-						i(134228),	-- Coraplate Pauldrons
+						i(134228),	-- Coralplate Pauldrons
 						i(134465),	-- Hydra Scale Sabatons
 						i(134256),	-- Sea Stalker's Leggings
 						i(134260),	-- Seawitch Hood

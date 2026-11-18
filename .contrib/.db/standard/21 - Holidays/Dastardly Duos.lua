@@ -238,7 +238,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, {
 						i(239442, {	-- Black Dastardly Epaulet
 							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
-						i(239503, {	-- Blue Dastardly Epaule
+						i(239503, {	-- Blue Dastardly Epaulet
 							cost = { { "c", RESONANCE_CRYSTALS, 500 } },
 						}),
 						i(239007, {	-- Dastardly Banner (TOY!)

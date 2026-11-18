@@ -21,13 +21,13 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					provider = { "n", 181655 },	-- The Primus
 					coord = { 34.2, 52.3, 2042 },	-- Oribos (Scenario Map)
 				}),
-				q(64945, {	-- Stangers in a Strange Land
+				q(64945, {	-- Strangers in a Strange Land
 					sourceQuests = { 64944 },	-- A Hasty Voyage
 					provider = { "n", 184003 },	-- Pelagos TODO: Double Check ID
 					coord = { 24.9, 53.6, ZERETH_MORTIS },
 				}),
 				q(65456, {	-- Long Lost Firim
-					sourceQuests = { 64945 },	-- Stangers in a Strange Land
+					sourceQuests = { 64945 },	-- Strangers in a Strange Land
 					provider = { "n", 181561 },	-- Firim
 					coord = { 28.9, 53.5, ZERETH_MORTIS },
 					groups = {
@@ -80,7 +80,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					provider = { "n", 177486 },	-- Elder Kreth
 					coord = { 34.9, 64.9, ZERETH_MORTIS },
 				}),
-				q(64952, {	-- Destroying the Desctructors
+				q(64952, {	-- Destroying the Destructors
 					sourceQuests = { 65271 },	-- Forging Connections
 					provider = { "n", 178016 },	-- Elder Ara
 					coord = { 34.9, 64.9, ZERETH_MORTIS },
@@ -88,7 +88,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				q(64957, {	-- The Old Waystone
 					sourceQuests = {
 						64953,	-- Defending Haven
-						64952,	-- Destroying the Desctructors
+						64952,	-- Destroying the Destructors
 					},
 					provider = { "n", 178016 },	-- Elder Ara
 					coord = { 34.9, 64.9, ZERETH_MORTIS },
@@ -214,7 +214,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						i(187839),	-- Tonal Jammer
 					},
 				}),
-				q(64822, {	-- A Break in Communcation
+				q(64822, {	-- A Break in Communication
 					sourceQuests = { 64818 },	-- Reinforcements May Be Necessary
 					provider = { "n", 181183 },	-- Highlord Bolvar Fordragon
 					coord = { 35.0, 64.8, ZERETH_MORTIS },
@@ -223,7 +223,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					sourceQuests = {
 						64820,	-- This Is Your Fault, Fix it
 						64821,	-- Nothing is True
-						64822,	-- A Break in Communcation
+						64822,	-- A Break in Communication
 					},
 					provider = { "n", 181183 },	-- Highlord Bolvar Fordragon
 					coord = { 35.0, 64.8, ZERETH_MORTIS },
@@ -525,7 +525,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					provider = { "n", 181367 },	-- Highlord Bolvar Fordragon
 					coord = { 57.2, 31.1, ZERETH_MORTIS },
 				}),
-				q(64811, {	-- Agressive Excavation
+				q(64811, {	-- Aggressive Excavation
 					sourceQuests = { 64809 },	-- One Half of the Equation
 					provider = { "n", 181372 },	-- Taelia Fordragon
 					coord = { 57.2, 31.2, ZERETH_MORTIS },
@@ -547,7 +547,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				q(64806, {	-- Where the Memories Resides
 					sourceQuests = {
 						64810,	-- Oppress and Destroy
-						64811,	-- Agressive Excavation
+						64811,	-- Aggressive Excavation
 					},
 					provider = { "n", 181367 },	-- Highlord Bolvar Fordragon
 					coord = { 57.2, 31.1, ZERETH_MORTIS },
@@ -699,7 +699,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					coord = { 35.0, 64.8, ZERETH_MORTIS },
 					isBreadcrumb = true,
 				}),
-				q(64723, {	-- Restoration Porject
+				q(64723, {	-- Restoration Project
 					sourceQuests = { 64879 },	-- A Monumental Discovery
 					provider = { "n", 177958 },	-- Firim
 					coord = { 34.2, 48.7, ZERETH_MORTIS },
@@ -708,7 +708,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					},
 				}),
 				q(64733, {	-- Help From Beyond
-					sourceQuests = { 64723 },	-- Restoration Porject
+					sourceQuests = { 64723 },	-- Restoration Project
 					provider = { "n", 181545 },	-- Firim
 					coord = { 33.8, 48.4, ZERETH_MORTIS },
 				}),

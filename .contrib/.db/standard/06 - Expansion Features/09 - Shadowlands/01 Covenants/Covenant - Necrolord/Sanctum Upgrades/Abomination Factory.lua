@@ -1336,7 +1336,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 									}),
 								}),
 								n(VENDORS, {
-									n(161678, {	-- Mana Tomalin
+									n(161678, {	-- Mama Tomalin
 										sourceQuests = { 60216 },	-- Construct Body: Mama Tomalin
 										groups = {
 											i(184040, {	-- Broken Egg Shells

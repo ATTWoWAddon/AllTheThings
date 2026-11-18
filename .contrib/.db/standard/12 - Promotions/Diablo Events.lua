@@ -141,7 +141,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							i(142548),	-- Large Charm of Dexterity
 							i(206274),	-- Large Charm of Intelligence
 							i(142547),	-- Large Charm of Strength
-							i(143327),	-- Lovestock Lochaber Axe
+							i(143327),	-- Livestock Lochaber Axe
 							i(206008),	-- Nightmare Banner (TOY!)
 							i(142549),	-- Serpent's Grand Charm
 							i(142546),	-- Small Charm of Inertia
@@ -187,7 +187,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 							-- i(142548),	-- Large Charm of Dexterity
 							-- i(206274),	-- Large Charm of Intelligence
 							-- i(142547),	-- Large Charm of Strength
-							i(143327),	-- Lovestock Lochaber Axe
+							i(143327),	-- Livestock Lochaber Axe
 							i(206008),	-- Nightmare Banner (TOY!)
 							-- i(142549),	-- Serpent's Grand Charm
 							-- i(142546),	-- Small Charm of Inertia
@@ -311,7 +311,7 @@ root(ROOTS.Promotions, n(DIABLO_EVENTS, {
 				i(206004),	-- Enmity Cloak (COSMETIC!)
 				i(206020),	-- Enmity Hood (COSMETIC!)
 			}),
-			i(143327),	-- Lovestock Lochaber Axe
+			i(143327),	-- Livestock Lochaber Axe
 			i(206008),	-- Nightmare Banner (TOY!)
 			i(142542),	-- Tome of Town Portal (TOY!)
 			i(143543),	-- Twelve String Guitar (TOY!)

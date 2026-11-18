@@ -1182,7 +1182,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 				coord = { 62.7, 22.5, KORTHIA },
 				minReputation = { FACTION_THE_ARCHIVISTS_CODEX, 4 },	-- Tier 4
 			}),
-			q(63919, {	-- Book of Binding: The Tormented Sorceror
+			q(63919, {	-- Book of Binding: The Tormented Sorcerer
 				sourceQuests = { 64526 },	-- Mysterious Rifts
 				provider = { "n", 179956 },	-- Blue Book
 				coord = { 60.8, 34.8, KORTHIA },

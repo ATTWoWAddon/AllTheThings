@@ -658,7 +658,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					i(183200),	-- Pitch Black Scourgestone
 					i(183686),	-- Breeches of the Skeletal Serpent
 					i(183685),	-- Phantasmic Seal of the Prophet
-					i(183684),	-- Tharaon'ja's Protectorate
+					i(183684),	-- Tharon'ja's Protectorate
 				},
 			}),
 			n(174051, {	-- Trollgore (20)

@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(142160),	-- Mrrgria's Favor
 						i(142164),	-- Toe Knee's Promise
 						i(142190),	-- Love's Intermission
-						i(142186),	-- Mrrmgmrl Grmmlmflrg
+						i(142186),	-- Mrrmgmrl Grmmlmglrg
 						i(142178),	-- Ruffian's Poisoned Blade
 					},
 				}),
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
-						i(142147),	-- Robes of Wicket Modesty
+						i(142147),	-- Robes of Wicked Modesty
 						i(142171),	-- Seal of Darkshire Nobility
 						i(142143),	-- Willbreaker Legguards
 						i(142177),	-- Jagged Emerald
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(142160),	-- Mrrgria's Favor
 						i(142164),	-- Toe Knee's Promise
 						i(142190),	-- Love's Intermission
-						i(142186),	-- Mrrmgmrl Grmmlmflrg
+						i(142186),	-- Mrrmgmrl Grmmlmglrg
 						i(142178),	-- Ruffian's Poisoned Blade
 					},
 				}),
@@ -513,7 +513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(142159),	-- Bloodstained Handkerchief
 						i(142123),	-- Breastplate of Obligation
 						i(142134),	-- Castellan's Blinders
-						i(142147),	-- Robes of Wicket Modesty
+						i(142147),	-- Robes of Wicked Modesty
 						i(142171),	-- Seal of Darkshire Nobility
 						i(142143),	-- Willbreaker Legguards
 						i(142177),	-- Jagged Emerald

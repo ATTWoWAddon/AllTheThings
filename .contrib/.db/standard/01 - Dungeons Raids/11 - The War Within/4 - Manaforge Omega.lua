@@ -148,7 +148,7 @@ local EncounterToLoot = {
 	};
 	[HUNTERS] = {
 		i(237597, {	-- Dreadful Yearning Cursemark
-			i(237626),	-- Hollow Senintel's Perches
+			i(237626),	-- Hollow Sentinel's Perches
 			i(237689),	-- Charhound's Vicious Hornguards
 			i(237698),	-- Inquisitor's Gaze of Madness
 		}),

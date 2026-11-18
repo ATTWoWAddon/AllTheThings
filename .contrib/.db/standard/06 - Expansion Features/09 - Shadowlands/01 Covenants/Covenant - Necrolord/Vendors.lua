@@ -982,7 +982,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
-					i(184065, {	-- Lambent Plaguetouched Focux
+					i(184065, {	-- Lambent Plaguetouched Focus
 						cost = {
 							{ "c", ANIMA, 3500 },
 							{ "c", GRATEFUL, 50 },

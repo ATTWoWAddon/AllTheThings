@@ -1990,7 +1990,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDE
 				i(244600),	-- Scout's Polished Wrap
 				i(244588),	-- Scout's Scaled Boots
 				i(244589),	-- Scout's Scaled Bracers
-				i(244590),	-- Scout's Scaled Ves
+				i(244590),	-- Scout's Scaled Vest
 				i(244563),	-- Thalassian Competitor's Chain Cowl
 				i(244568),	-- Thalassian Competitor's Chain Cuffs
 				i(244564),	-- Thalassian Competitor's Chain Epaulets

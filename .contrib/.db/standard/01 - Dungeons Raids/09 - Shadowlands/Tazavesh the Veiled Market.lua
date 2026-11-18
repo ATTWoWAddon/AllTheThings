@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 								timeline = { ADDED_9_1_0 },
 							}),
 							i(185781),	-- Drape of Titanic Dreams
-							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
+							i(185805),	-- Hylbrande's Retrofitted Shoulderguards
 							i(185810),	-- Skyreaver, Greataxe of the Keepers
 							i(185779),	-- Spire of Expurgation
 							i(185803),	-- Stoneflesh Spaulders
@@ -632,7 +632,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						-- Items
 						i(185788),	-- Codebreaker's Cunning Sandals
 						i(185781),	-- Drape of Titanic Dreams
-						i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
+						i(185805),	-- Hylbrande's Retrofitted Shoulderguards
 						i(185810),	-- Skyreaver, Greataxe of the Keepers
 						i(185779),	-- Spire of Expurgation
 						i(185803),	-- Stoneflesh Spaulders

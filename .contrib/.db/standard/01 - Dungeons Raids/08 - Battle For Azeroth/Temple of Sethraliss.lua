@@ -45,7 +45,7 @@ local EncounterToLoot = {
 		i(159259),	-- Sandswept Sandals
 	},
 	[Encounters.MEREKTHA] = {
-		i(158714),	-- Swarm's Eedge
+		i(158714),	-- Swarm's Edge
 		i(159637),	-- Snakeebite Recurvee
 		i(159437),	-- Fangproof Gauntlets
 		i(159255),	-- Ouroborial Sash
@@ -60,7 +60,7 @@ local EncounterToLoot = {
 		i(159247),	-- Handwraps of Oscillating Polarity
 		i(159442),	-- Sand-Scoured Greatbelt
 		i(158366),	-- Charged Sandstone Band
-		i(158374),	-- Tiny Eelectromental in a Jar
+		i(158374),	-- Tiny Electromental in a Jar
 	},
 	[Encounters.AVATAR] = {
 		i(158373),	-- Resonating Crystal Scimitar

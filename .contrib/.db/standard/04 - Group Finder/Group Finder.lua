@@ -746,7 +746,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					i(124583),	-- Felcast Trousers
 				}),
 				i(127779, {	-- Baleful Cloth Treads
-					i(124571),	-- Felcast Sandles
+					i(124571),	-- Felcast Sandals
 				}),
 				i(127794, {	-- Baleful Leather Hood
 					i(124580),	-- Bladefang Hood

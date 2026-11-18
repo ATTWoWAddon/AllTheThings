@@ -1409,7 +1409,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						timeline = { ADDED_4_0_6 },
 					}),
 					i(13183),	-- Venomspitter
-					i(151414, {	-- Arcanophile's Greatcloak
+					i(151414, {	-- Arachnophile's Greatcloak
 						timeline = { ADDED_7_3_0 },
 					}),
 					i(13244),	-- Gilded Gauntlets

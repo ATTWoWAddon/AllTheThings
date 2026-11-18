@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 		isRaid = true,
 		groups = {
 			n(ACHIEVEMENTS, {
-				ach(40961, {	-- Batle of Dazar'alor
+				ach(40961, {	-- Battle of Dazar'alor
 					timeline = { ADDED_11_0_7 },
 					-- Meta Achievement
 					sym = {{"meta_achievement",

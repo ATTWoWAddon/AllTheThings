@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 					groups = {
 						i(159653),	-- Bile-Stained Crawg Tusks
-						i(159134),	-- Heart-Piercing Stalacite
+						i(159134),	-- Heart-Piercing Stalactite
 						i(159433),	-- Phosphorescent Armplates
 						i(159275),	-- Wristwraps of Twined Morels
 						i(159382),	-- Blood Tick Crushers
@@ -71,7 +71,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 					groups = {
 						i(159654),	-- Corruption Borne Headlopper
-						i(159665),	-- Targee of the Ancient Warder
+						i(159665),	-- Targe of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
 						i(159410),	-- Zancha's Venerated Greatbelt
 						i(159384),	-- Corpuscular Greaves
@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					},
 					groups = {
 						ach(12500),	-- Underrot
-						i(159655),	-- Vile Exasanguinator
+						i(159655),	-- Vile Exsanguinator
 						i(159446),	-- Greathelm of the Putrid Path
 						i(159381),	-- Visage of Bloody  Horrors
 						i(159385),	-- Amalgamated Abomination Spaulders
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						},
 						groups = {
 							i(159653),	-- Bile-Stained Crawg Tusks
-							i(159134),	-- Heart-Piercing Stalacite
+							i(159134),	-- Heart-Piercing Stalactite
 							i(159433),	-- Phosphorescent Armplates
 							i(159275),	-- Wristwraps of Twined Morels
 							i(159382),	-- Blood Tick Crushers
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						},
 						groups = {
 							i(159654),	-- Corruption Borne Headlopper
-							i(159665),	-- Targee of the Ancient Warder
+							i(159665),	-- Targe of the Ancient Warder
 							i(159292),	-- Sporecaller's Shroud
 							i(159410),	-- Zancha's Venerated Greatbelt
 							i(159384),	-- Corpuscular Greaves
@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						},
 						groups = {
 							ach(12501),	-- Heroic: Underrot
-							i(159655),	-- Vile Exasanguinator
+							i(159655),	-- Vile Exsanguinator
 							i(159446),	-- Greathelm of the Putrid Path
 							i(159381),	-- Visage of Bloody  Horrors
 							i(159385),	-- Amalgamated Abomination Spaulders
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						},
 						groups = {
 							i(159653),	-- Bile-Stained Crawg Tusks
-							i(159134),	-- Heart-Piercing Stalacite
+							i(159134),	-- Heart-Piercing Stalactite
 							i(159433),	-- Phosphorescent Armplates
 							i(159275),	-- Wristwraps of Twined Morels
 							i(159382),	-- Blood Tick Crushers
@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						groups = {
 							ach(12549),	-- Not a Fun Guy
 							i(159654),	-- Corruption Borne Headlopper
-							i(159665),	-- Targee of the Ancient Warder
+							i(159665),	-- Targe of the Ancient Warder
 							i(159292),	-- Sporecaller's Shroud
 							i(159410),	-- Zancha's Venerated Greatbelt
 							i(159384),	-- Corpuscular Greaves
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							ach(13003),	-- Mythic: Underrot Guild Run
 							ach(12499),	-- Sporely Alive
 							i(160829),	-- Underrot Crawg (MOUNT!)
-							i(159655),	-- Vile Exasanguinator
+							i(159655),	-- Vile Exsanguinator
 							i(159446),	-- Greathelm of the Putrid Path
 							i(159381),	-- Visage of Bloody  Horrors
 							i(159385),	-- Amalgamated Abomination Spaulders

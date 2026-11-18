@@ -145,7 +145,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 					i(123953, {	-- Plans: Demonsteel Gauntlets [Rank 3] (RECIPE!)
 						cost = 30000000,	-- 3,000g
 					}),
-					i(140576),	-- Tabard of the Hightmountain Tribe
+					i(140576),	-- Tabard of the Highmountain Tribe
 					i(243290, {	-- Tauren Waterwheel (DECOR!)
 						timeline = { ADDED_11_2_7 },
 						cost = {

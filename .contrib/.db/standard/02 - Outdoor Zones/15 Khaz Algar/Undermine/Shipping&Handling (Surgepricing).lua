@@ -57,7 +57,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 				q(86315),	-- Chaos in the Streets
 				q(86370),	-- Clean Sweep
 				q(85759),	-- Crystal Alignment
-				q(85733),	-- Daquiri Disaster
+				q(85733),	-- Daiquiri Disaster
 				q(86313),	-- Darkfuse Cleanup
 				q(86321),	-- Door to Door
 				q(85732),	-- Express Extermination

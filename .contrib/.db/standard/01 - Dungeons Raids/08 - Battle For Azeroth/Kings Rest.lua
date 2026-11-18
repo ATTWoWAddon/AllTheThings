@@ -39,8 +39,8 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					groups = {
 						i(159137),	-- Gilded Serpent's Tooth
 						i(159413),	-- Gauntlets of the Avian Sentinel
-						i(159369),	-- Belt of the Consecrateed Tomb
-						i(159313),	-- Breechees of the Sacred Hall
+						i(159369),	-- Belt of the Consecrated Tomb
+						i(159313),	-- Breeches of the Sacred Hall
 						i(159234),	-- Down-Lined Breeches
 						i(159412),	-- Auric Puddle Stompers
 						i(159304),	-- Goldfeather Boots
@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				e(2171, {	-- Mchimba the Embalmer
 					crs = { 134993 },	-- Mchimba the Embalmer
 					groups = {
-						i(159642),	-- Royal Purifier's Spaade
+						i(159642),	-- Royal Purifier's Spade
 						i(159667),	-- Vessel of Last Rites
 						i(159409),	-- Embalmer's Steadying Bracers
 						i(159312),	-- Desiccator's Blessed Gloves

@@ -712,7 +712,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
 						i(237625),	-- Hollow Sentinel's Greatbelt
-						i(237626),	-- Hollow Senintel's Perches
+						i(237626),	-- Hollow Sentinel's Perches
 						i(237627),	-- Hollow Sentinel's Stonekilt
 						i(237628),	-- Hollow Sentinel's Stonemask
 						i(237629),	-- Hollow Sentinel's Gauntlets

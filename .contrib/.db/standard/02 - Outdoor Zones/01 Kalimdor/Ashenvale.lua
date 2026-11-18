@@ -1673,7 +1673,7 @@ maproot(KALIMDOR, ASHENVALE, {
 					i(56649),	-- Folly's Edge
 					i(56650),	-- Felfire-Tainted Vest
 					i(56651),	-- Legguards of Abandoned Virtue
-					i(131302, {	-- Felfire-Scorched Chesteguard
+					i(131302, {	-- Felfire-Scorched Chestguard
 						timeline = { ADDED_7_0_3 },
 					}),
 					i(156958, {	-- Scepter of Questionable Decision Making

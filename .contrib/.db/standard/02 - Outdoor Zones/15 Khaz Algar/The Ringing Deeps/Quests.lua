@@ -84,7 +84,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					i(211865),	-- Cogchewer's Keys (QI!)
 				},
 			}),
-			q(78638, {	-- Engeneering Destruction
+			q(78638, {	-- Engineering Destruction
 				sourceQuests = {
 					78635,	-- Death and Waxes
 					78634,	-- Leave No Stone Behind
@@ -95,7 +95,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			q(78636, {	-- Retaking the Mines
 				sourceQuests = {
 					78637,	-- Cracking Cogchewer
-					78638,	-- Engeneering Destruction
+					78638,	-- Engineering Destruction
 				},
 				provider = { "n", 212519 },	-- Speaker Brinthe
 				coord = { 57.7, 29.1, THE_RINGING_DEEPS },
@@ -1206,7 +1206,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			}),
 		}),
 		header(HEADERS.AchCriteria, 40799.16, {	-- Frolicking in the Fetid Grotto
-			q(81693, {	-- Desparately Seeking Skorthuz
+			q(81693, {	-- Desperately Seeking Skorthuz
 				sourceQuests = {
 					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
@@ -1216,13 +1216,13 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 				coord = { 62.4, 48.0, THE_RINGING_DEEPS },
 			}),
 			q(81712, {	-- Lisky Business
-				sourceQuests = { 81693 },	-- Desparately Seeking Skorthuz
+				sourceQuests = { 81693 },	-- Desperately Seeking Skorthuz
 				provider = { "n", 220446 },	-- Skorthuz
 				coord = { 64.9, 41.5, THE_RINGING_DEEPS },
 			}),
 			q(81713, {	-- Oozemodious
 				sourceQuests = {
-					81693,	-- Desparately Seeking Skorthuz
+					81693,	-- Desperately Seeking Skorthuz
 					81712,	-- Lisky Business
 				},
 				provider = { "n", 220446 },	-- Skorthuz

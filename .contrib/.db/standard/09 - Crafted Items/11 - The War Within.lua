@@ -311,7 +311,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 			i(217150),	-- Algari Competitor's Plate Armguards
-			i(217143),	-- Algari Competitor's Plate Breatplate
+			i(217143),	-- Algari Competitor's Plate Breastplate
 			i(217145),	-- Algari Competitor's Plate Gauntlets
 			i(217147),	-- Algari Competitor's Plate Greaves
 			i(217146),	-- Algari Competitor's Plate Helm
@@ -515,7 +515,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 			i(222447),	-- Charged Claymore
 			i(222449),	-- Charged Crusher
 			i(222439),	-- Charged Dagger
-			i(222446),	-- Charged Facesmaher
+			i(222446),	-- Charged Facesmasher
 			i(222446),	-- Charged Facesmasher
 			i(222443),	-- Charged Greataxe
 			i(222448),	-- Charged Halberd

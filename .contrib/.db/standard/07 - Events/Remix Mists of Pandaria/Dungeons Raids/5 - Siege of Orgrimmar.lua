@@ -768,7 +768,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 						i(215995),	-- Mistspinner's Channel
 						i(215575),	-- Nazgrim's Shanker
 						i(215570),	-- Norushen's Dagger (Malkorok HC)
-						i(216552),	-- Noreshen Tower Shield
+						i(216552),	-- Norushen's Tower Shield
 						i(215579),	-- Rik'kal's Bloody Blade
 						i(215829),	-- Rod of the Megantholithic Apparatus
 						i(215669),	-- Sha-Touched Globule
@@ -777,7 +777,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 						i(215725),	-- Siegecrafter's Forge Drill
 						i(215819),	-- Staff of Corrupted Waters
 						i(215713),	-- Sphere of Immerseus
-						i(215825),	-- Spire of Supreamcy
+						i(215825),	-- Spire of Supremacy
 						i(215833),	-- Pride's Gaze
 						i(215661),	-- Prophecies of Y'shaarj
 						i(215630),	-- Softfoot's Iron Claw

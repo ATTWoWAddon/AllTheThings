@@ -560,7 +560,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
 				timeline = { ADDED_12_1_5 },
 			}),
-			ach(64160, {	-- Duskwood Caranek Crafter
+			ach(64160, {	-- Duskwood Caramel Crafter
 				maps = { FOUNDERS_POINT, RAZORWIND_SHORES },
 				timeline = { ADDED_12_1_5 },
 			}),

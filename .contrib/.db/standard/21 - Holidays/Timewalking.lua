@@ -1128,7 +1128,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							i(171910),	-- Destroyer Battle-Helm
 							i(171911),	-- Destroyer Greathelm
 							i(171915),	-- Rift Stalker Helm
-							i(171922),	-- Cowl of Tirisfall
+							i(171922),	-- Cowl of Tirisfal
 							i(171923),	-- Hood of the Corruptor
 							i(171481),	-- Glorious Gauntlets of Crestfall
 							i(171471),	-- Krakken-Heart Breastplate
@@ -1138,7 +1138,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							i(171480),	-- Runetotem's Mantle
 							i(171476),	-- Vestments of the Sea-Witch
 							i(171475),	-- Belt of One-Hundred Deaths
-							i(171473),	-- Cobta-Lash Boots
+							i(171473),	-- Cobra-Lash Boots
 							i(171479),	-- Coral Band of the Revived
 							i(171478),	-- Ring of Endless Coils
 							i(171482),	-- Prism of Inner Calm
@@ -1183,7 +1183,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							i(129837, {	-- Cowl of Naaru Blessings
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
-							i(129855, {	-- Voodo-Woven Belt
+							i(129855, {	-- Voodoo-Woven Belt
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
 						}),
@@ -1493,7 +1493,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 					i(150496),	-- Staff of Immaculate Recovery
 					i(150466),	-- Messenger of Fate
 					i(150495),	-- Wand of Prismatic Focus
-					i(150462),	-- Shoudlers of the Hidden Predator
+					i(150462),	-- Shoulders of the Hidden Predator
 					i(150486),	-- Vest of Mounting Assault
 					i(150530),	-- Wristbands of Divine Influence
 					i(150491),	-- Belt of Primal Majesty
@@ -2007,7 +2007,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						i(188398),	-- Boots of Ethereal Manipulation
 						i(188399),	-- Boots of the Endless Hunt
 						i(188400),	-- Feral Staff of Lashing
-						i(188401),	-- Gauntlets of Dissention
+						i(188401),	-- Gauntlets of Dissension
 						i(188395),	-- Greatsword of Forlorn Visions
 						i(188368),	-- Incanter's Robe
 						i(188389),	-- Jagged Bark Pendant
@@ -2603,7 +2603,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(129892, {	-- Meteor Chaser's Raiment
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
-							i(129869, {	-- Xintor's Expeditioary Boots
+							i(129869, {	-- Xintor's Expeditionary Boots
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
 						}),
@@ -3713,10 +3713,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			timeline = { REMOVED_9_1_5 },
 			groups = {
 				cr(26668, e(641, {	-- Svala Sorrowgrave
-					i(127458),	-- Ritualistic Arthame
+					i(127458),	-- Ritualistic Athame
 					i(127459),	-- Brazier Igniter
 					i(127482),	-- Silent Spectator Shoulderpads
-					i(127502),	-- Ymijar Physician's Robe
+					i(127502),	-- Ymirjar Physician's Robe
 					i(127484),	-- Cuffs of the Trussed Hall
 					i(127460),	-- Svala's Bloodied Shackles
 					i(127461),	-- Tear-Linked Gauntlets
@@ -3740,7 +3740,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(127491),	-- Staff of Wayward Principles
 					i(127489),	-- Netherbreath Spellblade
 					i(127466),	-- Amulet of Deflected Blows
-					i(127467),	-- Silken Amice of the Ymijar
+					i(127467),	-- Silken Amice of the Ymirjar
 					i(127469),	-- Dark Rider's Tunic
 					i(127503),	-- Bands of Fading Light
 					i(127479),	-- Dragonflayer Seer's Bindings
@@ -3893,7 +3893,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							i(171885),	-- Helmet of the Raging Elements
 							i(171884),	-- Headpiece of the Raging Elements
 							i(171883),	-- Faceguard of the Raging Elements
-							i(171886),	-- Earthen Helemt
+							i(171886),	-- Earthen Helmet
 							i(171887),	-- Earthen Faceguard
 							i(171881),	-- Wind Dancer's Helmet
 							i(171878),	-- Stormrider's Helm
@@ -4600,7 +4600,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133292),	-- Azureborne Cloak
 					i(133363),	-- Troggstitched Drape
 					i(133295),	-- Crimsonborne Bracers
-					i(133354),	-- Glimmerthread Pantalons
+					i(133354),	-- Glimmerthread Pantaloons
 					i(133293),	-- Red Scale Boots
 				})),
 				cr(40484, e(134, {	-- Erudax
@@ -4651,7 +4651,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			e(119, {	-- High Prophet Barim
 				crs = { 43612 },	-- High Prophet Barim
 				groups = {
-					i(133265),	-- Barin's Main Gauche
+					i(133265),	-- Barim's Main Gauche
 					i(133277),	-- Zora's Ward
 					i(133264),	-- Sand Silk Wristband
 					i(133276),	-- Leggings of the Path
@@ -4999,10 +4999,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 						i(234787, {	-- Mogu'shan Warden's Crystal Spear
 							cost = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
-						i(234784, {	-- Pandaran Bolt Thrower
+						i(234784, {	-- Pandaren Bolt Thrower
 							cost = { { "c", TIMEWARPED_BADGE, 1800 } },
 						}),
-						i(234770, {	-- Pandaran Guard's Halberd
+						i(234770, {	-- Pandaren Guard's Halberd
 							cost = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
 						i(234769, {	-- Pandaren Guard's Poleaxe
@@ -5014,7 +5014,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 						i(234790, {	-- Restored Harmonic Mallet
 							cost = { { "c", TIMEWARPED_BADGE, 2500 } },
 						}),
-						i(234766, {	-- Ringed Pandaran Falchion
+						i(234766, {	-- Ringed Pandaren Falchion
 							cost = { { "c", TIMEWARPED_BADGE, 1200 } },
 						}),
 						i(234776, {	-- Saurok Mystic's Voodoo Stick
@@ -5030,7 +5030,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 						i(234777, {	-- Stave-Master's Spire
 							cost = { { "c", TIMEWARPED_BADGE, 1500 } },
 						}),
-						i(234755, {	-- Tabard of the Pandaran Elders
+						i(234755, {	-- Tabard of the Pandaren Elders
 							cost = { { "c", TIMEWARPED_BADGE, 500 } },
 						}),
 					})),

@@ -696,7 +696,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				i(129310),	-- Skyfire Hood
 				i(129311),	-- Gryphon Rider's Mask
 				i(129312),	-- Tinkerer's Thinking Hat
-				i(129313),	-- Tinkmaster's Mindvault
+				i(129313),	-- Tinkermaster's Mindvault
 			},
 		}),
 		q(42446, {	-- Singed Feathers

@@ -27,7 +27,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						}, {	-- RENOWN 6 --
 						}, {	-- RENOWN 7 --
 						}, {	-- RENOWN 8 --
-							i(205275, {	-- Myrcelial Fabric Tunic
+							i(205275, {	-- Mycelial Fabric Tunic
 								cost = { { "c", DRAGON_SUPPLIES, 225 } },
 							}),
 							i(205272, {	-- Scent-Masking Vest

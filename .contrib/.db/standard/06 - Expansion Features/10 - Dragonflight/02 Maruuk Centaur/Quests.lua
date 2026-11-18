@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						groups = {
 							i(200483),	-- Nokhud Battle Helm
 							i(200490),	-- Nokhud Reaver's Helm
-							i(200486),	-- Ohn'ir Dayligt Visor
+							i(200486),	-- Ohn'ir Daylight Visor
 							i(200481),	-- Ohn'ir Midnight Helm
 							i(200487),	-- Shikaar Hunter's Visor
 							i(200489),	-- Shikaar Scout's Visor

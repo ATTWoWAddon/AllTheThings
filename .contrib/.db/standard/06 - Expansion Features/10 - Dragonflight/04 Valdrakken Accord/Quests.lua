@@ -529,7 +529,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						provider = { "n", 195768 },	-- Sorotis
 						coord = { 26.1, 40.0, VALDRAKKEN },
 						groups = {
-							i(199774),	-- Ancient Titan Blunderbus
+							i(199774),	-- Ancient Titan Blunderbuss
 							i(199772),	-- Titan Gatekeeper's Shield
 							i(199776),	-- Titan Watcher's Broadsword
 							i(199775),	-- Titan Watcher's Gladius
@@ -723,7 +723,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							}),
 						},
 					}),
-					q(66182, {	-- Gerithus's Reseach
+					q(66182, {	-- Gerithus's Research
 						sourceQuests = {
 							66179,	-- Seeds for the Future
 							66180,	-- Wake the Ancients
@@ -732,7 +732,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						coord = { 33.2, 51.7, OHNAHRAN_PLAINS },
 					}),
 					q(66183, {	-- Emerald Tears
-						sourceQuests = { 66182 },	-- Gerithus's Reseach
+						sourceQuests = { 66182 },	-- Gerithus's Research
 						provider = { "n", 189849 },	-- Gerithus
 						coord = { 28.4, 48.6, OHNAHRAN_PLAINS },
 						groups = {
@@ -754,7 +754,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(66181, {	-- A Frenzied Defender
-						sourceQuests = { 66182 },	-- Gerithus's Reseach
+						sourceQuests = { 66182 },	-- Gerithus's Research
 						provider = { "n", 189850 },	-- Rymek
 						coord = { 28.4, 48.7, OHNAHRAN_PLAINS },
 					}),
@@ -1182,7 +1182,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						groups = {
 							i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
 							i(197093),	-- Highland Drake: Silver and Purple Armor (MM!)
-							i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+							i(197350),	-- Renewed Proto-Drake: Silver and Purple Armor (MM!)
 							i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (MM!)
 
 							-- auto learns these Mount Mods

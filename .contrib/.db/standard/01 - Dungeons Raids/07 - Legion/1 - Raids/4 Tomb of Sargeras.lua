@@ -176,9 +176,9 @@ local EncounterToLoot = {
 		i(147014),	-- Locket of Splintered Souls
 		i(147114),	-- Preserved Starlight Incense
 		i(147158),	-- Radiant Lightbringer Cape
-		i(147024),	-- Relinquary of the Damned
+		i(147024),	-- Reliquary of the Damned
 		i(147163),	-- Shawl of Blind Absolution
-		i(146995),	-- Soul Queen's Ceremonial Robues
+		i(146995),	-- Soul Queen's Ceremonial Robes
 		i(147018),	-- Spectral Thurible
 		i(147134),	-- Stormheart Drape
 		i(147188),	-- Titanic Onslaught Cloak

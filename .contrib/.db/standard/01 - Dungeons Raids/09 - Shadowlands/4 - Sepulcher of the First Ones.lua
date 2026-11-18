@@ -48,7 +48,7 @@ local EncounterToCRS = {
 local EncounterToLoot = {
 	[VIGILANT_GUARDIAN] = {
 		i(189771),	-- Ancient Materium Tassets
-		i(188273),	-- Auxillary Attendant Chime
+		i(188273),	-- Auxiliary Attendant Chime
 		i(189774),	-- Fractured Colossus Core
 		i(189776),	-- Girdle of the First Gate
 		i(189775),	-- Helm of Solemn Vigil
@@ -197,7 +197,7 @@ local EncounterToLoot = {
 		}),
 		i(189835),	-- Anduin's Princely Vestments
 		i(189838),	-- Beacon of Stormwind
-		i(189837),	-- King's Wolfheart Wasitband
+		i(189837),	-- King's Wolfheart Waistband
 		i(189840),	-- Remnant's Blasphemous Scourgebelt
 		i(189841),	-- Soulwarped Seal of Menethil
 		i(189839),	-- Soulwarped Seal of Wrynn
@@ -221,7 +221,7 @@ local EncounterToLoot = {
 			i(188920),	-- Theurgic Starspeaker's Adornment
 		}),
 		i(191009, {	-- Zenith Shoulder Module
-			i(188914),	-- Tassets of the Grand Upwelling
+			i(188914),	-- Tassels of the Grand Upwelling
 			i(188905),	-- Soulblade Nightwings
 			i(188941),	-- Pauldrons of the Infinite Infantry
 		}),
@@ -673,7 +673,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			})),
 			n(SPECIAL, {
 				i(189167, {	-- Glimmer of Satisfaction
-					description = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
+					description = "Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds.",
 				}),
 				n(185032, {	-- Taskmaster Xy'pro <Cartel Xy>
 					description = "Killed when having 3 stacks of Synergy",

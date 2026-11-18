@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures,
 				i(137090),	-- Mo'arg Bionic Stabilizers
 				i(137091),	-- The Defiler's Lost Vambraces
 				i(144292),	-- Spirit of the Darkness Flame
-				i(151799),	-- Obilivion's Embrace
+				i(151799),	-- Oblivion's Embrace
 				i(138949),	-- Kirel Narak
 				i(137022),	-- Loramus Thalipedes' Sacrifice
 				i(137038),	-- Anger of the Half-Giants
@@ -30,7 +30,7 @@ root(ROOTS.ExpansionFeatures,
 				i(132376),	-- Acherus Drapes
 				i(151796),	-- Cold Heart
 				i(151795),	-- Soulflayer's Corruption
-				i(132365),	-- Shackles of Brynadaor
+				i(132365),	-- Shackles of Bryndaor
 				i(132448),	-- The Instructor's Fourth Lesson
 				i(132458),	-- Toravon's Whiteout Bindings
 				i(132441),	-- Draugr, Girdle of the Everlasting King
@@ -41,13 +41,13 @@ root(ROOTS.ExpansionFeatures,
 				i(133974),	-- Lana'thel's Lament
 				i(137037),	-- Uvanimor, the Unbeautiful
 				i(137223),	-- Seal of Necrofantasia
-				i(151640),	-- Soul of the Deahtlord
+				i(151640),	-- Soul of the Deathlord
 			}),
 			cl(DRUID, {
 				i(151801),	-- Behemoth Headdress
 				i(151783),	-- Chameleon Song
 				i(144432),	-- Oakheart's Puny Quods
-				i(137062),	-- The Emerald Dreamcatch
+				i(137062),	-- The Emerald Dreamcatcher
 				i(137072),	-- Aman'Thul's Wisdom
 				i(144295),	-- Lady and the Child
 				i(137015),	-- Ekowraith, Creator of Worlds
@@ -81,12 +81,12 @@ root(ROOTS.ExpansionFeatures,
 				i(137101),	-- Call of the Wild
 				i(141353),	-- Magnetized Blasting Cap Launcher
 				i(144303),	-- MKII  Gyroscopic Stabilizer
-				i(137082),	-- Hellbrine, Rope of the Mist Marauder
+				i(137082),	-- Helbrine, Rope of the Mist Marauder
 				i(137080),	-- Roar of the Seven Lions
 				i(137081),	-- War Belt of the Sentinel Army
 				i(137034),	-- Nesingwary's Trapping Treads
 				i(137227),	-- Qa'pla, Eredun War Order
-				i(137033),	-- Ulr's Feather Snowshoes
+				i(137033),	-- Ullr's Feather Snowshoes
 				i(137043),	-- Frizzo's Fingertrap
 				i(137055),	-- Zevrim's Hunger
 				i(137382),	-- The Apex Predator's Claw
@@ -153,7 +153,7 @@ root(ROOTS.ExpansionFeatures,
 				i(137059),	-- Tyr's Hand of Faith
 				i(137086),	-- Chain of Thrayn
 				i(137070),	-- Tyelca, Ferren Marcus's Stature
-				i(137046),	-- Iterendi, Crown Jewel of Silvermoon
+				i(137046),	-- Ilterendi, Crown Jewel of Silvermoon
 				i(137047),	-- Heathcliff's Immortality
 				i(137048),	-- Liadrin's Fury Unleashed
 				i(151644),	-- Soul of the Highlord
@@ -170,7 +170,7 @@ root(ROOTS.ExpansionFeatures,
 				i(151814),	-- Heart of the Void
 				i(132409),	-- Anund's Seared Shackles
 				i(132450),	-- Muze's Unwavering Will
-				i(132436),	-- Skjoldr, Sanctuary of Ivangont
+				i(132436),	-- Skjoldr, Sanctuary of Ivagont
 				i(144247),	-- Rammal's Ulterior Motive
 				i(132461),	-- Xalan the Feared's Clench
 				i(132445),	-- Al'maiesh, the Cord of Hope
@@ -210,7 +210,7 @@ root(ROOTS.ExpansionFeatures,
 				i(137058),	-- Praetorian's Tidecallers
 				i(151819),	-- Smoldering Heart
 				i(137085),	-- Intact Nazjatar Molting
-				i(137083),	-- Pristine Prot-Scale Girdle
+				i(137083),	-- Pristine Proto-Scale Girdle
 				i(137103),	-- Storm Tempests
 				i(137036),	-- Elemental Rebalancers
 				i(138117),	-- Spiritual Journey
@@ -227,7 +227,7 @@ root(ROOTS.ExpansionFeatures,
 				i(132375),	-- Odr, Shawl of the Ymirjar
 				i(144364),	-- Reap and Sow
 				i(151821),	-- The Master Harvester
-				i(132407),	-- Magistrike Restraits
+				i(132407),	-- Magistrike Restraints
 				i(132379),	-- Sin'dorei Spite
 				i(132381),	-- Streten's Sleepless Shackles
 				i(132456),	-- Feretory of Souls
@@ -265,7 +265,7 @@ root(ROOTS.ExpansionFeatures,
 			i(133976, {	-- Cinidaria, the Symbiote
 				classes = LEATHER_CLASSES,
 			}),
-			i(132455, {	-- Norgannon's Foresigh
+			i(132455, {	-- Norgannon's Foresight
 				classes = CLOTH_CLASSES,
 			}),
 			i(146667, {	-- Rethu's Incessant Courage
@@ -280,7 +280,7 @@ root(ROOTS.ExpansionFeatures,
 			i(146668, {	-- Vigilance Perch
 				classes = MAIL_CLASSES,
 			}),
-			i(132444),	-- Prydaz, Xavric's Magnum Opus
+			i(132444),	-- Prydaz, Xavaric's Magnum Opus
 			i(152626),	-- Insignia of the Grand Army
 			i(132452),	-- Sephuz's Secret
 			i(144249, {	-- Archimonde's Hatred Reborn

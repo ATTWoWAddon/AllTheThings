@@ -149,7 +149,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 			i(186969),	-- Collapsing Riftstone
 			-- Greens
 			i(186153),	-- Forsworn Seal
-			i(186151),	-- Mawsworn Assasin's Twinblade
+			i(186151),	-- Mawsworn Assassin's Twinblade
 			i(186143),	-- Mawsworn Assassin's Backstabber
 			i(186118),	-- Mawsworn Assassin's Belt
 			i(186114),	-- Mawsworn Assassin's Boots

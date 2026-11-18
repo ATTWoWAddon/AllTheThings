@@ -3351,7 +3351,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					-- #if BEFORE 10.1.5
 					cl(DEATHKNIGHT, BLOOD, {
-						i(153717),	-- Heart-Lession Greatsword
+						i(153717),	-- Heart-Lesion Greatsword
 						i(153737),	-- Heart-Lesion Faceguard
 						i(153739),	-- Heart-Lesion Amulet
 						i(153744),	-- Heart-Lesion Shoulderguards
@@ -3672,7 +3672,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(DRUID, {
 					i(157620),	-- Halberd of Ferocity
 					i(157648),	-- Oakenstaff Protector
-					i(150585),	-- Restorative Ashwood Stafft
+					i(150585),	-- Restorative Ashwood Staff
 					i(150583),	-- Staff of Astral Alignment
 					i(157621),	-- Staff of Regrowth
 				}),
@@ -4032,15 +4032,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(163311),	-- 7th Legionnaire's Shroud
 						i(163312),	-- 7th Legionnaire's Shawl
 						i(163416),	-- 7th Legionnaire's Drape
-						i(163344),	-- 7th Legionnarie's Cape
-						i(163345),	-- 7th Legionnarie's Leather Drape
+						i(163344),	-- 7th Legionnaire's Cape
+						i(163345),	-- 7th Legionnaire's Leather Drape
 						i(163346),	-- Warfront Gear Drape
 						i(163348),	-- Warfront Gear Cloak
 						i(163349),	-- 7th Legionnaire's Chain Cloak
 						i(163350),	-- 7th Legionnaire's Cloak
 						i(163352),	-- 7th Legionnaire's Steel Cloak
 						i(163354),	-- 7th Legionnaire's War Cloak
-						i(163353),	-- 7th Legionnarie's Greatcloak
+						i(163353),	-- 7th Legionnaire's Greatcloak
 						i(163356),	-- Honorbound Artificier's Drape (different version used with locked to specific classes)
 						i(163358),	-- Honorbound Artificier's Greatcloak (different version used with locked to specific classes)
 						i(163359),	-- Warfront Gear Cape
@@ -4053,7 +4053,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(163369),	-- Honorbound Centurion's Greatcloak
 						i(163370),	-- Warfront Gear Drape
 						i(163371),	-- Honorbound Centurion's Cloak
-						i(163415),	-- 7th Legionnarie's Iron Cloak
+						i(163415),	-- 7th Legionnaire's Iron Cloak
 					}),
 				}),
 			}),
@@ -5460,7 +5460,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188917),	-- Footwraps of the Grand Upwelling
 						i(188916),	-- Grips of the Grand Upwelling
 						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
+						i(188914),	-- Tassels of the Grand Upwelling
 						i(188915),	-- Waistwrap of the Grand Upwelling
 					}),
 					cl(PALADIN, {
@@ -5595,7 +5595,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188917),	-- Footwraps of the Grand Upwelling
 						i(188916),	-- Grips of the Grand Upwelling
 						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
+						i(188914),	-- Tassels of the Grand Upwelling
 						i(188915),	-- Waistwrap of the Grand Upwelling
 					}),
 					cl(PALADIN, {
@@ -5730,7 +5730,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188917),	-- Footwraps of the Grand Upwelling
 						i(188916),	-- Grips of the Grand Upwelling
 						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
+						i(188914),	-- Tassels of the Grand Upwelling
 						i(188915),	-- Waistwrap of the Grand Upwelling
 					}),
 					cl(PALADIN, {
@@ -5865,7 +5865,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188917),	-- Footwraps of the Grand Upwelling
 						i(188916),	-- Grips of the Grand Upwelling
 						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
+						i(188914),	-- Tassels of the Grand Upwelling
 						i(188915),	-- Waistwrap of the Grand Upwelling
 					}),
 					cl(PALADIN, {
@@ -6039,7 +6039,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188917),	-- Footwraps of the Grand Upwelling
 						i(188916),	-- Grips of the Grand Upwelling
 						i(188911),	-- Legguards of the Grand Upwelling
-						i(188914),	-- Tassets of the Grand Upwelling
+						i(188914),	-- Tassels of the Grand Upwelling
 						i(188915),	-- Waistwrap of the Grand Upwelling
 					}),
 					cl(PALADIN, {
@@ -6313,7 +6313,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(187658),	-- Evoker Armbands
 				i(187650),	-- Staff of Draconic Energies
 				--
-				i(188818),	-- Emerald Winglord's Shoulderss
+				i(188818),	-- Emerald Winglord's Shoulders
 				i(188825),	-- Emerald Winglord's Chain
 				i(188826),	-- Emerald Winglord's Staff
 				--
@@ -15980,7 +15980,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(237623),	-- Hollow Sentinel's Wingdrape
 						i(237624),	-- Hollow Sentinel's Stonecuffs
 						i(237625),	-- Hollow Sentinel's Greatbelt
-						i(237626),	-- Hollow Senintel's Perches
+						i(237626),	-- Hollow Sentinel's Perches
 						i(237627),	-- Hollow Sentinel's Stonekilt
 						i(237628),	-- Hollow Sentinel's Stonemask
 						i(237629),	-- Hollow Sentinel's Gauntlets
