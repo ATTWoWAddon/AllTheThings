@@ -4,7 +4,7 @@ param(
 	[ValidateSet(
 		'runtime-lua', 'lua-tests', 'lua-locales', 'xml', 'documentation',
 		'root-metadata', 'root-policy', 'root-scripts', 'editor-and-hooks',
-		'github-yaml', 'powershell', 'db-sync', 'contributor-tools',
+		'github-yaml', 'github-python', 'powershell', 'db-sync', 'contributor-tools',
 		'harvesters', 'dotnet-projects', 'database-scripts', 'codegraph',
 		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database',
 		'standard-database-core', 'standard-dungeons', 'standard-delves',
@@ -64,6 +64,10 @@ $groups = @{
 			':(glob).github/ISSUE_TEMPLATE/*.yml',
 			':(glob).github/workflows/*.yml'
 		)
+		Minimum = 1
+	}
+	'github-python' = @{
+		Pathspecs = @(':(glob).github/scripts/*.py')
 		Minimum = 1
 	}
 	'powershell' = @{

@@ -110,6 +110,12 @@ jobs:
           }
           & ./.github/scripts/Check-EditorConfig.ps1 -Group github-yaml -VerboseChecker
 
+      - name: Check GitHub Python
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group github-python -VerboseChecker
+
       - name: Check PowerShell scripts
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: pwsh

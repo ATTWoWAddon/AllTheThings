@@ -202,6 +202,16 @@ tab_width = 2
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+# GitHub automation scripts
+[/.github/scripts/*.py]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
 # Windows PowerShell 5.1 uses the UTF-8 BOM to recognize non-ASCII text.
 # Keep this encoding consistent even when these scripts are ASCII-only.
 [/{.contrib/.tools/GameObjectCache-to-ObjectDB.ps1,.contrib/src/Parser/tests/CostMerge.Tests.ps1,.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1}]
