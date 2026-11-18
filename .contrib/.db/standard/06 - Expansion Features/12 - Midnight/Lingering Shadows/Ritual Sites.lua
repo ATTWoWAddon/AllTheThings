@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					ach(62529),	-- Ritual Site Starter
 					ach(62450),	-- Ritual Sites 101: An Introduction to Basic Magical Rituals
 					ach(62451),	-- Ritual Sites 200: Intermediate Ritual Practices
-					ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'thelas
+					ach(62452),	-- Ritual Sites 320: Ritual Items and Their Uses in Quel'Thalas
 					ach(62453),	-- Ritual Sites 415: Applied Ritual Strategies
 					ach(62454),	-- Ritual Sites 505: A Seminar in Void Ritual Nuance
 					ach(62940, { timeline = { ADDED_12_0_7 } }),	-- Ritual Sites 612: Practical Ritual Work

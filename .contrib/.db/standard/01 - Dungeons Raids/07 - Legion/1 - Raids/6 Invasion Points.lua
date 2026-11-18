@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(152366),	-- Enthralling Chain Armor
 					i(152373),	-- Poison-Barbed Bracers
 					i(152364),	-- Cinch of Detestable Guile
-					i(152372),	-- Waistguard of Devlish Deeds
+					i(152372),	-- Waistguard of Devilish Deeds
 					i(152362),	-- Leggings of Heinous Acts
 					i(152349),	-- Nefarious Light-Step Slippers
 					i(152374),	-- Soul Crushing Stompers
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(152368),	-- Fel-Linked Crushers
 					i(152375),	-- Gauntlets of Barbaric Cruelty
 					i(152350),	-- Gloves of Grim Direction
-					i(152372),	-- Waistguard of Devlish Deeds
+					i(152372),	-- Waistguard of Devilish Deeds
 					i(152377),	-- Gore-Soaked Legplates
 					i(152362),	-- Leggings of Heinous Acts
 					i(152352),	-- Subjugated Drudge's Leggings

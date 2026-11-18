@@ -1727,7 +1727,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(112710),	-- Dagryn's Discarded Longbow
 							i(112717),	-- Flameslinger's Fiery Cowl
 							i(112713),	-- Thranok's Shattering Helm
-							i(112705),	-- Kruguk's Rigid Shoulderplates
+							i(112705),	-- Krugruk's Rigid Shoulderplates
 							i(112719),	-- Shoulderpads of Pulsing Protection
 							i(112704),	-- Arcsmasher Bracers
 							i(112712),	-- Dagryn's Fuselight Bracers
@@ -2556,7 +2556,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112710),	-- Dagryn's Discarded Longbow
 						i(112717),	-- Flameslinger's Fiery Cowl
 						i(112713),	-- Thranok's Shattering Helm
-						i(112705),	-- Kruguk's Rigid Shoulderplates
+						i(112705),	-- Krugruk's Rigid Shoulderplates
 						i(112719),	-- Shoulderpads of Pulsing Protection
 						i(112704),	-- Arcsmasher Bracers
 						i(112712),	-- Dagryn's Fuselight Bracers
@@ -3601,7 +3601,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112710),	-- Dagryn's Discarded Longbow
 						i(112717),	-- Flameslinger's Fiery Cowl
 						i(112713),	-- Thranok's Shattering Helm
-						i(112705),	-- Kruguk's Rigid Shoulderplates
+						i(112705),	-- Krugruk's Rigid Shoulderplates
 						i(112719),	-- Shoulderpads of Pulsing Protection
 						i(112704),	-- Arcsmasher Bracers
 						i(112712),	-- Dagryn's Fuselight Bracers
@@ -4636,7 +4636,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112710),	-- Dagryn's Discarded Longbow
 						i(112717),	-- Flameslinger's Fiery Cowl
 						i(112713),	-- Thranok's Shattering Helm
-						i(112705),	-- Kruguk's Rigid Shoulderplates
+						i(112705),	-- Krugruk's Rigid Shoulderplates
 						i(112719),	-- Shoulderpads of Pulsing Protection
 						i(112704),	-- Arcsmasher Bracers
 						i(112712),	-- Dagryn's Fuselight Bracers

@@ -1482,7 +1482,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 				i(124586),	-- Felbane Legplates
 			}),
 			container(124552, {	-- Baleful Treads
-				i(124571),	-- Felcast Sandles
+				i(124571),	-- Felcast Sandals
 				i(124572),	-- Bladefang Boots
 				i(124573),	-- Axeclaw Boots
 				i(124574),	-- Felbane Greaves

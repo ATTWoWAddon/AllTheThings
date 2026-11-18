@@ -1107,7 +1107,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				provider = { "o", 351888 },	-- Wanted: Summoner Marcelis
 				coord = { 30.8, 49.0, REVENDRETH },
 				groups = {
-					i(180459),	-- Dessication Duster
+					i(180459),	-- Desiccation Duster
 				},
 			}),
 			q(60279, {	-- WANTED: The Pale Doom

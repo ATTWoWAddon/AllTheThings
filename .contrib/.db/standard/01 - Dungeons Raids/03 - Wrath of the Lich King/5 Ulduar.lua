@@ -842,7 +842,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							i(45935),	-- Ironbark Faceguard
 							i(45941),	-- Chestguard of the Lasher
 							i(45940),	-- Tunic of the Limber Stalker
-							i(45936),	-- Legplates of Fluorishing Resolve
+							i(45936),	-- Legplates of Flourishing Resolve
 							i(46110, {	-- Alchemist's Cache
 								requireSkill = ALCHEMY,
 							}),
@@ -1829,7 +1829,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						creatureID = 33271,	-- General Vezax
 						groups = {
 							revampAch(3188, {	-- I Love the Smell of Saronite in the Morning (25 player)
-								i(45516),	-- Voidrethar, Dark Blade of Oblivion
+								i(45516),	-- Voldrethar, Dark Blade of Oblivion
 								i(45517),	-- Pendulum of Infinity
 								i(45519),	-- Vestments of the Blind Denizen
 								i(45520),	-- Handwraps of the Vigilant
@@ -2684,7 +2684,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(45940),	-- Tunic of the Limber Stalker
 						i(45481),	-- Gauntlets of Ruthless Reprisal
 						i(45482),	-- Leggings of the Lifetender
-						i(45936),	-- Legplates of Fluorishing Resolve
+						i(45936),	-- Legplates of Flourishing Resolve
 						i(45483),	-- Boots of the Servant
 						i(46110, {	-- Alchemist's Cache
 							requireSkill = ALCHEMY,
@@ -2752,7 +2752,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					groups = {
 						ach(12373, {	-- I Love the Smell of Saronite in the Morning
 							i(46033),	-- Tortured Earth
-							i(45516),	-- Voidrethar, Dark Blade of Oblivion
+							i(45516),	-- Voldrethar, Dark Blade of Oblivion
 							i(46035),	-- Aesuga, Hand of the Argent Champion
 							i(46036),	-- Void Sabre
 							i(45517),	-- Pendulum of Infinity

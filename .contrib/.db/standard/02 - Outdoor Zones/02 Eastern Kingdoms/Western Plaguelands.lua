@@ -2561,7 +2561,7 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 						},
 					}),
 					i(62194),	-- Breastplate of the Patient
-					i(62193),	-- Leggings of the Slipper Shifter
+					i(62193),	-- Leggings of the Slippery Shifter
 					i(131627, {	-- Scaled Pants of Patience
 						timeline = { ADDED_7_0_3 },
 					}),

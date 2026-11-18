@@ -2284,7 +2284,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						i(47095),	-- Cloak of Displacement
 						i(47086),	-- Chestplate of the Frostborn Hero
 						i(47096),	-- Vestments of the Shattered Fellowship
-						i(47074),	-- Bracers of the Untold Massacer
+						i(47074),	-- Bracers of the Untold Massacre
 						i(47098),	-- Vambraces of the Broken Bond
 						i(47084),	-- Cord of Biting Cold
 						i(47076),	-- Girdle of Bloodied Scars

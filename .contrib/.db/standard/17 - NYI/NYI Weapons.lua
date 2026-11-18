@@ -372,7 +372,7 @@ root(ROOTS.NeverImplemented, {
 					i(189107),	-- 10.0 QRP Template <Descriptor> Gun
 					i(189337),	-- 10.0 Zone Uncommon Template <Descriptor> Gun
 					i(201232),	-- Bonedust Spreader
-					i(200176),	-- Missingway Hand Canno
+					i(200176),	-- Missingway Hand Cannon
 				}),
 			}),
 		}),
@@ -2236,7 +2236,7 @@ root(ROOTS.NeverImplemented, {
 				i(99780),	-- Tyrannical Gladiator's Longbow
 				i(99892),	-- Tyrannical Gladiator's Pike
 				i(99834),	-- Tyrannical Gladiator's Rifle
-				i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(99804),	-- Tyrannical Gladiator's Touch of Defeat
 				i(94324),	-- Tyrannical Gladiator's Bonegrinder
 				i(94314),	-- Tyrannical Gladiator's Fleshslicer
 				i(94303),	-- Tyrannical Gladiator's Longbow
@@ -2249,7 +2249,7 @@ root(ROOTS.NeverImplemented, {
 				i(99964),	-- Tyrannical Gladiator's Longbow
 				i(99980),	-- Tyrannical Gladiator's Pike
 				i(99970),	-- Tyrannical Gladiator's Rifle
-				i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(99966),	-- Tyrannical Gladiator's Touch of Defeat
 				i(91200),	-- Tyrannical Gladiator's Shiv
 			}),
 			n(SEASON_MALEVOLENT, {

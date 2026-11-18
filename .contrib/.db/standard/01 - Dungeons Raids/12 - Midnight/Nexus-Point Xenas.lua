@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(251215),	-- Greaves of the Divine Guile
 					i(251216),	-- Maledict Vest
 					i(250241),	-- Mark of Light
-					i(251217),	-- Occulsion of Void
+					i(251217),	-- Occlusion of Void
 					i(251212),	-- Radiant Slicer
 					i(251157),	-- Searing Spaulders
 				}),

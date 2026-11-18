@@ -84,8 +84,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108019),	-- Draenic Steel Helm
 					i(108027),	-- Draenic Steel Helm
 					i(108035),	-- Draenic Steel Helm
-					i(107970),	-- Draenic Steel Guantlets
-					i(107978),	-- Draenic Steel Guantlets
+					i(107970),	-- Draenic Steel Gauntlets
+					i(107978),	-- Draenic Steel Gauntlets
 					i(107986),	-- Draenic Steel Gauntlets
 					i(107994),	-- Draenic Steel Gauntlets
 					i(108002),	-- Draenic Steel Gauntlets
@@ -145,7 +145,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- #endif
 					-- #if BEFORE 10.1.5
 					-- All was added into Dawn of the Infinite dungeon [Quantum Gloves]
-					i(108080),	-- Hardened Draenic Steel Guantlets
+					i(108080),	-- Hardened Draenic Steel Gauntlets
 					-- #endif
 					-- #if BEFORE 10.2.7
 					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
@@ -183,13 +183,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					-- #endif
 					-- #if BEFORE 10.1.5
 					-- All was added into Dawn of the Infinite dungeon [Quantum Gloves]
-					i(108164),	-- Peerless Draenic Steel Guantlets
-					i(108180),	-- Peerless Draenic Steel Guantlets
-					i(108188),	-- Peerless Draenic Steel Guantlets
-					i(108196),	-- Peerless Draenic Steel Guantlets
-					i(108204),	-- Peerless Draenic Steel Guantlets
-					i(108212),	-- Peerless Draenic Steel Guantlets
-					i(108220),	-- Peerless Draenic Steel Guantlets
+					i(108164),	-- Peerless Draenic Steel Gauntlets
+					i(108180),	-- Peerless Draenic Steel Gauntlets
+					i(108188),	-- Peerless Draenic Steel Gauntlets
+					i(108196),	-- Peerless Draenic Steel Gauntlets
+					i(108204),	-- Peerless Draenic Steel Gauntlets
+					i(108212),	-- Peerless Draenic Steel Gauntlets
+					i(108220),	-- Peerless Draenic Steel Gauntlets
 					-- #endif
 					-- #if BEFORE 10.2.7
 					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]

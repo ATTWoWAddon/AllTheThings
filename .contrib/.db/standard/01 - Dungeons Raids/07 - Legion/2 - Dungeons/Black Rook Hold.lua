@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(136976),	-- Etheldrin's Breastplate
 						i(134437),	-- Harrowing Soulspun Bracers
 						i(134469),	-- Midnight Reaper Handwraps
-						i(139242),	-- Raven's Vil Gloves
+						i(139242),	-- Raven's Veil Gloves
 						i(139246),	-- Ravencourt Formal Robes
 						i(139241),	-- Rook Footman's Warboots
 						i(139245),	-- Shadow Archer's Spaulders
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(136770),	-- Drape of the Raven Lord
 						i(134370),	-- Felbat Leather Leggings
 						i(134431),	-- Latosius's Blasting Gloves
-						i(134384),	-- Madrum Chain Wristclamp
+						i(134384),	-- Mardum Chain Wristclamp
 						i(134451),	-- Legguards of Endless Horrors
 						i(134394),	-- Netherwhisper Leggings
 						i(134510),	-- Pauldrons of Ancient Command
@@ -183,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136976),	-- Etheldrin's Breastplate
 							i(134437),	-- Harrowing Soulspun Bracers
 							i(134469),	-- Midnight Reaper Handwraps
-							i(139242),	-- Raven's Vil Gloves
+							i(139242),	-- Raven's Veil Gloves
 							i(139246),	-- Ravencourt Formal Robes
 							i(139241),	-- Rook Footman's Warboots
 							i(139245),	-- Shadow Archer's Spaulders
@@ -233,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
 							i(134431),	-- Latosius's Blasting Gloves
-							i(134384),	-- Madrum Chain Wristclamp
+							i(134384),	-- Mardum Chain Wristclamp
 							i(134451),	-- Legguards of Endless Horrors
 							i(134394),	-- Netherwhisper Leggings
 							i(134510),	-- Pauldrons of Ancient Command
@@ -266,7 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136976),	-- Etheldrin's Breastplate
 							i(134437),	-- Harrowing Soulspun Bracers
 							i(134469),	-- Midnight Reaper Handwraps
-							i(139242),	-- Raven's Vil Gloves
+							i(139242),	-- Raven's Veil Gloves
 							i(139246),	-- Ravencourt Formal Robes
 							i(139241),	-- Rook Footman's Warboots
 							i(139245),	-- Shadow Archer's Spaulders
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136770),	-- Drape of the Raven Lord
 							i(134370),	-- Felbat Leather Leggings
 							i(134431),	-- Latosius's Blasting Gloves
-							i(134384),	-- Madrum Chain Wristclamp
+							i(134384),	-- Mardum Chain Wristclamp
 							i(134451),	-- Legguards of Endless Horrors
 							i(134394),	-- Netherwhisper Leggings
 							i(134510),	-- Pauldrons of Ancient Command

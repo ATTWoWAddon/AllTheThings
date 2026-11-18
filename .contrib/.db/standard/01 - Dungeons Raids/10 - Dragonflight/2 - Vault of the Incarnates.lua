@@ -250,7 +250,7 @@ InstanceHelper.ExtraLoots = {
 				i(196586, {	-- Dreadful Amethyst Forgestone
 					i(200405),	-- Breastplate of the Haunted Frostbrood
 					i(200342),	-- Skybound Avenger's Harness
-					i(200333),	-- Scalesworn Cultist's Frosk
+					i(200333),	-- Scalesworn Cultist's Frock
 				}),
 				i(196596, {	-- Mystic Amethyst Forgestone
 					i(200351),	-- Lost Landcaller's Robes

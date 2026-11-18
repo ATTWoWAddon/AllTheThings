@@ -1607,7 +1607,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 					objective(2, {	-- Blackrock Invasion Plans
 						provider = { "i", 58937 },	-- Blackrock Invasion Plans (QI!)
 					}),
-					i(60703),	-- Escalation Britchers
+					i(60703),	-- Escalation Britches
 					i(60705),	-- Legguards of Invasion
 					i(131552, {	-- Mongrel Greaves
 						timeline = { ADDED_7_0_3 },

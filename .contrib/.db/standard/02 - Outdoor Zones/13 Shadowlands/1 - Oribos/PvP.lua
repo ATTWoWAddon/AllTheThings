@@ -171,7 +171,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 							i(181837),	-- Clear Mind
 							i(182769),	-- Combusting Engine
 							i(183197),	-- Controlled Destruction
-							i(187506),	-- Condensed Anime Sphere
+							i(187506),	-- Condensed Anima Sphere
 							i(181462),	-- Coordinated Offensive
 							i(180935),	-- Crash the Ramparts
 							i(182598),	-- Demon Muzzle

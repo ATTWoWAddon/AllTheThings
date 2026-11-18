@@ -87,13 +87,13 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					groups = {
 						i(132459),	-- Perseverance of the Ebon Martyr
 						i(144280),	-- Death March
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(144281),	-- Skullflower's Haemostasis
 						i(137075),	-- Tak'theritrix's Shoulderpads
 						i(132376),	-- Acherus Drapes
 						i(151796),	-- Cold Heart
 						i(151795),	-- Soulflayer's Corruption
-						i(132365),	-- Shackles of Brynadaor
+						i(132365),	-- Shackles of Bryndaor
 						i(132448),	-- The Instructor's Fourth Lesson
 						i(132458),	-- Toravon's Whiteout Bindings
 						i(132441),	-- Draugr, Girdle of the Everlasting King
@@ -126,7 +126,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(151814),	-- Heart of the Void
 						i(132409),	-- Anund's Seared Shackles
 						i(132450),	-- Muze's Unwavering Will
-						i(132436),	-- Skjoldr, Sanctuary of Ivangont
+						i(132436),	-- Skjoldr, Sanctuary of Ivagont
 						i(144247),	-- Rammal's Ulterior Motive
 						i(132461),	-- Xalan the Feared's Clench
 						i(132445),	-- Al'maiesh, the Cord of Hope
@@ -136,7 +136,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132455),	-- Norgannon's Foresight (Cloth classes)
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(133973),	-- The Twins' Painful Touch
 						i(137276),	-- N'ero, Band of Promises
 						i(151646),	-- Soul of the High Priest
@@ -150,23 +150,23 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					groups = {
 						i(137064),	-- The Shadow Hunter's Voodoo Mask
 						i(144326),	-- The Mantle of Command
-						i(151803),	-- Celerity of the Windrunnerszao
+						i(151803),	-- Celerity of the Windrunners
 						i(151807),	-- Unseen Predator's Cloak
 						i(144361),	-- Butcher's Bone Apron
 						i(151805),	-- Parsel's Tongue
 						i(137101),	-- Call of the Wild
 						i(141353),	-- Magnetized Blasting Cap Launcher
 						i(144303),	-- MKII  Gyroscopic Stabilizer
-						i(137082),	-- Hellbrine, Rope of the Mist Marauder
+						i(137082),	-- Helbrine, Rope of the Mist Marauder
 						i(137080),	-- Roar of the Seven Lions
 						i(137081),	-- War Belt of the Sentinel Army
 						i(132466),	-- Roots of Shaladrassil (Mail classes)
 						i(137034),	-- Nesingwary's Trapping Treads
 						i(137227),	-- Qa'pla, Eredun War Order
-						i(137033),	-- Ulr's Feather Snowshoes
+						i(137033),	-- Ullr's Feather Snowshoes
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(137043),	-- Frizzo's Fingertrap
 						i(137055),	-- Zevrim's Hunger
 						i(137382),	-- The Apex Predator's Claw
@@ -178,7 +178,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					_drop = { "spellID" },
 					groups = {
 						i(137061),	-- Raddon's Cascading Eyes
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(144279),	-- Delusions of Grandeur
 						i(137071),	-- Runemaster's Pauldrons
 						i(151798),	-- Chaos Theory
@@ -188,7 +188,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137091),	-- The Defiler's Lost Vambraces
 						i(144292),	-- Spirit of the Darkness Flame
 						i(133976),	-- Cinidaria, the Symbiote (Leather classes)
-						i(151799),	-- Obilivion's Embrace
+						i(151799),	-- Oblivion's Embrace
 						i(138949),	-- Kirel Narak
 						i(137022),	-- Loramus Thalipedes' Sacrifice
 						i(137038),	-- Anger of the Half-Giants
@@ -213,7 +213,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137058),	-- Praetorian's Tidecallers
 						i(151819),	-- Smoldering Heart
 						i(137085),	-- Intact Nazjatar Molting
-						i(137083),	-- Pristine Prot-Scale Girdle
+						i(137083),	-- Pristine Proto-Scale Girdle
 						i(137103),	-- Storm Tempests
 						i(132466),	-- Roots of Shaladrassil (Mail classes)
 						i(137036),	-- Elemental Rebalancers
@@ -221,7 +221,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137035),	-- The Deceiver's Blood Pact
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(137050),	-- Eye of the Twisting Nether
 						i(137051),	-- Focuser of Jonat, the Elder
 						i(151647),	-- Soul of the Farseer
@@ -252,7 +252,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132452),	-- Sephuz's Secret
 						i(144249),	-- Archimonde's Hatred Reborn
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(137044),	-- Jewel of the Lost Abbey
 						i(137045),	-- Eye of Collidus the Warp-Watcher
 						i(137220),	-- March of the Legion
@@ -268,7 +268,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					_drop = { "spellID" },
 					groups = {
 						i(151815),	-- The Empty Crown
-						i(144236),	-- Mantle of the Master Assassino
+						i(144236),	-- Mantle of the Master Assassin
 						i(151817),	-- The Curse of Restlessness
 						i(137021),	-- The Dreadlord's Deceit
 						i(137100),	-- Denial of the Half-Giants
@@ -283,7 +283,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137031),	-- Thraxi's Tricksy Treads
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(137049),	-- Insignia of Ravenholdt
 						i(150936),	-- Soul of the Shadowblade
 					},
@@ -311,8 +311,8 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132452),	-- Sephuz's Secret
 						i(144249),	-- Archimonde's Hatred Reborn
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
-						i(137046),	-- Iterendi, Crown Jewel of Silvermoon
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
+						i(137046),	-- Ilterendi, Crown Jewel of Silvermoon
 						i(137047),	-- Heathcliff's Immortality
 						i(137048),	-- Liadrin's Fury Unleashed
 						i(151644),	-- Soul of the Highlord
@@ -324,10 +324,10 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 					_drop = { "spellID" },
 					groups = {
 						i(151801),	-- Behemoth Headdress
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(151783),	-- Chameleon Song
 						i(144432),	-- Oakheart's Puny Quods
-						i(137062),	-- The Emerald Dreamcatch
+						i(137062),	-- The Emerald Dreamcatcher
 						i(137072),	-- Aman'Thul's Wisdom
 						i(144295),	-- Lady and the Child
 						i(151800),	-- Radiant Moonlight
@@ -368,7 +368,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132375),	-- Odr, Shawl of the Ymirjar
 						i(144364),	-- Reap and Sow
 						i(151821),	-- The Master Harvester
-						i(132407),	-- Magistrike Restraits
+						i(132407),	-- Magistrike Restraints
 						i(132379),	-- Sin'dorei Spite
 						i(132381),	-- Streten's Sleepless Shackles
 						i(132456),	-- Feretory of Souls
@@ -378,7 +378,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132455),	-- Norgannon's Foresight (Cloth classes)
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(132369),	-- Wilfred's Sigil of Superior Summoning
 						i(132378),	-- Sacrolash's Dark Strike
 						i(132460),	-- Alythess's Pyrogenics
@@ -408,7 +408,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132455),	-- Norgannon's Foresight (Cloth classes)
 						i(132452),	-- Sephuz's Secret
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(132410),	-- Shard of the Exodar
 						i(151642),	-- Soul of the Archmage
 					},
@@ -420,7 +420,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137088),	-- Ceann-Ar Charger
 						i(151823),	-- The Great Storm's Eye
 						i(143728),	-- Timeless Stratagem
-						i(137053),	-- Kazzalax, Fujieda's Furyn
+						i(137053),	-- Kazzalax, Fujieda's Fury
 						i(137018),	-- Destiny Driver
 						i(137107),	-- Mannoroth's Bloodletting Manacles
 						i(137060),	-- Archavon's Heavy Hand
@@ -434,7 +434,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(132452),	-- Sephuz's Secret
 						i(144249),	-- Archimonde's Hatred Reborn
 						i(144259),	-- Kil'jaeden's Burning Wish
-						i(132444),	-- Prydaz, Xavric's Magnum Opus
+						i(132444),	-- Prydaz, Xavaric's Magnum Opus
 						i(137052),	-- Ayala's Stone Heart
 						i(151650),	-- Soul of the Battlelord
 						i(137054),	-- The Walls Fell

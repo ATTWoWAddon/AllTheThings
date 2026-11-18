@@ -868,7 +868,7 @@ root(ROOTS.Character, n(HERITAGE, {
 					i(161065),	-- Frostwolf Clan Boots
 					i(160992),	-- Warsong Clan Helm
 					i(160993),	-- Warsong Clan Pauldrons
-					i(160994),	-- Warsong Clan Harmess
+					i(160994),	-- Warsong Clan Harness
 					i(161003),	-- Warsong Clan Bracers
 					i(160999),	-- Warsong Clan Gloves
 					i(161000),	-- Warsong Clan Belt
@@ -892,7 +892,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				groups = {
 					ach(14014),	-- Heritage of the Mechagnome
 					i(173961),	-- Mechagnome Heritage Helmet
-					i(173963),	-- Mechagnome Heritage Shouldergaurds
+					i(173963),	-- Mechagnome Heritage Shoulderguards
 					i(173972),	-- Mechagnome Heritage Cloak
 					i(173958),	-- Mechagnome Heritage Chestpiece
 					i(173964),	-- Mechagnome Heritage Buckle
@@ -1756,7 +1756,7 @@ root(ROOTS.Character, n(HERITAGE, {
 					i(173971),	-- Vulpera Heritage Shoulderpads
 					i(174376),	-- Vulpera Heritage Rucksack
 					i(173966),	-- Vulpera Heritage Vest
-					i(174355),	-- Vulpera Heritage Wristraps
+					i(174355),	-- Vulpera Heritage Wristwraps
 					i(173967),	-- Vulpera Heritage Handgrips
 					i(174354),	-- Vulpera Heritage Footwraps
 					i(173970),	-- Vulpera Heritage Utility Belt

@@ -1458,7 +1458,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				groups = {
 					i(82541),	-- Waterfall Gloves
 					i(82542),	-- Mushan Hide Gloves
-					i(82543),	-- Dreaming Spirit Guantlets
+					i(82543),	-- Dreaming Spirit Gauntlets
 					i(82544),	-- Serenity Gloves
 					i(82545),	-- Mindbender Handguards
 					i(82546),	-- Silentleaf Gloves

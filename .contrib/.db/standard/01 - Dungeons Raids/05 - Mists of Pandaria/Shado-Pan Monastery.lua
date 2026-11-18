@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					groups = {
 						i(87327),	-- Cloudstriker Cord
 						i(87332),	-- Cord of Disturbed Dreams
-						i(87324),	-- Cord of Sha Ravagery
+						i(87324),	-- Cord of Sha Savagery
 						i(87329),	-- Elemental Archer's Links
 						i(87331),	-- Girdle of the Broken Seal
 						i(87325),	-- Kun-Lai Climbing Belt

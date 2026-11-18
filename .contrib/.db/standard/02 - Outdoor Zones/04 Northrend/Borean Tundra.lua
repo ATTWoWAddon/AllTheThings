@@ -3129,7 +3129,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							i(38464),	-- Gnomish Magician's Quill
 							i(38455),	-- Hammer of the Alliance Vanguard
 							i(38463),	-- Lordaeron's Resolve
-							i(38459),	-- Orb of the Eastern Kingdons
+							i(38459),	-- Orb of the Eastern Kingdoms
 							i(38457),	-- Sawed-Off Hand Cannon
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger

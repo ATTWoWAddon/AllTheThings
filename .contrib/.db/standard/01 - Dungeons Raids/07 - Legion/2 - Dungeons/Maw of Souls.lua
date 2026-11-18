@@ -24,7 +24,7 @@ local EncounterToLoot = {
 	};
 	[HARBARON] = {
 		i(133768),	-- Harbaron's Tether
-		i(133645),	-- Neglfar Fare
+		i(133645),	-- Naglfar Fare
 		i(137327),	-- Relinquishing Grip of Helheim
 	};
 	[HELYA] = {
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				BossOnly(YMIRON, {
 					i(134199),	-- Biornskin Belt
 					i(134217),	-- Bonespeaker Gloves
-					i(134179),	-- Skoldiir Breadsplate
+					i(134179),	-- Skoldiir Breastplate
 					i(134210),	-- Tideskorn Sabatons
 					i(139619),	-- Ymiron's Broken Blade (QS!)
 				}),

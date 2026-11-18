@@ -13,7 +13,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 				sym = {{ "achievement_criteria" }},
 			}),
 			ach(13472),	-- Deep Pockets
-			ach(13473, {	-- Diversed Investments
+			ach(13473, {	-- Diversified Investments
 				crit(44303),	-- Flame Turret
 				crit(44304),	-- Drill Rig
 				crit(44305),	-- Charging Station

@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28828),	-- Gronn-Stitched Girdle
 					i(28810),	-- Windshear Boots
 					i(28830),	-- Dragonspine Trophy
-					i(28823),	-- Eye of Grull
+					i(28823),	-- Eye of Gruul
 					i(31750),	-- Earthen Signet
 				},
 			}),

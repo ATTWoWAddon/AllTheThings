@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(197891),	-- Embroidered Broadhoof Cowl
 						i(197889),	-- Geyserwalker Visage
 						i(197897),	-- Keratin-Reinforced Coif
-						i(197899),	-- Speakbreaker Barbuta
+						i(197899),	-- Spearbreaker Barbuta
 						i(197359),	-- Renewed Proto-Drake: Hairy Brow (MM!)
 					},
 				}),

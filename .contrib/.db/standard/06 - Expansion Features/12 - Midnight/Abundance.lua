@@ -51,7 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 				ach(61940),	-- Abundance: Artisan of Loanite
 				ach(61937),	-- Abundance: Artisan of Mausoloa
 				ach(42283),	-- Abundance: Azeroth Runs on Dundun
-				ach(62336),	-- Abundance: Contributer
+				ach(62336),	-- Abundance: Contributor
 				ach(62331),	-- Abundance: Drops of Prosperity
 				ach(62332),	-- Abundance: Dundun's Favored
 				ach(62339),	-- Abundance: Gambler

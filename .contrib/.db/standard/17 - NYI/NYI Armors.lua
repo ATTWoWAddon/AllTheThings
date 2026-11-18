@@ -2711,7 +2711,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(147058),	-- Chaos-Calming Wristguards
 			}),
 			filter(PLATE, {
-				i(147074),	-- Vambraces of Resoulte Justice
+				i(147074),	-- Vambraces of Resolute Justice
 			}),
 			filter(TABARDS, {
 				i(147204),	-- Black Apron - TEST

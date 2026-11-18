@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(193715),	-- Boots of Explosive Growth
 						i(193713),	-- Experimental Safety Gloves
 						i(193714),	-- Frenzyroot Cuffs
-						i(193717),	-- Mystakra's Harvester
+						i(193717),	-- Mystakria's Harvester
 						i(193712),	-- Potion-Stained Cloak
 					},
 				}),

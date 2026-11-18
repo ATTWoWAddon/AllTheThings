@@ -2691,7 +2691,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_FIVE, i(22208)),	-- Lavastone Hammer
 						i(11935),	-- Magmus Stone
 						i(11746),	-- Golem Skull Helm
-						i(151411, {	-- Molten-Warden Leggings
+						i(151411, {	-- Molten-Warder Leggings
 							timeline = { ADDED_7_3_0 },
 						}),
 						i(22275),	-- Firemoss Boots
@@ -2748,7 +2748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(246429, {	-- Dark Iron Chandelier (DECOR!)
 							timeline = { ADDED_11_2_7 },
 						}),
-						i(11931),	-- Dreadforge Retaliatior
+						i(11931),	-- Dreadforge Retaliator
 						-- #if BEFORE 7.3.2
 						i(11932),	-- Guiding Stave of Wisdom
 						-- #endif

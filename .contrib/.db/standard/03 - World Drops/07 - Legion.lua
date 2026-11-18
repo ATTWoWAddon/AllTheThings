@@ -122,7 +122,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, {
 	}),
 	n(WEAPONS, {
 		i(121382),	-- Arthropod Leg Club
-		i(132921),	-- Athrog's Dethamma
+		i(132921),	-- Athrog's Dethhamma
 		i(121376),	-- Azsharan Queensguard Blade
 		i(121377),	-- Beastmaster's Discarded Axe
 		i(121338),	-- Bent-Blade Axe

@@ -472,7 +472,7 @@ maproot(ZANDALAR, VOLDUN, {
 					i(159982),	-- Exiled Veteran's Crushers
 					i(155413),	-- Lastwind Bands
 					i(159981),	-- Lastwind Handwraps
-					i(159980),	-- Resilient Outcast's Guantlets
+					i(159980),	-- Resilient Outcast's Gauntlets
 					i(155415),	-- Resilient Outcast's Vambraces
 					i(159983),	-- Scorching Sands Handwraps
 					i(155416),	-- Scorching Sands Wristwraps

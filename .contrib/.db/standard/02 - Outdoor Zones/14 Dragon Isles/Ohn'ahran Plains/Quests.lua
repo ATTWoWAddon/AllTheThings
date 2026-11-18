@@ -98,7 +98,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 						--
 						i(197657),	-- Nokhud Reaver Waistguard
 						i(197658),	-- Ohn'ir Initiate Sash
-						i(197659),	-- Shikaar Scount Buckle
+						i(197659),	-- Shikaar Scout Buckle
 						i(197660),	-- Teerai Watcher Belt
 					},
 				}),
@@ -166,7 +166,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 					groups = {
 						i(197637),	-- Nokhud Reaver Stompers
 						i(197686),	-- Ohn'ir Initiate Slippers
-						i(197687),	-- Shikaar Scount Sabatons
+						i(197687),	-- Shikaar Scout Sabatons
 						i(197688),	-- Teerai Watcher Moccasins
 					},
 				}),

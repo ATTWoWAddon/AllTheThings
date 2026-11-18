@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			n(ACHIEVEMENTS, {
 				ach(14173),	-- A Mountain of Mementos
 				ach(14172),	-- A Monumental Amount of Mementos
-				ach(14171),	-- Momento Mori
+				ach(14171),	-- Memento Mori
 				ach(14170),	-- Thanks For The Mementos
 				ach(14162),	-- Horrific Masquerade
 				ach(14140, {	-- Mad World

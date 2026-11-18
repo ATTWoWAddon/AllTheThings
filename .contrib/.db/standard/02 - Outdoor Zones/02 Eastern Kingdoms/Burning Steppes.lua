@@ -907,7 +907,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(64537),	-- Breastplate of the Mobile Batallion
-					i(64536),	-- Gauntlents of Completion
+					i(64536),	-- Gauntlets of Completion
 					i(64535),	-- Belt of Preparation
 					i(64534),	-- Kubit's Dagger
 					i(64533),	-- Stratagem Band

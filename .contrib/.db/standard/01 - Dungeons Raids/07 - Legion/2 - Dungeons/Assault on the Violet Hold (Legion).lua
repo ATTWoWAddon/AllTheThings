@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					cr(102387, e(1697, {	-- Sael'orn
 						i(134436),	-- Armbands of Slaughter
 						i(134482),	-- Cinch of Frozen Fear
-						i(134521),	-- Dread-Stricken Shoudlerguards
+						i(134521),	-- Dread-Stricken Shoulderguards
 						i(134371),	-- Felbat Leather Gloves
 						i(137447),	-- Lair Matron's Spaulders
 						i(137450),	-- Leggings of Acidic Venom
@@ -229,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							ach(10799),	-- Heroic: Assault on Violet Hold
 							i(134436),	-- Armbands of Slaughter
 							i(134482),	-- Cinch of Frozen Fear
-							i(134521),	-- Dread-Stricken Shoudlerguards
+							i(134521),	-- Dread-Stricken Shoulderguards
 							i(134371),	-- Felbat Leather Gloves
 							i(137447),	-- Lair Matron's Spaulders
 							i(137450),	-- Leggings of Acidic Venom
@@ -358,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							ach(10860),	-- Mythic: Assault on Violet Hold Guild Run
 							i(134436),	-- Armbands of Slaughter
 							i(134482),	-- Cinch of Frozen Fear
-							i(134521),	-- Dread-Stricken Shoudlerguards
+							i(134521),	-- Dread-Stricken Shoulderguards
 							i(134371),	-- Felbat Leather Gloves
 							i(137447),	-- Lair Matron's Spaulders
 							i(137450),	-- Leggings of Acidic Venom

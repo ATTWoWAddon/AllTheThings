@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							provider = { "o", 193051 },	-- Nerubian Scourge Egg
 						}),
 						i(44362),	-- Expelling Gauntlets
-						i(44363),	-- Pruging Handguards
+						i(44363),	-- Purging Handguards
 						i(44364),	-- Wraps of Quelled Bane
 						i(44365),	-- Gloves of Banished Infliction
 					},

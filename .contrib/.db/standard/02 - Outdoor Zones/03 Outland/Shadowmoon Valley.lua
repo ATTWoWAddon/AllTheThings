@@ -1281,7 +1281,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(30940),	-- Aged Leather Bindings
 						i(30961),	-- Ash-Covered Helm
-						i(30922),	-- Ata'mai Crown
+						i(30922),	-- Ata'mal Crown
 						i(30958),	-- Blackened Chain Greaves
 					},
 				}),

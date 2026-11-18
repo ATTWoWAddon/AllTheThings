@@ -332,7 +332,7 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 					i(61080),	-- Band of Raptor Teeth
 					i(61079),	-- Belt of the High Shaman
 					i(61078),	-- Thaalia's Slippers
-					i(61077),	-- Jingle Spirits' Embrace
+					i(61077),	-- Jungle Spirits' Embrace
 					i(131599, {	-- Waistguard of the High Shaman
 						timeline = { ADDED_7_0_3 },
 					}),
@@ -363,7 +363,7 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 					}),
 					i(61123),	-- Band of Raptor Teeth
 					i(61122),	-- Belt of the High Shaman
-					i(61121),	-- Hu'rula's Slippers
+					i(61121),	-- Hu'rala's Slippers
 					i(61120),	-- Jungle Spirits' Embrace
 					i(131515, {	-- Waistguard of the High Shaman
 						timeline = { ADDED_7_0_3 },

@@ -1783,7 +1783,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 35.3, 66.3, ICECROWN },
 					groups = {
 						i(44378),	-- Mantle of the Flesh Giant
-						i(44379),	-- Shoulderpads of Fleshworks
+						i(44379),	-- Shoulderpads of Fleshwerks
 						i(44380),	-- Giant Champion's Spaulders
 						i(44381),	-- Pauldrons of Morbidus
 					},
@@ -2304,7 +2304,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						}, {	-- Exalted
 							i(44302),	-- Belt of Dark Mending
 							i(44303),	-- Darkheart Chestguard
-							i(44306),	-- Death-Insured Sabatons
+							i(44306),	-- Death-Inured Sabatons
 							i(41725),	-- Design: Timeless Twilight Opal [CATA+] / Design: Glowing Twilight Opal [WRATH] (RECIPE!)
 							i(44305),	-- Kilt of Dark Mercy
 						},

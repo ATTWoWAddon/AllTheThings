@@ -220,7 +220,7 @@ ObjectDB[175331].text.es = "Provisiones de grano del Bosque Negro";	-- Blackwood
 -- #endif
 
 -- #if BEFORE CATA
--- Crossroads Supply Crates
+-- Crossroads' Supply Crates
 local locales = ObjectDB[175708].text;
 for key,value in pairs({
 	en = "Crossroads' Supply Crates",

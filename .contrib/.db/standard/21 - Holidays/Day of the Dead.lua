@@ -226,13 +226,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(246158, {	-- Heartblossom Remembrance Veil
 						timeline = { ADDED_11_2_5 },
 					}),
-					i(246186, {	-- Lotust Crown of the Dead
+					i(246186, {	-- Lotus Crown of the Dead
 						timeline = { ADDED_11_2_5 },
 					}),
 					i(246179, {	-- Lotus Deathmask
 						timeline = { ADDED_11_2_5 },
 					}),
-					i(246156, {	-- Lotust Remembrance Veil
+					i(246156, {	-- Lotus Remembrance Veil
 						timeline = { ADDED_11_2_5 },
 					}),
 					i(246188, {	-- Marigold Crown of the Dead

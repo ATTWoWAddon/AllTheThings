@@ -559,7 +559,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					i(181837),	-- Clear Mind
 					i(182126),	-- High Voltage
 					i(181734),	-- Magi's Brand
-					i(182441),	-- Markman's Advantage
+					i(182441),	-- Marksman's Advantage
 					i(181843),	-- Shining Radiance
 					i(181769),	-- Tempest Barrier
 					i(183479),	-- Umbral Intensity

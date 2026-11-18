@@ -75,7 +75,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 					i(236735),	-- Handguards of Undead Cleansing
 					i(236720),	-- Gloves of Undead Purification
 					i(236729),	-- Handwraps of Undead Purification
-					i(236741),	-- Handguards of Undead Purificatio
+					i(236741),	-- Handguards of Undead Purification
 					i(236744),	-- Gauntlets of Undead Purification
 					i(236723),	-- Gloves of Undead Warding
 					i(236732),	-- Handwraps of Undead Warding

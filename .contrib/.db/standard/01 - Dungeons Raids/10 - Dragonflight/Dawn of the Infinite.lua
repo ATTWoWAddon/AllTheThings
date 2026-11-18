@@ -29,7 +29,7 @@ local QUANTUM_GROUP = sharedData({
 				name = "Quantum Headpiece (Cloth) completed.",
 			}),
 			ig(114263),	-- Firefly Hood						(NYI)
-			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
+			ig(114387),	-- Hood of Hooded Nightmares			(NYI)
 			i(147517, {	-- Inquisitor's Battle Cowl			(NYI)
 				modID = 2,
 				timeline = { ADDED_10_1_5, REMOVED_11_0_2, ADDED_12_0_0 },
@@ -202,7 +202,7 @@ local QUANTUM_GROUP = sharedData({
 			hqt(77634, {	-- when you learn everything from Quantum Chestpiece (Plate)
 				name = "Quantum Chestpiece (Plate) completed.",
 			}),
-			ig(180535),	-- Breatplate of the Highlord			(NYI)
+			ig(180535),	-- Breastplate of the Highlord			(NYI)
 			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
 			ig(108162),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108178),	-- Peerless Draenic Steel Chestplate	(NYI)
@@ -290,14 +290,14 @@ local QUANTUM_GROUP = sharedData({
 				modID = 4,
 			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
-			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
-			ig(108164),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108188),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108196),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108204),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
-			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108080),	-- Hardened Draenic Steel Gauntlets	(NYI)
+			ig(108164),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108180),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108188),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108196),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108204),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108212),	-- Peerless Draenic Steel Gauntlets	(NYI)
+			ig(108220),	-- Peerless Draenic Steel Gauntlets	(NYI)
 			i(113219, {	-- Romy's Reliable Grips			(NYI)
 				modID = 4,
 			}),
@@ -526,7 +526,7 @@ local QUANTUM_GROUP = sharedData({
 			timeline = { ADDED_10_1_5, REMOVED_11_0_2 },
 		}),
 		ig(108054),	-- Draenic Steel Dagger					(NYI)
-		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
+		ig(108150),	-- Hardened Draenic Steel Dagger		(NYI)
 		ig(108234),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
@@ -621,7 +621,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134741),	-- Cold-Touched Barrier					(Removed)
 		ig(134774),	-- Covert Barrier						(Removed)
 		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
-		ig(18756),	-- Dreadguard Protector					(Removed)
+		ig(18756),	-- Dreadguard's Protector					(Removed)
 		ig(134632),	-- Scorching Redoubt					(Removed)
 		ig(134803),	-- Seasoned Redoubt						(Removed)
 		ig(134603),	-- Vanguard Redoubt						(Removed)
@@ -1155,7 +1155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 -- History for items between 10.1.5 & 10.1.7
 --[[	i(208061, {	-- Quantum Headpiece
 		filter(CLOTH, {
-			ig(114387),	-- Hood of Hooded Nighmates			(NYI)
+			ig(114387),	-- Hood of Hooded Nightmares			(NYI)
 		}),
 		filter(LEATHER, {
 			ig(105806),	-- Circlet of the Panser			(Ordos)
@@ -1303,7 +1303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 		ig(23171),	-- The Axe of Severing				(Removed)
 
-		ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+		ig(9425),	-- Pendulum of Doom				(Very Rare BoE)
 		-- ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
 		-- ig(2227),	-- Heavy Ogre War Axe				(Removed)			Added in 10.1.7 to original Source
 		-- ig(1220),	-- Lupine Axe						(Removed)			Added in 10.1.7 to original Source
@@ -1330,7 +1330,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		-- ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)	Added in 10.1.7 to original Source
 	}),
 	i(208120, {	-- Quantum Knife
-		ig(108150),	-- Hardened Draeneic Steel Dagger)	(NY)
+		ig(108150),	-- Hardened Draenic Steel Dagger	(NY)
 	}),
 	i(208121, {	-- Quantum Knuckles
 	}),

@@ -25,7 +25,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 			filter(LEATHER, {
 				i(181406),	-- Runetender Boots
 				i(181429),	-- Runetender Bracers
-				i(181425),	-- Runtender Cinch
+				i(181425),	-- Runetender Cinch
 				i(181413),	-- Runetender Headguard
 				i(181407),	-- Runetender Mitts
 				i(181417),	-- Runetender Pants

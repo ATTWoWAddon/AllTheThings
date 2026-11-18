@@ -46,7 +46,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 							{ "c", ORDER_RESOURCES, 500 },
 						},
 					}),
-					i(121736, {	-- Nightfall Slipeprs
+					i(121736, {	-- Nightfall Slippers
 						cost = 5000000,	-- 500g
 					}),
 					i(140015, {	-- Scavenged Felsoul Sabatons
@@ -245,7 +245,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 						classes = { PALADIN },
 						cost = 5000000,	-- 500g
 					}),
-					i(139712, {	-- Spaulders of the Unseeen Path
+					i(139712, {	-- Spaulders of the Unseen Path
 						classes = { ROGUE },
 						cost = 5000000,	-- 500g
 					}),

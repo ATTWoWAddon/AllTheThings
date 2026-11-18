@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					{"sub", "bfa_azerite_armor_chest" },
 				},
 			}),
-			i(158092),	-- Colscale Cudgel
+			i(158092),	-- Coldscale Cudgel
 			i(159819),	-- Coldscale Lantern
 			i(158098),	-- Coralshell Halberd
 			i(158105),	-- Coralshell Spellblade
@@ -29,7 +29,7 @@ root(ROOTS.Zones, {
 			i(158090),	-- Ironcrest Longrifle
 			i(158094),	-- Shipwrecker Maul
 			i(158093),	-- Stagheart Gavel
-			i(158079),	-- Stagheart Hatcheet
+			i(158079),	-- Stagheart Hatchet
 			i(158099),	-- Stagheart Poleaxe
 			i(158097),	-- Tideguard Pike
 			i(158100),	-- Tideguard Spire

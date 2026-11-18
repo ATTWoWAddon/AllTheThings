@@ -13,7 +13,7 @@ local MixedNormalAndHeroicLootTable = {
 			i(157596, {	-- Glimmerthread Pantaloons
 				timeline = { ADDED_7_3_5 },
 			}),
-			i(56441),	-- Modgug's Blade
+			i(56441),	-- Modgud's Blade
 			i(56440),	-- Skardyn's Grace
 			i(56444),	-- Umbriss Band
 			i(56443),	-- Wildhammer Riding Helm

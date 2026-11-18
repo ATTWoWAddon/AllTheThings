@@ -636,7 +636,7 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					}),
 					i(59203),	-- Hammerfall Gloves
 					i(59204),	-- Hammerfall Mace
-					i(131485, {	-- Hammerfaul Gauntlets
+					i(131485, {	-- Hammerfall Gauntlets
 						timeline = { ADDED_7_0_3 },
 					}),
 					i(156947, {	-- Hammerfall Cudgel

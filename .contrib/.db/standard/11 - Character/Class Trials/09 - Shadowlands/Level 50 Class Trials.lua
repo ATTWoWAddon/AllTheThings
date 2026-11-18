@@ -117,7 +117,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				cl(HUNTER, {
 					i(171988, {	-- Adventurer's Footlocker
 						i(170638),	-- Trailseeker Shotgun
-						i(170639),	-- Trailseekeer Spear
+						i(170639),	-- Trailseeker Spear
 					}),
 					cl(HUNTER, BEAST_MASTERY, {
 						i(153813),	-- Trailseeker Shotgun

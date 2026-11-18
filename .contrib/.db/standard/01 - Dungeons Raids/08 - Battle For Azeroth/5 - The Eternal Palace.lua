@@ -44,7 +44,7 @@ local EncounterToLoot = {
 		i(168306),	-- Shiver Venom Lance
 		i(168905),	-- Shiver Venom Relic
 		i(168341),	-- Siren Mystic's Vestments
-		i(168818),	-- Sivar's Slitherblade
+		i(168818),	-- Sivara's Slitherblade
 		i(168477),	-- Tidebinder's Driftglobe
 		i(168377),	-- Tideblood Bracers
 		i(168384),	-- Wavespine Clutch
@@ -71,7 +71,7 @@ local EncounterToLoot = {
 		i(168382),	-- Arcanamental Bindings
 		i(168374),	-- Belt of Blind Devotion
 		i(168475),	-- Bulwark of the Seaborn Avatar
-		i(168375),	-- Gloves of Unschackled Arcana
+		i(168375),	-- Gloves of Unshackled Arcana
 		i(168381),	-- Grips of the Scaled Arcanist
 		i(168336),	-- Handmaiden's Cowl of Sacrifice
 		i(168378),	-- Leggings of the Stormborn

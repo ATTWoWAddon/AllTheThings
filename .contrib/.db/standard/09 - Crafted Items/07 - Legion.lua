@@ -744,7 +744,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(130227),	-- Skystone Pendant
 			i(130233),	-- Sorcerous Shadowruby Pendant
 			i(130236),	-- Subtle Shadowruby Pendant
-			i(130239),	-- Slyvan Maelstrom Amulet
+			i(130239),	-- Sylvan Maelstrom Amulet
 			i(130237),	-- Tranquil Necklace of Prophecy
 			i(130235),	-- Twisted Pandemonite Choker
 			i(130238),	-- Vindictive Pandemonite Choker

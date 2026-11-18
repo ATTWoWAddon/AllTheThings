@@ -713,7 +713,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36671),	-- Ominous Dagger
 			i(36476),	-- Whale Ripper
 			i(36675),	-- Sockeye Dagger
-			i(36477, {	-- Twin-Edged Stilletto
+			i(36477, {	-- Twin-Edged Stiletto
 				timeline = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36676),	-- Water Blade

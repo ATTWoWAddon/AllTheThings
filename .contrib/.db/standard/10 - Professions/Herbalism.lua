@@ -643,7 +643,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 				-- #endif
 			},
 			groups = {
-				q(51365, {	-- Cultural Signifcance [A]
+				q(51365, {	-- Cultural Significance [A]
 					description = "Requires 50 Kul Tiran Herbalism.",
 					provider = { "n", 136096 },	-- Declan Senal
 					coord = { 70.45, 5.13, BORALUS },
@@ -652,7 +652,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ requireSkill = HERBALIS
 						r(252422),	-- Sea Stalk [Rank 2]
 					},
 				}),
-				q(51498, {	-- Cultural Signifcance [H]
+				q(51498, {	-- Cultural Significance [H]
 					description = "Requires 50 Zandalari Herbalism.",
 					provider = { "n", 122704 },	-- Jahden Fla
 					coord = { 42.2, 35.6, DAZARALOR },

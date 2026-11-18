@@ -1623,7 +1623,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 								{ "o", 182799 },	-- Salvaged Wood
 							},
 						}),
-						i(29938),	-- Battle Seeker Chesguard
+						i(29938),	-- Battle Seeker Chestguard
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
 						i(29931),	-- Phantasmal Headdress
@@ -2947,7 +2947,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 								{ "o", 182799 },	-- Salvaged Wood
 							},
 						}),
-						i(29938),	-- Battle Seeker Chesguard
+						i(29938),	-- Battle Seeker Chestguard
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
 						i(29931),	-- Phantasmal Headdress

@@ -540,10 +540,10 @@ instanceroot(239, {	-- Uldaman
 				i(7670),	-- Shattered Necklace Sapphire
 				applyclassicphase(SOD_PHASE_TWO, i(223536)),	-- Grimlock's Charge
 				applyclassicphase(SOD_PHASE_TWO, i(223535)),	-- Grimlock's Tribal Vestments
-				i(9416, {	-- Grimlock's Charge
+				i(9416, {	-- Grimlok's Charge
 					timeline = { REMOVED_1_15_1 },
 				}),
-				i(9415, {	-- Grimlock's Tribal Vestments
+				i(9415, {	-- Grimlok's Tribal Vestments
 					timeline = { REMOVED_1_15_1 },
 				}),
 				i(9414),	-- Oilskin Leggings

@@ -8,10 +8,10 @@ maproot(NAZJATAR, {
 		n(REWARDS, {
 			-- Benthic Items
 			container(169478, {	-- Benthic Bracers
-				i(170121),	-- Azsh'iri Stormsurger Armwraps
-				i(170105),	-- Azsh'iri Stormsurger Bindings
-				i(169814),	-- Azsh'iri Stormsurger Bracers
-				i(167774),	-- Azsh'iri Stormsurger Vambraces
+				i(170121),	-- Azsh'ari Stormsurger Armwraps
+				i(170105),	-- Azsh'ari Stormsurger Bindings
+				i(169814),	-- Azsh'ari Stormsurger Bracers
+				i(167774),	-- Azsh'ari Stormsurger Vambraces
 				i(169813),	-- Fathomstalker Armbands
 				i(170104),	-- Fathomstalker Bindings
 				i(170122),	-- Fathomstalker Coils
@@ -34,21 +34,21 @@ maproot(NAZJATAR, {
 				i(170106),	-- Zanj'ir Scaleguard Wristguards
 			}),
 			container(169480, {	-- Benthic Chestguard
-				i(167767),	-- Azsh'iri Stormsurger Vest
+				i(167767),	-- Azsh'ari Stormsurger Vest
 				i(167759),	-- Fathomstalker Wraps
 				i(167779),	-- Shirakess Wraps
 				i(167775),	-- Zanj'ir Scaleguard Chestplate
 			}),
 			container(169481, {	-- Benthic Cloak
-				i(169489),	-- Azsh'iri Stormsurger Cape
+				i(169489),	-- Azsh'ari Stormsurger Cape
 				i(169487),	-- Fathomstalker Cloak
 				i(169486),	-- Shirakess Drape
 				i(169488),	-- Zanj'ir Scaleguard Greatcloak
 			}),
 			container(169485, {	-- Benthic Gauntlets
-				i(169792),	-- Azsh'iri Stormsurger Gloves
-				i(167769),	-- Azsh'iri Stormsurger Handguards
-				i(170135),	-- Azsh'iri Stormsurger Handwraps
+				i(169792),	-- Azsh'ari Stormsurger Gloves
+				i(167769),	-- Azsh'ari Stormsurger Handguards
+				i(170135),	-- Azsh'ari Stormsurger Handwraps
 				i(169791),	-- Fathomstalker Gloves
 				i(167761),	-- Fathomstalker Grips
 				i(170134),	-- Fathomstalker Handwraps
@@ -68,7 +68,7 @@ maproot(NAZJATAR, {
 				i(169793),	-- Zanj'ir Scaleguard Gauntlets
 			}),
 			container(169477, {	-- Benthic Girdle
-				i(167773),	-- Azsh'iri Stormsurger Links
+				i(167773),	-- Azsh'ari Stormsurger Links
 				i(167765),	-- Fathomstalker Waistband
 				i(167757),	-- Shirakess Cinch
 				i(170367),	-- Vim's Scalecrusher Belt
@@ -78,14 +78,14 @@ maproot(NAZJATAR, {
 				i(167782),	-- Zanj'ir Scaleguard Greatbelt
 			}),
 			container(169479, {	-- Benthic Helm
-				i(167770),	-- Azsh'iri Stormsurger Helm
+				i(167770),	-- Azsh'ari Stormsurger Helm
 				i(167762),	-- Fathomstalker Headcover
 				i(167754),	-- Shirakess Headdress
 				i(167778),	-- Zanj'ir Scaleguard Faceguard
 			}),
 			container(169482, {	-- Benthic Leggings
-				i(167771),	-- Azsh'iri Stormsurger Legguards
-				i(169810),	-- Azsh'iri Stormsurger Legs
+				i(167771),	-- Azsh'ari Stormsurger Legguards
+				i(169810),	-- Azsh'ari Stormsurger Legs
 				i(170109),	-- Azsh'iri Stormsurger Striders
 				i(170108),	-- Fathomstalker Breeches
 				i(169809),	-- Fathomstalker Leggings
@@ -98,7 +98,7 @@ maproot(NAZJATAR, {
 				i(167780),	-- Zanj'ir Scaleguard Wargreaves
 			}),
 			container(169484, {	-- Benthic Spaulders
-				i(167772),	-- Azsh'iri Stormsurger Shoulderguards
+				i(167772),	-- Azsh'ari Stormsurger Shoulderguards
 				i(167764),	-- Fathomstalker Shoulderpads
 				i(167756),	-- Shirakess Mantle
 				i(167781),	-- Zanj'ir Scaleguard Shoulderplates
@@ -108,9 +108,9 @@ maproot(NAZJATAR, {
 				i(170141),	-- Akana's Reefstrider Footwraps
 				i(170140),	-- Akana's Reefstrider Soles
 				i(170142),	-- Akana's Reefstrider Treads
-				i(169892),	-- Azsh'iri Stormsurger Boots
-				i(170373),	-- Azsh'iri Stormsurger Striders
-				i(167768),	-- Azsh'iri Stormsurger Treads
+				i(169892),	-- Azsh'ari Stormsurger Boots
+				i(170373),	-- Azsh'ari Stormsurger Striders
+				i(167768),	-- Azsh'ari Stormsurger Treads
 				i(169893),	-- Fathomstalker Boots
 				i(167760),	-- Fathomstalker Footpads
 				i(170372),	-- Fathomstalker Footwraps

@@ -137,7 +137,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								{ "i", SEREVITE_ORE, 10 },
 							},
 						}),
-						i(200486, {	-- Ohn'ir Dayligt Visor
+						i(200486, {	-- Ohn'ir Daylight Visor
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 200 },
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },

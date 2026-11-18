@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		},
 		groups = {
 			n(QUESTS, {
-				q(72135, {	-- Neltharus: Secrets Wihtin
+				q(72135, {	-- Neltharus: Secrets Within
 					qgs = {
 						193456,	-- Archivist Edress
 						205781,	-- Archivist Edress

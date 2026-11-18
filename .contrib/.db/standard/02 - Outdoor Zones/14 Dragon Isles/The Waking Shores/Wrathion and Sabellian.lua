@@ -775,7 +775,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
-							i(200988, {	-- Obsidian Guard's Skullspiltter
+							i(200988, {	-- Obsidian Guard's Skullsplitter
 								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", RAINBOW_PEARL, 1 },
@@ -789,7 +789,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 									{ "i", SEREVITE_ORE, 10 },
 								},
 							}),
-							i(200983, {	-- Obsidian Wingedguard Polearm
+							i(200983, {	-- Obsidian Wingguard Polearm
 								cost = {
 									{ "c", DRAGON_SUPPLIES, 600 },
 									{ "i", TALLSTRIDER_SINEW, 5 },

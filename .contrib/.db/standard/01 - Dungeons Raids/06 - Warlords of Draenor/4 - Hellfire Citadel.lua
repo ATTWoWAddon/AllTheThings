@@ -183,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 							92146,	-- Gurtogg Bloodboil
 						},
 						groups = {
-							i(128097),	-- Riverspike Cleaver
+							i(128097),	-- Rivetspike Cleaver
 							i(128100),	-- Spring-Loaded Jawstaff
 							i(128095),	-- Viscera-Stained Longsword
 							i(128191),	-- Hellfire Mindblade
@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 						i(128186),	-- Cursefeather Cloak
 						i(128082),	-- Corrupted Talonguard Chestplate
 						i(128086),	-- Bracers of Supreme Despair
-						i(128083),	-- Feather-Embellished Wristclasps
+						i(128083),	-- Feather-Embellished Wristclamps
 						i(128055),	-- Chakram-Gripping Gloves
 						i(128063),	-- Phantasmal Cummerbund
 						i(128180),	-- Flickering Nightstone Band
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 						i(128175),	-- Manacles of the Demon General
 						i(128038),	-- Brittleskin Wraps
 						i(128300),	-- Befouled Demonhide Belt
-						i(128299),	-- Withering Wastwrap
+						i(128299),	-- Withering Waistwrap
 						i(128066),	-- Imp-Infested Legplates
 						i(128178),	-- Zakuun's Smoldering Seal
 					})),
@@ -738,7 +738,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124355),	-- Fallen Defender of Argus
 					i(124306),	-- Pauldrons of Contempt
 					i(124219),	-- Choker of Sneering Superiority
-					i(124186),	-- Contemptious Wristguards
+					i(124186),	-- Contemptuous Wristguards
 					i(124326),	-- Gauntlets of Derision
 					i(124153),	-- Satin Gloves of Injustice
 					i(124300),	-- Haughty Chain Legguards
@@ -1247,7 +1247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124355),	-- Fallen Defender of Argus
 					i(124306),	-- Pauldrons of Contempt
 					i(124219),	-- Choker of Sneering Superiority
-					i(124186),	-- Contemptious Wristguards
+					i(124186),	-- Contemptuous Wristguards
 					i(124326),	-- Gauntlets of Derision
 					i(124153),	-- Satin Gloves of Injustice
 					i(124300),	-- Haughty Chain Legguards
@@ -1750,7 +1750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 					i(124355),	-- Fallen Defender of Argus
 					i(124306),	-- Pauldrons of Contempt
 					i(124219),	-- Choker of Sneering Superiority
-					i(124186),	-- Contemptious Wristguards
+					i(124186),	-- Contemptuous Wristguards
 					i(124326),	-- Gauntlets of Derision
 					i(124153),	-- Satin Gloves of Injustice
 					i(124300),	-- Haughty Chain Legguards

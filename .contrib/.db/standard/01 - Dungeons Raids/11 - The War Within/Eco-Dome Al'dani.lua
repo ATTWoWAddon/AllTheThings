@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(242482),	-- Reinforced Stalkerhide Vest
 					i(242481),	-- Spellstrike Warplance
 					i(242476),	-- Taahbat's Desert Carbine
-					i(242477),	-- Wastland Devotee's Wrappings
+					i(242477),	-- Wasteland Devotee's Wrappings
 				}),
 				BossOnly(SOULSCRIBE, {
 					ach(42780),	-- Eco-Dome Al'dani

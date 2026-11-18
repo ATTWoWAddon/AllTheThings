@@ -913,7 +913,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28603),	-- Talisman of Nightbane
 					i(28609),	-- Emberspur Talisman
 					i(28601),	-- Chestguard of the Conniver
-					i(28597),	-- Panzan'Thar Breastplate
+					i(28597),	-- Panzar'Thar Breastplate
 					i(28602),	-- Robe of the Elder Scribes
 					i(28599),	-- Scaled Breastplate of Carnage
 					i(28600),	-- Stonebough Jerkin

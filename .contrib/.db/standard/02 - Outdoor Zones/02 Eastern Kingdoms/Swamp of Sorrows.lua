@@ -663,7 +663,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 						provider = { "n", 46487 },	-- Marshtide Peasant
 					}),
 					i(64624),	-- Helm of the Gatherer
-					i(64628),	-- Merciliess Breastplate
+					i(64628),	-- Merciless Breastplate
 					i(64631),	-- Balanced Pauldrons
 				},
 			}),

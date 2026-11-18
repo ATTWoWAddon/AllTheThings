@@ -898,7 +898,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 				groups = {
 					i(155065),	-- Trogg Thumper
 					i(155068),	-- Grimestone Pounder
-					i(155075),	-- Lord Aldrus' Greatstaff
+					i(155075),	-- Lord Aldrius' Greatstaff
 					i(155054),	-- Reveler's Edge
 					i(155070),	-- Norwington's Poleaxe
 					i(155062),	-- Stoat-Trapper's Spikefist

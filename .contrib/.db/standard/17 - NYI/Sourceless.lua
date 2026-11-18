@@ -356,8 +356,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158563),	-- Tomb-Rustler's Polearm
 				i(154972),	-- Tomb-Rustler's Polearm
 				i(166887),	-- Pakura Priest Staff
-				i(158568),	-- Mojo-Drainer Staff
-				i(158580),	-- Loa-Claimer's Wariglaives
+				i(158568),	-- Mojo-Drainer's Staff
+				i(158580),	-- Loa-Claimer's Warglaives
 			}),
 		}),
 	}),

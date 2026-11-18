@@ -182,7 +182,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							i(164535),	-- Bloodwake Legplates
 							i(164537),	-- Bloodwake Sabatons
 							i(166836),	-- Frosthoof Gloves
-							i(166835),	-- Frosthood Waistcord
+							i(166835),	-- Frosthoof Waistcord
 							i(166818),	-- Fallen Runelord's Cowl
 							i(166815),	-- Fallen Runelord's Shoulders
 							i(166816),	-- Fallen Runelord's Robe
@@ -392,7 +392,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							i(164545),	-- Wild Marauder Pauldrons
 							i(164546),	-- Wild Marauder Chainmail
 							i(164540),	-- Wild Marauder Bracers
-							i(164541),	-- Wild Marauder Glovs
+							i(164541),	-- Wild Marauder Gloves
 							i(164539),	-- Wild Marauder Chain
 							i(164544),	-- Wild Marauder Breeches
 							i(164542),	-- Wild Marauder Boots

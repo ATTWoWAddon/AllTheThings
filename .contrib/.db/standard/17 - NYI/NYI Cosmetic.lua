@@ -790,7 +790,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(242410),	-- Grassy Sweatshirt
 			}),
 			n(WEAPONS, {
-				i(242521),	-- Chiling Forsaken Cauldron
+				i(242521),	-- Chilling Forsaken Cauldron
 				i(242627),	-- Chilling Forsaken Blade
 				i(242631),	-- Chilling Forsaken Great Blade
 				i(242376),	-- Chilling Forsaken Longbow
@@ -972,7 +972,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(248735),	-- Arcane Dirk of the Ice Queen
 				i(248817),	-- Arcane Wand of the Ice Queen
 				i(248829),	-- Arcane Great Axe of the Frost
-				i(248914),	-- Arcane Warglaives of the Nort
+				i(248914),	-- Arcane Warglaives of the North
 				i(248728),	-- Bacon-Wrapped Smoked Ribs
 				i(250085),	-- Battered Pot Lid
 				i(248832),	-- Big Bronze Fork
@@ -984,7 +984,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(250780),	-- Bronze Food Fanatic Shield
 				i(251657),	-- Bunch of Pink Carrots
 				i(251658),	-- Bunch of Purple Carrots
-				i(251659),	-- Bunch of Yellow Carrotsts
+				i(251659),	-- Bunch of Yellow Carrots
 				i(251855),	-- Bunch of Orange Chilets
 				i(251856),	-- Bunch of Red Chile
 				i(251857),	-- Bunch of Yellow Chile
@@ -994,7 +994,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(251799),	-- Ears of White Corn
 				i(248734),	-- Fiery Dirk of the Ice Queen
 				i(248816),	-- Fiery Wand of the Ice Queen
-				i(248828),	-- Fiery Great Axe of the Frostw
+				i(248828),	-- Fiery Great Axe of the Frostwolf
 				i(248913),	-- Fiery Warglaives of the North
 				i(250781),	-- Fine Food Fanatic Shield
 				i(248736),	-- Glowing Dirk of the Ice Queen
@@ -1017,8 +1017,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(248725),	-- Smoked Rib Surprise
 				i(248727),	-- Smoked Rib Leftovers
 				i(248924),	-- Stale Mulgore Spice Bread
-				i(248729),	-- Steaming Pot of Stewh
-				i(248732),	-- Stolen Pot of Stewth
+				i(248729),	-- Steaming Pot of Stew
+				i(248732),	-- Stolen Pot of Stew
 				i(250084),	-- Sturdy Pot Lid
 				i(248923),	-- Unfathomably Stale Bread
 				i(248738),	-- Used Great Steak Knife

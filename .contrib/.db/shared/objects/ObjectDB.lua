@@ -15850,7 +15850,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[175708] = {
-		readable = "Crossroads Supply Crates",
+		readable = "Crossroads Supply Crate",
 		icon = 132761,
 		model = 199099,
 		text = {

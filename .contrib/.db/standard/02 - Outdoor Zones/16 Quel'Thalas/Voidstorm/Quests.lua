@@ -432,7 +432,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.VOIDSTORM, {
 						i(256214),	-- Boots of Infinite Gravity
 						i(256222),	-- Hazy Penumbral Treads
 						i(256206),	-- Neverending Vortex Stompers
-						i(256198),	-- Warbots of the Colossal Behemoths
+						i(256198),	-- Warboots of the Colossal Behemoths
 					},
 				}),
 				q(86520, {	-- Hunt the Light

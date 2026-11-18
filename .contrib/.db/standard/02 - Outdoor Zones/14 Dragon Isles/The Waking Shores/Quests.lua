@@ -669,14 +669,14 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					provider = { "n", 193500 },	-- Iyali
 					coord = { 45.9, 81.4, THE_WAKING_SHORES },
 				}),
-				q(69898, {	-- Scientfic Meat-thod
+				q(69898, {	-- Scientific Meat-thod
 					provider = { "n", 193500 },	-- Iyali
 					coord = { 45.9, 81.4, THE_WAKING_SHORES },
 				}),
 				q(69899, {	-- Secret Research
 					sourceQuests = {
 						69897,	-- Behavior Analysis "Homework"
-						69898,	-- Scientfic Meat-thod
+						69898,	-- Scientific Meat-thod
 					},
 					provider = { "n", 193500 },	-- Iyali
 					coord = { 45.9, 81.4, THE_WAKING_SHORES },

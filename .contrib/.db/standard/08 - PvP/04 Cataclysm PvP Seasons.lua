@@ -1283,12 +1283,12 @@ root(ROOTS.PVP, {
 					i(67476),	-- Vicious Gladiator's Barrier
 					i(67464),	-- Vicious Gladiator's Baton of Light
 					i(67450),	-- Vicious Gladiator's Battle Staff
-					i(67470),	-- Vicious Gladiator's Bonebracker
+					i(67470),	-- Vicious Gladiator's Bonecracker
 					i(67452),	-- Vicious Gladiator's Bonegrinder
 					i(67474),	-- Vicious Gladiator's Cleaver
 					i(67453),	-- Vicious Gladiator's Decapitator
 					i(67479),	-- Vicious Gladiator's Endgame
-					i(67449),	-- Vicious Gladiator's Engery Staff
+					i(67449),	-- Vicious Gladiator's Energy Staff
 					i(67459),	-- Vicious Gladiator's Fleshslicer
 					i(67454),	-- Vicious Gladiator's Gavel
 					i(67447),	-- Vicious Gladiator's Greatsword
@@ -1402,7 +1402,7 @@ root(ROOTS.PVP, {
 					i(65528),	-- Vicious Gladiator's Felweave Amice
 					i(65571),	-- Vicious Gladiator's Felweave Cowl
 					i(65572),	-- Vicious Gladiator's Felweave Handguards
-					i(65529),	-- Vicious Gladiator's Felweave Rainment
+					i(65529),	-- Vicious Gladiator's Felweave Raiment
 					i(65530),	-- Vicious Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
@@ -1562,7 +1562,7 @@ root(ROOTS.PVP, {
 					i(70566),	-- Vicious Gladiator's Felweave Amice
 					i(70567),	-- Vicious Gladiator's Felweave Cowl
 					i(70568),	-- Vicious Gladiator's Felweave Handguards
-					i(70569),	-- Vicious Gladiator's Felweave Rainment
+					i(70569),	-- Vicious Gladiator's Felweave Raiment
 					i(70570),	-- Vicious Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
@@ -2345,7 +2345,7 @@ root(ROOTS.PVP, {
 					i(70507),	-- Ruthless Gladiator's Boots of Alacrity
 					i(70506),	-- Ruthless Gladiator's Boots of Cruelty
 					i(70499),	-- Ruthless Gladiator's Footguards of Alacrity
-					i(70498),	-- Ruthless Gladiator's Footguards of Mediatiton
+					i(70498),	-- Ruthless Gladiator's Footguards of Meditation
 					i(70502),	-- Ruthless Gladiator's Greaves of Alacrity
 					i(70503),	-- Ruthless Gladiator's Greaves of Meditation
 					i(70501),	-- Ruthless Gladiator's Sabatons of Alacrity
@@ -2904,7 +2904,7 @@ root(ROOTS.PVP, {
 					i(73441),	-- Cataclysmic Gladiator's Cleaver
 					i(73444),	-- Cataclysmic Gladiator's Decapitator
 					i(73436),	-- Cataclysmic Gladiator's Endgame
-					i(73424),	-- Cataclysmic Gladiator's Engery Staff
+					i(73424),	-- Cataclysmic Gladiator's Energy Staff
 					i(73420),	-- Cataclysmic Gladiator's Fleshslicer
 					i(73426),	-- Cataclysmic Gladiator's Gavel
 					i(73442),	-- Cataclysmic Gladiator's Greatsword
@@ -2967,11 +2967,11 @@ root(ROOTS.PVP, {
 					i(73711),	-- Cataclysmic Gladiator's Silk Trousers
 				}),
 				cl(PALADIN, {
-					i(73701),	-- Cataclysmic Gladiator's Ornnamented Chestguard
-					i(73700),	-- Cataclysmic Gladiator's Ornnamented Gloves
-					i(73699),	-- Cataclysmic Gladiator's Ornnamented Headcover
-					i(73698),	-- Cataclysmic Gladiator's Ornnamented Legplates
-					i(73697),	-- Cataclysmic Gladiator's Ornnamented Spaulders
+					i(73701),	-- Cataclysmic Gladiator's Ornamented Chestguard
+					i(73700),	-- Cataclysmic Gladiator's Ornamented Gloves
+					i(73699),	-- Cataclysmic Gladiator's Ornamented Headcover
+					i(73698),	-- Cataclysmic Gladiator's Ornamented Legplates
+					i(73697),	-- Cataclysmic Gladiator's Ornamented Spaulders
 					i(73708),	-- Cataclysmic Gladiator's Scaled Chestpiece
 					i(73707),	-- Cataclysmic Gladiator's Scaled Gloves
 					i(73706),	-- Cataclysmic Gladiator's Scaled Helm
@@ -3018,7 +3018,7 @@ root(ROOTS.PVP, {
 					i(73656),	-- Cataclysmic Gladiator's Felweave Amice
 					i(73659),	-- Cataclysmic Gladiator's Felweave Cowl
 					i(73660),	-- Cataclysmic Gladiator's Felweave Handguards
-					i(73657),	-- Cataclysmic Gladiator's Felweave Rainment
+					i(73657),	-- Cataclysmic Gladiator's Felweave Raiment
 					i(73658),	-- Cataclysmic Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
@@ -3026,7 +3026,7 @@ root(ROOTS.PVP, {
 					i(73654),	-- Cataclysmic Gladiator's Plate Gloves
 					i(73653),	-- Cataclysmic Gladiator's Plate Helm
 					i(73652),	-- Cataclysmic Gladiator's Plate Legguards
-					i(73651),	-- Cataclysmic Gladiator's Plate Soulders
+					i(73651),	-- Cataclysmic Gladiator's Plate Shoulders
 				}),
 				n(FEET, {
 					i(73683),	-- Cataclysmic Gladiator's Boots of Alacrity
@@ -3034,7 +3034,7 @@ root(ROOTS.PVP, {
 					i(73726),	-- Cataclysmic Gladiator's Footguards of Alacrity
 					i(73732),	-- Cataclysmic Gladiator's Footguards of Meditation
 					i(73703),	-- Cataclysmic Gladiator's Greaves of Alacrity
-					i(73702),	-- Cataclysmic Gladiator's Greaves of Mediation
+					i(73702),	-- Cataclysmic Gladiator's Greaves of Meditation
 					i(73677),	-- Cataclysmic Gladiator's Sabatons of Alacrity
 					i(73719),	-- Cataclysmic Gladiator's Sabatons of Alacrity
 					i(73720),	-- Cataclysmic Gladiator's Sabatons of Cruelty

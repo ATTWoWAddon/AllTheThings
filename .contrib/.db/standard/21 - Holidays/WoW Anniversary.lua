@@ -963,7 +963,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171920),	-- Cataclysm Headpiece
 									i(171921),	-- Cataclysm Helm
 									i(171917),	-- Cowl of the Avatar
-									i(171922),	-- Cowl of Tirisfall
+									i(171922),	-- Cowl of Tirisfal
 									i(171912),	-- Crystalforge Faceguard
 									i(171914),	-- Crystalforge Greathelm
 									i(171913),	-- Crystalforge War-Helm
@@ -978,7 +978,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									i(171915),	-- Rift Stalker Helm
 									--
 									i(171475),	-- Belt of One-Hundred Deaths
-									i(171473),	-- Cobta-Lash Boots
+									i(171473),	-- Cobra-Lash Boots
 									i(97554),	-- Coilfang Stalker (PET!)
 									i(171479),	-- Coral Band of the Revived
 									i(171472),	-- Fang of Vashj
@@ -1260,7 +1260,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								groups = {
 									-- Old tier Items
 									i(171887),	-- Earthen Faceguard
-									i(171886),	-- Earthen Helemt
+									i(171886),	-- Earthen Helmet
 									i(171883),	-- Faceguard of the Raging Elements
 									i(171874),	-- Firelord's Hood
 									i(171884),	-- Headpiece of the Raging Elements
@@ -2218,7 +2218,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(186465),	-- Faceguard of the Endless Watch
 						i(186464),	-- Fathom-Helm of the Deeps
 						i(186461),	-- Gilded Trousers of Benediction
-						i(186475),	-- Hellstiched Mantle
+						i(186475),	-- Hellstitched Mantle
 						i(186468),	-- Talon of the Tempest
 						i(186463),	-- Terrorweave Tunic
 						i(186484),	-- Voidforged Greaves
@@ -2491,7 +2491,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							RelicCofferKeyPurchase(231471),	-- Golem Gearbox
 							RelicCofferKeyPurchase(231446),	-- Greaves of Withering Despair
 							RelicCofferKeyPurchase(231491),	-- Grebmar's Catch Pole
-							RelicCofferKeyPurchase(231465),	-- Grizzle's Skinne
+							RelicCofferKeyPurchase(231465),	-- Grizzle's Skinner
 							RelicCofferKeyPurchase(231435),	-- Guiding Stave of Wisdom
 							RelicCofferKeyPurchase(231417),	-- Hand of Justice
 							RelicCofferKeyPurchase(231439),	-- Hands of the Exalted Herald
@@ -2568,7 +2568,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						Boss(BAELGAR),
 						n(GREBMAR, {
 							i(231491),	-- Grebmar's Catch Pole
-							i(231465),	-- Grizzle's Skinne
+							i(231465),	-- Grizzle's Skinner
 							i(231393),	-- Houndmaster's Bow
 							i(231390),	-- Spritecaster Cape
 						}),

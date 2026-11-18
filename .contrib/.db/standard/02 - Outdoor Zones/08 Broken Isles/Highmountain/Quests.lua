@@ -788,7 +788,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 			coord = { 50.9, 36.6, HIGHMOUNTAIN },
 			groups = {
 				i(121681),	-- Snowblind Wristwraps
-				i(121684),	-- Dogstitch Bracers
+				i(121684),	-- Drogstitch Bracers
 				i(121683),	-- Whitewater Ringmail Cuffs
 				i(121682),	-- Thunderpeak Wristguards
 				i(121721),	-- Korgrul's Taming Chain

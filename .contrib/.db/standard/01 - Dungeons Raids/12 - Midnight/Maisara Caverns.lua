@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(MUROJIN, {
-					i(251174),	-- Deciever's Rotbow
+					i(251174),	-- Deceiver's Rotbow
 					i(251166),	-- Falconer's Cinch
 					i(251167),	-- Nightprey Stalkers
 					i(251176),	-- Reanimator's Weight

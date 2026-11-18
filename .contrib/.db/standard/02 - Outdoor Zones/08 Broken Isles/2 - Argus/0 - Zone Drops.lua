@@ -147,7 +147,7 @@ maproot(BROKEN_ISLES, ARGUS, {
 			i(152751),	-- Praetorium Guard's Gauntlets
 		}),
 		i(153140, {	-- Unsullied Plate Waistplate
-			i(152749),	-- Praetorium Guard's Waitsplate
+			i(152749),	-- Praetorium Guard's Waistplate
 		}),
 		i(153146, {	-- Unsullied Plate Greaves
 			i(152746),	-- Praetorium Guard's Greaves

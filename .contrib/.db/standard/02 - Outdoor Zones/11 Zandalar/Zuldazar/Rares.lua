@@ -167,7 +167,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 				questID = 50281,
 				coord = { 60.72, 66.11, ZULDAZAR },
 				groups = {
-					i(161022),	-- Gusting Axebeaek Anklewraps
+					i(161022),	-- Gusting Axebeak Anklewraps
 					crit(41863, {	-- Murderbeak
 						achievementID = 12944,	-- Adventurer of Zuldazar
 					}),

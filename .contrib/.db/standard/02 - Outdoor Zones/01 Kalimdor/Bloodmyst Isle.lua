@@ -346,7 +346,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							provider = { "n", 17609 },	-- Sunhawk Saboteur
 						}),
 						i(26035),	-- Corin's Handguards
-						i(26009),	-- Flutter Silk Handwraps
+						i(26009),	-- Flutterer Silk Handwraps
 						i(26023),	-- Ravager Hide Gloves
 						-- #if AFTER LEGION
 						i(131273),	-- Ravager Scale Grips

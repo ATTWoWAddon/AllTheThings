@@ -34,7 +34,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
 				expansion(EXPANSION.MOP, patch(0,4), {
-					i(81143),	-- Avanced Deepdive Helmet
+					i(81143),	-- Advanced Deepdive Helmet
 				}),
 			}),
 			expansion(EXPANSION.WOD, {

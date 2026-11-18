@@ -161,13 +161,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					196989,	-- Cliffside Wylderdrake: White Hair (MM!)
 					------ RENOWN 21 ------
 					197145,	-- Highland Drake: Bronze Scales (MM!)
-					197391,	-- Renewned Proto-Drake: Bronze Scales (MM!)
+					197391,	-- Renewed Proto-Drake: Bronze Scales (MM!)
 					197613,	-- Windborne Velocidrake: Bronze Scales (MM!)
 					203351,	-- Winding Slitherdrake: Bronze Scales (MM!)
 					------ RENOWN 26 ------
 					196962,	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
 					197093,	-- Highland Drake: Silver and Purple Armor (MM!)
-					197350,	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+					197350,	-- Renewed Proto-Drake: Silver and Purple Armor (MM!)
 					197581,	-- Windborne Velocidrake: Silver and Purple Armor (MM!)
 					203302,	-- Winding Slitherdrake: Purple and Silver Armor (MM!)
 					196961,	-- Cliffside Wylderdrake: Armor (MM!)
@@ -370,7 +370,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						}),
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
-						i(199774, {	-- Ancient Titan Blunderbus
+						i(199774, {	-- Ancient Titan Blunderbuss
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 600 },
 								{ "i", SEREVITE_ORE, 10 },
@@ -580,7 +580,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								{ "i", AWAKENED_ORDER, 1 },
 							},
 						}),
-						i(197391, {	-- Renewned Proto-Drake: Bronze Scales (MM!)
+						i(197391, {	-- Renewed Proto-Drake: Bronze Scales (MM!)
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_ORDER, 1 },
@@ -685,7 +685,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
 						}),
-						i(197350, {	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+						i(197350, {	-- Renewed Proto-Drake: Silver and Purple Armor (MM!)
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", DRACONIUM_ORE, 20 },

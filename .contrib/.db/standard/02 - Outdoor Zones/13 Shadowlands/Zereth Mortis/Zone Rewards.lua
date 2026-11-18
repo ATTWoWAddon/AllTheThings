@@ -20,7 +20,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				i(190605),	-- Impossibly Ancient Cloak
 			}),
 			filter(CLOTH, {
-				i(190344),	-- Orcaular Hood
+				i(190344),	-- Oracular Hood
 				i(190346),	-- Oracular Mantle
 				i(190343),	-- Oracular Mitts
 				i(190345),	-- Oracular Pantaloons

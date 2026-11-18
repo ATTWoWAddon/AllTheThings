@@ -589,7 +589,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 					i(81498),	-- Angkhal Handguards
 					i(81499),	-- Riverblade Gloves
 					i(81500),	-- Sarjun Gauntlets
-					i(81501),	-- Krojan Gauntlets
+					i(81501),	-- Korjan Gauntlets
 					i(81502),	-- Dojani Gauntlets
 				},
 			}),
@@ -640,11 +640,11 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 						o(210418),	-- Mogu Artifact
 					}),
 					i(81503),	-- Nayeli Cuffs
-					i(81504),	-- Mortbreateh Bindings
+					i(81504),	-- Mortbreath Bindings
 					i(81505),	-- Deepwild Armguards
 					i(81506),	-- Narsong Bracers
 					i(81507),	-- Angkhal Cuffs
-					i(81508),	-- Riverblade Armwaraps
+					i(81508),	-- Riverblade Armwraps
 					i(81509),	-- Sarjun Wristguards
 					i(81510),	-- Korjan Armplates
 					i(81511),	-- Dojani Bracers
@@ -951,7 +951,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				groups = {
 					i(80828),	-- "Scrutiny" (QI!)
 					i(84272),	-- Mistwalker Satin Leggings
-					i(84273),	-- Mistwalker Hide leggaurds
+					i(84273),	-- Mistwalker Hide Legguards
 					i(84274),	-- Deepwild Leg Armor
 					i(84275),	-- Mistwalker Burnished Legplates
 					i(84276),	-- Mistwalker Silk Trousers
@@ -1120,7 +1120,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			n(50787, {	-- Arness the Scale
 				coord = { 56.1, 47.0, KRASARANG_WILDS },	-- manually verified July 26, 2026
 				groups = {
-					i(90723),	-- Arnness's Scaled Leggings
+					i(90723),	-- Arness's Scaled Leggings
 				},
 			}),
 			n(66936, {	-- Clawlord Kril'mandar <The Pinch King>

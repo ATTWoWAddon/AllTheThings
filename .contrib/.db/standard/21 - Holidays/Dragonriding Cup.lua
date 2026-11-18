@@ -898,7 +898,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					coord = { 58.6, 11.6, RUINS_OF_GILNEAS },
 					groups = {
 						ach(18402),	-- Gilneas Gambit Advanced: Bronze
-						ach(18403),	-- Gilneas Gambite Advanced: Silver
+						ach(18403),	-- Gilneas Gambit Advanced: Silver
 						ach(18404),	-- Gilneas Gambit Advanced: Gold
 					},
 				}),

@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(29258),	-- Boots of Ethereal Manipulation
 						i(29262),	-- Boots of the Endless Hunt
 						i(29359),	-- Feral Staff of Lashing
-						i(32072),	-- Gauntlets of Dissention
+						i(32072),	-- Gauntlets of Dissension
 						-- #endif
 						i(28367),	-- Greatsword of Forlorn Visions
 						i(28229),	-- Incanter's Robe
@@ -284,7 +284,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(29258),	-- Boots of Ethereal Manipulation
 							i(29262),	-- Boots of the Endless Hunt
 							i(29359),	-- Feral Staff of Lashing
-							i(32072),	-- Gauntlets of Dissention
+							i(32072),	-- Gauntlets of Dissension
 							i(28367),	-- Greatsword of Forlorn Visions
 							i(28229),	-- Incanter's Robe
 							i(28343),	-- Jagged Bark Pendant

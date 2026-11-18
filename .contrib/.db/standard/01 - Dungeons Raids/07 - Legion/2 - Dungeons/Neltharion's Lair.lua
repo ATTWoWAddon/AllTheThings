@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137337),	-- Deepfurrow Bracers
 					i(139095),	-- Greystone Belt
 					i(139105),	-- Rivermane Sandals
-					i(134427),	-- Riverride Legwraps
+					i(134427),	-- Riverrider Legwraps
 					i(137338),	-- Shard of Rokmora
 					i(139121),	-- Skyhorn Mantle
 					i(139130),	-- Sunfrost Wristwraps
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(134470),	-- Mountain Throne Coif
 					i(134135),	-- Rockbound Chestguard
 					i(134171),	-- Roggthread Cord
-					i(137355),	-- Rumblestone Guantlets
+					i(137355),	-- Rumblestone Gauntlets
 					i(134455),	-- Sinister Ashfall Cord
 					i(134154),	-- Steelgazer Hide Mantle
 					i(134517),	-- Tremorguard Pauldrons
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137337),	-- Deepfurrow Bracers
 						i(139095),	-- Greystone Belt
 						i(139105),	-- Rivermane Sandals
-						i(134427),	-- Riverride Legwraps
+						i(134427),	-- Riverrider Legwraps
 						i(137338),	-- Shard of Rokmora
 						i(139121),	-- Skyhorn Mantle
 						i(139130),	-- Sunfrost Wristwraps
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(134470),	-- Mountain Throne Coif
 						i(134135),	-- Rockbound Chestguard
 						i(134171),	-- Roggthread Cord
-						i(137355),	-- Rumblestone Guantlets
+						i(137355),	-- Rumblestone Gauntlets
 						i(134455),	-- Sinister Ashfall Cord
 						i(134154),	-- Steelgazer Hide Mantle
 						i(134517),	-- Tremorguard Pauldrons
@@ -254,7 +254,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137337),	-- Deepfurrow Bracers
 						i(139095),	-- Greystone Belt
 						i(139105),	-- Rivermane Sandals
-						i(134427),	-- Riverride Legwraps
+						i(134427),	-- Riverrider Legwraps
 						i(137338),	-- Shard of Rokmora
 						i(139121),	-- Skyhorn Mantle
 						i(139130),	-- Sunfrost Wristwraps
@@ -303,7 +303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(134470),	-- Mountain Throne Coif
 						i(134135),	-- Rockbound Chestguard
 						i(134171),	-- Roggthread Cord
-						i(137355),	-- Rumblestone Guantlets
+						i(137355),	-- Rumblestone Gauntlets
 						i(134455),	-- Sinister Ashfall Cord
 						i(134154),	-- Steelgazer Hide Mantle
 						i(134517),	-- Tremorguard Pauldrons

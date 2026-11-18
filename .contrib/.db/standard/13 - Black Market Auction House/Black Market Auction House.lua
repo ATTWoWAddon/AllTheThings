@@ -138,7 +138,7 @@ root(ROOTS.BlackMarket, bubbleDown({u = BLACK_MARKET }, timelineSelf({timeline =
 			i(105747),	-- Kor'kron Dark Shaman Shoulder
 			i(105743),	-- Kor'kron Dark Shaman Vestment
 			i(105748),	-- Kor'kron Dark Shaman Bracers
-			i(105744),	-- Kor'kron Dark Shaman Glovesfs
+			i(105744),	-- Kor'kron Dark Shaman Gloves
 			i(105741),	-- Kor'kron Dark Shaman Belt
 			i(105746),	-- Kor'kron Dark Shaman Kilt
 			i(105742),	-- Kor'kron Dark Shaman Treads

@@ -143,7 +143,7 @@ local EncounterToLoot = {
 		i(160690),	-- Heptavium, Staff of Torturous Knowledge
 		i(160693),	-- Lancet of the Deft Hand
 		i(160694),	-- Re-Origination Pulse Rifle
-		i(160699),	-- Bararicade of Purifying Resolve
+		i(160699),	-- Barricade of Purifying Resolve
 		i(160732),	-- Helm of the Defiled Laboratorium
 		i(160726),	-- Amice of Corrupting Horror
 		i(160731),	-- Spaulders of Coagulated Viscera
@@ -151,7 +151,7 @@ local EncounterToLoot = {
 		i(160727),	-- Cord of Septic Envelopment
 		i(160733),	-- Hematocyst Stompers
 		i(160729),	-- Striders of the Putrescent Path
-		i(160654),	-- Vanquisheed Tendril of G'huun
+		i(160654),	-- Vanquished Tendril of G'huun
 	},
 };
 

@@ -461,7 +461,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				}),
 			}),
 			pvp(ach(17851)),	-- Tour of Duty: Zaralek Cavern
-			ach(18150, {	-- Zaralek Caverns Glyph Hunter
+			ach(18150, {	-- Zaralek Cavern Glyph Hunter
 				sym = {{"meta_achievement",
 					17517,	-- Dragon Glyphs: Aberrus Approach
 					17516,	-- Dragon Glyphs: Acidbite Ravine

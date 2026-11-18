@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28220),	-- Moon-Crown Antlers
 							i(28217),	-- Tarren Mill Vitality Locket
 							-- #if AFTER 7.3.5
-							i(27427),	-- Durotan's Battle Harnace
+							i(27427),	-- Durotan's Battle Harness
 							i(27428),	-- Stormfront Gauntlets
 							-- #endif
 							i(28219),	-- Emerald-Scale Greaves

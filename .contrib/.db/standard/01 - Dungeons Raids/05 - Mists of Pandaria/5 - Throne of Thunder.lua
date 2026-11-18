@@ -1388,7 +1388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				e(820, {	-- Primordius
 					crs = { 69017 },	-- Primordius
 					groups = {
-						ach(8037),	-- Genectically Unmodified Organism
+						ach(8037),	-- Genetically Unmodified Organism
 						-- #if BEFORE 8.0.1
 						-- CRIEVE NOTE: This item used to be a Normal/Heroic pet only, unlike its counterpart Living Fluid which was only LFR. (and still is)
 						i(97960, {	-- Viscous Horror (PET!)
@@ -2748,7 +2748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							}),
 							ach(8068),	-- Heroic: Ra-den
 							ach(8258),	-- Heroic: Ra-den Guild Run
-							ach(8089, {	-- I Thought He Was Supposeed to Be Hard?
+							ach(8089, {	-- I Thought He Was Supposed to Be Hard?
 								timeline = { REMOVED_6_0_2 },
 							}),
 							ach(8257, {	-- Realm First! Ra-den

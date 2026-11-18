@@ -94,7 +94,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 				groups = {
 					i(52923),	-- Rocket-Fuel Soaked Bracers
 					i(52968),	-- Orbital Leggings
-					i(131845),	-- Oribital Greaves
+					i(131845),	-- Orbital Greaves
 					i(52939),	-- Cage-Launcher's Plate
 				},
 			}),
@@ -380,7 +380,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 				coord = { 52.2, 73.1, THE_LOST_ISLES },
 				groups = {
 					i(52954),	-- Hatchling Prodder
-					i(52908),	-- Hathcling Handlers
+					i(52908),	-- Hatchling Handlers
 					i(131830),	-- Hatchling Gloves
 				},
 			}),

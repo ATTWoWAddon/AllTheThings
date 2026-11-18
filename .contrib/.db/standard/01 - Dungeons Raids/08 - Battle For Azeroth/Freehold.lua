@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(155884),	-- Parrotfeather Cloak
 						i(159227),	-- Silk Cuffs of the Skycap'n
 						i(159353),	-- Chain-Linked Safety Cord
-						i(158360),	-- Sharkbait Harneses Girdle
+						i(158360),	-- Sharkbait Harness Girdle
 						i(155862),	-- Kragg's Rigging Scalers
 					},
 				}),
@@ -95,7 +95,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(155886),	-- Smartly Plumed Cap
 						i(155887),	-- Sweete's Jeweled Headgear
 						i(159352),	-- Gaping Maw Shoulderguard
-						i(159299),	-- Gold-Tasseled Epautlets
+						i(159299),	-- Gold-Tasseled Epaulets
 						i(159407),	-- Lockjaw Shoulderplate
 						i(158301),	-- Ruffled Poet Blouse
 						i(155881),	-- Harlan's Loaded Dice
@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155884),	-- Parrotfeather Cloak
 							i(159227),	-- Silk Cuffs of the Skycap'n
 							i(159353),	-- Chain-Linked Safety Cord
-							i(158360),	-- Sharkbait Harneses Girdle
+							i(158360),	-- Sharkbait Harness Girdle
 							i(155862),	-- Kragg's Rigging Scalers
 						},
 					}),
@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155886),	-- Smartly Plumed Cap
 							i(155887),	-- Sweete's Jeweled Headgear
 							i(159352),	-- Gaping Maw Shoulderguard
-							i(159299),	-- Gold-Tasseled Epautlets
+							i(159299),	-- Gold-Tasseled Epaulets
 							i(159407),	-- Lockjaw Shoulderplate
 							i(158301),	-- Ruffled Poet Blouse
 							i(155881),	-- Harlan's Loaded Dice
@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155884),	-- Parrotfeather Cloak
 							i(159227),	-- Silk Cuffs of the Skycap'n
 							i(159353),	-- Chain-Linked Safety Cord
-							i(158360),	-- Sharkbait Harneses Girdle
+							i(158360),	-- Sharkbait Harness Girdle
 							i(155862),	-- Kragg's Rigging Scalers
 						},
 					}),
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155886),	-- Smartly Plumed Cap
 							i(155887),	-- Sweete's Jeweled Headgear
 							i(159352),	-- Gaping Maw Shoulderguard
-							i(159299),	-- Gold-Tasseled Epautlets
+							i(159299),	-- Gold-Tasseled Epaulets
 							i(159407),	-- Lockjaw Shoulderplate
 							i(158301),	-- Ruffled Poet Blouse
 							i(155881),	-- Harlan's Loaded Dice

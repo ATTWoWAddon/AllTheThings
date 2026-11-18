@@ -1487,7 +1487,7 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 							timeline = { REMOVED_1_15_3 },
 						}),
 						i(18755),	-- Xorothian Firestick
-						i(18756),	-- Dreadguard Protector
+						i(18756),	-- Dreadguard's Protector
 						i(18754),	-- Fel Hardened Bracers
 					},
 				}),

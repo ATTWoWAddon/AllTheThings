@@ -732,7 +732,7 @@ maproot(KALIMDOR, ULDUM, {
 				groups = {
 					ach(4961),	-- In a Thousand Years Even You Might be Worth Something
 					i(65833),	-- Leggings of Promise
-					i(65832),	-- Girlde of the Ancient One
+					i(65832),	-- Girdle of the Ancient One
 					i(65831),	-- Pharoah's Burial Spaulders
 				},
 			}),

@@ -124,7 +124,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				},
 			}),
 			o(375376, {	-- Fallen Vault
-				description = "Use the Fogotten Translocator nearby to teleport up.",
+				description = "Use the Forgotten Translocator nearby to teleport up.",
 				coord = { 51.6, 9.9, ZERETH_MORTIS },
 				questID = 65487,
 				groups = {

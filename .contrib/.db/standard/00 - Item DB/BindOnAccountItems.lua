@@ -248,7 +248,7 @@ i(44092);	-- Reforged Truesilver Champion
 i(44091);	-- Sharpened Scarlet Kris
 i(44099);	-- Strengthened Stockade Pauldrons
 i(44094);	-- The Blessed Hammer of Grace
-i(44093);	-- Unpgraded Dwarven Hand Cannon
+i(44093);	-- Upgraded Dwarven Hand Cannon
 i(42944);	-- Balanced Heartseeker
 i(42943);	-- Bloodied Arcanite Reaper
 i(42950);	-- Champion Herod's Shoulder

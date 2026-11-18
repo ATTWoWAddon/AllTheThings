@@ -210,7 +210,7 @@ local EncounterToLoot = {
 		i(151954),	-- Blood-Drenched Bindings
 		i(151960),	-- Carafe of Searing Light
 		i(151942),	-- Cord of Surging Hysteria
-		i(152015),	-- Greaves of Mercurial Alliegance
+		i(152015),	-- Greaves of Mercurial Allegiance
 		i(152092),	-- Nathrezim Incisor
 		i(151997),	-- Nathrezim Shade-Walkers
 		i(152060),	-- Neuroshock Electrode
@@ -236,7 +236,7 @@ local EncounterToLoot = {
 		i(152177),	-- Grim Inquisitor's Shoulderguards
 		i(152289),	-- Highfather's Machination
 		i(152183),	-- Juggernaut Pauldrons
-		i(152003),	-- Legguards of Numbing Glooom
+		i(152003),	-- Legguards of Numbing Gloom
 		i(152153),	-- Light's Vanguard Shoulderplates
 		i(151984),	-- Lurid Grips of the Obscene
 		i(152147),	-- Meditation Spheres of Chi'Ji
@@ -262,7 +262,7 @@ local EncounterToLoot = {
 		i(152093),	-- Gorshalach's Legacy
 		i(152684),	-- Greatboots of the Searing Tempest
 		i(152062),	-- Greatcloak of the Dark Pantheon
-		i(152174),	-- Grim Inquisitor's Death Mas
+		i(152174),	-- Grim Inquisitor's Death Mask
 		i(152022),	-- Grond-Father Girdle
 		i(152169),	-- Headdress of Venerated Spirits
 		i(152181),	-- Juggernaut Helm

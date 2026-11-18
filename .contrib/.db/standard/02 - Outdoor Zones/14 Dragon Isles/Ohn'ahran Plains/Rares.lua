@@ -263,7 +263,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				questID = 72851,
 				isDaily = IGNORED_VALUE,
 				groups = {
-					i(200212, {	-- Sand-Encrusted Graves
+					i(200212, {	-- Sand-Encrusted Greaves
 						description = "While this item can drop from almost every Dragonflight Rare, its best farmed by killing the Territorial Coastling Rare.\n\nDroprate is around 75%.\n\nThe Rare is once per Character.",
 					}),
 				},

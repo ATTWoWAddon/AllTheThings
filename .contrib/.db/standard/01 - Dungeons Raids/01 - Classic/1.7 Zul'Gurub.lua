@@ -1216,7 +1216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 					n(15082, {	-- Gri'lek
 						i(19939),	-- Gri'lek's Blood
 						i(19961),	-- Gri'lek's Grinder
-						i(19962),	-- Gri'lek Carver
+						i(19962),	-- Gri'lek's Carver
 					}),
 					n(15083, {	-- Hazza'rah
 						i(19942),	-- Hazza'rah's Dream Thread

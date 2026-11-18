@@ -1056,7 +1056,7 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 				lvl = 43,
 				groups = {
 					i(9645),	-- Gnomish Inventor Boots
-					i(9646),	-- Gnomish Water Winking Device
+					i(9646),	-- Gnomish Water Sinking Device
 				},
 			}),
 			q(7847, {	-- Return to Primal Torntusk

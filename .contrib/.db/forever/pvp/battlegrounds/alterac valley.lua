@@ -606,7 +606,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force
@@ -617,7 +617,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19084),	-- Stormpike Soldier's Cloak
 					i(19094),	-- Stormpike Cloth Girdle
 					i(19093),	-- Stormpike Leather Girdle
-					i(19092),	-- Stormpike Mail Girgle
+					i(19092),	-- Stormpike Mail Girdle
 					i(19091),	-- Stormpike Plate Girdle
 					i(19325),	-- Don Julio's Band
 					i(21563),	-- Don Rodrigo's Band
@@ -647,7 +647,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 					i(19321),	-- The Immovable Object
 					i(19324),	-- The Lobotomizer
 					i(19323),	-- The Unstoppable Force
-					i(19315),	-- Therazane's Torch
+					i(19315),	-- Therazane's Touch
 					i(19308),	-- Tome of Arcane Domination
 					i(19311),	-- Tome of Fiery Arcana
 					i(19309),	-- Tome of Shadow Force

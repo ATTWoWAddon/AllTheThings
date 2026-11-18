@@ -309,7 +309,7 @@ maproot(ZANDALAR, VOLDUN, {
 					crit(41632, {	-- Warmother Captive
 						achievementID = 12943,	-- Adventurer of Vol'dun
 					}),
-					i(161103),	-- Barbarous Captive's Wargreavers
+					i(161103),	-- Barbarous Captive's Wargreaves
 				},
 			}),
 			n(129411, {	-- Zunashi the Exile

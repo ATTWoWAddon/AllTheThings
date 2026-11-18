@@ -778,7 +778,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					groups = {
 						i(198432),	-- Crude Wind Charm
 						i(198036),	-- Spineripper's Fang
-						i(197385),	-- Renewned Proto-Drake: Horned Jaw (MM!)
+						i(197385),	-- Renewed Proto-Drake: Horned Jaw (MM!)
 					},
 				}),
 			}),

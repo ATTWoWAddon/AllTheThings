@@ -2512,7 +2512,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 							objective(1, {	-- 0/1 Overseer Idra'kess slain
 								provider = { "n", 41731 },	-- Overseer Idra'kess
 							}),
-							i(59737),	-- Eaerthmender's Sawfish Girdle
+							i(59737),	-- Earthmender's Sawfish Girdle
 							i(59736),	-- Gorgonian Belt
 							i(59735),	-- Helm of the Crushed Overseer
 						},
@@ -2923,7 +2923,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						races = ALLIANCE_ONLY,
 						groups = {
 							i(59671),	-- Pearlescent Spaulders
-							i(59670),	-- Volaran's Handguards
+							i(59670),	-- Volaren's Handguards
 							i(59672),	-- Quel'Dormir Signet Ring
 							i(59669),	-- Emerald Dragonet Choker
 						},

@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159366),	-- Water Shapers
 						i(159239),	-- Aqu'sirr's Swirling Sash
 						i(159420),	-- Stormsurger's Sabatons
-						i(158318),	-- Murkey Cerulean Signet
+						i(158318),	-- Murky Cerulean Signet
 						i(159619),	-- Briny Barnacle
 					},
 				}),
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
 							i(159420),	-- Stormsurger's Sabatons
-							i(158318),	-- Murkey Cerulean Signet
+							i(158318),	-- Murky Cerulean Signet
 							i(159619),	-- Briny Barnacle
 						},
 					}),
@@ -180,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
 							i(159420),	-- Stormsurger's Sabatons
-							i(158318),	-- Murkey Cerulean Signet
+							i(158318),	-- Murky Cerulean Signet
 							i(159619),	-- Briny Barnacle
 						},
 					}),
