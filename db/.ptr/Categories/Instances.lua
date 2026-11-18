@@ -488,7 +488,7 @@ ach(11741,{awp=70200,g={
 crit(36403,{achID=11761,id=24})}})}),
 h(-31,{
 faction(749,{coords={
-[76]={{79.2,73.6}}},icon=135861,qgs={13278}})}),
+[76]={{79.2,73.6}}},crs={13278},icon=135861})}),
 h(-45,{
 q(7486,{coords={
 [76]={{79.2,73.6}}},providers={{"o",179551}},qgs={13278},rwp=30008,sourceQuests={6824},u=2,g={
@@ -11062,7 +11062,7 @@ ach(1288),
 ach(11320,{awp=70100,g={
 i(142210,{b=1})}})}}),
 inst(753,{awp=30002,coords={
-[123]={{50,11.9}}},isLockoutShared=1,isRaid=1,mapID=156,savedInstanceID=624,g={
+[123]={{50,11.9}}},isLockoutShared=1,isRaid=1,lore="Overlooking the frozen plains of the Great Dragonblight and the inhospitable wastes of Borean Tundra lies a region known to the denizens of Northrend as Wintergrasp. Seated atop a high plateau, Wintergrasp has remained undisturbed for ages, its icy winds howling unheard amongst the ancient titan fortifications that dot the landscape. The fortress with its domed watchtowers guards the entrance to the Vault of Archavon, which contains titan relics of untold power, protected by ancient giants. It is their task to protect the artifacts, and they are bitter about the intrusion by both sides.\n\nHowever, an abundance of elemental materials and its strategically important titan fortifications are making Wintergrasp the focus of a vicious tug-of-war between the Horde and the Alliance. And then there are the persistent rumors of an ancient titan vault beneath Wintergrasp's keep. One can only marvel at the thought of what treasures may be waiting there...",mapID=156,savedInstanceID=624,g={
 h(-19,{crs={31125,33993,35013,38433},description="These can drop from any of the bosses on any difficulty.",g={
 ach(2081,{providers={{"i",43959},{"i",44083}}}),
 mnt(61465,{b=1,itemID=43959,lvl=10,r=2}),
@@ -12077,7 +12077,7 @@ s(19534,40567,{b=1,c={6},f=7,loc=46,lvl=30,modID=1}),
 s(19523,40556,{b=1,c={6},f=7,loc=46,lvl=30,modID=1})}})})}}),
 inst(754,{awp=30002,coords={
 [23]={{35.7,22.9}},
-[115]={{87.4,51.1}}},description="Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",isLockoutShared=1,isRaid=1,mapID=162,maps={163,164,165,166,167},savedInstanceID=533,g={
+[115]={{87.4,51.1}}},description="Make sure you go through 'Wards of the Dread Citadel' prior to farming this raid, then you will be able to obtain Scourgestones and special reagents during your grind. See the respective header for more information.",isLockoutShared=1,isRaid=1,lore="Naxxramas looms above the Dragonblight. A necropolis of black stone and frozen plague, torn from the earth and bound to the will of the Scourge. Within its halls, Kel'Thuzad commands the undead host, weaving plague and death from the citadel's frozen heart. It is a fortress of despair, its shadow falling upon Wintergarde Keep and its corridors echoing with the whispers of the damned, and with the cold promise of what awaits those who dare breach its gates.",mapID=162,maps={163,164,165,166,167},savedInstanceID=533,g={
 d(3,{
 h(-12,{
 ach(578,{
@@ -12985,7 +12985,7 @@ h(-12,{awp=70200,g={
 ach(11750,{
 crit(36411,{achID=11761,id=32})})}})}}),
 inst(755,{awp=30002,coords={
-[115]={{60,56.7}}},isLockoutShared=1,isRaid=1,mapID=155,savedInstanceID=615,g={
+[115]={{60,56.7}}},isLockoutShared=1,isRaid=1,lore="Deep beneath Wyrmrest Temple lies the Obsidian Sanctum. A black dragonflight domain of living stone and shadow, meant as a refuge for the brood's eggs. But something else now stirs in the dark: a clutch of twilight dragon eggs, pulsing with a power never meant to be born. Sartharion the Onyx Guardian stands watch over them, and the Wyrmrest Accord seeks to see the twilight ended before it can hatch.",mapID=155,savedInstanceID=615,g={
 d(3,{
 h(-12,{
 ach(624,{
@@ -13078,7 +13078,7 @@ i(43345,{b=1,f=113}),
 i(43346,{b=1,description="Contains gold.",modID=1}),
 crit(5889,{achID=1658,id=2})}})})}}),
 inst(756,{awp=30002,coords={
-[114]={{27.5,26.6}}},isLockoutShared=1,isRaid=1,mapID=141,savedInstanceID=616,g={
+[114]={{27.5,26.6}}},isLockoutShared=1,isRaid=1,lore="Deep within the Nexus of Coldarra, at a confluence of ley lines where the world's magic flows, lies the Eye of Eternity: The seat of power for Malygos the Spell-Weaver and the blue dragonflight. Driven mad by grief, the Aspect of Magic has awakened to a world he believes has abused magic recklessly, and so he has begun siphoning all latent arcane energy into the Focusing Iris within his sanctum, intent on hoarding it from the 'unworthy'. His war against the Kirin Tor has already begun, and only by breaching his domain can the Nexus War be ended before all magic is bound to his will.",mapID=141,savedInstanceID=616,g={
 d(3,{
 h(-45,{
 q(13384,{coords={
@@ -13156,7 +13156,7 @@ i(40531,{b=1,f=53,lvl=30,modID=1,spellID=60319}),
 i(44651),
 crit(5890,{achID=1658,id=4})}})})}}),
 inst(759,{awp=30100,coords={
-[120]={{41.5,17.9}}},isLockoutShared=1,isRaid=1,mapID=147,maps={148,149,150,151,152},savedInstanceID=603,g={
+[120]={{41.5,17.9}}},isLockoutShared=1,isRaid=1,lore="Beneath the storm-wracked mountains of the Storm Peaks lies a titan fortress whose gates were never meant to open. Ulduar is a prison built by Titans to contain Yogg-Saron, the Old God of Death, whose whispers bleed through the stone and into the dreams of Northrend. For millennia the facility held, but the prison weakens, and its keepers have fallen silent. Now champions descend into the ancient halls to confront the horror the titans could not destroy, before its influence spreads beyond the reach of any cell.",mapID=147,maps={148,149,150,151,152},savedInstanceID=603,g={
 ah(46017,{c={2,5,7,10,11,13},description="Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",isRaid=1,type="i",g={
 ach(3142,{c={2,5,7,10,11,13},providers={{"i",46017}},sourceQuests={13629}}),
 q(13622,{c={2,5,7,10,11,13},cost={{"i",45038,30}},lvl=30,qss={45039}}),
@@ -14003,7 +14003,7 @@ i(45522,{b=1,f=53,lvl=30,modID=3,spellID=64792}),
 crit(39295,{achID=12310,awp=70305})}})}),
 d(24,{sym={{"sub","tw_instance",759}}})}}),
 inst(757,{awp=30200,coords={
-[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,mapID=172,maps={173},savedInstanceID=649,g={
+[118]={{75,21.8}}},isLockoutShared=1,isRaid=1,lore="In the shadow of Icecrown Citadel, the Argent Crusade has raised the Crusaders' Coliseum. A ring of consecrated stone where the Horde and Alliance are tested to forge champions for the march on the Lich King's gates.",mapID=172,maps={173},savedInstanceID=649,g={
 h(-12,{
 ach(3917),
 ach(3918),
@@ -15449,7 +15449,7 @@ s(22827,47526,{b=1,f=23,lvl=30,r=2,u=2}),
 s(22809,47506,{b=1,f=25,lvl=30,r=2,u=2}),
 s(22826,47525,{b=1,f=28,lvl=30,r=1,u=2})}})}})})}}),
 inst(758,{awp=30300,coords={
-[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,mapID=186,maps={187,188,189,190,191,192,193,699,1359},savedInstanceID=631,g={
+[118]={{53.7,87}}},isLockoutShared=1,isRaid=1,lore="Perched upon the frozen glacier of Icecrown, the Icecrown Citadel rises as the Scourge's greatest fortress. A spire of saronite and ice built around the Frozen Throne itself. Deep within its fissure sits the Lich King, master of the undead, who commands his countless minions from the throne that once held the spirit of Ner'zhul. It is the last bastion of his power, and the final hurdle for those who would see the Scourge ended.",mapID=186,maps={187,188,189,190,191,192,193,699,1359},savedInstanceID=631,g={
 ah(49623,{c={1,2,6},description="These quests can only be completed on 25-Man Normal or Heroic difficulty.",isRaid=1,type="i",g={
 q(24545,{c={1,2,6},lvl=30,maps={115},minReputation={1156,3000},qgs={37120},qis={49869,49908,50226,50231},g={
 o(201937,{coords={
@@ -16995,7 +16995,7 @@ s(24836,50734,{b=1,f=23,lvl=30,modID=1}),
 s(24835,50733,{b=1,f=33,lvl=30,modID=1}),
 i(51315,{b=1})}})})})}}),
 inst(761,{awp=30305,coords={
-[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,mapID=200,savedInstanceID=724,g={
+[115]={{61.2,52.7}}},isLockoutShared=1,isRaid=1,lore="Beneath Wyrmrest Temple, the Ruby Sanctum has long stood as the red dragonflight's most sacred chamber. Home to its largest clutch of eggs and the future of the brood. But its guardians lie slain and its wards shattered: the black dragonflight has breached the sanctum, led by Halion, the Twilight Destroyer, a herald of Deathwing come to shatter the Wyrmrest Accord and crush any who stand in his master's path. The red flight's future now rests on those who descend into its halls.",mapID=200,savedInstanceID=724,g={
 h(-45,{
 q(26013,{coords={
 [115]={{59.7,54.6}}},lvl=30,qgs={27990},sourceQuests={26012}}),
@@ -20319,7 +20319,7 @@ i(74749,{c={4},coords={
 [85]={{57.6,65.6}}},cost={{"i",74246,1},{"g",100000000}},description="Just log out for 12 hours. Read a book or something!",qgs={57800,57801},g={
 i(74748,{c={4},spellID=104581})}}),
 i(74750,{c={4},coords={
-[241]={{29,25}}},cost={{"i",74748,1}},qgs={55488},g={
+[241]={{29,25}}},cost={{"i",74748,1}},providers={{"n",55488}},g={
 i(74752,{c={4}})}})}}),
 q(30093,{c={4},coords={
 [217]={{70,40.8}}},crs={57802},lvl=35,qgs={57770},sourceQuests={30092}}),
@@ -49464,7 +49464,7 @@ fp(2714,{collectible=false,crs={185200}}),
 fp(2757,{collectible=false,crs={182489}}),
 fp(2712,{collectible=false,crs={182431}})}),
 h(-55,{
-i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
+i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
 n(185032,{coords={
 [2061]={{22,38}}},description="Killed when having 3 stacks of Synergy",g={
 i(190727,{f=55,spellID=367983})}})}),
@@ -56872,9 +56872,9 @@ i(208117,{description="Has a 100% drop chance on Mythic Difficulty. This Item tu
 hqt(77603),
 s(2172,5748,{f=32,lvl=5}),
 s(185703,204674,{b=1,f=32,lvl=40,rwp=110002,u=2}),
-s(146520,186414,{awp=120000,b=1,bonusID=451,c={3},f=32,lvl=60,spellID=353511}),
-s(146521,186414,{awp=120000,b=1,bonusID=1,c={3},f=32,lvl=60,spellID=353511}),
-s(145986,186414,{awp=120000,b=1,bonusID=450,c={3},f=32,lvl=60,spellID=353511}),
+s(146520,186414,{b=1,bonusID=451,c={3},f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
+s(146521,186414,{b=1,bonusID=1,c={3},f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
+s(145986,186414,{b=1,bonusID=450,c={3},f=32,lvl=60,rwp=110002,spellID=353511,u=2}),
 s(64176,115294,{b=1,f=32,lvl=35}),
 s(8786,22318,{b=1,f=32,lvl=22}),
 s(78360,134608,{b=1,f=32})}}),
@@ -58206,24 +58206,16 @@ s(194491,211981,{b=1,c={1},f=7,loc=45,lvl=80,modID=3}),
 s(194496,211986,{b=1,c={1},f=7,loc=47,lvl=80,modID=3}),
 s(194489,211979,{b=1,c={1},f=3,lvl=80,modID=3})}})}})}),
 d(115,{difficulties={15,16},g={
-e(2607,{npcID=215657,g={
-crit(67572,{achID=40245})}}),
-e(2611,{npcID=214502,g={
-crit(67573,{achID=40245})}}),
-e(2599,{npcID=214503,g={
-crit(67574,{achID=40245})}}),
+e(2607,{npcID=215657}),
+e(2611,{npcID=214502}),
+e(2599,{npcID=214503}),
 e(2609,{npcID=214504,g={
-s(221110,225574,{b=1,f=3,lvl=80,modID=5,spellID=457489}),
-crit(67575,{achID=40245})}}),
-e(2612,{npcID=214506,g={
-crit(67576,{achID=40245})}}),
-e(2601,{npcID=217748,providers={{"o",454188}},g={
-crit(67577,{achID=40245})}}),
-e(2608,{crs={217489,217491},g={
-crit(67578,{achID=40245})}}),
+s(221110,225574,{b=1,f=3,lvl=80,modID=5,spellID=457489})}}),
+e(2612,{npcID=214506}),
+e(2601,{npcID=217748,providers={{"o",454188}}}),
+e(2608,{crs={217489,217491}}),
 e(2602,{npcID=218370,g={
-ach(40253,{rwp=110100,u=2}),
-crit(67579,{achID=40245})}})}}),
+ach(40253,{rwp=110100,u=2})}})}}),
 d(15,{
 h(-19,{crs={214502,214503,214504,214506,215657,217489,217491,217748,218370},g={
 cu(2916,{rwp=110100,u=2})}}),
@@ -58254,7 +58246,8 @@ s(194889,212446,{b=1,f=3,lvl=80,modID=5}),
 s(194801,212424,{b=1,f=7,loc=41,lvl=80,modID=5}),
 s(221175,212388,{b=1,f=24,lvl=80,modID=5}),
 s(194829,212431,{b=1,f=6,loc=47,lvl=80,modID=5}),
-s(221187,212409,{b=1,f=34,lvl=80,modID=5})}}),
+s(221187,212409,{b=1,f=34,lvl=80,modID=5}),
+crit(67572,{achID=40245})}}),
 e(2611,{npcID=214502,g={
 i(212451,{b=1,f=53,lvl=80,modID=5,spellID=445619}),
 s(194861,212439,{b=1,f=4,loc=41,lvl=80,modID=5}),
@@ -58268,7 +58261,8 @@ i(212447,{b=1,f=52,lvl=80,modID=5}),
 s(194761,212414,{b=1,f=6,loc=45,lvl=80,modID=5}),
 s(194857,212438,{b=1,f=5,loc=43,lvl=80,modID=5}),
 s(221184,212404,{b=1,f=23,lvl=80,modID=5}),
-s(194825,212430,{b=1,f=4,loc=45,lvl=80,modID=5})}}),
+s(194825,212430,{b=1,f=4,loc=45,lvl=80,modID=5}),
+crit(67573,{achID=40245})}}),
 e(2599,{npcID=214503,g={
 i(225618,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456504,g={
 s(222578,212003,{b=1,c={6},f=7,loc=44,lvl=80,modID=5}),
@@ -58296,7 +58290,8 @@ i(212449,{b=1,f=53,lvl=80,modID=5,spellID=447970}),
 s(220606,212399,{b=1,f=32,lvl=80,modID=5}),
 i(225577,{b=1,f=51,lvl=80,modID=5,spellID=457683}),
 s(194765,212415,{b=1,f=6,loc=43,lvl=80,modID=5}),
-s(194813,212427,{b=1,f=7,loc=40,lvl=80,modID=5})}}),
+s(194813,212427,{b=1,f=7,loc=40,lvl=80,modID=5}),
+crit(67574,{achID=40245})}}),
 e(2609,{npcID=214504,g={
 i(225630,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456501,g={
 s(222557,212000,{b=1,c={6},f=7,loc=41,lvl=80,modID=5}),
@@ -58322,7 +58317,8 @@ i(212448,{b=1,f=51,lvl=80,modID=5}),
 s(221196,212391,{b=1,f=35,lvl=80,modID=5}),
 s(221138,225586,{b=1,f=6,loc=47,lvl=80,modID=5}),
 s(194853,212437,{b=1,f=7,loc=43,lvl=80,modID=5}),
-i(212453,{b=1,f=53,lvl=80,modID=5,spellID=444489})}}),
+i(212453,{b=1,f=53,lvl=80,modID=5,spellID=444489}),
+crit(67575,{achID=40245})}}),
 e(2612,{npcID=214506,g={
 i(225614,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456505,g={
 s(222592,212005,{b=1,c={6},f=7,loc=42,lvl=80,modID=5}),
@@ -58349,7 +58345,8 @@ i(212452,{b=1,f=53,lvl=80,modID=5,spellID=444276}),
 i(220305,{b=1,f=53,lvl=80,modID=5,spellID=445560}),
 s(221146,225588,{b=1,f=5,loc=43,lvl=80,modID=5}),
 s(221205,212389,{b=1,f=28,lvl=80,modID=5}),
-i(225576,{b=1,f=52,lvl=80,modID=5})}}),
+i(225576,{b=1,f=52,lvl=80,modID=5}),
+crit(67576,{achID=40245})}}),
 e(2601,{npcID=217748,providers={{"o",454188}},g={
 i(225626,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456502,g={
 s(222564,212001,{b=1,c={6},f=7,loc=46,lvl=80,modID=5}),
@@ -58376,7 +58373,8 @@ s(221199,225636,{b=1,f=20,lvl=80,modID=5}),
 s(221202,212400,{b=1,f=33,lvl=80,modID=5}),
 i(221023,{b=1,f=53,lvl=80,modID=5,spellID=449946}),
 i(212456,{b=1,f=53,lvl=80,modID=5,spellID=444067}),
-s(218454,219877,{b=1,f=34,lvl=80,modID=5,spellID=444135})}}),
+s(218454,219877,{b=1,f=34,lvl=80,modID=5,spellID=444135}),
+crit(67577,{achID=40245})}}),
 e(2608,{crs={217489,217491},g={
 i(225622,{b=1,c={6,9,12},lvl=80,modID=5,spellID=456503,g={
 s(222571,212002,{b=1,c={6},f=7,loc=40,lvl=80,modID=5}),
@@ -58403,7 +58401,8 @@ i(220202,{b=1,f=53,lvl=80,modID=5,spellID=444959}),
 i(212450,{b=1,f=53,lvl=80,modID=5,spellID=444301}),
 s(221214,212397,{b=1,f=28,lvl=80,modID=5}),
 s(194833,212432,{b=1,f=5,loc=44,lvl=80,modID=5}),
-s(194821,212429,{b=1,f=6,loc=41,lvl=80,modID=5})}}),
+s(194821,212429,{b=1,f=6,loc=41,lvl=80,modID=5}),
+crit(67578,{achID=40245})}}),
 e(2602,{npcID=218370,g={
 i(225634,{b=1,crs={227003},lvl=80,modID=5,sym={{"sub","instance_tier",1273,15}}}),
 s(221134,225585,{b=1,f=4,loc=45,lvl=80,modID=5}),
@@ -58418,7 +58417,8 @@ s(194837,212433,{b=1,f=5,loc=42,lvl=80,modID=5}),
 s(194785,212420,{b=1,f=7,loc=42,lvl=80,modID=5}),
 i(225578,{b=1,f=52,lvl=80,modID=5,spellID=457815}),
 s(221220,212394,{b=1,f=20,lvl=80,modID=5}),
-s(194841,212434,{b=1,f=4,loc=46,lvl=80,modID=5})}}),
+s(194841,212434,{b=1,f=4,loc=46,lvl=80,modID=5}),
+crit(67579,{achID=40245})}}),
 o(456208,{catalystID=8,coords={
 [2339]={{50,54.2}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,trackID=974,g={
 cl(6,{sym={{"sub","instance_tier",1273,15,6}},g={
@@ -59506,24 +59506,16 @@ s(225185,229231,{b=1,c={1},f=7,loc=43,lvl=80,modID=3}),
 s(225197,229232,{b=1,c={1},f=7,loc=45,lvl=80,modID=3}),
 s(225257,229237,{b=1,c={1},f=7,loc=47,lvl=80,modID=3})}})}})}),
 d(115,{difficulties={15,16},g={
-e(2639,{crs={225821,225822},g={
-crit(71704,{achID=41223})}}),
-e(2640,{crs={229177,229181},g={
-crit(71705,{achID=41223})}}),
-e(2641,{crs={228648,228652},g={
-crit(71706,{achID=41223})}}),
-e(2642,{npcID=230322,g={
-crit(71707,{achID=41223})}}),
+e(2639,{crs={225821,225822}}),
+e(2640,{crs={229177,229181}}),
+e(2641,{crs={228648,228652}}),
+e(2642,{npcID=230322}),
 e(2653,{npcID=230583,g={
-s(224798,228844,{b=1,f=3,lvl=70,modID=5,spellID=471383}),
-crit(71708,{achID=41223})}}),
-e(2644,{npcID=228458,g={
-crit(71709,{achID=41223})}}),
-e(2645,{npcID=229953,g={
-crit(71710,{achID=41223})}}),
+s(224798,228844,{b=1,f=3,lvl=70,modID=5,spellID=471383})}}),
+e(2644,{npcID=228458}),
+e(2645,{npcID=229953}),
 e(2646,{crs={231075,237194},g={
-ach(41298,{rwp=110200,u=2}),
-crit(71711,{achID=41223})}})}}),
+ach(41298,{rwp=110200,u=2})}})}}),
 d(15,{
 h(-19,{crs={225821,225822,228458,228648,228652,229177,229181,229953,230322,230583,231075,237194},g={
 cu(3109,{rwp=110200,u=2})}}),
@@ -59552,7 +59544,8 @@ s(224869,228862,{b=1,f=6,loc=47,lvl=80,modID=5}),
 s(224865,228861,{b=1,f=4,loc=45,lvl=80,modID=5}),
 s(224793,228839,{b=1,f=3,lvl=70,modID=5}),
 s(224921,228875,{b=1,f=5,loc=41,lvl=80,modID=5}),
-i(230019,{b=1,f=53,lvl=80,modID=5,spellID=466652})}}),
+i(230019,{b=1,f=53,lvl=80,modID=5,spellID=466652}),
+crit(71704,{achID=41223})}}),
 e(2640,{crs={229177,229181},g={
 i(228803,{b=1,c={6,9,12},lvl=80,modID=5,spellID=464837,g={
 s(225467,229254,{b=1,c={6},f=7,loc=44,lvl=80,modID=5}),
@@ -59580,7 +59573,8 @@ s(224913,228873,{b=1,f=7,loc=45,lvl=80,modID=5}),
 s(224809,228847,{b=1,f=4,loc=47,lvl=80,modID=5}),
 s(230509,228890,{b=1,f=1,lvl=80,modID=5}),
 i(230190,{b=1,f=53,lvl=80,modID=5,spellID=470286}),
-s(230512,228900,{b=1,f=32,lvl=80,modID=5})}}),
+s(230512,228900,{b=1,f=32,lvl=80,modID=5}),
+crit(71705,{achID=41223})}}),
 e(2641,{crs={228648,228652},g={
 i(228815,{b=1,c={6,9,12},lvl=80,modID=5,spellID=464833,g={
 s(225431,229251,{b=1,c={6},f=7,loc=41,lvl=80,modID=5}),
@@ -59607,7 +59601,8 @@ i(230194,{b=1,f=53,lvl=80,modID=5,spellID=471567}),
 s(224917,228874,{b=1,f=7,loc=47,lvl=80,modID=5}),
 s(224801,228845,{b=1,f=6,loc=45,lvl=80,modID=5}),
 i(228841,{b=1,f=51,lvl=80,modID=5}),
-s(224849,228857,{b=1,f=4,loc=43,lvl=80,modID=5})}}),
+s(224849,228857,{b=1,f=4,loc=43,lvl=80,modID=5}),
+crit(71706,{achID=41223})}}),
 e(2642,{npcID=230322,g={
 i(228811,{b=1,c={6,9,12},lvl=80,modID=5,spellID=464834,g={
 s(225443,229252,{b=1,c={6},f=7,loc=46,lvl=80,modID=5}),
@@ -59633,7 +59628,8 @@ s(230497,228903,{b=1,f=22,lvl=80,modID=5}),
 i(230189,{b=1,f=53,lvl=80,modID=5,spellID=471212}),
 s(224857,228859,{b=1,f=6,loc=40,lvl=80,modID=5}),
 i(230026,{b=1,f=53,lvl=80,modID=5,spellID=466671}),
-s(230500,228896,{b=1,f=20,lvl=80,modID=5})}}),
+s(230500,228896,{b=1,f=20,lvl=80,modID=5}),
+crit(71707,{achID=41223})}}),
 e(2653,{npcID=230583,g={
 i(228799,{b=1,c={6,9,12},lvl=80,modID=5,spellID=464836,g={
 s(225491,229256,{b=1,c={6},f=7,loc=42,lvl=80,modID=5}),
@@ -59659,7 +59655,8 @@ i(230193,{b=1,f=53,lvl=80,modID=5,spellID=467485}),
 i(230186,{b=1,f=53,lvl=80,modID=5,spellID=467250}),
 s(224949,228882,{b=1,f=4,loc=45,lvl=80,modID=5}),
 s(224973,228888,{b=1,f=5,loc=47,lvl=80,modID=5}),
-s(224957,228884,{b=1,f=7,loc=43,lvl=80,modID=5})}}),
+s(224957,228884,{b=1,f=7,loc=43,lvl=80,modID=5}),
+crit(71708,{achID=41223})}}),
 e(2644,{npcID=228458,g={
 i(228807,{b=1,c={6,9,12},lvl=80,modID=5,spellID=464835,g={
 s(225455,229253,{b=1,c={6},f=7,loc=40,lvl=80,modID=5}),
@@ -59687,7 +59684,8 @@ i(230027,{b=1,f=53,lvl=80,modID=5,spellID=466681}),
 s(224961,228885,{b=1,f=5,loc=43,lvl=80,modID=5}),
 i(228843,{b=1,f=52,lvl=80,modID=5,spellID=1243749}),
 s(230485,228906,{b=1,f=1,lvl=80,modID=5}),
-s(230491,231266,{b=1,f=20,lvl=80,modID=5})}}),
+s(230491,231266,{b=1,f=20,lvl=80,modID=5}),
+crit(71709,{achID=41223})}}),
 e(2645,{npcID=229953,g={
 s(224825,228851,{b=1,f=7,loc=42,lvl=80,modID=5}),
 s(230476,228893,{b=1,f=31,lvl=80,modID=5,spellID=471316}),
@@ -59702,7 +59700,8 @@ s(224933,228878,{b=1,f=6,loc=43,lvl=80,modID=5}),
 i(230192,{b=1,f=53,lvl=80,modID=5,spellID=471548}),
 s(224901,228870,{b=1,f=4,loc=41,lvl=80,modID=5}),
 s(230479,228902,{b=1,f=23,lvl=80,modID=5}),
-i(230199,{b=1,f=53,lvl=80,modID=5,spellID=1217356})}}),
+i(230199,{b=1,f=53,lvl=80,modID=5,spellID=1217356}),
+crit(71710,{achID=41223})}}),
 e(2646,{crs={231075,237194},g={
 i(228819,{b=1,lvl=80,modID=5,sym={{"sub","instance_tier",1296,15}}}),
 s(224877,228864,{b=1,f=5,loc=42,lvl=80,modID=5}),
@@ -59718,7 +59717,8 @@ s(224909,228872,{b=1,f=4,loc=44,lvl=80,modID=5}),
 s(224945,228881,{b=1,f=4,loc=43,lvl=80,modID=5}),
 s(224841,228855,{b=1,f=7,loc=41,lvl=80,modID=5}),
 i(231265,{b=1,f=52,lvl=70,modID=5,spellID=1214161}),
-s(230467,228889,{b=1,f=8,lvl=80,modID=5,spellID=471316})}}),
+s(230467,228889,{b=1,f=8,lvl=80,modID=5,spellID=471316}),
+crit(71711,{achID=41223})}}),
 o(456208,{catalystID=10,coords={
 [2339]={{50,54.2}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,trackID=974,g={
 cl(6,{sym={{"sub","instance_tier",1296,15,6}},g={
@@ -60919,24 +60919,16 @@ d(115,{difficulties={15,16},g={
 h(-45,{
 q(91413,{lvl=80,qss={246446},g={
 mnt(1242272,{b=1,itemID=246445,lvl=10})}})}),
-e(2684,{crs={233814,243241},g={
-crit(103289,{achID=41599})}}),
-e(2686,{npcID=233815,g={
-crit(103290,{achID=41599})}}),
-e(2685,{npcID=233816,g={
-crit(103291,{achID=41599})}}),
-e(2687,{crs={233817,247989},g={
-crit(103292,{achID=41599})}}),
-e(2688,{crs={237660,237661,237662,248404},g={
-crit(103293,{achID=41599})}}),
-e(2747,{npcID=237861,g={
-crit(103294,{achID=41599})}}),
-e(2690,{npcID=237763,providers={{"o",562348}},g={
-crit(103295,{achID=41599})}}),
+e(2684,{crs={233814,243241}}),
+e(2686,{npcID=233815}),
+e(2685,{npcID=233816}),
+e(2687,{crs={233817,247989}}),
+e(2688,{crs={237660,237661,237662,248404}}),
+e(2747,{npcID=237861}),
+e(2690,{npcID=237763,providers={{"o",562348}}}),
 e(2691,{crs={233824,241517},g={
 i(246446,{b=1,rwp=120001,u=2}),
-ach(41624,{rwp=120000,u=2}),
-crit(103296,{achID=41599})}})}}),
+ach(41624,{rwp=120000,u=2})}})}}),
 d(15,{
 h(-19,{crs={233814,233815,233816,233817,233824,237660,237661,237662,237763,237861,241517,243241,247989,248404},g={
 cu(3288,{rwp=120001,u=2})}}),
@@ -60963,7 +60955,8 @@ s(285435,237547,{b=1,f=4,loc=41,lvl=80,modID=5}),
 s(293131,237739,{b=1,f=29,lvl=80,modID=5}),
 s(293125,237736,{b=1,f=23,lvl=80,modID=5}),
 s(285383,237534,{b=1,f=4,loc=43,lvl=80,modID=5}),
-s(285451,237551,{b=1,f=7,loc=47,lvl=80,modID=5})}}),
+s(285451,237551,{b=1,f=7,loc=47,lvl=80,modID=5}),
+crit(103289,{achID=41599})}}),
 e(2686,{npcID=233815,g={
 i(237593,{b=1,c={6,9,12},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223545,sym={{"select","itemID",237593.003},{"groupfill",1},{"pop"}}}),
 i(237594,{b=1,c={3,8,11},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223545,sym={{"select","itemID",237594.003},{"groupfill",1},{"pop"}}}),
@@ -60994,7 +60987,8 @@ s(285343,237524,{b=1,f=4,loc=47,lvl=80,modID=5}),
 i(242393,{b=1,f=53,lvl=80,modID=5,spellID=1232721}),
 s(293186,237732,{b=1,f=32,lvl=80,modID=5}),
 s(293140,237729,{b=1,f=20,lvl=80,modID=5}),
-s(293143,237723,{b=1,f=8,lvl=80,modID=5})}}),
+s(293143,237723,{b=1,f=8,lvl=80,modID=5}),
+crit(103290,{achID=41599})}}),
 e(2685,{npcID=233816,g={
 i(237585,{b=1,c={6,9,12},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223543,sym={{"select","itemID",237585.003},{"groupfill",1},{"pop"}}}),
 i(237586,{b=1,c={3,8,11},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223543,sym={{"select","itemID",237586.003},{"groupfill",1},{"pop"}}}),
@@ -61025,7 +61019,8 @@ s(285355,237527,{b=1,f=4,loc=42,lvl=80,modID=5}),
 i(242398,{b=1,f=53,lvl=80,modID=5,spellID=1235387}),
 i(242391,{b=1,f=53,lvl=80,modID=5,spellID=1235425}),
 s(293134,237738,{b=1,f=34,lvl=80,modID=5}),
-s(293137,237730,{b=1,f=28,lvl=80,modID=5,spellID=1235136})}}),
+s(293137,237730,{b=1,f=28,lvl=80,modID=5,spellID=1235136}),
+crit(103291,{achID=41599})}}),
 e(2687,{crs={233817,247989},g={
 i(237589,{b=1,c={6,9,12},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223544,sym={{"select","itemID",237589.003},{"groupfill",1},{"pop"}}}),
 i(237590,{b=1,c={3,8,11},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223544,sym={{"select","itemID",237590.003},{"groupfill",1},{"pop"}}}),
@@ -61056,7 +61051,8 @@ s(293152,237724,{b=1,f=1,lvl=80,modID=5}),
 s(285459,237553,{b=1,f=5,loc=47,lvl=80,modID=5}),
 i(237570,{b=1,f=52,lvl=80,modID=5}),
 s(293146,237726,{b=1,f=28,lvl=80,modID=5}),
-s(293149,237737,{b=1,f=26,lvl=80,modID=5})}}),
+s(293149,237737,{b=1,f=26,lvl=80,modID=5}),
+crit(103292,{achID=41599})}}),
 e(2688,{crs={237660,237661,237662,248404},g={
 i(237597,{b=1,c={6,9,12},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223546,sym={{"select","itemID",237597.003},{"groupfill",1},{"pop"}}}),
 i(237598,{b=1,c={3,8,11},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223546,sym={{"select","itemID",237598.003},{"groupfill",1},{"pop"}}}),
@@ -61091,7 +61087,8 @@ s(291861,243307,{b=1,f=7,loc=47,lvl=80,modID=5}),
 s(291857,243306,{b=1,f=5,loc=47,lvl=80,modID=5}),
 s(291853,243305,{b=1,f=4,loc=47,lvl=80,modID=5}),
 i(242397,{b=1,f=53,lvl=80,modID=5,spellID=1235360}),
-s(285491,237561,{b=1,f=7,loc=43,lvl=80,modID=5})}}),
+s(285491,237561,{b=1,f=7,loc=43,lvl=80,modID=5}),
+crit(103293,{achID=41599})}}),
 e(2747,{npcID=237861,g={
 i(237581,{b=1,c={6,9,12},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223542,sym={{"select","itemID",237581.003},{"groupfill",1},{"pop"}}}),
 i(237582,{b=1,c={3,8,11},lvl=80,modID=151,nomerge=1,skipFill=1,spellID=1223542,sym={{"select","itemID",237582.003},{"groupfill",1},{"pop"}}}),
@@ -61122,7 +61119,8 @@ s(285507,237565,{b=1,f=5,loc=47,lvl=80,modID=5}),
 s(293165,237733,{b=1,f=33,lvl=80,modID=5}),
 s(285367,237530,{b=1,f=7,loc=46,lvl=80,modID=5}),
 i(242396,{b=1,f=53,lvl=80,modID=5,spellID=1233556}),
-s(293161,237728,{b=1,f=20,lvl=80,modID=5,spellID=1235136})}}),
+s(293161,237728,{b=1,f=20,lvl=80,modID=5,spellID=1235136}),
+crit(103294,{achID=41599})}}),
 e(2690,{npcID=237763,providers={{"o",562348}},g={
 s(285375,237532,{b=1,f=7,loc=41,lvl=80,modID=5}),
 s(285503,237564,{b=1,f=7,loc=47,lvl=80,modID=5}),
@@ -61137,7 +61135,8 @@ i(242406,{b=1,f=51,lvl=80,modID=5}),
 s(285471,237556,{b=1,f=4,loc=47,lvl=80,modID=5}),
 s(285439,237548,{b=1,f=4,loc=40,lvl=80,modID=5}),
 s(293174,237740,{b=1,f=20,lvl=80,modID=5}),
-s(293177,237735,{b=1,f=25,lvl=80,modID=5,spellID=1235136})}}),
+s(293177,237735,{b=1,f=25,lvl=80,modID=5,spellID=1235136}),
+crit(103295,{achID=41599})}}),
 e(2691,{crs={233824,241517},g={
 i(237602,{b=1,lvl=80,modID=5,sym={{"sub","instance_tier",1302,15}}}),
 i(242404,{b=1,f=53,lvl=80,modID=5,spellID=1235500}),
@@ -61152,7 +61151,8 @@ s(285415,237542,{b=1,f=4,loc=46,lvl=80,modID=5}),
 s(293183,237725,{b=1,f=24,lvl=80,modID=5}),
 s(285495,237562,{b=1,f=5,loc=43,lvl=80,modID=5}),
 s(285499,237563,{b=1,f=7,loc=45,lvl=80,modID=5}),
-s(285407,237540,{b=1,f=5,loc=44,lvl=80,modID=5})}}),
+s(285407,237540,{b=1,f=5,loc=44,lvl=80,modID=5}),
+crit(103296,{achID=41599})}}),
 o(456208,{catalystID=11,coords={
 [2339]={{50,54.2}}},description="This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",modelScale=4,trackID=974,g={
 cl(6,{sym={{"sub","instance_tier",1302,15,6}},g={

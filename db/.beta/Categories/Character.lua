@@ -7641,7 +7641,9 @@ q(72474,{coords={
 [461]={{45.2,68.4}}},lvl=50,qgs={10176},races={2},sourceQuests={74581}}),
 q(72463,{coords={
 [461]={{50,60}}},isBreadcrumb=1,lvl=50,nextQuests={72475},qgs={200760},races={2},sourceQuests={74581},g={
-i(202402,{races={2}}),
+o(384774,{coords={
+[461]={{49.8,60.2}}},races={2},g={
+i(202402,{races={2}})}}),
 i(202401,{f=55,races={2},spellID=398851})}}),
 q(72475,{coords={
 [461]={{45.2,68.4}}},lvl=50,qgs={10176},races={2},sourceQuests={72463,72474}}),
@@ -7889,7 +7891,7 @@ q(77905,{coords={
 i(211133,{races={8}})}}),
 q(77906,{coords={
 [463]={{58.5,65.5}}},lvl=50,qgs={212782},races={8},sourceQuests={77905},g={
-en(211446,{b=1,questID=78913,races={8},spellID=429468,sym={{"select","sourceID",194126}},tmogSetID=3350,g={
+en(211446,{b=1,questID=78913,races={8},spellID=429468,tmogSetID=3350,g={
 ens(441539,{questID=80503,tmogSetID=3515,g={
 s(200588,218007,{f=2,loc=42}),
 s(200595,218015,{f=2,loc=45}),
@@ -7904,6 +7906,7 @@ ens(441987,{questID=80542,tmogSetID=3516,g={
 s(200652,218118,{f=2,loc=40})}}),
 ens(441988,{questID=80543,tmogSetID=3517,g={
 s(200653,218119,{f=2,loc=40})}}),
+s(194126,211438,{f=2,loc=42}),
 s(194129,211441,{f=2,loc=45}),
 s(194128,211440,{f=2,loc=43}),
 s(194125,211437,{f=2,loc=47}),

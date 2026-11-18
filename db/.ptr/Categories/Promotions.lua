@@ -155,6 +155,7 @@ s(302524,262840,{awp=120100,description="Available with the purchase of anything
 s(302506,262822,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=46,rwp=120100,u=2}),
 s(302543,262859,{awp=120100,description="Available with the purchase of anything from the Grassy Dunecloth Transmog Collection on the Blizzard Gear Store between Sept. 28, 2026 (12pm ET) and Oct. 12, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=42,rwp=120100,u=2}),
 de(15144,{awp=120105,description="Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 13th, 10:00 a.m. & November 3rd, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",itemID=263294,rwp=120105,spellID=1270362,u=2}),
+s(298517,252715,{awp=120105,description="Available with any purchase from the Blizzard Gear Store between Nov. 16, 2026 (12pm ET) and Nov. 23, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",f=2,loc=40,rwp=120105,u=2}),
 h(-819,{awp=120105,u=3,g={
 mnt(1311627,{itemID=281526,u=3}),
 p(5173,{itemID=284179,npcID=274350,spellID=1315275,u=3}),
@@ -288,7 +289,7 @@ ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{awp=20403,itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,u=3,g={
-h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",rwp=100107,u=2,g={
+h(-523,{description="These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",rwp=100107,u=2,g={
 mnt(370770,{b=1,itemID=258475,lvl=10,u=2})}})}}),
 x(4,{awp=40003,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),
@@ -303,7 +304,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,awp=80300,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),

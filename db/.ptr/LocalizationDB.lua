@@ -1019,6 +1019,8 @@ L.SHOW_REMAINING_CHECKBOX = "Show Remaining Things"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total."
 L.SHOW_SKYRIDING_CHECKBOX = ACCESSIBILITY_ADV_FLY_LABEL
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which requires Skyriding within the game."
+L.SIMPLE_ZONE_DROPS_CHECKBOX = "Simplify Zone Drops"
+L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP = "Enable this option to list a creature's Zone Drops directly in its tooltip instead of under a 'Zone Drop' header."
 L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by " .. SHIFT_KEY_TEXT .. " clicking on an ATT window."
 L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes"
@@ -2047,6 +2049,7 @@ localize(L.HEADER_NAMES, {
 	[-801] = "Talebound",
 	[-817] = "Talebound Store",
 	[-819] = "Dungeons & Dragons",
+	[-823] = "Moonwell",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contains things that are rewarded upon completing that event.",
@@ -2137,7 +2140,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-554] = "Instead of buying items from other players like the regular Auction House, items on the Black Market are generated and listed by NPCs. The items are listed for one day only. The items for sale vary from items that were made unobtainable, to rare drops and TCG items. All items are listed infrequently, so it should not be seen as a reliable way to farm rarities.\n\n  Mount bids start at 20,000g, with some exceptions.\n  Companion bids start between 1g and 20,000g, depending on the original source and how hard it is to get.\n  Vanity/misc items start between 10,000g and 15,000g.\n\nBidding works like the regular Auction House. There is no buyout price. The sky (or the gold cap) is the limit when competing with other players for the final bid. With a successful purchase, the item is sent in the mail. \n\nThe supply of items is realm-based. Each realm will have different items for sale at any one time and prices are likely to vary wildly from server to server.\n\nIf empty, the item window will list \"There are no items at this time. Please check back later.\"",
 	[-555] = "This reward is given for filling the Travel Points Progress Bar during the month.",
 	[-560] = "The following minigames cost one Darkmoon Game Token to play and have a daily quest that grants you prize tickets as well as a number of associated achievements.",
-	[-561] = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavillion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
+	[-561] = "To play the Darkmoon Faire Dance game, talk to Simon Sezdans in front of the South Pavilion. Each attempt at the Darkmoon Faire Dance game costs one Darkmoon Game Token. Talking to Simon will also set the difficulty for your dance game:\n  Just something fun and easygoing! (Easy)\n  I'd like a little challenge! (Medium)\n  Show me your moves, don't hold back! (Hard)\n\nDarkmoon Dance Master is not a rhythm game like most dance games are, but a memory game instead. You will have a dancer next to you in the dancing arena, who will start a sequence of moves highlighted by runes in front of him. Easy games will have a sequence of 3 runes at a time, Medium games 4 runes, and Hard games 5 runes.\n\nThere are three possible runes: Chicken Dance (Yellow), Power Spin (Purple) and Fist Pump (Blue). Once the opponent finishes their sequence, you have 5 seconds to match the exact sequence used by the dancer. There is no punishment for taking your time to complete the sequence, as long as you do it in time and don't miss any steps.\n\nThe game ends after 5 rounds (if you complete all steps successfully), but can end prematurely if you miss too many steps. Missing no steps will grant you a perfect score.",
 	[-562] = "Roughly 60 floating rings appear all over the island, but most are not over the Faire area proper and are found in the woods. Players start with ten seconds of flight time and flying through a ring will refresh the buff. Work out a route in such a way that the next ring is always within 10 seconds of the one that is getting flown through, as there are many ways to get cut off.",
 	[-563] = "In order to maximize your score, wait for the current mark to disappear then aim towards the middle target. As soon as any green mark appear, press 1 immediately and during the short cast time, move your gun to point at the left or right target if necessary.",
 	[-564] = "Located near the entrance, guests receive a mallet to whack some stuffed gnolls that pop out of nine barrels in the area. Players will have 60 seconds to earn 30 points. The gnolls come in three types: normal, Hogger, and baby, awarding 1 point, 3 points, or a knockdown, respectively.",
@@ -2184,6 +2187,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-800] = "The outrunners patrol all over the Barrens as a group terrorizing Horde players that get too close.",
 	[-801] = "The village of Quillgrave awaits, and the stories are far from finished. The Storyteller is waiting, and the fire is lit. Gather around the campfire and prepare to lose yourself in Talebound’s macabre tales.",
 	[-819] = "Special ingame items available alongside purchase of the D&D: World of Warcraft Ultimate or Collector Edition bundles.",
+	[-823] = "Tailors make Mooncloth while standing at a Moonwell. Coordinates are for select Moonwells around the world.",
 })
 localize(L.HEADER_LORE, {
 	[-74] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2835,6 +2839,7 @@ localize(L.HEADER_ICONS, {
 	[-801] = 7815705,
 	[-817] = 2744751,
 	[-819] = 134153,
+	[-823] = 134754,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,
@@ -3050,7 +3055,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=3,year=2027},{hour=10,minute=0,month=12,monthDay=7,weekday=3,year=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=8,weekday=1,year=2026},{hour=23,month=11,monthDay=8,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=15,weekday=1,year=2026},{hour=23,month=11,monthDay=15,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=22,weekday=1,year=2026},{hour=23,month=11,monthDay=22,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=29,weekday=1,year=2026},{hour=23,month=11,monthDay=29,weekday=1,year=2026}),
@@ -3102,7 +3106,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=17,weekday=1,year=2027},{hour=23,month=10,monthDay=17,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=24,weekday=1,year=2027},{hour=23,month=10,monthDay=24,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027}),
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=7,weekday=1,year=2027},{hour=23,month=11,monthDay=7,weekday=1,year=2027})
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=7,weekday=1,year=2027},{hour=23,month=11,monthDay=7,weekday=1,year=2027}),
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=14,weekday=1,year=2027},{hour=23,month=11,monthDay=14,weekday=1,year=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=3,year=2025},{hour=23,minute=59,month=3,monthDay=19,weekday=5,year=2026}),
@@ -6148,6 +6153,7 @@ local ObjectNames = {
 	[177464] = "Large Termite Mound",
 	[177490] = "Northridge Lumber Mill Crate",
 	[177491] = "Termite Barrel",
+	[177525] = "Moonkin Stone",
 	[177544] = "Joseph's Chest",
 	[177624] = "Xabraxxis' Demon Bag",
 	[177667] = "Torn Scroll",
@@ -11306,6 +11312,7 @@ local ObjectNames = {
 	[384654] = "Ancient Volume",
 	[384744] = "Warcraft Rumble Machine",
 	[384763] = "Forbidden Hoard",
+	[384774] = "Bag of Cactus Apples",
 	[384858] = "Chef's Hoard",
 	[384980] = "Mysterious Chest",
 	[385001] = "Empty Fish Barrel",
@@ -20998,6 +21005,7 @@ local ObjectModels = {
 	[384654] = 4337372,
 	[384744] = 5064153,
 	[384763] = 4216697,
+	[384774] = 874401,
 	[384858] = 4216697,
 	[384980] = 4216698,
 	[385001] = 950119,
@@ -28527,6 +28535,7 @@ localize(ObjectNames, {
 	[177464] = "Großer Termitenhügel",
 	[177490] = "Kiste vom Sägewerk des Nordkamms",
 	[177491] = "Termitenfass",
+	[177525] = "Moonkinstein",
 	[177544] = "Josephs Truhe",
 	[177624] = "Xabraxxis Dämonentasche",
 	[177667] = "Zerrissene Rolle",
@@ -33547,6 +33556,7 @@ localize(ObjectNames, {
 	[384654] = "Uralter Band",
 	[384744] = "Warcraft Rumble-Automat",
 	[384763] = "Verbotener Schatz",
+	[384774] = "Sack voller Kaktusäpfel",
 	[384858] = "Hort des Kochs",
 	[384980] = "Mysteriöse Truhe",
 	[385001] = "Leeres Fischfass",
@@ -37279,6 +37289,7 @@ localize(ObjectNames, {
 	[177464] = "Grande termitière",
 	[177490] = "Caisse de la scierie de la Crête du nord",
 	[177491] = "Tonneau de termites",
+	[177525] = "Pierre des séléniens",
 	[177544] = "Coffre de Joseph",
 	[177624] = "Sac des démons de Xabraxxis",
 	[177667] = "Parchemin déchiré",
@@ -42326,6 +42337,7 @@ localize(ObjectNames, {
 	[384654] = "Volume ancien",
 	[384744] = "Borne Warcraft Rumble",
 	[384763] = "Provisions interdites",
+	[384774] = "Sac de fruits de cactus",
 	[384858] = "Trésor du chef",
 	[384980] = "Coffre mystérieux",
 	[385001] = "Tonneau de poissons vide",
@@ -53488,6 +53500,7 @@ localize(ObjectNames, {
 	[177289] = "Caldeirão do Flagelo",
 	[177464] = "Cupinzeiro Grande",
 	[177491] = "Barril de Cupins",
+	[177525] = "Pedra Luniscante",
 	[177544] = "Baú do Josefo",
 	[177667] = "Pergaminho Rasgado",
 	[177750] = "Broto Fúngico Lunar",
@@ -62559,6 +62572,7 @@ localize(ObjectNames, {
 	[177464] = "Большой термитник",
 	[177490] = "Ящик с лесопилки Северного Кряжа",
 	[177491] = "Термитная бочка",
+	[177525] = "Камень лунного совуха",
 	[177544] = "Сундук Джозефа",
 	[177624] = "Демонова сума Забраксиса",
 	[177667] = "Разорванный свиток",
@@ -67637,6 +67651,7 @@ localize(ObjectNames, {
 	[384654] = "Древний талмуд",
 	[384744] = "Игровой автомат Rumble",
 	[384763] = "Запретный тайник",
+	[384774] = "Сумка с плодами кактуса",
 	[384858] = "Тайник шеф-повара",
 	[384980] = "Таинственный сундук",
 	[385001] = "Пустой бочонок для рыбы",
@@ -70980,6 +70995,7 @@ localize(ObjectNames, {
 	[177289] = "스컬지 가마솥",
 	[177464] = "큰 흰개미집",
 	[177491] = "흰개미 통",
+	[177525] = "달빛야수 비석",
 	[177544] = "조셉의 상자",
 	[177667] = "찢어진 두루마리",
 	[177750] = "달버섯",
@@ -79783,6 +79799,7 @@ localize(ObjectNames, {
 	[177464] = "Montículo grande de termitas",
 	[177490] = "Cajón de la Serrería de Crestanorte",
 	[177491] = "Barrica de termitas",
+	[177525] = "Piedra de lechúcico lunar",
 	[177544] = "Cofre de Joseph",
 	[177624] = "Bolsa demoníaca de Xabraxxis",
 	[177667] = "Pergamino roto",
@@ -84798,6 +84815,7 @@ localize(ObjectNames, {
 	[384654] = "Volumen antiguo",
 	[384744] = "Máquina de Warcraft Rumble",
 	[384763] = "Tesoro prohibido",
+	[384774] = "Bolsa de manzanas de cactus",
 	[384980] = "Arcón misterioso",
 	[385001] = "Barril de pescado vacío",
 	[385008] = "Telarañas tejidas",
@@ -92056,6 +92074,7 @@ localize(ObjectNames, {
 	[177289] = "瘟疫之锅",
 	[177464] = "大白蚁丘",
 	[177491] = "白蚁桶",
+	[177525] = "月夜枭兽之石",
 	[177544] = "约瑟夫的箱子",
 	[177667] = "破损的卷轴",
 	[177750] = "月光蘑菇花",
@@ -101037,6 +101056,7 @@ localize(ObjectNames, {
 	[177289] = "瘟疫之鍋",
 	[177464] = "大白蟻丘",
 	[177491] = "白蟻桶",
+	[177525] = "月夜梟獸之石",
 	[177544] = "約瑟夫的箱子",
 	[177667] = "破損的卷軸",
 	[177784] = "巨型軟殼蚌",
