@@ -648,6 +648,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 2635,	-- Elder Saltwater Crocolisk
 					}),
 					i(4109),	-- Excelsior Boots
+					i(252452, {	-- Mystic Heavy Armor Kit
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2765, {	-- Expert Blacksmith!
