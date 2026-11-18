@@ -1,0 +1,73 @@
+name: Build Parser
+
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+    paths:
+      - '.contrib/src/Parser/**'
+      - '.github/workflows/BuildParser.yml'
+  pull_request:
+    paths:
+      - '.contrib/src/Parser/**'
+      - '.github/workflows/BuildParser.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up .NET SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Build Parser
+        run: |
+          dotnet build .contrib/src/Parser/Parser.csproj --configuration Release -p:Platform=x64 --output (Join-Path $env:RUNNER_TEMP 'parser') --nologo
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Run Parser tests
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $parserPath = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
+          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
+            throw "The newly built Parser was not found: $parserPath"
+          }
+
+          $tests = @(Get-ChildItem -LiteralPath '.contrib/src/Parser/tests' -Filter '*.Tests.ps1' -File | Sort-Object Name)
+          if ($tests.Count -eq 0) {
+            throw 'No Parser test suites were found.'
+          }
+
+          $results = [ordered]@{}
+          foreach ($test in $tests) {
+            Write-Host "::group::$($test.Name)"
+            & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $test.FullName -ParserPath $parserPath
+            $results[$test.Name] = $LASTEXITCODE
+            Write-Host '::endgroup::'
+          }
+
+          Write-Host 'Parser test results:'
+          foreach ($result in $results.GetEnumerator()) {
+            Write-Host "$($result.Key): exit $($result.Value)"
+          }
+
+          $failures = @($results.Values | Where-Object { $_ -ne 0 })
+          if ($failures.Count -gt 0) {
+            throw "$($failures.Count) of $($tests.Count) Parser test suites failed."
+          }
