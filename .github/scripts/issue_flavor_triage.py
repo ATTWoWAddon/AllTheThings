@@ -1,0 +1,149 @@
+import json
+import os
+import re
+import subprocess
+from pathlib import Path
+
+# Keep form choices explicit: environments and free-text mentions must not
+# select labels. The two headings cover the existing issue-form variants.
+FLAVORS = {
+    "Retail": "flavor:retail",
+    "Classic Progression (MoP)": "flavor:progression",
+    "Classic Era": "flavor:era",
+    "Classic Hardcore": "flavor:hardcore",
+    "Classic Anniversary (TBC)": "flavor:anniversary",
+    "Season of Discovery": "flavor:sod",
+    "Forever": "flavor:forever",
+    "Titan": "flavor:titan",
+    "All Flavors / Cross-Flavor": "flavor:all",
+}
+HEADINGS = {"WoW Flavor", "Which WoW Flavors Does This Proposal Apply To?"}
+
+
+# Read exactly one Flavor section outside fenced code, accepting only
+# known choices. Reject ambiguous or malformed input instead of guessing.
+def parse_flavors(body):
+    sections, current, fence = [], None, None
+    for line in (body or "").splitlines():
+        delimiter = re.match(r"^\s{0,3}(`{3,}|~{3,})", line)
+        if delimiter:
+            marker = delimiter[1]
+            if fence is None:
+                fence = marker
+            elif marker[0] == fence[0] and len(marker) >= len(fence):
+                fence = None
+            if current is not None:
+                current.append(line)
+            continue
+        if fence is not None:
+            if current is not None:
+                current.append(line)
+            continue
+        if re.match(r"^#{1,6}\s", line):
+            current = None
+            if line.startswith("### ") and line[4:].strip() in HEADINGS:
+                current = []
+                sections.append(current)
+        elif current is not None:
+            current.append(line)
+    if len(sections) != 1:
+        return []
+    values = [value.strip() for value in re.split(r",|\n", "\n".join(sections[0]).strip())]
+    if any(value not in FLAVORS and value != "Other / Unsure" for value in values):
+        return []
+    return sorted({FLAVORS[value] for value in values if value in FLAVORS})
+
+
+# Use gh for authenticated JSON requests and flatten paginated responses.
+# Pass payloads through stdin, never through shell-interpolated issue text.
+def api(path, *, labels=None, paginate=False):
+    command = ["gh", "api", path, "--method", "GET" if labels is None else "POST"]
+    if paginate:
+        command += ["--paginate", "--slurp"]
+    if labels is not None:
+        command += ["--input", "-"]
+    result = subprocess.run(
+        command, input=json.dumps({"labels": labels}) if labels is not None else None,
+        text=True, capture_output=True, check=True,
+    )
+    data = json.loads(result.stdout)
+    return [item for page in data for item in page] if paginate else data
+
+
+# Classify only open, never-classified issues using their latest body.
+# Existing labels and label history preserve maintainer edits and removals;
+# missing repository labels stop the update rather than creating new ones.
+def triage(repo, number, request=api):
+    base = f"repos/{repo}"
+    issue_path = f"{base}/issues/{number}"
+    issue = request(issue_path)  # Current state, not an old queued event snapshot.
+    if issue.get("state") != "open" or "pull_request" in issue:
+        return
+    if any(label["name"].startswith("flavor:") for label in issue["labels"]):
+        return
+    labels = parse_flavors(issue.get("body"))
+    if not labels:
+        return
+    events = request(f"{issue_path}/events?per_page=100", paginate=True)
+    if any(event.get("event") in {"labeled", "unlabeled"}
+           and event.get("label", {}).get("name", "").startswith("flavor:") for event in events):
+        return  # Never undo previous classification or manual removal.
+    available = request(f"{base}/labels?per_page=100", paginate=True)
+    if not set(labels).issubset({label["name"] for label in available}):
+        print("A configured flavor label is missing; no labels added.")
+        return
+    request(f"{issue_path}/labels", labels=labels)
+    print("Added: " + ", ".join(labels))
+
+
+# Exercise form parsing and label-protection decisions without network
+# access. A failed assertion stops the run before any real issue mutation.
+def self_test():
+    print("Running offline self-tests; all API calls below are mocked.")
+    def body(value):
+        return f"### WoW Flavor\n\n{value}\n\n### WoW Environment\n\nPTR"
+
+    for value, label in FLAVORS.items():
+        assert parse_flavors(body(value)) == [label]
+    assert parse_flavors(body("Retail, Forever, Retail")) == ["flavor:forever", "flavor:retail"]
+    assert parse_flavors(body("Retail\nForever").replace("\n", "\r\n")) == ["flavor:forever", "flavor:retail"]
+    assert parse_flavors(body("Retail, Other / Unsure")) == ["flavor:retail"]
+    assert parse_flavors(body("All Flavors / Cross-Flavor, Retail")) == ["flavor:all", "flavor:retail"]
+    assert parse_flavors(body("Titan").replace("WoW Flavor", "Which WoW Flavors Does This Proposal Apply To?")) == ["flavor:titan"]
+    for text in [None, "", "Retail", body("Other / Unsure"), body("PTR"), body("_No response_"),
+                 body("Retail, unknown"), body("Retail") + "\n" + body("Forever"),
+                 "```\n" + body("Retail") + "\n```", "~~~\n" + body("Retail") + "\n~~~",
+                 body("Retail\n```\nevil()\n```"), body("$(echo Retail)")]:
+        assert parse_flavors(text) == []
+    for scenario in ["normal", "edited-body", "existing", "removed", "closed", "pr", "missing", "unrelated"]:
+        mutations = []
+
+        def fake(path, *, labels=None, paginate=False):
+            if labels is not None:
+                mutations.append(labels)
+                return []
+            if "/events?" in path:
+                return [{"event": "unlabeled", "label": {"name": "flavor:retail" if scenario == "removed" else "type:bug"}}]
+            if "/labels?" in path:
+                return [] if scenario == "missing" else [{"name": value} for value in FLAVORS.values()]
+            issue = {"state": "closed" if scenario == "closed" else "open",
+                     "body": body("Forever" if scenario == "edited-body" else "Retail"),
+                     "labels": [{"name": "flavor:titan"}] if scenario == "existing" else []}
+            if scenario == "pr":
+                issue["pull_request"] = {}
+            return issue
+
+        triage("test/repo", 1, fake)
+        expected = [["flavor:forever" if scenario == "edited-body" else "flavor:retail"]] if scenario in {"normal", "edited-body", "unrelated"} else []
+        assert mutations == expected, scenario
+    print("Flavor parser and mocked API self-tests passed.")
+
+
+# Always validate the rules first. Only supported issue events reach the
+# live API; manual dispatch remains an offline diagnostic test run.
+if __name__ == "__main__":
+    self_test()
+    if os.environ.get("GITHUB_EVENT_NAME") == "issues":
+        event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
+        if event.get("action") in {"opened", "edited", "reopened"} and "pull_request" not in event["issue"]:
+            triage(os.environ["GITHUB_REPOSITORY"], int(event["issue"]["number"]))
