@@ -1,3 +1,9 @@
+## @package issue_flavor_triage
+# @brief Classify GitHub issues from explicit WoW flavor form choices.
+#
+# Runs mocked self-tests before supported issue events can update labels.
+# Manual dispatch runs only the offline self-tests.
+
 import json
 import os
 import re
@@ -20,8 +26,12 @@ FLAVORS = {
 HEADINGS = {"WoW Flavor", "Which WoW Flavors Does This Proposal Apply To?"}
 
 
-# Read exactly one Flavor section outside fenced code, accepting only
-# known choices. Reject ambiguous or malformed input instead of guessing.
+## @brief Parse a single recognized flavor section outside fenced code.
+#
+# Accept only known choices; reject ambiguous or malformed sections.
+#
+# @param body Issue body text, or None.
+# @return Sorted unique flavor labels; empty for no selection or invalid input.
 def parse_flavors(body):
     sections, current, fence = [], None, None
     for line in (body or "").splitlines():
@@ -57,8 +67,14 @@ def parse_flavors(body):
     return sorted({FLAVORS[value] for value in values if value in FLAVORS})
 
 
-# Use gh for authenticated JSON requests and flatten paginated responses.
+## @brief Send an authenticated JSON request through the GitHub CLI.
+#
 # Pass payloads through stdin, never through shell-interpolated issue text.
+#
+# @param path GitHub API endpoint path.
+# @param labels Labels to POST, or None for a GET request.
+# @param paginate Whether to combine paginated response pages into one list.
+# @return Parsed JSON response, or a flattened list when paginate is true.
 def api(path, *, labels=None, paginate=False):
     command = ["gh", "api", path, "--method", "GET" if labels is None else "POST"]
     if paginate:
@@ -76,9 +92,14 @@ def api(path, *, labels=None, paginate=False):
     return [item for page in data for item in page] if paginate else data
 
 
-# Classify only open, never-classified issues using their latest body.
-# Existing labels and label history preserve maintainer edits and removals;
-# missing repository labels stop the update rather than creating new ones.
+## @brief Add initial flavor labels to an open, never-classified issue.
+#
+# Existing labels and label history preserve maintainer edits and removals.
+# Missing repository labels prevent updates instead of creating new labels.
+#
+# @param repo Repository in owner/name form.
+# @param number Issue number.
+# @param request API-compatible callable used to fetch state and add labels.
 def triage(repo, number, request=api):
     base = f"repos/{repo}"
     issue_path = f"{base}/issues/{number}"
@@ -105,15 +126,23 @@ def triage(repo, number, request=api):
     print("Added: " + ", ".join(labels))
 
 
-# Exercise form parsing and label-protection decisions without network
-# access. A failed assertion stops the run before any real issue mutation.
+## @brief Build an issue-form body with a flavor choice and PTR environment.
+# @param value Flavor field text inserted into the fixture.
+# @return Markdown issue body used by the offline tests.
 def _test_body(value):
     return f"### WoW Flavor\n\n{value}\n\n### WoW Environment\n\nPTR"
 
 
+## @brief Check one classification scenario using a mocked API.
+# @param scenario Scenario name exercised by self_test.
 def _test_scenario(scenario):
     mutations = []
 
+    ## @brief Return fixture responses and record label writes for this scenario.
+    # @param path API endpoint path used to select the mock response.
+    # @param labels Labels to record, or None for a read request.
+    # @param paginate Accepted for API compatibility; unused by the mock.
+    # @return Mock issue data, label/event lists, or an empty list after a write.
     def fake(path, *, labels=None, paginate=False):
         if labels is not None:
             mutations.append(labels)
@@ -151,6 +180,9 @@ def _test_scenario(scenario):
     assert mutations == expected, scenario
 
 
+## @brief Exercise parsing and label protection without network access.
+#
+# Failed assertions stop execution before any real issue mutation.
 def self_test():
     print("Running offline self-tests; all API calls below are mocked.")
 
