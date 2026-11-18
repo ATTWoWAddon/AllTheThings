@@ -1298,6 +1298,19 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					}),
 				},
 			}),
+			q(96558, {	-- Soldier's Solace
+				sourceQuest = 93567,	-- Ends Meet
+				qg = 265375,	-- Veteran of the Third War
+				coord = { 27.6, 50.8, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 56,
+				groups = {
+					objective(1),	-- 0/1 Spirits put to rest
+					i(274384),	-- Illegible Dogtags
+					i(274383),	-- Kanai's Knife
+					i(274386),	-- Toy Soldier
+				},
+			}),
 			q(91883, {	-- Spear of the Skylord
 				qg = 254131,	-- Skylord Omnuron
 				coord = { 54.2, 63.8, MAP.MOUNT_HYJAL },
