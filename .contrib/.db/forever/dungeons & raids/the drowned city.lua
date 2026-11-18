@@ -6,7 +6,7 @@ instanceroot(2970, {	-- The Drowned City
 	--lore = "",
 	icon = 409547,
 	zoneTextAreaID = 16550,	-- The Drowned City
-	--coord = { , MAP.STRANGLETHORN_VALE },	-- Entrance in a cavern in the Vile Reef (see Locating the Lost City).
+	coord = { 21.5, 27.8, MAP.STRANGLETHORN_VALE },	-- Entrance in a cavern in the Vile Reef (see Locating the Lost City).
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 35,
 	groups = {
