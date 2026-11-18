@@ -848,6 +848,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_SHAMANS,
 				classes = { SHAMAN },
+				repeatable = true,
 				lvl = 20,
 				groups = {
 					i(6637),	-- Water Sapta
