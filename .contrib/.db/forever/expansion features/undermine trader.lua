@@ -76,6 +76,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83947, name(HEADERS.NPC, 9196)),	-- Highlord Omokk
 							hqt(83950, name(HEADERS.NPC, 10596)),	-- Mother Smolderweb
 							hqt(83952, name(HEADERS.NPC, 10268)),	-- Gizrul the Slavener
+							hqt(83954, name(HEADERS.NPC, 9568)),	-- Overlord Wyrmthalak
 						}),
 					}),
 					inst(237, {	-- The Temple of Atal'hakkar
