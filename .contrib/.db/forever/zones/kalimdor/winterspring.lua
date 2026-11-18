@@ -1131,6 +1131,9 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			i(14493, {	-- Pattern: Robe of Winter Night (RECIPE!)
 				cr = 7437,	-- Cobalt Mageweaver
 			}),
+			i(14468, {	-- Pattern: Runecloth Bag (RECIPE!)
+				cr = 7458,	-- Ice Thistle Yeti
+			}),
 			i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 				cr = 7437,	-- Cobalt Mageweaver
 			}),
