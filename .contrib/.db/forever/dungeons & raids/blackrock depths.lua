@@ -1229,7 +1229,7 @@ instanceroot(228, {	-- Blackrock Depths
 			e(387, {	-- Emperor Dagran Thaurissan
 				creatureID = 9019,
 				groups = {
-					i(11931),	-- Dreadforge Retaliatior
+					i(11931),	-- Dreadforge Retaliator
 					i(11934),	-- Emperor's Seal
 					i(11932),	-- Guiding Stave of Wisdom
 					i(12556),	-- High Priestess Boots

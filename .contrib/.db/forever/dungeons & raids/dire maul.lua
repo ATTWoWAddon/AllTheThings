@@ -1147,7 +1147,7 @@ instanceroot(230, {	-- Dire Maul
 					},
 					groups = {
 						i(18757),	-- Diabolic Mantle
-						i(18756),	-- Dreadguard Protector
+						i(18756),	-- Dreadguard's Protector
 						i(18754),	-- Fel Hardened Bracers
 						i(18755),	-- Xorothian Firestick
 					},
