@@ -982,9 +982,33 @@ local function RemoveDirectChildren(group, hashes)
 	end
 end
 
+-- With 'Simplify Zone Drops' enabled, the NPC Filler lists a tooltip's Zone Drops directly under the NPC instead of
+-- under a 'Zone Drop' header. Adds the npcGroup (or the contents of the Zone Drops header itself) unless it is already
+-- listed directly. Returns the groups list.
+local function AddSimpleZoneDrop(groups, npcGroup, existing, ZONE_DROPS)
+	local adds
+	if npcGroup.headerID == ZONE_DROPS then
+		adds = CreateObject(npcGroup).g
+		if not adds then return groups end
+	else
+		adds = { npcGroup }
+	end
+	local add
+	for i=1,#adds do
+		add = adds[i]
+		if not (existing and existing[add.hash]) then
+			add = add == npcGroup and CreateObject(add) or add
+			if groups then groups[#groups + 1] = add
+			else groups = { add } end
+		end
+	end
+	return groups
+end
+
 app.AddEventHandler("OnLoad", function()
 	local Fill = app.Modules.Fill
 	if not Fill then return end
+	local ZONE_DROPS = app.HeaderConstants.ZONE_DROPS
 
 	Fill.AddFiller("SYMLINK",
 	function(group, FillData)
@@ -1029,6 +1053,8 @@ app.AddEventHandler("OnLoad", function()
 		-- skip groups already nested directly (i.e. the search result for this NPC), and drop the plain copy
 		-- of any group which is about to be re-added under its header
 		local existing, dupes = GetDirectChildHashes(group), nil
+		-- tooltips can list Zone Drops without their header
+		local simpleZoneDrops = ZONE_DROPS and not FillData.InWindow and app.Settings:GetTooltipSetting("Fill:SimpleZoneDrops")
 
 		-- see if there's a difficulty wrapping the fill group
 		local difficultyID = GetRelativeValue(group, "difficultyID");
@@ -1053,17 +1079,21 @@ app.AddEventHandler("OnLoad", function()
 							npcDiff = GetRelativeValue(npcGroup, "difficultyID");
 							-- copy the header under the NPC groups
 							if not npcDiff or npcDiff == difficultyID then
-								if existing and existing[npcGroup.hash] then
-									if dupes then dupes[npcGroup.hash] = true
-									else dupes = { [npcGroup.hash] = true } end
+								if simpleZoneDrops and headerID == ZONE_DROPS then
+									groups = AddSimpleZoneDrop(groups, npcGroup, existing, ZONE_DROPS)
+								else
+									if existing and existing[npcGroup.hash] then
+										if dupes then dupes[npcGroup.hash] = true
+										else dupes = { [npcGroup.hash] = true } end
+									end
+									-- wrap the npcGroup in the matching header if it is not a header
+									if not npcGroup.headerID then
+										npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
+									end
+									-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
+									if groups then groups[#groups + 1] = CreateObject(npcGroup)
+									else groups = { CreateObject(npcGroup) }; end
 								end
-								-- wrap the npcGroup in the matching header if it is not a header
-								if not npcGroup.headerID then
-									npcGroup = app.CreateCustomHeader(headerID, {g={CreateObject(npcGroup)}})
-								end
-								-- app.PrintDebug("IsDrop.Diff",difficultyID,group.hash,"<==",npcGroup.hash)
-								if groups then groups[#groups + 1] = CreateObject(npcGroup)
-								else groups = { CreateObject(npcGroup) }; end
 							end
 						end
 					end
@@ -1087,7 +1117,9 @@ app.AddEventHandler("OnLoad", function()
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 						-- app.PrintDebug("DropCheck",app:SearchLink(npcGroup),"=>",headerID)
 						-- where headerID is allowed
-						if headerID then
+						if headerID and simpleZoneDrops and headerID == ZONE_DROPS then
+							groups = AddSimpleZoneDrop(groups, npcGroup, existing, ZONE_DROPS)
+						elseif headerID then
 							-- copy the header under the NPC groups
 							if existing and existing[npcGroup.hash] then
 								if dupes then dupes[npcGroup.hash] = true

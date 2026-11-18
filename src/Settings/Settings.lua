@@ -371,6 +371,7 @@ local TooltipSettingsBase = {
 		["EnablePetCageTooltips"] = true,
 		["Expand:Difficulty"] = true,
 		["Expand:MiniList"] = true,
+		["Fill:SimpleZoneDrops"] = false,
 		["CompletedBy"] = true,
 		["KnownBy"] = true,
 		["GroupByRealm"] = false,

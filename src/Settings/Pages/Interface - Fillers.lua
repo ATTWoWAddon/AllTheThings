@@ -142,4 +142,16 @@ app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 		end
 		prev = nil
 	end
+
+	local checkboxSimpleZoneDrops = child:CreateCheckBox(L.SIMPLE_ZONE_DROPS_CHECKBOX,
+		function(self)
+			self:SetChecked(settings:GetTooltipSetting("Fill:SimpleZoneDrops"))
+		end,
+		function(self)
+			settings:SetTooltipSetting("Fill:SimpleZoneDrops", self:GetChecked())
+			-- tooltips cache their filled content
+			app.WipeSearchCache()
+		end)
+	checkboxSimpleZoneDrops:SetATTTooltip(L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP)
+	checkboxSimpleZoneDrops:AlignBelow(rowfirst, 0, -20)
 end)
