@@ -1530,3 +1530,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(75969),	-- Killing Ada Gelhardt (205153), a Season of Discovery leftover
+});
