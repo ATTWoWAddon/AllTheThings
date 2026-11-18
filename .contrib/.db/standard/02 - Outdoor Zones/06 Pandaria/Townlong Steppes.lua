@@ -978,7 +978,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 				groups = {
 					i(83698),	-- Mistborne Gloves
 					i(83699),	-- Mistlurker Gloves
-					i(83700),	-- Earthmover Gaunlets
+					i(83700),	-- Earthmover Gauntlets
 					i(83701),	-- Goldtalon Gloves
 					i(83702),	-- Swampwalker Handguards
 					i(83703),	-- Steppebeast Gloves
@@ -1599,7 +1599,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 						i(95084),	-- Reinforced Spiritplate Girdle
 						i(95139),	-- Ring of the Shado-Pan Assault
 						i(95082),	-- Robes of Misty Bindings
-						i(95077, {	-- Roofstalker Shaddowwrap
+						i(95077, {	-- Roofstalker Shadowwrap
 							cost = 5412400,	-- 541g 24s
 						}),
 						i(95137),	-- Seal of the Shado-Pan Assault
@@ -1615,7 +1615,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 						i(94507),	-- Steadfast Talisman of the Shado-Pan Assault
 						i(95110),	-- Stoneward Gauntlets
 						i(95083),	-- Swordhook Slingbelt
-						i(95119, {	-- Thunderbeaker Legplates
+						i(95119, {	-- Thunderbreaker Legplates
 							cost = 5431600,	-- 543g 16s
 						}),
 						i(95112),	-- Totemshaper Gloves

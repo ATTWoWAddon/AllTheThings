@@ -763,11 +763,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = HORDE_ONLY,
 				timeline = { ADDED_4_2_2 },
 			}),
-			ach(969, {	-- Tricks and Treats of Outlands (A)
+			ach(969, {	-- Tricks and Treats of Outland (A)
 				races = ALLIANCE_ONLY,
 				timeline = { ADDED_3_0_2 },
 			}),
-			ach(968, {	-- Tricks and Treats of Outlands (H)
+			ach(968, {	-- Tricks and Treats of Outland (H)
 				races = HORDE_ONLY,
 				timeline = { ADDED_3_0_2 },
 			}),

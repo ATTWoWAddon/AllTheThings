@@ -380,7 +380,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 				coord = { 52.2, 73.1, THE_LOST_ISLES },
 				groups = {
 					i(52954),	-- Hatchling Prodder
-					i(52908),	-- Hathcling Handlers
+					i(52908),	-- Hatchling Handlers
 					i(131830),	-- Hatchling Gloves
 				},
 			}),

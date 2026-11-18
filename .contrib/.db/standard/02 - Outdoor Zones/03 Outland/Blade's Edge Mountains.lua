@@ -2496,7 +2496,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(32626, {	-- Large Copper Metamorphosis Geode
 							cost = { { "i", 32572, 4 } },	-- 4x Apexis Crystal
 							groups = {
-								i(31568),	-- Mistshoud Helm
+								i(31568),	-- Mistshroud Helm
 							},
 						}),
 						i(32629, {	-- Large Gold Metamorphosis Geode

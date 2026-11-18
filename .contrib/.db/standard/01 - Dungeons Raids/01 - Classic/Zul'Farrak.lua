@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							provider = { "i", 8707 },	-- Gahz'rilla's Electrified Scale
 						}),
 						i(65954),	-- Belt of the Deep
-						i(65929),	-- Bildewhizzle's Armbands
+						i(65929),	-- Bilgewhizzle's Armbands
 						i(65978),	-- Electrified Leggings
 						i(65999),	-- Pauldrons of Zul'Farrak
 						-- #if BEFORE MOP

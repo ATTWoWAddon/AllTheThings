@@ -212,7 +212,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32108),	-- Chancellor's Silk Amice
 					i(32109),	-- Chancellor's Silk Cowl
 					i(32110),	-- Chancellor's Silk Handguards
-					i(32111),	-- Chancellor's Silk Rainment
+					i(32111),	-- Chancellor's Silk Raiment
 					i(32112),	-- Chancellor's Silk Legs
 				}),
 				cl(PALADIN, {
@@ -241,7 +241,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32103),	-- Chancellor's Satin Gloves
 					i(32104),	-- Chancellor's Satin Hood
 					i(32105),	-- Chancellor's Satin Legs
-					i(32106),	-- Chancellor's Satin Manthle
+					i(32106),	-- Chancellor's Satin Mantle
 					i(32107),	-- Chancellor's Satin Robe
 				}),
 				cl(ROGUE, {
@@ -282,7 +282,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32144),	-- Chancellor's Mail Gauntlets
 					i(32145),	-- Chancellor's Mail Helm
 					i(32146),	-- Chancellor's Mail Leggings
-					i(32147),	-- Chancellor's Mail Sppaulders
+					i(32147),	-- Chancellor's Mail Spaulders
 					i(32148),	-- Chancellor's Ringmail Chestguard
 					i(32149),	-- Chancellor's Ringmail Gloves
 					i(32150),	-- Chancellor's Ringmail Headpiece
@@ -293,7 +293,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32093),	-- Chancellor's Dreadweave Gloves
 					i(32094),	-- Chancellor's Dreadweave Hood
 					i(32095),	-- Chancellor's Dreadweave Legs
-					i(32096),	-- Chancellor's Dreadweave Manthle
+					i(32096),	-- Chancellor's Dreadweave Mantle
 					i(32097),	-- Chancellor's Dreadweave Robe
 				}),
 				cl(WARRIOR, {
@@ -1311,7 +1311,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(46254),	-- Leggings of Sanctification
 				i(46255),	-- Mantle of Sanctification
 				i(46256),	-- Pants of Sanctification
-				i(46257),	-- Rainments of Sanctification
+				i(46257),	-- Raiments of Sanctification
 				i(46258),	-- Robe of Sanctification
 				i(46259),	-- Shoulderpads of Sanctification
 			}),
@@ -1335,7 +1335,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(46302),	-- Worldbreaker Legguards
 				i(46303),	-- Worldbreaker Shoulderguards
 				i(46304),	-- Worldbreaker Shoulderpads
-				i(46305),	-- Worldbreaker Spaulbers
+				i(46305),	-- Worldbreaker Spaulders
 				i(46306),	-- Worldbreaker Tunic
 				i(46307),	-- Worldbreaker War-Kilt
 			}),
@@ -1487,7 +1487,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(48756),	-- Velen's Handwraps
 				i(48757),	-- Velen's Mantle
 				i(48758),	-- Velen's Pants
-				i(48759),	-- Velen's Rainments
+				i(48759),	-- Velen's Raiments
 				i(48760),	-- Zabra's Circlet of Conquest
 				i(48761),	-- Zabra's Handwraps of Conquest
 				i(48762),	-- Zabra's Mantle of Conquest
@@ -1576,16 +1576,16 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(48872),	-- Hellscream's Handguards of Conquest
 				i(48873),	-- Hellscream's Legguards of Conquest
 				i(48874),	-- Hellscream's Pauldrons of Conquest
-				i(48865),	-- Wyrnn's Battleplate
-				i(48866),	-- Wyrnn's Gauntlets
-				i(48867),	-- Wyrnn's Helmet
-				i(48868),	-- Wyrnn's Legplates
-				i(48869),	-- Wyrnn's Shoulderplates
-				i(48875),	-- Wyrnn's Breastplate
-				i(48876),	-- Wyrnn's Greathelm
-				i(48877),	-- Wyrnn's Handguards
-				i(48878),	-- Wyrnn's Legguards
-				i(48879),	-- Wyrnn's Pauldrons
+				i(48865),	-- Wrynn's Battleplate
+				i(48866),	-- Wrynn's Gauntlets
+				i(48867),	-- Wrynn's Helmet
+				i(48868),	-- Wrynn's Legplates
+				i(48869),	-- Wrynn's Shoulderplates
+				i(48875),	-- Wrynn's Breastplate
+				i(48876),	-- Wrynn's Greathelm
+				i(48877),	-- Wrynn's Handguards
+				i(48878),	-- Wrynn's Legguards
+				i(48879),	-- Wrynn's Pauldrons
 			}),
 		}),
 
@@ -1661,7 +1661,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(51737),	-- Crimson Acolyte Cowl
 				i(51738),	-- Crimson Acolyte Handwraps
 				i(51739),	-- Crimson Acolyte Mantle
-				i(51740),	-- Crimson Acolyte Rainments
+				i(51740),	-- Crimson Acolyte Raiments
 				i(51741),	-- Crimson Acolyte Pants
 			}),
 			cl(ROGUE, {
@@ -1785,7 +1785,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(65155),	-- Gladiator's Mail Gauntlets
 					i(65154),	-- Gladiator's Mail Helm
 					i(65153),	-- Gladiator's Mail Leggings
-					i(65152),	-- Gladiator's Mail Sppaulders
+					i(65152),	-- Gladiator's Mail Spaulders
 					i(65151),	-- Gladiator's Ringmail Armor
 					i(65150),	-- Gladiator's Ringmail Gauntlets
 					i(65149),	-- Gladiator's Ringmail Helm
@@ -2040,7 +2040,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(88217),	-- Gladiator's Mail Gauntlets
 					i(88218),	-- Gladiator's Mail Helm
 					i(88219),	-- Gladiator's Mail Leggings
-					i(88220),	-- Gladiator's Mail Sppaulders
+					i(88220),	-- Gladiator's Mail Spaulders
 					i(88236),	-- Gladiator's Ringmail Armor
 					i(88237),	-- Gladiator's Ringmail Gauntlets
 					i(88238),	-- Gladiator's Ringmail Helm

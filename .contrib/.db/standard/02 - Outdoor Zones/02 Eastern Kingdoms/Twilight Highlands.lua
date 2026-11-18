@@ -602,7 +602,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					}),
 					i(63908),	-- Bracers of the Fallen Fathom-Lord
 					i(63907),	-- Heth'jatari Battlegloves
-					i(63906),	-- Conch-Sounc Waistguard
+					i(63906),	-- Conch-Sound Waistguard
 				},
 			}),
 			q(28038, {	-- Blood in the Highlands
@@ -1701,7 +1701,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					}),
 					i(63814),	-- Corruption Resistant Gloves
 					i(63813),	-- Flameproof Treads
-					i(63812),	-- Lepglates of Cooled Magma
+					i(63812),	-- Legplates of Cooled Magma
 				},
 			}),
 			q(28101, {	-- Mathias' Command

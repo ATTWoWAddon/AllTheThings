@@ -2748,7 +2748,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(246429, {	-- Dark Iron Chandelier (DECOR!)
 							timeline = { ADDED_11_2_7 },
 						}),
-						i(11931),	-- Dreadforge Retaliatior
+						i(11931),	-- Dreadforge Retaliator
 						-- #if BEFORE 7.3.2
 						i(11932),	-- Guiding Stave of Wisdom
 						-- #endif

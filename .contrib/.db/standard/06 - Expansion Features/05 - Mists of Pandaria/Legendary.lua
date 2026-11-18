@@ -475,7 +475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						{ "i", 102457, 1 },	-- Timeless Essence of the Black Dragonflight
 					},
 				}),
-				i(102249, {		-- Gon-Lu, Strength of Xuen
+				i(102249, {		-- Gong-Lu, Strength of Xuen
 					cost = {
 						{ "i", 98147, 1 },	-- Tigerclaw Cape
 						{ "i", 102457, 1 },	-- Timeless Essence of the Black Dragonflight

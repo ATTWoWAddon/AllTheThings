@@ -754,7 +754,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			},
 		}),
 		n(EPIC_EDITION, {
-			description = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+			description = "These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",
 			questID = 70448,	-- Elite Northrend Expedition Supplies [Epic]
 			groups = {
 				i(192455),	-- Kalu'ak Whalebone Glider (MOUNT!)
@@ -764,7 +764,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 	-- #else
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, timelineSelf({ timeline = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
-			description = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+			description = "These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",
 			groups = {
 				mount(370770),	-- Tuskarr Shoreglider (MOUNT!)
 			},

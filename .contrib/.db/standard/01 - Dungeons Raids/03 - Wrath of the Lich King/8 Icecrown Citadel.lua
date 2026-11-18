@@ -1186,7 +1186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						creatureID = 36855,	-- Lady Deathwhisper
 						groups = {
 							ach(4535),	-- Full House (10 player)
-							i(50776),	-- Njordar Bone Bow
+							i(50776),	-- Njorndar Bone Bow
 							i(50781),	-- Scourgelord's Baton
 							i(50779),	-- Deathspeaker Zealot's Helm
 							i(50780),	-- Chestguard of the Frigid Noose
@@ -1485,7 +1485,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						creatureID = 36855,	-- Lady Deathwhisper
 						groups = {
 							ach(4535),	-- Full House (10 player)
-							i(51927),	-- Njordar Bone Bow
+							i(51927),	-- Njorndar Bone Bow
 							i(51922),	-- Scourgelord's Baton
 							i(51924),	-- Deathspeaker Zealot's Helm
 							i(51923),	-- Chestguard of the Frigid Noose
@@ -2453,7 +2453,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50731),	-- Archus, Greatstaff of Antonidas
 							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
 							i(50735),	-- Oathbinder, Charge of the Ranger-General
-							i(50732),	-- Bloodsurge, Kel'Thusad's Blade of Agony
+							i(50732),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
 							i(50737),	-- Havoc's Call, Blade of Lordaeron Kings
 							i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
 							i(50738),	-- Mithrios, Bronzebeard's Legacy

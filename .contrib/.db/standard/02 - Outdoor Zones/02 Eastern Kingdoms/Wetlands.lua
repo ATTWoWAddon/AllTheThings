@@ -561,7 +561,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					i(59109),	-- Marsh Fire Legguards
 					i(59108),	-- Deep Moss Bracers
 					i(59107),	-- Soothing Hands
-					i(59106),	-- Floodily Robes
+					i(59106),	-- Floodlily Robes
 					i(131460, {	-- Deep Moss Bindings
 						timeline = { ADDED_7_0_3 },
 					}),

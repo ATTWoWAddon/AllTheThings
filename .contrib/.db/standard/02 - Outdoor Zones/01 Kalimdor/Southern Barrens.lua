@@ -1407,7 +1407,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 					}),
 					i(53283),	-- Paxton's Belt
 					i(53297),	-- Spoils of the Courtyard
-					i(53294),	-- Seized Rangeroar Cloak
+					i(53294),	-- Seized Rageroar Cloak
 					i(131386, {	-- Seized Rageroar Belt
 						timeline = { ADDED_7_0_3 },
 					}),

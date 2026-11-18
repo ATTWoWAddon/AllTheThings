@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					i(34708),	-- Cloak of the Coming Night
 					i(34606),	-- Edge of Oppression
 					i(34607),	-- Fel-Tinged Mantle
-					i(34703),	-- Landro's Dancing Blade
+					i(34703),	-- Latro's Dancing Blade
 					i(34608),	-- Rod of the Blazing Light
 				}),
 				BossOnly(DELRISSA, {
@@ -316,7 +316,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					i(34707),	-- Boots of Resuscitation
 					i(34705),	-- Bracers of Divine Infusion
 					i(34708),	-- Cloak of the Coming Night
-					i(34703),	-- Landro's Dancing Blade
+					i(34703),	-- Latro's Dancing Blade
 				}),
 				BossOnly(DELRISSA, {
 					i(34790),	-- Battle-Mace of the High Priestess

@@ -777,15 +777,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						coord = { 44.2, 37.5, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						sym = { { "select", "itemID", 143727 } },	-- Champion's Salute (TOY!)
 						groups = {
-							i(34649),	-- Archerus Knight's Gauntlets
-							i(34651),	-- Archerus Knight's Girdle
-							i(34648),	-- Archerus Knight's Greaves
-							i(34652),	-- Archerus Knight's Hood
-							i(34656),	-- Archerus Knight's Legplates
-							i(34655),	-- Archerus Knight's Pauldrons
-							i(34659),	-- Archerus Knight's Shroud
-							i(34650),	-- Archerus Knight's Tunic
-							i(34653),	-- Archerus Knight's Wristguard
+							i(34649),	-- Acherus Knight's Gauntlets
+							i(34651),	-- Acherus Knight's Girdle
+							i(34648),	-- Acherus Knight's Greaves
+							i(34652),	-- Acherus Knight's Hood
+							i(34656),	-- Acherus Knight's Legplates
+							i(34655),	-- Acherus Knight's Pauldrons
+							i(34659),	-- Acherus Knight's Shroud
+							i(34650),	-- Acherus Knight's Tunic
+							i(34653),	-- Acherus Knight's Wristguard
 							i(250114, {	-- Acherus Worktable (DECOR!)
 								timeline = { ADDED_11_2_7 },
 								cost = { { "c", ORDER_RESOURCES, 500 } },

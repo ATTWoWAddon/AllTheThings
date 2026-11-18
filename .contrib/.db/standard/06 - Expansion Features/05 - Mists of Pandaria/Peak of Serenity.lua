@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						}),
 						i(89550),	-- Headband of the Coiled Serpent
 						i(89548),	-- Headband of the Pouncing Tiger
-						i(89549),	-- Headband of the Stampedeing Ox
+						i(89549),	-- Headband of the Stampeding Ox
 					},
 				}),
 				q(31944, {	-- Complete Your Training: The Final Test

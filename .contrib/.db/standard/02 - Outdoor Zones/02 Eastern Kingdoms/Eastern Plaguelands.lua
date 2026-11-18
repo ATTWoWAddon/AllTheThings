@@ -778,15 +778,15 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 						coord = { 81.9, 48.4, EASTERN_PLAGUELANDS },
 						classes = { DEATHKNIGHT },
 						groups = {
-							i(34649),	-- Archerus Knight's Gauntlets
-							i(34651),	-- Archerus Knight's Girdle
-							i(34648),	-- Archerus Knight's Greaves
-							i(34652),	-- Archerus Knight's Hood
-							i(34656),	-- Archerus Knight's Legplates
-							i(34655),	-- Archerus Knight's Pauldrons
-							i(34659),	-- Archerus Knight's Shroud
-							i(34650),	-- Archerus Knight's Tunic
-							i(34653),	-- Archerus Knight's Wristguard
+							i(34649),	-- Acherus Knight's Gauntlets
+							i(34651),	-- Acherus Knight's Girdle
+							i(34648),	-- Acherus Knight's Greaves
+							i(34652),	-- Acherus Knight's Hood
+							i(34656),	-- Acherus Knight's Legplates
+							i(34655),	-- Acherus Knight's Pauldrons
+							i(34659),	-- Acherus Knight's Shroud
+							i(34650),	-- Acherus Knight's Tunic
+							i(34653),	-- Acherus Knight's Wristguard
 							i(38662),	-- Bladed Ebon Amulet
 							i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 							i(38667),	-- Bloodbane's Gauntlets of Command

@@ -1790,7 +1790,7 @@ maproot(KALIMDOR, FELWOOD, {
 						provider = { "n", 48331 },	-- Panicking Worker
 					}),
 					i(65345),	-- Oilfoot Slippers
-					i(65348),	-- Oil Grush Leggings
+					i(65348),	-- Oil Gush Leggings
 					i(65351),	-- Workforce Chestguard
 					i(65354),	-- Cloak of Sleep Deprivation
 				},

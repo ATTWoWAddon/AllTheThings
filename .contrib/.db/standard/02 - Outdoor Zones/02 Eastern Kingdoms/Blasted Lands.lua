@@ -539,7 +539,7 @@ maproot(EASTERN_KINGDOMS, BLASTED_LANDS, {
 				groups = {
 					i(59414),	-- Boots of Attrition
 					i(59416),	-- Okrilla's Belt
-					i(59415),	-- Reporter's Shouldguards
+					i(59415),	-- Reporter's Shoulderguards
 					i(59417),	-- Rockard Greaves
 				},
 			}),
@@ -924,7 +924,7 @@ maproot(EASTERN_KINGDOMS, BLASTED_LANDS, {
 					}),
 					i(59390),	-- Boots of Completed Rituals
 					i(59387),	-- Boots of Demonic Resurrection
-					i(59389),	-- Bracres of the Demonic Altar
+					i(59389),	-- Bracers of the Demonic Altar
 					i(59391),	-- Helm of Storms
 					i(59388),	-- Loramus' Gloves
 				},

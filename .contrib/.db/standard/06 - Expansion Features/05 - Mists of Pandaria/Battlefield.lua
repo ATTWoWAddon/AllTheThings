@@ -226,9 +226,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97635),	-- Malcontent's Vest
 					i(97636),	-- Tallgrass Guerilla's Tunic
 					i(97671),	-- Dissident's Robes
-					i(97688),	-- Crimson Schism hestpiece
-					i(97747),	-- Crimson Schism hestpiece
-					i(97754),	-- Crimson Schism hestpiece
+					i(97688),	-- Crimson Schism Chestpiece
+					i(97747),	-- Crimson Schism Chestpiece
+					i(97754),	-- Crimson Schism Chestpiece
 					i(97634),	-- Secessionist's Breastplate
 					i(97777),	-- Secessionist's Breastplate
 					i(97782),	-- Secessionist's Breastplate
@@ -298,8 +298,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 						{ "i", LATENT_KORKRON_LEGGINGS, 1 },
 					},
 				}, {
-					i(97726),	-- Insubordination egplates
-					i(97735),	-- Insubordination egplates
+					i(97726),	-- Insubordination Legplates
+					i(97735),	-- Insubordination Legplates
 					i(97741),	-- Malcontent's Kilt
 					i(97668),	-- Malcontent's Kilt
 					i(97667),	-- Tallgrass Guerilla's Pants

@@ -810,7 +810,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						groups = {
 							i(86176),	-- Bonebreaker Gauntlets
 							i(89832),	-- Garalon's Graven Carapace
-							i(86174),	-- Garlon's Hollow Skull
+							i(86174),	-- Garalon's Hollow Skull
 							i(86179),	-- Grasps of Panic
 							i(86175),	-- Grips of the Leviathan
 							i(86173),	-- Legbreaker Greatcloak

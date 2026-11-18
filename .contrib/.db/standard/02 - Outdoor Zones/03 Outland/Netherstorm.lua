@@ -1032,7 +1032,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Master Daellis Dawnstrike slain
 							provider = { "n", 19705 },	-- Master Daellis Dawnstrike
 						}),
-						i(29792),	-- Dawnstrider's Cloak
+						i(29792),	-- Dawnstrike's Cloak
 						i(30399),	-- Nightstalker's Wristguards
 						i(29793),	-- Signet of the Violet Tower
 						i(29794),	-- Strength of the Violet Tower

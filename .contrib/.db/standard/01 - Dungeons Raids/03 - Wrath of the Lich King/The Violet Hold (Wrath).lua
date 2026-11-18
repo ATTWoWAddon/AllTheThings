@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				BossOnly(LEVANTHOR, {
 					i(157570, { timeline = { ADDED_7_3_5 } }),	-- Helm of Cauterization
 					i(35646),	-- Lava Burn Gloves
-					i(37872),	-- Levanthor's Talisman
+					i(37872),	-- Lavanthor's Talisman
 					i(157572, { timeline = { ADDED_7_3_5 } }),	-- Pauldrons of the Great Tide
 					i(35645),	-- Poison Warden's Shotgun
 					i(37871),	-- The Key
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37861),	-- Necklace of Arcane Spheres
 				}),
 				BossOnly(LEVANTHOR, {
-					i(37872),	-- Levanthor's Talisman
+					i(37872),	-- Lavanthor's Talisman
 					i(37871),	-- The Key
 					i(37870),	-- Twin-Headed Boots
 				}),
@@ -363,7 +363,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(45941),	-- Chestguard of the Lasher
 							i(45935),	-- Ironbark Faceguard
 							i(45284),	-- Kinetic Ripper
-							i(45936),	-- Legplates of Fluorishing Resolve
+							i(45936),	-- Legplates of Flourishing Resolve
 							i(45289),	-- Lifespark Visage
 							i(45285),	-- Might of the Leviathan
 							i(45940),	-- Tunic of the Limber Stalker

@@ -1437,7 +1437,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 30295,	-- Thorim
 					coord = { 56.2, 51.3, THE_STORM_PEAKS },
 					groups = {
-						i(43210),	-- Globes of the Servant
+						i(43210),	-- Gloves of the Servant
 						i(43211),	-- rough Climber's Gloves
 						i(43212),	-- Gauntlets of the Windreacher
 						i(43213),	-- Gauntlets of Vigilance

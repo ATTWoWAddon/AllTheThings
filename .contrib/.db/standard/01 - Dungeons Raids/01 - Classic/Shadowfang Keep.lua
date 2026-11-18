@@ -2130,7 +2130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							ach(5504),	-- To the Ground!
 							i(63445),	-- Arced War Axe
 							i(63449),	-- Thieving Spaulders
-							i(63448),	-- Spingvale's Cloak
+							i(63448),	-- Springvale's Cloak
 							i(63447),	-- Breastplate of the Stilled Heart
 							i(63446),	-- Haunting Footfalls
 						},

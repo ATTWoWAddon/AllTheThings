@@ -3664,10 +3664,10 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 44.4, 48.9, NORTHREND_DALARAN },
 					groups = {
 						i(42365),	-- Amber Filigreed Doublet
-						i(42371),	-- Amber Filigreeed Shirt
+						i(42371),	-- Amber Filigreed Shirt
 						i(42374),	-- Blue Martial Shirt
 						i(42361),	-- Cerulean Filigreed Doublet
-						i(42370),	-- Cerulean Filigreed Shiurt
+						i(42370),	-- Cerulean Filigreed Shirt
 						i(42360),	-- Ebon Filigreed Doublet
 						i(42369),	-- Ebon Filigreed Shirt
 						i(53852, {	-- Embroidered Shirt

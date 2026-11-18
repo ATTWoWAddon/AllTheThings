@@ -1726,7 +1726,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						groups = {
 							i(18757),	-- Diabolic Mantle
 							i(18755),	-- Xorothian Firestick
-							i(18756),	-- Dreadguard Protector
+							i(18756),	-- Dreadguard's Protector
 							i(18754),	-- Fel Hardened Bracers
 						},
 					}),

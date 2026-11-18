@@ -266,7 +266,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(36995),	-- Fists of Loken
 					i(37850),	-- Flowing Sash of Order
 					i(36996),	-- Hood of the Furtive Assassin
-					i(36992),	-- Leather-Braced Chain Leggins
+					i(36992),	-- Leather-Braced Chain Leggings
 					i(37848),	-- Lightning Giant Staff
 					i(37855),	-- Mail Girdle of the Audient Earth
 					i(122237, { timeline = { ADDED_6_1_0 } }),	-- Music Roll: Mountains of Thunder
@@ -340,7 +340,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(36988),	-- Chaotic Spiral Amulet
 					i(36995),	-- Fists of Loken
 					i(36996),	-- Hood of the Furtive Assassin
-					i(36992),	-- Leather-Braced Chain Leggins
+					i(36992),	-- Leather-Braced Chain Leggings
 					i(36994),	-- Projectile Activator
 					i(36991),	-- Raiments of the Titans
 					i(36993),	-- Seal of the Pantheon

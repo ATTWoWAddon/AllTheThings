@@ -732,7 +732,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					i(84631),	-- Sunset Leather Tunic
 					i(84632),	-- Wind-Reaver Breastplate
 					i(84633),	-- Sunset Heavy Chestpiece
-					i(84634),	-- Sunst Armored Chestpiece
+					i(84634),	-- Sunset Armored Chestpiece
 				},
 			}),
 			q(31076, {	-- Fate of the Stormstouts
@@ -1004,7 +1004,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					i(84041),	-- Dreadspinner Handguards
 					i(84042),	-- Ghost Fox Gloves
 					i(84043),	-- Wind-Reaver Gauntlets
-					i(84044),	-- Bladesown Gauntlets
+					i(84044),	-- Bladesworn Gauntlets
 					i(84045),	-- Coldbite Gauntlets
 				},
 			}),
@@ -1512,7 +1512,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					i(84099),	-- Saltscale Dagger
 					i(84100),	-- Jaws of the Wakener
 					i(90104),	-- Wakener's Light
-					i(90105),	-- Chronicle of a Hudnred Wars
+					i(90105),	-- Chronicle of a Hundred Wars
 				},
 			}),
 			q(31677, {	-- The Warlord's Ashes
@@ -1628,7 +1628,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					i(87631),	-- Jiao-Skin Tunic
 					i(87627),	-- Kunchong Carapace Chestguard
 					i(87634),	-- Mazu's Robe
-					i(87633),	-- Sharksin Armor
+					i(87633),	-- Sharkskin Armor
 					i(87628),	-- Spinebreaker Chestpiece
 					i(87217),	-- Small Bag of Goods
 				},

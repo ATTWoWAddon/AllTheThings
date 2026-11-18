@@ -309,7 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27878),	-- Auchenai Death Shroud
 							i(27877),	-- Draenic Wildstaff
 							i(28268),	-- Natural Mender's Wraps
-							i(27937),	-- Sky Breakeer
+							i(27937),	-- Sky Breaker
 							i(27797),	-- Wastewalker Shoulderpads
 							i(27876),	-- Will of the Fallen Exarch
 						},

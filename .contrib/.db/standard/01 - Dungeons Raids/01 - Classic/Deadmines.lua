@@ -825,7 +825,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					creatureID = 47739,	-- "Captain" Cookie
 					groups = {
 						ach(5370),	-- I'm on a Diet
-						i(65171),	-- Cookie's Tendurizer
+						i(65171),	-- Cookie's Tenderizer
 						i(65173),	-- Thief's Blade
 						i(65172),	-- Cookie's Stirring Rod
 						i(65177),	-- Cape of the Brotherhood

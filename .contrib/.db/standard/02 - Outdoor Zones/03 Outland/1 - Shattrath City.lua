@@ -1768,7 +1768,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(34903),	-- Embrace of Starlight
 						i(34938),	-- Enslaved Doomguard Soulgrips
 						i(34889),	-- Fused Nethergon Band
-						i(34916),	-- Gauntless of Rapidity
+						i(34916),	-- Gauntlets of Rapidity
 						i(34896),	-- Gavel of Naaru Blessings
 						i(34944),	-- Girdle of Seething Rage
 						i(34941),	-- Girdle of the Fearless
@@ -1787,7 +1787,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(34934),	-- Rushing Storm Kilt
 						i(34912),	-- Scaled Drakeskin Chestguard
 						i(34895),	-- Scryer's Blade of Focus
-						i(34945),	-- Shattrah Protectorate's Breastplate
+						i(34945),	-- Shattrath Protectorate's Breastplate
 						i(34900),	-- Shroud of Nature's Harmony
 						i(34917),	-- Shroud of the Lore`nial
 						i(34926),	-- Slippers of Dutiful Mending

@@ -804,7 +804,7 @@ maproot(PANDARIA, {
 						}),
 						i(80740),	-- Ambermist Gloves
 						i(80741),	-- Blackthicket Gloves
-						i(80742),	-- Jade Witch Guantlets
+						i(80742),	-- Jade Witch Gauntlets
 						i(80743),	-- Glass Lake Gloves
 						i(80744),	-- Silkwood Handguards
 						i(80745),	-- Deepwoods Gloves
@@ -1081,7 +1081,7 @@ maproot(PANDARIA, {
 						i(80792),	-- Jinyu Handaxe
 						i(80793),	-- Jinyu Crossbow
 						i(80794),	-- Jinyu Battleaxe
-						i(80795),	-- Jinyu Ritual Sceptar
+						i(80795),	-- Jinyu Ritual Scepter
 						i(80796),	-- Jinyu Dagger
 						i(80797),	-- Jinyu Combat Mace
 					},
@@ -1116,7 +1116,7 @@ maproot(PANDARIA, {
 							coord = { 43.6, 88.4, THE_JADE_FOREST },
 						}),
 						i(90387),	-- Crashed Gyrocopter Rotor
-						i(90388),	-- Grewatsword of Kofinna Kottr
+						i(90388),	-- Greatsword of Kofinna Kottr
 						i(90385),	-- Mishka's Bandage Cutter
 						i(90384),	-- Peon-Chopping Axe
 						i(90386),	-- Recovery Team Shield
@@ -2183,7 +2183,7 @@ maproot(PANDARIA, {
 						i(90324),	-- Land Claimer's Cudgel
 						i(90322),	-- Parachute Cord Slicer
 						i(90323),	-- Spare Gunship Cannon
-						i(90326),	-- Sataff of Rolling Thunder
+						i(90326),	-- Staff of Rolling Thunder
 						i(90325),	-- Staff of the Mist Navigator
 						i(90327),	-- Stormcaller's Warclub
 						i(90328),	-- Trench Medic's Staff
@@ -3481,9 +3481,9 @@ maproot(PANDARIA, {
 						}),
 						]]--
 						i(90375),	-- Airship Marine's Sharpshooter
-						i(90376),	-- Barricade-Breaker Cidgel
+						i(90376),	-- Barricade-Breaker Cudgel
 						i(90382),	-- Captain Roger's Polite Knocking Stick
-						i(90331, {	-- Face Smaher Warhammer
+						i(90331, {	-- Face Smasher Warhammer
 							description = "Unlocks for Horde after completing this alliance quest.",
 						}),
 						i(90377),	-- Fogcutter Staff

@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(81190, {	-- Grenadier's Belt
 							timeline = { REMOVED_7_1_5 },
 						}),
-						i(81090, {	-- Saboteur's Stablizing Bracers
+						i(81090, {	-- Saboteur's Stabilizing Bracers
 							timeline = { REMOVED_7_1_5 },
 						}),
 						i(81191, {	-- Pulled Grenade Pin

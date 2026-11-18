@@ -621,7 +621,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134741),	-- Cold-Touched Barrier					(Removed)
 		ig(134774),	-- Covert Barrier						(Removed)
 		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
-		ig(18756),	-- Dreadguard Protector					(Removed)
+		ig(18756),	-- Dreadguard's Protector					(Removed)
 		ig(134632),	-- Scorching Redoubt					(Removed)
 		ig(134803),	-- Seasoned Redoubt						(Removed)
 		ig(134603),	-- Vanguard Redoubt						(Removed)
@@ -1303,7 +1303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 		ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 		ig(23171),	-- The Axe of Severing				(Removed)
 
-		ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
+		ig(9425),	-- Pendulum of Doom				(Very Rare BoE)
 		-- ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
 		-- ig(2227),	-- Heavy Ogre War Axe				(Removed)			Added in 10.1.7 to original Source
 		-- ig(1220),	-- Lupine Axe						(Removed)			Added in 10.1.7 to original Source
