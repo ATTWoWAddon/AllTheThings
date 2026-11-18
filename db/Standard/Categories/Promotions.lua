@@ -289,7 +289,7 @@ ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2}),
 p(188,{awp=20403,itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,u=3,g={
-h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",rwp=100107,u=2,g={
+h(-523,{description="These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",rwp=100107,u=2,g={
 mnt(370770,{b=1,itemID=258475,lvl=10,u=2})}})}}),
 x(4,{awp=40003,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),

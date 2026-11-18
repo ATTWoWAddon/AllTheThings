@@ -49464,7 +49464,7 @@ fp(2714,{collectible=false,crs={185200}}),
 fp(2757,{collectible=false,crs={182489}}),
 fp(2712,{collectible=false,crs={182431}})}),
 h(-55,{
-i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
+i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
 n(185032,{coords={
 [2061]={{22,38}}},description="Killed when having 3 stacks of Synergy",g={
 i(190727,{f=55,spellID=367983})}})}),

@@ -85,7 +85,7 @@ h(-522,{description="These rewards were made available to anyone who purchased a
 ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=2}),
 p(4234,{b=1,itemID=198665,npcID=194870,petTypeID=9,q=4,spellID=384796,u=2}),
 toy(198647,{b=1,q=4,u=2})}}),
-h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=2,g={
+h(-523,{description="These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=2,g={
 mnt(372677,{b=1,itemID=192455,lvl=20,q=4,u=2})}})}}),
 x(4,{awp=40003,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
 ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),

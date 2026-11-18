@@ -6760,16 +6760,16 @@ q(5931,{c={11},coords={
 q(5932,{c={11},coords={
 [1450]={{56.2,30.4}}},lvl=10,maps={1456},qgs={11802},r=1,rwp=40003,sourceQuests={5930}}),
 q(6001,{c={11},coords={
-[1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},g={
+[1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},qis={15208},r=2,rwp=40003,sourceQuests={5931},g={
 qo(1,{coords={
-[1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}}}),
+[1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138},{"n",12144},{"o",177525}}}),
 r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
 q(6002,{c={11},coords={
-[1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},g={
+[1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},qis={15710},r=1,rwp=40003,sourceQuests={5932},g={
 qo(1,{coords={
-[1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}}}),
+[1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138},{"n",12144},{"o",177525}}}),
 r(5487,{OnUpdate=function(t)if _.IsSpellKnownHelper(9634)then	if not _.CurrentCharacter.Spells[5487] then	_.CurrentCharacter.Spells[5487]=2 ATTAccountWideData.Spells[5487]=1 end	t.collected=2 end	end}),
 r(6795),
 r(6807,{rank=1})}}),
@@ -8422,7 +8422,7 @@ qo(1,{coords={
 s(123049,9638,{b=1,f=6,loc=43,q=2}),
 i(9642,{b=1,f=52,q=2})}}),
 q(2864,{coords={
-[1434]={{51.6,26.8}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003}),
+[1434]={{27,77.2}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003}),
 q(2875,{coords={
 [1446]={{51.9,27},{66.8,22.3},{67,23.8}}},lvl=40,providers={{"o",142122},{"o",150075}},qgs={7882},rwp=40003,g={
 qo(1,{coords={
@@ -12809,7 +12809,7 @@ s(117037,844,{f=5,loc=44,lvl=12,q=1}),
 s(117039,846,{f=5,loc=42,lvl=12,q=1}),
 s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(12784,{awp=20001,coords={
-[1453]={{75.2,67.2}}},r=2,sym={{"select","symselector",4},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,sym={{"select","symselector",6},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [1453]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"c",1901,16650}},itemID=29465,lvl=40,pvp=1,q=4,r=2}),
@@ -12822,7 +12822,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,16650}},itemID=29471,lvl=40,pvp=1,q=4,r=2}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"select","symselector",8},{"pop"},{"where","headerID",-296},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",7},{"select","symselector",8},{"select","symselector",9},{"select","symselector",10},{"pop"},{"where","headerID",-296},{"pop"}}}),
 n(34078,{coords={
 [1453]={{74.7,67.2}}},phase=33,r=2,rwp=40003,sym={{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"}}}),
 n(34077,{coords={
@@ -20402,6 +20402,21 @@ s(118380,2955,{crs={1561,1562,1563,1564,1653,2545,4505},f=4,loc=40,lvl=35,q=2}),
 r(13841,{crs={674},itemID=11203,learnedAt=215,q=2,requireSkill=333,rwp=40003}),
 s(117637,1991,{crs={1094},f=24,lvl=29,q=2,rwp=40003}),
 i(2799,{q=1}),
+i(2725,{q=1,rwp=40003}),
+i(2728,{q=1,rwp=40003}),
+i(2730,{q=1,rwp=40003}),
+i(2732,{q=1,rwp=40003}),
+i(2734,{q=1,rwp=40003}),
+i(2735,{q=1,rwp=40003}),
+i(2738,{q=1,rwp=40003}),
+i(2740,{q=1,rwp=40003}),
+i(2742,{q=1,rwp=40003}),
+i(2744,{q=1,rwp=40003}),
+i(2745,{q=1,rwp=40003}),
+i(2748,{q=1,rwp=40003}),
+i(2749,{q=1,rwp=40003}),
+i(2750,{q=1,rwp=40003}),
+i(2751,{q=1,rwp=40003}),
 s(117633,1986,{crs={709},f=26,lvl=36,q=2,rwp=40003}),
 s(117392,1522,{crs={671},f=29,lvl=31,q=2,rwp=40003}),
 s(117393,1523,{crs={597},f=24,lvl=31,q=2,rwp=40003}),

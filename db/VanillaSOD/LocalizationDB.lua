@@ -1711,7 +1711,6 @@ _.Modules.Events.SetEventInformation(13, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=5,monthDay=1,weekday=7,year=2027},{hour=23,minute=59,month=5,monthDay=7,weekday=6,year=2027})
 })
 _.Modules.Events.SetEventInformation(1, {
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=2,weekday=2,year=2026},{hour=0,minute=0,month=11,monthDay=9,weekday=2,year=2026},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=16,weekday=2,year=2026},{hour=0,minute=0,month=11,monthDay=23,weekday=2,year=2026},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=30,weekday=2,year=2026},{hour=0,minute=0,month=12,monthDay=7,weekday=2,year=2026},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=12,monthDay=14,weekday=2,year=2026},{hour=0,minute=0,month=12,monthDay=21,weekday=2,year=2026},{remappedID=374}),
@@ -1737,7 +1736,8 @@ _.Modules.Events.SetEventInformation(1, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=20,weekday=2,year=2027},{hour=0,minute=0,month=9,monthDay=27,weekday=2,year=2027},{remappedID=374}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=10,monthDay=4,weekday=2,year=2027},{hour=0,minute=0,month=10,monthDay=11,weekday=2,year=2027},{remappedID=375}),
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=10,monthDay=18,weekday=2,year=2027},{hour=0,minute=0,month=10,monthDay=25,weekday=2,year=2027},{remappedID=374}),
-	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=1,weekday=2,year=2027},{hour=0,minute=0,month=11,monthDay=8,weekday=2,year=2027},{remappedID=375})
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=1,weekday=2,year=2027},{hour=0,minute=0,month=11,monthDay=8,weekday=2,year=2027},{remappedID=375}),
+	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=11,monthDay=15,weekday=2,year=2027},{hour=0,minute=0,month=11,monthDay=22,weekday=2,year=2027},{remappedID=374})
 })
 -- Filter Database Module
 _.FilterConstants = {
@@ -2634,6 +2634,7 @@ local ObjectNames = {
 	[177464] = "Large Termite Mound",
 	[177490] = "Northridge Lumber Mill Crate",
 	[177491] = "Termite Barrel",
+	[177525] = "Moonkin Stone",
 	[177544] = "Joseph's Chest",
 	[177624] = "Xabraxxis' Demon Bag",
 	[177667] = "Torn Scroll",
@@ -13324,6 +13325,7 @@ localize(ObjectNames, {
 	[177464] = "Großer Termitenhügel",
 	[177490] = "Kiste vom Sägewerk des Nordkamms",
 	[177491] = "Termitenfass",
+	[177525] = "Moonkinstein",
 	[177544] = "Josephs Truhe",
 	[177624] = "Xabraxxis Dämonentasche",
 	[177667] = "Zerrissene Rolle",
@@ -15977,6 +15979,7 @@ localize(ObjectNames, {
 	[177464] = "Grande termitière",
 	[177490] = "Caisse de la scierie de la Crête du nord",
 	[177491] = "Tonneau de termites",
+	[177525] = "Pierre des séléniens",
 	[177544] = "Coffre de Joseph",
 	[177624] = "Sac des démons de Xabraxxis",
 	[177667] = "Parchemin déchiré",
@@ -18946,6 +18949,7 @@ localize(ObjectNames, {
 	[177289] = "Caldeirão do Flagelo",
 	[177464] = "Cupinzeiro Grande",
 	[177491] = "Barril de Cupins",
+	[177525] = "Pedra Luniscante",
 	[177544] = "Baú do Josefo",
 	[177667] = "Pergaminho Rasgado",
 	[177750] = "Broto Fúngico Lunar",
@@ -19093,6 +19097,8 @@ localize(ObjectNames, {
 	[387466] = "Cofre Enferrujado",
 	[387477] = "Estoque dos Défias",
 	[397987] = "Estoque dos Kobolds",
+	[403041] = "Suprimentos de Demolição",
+	[403105] = "Cone de Fúria dos Ventos",
 	[404695] = "Estoque Encharcado",
 	[404911] = "Baú Escondido",
 	[405633] = "Maleta Pedraqueixo",
@@ -21879,6 +21885,7 @@ localize(ObjectNames, {
 	[177464] = "Большой термитник",
 	[177490] = "Ящик с лесопилки Северного Кряжа",
 	[177491] = "Термитная бочка",
+	[177525] = "Камень лунного совуха",
 	[177544] = "Сундук Джозефа",
 	[177624] = "Демонова сума Забраксиса",
 	[177667] = "Разорванный свиток",
@@ -24296,6 +24303,7 @@ localize(ObjectNames, {
 	[177289] = "스컬지 가마솥",
 	[177464] = "큰 흰개미집",
 	[177491] = "흰개미 통",
+	[177525] = "달빛야수 비석",
 	[177544] = "조셉의 상자",
 	[177667] = "찢어진 두루마리",
 	[177750] = "달버섯",
@@ -27513,6 +27521,7 @@ localize(ObjectNames, {
 	[177464] = "Montículo grande de termitas",
 	[177490] = "Cajón de la Serrería de Crestanorte",
 	[177491] = "Barrica de termitas",
+	[177525] = "Piedra de lechúcico lunar",
 	[177544] = "Cofre de Joseph",
 	[177624] = "Bolsa demoníaca de Xabraxxis",
 	[177667] = "Pergamino roto",
@@ -29463,6 +29472,7 @@ localize(ObjectNames, {
 	[180901] = "Restos de un naufragio",
 	[180902] = "Banco de pargos de fuego",
 	[253069] = "Loto oscuro",
+	[403105] = "Cono de viento furioso",
 })
 for key,value in pairs({
 	[2] = "Removido del juego",
@@ -32331,6 +32341,7 @@ localize(ObjectNames, {
 	[177289] = "瘟疫之锅",
 	[177464] = "大白蚁丘",
 	[177491] = "白蚁桶",
+	[177525] = "月夜枭兽之石",
 	[177544] = "约瑟夫的箱子",
 	[177667] = "破损的卷轴",
 	[177750] = "月光蘑菇花",
@@ -32479,6 +32490,7 @@ localize(ObjectNames, {
 	[386691] = "图书馆书籍",
 	[386759] = "图书馆书籍",
 	[386777] = "尘封的宝箱",
+	[403105] = "风怒球果",
 	[405149] = "塔佐的浮雕",
 	[405633] = "石颚提箱",
 	[405879] = "药剂师的会社读本",
@@ -35558,6 +35570,7 @@ localize(ObjectNames, {
 	[177289] = "瘟疫之鍋",
 	[177464] = "大白蟻丘",
 	[177491] = "白蟻桶",
+	[177525] = "月夜梟獸之石",
 	[177544] = "約瑟夫的箱子",
 	[177667] = "破損的卷軸",
 	[177784] = "巨型軟殼蚌",
@@ -35670,6 +35683,8 @@ localize(ObjectNames, {
 	[201579] = "拱心石裂片",
 	[207724] = "沉船殘骸",
 	[253069] = "深黑蓮花",
+	[403041] = "爆炸補給品",
+	[403105] = "風怒錐果",
 	[405633] = "石齶置物箱",
 	[100000000] = "Sentinax Portal",
 	[100000001] = "未點燃的火炬",

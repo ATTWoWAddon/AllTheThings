@@ -129990,7 +129990,7 @@ crit(53044,{achID=15512,id=24})}})}),
 h(-55,{
 ah(190196,{awp=100205,description="To obtain this toy, you will need six people with the Sphere of Enlightened Cogitation toy.\nEach person with the toy needs to stand on top of one of the hexagon pillars surrounding the pool of water under the Forge of Afterlives, right at the center of Zereth Mortis, and use the toy while sitting.\nOne person needs to be in each pillar.\nIf all 6 people use the toy successfully at the same time, a zone-wide chat emote will show up - The Ponderer's Portal has been opened. Once this happens, simply head to the southern hexagon pillar and loot the toy from the Ponderer's Portal - The Portal looks like a white glowy sphere.",type="i",g={
 toy(190196,{b=1})}}),
-i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism Feast (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
+i(189167,{description="Eating a Empty Kettle of Stone Soup (/att i:187648) or Feast of Gluttonous Hedonism (/att i:172043) has a chance to spawn this item in your inventory.\nThe chance to Award Glimmer of Satisfaction happens whenever you either gain the 'Well Fed' buff or refresh the buff, so you can click again on the feast every ~12 seconds."}),
 o(375516,{coords={
 [1970]={{63.3,60.5}}},description="Almost at the top of the pillar in a little nest attached to the side of the pillar. Require flying but might be doable during Portal Play and with Venthyr Ability.",g={
 i(189990,{b=1,lvl=50})}}),
@@ -130067,7 +130067,7 @@ crit(53288,{achID=15508,id=3})}}),
 crit(53061,{achID=15331,id=17}),
 crit(53061,{achID=15513,id=17})}}),
 o(375376,{coords={
-[1970]={{51.6,9.9}}},description="Use the Fogotten Translocator nearby to teleport up.",questID=65487,g={
+[1970]={{51.6,9.9}}},description="Use the Forgotten Translocator nearby to teleport up.",questID=65487,g={
 i(189863,{b=1}),
 crit(53016,{achID=15331,id=9}),
 crit(53016,{achID=15513,id=9})}}),

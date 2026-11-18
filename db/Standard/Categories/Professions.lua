@@ -5556,7 +5556,7 @@ cat(788,{requireSkill=773,g={
 r(86615,{learnedAt=75,requireSkill=773,skillID=2511}),
 r(86609,{learnedAt=10,requireSkill=773,skillID=2511})}}),
 cat(789,{requireSkill=773,g={
-r(86403,{learnedAt=40,requireSkill=773,skillID=2511}),
+r(86403,{learnedAt=50,requireSkill=773,skillID=2511}),
 r(86402,{learnedAt=40,requireSkill=773,skillID=2511}),
 r(86401,{learnedAt=40,requireSkill=773,skillID=2511}),
 r(86375,{learnedAt=40,requireSkill=773,skillID=2511})}}),
@@ -5565,14 +5565,14 @@ r(86643,{learnedAt=70,requireSkill=773,skillID=2511}),
 r(86616,{learnedAt=35,requireSkill=773,skillID=2511}),
 r(86642,{learnedAt=70,requireSkill=773,skillID=2511}),
 r(86641,{learnedAt=70,requireSkill=773,skillID=2511}),
-r(86648,{awp=50004,learnedAt=50,requireSkill=773,skillID=2511}),
-r(86640,{learnedAt=35,requireSkill=773,skillID=2511}),
+r(86648,{awp=50004,learnedAt=30,requireSkill=773,skillID=2511}),
+r(86640,{learnedAt=25,requireSkill=773,skillID=2511}),
 r(86652,{awp=50004,learnedAt=75,requireSkill=773,skillID=2511}),
 r(86649,{awp=50004,learnedAt=65,requireSkill=773,skillID=2511}),
 r(86653,{awp=50004,learnedAt=75,requireSkill=773,skillID=2511})}}),
 cat(791,{requireSkill=773,g={
-r(89244,{learnedAt=75,r=2,requireSkill=773,skillID=2511}),
-r(86654,{learnedAt=75,r=1,requireSkill=773,skillID=2511})}})}})}}),
+r(89244,{learnedAt=50,r=2,requireSkill=773,skillID=2511}),
+r(86654,{learnedAt=50,r=1,requireSkill=773,skillID=2511})}})}})}}),
 x(5,{awp=50004,requireSkill=773,g={
 flt(200,{requireSkill=773,g={
 cat(779,{requireSkill=773,g={

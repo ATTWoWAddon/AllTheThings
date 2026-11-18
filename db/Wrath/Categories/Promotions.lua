@@ -77,7 +77,7 @@ h(-522,{description="These rewards were made available to anyone who purchased a
 ach(16332,{cost={{"i",41803,1},{"i",40199,1},{"i",41813,1},{"i",41806,1},{"i",41801,1},{"i",41802,1},{"i",41814,1},{"i",41809,1},{"i",43646,1},{"i",41810,1},{"i",41807,1},{"i",41800,1},{"i",41805,1},{"i",41808,1},{"i",41812,1}},providers={{"i",199914},{"n",194870}},u=3}),
 p(4234,{itemID=198665,petTypeID=9,spellID=384796,u=3}),
 toy(198647,{u=3})}}),
-h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
+h(-523,{description="These rewards were made available to anyone who purchased the Northrend Epic Upgrade for Wrath of the Lich King Classic.",questID=70448,rwp=40001,u=3,g={
 mnt(372677,{itemID=192455,lvl=20,u=3})}})}}),
 h(-526,{awp=30400,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",rwp=40402,u=3,g={

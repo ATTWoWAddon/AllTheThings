@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local cat,cu,faction,h,i,n,o,p,prof,q,qo,r,s,toy=_.CreateCategory,_.CreateCurrencyClass,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateToy;
+local cat,cu,faction,h,i,n,o,p,prof,q,qo,r,s,title,toy=_.CreateCategory,_.CreateCurrencyClass,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy;
 categories.Holidays=
 h(-36,{difficultyID=19,SortPriority=30,SortType="EventStart",g={
 h(-559,{e=13,g={
@@ -1192,9 +1192,10 @@ q(8228,{coords={
 [1454]={{52.4,73}}},e=6,lvl=35,qgs={15116},r=1,repeatable=1,requireSkill=356,g={
 i(19978,{b=1,e=6,requireSkill=356})}}),
 q(8193,{coords={
-[1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,qgs={15077},repeatable=1,requireSkill=356,g={
+[1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,isWeekly=1,qgs={15077},requireSkill=356,g={
 s(164089,19970,{b=1,e=6,f=57,learnedAt=300,requireSkill=356}),
-i(19979,{b=1,e=6,f=53,requireSkill=356,spellID=24347})}}),
+i(274026,{awp=16001,b=1,e=6,requireSkill=356}),
+title(1313,{awp=16001,collectible=false,description="Granted by the Master Angler! aura for the week after winning the contest.",e=6,requireSkill=356})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(164088,19969,{b=1,e=6,f=4,loc=47,requireSkill=356})}}),
@@ -1224,6 +1225,7 @@ p(5094,{b=1,cost={{"i",274026,1}},e=6,itemID=276275,npcID=267842,spellID=1299341
 s(309637,276273,{b=1,cost={{"i",274026,1}},e=6,f=1}),
 i(276278,{b=1,cost={{"i",19807,1}},e=6}),
 i(276280,{b=1,cost={{"i",19807,10}},e=6}),
+i(19979,{b=1,cost={{"i",274026,1}},e=6,f=53,spellID=24347}),
 s(309636,276272,{b=1,cost={{"i",274026,1}},e=6,f=2,loc=40}),
 i(274974,{b=1,cost={{"i",19807,20}},e=6}),
 i(276279,{b=1,cost={{"i",19807,5}},e=6}),

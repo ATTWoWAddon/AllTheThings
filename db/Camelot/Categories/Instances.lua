@@ -479,12 +479,12 @@ q(7496,{coords={
 [1453]={{67.2,85.1}}},lvl=60,qgs={1748},r=2,sourceQuests={7495},g={
 i(18403,{b=1,f=52}),
 i(18404,{b=1,f=51}),
-i(18406,{b=1,f=53,spellID=1287808})}}),
+i(18406,{b=1,f=53})}}),
 q(7491,{coords={
 [1454]={{32,37.8}}},lvl=60,qgs={4949},r=1,sourceQuests={7490},g={
 i(18403,{b=1,f=52}),
 i(18404,{b=1,f=51}),
-i(18406,{b=1,f=53,spellID=1287808})}}),
+i(18406,{b=1,f=53})}}),
 q(7507,{c={1,2},description="You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",lvl=60,maps={234},qss={18401},g={
 i(18513,{b=1,lvl=60})}}),
 q(7636,{c={3},coords={
@@ -592,6 +592,20 @@ q(95196,{coords={
 [1445]={{66.2,45.2}}},lvl=48,qgs={260146},r=2,sourceQuests={95194}})}),
 h(-47,{
 toy(279471,{cost={{"i",279450,6}}})}),
+h(-63,{
+s(317854,287017,{crs={255267,255995},f=4,loc=40}),
+s(317853,287018,{crs={255271,255373,255995},f=4,loc=44}),
+s(317801,287020,{crs={255262,255267,255271,255276,255309,255364,255373,255377,255995,271784},f=5,loc=42}),
+s(317802,287019,{crs={255262,255267,255271,255276,255309,255364,255373,255995,271784},f=5,loc=40}),
+s(317800,287021,{crs={255262,255267,255271,255276,255309,255364,255373,255377,255995,271784},f=5,loc=47}),
+s(317843,287025,{crs={255373},f=28,spellID=1324981}),
+s(317851,287023,{crs={255262,255271,255373,255377,255995},f=7,loc=43}),
+i(287024,{crs={255262,255267,255309,271780},f=51}),
+s(317852,287022,{crs={255271,255995},f=6,loc=41})}),
+e(3403,{npcID=255391,g={
+s(309755,276732,{f=24}),
+s(309756,276733,{f=7,loc=44}),
+i(276734,{f=52})}}),
 e(3410,{npcID=255997,g={
 s(309760,276737,{f=3}),
 s(309759,276736,{f=6,loc=43}),
@@ -793,7 +807,8 @@ s(160434,12083,{f=4,loc=45})}}),
 q(4242,{qgs={9023},r=2,sourceQuests={4241},g={
 s(160422,12018,{b=1,f=6,loc=40}),
 s(160423,12021,{b=1,f=7,loc=47}),
-s(160424,12041,{b=1,f=5,loc=46})}}),
+s(160424,12041,{b=1,f=5,loc=46}),
+s(304958,270118,{awp=16001,b=1,f=4,loc=42})}}),
 q(3981,{coords={
 [1418]={{5.8,47.6}}},lvl=48,qgs={9081},r=1,sourceQuests={3906}}),
 q(3801,{description="You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",lvl=48,maps={33},qgs={8888}}),
@@ -914,7 +929,8 @@ qo(2,{coords={
 qo(3,{coords={
 [1449]={{31,49}}},cost={{"i",11412,1}},providers={{"i",11413}}}),
 s(160418,11962,{f=4,loc=43}),
-s(160376,11866,{f=5,loc=45})}}),
+s(160376,11866,{f=5,loc=45}),
+s(304959,270120,{awp=16001,f=6,loc=47})}}),
 q(4004,{lvl=48,maps={1454},qgs={8929},r=1,sourceQuests={4003},g={
 i(12545,{f=52}),
 i(12544,{f=52})}}),
@@ -1095,6 +1111,7 @@ o(161495,{description="This spawns after defeating Watchman Doomgrip.",g={
 s(160409,11926,{f=6,loc=42}),
 s(160412,11929,{f=4,loc=46}),
 s(160406,11923,{f=23,spellID=1300890}),
+s(164871,22254,{f=27}),
 s(160403,11920,{f=21})}})}}),
 o(164820,{crs={9437,9438,9439,9441,9442,9443},description="Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room. When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r. For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r. When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r. When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.",g={
 o(160845,{cost={{"i",11197,1}},sharedDescription="Is used to turn in Librams.",g={
@@ -1159,7 +1176,10 @@ s(160403,11920,{f=21})}}),
 e(386,{npcID=9938,g={
 s(164881,22275,{f=5,loc=47}),
 s(160321,11746,{f=7,loc=40}),
-s(160416,11935,{f=1})}}),
+s(164853,22208,{f=24}),
+i(22400,{f=54,spellID=27850}),
+s(160416,11935,{f=1}),
+i(22395,{f=54,spellID=27859})}}),
 n(8929,{description="In order to be eligible for this loot, you need to have completed The Fate of the Kingdom or The Royal Rescue.",sourceQuests={4003,4362},g={
 s(160558,12557,{f=7,loc=41}),
 s(160555,12554,{f=4,loc=44}),
@@ -1484,7 +1504,8 @@ e(391,{npcID=10596,g={
 s(160886,13183,{f=23}),
 s(160905,13244,{f=6,loc=44}),
 s(163030,16715,{b=1,f=5,loc=47,lvl=54}),
-i(13213,{f=53,spellID=1308917})}}),
+i(13213,{f=53,spellID=1308917}),
+r(1249114,{awp=16001,itemID=249521})}}),
 e(392,{cost={{"i",12534,1},{"i",12533,1}},description="Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",npcID=10584,providers={{"o",175621}},g={
 i(12712,{f=55}),
 i(18784,{lvl=50,spellID=23233}),
@@ -1537,6 +1558,7 @@ s(160682,12905,{f=3}),
 s(160683,12927,{f=5,loc=41}),
 s(162987,16672,{f=6,loc=44,lvl=54}),
 i(12926,{f=52}),
+r(1249112,{awp=16001,itemID=249520}),
 r(29228,{c={7},itemID=23320,lvl=60,rank=6})}),
 s(160954,13371,{b=1,description="Opening this will spawn 8 waves of drake adds in the Leeroy Jenkins room along with Solakar Flamewreath.",f=1,providers={{"o",175245}}}),
 n(10264,{description="This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",g={

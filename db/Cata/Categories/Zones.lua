@@ -12030,13 +12030,13 @@ q(5931,{c={11},coords={
 q(5932,{c={11},coords={
 [1450]={{56.2,30.4}}},lvl=10,maps={1456},qgs={11802},r=1,rwp=40003,sourceQuests={5930},u=2}),
 q(6001,{c={11},coords={
-[1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},r=2,rwp=40003,sourceQuests={5931},u=2,g={
+[1457]={{35.2,8}}},lvl=10,maps={1439},qgs={4217},qis={15208},r=2,rwp=40003,sourceQuests={5931},u=2,g={
 qo(1,{coords={
-[1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}},u=2})}}),
+[1439]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138},{"n",12144},{"o",177525}},u=2})}}),
 q(6002,{c={11},coords={
-[1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},r=1,rwp=40003,sourceQuests={5932},u=2,g={
+[1456]={{76.4,27.6}}},lvl=10,maps={1413},qgs={3033},qis={15710},r=1,rwp=40003,sourceQuests={5932},u=2,g={
 qo(1,{coords={
-[1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}},u=2})}}),
+[1413]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138},{"n",12144},{"o",177525}},u=2})}}),
 q(5929,{c={11},coords={
 [1450]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2,g={
 qo(1,{providers={{"n",11956}},u=2})}}),
@@ -16790,7 +16790,7 @@ qo(1,{coords={
 s(200956,9638,{b=1,f=6,loc=43,q=2,u=2}),
 i(9642,{b=1,f=52,q=2,u=2})}}),
 q(2864,{coords={
-[1434]={{51.6,26.8}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003,u=2}),
+[1434]={{27,77.2}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003,u=2}),
 q(24955,{awp=40003,coords={
 [1446]={{44.5,52.6}}},qgs={38849},r=1,sourceQuests={24905},g={
 i(52038,{q=1})}}),
@@ -23614,7 +23614,7 @@ s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(52027,{awp=40006,coords={
 [1453]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}}}),
 n(12784,{awp=20001,coords={
-[1453]={{75.2,67.2}}},r=2,sym={{"select","symselector",4},{"sub","pvp_gear_base",2,-250,-296},{"merge"},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,sym={{"select","symselector",6},{"sub","pvp_gear_base",2,-250,-296},{"merge"},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [1453]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29465,lvl=40,pvp=1,q=4,r=2}),
@@ -23627,7 +23627,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29471,lvl=40,pvp=1,q=4,r=2}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,r=2,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"select","symselector",8},{"pop"},{"where","headerID",-296},{"pop"}}}),
+[1453]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",7},{"select","symselector",8},{"select","symselector",9},{"select","symselector",10},{"pop"},{"where","headerID",-296},{"pop"}}}),
 n(54660,{coords={
 [1453]={{74.8,67.6}}},phase=42,r=2,rwp=50004,sym={{"sub","pvp_gear_base",4,-258,-295},{"merge"},{"pop"}}}),
 n(52545,{coords={

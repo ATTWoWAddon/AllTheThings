@@ -12594,13 +12594,13 @@ q(5931,{c={11},coords={
 q(5932,{c={11},coords={
 [80]={{56.2,30.4}}},lvl=10,maps={88},qgs={11802},r=1,rwp=40003,sourceQuests={5930},u=2}),
 q(6001,{c={11},coords={
-[89]={{35.2,8}}},lvl=10,maps={62},qgs={4217},r=2,rwp=40003,sourceQuests={5931},u=2,g={
+[89]={{35.2,8}}},lvl=10,maps={62},qgs={4217},qis={15208},r=2,rwp=40003,sourceQuests={5931},u=2,g={
 qo(1,{coords={
-[62]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138}},u=2})}}),
+[62]={{43,45}}},cost={{"i",15208,1}},providers={{"n",12138},{"n",12144},{"o",177525}},u=2})}}),
 q(6002,{c={11},coords={
-[88]={{76.4,27.6}}},lvl=10,maps={10},qgs={3033},r=1,rwp=40003,sourceQuests={5932},u=2,g={
+[88]={{76.4,27.6}}},lvl=10,maps={10},qgs={3033},qis={15710},r=1,rwp=40003,sourceQuests={5932},u=2,g={
 qo(1,{coords={
-[10]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138}},u=2})}}),
+[10]={{42,60}}},cost={{"i",15710,1}},providers={{"n",12138},{"n",12144},{"o",177525}},u=2})}}),
 q(5929,{c={11},coords={
 [80]={{56.2,30.4}}},lvl=10,qgs={11802},r=2,rwp=40003,sourceQuests={5921},u=2,g={
 qo(1,{providers={{"n",11956}},u=2})}}),
@@ -17893,7 +17893,7 @@ qo(1,{coords={
 s(200956,9638,{b=1,f=6,loc=43,q=2,u=2}),
 i(9642,{b=1,f=52,q=2,u=2})}}),
 q(2864,{coords={
-[224]={{51.6,26.8}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003,u=2}),
+[224]={{27,77.2}}},isBreadcrumb=1,lvl=40,nextQuests={2865},qgs={773},rwp=40003,u=2}),
 q(24955,{awp=40003,coords={
 [71]={{44.5,52.6}}},qgs={38849},r=1,sourceQuests={24905},g={
 i(52038,{q=1})}}),
@@ -25660,7 +25660,7 @@ s(117038,845,{f=5,loc=46,lvl=12,q=1})}}),
 n(52027,{awp=40006,coords={
 [84]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}}}),
 n(12784,{awp=20001,coords={
-[84]={{75.2,67.2}}},r=2,sym={{"select","symselector",4},{"sub","pvp_gear_base",2,-250,-296},{"merge"},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
+[84]={{75.2,67.2}}},r=2,sym={{"select","symselector",6},{"sub","pvp_gear_base",2,-250,-296},{"merge"},{"sub","pvp_gear_base",3,-255,-296},{"merge"},{"pop"},{"where","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [84]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29465,lvl=40,pvp=1,q=4}),
@@ -25673,7 +25673,7 @@ mnt(22717,{b=1,itemID=18241,lvl=40,pvp=1,q=4,rwp=20001,u=2}),
 mnt(22723,{awp=20001,b=1,cost={{"c",1901,2000}},itemID=29471,lvl=40,pvp=1,q=4}),
 mnt(22723,{b=1,itemID=18242,lvl=40,pvp=1,q=4,rwp=20001,u=2})}}),
 n(12778,{awp=30002,coords={
-[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",5},{"select","symselector",6},{"select","symselector",7},{"select","symselector",8},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
+[84]={{75.2,67.2}}},r=2,rwp=50004,sym={{"select","symselector",7},{"select","symselector",8},{"select","symselector",9},{"select","symselector",10},{"pop"},{"where","headerID",-296},{"pop"}},u=2}),
 n(54660,{coords={
 [84]={{74.8,67.6}}},phase=42,r=2,rwp=50004,sym={{"sub","pvp_gear_base",4,-258,-295},{"merge"},{"pop"}},u=2}),
 n(52545,{coords={
@@ -71891,38 +71891,32 @@ q(33211,{isDaily=1,qgs={73570}}),
 q(33161,{coords={
 [554]={{34.6,53.6}}},qgs={72870},sourceQuests={33156,33160}}),
 q(33337,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33338},g={
-i(105930,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105930},sourceQuests={33338}}),
 q(33378,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33377},g={
-i(105934,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105934},sourceQuests={33377}}),
 q(33342,{qgs={73303},sourceQuests={33341}}),
 q(33338,{coords={
 [554]={{34.6,53.6}}},isWeekly=1,qgs={72870},sourceQuests={33336},g={
 i(105715,{q=1})}}),
 q(33377,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33376},g={
-i(105933,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105933},sourceQuests={33376}}),
 q(33332,{coords={
 [554]={{34.6,53.6}}},qgs={72870},sourceQuests={33228}}),
 q(33231,{coords={
 [390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33160},qgs={73691},r=2,sourceQuests={33229,33230}}),
 q(33232,{coords={
-[390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33156},qgs={73691},r=1,sourceQuests={33229,33230},g={
-i(104110,{lvl=90,q=1})}}),
+[390]={{80.6,33}}},isBreadcrumb=1,nextQuests={33156},qgs={73691},qis={104110},r=1,sourceQuests={33229,33230}}),
 q(33222,{coords={
 [554]={{34.7,60.3}}},isDaily=1,qgs={73626}}),
 q(33379,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33378},g={
-i(105935,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105935},sourceQuests={33378}}),
 q(33374,{coords={
 [554]={{42.8,55.6}}},isDaily=1,qgs={73303},sourceQuests={33341},g={
 i(103642,{b=1,f=55,lvl=85,q=1}),
 i(103643,{b=1,f=55,lvl=85,q=1}),
 i(103641,{b=1,f=55,lvl=85,q=1})}}),
 q(33375,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33337},g={
-i(105931,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105931},sourceQuests={33337}}),
 q(32974,{description="The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",providers={{"o",222684}},qss={102225}}),
 q(32975,{coords={
 [554]={{49.4,69.3}}},description="Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",qgs={72751},sourceQuests={32974}}),
@@ -71934,15 +71928,13 @@ i(104012,{b=2,q=4}),
 i(104010,{b=2,q=4}),
 i(104009,{b=2,q=4})}}),
 q(33376,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33375},g={
-i(105932,{q=4})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105932},sourceQuests={33375}}),
 q(33334,{coords={
 [554]={{34.6,53.6}}},isWeekly=1,qgs={72870},sourceQuests={33333}}),
 q(33343,{qgs={73303},sourceQuests={33342,33374},g={
 i(103982,{b=1,lvl=90,q=4})}}),
 q(33336,{coords={
-[554]={{34.6,53.6}}},qgs={72870},sourceQuests={33161},g={
-i(105715,{q=1})}}),
+[554]={{34.6,53.6}}},qgs={72870},qis={105715},sourceQuests={33161}}),
 q(33335,{coords={
 [554]={{34.6,53.6}}},qgs={72870},sourceQuests={33228}}),
 q(33228,{coords={
@@ -71959,7 +71951,7 @@ q(33341,{qgs={73303},sourceQuests={33340}})}),
 h(-46,{
 n(73174,{coords={
 [554]={{48.4,33.3},{56.6,35.9},{58.1,25}}},isDaily=1,questID=33312,g={
-i(86574,{b=1,f=55,q=3,u=2}),
+i(86574,{b=1,f=55,q=3,rwp=70003}),
 crit(24139,{achID=8714,id=31})}}),
 n(73666,{coords={
 [554]={{34.6,31.6}}},cost={{"i",103684,1}},description="This is the summonable version of this rare. It drops more things.",g={
@@ -72028,12 +72020,12 @@ i(104286,{b=1,q=1}),
 mnt(148476,{b=1,itemID=104269,lvl=90,q=4}),
 crit(23984,{achID=8714,id=27})}}),
 n(73163,{coords={
-[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,providers={{"n",72841}},questID=33303,g={
+[554]={{25.8,46.6},{27.4,69.2},{28.8,62},{29,43.6},{29.6,73.6},{30.8,36.2},{31.2,75.8},{33.8,46.6},{34.6,73.4},{36.4,73.4},{44.6,65.4},{50.8,46.2},{53,58.8}}},crs={72841},description="Travel around the zone and kill Death Adders — whenever one respawns, there's a chance it will respawn as an Imperial Python instead of the normal mob.",isDaily=1,questID=33303,g={
 p(1330,{b=1,itemID=104161,npcID=73364,q=3,spellID=148052}),
 i(104292,{b=1,q=3}),
 crit(23989,{achID=8714,id=18})}}),
 n(73160,{coords={
-[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,providers={{"n",72844}},questID=33296,g={
+[554]={{29.6,45.8},{31.6,58.8},{34.2,71},{35.2,41.8},{41.1,37.6},{43.8,43.8}}},crs={72844},description="Travel around the area where the Celestial bosses spawn and kill Ironfur Great Bulls — whenever one respawns, there's a chance it will respawn as an Ironfur Steelhorn instead of the normal mob.",isDaily=1,questID=33296,g={
 i(89770,{b=1,lvl=85,q=2}),
 crit(23968,{achID=8714,id=2})}}),
 n(73169,{coords={
@@ -72704,7 +72696,7 @@ crit(21254,{achID=7479,id=9})}}),
 ach(7298,{
 crit(20453,{achID=7298,id=1,providers={{"n",62354}}}),
 crit(20456,{achID=7298,id=2,providers={{"n",63617}}}),
-crit(20461,{achID=7298,id=3,providers={{"n",61625}}}),
+crit(20461,{achID=7298,id=3,providers={{"n",62546}}}),
 crit(20454,{achID=7298,id=4,providers={{"n",62380}}}),
 crit(20457,{achID=7298,id=5,providers={{"n",63618}}}),
 crit(20460,{achID=7298,id=6,providers={{"n",62550}}}),

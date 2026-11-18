@@ -6464,6 +6464,8 @@ s(141027,30681,{b=1,f=5,loc=47,lvl=70,q=4}),
 s(141026,30680,{b=1,f=4,loc=47,lvl=70,q=4}),
 s(141029,30683,{b=1,f=7,loc=47,lvl=70,q=4}),
 s(141028,30682,{b=1,f=6,loc=47,lvl=70,q=4})}})}}),
+h(-19,{crs={15687,15688,15689,15690,15691,16152,16457,16524,16816,17225,17521,17533,17534,17535,17543,17546,17547,17548,17603,18168},g={
+cu(42,{phase=20})}}),
 e(1553,{crs={16151,16152},g={
 r(30334,{b=1,itemID=23809,learnedAt=375,q=3,requireSkill=202}),
 ach(882,{providers={{"i",30480}}}),
@@ -6629,6 +6631,8 @@ i(28763,{b=1,f=52,lvl=70,q=4}),
 i(28757,{b=1,f=52,lvl=70,q=4})}})}}),
 inst(746,{coords={
 [1949]={{69.31,23.67}}},isLockoutShared=1,isRaid=1,lore="When the infamous Dragon Aspect, Deathwing, discovered the Dark Portal and Draenor, he felt sure that few of Draenor's denizens would dare challenge the black dragonflight, so he scattered clutches of his eggs throughout the world.\n\nDeathwing made a serious miscalculation when he chose to leave his eggs under meager guardianship in Blade's Edge Mountains. The guardian dragons were torn from the sky by the gronn living in Blade's Edge, and the leader of the gronn, Gruul, impaled the wyrms he fought on the stone spires of the mountains.\n\nToday Gruul the Dragonkiller is worshipped as a deity by the ogres of Blade's Edge Mountains. His powerful sons ravage both the spires of their home and the plains of Nagrand. Gruul's unparalleled strength and experience in battle would pose a serious threat if he ever chose to attack Horde or Alliance forces in Outland.",lvl=68,mapID=330,savedInstanceID=565,g={
+h(-19,{crs={18831,19044},g={
+cu(42,{phase=20})}}),
 e(1564,{npcID=18831,g={
 i(29763,{b=1,c={2,4,7},lvl=70,q=4}),
 i(29764,{b=1,c={1,5,11},lvl=70,q=4}),
@@ -6686,6 +6690,7 @@ e(1566,{npcID=17257,g={
 ach(693),
 i(32385,{b=1,lvl=70,q=4,r=2}),
 i(32386,{b=1,lvl=70,q=4,r=1}),
+cu(42,{phase=20}),
 i(29754,{b=1,c={2,4,7},lvl=70,q=4}),
 i(29753,{b=1,c={1,5,11},lvl=70,q=4}),
 i(29755,{b=1,c={3,8,9},lvl=70,q=4}),
@@ -6746,6 +6751,8 @@ s(140367,30021,{b=1,f=28,lvl=70,q=4}),
 i(30183,{q=4}),
 i(32897,{description="Only used to buy flasks usable for later TBC raids. Access to the apothecary vendor requires being Exalted with Cenarion Expedition, the Sha'tar, and the Aldor/Scryers.",q=2}),
 i(30023,{b=1,f=54,lvl=70,q=4,rwp=50004})}),
+h(-19,{crs={17603,21212,21213,21214,21215,21216,21217},g={
+cu(42,{phase=20})}}),
 e(1567,{npcID=21216,g={
 s(140395,30049,{b=1,f=1,lvl=70,q=4}),
 s(140394,30048,{b=1,f=7,loc=40,lvl=70,q=4}),
@@ -6867,6 +6874,8 @@ s(140376,30030,{b=1,f=6,loc=45,lvl=70,q=4}),
 s(140370,30024,{b=1,f=4,loc=41,lvl=70,q=4}),
 i(30028,{b=1,f=52,lvl=70,q=4}),
 i(30183,{q=4})}),
+h(-19,{crs={18805,19514,19516,19622},g={
+cu(42,{phase=20})}}),
 e(1573,{npcID=19514,g={
 s(140295,29949,{b=1,f=31,lvl=70,q=4}),
 s(140294,29948,{b=1,f=34,lvl=70,q=4}),
@@ -7151,6 +7160,7 @@ s(141387,31041,{b=1,c={11},cost={{"i",31090,1}},f=5,loc=42,lvl=70,q=4}),
 s(141378,31032,{b=1,c={11},cost={{"i",31093,1}},f=5,loc=44,lvl=70,q=4}),
 s(141391,31045,{b=1,c={11},cost={{"i",31099,1}},f=5,loc=46,lvl=70,q=4})})})}),
 h(-19,{crs={17767,17808,17842,17888,17968},g={
+cu(42,{phase=20}),
 r(39714,{b=1,itemID=32285,learnedAt=375,q=4,requireSkill=755}),
 r(39725,{awp=20100,b=1,itemID=32296,learnedAt=375,q=4,requireSkill=755,rwp=40003}),
 r(39733,{b=1,itemID=32303,learnedAt=375,q=4,requireSkill=755}),
@@ -7329,6 +7339,8 @@ i(32230,{q=4}),
 i(32249,{q=4}),
 i(32428,{q=3}),
 i(32897,{q=2})}),
+h(-19,{crs={22841,22871,22887,22898,22917,22947,22948,23418,23426},g={
+cu(42,{phase=20})}}),
 e(1582,{npcID=22887,g={
 s(142594,32248,{b=1,f=29,lvl=70,q=4}),
 s(142582,32236,{b=1,f=21,lvl=70,q=4}),
@@ -7792,7 +7804,7 @@ i(27413,{b=1,f=52,lvl=65,q=3}),
 s(137758,27411,{b=1,f=4,loc=47,lvl=65,q=3})}})}),
 d(2,{attunement={{"i",30633}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18371,18373},g={
-cu(42),
+cu(42,{phase=20}),
 i(30587,{b=1,q=4}),
 i(30588,{b=1,q=4}),
 i(30586,{b=1,q=4})}}),
@@ -7886,7 +7898,7 @@ d(2,_.ResolveQuestData({aqd=
 {attunement={{"i",30622}}},description="You need to have a key to the instance in order to access this mode.",hqd=
 {attunement={{"i",30637}}},lvl=70,g={
 h(-19,{crs={17306,17307,17308},g={
-cu(42),
+cu(42,{phase=20}),
 i(30593,{b=1,q=4}),
 i(30594,{b=1,q=4}),
 i(30592,{b=1,q=4})}}),
@@ -8102,7 +8114,7 @@ i(28490,{q=1}),
 r(28572,{b=1,itemID=22921,learnedAt=360,q=2,requireSkill=171})}})}),
 d(2,{attunement={{"i",30633}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18341,18343,18344,22927},g={
-cu(42),
+cu(42,{phase=20}),
 i(30584,{b=1,q=4}),
 i(30585,{b=1,q=4}),
 i(30583,{b=1,q=4})}}),
@@ -8225,7 +8237,7 @@ i(27432,{b=1,f=52,lvl=66,q=3}),
 r(31078,{b=1,itemID=24173,learnedAt=370,q=4,requireSkill=755})}})}),
 d(2,{attunement={{"i",30635}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17848,17862,18096},g={
-cu(42),
+cu(42,{phase=20}),
 i(30589,{b=1,q=4}),
 i(30591,{b=1,q=4}),
 i(30590,{b=1,q=4})}}),
@@ -8333,7 +8345,7 @@ i(27632,{q=1}),
 i(27991,{b=1,description="You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",q=1,rwp=40003})}})}),
 d(2,{attunement={{"i",30633}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18472,18473,23035},g={
-cu(42),
+cu(42,{phase=20}),
 i(30552,{b=1,q=4}),
 i(30553,{b=1,q=4}),
 i(30554,{b=1,q=4})}}),
@@ -8453,7 +8465,7 @@ s(138249,27902,{b=1,f=4,loc=47,lvl=70,q=3}),
 r(31452,{b=1,itemID=24309,learnedAt=375,q=4,requireSkill=197})}})}),
 d(2,{attunement={{"i",30633}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={18667,18708,18731,18732},g={
-cu(42),
+cu(42,{phase=20}),
 i(30559,{b=1,q=4}),
 i(30560,{b=1,q=4}),
 i(30563,{b=1,q=4})}}),
@@ -8571,7 +8583,7 @@ i(28407,{b=1,f=52,lvl=70,q=3}),
 i(28418,{b=1,f=53,lvl=70,q=3})}})}),
 d(2,{attunement={{"i",30634}},description="You need to have 2 keys to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={20870,20885,20886,20912},g={
-cu(42),
+cu(42,{phase=20}),
 i(30582,{b=1,q=4}),
 i(30581,{b=1,q=4}),
 i(30575,{b=1,q=4})}}),
@@ -8667,7 +8679,7 @@ s(138220,27873,{b=1,f=5,loc=46,lvl=70,q=3}),
 i(28190,{b=1,f=53,lvl=70,q=3})}})}),
 d(2,{attunement={{"i",30635}},description="You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",lvl=70,sourceQuests={10296},g={
 h(-19,{crs={17879,17880,17881},g={
-cu(42),
+cu(42,{phase=20}),
 i(30558,{b=1,q=4}),
 i(30556,{b=1,q=4}),
 i(30555,{b=1,q=4})}}),
@@ -8759,7 +8771,7 @@ d(2,_.ResolveQuestData({aqd=
 {attunement={{"i",30622}}},description="You need to have a key to the instance in order to access this mode.",hqd=
 {attunement={{"i",30637}}},lvl=70,g={
 h(-19,{crs={17377,17380,17381},g={
-cu(42),
+cu(42,{phase=20}),
 i(30601,{b=1,q=4}),
 i(30600,{b=1,q=4}),
 i(30602,{b=1,q=4})}}),
@@ -8852,7 +8864,7 @@ r(31454,{b=1,itemID=24311,learnedAt=375,q=4,requireSkill=197}),
 i(31085,{q=1})}})}),
 d(2,{attunement={{"i",30634}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17975,17976,17977,17978,17980},g={
-cu(42),
+cu(42,{phase=20}),
 i(30574,{b=1,q=4}),
 i(30572,{b=1,q=4}),
 i(30573,{b=1,q=4})}}),
@@ -8958,7 +8970,7 @@ r(26784,{b=1,itemID=21907,learnedAt=370,q=2,requireSkill=197}),
 i(31086,{q=1})}})}),
 d(2,{attunement={{"i",30634}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={19219,19220,19221},g={
-cu(42),
+cu(42,{phase=20}),
 i(30566,{b=1,q=4}),
 i(30565,{b=1,q=4}),
 i(30564,{b=1,q=4})}}),
@@ -9204,7 +9216,7 @@ s(134742,24365,{b=1,f=5,loc=44,lvl=62,q=3}),
 s(134741,24364,{b=1,f=7,loc=46,lvl=62,q=3})}})}),
 d(2,{attunement={{"i",30623}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17941,17942,17991},g={
-cu(42),
+cu(42,{phase=20}),
 i(30603,{b=1,q=4}),
 i(30604,{b=1,q=4}),
 i(30605,{b=1,q=4})}}),
@@ -9297,7 +9309,7 @@ i(27805,{b=1,f=52,lvl=70,q=3}),
 r(31456,{b=1,itemID=24313,learnedAt=375,q=4,requireSkill=197})}})}),
 d(2,{attunement={{"i",30623}},description="You need to have a key to the instance in order to access this mode.",lvl=70,g={
 h(-19,{crs={17796,17797,17798},g={
-cu(42),
+cu(42,{phase=20}),
 i(30551,{b=1,q=4}),
 i(30549,{b=1,q=4}),
 i(30550,{b=1,q=4})}}),
