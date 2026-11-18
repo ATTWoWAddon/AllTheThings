@@ -2069,6 +2069,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(281676),	-- Rog'mar Trainee Shoulderpads
 				},
 			}),
+			n(263141, {	-- Scaldaron
+				coords = {
+					{ 30.4, 72.2, MAP.RIVERGLADES },
+					{ 31.2, 72.9, MAP.RIVERGLADES },
+					{ 31.6, 73.2, MAP.RIVERGLADES },
+				},
+				groups = {
+					i(281650),	-- Dragonscale Buckler
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(263230, {	-- Dorb <Rare Goods>

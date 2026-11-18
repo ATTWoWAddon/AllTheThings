@@ -1828,6 +1828,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					i(285238),	-- Chipped Spellstaff
 					i(285239),	-- Explorer's Shortsword
+					i(285236),	-- Worn Ranger's Dagger
 				},
 			}),
 			n(259394, {	-- Snapbeak the Quick

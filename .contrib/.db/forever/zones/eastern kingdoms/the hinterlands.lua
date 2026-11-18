@@ -811,6 +811,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					{ 51.2, 65.6, MAP.THE_HINTERLANDS },
 					{ 50.4, 60.4, MAP.THE_HINTERLANDS },
 				},
+				groups = {
+					i(284061, {	-- Berserker's Wraps
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(8212, {	-- The Reak
 				coords = {

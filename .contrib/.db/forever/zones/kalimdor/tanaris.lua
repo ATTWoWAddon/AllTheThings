@@ -1233,6 +1233,11 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					{ 42.6, 22.8, MAP.TANARIS },
 					{ 44.2, 24.8, MAP.TANARIS },
 				},
+				groups = {
+					i(286554, {	-- Warleader's Signet
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 		}),
 		n(TREASURES, {

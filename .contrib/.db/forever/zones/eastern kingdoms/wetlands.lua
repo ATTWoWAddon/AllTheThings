@@ -1223,6 +1223,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 					{ 23.0, 21.4, MAP.WETLANDS },
 					{ 24.6, 37.0, MAP.WETLANDS },
 				},
+				groups = {
+					i(282655, {	-- Bog Pickers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(1140, {	-- Razormaw Matriarch
 				coord = { 70.8, 30.4, MAP.WETLANDS },
