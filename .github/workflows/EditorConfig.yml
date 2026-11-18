@@ -122,6 +122,12 @@ jobs:
         run: |
           & ./.github/scripts/Check-EditorConfig.ps1 -Group powershell -VerboseChecker
 
+      - name: Check Parser test sources
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group parser-test-sources -VerboseChecker
+
       - name: Check database sync tools
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: pwsh

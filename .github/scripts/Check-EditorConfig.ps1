@@ -4,7 +4,8 @@ param(
 	[ValidateSet(
 		'runtime-lua', 'lua-tests', 'lua-locales', 'xml', 'documentation',
 		'root-metadata', 'root-policy', 'root-scripts', 'editor-and-hooks',
-		'github-yaml', 'github-python', 'powershell', 'db-sync', 'contributor-tools',
+		'github-yaml', 'github-python', 'powershell', 'parser-test-sources',
+		'db-sync', 'contributor-tools',
 		'harvesters', 'dotnet-projects', 'database-scripts', 'codegraph',
 		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database',
 		'standard-database-core', 'standard-dungeons', 'standard-delves',
@@ -83,6 +84,10 @@ $groups = @{
 			'.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1',
 			'.github/scripts/Check-EditorConfig.ps1'
 		)
+	}
+	'parser-test-sources' = @{
+		Pathspecs = @(':(glob).contrib/src/Parser/tests/*.cs')
+		Required = @('.contrib/src/Parser/tests/LocalizationFallback.Tests.cs')
 	}
 	'db-sync' = @{
 		Pathspecs = @(
