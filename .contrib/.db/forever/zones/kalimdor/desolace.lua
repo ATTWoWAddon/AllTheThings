@@ -1131,6 +1131,22 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(271799),	-- Desert Crawler's Claw
 				},
 			}),
+			q(79939, {	-- The Broken Hammer
+				sourceQuest = 96438,	-- Battle at the Mannoroc Coven
+				provider = { "o", 423703 },	-- Broken Warhammer
+				qi = 215441,	-- Broken Hammer (PQI!)
+				coord = { 52.7, 84.8, MAP.DESOLACE },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Torn Letter
+						provider = { "i", 216956 },	-- Torn Letter
+						cr = 4668,	-- Burning Blade Summoner
+					}),
+				},
+			}),
 			q(1435, {	-- The Burning of Spirits
 				sourceQuest = 1433,	-- Alliance Relations (3/4)
 				qg = 4498,	-- Maurin Bonesplitter
