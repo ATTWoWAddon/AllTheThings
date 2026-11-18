@@ -327,6 +327,17 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					objective(1),	-- 0/1 War Veteran's story told
 				},
 			}),
+			q(93925, {	-- Beads for Brerufa
+				qg = 256978,	-- Brerufa
+				coord = { 20.6, 71.6, MAP.MOUNT_HYJAL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 54,
+				groups = {
+					objective(1, {	-- 0/8 Deadwood Tribal Beads
+						provider = { "i", 263439 },	-- Deadwood Tribal Beads
+					}),
+				},
+			}),
 			q(94832, {	-- Belle's Ring
 				qg = 244517,	-- Sefira Everbright
 				qi = 273798,	-- Ring of the Fallen Soldier (PQI!)
