@@ -23,6 +23,7 @@ _.OnTooltipDB=
 }
 _.OnUpdateDB=
 {
+	ForeverRankTitle = function(t)local parent=t.parent local rank=parent and parent.pvprankID if rank and _.IsCached("PVPRanks",rank)then	t.collected=1 end	end,
 	ForLockpicking = function(t)if _.Settings.Collectibles.Recipes then	t.collectible=true local id=t.spellID local skills=_.CurrentCharacter.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=1 return end	if _.Settings.AccountWide.Recipes then	for guid,ch in pairs(ATTCharacterData)do	skills=ch.ActiveSkills and ch.ActiveSkills[id] if skills and skills[1]>=300 then	t.collected=2 return end	end	end	t.collected=false else	t.collectible=false end	end
 }
 _.Presets=
