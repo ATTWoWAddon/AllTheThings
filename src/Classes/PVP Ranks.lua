@@ -3,6 +3,20 @@ local L = app.L;
 
 -- Locals
 local HighestLifetimeRank = 0;
+-- WoW Forever tracks PvP ranks as renown on this major faction instead of the lifetime honor stats.
+local FOREVER_PVP_RANK_FACTION = 2800;
+local GetMajorFactionProgressionInfo = C_MajorFactions and C_MajorFactions.GetMajorFactionProgressionInfo;
+local function GetHighestRank()
+	local rank = (select(3, GetPVPLifetimeStats()) or 0) - 4;
+	if GetMajorFactionProgressionInfo then
+		local info = GetMajorFactionProgressionInfo(FOREVER_PVP_RANK_FACTION);
+		local renownLevel = info and info.renownLevel;
+		if renownLevel and renownLevel > rank then
+			rank = renownLevel;
+		end
+	end
+	return rank;
+end
 local IsAlliance = app.FactionID == Enum.FlightPathFaction.Alliance;
 local RankIcons = setmetatable({}, {
 	__index = function(t, rank)
@@ -71,7 +85,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 end)
 app.AddEventHandler("OnLoad", function()
-	HighestLifetimeRank = (select(3, GetPVPLifetimeStats()) or 0) - 4;
+	HighestLifetimeRank = GetHighestRank();
 end)
 local function AssignCollectibleFunction()
 	-- app.PrintDebug("Swapping",CLASSNAME,".collectible","via",setting,app.Settings.Collectibles.Titles)
@@ -90,6 +104,12 @@ app.AddEventHandler("OnRefreshCollections", function()
 	-- To test, run this script and reload UI:
 	--   /script wipe(ATTC.CurrentCharacter.PVPRanks)wipe(ATTAccountWideData.PVPRanks) AllTheThingsSettingsPerCharacter.HighestLifetimeRank=1
 	local PerCharacter = app.LocalizeGlobal("AllTheThingsSettingsPerCharacter", true)
+	-- Forever's renown rank can rise during a session and resets each season, so keep the highest one seen.
+	local currentRank = GetHighestRank();
+	if currentRank > HighestLifetimeRank then HighestLifetimeRank = currentRank; end
+	if PerCharacter.HighestLifetimeRank and PerCharacter.HighestLifetimeRank > HighestLifetimeRank then
+		HighestLifetimeRank = PerCharacter.HighestLifetimeRank;
+	end
 	if not PerCharacter.HighestLifetimeRank then
 		PerCharacter.HighestLifetimeRank = HighestLifetimeRank;
 	elseif PerCharacter.HighestLifetimeRank ~= HighestLifetimeRank then
