@@ -90,7 +90,10 @@ $groups = @{
 	}
 	'parser-test-sources' = @{
 		Pathspecs = @(':(glob).contrib/src/Parser/tests/*.cs')
-		Required = @('.contrib/src/Parser/tests/LocalizationFallback.Tests.cs')
+		Required = @(
+			'.contrib/src/Parser/tests/CostMerge.Tests.cs',
+			'.contrib/src/Parser/tests/LocalizationFallback.Tests.cs'
+		)
 	}
 	'csharp-sources' = @{
 		Pathspecs = @(
