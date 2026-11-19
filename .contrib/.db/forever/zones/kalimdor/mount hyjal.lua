@@ -1953,7 +1953,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			n(255151, {	-- Rhylin Stonethorn
 				coord = { 70.6, 51.2, MAP.MOUNT_HYJAL },
 				groups = {
-					i(274025),	-- Guardians of Hyjal Tabard
+					i(274025, {	-- Guardians of Hyjal Tabard
+						minReputation = { FACTION_FOREVER_GUARDIANS_OF_HYJAL, EXALTED },	-- Guardians of Hyjal, Exalted.
+					}),
 					i(274379, {	-- Rousing Seed Pod
 						minReputation = { FACTION_FOREVER_GUARDIANS_OF_HYJAL, REVERED },	-- Guardians of Hyjal, Revered.
 					}),
