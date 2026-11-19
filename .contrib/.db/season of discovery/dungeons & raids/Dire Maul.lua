@@ -1438,7 +1438,7 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 					groups = {
 						i(18353),	-- Stoneflower Staff
 						i(18352),	-- Petrified Bark Shield
-						applyclassicphase(SOD_PHASE_FOUR, i(228063, {	-- Warpwood Bindings
+						applyclassicphase(SOD_PHASE_FOUR, i(228063, {	-- Warpwood Binding
 							timeline = { ADDED_1_15_3 },
 						})),
 						i(18393, {	-- Warpwood Bindings

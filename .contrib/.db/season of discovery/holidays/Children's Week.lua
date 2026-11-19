@@ -118,7 +118,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		}),
 		q(172, {	-- Children's Week [Horde - Orc - START]
 			providers = {
-				{ "n", 14451 },	-- Orphan Matron Battlewall
+				{ "n", 14451 },	-- Orphan Matron Battlewail
 			},
 			coords = {
 				{ 70.8, 25.6, ORGRIMMAR },	-- Orphan Matron Battlewail

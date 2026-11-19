@@ -1581,7 +1581,7 @@ instanceroot(754, applyclassicphase(PHASE_SIX, {	-- Naxxramas
 					},
 				}),
 				q(9230, {	-- Ramaladni's Icy Grasp
-					sourceQuest = 9229,	-- The Fate of Ramaldni
+					sourceQuest = 9229,	-- The Fate of Ramaladni
 					qg = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 					coord = { 81.8, 58.1, EASTERN_PLAGUELANDS },
 					cost = {
@@ -3681,7 +3681,7 @@ instanceroot(754, applyclassicphase(PHASE_SIX, {	-- Naxxramas
 						},
 					}),
 					q(9230, {	-- Ramaladni's Icy Grasp
-						sourceQuest = 9229,	-- The Fate of Ramaldni
+						sourceQuest = 9229,	-- The Fate of Ramaladni
 						qg = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						coord = { 81.8, 58.1, EASTERN_PLAGUELANDS },
 						cost = {

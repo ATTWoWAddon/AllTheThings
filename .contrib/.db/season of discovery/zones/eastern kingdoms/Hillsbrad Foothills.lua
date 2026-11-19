@@ -1166,7 +1166,7 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 					i(5772, {	-- Pattern: Red Woolen Bag (RECIPE!)
 						isLimited = true,
 					}),
-					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coalesced Regret
 						isLimited = true,
 					})),
 					i(7561, {	-- Schematic: Goblin Jumper Cables (RECIPE!)

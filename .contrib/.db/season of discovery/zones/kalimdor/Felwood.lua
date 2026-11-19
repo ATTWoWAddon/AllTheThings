@@ -1523,10 +1523,10 @@ maproot(KALIMDOR, FELWOOD, {
 		n(ZONE_DROPS, {
 			i(13140, {	-- Blood Red Key
 				crs = {
-					7118,	-- Jaedendar Darkweaver
-					7114,	-- Jaedendar Enforcer
-					9862,	-- Jaedendar Legionnaire
-					7120,	-- Jaedendar Warlock
+					7118,	-- Jaedenar Darkweaver
+					7114,	-- Jaedenar Enforcer
+					9862,	-- Jaedenar Legionnaire
+					7120,	-- Jaedenar Warlock
 				},
 			}),
 			i(11515, {	-- Corrupted Soul Shard

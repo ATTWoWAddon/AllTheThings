@@ -520,7 +520,7 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 			}),
 			applyclassicphase(SOD_PHASE_TWO, q(79236, {	-- Cherry for Your Thoughts?
-				sourceQuest = 79235,	-- On The Lam
+				sourceQuest = 79235,	-- On the Lam
 				qg = 215643,	-- Tokal
 				coord = { 27.0, 77.2, STRANGLETHORN_VALE },
 				timeline = { ADDED_1_15_1 },

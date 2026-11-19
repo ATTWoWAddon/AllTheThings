@@ -1104,7 +1104,7 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 					i(4827, {	-- Wizard's Belt
 						isLimited = true,
 					}),
-					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret (RECIPE!)
+					applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coalesced Regret (RECIPE!)
 						isLimited = true,
 					})),
 					i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)

@@ -662,7 +662,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			q(7898, {	-- Thorium Widgets [Tier 5]
+			q(7898, {	-- Thorium Widget [Tier 5]
 				qg = 14841,	-- Rinling
 				coords = {
 					{ 41.7, 70.7, ELWYNN_FOREST },

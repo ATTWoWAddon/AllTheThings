@@ -43,7 +43,7 @@ instanceroot(741, {	-- Molten Core
 	coord = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 	sharedLockout = 1,
 	isRaid = true,
-	cr = 14387,	-- Lothos Riftwalker
+	cr = 14387,	-- Lothos Riftwaker
 	lvl = 50,
 	timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 	groups = {
