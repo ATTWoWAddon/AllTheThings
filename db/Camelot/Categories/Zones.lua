@@ -2035,7 +2035,9 @@ r(6419,{b=1,itemID=5489,learnedAt=110,requireSkill=185,skillID=2939})}}),
 n(12962,{coords={
 [1440]={{11.8,34}}},r=1,g={
 r(20916,{itemID=17062,learnedAt=175,requireSkill=185,skillID=2939}),
-r(7828,{itemID=6369,learnedAt=175,requireSkill=185,skillID=2939})}})}),
+r(7828,{itemID=6369,learnedAt=175,requireSkill=185,skillID=2939})}}),
+n(11137,{coords={
+[1440]={{35.8,52}}},r=2,sym={{"select","itemID",926,2527,2520,2523,2522,922,927,925,2521,2209,928,923,2526,924,2524,2525}}})}),
 h(-63,{
 s(156264,1351,{coords={
 [1440]={{75.8,73.6},{77.4,75.4}}},crs={3808},description="This item is only naturally accessible to Alliance players due to the allegiance of the creatures that drop this item.",f=4,loc=43}),
@@ -2477,6 +2479,8 @@ r(19053,{b=1,itemID=15729,learnedAt=240,requireSkill=10660,skillID=2945})}}),
 n(14301,{coords={
 [1447]={{12,78.4}}},r=2,g={
 s(160247,11305,{f=32,lvl=30})}}),
+n(10361,{coords={
+[1447]={{22.2,51.2}}},r=1,sym={{"select","itemID",2528,2530,2531,2532,2534,2533,2535,2529}}}),
 n(8678,{coords={
 [1447]={{45.2,90.8}}},g={
 r(12617,{b=1,itemID=10607,learnedAt=230,requireSkill=202,skillID=2941})}})}),
@@ -4196,7 +4200,7 @@ mnt(23229,{itemID=18777,lvl=60}),
 mnt(23227,{b=1,itemID=18776,lvl=60}),
 mnt(23228,{itemID=18778,lvl=60})}})),
 n(4886,{coords={
-[1445]={{64.6,50.4}}},r=2,sym={{"select","symselector",33},{"pop"}},g={
+[1445]={{64.6,50.4}}},r=2,sym={{"select","symselector",33},{"pop"},{"select","itemID",2446,17192}},g={
 s(160462,12248,{f=20,isLimited=1,lvl=29}),
 s(160464,12250,{f=22,isLimited=1,lvl=29})}}),
 n(4897,{coords={
@@ -4211,7 +4215,7 @@ s(160247,11305,{f=32,isLimited=1,lvl=30})}}),
 n(4883,{coords={
 [1445]={{36.4,30.8}}},r=1,sym={{"select","symselector",33},{"pop"}}}),
 n(4888,{coords={
-[1445]={{64.6,50}}},r=2,g={
+[1445]={{64.6,50}}},r=2,sym={{"select","itemID",2527,2520,2523,2522,2521,2526,2524,2525}},g={
 s(160462,12248,{f=20,isLimited=1,lvl=29}),
 s(160464,12250,{f=22,isLimited=1,lvl=29})}}),
 n(12919,{coords={
@@ -4239,7 +4243,7 @@ n(9552,{coords={
 [1445]={{35.6,30.2}}},r=1,g={
 s(160247,11305,{f=32,isLimited=1,lvl=30})}}),
 n(4884,{coords={
-[1445]={{36.2,31.6}}},r=1,g={
+[1445]={{36.2,31.6}}},r=1,sym={{"select","itemID",2527,2520,2523,2522,2521,2526,2524,2525}},g={
 s(160465,12251,{f=28,isLimited=1,lvl=32}),
 s(160464,12250,{f=22,isLimited=1,lvl=29})}})}),
 h(-63,{
@@ -4636,6 +4640,8 @@ r(15933,{itemID=16110,learnedAt=225,requireSkill=185,skillID=2939})}}),
 n(2803,{coords={
 [1448]={{62.2,25.6}}},r=2,g={
 r(15933,{itemID=16110,learnedAt=225,requireSkill=185,skillID=2939})}}),
+n(15315,{coords={
+[1448]={{62.4,25.8}}},r=2,sym={{"select","itemID",2520,2523,2522,2528,2521,2530,2531,2526,2534,2529}}}),
 n(14522,{c={9},coords={
 [1448]={{36.2,44.6}}},sourceQuests={7625},g={
 i(18687,{cost=1500000})}})}),
@@ -5354,6 +5360,8 @@ n(12022,{coords={
 r(20015,{isLimited=1,itemID=16224,learnedAt=285,requireSkill=333,skillID=2940}),
 r(20051,{b=1,itemID=16243,learnedAt=290,requireSkill=333,skillID=2940}),
 r(18419,{b=1,isLimited=1,itemID=14483,learnedAt=230,requireSkill=197,skillID=2948})}}),
+n(12024,{coords={
+[1450]={{51.2,42.2},{51.2,42.6}}},sym={{"select","itemID",2528,2530,2531,2532,2534,2533,2535,2529}}}),
 n(12029,{coords={
 [1450]={{53.2,42.6}}},g={
 s(160250,11308,{f=32,isLimited=1,lvl=44})}})})}}),
@@ -6041,7 +6049,10 @@ r(1266936,{b=1,itemID=264233,learnedAt=300,requireSkill=202,skillID=2941})}}),
 n(255151,{coords={
 [2482]={{70.6,51.2}}},g={
 s(309068,274025,{b=1,f=9,minReputation={2765,42000}}),
-i(274379,{b=1,lvl=60,minReputation={2765,21000},questID=96411,spellID=1293805})}})})}}),
+i(274379,{b=1,lvl=60,minReputation={2765,21000},questID=96411,spellID=1293805})}})}),
+h(-63,{
+s(308616,273828,{crs={264570,275174},f=28}),
+s(308619,273832,{crs={249551,275173},f=20})})}}),
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",g={
 m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",zoneTextAreaIDs={221},g={
 h(-45,{
@@ -6324,8 +6335,8 @@ q(76160,{awp=16001,c={1,7,11},coords={
 [1456]={{39.6,65.6}}},lvl=4,qgs={205729},qis={206176},races={2,6,8},sourceQuests={76156},g={
 qo(1,{providers={{"i",206175},{"o",403105}}}),
 i(206177,{b=1,f=55,spellID=5004})}}),
-q(76240,{awp=16001,c={7},coords={
-[1456]={{39.6,65.6}}},lvl=4,qgs={205729},qis={206344},r=1,sourceQuests={76160},g={
+q(76240,{awp=16001,c={1,7,11},coords={
+[1456]={{39.6,65.6}}},lvl=4,qgs={205729},qis={206344},races={2,6,8},sourceQuests={76160},g={
 qo(1,{providers={{"i",206345}}}),
 s(310185,277988,{b=1,f=20}),
 s(310186,278002,{b=1,f=23})}}),
@@ -9485,7 +9496,7 @@ n(3495,{coords={
 [1413]={{62.7,36.3}}},g={
 r(23068,{b=1,isLimited=1,itemID=18648,learnedAt=150,requireSkill=202,skillID=2941})}}),
 n(3493,{coords={
-[1413]={{62.2,38.4}}},sym={{"select","symselector",35},{"pop"}},g={
+[1413]={{62.2,38.4}}},sym={{"select","symselector",35},{"pop"},{"select","itemID",2445,17188}},g={
 s(157919,4799,{f=3,isLimited=1,lvl=18}),
 s(157926,4821,{f=8,isLimited=1,lvl=18}),
 s(157917,4797,{f=3,isLimited=1,lvl=20}),
@@ -10227,6 +10238,8 @@ i(11186,{providers={{"o",164660},{"o",164780}}}),
 i(11018,{providers={{"o",157936}}}),
 i(11188,{providers={{"o",164661},{"o",164781}}})}),
 h(-58,{
+n(3000,{coords={
+[1449]={{44,7.2}}},sym={{"select","itemID",2527,2520,2523,2522,2528,2521,2530,2531,2526,2532,2534,2524,2525,2533,2535,2529}}}),
 n(12959,{coords={
 [1449]={{43.2,7.8}}},g={
 r(19084,{isLimited=1,itemID=15758,learnedAt=265,requireSkill=10660,skillID=2945})}})}),
@@ -10517,7 +10530,8 @@ n(16015,{coords={
 [1452]={{58.9,78.4}}},g={
 i(21939,{cost=400000})}}),
 n(11184,{coords={
-[1452]={{61.6,38}}}}),
+[1452]={{61.6,38}}},sym={{"select","itemID",3024,2528,2530,2531,3023,2532,2534,2533,2535,2529}},g={
+s(157096,3025,{f=31,lvl=31})}}),
 n(11185,{coords={
 [1452]={{60.8,38.6}}},g={
 r(19815,{b=1,isLimited=1,itemID=16050,learnedAt=285,requireSkill=202,skillID=2941}),
@@ -12832,6 +12846,8 @@ o(423896,{awp=16001,coords={
 [1416]={{48.4,57.7}}},g={
 i(215815,{b=1})}})}),
 h(-58,{
+n(28990,{awp=16001,coords={
+[1416]={{20,63.4},{20,63.6}}},sym={{"select","itemID",2451,2448,2446,2445,17189,17190,17192,17188}}}),
 n(29547,{awp=16001,coords={
 [1416]={{14.4,65.8}}},g={
 i(285359,{f=55,lvl=45,spellID=1137})}}),
@@ -16144,6 +16160,8 @@ n(959,{coords={
 [1429]={{64.7,69.5}}},r=2,sym={{"select","symselector",11},{"pop"}}}),
 n(268238,{awp=16001,coords={
 [1429]={{42.1,66.6}}},r=2,sym={{"select","itemID",2506,2509,2505,2510,2504}}}),
+n(1645,{coords={
+[1429]={{25.2,73.8}}},r=2,sym={{"select","itemID",2527,2520,2523,2522,2521,2526,2524,2525}}}),
 n(1198,{coords={
 [1429]={{83.2,66}}},r=2,g={
 s(160245,11303,{f=32,isLimited=1,lvl=11}),
@@ -17978,6 +17996,10 @@ r(20626,{b=1,itemID=16767,learnedAt=225,requireSkill=185,skillID=2939})}}),
 n(255894,{coords={
 [2548]={{78.8,54}}},g={
 r(22480,{itemID=18046,learnedAt=225,requireSkill=185,skillID=2939})}}),
+n(270570,{coords={
+[2548]={{64,80.6}}},sym={{"select","itemID",926,2025,1198,2029,2451,851,922,927,2024,925,1197,2030,2028,853,2448,2207,2446,2209,2445,928,923,852,924,17189,17190,2208,854,17192,17188,2026,2027,1196}},g={
+s(157923,4817,{f=26,lvl=17}),
+s(157924,4818,{f=26,lvl=19})}}),
 n(260565,{coords={
 [2548]={{77.6,50.8}}},g={
 i(271653),
@@ -18845,7 +18867,8 @@ qo(1,{coords={
 q(628,{coords={
 [1434]={{28.2,77.6}}},lvl=31,qgs={2495},sourceQuests={577},g={
 qo(1,{crs={2635},providers={{"i",4105}}}),
-s(157668,4109,{b=1,f=5,loc=47})}}),
+s(157668,4109,{b=1,f=5,loc=47}),
+i(252452,{awp=16001,lvl=30,spellID=1254750})}}),
 q(2765,{coords={
 [1434]={{50.6,20.4}}},lvl=40,qgs={7802},requireSkill=164,sourceQuests={2761,2762,2763},g={
 i(8703,{b=1,f=53,requireSkill=164,spellID=11209,g={
@@ -19314,7 +19337,7 @@ n(2838,{coords={
 [1434]={{28.2,76.6}}},g={
 r(23068,{b=1,isLimited=1,itemID=18648,learnedAt=150,requireSkill=202,skillID=2941})}}),
 n(2845,{coords={
-[1434]={{29,75}}},sym={{"select","symselector",28},{"pop"}},g={
+[1434]={{29,75}}},sym={{"select","symselector",28},{"pop"},{"select","itemID",2448,17189}},g={
 s(160471,12257,{f=6,isLimited=1,loc=45,lvl=37})}}),
 n(265575,{awp=16001,coords={
 [1434]={{28.2,74.8}}},g={
@@ -19344,7 +19367,7 @@ n(248809,{awp=16001,coords={
 [1434]={{27.8,77.2}}},g={
 i(248613,{f=55,lvl=15,spellID=435})}}),
 n(2843,{coords={
-[1434]={{27.5,77.5}}},g={
+[1434]={{27.5,77.5}}},sym={{"select","itemID",2520,2521,2526,2529}},g={
 s(160462,12248,{f=20,isLimited=1,lvl=29}),
 r(3492,{isLimited=1,itemID=12162,learnedAt=160,requireSkill=164,skillID=2938})}}),
 n(2664,{coords={
@@ -19402,7 +19425,7 @@ n(1149,{coords={
 [1434]={{31.6,28}}},r=1,g={
 r(15915,{itemID=16111,learnedAt=225,requireSkill=185,skillID=2939})}}),
 n(1146,{coords={
-[1434]={{32.2,28}}},r=1,g={
+[1434]={{32.2,28}}},r=1,sym={{"select","itemID",2527,2520,2522,2526,2524,2525}},g={
 s(160464,12250,{f=22,isLimited=1,lvl=29}),
 s(160462,12248,{f=20,isLimited=1,lvl=29}),
 r(3498,{b=1,isLimited=1,itemID=12164,learnedAt=185,requireSkill=164,skillID=2938})}}),
@@ -19411,7 +19434,7 @@ n(2670,{coords={
 r(8789,{b=1,isLimited=1,itemID=7087,learnedAt=145,requireSkill=197,skillID=2948}),
 r(3857,{b=1,isLimited=1,itemID=14630,learnedAt=130,requireSkill=197,skillID=2948})}}),
 n(2482,{coords={
-[1434]={{28.3,75.5}}},g={
+[1434]={{28.3,75.5}}},sym={{"select","itemID",2527,2520,2523,2522,2521,2526,2524,2525}},g={
 s(160465,12251,{f=28,isLimited=1,lvl=32}),
 r(3496,{b=1,isLimited=1,itemID=12163,learnedAt=180,requireSkill=164,skillID=2938}),
 s(160466,12252,{f=28,isLimited=1,lvl=34})}})}),
@@ -19700,6 +19723,8 @@ n(8176,{coords={
 r(9937,{b=1,isLimited=1,itemID=7995,learnedAt=215,requireSkill=164,skillID=2938})}}),
 n(980,{coords={
 [1435]={{45,50.2},{45,50.6}}},r=1,sym={{"select","symselector",29,38},{"pop"},{"select","itemID",2451,17190}}}),
+n(981,{coords={
+[1435]={{45.4,51.2},{45.8,51}}},r=1,sym={{"select","itemID",2528,2530,2531,2532,2534,2533,2535,2529}}}),
 n(11874,{coords={
 [1435]={{26.5,31.4}}},r=2,g={
 r(19050,{itemID=15726,learnedAt=235,requireSkill=10656,skillID=2945}),

@@ -3865,7 +3865,8 @@ s(158051,5198,{b=1,f=27,lvl=17,spellID=1322312}),
 s(158050,5197,{b=1,f=23,lvl=16}),
 i(273298,{awp=16001,b=1,f=53,lvl=18,spellID=12883}),
 r(1262978,{awp=16001,itemID=273102,learnedAt=140,requireSkill=185,skillID=2939})})}}),
-inst(2970,{awp=16001,icon=409547,lvl=35,zoneTextAreaID=16550,g={
+inst(2970,{awp=16001,coords={
+[1434]={{21.5,27.8}}},icon=409547,lvl=35,zoneTextAreaID=16550,g={
 h(-45,{
 q(96078,{coords={
 [1434]={{32.2,27.8}}},lvl=30,maps={1411},qgs={2519},r=1,sourceQuests={95775},g={

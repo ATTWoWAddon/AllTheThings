@@ -13,6 +13,7 @@ hqt(3366),
 hqt(94776,{awp=16001,c={5},description="Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",races={1}}),
 hqt(94779,{awp=16001,c={5},description="Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",races={1}}),
 hqt(5659,{awp=16001,c={5},description="Never implemented as a real quest. Likely gets marked as completed alongside any of the 'Touch of Weakness' Undead Priest quests (5658, 5660-5663).",races={5}}),
+hqt(75969),
 x(1,{awp=16000,g={
 m(1415,{maps={1463},g={
 m(1434,{

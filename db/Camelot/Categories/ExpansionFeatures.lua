@@ -1411,6 +1411,9 @@ hqt(96187,{an="n:5721",isDaily=1}),
 hqt(96188,{an="n:5719",isDaily=1}),
 hqt(96189,{an="n:5709",isDaily=1}),
 hqt(96190,{an="n:8443",isDaily=1})}})}})}),
+h(-45,{
+q(83934,{coords={
+[1434]={{28.5,75.8}}},description="Only a Tarnished Undermine Real looted while you have this quest counts; Reals you already own do not.",lvl=55,qgs={227853}})}),
 h(-58,{
 n(227853,{coords={
 [1434]={{28.5,75.8}}},g={
