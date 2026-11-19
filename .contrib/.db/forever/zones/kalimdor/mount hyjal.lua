@@ -10,6 +10,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 		n(ACHIEVEMENTS, {
 			ach(62356),	-- Explore Mount Hyjal
 		}),
+		n(FACTIONS, {
+			faction(FACTION_BARKSKIN_BURROW),	-- Barkskin Burrow
+		}),
 		explorationHeader({
 			exploration(17145),	-- Cradle of Tranquility
 			exploration(16866),	-- Dae'gun
@@ -1897,40 +1900,40 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				coord = { 21.0, 78.6, MAP.MOUNT_HYJAL },
 				groups = {
 					i(274417, {	-- Barkskin Baubles
-						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						minReputation = { FACTION_BARKSKIN_BURROW, REVERED },	-- Barkskin Burrow, Revered.
 						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
 					}),
 					i(262801, {	-- Barkskin Satchel
-						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						minReputation = { FACTION_BARKSKIN_BURROW, HONORED },	-- Barkskin Burrow, Honored.
 						cost = { { "i", 263439, 15 } },	-- 15x Deadwood Tribal Beads
 					}),
 					i(274419, {	-- Bear Poking Stick
-						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						minReputation = { FACTION_BARKSKIN_BURROW, REVERED },	-- Barkskin Burrow, Revered.
 						cost = { { "i", 263439, 20 } },	-- 20x Deadwood Tribal Beads
 					}),
 					i(274418, {	-- Burrow Barricade
-						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						minReputation = { FACTION_BARKSKIN_BURROW, REVERED },	-- Barkskin Burrow, Revered.
 						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
 					}),
 					i(268873, {	-- Defender of the Barkskin
-						minReputation = { 2747, EXALTED },	-- Barkskin Burrow, Exalted.
+						minReputation = { FACTION_BARKSKIN_BURROW, EXALTED },	-- Barkskin Burrow, Exalted.
 						cost = { { "i", 263439, 25 } },	-- 25x Deadwood Tribal Beads
 					}),
 					i(274424, {	-- Formula: Enchant Gloves - Lotus Claw (RECIPE!)
-						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						minReputation = { FACTION_BARKSKIN_BURROW, HONORED },	-- Barkskin Burrow, Honored.
 						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
 					}),
 					i(256036),	-- Handful of Dirt
 					i(254134, {	-- Pattern: Mooncloth Reagent Bag (RECIPE!)
-						minReputation = { 2747, HONORED },	-- Barkskin Burrow, Honored.
+						minReputation = { FACTION_BARKSKIN_BURROW, HONORED },	-- Barkskin Burrow, Honored.
 						cost = { { "i", 263439, 10 } },	-- 10x Deadwood Tribal Beads
 					}),
 					i(274415, {	-- Recipe: Sweetpaw Jam (RECIPE!)
-						minReputation = { 2747, FRIENDLY },	-- Barkskin Burrow, Friendly.
+						minReputation = { FACTION_BARKSKIN_BURROW, FRIENDLY },	-- Barkskin Burrow, Friendly.
 						cost = { { "i", 263439, 5 } },	-- 5x Deadwood Tribal Beads
 					}),
 					i(274420, {	-- Wisepaw Totem
-						minReputation = { 2747, REVERED },	-- Barkskin Burrow, Revered.
+						minReputation = { FACTION_BARKSKIN_BURROW, REVERED },	-- Barkskin Burrow, Revered.
 						cost = { { "i", 263439, 20 } },	-- 20x Deadwood Tribal Beads
 					}),
 				},

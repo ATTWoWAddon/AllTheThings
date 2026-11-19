@@ -5369,6 +5369,8 @@ m(2482,{awp=16001,icon=409547,lore="Threats both old and new stalk the slopes of
 h(-12,{
 ach(62356,{
 crit(112671,{achID=62355,awp=16001,id=11})})}),
+h(-31,{
+faction(2747)}),
 h(-30,{
 exp(17145,{
 crit(116907,{achID=62356,id=1})}),
