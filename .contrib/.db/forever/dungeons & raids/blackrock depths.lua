@@ -274,6 +274,9 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					i(12000),	-- Limb Cleaver
 					i(11964),	-- Swiftstrike Cudgel
+					i(270123, {	-- Ragnar's Favorite Hat
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(12003),	-- Dark Dwarven Lager
 				},
 			}),
@@ -364,6 +367,9 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					i(12000),	-- Limb Cleaver
 					i(11964),	-- Swiftstrike Cudgel
+					i(270123, {	-- Ragnar's Favorite Hat
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(4241, {	-- Marshal Windsor
@@ -960,7 +966,7 @@ instanceroot(228, {	-- Blackrock Depths
 						i(11722),	-- Dregmetal Spaulders
 						i(11702),	-- Grizzle's Skinner
 						i(11703),	-- Stonewall Girdle
-						--i(22270),	-- Entrenching Boots \\Commented out until confirmed
+						i(22270),	-- Entrenching Boots
 					}),
 					n(9032, {	-- Hedrum the Creeper
 						i(11635),	-- Hookfang Shanker
@@ -1045,6 +1051,9 @@ instanceroot(228, {	-- Blackrock Depths
 			}),
 			n(9042, {	-- Verek
 				i(11755),	-- Verek's Collar
+				i(276884, {	-- Verek's Loyal Wraps
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 				--i(22242),	-- Verek's Leash \\Commented out until confirmed
 			}),
 			n(9476, {	-- Watchman Doomgrip
