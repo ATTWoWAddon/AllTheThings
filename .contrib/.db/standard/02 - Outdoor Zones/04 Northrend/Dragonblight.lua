@@ -725,7 +725,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					crs = { 27005 },	-- Chilltusk
 				}),
 				q(12285, {	-- Do Unto Others
-					sourceQuest = 12283,	-- The Trull Will Out
+					sourceQuest = 12283,	-- The Truth Will Out
 					qg = 27243,	-- High Executor Wroth
 					coord = { 76.7, 63.2, DRAGONBLIGHT },
 					races = HORDE_ONLY,
@@ -1106,8 +1106,8 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(11958, {	-- Let Nothing Go To Waste
 					description = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
 					sourceQuests = {
-						12117,	-- Travel to Mo'aki Harbor (Borean Tundra)
-						12118,	-- Travel to Mo'aki Harbor (Howling Fjord)
+						12117,	-- Travel to Moa'ki Harbor (Borean Tundra)
+						12118,	-- Travel to Moa'ki Harbor (Howling Fjord)
 					},
 					qg = 26194,	-- Elder Ko'nani
 					coord = { 48.0, 74.8, DRAGONBLIGHT },
@@ -1305,7 +1305,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(12267, {	-- Neltharion's Flame
-					sourceQuest = 12265,	-- Defining the Defilers
+					sourceQuest = 12265,	-- Defiling the Defilers
 					qg = 26593,	-- Serinar
 					coord = { 35.2, 30.0, DRAGONBLIGHT },
 					groups = {
@@ -2275,7 +2275,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					races = HORDE_ONLY,
 				}),
 				q(12291, {	-- The Forgotten Tale
-					sourceQuest = 12290,	-- The Murkweek Elixir
+					sourceQuest = 12290,	-- The Murkweed Elixir
 					qg = 27347,	-- Orik Trueheart
 					qi = 37570,	-- Murkweed Elixir (PQI!)
 					coord = { 87.1, 57.4, DRAGONBLIGHT },

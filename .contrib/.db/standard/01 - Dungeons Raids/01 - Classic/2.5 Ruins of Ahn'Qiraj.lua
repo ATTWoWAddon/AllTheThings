@@ -801,7 +801,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							15389,	-- Captain Drenn
 							15392,	-- Captain Tuubid
 							15386,	-- Major Yeggeth
-							15385,	-- Colonel Zarran
+							15385,	-- Colonel Zerran
 						},
 						groups = {
 							i(21806),	-- Gavel of Qiraji Authority

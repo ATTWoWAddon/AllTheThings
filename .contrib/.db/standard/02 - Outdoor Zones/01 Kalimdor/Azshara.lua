@@ -2055,7 +2055,7 @@ maproot(KALIMDOR, AZSHARA, {
 			}),
 			q(14226, {	-- Trouble Under Foot
 				sourceQuests = {
-					14250,	-- Renewable Rersource
+					14250,	-- Renewable Resource
 					14249,	-- Shear Will
 					14263,	-- Waste of Thyme
 				},
@@ -2078,7 +2078,7 @@ maproot(KALIMDOR, AZSHARA, {
 			}),
 			q(28849, {	-- Twilight Skies (1/2)
 				sourceQuests = {
-					26337,	-- Beating the Marker
+					26337,	-- Beating the Market
 					26372,	-- Pre-Flight Checklist
 					26374,	-- Ready the Ground Troops
 				},

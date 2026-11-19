@@ -2286,7 +2286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11625),	-- Enthralled Sphere
 						i(11626),	-- Blackveil Cape
 						i(11624),	-- Kentic Amice
-						applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despaire
+						applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despair
 					},
 				}),
 				e(370, {	-- Lord Roccor

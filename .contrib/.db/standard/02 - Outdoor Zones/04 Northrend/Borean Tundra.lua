@@ -2441,7 +2441,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 				}),
 				q(11626, {	-- The Emissary
-					sourceQuest = 11625,	-- The Tirdent of Naz'jan
+					sourceQuest = 11625,	-- The Trident of Naz'jan
 					qg = 25450,	-- Veehja
 					coord = { 43.6, 80.55, BOREAN_TUNDRA },
 					groups = {

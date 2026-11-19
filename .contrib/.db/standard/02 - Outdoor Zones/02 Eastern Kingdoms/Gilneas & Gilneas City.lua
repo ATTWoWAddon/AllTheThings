@@ -50,7 +50,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 						races = { WORGEN },
 					}),
 					q(14218, {	-- By Blood and Ash
-						sourceQuest = 14212,	-- Sacrifies
+						sourceQuest = 14212,	-- Sacrifices
 						qg = 35618,	-- Tobias Mistmantle
 						coord = { 40.46, 39.37, GILNEAS_CITY },
 						races = { WORGEN },
@@ -258,7 +258,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 						coord = { 59.81, 22.17, GILNEAS_CITY },
 						races = { WORGEN },
 					}),
-					q(14212, {	-- Sacrifies
+					q(14212, {	-- Sacrifices
 						sourceQuest = 14294,	-- Time to Regroup
 						qg = 35552,	-- Lord Darius Crowley
 						coord = { 31.05, 72.33, GILNEAS_CITY },
@@ -389,7 +389,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							}),
 						},
 					}),
-					q(14278, {	-- Seek the Siter
+					q(14278, {	-- Seek the Sister
 						sourceQuest = 14099,	-- Royal Orders
 						qg = 35840,	-- Gwen Armstead
 						coord = { 70.79, 55.05, GILNEAS_CITY },

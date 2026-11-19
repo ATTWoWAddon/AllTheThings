@@ -37,7 +37,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						11467,	-- Dead Man's Debt
 						11332,	-- Mission: Plague This!
 						11250,	-- All Hail the Conqueror of Skorn!
-						11239,	-- In Service of the Light
+						11239,	-- In Service to the Light
 						11236,	-- Necro Overlord Mezhen
 						11432,	-- Sleeping Giants
 						11452,	-- The Slumbering King

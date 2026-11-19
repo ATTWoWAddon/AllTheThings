@@ -708,7 +708,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				},
 			}),
 			q(26961, {	-- Gathering Idols
-				qg = 1345,	-- Magmar Felhew
+				qg = 1345,	-- Magmar Fellhew
 				coord = { 64.8, 66.6, LOCH_MODAN },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -919,7 +919,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 					26961,	-- Gathering Idols
 					13650,	-- Keep Your Hands Off The Goods!
 				},
-				qg = 1345,	-- Magmar Felhew
+				qg = 1345,	-- Magmar Fellhew
 				coord = { 64.9, 66.5, LOCH_MODAN },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

@@ -427,7 +427,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 			}),
 			q(30785, {	-- Gao-Ran Battlefront
 				sourceQuests = { 30784 },	-- The Point of No Return
-				qg = 61261,	-- Ban Beartheart
+				qg = 61261,	-- Ban Bearheart
 				coord = { 82.6, 73.0, TOWNLONG_STEPPES },
 				isBreadcrumb = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 			}),

@@ -1263,7 +1263,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(30787),	-- Illidari-Bane Mageblade
 					},
 				}),
-				q(10816, {	-- Reclaiming Holy Ground
+				q(10816, {	-- Reclaiming Holy Grounds
 					sourceQuest = 10619,	-- The Ashtongue Tribe
 					qg = 21822,	-- Vindicator Aluumen
 					coord = { 61.2, 29.2, SHADOWMOON_VALLEY },

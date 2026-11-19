@@ -468,7 +468,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12607, {	-- A Mammoth Undertaking
 					sourceQuests = {
 						12605,	-- Securing the Bait
-						12603,	-- Sharpening Your Talens
+						12603,	-- Sharpening Your Talons
 					},
 					qg = 28374,	-- Zootfizzle
 					coord = { 42.1, 28.8, SHOLAZAR_BASIN },
@@ -871,7 +871,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 27.0, 58.6, SHOLAZAR_BASIN },
 				}),
 				q(12556, {	-- Rhino Mastery: The Kill
-					sourceQuest = 12544,	-- The Bones of Nozroon
+					sourceQuest = 12544,	-- The Bones of Nozronn
 					qg = 27986,	-- Hemet Nesingwary
 					coord = { 27.0, 58.6, SHOLAZAR_BASIN },
 					groups = {
@@ -917,7 +917,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(12634, {	-- Some Make Lemonade, Some Make Liquor
 					sourceQuests = {
-						12549,	-- Dreadsaber Matery: Becoming a Predator
+						12549,	-- Dreadsaber Mastery: Becoming a Predator
 						12520,	-- Rhino Mastery: The Test
 					},
 					qg = 29157,	-- Grimbooze Thunderbrew

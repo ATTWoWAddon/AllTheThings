@@ -1182,7 +1182,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				},
 			}),
 			q(13982, {	-- In a Bind
-				sourceQuest = 13976,	-- Three Fiends of the Forest
+				sourceQuest = 13976,	-- Three Friends of the Forest
 				qg = 3698,	-- Bolyun
 				coord = { 18.0, 60.0, ASHENVALE },
 				timeline = { ADDED_4_0_3 },
@@ -1340,7 +1340,7 @@ maproot(KALIMDOR, ASHENVALE, {
 			q(6621, {	-- King of the Foulweald
 				sourceQuests = {
 					-- #if AFTER CATA
-					13967,	-- Thinning the... Heard?
+					13967,	-- Thinning the... Herd?
 					-- #else
 					216,	-- Between a Rock and a Thistlefur
 					-- #endif

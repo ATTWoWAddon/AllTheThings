@@ -26856,11 +26856,11 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[181916] = {
-		readable = "Tainted Wood",
+		readable = "Satyrnaar Fel Wood",
 		icon = 135437,
 		model = 198389,
 		text = {
-			en = "Tainted Wood",
+			en = "Satyrnaar Fel Wood",
 			es = "Madera vil de Satyrnaar",
 			mx = "Madera vil de Satyrnaar",
 			de = "Verdorbenes Satyrnaarholz",
@@ -52814,10 +52814,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[192882] = {
-		readable = "Polymorphic Rules &amp; Regulations",
+		readable = "Polymorphic Rules & Regulations",
 		model = 244161,
 		text = {
-			en = "Polymorphic Rules &amp; Regulations",
+			en = "Polymorphic Rules & Regulations",
 			es = "Reglas y normas polimorfas",
 			de = "Verwandlung: Regeln &amp; Vorschriften",
 			fr = "Règles et lois polymorphiques",
@@ -52829,10 +52829,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[192883] = {
-		readable = "Blinking Rules &amp; Regulations",
+		readable = "Blinking Rules & Regulations",
 		model = 244163,
 		text = {
-			en = "Blinking Rules &amp; Regulations",
+			en = "Blinking Rules & Regulations",
 			es = "Reglas y normas parpadeantes",
 			de = "Blinzeln: Regeln &amp; Vorschriften",
 			fr = "Règles et lois du transfert",
@@ -92174,10 +92174,10 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		},
 	},
 	[213961] = {
-		readable = "Abandoned Create of Goods",
+		readable = "Abandoned Crate of Goods",
 		model = 537034,
 		text = {
-			en = "Abandoned Create of Goods",
+			en = "Abandoned Crate of Goods",
 			es = "Cajón de bienes abandonado",
 			mx = "Cajón de bienes abandonado",
 			de = "Zurückgelassene Warenkiste",

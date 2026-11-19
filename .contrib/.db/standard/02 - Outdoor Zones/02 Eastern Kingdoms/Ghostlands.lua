@@ -1178,7 +1178,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					lvl = lvlsquish(15, 15, 1),
 				}),
 				q(9176, {	-- The Twin Ziggurats
-					sourceQuest = 9172,	-- Report to Master Kaendris
+					sourceQuest = 9172,	-- Report to Magister Kaendris
 					qg = 16239,	-- Magister Kaendris
 					coord = { 55.0, 48.8, GHOSTLANDS },
 					races = HORDE_ONLY,

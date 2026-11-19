@@ -573,8 +573,8 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						q(9409, {	-- Urgent Delivery!
 							sourceQuests = {
-								9369,	-- Replenishing the Healing Crystal (All other ally races)
-								9280,	-- Replenishing the Healing Crystal (Draenei)
+								9369,	-- Replenishing the Healing Crystals (All other ally races)
+								9280,	-- Replenishing the Healing Crystals (Draenei)
 							},
 							qg = 16477,	-- Proenitus
 							coords = {
@@ -605,8 +605,8 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							sourceQuests = {
 								-- #if AFTER MOP
 								-- TODO: Test this source quest list.
-								9369,	-- Replenishing the Healing Crystal (All other ally races)
-								9280,	-- Replenishing the Healing Crystal (Draenei)
+								9369,	-- Replenishing the Healing Crystals (All other ally races)
+								9280,	-- Replenishing the Healing Crystals (Draenei)
 								-- #endif
 								9371,	-- Botanist Taerix (breadcrumb)
 							},

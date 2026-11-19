@@ -253,7 +253,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				},
 			}),
 			q(30668, {	-- Build Your Own Raft
-				sourceQuests = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
+				sourceQuests = { 30666 },	-- Sudden, Unexpected Crocolisk Aggression
 				qg = 60173,	-- Jay Cloudfall
 				coord = { 51.6, 76.8, KRASARANG_WILDS },
 				groups = {
@@ -388,7 +388,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30130, {	-- Herbal Remedies
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 58113,	-- Sunwalker Dezco
@@ -809,7 +809,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30129, {	-- The Mogu Agenda
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 56112,	-- Kang Bramblestaff
@@ -937,7 +937,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30127, {	-- Threat from Dojan (H)
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 58114,	-- Kor Bloodtusk

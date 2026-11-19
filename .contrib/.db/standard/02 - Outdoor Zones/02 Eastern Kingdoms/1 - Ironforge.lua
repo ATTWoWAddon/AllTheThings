@@ -1739,7 +1739,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 							{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
 							{ "n", 16751 },	-- Merran <Mining Supplies>
 							{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
-							{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+							{ "n", 4599 },	-- Sarah Killian <Mining Supplies>
 							{ "n", 16664 },	-- Zelan <Mining Supplies>
 						},
 						timeline = { ADDED_2_0_1 },

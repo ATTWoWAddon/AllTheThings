@@ -1075,8 +1075,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			i(17712, {	-- Winter Veil Disguise Kit (TOY!)
 				description = "Greatfather Winter will mail this to you 24 hours after you complete the 'A Smokywood Pastures Thank You!' quest.",
 				sourceQuests = {
-					7045,	-- A Smokywood Pastures Thank You! (Alliance)
-					6984,	-- A Smokywood Pastures Thank You! (Horde)
+					7045,	-- A Smokywood Pastures' Thank You! (Alliance)
+					6984,	-- A Smokywood Pastures' Thank You! (Horde)
 				},
 			}),
 		},
@@ -1851,7 +1851,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes
-					i(21211),	-- Pouch of Raindeer Dust
+					i(21211),	-- Pouch of Reindeer Dust
 				}),
 				i(21213),	-- Preserved Holly
 			},
@@ -1883,7 +1883,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes
-					i(21211),	-- Pouch of Raindeer Dust
+					i(21211),	-- Pouch of Reindeer Dust
 				}),
 				i(21213),	-- Preserved Holly
 			},

@@ -77,7 +77,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 			}),
 			ach(7321),	-- Spreading the Warmth
 			ach(7314),	-- Test Drive
-			ach(6545),	-- The Klaxxi
+			ach(6545),	-- Klaxxi
 			ach(7313, {	-- Stay Klaxxi
 				crit(20951, {	-- Angel of Death
 					provider = { "n", 62538 },	-- Kil'ruk the Wind-Reaver

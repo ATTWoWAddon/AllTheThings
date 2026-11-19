@@ -2138,7 +2138,7 @@ maproot(PANDARIA, {
 					races = HORDE_ONLY,
 				}),
 				q(30002, {	-- Pages of History
-					sourceQuest = 29998,	-- The Librarian's Quandry
+					sourceQuest = 29998,	-- The Librarian's Quandary
 					qg = 56786,	-- Lorewalker Stonestep
 					coord = { 56.2, 60.4, THE_JADE_FOREST },
 					groups = {

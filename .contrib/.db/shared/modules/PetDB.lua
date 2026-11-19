@@ -1618,7 +1618,7 @@ n(61438, 430);		-- Gold Beetle
 n(63841, 749);		-- Golden Civet
 n(63842, 750);		-- Golden Civet Kitten
 n(61704, 443);		-- Grasslands Cottontail
-n(63549, 733);		-- Grasslands Hopper
+n(63549, 733);		-- Grassland Hopper
 n(62050, 464);		-- Grey Moth
 n(62818, 647);		-- Grizzly Squirrel
 n(62884, 539);		-- Grotto Vole
@@ -1659,8 +1659,8 @@ n(63095, 709);		-- Malayan Quillrat Pup
 n(63096, 710);		-- Marsh Fiddler
 n(63003, 570);		-- Masked Tanuki
 n(63716, 703);		-- Masked Tanuki Pup
-n(65185, 722);		-- Mei-Li Sparkler
-n(62317, 500);		-- Minifernal
+n(65185, 722);		-- Mei Li Sparkler
+n(62317, 500);		-- Minfernal
 n(62998, 566);		-- Mirror Strider
 n(61372, 422);		-- Moccasin
 n(61425, 428);		-- Molten Hatchling
@@ -1715,7 +1715,7 @@ n(62523, 511);		-- Sidewinder
 n(63057, 711);		-- Sifang Otter
 n(63358, 712);		-- Sifang Otter Pup
 n(64804, 741);		-- Silent Hedgehog
-n(62258, 494);		-- Silithis Hatchling
+n(62258, 494);		-- Silithid Hatchling
 n(63001, 568);		-- Silkbead Snail
 n(62373, 503);		-- Silky Moth
 n(62638, 637);		-- Skittering Cavern Crawler

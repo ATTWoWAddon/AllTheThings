@@ -2202,7 +2202,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},]]
 				}),
 				i(6307),	-- Message in a Bottle
-				i(21228, {	-- Mitril Bound Trunk
+				i(21228, {	-- Mithril Bound Trunk
 					maps_disp = {
 						BLASTED_LANDS,
 						EASTERN_PLAGUELANDS,

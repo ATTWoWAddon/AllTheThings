@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		groups = {
 			n(QUESTS, {
 				q(27070, {	-- A Fool's Errand
-					qg = 7407,	-- Chief Engineer Bildewhizzle
+					qg = 7407,	-- Chief Engineer Bilgewhizzle
 					timeline = { ADDED_4_0_3 },
 					lvl = lvlsquish(44, 44, 15),
 					groups = {

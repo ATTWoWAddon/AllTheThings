@@ -2536,10 +2536,10 @@ maproot(KALIMDOR, FELWOOD, {
 			i(13140, {	-- Blood Red Key
 				timeline = { REMOVED_4_0_3 },
 				crs = {
-					7118,	-- Jaedendar Darkweaver
-					7114,	-- Jaedendar Enforcer
+					7118,	-- Jaedenar Darkweaver
+					7114,	-- Jaedenar Enforcer
 					9862,	-- Jaedenar Legionnaire
-					7120,	-- Jaedendar Warlock
+					7120,	-- Jaedenar Warlock
 				},
 			}),
 			-- #if BEFORE 4.0.3

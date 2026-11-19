@@ -431,7 +431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				timeline = { ADDED_6_2_2 },
 				groups = { i(282287, { timeline = { ADDED_12_1_5 } }) },	-- Scarecrow Pepe (DECOR!)
 			}),
-			ach(284, {	-- A Mask For All Occasions
+			ach(284, {	-- A Mask for All Occasions
 				timeline = { ADDED_3_0_2 },
 				groups = {
 					crit(2260, {	-- Blood Elf Female Mask
@@ -730,11 +730,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = ALLIANCE_ONLY,
 				timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 			}),
-			ach(5837, {	-- Tricks and Treats of Cataclysm (A)
+			ach(5837, {	-- Tricks and Treats of the Cataclysm (A)
 				races = ALLIANCE_ONLY,
 				timeline = { ADDED_4_2_2 },
 			}),
-			ach(5838, {	-- Tricks and Treats of Cataclysm (H)
+			ach(5838, {	-- Tricks and Treats of the Cataclysm (H)
 				races = HORDE_ONLY,
 				timeline = { ADDED_4_2_2 },
 			}),

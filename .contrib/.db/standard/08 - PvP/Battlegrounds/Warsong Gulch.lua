@@ -157,11 +157,11 @@ battleground(WARSONG_GULCH, {
 			ach(204, {	-- Ironman
 				timeline = { ADDED_3_0_2 },
 			}),
-			ach(203, {	-- Not in My House (A)
+			ach(203, {	-- Not In My House (A)
 				timeline = { ADDED_3_0_2 },
 				races = ALLIANCE_ONLY,
 			}),
-			ach(1251, {	-- Not in My House (H)
+			ach(1251, {	-- Not In My House (H)
 				timeline = { ADDED_3_0_2 },
 				races = HORDE_ONLY,
 			}),

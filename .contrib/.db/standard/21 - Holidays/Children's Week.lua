@@ -771,7 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #if AFTER CATA
 				{ "n", 51989 },	-- Orphan Matron Battlewall
 				-- #else
-				{ "n", 14451 },	-- Orphan Matron Battlewall
+				{ "n", 14451 },	-- Orphan Matron Battlewail
 				-- #endif
 			},
 			coords = {

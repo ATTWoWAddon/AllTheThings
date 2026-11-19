@@ -917,7 +917,7 @@ maproot(KALIMDOR, FERALAS, {
 			}),
 			q(25453, {	-- Improved Quality [H]
 				sourceQuest = 25452,	-- The Mark of Quality [H]
-				qg = 7854,	-- Hangdor Swiftstrider
+				qg = 7854,	-- Jangdor Swiftstrider
 				coord = { 52.8, 47.1, FERALAS },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
@@ -3169,7 +3169,7 @@ maproot(KALIMDOR, FERALAS, {
 					11440,	-- Gordok Enforcer
 					39384,	-- Noxious Whelp
 					5278,	-- Sprite Darter
-					5249,	-- Woodpaw Mogrel
+					5249,	-- Woodpaw Mongrel
 					5246,	-- Zukk'ash Worker
 					-- #else
 					5278,	-- Sprite Darter

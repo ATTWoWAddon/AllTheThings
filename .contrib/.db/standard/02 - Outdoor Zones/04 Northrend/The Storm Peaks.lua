@@ -127,7 +127,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		icon = 236832,
 		groups = {
 			n(ACHIEVEMENTS, {
-				ach(1269),	-- Explore The Storm Peaks
+				ach(1269),	-- Explore Storm Peaks
 				ach(1428),	-- Mine Sweeper
 				ach(38, {	-- The Summit of Storm Peaks
 					-- #if AFTER 7.3.5

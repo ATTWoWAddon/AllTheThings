@@ -107,7 +107,7 @@ maproot(KALIMDOR, WINTERSPRING, {
 					}),
 					crit(16181, {	-- Chillwind Chimaera
 						crs = {
-							7448,	-- Chillwind Chimera
+							7448,	-- Chillwind Chimaera
 						},
 						coords = {
 							{ 58.0, 23.8, WINTERSPRING },

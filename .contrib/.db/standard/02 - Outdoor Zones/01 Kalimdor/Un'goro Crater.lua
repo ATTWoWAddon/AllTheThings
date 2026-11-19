@@ -346,7 +346,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				timeline = { ADDED_4_0_3 },
 			}),
 			q(24714, {	-- Chasing A-Me 01
-				sourceQuest = 24701,	-- Marshal's Refusew
+				sourceQuest = 24701,	-- Marshal's Refuse
 				qg = 9618,	-- Karna Remtravel
 				coord = { 43.4, 40.9, UNGORO_CRATER },
 				timeline = { ADDED_4_0_3 },

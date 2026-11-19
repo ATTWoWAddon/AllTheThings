@@ -359,28 +359,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 						qg = 14905,	-- Falthir the Sightless
 						coord = { 14.1, 13.7, STRANGLETHORN_VALE },
 						minReputation = { FACTION_ZANDALAR_TRIBE, FRIENDLY },
-						groups = { i(19614) },	-- Zandalrian Shadow Talisman
+						groups = { i(19614) },	-- Zandalarian Shadow Talisman
 					}),
 					q(8142, {	-- Zandalarian Shadow Talisman [Honored]
 						sourceQuest = 8141,	-- Zandalarian Shadow Talisman [Friendly]
 						qg = 14905,	-- Falthir the Sightless
 						coord = { 14.1, 13.7, STRANGLETHORN_VALE },
 						minReputation = { FACTION_ZANDALAR_TRIBE, HONORED },
-						groups = { i(19615) },	-- Zandalrian Shadow Talisman
+						groups = { i(19615) },	-- Zandalarian Shadow Talisman
 					}),
 					q(8143, {	-- Zandalarian Shadow Talisman [Revered]
 						sourceQuest = 8142,	-- Zandalarian Shadow Talisman [Honored]
 						qg = 14905,	-- Falthir the Sightless
 						coord = { 14.1, 13.7, STRANGLETHORN_VALE },
 						minReputation = { FACTION_ZANDALAR_TRIBE, REVERED },
-						groups = { i(19616) },	-- Zandalrian Shadow Talisman
+						groups = { i(19616) },	-- Zandalarian Shadow Talisman
 					}),
 					q(8144, {	-- Zandalarian Shadow Mastery Talisman
 						sourceQuest = 8143,	-- Zandalarian Shadow Talisman [Revered]
 						qg = 14905,	-- Falthir the Sightless
 						coord = { 14.1, 13.7, STRANGLETHORN_VALE },
 						minReputation = { FACTION_ZANDALAR_TRIBE, EXALTED },
-						groups = { i(19617) },	-- Zandalrian Shadow Mastery Talisman
+						groups = { i(19617) },	-- Zandalarian Shadow Mastery Talisman
 					}),
 				})),
 				cl(SHAMAN, bubbleDown({ classes = { SHAMAN }, lvl = 58 }, {

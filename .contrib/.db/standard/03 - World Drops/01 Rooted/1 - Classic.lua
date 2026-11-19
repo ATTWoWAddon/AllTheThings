@@ -4303,7 +4303,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				SEARING_GORGE,
 			},
 		}),
-		i(7077, {	-- Hearth of Fire
+		i(7077, {	-- Heart of Fire
 			coords = {
 				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
@@ -4377,7 +4377,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 				-- #else
 				45119,	-- Corrupted Darkwood Treant
 				45118,	-- Darkwood Treant
@@ -4422,7 +4422,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 				-- #else
 				6510,	-- Bloodpetal Flayer
 				6509,	-- Bloodpetal Lasher
@@ -4449,7 +4449,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
 			},
 			crs = {
-				7524,	-- Anghuished Highborne
+				7524,	-- Anguished Highborne
 				12378,	-- Damned Soul
 				6116,	-- Highborne Apparition
 				6117,	-- Highborne Lichling
@@ -6052,7 +6052,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			crs = {
 				-- #if BEFORE 4.0.3
 				7857,	-- Southsea Dock Worker
-				7856,	-- Southsea Frebooter
+				7856,	-- Southsea Freebooter
 				15685,	-- Southsea Kidnapper
 				7902,	-- Treasure Hunting Buccaneer
 				7899,	-- Treasure Hunting Pirate

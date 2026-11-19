@@ -663,7 +663,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(407, {	-- Illyanna Ravenoak
-				crs = { 11488 },	-- Illyaana Ravenoak
+				crs = { 11488 },	-- Illyanna Ravenoak
 				groups = {
 					i(18347),	-- Well Balanced Axe
 					i(18383),	-- Force Imbued Gauntlets

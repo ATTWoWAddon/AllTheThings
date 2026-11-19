@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								13742,	-- Kolk <The First Kahn>
 							},
 						}),
-						i(17762, {	-- Gem of the Second Kahn
+						i(17762, {	-- Gem of the Second Khan
 							description = "Gelk is located outside the portal of the purple path, hanging with snakes and rock elementals. He is almost just below the portal (use the stairs to get to him).\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 							coord = { 29.4, 56.9, DESOLACE },
 							crs = {
@@ -206,7 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								13741,	-- Gelk <The Second Kahn>
 							},
 						}),
-						i(17763, {	-- Gem of the Third Kahn
+						i(17763, {	-- Gem of the Third Khan
 							description = "Magra is located outside the portal of the orange path. He is in the stairs area.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 							coord = { 35.8, 60.4, DESOLACE },
 							crs = {
@@ -214,14 +214,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								13740,	-- Magra <The Third Kahn>
 							},
 						}),
-						i(17764, {	-- Gem of the Fourth Kahn
+						i(17764, {	-- Gem of the Fourth Khan
 							description = "Maraudos is located inside the purple path of Maraudon, wandering not too far away from the entrance.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 							crs = {
 								12242,	-- Spirit of Maraudos <The Fourth Kahn>
 								13739,	-- Maraudos <The Fourth Kahn>
 							},
 						}),
-						i(17765, {	-- Gem of the Fifth Kahn
+						i(17765, {	-- Gem of the Fifth Khan
 							description = "Veng is located inside the orange path of Maraudon, wandering by the end of the path.\n\nTo attack him, use the Amulet of Spirits that you got from The Nameless Prophet.",
 							crs = {
 								12243,	-- Spirit of Veng <The Fifth Kahn>

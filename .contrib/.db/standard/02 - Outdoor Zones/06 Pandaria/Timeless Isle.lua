@@ -45,7 +45,7 @@ maproot(PANDARIA, {
 							crit(23720, { provider = { "i", 102147 } }),	-- Yu'la, Broodling of Yu'lon
 							crit(23721, { provider = { "i", 102146 } }),	-- Zao, Calfling of Niuzao
 						}),
-						petbattle(ach(8518)),	-- Master of the Master
+						petbattle(ach(8518)),	-- Master of the Masters
 						ach(8410),	-- The Celestial Tournament
 					}),
 					petbattles({
@@ -120,7 +120,7 @@ maproot(PANDARIA, {
 				ach(8715),	-- Emperor Shaohao
 				ach(8726),	-- Extreme Treasure Hunter (automated)
 				ach(8725),	-- Eyes On The Ground (automated)
-				ach(8728),	-- Going to Need a Bigger Bag (automated)
+				ach(8728),	-- Going To Need A Bigger Bag (automated)
 				ach(8712),	-- Killing Time (automated)
 				ach(8724, {	-- Pilgrimage
 					provider = { "o", 222776 },	-- Time-Lost Shrine
@@ -1354,7 +1354,7 @@ maproot(PANDARIA, {
 				n(72193, {	-- Karkanos
 					questID = 33292,
 					isDaily = true,
-					provider = { "n", 72151 },	-- Lin Longpaw
+					provider = { "n", 72151 },	-- Fin Longpaw
 					coord = { 33.8, 85.8, TIMELESS_ISLE },
 					groups = { i(104035) },	-- Giant Purse of Timeless Coins
 				}),

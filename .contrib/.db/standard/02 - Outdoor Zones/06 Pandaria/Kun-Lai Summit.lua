@@ -1450,7 +1450,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 			}),
 			q(30612, {	-- The Leader Hozen
 				sourceQuests = {
-					30610,	-- Grummel! Grummle! Grummle!
+					30610,	-- Grummle! Grummle! Grummle!
 					30611,	-- Unleash The Yeti!
 				},
 				qg = 59452,	-- Brother Rabbitsfoot

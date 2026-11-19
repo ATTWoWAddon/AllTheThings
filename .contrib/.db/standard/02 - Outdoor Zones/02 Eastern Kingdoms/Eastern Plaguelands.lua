@@ -2817,7 +2817,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 			}),
 			q(27683, {	-- Into the Woods
 				qgs = {
-					10840,	-- Argent Office Pureheart
+					10840,	-- Argent Officer Pureheart
 					44462,	-- Jearl Donald
 					44456,	-- Adrine Towhide
 				},
@@ -4835,7 +4835,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 			}),
 		}),
 		n(VENDORS, {
-			n(12384, {	-- Agustus the Touched
+			n(12384, {	-- Augustus the Touched
 				description = "Vendor will not sell anything until you complete his quest.",
 				sourceQuests = {
 					-- #if AFTER CATA

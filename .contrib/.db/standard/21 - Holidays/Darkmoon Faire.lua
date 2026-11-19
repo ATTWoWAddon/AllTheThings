@@ -916,7 +916,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(29506, {	-- A Fizzy Fusion
-				qg = 14844,	-- Sylvannia
+				qg = 14844,	-- Sylannia
 				coord = { 50.5, 69.5, DARKMOON_ISLAND },
 				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },

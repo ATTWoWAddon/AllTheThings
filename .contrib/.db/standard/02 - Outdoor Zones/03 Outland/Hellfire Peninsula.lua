@@ -106,7 +106,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						9383,	-- An Ambitious Plan
 						9490,	-- The Rock Flayer Matriarch
 						-- all quests below need to be confirmed
-						9427,	-- Cleaning the Waters
+						9427,	-- Cleansing the Waters
 						9398,	-- Deadly Predators
 
 						-- Green, But Not Orcs
@@ -2151,7 +2151,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					lvl = lvlsquish(55, 55, 10),
 				}),
 				q(10875, {	-- Report to Nazgrel
-					sourceQuest = 10838,	-- The Demonaic Scryer
+					sourceQuest = 10838,	-- The Demoniac Scryer
 					qg = 16588,	-- Apothecary Antonivich
 					coord = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
@@ -2423,7 +2423,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(58, 58, 10),
 				}),
-				q(10838, {	-- The Demonaic Scryer
+				q(10838, {	-- The Demoniac Scryer
 					sourceQuest = 10864,	-- A Burden of Souls
 					qg = 16588,	-- Apothecary Antonivich
 					coord = { 52.2, 36.4, HELLFIRE_PENINSULA },

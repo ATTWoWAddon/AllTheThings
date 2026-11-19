@@ -234,7 +234,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		ach(2797, {	-- Noble Gardener (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			sym = { { "meta_achievement",
-				2676,	-- I Found One
+				2676,	-- I Found One!
 				2418,	-- Chocoholic
 				2436,	-- Desert Rose
 				2576,	-- Blushing Bride
@@ -250,7 +250,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		ach(2798, {	-- Noble Gardener (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			sym = { { "meta_achievement",
-				2676,	-- I Found One
+				2676,	-- I Found One!
 				2418,	-- Chocoholic
 				2436,	-- Desert Rose
 				2576,	-- Blushing Bride
@@ -567,7 +567,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			isBreadcrumb = true,
 			isYearly = true,
 		}),
-		q(13483, {	-- Spring Gathers (H)
+		q(13483, {	-- Spring Gatherers (H)
 			qgs = {
 				19169,	-- Blood Elf Commoner
 				19178,	-- Forsaken Commoner
@@ -645,7 +645,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		}),
 		q(13479, {	-- The Great Egg Hunt (H)
 			sourceQuests = {
-				13483,	-- Spring Gathers (H)
+				13483,	-- Spring Gatherers (H)
 				-- #if AFTER DF
 				74875,	-- A Spring Awakening (H)
 				-- #endif

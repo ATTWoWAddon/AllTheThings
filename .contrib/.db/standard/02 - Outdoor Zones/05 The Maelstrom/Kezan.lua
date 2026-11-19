@@ -129,7 +129,7 @@ maproot(THE_MAELSTROM, KEZAN, {
 			q(25473, {	-- Kaja'Cola
 				sourceQuests = {
 					14069,	-- Good Help is Hard to Find
-					14075,	-- Troublee in the Mines
+					14075,	-- Trouble in the Mines
 				},
 				qg = 34872,	-- Foreman Dampwick
 				coord = { 60.2, 74.5, KEZAN },

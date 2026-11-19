@@ -13,7 +13,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 	groups = {
 		n(ACHIEVEMENTS, {
 			ach(780),	-- Explore Redridge Mountains
-			ach(4902, {	-- Redridge Mountain Quests
+			ach(4902, {	-- Redridge Mountains Quests
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				-- #if AFTER 7.3.5

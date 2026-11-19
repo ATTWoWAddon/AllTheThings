@@ -1107,7 +1107,7 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 					objective(1, {	-- 0/20 Blackrock minions cudgeled
 						provider = { "i", 63390 },	-- Blackrock Cudgel of Discipline
 						crs = {
-							7025,	-- Blackrock Solder
+							7025,	-- Blackrock Soldier
 							48121,	-- Firegut Flamespeaker
 							48153,	-- Goblin Flamethrower
 							48119,	-- Smolderthorn Assassin

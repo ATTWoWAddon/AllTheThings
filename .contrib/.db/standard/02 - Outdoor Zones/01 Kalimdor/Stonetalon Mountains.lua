@@ -2257,7 +2257,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				-- #if BEFORE 9.0.1
 				description = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 				-- #endif
-				sourceQuest = 25652,	-- Commandeer That Ballon!
+				sourceQuest = 25652,	-- Commandeer That Balloon!
 				qg = 40896,	-- Lord Fallowmere
 				coord = { 59.6, 56.9, STONETALON_MOUNTAINS },
 				timeline = { ADDED_4_0_3 },

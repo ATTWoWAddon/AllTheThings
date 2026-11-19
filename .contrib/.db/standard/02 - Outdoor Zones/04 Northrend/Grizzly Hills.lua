@@ -204,7 +204,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12229, {	-- A Possible Link (H)
 					sourceQuests = {
 						12213,	-- The Darkness Beneath
-						12207,	-- Vordassil's Fall
+						12207,	-- Vordrassil's Fall
 					},
 					qg = 27262,	-- Windseer Grayhorn
 					coord = { 22.5, 62.8, GRIZZLY_HILLS },
@@ -478,7 +478,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12241, {	-- Destroy the Sapling
 					sourceQuests = {
 						12229,	-- A Possible Link
-						12231,	-- The Bear God's Offpsring
+						12231,	-- The Bear God's Offspring
 					},
 					qg = 27262,	-- Windseer Grayhorn
 					coord = { 22.5, 62.8, GRIZZLY_HILLS },
@@ -1364,7 +1364,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12231, {	-- The Bear God's Offspring
 					sourceQuests = {
 						12213,	-- The Darkness Beneath
-						12207,	-- Vordassil's Fall
+						12207,	-- Vordrassil's Fall
 					},
 					qg = 27262,	-- Windseer Grayhorn
 					coord = { 22.5, 62.8, GRIZZLY_HILLS },
@@ -1814,7 +1814,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12242, {	-- Vordrassil's Seeds (H)
 					sourceQuests = {
 						12229,	-- A Possible Link
-						12231,	-- The Bear God's Offpsring
+						12231,	-- The Bear God's Offspring
 					},
 					qg = 27262,	-- Windseer Grayhorn
 					coord = { 22.5, 62.8, GRIZZLY_HILLS },

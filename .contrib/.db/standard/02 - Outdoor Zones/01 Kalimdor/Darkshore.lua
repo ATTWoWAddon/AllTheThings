@@ -36,7 +36,7 @@ maproot(KALIMDOR, DARKSHORE, {
 				timeline = { ADDED_8_1_0 },
 				races = ALLIANCE_ONLY,
 			}),
-			ach(5453, {	-- Ghost in the Dark
+			ach(5453, {	-- Ghosts in the Dark
 				sourceQuest = 28529,	-- Writings of the Void
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

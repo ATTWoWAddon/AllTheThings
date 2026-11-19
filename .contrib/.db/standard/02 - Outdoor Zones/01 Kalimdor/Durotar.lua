@@ -1832,7 +1832,7 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 			}),
 			q(31813, {	-- Dagra the Fierce
-				sourceQuest = 31812,	-- Zunta, The Pet Tramer
+				sourceQuest = 31812,	-- Zunta, The Pet Tamer
 				qg = 66126,	-- Zunta
 				coord = { 43.9, 28.9, DUROTAR },
 				timeline = { ADDED_5_0_4 },
