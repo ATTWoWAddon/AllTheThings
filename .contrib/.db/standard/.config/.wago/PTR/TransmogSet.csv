@@ -3931,14 +3931,14 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Ornaments of the Pearlescent Butterfly",4261,0,86714,2,300,14226,0,1,10,110100,10,0
 "Ornaments of the Spring Butterfly",4262,0,86726,2,300,14151,4261,1,10,110100,10,0
 "Ornaments of the Ruby Butterfly",4263,0,86727,2,300,13965,4261,1,10,110100,10,0
-"Ornaments of the Midnight Butterfly",4264,0,86729,2,300,14015,4261,1,10,110100,10,0
+"Ornaments of the Midnight Butterfly",4264,0,86729,2,300,14015,4261,1,11,120107,10,0
 "Goblin Bruiser's Attire",4265,0,0,0,301,13966,0,1,10,110100,10,0
 "Undermine Enforcer's Attire",4266,0,0,0,302,14015,4265,1,10,110100,10,0
 "Noxious Injector Apparatus",4267,400,89188,256,303,14174,4337,1,10,110100,10,0
 "Nitroclad Kit",4268,3592,89189,256,303,14174,4338,1,10,110100,10,0
 "Blastborne Loadout",4269,4164,89190,256,303,14174,4339,1,10,110100,10,0
 "Junkreaver's Plates",4270,35,89191,256,303,14174,4340,1,10,110100,10,0
-"Forest Dweller's Muddied Attire",4271,0,86871,258,304,13968,0,1,10,110100,10,0
+"Forest Dweller's Muddied Attire",4271,0,86871,258,304,13968,0,1,11,120107,10,0
 "Forest Dweller's Butterfly Attire",4272,0,86875,258,304,14151,4271,1,10,110100,10,0
 "Forest Dweller's Blooming Attire",4273,0,86876,258,304,14015,4271,1,10,110100,10,0
 "Forest Dweller's Rooted Attire",4274,0,86879,258,304,13967,4271,1,10,110100,10,0
@@ -4500,7 +4500,7 @@ Earth-Warder,5090,1,0,450,0,0,0,1,10,110205,350,0
 "Scout of the Wastes",5194,3592,0,0,339,14350,5175,1,10,110200,10,0
 "Skirmisher of the Wastes",5195,4164,0,0,339,14350,5174,1,10,110200,10,0
 "Brute of the Wastes",5196,35,0,0,339,14350,5176,1,10,110200,10,0
-"Saltshroud Privateer's Finery",5197,0,91935,258,247,13967,3443,1,10,110207,4,0
+"Saltshroud Privateer's Finery",5197,0,91935,258,247,13967,3443,1,11,120107,10,0
 "Hollow Sentinel's Wingdrapes",5198,0,91939,323,0,0,0,1,10,110200,10,0
 "Vicious Charhound's Felcovers",5199,0,91941,323,0,0,0,1,10,110200,10,0
 "Plumes of the Mother Eagle",5200,0,91940,323,0,0,0,1,10,110200,10,0
@@ -5183,23 +5183,23 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Head Chef's Uniform",5926,0,98454,258,412,13966,5921,1,11,120105,10,0
 "Scout Team Seven Weapons",5927,0,98460,1,0,0,0,1,11,120100,2000,0
 "Scout Team Seven Quiver",5928,0,0,1,0,0,0,1,11,120100,2000,0
-"Traveler's Shadow Headgear",5930,0,98487,67,0,0,0,1,10,0,1640,0
-"Traveler's Shadow Headgear",5931,0,98488,67,0,0,0,1,10,0,1640,0
-"Traveler's Forest Headgear",5932,0,98489,67,0,0,0,1,10,0,1640,0
-"Traveler's Sanguine Headgear",5933,0,98490,67,0,0,0,1,10,0,1640,0
-"Traveler's Dusk Headgear",5934,0,98491,67,0,0,0,1,10,0,1640,0
-"Traveler's Oaken Headgear",5935,0,98492,67,0,0,0,1,10,0,1640,0
-"Traveler's Ivory Headgear",5936,0,98493,67,0,0,0,1,10,0,1640,0
-"Seabound Smuggler's Attire",5937,0,98560,256,325,13967,4552,1,7,80001,10,0
-"Drustvar Smuggler's Attire",5938,0,98561,256,325,14125,4552,1,7,80001,10,0
-"Dockside Smuggler's Attire",5939,0,98559,256,325,13968,4552,1,7,80001,10,0
+"Traveler's Shadow Headgear",5930,0,98487,67,0,0,0,1,11,120107,10,0
+"Traveler's Shadow Headgear",5931,0,98488,67,0,0,0,1,11,120107,10,0
+"Traveler's Forest Headgear",5932,0,98489,67,0,0,0,1,11,120107,10,0
+"Traveler's Sanguine Headgear",5933,0,98490,67,0,0,0,1,11,120107,10,0
+"Traveler's Dusk Headgear",5934,0,98491,67,0,0,0,1,11,120107,10,0
+"Traveler's Oaken Headgear",5935,0,98492,67,0,0,0,1,11,120107,10,0
+"Traveler's Ivory Headgear",5936,0,98493,67,0,0,0,1,11,120107,10,0
+"Seabound Smuggler's Attire",5937,0,98560,256,325,13967,4552,1,11,120107,10,0
+"Drustvar Smuggler's Attire",5938,0,98561,256,325,14125,4552,1,11,120107,10,0
+"Dockside Smuggler's Attire",5939,0,98559,256,325,13968,4552,1,11,120107,10,0
 "Village Patrolman's Regalia",5940,0,98562,2,351,13965,2669,1,10,110205,10,0
-"Outfitter's Autumn Garments",5941,0,98568,67,0,0,0,1,10,0,1640,0
-"Outfitter's Formal Garments",5942,0,98569,67,0,0,0,1,10,0,1640,0
-"Outfitter's Navy Garments",5943,0,98570,67,0,0,0,1,10,0,1640,0
-"Outfitter's Oaken Garments",5944,0,98571,67,0,0,0,1,10,0,1640,0
-"Outfitter's Blush Garments",5945,0,98572,67,0,0,0,1,10,0,1640,0
-"Outfitter's Maroon Garments",5946,0,98573,67,0,0,0,1,10,0,1640,0
+"Outfitter's Autumn Garments",5941,0,98568,67,0,0,0,1,11,120107,10,0
+"Outfitter's Formal Garments",5942,0,98569,67,0,0,0,1,11,120107,10,0
+"Outfitter's Navy Garments",5943,0,98570,67,0,0,0,1,11,120107,10,0
+"Outfitter's Oaken Garments",5944,0,98571,67,0,0,0,1,11,120107,10,0
+"Outfitter's Blush Garments",5945,0,98572,67,0,0,0,1,11,120107,10,0
+"Outfitter's Maroon Garments",5946,0,98573,67,0,0,0,1,11,120107,10,0
 "Rexxar's Fabled Attire",5947,0,98723,258,0,13965,0,1,11,120105,10,0
 "Wood Haunter's Guise of the Wight",5948,0,98727,258,413,14145,0,1,11,120105,4000,0
 "Ice-Walker's Guise of the Wight",5949,0,98728,258,413,13967,5948,1,11,120105,4000,0
@@ -5209,9 +5209,9 @@ Huojin,5367,0,0,8,0,13965,5368,1,10,110207,10,147474
 "Traveler's Charcoal Commonwear",6160,0,99109,67,0,0,0,1,10,0,1640,0
 "Villager's Linen Commonwear",6161,0,99112,67,0,0,0,1,10,0,1640,0
 "Villager's Woolen Commonwear",6162,0,99111,67,0,0,0,1,10,0,1640,0
-"Traveler's Colorful Mantle Collection",6163,0,99138,67,0,0,0,1,10,0,1640,0
-"Cursed Wood-Witch's Mask Gallery",6164,0,99139,67,0,0,0,1,11,0,1640,0
-"Noble's Literary Caps",6165,0,99140,67,0,0,0,1,11,0,1640,0
+"Traveler's Colorful Mantle Collection",6163,0,99138,67,0,0,0,1,11,120107,10,0
+"Cursed Wood-Witch's Mask Gallery",6164,0,99139,67,0,0,0,1,11,120107,10,0
+"Noble's Literary Caps",6165,0,99140,67,0,0,0,1,11,120107,10,0
 "Wastewander Hunter's Kit",6269,0,99574,258,232,14015,3306,1,11,120107,10,0
 "Red-and-Greench Sweatsuit",6276,0,99697,2,0,0,0,1,11,120107,10,0
 "Brutal Silver Armor",6326,0,99983,258,419,14131,0,1,11,120107,4000,0
