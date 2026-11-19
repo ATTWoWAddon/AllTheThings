@@ -1934,29 +1934,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					{ "pop" },
 				},
 				races = HORDE_ONLY,
-				groups = {
-					i(18831),	-- High Warlord's Battle Axe
-					i(23464),	-- High Warlord's Battle Mace
-					i(16345),	-- High Warlord's Blade
-					i(18866),	-- High Warlord's Bludgeon
-					i(18828),	-- High Warlord's Cleaver
-					i(18837),	-- High Warlord's Crossbow
-					i(23465),	-- High Warlord's Destroyer
-					i(18877),	-- High Warlord's Greatsword
-					i(18848),	-- High Warlord's Left Claw
-					i(18871),	-- High Warlord's Pig Sticker
-					i(18868),	-- High Warlord's Pulverizer
-					i(23467),	-- High Warlord's Quickblade
-					i(18840),	-- High Warlord's Razor
-					i(18835),	-- High Warlord's Recurve
-					i(18844),	-- High Warlord's Right Claw
-					i(18826),	-- High Warlord's Shield Wall
-					i(23466),	-- High Warlord's Spellblade
-					i(18860),	-- High Warlord's Street Sweeper
-					i(23468),	-- High Warlord's Tome of Destruction
-					i(23469),	-- High Warlord's Tome of Mending
-					i(18874),	-- High Warlord's War Staff
-				},
 			}),
 			n(3333, {	-- Shankys <Fishing Supplies>
 				coord = { 66.6, 41.6, MAP.ORGRIMMAR },
