@@ -1715,7 +1715,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						i(30519),	-- Boots of the Nexus Warden
 						i(30352),	-- Demolisher's Bracers
-						i(30341),	-- Flash Handler's Gauntlets
+						i(30341),	-- Flesh Handler's Gauntlets
 						i(30342),	-- Protectorate Waistband
 					},
 				}),

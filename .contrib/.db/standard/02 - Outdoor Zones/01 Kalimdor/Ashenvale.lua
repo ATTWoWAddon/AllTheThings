@@ -2015,7 +2015,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				races = ALLIANCE_ONLY,
 				lvl = 21,
 			}),
-			q(9428, {	-- Report to Spintertree Post
+			q(9428, {	-- Report to Splintertree Post
 				qg = 17098,	-- Ambassador Dawnsinger
 				coord = { 71.0, 68.0, ORGRIMMAR },
 				timeline = { ADDED_2_0_1, REMOVED_4_0_3 },

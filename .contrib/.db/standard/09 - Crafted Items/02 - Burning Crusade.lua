@@ -1465,7 +1465,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					}, {
 						i(23117),	-- Azure Moonstone
 						i(23077),	-- Blood Garnet
-						i(23079),	-- Deep Perigot
+						i(23079),	-- Deep Peridot
 						i(21929),	-- Flame Spessarite
 						i(23112),	-- Golden Draenite
 						i(23107),	-- Shadow Draenite

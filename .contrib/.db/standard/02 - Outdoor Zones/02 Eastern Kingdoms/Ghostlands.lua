@@ -1164,7 +1164,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22980),	-- Staff of the Sun
 						i(22982),	-- Farstrider's Longbow
 						i(22984),	-- Dawnblade
-						i(22995),	-- Sindorei Warblade
+						i(22995),	-- Sin'dorei Warblade
 						i(156941, {	-- Staff of Radiance
 							timeline = { ADDED_7_3_5 },
 						}),
