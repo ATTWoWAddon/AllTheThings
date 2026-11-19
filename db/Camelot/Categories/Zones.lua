@@ -2047,7 +2047,7 @@ r(1252352,{awp=16001,b=1,crs={3727},itemID=251455,learnedAt=95,requireSkill=164,
 r(1252353,{awp=16001,b=1,crs={3771},itemID=251456,learnedAt=130,requireSkill=164,skillID=2938}),
 r(1250151,{awp=16001,b=1,crs={3809},itemID=250182,learnedAt=175,requireSkill=185,skillID=2939}),
 r(1250781,{awp=16001,crs={3757},itemID=250368,learnedAt=145,requireSkill=171,skillID=2937}),
-r(1250798,{awp=16001,crs={3931},itemID=250385,requireSkill=171}),
+r(1250798,{awp=16001,crs={3931},itemID=250385,learnedAt=150,requireSkill=171,skillID=2937}),
 i(16645,{spellID=20529}),
 i(16646,{spellID=20529}),
 i(16647,{spellID=20529}),
@@ -2507,7 +2507,7 @@ r(1252338,{awp=16001,b=1,crs={6199},itemID=251441,learnedAt=255,requireSkill=164
 r(1250158,{awp=16001,b=1,crs={7886},itemID=250189,learnedAt=275,requireSkill=185,skillID=2939}),
 r(17571,{coords={
 [1447]={{53.6,23.8},{56.6,23.6}}},crs={6201},itemID=13491,learnedAt=280,requireSkill=171,skillID=2937}),
-r(1251733,{awp=16001,crs={6193},itemID=250980,requireSkill=171}),
+r(1251733,{awp=16001,crs={6193},itemID=250980,learnedAt=235,requireSkill=171,skillID=2937}),
 r(1266934,{awp=16001,crs={250027},itemID=264231,learnedAt=300,requireSkill=202,skillID=2941}),
 r(19794,{crs={6195},itemID=16045,learnedAt=270,requireSkill=202,skillID=2941}),
 i(10450,{crs={6375,6377,6378,6379,6380,6648}})})}}),
@@ -3400,8 +3400,8 @@ r(1257433,{awp=16001,crs={4719},itemID=254016,learnedAt=150,requireSkill=197,ski
 r(12062,{awp=16001,crs={4658},itemID=254681,learnedAt=200,requireSkill=197,skillID=2948}),
 r(1252284,{awp=16001,b=1,crs={4711},itemID=251387,learnedAt=160,requireSkill=164,skillID=2938}),
 r(1252289,{awp=16001,b=1,crs={11559,253272},itemID=251392,learnedAt=195,requireSkill=164,skillID=2938}),
-r(1250783,{awp=16001,crs={4632},itemID=250370,requireSkill=171}),
-r(1250776,{awp=16001,crs={4684},itemID=250363,requireSkill=171}),
+r(1250783,{awp=16001,crs={4632},itemID=250370,learnedAt=150,requireSkill=171,skillID=2937}),
+r(1250776,{awp=16001,crs={4684},itemID=250363,learnedAt=195,requireSkill=171,skillID=2937}),
 i(6074,{crs={4654,4655,4656,4657,4658,4659,6069,6070},f=55,spellID=7285})})}}),
 m(1411,{icon=236756,lore="Once the home of the savage quilboar, the Horde arrived on Kalimdor's shore and, in the aftermath of the Third War, drove the quilboar from the land and established this region as its own. Warchief Thrall named the new nation after his father, Durotan, and rules ably. Horde settlements are scattered throughout the rocky land, which is only marginally more fertile than the Barrens.\n\nThe Horde's greatest city is Orgrimmar, a warrior city that symbolizes the greatness of the orcs and their allies. Much of Durotar remains wild, and the orcs continually fend off centaur and quilboar as they attempt to tame the land.",g={
 m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",zoneTextAreaIDs={363,364,365},g={
@@ -5182,7 +5182,7 @@ r(12090,{awp=16001,crs={5333},itemID=254686,learnedAt=220,requireSkill=197,skill
 r(1254991,{awp=16001,crs={5262},itemID=252916,learnedAt=250,requireSkill=165,skillID=2945}),
 r(1252361,{awp=16001,b=1,crs={5232},itemID=251464,learnedAt=215,requireSkill=164,skillID=2938}),
 r(1252359,{awp=16001,b=1,crs={5249},itemID=251462,learnedAt=195,requireSkill=164,skillID=2938}),
-r(1251739,{awp=16001,crs={5363},itemID=250986,requireSkill=171}),
+r(1251739,{awp=16001,crs={5363},itemID=250986,learnedAt=240,requireSkill=171,skillID=2937}),
 r(1249960,{awp=16001,b=1,crs={5254},itemID=249882,learnedAt=180,requireSkill=185,skillID=2939})})}}),
 m(1450,{icon=135758,lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
 h(-12,{
@@ -10074,9 +10074,19 @@ s(163057,16768,{b=1,f=1,spellID=20631}),
 s(163058,16769,{b=1,f=23,lvl=47})}}),
 n(11557,{coords={
 [1448]={{65.6,2.8}}},g={
+r(27837,{b=1,itemID=22392,learnedAt=290,minReputation={576,3000},requireSkill=333,skillID=2940}),
+r(19068,{b=1,itemID=20253,learnedAt=250,minReputation={576,3000},requireSkill=10660,skillID=2945}),
+r(19080,{b=1,itemID=20254,learnedAt=260,minReputation={576,3000},requireSkill=10660,skillID=2945}),
+r(17561,{b=1,itemID=13484,learnedAt=275,minReputation={576,3000},requireSkill=171,skillID=2937}),
+r(23800,{b=1,itemID=19445,learnedAt=290,minReputation={576,9000},requireSkill=333,skillID=2940}),
+r(23703,{b=1,itemID=19326,learnedAt=265,minReputation={576,9000},requireSkill=165,skillID=2945}),
+r(23662,{b=1,itemID=19215,learnedAt=255,minReputation={576,9000},requireSkill=197,skillID=2948}),
 r(1252367,{awp=16001,b=1,itemID=251470,learnedAt=300,minReputation={576,9000},requireSkill=164,skillID=2938}),
+r(23628,{b=1,itemID=19202,learnedAt=290,minReputation={576,9000},requireSkill=165,skillID=2945}),
 r(1252366,{awp=16001,b=1,itemID=251469,learnedAt=300,minReputation={576,9000},requireSkill=164,skillID=2938}),
-r(23629,{b=1,itemID=19204,minReputation={576,21000},requireSkill=165})}})})}}),
+r(23663,{b=1,itemID=19218,learnedAt=290,minReputation={576,21000},requireSkill=197,skillID=2948}),
+r(23704,{b=1,itemID=19327,learnedAt=295,minReputation={576,21000},requireSkill=165,skillID=2945}),
+r(23629,{b=1,itemID=19204,learnedAt=300,minReputation={576,21000},requireSkill=165,skillID=2945})}})})}}),
 m(1449,{icon=236850,lore="Un'Goro Crater is a lush jungle in southern Kalimdor, isolated from the source as it shares borders with the deserts of Feralas and Silithus. Although its borders make Un'Goro Crater a rather isolated area, many challenges await players here as they explore the wide range of exotic fauna, from aggressive plant mobs to the mighty devilsaurs.\n\nMarshal's Refuge, the main questing hub in Un'Goro, is also a cradle of references to TV Show Land of the Lost: The last names of the main characters were Marshal, Williden Marshal and Hol'anyee Marshal are clear references to main characters Will and Holly Marshal, and Un'Goro's plot revolves around massive pylons scattered across the zone, also a central part of the plot in Land of the Lost.",g={
 h(-12,{
 ach(854,{
@@ -20166,7 +20176,7 @@ r(1257464,{awp=16001,crs={4467},itemID=254078,learnedAt=215,requireSkill=197,ski
 r(19086,{coords={
 [1425]={{61.2,68.4},{63.8,73.6},{68.2,75}}},crs={2644},itemID=15760,learnedAt=265,requireSkill=10660,skillID=2945}),
 r(1252293,{awp=16001,b=1,crs={2653},itemID=251396,learnedAt=220,requireSkill=164,skillID=2938}),
-r(1251745,{awp=16001,crs={2640},itemID=250992,requireSkill=171}),
+r(1251745,{awp=16001,crs={2640},itemID=250992,learnedAt=230,requireSkill=171,skillID=2937}),
 r(11458,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale.",itemID=9294,learnedAt=225,requireSkill=171,skillID=2937}),
 r(1266921,{awp=16001,crs={2656},itemID=264218,learnedAt=240,requireSkill=202,skillID=2941}),
 i(9259,{description="Can drop from any troll in The Hinterlands."}),

@@ -2,15 +2,15 @@
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
 -- CRIEVE NOTE: This was originally added with Phase 3 just after Blackwing Lair was released.
+-- The Enchanted Thorium plans (Dire Maul quests) and Runed Stygian patterns have no source in WoW Forever yet.
 root(ROOTS.Craftables, {
-	--[[
 	prof(BLACKSMITHING, {
 		prof(ARMORSMITH, {
 			i(19164),	-- Dark Iron Gauntlets
 			i(19148),	-- Dark Iron Helm
-			i(12618),	-- Enchanted Thorium Breastplate
-			i(12620),	-- Enchanted Thorium Helm
-			i(12619),	-- Enchanted Thorium Leggings
+			--i(12618),	-- Enchanted Thorium Breastplate
+			--i(12620),	-- Enchanted Thorium Helm
+			--i(12619),	-- Enchanted Thorium Leggings
 		}),
 		prof(WEAPONSMITH, {
 			prof(MASTER_AXESMITH, {
@@ -34,11 +34,9 @@ root(ROOTS.Craftables, {
 
 		}),
 	}),
-	--]]
 	prof(COOKING, {
 		i(20452),	-- Smoked Desert Dumplings
 	}),
-	--[[
 	prof(FIRST_AID, {
 		i(19440),	-- Powerful Anti-Venom
 	}),
@@ -70,11 +68,10 @@ root(ROOTS.Craftables, {
 			i(19165),	-- Flarecore Leggings
 			i(19156),	-- Flarecore Robe
 			i(19050),	-- Mantle of the Timbermaw
-			i(20539),	-- Runed Stygian Belt
-			i(20537),	-- Runed Stygian Boots
-			i(20538),	-- Runed Stygian Leggings
+			--i(20539),	-- Runed Stygian Belt
+			--i(20537),	-- Runed Stygian Boots
+			--i(20538),	-- Runed Stygian Leggings
 			i(19047),	-- Wisdom of the Timbermaw
 		}),
 	}),
-	--]]
 });

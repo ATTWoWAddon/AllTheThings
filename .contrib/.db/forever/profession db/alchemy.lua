@@ -163,7 +163,7 @@ i(250389, 1250802);	-- Elixir of Intellect
 i(250368, 1250781);	-- Cleric's Elixir
 i(250999, 1251753);	-- Potion of Beast Culling
 i(250998, 1251752);	-- Potion of Elemental Siphoning
---[[
+i(13484, 17561);	-- Transmute: Earth to Water
 i(273112, 1263078);	-- Alchemy Laboratory
 i(250363, 1250776);	-- Draught of Predatory Senses
 i(250370, 1250783);	-- Elixir of Fortitude
@@ -171,6 +171,7 @@ i(250385, 1250798);	-- Elixir of Strength
 i(250980, 1251733);	-- Superior Spellblasting Potion
 i(250986, 1251739);	-- Superior Frenzy Potion
 i(250992, 1251745);	-- Superior Mender's Potion
+--[[
 --- UNKNOWN ---
 r(2365),	-- Draught of Tongues
 i(2556),	-- TODO: Item name not known yet.
@@ -192,8 +193,6 @@ i(274280, 1293562);	-- Flask of Natural Swiftness
 -- BRD
 i(20761, 25146);	-- Transmute: Elemental Fire
 i(13483, 17560);	-- Transmute: Fire to Earth
--- Timbermaw P3
-i(13484, 17561);	-- Transmute: Earth to Water
 -- MC
 i(18257, 22732);	-- Major Rejuvenation Potion
 -- ZG

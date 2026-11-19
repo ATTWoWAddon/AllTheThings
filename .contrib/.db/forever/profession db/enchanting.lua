@@ -198,6 +198,8 @@ i(249515, 1248505);	-- Lesser Eternal Wand
 i(249516, 1248528);	-- Enchant Gloves - Advanced Skinning
 i(249523, 1248668);	-- Enchant 2H Weapon - Strength
 i(249524, 1248599);	-- Enchant Bracer - Superior Agility
+i(22392, 27837);	-- Enchant 2H Weapon - Agility
+i(19445, 23800);	-- Enchant Weapon - Agility
 --- UNKNOWN ---
 --[[
 r(1217189),	-- Enchant Bracer - Spell Power
@@ -253,9 +255,6 @@ i(18259, 22749);	-- Enchant Weapon - Spell Power
 -- Argent Dawn P3
 i(19446, 23801);	-- Enchant Bracer - Mana Regeneration
 i(19447, 23802);	-- Enchant Bracer - Healing Power
--- Timbermaw P3
-i(22392, 27837);	-- Enchant 2H Weapon - Agility
-i(19445, 23800);	-- Enchant Weapon - Agility
 -- Silithus P4
 i(20754, 25127);	-- Lesser Mana Oil
 i(20755, 25128);	-- Wizard Oil

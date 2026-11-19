@@ -37,11 +37,10 @@ i(255726, 1259348);	-- Leather Tourniquet
 i(255725, 1244435);	-- Superior Healing Potion
 i(255730, 1259349);	-- Surgical Tourniquet
 i(273118, 1263001);	-- Plague Doctor's Laboratory
+i(19442, 23787);	-- Powerful Anti-Venom
 --- UNKNOWN ---
 --[[
 i(255731),	-- Manual: Powerful Poultice
 r(1259345),	-- Powerful Poultice
 --- UNRELEASED CONTENT ---
--- Argent Dawn P3
-i(19442, 23787);	-- Powerful Anti-Venom
 --]]

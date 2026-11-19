@@ -369,8 +369,14 @@ i(254126, 1257488);	-- Earthenweave Leggings
 i(254132, 1257491);	-- Earthenweave Cuffs
 i(254138, 1257494);	-- Earthenweave Crown
 i(254140, 1257495);	-- Bottomless Reagent Bag
---- UNSURE ---
 i(0, 26086);		-- Felcloth Bag
+i(19219, 23666);	-- Flarecore Robe
+i(19220, 23667);	-- Flarecore Leggings
+i(19216, 23664);	-- Argent Boots
+i(19217, 23665);	-- Argent Shoulders
+i(19215, 23662);	-- Wisdom of the Timbermaw
+i(19218, 23663);	-- Mantle of the Timbermaw
+--- UNSURE ---
 --[[
 -- unknown
 r(1257476),	-- Black Gloves
@@ -411,7 +417,6 @@ i(279317),	-- Pattern: Rime-encrusted Boots
 r(1306542),	-- Rime-encrusted Boots
 i(279315),	-- Pattern: Robes of Fiery Devastation
 r(1306540),	-- Robes of Fiery Devastation
--- CC
 --- UNRELEASED CONTENT ---
 -- Dire Maul
 i(18414, 22866);	-- Belt of the Archmage
@@ -429,15 +434,6 @@ i(22312, 27725);	-- Satchel of Cenarius
 -- BRD
 i(17018, 20849);	-- Flarecore Gloves
 i(17017, 20848);	-- Flarecore Mantle
--- BRD P3
-i(19219, 23666);	-- Flarecore Robe
-i(19220, 23667);	-- Flarecore Leggings
--- Argent Dawn P3
-i(19216, 23664);	-- Argent Boots
-i(19217, 23665);	-- Argent Shoulders
--- Timbermaw P3
-i(19215, 23662);	-- Wisdom of the Timbermaw
-i(19218, 23663);	-- Mantle of the Timbermaw
 -- Silithus P3
 i(20548, 24902);	-- Runed Stygian Belt
 i(20546, 24901);	-- Runed Stygian Leggings

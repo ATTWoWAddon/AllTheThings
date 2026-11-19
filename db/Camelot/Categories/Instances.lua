@@ -3338,7 +3338,7 @@ s(161467,14340,{f=4,loc=42}),
 s(161556,14502,{f=5,loc=45}),
 s(161558,14522,{f=6,loc=46}),
 s(163636,18694,{f=6,loc=47}),
-r(1263078,{awp=16001,itemID=273112}),
+r(1263078,{awp=16001,itemID=273112,learnedAt=300,requireSkill=171,skillID=2937}),
 i(273125,{awp=16001}),
 i(285960,{awp=16001})}),
 n(16118,{cost={{"i",22052,1}},description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},g={

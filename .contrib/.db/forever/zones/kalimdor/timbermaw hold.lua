@@ -245,24 +245,24 @@ maproot(MAP.KALIMDOR, {
 					groups = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {
 						{	-- Neutral
 						}, {	-- Friendly
-							--i(22392),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
-							--i(20253),	-- Pattern: Warbear Harness (RECIPE!)
-							--i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
-							--i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
+							i(22392),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
+							i(20253),	-- Pattern: Warbear Harness (RECIPE!)
+							i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
+							i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						}, {	-- Honored
-							--i(19445),	-- Formula: Enchant Weapon - Agility (RECIPE!)
-							--i(19326),	-- Pattern: Might of the Timbermaw (RECIPE!)
-							--i(19215),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
+							i(19445),	-- Formula: Enchant Weapon - Agility (RECIPE!)
+							i(19326),	-- Pattern: Might of the Timbermaw (RECIPE!)
+							i(19215),	-- Pattern: Wisdom of the Timbermaw (RECIPE!)
 							i(251470, {	-- Plans: Bagh Nakh (RECIPE!)
 								timeline = { TIMELINE.ADDED_1_60_1 },
 							}),
-							--i(19202),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+							i(19202),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							i(251469, {	-- Plans: Stormcarver (RECIPE!)
 								timeline = { TIMELINE.ADDED_1_60_1 },
 							}),
 						}, {	-- Revered
-							--i(19218),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
-							--i(19327),	-- Pattern: Timbermaw Brawlers (RECIPE!)
+							i(19218),	-- Pattern: Mantle of the Timbermaw (RECIPE!)
+							i(19327),	-- Pattern: Timbermaw Brawlers (RECIPE!)
 							i(19204),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 						}, {	-- Exalted
 						},
