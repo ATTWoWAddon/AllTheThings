@@ -229,6 +229,9 @@ root(ROOTS.NeverImplemented, {
 			-- Officer Areyn is no longer a vendor
 			i(18664),	-- A Treatise on Military Ranks
 			i(15196),	-- Private's Tabard
+
+			-- Master Sergeant Biggins sells the WoW Forever Knight's Colors (272695) instead
+			i(15198),	-- Knight's Colors
 		},
 	}),
 	n(FACTION_HEADER_HORDE, {

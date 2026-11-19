@@ -2608,7 +2608,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(18606),	-- Alliance Battle Standard
 					i(18839),	-- Combat Healing Potion
 					i(18841),	-- Combat Mana Potion
-					moh(1, i(15198)),	-- Knight's Colors
 					i(272694),	-- Private's Tabard
 					i(274445, {	-- Greater Insignia of the Alliance
 						cost = {

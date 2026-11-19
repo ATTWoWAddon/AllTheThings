@@ -12076,7 +12076,6 @@ n(12781,{description="Found within the Champion's Hall.",pvp=1,r=2,sym={{"select
 i(18606,{b=1,f=55,pvp=1,spellID=23034}),
 i(18839,{b=1,f=55,lvl=35,pvp=1,spellID=4042}),
 i(18841,{b=1,f=55,lvl=41,pvp=1,spellID=17530}),
-s(162121,15198,{b=1,f=9,pvp=1}),
 s(308202,272694,{b=1,f=9,pvp=1}),
 i(274445,{b=1,cost={{"c",1792,5250},{"g",15000}},f=53,pvp=1,spellID=438273}),
 s(308203,272695,{b=1,f=9,pvp=1})}}),
@@ -12773,7 +12772,7 @@ n(32337,{awp=16001,coords={
 i(260631,{f=55,spellID=11008}),
 s(316409,285362,{f=1})}}),
 n(32333,{awp=16001,coords={
-[1416]={{16,70.4},{16.2,70.6}}},r=2,sym={{"select","npcID",12781},{"pop"},{"exclude","itemID",15198}}}),
+[1416]={{16,70.4},{16.2,70.6}}},r=2,sym={{"select","npcID",12781},{"pop"}}}),
 n(32334,{awp=16001,coords={
 [1416]={{16.2,71.2}}},r=2,sym={{"select","symselector",5},{"find","headerID",-101},{"pop"}}}),
 n(275596,{awp=16001,coords={
