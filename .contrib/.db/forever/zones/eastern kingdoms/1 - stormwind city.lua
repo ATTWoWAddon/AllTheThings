@@ -2635,16 +2635,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					2467,	-- Studded Boots
 				}},
 			}),
-			n(12805, {	-- Officer Areyn <Accessories Quartermaster>
-				coord = { 76.8, 65.8, MAP.STORMWIND_CITY },
-				races = ALLIANCE_ONLY,
-				groups = {
-					i(18664),	-- A Treatise on Military Ranks
-					i(15196, {	-- Private's Tabard
-						races = ALLIANCE_ONLY,
-					}),
-				},
-			}),
 			n(1323, {	-- Osric Strang <Heavy Armor Merchant>
 				coord = { 77.0, 61.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,

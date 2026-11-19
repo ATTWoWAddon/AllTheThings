@@ -225,6 +225,10 @@ root(ROOTS.NeverImplemented, {
 			i(18857, { classes = { ROGUE }   }),	-- Insignia of the Alliance
 			i(18858, { classes = { WARLOCK } }),	-- Insignia of the Alliance
 			i(18854, { classes = { WARRIOR } }),	-- Insignia of the Alliance
+
+			-- Officer Areyn is no longer a vendor
+			i(18664),	-- A Treatise on Military Ranks
+			i(15196),	-- Private's Tabard
 		},
 	}),
 	n(FACTION_HEADER_HORDE, {
