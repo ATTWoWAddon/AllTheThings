@@ -1155,6 +1155,7 @@ i(11742,{f=113})}}),
 e(383,{npcID=9499,g={
 r(23078,{itemID=18653,learnedAt=265,requireSkill=20222,skillID=2941}),
 s(160640,12791,{f=20}),
+s(309903,276877,{awp=16001,f=4,loc=40,spellID=23217}),
 s(160642,12793,{f=5,loc=42})}}),
 e(381,{description="Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",npcID=9502,g={
 s(160319,11744,{f=34}),

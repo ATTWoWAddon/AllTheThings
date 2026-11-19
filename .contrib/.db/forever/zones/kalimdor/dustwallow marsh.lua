@@ -114,7 +114,17 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/10 Wyrmtail
-						provider = { "i", 280092 },	-- Wyrmtail
+						providers = {
+							{ "i", 280092 },	-- Wyrmtail
+							{ "o", 671644 },	-- Wyrmtail
+						},
+						coords = {
+							{ 41.6, 72.2, MAP.DUSTWALLOW_MARSH },
+							{ 44.4, 77.4, MAP.DUSTWALLOW_MARSH },
+							{ 45.9, 81.4, MAP.DUSTWALLOW_MARSH },
+							{ 47.9, 73.2, MAP.DUSTWALLOW_MARSH },
+							{ 50.0, 70.2, MAP.DUSTWALLOW_MARSH },
+						},
 					}),
 				},
 			}),
@@ -176,6 +186,9 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
+					objective(1, {	-- 0/1 Drive Overlord Mok'Morokk from Brackenwall Village
+						provider = { "n", 4500 },	-- Overlord Mok'Morokk
+					}),
 					i(10704),	-- Chillnail Splinter
 					i(10703),	-- Fiendish Skiv
 				},
@@ -194,7 +207,20 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 39,
 				groups = {
 					objective(1, {	-- 0/20 Shed Dark Dragonscale
-						provider = { "i", 279934 },	-- Shed Dark Dragonscale
+						providers = {
+							{ "i", 279934 },	-- Shed Dark Dragonscale
+							{ "o", 671148 },	-- Shed Dark Dragonscale
+						},
+						coords = {
+							{ 40.3, 71.7, MAP.DUSTWALLOW_MARSH },
+							{ 41.7, 75.5, MAP.DUSTWALLOW_MARSH },
+						},
+						crs = {
+							4323,	-- Searing Hatchling
+							4324,	-- Searing Whelp
+							4329,	-- Firemane Scout
+							4331,	-- Firemane Ash Tail
+						},
 					}),
 				},
 			}),
@@ -555,15 +581,24 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 38,
 				groups = {
 					objective(1, {	-- 0/1 Mok'Morokk's Snuff
-						provider = { "i", 5834 },	-- Mok'Morokk's Snuff
+						providers = {
+							{ "i", 5834 },	-- Mok'Morokk's Snuff
+							{ "o", 19904 },	-- Mok'Morokk's Snuff
+						},
 						coord = { 44.4, 66.0, MAP.DUSTWALLOW_MARSH },
 					}),
 					objective(2, {	-- 0/1 Mok'Morokk's Grog
-						provider = { "i", 5835 },	-- Mok'Morokk's Grog
+						providers = {
+							{ "i", 5835 },	-- Mok'Morokk's Grog
+							{ "o", 19905 },	-- Mok'Morokk's Grog
+						},
 						coord = { 38.6, 65.4, MAP.DUSTWALLOW_MARSH },
 					}),
 					objective(3, {	-- 0/1 Mok'Morokk's Strongbox
-						provider = { "i", 5836 },	-- Mok'Morokk's Strongbox
+						providers = {
+							{ "i", 5836 },	-- Mok'Morokk's Strongbox
+							{ "o", 19906 },	-- Mok'Morokk's Strongbox
+						},
 						coord = { 36.6, 69.4, MAP.DUSTWALLOW_MARSH },
 					}),
 					i(10702),	-- Enormous Ogre Boots
@@ -621,7 +656,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				lvl = 48,
 				groups = {
-					objective(1),	-- 0/1 Speak with Sergeant Ulka
+					objective(1, {	-- 0/1 Speak with Sergeant Ulka
+						provider = { "n", 260383 },	-- Sergeant Ulka
+						coord = { 70.2, 19.0, MAP.DUSTWALLOW_MARSH },
+					}),
 				},
 			}),
 			q(7541, {	-- Service to the Horde
@@ -644,6 +682,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				groups = {
 					objective(1, {	-- 0/8 Intact Raptor Hide
 						provider = { "i", 279601 },	-- Intact Raptor Hide
+						crs = {
+							4356,	-- Bloodfen Razormaw
+							4357,	-- Bloodfen Lashtail
+						},
 					}),
 				},
 			}),
@@ -889,6 +931,11 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				coord = { 45.2, 24.6, MAP.DUSTWALLOW_MARSH },
 				races = ALLIANCE_ONLY,
 				lvl = 28,
+				groups = {
+					objective(1, {	-- 0/1 Subdue Private Hendel
+						provider = { "n", 4966 },	-- Private Hendel
+					}),
+				},
 			}),
 			q(1267, {	-- The Missing Diplomat (17/17)
 				sourceQuest = 1324,	-- The Missing Diplomat (16/17)
@@ -927,7 +974,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Captain's Documents
-						provider = { "i", 5882 },	-- Captain's Documents
+						providers = {
+							{ "i", 5882 },	-- Captain's Documents
+							{ "o", 20925 },	-- Captain's Footlocker
+						},
 						coord = { 71.5, 51.1, MAP.DUSTWALLOW_MARSH },
 					}),
 				},
